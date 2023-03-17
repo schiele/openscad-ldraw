@@ -1,0 +1,21 @@
+use <../lib.scad>
+use <44567a.scad>
+function ldraw_lib__44567() = [
+// 0 ~Moved to 44567a
+// 0 Name: 44567.dat
+// 0 Author: [PTadmin]
+// 0 !LDRAW_ORG Part UPDATE 2022-05
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+// 
+// 0 BFC CERTIFY CCW
+  [0,"BFC","CERTIFY"],
+  [0,"BFC","CCW"],
+// 
+// 0 !HISTORY 2022-09-15 [PTadmin] Official Update 2022-05
+// 
+// 
+// 0 // Hinge Plate 1 x 2 Locking with Single Finger On Side Vertical
+// 1 16 0 0 0 1 0 0 0 1 0 0 0 1 44567a.dat
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__44567a()],
+];
+makepoly(ldraw_lib__44567(), line=0.2);

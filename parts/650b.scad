@@ -1,0 +1,21 @@
+use <../lib.scad>
+use <650k02.scad>
+function ldraw_lib__650b() = [
+// 0 ~Moved to 650k02
+// 0 Name: 650b.dat
+// 0 Author: [PTadmin]
+// 0 !LDRAW_ORG Part UPDATE 2018-02
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+// 
+// 0 BFC CERTIFY CCW
+  [0,"BFC","CERTIFY"],
+  [0,"BFC","CCW"],
+// 
+// 0 !HISTORY 2018-12-08 [PTadmin] Official Update 2018-02
+// 
+// 
+// 0 // Hinge Plate 2 x 7 with 3L Bendable Coupling Nylon - End 2
+// 1 16 0 0 0 1 0 0 0 1 0 0 0 1 650k02.dat
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__650k02()],
+];
+makepoly(ldraw_lib__650b(), line=0.2);

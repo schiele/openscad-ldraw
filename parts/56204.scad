@@ -1,0 +1,26 @@
+use <../lib.scad>
+use <45411.scad>
+function ldraw_lib__56204() = [
+// 0 Slope Brick Curved  6 x  8 x  2 Double
+// 0 Name: 56204.dat
+// 0 Author: Chris Dee [cwdee]
+// 0 !LDRAW_ORG Part UPDATE 2010-02
+// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 
+// 0 BFC CERTIFY CW
+  [0,"BFC","CERTIFY"],
+  [0,"BFC","CW"],
+// 
+// 0 !HISTORY 2010-07-05 [PTadmin] Official Update 2010-02
+// 
+// 
+// 0 // Part 56204 is the counterpart of 45411. Visually, the two parts seem
+// 0 // identical. This file is provided to make it easier to locate part files
+// 0 // when using the numbers from other sources.
+// 0 // 45411 is used for moulding opaque parts, 56204 for transparent parts.
+// 
+// 1 16 0 0 0 1 0 0 0 1 0 0 0 1 45411.dat
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__45411()],
+// 0
+];
+makepoly(ldraw_lib__56204(), line=0.2);

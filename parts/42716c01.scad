@@ -1,0 +1,23 @@
+use <../lib.scad>
+use <15413.scad>
+use <42716.scad>
+function ldraw_lib__42716c01() = [
+// 0 Wheel Rim 20 x 30 "Torq Thrust" with  5 Spokes and External Ribs with Tyre 20/ 48 x 30
+// 0 Name: 42716c01.dat
+// 0 Author: Ulrich Röder [UR]
+// 0 !LDRAW_ORG Shortcut UPDATE 2020-03
+// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 
+// 0 BFC CERTIFY CCW
+  [0,"BFC","CERTIFY"],
+  [0,"BFC","CCW"],
+// 
+// 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
+// 
+// 
+// 1 16 0 0 0 1 0 0 0 1 0 0 0 1 42716.dat
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__42716()],
+// 1 256 0 0 0 1 0 0 0 1 0 0 0 1 15413.dat
+  [1,256,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__15413()],
+];
+makepoly(ldraw_lib__42716c01(), line=0.2);

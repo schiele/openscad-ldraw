@@ -1,0 +1,22 @@
+use <../lib.scad>
+use <2648c01.scad>
+function ldraw_lib__2648c01_f1() = [
+// 0 Container Lifting Grab Tool - Closed
+// 0 Name: 2648c01-f1.dat
+// 0 Author: Magnus Forsberg [MagFors]
+// 0 !LDRAW_ORG Shortcut UPDATE 2022-01
+// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 
+// 0 BFC CERTIFY CCW
+  [0,"BFC","CERTIFY"],
+  [0,"BFC","CCW"],
+// 
+// 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
+// 
+// 
+// 1 16 0 0 0 0.992547 0.121869 0 -0.121869 0.992547 0 0 0 1 2648c01.dat
+  [1,16,0,0,0,0.992547,0.121869,0,-0.121869,0.992547,0,0,0,1, ldraw_lib__2648c01()],
+// 1 16 0 0 0 -0.992547 -0.121869 0 -0.121869 0.992547 0 0 0 -1 2648c01.dat
+  [1,16,0,0,0,-0.992547,-0.121869,0,-0.121869,0.992547,0,0,0,-1, ldraw_lib__2648c01()],
+];
+makepoly(ldraw_lib__2648c01_f1(), line=0.2);

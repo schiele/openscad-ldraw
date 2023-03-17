@@ -1,0 +1,29 @@
+use <../lib.scad>
+use <s/2513s01.scad>
+function ldraw_lib__2513() = [
+// 0 Car Mudguard  3 x  4
+// 0 Name: 2513.dat
+// 0 Author: James Jessiman
+// 0 !LDRAW_ORG Part UPDATE 2011-01
+// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 
+// 0 BFC CERTIFY CCW
+  [0,"BFC","CERTIFY"],
+  [0,"BFC","CCW"],
+// 
+// 0 !HISTORY 2007-05-14 [PTadmin] Header formatted for Contributor Agreement
+// 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
+// 0 !HISTORY 2008-07-07 [jriley] BFC compliant (2003-06-08)
+// 0 !HISTORY 2008-07-08 [OrionP] Fixed gaps in the stud3's (2003-11-04)
+// 0 !HISTORY 2008-07-09 [OrionP] Moved guts to subpart (2003-11-24)
+// 0 !HISTORY 2011-07-25 [PTadmin] Official Update 2011-01
+// 
+// 
+// 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2513s01.dat
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2513s01()],
+// 4 16 40 20 -50 40 0 -10 -40 0 -10 -40 20 -50
+  [4,16,40,20,-50,40,0,-10,-40,0,-10,-40,20,-50],
+// 
+// 0
+];
+makepoly(ldraw_lib__2513(), line=0.2);

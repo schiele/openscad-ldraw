@@ -1,0 +1,22 @@
+use <../../lib.scad>
+function ldraw_lib__48__1_24ring59() = [
+// 0 Hi-Res Ring 59 x 0.0417
+// 0 Name: 48\1-24ring59.dat
+// 0 Author: Magnus Forsberg [MagFors]
+// 0 !LDRAW_ORG 48_Primitive UPDATE 2018-02
+// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 
+// 0 BFC CERTIFY CCW
+  [0,"BFC","CERTIFY"],
+  [0,"BFC","CCW"],
+// 
+// 0 !HISTORY 2018-12-08 [PTadmin] Official Update 2018-02
+// 
+// 
+// 4 16 60 0 0 59.484 0 7.83 58.4926 0 7.6995 59 0 0
+  [4,16,60,0,0,59.484,0,7.83,58.4926,0,7.6995,59,0,0],
+// 4 16 59.484 0 7.83 57.954 0 15.528 56.9881 0 15.2692 58.4926 0 7.6995
+  [4,16,59.484,0,7.83,57.954,0,15.528,56.9881,0,15.2692,58.4926,0,7.6995],
+// 0 // Build by Primitive Generator 2
+];
+makepoly(ldraw_lib__48__1_24ring59(), line=0.2);

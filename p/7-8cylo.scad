@@ -1,0 +1,25 @@
+use <../lib.scad>
+use <7-8cyli.scad>
+use <7-8edge.scad>
+function ldraw_lib__7_8cylo() = [
+// 0 Cylinder Open 0.875
+// 0 Name: 7-8cylo.dat
+// 0 Author: Santeri Piippo [arezey]
+// 0 !LDRAW_ORG Primitive UPDATE 2013-02
+// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 
+// 0 BFC CERTIFY CCW
+  [0,"BFC","CERTIFY"],
+  [0,"BFC","CCW"],
+// 
+// 0 !HISTORY 2013-12-23 [PTadmin] Official Update 2013-02
+// 
+// 
+// 1 16 0 0 0 1 0 0 0 1 0 0 0 1 7-8cyli.dat
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__7_8cyli()],
+// 1 16 0 0 0 1 0 0 0 1 0 0 0 1 7-8edge.dat
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__7_8edge()],
+// 1 16 0 1 0 1 0 0 0 1 0 0 0 1 7-8edge.dat
+  [1,16,0,1,0,1,0,0,0,1,0,0,0,1, ldraw_lib__7_8edge()],
+];
+makepoly(ldraw_lib__7_8cylo(), line=0.2);

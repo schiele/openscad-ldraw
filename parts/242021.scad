@@ -1,0 +1,25 @@
+use <../lib.scad>
+use <2420.scad>
+function ldraw_lib__242021() = [
+// 0 ~_Plate  2 x  2 Corner Red (Obsolete)
+// 0 Name: 242021.dat
+// 0 Author: [PTadmin]
+// 0 !LDRAW_ORG Part Physical_Colour UPDATE 2019-02
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+// 
+// 0 BFC CERTIFY CCW
+  [0,"BFC","CERTIFY"],
+  [0,"BFC","CCW"],
+// 
+// 0 !HISTORY 2010-12-31 [PTadmin] Official Update 2010-03
+// 0 !HISTORY 2019-07-17 [cwdee] Obsoleted per decision not to include physical colour parts
+// 0 !HISTORY 2019-09-09 [PTadmin] Official Update 2019-02
+// 
+// 
+// 0 // This file is a "shortcut" with the correct number for the actual
+// 0 // colouring of the part (Red).
+// 
+// 1 4 0 0 0 1 0 0 0 1 0 0 0 1 2420.dat
+  [1,4,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2420()],
+];
+makepoly(ldraw_lib__242021(), line=0.2);

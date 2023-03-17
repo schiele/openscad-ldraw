@@ -1,0 +1,25 @@
+use <../lib.scad>
+use <27925.scad>
+use <6258203n.scad>
+function ldraw_lib__27925dt1() = [
+// 0 Tile  2 x  2 Corner Round with Orange and Black "390 High PERFORMANCE" Logo between Checkered Flag Fields Sticker
+// 0 Name: 27925dt1.dat
+// 0 Author: Ulrich Röder [UR]
+// 0 !LDRAW_ORG Shortcut UPDATE 2019-01
+// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 
+// 0 BFC CERTIFY CCW
+  [0,"BFC","CERTIFY"],
+  [0,"BFC","CCW"],
+// 
+// 0 !KEYWORDS Ford, Mustang, Set 10265
+// 
+// 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
+// 
+// 
+// 1 16 0 0 0 1 0 0 0 1 0 0 0 1 27925.dat
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__27925()],
+// 1 16 0 0 0 1 0 0 0 1 0 0 0 1 6258203n.dat
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__6258203n()],
+];
+makepoly(ldraw_lib__27925dt1(), line=0.2);

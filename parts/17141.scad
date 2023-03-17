@@ -1,0 +1,24 @@
+use <../lib.scad>
+use <32523.scad>
+function ldraw_lib__17141() = [
+// 0 =Technic Beam  3
+// 0 Name: 17141.dat
+// 0 Author: [PTadmin]
+// 0 !LDRAW_ORG Part Alias UPDATE 2017-01
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+// 
+// 0 BFC CERTIFY CW
+  [0,"BFC","CERTIFY"],
+  [0,"BFC","CW"],
+// 
+// 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
+// 
+// 
+// 0 // Alias of 32523
+// 0 // Part 17141 is the metallic ink counterpart of 32523
+// 
+// 1 16 0 0 0 1 0 0 0 1 0 0 0 1 32523.dat
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__32523()],
+// 0
+];
+makepoly(ldraw_lib__17141(), line=0.2);

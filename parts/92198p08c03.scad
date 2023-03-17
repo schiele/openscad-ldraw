@@ -1,0 +1,31 @@
+use <../lib.scad>
+use <92198p08.scad>
+use <92241p11c01.scad>
+use <92250p04c01.scad>
+use <92256.scad>
+function ldraw_lib__92198p08c03() = [
+// 0 _Figure Friends Olivia with Dark Blue Layered Skirt, White Vest Top
+// 0 Name: 92198p08c03.dat
+// 0 Author: Magnus Forsberg [MagFors]
+// 0 !LDRAW_ORG Shortcut Physical_Colour UPDATE 2014-02
+// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 
+// 0 BFC CERTIFY CCW
+  [0,"BFC","CERTIFY"],
+  [0,"BFC","CCW"],
+// 
+// 0 !KEYWORDS set 41026
+// 
+// 0 !HISTORY 2014-12-23 [PTadmin] Official Update 2014-02
+// 
+// 
+// 1 272 0 0 0 1 0 0 0 1 0 0 0 1 92250p04c01.dat
+  [1,272,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__92250p04c01()],
+// 1 78 0 -64 0 1 0 0 0 1 0 0 0 1 92241p11c01.dat
+  [1,78,0,-64,0,1,0,0,0,1,0,0,0,1, ldraw_lib__92241p11c01()],
+// 1 78 0 -110 3.9 1 0 0 0 1 0 0 0 1 92198p08.dat
+  [1,78,0,-110,3.9,1,0,0,0,1,0,0,0,1, ldraw_lib__92198p08()],
+// 1 70 0 -110 0.9 1 0 0 0 1 0 0 0 1 92256.dat
+  [1,70,0,-110,0.9,1,0,0,0,1,0,0,0,1, ldraw_lib__92256()],
+];
+makepoly(ldraw_lib__92198p08c03(), line=0.2);

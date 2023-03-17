@@ -1,0 +1,36 @@
+use <../lib.scad>
+use <1-16edge.scad>
+use <npeghol4a.scad>
+function ldraw_lib__npeghol4() = [
+// 0 Technic Peg Hole / Axle Hole Negative with Top Surface Extension
+// 0 Name: npeghol4.dat
+// 0 Author: Guy Vivan [guyvivan]
+// 0 !LDRAW_ORG Primitive UPDATE 2023-01
+// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 
+// 0 BFC CERTIFY CCW
+  [0,"BFC","CERTIFY"],
+  [0,"BFC","CCW"],
+// 
+// 0 !HISTORY 2009-05-02 [PTadmin] Official Update 2009-01
+// 0 !HISTORY 2012-02-16 [Philo] Changed to CCW
+// 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01
+// 0 !HISTORY 2018-04-08 [arezey] Closed gaps with increased decimal precision
+// 0 !HISTORY 2018-04-08 [MagFors] adapted to four digit decimals
+// 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
+// 0 !HISTORY 2022-07-08 [SwampKryakwa] New primitive shape - corners of npegholes are now smoothed similar to the actual lego parts
+// 0 !HISTORY 2023-03-05 [OrionP] Official Update 2023-01
+// 
+// 
+// 1 16 0 0 0 1 0 0 0 1 0 0 0 1 npeghol4a.dat
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__npeghol4a()],
+// 1 16 0 0 10 0 0 9 0 1 0 -9 0 0 1-16edge.dat
+  [1,16,0,0,10,0,0,9,0,1,0,-9,0,0, ldraw_lib__1_16edge()],
+// 1 16 0 1 10 0 0 9 0 1 0 -9 0 0 1-16edge.dat
+  [1,16,0,1,10,0,0,9,0,1,0,-9,0,0, ldraw_lib__1_16edge()],
+// 1 16 0 0 10 0 0 -9 0 1 0 -9 0 0 1-16edge.dat
+  [1,16,0,0,10,0,0,-9,0,1,0,-9,0,0, ldraw_lib__1_16edge()],
+// 1 16 0 1 10 0 0 -9 0 1 0 -9 0 0 1-16edge.dat
+  [1,16,0,1,10,0,0,-9,0,1,0,-9,0,0, ldraw_lib__1_16edge()],
+];
+makepoly(ldraw_lib__npeghol4(), line=0.2);

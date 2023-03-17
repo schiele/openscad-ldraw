@@ -1,0 +1,33 @@
+use <../lib.scad>
+use <s/66645bp01s01.scad>
+use <s/66645bs02.scad>
+function ldraw_lib__66645bp01() = [
+// 0 Sheet Plastic 10 x 42 Trapezoid Sail with Technic Catamaran Pattern
+// 0 Name: 66645bp01.dat
+// 0 Author: Philippe Hurbain [Philo]
+// 0 !LDRAW_ORG Part UPDATE 2020-01
+// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 
+// 0 BFC CERTIFY CCW
+  [0,"BFC","CERTIFY"],
+  [0,"BFC","CCW"],
+// 
+// 0 !CATEGORY Sheet Plastic
+// 0 !KEYWORDS Set 42105
+// 
+// 0 !HISTORY 2020-06-28 [PTadmin] Official Update 2020-01
+// 
+// 
+// 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\66645bs02.dat
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__66645bs02()],
+// 0 !TEXMAP START PLANAR 0 -24 -191 0 -24 13 0 805 -191 66645bp01.png
+// 0 !: 1 16 -.25 0 0 -1 0 0 0 1 0 0 0 1 s\66645bs01.dat
+// 0 !: 1 16 .25 0 0 1 0 0 0 1 0 0 0 1 s\66645bs01.dat
+// 0 !TEXMAP FALLBACK
+// 1 16 -.25 0 0 -1 0 0 0 1 0 0 0 1 s\66645bp01s01.dat
+  [1,16,-.25,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__66645bp01s01()],
+// 1 16 .25 0 0 1 0 0 0 1 0 0 0 1 s\66645bp01s01.dat
+  [1,16,.25,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__66645bp01s01()],
+// 0 !TEXMAP END
+];
+makepoly(ldraw_lib__66645bp01(), line=0.2);

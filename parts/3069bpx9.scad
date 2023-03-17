@@ -1,0 +1,34 @@
+use <../lib.scad>
+use <s/3069bs01.scad>
+function ldraw_lib__3069bpx9() = [
+// 0 Tile  1 x  2 with Groove with Red Rectangle Pattern
+// 0 Name: 3069bpx9.dat
+// 0 Author: Ulrich Röder [UR]
+// 0 !LDRAW_ORG Part UPDATE 2022-01
+// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 
+// 0 BFC CERTIFY CCW
+  [0,"BFC","CERTIFY"],
+  [0,"BFC","CCW"],
+// 
+// 0 !KEYWORDS Bricklink 3069bpb908, Porsche, Set 10295, Year 2021
+// 
+// 0 !CMDLINE -c47
+// 
+// 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
+// 
+// 
+// 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3069bs01.dat
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3069bs01()],
+// 4 16 20 0 10 12 0 9 12 0 -9 20 0 -10
+  [4,16,20,0,10,12,0,9,12,0,-9,20,0,-10],
+// 4 16 -20 0 10 -20 0 -10 -19 0 -9 -19 0 9
+  [4,16,-20,0,10,-20,0,-10,-19,0,-9,-19,0,9],
+// 4 16 -20 0 10 -19 0 9 12 0 9 20 0 10
+  [4,16,-20,0,10,-19,0,9,12,0,9,20,0,10],
+// 4 16 12 0 -9 -19 0 -9 -20 0 -10 20 0 -10
+  [4,16,12,0,-9,-19,0,-9,-20,0,-10,20,0,-10],
+// 4 4 12 0 -9 12 0 9 -19 0 9 -19 0 -9
+  [4,4,12,0,-9,12,0,9,-19,0,9,-19,0,-9],
+];
+makepoly(ldraw_lib__3069bpx9(), line=0.2);

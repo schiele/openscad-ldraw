@@ -1,0 +1,29 @@
+use <../lib.scad>
+use <1-4cyli.scad>
+use <1-4disc.scad>
+use <1-4edge.scad>
+function ldraw_lib__1_4cylc() = [
+// 0 Cylinder Closed 0.25
+// 0 Name: 1-4cylc.dat
+// 0 Author: Mark Kennedy [mkennedy]
+// 0 !LDRAW_ORG Primitive UPDATE 2010-01
+// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 
+// 0 BFC CERTIFY CCW
+  [0,"BFC","CERTIFY"],
+  [0,"BFC","CCW"],
+// 
+// 0 !HISTORY 2010-04-05 [PTadmin] Official Update 2010-01
+// 
+// 
+// 1 16 0 0 0 1 0 0 0 1 0 0 0 1 1-4edge.dat
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__1_4edge()],
+// 1 16 0 1 0 1 0 0 0 1 0 0 0 1 1-4edge.dat
+  [1,16,0,1,0,1,0,0,0,1,0,0,0,1, ldraw_lib__1_4edge()],
+// 1 16 0 0 0 1 0 0 0 1 0 0 0 1 1-4disc.dat
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__1_4disc()],
+// 1 16 0 0 0 1 0 0 0 1 0 0 0 1 1-4cyli.dat
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__1_4cyli()],
+// 0
+];
+makepoly(ldraw_lib__1_4cylc(), line=0.2);

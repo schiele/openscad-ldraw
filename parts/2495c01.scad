@@ -1,0 +1,26 @@
+use <../lib.scad>
+use <2495.scad>
+use <2496.scad>
+function ldraw_lib__2495c01() = [
+// 0 Minifig Hand Truck (Complete)
+// 0 Name: 2495c01.dat
+// 0 Author: J.C. Tchang [tchang]
+// 0 !LDRAW_ORG Shortcut UPDATE 2010-03
+// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 
+// 0 BFC CERTIFY CW
+  [0,"BFC","CERTIFY"],
+  [0,"BFC","CW"],
+// 
+// 0 !CATEGORY Minifig Accessory
+// 
+// 0 !HISTORY 2010-12-31 [PTadmin] Official Update 2010-03
+// 
+// 
+// 1 16 0 0 0 1 0 0 0 1 0 0 0 1 2495.dat
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2495()],
+// 1 0 0 0 0 1 0 0 0 1 0 0 0 1 2496.dat
+  [1,0,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2496()],
+// 0
+];
+makepoly(ldraw_lib__2495c01(), line=0.2);

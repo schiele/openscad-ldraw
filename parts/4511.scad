@@ -1,0 +1,73 @@
+use <../lib.scad>
+use <../p/box3u10p.scad>
+use <../p/box3u2p.scad>
+use <s/4511s01.scad>
+function ldraw_lib__4511() = [
+// 0 Door  6.5 x  5 Sliding with Corrugated Surface
+// 0 Name: 4511.dat
+// 0 Author: James Jessiman
+// 0 !LDRAW_ORG Part UPDATE 2022-06
+// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 
+// 0 BFC CERTIFY CCW
+  [0,"BFC","CERTIFY"],
+  [0,"BFC","CCW"],
+// 
+// 0 !KEYWORDS Train
+// 
+// 0 !HISTORY 1999-02-01 [PTadmin] Official Update 1999-01
+// 0 !HISTORY 2001-01-12 [cwdee] improved detail os ribs and added mounds, dimples and lugs
+// 0 !HISTORY 2002-02-18 [PTadmin] Official Update 2002-01
+// 0 !HISTORY 2007-07-08 [PTadmin] Header formatted for Contributor Agreement
+// 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
+// 0 !HISTORY 2017-08-28 [MagFors] bfc'd, used box-primitives, added missing edges
+// 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
+// 0 !HISTORY 2021-09-13 [GeraldLasser] Subfiled for Pattern
+// 0 !HISTORY 2022-12-20 [PTadmin] Official Update 2022-06
+// 
+// 
+// 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4511s01.dat
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4511s01()],
+// 
+// 0 BFC INVERTNEXT
+  [0,"BFC","INVERTNEXT"],
+// 1 16 -116.25 0 -2 4.5 0 0 0 0 58 0 .5 0 box3u10p.dat
+  [1,16,-116.25,0,-2,4.5,0,0,0,0,58,0,.5,0, ldraw_lib__box3u10p()],
+// 1 16 -108.25 0 -1.5 0 0 3.5 -58 0 0 0 -.5 0 box3u2p.dat
+  [1,16,-108.25,0,-1.5,0,0,3.5,-58,0,0,0,-.5,0, ldraw_lib__box3u2p()],
+// 0 BFC INVERTNEXT
+  [0,"BFC","INVERTNEXT"],
+// 1 16 -100.25 0 -2 4.5 0 0 0 0 58 0 .5 0 box3u10p.dat
+  [1,16,-100.25,0,-2,4.5,0,0,0,0,58,0,.5,0, ldraw_lib__box3u10p()],
+// 1 16 -92.25 0 -1.5 0 0 3.5 -58 0 0 0 -.5 0 box3u2p.dat
+  [1,16,-92.25,0,-1.5,0,0,3.5,-58,0,0,0,-.5,0, ldraw_lib__box3u2p()],
+// 0 BFC INVERTNEXT
+  [0,"BFC","INVERTNEXT"],
+// 1 16 -84.25 0 -2 4.5 0 0 0 0 58 0 .5 0 box3u10p.dat
+  [1,16,-84.25,0,-2,4.5,0,0,0,0,58,0,.5,0, ldraw_lib__box3u10p()],
+// 1 16 -76.25 0 -1.5 0 0 3.5 -58 0 0 0 -.5 0 box3u2p.dat
+  [1,16,-76.25,0,-1.5,0,0,3.5,-58,0,0,0,-.5,0, ldraw_lib__box3u2p()],
+// 0 BFC INVERTNEXT
+  [0,"BFC","INVERTNEXT"],
+// 1 16 -68.25 0 -2 4.5 0 0 0 0 58 0 .5 0 box3u10p.dat
+  [1,16,-68.25,0,-2,4.5,0,0,0,0,58,0,.5,0, ldraw_lib__box3u10p()],
+// 1 16 -60.25 0 -1.5 0 0 3.5 -58 0 0 0 -.5 0 box3u2p.dat
+  [1,16,-60.25,0,-1.5,0,0,3.5,-58,0,0,0,-.5,0, ldraw_lib__box3u2p()],
+// 0 BFC INVERTNEXT
+  [0,"BFC","INVERTNEXT"],
+// 1 16 -52.25 0 -2 4.5 0 0 0 0 58 0 .5 0 box3u10p.dat
+  [1,16,-52.25,0,-2,4.5,0,0,0,0,58,0,.5,0, ldraw_lib__box3u10p()],
+// 1 16 -44.25 0 -1.5 0 0 3.5 -58 0 0 0 -.5 0 box3u2p.dat
+  [1,16,-44.25,0,-1.5,0,0,3.5,-58,0,0,0,-.5,0, ldraw_lib__box3u2p()],
+// 0 BFC INVERTNEXT
+  [0,"BFC","INVERTNEXT"],
+// 1 16 -36.25 0 -2 4.5 0 0 0 0 58 0 .5 0 box3u10p.dat
+  [1,16,-36.25,0,-2,4.5,0,0,0,0,58,0,.5,0, ldraw_lib__box3u10p()],
+// 1 16 -28.25 0 -1.5 0 0 3.5 -58 0 0 0 -.5 0 box3u2p.dat
+  [1,16,-28.25,0,-1.5,0,0,3.5,-58,0,0,0,-.5,0, ldraw_lib__box3u2p()],
+// 0 BFC INVERTNEXT
+  [0,"BFC","INVERTNEXT"],
+// 1 16 -20.25 0 -2 4.5 0 0 0 0 58 0 .5 0 box3u10p.dat
+  [1,16,-20.25,0,-2,4.5,0,0,0,0,58,0,.5,0, ldraw_lib__box3u10p()],
+];
+makepoly(ldraw_lib__4511(), line=0.2);

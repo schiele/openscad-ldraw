@@ -1,0 +1,46 @@
+use <../lib.scad>
+use <s/64808s01.scad>
+use <s/64808s02.scad>
+use <s/64808s03.scad>
+use <s/64808s04.scad>
+use <../p/stud4o.scad>
+function ldraw_lib__64808() = [
+// 0 Minifig Head Mon Calamari
+// 0 Name: 64808.dat
+// 0 Author: Stan Isachenko [angmarec]
+// 0 !LDRAW_ORG Part UPDATE 2022-01
+// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 
+// 0 BFC CERTIFY CCW
+  [0,"BFC","CERTIFY"],
+  [0,"BFC","CCW"],
+// 
+// 0 !KEYWORDS Nahdar Vebb, Star Wars
+// 
+// 0 !HISTORY 2011-10-27 {LEGO Digital Designer} Original part shape
+// 0 !HISTORY 2011-10-28 [angmarec] File preparation for LDraw Parts Tracker
+// 0 !HISTORY 2019-10-04 [GeraldLasser] Subfiled for Patterns
+// 0 !HISTORY 2020-03-28 [Holly-Wood] Fixed conds, smoothed surface, used stud prim
+// 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
+// 
+// 
+// 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\64808s01.dat
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__64808s01()],
+// 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\64808s01.dat
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__64808s01()],
+// 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\64808s02.dat
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__64808s02()],
+// 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\64808s02.dat
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__64808s02()],
+// 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\64808s03.dat
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__64808s03()],
+// 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\64808s03.dat
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__64808s03()],
+// 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\64808s04.dat
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__64808s04()],
+// 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\64808s04.dat
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__64808s04()],
+// 1 16 0 -29 0 1 0 0 0 -7.25 0 0 0 1 stud4o.dat
+  [1,16,0,-29,0,1,0,0,0,-7.25,0,0,0,1, ldraw_lib__stud4o()],
+];
+makepoly(ldraw_lib__64808(), line=0.2);

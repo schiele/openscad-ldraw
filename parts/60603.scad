@@ -1,0 +1,24 @@
+use <../lib.scad>
+use <86210.scad>
+function ldraw_lib__60603() = [
+// 0 =Glass for Window  1 x  4 x  3 Opening
+// 0 Name: 60603.dat
+// 0 Author: Magnus Forsberg [MagFors]
+// 0 !LDRAW_ORG Part Alias UPDATE 2013-02
+// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 
+// 0 BFC CERTIFY CCW
+  [0,"BFC","CERTIFY"],
+  [0,"BFC","CCW"],
+// 
+// 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02
+// 0 !HISTORY 2013-12-14 [cwdee] Add = prefix
+// 0 !HISTORY 2013-12-23 [PTadmin] Official Update 2013-02
+// 
+// 
+// 0 // Alias of 86210, partnumber is present in LDD
+// 
+// 1 16 0 0 0 1 0 0 0 1 0 0 0 1 86210.dat
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__86210()],
+];
+makepoly(ldraw_lib__60603(), line=0.2);

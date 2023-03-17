@@ -1,0 +1,32 @@
+use <../lib.scad>
+use <3070b.scad>
+function ldraw_lib__30039() = [
+// 0 =Tile  1 x  1 with Groove
+// 0 Name: 30039.dat
+// 0 Author: Chris Dee [cwdee]
+// 0 !LDRAW_ORG Part Alias UPDATE 2013-02
+// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 
+// 0 !HELP Part 30039 is the counterpart of 3070b. Visually, the two parts seem
+// 0 !HELP identical. This file is provided to make it easier to locate part files
+// 0 !HELP when using the numbers from other sources.
+// 0 !HELP 3070b is used for moulding opaque parts, 30039 for transparent parts.
+// 
+// 0 BFC CERTIFY CW
+  [0,"BFC","CERTIFY"],
+  [0,"BFC","CW"],
+// 
+// 0 !HISTORY 2005-12-28 [PTadmin] Official Update 2005-01
+// 0 !HISTORY 2007-10-24 [PTadmin] Header formatted for Contributor Agreement
+// 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
+// 0 !HISTORY 2008-07-07 [mikeheide] BFC'ed (2007-08-11)
+// 0 !HISTORY 2009-12-29 [PTadmin] Official Update 2009-03
+// 0 !HISTORY 2013-12-14 [cwdee] Add = prefix
+// 0 !HISTORY 2013-12-23 [PTadmin] Official Update 2013-02
+// 
+// 
+// 1 16 0 0 0 1 0 0 0 1 0 0 0 1 3070b.dat
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3070b()],
+// 0
+];
+makepoly(ldraw_lib__30039(), line=0.2);

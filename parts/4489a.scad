@@ -1,0 +1,34 @@
+use <../lib.scad>
+use <s/2470s01.scad>
+use <s/4489s02.scad>
+function ldraw_lib__4489a() = [
+// 0 Wheel  2.8 x 34 with  8 Spokes with Round Hole for Wheel Holding Pin
+// 0 Name: 4489a.dat
+// 0 Author: James Jessiman
+// 0 !LDRAW_ORG Part UPDATE 2013-02
+// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 
+// 0 BFC CERTIFY CCW
+  [0,"BFC","CERTIFY"],
+  [0,"BFC","CCW"],
+// 
+// 0 !KEYWORDS Castle Wheel, cavalry, Conestoga, prairie, settler, wagon, western
+// 0 !KEYWORDS wild west
+// 
+// 0 !HISTORY 2007-07-04 [PTadmin] Header formatted for Contributor Agreement
+// 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
+// 0 !HISTORY 2008-07-07 [fwcain] fixed "all zero" matrix errors; added keywords (2004-05-18)
+// 0 !HISTORY 2008-07-08 [westrate] fixed gap in spokes, added primitives, BFC'd (2004-08-18)
+// 0 !HISTORY 2008-07-09 [WilliamH] Used hub sub-part, corrected position of outer rim (2006-08-12)
+// 0 !HISTORY 2013-03-28 [MMR1988] Renamed from 4489 and subparted
+// 0 !HISTORY 2013-12-23 [PTadmin] Official Update 2013-02
+// 
+// 
+// 0 // Nomenclature: width_(mm) x rim_diameter_(mm) [optional qualifier]
+// 
+// 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2470s01.dat
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2470s01()],
+// 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4489s02.dat
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4489s02()],
+];
+makepoly(ldraw_lib__4489a(), line=0.2);

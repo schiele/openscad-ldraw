@@ -1,0 +1,28 @@
+use <../lib.scad>
+use <15391.scad>
+use <15392.scad>
+use <4073.scad>
+function ldraw_lib__15391c02() = [
+// 0 Minifig Gun Shooting Blaster with Dark Bluish Grey Trigger and Trans Orange Projectile
+// 0 Name: 15391c02.dat
+// 0 Author: Philippe Hurbain [Philo]
+// 0 !LDRAW_ORG Shortcut UPDATE 2014-02
+// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 
+// 0 BFC CERTIFY CCW
+  [0,"BFC","CERTIFY"],
+  [0,"BFC","CCW"],
+// 
+// 0 !CATEGORY Minifig Accessory
+// 
+// 0 !HISTORY 2014-12-23 [PTadmin] Official Update 2014-02
+// 
+// 
+// 1 16 0 0 0 1 0 0 0 1 0 0 0 1 15391.dat
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__15391()],
+// 1 72 0 -35.7 -10.7 1 0 0 0 0.97437 0.22495 0 -0.22495 0.97437 15392.dat
+  [1,72,0,-35.7,-10.7,1,0,0,0,0.97437,0.22495,0,-0.22495,0.97437, ldraw_lib__15392()],
+// 1 57 0 -35.76 -24.814 0 0 1 -0.92388 -0.38268 0 0.38268 -0.92388 0 4073.dat
+  [1,57,0,-35.76,-24.814,0,0,1,-0.92388,-0.38268,0,0.38268,-0.92388,0, ldraw_lib__4073()],
+];
+makepoly(ldraw_lib__15391c02(), line=0.2);

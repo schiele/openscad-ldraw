@@ -1,0 +1,47 @@
+use <../lib.scad>
+use <s/776s01.scad>
+use <s/777s01.scad>
+function ldraw_lib__776p07() = [
+// 0 Flag on Flagpole Type 1 with The Netherlands Pattern
+// 0 Name: 776p07.dat
+// 0 Author: Tore Eriksson [Tore_Eriksson]
+// 0 !LDRAW_ORG Part UPDATE 2004-01
+// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 
+// 0 BFC CERTIFY CW
+  [0,"BFC","CERTIFY"],
+  [0,"BFC","CW"],
+// 
+// 0 !KEYWORDS classic, h0 scale
+// 
+// 0 !HISTORY 2004-03-02 [PTadmin] Official Update 2004-01
+// 0 !HISTORY 2007-07-22 [PTadmin] Header formatted for Contributor Agreement
+// 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
+// 
+// 
+// 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\776s01.dat
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__776s01()],
+// 
+// 0 REM Decorated surfaces
+// 
+// 0 BFC INVERTNEXT
+  [0,"BFC","INVERTNEXT"],
+// 1 4 0 0 0 1 0 0 0 1 0 0 0 1 s\777s01.dat
+  [1,4,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__777s01()],
+// 1 4 0 0 -3 1 0 0 0 1 0 0 0 1 s\777s01.dat
+  [1,4,0,0,-3,1,0,0,0,1,0,0,0,1, ldraw_lib__s__777s01()],
+// 0 BFC INVERTNEXT
+  [0,"BFC","INVERTNEXT"],
+// 1 15 0 16 0 1 0 0 0 1 0 0 0 1 s\777s01.dat
+  [1,15,0,16,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__777s01()],
+// 1 15 0 16 -3 1 0 0 0 1 0 0 0 1 s\777s01.dat
+  [1,15,0,16,-3,1,0,0,0,1,0,0,0,1, ldraw_lib__s__777s01()],
+// 0 BFC INVERTNEXT
+  [0,"BFC","INVERTNEXT"],
+// 1 1 0 32 0 1 0 0 0 1 0 0 0 1 s\777s01.dat
+  [1,1,0,32,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__777s01()],
+// 1 1 0 32 -3 1 0 0 0 1 0 0 0 1 s\777s01.dat
+  [1,1,0,32,-3,1,0,0,0,1,0,0,0,1, ldraw_lib__s__777s01()],
+// 0
+];
+makepoly(ldraw_lib__776p07(), line=0.2);

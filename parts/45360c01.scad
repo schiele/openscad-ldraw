@@ -1,0 +1,30 @@
+use <../lib.scad>
+use <45360.scad>
+use <45361.scad>
+use <46219.scad>
+function ldraw_lib__45360c01() = [
+// 0 Technic Gearbox  3 x  3 x  1.667 Corner (Complete)
+// 0 Name: 45360c01.dat
+// 0 Author: Guy Vivan [guyvivan]
+// 0 !LDRAW_ORG Shortcut UPDATE 2010-02
+// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 
+// 0 BFC CERTIFY CCW
+  [0,"BFC","CERTIFY"],
+  [0,"BFC","CCW"],
+// 
+// 0 !HISTORY 2005-07-20 [guyvivan] Move origin
+// 0 !HISTORY 2010-07-05 [PTadmin] Official Update 2010-02
+// 
+// 
+// 1 8 0 0 0 1 0 0 0 1 0 0 0 1 45360.dat
+  [1,8,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__45360()],
+// 1 16 0 0 0 1 0 0 0 1 0 0 0 1 45361.dat
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__45361()],
+// 1 15 0 18 -19 1 0 0 0 1 0 0 0 1 46219.dat
+  [1,15,0,18,-19,1,0,0,0,1,0,0,0,1, ldraw_lib__46219()],
+// 1 15 19 18 0 0 0 -1 0 1 0 1 0 0 46219.dat
+  [1,15,19,18,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__46219()],
+// 0
+];
+makepoly(ldraw_lib__45360c01(), line=0.2);

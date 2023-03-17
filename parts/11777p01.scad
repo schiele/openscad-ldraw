@@ -1,0 +1,23 @@
+use <../lib.scad>
+use <11778p01.scad>
+function ldraw_lib__11777p01() = [
+// 0 Animal Eagle Wing Right with Dark Brown Feathers Pattern
+// 0 Name: 11777p01.dat
+// 0 Author: Magnus Forsberg [MagFors]
+// 0 !LDRAW_ORG Part UPDATE 2022-01
+// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 
+// 0 BFC CERTIFY CCW
+  [0,"BFC","CERTIFY"],
+  [0,"BFC","CCW"],
+// 
+// 0 !KEYWORDS bricklink 11777pb01, gwaihir, Hobbit, LOTR, Set 10237, set 79007
+// 0 !KEYWORDS set 79017, the lord of the rings
+// 
+// 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
+// 
+// 
+// 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 11778p01.dat
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__11778p01()],
+];
+makepoly(ldraw_lib__11777p01(), line=0.2);

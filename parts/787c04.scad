@@ -1,0 +1,21 @@
+use <../lib.scad>
+use <4320c04.scad>
+function ldraw_lib__787c04() = [
+// 0 ~Moved to 4320c04
+// 0 Name: 787c04.dat
+// 0 Author: [PTadmin]
+// 0 !LDRAW_ORG Part UPDATE 2018-02
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+// 
+// 0 BFC CERTIFY CCW
+  [0,"BFC","CERTIFY"],
+  [0,"BFC","CCW"],
+// 
+// 0 !HISTORY 2018-12-08 [PTadmin] Official Update 2018-02
+// 
+// 
+// 0 // Fabuland Roof Slope with Top Hole (Complete) Green
+// 1 16 0 0 0 1 0 0 0 1 0 0 0 1 4320c04.dat
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4320c04()],
+];
+makepoly(ldraw_lib__787c04(), line=0.2);

@@ -1,0 +1,26 @@
+use <../lib.scad>
+use <905.scad>
+use <906.scad>
+function ldraw_lib__905c01() = [
+// 0 Electric Light & Sound Computer Console (Complete)
+// 0 Name: 905c01.dat
+// 0 Author: Willy Tschager [Holly-Wood]
+// 0 !LDRAW_ORG Shortcut UPDATE 2010-01
+// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 
+// 0 BFC CERTIFY CCW
+  [0,"BFC","CERTIFY"],
+  [0,"BFC","CCW"],
+// 
+// 0 !KEYWORDS 9V, slope, Space, spacecraft, Spaceship
+// 
+// 0 !HISTORY 2010-04-05 [PTadmin] Official Update 2010-01
+// 
+// 
+// 1 16 0 0 0 1 0 0 0 1 0 0 0 1 905.dat
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__905()],
+// 1 16 0 0 -10 1 0 0 0 0.707 0.707 0 -0.707 0.707 906.dat
+  [1,16,0,0,-10,1,0,0,0,0.707,0.707,0,-0.707,0.707, ldraw_lib__906()],
+// 0
+];
+makepoly(ldraw_lib__905c01(), line=0.2);

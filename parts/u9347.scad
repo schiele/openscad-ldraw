@@ -1,0 +1,46 @@
+use <../lib.scad>
+use <../p/box2-5.scad>
+use <../p/box2-7.scad>
+use <../p/studel.scad>
+function ldraw_lib__u9347() = [
+// 0 ~Electric Technic Mini-Motor  9V - Contact
+// 0 Name: u9347.dat
+// 0 Author: Magnus Forsberg [MagFors]
+// 0 !LDRAW_ORG Part UPDATE 2019-02
+// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 
+// 0 BFC CERTIFY CCW
+  [0,"BFC","CERTIFY"],
+  [0,"BFC","CCW"],
+// 
+// 0 !HISTORY 2019-09-09 [PTadmin] Official Update 2019-02
+// 
+// 
+// 1 16 -10 0 -10 0 0 1 0 1 0 -1 0 0 studel.dat
+  [1,16,-10,0,-10,0,0,1,0,1,0,-1,0,0, ldraw_lib__studel()],
+// 1 16 -10 0 10 0 0 1 0 1 0 -1 0 0 studel.dat
+  [1,16,-10,0,10,0,0,1,0,1,0,-1,0,0, ldraw_lib__studel()],
+// 1 16 10 0 -10 0 0 -1 0 1 0 1 0 0 studel.dat
+  [1,16,10,0,-10,0,0,-1,0,1,0,1,0,0, ldraw_lib__studel()],
+// 1 16 10 0 10 0 0 -1 0 1 0 1 0 0 studel.dat
+  [1,16,10,0,10,0,0,-1,0,1,0,1,0,0, ldraw_lib__studel()],
+// 0 BFC INVERTNEXT
+  [0,"BFC","INVERTNEXT"],
+// 1 16 0 -2 1 20 0 0 0 2 0 0 0 19 box2-5.dat
+  [1,16,0,-2,1,20,0,0,0,2,0,0,0,19, ldraw_lib__box2_5()],
+// 1 16 0 2 3 -20 0 0 0 2 0 0 0 -21 box2-7.dat
+  [1,16,0,2,3,-20,0,0,0,2,0,0,0,-21, ldraw_lib__box2_7()],
+// 1 16 0 0 22 -20 0 0 0 -4 0 0 0 2 box2-7.dat
+  [1,16,0,0,22,-20,0,0,0,-4,0,0,0,2, ldraw_lib__box2_7()],
+// 2 24 20 4 24 -20 4 24
+  [2,24,20,4,24,-20,4,24],
+// 4 16 20 0 -18 20 4 -18 20 4 24 20 0 20
+  [4,16,20,0,-18,20,4,-18,20,4,24,20,0,20],
+// 4 16 20 0 20 20 4 24 20 -4 24 20 -4 20
+  [4,16,20,0,20,20,4,24,20,-4,24,20,-4,20],
+// 4 16 -20 4 -18 -20 0 -18 -20 0 20 -20 4 24
+  [4,16,-20,4,-18,-20,0,-18,-20,0,20,-20,4,24],
+// 4 16 -20 -4 24 -20 4 24 -20 0 20 -20 -4 20
+  [4,16,-20,-4,24,-20,4,24,-20,0,20,-20,-4,20],
+];
+makepoly(ldraw_lib__u9347(), line=0.2);

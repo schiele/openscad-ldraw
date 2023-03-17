@@ -1,0 +1,20 @@
+use <../lib.scad>
+use <8/stud26.scad>
+function ldraw_lib__stu226() = [
+// 0 ~Moved to 8\stud26
+// 0 Name: stu226.dat
+// 0 Author: [PTadmin]
+// 0 !LDRAW_ORG 8_Primitive UPDATE 2020-01
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+// 
+// 0 BFC CERTIFY CCW
+  [0,"BFC","CERTIFY"],
+  [0,"BFC","CCW"],
+// 
+// 0 !HISTORY 2020-06-28 [PTadmin] Official Update 2020-01
+// 
+// 
+// 1 16 0 0 0 1 0 0 0 1 0 0 0 1 8\stud26.dat
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__8__stud26()],
+];
+makepoly(ldraw_lib__stu226(), line=0.2);

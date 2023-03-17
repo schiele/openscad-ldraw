@@ -1,0 +1,29 @@
+use <../lib.scad>
+use <3229b.scad>
+use <3230b.scad>
+use <767.scad>
+function ldraw_lib__3229bc01() = [
+// 0 Train Track  4.5V Curved Slotted (Complete 1 Segment)
+// 0 Name: 3229bc01.dat
+// 0 Author: Philippe Hurbain [Philo]
+// 0 !LDRAW_ORG Shortcut UPDATE 2010-02
+// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 
+// 0 BFC CERTIFY CW
+  [0,"BFC","CERTIFY"],
+  [0,"BFC","CW"],
+// 
+// 0 !CMDLINE -c7
+// 
+// 0 !HISTORY 2010-07-05 [PTadmin] Official Update 2010-02
+// 
+// 
+// 1 16 0 0 -50 1 0 0 0 1 0 0 0 1 3230b.dat
+  [1,16,0,0,-50,1,0,0,0,1,0,0,0,1, ldraw_lib__3230b()],
+// 1 16 0 0 50 1 0 0 0 1 0 0 0 1 3229b.dat
+  [1,16,0,0,50,1,0,0,0,1,0,0,0,1, ldraw_lib__3229b()],
+// 1 8 0 16 0 0 0 1 0 1 0 -1 0 0 767.dat
+  [1,8,0,16,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__767()],
+// 0 //
+];
+makepoly(ldraw_lib__3229bc01(), line=0.2);

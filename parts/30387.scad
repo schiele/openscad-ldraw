@@ -1,0 +1,42 @@
+use <../lib.scad>
+use <s/30387s01.scad>
+function ldraw_lib__30387() = [
+// 0 Hinge Brick  1 x  4 Locking Double, Two Finger End with 9 Teeth
+// 0 Name: 30387.dat
+// 0 Author: John Van Zwieten [jvan]
+// 0 !LDRAW_ORG Part UPDATE 2022-01
+// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 
+// 0 BFC CERTIFY CW
+  [0,"BFC","CERTIFY"],
+  [0,"BFC","CW"],
+// 
+// 0 !HISTORY 2002-04-12 [fwcain] fixed "gaps" (was actually overlapping triangles)...
+// 0 !HISTORY 2002-06-11 [PTadmin] Official Update 2002-03
+// 0 !HISTORY 2003-08-17 [technog] BFC'd, made use of subpart
+// 0 !HISTORY 2004-03-02 [PTadmin] Official Update 2004-01
+// 0 !HISTORY 2004-06-20 [cwdee] Correct chamfers
+// 0 !HISTORY 2004-11-06 [PTadmin] Official Update 2004-04
+// 0 !HISTORY 2007-06-09 [PTadmin] Header formatted for Contributor Agreement
+// 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
+// 0 !HISTORY 2021-02-16 [cwdee] Update description
+// 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
+// 
+// 
+// 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\30387s01.dat
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30387s01()],
+// 4 16 40 0 -10 36 24 -10 -36 24 -10 -40 0 -10
+  [4,16,40,0,-10,36,24,-10,-36,24,-10,-40,0,-10],
+// 3 16 40 0 -10 40 20 -10 36 24 -10
+  [3,16,40,0,-10,40,20,-10,36,24,-10],
+// 3 16 -40 0 -10 -36 24 -10 -40 20 -10
+  [3,16,-40,0,-10,-36,24,-10,-40,20,-10],
+// 4 16 -40 0 10 -36 24 10 36 24 10 40 0 10
+  [4,16,-40,0,10,-36,24,10,36,24,10,40,0,10],
+// 3 16 40 0 10 36 24 10 40 20 10
+  [3,16,40,0,10,36,24,10,40,20,10],
+// 3 16 -40 0 10 -40 20 10 -36 24 10
+  [3,16,-40,0,10,-40,20,10,-36,24,10],
+// 0
+];
+makepoly(ldraw_lib__30387(), line=0.2);

@@ -1,0 +1,25 @@
+use <../lib.scad>
+use <41767.scad>
+use <4640189c.scad>
+function ldraw_lib__41767d01() = [
+// 0 Wedge  4 x  2 Right with Sticker with Black "Shinkai 6500" on White Background
+// 0 Name: 41767d01.dat
+// 0 Author: Damien Roux [Darats]
+// 0 !LDRAW_ORG Shortcut UPDATE 2016-01
+// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 
+// 0 BFC CERTIFY CCW
+  [0,"BFC","CERTIFY"],
+  [0,"BFC","CCW"],
+// 
+// 0 !KEYWORDS Set 21100
+// 
+// 0 !HISTORY 2016-12-31 [PTadmin] Official Update 2016-01
+// 
+// 
+// 1 16 0 0 0 1 0 0 0 1 0 0 0 1 41767.dat
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__41767()],
+// 1 16 -10 11 0 0.242535 0.970143 0 0 0 -1 -0.970143 0.242535 0 4640189c.dat
+  [1,16,-10,11,0,0.242535,0.970143,0,0,0,-1,-0.970143,0.242535,0, ldraw_lib__4640189c()],
+];
+makepoly(ldraw_lib__41767d01(), line=0.2);

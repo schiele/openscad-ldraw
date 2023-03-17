@@ -1,0 +1,25 @@
+use <../lib.scad>
+use <75902p01.scad>
+function ldraw_lib__10520() = [
+// 0 =Minifig Shield Round Bowed with DkGreen and Gold Rohan Pattern
+// 0 Name: 10520.dat
+// 0 Author: [PTadmin]
+// 0 !LDRAW_ORG Part Alias UPDATE 2013-02
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+// 
+// 0 BFC CERTIFY CW
+  [0,"BFC","CERTIFY"],
+  [0,"BFC","CW"],
+// 
+// 0 !CATEGORY Minifig Accessory
+// 
+// 0 !HISTORY 2013-12-23 [PTadmin] Official Update 2013-02
+// 
+// 
+// 0 // Alias of 75902p01
+// 
+// 1 16 0 0 0 1 0 0 0 1 0 0 0 1 75902p01.dat
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__75902p01()],
+// 0
+];
+makepoly(ldraw_lib__10520(), line=0.2);

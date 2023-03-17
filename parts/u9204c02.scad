@@ -1,0 +1,44 @@
+use <../lib.scad>
+use <u9100.scad>
+use <u9101.scad>
+use <u9102.scad>
+use <u9103.scad>
+use <u9107p04c01.scad>
+use <u9204c01.scad>
+function ldraw_lib__u9204c02() = [
+// 0 Fabuland Scooter with Raccoon Figure
+// 0 Name: u9204c02.dat
+// 0 Author: Philippe Hurbain [Philo]
+// 0 !LDRAW_ORG Shortcut UPDATE 2012-03
+// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 
+// 0 !HELP This file is a template for Fabuland figure posing
+// 
+// 0 BFC CERTIFY CCW
+  [0,"BFC","CERTIFY"],
+  [0,"BFC","CCW"],
+// 
+// 0 !CATEGORY Vehicle
+// 0 !KEYWORDS Set 324, Set 3605
+// 
+// 0 !HISTORY 2012-12-28 [PTadmin] Official Update 2012-03
+// 
+// 
+// 1 4 0 0 0 1 0 0 0 1 0 0 0 1 u9204c01.dat
+  [1,4,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9204c01()],
+// 1 84 0 -67 4 1 0 0 0 1 0 0 0 1 u9107p04c01.dat
+  [1,84,0,-67,4,1,0,0,0,1,0,0,0,1, ldraw_lib__u9107p04c01()],
+// 1 0 0 -37 4 1 0 0 0 1 0 0 0 1 u9102.dat
+  [1,0,0,-37,4,1,0,0,0,1,0,0,0,1, ldraw_lib__u9102()],
+// 1 14 23 -63 4 1 0 0 0 0.70711 0.70711 0 -0.70711 0.70711 u9101.dat
+  [1,14,23,-63,4,1,0,0,0,0.70711,0.70711,0,-0.70711,0.70711, ldraw_lib__u9101()],
+// 1 14 -23 -63 4 -1 0 0 0 0.70711 -0.70711 0 -0.70711 -0.70711 u9101.dat
+  [1,14,-23,-63,4,-1,0,0,0,0.70711,-0.70711,0,-0.70711,-0.70711, ldraw_lib__u9101()],
+// 1 1 -10 -37 4 1 0 0 0 1 0 0 0 1 u9100.dat
+  [1,1,-10,-37,4,1,0,0,0,1,0,0,0,1, ldraw_lib__u9100()],
+// 1 1 10 -37 4 1 0 0 0 1 0 0 0 1 u9100.dat
+  [1,1,10,-37,4,1,0,0,0,1,0,0,0,1, ldraw_lib__u9100()],
+// 1 4 0 -37 4 1 0 0 0 1 0 0 0 1 u9103.dat
+  [1,4,0,-37,4,1,0,0,0,1,0,0,0,1, ldraw_lib__u9103()],
+];
+makepoly(ldraw_lib__u9204c02(), line=0.2);

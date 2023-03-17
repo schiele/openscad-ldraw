@@ -1,0 +1,25 @@
+use <../lib.scad>
+use <55707d.scad>
+function ldraw_lib__56619() = [
+// 0 =Minifig Shackles
+// 0 Name: 56619.dat
+// 0 Author: [PTadmin]
+// 0 !LDRAW_ORG Part Alias UPDATE 2013-02
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+// 
+// 0 BFC CERTIFY CW
+  [0,"BFC","CERTIFY"],
+  [0,"BFC","CW"],
+// 
+// 0 !CATEGORY Minifig Accessory
+// 
+// 0 !HISTORY 2013-12-23 [PTadmin] Official Update 2013-02
+// 
+// 
+// 0 // Alias of 55707d
+// 
+// 1 16 0 0 0 1 0 0 0 1 0 0 0 1 55707d.dat
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__55707d()],
+// 0
+];
+makepoly(ldraw_lib__56619(), line=0.2);

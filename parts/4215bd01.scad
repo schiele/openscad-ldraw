@@ -1,0 +1,26 @@
+use <../lib.scad>
+use <4215b.scad>
+use <4297014f.scad>
+function ldraw_lib__4215bd01() = [
+// 0 Panel  1 x  4 x  3 with Hollow Studs w Joker Face Sticker Inside
+// 0 Name: 4215bd01.dat
+// 0 Author: Michael Heidemann [mikeheide]
+// 0 !LDRAW_ORG Shortcut UPDATE 2011-02
+// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 
+// 0 BFC CERTIFY CCW
+  [0,"BFC","CERTIFY"],
+  [0,"BFC","CCW"],
+// 
+// 0 !KEYWORDS Batman
+// 
+// 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02
+// 
+// 
+// 1 16 0 0 0 1 0 0 0 1 0 0 0 1 4215b.dat
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4215b()],
+// 1 16 0 34 6 1 0 0 0 0 -1 0 1 0 4297014f.dat
+  [1,16,0,34,6,1,0,0,0,0,-1,0,1,0, ldraw_lib__4297014f()],
+// 0 //
+];
+makepoly(ldraw_lib__4215bd01(), line=0.2);

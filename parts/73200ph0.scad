@@ -1,0 +1,29 @@
+use <../lib.scad>
+use <3815bph0.scad>
+use <3816bph0.scad>
+use <3817bph0.scad>
+function ldraw_lib__73200ph0() = [
+// 0 Minifig Hips and Legs with Dark Blue Coattails and Dark Tan Vest Tails Pattern
+// 0 Name: 73200ph0.dat
+// 0 Author: Evert-Jan Boer [ejboer]
+// 0 !LDRAW_ORG Shortcut UPDATE 2022-03
+// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 
+// 0 BFC CERTIFY CCW
+  [0,"BFC","CERTIFY"],
+  [0,"BFC","CCW"],
+// 
+// 0 !KEYWORDS Bricklink 970c00pb0595, Fantastic Beasts, Harry Potter
+// 0 !KEYWORDS Newt Scamander, Set 71253
+// 
+// 0 !HISTORY 2022-05-07 [PTadmin] Official Update 2022-03
+// 
+// 
+// 1 16 0 0 0 1 0 0 0 1 0 0 0 1 3815bph0.dat
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3815bph0()],
+// 1 16 0 12 0 1 0 0 0 1 0 0 0 1 3816bph0.dat
+  [1,16,0,12,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3816bph0()],
+// 1 16 0 12 0 1 0 0 0 1 0 0 0 1 3817bph0.dat
+  [1,16,0,12,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3817bph0()],
+];
+makepoly(ldraw_lib__73200ph0(), line=0.2);

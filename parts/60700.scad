@@ -1,0 +1,25 @@
+use <../lib.scad>
+use <6015.scad>
+function ldraw_lib__60700() = [
+// 0 =Tyre 12/ 40 x 11 Wide
+// 0 Name: 60700.dat
+// 0 Author: Magnus Forsberg [MagFors]
+// 0 !LDRAW_ORG Part Alias UPDATE 2014-02
+// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 
+// 0 BFC CERTIFY CCW
+  [0,"BFC","CERTIFY"],
+  [0,"BFC","CCW"],
+// 
+// 0 !HISTORY 2010-12-31 [PTadmin] Official Update 2010-03
+// 0 !HISTORY 2013-12-14 [cwdee] Add = prefix
+// 0 !HISTORY 2014-12-23 [PTadmin] Official Update 2014-02
+// 
+// 
+// 0 // Nomenclature: width_(mm)/profile_as_%age_of_width x rim_diameter_(mm)
+// 0 // Alias of 6015, partnumber is present in LDD
+// 
+// 1 16 0 0 0 1 0 0 0 1 0 0 0 1 6015.dat
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__6015()],
+];
+makepoly(ldraw_lib__60700(), line=0.2);

@@ -1,0 +1,34 @@
+use <../lib.scad>
+use <../p/box5-2p.scad>
+use <../p/rect2p.scad>
+use <../p/rect3.scad>
+function ldraw_lib__t1054() = [
+// 0 ~| Circuit Cubes Corner Shim
+// 0 Name: t1054.dat
+// 0 Author: Philippe Hurbain [Philo]
+// 0 !LDRAW_ORG Part UPDATE 2022-05
+// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 
+// 0 BFC CERTIFY CCW
+  [0,"BFC","CERTIFY"],
+  [0,"BFC","CCW"],
+// 
+// 0 !CATEGORY Electric
+// 
+// 0 !HISTORY 2022-09-15 [PTadmin] Official Update 2022-05
+// 
+// 
+// 1 16 2 4 0 0 -15 0 0 0 -3.5 6 0 0 box5-2p.dat
+  [1,16,2,4,0,0,-15,0,0,0,-3.5,6,0,0, ldraw_lib__box5_2p()],
+// 1 16 3.5 4 -4.5 0 -1 1.5 3.5 0 0 0 0 1.5 rect3.dat
+  [1,16,3.5,4,-4.5,0,-1,1.5,3.5,0,0,0,0,1.5, ldraw_lib__rect3()],
+// 1 16 5 4 0 0 -1 0 3.5 0 0 0 0 3 rect3.dat
+  [1,16,5,4,0,0,-1,0,3.5,0,0,0,0,3, ldraw_lib__rect3()],
+// 1 16 3.5 4 4.5 1.5 -1 0 0 0 3.5 -1.5 0 0 rect2p.dat
+  [1,16,3.5,4,4.5,1.5,-1,0,0,0,3.5,-1.5,0,0, ldraw_lib__rect2p()],
+// 4 16 2 0.5 6 2 0.5 -6 5 0.5 -3 5 0.5 3
+  [4,16,2,0.5,6,2,0.5,-6,5,0.5,-3,5,0.5,3],
+// 4 16 5 7.5 -3 2 7.5 -6 2 7.5 6 5 7.5 3
+  [4,16,5,7.5,-3,2,7.5,-6,2,7.5,6,5,7.5,3],
+];
+makepoly(ldraw_lib__t1054(), line=0.2);

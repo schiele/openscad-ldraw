@@ -1,0 +1,21 @@
+use <../lib.scad>
+use <41879a.scad>
+function ldraw_lib__41879() = [
+// 0 ~Moved to 41879a
+// 0 Name: 41879.dat
+// 0 Author: [PTadmin]
+// 0 !LDRAW_ORG Part UPDATE 2013-01
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+// 
+// 0 BFC CERTIFY CCW
+  [0,"BFC","CERTIFY"],
+  [0,"BFC","CCW"],
+// 
+// 0 !HISTORY 2013-07-21 [PTadmin] Official Update 2013-01
+// 
+// 
+// 0 // Minifig Hips and Legs Short
+// 1 16 0 0 0 1 0 0 0 1 0 0 0 1 41879a.dat
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__41879a()],
+];
+makepoly(ldraw_lib__41879(), line=0.2);

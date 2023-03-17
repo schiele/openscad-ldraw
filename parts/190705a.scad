@@ -1,0 +1,22 @@
+use <../lib.scad>
+use <190735a.scad>
+function ldraw_lib__190705a() = [
+// 0 =Sticker  1.3 x  1.3 Round with Blue Snowflake Logo
+// 0 Name: 190705a.dat
+// 0 Author: Magnus Forsberg [MagFors]
+// 0 !LDRAW_ORG Part Alias UPDATE 2018-02
+// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 
+// 0 BFC CERTIFY CCW
+  [0,"BFC","CERTIFY"],
+  [0,"BFC","CCW"],
+// 
+// 0 !KEYWORDS Action Figure, Arctic, Rescue Base, set 8680, Technic
+// 
+// 0 !HISTORY 2018-12-08 [PTadmin] Official Update 2018-02
+// 
+// 
+// 1 16 0 0 0 1 0 0 0 1 0 0 0 1 190735a.dat
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__190735a()],
+];
+makepoly(ldraw_lib__190705a(), line=0.2);

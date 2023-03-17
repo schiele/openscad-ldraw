@@ -1,0 +1,20 @@
+use <../lib.scad>
+use <2744.scad>
+function ldraw_lib__28670() = [
+// 0 =Technic Brick  1 x  6 x  1.667 Wing Back
+// 0 Name: 28670.dat
+// 0 Author: Massimo Maso [Sirio]
+// 0 !LDRAW_ORG Part Alias UPDATE 2022-03
+// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 
+// 0 BFC CERTIFY CCW
+  [0,"BFC","CERTIFY"],
+  [0,"BFC","CCW"],
+// 
+// 0 !HISTORY 2022-05-07 [PTadmin] Official Update 2022-03
+// 
+// 
+// 1 16 0 0 0 1 0 0 0 1 0 0 0 1 2744.dat
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2744()],
+];
+makepoly(ldraw_lib__28670(), line=0.2);

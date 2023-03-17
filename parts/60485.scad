@@ -1,0 +1,21 @@
+use <../lib.scad>
+use <../p/axle.scad>
+function ldraw_lib__60485() = [
+// 0 Technic Axle  9
+// 0 Name: 60485.dat
+// 0 Author: Philippe Hurbain [Philo]
+// 0 !LDRAW_ORG Part UPDATE 2009-02
+// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 
+// 0 BFC CERTIFY CCW
+  [0,"BFC","CERTIFY"],
+  [0,"BFC","CCW"],
+// 
+// 0 !HISTORY 2009-09-03 [PTadmin] Official Update 2009-02
+// 
+// 
+// 1 16 90 0 0 0 -180 0 1 0 0 0 0 1 axle.dat
+  [1,16,90,0,0,0,-180,0,1,0,0,0,0,1, ldraw_lib__axle()],
+// 0 //
+];
+makepoly(ldraw_lib__60485(), line=0.2);

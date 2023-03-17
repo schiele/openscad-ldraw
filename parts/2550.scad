@@ -1,0 +1,97 @@
+use <../lib.scad>
+use <../p/4-4cyli.scad>
+use <../p/4-4edge.scad>
+use <../p/4-4ndis.scad>
+use <../p/4-4ring3.scad>
+use <s/2550s01.scad>
+function ldraw_lib__2550() = [
+// 0 Animal Monkey Body (Needs Work)
+// 0 Name: 2550.dat
+// 0 Author: Andy Westrate [westrate]
+// 0 !LDRAW_ORG Part UPDATE 2013-02
+// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 
+// 0 BFC CERTIFY CCW
+  [0,"BFC","CERTIFY"],
+  [0,"BFC","CCW"],
+// 
+// 0 !KEYWORDS Adventurers, amazon, Divers, Jungle, Pirates, Time Cruisers, town
+// 
+// 0 !HISTORY 2013-12-23 [PTadmin] Official Update 2013-02
+// 
+// 
+// 0 // Underside Stud needs to be adjusted.
+// 
+// 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2550s01.dat
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2550s01()],
+// 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\2550s01.dat
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__2550s01()],
+// 
+// 0 // Leg holes
+// 1 16 10 -9 -14 0 -1 0 -5 0 0 0 0 5 4-4ndis.dat
+  [1,16,10,-9,-14,0,-1,0,-5,0,0,0,0,5, ldraw_lib__4_4ndis()],
+// 1 16 10 -9 -14 0 1 0 -5 0 0 0 0 5 4-4edge.dat
+  [1,16,10,-9,-14,0,1,0,-5,0,0,0,0,5, ldraw_lib__4_4edge()],
+// 1 16 7 -9 -14 0 1 0 -5 0 0 0 0 -5 4-4ndis.dat
+  [1,16,7,-9,-14,0,1,0,-5,0,0,0,0,-5, ldraw_lib__4_4ndis()],
+// 1 16 7 -9 -14 0 1 0 -5 0 0 0 0 5 4-4edge.dat
+  [1,16,7,-9,-14,0,1,0,-5,0,0,0,0,5, ldraw_lib__4_4edge()],
+// 0 BFC INVERTNEXT
+  [0,"BFC","INVERTNEXT"],
+// 1 16 10 -9 -14 0 -3 0 -5 0 0 0 0 5 4-4cyli.dat
+  [1,16,10,-9,-14,0,-3,0,-5,0,0,0,0,5, ldraw_lib__4_4cyli()],
+// 
+// 1 16 -10 -9 -14 0 1 0 -5 0 0 0 0 -5 4-4ndis.dat
+  [1,16,-10,-9,-14,0,1,0,-5,0,0,0,0,-5, ldraw_lib__4_4ndis()],
+// 1 16 -10 -9 -14 0 1 0 -5 0 0 0 0 -5 4-4edge.dat
+  [1,16,-10,-9,-14,0,1,0,-5,0,0,0,0,-5, ldraw_lib__4_4edge()],
+// 1 16 -7 -9 -14 0 1 0 -5 0 0 0 0 -5 4-4edge.dat
+  [1,16,-7,-9,-14,0,1,0,-5,0,0,0,0,-5, ldraw_lib__4_4edge()],
+// 1 16 -7 -9 -14 0 -1 0 -5 0 0 0 0 5 4-4ndis.dat
+  [1,16,-7,-9,-14,0,-1,0,-5,0,0,0,0,5, ldraw_lib__4_4ndis()],
+// 0 BFC INVERTNEXT
+  [0,"BFC","INVERTNEXT"],
+// 1 16 -10 -9 -14 0 3 0 -5 0 0 0 0 -5 4-4cyli.dat
+  [1,16,-10,-9,-14,0,3,0,-5,0,0,0,0,-5, ldraw_lib__4_4cyli()],
+// 
+// 1 16 10 -9 14 0 -1 0 -5 0 0 0 0 5 4-4ndis.dat
+  [1,16,10,-9,14,0,-1,0,-5,0,0,0,0,5, ldraw_lib__4_4ndis()],
+// 1 16 10 -9 14 0 1 0 -5 0 0 0 0 5 4-4edge.dat
+  [1,16,10,-9,14,0,1,0,-5,0,0,0,0,5, ldraw_lib__4_4edge()],
+// 1 16 7 -9 14 0 1 0 -5 0 0 0 0 5 4-4edge.dat
+  [1,16,7,-9,14,0,1,0,-5,0,0,0,0,5, ldraw_lib__4_4edge()],
+// 1 16 7 -9 14 0 1 0 -5 0 0 0 0 -5 4-4ndis.dat
+  [1,16,7,-9,14,0,1,0,-5,0,0,0,0,-5, ldraw_lib__4_4ndis()],
+// 0 BFC INVERTNEXT
+  [0,"BFC","INVERTNEXT"],
+// 1 16 10 -9 14 0 -3 0 -5 0 0 0 0 -5 4-4cyli.dat
+  [1,16,10,-9,14,0,-3,0,-5,0,0,0,0,-5, ldraw_lib__4_4cyli()],
+// 
+// 1 16 -10 -9 14 0 1 0 -5 0 0 0 0 -5 4-4ndis.dat
+  [1,16,-10,-9,14,0,1,0,-5,0,0,0,0,-5, ldraw_lib__4_4ndis()],
+// 1 16 -10 -9 14 0 -1 0 -5 0 0 0 0 -5 4-4edge.dat
+  [1,16,-10,-9,14,0,-1,0,-5,0,0,0,0,-5, ldraw_lib__4_4edge()],
+// 1 16 -7 -9 14 0 -1 0 -5 0 0 0 0 -5 4-4edge.dat
+  [1,16,-7,-9,14,0,-1,0,-5,0,0,0,0,-5, ldraw_lib__4_4edge()],
+// 1 16 -7 -9 14 0 -1 0 -5 0 0 0 0 5 4-4ndis.dat
+  [1,16,-7,-9,14,0,-1,0,-5,0,0,0,0,5, ldraw_lib__4_4ndis()],
+// 0 BFC INVERTNEXT
+  [0,"BFC","INVERTNEXT"],
+// 1 16 -10 -9 14 0 3 0 -5 0 0 0 0 -5 4-4cyli.dat
+  [1,16,-10,-9,14,0,3,0,-5,0,0,0,0,-5, ldraw_lib__4_4cyli()],
+// 
+// 0 // bottom stud hole
+// 0 BFC INVERTNEXT
+  [0,"BFC","INVERTNEXT"],
+// 1 16 0 0 0 6 0 0 0 -16 0 0 0 6 4-4cyli.dat
+  [1,16,0,0,0,6,0,0,0,-16,0,0,0,6, ldraw_lib__4_4cyli()],
+// 1 16 0 0 0 6 0 0 0 1 0 0 0 6 4-4edge.dat
+  [1,16,0,0,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4edge()],
+// 1 16 0 0 0 8 0 0 0 -16 0 0 0 8 4-4cyli.dat
+  [1,16,0,0,0,8,0,0,0,-16,0,0,0,8, ldraw_lib__4_4cyli()],
+// 1 16 0 0 0 8 0 0 0 1 0 0 0 8 4-4edge.dat
+  [1,16,0,0,0,8,0,0,0,1,0,0,0,8, ldraw_lib__4_4edge()],
+// 1 16 0 0 0 2 0 0 0 -1 0 0 0 2 4-4ring3.dat
+  [1,16,0,0,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__4_4ring3()],
+];
+makepoly(ldraw_lib__2550(), line=0.2);

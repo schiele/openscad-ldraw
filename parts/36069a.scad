@@ -1,0 +1,28 @@
+use <../lib.scad>
+use <s/36069as01.scad>
+use <s/36069as02.scad>
+function ldraw_lib__36069a() = [
+// 0 Sheet Plastic 15 x 28 Trapezoid Sail
+// 0 Name: 36069a.dat
+// 0 Author: Philippe Hurbain [Philo]
+// 0 !LDRAW_ORG Part UPDATE 2019-01
+// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 
+// 0 BFC CERTIFY CCW
+  [0,"BFC","CERTIFY"],
+  [0,"BFC","CCW"],
+// 
+// 0 !CATEGORY Sheet Plastic
+// 0 !KEYWORDS Racing Yacht, Set 42074, Technic
+// 
+// 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
+// 
+// 
+// 1 16 -.25 0 0 -1 0 0 0 1 0 0 0 1 s\36069as01.dat
+  [1,16,-.25,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__36069as01()],
+// 1 16 .25 0 0 1 0 0 0 1 0 0 0 1 s\36069as01.dat
+  [1,16,.25,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__36069as01()],
+// 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\36069as02.dat
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__36069as02()],
+];
+makepoly(ldraw_lib__36069a(), line=0.2);

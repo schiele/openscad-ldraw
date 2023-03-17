@@ -1,0 +1,24 @@
+use <../lib.scad>
+use <20460px0.scad>
+function ldraw_lib__20461px0() = [
+// 0 Minifig Leg Right with Light Nougat Lower Leg and Black Shoes Pattern
+// 0 Name: 20461px0.dat
+// 0 Author: Evert-Jan Boer [ejboer]
+// 0 !LDRAW_ORG Part UPDATE 2022-05
+// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 
+// 0 !HELP Move down 12 units to align with hips
+// 
+// 0 BFC CERTIFY CCW
+  [0,"BFC","CERTIFY"],
+  [0,"BFC","CCW"],
+// 
+// 0 !KEYWORDS Bricklink 970c00pb0616, Set 71245
+// 
+// 0 !HISTORY 2022-09-15 [PTadmin] Official Update 2022-05
+// 
+// 
+// 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 20460px0.dat
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__20460px0()],
+];
+makepoly(ldraw_lib__20461px0(), line=0.2);

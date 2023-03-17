@@ -1,0 +1,25 @@
+use <../lib.scad>
+use <u9487.scad>
+use <u9489.scad>
+function ldraw_lib__u9487c01() = [
+// 0 Technic Linear Actuator 12 x  2 x  2 Body Assembly
+// 0 Name: u9487c01.dat
+// 0 Author: Philippe Hurbain [Philo]
+// 0 !LDRAW_ORG Shortcut UPDATE 2020-02
+// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 
+// 0 BFC CERTIFY CCW
+  [0,"BFC","CERTIFY"],
+  [0,"BFC","CCW"],
+// 
+// 0 !KEYWORDS Power Functions
+// 
+// 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
+// 
+// 
+// 1 72 0 20 10 1 0 0 0 1 0 0 0 1 u9489.dat
+  [1,72,0,20,10,1,0,0,0,1,0,0,0,1, ldraw_lib__u9489()],
+// 1 16 0 0 40 1 0 0 0 1 0 0 0 1 u9487.dat
+  [1,16,0,0,40,1,0,0,0,1,0,0,0,1, ldraw_lib__u9487()],
+];
+makepoly(ldraw_lib__u9487c01(), line=0.2);

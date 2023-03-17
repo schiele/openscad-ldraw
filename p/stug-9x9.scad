@@ -1,0 +1,36 @@
+use <../lib.scad>
+use <stug-3x3.scad>
+use <stug-6x6.scad>
+function ldraw_lib__stug_9x9() = [
+// 0 Stud Group  9 x  9
+// 0 Name: stug-9x9.dat
+// 0 Author: Michael Heidemann [mikeheide]
+// 0 !LDRAW_ORG Primitive UPDATE 2011-01
+// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 
+// 0 BFC CERTIFY CCW
+  [0,"BFC","CERTIFY"],
+  [0,"BFC","CCW"],
+// 
+// 0 !HISTORY 2005-12-28 [PTadmin] Official Update 2005-01
+// 0 !HISTORY 2007-05-04 [PTadmin] Header formatted for Contributor Agreement
+// 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
+// 0 !HISTORY 2011-07-01 [PTadmin] Renamed from stug9
+// 0 !HISTORY 2011-07-25 [PTadmin] Official Update 2011-01
+// 
+// 
+// 1 16 -30 0 -30 1 0 0 0 1 0 0 0 1 stug-6x6.dat
+  [1,16,-30,0,-30,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_6x6()],
+// 1 16 -60 0 60 1 0 0 0 1 0 0 0 1 stug-3x3.dat
+  [1,16,-60,0,60,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_3x3()],
+// 1 16 0 0 60 1 0 0 0 1 0 0 0 1 stug-3x3.dat
+  [1,16,0,0,60,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_3x3()],
+// 1 16 60 0 60 1 0 0 0 1 0 0 0 1 stug-3x3.dat
+  [1,16,60,0,60,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_3x3()],
+// 1 16 60 0 -60 1 0 0 0 1 0 0 0 1 stug-3x3.dat
+  [1,16,60,0,-60,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_3x3()],
+// 1 16 60 0 0 1 0 0 0 1 0 0 0 1 stug-3x3.dat
+  [1,16,60,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_3x3()],
+// 0
+];
+makepoly(ldraw_lib__stug_9x9(), line=0.2);

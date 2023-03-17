@@ -1,0 +1,39 @@
+use <../lib.scad>
+use <../p/4-4disc.scad>
+use <../p/4-4ndis.scad>
+use <s/30375s01.scad>
+use <s/30375s03.scad>
+function ldraw_lib__30375ps5() = [
+// 0 Minifig Mechanical Torso with Yellow Dot Insignia Pattern
+// 0 Name: 30375ps5.dat
+// 0 Author: Magnus Forsberg [MagFors]
+// 0 !LDRAW_ORG Part UPDATE 2016-01
+// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 
+// 0 BFC CERTIFY CCW
+  [0,"BFC","CERTIFY"],
+  [0,"BFC","CCW"],
+// 
+// 0 !KEYWORDS battle droid commander, Clone Wars, Episode Two, minifig-scale
+// 0 !KEYWORDS rocket droid commander, set 75019, set 8086, Star Wars
+// 
+// 0 !CMDLINE -c484
+// 
+// 0 !HISTORY 2016-12-31 [PTadmin] Official Update 2016-01
+// 
+// 
+// 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\30375s01.dat
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30375s01()],
+// 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\30375s03.dat
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30375s03()],
+// 
+// 1 14 0 -22 -8.725 2 0 0 0 0.062442 -1.996097 0 0.998049 0.124884 4-4disc.dat
+  [1,14,0,-22,-8.725,2,0,0,0,0.062442,-1.996097,0,0.998049,0.124884, ldraw_lib__4_4disc()],
+// 1 16 0 -22 -8.725 2 0 0 0 0.062442 -1.996097 0 0.998049 0.124884 4-4ndis.dat
+  [1,16,0,-22,-8.725,2,0,0,0,0.062442,-1.996097,0,0.998049,0.124884, ldraw_lib__4_4ndis()],
+// 4 16 -6 -20 -8.85 -2 -20 -8.85 -2 -24 -8.6 -6 -24 -8.6
+  [4,16,-6,-20,-8.85,-2,-20,-8.85,-2,-24,-8.6,-6,-24,-8.6],
+// 4 16 2 -20 -8.85 6 -20 -8.85 6 -24 -8.6 2 -24 -8.6
+  [4,16,2,-20,-8.85,6,-20,-8.85,6,-24,-8.6,2,-24,-8.6],
+];
+makepoly(ldraw_lib__30375ps5(), line=0.2);

@@ -1,0 +1,21 @@
+use <../lib.scad>
+use <2494d01.scad>
+function ldraw_lib__2494p01() = [
+// 0 ~Moved to 2494d01
+// 0 Name: 2494p01.dat
+// 0 Author: [PTadmin]
+// 0 !LDRAW_ORG Part UPDATE 2011-02
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+// 
+// 0 BFC CERTIFY CCW
+  [0,"BFC","CERTIFY"],
+  [0,"BFC","CCW"],
+// 
+// 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02
+// 
+// 
+// 0 // Glass for Window 1 x 4 x 5 with 5 White Stripes Pattern
+// 1 16 0 0 0 1 0 0 0 1 0 0 0 1 2494d01.dat
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2494d01()],
+];
+makepoly(ldraw_lib__2494p01(), line=0.2);

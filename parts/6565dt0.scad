@@ -1,0 +1,25 @@
+use <../lib.scad>
+use <168335t.scad>
+use <6565.scad>
+function ldraw_lib__6565dt0() = [
+// 0 Wedge  3 x  2 Left with Grille Sticker
+// 0 Name: 6565dt0.dat
+// 0 Author: Ulrich Röder [UR]
+// 0 !LDRAW_ORG Shortcut UPDATE 2019-01
+// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 
+// 0 BFC CERTIFY CCW
+  [0,"BFC","CERTIFY"],
+  [0,"BFC","CCW"],
+// 
+// 0 !KEYWORDS Set 5591
+// 
+// 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
+// 
+// 
+// 1 16 0 0 0 1 0 0 0 1 0 0 0 1 6565.dat
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__6565()],
+// 1 16 9.9969 10 0 0.315649 -0.948876 0 0 0 -1 0.948876 0.315649 0 168335t.dat
+  [1,16,9.9969,10,0,0.315649,-0.948876,0,0,0,-1,0.948876,0.315649,0, ldraw_lib__168335t()],
+];
+makepoly(ldraw_lib__6565dt0(), line=0.2);

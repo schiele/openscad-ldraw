@@ -1,0 +1,21 @@
+use <../lib.scad>
+use <90540.scad>
+function ldraw_lib__90514() = [
+// 0 ~Moved to 90540
+// 0 Name: 90514.dat
+// 0 Author: [PTadmin]
+// 0 !LDRAW_ORG Part UPDATE 2013-02
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+// 
+// 0 BFC CERTIFY CCW
+  [0,"BFC","CERTIFY"],
+  [0,"BFC","CCW"],
+// 
+// 0 !HISTORY 2013-12-23 [PTadmin] Official Update 2013-02
+// 
+// 
+// 0 // Minifig Ski Pole
+// 1 16 0 0 0 1 0 0 0 1 0 0 0 1 90540.dat
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__90540()],
+];
+makepoly(ldraw_lib__90514(), line=0.2);

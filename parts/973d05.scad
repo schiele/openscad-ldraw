@@ -1,0 +1,22 @@
+use <../lib.scad>
+use <973d01.scad>
+function ldraw_lib__973d05() = [
+// 0 ~Moved to 973d01
+// 0 Name: 973d05.dat
+// 0 Author: [PTadmin]
+// 0 !LDRAW_ORG Shortcut UPDATE 2020-01
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+// 
+// 0 BFC CERTIFY CCW
+  [0,"BFC","CERTIFY"],
+  [0,"BFC","CCW"],
+// 
+// 0 !HISTORY 2014-12-23 [PTadmin] Official Update 2014-02
+// 0 !HISTORY 2020-02-09 [PTadmin] Changed to Moved to
+// 0 !HISTORY 2020-06-28 [PTadmin] Official Update 2020-01
+// 
+// 
+// 1 16 0 0 0 1 0 0 0 1 0 0 0 1 973d01.dat
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__973d01()],
+];
+makepoly(ldraw_lib__973d05(), line=0.2);

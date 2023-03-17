@@ -1,0 +1,29 @@
+use <../lib.scad>
+use <s/15068p0cs01.scad>
+use <s/15068p0cs02.scad>
+use <s/15068p0cs03.scad>
+function ldraw_lib__15068p0c() = [
+// 0 Slope Brick Curved  2 x  2 x  0.667 with Gold and Red Ruffles with Dark Red Outline Pattern
+// 0 Name: 15068p0c.dat
+// 0 Author: Gerald Lasser [GeraldLasser]
+// 0 !LDRAW_ORG Part UPDATE 2022-04
+// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 
+// 0 BFC CERTIFY CCW
+  [0,"BFC","CERTIFY"],
+  [0,"BFC","CCW"],
+// 
+// 0 !KEYWORDS Bricklink 15068pb225, Chinese New Year, Lion Dance, Set 80104
+// 
+// 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04
+// 
+// 
+// 0 // Pattern
+// 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\15068p0cs01.dat
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__15068p0cs01()],
+// 1 82 0 0 0 1 0 0 0 1 0 0 0 1 s\15068p0cs02.dat
+  [1,82,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__15068p0cs02()],
+// 1 4 0 0 0 1 0 0 0 1 0 0 0 1 s\15068p0cs03.dat
+  [1,4,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__15068p0cs03()],
+];
+makepoly(ldraw_lib__15068p0c(), line=0.2);

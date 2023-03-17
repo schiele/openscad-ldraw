@@ -1,0 +1,33 @@
+use <../lib.scad>
+use <6122.scad>
+use <87685.scad>
+use <87686.scad>
+use <87687.scad>
+function ldraw_lib__6122c01() = [
+// 0 Minifig Helmet Castle w/ Dragon Crown Top Black w/ Dragon Plume
+// 0 Name: 6122c01.dat
+// 0 Author: Magnus Forsberg [MagFors]
+// 0 !LDRAW_ORG Shortcut UPDATE 2012-03
+// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 
+// 0 BFC CERTIFY CCW
+  [0,"BFC","CERTIFY"],
+  [0,"BFC","CCW"],
+// 
+// 0 !CATEGORY Minifig Headwear
+// 
+// 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01
+// 0 !HISTORY 2012-12-24 [cwdee] Add category
+// 0 !HISTORY 2012-12-28 [PTadmin] Official Update 2012-03
+// 
+// 
+// 1 16 0 -22 9 1 0 0 0 1 0 0 0 1 87687.dat
+  [1,16,0,-22,9,1,0,0,0,1,0,0,0,1, ldraw_lib__87687()],
+// 1 16 -19 3.4 -0.7 0 1 0 -0.866 0 0.5 0.5 0 0.866 87686.dat
+  [1,16,-19,3.4,-0.7,0,1,0,-0.866,0,0.5,0.5,0,0.866, ldraw_lib__87686()],
+// 1 16 19 3.4 -0.7 0 -1 0 0.866 0 0.5 -0.5 0 0.866 87685.dat
+  [1,16,19,3.4,-0.7,0,-1,0,0.866,0,0.5,-0.5,0,0.866, ldraw_lib__87685()],
+// 1 0 0 0 0 1 0 0 0 1 0 0 0 1 6122.dat
+  [1,0,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__6122()],
+];
+makepoly(ldraw_lib__6122c01(), line=0.2);

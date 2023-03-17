@@ -1,0 +1,37 @@
+use <../lib.scad>
+use <../p/4-4disc.scad>
+use <s/16497p02s01.scad>
+use <s/16497s01.scad>
+use <../p/stud16.scad>
+function ldraw_lib__16497p02() = [
+// 0 Minifig SW Imperial Officer Cap with Silver Code Disc Pattern
+// 0 Name: 16497p02.dat
+// 0 Author: Philippe Hurbain [Philo]
+// 0 !LDRAW_ORG Part UPDATE 2020-02
+// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 
+// 0 BFC CERTIFY CCW
+  [0,"BFC","CERTIFY"],
+  [0,"BFC","CCW"],
+// 
+// 0 !CATEGORY Minifig Headwear
+// 
+// 0 !HISTORY 2014-10-16 {LEGO Digital Designer} Original part shape
+// 0 !HISTORY 2019-01-21 [Philo] File preparation for LDraw Parts Tracker
+// 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
+// 
+// 
+// 1 16 0 -4 0 -1 0 0 0 -1 0 0 0 1 stud16.dat
+  [1,16,0,-4,0,-1,0,0,0,-1,0,0,0,1, ldraw_lib__stud16()],
+// 1 16 0 -4 0 8 0 0 0 -1 0 0 0 8 4-4disc.dat
+  [1,16,0,-4,0,8,0,0,0,-1,0,0,0,8, ldraw_lib__4_4disc()],
+// 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\16497s01.dat
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__16497s01()],
+// 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\16497s01.dat
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__16497s01()],
+// 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\16497p02s01.dat
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__16497p02s01()],
+// 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\16497p02s01.dat
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__16497p02s01()],
+];
+makepoly(ldraw_lib__16497p02(), line=0.2);

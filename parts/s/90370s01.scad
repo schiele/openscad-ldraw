@@ -1,0 +1,26 @@
+use <../../lib.scad>
+use <../../p/4-4con3.scad>
+use <../../p/4-4cylc.scad>
+use <../../p/4-4cylo.scad>
+function ldraw_lib__s__90370s01() = [
+// 0 ~Minifig Microphone without Patternable Areas
+// 0 Name: s\90370s01.dat
+// 0 Author: Vincent Messenet [Cheenzo]
+// 0 !LDRAW_ORG Subpart UPDATE 2022-01
+// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 
+// 0 BFC CERTIFY CCW
+  [0,"BFC","CERTIFY"],
+  [0,"BFC","CCW"],
+// 
+// 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
+// 
+// 
+// 1 16 0 18 0 3 0 0 0 -3 0 0 0 -3 4-4cylc.dat
+  [1,16,0,18,0,3,0,0,0,-3,0,0,0,-3, ldraw_lib__4_4cylc()],
+// 1 16 0 14 0 1 0 0 0 1 0 0 0 1 4-4con3.dat
+  [1,16,0,14,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4con3()],
+// 1 16 0 0 0 4 0 0 0 14 0 0 0 4 4-4cylo.dat
+  [1,16,0,0,0,4,0,0,0,14,0,0,0,4, ldraw_lib__4_4cylo()],
+];
+makepoly(ldraw_lib__s__90370s01(), line=0.2);

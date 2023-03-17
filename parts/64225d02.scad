@@ -1,0 +1,25 @@
+use <../lib.scad>
+use <4650853kc01.scad>
+use <64225.scad>
+function ldraw_lib__64225d02() = [
+// 0 Wedge  4 x  3 Triple Curved without Studs with Magenta Star on Butterfly Wings Sticker
+// 0 Name: 64225d02.dat
+// 0 Author: Takeshi Takahashi [RainbowDolphin]
+// 0 !LDRAW_ORG Shortcut UPDATE 2020-03
+// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 
+// 0 BFC CERTIFY CCW
+  [0,"BFC","CERTIFY"],
+  [0,"BFC","CCW"],
+// 
+// 0 !KEYWORDS Set 3063
+// 
+// 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
+// 
+// 
+// 1 16 0 0 0 1 0 0 0 1 0 0 0 1 64225.dat
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__64225()],
+// 1 16 0 0 0 1 0 0 0 1 0 0 0 1 4650853kc01.dat
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4650853kc01()],
+];
+makepoly(ldraw_lib__64225d02(), line=0.2);

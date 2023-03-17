@@ -1,0 +1,21 @@
+use <../lib.scad>
+use <4506c01.scad>
+function ldraw_lib__775c01() = [
+// 0 ~Moved to 4506c01
+// 0 Name: 775c01.dat
+// 0 Author: [PTadmin]
+// 0 !LDRAW_ORG Part UPDATE 2014-02
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+// 
+// 0 BFC CERTIFY CCW
+  [0,"BFC","CERTIFY"],
+  [0,"BFC","CCW"],
+// 
+// 0 !HISTORY 2014-12-23 [PTadmin] Official Update 2014-02
+// 
+// 
+// 0 // Minifig Forestman Cap with Small Plume (Shortcut)
+// 1 16 0 0 0 1 0 0 0 1 0 0 0 1 4506c01.dat
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4506c01()],
+];
+makepoly(ldraw_lib__775c01(), line=0.2);
