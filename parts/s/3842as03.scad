@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/4-8sphe.scad>
-function ldraw_lib__s__3842as03() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__3842as03(realsolid=false) = [
 // 0 ~Minifig Helmet Classic - Pivot
 // 0 Name: s\3842as03.dat
 // 0 Author: Willy Tschager [Holly-Wood]
@@ -119,7 +120,7 @@ function ldraw_lib__s__3842as03() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -14.1 5 0 0 1 0 2 0 0 0 0 2 4-8sphe.dat
-  [1,16,-14.1,5,0,0,1,0,2,0,0,0,0,2, ldraw_lib__4_8sphe()],
+  [1,16,-14.1,5,0,0,1,0,2,0,0,0,0,2, ldraw_lib__4_8sphe(realsolid)],
 // 3 16 -14.252 3.152 -0.765 -14.387 3 0 -14.095 0.42 0
   [3,16,-14.252,3.152,-0.765,-14.387,3,0,-14.095,0.42,0],
 // 5 24 -14.252 3.152 -0.765 -14.095 0.42 0 -14.387 3 0 -14.172 3.586 -1.414
@@ -200,5 +201,5 @@ function ldraw_lib__s__3842as03() = [
   [5,24,-14.387,3,0,-14.095,0.42,0,-14.252,3.152,0.765,-14.252,3.152,-0.765],
 ];
 module ldraw_lib__s__3842as03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__3842as03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__3842as03(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__3842as03(line=0.2);

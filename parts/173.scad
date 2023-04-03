@@ -5,7 +5,8 @@ use <../p/4-4cylo.scad>
 use <../p/4-4edge.scad>
 use <../p/4-4ring6.scad>
 use <../p/4-4ring7.scad>
-function ldraw_lib__173() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__173(realsolid=false) = [
 // 0 ~Technic Gearbox 20:1 Reduction Input Shaft
 // 0 Name: 173.dat
 // 0 Author: Ross Crawford [rosco]
@@ -24,27 +25,27 @@ function ldraw_lib__173() = [
 // 
 // 
 // 1 16 0 0 -1 7 0 0 0 0 7 0 20 0 4-4cylc.dat
-  [1,16,0,0,-1,7,0,0,0,0,7,0,20,0, ldraw_lib__4_4cylc()],
+  [1,16,0,0,-1,7,0,0,0,0,7,0,20,0, ldraw_lib__4_4cylc(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 0 6 0 0 0 0 6 0 19 0 4-4cylc.dat
-  [1,16,0,0,0,6,0,0,0,0,6,0,19,0, ldraw_lib__4_4cylc()],
+  [1,16,0,0,0,6,0,0,0,0,6,0,19,0, ldraw_lib__4_4cylc(realsolid)],
 // 1 16 0 0 19 1 0 0 0 0 1 0 -1 0 4-4ring6.dat
-  [1,16,0,0,19,1,0,0,0,0,1,0,-1,0, ldraw_lib__4_4ring6()],
+  [1,16,0,0,19,1,0,0,0,0,1,0,-1,0, ldraw_lib__4_4ring6(realsolid)],
 // 
 // 1 16 0 0 15 1 0 0 0 0 1 0 -1 0 4-4ring7.dat
-  [1,16,0,0,15,1,0,0,0,0,1,0,-1,0, ldraw_lib__4_4ring7()],
+  [1,16,0,0,15,1,0,0,0,0,1,0,-1,0, ldraw_lib__4_4ring7(realsolid)],
 // 1 16 0 0 15 7 0 0 0 0 7 0 1 0 4-4edge.dat
-  [1,16,0,0,15,7,0,0,0,0,7,0,1,0, ldraw_lib__4_4edge()],
+  [1,16,0,0,15,7,0,0,0,0,7,0,1,0, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 0 14 1 0 0 0 0 1 0 1 0 4-4ring7.dat
-  [1,16,0,0,14,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4ring7()],
+  [1,16,0,0,14,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4ring7(realsolid)],
 // 1 16 0 0 14 7 0 0 0 0 7 0 1 0 4-4edge.dat
-  [1,16,0,0,14,7,0,0,0,0,7,0,1,0, ldraw_lib__4_4edge()],
+  [1,16,0,0,14,7,0,0,0,0,7,0,1,0, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 0 14 8 0 0 0 0 8 0 1 0 4-4cylo.dat
-  [1,16,0,0,14,8,0,0,0,0,8,0,1,0, ldraw_lib__4_4cylo()],
+  [1,16,0,0,14,8,0,0,0,0,8,0,1,0, ldraw_lib__4_4cylo(realsolid)],
 // 
 // 1 16 -4.1 -4.1 17 .7071 0 .7071 -.7071 0 .70711 0 -17 0 2-4cylc.dat
-  [1,16,-4.1,-4.1,17,.7071,0,.7071,-.7071,0,.70711,0,-17,0, ldraw_lib__2_4cylc()],
+  [1,16,-4.1,-4.1,17,.7071,0,.7071,-.7071,0,.70711,0,-17,0, ldraw_lib__2_4cylc(realsolid)],
 // 2 24 -3.3929 -4.8071 17 -3.3929 -4.8071 0
   [2,24,-3.3929,-4.8071,17,-3.3929,-4.8071,0],
 // 2 24 -4.8071 -3.3929 17 -4.8071 -3.3929 0
@@ -57,7 +58,7 @@ function ldraw_lib__173() = [
   [2,24,-4.8071,-3.3929,17,-4.2426,-4.2426,17],
 // 
 // 1 16 4.1 4.1 17 -.7071 0 -.7071 .7071 0 -.70711 0 -17 0 2-4cylc.dat
-  [1,16,4.1,4.1,17,-.7071,0,-.7071,.7071,0,-.70711,0,-17,0, ldraw_lib__2_4cylc()],
+  [1,16,4.1,4.1,17,-.7071,0,-.7071,.7071,0,-.70711,0,-17,0, ldraw_lib__2_4cylc(realsolid)],
 // 2 24 3.3929 4.8071 17 3.3929 4.8071 0
   [2,24,3.3929,4.8071,17,3.3929,4.8071,0],
 // 2 24 4.8071 3.3929 17 4.8071 3.3929 0
@@ -70,5 +71,5 @@ function ldraw_lib__173() = [
   [2,24,4.8071,3.3929,17,4.2426,4.2426,17],
 ];
 module ldraw_lib__173(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__173(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__173(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__173(line=0.2);

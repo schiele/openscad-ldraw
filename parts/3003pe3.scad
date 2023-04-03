@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/3003pe3s01.scad>
 use <s/3003s02.scad>
-function ldraw_lib__3003pe3() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3003pe3(realsolid=false) = [
 // 0 Brick  2 x  2 with Eye with Highlight Pattern on Both Sides
 // 0 Name: 3003pe3.dat
 // 0 Author: Owen Burgoyne [C3POwen]
@@ -57,7 +58,7 @@ function ldraw_lib__3003pe3() = [
   [3,16,20,24,20,6.2,20.7,20,9.107,20.1205,20],
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3003s02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3003s02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3003s02(realsolid)],
 // 
 // 3 16 6.2 20.7 -20 -20 24 -20 20 24 -20
   [3,16,6.2,20.7,-20,-20,24,-20,20,24,-20],
@@ -101,10 +102,10 @@ function ldraw_lib__3003pe3() = [
   [3,16,9.107,20.1205,-20,6.2,20.7,-20,20,24,-20],
 // 
 // 1 16 6.2 13.1 -20 0.95 0 0 0 0 -0.95 0 1 0 s\3003pe3s01.dat
-  [1,16,6.2,13.1,-20,0.95,0,0,0,0,-0.95,0,1,0, ldraw_lib__s__3003pe3s01()],
+  [1,16,6.2,13.1,-20,0.95,0,0,0,0,-0.95,0,1,0, ldraw_lib__s__3003pe3s01(realsolid)],
 // 1 16 6.2 13.1 20 -0.95 0 0 0 0 -0.95 0 -1 0 s\3003pe3s01.dat
-  [1,16,6.2,13.1,20,-0.95,0,0,0,0,-0.95,0,-1,0, ldraw_lib__s__3003pe3s01()],
+  [1,16,6.2,13.1,20,-0.95,0,0,0,0,-0.95,0,-1,0, ldraw_lib__s__3003pe3s01(realsolid)],
 ];
 module ldraw_lib__3003pe3(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3003pe3(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3003pe3(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3003pe3(line=0.2);

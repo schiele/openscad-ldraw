@@ -3,7 +3,8 @@ use <../p/box5.scad>
 use <../p/clh6.scad>
 use <../p/stud.scad>
 use <../p/stud3.scad>
-function ldraw_lib__44568() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__44568(realsolid=false) = [
 // 0 Hinge Plate  1 x  4 Locking with Two Single Fingers on Side
 // 0 Name: 44568.dat
 // 0 Author: Orion Pobursky [OrionP]
@@ -18,16 +19,16 @@ function ldraw_lib__44568() = [
 // 
 // 
 // 1 16 20 4 0 1 0 0 0 -1 0 0 0 1 stud3.dat
-  [1,16,20,4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud3()],
+  [1,16,20,4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud3(realsolid)],
 // 1 16 0 4 0 1 0 0 0 -1 0 0 0 1 stud3.dat
-  [1,16,0,4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud3()],
+  [1,16,0,4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud3(realsolid)],
 // 1 16 -20 4 0 1 0 0 0 -1 0 0 0 1 stud3.dat
-  [1,16,-20,4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud3()],
+  [1,16,-20,4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud3(realsolid)],
 // 
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 8 0 36 0 0 0 -4 0 0 0 6 box5.dat
-  [1,16,0,8,0,36,0,0,0,-4,0,0,0,6, ldraw_lib__box5()],
+  [1,16,0,8,0,36,0,0,0,-4,0,0,0,6, ldraw_lib__box5(realsolid)],
 // 4 16 40 8 10 36 8 6 -36 8 6 -40 8 10
   [4,16,40,8,10,36,8,6,-36,8,6,-40,8,10],
 // 4 16 -40 8 10 -36 8 6 -36 8 -6 -40 8 -10
@@ -67,17 +68,17 @@ function ldraw_lib__44568() = [
 // 4 16 40 0 -10 40 8 -10 40 8 10 40 0 10
   [4,16,40,0,-10,40,8,-10,40,8,10,40,0,10],
 // 1 16 30 0 0 1 0 0 0 1 0 0 0 1 stud.dat
-  [1,16,30,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud()],
+  [1,16,30,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud(realsolid)],
 // 1 16 10 0 0 1 0 0 0 1 0 0 0 1 stud.dat
-  [1,16,10,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud()],
+  [1,16,10,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud(realsolid)],
 // 1 16 -10 0 0 1 0 0 0 1 0 0 0 1 stud.dat
-  [1,16,-10,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud()],
+  [1,16,-10,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud(realsolid)],
 // 1 16 -30 0 0 1 0 0 0 1 0 0 0 1 stud.dat
-  [1,16,-30,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud()],
+  [1,16,-30,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud(realsolid)],
 // 1 16 -20 2 -10 1 0 0 0 1 0 0 0 1 clh6.dat
-  [1,16,-20,2,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__clh6()],
+  [1,16,-20,2,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__clh6(realsolid)],
 // 1 16 20 2 -10 1 0 0 0 1 0 0 0 1 clh6.dat
-  [1,16,20,2,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__clh6()],
+  [1,16,20,2,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__clh6(realsolid)],
 // 4 16 29 0 -10 29 5.444 -10 40 8 -10 40 0 -10
   [4,16,29,0,-10,29,5.444,-10,40,8,-10,40,0,-10],
 // 4 16 0 0 -10 0 8 -10 11 5.444 -10 11 0 -10
@@ -103,5 +104,5 @@ function ldraw_lib__44568() = [
 // 0
 ];
 module ldraw_lib__44568(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__44568(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__44568(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__44568(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__004760a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__004760a(realsolid=false) = [
 // 0 Sticker  1.1 x 15.9 with Black "GÜTERBAHNHOF" on Yellow Background
 // 0 Name: 004760a.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -17,7 +18,7 @@ function ldraw_lib__004760a() = [
 // 
 // 
 // 1 16 0 -0.25 0 159 0 0 0 0.25 0 0 0 11 box5-12.dat
-  [1,16,0,-0.25,0,159,0,0,0,0.25,0,0,0,11, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,159,0,0,0,0.25,0,0,0,11, ldraw_lib__box5_12(realsolid)],
 // 4 0 -74.944 -0.25 -4.716 -75.7 -0.25 -3.468 -77.608 -0.25 -4.404 -76.528 -0.25 -6.036
   [4,0,-74.944,-0.25,-4.716,-75.7,-0.25,-3.468,-77.608,-0.25,-4.404,-76.528,-0.25,-6.036],
 // 4 0 -75.7 -0.25 -3.468 -76.156 -0.25 -1.932 -78.244 -0.25 -2.46 -77.608 -0.25 -4.404
@@ -790,5 +791,5 @@ function ldraw_lib__004760a() = [
   [3,14,-71.236,-.25,-1.296,-66.58,-.25,-2.88,-66.436,-.25,-1.296],
 ];
 module ldraw_lib__004760a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__004760a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__004760a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__004760a(line=0.2);

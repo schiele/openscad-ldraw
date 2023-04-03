@@ -3,7 +3,8 @@ use <s/6327015as01.scad>
 use <s/6327015as02.scad>
 use <s/6327015as03.scad>
 use <s/6327015as04.scad>
-function ldraw_lib__6327015g() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6327015g(realsolid=false) = [
 // 0 Sticker Pointed Rectangle with White "MINDSTORMS" on Black Background
 // 0 Name: 6327015g.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -20,14 +21,14 @@ function ldraw_lib__6327015g() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\6327015as01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6327015as01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6327015as01(realsolid)],
 // 1 15 0 0 0 1 0 0 0 1 0 0 0 1 s\6327015as02.dat
-  [1,15,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6327015as02()],
+  [1,15,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6327015as02(realsolid)],
 // 1 3 0 0 0 1 0 0 0 1 0 0 0 1 s\6327015as03.dat
-  [1,3,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6327015as03()],
+  [1,3,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6327015as03(realsolid)],
 // 1 0 0 0 0 1 0 0 0 1 0 0 0 1 s\6327015as04.dat
-  [1,0,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6327015as04()],
+  [1,0,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6327015as04(realsolid)],
 ];
 module ldraw_lib__6327015g(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6327015g(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6327015g(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6327015g(line=0.2);

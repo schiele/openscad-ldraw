@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/48/3-16cyli2.scad>
 use <92262s02.scad>
-function ldraw_lib__s__92262s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__92262s01(realsolid=false) = [
 // 0 ~Door  1 x  3 x  2 Left with Hollow Hinge - Main Part with Patternable Area
 // 0 Name: s\92262s01.dat
 // 0 Author: Rolf Osterthun [Rolf]
@@ -18,11 +19,11 @@ function ldraw_lib__s__92262s01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\92262s02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__92262s02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__92262s02(realsolid)],
 // 0 // Patterned area
 // 0 // Curved area
 // 1 16 0 0 0 10 0 0 0 48 0 0 0 -10 48\3-16cyli2.dat
-  [1,16,0,0,0,10,0,0,0,48,0,0,0,-10, ldraw_lib__48__3_16cyli2()],
+  [1,16,0,0,0,10,0,0,0,48,0,0,0,-10, ldraw_lib__48__3_16cyli2(realsolid)],
 // 0 // Flat area
 // 3 16 10 0 0 10 21 38 10 19 38
   [3,16,10,0,0,10,21,38,10,19,38],
@@ -46,5 +47,5 @@ function ldraw_lib__s__92262s01() = [
   [4,16,10,48,0,10,27,38,10,21,38,10,0,0],
 ];
 module ldraw_lib__s__92262s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__92262s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__92262s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__92262s01(line=0.2);

@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__u9150s00() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__u9150s00(realsolid=false) = [
 // 0 ~Figure Fabuland Lion Blank Patterned Areas
 // 0 Name: s\u9150s00.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -997,5 +998,5 @@ function ldraw_lib__s__u9150s00() = [
   [5,24,6,-16.7,-33.5364,6.6,-17.56,-33.4,5.35236,-17.0048,-34.0271,7.39,-15.73,-33.73],
 ];
 module ldraw_lib__s__u9150s00(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__u9150s00(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__u9150s00(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__u9150s00(line=0.2);

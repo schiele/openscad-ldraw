@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/30361as01.scad>
-function ldraw_lib__30361aps4() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__30361aps4(realsolid=false) = [
 // 0 Cylinder  2 x  2 x  2 Robot Body with Grey Squares Pattern
 // 0 Name: 30361aps4.dat
 // 0 Author: Damien Roux [Darats]
@@ -20,7 +21,7 @@ function ldraw_lib__30361aps4() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\30361as01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30361as01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30361as01(realsolid)],
 // 0 // Pattern
 // 4 16 18.48 -1.741 -7.654 18.48 -10 -7.654 14.14 -10 -14.14 18.25 0 -8
   [4,16,18.48,-1.741,-7.654,18.48,-10,-7.654,14.14,-10,-14.14,18.25,0,-8],
@@ -1398,5 +1399,5 @@ function ldraw_lib__30361aps4() = [
   [4,0,-10.831,26,-16.351,-10.329,26,-16.686,-10.329,23.6,-16.686,-10.831,23.6,-16.351],
 ];
 module ldraw_lib__30361aps4(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__30361aps4(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__30361aps4(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__30361aps4(line=0.2);

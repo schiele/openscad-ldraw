@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3004s01.scad>
-function ldraw_lib__3004p0e() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3004p0e(realsolid=false) = [
 // 0 Brick  1 x  2 with Black Circle in White Pentagon with Black Outline Pattern
 // 0 Name: 3004p0e.dat
 // 0 Author: Bertrand Lequy [Berth]
@@ -18,7 +19,7 @@ function ldraw_lib__3004p0e() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3004s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3004s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3004s01(realsolid)],
 // 4 0 -10.3 18.1 -10 -10.977 18.128 -10 0 5.239 -10 0 6 -10
   [4,0,-10.3,18.1,-10,-10.977,18.128,-10,0,5.239,-10,0,6,-10],
 // 4 0 -8.806 20.3 -10 -10.977 18.128 -10 -10.3 18.1 -10 -8.6 19.8 -10
@@ -139,5 +140,5 @@ function ldraw_lib__3004p0e() = [
   [3,15,-2.36,12.8,-10,0,6,-10,-1.59,11.81,-10],
 ];
 module ldraw_lib__3004p0e(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3004p0e(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3004p0e(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3004p0e(line=0.2);

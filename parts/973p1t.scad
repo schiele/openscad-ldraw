@@ -3,7 +3,8 @@ use <../p/1-4cyli.scad>
 use <../p/2-4disc.scad>
 use <../p/2-4ndis.scad>
 use <s/973s01.scad>
-function ldraw_lib__973p1t() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__973p1t(realsolid=false) = [
 // 0 Minifig Torso with Red Truck Pattern
 // 0 Name: 973p1t.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -18,7 +19,7 @@ function ldraw_lib__973p1t() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01(realsolid)],
 // 4 16 19 29 10 19 32 10 -19 32 10 -19 29 10
   [4,16,19,29,10,19,32,10,-19,32,10,-19,29,10],
 // 4 16 -14.345 2 10 14.345 2 10 19 29 10 -19 29 10
@@ -26,11 +27,11 @@ function ldraw_lib__973p1t() = [
 // 4 16 -14.345 2 10 -12 0 10 12 0 10 14.345 2 10
   [4,16,-14.345,2,10,-12,0,10,12,0,10,14.345,2,10],
 // 1 0 0 -4 0 4.243 0 -4.243 0 -8 0 -4.243 0 -4.243 1-4cyli.dat
-  [1,0,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli()],
+  [1,0,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli(realsolid)],
 // 1 14 0 1 -10 6 0 0 0 0 6 0 1 0 2-4disc.dat
-  [1,14,0,1,-10,6,0,0,0,0,6,0,1,0, ldraw_lib__2_4disc()],
+  [1,14,0,1,-10,6,0,0,0,0,6,0,1,0, ldraw_lib__2_4disc(realsolid)],
 // 1 16 0 1 -10 6 0 0 0 0 6 0 1 0 2-4ndis.dat
-  [1,16,0,1,-10,6,0,0,0,0,6,0,1,0, ldraw_lib__2_4ndis()],
+  [1,16,0,1,-10,6,0,0,0,0,6,0,1,0, ldraw_lib__2_4ndis(realsolid)],
 // 4 16 5.6 24.8 -10 3.9675 24.1238 -10 3.8329 24.8 -10 3.9675 25.4762 -10
   [4,16,5.6,24.8,-10,3.9675,24.1238,-10,3.8329,24.8,-10,3.9675,25.4762,-10],
 // 4 16 5.6 24.8 -10 3.9675 25.4762 -10 4.3505 26.0495 -10 4.9238 26.4326 -10
@@ -293,5 +294,5 @@ function ldraw_lib__973p1t() = [
   [3,16,10.6,22.3,-10,8.7966,23.4759,-10,9.06,24.8,-10],
 ];
 module ldraw_lib__973p1t(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__973p1t(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__973p1t(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__973p1t(line=0.2);

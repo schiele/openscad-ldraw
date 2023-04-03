@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__2431pt4s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__2431pt4s01(realsolid=false) = [
 // 0 ~Tile  1 x  4 with Black "CATERHAM" Pattern - Text
 // 0 Name: s\2431pt4s01.dat
 // 0 Author: Ulrich Röder [UR]
@@ -167,5 +168,5 @@ function ldraw_lib__s__2431pt4s01() = [
   [3,16,30.08,0,-2.66,30.41,0,-2.82,29.88,0,-2.41],
 ];
 module ldraw_lib__s__2431pt4s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__2431pt4s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__2431pt4s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__2431pt4s01(line=0.2);

@@ -4,7 +4,8 @@ use <../../p/rect.scad>
 use <../../p/rect2a.scad>
 use <../../p/rect2p.scad>
 use <../../p/rect3.scad>
-function ldraw_lib__s__2881s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__2881s02(realsolid=false) = [
 // 0 ~Monorail Track Point Bottom Locking
 // 0 Name: s\2881s02.dat
 // 0 Author: Mikkel Bech Jensen [gaia]
@@ -22,23 +23,23 @@ function ldraw_lib__s__2881s02() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 10 15.5 -2 7 0 0 0 -4.5 0 0 0 -2.5 box2-5.dat
-  [1,16,10,15.5,-2,7,0,0,0,-4.5,0,0,0,-2.5, ldraw_lib__box2_5()],
+  [1,16,10,15.5,-2,7,0,0,0,-4.5,0,0,0,-2.5, ldraw_lib__box2_5(realsolid)],
 // 1 16 0 12 -1.75 0 1 0 0 0 4 -2.25 0 0 rect3.dat
-  [1,16,0,12,-1.75,0,1,0,0,0,4,-2.25,0,0, ldraw_lib__rect3()],
+  [1,16,0,12,-1.75,0,1,0,0,0,4,-2.25,0,0, ldraw_lib__rect3(realsolid)],
 // 1 16 -32.5 12 -6 0 0 4.5 0 1 -4 2 0 0 rect3.dat
-  [1,16,-32.5,12,-6,0,0,4.5,0,1,-4,2,0,0, ldraw_lib__rect3()],
+  [1,16,-32.5,12,-6,0,0,4.5,0,1,-4,2,0,0, ldraw_lib__rect3(realsolid)],
 // 1 16 -32.5 12 6 -4.5 0 0 4 1 0 0 0 2 rect2p.dat
-  [1,16,-32.5,12,6,-4.5,0,0,4,1,0,0,0,2, ldraw_lib__rect2p()],
+  [1,16,-32.5,12,6,-4.5,0,0,4,1,0,0,0,2, ldraw_lib__rect2p(realsolid)],
 // 1 16 -14 8 6 -14 0 0 0 1 0 0 0 2 rect.dat
-  [1,16,-14,8,6,-14,0,0,0,1,0,0,0,2, ldraw_lib__rect()],
+  [1,16,-14,8,6,-14,0,0,0,1,0,0,0,2, ldraw_lib__rect(realsolid)],
 // 1 16 0 12 6 0 -1 0 0 0 4 2 0 0 rect3.dat
-  [1,16,0,12,6,0,-1,0,0,0,4,2,0,0, ldraw_lib__rect3()],
+  [1,16,0,12,6,0,-1,0,0,0,4,2,0,0, ldraw_lib__rect3(realsolid)],
 // 1 16 20 12 -1.75 0 -1 0 0 0 4 2.25 0 0 rect2a.dat
-  [1,16,20,12,-1.75,0,-1,0,0,0,4,2.25,0,0, ldraw_lib__rect2a()],
+  [1,16,20,12,-1.75,0,-1,0,0,0,4,2.25,0,0, ldraw_lib__rect2a(realsolid)],
 // 1 16 10 8 -1.75 -10 0 0 0 1 0 0 0 2.25 rect3.dat
-  [1,16,10,8,-1.75,-10,0,0,0,1,0,0,0,2.25, ldraw_lib__rect3()],
+  [1,16,10,8,-1.75,-10,0,0,0,1,0,0,0,2.25, ldraw_lib__rect3(realsolid)],
 // 1 16 10 18 .5 -7 0 0 0 0 -2 0 1 0 rect3.dat
-  [1,16,10,18,.5,-7,0,0,0,0,-2,0,1,0, ldraw_lib__rect3()],
+  [1,16,10,18,.5,-7,0,0,0,0,-2,0,1,0, ldraw_lib__rect3(realsolid)],
 // 2 24 -37 16 4 0 16 4
   [2,24,-37,16,4,0,16,4],
 // 2 24 3 16 .5 3 11 .5
@@ -97,5 +98,5 @@ function ldraw_lib__s__2881s02() = [
   [2,24,-37,16,-8,-37,16,-4],
 ];
 module ldraw_lib__s__2881s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__2881s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__2881s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__2881s02(line=0.2);

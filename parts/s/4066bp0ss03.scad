@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__4066bp0ss03() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__4066bp0ss03(realsolid=false) = [
 // 0 ~Duplo Brick  1 x  2 x  2 with Suitcases Pattern - Common Geometry
 // 0 Name: s\4066bp0ss03.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -547,5 +548,5 @@ function ldraw_lib__s__4066bp0ss03() = [
   [3,16,0,0,-20,-9,10,-20,-5.5,10.25,-20],
 ];
 module ldraw_lib__s__4066bp0ss03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__4066bp0ss03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__4066bp0ss03(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__4066bp0ss03(line=0.2);

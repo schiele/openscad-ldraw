@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__u66c01s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__u66c01s01(realsolid=false) = [
 // 0 ~Sheet Plastic  6 x 12 Triangular (Formed Shape 1) - Holes, Side and Condlines
 // 0 Name: s\u66c01s01.dat
 // 0 Author: Damien Roux [Darats]
@@ -7976,5 +7977,5 @@ function ldraw_lib__s__u66c01s01() = [
   [5,24,13.582,46.809,6.224,13.384,46.961,6.24,13.286,46.208,13.054,13.176,47.501,-1.09],
 ];
 module ldraw_lib__s__u66c01s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__u66c01s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__u66c01s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__u66c01s01(line=0.2);

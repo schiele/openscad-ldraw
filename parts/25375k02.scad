@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__25375k02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__25375k02(realsolid=false) = [
 // 0 ~Tassel
 // 0 Name: 25375k02.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -1963,5 +1964,5 @@ function ldraw_lib__25375k02() = [
   [5,24,-2.024,9.046,-0.898,-0.014,8.389,2.023,-2.391,9.701,0.831,0.005,8.372,-1.986],
 ];
 module ldraw_lib__25375k02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__25375k02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__25375k02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__25375k02(line=0.2);

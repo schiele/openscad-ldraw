@@ -3,7 +3,8 @@ use <../p/4-4disc.scad>
 use <../p/7-8ndis.scad>
 use <../p/7-8ring1.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__004488g() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__004488g(realsolid=false) = [
 // 0 Sticker  1.5 x  1.6 with Black Anchor on Red Background
 // 0 Name: 004488g.dat
 // 0 Author: Willy Tschager [Holly-Wood]
@@ -22,7 +23,7 @@ function ldraw_lib__004488g() = [
 // 0 // Pattern
 // 0 // Black
 // 1 0 0 -.25 7.6 .8419 0 2.03254 0 1 0 -2.03254 0 .8419 7-8ring1.dat
-  [1,0,0,-.25,7.6,.8419,0,2.03254,0,1,0,-2.03254,0,.8419, ldraw_lib__7_8ring1()],
+  [1,0,0,-.25,7.6,.8419,0,2.03254,0,1,0,-2.03254,0,.8419, ldraw_lib__7_8ring1(realsolid)],
 // 4 0 0 -.25 5.4 -.842 -.25 5.567 -1.684 -.25 3.535 -1.2 -.25 3.439
   [4,0,0,-.25,5.4,-.842,-.25,5.567,-1.684,-.25,3.535,-1.2,-.25,3.439],
 // 4 0 0 -.25 5.4 -1.2 -.25 3.439 1.2 -.25 3.439 .842 -.25 5.567
@@ -76,9 +77,9 @@ function ldraw_lib__004488g() = [
 // 
 // 0 // Red
 // 1 4 0 -.25 7.6 2.2 0 0 0 1 0 0 0 2.2 4-4disc.dat
-  [1,4,0,-.25,7.6,2.2,0,0,0,1,0,0,0,2.2, ldraw_lib__4_4disc()],
+  [1,4,0,-.25,7.6,2.2,0,0,0,1,0,0,0,2.2, ldraw_lib__4_4disc(realsolid)],
 // 1 4 0 -.25 7.6 1.68381 0 4.06507 0 1 0 -4.06507 0 1.68381 7-8ndis.dat
-  [1,4,0,-.25,7.6,1.68381,0,4.06507,0,1,0,-4.06507,0,1.68381, ldraw_lib__7_8ndis()],
+  [1,4,0,-.25,7.6,1.68381,0,4.06507,0,1,0,-4.06507,0,1.68381, ldraw_lib__7_8ndis(realsolid)],
 // 3 4 -16.25 -.25 15 -5.749 -.25 9.981 2.381 -.25 13.349
   [3,4,-16.25,-.25,15,-5.749,-.25,9.981,2.381,-.25,13.349],
 // 4 4 -5.749 -.25 9.981 -16.25 -.25 15 -10.7 -.25 6.371 -7.82 -.25 2.065
@@ -147,8 +148,8 @@ function ldraw_lib__004488g() = [
 // 
 // 0 // Small Box
 // 1 16 0 -0.25 0 16.25 0 0 0 0.25 0 0 0 15 box5-12.dat
-  [1,16,0,-0.25,0,16.25,0,0,0,0.25,0,0,0,15, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,16.25,0,0,0,0.25,0,0,0,15, ldraw_lib__box5_12(realsolid)],
 ];
 module ldraw_lib__004488g(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__004488g(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__004488g(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__004488g(line=0.2);

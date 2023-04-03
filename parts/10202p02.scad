@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/10202s01.scad>
-function ldraw_lib__10202p02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__10202p02(realsolid=false) = [
 // 0 Tile  6 x  6 with Groove and Underside Studs with "Discovery" and "NASA" Pattern
 // 0 Name: 10202p02.dat
 // 0 Author: Orion Pobursky [OrionP]
@@ -17,7 +18,7 @@ function ldraw_lib__10202p02() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\10202s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__10202s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__10202s01(realsolid)],
 // 
 // 4 0 -45.862 0 -15.635 -49 0 -18.25 -43.038 0 -18.25 -43.038 0 -15.635
   [4,0,-45.862,0,-15.635,-49,0,-18.25,-43.038,0,-18.25,-43.038,0,-15.635],
@@ -857,5 +858,5 @@ function ldraw_lib__10202p02() = [
   [3,16,-34.841,0,25.459,-33.965,0,22.937,-29.111,0,30.602],
 ];
 module ldraw_lib__10202p02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__10202p02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__10202p02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__10202p02(line=0.2);

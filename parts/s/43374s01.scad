@@ -3,7 +3,8 @@ use <../../p/1-4chrd.scad>
 use <../../p/1-4cyli.scad>
 use <../../p/1-4edge.scad>
 use <../../p/4-8sphe.scad>
-function ldraw_lib__s__43374s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__43374s01(realsolid=false) = [
 // 0 ~Minifig Basketball Net for Hoop - Eighth
 // 0 Name: s\43374s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -530,13 +531,13 @@ function ldraw_lib__s__43374s01() = [
 // 2 24 1 50.679 -20.093 1 37 -20
   [2,24,1,50.679,-20.093,1,37,-20],
 // 1 16 1 37 -22 0 1 0 -2 0 0 0 0 2 1-4edge.dat
-  [1,16,1,37,-22,0,1,0,-2,0,0,0,0,2, ldraw_lib__1_4edge()],
+  [1,16,1,37,-22,0,1,0,-2,0,0,0,0,2, ldraw_lib__1_4edge(realsolid)],
 // 1 16 1 37 -22 0 -1 0 -2 0 0 0 0 2 1-4chrd.dat
-  [1,16,1,37,-22,0,-1,0,-2,0,0,0,0,2, ldraw_lib__1_4chrd()],
+  [1,16,1,37,-22,0,-1,0,-2,0,0,0,0,2, ldraw_lib__1_4chrd(realsolid)],
 // 1 16 0 37 -22 0 1 0 -2 0 0 0 0 2 1-4cyli.dat
-  [1,16,0,37,-22,0,1,0,-2,0,0,0,0,2, ldraw_lib__1_4cyli()],
+  [1,16,0,37,-22,0,1,0,-2,0,0,0,0,2, ldraw_lib__1_4cyli(realsolid)],
 // 1 16 0 7 -42.3 0 3.5 0 -1 0.6 0 0 -0.5 -1 4-8sphe.dat
-  [1,16,0,7,-42.3,0,3.5,0,-1,0.6,0,0,-0.5,-1, ldraw_lib__4_8sphe()],
+  [1,16,0,7,-42.3,0,3.5,0,-1,0.6,0,0,-0.5,-1, ldraw_lib__4_8sphe(realsolid)],
 // 2 24 1.339 6.31 -42.513 1.4 6.328 -42.5
   [2,24,1.339,6.31,-42.513,1.4,6.328,-42.5],
 // 2 24 0.137 6.108 -42.702 1.339 6.31 -42.513
@@ -581,5 +582,5 @@ function ldraw_lib__s__43374s01() = [
   [2,24,0.272,7.688,-41.605,0.532,7.777,-41.69],
 ];
 module ldraw_lib__s__43374s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__43374s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__43374s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__43374s01(line=0.2);

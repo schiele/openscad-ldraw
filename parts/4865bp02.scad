@@ -5,7 +5,8 @@ use <../p/4-4disc.scad>
 use <../p/4-4ndis.scad>
 use <../p/4-4ring2.scad>
 use <s/4865bs01.scad>
-function ldraw_lib__4865bp02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4865bp02(realsolid=false) = [
 // 0 Panel  1 x  2 x  1 with Rounded Corners with Light Blue Sky and Grey Skyline Pattern
 // 0 Name: 4865bp02.dat
 // 0 Author: Damien Roux [Darats]
@@ -22,21 +23,21 @@ function ldraw_lib__4865bp02() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4865bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4865bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4865bs01(realsolid)],
 // 1 0 3.74 9.76 10 -0.75 0 0 0 0 -0.75 0 -1 0 4-4ring2.dat
-  [1,0,3.74,9.76,10,-0.75,0,0,0,0,-0.75,0,-1,0, ldraw_lib__4_4ring2()],
+  [1,0,3.74,9.76,10,-0.75,0,0,0,0,-0.75,0,-1,0, ldraw_lib__4_4ring2(realsolid)],
 // 1 9 18 2 10 0 0 1 -1 0 0 0 -1 0 1-4disc.dat
-  [1,9,18,2,10,0,0,1,-1,0,0,0,-1,0, ldraw_lib__1_4disc()],
+  [1,9,18,2,10,0,0,1,-1,0,0,0,-1,0, ldraw_lib__1_4disc(realsolid)],
 // 1 9 -18 2 10 -1 0 0 0 0 -1 0 -1 0 1-4disc.dat
-  [1,9,-18,2,10,-1,0,0,0,0,-1,0,-1,0, ldraw_lib__1_4disc()],
+  [1,9,-18,2,10,-1,0,0,0,0,-1,0,-1,0, ldraw_lib__1_4disc(realsolid)],
 // 1 16 18 2 10 0 0 1 -1 0 0 0 -1 0 1-4ring1.dat
-  [1,16,18,2,10,0,0,1,-1,0,0,0,-1,0, ldraw_lib__1_4ring1()],
+  [1,16,18,2,10,0,0,1,-1,0,0,0,-1,0, ldraw_lib__1_4ring1(realsolid)],
 // 1 16 3.74 9.76 10 -2.25 0 0 0 0 -2.25 0 -1 0 4-4ndis.dat
-  [1,16,3.74,9.76,10,-2.25,0,0,0,0,-2.25,0,-1,0, ldraw_lib__4_4ndis()],
+  [1,16,3.74,9.76,10,-2.25,0,0,0,0,-2.25,0,-1,0, ldraw_lib__4_4ndis(realsolid)],
 // 1 16 -18 2 10 -1 0 0 0 0 -1 0 -1 0 1-4ring1.dat
-  [1,16,-18,2,10,-1,0,0,0,0,-1,0,-1,0, ldraw_lib__1_4ring1()],
+  [1,16,-18,2,10,-1,0,0,0,0,-1,0,-1,0, ldraw_lib__1_4ring1(realsolid)],
 // 1 19 3.74 9.76 10 -1.5 0 0 0 0 -1.5 0 -1 0 4-4disc.dat
-  [1,19,3.74,9.76,10,-1.5,0,0,0,0,-1.5,0,-1,0, ldraw_lib__4_4disc()],
+  [1,19,3.74,9.76,10,-1.5,0,0,0,0,-1.5,0,-1,0, ldraw_lib__4_4disc(realsolid)],
 // 4 0 -19 12.134 10 -13.226 12.134 10 -13.932 12.84 10 -19 12.84 10
   [4,0,-19,12.134,10,-13.226,12.134,10,-13.932,12.84,10,-19,12.84,10],
 // 4 0 -13.226 15.914 10 -13.932 16.623 10 -13.932 12.84 10 -13.226 12.134 10
@@ -203,5 +204,5 @@ function ldraw_lib__4865bp02() = [
   [4,72,7.845,14.893,10,13.955,16.507,10,16.867,17.637,10,19,19.222,10],
 ];
 module ldraw_lib__4865bp02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4865bp02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4865bp02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4865bp02(line=0.2);

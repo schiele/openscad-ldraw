@@ -3,7 +3,8 @@ use <4-4con0.scad>
 use <4-4con1.scad>
 use <4-4con3.scad>
 use <4-4edge.scad>
-function ldraw_lib__bump5000() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__bump5000(realsolid=false) = [
 // 0 Bump 1.0 x 0.5
 // 0 Name: bump5000.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -20,13 +21,13 @@ function ldraw_lib__bump5000() = [
 // 
 // 
 // 1 16 0 0 0 0.25 0 0 0 -0.225 0 0 0 -0.25 4-4con3.dat
-  [1,16,0,0,0,0.25,0,0,0,-0.225,0,0,0,-0.25, ldraw_lib__4_4con3()],
+  [1,16,0,0,0,0.25,0,0,0,-0.225,0,0,0,-0.25, ldraw_lib__4_4con3(realsolid)],
 // 1 16 0 -0.225 0 0.375 0 0 0 -0.225 0 0 0 -0.375 4-4con1.dat
-  [1,16,0,-0.225,0,0.375,0,0,0,-0.225,0,0,0,-0.375, ldraw_lib__4_4con1()],
+  [1,16,0,-0.225,0,0.375,0,0,0,-0.225,0,0,0,-0.375, ldraw_lib__4_4con1(realsolid)],
 // 1 16 0 -0.45 0 0.375 0 0 0 -0.05 0 0 0 -0.375 4-4con0.dat
-  [1,16,0,-0.45,0,0.375,0,0,0,-0.05,0,0,0,-0.375, ldraw_lib__4_4con0()],
+  [1,16,0,-0.45,0,0.375,0,0,0,-0.05,0,0,0,-0.375, ldraw_lib__4_4con0(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 4-4edge.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4edge()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4edge(realsolid)],
 // 5 24 0.692925 -0.225 -0.287025 0.75 -0.225 0 0.9239 0 -0.3827 0.375 -0.45 0
   [5,24,0.692925,-0.225,-0.287025,0.75,-0.225,0,0.9239,0,-0.3827,0.375,-0.45,0],
 // 5 24 0.530325 -0.225 -0.530325 0.692925 -0.225 -0.287025 0.7071 0 -0.7071 0.3464625 -0.45 -0.1435125
@@ -93,5 +94,5 @@ function ldraw_lib__bump5000() = [
   [5,24,0.1435125,-0.45,-0.3464625,0,-0.45,-0.375,0,-0.225,-0.75,0,-0.5,0],
 ];
 module ldraw_lib__bump5000(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__bump5000(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__bump5000(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__bump5000(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3039s01.scad>
-function ldraw_lib__3039pcb() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3039pcb(realsolid=false) = [
 // 0 Slope Brick 45  2 x  2 with Radar and Disk Slot Grey Pattern
 // 0 Name: 3039pcb.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -15,7 +16,7 @@ function ldraw_lib__3039pcb() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3039s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3039s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3039s01(realsolid)],
 // 4 15 -11.5 6.2579 -16.2579 -11.25 6.3286 -16.3286 -11.1 6.1165 -16.1165 -11.6 6.0458 -16.0458
   [4,15,-11.5,6.2579,-16.2579,-11.25,6.3286,-16.3286,-11.1,6.1165,-16.1165,-11.6,6.0458,-16.0458],
 // 4 15 -11.6 6.0458 -16.0458 -11.1 6.1165 -16.1165 -10.8 5.7629 -15.7629 -11.5 5.4801 -15.4801
@@ -1354,5 +1355,5 @@ function ldraw_lib__3039pcb() = [
   [3,16,-0.6,19.1626,-29.1626,-6.3,19.1626,-29.1626,-20,20,-30],
 ];
 module ldraw_lib__3039pcb(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3039pcb(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3039pcb(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3039pcb(line=0.2);

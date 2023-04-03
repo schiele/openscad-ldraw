@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__973pbea() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__973pbea(realsolid=false) = [
 // 0 ~Minifig Torso Iron Man Armoured Suit Mark XVII Front Half Pattern
 // 0 Name: s\973pbea.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -1251,5 +1252,5 @@ function ldraw_lib__s__973pbea() = [
   [3,0,6.65,1.55,0,0,1.55,0,0,2.5,0],
 ];
 module ldraw_lib__s__973pbea(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__973pbea(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__973pbea(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__973pbea(line=0.2);

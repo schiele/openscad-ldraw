@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <50747.scad>
-function ldraw_lib__4505156() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4505156(realsolid=false) = [
 // 0 ~_Windscreen  6 x  6 x  3 Dome Hinge Locking Trans_Orange (Obsolete)
 // 0 Name: 4505156.dat
 // 0 Author: Michael Heidemann [mikeheide]
@@ -17,8 +18,8 @@ function ldraw_lib__4505156() = [
 // 
 // 
 // 1 57 0 0 0 1 0 0 0 1 0 0 0 1 50747.dat
-  [1,57,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__50747()],
+  [1,57,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__50747(realsolid)],
 ];
 module ldraw_lib__4505156(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4505156(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4505156(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4505156(line=0.2);

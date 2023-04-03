@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3069bs01.scad>
-function ldraw_lib__3069bpt7() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3069bpt7(realsolid=false) = [
 // 0 Tile  1 x  2 with "WELCOME TO Fabulous LAS VEGAS NEVADA" Pattern
 // 0 Name: 3069bpt7.dat
 // 0 Author: N. W. Perry [Plastikean]
@@ -17,7 +18,7 @@ function ldraw_lib__3069bpt7() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3069bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3069bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3069bs01(realsolid)],
 // 
 // 3 82 -1.757 0 7.852 -1.459 0 8.164 -1.841 0 7.968
   [3,82,-1.757,0,7.852,-1.459,0,8.164,-1.841,0,7.968],
@@ -2427,5 +2428,5 @@ function ldraw_lib__3069bpt7() = [
   [3,82,-3.788,0,-7.905,-3.723,0,-8.143,-3.539,0,-8.308],
 ];
 module ldraw_lib__3069bpt7(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3069bpt7(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3069bpt7(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3069bpt7(line=0.2);

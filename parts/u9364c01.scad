@@ -4,7 +4,8 @@ use <u9364.scad>
 use <u9365.scad>
 use <u9366.scad>
 use <u9471.scad>
-function ldraw_lib__u9364c01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__u9364c01(realsolid=false) = [
 // 0 Electric Powered Up Medium Angular Motor Body Assembly with Medium Azure Back
 // 0 Name: u9364c01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -23,16 +24,16 @@ function ldraw_lib__u9364c01() = [
 // 
 // 
 // 1 16 0 -20 0 1 0 0 0 1 0 0 0 1 u9364.dat
-  [1,16,0,-20,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9364()],
+  [1,16,0,-20,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9364(realsolid)],
 // 1 16 0 20 0 1 0 0 0 1 0 0 0 1 u9365.dat
-  [1,16,0,20,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9365()],
+  [1,16,0,20,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9365(realsolid)],
 // 1 322 0 0 140 1 0 0 0 1 0 0 0 1 u9366.dat
-  [1,322,0,0,140,1,0,0,0,1,0,0,0,1, ldraw_lib__u9366()],
+  [1,322,0,0,140,1,0,0,0,1,0,0,0,1, ldraw_lib__u9366(realsolid)],
 // 1 322 0 0 140 1 0 0 0 1 0 0 0 1 u9471.dat
-  [1,322,0,0,140,1,0,0,0,1,0,0,0,1, ldraw_lib__u9471()],
+  [1,322,0,0,140,1,0,0,0,1,0,0,0,1, ldraw_lib__u9471(realsolid)],
 // 0 // Cable stub
 // 1 511 0 0 143 0 0 1 -1 0 0 0 -1 0 s\23816s01.dat
-  [1,511,0,0,143,0,0,1,-1,0,0,0,-1,0, ldraw_lib__s__23816s01()],
+  [1,511,0,0,143,0,0,1,-1,0,0,0,-1,0, ldraw_lib__s__23816s01(realsolid)],
 // 0 // See through blockers
 // 4 511 -10 2.5 142 -10 -2.5 142 10 -2.5 142 10 2.5 142
   [4,511,-10,2.5,142,-10,-2.5,142,10,-2.5,142,10,2.5,142],
@@ -48,5 +49,5 @@ function ldraw_lib__u9364c01() = [
   [4,322,-27,-8.5,130,-12,-8.5,130,-12,7.5,130,-27,7.5,130],
 ];
 module ldraw_lib__u9364c01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__u9364c01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__u9364c01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__u9364c01(line=0.2);

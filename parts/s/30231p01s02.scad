@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/1-4ndis.scad>
-function ldraw_lib__s__30231p01s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__30231p01s02(realsolid=false) = [
 // 0 ~Wing Insectoid Small with Arm Hinge with Circuit Pattern
 // 0 Name: s\30231p01s02.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -449,7 +450,7 @@ function ldraw_lib__s__30231p01s02() = [
 // 4 7 -7.28 -1 40.97 -7.25 -1 39.59 -6.76 -1 40.08 -6.09 -1 41.29
   [4,7,-7.28,-1,40.97,-7.25,-1,39.59,-6.76,-1,40.08,-6.09,-1,41.29],
 // 1 16 15 -1 65 0 0 -8 0 1 0 -8 0 0 1-4ndis.dat
-  [1,16,15,-1,65,0,0,-8,0,1,0,-8,0,0, ldraw_lib__1_4ndis()],
+  [1,16,15,-1,65,0,0,-8,0,1,0,-8,0,0, ldraw_lib__1_4ndis(realsolid)],
 // 3 16 -5.4 -1 72.4 -5.4 -1 78.59 -10.06 -1 75.55
   [3,16,-5.4,-1,72.4,-5.4,-1,78.59,-10.06,-1,75.55],
 // 4 16 -5.4 -1 79.5 -5.4 -1 94.87 -10.06 -1 87 -10.06 -1 76.47
@@ -1394,5 +1395,5 @@ function ldraw_lib__s__30231p01s02() = [
   [4,300,0.5,-1,94.8,-0.87,-1,95.17,-0.87,-1,94.43,-0.5,-1,93.8],
 ];
 module ldraw_lib__s__30231p01s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__30231p01s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__30231p01s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__30231p01s02(line=0.2);

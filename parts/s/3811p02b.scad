@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__3811p02b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__3811p02b(realsolid=false) = [
 // 0 ~Baseplate 32 x 32 with Island - Light Green Detail
 // 0 Name: s\3811p02b.dat
 // 0 Author: Andy Westrate [westrate]
@@ -62,5 +63,5 @@ function ldraw_lib__s__3811p02b() = [
 // 0
 ];
 module ldraw_lib__s__3811p02b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__3811p02b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__3811p02b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__3811p02b(line=0.2);

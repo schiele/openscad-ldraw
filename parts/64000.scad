@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/4-4cyli.scad>
 use <s/6246s01.scad>
-function ldraw_lib__64000() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__64000(realsolid=false) = [
 // 0 Minifig Hockey Stick with  3.6 L Bar
 // 0 Name: 64000.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -101,9 +102,9 @@ function ldraw_lib__64000() = [
   [2,24,2.7582,-79.563,3.9763,2.7531,-76.753,2.9209],
 // 
 // 1 16 0 -48 0 1 0 0 0 1 0 0 0 1 s\6246s01.dat
-  [1,16,0,-48,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6246s01()],
+  [1,16,0,-48,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6246s01(realsolid)],
 // 1 16 0 -22 0 4 0 0 0 -51 0 0 0 4 4-4cyli.dat
-  [1,16,0,-22,0,4,0,0,0,-51,0,0,0,4, ldraw_lib__4_4cyli()],
+  [1,16,0,-22,0,4,0,0,0,-51,0,0,0,4, ldraw_lib__4_4cyli(realsolid)],
 // 3 16 -2.7531 -76.753 2.9209 -3.5892 -73.8709 2.0867 -3.414 -74.2 -1.868
   [3,16,-2.7531,-76.753,2.9209,-3.5892,-73.8709,2.0867,-3.414,-74.2,-1.868],
 // 4 16 -2.7156 -84.122 -4.0787 -2.7199 -87.345 -3.1616 -2.7626 -81.79 4.8704 -2.7582 -79.563 3.9763
@@ -400,5 +401,5 @@ function ldraw_lib__64000() = [
   [5,24,2.7531,-76.753,2.9209,1.5308,-75.2,3.6956,1.5308,-73,3.6956,2.7582,-79.563,3.9763],
 ];
 module ldraw_lib__64000(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__64000(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__64000(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__64000(line=0.2);

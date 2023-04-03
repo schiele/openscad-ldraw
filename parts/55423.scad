@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <u9241.scad>
 use <u9242.scad>
-function ldraw_lib__55423() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__55423(realsolid=false) = [
 // 0 Train Wheel for RC Train w Technic Axle Hole and Rubber Ring
 // 0 Name: 55423.dat
 // 0 Author: Matthew J. Chiles [mchiles]
@@ -22,10 +23,10 @@ function ldraw_lib__55423() = [
 // 
 // 
 // 1 16 0 0 10 1 0 0 0 1 0 0 0 1 u9241.dat
-  [1,16,0,0,10,1,0,0,0,1,0,0,0,1, ldraw_lib__u9241()],
+  [1,16,0,0,10,1,0,0,0,1,0,0,0,1, ldraw_lib__u9241(realsolid)],
 // 1 67 0 0 1 1 0 0 0 1 0 0 0 1 u9242.dat
-  [1,67,0,0,1,1,0,0,0,1,0,0,0,1, ldraw_lib__u9242()],
+  [1,67,0,0,1,1,0,0,0,1,0,0,0,1, ldraw_lib__u9242(realsolid)],
 ];
 module ldraw_lib__55423(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__55423(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__55423(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__55423(line=0.2);

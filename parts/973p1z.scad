@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/1-4cyli.scad>
 use <s/973s01.scad>
-function ldraw_lib__973p1z() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__973p1z(realsolid=false) = [
 // 0 Minifig Torso Female Top with Dark Pink Stripes and Flower Necklace Pattern
 // 0 Name: 973p1z.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -18,9 +19,9 @@ function ldraw_lib__973p1z() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01(realsolid)],
 // 1 0 0 -4 0 4.243 0 -4.243 0 -8 0 -4.243 0 -4.243 1-4cyli.dat
-  [1,0,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli()],
+  [1,0,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli(realsolid)],
 // 4 85 -15.6215 14.9982 -10 -18.3255 30.8002 -10 -17.5975 30.1762 -10 -15.4135 17.2802 -10
   [4,85,-15.6215,14.9982,-10,-18.3255,30.8002,-10,-17.5975,30.1762,-10,-15.4135,17.2802,-10],
 // 4 85 -15.4135 17.2802 -10 -17.5975 30.1762 -10 -16.5575 28.4082 -10 -14.8935 19.4642 -10
@@ -2045,5 +2046,5 @@ function ldraw_lib__973p1z() = [
   [3,16,11.8415,0.5882,10,10.5295,0.6402,10,12,0,10],
 ];
 module ldraw_lib__973p1z(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__973p1z(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__973p1z(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__973p1z(line=0.2);

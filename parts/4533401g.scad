@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__4533401g() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4533401g(realsolid=false) = [
 // 0 Sticker  1.6 x  6.0 with Hexagonal Controls
 // 0 Name: 4533401g.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -17,7 +18,7 @@ function ldraw_lib__4533401g() = [
 // 
 // 
 // 1 16 0 -0.25 0 60 0 0 0 0.25 0 0 0 16 box5-12.dat
-  [1,16,0,-0.25,0,60,0,0,0,0.25,0,0,0,16, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,60,0,0,0,0.25,0,0,0,16, ldraw_lib__box5_12(realsolid)],
 // 
 // 4 80 -48.2 -0.25 -0.1 -48.7 -0.25 -0.1 -48.5 -0.25 -3 -43.2 -0.25 -3
   [4,80,-48.2,-0.25,-0.1,-48.7,-0.25,-0.1,-48.5,-0.25,-3,-43.2,-0.25,-3],
@@ -613,5 +614,5 @@ function ldraw_lib__4533401g() = [
   [3,0,21,-0.25,-9.634,20.566,-0.25,-9.54768,18.4,-0.25,-12.4],
 ];
 module ldraw_lib__4533401g(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4533401g(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4533401g(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4533401g(line=0.2);

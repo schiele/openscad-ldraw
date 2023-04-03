@@ -2,7 +2,8 @@ use <../lib.scad>
 use <3228b.scad>
 use <767.scad>
 use <862a.scad>
-function ldraw_lib__862ac01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__862ac01(realsolid=false) = [
 // 0 Train Track 12V Slotted Straight with Isolation (Complete)
 // 0 Name: 862ac01.dat
 // 0 Author: Steffen [Steffen]
@@ -21,15 +22,15 @@ function ldraw_lib__862ac01() = [
 // 
 // 
 // 1 16 0 0 50 1 0 0 0 1 0 0 0 1 3228b.dat
-  [1,16,0,0,50,1,0,0,0,1,0,0,0,1, ldraw_lib__3228b()],
+  [1,16,0,0,50,1,0,0,0,1,0,0,0,1, ldraw_lib__3228b(realsolid)],
 // 1 16 0 0 -50 1 0 0 0 1 0 0 0 1 3228b.dat
-  [1,16,0,0,-50,1,0,0,0,1,0,0,0,1, ldraw_lib__3228b()],
+  [1,16,0,0,-50,1,0,0,0,1,0,0,0,1, ldraw_lib__3228b(realsolid)],
 // 1 8 0 16 0 0 0 1 0 1 0 -1 0 0 767.dat
-  [1,8,0,16,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__767()],
+  [1,8,0,16,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__767(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 862a.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__862a()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__862a(realsolid)],
 // 0
 ];
 module ldraw_lib__862ac01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__862ac01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__862ac01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__862ac01(line=0.2);

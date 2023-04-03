@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__4521703a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4521703a(realsolid=false) = [
 // 0 Sticker  1.1 x  8 with "CARWASH" and Red/Green Stripes
 // 0 Name: 4521703a.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -798,5 +799,5 @@ function ldraw_lib__4521703a() = [
 // 0
 ];
 module ldraw_lib__4521703a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4521703a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4521703a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4521703a(line=0.2);

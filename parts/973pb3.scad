@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/1-4cyli.scad>
 use <../p/4-4disc.scad>
 use <s/973s01.scad>
-function ldraw_lib__973pb3() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__973pb3(realsolid=false) = [
 // 0 Minifig Torso with Jacket, Orange Vest, Green Neck-chief Pattern
 // 0 Name: 973pb3.dat
 // 0 Author: Michael Heidemann [mikeheide]
@@ -19,10 +20,10 @@ function ldraw_lib__973pb3() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01(realsolid)],
 // 0 // neck mark
 // 1 16 0 -4 0 4.243 0 -4.243 0 -8 0 -4.243 0 -4.243 1-4cyli.dat
-  [1,16,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli()],
+  [1,16,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli(realsolid)],
 // 0 // plain back
 // 4 16 -19 32 10 -19 29 10 19 29 10 19 32 10
   [4,16,-19,32,10,-19,29,10,19,29,10,19,32,10],
@@ -296,9 +297,9 @@ function ldraw_lib__973pb3() = [
 // 4 25 6.5 25 -10 3.75 30.75 -10 7.25 30 -10 8.25 28.5 -10
   [4,25,6.5,25,-10,3.75,30.75,-10,7.25,30,-10,8.25,28.5,-10],
 // 1 25 0 19 -10 0.75 0 0 0 0 -0.75 0 0.75 0 4-4disc.dat
-  [1,25,0,19,-10,0.75,0,0,0,0,-0.75,0,0.75,0, ldraw_lib__4_4disc()],
+  [1,25,0,19,-10,0.75,0,0,0,0,-0.75,0,0.75,0, ldraw_lib__4_4disc(realsolid)],
 // 1 25 0.5 24.5 -10 0.75 0 0 0 0 -0.75 0 0.75 0 4-4disc.dat
-  [1,25,0.5,24.5,-10,0.75,0,0,0,0,-0.75,0,0.75,0, ldraw_lib__4_4disc()],
+  [1,25,0.5,24.5,-10,0.75,0,0,0,0,-0.75,0,0.75,0, ldraw_lib__4_4disc(realsolid)],
 // 4 0 0 17.75 -10 0 18.25 -10 .287 18.3071 -10 .4784 17.8452 -10
   [4,0,0,17.75,-10,0,18.25,-10,.287,18.3071,-10,.4784,17.8452,-10],
 // 4 0 .4784 17.8452 -10 .287 18.3071 -10 .5303 18.4697 -10 .8839 18.1161 -10
@@ -905,5 +906,5 @@ function ldraw_lib__973pb3() = [
 // 0 //
 ];
 module ldraw_lib__973pb3(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__973pb3(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__973pb3(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__973pb3(line=0.2);

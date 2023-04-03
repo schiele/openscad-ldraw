@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4ering.scad>
 use <../p/4-4ndis.scad>
 use <s/3010s01.scad>
-function ldraw_lib__3010pz0() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3010pz0(realsolid=false) = [
 // 0 Brick  1 x  4 with Batman Logo in Yellow Oval Pattern
 // 0 Name: 3010pz0.dat
 // 0 Author: Damien Roux [Darats]
@@ -19,11 +20,11 @@ function ldraw_lib__3010pz0() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3010s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3010s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3010s01(realsolid)],
 // 1 16 0 12 -10 18 0 0 0 0 -9 0 1 0 4-4ndis.dat
-  [1,16,0,12,-10,18,0,0,0,0,-9,0,1,0, ldraw_lib__4_4ndis()],
+  [1,16,0,12,-10,18,0,0,0,0,-9,0,1,0, ldraw_lib__4_4ndis(realsolid)],
 // 1 14 0 12 -10 18 0 0 0 0 -9 0 1 0 4-4ering.dat
-  [1,14,0,12,-10,18,0,0,0,0,-9,0,1,0, ldraw_lib__4_4ering()],
+  [1,14,0,12,-10,18,0,0,0,0,-9,0,1,0, ldraw_lib__4_4ering(realsolid)],
 // 4 14 -15.843 13.045 -10 -15.974 12.078 -10 -18 12 -10 -16.63 15.444 -10
   [4,14,-15.843,13.045,-10,-15.974,12.078,-10,-18,12,-10,-16.63,15.444,-10],
 // 4 14 -18 12 -10 -15.974 12.078 -10 -15.829 11.136 -10 -16.63 8.556 -10
@@ -378,5 +379,5 @@ function ldraw_lib__3010pz0() = [
   [4,16,0,21,-10,-18,21,-10,-40,24,-10,40,24,-10],
 ];
 module ldraw_lib__3010pz0(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3010pz0(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3010pz0(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3010pz0(line=0.2);

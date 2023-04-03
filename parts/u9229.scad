@@ -5,7 +5,8 @@ use <../p/4-4edge.scad>
 use <../p/4-4ring7.scad>
 use <../p/4-4ring8.scad>
 use <../p/plug34.scad>
-function ldraw_lib__u9229() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__u9229(realsolid=false) = [
 // 0 ~Pin for Electric Plug (Type 3) Twin
 // 0 Name: u9229.dat
 // 0 Author: Steffen [Steffen]
@@ -22,32 +23,32 @@ function ldraw_lib__u9229() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 plug34.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__plug34()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__plug34(realsolid)],
 // 1 16 0 0 0 0.5 0 0 0 0 0.5 0 1 0 4-4ring7.dat
-  [1,16,0,0,0,0.5,0,0,0,0,0.5,0,1,0, ldraw_lib__4_4ring7()],
+  [1,16,0,0,0,0.5,0,0,0,0,0.5,0,1,0, ldraw_lib__4_4ring7(realsolid)],
 // 1 16 0 0 0 0.5 0 0 0 0 0.5 0 1 0 4-4ring8.dat
-  [1,16,0,0,0,0.5,0,0,0,0,0.5,0,1,0, ldraw_lib__4_4ring8()],
+  [1,16,0,0,0,0.5,0,0,0,0,0.5,0,1,0, ldraw_lib__4_4ring8(realsolid)],
 // 1 16 0 0 10 3.5 0 0 0 0 3.5 0 -1 0 4-4disc.dat
-  [1,16,0,0,10,3.5,0,0,0,0,3.5,0,-1,0, ldraw_lib__4_4disc()],
+  [1,16,0,0,10,3.5,0,0,0,0,3.5,0,-1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 0 23 3.5 0 0 0 0 -3.5 0 1 0 4-4edge.dat
-  [1,16,0,0,23,3.5,0,0,0,0,-3.5,0,1,0, ldraw_lib__4_4edge()],
+  [1,16,0,0,23,3.5,0,0,0,0,-3.5,0,1,0, ldraw_lib__4_4edge(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 23 -3.5 0 0 0 0 -3.5 0 -13 0 4-4cyli.dat
-  [1,16,0,0,23,-3.5,0,0,0,0,-3.5,0,-13,0, ldraw_lib__4_4cyli()],
+  [1,16,0,0,23,-3.5,0,0,0,0,-3.5,0,-13,0, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 0 10 3.5 0 0 0 0 -3.5 0 1 0 4-4edge.dat
-  [1,16,0,0,10,3.5,0,0,0,0,-3.5,0,1,0, ldraw_lib__4_4edge()],
+  [1,16,0,0,10,3.5,0,0,0,0,-3.5,0,1,0, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 0 23 0.5 0 0 0 0 0.5 0 -1 0 4-4ring7.dat
-  [1,16,0,0,23,0.5,0,0,0,0,0.5,0,-1,0, ldraw_lib__4_4ring7()],
+  [1,16,0,0,23,0.5,0,0,0,0,0.5,0,-1,0, ldraw_lib__4_4ring7(realsolid)],
 // 1 16 0 0 23 0.5 0 0 0 0 0.5 0 -1 0 4-4ring8.dat
-  [1,16,0,0,23,0.5,0,0,0,0,0.5,0,-1,0, ldraw_lib__4_4ring8()],
+  [1,16,0,0,23,0.5,0,0,0,0,0.5,0,-1,0, ldraw_lib__4_4ring8(realsolid)],
 // 1 16 0 0 23 4.5 0 0 0 0 -4.5 0 1 0 4-4edge.dat
-  [1,16,0,0,23,4.5,0,0,0,0,-4.5,0,1,0, ldraw_lib__4_4edge()],
+  [1,16,0,0,23,4.5,0,0,0,0,-4.5,0,1,0, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 0 0 4.5 0 0 0 0 -4.5 0 23 0 4-4cyli.dat
-  [1,16,0,0,0,4.5,0,0,0,0,-4.5,0,23,0, ldraw_lib__4_4cyli()],
+  [1,16,0,0,0,4.5,0,0,0,0,-4.5,0,23,0, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 0 0 4.5 0 0 0 0 4.5 0 1 0 4-4edge.dat
-  [1,16,0,0,0,4.5,0,0,0,0,4.5,0,1,0, ldraw_lib__4_4edge()],
+  [1,16,0,0,0,4.5,0,0,0,0,4.5,0,1,0, ldraw_lib__4_4edge(realsolid)],
 ];
 module ldraw_lib__u9229(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__u9229(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__u9229(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__u9229(line=0.2);

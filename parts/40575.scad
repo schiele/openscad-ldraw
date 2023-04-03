@@ -3,7 +3,8 @@ use <../p/rect.scad>
 use <s/40575s01.scad>
 use <../p/stug2-1x2.scad>
 use <../p/tri3.scad>
-function ldraw_lib__40575() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__40575(realsolid=false) = [
 // 0 ~Electric Spybotic Cover Top (Needs Work)
 // 0 Name: 40575.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -21,17 +22,17 @@ function ldraw_lib__40575() = [
 // 0 // Needs Work: Missing rear side sensor icons
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\40575s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__40575s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__40575s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\40575s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__40575s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__40575s01(realsolid)],
 // 1 16 70 -58 0 0 0 -1 0 1 0 1 0 0 stug2-1x2.dat
-  [1,16,70,-58,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__stug2_1x2()],
+  [1,16,70,-58,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__stug2_1x2(realsolid)],
 // 1 16 -70 -58 0 0 0 -1 0 1 0 1 0 0 stug2-1x2.dat
-  [1,16,-70,-58,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__stug2_1x2()],
+  [1,16,-70,-58,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__stug2_1x2(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 6 -35 80 -12 0 -6 0 0 -9 0 -4 0 tri3.dat
-  [1,16,6,-35,80,-12,0,-6,0,0,-9,0,-4,0, ldraw_lib__tri3()],
+  [1,16,6,-35,80,-12,0,-6,0,0,-9,0,-4,0, ldraw_lib__tri3(realsolid)],
 // 4 16 -28 -48 80 -30 -50 80 30 -50 80 28 -48 80
   [4,16,-28,-48,80,-30,-50,80,30,-50,80,28,-48,80],
 // 4 16 12 -32 80 -12 -32 80 -6 -35 80 6 -35 80
@@ -91,7 +92,7 @@ function ldraw_lib__40575() = [
 // 2 24 3 -90 -48 -3 -90 -48
   [2,24,3,-90,-48,-3,-90,-48],
 // 1 16 0 -80 22 0 0 18 -2 0 0 0 -5 0 rect.dat
-  [1,16,0,-80,22,0,0,18,-2,0,0,0,-5,0, ldraw_lib__rect()],
+  [1,16,0,-80,22,0,0,18,-2,0,0,0,-5,0, ldraw_lib__rect(realsolid)],
 // 4 16 -18 -78 22 18 -78 22 20 -78 0 -20 -78 0
   [4,16,-18,-78,22,18,-78,22,20,-78,0,-20,-78,0],
 // 4 16 -60 -10 80 60 -10 80 60 -10 76 -60 -10 76
@@ -170,5 +171,5 @@ function ldraw_lib__40575() = [
   [2,24,0,-84.1277,-36,-1.5308,-84.1795,-36.3044],
 ];
 module ldraw_lib__40575(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__40575(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__40575(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__40575(line=0.2);

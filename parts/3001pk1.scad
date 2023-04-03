@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3001s01.scad>
-function ldraw_lib__3001pk1() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3001pk1(realsolid=false) = [
 // 0 Brick  2 x  4 with "TOW MATER" on Sand Green Background Pattern
 // 0 Name: 3001pk1.dat
 // 0 Author: Damien Roux [Darats]
@@ -17,7 +18,7 @@ function ldraw_lib__3001pk1() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3001s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3001s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3001s01(realsolid)],
 // 4 16 40 0 20 40 24 20 -40 24 20 -40 0 20
   [4,16,40,0,20,40,24,20,-40,24,20,-40,0,20],
 // 
@@ -5833,5 +5834,5 @@ function ldraw_lib__3001pk1() = [
   [4,378,26.24,21.51,-20,26.195,21.563,-20,26.267,21.645,-20,26.338,21.542,-20],
 ];
 module ldraw_lib__3001pk1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3001pk1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3001pk1(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3001pk1(line=0.2);

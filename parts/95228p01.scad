@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/95228s01.scad>
-function ldraw_lib__95228p01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__95228p01(realsolid=false) = [
 // 0 Minifig Bottle  1 x  1 x  2 Cylindrical with Bottle Ship Pattern
 // 0 Name: 95228p01.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -17,7 +18,7 @@ function ldraw_lib__95228p01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\95228s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__95228s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__95228s01(realsolid)],
 // 4 0 -3.827 29.49 -9.239 -4.267 31.357 -8.945 -4.132 31.735 -9.035 -3.827 30.264 -9.239
   [4,0,-3.827,29.49,-9.239,-4.267,31.357,-8.945,-4.132,31.735,-9.035,-3.827,30.264,-9.239],
 // 4 0 -3.827 36.136 -9.239 -4.537 36.136 -8.765 -4.537 36.433 -8.765 -3.827 36.433 -9.239
@@ -948,5 +949,5 @@ function ldraw_lib__95228p01() = [
   [5,24,7.071,24,-7.071,7.071,43,-7.071,3.827,24,-9.239,14.142,24,0],
 ];
 module ldraw_lib__95228p01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__95228p01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__95228p01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__95228p01(line=0.2);

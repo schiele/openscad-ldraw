@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/30350cp01s01.scad>
 use <s/30350cs01.scad>
-function ldraw_lib__30350cp01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__30350cp01(realsolid=false) = [
 // 0 Tile  2 x  3 with Clips Horizontal (Thick U-Clips) with Solar Panels Pattern
 // 0 Name: 30350cp01.dat
 // 0 Author: Orion Pobursky [OrionP]
@@ -18,12 +19,12 @@ function ldraw_lib__30350cp01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\30350cs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30350cs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30350cs01(realsolid)],
 // 
 // 1 16 10 0 0 1 0 0 0 1 0 0 0 1 s\30350cp01s01.dat
-  [1,16,10,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30350cp01s01()],
+  [1,16,10,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30350cp01s01(realsolid)],
 // 1 16 -10 0 0 1 0 0 0 1 0 0 0 1 s\30350cp01s01.dat
-  [1,16,-10,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30350cp01s01()],
+  [1,16,-10,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30350cp01s01(realsolid)],
 // 
 // 4 16 -20 0 -30 20 0 -30 .8 0 -28.3 -.8 0 -28.3
   [4,16,-20,0,-30,20,0,-30,.8,0,-28.3,-.8,0,-28.3],
@@ -49,5 +50,5 @@ function ldraw_lib__30350cp01() = [
   [3,16,-20,0,-30,-.8,0,-28.3,-19.2,0,-28.3],
 ];
 module ldraw_lib__30350cp01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__30350cp01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__30350cp01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__30350cp01(line=0.2);

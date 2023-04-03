@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <3039.scad>
-function ldraw_lib__303926() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__303926(realsolid=false) = [
 // 0 ~_Slope Brick 45  2 x  2 Black (Obsolete)
 // 0 Name: 303926.dat
 // 0 Author: [PTadmin]
@@ -20,8 +21,8 @@ function ldraw_lib__303926() = [
 // 0 // colouring of the part (Black).
 // 
 // 1 0 0 0 0 1 0 0 0 1 0 0 0 1 3039.dat
-  [1,0,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3039()],
+  [1,0,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3039(realsolid)],
 ];
 module ldraw_lib__303926(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__303926(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__303926(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__303926(line=0.2);

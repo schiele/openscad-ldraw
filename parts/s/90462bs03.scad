@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/t04o6250.scad>
-function ldraw_lib__s__90462bs03() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__90462bs03(realsolid=false) = [
 // 0 ~Minifig Headdress Nemes Inside Surface
 // 0 Name: s\90462bs03.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -71,11 +72,11 @@ function ldraw_lib__s__90462bs03() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 0 8 0 0 0 -6.4 0 0 0 -8 t04o6250.dat
-  [1,16,0,0,0,8,0,0,0,-6.4,0,0,0,-8, ldraw_lib__t04o6250()],
+  [1,16,0,0,0,8,0,0,0,-6.4,0,0,0,-8, ldraw_lib__t04o6250(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 0 0 0 8 0 -6.4 0 8 0 0 t04o6250.dat
-  [1,16,0,0,0,0,0,8,0,-6.4,0,8,0,0, ldraw_lib__t04o6250()],
+  [1,16,0,0,0,0,0,8,0,-6.4,0,8,0,0, ldraw_lib__t04o6250(realsolid)],
 // 3 16 8.288 19.107 10.272 9.192 0 9.192 4.975 0 12.011
   [3,16,8.288,19.107,10.272,9.192,0,9.192,4.975,0,12.011],
 // 3 16 0 0 -13 4.975 0 -12.011 0 4.067 -13.217
@@ -228,5 +229,5 @@ function ldraw_lib__s__90462bs03() = [
   [5,24,2.253,40.657,12.999,0,35.34,13.205,0,41.698,13.203,2.689,35.529,12.898],
 ];
 module ldraw_lib__s__90462bs03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__90462bs03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__90462bs03(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__90462bs03(line=0.2);

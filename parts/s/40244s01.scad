@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/1-4cyli.scad>
-function ldraw_lib__s__40244s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__40244s01(realsolid=false) = [
 // 0 ~Staircase Spiral Axle - Quarter
 // 0 Name: s\40244s01.dat
 // 0 Author: Brent Jackson [bjackson]
@@ -61,9 +62,9 @@ function ldraw_lib__s__40244s01() = [
 // 2 24 9.239 24 3.827 9.602 24 2
   [2,24,9.239,24,3.827,9.602,24,2],
 // 1 16 0 -2 0 10 0 0 0 2 0 0 0 10 1-4cyli.dat
-  [1,16,0,-2,0,10,0,0,0,2,0,0,0,10, ldraw_lib__1_4cyli()],
+  [1,16,0,-2,0,10,0,0,0,2,0,0,0,10, ldraw_lib__1_4cyli(realsolid)],
 // 1 16 0 24 0 10 0 0 0 2 0 0 0 10 1-4cyli.dat
-  [1,16,0,24,0,10,0,0,0,2,0,0,0,10, ldraw_lib__1_4cyli()],
+  [1,16,0,24,0,10,0,0,0,2,0,0,0,10, ldraw_lib__1_4cyli(realsolid)],
 // 4 16 0 0 10 0 24 10 2 24 9.602 2 0 9.602
   [4,16,0,0,10,0,24,10,2,24,9.602,2,0,9.602],
 // 4 16 9.602 0 2 9.602 24 2 10 24 0 10 0 0
@@ -89,5 +90,5 @@ function ldraw_lib__s__40244s01() = [
 // 0
 ];
 module ldraw_lib__s__40244s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__40244s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__40244s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__40244s01(line=0.2);

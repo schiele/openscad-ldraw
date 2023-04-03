@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/1-4cyli.scad>
 use <s/973p7sa.scad>
 use <s/973s01.scad>
-function ldraw_lib__973p7t() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__973p7t(realsolid=false) = [
 // 0 Minifig Torso with Jacket over Shirt and Prison Stripes Pattern
 // 0 Name: 973p7t.dat
 // 0 Author: Nils Schmidt [BlackBrick89]
@@ -17,11 +18,11 @@ function ldraw_lib__973p7t() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01(realsolid)],
 // 1 0 0 -4 0 4.243 0 -4.243 0 -8 0 -4.243 0 -4.243 1-4cyli.dat
-  [1,0,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli()],
+  [1,0,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli(realsolid)],
 // 1 15 0 0 0 1 0 0 0 1 0 0 0 1 s\973p7sa.dat
-  [1,15,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973p7sa()],
+  [1,15,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973p7sa(realsolid)],
 // 
 // 4 0 9.3 27.1 -10 7.7 25.1 -10 8 26.9 -10 8.1 27.2 -10
   [4,0,9.3,27.1,-10,7.7,25.1,-10,8,26.9,-10,8.1,27.2,-10],
@@ -1490,5 +1491,5 @@ function ldraw_lib__973p7t() = [
   [4,16,5.8,20.1,10,5.3,18.8,10,5.5,18.8,10,5.8,19.2,10],
 ];
 module ldraw_lib__973p7t(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__973p7t(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__973p7t(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__973p7t(line=0.2);

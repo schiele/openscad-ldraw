@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <4085c.scad>
-function ldraw_lib__408526() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__408526(realsolid=false) = [
 // 0 ~_Plate  1 x  1 with Clip Vertical - Type 3 Black (Obsolete)
 // 0 Name: 408526.dat
 // 0 Author: Michael Heidemann [mikeheide]
@@ -20,8 +21,8 @@ function ldraw_lib__408526() = [
 // 0 // colouring of the part (Black).
 // 
 // 1 0 0 0 0 1 0 0 0 1 0 0 0 1 4085c.dat
-  [1,0,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4085c()],
+  [1,0,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4085c(realsolid)],
 ];
 module ldraw_lib__408526(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__408526(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__408526(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__408526(line=0.2);

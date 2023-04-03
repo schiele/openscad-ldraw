@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__4478p03b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__4478p03b(realsolid=false) = [
 // 0 ~Baseplate 32 x 32 Road 9-Stud Driveway - Crazy Paving Cement
 // 0 Name: s\4478p03b.dat
 // 0 Author: Alex Taylor [anathema]
@@ -2563,5 +2564,5 @@ function ldraw_lib__s__4478p03b() = [
 // 0
 ];
 module ldraw_lib__s__4478p03b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__4478p03b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__4478p03b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__4478p03b(line=0.2);

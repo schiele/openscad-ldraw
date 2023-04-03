@@ -3,7 +3,8 @@ use <s/92252s01.scad>
 use <s/92253s01.scad>
 use <s/92253s02.scad>
 use <s/92253s03.scad>
-function ldraw_lib__92253p03() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__92253p03(realsolid=false) = [
 // 0 Figure Friends Legs with Trousers with Reddish Brown Boots Pattern
 // 0 Name: 92253p03.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -20,19 +21,19 @@ function ldraw_lib__92253p03() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\92252s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__92252s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__92252s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\92253s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__92253s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__92253s01(realsolid)],
 // 1 70 0 0 0 1 0 0 0 1 0 0 0 1 s\92253s03.dat
-  [1,70,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__92253s03()],
+  [1,70,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__92253s03(realsolid)],
 // 1 70 0 0 0 1 0 0 0 1 0 0 0 1 s\92253s02.dat
-  [1,70,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__92253s02()],
+  [1,70,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__92253s02(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\92253s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__92253s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__92253s01(realsolid)],
 // 1 70 0 0 0 -1 0 0 0 1 0 0 0 1 s\92253s03.dat
-  [1,70,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__92253s03()],
+  [1,70,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__92253s03(realsolid)],
 // 1 70 0 0 0 -1 0 0 0 1 0 0 0 1 s\92253s02.dat
-  [1,70,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__92253s02()],
+  [1,70,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__92253s02(realsolid)],
 // 5 24 0 -31.8185 6.014 0 -32.6017 7.5042 1.2497 -31.4885 6.8433 -1.2497 -31.4885 6.8433
   [5,24,0,-31.8185,6.014,0,-32.6017,7.5042,1.2497,-31.4885,6.8433,-1.2497,-31.4885,6.8433],
 // 5 24 0 -32.6017 7.5042 0 -34.1252 9.004 1.6812 -32.5347 8.2348 -1.6812 -32.5347 8.2348
@@ -59,5 +60,5 @@ function ldraw_lib__92253p03() = [
   [5,24,0,-35.4064,9.5621,0,-37.5,10.4,1.6789,-36.1898,9.933,-1.6789,-36.1898,9.933],
 ];
 module ldraw_lib__92253p03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__92253p03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__92253p03(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__92253p03(line=0.2);

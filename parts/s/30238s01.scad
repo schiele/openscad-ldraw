@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/5-16cyli.scad>
 use <../../p/5-16edge.scad>
-function ldraw_lib__s__30238s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__30238s01(realsolid=false) = [
 // 0 ~Animal Spider Half
 // 0 Name: s\30238s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -3312,13 +3313,13 @@ function ldraw_lib__s__30238s01() = [
 // 5 24 1.33 -14.94 7.23 0 -14.94 7.23 0 -15.42 5.46 1.32 -14.43 8.23
   [5,24,1.33,-14.94,7.23,0,-14.94,7.23,0,-15.42,5.46,1.32,-14.43,8.23],
 // 1 16 0 -5 -20 0 0 4 0 1 0 4 0 0 5-16edge.dat
-  [1,16,0,-5,-20,0,0,4,0,1,0,4,0,0, ldraw_lib__5_16edge()],
+  [1,16,0,-5,-20,0,0,4,0,1,0,4,0,0, ldraw_lib__5_16edge(realsolid)],
 // 1 16 0 -13.75 -20 0 0 4 0 1 0 4 0 0 5-16edge.dat
-  [1,16,0,-13.75,-20,0,0,4,0,1,0,4,0,0, ldraw_lib__5_16edge()],
+  [1,16,0,-13.75,-20,0,0,4,0,1,0,4,0,0, ldraw_lib__5_16edge(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -5 -20 0 0 4 0 -8.75 0 4 0 0 5-16cyli.dat
-  [1,16,0,-5,-20,0,0,4,0,-8.75,0,4,0,0, ldraw_lib__5_16cyli()],
+  [1,16,0,-5,-20,0,0,4,0,-8.75,0,4,0,0, ldraw_lib__5_16cyli(realsolid)],
 // 2 24 2.2 -5 -13 0 -5 -12.87
   [2,24,2.2,-5,-13,0,-5,-12.87],
 // 2 24 5.68 -5 -22.25 6.48 -5 -19.62
@@ -3371,5 +3372,5 @@ function ldraw_lib__s__30238s01() = [
   [4,16,3.37,-5,-22.16,3.37,-13.75,-22.16,3.696,-13.75,-21.531,3.696,-5,-21.531],
 ];
 module ldraw_lib__s__30238s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__30238s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__30238s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__30238s01(line=0.2);

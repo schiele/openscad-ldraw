@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__004848b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__004848b(realsolid=false) = [
 // 0 Sticker  0.7 x  1.9 with Black "L-394" on Yellow Background
 // 0 Name: 004848b.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -20,7 +21,7 @@ function ldraw_lib__004848b() = [
 // 0 // Font: Swiss721 BT Black, except hyphen
 // 
 // 1 16 0 -0.25 0 19 0 0 0 0.25 0 0 0 7 box5-12.dat
-  [1,16,0,-0.25,0,19,0,0,0,0.25,0,0,0,7, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,19,0,0,0,0.25,0,0,0,7, ldraw_lib__box5_12(realsolid)],
 // 4 0 -16.48 -0.25 4.55 -16.48 -0.25 -4.4 -13.6 -0.25 -2.02 -13.6 -0.25 4.55
   [4,0,-16.48,-0.25,4.55,-16.48,-0.25,-4.4,-13.6,-0.25,-2.02,-13.6,-0.25,4.55],
 // 4 0 -13.6 -0.25 -2.02 -16.48 -0.25 -4.4 -9.7 -0.25 -4.4 -9.7 -0.25 -2.02
@@ -359,5 +360,5 @@ function ldraw_lib__004848b() = [
   [3,14,-7.19,-0.25,-2.39,-9.7,-0.25,-4.4,-6.87,-0.25,-3.16],
 ];
 module ldraw_lib__004848b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__004848b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__004848b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__004848b(line=0.2);

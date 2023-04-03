@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3004s01.scad>
-function ldraw_lib__3004pz0() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3004pz0(realsolid=false) = [
 // 0 Brick  1 x  2 with Bright Green Tie with Bright Light Orange Skulls Pattern
 // 0 Name: 3004pz0.dat
 // 0 Author: Damien Roux [Darats]
@@ -17,7 +18,7 @@ function ldraw_lib__3004pz0() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3004s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3004s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3004s01(realsolid)],
 // 4 0 -20 14.14 -10 -20 15.836 -10 -9.117 5.6 -10 -4.967 0 -10
   [4,0,-20,14.14,-10,-20,15.836,-10,-9.117,5.6,-10,-4.967,0,-10],
 // 4 0 -11.039 24 -10 -9.723 24 -10 -7.73 18.569 -10 -6.411 11.374 -10
@@ -883,5 +884,5 @@ function ldraw_lib__3004pz0() = [
 // 0
 ];
 module ldraw_lib__3004pz0(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3004pz0(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3004pz0(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3004pz0(line=0.2);

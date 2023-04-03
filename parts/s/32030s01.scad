@@ -4,7 +4,8 @@ use <../../p/1-8con20.scad>
 use <../../p/1-8cyli.scad>
 use <../../p/1-8edge.scad>
 use <../../p/1-8rin23.scad>
-function ldraw_lib__s__32030s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__32030s01(realsolid=false) = [
 // 0 ~Excavator Bucket 18 x 10 (Rib and tooth)
 // 0 Name: s\32030s01.dat
 // 0 Author: Guy Vivan [guyvivan]
@@ -37,47 +38,47 @@ function ldraw_lib__s__32030s01() = [
 // 2 24 -162 54 4 -162 56 4
   [2,24,-162,54,4,-162,56,4],
 // 1 16 -70 8 4 0 0 48 48 0 0 0 1 0 1-8edge.dat
-  [1,16,-70,8,4,0,0,48,48,0,0,0,1,0, ldraw_lib__1_8edge()],
+  [1,16,-70,8,4,0,0,48,48,0,0,0,1,0, ldraw_lib__1_8edge(realsolid)],
 // 1 16 -70 8 4 0 0 46 46 0 0 0 1 0 1-8edge.dat
-  [1,16,-70,8,4,0,0,46,46,0,0,0,1,0, ldraw_lib__1_8edge()],
+  [1,16,-70,8,4,0,0,46,46,0,0,0,1,0, ldraw_lib__1_8edge(realsolid)],
 // 1 16 -70 8 -4 0 0 46 46 0 0 0 1 0 1-8edge.dat
-  [1,16,-70,8,-4,0,0,46,46,0,0,0,1,0, ldraw_lib__1_8edge()],
+  [1,16,-70,8,-4,0,0,46,46,0,0,0,1,0, ldraw_lib__1_8edge(realsolid)],
 // 1 16 -70 8 -4 0 0 2 2 0 0 0 1 0 1-8rin23.dat
-  [1,16,-70,8,-4,0,0,2,2,0,0,0,1,0, ldraw_lib__1_8rin23()],
+  [1,16,-70,8,-4,0,0,2,2,0,0,0,1,0, ldraw_lib__1_8rin23(realsolid)],
 // 1 16 -70 8 4 0 0 2 2 0 0 0 -1 0 1-8rin23.dat
-  [1,16,-70,8,4,0,0,2,2,0,0,0,-1,0, ldraw_lib__1_8rin23()],
+  [1,16,-70,8,4,0,0,2,2,0,0,0,-1,0, ldraw_lib__1_8rin23(realsolid)],
 // 1 16 -70 8 -4 0 0 48 48 0 0 0 1 0 1-8edge.dat
-  [1,16,-70,8,-4,0,0,48,48,0,0,0,1,0, ldraw_lib__1_8edge()],
+  [1,16,-70,8,-4,0,0,48,48,0,0,0,1,0, ldraw_lib__1_8edge(realsolid)],
 // 1 16 -70 8 -4 0 0 48 48 0 0 0 8 0 1-8cyli.dat
-  [1,16,-70,8,-4,0,0,48,48,0,0,0,8,0, ldraw_lib__1_8cyli()],
+  [1,16,-70,8,-4,0,0,48,48,0,0,0,8,0, ldraw_lib__1_8cyli(realsolid)],
 // 1 16 -70 8 -8 0 0 42 42 0 0 0 1 0 1-8edge.dat
-  [1,16,-70,8,-8,0,0,42,42,0,0,0,1,0, ldraw_lib__1_8edge()],
+  [1,16,-70,8,-8,0,0,42,42,0,0,0,1,0, ldraw_lib__1_8edge(realsolid)],
 // 1 16 -70 8 8 0 0 42 42 0 0 0 1 0 1-8edge.dat
-  [1,16,-70,8,8,0,0,42,42,0,0,0,1,0, ldraw_lib__1_8edge()],
+  [1,16,-70,8,8,0,0,42,42,0,0,0,1,0, ldraw_lib__1_8edge(realsolid)],
 // 1 16 -70 8 4 0 0 38 38 0 0 0 1 0 1-8edge.dat
-  [1,16,-70,8,4,0,0,38,38,0,0,0,1,0, ldraw_lib__1_8edge()],
+  [1,16,-70,8,4,0,0,38,38,0,0,0,1,0, ldraw_lib__1_8edge(realsolid)],
 // 1 16 -70 8 -4 0 0 38 38 0 0 0 1 0 1-8edge.dat
-  [1,16,-70,8,-4,0,0,38,38,0,0,0,1,0, ldraw_lib__1_8edge()],
+  [1,16,-70,8,-4,0,0,38,38,0,0,0,1,0, ldraw_lib__1_8edge(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -70 8 -6 0 0 2 2 0 0 0 2 0 1-8con19.dat
-  [1,16,-70,8,-6,0,0,2,2,0,0,0,2,0, ldraw_lib__1_8con19()],
+  [1,16,-70,8,-6,0,0,2,2,0,0,0,2,0, ldraw_lib__1_8con19(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -70 8 -8 0 0 2 2 0 0 0 2 0 1-8con20.dat
-  [1,16,-70,8,-8,0,0,2,2,0,0,0,2,0, ldraw_lib__1_8con20()],
+  [1,16,-70,8,-8,0,0,2,2,0,0,0,2,0, ldraw_lib__1_8con20(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -70 8 8 0 0 2 2 0 0 0 -2 0 1-8con20.dat
-  [1,16,-70,8,8,0,0,2,2,0,0,0,-2,0, ldraw_lib__1_8con20()],
+  [1,16,-70,8,8,0,0,2,2,0,0,0,-2,0, ldraw_lib__1_8con20(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -70 8 6 0 0 2 2 0 0 0 -2 0 1-8con19.dat
-  [1,16,-70,8,6,0,0,2,2,0,0,0,-2,0, ldraw_lib__1_8con19()],
+  [1,16,-70,8,6,0,0,2,2,0,0,0,-2,0, ldraw_lib__1_8con19(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -70 8 -4 0 0 38 38 0 0 0 8 0 1-8cyli.dat
-  [1,16,-70,8,-4,0,0,38,38,0,0,0,8,0, ldraw_lib__1_8cyli()],
+  [1,16,-70,8,-4,0,0,38,38,0,0,0,8,0, ldraw_lib__1_8cyli(realsolid)],
 // 2 24 -43.134 34.866 4 -43.134 34.866 -4
   [2,24,-43.134,34.866,4,-43.134,34.866,-4],
 // 2 24 -37.832 34 8 -37.832 34 -8
@@ -203,5 +204,5 @@ function ldraw_lib__s__32030s01() = [
 // 0
 ];
 module ldraw_lib__s__32030s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__32030s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__32030s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__32030s01(line=0.2);

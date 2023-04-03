@@ -3,7 +3,8 @@ use <3068b.scad>
 use <../p/4-4con2.scad>
 use <../p/4-4cylo.scad>
 use <../p/8-8sphe.scad>
-function ldraw_lib__6253() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6253(realsolid=false) = [
 // 0 Belville Parasol Stand
 // 0 Name: 6253.dat
 // 0 Author: Tore Eriksson [Tore_Eriksson]
@@ -23,13 +24,13 @@ function ldraw_lib__6253() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 3068b.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3068b()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3068b(realsolid)],
 // 1 16 0 0 0 6 0 0 0 -152 0 0 0 6 4-4cylo.dat
-  [1,16,0,0,0,6,0,0,0,-152,0,0,0,6, ldraw_lib__4_4cylo()],
+  [1,16,0,0,0,6,0,0,0,-152,0,0,0,6, ldraw_lib__4_4cylo(realsolid)],
 // 1 16 0 -160 0 8 0 0 0 8 0 0 0 8 8-8sphe.dat
-  [1,16,0,-160,0,8,0,0,0,8,0,0,0,8, ldraw_lib__8_8sphe()],
+  [1,16,0,-160,0,8,0,0,0,8,0,0,0,8, ldraw_lib__8_8sphe(realsolid)],
 // 1 16 0 -152 0 2 0 0 0 -2 0 0 0 2 4-4con2.dat
-  [1,16,0,-152,0,2,0,0,0,-2,0,0,0,2, ldraw_lib__4_4con2()],
+  [1,16,0,-152,0,2,0,0,0,-2,0,0,0,2, ldraw_lib__4_4con2(realsolid)],
 // 2 24 4.458 -153.542 0 4.026 -153.6424 1.6677
   [2,24,4.458,-153.542,0,4.026,-153.6424,1.6677],
 // 2 24 4.026 -153.6424 1.6677 3.4236 -153.5061 2.8096
@@ -80,5 +81,5 @@ function ldraw_lib__6253() = [
   [2,24,-1.6677,-153.6424,-4.026,0,-153.542,-4.458],
 ];
 module ldraw_lib__6253(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6253(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6253(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6253(line=0.2);

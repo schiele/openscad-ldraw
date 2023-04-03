@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/2-4con0.scad>
-function ldraw_lib__s__11091s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__11091s01(realsolid=false) = [
 // 0 ~Animal Bird Wing  9L with Stylized Feathers Surface
 // 0 Name: s\11091s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -17,7 +18,7 @@ function ldraw_lib__s__11091s01() = [
 // 
 // 
 // 1 16 0 -26 0 0 0 4 0 -21 0 4 0 0 2-4con0.dat
-  [1,16,0,-26,0,0,0,4,0,-21,0,4,0,0, ldraw_lib__2_4con0()],
+  [1,16,0,-26,0,0,0,4,0,-21,0,4,0,0, ldraw_lib__2_4con0(realsolid)],
 // 2 24 0.0101 -20.0048 3.998 1.519 -20.4379 3.6979
   [2,24,0.0101,-20.0048,3.998,1.519,-20.4379,3.6979],
 // 2 24 1.5216 -20.4452 3.6974 1.519 -20.4379 3.6979
@@ -975,5 +976,5 @@ function ldraw_lib__s__11091s01() = [
   [5,24,0.929,-22.125,29.7181,0.686,-21.275,29.8691,0.685,-21.185,29.6301,0.607,-21.824,30.4061],
 ];
 module ldraw_lib__s__11091s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__11091s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__11091s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__11091s01(line=0.2);

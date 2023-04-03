@@ -2,7 +2,8 @@ use <../lib.scad>
 use <24851.scad>
 use <../p/box2-7.scad>
 use <../p/recte4.scad>
-function ldraw_lib__24851c01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__24851c01(realsolid=false) = [
 // 0 ~Electric Powered Up 2 Port Battery Box Bottom with Electric Contacts
 // 0 Name: 24851c01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -17,18 +18,18 @@ function ldraw_lib__24851c01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 24851.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__24851()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__24851(realsolid)],
 // 0 // Contacts
 // 1 494 -4 -6 77 9 0 0 0 14 0 0 0 -3 box2-7.dat
-  [1,494,-4,-6,77,9,0,0,0,14,0,0,0,-3, ldraw_lib__box2_7()],
+  [1,494,-4,-6,77,9,0,0,0,14,0,0,0,-3, ldraw_lib__box2_7(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 494 -4 -6.5 77.5 9 0 0 0 13.5 0 0 0 -2.5 box2-7.dat
-  [1,494,-4,-6.5,77.5,9,0,0,0,13.5,0,0,0,-2.5, ldraw_lib__box2_7()],
+  [1,494,-4,-6.5,77.5,9,0,0,0,13.5,0,0,0,-2.5, ldraw_lib__box2_7(realsolid)],
 // 1 494 -4 -20 74.5 9 0 0 0 1 0 0 0 .5 recte4.dat
-  [1,494,-4,-20,74.5,9,0,0,0,1,0,0,0,.5, ldraw_lib__recte4()],
+  [1,494,-4,-20,74.5,9,0,0,0,1,0,0,0,.5, ldraw_lib__recte4(realsolid)],
 // 1 494 -4 7.5 80 9 0 0 0 0 -.5 0 1 0 recte4.dat
-  [1,494,-4,7.5,80,9,0,0,0,0,-.5,0,1,0, ldraw_lib__recte4()],
+  [1,494,-4,7.5,80,9,0,0,0,0,-.5,0,1,0, ldraw_lib__recte4(realsolid)],
 // 4 494 5 7 80 5 7 75 5 8 74 5 8 80
   [4,494,5,7,80,5,7,75,5,8,74,5,8,80],
 // 4 494 5 -20 74 5 8 74 5 7 75 5 -20 75
@@ -38,15 +39,15 @@ function ldraw_lib__24851c01() = [
 // 4 494 -13 -20 74 -13 -20 75 -13 7 75 -13 8 74
   [4,494,-13,-20,74,-13,-20,75,-13,7,75,-13,8,74],
 // 1 494 -46 -6 77 9 0 0 0 14 0 0 0 -3 box2-7.dat
-  [1,494,-46,-6,77,9,0,0,0,14,0,0,0,-3, ldraw_lib__box2_7()],
+  [1,494,-46,-6,77,9,0,0,0,14,0,0,0,-3, ldraw_lib__box2_7(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 494 -46 -6.5 77.5 9 0 0 0 13.5 0 0 0 -2.5 box2-7.dat
-  [1,494,-46,-6.5,77.5,9,0,0,0,13.5,0,0,0,-2.5, ldraw_lib__box2_7()],
+  [1,494,-46,-6.5,77.5,9,0,0,0,13.5,0,0,0,-2.5, ldraw_lib__box2_7(realsolid)],
 // 1 494 -46 -20 74.5 9 0 0 0 1 0 0 0 .5 recte4.dat
-  [1,494,-46,-20,74.5,9,0,0,0,1,0,0,0,.5, ldraw_lib__recte4()],
+  [1,494,-46,-20,74.5,9,0,0,0,1,0,0,0,.5, ldraw_lib__recte4(realsolid)],
 // 1 494 -46 7.5 80 9 0 0 0 0 -.5 0 1 0 recte4.dat
-  [1,494,-46,7.5,80,9,0,0,0,0,-.5,0,1,0, ldraw_lib__recte4()],
+  [1,494,-46,7.5,80,9,0,0,0,0,-.5,0,1,0, ldraw_lib__recte4(realsolid)],
 // 4 494 -37 7 80 -37 7 75 -37 8 74 -37 8 80
   [4,494,-37,7,80,-37,7,75,-37,8,74,-37,8,80],
 // 4 494 -37 -20 74 -37 8 74 -37 7 75 -37 -20 75
@@ -57,5 +58,5 @@ function ldraw_lib__24851c01() = [
   [4,494,-55,-20,74,-55,-20,75,-55,7,75,-55,8,74],
 ];
 module ldraw_lib__24851c01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__24851c01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__24851c01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__24851c01(line=0.2);

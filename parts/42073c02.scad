@@ -3,7 +3,8 @@ use <42073.scad>
 use <u9051.scad>
 use <u9420.scad>
 use <u9421.scad>
-function ldraw_lib__42073c02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__42073c02(realsolid=false) = [
 // 0 Motor Windup  2 x  6 x  2.333 with Raised Shaft Base and 1.2L TransWhite Axle
 // 0 Name: 42073c02.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -20,14 +21,14 @@ function ldraw_lib__42073c02() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 42073.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__42073()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__42073(realsolid)],
 // 1 16 20 2 0 1 0 0 0 1 0 0 0 1 u9420.dat
-  [1,16,20,2,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9420()],
+  [1,16,20,2,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9420(realsolid)],
 // 1 79 0 26 0 1 0 0 0 1 0 0 0 1 u9051.dat
-  [1,79,0,26,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9051()],
+  [1,79,0,26,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9051(realsolid)],
 // 1 79 25 26 -40 1 0 0 0 1 0 0 0 1 u9421.dat
-  [1,79,25,26,-40,1,0,0,0,1,0,0,0,1, ldraw_lib__u9421()],
+  [1,79,25,26,-40,1,0,0,0,1,0,0,0,1, ldraw_lib__u9421(realsolid)],
 ];
 module ldraw_lib__42073c02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__42073c02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__42073c02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__42073c02(line=0.2);

@@ -2,7 +2,8 @@ use <../lib.scad>
 use <s/2513p03s01.scad>
 use <s/2513s01.scad>
 use <s/4209p70a.scad>
-function ldraw_lib__2513p03() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2513p03(realsolid=false) = [
 // 0 Car Mudguard  3 x  4 with Fire Logo, Headlights and Indicators Pattern
 // 0 Name: 2513p03.dat
 // 0 Author: Michael Heidemann [mikeheide]
@@ -18,9 +19,9 @@ function ldraw_lib__2513p03() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2513s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2513s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2513s01(realsolid)],
 // 1 16 0 6.261 -22.522 1 0 0 0 0.447213 0.894429 0 -0.894429 0.447213 s\4209p70a.dat
-  [1,16,0,6.261,-22.522,1,0,0,0,0.447213,0.894429,0,-0.894429,0.447213, ldraw_lib__s__4209p70a()],
+  [1,16,0,6.261,-22.522,1,0,0,0,0.447213,0.894429,0,-0.894429,0.447213, ldraw_lib__s__4209p70a(realsolid)],
 // 3 16 -11.25 7.602 -25.205 -40 11.1805 -32.361 -11.25 10.174 -30.348
   [3,16,-11.25,7.602,-25.205,-40,11.1805,-32.361,-11.25,10.174,-30.348],
 // 4 16 -40 0 -10 -11.25 1.118 -12.236 0 1.118 -12.236 40 0 -10
@@ -38,8 +39,8 @@ function ldraw_lib__2513p03() = [
 // 4 16 40 11.1805 -32.361 40 0 -10 11.25 1.118 -12.236 11.25 7.602 -25.205
   [4,16,40,11.1805,-32.361,40,0,-10,11.25,1.118,-12.236,11.25,7.602,-25.205],
 // 1 16 0 20 -50 1 0 0 0 1 -0.5 0 0 1 s\2513p03s01.dat
-  [1,16,0,20,-50,1,0,0,0,1,-0.5,0,0,1, ldraw_lib__s__2513p03s01()],
+  [1,16,0,20,-50,1,0,0,0,1,-0.5,0,0,1, ldraw_lib__s__2513p03s01(realsolid)],
 ];
 module ldraw_lib__2513p03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2513p03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2513p03(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2513p03(line=0.2);

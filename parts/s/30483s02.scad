@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__30483s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__30483s02(realsolid=false) = [
 // 0 ~Minifig Head Wookiee with Bandolier Nose
 // 0 Name: s\30483s02.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -149,5 +150,5 @@ function ldraw_lib__s__30483s02() = [
   [5,24,2.4,-17.9,-15.9,2.2,-19.5,-15.7,1.6,-19.6,-16.3,2.8,-17.8,-15.6],
 ];
 module ldraw_lib__s__30483s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__30483s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__30483s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__30483s02(line=0.2);

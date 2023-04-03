@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3069bs01.scad>
-function ldraw_lib__3069bpk0() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3069bpk0(realsolid=false) = [
 // 0 Tile  1 x  2 with Groove with Metallic Silver and Red Emblem Pattern
 // 0 Name: 3069bpk0.dat
 // 0 Author: Damien Roux [Darats]
@@ -17,7 +18,7 @@ function ldraw_lib__3069bpk0() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3069bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3069bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3069bs01(realsolid)],
 // 
 // 4 0 -17.481 0 2.169 -17.86 0 2.275 -17.858 0 2.179 -17.813 0 2.061
   [4,0,-17.481,0,2.169,-17.86,0,2.275,-17.858,0,2.179,-17.813,0,2.061],
@@ -813,5 +814,5 @@ function ldraw_lib__3069bpk0() = [
   [4,80,17.481,0,2.169,17.463,0,2.295,17.375,0,2.347,17.418,0,2.099],
 ];
 module ldraw_lib__3069bpk0(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3069bpk0(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3069bpk0(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3069bpk0(line=0.2);

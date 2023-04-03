@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/75902s01.scad>
-function ldraw_lib__75902p04() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__75902p04(realsolid=false) = [
 // 0 Minifig Shield Round Bowed with Mercedes-Benz Logo Pattern
 // 0 Name: 75902p04.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -20,7 +21,7 @@ function ldraw_lib__75902p04() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\75902s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__75902s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__75902s01(realsolid)],
 // 
 // 5 24 18 0 -7.4 24 0 -6.2 17.8452 -2.349 -7.4 17.8452 2.349 -7.4
   [5,24,18,0,-7.4,24,0,-6.2,17.8452,-2.349,-7.4,17.8452,2.349,-7.4],
@@ -1152,5 +1153,5 @@ function ldraw_lib__75902p04() = [
   [4,80,2.695,20.4734,-6.8698,0,20.65,-6.87,0,22.8035,-6.4393,2.976,22.6085,-6.4391],
 ];
 module ldraw_lib__75902p04(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__75902p04(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__75902p04(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__75902p04(line=0.2);

@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__24866s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__24866s01(realsolid=false) = [
 // 0 ~Plate  1 x  1 with  5 Petals Petal
 // 0 Name: s\24866s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -492,5 +493,5 @@ function ldraw_lib__s__24866s01() = [
   [5,24,4.9962,1.2,6.8766,4.9962,2,6.8766,4.4299,2,7.2881,5.5625,2,6.4652],
 ];
 module ldraw_lib__s__24866s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__24866s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__24866s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__24866s01(line=0.2);

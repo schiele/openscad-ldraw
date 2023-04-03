@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/1-4tang.scad>
 use <../../p/1-8tang.scad>
-function ldraw_lib__s__48492s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__48492s01(realsolid=false) = [
 // 0 ~Animal Horse Head Armour with Plates - Half
 // 0 Name: s\48492s01.dat
 // 0 Author: Willy Tschager [Holly-Wood]
@@ -918,11 +919,11 @@ function ldraw_lib__s__48492s01() = [
   [2,24,-4,-4.75,-51.904,-4,-5.36,-53.446],
 // 
 // 1 16 -4 -.75 -51.834 0 1 0 -4 0 -.06981 -.06981 0 4 1-4tang.dat
-  [1,16,-4,-.75,-51.834,0,1,0,-4,0,-.06981,-.06981,0,4, ldraw_lib__1_4tang()],
+  [1,16,-4,-.75,-51.834,0,1,0,-4,0,-.06981,-.06981,0,4, ldraw_lib__1_4tang(realsolid)],
 // 1 16 -4 -.75 -51.834 0 1 0 -.06981 0 4 4 0 .06981 1-8tang.dat
-  [1,16,-4,-.75,-51.834,0,1,0,-.06981,0,4,4,0,.06981, ldraw_lib__1_8tang()],
+  [1,16,-4,-.75,-51.834,0,1,0,-.06981,0,4,4,0,.06981, ldraw_lib__1_8tang(realsolid)],
 // 1 16 -4 -.75 -51.834 0 1 0 2.77906 0 2.87779 2.87779 0 -2.77906 1-4tang.dat
-  [1,16,-4,-.75,-51.834,0,1,0,2.77906,0,2.87779,2.87779,0,-2.77906, ldraw_lib__1_4tang()],
+  [1,16,-4,-.75,-51.834,0,1,0,2.77906,0,2.87779,2.87779,0,-2.77906, ldraw_lib__1_4tang(realsolid)],
 // 
 // 4 16 -4 -4.764 -51.108 -4 -4.75 -51.904 -4 -5.36 -53.446 -4 -8.467 -52.255
   [4,16,-4,-4.764,-51.108,-4,-4.75,-51.904,-4,-5.36,-53.446,-4,-8.467,-52.255],
@@ -971,5 +972,5 @@ function ldraw_lib__s__48492s01() = [
   [4,16,-4,7.543,-53.417,-4,3.497,-48.96,-10.204,3.497,-48.96,-10.857,17.99,-64.925],
 ];
 module ldraw_lib__s__48492s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__48492s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__48492s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__48492s01(line=0.2);

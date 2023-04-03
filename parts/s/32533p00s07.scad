@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__32533p00s07() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__32533p00s07(realsolid=false) = [
 // 0 ~Technic Disc  5 x  5 Projectile with Kanoka Pattern Border - Outer Edge and Spokes Half
 // 0 Name: s\32533p00s07.dat
 // 0 Author: Santeri Piippo [arezey]
@@ -251,5 +252,5 @@ function ldraw_lib__s__32533p00s07() = [
   [4,16,0.81792,-14.451,-36.0746,0.88446,-14.1111,-34.9417,0,-13.923,-34.375,0,-14.451,-36.1282],
 ];
 module ldraw_lib__s__32533p00s07(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__32533p00s07(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__32533p00s07(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__32533p00s07(line=0.2);

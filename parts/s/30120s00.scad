@@ -4,7 +4,8 @@ use <../../p/4-4disc.scad>
 use <../../p/4-4edge.scad>
 use <30120s01.scad>
 use <../../p/stud4a.scad>
-function ldraw_lib__s__30120s00() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__30120s00(realsolid=false) = [
 // 0 ~Minifig Helmet with Hexagonal Top Base
 // 0 Name: s\30120s00.dat
 // 0 Author: Nils Schmidt [BlackBrick89]
@@ -19,26 +20,26 @@ function ldraw_lib__s__30120s00() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\30120s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30120s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30120s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\30120s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__30120s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__30120s01(realsolid)],
 // 0 // inner stud
 // 1 16 0 -4 0 6 0 0 0 -1 0 0 0 6 4-4disc.dat
-  [1,16,0,-4,0,6,0,0,0,-1,0,0,0,6, ldraw_lib__4_4disc()],
+  [1,16,0,-4,0,6,0,0,0,-1,0,0,0,6, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 -4 0 6 0 0 0 1 0 0 0 6 4-4edge.dat
-  [1,16,0,-4,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4edge()],
+  [1,16,0,-4,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 -2.4 0 8 0 0 0 1 0 0 0 8 4-4edge.dat
-  [1,16,0,-2.4,0,8,0,0,0,1,0,0,0,8, ldraw_lib__4_4edge()],
+  [1,16,0,-2.4,0,8,0,0,0,1,0,0,0,8, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 -2.75 0 1 0 0 0 -0.75 0 0 0 1 stud4a.dat
-  [1,16,0,-2.75,0,1,0,0,0,-0.75,0,0,0,1, ldraw_lib__stud4a()],
+  [1,16,0,-2.75,0,1,0,0,0,-0.75,0,0,0,1, ldraw_lib__stud4a(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -2.75 0 6 0 0 0 -1.25 0 0 0 6 2-4cyli.dat
-  [1,16,0,-2.75,0,6,0,0,0,-1.25,0,0,0,6, ldraw_lib__2_4cyli()],
+  [1,16,0,-2.75,0,6,0,0,0,-1.25,0,0,0,6, ldraw_lib__2_4cyli(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -2.75 0 -6 0 0 0 -1.25 0 0 0 -6 2-4cyli.dat
-  [1,16,0,-2.75,0,-6,0,0,0,-1.25,0,0,0,-6, ldraw_lib__2_4cyli()],
+  [1,16,0,-2.75,0,-6,0,0,0,-1.25,0,0,0,-6, ldraw_lib__2_4cyli(realsolid)],
 // 
 // 5 24 0 2.4745 13.1264 0 -6.3125 4.5257 2.2725 -6.3125 3.9361 -2.2725 -6.3125 3.9361
   [5,24,0,2.4745,13.1264,0,-6.3125,4.5257,2.2725,-6.3125,3.9361,-2.2725,-6.3125,3.9361],
@@ -150,5 +151,5 @@ function ldraw_lib__s__30120s00() = [
   [3,16,-1.2625,25.6337,-19.3255,0,24.4556,-17.2892,1.2625,25.6337,-19.3255],
 ];
 module ldraw_lib__s__30120s00(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__30120s00(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__30120s00(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__30120s00(line=0.2);

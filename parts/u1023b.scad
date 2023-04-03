@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4edge.scad>
 use <../p/4-4ndis.scad>
-function ldraw_lib__u1023b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__u1023b(realsolid=false) = [
 // 0 Sheet Plastic 14 x 20 Triangular
 // 0 Name: u1023b.dat
 // 0 Author: Marek Idec [Maras]
@@ -74,11 +75,11 @@ function ldraw_lib__u1023b() = [
   [2,24,-140,0,-60,-140,0,60],
 // 
 // 1 16 0 0 0 8 0 0 0 1 0 0 0 8 4-4edge.dat
-  [1,16,0,0,0,8,0,0,0,1,0,0,0,8, ldraw_lib__4_4edge()],
+  [1,16,0,0,0,8,0,0,0,1,0,0,0,8, ldraw_lib__4_4edge(realsolid)],
 // 1 16 -60 0 80 8 0 0 0 1 0 0 0 8 4-4edge.dat
-  [1,16,-60,0,80,8,0,0,0,1,0,0,0,8, ldraw_lib__4_4edge()],
+  [1,16,-60,0,80,8,0,0,0,1,0,0,0,8, ldraw_lib__4_4edge(realsolid)],
 // 1 16 -60 0 140 8 0 0 0 1 0 0 0 8 4-4edge.dat
-  [1,16,-60,0,140,8,0,0,0,1,0,0,0,8, ldraw_lib__4_4edge()],
+  [1,16,-60,0,140,8,0,0,0,1,0,0,0,8, ldraw_lib__4_4edge(realsolid)],
 // 
 // 0 Top surface
 // 4 16 -95 0 170 -115 0 170 -68 0 88 -68 0 132
@@ -132,11 +133,11 @@ function ldraw_lib__u1023b() = [
 // 3 16 -140 0 -60 -115 0 -60 -115 0 -45
   [3,16,-140,0,-60,-115,0,-60,-115,0,-45],
 // 1 16 0 0 0 8 0 0 0 1 0 0 0 8 4-4ndis.dat
-  [1,16,0,0,0,8,0,0,0,1,0,0,0,8, ldraw_lib__4_4ndis()],
+  [1,16,0,0,0,8,0,0,0,1,0,0,0,8, ldraw_lib__4_4ndis(realsolid)],
 // 1 16 -60 0 80 8 0 0 0 1 0 0 0 8 4-4ndis.dat
-  [1,16,-60,0,80,8,0,0,0,1,0,0,0,8, ldraw_lib__4_4ndis()],
+  [1,16,-60,0,80,8,0,0,0,1,0,0,0,8, ldraw_lib__4_4ndis(realsolid)],
 // 1 16 -60 0 140 8 0 0 0 1 0 0 0 8 4-4ndis.dat
-  [1,16,-60,0,140,8,0,0,0,1,0,0,0,8, ldraw_lib__4_4ndis()],
+  [1,16,-60,0,140,8,0,0,0,1,0,0,0,8, ldraw_lib__4_4ndis(realsolid)],
 // 
 // 0 Bottom edges
 // 2 24 -140 1.5 -60 -115 1.5 -60
@@ -191,11 +192,11 @@ function ldraw_lib__u1023b() = [
   [2,24,-140,1.5,60,-140,1.5,-60],
 // 
 // 1 16 0 1.5 0 8 0 0 0 1 0 0 0 8 4-4edge.dat
-  [1,16,0,1.5,0,8,0,0,0,1,0,0,0,8, ldraw_lib__4_4edge()],
+  [1,16,0,1.5,0,8,0,0,0,1,0,0,0,8, ldraw_lib__4_4edge(realsolid)],
 // 1 16 -60 1.5 80 8 0 0 0 1 0 0 0 8 4-4edge.dat
-  [1,16,-60,1.5,80,8,0,0,0,1,0,0,0,8, ldraw_lib__4_4edge()],
+  [1,16,-60,1.5,80,8,0,0,0,1,0,0,0,8, ldraw_lib__4_4edge(realsolid)],
 // 1 16 -60 1.5 140 8 0 0 0 1 0 0 0 8 4-4edge.dat
-  [1,16,-60,1.5,140,8,0,0,0,1,0,0,0,8, ldraw_lib__4_4edge()],
+  [1,16,-60,1.5,140,8,0,0,0,1,0,0,0,8, ldraw_lib__4_4edge(realsolid)],
 // 
 // 0 Bottom surface
 // 4 16 -85 1.5 -60 -85 1.5 -45 -8 1.5 8 -8 1.5 -8
@@ -245,11 +246,11 @@ function ldraw_lib__u1023b() = [
 // 3 16 -140 1.5 -60 -140 1.5 60 -115 1.5 60
   [3,16,-140,1.5,-60,-140,1.5,60,-115,1.5,60],
 // 1 16 0 1.5 0 -8 0 0 0 -1 0 0 0 8 4-4ndis.dat
-  [1,16,0,1.5,0,-8,0,0,0,-1,0,0,0,8, ldraw_lib__4_4ndis()],
+  [1,16,0,1.5,0,-8,0,0,0,-1,0,0,0,8, ldraw_lib__4_4ndis(realsolid)],
 // 1 16 -60 1.5 80 -8 0 0 0 -1 0 0 0 8 4-4ndis.dat
-  [1,16,-60,1.5,80,-8,0,0,0,-1,0,0,0,8, ldraw_lib__4_4ndis()],
+  [1,16,-60,1.5,80,-8,0,0,0,-1,0,0,0,8, ldraw_lib__4_4ndis(realsolid)],
 // 1 16 -60 1.5 140 -8 0 0 0 -1 0 0 0 8 4-4ndis.dat
-  [1,16,-60,1.5,140,-8,0,0,0,-1,0,0,0,8, ldraw_lib__4_4ndis()],
+  [1,16,-60,1.5,140,-8,0,0,0,-1,0,0,0,8, ldraw_lib__4_4ndis(realsolid)],
 // 
 // 0 Side edges
 // 2 24 -140 1.5 -60 -140 0 -60
@@ -357,17 +358,17 @@ function ldraw_lib__u1023b() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 0 8 0 0 0 1.5 0 0 0 8 4-4cyli.dat
-  [1,16,0,0,0,8,0,0,0,1.5,0,0,0,8, ldraw_lib__4_4cyli()],
+  [1,16,0,0,0,8,0,0,0,1.5,0,0,0,8, ldraw_lib__4_4cyli(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -60 0 80 8 0 0 0 1.5 0 0 0 8 4-4cyli.dat
-  [1,16,-60,0,80,8,0,0,0,1.5,0,0,0,8, ldraw_lib__4_4cyli()],
+  [1,16,-60,0,80,8,0,0,0,1.5,0,0,0,8, ldraw_lib__4_4cyli(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -60 0 140 8 0 0 0 1.5 0 0 0 8 4-4cyli.dat
-  [1,16,-60,0,140,8,0,0,0,1.5,0,0,0,8, ldraw_lib__4_4cyli()],
+  [1,16,-60,0,140,8,0,0,0,1.5,0,0,0,8, ldraw_lib__4_4cyli(realsolid)],
 // 0
 ];
 module ldraw_lib__u1023b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__u1023b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__u1023b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__u1023b(line=0.2);

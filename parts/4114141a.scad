@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__4114141a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4114141a(realsolid=false) = [
 // 0 Sticker  1.5 x  3.5 with Eyes and Open Mouth with Pointed Teeth Facing Right
 // 0 Name: 4114141a.dat
 // 0 Author: Merlijn Wissink [legolijntje]
@@ -17,7 +18,7 @@ function ldraw_lib__4114141a() = [
 // 
 // 
 // 1 16 0 -0.25 0 35 0 0 0 0.25 0 0 0 15 box5-12.dat
-  [1,16,0,-0.25,0,35,0,0,0,0.25,0,0,0,15, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,35,0,0,0,0.25,0,0,0,15, ldraw_lib__box5_12(realsolid)],
 // 4 0 -12.1 -0.25 -11.4 -11.6 -0.25 -15 -10.4 -0.25 -15 -10.9 -0.25 -12.1
   [4,0,-12.1,-0.25,-11.4,-11.6,-0.25,-15,-10.4,-0.25,-15,-10.9,-0.25,-12.1],
 // 4 0 -9.6 -0.25 -10.8 -11.1 -0.25 -10.8 -10.9 -0.25 -12.1 -8.8 -0.25 -11.5
@@ -994,5 +995,5 @@ function ldraw_lib__4114141a() = [
   [3,16,-18.9,-0.25,-10.3,-13.4,-0.25,1.4,-23.2,-0.25,-10.3],
 ];
 module ldraw_lib__4114141a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4114141a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4114141a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4114141a(line=0.2);

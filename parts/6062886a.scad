@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__6062886a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6062886a(realsolid=false) = [
 // 0 Sticker  3.6 x  2 with Dark Green Stripe Left on Black Background
 // 0 Name: 6062886a.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -39,5 +40,5 @@ function ldraw_lib__6062886a() = [
   [3,0,20,-0.25,36,0,-0.25,-36,20,-0.25,-36],
 ];
 module ldraw_lib__6062886a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6062886a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6062886a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6062886a(line=0.2);

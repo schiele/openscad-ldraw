@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/1-4cyli.scad>
 use <../p/2-4ndis.scad>
 use <s/973s01.scad>
-function ldraw_lib__973pw9() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__973pw9(realsolid=false) = [
 // 0 Minifig Torso with Brown Vest, Buckle and String Bowtie Pattern
 // 0 Name: 973pw9.dat
 // 0 Author: Willy Tschager [Holly-Wood]
@@ -147,7 +148,7 @@ function ldraw_lib__973pw9() = [
 // 
 // 0 // Brown
 // 1 6 3.44 16.04 -10 0 0 -1.6 -1.6 0 0 0 1 0 2-4ndis.dat
-  [1,6,3.44,16.04,-10,0,0,-1.6,-1.6,0,0,0,1,0, ldraw_lib__2_4ndis()],
+  [1,6,3.44,16.04,-10,0,0,-1.6,-1.6,0,0,0,1,0, ldraw_lib__2_4ndis(realsolid)],
 // 4 6 -10.081 6.433 -10 -10.815 6.249 -10 -11.448 3.54 -10 -10.733 3.582 -10
   [4,6,-10.081,6.433,-10,-10.815,6.249,-10,-11.448,3.54,-10,-10.733,3.582,-10],
 // 4 6 -10.164 8.932 -10 -10.859 8.757 -10 -10.815 6.249 -10 -10.081 6.433 -10
@@ -1024,7 +1025,7 @@ function ldraw_lib__973pw9() = [
 // 
 // 0 // Subpart Minifig Torso without Front or Back
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01(realsolid)],
 // 
 // 0 // Back Shell
 // 4 16 19 29 10 -19 29 10 -19 32 10 19 32 10
@@ -1036,9 +1037,9 @@ function ldraw_lib__973pw9() = [
 // 
 // 0 // Neck Mark
 // 1 0 0 -4 0 4.243 0 -4.243 0 -8 0 -4.243 0 -4.243 1-4cyli.dat
-  [1,0,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli()],
+  [1,0,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli(realsolid)],
 // 0
 ];
 module ldraw_lib__973pw9(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__973pw9(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__973pw9(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__973pw9(line=0.2);

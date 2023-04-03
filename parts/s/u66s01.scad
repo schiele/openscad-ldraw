@@ -3,7 +3,8 @@ use <../../p/2-4cylo.scad>
 use <../../p/4-4cylo.scad>
 use <../../p/box3u4a.scad>
 use <../../p/rect2p.scad>
-function ldraw_lib__s__u66s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__u66s01(realsolid=false) = [
 // 0 ~Sheet Plastic  6 x 12 Triangular - Edges
 // 0 Name: s\u66s01.dat
 // 0 Author: Damien Roux [Darats]
@@ -20,27 +21,27 @@ function ldraw_lib__s__u66s01() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0.125 0 7 0 0 0 -0.25 0 0 0 7 4-4cylo.dat
-  [1,16,0,0.125,0,7,0,0,0,-0.25,0,0,0,7, ldraw_lib__4_4cylo()],
+  [1,16,0,0.125,0,7,0,0,0,-0.25,0,0,0,7, ldraw_lib__4_4cylo(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0.125 198 -4 0 0 0 -0.25 0 0 0 -4 2-4cylo.dat
-  [1,16,0,0.125,198,-4,0,0,0,-0.25,0,0,0,-4, ldraw_lib__2_4cylo()],
+  [1,16,0,0.125,198,-4,0,0,0,-0.25,0,0,0,-4, ldraw_lib__2_4cylo(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 198 0 0 4 0.125 0 0 0 10 0 box3u4a.dat
-  [1,16,0,0,198,0,0,4,0.125,0,0,0,10,0, ldraw_lib__box3u4a()],
+  [1,16,0,0,198,0,0,4,0.125,0,0,0,10,0, ldraw_lib__box3u4a(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 88 0.125 32 0 0 4 0 -0.25 0 -4 0 0 2-4cylo.dat
-  [1,16,88,0.125,32,0,0,4,0,-0.25,0,-4,0,0, ldraw_lib__2_4cylo()],
+  [1,16,88,0.125,32,0,0,4,0,-0.25,0,-4,0,0, ldraw_lib__2_4cylo(realsolid)],
 // 1 16 81 0 36 -7 0 0 0 0 0.125 0 1 0 rect2p.dat
-  [1,16,81,0,36,-7,0,0,0,0,0.125,0,1,0, ldraw_lib__rect2p()],
+  [1,16,81,0,36,-7,0,0,0,0,0.125,0,1,0, ldraw_lib__rect2p(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 74 0.125 32 0 0 -4 0 -0.25 0 -4 0 0 2-4cylo.dat
-  [1,16,74,0.125,32,0,0,-4,0,-0.25,0,-4,0,0, ldraw_lib__2_4cylo()],
+  [1,16,74,0.125,32,0,0,-4,0,-0.25,0,-4,0,0, ldraw_lib__2_4cylo(realsolid)],
 // 1 16 81 0 28 -7 0 0 0 0 0.125 0 -1 0 rect2p.dat
-  [1,16,81,0,28,-7,0,0,0,0,0.125,0,-1,0, ldraw_lib__rect2p()],
+  [1,16,81,0,28,-7,0,0,0,0,0.125,0,-1,0, ldraw_lib__rect2p(realsolid)],
 // 0 // Side
 // 4 16 -26.13 0.125 44.6 -24.59 0.125 16.57 -24.59 -0.125 16.57 -26.13 -0.125 44.6
   [4,16,-26.13,0.125,44.6,-24.59,0.125,16.57,-24.59,-0.125,16.57,-26.13,-0.125,44.6],
@@ -398,5 +399,5 @@ function ldraw_lib__s__u66s01() = [
   [5,24,-26.54,-0.125,72.67,-26.54,0.125,72.67,-25.84,-0.125,100.74,-26.13,-0.125,44.6],
 ];
 module ldraw_lib__s__u66s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__u66s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__u66s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__u66s01(line=0.2);

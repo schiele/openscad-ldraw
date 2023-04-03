@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__003432d() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__003432d(realsolid=false) = [
 // 0 Sticker  2.4 x  3 with Sweden Flag
 // 0 Name: 003432d.dat
 // 0 Author: Willy Tschager [Holly-Wood]
@@ -40,9 +41,9 @@ function ldraw_lib__003432d() = [
   [4,1,-9,-0.25,-4.5,-9,-0.25,-24,-30,-0.25,-24,-30,-0.25,-4.5],
 // 
 // 1 15 0 -0.25 0 30 0 0 0 0.25 0 0 0 24 box5-12.dat
-  [1,15,0,-0.25,0,30,0,0,0,0.25,0,0,0,24, ldraw_lib__box5_12()],
+  [1,15,0,-0.25,0,30,0,0,0,0.25,0,0,0,24, ldraw_lib__box5_12(realsolid)],
 // 0
 ];
 module ldraw_lib__003432d(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__003432d(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__003432d(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__003432d(line=0.2);

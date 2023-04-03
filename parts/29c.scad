@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/box4.scad>
 use <../p/stud2.scad>
-function ldraw_lib__29c() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__29c(realsolid=false) = [
 // 0 Window  1 x  1 x  2 Classic with Short Sill
 // 0 Name: 29c.dat
 // 0 Author: Tore Eriksson [Tore_Eriksson]
@@ -175,7 +176,7 @@ function ldraw_lib__29c() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 23 -10 5 0 0 0 0 16 0 5 0 box4.dat
-  [1,16,0,23,-10,5,0,0,0,0,16,0,5,0, ldraw_lib__box4()],
+  [1,16,0,23,-10,5,0,0,0,0,16,0,5,0, ldraw_lib__box4(realsolid)],
 // 4 16 7 42 -5 5 39 -5 5 7 -5 7 3 -5
   [4,16,7,42,-5,5,39,-5,5,7,-5,7,3,-5],
 // 4 16 -7 42 -5 -7 3 -5 -5 7 -5 -5 39 -5
@@ -186,7 +187,7 @@ function ldraw_lib__29c() = [
   [4,16,7,3,-5,5,7,-5,-5,7,-5,-7,3,-5],
 // 0 outer frame
 // 1 16 0 23 -10 -7 0 0 0 0 18 0 3 0 box4.dat
-  [1,16,0,23,-10,-7,0,0,0,0,18,0,3,0, ldraw_lib__box4()],
+  [1,16,0,23,-10,-7,0,0,0,0,18,0,3,0, ldraw_lib__box4(realsolid)],
 // 0 front frame
 // 4 16 7 41 -10 7 5 -10 5 7 -10 5 39 -10
   [4,16,7,41,-10,7,5,-10,5,7,-10,5,39,-10],
@@ -205,7 +206,7 @@ function ldraw_lib__29c() = [
 // 4 16 10 2 -7 -10 2 -7 -7 5 -7 7 5 -7
   [4,16,10,2,-7,-10,2,-7,-7,5,-7,7,5,-7],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 stud2.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2(realsolid)],
 // 4 16 10 0 10 7 3 10 -7 3 10 -10 0 10
   [4,16,10,0,10,7,3,10,-7,3,10,-10,0,10],
 // 
@@ -216,5 +217,5 @@ function ldraw_lib__29c() = [
 // 0
 ];
 module ldraw_lib__29c(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__29c(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__29c(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__29c(line=0.2);

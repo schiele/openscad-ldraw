@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <1-8ndis.scad>
 use <npeghol7.scad>
-function ldraw_lib__npeghol7a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__npeghol7a(realsolid=false) = [
 // 0 Technic Peg Hole Negative 0.5 with Top Surface Extensions
 // 0 Name: npeghol7a.dat
 // 0 Author: Kevin Roach [KROACH]
@@ -19,11 +20,11 @@ function ldraw_lib__npeghol7a() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 npeghol7.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__npeghol7()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__npeghol7(realsolid)],
 // 1 16 0 0 10 9 0 0 0 1 0 0 0 -9 1-8ndis.dat
-  [1,16,0,0,10,9,0,0,0,1,0,0,0,-9, ldraw_lib__1_8ndis()],
+  [1,16,0,0,10,9,0,0,0,1,0,0,0,-9, ldraw_lib__1_8ndis(realsolid)],
 // 1 16 0 0 10 -9 0 0 0 1 0 0 0 -9 1-8ndis.dat
-  [1,16,0,0,10,-9,0,0,0,1,0,0,0,-9, ldraw_lib__1_8ndis()],
+  [1,16,0,0,10,-9,0,0,0,1,0,0,0,-9, ldraw_lib__1_8ndis(realsolid)],
 // 
 // 3 16 9 0 1 6.3639 0 3.6361 6.3639 0 1.5321
   [3,16,9,0,1,6.3639,0,3.6361,6.3639,0,1.5321],
@@ -35,5 +36,5 @@ function ldraw_lib__npeghol7a() = [
   [4,16,-9,0,1,-9,0,0,-6.3639,0,0,-6.3639,0,1.5321],
 ];
 module ldraw_lib__npeghol7a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__npeghol7a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__npeghol7a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__npeghol7a(line=0.2);

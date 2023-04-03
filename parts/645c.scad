@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/box4.scad>
 use <../p/finger1.scad>
 use <../p/stud2.scad>
-function ldraw_lib__645c() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__645c(realsolid=false) = [
 // 0 ~Window  1 x  6 x  2 Classic with Short Sill
 // 0 Name: 645c.dat
 // 0 Author: Tore Eriksson [Tore_Eriksson]
@@ -30,15 +31,15 @@ function ldraw_lib__645c() = [
 // 2 24 44 48 -6 56 48 -6
   [2,24,44,48,-6,56,48,-6],
 // 1 16 -40 48 0 1 0 0 0 1 0 0 0 1 finger1.dat
-  [1,16,-40,48,0,1,0,0,0,1,0,0,0,1, ldraw_lib__finger1()],
+  [1,16,-40,48,0,1,0,0,0,1,0,0,0,1, ldraw_lib__finger1(realsolid)],
 // 1 16 -20 48 0 1 0 0 0 1 0 0 0 1 finger1.dat
-  [1,16,-20,48,0,1,0,0,0,1,0,0,0,1, ldraw_lib__finger1()],
+  [1,16,-20,48,0,1,0,0,0,1,0,0,0,1, ldraw_lib__finger1(realsolid)],
 // 1 16 0 48 0 1 0 0 0 1 0 0 0 1 finger1.dat
-  [1,16,0,48,0,1,0,0,0,1,0,0,0,1, ldraw_lib__finger1()],
+  [1,16,0,48,0,1,0,0,0,1,0,0,0,1, ldraw_lib__finger1(realsolid)],
 // 1 16 20 48 0 1 0 0 0 1 0 0 0 1 finger1.dat
-  [1,16,20,48,0,1,0,0,0,1,0,0,0,1, ldraw_lib__finger1()],
+  [1,16,20,48,0,1,0,0,0,1,0,0,0,1, ldraw_lib__finger1(realsolid)],
 // 1 16 40 48 0 1 0 0 0 1 0 0 0 1 finger1.dat
-  [1,16,40,48,0,1,0,0,0,1,0,0,0,1, ldraw_lib__finger1()],
+  [1,16,40,48,0,1,0,0,0,1,0,0,0,1, ldraw_lib__finger1(realsolid)],
 // 2 24 60 48 -10 60 46.75 -10
   [2,24,60,48,-10,60,46.75,-10],
 // 2 24 -60 48 -10 -60 46.75 -10
@@ -167,15 +168,15 @@ function ldraw_lib__645c() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 23 -10 25 0 0 0 0 16 0 5 0 box4.dat
-  [1,16,0,23,-10,25,0,0,0,0,16,0,5,0, ldraw_lib__box4()],
+  [1,16,0,23,-10,25,0,0,0,0,16,0,5,0, ldraw_lib__box4(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 43 23 -10 12 0 0 0 0 16 0 5 0 box4.dat
-  [1,16,43,23,-10,12,0,0,0,0,16,0,5,0, ldraw_lib__box4()],
+  [1,16,43,23,-10,12,0,0,0,0,16,0,5,0, ldraw_lib__box4(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -43 23 -10 12 0 0 0 0 16 0 5 0 box4.dat
-  [1,16,-43,23,-10,12,0,0,0,0,16,0,5,0, ldraw_lib__box4()],
+  [1,16,-43,23,-10,12,0,0,0,0,16,0,5,0, ldraw_lib__box4(realsolid)],
 // 4 16 56 42 -5 55 39 -5 55 7 -5 56 3 -5
   [4,16,56,42,-5,55,39,-5,55,7,-5,56,3,-5],
 // 4 16 -56 42 -5 -56 3 -5 -55 7 -5 -55 39 -5
@@ -190,11 +191,11 @@ function ldraw_lib__645c() = [
   [4,16,-25,39,-5,-31,39,-5,-31,7,-5,-25,7,-5],
 // 0 outer frame
 // 1 16 0 23 -10 -27 0 0 0 0 18 0 3 0 box4.dat
-  [1,16,0,23,-10,-27,0,0,0,0,18,0,3,0, ldraw_lib__box4()],
+  [1,16,0,23,-10,-27,0,0,0,0,18,0,3,0, ldraw_lib__box4(realsolid)],
 // 1 16 43 23 -10 -14 0 0 0 0 18 0 3 0 box4.dat
-  [1,16,43,23,-10,-14,0,0,0,0,18,0,3,0, ldraw_lib__box4()],
+  [1,16,43,23,-10,-14,0,0,0,0,18,0,3,0, ldraw_lib__box4(realsolid)],
 // 1 16 -43 23 -10 -14 0 0 0 0 18 0 3 0 box4.dat
-  [1,16,-43,23,-10,-14,0,0,0,0,18,0,3,0, ldraw_lib__box4()],
+  [1,16,-43,23,-10,-14,0,0,0,0,18,0,3,0, ldraw_lib__box4(realsolid)],
 // 0 front frame
 // 4 16 27 41 -10 27 5 -10 25 7 -10 25 39 -10
   [4,16,27,41,-10,27,5,-10,25,7,-10,25,39,-10],
@@ -233,17 +234,17 @@ function ldraw_lib__645c() = [
 // 4 16 -29 41 -7 -27 41 -7 -27 5 -7 -29 5 -7
   [4,16,-29,41,-7,-27,41,-7,-27,5,-7,-29,5,-7],
 // 1 16 -50 0 0 1 0 0 0 1 0 0 0 1 stud2.dat
-  [1,16,-50,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2()],
+  [1,16,-50,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2(realsolid)],
 // 1 16 -30 0 0 1 0 0 0 1 0 0 0 1 stud2.dat
-  [1,16,-30,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2()],
+  [1,16,-30,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2(realsolid)],
 // 1 16 -10 0 0 1 0 0 0 1 0 0 0 1 stud2.dat
-  [1,16,-10,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2()],
+  [1,16,-10,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2(realsolid)],
 // 1 16 10 0 0 1 0 0 0 1 0 0 0 1 stud2.dat
-  [1,16,10,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2()],
+  [1,16,10,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2(realsolid)],
 // 1 16 30 0 0 1 0 0 0 1 0 0 0 1 stud2.dat
-  [1,16,30,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2()],
+  [1,16,30,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2(realsolid)],
 // 1 16 50 0 0 1 0 0 0 1 0 0 0 1 stud2.dat
-  [1,16,50,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2()],
+  [1,16,50,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2(realsolid)],
 // 4 16 60 0 10 56 3 10 -56 3 10 -60 0 10
   [4,16,60,0,10,56,3,10,-56,3,10,-60,0,10],
 // 
@@ -254,5 +255,5 @@ function ldraw_lib__645c() = [
 // 0
 ];
 module ldraw_lib__645c(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__645c(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__645c(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__645c(line=0.2);

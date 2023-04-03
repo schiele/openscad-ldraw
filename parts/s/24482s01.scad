@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__24482s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__24482s01(realsolid=false) = [
 // 0 ~Spike  2.4L with  4 Fins with Bar  0.4L  0.125
 // 0 Name: s\24482s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -160,5 +161,5 @@ function ldraw_lib__s__24482s01() = [
   [5,24,3.495,0,3.495,2.81,-13.214,2.81,4.739,-13.214,1.307,1.307,-13.214,4.739],
 ];
 module ldraw_lib__s__24482s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__24482s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__24482s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__24482s01(line=0.2);

@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <3750c01.scad>
 use <3752.scad>
-function ldraw_lib__73037() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__73037(realsolid=false) = [
 // 0 Winch  2 x  4 x  2 with Light Grey Drum
 // 0 Name: 73037.dat
 // 0 Author: James Jessiman
@@ -24,10 +25,10 @@ function ldraw_lib__73037() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 3750c01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3750c01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3750c01(realsolid)],
 // 1 7 0 18 0 1 0 0 0 1 0 0 0 1 3752.dat
-  [1,7,0,18,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3752()],
+  [1,7,0,18,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3752(realsolid)],
 ];
 module ldraw_lib__73037(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__73037(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__73037(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__73037(line=0.2);

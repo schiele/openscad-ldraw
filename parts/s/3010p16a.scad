@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__3010p16a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__3010p16a(realsolid=false) = [
 // 0 ~White "POLICE" and Red Line Pattern
 // 0 Name: s\3010p16a.dat
 // 0 Author: Michael Heidemann [mikeheide]
@@ -304,5 +305,5 @@ function ldraw_lib__s__3010p16a() = [
 // 0
 ];
 module ldraw_lib__s__3010p16a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__3010p16a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__3010p16a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__3010p16a(line=0.2);

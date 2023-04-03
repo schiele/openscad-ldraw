@@ -4,7 +4,8 @@ use <s/973pw1a.scad>
 use <s/973pw1b.scad>
 use <s/973pw1c.scad>
 use <s/973s01.scad>
-function ldraw_lib__973pw1() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__973pw1(realsolid=false) = [
 // 0 Minifig Torso with US Cavalry General Pattern
 // 0 Name: 973pw1.dat
 // 0 Author: Willy Tschager [Holly-Wood]
@@ -616,41 +617,41 @@ function ldraw_lib__973pw1() = [
 // 
 // 0 // Subpart Gold Detail
 // 1 334 0 0 0 1 0 0 0 1 0 0 0 1 s\973pw1c.dat
-  [1,334,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973pw1c()],
+  [1,334,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973pw1c(realsolid)],
 // 
 // 0 // Subparts Buttons
 // 1 16 -5.6 4.52 -10 1 0 0 0 1 0 0 0 1 s\973pw1a.dat
-  [1,16,-5.6,4.52,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973pw1a()],
+  [1,16,-5.6,4.52,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973pw1a(realsolid)],
 // 1 16 -4.87 8.42 -10 1 0 0 0 1 0 0 0 1 s\973pw1a.dat
-  [1,16,-4.87,8.42,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973pw1a()],
+  [1,16,-4.87,8.42,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973pw1a(realsolid)],
 // 1 16 -4.43 12.63 -10 1 0 0 0 1 0 0 0 1 s\973pw1a.dat
-  [1,16,-4.43,12.63,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973pw1a()],
+  [1,16,-4.43,12.63,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973pw1a(realsolid)],
 // 1 16 -4.2 16.83 -10 1 0 0 0 1 0 0 0 1 s\973pw1a.dat
-  [1,16,-4.2,16.83,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973pw1a()],
+  [1,16,-4.2,16.83,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973pw1a(realsolid)],
 // 1 16 -3.64 21.04 -10 1 0 0 0 1 0 0 0 1 s\973pw1a.dat
-  [1,16,-3.64,21.04,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973pw1a()],
+  [1,16,-3.64,21.04,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973pw1a(realsolid)],
 // 1 16 -2.79 25.25 -10 1 0 0 0 1 0 0 0 1 s\973pw1a.dat
-  [1,16,-2.79,25.25,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973pw1a()],
+  [1,16,-2.79,25.25,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973pw1a(realsolid)],
 // 1 16 6.39 3.96 -10 -1 0 0 0 -1 0 0 0 1 s\973pw1a.dat
-  [1,16,6.39,3.96,-10,-1,0,0,0,-1,0,0,0,1, ldraw_lib__s__973pw1a()],
+  [1,16,6.39,3.96,-10,-1,0,0,0,-1,0,0,0,1, ldraw_lib__s__973pw1a(realsolid)],
 // 1 16 6.29 7.96 -10 -1 0 0 0 -1 0 0 0 1 s\973pw1a.dat
-  [1,16,6.29,7.96,-10,-1,0,0,0,-1,0,0,0,1, ldraw_lib__s__973pw1a()],
+  [1,16,6.29,7.96,-10,-1,0,0,0,-1,0,0,0,1, ldraw_lib__s__973pw1a(realsolid)],
 // 1 16 6.17 12.25 -10 -1 0 0 0 -1 0 0 0 1 s\973pw1a.dat
-  [1,16,6.17,12.25,-10,-1,0,0,0,-1,0,0,0,1, ldraw_lib__s__973pw1a()],
+  [1,16,6.17,12.25,-10,-1,0,0,0,-1,0,0,0,1, ldraw_lib__s__973pw1a(realsolid)],
 // 1 16 5.87 16.54 -10 -1 0 0 0 -1 0 0 0 1 s\973pw1a.dat
-  [1,16,5.87,16.54,-10,-1,0,0,0,-1,0,0,0,1, ldraw_lib__s__973pw1a()],
+  [1,16,5.87,16.54,-10,-1,0,0,0,-1,0,0,0,1, ldraw_lib__s__973pw1a(realsolid)],
 // 1 16 5.23 20.84 -10 -1 0 0 0 -1 0 0 0 1 s\973pw1a.dat
-  [1,16,5.23,20.84,-10,-1,0,0,0,-1,0,0,0,1, ldraw_lib__s__973pw1a()],
+  [1,16,5.23,20.84,-10,-1,0,0,0,-1,0,0,0,1, ldraw_lib__s__973pw1a(realsolid)],
 // 1 16 4.18 25.14 -10 -1 0 0 0 -1 0 0 0 1 s\973pw1a.dat
-  [1,16,4.18,25.14,-10,-1,0,0,0,-1,0,0,0,1, ldraw_lib__s__973pw1a()],
+  [1,16,4.18,25.14,-10,-1,0,0,0,-1,0,0,0,1, ldraw_lib__s__973pw1a(realsolid)],
 // 
 // 0 // Subpart Belt Logo
 // 1 334 0 0 0 1 0 0 0 1 0 0 0 1 s\973pw1b.dat
-  [1,334,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973pw1b()],
+  [1,334,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973pw1b(realsolid)],
 // 
 // 0 // Subpart Minifig Torso without Front or Back
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01(realsolid)],
 // 
 // 0 // Back Shell
 // 4 16 19 32 10 -19 32 10 -19 29 10 19 29 10
@@ -662,9 +663,9 @@ function ldraw_lib__973pw1() = [
 // 
 // 0 // Neck Mark
 // 1 0 0 -4 0 4.243 0 -4.243 0 -8 0 -4.243 0 -4.243 1-4cyli.dat
-  [1,0,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli()],
+  [1,0,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli(realsolid)],
 // 0
 ];
 module ldraw_lib__973pw1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__973pw1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__973pw1(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__973pw1(line=0.2);

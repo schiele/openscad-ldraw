@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/87079s01.scad>
-function ldraw_lib__87079pza() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__87079pza(realsolid=false) = [
 // 0 Tile  2 x  4 with 10 Yellow Rectangles Pattern
 // 0 Name: 87079pza.dat
 // 0 Author: Damien Roux [Darats]
@@ -17,7 +18,7 @@ function ldraw_lib__87079pza() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\87079s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__87079s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__87079s01(realsolid)],
 // 4 14 -32.38 0 -3.5 -36.19 0 -3.5 -36.19 0 -15.5 -32.38 0 -15.5
   [4,14,-32.38,0,-3.5,-36.19,0,-3.5,-36.19,0,-15.5,-32.38,0,-15.5],
 // 4 14 -24.76 0 -3.5 -28.57 0 -3.5 -28.57 0 -15.5 -24.76 0 -15.5
@@ -138,5 +139,5 @@ function ldraw_lib__87079pza() = [
   [3,16,40,0,20,24.76,0,-3.5,28.57,0,-3.5],
 ];
 module ldraw_lib__87079pza(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__87079pza(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__87079pza(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__87079pza(line=0.2);

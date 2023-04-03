@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3068bs01.scad>
-function ldraw_lib__3068bp31() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3068bp31(realsolid=false) = [
 // 0 Tile  2 x  2 with Map, Handwriting, River, and Red X Pattern
 // 0 Name: 3068bp31.dat
 // 0 Author: Howard Lande [HowardLande]
@@ -17,7 +18,7 @@ function ldraw_lib__3068bp31() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3068bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3068bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3068bs01(realsolid)],
 // 0 // PATTERN
 // 4 4 8.68 0 -14.24 9.61 0 -12.59 11.15 0 -13.87 10.4 0 -15.11
   [4,4,8.68,0,-14.24,9.61,0,-12.59,11.15,0,-13.87,10.4,0,-15.11],
@@ -6933,5 +6934,5 @@ function ldraw_lib__3068bp31() = [
   [3,16,5.734,0,-16.639,7.259,0,-18.534,4.279,0,-16.6],
 ];
 module ldraw_lib__3068bp31(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3068bp31(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3068bp31(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3068bp31(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/92241s01.scad>
-function ldraw_lib__92241p0c() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__92241p0c(realsolid=false) = [
 // 0 Figure Friends Girl Torso with Light Aqua Sweater with Christmas Pattern
 // 0 Name: 92241p0c.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -17,7 +18,7 @@ function ldraw_lib__92241p0c() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\92241s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__92241s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__92241s01(realsolid)],
 // 3 5 .46 13.49 -8.8028 .19 13.76 -8.82754 .35 13.65 -8.8122
   [3,5,.46,13.49,-8.8028,.19,13.76,-8.82754,.35,13.65,-8.8122],
 // 3 5 .92 14.62 -8.73909 .92 15.38 -8.72878 1 15 -8.72552
@@ -3417,5 +3418,5 @@ function ldraw_lib__92241p0c() = [
   [5,24,9.13,13.09,-5.22,10.07,12.95,-2.62,10.09,9.62,-2.24,9.37,18,-5.11],
 ];
 module ldraw_lib__92241p0c(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__92241p0c(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__92241p0c(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__92241p0c(line=0.2);

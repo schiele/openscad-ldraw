@@ -2,7 +2,8 @@ use <../lib.scad>
 use <47157.scad>
 use <u9218c01.scad>
 use <u9327c01.scad>
-function ldraw_lib__21980c01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__21980c01(realsolid=false) = [
 // 0 Electric Power Functions 2.0 Medium Motor with Coiled Cable
 // 0 Name: 21980c01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -19,12 +20,12 @@ function ldraw_lib__21980c01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 u9327c01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9327c01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9327c01(realsolid)],
 // 1 4 0 26 -20 1 0 0 0 1 0 0 0 1 47157.dat
-  [1,4,0,26,-20,1,0,0,0,1,0,0,0,1, ldraw_lib__47157()],
+  [1,4,0,26,-20,1,0,0,0,1,0,0,0,1, ldraw_lib__47157(realsolid)],
 // 1 256 0 -1.0913 96.6306 1 0 0 0 1 0 0 0 1 u9218c01.dat
-  [1,256,0,-1.0913,96.6306,1,0,0,0,1,0,0,0,1, ldraw_lib__u9218c01()],
+  [1,256,0,-1.0913,96.6306,1,0,0,0,1,0,0,0,1, ldraw_lib__u9218c01(realsolid)],
 ];
 module ldraw_lib__21980c01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__21980c01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__21980c01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__21980c01(line=0.2);

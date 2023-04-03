@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__4129790c() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4129790c(realsolid=false) = [
 // 0 Sticker  2.4 x  3 with Stena Flag
 // 0 Name: 4129790c.dat
 // 0 Author: Michael Heidemann [mikeheide]
@@ -488,5 +489,5 @@ function ldraw_lib__4129790c() = [
   [3,4,14.5,-0.25,0.5,15.75,-0.25,-1.5,23.5,-0.25,3.5],
 ];
 module ldraw_lib__4129790c(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4129790c(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4129790c(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4129790c(line=0.2);

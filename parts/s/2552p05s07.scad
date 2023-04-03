@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/1-4disc.scad>
-function ldraw_lib__s__2552p05s07() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__2552p05s07(realsolid=false) = [
 // 0 ~Baseplate 32 x 32 Raised with Ramp and Pit with Grey and Black Rocks Pattern - Bottom
 // 0 Name: s\2552p05s07.dat
 // 0 Author: Damien Roux [Darats]
@@ -33,13 +34,13 @@ function ldraw_lib__s__2552p05s07() = [
 // 4 16 -310 0 290 -326 0 306 -326 0 -326 -310 0 -310
   [4,16,-310,0,290,-326,0,306,-326,0,-326,-310,0,-310],
 // 1 16 306 0 306 4 0 0 0 1 0 0 0 4 1-4disc.dat
-  [1,16,306,0,306,4,0,0,0,1,0,0,0,4, ldraw_lib__1_4disc()],
+  [1,16,306,0,306,4,0,0,0,1,0,0,0,4, ldraw_lib__1_4disc(realsolid)],
 // 1 16 -326 0 306 -4 0 0 0 1 0 0 0 4 1-4disc.dat
-  [1,16,-326,0,306,-4,0,0,0,1,0,0,0,4, ldraw_lib__1_4disc()],
+  [1,16,-326,0,306,-4,0,0,0,1,0,0,0,4, ldraw_lib__1_4disc(realsolid)],
 // 1 16 -326 0 -326 -4 0 0 0 1 0 0 0 -4 1-4disc.dat
-  [1,16,-326,0,-326,-4,0,0,0,1,0,0,0,-4, ldraw_lib__1_4disc()],
+  [1,16,-326,0,-326,-4,0,0,0,1,0,0,0,-4, ldraw_lib__1_4disc(realsolid)],
 // 1 16 306 0 -326 4 0 0 0 1 0 0 0 -4 1-4disc.dat
-  [1,16,306,0,-326,4,0,0,0,1,0,0,0,-4, ldraw_lib__1_4disc()],
+  [1,16,306,0,-326,4,0,0,0,1,0,0,0,-4, ldraw_lib__1_4disc(realsolid)],
 // 4 0 308.325 0 -179.559 307.924 0 -178.662 307.611 0 -198.042 309.126 0 -192.48
   [4,0,308.325,0,-179.559,307.924,0,-178.662,307.611,0,-198.042,309.126,0,-192.48],
 // 4 0 310 0 -189.741 310 0 -179.483 308.325 0 -179.559 309.126 0 -192.48
@@ -318,5 +319,5 @@ function ldraw_lib__s__2552p05s07() = [
   [3,0,290,0,-176.729,290,0,-195.854,291.959,0,-198.064],
 ];
 module ldraw_lib__s__2552p05s07(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__2552p05s07(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__2552p05s07(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__2552p05s07(line=0.2);

@@ -3,7 +3,8 @@ use <../../p/1-4rin17.scad>
 use <../../p/1-4ring9.scad>
 use <../../p/4-4disc.scad>
 use <../../p/4-4ndis.scad>
-function ldraw_lib__s__2586p30a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__2586p30a(realsolid=false) = [
 // 0 ~Minifig Shield Ovoid with Indigo Islanders Pattern - Half
 // 0 Name: s\2586p30a.dat
 // 0 Author: Chris Dee [cwdee]
@@ -38,9 +39,9 @@ function ldraw_lib__s__2586p30a() = [
 // 4 4 0 18 -8 4.5 18.5 -8 4.5 21.5 -8 0 20.5 -8
   [4,4,0,18,-8,4.5,18.5,-8,4.5,21.5,-8,0,20.5,-8],
 // 1 14 6 20 -8 1.5 0 0 0 0 1.5 0 1 0 4-4disc.dat
-  [1,14,6,20,-8,1.5,0,0,0,0,1.5,0,1,0, ldraw_lib__4_4disc()],
+  [1,14,6,20,-8,1.5,0,0,0,0,1.5,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 4 6 20 -8 1.5 0 0 0 0 1.5 0 1 0 4-4ndis.dat
-  [1,4,6,20,-8,1.5,0,0,0,0,1.5,0,1,0, ldraw_lib__4_4ndis()],
+  [1,4,6,20,-8,1.5,0,0,0,0,1.5,0,1,0, ldraw_lib__4_4ndis(realsolid)],
 // 3 4 0 20.5 -8 4.5 21.5 -8 5 25.5 -8
   [3,4,0,20.5,-8,4.5,21.5,-8,5,25.5,-8],
 // 4 4 7.5 18.5 -8 13 21.5 -8 12 23.5 -8 7.5 21.5 -8
@@ -234,9 +235,9 @@ function ldraw_lib__s__2586p30a() = [
   [3,1,3.696,-1.469,-8,3.5,-3,-8,5.344,-3.102,-8],
 // 
 // 1 4 0 -14.5 -8 1 0 0 0 0 -1 0 1 0 1-4rin17.dat
-  [1,4,0,-14.5,-8,1,0,0,0,0,-1,0,1,0, ldraw_lib__1_4rin17()],
+  [1,4,0,-14.5,-8,1,0,0,0,0,-1,0,1,0, ldraw_lib__1_4rin17(realsolid)],
 // 1 4 0 -14.5 -8 2 0 0 0 0 -2 0 1 0 1-4ring9.dat
-  [1,4,0,-14.5,-8,2,0,0,0,0,-2,0,1,0, ldraw_lib__1_4ring9()],
+  [1,4,0,-14.5,-8,2,0,0,0,0,-2,0,1,0, ldraw_lib__1_4ring9(realsolid)],
 // 
 // 3 14 0.5 -29 -8 0 -30 -8 1.5 -29 -8
   [3,14,0.5,-29,-8,0,-30,-8,1.5,-29,-8],
@@ -355,5 +356,5 @@ function ldraw_lib__s__2586p30a() = [
 // 0
 ];
 module ldraw_lib__s__2586p30a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__2586p30a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__2586p30a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__2586p30a(line=0.2);

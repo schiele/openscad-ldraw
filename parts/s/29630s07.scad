@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/48/1-4chrd.scad>
 use <../../p/48/1-4edge.scad>
-function ldraw_lib__s__29630s07() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__29630s07(realsolid=false) = [
 // 0 ~Container Hemispherical Pod  6 x  2.4 x  6 Inner Surfaces - Partial Quarter Section 2
 // 0 Name: s\29630s07.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -16,9 +17,9 @@ function ldraw_lib__s__29630s07() = [
 // 
 // 
 // 1 16 76 0 0 0 1 0 -27.5631 0 0 0 0 27.5631 48\1-4chrd.dat
-  [1,16,76,0,0,0,1,0,-27.5631,0,0,0,0,27.5631, ldraw_lib__48__1_4chrd()],
+  [1,16,76,0,0,0,1,0,-27.5631,0,0,0,0,27.5631, ldraw_lib__48__1_4chrd(realsolid)],
 // 1 16 76 0 0 0 1 0 -27.5631 0 0 0 0 27.5631 48\1-4edge.dat
-  [1,16,76,0,0,0,1,0,-27.5631,0,0,0,0,27.5631, ldraw_lib__48__1_4edge()],
+  [1,16,76,0,0,0,1,0,-27.5631,0,0,0,0,27.5631, ldraw_lib__48__1_4edge(realsolid)],
 // 
 // 0 // Rim
 // 4 16 74.8342 -30.9974 0 78.5298 -32.5281 0 73.6122 -42.5 0 70.1481 -40.5 0
@@ -132,5 +133,5 @@ function ldraw_lib__s__29630s07() = [
   [5,24,74.8342,0,30.9974,76,0,27.5631,74.194,9.7678,30.9974,74.194,-9.7678,30.9974],
 ];
 module ldraw_lib__s__29630s07(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__29630s07(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__29630s07(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__29630s07(line=0.2);

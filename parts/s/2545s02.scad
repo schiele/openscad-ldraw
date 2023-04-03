@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__2545s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__2545s02(realsolid=false) = [
 // 0 ~Minifig Hat Imperial Guard Shako Brim
 // 0 Name: s\2545s02.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -129,5 +130,5 @@ function ldraw_lib__s__2545s02() = [
   [5,24,15,6,-4.5,15,0.423,-4.5,13.858,1.601,-10.24,14.898,-0.5,0],
 ];
 module ldraw_lib__s__2545s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__2545s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__2545s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__2545s02(line=0.2);

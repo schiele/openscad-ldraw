@@ -6,7 +6,8 @@ use <s/4215p70s01.scad>
 use <s/4215p70s02.scad>
 use <s/4215p70s03.scad>
 use <s/4215p70s04.scad>
-function ldraw_lib__4215bp70() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4215bp70(realsolid=false) = [
 // 0 Panel  1 x  4 x  3 with Tricycle and Wrench Pattern
 // 0 Name: 4215bp70.dat
 // 0 Author: Andrew Ananjev [woozle]
@@ -22,19 +23,19 @@ function ldraw_lib__4215bp70() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4215bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4215bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4215bs01(realsolid)],
 // 
 // 0 // Tricycle
 // 1 16 35.5 4.5 10 -1 0 0 0 1 0 0 0 -1 s\4215p70s01.dat
-  [1,16,35.5,4.5,10,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__4215p70s01()],
+  [1,16,35.5,4.5,10,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__4215p70s01(realsolid)],
 // 1 7 35.5 4.5 10 -1 0 0 0 1 0 0 0 -1 s\4215p70s02.dat
-  [1,7,35.5,4.5,10,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__4215p70s02()],
+  [1,7,35.5,4.5,10,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__4215p70s02(realsolid)],
 // 1 8 35.5 4.5 10 -1 0 0 0 1 0 0 0 -1 s\4215p70s03.dat
-  [1,8,35.5,4.5,10,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__4215p70s03()],
+  [1,8,35.5,4.5,10,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__4215p70s03(realsolid)],
 // 
 // 0 // Light Blue Background
 // 1 11 35.5 4.5 10 -1 0 0 0 1 0 0 0 -1 s\4215p70s04.dat
-  [1,11,35.5,4.5,10,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__4215p70s04()],
+  [1,11,35.5,4.5,10,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__4215p70s04(realsolid)],
 // 
 // 0 // Corners
 // 3 11 35.5 55.5 10 35.5 67.5 10 -0.5 62.7 10
@@ -50,9 +51,9 @@ function ldraw_lib__4215bp70() = [
 // 
 // 0 // Wrench
 // 1 0 -23 17 10 -1.1364 0 0 0 1.1364 0 0 0 -1 s\30180p02s03.dat
-  [1,0,-23,17,10,-1.1364,0,0,0,1.1364,0,0,0,-1, ldraw_lib__s__30180p02s03()],
+  [1,0,-23,17,10,-1.1364,0,0,0,1.1364,0,0,0,-1, ldraw_lib__s__30180p02s03(realsolid)],
 // 1 7 -23 17 10 -1.1364 0 0 0 1.1364 0 0 0 -1 s\30180p02s04.dat
-  [1,7,-23,17,10,-1.1364,0,0,0,1.1364,0,0,0,-1, ldraw_lib__s__30180p02s04()],
+  [1,7,-23,17,10,-1.1364,0,0,0,1.1364,0,0,0,-1, ldraw_lib__s__30180p02s04(realsolid)],
 // 
 // 0 // Frame
 // 3 16 40 72 10 35.5 67.5 10 35.5 55.5 10
@@ -83,5 +84,5 @@ function ldraw_lib__4215bp70() = [
   [4,16,40,72,10,-40,72,10,-24.5,67.5,10,35.5,67.5,10],
 ];
 module ldraw_lib__4215bp70(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4215bp70(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4215bp70(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4215bp70(line=0.2);

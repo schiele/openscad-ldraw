@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/3039ps1s01.scad>
 use <s/3039s01.scad>
-function ldraw_lib__3039ps1() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3039ps1(realsolid=false) = [
 // 0 Slope Brick 45  2 x  2 with SW Trench Computer Pattern
 // 0 Name: 3039ps1.dat
 // 0 Author: John Van Zwieten [jvan]
@@ -20,11 +21,11 @@ function ldraw_lib__3039ps1() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3039s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3039s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3039s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3039ps1s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3039ps1s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3039ps1s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\3039ps1s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__3039ps1s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__3039ps1s01(realsolid)],
 // 4 16 -7.72 17.016 -27.016 -7.98 17.087 -27.087 -8.06 17.165 -27.165 -7.5 17.044 -27.044
   [4,16,-7.72,17.016,-27.016,-7.98,17.087,-27.087,-8.06,17.165,-27.165,-7.5,17.044,-27.044],
 // 4 16 -7.37 17.115 -27.115 -7.5 17.044 -27.044 -8.06 17.165 -27.165 -7.26 17.242 -27.242
@@ -519,5 +520,5 @@ function ldraw_lib__3039ps1() = [
   [4,43602464,4.28,18.133,-28.133,4.51,18.176,-28.176,4.37,17.949,-27.949,4.05,18.055,-28.055],
 ];
 module ldraw_lib__3039ps1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3039ps1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3039ps1(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3039ps1(line=0.2);

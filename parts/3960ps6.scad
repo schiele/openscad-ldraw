@@ -4,7 +4,8 @@ use <s/3960ps5s02.scad>
 use <s/3960ps5s03.scad>
 use <s/3960s01.scad>
 use <s/3960s05.scad>
-function ldraw_lib__3960ps6() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3960ps6(realsolid=false) = [
 // 0 Dish  4 x  4 Inverted with SW Kessel Run Millennium Falcon Cockpit Pattern
 // 0 Name: 3960ps6.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -23,24 +24,24 @@ function ldraw_lib__3960ps6() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3960s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3960s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3960s01(realsolid)],
 // 
 // 1 15 0 0 0 1 0 0 0 1 0 0 0 1 s\3960ps5s01.dat
-  [1,15,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3960ps5s01()],
+  [1,15,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3960ps5s01(realsolid)],
 // 1 71 0 0 0 1 0 0 0 1 0 0 0 1 s\3960ps5s02.dat
-  [1,71,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3960ps5s02()],
+  [1,71,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3960ps5s02(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3960ps5s03.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3960ps5s03()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3960ps5s03(realsolid)],
 // 
 // 1 15 0 0 0 -1 0 0 0 1 0 0 0 1 s\3960ps5s01.dat
-  [1,15,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__3960ps5s01()],
+  [1,15,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__3960ps5s01(realsolid)],
 // 1 71 0 0 0 -1 0 0 0 1 0 0 0 1 s\3960ps5s02.dat
-  [1,71,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__3960ps5s02()],
+  [1,71,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__3960ps5s02(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\3960ps5s03.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__3960ps5s03()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__3960ps5s03(realsolid)],
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3960s05.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3960s05()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3960s05(realsolid)],
 // 
 // 4 71 16.18441 1.73313 -12.41873 14.42498 1.73337 -14.42498 15.5562 2 -15.5562 16.12323 1.8999 -14.00191
   [4,71,16.18441,1.73313,-12.41873,14.42498,1.73337,-14.42498,15.5562,2,-15.5562,16.12323,1.8999,-14.00191],
@@ -192,5 +193,5 @@ function ldraw_lib__3960ps6() = [
   [4,15,-24.7485,6,-24.7485,-28.284,8,-28.284,-24.352,8,-31.736,-21.308,6,-27.769],
 ];
 module ldraw_lib__3960ps6(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3960ps6(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3960ps6(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3960ps6(line=0.2);

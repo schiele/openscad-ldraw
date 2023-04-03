@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3069bs01.scad>
-function ldraw_lib__3069bps9() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3069bps9(realsolid=false) = [
 // 0 Tile  1 x  2 with Underwater Navigation Pattern
 // 0 Name: 3069bps9.dat
 // 0 Author: Stan Isachenko [angmarec]
@@ -21,7 +22,7 @@ function ldraw_lib__3069bps9() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3069bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3069bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3069bs01(realsolid)],
 // 
 // 4 0 -16.891 0 8.508 -14.441 0 7.248 20 0 10 -16.95 0 8.8
   [4,0,-16.891,0,8.508,-14.441,0,7.248,20,0,10,-16.95,0,8.8],
@@ -1003,5 +1004,5 @@ function ldraw_lib__3069bps9() = [
   [3,9,3.42,0,2.787,4.55,0,1.898,4.885,0,2.312],
 ];
 module ldraw_lib__3069bps9(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3069bps9(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3069bps9(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3069bps9(line=0.2);

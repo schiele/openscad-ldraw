@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/rect.scad>
-function ldraw_lib__s__2350s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__2350s02(realsolid=false) = [
 // 0 ~Crane Arm Outside Narrow Type without Sides
 // 0 Name: s\2350s02.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -36,11 +37,11 @@ function ldraw_lib__s__2350s02() = [
 // 2 24 -12 24 -140 -12 24 140
   [2,24,-12,24,-140,-12,24,140],
 // 1 16 7 22 -128 1 0 0 0 1 0 0 0 12 rect.dat
-  [1,16,7,22,-128,1,0,0,0,1,0,0,0,12, ldraw_lib__rect()],
+  [1,16,7,22,-128,1,0,0,0,1,0,0,0,12, ldraw_lib__rect(realsolid)],
 // 1 16 -7 22 -128 1 0 0 0 1 0 0 0 12 rect.dat
-  [1,16,-7,22,-128,1,0,0,0,1,0,0,0,12, ldraw_lib__rect()],
+  [1,16,-7,22,-128,1,0,0,0,1,0,0,0,12, ldraw_lib__rect(realsolid)],
 // 1 16 0 2 0 8 0 0 0 -1 0 0 0 -140 rect.dat
-  [1,16,0,2,0,8,0,0,0,-1,0,0,0,-140, ldraw_lib__rect()],
+  [1,16,0,2,0,8,0,0,0,-1,0,0,0,-140, ldraw_lib__rect(realsolid)],
 // 2 24 12 0 140 12 0 -140
   [2,24,12,0,140,12,0,-140],
 // 2 24 12 0 -140 -12 0 -140
@@ -113,5 +114,5 @@ function ldraw_lib__s__2350s02() = [
   [4,16,-8,24,140,-8,2,140,-8,22,-116,-8,24,-116],
 ];
 module ldraw_lib__s__2350s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__2350s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__2350s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__2350s02(line=0.2);

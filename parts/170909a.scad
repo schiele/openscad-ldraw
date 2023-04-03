@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__170909a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__170909a(realsolid=false) = [
 // 0 Sticker  2.7 x  2.7 Trapezoid with Iridescent Polygons
 // 0 Name: 170909a.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -231,5 +232,5 @@ function ldraw_lib__170909a() = [
   [3,151,23.5122,-0.25,-16.5335,23.2,-0.25,-17.7,25.8882,-0.25,-23.0676],
 ];
 module ldraw_lib__170909a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__170909a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__170909a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__170909a(line=0.2);

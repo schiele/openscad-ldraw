@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__30561s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__30561s01(realsolid=false) = [
 // 0 ~Minifig Headdress SW Royal Guard, Half
 // 0 Name: s\30561s01.dat
 // 0 Author: Stan Isachenko [angmarec]
@@ -1745,5 +1746,5 @@ function ldraw_lib__s__30561s01() = [
   [5,24,2.163,13.389,-13.812,4.975,12.756,-12.011,5.836,12.756,-12.733,1.866,13.389,-12.629],
 ];
 module ldraw_lib__s__30561s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__30561s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__30561s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__30561s01(line=0.2);

@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__3960s04() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__3960s04(realsolid=false) = [
 // 0 ~Dish  4 x  4 Slice 30 Degrees at 45 Degrees without Condlines
 // 0 Name: s\3960s04.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -50,5 +51,5 @@ function ldraw_lib__s__3960s04() = [
   [4,16,21.308,6,27.769,24.7485,6,24.7485,28.284,8,28.284,24.352,8,31.736],
 ];
 module ldraw_lib__s__3960s04(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__3960s04(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__3960s04(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__3960s04(line=0.2);

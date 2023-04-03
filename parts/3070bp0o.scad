@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3070bs01.scad>
-function ldraw_lib__3070bp0o() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3070bp0o(realsolid=false) = [
 // 0 Tile  1 x  1 with Coral and Metallic Light Blue Swirl and Unicorn Head Pattern
 // 0 Name: 3070bp0o.dat
 // 0 Author: Vincent Messenet [Cheenzo]
@@ -19,7 +20,7 @@ function ldraw_lib__3070bp0o() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3070bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3070bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3070bs01(realsolid)],
 // 3 15 -.5 0 -4.56 .11 0 -4.85 .56 0 -1.08
   [3,15,-.5,0,-4.56,.11,0,-4.85,.56,0,-1.08],
 // 3 15 -.5 0 0 -.15 0 -.1 1.44 0 2.83
@@ -508,5 +509,5 @@ function ldraw_lib__3070bp0o() = [
   [3,16,4.16,0,2.12,3.89,0,2.6,3.23,0,2.52],
 ];
 module ldraw_lib__3070bp0o(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3070bp0o(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3070bp0o(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3070bp0o(line=0.2);

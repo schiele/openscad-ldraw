@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/box5-12.scad>
 use <s/196945s02.scad>
 use <s/196945sde.scad>
-function ldraw_lib__196945n() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__196945n(realsolid=false) = [
 // 0 Sticker  2.4 x  2 with Black German Railways Logo and "7735"
 // 0 Name: 196945n.dat
 // 0 Author: Steffen [Steffen]
@@ -19,11 +20,11 @@ function ldraw_lib__196945n() = [
 // 
 // 
 // 1 16 0 -0.25 0 20 0 0 0 0.25 0 0 0 -23.5 box5-12.dat
-  [1,16,0,-0.25,0,20,0,0,0,0.25,0,0,0,-23.5, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,20,0,0,0,0.25,0,0,0,-23.5, ldraw_lib__box5_12(realsolid)],
 // 1 16 0 -0.25 -20 0.415 0 0 0 1 0 0 0 0.415 s\196945s02.dat
-  [1,16,0,-0.25,-20,0.415,0,0,0,1,0,0,0,0.415, ldraw_lib__s__196945s02()],
+  [1,16,0,-0.25,-20,0.415,0,0,0,1,0,0,0,0.415, ldraw_lib__s__196945s02(realsolid)],
 // 1 16 0 -0.25 7.328 0.34 0 0 0 1 0 0 0 0.34 s\196945sde.dat
-  [1,16,0,-0.25,7.328,0.34,0,0,0,1,0,0,0,0.34, ldraw_lib__s__196945sde()],
+  [1,16,0,-0.25,7.328,0.34,0,0,0,1,0,0,0,0.34, ldraw_lib__s__196945sde(realsolid)],
 // 4 16 -20 -0.25 -23.5 -19.38 -0.25 -5.932 -19.38 -0.25 20.588 -20 -0.25 23.5
   [4,16,-20,-0.25,-23.5,-19.38,-0.25,-5.932,-19.38,-0.25,20.588,-20,-0.25,23.5],
 // 4 16 20 -0.25 23.5 19.38 -0.25 20.588 19.38 -0.25 -5.932 20 -0.25 -23.5
@@ -40,5 +41,5 @@ function ldraw_lib__196945n() = [
   [4,16,-16.6,-0.25,-23.32,-20,-0.25,-23.5,20,-0.25,-23.5,16.6,-0.25,-23.32],
 ];
 module ldraw_lib__196945n(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__196945n(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__196945n(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__196945n(line=0.2);

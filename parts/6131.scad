@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/6131s01.scad>
-function ldraw_lib__6131() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6131(realsolid=false) = [
 // 0 Minifig Wizards Hat
 // 0 Name: 6131.dat
 // 0 Author: Chris Dee [cwdee]
@@ -25,7 +26,7 @@ function ldraw_lib__6131() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\6131s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6131s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6131s01(realsolid)],
 // 0 // Buckle
 // 4 16 0 0.461 -18.107 5 0.592 -18.107 5 -3.732 -13.997 0 -3.732 -13.997
   [4,16,0,0.461,-18.107,5,0.592,-18.107,5,-3.732,-13.997,0,-3.732,-13.997],
@@ -98,5 +99,5 @@ function ldraw_lib__6131() = [
   [4,16,5.657,-15.894,13.345,3.889,-19.728,24.625,2.105,-20.596,23.866,3.061,-16.935,11.98],
 ];
 module ldraw_lib__6131(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6131(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6131(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6131(line=0.2);

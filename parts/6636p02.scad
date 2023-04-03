@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4ndis.scad>
 use <../p/4-4ring6.scad>
 use <s/6636s01.scad>
-function ldraw_lib__6636p02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6636p02(realsolid=false) = [
 // 0 Tile  1 x  6 with "Center" Pattern
 // 0 Name: 6636p02.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -25,12 +26,12 @@ function ldraw_lib__6636p02() = [
 // 0 // Font match is not perfect, but manually corrected with LD Pattern Creator
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\6636s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6636s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6636s01(realsolid)],
 // 0 //
 // 1 16 -7.5 0 3 2.8 0 0 0 1 0 0 0 2.8 4-4ndis.dat
-  [1,16,-7.5,0,3,2.8,0,0,0,1,0,0,0,2.8, ldraw_lib__4_4ndis()],
+  [1,16,-7.5,0,3,2.8,0,0,0,1,0,0,0,2.8, ldraw_lib__4_4ndis(realsolid)],
 // 1 15 -7.5 0 3 0 0 -0.4 0 1 0 0.4 0 0 4-4ring6.dat
-  [1,15,-7.5,0,3,0,0,-0.4,0,1,0,0.4,0,0, ldraw_lib__4_4ring6()],
+  [1,15,-7.5,0,3,0,0,-0.4,0,1,0,0.4,0,0, ldraw_lib__4_4ring6(realsolid)],
 // 4 15 -8.706 0 1.4 -8.3 0 1.4 -8.3 0 2.756 -8.706 0 4.456
   [4,15,-8.706,0,1.4,-8.3,0,1.4,-8.3,0,2.756,-8.706,0,4.456],
 // 4 15 -7.423 0 2.66 -7.124 0 2.79 -7.432 0 3.106 -7.607 0 2.742
@@ -591,5 +592,5 @@ function ldraw_lib__6636p02() = [
   [3,16,-7.5,0,5.8,-11,0,10,-10.3,0,5.8],
 ];
 module ldraw_lib__6636p02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6636p02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6636p02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6636p02(line=0.2);

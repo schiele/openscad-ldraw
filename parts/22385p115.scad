@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/22385s01.scad>
-function ldraw_lib__22385p115() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__22385p115(realsolid=false) = [
 // 0 Tile  3 x  2 with Angled End with Nexo Power Shield Pattern - Moth Swarm
 // 0 Name: 22385p115.dat
 // 0 Author: Johann Eisner [technicbasics]
@@ -15,7 +16,7 @@ function ldraw_lib__22385p115() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\22385s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__22385s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__22385s01(realsolid)],
 // 4 15 0 0 -19.6 -13.2 0 -5.8 -15.6 0 -7.1 0 0 -22.8
   [4,15,0,0,-19.6,-13.2,0,-5.8,-15.6,0,-7.1,0,0,-22.8],
 // 4 288 0 0 -19.6 0 0 -15.6 -9.6 0 -5.8 -12 0 -5.8
@@ -2050,5 +2051,5 @@ function ldraw_lib__22385p115() = [
   [3,15,3.89,0,17.47,3.89,0,16.29,4.2,0,16.54],
 ];
 module ldraw_lib__22385p115(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__22385p115(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__22385p115(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__22385p115(line=0.2);

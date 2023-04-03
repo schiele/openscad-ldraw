@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__3626cps1s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__3626cps1s01(realsolid=false) = [
 // 0 ~Minifig Head with Reddish Brown Eyebrows, White Pupils and Dark Orange Dimple Pattern - Half
 // 0 Name: s\3626cps1s01.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -232,5 +233,5 @@ function ldraw_lib__s__3626cps1s01() = [
   [5,24,0,18.5309,-12.6192,0,17,-13,-4.8296,18.5309,-11.6592,4.8296,18.5309,-11.6592],
 ];
 module ldraw_lib__s__3626cps1s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__3626cps1s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__3626cps1s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__3626cps1s01(line=0.2);

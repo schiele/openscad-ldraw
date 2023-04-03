@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <28614p01s03.scad>
-function ldraw_lib__s__28614p01s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__28614p01s02(realsolid=false) = [
 // 0 ~Figure Elves Goblin Body Front with Utility Belt Pouch and Candy Bar Pattern
 // 0 Name: s\28614p01s02.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -15,9 +16,9 @@ function ldraw_lib__s__28614p01s02() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\28614p01s03.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__28614p01s03()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__28614p01s03(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\28614p01s03.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__28614p01s03()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__28614p01s03(realsolid)],
 // 5 24 11.2 -24.3 -6.9 11.5 -20.5 -7.1 14.3 -24.6 -4.9 9.4 -21.3 -8.2
   [5,24,11.2,-24.3,-6.9,11.5,-20.5,-7.1,14.3,-24.6,-4.9,9.4,-21.3,-8.2],
 // 5 24 14.3 -24.6 -4.9 11.2 -24.3 -6.9 11.5 -20.5 -7.1 12.8 -27.2 -5.7
@@ -1792,5 +1793,5 @@ function ldraw_lib__s__28614p01s02() = [
   [4,0,-4.5,-21.72,-9.7223,-4.5634,-22.6126,-9.6987,-5.2664,-22.4265,-9.554,-4.96,-20.31,-9.6424],
 ];
 module ldraw_lib__s__28614p01s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__28614p01s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__28614p01s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__28614p01s02(line=0.2);

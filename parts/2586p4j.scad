@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/2586s01.scad>
 use <s/3846p4ja.scad>
-function ldraw_lib__2586p4j() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2586p4j(realsolid=false) = [
 // 0 Minifig Shield Ovoid with Crown on Dark Blue and Medium Blue Quarters Pattern
 // 0 Name: 2586p4j.dat
 // 0 Author: Joerg Sommerer [Brickaneer]
@@ -21,9 +22,9 @@ function ldraw_lib__2586p4j() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2586s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2586s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2586s01(realsolid)],
 // 1 272 0 -7.75 -8 1.12 0 0 0 1.12 0 0 0 1 s\3846p4ja.dat
-  [1,272,0,-7.75,-8,1.12,0,0,0,1.12,0,0,0,1, ldraw_lib__s__3846p4ja()],
+  [1,272,0,-7.75,-8,1.12,0,0,0,1.12,0,0,0,1, ldraw_lib__s__3846p4ja(realsolid)],
 // 0 //
 // 4 82 0 -34.5 -8 0 -31.4413 -8 6.4834 -30.152 -8 7.654 -32.978 -8
   [4,82,0,-34.5,-8,0,-31.4413,-8,6.4834,-30.152,-8,7.654,-32.978,-8],
@@ -176,5 +177,5 @@ function ldraw_lib__2586p4j() = [
   [4,272,0,33.8805,-8,0,-3.046,-8,-1.7783,33.1202,-8,-0.9114,33.6993,-8],
 ];
 module ldraw_lib__2586p4j(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2586p4j(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2586p4j(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2586p4j(line=0.2);

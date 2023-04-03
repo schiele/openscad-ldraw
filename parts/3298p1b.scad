@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3298s01.scad>
-function ldraw_lib__3298p1b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3298p1b(realsolid=false) = [
 // 0 Slope Brick 33  3 x  2 with Yellow and Green V Pattern
 // 0 Name: 3298p1b.dat
 // 0 Author: Tore Eriksson [Tore_Eriksson]
@@ -15,7 +16,7 @@ function ldraw_lib__3298p1b() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3298s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3298s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3298s01(realsolid)],
 // 
 // 4 16 20 0 -10 -20 0 -10 -18.5 1 -12 18.5 1 -12
   [4,16,20,0,-10,-20,0,-10,-18.5,1,-12,18.5,1,-12],
@@ -55,5 +56,5 @@ function ldraw_lib__3298p1b() = [
 // 0
 ];
 module ldraw_lib__3298p1b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3298p1b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3298p1b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3298p1b(line=0.2);

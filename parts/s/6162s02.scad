@@ -2,7 +2,8 @@ use <../../lib.scad>
 use <../../p/48/1-8cyli.scad>
 use <../../p/48/1-8disc.scad>
 use <../../p/48/1-8edge.scad>
-function ldraw_lib__s__6162s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__6162s02(realsolid=false) = [
 // 0 ~Brick 12 x 12 Corner Round - 1/8
 // 0 Name: s\6162s02.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -17,20 +18,20 @@ function ldraw_lib__s__6162s02() = [
 // 
 // 
 // 1 16 -80 4 80 196 0 0 0 -1 0 0 0 -196 48\1-8disc.dat
-  [1,16,-80,4,80,196,0,0,0,-1,0,0,0,-196, ldraw_lib__48__1_8disc()],
+  [1,16,-80,4,80,196,0,0,0,-1,0,0,0,-196, ldraw_lib__48__1_8disc(realsolid)],
 // 1 16 -80 0 80 200 0 0 0 1 0 0 0 -200 48\1-8disc.dat
-  [1,16,-80,0,80,200,0,0,0,1,0,0,0,-200, ldraw_lib__48__1_8disc()],
+  [1,16,-80,0,80,200,0,0,0,1,0,0,0,-200, ldraw_lib__48__1_8disc(realsolid)],
 // 0 // curve wall
 // 1 16 -80 0 80 200 0 0 0 1 0 0 0 -200 48\1-8edge.dat
-  [1,16,-80,0,80,200,0,0,0,1,0,0,0,-200, ldraw_lib__48__1_8edge()],
+  [1,16,-80,0,80,200,0,0,0,1,0,0,0,-200, ldraw_lib__48__1_8edge(realsolid)],
 // 1 16 -80 4 80 196 0 0 0 1 0 0 0 -196 48\1-8edge.dat
-  [1,16,-80,4,80,196,0,0,0,1,0,0,0,-196, ldraw_lib__48__1_8edge()],
+  [1,16,-80,4,80,196,0,0,0,1,0,0,0,-196, ldraw_lib__48__1_8edge(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -80 4 80 196 0 0 0 16 0 0 0 -196 48\1-8cyli.dat
-  [1,16,-80,4,80,196,0,0,0,16,0,0,0,-196, ldraw_lib__48__1_8cyli()],
+  [1,16,-80,4,80,196,0,0,0,16,0,0,0,-196, ldraw_lib__48__1_8cyli(realsolid)],
 // 1 16 -80 0 80 200 0 0 0 20 0 0 0 -200 48\1-8cyli.dat
-  [1,16,-80,0,80,200,0,0,0,20,0,0,0,-200, ldraw_lib__48__1_8cyli()],
+  [1,16,-80,0,80,200,0,0,0,20,0,0,0,-200, ldraw_lib__48__1_8cyli(realsolid)],
 // 
 // 0 // flats
 // 4 16 114.3144 20 54.422 118.28 20 53.9 116.106 20 42.9616 112.1604 20 43.5845
@@ -371,5 +372,5 @@ function ldraw_lib__s__6162s02() = [
   [5,24,116,24,70,116,20,70,115.5434,24,67.7038,115.5052,24,72.4923],
 ];
 module ldraw_lib__s__6162s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__6162s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__6162s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__6162s02(line=0.2);

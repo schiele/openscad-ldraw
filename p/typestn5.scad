@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <1-4disc.scad>
 use <1-4ndis.scad>
-function ldraw_lib__typestn5() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__typestn5(realsolid=false) = [
 // 0 Type Stencil Number 5
 // 0 Name: typestn5.dat
 // 0 Author: Willy Tschager [Holly-Wood]
@@ -19,9 +20,9 @@ function ldraw_lib__typestn5() = [
 // 
 // 0 // Black
 // 1 0 -0.182 0 -1.018 0.7 0 0 0 1 0 0 0 1.339 1-4ndis.dat
-  [1,0,-0.182,0,-1.018,0.7,0,0,0,1,0,0,0,1.339, ldraw_lib__1_4ndis()],
+  [1,0,-0.182,0,-1.018,0.7,0,0,0,1,0,0,0,1.339, ldraw_lib__1_4ndis(realsolid)],
 // 1 0 -0.182 0 -2.881 0.7 0 0 0 1 0 0 0 -1.339 1-4ndis.dat
-  [1,0,-0.182,0,-2.881,0.7,0,0,0,1,0,0,0,-1.339, ldraw_lib__1_4ndis()],
+  [1,0,-0.182,0,-2.881,0.7,0,0,0,1,0,0,0,-1.339, ldraw_lib__1_4ndis(realsolid)],
 // 4 0 -1.733 0 4.896 -2.552 0 5 -2.756 0 2.639 -2.006 0 2.541
   [4,0,-1.733,0,4.896,-2.552,0,5,-2.756,0,2.639,-2.006,0,2.541],
 // 4 0 -1.733 0 4.896 -2.006 0 2.541 -1.234 0 2.496 -0.969 0 4.816
@@ -107,9 +108,9 @@ function ldraw_lib__typestn5() = [
 // 
 // 0 // Main Color
 // 1 16 -0.182 0 -1.018 0.7 0 0 0 1 0 0 0 1.339 1-4disc.dat
-  [1,16,-0.182,0,-1.018,0.7,0,0,0,1,0,0,0,1.339, ldraw_lib__1_4disc()],
+  [1,16,-0.182,0,-1.018,0.7,0,0,0,1,0,0,0,1.339, ldraw_lib__1_4disc(realsolid)],
 // 1 16 -0.182 0 -2.881 0.7 0 0 0 1 0 0 0 -1.339 1-4disc.dat
-  [1,16,-0.182,0,-2.881,0.7,0,0,0,1,0,0,0,-1.339, ldraw_lib__1_4disc()],
+  [1,16,-0.182,0,-2.881,0.7,0,0,0,1,0,0,0,-1.339, ldraw_lib__1_4disc(realsolid)],
 // 3 16 -2.552 0 5 2.787 0 4.896 3.094 0 5
   [3,16,-2.552,0,5,2.787,0,4.896,3.094,0,5],
 // 4 16 -2.552 0 5 -1.733 0 4.896 2.42 0 4.818 2.787 0 4.896
@@ -229,5 +230,5 @@ function ldraw_lib__typestn5() = [
   [3,16,3.426,0,-1.259,3.44,0,-2.14,3.44,0,5],
 ];
 module ldraw_lib__typestn5(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__typestn5(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__typestn5(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__typestn5(line=0.2);

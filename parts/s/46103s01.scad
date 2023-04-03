@@ -2,7 +2,8 @@ use <../../lib.scad>
 use <../../p/1-4cyli.scad>
 use <../../p/1-4disc.scad>
 use <../../p/1-4edge.scad>
-function ldraw_lib__s__46103s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__46103s01(realsolid=false) = [
 // 0 ~Glass for Windscreen  4 x  6 x  4 Cab with Hinge - Half
 // 0 Name: s\46103s01.dat
 // 0 Author: Joerg Sommerer [Brickaneer]
@@ -88,25 +89,25 @@ function ldraw_lib__s__46103s01() = [
   [2,24,-56,62,6,-59,62,6],
 // 0 //
 // 1 16 -56 64 7 0 1 0 0 0 3 3 0 0 1-4edge.dat
-  [1,16,-56,64,7,0,1,0,0,0,3,3,0,0, ldraw_lib__1_4edge()],
+  [1,16,-56,64,7,0,1,0,0,0,3,3,0,0, ldraw_lib__1_4edge(realsolid)],
 // 1 16 -56 25 7 0 1 0 -3 0 0 0 0 3 1-4edge.dat
-  [1,16,-56,25,7,0,1,0,-3,0,0,0,0,3, ldraw_lib__1_4edge()],
+  [1,16,-56,25,7,0,1,0,-3,0,0,0,0,3, ldraw_lib__1_4edge(realsolid)],
 // 1 16 -53 25 7 0 1 0 -3 0 0 0 0 3 1-4edge.dat
-  [1,16,-53,25,7,0,1,0,-3,0,0,0,0,3, ldraw_lib__1_4edge()],
+  [1,16,-53,25,7,0,1,0,-3,0,0,0,0,3, ldraw_lib__1_4edge(realsolid)],
 // 1 16 -56 64 7 0 1 0 0 0 3 3 0 0 1-4disc.dat
-  [1,16,-56,64,7,0,1,0,0,0,3,3,0,0, ldraw_lib__1_4disc()],
+  [1,16,-56,64,7,0,1,0,0,0,3,3,0,0, ldraw_lib__1_4disc(realsolid)],
 // 1 16 -53 64 7 0 1 0 0 0 3 3 0 0 1-4edge.dat
-  [1,16,-53,64,7,0,1,0,0,0,3,3,0,0, ldraw_lib__1_4edge()],
+  [1,16,-53,64,7,0,1,0,0,0,3,3,0,0, ldraw_lib__1_4edge(realsolid)],
 // 1 16 -53 25 7 0 -1 0 0 0 -3 3 0 0 1-4disc.dat
-  [1,16,-53,25,7,0,-1,0,0,0,-3,3,0,0, ldraw_lib__1_4disc()],
+  [1,16,-53,25,7,0,-1,0,0,0,-3,3,0,0, ldraw_lib__1_4disc(realsolid)],
 // 1 16 -56 25 7 0 1 0 -3 0 0 0 0 3 1-4disc.dat
-  [1,16,-56,25,7,0,1,0,-3,0,0,0,0,3, ldraw_lib__1_4disc()],
+  [1,16,-56,25,7,0,1,0,-3,0,0,0,0,3, ldraw_lib__1_4disc(realsolid)],
 // 1 16 -53 64 7 0 -1 0 3 0 0 0 0 3 1-4disc.dat
-  [1,16,-53,64,7,0,-1,0,3,0,0,0,0,3, ldraw_lib__1_4disc()],
+  [1,16,-53,64,7,0,-1,0,3,0,0,0,0,3, ldraw_lib__1_4disc(realsolid)],
 // 1 16 -56 64 7 0 3 0 0 0 3 3 0 0 1-4cyli.dat
-  [1,16,-56,64,7,0,3,0,0,0,3,3,0,0, ldraw_lib__1_4cyli()],
+  [1,16,-56,64,7,0,3,0,0,0,3,3,0,0, ldraw_lib__1_4cyli(realsolid)],
 // 1 16 -56 25 7 0 3 0 -3 0 0 0 0 3 1-4cyli.dat
-  [1,16,-56,25,7,0,3,0,-3,0,0,0,0,3, ldraw_lib__1_4cyli()],
+  [1,16,-56,25,7,0,3,0,-3,0,0,0,0,3, ldraw_lib__1_4cyli(realsolid)],
 // 4 16 -56 25 10 -53 25 10 -53 64 10 -56 64 10
   [4,16,-56,25,10,-53,25,10,-53,64,10,-56,64,10],
 // 0 //
@@ -276,5 +277,5 @@ function ldraw_lib__s__46103s01() = [
 // 0
 ];
 module ldraw_lib__s__46103s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__46103s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__46103s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__46103s01(line=0.2);

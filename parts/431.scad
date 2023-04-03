@@ -3,7 +3,8 @@ use <../p/4-4cyli.scad>
 use <../p/4-4edge.scad>
 use <../p/4-4ndis.scad>
 use <../p/box4.scad>
-function ldraw_lib__431() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__431(realsolid=false) = [
 // 0 ~Train Brick  2 x  4 Holder Bottom for Power Pickup
 // 0 Name: 431.dat
 // 0 Author: Niels Karsdorp [nielsk]
@@ -20,31 +21,31 @@ function ldraw_lib__431() = [
 // 
 // 
 // 1 16 0 4 0 38 0 0 0 -4 0 0 0 18 box4.dat
-  [1,16,0,4,0,38,0,0,0,-4,0,0,0,18, ldraw_lib__box4()],
+  [1,16,0,4,0,38,0,0,0,-4,0,0,0,18, ldraw_lib__box4(realsolid)],
 // 1 16 11.5 4 0 9 0 0 0 1 0 0 0 9 4-4edge.dat
-  [1,16,11.5,4,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4edge()],
+  [1,16,11.5,4,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4edge(realsolid)],
 // 1 16 -11.5 4 0 9 0 0 0 1 0 0 0 9 4-4edge.dat
-  [1,16,-11.5,4,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4edge()],
+  [1,16,-11.5,4,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4edge(realsolid)],
 // 1 16 11.5 0 0 9 0 0 0 1 0 0 0 9 4-4edge.dat
-  [1,16,11.5,0,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4edge()],
+  [1,16,11.5,0,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4edge(realsolid)],
 // 1 16 -11.5 0 0 9 0 0 0 1 0 0 0 9 4-4edge.dat
-  [1,16,-11.5,0,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4edge()],
+  [1,16,-11.5,0,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4edge(realsolid)],
 // 1 16 11.5 4 0 9 0 0 0 -1 0 0 0 9 4-4ndis.dat
-  [1,16,11.5,4,0,9,0,0,0,-1,0,0,0,9, ldraw_lib__4_4ndis()],
+  [1,16,11.5,4,0,9,0,0,0,-1,0,0,0,9, ldraw_lib__4_4ndis(realsolid)],
 // 1 16 -11.5 4 0 9 0 0 0 -1 0 0 0 9 4-4ndis.dat
-  [1,16,-11.5,4,0,9,0,0,0,-1,0,0,0,9, ldraw_lib__4_4ndis()],
+  [1,16,-11.5,4,0,9,0,0,0,-1,0,0,0,9, ldraw_lib__4_4ndis(realsolid)],
 // 1 16 11.5 0 0 9 0 0 0 1 0 0 0 9 4-4ndis.dat
-  [1,16,11.5,0,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4ndis()],
+  [1,16,11.5,0,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4ndis(realsolid)],
 // 1 16 -11.5 0 0 9 0 0 0 1 0 0 0 9 4-4ndis.dat
-  [1,16,-11.5,0,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4ndis()],
+  [1,16,-11.5,0,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4ndis(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 11.5 0 0 9 0 0 0 4 0 0 0 9 4-4cyli.dat
-  [1,16,11.5,0,0,9,0,0,0,4,0,0,0,9, ldraw_lib__4_4cyli()],
+  [1,16,11.5,0,0,9,0,0,0,4,0,0,0,9, ldraw_lib__4_4cyli(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -11.5 0 0 9 0 0 0 4 0 0 0 9 4-4cyli.dat
-  [1,16,-11.5,0,0,9,0,0,0,4,0,0,0,9, ldraw_lib__4_4cyli()],
+  [1,16,-11.5,0,0,9,0,0,0,4,0,0,0,9, ldraw_lib__4_4cyli(realsolid)],
 // 0 // -- Bottom faces
 // 4 16 -2.5 4 9 -2.5 4 -9 2.5 4 -9 2.5 4 9
   [4,16,-2.5,4,9,-2.5,4,-9,2.5,4,-9,2.5,4,9],
@@ -70,5 +71,5 @@ function ldraw_lib__431() = [
 // 0 //
 ];
 module ldraw_lib__431(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__431(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__431(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__431(line=0.2);

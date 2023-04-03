@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/3626cs02.scad>
 use <s/3626p8as01.scad>
-function ldraw_lib__3626cp8a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3626cp8a(realsolid=false) = [
 // 0 Minifig Head Female with Peach Lips, Smile, Brown Eyebrows Pattern (Hollow Stud)
 // 0 Name: 3626cp8a.dat
 // 0 Author: Howard Lande [HowardLande]
@@ -18,10 +19,10 @@ function ldraw_lib__3626cp8a() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3626cs02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626cs02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626cs02(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3626p8as01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626p8as01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626p8as01(realsolid)],
 ];
 module ldraw_lib__3626cp8a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3626cp8a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3626cp8a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3626cp8a(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <t04q4000.scad>
-function ldraw_lib__1_4ccyli() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__1_4ccyli(realsolid=false) = [
 // 0 ~Cylinder Tube 0.25 (deprecated; use t04q4000.dat)
 // 0 Name: 1-4ccyli.dat
 // 0 Author: James Jessiman
@@ -19,9 +20,9 @@ function ldraw_lib__1_4ccyli() = [
 // 
 // 
 // 1 16 0 0 0 2.5 0 0 0 2.5 0 0 0 2.5 t04q4000.dat
-  [1,16,0,0,0,2.5,0,0,0,2.5,0,0,0,2.5, ldraw_lib__t04q4000()],
+  [1,16,0,0,0,2.5,0,0,0,2.5,0,0,0,2.5, ldraw_lib__t04q4000(realsolid)],
 // 0
 ];
 module ldraw_lib__1_4ccyli(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__1_4ccyli(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__1_4ccyli(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__1_4ccyli(line=0.2);

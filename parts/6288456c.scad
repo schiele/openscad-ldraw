@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__6288456c() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6288456c(realsolid=false) = [
 // 0 Sticker  1.8 x  2.8 with Black and White Minifig and Metal Blue Lipstick
 // 0 Name: 6288456c.dat
 // 0 Author: Vincent Messenet [Cheenzo]
@@ -17,7 +18,7 @@ function ldraw_lib__6288456c() = [
 // 
 // 
 // 1 16 0 -.25 0 28 0 0 0 .25 0 0 0 -18 box5-12.dat
-  [1,16,0,-.25,0,28,0,0,0,.25,0,0,0,-18, ldraw_lib__box5_12()],
+  [1,16,0,-.25,0,28,0,0,0,.25,0,0,0,-18, ldraw_lib__box5_12(realsolid)],
 // 
 // 4 0 -.79 -.25 -.18 -1.16 -.25 -.87 -.98 -.25 -4.17 -.75 -.25 -3.9
   [4,0,-.79,-.25,-.18,-1.16,-.25,-.87,-.98,-.25,-4.17,-.75,-.25,-3.9],
@@ -1703,5 +1704,5 @@ function ldraw_lib__6288456c() = [
   [4,72,9.17,-.25,-15.11,8.62,-.25,-16.2,10.74,-.25,-16.2,9.9,-.25,-15.11],
 ];
 module ldraw_lib__6288456c(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6288456c(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6288456c(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6288456c(line=0.2);

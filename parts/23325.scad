@@ -4,7 +4,8 @@ use <../p/2-4disc.scad>
 use <../p/box5.scad>
 use <../p/stud4.scad>
 use <../p/stug4-3x3.scad>
-function ldraw_lib__23325() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__23325(realsolid=false) = [
 // 0 ~Electric Motor Unit  6 x 18 x  4 - Battery Compartment Lid
 // 0 Name: 23325.dat
 // 0 Author: Chris Dee [cwdee]
@@ -22,13 +23,13 @@ function ldraw_lib__23325() = [
 // 
 // 
 // 1 16 40 -4 0 1 0 0 0 -1 0 0 0 1 stug4-3x3.dat
-  [1,16,40,-4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stug4_3x3()],
+  [1,16,40,-4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stug4_3x3(realsolid)],
 // 1 16 -40 -4 0 1 0 0 0 -1 0 0 0 1 stug4-3x3.dat
-  [1,16,-40,-4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stug4_3x3()],
+  [1,16,-40,-4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stug4_3x3(realsolid)],
 // 1 16 0 -4 20 1 0 0 0 -1 0 0 0 1 stud4.dat
-  [1,16,0,-4,20,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4()],
+  [1,16,0,-4,20,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4(realsolid)],
 // 1 16 0 -4 -20 1 0 0 0 -1 0 0 0 1 stud4.dat
-  [1,16,0,-4,-20,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4()],
+  [1,16,0,-4,-20,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4(realsolid)],
 // 2 24 -76 -4 36 76 -4 36
   [2,24,-76,-4,36,76,-4,36],
 // 2 24 76 -4 36 76 -4 23
@@ -1839,7 +1840,7 @@ function ldraw_lib__23325() = [
   [4,16,74,-8,-60,80,-8,-60,80,-8,-23,74,-8,-23],
 // 
 // 1 16 0 -8 -55 37 0 0 0 -2 0 0 0 1 box5.dat
-  [1,16,0,-8,-55,37,0,0,0,-2,0,0,0,1, ldraw_lib__box5()],
+  [1,16,0,-8,-55,37,0,0,0,-2,0,0,0,1, ldraw_lib__box5(realsolid)],
 // 2 24 42 -8 53 42 -8 55
   [2,24,42,-8,53,42,-8,55],
 // 2 24 38 -8 53 38 -8 55
@@ -1858,15 +1859,15 @@ function ldraw_lib__23325() = [
   [2,24,-42,-8,55,-38,-8,55],
 // 
 // 1 16 42 -8 54 0 -4 0 0 0 -.75 -1 0 0 2-4cylc.dat
-  [1,16,42,-8,54,0,-4,0,0,0,-.75,-1,0,0, ldraw_lib__2_4cylc()],
+  [1,16,42,-8,54,0,-4,0,0,0,-.75,-1,0,0, ldraw_lib__2_4cylc(realsolid)],
 // 1 16 38 -8 54 0 1 0 0 0 -.75 1 0 0 2-4disc.dat
-  [1,16,38,-8,54,0,1,0,0,0,-.75,1,0,0, ldraw_lib__2_4disc()],
+  [1,16,38,-8,54,0,1,0,0,0,-.75,1,0,0, ldraw_lib__2_4disc(realsolid)],
 // 
 // 1 16 -42 -8 54 0 4 0 0 0 -.75 -1 0 0 2-4cylc.dat
-  [1,16,-42,-8,54,0,4,0,0,0,-.75,-1,0,0, ldraw_lib__2_4cylc()],
+  [1,16,-42,-8,54,0,4,0,0,0,-.75,-1,0,0, ldraw_lib__2_4cylc(realsolid)],
 // 1 16 -38 -8 54 0 -1 0 0 0 -.75 1 0 0 2-4disc.dat
-  [1,16,-38,-8,54,0,-1,0,0,0,-.75,1,0,0, ldraw_lib__2_4disc()],
+  [1,16,-38,-8,54,0,-1,0,0,0,-.75,1,0,0, ldraw_lib__2_4disc(realsolid)],
 ];
 module ldraw_lib__23325(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__23325(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__23325(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__23325(line=0.2);

@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/rail12v.scad>
-function ldraw_lib__s__3241s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__3241s01(realsolid=false) = [
 // 0 ~Train Track 12V Curved Insert: Sweep Front/End
 // 0 Name: s\3241s01.dat
 // 0 Author: Steffen [Steffen]
@@ -15,7 +16,7 @@ function ldraw_lib__s__3241s01() = [
 // 
 // 
 // 1 494 0 0 0 1 0 0 0 1 0 0 0 1 rail12v.dat
-  [1,494,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__rail12v()],
+  [1,494,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__rail12v(realsolid)],
 // 4 16 0 4 -16 0 4 -20 0 9 -20 0 9 -16
   [4,16,0,4,-16,0,4,-20,0,9,-20,0,9,-16],
 // 4 16 0 4 20 0 4 16 0 9 16 0 9 20
@@ -154,5 +155,5 @@ function ldraw_lib__s__3241s01() = [
   [2,24,0,9,16,0,4,16],
 ];
 module ldraw_lib__s__3241s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__3241s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__3241s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__3241s01(line=0.2);

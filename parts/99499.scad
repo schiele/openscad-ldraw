@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <10089c01.scad>
 use <10095.scad>
-function ldraw_lib__99499() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__99499(realsolid=false) = [
 // 0 Electric Power Functions Large Motor
 // 0 Name: 99499.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -18,10 +19,10 @@ function ldraw_lib__99499() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 10089c01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__10089c01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__10089c01(realsolid)],
 // 1 25 0 0 0 1 0 0 0 1 0 0 0 1 10095.dat
-  [1,25,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__10095()],
+  [1,25,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__10095(realsolid)],
 ];
 module ldraw_lib__99499(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__99499(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__99499(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__99499(line=0.2);

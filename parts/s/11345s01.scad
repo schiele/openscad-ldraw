@@ -3,7 +3,8 @@ use <../../p/1-4cylo.scad>
 use <../../p/1-4ndis.scad>
 use <../../p/rect2p.scad>
 use <18857s02.scad>
-function ldraw_lib__s__11345s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__11345s01(realsolid=false) = [
 // 0 ~Duplo Door Frame  2 x  4 x  3 with Thick Top Rim without Sides
 // 0 Name: s\11345s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -18,29 +19,29 @@ function ldraw_lib__s__11345s01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\18857s02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__18857s02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__18857s02(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 48.5 22 -80 0 0 7 -7 0 0 0 4 0 1-4cylo.dat
-  [1,16,48.5,22,-80,0,0,7,-7,0,0,0,4,0, ldraw_lib__1_4cylo()],
+  [1,16,48.5,22,-80,0,0,7,-7,0,0,0,4,0, ldraw_lib__1_4cylo(realsolid)],
 // 1 16 48.5 22 -80 0 0 7 -7 0 0 0 1 0 1-4ndis.dat
-  [1,16,48.5,22,-80,0,0,7,-7,0,0,0,1,0, ldraw_lib__1_4ndis()],
+  [1,16,48.5,22,-80,0,0,7,-7,0,0,0,1,0, ldraw_lib__1_4ndis(realsolid)],
 // 1 16 48.5 22 -76 0 0 7 -7 0 0 0 -1 0 1-4ndis.dat
-  [1,16,48.5,22,-76,0,0,7,-7,0,0,0,-1,0, ldraw_lib__1_4ndis()],
+  [1,16,48.5,22,-76,0,0,7,-7,0,0,0,-1,0, ldraw_lib__1_4ndis(realsolid)],
 // 1 16 -48.5 22 -80 0 0 -7 -7 0 0 0 1 0 1-4ndis.dat
-  [1,16,-48.5,22,-80,0,0,-7,-7,0,0,0,1,0, ldraw_lib__1_4ndis()],
+  [1,16,-48.5,22,-80,0,0,-7,-7,0,0,0,1,0, ldraw_lib__1_4ndis(realsolid)],
 // 1 16 -48.5 22 -76 0 0 -7 -7 0 0 0 -1 0 1-4ndis.dat
-  [1,16,-48.5,22,-76,0,0,-7,-7,0,0,0,-1,0, ldraw_lib__1_4ndis()],
+  [1,16,-48.5,22,-76,0,0,-7,-7,0,0,0,-1,0, ldraw_lib__1_4ndis(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -48.5 22 -80 0 0 -7 -7 0 0 0 4 0 1-4cylo.dat
-  [1,16,-48.5,22,-80,0,0,-7,-7,0,0,0,4,0, ldraw_lib__1_4cylo()],
+  [1,16,-48.5,22,-80,0,0,-7,-7,0,0,0,4,0, ldraw_lib__1_4cylo(realsolid)],
 // 1 16 -55.5 71.5 -78 0 -1 0 49.5 0 0 0 0 2 rect2p.dat
-  [1,16,-55.5,71.5,-78,0,-1,0,49.5,0,0,0,0,2, ldraw_lib__rect2p()],
+  [1,16,-55.5,71.5,-78,0,-1,0,49.5,0,0,0,0,2, ldraw_lib__rect2p(realsolid)],
 // 1 16 0 15 -78 -48.5 0 0 0 -1 0 0 0 2 rect2p.dat
-  [1,16,0,15,-78,-48.5,0,0,0,-1,0,0,0,2, ldraw_lib__rect2p()],
+  [1,16,0,15,-78,-48.5,0,0,0,-1,0,0,0,2, ldraw_lib__rect2p(realsolid)],
 // 1 16 55.5 71.5 -78 0 1 0 -49.5 0 0 0 0 2 rect2p.dat
-  [1,16,55.5,71.5,-78,0,1,0,-49.5,0,0,0,0,2, ldraw_lib__rect2p()],
+  [1,16,55.5,71.5,-78,0,1,0,-49.5,0,0,0,0,2, ldraw_lib__rect2p(realsolid)],
 // 4 16 55.5 125 -80 57 104 -80 57 30 -80 55.5 15 -80
   [4,16,55.5,125,-80,57,104,-80,57,30,-80,55.5,15,-80],
 // 4 16 80 0 -80 55.5 15 -80 57 30 -80 74 30 -80
@@ -59,5 +60,5 @@ function ldraw_lib__s__11345s01() = [
   [4,16,-75,4,-76,-55.5,15,-76,-55.5,125,-76,-75,125,-76],
 ];
 module ldraw_lib__s__11345s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__11345s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__11345s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__11345s01(line=0.2);

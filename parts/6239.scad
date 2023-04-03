@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/6239s01.scad>
-function ldraw_lib__6239() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6239(realsolid=false) = [
 // 0 Tail Shuttle  2 x  6 x  4
 // 0 Name: 6239.dat
 // 0 Author: James Jessiman
@@ -20,7 +21,7 @@ function ldraw_lib__6239() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\6239s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6239s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6239s01(realsolid)],
 // 0 // left side
 // 4 16 2 0 30 2 -8 50 2 -80 90 2 -80 50
   [4,16,2,0,30,2,-8,50,2,-80,90,2,-80,50],
@@ -33,5 +34,5 @@ function ldraw_lib__6239() = [
   [3,16,-2,0,-30,-2,-80,50,-2,0,30],
 ];
 module ldraw_lib__6239(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6239(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6239(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6239(line=0.2);

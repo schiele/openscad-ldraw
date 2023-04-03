@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3297s01.scad>
-function ldraw_lib__3297p15() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3297p15(realsolid=false) = [
 // 0 Slope Brick 33  3 x  4 with Train Railyard Switching Pattern
 // 0 Name: 3297p15.dat
 // 0 Author: Stan Isachenko [angmarec]
@@ -15,7 +16,7 @@ function ldraw_lib__3297p15() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3297s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3297s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3297s01(realsolid)],
 // 
 // 4 4 -17.63 6.64112 -23.28224 -17.46 6.69479 -23.38958 -17.25 6.71268 -23.42535 -17.75 6.5651 -23.13019
   [4,4,-17.63,6.64112,-23.28224,-17.46,6.69479,-23.38958,-17.25,6.71268,-23.42535,-17.75,6.5651,-23.13019],
@@ -2307,5 +2308,5 @@ function ldraw_lib__3297p15() = [
   [3,16,-37.82,18.97527,-47.95055,-37.47094,18.62828,-47.25657,-37.70063,18.55965,-47.11929],
 ];
 module ldraw_lib__3297p15(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3297p15(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3297p15(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3297p15(line=0.2);

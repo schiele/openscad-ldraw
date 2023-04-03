@@ -13,7 +13,8 @@ use <../p/logo-maersk-r.scad>
 use <../p/logo-maersk-s.scad>
 use <../p/logo-maersk-star-bg.scad>
 use <../p/logo-maersk-star.scad>
-function ldraw_lib__190775c() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__190775c(realsolid=false) = [
 // 0 Sticker  1.4 x  1.8 with White Maersk Line Logo on Transparent Background
 // 0 Name: 190775c.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -30,19 +31,19 @@ function ldraw_lib__190775c() = [
 // 
 // 
 // 1 16 0 -0.25 0 18 0 0 0 0.25 0 0 0 14 box5-12.dat
-  [1,16,0,-0.25,0,18,0,0,0,0.25,0,0,0,14, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,18,0,0,0,0.25,0,0,0,14, ldraw_lib__box5_12(realsolid)],
 // 0 BFC NOCLIP
   [0,"BFC","NOCLIP"],
 // 1 15 0 -.25 2.5 .9 0 0 0 1 0 0 0 .9 logo-maersk-star.dat
-  [1,15,0,-.25,2.5,.9,0,0,0,1,0,0,0,.9, ldraw_lib__logo_maersk_star()],
+  [1,15,0,-.25,2.5,.9,0,0,0,1,0,0,0,.9, ldraw_lib__logo_maersk_star(realsolid)],
 // 1 15 9 -.25 11 .5 0 0 0 1 0 0 0 .5 1-4ring4.dat
-  [1,15,9,-.25,11,.5,0,0,0,1,0,0,0,.5, ldraw_lib__1_4ring4()],
+  [1,15,9,-.25,11,.5,0,0,0,1,0,0,0,.5, ldraw_lib__1_4ring4(realsolid)],
 // 1 15 -9 -.25 11 0 0 -.5 0 1 0 .5 0 0 1-4ring4.dat
-  [1,15,-9,-.25,11,0,0,-.5,0,1,0,.5,0,0, ldraw_lib__1_4ring4()],
+  [1,15,-9,-.25,11,0,0,-.5,0,1,0,.5,0,0, ldraw_lib__1_4ring4(realsolid)],
 // 1 15 9 -.25 -6 0 0 .5 0 1 0 -.5 0 0 1-4ring4.dat
-  [1,15,9,-.25,-6,0,0,.5,0,1,0,-.5,0,0, ldraw_lib__1_4ring4()],
+  [1,15,9,-.25,-6,0,0,.5,0,1,0,-.5,0,0, ldraw_lib__1_4ring4(realsolid)],
 // 1 15 -9 -.25 -6 -.5 0 0 0 1 0 0 0 -.5 1-4ring4.dat
-  [1,15,-9,-.25,-6,-.5,0,0,0,1,0,0,0,-.5, ldraw_lib__1_4ring4()],
+  [1,15,-9,-.25,-6,-.5,0,0,0,1,0,0,0,-.5, ldraw_lib__1_4ring4(realsolid)],
 // 4 15 9 -.25 13 9 -.25 13.5 -9 -.25 13.5 -9 -.25 13
   [4,15,9,-.25,13,9,-.25,13.5,-9,-.25,13.5,-9,-.25,13],
 // 4 15 -11 -.25 -6 -11 -.25 11 -11.5 -.25 11 -11.5 -.25 -6
@@ -54,43 +55,43 @@ function ldraw_lib__190775c() = [
 // 4 15 9.4 -.25 -9.88 8.6 -.25 -9.88 8.6 -.25 -13.12 9.4 -.25 -13.12
   [4,15,9.4,-.25,-9.88,8.6,-.25,-9.88,8.6,-.25,-13.12,9.4,-.25,-13.12],
 // 1 16 0 -.25 2.5 .9 0 0 0 1 0 0 0 .9 logo-maersk-star-bg.dat
-  [1,16,0,-.25,2.5,.9,0,0,0,1,0,0,0,.9, ldraw_lib__logo_maersk_star_bg()],
+  [1,16,0,-.25,2.5,.9,0,0,0,1,0,0,0,.9, ldraw_lib__logo_maersk_star_bg(realsolid)],
 // 1 16 -15 -.25 -11.5 .6 0 0 0 1 0 0 0 .6 logo-maersk-m.dat
-  [1,16,-15,-.25,-11.5,.6,0,0,0,1,0,0,0,.6, ldraw_lib__logo_maersk_m()],
+  [1,16,-15,-.25,-11.5,.6,0,0,0,1,0,0,0,.6, ldraw_lib__logo_maersk_m(realsolid)],
 // 1 16 -11 -.25 -11.5 .6 0 0 0 1 0 0 0 .6 logo-maersk-a.dat
-  [1,16,-11,-.25,-11.5,.6,0,0,0,1,0,0,0,.6, ldraw_lib__logo_maersk_a()],
+  [1,16,-11,-.25,-11.5,.6,0,0,0,1,0,0,0,.6, ldraw_lib__logo_maersk_a(realsolid)],
 // 1 16 -7.4 -.25 -11.5 .6 0 0 0 1 0 0 0 .6 logo-maersk-e.dat
-  [1,16,-7.4,-.25,-11.5,.6,0,0,0,1,0,0,0,.6, ldraw_lib__logo_maersk_e()],
+  [1,16,-7.4,-.25,-11.5,.6,0,0,0,1,0,0,0,.6, ldraw_lib__logo_maersk_e(realsolid)],
 // 1 16 -4.1 -.25 -11.5 .6 0 0 0 1 0 0 0 .6 logo-maersk-r.dat
-  [1,16,-4.1,-.25,-11.5,.6,0,0,0,1,0,0,0,.6, ldraw_lib__logo_maersk_r()],
+  [1,16,-4.1,-.25,-11.5,.6,0,0,0,1,0,0,0,.6, ldraw_lib__logo_maersk_r(realsolid)],
 // 1 16 -.7 -.25 -11.5 .6 0 0 0 1 0 0 0 .6 logo-maersk-s.dat
-  [1,16,-.7,-.25,-11.5,.6,0,0,0,1,0,0,0,.6, ldraw_lib__logo_maersk_s()],
+  [1,16,-.7,-.25,-11.5,.6,0,0,0,1,0,0,0,.6, ldraw_lib__logo_maersk_s(realsolid)],
 // 1 16 2.8 -.25 -11.5 .6 0 0 0 1 0 0 0 .6 logo-maersk-k.dat
-  [1,16,2.8,-.25,-11.5,.6,0,0,0,1,0,0,0,.6, ldraw_lib__logo_maersk_k()],
+  [1,16,2.8,-.25,-11.5,.6,0,0,0,1,0,0,0,.6, ldraw_lib__logo_maersk_k(realsolid)],
 // 1 16 6.7 -.25 -11.5 .6 0 0 0 1 0 0 0 .6 logo-maersk-l.dat
-  [1,16,6.7,-.25,-11.5,.6,0,0,0,1,0,0,0,.6, ldraw_lib__logo_maersk_l()],
+  [1,16,6.7,-.25,-11.5,.6,0,0,0,1,0,0,0,.6, ldraw_lib__logo_maersk_l(realsolid)],
 // 1 16 11.5 -.25 -11.5 .6 0 0 0 1 0 0 0 .6 logo-maersk-n.dat
-  [1,16,11.5,-.25,-11.5,.6,0,0,0,1,0,0,0,.6, ldraw_lib__logo_maersk_n()],
+  [1,16,11.5,-.25,-11.5,.6,0,0,0,1,0,0,0,.6, ldraw_lib__logo_maersk_n(realsolid)],
 // 1 16 15.2 -.25 -11.5 .6 0 0 0 1 0 0 0 .6 logo-maersk-e.dat
-  [1,16,15.2,-.25,-11.5,.6,0,0,0,1,0,0,0,.6, ldraw_lib__logo_maersk_e()],
+  [1,16,15.2,-.25,-11.5,.6,0,0,0,1,0,0,0,.6, ldraw_lib__logo_maersk_e(realsolid)],
 // 0 BFC CLIP
   [0,"BFC","CLIP"],
 // 1 16 9 -.25 11 2 0 0 0 1 0 0 0 2 1-4chrd.dat
-  [1,16,9,-.25,11,2,0,0,0,1,0,0,0,2, ldraw_lib__1_4chrd()],
+  [1,16,9,-.25,11,2,0,0,0,1,0,0,0,2, ldraw_lib__1_4chrd(realsolid)],
 // 1 16 9 -.25 11 2.5 0 0 0 1 0 0 0 2.5 1-4ndis.dat
-  [1,16,9,-.25,11,2.5,0,0,0,1,0,0,0,2.5, ldraw_lib__1_4ndis()],
+  [1,16,9,-.25,11,2.5,0,0,0,1,0,0,0,2.5, ldraw_lib__1_4ndis(realsolid)],
 // 1 16 -9 -.25 11 0 0 -2 0 1 0 2 0 0 1-4chrd.dat
-  [1,16,-9,-.25,11,0,0,-2,0,1,0,2,0,0, ldraw_lib__1_4chrd()],
+  [1,16,-9,-.25,11,0,0,-2,0,1,0,2,0,0, ldraw_lib__1_4chrd(realsolid)],
 // 1 16 -9 -.25 11 0 0 -2.5 0 1 0 2.5 0 0 1-4ndis.dat
-  [1,16,-9,-.25,11,0,0,-2.5,0,1,0,2.5,0,0, ldraw_lib__1_4ndis()],
+  [1,16,-9,-.25,11,0,0,-2.5,0,1,0,2.5,0,0, ldraw_lib__1_4ndis(realsolid)],
 // 1 16 9 -.25 -6 0 0 2 0 1 0 -2 0 0 1-4chrd.dat
-  [1,16,9,-.25,-6,0,0,2,0,1,0,-2,0,0, ldraw_lib__1_4chrd()],
+  [1,16,9,-.25,-6,0,0,2,0,1,0,-2,0,0, ldraw_lib__1_4chrd(realsolid)],
 // 1 16 9 -.25 -6 0 0 2.5 0 1 0 -2.5 0 0 1-4ndis.dat
-  [1,16,9,-.25,-6,0,0,2.5,0,1,0,-2.5,0,0, ldraw_lib__1_4ndis()],
+  [1,16,9,-.25,-6,0,0,2.5,0,1,0,-2.5,0,0, ldraw_lib__1_4ndis(realsolid)],
 // 1 16 -9 -.25 -6 -2 0 0 0 1 0 0 0 -2 1-4chrd.dat
-  [1,16,-9,-.25,-6,-2,0,0,0,1,0,0,0,-2, ldraw_lib__1_4chrd()],
+  [1,16,-9,-.25,-6,-2,0,0,0,1,0,0,0,-2, ldraw_lib__1_4chrd(realsolid)],
 // 1 16 -9 -.25 -6 -2.5 0 0 0 1 0 0 0 -2.5 1-4ndis.dat
-  [1,16,-9,-.25,-6,-2.5,0,0,0,1,0,0,0,-2.5, ldraw_lib__1_4ndis()],
+  [1,16,-9,-.25,-6,-2.5,0,0,0,1,0,0,0,-2.5, ldraw_lib__1_4ndis(realsolid)],
 // 3 16 9 -.25 13 9.36 -.25 11.5 11 -.25 11
   [3,16,9,-.25,13,9.36,-.25,11.5,11,-.25,11],
 // 4 16 9.36 -.25 11.5 9 -.25 13 -9 -.25 13 -9.36 -.25 11.5
@@ -225,5 +226,5 @@ function ldraw_lib__190775c() = [
   [4,16,11.5,-.25,-6,11.5,-.25,-8.5,13.67,-.25,-9.88,16.73,-.25,-9.88],
 ];
 module ldraw_lib__190775c(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__190775c(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__190775c(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__190775c(line=0.2);

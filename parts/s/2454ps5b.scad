@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__2454ps5b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__2454ps5b(realsolid=false) = [
 // 0 ~Brick  1 x  2 x  5 with Han Solo Carbon - Dark Silver
 // 0 Name: s\2454ps5b.dat
 // 0 Author: Thomas Burger [grapeape]
@@ -140,5 +141,5 @@ function ldraw_lib__s__2454ps5b() = [
 // 0
 ];
 module ldraw_lib__s__2454ps5b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__2454ps5b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__2454ps5b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__2454ps5b(line=0.2);

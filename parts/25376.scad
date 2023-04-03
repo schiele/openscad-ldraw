@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4cylo.scad>
 use <../p/4-4ndis.scad>
 use <../p/4-4ring4.scad>
-function ldraw_lib__25376() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__25376(realsolid=false) = [
 // 0 Minifig Scarf Long Wrapped
 // 0 Name: 25376.dat
 // 0 Author: Ulrich Röder [UR]
@@ -25,13 +26,13 @@ function ldraw_lib__25376() = [
 // 0 // Main
 // 
 // 1 16 0 -2.5 0 2 0 0 0 1 0 0 0 2 4-4ring4.dat
-  [1,16,0,-2.5,0,2,0,0,0,1,0,0,0,2, ldraw_lib__4_4ring4()],
+  [1,16,0,-2.5,0,2,0,0,0,1,0,0,0,2, ldraw_lib__4_4ring4(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -2.5 0 8 0 0 0 2.5 0 0 0 8 4-4cylo.dat
-  [1,16,0,-2.5,0,8,0,0,0,2.5,0,0,0,8, ldraw_lib__4_4cylo()],
+  [1,16,0,-2.5,0,8,0,0,0,2.5,0,0,0,8, ldraw_lib__4_4cylo(realsolid)],
 // 1 16 0 0 0 8 0 0 0 -1 0 0 0 8 4-4ndis.dat
-  [1,16,0,0,0,8,0,0,0,-1,0,0,0,8, ldraw_lib__4_4ndis()],
+  [1,16,0,0,0,8,0,0,0,-1,0,0,0,8, ldraw_lib__4_4ndis(realsolid)],
 // 4 16 -15 0 10 -3.542 0 10 0 0 8 -8 0 8
   [4,16,-15,0,10,-3.542,0,10,0,0,8,-8,0,8],
 // 3 16 8 0 8 15 0 10 8 0 0
@@ -2262,5 +2263,5 @@ function ldraw_lib__25376() = [
   [5,24,-0.056,-2.25,-13.911,-0.068,-2.499,-11.994,3.048,-2.694,-13.818,-3.281,-2.353,-13.645],
 ];
 module ldraw_lib__25376(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__25376(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__25376(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__25376(line=0.2);

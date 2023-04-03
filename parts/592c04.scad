@@ -2,7 +2,8 @@ use <../lib.scad>
 use <592.scad>
 use <u9021.scad>
 use <u9238.scad>
-function ldraw_lib__592c04() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__592c04(realsolid=false) = [
 // 0 Electric Plug (Type 1) Single with Hollow Pin (Complete)
 // 0 Name: 592c04.dat
 // 0 Author: Steffen [Steffen]
@@ -18,11 +19,11 @@ function ldraw_lib__592c04() = [
 // 
 // 
 // 1 16 0 0 22 1 0 0 0 1 0 0 0 1 592.dat
-  [1,16,0,0,22,1,0,0,0,1,0,0,0,1, ldraw_lib__592()],
+  [1,16,0,0,22,1,0,0,0,1,0,0,0,1, ldraw_lib__592(realsolid)],
 // 1 494 0 0 0 1 0 0 0 1 0 0 0 1 u9238.dat
-  [1,494,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9238()],
+  [1,494,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9238(realsolid)],
 // 1 494 0 -6 17 .98163 0 -.19081 0 1 0 .19081 0 .98163 u9021.dat
-  [1,494,0,-6,17,.98163,0,-.19081,0,1,0,.19081,0,.98163, ldraw_lib__u9021()],
+  [1,494,0,-6,17,.98163,0,-.19081,0,1,0,.19081,0,.98163, ldraw_lib__u9021(realsolid)],
 // 
 // 2 24 1.7222 -4.1576 15.1994 1.7601 -4.1322 15.2245
   [2,24,1.7222,-4.1576,15.1994,1.7601,-4.1322,15.2245],
@@ -115,5 +116,5 @@ function ldraw_lib__592c04() = [
 // 
 ];
 module ldraw_lib__592c04(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__592c04(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__592c04(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__592c04(line=0.2);

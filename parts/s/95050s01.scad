@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__95050s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__95050s01(realsolid=false) = [
 // 0 ~Minifig Staff with Crescent End - Crescent Half
 // 0 Name: s\95050s01.dat
 // 0 Author: Christian Neumann [Wesley]
@@ -951,5 +952,5 @@ function ldraw_lib__s__95050s01() = [
   [5,24,1.39,-12.83,1.19,2.85,-13.03,2.57,2.76,-15.15,1.59,1.38,-10.98,1.58],
 ];
 module ldraw_lib__s__95050s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__95050s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__95050s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__95050s01(line=0.2);

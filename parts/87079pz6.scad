@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/87079s01.scad>
-function ldraw_lib__87079pz6() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__87079pz6(realsolid=false) = [
 // 0 Tile  2 x  4 with Black Outlined White "A" Pattern
 // 0 Name: 87079pz6.dat
 // 0 Author: Damien Roux [Darats]
@@ -17,7 +18,7 @@ function ldraw_lib__87079pz6() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\87079s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__87079s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__87079s01(realsolid)],
 // 4 0 -22.19 0 -11.19 -12.06 0 14.75 -12.95 0 16.05 -24 0 -12.26
   [4,0,-22.19,0,-11.19,-12.06,0,14.75,-12.95,0,16.05,-24,0,-12.26],
 // 4 0 -7.38 0 -14.47 -8.12 0 -13.06 -22.19 0 -11.19 -24 0 -12.26
@@ -72,5 +73,5 @@ function ldraw_lib__87079pz6() = [
   [4,16,-40,0,20,-12.95,0,16.05,12.95,0,16.05,40,0,20],
 ];
 module ldraw_lib__87079pz6(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__87079pz6(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__87079pz6(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__87079pz6(line=0.2);

@@ -3,7 +3,8 @@ use <../p/2-4chrd.scad>
 use <../p/2-4cylo.scad>
 use <../p/4-4edge.scad>
 use <../p/4-8sphe.scad>
-function ldraw_lib__60607() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__60607(realsolid=false) = [
 // 0 Window  1 x  2 x  3 Pane Latticed with Reinforced Joints
 // 0 Name: 60607.dat
 // 0 Author: Ulrich Röder [UR]
@@ -24,27 +25,27 @@ function ldraw_lib__60607() = [
 // 0 // Main
 // 
 // 1 16 0 60 0 2 0 0 0 1 0 0 0 2 4-8sphe.dat
-  [1,16,0,60,0,2,0,0,0,1,0,0,0,2, ldraw_lib__4_8sphe()],
+  [1,16,0,60,0,2,0,0,0,1,0,0,0,2, ldraw_lib__4_8sphe(realsolid)],
 // 1 16 0 60 0 2 0 0 0 1 0 0 0 2 4-4edge.dat
-  [1,16,0,60,0,2,0,0,0,1,0,0,0,2, ldraw_lib__4_4edge()],
+  [1,16,0,60,0,2,0,0,0,1,0,0,0,2, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 0 0 2 0 0 0 -1 0 0 0 2 4-8sphe.dat
-  [1,16,0,0,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__4_8sphe()],
+  [1,16,0,0,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__4_8sphe(realsolid)],
 // 1 16 0 0 0 2 0 0 0 1 0 0 0 2 4-4edge.dat
-  [1,16,0,0,0,2,0,0,0,1,0,0,0,2, ldraw_lib__4_4edge()],
+  [1,16,0,0,0,2,0,0,0,1,0,0,0,2, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 0 0 3.75 0 0 0 5 0 0 0 3.75 2-4cylo.dat
-  [1,16,0,0,0,3.75,0,0,0,5,0,0,0,3.75, ldraw_lib__2_4cylo()],
+  [1,16,0,0,0,3.75,0,0,0,5,0,0,0,3.75, ldraw_lib__2_4cylo(realsolid)],
 // 1 16 0 55 0 3.75 0 0 0 5 0 0 0 3.75 2-4cylo.dat
-  [1,16,0,55,0,3.75,0,0,0,5,0,0,0,3.75, ldraw_lib__2_4cylo()],
+  [1,16,0,55,0,3.75,0,0,0,5,0,0,0,3.75, ldraw_lib__2_4cylo(realsolid)],
 // 1 16 0 55 0 3.75 0 0 0 1 0 0 0 3.75 2-4chrd.dat
-  [1,16,0,55,0,3.75,0,0,0,1,0,0,0,3.75, ldraw_lib__2_4chrd()],
+  [1,16,0,55,0,3.75,0,0,0,1,0,0,0,3.75, ldraw_lib__2_4chrd(realsolid)],
 // 1 16 0 60 0 3.75 0 0 0 -1 0 0 0 3.75 2-4chrd.dat
-  [1,16,0,60,0,3.75,0,0,0,-1,0,0,0,3.75, ldraw_lib__2_4chrd()],
+  [1,16,0,60,0,3.75,0,0,0,-1,0,0,0,3.75, ldraw_lib__2_4chrd(realsolid)],
 // 1 16 0 0 0 3.75 0 0 0 1 0 0 0 3.75 2-4chrd.dat
-  [1,16,0,0,0,3.75,0,0,0,1,0,0,0,3.75, ldraw_lib__2_4chrd()],
+  [1,16,0,0,0,3.75,0,0,0,1,0,0,0,3.75, ldraw_lib__2_4chrd(realsolid)],
 // 1 16 0 5 0 3.75 0 0 0 -1 0 0 0 3.75 2-4chrd.dat
-  [1,16,0,5,0,3.75,0,0,0,-1,0,0,0,3.75, ldraw_lib__2_4chrd()],
+  [1,16,0,5,0,3.75,0,0,0,-1,0,0,0,3.75, ldraw_lib__2_4chrd(realsolid)],
 // 1 16 0 5 1 2.5 0 0 0 50 0 0 0 2.5 2-4cylo.dat
-  [1,16,0,5,1,2.5,0,0,0,50,0,0,0,2.5, ldraw_lib__2_4cylo()],
+  [1,16,0,5,1,2.5,0,0,0,50,0,0,0,2.5, ldraw_lib__2_4cylo(realsolid)],
 // 
 // 4 16 -2.5 18.672 -3.875 -2.5 16.549 -1.75 -2.5 23.472 -1.75 -2.5 21.347 -3.875
   [4,16,-2.5,18.672,-3.875,-2.5,16.549,-1.75,-2.5,23.472,-1.75,-2.5,21.347,-3.875],
@@ -693,5 +694,5 @@ function ldraw_lib__60607() = [
   [2,24,2.5,55,1,2.5,55,-8.5],
 ];
 module ldraw_lib__60607(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__60607(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__60607(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__60607(line=0.2);

@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__821421cs04() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__821421cs04(realsolid=false) = [
 // 0 ~Sticker "Octan", Letters "tan", Black Bordered
 // 0 Name: s\821421cs04.dat
 // 0 Author: Ulrich Röder [UR]
@@ -425,5 +426,5 @@ function ldraw_lib__s__821421cs04() = [
   [4,0,11.626,0,-.343,11.434,0,.013,11.125,0,-.111,11.318,0,-.464],
 ];
 module ldraw_lib__s__821421cs04(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__821421cs04(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__821421cs04(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__821421cs04(line=0.2);

@@ -4,7 +4,8 @@ use <../p/1-4edge.scad>
 use <../p/stud4o.scad>
 use <../p/t04o6250.scad>
 use <../p/t16o6250.scad>
-function ldraw_lib__61196() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__61196(realsolid=false) = [
 // 0 Minifig Hair Obi Wan
 // 0 Name: 61196.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -1751,29 +1752,29 @@ function ldraw_lib__61196() = [
   [3,16,15.876,1.955,-0.867,14.378,-0.632,-2.475,14.67,-0.21,-3.66],
 // 0 // new inside surface
 // 1 16 0 -4 0 1 0 0 0 -1 0 0 0 1 stud4o.dat
-  [1,16,0,-4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4o()],
+  [1,16,0,-4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4o(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 4 0 8 0 0 0 -6.4 0 0 0 8 t04o6250.dat
-  [1,16,0,4,0,8,0,0,0,-6.4,0,0,0,8, ldraw_lib__t04o6250()],
+  [1,16,0,4,0,8,0,0,0,-6.4,0,0,0,8, ldraw_lib__t04o6250(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 4 0 0 0 -8 0 -6.4 0 8 0 0 t04o6250.dat
-  [1,16,0,4,0,0,0,-8,0,-6.4,0,8,0,0, ldraw_lib__t04o6250()],
+  [1,16,0,4,0,0,0,-8,0,-6.4,0,8,0,0, ldraw_lib__t04o6250(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 4 0 -8 0 0 0 -6.4 0 0 0 -8 t16o6250.dat
-  [1,16,0,4,0,-8,0,0,0,-6.4,0,0,0,-8, ldraw_lib__t16o6250()],
+  [1,16,0,4,0,-8,0,0,0,-6.4,0,0,0,-8, ldraw_lib__t16o6250(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 4 0 8 0 0 0 -6.4 0 0 0 -8 t16o6250.dat
-  [1,16,0,4,0,8,0,0,0,-6.4,0,0,0,-8, ldraw_lib__t16o6250()],
+  [1,16,0,4,0,8,0,0,0,-6.4,0,0,0,-8, ldraw_lib__t16o6250(realsolid)],
 // 1 16 0 16.831 0 9.192 0 -9.192 0 1 0 9.192 0 9.192 1-4edge.dat
-  [1,16,0,16.831,0,9.192,0,-9.192,0,1,0,9.192,0,9.192, ldraw_lib__1_4edge()],
+  [1,16,0,16.831,0,9.192,0,-9.192,0,1,0,9.192,0,9.192, ldraw_lib__1_4edge(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 4 0 9.192 0 -9.192 0 12.831 0 9.192 0 9.192 1-4cyli.dat
-  [1,16,0,4,0,9.192,0,-9.192,0,12.831,0,9.192,0,9.192, ldraw_lib__1_4cyli()],
+  [1,16,0,4,0,9.192,0,-9.192,0,12.831,0,9.192,0,9.192, ldraw_lib__1_4cyli(realsolid)],
 // 4 16 -7.391 0 -3.062 -5.657 0 -5.657 -7.01 0.305 -7.01 -9.159 0.305 -3.794
   [4,16,-7.391,0,-3.062,-5.657,0,-5.657,-7.01,0.305,-7.01,-9.159,0.305,-3.794],
 // 4 16 -9.159 0.305 -3.794 -7.01 0.305 -7.01 -8.157 1.172 -8.157 -10.658 1.172 -4.414
@@ -3492,5 +3493,5 @@ function ldraw_lib__61196() = [
   [5,24,14.541,14.894,-0.728,12.7158,14.282,-1.42466,14.443,11.959,-2.61,12.999,15.203,0],
 ];
 module ldraw_lib__61196(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__61196(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__61196(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__61196(line=0.2);

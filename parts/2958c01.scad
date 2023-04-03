@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <2958.scad>
 use <43822a.scad>
-function ldraw_lib__2958c01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2958c01(realsolid=false) = [
 // 0 Technic Disc  3 x  3 with Train Fan Sticker (Shortcut)
 // 0 Name: 2958c01.dat
 // 0 Author: Tony Hafner [hafhead]
@@ -18,11 +19,11 @@ function ldraw_lib__2958c01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 2958.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2958()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2958(realsolid)],
 // 1 32 0 3 0 1 0 0 0 1 0 0 0 1 43822a.dat
-  [1,32,0,3,0,1,0,0,0,1,0,0,0,1, ldraw_lib__43822a()],
+  [1,32,0,3,0,1,0,0,0,1,0,0,0,1, ldraw_lib__43822a(realsolid)],
 // 0
 ];
 module ldraw_lib__2958c01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2958c01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2958c01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2958c01(line=0.2);

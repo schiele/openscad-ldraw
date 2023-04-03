@@ -5,7 +5,8 @@ use <../p/box3u5p.scad>
 use <../p/box4-1.scad>
 use <../p/box4-4a.scad>
 use <../p/rect1.scad>
-function ldraw_lib__2893() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2893(realsolid=false) = [
 // 0 ~Electric Train Motor  9V Bottom Cover
 // 0 Name: 2893.dat
 // 0 Author: Donald Sutter [technog]
@@ -30,43 +31,43 @@ function ldraw_lib__2893() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 8 52 36 0 0 0 -4 0 0 0 44 box4-4a.dat
-  [1,16,0,8,52,36,0,0,0,-4,0,0,0,44, ldraw_lib__box4_4a()],
+  [1,16,0,8,52,36,0,0,0,-4,0,0,0,44, ldraw_lib__box4_4a(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 8 -52 -36 0 0 0 -4 0 0 0 -44 box4-4a.dat
-  [1,16,0,8,-52,-36,0,0,0,-4,0,0,0,-44, ldraw_lib__box4_4a()],
+  [1,16,0,8,-52,-36,0,0,0,-4,0,0,0,-44, ldraw_lib__box4_4a(realsolid)],
 // 1 16 36 4 0 0 1 0 4 0 0 0 0 8 rect1.dat
-  [1,16,36,4,0,0,1,0,4,0,0,0,0,8, ldraw_lib__rect1()],
+  [1,16,36,4,0,0,1,0,4,0,0,0,0,8, ldraw_lib__rect1(realsolid)],
 // 1 16 -36 4 0 0 -1 0 4 0 0 0 0 8 rect1.dat
-  [1,16,-36,4,0,0,-1,0,4,0,0,0,0,8, ldraw_lib__rect1()],
+  [1,16,-36,4,0,0,-1,0,4,0,0,0,0,8, ldraw_lib__rect1(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -36 -8 0 0 6 0 0 0 -12 8 0 0 box4-1.dat
-  [1,16,-36,-8,0,0,6,0,0,0,-12,8,0,0, ldraw_lib__box4_1()],
+  [1,16,-36,-8,0,0,6,0,0,0,-12,8,0,0, ldraw_lib__box4_1(realsolid)],
 // 1 16 -29 0 0 0 0 3 0 -24 0 -12 0 0 box4-4a.dat
-  [1,16,-29,0,0,0,0,3,0,-24,0,-12,0,0, ldraw_lib__box4_4a()],
+  [1,16,-29,0,0,0,0,3,0,-24,0,-12,0,0, ldraw_lib__box4_4a(realsolid)],
 // 1 16 -34 -4 0 2 0 0 0 -20 0 0 0 12 box3u5p.dat
-  [1,16,-34,-4,0,2,0,0,0,-20,0,0,0,12, ldraw_lib__box3u5p()],
+  [1,16,-34,-4,0,2,0,0,0,-20,0,0,0,12, ldraw_lib__box3u5p(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 36 -8 0 0 -6 0 0 0 -12 -8 0 0 box4-1.dat
-  [1,16,36,-8,0,0,-6,0,0,0,-12,-8,0,0, ldraw_lib__box4_1()],
+  [1,16,36,-8,0,0,-6,0,0,0,-12,-8,0,0, ldraw_lib__box4_1(realsolid)],
 // 1 16 29 0 0 0 0 -3 0 -24 0 12 0 0 box4-4a.dat
-  [1,16,29,0,0,0,0,-3,0,-24,0,12,0,0, ldraw_lib__box4_4a()],
+  [1,16,29,0,0,0,0,-3,0,-24,0,12,0,0, ldraw_lib__box4_4a(realsolid)],
 // 1 16 34 -4 0 -2 0 0 0 -20 0 0 0 12 box3u5p.dat
-  [1,16,34,-4,0,-2,0,0,0,-20,0,0,0,12, ldraw_lib__box3u5p()],
+  [1,16,34,-4,0,-2,0,0,0,-20,0,0,0,12, ldraw_lib__box3u5p(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -2 12 0 0 32 -2 0 0 0 80 0 box3u2p.dat
-  [1,16,0,-2,12,0,0,32,-2,0,0,0,80,0, ldraw_lib__box3u2p()],
+  [1,16,0,-2,12,0,0,32,-2,0,0,0,80,0, ldraw_lib__box3u2p(realsolid)],
 // 1 16 0 -2 12 0 0 36 -2 0 0 0 84 0 box3u4a.dat
-  [1,16,0,-2,12,0,0,36,-2,0,0,0,84,0, ldraw_lib__box3u4a()],
+  [1,16,0,-2,12,0,0,36,-2,0,0,0,84,0, ldraw_lib__box3u4a(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -2 -12 0 0 -32 -2 0 0 0 -80 0 box3u2p.dat
-  [1,16,0,-2,-12,0,0,-32,-2,0,0,0,-80,0, ldraw_lib__box3u2p()],
+  [1,16,0,-2,-12,0,0,-32,-2,0,0,0,-80,0, ldraw_lib__box3u2p(realsolid)],
 // 1 16 0 -2 -12 0 0 -36 -2 0 0 0 -84 0 box3u4a.dat
-  [1,16,0,-2,-12,0,0,-36,-2,0,0,0,-84,0, ldraw_lib__box3u4a()],
+  [1,16,0,-2,-12,0,0,-36,-2,0,0,0,-84,0, ldraw_lib__box3u4a(realsolid)],
 // 4 16 -30 4 -8 30 4 -8 30 4 8 -30 4 8
   [4,16,-30,4,-8,30,4,-8,30,4,8,-30,4,8],
 // 4 16 -32 0 92 32 0 92 32 0 12 -32 0 12
@@ -146,5 +147,5 @@ function ldraw_lib__2893() = [
 // 0
 ];
 module ldraw_lib__2893(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2893(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2893(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2893(line=0.2);

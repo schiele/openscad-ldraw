@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/1-8chrd.scad>
 use <../p/2-4chrd.scad>
 use <s/6216s01.scad>
-function ldraw_lib__6216p02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6216p02(realsolid=false) = [
 // 0 Brick  2 x  4 x  2 with Curved Top with Eyes Pattern
 // 0 Name: 6216p02.dat
 // 0 Author: Damien Roux [Darats]
@@ -17,18 +18,18 @@ function ldraw_lib__6216p02() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\6216s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6216s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6216s01(realsolid)],
 // 
 // 1 16 0 20 -20 -20 0 0 0 0 -20 0 1 0 2-4chrd.dat
-  [1,16,0,20,-20,-20,0,0,0,0,-20,0,1,0, ldraw_lib__2_4chrd()],
+  [1,16,0,20,-20,-20,0,0,0,0,-20,0,1,0, ldraw_lib__2_4chrd(realsolid)],
 // 1 16 -20 44 -20 -20 0 0 0 0 -20 0 1 0 1-8chrd.dat
-  [1,16,-20,44,-20,-20,0,0,0,0,-20,0,1,0, ldraw_lib__1_8chrd()],
+  [1,16,-20,44,-20,-20,0,0,0,0,-20,0,1,0, ldraw_lib__1_8chrd(realsolid)],
 // 1 16 20 44 -20 20 0 0 0 0 -20 0 1 0 1-8chrd.dat
-  [1,16,20,44,-20,20,0,0,0,0,-20,0,1,0, ldraw_lib__1_8chrd()],
+  [1,16,20,44,-20,20,0,0,0,0,-20,0,1,0, ldraw_lib__1_8chrd(realsolid)],
 // 1 16 -20 44 -20 0 0 -20 -20 0 0 0 1 0 1-8chrd.dat
-  [1,16,-20,44,-20,0,0,-20,-20,0,0,0,1,0, ldraw_lib__1_8chrd()],
+  [1,16,-20,44,-20,0,0,-20,-20,0,0,0,1,0, ldraw_lib__1_8chrd(realsolid)],
 // 1 16 20 44 -20 0 0 20 -20 0 0 0 1 0 1-8chrd.dat
-  [1,16,20,44,-20,0,0,20,-20,0,0,0,1,0, ldraw_lib__1_8chrd()],
+  [1,16,20,44,-20,0,0,20,-20,0,0,0,1,0, ldraw_lib__1_8chrd(realsolid)],
 // 
 // 4 0 -28.04 41.543 -20 -28.336 41.522 -20 -28.559 41.705 -20 -28.607 41.849 -20
   [4,0,-28.04,41.543,-20,-28.336,41.522,-20,-28.559,41.705,-20,-28.607,41.849,-20],
@@ -1042,5 +1043,5 @@ function ldraw_lib__6216p02() = [
   [3,16,21.406,44.657,-20,40,48,-20,23.172,44.681,-20],
 ];
 module ldraw_lib__6216p02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6216p02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6216p02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6216p02(line=0.2);

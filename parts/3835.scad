@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-8sphe.scad>
 use <../p/rect.scad>
-function ldraw_lib__3835() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3835(realsolid=false) = [
 // 0 Minifig Tool Handaxe
 // 0 Name: 3835.dat
 // 0 Author: Chris Dee [cwdee]
@@ -23,12 +24,12 @@ function ldraw_lib__3835() = [
 // 
 // 
 // 1 16 0 0 0 4 0 0 0 32 0 0 0 4 4-4cyli.dat
-  [1,16,0,0,0,4,0,0,0,32,0,0,0,4, ldraw_lib__4_4cyli()],
+  [1,16,0,0,0,4,0,0,0,32,0,0,0,4, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 32 0 4 0 0 0 2 0 0 0 4 4-8sphe.dat
-  [1,16,0,32,0,4,0,0,0,2,0,0,0,4, ldraw_lib__4_8sphe()],
+  [1,16,0,32,0,4,0,0,0,2,0,0,0,4, ldraw_lib__4_8sphe(realsolid)],
 // 
 // 1 16 0 -20 7 1 0 0 0 0 3 0 -1 0 rect.dat
-  [1,16,0,-20,7,1,0,0,0,0,3,0,-1,0, ldraw_lib__rect()],
+  [1,16,0,-20,7,1,0,0,0,0,3,0,-1,0, ldraw_lib__rect(realsolid)],
 // 2 24 1 -23 7 2.5 -25.5 4
   [2,24,1,-23,7,2.5,-25.5,4],
 // 2 24 2.5 -25.5 4 2.5 -27.048 -9
@@ -90,7 +91,7 @@ function ldraw_lib__3835() = [
 // 4 16 2.5 -12.952 -9 -2.5 -12.952 -9 -1 -12 -17 1 -12 -17
   [4,16,2.5,-12.952,-9,-2.5,-12.952,-9,-1,-12,-17,1,-12,-17],
 // 1 16 0 -20 -17 1 0 0 0 0 8 0 1 0 rect.dat
-  [1,16,0,-20,-17,1,0,0,0,0,8,0,1,0, ldraw_lib__rect()],
+  [1,16,0,-20,-17,1,0,0,0,0,8,0,1,0, ldraw_lib__rect(realsolid)],
 // 
 // 2 24 4 0 0 3.6956 -2.6381 1.5308
   [2,24,4,0,0,3.6956,-2.6381,1.5308],
@@ -221,5 +222,5 @@ function ldraw_lib__3835() = [
 // 
 ];
 module ldraw_lib__3835(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3835(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3835(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3835(line=0.2);

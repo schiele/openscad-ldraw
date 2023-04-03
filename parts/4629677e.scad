@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__4629677e() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4629677e(realsolid=false) = [
 // 0 Sticker  1.9 x  1.9 with Stamps and Price List
 // 0 Name: 4629677e.dat
 // 0 Author: Howard Lande [HowardLande]
@@ -17,7 +18,7 @@ function ldraw_lib__4629677e() = [
 // 
 // 
 // 1 16 0 -0.25 0 19 0 0 0 0.25 0 0 0 19 box5-12.dat
-  [1,16,0,-0.25,0,19,0,0,0,0.25,0,0,0,19, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,19,0,0,0,0.25,0,0,0,19, ldraw_lib__box5_12(realsolid)],
 // 4 70 16 -0.25 -16 -16 -0.25 -16 -19 -0.25 -19 19 -0.25 -19
   [4,70,16,-0.25,-16,-16,-0.25,-16,-19,-0.25,-19,19,-0.25,-19],
 // 4 70 16 -0.25 -16 19 -0.25 -19 19 -0.25 19 16 -0.25 16
@@ -4456,5 +4457,5 @@ function ldraw_lib__4629677e() = [
   [3,16,13,-0.25,-7,-1,-0.25,-4.9,-1,-0.25,-7],
 ];
 module ldraw_lib__4629677e(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4629677e(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4629677e(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4629677e(line=0.2);

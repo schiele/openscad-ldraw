@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <49668.scad>
-function ldraw_lib__49673() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__49673(realsolid=false) = [
 // 0 =Plate  1 x  1 with Tooth
 // 0 Name: 49673.dat
 // 0 Author: Chris Dee [cwdee]
@@ -17,9 +18,9 @@ function ldraw_lib__49673() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 49668.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__49668()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__49668(realsolid)],
 // 0
 ];
 module ldraw_lib__49673(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__49673(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__49673(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__49673(line=0.2);

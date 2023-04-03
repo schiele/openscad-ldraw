@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3070bs01.scad>
-function ldraw_lib__3070bps4() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3070bps4(realsolid=false) = [
 // 0 Tile  1 x  1 with SW First Order Backpack Pattern
 // 0 Name: 3070bps4.dat
 // 0 Author: Bertrand Lequy [Berth]
@@ -15,7 +16,7 @@ function ldraw_lib__3070bps4() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3070bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3070bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3070bs01(realsolid)],
 // 
 // 3 71 -8.97 0 8.52 -7.77 0 7.02 -7.57 0 7.22
   [3,71,-8.97,0,8.52,-7.77,0,7.02,-7.57,0,7.22],
@@ -427,5 +428,5 @@ function ldraw_lib__3070bps4() = [
   [4,16,-10,0,-10,-1.72,0,-7.38067,-2.17,0,-7.43067,-6.49,0,-7.94],
 ];
 module ldraw_lib__3070bps4(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3070bps4(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3070bps4(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3070bps4(line=0.2);

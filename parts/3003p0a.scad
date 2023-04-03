@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3003s01.scad>
-function ldraw_lib__3003p0a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3003p0a(realsolid=false) = [
 // 0 Brick  2 x  2 with White Winged Lion Pattern
 // 0 Name: 3003p0a.dat
 // 0 Author: Merlijn Wissink [legolijntje]
@@ -15,7 +16,7 @@ function ldraw_lib__3003p0a() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3003s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3003s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3003s01(realsolid)],
 // 
 // 4 15 18.1 1.7 -20 -18.1 1.7 -20 -17 2.8 -20 17 2.8 -20
   [4,15,18.1,1.7,-20,-18.1,1.7,-20,-17,2.8,-20,17,2.8,-20],
@@ -483,5 +484,5 @@ function ldraw_lib__3003p0a() = [
   [4,16,-18.1,23.7,-20,-20,24,-20,20,24,-20,18.1,23.7,-20],
 ];
 module ldraw_lib__3003p0a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3003p0a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3003p0a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3003p0a(line=0.2);

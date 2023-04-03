@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__4603014d() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4603014d(realsolid=false) = [
 // 0 Sticker  5.9 x  1.9 with "Menu", Ice Cream, Cupcake and Strawberries
 // 0 Name: 4603014d.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -17,7 +18,7 @@ function ldraw_lib__4603014d() = [
 // 
 // 
 // 1 16 0 -0.25 0 19 0 0 0 0.25 0 0 0 59 box5-12.dat
-  [1,16,0,-0.25,0,19,0,0,0,0.25,0,0,0,59, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,19,0,0,0,0.25,0,0,0,59, ldraw_lib__box5_12(realsolid)],
 // 4 9 2 -0.25 51 3 -0.25 59 0.3 -0.25 59 0.2 -0.25 51
   [4,9,2,-0.25,51,3,-0.25,59,0.3,-0.25,59,0.2,-0.25,51],
 // 4 9 5.8 -0.25 51 8.1 -0.25 59 5 -0.25 59 3.5 -0.25 51
@@ -1850,5 +1851,5 @@ function ldraw_lib__4603014d() = [
   [3,14,-2,-0.25,1,-2.2,-0.25,1,0,-0.25,-0.7],
 ];
 module ldraw_lib__4603014d(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4603014d(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4603014d(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4603014d(line=0.2);

@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <rect.scad>
 use <rect2p.scad>
-function ldraw_lib__toothr() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__toothr(realsolid=false) = [
 // 0 Single Tooth for Technic Gear Racks
 // 0 Name: toothr.dat
 // 0 Author: Mark Kennedy [mkennedy]
@@ -22,16 +23,16 @@ function ldraw_lib__toothr() = [
 // 
 // 
 // 1 16 2 2.5 0 1 -1 0 -2.5 0 0 0 0 10 rect.dat
-  [1,16,2,2.5,0,1,-1,0,-2.5,0,0,0,0,10, ldraw_lib__rect()],
+  [1,16,2,2.5,0,1,-1,0,-2.5,0,0,0,0,10, ldraw_lib__rect(realsolid)],
 // 1 16 0 5 0 1 0 0 0 -1 0 0 0 10 rect2p.dat
-  [1,16,0,5,0,1,0,0,0,-1,0,0,0,10, ldraw_lib__rect2p()],
+  [1,16,0,5,0,1,0,0,0,-1,0,0,0,10, ldraw_lib__rect2p(realsolid)],
 // 1 16 -2 2.5 0 1 1 0 2.5 0 0 0 0 10 rect.dat
-  [1,16,-2,2.5,0,1,1,0,2.5,0,0,0,0,10, ldraw_lib__rect()],
+  [1,16,-2,2.5,0,1,1,0,2.5,0,0,0,0,10, ldraw_lib__rect(realsolid)],
 // 4 16 3 0 10 1 5 10 -1 5 10 -3 0 10
   [4,16,3,0,10,1,5,10,-1,5,10,-3,0,10],
 // 4 16 -3 0 -10 -1 5 -10 1 5 -10 3 0 -10
   [4,16,-3,0,-10,-1,5,-10,1,5,-10,3,0,-10],
 ];
 module ldraw_lib__toothr(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__toothr(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__toothr(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__toothr(line=0.2);

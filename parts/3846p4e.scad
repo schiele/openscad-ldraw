@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/3846s01.scad>
 use <s/973p4el.scad>
-function ldraw_lib__3846p4e() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3846p4e(realsolid=false) = [
 // 0 Minifig Shield Triangular with Lion Head, Blue & Yellow Pattern
 // 0 Name: 3846p4e.dat
 // 0 Author: Bernd Broich [bbroich]
@@ -23,13 +24,13 @@ function ldraw_lib__3846p4e() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3846s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3846s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3846s01(realsolid)],
 // 
 // 0 // Lion with Red in Crown
 // 1 0 0 5.75 -10 -0.8 0 0 0 0.8 0 0 0 1 s\973p4el.dat
-  [1,0,0,5.75,-10,-0.8,0,0,0,0.8,0,0,0,1, ldraw_lib__s__973p4el()],
+  [1,0,0,5.75,-10,-0.8,0,0,0,0.8,0,0,0,1, ldraw_lib__s__973p4el(realsolid)],
 // 1 0 0 5.75 -10 0.8 0 0 0 0.8 0 0 0 1 s\973p4el.dat
-  [1,0,0,5.75,-10,0.8,0,0,0,0.8,0,0,0,1, ldraw_lib__s__973p4el()],
+  [1,0,0,5.75,-10,0.8,0,0,0,0.8,0,0,0,1, ldraw_lib__s__973p4el(realsolid)],
 // 
 // 0 // Yellow Border
 // 4 14 -14.93 15.68 -10 -13.138 13.485 -10 -16.474 5.186 -10 -18.72 6.03 -10
@@ -209,5 +210,5 @@ function ldraw_lib__3846p4e() = [
   [4,14,8.7,13.85,-10,8.26,16.58,-10,9.841,18.127,-10,9.8,15.35,-10],
 ];
 module ldraw_lib__3846p4e(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3846p4e(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3846p4e(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3846p4e(line=0.2);

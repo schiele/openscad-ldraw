@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__3011pt2s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__3011pt2s01(realsolid=false) = [
 // 0 ~Duplo Classic "POLICE" Logo - Foreground
 // 0 Name: s\3011pt2s01.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -439,5 +440,5 @@ function ldraw_lib__s__3011pt2s01() = [
   [3,16,50.5,35,-40,49.75,36.25,-40,49,38.5,-40],
 ];
 module ldraw_lib__s__3011pt2s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__3011pt2s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__3011pt2s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__3011pt2s01(line=0.2);

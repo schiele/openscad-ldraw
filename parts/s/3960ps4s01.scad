@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__3960ps4s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__3960ps4s01(realsolid=false) = [
 // 0 ~Dish  4 x  4 Inverted with Dark Bluish Grey Octagonal Cockpit - 1/16 Pattern
 // 0 Name: s\3960ps4s01.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -151,5 +152,5 @@ function ldraw_lib__s__3960ps4s01() = [
   [5,24,9.65879,0,2.58809,21.24972,2,5.69384,21.81144,1.99996,2.87124,9.2388,0,3.82683],
 ];
 module ldraw_lib__s__3960ps4s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__3960ps4s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__3960ps4s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__3960ps4s01(line=0.2);

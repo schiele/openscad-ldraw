@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__53934s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__53934s02(realsolid=false) = [
 // 0 ~Rock  4 x  4 x  1.667 Bottom Dual Mould Upper Section
 // 0 Name: s\53934s02.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -455,5 +456,5 @@ function ldraw_lib__s__53934s02() = [
   [2,24,-15.996,-19.855,34.534,-16.5,-20.29,34.61],
 ];
 module ldraw_lib__s__53934s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__53934s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__53934s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__53934s02(line=0.2);

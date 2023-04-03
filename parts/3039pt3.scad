@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3039s01.scad>
-function ldraw_lib__3039pt3() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3039pt3(realsolid=false) = [
 // 0 Slope Brick 45  2 x  2 with White "3" Pattern
 // 0 Name: 3039pt3.dat
 // 0 Author: Victor Di Rienzo [tatubias]
@@ -15,7 +16,7 @@ function ldraw_lib__3039pt3() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3039s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3039s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3039s01(realsolid)],
 // 4 15 -2.5 8.56 -18.56 -2.4 10.54 -20.54 3.5 9.4 -19.4 5.2 9.05 -19.05
   [4,15,-2.5,8.56,-18.56,-2.4,10.54,-20.54,3.5,9.4,-19.4,5.2,9.05,-19.05],
 // 4 15 -0.3 8.49 -18.49 -2.5 8.56 -18.56 5.2 9.05 -19.05 6.2 8.7 -18.7
@@ -334,5 +335,5 @@ function ldraw_lib__3039pt3() = [
   [3,16,7.3,8.13,-18.13,8.8,11.53,-21.53,9.1,12.02,-22.02],
 ];
 module ldraw_lib__3039pt3(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3039pt3(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3039pt3(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3039pt3(line=0.2);

@@ -3,7 +3,8 @@ use <../p/4-4cyli.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4edge.scad>
 use <s/11091s01.scad>
-function ldraw_lib__11091() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__11091(realsolid=false) = [
 // 0 Animal Bird Wing  9L with Stylized Feathers
 // 0 Name: 11091.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -22,16 +23,16 @@ function ldraw_lib__11091() = [
 // 
 // 
 // 1 16 0 0 0 0 0 -4 0 -26 0 4 0 0 4-4cyli.dat
-  [1,16,0,0,0,0,0,-4,0,-26,0,4,0,0, ldraw_lib__4_4cyli()],
+  [1,16,0,0,0,0,0,-4,0,-26,0,4,0,0, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 0 0 0 0 -4 0 -1 0 4 0 0 4-4disc.dat
-  [1,16,0,0,0,0,0,-4,0,-1,0,4,0,0, ldraw_lib__4_4disc()],
+  [1,16,0,0,0,0,0,-4,0,-1,0,4,0,0, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 0 0 0 0 -4 0 -1 0 4 0 0 4-4edge.dat
-  [1,16,0,0,0,0,0,-4,0,-1,0,4,0,0, ldraw_lib__4_4edge()],
+  [1,16,0,0,0,0,0,-4,0,-1,0,4,0,0, ldraw_lib__4_4edge(realsolid)],
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\11091s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__11091s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__11091s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\11091s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__11091s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__11091s01(realsolid)],
 // 
 // 4 16 -1.875 -178.948 3.8951 1.875 -178.948 3.8951 1.875 -160.591 16.5861 -1.875 -160.591 16.5861
   [4,16,-1.875,-178.948,3.8951,1.875,-178.948,3.8951,1.875,-160.591,16.5861,-1.875,-160.591,16.5861],
@@ -954,5 +955,5 @@ function ldraw_lib__11091() = [
   [5,24,1.591,-63.38,22.7351,1.362,-62.971,24.8231,1.301,-63.56,25.3331,1.529,-62.867,23.3211],
 ];
 module ldraw_lib__11091(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__11091(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__11091(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__11091(line=0.2);

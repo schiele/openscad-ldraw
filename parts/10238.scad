@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <98138p07.scad>
-function ldraw_lib__10238() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__10238(realsolid=false) = [
 // 0 =Tile  1 x  1 Round with Eye Pattern
 // 0 Name: 10238.dat
 // 0 Author: Rolf Osterthun [Rolf]
@@ -17,8 +18,8 @@ function ldraw_lib__10238() = [
 // 0 // Alias of 98138p07
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 98138p07.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__98138p07()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__98138p07(realsolid)],
 ];
 module ldraw_lib__10238(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__10238(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__10238(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__10238(line=0.2);

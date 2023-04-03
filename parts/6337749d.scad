@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/48/4-4cylc3.scad>
 use <../p/48/4-4rin14.scad>
 use <../p/48/4-4ring9.scad>
-function ldraw_lib__6337749d() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6337749d(realsolid=false) = [
 // 0 Sticker  1.8 x  1.8 Round with Two Bees on Medium Lavender Background
 // 0 Name: 6337749d.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -19,12 +20,12 @@ function ldraw_lib__6337749d() = [
 // 
 // 
 // 1 16 0 0 0 17.5 0 0 0 -.25 0 0 0 17.5 48\4-4cylc3.dat
-  [1,16,0,0,0,17.5,0,0,0,-.25,0,0,0,17.5, ldraw_lib__48__4_4cylc3()],
+  [1,16,0,0,0,17.5,0,0,0,-.25,0,0,0,17.5, ldraw_lib__48__4_4cylc3(realsolid)],
 // 
 // 1 70 0 -.25 0 1.75 0 0 0 1 0 0 0 1.75 48\4-4ring9.dat
-  [1,70,0,-.25,0,1.75,0,0,0,1,0,0,0,1.75, ldraw_lib__48__4_4ring9()],
+  [1,70,0,-.25,0,1.75,0,0,0,1,0,0,0,1.75, ldraw_lib__48__4_4ring9(realsolid)],
 // 1 0 0 -.25 0 1.05 0 0 0 1 0 0 0 1.05 48\4-4rin14.dat
-  [1,0,0,-.25,0,1.05,0,0,0,1,0,0,0,1.05, ldraw_lib__48__4_4rin14()],
+  [1,0,0,-.25,0,1.05,0,0,0,1,0,0,0,1.05, ldraw_lib__48__4_4rin14(realsolid)],
 // 4 15 3.7455 -.25 -.8187 4.0004 -.25 -.1134 .7418 -.25 2.0797 .1063 -.25 1.3364
   [4,15,3.7455,-.25,-.8187,4.0004,-.25,-.1134,.7418,-.25,2.0797,.1063,-.25,1.3364],
 // 4 15 .7418 -.25 2.0797 4.0004 -.25 -.1134 4.2187 -.25 .7115 1.5001 -.25 2.6776
@@ -1171,5 +1172,5 @@ function ldraw_lib__6337749d() = [
   [3,30,8.9494,-.25,11.663,5.9884,-.25,10.7422,5.8803,-.25,9.8987],
 ];
 module ldraw_lib__6337749d(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6337749d(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6337749d(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6337749d(line=0.2);

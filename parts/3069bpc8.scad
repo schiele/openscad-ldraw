@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3069bs01.scad>
-function ldraw_lib__3069bpc8() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3069bpc8(realsolid=false) = [
 // 0 Tile  1 x  2 with Smartphone with Sound Level Pattern
 // 0 Name: 3069bpc8.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -15,7 +16,7 @@ function ldraw_lib__3069bpc8() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3069bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3069bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3069bs01(realsolid)],
 // 4 5 -15.5 0 -6 -16.3937 0 -5.484 -16.532 0 -6 -16.3937 0 -6.516
   [4,5,-15.5,0,-6,-16.3937,0,-5.484,-16.532,0,-6,-16.3937,0,-6.516],
 // 4 5 -15.5 0 -6 -16.3937 0 -6.516 -16.016 0 -6.8937 -15.5 0 -7.032
@@ -988,5 +989,5 @@ function ldraw_lib__3069bpc8() = [
   [3,0,19.3,0,7.9,17.4205,0,1.7416,17.554,0,1.3],
 ];
 module ldraw_lib__3069bpc8(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3069bpc8(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3069bpc8(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3069bpc8(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/57895s01.scad>
-function ldraw_lib__57895p02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__57895p02(realsolid=false) = [
 // 0 Glass for Window  1 x  4 x  6 with 'THE HIGHLANDER' and White Decorative Border Pattern
 // 0 Name: 57895p02.dat
 // 0 Author: Willy Tschager [Holly-Wood]
@@ -23,7 +24,7 @@ function ldraw_lib__57895p02() = [
 // 
 // 0 // Subfile
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\57895s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__57895s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__57895s01(realsolid)],
 // 
 // 0 BFC NOCLIP
   [0,"BFC","NOCLIP"],
@@ -794,5 +795,5 @@ function ldraw_lib__57895p02() = [
   [3,16,-20.075,37.31,-2,-20.416,37.009,-2,-20.075,43.156,-2],
 ];
 module ldraw_lib__57895p02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__57895p02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__57895p02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__57895p02(line=0.2);

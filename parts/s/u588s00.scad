@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <u588s01.scad>
 use <u588s03.scad>
-function ldraw_lib__s__u588s00() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__u588s00(realsolid=false) = [
 // 0 ~Figure Fabuland Elephant Head Half Blank Patterned Areas
 // 0 Name: s\u588s00.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -16,9 +17,9 @@ function ldraw_lib__s__u588s00() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\u588s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__u588s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__u588s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\u588s03.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__u588s03()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__u588s03(realsolid)],
 // 0 // eye area
 // 3 16 16.1 -25.1 -17.1 14.1 -25.9 -19.1 15.1 -23.6 -19
   [3,16,16.1,-25.1,-17.1,14.1,-25.9,-19.1,15.1,-23.6,-19],
@@ -188,5 +189,5 @@ function ldraw_lib__s__u588s00() = [
   [5,24,6.2,-23.4,-27.6,7.5,-25.6,-24.9,4.9,-25.5,-26.1,7.5,-23.4,-26.8],
 ];
 module ldraw_lib__s__u588s00(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__u588s00(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__u588s00(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__u588s00(line=0.2);

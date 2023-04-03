@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3010s01.scad>
-function ldraw_lib__3010pz9() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3010pz9(realsolid=false) = [
 // 0 Brick  1 x  4 with Superman Logo with Black Border Pattern
 // 0 Name: 3010pz9.dat
 // 0 Author: Damien Roux [Darats]
@@ -17,7 +18,7 @@ function ldraw_lib__3010pz9() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3010s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3010s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3010s01(realsolid)],
 // 4 0 -9.944 2.035 -10 -15.863 8.08 -10 -14.351 8.08 -10 -9.494 3.094 -10
   [4,0,-9.944,2.035,-10,-15.863,8.08,-10,-14.351,8.08,-10,-9.494,3.094,-10],
 // 4 0 -14.351 8.08 -10 -15.863 8.08 -10 0 22.856 -10 0 21.413 -10
@@ -278,5 +279,5 @@ function ldraw_lib__3010pz9() = [
   [4,16,40,0,-10,9.944,2.035,-10,15.863,8.08,-10,40,24,-10],
 ];
 module ldraw_lib__3010pz9(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3010pz9(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3010pz9(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3010pz9(line=0.2);

@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-8sphe.scad>
-function ldraw_lib__129() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__129(realsolid=false) = [
 // 0 ~Train Signal Semaphore Metal Bar
 // 0 Name: 129.dat
 // 0 Author: Niels Karsdorp [nielsk]
@@ -16,13 +17,13 @@ function ldraw_lib__129() = [
 // 
 // 
 // 1 16 0 124 0 2 0 0 0 2 0 0 0 2 4-8sphe.dat
-  [1,16,0,124,0,2,0,0,0,2,0,0,0,2, ldraw_lib__4_8sphe()],
+  [1,16,0,124,0,2,0,0,0,2,0,0,0,2, ldraw_lib__4_8sphe(realsolid)],
 // 1 16 0 124 0 2 0 0 0 -248 0 0 0 2 4-4cyli.dat
-  [1,16,0,124,0,2,0,0,0,-248,0,0,0,2, ldraw_lib__4_4cyli()],
+  [1,16,0,124,0,2,0,0,0,-248,0,0,0,2, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 -124 0 2 0 0 0 -2 0 0 0 2 4-8sphe.dat
-  [1,16,0,-124,0,2,0,0,0,-2,0,0,0,2, ldraw_lib__4_8sphe()],
+  [1,16,0,-124,0,2,0,0,0,-2,0,0,0,2, ldraw_lib__4_8sphe(realsolid)],
 // 0
 ];
 module ldraw_lib__129(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__129(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__129(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__129(line=0.2);

@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4ndis.scad>
 use <s/4346s01.scad>
-function ldraw_lib__4346p60() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4346p60(realsolid=false) = [
 // 0 Container Box  2 x  2 x  2 Door with Slot with Controls Pattern
 // 0 Name: 4346p60.dat
 // 0 Author: Damien Roux [Darats]
@@ -19,23 +20,23 @@ function ldraw_lib__4346p60() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4346s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4346s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4346s01(realsolid)],
 // 1 14 -12.4 27 -30 -2 0 0 0 0 -2 0 1 0 4-4disc.dat
-  [1,14,-12.4,27,-30,-2,0,0,0,0,-2,0,1,0, ldraw_lib__4_4disc()],
+  [1,14,-12.4,27,-30,-2,0,0,0,0,-2,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 14 12.5 25.7 -30 -3 0 0 0 0 -3 0 1 0 4-4disc.dat
-  [1,14,12.5,25.7,-30,-3,0,0,0,0,-3,0,1,0, ldraw_lib__4_4disc()],
+  [1,14,12.5,25.7,-30,-3,0,0,0,0,-3,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 15 -12.4 22.1 -30 -2 0 0 0 0 -2 0 1 0 4-4disc.dat
-  [1,15,-12.4,22.1,-30,-2,0,0,0,0,-2,0,1,0, ldraw_lib__4_4disc()],
+  [1,15,-12.4,22.1,-30,-2,0,0,0,0,-2,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 15 12.5 18.3 -30 -3 0 0 0 0 -3 0 1 0 4-4disc.dat
-  [1,15,12.5,18.3,-30,-3,0,0,0,0,-3,0,1,0, ldraw_lib__4_4disc()],
+  [1,15,12.5,18.3,-30,-3,0,0,0,0,-3,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 16 -12.4 22.1 -30 -2 0 0 0 0 2 0 1 0 4-4ndis.dat
-  [1,16,-12.4,22.1,-30,-2,0,0,0,0,2,0,1,0, ldraw_lib__4_4ndis()],
+  [1,16,-12.4,22.1,-30,-2,0,0,0,0,2,0,1,0, ldraw_lib__4_4ndis(realsolid)],
 // 1 16 -12.4 27 -30 -2 0 0 0 0 2 0 1 0 4-4ndis.dat
-  [1,16,-12.4,27,-30,-2,0,0,0,0,2,0,1,0, ldraw_lib__4_4ndis()],
+  [1,16,-12.4,27,-30,-2,0,0,0,0,2,0,1,0, ldraw_lib__4_4ndis(realsolid)],
 // 1 16 12.5 18.3 -30 -3 0 0 0 0 3 0 1 0 4-4ndis.dat
-  [1,16,12.5,18.3,-30,-3,0,0,0,0,3,0,1,0, ldraw_lib__4_4ndis()],
+  [1,16,12.5,18.3,-30,-3,0,0,0,0,3,0,1,0, ldraw_lib__4_4ndis(realsolid)],
 // 1 16 12.5 25.7 -30 -3 0 0 0 0 3 0 1 0 4-4ndis.dat
-  [1,16,12.5,25.7,-30,-3,0,0,0,0,3,0,1,0, ldraw_lib__4_4ndis()],
+  [1,16,12.5,25.7,-30,-3,0,0,0,0,3,0,1,0, ldraw_lib__4_4ndis(realsolid)],
 // 3 4 -15 3 -30 -15 12.3 -30 -11 7.65 -30
   [3,4,-15,3,-30,-15,12.3,-30,-11,7.65,-30],
 // 4 4 -10.4 19.3 -30 -10.4 15.8 -30 -14.4 15.8 -30 -14.4 19.3 -30
@@ -506,5 +507,5 @@ function ldraw_lib__4346p60() = [
   [4,16,20,44,-30,20,40,-30,16,40,-30,16,44,-30],
 ];
 module ldraw_lib__4346p60(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4346p60(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4346p60(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4346p60(line=0.2);

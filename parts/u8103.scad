@@ -7,7 +7,8 @@ use <../p/box4.scad>
 use <../p/box4o8a.scad>
 use <../p/finger1.scad>
 use <../p/stud26.scad>
-function ldraw_lib__u8103() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__u8103(realsolid=false) = [
 // 0 Window  1 x  6 x  3 Minitalia
 // 0 Name: u8103.dat
 // 0 Author: Enzo Silvestri [ienzisolves]
@@ -25,34 +26,34 @@ function ldraw_lib__u8103() = [
 // 
 // 0 // Studs without LEGO logo
 // 1 16 -50 0 0 1 0 0 0 1 0 0 0 1 stud26.dat
-  [1,16,-50,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud26()],
+  [1,16,-50,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud26(realsolid)],
 // 1 16 -30 0 0 1 0 0 0 1 0 0 0 1 stud26.dat
-  [1,16,-30,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud26()],
+  [1,16,-30,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud26(realsolid)],
 // 1 16 -10 0 0 1 0 0 0 1 0 0 0 1 stud26.dat
-  [1,16,-10,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud26()],
+  [1,16,-10,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud26(realsolid)],
 // 1 16 10 0 0 1 0 0 0 1 0 0 0 1 stud26.dat
-  [1,16,10,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud26()],
+  [1,16,10,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud26(realsolid)],
 // 1 16 30 0 0 1 0 0 0 1 0 0 0 1 stud26.dat
-  [1,16,30,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud26()],
+  [1,16,30,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud26(realsolid)],
 // 1 16 50 0 0 1 0 0 0 1 0 0 0 1 stud26.dat
-  [1,16,50,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud26()],
+  [1,16,50,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud26(realsolid)],
 // 
 // 1 16 40 72 -2 1 0 0 0 1 0 0 0 1 finger1.dat
-  [1,16,40,72,-2,1,0,0,0,1,0,0,0,1, ldraw_lib__finger1()],
+  [1,16,40,72,-2,1,0,0,0,1,0,0,0,1, ldraw_lib__finger1(realsolid)],
 // 1 16 20 72 -2 1 0 0 0 1 0 0 0 1 finger1.dat
-  [1,16,20,72,-2,1,0,0,0,1,0,0,0,1, ldraw_lib__finger1()],
+  [1,16,20,72,-2,1,0,0,0,1,0,0,0,1, ldraw_lib__finger1(realsolid)],
 // 1 16 0 72 -2 1 0 0 0 1 0 0 0 1 finger1.dat
-  [1,16,0,72,-2,1,0,0,0,1,0,0,0,1, ldraw_lib__finger1()],
+  [1,16,0,72,-2,1,0,0,0,1,0,0,0,1, ldraw_lib__finger1(realsolid)],
 // 1 16 -20 72 -2 1 0 0 0 1 0 0 0 1 finger1.dat
-  [1,16,-20,72,-2,1,0,0,0,1,0,0,0,1, ldraw_lib__finger1()],
+  [1,16,-20,72,-2,1,0,0,0,1,0,0,0,1, ldraw_lib__finger1(realsolid)],
 // 1 16 -40 72 -2 1 0 0 0 1 0 0 0 1 finger1.dat
-  [1,16,-40,72,-2,1,0,0,0,1,0,0,0,1, ldraw_lib__finger1()],
+  [1,16,-40,72,-2,1,0,0,0,1,0,0,0,1, ldraw_lib__finger1(realsolid)],
 // 
 // 0 // base superiore
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 72 1.5 0 0 56 0 -70 0 8.5 0 0 box3u8p.dat
-  [1,16,0,72,1.5,0,0,56,0,-70,0,8.5,0,0, ldraw_lib__box3u8p()],
+  [1,16,0,72,1.5,0,0,56,0,-70,0,8.5,0,0, ldraw_lib__box3u8p(realsolid)],
 // 4 16 -60 0 -10 60 0 -10 60 0 10 -60 0 10
   [4,16,-60,0,-10,60,0,-10,60,0,10,-60,0,10],
 // 4 16 60 2 -10 -60 2 -10 -60 2 -8 60 2 -8
@@ -67,7 +68,7 @@ function ldraw_lib__u8103() = [
   [4,16,60,0,10,56,2,10,-56,2,10,-60,0,10],
 // 0 // cornice
 // 1 16 0 32 -10 0 0 59 29 0 0 0 2 0 box4.dat
-  [1,16,0,32,-10,0,0,59,29,0,0,0,2,0, ldraw_lib__box4()],
+  [1,16,0,32,-10,0,0,59,29,0,0,0,2,0, ldraw_lib__box4(realsolid)],
 // 4 16 60 2 -8 -60 2 -8 -59 3 -8 59 3 -8
   [4,16,60,2,-8,-60,2,-8,-59,3,-8,59,3,-8],
 // 2 24 -59 3 -8 59 3 -8
@@ -85,27 +86,27 @@ function ldraw_lib__u8103() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 10 69 -7.5 6 0 0 0 -3 0 0 0 -0.5 box2-11.dat
-  [1,16,10,69,-7.5,6,0,0,0,-3,0,0,0,-0.5, ldraw_lib__box2_11()],
+  [1,16,10,69,-7.5,6,0,0,0,-3,0,0,0,-0.5, ldraw_lib__box2_11(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 30 69 -7.5 6 0 0 0 -3 0 0 0 -0.5 box2-11.dat
-  [1,16,30,69,-7.5,6,0,0,0,-3,0,0,0,-0.5, ldraw_lib__box2_11()],
+  [1,16,30,69,-7.5,6,0,0,0,-3,0,0,0,-0.5, ldraw_lib__box2_11(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 50 69 -7.5 6 0 0 0 -3 0 0 0 -0.5 box2-11.dat
-  [1,16,50,69,-7.5,6,0,0,0,-3,0,0,0,-0.5, ldraw_lib__box2_11()],
+  [1,16,50,69,-7.5,6,0,0,0,-3,0,0,0,-0.5, ldraw_lib__box2_11(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -10 69 -7.5 6 0 0 0 -3 0 0 0 -0.5 box2-11.dat
-  [1,16,-10,69,-7.5,6,0,0,0,-3,0,0,0,-0.5, ldraw_lib__box2_11()],
+  [1,16,-10,69,-7.5,6,0,0,0,-3,0,0,0,-0.5, ldraw_lib__box2_11(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -30 69 -7.5 6 0 0 0 -3 0 0 0 -0.5 box2-11.dat
-  [1,16,-30,69,-7.5,6,0,0,0,-3,0,0,0,-0.5, ldraw_lib__box2_11()],
+  [1,16,-30,69,-7.5,6,0,0,0,-3,0,0,0,-0.5, ldraw_lib__box2_11(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -50 69 -7.5 6 0 0 0 -3 0 0 0 -0.5 box2-11.dat
-  [1,16,-50,69,-7.5,6,0,0,0,-3,0,0,0,-0.5, ldraw_lib__box2_11()],
+  [1,16,-50,69,-7.5,6,0,0,0,-3,0,0,0,-0.5, ldraw_lib__box2_11(realsolid)],
 // 0 // 2 pezzi vert
 // 4 16 -56 72 -7 -56 66 -7 -56 66 -8 -56 72 -8
   [4,16,-56,72,-7,-56,66,-7,-56,66,-8,-56,72,-8],
@@ -170,39 +171,39 @@ function ldraw_lib__u8103() = [
 // 
 // 0 // quadrati della griglia a destra (oriz)
 // 1 16 22 42 -8.5 0 15 0 2 0 0 0 0 1.5 box4o8a.dat
-  [1,16,22,42,-8.5,0,15,0,2,0,0,0,0,1.5, ldraw_lib__box4o8a()],
+  [1,16,22,42,-8.5,0,15,0,2,0,0,0,0,1.5, ldraw_lib__box4o8a(realsolid)],
 // 1 16 22 23 -8.5 0 15 0 2 0 0 0 0 1.5 box4o8a.dat
-  [1,16,22,23,-8.5,0,15,0,2,0,0,0,0,1.5, ldraw_lib__box4o8a()],
+  [1,16,22,23,-8.5,0,15,0,2,0,0,0,0,1.5, ldraw_lib__box4o8a(realsolid)],
 // 1 16 41 42 -8.5 0 15 0 2 0 0 0 0 1.5 box4o8a.dat
-  [1,16,41,42,-8.5,0,15,0,2,0,0,0,0,1.5, ldraw_lib__box4o8a()],
+  [1,16,41,42,-8.5,0,15,0,2,0,0,0,0,1.5, ldraw_lib__box4o8a(realsolid)],
 // 1 16 41 23 -8.5 0 15 0 2 0 0 0 0 1.5 box4o8a.dat
-  [1,16,41,23,-8.5,0,15,0,2,0,0,0,0,1.5, ldraw_lib__box4o8a()],
+  [1,16,41,23,-8.5,0,15,0,2,0,0,0,0,1.5, ldraw_lib__box4o8a(realsolid)],
 // 
 // 0 // quadrati della griglia a sinistra (oriz)
 // 1 16 -37 42 -8.5 0 15 0 2 0 0 0 0 1.5 box4o8a.dat
-  [1,16,-37,42,-8.5,0,15,0,2,0,0,0,0,1.5, ldraw_lib__box4o8a()],
+  [1,16,-37,42,-8.5,0,15,0,2,0,0,0,0,1.5, ldraw_lib__box4o8a(realsolid)],
 // 1 16 -37 23 -8.5 0 15 0 2 0 0 0 0 1.5 box4o8a.dat
-  [1,16,-37,23,-8.5,0,15,0,2,0,0,0,0,1.5, ldraw_lib__box4o8a()],
+  [1,16,-37,23,-8.5,0,15,0,2,0,0,0,0,1.5, ldraw_lib__box4o8a(realsolid)],
 // 1 16 -56 42 -8.5 0 15 0 2 0 0 0 0 1.5 box4o8a.dat
-  [1,16,-56,42,-8.5,0,15,0,2,0,0,0,0,1.5, ldraw_lib__box4o8a()],
+  [1,16,-56,42,-8.5,0,15,0,2,0,0,0,0,1.5, ldraw_lib__box4o8a(realsolid)],
 // 1 16 -56 23 -8.5 0 15 0 2 0 0 0 0 1.5 box4o8a.dat
-  [1,16,-56,23,-8.5,0,15,0,2,0,0,0,0,1.5, ldraw_lib__box4o8a()],
+  [1,16,-56,23,-8.5,0,15,0,2,0,0,0,0,1.5, ldraw_lib__box4o8a(realsolid)],
 // 
 // 0 // quadrati della griglia verticali destri
 // 1 16 39 6 -8.5 0 0 2 0 15 0 1.5 0 0 box4o8a.dat
-  [1,16,39,6,-8.5,0,0,2,0,15,0,1.5,0,0, ldraw_lib__box4o8a()],
+  [1,16,39,6,-8.5,0,0,2,0,15,0,1.5,0,0, ldraw_lib__box4o8a(realsolid)],
 // 1 16 39 25 -8.5 0 0 2 0 15 0 1.5 0 0 box4o8a.dat
-  [1,16,39,25,-8.5,0,0,2,0,15,0,1.5,0,0, ldraw_lib__box4o8a()],
+  [1,16,39,25,-8.5,0,0,2,0,15,0,1.5,0,0, ldraw_lib__box4o8a(realsolid)],
 // 1 16 39 44 -8.5 0 0 2 0 15 0 1.5 0 0 box4o8a.dat
-  [1,16,39,44,-8.5,0,0,2,0,15,0,1.5,0,0, ldraw_lib__box4o8a()],
+  [1,16,39,44,-8.5,0,0,2,0,15,0,1.5,0,0, ldraw_lib__box4o8a(realsolid)],
 // 
 // 0 // quadrati della griglia verticali sinistri
 // 1 16 -39 6 -8.5 0 0 2 0 15 0 1.5 0 0 box4o8a.dat
-  [1,16,-39,6,-8.5,0,0,2,0,15,0,1.5,0,0, ldraw_lib__box4o8a()],
+  [1,16,-39,6,-8.5,0,0,2,0,15,0,1.5,0,0, ldraw_lib__box4o8a(realsolid)],
 // 1 16 -39 25 -8.5 0 0 2 0 15 0 1.5 0 0 box4o8a.dat
-  [1,16,-39,25,-8.5,0,0,2,0,15,0,1.5,0,0, ldraw_lib__box4o8a()],
+  [1,16,-39,25,-8.5,0,0,2,0,15,0,1.5,0,0, ldraw_lib__box4o8a(realsolid)],
 // 1 16 -39 44 -8.5 0 0 2 0 15 0 1.5 0 0 box4o8a.dat
-  [1,16,-39,44,-8.5,0,0,2,0,15,0,1.5,0,0, ldraw_lib__box4o8a()],
+  [1,16,-39,44,-8.5,0,0,2,0,15,0,1.5,0,0, ldraw_lib__box4o8a(realsolid)],
 // 
 // 0 // verticali della griglia
 // 4 16 22 25 -10 22 40 -10 22 40 -7 22 25 -7
@@ -214,43 +215,43 @@ function ldraw_lib__u8103() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 32.5 -10 0 0 18 26.5 0 0 0 3 0 box4.dat
-  [1,16,0,32.5,-10,0,0,18,26.5,0,0,0,3,0, ldraw_lib__box4()],
+  [1,16,0,32.5,-10,0,0,18,26.5,0,0,0,3,0, ldraw_lib__box4(realsolid)],
 // 
 // 0 // box laterali
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 48.5 13.5 -8.5 0 0 7.5 0 -7.5 0 1.5 0 0 box2-9p.dat
-  [1,16,48.5,13.5,-8.5,0,0,7.5,0,-7.5,0,1.5,0,0, ldraw_lib__box2_9p()],
+  [1,16,48.5,13.5,-8.5,0,0,7.5,0,-7.5,0,1.5,0,0, ldraw_lib__box2_9p(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -48.5 13.5 -8.5 0 0 -7.5 0 -7.5 0 1.5 0 0 box2-9p.dat
-  [1,16,-48.5,13.5,-8.5,0,0,-7.5,0,-7.5,0,1.5,0,0, ldraw_lib__box2_9p()],
+  [1,16,-48.5,13.5,-8.5,0,0,-7.5,0,-7.5,0,1.5,0,0, ldraw_lib__box2_9p(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -48.5 51.5 -8.5 0 -7.5 0 0 0 7.5 1.5 0 0 box2-9p.dat
-  [1,16,-48.5,51.5,-8.5,0,-7.5,0,0,0,7.5,1.5,0,0, ldraw_lib__box2_9p()],
+  [1,16,-48.5,51.5,-8.5,0,-7.5,0,0,0,7.5,1.5,0,0, ldraw_lib__box2_9p(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 48.5 51.5 -8.5 0 0 7.5 0 7.5 0 1.5 0 0 box2-9p.dat
-  [1,16,48.5,51.5,-8.5,0,0,7.5,0,7.5,0,1.5,0,0, ldraw_lib__box2_9p()],
+  [1,16,48.5,51.5,-8.5,0,0,7.5,0,7.5,0,1.5,0,0, ldraw_lib__box2_9p(realsolid)],
 // 
 // 0 // box interni
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -29.5 13.5 -8.5 0 0 7.5 0 -7.5 0 1.5 0 0 box2-5.dat
-  [1,16,-29.5,13.5,-8.5,0,0,7.5,0,-7.5,0,1.5,0,0, ldraw_lib__box2_5()],
+  [1,16,-29.5,13.5,-8.5,0,0,7.5,0,-7.5,0,1.5,0,0, ldraw_lib__box2_5(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 29.5 13.5 -8.5 0 0 -7.5 0 -7.5 0 1.5 0 0 box2-5.dat
-  [1,16,29.5,13.5,-8.5,0,0,-7.5,0,-7.5,0,1.5,0,0, ldraw_lib__box2_5()],
+  [1,16,29.5,13.5,-8.5,0,0,-7.5,0,-7.5,0,1.5,0,0, ldraw_lib__box2_5(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 29.5 51.5 -8.5 0 -7.5 0 0 0 7.5 1.5 0 0 box2-5.dat
-  [1,16,29.5,51.5,-8.5,0,-7.5,0,0,0,7.5,1.5,0,0, ldraw_lib__box2_5()],
+  [1,16,29.5,51.5,-8.5,0,-7.5,0,0,0,7.5,1.5,0,0, ldraw_lib__box2_5(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -29.5 51.5 -8.5 0 0 7.5 0 7.5 0 1.5 0 0 box2-5.dat
-  [1,16,-29.5,51.5,-8.5,0,0,7.5,0,7.5,0,1.5,0,0, ldraw_lib__box2_5()],
+  [1,16,-29.5,51.5,-8.5,0,0,7.5,0,7.5,0,1.5,0,0, ldraw_lib__box2_5(realsolid)],
 // 
 // 0 // quadrati della griglia tappafori (fronte)
 // 4 16 41 21 -10 37 21 -10 37 25 -10 41 25 -10
@@ -659,5 +660,5 @@ function ldraw_lib__u8103() = [
   [2,24,-41,6,-10,-56,6,-10],
 ];
 module ldraw_lib__u8103(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__u8103(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__u8103(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__u8103(line=0.2);

@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__92252s03() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__92252s03(realsolid=false) = [
 // 0 ~Figure Friends Calf
 // 0 Name: s\92252s03.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -467,5 +468,5 @@ function ldraw_lib__s__92252s03() = [
   [5,24,7.31,-12.12,11.96,9.03,-11.74,11.56,8.71,-16.81,10.76,7.11,-10.6,12.29],
 ];
 module ldraw_lib__s__92252s03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__92252s03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__92252s03(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__92252s03(line=0.2);

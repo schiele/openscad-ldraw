@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/48/4-4cylc2.scad>
-function ldraw_lib__4614425a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4614425a(realsolid=false) = [
 // 0 Sticker  1.7 x  1.7 Round with Chrome Silver "VW"
 // 0 Name: 4614425a.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -17,7 +18,7 @@ function ldraw_lib__4614425a() = [
 // 
 // 
 // 1 16 0 0 0 18 0 0 0 -0.25 0 0 0 18 48\4-4cylc2.dat
-  [1,16,0,0,0,18,0,0,0,-0.25,0,0,0,18, ldraw_lib__48__4_4cylc2()],
+  [1,16,0,0,0,18,0,0,0,-0.25,0,0,0,18, ldraw_lib__48__4_4cylc2(realsolid)],
 // 
 // 4 383 -17.845 -0.25 2.349 -18 -0.25 0 -15.821 -0.25 0 -15.686 -0.25 2.065
   [4,383,-17.845,-0.25,2.349,-18,-0.25,0,-15.821,-0.25,0,-15.686,-0.25,2.065],
@@ -281,5 +282,5 @@ function ldraw_lib__4614425a() = [
   [3,15,-5.645,-0.25,-7.944,-2.83,-0.25,-1.6,-13.06,-0.25,8.317],
 ];
 module ldraw_lib__4614425a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4614425a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4614425a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4614425a(line=0.2);

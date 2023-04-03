@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/4864s01.scad>
 use <../p/stud.scad>
-function ldraw_lib__4864ap07() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4864ap07(realsolid=false) = [
 // 0 Panel  1 x  2 x  2 with Blue Globe, Yellow Box and Curved Arrows Pattern
 // 0 Name: 4864ap07.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -21,11 +22,11 @@ function ldraw_lib__4864ap07() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4864s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4864s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4864s01(realsolid)],
 // 1 16 10 0 0 1 0 0 0 1 0 0 0 1 stud.dat
-  [1,16,10,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud()],
+  [1,16,10,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud(realsolid)],
 // 1 16 -10 0 0 1 0 0 0 1 0 0 0 1 stud.dat
-  [1,16,-10,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud()],
+  [1,16,-10,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud(realsolid)],
 // 
 // 4 14 5.45 19.18 10 5.77 19.34 10 5.77 19.5 10 -0.15 21.42 10
   [4,14,5.45,19.18,10,5.77,19.34,10,5.77,19.5,10,-0.15,21.42,10],
@@ -1559,5 +1560,5 @@ function ldraw_lib__4864ap07() = [
   [3,16,-20,0,10,-12.43,17.13,10,-13.4,17.43,10],
 ];
 module ldraw_lib__4864ap07(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4864ap07(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4864ap07(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4864ap07(line=0.2);

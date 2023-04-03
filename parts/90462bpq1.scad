@@ -7,7 +7,8 @@ use <s/90462bs01.scad>
 use <s/90462s02pq1.scad>
 use <../p/stud2a.scad>
 use <../p/stud4.scad>
-function ldraw_lib__90462bpq1() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__90462bpq1(realsolid=false) = [
 // 0 Minifig Headdress Nemes with Darkblue Stripes Pattern
 // 0 Name: 90462bpq1.dat
 // 0 Author: Christian Neumann [Wesley]
@@ -29,28 +30,28 @@ function ldraw_lib__90462bpq1() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\90462bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__90462bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__90462bs01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\90462bs01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__90462bs01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__90462bs01(realsolid)],
 // 1 16 0 -2 0 1 0 0 0 1 0 0 0 1 s\90462s02pq1.dat
-  [1,16,0,-2,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__90462s02pq1()],
+  [1,16,0,-2,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__90462s02pq1(realsolid)],
 // 1 16 0 -2 0 -1 0 0 0 1 0 0 0 1 s\90462s02pq1.dat
-  [1,16,0,-2,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__90462s02pq1()],
+  [1,16,0,-2,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__90462s02pq1(realsolid)],
 // 1 16 0 -4 0 -6 0 0 0 -1 0 0 0 6 4-4disc.dat
-  [1,16,0,-4,0,-6,0,0,0,-1,0,0,0,6, ldraw_lib__4_4disc()],
+  [1,16,0,-4,0,-6,0,0,0,-1,0,0,0,6, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 -4 0 1 0 0 0 -1 0 0 0 1 stud4.dat
-  [1,16,0,-4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4()],
+  [1,16,0,-4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4(realsolid)],
 // 
 // 1 16 0 -5.672 -15.841 4 0 0 0 0 4 0 1 0 4-4disc.dat
-  [1,16,0,-5.672,-15.841,4,0,0,0,0,4,0,1,0, ldraw_lib__4_4disc()],
+  [1,16,0,-5.672,-15.841,4,0,0,0,0,4,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 -5.672 -15.841 4 0 0 0 0 4 0 1 0 4-4edge.dat
-  [1,16,0,-5.672,-15.841,4,0,0,0,0,4,0,1,0, ldraw_lib__4_4edge()],
+  [1,16,0,-5.672,-15.841,4,0,0,0,0,4,0,1,0, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 -5.672 -15.841 2 0 0 0 0 -2 0 -1 0 2-4ring2.dat
-  [1,16,0,-5.672,-15.841,2,0,0,0,0,-2,0,-1,0, ldraw_lib__2_4ring2()],
+  [1,16,0,-5.672,-15.841,2,0,0,0,0,-2,0,-1,0, ldraw_lib__2_4ring2(realsolid)],
 // 1 16 0 -5.672 -15.841 6 0 0 0 0 -6 0 -1 0 2-4edge.dat
-  [1,16,0,-5.672,-15.841,6,0,0,0,0,-6,0,-1,0, ldraw_lib__2_4edge()],
+  [1,16,0,-5.672,-15.841,6,0,0,0,0,-6,0,-1,0, ldraw_lib__2_4edge(realsolid)],
 // 1 16 0 -5.672 -15.841 1 0 0 0 0 -1 0 1 0 stud2a.dat
-  [1,16,0,-5.672,-15.841,1,0,0,0,0,-1,0,1,0, ldraw_lib__stud2a()],
+  [1,16,0,-5.672,-15.841,1,0,0,0,0,-1,0,1,0, ldraw_lib__stud2a(realsolid)],
 // 5 24 0 4.067 -13.217 0 0 -13 4.975 0 -12.011 -4.975 0 -12.011
   [5,24,0,4.067,-13.217,0,0,-13,4.975,0,-12.011,-4.975,0,-12.011],
 // 5 24 0 0.53 17.444 0 -0.118 17.417 0.752 0.565 17.638 -0.752 0.565 17.638
@@ -163,5 +164,5 @@ function ldraw_lib__90462bpq1() = [
   [5,24,0,0.328,-15.841,-2.296,-0.129,-15.841,-3.114,-0.353,-15.056,0,0.328,-19.841],
 ];
 module ldraw_lib__90462bpq1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__90462bpq1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__90462bpq1(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__90462bpq1(line=0.2);

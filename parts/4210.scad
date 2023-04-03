@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <4208.scad>
-function ldraw_lib__4210() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4210(realsolid=false) = [
 // 0 ~Moved to 4208
 // 0 Name: 4210.dat
 // 0 Author: [PTadmin]
@@ -16,8 +17,8 @@ function ldraw_lib__4210() = [
 // 
 // 0 // Hose Reel 2 x 4 x 2 Drum
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 4208.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4208()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4208(realsolid)],
 ];
 module ldraw_lib__4210(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4210(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4210(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4210(line=0.2);

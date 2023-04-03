@@ -3,7 +3,8 @@ use <../p/1-4cyli.scad>
 use <s/973p94s01.scad>
 use <s/973p94s02.scad>
 use <s/973s01.scad>
-function ldraw_lib__973p94() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__973p94(realsolid=false) = [
 // 0 Minifig Torso with Sweater V-Neck over Light Blue Shirt Pattern
 // 0 Name: 973p94.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -20,22 +21,22 @@ function ldraw_lib__973p94() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01(realsolid)],
 // 1 15 0 -4 0 4.243 0 -4.243 0 -8 0 -4.243 0 -4.243 1-4cyli.dat
-  [1,15,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli()],
+  [1,15,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli(realsolid)],
 // 
 // 1 16 0 0 -10 1 0 0 0 1 0 0 0 1 s\973p94s01.dat
-  [1,16,0,0,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973p94s01()],
+  [1,16,0,0,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973p94s01(realsolid)],
 // 1 16 0 0 -10 -1 0 0 0 1 0 0 0 1 s\973p94s01.dat
-  [1,16,0,0,-10,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__973p94s01()],
+  [1,16,0,0,-10,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__973p94s01(realsolid)],
 // 1 16 0 0 10 -1 0 0 0 1 0 0 0 -1 s\973p94s01.dat
-  [1,16,0,0,10,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__973p94s01()],
+  [1,16,0,0,10,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__973p94s01(realsolid)],
 // 1 16 0 0 10 1 0 0 0 1 0 0 0 -1 s\973p94s01.dat
-  [1,16,0,0,10,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__973p94s01()],
+  [1,16,0,0,10,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__973p94s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 -1 s\973p94s02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__973p94s02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__973p94s02(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 -1 s\973p94s02.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__973p94s02()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__973p94s02(realsolid)],
 // 
 // 4 0 -8.9 1.75 -10 -9 0.8 -10 -9.95 0.8 -10 -9.55 2.05 -10
   [4,0,-8.9,1.75,-10,-9,0.8,-10,-9.95,0.8,-10,-9.55,2.05,-10],
@@ -633,5 +634,5 @@ function ldraw_lib__973p94() = [
   [3,0,3.85,8.25,-10,2.82907,9.0157,-10,3.45,9.35,-10],
 ];
 module ldraw_lib__973p94(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__973p94(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__973p94(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__973p94(line=0.2);

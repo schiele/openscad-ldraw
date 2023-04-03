@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4disc.scad>
 use <s/42443s01.scad>
 use <../p/stud4.scad>
-function ldraw_lib__42443() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__42443(realsolid=false) = [
 // 0 Minifig Headdress Werewolf
 // 0 Name: 42443.dat
 // 0 Author: Stan Isachenko [angmarec]
@@ -25,13 +26,13 @@ function ldraw_lib__42443() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\42443s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__42443s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__42443s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\42443s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__42443s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__42443s01(realsolid)],
 // 1 16 0 -4 0 1 0 0 0 -1 0 0 0 1 stud4.dat
-  [1,16,0,-4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4()],
+  [1,16,0,-4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4(realsolid)],
 // 1 16 0 -4 0 6 0 0 0 -1 0 0 0 6 4-4disc.dat
-  [1,16,0,-4,0,6,0,0,0,-1,0,0,0,6, ldraw_lib__4_4disc()],
+  [1,16,0,-4,0,6,0,0,0,-1,0,0,0,6, ldraw_lib__4_4disc(realsolid)],
 // 0 // Added lines/Condlines
 // 2 24 0 -5.267 -18.298 0 -2.603 -19.313
   [2,24,0,-5.267,-18.298,0,-2.603,-19.313],
@@ -117,5 +118,5 @@ function ldraw_lib__42443() = [
   [5,24,0,-7.547,-15.165,0,-6.855,-16.908,2.739,-7.166,-17.371,-2.739,-7.166,-17.371],
 ];
 module ldraw_lib__42443(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__42443(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__42443(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__42443(line=0.2);

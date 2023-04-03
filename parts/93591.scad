@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/48/3-16chrd.scad>
 use <s/93591s01.scad>
-function ldraw_lib__93591() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__93591(realsolid=false) = [
 // 0 Wedge  6 x  4 x  1.333 with  4 x  4 Base
 // 0 Name: 93591.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -19,7 +20,7 @@ function ldraw_lib__93591() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\93591s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__93591s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__93591s01(realsolid)],
 // 0 // Front
 // 4 16 5.65 24 -29.888 5.2 16.5 -24.9 0 16.5 -25 0 24 -30
   [4,16,5.65,24,-29.888,5.2,16.5,-24.9,0,16.5,-25,0,24,-30],
@@ -425,9 +426,9 @@ function ldraw_lib__93591() = [
   [5,24,0,0,-10,0,8.1,-18.1,4.5,8.1,-17.9,-3.814,0,-9.888],
 // 0 // Top
 // 1 16 0 0 3 0 0 29.2246 0 1 0 -13 0 0 48\3-16chrd.dat
-  [1,16,0,0,3,0,0,29.2246,0,1,0,-13,0,0, ldraw_lib__48__3_16chrd()],
+  [1,16,0,0,3,0,0,29.2246,0,1,0,-13,0,0, ldraw_lib__48__3_16chrd(realsolid)],
 // 1 16 0 0 3 0 0 -29.2246 0 1 0 -13 0 0 48\3-16chrd.dat
-  [1,16,0,0,3,0,0,-29.2246,0,1,0,-13,0,0, ldraw_lib__48__3_16chrd()],
+  [1,16,0,0,3,0,0,-29.2246,0,1,0,-13,0,0, ldraw_lib__48__3_16chrd(realsolid)],
 // 3 16 0 0 -10 27.001 0 -1.975 -27.001 0 -1.975
   [3,16,0,0,-10,27.001,0,-1.975,-27.001,0,-1.975],
 // 4 16 27 0 10 -27 0 10 -27.001 0 -1.975 27.001 0 -1.975
@@ -640,5 +641,5 @@ function ldraw_lib__93591() = [
   [5,24,-38,24,2,-36,17.6,3.4,-36.827,16.262,-16.679,-34,24,31],
 ];
 module ldraw_lib__93591(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__93591(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__93591(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__93591(line=0.2);

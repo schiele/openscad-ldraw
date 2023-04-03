@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__80577s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__80577s02(realsolid=false) = [
 // 0 ~Minifig Hair Long Wavy with Knit Ski Cap - Cap
 // 0 Name: s\80577s02.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -7631,5 +7632,5 @@ function ldraw_lib__s__80577s02() = [
   [5,24,9.13,6.35,-12.58,7.99,6.08,-13.31,7.63,6.4933,-12.3833,8.51,5.63,-13.74],
 ];
 module ldraw_lib__s__80577s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__80577s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__80577s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__80577s02(line=0.2);

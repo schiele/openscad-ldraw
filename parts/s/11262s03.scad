@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__11262s03() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__11262s03(realsolid=false) = [
 // 0 ~Minifig Headdress Chicken Comb and Wattles Half
 // 0 Name: s\11262s03.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -699,5 +700,5 @@ function ldraw_lib__s__11262s03() = [
   [5,24,3.101,-14.187,-5.286,2.368,-18.49,2.379,3.392,-12.45,-4.582,2.444,-18.01,-4.473],
 ];
 module ldraw_lib__s__11262s03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__11262s03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__11262s03(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__11262s03(line=0.2);

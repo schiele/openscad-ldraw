@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <43719.scad>
-function ldraw_lib__4234927() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4234927(realsolid=false) = [
 // 0 ~_Wing  4 x  4 with 2 x 2 Cutout Yellow (Obsolete)
 // 0 Name: 4234927.dat
 // 0 Author: Michael Heidemann [mikeheide]
@@ -20,8 +21,8 @@ function ldraw_lib__4234927() = [
 // 0 // colouring of the part (Yellow).
 // 
 // 1 14 0 0 0 1 0 0 0 1 0 0 0 1 43719.dat
-  [1,14,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__43719()],
+  [1,14,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__43719(realsolid)],
 ];
 module ldraw_lib__4234927(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4234927(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4234927(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4234927(line=0.2);

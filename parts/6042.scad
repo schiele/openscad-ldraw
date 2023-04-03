@@ -13,7 +13,8 @@ use <../p/axlehol3.scad>
 use <../p/axlehole.scad>
 use <s/6042s01.scad>
 use <../p/stud4a.scad>
-function ldraw_lib__6042() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6042(realsolid=false) = [
 // 0 Brick  2 x  2 x  3.333 Octagonal With Side Studs
 // 0 Name: 6042.dat
 // 0 Author: Steve Bliss [sbliss]
@@ -38,19 +39,19 @@ function ldraw_lib__6042() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\6042s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6042s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6042s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\6042s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__6042s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__6042s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 76 0 0 0 1 axlehole.dat
-  [1,16,0,0,0,1,0,0,0,76,0,0,0,1, ldraw_lib__axlehole()],
+  [1,16,0,0,0,1,0,0,0,76,0,0,0,1, ldraw_lib__axlehole(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 axlehol2.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__axlehol2()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__axlehol2(realsolid)],
 // 1 16 0 76 0 1 0 0 0 1 0 0 0 1 axlehol3.dat
-  [1,16,0,76,0,1,0,0,0,1,0,0,0,1, ldraw_lib__axlehol3()],
+  [1,16,0,76,0,1,0,0,0,1,0,0,0,1, ldraw_lib__axlehol3(realsolid)],
 // 1 16 0 76 0 0 0 1 0 -1 0 -1 0 0 stud4a.dat
-  [1,16,0,76,0,0,0,1,0,-1,0,-1,0,0, ldraw_lib__stud4a()],
+  [1,16,0,76,0,0,0,1,0,-1,0,-1,0,0, ldraw_lib__stud4a(realsolid)],
 // 1 16 0 0 0 6 0 0 0 1 0 0 0 6 4-4ndis.dat
-  [1,16,0,0,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4ndis()],
+  [1,16,0,0,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4ndis(realsolid)],
 // 
 // 4 16 -6 0 -6 -8 0 -20 8 0 -20 6 0 -6
   [4,16,-6,0,-6,-8,0,-20,8,0,-20,6,0,-6],
@@ -94,45 +95,45 @@ function ldraw_lib__6042() = [
   [4,16,-8,68.25,-15,-8,68.25,-8,8,68.25,-8,8,68.25,-15],
 // 
 // 1 16 0 2.75 0 8 0 0 0 65.5 0 0 0 8 2-4cyli.dat
-  [1,16,0,2.75,0,8,0,0,0,65.5,0,0,0,8, ldraw_lib__2_4cyli()],
+  [1,16,0,2.75,0,8,0,0,0,65.5,0,0,0,8, ldraw_lib__2_4cyli(realsolid)],
 // 1 16 0 2.75 0 8 0 0 0 1 0 0 0 8 2-4edge.dat
-  [1,16,0,2.75,0,8,0,0,0,1,0,0,0,8, ldraw_lib__2_4edge()],
+  [1,16,0,2.75,0,8,0,0,0,1,0,0,0,8, ldraw_lib__2_4edge(realsolid)],
 // 1 16 0 2.75 0 -8 0 0 0 -1 0 0 0 8 2-4ndis.dat
-  [1,16,0,2.75,0,-8,0,0,0,-1,0,0,0,8, ldraw_lib__2_4ndis()],
+  [1,16,0,2.75,0,-8,0,0,0,-1,0,0,0,8, ldraw_lib__2_4ndis(realsolid)],
 // 1 16 0 68.25 0 8 0 0 0 -1 0 0 0 -8 2-4ndis.dat
-  [1,16,0,68.25,0,8,0,0,0,-1,0,0,0,-8, ldraw_lib__2_4ndis()],
+  [1,16,0,68.25,0,8,0,0,0,-1,0,0,0,-8, ldraw_lib__2_4ndis(realsolid)],
 // 1 16 0 68.25 0 8 0 0 0 -1 0 0 0 -8 2-4edge.dat
-  [1,16,0,68.25,0,8,0,0,0,-1,0,0,0,-8, ldraw_lib__2_4edge()],
+  [1,16,0,68.25,0,8,0,0,0,-1,0,0,0,-8, ldraw_lib__2_4edge(realsolid)],
 // 1 16 0 68.25 0 8 0 0 0 7.75 0 0 0 8 4-4cyli.dat
-  [1,16,0,68.25,0,8,0,0,0,7.75,0,0,0,8, ldraw_lib__4_4cyli()],
+  [1,16,0,68.25,0,8,0,0,0,7.75,0,0,0,8, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 20 -20 1 0 0 0 0 -1 0 12 0 axl5hol8.dat
-  [1,16,0,20,-20,1,0,0,0,0,-1,0,12,0, ldraw_lib__axl5hol8()],
+  [1,16,0,20,-20,1,0,0,0,0,-1,0,12,0, ldraw_lib__axl5hol8(realsolid)],
 // 1 16 0 60 -20 1 0 0 0 0 -1 0 12 0 axl5hol8.dat
-  [1,16,0,60,-20,1,0,0,0,0,-1,0,12,0, ldraw_lib__axl5hol8()],
+  [1,16,0,60,-20,1,0,0,0,0,-1,0,12,0, ldraw_lib__axl5hol8(realsolid)],
 // 1 16 0 20 -8 1 0 0 0 0 -1 0 1 0 axl5end.dat
-  [1,16,0,20,-8,1,0,0,0,0,-1,0,1,0, ldraw_lib__axl5end()],
+  [1,16,0,20,-8,1,0,0,0,0,-1,0,1,0, ldraw_lib__axl5end(realsolid)],
 // 1 16 0 60 -8 1 0 0 0 0 -1 0 1 0 axl5end.dat
-  [1,16,0,60,-8,1,0,0,0,0,-1,0,1,0, ldraw_lib__axl5end()],
+  [1,16,0,60,-8,1,0,0,0,0,-1,0,1,0, ldraw_lib__axl5end(realsolid)],
 // 1 16 0 20 -8 1 0 0 0 0 -1 0 1 0 axlehol2.dat
-  [1,16,0,20,-8,1,0,0,0,0,-1,0,1,0, ldraw_lib__axlehol2()],
+  [1,16,0,20,-8,1,0,0,0,0,-1,0,1,0, ldraw_lib__axlehol2(realsolid)],
 // 1 16 0 60 -8 1 0 0 0 0 -1 0 1 0 axlehol2.dat
-  [1,16,0,60,-8,1,0,0,0,0,-1,0,1,0, ldraw_lib__axlehol2()],
+  [1,16,0,60,-8,1,0,0,0,0,-1,0,1,0, ldraw_lib__axlehol2(realsolid)],
 // 1 16 0 20 -8 1 0 0 0 0 -1 0 1 0 axl5hol9.dat
-  [1,16,0,20,-8,1,0,0,0,0,-1,0,1,0, ldraw_lib__axl5hol9()],
+  [1,16,0,20,-8,1,0,0,0,0,-1,0,1,0, ldraw_lib__axl5hol9(realsolid)],
 // 1 16 0 60 -8 1 0 0 0 0 -1 0 1 0 axl5hol9.dat
-  [1,16,0,60,-8,1,0,0,0,0,-1,0,1,0, ldraw_lib__axl5hol9()],
+  [1,16,0,60,-8,1,0,0,0,0,-1,0,1,0, ldraw_lib__axl5hol9(realsolid)],
 // 1 16 0 20 -20 1 0 0 0 0 -1 0 1 0 axlehol2.dat
-  [1,16,0,20,-20,1,0,0,0,0,-1,0,1,0, ldraw_lib__axlehol2()],
+  [1,16,0,20,-20,1,0,0,0,0,-1,0,1,0, ldraw_lib__axlehol2(realsolid)],
 // 1 16 0 60 -20 1 0 0 0 0 -1 0 1 0 axlehol2.dat
-  [1,16,0,60,-20,1,0,0,0,0,-1,0,1,0, ldraw_lib__axlehol2()],
+  [1,16,0,60,-20,1,0,0,0,0,-1,0,1,0, ldraw_lib__axlehol2(realsolid)],
 // 1 16 0 20 -20 1 0 0 0 0 -1 0 1 0 axl5hol9.dat
-  [1,16,0,20,-20,1,0,0,0,0,-1,0,1,0, ldraw_lib__axl5hol9()],
+  [1,16,0,20,-20,1,0,0,0,0,-1,0,1,0, ldraw_lib__axl5hol9(realsolid)],
 // 1 16 0 60 -20 1 0 0 0 0 -1 0 1 0 axl5hol9.dat
-  [1,16,0,60,-20,1,0,0,0,0,-1,0,1,0, ldraw_lib__axl5hol9()],
+  [1,16,0,60,-20,1,0,0,0,0,-1,0,1,0, ldraw_lib__axl5hol9(realsolid)],
 // 1 16 0 20 -20 1 0 0 0 0 -1 0 1 0 axl5ho10.dat
-  [1,16,0,20,-20,1,0,0,0,0,-1,0,1,0, ldraw_lib__axl5ho10()],
+  [1,16,0,20,-20,1,0,0,0,0,-1,0,1,0, ldraw_lib__axl5ho10(realsolid)],
 // 1 16 0 60 -20 1 0 0 0 0 -1 0 1 0 axl5ho10.dat
-  [1,16,0,60,-20,1,0,0,0,0,-1,0,1,0, ldraw_lib__axl5ho10()],
+  [1,16,0,60,-20,1,0,0,0,0,-1,0,1,0, ldraw_lib__axl5ho10(realsolid)],
 // 
 // 4 16 -4 3.15 -20 -4 3.15 -8.75 4 3.15 -8.75 4 3.15 -20
   [4,16,-4,3.15,-20,-4,3.15,-8.75,4,3.15,-8.75,4,3.15,-20],
@@ -163,5 +164,5 @@ function ldraw_lib__6042() = [
   [5,24,0,52,-8.75,0,52,-20,3.062,52.609,-20,-3.062,52.609,-8.75],
 ];
 module ldraw_lib__6042(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6042(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6042(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6042(line=0.2);

@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/1-4cyli.scad>
-function ldraw_lib__s__973pr3s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__973pr3s01(realsolid=false) = [
 // 0 ~Minifig Torso with SW Layered Shirt, Brown Belt Pattern
 // 0 Name: s\973pr3s01.dat
 // 0 Author: Daniel Goerner [TK-949]
@@ -21,7 +22,7 @@ function ldraw_lib__s__973pr3s01() = [
 // 4 16 -14.345 2 10 -12 0 10 12 0 10 14.345 2 10
   [4,16,-14.345,2,10,-12,0,10,12,0,10,14.345,2,10],
 // 1 0 0 -4 0 4.243 0 -4.243 0 -8 0 -4.243 0 -4.243 1-4cyli.dat
-  [1,0,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli()],
+  [1,0,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli(realsolid)],
 // 
 // 4 0 -12.902 30.948 -10 -16.087 30.856 -10 -15.051 31.55 -10 -12.025 31.595 -10
   [4,0,-12.902,30.948,-10,-16.087,30.856,-10,-15.051,31.55,-10,-12.025,31.595,-10],
@@ -1659,5 +1660,5 @@ function ldraw_lib__s__973pr3s01() = [
   [3,80,-1.36,27.608,-10,-1.321,27.78,-10,-1.308,27.609,-10],
 ];
 module ldraw_lib__s__973pr3s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__973pr3s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__973pr3s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__973pr3s01(line=0.2);

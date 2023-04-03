@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <3842a.scad>
-function ldraw_lib__3842() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3842(realsolid=false) = [
 // 0 ~Moved to 3842a
 // 0 Name: 3842.dat
 // 0 Author: [PTadmin]
@@ -17,8 +18,8 @@ function ldraw_lib__3842() = [
 // 0 // Minifig Helmet Classic with Thin Chin Guard
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 3842a.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3842a()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3842a(realsolid)],
 ];
 module ldraw_lib__3842(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3842(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3842(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3842(line=0.2);

@@ -5,7 +5,8 @@ use <../../p/2-4edge.scad>
 use <../../p/4-4cylse.scad>
 use <../../p/4-4disc.scad>
 use <../../p/stud4a.scad>
-function ldraw_lib__s__13787s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__13787s01(realsolid=false) = [
 // 0 ~Minifig Hat Elf with Pointy Ears Inside
 // 0 Name: s\13787s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -22,23 +23,23 @@ function ldraw_lib__s__13787s01() = [
 // 
 // 
 // 1 16 0 -4 0 1 0 0 0 -1 0 0 0 -1 stud4a.dat
-  [1,16,0,-4,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__stud4a()],
+  [1,16,0,-4,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__stud4a(realsolid)],
 // 1 16 0 -4 0 -8 0 0 0 1 0 0 0 -8 2-4edge.dat
-  [1,16,0,-4,0,-8,0,0,0,1,0,0,0,-8, ldraw_lib__2_4edge()],
+  [1,16,0,-4,0,-8,0,0,0,1,0,0,0,-8, ldraw_lib__2_4edge(realsolid)],
 // 1 16 0 -14 0 8 0 0 10 1 0 0 0 8 1-4edge.dat
-  [1,16,0,-14,0,8,0,0,10,1,0,0,0,8, ldraw_lib__1_4edge()],
+  [1,16,0,-14,0,8,0,0,10,1,0,0,0,8, ldraw_lib__1_4edge(realsolid)],
 // 1 16 0 -14 0 -8 0 0 10 1 0 0 0 8 1-4edge.dat
-  [1,16,0,-14,0,-8,0,0,10,1,0,0,0,8, ldraw_lib__1_4edge()],
+  [1,16,0,-14,0,-8,0,0,10,1,0,0,0,8, ldraw_lib__1_4edge(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -4 0 0 0 -6 0 -3 0 -6 0 0 4-4cylse.dat
-  [1,16,0,-4,0,0,0,-6,0,-3,0,-6,0,0, ldraw_lib__4_4cylse()],
+  [1,16,0,-4,0,0,0,-6,0,-3,0,-6,0,0, ldraw_lib__4_4cylse(realsolid)],
 // 1 16 0 -4 0 -8 0 0 0 -10 0 0 0 8 1-4cyls.dat
-  [1,16,0,-4,0,-8,0,0,0,-10,0,0,0,8, ldraw_lib__1_4cyls()],
+  [1,16,0,-4,0,-8,0,0,0,-10,0,0,0,8, ldraw_lib__1_4cyls(realsolid)],
 // 1 16 0 -4 0 8 0 0 0 -10 0 0 0 8 1-4cyls.dat
-  [1,16,0,-4,0,8,0,0,0,-10,0,0,0,8, ldraw_lib__1_4cyls()],
+  [1,16,0,-4,0,8,0,0,0,-10,0,0,0,8, ldraw_lib__1_4cyls(realsolid)],
 // 1 16 0 -7 0 0 0 -6 3 -1 0 -6 0 0 4-4disc.dat
-  [1,16,0,-7,0,0,0,-6,3,-1,0,-6,0,0, ldraw_lib__4_4disc()],
+  [1,16,0,-7,0,0,0,-6,3,-1,0,-6,0,0, ldraw_lib__4_4disc(realsolid)],
 // 2 24 -0.032 1.9418 -12.5387 -4.7707 2.2774 -11.7493
   [2,24,-0.032,1.9418,-12.5387,-4.7707,2.2774,-11.7493],
 // 2 24 -4.7707 2.2774 -11.7493 -7.0986 2.9396 -10.7628
@@ -1107,5 +1108,5 @@ function ldraw_lib__s__13787s01() = [
   [5,24,19.697,11.316,5.878,13.557,14.923,6.523,14.753,16.27,5.033,17.458,10.365,7.153],
 ];
 module ldraw_lib__s__13787s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__13787s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__13787s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__13787s01(line=0.2);

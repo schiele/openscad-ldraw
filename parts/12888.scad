@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/12888s01.scad>
-function ldraw_lib__12888() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__12888(realsolid=false) = [
 // 0 Animal Dog Chihuahua
 // 0 Name: 12888.dat
 // 0 Author: Steffen [Steffen]
@@ -18,7 +19,7 @@ function ldraw_lib__12888() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\12888s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__12888s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__12888s01(realsolid)],
 // 0 // Eyes
 // 3 16 -1.668 -36.997 -14.053 -4.84 -35.547 -13.936 -0.905 -33.892 -16.442
   [3,16,-1.668,-36.997,-14.053,-4.84,-35.547,-13.936,-0.905,-33.892,-16.442],
@@ -135,5 +136,5 @@ function ldraw_lib__12888() = [
   [5,24,-0.83,-31.304,-21.222,1.138,-31.307,-21.393,-0.9,-29.382,-21.036,1.141,-33.291,-20.88],
 ];
 module ldraw_lib__12888(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__12888(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__12888(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__12888(line=0.2);

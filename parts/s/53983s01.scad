@@ -5,7 +5,8 @@ use <../../p/48/1-4cylo.scad>
 use <../../p/48/1-4edge.scad>
 use <../../p/48/1-4ring47.scad>
 use <../../p/48/1-4ring96.scad>
-function ldraw_lib__s__53983s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__53983s01(realsolid=false) = [
 // 0 ~Turbine Fan 16 / 8 Blade 10 Diameter with Case - Outer Quarter
 // 0 Name: s\53983s01.dat
 // 0 Author: Santeri Piippo [arezey]
@@ -23,19 +24,19 @@ function ldraw_lib__s__53983s01() = [
 // 
 // 
 // 1 16 0 0 9 0 0 100 100 0 0 0 -18 0 48\1-4cylo.dat
-  [1,16,0,0,9,0,0,100,100,0,0,0,-18,0, ldraw_lib__48__1_4cylo()],
+  [1,16,0,0,9,0,0,100,100,0,0,0,-18,0, ldraw_lib__48__1_4cylo(realsolid)],
 // 1 16 0 0 -30 0 0 94 94 0 0 0 1 0 48\1-4edge.dat
-  [1,16,0,0,-30,0,0,94,94,0,0,0,1,0, ldraw_lib__48__1_4edge()],
+  [1,16,0,0,-30,0,0,94,94,0,0,0,1,0, ldraw_lib__48__1_4edge(realsolid)],
 // 1 16 0 0 -30 0 0 2 2 0 0 0 1 0 48\1-4ring47.dat
-  [1,16,0,0,-30,0,0,2,2,0,0,0,1,0, ldraw_lib__48__1_4ring47()],
+  [1,16,0,0,-30,0,0,2,2,0,0,0,1,0, ldraw_lib__48__1_4ring47(realsolid)],
 // 1 16 0 0 -30 0 0 1 1 0 0 0 1 0 48\1-4ring96.dat
-  [1,16,0,0,-30,0,0,1,1,0,0,0,1,0, ldraw_lib__48__1_4ring96()],
+  [1,16,0,0,-30,0,0,1,1,0,0,0,1,0, ldraw_lib__48__1_4ring96(realsolid)],
 // 1 16 0 0 -23 0 0 1 1 0 0 0 -7 0 48\1-4con97.dat
-  [1,16,0,0,-23,0,0,1,1,0,0,0,-7,0, ldraw_lib__48__1_4con97()],
+  [1,16,0,0,-23,0,0,1,1,0,0,0,-7,0, ldraw_lib__48__1_4con97(realsolid)],
 // 1 16 0 0 -9 0 0 2 2 0 0 0 -14 0 48\1-4con49.dat
-  [1,16,0,0,-9,0,0,2,2,0,0,0,-14,0, ldraw_lib__48__1_4con49()],
+  [1,16,0,0,-9,0,0,2,2,0,0,0,-14,0, ldraw_lib__48__1_4con49(realsolid)],
 // 1 16 0 0 -30 0 0 97 97 0 0 0 1 0 48\1-4edge.dat
-  [1,16,0,0,-30,0,0,97,97,0,0,0,1,0, ldraw_lib__48__1_4edge()],
+  [1,16,0,0,-30,0,0,97,97,0,0,0,1,0, ldraw_lib__48__1_4edge(realsolid)],
 // 
 // 2 24 87.371 41.674 -18.5 84.669 40.385 -18.5
   [2,24,87.371,41.674,-18.5,84.669,40.385,-18.5],
@@ -566,5 +567,5 @@ function ldraw_lib__s__53983s01() = [
 // 
 ];
 module ldraw_lib__s__53983s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__53983s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__53983s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__53983s01(line=0.2);

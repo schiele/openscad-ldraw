@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/6025s01.scad>
-function ldraw_lib__6025() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6025(realsolid=false) = [
 // 0 Minifig Hair Islander
 // 0 Name: 6025.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -23,13 +24,13 @@ function ldraw_lib__6025() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\6025s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6025s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6025s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\6025s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__6025s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__6025s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 -1 s\6025s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__6025s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__6025s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 -1 s\6025s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__6025s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__6025s01(realsolid)],
 // 5 24 0 -12.9 7.2 0 -14.3 9.5 3.6 -12.9 6.3 -3.6 -12.9 6.3
   [5,24,0,-12.9,7.2,0,-14.3,9.5,3.6,-12.9,6.3,-3.6,-12.9,6.3],
 // 5 24 0 -14.3 9.5 0 -17.1 9.6 3.7 -17.1 9.2 -3.7 -17.1 9.2
@@ -120,5 +121,5 @@ function ldraw_lib__6025() = [
   [5,24,0,6.4,-13,0,2.6,-13,5,6.4,-12,-5,6.4,-12],
 ];
 module ldraw_lib__6025(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6025(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6025(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6025(line=0.2);

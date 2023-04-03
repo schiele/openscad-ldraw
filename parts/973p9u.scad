@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/1-4cyli.scad>
 use <s/973p9us01.scad>
 use <s/973s01.scad>
-function ldraw_lib__973p9u() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__973p9u(realsolid=false) = [
 // 0 Minifig Torso with Sweater, Bow and Heart Shaped Necklace Pattern
 // 0 Name: 973p9u.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -19,14 +20,14 @@ function ldraw_lib__973p9u() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01(realsolid)],
 // 1 0 0 -4 0 4.243 0 -4.243 0 -8 0 -4.243 0 -4.243 1-4cyli.dat
-  [1,0,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli()],
+  [1,0,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli(realsolid)],
 // 
 // 1 16 0 0 10 -1 0 0 0 1 0 0 0 -1 s\973p9us01.dat
-  [1,16,0,0,10,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__973p9us01()],
+  [1,16,0,0,10,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__973p9us01(realsolid)],
 // 1 16 0 0 10 1 0 0 0 1 0 0 0 -1 s\973p9us01.dat
-  [1,16,0,0,10,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__973p9us01()],
+  [1,16,0,0,10,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__973p9us01(realsolid)],
 // 
 // 4 0 -7.1 1 -10 -7.9 1.5 -10 -7.5 2.3 -10 -6.9 2.1 -10
   [4,0,-7.1,1,-10,-7.9,1.5,-10,-7.5,2.3,-10,-6.9,2.1,-10],
@@ -1388,5 +1389,5 @@ function ldraw_lib__973p9u() = [
   [3,16,8.65,11.9,-10,7.5,13.65,-10,11.8,18.75,-10],
 ];
 module ldraw_lib__973p9u(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__973p9u(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__973p9u(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__973p9u(line=0.2);

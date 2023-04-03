@@ -10,7 +10,8 @@ use <s/6143s02.scad>
 use <s/65783s01.scad>
 use <../p/stud4a.scad>
 use <../p/studa.scad>
-function ldraw_lib__65783() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__65783(realsolid=false) = [
 // 0 Panel 10 x  4 x 13 Curved Tapered with Handle at Each End and  4 Studs On Side
 // 0 Name: 65783.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -27,56 +28,56 @@ function ldraw_lib__65783() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\65783s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__65783s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__65783s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\65783s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__65783s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__65783s01(realsolid)],
 // 
 // 0 // Bars
 // 1 16 -15 0 0 0 30 0 -4 0 0 0 0 4 4-4cylo.dat
-  [1,16,-15,0,0,0,30,0,-4,0,0,0,0,4, ldraw_lib__4_4cylo()],
+  [1,16,-15,0,0,0,30,0,-4,0,0,0,0,4, ldraw_lib__4_4cylo(realsolid)],
 // 1 16 -15 240 0 0 30 0 -4 0 0 0 0 4 4-4cylo.dat
-  [1,16,-15,240,0,0,30,0,-4,0,0,0,0,4, ldraw_lib__4_4cylo()],
+  [1,16,-15,240,0,0,30,0,-4,0,0,0,0,4, ldraw_lib__4_4cylo(realsolid)],
 // 
 // 0 // Brick 2 x 2 Round
 // 1 16 0 98 -74 0 0 1 1 0 0 0 1 0 s\6143s02.dat
-  [1,16,0,98,-74,0,0,1,1,0,0,0,1,0, ldraw_lib__s__6143s02()],
+  [1,16,0,98,-74,0,0,1,1,0,0,0,1,0, ldraw_lib__s__6143s02(realsolid)],
 // 1 16 0 98 -74 -1 0 0 0 0 1 0 1 0 s\6143s02.dat
-  [1,16,0,98,-74,-1,0,0,0,0,1,0,1,0, ldraw_lib__s__6143s02()],
+  [1,16,0,98,-74,-1,0,0,0,0,1,0,1,0, ldraw_lib__s__6143s02(realsolid)],
 // 1 16 0 98 -74 0 0 -1 -1 0 0 0 1 0 s\6143s02.dat
-  [1,16,0,98,-74,0,0,-1,-1,0,0,0,1,0, ldraw_lib__s__6143s02()],
+  [1,16,0,98,-74,0,0,-1,-1,0,0,0,1,0, ldraw_lib__s__6143s02(realsolid)],
 // 1 16 0 98 -74 1 0 0 0 0 -1 0 1 0 s\6143s02.dat
-  [1,16,0,98,-74,1,0,0,0,0,-1,0,1,0, ldraw_lib__s__6143s02()],
+  [1,16,0,98,-74,1,0,0,0,0,-1,0,1,0, ldraw_lib__s__6143s02(realsolid)],
 // 
 // 1 16 0 98 -54 20 0 0 0 0 -20 0 -12 0 4-4cyli.dat
-  [1,16,0,98,-54,20,0,0,0,0,-20,0,-12,0, ldraw_lib__4_4cyli()],
+  [1,16,0,98,-54,20,0,0,0,0,-20,0,-12,0, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 98 -74 20 0 0 0 0 -20 0 5.5 0 4-4cyli.dat
-  [1,16,0,98,-74,20,0,0,0,0,-20,0,5.5,0, ldraw_lib__4_4cyli()],
+  [1,16,0,98,-74,20,0,0,0,0,-20,0,5.5,0, ldraw_lib__4_4cyli(realsolid)],
 // 
 // 1 16 0 98 -56 1 0 0 0 0 -1 0 -1.5 0 stud4a.dat
-  [1,16,0,98,-56,1,0,0,0,0,-1,0,-1.5,0, ldraw_lib__stud4a()],
+  [1,16,0,98,-56,1,0,0,0,0,-1,0,-1.5,0, ldraw_lib__stud4a(realsolid)],
 // 1 16 0 98 -56 1 0 0 0 0 -1 0 1 0 axl3hol3.dat
-  [1,16,0,98,-56,1,0,0,0,0,-1,0,1,0, ldraw_lib__axl3hol3()],
+  [1,16,0,98,-56,1,0,0,0,0,-1,0,1,0, ldraw_lib__axl3hol3(realsolid)],
 // 1 16 0 98 -56 1 0 0 0 0 -1 0 1 0 axl3hol9.dat
-  [1,16,0,98,-56,1,0,0,0,0,-1,0,1,0, ldraw_lib__axl3hol9()],
+  [1,16,0,98,-56,1,0,0,0,0,-1,0,1,0, ldraw_lib__axl3hol9(realsolid)],
 // 1 16 0 98 -56 1 0 0 0 0 -1 0 -1 0 axl3ho10.dat
-  [1,16,0,98,-56,1,0,0,0,0,-1,0,-1,0, ldraw_lib__axl3ho10()],
+  [1,16,0,98,-56,1,0,0,0,0,-1,0,-1,0, ldraw_lib__axl3ho10(realsolid)],
 // 1 16 0 98 -74 1 0 0 0 0 -1 0 18 0 axl3hol8.dat
-  [1,16,0,98,-74,1,0,0,0,0,-1,0,18,0, ldraw_lib__axl3hol8()],
+  [1,16,0,98,-74,1,0,0,0,0,-1,0,18,0, ldraw_lib__axl3hol8(realsolid)],
 // 1 16 0 98 -74 1 0 0 0 0 -1 0 1 0 axl3hol2.dat
-  [1,16,0,98,-74,1,0,0,0,0,-1,0,1,0, ldraw_lib__axl3hol2()],
+  [1,16,0,98,-74,1,0,0,0,0,-1,0,1,0, ldraw_lib__axl3hol2(realsolid)],
 // 1 16 0 98 -74 1 0 0 0 0 -1 0 1 0 axl3hol9.dat
-  [1,16,0,98,-74,1,0,0,0,0,-1,0,1,0, ldraw_lib__axl3hol9()],
+  [1,16,0,98,-74,1,0,0,0,0,-1,0,1,0, ldraw_lib__axl3hol9(realsolid)],
 // 1 16 0 98 -74 1 0 0 0 0 -1 0 1 0 axl3ho10.dat
-  [1,16,0,98,-74,1,0,0,0,0,-1,0,1,0, ldraw_lib__axl3ho10()],
+  [1,16,0,98,-74,1,0,0,0,0,-1,0,1,0, ldraw_lib__axl3ho10(realsolid)],
 // 
 // 1 16 10 88 -74 0 0 1 1 0 0 0 1 0 studa.dat
-  [1,16,10,88,-74,0,0,1,1,0,0,0,1,0, ldraw_lib__studa()],
+  [1,16,10,88,-74,0,0,1,1,0,0,0,1,0, ldraw_lib__studa(realsolid)],
 // 1 16 -10 88 -74 0 0 1 1 0 0 0 1 0 studa.dat
-  [1,16,-10,88,-74,0,0,1,1,0,0,0,1,0, ldraw_lib__studa()],
+  [1,16,-10,88,-74,0,0,1,1,0,0,0,1,0, ldraw_lib__studa(realsolid)],
 // 1 16 10 108 -74 0 0 1 1 0 0 0 1 0 studa.dat
-  [1,16,10,108,-74,0,0,1,1,0,0,0,1,0, ldraw_lib__studa()],
+  [1,16,10,108,-74,0,0,1,1,0,0,0,1,0, ldraw_lib__studa(realsolid)],
 // 1 16 -10 108 -74 0 0 1 1 0 0 0 1 0 studa.dat
-  [1,16,-10,108,-74,0,0,1,1,0,0,0,1,0, ldraw_lib__studa()],
+  [1,16,-10,108,-74,0,0,1,1,0,0,0,1,0, ldraw_lib__studa(realsolid)],
 // 
 // 0 // Condlines for Merging
 // 5 24 0 78 -68.9106 0 69.9181 -67.303 17.9216 69.9181 -66.1284 -17.9216 69.9181 -66.1284
@@ -151,5 +152,5 @@ function ldraw_lib__65783() = [
   [5,24,0,43.75,-56.4638,0,31.9494,-48.5788,-15.4776,31.9494,-47.5643,15.4776,31.9494,-47.5643],
 ];
 module ldraw_lib__65783(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__65783(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__65783(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__65783(line=0.2);

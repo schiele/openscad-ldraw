@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__85651() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__85651(realsolid=false) = [
 // 0 Sheet Fabric 17 x 21 Triangular Sail
 // 0 Name: 85651.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -1074,5 +1075,5 @@ function ldraw_lib__85651() = [
   [5,24,148.75,0,-186.41,148.75,-0.25,-186.41,150.22,0,-184.22,148.24,0,-189],
 ];
 module ldraw_lib__85651(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__85651(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__85651(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__85651(line=0.2);

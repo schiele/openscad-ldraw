@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3069bs01.scad>
-function ldraw_lib__3069bp84() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3069bp84(realsolid=false) = [
 // 0 Tile  1 x  2 with Lavender Ribbon with "12:00" and  3 Balloons Pattern
 // 0 Name: 3069bp84.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -19,7 +20,7 @@ function ldraw_lib__3069bp84() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3069bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3069bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3069bs01(realsolid)],
 // 
 // 4 26 -10.65 0 5.75 -11.7 0 4.8 -11.55 0 4.55 -11.05 0 4.8
   [4,26,-10.65,0,5.75,-11.7,0,4.8,-11.55,0,4.55,-11.05,0,4.8],
@@ -1049,5 +1050,5 @@ function ldraw_lib__3069bp84() = [
   [4,16,20,0,10,16.3244,0,2.7557,16.1645,0,2.1267,20,0,-10],
 ];
 module ldraw_lib__3069bp84(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3069bp84(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3069bp84(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3069bp84(line=0.2);

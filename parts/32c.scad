@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/32cs01.scad>
 use <../p/stud2.scad>
-function ldraw_lib__32c() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__32c(realsolid=false) = [
 // 0 ~Door  1 x  2 x  3 Left
 // 0 Name: 32c.dat
 // 0 Author: Tore Eriksson [Tore_Eriksson]
@@ -22,13 +23,13 @@ function ldraw_lib__32c() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\32cs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__32cs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__32cs01(realsolid)],
 // 1 16 10 0 0 1 0 0 0 1 0 0 0 1 stud2.dat
-  [1,16,10,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2()],
+  [1,16,10,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2(realsolid)],
 // 1 16 -10 0 0 1 0 0 0 1 0 0 0 1 stud2.dat
-  [1,16,-10,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2()],
+  [1,16,-10,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2(realsolid)],
 // 0
 ];
 module ldraw_lib__32c(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__32c(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__32c(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__32c(line=0.2);

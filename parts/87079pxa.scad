@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/87079s01.scad>
-function ldraw_lib__87079pxa() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__87079pxa(realsolid=false) = [
 // 0 Tile  2 x  4 with White and Green Squares and Orange Rectangle Pattern
 // 0 Name: 87079pxa.dat
 // 0 Author: Vincent Messenet [Cheenzo]
@@ -17,7 +18,7 @@ function ldraw_lib__87079pxa() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\87079s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__87079s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__87079s01(realsolid)],
 // 
 // 4 92 -9.75 0 0 -9.75 0 -9.75 9.75 0 -9.75 9.75 0 0
   [4,92,-9.75,0,0,-9.75,0,-9.75,9.75,0,-9.75,9.75,0,0],
@@ -63,5 +64,5 @@ function ldraw_lib__87079pxa() = [
   [4,16,0,0,20,9.75,0,19.5,19.5,0,19.5,40,0,20],
 ];
 module ldraw_lib__87079pxa(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__87079pxa(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__87079pxa(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__87079pxa(line=0.2);

@@ -6,7 +6,8 @@ use <../p/4-4rin13.scad>
 use <../p/4-4rin14.scad>
 use <../p/4-4rin15.scad>
 use <../p/4-4rin16.scad>
-function ldraw_lib__4544045f() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4544045f(realsolid=false) = [
 // 0 Sticker  1.7 x  1.7 Round with Motor
 // 0 Name: 4544045f.dat
 // 0 Author: Michael Heidemann [mikeheide]
@@ -31,19 +32,19 @@ function ldraw_lib__4544045f() = [
 // 
 // 
 // 1 16 0 0 0 17 0 0 0 -.25 0 0 0 17 4-4cylc3.dat
-  [1,16,0,0,0,17,0,0,0,-.25,0,0,0,17, ldraw_lib__4_4cylc3()],
+  [1,16,0,0,0,17,0,0,0,-.25,0,0,0,17, ldraw_lib__4_4cylc3(realsolid)],
 // 1 0 0 -0.25 0 1 0 0 0 1 0 0 0 1 4-4rin16.dat
-  [1,0,0,-0.25,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4rin16()],
+  [1,0,0,-0.25,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4rin16(realsolid)],
 // 1 0 0 -0.25 0 1 0 0 0 1 0 0 0 1 4-4rin15.dat
-  [1,0,0,-0.25,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4rin15()],
+  [1,0,0,-0.25,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4rin15(realsolid)],
 // 1 80 0 -0.25 0 1 0 0 0 1 0 0 0 1 4-4rin14.dat
-  [1,80,0,-0.25,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4rin14()],
+  [1,80,0,-0.25,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4rin14(realsolid)],
 // 1 80 0 -0.25 0 1 0 0 0 1 0 0 0 1 4-4rin13.dat
-  [1,80,0,-0.25,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4rin13()],
+  [1,80,0,-0.25,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4rin13(realsolid)],
 // 1 0 0 -0.25 0 1 0 0 0 1 0 0 0 1 4-4rin12.dat
-  [1,0,0,-0.25,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4rin12()],
+  [1,0,0,-0.25,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4rin12(realsolid)],
 // 1 80 0 -.25 0 12 0 0 0 1 0 0 0 12 4-4ering.dat
-  [1,80,0,-.25,0,12,0,0,0,1,0,0,0,12, ldraw_lib__4_4ering()],
+  [1,80,0,-.25,0,12,0,0,0,1,0,0,0,12, ldraw_lib__4_4ering(realsolid)],
 // 
 // 4 0 -2.25 -0.25 6.5 3.75 -0.25 6.5 4 -0.25 8 -2.25 -0.25 8
   [4,0,-2.25,-0.25,6.5,3.75,-0.25,6.5,4,-0.25,8,-2.25,-0.25,8],
@@ -179,5 +180,5 @@ function ldraw_lib__4544045f() = [
   [3,80,-2.25,-.25,-7.25,-4.5924,-.25,-11.0868,0,-.25,-12],
 ];
 module ldraw_lib__4544045f(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4544045f(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4544045f(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4544045f(line=0.2);

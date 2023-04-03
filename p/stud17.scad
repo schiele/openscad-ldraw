@@ -3,7 +3,8 @@ use <1-16edge.scad>
 use <3-4edge.scad>
 use <4-4edge.scad>
 use <stud17a.scad>
-function ldraw_lib__stud17() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__stud17(realsolid=false) = [
 // 0 Stud Open For Octagonal Parts
 // 0 Name: stud17.dat
 // 0 Author: Rolf Osterthun [Rolf]
@@ -21,16 +22,16 @@ function ldraw_lib__stud17() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 stud17a.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud17a()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud17a(realsolid)],
 // 
 // 1 16 0 0 0 6 0 0 0 1 0 0 0 -6 3-4edge.dat
-  [1,16,0,0,0,6,0,0,0,1,0,0,0,-6, ldraw_lib__3_4edge()],
+  [1,16,0,0,0,6,0,0,0,1,0,0,0,-6, ldraw_lib__3_4edge(realsolid)],
 // 1 16 0 0 0 6 0 0 0 1 0 0 0 6 1-16edge.dat
-  [1,16,0,0,0,6,0,0,0,1,0,0,0,6, ldraw_lib__1_16edge()],
+  [1,16,0,0,0,6,0,0,0,1,0,0,0,6, ldraw_lib__1_16edge(realsolid)],
 // 1 16 0 0 0 0 0 6 0 1 0 6 0 0 1-16edge.dat
-  [1,16,0,0,0,0,0,6,0,1,0,6,0,0, ldraw_lib__1_16edge()],
+  [1,16,0,0,0,0,0,6,0,1,0,6,0,0, ldraw_lib__1_16edge(realsolid)],
 // 1 16 0 0 0 4 0 0 0 1 0 0 0 4 4-4edge.dat
-  [1,16,0,0,0,4,0,0,0,1,0,0,0,4, ldraw_lib__4_4edge()],
+  [1,16,0,0,0,4,0,0,0,1,0,0,0,4, ldraw_lib__4_4edge(realsolid)],
 // 
 // 2 24 2.2962 0 5.5434 2.7798 0 5.2202
   [2,24,2.2962,0,5.5434,2.7798,0,5.2202],
@@ -38,5 +39,5 @@ function ldraw_lib__stud17() = [
   [2,24,5.2202,0,2.7798,5.5434,0,2.2962],
 ];
 module ldraw_lib__stud17(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__stud17(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__stud17(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__stud17(line=0.2);

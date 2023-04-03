@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/axlehol5.scad>
 use <s/43363s01.scad>
-function ldraw_lib__43363() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__43363(realsolid=false) = [
 // 0 Technic Darth Vader Helmet
 // 0 Name: 43363.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -18,13 +19,13 @@ function ldraw_lib__43363() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\43363s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__43363s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__43363s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\43363s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__43363s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__43363s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 -20 0 0 0 1 axlehol5.dat
-  [1,16,0,0,0,1,0,0,0,-20,0,0,0,1, ldraw_lib__axlehol5()],
+  [1,16,0,0,0,1,0,0,0,-20,0,0,0,1, ldraw_lib__axlehol5(realsolid)],
 // 1 16 0 0 20 1 0 0 0 -20 0 0 0 1 axlehol5.dat
-  [1,16,0,0,20,1,0,0,0,-20,0,0,0,1, ldraw_lib__axlehol5()],
+  [1,16,0,0,20,1,0,0,0,-20,0,0,0,1, ldraw_lib__axlehol5(realsolid)],
 // 5 24 0 126.813 91.0059 0 116.061 88.0218 12.8284 116.213 87.5042 -12.8498 126.937 90.479
   [5,24,0,126.813,91.0059,0,116.061,88.0218,12.8284,116.213,87.5042,-12.8498,126.937,90.479],
 // 5 24 16.0433 116.519 86.4756 16.8976 116.75 85.7371 16.9181 127.399 88.5597 16.843 101.456 79.6364
@@ -127,5 +128,5 @@ function ldraw_lib__43363() = [
   [5,24,-10.4946,22.9901,-65.5546,-9.5484,21.5393,-67.5685,-9.5953,14.2277,-65.7504,-10.1492,37.5849,-77.5555],
 ];
 module ldraw_lib__43363(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__43363(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__43363(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__43363(line=0.2);

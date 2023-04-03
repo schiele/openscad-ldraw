@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
 use <s/820674s01.scad>
-function ldraw_lib__820674b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__820674b(realsolid=false) = [
 // 0 Sticker  1.6 x  3.2 with White and Red Lifebuoy on Blue Blazon
 // 0 Name: 820674b.dat
 // 0 Author: Alexandre Bourdais [x-or]
@@ -18,12 +19,12 @@ function ldraw_lib__820674b() = [
 // 
 // 
 // 1 16 0 -0.25 0 32.2 0 0 0 0.25 0 0 0 16.1 box5-12.dat
-  [1,16,0,-0.25,0,32.2,0,0,0,0.25,0,0,0,16.1, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,32.2,0,0,0,0.25,0,0,0,16.1, ldraw_lib__box5_12(realsolid)],
 // 1 16 -16.1 -0.25 0 1.61 0 0 0 1 0 0 0 1.61 s\820674s01.dat
-  [1,16,-16.1,-0.25,0,1.61,0,0,0,1,0,0,0,1.61, ldraw_lib__s__820674s01()],
+  [1,16,-16.1,-0.25,0,1.61,0,0,0,1,0,0,0,1.61, ldraw_lib__s__820674s01(realsolid)],
 // 1 16 16.1 -0.25 0 -1.61 0 0 0 1 0 0 0 1.61 s\820674s01.dat
-  [1,16,16.1,-0.25,0,-1.61,0,0,0,1,0,0,0,1.61, ldraw_lib__s__820674s01()],
+  [1,16,16.1,-0.25,0,-1.61,0,0,0,1,0,0,0,1.61, ldraw_lib__s__820674s01(realsolid)],
 ];
 module ldraw_lib__820674b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__820674b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__820674b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__820674b(line=0.2);

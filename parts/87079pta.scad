@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/87079s01.scad>
-function ldraw_lib__87079pta() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__87079pta(realsolid=false) = [
 // 0 Tile  2 x  4 with Gold "El Cubo Fine Art" Pattern
 // 0 Name: 87079pta.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -17,7 +18,7 @@ function ldraw_lib__87079pta() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\87079s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__87079s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__87079s01(realsolid)],
 // 4 82 -38.2 0 -18.1 -38.9 0 -18.8 -33.9 0 -18.8 -34.6 0 -18.1
   [4,82,-38.2,0,-18.1,-38.9,0,-18.8,-33.9,0,-18.8,-34.6,0,-18.1],
 // 4 82 -38.9 0 -13.8 -38.9 0 -18.8 -38.2 0 -18.1 -38.2 0 -14.5
@@ -2084,5 +2085,5 @@ function ldraw_lib__87079pta() = [
   [3,272,15.3,0,-10.4,15,0,-10.7,15.2,0,-11.4],
 ];
 module ldraw_lib__87079pta(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__87079pta(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__87079pta(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__87079pta(line=0.2);

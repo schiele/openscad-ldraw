@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3039s01.scad>
-function ldraw_lib__3039pc8() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3039pc8(realsolid=false) = [
 // 0 Slope Brick 45  2 x  2 with Ice Planet Controls Pattern
 // 0 Name: 3039pc8.dat
 // 0 Author: Mikkel Bech Jensen [gaia]
@@ -16,7 +17,7 @@ function ldraw_lib__3039pc8() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3039s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3039s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3039s01(realsolid)],
 // 4 0 1 7.071 -17.071 0 6.364 -16.364 -1 7.071 -17.071 0 7.778 -17.778
   [4,0,1,7.071,-17.071,0,6.364,-16.364,-1,7.071,-17.071,0,7.778,-17.778],
 // 4 0 -0.4 5.233 -15.233 0 5.233 -15.233 0 4.95 -14.95 -0.4 4.95 -14.95
@@ -1389,5 +1390,5 @@ function ldraw_lib__3039pc8() = [
   [3,16,4,9.192,-19.192,0.4,9.192,-19.192,0.2,9.899,-19.899],
 ];
 module ldraw_lib__3039pc8(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3039pc8(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3039pc8(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3039pc8(line=0.2);

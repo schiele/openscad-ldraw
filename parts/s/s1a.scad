@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__s1a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__s1a(realsolid=false) = [
 // 0 ~Sticker System with Classic Space Pattern - Gold
 // 0 Name: s\s1a.dat
 // 0 Author: Willy Tschager [Holly-Wood]
@@ -184,5 +185,5 @@ function ldraw_lib__s__s1a() = [
 // 0
 ];
 module ldraw_lib__s__s1a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__s1a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__s1a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__s1a(line=0.2);

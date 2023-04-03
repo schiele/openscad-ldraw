@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__25971s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__25971s02(realsolid=false) = [
 // 0 ~Minifig Headdress Bird Crest
 // 0 Name: s\25971s02.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -253,5 +254,5 @@ function ldraw_lib__s__25971s02() = [
   [5,24,8.263,-7.936,-3.723,13.121,-2.62,4.211,14.743,-0.619,0.971,8.88,-6.62,4.182],
 ];
 module ldraw_lib__s__25971s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__25971s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__25971s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__25971s02(line=0.2);

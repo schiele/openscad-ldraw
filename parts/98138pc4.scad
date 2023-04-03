@@ -4,7 +4,8 @@ use <../p/2-4chrd.scad>
 use <../p/2-4ndis.scad>
 use <../p/4-4ring9.scad>
 use <s/98138s02.scad>
-function ldraw_lib__98138pc4() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__98138pc4(realsolid=false) = [
 // 0 Tile  1 x  1 Round with Groove with Gauge with Red Pointer and White, Blue and Red Dial Pattern
 // 0 Name: 98138pc4.dat
 // 0 Author: Ulrich Röder [UR]
@@ -22,28 +23,28 @@ function ldraw_lib__98138pc4() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\98138s02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s02(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 4-4ring9.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__4_4ring9()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__4_4ring9(realsolid)],
 // 
 // 1 0 -2.5 0 3.62 .262128 0 -.183544 0 1 0 .183544 0 .262128 2-4ndis.dat
-  [1,0,-2.5,0,3.62,.262128,0,-.183544,0,1,0,.183544,0,.262128, ldraw_lib__2_4ndis()],
+  [1,0,-2.5,0,3.62,.262128,0,-.183544,0,1,0,.183544,0,.262128, ldraw_lib__2_4ndis(realsolid)],
 // 1 0 0 0 0 -9 0 0 0 1 0 0 0 9 1-8chrd.dat
-  [1,0,0,0,0,-9,0,0,0,1,0,0,0,9, ldraw_lib__1_8chrd()],
+  [1,0,0,0,0,-9,0,0,0,1,0,0,0,9, ldraw_lib__1_8chrd(realsolid)],
 // 1 0 0 0 0 -9 0 0 0 1 0 0 0 -9 1-8chrd.dat
-  [1,0,0,0,0,-9,0,0,0,1,0,0,0,-9, ldraw_lib__1_8chrd()],
+  [1,0,0,0,0,-9,0,0,0,1,0,0,0,-9, ldraw_lib__1_8chrd(realsolid)],
 // 1 0 0 0 0 9 0 0 0 1 0 0 0 9 1-8chrd.dat
-  [1,0,0,0,0,9,0,0,0,1,0,0,0,9, ldraw_lib__1_8chrd()],
+  [1,0,0,0,0,9,0,0,0,1,0,0,0,9, ldraw_lib__1_8chrd(realsolid)],
 // 1 0 0 0 0 9 0 0 0 1 0 0 0 -9 1-8chrd.dat
-  [1,0,0,0,0,9,0,0,0,1,0,0,0,-9, ldraw_lib__1_8chrd()],
+  [1,0,0,0,0,9,0,0,0,1,0,0,0,-9, ldraw_lib__1_8chrd(realsolid)],
 // 1 0 0 0 0 0 0 9 0 1 0 9 0 0 1-8chrd.dat
-  [1,0,0,0,0,0,0,9,0,1,0,9,0,0, ldraw_lib__1_8chrd()],
+  [1,0,0,0,0,0,0,9,0,1,0,9,0,0, ldraw_lib__1_8chrd(realsolid)],
 // 1 0 0 0 0 0 0 -9 0 1 0 9 0 0 1-8chrd.dat
-  [1,0,0,0,0,0,0,-9,0,1,0,9,0,0, ldraw_lib__1_8chrd()],
+  [1,0,0,0,0,0,0,-9,0,1,0,9,0,0, ldraw_lib__1_8chrd(realsolid)],
 // 1 0 0 0 0 0 0 9 0 1 0 -9 0 0 1-8chrd.dat
-  [1,0,0,0,0,0,0,9,0,1,0,-9,0,0, ldraw_lib__1_8chrd()],
+  [1,0,0,0,0,0,0,9,0,1,0,-9,0,0, ldraw_lib__1_8chrd(realsolid)],
 // 1 0 0 0 0 0 0 -9 0 1 0 -9 0 0 1-8chrd.dat
-  [1,0,0,0,0,0,0,-9,0,1,0,-9,0,0, ldraw_lib__1_8chrd()],
+  [1,0,0,0,0,0,0,-9,0,1,0,-9,0,0, ldraw_lib__1_8chrd(realsolid)],
 // 4 0 0 0 9 -6.3639 0 6.3639 -4.34 0 5.79 -2.85 0 6.65
   [4,0,0,0,9,-6.3639,0,6.3639,-4.34,0,5.79,-2.85,0,6.65],
 // 3 0 -4.95 0 5.27 -4.34 0 5.79 -6.3639 0 6.3639
@@ -218,7 +219,7 @@ function ldraw_lib__98138pc4() = [
 // 4 4 -1.05 0 .57 -1.11 0 .46 -1.2 0 0 0 0 0
   [4,4,-1.05,0,.57,-1.11,0,.46,-1.2,0,0,0,0,0],
 // 1 4 -2.5 0 3.62 .262128 0 -.183544 0 1 0 .183544 0 .262128 2-4chrd.dat
-  [1,4,-2.5,0,3.62,.262128,0,-.183544,0,1,0,.183544,0,.262128, ldraw_lib__2_4chrd()],
+  [1,4,-2.5,0,3.62,.262128,0,-.183544,0,1,0,.183544,0,.262128, ldraw_lib__2_4chrd(realsolid)],
 // 
 // 4 15 .4 0 7.22 -.4 0 7.22 -.32 0 5.23 .32 0 5.23
   [4,15,.4,0,7.22,-.4,0,7.22,-.32,0,5.23,.32,0,5.23],
@@ -247,5 +248,5 @@ function ldraw_lib__98138pc4() = [
   [4,322,5.21,0,.59,7.18,0,.86,7.04,0,1.65,5.1,0,1.22],
 ];
 module ldraw_lib__98138pc4(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__98138pc4(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__98138pc4(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__98138pc4(line=0.2);

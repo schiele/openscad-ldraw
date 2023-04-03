@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/box4-12.scad>
-function ldraw_lib__s__004690as01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__004690as01(realsolid=false) = [
 // 0 ~Sticker  2.6 x  6 with White/Red/Blue Stripes - Top
 // 0 Name: s\004690as01.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -15,7 +16,7 @@ function ldraw_lib__s__004690as01() = [
 // 
 // 
 // 1 16 0 -0.25 0 60 0 0 0 0.25 0 0 0 22.36 box4-12.dat
-  [1,16,0,-0.25,0,60,0,0,0,0.25,0,0,0,22.36, ldraw_lib__box4_12()],
+  [1,16,0,-0.25,0,60,0,0,0,0.25,0,0,0,22.36, ldraw_lib__box4_12(realsolid)],
 // 
 // 4 4 -41 -0.25 -22.36 -41 -0.25 22.36 -60 -0.25 22.36 -60 -0.25 -22.36
   [4,4,-41,-0.25,-22.36,-41,-0.25,22.36,-60,-0.25,22.36,-60,-0.25,-22.36],
@@ -53,5 +54,5 @@ function ldraw_lib__s__004690as01() = [
   [4,4,60,-0.25,-22.36,60,-0.25,22.36,41,-0.25,22.36,41,-0.25,-22.36],
 ];
 module ldraw_lib__s__004690as01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__004690as01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__004690as01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__004690as01(line=0.2);

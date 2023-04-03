@@ -2,7 +2,8 @@ use <../../lib.scad>
 use <../../p/rect.scad>
 use <../../p/rect2p.scad>
 use <../../p/recte4.scad>
-function ldraw_lib__s__4229s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__4229s01(realsolid=false) = [
 // 0 ~Plate  2 x  2 with Jet Engine - Fin
 // 0 Name: s\4229s01.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -19,13 +20,13 @@ function ldraw_lib__s__4229s01() = [
 // 0 // Primitives
 // 
 // 1 16 0 -13.88 0 1.83 0 0 0 1 0 0 0 16 recte4.dat
-  [1,16,0,-13.88,0,1.83,0,0,0,1,0,0,0,16, ldraw_lib__recte4()],
+  [1,16,0,-13.88,0,1.83,0,0,0,1,0,0,0,16, ldraw_lib__recte4(realsolid)],
 // 1 16 2.3094 -8.61885 0 1.1349 0 0 .30375 1 0 0 0 40 rect.dat
-  [1,16,2.3094,-8.61885,0,1.1349,0,0,.30375,1,0,0,0,40, ldraw_lib__rect()],
+  [1,16,2.3094,-8.61885,0,1.1349,0,0,.30375,1,0,0,0,40, ldraw_lib__rect(realsolid)],
 // 1 16 -1.23975 -9.4183 0 -.06525 0 0 -.4957 -1 0 0 0 40 rect2p.dat
-  [1,16,-1.23975,-9.4183,0,-.06525,0,0,-.4957,-1,0,0,0,40, ldraw_lib__rect2p()],
+  [1,16,-1.23975,-9.4183,0,-.06525,0,0,-.4957,-1,0,0,0,40, ldraw_lib__rect2p(realsolid)],
 // 1 16 1.23975 -9.4183 0 .06525 0 0 -.4957 -1 0 0 0 -40 rect2p.dat
-  [1,16,1.23975,-9.4183,0,.06525,0,0,-.4957,-1,0,0,0,-40, ldraw_lib__rect2p()],
+  [1,16,1.23975,-9.4183,0,.06525,0,0,-.4957,-1,0,0,0,-40, ldraw_lib__rect2p(realsolid)],
 // 0 // Faces
 // 4 16 1.5528 -5.7954 40 1.1745 -8.9226 40 3.4443 -8.3151 40 2.2962 -5.5434 40
   [4,16,1.5528,-5.7954,40,1.1745,-8.9226,40,3.4443,-8.3151,40,2.2962,-5.5434,40],
@@ -70,5 +71,5 @@ function ldraw_lib__s__4229s01() = [
   [2,24,-1.305,-9.914,-40,1.305,-9.914,-40],
 ];
 module ldraw_lib__s__4229s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__4229s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__4229s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__4229s01(line=0.2);

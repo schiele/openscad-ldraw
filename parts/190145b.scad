@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__190145b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__190145b(realsolid=false) = [
 // 0 Sticker  0.9 x  3.9 with Danger Stripes Chevron
 // 0 Name: 190145b.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -17,7 +18,7 @@ function ldraw_lib__190145b() = [
 // 
 // 
 // 1 16 0 -0.25 0 39 0 0 0 0.25 0 0 0 9 box5-12.dat
-  [1,16,0,-0.25,0,39,0,0,0,0.25,0,0,0,9, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,39,0,0,0,0.25,0,0,0,9, ldraw_lib__box5_12(realsolid)],
 // 3 14 0 -0.25 -5.5 -3.5 -0.25 -9 3.5 -0.25 -9
   [3,14,0,-0.25,-5.5,-3.5,-0.25,-9,3.5,-0.25,-9],
 // 4 0 -3.5 -0.25 -9 0 -0.25 -5.5 0 -0.25 0 -9 -0.25 -9
@@ -68,5 +69,5 @@ function ldraw_lib__190145b() = [
   [3,0,2,-0.25,9,14.5,-0.25,-9,20,-0.25,-9],
 ];
 module ldraw_lib__190145b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__190145b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__190145b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__190145b(line=0.2);

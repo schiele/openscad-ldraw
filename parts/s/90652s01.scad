@@ -4,7 +4,8 @@ use <../../p/4-4ndis.scad>
 use <90640s03.scad>
 use <90640s05.scad>
 use <90652s02.scad>
-function ldraw_lib__s__90652s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__90652s01(realsolid=false) = [
 // 0 ~Constraction Shell  2.5 x  5 x  8 Chest Flat without Front Surface
 // 0 Name: s\90652s01.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -21,27 +22,27 @@ function ldraw_lib__s__90652s01() = [
 // 0 // ball clip
 // 
 // 1 16 0 0 0 1 0 0 0 0 1 0 -1 0 s\90640s03.dat
-  [1,16,0,0,0,1,0,0,0,0,1,0,-1,0, ldraw_lib__s__90640s03()],
+  [1,16,0,0,0,1,0,0,0,0,1,0,-1,0, ldraw_lib__s__90640s03(realsolid)],
 // 0 // double connector
 // 1 16 0 -50 -33.5 0 0 -1 -1 0 0 0 1 0 s\90640s05.dat
-  [1,16,0,-50,-33.5,0,0,-1,-1,0,0,0,1,0, ldraw_lib__s__90640s05()],
+  [1,16,0,-50,-33.5,0,0,-1,-1,0,0,0,1,0, ldraw_lib__s__90640s05(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -60 -30 4.5 0 0 0 0 4.5 0 -4 0 4-4cylo.dat
-  [1,16,0,-60,-30,4.5,0,0,0,0,4.5,0,-4,0, ldraw_lib__4_4cylo()],
+  [1,16,0,-60,-30,4.5,0,0,0,0,4.5,0,-4,0, ldraw_lib__4_4cylo(realsolid)],
 // 1 16 0 -60 -30 4.5 0 0 0 0 4.5 0 -1 0 4-4ndis.dat
-  [1,16,0,-60,-30,4.5,0,0,0,0,4.5,0,-1,0, ldraw_lib__4_4ndis()],
+  [1,16,0,-60,-30,4.5,0,0,0,0,4.5,0,-1,0, ldraw_lib__4_4ndis(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -40 -30 4.5 0 0 0 0 4.5 0 -4 0 4-4cylo.dat
-  [1,16,0,-40,-30,4.5,0,0,0,0,4.5,0,-4,0, ldraw_lib__4_4cylo()],
+  [1,16,0,-40,-30,4.5,0,0,0,0,4.5,0,-4,0, ldraw_lib__4_4cylo(realsolid)],
 // 1 16 0 -40 -30 4.5 0 0 0 0 4.5 0 -1 0 4-4ndis.dat
-  [1,16,0,-40,-30,4.5,0,0,0,0,4.5,0,-1,0, ldraw_lib__4_4ndis()],
+  [1,16,0,-40,-30,4.5,0,0,0,0,4.5,0,-1,0, ldraw_lib__4_4ndis(realsolid)],
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\90652s02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__90652s02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__90652s02(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\90652s02.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__90652s02()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__90652s02(realsolid)],
 // 
 // 2 24 0 69.641 -26.756 0 69.641 -21.288
   [2,24,0,69.641,-26.756,0,69.641,-21.288],
@@ -83,5 +84,5 @@ function ldraw_lib__s__90652s01() = [
   [5,24,0,54.091,-26.288,0,54.091,-21.288,3.888,55.133,-21.288,-3.888,55.133,-21.288],
 ];
 module ldraw_lib__s__90652s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__90652s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__90652s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__90652s01(line=0.2);

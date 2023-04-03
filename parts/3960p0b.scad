@@ -2,7 +2,8 @@ use <../lib.scad>
 use <s/3960p2a.scad>
 use <s/3960p2b.scad>
 use <s/3960s01.scad>
-function ldraw_lib__3960p0b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3960p0b(realsolid=false) = [
 // 0 Dish  4 x  4 Inverted with White and Aqua Swirl Pattern
 // 0 Name: 3960p0b.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -19,16 +20,16 @@ function ldraw_lib__3960p0b() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3960s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3960s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3960s01(realsolid)],
 // 0 !TEXMAP START PLANAR -40 0 40 40 0 40 -40 0 -40 3960p0b.png
 // 0 !: 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3960s03.dat
 // 0 !TEXMAP FALLBACK
 // 1 15 0 0 0 1 0 0 0 1 0 0 0 1 s\3960p2b.dat
-  [1,15,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3960p2b()],
+  [1,15,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3960p2b(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3960p2a.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3960p2a()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3960p2a(realsolid)],
 // 0 !TEXMAP END
 ];
 module ldraw_lib__3960p0b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3960p0b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3960p0b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3960p0b(line=0.2);

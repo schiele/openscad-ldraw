@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/1-4disc.scad>
 use <../p/1-4ndis.scad>
 use <s/3069bs01.scad>
-function ldraw_lib__3069bpc7() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3069bpc7(realsolid=false) = [
 // 0 Tile  1 x  2 with Game Controller Pattern
 // 0 Name: 3069bpc7.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -19,25 +20,25 @@ function ldraw_lib__3069bpc7() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3069bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3069bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3069bs01(realsolid)],
 // 
 // 1 15 -17.6 0 -7.3 -1.4 0 0 0 1 0 0 0 -1.4 1-4disc.dat
-  [1,15,-17.6,0,-7.3,-1.4,0,0,0,1,0,0,0,-1.4, ldraw_lib__1_4disc()],
+  [1,15,-17.6,0,-7.3,-1.4,0,0,0,1,0,0,0,-1.4, ldraw_lib__1_4disc(realsolid)],
 // 1 15 -17.6 0 7.3 -1.4 0 0 0 1 0 0 0 1.4 1-4disc.dat
-  [1,15,-17.6,0,7.3,-1.4,0,0,0,1,0,0,0,1.4, ldraw_lib__1_4disc()],
+  [1,15,-17.6,0,7.3,-1.4,0,0,0,1,0,0,0,1.4, ldraw_lib__1_4disc(realsolid)],
 // 1 15 17.6 0 7.3 1.4 0 0 0 1 0 0 0 1.4 1-4disc.dat
-  [1,15,17.6,0,7.3,1.4,0,0,0,1,0,0,0,1.4, ldraw_lib__1_4disc()],
+  [1,15,17.6,0,7.3,1.4,0,0,0,1,0,0,0,1.4, ldraw_lib__1_4disc(realsolid)],
 // 1 15 17.6 0 -7.3 1.4 0 0 0 1 0 0 0 -1.4 1-4disc.dat
-  [1,15,17.6,0,-7.3,1.4,0,0,0,1,0,0,0,-1.4, ldraw_lib__1_4disc()],
+  [1,15,17.6,0,-7.3,1.4,0,0,0,1,0,0,0,-1.4, ldraw_lib__1_4disc(realsolid)],
 // 
 // 1 16 -17.6 0 -7.3 -1.4 0 0 0 1 0 0 0 -1.4 1-4ndis.dat
-  [1,16,-17.6,0,-7.3,-1.4,0,0,0,1,0,0,0,-1.4, ldraw_lib__1_4ndis()],
+  [1,16,-17.6,0,-7.3,-1.4,0,0,0,1,0,0,0,-1.4, ldraw_lib__1_4ndis(realsolid)],
 // 1 16 -17.6 0 7.3 -1.4 0 0 0 1 0 0 0 1.4 1-4ndis.dat
-  [1,16,-17.6,0,7.3,-1.4,0,0,0,1,0,0,0,1.4, ldraw_lib__1_4ndis()],
+  [1,16,-17.6,0,7.3,-1.4,0,0,0,1,0,0,0,1.4, ldraw_lib__1_4ndis(realsolid)],
 // 1 16 17.6 0 7.3 1.4 0 0 0 1 0 0 0 1.4 1-4ndis.dat
-  [1,16,17.6,0,7.3,1.4,0,0,0,1,0,0,0,1.4, ldraw_lib__1_4ndis()],
+  [1,16,17.6,0,7.3,1.4,0,0,0,1,0,0,0,1.4, ldraw_lib__1_4ndis(realsolid)],
 // 1 16 17.6 0 -7.3 1.4 0 0 0 1 0 0 0 -1.4 1-4ndis.dat
-  [1,16,17.6,0,-7.3,1.4,0,0,0,1,0,0,0,-1.4, ldraw_lib__1_4ndis()],
+  [1,16,17.6,0,-7.3,1.4,0,0,0,1,0,0,0,-1.4, ldraw_lib__1_4ndis(realsolid)],
 // 
 // 4 2 -15.8 0 -2.7 -16.909 0 -2.241 -17 0 -2.7 -16.909 0 -3.159
   [4,2,-15.8,0,-2.7,-16.909,0,-2.241,-17,0,-2.7,-16.909,0,-3.159],
@@ -799,5 +800,5 @@ function ldraw_lib__3069bpc7() = [
   [3,16,-17.6,0,-8.7,-19,0,-8.7,-20,0,-10],
 ];
 module ldraw_lib__3069bpc7(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3069bpc7(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3069bpc7(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3069bpc7(line=0.2);

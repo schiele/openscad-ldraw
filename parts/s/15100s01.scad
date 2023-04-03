@@ -3,7 +3,8 @@ use <../../p/1-4cyls.scad>
 use <../../p/4-4cyli.scad>
 use <../../p/4-4edge.scad>
 use <../../p/connhole.scad>
-function ldraw_lib__s__15100s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__15100s01(realsolid=false) = [
 // 0 ~Technic Pin with Friction with Perpendicular Pin Hole without Pin
 // 0 Name: s\15100s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -18,24 +19,24 @@ function ldraw_lib__s__15100s01() = [
 // 
 // 
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 -1 connhole.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__connhole()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__connhole(realsolid)],
 // 1 16 0 -10 0 -9 0 0 0 20 0 0 0 -9 4-4cyli.dat
-  [1,16,0,-10,0,-9,0,0,0,20,0,0,0,-9, ldraw_lib__4_4cyli()],
+  [1,16,0,-10,0,-9,0,0,0,20,0,0,0,-9, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 -10 0 -9 0 0 0 1 0 0 0 -9 4-4edge.dat
-  [1,16,0,-10,0,-9,0,0,0,1,0,0,0,-9, ldraw_lib__4_4edge()],
+  [1,16,0,-10,0,-9,0,0,0,1,0,0,0,-9, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 10 0 -9 0 0 0 1 0 0 0 -9 4-4edge.dat
-  [1,16,0,10,0,-9,0,0,0,1,0,0,0,-9, ldraw_lib__4_4edge()],
+  [1,16,0,10,0,-9,0,0,0,1,0,0,0,-9, ldraw_lib__4_4edge(realsolid)],
 // 1 16 10 0 0 0 -1 0 8 0 0 0 0 8 4-4cyli.dat
-  [1,16,10,0,0,0,-1,0,8,0,0,0,0,8, ldraw_lib__4_4cyli()],
+  [1,16,10,0,0,0,-1,0,8,0,0,0,0,8, ldraw_lib__4_4cyli(realsolid)],
 // 
 // 1 16 9 0 0 0 -8 0 8 0 0 0 0 -8 1-4cyls.dat
-  [1,16,9,0,0,0,-8,0,8,0,0,0,0,-8, ldraw_lib__1_4cyls()],
+  [1,16,9,0,0,0,-8,0,8,0,0,0,0,-8, ldraw_lib__1_4cyls(realsolid)],
 // 1 16 9 0 0 0 -8 0 8 0 0 0 0 8 1-4cyls.dat
-  [1,16,9,0,0,0,-8,0,8,0,0,0,0,8, ldraw_lib__1_4cyls()],
+  [1,16,9,0,0,0,-8,0,8,0,0,0,0,8, ldraw_lib__1_4cyls(realsolid)],
 // 1 16 9 0 0 0 -8 0 -8 0 0 0 0 -8 1-4cyls.dat
-  [1,16,9,0,0,0,-8,0,-8,0,0,0,0,-8, ldraw_lib__1_4cyls()],
+  [1,16,9,0,0,0,-8,0,-8,0,0,0,0,-8, ldraw_lib__1_4cyls(realsolid)],
 // 1 16 9 0 0 0 -8 0 -8 0 0 0 0 8 1-4cyls.dat
-  [1,16,9,0,0,0,-8,0,-8,0,0,0,0,8, ldraw_lib__1_4cyls()],
+  [1,16,9,0,0,0,-8,0,-8,0,0,0,0,8, ldraw_lib__1_4cyls(realsolid)],
 // 2 24 9 8 0 8.391 7.391 -3.062
   [2,24,9,8,0,8.391,7.391,-3.062],
 // 2 24 8.315 7.135 -3.444 6.836 5.657 -5.657
@@ -88,5 +89,5 @@ function ldraw_lib__s__15100s01() = [
   [4,16,10,-3,-4,10,3,-4,10,3,4,10,-3,4],
 ];
 module ldraw_lib__s__15100s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__15100s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__15100s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__15100s01(line=0.2);

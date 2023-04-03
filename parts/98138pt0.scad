@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/4-4ering.scad>
 use <s/98138s01.scad>
-function ldraw_lib__98138pt0() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__98138pt0(realsolid=false) = [
 // 0 Tile  1 x  1 Round with 'RS' Pattern
 // 0 Name: 98138pt0.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -18,9 +19,9 @@ function ldraw_lib__98138pt0() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\98138s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01(realsolid)],
 // 1 16 0 0 0 9 0 0 0 1 0 0 0 9 4-4ering.dat
-  [1,16,0,0,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4ering()],
+  [1,16,0,0,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4ering(realsolid)],
 // 4 80 -1.4235 0 -5.3126 -2.1048 0 -5.0813 -2.2961 0 -5.5433 -1.5529 0 -5.7956
   [4,80,-1.4235,0,-5.3126,-2.1048,0,-5.0813,-2.2961,0,-5.5433,-1.5529,0,-5.7956],
 // 4 80 0 0 -5.5 -0.7179 0 -5.453 -0.7832 0 -5.9487 0 0 -6
@@ -793,5 +794,5 @@ function ldraw_lib__98138pt0() = [
   [3,16,-3.26,0,-1.08,-4.7631,0,-2.75,-4.3634,0,-3.3482],
 ];
 module ldraw_lib__98138pt0(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__98138pt0(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__98138pt0(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__98138pt0(line=0.2);

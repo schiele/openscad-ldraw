@@ -2,7 +2,8 @@ use <../lib.scad>
 use <s/3960ph1s01.scad>
 use <s/3960s01.scad>
 use <s/3960s05.scad>
-function ldraw_lib__3960ph2() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3960ph2(realsolid=false) = [
 // 0 Dish  4 x  4 Inverted with Metallic Gold "HOGWARTS EXPRESS" on Red Background and Small White "5972" and "10 A" in Circle Pattern
 // 0 Name: 3960ph2.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -19,12 +20,12 @@ function ldraw_lib__3960ph2() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3960s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3960s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3960s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3960s05.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3960s05()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3960s05(realsolid)],
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3960ph1s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3960ph1s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3960ph1s01(realsolid)],
 // 
 // 0 // "5972"
 // 0 // Font: Gill Sans MT
@@ -538,5 +539,5 @@ function ldraw_lib__3960ph2() = [
   [4,16,-14.75,4,-25.547,-17.9596,4,-23.4053,-21.308,6,-27.769,-17.5,6,-30.31],
 ];
 module ldraw_lib__3960ph2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3960ph2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3960ph2(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3960ph2(line=0.2);

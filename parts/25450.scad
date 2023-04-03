@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4cylo.scad>
 use <../p/4-4ring8.scad>
 use <s/25452s01.scad>
-function ldraw_lib__25450() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__25450(realsolid=false) = [
 // 0 ~Electric Powered Up Light Middle Box Bottom
 // 0 Name: 25450.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -19,22 +20,22 @@ function ldraw_lib__25450() = [
 // 
 // 
 // 1 16 0 0 0 -1 0 0 0 -1 0 0 0 1 s\25452s01.dat
-  [1,16,0,0,0,-1,0,0,0,-1,0,0,0,1, ldraw_lib__s__25452s01()],
+  [1,16,0,0,0,-1,0,0,0,-1,0,0,0,1, ldraw_lib__s__25452s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 -1 0 0 0 -1 s\25452s01.dat
-  [1,16,0,0,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__s__25452s01()],
+  [1,16,0,0,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__s__25452s01(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 10 0 0 0 8 0 -2 0 8 0 0 4-4cylo.dat
-  [1,16,0,10,0,0,0,8,0,-2,0,8,0,0, ldraw_lib__4_4cylo()],
+  [1,16,0,10,0,0,0,8,0,-2,0,8,0,0, ldraw_lib__4_4cylo(realsolid)],
 // 1 16 0 10 0 0 0 -1 0 -1 0 1 0 0 4-4ring8.dat
-  [1,16,0,10,0,0,0,-1,0,-1,0,1,0,0, ldraw_lib__4_4ring8()],
+  [1,16,0,10,0,0,0,-1,0,-1,0,1,0,0, ldraw_lib__4_4ring8(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 8 0 0 0 9 0 -2 0 9 0 0 4-4cylo.dat
-  [1,16,0,8,0,0,0,9,0,-2,0,9,0,0, ldraw_lib__4_4cylo()],
+  [1,16,0,8,0,0,0,9,0,-2,0,9,0,0, ldraw_lib__4_4cylo(realsolid)],
 // 1 16 0 8 0 0 0 1 0 1 0 1 0 0 4-4ring8.dat
-  [1,16,0,8,0,0,0,1,0,1,0,1,0,0, ldraw_lib__4_4ring8()],
+  [1,16,0,8,0,0,0,1,0,1,0,1,0,0, ldraw_lib__4_4ring8(realsolid)],
 ];
 module ldraw_lib__25450(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__25450(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__25450(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__25450(line=0.2);

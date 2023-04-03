@@ -3,7 +3,8 @@ use <../p/1-4cyli.scad>
 use <s/973pdb7s01.scad>
 use <s/973pdb7s02.scad>
 use <s/973s01.scad>
-function ldraw_lib__973pdb7() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__973pdb7(realsolid=false) = [
 // 0 Minifig Torso with Tan Chest and Black and White Tail to the Left Pattern
 // 0 Name: 973pdb7.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -24,14 +25,14 @@ function ldraw_lib__973pdb7() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01(realsolid)],
 // 1 15 0 -4 0 4.243 0 -4.243 0 -8 0 -4.243 0 -4.243 1-4cyli.dat
-  [1,15,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli()],
+  [1,15,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli(realsolid)],
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973pdb7s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973pdb7s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973pdb7s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973pdb7s02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973pdb7s02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973pdb7s02(realsolid)],
 // 
 // 4 16 1.25 2.19 -10 0.91 2.39 -10 1.61 2.47 -10 2.15 2.15 -10
   [4,16,1.25,2.19,-10,0.91,2.39,-10,1.61,2.47,-10,2.15,2.15,-10],
@@ -191,5 +192,5 @@ function ldraw_lib__973pdb7() = [
   [3,19,-9.86,1,-10,0.91,2.39,-10,1.25,2.19,-10],
 ];
 module ldraw_lib__973pdb7(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__973pdb7(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__973pdb7(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__973pdb7(line=0.2);

@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
 use <s/003238s4.scad>
-function ldraw_lib__003238i() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__003238i(realsolid=false) = [
 // 0 Sticker Flag with Crown on Dark Pink Background
 // 0 Name: 003238i.dat
 // 0 Author: Alex Taylor [anathema]
@@ -20,12 +21,12 @@ function ldraw_lib__003238i() = [
 // 
 // 
 // 1 16 0 -0.25 0 30 0 0 0 0.25 0 0 0 24 box5-12.dat
-  [1,16,0,-0.25,0,30,0,0,0,0.25,0,0,0,24, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,30,0,0,0,0.25,0,0,0,24, ldraw_lib__box5_12(realsolid)],
 // 1 7 0 -0.25 0 .1 0 0 0 1 0 0 0 .1 s\003238s4.dat
-  [1,7,0,-0.25,0,.1,0,0,0,1,0,0,0,.1, ldraw_lib__s__003238s4()],
+  [1,7,0,-0.25,0,.1,0,0,0,1,0,0,0,.1, ldraw_lib__s__003238s4(realsolid)],
 // 1 7 0 -0.25 0 -.1 0 0 0 1 0 0 0 .1 s\003238s4.dat
-  [1,7,0,-0.25,0,-.1,0,0,0,1,0,0,0,.1, ldraw_lib__s__003238s4()],
+  [1,7,0,-0.25,0,-.1,0,0,0,1,0,0,0,.1, ldraw_lib__s__003238s4(realsolid)],
 ];
 module ldraw_lib__003238i(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__003238i(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__003238i(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__003238i(line=0.2);

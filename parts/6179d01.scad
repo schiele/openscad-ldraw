@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <4297014a.scad>
 use <6179.scad>
-function ldraw_lib__6179d01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6179d01(realsolid=false) = [
 // 0 Plate  4 x  4 with 4 Studs on One Edge with Batman Logo Sticker
 // 0 Name: 6179d01.dat
 // 0 Author: Michael Heidemann [mikeheide]
@@ -20,11 +21,11 @@ function ldraw_lib__6179d01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 6179.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__6179()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__6179(realsolid)],
 // 1 16 0 0 -10 1 0 0 0 1 0 0 0 1 4297014a.dat
-  [1,16,0,0,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__4297014a()],
+  [1,16,0,0,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__4297014a(realsolid)],
 // 0
 ];
 module ldraw_lib__6179d01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6179d01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6179d01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6179d01(line=0.2);

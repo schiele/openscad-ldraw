@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__2345p02a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__2345p02a(realsolid=false) = [
 // 0 ~Panel Wall  3 x  3 x  6 Scattered Stones Background Pattern
 // 0 Name: s\2345p02a.dat
 // 0 Author: Chris Dee [cwdee]
@@ -289,5 +290,5 @@ function ldraw_lib__s__2345p02a() = [
 // 0
 ];
 module ldraw_lib__s__2345p02a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__2345p02a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__2345p02a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__2345p02a(line=0.2);

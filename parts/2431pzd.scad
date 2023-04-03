@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/2431s01.scad>
-function ldraw_lib__2431pzd() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2431pzd(realsolid=false) = [
 // 0 Tile  1 x  4 with 10 Medium Nougat Squares Pattern
 // 0 Name: 2431pzd.dat
 // 0 Author: Vincent Messenet [Cheenzo]
@@ -19,7 +20,7 @@ function ldraw_lib__2431pzd() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2431s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2431s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2431s01(realsolid)],
 // 
 // 4 84 36.5 0 6.25 36.5 0 4.75 38 0 4.75 38 0 6.25
   [4,84,36.5,0,6.25,36.5,0,4.75,38,0,4.75,38,0,6.25],
@@ -117,5 +118,5 @@ function ldraw_lib__2431pzd() = [
   [4,16,-40,0,-10,40,0,-10,24,0,-2.5,-24,0,-2.5],
 ];
 module ldraw_lib__2431pzd(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2431pzd(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2431pzd(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2431pzd(line=0.2);

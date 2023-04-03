@@ -8,7 +8,8 @@ use <../p/box2-5.scad>
 use <../p/box3u4a.scad>
 use <../p/box4.scad>
 use <../p/bump5000.scad>
-function ldraw_lib__6237() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6237(realsolid=false) = [
 // 0 Window  1 x  3 x  4 Pane Freestyle
 // 0 Name: 6237.dat
 // 0 Author: James Jessiman
@@ -33,29 +34,29 @@ function ldraw_lib__6237() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -3 58 23 0 6 0 0 0 14 16 0 0 box4.dat
-  [1,16,-3,58,23,0,6,0,0,0,14,16,0,0, ldraw_lib__box4()],
+  [1,16,-3,58,23,0,6,0,0,0,14,16,0,0, ldraw_lib__box4(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 22 23 3 0 0 0 14 0 0 0 16 box2-5.dat
-  [1,16,0,22,23,3,0,0,0,14,0,0,0,16, ldraw_lib__box2_5()],
+  [1,16,0,22,23,3,0,0,0,14,0,0,0,16, ldraw_lib__box2_5(realsolid)],
 // 1 16 3 36 39 0 1 0 -28 0 0 0 0 -32 48\1-4edge.dat
-  [1,16,3,36,39,0,1,0,-28,0,0,0,0,-32, ldraw_lib__48__1_4edge()],
+  [1,16,3,36,39,0,1,0,-28,0,0,0,0,-32, ldraw_lib__48__1_4edge(realsolid)],
 // 1 16 -3 36 39 0 1 0 -28 0 0 0 0 -32 48\1-4edge.dat
-  [1,16,-3,36,39,0,1,0,-28,0,0,0,0,-32, ldraw_lib__48__1_4edge()],
+  [1,16,-3,36,39,0,1,0,-28,0,0,0,0,-32, ldraw_lib__48__1_4edge(realsolid)],
 // 1 16 0 40 0 3 0 0 0 0 40 0 45 0 box3u4a.dat
-  [1,16,0,40,0,3,0,0,0,0,40,0,45,0, ldraw_lib__box3u4a()],
+  [1,16,0,40,0,3,0,0,0,0,40,0,45,0, ldraw_lib__box3u4a(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 3 36 39 0 -6 0 -28 0 0 0 0 -32 48\1-4cyli.dat
-  [1,16,3,36,39,0,-6,0,-28,0,0,0,0,-32, ldraw_lib__48__1_4cyli()],
+  [1,16,3,36,39,0,-6,0,-28,0,0,0,0,-32, ldraw_lib__48__1_4cyli(realsolid)],
 // 1 16 0 0 0 3 0 0 0 80 0 0 0 -3 2-4cylc.dat
-  [1,16,0,0,0,3,0,0,0,80,0,0,0,-3, ldraw_lib__2_4cylc()],
+  [1,16,0,0,0,3,0,0,0,80,0,0,0,-3, ldraw_lib__2_4cylc(realsolid)],
 // 1 16 0 80 0 3 0 0 0 -1 0 0 0 -3 2-4disc.dat
-  [1,16,0,80,0,3,0,0,0,-1,0,0,0,-3, ldraw_lib__2_4disc()],
+  [1,16,0,80,0,3,0,0,0,-1,0,0,0,-3, ldraw_lib__2_4disc(realsolid)],
 // 1 16 3 36 39 0 -1 0 -28 0 0 0 0 -32 48\1-4ndis.dat
-  [1,16,3,36,39,0,-1,0,-28,0,0,0,0,-32, ldraw_lib__48__1_4ndis()],
+  [1,16,3,36,39,0,-1,0,-28,0,0,0,0,-32, ldraw_lib__48__1_4ndis(realsolid)],
 // 1 16 -3 36 39 0 1 0 -28 0 0 0 0 -32 48\1-4ndis.dat
-  [1,16,-3,36,39,0,1,0,-28,0,0,0,0,-32, ldraw_lib__48__1_4ndis()],
+  [1,16,-3,36,39,0,1,0,-28,0,0,0,0,-32, ldraw_lib__48__1_4ndis(realsolid)],
 // 4 16 3 72 7 3 72 39 3 80 45 3 80 0
   [4,16,3,72,7,3,72,39,3,80,45,3,80,0],
 // 4 16 3 36 7 3 36 39 3 44 39 3 44 7
@@ -77,10 +78,10 @@ function ldraw_lib__6237() = [
 // 4 16 -3 80 0 -3 72 7 -3 8 7 -3 0 0
   [4,16,-3,80,0,-3,72,7,-3,8,7,-3,0,0],
 // 1 16 0 0 0 2 0 0 0 2 0 0 0 2 bump5000.dat
-  [1,16,0,0,0,2,0,0,0,2,0,0,0,2, ldraw_lib__bump5000()],
+  [1,16,0,0,0,2,0,0,0,2,0,0,0,2, ldraw_lib__bump5000(realsolid)],
 // 1 16 0 80 0 2 0 0 0 -2 0 0 0 2 bump5000.dat
-  [1,16,0,80,0,2,0,0,0,-2,0,0,0,2, ldraw_lib__bump5000()],
+  [1,16,0,80,0,2,0,0,0,-2,0,0,0,2, ldraw_lib__bump5000(realsolid)],
 ];
 module ldraw_lib__6237(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6237(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6237(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6237(line=0.2);

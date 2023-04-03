@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4disc.scad>
 use <s/3626bs05.scad>
 use <s/3626cs01.scad>
-function ldraw_lib__3626cpn2() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3626cpn2(realsolid=false) = [
 // 0 Minifig Head Skull Cracked with Metal Plates Pattern
 // 0 Name: 3626cpn2.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -19,14 +20,14 @@ function ldraw_lib__3626cpn2() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3626cs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626cs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626cs01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3626bs05.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626bs05()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626bs05(realsolid)],
 // 0 //
 // 1 15 3.5 9 -12.304 0.5 0 0 0 0 -0.5 0.099 1 0 4-4disc.dat
-  [1,15,3.5,9,-12.304,0.5,0,0,0,0,-0.5,0.099,1,0, ldraw_lib__4_4disc()],
+  [1,15,3.5,9,-12.304,0.5,0,0,0,0,-0.5,0.099,1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 15 -3.5 9 -12.304 0.5 0 0 0 0 -0.5 -0.099 1 0 4-4disc.dat
-  [1,15,-3.5,9,-12.304,0.5,0,0,0,0,-0.5,-0.099,1,0, ldraw_lib__4_4disc()],
+  [1,15,-3.5,9,-12.304,0.5,0,0,0,0,-0.5,-0.099,1,0, ldraw_lib__4_4disc(realsolid)],
 // 0 //
 // 4 4 -3.5 8.1 -12.304 -3.5 8.5 -12.304 -3.309 8.538 -12.342 -3.1 8.1 -12.384
   [4,4,-3.5,8.1,-12.304,-3.5,8.5,-12.304,-3.309,8.538,-12.342,-3.1,8.1,-12.384],
@@ -1603,5 +1604,5 @@ function ldraw_lib__3626cpn2() = [
   [4,16,-13,17,0.006,-12.011,17,-4.975,-12.011,4,-4.973,-13,4,0],
 ];
 module ldraw_lib__3626cpn2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3626cpn2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3626cpn2(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3626cpn2(line=0.2);

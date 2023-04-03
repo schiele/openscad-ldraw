@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__6153754c() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6153754c(realsolid=false) = [
 // 0 Sticker  1.5 x  3.8 with Dark Azure Volkswagen Left Side Window Shape
 // 0 Name: 6153754c.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -142,5 +143,5 @@ function ldraw_lib__6153754c() = [
   [4,16,32.7,-0.25,-13.3,34.2,-0.25,-14.8,38,-0.25,-14.8,38,-0.25,-13.3],
 ];
 module ldraw_lib__6153754c(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6153754c(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6153754c(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6153754c(line=0.2);

@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <u9108s01.scad>
-function ldraw_lib__s__u9108s00() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__u9108s00(realsolid=false) = [
 // 0 ~Figure Fabuland Cat Half with Blank Patterned Areas
 // 0 Name: s\u9108s00.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -15,7 +16,7 @@ function ldraw_lib__s__u9108s00() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\u9108s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__u9108s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__u9108s01(realsolid)],
 // 0 // Eye area
 // 3 16 0 -22.761 -21.407 -0.795 -21.696 -21.73 0 -21.596 -21.768
   [3,16,0,-22.761,-21.407,-0.795,-21.696,-21.73,0,-21.596,-21.768],
@@ -474,5 +475,5 @@ function ldraw_lib__s__u9108s00() = [
 // 0 //
 ];
 module ldraw_lib__s__u9108s00(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__u9108s00(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__u9108s00(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__u9108s00(line=0.2);

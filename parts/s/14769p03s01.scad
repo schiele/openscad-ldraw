@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/4-4ering.scad>
-function ldraw_lib__s__14769p03s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__14769p03s01(realsolid=false) = [
 // 0 ~Magenta and Bright Pink Life Preserver with Curved Bands Pattern for Tile  2 x  2 Round Common
 // 0 Name: s\14769p03s01.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -17,7 +18,7 @@ function ldraw_lib__s__14769p03s01() = [
 // 
 // 
 // 1 16 0 0 0 20 0 0 0 1 0 0 0 20 4-4ering.dat
-  [1,16,0,0,0,20,0,0,0,1,0,0,0,20, ldraw_lib__4_4ering()],
+  [1,16,0,0,0,20,0,0,0,1,0,0,0,20, ldraw_lib__4_4ering(realsolid)],
 // 4 26 -17.6593 0 0 -17.32 0 3.4452 -18.5339 0 3.6866 -18.897 0 0
   [4,26,-17.6593,0,0,-17.32,0,3.4452,-18.5339,0,3.6866,-18.897,0,0],
 // 4 26 -17.32 0 -3.4452 -17.6593 0 0 -18.897 0 0 -18.5339 0 -3.6866
@@ -354,5 +355,5 @@ function ldraw_lib__s__14769p03s01() = [
   [4,26,-10.4986,0,15.7123,-13.3622,0,13.3622,-8.4,0,15.4,-7.2316,0,17.4585],
 ];
 module ldraw_lib__s__14769p03s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__14769p03s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__14769p03s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__14769p03s01(line=0.2);

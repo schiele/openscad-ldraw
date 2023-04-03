@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4cylo.scad>
 use <../p/4-4ring6.scad>
 use <../p/axl3hole.scad>
-function ldraw_lib__27938() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__27938(realsolid=false) = [
 // 0 Technic Worm Gear 1L
 // 0 Name: 27938.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -17,13 +18,13 @@ function ldraw_lib__27938() = [
 // 
 // 
 // 1 16 0 0 10 0 0 -1 -1 0 0 0 -20 0 axl3hole.dat
-  [1,16,0,0,10,0,0,-1,-1,0,0,0,-20,0, ldraw_lib__axl3hole()],
+  [1,16,0,0,10,0,0,-1,-1,0,0,0,-20,0, ldraw_lib__axl3hole(realsolid)],
 // 1 16 0 0 -10 7 0 0 0 0 -7 0 20 0 4-4cylo.dat
-  [1,16,0,0,-10,7,0,0,0,0,-7,0,20,0, ldraw_lib__4_4cylo()],
+  [1,16,0,0,-10,7,0,0,0,0,-7,0,20,0, ldraw_lib__4_4cylo(realsolid)],
 // 1 16 0 0 -10 1 0 0 0 0 1 0 1 0 4-4ring6.dat
-  [1,16,0,0,-10,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4ring6()],
+  [1,16,0,0,-10,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4ring6(realsolid)],
 // 1 16 0 0 10 1 0 0 0 0 1 0 -1 0 4-4ring6.dat
-  [1,16,0,0,10,1,0,0,0,0,1,0,-1,0, ldraw_lib__4_4ring6()],
+  [1,16,0,0,10,1,0,0,0,0,1,0,-1,0, ldraw_lib__4_4ring6(realsolid)],
 // 3 16 6.4672 -2.6788 7.1 7 0 7.7 8.6487 -3.5082 8
   [3,16,6.4672,-2.6788,7.1,7,0,7.7,8.6487,-3.5082,8],
 // 3 16 7.9388 -8.2569 8 6.4672 -2.6788 7.1 8.6487 -3.5082 8
@@ -1328,5 +1329,5 @@ function ldraw_lib__27938() = [
   [5,24,17.8078,-2.4112,-6.7,17.8078,2.4113,-4.3,17.375,-4.587,-4.8,17.375,4.5871,-6.2],
 ];
 module ldraw_lib__27938(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__27938(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__27938(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__27938(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <stug-4x4.scad>
-function ldraw_lib__stug_8x8() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__stug_8x8(realsolid=false) = [
 // 0 Stud Group  8 x  8
 // 0 Name: stug-8x8.dat
 // 0 Author: Tore Eriksson [Tore_Eriksson]
@@ -19,15 +20,15 @@ function ldraw_lib__stug_8x8() = [
 // 
 // 
 // 1 16 -40 0 -40 1 0 0 0 1 0 0 0 1 stug-4x4.dat
-  [1,16,-40,0,-40,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_4x4()],
+  [1,16,-40,0,-40,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_4x4(realsolid)],
 // 1 16 -40 0 40 1 0 0 0 1 0 0 0 1 stug-4x4.dat
-  [1,16,-40,0,40,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_4x4()],
+  [1,16,-40,0,40,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_4x4(realsolid)],
 // 1 16 40 0 -40 1 0 0 0 1 0 0 0 1 stug-4x4.dat
-  [1,16,40,0,-40,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_4x4()],
+  [1,16,40,0,-40,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_4x4(realsolid)],
 // 1 16 40 0 40 1 0 0 0 1 0 0 0 1 stug-4x4.dat
-  [1,16,40,0,40,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_4x4()],
+  [1,16,40,0,40,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_4x4(realsolid)],
 // 0
 ];
 module ldraw_lib__stug_8x8(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__stug_8x8(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__stug_8x8(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__stug_8x8(line=0.2);

@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__48__1_4cyls2() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__48__1_4cyls2(realsolid=false) = [
 // 0 Hi-Res Cylinder Sloped 0.25 Convex
 // 0 Name: 48\1-4cyls2.dat
 // 0 Author: Niels Karsdorp [nielsk]
@@ -65,5 +66,5 @@ function ldraw_lib__48__1_4cyls2() = [
   [5,24,-1,0,0,-1,1,0,-1,0,-1,-0.9914,0,0.1305],
 ];
 module ldraw_lib__48__1_4cyls2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__48__1_4cyls2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__48__1_4cyls2(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__48__1_4cyls2(line=0.2);

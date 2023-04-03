@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__22977() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__22977(realsolid=false) = [
 // 0 ~Spring for Technic Shock Absorber  6.5L Extra Stiff
 // 0 Name: 22977.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -3859,5 +3860,5 @@ function ldraw_lib__22977() = [
   [4,16,6.698,39.005,2.774,7.25,39.551,0,6.5,38.809,0,6.005,38.263,2.487],
 ];
 module ldraw_lib__22977(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__22977(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__22977(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__22977(line=0.2);

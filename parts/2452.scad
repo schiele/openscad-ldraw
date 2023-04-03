@@ -3,7 +3,8 @@ use <../p/box5.scad>
 use <../p/h2.scad>
 use <../p/stud.scad>
 use <../p/stud3.scad>
-function ldraw_lib__2452() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2452(realsolid=false) = [
 // 0 Hinge Plate  1 x  2 with 3 Fingers On Side
 // 0 Name: 2452.dat
 // 0 Author: James Jessiman
@@ -22,11 +23,11 @@ function ldraw_lib__2452() = [
 // 
 // 
 // 1 16 0 4 0 1 0 0 0 -1 0 0 0 1 stud3.dat
-  [1,16,0,4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud3()],
+  [1,16,0,4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud3(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 8 0 16 0 0 0 -4 0 0 0 6 box5.dat
-  [1,16,0,8,0,16,0,0,0,-4,0,0,0,6, ldraw_lib__box5()],
+  [1,16,0,8,0,16,0,0,0,-4,0,0,0,6, ldraw_lib__box5(realsolid)],
 // 
 // 4 16 20 8 10 16 8 6 -16 8 6 -20 8 10
   [4,16,20,8,10,16,8,6,-16,8,6,-20,8,10],
@@ -84,14 +85,14 @@ function ldraw_lib__2452() = [
   [4,16,-20,0,10,20,0,10,20,8,10,-20,8,10],
 // 
 // 1 16 0 4 -10 0 0 1 1 0 0 0 -1 0 h2.dat
-  [1,16,0,4,-10,0,0,1,1,0,0,0,-1,0, ldraw_lib__h2()],
+  [1,16,0,4,-10,0,0,1,1,0,0,0,-1,0, ldraw_lib__h2(realsolid)],
 // 
 // 1 16 -10 0 0 0 0 1 0 1 0 -1 0 0 stud.dat
-  [1,16,-10,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__stud()],
+  [1,16,-10,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__stud(realsolid)],
 // 1 16 10 0 0 0 0 1 0 1 0 -1 0 0 stud.dat
-  [1,16,10,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__stud()],
+  [1,16,10,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__stud(realsolid)],
 // 0
 ];
 module ldraw_lib__2452(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2452(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2452(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2452(line=0.2);

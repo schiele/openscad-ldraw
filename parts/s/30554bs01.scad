@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__30554bs01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__30554bs01(realsolid=false) = [
 // 0 ~Hinge Arm Locking - Centre Body with Hole - 1/4
 // 0 Name: s\30554bs01.dat
 // 0 Author: Christophe Mitillo [Christophe_Mitillo]
@@ -267,5 +268,5 @@ function ldraw_lib__s__30554bs01() = [
   [5,24,3.696,0,-1.531,3.696,8.147,-1.531,4,0,0,2.828,0,-2.828],
 ];
 module ldraw_lib__s__30554bs01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__30554bs01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__30554bs01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__30554bs01(line=0.2);

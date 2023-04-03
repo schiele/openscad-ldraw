@@ -3,7 +3,8 @@ use <../p/4-4disc.scad>
 use <../p/4-4ndis.scad>
 use <../p/4-4ring5.scad>
 use <s/3010s01.scad>
-function ldraw_lib__3010pzt() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3010pzt(realsolid=false) = [
 // 0 Brick  1 x  4 with  2 White Ovals and Black Outline Pattern
 // 0 Name: 3010pzt.dat
 // 0 Author: Vincent Messenet [Cheenzo]
@@ -20,21 +21,21 @@ function ldraw_lib__3010pzt() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3010s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3010s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3010s01(realsolid)],
 // 
 // 1 15 24 12 -10 6.25 0 0 0 0 7.75 0 1 0 4-4disc.dat
-  [1,15,24,12,-10,6.25,0,0,0,0,7.75,0,1,0, ldraw_lib__4_4disc()],
+  [1,15,24,12,-10,6.25,0,0,0,0,7.75,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 0 24 12 -10 1.25 0 0 0 0 1.55 0 1 0 4-4ring5.dat
-  [1,0,24,12,-10,1.25,0,0,0,0,1.55,0,1,0, ldraw_lib__4_4ring5()],
+  [1,0,24,12,-10,1.25,0,0,0,0,1.55,0,1,0, ldraw_lib__4_4ring5(realsolid)],
 // 1 16 24 12 -10 7.5 0 0 0 0 9.3 0 1 0 4-4ndis.dat
-  [1,16,24,12,-10,7.5,0,0,0,0,9.3,0,1,0, ldraw_lib__4_4ndis()],
+  [1,16,24,12,-10,7.5,0,0,0,0,9.3,0,1,0, ldraw_lib__4_4ndis(realsolid)],
 // 
 // 1 15 -24 12 -10 6.25 0 0 0 0 7.75 0 1 0 4-4disc.dat
-  [1,15,-24,12,-10,6.25,0,0,0,0,7.75,0,1,0, ldraw_lib__4_4disc()],
+  [1,15,-24,12,-10,6.25,0,0,0,0,7.75,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 0 -24 12 -10 1.25 0 0 0 0 1.55 0 1 0 4-4ring5.dat
-  [1,0,-24,12,-10,1.25,0,0,0,0,1.55,0,1,0, ldraw_lib__4_4ring5()],
+  [1,0,-24,12,-10,1.25,0,0,0,0,1.55,0,1,0, ldraw_lib__4_4ring5(realsolid)],
 // 1 16 -24 12 -10 7.5 0 0 0 0 9.3 0 1 0 4-4ndis.dat
-  [1,16,-24,12,-10,7.5,0,0,0,0,9.3,0,1,0, ldraw_lib__4_4ndis()],
+  [1,16,-24,12,-10,7.5,0,0,0,0,9.3,0,1,0, ldraw_lib__4_4ndis(realsolid)],
 // 
 // 3 16 -40 0 -10 -31.5 12 -10 -31.5 2.7 -10
   [3,16,-40,0,-10,-31.5,12,-10,-31.5,2.7,-10],
@@ -76,5 +77,5 @@ function ldraw_lib__3010pzt() = [
   [3,16,16.5,21.3,-10,40,24,-10,24,21.3,-10],
 ];
 module ldraw_lib__3010pzt(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3010pzt(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3010pzt(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3010pzt(line=0.2);

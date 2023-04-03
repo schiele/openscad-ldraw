@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/2-4ndis.scad>
-function ldraw_lib__s__30230s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__30230s02(realsolid=false) = [
 // 0 ~Wing Insectoid Large with Arm Hinge Shiny Patternable Surface
 // 0 Name: s\30230s02.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -29,10 +30,10 @@ function ldraw_lib__s__30230s02() = [
 // 4 16 -4.7 -1 38.6 7 -1 159 -44.6 -1 136.3 -10.2 -1 37.2
   [4,16,-4.7,-1,38.6,7,-1,159,-44.6,-1,136.3,-10.2,-1,37.2],
 // 1 16 15 -1 167 0 0 -8 0 1 0 8 0 0 2-4ndis.dat
-  [1,16,15,-1,167,0,0,-8,0,1,0,8,0,0, ldraw_lib__2_4ndis()],
+  [1,16,15,-1,167,0,0,-8,0,1,0,8,0,0, ldraw_lib__2_4ndis(realsolid)],
 // 3 16 7 -1 175 15 -1 175 -13.4 -1 283.8
   [3,16,7,-1,175,15,-1,175,-13.4,-1,283.8],
 ];
 module ldraw_lib__s__30230s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__30230s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__30230s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__30230s02(line=0.2);

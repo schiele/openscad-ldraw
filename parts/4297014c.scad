@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__4297014c() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4297014c(realsolid=false) = [
 // 0 Sticker Tail Left with Red "J" on White
 // 0 Name: 4297014c.dat
 // 0 Author: Michael Heidemann [mikeheide]
@@ -182,5 +183,5 @@ function ldraw_lib__4297014c() = [
 // 0
 ];
 module ldraw_lib__4297014c(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4297014c(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4297014c(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4297014c(line=0.2);

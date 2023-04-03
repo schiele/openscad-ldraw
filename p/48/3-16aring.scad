@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__48__3_16aring() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__48__3_16aring(realsolid=false) = [
 // 0 Adaptor Ring Hi-Res to Normal 0.1875
 // 0 Name: 48\3-16aring.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -21,5 +22,5 @@ function ldraw_lib__48__3_16aring() = [
   [4,16,0.3827,0,0.9239,0.7071,0,0.7071,0.6088,0,0.7934,0.5,0,0.866],
 ];
 module ldraw_lib__48__3_16aring(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__48__3_16aring(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__48__3_16aring(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__48__3_16aring(line=0.2);

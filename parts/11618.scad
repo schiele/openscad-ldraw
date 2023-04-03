@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/4-4cylc.scad>
-function ldraw_lib__11618() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__11618(realsolid=false) = [
 // 0 Figure Friends Hair Decoration, Bow with Heart, Long Ribbon with Pin
 // 0 Name: 11618.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -19,7 +20,7 @@ function ldraw_lib__11618() = [
 // 
 // 
 // 1 16 0 5.5 0 2 0 0 0 -5.5 0 0 0 2 4-4cylc.dat
-  [1,16,0,5.5,0,2,0,0,0,-5.5,0,0,0,2, ldraw_lib__4_4cylc()],
+  [1,16,0,5.5,0,2,0,0,0,-5.5,0,0,0,2, ldraw_lib__4_4cylc(realsolid)],
 // 4 16 1.202 -4.875 5.224 0.998 0 5.182 0 0 4.934 0 -4.875 4.934
   [4,16,1.202,-4.875,5.224,0.998,0,5.182,0,0,4.934,0,-4.875,4.934],
 // 3 16 1.202 -4.875 5.224 3.034 -4.875 5.117 0.998 0 5.182
@@ -1072,5 +1073,5 @@ function ldraw_lib__11618() = [
   [5,24,-8.797,-4.66,5.227,-4.001,-3.899,4.723,-9.003,-4.409,7.63,-5.129,-4.031,3.831],
 ];
 module ldraw_lib__11618(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__11618(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__11618(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__11618(line=0.2);

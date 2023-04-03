@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/54760s01.scad>
-function ldraw_lib__54760() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__54760(realsolid=false) = [
 // 0 ~Glass for Plane Front  8 x 16 x  5
 // 0 Name: 54760.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -17,9 +18,9 @@ function ldraw_lib__54760() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\54760s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__54760s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__54760s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\54760s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__54760s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__54760s01(realsolid)],
 // 2 24 -16.336 25.204 -128.485 16.336 25.204 -128.485
   [2,24,-16.336,25.204,-128.485,16.336,25.204,-128.485],
 // 3 16 -16.336 25.204 -128.485 0 26.825 -134.165 16.336 25.204 -128.485
@@ -72,5 +73,5 @@ function ldraw_lib__54760() = [
   [5,24,0,23.85,-138.417,0,30.589,-151.734,12.741,23.849,-137.264,-12.741,23.849,-137.264],
 ];
 module ldraw_lib__54760(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__54760(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__54760(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__54760(line=0.2);

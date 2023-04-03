@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/4444s01.scad>
-function ldraw_lib__4444p09() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4444p09(realsolid=false) = [
 // 0 Panel  2 x  5 x  6 Wall with Yellow Dragons and Dark Grey Stones Pattern
 // 0 Name: 4444p09.dat
 // 0 Author: Alex Taylor [anathema]
@@ -15,7 +16,7 @@ function ldraw_lib__4444p09() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4444s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4444s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4444s01(realsolid)],
 // 4 14 -13 30.9 -10 -14.4 33.8 -10 -13.4 34.2 -10 -11.7 31.5 -10
   [4,14,-13,30.9,-10,-14.4,33.8,-10,-13.4,34.2,-10,-11.7,31.5,-10],
 // 4 16 17 98.1 -10 15.4 97.9 -10 14.8 106.2 -10 16.8 106.2 -10
@@ -4212,5 +4213,5 @@ function ldraw_lib__4444p09() = [
   [3,16,10,72,-10,11,59,-10,10,42,-10],
 ];
 module ldraw_lib__4444p09(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4444p09(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4444p09(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4444p09(line=0.2);

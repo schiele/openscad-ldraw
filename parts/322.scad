@@ -3,7 +3,8 @@ use <../p/4-4cyli.scad>
 use <../p/4-4edge.scad>
 use <../p/4-4ndis.scad>
 use <../p/stud.scad>
-function ldraw_lib__322() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__322(realsolid=false) = [
 // 0 ~Electric Lightbrick  2 x  4
 // 0 Name: 322.dat
 // 0 Author: Niels Karsdorp [nielsk]
@@ -24,9 +25,9 @@ function ldraw_lib__322() = [
 // 0 // Top
 // 
 // 1 16 0 0 0 3 0 0 0 1 0 0 0 3 4-4edge.dat
-  [1,16,0,0,0,3,0,0,0,1,0,0,0,3, ldraw_lib__4_4edge()],
+  [1,16,0,0,0,3,0,0,0,1,0,0,0,3, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 4 0 3 0 0 0 1 0 0 0 3 4-4edge.dat
-  [1,16,0,4,0,3,0,0,0,1,0,0,0,3, ldraw_lib__4_4edge()],
+  [1,16,0,4,0,3,0,0,0,1,0,0,0,3, ldraw_lib__4_4edge(realsolid)],
 // 2 24 40 0 -20 -40 0 -20
   [2,24,40,0,-20,-40,0,-20],
 // 2 24 -40 0 -20 -40 0 20
@@ -36,13 +37,13 @@ function ldraw_lib__322() = [
 // 2 24 40 0 20 40 0 -20
   [2,24,40,0,20,40,0,-20],
 // 1 16 0 0 0 3 0 0 0 1 0 0 0 3 4-4ndis.dat
-  [1,16,0,0,0,3,0,0,0,1,0,0,0,3, ldraw_lib__4_4ndis()],
+  [1,16,0,0,0,3,0,0,0,1,0,0,0,3, ldraw_lib__4_4ndis(realsolid)],
 // 1 16 0 4 0 3 0 0 0 -1 0 0 0 3 4-4ndis.dat
-  [1,16,0,4,0,3,0,0,0,-1,0,0,0,3, ldraw_lib__4_4ndis()],
+  [1,16,0,4,0,3,0,0,0,-1,0,0,0,3, ldraw_lib__4_4ndis(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 0 3 0 0 0 4 0 0 0 3 4-4cyli.dat
-  [1,16,0,0,0,3,0,0,0,4,0,0,0,3, ldraw_lib__4_4cyli()],
+  [1,16,0,0,0,3,0,0,0,4,0,0,0,3, ldraw_lib__4_4cyli(realsolid)],
 // 4 16 40 0 -20 -40 0 -20 -3 0 -3 3 0 -3
   [4,16,40,0,-20,-40,0,-20,-3,0,-3,3,0,-3],
 // 4 16 -40 0 -20 -40 0 20 -3 0 3 -3 0 -3
@@ -2445,23 +2446,23 @@ function ldraw_lib__322() = [
   [4,16,-17.3045,13.5307,20,-17,12,20,-17,12,16.1161,-17.3045,13.5307,16.0179],
 // 0 --Studs
 // 1 16 30 0 10 -1 0 0 0 1 0 0 0 -1 stud.dat
-  [1,16,30,0,10,-1,0,0,0,1,0,0,0,-1, ldraw_lib__stud()],
+  [1,16,30,0,10,-1,0,0,0,1,0,0,0,-1, ldraw_lib__stud(realsolid)],
 // 1 16 10 0 10 -1 0 0 0 1 0 0 0 -1 stud.dat
-  [1,16,10,0,10,-1,0,0,0,1,0,0,0,-1, ldraw_lib__stud()],
+  [1,16,10,0,10,-1,0,0,0,1,0,0,0,-1, ldraw_lib__stud(realsolid)],
 // 1 16 -10 0 10 -1 0 0 0 1 0 0 0 -1 stud.dat
-  [1,16,-10,0,10,-1,0,0,0,1,0,0,0,-1, ldraw_lib__stud()],
+  [1,16,-10,0,10,-1,0,0,0,1,0,0,0,-1, ldraw_lib__stud(realsolid)],
 // 1 16 -30 0 10 -1 0 0 0 1 0 0 0 -1 stud.dat
-  [1,16,-30,0,10,-1,0,0,0,1,0,0,0,-1, ldraw_lib__stud()],
+  [1,16,-30,0,10,-1,0,0,0,1,0,0,0,-1, ldraw_lib__stud(realsolid)],
 // 1 16 30 0 -10 -1 0 0 0 1 0 0 0 -1 stud.dat
-  [1,16,30,0,-10,-1,0,0,0,1,0,0,0,-1, ldraw_lib__stud()],
+  [1,16,30,0,-10,-1,0,0,0,1,0,0,0,-1, ldraw_lib__stud(realsolid)],
 // 1 16 10 0 -10 -1 0 0 0 1 0 0 0 -1 stud.dat
-  [1,16,10,0,-10,-1,0,0,0,1,0,0,0,-1, ldraw_lib__stud()],
+  [1,16,10,0,-10,-1,0,0,0,1,0,0,0,-1, ldraw_lib__stud(realsolid)],
 // 1 16 -10 0 -10 -1 0 0 0 1 0 0 0 -1 stud.dat
-  [1,16,-10,0,-10,-1,0,0,0,1,0,0,0,-1, ldraw_lib__stud()],
+  [1,16,-10,0,-10,-1,0,0,0,1,0,0,0,-1, ldraw_lib__stud(realsolid)],
 // 1 16 -30 0 -10 -1 0 0 0 1 0 0 0 -1 stud.dat
-  [1,16,-30,0,-10,-1,0,0,0,1,0,0,0,-1, ldraw_lib__stud()],
+  [1,16,-30,0,-10,-1,0,0,0,1,0,0,0,-1, ldraw_lib__stud(realsolid)],
 // 0
 ];
 module ldraw_lib__322(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__322(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__322(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__322(line=0.2);

@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__3010pzhs01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__3010pzhs01(realsolid=false) = [
 // 0 ~Brick  1 x  4 with Black Spider Web and Black Spider-Man Logo Pattern - Half
 // 0 Name: s\3010pzhs01.dat
 // 0 Author: Damien Roux [Darats]
@@ -733,5 +734,5 @@ function ldraw_lib__s__3010pzhs01() = [
   [4,16,-1.45,22.86,0,-2.66,22.41,0,-0.6,24,0,-0.6,23.22,0],
 ];
 module ldraw_lib__s__3010pzhs01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__3010pzhs01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__3010pzhs01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__3010pzhs01(line=0.2);

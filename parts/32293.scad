@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/1-4cyls2.scad>
 use <../p/4-4cyli.scad>
 use <s/32293s01.scad>
-function ldraw_lib__32293() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__32293(realsolid=false) = [
 // 0 Technic Steering Link 9L
 // 0 Name: 32293.dat
 // 0 Author: John Riley [jriley]
@@ -18,27 +19,27 @@ function ldraw_lib__32293() = [
 // 
 // 
 // 1 16 0 0 10 8 0 0 0 0 -4 0 140 0 4-4cyli.dat
-  [1,16,0,0,10,8,0,0,0,0,-4,0,140,0, ldraw_lib__4_4cyli()],
+  [1,16,0,0,10,8,0,0,0,0,-4,0,140,0, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 0 150 8 0 0 0 0 4 0 4.4 0 1-4cyls2.dat
-  [1,16,0,0,150,8,0,0,0,0,4,0,4.4,0, ldraw_lib__1_4cyls2()],
+  [1,16,0,0,150,8,0,0,0,0,4,0,4.4,0, ldraw_lib__1_4cyls2(realsolid)],
 // 1 16 0 0 150 -8 0 0 0 0 4 0 4.4 0 1-4cyls2.dat
-  [1,16,0,0,150,-8,0,0,0,0,4,0,4.4,0, ldraw_lib__1_4cyls2()],
+  [1,16,0,0,150,-8,0,0,0,0,4,0,4.4,0, ldraw_lib__1_4cyls2(realsolid)],
 // 1 16 0 0 150 -8 0 0 0 0 -4 0 4.4 0 1-4cyls2.dat
-  [1,16,0,0,150,-8,0,0,0,0,-4,0,4.4,0, ldraw_lib__1_4cyls2()],
+  [1,16,0,0,150,-8,0,0,0,0,-4,0,4.4,0, ldraw_lib__1_4cyls2(realsolid)],
 // 1 16 0 0 150 8 0 0 0 0 -4 0 4.4 0 1-4cyls2.dat
-  [1,16,0,0,150,8,0,0,0,0,-4,0,4.4,0, ldraw_lib__1_4cyls2()],
+  [1,16,0,0,150,8,0,0,0,0,-4,0,4.4,0, ldraw_lib__1_4cyls2(realsolid)],
 // 1 16 0 0 10 8 0 0 0 0 -4 0 -4.4 0 1-4cyls2.dat
-  [1,16,0,0,10,8,0,0,0,0,-4,0,-4.4,0, ldraw_lib__1_4cyls2()],
+  [1,16,0,0,10,8,0,0,0,0,-4,0,-4.4,0, ldraw_lib__1_4cyls2(realsolid)],
 // 1 16 0 0 10 -8 0 0 0 0 -4 0 -4.4 0 1-4cyls2.dat
-  [1,16,0,0,10,-8,0,0,0,0,-4,0,-4.4,0, ldraw_lib__1_4cyls2()],
+  [1,16,0,0,10,-8,0,0,0,0,-4,0,-4.4,0, ldraw_lib__1_4cyls2(realsolid)],
 // 1 16 0 0 10 -8 0 0 0 0 4 0 -4.4 0 1-4cyls2.dat
-  [1,16,0,0,10,-8,0,0,0,0,4,0,-4.4,0, ldraw_lib__1_4cyls2()],
+  [1,16,0,0,10,-8,0,0,0,0,4,0,-4.4,0, ldraw_lib__1_4cyls2(realsolid)],
 // 1 16 0 0 10 8 0 0 0 0 4 0 -4.4 0 1-4cyls2.dat
-  [1,16,0,0,10,8,0,0,0,0,4,0,-4.4,0, ldraw_lib__1_4cyls2()],
+  [1,16,0,0,10,8,0,0,0,0,4,0,-4.4,0, ldraw_lib__1_4cyls2(realsolid)],
 // 1 16 0 0 0 0 0 -1 0 1 0 1 0 0 s\32293s01.dat
-  [1,16,0,0,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__s__32293s01()],
+  [1,16,0,0,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__s__32293s01(realsolid)],
 // 1 16 0 0 160 0 0 -1 0 1 0 1 0 0 s\32293s01.dat
-  [1,16,0,0,160,0,0,-1,0,1,0,1,0,0, ldraw_lib__s__32293s01()],
+  [1,16,0,0,160,0,0,-1,0,1,0,1,0,0, ldraw_lib__s__32293s01(realsolid)],
 // 2 24 0 -4 10 -3.061 -3.695 9.4
   [2,24,0,-4,10,-3.061,-3.695,9.4],
 // 2 24 -3.827 -3.444 9.24 -3.061 -3.695 9.4
@@ -139,5 +140,5 @@ function ldraw_lib__32293() = [
 // 
 ];
 module ldraw_lib__32293(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__32293(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__32293(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__32293(line=0.2);

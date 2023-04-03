@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/stud16.scad>
-function ldraw_lib__30608() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__30608(realsolid=false) = [
 // 0 Minifig Hair Flat Top
 // 0 Name: 30608.dat
 // 0 Author: Mark Chittenden [mdublade]
@@ -4559,8 +4560,8 @@ function ldraw_lib__30608() = [
   [5,24,7.071,-4,7.071,0,-4,10,9.193,0,9.193,-7.071,-4,7.071],
 // 
 // 1 16 0 -4 0 1 0 0 0 -1 0 0 0 -1 stud16.dat
-  [1,16,0,-4,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__stud16()],
+  [1,16,0,-4,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__stud16(realsolid)],
 ];
 module ldraw_lib__30608(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__30608(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__30608(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__30608(line=0.2);

@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/6580a.scad>
 use <s/6580b.scad>
-function ldraw_lib__6580a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6580a(realsolid=false) = [
 // 0 Wheel Rim 23 x 22 Offroad with Axlehole
 // 0 Name: 6580a.dat
 // 0 Author: Jeff Boen [onyx]
@@ -23,19 +24,19 @@ function ldraw_lib__6580a() = [
 // 
 // 
 // 1 16 0 0 0 0 -0.5 -0.866025 0 0.866025 -0.5 1 0 0 s\6580a.dat
-  [1,16,0,0,0,0,-0.5,-0.866025,0,0.866025,-0.5,1,0,0, ldraw_lib__s__6580a()],
+  [1,16,0,0,0,0,-0.5,-0.866025,0,0.866025,-0.5,1,0,0, ldraw_lib__s__6580a(realsolid)],
 // 1 16 0 0 0 0 -0.5 0.866025 0 0.866025 0.5 1 0 0 s\6580a.dat
-  [1,16,0,0,0,0,-0.5,0.866025,0,0.866025,0.5,1,0,0, ldraw_lib__s__6580a()],
+  [1,16,0,0,0,0,-0.5,0.866025,0,0.866025,0.5,1,0,0, ldraw_lib__s__6580a(realsolid)],
 // 1 16 0 0 0 0 0.5 0.866025 0 -0.866025 0.5 1 0 0 s\6580a.dat
-  [1,16,0,0,0,0,0.5,0.866025,0,-0.866025,0.5,1,0,0, ldraw_lib__s__6580a()],
+  [1,16,0,0,0,0,0.5,0.866025,0,-0.866025,0.5,1,0,0, ldraw_lib__s__6580a(realsolid)],
 // 1 16 0 0 0 0 0.5 -0.866025 0 -0.866025 -0.5 1 0 0 s\6580a.dat
-  [1,16,0,0,0,0,0.5,-0.866025,0,-0.866025,-0.5,1,0,0, ldraw_lib__s__6580a()],
+  [1,16,0,0,0,0,0.5,-0.866025,0,-0.866025,-0.5,1,0,0, ldraw_lib__s__6580a(realsolid)],
 // 
 // 1 16 0 0 22 0 -0.5 0.866025 0 0.866025 0.5 -1 0 0 s\6580b.dat
-  [1,16,0,0,22,0,-0.5,0.866025,0,0.866025,0.5,-1,0,0, ldraw_lib__s__6580b()],
+  [1,16,0,0,22,0,-0.5,0.866025,0,0.866025,0.5,-1,0,0, ldraw_lib__s__6580b(realsolid)],
 // 1 16 0 0 22 0 0.5 -0.866025 0 -0.866025 -0.5 -1 0 0 s\6580b.dat
-  [1,16,0,0,22,0,0.5,-0.866025,0,-0.866025,-0.5,-1,0,0, ldraw_lib__s__6580b()],
+  [1,16,0,0,22,0,0.5,-0.866025,0,-0.866025,-0.5,-1,0,0, ldraw_lib__s__6580b(realsolid)],
 ];
 module ldraw_lib__6580a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6580a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6580a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6580a(line=0.2);

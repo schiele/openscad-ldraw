@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/box4-1.scad>
 use <s/3979s01.scad>
-function ldraw_lib__3979() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3979(realsolid=false) = [
 // 0 ~Window Fabuland Round with Four Quadrant Panes
 // 0 Name: 3979.dat
 // 0 Author: Sybrand Bonsma [Sybrand]
@@ -37,7 +38,7 @@ function ldraw_lib__3979() = [
 // 4 16 1 38 4 1 36 4 -1 36 4 -1 38 4
   [4,16,1,38,4,1,36,4,-1,36,4,-1,38,4],
 // 1 16 0 0 1 1.5 0 0 0 -4 0 0 0 1 box4-1.dat
-  [1,16,0,0,1,1.5,0,0,0,-4,0,0,0,1, ldraw_lib__box4_1()],
+  [1,16,0,0,1,1.5,0,0,0,-4,0,0,0,1, ldraw_lib__box4_1(realsolid)],
 // 3 16 1.5 -4 0 0 -13 0 -1.5 -4 0
   [3,16,1.5,-4,0,0,-13,0,-1.5,-4,0],
 // 3 16 -31 76 0 0 87 0 31 76 0
@@ -53,10 +54,10 @@ function ldraw_lib__3979() = [
   [5,24,0,-13,-4,0,-13,0,6.525,-12.57,0,-6.525,-12.57,0],
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3979s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3979s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3979s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\3979s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__3979s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__3979s01(realsolid)],
 ];
 module ldraw_lib__3979(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3979(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3979(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3979(line=0.2);

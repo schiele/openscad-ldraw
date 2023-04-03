@@ -2,7 +2,8 @@ use <../../lib.scad>
 use <../../p/1-4chrd.scad>
 use <../../p/1-4cylo.scad>
 use <../../p/1-4ndis.scad>
-function ldraw_lib__s__33287s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__33287s01(realsolid=false) = [
 // 0 ~Cylinder  2 x  2 x  2.4 with Dome Top and Slots  1/4
 // 0 Name: s\33287s01.dat
 // 0 Author: Santeri Piippo [arezey]
@@ -211,7 +212,7 @@ function ldraw_lib__s__33287s01() = [
 // 2 24 2.2962 -7 5.5434 2.5 -7 5.407
   [2,24,2.2962,-7,5.5434,2.5,-7,5.407],
 // 1 16 8 -4 8 -2 0 0 0 -1 0 0 0 -2 1-4ndis.dat
-  [1,16,8,-4,8,-2,0,0,0,-1,0,0,0,-2, ldraw_lib__1_4ndis()],
+  [1,16,8,-4,8,-2,0,0,0,-1,0,0,0,-2, ldraw_lib__1_4ndis(realsolid)],
 // 2 24 16.807 -4 6 8 -4 6
   [2,24,16.807,-4,6,8,-4,6],
 // 2 24 6 -4 8 6 -4 16.807
@@ -249,9 +250,9 @@ function ldraw_lib__s__33287s01() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 8 -4 8 -2 0 0 0 -30 0 0 0 -2 1-4cylo.dat
-  [1,16,8,-4,8,-2,0,0,0,-30,0,0,0,-2, ldraw_lib__1_4cylo()],
+  [1,16,8,-4,8,-2,0,0,0,-30,0,0,0,-2, ldraw_lib__1_4cylo(realsolid)],
 // 1 16 8 -34 8 -2 0 0 0 -30 0 0 0 -2 1-4chrd.dat
-  [1,16,8,-34,8,-2,0,0,0,-30,0,0,0,-2, ldraw_lib__1_4chrd()],
+  [1,16,8,-34,8,-2,0,0,0,-30,0,0,0,-2, ldraw_lib__1_4chrd(realsolid)],
 // 4 16 6 -34 8 6 -34 16.807 6.889 -34 16.63 8 -34 6
   [4,16,6,-34,8,6,-34,16.807,6.889,-34,16.63,8,-34,6],
 // 4 16 8 -34 6 6.889 -34 16.63 12.728 -34 12.728 16.63 -34 6.889
@@ -292,5 +293,5 @@ function ldraw_lib__s__33287s01() = [
   [3,16,17.578,-4,9,16.807,-4,6,16.63,-4,6.889],
 ];
 module ldraw_lib__s__33287s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__33287s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__33287s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__33287s01(line=0.2);

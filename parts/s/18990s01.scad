@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/2-4chrd.scad>
 use <../../p/2-4cylo.scad>
-function ldraw_lib__s__18990s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__18990s01(realsolid=false) = [
 // 0 ~Windscreen  4 x  4 x  1.667 Canopy Half Sphere with Handle Bar - Half
 // 0 Name: s\18990s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -18,11 +19,11 @@ function ldraw_lib__s__18990s01() = [
 // 
 // 
 // 1 16 20 0 0 0 -5 0 6.25 0 0 0 0 6.25 2-4cylo.dat
-  [1,16,20,0,0,0,-5,0,6.25,0,0,0,0,6.25, ldraw_lib__2_4cylo()],
+  [1,16,20,0,0,0,-5,0,6.25,0,0,0,0,6.25, ldraw_lib__2_4cylo(realsolid)],
 // 1 16 20 0 0 0 -1 0 6.25 0 0 0 0 6.25 2-4chrd.dat
-  [1,16,20,0,0,0,-1,0,6.25,0,0,0,0,6.25, ldraw_lib__2_4chrd()],
+  [1,16,20,0,0,0,-1,0,6.25,0,0,0,0,6.25, ldraw_lib__2_4chrd(realsolid)],
 // 1 16 15 0 0 0 1 0 6.25 0 0 0 0 6.25 2-4chrd.dat
-  [1,16,15,0,0,0,1,0,6.25,0,0,0,0,6.25, ldraw_lib__2_4chrd()],
+  [1,16,15,0,0,0,1,0,6.25,0,0,0,0,6.25, ldraw_lib__2_4chrd(realsolid)],
 // 3 16 20 6.226 -16.295 20 -0.787 -18.767 21.954 6.907 -17.324
   [3,16,20,6.226,-16.295,20,-0.787,-18.767,21.954,6.907,-17.324],
 // 3 16 20 -0.787 -18.767 27.294 3.647 -22.788 21.954 6.907 -17.324
@@ -895,5 +896,5 @@ function ldraw_lib__s__18990s01() = [
   [5,24,19.973,-14.284,-30.108,24.462,-14.284,-35.958,17.307,-20.641,-40.089,24.468,-6,-25.613],
 ];
 module ldraw_lib__s__18990s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__18990s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__18990s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__18990s01(line=0.2);

@@ -3,7 +3,8 @@ use <../../p/1-16cyli.scad>
 use <3626bs04.scad>
 use <../../p/t08o6250.scad>
 use <../../p/t16o6250.scad>
-function ldraw_lib__s__3626p88s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__3626p88s01(realsolid=false) = [
 // 0 ~Minifig Grin and Brown Beard and White Pupils Pattern
 // 0 Name: s\3626p88s01.dat
 // 0 Author: Howard Lande [HowardLande]
@@ -20,23 +21,23 @@ function ldraw_lib__s__3626p88s01() = [
 // 0 // Head without stud
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3626bs04.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626bs04()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626bs04(realsolid)],
 // 1 16 0 4 0 12.0104 0 4.9749 0 13 0 -4.9749 0 12.0104 1-16cyli.dat
-  [1,16,0,4,0,12.0104,0,4.9749,0,13,0,-4.9749,0,12.0104, ldraw_lib__1_16cyli()],
+  [1,16,0,4,0,12.0104,0,4.9749,0,13,0,-4.9749,0,12.0104, ldraw_lib__1_16cyli(realsolid)],
 // 1 16 0 4 0 -13 0 0 0 13 0 0 0 -13 1-16cyli.dat
-  [1,16,0,4,0,-13,0,0,0,13,0,0,0,-13, ldraw_lib__1_16cyli()],
+  [1,16,0,4,0,-13,0,0,0,13,0,0,0,-13, ldraw_lib__1_16cyli(realsolid)],
 // 1 16 0 17 0 8 0 0 0 6.4 0 0 0 -8 t16o6250.dat
-  [1,16,0,17,0,8,0,0,0,6.4,0,0,0,-8, ldraw_lib__t16o6250()],
+  [1,16,0,17,0,8,0,0,0,6.4,0,0,0,-8, ldraw_lib__t16o6250(realsolid)],
 // 1 16 0 17 0 -8 0 0 0 6.4 0 0 0 -8 t16o6250.dat
-  [1,16,0,17,0,-8,0,0,0,6.4,0,0,0,-8, ldraw_lib__t16o6250()],
+  [1,16,0,17,0,-8,0,0,0,6.4,0,0,0,-8, ldraw_lib__t16o6250(realsolid)],
 // 1 16 0 4 0 8 0 0 0 -6.4 0 0 0 -8 t16o6250.dat
-  [1,16,0,4,0,8,0,0,0,-6.4,0,0,0,-8, ldraw_lib__t16o6250()],
+  [1,16,0,4,0,8,0,0,0,-6.4,0,0,0,-8, ldraw_lib__t16o6250(realsolid)],
 // 1 16 0 4 0 -8 0 0 0 -6.4 0 0 0 -8 t16o6250.dat
-  [1,16,0,4,0,-8,0,0,0,-6.4,0,0,0,-8, ldraw_lib__t16o6250()],
+  [1,16,0,4,0,-8,0,0,0,-6.4,0,0,0,-8, ldraw_lib__t16o6250(realsolid)],
 // 1 16 0 4 0 0 0 8 0 -6.4 0 -8 0 0 t08o6250.dat
-  [1,16,0,4,0,0,0,8,0,-6.4,0,-8,0,0, ldraw_lib__t08o6250()],
+  [1,16,0,4,0,0,0,8,0,-6.4,0,-8,0,0, ldraw_lib__t08o6250(realsolid)],
 // 1 16 0 4 0 0 0 -8 0 -6.4 0 -8 0 0 t08o6250.dat
-  [1,16,0,4,0,0,0,-8,0,-6.4,0,-8,0,0, ldraw_lib__t08o6250()],
+  [1,16,0,4,0,0,0,-8,0,-6.4,0,-8,0,0, ldraw_lib__t08o6250(realsolid)],
 // 
 // 0 // Pattern
 // 4 70 -11.69 15.249 -5.455 -11.505 16.165 -5.731 -10.193 15.844 -7.694 -10.466 15.234 -7.286
@@ -1008,5 +1009,5 @@ function ldraw_lib__s__3626p88s01() = [
 // 
 ];
 module ldraw_lib__s__3626p88s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__3626p88s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__3626p88s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__3626p88s01(line=0.2);

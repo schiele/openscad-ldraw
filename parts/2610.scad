@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__2610() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2610(realsolid=false) = [
 // 0 Minifig Lifevest
 // 0 Name: 2610.dat
 // 0 Author: Imre Papp [ampi]
@@ -4566,5 +4567,5 @@ function ldraw_lib__2610() = [
   [5,24,16,0.49,-19.703,1.16,0,-19.38,1.09,0.41,-19.67,1.33,-0.91,-18.75],
 ];
 module ldraw_lib__2610(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2610(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2610(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2610(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/26603s01.scad>
-function ldraw_lib__26603pb0() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__26603pb0(realsolid=false) = [
 // 0 Tile  2 x  3 with "BATMAN", "DC" and "80 YEARS" Pattern
 // 0 Name: 26603pb0.dat
 // 0 Author: Vincent Messenet [Cheenzo]
@@ -17,7 +18,7 @@ function ldraw_lib__26603pb0() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\26603s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__26603s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__26603s01(realsolid)],
 // 
 // 4 14 1.06 0 -17.404 .492 0 -17.574 -.076 0 -17.872 4.45 0 -19
   [4,14,1.06,0,-17.404,.492,0,-17.574,-.076,0,-17.872,4.45,0,-19],
@@ -1771,5 +1772,5 @@ function ldraw_lib__26603pb0() = [
   [4,16,25.05,0,-2.9,28.4,0,-2.9,27.9,0,-.1,27.7,0,-.2],
 ];
 module ldraw_lib__26603pb0(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__26603pb0(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__26603pb0(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__26603pb0(line=0.2);

@@ -7,7 +7,8 @@ use <../../p/48/2-4ring37.scad>
 use <../../p/48/2-4ring4.scad>
 use <../../p/48/2-4ring40.scad>
 use <6581b.scad>
-function ldraw_lib__s__6581a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__6581a(realsolid=false) = [
 // 0 ~Tyre 20/ 40 x 33 Off Road - 1/4
 // 0 Name: s\6581a.dat
 // 0 Author: Jeff Boen [onyx]
@@ -26,7 +27,7 @@ function ldraw_lib__s__6581a() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\6581b.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6581b()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6581b(realsolid)],
 // 
 // 4 16 -25 -40.6474 5.3505 -25 -41 0 -25 -49.9954 -0.674828 -25 -48.6203 11.6646
   [4,16,-25,-40.6474,5.3505,-25,-41,0,-25,-49.9954,-0.674828,-25,-48.6203,11.6646],
@@ -80,34 +81,34 @@ function ldraw_lib__s__6581a() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -25 0 0 0 3 0 41 0 0 0 0 41 48\2-4cylo.dat
-  [1,16,-25,0,0,0,3,0,41,0,0,0,0,41, ldraw_lib__48__2_4cylo()],
+  [1,16,-25,0,0,0,3,0,41,0,0,0,0,41, ldraw_lib__48__2_4cylo(realsolid)],
 // 
 // 1 16 -22 0 0 0 1 0 1 0 0 0 0 1 48\2-4ring37.dat
-  [1,16,-22,0,0,0,1,0,1,0,0,0,0,1, ldraw_lib__48__2_4ring37()],
+  [1,16,-22,0,0,0,1,0,1,0,0,0,0,1, ldraw_lib__48__2_4ring37(realsolid)],
 // 1 16 -22 0 0 0 1 0 2 0 0 0 0 2 48\2-4rin19.dat
-  [1,16,-22,0,0,0,1,0,2,0,0,0,0,2, ldraw_lib__48__2_4rin19()],
+  [1,16,-22,0,0,0,1,0,2,0,0,0,0,2, ldraw_lib__48__2_4rin19(realsolid)],
 // 1 16 -22 0 0 0 1 0 1 0 0 0 0 1 48\2-4ring40.dat
-  [1,16,-22,0,0,0,1,0,1,0,0,0,0,1, ldraw_lib__48__2_4ring40()],
+  [1,16,-22,0,0,0,1,0,1,0,0,0,0,1, ldraw_lib__48__2_4ring40(realsolid)],
 // 
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -22 0 0 0 5 0 37 0 0 0 0 37 48\2-4cylo.dat
-  [1,16,-22,0,0,0,5,0,37,0,0,0,0,37, ldraw_lib__48__2_4cylo()],
+  [1,16,-22,0,0,0,5,0,37,0,0,0,0,37, ldraw_lib__48__2_4cylo(realsolid)],
 // 
 // 1 16 -17 0 0 0 -1 0 1 0 0 0 0 1 48\2-4ring37.dat
-  [1,16,-17,0,0,0,-1,0,1,0,0,0,0,1, ldraw_lib__48__2_4ring37()],
+  [1,16,-17,0,0,0,-1,0,1,0,0,0,0,1, ldraw_lib__48__2_4ring37(realsolid)],
 // 1 16 -17 0 0 0 -1 0 2 0 0 0 0 2 48\2-4rin19.dat
-  [1,16,-17,0,0,0,-1,0,2,0,0,0,0,2, ldraw_lib__48__2_4rin19()],
+  [1,16,-17,0,0,0,-1,0,2,0,0,0,0,2, ldraw_lib__48__2_4rin19(realsolid)],
 // 1 16 -17 0 0 0 -1 0 10 0 0 0 0 10 48\2-4ring4.dat
-  [1,16,-17,0,0,0,-1,0,10,0,0,0,0,10, ldraw_lib__48__2_4ring4()],
+  [1,16,-17,0,0,0,-1,0,10,0,0,0,0,10, ldraw_lib__48__2_4ring4(realsolid)],
 // 
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -15 0 0 0 -2 0 2 0 0 0 0 2 48\2-4con25.dat
-  [1,16,-15,0,0,0,-2,0,2,0,0,0,0,2, ldraw_lib__48__2_4con25()],
+  [1,16,-15,0,0,0,-2,0,2,0,0,0,0,2, ldraw_lib__48__2_4con25(realsolid)],
 // 1 16 -17 0 0 0 5 0 50 0 0 0 0 50 48\2-4edge.dat
-  [1,16,-17,0,0,0,5,0,50,0,0,0,0,50, ldraw_lib__48__2_4edge()],
+  [1,16,-17,0,0,0,5,0,50,0,0,0,0,50, ldraw_lib__48__2_4edge(realsolid)],
 ];
 module ldraw_lib__s__6581a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__6581a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__6581a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__6581a(line=0.2);

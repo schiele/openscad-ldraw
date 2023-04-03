@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/3238s01.scad>
 use <s/6144759as01.scad>
-function ldraw_lib__6144759a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6144759a(realsolid=false) = [
 // 0 Sticker Minifig Shield Triangular with Dark Pink Jewel and Gold Border
 // 0 Name: 6144759a.dat
 // 0 Author: Yann Bouzon [Zaghor]
@@ -16,11 +17,11 @@ function ldraw_lib__6144759a() = [
 // 
 // 
 // 1 82 0 -0.25 0 1 0 0 0 1 0 0 0 1 s\6144759as01.dat
-  [1,82,0,-0.25,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6144759as01()],
+  [1,82,0,-0.25,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6144759as01(realsolid)],
 // 1 82 0 -0.25 0 -1 0 0 0 1 0 0 0 1 s\6144759as01.dat
-  [1,82,0,-0.25,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__6144759as01()],
+  [1,82,0,-0.25,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__6144759as01(realsolid)],
 // 1 16 0 0 0 0.88 0 0 0 1 0 0 0 0.88 s\3238s01.dat
-  [1,16,0,0,0,0.88,0,0,0,1,0,0,0,0.88, ldraw_lib__s__3238s01()],
+  [1,16,0,0,0,0.88,0,0,0,1,0,0,0,0.88, ldraw_lib__s__3238s01(realsolid)],
 // 
 // 4 15 0.3 -0.25 8.2 0.00131 -0.25 8.71734 -0.29738 -0.25 8.2 0.00131 -0.25 7.68266
   [4,15,0.3,-0.25,8.2,0.00131,-0.25,8.71734,-0.29738,-0.25,8.2,0.00131,-0.25,7.68266],
@@ -52,5 +53,5 @@ function ldraw_lib__6144759a() = [
   [3,5,1,-.25,9.2,.89738,-.25,8.2,1.8,-.25,7.9],
 ];
 module ldraw_lib__6144759a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6144759a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6144759a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6144759a(line=0.2);

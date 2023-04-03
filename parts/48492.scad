@@ -4,7 +4,8 @@ use <../p/5-8cylo.scad>
 use <../p/rect1.scad>
 use <../p/rect2p.scad>
 use <s/48492s01.scad>
-function ldraw_lib__48492() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__48492(realsolid=false) = [
 // 0 Animal Horse Head Armour with Plates
 // 0 Name: 48492.dat
 // 0 Author: Willy Tschager [Holly-Wood]
@@ -24,12 +25,12 @@ function ldraw_lib__48492() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\48492s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__48492s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__48492s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\48492s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__48492s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__48492s01(realsolid)],
 // 
 // 1 16 9 0 0 0 -18 0 0 0 -4 4 0 0 4-4cyli.dat
-  [1,16,9,0,0,0,-18,0,0,0,-4,4,0,0, ldraw_lib__4_4cyli()],
+  [1,16,9,0,0,0,-18,0,0,0,-4,4,0,0, ldraw_lib__4_4cyli(realsolid)],
 // 
 // 2 24 13.758 22.435 16.585 -13.758 22.435 16.585
   [2,24,13.758,22.435,16.585,-13.758,22.435,16.585],
@@ -179,21 +180,21 @@ function ldraw_lib__48492() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -4 -.75 -51.834 0 8 0 -4 0 -.06981 -.06981 0 4 5-8cylo.dat
-  [1,16,-4,-.75,-51.834,0,8,0,-4,0,-.06981,-.06981,0,4, ldraw_lib__5_8cylo()],
+  [1,16,-4,-.75,-51.834,0,8,0,-4,0,-.06981,-.06981,0,4, ldraw_lib__5_8cylo(realsolid)],
 // 
 // 1 16 0 6.128 -55.3615 -4 0 0 0 -1 1.415 0 0 1.9445 rect2p.dat
-  [1,16,0,6.128,-55.3615,-4,0,0,0,-1,1.415,0,0,1.9445, ldraw_lib__rect2p()],
+  [1,16,0,6.128,-55.3615,-4,0,0,0,-1,1.415,0,0,1.9445, ldraw_lib__rect2p(realsolid)],
 // 1 16 0 -8.086 -48.4605 4 0 0 0 1 .381 0 0 3.7945 rect2p.dat
-  [1,16,0,-8.086,-48.4605,4,0,0,0,1,.381,0,0,3.7945, ldraw_lib__rect2p()],
+  [1,16,0,-8.086,-48.4605,4,0,0,0,1,.381,0,0,3.7945, ldraw_lib__rect2p(realsolid)],
 // 1 16 0 -6.9135 -52.8505 0 0 4 1.5535 1 0 -.5955 0 0 rect1.dat
-  [1,16,0,-6.9135,-52.8505,0,0,4,1.5535,1,0,-.5955,0,0, ldraw_lib__rect1()],
+  [1,16,0,-6.9135,-52.8505,0,0,4,1.5535,1,0,-.5955,0,0, ldraw_lib__rect1(realsolid)],
 // 1 16 0 3.129 -56.699 0 0 -4 -1.584 1 0 .607 0 0 rect1.dat
-  [1,16,0,3.129,-56.699,0,0,-4,-1.584,1,0,.607,0,0, ldraw_lib__rect1()],
+  [1,16,0,3.129,-56.699,0,0,-4,-1.584,1,0,.607,0,0, ldraw_lib__rect1(realsolid)],
 // 1 16 0 1.8365 -55.3525 0 0 -4 .2915 1 0 .7395 0 0 rect1.dat
-  [1,16,0,1.8365,-55.3525,0,0,-4,.2915,1,0,.7395,0,0, ldraw_lib__rect1()],
+  [1,16,0,1.8365,-55.3525,0,0,-4,.2915,1,0,.7395,0,0, ldraw_lib__rect1(realsolid)],
 // 1 16 0 -5.055 -52.675 0 0 4 .305 -1 0 .771 0 0 rect1.dat
-  [1,16,0,-5.055,-52.675,0,0,4,.305,-1,0,.771,0,0, ldraw_lib__rect1()],
+  [1,16,0,-5.055,-52.675,0,0,4,.305,-1,0,.771,0,0, ldraw_lib__rect1(realsolid)],
 ];
 module ldraw_lib__48492(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__48492(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__48492(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__48492(line=0.2);

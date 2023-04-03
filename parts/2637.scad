@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4cylo.scad>
 use <../p/axlehol8.scad>
 use <../p/connhole.scad>
-function ldraw_lib__2637() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2637(realsolid=false) = [
 // 0 Technic Link 16L
 // 0 Name: 2637.dat
 // 0 Author: Thomas Burger [grapeape]
@@ -24,15 +25,15 @@ function ldraw_lib__2637() = [
 // 
 // 
 // 1 16 0 0 -6.5 1 0 0 0 0 1 0 -287 0 axlehol8.dat
-  [1,16,0,0,-6.5,1,0,0,0,0,1,0,-287,0, ldraw_lib__axlehol8()],
+  [1,16,0,0,-6.5,1,0,0,0,0,1,0,-287,0, ldraw_lib__axlehol8(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 connhole.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__connhole()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__connhole(realsolid)],
 // 1 16 0 -10 0 9 0 0 0 20 0 0 0 9 4-4cylo.dat
-  [1,16,0,-10,0,9,0,0,0,20,0,0,0,9, ldraw_lib__4_4cylo()],
+  [1,16,0,-10,0,9,0,0,0,20,0,0,0,9, ldraw_lib__4_4cylo(realsolid)],
 // 1 16 0 0 -300 1 0 0 0 1 0 0 0 1 connhole.dat
-  [1,16,0,0,-300,1,0,0,0,1,0,0,0,1, ldraw_lib__connhole()],
+  [1,16,0,0,-300,1,0,0,0,1,0,0,0,1, ldraw_lib__connhole(realsolid)],
 // 1 16 0 -10 -300 9 0 0 0 20 0 0 0 9 4-4cylo.dat
-  [1,16,0,-10,-300,9,0,0,0,20,0,0,0,9, ldraw_lib__4_4cylo()],
+  [1,16,0,-10,-300,9,0,0,0,20,0,0,0,9, ldraw_lib__4_4cylo(realsolid)],
 // 2 24 -5.602 2 -6.8731 -3.4443 2 -8.3151
   [2,24,-5.602,2,-6.8731,-3.4443,2,-8.3151],
 // 2 24 -5.602 -2 -6.8731 -3.4443 -2 -8.3151
@@ -115,5 +116,5 @@ function ldraw_lib__2637() = [
   [2,24,-5.602,-2,-293.1269,-3.4443,-2,-291.6849],
 ];
 module ldraw_lib__2637(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2637(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2637(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2637(line=0.2);

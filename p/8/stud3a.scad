@@ -2,7 +2,8 @@ use <../../lib.scad>
 use <4-4cyli.scad>
 use <4-4disc.scad>
 use <4-4edge.scad>
-function ldraw_lib__8__stud3a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__8__stud3a(realsolid=false) = [
 // 0 Stud Tube Solid without Base Edges (Fast-Draw)
 // 0 Name: 8\stud3a.dat
 // 0 Author: James Jessiman
@@ -25,12 +26,12 @@ function ldraw_lib__8__stud3a() = [
 // 
 // 
 // 1 16 0 -4 0 4 0 0 0 1 0 0 0 4 8\4-4edge.dat
-  [1,16,0,-4,0,4,0,0,0,1,0,0,0,4, ldraw_lib__8__4_4edge()],
+  [1,16,0,-4,0,4,0,0,0,1,0,0,0,4, ldraw_lib__8__4_4edge(realsolid)],
 // 1 16 0 -4 0 4 0 0 0 1 0 0 0 4 8\4-4disc.dat
-  [1,16,0,-4,0,4,0,0,0,1,0,0,0,4, ldraw_lib__8__4_4disc()],
+  [1,16,0,-4,0,4,0,0,0,1,0,0,0,4, ldraw_lib__8__4_4disc(realsolid)],
 // 1 16 0 -4 0 4 0 0 0 4 0 0 0 4 8\4-4cyli.dat
-  [1,16,0,-4,0,4,0,0,0,4,0,0,0,4, ldraw_lib__8__4_4cyli()],
+  [1,16,0,-4,0,4,0,0,0,4,0,0,0,4, ldraw_lib__8__4_4cyli(realsolid)],
 ];
 module ldraw_lib__8__stud3a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__8__stud3a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__8__stud3a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__8__stud3a(line=0.2);

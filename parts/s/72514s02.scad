@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/1-4tang.scad>
 use <../../p/2-8sphe.scad>
-function ldraw_lib__s__72514s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__72514s02(realsolid=false) = [
 // 0 ~Belville Crown Small - Half
 // 0 Name: s\72514s02.dat
 // 0 Author: Willy Tschager [Holly-Wood]
@@ -1119,11 +1120,11 @@ function ldraw_lib__s__72514s02() = [
   [3,16,5.9809,0,.4707,6.9229,-4.164,.5452,5.8684,0,1.2474],
 // 
 // 1 16 0 3 0 0 0 5 0 -2 0 5 0 0 2-8sphe.dat
-  [1,16,0,3,0,0,0,5,0,-2,0,5,0,0, ldraw_lib__2_8sphe()],
+  [1,16,0,3,0,0,0,5,0,-2,0,5,0,0, ldraw_lib__2_8sphe(realsolid)],
 // 1 16 0 3 0 5 0 0 0 1 0 0 0 -5 1-4tang.dat
-  [1,16,0,3,0,5,0,0,0,1,0,0,0,-5, ldraw_lib__1_4tang()],
+  [1,16,0,3,0,5,0,0,0,1,0,0,0,-5, ldraw_lib__1_4tang(realsolid)],
 // 1 16 0 3 0 0 0 5 0 1 0 5 0 0 1-4tang.dat
-  [1,16,0,3,0,0,0,5,0,1,0,5,0,0, ldraw_lib__1_4tang()],
+  [1,16,0,3,0,0,0,5,0,1,0,5,0,0, ldraw_lib__1_4tang(realsolid)],
 // 
 // 2 24 3 0 -5.196 3.5267 0 -4.854
   [2,24,3,0,-5.196,3.5267,0,-4.854],
@@ -1859,5 +1860,5 @@ function ldraw_lib__s__72514s02() = [
   [5,24,0,3.2346,8.2859,0,2.5858,7.9607,.8786,3.1214,8.0754,-.8786,3.1214,8.0754],
 ];
 module ldraw_lib__s__72514s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__72514s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__72514s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__72514s02(line=0.2);

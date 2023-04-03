@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/1-4cyli.scad>
 use <s/973s01.scad>
-function ldraw_lib__973p7h() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__973p7h(realsolid=false) = [
 // 0 Minifig Torso with Jacket, Pink Shirt, Ring on Necklace Pattern
 // 0 Name: 973p7h.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -19,7 +20,7 @@ function ldraw_lib__973p7h() = [
 // 
 // 0 // Large seams version of this pattern.
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01(realsolid)],
 // 4 80 -0.8 23.6 -10 -1.3 23.8 -10 -1.5 24.3 -10 -1.2 24.9 -10
   [4,80,-0.8,23.6,-10,-1.3,23.8,-10,-1.5,24.3,-10,-1.2,24.9,-10],
 // 4 80 -1.2 24.9 -10 -0.7 25 -10 -0.3 24.8 -10 -0.8 23.6 -10
@@ -86,7 +87,7 @@ function ldraw_lib__973p7h() = [
   [4,82,1.4,9.8,-10,0.9,9.7,-10,0.2,10.8,-10,1.4,11.3,-10],
 // 0 // neck mark
 // 1 0 0 -4 0 4.243 0 -4.243 0 -8 0 -4.243 0 -4.243 1-4cyli.dat
-  [1,0,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli()],
+  [1,0,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli(realsolid)],
 // 0 // plain back
 // 4 16 -19 32 10 -19 29 10 19 29 10 19 32 10
   [4,16,-19,32,10,-19,29,10,19,29,10,19,32,10],
@@ -762,5 +763,5 @@ function ldraw_lib__973p7h() = [
 // 0
 ];
 module ldraw_lib__973p7h(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__973p7h(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__973p7h(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__973p7h(line=0.2);

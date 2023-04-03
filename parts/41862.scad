@@ -4,7 +4,8 @@ use <../p/rect2p.scad>
 use <s/41862s01.scad>
 use <../p/stud4.scad>
 use <../p/stug-2x2.scad>
-function ldraw_lib__41862() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__41862(realsolid=false) = [
 // 0 Plate  2 x  2 With Raised Grilles
 // 0 Name: 41862.dat
 // 0 Author: Thomas Burger [grapeape]
@@ -24,19 +25,19 @@ function ldraw_lib__41862() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\41862s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__41862s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__41862s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 -1 s\41862s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__41862s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__41862s01(realsolid)],
 // 1 16 0 0 0 0 0 -1 0 1 0 1 0 0 stug-2x2.dat
-  [1,16,0,0,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__stug_2x2()],
+  [1,16,0,0,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__stug_2x2(realsolid)],
 // 1 16 0 0 0 21 0 0 0 1 0 0 0 20 rect2p.dat
-  [1,16,0,0,0,21,0,0,0,1,0,0,0,20, ldraw_lib__rect2p()],
+  [1,16,0,0,0,21,0,0,0,1,0,0,0,20, ldraw_lib__rect2p(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 8 0 17 0 0 0 -4 0 0 0 17 box5.dat
-  [1,16,0,8,0,17,0,0,0,-4,0,0,0,17, ldraw_lib__box5()],
+  [1,16,0,8,0,17,0,0,0,-4,0,0,0,17, ldraw_lib__box5(realsolid)],
 // 1 16 0 4 0 1 0 0 0 -1 0 0 0 1 stud4.dat
-  [1,16,0,4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4()],
+  [1,16,0,4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4(realsolid)],
 // 2 24 -20 8 -20 20 8 -20
   [2,24,-20,8,-20,20,8,-20],
 // 2 24 20 8 20 -20 8 20
@@ -55,5 +56,5 @@ function ldraw_lib__41862() = [
   [4,16,-20,8,20,-21,0,20,21,0,20,20,8,20],
 ];
 module ldraw_lib__41862(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__41862(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__41862(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__41862(line=0.2);

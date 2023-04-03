@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__5_8edge() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__5_8edge(realsolid=false) = [
 // 0 Circle 0.625
 // 0 Name: 5-8edge.dat
 // 0 Author: Mark Kennedy [mkennedy]
@@ -40,5 +41,5 @@ function ldraw_lib__5_8edge() = [
   [2,24,-0.9239,0,-0.3827,-0.7071,0,-0.7071],
 ];
 module ldraw_lib__5_8edge(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__5_8edge(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__5_8edge(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__5_8edge(line=0.2);

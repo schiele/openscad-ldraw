@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__820672c() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__820672c(realsolid=false) = [
 // 0 Sticker  0.5 x  5.1 with White Line
 // 0 Name: 820672c.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -17,7 +18,7 @@ function ldraw_lib__820672c() = [
 // 
 // 
 // 1 16 0 -0.25 0 51 0 0 0 0.25 0 0 0 5 box5-12.dat
-  [1,16,0,-0.25,0,51,0,0,0,0.25,0,0,0,5, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,51,0,0,0,0.25,0,0,0,5, ldraw_lib__box5_12(realsolid)],
 // 0 BFC NOCLIP
   [0,"BFC","NOCLIP"],
 // 4 15 50 -0.25 3 -50 -0.25 3 -50 -0.25 -3 50 -0.25 -3
@@ -34,5 +35,5 @@ function ldraw_lib__820672c() = [
   [4,16,-51,-0.25,5,-51,-0.25,-5,-50,-0.25,-3,-50,-0.25,3],
 ];
 module ldraw_lib__820672c(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__820672c(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__820672c(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__820672c(line=0.2);

@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <2880s03.scad>
-function ldraw_lib__s__2880s07() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__2880s07(realsolid=false) = [
 // 0 ~Monorail Track Curve Rack - 1.8 Degree Segment
 // 0 Name: s\2880s07.dat
 // 0 Author: Mikkel Bech Jensen [gaia]
@@ -57,7 +58,7 @@ function ldraw_lib__s__2880s07() = [
 // 4 16 3.922 -7 -4.534 4.035 -7 4.465 7.43 -7 4.387 7.146 -7 -4.61
   [4,16,3.922,-7,-4.534,4.035,-7,4.465,7.43,-7,4.387,7.146,-7,-4.61],
 // 1 16 0 -7 0 1 0 0 0 1 0 0 0 1 s\2880s03.dat
-  [1,16,0,-7,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2880s03()],
+  [1,16,0,-7,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2880s03(realsolid)],
 // 4 16 3.449 0 -4.525 3.449 -7 -4.525 3.922 -7 -4.534 3.922 0 -4.534
   [4,16,3.449,0,-4.525,3.449,-7,-4.525,3.922,-7,-4.534,3.922,0,-4.534],
 // 4 16 3.449 -7 -4.525 3.59 -7 4.474 4.035 -7 4.465 3.922 -7 -4.534
@@ -170,5 +171,5 @@ function ldraw_lib__s__2880s07() = [
   [2,24,0,0,-4.5,.224,0,-4.502],
 ];
 module ldraw_lib__s__2880s07(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__2880s07(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__2880s07(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__2880s07(line=0.2);

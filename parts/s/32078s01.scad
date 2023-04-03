@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__32078s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__32078s01(realsolid=false) = [
 // 0 ~Tyre 28/ 21 x 57 Subpart
 // 0 Name: s\32078s01.dat
 // 0 Author: Marc Klein [marckl]
@@ -1208,5 +1209,5 @@ function ldraw_lib__s__32078s01() = [
   [4,16,-10.6509,80.9019,-35.2,-10.9033,82.8189,-27.4102,-8.9187,82.949,-27.4102,-9.3434,80.9876,-35.2],
 ];
 module ldraw_lib__s__32078s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__32078s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__32078s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__32078s01(line=0.2);

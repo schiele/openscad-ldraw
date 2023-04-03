@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <4274.scad>
-function ldraw_lib__4143005() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4143005(realsolid=false) = [
 // 0 ~_Technic Pin 1/2 Blue (Obsolete)
 // 0 Name: 4143005.dat
 // 0 Author: Michael Heidemann [mikeheide]
@@ -20,8 +21,8 @@ function ldraw_lib__4143005() = [
 // 0 // colouring of the part (Blue).
 // 
 // 1 1 0 0 0 1 0 0 0 1 0 0 0 1 4274.dat
-  [1,1,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4274()],
+  [1,1,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4274(realsolid)],
 ];
 module ldraw_lib__4143005(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4143005(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4143005(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4143005(line=0.2);

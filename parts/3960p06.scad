@@ -3,7 +3,8 @@ use <s/3960s01.scad>
 use <s/3960s02.scad>
 use <s/3960s04.scad>
 use <s/3960s05.scad>
-function ldraw_lib__3960p06() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3960p06(realsolid=false) = [
 // 0 Dish  4 x  4 Inverted with Red Stripes Pattern
 // 0 Name: 3960p06.dat
 // 0 Author: Steffen [Steffen]
@@ -29,36 +30,36 @@ function ldraw_lib__3960p06() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3960s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3960s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3960s01(realsolid)],
 // 
 // 1 4 0 0 0 1 0 0 0 1 0 0 0 1 s\3960s02.dat
-  [1,4,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3960s02()],
+  [1,4,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3960s02(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3960s04.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3960s04()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3960s04(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 -1 s\3960s02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__3960s02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__3960s02(realsolid)],
 // 1 4 0 0 0 1 0 0 0 1 0 0 0 -1 s\3960s04.dat
-  [1,4,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__3960s04()],
+  [1,4,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__3960s04(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\3960s02.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__3960s02()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__3960s02(realsolid)],
 // 1 4 0 0 0 -1 0 0 0 1 0 0 0 1 s\3960s04.dat
-  [1,4,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__3960s04()],
+  [1,4,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__3960s04(realsolid)],
 // 1 4 0 0 0 -1 0 0 0 1 0 0 0 -1 s\3960s02.dat
-  [1,4,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__3960s02()],
+  [1,4,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__3960s02(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 -1 s\3960s04.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__3960s04()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__3960s04(realsolid)],
 // 1 4 0 0 0 0 0 1 0 1 0 1 0 0 s\3960s02.dat
-  [1,4,0,0,0,0,0,1,0,1,0,1,0,0, ldraw_lib__s__3960s02()],
+  [1,4,0,0,0,0,0,1,0,1,0,1,0,0, ldraw_lib__s__3960s02(realsolid)],
 // 1 16 0 0 0 0 0 -1 0 1 0 1 0 0 s\3960s02.dat
-  [1,16,0,0,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__s__3960s02()],
+  [1,16,0,0,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__s__3960s02(realsolid)],
 // 1 16 0 0 0 0 0 1 0 1 0 -1 0 0 s\3960s02.dat
-  [1,16,0,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__s__3960s02()],
+  [1,16,0,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__s__3960s02(realsolid)],
 // 1 4 0 0 0 0 0 -1 0 1 0 -1 0 0 s\3960s02.dat
-  [1,4,0,0,0,0,0,-1,0,1,0,-1,0,0, ldraw_lib__s__3960s02()],
+  [1,4,0,0,0,0,0,-1,0,1,0,-1,0,0, ldraw_lib__s__3960s02(realsolid)],
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3960s05.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3960s05()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3960s05(realsolid)],
 ];
 module ldraw_lib__3960p06(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3960p06(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3960p06(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3960p06(line=0.2);

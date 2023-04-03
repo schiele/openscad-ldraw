@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/85984s01.scad>
-function ldraw_lib__85984pc4() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__85984pc4(realsolid=false) = [
 // 0 Slope Brick 31  1 x  2 x  0.667 with Phone Rotary Dial Pattern
 // 0 Name: 85984pc4.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -17,7 +18,7 @@ function ldraw_lib__85984pc4() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\85984s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__85984s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__85984s01(realsolid)],
 // 4 72 1.3183 -10.78 1.3 1.2179 -11.0394 1.7323 0 -11.4577 2.4296 1.2179 -10.5207 0.8677
   [4,72,1.3183,-10.78,1.3,1.2179,-11.0394,1.7323,0,-11.4577,2.4296,1.2179,-10.5207,0.8677],
 // 4 72 0.9322 -10.3008 0.5013 1.2179 -10.5207 0.8677 0 -11.4577 2.4296 0.5045 -10.1539 0.2564
@@ -772,5 +773,5 @@ function ldraw_lib__85984pc4() = [
   [4,16,18,-15.6,9.3333,20,-4,-10,20,-13.6,6,19.41,-15.01,8.35],
 ];
 module ldraw_lib__85984pc4(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__85984pc4(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__85984pc4(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__85984pc4(line=0.2);

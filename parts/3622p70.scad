@@ -4,7 +4,8 @@ use <../p/4-4ndis.scad>
 use <s/3622p70s01.scad>
 use <s/3622p70s02.scad>
 use <s/3622s01.scad>
-function ldraw_lib__3622p70() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3622p70(realsolid=false) = [
 // 0 Brick  1 x  3 with Radio and Tape Player Pattern
 // 0 Name: 3622p70.dat
 // 0 Author: Matthew Morrison [cuddlyogre]
@@ -21,19 +22,19 @@ function ldraw_lib__3622p70() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3622s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3622s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3622s01(realsolid)],
 // 1 0 -12.35 4.61 -10 2.32 0 0 0 0 -2.32 0 1 0 4-4disc.dat
-  [1,0,-12.35,4.61,-10,2.32,0,0,0,0,-2.32,0,1,0, ldraw_lib__4_4disc()],
+  [1,0,-12.35,4.61,-10,2.32,0,0,0,0,-2.32,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 16 -12.35 4.61 -10 2.32 0 0 0 0 -2.32 0 1 0 4-4ndis.dat
-  [1,16,-12.35,4.61,-10,2.32,0,0,0,0,-2.32,0,1,0, ldraw_lib__4_4ndis()],
+  [1,16,-12.35,4.61,-10,2.32,0,0,0,0,-2.32,0,1,0, ldraw_lib__4_4ndis(realsolid)],
 // 1 0 -22.6 12.05 -10 1 0 0 0 0 -1 0 1 0 s\3622p70s01.dat
-  [1,0,-22.6,12.05,-10,1,0,0,0,0,-1,0,1,0, ldraw_lib__s__3622p70s01()],
+  [1,0,-22.6,12.05,-10,1,0,0,0,0,-1,0,1,0, ldraw_lib__s__3622p70s01(realsolid)],
 // 1 0 22.6 12.05 -10 1 0 0 0 0 -1 0 1 0 s\3622p70s01.dat
-  [1,0,22.6,12.05,-10,1,0,0,0,0,-1,0,1,0, ldraw_lib__s__3622p70s01()],
+  [1,0,22.6,12.05,-10,1,0,0,0,0,-1,0,1,0, ldraw_lib__s__3622p70s01(realsolid)],
 // 1 16 -7.76 15.87 -10 1 0 0 0 0 -1 0 1 0 s\3622p70s02.dat
-  [1,16,-7.76,15.87,-10,1,0,0,0,0,-1,0,1,0, ldraw_lib__s__3622p70s02()],
+  [1,16,-7.76,15.87,-10,1,0,0,0,0,-1,0,1,0, ldraw_lib__s__3622p70s02(realsolid)],
 // 1 16 7.76 15.87 -10 1 0 0 0 0 -1 0 1 0 s\3622p70s02.dat
-  [1,16,7.76,15.87,-10,1,0,0,0,0,-1,0,1,0, ldraw_lib__s__3622p70s02()],
+  [1,16,7.76,15.87,-10,1,0,0,0,0,-1,0,1,0, ldraw_lib__s__3622p70s02(realsolid)],
 // 
 // 0 // Black
 // 3 0 -8.57 2.32 -10 7.73 2.32 -10 -9.21 1.65 -10
@@ -116,5 +117,5 @@ function ldraw_lib__3622p70() = [
   [4,16,0.79,22.48,-10,-0.79,22.48,-10,-16.39,23.08,-10,16.39,23.08,-10],
 ];
 module ldraw_lib__3622p70(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3622p70(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3622p70(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3622p70(line=0.2);

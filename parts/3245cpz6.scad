@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3245cs01.scad>
-function ldraw_lib__3245cpz6() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3245cpz6(realsolid=false) = [
 // 0 Brick  1 x  2 x  2 with Black Outlined Open Jacket with Dark Brown Lapels, White Badge and Metallic Gold Buttons Pattern
 // 0 Name: 3245cpz6.dat
 // 0 Author: Vincent Messenet [Cheenzo]
@@ -18,7 +19,7 @@ function ldraw_lib__3245cpz6() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3245cs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3245cs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3245cs01(realsolid)],
 // 
 // 3 0 5.25 15.25 -10 8.75 8.25 -10 4.75 14.75 -10
   [3,0,5.25,15.25,-10,8.75,8.25,-10,4.75,14.75,-10],
@@ -480,5 +481,5 @@ function ldraw_lib__3245cpz6() = [
   [4,16,-9.883,40.17,-10,-9.883,43.83,-10,-9.75,44.5,-10,-9.75,39.5,-10],
 ];
 module ldraw_lib__3245cpz6(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3245cpz6(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3245cpz6(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3245cpz6(line=0.2);

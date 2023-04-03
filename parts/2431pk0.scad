@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/2431s01.scad>
-function ldraw_lib__2431pk0() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2431pk0(realsolid=false) = [
 // 0 Tile  1 x  4 with Teeth Pattern
 // 0 Name: 2431pk0.dat
 // 0 Author: Damien Roux [Darats]
@@ -17,7 +18,7 @@ function ldraw_lib__2431pk0() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2431s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2431s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2431s01(realsolid)],
 // 
 // 4 0 -25.962 0 4.837 -26.384 0 3.268 -26.245 0 2.972 -25.86 0 3.132
   [4,0,-25.962,0,4.837,-26.384,0,3.268,-26.245,0,2.972,-25.86,0,3.132],
@@ -493,5 +494,5 @@ function ldraw_lib__2431pk0() = [
   [3,16,40,0,10,25.094,0,6.723,25.194,0,6.26],
 ];
 module ldraw_lib__2431pk0(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2431pk0(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2431pk0(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2431pk0(line=0.2);

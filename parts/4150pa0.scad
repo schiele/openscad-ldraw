@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/4150s01.scad>
-function ldraw_lib__4150pa0() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4150pa0(realsolid=false) = [
 // 0 Tile  2 x  2 Round with Submarine Pattern
 // 0 Name: 4150pa0.dat
 // 0 Author: Mikkel Bech Jensen [gaia]
@@ -17,7 +18,7 @@ function ldraw_lib__4150pa0() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4150s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4150s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4150s01(realsolid)],
 // 4 16 8.668 0 -0.745 8.668 0 -3.721 12.604 0 -1.609 12.604 0 -0.745
   [4,16,8.668,0,-0.745,8.668,0,-3.721,12.604,0,-1.609,12.604,0,-0.745],
 // 4 1 8.668 0 2.519 8.668 0 -0.745 12.604 0 -0.745 12.604 0 0.599
@@ -376,5 +377,5 @@ function ldraw_lib__4150pa0() = [
   [4,16,18.505,0,0,17.096,0,-7.082,18.478,0,-7.654,20,0,0],
 ];
 module ldraw_lib__4150pa0(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4150pa0(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4150pa0(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4150pa0(line=0.2);

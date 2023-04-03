@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <11957.scad>
 use <88517.scad>
-function ldraw_lib__88517c01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__88517c01(realsolid=false) = [
 // 0 Wheel 17 x 75 Motorcycle with Holes in Rim w Tyre 19/ 67 x 75
 // 0 Name: 88517c01.dat
 // 0 Author: Steffen [Steffen]
@@ -16,10 +17,10 @@ function ldraw_lib__88517c01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 88517.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__88517()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__88517(realsolid)],
 // 1 256 0 0 0 1 0 0 0 1 0 0 0 1 11957.dat
-  [1,256,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__11957()],
+  [1,256,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__11957(realsolid)],
 ];
 module ldraw_lib__88517c01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__88517c01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__88517c01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__88517c01(line=0.2);

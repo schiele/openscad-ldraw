@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <3701.scad>
-function ldraw_lib__370101() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__370101(realsolid=false) = [
 // 0 ~_Technic Brick  1 x  4 with Holes White (Obsolete)
 // 0 Name: 370101.dat
 // 0 Author: Michael Heidemann [mikeheide]
@@ -20,8 +21,8 @@ function ldraw_lib__370101() = [
 // 0 // colouring of the part (White).
 // 
 // 1 15 0 0 0 1 0 0 0 1 0 0 0 1 3701.dat
-  [1,15,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3701()],
+  [1,15,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3701(realsolid)],
 ];
 module ldraw_lib__370101(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__370101(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__370101(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__370101(line=0.2);

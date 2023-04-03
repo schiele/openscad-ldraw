@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/1-4cyli.scad>
 use <s/973s01.scad>
-function ldraw_lib__973p8z() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__973p8z(realsolid=false) = [
 // 0 Minifig Torso with T-Shirt, Blue Dungarees and Tools Pattern
 // 0 Name: 973p8z.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -16,7 +17,7 @@ function ldraw_lib__973p8z() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01(realsolid)],
 // 4 16 19 29 10 19 32 10 -19 32 10 -19 29 10
   [4,16,19,29,10,19,32,10,-19,32,10,-19,29,10],
 // 4 16 -14.345 2 10 14.345 2 10 19 29 10 -19 29 10
@@ -24,7 +25,7 @@ function ldraw_lib__973p8z() = [
 // 4 16 -14.345 2 10 -12 0 10 12 0 10 14.345 2 10
   [4,16,-14.345,2,10,-12,0,10,12,0,10,14.345,2,10],
 // 1 0 0 -4 0 4.243 0 -4.243 0 -8 0 -4.243 0 -4.243 1-4cyli.dat
-  [1,0,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli()],
+  [1,0,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli(realsolid)],
 // 4 0 0.892 17.57 -10 0.304 17.294 -10 0.228 17.57 -10 0.304 17.846 -10
   [4,0,0.892,17.57,-10,0.304,17.294,-10,0.228,17.57,-10,0.304,17.846,-10],
 // 4 0 0.892 17.57 -10 0.304 17.846 -10 0.56 17.922 -10 0.816 17.846 -10
@@ -1375,5 +1376,5 @@ function ldraw_lib__973p8z() = [
   [3,1,4.842,23.22,-10,4.832,24.38,-10,8.03,25.11,-10],
 ];
 module ldraw_lib__973p8z(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__973p8z(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__973p8z(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__973p8z(line=0.2);

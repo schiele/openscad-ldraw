@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__004847b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__004847b(realsolid=false) = [
 // 0 Sticker  0.9 x  2.5 with White Norton Logo on Blue Background
 // 0 Name: 004847b.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -17,7 +18,7 @@ function ldraw_lib__004847b() = [
 // 
 // 
 // 1 16 0 -0.25 0 25 0 0 0 0.25 0 0 0 9 box5-12.dat
-  [1,16,0,-0.25,0,25,0,0,0,0.25,0,0,0,9, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,25,0,0,0,0.25,0,0,0,9, ldraw_lib__box5_12(realsolid)],
 // 4 15 -19.5 -0.25 2.9 -20.1 -0.25 5.7 -20.7 -0.25 5.4 -21.4 -0.25 4.9
   [4,15,-19.5,-0.25,2.9,-20.1,-0.25,5.7,-20.7,-0.25,5.4,-21.4,-0.25,4.9],
 // 4 15 -19.5 -0.25 2.9 -21.4 -0.25 4.9 -21.7 -0.25 4 -19.6 -0.25 2.4
@@ -598,5 +599,5 @@ function ldraw_lib__004847b() = [
   [3,1,-19.9,-0.25,1.9,-19.1,-0.25,-6.2,-18.7,-0.25,-5.7],
 ];
 module ldraw_lib__004847b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__004847b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__004847b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__004847b(line=0.2);

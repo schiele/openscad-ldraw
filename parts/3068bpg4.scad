@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3068bs01.scad>
-function ldraw_lib__3068bpg4() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3068bpg4(realsolid=false) = [
 // 0 Tile  2 x  2 with Fabuland Flour Bag Pattern
 // 0 Name: 3068bpg4.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -17,7 +18,7 @@ function ldraw_lib__3068bpg4() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3068bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3068bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3068bs01(realsolid)],
 // 4 16 4.3 0 3.5 4.7 0 4 4.3 0 4.5 3.7 0 5
   [4,16,4.3,0,3.5,4.7,0,4,4.3,0,4.5,3.7,0,5],
 // 4 16 3.7 0 2.8 4.3 0 3.5 3.7 0 5 2.9 0 5.4
@@ -868,5 +869,5 @@ function ldraw_lib__3068bpg4() = [
   [3,16,-4.6,0,13,-5,0,12.4,-4.7,0,12.3],
 ];
 module ldraw_lib__3068bpg4(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3068bpg4(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3068bpg4(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3068bpg4(line=0.2);

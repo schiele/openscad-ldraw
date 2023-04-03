@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box.scad>
-function ldraw_lib__t1103() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__t1103(realsolid=false) = [
 // 0 ~| Circuit Cubes High Speed Motor Bottom Plate
 // 0 Name: t1103.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -17,8 +18,8 @@ function ldraw_lib__t1103() = [
 // 
 // 
 // 1 16 0 -1.25 0 0 0 31.75 0 1.25 0 13 0 0 box.dat
-  [1,16,0,-1.25,0,0,0,31.75,0,1.25,0,13,0,0, ldraw_lib__box()],
+  [1,16,0,-1.25,0,0,0,31.75,0,1.25,0,13,0,0, ldraw_lib__box(realsolid)],
 ];
 module ldraw_lib__t1103(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__t1103(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__t1103(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__t1103(line=0.2);

@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/box5-12.scad>
 use <../p/type-swiss721bt-bold-n4.scad>
 use <../p/type-swiss721bt-bold-n5.scad>
-function ldraw_lib__192375f() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__192375f(realsolid=false) = [
 // 0 Sticker  0.9 x  1.9 with Numbers "4" and "5" with Black Lines
 // 0 Name: 192375f.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -19,11 +20,11 @@ function ldraw_lib__192375f() = [
 // 
 // 
 // 1 16 0 -0.25 0 19 0 0 0 0.25 0 0 0 9 box5-12.dat
-  [1,16,0,-0.25,0,19,0,0,0,0.25,0,0,0,9, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,19,0,0,0,0.25,0,0,0,9, ldraw_lib__box5_12(realsolid)],
 // 1 15 -10.5 -0.25 6.5 4 0 0 0 1 0 0 0 4 type-swiss721bt-bold-n4.dat
-  [1,15,-10.5,-0.25,6.5,4,0,0,0,1,0,0,0,4, ldraw_lib__type_swiss721bt_bold_n4()],
+  [1,15,-10.5,-0.25,6.5,4,0,0,0,1,0,0,0,4, ldraw_lib__type_swiss721bt_bold_n4(realsolid)],
 // 1 15 10.5 -0.25 6.5 4 0 0 0 1 0 0 0 4 type-swiss721bt-bold-n5.dat
-  [1,15,10.5,-0.25,6.5,4,0,0,0,1,0,0,0,4, ldraw_lib__type_swiss721bt_bold_n5()],
+  [1,15,10.5,-0.25,6.5,4,0,0,0,1,0,0,0,4, ldraw_lib__type_swiss721bt_bold_n5(realsolid)],
 // 4 0 2 -0.25 8.5 2 -0.25 9 1 -0.25 9 -2 -0.25 7.5
   [4,0,2,-0.25,8.5,2,-0.25,9,1,-0.25,9,-2,-0.25,7.5],
 // 4 0 -1 -0.25 7 2 -0.25 8.5 -2 -0.25 7.5 -2 -0.25 7
@@ -328,5 +329,5 @@ function ldraw_lib__192375f() = [
   [4,15,16,-0.25,-5.7,5,-0.25,-5.7,5,-0.25,-6.3,16,-0.25,-6.3],
 ];
 module ldraw_lib__192375f(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__192375f(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__192375f(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__192375f(line=0.2);

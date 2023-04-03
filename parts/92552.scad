@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/4-4cylc.scad>
 use <../p/48/4-4cylo.scad>
-function ldraw_lib__92552() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__92552(realsolid=false) = [
 // 0 ~Spinner Ninjago  6 x  6 x  1.333 Type 1 Metallic Weight
 // 0 Name: 92552.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -20,27 +21,27 @@ function ldraw_lib__92552() = [
 // 0 // Primitives
 // 
 // 1 16 0 8 0 56 0 0 0 9 0 0 0 56 48\4-4cylo.dat
-  [1,16,0,8,0,56,0,0,0,9,0,0,0,56, ldraw_lib__48__4_4cylo()],
+  [1,16,0,8,0,56,0,0,0,9,0,0,0,56, ldraw_lib__48__4_4cylo(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 8 0 46 0 0 0 15 0 0 0 46 48\4-4cylo.dat
-  [1,16,0,8,0,46,0,0,0,15,0,0,0,46, ldraw_lib__48__4_4cylo()],
+  [1,16,0,8,0,46,0,0,0,15,0,0,0,46, ldraw_lib__48__4_4cylo(realsolid)],
 // 1 16 -10 4 50 3.5 0 0 0 4 0 0 0 3.5 4-4cylc.dat
-  [1,16,-10,4,50,3.5,0,0,0,4,0,0,0,3.5, ldraw_lib__4_4cylc()],
+  [1,16,-10,4,50,3.5,0,0,0,4,0,0,0,3.5, ldraw_lib__4_4cylc(realsolid)],
 // 1 16 10 4 50 3.5 0 0 0 4 0 0 0 3.5 4-4cylc.dat
-  [1,16,10,4,50,3.5,0,0,0,4,0,0,0,3.5, ldraw_lib__4_4cylc()],
+  [1,16,10,4,50,3.5,0,0,0,4,0,0,0,3.5, ldraw_lib__4_4cylc(realsolid)],
 // 1 16 -50 4 10 3.5 0 0 0 4 0 0 0 3.5 4-4cylc.dat
-  [1,16,-50,4,10,3.5,0,0,0,4,0,0,0,3.5, ldraw_lib__4_4cylc()],
+  [1,16,-50,4,10,3.5,0,0,0,4,0,0,0,3.5, ldraw_lib__4_4cylc(realsolid)],
 // 1 16 50 4 10 3.5 0 0 0 4 0 0 0 3.5 4-4cylc.dat
-  [1,16,50,4,10,3.5,0,0,0,4,0,0,0,3.5, ldraw_lib__4_4cylc()],
+  [1,16,50,4,10,3.5,0,0,0,4,0,0,0,3.5, ldraw_lib__4_4cylc(realsolid)],
 // 1 16 -50 4 -10 3.5 0 0 0 4 0 0 0 3.5 4-4cylc.dat
-  [1,16,-50,4,-10,3.5,0,0,0,4,0,0,0,3.5, ldraw_lib__4_4cylc()],
+  [1,16,-50,4,-10,3.5,0,0,0,4,0,0,0,3.5, ldraw_lib__4_4cylc(realsolid)],
 // 1 16 50 4 -10 3.5 0 0 0 4 0 0 0 3.5 4-4cylc.dat
-  [1,16,50,4,-10,3.5,0,0,0,4,0,0,0,3.5, ldraw_lib__4_4cylc()],
+  [1,16,50,4,-10,3.5,0,0,0,4,0,0,0,3.5, ldraw_lib__4_4cylc(realsolid)],
 // 1 16 -10 4 -50 3.5 0 0 0 4 0 0 0 3.5 4-4cylc.dat
-  [1,16,-10,4,-50,3.5,0,0,0,4,0,0,0,3.5, ldraw_lib__4_4cylc()],
+  [1,16,-10,4,-50,3.5,0,0,0,4,0,0,0,3.5, ldraw_lib__4_4cylc(realsolid)],
 // 1 16 10 4 -50 3.5 0 0 0 4 0 0 0 3.5 4-4cylc.dat
-  [1,16,10,4,-50,3.5,0,0,0,4,0,0,0,3.5, ldraw_lib__4_4cylc()],
+  [1,16,10,4,-50,3.5,0,0,0,4,0,0,0,3.5, ldraw_lib__4_4cylc(realsolid)],
 // 0 // Cone 1
 // 0 // Faces
 // 4 16 46 23 0 45.6044 23 6.003 48.9405 21.99 6.4421 49.365 21.99 0
@@ -627,5 +628,5 @@ function ldraw_lib__92552() = [
   [4,16,55.5184,8,-7.308,56,8,0,46,8,0,45.6044,8,-6.003],
 ];
 module ldraw_lib__92552(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__92552(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__92552(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__92552(line=0.2);

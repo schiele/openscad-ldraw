@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/2528as01.scad>
 use <s/2528as03.scad>
-function ldraw_lib__2528ap3c() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2528ap3c(realsolid=false) = [
 // 0 Minifig Hat Bicorne with Gold Trim, Gold Button and Blue Flower Pattern
 // 0 Name: 2528ap3c.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -19,12 +20,12 @@ function ldraw_lib__2528ap3c() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2528as01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2528as01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2528as01(realsolid)],
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 -1 s\2528as03.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__2528as03()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__2528as03(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 -1 s\2528as03.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__2528as03()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__2528as03(realsolid)],
 // 
 // 4 0 -1.65554 -16.12732 -6.94496 -2.77911 -16.30646 -6.74167 -1.84688 -15.66538 -7.21658 -.01 -15.8 -7.28307
   [4,0,-1.65554,-16.12732,-6.94496,-2.77911,-16.30646,-6.74167,-1.84688,-15.66538,-7.21658,-.01,-15.8,-7.28307],
@@ -1134,5 +1135,5 @@ function ldraw_lib__2528ap3c() = [
   [3,82,5.2774,-5.37327,-11.82655,4.2,-4.67,-12.27415,4.8446,-3.6109,-12.6506],
 ];
 module ldraw_lib__2528ap3c(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2528ap3c(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2528ap3c(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2528ap3c(line=0.2);

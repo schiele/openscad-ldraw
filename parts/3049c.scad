@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__3049c() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3049c(realsolid=false) = [
 // 0 Slope Brick 45  1 x  2 Double / Inverted without Centre Stud
 // 0 Name: 3049c.dat
 // 0 Author: Niels Karsdorp [nielsk]
@@ -134,5 +135,5 @@ function ldraw_lib__3049c() = [
 // 0
 ];
 module ldraw_lib__3049c(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3049c(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3049c(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3049c(line=0.2);

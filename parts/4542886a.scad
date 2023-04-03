@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__4542886a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4542886a(realsolid=false) = [
 // 0 Sticker  1.8 x  1.8 with Goods and Prices
 // 0 Name: 4542886a.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -17,7 +18,7 @@ function ldraw_lib__4542886a() = [
 // 
 // 
 // 1 16 0 -0.25 0 18.5 0 0 0 0.25 0 0 0 18.5 box5-12.dat
-  [1,16,0,-0.25,0,18.5,0,0,0,0.25,0,0,0,18.5, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,18.5,0,0,0,0.25,0,0,0,18.5, ldraw_lib__box5_12(realsolid)],
 // 3 70 1.9 -0.25 9 2.3 -0.25 9 2.2 -0.25 9.2
   [3,70,1.9,-0.25,9,2.3,-0.25,9,2.2,-0.25,9.2],
 // 4 70 1.5 -0.25 9 1.9 -0.25 9 2.2 -0.25 9.2 1.4 -0.25 9.2
@@ -1436,5 +1437,5 @@ function ldraw_lib__4542886a() = [
   [3,19,-5,-0.25,-17.2,0,-0.25,-17.3,1.2,-0.25,-13],
 ];
 module ldraw_lib__4542886a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4542886a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4542886a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4542886a(line=0.2);

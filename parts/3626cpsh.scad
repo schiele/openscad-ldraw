@@ -3,7 +3,8 @@ use <../p/5-8cyli.scad>
 use <s/3626cs02.scad>
 use <../p/t04o6250.scad>
 use <../p/t16o6250.scad>
-function ldraw_lib__3626cpsh() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3626cpsh(realsolid=false) = [
 // 0 Minifig Head with SW Stern Black Eyebrows, Pupils and Orange Visor Pattern
 // 0 Name: 3626cpsh.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -22,25 +23,25 @@ function ldraw_lib__3626cpsh() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3626cs02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626cs02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626cs02(realsolid)],
 // 1 16 0 4 0 12.0104 0 4.9749 0 13 0 -4.9749 0 12.0104 5-8cyli.dat
-  [1,16,0,4,0,12.0104,0,4.9749,0,13,0,-4.9749,0,12.0104, ldraw_lib__5_8cyli()],
+  [1,16,0,4,0,12.0104,0,4.9749,0,13,0,-4.9749,0,12.0104, ldraw_lib__5_8cyli(realsolid)],
 // 1 16 0 4 0 -8 0 0 0 -6.4 0 0 0 8 t04o6250.dat
-  [1,16,0,4,0,-8,0,0,0,-6.4,0,0,0,8, ldraw_lib__t04o6250()],
+  [1,16,0,4,0,-8,0,0,0,-6.4,0,0,0,8, ldraw_lib__t04o6250(realsolid)],
 // 1 16 0 4 0 8 0 0 0 -6.4 0 0 0 8 t04o6250.dat
-  [1,16,0,4,0,8,0,0,0,-6.4,0,0,0,8, ldraw_lib__t04o6250()],
+  [1,16,0,4,0,8,0,0,0,-6.4,0,0,0,8, ldraw_lib__t04o6250(realsolid)],
 // 1 16 0 4 0 -8 0 0 0 -6.4 0 0 0 -8 t16o6250.dat
-  [1,16,0,4,0,-8,0,0,0,-6.4,0,0,0,-8, ldraw_lib__t16o6250()],
+  [1,16,0,4,0,-8,0,0,0,-6.4,0,0,0,-8, ldraw_lib__t16o6250(realsolid)],
 // 1 16 0 4 0 8 0 0 0 -6.4 0 0 0 -8 t16o6250.dat
-  [1,16,0,4,0,8,0,0,0,-6.4,0,0,0,-8, ldraw_lib__t16o6250()],
+  [1,16,0,4,0,8,0,0,0,-6.4,0,0,0,-8, ldraw_lib__t16o6250(realsolid)],
 // 1 16 0 17 0 -8 0 0 0 6.4 0 0 0 8 t04o6250.dat
-  [1,16,0,17,0,-8,0,0,0,6.4,0,0,0,8, ldraw_lib__t04o6250()],
+  [1,16,0,17,0,-8,0,0,0,6.4,0,0,0,8, ldraw_lib__t04o6250(realsolid)],
 // 1 16 0 17 0 8 0 0 0 6.4 0 0 0 8 t04o6250.dat
-  [1,16,0,17,0,8,0,0,0,6.4,0,0,0,8, ldraw_lib__t04o6250()],
+  [1,16,0,17,0,8,0,0,0,6.4,0,0,0,8, ldraw_lib__t04o6250(realsolid)],
 // 1 16 0 17 0 -8 0 0 0 6.4 0 0 0 -8 t16o6250.dat
-  [1,16,0,17,0,-8,0,0,0,6.4,0,0,0,-8, ldraw_lib__t16o6250()],
+  [1,16,0,17,0,-8,0,0,0,6.4,0,0,0,-8, ldraw_lib__t16o6250(realsolid)],
 // 1 16 0 17 0 8 0 0 0 6.4 0 0 0 -8 t16o6250.dat
-  [1,16,0,17,0,8,0,0,0,6.4,0,0,0,-8, ldraw_lib__t16o6250()],
+  [1,16,0,17,0,8,0,0,0,6.4,0,0,0,-8, ldraw_lib__t16o6250(realsolid)],
 // 
 // 4 25 -9.88 12.75 -8.163 -9.192 12.872 -9.193 -9.192 8.669 -9.193 -10.79 12.32 -6.802
   [4,25,-9.88,12.75,-8.163,-9.192,12.872,-9.193,-9.192,8.669,-9.193,-10.79,12.32,-6.802],
@@ -1229,5 +1230,5 @@ function ldraw_lib__3626cpsh() = [
   [5,24,12.0104,4,-4.9752,9.192,4,-9.192,12.0104,5.65696,-4.9752,11.6592,2.46912,-4.8296],
 ];
 module ldraw_lib__3626cpsh(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3626cpsh(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3626cpsh(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3626cpsh(line=0.2);

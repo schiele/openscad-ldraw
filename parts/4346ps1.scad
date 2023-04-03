@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/2-4disc.scad>
 use <../p/2-4ndis.scad>
 use <s/4346s01.scad>
-function ldraw_lib__4346ps1() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4346ps1(realsolid=false) = [
 // 0 Container Box  2 x  2 x  2 Door with Slot and SW Rebel Pattern
 // 0 Name: 4346ps1.dat
 // 0 Author: Ronald Scott Moody [rmoody]
@@ -25,7 +26,7 @@ function ldraw_lib__4346ps1() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4346s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4346s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4346s01(realsolid)],
 // 4 16 16 44 -30 20 44 -30 19 38 -30 16 40 -30
   [4,16,16,44,-30,20,44,-30,19,38,-30,16,40,-30],
 // 4 16 -19 38 -30 -20 44 -30 -16 44 -30 -16 40 -30
@@ -184,7 +185,7 @@ function ldraw_lib__4346ps1() = [
   [4,16,11,21,-30,-11,21,-30,-7,23.5,-30,7,23.5,-30],
 // 0 // Red
 // 1 4 0 35.03 -30 -7.125 0 0 0 0 7.125 0 1 0 2-4disc.dat
-  [1,4,0,35.03,-30,-7.125,0,0,0,0,7.125,0,1,0, ldraw_lib__2_4disc()],
+  [1,4,0,35.03,-30,-7.125,0,0,0,0,7.125,0,1,0, ldraw_lib__2_4disc(realsolid)],
 // 3 4 0 28.09 -30 -1.14 29.23 -30 1.14 29.23 -30
   [3,4,0,28.09,-30,-1.14,29.23,-30,1.14,29.23,-30],
 // 4 4 -1.14 29.23 -30 -.57 30.56 -30 .57 30.56 -30 1.14 29.23 -30
@@ -305,7 +306,7 @@ function ldraw_lib__4346ps1() = [
 // 3 15 -1.14 29.23 -30 -1.52 29.99 -30 -.57 30.56 -30
   [3,15,-1.14,29.23,-30,-1.52,29.99,-30,-.57,30.56,-30],
 // 1 15 0 35.03 -30 -7.125 0 0 0 0 7.125 0 1 0 2-4ndis.dat
-  [1,15,0,35.03,-30,-7.125,0,0,0,0,7.125,0,1,0, ldraw_lib__2_4ndis()],
+  [1,15,0,35.03,-30,-7.125,0,0,0,0,7.125,0,1,0, ldraw_lib__2_4ndis(realsolid)],
 // 3 15 -7.125 27.9 -30 -7.125 35.03 -30 -6.58 32.3 -30
   [3,15,-7.125,27.9,-30,-7.125,35.03,-30,-6.58,32.3,-30],
 // 3 15 -7.125 27.9 -30 -6.58 32.3 -30 -5.04 29.99 -30
@@ -569,5 +570,5 @@ function ldraw_lib__4346ps1() = [
 // 0
 ];
 module ldraw_lib__4346ps1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4346ps1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4346ps1(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4346ps1(line=0.2);

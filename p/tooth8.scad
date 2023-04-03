@@ -3,7 +3,8 @@ use <box4o8a.scad>
 use <rect.scad>
 use <rect2p.scad>
 use <rect3.scad>
-function ldraw_lib__tooth8() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__tooth8(realsolid=false) = [
 // 0 Single Tooth for Technic Gear  8 Tooth
 // 0 Name: tooth8.dat
 // 0 Author: Donald Sutter [technog]
@@ -18,17 +19,17 @@ function ldraw_lib__tooth8() = [
 // 
 // 
 // 1 16 0 5.43 0 0.7 0 0 0 -1 0 0 0 4.75 rect.dat
-  [1,16,0,5.43,0,0.7,0,0,0,-1,0,0,0,4.75, ldraw_lib__rect()],
+  [1,16,0,5.43,0,0.7,0,0,0,-1,0,0,0,4.75, ldraw_lib__rect(realsolid)],
 // 1 16 1.1 4.415 0 -0.4 -1 0 1.015 0 0 0 0 4.75 rect2p.dat
-  [1,16,1.1,4.415,0,-0.4,-1,0,1.015,0,0,0,0,4.75, ldraw_lib__rect2p()],
+  [1,16,1.1,4.415,0,-0.4,-1,0,1.015,0,0,0,0,4.75, ldraw_lib__rect2p(realsolid)],
 // 1 16 1.425 1.166 0 0 -1 -0.075 0 0 -0.934 4.75 0 0 rect3.dat
-  [1,16,1.425,1.166,0,0,-1,-0.075,0,0,-0.934,4.75,0,0, ldraw_lib__rect3()],
+  [1,16,1.425,1.166,0,0,-1,-0.075,0,0,-0.934,4.75,0,0, ldraw_lib__rect3(realsolid)],
 // 1 16 -1.1 4.415 0 0.4 1 0 1.015 0 0 0 0 4.75 rect2p.dat
-  [1,16,-1.1,4.415,0,0.4,1,0,1.015,0,0,0,0,4.75, ldraw_lib__rect2p()],
+  [1,16,-1.1,4.415,0,0.4,1,0,1.015,0,0,0,0,4.75, ldraw_lib__rect2p(realsolid)],
 // 1 16 -1.425 1.166 0 0 1 0.075 0 0 -0.934 4.75 0 0 rect3.dat
-  [1,16,-1.425,1.166,0,0,1,0.075,0,0,-0.934,4.75,0,0, ldraw_lib__rect3()],
+  [1,16,-1.425,1.166,0,0,1,0.075,0,0,-0.934,4.75,0,0, ldraw_lib__rect3(realsolid)],
 // 1 16 0 2.1 0 0 0 1.5 0 1.3 0 4.75 0 0 box4o8a.dat
-  [1,16,0,2.1,0,0,0,1.5,0,1.3,0,4.75,0,0, ldraw_lib__box4o8a()],
+  [1,16,0,2.1,0,0,0,1.5,0,1.3,0,4.75,0,0, ldraw_lib__box4o8a(realsolid)],
 // 4 16 1.35 0.232 -4.75 0 0.5 -4.75 -1.5 2.1 -4.75 1.5 2.1 -4.75
   [4,16,1.35,0.232,-4.75,0,0.5,-4.75,-1.5,2.1,-4.75,1.5,2.1,-4.75],
 // 3 16 0 0.5 -4.75 -1.35 0.232 -4.75 -1.5 2.1 -4.75
@@ -60,5 +61,5 @@ function ldraw_lib__tooth8() = [
 // 0
 ];
 module ldraw_lib__tooth8(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__tooth8(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__tooth8(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__tooth8(line=0.2);

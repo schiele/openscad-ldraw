@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4ndis.scad>
 use <s/3004px3s01.scad>
 use <s/3004s01.scad>
-function ldraw_lib__3004px4() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3004px4(realsolid=false) = [
 // 0 Brick  1 x  2 with Black Outline Token Pattern
 // 0 Name: 3004px4.dat
 // 0 Author: Vincent Messenet [Cheenzo]
@@ -19,11 +20,11 @@ function ldraw_lib__3004px4() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3004s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3004s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3004s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3004px3s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3004px3s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3004px3s01(realsolid)],
 // 1 16 0 12.25 -10 10.26667 0 0 0 0 10.26667 0 1 0 4-4ndis.dat
-  [1,16,0,12.25,-10,10.26667,0,0,0,0,10.26667,0,1,0, ldraw_lib__4_4ndis()],
+  [1,16,0,12.25,-10,10.26667,0,0,0,0,10.26667,0,1,0, ldraw_lib__4_4ndis(realsolid)],
 // 4 16 0 1.98337 -10 10.26667 1.98333 -10 20 0 -10 -20 0 -10
   [4,16,0,1.98337,-10,10.26667,1.98333,-10,20,0,-10,-20,0,-10],
 // 3 16 -20 0 -10 -10.26667 1.98333 -10 0 1.98337 -10
@@ -42,5 +43,5 @@ function ldraw_lib__3004px4() = [
   [3,16,-20,24,-10,-10.26667,22.51667,-10,-10.26663,12.25,-10],
 ];
 module ldraw_lib__3004px4(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3004px4(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3004px4(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3004px4(line=0.2);

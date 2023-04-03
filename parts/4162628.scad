@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <4460.scad>
-function ldraw_lib__4162628() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4162628(realsolid=false) = [
 // 0 ~_Slope Brick 75  2 x  1 x  3 Red (Obsolete)
 // 0 Name: 4162628.dat
 // 0 Author: Michael Heidemann [mikeheide]
@@ -20,8 +21,8 @@ function ldraw_lib__4162628() = [
 // 0 // colouring of the part (Red).
 // 
 // 1 4 0 0 0 1 0 0 0 1 0 0 0 1 4460.dat
-  [1,4,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4460()],
+  [1,4,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4460(realsolid)],
 ];
 module ldraw_lib__4162628(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4162628(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4162628(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4162628(line=0.2);

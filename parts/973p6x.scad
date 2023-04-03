@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/1-4cyli.scad>
 use <s/973s01.scad>
-function ldraw_lib__973p6x() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__973p6x(realsolid=false) = [
 // 0 Minifig Torso with UFO Alien Silver and Gold Circuitry Pattern
 // 0 Name: 973p6x.dat
 // 0 Author: Nils Schmidt [BlackBrick89]
@@ -20,7 +21,7 @@ function ldraw_lib__973p6x() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01(realsolid)],
 // 4 16 14.35 2 10 12 0 10 -12 0 10 -14.35 2 10
   [4,16,14.35,2,10,12,0,10,-12,0,10,-14.35,2,10],
 // 4 16 -19 29 10 19 29 10 14.35 2 10 -14.35 2 10
@@ -28,7 +29,7 @@ function ldraw_lib__973p6x() = [
 // 4 16 19 32 10 19 29 10 -19 29 10 -19 32 10
   [4,16,19,32,10,19,29,10,-19,29,10,-19,32,10],
 // 1 0 0 -4 0 4.243 0 -4.243 0 -8 0 -4.243 0 -4.243 1-4cyli.dat
-  [1,0,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli()],
+  [1,0,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli(realsolid)],
 // 3 0 -17.68 29.23 -10 -17.77 29 -10 -17.65 29 -10
   [3,0,-17.68,29.23,-10,-17.77,29,-10,-17.65,29,-10],
 // 3 0 -17.68 29.23 -10 -17.65 29 -10 -17.53 29 -10
@@ -3829,5 +3830,5 @@ function ldraw_lib__973p6x() = [
   [3,16,3.54,0.48,-10,3.2,0,-10,5.62,0,-10],
 ];
 module ldraw_lib__973p6x(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__973p6x(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__973p6x(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__973p6x(line=0.2);

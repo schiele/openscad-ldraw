@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/4162s01.scad>
-function ldraw_lib__4162p0w() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4162p0w(realsolid=false) = [
 // 0 Tile  1 x  8 with "LOM Building B" Pattern
 // 0 Name: 4162p0w.dat
 // 0 Author: Owen Burgoyne [C3POwen]
@@ -17,7 +18,7 @@ function ldraw_lib__4162p0w() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4162s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4162s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4162s01(realsolid)],
 // 4 15 -41.417 0 4.436 -41.417 0 -4.2 -40.358 0 -3.181 -40.358 0 4.436
   [4,15,-41.417,0,4.436,-41.417,0,-4.2,-40.358,0,-3.181,-40.358,0,4.436],
 // 4 15 -40.358 0 -3.181 -41.417 0 -4.2 -35.915 0 -4.2 -35.915 0 -3.181
@@ -1062,5 +1063,5 @@ function ldraw_lib__4162p0w() = [
   [3,16,80,0,10,5.631,0,5.059,12.185,0,5.059],
 ];
 module ldraw_lib__4162p0w(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4162p0w(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4162p0w(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4162p0w(line=0.2);

@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <70423.scad>
 use <994.scad>
-function ldraw_lib__70423c01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__70423c01(realsolid=false) = [
 // 0 Electric Plug (Type 4) Twin with Centre Plastic Pin with Cable End
 // 0 Name: 70423c01.dat
 // 0 Author: Steffen [Steffen]
@@ -16,10 +17,10 @@ function ldraw_lib__70423c01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 70423.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__70423()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__70423(realsolid)],
 // 1 375 0 0 34 0 0 1 1 0 0 0 1 0 994.dat
-  [1,375,0,0,34,0,0,1,1,0,0,0,1,0, ldraw_lib__994()],
+  [1,375,0,0,34,0,0,1,1,0,0,0,1,0, ldraw_lib__994(realsolid)],
 ];
 module ldraw_lib__70423c01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__70423c01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__70423c01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__70423c01(line=0.2);

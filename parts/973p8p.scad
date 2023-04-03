@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/1-4cyli.scad>
 use <s/973s01.scad>
-function ldraw_lib__973p8p() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__973p8p(realsolid=false) = [
 // 0 Minifig Torso with Blue Shirt and Construction Zipper Jacket with Safety Stripes Pattern
 // 0 Name: 973p8p.dat
 // 0 Author: Tim Lampmann [L4mpi]
@@ -18,7 +19,7 @@ function ldraw_lib__973p8p() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01(realsolid)],
 // 
 // 4 16 19 29 10 19 32 10 -19 32 10 -19 29 10
   [4,16,19,29,10,19,32,10,-19,32,10,-19,29,10],
@@ -27,7 +28,7 @@ function ldraw_lib__973p8p() = [
 // 4 16 -14.345 2 10 -12 0 10 12 0 10 14.345 2 10
   [4,16,-14.345,2,10,-12,0,10,12,0,10,14.345,2,10],
 // 1 0 0 -4 0 4.243 0 -4.243 0 -8 0 -4.243 0 -4.243 1-4cyli.dat
-  [1,0,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli()],
+  [1,0,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli(realsolid)],
 // 
 // 4 0 4.25 27 -10 3.5 27.5 -10 3.5 31 -10 4.25 30.25 -10
   [4,0,4.25,27,-10,3.5,27.5,-10,3.5,31,-10,4.25,30.25,-10],
@@ -1471,5 +1472,5 @@ function ldraw_lib__973p8p() = [
   [3,0,7.5,1.25,-10,2.15,2,-10,6.75,2,-10],
 ];
 module ldraw_lib__973p8p(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__973p8p(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__973p8p(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__973p8p(line=0.2);

@@ -2,7 +2,8 @@ use <../../lib.scad>
 use <../../p/4-4cyli.scad>
 use <../../p/4-4disc.scad>
 use <../../p/4-4edge.scad>
-function ldraw_lib__s__25866s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__25866s01(realsolid=false) = [
 // 0 ~Friends Lipstick Dual Mould Core
 // 0 Name: s\25866s01.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -20,14 +21,14 @@ function ldraw_lib__s__25866s01() = [
 // 
 // 
 // 1 16 0 0 0 2 0 0 0 -1 0 0 0 2 4-4disc.dat
-  [1,16,0,0,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__4_4disc()],
+  [1,16,0,0,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__4_4disc(realsolid)],
 // 
 // 1 16 0 -18 0 4 0 0 0 -11.5 0 0 0 4 4-4cyli.dat
-  [1,16,0,-18,0,4,0,0,0,-11.5,0,0,0,4, ldraw_lib__4_4cyli()],
+  [1,16,0,-18,0,4,0,0,0,-11.5,0,0,0,4, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 -36.1 -0.7 3.2 0 0 0 1 -2.5 0 0 3.1 4-4edge.dat
-  [1,16,0,-36.1,-0.7,3.2,0,0,0,1,-2.5,0,0,3.1, ldraw_lib__4_4edge()],
+  [1,16,0,-36.1,-0.7,3.2,0,0,0,1,-2.5,0,0,3.1, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 -36.1 -0.7 3.2 0 0 0 1 -2.5 0 0 3.1 4-4disc.dat
-  [1,16,0,-36.1,-0.7,3.2,0,0,0,1,-2.5,0,0,3.1, ldraw_lib__4_4disc()],
+  [1,16,0,-36.1,-0.7,3.2,0,0,0,1,-2.5,0,0,3.1, ldraw_lib__4_4disc(realsolid)],
 // 3 16 -3.2 -36.1 -0.7 -4 -29.5 0 -3.6956 -29.5 -1.5308
   [3,16,-3.2,-36.1,-0.7,-4,-29.5,0,-3.6956,-29.5,-1.5308],
 // 3 16 -3.2 -36.1 -0.7 -3.6956 -29.5 -1.5308 -2.9565 -35.1433 -1.8864
@@ -228,5 +229,5 @@ function ldraw_lib__s__25866s01() = [
   [5,24,2.9565,-37.0568,0.4864,2.9565,-36.1,0.8308,2.2627,-36.1,2.1284,3.2,-36.1,-0.7],
 ];
 module ldraw_lib__s__25866s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__25866s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__25866s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__25866s01(line=0.2);

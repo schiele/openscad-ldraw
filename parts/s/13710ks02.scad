@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__13710ks02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__13710ks02(realsolid=false) = [
 // 0 ~Sticker Top for Technic Beam  3 with Panel Fairing (Flat)
 // 0 Name: s\13710ks02.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -33,5 +34,5 @@ function ldraw_lib__s__13710ks02() = [
   [4,16,24.2,-0.25,-10.75,-18.484,-0.25,-10.75,-17.23,-0.25,-17.27,20.522,-0.25,-17.269],
 ];
 module ldraw_lib__s__13710ks02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__13710ks02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__13710ks02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__13710ks02(line=0.2);

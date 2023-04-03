@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <22969a.scad>
 use <32298p01.scad>
-function ldraw_lib__22969ac02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__22969ac02(realsolid=false) = [
 // 0 Wheel 56 x 46 Technic Racing with Tyre 61/ 41 x 54 Power Puller
 // 0 Name: 22969ac02.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -19,10 +20,10 @@ function ldraw_lib__22969ac02() = [
 // 
 // 
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 -1 22969a.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__22969a()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__22969a(realsolid)],
 // 1 256 0 0 0 1 0 0 0 1 0 0 0 1 32298p01.dat
-  [1,256,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__32298p01()],
+  [1,256,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__32298p01(realsolid)],
 ];
 module ldraw_lib__22969ac02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__22969ac02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__22969ac02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__22969ac02(line=0.2);

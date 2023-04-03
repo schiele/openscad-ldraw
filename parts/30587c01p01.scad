@@ -3,7 +3,8 @@ use <23222.scad>
 use <30587.scad>
 use <30588.scad>
 use <30589.scad>
-function ldraw_lib__30587c01p01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__30587c01p01(realsolid=false) = [
 // 0 Hose Air Pump 16 x 14 x 13 Valves and Pump with Dark Grey Casing and Ring (Complete)
 // 0 Name: 30587c01p01.dat
 // 0 Author: Mikkel Bech Jensen [gaia]
@@ -20,14 +21,14 @@ function ldraw_lib__30587c01p01() = [
 // 
 // 
 // 1 8 0 0 0 1 0 0 0 1 0 0 0 1 30587.dat
-  [1,8,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__30587()],
+  [1,8,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__30587(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 30588.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__30588()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__30588(realsolid)],
 // 1 8 0 0 0 1 0 0 0 1 0 0 0 1 30589.dat
-  [1,8,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__30589()],
+  [1,8,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__30589(realsolid)],
 // 1 256 0 0 0 1 0 0 0 1 0 0 0 1 23222.dat
-  [1,256,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__23222()],
+  [1,256,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__23222(realsolid)],
 ];
 module ldraw_lib__30587c01p01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__30587c01p01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__30587c01p01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__30587c01p01(line=0.2);

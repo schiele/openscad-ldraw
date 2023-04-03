@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__48__1_24con7() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__48__1_24con7(realsolid=false) = [
 // 0 Hi-Res Cone  7 x 0.0417
 // 0 Name: 48\1-24con7.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -25,5 +26,5 @@ function ldraw_lib__48__1_24con7() = [
   [5,24,6.7613,1,1.8116,7.7272,0,2.0704,6.9398,1,0.9135,6.4673,1,2.6789],
 ];
 module ldraw_lib__48__1_24con7(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__48__1_24con7(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__48__1_24con7(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__48__1_24con7(line=0.2);

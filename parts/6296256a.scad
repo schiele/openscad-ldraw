@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__6296256a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6296256a(realsolid=false) = [
 // 0 Sticker  1.8 x  3.8 with Switzerland and Sweden Stickers on Medium Nougat
 // 0 Name: 6296256a.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -17,7 +18,7 @@ function ldraw_lib__6296256a() = [
 // 
 // 
 // 1 16 0 -.25 0 38 0 0 0 .25 0 0 0 18 box5-12.dat
-  [1,16,0,-.25,0,38,0,0,0,.25,0,0,0,18, ldraw_lib__box5_12()],
+  [1,16,0,-.25,0,38,0,0,0,.25,0,0,0,18, ldraw_lib__box5_12(realsolid)],
 // 4 0 22.94 -0.25 -0.71 21.74 -0.25 -0.95 22.32 -0.25 -2.12 23.52 -0.25 -1.8
   [4,0,22.94,-0.25,-0.71,21.74,-0.25,-0.95,22.32,-0.25,-2.12,23.52,-0.25,-1.8],
 // 4 0 10.36 -0.25 0.3 9.28 -0.25 0.6 9.28 -0.25 -0.36 9.68 -0.25 -0.76
@@ -680,5 +681,5 @@ function ldraw_lib__6296256a() = [
   [3,84,-29.92,-0.25,-1.08,-38,-0.25,18,-30.24,-0.25,-1.16],
 ];
 module ldraw_lib__6296256a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6296256a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6296256a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6296256a(line=0.2);

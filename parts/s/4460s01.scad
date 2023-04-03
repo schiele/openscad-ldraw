@@ -4,7 +4,8 @@ use <../../p/box2-7.scad>
 use <../../p/box3u4a.scad>
 use <../../p/rect2p.scad>
 use <../../p/recte3.scad>
-function ldraw_lib__s__4460s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__4460s01(realsolid=false) = [
 // 0 ~Slope Brick 75  2 x  1 x  3 without Top Faces
 // 0 Name: s\4460s01.dat
 // 0 Author: James Jessiman
@@ -20,13 +21,13 @@ function ldraw_lib__s__4460s01() = [
 // 
 // 
 // 1 16 0 36 -20 10 0 0 0 -2 34 0 0 -10 box2-5.dat
-  [1,16,0,36,-20,10,0,0,0,-2,34,0,0,-10, ldraw_lib__box2_5()],
+  [1,16,0,36,-20,10,0,0,0,-2,34,0,0,-10, ldraw_lib__box2_5(realsolid)],
 // 1 16 0 36 10 0 0 -10 36 0 0 0 -1 0 rect2p.dat
-  [1,16,0,36,10,0,0,-10,36,0,0,0,-1,0, ldraw_lib__rect2p()],
+  [1,16,0,36,10,0,0,-10,36,0,0,0,-1,0, ldraw_lib__rect2p(realsolid)],
 // 1 16 0 0 0 10 0 0 0 1 0 0 0 10 recte3.dat
-  [1,16,0,0,0,10,0,0,0,1,0,0,0,10, ldraw_lib__recte3()],
+  [1,16,0,0,0,10,0,0,0,1,0,0,0,10, ldraw_lib__recte3(realsolid)],
 // 1 16 0 72 -10 10 0 0 0 1 0 0 0 20 recte3.dat
-  [1,16,0,72,-10,10,0,0,0,1,0,0,0,20, ldraw_lib__recte3()],
+  [1,16,0,72,-10,10,0,0,0,1,0,0,0,20, ldraw_lib__recte3(realsolid)],
 // 
 // 4 16 10 72 -30 10 72 10 10 0 10 10 0 -10
   [4,16,10,72,-30,10,72,10,10,0,10,10,0,-10],
@@ -40,21 +41,21 @@ function ldraw_lib__s__4460s01() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 38 -17 6 0 0 0 -2.5 31.5 0 0 -9 box2-7.dat
-  [1,16,0,38,-17,6,0,0,0,-2.5,31.5,0,0,-9, ldraw_lib__box2_7()],
+  [1,16,0,38,-17,6,0,0,0,-2.5,31.5,0,0,-9, ldraw_lib__box2_7(realsolid)],
 // 1 16 0 72 -21.5 6 0 0 0 1 0 0 0 -4.5 recte3.dat
-  [1,16,0,72,-21.5,6,0,0,0,1,0,0,0,-4.5, ldraw_lib__recte3()],
+  [1,16,0,72,-21.5,6,0,0,0,1,0,0,0,-4.5, ldraw_lib__recte3(realsolid)],
 // 1 16 0 4 -7.5 6 0 0 0 1 0 0 0 -0.5 recte3.dat
-  [1,16,0,4,-7.5,6,0,0,0,1,0,0,0,-0.5, ldraw_lib__recte3()],
+  [1,16,0,4,-7.5,6,0,0,0,1,0,0,0,-0.5, ldraw_lib__recte3(realsolid)],
 // 
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 38 -3 0 0 6 34 0 0 0 9 0 box3u4a.dat
-  [1,16,0,38,-3,0,0,6,34,0,0,0,9,0, ldraw_lib__box3u4a()],
+  [1,16,0,38,-3,0,0,6,34,0,0,0,9,0, ldraw_lib__box3u4a(realsolid)],
 // 
 // 1 16 -6 38 -5 0 1 1 34 0 0 0 1 -1 box2-5.dat
-  [1,16,-6,38,-5,0,1,1,34,0,0,0,1,-1, ldraw_lib__box2_5()],
+  [1,16,-6,38,-5,0,1,1,34,0,0,0,1,-1, ldraw_lib__box2_5(realsolid)],
 // 1 16 6 38 -5 0 -1 -1 34 0 0 0 -1 1 box2-5.dat
-  [1,16,6,38,-5,0,-1,-1,34,0,0,0,-1,1, ldraw_lib__box2_5()],
+  [1,16,6,38,-5,0,-1,-1,34,0,0,0,-1,1, ldraw_lib__box2_5(realsolid)],
 // 
 // 4 16 6 21.5 -13 6 4 -8 6 72 -7 6 72 -13
   [4,16,6,21.5,-13,6,4,-8,6,72,-7,6,72,-13],
@@ -145,5 +146,5 @@ function ldraw_lib__s__4460s01() = [
   [3,16,6,72,-26,6,72,-17,10,72,-30],
 ];
 module ldraw_lib__s__4460s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__4460s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__4460s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__4460s01(line=0.2);

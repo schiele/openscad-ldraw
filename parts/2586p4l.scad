@@ -4,7 +4,8 @@ use <s/3846p4la.scad>
 use <s/3846p4lb.scad>
 use <s/3846p4lc.scad>
 use <s/3846p4ld.scad>
-function ldraw_lib__2586p4l() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2586p4l(realsolid=false) = [
 // 0 Minifig Shield Ovoid with Gold Lion on Red/White Quart. Pattern
 // 0 Name: 2586p4l.dat
 // 0 Author: Joerg Sommerer [Brickaneer]
@@ -21,15 +22,15 @@ function ldraw_lib__2586p4l() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2586s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2586s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2586s01(realsolid)],
 // 1 15 2.94 -18.76 -8 1.2 0 0 0 1.2 0 0 0 1 s\3846p4la.dat
-  [1,15,2.94,-18.76,-8,1.2,0,0,0,1.2,0,0,0,1, ldraw_lib__s__3846p4la()],
+  [1,15,2.94,-18.76,-8,1.2,0,0,0,1.2,0,0,0,1, ldraw_lib__s__3846p4la(realsolid)],
 // 1 82 2.94 -18.76 -8 1.2 0 0 0 1.2 0 0 0 1 s\3846p4lb.dat
-  [1,82,2.94,-18.76,-8,1.2,0,0,0,1.2,0,0,0,1, ldraw_lib__s__3846p4lb()],
+  [1,82,2.94,-18.76,-8,1.2,0,0,0,1.2,0,0,0,1, ldraw_lib__s__3846p4lb(realsolid)],
 // 1 82 2.94 -18.76 -8 1.2 0 0 0 1.2 0 0 0 1 s\3846p4lc.dat
-  [1,82,2.94,-18.76,-8,1.2,0,0,0,1.2,0,0,0,1, ldraw_lib__s__3846p4lc()],
+  [1,82,2.94,-18.76,-8,1.2,0,0,0,1.2,0,0,0,1, ldraw_lib__s__3846p4lc(realsolid)],
 // 1 16 2.94 -18.76 -8 1.2 0 0 0 1.2 0 0 0 1 s\3846p4ld.dat
-  [1,16,2.94,-18.76,-8,1.2,0,0,0,1.2,0,0,0,1, ldraw_lib__s__3846p4ld()],
+  [1,16,2.94,-18.76,-8,1.2,0,0,0,1.2,0,0,0,1, ldraw_lib__s__3846p4ld(realsolid)],
 // 4 15 -2.2962 37.0434 -8 0 37.5 -8 0 13.64 -8 -6.66 16.04 -8
   [4,15,-2.2962,37.0434,-8,0,37.5,-8,0,13.64,-8,-6.66,16.04,-8],
 // 4 15 -4.243 35.743 -8 -2.2962 37.0434 -8 -6.66 16.04 -8 -9 29.5 -8
@@ -72,5 +73,5 @@ function ldraw_lib__2586p4l() = [
   [4,15,2.94,-25.96,-8,7.654,-32.978,-8,0,-34.5,-8,0,-25.96,-8],
 ];
 module ldraw_lib__2586p4l(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2586p4l(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2586p4l(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2586p4l(line=0.2);

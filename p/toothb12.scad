@@ -3,7 +3,8 @@ use <1-4cyli.scad>
 use <1-4disc.scad>
 use <1-4edge.scad>
 use <box3u8p.scad>
-function ldraw_lib__toothb12() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__toothb12(realsolid=false) = [
 // 0 Single Tooth for Technic Double Bevel Gear 12 and 20 Tooth
 // 0 Name: toothb12.dat
 // 0 Author: Mark Kennedy [mkennedy]
@@ -62,27 +63,27 @@ function ldraw_lib__toothb12() = [
 // 2 24 -1.7 6 3 0 6 8
   [2,24,-1.7,6,3,0,6,8],
 // 1 16 0.7 6 3 1 0 0 0 0 1 0 -1 0 1-4disc.dat
-  [1,16,0.7,6,3,1,0,0,0,0,1,0,-1,0, ldraw_lib__1_4disc()],
+  [1,16,0.7,6,3,1,0,0,0,0,1,0,-1,0, ldraw_lib__1_4disc(realsolid)],
 // 1 16 0.7 6 3 1 0 0 0 0 1 0 1 0 1-4edge.dat
-  [1,16,0.7,6,3,1,0,0,0,0,1,0,1,0, ldraw_lib__1_4edge()],
+  [1,16,0.7,6,3,1,0,0,0,0,1,0,1,0, ldraw_lib__1_4edge(realsolid)],
 // 1 16 0.7 6 3 1 0 0 0 0 1 0 -6 0 1-4cyli.dat
-  [1,16,0.7,6,3,1,0,0,0,0,1,0,-6,0, ldraw_lib__1_4cyli()],
+  [1,16,0.7,6,3,1,0,0,0,0,1,0,-6,0, ldraw_lib__1_4cyli(realsolid)],
 // 1 16 0.7 6 -3 1 0 0 0 0 1 0 1 0 1-4edge.dat
-  [1,16,0.7,6,-3,1,0,0,0,0,1,0,1,0, ldraw_lib__1_4edge()],
+  [1,16,0.7,6,-3,1,0,0,0,0,1,0,1,0, ldraw_lib__1_4edge(realsolid)],
 // 1 16 0.7 6 -3 1 0 0 0 0 1 0 1 0 1-4disc.dat
-  [1,16,0.7,6,-3,1,0,0,0,0,1,0,1,0, ldraw_lib__1_4disc()],
+  [1,16,0.7,6,-3,1,0,0,0,0,1,0,1,0, ldraw_lib__1_4disc(realsolid)],
 // 1 16 0 6 0 -0.7 0 0 0 1 0 0 0 3 box3u8p.dat
-  [1,16,0,6,0,-0.7,0,0,0,1,0,0,0,3, ldraw_lib__box3u8p()],
+  [1,16,0,6,0,-0.7,0,0,0,1,0,0,0,3, ldraw_lib__box3u8p(realsolid)],
 // 1 16 -0.7 6 -3 -1 0 0 0 0 1 0 1 0 1-4disc.dat
-  [1,16,-0.7,6,-3,-1,0,0,0,0,1,0,1,0, ldraw_lib__1_4disc()],
+  [1,16,-0.7,6,-3,-1,0,0,0,0,1,0,1,0, ldraw_lib__1_4disc(realsolid)],
 // 1 16 -0.7 6 -3 -1 0 0 0 0 1 0 -1 0 1-4edge.dat
-  [1,16,-0.7,6,-3,-1,0,0,0,0,1,0,-1,0, ldraw_lib__1_4edge()],
+  [1,16,-0.7,6,-3,-1,0,0,0,0,1,0,-1,0, ldraw_lib__1_4edge(realsolid)],
 // 1 16 -0.7 6 3 -1 0 0 0 0 1 0 -6 0 1-4cyli.dat
-  [1,16,-0.7,6,3,-1,0,0,0,0,1,0,-6,0, ldraw_lib__1_4cyli()],
+  [1,16,-0.7,6,3,-1,0,0,0,0,1,0,-6,0, ldraw_lib__1_4cyli(realsolid)],
 // 1 16 -0.7 6 3 -1 0 0 0 0 1 0 -1 0 1-4edge.dat
-  [1,16,-0.7,6,3,-1,0,0,0,0,1,0,-1,0, ldraw_lib__1_4edge()],
+  [1,16,-0.7,6,3,-1,0,0,0,0,1,0,-1,0, ldraw_lib__1_4edge(realsolid)],
 // 1 16 -0.7 6 3 -1 0 0 0 0 1 0 -1 0 1-4disc.dat
-  [1,16,-0.7,6,3,-1,0,0,0,0,1,0,-1,0, ldraw_lib__1_4disc()],
+  [1,16,-0.7,6,3,-1,0,0,0,0,1,0,-1,0, ldraw_lib__1_4disc(realsolid)],
 // 4 16 1.31 -0.09 10 1.31 -0.09 -10 2 4.4 -4.72 2 4.4 4.72
   [4,16,1.31,-0.09,10,1.31,-0.09,-10,2,4.4,-4.72,2,4.4,4.72],
 // 4 16 2 4.4 4.72 2 4.4 -4.72 1.7 6 -3 1.7 6 3
@@ -148,5 +149,5 @@ function ldraw_lib__toothb12() = [
 // 0
 ];
 module ldraw_lib__toothb12(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__toothb12(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__toothb12(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__toothb12(line=0.2);

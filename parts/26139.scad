@@ -4,7 +4,8 @@ use <../p/3-16cylo.scad>
 use <../p/5-16chrd.scad>
 use <../p/5-16cylo.scad>
 use <../p/stud16.scad>
-function ldraw_lib__26139() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__26139(realsolid=false) = [
 // 0 Minifig Hair Short Wavy with Centre Parting
 // 0 Name: 26139.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -24,35 +25,35 @@ function ldraw_lib__26139() = [
 // 
 // 
 // 1 16 0 -5 0 1 0 0 0 -1.25 0 0 0 -1 stud16.dat
-  [1,16,0,-5,0,1,0,0,0,-1.25,0,0,0,-1, ldraw_lib__stud16()],
+  [1,16,0,-5,0,1,0,0,0,-1.25,0,0,0,-1, ldraw_lib__stud16(realsolid)],
 // 1 16 0 -5 0 0 0 -11 0 -1 0 11 0 0 5-16chrd.dat
-  [1,16,0,-5,0,0,0,-11,0,-1,0,11,0,0, ldraw_lib__5_16chrd()],
+  [1,16,0,-5,0,0,0,-11,0,-1,0,11,0,0, ldraw_lib__5_16chrd(realsolid)],
 // 1 16 0 -5 0 0 0 11 0 -1 0 11 0 0 5-16chrd.dat
-  [1,16,0,-5,0,0,0,11,0,-1,0,11,0,0, ldraw_lib__5_16chrd()],
+  [1,16,0,-5,0,0,0,11,0,-1,0,11,0,0, ldraw_lib__5_16chrd(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -5 0 0 0 -11 0 4.5 0 11 0 0 5-16cylo.dat
-  [1,16,0,-5,0,0,0,-11,0,4.5,0,11,0,0, ldraw_lib__5_16cylo()],
+  [1,16,0,-5,0,0,0,-11,0,4.5,0,11,0,0, ldraw_lib__5_16cylo(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -5 0 0 0 11 0 4.5 0 11 0 0 5-16cylo.dat
-  [1,16,0,-5,0,0,0,11,0,4.5,0,11,0,0, ldraw_lib__5_16cylo()],
+  [1,16,0,-5,0,0,0,11,0,4.5,0,11,0,0, ldraw_lib__5_16cylo(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -3 0 0 0 -2.66667 0 -2 0 -2.66667 0 0 3-16con3.dat
-  [1,16,0,-3,0,0,0,-2.66667,0,-2,0,-2.66667,0,0, ldraw_lib__3_16con3()],
+  [1,16,0,-3,0,0,0,-2.66667,0,-2,0,-2.66667,0,0, ldraw_lib__3_16con3(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -3 0 0 0 2.66667 0 -2 0 -2.66667 0 0 3-16con3.dat
-  [1,16,0,-3,0,0,0,2.66667,0,-2,0,-2.66667,0,0, ldraw_lib__3_16con3()],
+  [1,16,0,-3,0,0,0,2.66667,0,-2,0,-2.66667,0,0, ldraw_lib__3_16con3(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -3 0 0 0 -10.66667 0 3.5 0 -10.66667 0 0 3-16cylo.dat
-  [1,16,0,-3,0,0,0,-10.66667,0,3.5,0,-10.66667,0,0, ldraw_lib__3_16cylo()],
+  [1,16,0,-3,0,0,0,-10.66667,0,3.5,0,-10.66667,0,0, ldraw_lib__3_16cylo(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -3 0 0 0 10.66667 0 3.5 0 -10.66667 0 0 3-16cylo.dat
-  [1,16,0,-3,0,0,0,10.66667,0,3.5,0,-10.66667,0,0, ldraw_lib__3_16cylo()],
+  [1,16,0,-3,0,0,0,10.66667,0,3.5,0,-10.66667,0,0, ldraw_lib__3_16cylo(realsolid)],
 // 3 16 12.712 4.271 -11.626 11.129 4.602 -11.244 13.772 5.559 -10.444
   [3,16,12.712,4.271,-11.626,11.129,4.602,-11.244,13.772,5.559,-10.444],
 // 3 16 13.772 5.559 -10.444 11.129 4.602 -11.244 11.874 6.355 -9.363
@@ -5696,5 +5697,5 @@ function ldraw_lib__26139() = [
   [5,24,14.648,11.479,-0.179,12.889,12.412,1.678,14.889,11.617,1.95,13,12.067,0.042],
 ];
 module ldraw_lib__26139(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__26139(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__26139(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__26139(line=0.2);

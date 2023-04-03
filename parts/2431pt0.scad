@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/2431s01.scad>
-function ldraw_lib__2431pt0() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2431pt0(realsolid=false) = [
 // 0 Tile  1 x  4 with "RALLY" Pattern
 // 0 Name: 2431pt0.dat
 // 0 Author: Alex Taylor [anathema]
@@ -15,7 +16,7 @@ function ldraw_lib__2431pt0() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2431s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2431s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2431s01(realsolid)],
 // 4 0 -37.8 0 -7.8 -33.2 0 -7.8 -32.792 0 -6 -37.233 0 -5.3
   [4,0,-37.8,0,-7.8,-33.2,0,-7.8,-32.792,0,-6,-37.233,0,-5.3],
 // 4 16 -37.233 0 -5.3 -40 0 10 -40 0 -10 -37.8 0 -7.8
@@ -539,5 +540,5 @@ function ldraw_lib__2431pt0() = [
 // 0
 ];
 module ldraw_lib__2431pt0(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2431pt0(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2431pt0(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2431pt0(line=0.2);

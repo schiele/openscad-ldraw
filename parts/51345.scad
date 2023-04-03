@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/51345s01.scad>
-function ldraw_lib__51345() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__51345(realsolid=false) = [
 // 0 Minifig Hips Mermaid Tail Standing
 // 0 Name: 51345.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -19,7 +20,7 @@ function ldraw_lib__51345() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\51345s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__51345s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__51345s01(realsolid)],
 // 4 16 17.664 10 -10.479 17.875 0 -9.927 -17.875 0 -9.927 -17.664 10 -10.479
   [4,16,17.664,10,-10.479,17.875,0,-9.927,-17.875,0,-9.927,-17.664,10,-10.479],
 // 4 16 -17.664 10 -10.479 -15.955 24.961 -10.075 15.955 24.961 -10.075 17.664 10 -10.479
@@ -52,5 +53,5 @@ function ldraw_lib__51345() = [
   [5,24,17.664,10,-10.479,-17.664,10,-10.479,-15.955,24.961,-10.075,17.875,0,-9.927],
 ];
 module ldraw_lib__51345(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__51345(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__51345(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__51345(line=0.2);

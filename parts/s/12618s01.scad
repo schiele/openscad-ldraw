@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__12618s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__12618s01(realsolid=false) = [
 // 0 ~Minifig Armour Shoulder Pads with Six Spikes - Spikes Quarter
 // 0 Name: s\12618s01.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -490,5 +491,5 @@ function ldraw_lib__s__12618s01() = [
   [5,24,-13.985,0,-10,-13.207,-3,-10,-16.313,-3.228,-10.086,13.985,0,-10],
 ];
 module ldraw_lib__s__12618s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__12618s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__12618s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__12618s01(line=0.2);

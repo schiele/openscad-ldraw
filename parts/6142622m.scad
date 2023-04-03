@@ -5,7 +5,8 @@ use <s/6142622ms03.scad>
 use <s/6142622ms04.scad>
 use <s/6142622ms05.scad>
 use <s/6142622ms06.scad>
-function ldraw_lib__6142622m() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6142622m(realsolid=false) = [
 // 0 Sticker  1.9 x  0.8 with Black Headlamp on Yellow Background Right
 // 0 Name: 6142622m.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -22,20 +23,20 @@ function ldraw_lib__6142622m() = [
 // 
 // 
 // 1 16 0 0 13.8789 1 0 0 0 1 0 0 0 1 s\6142622ms01.dat
-  [1,16,0,0,13.8789,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6142622ms01()],
+  [1,16,0,0,13.8789,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6142622ms01(realsolid)],
 // 4 14 -8 -.25 13.8668 -8 -.25 6.5112 8 -.25 6.5112 8 -.25 13.8668
   [4,14,-8,-.25,13.8668,-8,-.25,6.5112,8,-.25,6.5112,8,-.25,13.8668],
 // 1 16 0 0 -.7172 1 0 0 0 1 0 0 0 1 s\6142622ms02.dat
-  [1,16,0,0,-.7172,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6142622ms02()],
+  [1,16,0,0,-.7172,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6142622ms02(realsolid)],
 // 1 16 0 0 -.7428 1 0 0 0 1 0 0 0 1 s\6142622ms03.dat
-  [1,16,0,0,-.7428,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6142622ms03()],
+  [1,16,0,0,-.7428,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6142622ms03(realsolid)],
 // 1 16 0 0 -14.6522 1 0 0 0 1 0 0 0 1 s\6142622ms04.dat
-  [1,16,0,0,-14.6522,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6142622ms04()],
+  [1,16,0,0,-14.6522,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6142622ms04(realsolid)],
 // 1 16 0 0 -14.681 1 0 0 0 1 0 0 0 1 s\6142622ms05.dat
-  [1,16,0,0,-14.681,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6142622ms05()],
+  [1,16,0,0,-14.681,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6142622ms05(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\6142622ms06.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6142622ms06()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6142622ms06(realsolid)],
 ];
 module ldraw_lib__6142622m(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6142622m(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6142622m(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6142622m(line=0.2);

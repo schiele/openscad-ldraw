@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <4495.scad>
-function ldraw_lib__449521() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__449521(realsolid=false) = [
 // 0 ~_Flag  4 x 1 Red (Obsolete)
 // 0 Name: 449521.dat
 // 0 Author: Michael Heidemann [mikeheide]
@@ -20,8 +21,8 @@ function ldraw_lib__449521() = [
 // 0 // colouring of the part (Red).
 // 
 // 1 4 0 0 0 1 0 0 0 1 0 0 0 1 4495.dat
-  [1,4,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4495()],
+  [1,4,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4495(realsolid)],
 ];
 module ldraw_lib__449521(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__449521(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__449521(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__449521(line=0.2);

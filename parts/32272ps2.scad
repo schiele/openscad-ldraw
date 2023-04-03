@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/32272s01.scad>
-function ldraw_lib__32272ps2() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__32272ps2(realsolid=false) = [
 // 0 Technic Dome  6 x  6 x  7 with SW Droid Head Quarter with Eye Pattern
 // 0 Name: 32272ps2.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -18,7 +19,7 @@ function ldraw_lib__32272ps2() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\32272s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__32272s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__32272s01(realsolid)],
 // 4 16 21.991 -127.178 -55.562 20 -127.186 -55.691 20 -124.5 -61.06 21.995 -125.54 -58.845
   [4,16,21.991,-127.178,-55.562,20,-127.186,-55.691,20,-124.5,-61.06,21.995,-125.54,-58.845],
 // 4 16 21.995 -125.54 -58.845 20 -124.5 -61.06 25.358 -124.5 -60.707 25.003 -125.528 -58.67
@@ -1631,5 +1632,5 @@ function ldraw_lib__32272ps2() = [
   [3,0,28.862,-96.84,-89.56,25.568,-104.752,-82.917,24.477,-105.055,-82.726],
 ];
 module ldraw_lib__32272ps2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__32272ps2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__32272ps2(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__32272ps2(line=0.2);

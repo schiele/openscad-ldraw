@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <2431.scad>
-function ldraw_lib__91143() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__91143(realsolid=false) = [
 // 0 =Tile  1 x  4 with Groove
 // 0 Name: 91143.dat
 // 0 Author: Rolf Osterthun [Rolf]
@@ -18,8 +19,8 @@ function ldraw_lib__91143() = [
 // 0 // Part 91143 is the transparent counterpart of 2431
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 2431.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2431()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2431(realsolid)],
 ];
 module ldraw_lib__91143(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__91143(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__91143(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__91143(line=0.2);

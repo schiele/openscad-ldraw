@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/1-4chrd.scad>
 use <logosantanders03.scad>
-function ldraw_lib__s__6009254es02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__6009254es02(realsolid=false) = [
 // 0 ~Sticker  1.7 x  0.8 with Logos Shell and Santander on Red Background - Section 2
 // 0 Name: s\6009254es02.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -16,12 +17,12 @@ function ldraw_lib__s__6009254es02() = [
 // 
 // 
 // 1 4 0 -0.25 9.735 -2.06 0 0 0 1 0 0 0 -2.06 s\logosantanders03.dat
-  [1,4,0,-0.25,9.735,-2.06,0,0,0,1,0,0,0,-2.06, ldraw_lib__s__logosantanders03()],
+  [1,4,0,-0.25,9.735,-2.06,0,0,0,1,0,0,0,-2.06, ldraw_lib__s__logosantanders03(realsolid)],
 // 0 // Primitives
 // 1 16 -6 -0.25 14.9847 0 0 -2 0 1 0 2 0 0 1-4chrd.dat
-  [1,16,-6,-0.25,14.9847,0,0,-2,0,1,0,2,0,0, ldraw_lib__1_4chrd()],
+  [1,16,-6,-0.25,14.9847,0,0,-2,0,1,0,2,0,0, ldraw_lib__1_4chrd(realsolid)],
 // 1 16 6 -0.25 14.9847 2 0 0 0 1 0 0 0 2 1-4chrd.dat
-  [1,16,6,-0.25,14.9847,2,0,0,0,1,0,0,0,2, ldraw_lib__1_4chrd()],
+  [1,16,6,-0.25,14.9847,2,0,0,0,1,0,0,0,2, ldraw_lib__1_4chrd(realsolid)],
 // 0 // Neutral border
 // 3 16 -5.9584 -0.25 -0.0153 5.9584 -0.25 -0.0153 0.1168 -0.25 4.3996
   [3,16,-5.9584,-0.25,-0.0153,5.9584,-0.25,-0.0153,0.1168,-0.25,4.3996],
@@ -57,5 +58,5 @@ function ldraw_lib__s__6009254es02() = [
   [3,16,6.077,-0.25,15.0704,8,-0.25,14.9847,6,-0.25,16.9847],
 ];
 module ldraw_lib__s__6009254es02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__6009254es02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__6009254es02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__6009254es02(line=0.2);

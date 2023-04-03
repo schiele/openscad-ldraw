@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/42918s01.scad>
-function ldraw_lib__42918p01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__42918p01(realsolid=false) = [
 // 0 Slope Brick Curved  8 x  2 with Dark Blue Stripe on Top Surface Pattern
 // 0 Name: 42918p01.dat
 // 0 Author: Ulrich Röder [UR]
@@ -20,7 +21,7 @@ function ldraw_lib__42918p01() = [
 // 
 // 0 // Main
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\42918s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__42918s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__42918s01(realsolid)],
 // 4 16 -4 0 40 -20 0 40 -20 .089 29.223 -4 .089 29.223
   [4,16,-4,0,40,-20,0,40,-20,.089,29.223,-4,.089,29.223],
 // 4 16 -4 .089 29.223 -20 .089 29.223 -20 .358 18.449 -4 .358 18.449
@@ -145,5 +146,5 @@ function ldraw_lib__42918p01() = [
   [5,24,-20,17.434,-109.533,20,17.434,-109.533,20,15.042,-99.024,-10,20,-120],
 ];
 module ldraw_lib__42918p01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__42918p01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__42918p01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__42918p01(line=0.2);

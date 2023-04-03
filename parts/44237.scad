@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <2456.scad>
-function ldraw_lib__44237() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__44237(realsolid=false) = [
 // 0 =Brick  2 x  6
 // 0 Name: 44237.dat
 // 0 Author: Chris Dee [cwdee]
@@ -22,8 +23,8 @@ function ldraw_lib__44237() = [
 // 
 // 0 // Alias of 2456
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 2456.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2456()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2456(realsolid)],
 ];
 module ldraw_lib__44237(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__44237(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__44237(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__44237(line=0.2);

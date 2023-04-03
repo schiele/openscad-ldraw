@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__821472e() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__821472e(realsolid=false) = [
 // 0 Sticker  0.5 x  1.8 with Red and Black "GT 500" on Transparent Background
 // 0 Name: 821472e.dat
 // 0 Author: Damien Roux [Darats]
@@ -1312,8 +1313,8 @@ function ldraw_lib__821472e() = [
   [3,16,18,-0.25,5,15.592,-0.25,2.261,15.771,-0.25,1.841],
 // 
 // 1 16 0 -.25 0 18 0 0 0 0.25 0 0 0 5 box5-12.dat
-  [1,16,0,-.25,0,18,0,0,0,0.25,0,0,0,5, ldraw_lib__box5_12()],
+  [1,16,0,-.25,0,18,0,0,0,0.25,0,0,0,5, ldraw_lib__box5_12(realsolid)],
 ];
 module ldraw_lib__821472e(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__821472e(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__821472e(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__821472e(line=0.2);

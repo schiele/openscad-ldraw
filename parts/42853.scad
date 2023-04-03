@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <42289.scad>
-function ldraw_lib__42853() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__42853(realsolid=false) = [
 // 0 Motor Pull Back  2 x  6 x  1.667 with Black Base/White Axle - Slow Variant
 // 0 Name: 42853.dat
 // 0 Author: Michael Heidemann [mikeheide]
@@ -19,8 +20,8 @@ function ldraw_lib__42853() = [
 // 0 // Externally indistinguishable from the fast variant 42289
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 42289.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__42289()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__42289(realsolid)],
 ];
 module ldraw_lib__42853(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__42853(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__42853(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__42853(line=0.2);

@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <30264.scad>
 use <30343.scad>
-function ldraw_lib__30343c01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__30343c01(realsolid=false) = [
 // 0 Window  4 x 10 x  2 Slope Double with Trans Dark Blue Glass
 // 0 Name: 30343c01.dat
 // 0 Author: Ross Crawford [rosco]
@@ -20,10 +21,10 @@ function ldraw_lib__30343c01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 30343.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__30343()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__30343(realsolid)],
 // 1 33 0 0 0 1 0 0 0 1 0 0 0 1 30264.dat
-  [1,33,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__30264()],
+  [1,33,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__30264(realsolid)],
 ];
 module ldraw_lib__30343c01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__30343c01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__30343c01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__30343c01(line=0.2);

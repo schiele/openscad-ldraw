@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__75902p01a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__75902p01a(realsolid=false) = [
 // 0 ~Minifig Shield Round Bowed w/ DkGreen/Gold Rohan Pattern - 1/8
 // 0 Name: s\75902p01a.dat
 // 0 Author: Howard Lande [HowardLande]
@@ -475,5 +476,5 @@ function ldraw_lib__s__75902p01a() = [
   [5,24,0,0,-9.2,6.3639,6.3639,-8.6,7.1406,5.4792,-8.6,5.4792,7.1406,-8.6],
 ];
 module ldraw_lib__s__75902p01a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__75902p01a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__75902p01a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__75902p01a(line=0.2);

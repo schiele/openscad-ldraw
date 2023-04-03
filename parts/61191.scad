@@ -9,7 +9,8 @@ use <../p/axlehole.scad>
 use <s/61191s01.scad>
 use <../p/stud4a.scad>
 use <../p/stug2-2x2.scad>
-function ldraw_lib__61191() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__61191(realsolid=false) = [
 // 0 Windscreen  4 x  8 x  3 Curved
 // 0 Name: 61191.dat
 // 0 Author: Greg Teft [gregteft]
@@ -28,19 +29,19 @@ function ldraw_lib__61191() = [
 // 0 // bottom stud & axlehole
 // 
 // 1 16 0 64 -120 1 0 0 0 4 0 0 0 1 axlehole.dat
-  [1,16,0,64,-120,1,0,0,0,4,0,0,0,1, ldraw_lib__axlehole()],
+  [1,16,0,64,-120,1,0,0,0,4,0,0,0,1, ldraw_lib__axlehole(realsolid)],
 // 1 16 0 64 -120 1 0 0 0 1 0 0 0 1 axlehol2.dat
-  [1,16,0,64,-120,1,0,0,0,1,0,0,0,1, ldraw_lib__axlehol2()],
+  [1,16,0,64,-120,1,0,0,0,1,0,0,0,1, ldraw_lib__axlehol2(realsolid)],
 // 1 16 0 68 -120 1 0 0 0 1 0 0 0 1 axlehol3.dat
-  [1,16,0,68,-120,1,0,0,0,1,0,0,0,1, ldraw_lib__axlehol3()],
+  [1,16,0,68,-120,1,0,0,0,1,0,0,0,1, ldraw_lib__axlehol3(realsolid)],
 // 1 16 0 64 -120 6 0 0 0 1 0 0 0 6 4-4ndis.dat
-  [1,16,0,64,-120,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4ndis()],
+  [1,16,0,64,-120,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4ndis(realsolid)],
 // 1 16 0 68 -120 8 0 0 0 -1 0 0 0 8 4-4ndis.dat
-  [1,16,0,68,-120,8,0,0,0,-1,0,0,0,8, ldraw_lib__4_4ndis()],
+  [1,16,0,68,-120,8,0,0,0,-1,0,0,0,8, ldraw_lib__4_4ndis(realsolid)],
 // 1 16 0 68 -120 8 0 0 0 1 0 0 0 8 4-4edge.dat
-  [1,16,0,68,-120,8,0,0,0,1,0,0,0,8, ldraw_lib__4_4edge()],
+  [1,16,0,68,-120,8,0,0,0,1,0,0,0,8, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 68 -120 1 0 0 0 -1 0 0 0 1 stud4a.dat
-  [1,16,0,68,-120,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4a()],
+  [1,16,0,68,-120,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4a(realsolid)],
 // 0 // bottom surfaces surrounding axlehole
 // 2 24 -20 72 -140 20 72 -140
   [2,24,-20,72,-140,20,72,-140],
@@ -83,7 +84,7 @@ function ldraw_lib__61191() = [
 // 0 // inside center curved and top surfaces
 // 0 // top studs
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 stug2-2x2.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug2_2x2()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug2_2x2(realsolid)],
 // 2 24 19.343 5 -54.044 -19.343 5 -54.044
   [2,24,19.343,5,-54.044,-19.343,5,-54.044],
 // 2 24 19.343 5 20 -19.343 5 20
@@ -142,17 +143,17 @@ function ldraw_lib__61191() = [
 // 0 // An appropriate arc was drafted and divided into twelve segements.
 // 0 // top dimple included here in the event an alternate version excludes it
 // 1 16 0 0 0 6 0 0 0 1 0 0 0 6 4-4ndis.dat
-  [1,16,0,0,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4ndis()],
+  [1,16,0,0,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4ndis(realsolid)],
 // 1 16 0 0 0 6 0 0 0 1 0 0 0 6 4-4edge.dat
-  [1,16,0,0,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4edge()],
+  [1,16,0,0,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4edge(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 0 6 0 0 0 1 0 0 0 6 4-4cyli.dat
-  [1,16,0,0,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4cyli()],
+  [1,16,0,0,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 1 0 6 0 0 0 1 0 0 0 6 4-4edge.dat
-  [1,16,0,1,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4edge()],
+  [1,16,0,1,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 1 0 6 0 0 0 1 0 0 0 6 4-4disc.dat
-  [1,16,0,1,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4disc()],
+  [1,16,0,1,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4disc(realsolid)],
 // 0 // top surfaces
 // 4 16 -20 68 -140 20 68 -140 20 58.259 -135.577 -20 58.259 -135.577
   [4,16,-20,68,-140,20,68,-140,20,58.259,-135.577,-20,58.259,-135.577],
@@ -212,10 +213,10 @@ function ldraw_lib__61191() = [
   [5,24,-20,0,-40,20,0,-40,0,0.532,-50.685,0,0,20],
 // 0 // Sides
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\61191s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__61191s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__61191s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\61191s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__61191s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__61191s01(realsolid)],
 ];
 module ldraw_lib__61191(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__61191(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__61191(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__61191(line=0.2);

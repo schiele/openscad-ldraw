@@ -4,7 +4,8 @@ use <../p/box4-2p.scad>
 use <../p/box4.scad>
 use <../p/box5.scad>
 use <../p/rect.scad>
-function ldraw_lib__935() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__935(realsolid=false) = [
 // 0 ~Electric Mindstorms NXT USB Type B Socket
 // 0 Name: 935.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -21,7 +22,7 @@ function ldraw_lib__935() = [
 // 
 // 
 // 1 494 0 14 0 -15 0 0 0 0 14 0 39 0 box5.dat
-  [1,494,0,14,0,-15,0,0,0,0,14,0,39,0, ldraw_lib__box5()],
+  [1,494,0,14,0,-15,0,0,0,0,14,0,39,0, ldraw_lib__box5(realsolid)],
 // 4 494 -11 17 0 -11 3 0 -15 0 0 -15 28 0
   [4,494,-11,17,0,-11,3,0,-15,0,0,-15,28,0],
 // 4 494 15 28 0 15 0 0 11 3 0 11 17 0
@@ -37,13 +38,13 @@ function ldraw_lib__935() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 17 12 -11 0 0 0 -14 0 0 0 12 box4-2p.dat
-  [1,16,0,17,12,-11,0,0,0,-14,0,0,0,12, ldraw_lib__box4_2p()],
+  [1,16,0,17,12,-11,0,0,0,-14,0,0,0,12, ldraw_lib__box4_2p(realsolid)],
 // 1 16 0 13 2 -6 0 0 0 0 3 0 39 0 rect.dat
-  [1,16,0,13,2,-6,0,0,0,0,3,0,39,0, ldraw_lib__rect()],
+  [1,16,0,13,2,-6,0,0,0,0,3,0,39,0, ldraw_lib__rect(realsolid)],
 // 1 16 0 13 3 -7 0 0 0 0 4 0 21 0 box4.dat
-  [1,16,0,13,3,-7,0,0,0,0,4,0,21,0, ldraw_lib__box4()],
+  [1,16,0,13,3,-7,0,0,0,0,4,0,21,0, ldraw_lib__box4(realsolid)],
 // 1 16 0 23 12 -5 0 0 0 21 0 0 0 -12 rect.dat
-  [1,16,0,23,12,-5,0,0,0,21,0,0,0,-12, ldraw_lib__rect()],
+  [1,16,0,23,12,-5,0,0,0,21,0,0,0,-12, ldraw_lib__rect(realsolid)],
 // 2 24 11 3 0 -11 3 0
   [2,24,11,3,0,-11,3,0],
 // 2 24 11 3 0 11 17 0
@@ -81,14 +82,14 @@ function ldraw_lib__935() = [
 // 4 16 6 10 2 6 16 2 7 17 3 7 9 3
   [4,16,6,10,2,6,16,2,7,17,3,7,9,3],
 // 1 494 -3 17 15 -1.5 0 0 0 0.25 0 0 0 -9 box4-1.dat
-  [1,494,-3,17,15,-1.5,0,0,0,0.25,0,0,0,-9, ldraw_lib__box4_1()],
+  [1,494,-3,17,15,-1.5,0,0,0,0.25,0,0,0,-9, ldraw_lib__box4_1(realsolid)],
 // 1 494 3 17 15 -1.5 0 0 0 0.25 0 0 0 -9 box4-1.dat
-  [1,494,3,17,15,-1.5,0,0,0,0.25,0,0,0,-9, ldraw_lib__box4_1()],
+  [1,494,3,17,15,-1.5,0,0,0,0.25,0,0,0,-9, ldraw_lib__box4_1(realsolid)],
 // 1 494 -3 9 15 -1.5 0 0 0 -0.25 0 0 0 -9 box4-1.dat
-  [1,494,-3,9,15,-1.5,0,0,0,-0.25,0,0,0,-9, ldraw_lib__box4_1()],
+  [1,494,-3,9,15,-1.5,0,0,0,-0.25,0,0,0,-9, ldraw_lib__box4_1(realsolid)],
 // 1 494 3 9 15 -1.5 0 0 0 -0.25 0 0 0 -9 box4-1.dat
-  [1,494,3,9,15,-1.5,0,0,0,-0.25,0,0,0,-9, ldraw_lib__box4_1()],
+  [1,494,3,9,15,-1.5,0,0,0,-0.25,0,0,0,-9, ldraw_lib__box4_1(realsolid)],
 ];
 module ldraw_lib__935(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__935(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__935(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__935(line=0.2);

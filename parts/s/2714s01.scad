@@ -7,7 +7,8 @@ use <../../p/4-4edge.scad>
 use <../../p/4-4ring3.scad>
 use <../../p/bush1.scad>
 use <../../p/connect.scad>
-function ldraw_lib__s__2714s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__2714s01(realsolid=false) = [
 // 0 ~Bar  8L Stop Rings and Pin
 // 0 Name: s\2714s01.dat
 // 0 Author: Willy Tschager [Holly-Wood]
@@ -24,46 +25,46 @@ function ldraw_lib__s__2714s01() = [
 // 0 // Shaft
 // 
 // 1 16 0 -2 0 0 0 -1 0 -1 0 -1 0 0 connect.dat
-  [1,16,0,-2,0,0,0,-1,0,-1,0,-1,0,0, ldraw_lib__connect()],
+  [1,16,0,-2,0,0,0,-1,0,-1,0,-1,0,0, ldraw_lib__connect(realsolid)],
 // 1 16 0 -2 0 -4 0 0 0 -1 0 0 0 4 4-4disc.dat
-  [1,16,0,-2,0,-4,0,0,0,-1,0,0,0,4, ldraw_lib__4_4disc()],
+  [1,16,0,-2,0,-4,0,0,0,-1,0,0,0,4, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 -2 0 -4 0 0 0 -1 0 0 0 4 4-4edge.dat
-  [1,16,0,-2,0,-4,0,0,0,-1,0,0,0,4, ldraw_lib__4_4edge()],
+  [1,16,0,-2,0,-4,0,0,0,-1,0,0,0,4, ldraw_lib__4_4edge(realsolid)],
 // 
 // 1 16 0 -2 0 0 0 -8 0 -2 0 -8 0 0 4-4cyli.dat
-  [1,16,0,-2,0,0,0,-8,0,-2,0,-8,0,0, ldraw_lib__4_4cyli()],
+  [1,16,0,-2,0,0,0,-8,0,-2,0,-8,0,0, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 -4 0 0 0 -8 0 -1 0 -8 0 0 4-4edge.dat
-  [1,16,0,-4,0,0,0,-8,0,-1,0,-8,0,0, ldraw_lib__4_4edge()],
+  [1,16,0,-4,0,0,0,-8,0,-1,0,-8,0,0, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 -4 0 0 0 2 0 1 0 -2 0 0 4-4ring3.dat
-  [1,16,0,-4,0,0,0,2,0,1,0,-2,0,0, ldraw_lib__4_4ring3()],
+  [1,16,0,-4,0,0,0,2,0,1,0,-2,0,0, ldraw_lib__4_4ring3(realsolid)],
 // 
 // 1 16 0 -4 0 0 0 -6 0 -2 0 -6 0 0 4-4cylo.dat
-  [1,16,0,-4,0,0,0,-6,0,-2,0,-6,0,0, ldraw_lib__4_4cylo()],
+  [1,16,0,-4,0,0,0,-6,0,-2,0,-6,0,0, ldraw_lib__4_4cylo(realsolid)],
 // 1 16 0 -8 0 0 0 -4 0 -1 0 -4 0 0 4-4edge.dat
-  [1,16,0,-8,0,0,0,-4,0,-1,0,-4,0,0, ldraw_lib__4_4edge()],
+  [1,16,0,-8,0,0,0,-4,0,-1,0,-4,0,0, ldraw_lib__4_4edge(realsolid)],
 // 
 // 1 16 0 -6 0 0 0 -2 0 -2 0 -2 0 0 4-4con2.dat
-  [1,16,0,-6,0,0,0,-2,0,-2,0,-2,0,0, ldraw_lib__4_4con2()],
+  [1,16,0,-6,0,0,0,-2,0,-2,0,-2,0,0, ldraw_lib__4_4con2(realsolid)],
 // 
 // 0 // Basket
 // 1 16 0 -122 0 0 0 6 0 1 0 -6 0 0 4-4disc.dat
-  [1,16,0,-122,0,0,0,6,0,1,0,-6,0,0, ldraw_lib__4_4disc()],
+  [1,16,0,-122,0,0,0,6,0,1,0,-6,0,0, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 -122 0 0 0 -4 0 -1 0 -4 0 0 4-4edge.dat
-  [1,16,0,-122,0,0,0,-4,0,-1,0,-4,0,0, ldraw_lib__4_4edge()],
+  [1,16,0,-122,0,0,0,-4,0,-1,0,-4,0,0, ldraw_lib__4_4edge(realsolid)],
 // 
 // 1 16 0 -122 0 0 1 0 0 0 -.875 -1 0 0 bush1.dat
-  [1,16,0,-122,0,0,1,0,0,0,-.875,-1,0,0, ldraw_lib__bush1()],
+  [1,16,0,-122,0,0,1,0,0,0,-.875,-1,0,0, ldraw_lib__bush1(realsolid)],
 // 1 16 0 -122 0 -1 0 0 0 0 -.875 0 -1 0 bush1.dat
-  [1,16,0,-122,0,-1,0,0,0,0,-.875,0,-1,0, ldraw_lib__bush1()],
+  [1,16,0,-122,0,-1,0,0,0,0,-.875,0,-1,0, ldraw_lib__bush1(realsolid)],
 // 1 16 0 -122 0 0 -1 0 0 0 -.875 1 0 0 bush1.dat
-  [1,16,0,-122,0,0,-1,0,0,0,-.875,1,0,0, ldraw_lib__bush1()],
+  [1,16,0,-122,0,0,-1,0,0,0,-.875,1,0,0, ldraw_lib__bush1(realsolid)],
 // 1 16 0 -122 0 1 0 0 0 0 -.875 0 1 0 bush1.dat
-  [1,16,0,-122,0,1,0,0,0,0,-.875,0,1,0, ldraw_lib__bush1()],
+  [1,16,0,-122,0,1,0,0,0,0,-.875,0,1,0, ldraw_lib__bush1(realsolid)],
 // 
 // 1 16 0 -118.5 0 0 0 7 0 -1 0 7 0 0 4-4disc.dat
-  [1,16,0,-118.5,0,0,0,7,0,-1,0,7,0,0, ldraw_lib__4_4disc()],
+  [1,16,0,-118.5,0,0,0,7,0,-1,0,7,0,0, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 -118.5 0 0 0 -4 0 -1 0 -4 0 0 4-4edge.dat
-  [1,16,0,-118.5,0,0,0,-4,0,-1,0,-4,0,0, ldraw_lib__4_4edge()],
+  [1,16,0,-118.5,0,0,0,-4,0,-1,0,-4,0,0, ldraw_lib__4_4edge(realsolid)],
 // 
 // 5 24 -7.57 -119.375 -4.55 -4.95 -118.5 -4.95 -8.31 -119.375 -3.44 -5.76 -118.999 -5.76
   [5,24,-7.57,-119.375,-4.55,-4.95,-118.5,-4.95,-8.31,-119.375,-3.44,-5.76,-118.999,-5.76],
@@ -117,5 +118,5 @@ function ldraw_lib__s__2714s01() = [
   [5,24,-2.68,-118.5,-6.47,-4.95,-118.5,-4.95,0,-118.5,0,-3.44,-119.375,-8.31],
 ];
 module ldraw_lib__s__2714s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__2714s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__2714s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__2714s01(line=0.2);

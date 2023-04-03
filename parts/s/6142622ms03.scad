@@ -5,7 +5,8 @@ use <../../p/1-4chrd.scad>
 use <../../p/1-4ndis.scad>
 use <../../p/3-16chrd.scad>
 use <../../p/3-16ndis.scad>
-function ldraw_lib__s__6142622ms03() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__6142622ms03(realsolid=false) = [
 // 0 ~Sticker  1.9 x  0.8 with Black Headlamp on Yellow Face Right - Upper Section 4
 // 0 Name: s\6142622ms03.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -21,21 +22,21 @@ function ldraw_lib__s__6142622ms03() = [
 // 
 // 0 // Primitives
 // 1 0 -5.45 -.25 -4.1572 -.7 0 0 0 1 0 0 0 .7 1-4ndis.dat
-  [1,0,-5.45,-.25,-4.1572,-.7,0,0,0,1,0,0,0,.7, ldraw_lib__1_4ndis()],
+  [1,0,-5.45,-.25,-4.1572,-.7,0,0,0,1,0,0,0,.7, ldraw_lib__1_4ndis(realsolid)],
 // 1 7 -5.45 -.25 -4.1572 -.7 0 0 0 1 0 0 0 .7 1-4chrd.dat
-  [1,7,-5.45,-.25,-4.1572,-.7,0,0,0,1,0,0,0,.7, ldraw_lib__1_4chrd()],
+  [1,7,-5.45,-.25,-4.1572,-.7,0,0,0,1,0,0,0,.7, ldraw_lib__1_4chrd(realsolid)],
 // 1 7 -4.35 -.25 -4.1572 .7 0 0 0 1 0 0 0 .7 1-4chrd.dat
-  [1,7,-4.35,-.25,-4.1572,.7,0,0,0,1,0,0,0,.7, ldraw_lib__1_4chrd()],
+  [1,7,-4.35,-.25,-4.1572,.7,0,0,0,1,0,0,0,.7, ldraw_lib__1_4chrd(realsolid)],
 // 1 0 -4.35 -.25 -4.1572 .7 0 0 0 1 0 0 0 .7 1-4ndis.dat
-  [1,0,-4.35,-.25,-4.1572,.7,0,0,0,1,0,0,0,.7, ldraw_lib__1_4ndis()],
+  [1,0,-4.35,-.25,-4.1572,.7,0,0,0,1,0,0,0,.7, ldraw_lib__1_4ndis(realsolid)],
 // 1 7 -.675 -.25 -8 0 0 .75 0 1 0 .75 0 0 1-16chrd.dat
-  [1,7,-.675,-.25,-8,0,0,.75,0,1,0,.75,0,0, ldraw_lib__1_16chrd()],
+  [1,7,-.675,-.25,-8,0,0,.75,0,1,0,.75,0,0, ldraw_lib__1_16chrd(realsolid)],
 // 1 0 -.675 -.25 -7.2572 0 0 .75 0 1 0 .75 0 0 1-16ndis.dat
-  [1,0,-.675,-.25,-7.2572,0,0,.75,0,1,0,.75,0,0, ldraw_lib__1_16ndis()],
+  [1,0,-.675,-.25,-7.2572,0,0,.75,0,1,0,.75,0,0, ldraw_lib__1_16ndis(realsolid)],
 // 1 7 -.675 -.25 -7.2572 0 0 -.75 0 1 0 .75 0 0 3-16chrd.dat
-  [1,7,-.675,-.25,-7.2572,0,0,-.75,0,1,0,.75,0,0, ldraw_lib__3_16chrd()],
+  [1,7,-.675,-.25,-7.2572,0,0,-.75,0,1,0,.75,0,0, ldraw_lib__3_16chrd(realsolid)],
 // 1 0 -.675 -.25 -7.2572 0 0 -.75 0 1 0 .75 0 0 3-16ndis.dat
-  [1,0,-.675,-.25,-7.2572,0,0,-.75,0,1,0,.75,0,0, ldraw_lib__3_16ndis()],
+  [1,0,-.675,-.25,-7.2572,0,0,-.75,0,1,0,.75,0,0, ldraw_lib__3_16ndis(realsolid)],
 // 0 // Yellow faces
 // 3 14 8 -.25 .0128 .5491 -.25 .0128 2 -.25 -1.5072
   [3,14,8,-.25,.0128,.5491,-.25,.0128,2,-.25,-1.5072],
@@ -77,5 +78,5 @@ function ldraw_lib__s__6142622ms03() = [
   [3,7,-1.3987,-.25,-7.061,.7503,-.25,-7.061,-.387975,-.25,-6.564275],
 ];
 module ldraw_lib__s__6142622ms03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__6142622ms03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__6142622ms03(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__6142622ms03(line=0.2);

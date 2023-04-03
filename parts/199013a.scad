@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/004315s01.scad>
-function ldraw_lib__199013a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__199013a(realsolid=false) = [
 // 0 Sticker Minifig Torso with Classic Space Logo on White Background
 // 0 Name: 199013a.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -17,7 +18,7 @@ function ldraw_lib__199013a() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\004315s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__004315s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__004315s01(realsolid)],
 // 4 15 -4.148 -.25 .766 .701 -.25 2.669 .577 -.25 2.973 -4.24 -.25 1.105
   [4,15,-4.148,-.25,.766,.701,-.25,2.669,.577,-.25,2.973,-4.24,-.25,1.105],
 // 4 15 -4.661 -.25 2.477 -8.046 -.25 .985 -4.54 -.25 2.12 .061 -.25 4.282
@@ -210,5 +211,5 @@ function ldraw_lib__199013a() = [
   [3,15,8.5,-.25,15,-2.999,-.25,9.512,-.881,-.25,9.088],
 ];
 module ldraw_lib__199013a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__199013a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__199013a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__199013a(line=0.2);

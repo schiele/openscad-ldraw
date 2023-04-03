@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/4111899hs01.scad>
 use <s/4111899hs02.scad>
-function ldraw_lib__4111899i() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4111899i(realsolid=false) = [
 // 0 Sticker  0.8 x  3 with Black Grille and Light Grey Background
 // 0 Name: 4111899i.dat
 // 0 Author: Ulrich Röder [UR]
@@ -18,10 +19,10 @@ function ldraw_lib__4111899i() = [
 // 
 // 
 // 1 7 0 0 0 1 0 0 0 1 0 0 0 1 s\4111899hs01.dat
-  [1,7,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4111899hs01()],
+  [1,7,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4111899hs01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4111899hs02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4111899hs02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4111899hs02(realsolid)],
 ];
 module ldraw_lib__4111899i(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4111899i(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4111899i(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4111899i(line=0.2);

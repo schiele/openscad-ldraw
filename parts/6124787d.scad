@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <6124787c.scad>
-function ldraw_lib__6124787d() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6124787d(realsolid=false) = [
 // 0 Sticker  2.0 x  2.5 with Medium Azure Schematic Circles and Lines - Right Angle
 // 0 Name: 6124787d.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -17,8 +18,8 @@ function ldraw_lib__6124787d() = [
 // 
 // 
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 6124787c.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__6124787c()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__6124787c(realsolid)],
 ];
 module ldraw_lib__6124787d(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6124787d(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6124787d(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6124787d(line=0.2);

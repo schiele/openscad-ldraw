@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <53451.scad>
-function ldraw_lib__88513() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__88513(realsolid=false) = [
 // 0 =Minifig Helmet Viking Horn
 // 0 Name: 88513.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -21,8 +22,8 @@ function ldraw_lib__88513() = [
 // 0 // Alias of 53451
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 53451.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__53451()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__53451(realsolid)],
 ];
 module ldraw_lib__88513(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__88513(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__88513(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__88513(line=0.2);

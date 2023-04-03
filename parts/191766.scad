@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5.scad>
-function ldraw_lib__191766() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__191766(realsolid=false) = [
 // 0 Cardboard  6 x  6 Thick with Sharp Corners with White Top
 // 0 Name: 191766.dat
 // 0 Author: Steffen [Steffen]
@@ -23,10 +24,10 @@ function ldraw_lib__191766() = [
 // 
 // 
 // 1 16 0 0 0 60 0 0 0 2 0 0 0 60 box5.dat
-  [1,16,0,0,0,60,0,0,0,2,0,0,0,60, ldraw_lib__box5()],
+  [1,16,0,0,0,60,0,0,0,2,0,0,0,60, ldraw_lib__box5(realsolid)],
 // 4 15 -60 0 -60 60 0 -60 60 0 60 -60 0 60
   [4,15,-60,0,-60,60,0,-60,60,0,60,-60,0,60],
 ];
 module ldraw_lib__191766(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__191766(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__191766(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__191766(line=0.2);

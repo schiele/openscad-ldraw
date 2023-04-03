@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/4-4cylc.scad>
-function ldraw_lib__13543() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__13543(realsolid=false) = [
 // 0 Minifig Baseball Glove
 // 0 Name: 13543.dat
 // 0 Author: Orion Pobursky [OrionP]
@@ -17,7 +18,7 @@ function ldraw_lib__13543() = [
 // 
 // 
 // 1 16 0 0 13 2.5 0 0 0 0 -2.5 0 -13 0 4-4cylc.dat
-  [1,16,0,0,13,2.5,0,0,0,0,-2.5,0,-13,0, ldraw_lib__4_4cylc()],
+  [1,16,0,0,13,2.5,0,0,0,0,-2.5,0,-13,0, ldraw_lib__4_4cylc(realsolid)],
 // 
 // 4 16 -3.154 4.946 0 -4.531 4.114 0 -4.631 2.749 0 -4.705 -3.116 0
   [4,16,-3.154,4.946,0,-4.531,4.114,0,-4.631,2.749,0,-4.705,-3.116,0],
@@ -3058,5 +3059,5 @@ function ldraw_lib__13543() = [
   [5,24,7.028,-2.801,-8.534,9.027,-3.481,-7.739,9.092,-3.157,-6.943,7.44,-3.007,-9.336],
 ];
 module ldraw_lib__13543(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__13543(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__13543(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__13543(line=0.2);

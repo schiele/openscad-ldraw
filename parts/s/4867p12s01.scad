@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__4867p12s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__4867p12s01(realsolid=false) = [
 // 0 ~Tail Plane with Airport Classic Pattern - Side
 // 0 Name: s\4867p12s01.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -189,5 +190,5 @@ function ldraw_lib__s__4867p12s01() = [
   [3,4,0,-33.25,74,0,-33.25,30.91,0,-28.25,26],
 ];
 module ldraw_lib__s__4867p12s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__4867p12s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__4867p12s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__4867p12s01(line=0.2);

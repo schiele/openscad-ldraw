@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/2-4cyli.scad>
 use <../p/2-4edge.scad>
 use <../p/2-4ndis.scad>
-function ldraw_lib__4221() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4221(realsolid=false) = [
 // 0 Arm Piece Grab Jaw
 // 0 Name: 4221.dat
 // 0 Author: Remco Braak [remco1974]
@@ -526,27 +527,27 @@ function ldraw_lib__4221() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 4.28 0 0 0 2.84 0 3 0 0 0 0 -3 2-4cyli.dat
-  [1,16,4.28,0,0,0,2.84,0,3,0,0,0,0,-3, ldraw_lib__2_4cyli()],
+  [1,16,4.28,0,0,0,2.84,0,3,0,0,0,0,-3, ldraw_lib__2_4cyli(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -4.28 0 0 0 2.84 0 3 0 0 0 0 -3 2-4cyli.dat
-  [1,16,-4.28,0,0,0,2.84,0,3,0,0,0,0,-3, ldraw_lib__2_4cyli()],
+  [1,16,-4.28,0,0,0,2.84,0,3,0,0,0,0,-3, ldraw_lib__2_4cyli(realsolid)],
 // 1 16 4.28 0 0 0 1 0 3 0 0 0 0 -3 2-4ndis.dat
-  [1,16,4.28,0,0,0,1,0,3,0,0,0,0,-3, ldraw_lib__2_4ndis()],
+  [1,16,4.28,0,0,0,1,0,3,0,0,0,0,-3, ldraw_lib__2_4ndis(realsolid)],
 // 1 16 7.14 0 0 0 -1 0 3 0 0 0 0 -3 2-4ndis.dat
-  [1,16,7.14,0,0,0,-1,0,3,0,0,0,0,-3, ldraw_lib__2_4ndis()],
+  [1,16,7.14,0,0,0,-1,0,3,0,0,0,0,-3, ldraw_lib__2_4ndis(realsolid)],
 // 1 16 -4.28 0 0 0 1 0 3 0 0 0 0 -3 2-4ndis.dat
-  [1,16,-4.28,0,0,0,1,0,3,0,0,0,0,-3, ldraw_lib__2_4ndis()],
+  [1,16,-4.28,0,0,0,1,0,3,0,0,0,0,-3, ldraw_lib__2_4ndis(realsolid)],
 // 1 16 -1.42 0 0 0 -1 0 3 0 0 0 0 -3 2-4ndis.dat
-  [1,16,-1.42,0,0,0,-1,0,3,0,0,0,0,-3, ldraw_lib__2_4ndis()],
+  [1,16,-1.42,0,0,0,-1,0,3,0,0,0,0,-3, ldraw_lib__2_4ndis(realsolid)],
 // 1 16 4.28 0 0 0 1 0 3 0 0 0 0 -3 2-4edge.dat
-  [1,16,4.28,0,0,0,1,0,3,0,0,0,0,-3, ldraw_lib__2_4edge()],
+  [1,16,4.28,0,0,0,1,0,3,0,0,0,0,-3, ldraw_lib__2_4edge(realsolid)],
 // 1 16 7.14 0 0 0 1 0 3 0 0 0 0 -3 2-4edge.dat
-  [1,16,7.14,0,0,0,1,0,3,0,0,0,0,-3, ldraw_lib__2_4edge()],
+  [1,16,7.14,0,0,0,1,0,3,0,0,0,0,-3, ldraw_lib__2_4edge(realsolid)],
 // 1 16 -4.28 0 0 0 1 0 3 0 0 0 0 -3 2-4edge.dat
-  [1,16,-4.28,0,0,0,1,0,3,0,0,0,0,-3, ldraw_lib__2_4edge()],
+  [1,16,-4.28,0,0,0,1,0,3,0,0,0,0,-3, ldraw_lib__2_4edge(realsolid)],
 // 1 16 -1.42 0 0 0 1 0 3 0 0 0 0 -3 2-4edge.dat
-  [1,16,-1.42,0,0,0,1,0,3,0,0,0,0,-3, ldraw_lib__2_4edge()],
+  [1,16,-1.42,0,0,0,1,0,3,0,0,0,0,-3, ldraw_lib__2_4edge(realsolid)],
 // 4 16 -10 11.46 -13 -10 10 -11.54 -4.28 10 -11.54 -4.28 11.46 -13
   [4,16,-10,11.46,-13,-10,10,-11.54,-4.28,10,-11.54,-4.28,11.46,-13],
 // 4 16 -10 10 -11.54 -10 8 -11 -4.28 8 -11 -4.28 10 -11.54
@@ -662,5 +663,5 @@ function ldraw_lib__4221() = [
 // 0 //
 ];
 module ldraw_lib__4221(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4221(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4221(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4221(line=0.2);

@@ -9,7 +9,8 @@ use <../p/phandle1.scad>
 use <../p/rect.scad>
 use <../p/rect2p.scad>
 use <../p/stud.scad>
-function ldraw_lib__26047() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__26047(realsolid=false) = [
 // 0 Plate  1 x  1 Round with Horizontal Handle on Side
 // 0 Name: 26047.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -26,21 +27,21 @@ function ldraw_lib__26047() = [
 // 
 // 
 // 1 16 0 0 0 0 0 -1 0 1 0 1 0 0 stud.dat
-  [1,16,0,0,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__stud()],
+  [1,16,0,0,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__stud(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 8 -3 6 0 0 0 -4 0 0 0 -3 box4-4a.dat
-  [1,16,0,8,-3,6,0,0,0,-4,0,0,0,-3, ldraw_lib__box4_4a()],
+  [1,16,0,8,-3,6,0,0,0,-4,0,0,0,-3, ldraw_lib__box4_4a(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 4 0 6 0 0 0 4 0 0 0 6 2-4cylo.dat
-  [1,16,0,4,0,6,0,0,0,4,0,0,0,6, ldraw_lib__2_4cylo()],
+  [1,16,0,4,0,6,0,0,0,4,0,0,0,6, ldraw_lib__2_4cylo(realsolid)],
 // 1 16 0 4 0 6 0 0 0 -1 0 0 0 6 2-4chrd.dat
-  [1,16,0,4,0,6,0,0,0,-1,0,0,0,6, ldraw_lib__2_4chrd()],
+  [1,16,0,4,0,6,0,0,0,-1,0,0,0,6, ldraw_lib__2_4chrd(realsolid)],
 // 1 16 0 8 0 2 0 0 0 -1 0 0 0 2 2-4ring3.dat
-  [1,16,0,8,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__2_4ring3()],
+  [1,16,0,8,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__2_4ring3(realsolid)],
 // 1 16 0 8 0 2 0 0 0 -1 0 0 0 2 2-4ring4.dat
-  [1,16,0,8,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__2_4ring4()],
+  [1,16,0,8,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__2_4ring4(realsolid)],
 // 3 16 -8 8 0 -6 8 0 -6 8 -6
   [3,16,-8,8,0,-6,8,0,-6,8,-6],
 // 4 16 -8 8 0 -6 8 -6 -10 8 -10 -10 8 0
@@ -56,17 +57,17 @@ function ldraw_lib__26047() = [
 // 3 16 4 8 -10 6 8 -6 10 8 -10
   [3,16,4,8,-10,6,8,-6,10,8,-10],
 // 1 16 0 0 0 10 0 0 0 8 0 0 0 10 2-4cylo.dat
-  [1,16,0,0,0,10,0,0,0,8,0,0,0,10, ldraw_lib__2_4cylo()],
+  [1,16,0,0,0,10,0,0,0,8,0,0,0,10, ldraw_lib__2_4cylo(realsolid)],
 // 1 16 0 0 0 10 0 0 0 1 0 0 0 10 2-4chrd.dat
-  [1,16,0,0,0,10,0,0,0,1,0,0,0,10, ldraw_lib__2_4chrd()],
+  [1,16,0,0,0,10,0,0,0,1,0,0,0,10, ldraw_lib__2_4chrd(realsolid)],
 // 1 16 0 4 -10 0 0 -4 4 0 0 0 1 0 rect.dat
-  [1,16,0,4,-10,0,0,-4,4,0,0,0,1,0, ldraw_lib__rect()],
+  [1,16,0,4,-10,0,0,-4,4,0,0,0,1,0, ldraw_lib__rect(realsolid)],
 // 1 16 4 2 -20 0 -8 0 4 0 0 0 0 4 4-4cylo.dat
-  [1,16,4,2,-20,0,-8,0,4,0,0,0,0,4, ldraw_lib__4_4cylo()],
+  [1,16,4,2,-20,0,-8,0,4,0,0,0,0,4, ldraw_lib__4_4cylo(realsolid)],
 // 1 16 10 4 -5 0 -1 0 0 0 -4 5 0 0 rect2p.dat
-  [1,16,10,4,-5,0,-1,0,0,0,-4,5,0,0, ldraw_lib__rect2p()],
+  [1,16,10,4,-5,0,-1,0,0,0,-4,5,0,0, ldraw_lib__rect2p(realsolid)],
 // 1 16 -10 4 -5 0 1 0 0 0 -4 -5 0 0 rect2p.dat
-  [1,16,-10,4,-5,0,1,0,0,0,-4,-5,0,0, ldraw_lib__rect2p()],
+  [1,16,-10,4,-5,0,1,0,0,0,-4,-5,0,0, ldraw_lib__rect2p(realsolid)],
 // 4 16 -4 0 -10 4 0 -10 10 0 0 -10 0 0
   [4,16,-4,0,-10,4,0,-10,10,0,0,-10,0,0],
 // 3 16 4 0 -10 10 0 -10 10 0 0
@@ -74,10 +75,10 @@ function ldraw_lib__26047() = [
 // 3 16 -10 0 -10 -4 0 -10 -10 0 0
   [3,16,-10,0,-10,-4,0,-10,-10,0,0],
 // 1 16 -7 0 -20 1 0 0 0 1 0 0 0 1 phandle1.dat
-  [1,16,-7,0,-20,1,0,0,0,1,0,0,0,1, ldraw_lib__phandle1()],
+  [1,16,-7,0,-20,1,0,0,0,1,0,0,0,1, ldraw_lib__phandle1(realsolid)],
 // 1 16 7 0 -20 -1 0 0 0 1 0 0 0 1 phandle1.dat
-  [1,16,7,0,-20,-1,0,0,0,1,0,0,0,1, ldraw_lib__phandle1()],
+  [1,16,7,0,-20,-1,0,0,0,1,0,0,0,1, ldraw_lib__phandle1(realsolid)],
 ];
 module ldraw_lib__26047(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__26047(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__26047(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__26047(line=0.2);

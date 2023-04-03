@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3817bs01.scad>
-function ldraw_lib__3816bp6f() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3816bp6f(realsolid=false) = [
 // 0 Minifig Leg Right with Astro Pattern
 // 0 Name: 3816bp6f.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -21,7 +22,7 @@ function ldraw_lib__3816bp6f() = [
 // 
 // 
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\3817bs01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__3817bs01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__3817bs01(realsolid)],
 // 0 // Flat Front
 // 4 16 -18.804 7.399 -4 -19.23 20 -4 -1.5 20 -4 -2 7.657 -4
   [4,16,-18.804,7.399,-4,-19.23,20,-4,-1.5,20,-4,-2,7.657,-4],
@@ -225,5 +226,5 @@ function ldraw_lib__3816bp6f() = [
   [4,82,-16.48,3.349,-8.084,-16.516,2.273,-8.298,-16.583,2.613,-8.23,-16.58,2.953,-8.163],
 ];
 module ldraw_lib__3816bp6f(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3816bp6f(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3816bp6f(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3816bp6f(line=0.2);

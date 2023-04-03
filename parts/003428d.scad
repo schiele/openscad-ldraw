@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/4-4cylc3.scad>
 use <../p/4-4ering.scad>
-function ldraw_lib__003428d() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__003428d(realsolid=false) = [
 // 0 Sticker  1.4 x  2 Oval with Black "16" and Small Hearts
 // 0 Name: 003428d.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -18,9 +19,9 @@ function ldraw_lib__003428d() = [
 // 
 // 
 // 1 16 0 0 0 20 0 0 0 -0.25 0 0 0 14 4-4cylc3.dat
-  [1,16,0,0,0,20,0,0,0,-0.25,0,0,0,14, ldraw_lib__4_4cylc3()],
+  [1,16,0,0,0,20,0,0,0,-0.25,0,0,0,14, ldraw_lib__4_4cylc3(realsolid)],
 // 1 15 0 -.25 0 20 0 0 0 1 0 0 0 14 4-4ering.dat
-  [1,15,0,-.25,0,20,0,0,0,1,0,0,0,14, ldraw_lib__4_4ering()],
+  [1,15,0,-.25,0,20,0,0,0,1,0,0,0,14, ldraw_lib__4_4ering(realsolid)],
 // 3 0 -8.78 -.25 -6.7 -9.62 -.25 -6.75 -9.73 -.25 -7.12
   [3,0,-8.78,-.25,-6.7,-9.62,-.25,-6.75,-9.73,-.25,-7.12],
 // 4 0 -8.24 -.25 -6.59 -8.78 -.25 -6.7 -9.73 -.25 -7.12 -3.06 -.25 -7.12
@@ -403,5 +404,5 @@ function ldraw_lib__003428d() = [
   [3,15,0,-.25,11,3.1,-.25,5.33,3.12,-.25,10.79],
 ];
 module ldraw_lib__003428d(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__003428d(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__003428d(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__003428d(line=0.2);

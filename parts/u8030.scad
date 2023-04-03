@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box.scad>
-function ldraw_lib__u8030() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__u8030(realsolid=false) = [
 // 0 ~Mursten Glass with LEGO Logo for Window  1 x  6 x  4 Panorama
 // 0 Name: u8030.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -18,7 +19,7 @@ function ldraw_lib__u8030() = [
 // 
 // 
 // 1 16 0 0 0.5 56 0 0 0 0 -36 0 0.5 0 box.dat
-  [1,16,0,0,0.5,56,0,0,0,0,-36,0,0.5,0, ldraw_lib__box()],
+  [1,16,0,0,0.5,56,0,0,0,0,-36,0,0.5,0, ldraw_lib__box(realsolid)],
 // 0
 // 2 24 -12.2 -22.6 -1 -13.2 -22.6 -1
   [2,24,-12.2,-22.6,-1,-13.2,-22.6,-1],
@@ -3500,5 +3501,5 @@ function ldraw_lib__u8030() = [
   [5,24,16.6,-14,0,16.6,-14,-1,14.6,-14,-1,16,-13.2,0],
 ];
 module ldraw_lib__u8030(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__u8030(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__u8030(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__u8030(line=0.2);

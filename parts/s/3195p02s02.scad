@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__3195p02s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__3195p02s02(realsolid=false) = [
 // 0 ~Door  1 x  5 x  4 Left Blue "Transport" Pattern
 // 0 Name: s\3195p02s02.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -611,5 +612,5 @@ function ldraw_lib__s__3195p02s02() = [
   [3,16,0,60.8481,33.7586,0,60.9683,37.859,0,60.9683,40.1424],
 ];
 module ldraw_lib__s__3195p02s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__3195p02s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__3195p02s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__3195p02s02(line=0.2);

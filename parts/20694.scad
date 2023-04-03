@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/4-4cylo.scad>
 use <s/20694s01.scad>
-function ldraw_lib__20694() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__20694(realsolid=false) = [
 // 0 ~Minifig Headdress Pumpkin Carved Stalk
 // 0 Name: 20694.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -16,10 +17,10 @@ function ldraw_lib__20694() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\20694s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__20694s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__20694s01(realsolid)],
 // 0 // assumed inner structure
 // 1 16 0 0 0 8 0 0 0 -4 0 0 0 8 4-4cylo.dat
-  [1,16,0,0,0,8,0,0,0,-4,0,0,0,8, ldraw_lib__4_4cylo()],
+  [1,16,0,0,0,8,0,0,0,-4,0,0,0,8, ldraw_lib__4_4cylo(realsolid)],
 // 2 24 4.86348 -7.43 -4.86348 6.878 -7.43 0
   [2,24,4.86348,-7.43,-4.86348,6.878,-7.43,0],
 // 2 24 6.878 -7.43 0 4.86348 -7.43 4.86348
@@ -135,5 +136,5 @@ function ldraw_lib__20694() = [
   [5,24,3.0616,-4,7.3912,4.86348,-7.43,4.86348,0,-7.43,6.878,5.6568,-4,5.6568],
 ];
 module ldraw_lib__20694(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__20694(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__20694(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__20694(line=0.2);

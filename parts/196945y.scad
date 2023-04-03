@@ -4,7 +4,8 @@ use <../p/logo-shell-e.scad>
 use <../p/logo-shell-h.scad>
 use <../p/logo-shell-s.scad>
 use <s/3004s60.scad>
-function ldraw_lib__196945y() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__196945y(realsolid=false) = [
 // 0 Sticker  1.1 x  3.9 with "Shell" and Shell Logo - Logo Left
 // 0 Name: 196945y.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -21,15 +22,15 @@ function ldraw_lib__196945y() = [
 // 
 // 
 // 1 16 0 -0.25 0 39 0 0 0 0.25 0 0 0 11 box5-12.dat
-  [1,16,0,-0.25,0,39,0,0,0,0.25,0,0,0,11, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,39,0,0,0,0.25,0,0,0,11, ldraw_lib__box5_12(realsolid)],
 // 1 15 -25.2 -.25 0 .6 0 0 0 0 1 0 -.6 0 s\3004s60.dat
-  [1,15,-25.2,-.25,0,.6,0,0,0,0,1,0,-.6,0, ldraw_lib__s__3004s60()],
+  [1,15,-25.2,-.25,0,.6,0,0,0,0,1,0,-.6,0, ldraw_lib__s__3004s60(realsolid)],
 // 1 15 -9.72 -.25 -.24 .51 0 0 0 1 0 0 0 .51 logo-shell-s.dat
-  [1,15,-9.72,-.25,-.24,.51,0,0,0,1,0,0,0,.51, ldraw_lib__logo_shell_s()],
+  [1,15,-9.72,-.25,-.24,.51,0,0,0,1,0,0,0,.51, ldraw_lib__logo_shell_s(realsolid)],
 // 1 15 3.12 -.25 -.24 .51 0 0 0 1 0 0 0 .51 logo-shell-h.dat
-  [1,15,3.12,-.25,-.24,.51,0,0,0,1,0,0,0,.51, ldraw_lib__logo_shell_h()],
+  [1,15,3.12,-.25,-.24,.51,0,0,0,1,0,0,0,.51, ldraw_lib__logo_shell_h(realsolid)],
 // 1 15 15.24 -.25 -1.62 .51 0 0 0 1 0 0 0 .51 logo-shell-e.dat
-  [1,15,15.24,-.25,-1.62,.51,0,0,0,1,0,0,0,.51, ldraw_lib__logo_shell_e()],
+  [1,15,15.24,-.25,-1.62,.51,0,0,0,1,0,0,0,.51, ldraw_lib__logo_shell_e(realsolid)],
 // 4 4 22.16 -.25 4.61 22.16 -.25 -5.09 25.73 -.25 -5.09 25.73 -.25 4.61
   [4,4,22.16,-.25,4.61,22.16,-.25,-5.09,25.73,-.25,-5.09,25.73,-.25,4.61],
 // 4 4 27.8 -.25 4.61 27.8 -.25 -5.09 31.37 -.25 -5.09 31.37 -.25 4.61
@@ -87,5 +88,5 @@ function ldraw_lib__196945y() = [
   [3,15,31.365,-.25,-5.085,27.795,-.25,-5.085,39,-.25,-11],
 ];
 module ldraw_lib__196945y(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__196945y(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__196945y(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__196945y(line=0.2);

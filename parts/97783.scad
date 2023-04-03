@@ -6,7 +6,8 @@ use <../p/48/4-4edge.scad>
 use <../p/48/4-4rin11.scad>
 use <../p/48/4-4rin25.scad>
 use <../p/stud4.scad>
-function ldraw_lib__97783() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__97783(realsolid=false) = [
 // 0 Figure Friends Dish Round  2.7 x  2.7
 // 0 Name: 97783.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -26,32 +27,32 @@ function ldraw_lib__97783() = [
 // 
 // 
 // 1 16 0 3 0 1 0 0 0 -1.25 0 0 0 -1 stud4.dat
-  [1,16,0,3,0,1,0,0,0,-1.25,0,0,0,-1, ldraw_lib__stud4()],
+  [1,16,0,3,0,1,0,0,0,-1.25,0,0,0,-1, ldraw_lib__stud4(realsolid)],
 // 1 16 0 3 0 21 0 0 0 1 0 0 0 21 48\4-4edge.dat
-  [1,16,0,3,0,21,0,0,0,1,0,0,0,21, ldraw_lib__48__4_4edge()],
+  [1,16,0,3,0,21,0,0,0,1,0,0,0,21, ldraw_lib__48__4_4edge(realsolid)],
 // 1 16 0 3 0 21 0 0 0 -1 0 0 0 21 48\4-4disc.dat
-  [1,16,0,3,0,21,0,0,0,-1,0,0,0,21, ldraw_lib__48__4_4disc()],
+  [1,16,0,3,0,21,0,0,0,-1,0,0,0,21, ldraw_lib__48__4_4disc(realsolid)],
 // 1 16 0 0 0 20.02 0 0 0 1 0 0 0 20.02 48\4-4disc.dat
-  [1,16,0,0,0,20.02,0,0,0,1,0,0,0,20.02, ldraw_lib__48__4_4disc()],
+  [1,16,0,0,0,20.02,0,0,0,1,0,0,0,20.02, ldraw_lib__48__4_4disc(realsolid)],
 // 1 16 0 0 0 20.02 0 0 0 1 0 0 0 20.02 48\4-4edge.dat
-  [1,16,0,0,0,20.02,0,0,0,1,0,0,0,20.02, ldraw_lib__48__4_4edge()],
+  [1,16,0,0,0,20.02,0,0,0,1,0,0,0,20.02, ldraw_lib__48__4_4edge(realsolid)],
 // 1 16 0 -7 0 25.025 0 0 0 1 0 0 0 25.025 48\4-4edge.dat
-  [1,16,0,-7,0,25.025,0,0,0,1,0,0,0,25.025, ldraw_lib__48__4_4edge()],
+  [1,16,0,-7,0,25.025,0,0,0,1,0,0,0,25.025, ldraw_lib__48__4_4edge(realsolid)],
 // 1 16 0 -4 0 26.25 0 0 0 1 0 0 0 26.25 48\4-4edge.dat
-  [1,16,0,-4,0,26.25,0,0,0,1,0,0,0,26.25, ldraw_lib__48__4_4edge()],
+  [1,16,0,-4,0,26.25,0,0,0,1,0,0,0,26.25, ldraw_lib__48__4_4edge(realsolid)],
 // 1 16 0 -4 0 5.25 0 0 0 7 0 0 0 5.25 48\4-4con4.dat
-  [1,16,0,-4,0,5.25,0,0,0,7,0,0,0,5.25, ldraw_lib__48__4_4con4()],
+  [1,16,0,-4,0,5.25,0,0,0,7,0,0,0,5.25, ldraw_lib__48__4_4con4(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -7 0 5.005 0 0 0 7 0 0 0 5.005 48\4-4con4.dat
-  [1,16,0,-7,0,5.005,0,0,0,7,0,0,0,5.005, ldraw_lib__48__4_4con4()],
+  [1,16,0,-7,0,5.005,0,0,0,7,0,0,0,5.005, ldraw_lib__48__4_4con4(realsolid)],
 // 1 16 0 -4 0 1.05 0 0 0 -1 0 0 0 1.05 48\4-4rin25.dat
-  [1,16,0,-4,0,1.05,0,0,0,-1,0,0,0,1.05, ldraw_lib__48__4_4rin25()],
+  [1,16,0,-4,0,1.05,0,0,0,-1,0,0,0,1.05, ldraw_lib__48__4_4rin25(realsolid)],
 // 1 16 0 -7 0 2.275 0 0 0 1 0 0 0 2.275 48\4-4rin11.dat
-  [1,16,0,-7,0,2.275,0,0,0,1,0,0,0,2.275, ldraw_lib__48__4_4rin11()],
+  [1,16,0,-7,0,2.275,0,0,0,1,0,0,0,2.275, ldraw_lib__48__4_4rin11(realsolid)],
 // 1 16 0 -7 0 27.3 0 0 0 3 0 0 0 27.3 48\4-4cylo.dat
-  [1,16,0,-7,0,27.3,0,0,0,3,0,0,0,27.3, ldraw_lib__48__4_4cylo()],
+  [1,16,0,-7,0,27.3,0,0,0,3,0,0,0,27.3, ldraw_lib__48__4_4cylo(realsolid)],
 ];
 module ldraw_lib__97783(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__97783(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__97783(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__97783(line=0.2);

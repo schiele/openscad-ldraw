@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3068bs01.scad>
-function ldraw_lib__3068bp8e() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3068bp8e(realsolid=false) = [
 // 0 Tile  2 x  2 with Open Book and Gold Scrollwork Pattern
 // 0 Name: 3068bp8e.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -17,7 +18,7 @@ function ldraw_lib__3068bp8e() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3068bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3068bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3068bs01(realsolid)],
 // 4 82 -9.2038 0 10.256 -8.6381 0 10.6802 -9.1916 0 11.0338 -9.9109 0 10.6802
   [4,82,-9.2038,0,10.256,-8.6381,0,10.6802,-9.1916,0,11.0338,-9.9109,0,10.6802],
 // 4 82 -9.9109 0 10.6802 -9.1916 0 11.0338 -9.6987 0 11.5995 -10.618 0 11.3873
@@ -2356,5 +2357,5 @@ function ldraw_lib__3068bp8e() = [
   [4,16,7,0,17.85,3.3,0,18.3,3.6656,0,17.8927,6.2819,0,17.5392],
 ];
 module ldraw_lib__3068bp8e(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3068bp8e(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3068bp8e(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3068bp8e(line=0.2);

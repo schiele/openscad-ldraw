@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box4.scad>
-function ldraw_lib__30158c() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__30158c(realsolid=false) = [
 // 0 ~Minifig Backpack Openable Joint Straight
 // 0 Name: 30158c.dat
 // 0 Author: Andy Westrate [westrate]
@@ -19,9 +20,9 @@ function ldraw_lib__30158c() = [
 // 
 // 
 // 1 16 0 0 0 20 0 0 0 7.5 0 0 0 0.375 box4.dat
-  [1,16,0,0,0,20,0,0,0,7.5,0,0,0,0.375, ldraw_lib__box4()],
+  [1,16,0,0,0,20,0,0,0,7.5,0,0,0,0.375, ldraw_lib__box4(realsolid)],
 // 0
 ];
 module ldraw_lib__30158c(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__30158c(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__30158c(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__30158c(line=0.2);

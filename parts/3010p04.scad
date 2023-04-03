@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3010s01.scad>
-function ldraw_lib__3010p04() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3010p04(realsolid=false) = [
 // 0 Brick  1 x  4 with Black 15 Bars Grille Pattern
 // 0 Name: 3010p04.dat
 // 0 Author: James Jessiman
@@ -20,7 +21,7 @@ function ldraw_lib__3010p04() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3010s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3010s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3010s01(realsolid)],
 // 4 0 -34 21 -10 -34 3 -10 -36 3 -10 -36 21 -10
   [4,0,-34,21,-10,-34,3,-10,-36,3,-10,-36,21,-10],
 // 4 0 -29 21 -10 -29 3 -10 -31 3 -10 -31 21 -10
@@ -89,5 +90,5 @@ function ldraw_lib__3010p04() = [
   [4,16,-31,21,-10,-31,3,-10,-34,3,-10,-34,21,-10],
 ];
 module ldraw_lib__3010p04(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3010p04(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3010p04(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3010p04(line=0.2);

@@ -5,7 +5,8 @@ use <../../p/4-4con5.scad>
 use <../../p/4-4cylo.scad>
 use <../../p/4-4edge.scad>
 use <../../p/4-4ring5.scad>
-function ldraw_lib__s__22472s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__22472s01(realsolid=false) = [
 // 0 ~Figure Scurrier Half
 // 0 Name: s\22472s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -22,29 +23,29 @@ function ldraw_lib__s__22472s01() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -52 0 0 0 10 0 14 0 -10.5 0 0 3-16cylo.dat
-  [1,16,0,-52,0,0,0,10,0,14,0,-10.5,0,0, ldraw_lib__3_16cylo()],
+  [1,16,0,-52,0,0,0,10,0,14,0,-10.5,0,0, ldraw_lib__3_16cylo(realsolid)],
 // 1 16 0 -52 0 0 0 10 0 -1 0 -10.5 0 0 3-16chrd.dat
-  [1,16,0,-52,0,0,0,10,0,-1,0,-10.5,0,0, ldraw_lib__3_16chrd()],
+  [1,16,0,-52,0,0,0,10,0,-1,0,-10.5,0,0, ldraw_lib__3_16chrd(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -52 0 0 0 10 0 14 0 10.5 0 0 3-16cylo.dat
-  [1,16,0,-52,0,0,0,10,0,14,0,10.5,0,0, ldraw_lib__3_16cylo()],
+  [1,16,0,-52,0,0,0,10,0,14,0,10.5,0,0, ldraw_lib__3_16cylo(realsolid)],
 // 1 16 0 -52 0 0 0 10 0 -1 0 10.5 0 0 3-16chrd.dat
-  [1,16,0,-52,0,0,0,10,0,-1,0,10.5,0,0, ldraw_lib__3_16chrd()],
+  [1,16,0,-52,0,0,0,10,0,-1,0,10.5,0,0, ldraw_lib__3_16chrd(realsolid)],
 // 1 16 17 -30 0 0 -1 0 1 0 0 0 0 1 4-4ring5.dat
-  [1,16,17,-30,0,0,-1,0,1,0,0,0,0,1, ldraw_lib__4_4ring5()],
+  [1,16,17,-30,0,0,-1,0,1,0,0,0,0,1, ldraw_lib__4_4ring5(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 17 -30 0 0 -2 0 5 0 0 0 0 5 4-4cylo.dat
-  [1,16,17,-30,0,0,-2,0,5,0,0,0,0,5, ldraw_lib__4_4cylo()],
+  [1,16,17,-30,0,0,-2,0,5,0,0,0,0,5, ldraw_lib__4_4cylo(realsolid)],
 // 1 16 13.5 -30 0 0 -1 0 6 0 0 0 0 6 4-4edge.dat
-  [1,16,13.5,-30,0,0,-1,0,6,0,0,0,0,6, ldraw_lib__4_4edge()],
+  [1,16,13.5,-30,0,0,-1,0,6,0,0,0,0,6, ldraw_lib__4_4edge(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 13.5 -30 0 0 1.5 0 1 0 0 0 0 1 4-4con5.dat
-  [1,16,13.5,-30,0,0,1.5,0,1,0,0,0,0,1, ldraw_lib__4_4con5()],
+  [1,16,13.5,-30,0,0,1.5,0,1,0,0,0,0,1, ldraw_lib__4_4con5(realsolid)],
 // 1 16 17 -30 0 0 -1 0 6 0 0 0 0 6 4-4edge.dat
-  [1,16,17,-30,0,0,-1,0,6,0,0,0,0,6, ldraw_lib__4_4edge()],
+  [1,16,17,-30,0,0,-1,0,6,0,0,0,0,6, ldraw_lib__4_4edge(realsolid)],
 // 3 16 16.7149 -22.7716 0 16.3098 -23.6233 2.8987 17 -24.4566 2.2962
   [3,16,16.7149,-22.7716,0,16.3098,-23.6233,2.8987,17,-24.4566,2.2962],
 // 3 16 17 -24.4566 2.2962 17 -24 0 16.7149 -22.7716 0
@@ -2081,5 +2082,5 @@ function ldraw_lib__s__22472s01() = [
   [5,24,15.9,-5,5.9,17.4455,-5,2.2636,16.8,0,5.7,15.4155,-6.2459,5.9138],
 ];
 module ldraw_lib__s__22472s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__22472s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__22472s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__22472s01(line=0.2);

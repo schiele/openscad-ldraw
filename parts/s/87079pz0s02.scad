@@ -2,7 +2,8 @@ use <../../lib.scad>
 use <../../p/1-4chrd.scad>
 use <../../p/1-8ndis.scad>
 use <../../p/3-8chrd.scad>
-function ldraw_lib__s__87079pz0s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__87079pz0s02(realsolid=false) = [
 // 0 ~Tile  2 x  4 with Groove with Brickheadz Series Number Pattern - "1"
 // 0 Name: s\87079pz0s02.dat
 // 0 Author: Damien Roux [Darats]
@@ -17,15 +18,15 @@ function ldraw_lib__s__87079pz0s02() = [
 // 
 // 
 // 1 16 3 0 -7.17 1.06066 0 1.06066 0 1 0 -1.06066 0 1.06066 1-8ndis.dat
-  [1,16,3,0,-7.17,1.06066,0,1.06066,0,1,0,-1.06066,0,1.06066, ldraw_lib__1_8ndis()],
+  [1,16,3,0,-7.17,1.06066,0,1.06066,0,1,0,-1.06066,0,1.06066, ldraw_lib__1_8ndis(realsolid)],
 // 1 16 5 0 13 0 0 -0.5 0 1 0 0.5 0 0 1-4chrd.dat
-  [1,16,5,0,13,0,0,-0.5,0,1,0,0.5,0,0, ldraw_lib__1_4chrd()],
+  [1,16,5,0,13,0,0,-0.5,0,1,0,0.5,0,0, ldraw_lib__1_4chrd(realsolid)],
 // 1 16 33.5 0 13 0.5 0 0 0 1 0 0 0 0.5 1-4chrd.dat
-  [1,16,33.5,0,13,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__1_4chrd()],
+  [1,16,33.5,0,13,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__1_4chrd(realsolid)],
 // 1 16 33.5 0 -13 0 0 0.5 0 1 0 -0.5 0 0 1-4chrd.dat
-  [1,16,33.5,0,-13,0,0,0.5,0,1,0,-0.5,0,0, ldraw_lib__1_4chrd()],
+  [1,16,33.5,0,-13,0,0,0.5,0,1,0,-0.5,0,0, ldraw_lib__1_4chrd(realsolid)],
 // 1 16 0 0 -13 0 0 -0.5 0 1 0 -0.5 0 0 3-8chrd.dat
-  [1,16,0,0,-13,0,0,-0.5,0,1,0,-0.5,0,0, ldraw_lib__3_8chrd()],
+  [1,16,0,0,-13,0,0,-0.5,0,1,0,-0.5,0,0, ldraw_lib__3_8chrd(realsolid)],
 // 3 4 16.633 0 5.587 15.646 0 5.549 15.646 0 3.461
   [3,4,16.633,0,5.587,15.646,0,5.549,15.646,0,3.461],
 // 4 4 18.412 0 3.461 17.149 0 5.656 16.633 0 5.587 15.646 0 3.461
@@ -70,5 +71,5 @@ function ldraw_lib__s__87079pz0s02() = [
   [4,16,34,0,13,33.5,0,13.5,22.824,0,7.138,22.824,0,-7.1],
 ];
 module ldraw_lib__s__87079pz0s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__87079pz0s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__87079pz0s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__87079pz0s02(line=0.2);

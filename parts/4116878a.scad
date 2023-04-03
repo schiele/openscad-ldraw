@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__4116878a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4116878a(realsolid=false) = [
 // 0 Sticker  1 x  5.9 with White Arrow Right on Black Background
 // 0 Name: 4116878a.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -17,7 +18,7 @@ function ldraw_lib__4116878a() = [
 // 
 // 
 // 1 16 0 -0.25 0 59 0 0 0 0.25 0 0 0 -10 box5-12.dat
-  [1,16,0,-0.25,0,59,0,0,0,0.25,0,0,0,-10, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,59,0,0,0,0.25,0,0,0,-10, ldraw_lib__box5_12(realsolid)],
 // 3 0 -59 -0.25 10 -59 -0.25 -10 -56.5 -0.25 -3.5
   [3,0,-59,-0.25,10,-59,-0.25,-10,-56.5,-0.25,-3.5],
 // 3 0 -56.5 -0.25 -3.5 -59 -0.25 -10 -47.5 -0.25 -8
@@ -104,5 +105,5 @@ function ldraw_lib__4116878a() = [
   [3,0,-17.5,-0.25,1.5,-32.5,-0.25,-3.5,-22,-0.25,-3.5],
 ];
 module ldraw_lib__4116878a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4116878a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4116878a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4116878a(line=0.2);

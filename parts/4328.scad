@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4edge.scad>
-function ldraw_lib__4328() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4328(realsolid=false) = [
 // 0 Minifig Pipe Wrench (Needs Work)
 // 0 Name: 4328.dat
 // 0 Author: Stan Isachenko [angmarec]
@@ -29,11 +30,11 @@ function ldraw_lib__4328() = [
 // 0 // - there are some duplicately modeled (overlapping) edges at the main body part
 // 
 // 1 16 0 20 0 -4 0 0 0 -1 0 0 0 4 4-4disc.dat
-  [1,16,0,20,0,-4,0,0,0,-1,0,0,0,4, ldraw_lib__4_4disc()],
+  [1,16,0,20,0,-4,0,0,0,-1,0,0,0,4, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 -20 0 4 0 0 0 40 0 0 0 4 4-4cyli.dat
-  [1,16,0,-20,0,4,0,0,0,40,0,0,0,4, ldraw_lib__4_4cyli()],
+  [1,16,0,-20,0,4,0,0,0,40,0,0,0,4, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 20 0 4 0 0 0 1 0 0 0 4 4-4edge.dat
-  [1,16,0,20,0,4,0,0,0,1,0,0,0,4, ldraw_lib__4_4edge()],
+  [1,16,0,20,0,4,0,0,0,1,0,0,0,4, ldraw_lib__4_4edge(realsolid)],
 // 4 16 -5 -40.83 13.839 -5 -41.714 14.723 -5 -38.865 16.908 -5 -38.24 15.826
   [4,16,-5,-40.83,13.839,-5,-41.714,14.723,-5,-38.865,16.908,-5,-38.24,15.826],
 // 4 16 5 -38.241 15.826 5 -38.865 16.908 5 -41.714 14.723 5 -40.83 13.839
@@ -2436,5 +2437,5 @@ function ldraw_lib__4328() = [
   [2,24,-3.75,-59.247,15,-3.75,-41,15],
 ];
 module ldraw_lib__4328(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4328(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4328(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4328(line=0.2);

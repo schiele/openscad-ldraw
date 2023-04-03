@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__24196s03() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__24196s03(realsolid=false) = [
 // 0 ~Animal Dragon Head Elves Patternable Area
 // 0 Name: s\24196s03.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -85,5 +86,5 @@ function ldraw_lib__s__24196s03() = [
   [5,24,35.548,14.042,-6.748,34.259,25.967,-21.498,31.835,8.427,-19.136,37.616,29.768,-8.499],
 ];
 module ldraw_lib__s__24196s03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__24196s03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__24196s03(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__24196s03(line=0.2);

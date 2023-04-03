@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__logo_maersk_line_black() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__logo_maersk_line_black(realsolid=false) = [
 // 0 Logo Maersk Black "LINE"
 // 0 Name: logo-maersk-line-black.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -61,5 +62,5 @@ function ldraw_lib__logo_maersk_line_black() = [
   [4,16,4.9,0,2.7,3.7,0,2.7,3.7,0,-2.7,4.9,0,-2.7],
 ];
 module ldraw_lib__logo_maersk_line_black(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__logo_maersk_line_black(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__logo_maersk_line_black(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__logo_maersk_line_black(line=0.2);

@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__90617s07() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__90617s07(realsolid=false) = [
 // 0 ~Constraction Ball in Fork - Half
 // 0 Name: s\90617s07.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -899,5 +900,5 @@ function ldraw_lib__s__90617s07() = [
   [5,24,9.811,-9.125,-6.234,9.992,-13.168,-3.064,10,-10,-2,9.652,-10,-7.75],
 ];
 module ldraw_lib__s__90617s07(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__90617s07(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__90617s07(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__90617s07(line=0.2);

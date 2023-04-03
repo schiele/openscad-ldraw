@@ -2,7 +2,8 @@ use <../lib.scad>
 use <62698k01.scad>
 use <62698k02.scad>
 use <62698k03.scad>
-function ldraw_lib__62698_f2() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__62698_f2(realsolid=false) = [
 // 0 Minifig Computer Laptop (Open)
 // 0 Name: 62698-f2.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -21,12 +22,12 @@ function ldraw_lib__62698_f2() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 62698k01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__62698k01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__62698k01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 0.70711 -0.70711 0 0.70711 0.70711 62698k02.dat
-  [1,16,0,0,0,1,0,0,0,0.70711,-0.70711,0,0.70711,0.70711, ldraw_lib__62698k02()],
+  [1,16,0,0,0,1,0,0,0,0.70711,-0.70711,0,0.70711,0.70711, ldraw_lib__62698k02(realsolid)],
 // 1 16 0 -7.0711 7.0711 1 0 0 0 0.38268 -0.92388 0 0.92388 0.38268 62698k03.dat
-  [1,16,0,-7.0711,7.0711,1,0,0,0,0.38268,-0.92388,0,0.92388,0.38268, ldraw_lib__62698k03()],
+  [1,16,0,-7.0711,7.0711,1,0,0,0,0.38268,-0.92388,0,0.92388,0.38268, ldraw_lib__62698k03(realsolid)],
 ];
 module ldraw_lib__62698_f2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__62698_f2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__62698_f2(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__62698_f2(line=0.2);

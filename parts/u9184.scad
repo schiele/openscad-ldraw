@@ -3,7 +3,8 @@ use <../p/4-4cylo.scad>
 use <../p/4-4ring6.scad>
 use <../p/axlehol2.scad>
 use <../p/axlehole.scad>
-function ldraw_lib__u9184() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__u9184(realsolid=false) = [
 // 0 ~Motor Inertia Flywheel  4 x  9 x  3.667 - Axle
 // 0 Name: u9184.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -20,18 +21,18 @@ function ldraw_lib__u9184() = [
 // 
 // 
 // 1 16 40 0 0 0 -80 0 1 0 0 0 0 -1 axlehole.dat
-  [1,16,40,0,0,0,-80,0,1,0,0,0,0,-1, ldraw_lib__axlehole()],
+  [1,16,40,0,0,0,-80,0,1,0,0,0,0,-1, ldraw_lib__axlehole(realsolid)],
 // 1 16 -40 0 0 0 1 0 0 0 1 1 0 0 axlehol2.dat
-  [1,16,-40,0,0,0,1,0,0,0,1,1,0,0, ldraw_lib__axlehol2()],
+  [1,16,-40,0,0,0,1,0,0,0,1,1,0,0, ldraw_lib__axlehol2(realsolid)],
 // 1 16 -40 0 0 0 1 0 0 0 1 1 0 0 4-4ring6.dat
-  [1,16,-40,0,0,0,1,0,0,0,1,1,0,0, ldraw_lib__4_4ring6()],
+  [1,16,-40,0,0,0,1,0,0,0,1,1,0,0, ldraw_lib__4_4ring6(realsolid)],
 // 1 16 40 0 0 0 -1 0 0 0 1 -1 0 0 axlehol2.dat
-  [1,16,40,0,0,0,-1,0,0,0,1,-1,0,0, ldraw_lib__axlehol2()],
+  [1,16,40,0,0,0,-1,0,0,0,1,-1,0,0, ldraw_lib__axlehol2(realsolid)],
 // 1 16 40 0 0 0 -1 0 0 0 1 -1 0 0 4-4ring6.dat
-  [1,16,40,0,0,0,-1,0,0,0,1,-1,0,0, ldraw_lib__4_4ring6()],
+  [1,16,40,0,0,0,-1,0,0,0,1,-1,0,0, ldraw_lib__4_4ring6(realsolid)],
 // 1 16 40 0 0 0 -80 0 7 0 0 0 0 -7 4-4cylo.dat
-  [1,16,40,0,0,0,-80,0,7,0,0,0,0,-7, ldraw_lib__4_4cylo()],
+  [1,16,40,0,0,0,-80,0,7,0,0,0,0,-7, ldraw_lib__4_4cylo(realsolid)],
 ];
 module ldraw_lib__u9184(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__u9184(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__u9184(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__u9184(line=0.2);

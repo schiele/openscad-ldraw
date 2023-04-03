@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
 use <s/191075es01.scad>
-function ldraw_lib__191075f() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__191075f(realsolid=false) = [
 // 0 Sticker  2.3 x  1.9 with White Maersk Line Logo on Maersk Blue Background
 // 0 Name: 191075f.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -18,10 +19,10 @@ function ldraw_lib__191075f() = [
 // 
 // 
 // 1 16 0 -0.25 0 18 0 0 0 0.25 0 0 0 23 box5-12.dat
-  [1,16,0,-0.25,0,18,0,0,0,0.25,0,0,0,23, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,18,0,0,0,0.25,0,0,0,23, ldraw_lib__box5_12(realsolid)],
 // 1 313 0 0 0 1 0 0 0 1 0 0 0 1 s\191075es01.dat
-  [1,313,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__191075es01()],
+  [1,313,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__191075es01(realsolid)],
 ];
 module ldraw_lib__191075f(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__191075f(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__191075f(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__191075f(line=0.2);

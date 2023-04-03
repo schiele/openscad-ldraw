@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <2878.scad>
 use <70720c01.scad>
-function ldraw_lib__2878c01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2878c01(realsolid=false) = [
 // 0 Train Wheel Bogie Single Axle with Wheelset with Open Centre Wheels
 // 0 Name: 2878c01.dat
 // 0 Author: Chris Dee [cwdee]
@@ -20,10 +21,10 @@ function ldraw_lib__2878c01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 2878.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2878()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2878(realsolid)],
 // 1 0 0 34 0 1 0 0 0 1 0 0 0 1 70720c01.dat
-  [1,0,0,34,0,1,0,0,0,1,0,0,0,1, ldraw_lib__70720c01()],
+  [1,0,0,34,0,1,0,0,0,1,0,0,0,1, ldraw_lib__70720c01(realsolid)],
 ];
 module ldraw_lib__2878c01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2878c01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2878c01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2878c01(line=0.2);

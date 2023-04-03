@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/3070batk.scad>
 use <s/3070bs01.scad>
-function ldraw_lib__3070bptk() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3070bptk(realsolid=false) = [
 // 0 Tile  1 x  1 with Silver "K" Pattern
 // 0 Name: 3070bptk.dat
 // 0 Author: Chris Dee [cwdee]
@@ -19,9 +20,9 @@ function ldraw_lib__3070bptk() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3070bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3070bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3070bs01(realsolid)],
 // 1 80 0 0 0 1 0 0 0 1 0 0 0 1 s\3070batk.dat
-  [1,80,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3070batk()],
+  [1,80,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3070batk(realsolid)],
 // 4 16 -6 0 -7.5 -10 0 -10 -10 0 10 -6 0 7.5
   [4,16,-6,0,-7.5,-10,0,-10,-10,0,10,-6,0,7.5],
 // 3 16 -4 0 7.5 -6 0 7.5 -10 0 10
@@ -47,5 +48,5 @@ function ldraw_lib__3070bptk() = [
 // 
 ];
 module ldraw_lib__3070bptk(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3070bptk(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3070bptk(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3070bptk(line=0.2);

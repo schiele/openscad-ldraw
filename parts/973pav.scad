@@ -4,7 +4,8 @@ use <s/973pats01.scad>
 use <s/973pavs01.scad>
 use <s/973pavs02.scad>
 use <s/973s01.scad>
-function ldraw_lib__973pav() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__973pav(realsolid=false) = [
 // 0 Minifig Torso with Silver Armour Front and Back and Drill Pattern
 // 0 Name: 973pav.dat
 // 0 Author: Joerg Sommerer [Brickaneer]
@@ -23,9 +24,9 @@ function ldraw_lib__973pav() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973pavs02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973pavs02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973pavs02(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\973pavs02.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__973pavs02()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__973pavs02(realsolid)],
 // 3 16 -19 32 10 0 31.067 10 19 32 10
   [3,16,-19,32,10,0,31.067,10,19,32,10],
 // 3 16 12 0 10 0 2.341 10 -12 0 10
@@ -203,15 +204,15 @@ function ldraw_lib__973pav() = [
 // 3 80 -9.615 4.743 10 -9.095 5.261 10 -9.966 5.269 10
   [3,80,-9.615,4.743,10,-9.095,5.261,10,-9.966,5.269,10],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01(realsolid)],
 // 1 0 0 -4 0 4.243 0 -4.243 0 -8 0 -4.243 0 -4.243 1-4cyli.dat
-  [1,0,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli()],
+  [1,0,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973pavs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973pavs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973pavs01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\973pavs01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__973pavs01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__973pavs01(realsolid)],
 // 1 80 6.089 -9.765 -10 1 0 0 0 1 0 0 0 1 s\973pats01.dat
-  [1,80,6.089,-9.765,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973pats01()],
+  [1,80,6.089,-9.765,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973pats01(realsolid)],
 // 3 16 0 31.067 -10 -19 32 -10 19 32 -10
   [3,16,0,31.067,-10,-19,32,-10,19,32,-10],
 // 3 16 12 0 -10 -12 0 -10 0 2.391 -10
@@ -518,5 +519,5 @@ function ldraw_lib__973pav() = [
   [3,0,-10.982,10.965,-10,-11.365,11.137,-10,-10.728,11.135,-10],
 ];
 module ldraw_lib__973pav(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__973pav(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__973pav(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__973pav(line=0.2);

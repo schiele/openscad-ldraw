@@ -5,7 +5,8 @@ use <92550.scad>
 use <92551.scad>
 use <92552.scad>
 use <u9522.scad>
-function ldraw_lib__92547() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__92547(realsolid=false) = [
 // 0 Spinner Ninjago  6 x  6 x  1.333 Type 1
 // 0 Name: 92547.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -29,22 +30,22 @@ function ldraw_lib__92547() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 92548.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__92548()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__92548(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 92549.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__92549()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__92549(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 92551.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__92551()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__92551(realsolid)],
 // 1 16 0 16 0 1 0 0 0 1 0 0 0 1 92550.dat
-  [1,16,0,16,0,1,0,0,0,1,0,0,0,1, ldraw_lib__92550()],
+  [1,16,0,16,0,1,0,0,0,1,0,0,0,1, ldraw_lib__92550(realsolid)],
 // 1 0 0 25.65 36 1 0 0 0 -1 0 0 0 1 u9522.dat
-  [1,0,0,25.65,36,1,0,0,0,-1,0,0,0,1, ldraw_lib__u9522()],
+  [1,0,0,25.65,36,1,0,0,0,-1,0,0,0,1, ldraw_lib__u9522(realsolid)],
 // 1 0 -31.177 25.65 -18 1 0 0 0 -1 0 0 0 1 u9522.dat
-  [1,0,-31.177,25.65,-18,1,0,0,0,-1,0,0,0,1, ldraw_lib__u9522()],
+  [1,0,-31.177,25.65,-18,1,0,0,0,-1,0,0,0,1, ldraw_lib__u9522(realsolid)],
 // 1 0 31.177 25.65 -18 1 0 0 0 -1 0 0 0 1 u9522.dat
-  [1,0,31.177,25.65,-18,1,0,0,0,-1,0,0,0,1, ldraw_lib__u9522()],
+  [1,0,31.177,25.65,-18,1,0,0,0,-1,0,0,0,1, ldraw_lib__u9522(realsolid)],
 // 1 494 0 0 0 1 0 0 0 1 0 0 0 1 92552.dat
-  [1,494,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__92552()],
+  [1,494,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__92552(realsolid)],
 ];
 module ldraw_lib__92547(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__92547(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__92547(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__92547(line=0.2);

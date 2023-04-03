@@ -4,7 +4,8 @@ use <../p/1-4cyli.scad>
 use <s/logoferraris05.scad>
 use <s/logoivecos01.scad>
 use <s/logoivecos02.scad>
-function ldraw_lib__6009312f() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6009312f(realsolid=false) = [
 // 0 Sticker  1.8 x  1.8 with Iveco Stralis Truck Front with Logo Scuderia Ferrari on Red Background
 // 0 Name: 6009312f.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -39,35 +40,35 @@ function ldraw_lib__6009312f() = [
   [4,16,18,0,-16,16,0,-18,-16,0,-18,-18,0,-16],
 // 0 // Primitives
 // 1 16 -16 0 16 0 0 -2 0 -1 0 2 0 0 1-4chrd.dat
-  [1,16,-16,0,16,0,0,-2,0,-1,0,2,0,0, ldraw_lib__1_4chrd()],
+  [1,16,-16,0,16,0,0,-2,0,-1,0,2,0,0, ldraw_lib__1_4chrd(realsolid)],
 // 1 16 16 0 16 2 0 0 0 -1 0 0 0 2 1-4chrd.dat
-  [1,16,16,0,16,2,0,0,0,-1,0,0,0,2, ldraw_lib__1_4chrd()],
+  [1,16,16,0,16,2,0,0,0,-1,0,0,0,2, ldraw_lib__1_4chrd(realsolid)],
 // 1 16 -16 0 -16 -2 0 0 0 -1 0 0 0 -2 1-4chrd.dat
-  [1,16,-16,0,-16,-2,0,0,0,-1,0,0,0,-2, ldraw_lib__1_4chrd()],
+  [1,16,-16,0,-16,-2,0,0,0,-1,0,0,0,-2, ldraw_lib__1_4chrd(realsolid)],
 // 1 16 16 0 -16 0 0 2 0 -1 0 -2 0 0 1-4chrd.dat
-  [1,16,16,0,-16,0,0,2,0,-1,0,-2,0,0, ldraw_lib__1_4chrd()],
+  [1,16,16,0,-16,0,0,2,0,-1,0,-2,0,0, ldraw_lib__1_4chrd(realsolid)],
 // 1 16 -16 -0.25 16 0 0 -2 0 0.25 0 2 0 0 1-4cyli.dat
-  [1,16,-16,-0.25,16,0,0,-2,0,0.25,0,2,0,0, ldraw_lib__1_4cyli()],
+  [1,16,-16,-0.25,16,0,0,-2,0,0.25,0,2,0,0, ldraw_lib__1_4cyli(realsolid)],
 // 1 16 16 -0.25 16 2 0 0 0 0.25 0 0 0 2 1-4cyli.dat
-  [1,16,16,-0.25,16,2,0,0,0,0.25,0,0,0,2, ldraw_lib__1_4cyli()],
+  [1,16,16,-0.25,16,2,0,0,0,0.25,0,0,0,2, ldraw_lib__1_4cyli(realsolid)],
 // 1 16 -16 -0.25 -16 -2 0 0 0 0.25 0 0 0 -2 1-4cyli.dat
-  [1,16,-16,-0.25,-16,-2,0,0,0,0.25,0,0,0,-2, ldraw_lib__1_4cyli()],
+  [1,16,-16,-0.25,-16,-2,0,0,0,0.25,0,0,0,-2, ldraw_lib__1_4cyli(realsolid)],
 // 1 16 16 -0.25 -16 0 0 2 0 0.25 0 -2 0 0 1-4cyli.dat
-  [1,16,16,-0.25,-16,0,0,2,0,0.25,0,-2,0,0, ldraw_lib__1_4cyli()],
+  [1,16,16,-0.25,-16,0,0,2,0,0.25,0,-2,0,0, ldraw_lib__1_4cyli(realsolid)],
 // 1 4 -16 -0.25 16 0 0 -2 0 1 0 2 0 0 1-4chrd.dat
-  [1,4,-16,-0.25,16,0,0,-2,0,1,0,2,0,0, ldraw_lib__1_4chrd()],
+  [1,4,-16,-0.25,16,0,0,-2,0,1,0,2,0,0, ldraw_lib__1_4chrd(realsolid)],
 // 1 4 16 -0.25 16 2 0 0 0 1 0 0 0 2 1-4chrd.dat
-  [1,4,16,-0.25,16,2,0,0,0,1,0,0,0,2, ldraw_lib__1_4chrd()],
+  [1,4,16,-0.25,16,2,0,0,0,1,0,0,0,2, ldraw_lib__1_4chrd(realsolid)],
 // 1 4 -16 -0.25 -16 -2 0 0 0 1 0 0 0 -2 1-4chrd.dat
-  [1,4,-16,-0.25,-16,-2,0,0,0,1,0,0,0,-2, ldraw_lib__1_4chrd()],
+  [1,4,-16,-0.25,-16,-2,0,0,0,1,0,0,0,-2, ldraw_lib__1_4chrd(realsolid)],
 // 1 4 16 -0.25 -16 0 0 2 0 1 0 -2 0 0 1-4chrd.dat
-  [1,4,16,-0.25,-16,0,0,2,0,1,0,-2,0,0, ldraw_lib__1_4chrd()],
+  [1,4,16,-0.25,-16,0,0,2,0,1,0,-2,0,0, ldraw_lib__1_4chrd(realsolid)],
 // 1 4 0 -0.25 15 1.64 0 0 0 1 0 0 0 1.64 s\logoivecos02.dat
-  [1,4,0,-0.25,15,1.64,0,0,0,1,0,0,0,1.64, ldraw_lib__s__logoivecos02()],
+  [1,4,0,-0.25,15,1.64,0,0,0,1,0,0,0,1.64, ldraw_lib__s__logoivecos02(realsolid)],
 // 1 4 0 -0.25 6.35 0.21 0 0 0 1 0 0 0 0.21 s\logoferraris05.dat
-  [1,4,0,-0.25,6.35,0.21,0,0,0,1,0,0,0,0.21, ldraw_lib__s__logoferraris05()],
+  [1,4,0,-0.25,6.35,0.21,0,0,0,1,0,0,0,0.21, ldraw_lib__s__logoferraris05(realsolid)],
 // 1 0 0 -0.25 -2 0.72 0 0 0 1 0 0 0 0.72 s\logoivecos01.dat
-  [1,0,0,-0.25,-2,0.72,0,0,0,1,0,0,0,0.72, ldraw_lib__s__logoivecos01()],
+  [1,0,0,-0.25,-2,0.72,0,0,0,1,0,0,0,0.72, ldraw_lib__s__logoivecos01(realsolid)],
 // 0 // Black stripes
 // 4 0 -12.9 -0.25 -0.1 -13.2062 -0.25 -0.1609 -13.4657 -0.25 -0.33432 -13.6391 -0.25 -0.59385
   [4,0,-12.9,-0.25,-0.1,-13.2062,-0.25,-0.1609,-13.4657,-0.25,-0.33432,-13.6391,-0.25,-0.59385],
@@ -1808,5 +1809,5 @@ function ldraw_lib__6009312f() = [
   [3,4,-16,-0.25,1,-13.2062,-0.25,-0.1609,-12.9,-0.25,-0.1],
 ];
 module ldraw_lib__6009312f(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6009312f(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6009312f(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6009312f(line=0.2);

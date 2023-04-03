@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__11244p04s05() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__11244p04s05(realsolid=false) = [
 // 0 ~Figure Friends Wrap-around Skirt Mid Layer
 // 0 Name: s\11244p04s05.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -733,5 +734,5 @@ function ldraw_lib__s__11244p04s05() = [
   [3,16,-7.9539,-37.8995,10.3604,-9.1952,-38.8785,9.736,-9.3613,-40.7347,9.4087],
 ];
 module ldraw_lib__s__11244p04s05(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__11244p04s05(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__11244p04s05(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__11244p04s05(line=0.2);

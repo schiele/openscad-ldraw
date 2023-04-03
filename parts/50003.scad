@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <3626bp82.scad>
-function ldraw_lib__50003() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__50003(realsolid=false) = [
 // 0 =Minifig Head with Smirk, Black Hair and Goatee Pattern
 // 0 Name: 50003.dat
 // 0 Author: [PTadmin]
@@ -19,9 +20,9 @@ function ldraw_lib__50003() = [
 // 0 // Alias of 3626bp82
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 3626bp82.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3626bp82()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3626bp82(realsolid)],
 // 0
 ];
 module ldraw_lib__50003(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__50003(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__50003(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__50003(line=0.2);

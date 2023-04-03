@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/1-4cyli.scad>
 use <s/3070bp70a.scad>
 use <s/973s01.scad>
-function ldraw_lib__973p7q() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__973p7q(realsolid=false) = [
 // 0 Minifig Torso with Jacket, Pocket, Badge, Blue Tie Pattern
 // 0 Name: 973p7q.dat
 // 0 Author: Nils Schmidt [BlackBrick89]
@@ -17,7 +18,7 @@ function ldraw_lib__973p7q() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01(realsolid)],
 // 4 16 19 29 10 19 32 10 -19 32 10 -19 29 10
   [4,16,19,29,10,19,32,10,-19,32,10,-19,29,10],
 // 4 16 -14.345 2 10 14.345 2 10 19 29 10 -19 29 10
@@ -25,9 +26,9 @@ function ldraw_lib__973p7q() = [
 // 4 16 -14.345 2 10 -12 0 10 12 0 10 14.345 2 10
   [4,16,-14.345,2,10,-12,0,10,12,0,10,14.345,2,10],
 // 1 7 0 -4 0 4.243 0 -4.243 0 -8 0 -4.243 0 -4.243 1-4cyli.dat
-  [1,7,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli()],
+  [1,7,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli(realsolid)],
 // 1 82 10.2 18.77 -10 0.7302 0 0 0 0 -0.7304 0 1 0 s\3070bp70a.dat
-  [1,82,10.2,18.77,-10,0.7302,0,0,0,0,-0.7304,0,1,0, ldraw_lib__s__3070bp70a()],
+  [1,82,10.2,18.77,-10,0.7302,0,0,0,0,-0.7304,0,1,0, ldraw_lib__s__3070bp70a(realsolid)],
 // 4 7 -14.6 14.9 -10 -14.8 15.1 -10 -13.5 16 -10 -14.3 14.7 -10
   [4,7,-14.6,14.9,-10,-14.8,15.1,-10,-13.5,16,-10,-14.3,14.7,-10],
 // 4 7 -5.9 14.7 -10 -14.3 14.7 -10 -13.5 16 -10 -6.7 16 -10
@@ -818,5 +819,5 @@ function ldraw_lib__973p7q() = [
   [4,16,5.8,4.1,-10,6.1,3.7,-10,5.7,0,-10,4.2,3.9,-10],
 ];
 module ldraw_lib__973p7q(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__973p7q(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__973p7q(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__973p7q(line=0.2);

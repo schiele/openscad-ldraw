@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <2427.scad>
-function ldraw_lib__2426() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2426(realsolid=false) = [
 // 0 ~Rack Winder  2 x  4 x  2 Underside Right Side
 // 0 Name: 2426.dat
 // 0 Author: Max Martin Richter [MMR1988]
@@ -15,8 +16,8 @@ function ldraw_lib__2426() = [
 // 
 // 
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 2427.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__2427()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__2427(realsolid)],
 ];
 module ldraw_lib__2426(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2426(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2426(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2426(line=0.2);

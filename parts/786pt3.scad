@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/3004p50s01.scad>
 use <s/786s01.scad>
-function ldraw_lib__786pt3() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__786pt3(realsolid=false) = [
 // 0 Flag on Flagpole Type 4 with Small Lego Logo with Open "O" Pattern
 // 0 Name: 786pt3.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -17,12 +18,12 @@ function ldraw_lib__786pt3() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\786s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__786s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__786s01(realsolid)],
 // 
 // 1 4 32.188 -119.932 -2 .95513 -.34761 0 .34761 .95513 0 0 0 1 s\3004p50s01.dat
-  [1,4,32.188,-119.932,-2,.95513,-.34761,0,.34761,.95513,0,0,0,1, ldraw_lib__s__3004p50s01()],
+  [1,4,32.188,-119.932,-2,.95513,-.34761,0,.34761,.95513,0,0,0,1, ldraw_lib__s__3004p50s01(realsolid)],
 // 1 4 32.188 -119.932 2 -.95513 -.34761 0 -.34761 .95513 0 0 0 -1 s\3004p50s01.dat
-  [1,4,32.188,-119.932,2,-.95513,-.34761,0,-.34761,.95513,0,0,0,-1, ldraw_lib__s__3004p50s01()],
+  [1,4,32.188,-119.932,2,-.95513,-.34761,0,-.34761,.95513,0,0,0,-1, ldraw_lib__s__3004p50s01(realsolid)],
 // 
 // 3 4 14.256 -119.698 -2 18.601 -131.637 -2 4 -155 -2
   [3,4,14.256,-119.698,-2,18.601,-131.637,-2,4,-155,-2],
@@ -67,5 +68,5 @@ function ldraw_lib__786pt3() = [
   [3,4,45.775,-108.227,2,59,-90,2,49,-94,2],
 ];
 module ldraw_lib__786pt3(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__786pt3(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__786pt3(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__786pt3(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <rect3.scad>
-function ldraw_lib__stxjcyl9() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__stxjcyl9(realsolid=false) = [
 // 0 Stud Cross to Cylinder 9 LDU Joint
 // 0 Name: stxjcyl9.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -16,17 +17,17 @@ function ldraw_lib__stxjcyl9() = [
 // 
 // 0 // Primitives
 // 1 16 -1.5 .149 2.75 0 1 0 0 0 .149 1.25 0 0 rect3.dat
-  [1,16,-1.5,.149,2.75,0,1,0,0,0,.149,1.25,0,0, ldraw_lib__rect3()],
+  [1,16,-1.5,.149,2.75,0,1,0,0,0,.149,1.25,0,0, ldraw_lib__rect3(realsolid)],
 // 1 16 -4 .618 0 0 1 0 0 0 .618 1.5 0 0 rect3.dat
-  [1,16,-4,.618,0,0,1,0,0,0,.618,1.5,0,0, ldraw_lib__rect3()],
+  [1,16,-4,.618,0,0,1,0,0,0,.618,1.5,0,0, ldraw_lib__rect3(realsolid)],
 // 1 16 -1.5 .149 -2.75 0 1 0 0 0 .149 1.25 0 0 rect3.dat
-  [1,16,-1.5,.149,-2.75,0,1,0,0,0,.149,1.25,0,0, ldraw_lib__rect3()],
+  [1,16,-1.5,.149,-2.75,0,1,0,0,0,.149,1.25,0,0, ldraw_lib__rect3(realsolid)],
 // 1 16 1.5 .149 -2.75 0 -1 0 0 0 .149 -1.25 0 0 rect3.dat
-  [1,16,1.5,.149,-2.75,0,-1,0,0,0,.149,-1.25,0,0, ldraw_lib__rect3()],
+  [1,16,1.5,.149,-2.75,0,-1,0,0,0,.149,-1.25,0,0, ldraw_lib__rect3(realsolid)],
 // 1 16 4 .618 0 0 -1 0 0 0 .618 -1.5 0 0 rect3.dat
-  [1,16,4,.618,0,0,-1,0,0,0,.618,-1.5,0,0, ldraw_lib__rect3()],
+  [1,16,4,.618,0,0,-1,0,0,0,.618,-1.5,0,0, ldraw_lib__rect3(realsolid)],
 // 1 16 1.5 .149 2.75 0 -1 0 0 0 .149 -1.25 0 0 rect3.dat
-  [1,16,1.5,.149,2.75,0,-1,0,0,0,.149,-1.25,0,0, ldraw_lib__rect3()],
+  [1,16,1.5,.149,2.75,0,-1,0,0,0,.149,-1.25,0,0, ldraw_lib__rect3(realsolid)],
 // 0 // Faces
 // 3 16 0 0 4 -1.5 .298 4 -1.5 0 4
   [3,16,0,0,4,-1.5,.298,4,-1.5,0,4],
@@ -79,5 +80,5 @@ function ldraw_lib__stxjcyl9() = [
   [2,24,3.062,.609,1.5,1.5,.298,1.5],
 ];
 module ldraw_lib__stxjcyl9(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__stxjcyl9(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__stxjcyl9(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__stxjcyl9(line=0.2);

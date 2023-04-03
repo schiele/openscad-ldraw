@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <751.scad>
 use <752.scad>
-function ldraw_lib__73590a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__73590a(realsolid=false) = [
 // 0 Hose Flexible  8.5L without Tabs
 // 0 Name: 73590a.dat
 // 0 Author: Steve Bliss [sbliss]
@@ -22,12 +23,12 @@ function ldraw_lib__73590a() = [
 // 
 // 
 // 1 16 -70 0 0 0 -1 0 1 0 0 0 0 1 752.dat
-  [1,16,-70,0,0,0,-1,0,1,0,0,0,0,1, ldraw_lib__752()],
+  [1,16,-70,0,0,0,-1,0,1,0,0,0,0,1, ldraw_lib__752(realsolid)],
 // 1 16 0 0 0 0 1 0 1 0 0 0 0 1 751.dat
-  [1,16,0,0,0,0,1,0,1,0,0,0,0,1, ldraw_lib__751()],
+  [1,16,0,0,0,0,1,0,1,0,0,0,0,1, ldraw_lib__751(realsolid)],
 // 1 16 70 0 0 0 1 0 1 0 0 0 0 1 752.dat
-  [1,16,70,0,0,0,1,0,1,0,0,0,0,1, ldraw_lib__752()],
+  [1,16,70,0,0,0,1,0,1,0,0,0,0,1, ldraw_lib__752(realsolid)],
 ];
 module ldraw_lib__73590a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__73590a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__73590a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__73590a(line=0.2);

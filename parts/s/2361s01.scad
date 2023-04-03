@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <3811s01.scad>
 use <../../p/stug7.scad>
-function ldraw_lib__s__2361s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__2361s01(realsolid=false) = [
 // 0 ~Baseplate 32 x 32 Road 7-Stud Crossroads without Top Surface
 // 0 Name: s\2361s01.dat
 // 0 Author: Alex Taylor [anathema]
@@ -17,16 +18,16 @@ function ldraw_lib__s__2361s01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3811s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3811s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3811s01(realsolid)],
 // 1 16 -250 0 250 0 0 1 0 1 0 -1 0 0 stug7.dat
-  [1,16,-250,0,250,0,0,1,0,1,0,-1,0,0, ldraw_lib__stug7()],
+  [1,16,-250,0,250,0,0,1,0,1,0,-1,0,0, ldraw_lib__stug7(realsolid)],
 // 1 16 -250 0 -250 0 0 1 0 1 0 -1 0 0 stug7.dat
-  [1,16,-250,0,-250,0,0,1,0,1,0,-1,0,0, ldraw_lib__stug7()],
+  [1,16,-250,0,-250,0,0,1,0,1,0,-1,0,0, ldraw_lib__stug7(realsolid)],
 // 1 16 250 0 250 0 0 1 0 1 0 -1 0 0 stug7.dat
-  [1,16,250,0,250,0,0,1,0,1,0,-1,0,0, ldraw_lib__stug7()],
+  [1,16,250,0,250,0,0,1,0,1,0,-1,0,0, ldraw_lib__stug7(realsolid)],
 // 1 16 250 0 -250 0 0 1 0 1 0 -1 0 0 stug7.dat
-  [1,16,250,0,-250,0,0,1,0,1,0,-1,0,0, ldraw_lib__stug7()],
+  [1,16,250,0,-250,0,0,1,0,1,0,-1,0,0, ldraw_lib__stug7(realsolid)],
 ];
 module ldraw_lib__s__2361s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__2361s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__2361s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__2361s01(line=0.2);

@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__48__1_6con2() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__48__1_6con2(realsolid=false) = [
 // 0 Hi-Res Cone  2 x 0.1667
 // 0 Name: 48\1-6con2.dat
 // 0 Author: N. W. Perry [Plastikean]
@@ -51,5 +52,5 @@ function ldraw_lib__48__1_6con2() = [
 // 0 // Build by LDPartEditor (PrimGen 2.X)
 ];
 module ldraw_lib__48__1_6con2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__48__1_6con2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__48__1_6con2(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__48__1_6con2(line=0.2);

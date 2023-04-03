@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__40882() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__40882(realsolid=false) = [
 // 0 ~Animal Dinosaur Legs Short, Centre (Needs Work)
 // 0 Name: 40882.dat
 // 0 Author: Andy Westrate [westrate]
@@ -2001,5 +2002,5 @@ function ldraw_lib__40882() = [
   [2,24,-40.61,13.75,23.04,-40.26,2.15,26.04],
 ];
 module ldraw_lib__40882(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__40882(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__40882(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__40882(line=0.2);

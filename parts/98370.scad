@@ -4,7 +4,8 @@ use <../p/4-4edge.scad>
 use <../p/4-4ring2.scad>
 use <../p/4-8sphe.scad>
 use <s/98370s01.scad>
-function ldraw_lib__98370() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__98370(realsolid=false) = [
 // 0 Minifig Sword Longsword
 // 0 Name: 98370.dat
 // 0 Author: Christian Neumann [Wesley]
@@ -22,17 +23,17 @@ function ldraw_lib__98370() = [
 // 
 // 
 // 1 16 0 0 0 4 0 0 0 16 0 0 0 4 4-4cylo.dat
-  [1,16,0,0,0,4,0,0,0,16,0,0,0,4, ldraw_lib__4_4cylo()],
+  [1,16,0,0,0,4,0,0,0,16,0,0,0,4, ldraw_lib__4_4cylo(realsolid)],
 // 1 16 0 16 0 2 0 0 0 1 0 0 0 2 4-4ring2.dat
-  [1,16,0,16,0,2,0,0,0,1,0,0,0,2, ldraw_lib__4_4ring2()],
+  [1,16,0,16,0,2,0,0,0,1,0,0,0,2, ldraw_lib__4_4ring2(realsolid)],
 // 1 16 0 16 0 6 0 0 0 1 0 0 0 6 4-4edge.dat
-  [1,16,0,16,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4edge()],
+  [1,16,0,16,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 16 0 6 0 0 0 6 0 0 0 6 4-8sphe.dat
-  [1,16,0,16,0,6,0,0,0,6,0,0,0,6, ldraw_lib__4_8sphe()],
+  [1,16,0,16,0,6,0,0,0,6,0,0,0,6, ldraw_lib__4_8sphe(realsolid)],
 // 1 16 0 0 0 0 0 -1 0 1 0 1 0 0 s\98370s01.dat
-  [1,16,0,0,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__s__98370s01()],
+  [1,16,0,0,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__s__98370s01(realsolid)],
 // 1 16 0 0 0 0 0 -1 0 1 0 -1 0 0 s\98370s01.dat
-  [1,16,0,0,0,0,0,-1,0,1,0,-1,0,0, ldraw_lib__s__98370s01()],
+  [1,16,0,0,0,0,0,-1,0,1,0,-1,0,0, ldraw_lib__s__98370s01(realsolid)],
 // 2 24 2 -57.5 0 2 -5.5 0
   [2,24,2,-57.5,0,2,-5.5,0],
 // 2 24 -2 -5.5 0 -2 -57.5 0
@@ -49,5 +50,5 @@ function ldraw_lib__98370() = [
   [5,24,-0.4,-73.5,0,0.4,-73.5,0,-0.4,-73.32,0.75,-0.4,-73.32,-0.75],
 ];
 module ldraw_lib__98370(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__98370(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__98370(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__98370(line=0.2);

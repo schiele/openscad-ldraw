@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__6005724g() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6005724g(realsolid=false) = [
 // 0 Sticker  1.1 x  1.9 with Narrow Bricks
 // 0 Name: 6005724g.dat
 // 0 Author: Christian Neumann [Wesley]
@@ -19,7 +20,7 @@ function ldraw_lib__6005724g() = [
 // 
 // 
 // 1 16 0 -0.25 0 19 0 0 0 0.25 0 0 0 11 box5-12.dat
-  [1,16,0,-0.25,0,19,0,0,0,0.25,0,0,0,11, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,19,0,0,0,0.25,0,0,0,11, ldraw_lib__box5_12(realsolid)],
 // 4 0 -17.5 -0.25 -4.2 -19 -0.25 -4.4 -19 -0.25 -5 -16.9 -0.25 -5.3
   [4,0,-17.5,-0.25,-4.2,-19,-0.25,-4.4,-19,-0.25,-5,-16.9,-0.25,-5.3],
 // 3 0 -17.5 -0.25 -4.2 -16.9 -0.25 -5.3 -15.4 -0.25 -4.3
@@ -368,5 +369,5 @@ function ldraw_lib__6005724g() = [
   [3,16,-3.5,-0.25,-5.2,-4.2,-0.25,-5.7,-1.5,-0.25,-5.4],
 ];
 module ldraw_lib__6005724g(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6005724g(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6005724g(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6005724g(line=0.2);

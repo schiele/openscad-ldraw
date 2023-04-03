@@ -3,7 +3,8 @@ use <../p/1-4chrd.scad>
 use <../p/1-4cyli.scad>
 use <../p/1-4edge.scad>
 use <../p/rect.scad>
-function ldraw_lib__58150() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__58150(realsolid=false) = [
 // 0 ~Electric Power Functions Infra-Red Receiver Switch (Needs Work)
 // 0 Name: 58150.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -38,29 +39,29 @@ function ldraw_lib__58150() = [
 // 4 16 -40 -24 0 -40 -24 8 -40 -30 8 -40 -28 4
   [4,16,-40,-24,0,-40,-24,8,-40,-30,8,-40,-28,4],
 // 1 16 -39 -35 -8 1 0 0 0 0 -3 0 1 0 rect.dat
-  [1,16,-39,-35,-8,1,0,0,0,0,-3,0,1,0, ldraw_lib__rect()],
+  [1,16,-39,-35,-8,1,0,0,0,0,-3,0,1,0, ldraw_lib__rect(realsolid)],
 // 1 16 -39 -27 -8 1 0 0 0 0 -3 0 1 0 rect.dat
-  [1,16,-39,-27,-8,1,0,0,0,0,-3,0,1,0, ldraw_lib__rect()],
+  [1,16,-39,-27,-8,1,0,0,0,0,-3,0,1,0, ldraw_lib__rect(realsolid)],
 // 1 16 -39 -27 8 1 0 0 0 0 3 0 -1 0 rect.dat
-  [1,16,-39,-27,8,1,0,0,0,0,3,0,-1,0, ldraw_lib__rect()],
+  [1,16,-39,-27,8,1,0,0,0,0,3,0,-1,0, ldraw_lib__rect(realsolid)],
 // 1 16 -39 -35 8 1 0 0 0 0 3 0 -1 0 rect.dat
-  [1,16,-39,-35,8,1,0,0,0,0,3,0,-1,0, ldraw_lib__rect()],
+  [1,16,-39,-35,8,1,0,0,0,0,3,0,-1,0, ldraw_lib__rect(realsolid)],
 // 1 16 -38 -30 0 0 1 0 -8 0 -8 -8 0 8 1-4edge.dat
-  [1,16,-38,-30,0,0,1,0,-8,0,-8,-8,0,8, ldraw_lib__1_4edge()],
+  [1,16,-38,-30,0,0,1,0,-8,0,-8,-8,0,8, ldraw_lib__1_4edge(realsolid)],
 // 1 16 -38 -30 0 0 -2 0 -8 0 -8 -8 0 8 1-4cyli.dat
-  [1,16,-38,-30,0,0,-2,0,-8,0,-8,-8,0,8, ldraw_lib__1_4cyli()],
+  [1,16,-38,-30,0,0,-2,0,-8,0,-8,-8,0,8, ldraw_lib__1_4cyli(realsolid)],
 // 1 16 -40 -30 0 0 1 0 -8 0 -8 -8 0 8 1-4edge.dat
-  [1,16,-40,-30,0,0,1,0,-8,0,-8,-8,0,8, ldraw_lib__1_4edge()],
+  [1,16,-40,-30,0,0,1,0,-8,0,-8,-8,0,8, ldraw_lib__1_4edge(realsolid)],
 // 1 16 -40 -30 0 0 1 0 -8 0 -8 -8 0 8 1-4chrd.dat
-  [1,16,-40,-30,0,0,1,0,-8,0,-8,-8,0,8, ldraw_lib__1_4chrd()],
+  [1,16,-40,-30,0,0,1,0,-8,0,-8,-8,0,8, ldraw_lib__1_4chrd(realsolid)],
 // 1 16 -38 -32 0 0 1 0 8 0 8 8 0 -8 1-4edge.dat
-  [1,16,-38,-32,0,0,1,0,8,0,8,8,0,-8, ldraw_lib__1_4edge()],
+  [1,16,-38,-32,0,0,1,0,8,0,8,8,0,-8, ldraw_lib__1_4edge(realsolid)],
 // 1 16 -38 -32 0 0 -2 0 8 0 8 8 0 -8 1-4cyli.dat
-  [1,16,-38,-32,0,0,-2,0,8,0,8,8,0,-8, ldraw_lib__1_4cyli()],
+  [1,16,-38,-32,0,0,-2,0,8,0,8,8,0,-8, ldraw_lib__1_4cyli(realsolid)],
 // 1 16 -40 -32 0 0 1 0 8 0 8 8 0 -8 1-4edge.dat
-  [1,16,-40,-32,0,0,1,0,8,0,8,8,0,-8, ldraw_lib__1_4edge()],
+  [1,16,-40,-32,0,0,1,0,8,0,8,8,0,-8, ldraw_lib__1_4edge(realsolid)],
 // 1 16 -40 -32 0 0 1 0 8 0 8 8 0 -8 1-4chrd.dat
-  [1,16,-40,-32,0,0,1,0,8,0,8,8,0,-8, ldraw_lib__1_4chrd()],
+  [1,16,-40,-32,0,0,1,0,8,0,8,8,0,-8, ldraw_lib__1_4chrd(realsolid)],
 // 2 24 -40 -32 -8 -40 -34 0
   [2,24,-40,-32,-8,-40,-34,0],
 // 2 24 -38 -32 -8 -38 -34 0
@@ -156,5 +157,5 @@ function ldraw_lib__58150() = [
 // 0
 ];
 module ldraw_lib__58150(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__58150(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__58150(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__58150(line=0.2);

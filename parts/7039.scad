@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <35b.scad>
 use <497a.scad>
-function ldraw_lib__7039() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__7039(realsolid=false) = [
 // 0 Wheel Rim  8 x 18 with 4 Studs and Cylindrical Axle
 // 0 Name: 7039.dat
 // 0 Author: James Jessiman
@@ -24,10 +25,10 @@ function ldraw_lib__7039() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 497a.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__497a()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__497a(realsolid)],
 // 1 60 0 0 12 1 0 0 0 1 0 0 0 1 35b.dat
-  [1,60,0,0,12,1,0,0,0,1,0,0,0,1, ldraw_lib__35b()],
+  [1,60,0,0,12,1,0,0,0,1,0,0,0,1, ldraw_lib__35b(realsolid)],
 ];
 module ldraw_lib__7039(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__7039(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__7039(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__7039(line=0.2);

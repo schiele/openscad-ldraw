@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__4650853i() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4650853i(realsolid=false) = [
 // 0 Sticker  1.9 x  1.9 with Map Heartlake City
 // 0 Name: 4650853i.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -17,7 +18,7 @@ function ldraw_lib__4650853i() = [
 // 
 // 
 // 1 16 0 -0.25 0 19 0 0 0 0.25 0 0 0 19 box5-12.dat
-  [1,16,0,-0.25,0,19,0,0,0,0.25,0,0,0,19, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,19,0,0,0,0.25,0,0,0,19, ldraw_lib__box5_12(realsolid)],
 // 4 118 -9.1 -0.25 18 -9.4 -0.25 19 -19 -0.25 19 -19 -0.25 16.3
   [4,118,-9.1,-0.25,18,-9.4,-0.25,19,-19,-0.25,19,-19,-0.25,16.3],
 // 4 118 -9.4 -0.25 15.7 -9.1 -0.25 18 -19 -0.25 16.3 -12.2 -0.25 11.8
@@ -946,5 +947,5 @@ function ldraw_lib__4650853i() = [
   [3,322,13.6,-0.25,-13.3,13.8,-0.25,-13.8,14.9,-0.25,-13.6],
 ];
 module ldraw_lib__4650853i(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4650853i(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4650853i(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4650853i(line=0.2);

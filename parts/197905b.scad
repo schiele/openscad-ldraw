@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__197905b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__197905b(realsolid=false) = [
 // 0 Sticker  1.6 x  1.3 with Black "MC 5510" on White Background
 // 0 Name: 197905b.dat
 // 0 Author: Damien Roux [Darats]
@@ -750,8 +751,8 @@ function ldraw_lib__197905b() = [
   [4,15,14,-0.25,11,12.524,-0.25,-3.884,12.603,-0.25,-4.877,14,-0.25,-11],
 // 
 // 1 16 0 -0.25 0 16 0 0 0 0.25 0 0 0 13 box5-12.dat
-  [1,16,0,-0.25,0,16,0,0,0,0.25,0,0,0,13, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,16,0,0,0,0.25,0,0,0,13, ldraw_lib__box5_12(realsolid)],
 ];
 module ldraw_lib__197905b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__197905b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__197905b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__197905b(line=0.2);

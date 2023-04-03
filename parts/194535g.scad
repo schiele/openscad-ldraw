@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__194535g() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__194535g(realsolid=false) = [
 // 0 Sticker  0.3 x  2.9 with Black "alarmcentrale" on Transparent Background
 // 0 Name: 194535g.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -18,7 +19,7 @@ function ldraw_lib__194535g() = [
 // 
 // 
 // 1 16 0 -0.25 0 29 0 0 0 0.25 0 0 0 3 box5-12.dat
-  [1,16,0,-0.25,0,29,0,0,0,0.25,0,0,0,3, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,29,0,0,0,0.25,0,0,0,3, ldraw_lib__box5_12(realsolid)],
 // 0 BFC NOCLIP
   [0,"BFC","NOCLIP"],
 // 4 0 -21.72 -0.25 -1.74 -22.75 -0.25 -1.94 -22.52 -0.25 -2.32 -22.16 -0.25 -2.56
@@ -1077,5 +1078,5 @@ function ldraw_lib__194535g() = [
   [3,16,-7.94,-0.25,1.38,-10.5,-0.25,1.38,-8.24,-0.25,1.35],
 ];
 module ldraw_lib__194535g(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__194535g(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__194535g(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__194535g(line=0.2);

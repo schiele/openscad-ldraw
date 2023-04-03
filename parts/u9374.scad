@@ -7,7 +7,8 @@ use <../p/axlecaph2.scad>
 use <../p/axleho10.scad>
 use <../p/axlehol8.scad>
 use <../p/axlehol9.scad>
-function ldraw_lib__u9374() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__u9374(realsolid=false) = [
 // 0 ~Electric Technic Motor Plastic Axle
 // 0 Name: u9374.dat
 // 0 Author: Chris Dee [cwdee]
@@ -33,35 +34,35 @@ function ldraw_lib__u9374() = [
 // 
 // 
 // 1 16 0 0 1 1 0 0 0 0 1 0 -1 0 axlecaph.dat
-  [1,16,0,0,1,1,0,0,0,0,1,0,-1,0, ldraw_lib__axlecaph()],
+  [1,16,0,0,1,1,0,0,0,0,1,0,-1,0, ldraw_lib__axlecaph(realsolid)],
 // 1 16 0 0 11 1 0 0 0 0 1 0 1.5 0 axlecaph2.dat
-  [1,16,0,0,11,1,0,0,0,0,1,0,1.5,0, ldraw_lib__axlecaph2()],
+  [1,16,0,0,11,1,0,0,0,0,1,0,1.5,0, ldraw_lib__axlecaph2(realsolid)],
 // 1 16 0 0 16 1 0 0 0 0 1 0 -1.5 0 axlecaph2.dat
-  [1,16,0,0,16,1,0,0,0,0,1,0,-1.5,0, ldraw_lib__axlecaph2()],
+  [1,16,0,0,16,1,0,0,0,0,1,0,-1.5,0, ldraw_lib__axlecaph2(realsolid)],
 // 
 // 1 16 0 0 16 1 0 0 0 0 1 0 3 0 axlehol8.dat
-  [1,16,0,0,16,1,0,0,0,0,1,0,3,0, ldraw_lib__axlehol8()],
+  [1,16,0,0,16,1,0,0,0,0,1,0,3,0, ldraw_lib__axlehol8(realsolid)],
 // 
 // 1 16 0 0 19 6 0 0 0 0 6 0 1 0 4-4edge.dat
-  [1,16,0,0,19,6,0,0,0,0,6,0,1,0, ldraw_lib__4_4edge()],
+  [1,16,0,0,19,6,0,0,0,0,6,0,1,0, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 0 19 1 0 0 0 0 1 0 1 0 axleho10.dat
-  [1,16,0,0,19,1,0,0,0,0,1,0,1,0, ldraw_lib__axleho10()],
+  [1,16,0,0,19,1,0,0,0,0,1,0,1,0, ldraw_lib__axleho10(realsolid)],
 // 1 16 0 0 19 1 0 0 0 0 1 0 1 0 axlehol9.dat
-  [1,16,0,0,19,1,0,0,0,0,1,0,1,0, ldraw_lib__axlehol9()],
+  [1,16,0,0,19,1,0,0,0,0,1,0,1,0, ldraw_lib__axlehol9(realsolid)],
 // 1 16 0 0 12.5 2.5 0 0 0 0 2.5 0 2 0 4-4cylo.dat
-  [1,16,0,0,12.5,2.5,0,0,0,0,2.5,0,2,0, ldraw_lib__4_4cylo()],
+  [1,16,0,0,12.5,2.5,0,0,0,0,2.5,0,2,0, ldraw_lib__4_4cylo(realsolid)],
 // 
 // 1 16 0 0 1 1 0 0 0 0 1 0 10 0 axlehol8.dat
-  [1,16,0,0,1,1,0,0,0,0,1,0,10,0, ldraw_lib__axlehol8()],
+  [1,16,0,0,1,1,0,0,0,0,1,0,10,0, ldraw_lib__axlehol8(realsolid)],
 // 
 // 1 16 0 0 19 -2 0 0 0 0 2 0 -1 0 4-4edge.dat
-  [1,16,0,0,19,-2,0,0,0,0,2,0,-1,0, ldraw_lib__4_4edge()],
+  [1,16,0,0,19,-2,0,0,0,0,2,0,-1,0, ldraw_lib__4_4edge(realsolid)],
 // 
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 19 -2 0 0 0 0 2 0 -19 0 4-4cyli.dat
-  [1,16,0,0,19,-2,0,0,0,0,2,0,-19,0, ldraw_lib__4_4cyli()],
+  [1,16,0,0,19,-2,0,0,0,0,2,0,-19,0, ldraw_lib__4_4cyli(realsolid)],
 ];
 module ldraw_lib__u9374(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__u9374(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__u9374(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__u9374(line=0.2);

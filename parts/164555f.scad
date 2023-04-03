@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__164555f() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__164555f(realsolid=false) = [
 // 0 Sticker  1.1 x  1.9 with Black Telephone on Transparent Background
 // 0 Name: 164555f.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -18,7 +19,7 @@ function ldraw_lib__164555f() = [
 // 
 // 
 // 1 16 0 -0.25 0 19 0 0 0 0.25 0 0 0 11 box5-12.dat
-  [1,16,0,-0.25,0,19,0,0,0,0.25,0,0,0,11, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,19,0,0,0,0.25,0,0,0,11, ldraw_lib__box5_12(realsolid)],
 // 0 BFC NOCLIP
   [0,"BFC","NOCLIP"],
 // 4 0 -2 -0.25 7.7 -5.2 -0.25 5.2 -1.7 -0.25 1.7 1.5 -0.25 5.1
@@ -129,5 +130,5 @@ function ldraw_lib__164555f() = [
   [3,16,-19,-0.25,11,0.9,-0.25,9.1,3,-0.25,9.5],
 ];
 module ldraw_lib__164555f(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__164555f(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__164555f(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__164555f(line=0.2);

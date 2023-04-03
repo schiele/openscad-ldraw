@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__box2_9p() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__box2_9p(realsolid=false) = [
 // 0 Box with 2 Faces with 3 Parallel Edges
 // 0 Name: box2-9p.dat
 // 0 Author: Ronald Vallenduuk [Duq]
@@ -25,5 +26,5 @@ function ldraw_lib__box2_9p() = [
   [4,16,1,1,1,-1,1,1,-1,-1,1,1,-1,1],
 ];
 module ldraw_lib__box2_9p(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__box2_9p(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__box2_9p(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__box2_9p(line=0.2);

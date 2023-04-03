@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <1-4cyli.scad>
 use <1-4edge.scad>
-function ldraw_lib__zstud() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__zstud(realsolid=false) = [
 // 0 Znap Stud
 // 0 Name: zstud.dat
 // 0 Author: Tore Eriksson [Tore_Eriksson]
@@ -41,29 +42,29 @@ function ldraw_lib__zstud() = [
 // 4 16 -4 0 -3 -4 -3.5 -3 -4 -3.5 3 -4 0 3
   [4,16,-4,0,-3,-4,-3.5,-3,-4,-3.5,3,-4,0,3],
 // 1 16 3 0 3 1 0 0 0 1 0 0 0 1 1-4edge.dat
-  [1,16,3,0,3,1,0,0,0,1,0,0,0,1, ldraw_lib__1_4edge()],
+  [1,16,3,0,3,1,0,0,0,1,0,0,0,1, ldraw_lib__1_4edge(realsolid)],
 // 1 16 -3 0 3 -1 0 0 0 1 0 0 0 1 1-4edge.dat
-  [1,16,-3,0,3,-1,0,0,0,1,0,0,0,1, ldraw_lib__1_4edge()],
+  [1,16,-3,0,3,-1,0,0,0,1,0,0,0,1, ldraw_lib__1_4edge(realsolid)],
 // 1 16 3 0 -3 1 0 0 0 1 0 0 0 -1 1-4edge.dat
-  [1,16,3,0,-3,1,0,0,0,1,0,0,0,-1, ldraw_lib__1_4edge()],
+  [1,16,3,0,-3,1,0,0,0,1,0,0,0,-1, ldraw_lib__1_4edge(realsolid)],
 // 1 16 -3 0 -3 -1 0 0 0 1 0 0 0 -1 1-4edge.dat
-  [1,16,-3,0,-3,-1,0,0,0,1,0,0,0,-1, ldraw_lib__1_4edge()],
+  [1,16,-3,0,-3,-1,0,0,0,1,0,0,0,-1, ldraw_lib__1_4edge(realsolid)],
 // 1 16 3 -3.5 3 1 0 0 0 1 0 0 0 1 1-4edge.dat
-  [1,16,3,-3.5,3,1,0,0,0,1,0,0,0,1, ldraw_lib__1_4edge()],
+  [1,16,3,-3.5,3,1,0,0,0,1,0,0,0,1, ldraw_lib__1_4edge(realsolid)],
 // 1 16 3 0 3 1 0 0 0 -3.5 0 0 0 1 1-4cyli.dat
-  [1,16,3,0,3,1,0,0,0,-3.5,0,0,0,1, ldraw_lib__1_4cyli()],
+  [1,16,3,0,3,1,0,0,0,-3.5,0,0,0,1, ldraw_lib__1_4cyli(realsolid)],
 // 1 16 -3 -3.5 3 -1 0 0 0 1 0 0 0 1 1-4edge.dat
-  [1,16,-3,-3.5,3,-1,0,0,0,1,0,0,0,1, ldraw_lib__1_4edge()],
+  [1,16,-3,-3.5,3,-1,0,0,0,1,0,0,0,1, ldraw_lib__1_4edge(realsolid)],
 // 1 16 -3 0 3 -1 0 0 0 -3.5 0 0 0 1 1-4cyli.dat
-  [1,16,-3,0,3,-1,0,0,0,-3.5,0,0,0,1, ldraw_lib__1_4cyli()],
+  [1,16,-3,0,3,-1,0,0,0,-3.5,0,0,0,1, ldraw_lib__1_4cyli(realsolid)],
 // 1 16 3 -3.5 -3 1 0 0 0 1 0 0 0 -1 1-4edge.dat
-  [1,16,3,-3.5,-3,1,0,0,0,1,0,0,0,-1, ldraw_lib__1_4edge()],
+  [1,16,3,-3.5,-3,1,0,0,0,1,0,0,0,-1, ldraw_lib__1_4edge(realsolid)],
 // 1 16 3 0 -3 1 0 0 0 -3.5 0 0 0 -1 1-4cyli.dat
-  [1,16,3,0,-3,1,0,0,0,-3.5,0,0,0,-1, ldraw_lib__1_4cyli()],
+  [1,16,3,0,-3,1,0,0,0,-3.5,0,0,0,-1, ldraw_lib__1_4cyli(realsolid)],
 // 1 16 -3 -3.5 -3 -1 0 0 0 1 0 0 0 -1 1-4edge.dat
-  [1,16,-3,-3.5,-3,-1,0,0,0,1,0,0,0,-1, ldraw_lib__1_4edge()],
+  [1,16,-3,-3.5,-3,-1,0,0,0,1,0,0,0,-1, ldraw_lib__1_4edge(realsolid)],
 // 1 16 -3 0 -3 -1 0 0 0 -3.5 0 0 0 -1 1-4cyli.dat
-  [1,16,-3,0,-3,-1,0,0,0,-3.5,0,0,0,-1, ldraw_lib__1_4cyli()],
+  [1,16,-3,0,-3,-1,0,0,0,-3.5,0,0,0,-1, ldraw_lib__1_4cyli(realsolid)],
 // 2 24 -3 -3.5 -6 3 -3.5 -6
   [2,24,-3,-3.5,-6,3,-3.5,-6],
 // 2 24 3 -3.5 -6 6 -3.5 -3
@@ -299,5 +300,5 @@ function ldraw_lib__zstud() = [
 // 0
 ];
 module ldraw_lib__zstud(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__zstud(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__zstud(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__zstud(line=0.2);

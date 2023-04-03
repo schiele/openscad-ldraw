@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/stud4.scad>
 use <../../p/stug-2x2.scad>
-function ldraw_lib__s__53933s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__53933s01(realsolid=false) = [
 // 0 ~Rock  4 x  4 x  1.333 Top Dual Mould Upper Section
 // 0 Name: s\53933s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -18,9 +19,9 @@ function ldraw_lib__s__53933s01() = [
 // 
 // 
 // 1 16 0 4 0 1 0 0 0 -1 0 0 0 -1 stud4.dat
-  [1,16,0,4,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__stud4()],
+  [1,16,0,4,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__stud4(realsolid)],
 // 1 16 0 0 0 0 0 1 0 1 0 -1 0 0 stug-2x2.dat
-  [1,16,0,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__stug_2x2()],
+  [1,16,0,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__stug_2x2(realsolid)],
 // 4 16 6.69 3.75 -15.3 -12.76 3.75 0.53 -4.34 3.75 8.95 19.32 3.75 -2.66
   [4,16,6.69,3.75,-15.3,-12.76,3.75,0.53,-4.34,3.75,8.95,19.32,3.75,-2.66],
 // 4 16 6.69 3.75 -15.3 -7 3.75 -17.51 -12.34 3.75 -15.36 -12.76 3.75 0.53
@@ -1071,5 +1072,5 @@ function ldraw_lib__s__53933s01() = [
   [5,24,33.57,17.5,-5.66,31.18,11.96,-15.85,37.26,16.77,-7.79,27.85,12.9,-13.36],
 ];
 module ldraw_lib__s__53933s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__53933s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__53933s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__53933s01(line=0.2);

@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__54873s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__54873s01(realsolid=false) = [
 // 0 ~Minifig Head Spongebob Starfish without Front Surface
 // 0 Name: s\54873s01.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -3030,5 +3031,5 @@ function ldraw_lib__s__54873s01() = [
   [5,24,11.803,-7.077,-3.232,12.852,-0.883,-3.244,13.04,-0.883,2.857,10.148,-7.097,-6.513],
 ];
 module ldraw_lib__s__54873s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__54873s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__54873s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__54873s01(line=0.2);

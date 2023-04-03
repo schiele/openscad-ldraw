@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <u9372c01.scad>
 use <u9374c01.scad>
-function ldraw_lib__6216m() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6216m(realsolid=false) = [
 // 0 Electric Technic Motor  4.5V with Centre Pin Hole
 // 0 Name: 6216m.dat
 // 0 Author: Chris Dee [cwdee]
@@ -23,10 +24,10 @@ function ldraw_lib__6216m() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 u9372c01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9372c01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9372c01(realsolid)],
 // 1 16 0 26 -59 1 0 0 0 1 0 0 0 1 u9374c01.dat
-  [1,16,0,26,-59,1,0,0,0,1,0,0,0,1, ldraw_lib__u9374c01()],
+  [1,16,0,26,-59,1,0,0,0,1,0,0,0,1, ldraw_lib__u9374c01(realsolid)],
 ];
 module ldraw_lib__6216m(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6216m(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6216m(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6216m(line=0.2);

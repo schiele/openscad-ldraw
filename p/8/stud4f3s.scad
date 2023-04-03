@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__8__stud4f3s() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__8__stud4f3s(realsolid=false) = [
 // 0 Stud Tube Open with  3 Fillets Standard (Fast-Draw)
 // 0 Name: 8\stud4f3s.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -205,5 +206,5 @@ function ldraw_lib__8__stud4f3s() = [
   [4,16,7.357,-4,1.5,7.357,-4,-1.5,8,-4,-1.5,8,-4,1.5],
 ];
 module ldraw_lib__8__stud4f3s(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__8__stud4f3s(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__8__stud4f3s(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__8__stud4f3s(line=0.2);

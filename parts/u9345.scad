@@ -3,7 +3,8 @@ use <../p/4-4cylc.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4ring8.scad>
 use <../p/axle.scad>
-function ldraw_lib__u9345() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__u9345(realsolid=false) = [
 // 0 Electric Technic Mini-Motor  9V - Axle
 // 0 Name: u9345.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -20,20 +21,20 @@ function ldraw_lib__u9345() = [
 // 0 // axle
 // 
 // 1 16 0 0 0 1 0 0 0 0 1 0 -20 0 axle.dat
-  [1,16,0,0,0,1,0,0,0,0,1,0,-20,0, ldraw_lib__axle()],
+  [1,16,0,0,0,1,0,0,0,0,1,0,-20,0, ldraw_lib__axle(realsolid)],
 // 1 16 0 0 4 8 0 0 0 0 -8 0 26 0 4-4cylc.dat
-  [1,16,0,0,4,8,0,0,0,0,-8,0,26,0, ldraw_lib__4_4cylc()],
+  [1,16,0,0,4,8,0,0,0,0,-8,0,26,0, ldraw_lib__4_4cylc(realsolid)],
 // 1 16 0 0 30 20 0 0 0 0 -20 0 10 0 4-4cylc.dat
-  [1,16,0,0,30,20,0,0,0,0,-20,0,10,0, ldraw_lib__4_4cylc()],
+  [1,16,0,0,30,20,0,0,0,0,-20,0,10,0, ldraw_lib__4_4cylc(realsolid)],
 // 1 16 0 0 40 20 0 0 0 0 -20 0 -1 0 4-4disc.dat
-  [1,16,0,0,40,20,0,0,0,0,-20,0,-1,0, ldraw_lib__4_4disc()],
+  [1,16,0,0,40,20,0,0,0,0,-20,0,-1,0, ldraw_lib__4_4disc(realsolid)],
 // 
 // 0 // bearing
 // 1 16 0 0 0 9 0 0 0 0 -9 0 4 0 4-4cylc.dat
-  [1,16,0,0,0,9,0,0,0,0,-9,0,4,0, ldraw_lib__4_4cylc()],
+  [1,16,0,0,0,9,0,0,0,0,-9,0,4,0, ldraw_lib__4_4cylc(realsolid)],
 // 1 16 0 0 4 1 0 0 0 0 -1 0 -1 0 4-4ring8.dat
-  [1,16,0,0,4,1,0,0,0,0,-1,0,-1,0, ldraw_lib__4_4ring8()],
+  [1,16,0,0,4,1,0,0,0,0,-1,0,-1,0, ldraw_lib__4_4ring8(realsolid)],
 ];
 module ldraw_lib__u9345(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__u9345(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__u9345(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__u9345(line=0.2);

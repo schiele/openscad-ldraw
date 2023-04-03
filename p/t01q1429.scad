@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__t01q1429() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__t01q1429(realsolid=false) = [
 // 0 Torus Tube  1 x 0.1429 x 1.0
 // 0 Name: t01q1429.dat
 // 0 Author: Max Martin Richter [MMR1988]
@@ -1560,5 +1561,5 @@ function ldraw_lib__t01q1429() = [
 // 0 // Build by Primitive Generator 2
 ];
 module ldraw_lib__t01q1429(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__t01q1429(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__t01q1429(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__t01q1429(line=0.2);

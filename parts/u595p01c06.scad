@@ -4,7 +4,8 @@ use <u9100.scad>
 use <u9101.scad>
 use <u9102.scad>
 use <u9103.scad>
-function ldraw_lib__u595p01c06() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__u595p01c06(realsolid=false) = [
 // 0 _Figure Fabuland Monkey  1 with Body Green/Yellow/Black
 // 0 Name: u595p01c06.dat
 // 0 Author: Steffen [Steffen]
@@ -23,20 +24,20 @@ function ldraw_lib__u595p01c06() = [
 // 0 // needs work: head color just has been chosen by visual appearance, unsure if correct
 // 
 // 1 462 0 -67 4 1 0 0 0 1 0 0 0 1 u595p01c01.dat
-  [1,462,0,-67,4,1,0,0,0,1,0,0,0,1, ldraw_lib__u595p01c01()],
+  [1,462,0,-67,4,1,0,0,0,1,0,0,0,1, ldraw_lib__u595p01c01(realsolid)],
 // 1 2 0 -37 4 1 0 0 0 1 0 0 0 1 u9102.dat
-  [1,2,0,-37,4,1,0,0,0,1,0,0,0,1, ldraw_lib__u9102()],
+  [1,2,0,-37,4,1,0,0,0,1,0,0,0,1, ldraw_lib__u9102(realsolid)],
 // 1 14 23 -63 4 1 0 0 0 1 0 0 0 1 u9101.dat
-  [1,14,23,-63,4,1,0,0,0,1,0,0,0,1, ldraw_lib__u9101()],
+  [1,14,23,-63,4,1,0,0,0,1,0,0,0,1, ldraw_lib__u9101(realsolid)],
 // 1 14 -23 -63 4 -1 0 0 0 1 0 0 0 -1 u9101.dat
-  [1,14,-23,-63,4,-1,0,0,0,1,0,0,0,-1, ldraw_lib__u9101()],
+  [1,14,-23,-63,4,-1,0,0,0,1,0,0,0,-1, ldraw_lib__u9101(realsolid)],
 // 1 0 -10 -37 4 1 0 0 0 1 0 0 0 1 u9100.dat
-  [1,0,-10,-37,4,1,0,0,0,1,0,0,0,1, ldraw_lib__u9100()],
+  [1,0,-10,-37,4,1,0,0,0,1,0,0,0,1, ldraw_lib__u9100(realsolid)],
 // 1 0 10 -37 4 1 0 0 0 1 0 0 0 1 u9100.dat
-  [1,0,10,-37,4,1,0,0,0,1,0,0,0,1, ldraw_lib__u9100()],
+  [1,0,10,-37,4,1,0,0,0,1,0,0,0,1, ldraw_lib__u9100(realsolid)],
 // 1 4 0 -37 4 1 0 0 0 1 0 0 0 1 u9103.dat
-  [1,4,0,-37,4,1,0,0,0,1,0,0,0,1, ldraw_lib__u9103()],
+  [1,4,0,-37,4,1,0,0,0,1,0,0,0,1, ldraw_lib__u9103(realsolid)],
 ];
 module ldraw_lib__u595p01c06(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__u595p01c06(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__u595p01c06(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__u595p01c06(line=0.2);

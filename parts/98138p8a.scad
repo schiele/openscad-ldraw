@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/4-4ering.scad>
 use <s/98138s01.scad>
-function ldraw_lib__98138p8a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__98138p8a(realsolid=false) = [
 // 0 Tile  1 x  1 Round with Dark Brown and Medium Nougat Pastry Pattern
 // 0 Name: 98138p8a.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -20,9 +21,9 @@ function ldraw_lib__98138p8a() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\98138s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01(realsolid)],
 // 1 16 0 0 0 9 0 0 0 1 0 0 0 9 4-4ering.dat
-  [1,16,0,0,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4ering()],
+  [1,16,0,0,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4ering(realsolid)],
 // 4 308 -1.8 0 1.3 -2.7 0 1.3 -2.3 0 0.3 -1.5 0 1
   [4,308,-1.8,0,1.3,-2.7,0,1.3,-2.3,0,0.3,-1.5,0,1],
 // 4 308 -1.5 0 1 -2.3 0 0.3 -2 0 0.2 -1.7 0 0.2
@@ -1295,5 +1296,5 @@ function ldraw_lib__98138p8a() = [
   [4,16,0.89,0,6.95,0.44,0,6.72,0.95,0,6.83,1.31,0,7.04],
 ];
 module ldraw_lib__98138p8a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__98138p8a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__98138p8a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__98138p8a(line=0.2);

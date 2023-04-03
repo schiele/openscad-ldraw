@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__13665s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__13665s01(realsolid=false) = [
 // 0 ~Animal Bird Crow - Half
 // 0 Name: s\13665s01.dat
 // 0 Author: Stan Isachenko [angmarec]
@@ -1916,5 +1917,5 @@ function ldraw_lib__s__13665s01() = [
   [5,24,-15.563,-14.949,-4.357,-12.578,-17.824,-6.712,-13.118,-16.607,-3.079,-14.731,-15.956,-6.887],
 ];
 module ldraw_lib__s__13665s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__13665s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__13665s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__13665s01(line=0.2);

@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4ering.scad>
 use <s/98138pn0s01.scad>
 use <s/98138s01.scad>
-function ldraw_lib__98138pn5() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__98138pn5(realsolid=false) = [
 // 0 Tile  1 x  1 Round with Ninjago Trapped Lloyd Patternn
 // 0 Name: 98138pn5.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -19,11 +20,11 @@ function ldraw_lib__98138pn5() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\98138s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01(realsolid)],
 // 1 16 0 0 0 9 0 0 0 1 0 0 0 9 4-4ering.dat
-  [1,16,0,0,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4ering()],
+  [1,16,0,0,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4ering(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\98138pn0s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138pn0s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138pn0s01(realsolid)],
 // 4 0 -5.31 0 2.51 -3.09 0 2.49 -0.02 0 2.99 -8.14 0 2.99
   [4,0,-5.31,0,2.51,-3.09,0,2.49,-0.02,0,2.99,-8.14,0,2.99],
 // 4 0 -6.96 0 1.46 -6.49 0 2.52 -8.53 0 1.53 -8.66 0 0.03
@@ -350,5 +351,5 @@ function ldraw_lib__98138pn5() = [
   [3,14,-3.09,0,2.49,-2.829,0,1.861,-2.5402,0,1.6929],
 ];
 module ldraw_lib__98138pn5(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__98138pn5(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__98138pn5(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__98138pn5(line=0.2);

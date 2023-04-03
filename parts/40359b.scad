@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/40359bs01.scad>
-function ldraw_lib__40359b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__40359b(realsolid=false) = [
 // 0 ~Sprue for 2 Minifig Keys
 // 0 Name: 40359b.dat
 // 0 Author: Andy Westrate [westrate]
@@ -21,15 +22,15 @@ function ldraw_lib__40359b() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\40359bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__40359bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__40359bs01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\40359bs01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__40359bs01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__40359bs01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 -1 s\40359bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__40359bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__40359bs01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 -1 s\40359bs01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__40359bs01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__40359bs01(realsolid)],
 // 0
 ];
 module ldraw_lib__40359b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__40359b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__40359b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__40359b(line=0.2);

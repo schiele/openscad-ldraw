@@ -5,7 +5,8 @@ use <../p/box2-5.scad>
 use <../p/box3u4a.scad>
 use <../p/studel.scad>
 use <../p/tri4.scad>
-function ldraw_lib__6036() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6036(realsolid=false) = [
 // 0 ~Electric Light & Sound Brick  1 x  2 with Single Side Light - Top
 // 0 Name: 6036.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -20,13 +21,13 @@ function ldraw_lib__6036() = [
 // 
 // 
 // 1 16 -19 13.5 -4 1 0 1 3.5 0 0 0 8 0 tri4.dat
-  [1,16,-19,13.5,-4,1,0,1,3.5,0,0,0,8,0, ldraw_lib__tri4()],
+  [1,16,-19,13.5,-4,1,0,1,3.5,0,0,0,8,0, ldraw_lib__tri4(realsolid)],
 // 1 16 19 13.5 -4 -1 0 -1 3.5 0 0 0 8 0 tri4.dat
-  [1,16,19,13.5,-4,-1,0,-1,3.5,0,0,0,8,0, ldraw_lib__tri4()],
+  [1,16,19,13.5,-4,-1,0,-1,3.5,0,0,0,8,0, ldraw_lib__tri4(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 10 -10 -6 0 0 0 0 -6 0 2 0 2-4cylo.dat
-  [1,16,0,10,-10,-6,0,0,0,0,-6,0,2,0, ldraw_lib__2_4cylo()],
+  [1,16,0,10,-10,-6,0,0,0,0,-6,0,2,0, ldraw_lib__2_4cylo(realsolid)],
 // 2 24 -6 10 -10 -6 10 -8
   [2,24,-6,10,-10,-6,10,-8],
 // 2 24 6 10 -10 6 10 -8
@@ -38,7 +39,7 @@ function ldraw_lib__6036() = [
 // 2 24 -20 0 -10 20 0 -10
   [2,24,-20,0,-10,20,0,-10],
 // 1 16 0 10 -10 -6 0 0 0 0 -6 0 1 0 2-4ndis.dat
-  [1,16,0,10,-10,-6,0,0,0,0,-6,0,1,0, ldraw_lib__2_4ndis()],
+  [1,16,0,10,-10,-6,0,0,0,0,-6,0,1,0, ldraw_lib__2_4ndis(realsolid)],
 // 4 16 6 4 -10 6 10 -10 20 10 -10 20 0 -10
   [4,16,6,4,-10,6,10,-10,20,10,-10,20,0,-10],
 // 4 16 -20 10 -10 -6 10 -10 -6 4 -10 -20 0 -10
@@ -46,13 +47,13 @@ function ldraw_lib__6036() = [
 // 4 16 -20 0 -10 -6 4 -10 6 4 -10 20 0 -10
   [4,16,-20,0,-10,-6,4,-10,6,4,-10,20,0,-10],
 // 1 16 11.75 5 0 0 8.25 0 -5 0 0 0 0 10 box2-5.dat
-  [1,16,11.75,5,0,0,8.25,0,-5,0,0,0,0,10, ldraw_lib__box2_5()],
+  [1,16,11.75,5,0,0,8.25,0,-5,0,0,0,0,10, ldraw_lib__box2_5(realsolid)],
 // 1 16 -11.75 5 0 0 -8.25 0 5 0 0 0 0 10 box2-5.dat
-  [1,16,-11.75,5,0,0,-8.25,0,5,0,0,0,0,10, ldraw_lib__box2_5()],
+  [1,16,-11.75,5,0,0,-8.25,0,5,0,0,0,0,10, ldraw_lib__box2_5(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 5 10 0 0 -3.5 5 0 0 0 -4 0 box3u4a.dat
-  [1,16,0,5,10,0,0,-3.5,5,0,0,0,-4,0, ldraw_lib__box3u4a()],
+  [1,16,0,5,10,0,0,-3.5,5,0,0,0,-4,0, ldraw_lib__box3u4a(realsolid)],
 // 4 16 20 0 10 3.5 0 10 3.5 0 6 20 0 -10
   [4,16,20,0,10,3.5,0,10,3.5,0,6,20,0,-10],
 // 4 16 3.5 0 6 -3.5 0 6 -20 0 -10 20 0 -10
@@ -60,10 +61,10 @@ function ldraw_lib__6036() = [
 // 4 16 -20 0 -10 -3.5 0 6 -3.5 0 10 -20 0 10
   [4,16,-20,0,-10,-3.5,0,6,-3.5,0,10,-20,0,10],
 // 1 16 10 0 0 0 0 -1 0 1 0 1 0 0 studel.dat
-  [1,16,10,0,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__studel()],
+  [1,16,10,0,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__studel(realsolid)],
 // 1 16 -10 0 0 0 0 1 0 1 0 -1 0 0 studel.dat
-  [1,16,-10,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__studel()],
+  [1,16,-10,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__studel(realsolid)],
 ];
 module ldraw_lib__6036(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6036(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6036(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6036(line=0.2);

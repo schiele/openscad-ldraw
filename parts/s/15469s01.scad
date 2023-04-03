@@ -3,7 +3,8 @@ use <../../p/1-8chrd.scad>
 use <../../p/1-8cyli.scad>
 use <../../p/3-8edge.scad>
 use <../../p/rect.scad>
-function ldraw_lib__s__15469s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__15469s01(realsolid=false) = [
 // 0 ~Brick  2 x  2 Round with 4 Petals Base and Axle Hole 1/8
 // 0 Name: s\15469s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -20,13 +21,13 @@ function ldraw_lib__s__15469s01() = [
 // 
 // 
 // 1 16 0 0 0 0 0 20 0 1 0 20 0 0 1-8chrd.dat
-  [1,16,0,0,0,0,0,20,0,1,0,20,0,0, ldraw_lib__1_8chrd()],
+  [1,16,0,0,0,0,0,20,0,1,0,20,0,0, ldraw_lib__1_8chrd(realsolid)],
 // 1 16 10 0 10 4.24264 0 -4.24264 0 1 0 4.24264 0 4.24264 1-8cyli.dat
-  [1,16,10,0,10,4.24264,0,-4.24264,0,1,0,4.24264,0,4.24264, ldraw_lib__1_8cyli()],
+  [1,16,10,0,10,4.24264,0,-4.24264,0,1,0,4.24264,0,4.24264, ldraw_lib__1_8cyli(realsolid)],
 // 1 16 10 0 10 0 0 -6 0 1 0 6 0 0 3-8edge.dat
-  [1,16,10,0,10,0,0,-6,0,1,0,6,0,0, ldraw_lib__3_8edge()],
+  [1,16,10,0,10,0,0,-6,0,1,0,6,0,0, ldraw_lib__3_8edge(realsolid)],
 // 1 16 1.25 6.25 11.8785 0 -1 0 -2.5 0 0 0.001 0 -4.1 rect.dat
-  [1,16,1.25,6.25,11.8785,0,-1,0,-2.5,0,0,0.001,0,-4.1, ldraw_lib__rect()],
+  [1,16,1.25,6.25,11.8785,0,-1,0,-2.5,0,0,0.001,0,-4.1, ldraw_lib__rect(realsolid)],
 // 4 16 1.25 8.75 15.978 1.25 8.75 7.778 0 8.75 8.125 0 8.75 16.25
   [4,16,1.25,8.75,15.978,1.25,8.75,7.778,0,8.75,8.125,0,8.75,16.25],
 // 4 16 12.099 8.125 15.887 13.721 8.125 15.021 11.49 8.125 11.49 9.514 8.125 16.231
@@ -375,5 +376,5 @@ function ldraw_lib__s__15469s01() = [
   [5,24,7.777,9.444,22.226,7.832,3.2,18.908,0,3.2,20.465,14.729,8.575,17.643],
 ];
 module ldraw_lib__s__15469s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__15469s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__15469s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__15469s01(line=0.2);

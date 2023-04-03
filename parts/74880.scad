@@ -2,7 +2,8 @@ use <../lib.scad>
 use <6034.scad>
 use <6035a.scad>
 use <6036.scad>
-function ldraw_lib__74880() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__74880(realsolid=false) = [
 // 0 Electric Light & Sound Brick  1 x  2 with Single Side Light
 // 0 Name: 74880.dat
 // 0 Author: Thomas Burger [grapeape]
@@ -24,12 +25,12 @@ function ldraw_lib__74880() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 6034.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__6034()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__6034(realsolid)],
 // 1 47 0 0 0 1 0 0 0 1 0 0 0 1 6035a.dat
-  [1,47,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__6035a()],
+  [1,47,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__6035a(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 6036.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__6036()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__6036(realsolid)],
 ];
 module ldraw_lib__74880(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__74880(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__74880(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__74880(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <axl2hole.scad>
-function ldraw_lib__axleho11() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__axleho11(realsolid=false) = [
 // 0 ~Moved to axl2hole
 // 0 Name: axleho11.dat
 // 0 Author: [PTadmin]
@@ -17,9 +18,9 @@ function ldraw_lib__axleho11() = [
 // 0 // Technic Axle Hole Reduced
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 axl2hole.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__axl2hole()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__axl2hole(realsolid)],
 // 0
 ];
 module ldraw_lib__axleho11(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__axleho11(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__axleho11(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__axleho11(line=0.2);

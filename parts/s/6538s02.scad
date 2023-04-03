@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__6538s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__6538s02(realsolid=false) = [
 // 0 ~Technic Axle Joiner Ridge Segment
 // 0 Name: s\6538s02.dat
 // 0 Author: Mark Kennedy [mkennedy]
@@ -50,5 +51,5 @@ function ldraw_lib__s__6538s02() = [
 // 0
 ];
 module ldraw_lib__s__6538s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__6538s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__6538s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__6538s02(line=0.2);

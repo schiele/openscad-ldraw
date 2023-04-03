@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3846s01.scad>
-function ldraw_lib__3846p4t() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3846p4t(realsolid=false) = [
 // 0 Minifig Shield Triangular with Red/Peach Quarters Pattern
 // 0 Name: 3846p4t.dat
 // 0 Author: Andy Westrate [westrate]
@@ -26,7 +27,7 @@ function ldraw_lib__3846p4t() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3846s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3846s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3846s01(realsolid)],
 // 
 // 4 4 0 -4 -10 0 -14 -10 -20 -14 -10 -20 -4 -10
   [4,4,0,-4,-10,0,-14,-10,-20,-14,-10,-20,-4,-10],
@@ -47,5 +48,5 @@ function ldraw_lib__3846p4t() = [
   [4,92,-19.1,3,-10,-18.72,6.03,-10,-14.93,15.68,-10,0,3,-10],
 ];
 module ldraw_lib__3846p4t(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3846p4t(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3846p4t(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3846p4t(line=0.2);

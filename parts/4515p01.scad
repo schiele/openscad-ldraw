@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/4515s01.scad>
-function ldraw_lib__4515p01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4515p01(realsolid=false) = [
 // 0 Slope Brick 10  6 x  8 with Shingled Roof Pattern
 // 0 Name: 4515p01.dat
 // 0 Author: Matthew Morrison [cuddlyogre]
@@ -19,7 +20,7 @@ function ldraw_lib__4515p01() = [
 // 0 // Subpart
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4515s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4515s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4515s01(realsolid)],
 // 
 // 0 // Shingled Roof Pattern
 // 
@@ -327,5 +328,5 @@ function ldraw_lib__4515p01() = [
   [3,16,13.9241,3.993,34.7812,14.5979,3.6845,36.7294,-11.8404,3.6845,36.7294],
 ];
 module ldraw_lib__4515p01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4515p01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4515p01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4515p01(line=0.2);

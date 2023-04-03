@@ -4,7 +4,8 @@ use <48/1-4edge.scad>
 use <48/1-4ndis.scad>
 use <48/1-4ring9.scad>
 use <48/1-8sphe.scad>
-function ldraw_lib__primotop() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__primotop(realsolid=false) = [
 // 0 Duplo Primo Top Stud
 // 0 Name: primotop.dat
 // 0 Author: Tony Hafner [hafhead]
@@ -23,87 +24,87 @@ function ldraw_lib__primotop() = [
 // 
 // 
 // 1 16 0 0 0 40 0 0 0 1 0 0 0 40 48\1-4ndis.dat
-  [1,16,0,0,0,40,0,0,0,1,0,0,0,40, ldraw_lib__48__1_4ndis()],
+  [1,16,0,0,0,40,0,0,0,1,0,0,0,40, ldraw_lib__48__1_4ndis(realsolid)],
 // 1 16 0 0 0 -40 0 0 0 1 0 0 0 -40 48\1-4ndis.dat
-  [1,16,0,0,0,-40,0,0,0,1,0,0,0,-40, ldraw_lib__48__1_4ndis()],
+  [1,16,0,0,0,-40,0,0,0,1,0,0,0,-40, ldraw_lib__48__1_4ndis(realsolid)],
 // 1 16 0 0 0 0 0 40 0 1 0 -40 0 0 48\1-4ndis.dat
-  [1,16,0,0,0,0,0,40,0,1,0,-40,0,0, ldraw_lib__48__1_4ndis()],
+  [1,16,0,0,0,0,0,40,0,1,0,-40,0,0, ldraw_lib__48__1_4ndis(realsolid)],
 // 1 16 0 0 0 0 0 -40 0 1 0 40 0 0 48\1-4ndis.dat
-  [1,16,0,0,0,0,0,-40,0,1,0,40,0,0, ldraw_lib__48__1_4ndis()],
+  [1,16,0,0,0,0,0,-40,0,1,0,40,0,0, ldraw_lib__48__1_4ndis(realsolid)],
 // 1 16 0 0 0 40 0 0 0 1 0 0 0 40 48\1-4edge.dat
-  [1,16,0,0,0,40,0,0,0,1,0,0,0,40, ldraw_lib__48__1_4edge()],
+  [1,16,0,0,0,40,0,0,0,1,0,0,0,40, ldraw_lib__48__1_4edge(realsolid)],
 // 1 16 0 0 0 -40 0 0 0 1 0 0 0 -40 48\1-4edge.dat
-  [1,16,0,0,0,-40,0,0,0,1,0,0,0,-40, ldraw_lib__48__1_4edge()],
+  [1,16,0,0,0,-40,0,0,0,1,0,0,0,-40, ldraw_lib__48__1_4edge(realsolid)],
 // 1 16 0 0 0 0 0 40 0 1 0 -40 0 0 48\1-4edge.dat
-  [1,16,0,0,0,0,0,40,0,1,0,-40,0,0, ldraw_lib__48__1_4edge()],
+  [1,16,0,0,0,0,0,40,0,1,0,-40,0,0, ldraw_lib__48__1_4edge(realsolid)],
 // 1 16 0 0 0 0 0 -40 0 1 0 40 0 0 48\1-4edge.dat
-  [1,16,0,0,0,0,0,-40,0,1,0,40,0,0, ldraw_lib__48__1_4edge()],
+  [1,16,0,0,0,0,0,-40,0,1,0,40,0,0, ldraw_lib__48__1_4edge(realsolid)],
 // 1 16 0 0 0 40 0 0 0 -17 0 0 0 40 48\1-4cyli.dat
-  [1,16,0,0,0,40,0,0,0,-17,0,0,0,40, ldraw_lib__48__1_4cyli()],
+  [1,16,0,0,0,40,0,0,0,-17,0,0,0,40, ldraw_lib__48__1_4cyli(realsolid)],
 // 1 16 0 0 0 -40 0 0 0 -17 0 0 0 -40 48\1-4cyli.dat
-  [1,16,0,0,0,-40,0,0,0,-17,0,0,0,-40, ldraw_lib__48__1_4cyli()],
+  [1,16,0,0,0,-40,0,0,0,-17,0,0,0,-40, ldraw_lib__48__1_4cyli(realsolid)],
 // 1 16 0 0 0 0 0 40 0 -17 0 -40 0 0 48\1-4cyli.dat
-  [1,16,0,0,0,0,0,40,0,-17,0,-40,0,0, ldraw_lib__48__1_4cyli()],
+  [1,16,0,0,0,0,0,40,0,-17,0,-40,0,0, ldraw_lib__48__1_4cyli(realsolid)],
 // 1 16 0 0 0 0 0 -40 0 -17 0 40 0 0 48\1-4cyli.dat
-  [1,16,0,0,0,0,0,-40,0,-17,0,40,0,0, ldraw_lib__48__1_4cyli()],
+  [1,16,0,0,0,0,0,-40,0,-17,0,40,0,0, ldraw_lib__48__1_4cyli(realsolid)],
 // 1 16 0 -17 0 40 0 0 0 -40 0 0 0 40 48\1-8sphe.dat
-  [1,16,0,-17,0,40,0,0,0,-40,0,0,0,40, ldraw_lib__48__1_8sphe()],
+  [1,16,0,-17,0,40,0,0,0,-40,0,0,0,40, ldraw_lib__48__1_8sphe(realsolid)],
 // 1 16 0 -17 0 -40 0 0 0 -40 0 0 0 -40 48\1-8sphe.dat
-  [1,16,0,-17,0,-40,0,0,0,-40,0,0,0,-40, ldraw_lib__48__1_8sphe()],
+  [1,16,0,-17,0,-40,0,0,0,-40,0,0,0,-40, ldraw_lib__48__1_8sphe(realsolid)],
 // 1 16 0 -17 0 0 0 40 0 -40 0 -40 0 0 48\1-8sphe.dat
-  [1,16,0,-17,0,0,0,40,0,-40,0,-40,0,0, ldraw_lib__48__1_8sphe()],
+  [1,16,0,-17,0,0,0,40,0,-40,0,-40,0,0, ldraw_lib__48__1_8sphe(realsolid)],
 // 1 16 0 -17 0 0 0 -40 0 -40 0 40 0 0 48\1-8sphe.dat
-  [1,16,0,-17,0,0,0,-40,0,-40,0,40,0,0, ldraw_lib__48__1_8sphe()],
+  [1,16,0,-17,0,0,0,-40,0,-40,0,40,0,0, ldraw_lib__48__1_8sphe(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -17 0 36 0 0 0 -36 0 0 0 36 48\1-8sphe.dat
-  [1,16,0,-17,0,36,0,0,0,-36,0,0,0,36, ldraw_lib__48__1_8sphe()],
+  [1,16,0,-17,0,36,0,0,0,-36,0,0,0,36, ldraw_lib__48__1_8sphe(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -17 0 -36 0 0 0 -36 0 0 0 -36 48\1-8sphe.dat
-  [1,16,0,-17,0,-36,0,0,0,-36,0,0,0,-36, ldraw_lib__48__1_8sphe()],
+  [1,16,0,-17,0,-36,0,0,0,-36,0,0,0,-36, ldraw_lib__48__1_8sphe(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -17 0 0 0 36 0 -36 0 -36 0 0 48\1-8sphe.dat
-  [1,16,0,-17,0,0,0,36,0,-36,0,-36,0,0, ldraw_lib__48__1_8sphe()],
+  [1,16,0,-17,0,0,0,36,0,-36,0,-36,0,0, ldraw_lib__48__1_8sphe(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -17 0 0 0 -36 0 -36 0 36 0 0 48\1-8sphe.dat
-  [1,16,0,-17,0,0,0,-36,0,-36,0,36,0,0, ldraw_lib__48__1_8sphe()],
+  [1,16,0,-17,0,0,0,-36,0,-36,0,36,0,0, ldraw_lib__48__1_8sphe(realsolid)],
 // 0 stud base inside
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 4 0 36 0 0 0 -21 0 0 0 36 48\1-4cyli.dat
-  [1,16,0,4,0,36,0,0,0,-21,0,0,0,36, ldraw_lib__48__1_4cyli()],
+  [1,16,0,4,0,36,0,0,0,-21,0,0,0,36, ldraw_lib__48__1_4cyli(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 4 0 -36 0 0 0 -21 0 0 0 -36 48\1-4cyli.dat
-  [1,16,0,4,0,-36,0,0,0,-21,0,0,0,-36, ldraw_lib__48__1_4cyli()],
+  [1,16,0,4,0,-36,0,0,0,-21,0,0,0,-36, ldraw_lib__48__1_4cyli(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 4 0 0 0 36 0 -21 0 -36 0 0 48\1-4cyli.dat
-  [1,16,0,4,0,0,0,36,0,-21,0,-36,0,0, ldraw_lib__48__1_4cyli()],
+  [1,16,0,4,0,0,0,36,0,-21,0,-36,0,0, ldraw_lib__48__1_4cyli(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 4 0 0 0 -36 0 -21 0 36 0 0 48\1-4cyli.dat
-  [1,16,0,4,0,0,0,-36,0,-21,0,36,0,0, ldraw_lib__48__1_4cyli()],
+  [1,16,0,4,0,0,0,-36,0,-21,0,36,0,0, ldraw_lib__48__1_4cyli(realsolid)],
 // 1 16 0 4 0 4 0 0 0 -1 0 0 0 4 48\1-4ring9.dat
-  [1,16,0,4,0,4,0,0,0,-1,0,0,0,4, ldraw_lib__48__1_4ring9()],
+  [1,16,0,4,0,4,0,0,0,-1,0,0,0,4, ldraw_lib__48__1_4ring9(realsolid)],
 // 1 16 0 4 0 -4 0 0 0 -1 0 0 0 -4 48\1-4ring9.dat
-  [1,16,0,4,0,-4,0,0,0,-1,0,0,0,-4, ldraw_lib__48__1_4ring9()],
+  [1,16,0,4,0,-4,0,0,0,-1,0,0,0,-4, ldraw_lib__48__1_4ring9(realsolid)],
 // 1 16 0 4 0 0 0 4 0 -1 0 -4 0 0 48\1-4ring9.dat
-  [1,16,0,4,0,0,0,4,0,-1,0,-4,0,0, ldraw_lib__48__1_4ring9()],
+  [1,16,0,4,0,0,0,4,0,-1,0,-4,0,0, ldraw_lib__48__1_4ring9(realsolid)],
 // 1 16 0 4 0 0 0 -4 0 -1 0 4 0 0 48\1-4ring9.dat
-  [1,16,0,4,0,0,0,-4,0,-1,0,4,0,0, ldraw_lib__48__1_4ring9()],
+  [1,16,0,4,0,0,0,-4,0,-1,0,4,0,0, ldraw_lib__48__1_4ring9(realsolid)],
 // 1 16 0 4 0 36 0 0 0 1 0 0 0 36 48\1-4edge.dat
-  [1,16,0,4,0,36,0,0,0,1,0,0,0,36, ldraw_lib__48__1_4edge()],
+  [1,16,0,4,0,36,0,0,0,1,0,0,0,36, ldraw_lib__48__1_4edge(realsolid)],
 // 1 16 0 4 0 -36 0 0 0 1 0 0 0 -36 48\1-4edge.dat
-  [1,16,0,4,0,-36,0,0,0,1,0,0,0,-36, ldraw_lib__48__1_4edge()],
+  [1,16,0,4,0,-36,0,0,0,1,0,0,0,-36, ldraw_lib__48__1_4edge(realsolid)],
 // 1 16 0 4 0 0 0 36 0 1 0 -36 0 0 48\1-4edge.dat
-  [1,16,0,4,0,0,0,36,0,1,0,-36,0,0, ldraw_lib__48__1_4edge()],
+  [1,16,0,4,0,0,0,36,0,1,0,-36,0,0, ldraw_lib__48__1_4edge(realsolid)],
 // 1 16 0 4 0 0 0 -36 0 1 0 36 0 0 48\1-4edge.dat
-  [1,16,0,4,0,0,0,-36,0,1,0,36,0,0, ldraw_lib__48__1_4edge()],
+  [1,16,0,4,0,0,0,-36,0,1,0,36,0,0, ldraw_lib__48__1_4edge(realsolid)],
 ];
 module ldraw_lib__primotop(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__primotop(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__primotop(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__primotop(line=0.2);

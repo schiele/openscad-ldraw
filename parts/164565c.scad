@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__164565c() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__164565c(realsolid=false) = [
 // 0 Sticker  1.1 x  1.9 with Blue Bed Icon
 // 0 Name: 164565c.dat
 // 0 Author: Zoltan Keri [kzoltan82]
@@ -17,7 +18,7 @@ function ldraw_lib__164565c() = [
 // 
 // 
 // 1 16 0 -0.25 0 19 0 0 0 0.25 0 0 0 11 box5-12.dat
-  [1,16,0,-0.25,0,19,0,0,0,0.25,0,0,0,11, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,19,0,0,0,0.25,0,0,0,11, ldraw_lib__box5_12(realsolid)],
 // 4 1 -7.69 -0.25 -0.92 -5.15 -0.25 -0.9 -3.53 -0.25 0.89 -5.34 -0.25 3.71
   [4,1,-7.69,-0.25,-0.92,-5.15,-0.25,-0.9,-3.53,-0.25,0.89,-5.34,-0.25,3.71],
 // 4 1 8.82 -0.25 -0.83 9.71 -0.25 0.46 8.34 -0.25 2.07 8.48 -0.25 -0.91
@@ -268,5 +269,5 @@ function ldraw_lib__164565c() = [
   [3,16,12.25,-0.25,5.59,12.64,-0.25,5.41,19,-0.25,11],
 ];
 module ldraw_lib__164565c(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__164565c(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__164565c(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__164565c(line=0.2);

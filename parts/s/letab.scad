@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__letab() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__letab(realsolid=false) = [
 // 0 ~Mindstorms RCX Letter "A" Background
 // 0 Name: s\letab.dat
 // 0 Author: John Van Zwieten [jvan]
@@ -29,5 +30,5 @@ function ldraw_lib__s__letab() = [
 // 0
 ];
 module ldraw_lib__s__letab(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__letab(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__letab(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__letab(line=0.2);

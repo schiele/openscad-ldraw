@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3846s01.scad>
-function ldraw_lib__3846p47() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3846p47(realsolid=false) = [
 // 0 Minifig Shield Triangular with Red in Blue Frame Pattern
 // 0 Name: 3846p47.dat
 // 0 Author: Tore Eriksson [Tore_Eriksson]
@@ -24,7 +25,7 @@ function ldraw_lib__3846p47() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3846s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3846s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3846s01(realsolid)],
 // 0 // Frame
 // 3 1 0 24.57 -10 -8.76 24.57 -10 0 32.37 -10
   [3,1,0,24.57,-10,-8.76,24.57,-10,0,32.37,-10],
@@ -62,5 +63,5 @@ function ldraw_lib__3846p47() = [
   [4,16,12,-6,-10,0,-6,-10,10.72,6.03,-10,12,-4,-10],
 ];
 module ldraw_lib__3846p47(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3846p47(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3846p47(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3846p47(line=0.2);

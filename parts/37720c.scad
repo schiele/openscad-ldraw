@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/rect2p.scad>
 use <s/37720cs01.scad>
-function ldraw_lib__37720c() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__37720c(realsolid=false) = [
 // 0 Minifig Bar  4L with Middle Bat Emblem
 // 0 Name: 37720c.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -21,20 +22,20 @@ function ldraw_lib__37720c() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\37720cs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__37720cs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__37720cs01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\37720cs01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__37720cs01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__37720cs01(realsolid)],
 // 3 16 2.155 2.8284 -1.0975 -2.155 2.8284 -1.0975 0 2.8284 17.99
   [3,16,2.155,2.8284,-1.0975,-2.155,2.8284,-1.0975,0,2.8284,17.99],
 // 3 16 -2.155 -2.8284 -1.0975 2.155 -2.8284 -1.0975 0 -2.8284 17.99
   [3,16,-2.155,-2.8284,-1.0975,2.155,-2.8284,-1.0975,0,-2.8284,17.99],
 // 1 16 0 0 -1.0975 -2.155 0 0 0 0 2.8284 0 1 0 rect2p.dat
-  [1,16,0,0,-1.0975,-2.155,0,0,0,0,2.8284,0,1,0, ldraw_lib__rect2p()],
+  [1,16,0,0,-1.0975,-2.155,0,0,0,0,2.8284,0,1,0, ldraw_lib__rect2p(realsolid)],
 // 2 24 0 -2.8284 17.99 0 -2.1625 19.8
   [2,24,0,-2.8284,17.99,0,-2.1625,19.8],
 // 2 24 0 2.1625 19.8 0 2.8284 17.99
   [2,24,0,2.1625,19.8,0,2.8284,17.99],
 ];
 module ldraw_lib__37720c(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__37720c(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__37720c(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__37720c(line=0.2);

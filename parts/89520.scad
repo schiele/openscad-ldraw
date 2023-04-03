@@ -9,7 +9,8 @@ use <../p/4-4edge.scad>
 use <../p/4-4ring1.scad>
 use <s/89520s01.scad>
 use <../p/stud4.scad>
-function ldraw_lib__89520() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__89520(realsolid=false) = [
 // 0 Minifig Helmet Castle Closed with Eye Slit
 // 0 Name: 89520.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -28,33 +29,33 @@ function ldraw_lib__89520() = [
 // 
 // 
 // 1 16 0 -11.25 0 4 0 0 0 -3.75 0 0 0 4 4-4cylo.dat
-  [1,16,0,-11.25,0,4,0,0,0,-3.75,0,0,0,4, ldraw_lib__4_4cylo()],
+  [1,16,0,-11.25,0,4,0,0,0,-3.75,0,0,0,4, ldraw_lib__4_4cylo(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -9 0 2 0 0 0 -6 0 0 0 2 4-4cylc.dat
-  [1,16,0,-9,0,2,0,0,0,-6,0,0,0,2, ldraw_lib__4_4cylc()],
+  [1,16,0,-9,0,2,0,0,0,-6,0,0,0,2, ldraw_lib__4_4cylc(realsolid)],
 // 1 16 0 -15 0 2 0 0 0 1 0 0 0 2 4-4ring1.dat
-  [1,16,0,-15,0,2,0,0,0,1,0,0,0,2, ldraw_lib__4_4ring1()],
+  [1,16,0,-15,0,2,0,0,0,1,0,0,0,2, ldraw_lib__4_4ring1(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 2.5 0 2.6 0 0 0 -7.5 0 0 0 2.6 4-4con4.dat
-  [1,16,0,2.5,0,2.6,0,0,0,-7.5,0,0,0,2.6, ldraw_lib__4_4con4()],
+  [1,16,0,2.5,0,2.6,0,0,0,-7.5,0,0,0,2.6, ldraw_lib__4_4con4(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 2.5 0 12.01043 0 -4.97488 0 2 0 -4.97488 0 -12.01043 3-8cyli.dat
-  [1,16,0,2.5,0,12.01043,0,-4.97488,0,2,0,-4.97488,0,-12.01043, ldraw_lib__3_8cyli()],
+  [1,16,0,2.5,0,12.01043,0,-4.97488,0,2,0,-4.97488,0,-12.01043, ldraw_lib__3_8cyli(realsolid)],
 // 1 16 0 4.5 0 12.01043 0 -4.97488 0 1 0 -4.97488 0 -12.01043 3-8edge.dat
-  [1,16,0,4.5,0,12.01043,0,-4.97488,0,1,0,-4.97488,0,-12.01043, ldraw_lib__3_8edge()],
+  [1,16,0,4.5,0,12.01043,0,-4.97488,0,1,0,-4.97488,0,-12.01043, ldraw_lib__3_8edge(realsolid)],
 // 1 16 0 -5 0 10.4 0 0 0 -1 0 0 0 10.4 4-4disc.dat
-  [1,16,0,-5,0,10.4,0,0,0,-1,0,0,0,10.4, ldraw_lib__4_4disc()],
+  [1,16,0,-5,0,10.4,0,0,0,-1,0,0,0,10.4, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 -5 0 10.4 0 0 0 -1 0 0 0 10.4 4-4edge.dat
-  [1,16,0,-5,0,10.4,0,0,0,-1,0,0,0,10.4, ldraw_lib__4_4edge()],
+  [1,16,0,-5,0,10.4,0,0,0,-1,0,0,0,10.4, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 -5 0 1 0 0 0 -1.25 0 0 0 -1 stud4.dat
-  [1,16,0,-5,0,1,0,0,0,-1.25,0,0,0,-1, ldraw_lib__stud4()],
+  [1,16,0,-5,0,1,0,0,0,-1.25,0,0,0,-1, ldraw_lib__stud4(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\89520s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__89520s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__89520s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\89520s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__89520s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__89520s01(realsolid)],
 // 5 24 0 19.29 16.371 0 5.22 16.371 -2.25 19.291 16.121 2.25 19.291 16.121
   [5,24,0,19.29,16.371,0,5.22,16.371,-2.25,19.291,16.121,2.25,19.291,16.121],
 // 5 24 0 -11 7.625 0 -11.25 6.749 -2.25 -11 7.285 2.25 -11 7.285
@@ -89,5 +90,5 @@ function ldraw_lib__89520() = [
   [2,24,0,2.5,-19.049,0,-7.97,-15.743],
 ];
 module ldraw_lib__89520(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__89520(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__89520(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__89520(line=0.2);

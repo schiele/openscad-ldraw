@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/5-8cyli.scad>
 use <s/3626bs02.scad>
 use <../p/t04o6250.scad>
-function ldraw_lib__3626bpw8() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3626bpw8(realsolid=false) = [
 // 0 Minifig Head with Glasses, Pencil Behind Ear and Pointed Moustache Pattern
 // 0 Name: 3626bpw8.dat
 // 0 Author: Willy Tschager [Holly-Wood]
@@ -1156,23 +1157,23 @@ function ldraw_lib__3626bpw8() = [
 // 
 // 0 // Head
 // 1 16 0 4 0 8 0 0 0 -6.4 0 0 0 -8 t04o6250.dat
-  [1,16,0,4,0,8,0,0,0,-6.4,0,0,0,-8, ldraw_lib__t04o6250()],
+  [1,16,0,4,0,8,0,0,0,-6.4,0,0,0,-8, ldraw_lib__t04o6250(realsolid)],
 // 1 16 0 4 0 0 0 8 0 -6.4 0 8 0 0 t04o6250.dat
-  [1,16,0,4,0,0,0,8,0,-6.4,0,8,0,0, ldraw_lib__t04o6250()],
+  [1,16,0,4,0,0,0,8,0,-6.4,0,8,0,0, ldraw_lib__t04o6250(realsolid)],
 // 1 16 0 4 0 -8 0 0 0 -6.4 0 0 0 8 t04o6250.dat
-  [1,16,0,4,0,-8,0,0,0,-6.4,0,0,0,8, ldraw_lib__t04o6250()],
+  [1,16,0,4,0,-8,0,0,0,-6.4,0,0,0,8, ldraw_lib__t04o6250(realsolid)],
 // 1 16 0 4 0 0 0 -8 0 -6.4 0 -8 0 0 t04o6250.dat
-  [1,16,0,4,0,0,0,-8,0,-6.4,0,-8,0,0, ldraw_lib__t04o6250()],
+  [1,16,0,4,0,0,0,-8,0,-6.4,0,-8,0,0, ldraw_lib__t04o6250(realsolid)],
 // 1 16 0 4 0 12.0105 0 4.97489 0 13 0 -4.97489 0 12.0105 5-8cyli.dat
-  [1,16,0,4,0,12.0105,0,4.97489,0,13,0,-4.97489,0,12.0105, ldraw_lib__5_8cyli()],
+  [1,16,0,4,0,12.0105,0,4.97489,0,13,0,-4.97489,0,12.0105, ldraw_lib__5_8cyli(realsolid)],
 // 1 16 0 17 0 3.0615 0 7.3911 0 6.4 0 -7.3911 0 3.0615 t04o6250.dat
-  [1,16,0,17,0,3.0615,0,7.3911,0,6.4,0,-7.3911,0,3.0615, ldraw_lib__t04o6250()],
+  [1,16,0,17,0,3.0615,0,7.3911,0,6.4,0,-7.3911,0,3.0615, ldraw_lib__t04o6250(realsolid)],
 // 1 16 0 17 0 7.3911 0 -3.0615 0 6.4 0 3.0615 0 7.3911 t04o6250.dat
-  [1,16,0,17,0,7.3911,0,-3.0615,0,6.4,0,3.0615,0,7.3911, ldraw_lib__t04o6250()],
+  [1,16,0,17,0,7.3911,0,-3.0615,0,6.4,0,3.0615,0,7.3911, ldraw_lib__t04o6250(realsolid)],
 // 1 16 0 17 0 -3.0615 0 -7.3911 0 6.4 0 7.3911 0 -3.0615 t04o6250.dat
-  [1,16,0,17,0,-3.0615,0,-7.3911,0,6.4,0,7.3911,0,-3.0615, ldraw_lib__t04o6250()],
+  [1,16,0,17,0,-3.0615,0,-7.3911,0,6.4,0,7.3911,0,-3.0615, ldraw_lib__t04o6250(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3626bs02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626bs02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626bs02(realsolid)],
 // 
 // 0 // Conditional line
 // 5 24 -9.192 4 -9.192 -9.192 17 -9.192 -12.01 17 -4.976 -4.975 17 -12.011
@@ -1274,5 +1275,5 @@ function ldraw_lib__3626bpw8() = [
   [5,24,3.794,20.695,-9.159,0,20.695,-9.914,0,19.828,-11.535,0,21,-8],
 ];
 module ldraw_lib__3626bpw8(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3626bpw8(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3626bpw8(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3626bpw8(line=0.2);

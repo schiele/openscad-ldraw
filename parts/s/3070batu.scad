@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/2-4ring4.scad>
 use <../../p/2-4ring5.scad>
-function ldraw_lib__s__3070batu() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__3070batu(realsolid=false) = [
 // 0 ~Tile  1 x  1 with "U" Pattern
 // 0 Name: s\3070batu.dat
 // 0 Author: Chris Dee [cwdee]
@@ -16,9 +17,9 @@ function ldraw_lib__s__3070batu() = [
 // 
 // 
 // 1 16 0 0 -1.5 -1 0 0 0 1 0 0 0 -1 2-4ring4.dat
-  [1,16,0,0,-1.5,-1,0,0,0,1,0,0,0,-1, ldraw_lib__2_4ring4()],
+  [1,16,0,0,-1.5,-1,0,0,0,1,0,0,0,-1, ldraw_lib__2_4ring4(realsolid)],
 // 1 16 0 0 -1.5 -1 0 0 0 1 0 0 0 -1 2-4ring5.dat
-  [1,16,0,0,-1.5,-1,0,0,0,1,0,0,0,-1, ldraw_lib__2_4ring5()],
+  [1,16,0,0,-1.5,-1,0,0,0,1,0,0,0,-1, ldraw_lib__2_4ring5(realsolid)],
 // 4 16 4 0 -1.5 4 0 7.5 6 0 7.5 6 0 -1.5
   [4,16,4,0,-1.5,4,0,7.5,6,0,7.5,6,0,-1.5],
 // 4 16 -6 0 -1.5 -6 0 7.5 -4 0 7.5 -4 0 -1.5
@@ -26,5 +27,5 @@ function ldraw_lib__s__3070batu() = [
 // 0
 ];
 module ldraw_lib__s__3070batu(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__3070batu(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__3070batu(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__3070batu(line=0.2);

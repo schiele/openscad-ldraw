@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__11203p02s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__11203p02s02(realsolid=false) = [
 // 0 ~Tile  2 x  2 Inverted with Four Red, Orange and Yellow Rounded Squares Pattern - Non-Mirrored Common Areas
 // 0 Name: s\11203p02s02.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -407,5 +408,5 @@ function ldraw_lib__s__11203p02s02() = [
   [3,25,4.34,0,-3.23,4.5,0,-.69,3.53,0,-3.31],
 ];
 module ldraw_lib__s__11203p02s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__11203p02s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__11203p02s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__11203p02s02(line=0.2);

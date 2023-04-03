@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4disc.scad>
 use <s/30369s01.scad>
 use <../p/stud16.scad>
-function ldraw_lib__30369() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__30369(realsolid=false) = [
 // 0 Minifig Helmet Scout Trooper
 // 0 Name: 30369.dat
 // 0 Author: Rolf Osterthun [Rolf]
@@ -21,13 +22,13 @@ function ldraw_lib__30369() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\30369s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30369s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30369s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\30369s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__30369s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__30369s01(realsolid)],
 // 1 16 0 -4 0 1 0 0 0 -1 0 0 0 -1 stud16.dat
-  [1,16,0,-4,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__stud16()],
+  [1,16,0,-4,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__stud16(realsolid)],
 // 1 16 0 -4 0 0 0 8 0 -11.2 0 8 0 0 4-4disc.dat
-  [1,16,0,-4,0,0,0,8,0,-11.2,0,8,0,0, ldraw_lib__4_4disc()],
+  [1,16,0,-4,0,0,0,8,0,-11.2,0,8,0,0, ldraw_lib__4_4disc(realsolid)],
 // 4 16 2.184 26.28 -22.009 2.062 23.828 -21.957 -2.062 23.828 -21.957 -2.184 26.28 -22.009
   [4,16,2.184,26.28,-22.009,2.062,23.828,-21.957,-2.062,23.828,-21.957,-2.184,26.28,-22.009],
 // 4 16 2.062 23.828 -21.957 1.518 19.373 -21.862 -1.518 19.373 -21.862 -2.062 23.828 -21.957
@@ -136,5 +137,5 @@ function ldraw_lib__30369() = [
   [5,24,0,16.25,-15,0,26.035,-15,1.25,26.099,-15.335,-1.25,16.25,-15.335],
 ];
 module ldraw_lib__30369(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__30369(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__30369(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__30369(line=0.2);

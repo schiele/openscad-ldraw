@@ -3,7 +3,8 @@ use <../p/box3u2p.scad>
 use <../p/box4-1.scad>
 use <../p/rect3.scad>
 use <s/64059s01.scad>
-function ldraw_lib__64059() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__64059(realsolid=false) = [
 // 0 ~Electric Power Functions IR Distance Sensor Bottom
 // 0 Name: 64059.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -22,7 +23,7 @@ function ldraw_lib__64059() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\64059s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__64059s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__64059s01(realsolid)],
 // 4 16 -40 8 -6 -40 8 -20 -38 8 -18 -38 8 -8
   [4,16,-40,8,-6,-40,8,-20,-38,8,-18,-38,8,-8],
 // 4 16 -38 8 -8 -32 8 -8 -34 8 -6 -40 8 -6
@@ -32,7 +33,7 @@ function ldraw_lib__64059() = [
 // 2 24 -40 8 -6 -40 8 -20
   [2,24,-40,8,-6,-40,8,-20],
 // 1 16 -38 12 -13 0 -1 0 -4 0 0 0 0 -5 rect3.dat
-  [1,16,-38,12,-13,0,-1,0,-4,0,0,0,0,-5, ldraw_lib__rect3()],
+  [1,16,-38,12,-13,0,-1,0,-4,0,0,0,0,-5, ldraw_lib__rect3(realsolid)],
 // 4 16 -40 8 -6 -40 12 -6 -40 24 -20 -40 8 -20
   [4,16,-40,8,-6,-40,12,-6,-40,24,-20,-40,8,-20],
 // 4 16 -40 24 20 -40 24 -20 -40 12 -6 -40 12 6
@@ -44,16 +45,16 @@ function ldraw_lib__64059() = [
 // 2 24 -40 8 6 -40 8 20
   [2,24,-40,8,6,-40,8,20],
 // 1 16 -38 12 13 0 -1 0 4 0 0 0 0 5 rect3.dat
-  [1,16,-38,12,13,0,-1,0,4,0,0,0,0,5, ldraw_lib__rect3()],
+  [1,16,-38,12,13,0,-1,0,4,0,0,0,0,5, ldraw_lib__rect3(realsolid)],
 // 4 16 -40 8 20 -40 24 20 -40 12 6 -40 8 6
   [4,16,-40,8,20,-40,24,20,-40,12,6,-40,8,6],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -40 10 0 0 6 0 0 0 2 6 0 0 box4-1.dat
-  [1,16,-40,10,0,0,6,0,0,0,2,6,0,0, ldraw_lib__box4_1()],
+  [1,16,-40,10,0,0,6,0,0,0,2,6,0,0, ldraw_lib__box4_1(realsolid)],
 // 1 16 -38 12 0 0 6 0 -4 0 0 0 0 8 box3u2p.dat
-  [1,16,-38,12,0,0,6,0,-4,0,0,0,0,8, ldraw_lib__box3u2p()],
+  [1,16,-38,12,0,0,6,0,-4,0,0,0,0,8, ldraw_lib__box3u2p(realsolid)],
 ];
 module ldraw_lib__64059(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__64059(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__64059(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__64059(line=0.2);

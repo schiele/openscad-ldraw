@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <43720.scad>
-function ldraw_lib__4179872() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4179872(realsolid=false) = [
 // 0 ~_Wedge  4 x  2 Sloped Right White (Obsolete)
 // 0 Name: 4179872.dat
 // 0 Author: Michael Heidemann [mikeheide]
@@ -20,8 +21,8 @@ function ldraw_lib__4179872() = [
 // 0 // colouring of the part (White).
 // 
 // 1 15 0 0 0 1 0 0 0 1 0 0 0 1 43720.dat
-  [1,15,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__43720()],
+  [1,15,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__43720(realsolid)],
 ];
 module ldraw_lib__4179872(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4179872(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4179872(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4179872(line=0.2);

@@ -4,7 +4,8 @@ use <../p/48/4-4con4.scad>
 use <../p/48/4-4con5.scad>
 use <s/44375s01.scad>
 use <../p/stug-2x2.scad>
-function ldraw_lib__44375b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__44375b(realsolid=false) = [
 // 0 Dish  6 x  6 Inverted with Solid Studs
 // 0 Name: 44375b.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -21,15 +22,15 @@ function ldraw_lib__44375b() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\44375s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__44375s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__44375s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 stug-2x2.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_2x2()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_2x2(realsolid)],
 // 1 16 0 3 0 20 0 0 0 -3 0 0 0 20 48\4-4con1.dat
-  [1,16,0,3,0,20,0,0,0,-3,0,0,0,20, ldraw_lib__48__4_4con1()],
+  [1,16,0,3,0,20,0,0,0,-3,0,0,0,20, ldraw_lib__48__4_4con1(realsolid)],
 // 1 16 0 6 0 10 0 0 0 -3 0 0 0 10 48\4-4con4.dat
-  [1,16,0,6,0,10,0,0,0,-3,0,0,0,10, ldraw_lib__48__4_4con4()],
+  [1,16,0,6,0,10,0,0,0,-3,0,0,0,10, ldraw_lib__48__4_4con4(realsolid)],
 // 1 16 0 11 0 10 0 0 0 -5 0 0 0 10 48\4-4con5.dat
-  [1,16,0,11,0,10,0,0,0,-5,0,0,0,10, ldraw_lib__48__4_4con5()],
+  [1,16,0,11,0,10,0,0,0,-5,0,0,0,10, ldraw_lib__48__4_4con5(realsolid)],
 // 5 24 20 0 0 19.828 0 2.61 0 0 0 39.656 3 5.22
   [5,24,20,0,0,19.828,0,2.61,0,0,0,39.656,3,5.22],
 // 5 24 19.828 0 2.61 19.318 0 5.176 0 0 0 38.636 3 10.352
@@ -320,5 +321,5 @@ function ldraw_lib__44375b() = [
   [5,24,49.57,6,-6.525,50,6,0,40,3,0,60,11,0],
 ];
 module ldraw_lib__44375b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__44375b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__44375b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__44375b(line=0.2);

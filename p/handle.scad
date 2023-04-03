@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <box2-5.scad>
 use <handle2.scad>
-function ldraw_lib__handle() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__handle(realsolid=false) = [
 // 0 Handle for Flat Shields
 // 0 Name: handle.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -22,7 +23,7 @@ function ldraw_lib__handle() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 handle2.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__handle2()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__handle2(realsolid)],
 // 
 // 2 24 11 2.5 -5 -11 2.5 -5
   [2,24,11,2.5,-5,-11,2.5,-5],
@@ -46,7 +47,7 @@ function ldraw_lib__handle() = [
 // 4 16 11 -2.5 -5 9.5 -2.5 2 7.5 -2.5 4 7.5 -2.5 0.952
   [4,16,11,-2.5,-5,9.5,-2.5,2,7.5,-2.5,4,7.5,-2.5,0.952],
 // 1 16 9.25 0 -0.5 0 -0.75 1 2.5 0 0 0 3.5 -1 box2-5.dat
-  [1,16,9.25,0,-0.5,0,-0.75,1,2.5,0,0,0,3.5,-1, ldraw_lib__box2_5()],
+  [1,16,9.25,0,-0.5,0,-0.75,1,2.5,0,0,0,3.5,-1, ldraw_lib__box2_5(realsolid)],
 // 
 // 2 24 -7.5 -2.5 0.952 -7.5 -2.5 4
   [2,24,-7.5,-2.5,0.952,-7.5,-2.5,4],
@@ -61,8 +62,8 @@ function ldraw_lib__handle() = [
 // 4 16 -11 2.5 -5 -9.5 2.5 2 -7.5 2.5 4 -7.5 2.5 0.952
   [4,16,-11,2.5,-5,-9.5,2.5,2,-7.5,2.5,4,-7.5,2.5,0.952],
 // 1 16 -9.25 0 -0.5 0 0.75 -1 -2.5 0 0 0 3.5 -1 box2-5.dat
-  [1,16,-9.25,0,-0.5,0,0.75,-1,-2.5,0,0,0,3.5,-1, ldraw_lib__box2_5()],
+  [1,16,-9.25,0,-0.5,0,0.75,-1,-2.5,0,0,0,3.5,-1, ldraw_lib__box2_5(realsolid)],
 ];
 module ldraw_lib__handle(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__handle(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__handle(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__handle(line=0.2);

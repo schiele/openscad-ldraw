@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__3960px3s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__3960px3s01(realsolid=false) = [
 // 0 ~Dish  4 x  4 Inverted with Jurassic World Gyrosphere Pattern - 1/8
 // 0 Name: s\3960px3s01.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -271,5 +272,5 @@ function ldraw_lib__s__3960px3s01() = [
   [4,0,-24.7485,6,24.7485,-21.308,6,27.769,-21.73306,6.27928,28.32295,-25.24371,6.28014,25.24371],
 ];
 module ldraw_lib__s__3960px3s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__3960px3s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__3960px3s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__3960px3s01(line=0.2);

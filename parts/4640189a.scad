@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/48/4-4cylc3.scad>
 use <../p/48/4-4rin11.scad>
 use <../p/48/4-4rin18.scad>
-function ldraw_lib__4640189a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4640189a(realsolid=false) = [
 // 0 Sticker  1.9 x  1.9 Round with Blue and White "JAMSTEC" Logo
 // 0 Name: 4640189a.dat
 // 0 Author: Damien Roux [Darats]
@@ -21,11 +22,11 @@ function ldraw_lib__4640189a() = [
 // 
 // 
 // 1 16 0 0 0 19 0 0 0 -0.25 0 0 0 -19 48\4-4cylc3.dat
-  [1,16,0,0,0,19,0,0,0,-0.25,0,0,0,-19, ldraw_lib__48__4_4cylc3()],
+  [1,16,0,0,0,19,0,0,0,-0.25,0,0,0,-19, ldraw_lib__48__4_4cylc3(realsolid)],
 // 1 1 0 -0.25 0 1.5 0 0 0 1 0 0 0 1.5 48\4-4rin11.dat
-  [1,1,0,-0.25,0,1.5,0,0,0,1,0,0,0,1.5, ldraw_lib__48__4_4rin11()],
+  [1,1,0,-0.25,0,1.5,0,0,0,1,0,0,0,1.5, ldraw_lib__48__4_4rin11(realsolid)],
 // 1 1 0 -0.25 0 1 0 0 0 1 0 0 0 1 48\4-4rin18.dat
-  [1,1,0,-0.25,0,1,0,0,0,1,0,0,0,1, ldraw_lib__48__4_4rin18()],
+  [1,1,0,-0.25,0,1,0,0,0,1,0,0,0,1, ldraw_lib__48__4_4rin18(realsolid)],
 // 
 // 4 1 -14.186 -0.25 -2.927 -14.04 -0.25 -3.567 -13.641 -0.25 -2.495 -14.304 -0.25 -2.277
   [4,1,-14.186,-0.25,-2.927,-14.04,-0.25,-3.567,-13.641,-0.25,-2.495,-14.304,-0.25,-2.277],
@@ -1043,5 +1044,5 @@ function ldraw_lib__4640189a() = [
   [4,73,14.433,-0.25,1.468,12.041,-0.25,0.328,12.752,-0.25,-0.145,14.507,-0.25,-0.012],
 ];
 module ldraw_lib__4640189a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4640189a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4640189a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4640189a(line=0.2);

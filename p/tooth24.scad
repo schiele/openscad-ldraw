@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <rect.scad>
 use <rect3.scad>
-function ldraw_lib__tooth24() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__tooth24(realsolid=false) = [
 // 0 Single Tooth for Technic Gear 24 Tooth
 // 0 Name: tooth24.dat
 // 0 Author: Lance Hopenwasser [cavehop]
@@ -17,17 +18,17 @@ function ldraw_lib__tooth24() = [
 // 
 // 
 // 1 16 0 5.3525 0 0.8 0 0 0 -1 0 0 0 4.75 rect.dat
-  [1,16,0,5.3525,0,0.8,0,0,0,-1,0,0,0,4.75, ldraw_lib__rect()],
+  [1,16,0,5.3525,0,0.8,0,0,0,-1,0,0,0,4.75, ldraw_lib__rect(realsolid)],
 // 1 16 1.275 4.1025 0 0 -1 -0.475 0 0 1.25 -4.75 0 0 rect3.dat
-  [1,16,1.275,4.1025,0,0,-1,-0.475,0,0,1.25,-4.75,0,0, ldraw_lib__rect3()],
+  [1,16,1.275,4.1025,0,0,-1,-0.475,0,0,1.25,-4.75,0,0, ldraw_lib__rect3(realsolid)],
 // 1 16 2 1.3525 0 0 -1 0.25 0 0 -1.5 -4.75 0 0 rect3.dat
-  [1,16,2,1.3525,0,0,-1,0.25,0,0,-1.5,-4.75,0,0, ldraw_lib__rect3()],
+  [1,16,2,1.3525,0,0,-1,0.25,0,0,-1.5,-4.75,0,0, ldraw_lib__rect3(realsolid)],
 // 5 24 1.75 2.8525 4.75 1.75 2.8525 -4.75 0.8 5.3525 0 2.25 -0.1475 0
   [5,24,1.75,2.8525,4.75,1.75,2.8525,-4.75,0.8,5.3525,0,2.25,-0.1475,0],
 // 1 16 -1.275 4.1025 0 0 1 0.475 0 0 1.25 -4.75 0 0 rect3.dat
-  [1,16,-1.275,4.1025,0,0,1,0.475,0,0,1.25,-4.75,0,0, ldraw_lib__rect3()],
+  [1,16,-1.275,4.1025,0,0,1,0.475,0,0,1.25,-4.75,0,0, ldraw_lib__rect3(realsolid)],
 // 1 16 -2 1.3525 0 0 1 -0.25 0 0 -1.5 -4.75 0 0 rect3.dat
-  [1,16,-2,1.3525,0,0,1,-0.25,0,0,-1.5,-4.75,0,0, ldraw_lib__rect3()],
+  [1,16,-2,1.3525,0,0,1,-0.25,0,0,-1.5,-4.75,0,0, ldraw_lib__rect3(realsolid)],
 // 5 24 -1.75 2.8525 4.75 -1.75 2.8525 -4.75 -0.8 5.3525 0 -2.25 -0.1475 0
   [5,24,-1.75,2.8525,4.75,-1.75,2.8525,-4.75,-0.8,5.3525,0,-2.25,-0.1475,0],
 // 4 16 1.75 2.8525 4.75 -1.75 2.8525 4.75 0 0 4.75 2.25 -0.1475 4.75
@@ -45,5 +46,5 @@ function ldraw_lib__tooth24() = [
 // 0
 ];
 module ldraw_lib__tooth24(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__tooth24(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__tooth24(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__tooth24(line=0.2);

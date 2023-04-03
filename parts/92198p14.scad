@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/92198p13s03.scad>
-function ldraw_lib__92198p14() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__92198p14(realsolid=false) = [
 // 0 Figure Friends Female Head with Bright Light Orange Eyes, Open Mouth and Magenta Elves Tribal Pattern
 // 0 Name: 92198p14.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -17,7 +18,7 @@ function ldraw_lib__92198p14() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\92198p13s03.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__92198p13s03()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__92198p13s03(realsolid)],
 // 4 15 0.51 22.43 -13.991 0 22.46 -14.096 0 22.78 -13.978 0.58 22.74 -13.861
   [4,15,0.51,22.43,-13.991,0,22.46,-14.096,0,22.78,-13.978,0.58,22.74,-13.861],
 // 4 15 0.98 22.36 -13.91 0.51 22.43 -13.991 0.58 22.74 -13.861 1.07 22.58 -13.81
@@ -184,5 +185,5 @@ function ldraw_lib__92198p14() = [
   [3,16,-7.78,19.34,-11.69,-3.39,23.09,-13.11,-4.08,20.01,-14.07],
 ];
 module ldraw_lib__92198p14(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__92198p14(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__92198p14(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__92198p14(line=0.2);

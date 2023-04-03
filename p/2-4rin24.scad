@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__2_4rin24() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2_4rin24(realsolid=false) = [
 // 0 Ring 24 x 0.5
 // 0 Name: 2-4rin24.dat
 // 0 Author: Guy Vivan [guyvivan]
@@ -34,5 +35,5 @@ function ldraw_lib__2_4rin24() = [
 // 
 ];
 module ldraw_lib__2_4rin24(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2_4rin24(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2_4rin24(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2_4rin24(line=0.2);

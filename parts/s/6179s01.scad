@@ -3,7 +3,8 @@ use <../../p/box4.scad>
 use <../../p/box5.scad>
 use <../../p/stug-4x1.scad>
 use <../../p/stug4-3x3.scad>
-function ldraw_lib__s__6179s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__6179s01(realsolid=false) = [
 // 0 ~Plate  4 x  4 with 4 Studs on One Edge without Top Surface
 // 0 Name: s\6179s01.dat
 // 0 Author: Vincent Messenet [Cheenzo]
@@ -22,11 +23,11 @@ function ldraw_lib__s__6179s01() = [
 // 
 // 
 // 1 16 0 8 0 40 0 0 0 -8 0 0 0 40 box4.dat
-  [1,16,0,8,0,40,0,0,0,-8,0,0,0,40, ldraw_lib__box4()],
+  [1,16,0,8,0,40,0,0,0,-8,0,0,0,40, ldraw_lib__box4(realsolid)],
 // 1 16 0 0 30 0 0 -1 0 1 0 1 0 0 stug-4x1.dat
-  [1,16,0,0,30,0,0,-1,0,1,0,1,0,0, ldraw_lib__stug_4x1()],
+  [1,16,0,0,30,0,0,-1,0,1,0,1,0,0, ldraw_lib__stug_4x1(realsolid)],
 // 1 16 0 4 0 1 0 0 0 -1 0 0 0 1 stug4-3x3.dat
-  [1,16,0,4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stug4_3x3()],
+  [1,16,0,4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stug4_3x3(realsolid)],
 // 
 // 4 16 -40 0 40 -40 0 20 40 0 20 40 0 40
   [4,16,-40,0,40,-40,0,20,40,0,20,40,0,40],
@@ -34,7 +35,7 @@ function ldraw_lib__s__6179s01() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 8 0 36 0 0 0 -4 0 0 0 36 box5.dat
-  [1,16,0,8,0,36,0,0,0,-4,0,0,0,36, ldraw_lib__box5()],
+  [1,16,0,8,0,36,0,0,0,-4,0,0,0,36, ldraw_lib__box5(realsolid)],
 // 
 // 4 16 40 8 40 36 8 36 -36 8 36 -40 8 40
   [4,16,40,8,40,36,8,36,-36,8,36,-40,8,40],
@@ -46,5 +47,5 @@ function ldraw_lib__s__6179s01() = [
   [4,16,40,8,-40,36,8,-36,36,8,36,40,8,40],
 ];
 module ldraw_lib__s__6179s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__6179s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__6179s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__6179s01(line=0.2);

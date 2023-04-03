@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__3068bpf0s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__3068bpf0s01(realsolid=false) = [
 // 0 ~Tile  2 x  2 with  4 Flowers on LtGreen/Green Leaves Pattern - Leaves and Flower Outlines Portion
 // 0 Name: s\3068bpf0s01.dat
 // 0 Author: Steffen [Steffen]
@@ -2113,5 +2114,5 @@ function ldraw_lib__s__3068bpf0s01() = [
   [4,16,0,0,-18,-20,0,-20,13.8,0,-20,10.9786,0,-16.9874],
 ];
 module ldraw_lib__s__3068bpf0s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__3068bpf0s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__3068bpf0s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__3068bpf0s01(line=0.2);

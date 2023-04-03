@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/4162s01.scad>
-function ldraw_lib__4162p1l() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4162p1l(realsolid=false) = [
 // 0 Tile  1 x  8 with Chinese "长城" (Great Wall) Pattern
 // 0 Name: 4162p1l.dat
 // 0 Author: N. W. Perry [Plastikean]
@@ -17,7 +18,7 @@ function ldraw_lib__4162p1l() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4162s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4162s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4162s01(realsolid)],
 // 
 // 4 15 6.906 0 2.268 6.099 0 2.697 6.2 0 1.361 7.108 0 0.58
   [4,15,6.906,0,2.268,6.099,0,2.697,6.2,0,1.361,7.108,0,0.58],
@@ -351,5 +352,5 @@ function ldraw_lib__4162p1l() = [
   [3,16,9.023,0,-3.277,80,0,-10,9.196,0,-2.366],
 ];
 module ldraw_lib__4162p1l(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4162p1l(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4162p1l(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4162p1l(line=0.2);

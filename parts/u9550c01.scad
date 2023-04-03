@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <944.scad>
 use <u9550.scad>
-function ldraw_lib__u9550c01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__u9550c01(realsolid=false) = [
 // 0 ~Train Wheels Spoked with Cylindrical Rim with Axle Steel  6 x 96 LDU
 // 0 Name: u9550c01.dat
 // 0 Author: Willy Tschager [Holly-Wood]
@@ -16,12 +17,12 @@ function ldraw_lib__u9550c01() = [
 // 
 // 
 // 1 494 0 0 0 1 0 0 0 1 0 0 0 1 944.dat
-  [1,494,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__944()],
+  [1,494,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__944(realsolid)],
 // 1 16 50 0 0 0 0 -1 0 1 0 1 0 0 u9550.dat
-  [1,16,50,0,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__u9550()],
+  [1,16,50,0,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__u9550(realsolid)],
 // 1 16 -50 0 0 0 0 1 0 1 0 -1 0 0 u9550.dat
-  [1,16,-50,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__u9550()],
+  [1,16,-50,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__u9550(realsolid)],
 ];
 module ldraw_lib__u9550c01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__u9550c01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__u9550c01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__u9550c01(line=0.2);

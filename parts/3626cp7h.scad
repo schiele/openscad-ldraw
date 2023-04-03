@@ -2,7 +2,8 @@ use <../lib.scad>
 use <s/3626bp84s01.scad>
 use <s/3626bp84s02.scad>
 use <s/3626cs01.scad>
-function ldraw_lib__3626cp7h() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3626cp7h(realsolid=false) = [
 // 0 Minifig Head with Smile, Brown Eyebrows and White Pupils Pattern (Hollow Stud)
 // 0 Name: 3626cp7h.dat
 // 0 Author: Vincent Messenet [Cheenzo]
@@ -19,12 +20,12 @@ function ldraw_lib__3626cp7h() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3626cs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626cs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626cs01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3626bp84s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626bp84s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626bp84s01(realsolid)],
 // 1 6 0 0 0 1 0 0 0 1 0 0 0 1 s\3626bp84s02.dat
-  [1,6,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626bp84s02()],
+  [1,6,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626bp84s02(realsolid)],
 ];
 module ldraw_lib__3626cp7h(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3626cp7h(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3626cp7h(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3626cp7h(line=0.2);

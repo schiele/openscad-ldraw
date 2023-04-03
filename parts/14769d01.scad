@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <14769.scad>
 use <6258203m.scad>
-function ldraw_lib__14769d01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__14769d01(realsolid=false) = [
 // 0 Tile  2 x  2 Round with Round Underside Stud with Gas Cap and Classic "GT" Emblem Sticker
 // 0 Name: 14769d01.dat
 // 0 Author: Ulrich Röder [UR]
@@ -20,10 +21,10 @@ function ldraw_lib__14769d01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 14769.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__14769()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__14769(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 6258203m.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__6258203m()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__6258203m(realsolid)],
 ];
 module ldraw_lib__14769d01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__14769d01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__14769d01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__14769d01(line=0.2);

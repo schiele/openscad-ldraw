@@ -7,7 +7,8 @@ use <u9552.scad>
 use <u9553.scad>
 use <u9554.scad>
 use <u9565.scad>
-function ldraw_lib__45341() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__45341(realsolid=false) = [
 // 0 Electric Record and Play Brick 16 x 10 x  4
 // 0 Name: 45341.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -23,35 +24,35 @@ function ldraw_lib__45341() = [
 // 
 // 0 // Top
 // 1 16 0 0 0 0 0 1 0 1 0 -1 0 0 u9552.dat
-  [1,16,0,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__u9552()],
+  [1,16,0,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__u9552(realsolid)],
 // 0 // Fake PCB
 // 1 2 -4 25 0 0 0 115 0 2 0 -75 0 0 box.dat
-  [1,2,-4,25,0,0,0,115,0,2,0,-75,0,0, ldraw_lib__box()],
+  [1,2,-4,25,0,0,0,115,0,2,0,-75,0,0, ldraw_lib__box(realsolid)],
 // 0 // Bottom
 // 1 8 0 92 0 0 0 1 0 1 0 -1 0 0 u9551.dat
-  [1,8,0,92,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__u9551()],
+  [1,8,0,92,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__u9551(realsolid)],
 // 0 // Battery lid
 // 1 8 60 92 0 0 0 1 0 1 0 -1 0 0 u9553.dat
-  [1,8,60,92,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__u9553()],
+  [1,8,60,92,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__u9553(realsolid)],
 // 0 // Trans-red button
 // 1 36 -40 0 0 1 0 0 0 1 0 0 0 1 u9565.dat
-  [1,36,-40,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9565()],
+  [1,36,-40,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9565(realsolid)],
 // 0 // Trans-green button
 // 1 34 0 0 0 0 0 1 0 1 0 -1 0 0 u9554.dat
-  [1,34,0,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__u9554()],
+  [1,34,0,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__u9554(realsolid)],
 // 0 // shafts
 // 1 15 -100 66 -100 0 1 0 -1 0 0 0 0 1 47157.dat
-  [1,15,-100,66,-100,0,1,0,-1,0,0,0,0,1, ldraw_lib__47157()],
+  [1,15,-100,66,-100,0,1,0,-1,0,0,0,0,1, ldraw_lib__47157(realsolid)],
 // 1 15 -100 66 100 0 -1 0 -1 0 0 0 0 -1 47157.dat
-  [1,15,-100,66,100,0,-1,0,-1,0,0,0,0,-1, ldraw_lib__47157()],
+  [1,15,-100,66,100,0,-1,0,-1,0,0,0,0,-1, ldraw_lib__47157(realsolid)],
 // 1 34 160 42 0 0 0 -1 -1 0 0 0 1 0 47157.dat
-  [1,34,160,42,0,0,0,-1,-1,0,0,0,1,0, ldraw_lib__47157()],
+  [1,34,160,42,0,0,0,-1,-1,0,0,0,1,0, ldraw_lib__47157(realsolid)],
 // 0 // Power switch
 // 1 0 -126 91 8 0 0 6 0 1 0 -16 0 0 box.dat
-  [1,0,-126,91,8,0,0,6,0,1,0,-16,0,0, ldraw_lib__box()],
+  [1,0,-126,91,8,0,0,6,0,1,0,-16,0,0, ldraw_lib__box(realsolid)],
 // 1 0 -126 92 10 0 0 6 0 4 0 -4 0 0 box5.dat
-  [1,0,-126,92,10,0,0,6,0,4,0,-4,0,0, ldraw_lib__box5()],
+  [1,0,-126,92,10,0,0,6,0,4,0,-4,0,0, ldraw_lib__box5(realsolid)],
 ];
 module ldraw_lib__45341(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__45341(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__45341(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__45341(line=0.2);

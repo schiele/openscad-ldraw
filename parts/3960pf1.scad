@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3960s01.scad>
-function ldraw_lib__3960pf1() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3960pf1(realsolid=false) = [
 // 0 Dish  4 x  4 Inverted with Fabuland 1-4 Figures Pattern
 // 0 Name: 3960pf1.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -15,7 +16,7 @@ function ldraw_lib__3960pf1() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3960s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3960s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3960s01(realsolid)],
 // 3 1 34.7659 6 3.5634 34.8382 6 2.4568 35.0688 6.111 3.1741
   [3,1,34.7659,6,3.5634,34.8382,6,2.4568,35.0688,6.111,3.1741],
 // 4 1 34.879 6 1.8327 35.2608 6.1644 2.2781 35.0688 6.111 3.1741 34.8382 6 2.4568
@@ -2826,5 +2827,5 @@ function ldraw_lib__3960pf1() = [
   [5,24,9.6588,0,-2.588,21.2497,2,-5.6938,20.3253,2,-8.4189,9.9144,0,-1.3053],
 ];
 module ldraw_lib__3960pf1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3960pf1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3960pf1(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3960pf1(line=0.2);

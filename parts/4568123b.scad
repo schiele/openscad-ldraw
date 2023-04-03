@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__4568123b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4568123b(realsolid=false) = [
 // 0 Sticker  1.1 x  1.7 with Yellow Alien Text and Imperial Shuttle Side View
 // 0 Name: 4568123b.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -17,7 +18,7 @@ function ldraw_lib__4568123b() = [
 // 
 // 
 // 1 16 0 -0.25 0 17.5 0 0 0 0.25 0 0 0 11.25 box5-12.dat
-  [1,16,0,-0.25,0,17.5,0,0,0,0.25,0,0,0,11.25, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,17.5,0,0,0,0.25,0,0,0,11.25, ldraw_lib__box5_12(realsolid)],
 // 
 // 4 14 -9.55 -0.25 2.375 -11 -0.25 2.95 -11.15 -0.25 2.6 -9.7 -0.25 2.025
   [4,14,-9.55,-0.25,2.375,-11,-0.25,2.95,-11.15,-0.25,2.6,-9.7,-0.25,2.025],
@@ -533,5 +534,5 @@ function ldraw_lib__4568123b() = [
   [3,0,-11.5,-0.25,7.55,-10.8,-0.25,4,-11.15,-0.25,8.35],
 ];
 module ldraw_lib__4568123b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4568123b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4568123b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4568123b(line=0.2);

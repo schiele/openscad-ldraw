@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/33320s01.scad>
-function ldraw_lib__33320() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__33320(realsolid=false) = [
 // 0 Animal Frog
 // 0 Name: 33320.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -20,9 +21,9 @@ function ldraw_lib__33320() = [
 // 0 // a tool developed with the support of the Epoch NOE
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\33320s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__33320s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__33320s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\33320s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__33320s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__33320s01(realsolid)],
 // 0 // Middle condlines
 // 5 24 0 -17.026 -7.155 0 -17.515 -7.591 1.168 -16.85 -7.12 -1.168 -16.85 -7.12
   [5,24,0,-17.026,-7.155,0,-17.515,-7.591,1.168,-16.85,-7.12,-1.168,-16.85,-7.12],
@@ -201,5 +202,5 @@ function ldraw_lib__33320() = [
 // 0 //
 ];
 module ldraw_lib__33320(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__33320(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__33320(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__33320(line=0.2);

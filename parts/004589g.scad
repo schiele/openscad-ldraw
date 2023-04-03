@@ -10,7 +10,8 @@ use <../p/type-swiss721bt-bold-uo.scad>
 use <../p/type-swiss721bt-bold-ur.scad>
 use <../p/type-swiss721bt-bold-us.scad>
 use <../p/type-swiss721bt-bold-ut.scad>
-function ldraw_lib__004589g() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__004589g(realsolid=false) = [
 // 0 Sticker  1.1 x  7.9 with Black "CENTRAL STATION" on White Background
 // 0 Name: 004589g.dat
 // 0 Author: Alex Taylor [anathema]
@@ -30,29 +31,29 @@ function ldraw_lib__004589g() = [
 // 
 // 0 // Font Swiss721 BT Bold (partially inlined due to kernings)
 // 1 16 0 -0.25 0 79 0 0 0 0.25 0 0 0 11 box5-12.dat
-  [1,16,0,-0.25,0,79,0,0,0,0.25,0,0,0,11, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,79,0,0,0,0.25,0,0,0,11, ldraw_lib__box5_12(realsolid)],
 // 1 15 -66 -.25 0 12 0 0 0 1 0 0 0 12 type-swiss721bt-bold-uc.dat
-  [1,15,-66,-.25,0,12,0,0,0,1,0,0,0,12, ldraw_lib__type_swiss721bt_bold_uc()],
+  [1,15,-66,-.25,0,12,0,0,0,1,0,0,0,12, ldraw_lib__type_swiss721bt_bold_uc(realsolid)],
 // 1 15 -55 -.25 0 12 0 0 0 1 0 0 0 12 type-swiss721bt-bold-ue.dat
-  [1,15,-55,-.25,0,12,0,0,0,1,0,0,0,12, ldraw_lib__type_swiss721bt_bold_ue()],
+  [1,15,-55,-.25,0,12,0,0,0,1,0,0,0,12, ldraw_lib__type_swiss721bt_bold_ue(realsolid)],
 // 1 15 -45 -.25 0 12 0 0 0 1 0 0 0 12 type-swiss721bt-bold-un.dat
-  [1,15,-45,-.25,0,12,0,0,0,1,0,0,0,12, ldraw_lib__type_swiss721bt_bold_un()],
+  [1,15,-45,-.25,0,12,0,0,0,1,0,0,0,12, ldraw_lib__type_swiss721bt_bold_un(realsolid)],
 // 1 15 -34.5 -.25 0 12 0 0 0 1 0 0 0 12 type-swiss721bt-bold-ut.dat
-  [1,15,-34.5,-.25,0,12,0,0,0,1,0,0,0,12, ldraw_lib__type_swiss721bt_bold_ut()],
+  [1,15,-34.5,-.25,0,12,0,0,0,1,0,0,0,12, ldraw_lib__type_swiss721bt_bold_ut(realsolid)],
 // 1 15 -24 -.25 0 12 0 0 0 1 0 0 0 12 type-swiss721bt-bold-ur.dat
-  [1,15,-24,-.25,0,12,0,0,0,1,0,0,0,12, ldraw_lib__type_swiss721bt_bold_ur()],
+  [1,15,-24,-.25,0,12,0,0,0,1,0,0,0,12, ldraw_lib__type_swiss721bt_bold_ur(realsolid)],
 // 1 15 -13 -.25 0 12 0 0 0 1 0 0 0 12 type-swiss721bt-bold-ua.dat
-  [1,15,-13,-.25,0,12,0,0,0,1,0,0,0,12, ldraw_lib__type_swiss721bt_bold_ua()],
+  [1,15,-13,-.25,0,12,0,0,0,1,0,0,0,12, ldraw_lib__type_swiss721bt_bold_ua(realsolid)],
 // 1 15 -2.5 -.25 0 12 0 0 0 1 0 0 0 12 type-swiss721bt-bold-ul.dat
-  [1,15,-2.5,-.25,0,12,0,0,0,1,0,0,0,12, ldraw_lib__type_swiss721bt_bold_ul()],
+  [1,15,-2.5,-.25,0,12,0,0,0,1,0,0,0,12, ldraw_lib__type_swiss721bt_bold_ul(realsolid)],
 // 1 15 10 -.25 0 12 0 0 0 1 0 0 0 12 type-swiss721bt-bold-us.dat
-  [1,15,10,-.25,0,12,0,0,0,1,0,0,0,12, ldraw_lib__type_swiss721bt_bold_us()],
+  [1,15,10,-.25,0,12,0,0,0,1,0,0,0,12, ldraw_lib__type_swiss721bt_bold_us(realsolid)],
 // 1 15 46.5 -.25 0 12 0 0 0 1 0 0 0 12 type-swiss721bt-bold-ui.dat
-  [1,15,46.5,-.25,0,12,0,0,0,1,0,0,0,12, ldraw_lib__type_swiss721bt_bold_ui()],
+  [1,15,46.5,-.25,0,12,0,0,0,1,0,0,0,12, ldraw_lib__type_swiss721bt_bold_ui(realsolid)],
 // 1 15 55 -.25 0 12 0 0 0 1 0 0 0 12 type-swiss721bt-bold-uo.dat
-  [1,15,55,-.25,0,12,0,0,0,1,0,0,0,12, ldraw_lib__type_swiss721bt_bold_uo()],
+  [1,15,55,-.25,0,12,0,0,0,1,0,0,0,12, ldraw_lib__type_swiss721bt_bold_uo(realsolid)],
 // 1 15 66.5 -.25 0 12 0 0 0 1 0 0 0 12 type-swiss721bt-bold-un.dat
-  [1,15,66.5,-.25,0,12,0,0,0,1,0,0,0,12, ldraw_lib__type_swiss721bt_bold_un()],
+  [1,15,66.5,-.25,0,12,0,0,0,1,0,0,0,12, ldraw_lib__type_swiss721bt_bold_un(realsolid)],
 // 4 15 -71.196 -.25 6 -79 -.25 11 -79 -.25 -11 -71.196 -.25 -6
   [4,15,-71.196,-.25,6,-79,-.25,11,-79,-.25,-11,-71.196,-.25,-6],
 // 3 15 -79 -.25 11 -71.196 -.25 6 -60.804 -.25 6
@@ -243,5 +244,5 @@ function ldraw_lib__004589g() = [
   [3,15,61.556,-.25,-6,60.568,-.25,-6,79,-.25,-11],
 ];
 module ldraw_lib__004589g(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__004589g(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__004589g(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__004589g(line=0.2);

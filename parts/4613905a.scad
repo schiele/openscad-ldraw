@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__4613905a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4613905a(realsolid=false) = [
 // 0 Sticker  0.8 x  3.8 DkRed with "LC 3957" License Plate
 // 0 Name: 4613905a.dat
 // 0 Author: Christian Neumann [Wesley]
@@ -19,7 +20,7 @@ function ldraw_lib__4613905a() = [
 // 
 // 
 // 1 320 0 -0.25 0 38 0 0 0 0.25 0 0 0 8 box5-12.dat
-  [1,320,0,-0.25,0,38,0,0,0,0.25,0,0,0,8, ldraw_lib__box5_12()],
+  [1,320,0,-0.25,0,38,0,0,0,0.25,0,0,0,8, ldraw_lib__box5_12(realsolid)],
 // 4 0 -15.2 -0.25 -1.6 -15.2 -0.25 3.9 -16.3 -0.25 3.9 -16.3 -0.25 -2.6
   [4,0,-15.2,-0.25,-1.6,-15.2,-0.25,3.9,-16.3,-0.25,3.9,-16.3,-0.25,-2.6],
 // 4 0 -11.9 -0.25 -1.6 -15.2 -0.25 -1.6 -16.3 -0.25 -2.6 -11.9 -0.25 -2.6
@@ -552,5 +553,5 @@ function ldraw_lib__4613905a() = [
   [4,320,38,-0.25,8,-38,-0.25,8,-20.7,-0.25,6.3,20.7,-0.25,6.3],
 ];
 module ldraw_lib__4613905a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4613905a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4613905a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4613905a(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <92339.scad>
-function ldraw_lib__4616992() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4616992(realsolid=false) = [
 // 0 ~_Train Base  6 x 28 with 6 Holes and Twin  2 x  2 Cutouts Black (Obsolete)
 // 0 Name: 4616992.dat
 // 0 Author: [PTadmin]
@@ -20,8 +21,8 @@ function ldraw_lib__4616992() = [
 // 0 // colouring of the part (Black).
 // 
 // 1 0 0 0 0 1 0 0 0 1 0 0 0 1 92339.dat
-  [1,0,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__92339()],
+  [1,0,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__92339(realsolid)],
 ];
 module ldraw_lib__4616992(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4616992(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4616992(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4616992(line=0.2);

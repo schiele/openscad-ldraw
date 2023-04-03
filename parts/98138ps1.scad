@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/98138s01.scad>
-function ldraw_lib__98138ps1() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__98138ps1(realsolid=false) = [
 // 0 Tile  1 x  1 Round with Thermal Detonator Pattern
 // 0 Name: 98138ps1.dat
 // 0 Author: Merlijn Wissink [legolijntje]
@@ -15,7 +16,7 @@ function ldraw_lib__98138ps1() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\98138s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01(realsolid)],
 // 
 // 4 0 -8.414 0 0 -7.773 0 3.22 -8.315 0 3.444 -9 0 0
   [4,0,-8.414,0,0,-7.773,0,3.22,-8.315,0,3.444,-9,0,0],
@@ -647,5 +648,5 @@ function ldraw_lib__98138ps1() = [
   [3,0,4.6,0,-0.3,3.1,0,-1,3.4,0,-1],
 ];
 module ldraw_lib__98138ps1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__98138ps1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__98138ps1(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__98138ps1(line=0.2);

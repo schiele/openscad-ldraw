@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__4114141c() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4114141c(realsolid=false) = [
 // 0 Sticker  3.4 x  4.4 with Black Lines & Patched Cloth Side A
 // 0 Name: 4114141c.dat
 // 0 Author: Merlijn Wissink [legolijntje]
@@ -1307,5 +1308,5 @@ function ldraw_lib__4114141c() = [
   [3,16,-41,0,33.3,-38.8,0,34.5,-42.2,0,32.1],
 ];
 module ldraw_lib__4114141c(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4114141c(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4114141c(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4114141c(line=0.2);

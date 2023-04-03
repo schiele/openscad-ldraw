@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3039s01.scad>
-function ldraw_lib__3039pa0() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3039pa0(realsolid=false) = [
 // 0 Slope Brick 45  2 x  2 with Screen with Black and Yellow Border Pattern
 // 0 Name: 3039pa0.dat
 // 0 Author: Tim Lampmann [L4mpi]
@@ -17,7 +18,7 @@ function ldraw_lib__3039pa0() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3039s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3039s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3039s01(realsolid)],
 // 
 // 4 0 -15.612 3.409 -13.409 -15 3.323 -13.323 -15 2.828 -12.828 -18.489 .945 -10.945
   [4,0,-15.612,3.409,-13.409,-15,3.323,-13.323,-15,2.828,-12.828,-18.489,.945,-10.945],
@@ -1225,5 +1226,5 @@ function ldraw_lib__3039pa0() = [
   [3,6,-4.1,15.061,-25.061,-4.1,15.768,-25.768,-3,15.203,-25.203],
 ];
 module ldraw_lib__3039pa0(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3039pa0(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3039pa0(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3039pa0(line=0.2);

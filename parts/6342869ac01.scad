@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__6342869ac01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6342869ac01(realsolid=false) = [
 // 0 Sticker  0.8 x  5.6 Rectangle Chrome (Formed)
 // 0 Name: 6342869ac01.dat
 // 0 Author: Orion Pobursky [OrionP]
@@ -167,5 +168,5 @@ function ldraw_lib__6342869ac01() = [
   [4,16,15,-3.4498,-75.7727,-15,-3.4498,-75.7727,-15,-3.4334,-75.5237,15,-3.4334,-75.5237],
 ];
 module ldraw_lib__6342869ac01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6342869ac01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6342869ac01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6342869ac01(line=0.2);

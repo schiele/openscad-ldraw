@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/3-16edge.scad>
 use <../../p/5-16edge.scad>
-function ldraw_lib__s__49577s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__49577s01(realsolid=false) = [
 // 0 ~Plant Seaweed with  4 Studs and  7 Bars - Half
 // 0 Name: s\49577s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -1680,7 +1681,7 @@ function ldraw_lib__s__49577s01() = [
 // 2 24 8 16 0 7.6764 16.1684 1.5197
   [2,24,8,16,0,7.6764,16.1684,1.5197],
 // 1 16 20 30 4 0 0 -8 -8 0 0 0 1 0 5-16edge.dat
-  [1,16,20,30,4,0,0,-8,-8,0,0,0,1,0, ldraw_lib__5_16edge()],
+  [1,16,20,30,4,0,0,-8,-8,0,0,0,1,0, ldraw_lib__5_16edge(realsolid)],
 // 2 24 27.5679 27.827 3.696 27.6607 28.2939 3.7641
   [2,24,27.5679,27.827,3.696,27.6607,28.2939,3.7641],
 // 2 24 27.9094 29.5444 4 28 30 4
@@ -1754,7 +1755,7 @@ function ldraw_lib__s__49577s01() = [
 // 2 24 -5.4711 64.2181 0 -5.1917 64.0324 1.531
   [2,24,-5.4711,64.2181,0,-5.1917,64.0324,1.531],
 // 1 16 -20 50 4 7.39104 0 -3.06147 -3.06147 0 -7.39104 0 1 0 3-16edge.dat
-  [1,16,-20,50,4,7.39104,0,-3.06147,-3.06147,0,-7.39104,0,1,0, ldraw_lib__3_16edge()],
+  [1,16,-20,50,4,7.39104,0,-3.06147,-3.06147,0,-7.39104,0,1,0, ldraw_lib__3_16edge(realsolid)],
 // 2 24 -14.3432 55.6568 0.6412 -14.8618 56.0034 0
   [2,24,-14.3432,55.6568,0.6412,-14.8618,56.0034,0],
 // 2 24 -12.3055 51.5364 3.696 -12 50 3.8962
@@ -1797,5 +1798,5 @@ function ldraw_lib__s__49577s01() = [
   [5,24,-6,46,3.9997,-6,44.4693,3.696,-1.9932,43.672,3.696,-11.3578,44.9346,3.9998],
 ];
 module ldraw_lib__s__49577s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__49577s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__49577s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__49577s01(line=0.2);

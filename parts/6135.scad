@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/1-8edge.scad>
 use <2536.scad>
 use <../p/axlehol6.scad>
-function ldraw_lib__6135() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6135(realsolid=false) = [
 // 0 ~Plant Tree Palm Trunk with Technic Axlehole (Obsolete)
 // 0 Name: 6135.dat
 // 0 Author: Marc Klein [marckl]
@@ -27,17 +28,17 @@ function ldraw_lib__6135() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 2536.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2536()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2536(realsolid)],
 // 1 16 0 -8 0 0 0 -1 0 10 0 1 0 0 axlehol6.dat
-  [1,16,0,-8,0,0,0,-1,0,10,0,1,0,0, ldraw_lib__axlehol6()],
+  [1,16,0,-8,0,0,0,-1,0,10,0,1,0,0, ldraw_lib__axlehol6(realsolid)],
 // 1 16 0 -8 0 0 0 1 0 10 0 -1 0 0 axlehol6.dat
-  [1,16,0,-8,0,0,0,1,0,10,0,-1,0,0, ldraw_lib__axlehol6()],
+  [1,16,0,-8,0,0,0,1,0,10,0,-1,0,0, ldraw_lib__axlehol6(realsolid)],
 // 1 16 0 2 0 -2.2961 0 -5.54328 0 1 0 5.54328 0 -2.2961 1-8edge.dat
-  [1,16,0,2,0,-2.2961,0,-5.54328,0,1,0,5.54328,0,-2.2961, ldraw_lib__1_8edge()],
+  [1,16,0,2,0,-2.2961,0,-5.54328,0,1,0,5.54328,0,-2.2961, ldraw_lib__1_8edge(realsolid)],
 // 1 16 0 2 0 2.2961 0 5.54328 0 1 0 -5.54328 0 2.2961 1-8edge.dat
-  [1,16,0,2,0,2.2961,0,5.54328,0,1,0,-5.54328,0,2.2961, ldraw_lib__1_8edge()],
+  [1,16,0,2,0,2.2961,0,5.54328,0,1,0,-5.54328,0,2.2961, ldraw_lib__1_8edge(realsolid)],
 // 0
 ];
 module ldraw_lib__6135(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6135(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6135(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6135(line=0.2);

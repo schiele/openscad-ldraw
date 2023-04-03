@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/48/4-4cyli.scad>
 use <../p/48/4-4disc.scad>
 use <../p/48/4-4ring5.scad>
-function ldraw_lib__190085a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__190085a(realsolid=false) = [
 // 0 Sticker  3.6 x  4 Oval Mirror with Red Frame
 // 0 Name: 190085a.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -19,14 +20,14 @@ function ldraw_lib__190085a() = [
 // 
 // 
 // 1 16 0 0 0 42 0 0 0 -.25 0 0 0 36 48\4-4cyli.dat
-  [1,16,0,0,0,42,0,0,0,-.25,0,0,0,36, ldraw_lib__48__4_4cyli()],
+  [1,16,0,0,0,42,0,0,0,-.25,0,0,0,36, ldraw_lib__48__4_4cyli(realsolid)],
 // 1 16 0 0 0 42 0 0 0 -1 0 0 0 36 48\4-4disc.dat
-  [1,16,0,0,0,42,0,0,0,-1,0,0,0,36, ldraw_lib__48__4_4disc()],
+  [1,16,0,0,0,42,0,0,0,-1,0,0,0,36, ldraw_lib__48__4_4disc(realsolid)],
 // 1 383 0 -.25 0 35 0 0 0 1 0 0 0 30 48\4-4disc.dat
-  [1,383,0,-.25,0,35,0,0,0,1,0,0,0,30, ldraw_lib__48__4_4disc()],
+  [1,383,0,-.25,0,35,0,0,0,1,0,0,0,30, ldraw_lib__48__4_4disc(realsolid)],
 // 1 4 0 -.25 0 7 0 0 0 1 0 0 0 6 48\4-4ring5.dat
-  [1,4,0,-.25,0,7,0,0,0,1,0,0,0,6, ldraw_lib__48__4_4ring5()],
+  [1,4,0,-.25,0,7,0,0,0,1,0,0,0,6, ldraw_lib__48__4_4ring5(realsolid)],
 ];
 module ldraw_lib__190085a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__190085a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__190085a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__190085a(line=0.2);

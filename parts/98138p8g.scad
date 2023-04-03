@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/4-4ering.scad>
 use <s/98138s01.scad>
-function ldraw_lib__98138p8g() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__98138p8g(realsolid=false) = [
 // 0 Tile  1 x  1 Round with Three Light Grey Outlined Balls with Black Spot Pattern
 // 0 Name: 98138p8g.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -18,9 +19,9 @@ function ldraw_lib__98138p8g() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\98138s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01(realsolid)],
 // 1 16 0 0 0 9 0 0 0 1 0 0 0 9 4-4ering.dat
-  [1,16,0,0,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4ering()],
+  [1,16,0,0,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4ering(realsolid)],
 // 4 0 5.46 0 5.8 5.17 0 5.85 4.95 0 5.76 4.74 0 5.53
   [4,0,5.46,0,5.8,5.17,0,5.85,4.95,0,5.76,4.74,0,5.53],
 // 4 0 5.73 0 5.61 5.46 0 5.8 4.74 0 5.53 6.05 0 5.27
@@ -591,5 +592,5 @@ function ldraw_lib__98138p8g() = [
   [3,71,6.61,0,2.35,6.52,0,2.055,6.7,0,2.22],
 ];
 module ldraw_lib__98138p8g(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__98138p8g(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__98138p8g(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__98138p8g(line=0.2);

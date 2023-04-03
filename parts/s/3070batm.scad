@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__3070batm() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__3070batm(realsolid=false) = [
 // 0 ~Tile  1 x  1 with "M" Pattern
 // 0 Name: s\3070batm.dat
 // 0 Author: Chris Dee [cwdee]
@@ -30,5 +31,5 @@ function ldraw_lib__s__3070batm() = [
 // 0
 ];
 module ldraw_lib__s__3070batm(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__3070batm(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__3070batm(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__3070batm(line=0.2);

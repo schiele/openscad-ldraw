@@ -2,7 +2,8 @@ use <../../lib.scad>
 use <../../p/box2-11.scad>
 use <../../p/box3u7a.scad>
 use <../../p/rect.scad>
-function ldraw_lib__s__948cs01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__948cs01(realsolid=false) = [
 // 0 ~Train Track  4.5V Point Left - Slotted Grooved Rail End
 // 0 Name: s\948cs01.dat
 // 0 Author: Alex Taylor [anathema]
@@ -123,19 +124,19 @@ function ldraw_lib__s__948cs01() = [
 // 4 16 6 8 2 6 6 2 6 6 -2 6 8 -2
   [4,16,6,8,2,6,6,2,6,6,-2,6,8,-2],
 // 1 16 -2 13.5 6 8 0 0 0 0 -2.5 0 1 0 rect.dat
-  [1,16,-2,13.5,6,8,0,0,0,0,-2.5,0,1,0, ldraw_lib__rect()],
+  [1,16,-2,13.5,6,8,0,0,0,0,-2.5,0,1,0, ldraw_lib__rect(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -8.25 14 0 0 -1.75 0 0 0 -2 6 0 0 box2-11.dat
-  [1,16,-8.25,14,0,0,-1.75,0,0,0,-2,6,0,0, ldraw_lib__box2_11()],
+  [1,16,-8.25,14,0,0,-1.75,0,0,0,-2,6,0,0, ldraw_lib__box2_11(realsolid)],
 // 4 16 6 8 3 6 11 6 -6.5 11 6 -6.5 8 3
   [4,16,6,8,3,6,11,6,-6.5,11,6,-6.5,8,3],
 // 1 16 -0.25 6 0 -6.25 0 0 0 -1 0 0 0 2 rect.dat
-  [1,16,-0.25,6,0,-6.25,0,0,0,-1,0,0,0,2, ldraw_lib__rect()],
+  [1,16,-0.25,6,0,-6.25,0,0,0,-1,0,0,0,2, ldraw_lib__rect(realsolid)],
 // 4 16 6 11 -6 6 8 -3 -6.5 8 -3 -6.5 11 -6
   [4,16,6,11,-6,6,8,-3,-6.5,8,-3,-6.5,11,-6],
 // 1 16 -2 13.5 -6 -8 0 0 0 0 -2.5 0 -1 0 rect.dat
-  [1,16,-2,13.5,-6,-8,0,0,0,0,-2.5,0,-1,0, ldraw_lib__rect()],
+  [1,16,-2,13.5,-6,-8,0,0,0,0,-2.5,0,-1,0, ldraw_lib__rect(realsolid)],
 // 4 16 -6.5 12 -6 -6.5 11 -6 -6.5 11 6 -6.5 12 6
   [4,16,-6.5,12,-6,-6.5,11,-6,-6.5,11,6,-6.5,12,6],
 // 4 16 -6.5 11 -6 -6.5 8 -3 -6.5 8 3 -6.5 11 6
@@ -143,7 +144,7 @@ function ldraw_lib__s__948cs01() = [
 // 4 16 -6.5 8 -2 -6.5 6 -2 -6.5 6 2 -6.5 8 2
   [4,16,-6.5,8,-2,-6.5,6,-2,-6.5,6,2,-6.5,8,2],
 // 1 16 -10 12 0 0 20 0 -4 0 0 0 0 10 box3u7a.dat
-  [1,16,-10,12,0,0,20,0,-4,0,0,0,0,10, ldraw_lib__box3u7a()],
+  [1,16,-10,12,0,0,20,0,-4,0,0,0,0,10, ldraw_lib__box3u7a(realsolid)],
 // 3 16 -10 0 2 10 1 2 6.25 0 2
   [3,16,-10,0,2,10,1,2,6.25,0,2],
 // 2 24 6.25 0 2 10 1 2
@@ -186,5 +187,5 @@ function ldraw_lib__s__948cs01() = [
   [4,16,-10,0,-1,6.25,0,-1,6.25,0,-2,-10,0,-2],
 ];
 module ldraw_lib__s__948cs01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__948cs01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__948cs01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__948cs01(line=0.2);

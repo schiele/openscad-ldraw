@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <2038.scad>
 use <4158884a.scad>
-function ldraw_lib__2038d02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2038d02(realsolid=false) = [
 // 0 Signpost Ornamented Type 1 with 2 Stickers "9 3/4" Round
 // 0 Name: 2038d02.dat
 // 0 Author: Steffen [Steffen]
@@ -21,12 +22,12 @@ function ldraw_lib__2038d02() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 2038.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2038()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2038(realsolid)],
 // 1 16 61 43 2.5 -1 0 0 0 0 -1 0 -1 0 4158884a.dat
-  [1,16,61,43,2.5,-1,0,0,0,0,-1,0,-1,0, ldraw_lib__4158884a()],
+  [1,16,61,43,2.5,-1,0,0,0,0,-1,0,-1,0, ldraw_lib__4158884a(realsolid)],
 // 1 16 61 43 -2.5 1 0 0 0 0 -1 0 1 0 4158884a.dat
-  [1,16,61,43,-2.5,1,0,0,0,0,-1,0,1,0, ldraw_lib__4158884a()],
+  [1,16,61,43,-2.5,1,0,0,0,0,-1,0,1,0, ldraw_lib__4158884a(realsolid)],
 ];
 module ldraw_lib__2038d02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2038d02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2038d02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2038d02(line=0.2);

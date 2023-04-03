@@ -3,7 +3,8 @@ use <../../p/3-16cyli.scad>
 use <../../p/5-16cyli.scad>
 use <../../p/5-16edge.scad>
 use <../../p/t04o6250.scad>
-function ldraw_lib__s__55705s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__55705s01(realsolid=false) = [
 // 0 ~Minifig Headdress Catwoman Short with Wider Eyeholes
 // 0 Name: s\55705s01.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -515,7 +516,7 @@ function ldraw_lib__s__55705s01() = [
 // 2 24 9.1923 16 -9.1923 12.011 16 -4.975
   [2,24,9.1923,16,-9.1923,12.011,16,-4.975],
 // 1 16 0 16 0 0 0 13 0 1 0 13 0 0 5-16edge.dat
-  [1,16,0,16,0,0,0,13,0,1,0,13,0,0, ldraw_lib__5_16edge()],
+  [1,16,0,16,0,0,0,13,0,1,0,13,0,0, ldraw_lib__5_16edge(realsolid)],
 // 0 // inner surface
 // 4 16 4.9751 12.214 -12.0107 1.414 12.586 -12.719 .765 12.152 -12.848 2.298 9.859 -12.543
   [4,16,4.9751,12.214,-12.0107,1.414,12.586,-12.719,.765,12.152,-12.848,2.298,9.859,-12.543],
@@ -577,19 +578,19 @@ function ldraw_lib__s__55705s01() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 16 0 0 0 13 0 -16 0 13 0 0 5-16cyli.dat
-  [1,16,0,16,0,0,0,13,0,-16,0,13,0,0, ldraw_lib__5_16cyli()],
+  [1,16,0,16,0,0,0,13,0,-16,0,13,0,0, ldraw_lib__5_16cyli(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 0 0 0 13 0 4 0 -13 0 0 3-16cyli.dat
-  [1,16,0,0,0,0,0,13,0,4,0,-13,0,0, ldraw_lib__3_16cyli()],
+  [1,16,0,0,0,0,0,13,0,4,0,-13,0,0, ldraw_lib__3_16cyli(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 0 8 0 0 0 -6.4 0 0 0 -8 t04o6250.dat
-  [1,16,0,0,0,8,0,0,0,-6.4,0,0,0,-8, ldraw_lib__t04o6250()],
+  [1,16,0,0,0,8,0,0,0,-6.4,0,0,0,-8, ldraw_lib__t04o6250(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 0 0 0 8 0 -6.4 0 8 0 0 t04o6250.dat
-  [1,16,0,0,0,0,0,8,0,-6.4,0,8,0,0, ldraw_lib__t04o6250()],
+  [1,16,0,0,0,0,0,8,0,-6.4,0,8,0,0, ldraw_lib__t04o6250(realsolid)],
 // 0 // old condlines
 // 5 24 5.189 4.078 15.097 6.45 16 14.642 11.394 4.078 11.232 0 16 16
   [5,24,5.189,4.078,15.097,6.45,16,14.642,11.394,4.078,11.232,0,16,16],
@@ -960,5 +961,5 @@ function ldraw_lib__s__55705s01() = [
   [5,24,4.12,-2.81,13.123,2.049,-7.864,7.677,7.058,-6.18,7.824,0,-2.815,13.751],
 ];
 module ldraw_lib__s__55705s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__55705s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__55705s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__55705s01(line=0.2);

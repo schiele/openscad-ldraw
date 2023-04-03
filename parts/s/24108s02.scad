@@ -5,7 +5,8 @@ use <../../p/box2-5.scad>
 use <../../p/rect.scad>
 use <../../p/rect2p.scad>
 use <../../p/rect3.scad>
-function ldraw_lib__s__24108s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__24108s02(realsolid=false) = [
 // 0 ~Minifig Sword with Hexagonal Decorations - One Half of Patternable Areas
 // 0 Name: s\24108s02.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -21,23 +22,23 @@ function ldraw_lib__s__24108s02() = [
 // 
 // 0 // Primitives
 // 1 16 4 -34 0 0 -1 0 -7 0 0 0 0 7 7-16ndis.dat
-  [1,16,4,-34,0,0,-1,0,-7,0,0,0,0,7, ldraw_lib__7_16ndis()],
+  [1,16,4,-34,0,0,-1,0,-7,0,0,0,0,7, ldraw_lib__7_16ndis(realsolid)],
 // 1 16 4 -34 0 0 -1 0 -7 0 0 0 0 -7 7-16ndis.dat
-  [1,16,4,-34,0,0,-1,0,-7,0,0,0,0,-7, ldraw_lib__7_16ndis()],
+  [1,16,4,-34,0,0,-1,0,-7,0,0,0,0,-7, ldraw_lib__7_16ndis(realsolid)],
 // 1 16 0 -32.5 7.875 -4 0 0 0 6.5 -1 0 0 1.375 box2-5.dat
-  [1,16,0,-32.5,7.875,-4,0,0,0,6.5,-1,0,0,1.375, ldraw_lib__box2_5()],
+  [1,16,0,-32.5,7.875,-4,0,0,0,6.5,-1,0,0,1.375, ldraw_lib__box2_5(realsolid)],
 // 1 16 0 -28.375 10 -2.25 0 0 0 -1 -.625 0 0 .75 rect.dat
-  [1,16,0,-28.375,10,-2.25,0,0,0,-1,-.625,0,0,.75, ldraw_lib__rect()],
+  [1,16,0,-28.375,10,-2.25,0,0,0,-1,-.625,0,0,.75, ldraw_lib__rect(realsolid)],
 // 1 16 0 -39.1525 10 -2.25 0 0 0 1 .4025 0 0 -.75 rect.dat
-  [1,16,0,-39.1525,10,-2.25,0,0,0,1,.4025,0,0,-.75, ldraw_lib__rect()],
+  [1,16,0,-39.1525,10,-2.25,0,0,0,1,.4025,0,0,-.75, ldraw_lib__rect(realsolid)],
 // 1 16 0 -41 20 0 0 1 3.5 0 0 0 -1 0 rect2p.dat
-  [1,16,0,-41,20,0,0,1,3.5,0,0,0,-1,0, ldraw_lib__rect2p()],
+  [1,16,0,-41,20,0,0,1,3.5,0,0,0,-1,0, ldraw_lib__rect2p(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 3.03 -47.625 0 0 0 -.47 0 5.625 0 -3.1 0 0 box2-11.dat
-  [1,16,3.03,-47.625,0,0,0,-.47,0,5.625,0,-3.1,0,0, ldraw_lib__box2_11()],
+  [1,16,3.03,-47.625,0,0,0,-.47,0,5.625,0,-3.1,0,0, ldraw_lib__box2_11(realsolid)],
 // 1 16 0 -119.3606 10 -.725 0 0 0 0 -7.6394 0 -1 0 rect3.dat
-  [1,16,0,-119.3606,10,-.725,0,0,0,0,-7.6394,0,-1,0, ldraw_lib__rect3()],
+  [1,16,0,-119.3606,10,-.725,0,0,0,0,-7.6394,0,-1,0, ldraw_lib__rect3(realsolid)],
 // 0 // Blade
 // 0 // Faces
 // 3 16 2.56 -53.25 -3.1 2.56 -53.25 3.1 2.56 -55.3811 0
@@ -449,5 +450,5 @@ function ldraw_lib__s__24108s02() = [
   [2,24,-4,-42,6.5,-4,-40,9.25],
 ];
 module ldraw_lib__s__24108s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__24108s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__24108s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__24108s02(line=0.2);

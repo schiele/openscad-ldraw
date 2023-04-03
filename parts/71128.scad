@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <902.scad>
-function ldraw_lib__71128() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__71128(realsolid=false) = [
 // 0 ~_Electric Light Reflector Round  2 x  2 x  0.667 Chrome Silver (Obsolete)
 // 0 Name: 71128.dat
 // 0 Author: [PTadmin]
@@ -20,8 +21,8 @@ function ldraw_lib__71128() = [
 // 0 // colouring of the part (Chrome Silver).
 // 
 // 1 383 0 0 0 1 0 0 0 1 0 0 0 1 902.dat
-  [1,383,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__902()],
+  [1,383,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__902(realsolid)],
 ];
 module ldraw_lib__71128(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__71128(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__71128(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__71128(line=0.2);

@@ -2,7 +2,8 @@ use <../lib.scad>
 use <s/6251s01.scad>
 use <s/6251s02.scad>
 use <s/6251s03.scad>
-function ldraw_lib__6251() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6251(realsolid=false) = [
 // 0 Animal Cat Crouching
 // 0 Name: 6251.dat
 // 0 Author: Willy Tschager [Holly-Wood]
@@ -28,22 +29,22 @@ function ldraw_lib__6251() = [
 // 0 // Half without Patternable Area
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\6251s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6251s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6251s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\6251s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__6251s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__6251s01(realsolid)],
 // 
 // 0 // Patternable Area Face
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\6251s02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6251s02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6251s02(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\6251s02.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__6251s02()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__6251s02(realsolid)],
 // 
 // 0 // Patternable Area Back
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\6251s03.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6251s03()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6251s03(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\6251s03.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__6251s03()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__6251s03(realsolid)],
 ];
 module ldraw_lib__6251(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6251(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6251(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6251(line=0.2);

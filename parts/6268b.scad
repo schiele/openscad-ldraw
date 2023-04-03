@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <4864b.scad>
-function ldraw_lib__6268b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6268b(realsolid=false) = [
 // 0 =Panel  1 x  2 x  2 with Hollow Studs
 // 0 Name: 6268b.dat
 // 0 Author: Chris Dee [cwdee]
@@ -22,9 +23,9 @@ function ldraw_lib__6268b() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 4864b.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4864b()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4864b(realsolid)],
 // 0
 ];
 module ldraw_lib__6268b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6268b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6268b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6268b(line=0.2);

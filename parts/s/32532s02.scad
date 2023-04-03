@@ -6,7 +6,8 @@ use <../../p/box3u5p.scad>
 use <../../p/connhol3.scad>
 use <../../p/peghole2.scad>
 use <../../p/rect3.scad>
-function ldraw_lib__s__32532s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__32532s02(realsolid=false) = [
 // 0 ~Technic Brick  6 x  8 with Open Centre  4 x  6 - Connection Hole with Fillet  1 x  1
 // 0 Name: s\32532s02.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -23,25 +24,25 @@ function ldraw_lib__s__32532s02() = [
 // 0 // Primitives
 // 
 // 1 16 0 10 -10 1 0 0 0 0 -1 0 1 0 peghole2.dat
-  [1,16,0,10,-10,1,0,0,0,0,-1,0,1,0, ldraw_lib__peghole2()],
+  [1,16,0,10,-10,1,0,0,0,0,-1,0,1,0, ldraw_lib__peghole2(realsolid)],
 // 1 16 0 10 -10 -8 0 0 0 0 -8 0 1 0 2-4ndis.dat
-  [1,16,0,10,-10,-8,0,0,0,0,-8,0,1,0, ldraw_lib__2_4ndis()],
+  [1,16,0,10,-10,-8,0,0,0,0,-8,0,1,0, ldraw_lib__2_4ndis(realsolid)],
 // 1 16 0 10 0 1 0 0 0 0 1 0 -1 0 connhol3.dat
-  [1,16,0,10,0,1,0,0,0,0,1,0,-1,0, ldraw_lib__connhol3()],
+  [1,16,0,10,0,1,0,0,0,0,1,0,-1,0, ldraw_lib__connhol3(realsolid)],
 // 1 16 0 10 10 9 0 0 0 0 9 0 -1 0 4-4ndis.dat
-  [1,16,0,10,10,9,0,0,0,0,9,0,-1,0, ldraw_lib__4_4ndis()],
+  [1,16,0,10,10,9,0,0,0,0,9,0,-1,0, ldraw_lib__4_4ndis(realsolid)],
 // 1 16 0 10 -6 8 0 0 0 0 8 0 -1 0 2-4ndis.dat
-  [1,16,0,10,-6,8,0,0,0,0,8,0,-1,0, ldraw_lib__2_4ndis()],
+  [1,16,0,10,-6,8,0,0,0,0,8,0,-1,0, ldraw_lib__2_4ndis(realsolid)],
 // 1 16 8 6 0.5 0 -1 0 0 0 -4 6.5 0 0 rect3.dat
-  [1,16,8,6,0.5,0,-1,0,0,0,-4,6.5,0,0, ldraw_lib__rect3()],
+  [1,16,8,6,0.5,0,-1,0,0,0,-4,6.5,0,0, ldraw_lib__rect3(realsolid)],
 // 1 16 0 10 -6 -8 0 0 0 0 8 0 13 0 2-4cylo.dat
-  [1,16,0,10,-6,-8,0,0,0,0,8,0,13,0, ldraw_lib__2_4cylo()],
+  [1,16,0,10,-6,-8,0,0,0,0,8,0,13,0, ldraw_lib__2_4cylo(realsolid)],
 // 1 16 -8 6 0.5 0 1 0 0 0 -4 -6.5 0 0 rect3.dat
-  [1,16,-8,6,0.5,0,1,0,0,0,-4,-6.5,0,0, ldraw_lib__rect3()],
+  [1,16,-8,6,0.5,0,1,0,0,0,-4,-6.5,0,0, ldraw_lib__rect3(realsolid)],
 // 1 16 0 10 7 -8 0 0 0 0 8 0 1 0 2-4ndis.dat
-  [1,16,0,10,7,-8,0,0,0,0,8,0,1,0, ldraw_lib__2_4ndis()],
+  [1,16,0,10,7,-8,0,0,0,0,8,0,1,0, ldraw_lib__2_4ndis(realsolid)],
 // 1 16 0 20.9503 7 0 0 .5 -3.0497 0 0 0 -1 0 box3u5p.dat
-  [1,16,0,20.9503,7,0,0,.5,-3.0497,0,0,0,-1,0, ldraw_lib__box3u5p()],
+  [1,16,0,20.9503,7,0,0,.5,-3.0497,0,0,0,-1,0, ldraw_lib__box3u5p(realsolid)],
 // 0 // Vertical faces
 // 3 16 0 18 -6 8 18 -6 8 24 -6
   [3,16,0,18,-6,8,18,-6,8,24,-6],
@@ -88,5 +89,5 @@ function ldraw_lib__s__32532s02() = [
   [2,24,.5,17.9006,6,.5,17.9006,7],
 ];
 module ldraw_lib__s__32532s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__32532s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__32532s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__32532s02(line=0.2);

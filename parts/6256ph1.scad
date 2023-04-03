@@ -4,7 +4,8 @@ use <../p/4-4edge.scad>
 use <../p/4-4ering.scad>
 use <s/6256s01.scad>
 use <../p/t04i1538.scad>
-function ldraw_lib__6256ph1() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6256ph1(realsolid=false) = [
 // 0 Minifig Dinner Plate with Metallic Light Blue Swirl Pattern
 // 0 Name: 6256ph1.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -23,25 +24,25 @@ function ldraw_lib__6256ph1() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\6256s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6256s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6256s01(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -8.5303 0 4.4611 0 0 0 8.5303 0 0 0 4.4611 4-4con4.dat
-  [1,16,0,-8.5303,0,4.4611,0,0,0,8.5303,0,0,0,4.4611, ldraw_lib__4_4con4()],
+  [1,16,0,-8.5303,0,4.4611,0,0,0,8.5303,0,0,0,4.4611, ldraw_lib__4_4con4(realsolid)],
 // 
 // 1 16 0 -7 0 26 0 0 0 -26 0 0 0 26 t04i1538.dat
-  [1,16,0,-7,0,26,0,0,0,-26,0,0,0,26, ldraw_lib__t04i1538()],
+  [1,16,0,-7,0,26,0,0,0,-26,0,0,0,26, ldraw_lib__t04i1538(realsolid)],
 // 1 16 0 -7 0 26 0 0 0 -26 0 0 0 -26 t04i1538.dat
-  [1,16,0,-7,0,26,0,0,0,-26,0,0,0,-26, ldraw_lib__t04i1538()],
+  [1,16,0,-7,0,26,0,0,0,-26,0,0,0,-26, ldraw_lib__t04i1538(realsolid)],
 // 1 16 0 -7 0 -26 0 0 0 -26 0 0 0 26 t04i1538.dat
-  [1,16,0,-7,0,-26,0,0,0,-26,0,0,0,26, ldraw_lib__t04i1538()],
+  [1,16,0,-7,0,-26,0,0,0,-26,0,0,0,26, ldraw_lib__t04i1538(realsolid)],
 // 1 16 0 -7 0 -26 0 0 0 -26 0 0 0 -26 t04i1538.dat
-  [1,16,0,-7,0,-26,0,0,0,-26,0,0,0,-26, ldraw_lib__t04i1538()],
+  [1,16,0,-7,0,-26,0,0,0,-26,0,0,0,-26, ldraw_lib__t04i1538(realsolid)],
 // 
 // 1 16 0 0 0 17.8444 0 0 0 1 0 0 0 17.8444 4-4edge.dat
-  [1,16,0,0,0,17.8444,0,0,0,1,0,0,0,17.8444, ldraw_lib__4_4edge()],
+  [1,16,0,0,0,17.8444,0,0,0,1,0,0,0,17.8444, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 0 0 17.8444 0 0 0 1 0 0 0 17.8444 4-4ering.dat
-  [1,16,0,0,0,17.8444,0,0,0,1,0,0,0,17.8444, ldraw_lib__4_4ering()],
+  [1,16,0,0,0,17.8444,0,0,0,1,0,0,0,17.8444, ldraw_lib__4_4ering(realsolid)],
 // 
 // 0 // Pattern
 // 4 10045 -.84 0 -1.08 0 0 0 -.89 0 .39 -1.66 0 .37
@@ -788,5 +789,5 @@ function ldraw_lib__6256ph1() = [
   [4,16,10.7,0,-3.13,12.07,0,-2.53,12.12,0,-1.89,11.62,0,-1.33],
 ];
 module ldraw_lib__6256ph1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6256ph1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6256ph1(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6256ph1(line=0.2);

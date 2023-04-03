@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__24118p01s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__24118p01s01(realsolid=false) = [
 // 0 ~Technic Panel 15 x  2 x  5 Mudguard Arched Vent Grid Pattern
 // 0 Name: s\24118p01s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -845,5 +846,5 @@ function ldraw_lib__s__24118p01s01() = [
   [3,16,-12.2036,-84.9838,-35.2994,-12.1268,-84.917,-23.7825,-13.6361,-86.3639,0],
 ];
 module ldraw_lib__s__24118p01s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__24118p01s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__24118p01s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__24118p01s01(line=0.2);

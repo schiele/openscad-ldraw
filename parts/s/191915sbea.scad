@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__191915sbea() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__191915sbea(realsolid=false) = [
 // 0 ~Belgian Railways Logo Foreground
 // 0 Name: s\191915sbea.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -191,5 +192,5 @@ function ldraw_lib__s__191915sbea() = [
   [3,16,8.5,0,-15.4,7.2,0,-16.6,15.9,0,-20],
 ];
 module ldraw_lib__s__191915sbea(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__191915sbea(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__191915sbea(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__191915sbea(line=0.2);

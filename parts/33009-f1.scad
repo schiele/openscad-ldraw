@@ -3,7 +3,8 @@ use <33009k01.scad>
 use <33009k02.scad>
 use <33009k03.scad>
 use <33009k04.scad>
-function ldraw_lib__33009_f1() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__33009_f1(realsolid=false) = [
 // 0 Minifig Book (Closed)
 // 0 Name: 33009-f1.dat
 // 0 Author: Franklin W. Cain [fwcain]
@@ -33,17 +34,17 @@ function ldraw_lib__33009_f1() = [
 // 0 // This piece is a "container." It easily holds a 1x2 tile with room to spare.
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 33009k01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__33009k01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__33009k01(realsolid)],
 // 1 16 6 0 1 0 0 -1 0 1 0 1 0 0 33009k02.dat
-  [1,16,6,0,1,0,0,-1,0,1,0,1,0,0, ldraw_lib__33009k02()],
+  [1,16,6,0,1,0,0,-1,0,1,0,1,0,0, ldraw_lib__33009k02(realsolid)],
 // 1 16 -6 0 1 0 0 1 0 1 0 -1 0 0 33009k03.dat
-  [1,16,-6,0,1,0,0,1,0,1,0,-1,0,0, ldraw_lib__33009k03()],
+  [1,16,-6,0,1,0,0,1,0,1,0,-1,0,0, ldraw_lib__33009k03(realsolid)],
 // 
 // 1 16 0 0 0 -1 0 0 0 -1 0 0 0 1 33009k04.dat
-  [1,16,0,0,0,-1,0,0,0,-1,0,0,0,1, ldraw_lib__33009k04()],
+  [1,16,0,0,0,-1,0,0,0,-1,0,0,0,1, ldraw_lib__33009k04(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 33009k04.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__33009k04()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__33009k04(realsolid)],
 ];
 module ldraw_lib__33009_f1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__33009_f1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__33009_f1(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__33009_f1(line=0.2);

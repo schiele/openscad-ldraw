@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <3817bs02.scad>
-function ldraw_lib__s__3817bs01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__3817bs01(realsolid=false) = [
 // 0 ~Minifig Leg Left without Front Surfaces
 // 0 Name: s\3817bs01.dat
 // 0 Author: Nils Schmidt [BlackBrick89]
@@ -15,7 +16,7 @@ function ldraw_lib__s__3817bs01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3817bs02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3817bs02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3817bs02(realsolid)],
 // 0 // outer side surface
 // 3 16 18.25 -8.75 0 18.273 -8.084 -3.349 18.273 -8.084 3.349
   [3,16,18.25,-8.75,0,18.273,-8.084,-3.349,18.273,-8.084,3.349],
@@ -35,5 +36,5 @@ function ldraw_lib__s__3817bs01() = [
   [4,16,19.5,28,10,18.546,0,8.75,18.804,7.399,-4,19.23,20,-4],
 ];
 module ldraw_lib__s__3817bs01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__3817bs01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__3817bs01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__3817bs01(line=0.2);

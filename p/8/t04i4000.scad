@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__8__t04i4000() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__8__t04i4000(realsolid=false) = [
 // 0 Lo-Res Torus Inside  1 x 0.4000 x 0.25
 // 0 Name: 8\t04i4000.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -55,5 +56,5 @@ function ldraw_lib__8__t04i4000() = [
 // 0 // Build by LDPartEditor (PrimGen 2.X)
 ];
 module ldraw_lib__8__t04i4000(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__8__t04i4000(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__8__t04i4000(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__8__t04i4000(line=0.2);

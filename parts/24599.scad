@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/24599s01.scad>
 use <../p/stud4a.scad>
-function ldraw_lib__24599() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__24599(realsolid=false) = [
 // 0 Brick  5 x  5 x  1 Corner Round with Curved Top
 // 0 Name: 24599.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -18,11 +19,11 @@ function ldraw_lib__24599() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 -1 s\24599s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__24599s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__24599s01(realsolid)],
 // 1 16 0 0 0 0 0 1 0 1 0 -1 0 0 s\24599s01.dat
-  [1,16,0,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__s__24599s01()],
+  [1,16,0,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__s__24599s01(realsolid)],
 // 1 16 60 20 -60 0 0 1 0 -1 0 -1 0 0 stud4a.dat
-  [1,16,60,20,-60,0,0,1,0,-1,0,-1,0,0, ldraw_lib__stud4a()],
+  [1,16,60,20,-60,0,0,1,0,-1,0,-1,0,0, ldraw_lib__stud4a(realsolid)],
 // 
 // 5 24 42.426 24 -42.426 42.426 20 -42.426 47.604 24 -36.528 36.528 24 -47.604
   [5,24,42.426,24,-42.426,42.426,20,-42.426,47.604,24,-36.528,36.528,24,-47.604],
@@ -46,5 +47,5 @@ function ldraw_lib__24599() = [
   [5,24,64.243,20,-64.243,64.243,9.537,-64.243,65.543,20,-62.296,62.296,20,-65.543],
 ];
 module ldraw_lib__24599(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__24599(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__24599(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__24599(line=0.2);

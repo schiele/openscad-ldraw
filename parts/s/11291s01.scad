@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/stud3a.scad>
-function ldraw_lib__s__11291s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__11291s01(realsolid=false) = [
 // 0 ~Wedge  3 x  4 x  0.667 Cutout - Side
 // 0 Name: s\11291s01.dat
 // 0 Author: Michael Heidemann [mikeheide]
@@ -15,9 +16,9 @@ function ldraw_lib__s__11291s01() = [
 // 
 // 
 // 1 16 -30 -4 -10 1 0 0 0 -3 0 0 0 -1 stud3a.dat
-  [1,16,-30,-4,-10,1,0,0,0,-3,0,0,0,-1, ldraw_lib__stud3a()],
+  [1,16,-30,-4,-10,1,0,0,0,-3,0,0,0,-1, ldraw_lib__stud3a(realsolid)],
 // 1 16 -30 0 -30 1 0 0 0 -2 0 0 0 -1 stud3a.dat
-  [1,16,-30,0,-30,1,0,0,0,-2,0,0,0,-1, ldraw_lib__stud3a()],
+  [1,16,-30,0,-30,1,0,0,0,-2,0,0,0,-1, ldraw_lib__stud3a(realsolid)],
 // 2 24 -26.304 -2.60395 -11.531 -26.053 -2.87203 -10.2669
   [2,24,-26.304,-2.60395,-11.531,-26.053,-2.87203,-10.2669],
 // 2 24 -26.053 -2.87203 -10.2669 -26 -2.89377 -10
@@ -404,5 +405,5 @@ function ldraw_lib__s__11291s01() = [
   [2,24,-30.8372,2.75,-33.8338,-30.8768,3.07902,-33.8259],
 ];
 module ldraw_lib__s__11291s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__11291s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__11291s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__11291s01(line=0.2);

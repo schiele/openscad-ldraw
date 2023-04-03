@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__44375ps0s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__44375ps0s01(realsolid=false) = [
 // 0 ~Dish  6 x  6 Inverted Millennium Falcon Cockpit Pattern, Bottom Section - 1/8
 // 0 Name: s\44375ps0s01.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -293,5 +294,5 @@ function ldraw_lib__s__44375ps0s01() = [
   [5,24,-24.352,3,-31.736,-26.5057,3,-29.8452,-23.1986,2.2949,-26.5063,-33.5406,6,-36.9479],
 ];
 module ldraw_lib__s__44375ps0s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__44375ps0s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__44375ps0s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__44375ps0s01(line=0.2);

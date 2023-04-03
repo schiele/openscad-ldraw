@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__4622303j() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4622303j(realsolid=false) = [
 // 0 Sticker  0.75 x  3.75 White "LEGO System A/S" on Black
 // 0 Name: 4622303j.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -17,7 +18,7 @@ function ldraw_lib__4622303j() = [
 // 
 // 
 // 1 16 0 -0.25 0 -37.5 0 0 0 0.25 0 0 0 -7.5 box5-12.dat
-  [1,16,0,-0.25,0,-37.5,0,0,0,0.25,0,0,0,-7.5, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,-37.5,0,0,0,0.25,0,0,0,-7.5, ldraw_lib__box5_12(realsolid)],
 // 0 //
 // 4 15 -30.028 -0.25 2.684 -30.028 -0.25 -2.6 -29.328 -0.25 -1.977 -29.328 -0.25 2.684
   [4,15,-30.028,-0.25,2.684,-30.028,-0.25,-2.6,-29.328,-0.25,-1.977,-29.328,-0.25,2.684],
@@ -1138,5 +1139,5 @@ function ldraw_lib__4622303j() = [
   [3,0,-4.573,-0.25,2.585,0.549,-0.25,1.228,4.913,-0.25,2.476],
 ];
 module ldraw_lib__4622303j(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4622303j(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4622303j(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4622303j(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <3626cp87.scad>
-function ldraw_lib__46506() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__46506(realsolid=false) = [
 // 0 =Minifig Head Glasses, Thin Brown Eyebrows, Smile Pattern (Hollow Stud)
 // 0 Name: 46506.dat
 // 0 Author: Howard Lande [HowardLande]
@@ -15,8 +16,8 @@ function ldraw_lib__46506() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 3626cp87.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3626cp87()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3626cp87(realsolid)],
 ];
 module ldraw_lib__46506(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__46506(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__46506(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__46506(line=0.2);

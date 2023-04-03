@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__6260s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__6260s01(realsolid=false) = [
 // 0 ~Minifig Torso Skeleton with Thin Shoulder Pins - Half Torus for Spine
 // 0 Name: s\6260s01.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -439,5 +440,5 @@ function ldraw_lib__s__6260s01() = [
   [5,24,4.204,0,-1.741,4.55,0,0,4.112,.344,-1.703,4.112,-.344,-1.703],
 ];
 module ldraw_lib__s__6260s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__6260s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__6260s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__6260s01(line=0.2);

@@ -5,7 +5,8 @@ use <../p/1-4ndis.scad>
 use <../p/2-4disc.scad>
 use <../p/2-4ndis.scad>
 use <s/6309s01.scad>
-function ldraw_lib__6309ptc() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6309ptc(realsolid=false) = [
 // 0 Duplo Tile  2 x  2 with "C" Pattern
 // 0 Name: 6309ptc.dat
 // 0 Author: Tony Hafner [hafhead]
@@ -22,30 +23,30 @@ function ldraw_lib__6309ptc() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\6309s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6309s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6309s01(realsolid)],
 // 
 // 0 Old solid face
 // 0 4 16 -40 0 -40 -40 0 40 40 0 40 40 0 -40
 // 
 // 0 Letter
 // 1 0 4 0 -7 17 0 -3 0 1 0 0 0 -17 1-4chrd.dat
-  [1,0,4,0,-7,17,0,-3,0,1,0,0,0,-17, ldraw_lib__1_4chrd()],
+  [1,0,4,0,-7,17,0,-3,0,1,0,0,0,-17, ldraw_lib__1_4chrd(realsolid)],
 // 1 0 -6 0 -17 -9 0 7 0 1 0 0 0 -7 1-4disc.dat
-  [1,0,-6,0,-17,-9,0,7,0,1,0,0,0,-7, ldraw_lib__1_4disc()],
+  [1,0,-6,0,-17,-9,0,7,0,1,0,0,0,-7, ldraw_lib__1_4disc(realsolid)],
 // 1 0 -15 0 -6 -6 0 0 0 1 0 6 0 -11 1-4disc.dat
-  [1,0,-15,0,-6,-6,0,0,0,1,0,6,0,-11, ldraw_lib__1_4disc()],
+  [1,0,-15,0,-6,-6,0,0,0,1,0,6,0,-11, ldraw_lib__1_4disc(realsolid)],
 // 1 0 -15 0 6 -6 0 0 0 1 0 -6 0 11 1-4disc.dat
-  [1,0,-15,0,6,-6,0,0,0,1,0,-6,0,11, ldraw_lib__1_4disc()],
+  [1,0,-15,0,6,-6,0,0,0,1,0,-6,0,11, ldraw_lib__1_4disc(realsolid)],
 // 1 0 -6 0 17 -9 0 7 0 1 0 0 0 7 1-4disc.dat
-  [1,0,-6,0,17,-9,0,7,0,1,0,0,0,7, ldraw_lib__1_4disc()],
+  [1,0,-6,0,17,-9,0,7,0,1,0,0,0,7, ldraw_lib__1_4disc(realsolid)],
 // 1 0 3 0 9 18 0 -2 0 1 0 0 0 15 1-4chrd.dat
-  [1,0,3,0,9,18,0,-2,0,1,0,0,0,15, ldraw_lib__1_4chrd()],
+  [1,0,3,0,9,18,0,-2,0,1,0,0,0,15, ldraw_lib__1_4chrd(realsolid)],
 // 1 0 3 0 9 8 0 -2 0 1 0 0 0 7 1-4ndis.dat
-  [1,0,3,0,9,8,0,-2,0,1,0,0,0,7, ldraw_lib__1_4ndis()],
+  [1,0,3,0,9,8,0,-2,0,1,0,0,0,7, ldraw_lib__1_4ndis(realsolid)],
 // 1 0 1 0 0 0 0 -12 0 1 0 16 0 0 2-4ndis.dat
-  [1,0,1,0,0,0,0,-12,0,1,0,16,0,0, ldraw_lib__2_4ndis()],
+  [1,0,1,0,0,0,0,-12,0,1,0,16,0,0, ldraw_lib__2_4ndis(realsolid)],
 // 1 0 3 0 -7 8 0 -2 0 1 0 0 0 -9 1-4ndis.dat
-  [1,0,3,0,-7,8,0,-2,0,1,0,0,0,-9, ldraw_lib__1_4ndis()],
+  [1,0,3,0,-7,8,0,-2,0,1,0,0,0,-9, ldraw_lib__1_4ndis(realsolid)],
 // 3 0 11 0 -7 21 0 -7 9 0 -16
   [3,0,11,0,-7,21,0,-7,9,0,-16],
 // 3 0 9 0 -16 21 0 -7 1 0 -24
@@ -71,23 +72,23 @@ function ldraw_lib__6309ptc() = [
 // 
 // 0 Surround
 // 1 16 4 0 -7 17 0 -3 0 1 0 0 0 -17 1-4ndis.dat
-  [1,16,4,0,-7,17,0,-3,0,1,0,0,0,-17, ldraw_lib__1_4ndis()],
+  [1,16,4,0,-7,17,0,-3,0,1,0,0,0,-17, ldraw_lib__1_4ndis(realsolid)],
 // 1 16 -6 0 -17 -9 0 7 0 1 0 0 0 -7 1-4ndis.dat
-  [1,16,-6,0,-17,-9,0,7,0,1,0,0,0,-7, ldraw_lib__1_4ndis()],
+  [1,16,-6,0,-17,-9,0,7,0,1,0,0,0,-7, ldraw_lib__1_4ndis(realsolid)],
 // 1 16 -15 0 -6 -6 0 0 0 1 0 6 0 -11 1-4ndis.dat
-  [1,16,-15,0,-6,-6,0,0,0,1,0,6,0,-11, ldraw_lib__1_4ndis()],
+  [1,16,-15,0,-6,-6,0,0,0,1,0,6,0,-11, ldraw_lib__1_4ndis(realsolid)],
 // 1 16 -15 0 6 -6 0 0 0 1 0 -6 0 11 1-4ndis.dat
-  [1,16,-15,0,6,-6,0,0,0,1,0,-6,0,11, ldraw_lib__1_4ndis()],
+  [1,16,-15,0,6,-6,0,0,0,1,0,-6,0,11, ldraw_lib__1_4ndis(realsolid)],
 // 1 16 -6 0 17 -9 0 7 0 1 0 0 0 7 1-4ndis.dat
-  [1,16,-6,0,17,-9,0,7,0,1,0,0,0,7, ldraw_lib__1_4ndis()],
+  [1,16,-6,0,17,-9,0,7,0,1,0,0,0,7, ldraw_lib__1_4ndis(realsolid)],
 // 1 16 3 0 9 18 0 -2 0 1 0 0 0 15 1-4ndis.dat
-  [1,16,3,0,9,18,0,-2,0,1,0,0,0,15, ldraw_lib__1_4ndis()],
+  [1,16,3,0,9,18,0,-2,0,1,0,0,0,15, ldraw_lib__1_4ndis(realsolid)],
 // 1 16 3 0 9 8 0 -2 0 1 0 0 0 7 1-4disc.dat
-  [1,16,3,0,9,8,0,-2,0,1,0,0,0,7, ldraw_lib__1_4disc()],
+  [1,16,3,0,9,8,0,-2,0,1,0,0,0,7, ldraw_lib__1_4disc(realsolid)],
 // 1 16 1 0 0 0 0 -12 0 1 0 16 0 0 2-4disc.dat
-  [1,16,1,0,0,0,0,-12,0,1,0,16,0,0, ldraw_lib__2_4disc()],
+  [1,16,1,0,0,0,0,-12,0,1,0,16,0,0, ldraw_lib__2_4disc(realsolid)],
 // 1 16 3 0 -7 8 0 -2 0 1 0 0 0 -9 1-4disc.dat
-  [1,16,3,0,-7,8,0,-2,0,1,0,0,0,-9, ldraw_lib__1_4disc()],
+  [1,16,3,0,-7,8,0,-2,0,1,0,0,0,-9, ldraw_lib__1_4disc(realsolid)],
 // 3 16 1 0 16 3 0 9 1 0 0
   [3,16,1,0,16,3,0,9,1,0,0],
 // 4 16 1 0 0 3 0 9 3 0 -7 1 0 -16
@@ -126,5 +127,5 @@ function ldraw_lib__6309ptc() = [
 // 0
 ];
 module ldraw_lib__6309ptc(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6309ptc(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6309ptc(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6309ptc(line=0.2);

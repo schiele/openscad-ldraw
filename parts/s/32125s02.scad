@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/1-4ndis.scad>
 use <../../p/3-16ndis.scad>
-function ldraw_lib__s__32125s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__32125s02(realsolid=false) = [
 // 0 ~Technic Rotor  3 Blade with  6 Studs - Center Half
 // 0 Name: s\32125s02.dat
 // 0 Author: Greg Teft [gregteft]
@@ -19,13 +20,13 @@ function ldraw_lib__s__32125s02() = [
 // 
 // 
 // 1 16 0 0 0 6 0 0 0 1 0 0 0 6 3-16ndis.dat
-  [1,16,0,0,0,6,0,0,0,1,0,0,0,6, ldraw_lib__3_16ndis()],
+  [1,16,0,0,0,6,0,0,0,1,0,0,0,6, ldraw_lib__3_16ndis(realsolid)],
 // 1 16 0 0 0 6 0 0 0 1 0 0 0 -6 1-4ndis.dat
-  [1,16,0,0,0,6,0,0,0,1,0,0,0,-6, ldraw_lib__1_4ndis()],
+  [1,16,0,0,0,6,0,0,0,1,0,0,0,-6, ldraw_lib__1_4ndis(realsolid)],
 // 1 16 0 0 9.5 1.5 0 0 0 1 0 0 0 1.5 1-4ndis.dat
-  [1,16,0,0,9.5,1.5,0,0,0,1,0,0,0,1.5, ldraw_lib__1_4ndis()],
+  [1,16,0,0,9.5,1.5,0,0,0,1,0,0,0,1.5, ldraw_lib__1_4ndis(realsolid)],
 // 1 16 0 3 9.5 1.5 0 0 0 -1 0 0 0 1.5 1-4ndis.dat
-  [1,16,0,3,9.5,1.5,0,0,0,-1,0,0,0,1.5, ldraw_lib__1_4ndis()],
+  [1,16,0,3,9.5,1.5,0,0,0,-1,0,0,0,1.5, ldraw_lib__1_4ndis(realsolid)],
 // 
 // 0 // opening above axle hole
 // 
@@ -168,5 +169,5 @@ function ldraw_lib__s__32125s02() = [
   [4,16,2.2961,8,-5.5433,4.6368,8,-7.1239,2.2142,8,-8.2066,0,8,-6],
 ];
 module ldraw_lib__s__32125s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__32125s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__32125s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__32125s02(line=0.2);

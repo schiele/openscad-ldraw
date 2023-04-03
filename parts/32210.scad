@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/connhole.scad>
 use <../p/rect.scad>
 use <../p/znap6.scad>
-function ldraw_lib__32210() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__32210(realsolid=false) = [
 // 0 Znap Beam  1 Hole
 // 0 Name: 32210.dat
 // 0 Author: Thomas Woelk [t.woelk]
@@ -18,17 +19,17 @@ function ldraw_lib__32210() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 connhole.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__connhole()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__connhole(realsolid)],
 // 1 16 0 0 -20 1 0 0 0 1 0 0 0 1 znap6.dat
-  [1,16,0,0,-20,1,0,0,0,1,0,0,0,1, ldraw_lib__znap6()],
+  [1,16,0,0,-20,1,0,0,0,1,0,0,0,1, ldraw_lib__znap6(realsolid)],
 // 1 16 0 0 20 -1 0 0 0 1 0 0 0 -1 znap6.dat
-  [1,16,0,0,20,-1,0,0,0,1,0,0,0,-1, ldraw_lib__znap6()],
+  [1,16,0,0,20,-1,0,0,0,1,0,0,0,-1, ldraw_lib__znap6(realsolid)],
 // 1 16 -10 0 0 0 1 0 10 0 0 0 0 25 rect.dat
-  [1,16,-10,0,0,0,1,0,10,0,0,0,0,25, ldraw_lib__rect()],
+  [1,16,-10,0,0,0,1,0,10,0,0,0,0,25, ldraw_lib__rect(realsolid)],
 // 1 16 10 0 0 0 -1 0 10 0 0 0 0 25 rect.dat
-  [1,16,10,0,0,0,-1,0,10,0,0,0,0,25, ldraw_lib__rect()],
+  [1,16,10,0,0,0,-1,0,10,0,0,0,0,25, ldraw_lib__rect(realsolid)],
 // 0
 ];
 module ldraw_lib__32210(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__32210(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__32210(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__32210(line=0.2);

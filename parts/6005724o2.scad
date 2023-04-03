@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__6005724o2() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6005724o2(realsolid=false) = [
 // 0 Sticker  0.8 x  1.8 with Brick Outline Type 2
 // 0 Name: 6005724o2.dat
 // 0 Author: Christian Neumann [Wesley]
@@ -19,7 +20,7 @@ function ldraw_lib__6005724o2() = [
 // 
 // 
 // 1 16 0 -0.25 0 18 0 0 0 0.25 0 0 0 8 box5-12.dat
-  [1,16,0,-0.25,0,18,0,0,0,0.25,0,0,0,8, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,18,0,0,0,0.25,0,0,0,8, ldraw_lib__box5_12(realsolid)],
 // 4 15 -18 -0.25 -3.9 -15.9 -0.25 0.1 -16.2 -0.25 3.9 -18 -0.25 8
   [4,15,-18,-0.25,-3.9,-15.9,-0.25,0.1,-16.2,-0.25,3.9,-18,-0.25,8],
 // 4 15 -18 -0.25 8 -16.2 -0.25 3.9 -13.8 -0.25 5.4 -13.4 -0.25 6.3
@@ -112,5 +113,5 @@ function ldraw_lib__6005724o2() = [
   [3,16,-2.5,-0.25,8,10,-0.25,-3.7,10.5,-0.25,-3.2],
 ];
 module ldraw_lib__6005724o2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6005724o2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6005724o2(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6005724o2(line=0.2);

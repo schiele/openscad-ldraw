@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/36036s01.scad>
-function ldraw_lib__36036ph0() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__36036ph0(realsolid=false) = [
 // 0 Minifig Hips and Skirt with White Robe with Reddish Brown and Dark Tan Hem Pattern
 // 0 Name: 36036ph0.dat
 // 0 Author: Howard Lande [HowardLande]
@@ -18,7 +19,7 @@ function ldraw_lib__36036ph0() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\36036s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__36036s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__36036s01(realsolid)],
 // 0 // front
 // 3 0 1.5 8 -10 1.2 7 -10 0 8 -10
   [3,0,1.5,8,-10,1.2,7,-10,0,8,-10],
@@ -4918,5 +4919,5 @@ function ldraw_lib__36036ph0() = [
   [5,24,14.85,33.6401,28.2604,-14.85,33.6401,28.2604,14.7748,35.0076,30,15.0938,29.2098,23.4553],
 ];
 module ldraw_lib__36036ph0(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__36036ph0(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__36036ph0(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__36036ph0(line=0.2);

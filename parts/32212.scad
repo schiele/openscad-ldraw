@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/zstud.scad>
-function ldraw_lib__32212() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__32212(realsolid=false) = [
 // 0 Znap Connector  1 x  3 -  2 Way Axial
 // 0 Name: 32212.dat
 // 0 Author: Michael Heidemann [mikeheide]
@@ -111,9 +112,9 @@ function ldraw_lib__32212() = [
   [4,16,7,10,-10,-7,10,-10,-7,10,-15,7,10,-15],
 // 0
 // 1 16 0 0 15 1 0 0 0 0 1 0 -1 0 zstud.dat
-  [1,16,0,0,15,1,0,0,0,0,1,0,-1,0, ldraw_lib__zstud()],
+  [1,16,0,0,15,1,0,0,0,0,1,0,-1,0, ldraw_lib__zstud(realsolid)],
 // 1 16 0 0 -15 1 0 0 0 0 1 0 1 0 zstud.dat
-  [1,16,0,0,-15,1,0,0,0,0,1,0,1,0, ldraw_lib__zstud()],
+  [1,16,0,0,-15,1,0,0,0,0,1,0,1,0, ldraw_lib__zstud(realsolid)],
 // 2 24 7 -9 -10 7 -9 -15
   [2,24,7,-9,-10,7,-9,-15],
 // 2 24 -7 -10 -15 -7 -9 -15
@@ -748,5 +749,5 @@ function ldraw_lib__32212() = [
 // 
 ];
 module ldraw_lib__32212(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__32212(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__32212(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__32212(line=0.2);

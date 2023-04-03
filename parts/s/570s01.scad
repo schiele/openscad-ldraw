@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/toothl.scad>
-function ldraw_lib__s__570s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__570s01(realsolid=false) = [
 // 0 ~Technic Gear 15 Large Tooth -  5 Teeth
 // 0 Name: s\570s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -15,15 +16,15 @@ function ldraw_lib__s__570s01() = [
 // 
 // 
 // 1 16 0 -42 0 0 -1 0 0 0 -1 1 0 0 toothl.dat
-  [1,16,0,-42,0,0,-1,0,0,0,-1,1,0,0, ldraw_lib__toothl()],
+  [1,16,0,-42,0,0,-1,0,0,0,-1,1,0,0, ldraw_lib__toothl(realsolid)],
 // 1 16 17.0829 -38.3689 0 0 -0.91355 0.40674 0 -0.40674 -0.91355 1 0 0 toothl.dat
-  [1,16,17.0829,-38.3689,0,0,-0.91355,0.40674,0,-0.40674,-0.91355,1,0,0, ldraw_lib__toothl()],
+  [1,16,17.0829,-38.3689,0,0,-0.91355,0.40674,0,-0.40674,-0.91355,1,0,0, ldraw_lib__toothl(realsolid)],
 // 1 16 31.2121 -28.1035 0 0 -0.66913 0.74314 0 -0.74314 -0.66913 1 0 0 toothl.dat
-  [1,16,31.2121,-28.1035,0,0,-0.66913,0.74314,0,-0.74314,-0.66913,1,0,0, ldraw_lib__toothl()],
+  [1,16,31.2121,-28.1035,0,0,-0.66913,0.74314,0,-0.74314,-0.66913,1,0,0, ldraw_lib__toothl(realsolid)],
 // 1 16 39.9444 -12.9787 0 0 -0.30902 0.95106 0 -0.95106 -0.30902 1 0 0 toothl.dat
-  [1,16,39.9444,-12.9787,0,0,-0.30902,0.95106,0,-0.95106,-0.30902,1,0,0, ldraw_lib__toothl()],
+  [1,16,39.9444,-12.9787,0,0,-0.30902,0.95106,0,-0.95106,-0.30902,1,0,0, ldraw_lib__toothl(realsolid)],
 // 1 16 41.7699 4.3902 0 0 0.10453 0.99452 0 -0.99452 0.10453 1 0 0 toothl.dat
-  [1,16,41.7699,4.3902,0,0,0.10453,0.99452,0,-0.99452,0.10453,1,0,0, ldraw_lib__toothl()],
+  [1,16,41.7699,4.3902,0,0,0.10453,0.99452,0,-0.99452,0.10453,1,0,0, ldraw_lib__toothl(realsolid)],
 // 2 24 33.3228 -25.5696 4.0569 32.4681 -26.5431 6
   [2,24,33.3228,-25.5696,4.0569,32.4681,-26.5431,6],
 // 2 24 33.3228 -25.5696 4.0569 33.5666 -25.2042 3.4049
@@ -102,5 +103,5 @@ function ldraw_lib__s__570s01() = [
   [2,24,41.1191,8.0958,-3.37,41.1191,8.0958,3.37],
 ];
 module ldraw_lib__s__570s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__570s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__570s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__570s01(line=0.2);

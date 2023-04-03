@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__2528ap30s03() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__2528ap30s03(realsolid=false) = [
 // 0 ~Minifig Hat Bicorne with Evil Skull and Crossbones - Skull Half
 // 0 Name: s\2528ap30s03.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -113,5 +114,5 @@ function ldraw_lib__s__2528ap30s03() = [
   [4,16,2.12,-4.12,-12.771,2.87,-2.87,-13.041,3.05,-4.008,-12.713,2.15,-4.208,-12.744],
 ];
 module ldraw_lib__s__2528ap30s03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__2528ap30s03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__2528ap30s03(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__2528ap30s03(line=0.2);

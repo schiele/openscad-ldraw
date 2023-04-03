@@ -3,7 +3,8 @@ use <../p/4-4rin14.scad>
 use <../p/4-4ring1.scad>
 use <../p/48/4-4aring.scad>
 use <s/2723s01.scad>
-function ldraw_lib__2723() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2723(realsolid=false) = [
 // 0 Technic Disc  3 x  3 with Axlehole
 // 0 Name: 2723.dat
 // 0 Author: Thomas Burger [grapeape]
@@ -30,16 +31,16 @@ function ldraw_lib__2723() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2723s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2723s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2723s01(realsolid)],
 // 1 16 0 3 0 7 0 0 0 1 0 0 0 7 4-4ring1.dat
-  [1,16,0,3,0,7,0,0,0,1,0,0,0,7, ldraw_lib__4_4ring1()],
+  [1,16,0,3,0,7,0,0,0,1,0,0,0,7, ldraw_lib__4_4ring1(realsolid)],
 // 1 16 0 3 0 1 0 0 0 1 0 0 0 1 4-4rin14.dat
-  [1,16,0,3,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4rin14()],
+  [1,16,0,3,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4rin14(realsolid)],
 // 1 16 0 3 0 30 0 0 0 1 0 0 0 30 48\4-4aring.dat
-  [1,16,0,3,0,30,0,0,0,1,0,0,0,30, ldraw_lib__48__4_4aring()],
+  [1,16,0,3,0,30,0,0,0,1,0,0,0,30, ldraw_lib__48__4_4aring(realsolid)],
 // 1 16 0 3 0 15 0 0 0 1 0 0 0 15 4-4ring1.dat
-  [1,16,0,3,0,15,0,0,0,1,0,0,0,15, ldraw_lib__4_4ring1()],
+  [1,16,0,3,0,15,0,0,0,1,0,0,0,15, ldraw_lib__4_4ring1(realsolid)],
 ];
 module ldraw_lib__2723(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2723(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2723(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2723(line=0.2);

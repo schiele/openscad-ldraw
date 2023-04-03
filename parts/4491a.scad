@@ -3,7 +3,8 @@ use <../p/rect2p.scad>
 use <../p/rect3.scad>
 use <s/4491s01.scad>
 use <s/4491s02.scad>
-function ldraw_lib__4491a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4491a(realsolid=false) = [
 // 0 Animal Horse Saddle with One Clip
 // 0 Name: 4491a.dat
 // 0 Author: Chris Dee [cwdee]
@@ -23,16 +24,16 @@ function ldraw_lib__4491a() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4491s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4491s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4491s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\4491s02.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__4491s02()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__4491s02(realsolid)],
 // 
 // 1 16 24 -2.5 16 -1 0 0 0 0 -2.5 0 -1 0 rect3.dat
-  [1,16,24,-2.5,16,-1,0,0,0,0,-2.5,0,-1,0, ldraw_lib__rect3()],
+  [1,16,24,-2.5,16,-1,0,0,0,0,-2.5,0,-1,0, ldraw_lib__rect3(realsolid)],
 // 1 16 24 -8 18 -1 0 0 0 0 -3 0 -1 2 rect3.dat
-  [1,16,24,-8,18,-1,0,0,0,0,-3,0,-1,2, ldraw_lib__rect3()],
+  [1,16,24,-8,18,-1,0,0,0,0,-3,0,-1,2, ldraw_lib__rect3(realsolid)],
 // 1 16 24 -15.5 20 0 0 1 -4.5 0 0 0 -1 0 rect2p.dat
-  [1,16,24,-15.5,20,0,0,1,-4.5,0,0,0,-1,0, ldraw_lib__rect2p()],
+  [1,16,24,-15.5,20,0,0,1,-4.5,0,0,0,-1,0, ldraw_lib__rect2p(realsolid)],
 // 2 24 23 -16 24 23 -4 24
   [2,24,23,-16,24,23,-4,24],
 // 3 16 25 -5 16 25 -11 20 25 -20 20
@@ -43,5 +44,5 @@ function ldraw_lib__4491a() = [
   [4,16,23,0,16,23,-4,24,23,-11,20,23,-5,16],
 ];
 module ldraw_lib__4491a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4491a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4491a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4491a(line=0.2);

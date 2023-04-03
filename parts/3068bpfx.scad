@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3068bs01.scad>
-function ldraw_lib__3068bpfx() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3068bpfx(realsolid=false) = [
 // 0 Tile  2 x  2 with Fabuland House in Frame Pattern
 // 0 Name: 3068bpfx.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -17,7 +18,7 @@ function ldraw_lib__3068bpfx() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3068bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3068bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3068bs01(realsolid)],
 // 4 14 -6.1 0 8.25 -8.2232 0 9.1294 -8.3981 0 8.25 -8.2232 0 7.3706
   [4,14,-6.1,0,8.25,-8.2232,0,9.1294,-8.3981,0,8.25,-8.2232,0,7.3706],
 // 4 14 -6.1 0 8.25 -8.2232 0 7.3706 -7.725 0 6.625 -6.9794 0 6.1268
@@ -1404,5 +1405,5 @@ function ldraw_lib__3068bpfx() = [
   [3,15,-6.35,0,0.1,-6.9,0,-0.2,-6.35,0,-0.6],
 ];
 module ldraw_lib__3068bpfx(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3068bpfx(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3068bpfx(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3068bpfx(line=0.2);

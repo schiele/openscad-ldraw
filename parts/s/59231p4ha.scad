@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/4-4disc.scad>
 use <../../p/4-4ndis.scad>
-function ldraw_lib__s__59231p4ha() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__59231p4ha(realsolid=false) = [
 // 0 ~Metallic Silver Skull on Dark Red Background Pattern
 // 0 Name: s\59231p4ha.dat
 // 0 Author: Joerg Sommerer [Brickaneer]
@@ -638,13 +639,13 @@ function ldraw_lib__s__59231p4ha() = [
 // 4 0 8.0449 -1.8732 0 8.8414 -1.0619 0 8.8655 -2.3095 0 8.0394 -3.0744 0
   [4,0,8.0449,-1.8732,0,8.8414,-1.0619,0,8.8655,-2.3095,0,8.0394,-3.0744,0],
 // 1 80 -4.2 -1.36 0 2.6 0 0 0 0 -2.6 0 1 0 4-4ndis.dat
-  [1,80,-4.2,-1.36,0,2.6,0,0,0,0,-2.6,0,1,0, ldraw_lib__4_4ndis()],
+  [1,80,-4.2,-1.36,0,2.6,0,0,0,0,-2.6,0,1,0, ldraw_lib__4_4ndis(realsolid)],
 // 1 0 -4.2 -1.36 0 2.6 0 0 0 0 -2.6 0 1 0 4-4disc.dat
-  [1,0,-4.2,-1.36,0,2.6,0,0,0,0,-2.6,0,1,0, ldraw_lib__4_4disc()],
+  [1,0,-4.2,-1.36,0,2.6,0,0,0,0,-2.6,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 80 4.2 -1.36 0 2.6 0 0 0 0 -2.6 0 1 0 4-4ndis.dat
-  [1,80,4.2,-1.36,0,2.6,0,0,0,0,-2.6,0,1,0, ldraw_lib__4_4ndis()],
+  [1,80,4.2,-1.36,0,2.6,0,0,0,0,-2.6,0,1,0, ldraw_lib__4_4ndis(realsolid)],
 // 1 0 4.2 -1.36 0 2.6 0 0 0 0 -2.6 0 1 0 4-4disc.dat
-  [1,0,4.2,-1.36,0,2.6,0,0,0,0,-2.6,0,1,0, ldraw_lib__4_4disc()],
+  [1,0,4.2,-1.36,0,2.6,0,0,0,0,-2.6,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 4 0 -8.0824 -2.0124 0 -8.062 -3.2136 0 -8.9568 -2.458 0 -8.114 -1.3627 0
   [4,0,-8.0824,-2.0124,0,-8.062,-3.2136,0,-8.9568,-2.458,0,-8.114,-1.3627,0],
 // 3 80 -8.0824 -2.0124 0 -6.8 -3.96 0 -8.062 -3.2136 0
@@ -827,5 +828,5 @@ function ldraw_lib__s__59231p4ha() = [
   [4,320,5.4,-12,0,-5.4,-12,0,-0.5599,-11.7739,0,1.5045,-11.7887,0],
 ];
 module ldraw_lib__s__59231p4ha(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__59231p4ha(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__59231p4ha(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__59231p4ha(line=0.2);

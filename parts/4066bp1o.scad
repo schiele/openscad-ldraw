@@ -3,7 +3,8 @@ use <../p/4-4disc.scad>
 use <../p/4-4ndis.scad>
 use <../p/4-4ring2.scad>
 use <s/4066bs01.scad>
-function ldraw_lib__4066bp1o() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4066bp1o(realsolid=false) = [
 // 0 Duplo Brick  1 x  2 x  2 with Yellow Toolbox Pattern
 // 0 Name: 4066bp1o.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -21,13 +22,13 @@ function ldraw_lib__4066bp1o() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4066bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4066bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4066bs01(realsolid)],
 // 1 7 -13.5 47.75 -20 3.5 0 0 0 0 -3.5 0 1 0 4-4disc.dat
-  [1,7,-13.5,47.75,-20,3.5,0,0,0,0,-3.5,0,1,0, ldraw_lib__4_4disc()],
+  [1,7,-13.5,47.75,-20,3.5,0,0,0,0,-3.5,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 0 -13.5 47.75 -20 1.75 0 0 0 0 -1.75 0 1 0 4-4ring2.dat
-  [1,0,-13.5,47.75,-20,1.75,0,0,0,0,-1.75,0,1,0, ldraw_lib__4_4ring2()],
+  [1,0,-13.5,47.75,-20,1.75,0,0,0,0,-1.75,0,1,0, ldraw_lib__4_4ring2(realsolid)],
 // 1 14 -13.5 47.75 -20 5.25 0 0 0 0 -5.25 0 1 0 4-4ndis.dat
-  [1,14,-13.5,47.75,-20,5.25,0,0,0,0,-5.25,0,1,0, ldraw_lib__4_4ndis()],
+  [1,14,-13.5,47.75,-20,5.25,0,0,0,0,-5.25,0,1,0, ldraw_lib__4_4ndis(realsolid)],
 // 4 14 -13.5 42.5 -20 -13.5 40 -20 -17 41 -20 -18.75 42.5 -20
   [4,14,-13.5,42.5,-20,-13.5,40,-20,-17,41,-20,-18.75,42.5,-20],
 // 4 14 -10 41 -20 -13.5 40 -20 -13.5 42.5 -20 -8.25 42.5 -20
@@ -390,5 +391,5 @@ function ldraw_lib__4066bp1o() = [
   [4,16,-11.75,25.75,-20,-7.5,24.75,-20,0,0,-20,-16,25.5,-20],
 ];
 module ldraw_lib__4066bp1o(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4066bp1o(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4066bp1o(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4066bp1o(line=0.2);

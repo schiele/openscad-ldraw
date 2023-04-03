@@ -2,7 +2,8 @@ use <../lib.scad>
 use <4-4cyli.scad>
 use <4-4cyls.scad>
 use <4-4edge.scad>
-function ldraw_lib__stud2s2() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__stud2s2(realsolid=false) = [
 // 0 Stud Tube Open Sliced for Open Stud with Inner Stopper Ring
 // 0 Name: stud2s2.dat
 // 0 Author: Owen Burgoyne [C3POwen]
@@ -17,20 +18,20 @@ function ldraw_lib__stud2s2() = [
 // 
 // 
 // 1 16 0 1 0 3.5 0 0 -0.58333 1 0 0 0 3.5 4-4edge.dat
-  [1,16,0,1,0,3.5,0,0,-0.58333,1,0,0,0,3.5, ldraw_lib__4_4edge()],
+  [1,16,0,1,0,3.5,0,0,-0.58333,1,0,0,0,3.5, ldraw_lib__4_4edge(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0.41667 0 3.5 0 0 0 0.58333 0 0 0 3.5 4-4cyls.dat
-  [1,16,0,0.41667,0,3.5,0,0,0,0.58333,0,0,0,3.5, ldraw_lib__4_4cyls()],
+  [1,16,0,0.41667,0,3.5,0,0,0,0.58333,0,0,0,3.5, ldraw_lib__4_4cyls(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 0 3.5 0 0 0 0.41667 0 0 0 3.5 4-4cyli.dat
-  [1,16,0,0,0,3.5,0,0,0,0.41667,0,0,0,3.5, ldraw_lib__4_4cyli()],
+  [1,16,0,0,0,3.5,0,0,0,0.41667,0,0,0,3.5, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 1 0 6 0 0 -1 1 0 0 0 6 4-4edge.dat
-  [1,16,0,1,0,6,0,0,-1,1,0,0,0,6, ldraw_lib__4_4edge()],
+  [1,16,0,1,0,6,0,0,-1,1,0,0,0,6, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 0 0 6 0 0 0 1 0 0 0 6 4-4cyls.dat
-  [1,16,0,0,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4cyls()],
+  [1,16,0,0,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4cyls(realsolid)],
 ];
 module ldraw_lib__stud2s2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__stud2s2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__stud2s2(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__stud2s2(line=0.2);

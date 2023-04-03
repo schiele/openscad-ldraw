@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__4198678a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4198678a(realsolid=false) = [
 // 0 Sticker  1.0 x  7.5 with Black "MAX. 11  1/3 M."
 // 0 Name: 4198678a.dat
 // 0 Author: Tim Lampmann [L4mpi]
@@ -17,7 +18,7 @@ function ldraw_lib__4198678a() = [
 // 
 // 
 // 1 16 0 -0.25 0 75 0 0 0 0.25 0 0 0 10 box5-12.dat
-  [1,16,0,-0.25,0,75,0,0,0,0.25,0,0,0,10, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,75,0,0,0,0.25,0,0,0,10, ldraw_lib__box5_12(realsolid)],
 // 4 0 -59 -0.25 7 -65 -0.25 7 -61 -0.25 3 -57.5 -0.25 2
   [4,0,-59,-0.25,7,-65,-0.25,7,-61,-0.25,3,-57.5,-0.25,2],
 // 4 0 -61 -0.25 3 -65 -0.25 7 -65 -0.25 -5 -61 -0.25 -5
@@ -440,5 +441,5 @@ function ldraw_lib__4198678a() = [
   [3,16,34.4,-0.25,-1.7,32.2,-0.25,-3.4,34.4,-0.25,-3.4],
 ];
 module ldraw_lib__4198678a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4198678a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4198678a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4198678a(line=0.2);

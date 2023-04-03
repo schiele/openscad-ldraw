@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3067s02.scad>
-function ldraw_lib__3067ap06() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3067ap06(realsolid=false) = [
 // 0 Brick  1 x  6 without Centre Studs with Blue Thin "CAFE" Pattern
 // 0 Name: 3067ap06.dat
 // 0 Author: Tore Eriksson [Tore_Eriksson]
@@ -15,7 +16,7 @@ function ldraw_lib__3067ap06() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3067s02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3067s02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3067s02(realsolid)],
 // 
 // 0 // THIN C (10.1535x13/1.333)
 // 4 1 -17.5 17.334 -10 -17.5 18.667 -10 -19.9876 18.1723 -10 -19.4774 16.9408 -10
@@ -190,5 +191,5 @@ function ldraw_lib__3067ap06() = [
   [4,16,11,11,-10,12.667,7,-10,18,18.667,-10,11,12.333,-10],
 ];
 module ldraw_lib__3067ap06(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3067ap06(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3067ap06(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3067ap06(line=0.2);

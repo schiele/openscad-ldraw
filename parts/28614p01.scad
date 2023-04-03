@@ -4,7 +4,8 @@ use <s/28614p01s02.scad>
 use <s/28614s02.scad>
 use <s/28614s04.scad>
 use <s/28614s05.scad>
-function ldraw_lib__28614p01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__28614p01(realsolid=false) = [
 // 0 Figure Elves Goblin Body and Head with Magenta Hair and Tunic with Utility Belt, Pouch and Candy Bar Pattern
 // 0 Name: 28614p01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -23,21 +24,21 @@ function ldraw_lib__28614p01() = [
 // 0 // 1 326 17 -30 2 1 0 0 0 1 0 0 0 1 u9332.dat
 // 
 // 1 26 0 0 0 1 0 0 0 1 0 0 0 1 s\28614p01s02.dat
-  [1,26,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__28614p01s02()],
+  [1,26,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__28614p01s02(realsolid)],
 // 1 26 0 0 0 1 0 0 0 1 0 0 0 1 s\28614s02.dat
-  [1,26,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__28614s02()],
+  [1,26,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__28614s02(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\28614s04.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__28614s04()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__28614s04(realsolid)],
 // 1 26 0 0 0 1 0 0 0 1 0 0 0 1 s\28614s05.dat
-  [1,26,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__28614s05()],
+  [1,26,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__28614s05(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\28614p01s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__28614p01s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__28614p01s01(realsolid)],
 // 0 // 1 326 -17 -30 2 -1 0 0 0 1 0 0 0 1 u9332.dat
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\28614s04.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__28614s04()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__28614s04(realsolid)],
 // 1 26 0 0 0 -1 0 0 0 1 0 0 0 1 s\28614s05.dat
-  [1,26,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__28614s05()],
+  [1,26,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__28614s05(realsolid)],
 ];
 module ldraw_lib__28614p01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__28614p01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__28614p01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__28614p01(line=0.2);

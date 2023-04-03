@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__166285a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__166285a(realsolid=false) = [
 // 0 Sticker  0.8 x  1.6 Air Tech Claw Rig Front Arm
 // 0 Name: 166285a.dat
 // 0 Author: Stefan Frenz [smf]
@@ -17,7 +18,7 @@ function ldraw_lib__166285a() = [
 // 
 // 
 // 1 16 0 -0.25 0 15.8 0 0 0 0.25 0 0 0 7.8 box5-12.dat
-  [1,16,0,-0.25,0,15.8,0,0,0,0.25,0,0,0,7.8, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,15.8,0,0,0,0.25,0,0,0,7.8, ldraw_lib__box5_12(realsolid)],
 // 4 0 -15.2 -0.25 7.2 -0.2 -0.25 7.2 0 -0.25 7.8 -15.8 -0.25 7.8
   [4,0,-15.2,-0.25,7.2,-0.2,-0.25,7.2,0,-0.25,7.8,-15.8,-0.25,7.8],
 // 4 0 0 -0.25 7.8 0.2 -0.25 7.2 15.2 -0.25 7.2 15.8 -0.25 7.8
@@ -386,5 +387,5 @@ function ldraw_lib__166285a() = [
   [4,7,5,-0.25,-4.5,4.963,-0.25,-2.744,4.564,-0.25,-2.711,4.2,-0.25,-2.9],
 ];
 module ldraw_lib__166285a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__166285a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__166285a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__166285a(line=0.2);

@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <750.scad>
 use <751.scad>
-function ldraw_lib__73590b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__73590b(realsolid=false) = [
 // 0 Hose Flexible  8.5L with Tabs
 // 0 Name: 73590b.dat
 // 0 Author: Steve Bliss [sbliss]
@@ -23,12 +24,12 @@ function ldraw_lib__73590b() = [
 // 
 // 
 // 1 16 -70 0 0 0 -1 0 1 0 0 0 0 1 750.dat
-  [1,16,-70,0,0,0,-1,0,1,0,0,0,0,1, ldraw_lib__750()],
+  [1,16,-70,0,0,0,-1,0,1,0,0,0,0,1, ldraw_lib__750(realsolid)],
 // 1 16 0 0 0 0 1 0 1 0 0 0 0 1 751.dat
-  [1,16,0,0,0,0,1,0,1,0,0,0,0,1, ldraw_lib__751()],
+  [1,16,0,0,0,0,1,0,1,0,0,0,0,1, ldraw_lib__751(realsolid)],
 // 1 16 70 0 0 0 1 0 1 0 0 0 0 1 750.dat
-  [1,16,70,0,0,0,1,0,1,0,0,0,0,1, ldraw_lib__750()],
+  [1,16,70,0,0,0,1,0,1,0,0,0,0,1, ldraw_lib__750(realsolid)],
 ];
 module ldraw_lib__73590b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__73590b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__73590b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__73590b(line=0.2);

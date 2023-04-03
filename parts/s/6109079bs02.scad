@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/box4-12.scad>
-function ldraw_lib__s__6109079bs02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__6109079bs02(realsolid=false) = [
 // 0 ~Sticker  1.8 x  3.8 with Lime Bicycle Icon - Section 2
 // 0 Name: s\6109079bs02.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -15,7 +16,7 @@ function ldraw_lib__s__6109079bs02() = [
 // 
 // 
 // 1 16 0 -.25 -9 38 0 0 0 .25 0 0 0 -9 box4-12.dat
-  [1,16,0,-.25,-9,38,0,0,0,.25,0,0,0,-9, ldraw_lib__box4_12()],
+  [1,16,0,-.25,-9,38,0,0,0,.25,0,0,0,-9, ldraw_lib__box4_12(realsolid)],
 // 
 // 0 BFC NOCLIP
   [0,"BFC","NOCLIP"],
@@ -374,5 +375,5 @@ function ldraw_lib__s__6109079bs02() = [
   [3,16,-17.331,-.25,0,-38,-.25,0,-17.852,-.25,-.681],
 ];
 module ldraw_lib__s__6109079bs02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__6109079bs02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__6109079bs02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__6109079bs02(line=0.2);

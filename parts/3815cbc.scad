@@ -2,7 +2,8 @@ use <../lib.scad>
 use <3815.scad>
 use <3816pbc.scad>
 use <3817pbc.scad>
-function ldraw_lib__3815cbc() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3815cbc(realsolid=false) = [
 // 0 ~Minifig Hips and Legs with Iron Man Armoured Suit Mark VII Pattern (Obsolete)
 // 0 Name: 3815cbc.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -19,13 +20,13 @@ function ldraw_lib__3815cbc() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 3815.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3815()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3815(realsolid)],
 // 1 16 0 12 0 1 0 0 0 1 0 0 0 1 3816pbc.dat
-  [1,16,0,12,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3816pbc()],
+  [1,16,0,12,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3816pbc(realsolid)],
 // 1 16 0 12 0 1 0 0 0 1 0 0 0 1 3817pbc.dat
-  [1,16,0,12,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3817pbc()],
+  [1,16,0,12,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3817pbc(realsolid)],
 // 
 ];
 module ldraw_lib__3815cbc(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3815cbc(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3815cbc(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3815cbc(line=0.2);

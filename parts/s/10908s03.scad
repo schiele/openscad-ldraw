@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__10908s03() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__10908s03(realsolid=false) = [
 // 0 ~Minifig Helmet Visor Iron Man - Mask
 // 0 Name: s\10908s03.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -185,5 +186,5 @@ function ldraw_lib__s__10908s03() = [
   [5,24,-3.672,9.475,-10.828,-2.645,10.026,-10.506,0,9.627,-11.155,-3.347,10.449,-9.739],
 ];
 module ldraw_lib__s__10908s03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__10908s03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__10908s03(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__10908s03(line=0.2);

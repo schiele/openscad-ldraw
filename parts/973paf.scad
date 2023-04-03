@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/1-4cyli.scad>
 use <s/973s01.scad>
-function ldraw_lib__973paf() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__973paf(realsolid=false) = [
 // 0 Minifig Torso with Red and Grey Shirt, Pot Belly, Jacket Pattern
 // 0 Name: 973paf.dat
 // 0 Author: Nils Schmidt [BlackBrick89]
@@ -20,7 +21,7 @@ function ldraw_lib__973paf() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01(realsolid)],
 // 4 16 -19 29 10 19 29 10 19 32 10 -19 32 10
   [4,16,-19,29,10,19,29,10,19,32,10,-19,32,10],
 // 4 16 19 29 10 -19 29 10 -14.345 2 10 14.345 2 10
@@ -28,7 +29,7 @@ function ldraw_lib__973paf() = [
 // 4 16 14.345 2 10 -14.345 2 10 -12 0 10 12 0 10
   [4,16,14.345,2,10,-14.345,2,10,-12,0,10,12,0,10],
 // 1 7 0 -4 0 4.243 0 -4.243 0 -8 0 -4.243 0 -4.243 1-4cyli.dat
-  [1,7,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli()],
+  [1,7,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli(realsolid)],
 // 
 // 4 16 7.8 1.1 -10 8.2 1 -10 -7.9 0.9 -10 -7.6 1.1 -10
   [4,16,7.8,1.1,-10,8.2,1,-10,-7.9,0.9,-10,-7.6,1.1,-10],
@@ -724,5 +725,5 @@ function ldraw_lib__973paf() = [
   [4,7,-4,5.1,-10,-5.6,4.4,-10,-5.8,5.6,-10,-3.9,6.3,-10],
 ];
 module ldraw_lib__973paf(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__973paf(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__973paf(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__973paf(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/4066bs01.scad>
-function ldraw_lib__4066bp08() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4066bp08(realsolid=false) = [
 // 0 Duplo Brick  1 x  2 x  2 with Box with Sun and Grapes Pattern
 // 0 Name: 4066bp08.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -18,7 +19,7 @@ function ldraw_lib__4066bp08() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4066bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4066bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4066bs01(realsolid)],
 // 4 25 16.5 8.5 -20 -32 8.5 -20 -21 14.5 -20 31 14.5 -20
   [4,25,16.5,8.5,-20,-32,8.5,-20,-21,14.5,-20,31,14.5,-20],
 // 4 25 -21 16 -20 -35 8.5 -20 -35 16.5 -20 -21 26.5 -20
@@ -1947,5 +1948,5 @@ function ldraw_lib__4066bp08() = [
   [3,16,40,0,-20,17,7,-20,35.5,15,-20],
 ];
 module ldraw_lib__4066bp08(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4066bp08(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4066bp08(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4066bp08(line=0.2);

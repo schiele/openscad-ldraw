@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/48/1-4cyli.scad>
 use <s/93604s01.scad>
-function ldraw_lib__93604() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__93604(realsolid=false) = [
 // 0 Slope Brick Curved  3 x  4 x  0.667 Rounded
 // 0 Name: 93604.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -16,7 +17,7 @@ function ldraw_lib__93604() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\93604s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__93604s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__93604s01(realsolid)],
 // 0 // topsurface
 // 4 16 34.436 0.4683 -10 40 4 -10 40 4 10 34.436 0.4683 10
   [4,16,34.436,0.4683,-10,40,4,-10,40,4,10,34.436,0.4683,10],
@@ -47,7 +48,7 @@ function ldraw_lib__93604() = [
 // 5 24 -34.436 0.4683 -10 -34.436 0.4683 10 -28.284 -2.51 -10 -40 4 -10
   [5,24,-34.436,0.4683,-10,-34.436,0.4683,10,-28.284,-2.51,-10,-40,4,-10],
 // 1 16 0 32.9719 -36 -40 0 40 -28.9719 0 -28.9719 0 26 0 48\1-4cyli.dat
-  [1,16,0,32.9719,-36,-40,0,40,-28.9719,0,-28.9719,0,26,0, ldraw_lib__48__1_4cyli()],
+  [1,16,0,32.9719,-36,-40,0,40,-28.9719,0,-28.9719,0,26,0, ldraw_lib__48__1_4cyli(realsolid)],
 // 0 // curved rounded surface
 // 4 16 0 -8 -38 7.3837 -7.6377 -38 7.384 -7.6525 -36 0 -8.0002 -36
   [4,16,0,-8,-38,7.3837,-7.6377,-38,7.384,-7.6525,-36,0,-8.0002,-36],
@@ -679,5 +680,5 @@ function ldraw_lib__93604() = [
   [5,24,0,0.5023,-48.3496,0,4,-50,7.384,4,-49.6525,-7.384,4,-49.6525],
 ];
 module ldraw_lib__93604(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__93604(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__93604(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__93604(line=0.2);

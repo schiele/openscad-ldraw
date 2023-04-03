@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/4-4edge.scad>
 use <../p/connect6.scad>
-function ldraw_lib__30647() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__30647(realsolid=false) = [
 // 0 Technic Side Flaring Intake  1 x  4 with Two Pins
 // 0 Name: 30647.dat
 // 0 Author: Guy Vivan [guyvivan]
@@ -16,13 +17,13 @@ function ldraw_lib__30647() = [
 // 
 // 
 // 1 16 0 0 20 8 0 0 0 1 0 0 0 8 4-4edge.dat
-  [1,16,0,0,20,8,0,0,0,1,0,0,0,8, ldraw_lib__4_4edge()],
+  [1,16,0,0,20,8,0,0,0,1,0,0,0,8, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 0 -20 8 0 0 0 1 0 0 0 8 4-4edge.dat
-  [1,16,0,0,-20,8,0,0,0,1,0,0,0,8, ldraw_lib__4_4edge()],
+  [1,16,0,0,-20,8,0,0,0,1,0,0,0,8, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 0 -20 1 0 0 0 -1 0 0 0 1 connect6.dat
-  [1,16,0,0,-20,1,0,0,0,-1,0,0,0,1, ldraw_lib__connect6()],
+  [1,16,0,0,-20,1,0,0,0,-1,0,0,0,1, ldraw_lib__connect6(realsolid)],
 // 1 16 0 0 20 1 0 0 0 -1 0 0 0 1 connect6.dat
-  [1,16,0,0,20,1,0,0,0,-1,0,0,0,1, ldraw_lib__connect6()],
+  [1,16,0,0,20,1,0,0,0,-1,0,0,0,1, ldraw_lib__connect6(realsolid)],
 // 2 24 14 0 40 -14 0 40
   [2,24,14,0,40,-14,0,40],
 // 2 24 12 0 -40 -12 0 -40
@@ -876,5 +877,5 @@ function ldraw_lib__30647() = [
 // 0
 ];
 module ldraw_lib__30647(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__30647(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__30647(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__30647(line=0.2);

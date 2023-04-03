@@ -5,7 +5,8 @@ use <../p/4-4disc.scad>
 use <../p/4-4edge.scad>
 use <../p/4-8sphe.scad>
 use <s/30126a01.scad>
-function ldraw_lib__30126p01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__30126p01(realsolid=false) = [
 // 0 Minifig Feathers with Pin and Black Tip on Both Sides Pattern
 // 0 Name: 30126p01.dat
 // 0 Author: Franklin W. Cain [fwcain]
@@ -31,18 +32,18 @@ function ldraw_lib__30126p01() = [
 // 
 // 
 // 1 16 0 4 0 2 0 0 0 2 0 0 0 2 4-8sphe.dat
-  [1,16,0,4,0,2,0,0,0,2,0,0,0,2, ldraw_lib__4_8sphe()],
+  [1,16,0,4,0,2,0,0,0,2,0,0,0,2, ldraw_lib__4_8sphe(realsolid)],
 // 1 16 0 0 0 2 0 0 0 4 0 0 0 2 4-4cyli.dat
-  [1,16,0,0,0,2,0,0,0,4,0,0,0,2, ldraw_lib__4_4cyli()],
+  [1,16,0,0,0,2,0,0,0,4,0,0,0,2, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 0 0 4 0 0 0 -1 0 0 0 4 4-4disc.dat
-  [1,16,0,0,0,4,0,0,0,-1,0,0,0,4, ldraw_lib__4_4disc()],
+  [1,16,0,0,0,4,0,0,0,-1,0,0,0,4, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 -8 0 4 0 0 0 8 0 0 0 4 4-4cylc.dat
-  [1,16,0,-8,0,4,0,0,0,8,0,0,0,4, ldraw_lib__4_4cylc()],
+  [1,16,0,-8,0,4,0,0,0,8,0,0,0,4, ldraw_lib__4_4cylc(realsolid)],
 // 1 16 0 0 0 2 0 0 0 1 0 0 0 2 4-4edge.dat
-  [1,16,0,0,0,2,0,0,0,1,0,0,0,2, ldraw_lib__4_4edge()],
+  [1,16,0,0,0,2,0,0,0,1,0,0,0,2, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 -8 0 1 0 0 0 1 0 0 0 1 s\30126a01.dat
-  [1,16,0,-8,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30126a01()],
+  [1,16,0,-8,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30126a01(realsolid)],
 ];
 module ldraw_lib__30126p01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__30126p01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__30126p01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__30126p01(line=0.2);

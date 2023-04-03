@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/98127s01.scad>
-function ldraw_lib__98127pd7f() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__98127pd7f(realsolid=false) = [
 // 0 Minifig Torso Short with Ridged Extended Back with Orange Collar and Black Tie Pattern
 // 0 Name: 98127pd7f.dat
 // 0 Author: Chris Dee [cwdee]
@@ -18,7 +19,7 @@ function ldraw_lib__98127pd7f() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 -1 s\98127s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__98127s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__98127s01(realsolid)],
 // 0 // Tie
 // 4 0 -3.5 6 -10 -2 2 -10 2 2 -10 3.5 6 -10
   [4,0,-3.5,6,-10,-2,2,-10,2,2,-10,3.5,6,-10],
@@ -109,5 +110,5 @@ function ldraw_lib__98127pd7f() = [
   [4,16,-18.137,24,-10,-3.7,23,-10,3.7,23,-10,18.137,24,-10],
 ];
 module ldraw_lib__98127pd7f(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__98127pd7f(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__98127pd7f(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__98127pd7f(line=0.2);

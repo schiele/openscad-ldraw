@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <3068b.scad>
 use <../p/stud2.scad>
-function ldraw_lib__87580() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__87580(realsolid=false) = [
 // 0 Plate  2 x  2 with Groove with 1 Centre Stud
 // 0 Name: 87580.dat
 // 0 Author: Joerg Sommerer [Brickaneer]
@@ -22,11 +23,11 @@ function ldraw_lib__87580() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 3068b.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3068b()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3068b(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 stud2.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2(realsolid)],
 // 
 ];
 module ldraw_lib__87580(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__87580(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__87580(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__87580(line=0.2);

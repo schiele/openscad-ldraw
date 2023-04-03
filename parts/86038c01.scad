@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/50231s01.scad>
 use <s/50231s02.scad>
-function ldraw_lib__86038c01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__86038c01(realsolid=false) = [
 // 0 Minifig Cape Cloth with Holes and Tattered Edges (Formed)
 // 0 Name: 86038c01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -21,9 +22,9 @@ function ldraw_lib__86038c01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\50231s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__50231s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__50231s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\50231s02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__50231s02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__50231s02(realsolid)],
 // 0 // Outer Surface
 // 4 16 -24.88 64.68 32.24 -26.7 64.77 31.52 -27.91 63.94 30.88 -28.38 62.74 30.46
   [4,16,-24.88,64.68,32.24,-26.7,64.77,31.52,-27.91,63.94,30.88,-28.38,62.74,30.46],
@@ -3321,5 +3322,5 @@ function ldraw_lib__86038c01() = [
   [5,24,-3.24,-0.3,5.61,-2.26,-0.31,16.84,-0.44,-0.3,16.63,-5.14,-0.3,3.95],
 ];
 module ldraw_lib__86038c01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__86038c01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__86038c01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__86038c01(line=0.2);

@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__u9142s09() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__u9142s09(realsolid=false) = [
 // 0 ~Figure Fabuland Bulldog Eye  4
 // 0 Name: s\u9142s09.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -591,5 +592,5 @@ function ldraw_lib__s__u9142s09() = [
   [5,24,4.485,-32.443,-20.002,2.03,-34.425,-19.448,1.687,-31.768,-20.747,5.272,-35.838,-17.968],
 ];
 module ldraw_lib__s__u9142s09(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__u9142s09(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__u9142s09(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__u9142s09(line=0.2);

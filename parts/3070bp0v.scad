@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3070bs01.scad>
-function ldraw_lib__3070bp0v() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3070bp0v(realsolid=false) = [
 // 0 Tile  1 x  1 with Coral 'LOVE' on Magenta Background Pattern
 // 0 Name: 3070bp0v.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -17,7 +18,7 @@ function ldraw_lib__3070bp0v() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3070bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3070bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3070bs01(realsolid)],
 // 4 16 -10 0 -10 10 0 -10 -1.54 0 -9 -4.91 0 -9
   [4,16,-10,0,-10,10,0,-10,-1.54,0,-9,-4.91,0,-9],
 // 4 353 3.09 0 -0.42 6 0 -3.93 6 0 -2.81 4.77 0 -0.13
@@ -166,5 +167,5 @@ function ldraw_lib__3070bp0v() = [
   [3,16,-10,0,10,-9,0,-0.2,-9,0,9],
 ];
 module ldraw_lib__3070bp0v(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3070bp0v(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3070bp0v(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3070bp0v(line=0.2);

@@ -3,7 +3,8 @@ use <6122.scad>
 use <87685.scad>
 use <87686.scad>
 use <87687.scad>
-function ldraw_lib__6122c01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6122c01(realsolid=false) = [
 // 0 Minifig Helmet Castle w/ Dragon Crown Top Black w/ Dragon Plume
 // 0 Name: 6122c01.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -22,14 +23,14 @@ function ldraw_lib__6122c01() = [
 // 
 // 
 // 1 16 0 -22 9 1 0 0 0 1 0 0 0 1 87687.dat
-  [1,16,0,-22,9,1,0,0,0,1,0,0,0,1, ldraw_lib__87687()],
+  [1,16,0,-22,9,1,0,0,0,1,0,0,0,1, ldraw_lib__87687(realsolid)],
 // 1 16 -19 3.4 -0.7 0 1 0 -0.866 0 0.5 0.5 0 0.866 87686.dat
-  [1,16,-19,3.4,-0.7,0,1,0,-0.866,0,0.5,0.5,0,0.866, ldraw_lib__87686()],
+  [1,16,-19,3.4,-0.7,0,1,0,-0.866,0,0.5,0.5,0,0.866, ldraw_lib__87686(realsolid)],
 // 1 16 19 3.4 -0.7 0 -1 0 0.866 0 0.5 -0.5 0 0.866 87685.dat
-  [1,16,19,3.4,-0.7,0,-1,0,0.866,0,0.5,-0.5,0,0.866, ldraw_lib__87685()],
+  [1,16,19,3.4,-0.7,0,-1,0,0.866,0,0.5,-0.5,0,0.866, ldraw_lib__87685(realsolid)],
 // 1 0 0 0 0 1 0 0 0 1 0 0 0 1 6122.dat
-  [1,0,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__6122()],
+  [1,0,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__6122(realsolid)],
 ];
 module ldraw_lib__6122c01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6122c01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6122c01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6122c01(line=0.2);

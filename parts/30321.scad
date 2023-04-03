@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/1-4cylc.scad>
 use <../p/1-4disc.scad>
 use <../p/rect2p.scad>
-function ldraw_lib__30321() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__30321(realsolid=false) = [
 // 0 Glass for Panel  3 x  6 x  6 with Window
 // 0 Name: 30321.dat
 // 0 Author: Tony Hafner [hafhead]
@@ -23,13 +24,13 @@ function ldraw_lib__30321() = [
 // 
 // 
 // 1 16 0 0 0 40 0 0 0 1 0 0 0 -2 rect2p.dat
-  [1,16,0,0,0,40,0,0,0,1,0,0,0,-2, ldraw_lib__rect2p()],
+  [1,16,0,0,0,40,0,0,0,1,0,0,0,-2, ldraw_lib__rect2p(realsolid)],
 // 1 16 0 36 0 40 0 0 0 -1 0 0 0 2 rect2p.dat
-  [1,16,0,36,0,40,0,0,0,-1,0,0,0,2, ldraw_lib__rect2p()],
+  [1,16,0,36,0,40,0,0,0,-1,0,0,0,2, ldraw_lib__rect2p(realsolid)],
 // 1 16 -44 18 0 0 1 0 14 0 0 0 0 2 rect2p.dat
-  [1,16,-44,18,0,0,1,0,14,0,0,0,0,2, ldraw_lib__rect2p()],
+  [1,16,-44,18,0,0,1,0,14,0,0,0,0,2, ldraw_lib__rect2p(realsolid)],
 // 1 16 44 18 0 0 -1 0 14 0 0 0 0 -2 rect2p.dat
-  [1,16,44,18,0,0,-1,0,14,0,0,0,0,-2, ldraw_lib__rect2p()],
+  [1,16,44,18,0,0,-1,0,14,0,0,0,0,-2, ldraw_lib__rect2p(realsolid)],
 // 4 16 -40 4 -2 40 4 -2 40 32 -2 -40 32 -2
   [4,16,-40,4,-2,40,4,-2,40,32,-2,-40,32,-2],
 // 4 16 -40 0 -2 40 0 -2 40 4 -2 -40 4 -2
@@ -41,13 +42,13 @@ function ldraw_lib__30321() = [
 // 4 16 44 4 -2 44 32 -2 40 32 -2 40 4 -2
   [4,16,44,4,-2,44,32,-2,40,32,-2,40,4,-2],
 // 1 16 -40 4 -2 -4 0 0 0 0 -4 0 4 0 1-4cylc.dat
-  [1,16,-40,4,-2,-4,0,0,0,0,-4,0,4,0, ldraw_lib__1_4cylc()],
+  [1,16,-40,4,-2,-4,0,0,0,0,-4,0,4,0, ldraw_lib__1_4cylc(realsolid)],
 // 1 16 40 4 -2 4 0 0 0 0 -4 0 4 0 1-4cylc.dat
-  [1,16,40,4,-2,4,0,0,0,0,-4,0,4,0, ldraw_lib__1_4cylc()],
+  [1,16,40,4,-2,4,0,0,0,0,-4,0,4,0, ldraw_lib__1_4cylc(realsolid)],
 // 1 16 -40 32 -2 -4 0 0 0 0 4 0 4 0 1-4cylc.dat
-  [1,16,-40,32,-2,-4,0,0,0,0,4,0,4,0, ldraw_lib__1_4cylc()],
+  [1,16,-40,32,-2,-4,0,0,0,0,4,0,4,0, ldraw_lib__1_4cylc(realsolid)],
 // 1 16 40 32 -2 4 0 0 0 0 4 0 4 0 1-4cylc.dat
-  [1,16,40,32,-2,4,0,0,0,0,4,0,4,0, ldraw_lib__1_4cylc()],
+  [1,16,40,32,-2,4,0,0,0,0,4,0,4,0, ldraw_lib__1_4cylc(realsolid)],
 // 4 16 -40 4 2 -40 32 2 40 32 2 40 4 2
   [4,16,-40,4,2,-40,32,2,40,32,2,40,4,2],
 // 4 16 -40 0 2 -40 4 2 40 4 2 40 0 2
@@ -59,14 +60,14 @@ function ldraw_lib__30321() = [
 // 4 16 44 4 2 40 4 2 40 32 2 44 32 2
   [4,16,44,4,2,40,4,2,40,32,2,44,32,2],
 // 1 16 -40 4 2 -4 0 0 0 0 -4 0 -1 0 1-4disc.dat
-  [1,16,-40,4,2,-4,0,0,0,0,-4,0,-1,0, ldraw_lib__1_4disc()],
+  [1,16,-40,4,2,-4,0,0,0,0,-4,0,-1,0, ldraw_lib__1_4disc(realsolid)],
 // 1 16 40 4 2 4 0 0 0 0 -4 0 -1 0 1-4disc.dat
-  [1,16,40,4,2,4,0,0,0,0,-4,0,-1,0, ldraw_lib__1_4disc()],
+  [1,16,40,4,2,4,0,0,0,0,-4,0,-1,0, ldraw_lib__1_4disc(realsolid)],
 // 1 16 -40 32 2 -4 0 0 0 0 4 0 -1 0 1-4disc.dat
-  [1,16,-40,32,2,-4,0,0,0,0,4,0,-1,0, ldraw_lib__1_4disc()],
+  [1,16,-40,32,2,-4,0,0,0,0,4,0,-1,0, ldraw_lib__1_4disc(realsolid)],
 // 1 16 40 32 2 4 0 0 0 0 4 0 -1 0 1-4disc.dat
-  [1,16,40,32,2,4,0,0,0,0,4,0,-1,0, ldraw_lib__1_4disc()],
+  [1,16,40,32,2,4,0,0,0,0,4,0,-1,0, ldraw_lib__1_4disc(realsolid)],
 ];
 module ldraw_lib__30321(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__30321(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__30321(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__30321(line=0.2);

@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/rect2p.scad>
-function ldraw_lib__s__11089s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__11089s01(realsolid=false) = [
 // 0 ~Claw Flexible  4L with Bar  0.5L Half
 // 0 Name: s\11089s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -513,7 +514,7 @@ function ldraw_lib__s__11089s01() = [
 // 2 24 3 -21 -5.3 6 -21 -5.3
   [2,24,3,-21,-5.3,6,-21,-5.3],
 // 1 16 4.65 -20 -5.3 1.35 0 0 0 0 1 0 -1 0 rect2p.dat
-  [1,16,4.65,-20,-5.3,1.35,0,0,0,0,1,0,-1,0, ldraw_lib__rect2p()],
+  [1,16,4.65,-20,-5.3,1.35,0,0,0,0,1,0,-1,0, ldraw_lib__rect2p(realsolid)],
 // 3 16 3.3 -19 -5.3 6 -19 -5.3 3.3 -19 -13
   [3,16,3.3,-19,-5.3,6,-19,-5.3,3.3,-19,-13],
 // 3 16 3.3 -21 -13 6 -21 -5.3 3.3 -21 -5.3
@@ -542,5 +543,5 @@ function ldraw_lib__s__11089s01() = [
   [2,24,3.3,-21,-10.5683,5.0109,-21,-7.4027],
 ];
 module ldraw_lib__s__11089s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__11089s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__11089s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__11089s01(line=0.2);

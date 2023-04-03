@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/48138s00.scad>
-function ldraw_lib__48138p01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__48138p01(realsolid=false) = [
 // 0 Quatro Brick  2 x  2 with Eyes Pattern
 // 0 Name: 48138p01.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -17,7 +18,7 @@ function ldraw_lib__48138p01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\48138s00.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__48138s00()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__48138s00(realsolid)],
 // 
 // 4 0 56.11 37.14 -79 51.48 38.97 -79 52.9 45.68 -79 56.95 45.6 -79
   [4,0,56.11,37.14,-79,51.48,38.97,-79,52.9,45.68,-79,56.95,45.6,-79],
@@ -419,5 +420,5 @@ function ldraw_lib__48138p01() = [
   [3,16,73,6,-79,56.11,37.14,-79,56.95,45.6,-79],
 ];
 module ldraw_lib__48138p01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__48138p01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__48138p01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__48138p01(line=0.2);

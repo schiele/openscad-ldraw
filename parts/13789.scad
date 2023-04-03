@@ -4,7 +4,8 @@ use <../p/4-4disc.scad>
 use <../p/4-4edge.scad>
 use <s/13789s01.scad>
 use <../p/stud4a.scad>
-function ldraw_lib__13789() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__13789(realsolid=false) = [
 // 0 Minifig Police Helmet
 // 0 Name: 13789.dat
 // 0 Author: Stan Isachenko [angmarec]
@@ -25,25 +26,25 @@ function ldraw_lib__13789() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\13789s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__13789s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__13789s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\13789s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__13789s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__13789s01(realsolid)],
 // 1 16 0 -4 0 1 0 0 0 -1 0 0 0 -1 stud4a.dat
-  [1,16,0,-4,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__stud4a()],
+  [1,16,0,-4,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__stud4a(realsolid)],
 // 1 16 0 -10 0 0 0 8 0 6 0 -8 0 0 4-4cyli.dat
-  [1,16,0,-10,0,0,0,8,0,6,0,-8,0,0, ldraw_lib__4_4cyli()],
+  [1,16,0,-10,0,0,0,8,0,6,0,-8,0,0, ldraw_lib__4_4cyli(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -10 0 0 0 6 0 6 0 -6 0 0 4-4cyli.dat
-  [1,16,0,-10,0,0,0,6,0,6,0,-6,0,0, ldraw_lib__4_4cyli()],
+  [1,16,0,-10,0,0,0,6,0,6,0,-6,0,0, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 -10 0 0 0 6 0 1 0 -6 0 0 4-4edge.dat
-  [1,16,0,-10,0,0,0,6,0,1,0,-6,0,0, ldraw_lib__4_4edge()],
+  [1,16,0,-10,0,0,0,6,0,1,0,-6,0,0, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 -10 0 0 0 8 0 1 0 8 0 0 4-4edge.dat
-  [1,16,0,-10,0,0,0,8,0,1,0,8,0,0, ldraw_lib__4_4edge()],
+  [1,16,0,-10,0,0,0,8,0,1,0,8,0,0, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 -10 0 0 0 8.66667 0 1 0 8.66667 0 0 4-4edge.dat
-  [1,16,0,-10,0,0,0,8.66667,0,1,0,8.66667,0,0, ldraw_lib__4_4edge()],
+  [1,16,0,-10,0,0,0,8.66667,0,1,0,8.66667,0,0, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 -10 0 0 0 8.66667 0 -1 0 8.66667 0 0 4-4disc.dat
-  [1,16,0,-10,0,0,0,8.66667,0,-1,0,8.66667,0,0, ldraw_lib__4_4disc()],
+  [1,16,0,-10,0,0,0,8.66667,0,-1,0,8.66667,0,0, ldraw_lib__4_4disc(realsolid)],
 // 0 // Patternable areas
 // 0 // Left
 // 5 24 0 -18.529 -7.343 0 -21.223 -3.331 -0.992 -20.878 -3.371 0.992 -20.878 -3.371
@@ -183,5 +184,5 @@ function ldraw_lib__13789() = [
   [5,24,0.838,-18.224,-7.43,0.992,-20.878,-3.371,2.642,-16.705,-6.51,0,-18.529,-7.343],
 ];
 module ldraw_lib__13789(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__13789(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__13789(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__13789(line=0.2);

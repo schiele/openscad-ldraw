@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/48/5-48edge.scad>
-function ldraw_lib__s__32219s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__32219s01(realsolid=false) = [
 // 0 ~Wheel 14 x 30 Znap Outer Structure  0.0833
 // 0 Name: s\32219s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -15,7 +16,7 @@ function ldraw_lib__s__32219s01() = [
 // 
 // 
 // 1 16 0 0 -18 28.9778 0 7.76457 7.76457 0 -28.9778 0 1 0 48\5-48edge.dat
-  [1,16,0,0,-18,28.9778,0,7.76457,7.76457,0,-28.9778,0,1,0, ldraw_lib__48__5_48edge()],
+  [1,16,0,0,-18,28.9778,0,7.76457,7.76457,0,-28.9778,0,1,0, ldraw_lib__48__5_48edge(realsolid)],
 // 4 16 26.869 -26.87 -6 25.455 -25.455 -13 28.562 -21.916 -13 30.148 -23.133 -6
   [4,16,26.869,-26.87,-6,25.455,-25.455,-13,28.562,-21.916,-13,30.148,-23.133,-6],
 // 4 16 30.148 -23.133 -6 28.562 -21.916 -13 31.176 -17.999 -13 32.909 -18.999 -6
@@ -332,5 +333,5 @@ function ldraw_lib__s__32219s01() = [
   [5,24,25.98,-14.999,-18,27.718,-11.481,-18,29.228,-16.874,-16,25.114,-14.5,-18],
 ];
 module ldraw_lib__s__32219s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__32219s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__32219s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__32219s01(line=0.2);

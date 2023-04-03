@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/15680s01.scad>
 use <s/15680s02.scad>
-function ldraw_lib__15680() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__15680(realsolid=false) = [
 // 0 Figure Friends Legs with Full Length Skirt
 // 0 Name: 15680.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -18,13 +19,13 @@ function ldraw_lib__15680() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\15680s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__15680s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__15680s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\15680s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__15680s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__15680s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\15680s02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__15680s02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__15680s02(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\15680s02.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__15680s02()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__15680s02(realsolid)],
 // 0 // Patternable Front
 // 5 24 12.792 -4.8339 -9.2264 0 0 -9.46 13.8 0 -9.46 0 -4.6667 -8.978
   [5,24,12.792,-4.8339,-9.2264,0,0,-9.46,13.8,0,-9.46,0,-4.6667,-8.978],
@@ -152,5 +153,5 @@ function ldraw_lib__15680() = [
   [5,24,0,-35.3333,-5.655,0,-31.6667,-5.605,5.2119,-35.342,-5.514,-5.2119,-35.342,-5.514],
 ];
 module ldraw_lib__15680(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__15680(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__15680(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__15680(line=0.2);

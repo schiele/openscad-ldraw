@@ -3,7 +3,8 @@ use <s/3626bp84s01.scad>
 use <s/3626bp84s02.scad>
 use <s/3626bs02.scad>
 use <s/3626bs04.scad>
-function ldraw_lib__3626bp85() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3626bp85(realsolid=false) = [
 // 0 Minifig Head with Smile, Brown Eyebrows and White Pupils Pattern (Blocked Hollow Stud)
 // 0 Name: 3626bp85.dat
 // 0 Author: Howard Lande [HowardLande]
@@ -22,14 +23,14 @@ function ldraw_lib__3626bp85() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3626bs02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626bs02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626bs02(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3626bs04.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626bs04()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626bs04(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3626bp84s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626bp84s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626bp84s01(realsolid)],
 // 1 6 0 0 0 1 0 0 0 1 0 0 0 1 s\3626bp84s02.dat
-  [1,6,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626bp84s02()],
+  [1,6,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626bp84s02(realsolid)],
 ];
 module ldraw_lib__3626bp85(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3626bp85(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3626bp85(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3626bp85(line=0.2);

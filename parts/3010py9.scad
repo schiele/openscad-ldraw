@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/3010py9s01.scad>
 use <s/3010s01.scad>
-function ldraw_lib__3010py9() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3010py9(realsolid=false) = [
 // 0 Brick  1 x  4 with Bat Head and Metallic Silver Striped Jacket Pattern
 // 0 Name: 3010py9.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -18,11 +19,11 @@ function ldraw_lib__3010py9() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3010s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3010s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3010s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3010py9s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3010py9s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3010py9s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\3010py9s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__3010py9s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__3010py9s01(realsolid)],
 // 
 // 3 16 0 0 -10 -2.1 4.24 -10 2.1 4.24 -10
   [3,16,0,0,-10,-2.1,4.24,-10,2.1,4.24,-10],
@@ -50,5 +51,5 @@ function ldraw_lib__3010py9() = [
   [4,80,1.6,10.72,-10,1.3,9.76,-10,-1.3,9.76,-10,-1.6,10.72,-10],
 ];
 module ldraw_lib__3010py9(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3010py9(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3010py9(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3010py9(line=0.2);

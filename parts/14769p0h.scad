@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4ering.scad>
 use <../p/4-4rin19.scad>
 use <s/14769s01.scad>
-function ldraw_lib__14769p0h() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__14769p0h(realsolid=false) = [
 // 0 Tile  2 x  2 Round with Blue Bird with Raised Wings and Flag with Red, White and Blue Stars and Stripes Pattern
 // 0 Name: 14769p0h.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -19,12 +20,12 @@ function ldraw_lib__14769p0h() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\14769s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__14769s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__14769s01(realsolid)],
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 4-4rin19.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4rin19()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4rin19(realsolid)],
 // 1 16 0 0 0 19 0 0 0 1 0 0 0 19 4-4ering.dat
-  [1,16,0,0,0,19,0,0,0,1,0,0,0,19, ldraw_lib__4_4ering()],
+  [1,16,0,0,0,19,0,0,0,1,0,0,0,19, ldraw_lib__4_4ering(realsolid)],
 // 4 272 -17.818 0 0 -17.666 0 2.326 -18.118 0 2.385 -18.274 0 0
   [4,272,-17.818,0,0,-17.666,0,2.326,-18.118,0,2.385,-18.274,0,0],
 // 4 272 -17.666 0 -2.326 -17.818 0 0 -18.274 0 0 -18.118 0 -2.385
@@ -2109,5 +2110,5 @@ function ldraw_lib__14769p0h() = [
   [4,16,-17.651,0,-4.73,-18.118,0,-2.385,-19,0,0,-17.554,0,-7.271],
 ];
 module ldraw_lib__14769p0h(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__14769p0h(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__14769p0h(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__14769p0h(line=0.2);

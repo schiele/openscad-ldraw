@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/u9001s01.scad>
-function ldraw_lib__u9002p04() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__u9002p04(realsolid=false) = [
 // 0 ~Electric Switch: Key Right with Yellow Triangle Up Pattern
 // 0 Name: u9002p04.dat
 // 0 Author: Steffen [Steffen]
@@ -20,7 +21,7 @@ function ldraw_lib__u9002p04() = [
 // 
 // 
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\u9001s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__u9001s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__u9001s01(realsolid)],
 // 4 16 -40 -31 0 -30.75 -31 -6.7 21.4 -31 -6.7 40 -31 0
   [4,16,-40,-31,0,-30.75,-31,-6.7,21.4,-31,-6.7,40,-31,0],
 // 4 16 -30.75 -31 -83.15 -30.75 -31 -6.7 -40 -31 0 -40 -31 -160
@@ -41,5 +42,5 @@ function ldraw_lib__u9002p04() = [
   [4,0,-30.75,-31,-83.3,21.4,-31,-83.3,13.15,-31,-73.25,-22.5,-31,-73.25],
 ];
 module ldraw_lib__u9002p04(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__u9002p04(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__u9002p04(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__u9002p04(line=0.2);

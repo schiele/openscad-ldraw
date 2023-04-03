@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/1-4chrd.scad>
 use <../p/1-4ndis.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__4162510c() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4162510c(realsolid=false) = [
 // 0 Sticker  4.4 x  2.0 with White "1" on Light Grey Background
 // 0 Name: 4162510c.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -20,15 +21,15 @@ function ldraw_lib__4162510c() = [
 // 
 // 0 // Primitives
 // 1 16 0 -.25 0 20 0 0 0 .25 0 0 0 44 box5-12.dat
-  [1,16,0,-.25,0,20,0,0,0,.25,0,0,0,44, ldraw_lib__box5_12()],
+  [1,16,0,-.25,0,20,0,0,0,.25,0,0,0,44, ldraw_lib__box5_12(realsolid)],
 // 1 7 -11 -.25 -22.5 5.5 0 0 0 1 0 0 0 -5.5 1-4chrd.dat
-  [1,7,-11,-.25,-22.5,5.5,0,0,0,1,0,0,0,-5.5, ldraw_lib__1_4chrd()],
+  [1,7,-11,-.25,-22.5,5.5,0,0,0,1,0,0,0,-5.5, ldraw_lib__1_4chrd(realsolid)],
 // 1 7 11 -.25 -22.5 -5.5 0 0 0 1 0 0 0 -5.5 1-4chrd.dat
-  [1,7,11,-.25,-22.5,-5.5,0,0,0,1,0,0,0,-5.5, ldraw_lib__1_4chrd()],
+  [1,7,11,-.25,-22.5,-5.5,0,0,0,1,0,0,0,-5.5, ldraw_lib__1_4chrd(realsolid)],
 // 1 15 -11 -.25 -22.5 5.5 0 0 0 1 0 0 0 -5.5 1-4ndis.dat
-  [1,15,-11,-.25,-22.5,5.5,0,0,0,1,0,0,0,-5.5, ldraw_lib__1_4ndis()],
+  [1,15,-11,-.25,-22.5,5.5,0,0,0,1,0,0,0,-5.5, ldraw_lib__1_4ndis(realsolid)],
 // 1 15 11 -.25 -22.5 -5.5 0 0 0 1 0 0 0 -5.5 1-4ndis.dat
-  [1,15,11,-.25,-22.5,-5.5,0,0,0,1,0,0,0,-5.5, ldraw_lib__1_4ndis()],
+  [1,15,11,-.25,-22.5,-5.5,0,0,0,1,0,0,0,-5.5, ldraw_lib__1_4ndis(realsolid)],
 // 0 // Top faces
 // 0 // Grey faces
 // 3 7 -20 -.25 44 -11 -.25 26 -5.5 -.25 40
@@ -66,5 +67,5 @@ function ldraw_lib__4162510c() = [
   [4,15,5.5,-.25,40,-5.5,-.25,40,-11,-.25,26,-11,-.25,20],
 ];
 module ldraw_lib__4162510c(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4162510c(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4162510c(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4162510c(line=0.2);

@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__98138pn2s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__98138pn2s01(realsolid=false) = [
 // 0 ~Sushi Napkin with 17 Petals
 // 0 Name: s\98138pn2s01.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -319,5 +320,5 @@ function ldraw_lib__s__98138pn2s01() = [
   [3,15,-4.9497,0,-4.9497,-6.4673,0,-2.6789,-5.9122,0,-5.3896],
 ];
 module ldraw_lib__s__98138pn2s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__98138pn2s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__98138pn2s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__98138pn2s01(line=0.2);

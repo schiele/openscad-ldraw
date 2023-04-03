@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4cylc.scad>
 use <../p/4-4disc.scad>
 use <../p/axle.scad>
-function ldraw_lib__15462() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__15462(realsolid=false) = [
 // 0 Technic Axle  5 with Stop
 // 0 Name: 15462.dat
 // 0 Author: Max Martin Richter [MMR1988]
@@ -18,12 +19,12 @@ function ldraw_lib__15462() = [
 // 
 // 
 // 1 16 48 0 0 0 -98 0 1 0 0 0 0 1 axle.dat
-  [1,16,48,0,0,0,-98,0,1,0,0,0,0,1, ldraw_lib__axle()],
+  [1,16,48,0,0,0,-98,0,1,0,0,0,0,1, ldraw_lib__axle(realsolid)],
 // 1 16 48 0 0 0 1 0 8 0 0 0 0 8 4-4disc.dat
-  [1,16,48,0,0,0,1,0,8,0,0,0,0,8, ldraw_lib__4_4disc()],
+  [1,16,48,0,0,0,1,0,8,0,0,0,0,8, ldraw_lib__4_4disc(realsolid)],
 // 1 16 50 0 0 0 -2 0 8 0 0 0 0 8 4-4cylc.dat
-  [1,16,50,0,0,0,-2,0,8,0,0,0,0,8, ldraw_lib__4_4cylc()],
+  [1,16,50,0,0,0,-2,0,8,0,0,0,0,8, ldraw_lib__4_4cylc(realsolid)],
 ];
 module ldraw_lib__15462(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__15462(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__15462(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__15462(line=0.2);

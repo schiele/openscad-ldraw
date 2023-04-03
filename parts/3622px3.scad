@@ -4,7 +4,8 @@ use <../p/4-4ndis.scad>
 use <../p/4-4ring3.scad>
 use <../p/4-4ring4.scad>
 use <s/3622s01.scad>
-function ldraw_lib__3622px3() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3622px3(realsolid=false) = [
 // 0 Brick  1 x  3 with Face White Eyes and Lightning Eyebrows Pattern
 // 0 Name: 3622px3.dat
 // 0 Author: Bert Van Raemdonck [BEAVeR]
@@ -21,20 +22,20 @@ function ldraw_lib__3622px3() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3622s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3622s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3622s01(realsolid)],
 // 
 // 1 15 -10.2 14.7 -10 2.6 0 0 0 0 -2.6 0 1 0 4-4disc.dat
-  [1,15,-10.2,14.7,-10,2.6,0,0,0,0,-2.6,0,1,0, ldraw_lib__4_4disc()],
+  [1,15,-10.2,14.7,-10,2.6,0,0,0,0,-2.6,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 0 -10.2 14.7 -10 0.65 0 0 0 0 -0.65 0 1 0 4-4ring4.dat
-  [1,0,-10.2,14.7,-10,0.65,0,0,0,0,-0.65,0,1,0, ldraw_lib__4_4ring4()],
+  [1,0,-10.2,14.7,-10,0.65,0,0,0,0,-0.65,0,1,0, ldraw_lib__4_4ring4(realsolid)],
 // 1 15 11.4 13.8 -10 2.3 0 0 0 0 -2.3 0 1 0 4-4disc.dat
-  [1,15,11.4,13.8,-10,2.3,0,0,0,0,-2.3,0,1,0, ldraw_lib__4_4disc()],
+  [1,15,11.4,13.8,-10,2.3,0,0,0,0,-2.3,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 0 11.4 13.8 -10 0.7667 0 0 0 0 -0.7667 0 1 0 4-4ring3.dat
-  [1,0,11.4,13.8,-10,0.7667,0,0,0,0,-0.7667,0,1,0, ldraw_lib__4_4ring3()],
+  [1,0,11.4,13.8,-10,0.7667,0,0,0,0,-0.7667,0,1,0, ldraw_lib__4_4ring3(realsolid)],
 // 1 16 -10.2 14.7 -10 3.25 0 0 0 0 -3.25 0 1 0 4-4ndis.dat
-  [1,16,-10.2,14.7,-10,3.25,0,0,0,0,-3.25,0,1,0, ldraw_lib__4_4ndis()],
+  [1,16,-10.2,14.7,-10,3.25,0,0,0,0,-3.25,0,1,0, ldraw_lib__4_4ndis(realsolid)],
 // 1 16 11.4 13.8 -10 3.0667 0 0 0 0 -3.0667 0 1 0 4-4ndis.dat
-  [1,16,11.4,13.8,-10,3.0667,0,0,0,0,-3.0667,0,1,0, ldraw_lib__4_4ndis()],
+  [1,16,11.4,13.8,-10,3.0667,0,0,0,0,-3.0667,0,1,0, ldraw_lib__4_4ndis(realsolid)],
 // 4 0 -15.3 19.6 -10 -15.7 19.2 -10 -15.5 20.1 -10 -14.9482 20.0945 -10
   [4,0,-15.3,19.6,-10,-15.7,19.2,-10,-15.5,20.1,-10,-14.9482,20.0945,-10],
 // 4 0 -14.9482 20.0945 -10 -15.5 20.1 -10 -14.9681 20.9808 -10 -14.3311 20.5733 -10
@@ -259,5 +260,5 @@ function ldraw_lib__3622px3() = [
   [3,16,-13.45,11.45,-10,-30,24,-10,-13.45,14.7,-10],
 ];
 module ldraw_lib__3622px3(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3622px3(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3622px3(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3622px3(line=0.2);

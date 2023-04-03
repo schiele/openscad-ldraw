@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/box5-12.scad>
 use <s/4586574as01.scad>
 use <s/4586574as02.scad>
-function ldraw_lib__4586574b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4586574b(realsolid=false) = [
 // 0 Sticker  0.8 x  1.8 with White Train Logo with Black Outline on Yellow Background
 // 0 Name: 4586574b.dat
 // 0 Author: David Manley [djm]
@@ -20,13 +21,13 @@ function ldraw_lib__4586574b() = [
 // 
 // 0 // Sticker backside.
 // 1 16 0 -0.25 0 17.5 0 0 0 0.25 0 0 0 7.5 box5-12.dat
-  [1,16,0,-0.25,0,17.5,0,0,0,0.25,0,0,0,7.5, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,17.5,0,0,0,0.25,0,0,0,7.5, ldraw_lib__box5_12(realsolid)],
 // 0 // Surround for logo with rectangular shape.
 // 1 14 0 -0.25 0 1 0 0 0 1 0 0 0 1 s\4586574as01.dat
-  [1,14,0,-0.25,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4586574as01()],
+  [1,14,0,-0.25,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4586574as01(realsolid)],
 // 0 // Train logo, with border around central white colour.
 // 1 15 0 -0.25 0 1 0 0 0 1 0 0 0 1 s\4586574as02.dat
-  [1,15,0,-0.25,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4586574as02()],
+  [1,15,0,-0.25,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4586574as02(realsolid)],
 // 0 // Surround the rectangular shape to the size of the sticker.
 // 4 14 -16.6 -0.25 5.9 -17.5 -0.25 7.5 -17.5 -0.25 -7.5 -16.6 -0.25 -5.9
   [4,14,-16.6,-0.25,5.9,-17.5,-0.25,7.5,-17.5,-0.25,-7.5,-16.6,-0.25,-5.9],
@@ -38,5 +39,5 @@ function ldraw_lib__4586574b() = [
   [4,14,-17.5,-0.25,7.5,-16.6,-0.25,5.9,16.6,-0.25,5.9,17.5,-0.25,7.5],
 ];
 module ldraw_lib__4586574b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4586574b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4586574b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4586574b(line=0.2);

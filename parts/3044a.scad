@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__3044a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3044a(realsolid=false) = [
 // 0 Slope Brick 45  2 x  1 Double with Hollow Bottom
 // 0 Name: 3044a.dat
 // 0 Author: James Mastros [theorbtwo]
@@ -124,5 +125,5 @@ function ldraw_lib__3044a() = [
 // 0
 ];
 module ldraw_lib__3044a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3044a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3044a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3044a(line=0.2);

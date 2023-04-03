@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__004847c() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__004847c(realsolid=false) = [
 // 0 Sticker  0.9 x  1.9 with White "Commando 850" Logo on Blue Background
 // 0 Name: 004847c.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -17,7 +18,7 @@ function ldraw_lib__004847c() = [
 // 
 // 
 // 1 16 0 -0.25 0 19 0 0 0 0.25 0 0 0 9 box5-12.dat
-  [1,16,0,-0.25,0,19,0,0,0,0.25,0,0,0,9, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,19,0,0,0,0.25,0,0,0,9, ldraw_lib__box5_12(realsolid)],
 // 4 15 -8.5 -0.25 3.2 -12.8 -0.25 3.2 -12.1 -0.25 2.6 -9.8 -0.25 2.6
   [4,15,-8.5,-0.25,3.2,-12.8,-0.25,3.2,-12.1,-0.25,2.6,-9.8,-0.25,2.6],
 // 4 15 -8.1 -0.25 3.1 -8.5 -0.25 3.2 -9.8 -0.25 2.6 -9.4 -0.25 2.4
@@ -568,5 +569,5 @@ function ldraw_lib__004847c() = [
   [3,1,-1.3,-0.25,0.5,-3.5,-0.25,0.5,-2.8,-0.25,-1],
 ];
 module ldraw_lib__004847c(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__004847c(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__004847c(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__004847c(line=0.2);

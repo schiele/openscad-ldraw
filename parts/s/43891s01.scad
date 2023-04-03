@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__43891s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__43891s01(realsolid=false) = [
 // 0 ~Animal Elephant Ear - 1/2
 // 0 Name: s\43891s01.dat
 // 0 Author: Andy Westrate [westrate]
@@ -556,5 +557,5 @@ function ldraw_lib__s__43891s01() = [
   [5,24,.61,22.97,8.36,.01,18.92,-8.16,.68,21.97,-7.91,.01,19.93,8.25],
 ];
 module ldraw_lib__s__43891s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__43891s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__43891s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__43891s01(line=0.2);

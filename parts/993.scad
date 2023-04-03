@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/7-8cyli.scad>
-function ldraw_lib__993() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__993(realsolid=false) = [
 // 0 ~Electric Cable 3LDU Twin
 // 0 Name: 993.dat
 // 0 Author: Michael Heidemann [mikeheide]
@@ -19,14 +20,14 @@ function ldraw_lib__993() = [
 // 
 // 
 // 1 16 0 0 1.3852 0.574025 0 1.38582 0 1 0 -1.38582 0 0.574025 7-8cyli.dat
-  [1,16,0,0,1.3852,0.574025,0,1.38582,0,1,0,-1.38582,0,0.574025, ldraw_lib__7_8cyli()],
+  [1,16,0,0,1.3852,0.574025,0,1.38582,0,1,0,-1.38582,0,0.574025, ldraw_lib__7_8cyli(realsolid)],
 // 1 16 0 0 -1.3852 -0.574025 0 -1.38582 0 1 0 1.38582 0 -0.574025 7-8cyli.dat
-  [1,16,0,0,-1.3852,-0.574025,0,-1.38582,0,1,0,1.38582,0,-0.574025, ldraw_lib__7_8cyli()],
+  [1,16,0,0,-1.3852,-0.574025,0,-1.38582,0,1,0,1.38582,0,-0.574025, ldraw_lib__7_8cyli(realsolid)],
 // 2 24 0.5755 1 0 0.5755 0 0
   [2,24,0.5755,1,0,0.5755,0,0],
 // 2 24 -0.5755 1 0 -0.5755 0 0
   [2,24,-0.5755,1,0,-0.5755,0,0],
 ];
 module ldraw_lib__993(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__993(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__993(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__993(line=0.2);

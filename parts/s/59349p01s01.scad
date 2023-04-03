@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__59349p01s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__59349p01s01(realsolid=false) = [
 // 0 ~Panel  1 x  6 x  5 with Light Bluish Grey Ironwork Pattern - 1/6
 // 0 Name: s\59349p01s01.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -825,5 +826,5 @@ function ldraw_lib__s__59349p01s01() = [
   [3,16,-50,5.75,0,-49.5,5.1,0,-50.5,5.1,0],
 ];
 module ldraw_lib__s__59349p01s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__59349p01s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__59349p01s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__59349p01s01(line=0.2);

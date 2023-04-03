@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <4141.scad>
-function ldraw_lib__206a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__206a(realsolid=false) = [
 // 0 ~Moved to 4141
 // 0 Name: 206a.dat
 // 0 Author: [PTadmin]
@@ -21,8 +22,8 @@ function ldraw_lib__206a() = [
 // 
 // 0 // Technic Differential Casing
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 4141.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4141()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4141(realsolid)],
 ];
 module ldraw_lib__206a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__206a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__206a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__206a(line=0.2);

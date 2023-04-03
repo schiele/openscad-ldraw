@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/92241s01.scad>
-function ldraw_lib__u9210p02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__u9210p02(realsolid=false) = [
 // 0 Figure Friends Boy Torso with Bright Green Polo Shirt Pattern
 // 0 Name: u9210p02.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -15,7 +16,7 @@ function ldraw_lib__u9210p02() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\92241s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__92241s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__92241s01(realsolid)],
 // 0 // Front
 // 3 16 0 -7.25 -0.33 0 -6.54 -2.61 3.68 -6 -2.59
   [3,16,0,-7.25,-0.33,0,-6.54,-2.61,3.68,-6,-2.59],
@@ -2257,5 +2258,5 @@ function ldraw_lib__u9210p02() = [
   [5,24,-9.59,-3.98,-3.46,-11,-3.7,-1.53,-11,-2.83,-2.83,-9.59,-5.08,-1.98],
 ];
 module ldraw_lib__u9210p02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__u9210p02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__u9210p02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__u9210p02(line=0.2);

@@ -7,7 +7,8 @@ use <../p/48/1-4edge.scad>
 use <../p/48/1-4ring3.scad>
 use <s/76795s01.scad>
 use <../p/stud4a.scad>
-function ldraw_lib__76795() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__76795(realsolid=false) = [
 // 0 Brick  5 x  5 Corner Round with Slope 45 Chamfer
 // 0 Name: 76795.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -24,32 +25,32 @@ function ldraw_lib__76795() = [
 // 
 // 
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 -1 s\76795s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__76795s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__76795s01(realsolid)],
 // 1 16 0 0 0 0 0 1 0 1 0 1 0 0 s\76795s01.dat
-  [1,16,0,0,0,0,0,1,0,1,0,1,0,0, ldraw_lib__s__76795s01()],
+  [1,16,0,0,0,0,0,1,0,1,0,1,0,0, ldraw_lib__s__76795s01(realsolid)],
 // 
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 0 60 0 0 0 20 0 0 0 -60 48\1-4cyli.dat
-  [1,16,0,0,0,60,0,0,0,20,0,0,0,-60, ldraw_lib__48__1_4cyli()],
+  [1,16,0,0,0,60,0,0,0,20,0,0,0,-60, ldraw_lib__48__1_4cyli(realsolid)],
 // 1 16 0 0 0 60 0 0 0 1 0 0 0 -60 48\1-4edge.dat
-  [1,16,0,0,0,60,0,0,0,1,0,0,0,-60, ldraw_lib__48__1_4edge()],
+  [1,16,0,0,0,60,0,0,0,1,0,0,0,-60, ldraw_lib__48__1_4edge(realsolid)],
 // 1 16 0 0 0 20 0 0 0 1 0 0 0 -20 48\1-4ring3.dat
-  [1,16,0,0,0,20,0,0,0,1,0,0,0,-20, ldraw_lib__48__1_4ring3()],
+  [1,16,0,0,0,20,0,0,0,1,0,0,0,-20, ldraw_lib__48__1_4ring3(realsolid)],
 // 1 16 0 0 0 80 0 0 0 1 0 0 0 -80 48\1-4edge.dat
-  [1,16,0,0,0,80,0,0,0,1,0,0,0,-80, ldraw_lib__48__1_4edge()],
+  [1,16,0,0,0,80,0,0,0,1,0,0,0,-80, ldraw_lib__48__1_4edge(realsolid)],
 // 1 16 0 20 0 20 0 0 0 -20 0 0 0 -20 48\1-4con4.dat
-  [1,16,0,20,0,20,0,0,0,-20,0,0,0,-20, ldraw_lib__48__1_4con4()],
+  [1,16,0,20,0,20,0,0,0,-20,0,0,0,-20, ldraw_lib__48__1_4con4(realsolid)],
 // 
 // 1 16 60 16 -60 -1 0 0 0 -2 0 0 0 -1 stud4a.dat
-  [1,16,60,16,-60,-1,0,0,0,-2,0,0,0,-1, ldraw_lib__stud4a()],
+  [1,16,60,16,-60,-1,0,0,0,-2,0,0,0,-1, ldraw_lib__stud4a(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 60 16 -60 -6 0 0 0 -2 0 0 0 -6 4-4cyli.dat
-  [1,16,60,16,-60,-6,0,0,0,-2,0,0,0,-6, ldraw_lib__4_4cyli()],
+  [1,16,60,16,-60,-6,0,0,0,-2,0,0,0,-6, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 60 16 -60 0 0 -8 0 -12 0 8 0 0 1-4cyli.dat
-  [1,16,60,16,-60,0,0,-8,0,-12,0,8,0,0, ldraw_lib__1_4cyli()],
+  [1,16,60,16,-60,0,0,-8,0,-12,0,8,0,0, ldraw_lib__1_4cyli(realsolid)],
 ];
 module ldraw_lib__76795(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__76795(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__76795(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__76795(line=0.2);

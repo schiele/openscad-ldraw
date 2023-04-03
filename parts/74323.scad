@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <4493c04.scad>
-function ldraw_lib__74323() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__74323(realsolid=false) = [
 // 0 ~_Animal Horse with Red Tack and Black Mane Pattern White (Obsolete)
 // 0 Name: 74323.dat
 // 0 Author: Steve Bliss [sbliss]
@@ -19,8 +20,8 @@ function ldraw_lib__74323() = [
 // 
 // 
 // 1 6 0 0 0 1 0 0 0 1 0 0 0 1 4493c04.dat
-  [1,6,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4493c04()],
+  [1,6,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4493c04(realsolid)],
 ];
 module ldraw_lib__74323(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__74323(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__74323(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__74323(line=0.2);

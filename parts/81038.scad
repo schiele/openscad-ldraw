@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <4209p01.scad>
-function ldraw_lib__81038() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__81038(realsolid=false) = [
 // 0 ~_Hose Reel  2 x  4 x  2 Holder with Fire Logo Pattern [4] (Obsolete)
 // 0 Name: 81038.dat
 // 0 Author: [PTadmin]
@@ -21,8 +22,8 @@ function ldraw_lib__81038() = [
 // 
 // 
 // 1 4 0 0 0 1 0 0 0 1 0 0 0 1 4209p01.dat
-  [1,4,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4209p01()],
+  [1,4,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4209p01(realsolid)],
 ];
 module ldraw_lib__81038(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__81038(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__81038(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__81038(line=0.2);

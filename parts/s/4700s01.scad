@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/48/1-4cyli.scad>
-function ldraw_lib__s__4700s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__4700s01(realsolid=false) = [
 // 0 ~Technic Excavator Bucket  6 x  9 Rib and Tooth
 // 0 Name: s\4700s01.dat
 // 0 Author: Guus-Jan Wijnhoven [guus]
@@ -191,9 +192,9 @@ function ldraw_lib__s__4700s01() = [
 // 2 24 3.75 11.3 -162.56 -3.75 11.3 -162.56
   [2,24,3.75,11.3,-162.56,-3.75,11.3,-162.56],
 // 1 16 -3.75 22.5 -78.125 0 7.5 0 62.6997 0 25 25 0 -62.6997 48\1-4cyli.dat
-  [1,16,-3.75,22.5,-78.125,0,7.5,0,62.6997,0,25,25,0,-62.6997, ldraw_lib__48__1_4cyli()],
+  [1,16,-3.75,22.5,-78.125,0,7.5,0,62.6997,0,25,25,0,-62.6997, ldraw_lib__48__1_4cyli(realsolid)],
 // 0
 ];
 module ldraw_lib__s__4700s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__4700s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__4700s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__4700s01(line=0.2);

@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/48/1-24edge.scad>
 use <../../p/box3u4a.scad>
-function ldraw_lib__s__6578s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__6578s01(realsolid=false) = [
 // 0 ~Tyre 14/ 36 x 20 VR Tread Subpart
 // 0 Name: s\6578s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -74,13 +75,13 @@ function ldraw_lib__s__6578s01() = [
 // 2 24 -5.519 -34.256 -4.5 -5.911 -37.23 0
   [2,24,-5.519,-34.256,-4.5,-5.911,-37.23,0],
 // 1 16 -4.853 -36.865 0 -0.0653 0 -3.7972 -0.4957 0 0.4999 0 5 0 box3u4a.dat
-  [1,16,-4.853,-36.865,0,-0.0653,0,-3.7972,-0.4957,0,0.4999,0,5,0, ldraw_lib__box3u4a()],
+  [1,16,-4.853,-36.865,0,-0.0653,0,-3.7972,-0.4957,0,0.4999,0,5,0, ldraw_lib__box3u4a(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -4.853 -36.865 0 -0.0653 0 -0.9914 -0.4957 0 0.1305 0 3 0 box3u4a.dat
-  [1,16,-4.853,-36.865,0,-0.0653,0,-0.9914,-0.4957,0,0.1305,0,3,0, ldraw_lib__box3u4a()],
+  [1,16,-4.853,-36.865,0,-0.0653,0,-0.9914,-0.4957,0,0.1305,0,3,0, ldraw_lib__box3u4a(realsolid)],
 // 1 16 0 0 7 0 0 -38 -38 0 0 0 1 0 48\1-24edge.dat
-  [1,16,0,0,7,0,0,-38,-38,0,0,0,1,0, ldraw_lib__48__1_24edge()],
+  [1,16,0,0,7,0,0,-38,-38,0,0,0,1,0, ldraw_lib__48__1_24edge(realsolid)],
 // 3 16 -9.83 -36.7 7 -4.96 -37.67 7 0 -38 7
   [3,16,-9.83,-36.7,7,-4.96,-37.67,7,0,-38,7],
 // 4 16 0 -37 7 -9.577 -35.739 7 -9.83 -36.7 7 0 -38 7
@@ -90,5 +91,5 @@ function ldraw_lib__s__6578s01() = [
 // 0
 ];
 module ldraw_lib__s__6578s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__6578s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__6578s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__6578s01(line=0.2);

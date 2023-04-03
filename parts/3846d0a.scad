@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <3846.scad>
 use <6144759a.scad>
-function ldraw_lib__3846d0a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3846d0a(realsolid=false) = [
 // 0 Minifig Shield Triangular with Dark Pink Jewel and Gold Border Sticker
 // 0 Name: 3846d0a.dat
 // 0 Author: Yann Bouzon [Zaghor]
@@ -19,10 +20,10 @@ function ldraw_lib__3846d0a() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 3846.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3846()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3846(realsolid)],
 // 1 15 0 0 -10 1 0 0 0 0 -1 0 1 0 6144759a.dat
-  [1,15,0,0,-10,1,0,0,0,0,-1,0,1,0, ldraw_lib__6144759a()],
+  [1,15,0,0,-10,1,0,0,0,0,-1,0,1,0, ldraw_lib__6144759a(realsolid)],
 ];
 module ldraw_lib__3846d0a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3846d0a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3846d0a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3846d0a(line=0.2);

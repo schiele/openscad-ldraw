@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__680() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__680(realsolid=false) = [
 // 0 ~Technic Tread Segment Straight
 // 0 Name: 680.dat
 // 0 Author: Marc Klein [marckl]
@@ -187,5 +188,5 @@ function ldraw_lib__680() = [
 // 0
 ];
 module ldraw_lib__680(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__680(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__680(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__680(line=0.2);

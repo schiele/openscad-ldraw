@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <3005ptr.scad>
-function ldraw_lib__3005_r() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3005_r(realsolid=false) = [
 // 0 ~Moved to 3005ptr
 // 0 Name: 3005-r.dat
 // 0 Author: [PTadmin]
@@ -18,8 +19,8 @@ function ldraw_lib__3005_r() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 3005ptr.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3005ptr()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3005ptr(realsolid)],
 ];
 module ldraw_lib__3005_r(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3005_r(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3005_r(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3005_r(line=0.2);

@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/61189ps0s01.scad>
 use <s/61189s01.scad>
-function ldraw_lib__61189ps0() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__61189ps0(realsolid=false) = [
 // 0 Minifig Helmet SW Clone Trooper Phase I with Grey Markings and Black Visor Pattern
 // 0 Name: 61189ps0.dat
 // 0 Author: Ulrich Röder [UR]
@@ -24,11 +25,11 @@ function ldraw_lib__61189ps0() = [
 // 
 // 0 // Main
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\61189s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__61189s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__61189s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\61189ps0s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__61189ps0s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__61189ps0s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\61189ps0s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__61189ps0s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__61189ps0s01(realsolid)],
 // 4 16 1.875 -14.522 20.554 -1.875 -14.522 20.554 -1.875 -14.206 -6.245 1.875 -14.206 -6.245
   [4,16,1.875,-14.522,20.554,-1.875,-14.522,20.554,-1.875,-14.206,-6.245,1.875,-14.206,-6.245],
 // 3 16 0 -1.85 -16.557 1.875 -3.652 -15.771 -1.875 -3.652 -15.771
@@ -41,5 +42,5 @@ function ldraw_lib__61189ps0() = [
   [4,16,-1.875,-14.206,-6.245,-1.875,-12.022,-10.726,1.875,-12.022,-10.726,1.875,-14.206,-6.245],
 ];
 module ldraw_lib__61189ps0(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__61189ps0(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__61189ps0(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__61189ps0(line=0.2);

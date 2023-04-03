@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/empty.scad>
-function ldraw_lib__s__973p34a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__973p34a(realsolid=false) = [
 // 0 ~Obsolete File
 // 0 Name: s\973p34a.dat
 // 0 Author: Chris Dee [cwdee]
@@ -20,8 +21,8 @@ function ldraw_lib__s__973p34a() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 empty.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__empty()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__empty(realsolid)],
 ];
 module ldraw_lib__s__973p34a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__973p34a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__973p34a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__973p34a(line=0.2);

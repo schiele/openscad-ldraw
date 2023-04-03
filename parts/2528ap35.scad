@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/2528as01.scad>
 use <s/2528as03.scad>
-function ldraw_lib__2528ap35() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2528ap35(realsolid=false) = [
 // 0 Minifig Hat Bicorne with Metallic Gold Captain Pattern
 // 0 Name: 2528ap35.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -20,12 +21,12 @@ function ldraw_lib__2528ap35() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2528as01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2528as01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2528as01(realsolid)],
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 -1 s\2528as03.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__2528as03()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__2528as03(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 -1 s\2528as03.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__2528as03()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__2528as03(realsolid)],
 // 
 // 0 // Pattern Left Half
 // 4 82 -1.79 -16.54 -6.67733 0 -16.7174 -6.7134 0 -17.8774 -5.992 -1.89 -17.7 -5.94778
@@ -826,5 +827,5 @@ function ldraw_lib__2528ap35() = [
   [3,16,0,-4.6841,-12.8194,-4.8446,-3.6109,-12.6506,0,-1.46,-13.70066],
 ];
 module ldraw_lib__2528ap35(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2528ap35(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2528ap35(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2528ap35(line=0.2);

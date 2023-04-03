@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/rect2a.scad>
 use <../../p/rect3.scad>
-function ldraw_lib__s__2489s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__2489s01(realsolid=false) = [
 // 0 ~Barrel  2 x  2 x  1.667 Half Stave (1/12th)
 // 0 Name: s\2489s01.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -44,13 +45,13 @@ function ldraw_lib__s__2489s01() = [
 // 
 // 0 // Bevel
 // 1 16 -18.7 10 0.2 0.15 1 -0.15 0 0 4 -.2 0 0 rect3.dat
-  [1,16,-18.7,10,0.2,0.15,1,-0.15,0,0,4,-.2,0,0, ldraw_lib__rect3()],
+  [1,16,-18.7,10,0.2,0.15,1,-0.15,0,0,4,-.2,0,0, ldraw_lib__rect3(realsolid)],
 // 1 16 -18.7 10 -0.2 -0.15 1 -0.15 0 0 4 -.2 0 0 rect2a.dat
-  [1,16,-18.7,10,-0.2,-0.15,1,-0.15,0,0,4,-.2,0,0, ldraw_lib__rect2a()],
+  [1,16,-18.7,10,-0.2,-0.15,1,-0.15,0,0,4,-.2,0,0, ldraw_lib__rect2a(realsolid)],
 // 1 16 -18.2 3 0.2 0.15 1 0.35 0 0 -3 -.2 0 0 rect3.dat
-  [1,16,-18.2,3,0.2,0.15,1,0.35,0,0,-3,-.2,0,0, ldraw_lib__rect3()],
+  [1,16,-18.2,3,0.2,0.15,1,0.35,0,0,-3,-.2,0,0, ldraw_lib__rect3(realsolid)],
 // 1 16 -18.2 3 -0.2 -0.15 1 0.35 0 0 -3 -.2 0 0 rect2a.dat
-  [1,16,-18.2,3,-0.2,-0.15,1,0.35,0,0,-3,-.2,0,0, ldraw_lib__rect2a()],
+  [1,16,-18.2,3,-0.2,-0.15,1,0.35,0,0,-3,-.2,0,0, ldraw_lib__rect2a(realsolid)],
 // 
 // 5 24 -18.7 6 .4 -18.4 6 0 -17.7 0 0 -18.7 14 0
   [5,24,-18.7,6,.4,-18.4,6,0,-17.7,0,0,-18.7,14,0],
@@ -58,5 +59,5 @@ function ldraw_lib__s__2489s01() = [
   [5,24,-18.7,6,-.4,-18.4,6,0,-18,0,-.4,-19,14,-.4],
 ];
 module ldraw_lib__s__2489s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__2489s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__2489s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__2489s01(line=0.2);

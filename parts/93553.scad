@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4edge.scad>
-function ldraw_lib__93553() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__93553(realsolid=false) = [
 // 0 Minifig Hand Fan
 // 0 Name: 93553.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -19,11 +20,11 @@ function ldraw_lib__93553() = [
 // 
 // 
 // 1 16 0 0 0 4 0 0 0 -10 0 0 0 -4 4-4cyli.dat
-  [1,16,0,0,0,4,0,0,0,-10,0,0,0,-4, ldraw_lib__4_4cyli()],
+  [1,16,0,0,0,4,0,0,0,-10,0,0,0,-4, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 0 0 4 0 0 0 -10 0 0 0 -4 4-4edge.dat
-  [1,16,0,0,0,4,0,0,0,-10,0,0,0,-4, ldraw_lib__4_4edge()],
+  [1,16,0,0,0,4,0,0,0,-10,0,0,0,-4, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 0 0 4 0 0 0 -1 0 0 0 -4 4-4disc.dat
-  [1,16,0,0,0,4,0,0,0,-1,0,0,0,-4, ldraw_lib__4_4disc()],
+  [1,16,0,0,0,4,0,0,0,-1,0,0,0,-4, ldraw_lib__4_4disc(realsolid)],
 // 3 16 9.705 -16.039 -1.048 9.693 -16.057 1.482 24.603 -25.31 -0.2
   [3,16,9.705,-16.039,-1.048,9.693,-16.057,1.482,24.603,-25.31,-0.2],
 // 3 16 24.603 -25.31 -0.2 9.693 -16.057 1.482 24.593 -25.368 1.3
@@ -1079,5 +1080,5 @@ function ldraw_lib__93553() = [
   [5,24,4,-10,0,4,-10.605,0,3.696,-10,1.53,3.696,-10,-1.53],
 ];
 module ldraw_lib__93553(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__93553(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__93553(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__93553(line=0.2);

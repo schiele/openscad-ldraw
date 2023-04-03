@@ -2,7 +2,8 @@ use <../lib.scad>
 use <3815pbd.scad>
 use <3816pbd.scad>
 use <3817pbd.scad>
-function ldraw_lib__3815cbd() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3815cbd(realsolid=false) = [
 // 0 ~Minifig Hips and Legs with War Machine Armoured Suit Pattern (Obsolete)
 // 0 Name: 3815cbd.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -21,13 +22,13 @@ function ldraw_lib__3815cbd() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 3815pbd.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3815pbd()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3815pbd(realsolid)],
 // 1 16 0 12 0 1 0 0 0 1 0 0 0 1 3816pbd.dat
-  [1,16,0,12,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3816pbd()],
+  [1,16,0,12,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3816pbd(realsolid)],
 // 1 16 0 12 0 1 0 0 0 1 0 0 0 1 3817pbd.dat
-  [1,16,0,12,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3817pbd()],
+  [1,16,0,12,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3817pbd(realsolid)],
 // 
 ];
 module ldraw_lib__3815cbd(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3815cbd(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3815cbd(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3815cbd(line=0.2);

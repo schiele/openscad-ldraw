@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4disc.scad>
 use <s/15530s01.scad>
 use <../p/stud16.scad>
-function ldraw_lib__15530p01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__15530p01(realsolid=false) = [
 // 0 Minifig Hat Police With Gold Badge Pattern
 // 0 Name: 15530p01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -21,9 +22,9 @@ function ldraw_lib__15530p01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\15530s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__15530s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__15530s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\15530s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__15530s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__15530s01(realsolid)],
 // 0 // Badge area
 // 5 24 6.251 -3.58 -13.577 0 1.756 -15.827 6.608 2.082 -14.294 0 -3.863 -14.833
   [5,24,6.251,-3.58,-13.577,0,1.756,-15.827,6.608,2.082,-14.294,0,-3.863,-14.833],
@@ -232,9 +233,9 @@ function ldraw_lib__15530p01() = [
   [3,16,-3.5,-1.4,-14.5374,-4.1,-2,-14.3059,-6.251,-3.58,-13.577],
 // 
 // 1 16 0 -5 0 1 0 0 0 -1.4 0 0 0 1 stud16.dat
-  [1,16,0,-5,0,1,0,0,0,-1.4,0,0,0,1, ldraw_lib__stud16()],
+  [1,16,0,-5,0,1,0,0,0,-1.4,0,0,0,1, ldraw_lib__stud16(realsolid)],
 // 1 16 0 -5 0 6 0 0 0 -1 0 0 0 6 4-4disc.dat
-  [1,16,0,-5,0,6,0,0,0,-1,0,0,0,6, ldraw_lib__4_4disc()],
+  [1,16,0,-5,0,6,0,0,0,-1,0,0,0,6, ldraw_lib__4_4disc(realsolid)],
 // 3 16 7.17 -4.31 20.25 0 -1.878 20.487 -7.17 -4.31 20.25
   [3,16,7.17,-4.31,20.25,0,-1.878,20.487,-7.17,-4.31,20.25],
 // 2 24 7.17 -4.31 20.25 -7.17 -4.31 20.25
@@ -313,5 +314,5 @@ function ldraw_lib__15530p01() = [
   [5,24,-7.702,-5,1.5,-13,-6.162,0,-12.0107,-4.662,4.9751,-7.702,-5,-1.5],
 ];
 module ldraw_lib__15530p01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__15530p01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__15530p01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__15530p01(line=0.2);

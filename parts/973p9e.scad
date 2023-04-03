@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/1-4cyli.scad>
 use <s/973s01.scad>
-function ldraw_lib__973p9e() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__973p9e(realsolid=false) = [
 // 0 Minifig Torso with Leather Jacket, Slash Pockets and Waistband over Red Shirt, Silver Oval Belt Buckle Pattern
 // 0 Name: 973p9e.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -18,9 +19,9 @@ function ldraw_lib__973p9e() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01(realsolid)],
 // 1 15 0 -4 0 4.243 0 -4.243 0 -8 0 -4.243 0 -4.243 1-4cyli.dat
-  [1,15,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli()],
+  [1,15,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli(realsolid)],
 // 4 71 -9.34 3.51 -10 -10.66 2.59 -10 -10.17 4.2 -10 -9.29 3.56 -10
   [4,71,-9.34,3.51,-10,-10.66,2.59,-10,-10.17,4.2,-10,-9.29,3.56,-10],
 // 4 16 -.85 31.02 -10 -6.12 31.32 -10 5.39 31.46 -10 .8 30.98 -10
@@ -2375,5 +2376,5 @@ function ldraw_lib__973p9e() = [
   [3,71,7.33,29.1,10,10.13,29.95,10,9.48,29.95,10],
 ];
 module ldraw_lib__973p9e(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__973p9e(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__973p9e(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__973p9e(line=0.2);

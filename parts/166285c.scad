@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__166285c() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__166285c(realsolid=false) = [
 // 0 Sticker  0.8 x  1.6 Air Tech Claw Rig Gripper
 // 0 Name: 166285c.dat
 // 0 Author: Stefan Frenz [smf]
@@ -17,7 +18,7 @@ function ldraw_lib__166285c() = [
 // 
 // 
 // 1 16 0 -0.25 0 15.8 0 0 0 0.25 0 0 0 7.8 box5-12.dat
-  [1,16,0,-0.25,0,15.8,0,0,0,0.25,0,0,0,7.8, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,15.8,0,0,0,0.25,0,0,0,7.8, ldraw_lib__box5_12(realsolid)],
 // 4 0 -15.2 -0.25 7.2 -0.2 -0.25 7.2 0 -0.25 7.8 -15.8 -0.25 7.8
   [4,0,-15.2,-0.25,7.2,-0.2,-0.25,7.2,0,-0.25,7.8,-15.8,-0.25,7.8],
 // 4 0 0 -0.25 7.8 0.2 -0.25 7.2 15.2 -0.25 7.2 15.8 -0.25 7.8
@@ -443,5 +444,5 @@ function ldraw_lib__166285c() = [
 // 
 ];
 module ldraw_lib__166285c(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__166285c(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__166285c(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__166285c(line=0.2);

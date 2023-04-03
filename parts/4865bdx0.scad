@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <4865b.scad>
 use <6288456d.scad>
-function ldraw_lib__4865bdx0() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4865bdx0(realsolid=false) = [
 // 0 Panel  1 x  2 x  1 with Rounded Corners with White "RESERVED" on Black Background Sticker
 // 0 Name: 4865bdx0.dat
 // 0 Author: Vincent Messenet [Cheenzo]
@@ -18,10 +19,10 @@ function ldraw_lib__4865bdx0() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 4865b.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4865b()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4865b(realsolid)],
 // 1 16 0 12 10 -1 0 0 0 0 -1 0 -1 0 6288456d.dat
-  [1,16,0,12,10,-1,0,0,0,0,-1,0,-1,0, ldraw_lib__6288456d()],
+  [1,16,0,12,10,-1,0,0,0,0,-1,0,-1,0, ldraw_lib__6288456d(realsolid)],
 ];
 module ldraw_lib__4865bdx0(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4865bdx0(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4865bdx0(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4865bdx0(line=0.2);

@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/1-4chrd.scad>
 use <../p/2-4chrd.scad>
 use <s/6216s01.scad>
-function ldraw_lib__6216p03() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6216p03(realsolid=false) = [
 // 0 Brick  2 x  4 x  2 with Curved Top with Round Eyes Pattern
 // 0 Name: 6216p03.dat
 // 0 Author: Damien Roux [Darats]
@@ -17,14 +18,14 @@ function ldraw_lib__6216p03() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\6216s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6216s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6216s01(realsolid)],
 // 
 // 1 16 0 20 -20 -20 0 0 0 0 -20 0 1 0 2-4chrd.dat
-  [1,16,0,20,-20,-20,0,0,0,0,-20,0,1,0, ldraw_lib__2_4chrd()],
+  [1,16,0,20,-20,-20,0,0,0,0,-20,0,1,0, ldraw_lib__2_4chrd(realsolid)],
 // 1 16 -20 44 -20 -20 0 0 0 0 -20 0 1 0 1-4chrd.dat
-  [1,16,-20,44,-20,-20,0,0,0,0,-20,0,1,0, ldraw_lib__1_4chrd()],
+  [1,16,-20,44,-20,-20,0,0,0,0,-20,0,1,0, ldraw_lib__1_4chrd(realsolid)],
 // 1 16 20 44 -20 0 0 20 -20 0 0 0 1 0 1-4chrd.dat
-  [1,16,20,44,-20,0,0,20,-20,0,0,0,1,0, ldraw_lib__1_4chrd()],
+  [1,16,20,44,-20,0,0,20,-20,0,0,0,1,0, ldraw_lib__1_4chrd(realsolid)],
 // 
 // 4 0 -15.73 30.072 -20 -15.581 29.243 -20 -16.762 29.83 -20 -16.909 31.739 -20
   [4,0,-15.73,30.072,-20,-15.581,29.243,-20,-16.762,29.83,-20,-16.909,31.739,-20],
@@ -458,5 +459,5 @@ function ldraw_lib__6216p03() = [
   [4,16,20,24,-20,16.296,31.681,-20,16.221,33.587,-20,40,44,-20],
 ];
 module ldraw_lib__6216p03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6216p03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6216p03(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6216p03(line=0.2);

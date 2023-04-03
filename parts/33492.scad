@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4con22.scad>
 use <../p/4-4con3.scad>
 use <s/33492s01.scad>
-function ldraw_lib__33492() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__33492(realsolid=false) = [
 // 0 Cone  1.5 x  1.5 x  0.667 Truncated
 // 0 Name: 33492.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -19,12 +20,12 @@ function ldraw_lib__33492() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\33492s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__33492s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__33492s01(realsolid)],
 // 1 16 0 8.8 0 3.26667 0 0 0 -8.8 0 0 0 3.26667 4-4con3.dat
-  [1,16,0,8.8,0,3.26667,0,0,0,-8.8,0,0,0,3.26667, ldraw_lib__4_4con3()],
+  [1,16,0,8.8,0,3.26667,0,0,0,-8.8,0,0,0,3.26667, ldraw_lib__4_4con3(realsolid)],
 // 1 16 0 10.4 0 0.59394 0 0 0 -1.6 0 0 0 0.59394 4-4con22.dat
-  [1,16,0,10.4,0,0.59394,0,0,0,-1.6,0,0,0,0.59394, ldraw_lib__4_4con22()],
+  [1,16,0,10.4,0,0.59394,0,0,0,-1.6,0,0,0,0.59394, ldraw_lib__4_4con22(realsolid)],
 ];
 module ldraw_lib__33492(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__33492(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__33492(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__33492(line=0.2);

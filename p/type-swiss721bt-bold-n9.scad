@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__type_swiss721bt_bold_n9() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__type_swiss721bt_bold_n9(realsolid=false) = [
 // 0 Type Swiss721BT Number "9" Bold
 // 0 Name: type-swiss721bt-bold-n9.dat
 // 0 Author: Ulrich Röder [UR]
@@ -160,5 +161,5 @@ function ldraw_lib__type_swiss721bt_bold_n9() = [
   [4,16,-.009,0,-.346,-.035,0,-.16,-.093,0,-.323,-.057,0,-.34],
 ];
 module ldraw_lib__type_swiss721bt_bold_n9(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__type_swiss721bt_bold_n9(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__type_swiss721bt_bold_n9(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__type_swiss721bt_bold_n9(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/61856s01.scad>
-function ldraw_lib__61856p40() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__61856p40(realsolid=false) = [
 // 0 Minifig Shield Octagonal with Troll Skull on Dark Red Pattern
 // 0 Name: 61856p40.dat
 // 0 Author: Joerg Sommerer [Brickaneer]
@@ -17,7 +18,7 @@ function ldraw_lib__61856p40() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\61856s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__61856s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__61856s01(realsolid)],
 // 4 80 -18.75 24.218 -12 -9.655 35 -12 -13.3645 29.8635 -12 -15.4893 27.5439 -12
   [4,80,-18.75,24.218,-12,-9.655,35,-12,-13.3645,29.8635,-12,-15.4893,27.5439,-12],
 // 3 80 -9.655 35 -12 -12.3411 30.7862 -12 -13.3645 29.8635 -12
@@ -1078,5 +1079,5 @@ function ldraw_lib__61856p40() = [
   [3,80,9.655,-35,-12,-9.655,-35,-12,-5.7427,-33.9961,-12],
 ];
 module ldraw_lib__61856p40(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__61856p40(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__61856p40(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__61856p40(line=0.2);

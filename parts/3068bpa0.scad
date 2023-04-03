@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3068bs01.scad>
-function ldraw_lib__3068bpa0() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3068bpa0(realsolid=false) = [
 // 0 Tile  2 x  2 with Map Red/Blue/Green Border Pattern (Needs Work)
 // 0 Name: 3068bpa0.dat
 // 0 Author: Stan Isachenko [angmarec]
@@ -5954,8 +5955,8 @@ function ldraw_lib__3068bpa0() = [
 // 3 0 -8.3507 0 -6.1018 -8.4746 0 -6.1176 -8.4918 0 -6.315
   [3,0,-8.3507,0,-6.1018,-8.4746,0,-6.1176,-8.4918,0,-6.315],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3068bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3068bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3068bs01(realsolid)],
 ];
 module ldraw_lib__3068bpa0(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3068bpa0(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3068bpa0(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3068bpa0(line=0.2);

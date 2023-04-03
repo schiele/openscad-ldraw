@@ -2,7 +2,8 @@ use <../lib.scad>
 use <s/3009pt9a.scad>
 use <s/3009pt9b.scad>
 use <s/3009s01.scad>
-function ldraw_lib__3009pta() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3009pta(realsolid=false) = [
 // 0 Brick  1 x  6 with "ROYAL MAIL" White Pattern
 // 0 Name: 3009pta.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -17,7 +18,7 @@ function ldraw_lib__3009pta() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3009s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3009s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3009s01(realsolid)],
 // 0 //
 // 4 16 -60 24 -10 -45.675 22.538 -10 -45.675 2.062 -10 -60 0 -10
   [4,16,-60,24,-10,-45.675,22.538,-10,-45.675,2.062,-10,-60,0,-10],
@@ -29,11 +30,11 @@ function ldraw_lib__3009pta() = [
   [4,16,45.675,22.538,-10,-45.675,22.538,-10,-60,24,-10,60,24,-10],
 // 0 //
 // 1 15 0 -0.3 0 1.05 0 0 0 1.05 0 0 0 1 s\3009pt9a.dat
-  [1,15,0,-0.3,0,1.05,0,0,0,1.05,0,0,0,1, ldraw_lib__s__3009pt9a()],
+  [1,15,0,-0.3,0,1.05,0,0,0,1.05,0,0,0,1, ldraw_lib__s__3009pt9a(realsolid)],
 // 1 16 0 -0.3 0 1.05 0 0 0 1.05 0 0 0 1 s\3009pt9b.dat
-  [1,16,0,-0.3,0,1.05,0,0,0,1.05,0,0,0,1, ldraw_lib__s__3009pt9b()],
+  [1,16,0,-0.3,0,1.05,0,0,0,1.05,0,0,0,1, ldraw_lib__s__3009pt9b(realsolid)],
 // 
 ];
 module ldraw_lib__3009pta(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3009pta(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3009pta(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3009pta(line=0.2);

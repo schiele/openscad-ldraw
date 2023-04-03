@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/2431s01.scad>
-function ldraw_lib__2431pm0() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2431pm0(realsolid=false) = [
 // 0 Tile  1 x  4 with Ruler and Golden Trim Pattern
 // 0 Name: 2431pm0.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -19,7 +20,7 @@ function ldraw_lib__2431pm0() = [
 // 0 // Subfile
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2431s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2431s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2431s01(realsolid)],
 // 4 80 -30.155 0 -0.279 -29.866 0 -0.835 -29.251 0 -0.706 -30.229 0 0.054
   [4,80,-30.155,0,-0.279,-29.866,0,-0.835,-29.251,0,-0.706,-30.229,0,0.054],
 // 4 80 -29.251 0 -0.706 -29.866 0 -0.835 -29.492 0 -1.168 -29.153 0 -0.995
@@ -1332,5 +1333,5 @@ function ldraw_lib__2431pm0() = [
   [4,16,-33.225,0,-7.228,-32,0,-7.15,-32.95,0,-6.275,-34.45,0,-7.2],
 ];
 module ldraw_lib__2431pm0(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2431pm0(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2431pm0(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2431pm0(line=0.2);

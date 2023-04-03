@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <11014p01.scad>
-function ldraw_lib__11015() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__11015(realsolid=false) = [
 // 0 =Electric Mindstorms EV3 Colour Sensor Opto Support with Red Edge
 // 0 Name: 11015.dat
 // 0 Author: [PTadmin]
@@ -17,9 +18,9 @@ function ldraw_lib__11015() = [
 // 0 // Alias of 11014p01
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 11014p01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__11014p01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__11014p01(realsolid)],
 // 0
 ];
 module ldraw_lib__11015(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__11015(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__11015(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__11015(line=0.2);

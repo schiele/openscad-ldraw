@@ -3,7 +3,8 @@ use <../p/box5-12.scad>
 use <../p/logo-shell-e.scad>
 use <../p/logo-shell-h.scad>
 use <../p/logo-shell-s.scad>
-function ldraw_lib__004695d() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__004695d(realsolid=false) = [
 // 0 Sticker  2.4 x  5.3 with "Shell"
 // 0 Name: 004695d.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -26,15 +27,15 @@ function ldraw_lib__004695d() = [
 // 0 // Small box
 // 
 // 1 16 0 -0.25 0 53 0 0 0 0.25 0 0 0 24 box5-12.dat
-  [1,16,0,-0.25,0,53,0,0,0,0.25,0,0,0,24, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,53,0,0,0,0.25,0,0,0,24, ldraw_lib__box5_12(realsolid)],
 // 
 // 0 // Shell sign
 // 1 15 -34 -.25 0 .94 0 0 0 1 0 0 0 .94 logo-shell-s.dat
-  [1,15,-34,-.25,0,.94,0,0,0,1,0,0,0,.94, ldraw_lib__logo_shell_s()],
+  [1,15,-34,-.25,0,.94,0,0,0,1,0,0,0,.94, ldraw_lib__logo_shell_s(realsolid)],
 // 1 15 -10 -.25 0 .94 0 0 0 1 0 0 0 .94 logo-shell-h.dat
-  [1,15,-10,-.25,0,.94,0,0,0,1,0,0,0,.94, ldraw_lib__logo_shell_h()],
+  [1,15,-10,-.25,0,.94,0,0,0,1,0,0,0,.94, ldraw_lib__logo_shell_h(realsolid)],
 // 1 15 12.5 -.25 -2.59 .94 0 0 0 1 0 0 0 .94 logo-shell-e.dat
-  [1,15,12.5,-.25,-2.59,.94,0,0,0,1,0,0,0,.94, ldraw_lib__logo_shell_e()],
+  [1,15,12.5,-.25,-2.59,.94,0,0,0,1,0,0,0,.94, ldraw_lib__logo_shell_e(realsolid)],
 // 4 4 25.21 -.25 8.93 25.21 -.25 -8.93 31.79 -.25 -8.93 31.79 -.25 8.93
   [4,4,25.21,-.25,8.93,25.21,-.25,-8.93,31.79,-.25,-8.93,31.79,-.25,8.93],
 // 4 4 35.71 -.25 8.93 35.71 -.25 -8.93 42.29 -.25 -8.93 42.29 -.25 8.93
@@ -90,5 +91,5 @@ function ldraw_lib__004695d() = [
   [4,15,35.71,-.25,8.93,31.79,-.25,8.93,31.79,-.25,-8.93,35.71,-.25,-8.93],
 ];
 module ldraw_lib__004695d(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__004695d(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__004695d(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__004695d(line=0.2);

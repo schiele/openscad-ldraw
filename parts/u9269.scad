@@ -3,7 +3,8 @@ use <../p/2-4cylo.scad>
 use <../p/2-4ndis.scad>
 use <../p/box2-5.scad>
 use <../p/box3u4a.scad>
-function ldraw_lib__u9269() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__u9269(realsolid=false) = [
 // 0 ~Electric Brick  2 x  2 x  0.667 Underside Metal Clamp
 // 0 Name: u9269.dat
 // 0 Author: Max Martin Richter [MMR1988]
@@ -18,20 +19,20 @@ function ldraw_lib__u9269() = [
 // 
 // 
 // 1 16 0 -5 0 0 0 3 0 5 0 -0.5 0 0 box3u4a.dat
-  [1,16,0,-5,0,0,0,3,0,5,0,-0.5,0,0, ldraw_lib__box3u4a()],
+  [1,16,0,-5,0,0,0,3,0,5,0,-0.5,0,0, ldraw_lib__box3u4a(realsolid)],
 // 1 16 1.75 -7.5 0 0 -0.625 0.625 0 -2.5 0 -0.5 0 0 box2-5.dat
-  [1,16,1.75,-7.5,0,0,-0.625,0.625,0,-2.5,0,-0.5,0,0, ldraw_lib__box2_5()],
+  [1,16,1.75,-7.5,0,0,-0.625,0.625,0,-2.5,0,-0.5,0,0, ldraw_lib__box2_5(realsolid)],
 // 1 16 -1.75 -7.5 0 0 0.625 -0.625 0 -2.5 0 -0.5 0 0 box2-5.dat
-  [1,16,-1.75,-7.5,0,0,0.625,-0.625,0,-2.5,0,-0.5,0,0, ldraw_lib__box2_5()],
+  [1,16,-1.75,-7.5,0,0,0.625,-0.625,0,-2.5,0,-0.5,0,0, ldraw_lib__box2_5(realsolid)],
 // 
 // 1 16 0 -10 -0.5 0.5 0 0 0 0 0.5 0 1 0 2-4ndis.dat
-  [1,16,0,-10,-0.5,0.5,0,0,0,0,0.5,0,1,0, ldraw_lib__2_4ndis()],
+  [1,16,0,-10,-0.5,0.5,0,0,0,0,0.5,0,1,0, ldraw_lib__2_4ndis(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -10 -0.5 0.5 0 0 0 0 0.5 0 1 0 2-4cylo.dat
-  [1,16,0,-10,-0.5,0.5,0,0,0,0,0.5,0,1,0, ldraw_lib__2_4cylo()],
+  [1,16,0,-10,-0.5,0.5,0,0,0,0,0.5,0,1,0, ldraw_lib__2_4cylo(realsolid)],
 // 1 16 0 -10 0.5 0.5 0 0 0 0 0.5 0 -1 0 2-4ndis.dat
-  [1,16,0,-10,0.5,0.5,0,0,0,0,0.5,0,-1,0, ldraw_lib__2_4ndis()],
+  [1,16,0,-10,0.5,0.5,0,0,0,0,0.5,0,-1,0, ldraw_lib__2_4ndis(realsolid)],
 // 
 // 3 16 3 -5 0.5 3 0 0.5 1.75 -10 0.5
   [3,16,3,-5,0.5,3,0,0.5,1.75,-10,0.5],
@@ -60,5 +61,5 @@ function ldraw_lib__u9269() = [
   [3,16,-3,-5,-0.5,-3,0,-0.5,-1.75,-10,-0.5],
 ];
 module ldraw_lib__u9269(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__u9269(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__u9269(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__u9269(line=0.2);

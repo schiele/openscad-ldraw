@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/3010pzrs01.scad>
 use <s/3010s01.scad>
-function ldraw_lib__3010pzr() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3010pzr(realsolid=false) = [
 // 0 Brick  1 x  4 with Dark Azure Bow Tie Pattern
 // 0 Name: 3010pzr.dat
 // 0 Author: Vincent Messenet [Cheenzo]
@@ -18,11 +19,11 @@ function ldraw_lib__3010pzr() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3010s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3010s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3010s01(realsolid)],
 // 1 16 0 0 -10 1 0 0 0 1 0 0 0 1 s\3010pzrs01.dat
-  [1,16,0,0,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3010pzrs01()],
+  [1,16,0,0,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3010pzrs01(realsolid)],
 // 1 16 0 0 -10 -1 0 0 0 1 0 0 0 1 s\3010pzrs01.dat
-  [1,16,0,0,-10,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__3010pzrs01()],
+  [1,16,0,0,-10,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__3010pzrs01(realsolid)],
 // 
 // 3 16 -40 24 -10 40 24 -10 0 14.5 -10
   [3,16,-40,24,-10,40,24,-10,0,14.5,-10],
@@ -34,5 +35,5 @@ function ldraw_lib__3010pzr() = [
   [3,16,-10.75,1.5,-10,0,2.5,-10,10.75,1.5,-10],
 ];
 module ldraw_lib__3010pzr(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3010pzr(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3010pzr(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3010pzr(line=0.2);

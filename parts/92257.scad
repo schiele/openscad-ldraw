@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/stud4od.scad>
-function ldraw_lib__92257() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__92257(realsolid=false) = [
 // 0 Figure Friends Hair Long with Ponytail and Side Bangs
 // 0 Name: 92257.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -22,7 +23,7 @@ function ldraw_lib__92257() = [
 // 
 // 0 // inside
 // 1 16 0 -5.236 0 1 0 0 0 -1.309 0 0 0 1 stud4od.dat
-  [1,16,0,-5.236,0,1,0,0,0,-1.309,0,0,0,1, ldraw_lib__stud4od()],
+  [1,16,0,-5.236,0,1,0,0,0,-1.309,0,0,0,1, ldraw_lib__stud4od(realsolid)],
 // 3 16 1.731 -5.236 1.946 6 -5.236 0 1.999 -5.236 0.946
   [3,16,1.731,-5.236,1.946,6,-5.236,0,1.999,-5.236,0.946],
 // 3 16 1.999 -5.236 0.946 6 -5.236 0 1.731 -5.236 -0.053
@@ -5935,5 +5936,5 @@ function ldraw_lib__92257() = [
   [5,24,-1.731,-11.074,1.946,-1.731,-5.236,1.946,-0.999,-5.236,2.677,-1.999,-10.941,0.946],
 ];
 module ldraw_lib__92257(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__92257(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__92257(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__92257(line=0.2);

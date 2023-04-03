@@ -3,7 +3,8 @@ use <../../p/2-4ndis.scad>
 use <../../p/2-4ring3.scad>
 use <../../p/3-8chrd.scad>
 use <../../p/4-4ndis.scad>
-function ldraw_lib__s__30231s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__30231s01(realsolid=false) = [
 // 0 ~Wing Insectoid Small with Arm Hinge Grainy Edge
 // 0 Name: s\30231s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -18,17 +19,17 @@ function ldraw_lib__s__30231s01() = [
 // 
 // 
 // 1 16 15 -1 65 0 0 -2 0 1 0 2 0 0 2-4ring3.dat
-  [1,16,15,-1,65,0,0,-2,0,1,0,2,0,0, ldraw_lib__2_4ring3()],
+  [1,16,15,-1,65,0,0,-2,0,1,0,2,0,0, ldraw_lib__2_4ring3(realsolid)],
 // 1 16 15 -1 65 0 0 6 0 1 0 6 0 0 2-4ndis.dat
-  [1,16,15,-1,65,0,0,6,0,1,0,6,0,0, ldraw_lib__2_4ndis()],
+  [1,16,15,-1,65,0,0,6,0,1,0,6,0,0, ldraw_lib__2_4ndis(realsolid)],
 // 4 16 -35 -1 73 -31 -1 139 -31 -1 151 -35 -1 169
   [4,16,-35,-1,73,-31,-1,139,-31,-1,151,-35,-1,169],
 // 4 16 -35 -1 169 -31 -1 151 -19 -1 151 -26.46 -1 172.54
   [4,16,-35,-1,169,-31,-1,151,-19,-1,151,-26.46,-1,172.54],
 // 1 16 -30 -1 169 3.54 0 -3.54 0 1 0 3.54 0 3.54 3-8chrd.dat
-  [1,16,-30,-1,169,3.54,0,-3.54,0,1,0,3.54,0,3.54, ldraw_lib__3_8chrd()],
+  [1,16,-30,-1,169,3.54,0,-3.54,0,1,0,3.54,0,3.54, ldraw_lib__3_8chrd(realsolid)],
 // 1 16 -25 -1 145 6 0 0 0 1 0 0 0 6 4-4ndis.dat
-  [1,16,-25,-1,145,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4ndis()],
+  [1,16,-25,-1,145,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4ndis(realsolid)],
 // 3 16 -26.46 -1 172.54 -19 -1 151 -10 -1 152
   [3,16,-26.46,-1,172.54,-19,-1,151,-10,-1,152],
 // 4 16 -10 -1 152 -19 -1 151 -19 -1 139 -4 -1 115
@@ -81,5 +82,5 @@ function ldraw_lib__s__30231s01() = [
   [3,16,25,-1,33,9.5445,-1,17.7355,9.801,-1,15],
 ];
 module ldraw_lib__s__30231s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__30231s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__30231s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__30231s01(line=0.2);

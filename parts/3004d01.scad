@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <004690b.scad>
 use <3004.scad>
-function ldraw_lib__3004d01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3004d01(realsolid=false) = [
 // 0 Brick  1 x  2 with TV Screen with Western Scene Sticker
 // 0 Name: 3004d01.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -18,10 +19,10 @@ function ldraw_lib__3004d01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 3004.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3004()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3004(realsolid)],
 // 1 0 0 12 -10 1 0 0 0 0 -1 0 1 0 004690b.dat
-  [1,0,0,12,-10,1,0,0,0,0,-1,0,1,0, ldraw_lib__004690b()],
+  [1,0,0,12,-10,1,0,0,0,0,-1,0,1,0, ldraw_lib__004690b(realsolid)],
 ];
 module ldraw_lib__3004d01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3004d01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3004d01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3004d01(line=0.2);

@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__48__tm08o2000() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__48__tm08o2000(realsolid=false) = [
 // 0 Mixed-Mode Torus Outer  1 x 0.2000 x 0.1250
 // 0 Name: 48\tm08o2000.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -189,5 +190,5 @@ function ldraw_lib__48__tm08o2000() = [
   [5,24,0.7612,0.1848,0.7612,0.7071,0.2,0.7071,0.8541,0.1848,0.6554,0.661,0.1848,0.8614],
 ];
 module ldraw_lib__48__tm08o2000(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__48__tm08o2000(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__48__tm08o2000(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__48__tm08o2000(line=0.2);

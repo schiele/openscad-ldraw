@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3039s01.scad>
-function ldraw_lib__3039pci() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3039pci(realsolid=false) = [
 // 0 Slope Brick 45  2 x  2 with Controls, Buttons, and Navigation Display Pattern
 // 0 Name: 3039pci.dat
 // 0 Author: N. W. Perry [Plastikean]
@@ -18,7 +19,7 @@ function ldraw_lib__3039pci() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3039s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3039s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3039s01(realsolid)],
 // 
 // 4 71 -2.624 9.503 -19.503 -12.868 9.503 -19.503 -13.862 10.281 -20.281 -1.566 10.281 -20.281
   [4,71,-2.624,9.503,-19.503,-12.868,9.503,-19.503,-13.862,10.281,-20.281,-1.566,10.281,-20.281],
@@ -898,5 +899,5 @@ function ldraw_lib__3039pci() = [
   [3,15,13.675,14.241,-24.241,14.136,14.239,-24.239,13.634,14.103,-24.103],
 ];
 module ldraw_lib__3039pci(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3039pci(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3039pci(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3039pci(line=0.2);

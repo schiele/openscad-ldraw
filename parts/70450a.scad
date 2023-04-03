@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__70450a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__70450a(realsolid=false) = [
 // 0 ~Technic Pneumatic Pump Large Spring Compressed
 // 0 Name: 70450a.dat
 // 0 Author: Marc Klein [marckl]
@@ -3102,5 +3103,5 @@ function ldraw_lib__70450a() = [
   [4,16,8.315,0,-3.444,9,0,0,10,1,0,9.239,1,-3.827],
 ];
 module ldraw_lib__70450a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__70450a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__70450a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__70450a(line=0.2);

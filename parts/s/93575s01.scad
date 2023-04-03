@@ -2,7 +2,8 @@ use <../../lib.scad>
 use <../../p/3-4cyli.scad>
 use <../../p/3-4edge.scad>
 use <../../p/3-4ndis.scad>
-function ldraw_lib__s__93575s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__93575s01(realsolid=false) = [
 // 0 ~Constraction Hand Clenched with Four Fingers and Axle Hole
 // 0 Name: s\93575s01.dat
 // 0 Author: Willy Tschager [Holly-Wood]
@@ -2045,13 +2046,13 @@ function ldraw_lib__s__93575s01() = [
 // 
 // 0 // Axle
 // 1 16 -.4 0 -40 0 1 0 2.00005 0 2.00005 2.00005 0 -2.00005 3-4ndis.dat
-  [1,16,-.4,0,-40,0,1,0,2.00005,0,2.00005,2.00005,0,-2.00005, ldraw_lib__3_4ndis()],
+  [1,16,-.4,0,-40,0,1,0,2.00005,0,2.00005,2.00005,0,-2.00005, ldraw_lib__3_4ndis(realsolid)],
 // 1 16 -.4 0 -40 0 1 0 2.00005 0 2.00005 2.00005 0 -2.00005 3-4edge.dat
-  [1,16,-.4,0,-40,0,1,0,2.00005,0,2.00005,2.00005,0,-2.00005, ldraw_lib__3_4edge()],
+  [1,16,-.4,0,-40,0,1,0,2.00005,0,2.00005,2.00005,0,-2.00005, ldraw_lib__3_4edge(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 -40 0 -.4 0 2.00005 0 2.00005 2.00005 0 -2.00005 3-4cyli.dat
-  [1,16,0,0,-40,0,-.4,0,2.00005,0,2.00005,2.00005,0,-2.00005, ldraw_lib__3_4cyli()],
+  [1,16,0,0,-40,0,-.4,0,2.00005,0,2.00005,2.00005,0,-2.00005, ldraw_lib__3_4cyli(realsolid)],
 // 
 // 4 16 -.4 6 -40 -.4 5.602 -38 -20 5.602 -38 -20 6 -40
   [4,16,-.4,6,-40,-.4,5.602,-38,-20,5.602,-38,-20,6,-40],
@@ -2882,5 +2883,5 @@ function ldraw_lib__s__93575s01() = [
   [5,24,-6.978,17.124,-32.12,0,17.124,-32.12,0,16.587,-35.827,-8.807,17.183,-28.474],
 ];
 module ldraw_lib__s__93575s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__93575s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__93575s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__93575s01(line=0.2);

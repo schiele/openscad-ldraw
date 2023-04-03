@@ -2,7 +2,8 @@ use <../../lib.scad>
 use <../../p/1-4edge.scad>
 use <../../p/1-4ndis.scad>
 use <../../p/rect2a.scad>
-function ldraw_lib__s__26022s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__26022s02(realsolid=false) = [
 // 0 ~Train Track Roller Coaster Straight  4 x  8 Middle-End Section
 // 0 Name: s\26022s02.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -141,7 +142,7 @@ function ldraw_lib__s__26022s02() = [
 // 4 16 28.391 -2 20 26.3926 -2.3044 20 21.5308 -2.3044 20 20 -2 20
   [4,16,28.391,-2,20,26.3926,-2.3044,20,21.5308,-2.3044,20,20,-2,20],
 // 1 16 24.1955 -2 21.25 4.1955 0 0 0 -1 0 0 0 -1.25 rect2a.dat
-  [1,16,24.1955,-2,21.25,4.1955,0,0,0,-1,0,0,0,-1.25, ldraw_lib__rect2a()],
+  [1,16,24.1955,-2,21.25,4.1955,0,0,0,-1,0,0,0,-1.25, ldraw_lib__rect2a(realsolid)],
 // 3 16 28.391 -2.4029 22.6107 28.391 -2.3044 22.3815 28.391 -2 22.5
   [3,16,28.391,-2.4029,22.6107,28.391,-2.3044,22.3815,28.391,-2,22.5],
 // 3 16 28.391 -2 20 28.391 -2 22.5 28.391 -2.3044 22.3815
@@ -179,9 +180,9 @@ function ldraw_lib__s__26022s02() = [
 // 2 24 24 -2 -22.5 24 -6 -23.5993
   [2,24,24,-2,-22.5,24,-6,-23.5993],
 // 1 16 20 -6 -20 4 0 0 0 0 4 0 -1 0 1-4ndis.dat
-  [1,16,20,-6,-20,4,0,0,0,0,4,0,-1,0, ldraw_lib__1_4ndis()],
+  [1,16,20,-6,-20,4,0,0,0,0,4,0,-1,0, ldraw_lib__1_4ndis(realsolid)],
 // 1 16 20 -6 -20 4 0 0 0 0 4 0 -1 0 1-4edge.dat
-  [1,16,20,-6,-20,4,0,0,0,0,4,0,-1,0, ldraw_lib__1_4edge()],
+  [1,16,20,-6,-20,4,0,0,0,0,4,0,-1,0, ldraw_lib__1_4edge(realsolid)],
 // 
 // 0 // Diagonal Strut Top
 // 3 16 55.5 -8 -17.5689 55.1957 -8.8284 -16.3449 55.5 -7.5308 -18.0567
@@ -361,5 +362,5 @@ function ldraw_lib__s__26022s02() = [
   [5,24,21.5308,-2.3044,20,21.5308,-2.3044,-20,22.8284,-3.1716,-20,20,-2,-20],
 ];
 module ldraw_lib__s__26022s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__26022s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__26022s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__26022s02(line=0.2);

@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/3626cpm6a.scad>
 use <s/3626cs02.scad>
-function ldraw_lib__3626cpm6() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3626cpm6(realsolid=false) = [
 // 0 Minifig Head with LOTR Frowning / Grimacing 2-Sided Pattern
 // 0 Name: 3626cpm6.dat
 // 0 Author: Christian Neumann [Wesley]
@@ -20,16 +21,16 @@ function ldraw_lib__3626cpm6() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3626cs02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626cs02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626cs02(realsolid)],
 // 0 // head framework
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3626cpm6a.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626cpm6a()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626cpm6a(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\3626cpm6a.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626cpm6a()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626cpm6a(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 -1 s\3626cpm6a.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__3626cpm6a()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__3626cpm6a(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 -1 s\3626cpm6a.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__3626cpm6a()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__3626cpm6a(realsolid)],
 // 0 // front pattern
 // 3 0 1.67 14.12 -12.668 0 14.38 -13 0 15.12 -13
   [3,0,1.67,14.12,-12.668,0,14.38,-13,0,15.12,-13],
@@ -422,5 +423,5 @@ function ldraw_lib__3626cpm6() = [
   [3,16,0.91,15.95,12.8191,0.68,15.99,12.8648,0.31,15.96,12.9384],
 ];
 module ldraw_lib__3626cpm6(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3626cpm6(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3626cpm6(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3626cpm6(line=0.2);

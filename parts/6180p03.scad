@@ -3,7 +3,8 @@ use <../p/4-4disc.scad>
 use <../p/4-4ndis.scad>
 use <../p/4-4ring2.scad>
 use <s/6180s01.scad>
-function ldraw_lib__6180p03() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6180p03(realsolid=false) = [
 // 0 Plate  4 x  6 with 12 Studs on Three Edges with Clothes Design and Swatches Pattern
 // 0 Name: 6180p03.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -21,27 +22,27 @@ function ldraw_lib__6180p03() = [
 // 
 // 0 // Subfile
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\6180s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6180s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6180s01(realsolid)],
 // 1 288 29.4 0 -25 0.9 0 0 0 1 0 0 0 0.9 4-4disc.dat
-  [1,288,29.4,0,-25,0.9,0,0,0,1,0,0,0,0.9, ldraw_lib__4_4disc()],
+  [1,288,29.4,0,-25,0.9,0,0,0,1,0,0,0,0.9, ldraw_lib__4_4disc(realsolid)],
 // 1 288 36.1 0 -31.6 1.1 0 0 0 1 0 0 0 1.1 4-4disc.dat
-  [1,288,36.1,0,-31.6,1.1,0,0,0,1,0,0,0,1.1, ldraw_lib__4_4disc()],
+  [1,288,36.1,0,-31.6,1.1,0,0,0,1,0,0,0,1.1, ldraw_lib__4_4disc(realsolid)],
 // 1 27 29.6 0 -29.2 1 0 0 0 1 0 0 0 1 4-4disc.dat
-  [1,27,29.6,0,-29.2,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4disc()],
+  [1,27,29.6,0,-29.2,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4disc(realsolid)],
 // 1 27 34.3 0 -27.5 1 0 0 0 1 0 0 0 1 4-4disc.dat
-  [1,27,34.3,0,-27.5,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4disc()],
+  [1,27,34.3,0,-27.5,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4disc(realsolid)],
 // 1 288 34.3 0 -27.5 0.5 0 0 0 1 0 0 0 0.5 4-4ring2.dat
-  [1,288,34.3,0,-27.5,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__4_4ring2()],
+  [1,288,34.3,0,-27.5,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__4_4ring2(realsolid)],
 // 1 288 29.6 0 -29.2 0.5 0 0 0 1 0 0 0 0.5 4-4ring2.dat
-  [1,288,29.6,0,-29.2,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__4_4ring2()],
+  [1,288,29.6,0,-29.2,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__4_4ring2(realsolid)],
 // 1 27 36.1 0 -31.6 1.1 0 0 0 1 0 0 0 1.1 4-4ndis.dat
-  [1,27,36.1,0,-31.6,1.1,0,0,0,1,0,0,0,1.1, ldraw_lib__4_4ndis()],
+  [1,27,36.1,0,-31.6,1.1,0,0,0,1,0,0,0,1.1, ldraw_lib__4_4ndis(realsolid)],
 // 1 27 29.4 0 -25 0.9 0 0 0 1 0 0 0 0.9 4-4ndis.dat
-  [1,27,29.4,0,-25,0.9,0,0,0,1,0,0,0,0.9, ldraw_lib__4_4ndis()],
+  [1,27,29.4,0,-25,0.9,0,0,0,1,0,0,0,0.9, ldraw_lib__4_4ndis(realsolid)],
 // 1 27 34.3 0 -27.5 1.5 0 0 0 1 0 0 0 1.5 4-4ndis.dat
-  [1,27,34.3,0,-27.5,1.5,0,0,0,1,0,0,0,1.5, ldraw_lib__4_4ndis()],
+  [1,27,34.3,0,-27.5,1.5,0,0,0,1,0,0,0,1.5, ldraw_lib__4_4ndis(realsolid)],
 // 1 27 29.6 0 -29.2 1.5 0 0 0 1 0 0 0 1.5 4-4ndis.dat
-  [1,27,29.6,0,-29.2,1.5,0,0,0,1,0,0,0,1.5, ldraw_lib__4_4ndis()],
+  [1,27,29.6,0,-29.2,1.5,0,0,0,1,0,0,0,1.5, ldraw_lib__4_4ndis(realsolid)],
 // 4 322 -9.9 0 8 -9 0 10 -10.8 0 9.3 -12.3 0 8
   [4,322,-9.9,0,8,-9,0,10,-10.8,0,9.3,-12.3,0,8],
 // 4 322 -10.8 0 5.4 -9.9 0 8 -12.3 0 8 -13.2 0 6.5
@@ -1916,5 +1917,5 @@ function ldraw_lib__6180p03() = [
   [3,16,0,0,24,-3.4,0,20.3,-2.4,0,20.3],
 ];
 module ldraw_lib__6180p03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6180p03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6180p03(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6180p03(line=0.2);

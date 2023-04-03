@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <2-4disc.scad>
 use <2-4ndis.scad>
-function ldraw_lib__typestua() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__typestua(realsolid=false) = [
 // 0 Type Stencil Upper Case A
 // 0 Name: typestua.dat
 // 0 Author: Willy Tschager [Holly-Wood]
@@ -19,13 +20,13 @@ function ldraw_lib__typestua() = [
 // 
 // 0 // Black
 // 1 0 -4.17 0 -4.58 0 0 -0.46 0 1 0 0.42 0 0 2-4disc.dat
-  [1,0,-4.17,0,-4.58,0,0,-0.46,0,1,0,0.42,0,0, ldraw_lib__2_4disc()],
+  [1,0,-4.17,0,-4.58,0,0,-0.46,0,1,0,0.42,0,0, ldraw_lib__2_4disc(realsolid)],
 // 1 0 -2.12 0 -4.58 0 0 0.46 0 1 0 -0.42 0 0 2-4disc.dat
-  [1,0,-2.12,0,-4.58,0,0,0.46,0,1,0,-0.42,0,0, ldraw_lib__2_4disc()],
+  [1,0,-2.12,0,-4.58,0,0,0.46,0,1,0,-0.42,0,0, ldraw_lib__2_4disc(realsolid)],
 // 1 0 0.4 0 -4.58 0 0 -0.46 0 1 0 0.42 0 0 2-4disc.dat
-  [1,0,0.4,0,-4.58,0,0,-0.46,0,1,0,0.42,0,0, ldraw_lib__2_4disc()],
+  [1,0,0.4,0,-4.58,0,0,-0.46,0,1,0,0.42,0,0, ldraw_lib__2_4disc(realsolid)],
 // 1 0 4.17 0 -4.58 0 0 0.46 0 1 0 -0.42 0 0 2-4disc.dat
-  [1,0,4.17,0,-4.58,0,0,0.46,0,1,0,-0.42,0,0, ldraw_lib__2_4disc()],
+  [1,0,4.17,0,-4.58,0,0,0.46,0,1,0,-0.42,0,0, ldraw_lib__2_4disc(realsolid)],
 // 4 0 1.857 0 5 -1.082 0 5 -1.261 0 4.27 3.87 0 -3.6
   [4,0,1.857,0,5,-1.082,0,5,-1.261,0,4.27,3.87,0,-3.6],
 // 3 0 0.067 0 -1.635 3.87 0 -3.6 -1.261 0 4.27
@@ -63,13 +64,13 @@ function ldraw_lib__typestua() = [
 // 
 // 0 // Main Color
 // 1 16 -4.17 0 -4.58 0 0 -0.46 0 1 0 0.42 0 0 2-4ndis.dat
-  [1,16,-4.17,0,-4.58,0,0,-0.46,0,1,0,0.42,0,0, ldraw_lib__2_4ndis()],
+  [1,16,-4.17,0,-4.58,0,0,-0.46,0,1,0,0.42,0,0, ldraw_lib__2_4ndis(realsolid)],
 // 1 16 -2.12 0 -4.58 0 0 0.46 0 1 0 -0.42 0 0 2-4ndis.dat
-  [1,16,-2.12,0,-4.58,0,0,0.46,0,1,0,-0.42,0,0, ldraw_lib__2_4ndis()],
+  [1,16,-2.12,0,-4.58,0,0,0.46,0,1,0,-0.42,0,0, ldraw_lib__2_4ndis(realsolid)],
 // 1 16 0.4 0 -4.58 0 0 -0.46 0 1 0 0.42 0 0 2-4ndis.dat
-  [1,16,0.4,0,-4.58,0,0,-0.46,0,1,0,0.42,0,0, ldraw_lib__2_4ndis()],
+  [1,16,0.4,0,-4.58,0,0,-0.46,0,1,0,0.42,0,0, ldraw_lib__2_4ndis(realsolid)],
 // 1 16 4.17 0 -4.58 0 0 0.46 0 1 0 -0.42 0 0 2-4ndis.dat
-  [1,16,4.17,0,-4.58,0,0,0.46,0,1,0,-0.42,0,0, ldraw_lib__2_4ndis()],
+  [1,16,4.17,0,-4.58,0,0,0.46,0,1,0,-0.42,0,0, ldraw_lib__2_4ndis(realsolid)],
 // 3 16 -1.261 0 4.27 -1.082 0 5 -4.63 0 5
   [3,16,-1.261,0,4.27,-1.082,0,5,-4.63,0,5],
 // 3 16 -1.606 0 3.118 -1.261 0 4.27 -4.63 0 5
@@ -119,5 +120,5 @@ function ldraw_lib__typestua() = [
   [4,16,4.63,0,-4.16,3.94,0,-3.89,4.04,0,-4.08,4.17,0,-4.16],
 ];
 module ldraw_lib__typestua(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__typestua(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__typestua(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__typestua(line=0.2);

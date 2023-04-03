@@ -3,7 +3,8 @@ use <29124.scad>
 use <29125.scad>
 use <../p/box4-1.scad>
 use <s/23816s01.scad>
-function ldraw_lib__29125c01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__29125c01(realsolid=false) = [
 // 0 Electric Power Functions 2.0 Boost Interactive Motor Case
 // 0 Name: 29125c01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -24,19 +25,19 @@ function ldraw_lib__29125c01() = [
 // 0 // front
 // 
 // 1 71 0 0 -40 1 0 0 0 1 0 0 0 1 29124.dat
-  [1,71,0,0,-40,1,0,0,0,1,0,0,0,1, ldraw_lib__29124()],
+  [1,71,0,0,-40,1,0,0,0,1,0,0,0,1, ldraw_lib__29124(realsolid)],
 // 0 // back
 // 1 16 0 0 20 1 0 0 0 1 0 0 0 1 29125.dat
-  [1,16,0,0,20,1,0,0,0,1,0,0,0,1, ldraw_lib__29125()],
+  [1,16,0,0,20,1,0,0,0,1,0,0,0,1, ldraw_lib__29125(realsolid)],
 // 0 // Cable stub
 // 1 256 0 7 56 0 0 1 -1 0 0 0 -3 0 s\23816s01.dat
-  [1,256,0,7,56,0,0,1,-1,0,0,0,-3,0, ldraw_lib__s__23816s01()],
+  [1,256,0,7,56,0,0,1,-1,0,0,0,-3,0, ldraw_lib__s__23816s01(realsolid)],
 // 0 // See through preventer
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 0 0 4.9 54.5 -13 0 0 0 5 0 0 0 -1.5 box4-1.dat
-  [1,0,0,4.9,54.5,-13,0,0,0,5,0,0,0,-1.5, ldraw_lib__box4_1()],
+  [1,0,0,4.9,54.5,-13,0,0,0,5,0,0,0,-1.5, ldraw_lib__box4_1(realsolid)],
 ];
 module ldraw_lib__29125c01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__29125c01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__29125c01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__29125c01(line=0.2);

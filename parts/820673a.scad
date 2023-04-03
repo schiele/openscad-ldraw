@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/169675as01.scad>
-function ldraw_lib__820673a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__820673a(realsolid=false) = [
 // 0 Sticker  2.5 x 17.9 with Blue Globe, Yellow Box and Curved Arrows
 // 0 Name: 820673a.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -57,7 +58,7 @@ function ldraw_lib__820673a() = [
 // 0 BFC NOCLIP
   [0,"BFC","NOCLIP"],
 // 1 16 0 -0.25 0 2.5 0 0 0 1 0 0 0 2.5 s\169675as01.dat
-  [1,16,0,-0.25,0,2.5,0,0,0,1,0,0,0,2.5, ldraw_lib__s__169675as01()],
+  [1,16,0,-0.25,0,2.5,0,0,0,1,0,0,0,2.5, ldraw_lib__s__169675as01(realsolid)],
 // 4 15 -34 -0.25 2 -34 -0.25 8 -176 -0.25 8 -173 -0.25 2
   [4,15,-34,-0.25,2,-34,-0.25,8,-176,-0.25,8,-173,-0.25,2],
 // 4 15 -34 -0.25 -8 -34 -0.25 -2 -171 -0.25 -2 -168 -0.25 -8
@@ -114,5 +115,5 @@ function ldraw_lib__820673a() = [
   [3,16,171,-0.25,-2,168,-0.25,-8,179,-0.25,-10],
 ];
 module ldraw_lib__820673a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__820673a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__820673a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__820673a(line=0.2);

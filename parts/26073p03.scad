@@ -3,7 +3,8 @@ use <../p/box3u2p.scad>
 use <../p/rect2p.scad>
 use <s/26073s01.scad>
 use <s/26073s02.scad>
-function ldraw_lib__26073p03() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__26073p03(realsolid=false) = [
 // 0 Minifig Backpack with Three Pouches and Dark Green Bedroll Pattern
 // 0 Name: 26073p03.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -20,18 +21,18 @@ function ldraw_lib__26073p03() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\26073s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__26073s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__26073s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\26073s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__26073s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__26073s01(realsolid)],
 // 1 288 0 0 0 1 0 0 0 1 0 0 0 1 s\26073s02.dat
-  [1,288,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__26073s02()],
+  [1,288,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__26073s02(realsolid)],
 // 1 288 0 0 0 -1 0 0 0 1 0 0 0 1 s\26073s02.dat
-  [1,288,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__26073s02()],
+  [1,288,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__26073s02(realsolid)],
 // 
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -1.5 5.5434 0 0 2.2962 1.5 0 0 0 3.2066 0 box3u2p.dat
-  [1,16,0,-1.5,5.5434,0,0,2.2962,1.5,0,0,0,3.2066,0, ldraw_lib__box3u2p()],
+  [1,16,0,-1.5,5.5434,0,0,2.2962,1.5,0,0,0,3.2066,0, ldraw_lib__box3u2p(realsolid)],
 // 3 16 0 -3 19.374 -2.2962 -3 8.75 2.2962 -3 8.75
   [3,16,0,-3,19.374,-2.2962,-3,8.75,2.2962,-3,8.75],
 // 3 16 0 -3 -6 -8 -3 -10 8 -3 -10
@@ -39,7 +40,7 @@ function ldraw_lib__26073p03() = [
 // 3 16 -8 0 -10 0 0 -6 8 0 -10
   [3,16,-8,0,-10,0,0,-6,8,0,-10],
 // 1 16 0 -1.5 -10 -8 0 0 0 0 1.5 0 1 0 rect2p.dat
-  [1,16,0,-1.5,-10,-8,0,0,0,0,1.5,0,1,0, ldraw_lib__rect2p()],
+  [1,16,0,-1.5,-10,-8,0,0,0,0,1.5,0,1,0, ldraw_lib__rect2p(realsolid)],
 // 2 24 7.802 .499 24.119 -7.802 .499 24.119
   [2,24,7.802,.499,24.119,-7.802,.499,24.119],
 // 
@@ -126,5 +127,5 @@ function ldraw_lib__26073p03() = [
   [5,24,7.802,.499,24.119,2.2962,0,8.75,-7.802,.499,24.119,8.563,0,10],
 ];
 module ldraw_lib__26073p03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__26073p03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__26073p03(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__26073p03(line=0.2);

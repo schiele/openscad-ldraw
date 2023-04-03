@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/1-4disc.scad>
 use <../p/1-4ndis.scad>
 use <s/3069bs01.scad>
-function ldraw_lib__3069bpt0() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3069bpt0(realsolid=false) = [
 // 0 Tile  1 x  2 with "7815" Pattern
 // 0 Name: 3069bpt0.dat
 // 0 Author: Alex Taylor [anathema]
@@ -17,7 +18,7 @@ function ldraw_lib__3069bpt0() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3069bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3069bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3069bs01(realsolid)],
 // 4 0 -10.488 0 -4.159 -12.732 0 -3.174 -12.887 0 -4.061 -10.513 0 -5.011
   [4,0,-10.488,0,-4.159,-12.732,0,-3.174,-12.887,0,-4.061,-10.513,0,-5.011],
 // 3 0 -10.513 0 -5.011 -12.887 0 -4.061 -13.016 0 -5.011
@@ -423,9 +424,9 @@ function ldraw_lib__3069bpt0() = [
 // 3 0 3.02 0 -4.911 3.42 0 3.289 3.02 0 1.689
   [3,0,3.02,0,-4.911,3.42,0,3.289,3.02,0,1.689],
 // 1 16 0.92 0 4.989 0 0 2.5 0 1 0 -1.7 0 0 1-4disc.dat
-  [1,16,0.92,0,4.989,0,0,2.5,0,1,0,-1.7,0,0, ldraw_lib__1_4disc()],
+  [1,16,0.92,0,4.989,0,0,2.5,0,1,0,-1.7,0,0, ldraw_lib__1_4disc(realsolid)],
 // 1 0 0.92 0 4.989 0 0 2.5 0 1 0 -1.7 0 0 1-4ndis.dat
-  [1,0,0.92,0,4.989,0,0,2.5,0,1,0,-1.7,0,0, ldraw_lib__1_4ndis()],
+  [1,0,0.92,0,4.989,0,0,2.5,0,1,0,-1.7,0,0, ldraw_lib__1_4ndis(realsolid)],
 // 3 16 -7.349 0 5.489 -6.623 0 2.509 -6.557 0 3.109
   [3,16,-7.349,0,5.489,-6.623,0,2.509,-6.557,0,3.109],
 // 3 16 -6.557 0 3.109 -6.357 0 3.652 -7.349 0 5.489
@@ -535,5 +536,5 @@ function ldraw_lib__3069bpt0() = [
 // 0
 ];
 module ldraw_lib__3069bpt0(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3069bpt0(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3069bpt0(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3069bpt0(line=0.2);

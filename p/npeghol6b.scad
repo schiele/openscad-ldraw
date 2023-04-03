@@ -4,7 +4,8 @@ use <1-8tang.scad>
 use <8/3-8chrd.scad>
 use <8/3-8cylo.scad>
 use <rect2p.scad>
-function ldraw_lib__npeghol6b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__npeghol6b(realsolid=false) = [
 // 0 Technic Peg Hole Negative 0.25 with Middle Tab
 // 0 Name: npeghol6b.dat
 // 0 Author: Kevin Roach [KROACH]
@@ -25,14 +26,14 @@ function ldraw_lib__npeghol6b() = [
 // 4 16 0 0 9 1.7903 0 9 1.7903 0 10 0 0 10
   [4,16,0,0,9,1.7903,0,9,1.7903,0,10,0,0,10],
 // 1 16 6.3639 .5 9.2339 0 1 0 0 0 .5 .76606 0 0 rect2p.dat
-  [1,16,6.3639,.5,9.2339,0,1,0,0,0,.5,.76606,0,0, ldraw_lib__rect2p()],
+  [1,16,6.3639,.5,9.2339,0,1,0,0,0,.5,.76606,0,0, ldraw_lib__rect2p(realsolid)],
 // 
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 5.5817 0 8.3 .78221 0 .09843 0 1 0 .16788 0 -.78 8\3-8cylo.dat
-  [1,16,5.5817,0,8.3,.78221,0,.09843,0,1,0,.16788,0,-.78, ldraw_lib__8__3_8cylo()],
+  [1,16,5.5817,0,8.3,.78221,0,.09843,0,1,0,.16788,0,-.78, ldraw_lib__8__3_8cylo(realsolid)],
 // 1 16 5.5817 1 8.3 .78221 0 .09843 0 1 0 .16788 0 -.78 8\3-8chrd.dat
-  [1,16,5.5817,1,8.3,.78221,0,.09843,0,1,0,.16788,0,-.78, ldraw_lib__8__3_8chrd()],
+  [1,16,5.5817,1,8.3,.78221,0,.09843,0,1,0,.16788,0,-.78, ldraw_lib__8__3_8chrd(realsolid)],
 // 5 24 5.0982 1 7.6298 5.0982 0 7.6298 5.6793 0 7.52 3.4442 0 8.3149
   [5,24,5.0982,1,7.6298,5.0982,0,7.6298,5.6793,0,7.52,3.4442,0,8.3149],
 // 5 24 6.3639 1 8.4679 6.3639 0 8.4679 6.2044 0 7.8672 6.3603 1 11.5321
@@ -41,9 +42,9 @@ function ldraw_lib__npeghol6b() = [
   [4,16,3.4441,1,8.3149,6.3639,1,10,1.7903,1,10,1.7903,1,9],
 // 
 // 1 16 0 0 0 0 0 9 0 1 0 9 0 0 1-8tang.dat
-  [1,16,0,0,0,0,0,9,0,1,0,9,0,0, ldraw_lib__1_8tang()],
+  [1,16,0,0,0,0,0,9,0,1,0,9,0,0, ldraw_lib__1_8tang(realsolid)],
 // 1 16 0 0 0 9 0 0 0 1 0 0 0 9 1-8ndis.dat
-  [1,16,0,0,0,9,0,0,0,1,0,0,0,9, ldraw_lib__1_8ndis()],
+  [1,16,0,0,0,9,0,0,0,1,0,0,0,9, ldraw_lib__1_8ndis(realsolid)],
 // 
 // 4 16 3.4441 1 8.3149 1.7903 1 9 1.7903 0 9 3.4442 0 8.3149
   [4,16,3.4441,1,8.3149,1.7903,1,9,1.7903,0,9,3.4442,0,8.3149],
@@ -79,5 +80,5 @@ function ldraw_lib__npeghol6b() = [
   [2,24,1.7903,0,9,1.7903,1,9],
 ];
 module ldraw_lib__npeghol6b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__npeghol6b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__npeghol6b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__npeghol6b(line=0.2);

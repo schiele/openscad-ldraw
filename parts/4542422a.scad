@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4cylc3.scad>
 use <../p/4-4ering.scad>
 use <../p/4-4ring4.scad>
-function ldraw_lib__4542422a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4542422a(realsolid=false) = [
 // 0 Sticker  1.8 x  1.8 Round with Roadsign "50"
 // 0 Name: 4542422a.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -22,11 +23,11 @@ function ldraw_lib__4542422a() = [
 // 
 // 
 // 1 16 0 0 0 17.5 0 0 0 -0.25 0 0 0 17.5 4-4cylc3.dat
-  [1,16,0,0,0,17.5,0,0,0,-0.25,0,0,0,17.5, ldraw_lib__4_4cylc3()],
+  [1,16,0,0,0,17.5,0,0,0,-0.25,0,0,0,17.5, ldraw_lib__4_4cylc3(realsolid)],
 // 1 4 0 -0.25 0 3.5 0 0 0 1 0 0 0 -3.5 4-4ring4.dat
-  [1,4,0,-0.25,0,3.5,0,0,0,1,0,0,0,-3.5, ldraw_lib__4_4ring4()],
+  [1,4,0,-0.25,0,3.5,0,0,0,1,0,0,0,-3.5, ldraw_lib__4_4ring4(realsolid)],
 // 1 15 0 -.25 0 14 0 0 0 1 0 0 0 14 4-4ering.dat
-  [1,15,0,-.25,0,14,0,0,0,1,0,0,0,14, ldraw_lib__4_4ering()],
+  [1,15,0,-.25,0,14,0,0,0,1,0,0,0,14, ldraw_lib__4_4ering(realsolid)],
 // 
 // 4 0 -11.199 -0.25 -5.587 -10.096 -0.25 -7.033 -9.214 -0.25 -4.899 -9.6 -0.25 -3.562
   [4,0,-11.199,-0.25,-5.587,-10.096,-0.25,-7.033,-9.214,-0.25,-4.899,-9.6,-0.25,-3.562],
@@ -257,5 +258,5 @@ function ldraw_lib__4542422a() = [
   [4,15,-9.775,-0.25,8.075,-1.675,-0.25,8.075,0,-0.25,14,-5.358,-0.25,12.935],
 ];
 module ldraw_lib__4542422a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4542422a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4542422a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4542422a(line=0.2);

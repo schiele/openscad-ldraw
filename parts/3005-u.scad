@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <3005ptu.scad>
-function ldraw_lib__3005_u() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3005_u(realsolid=false) = [
 // 0 ~Moved to 3005ptu
 // 0 Name: 3005-u.dat
 // 0 Author: [PTadmin]
@@ -18,8 +19,8 @@ function ldraw_lib__3005_u() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 3005ptu.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3005ptu()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3005ptu(realsolid)],
 ];
 module ldraw_lib__3005_u(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3005_u(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3005_u(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3005_u(line=0.2);

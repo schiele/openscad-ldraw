@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__43745p01a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__43745p01a(realsolid=false) = [
 // 0 ~Minifig Head Elf - Eye Pattern
 // 0 Name: s\43745p01a.dat
 // 0 Author: Nils Schmidt [BlackBrick89]
@@ -888,5 +889,5 @@ function ldraw_lib__s__43745p01a() = [
   [3,15,-4.87,-21.09,-14.312,-5.668,-21.731,-14.581,-5.382,-21.083,-14.782],
 ];
 module ldraw_lib__s__43745p01a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__43745p01a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__43745p01a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__43745p01a(line=0.2);

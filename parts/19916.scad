@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4disc.scad>
 use <s/19916s01.scad>
 use <../p/stud16.scad>
-function ldraw_lib__19916() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__19916(realsolid=false) = [
 // 0 Minifig Helmet SW Darth Vader Upper Part
 // 0 Name: 19916.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -21,14 +22,14 @@ function ldraw_lib__19916() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\19916s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__19916s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__19916s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\19916s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__19916s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__19916s01(realsolid)],
 // 
 // 1 16 0 -6.2 0 10 0 0 0 -1 0 0 0 10 4-4disc.dat
-  [1,16,0,-6.2,0,10,0,0,0,-1,0,0,0,10, ldraw_lib__4_4disc()],
+  [1,16,0,-6.2,0,10,0,0,0,-1,0,0,0,10, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 -6.2 0 1 0 0 0 -1.55 0 0 0 1 stud16.dat
-  [1,16,0,-6.2,0,1,0,0,0,-1.55,0,0,0,1, ldraw_lib__stud16()],
+  [1,16,0,-6.2,0,1,0,0,0,-1.55,0,0,0,1, ldraw_lib__stud16(realsolid)],
 // 
 // 0 // Helmet Ridge
 // 4 16 -1.622 2.695 -15.555 1.622 2.695 -15.555 2.046 1.217 -16.944 -2.046 1.217 -16.944
@@ -255,5 +256,5 @@ function ldraw_lib__19916() = [
   [5,24,0,23.827,17.022,0,15.695,15.165,5.95,23.827,15.882,-5.95,23.827,15.882],
 ];
 module ldraw_lib__19916(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__19916(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__19916(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__19916(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/92241s01.scad>
-function ldraw_lib__92241p17() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__92241p17(realsolid=false) = [
 // 0 Figure Friends Girl Torso with Light Yellow Halter Top with Orange Flower Pattern
 // 0 Name: 92241p17.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -15,7 +16,7 @@ function ldraw_lib__92241p17() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\92241s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__92241s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__92241s01(realsolid)],
 // 0 // Front
 // 4 25 3.6 12.94 -8.48 2.1875 14.9253 -8.6016 2.7 14.83 -8.5414 3.34 14.47 -8.4723
   [4,25,3.6,12.94,-8.48,2.1875,14.9253,-8.6016,2.7,14.83,-8.5414,3.34,14.47,-8.4723],
@@ -2594,5 +2595,5 @@ function ldraw_lib__92241p17() = [
   [5,24,9.13,13.09,-5.22,10.07,12.95,-2.62,9.37,18,-5.11,10.09,9.62,-2.24],
 ];
 module ldraw_lib__92241p17(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__92241p17(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__92241p17(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__92241p17(line=0.2);

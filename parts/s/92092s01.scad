@@ -2,7 +2,8 @@ use <../../lib.scad>
 use <../../p/clh4.scad>
 use <../../p/rect.scad>
 use <../../p/rect3.scad>
-function ldraw_lib__s__92092s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__92092s01(realsolid=false) = [
 // 0 ~Hinge Tile  2 x  4 with Ribs Locking without Rear Reinforcements - Hinge
 // 0 Name: s\92092s01.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -18,21 +19,21 @@ function ldraw_lib__s__92092s01() = [
 // 
 // 
 // 1 16 0 -2 -15 6.5 0 0 0 0 -4 0 1 0 rect.dat
-  [1,16,0,-2,-15,6.5,0,0,0,0,-4,0,1,0, ldraw_lib__rect()],
+  [1,16,0,-2,-15,6.5,0,0,0,0,-4,0,1,0, ldraw_lib__rect(realsolid)],
 // 1 16 -7.5 -2 -18 0 0 1 4 1 0 -3 0 0 rect.dat
-  [1,16,-7.5,-2,-18,0,0,1,4,1,0,-3,0,0, ldraw_lib__rect()],
+  [1,16,-7.5,-2,-18,0,0,1,4,1,0,-3,0,0, ldraw_lib__rect(realsolid)],
 // 1 16 7.5 -2 -18 0 0 1 4 1 0 -3 0 0 rect.dat
-  [1,16,7.5,-2,-18,0,0,1,4,1,0,-3,0,0, ldraw_lib__rect()],
+  [1,16,7.5,-2,-18,0,0,1,4,1,0,-3,0,0, ldraw_lib__rect(realsolid)],
 // 1 16 0 0 -13 -4 0 0 0 0 -6 0 -1 0 rect3.dat
-  [1,16,0,0,-13,-4,0,0,0,0,-6,0,-1,0, ldraw_lib__rect3()],
+  [1,16,0,0,-13,-4,0,0,0,0,-6,0,-1,0, ldraw_lib__rect3(realsolid)],
 // 1 16 -6.25 6 -8.5 2.25 0 0 0 -1 0 0 0 -4.5 rect3.dat
-  [1,16,-6.25,6,-8.5,2.25,0,0,0,-1,0,0,0,-4.5, ldraw_lib__rect3()],
+  [1,16,-6.25,6,-8.5,2.25,0,0,0,-1,0,0,0,-4.5, ldraw_lib__rect3(realsolid)],
 // 1 16 6.25 6 -8.5 2.25 0 0 0 -1 0 0 0 -4.5 rect3.dat
-  [1,16,6.25,6,-8.5,2.25,0,0,0,-1,0,0,0,-4.5, ldraw_lib__rect3()],
+  [1,16,6.25,6,-8.5,2.25,0,0,0,-1,0,0,0,-4.5, ldraw_lib__rect3(realsolid)],
 // 1 16 0 0 -4 -1 0 0 0 -1 0 0 0 1 clh4.dat
-  [1,16,0,0,-4,-1,0,0,0,-1,0,0,0,1, ldraw_lib__clh4()],
+  [1,16,0,0,-4,-1,0,0,0,-1,0,0,0,1, ldraw_lib__clh4(realsolid)],
 // 1 16 0 0 -4 1 0 0 0 1 0 0 0 1 clh4.dat
-  [1,16,0,0,-4,1,0,0,0,1,0,0,0,1, ldraw_lib__clh4()],
+  [1,16,0,0,-4,1,0,0,0,1,0,0,0,1, ldraw_lib__clh4(realsolid)],
 // 3 16 -8.5 -6 -15 -8.5 2 -13 -8.5 2 -21
   [3,16,-8.5,-6,-15,-8.5,2,-13,-8.5,2,-21],
 // 3 16 -6.5 -6 -15 -6.5 2 -21 -6.5 2 -15
@@ -87,5 +88,5 @@ function ldraw_lib__s__92092s01() = [
   [2,24,-8.5,2,-13,-8.5,6,-13],
 ];
 module ldraw_lib__s__92092s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__92092s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__92092s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__92092s01(line=0.2);

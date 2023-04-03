@@ -4,7 +4,8 @@ use <../p/2-4edge.scad>
 use <../p/stud2.scad>
 use <../p/stud3.scad>
 use <../p/stud4.scad>
-function ldraw_lib__6055() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6055(realsolid=false) = [
 // 0 Panel Wall  6 x  6 x  6 Corner
 // 0 Name: 6055.dat
 // 0 Author: Marek Idec [Maras]
@@ -22,47 +23,47 @@ function ldraw_lib__6055() = [
 // 
 // 0 // Studs
 // 1 16 -10 8 10 1 0 0 0 1 0 0 0 1 stud2.dat
-  [1,16,-10,8,10,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2()],
+  [1,16,-10,8,10,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2(realsolid)],
 // 1 16 -10 8 -10 1 0 0 0 1 0 0 0 1 stud2.dat
-  [1,16,-10,8,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2()],
+  [1,16,-10,8,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2(realsolid)],
 // 1 16 10 8 10 1 0 0 0 1 0 0 0 1 stud2.dat
-  [1,16,10,8,10,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2()],
+  [1,16,10,8,10,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2(realsolid)],
 // 1 16 50 24 50 1 0 0 0 1 0 0 0 1 stud2.dat
-  [1,16,50,24,50,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2()],
+  [1,16,50,24,50,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2(realsolid)],
 // 1 16 50 24 30 1 0 0 0 1 0 0 0 1 stud2.dat
-  [1,16,50,24,30,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2()],
+  [1,16,50,24,30,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2(realsolid)],
 // 1 16 -50 24 -50 1 0 0 0 1 0 0 0 1 stud2.dat
-  [1,16,-50,24,-50,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2()],
+  [1,16,-50,24,-50,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2(realsolid)],
 // 1 16 -30 24 -50 1 0 0 0 1 0 0 0 1 stud2.dat
-  [1,16,-30,24,-50,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2()],
+  [1,16,-30,24,-50,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2(realsolid)],
 // 1 16 10 8 -10 1 0 0 0 3 0 0 0 1 stud2.dat
-  [1,16,10,8,-10,1,0,0,0,3,0,0,0,1, ldraw_lib__stud2()],
+  [1,16,10,8,-10,1,0,0,0,3,0,0,0,1, ldraw_lib__stud2(realsolid)],
 // 1 16 30 8 10 1 0 0 0 3 0 0 0 1 stud2.dat
-  [1,16,30,8,10,1,0,0,0,3,0,0,0,1, ldraw_lib__stud2()],
+  [1,16,30,8,10,1,0,0,0,3,0,0,0,1, ldraw_lib__stud2(realsolid)],
 // 1 16 -10 8 -30 1 0 0 0 3 0 0 0 1 stud2.dat
-  [1,16,-10,8,-30,1,0,0,0,3,0,0,0,1, ldraw_lib__stud2()],
+  [1,16,-10,8,-30,1,0,0,0,3,0,0,0,1, ldraw_lib__stud2(realsolid)],
 // 0 Underside studs
 // 1 16 0 140 0 1 0 0 0 -1 0 0 0 1 stud4.dat
-  [1,16,0,140,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4()],
+  [1,16,0,140,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4(realsolid)],
 // 1 16 20 140 0 1 0 0 0 -1 0 0 0 1 stud4.dat
-  [1,16,20,140,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4()],
+  [1,16,20,140,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4(realsolid)],
 // 1 16 0 140 -20 1 0 0 0 -1 0 0 0 1 stud4.dat
-  [1,16,0,140,-20,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4()],
+  [1,16,0,140,-20,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4(realsolid)],
 // 1 16 50 116 40 1 0 0 0 -1 0 0 0 1 stud3.dat
-  [1,16,50,116,40,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud3()],
+  [1,16,50,116,40,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud3(realsolid)],
 // 1 16 -40 116 -50 1 0 0 0 -1 0 0 0 1 stud3.dat
-  [1,16,-40,116,-50,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud3()],
+  [1,16,-40,116,-50,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud3(realsolid)],
 // 
 // 0 Created with stl2dat conversion tool
 // 
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 18 42 -18 -7.07 2 0 0 0 -10 -7.07 -2 0 2-4cyli.dat
-  [1,16,18,42,-18,-7.07,2,0,0,0,-10,-7.07,-2,0, ldraw_lib__2_4cyli()],
+  [1,16,18,42,-18,-7.07,2,0,0,0,-10,-7.07,-2,0, ldraw_lib__2_4cyli(realsolid)],
 // 1 16 18 42 -18 -7.07 0.707 0 0 0 -10 -7.07 -0.707 0 2-4edge.dat
-  [1,16,18,42,-18,-7.07,0.707,0,0,0,-10,-7.07,-0.707,0, ldraw_lib__2_4edge()],
+  [1,16,18,42,-18,-7.07,0.707,0,0,0,-10,-7.07,-0.707,0, ldraw_lib__2_4edge(realsolid)],
 // 1 16 20 42 -20 -7.07 0.707 0 0 0 -10 -7.07 -0.707 0 2-4edge.dat
-  [1,16,20,42,-20,-7.07,0.707,0,0,0,-10,-7.07,-0.707,0, ldraw_lib__2_4edge()],
+  [1,16,20,42,-20,-7.07,0.707,0,0,0,-10,-7.07,-0.707,0, ldraw_lib__2_4edge(realsolid)],
 // 
 // 3 16 -16 140 16 32.243 140 -3.757 23.757 140 -12.243
   [3,16,-16,140,16,32.243,140,-3.757,23.757,140,-12.243],
@@ -1076,5 +1077,5 @@ function ldraw_lib__6055() = [
 // 0
 ];
 module ldraw_lib__6055(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6055(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6055(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6055(line=0.2);

@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/box3u8p.scad>
-function ldraw_lib__s__864s07() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__864s07(realsolid=false) = [
 // 0 ~Train Track 12V Slotted Point: Rail Base
 // 0 Name: s\864s07.dat
 // 0 Author: Steffen [Steffen]
@@ -25,16 +26,16 @@ function ldraw_lib__s__864s07() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 8 50 -5 0 0 0 -4 0 0 0 -6 box3u8p.dat
-  [1,16,0,8,50,-5,0,0,0,-4,0,0,0,-6, ldraw_lib__box3u8p()],
+  [1,16,0,8,50,-5,0,0,0,-4,0,0,0,-6, ldraw_lib__box3u8p(realsolid)],
 // 1 16 0 8 50 -5 0 0 0 -8 0 0 0 -10 box3u8p.dat
-  [1,16,0,8,50,-5,0,0,0,-8,0,0,0,-10, ldraw_lib__box3u8p()],
+  [1,16,0,8,50,-5,0,0,0,-8,0,0,0,-10, ldraw_lib__box3u8p(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 8 -50 -5 0 0 0 -4 0 0 0 -6 box3u8p.dat
-  [1,16,0,8,-50,-5,0,0,0,-4,0,0,0,-6, ldraw_lib__box3u8p()],
+  [1,16,0,8,-50,-5,0,0,0,-4,0,0,0,-6, ldraw_lib__box3u8p(realsolid)],
 // 1 16 0 8 -50 -5 0 0 0 -8 0 0 0 -10 box3u8p.dat
-  [1,16,0,8,-50,-5,0,0,0,-8,0,0,0,-10, ldraw_lib__box3u8p()],
+  [1,16,0,8,-50,-5,0,0,0,-8,0,0,0,-10, ldraw_lib__box3u8p(realsolid)],
 ];
 module ldraw_lib__s__864s07(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__864s07(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__864s07(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__864s07(line=0.2);

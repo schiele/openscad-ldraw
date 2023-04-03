@@ -9,7 +9,8 @@ use <../../p/4-4cylc.scad>
 use <../../p/4-4cylo.scad>
 use <../../p/4-4edge.scad>
 use <../../p/4-4ring3.scad>
-function ldraw_lib__s__24496s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__24496s01(realsolid=false) = [
 // 0 ~Minifig Hat Ninja Wrap with Band
 // 0 Name: s\24496s01.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -24,40 +25,40 @@ function ldraw_lib__s__24496s01() = [
 // 
 // 
 // 1 16 0 0 0 2 0 0 0 -1 0 0 0 2 4-4ring3.dat
-  [1,16,0,0,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__4_4ring3()],
+  [1,16,0,0,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__4_4ring3(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -6 0 6 0 0 0 6 0 0 0 6 4-4cylc.dat
-  [1,16,0,-6,0,6,0,0,0,6,0,0,0,6, ldraw_lib__4_4cylc()],
+  [1,16,0,-6,0,6,0,0,0,6,0,0,0,6, ldraw_lib__4_4cylc(realsolid)],
 // 1 16 0 -5 0 8 0 0 0 5 0 0 0 8 4-4cylo.dat
-  [1,16,0,-5,0,8,0,0,0,5,0,0,0,8, ldraw_lib__4_4cylo()],
+  [1,16,0,-5,0,8,0,0,0,5,0,0,0,8, ldraw_lib__4_4cylo(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -3.3333 0 2 0 0 0 -1.6667 0 0 0 2 4-4con4.dat
-  [1,16,0,-3.3333,0,2,0,0,0,-1.6667,0,0,0,2, ldraw_lib__4_4con4()],
+  [1,16,0,-3.3333,0,2,0,0,0,-1.6667,0,0,0,2, ldraw_lib__4_4con4(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -2.5 0 1 0 0 0 -.8333 0 0 0 1 4-4con10.dat
-  [1,16,0,-2.5,0,1,0,0,0,-.8333,0,0,0,1, ldraw_lib__4_4con10()],
+  [1,16,0,-2.5,0,1,0,0,0,-.8333,0,0,0,1, ldraw_lib__4_4con10(realsolid)],
 // 1 16 0 -2.5 0 11 0 0 0 -1 0 0 0 11 4-4edge.dat
-  [1,16,0,-2.5,0,11,0,0,0,-1,0,0,0,11, ldraw_lib__4_4edge()],
+  [1,16,0,-2.5,0,11,0,0,0,-1,0,0,0,11, ldraw_lib__4_4edge(realsolid)],
 // 
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 .5 0 .70711 0 -.70711 0 -3 0 .70711 0 .70711 2-4con11.dat
-  [1,16,0,.5,0,.70711,0,-.70711,0,-3,0,.70711,0,.70711, ldraw_lib__2_4con11()],
+  [1,16,0,.5,0,.70711,0,-.70711,0,-3,0,.70711,0,.70711, ldraw_lib__2_4con11(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 .5 0 .70711 0 .70711 0 -3 0 -.70711 0 .70711 1-4con11.dat
-  [1,16,0,.5,0,.70711,0,.70711,0,-3,0,-.70711,0,.70711, ldraw_lib__1_4con11()],
+  [1,16,0,.5,0,.70711,0,.70711,0,-3,0,-.70711,0,.70711, ldraw_lib__1_4con11(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 3.5 0 .70711 0 -.70711 0 -3 0 .70711 0 .70711 2-4con12.dat
-  [1,16,0,3.5,0,.70711,0,-.70711,0,-3,0,.70711,0,.70711, ldraw_lib__2_4con12()],
+  [1,16,0,3.5,0,.70711,0,-.70711,0,-3,0,.70711,0,.70711, ldraw_lib__2_4con12(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 3.5 0 .70711 0 .70711 0 -3 0 -.70711 0 .70711 1-4con12.dat
-  [1,16,0,3.5,0,.70711,0,.70711,0,-3,0,-.70711,0,.70711, ldraw_lib__1_4con12()],
+  [1,16,0,3.5,0,.70711,0,.70711,0,-3,0,-.70711,0,.70711, ldraw_lib__1_4con12(realsolid)],
 // 4 16 -4.2097 -2.5 -10.1629 -6.8644 3.5 -10.7481 -9.1924 3.5 -9.1924 -7.7782 -2.5 -7.7782
   [4,16,-4.2097,-2.5,-10.1629,-6.8644,3.5,-10.7481,-9.1924,3.5,-9.1924,-7.7782,-2.5,-7.7782],
 // 4 16 4.2097 -2.5 -10.1629 7.7781 -2.5 -7.7781 9.1924 3.5 -9.1924 6.8644 3.5 -10.7481
@@ -1377,5 +1378,5 @@ function ldraw_lib__s__24496s01() = [
   [5,24,9.458,7.309,-9.202,9.767,5.61,-10.65,7.236,5.656,-10.83,11.716,6.078,-9.761],
 ];
 module ldraw_lib__s__24496s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__24496s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__24496s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__24496s01(line=0.2);

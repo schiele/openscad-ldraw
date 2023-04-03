@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/box3u2p.scad>
 use <../p/stug-1x2.scad>
-function ldraw_lib__3134() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3134(realsolid=false) = [
 // 0 Brick  1 x  2 with Cable Cutout
 // 0 Name: 3134.dat
 // 0 Author: Lutz Uhlmann [El-Lutzo]
@@ -20,21 +21,21 @@ function ldraw_lib__3134() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 stug-1x2.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_1x2()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_1x2(realsolid)],
 // 1 16 0 24 0 0 0 20 0 -24 0 10 0 0 box3u2p.dat
-  [1,16,0,24,0,0,0,20,0,-24,0,10,0,0, ldraw_lib__box3u2p()],
+  [1,16,0,24,0,0,0,20,0,-24,0,10,0,0, ldraw_lib__box3u2p(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 24 0 0 0 16 0 -20 0 6 0 0 box3u2p.dat
-  [1,16,0,24,0,0,0,16,0,-20,0,6,0,0, ldraw_lib__box3u2p()],
+  [1,16,0,24,0,0,0,16,0,-20,0,6,0,0, ldraw_lib__box3u2p(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 24 -8 0 0 4 0 -4 0 2 0 0 box3u2p.dat
-  [1,16,0,24,-8,0,0,4,0,-4,0,2,0,0, ldraw_lib__box3u2p()],
+  [1,16,0,24,-8,0,0,4,0,-4,0,2,0,0, ldraw_lib__box3u2p(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 24 8 0 0 4 0 -4 0 2 0 0 box3u2p.dat
-  [1,16,0,24,8,0,0,4,0,-4,0,2,0,0, ldraw_lib__box3u2p()],
+  [1,16,0,24,8,0,0,4,0,-4,0,2,0,0, ldraw_lib__box3u2p(realsolid)],
 // 4 16 4 24 10 4 24 6 16 24 6 20 24 10
   [4,16,4,24,10,4,24,6,16,24,6,20,24,10],
 // 4 16 -20 24 10 -16 24 6 -4 24 6 -4 24 10
@@ -89,5 +90,5 @@ function ldraw_lib__3134() = [
   [2,24,-16,24,-6,-4,24,-6],
 ];
 module ldraw_lib__3134(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3134(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3134(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3134(line=0.2);

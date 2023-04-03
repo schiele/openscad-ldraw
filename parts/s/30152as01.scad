@@ -3,7 +3,8 @@ use <../../p/13-16cyli.scad>
 use <../../p/3-16cyli.scad>
 use <../../p/3-16edge.scad>
 use <../../p/bump5000.scad>
-function ldraw_lib__s__30152as01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__30152as01(realsolid=false) = [
 // 0 ~Lens for Minifig Tool Magnifying Glass
 // 0 Name: s\30152as01.dat
 // 0 Author: Michael Heidemann [mikeheide]
@@ -26,22 +27,22 @@ function ldraw_lib__s__30152as01() = [
 // 0 !HISTORY 2020-06-28 [PTadmin] Official Update 2020-01
 // 
 // 1 16 0 0 1.5 13 0 0 0 0 13 0 -2 0 bump5000.dat
-  [1,16,0,0,1.5,13,0,0,0,0,13,0,-2,0, ldraw_lib__bump5000()],
+  [1,16,0,0,1.5,13,0,0,0,0,13,0,-2,0, ldraw_lib__bump5000(realsolid)],
 // 1 16 0 0 -1.5 13 0 0 0 0 13 0 2 0 bump5000.dat
-  [1,16,0,0,-1.5,13,0,0,0,0,13,0,2,0, ldraw_lib__bump5000()],
+  [1,16,0,0,-1.5,13,0,0,0,0,13,0,2,0, ldraw_lib__bump5000(realsolid)],
 // 1 16 0 0 1.5 -13 0 0 0 0 -13 0 -3 0 13-16cyli.dat
-  [1,16,0,0,1.5,-13,0,0,0,0,-13,0,-3,0, ldraw_lib__13_16cyli()],
+  [1,16,0,0,1.5,-13,0,0,0,0,-13,0,-3,0, ldraw_lib__13_16cyli(realsolid)],
 // 1 16 0 0 2 -17 0 0 0 0 17 0 -4 0 3-16cyli.dat
-  [1,16,0,0,2,-17,0,0,0,0,17,0,-4,0, ldraw_lib__3_16cyli()],
+  [1,16,0,0,2,-17,0,0,0,0,17,0,-4,0, ldraw_lib__3_16cyli(realsolid)],
 // 4 16 -13 0 -1.5 -13 0 1.5 -17 0 2 -17 0 -2
   [4,16,-13,0,-1.5,-13,0,1.5,-17,0,2,-17,0,-2],
 // 4 16 -4.9751 12.0107 -1.5 -6.5059 15.7063 -2 -6.5059 15.7063 2 -4.9751 12.0107 1.5
   [4,16,-4.9751,12.0107,-1.5,-6.5059,15.7063,-2,-6.5059,15.7063,2,-4.9751,12.0107,1.5],
 // 
 // 1 16 0 0 -2 -17 0 0 0 0 17 0 1 0 3-16edge.dat
-  [1,16,0,0,-2,-17,0,0,0,0,17,0,1,0, ldraw_lib__3_16edge()],
+  [1,16,0,0,-2,-17,0,0,0,0,17,0,1,0, ldraw_lib__3_16edge(realsolid)],
 // 1 16 0 0 2 -17 0 0 0 0 17 0 1 0 3-16edge.dat
-  [1,16,0,0,2,-17,0,0,0,0,17,0,1,0, ldraw_lib__3_16edge()],
+  [1,16,0,0,2,-17,0,0,0,0,17,0,1,0, ldraw_lib__3_16edge(realsolid)],
 // 2 24 -17 0 2 -17 0 -2
   [2,24,-17,0,2,-17,0,-2],
 // 2 24 -6.5059 15.7063 2 -6.5059 15.7063 -2
@@ -81,5 +82,5 @@ function ldraw_lib__s__30152as01() = [
   [5,24,-9.1923,9.1923,1.5,-12.0207,12.0207,2,-15.7063,6.5059,2,-6.5059,15.7063,2],
 ];
 module ldraw_lib__s__30152as01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__30152as01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__30152as01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__30152as01(line=0.2);

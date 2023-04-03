@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3010s01.scad>
-function ldraw_lib__3010pzy() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3010pzy(realsolid=false) = [
 // 0 Brick  1 x  4 with Light Bluish Grey Robe Lapels and Tan Neck Pattern
 // 0 Name: 3010pzy.dat
 // 0 Author: Vincent Messenet [Cheenzo]
@@ -19,7 +20,7 @@ function ldraw_lib__3010pzy() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3010s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3010s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3010s01(realsolid)],
 // 
 // 4 0 -38.75 .5 -10 -39.5 1.31 -10 -21.25 23.5 -10 -19.5 23.5 -10
   [4,0,-38.75,.5,-10,-39.5,1.31,-10,-21.25,23.5,-10,-19.5,23.5,-10],
@@ -153,5 +154,5 @@ function ldraw_lib__3010pzy() = [
   [3,16,9.75,6,-10,4,6.55,-10,-.57,11.45,-10],
 ];
 module ldraw_lib__3010pzy(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3010pzy(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3010pzy(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3010pzy(line=0.2);

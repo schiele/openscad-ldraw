@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__18835s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__18835s02(realsolid=false) = [
 // 0 ~Minifig Hair Mid-Length Straight with Crown - Crown
 // 0 Name: s\18835s02.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -2162,5 +2163,5 @@ function ldraw_lib__s__18835s02() = [
   [5,24,2.413,-2.826,-16.708,1.256,.599,-17.06,2.429,-.469,-16.881,1.186,-3.807,-16.69],
 ];
 module ldraw_lib__s__18835s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__18835s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__18835s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__18835s02(line=0.2);

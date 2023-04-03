@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/28533s01.scad>
-function ldraw_lib__28533() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__28533(realsolid=false) = [
 // 0 Boat Hull Floating 16 x  8 Bottom (Needs Work)
 // 0 Name: 28533.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -21,9 +22,9 @@ function ldraw_lib__28533() = [
 // 
 // 0 // Subparts
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\28533s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__28533s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__28533s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\28533s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__28533s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__28533s01(realsolid)],
 // 0 // Outside
 // 3 16 0 66.9 77.362 -8.165 66.9 78.405 8.165 66.9 78.405
   [3,16,0,66.9,77.362,-8.165,66.9,78.405,8.165,66.9,78.405],
@@ -92,5 +93,5 @@ function ldraw_lib__28533() = [
   [5,24,0,63.613,80.786,0,63.785,80.786,-12.203,63.785,83.142,12.203,63.785,83.142],
 ];
 module ldraw_lib__28533(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__28533(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__28533(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__28533(line=0.2);

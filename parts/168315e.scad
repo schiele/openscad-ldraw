@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__168315e() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__168315e(realsolid=false) = [
 // 0 Sticker  1.7 x  3.2 Technic Supercar Mirror
 // 0 Name: 168315e.dat
 // 0 Author: Imre Papp [ampi]
@@ -20,7 +21,7 @@ function ldraw_lib__168315e() = [
 // 
 // 
 // 1 0 0 -0.25 0 32 0 0 0 0.25 0 0 0 17 box5-12.dat
-  [1,0,0,-0.25,0,32,0,0,0,0.25,0,0,0,17, ldraw_lib__box5_12()],
+  [1,0,0,-0.25,0,32,0,0,0,0.25,0,0,0,17, ldraw_lib__box5_12(realsolid)],
 // 0 // sticker pattern
 // 4 0 -21.03 -0.25 6.91 -20.31 -0.25 6.92 -19.53 -0.25 6.55 -21.59 -0.25 6.59
   [4,0,-21.03,-0.25,6.91,-20.31,-0.25,6.92,-19.53,-0.25,6.55,-21.59,-0.25,6.59],
@@ -446,5 +447,5 @@ function ldraw_lib__168315e() = [
   [3,15,27.37,-0.25,-4.65,27.94,-0.25,-12.74,26.26,-0.25,-5.47],
 ];
 module ldraw_lib__168315e(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__168315e(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__168315e(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__168315e(line=0.2);

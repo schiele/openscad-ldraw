@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/973pr3s01.scad>
 use <s/973s01.scad>
-function ldraw_lib__973pr4() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__973pr4(realsolid=false) = [
 // 0 Minifig Torso with SW Layered Shirt, Brown Belt, Braid Pattern
 // 0 Name: 973pr4.dat
 // 0 Author: Daniel Goerner [TK-949]
@@ -16,9 +17,9 @@ function ldraw_lib__973pr4() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973pr3s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973pr3s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973pr3s01(realsolid)],
 // 
 // 4 0 -7.415 11.891 -10 -7.51 12.39 -10 -6.67 12.14 -10 -6.62 11.49 -10
   [4,0,-7.415,11.891,-10,-7.51,12.39,-10,-6.67,12.14,-10,-6.62,11.49,-10],
@@ -266,5 +267,5 @@ function ldraw_lib__973pr4() = [
   [4,43602464,-6.9,10,-10,-7.359,9.81,-10,-7.397,10,-10,-7.359,10.19,-10],
 ];
 module ldraw_lib__973pr4(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__973pr4(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__973pr4(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__973pr4(line=0.2);

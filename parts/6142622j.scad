@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <6142622i.scad>
-function ldraw_lib__6142622j() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6142622j(realsolid=false) = [
 // 0 Sticker  0.8 x  1.9 with Red and White Taillamp on Yellow Background Left
 // 0 Name: 6142622j.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -17,8 +18,8 @@ function ldraw_lib__6142622j() = [
 // 
 // 
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 6142622i.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__6142622i()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__6142622i(realsolid)],
 ];
 module ldraw_lib__6142622j(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6142622j(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6142622j(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6142622j(line=0.2);

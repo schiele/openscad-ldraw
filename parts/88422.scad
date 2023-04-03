@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <42511.scad>
-function ldraw_lib__88422() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__88422(realsolid=false) = [
 // 0 =Minifig Skateboard with Four Wheel Clips
 // 0 Name: 88422.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -19,8 +20,8 @@ function ldraw_lib__88422() = [
 // 0 // Alias of 42511
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 42511.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__42511()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__42511(realsolid)],
 ];
 module ldraw_lib__88422(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__88422(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__88422(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__88422(line=0.2);

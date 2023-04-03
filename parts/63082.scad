@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/joint8socket2.scad>
 use <s/63082s01.scad>
-function ldraw_lib__63082() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__63082(realsolid=false) = [
 // 0 Plate  2 x  2 with Socket Joint-8 Square and Axlehole
 // 0 Name: 63082.dat
 // 0 Author: Willy Tschager [Holly-Wood]
@@ -24,15 +25,15 @@ function ldraw_lib__63082() = [
 // 0 // Subpart Plate 2 x 2 with Towball Socket and Axlehole - Plate
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\63082s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__63082s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__63082s01(realsolid)],
 // 
 // 4 16 10 0 -20 -10 0 -20 -10 -6 -20 10 -6 -20
   [4,16,10,0,-20,-10,0,-20,-10,-6,-20,10,-6,-20],
 // 4 16 10 14 -20 -10 14 -20 -10 8 -20 10 8 -20
   [4,16,10,14,-20,-10,14,-20,-10,8,-20,10,8,-20],
 // 1 16 0 4 -30 1 0 0 0 1 0 0 0 1 joint8socket2.dat
-  [1,16,0,4,-30,1,0,0,0,1,0,0,0,1, ldraw_lib__joint8socket2()],
+  [1,16,0,4,-30,1,0,0,0,1,0,0,0,1, ldraw_lib__joint8socket2(realsolid)],
 ];
 module ldraw_lib__63082(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__63082(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__63082(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__63082(line=0.2);

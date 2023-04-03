@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/196955as02.scad>
 use <s/196955as03.scad>
-function ldraw_lib__196955a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__196955a(realsolid=false) = [
 // 0 Sticker  2.4 x  2 w Black German Railways Logo and White "7745"
 // 0 Name: 196955a.dat
 // 0 Author: Steffen [Steffen]
@@ -18,10 +19,10 @@ function ldraw_lib__196955a() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\196955as02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__196955as02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__196955as02(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\196955as03.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__196955as03()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__196955as03(realsolid)],
 ];
 module ldraw_lib__196955a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__196955a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__196955a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__196955a(line=0.2);

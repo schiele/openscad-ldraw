@@ -6,7 +6,8 @@ use <../../p/4-4ring4.scad>
 use <../../p/5-8cyli.scad>
 use <../../p/axleho10.scad>
 use <../../p/peghole.scad>
-function ldraw_lib__s__336s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__336s01(realsolid=false) = [
 // 0 ~Technic Pneumatic Cylinder 2 x 2 Piston Rod End
 // 0 Name: s\336s01.dat
 // 0 Author: Marc Klein [marckl]
@@ -245,29 +246,29 @@ function ldraw_lib__s__336s01() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -8 0 0 0 16 0 6 0 0 0 0 6 4-4cyli.dat
-  [1,16,-8,0,0,0,16,0,6,0,0,0,0,6, ldraw_lib__4_4cyli()],
+  [1,16,-8,0,0,0,16,0,6,0,0,0,0,6, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 10 0 0 0 -1 0 1 0 0 0 0 1 peghole.dat
-  [1,16,10,0,0,0,-1,0,1,0,0,0,0,1, ldraw_lib__peghole()],
+  [1,16,10,0,0,0,-1,0,1,0,0,0,0,1, ldraw_lib__peghole(realsolid)],
 // 1 16 -10 0 0 0 1 0 1 0 0 0 0 1 peghole.dat
-  [1,16,-10,0,0,0,1,0,1,0,0,0,0,1, ldraw_lib__peghole()],
+  [1,16,-10,0,0,0,1,0,1,0,0,0,0,1, ldraw_lib__peghole(realsolid)],
 // 1 16 -10 0 0 0 1 0 2 0 0 0 0 2 4-4ring4.dat
-  [1,16,-10,0,0,0,1,0,2,0,0,0,0,2, ldraw_lib__4_4ring4()],
+  [1,16,-10,0,0,0,1,0,2,0,0,0,0,2, ldraw_lib__4_4ring4(realsolid)],
 // 1 16 10 0 0 0 -1 0 2 0 0 0 0 2 4-4ring4.dat
-  [1,16,10,0,0,0,-1,0,2,0,0,0,0,2, ldraw_lib__4_4ring4()],
+  [1,16,10,0,0,0,-1,0,2,0,0,0,0,2, ldraw_lib__4_4ring4(realsolid)],
 // 1 16 -10 0 0 0 1 0 10 0 0 0 0 10 4-4edge.dat
-  [1,16,-10,0,0,0,1,0,10,0,0,0,0,10, ldraw_lib__4_4edge()],
+  [1,16,-10,0,0,0,1,0,10,0,0,0,0,10, ldraw_lib__4_4edge(realsolid)],
 // 1 16 10 0 0 0 -1 0 10 0 0 0 0 10 4-4edge.dat
-  [1,16,10,0,0,0,-1,0,10,0,0,0,0,10, ldraw_lib__4_4edge()],
+  [1,16,10,0,0,0,-1,0,10,0,0,0,0,10, ldraw_lib__4_4edge(realsolid)],
 // 1 16 -10 0 0 0 20 0 3.83 0 -9.24 9.24 0 3.83 5-8cyli.dat
-  [1,16,-10,0,0,0,20,0,3.83,0,-9.24,9.24,0,3.83, ldraw_lib__5_8cyli()],
+  [1,16,-10,0,0,0,20,0,3.83,0,-9.24,9.24,0,3.83, ldraw_lib__5_8cyli(realsolid)],
 // 1 16 0 12 0 3 0 0 0 -1 0 0 0 3 4-4ring2.dat
-  [1,16,0,12,0,3,0,0,0,-1,0,0,0,3, ldraw_lib__4_4ring2()],
+  [1,16,0,12,0,3,0,0,0,-1,0,0,0,3, ldraw_lib__4_4ring2(realsolid)],
 // 1 16 0 12 0 1 0 0 0 -1 0 0 0 1 axleho10.dat
-  [1,16,0,12,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__axleho10()],
+  [1,16,0,12,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__axleho10(realsolid)],
 // 1 16 0 12 0 9 0 0 0 1 0 0 0 9 4-4edge.dat
-  [1,16,0,12,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4edge()],
+  [1,16,0,12,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4edge(realsolid)],
 // 0
 ];
 module ldraw_lib__s__336s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__336s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__336s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__336s01(line=0.2);

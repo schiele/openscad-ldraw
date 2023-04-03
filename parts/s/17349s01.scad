@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__17349s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__17349s01(realsolid=false) = [
 // 0 ~Minifig Hat Wizard without Brim Front
 // 0 Name: s\17349s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -139,5 +140,5 @@ function ldraw_lib__s__17349s01() = [
   [5,24,10.758,-7.056,7.948,9.467,-10.953,9.8235,10.867,-9.09,4.792,9.603,-5.306,10.783],
 ];
 module ldraw_lib__s__17349s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__17349s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__17349s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__17349s01(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/6636s01.scad>
-function ldraw_lib__6636p06() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6636p06(realsolid=false) = [
 // 0 Tile  1 x  6 with Red/DkRed "HOTEL" Pattern
 // 0 Name: 6636p06.dat
 // 0 Author: Howard Lande [HowardLande]
@@ -17,7 +18,7 @@ function ldraw_lib__6636p06() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\6636s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6636s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6636s01(realsolid)],
 // 0 // Pattern
 // 4 4 0.01 0 4.28 0.01 0 6.02 -5.445 0 6.02 -5.445 0 4.28
   [4,4,0.01,0,4.28,0.01,0,6.02,-5.445,0,6.02,-5.445,0,4.28],
@@ -485,5 +486,5 @@ function ldraw_lib__6636p06() = [
   [3,16,60,0,10,33.77,0,6.6,47.37,0,6.6],
 ];
 module ldraw_lib__6636p06(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6636p06(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6636p06(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6636p06(line=0.2);

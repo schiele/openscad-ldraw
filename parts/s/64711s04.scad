@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__64711s04() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__64711s04(realsolid=false) = [
 // 0 ~Technic Connector Hole Negative Hexagonal
 // 0 Name: s\64711s04.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -51,5 +52,5 @@ function ldraw_lib__s__64711s04() = [
   [3,16,8.315,0,-3.444,11.547,0,0,9,0,0],
 ];
 module ldraw_lib__s__64711s04(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__64711s04(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__64711s04(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__64711s04(line=0.2);

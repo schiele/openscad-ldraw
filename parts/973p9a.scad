@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/1-4cyli.scad>
 use <s/973s01.scad>
-function ldraw_lib__973p9a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__973p9a(realsolid=false) = [
 // 0 Minifig Torso Female Blouse with Buttons, Dark Pink Panel and Name Badge Pattern
 // 0 Name: 973p9a.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -18,9 +19,9 @@ function ldraw_lib__973p9a() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01(realsolid)],
 // 1 0 0 -4 0 4.243 0 -4.243 0 -8 0 -4.243 0 -4.243 1-4cyli.dat
-  [1,0,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli()],
+  [1,0,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli(realsolid)],
 // 4 71 -14.9 26.1 -10 -14.6 24.3 -10 -15.7 16.3 -10 -16.3 28.8 -10
   [4,71,-14.9,26.1,-10,-14.6,24.3,-10,-15.7,16.3,-10,-16.3,28.8,-10],
 // 3 71 -15.7 16.3 -10 -18 30.9 -10 -16.3 28.8 -10
@@ -1063,5 +1064,5 @@ function ldraw_lib__973p9a() = [
   [3,16,0,27,10,19,32,10,-19,32,10],
 ];
 module ldraw_lib__973p9a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__973p9a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__973p9a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__973p9a(line=0.2);

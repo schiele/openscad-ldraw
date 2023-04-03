@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__4106331a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4106331a(realsolid=false) = [
 // 0 Sticker  5.4 x  3.6 with "BANK" Sign
 // 0 Name: 4106331a.dat
 // 0 Author: Willy Tschager [Holly-Wood]
@@ -20,7 +21,7 @@ function ldraw_lib__4106331a() = [
 // 0 // Box
 // 
 // 1 16 0 -.25 0 36 0 0 0 .25 0 0 0 54 box5-12.dat
-  [1,16,0,-.25,0,36,0,0,0,.25,0,0,0,54, ldraw_lib__box5_12()],
+  [1,16,0,-.25,0,36,0,0,0,.25,0,0,0,54, ldraw_lib__box5_12(realsolid)],
 // 
 // 0 BFC NOCLIP
   [0,"BFC","NOCLIP"],
@@ -1089,5 +1090,5 @@ function ldraw_lib__4106331a() = [
   [4,16,18.3,-.25,-50.5,32.7,-.25,-50.5,32.7,-.25,-42.5,18.3,-.25,-42.5],
 ];
 module ldraw_lib__4106331a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4106331a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4106331a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4106331a(line=0.2);

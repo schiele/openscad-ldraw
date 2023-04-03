@@ -3,7 +3,8 @@ use <92198p05.scad>
 use <92241p15c01.scad>
 use <92251p03c01.scad>
 use <92254p02.scad>
-function ldraw_lib__92198p05c05() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__92198p05c05(realsolid=false) = [
 // 0 _Figure Friends Mia with Dark Blue Cropped Trousers, Lime Top with White Stripes, Magenta Helmet
 // 0 Name: 92198p05c05.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -20,14 +21,14 @@ function ldraw_lib__92198p05c05() = [
 // 
 // 
 // 1 272 0 0 0 1 0 0 0 1 0 0 0 1 92251p03c01.dat
-  [1,272,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__92251p03c01()],
+  [1,272,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__92251p03c01(realsolid)],
 // 1 78 0 -64 0 1 0 0 0 1 0 0 0 1 92241p15c01.dat
-  [1,78,0,-64,0,1,0,0,0,1,0,0,0,1, ldraw_lib__92241p15c01()],
+  [1,78,0,-64,0,1,0,0,0,1,0,0,0,1, ldraw_lib__92241p15c01(realsolid)],
 // 1 78 0 -110 3.9 1 0 0 0 1 0 0 0 1 92198p05.dat
-  [1,78,0,-110,3.9,1,0,0,0,1,0,0,0,1, ldraw_lib__92198p05()],
+  [1,78,0,-110,3.9,1,0,0,0,1,0,0,0,1, ldraw_lib__92198p05(realsolid)],
 // 1 320 0 -110 0.9 1 0 0 0 1 0 0 0 1 92254p02.dat
-  [1,320,0,-110,0.9,1,0,0,0,1,0,0,0,1, ldraw_lib__92254p02()],
+  [1,320,0,-110,0.9,1,0,0,0,1,0,0,0,1, ldraw_lib__92254p02(realsolid)],
 ];
 module ldraw_lib__92198p05c05(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__92198p05c05(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__92198p05c05(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__92198p05c05(line=0.2);

@@ -3,7 +3,8 @@ use <../p/4-4con2.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4edge.scad>
 use <../p/stud4.scad>
-function ldraw_lib__18927() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__18927(realsolid=false) = [
 // 0 Minifig Cloth Wrap / Bandana with Rounded Top
 // 0 Name: 18927.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -23,15 +24,15 @@ function ldraw_lib__18927() = [
 // 
 // 
 // 1 16 0 -4 0 8.66667 0 0 0 -1 0 0 0 8.66667 4-4disc.dat
-  [1,16,0,-4,0,8.66667,0,0,0,-1,0,0,0,8.66667, ldraw_lib__4_4disc()],
+  [1,16,0,-4,0,8.66667,0,0,0,-1,0,0,0,8.66667, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 -4 0 8.66667 0 0 0 1 0 0 0 8.66667 4-4edge.dat
-  [1,16,0,-4,0,8.66667,0,0,0,1,0,0,0,8.66667, ldraw_lib__4_4edge()],
+  [1,16,0,-4,0,8.66667,0,0,0,1,0,0,0,8.66667, ldraw_lib__4_4edge(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 3 0 4.33333 0 0 0 -7 0 0 0 4.33333 4-4con2.dat
-  [1,16,0,3,0,4.33333,0,0,0,-7,0,0,0,4.33333, ldraw_lib__4_4con2()],
+  [1,16,0,3,0,4.33333,0,0,0,-7,0,0,0,4.33333, ldraw_lib__4_4con2(realsolid)],
 // 1 16 0 -4 0 -1 0 0 0 -1 0 0 0 1 stud4.dat
-  [1,16,0,-4,0,-1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4()],
+  [1,16,0,-4,0,-1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4(realsolid)],
 // 4 16 13.893 9.807 5.729 10.893 11.737 10.438 11.043 5.521 11.546 13.843 3.783 7.076
   [4,16,13.893,9.807,5.729,10.893,11.737,10.438,11.043,5.521,11.546,13.843,3.783,7.076],
 // 3 16 10.329 5.157 -10.728 9.49 -1.222 -9.938 3.751 4.51 -14.417
@@ -1870,5 +1871,5 @@ function ldraw_lib__18927() = [
   [5,24,-5.062,7.035,15.828,-4.504,12.113,18.388,-3.75,8.149,18.361,-6.075,12.272,14.485],
 ];
 module ldraw_lib__18927(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__18927(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__18927(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__18927(line=0.2);

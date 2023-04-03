@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <stud20.scad>
-function ldraw_lib__stug20_7x1() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__stug20_7x1(realsolid=false) = [
 // 0 Stud Duplo Group  7 x  1
 // 0 Name: stug20-7x1.dat
 // 0 Author: Steffen [Steffen]
@@ -15,20 +16,20 @@ function ldraw_lib__stug20_7x1() = [
 // 
 // 
 // 1 16 0 0 120 1 0 0 0 1 0 0 0 1 stud20.dat
-  [1,16,0,0,120,1,0,0,0,1,0,0,0,1, ldraw_lib__stud20()],
+  [1,16,0,0,120,1,0,0,0,1,0,0,0,1, ldraw_lib__stud20(realsolid)],
 // 1 16 0 0 80 1 0 0 0 1 0 0 0 1 stud20.dat
-  [1,16,0,0,80,1,0,0,0,1,0,0,0,1, ldraw_lib__stud20()],
+  [1,16,0,0,80,1,0,0,0,1,0,0,0,1, ldraw_lib__stud20(realsolid)],
 // 1 16 0 0 40 1 0 0 0 1 0 0 0 1 stud20.dat
-  [1,16,0,0,40,1,0,0,0,1,0,0,0,1, ldraw_lib__stud20()],
+  [1,16,0,0,40,1,0,0,0,1,0,0,0,1, ldraw_lib__stud20(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 stud20.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud20()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud20(realsolid)],
 // 1 16 0 0 -40 1 0 0 0 1 0 0 0 1 stud20.dat
-  [1,16,0,0,-40,1,0,0,0,1,0,0,0,1, ldraw_lib__stud20()],
+  [1,16,0,0,-40,1,0,0,0,1,0,0,0,1, ldraw_lib__stud20(realsolid)],
 // 1 16 0 0 -80 1 0 0 0 1 0 0 0 1 stud20.dat
-  [1,16,0,0,-80,1,0,0,0,1,0,0,0,1, ldraw_lib__stud20()],
+  [1,16,0,0,-80,1,0,0,0,1,0,0,0,1, ldraw_lib__stud20(realsolid)],
 // 1 16 0 0 -120 1 0 0 0 1 0 0 0 1 stud20.dat
-  [1,16,0,0,-120,1,0,0,0,1,0,0,0,1, ldraw_lib__stud20()],
+  [1,16,0,0,-120,1,0,0,0,1,0,0,0,1, ldraw_lib__stud20(realsolid)],
 ];
 module ldraw_lib__stug20_7x1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__stug20_7x1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__stug20_7x1(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__stug20_7x1(line=0.2);

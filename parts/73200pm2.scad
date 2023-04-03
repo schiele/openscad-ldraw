@@ -2,7 +2,8 @@ use <../lib.scad>
 use <3815bpm2.scad>
 use <3816bpm2.scad>
 use <3817bpm2.scad>
-function ldraw_lib__73200pm2() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__73200pm2(realsolid=false) = [
 // 0 Minifig Hips and Legs with LOTR Coat, Shirttails and Belt Pattern
 // 0 Name: 73200pm2.dat
 // 0 Author: Chris Dee [cwdee]
@@ -20,12 +21,12 @@ function ldraw_lib__73200pm2() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 3815bpm2.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3815bpm2()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3815bpm2(realsolid)],
 // 1 16 0 12 0 1 0 0 0 1 0 0 0 1 3816bpm2.dat
-  [1,16,0,12,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3816bpm2()],
+  [1,16,0,12,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3816bpm2(realsolid)],
 // 1 16 0 12 0 1 0 0 0 1 0 0 0 1 3817bpm2.dat
-  [1,16,0,12,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3817bpm2()],
+  [1,16,0,12,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3817bpm2(realsolid)],
 ];
 module ldraw_lib__73200pm2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__73200pm2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__73200pm2(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__73200pm2(line=0.2);

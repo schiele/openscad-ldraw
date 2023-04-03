@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__88704s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__88704s01(realsolid=false) = [
 // 0 ~Minifig Whip Bent Flexible Half
 // 0 Name: s\88704s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -854,5 +855,5 @@ function ldraw_lib__s__88704s01() = [
   [5,24,21.504,-35.928,0,22.75,-34.407,0,21.25,-35.799,1.063,21.25,-35.799,-1.063],
 ];
 module ldraw_lib__s__88704s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__88704s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__88704s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__88704s01(line=0.2);

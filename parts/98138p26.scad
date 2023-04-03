@@ -3,7 +3,8 @@ use <../p/3-4disc.scad>
 use <../p/3-4ndis.scad>
 use <../p/4-4ering.scad>
 use <s/98138s02.scad>
-function ldraw_lib__98138p26() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__98138p26(realsolid=false) = [
 // 0 Tile  1 x  1 Round with Alpaca Face Pattern
 // 0 Name: 98138p26.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -20,17 +21,17 @@ function ldraw_lib__98138p26() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\98138s02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s02(realsolid)],
 // 1 16 0 0 0 10 0 0 0 1 0 0 0 10 4-4ering.dat
-  [1,16,0,0,0,10,0,0,0,1,0,0,0,10, ldraw_lib__4_4ering()],
+  [1,16,0,0,0,10,0,0,0,1,0,0,0,10, ldraw_lib__4_4ering(realsolid)],
 // 1 0 -3.5 0 -2.4 -1.1 0 0 0 1 0 0 0 -1.1 3-4disc.dat
-  [1,0,-3.5,0,-2.4,-1.1,0,0,0,1,0,0,0,-1.1, ldraw_lib__3_4disc()],
+  [1,0,-3.5,0,-2.4,-1.1,0,0,0,1,0,0,0,-1.1, ldraw_lib__3_4disc(realsolid)],
 // 1 0 4.1 0 -2.2 -1.1 0 0 0 1 0 0 0 -1.1 3-4disc.dat
-  [1,0,4.1,0,-2.2,-1.1,0,0,0,1,0,0,0,-1.1, ldraw_lib__3_4disc()],
+  [1,0,4.1,0,-2.2,-1.1,0,0,0,1,0,0,0,-1.1, ldraw_lib__3_4disc(realsolid)],
 // 1 16 -3.5 0 -2.4 -1.1 0 0 0 1 0 0 0 -1.1 3-4ndis.dat
-  [1,16,-3.5,0,-2.4,-1.1,0,0,0,1,0,0,0,-1.1, ldraw_lib__3_4ndis()],
+  [1,16,-3.5,0,-2.4,-1.1,0,0,0,1,0,0,0,-1.1, ldraw_lib__3_4ndis(realsolid)],
 // 1 16 4.1 0 -2.2 -1.1 0 0 0 1 0 0 0 -1.1 3-4ndis.dat
-  [1,16,4.1,0,-2.2,-1.1,0,0,0,1,0,0,0,-1.1, ldraw_lib__3_4ndis()],
+  [1,16,4.1,0,-2.2,-1.1,0,0,0,1,0,0,0,-1.1, ldraw_lib__3_4ndis(realsolid)],
 // 4 0 -4.5 0 -2 -4.6 0 -2.4 -3.5 0 -2.4 -3.5 0 -1.3
   [4,0,-4.5,0,-2,-4.6,0,-2.4,-3.5,0,-2.4,-3.5,0,-1.3],
 // 4 0 -4.5 0 -2 -3.5 0 -1.3 -4.3 0 -1.3 -4.8 0 -2.1
@@ -705,5 +706,5 @@ function ldraw_lib__98138p26() = [
   [3,16,0,0,10,0,0,9,1.17,0,8.92],
 ];
 module ldraw_lib__98138p26(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__98138p26(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__98138p26(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__98138p26(line=0.2);

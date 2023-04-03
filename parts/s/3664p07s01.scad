@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/2-4ering.scad>
-function ldraw_lib__s__3664p07s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__3664p07s01(realsolid=false) = [
 // 0 ~Duplo Brick  2 x  2 x  2 Curved Top with Eye Pattern on Both Sides - Side
 // 0 Name: s\3664p07s01.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -15,7 +16,7 @@ function ldraw_lib__s__3664p07s01() = [
 // 
 // 
 // 1 16 0 -24 0 40 0 0 0 0 -40 0 1 0 2-4ering.dat
-  [1,16,0,-24,0,40,0,0,0,0,-40,0,1,0, ldraw_lib__2_4ering()],
+  [1,16,0,-24,0,40,0,0,0,0,-40,0,1,0, ldraw_lib__2_4ering(realsolid)],
 // 
 // 4 0 20 -2 0 8.91 -6.59 0 8 -2 0 8.91 2.59 0
   [4,0,20,-2,0,8.91,-6.59,0,8,-2,0,8.91,2.59,0],
@@ -127,5 +128,5 @@ function ldraw_lib__s__3664p07s01() = [
   [4,16,16,-20,0,22.891,-18.63,0,15.308,-60.956,0,0,-64,0],
 ];
 module ldraw_lib__s__3664p07s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__3664p07s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__3664p07s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__3664p07s01(line=0.2);

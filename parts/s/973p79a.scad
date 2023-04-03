@@ -2,7 +2,8 @@ use <../../lib.scad>
 use <../../p/1-4rin10.scad>
 use <../../p/2-4disc.scad>
 use <../../p/4-4ring5.scad>
-function ldraw_lib__s__973p79a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__973p79a(realsolid=false) = [
 // 0 ~Lifebelt Logo Pattern
 // 0 Name: s\973p79a.dat
 // 0 Author: Chris Dee [cwdee]
@@ -19,17 +20,17 @@ function ldraw_lib__s__973p79a() = [
 // 
 // 
 // 1 0 0 0 0 0.5 0 0 0 0 0.5 0 1 0 4-4ring5.dat
-  [1,0,0,0,0,0.5,0,0,0,0,0.5,0,1,0, ldraw_lib__4_4ring5()],
+  [1,0,0,0,0,0.5,0,0,0,0,0.5,0,1,0, ldraw_lib__4_4ring5(realsolid)],
 // 1 0 0 0 0 0.5 0 0 0 0 0.5 0 1 0 1-4rin10.dat
-  [1,0,0,0,0,0.5,0,0,0,0,0.5,0,1,0, ldraw_lib__1_4rin10()],
+  [1,0,0,0,0,0.5,0,0,0,0,0.5,0,1,0, ldraw_lib__1_4rin10(realsolid)],
 // 1 0 0 0 0 0 0 -0.5 0.5 0 0 0 1 0 1-4rin10.dat
-  [1,0,0,0,0,0,0,-0.5,0.5,0,0,0,1,0, ldraw_lib__1_4rin10()],
+  [1,0,0,0,0,0,0,-0.5,0.5,0,0,0,1,0, ldraw_lib__1_4rin10(realsolid)],
 // 1 0 0 0 0 -0.5 0 0 0 0 -0.5 0 1 0 1-4rin10.dat
-  [1,0,0,0,0,-0.5,0,0,0,0,-0.5,0,1,0, ldraw_lib__1_4rin10()],
+  [1,0,0,0,0,-0.5,0,0,0,0,-0.5,0,1,0, ldraw_lib__1_4rin10(realsolid)],
 // 1 0 0 0 0 0 0 0.5 -0.5 0 0 0 1 0 1-4rin10.dat
-  [1,0,0,0,0,0,0,0.5,-0.5,0,0,0,1,0, ldraw_lib__1_4rin10()],
+  [1,0,0,0,0,0,0,0.5,-0.5,0,0,0,1,0, ldraw_lib__1_4rin10(realsolid)],
 // 1 15 0 0 0 -2.5 0 0 0 0 -2.5 0 1 0 2-4disc.dat
-  [1,15,0,0,0,-2.5,0,0,0,0,-2.5,0,1,0, ldraw_lib__2_4disc()],
+  [1,15,0,0,0,-2.5,0,0,0,0,-2.5,0,1,0, ldraw_lib__2_4disc(realsolid)],
 // 
 // 3 16 0 2.5 0 -2 0.957 0 2 0.957 0
   [3,16,0,2.5,0,-2,0.957,0,2,0.957,0],
@@ -108,5 +109,5 @@ function ldraw_lib__s__973p79a() = [
   [4,15,-5,0,0,-4.619,-1.913,0,-2.772,-1.148,0,-3,0,0],
 ];
 module ldraw_lib__s__973p79a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__973p79a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__973p79a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__973p79a(line=0.2);

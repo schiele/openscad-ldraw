@@ -5,7 +5,8 @@ use <../p/4-4ndis.scad>
 use <../p/stud2.scad>
 use <../p/stud2a.scad>
 use <../p/stud3.scad>
-function ldraw_lib__15407() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__15407(realsolid=false) = [
 // 0 Minifig Hand Armour with Two Studs
 // 0 Name: 15407.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -24,21 +25,21 @@ function ldraw_lib__15407() = [
 // 
 // 
 // 1 16 0 0 0 0 0 -1 0 1 0 1 0 0 stud2.dat
-  [1,16,0,0,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__stud2()],
+  [1,16,0,0,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__stud2(realsolid)],
 // 1 16 0 3.3 10 0 0 1 0 -3.8 0 -1 0 0 stud3.dat
-  [1,16,0,3.3,10,0,0,1,0,-3.8,0,-1,0,0, ldraw_lib__stud3()],
+  [1,16,0,3.3,10,0,0,1,0,-3.8,0,-1,0,0, ldraw_lib__stud3(realsolid)],
 // 1 16 0 10 -10 0 0 1 1 0 0 0 1 0 stud2a.dat
-  [1,16,0,10,-10,0,0,1,1,0,0,0,1,0, ldraw_lib__stud2a()],
+  [1,16,0,10,-10,0,0,1,1,0,0,0,1,0, ldraw_lib__stud2a(realsolid)],
 // 1 16 0 10 -10 0 0 6 6 0 0 0 1 0 4-4edge.dat
-  [1,16,0,10,-10,0,0,6,6,0,0,0,1,0, ldraw_lib__4_4edge()],
+  [1,16,0,10,-10,0,0,6,6,0,0,0,1,0, ldraw_lib__4_4edge(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 10 -10 0 0 4 4 0 0 0 3 0 4-4cyli.dat
-  [1,16,0,10,-10,0,0,4,4,0,0,0,3,0, ldraw_lib__4_4cyli()],
+  [1,16,0,10,-10,0,0,4,4,0,0,0,3,0, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 10 -7 0 0 4 4 0 0 0 1 0 4-4edge.dat
-  [1,16,0,10,-7,0,0,4,4,0,0,0,1,0, ldraw_lib__4_4edge()],
+  [1,16,0,10,-7,0,0,4,4,0,0,0,1,0, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 10 -7 0 0 4 4 0 0 0 -1 0 4-4ndis.dat
-  [1,16,0,10,-7,0,0,4,4,0,0,0,-1,0, ldraw_lib__4_4ndis()],
+  [1,16,0,10,-7,0,0,4,4,0,0,0,-1,0, ldraw_lib__4_4ndis(realsolid)],
 // 
 // 3 16 -13.996 9.8 11.393 -14.014 9.8 12.512 -13.667 11.209 12.332
   [3,16,-13.996,9.8,11.393,-14.014,9.8,12.512,-13.667,11.209,12.332],
@@ -2000,5 +2001,5 @@ function ldraw_lib__15407() = [
   [2,24,-3.896,3.3,10.525,-3.696,3.579,11.531],
 ];
 module ldraw_lib__15407(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__15407(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__15407(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__15407(line=0.2);

@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/61068s01.scad>
 use <s/88930s01.scad>
-function ldraw_lib__88930pz4() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__88930pz4(realsolid=false) = [
 // 0 Slope Brick Curved  2 x  4 with Underside Studs with Metallic Dark Grey Lines Pattern
 // 0 Name: 88930pz4.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -18,13 +19,13 @@ function ldraw_lib__88930pz4() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\61068s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__61068s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__61068s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\88930s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__88930s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__88930s01(realsolid)],
 // 1 16 20 0 0 1 0 0 0 1 0 0 0 1 s\88930s01.dat
-  [1,16,20,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__88930s01()],
+  [1,16,20,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__88930s01(realsolid)],
 // 1 16 -20 0 0 1 0 0 0 1 0 0 0 1 s\88930s01.dat
-  [1,16,-20,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__88930s01()],
+  [1,16,-20,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__88930s01(realsolid)],
 // 
 // 4 16 5 -15.6377 12.6163 5 -15.8946 18 -5 -15.8946 18 -5 -15.6377 12.6163
   [4,16,5,-15.6377,12.6163,5,-15.8946,18,-5,-15.8946,18,-5,-15.6377,12.6163],
@@ -141,5 +142,5 @@ function ldraw_lib__88930pz4() = [
   [5,24,-40,-3.992816,-20.007718,40,-3.992816,-20.007718,-40,.033552,-24.890572,-40,-7.527664,-14.445904],
 ];
 module ldraw_lib__88930pz4(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__88930pz4(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__88930pz4(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__88930pz4(line=0.2);

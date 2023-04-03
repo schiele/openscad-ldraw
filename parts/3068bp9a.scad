@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3068bs01.scad>
-function ldraw_lib__3068bp9a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3068bp9a(realsolid=false) = [
 // 0 Tile  2 x  2 with Black "x2" Pattern
 // 0 Name: 3068bp9a.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -17,7 +18,7 @@ function ldraw_lib__3068bp9a() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3068bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3068bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3068bs01(realsolid)],
 // 4 0 -12 0 5 -17.6 0 5 -13.6 0 -3 -10 0 0.5
   [4,0,-12,0,5,-17.6,0,5,-13.6,0,-3,-10,0,0.5],
 // 4 0 -13.6 0 -3 -17.9 0 -11.5 -12.3 0 -11.5 -10 0 -6.1
@@ -154,5 +155,5 @@ function ldraw_lib__3068bp9a() = [
   [3,16,14.5,0,0.2,13.1,0,-1.2,15.5,0,-6.4],
 ];
 module ldraw_lib__3068bp9a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3068bp9a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3068bp9a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3068bp9a(line=0.2);

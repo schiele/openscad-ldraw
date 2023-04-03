@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__4613908h() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4613908h(realsolid=false) = [
 // 0 Sticker  3.2 x  1.8 with Hieroglyphs Type 2 (Swords on Bottom)
 // 0 Name: 4613908h.dat
 // 0 Author: Christian Neumann [Wesley]
@@ -21,7 +22,7 @@ function ldraw_lib__4613908h() = [
 // 
 // 
 // 1 16 0 -0.25 0 18 0 0 0 0.25 0 0 0 32.5 box5-12.dat
-  [1,16,0,-0.25,0,18,0,0,0,0.25,0,0,0,32.5, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,18,0,0,0,0.25,0,0,0,32.5, ldraw_lib__box5_12(realsolid)],
 // 4 72 -2.8 -0.25 25.5 -3.45 -0.25 25 -2.9 -0.25 24.8 -1.65 -0.25 25.75
   [4,72,-2.8,-0.25,25.5,-3.45,-0.25,25,-2.9,-0.25,24.8,-1.65,-0.25,25.75],
 // 4 72 -0.55 -0.25 25.45 -1.65 -0.25 25.75 -2.9 -0.25 24.8 -1.55 -0.25 23.45
@@ -1964,5 +1965,5 @@ function ldraw_lib__4613908h() = [
   [4,28,6.25,-0.25,-16.65,4.73,-0.25,-18.91,5,-0.25,-19.99,6.35,-0.25,-23.6],
 ];
 module ldraw_lib__4613908h(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4613908h(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4613908h(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4613908h(line=0.2);

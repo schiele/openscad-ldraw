@@ -3,7 +3,8 @@ use <../p/5-8cyli.scad>
 use <s/3626bs02.scad>
 use <../p/t04o6250.scad>
 use <../p/t16o6250.scad>
-function ldraw_lib__3626bp7a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3626bp7a(realsolid=false) = [
 // 0 Minifig Head with Brown Hair over Eye and Black Eyebrows Pattern
 // 0 Name: 3626bp7a.dat
 // 0 Author: Thomas Burger [grapeape]
@@ -28,25 +29,25 @@ function ldraw_lib__3626bp7a() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3626bs02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626bs02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626bs02(realsolid)],
 // 1 16 0 4 0 -12.01 0 -4.975 0 13 0 -4.975 0 12.01 5-8cyli.dat
-  [1,16,0,4,0,-12.01,0,-4.975,0,13,0,-4.975,0,12.01, ldraw_lib__5_8cyli()],
+  [1,16,0,4,0,-12.01,0,-4.975,0,13,0,-4.975,0,12.01, ldraw_lib__5_8cyli(realsolid)],
 // 1 16 0 4 0 0 0 8 0 -6.4 0 8 0 0 t04o6250.dat
-  [1,16,0,4,0,0,0,8,0,-6.4,0,8,0,0, ldraw_lib__t04o6250()],
+  [1,16,0,4,0,0,0,8,0,-6.4,0,8,0,0, ldraw_lib__t04o6250(realsolid)],
 // 1 16 0 4 0 -8 0 0 0 -6.4 0 0 0 8 t04o6250.dat
-  [1,16,0,4,0,-8,0,0,0,-6.4,0,0,0,8, ldraw_lib__t04o6250()],
+  [1,16,0,4,0,-8,0,0,0,-6.4,0,0,0,8, ldraw_lib__t04o6250(realsolid)],
 // 1 16 0 17 0 0 0 -8 0 6.4 0 8 0 0 t04o6250.dat
-  [1,16,0,17,0,0,0,-8,0,6.4,0,8,0,0, ldraw_lib__t04o6250()],
+  [1,16,0,17,0,0,0,-8,0,6.4,0,8,0,0, ldraw_lib__t04o6250(realsolid)],
 // 1 16 0 17 0 8 0 0 0 6.4 0 0 0 8 t04o6250.dat
-  [1,16,0,17,0,8,0,0,0,6.4,0,0,0,8, ldraw_lib__t04o6250()],
+  [1,16,0,17,0,8,0,0,0,6.4,0,0,0,8, ldraw_lib__t04o6250(realsolid)],
 // 1 16 0 4 0 -8 0 0 0 -6.4 0 0 0 -8 t16o6250.dat
-  [1,16,0,4,0,-8,0,0,0,-6.4,0,0,0,-8, ldraw_lib__t16o6250()],
+  [1,16,0,4,0,-8,0,0,0,-6.4,0,0,0,-8, ldraw_lib__t16o6250(realsolid)],
 // 1 16 0 4 0 8 0 0 0 -6.4 0 0 0 -8 t16o6250.dat
-  [1,16,0,4,0,8,0,0,0,-6.4,0,0,0,-8, ldraw_lib__t16o6250()],
+  [1,16,0,4,0,8,0,0,0,-6.4,0,0,0,-8, ldraw_lib__t16o6250(realsolid)],
 // 1 16 0 17 0 0 0 8 0 6.4 0 -8 0 0 t04o6250.dat
-  [1,16,0,17,0,0,0,8,0,6.4,0,-8,0,0, ldraw_lib__t04o6250()],
+  [1,16,0,17,0,0,0,8,0,6.4,0,-8,0,0, ldraw_lib__t04o6250(realsolid)],
 // 1 16 0 17 0 -8 0 0 0 6.4 0 0 0 -8 t04o6250.dat
-  [1,16,0,17,0,-8,0,0,0,6.4,0,0,0,-8, ldraw_lib__t04o6250()],
+  [1,16,0,17,0,-8,0,0,0,6.4,0,0,0,-8, ldraw_lib__t04o6250(realsolid)],
 // 0 // Pattern
 // 4 0 1.47 8.84 -12.708 1.44 8.94 -12.714 1.49 9.05 -12.704 1.62 8.7 -12.678
   [4,0,1.47,8.84,-12.708,1.44,8.94,-12.714,1.49,9.05,-12.704,1.62,8.7,-12.678],
@@ -975,5 +976,5 @@ function ldraw_lib__3626bp7a() = [
   [5,24,4.975,4,-12.01,0,4,-13,4.975,5.657,-12.01,4.83,2.469,-11.659],
 ];
 module ldraw_lib__3626bp7a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3626bp7a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3626bp7a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3626bp7a(line=0.2);

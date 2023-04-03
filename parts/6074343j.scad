@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__6074343j() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6074343j(realsolid=false) = [
 // 0 Sticker  1.4 x  2.6 with Classic Space Logo
 // 0 Name: 6074343j.dat
 // 0 Author: Christophe Mitillo [Christophe_Mitillo]
@@ -822,5 +823,5 @@ function ldraw_lib__6074343j() = [
   [5,24,-12.092,0,5.806,-12.092,-0.25,5.806,-10.724,0,8.07,-12.991,0,3.317],
 ];
 module ldraw_lib__6074343j(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6074343j(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6074343j(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6074343j(line=0.2);

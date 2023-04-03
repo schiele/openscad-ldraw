@@ -4,7 +4,8 @@ use <../p/48/4-4rin10.scad>
 use <../p/48/4-4rin11.scad>
 use <../p/48/4-4ring6.scad>
 use <s/4066bs01.scad>
-function ldraw_lib__4066bp18() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4066bp18(realsolid=false) = [
 // 0 Duplo Brick  1 x  2 x  2 with Road Sign Speed Limit 50 Pattern
 // 0 Name: 4066bp18.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -22,15 +23,15 @@ function ldraw_lib__4066bp18() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4066bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4066bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4066bs01(realsolid)],
 // 1 0 0 37 -20 2 0 0 0 0 -2 0 1 0 48\4-4rin10.dat
-  [1,0,0,37,-20,2,0,0,0,0,-2,0,1,0, ldraw_lib__48__4_4rin10()],
+  [1,0,0,37,-20,2,0,0,0,0,-2,0,1,0, ldraw_lib__48__4_4rin10(realsolid)],
 // 1 4 0 37 -20 2 0 0 0 0 -2 0 1 0 48\4-4rin11.dat
-  [1,4,0,37,-20,2,0,0,0,0,-2,0,1,0, ldraw_lib__48__4_4rin11()],
+  [1,4,0,37,-20,2,0,0,0,0,-2,0,1,0, ldraw_lib__48__4_4rin11(realsolid)],
 // 1 4 0 37 -20 4 0 0 0 0 -4 0 1 0 48\4-4ring6.dat
-  [1,4,0,37,-20,4,0,0,0,0,-4,0,1,0, ldraw_lib__48__4_4ring6()],
+  [1,4,0,37,-20,4,0,0,0,0,-4,0,1,0, ldraw_lib__48__4_4ring6(realsolid)],
 // 1 16 0 37 -20 30 0 0 0 0 -30 0 1 0 48\2-4ndis.dat
-  [1,16,0,37,-20,30,0,0,0,0,-30,0,1,0, ldraw_lib__48__2_4ndis()],
+  [1,16,0,37,-20,30,0,0,0,0,-30,0,1,0, ldraw_lib__48__2_4ndis(realsolid)],
 // 4 0 -12.45 44.78 -20 -9.8 42.61 -20 -10.36 41.8 -20 -13.41 43.67 -20
   [4,0,-12.45,44.78,-20,-9.8,42.61,-20,-10.36,41.8,-20,-13.41,43.67,-20],
 // 4 0 -14.01 42.32 -20 -13.41 43.67 -20 -10.36 41.8 -20 -10.62 40.71 -20
@@ -455,5 +456,5 @@ function ldraw_lib__4066bp18() = [
   [3,16,40,0,-20,30,7,-20,30,37,-20],
 ];
 module ldraw_lib__4066bp18(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4066bp18(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4066bp18(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4066bp18(line=0.2);

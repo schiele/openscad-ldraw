@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__13808s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__13808s02(realsolid=false) = [
 // 0 ~Minifig Saxophone - Mouthpiece
 // 0 Name: s\13808s02.dat
 // 0 Author: Stan Isachenko [angmarec]
@@ -566,5 +567,5 @@ function ldraw_lib__s__13808s02() = [
   [5,24,0,-50.29,14.362,1.403,-50.563,14.09,1.575,-50.216,14.24,0.764,-51.049,13.88],
 ];
 module ldraw_lib__s__13808s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__13808s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__13808s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__13808s02(line=0.2);

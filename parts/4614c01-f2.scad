@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <4614.scad>
 use <4615.scad>
-function ldraw_lib__4614c01_f2() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4614c01_f2(realsolid=false) = [
 // 0 Fabuland Jack (Raised)
 // 0 Name: 4614c01-f2.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -20,10 +21,10 @@ function ldraw_lib__4614c01_f2() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 4614.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4614()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4614(realsolid)],
 // 1 16 0 -14 0 1 0 0 0 -0.17365 -0.98481 0 0.98481 -0.17365 4615.dat
-  [1,16,0,-14,0,1,0,0,0,-0.17365,-0.98481,0,0.98481,-0.17365, ldraw_lib__4615()],
+  [1,16,0,-14,0,1,0,0,0,-0.17365,-0.98481,0,0.98481,-0.17365, ldraw_lib__4615(realsolid)],
 ];
 module ldraw_lib__4614c01_f2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4614c01_f2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4614c01_f2(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4614c01_f2(line=0.2);

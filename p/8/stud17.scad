@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__8__stud17() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__8__stud17(realsolid=false) = [
 // 0 Stud Open For Octagonal Parts (Fast-Draw)
 // 0 Name: 8\stud17.dat
 // 0 Author: Rolf Osterthun [Rolf]
@@ -167,5 +168,5 @@ function ldraw_lib__8__stud17() = [
   [5,24,-4.2,-4,-4.2,-4.2,0,-4.2,-6,-4,0,0,-4,-6],
 ];
 module ldraw_lib__8__stud17(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__8__stud17(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__8__stud17(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__8__stud17(line=0.2);

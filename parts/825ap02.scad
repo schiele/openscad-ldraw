@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/825ap02s01.scad>
 use <../p/stud.scad>
-function ldraw_lib__825ap02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__825ap02(realsolid=false) = [
 // 0 Door  1 x  3 x  4 Left with Vertical Handle with Red Cross on Upper Section and White Lower Section Pattern
 // 0 Name: 825ap02.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -18,10 +19,10 @@ function ldraw_lib__825ap02() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\825ap02s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__825ap02s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__825ap02s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 stud.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud(realsolid)],
 ];
 module ldraw_lib__825ap02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__825ap02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__825ap02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__825ap02(line=0.2);

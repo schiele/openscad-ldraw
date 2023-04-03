@@ -2,7 +2,8 @@ use <../../lib.scad>
 use <../../p/4-4con16.scad>
 use <../../p/4-4cyli.scad>
 use <../../p/4-4edge.scad>
-function ldraw_lib__s__6941s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__6941s01(realsolid=false) = [
 // 0 ~Stud Tube Conical Extension
 // 0 Name: s\6941s01.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -17,15 +18,15 @@ function ldraw_lib__s__6941s01() = [
 // 
 // 
 // 1 16 0 0 0 0.5 0 0 0 1 0 0 0 0.5 4-4con16.dat
-  [1,16,0,0,0,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__4_4con16()],
+  [1,16,0,0,0,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__4_4con16(realsolid)],
 // 1 16 0 0 0 8.5 0 0 0 -4 0 0 0 8.5 4-4edge.dat
-  [1,16,0,0,0,8.5,0,0,0,-4,0,0,0,8.5, ldraw_lib__4_4edge()],
+  [1,16,0,0,0,8.5,0,0,0,-4,0,0,0,8.5, ldraw_lib__4_4edge(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 0 6 0 0 0 1 0 0 0 6 4-4cyli.dat
-  [1,16,0,0,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4cyli()],
+  [1,16,0,0,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 0 0 6 0 0 0 1 0 0 0 6 4-4edge.dat
-  [1,16,0,0,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4edge()],
+  [1,16,0,0,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4edge(realsolid)],
 // 
 // 5 24 -5.6568 1 5.6568 -3.0616 1 7.3912 -3.0616 2 7.3912 -6.01035 0 6.01035
   [5,24,-5.6568,1,5.6568,-3.0616,1,7.3912,-3.0616,2,7.3912,-6.01035,0,6.01035],
@@ -61,5 +62,5 @@ function ldraw_lib__s__6941s01() = [
   [5,24,-7.3912,1,3.0616,-5.6568,1,5.6568,-7.85315,0,3.25295,-5.6568,2,5.6568],
 ];
 module ldraw_lib__s__6941s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__6941s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__6941s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__6941s01(line=0.2);

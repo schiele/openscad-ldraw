@@ -5,7 +5,8 @@ use <s/973p37b.scad>
 use <s/973p37c.scad>
 use <s/973p37d.scad>
 use <s/973s01.scad>
-function ldraw_lib__973p3s() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__973p3s(realsolid=false) = [
 // 0 Minifig Torso with Red Imperial Guard Officer Pattern
 // 0 Name: 973p3s.dat
 // 0 Author: Chris Dee [cwdee]
@@ -32,18 +33,18 @@ function ldraw_lib__973p3s() = [
 // 4 16 19 32 10 19 29 10 -19 29 10 -19 32 10
   [4,16,19,32,10,19,29,10,-19,29,10,-19,32,10],
 // 1 0 0 -4 0 4.243 0 -4.243 0 -8 0 -4.243 0 -4.243 1-4cyli.dat
-  [1,0,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli()],
+  [1,0,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01(realsolid)],
 // 1 80 0 0 0 1 0 0 0 1 0 0 0 1 s\973p37a.dat
-  [1,80,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973p37a()],
+  [1,80,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973p37a(realsolid)],
 // 1 82 0 0 0 1 0 0 0 1 0 0 0 1 s\973p37b.dat
-  [1,82,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973p37b()],
+  [1,82,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973p37b(realsolid)],
 // 1 4 0 0 0 1 0 0 0 1 0 0 0 1 s\973p37c.dat
-  [1,4,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973p37c()],
+  [1,4,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973p37c(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973p37d.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973p37d()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973p37d(realsolid)],
 ];
 module ldraw_lib__973p3s(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__973p3s(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__973p3s(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__973p3s(line=0.2);

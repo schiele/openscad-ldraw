@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <75902p02.scad>
-function ldraw_lib__10532() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__10532(realsolid=false) = [
 // 0 =Minifig Shield Round Bowed with Bullseye with Star Pattern
 // 0 Name: 10532.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -19,8 +20,8 @@ function ldraw_lib__10532() = [
 // 0 // Alias of 75902p02
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 75902p02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__75902p02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__75902p02(realsolid)],
 ];
 module ldraw_lib__10532(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__10532(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__10532(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__10532(line=0.2);

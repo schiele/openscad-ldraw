@@ -2,7 +2,8 @@ use <../../lib.scad>
 use <../../p/48/1-6cyli.scad>
 use <../../p/48/1-6cylo.scad>
 use <../../p/48/1-6edge.scad>
-function ldraw_lib__s__11140s03() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__11140s03(realsolid=false) = [
 // 0 ~Wheel Rim 26 x 7 with Rip Cord Gear Axle - Groove 1/6
 // 0 Name: s\11140s03.dat
 // 0 Author: Ingolf Weisheit [stahlwollschaf]
@@ -22,9 +23,9 @@ function ldraw_lib__s__11140s03() = [
 // 0 // inner groove: r=27.875, R=29.375, h/2=2.5
 // 
 // 1 16 0 0 0 0 0 -27.875 -27.875 0 0 0 -2.5 0 48\1-6cyli.dat
-  [1,16,0,0,0,0,0,-27.875,-27.875,0,0,0,-2.5,0, ldraw_lib__48__1_6cyli()],
+  [1,16,0,0,0,0,0,-27.875,-27.875,0,0,0,-2.5,0, ldraw_lib__48__1_6cyli(realsolid)],
 // 1 16 0 0 -2.5 0 0 -27.875 -27.875 0 0 0 1 0 48\1-6edge.dat
-  [1,16,0,0,-2.5,0,0,-27.875,-27.875,0,0,0,1,0, ldraw_lib__48__1_6edge()],
+  [1,16,0,0,-2.5,0,0,-27.875,-27.875,0,0,0,1,0, ldraw_lib__48__1_6edge(realsolid)],
 // 4 16 0 -27.875 -2.5 -3.6384 -27.6365 -2.5 -3.8342 -29.1237 -2.5 0 -29.375 -2.5
   [4,16,0,-27.875,-2.5,-3.6384,-27.6365,-2.5,-3.8342,-29.1237,-2.5,0,-29.375,-2.5],
 // 4 16 -3.6384 -27.6365 -2.5 -7.2146 -26.9252 -2.5 -7.6028 -28.3741 -2.5 -3.8342 -29.1237 -2.5
@@ -42,7 +43,7 @@ function ldraw_lib__s__11140s03() = [
 // 4 16 -22.1147 -16.9692 -2.5 -24.1405 -13.9375 -2.5 -25.4395 -14.6875 -2.5 -23.3048 -17.8824 -2.5
   [4,16,-22.1147,-16.9692,-2.5,-24.1405,-13.9375,-2.5,-25.4395,-14.6875,-2.5,-23.3048,-17.8824,-2.5],
 // 1 16 0 0 -2.5 0 0 -29.375 -29.375 0 0 0 -1 0 48\1-6edge.dat
-  [1,16,0,0,-2.5,0,0,-29.375,-29.375,0,0,0,-1,0, ldraw_lib__48__1_6edge()],
+  [1,16,0,0,-2.5,0,0,-29.375,-29.375,0,0,0,-1,0, ldraw_lib__48__1_6edge(realsolid)],
 // 
 // 0 // cone to outer cylinder
 // 0 // r=29.875, R=33.125, h=3.75
@@ -83,9 +84,9 @@ function ldraw_lib__s__11140s03() = [
 // 
 // 0 // outer cylinder, r=33.125
 // 1 16 0 0 -8.75 0 0 -33.125 -33.125 0 0 0 2.5 0 48\1-6cylo.dat
-  [1,16,0,0,-8.75,0,0,-33.125,-33.125,0,0,0,2.5,0, ldraw_lib__48__1_6cylo()],
+  [1,16,0,0,-8.75,0,0,-33.125,-33.125,0,0,0,2.5,0, ldraw_lib__48__1_6cylo(realsolid)],
 // 
 ];
 module ldraw_lib__s__11140s03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__11140s03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__11140s03(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__11140s03(line=0.2);

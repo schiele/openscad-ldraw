@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/stud4od.scad>
-function ldraw_lib__s__15284s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__15284s02(realsolid=false) = [
 // 0 ~Figure Friends Hair Long with Ponytail
 // 0 Name: s\15284s02.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -17,7 +18,7 @@ function ldraw_lib__s__15284s02() = [
 // 
 // 
 // 1 16 0 -5.224 0 1 0 0 0 -1.306 0 0 0 1 stud4od.dat
-  [1,16,0,-5.224,0,1,0,0,0,-1.306,0,0,0,1, ldraw_lib__stud4od()],
+  [1,16,0,-5.224,0,1,0,0,0,-1.306,0,0,0,1, ldraw_lib__stud4od(realsolid)],
 // 4 16 10.404 0.715 5.46 11.75 0.715 0 8 0 0 7.3912 0 3.0616
   [4,16,10.404,0.715,5.46,11.75,0.715,0,8,0,0,7.3912,0,3.0616],
 // 4 16 10.404 0.715 -5.46 7.3912 0 -3.0616 8 0 0 11.75 0.715 0
@@ -5534,5 +5535,5 @@ function ldraw_lib__s__15284s02() = [
   [5,24,14.627,1.307,3.632,12.834,-3.023,5.8,14.596,-0.053,1.106,12.635,-1.447,7.369],
 ];
 module ldraw_lib__s__15284s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__15284s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__15284s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__15284s02(line=0.2);

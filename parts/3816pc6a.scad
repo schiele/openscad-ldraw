@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3816s02.scad>
-function ldraw_lib__3816pc6a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3816pc6a(realsolid=false) = [
 // 0 ~Minifig Leg Right with Red Roman Tunic and Belt Pattern (Obsolete)
 // 0 Name: 3816pc6a.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -19,7 +20,7 @@ function ldraw_lib__3816pc6a() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3816s02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3816s02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3816s02(realsolid)],
 // 0 // outer side surface
 // 4 16 -19.5 28 -11 -19.46 27 -11 -19.459 26.999 9 -19.5 28 9
   [4,16,-19.5,28,-11,-19.46,27,-11,-19.459,26.999,9,-19.5,28,9],
@@ -596,5 +597,5 @@ function ldraw_lib__3816pc6a() = [
   [4,4,-2,-6.3,-6.3,-2.3,-6.3,-6.3,-2.248,-3.42,-8.28,-2,-3.42,-8.28],
 ];
 module ldraw_lib__3816pc6a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3816pc6a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3816pc6a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3816pc6a(line=0.2);

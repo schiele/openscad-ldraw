@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__48__1_4ring96() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__48__1_4ring96(realsolid=false) = [
 // 0 Hi-Res Ring 96 x 0.25
 // 0 Name: 48\1-4ring96.dat
 // 0 Author: Santeri Piippo [arezey]
@@ -40,5 +41,5 @@ function ldraw_lib__48__1_4ring96() = [
 // 0 // Build by Primitive Generator 2
 ];
 module ldraw_lib__48__1_4ring96(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__48__1_4ring96(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__48__1_4ring96(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__48__1_4ring96(line=0.2);

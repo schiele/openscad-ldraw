@@ -6,7 +6,8 @@ use <2-4cyli.scad>
 use <2-4edge.scad>
 use <2-4ring3.scad>
 use <4-4edge.scad>
-function ldraw_lib__peghole6() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__peghole6(realsolid=false) = [
 // 0 Peg Hole End Extended
 // 0 Name: peghole6.dat
 // 0 Author: Kevin Roach [KROACH]
@@ -23,21 +24,21 @@ function ldraw_lib__peghole6() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 0 8 0 0 0 2 0 0 0 8 2-4cyli.dat
-  [1,16,0,0,0,8,0,0,0,2,0,0,0,8, ldraw_lib__2_4cyli()],
+  [1,16,0,0,0,8,0,0,0,2,0,0,0,8, ldraw_lib__2_4cyli(realsolid)],
 // 1 16 0 0 0 8 0 0 0 1 0 0 0 8 2-4edge.dat
-  [1,16,0,0,0,8,0,0,0,1,0,0,0,8, ldraw_lib__2_4edge()],
+  [1,16,0,0,0,8,0,0,0,1,0,0,0,8, ldraw_lib__2_4edge(realsolid)],
 // 1 16 0 2 0 8 0 0 0 1 0 0 0 8 2-4edge.dat
-  [1,16,0,2,0,8,0,0,0,1,0,0,0,8, ldraw_lib__2_4edge()],
+  [1,16,0,2,0,8,0,0,0,1,0,0,0,8, ldraw_lib__2_4edge(realsolid)],
 // 1 16 0 2 0 6 0 0 0 1 0 0 0 6 4-4edge.dat
-  [1,16,0,2,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4edge()],
+  [1,16,0,2,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 2 0 6 0 0 0 1 0 0 0 -6 1-4ndis.dat
-  [1,16,0,2,0,6,0,0,0,1,0,0,0,-6, ldraw_lib__1_4ndis()],
+  [1,16,0,2,0,6,0,0,0,1,0,0,0,-6, ldraw_lib__1_4ndis(realsolid)],
 // 1 16 0 2 0 2 0 0 0 1 0 0 0 2 2-4ring3.dat
-  [1,16,0,2,0,2,0,0,0,1,0,0,0,2, ldraw_lib__2_4ring3()],
+  [1,16,0,2,0,2,0,0,0,1,0,0,0,2, ldraw_lib__2_4ring3(realsolid)],
 // 1 16 0 2 0 -3 0 0 0 1 0 0 0 -3 1-4ring2.dat
-  [1,16,0,2,0,-3,0,0,0,1,0,0,0,-3, ldraw_lib__1_4ring2()],
+  [1,16,0,2,0,-3,0,0,0,1,0,0,0,-3, ldraw_lib__1_4ring2(realsolid)],
 // 1 16 0 2 0 -9 0 0 0 1 0 0 0 -9 1-4edge.dat
-  [1,16,0,2,0,-9,0,0,0,1,0,0,0,-9, ldraw_lib__1_4edge()],
+  [1,16,0,2,0,-9,0,0,0,1,0,0,0,-9, ldraw_lib__1_4edge(realsolid)],
 // 4 16 6 2 -6 8 2 -9 8 2 0 6 2 0
   [4,16,6,2,-6,8,2,-9,8,2,0,6,2,0],
 // 4 16 6 2 -6 0 2 -6 0 2 -9 8 2 -9
@@ -55,5 +56,5 @@ function ldraw_lib__peghole6() = [
   [2,24,8,0,-9,8,2,-9],
 ];
 module ldraw_lib__peghole6(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__peghole6(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__peghole6(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__peghole6(line=0.2);

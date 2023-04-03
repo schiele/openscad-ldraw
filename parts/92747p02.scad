@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/92747s01.scad>
-function ldraw_lib__92747p02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__92747p02(realsolid=false) = [
 // 0 Minifig Shield Oval with Lime and White Circles, Dark Purple Arrows and Lines Pattern
 // 0 Name: 92747p02.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -18,7 +19,7 @@ function ldraw_lib__92747p02() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\92747s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__92747s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__92747s01(realsolid)],
 // 0 BFC NOCLIP
   [0,"BFC","NOCLIP"],
 // 4 85 -3.971 11.4 -8 -3.895 10.625 -8 -4.648 10.475 -8 -4.739 11.4 -8
@@ -1039,5 +1040,5 @@ function ldraw_lib__92747p02() = [
   [3,16,-12.32,-14.129,-8,-11.2,-14.239,-8,-15.685,-21.1,-8],
 ];
 module ldraw_lib__92747p02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__92747p02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__92747p02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__92747p02(line=0.2);

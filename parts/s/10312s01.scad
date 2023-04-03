@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <10312s02.scad>
-function ldraw_lib__s__10312s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__10312s01(realsolid=false) = [
 // 0 ~Windscreen  6 x 10 x  3 Ovoid with  1 x  2 x  1 Cutout without Outer Surface
 // 0 Name: s\10312s01.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -15,13 +16,13 @@ function ldraw_lib__s__10312s01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\10312s02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__10312s02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__10312s02(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 -1 s\10312s02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__10312s02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__10312s02(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\10312s02.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__10312s02()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__10312s02(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 -1 s\10312s02.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__10312s02()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__10312s02(realsolid)],
 // 
 // 0 // DOME INNER LAT
 // 5 24 0 -33.526875 -51.969375 0 -26.5575 -54.331875 25.62 -33.04264469 -50.80036433 -25.62 -33.04264469 -50.80036433
@@ -103,5 +104,5 @@ function ldraw_lib__s__10312s01() = [
   [5,24,84,-53.9631,0,96.25,-49.487,0,86,-52.9028,-5,84,-53.7654,3],
 ];
 module ldraw_lib__s__10312s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__10312s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__10312s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__10312s01(line=0.2);

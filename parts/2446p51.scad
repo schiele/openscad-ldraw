@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/2446s01.scad>
-function ldraw_lib__2446p51() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2446p51(realsolid=false) = [
 // 0 Minifig Helmet Modern with Black, Blue and Silver Unitron Pattern
 // 0 Name: 2446p51.dat
 // 0 Author: Damien Roux [Darats]
@@ -17,7 +18,7 @@ function ldraw_lib__2446p51() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2446s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2446s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2446s01(realsolid)],
 // 0 // Top
 // 4 0 -12.9853 -1.56536 3.18474 -13.1229 -1.86668 1.41943 -12.2095 -3.35488 0.70271 -11.992 -2.83914 3.6338
   [4,0,-12.9853,-1.56536,3.18474,-13.1229,-1.86668,1.41943,-12.2095,-3.35488,0.70271,-11.992,-2.83914,3.6338],
@@ -2378,5 +2379,5 @@ function ldraw_lib__2446p51() = [
   [5,24,15.1,4.778,4.157,14.783,6.5,6.12,15.4,6.5,4.5,13.656,0.377,5.657],
 ];
 module ldraw_lib__2446p51(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2446p51(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2446p51(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2446p51(line=0.2);

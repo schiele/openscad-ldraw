@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__4614415d() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4614415d(realsolid=false) = [
 // 0 Sticker  0.7 x  3.7 with Black "H-VW 1962"
 // 0 Name: 4614415d.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -17,7 +18,7 @@ function ldraw_lib__4614415d() = [
 // 
 // 
 // 1 16 0 -0.25 0 37.5 0 0 0 0.25 0 0 0 7.5 box5-12.dat
-  [1,16,0,-0.25,0,37.5,0,0,0,0.25,0,0,0,7.5, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,37.5,0,0,0,0.25,0,0,0,7.5, ldraw_lib__box5_12(realsolid)],
 // 
 // 4 0 -37.5 -0.25 7.5 -37.5 -0.25 -7.5 -36 -0.25 -6 -36 -0.25 6
   [4,0,-37.5,-0.25,7.5,-37.5,-0.25,-7.5,-36,-0.25,-6,-36,-0.25,6],
@@ -459,5 +460,5 @@ function ldraw_lib__4614415d() = [
   [3,0,20,-0.25,-6,37.5,-0.25,-7.5,36,-0.25,-6],
 ];
 module ldraw_lib__4614415d(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4614415d(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4614415d(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4614415d(line=0.2);

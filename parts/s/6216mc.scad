@@ -3,7 +3,8 @@ use <../../p/4-4cyli.scad>
 use <../../p/4-4disc.scad>
 use <../../p/4-4edge.scad>
 use <../../p/axle.scad>
-function ldraw_lib__s__6216mc() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__6216mc(realsolid=false) = [
 // 0 ~Electric Technic Motor  4.5V Shaft
 // 0 Name: s\6216mc.dat
 // 0 Author: Chris Dee [cwdee]
@@ -19,29 +20,29 @@ function ldraw_lib__s__6216mc() = [
 // 
 // 
 // 1 383 0 26 -59 2 0 0 0 0 2 0 106 0 4-4cyli.dat
-  [1,383,0,26,-59,2,0,0,0,0,2,0,106,0, ldraw_lib__4_4cyli()],
+  [1,383,0,26,-59,2,0,0,0,0,2,0,106,0, ldraw_lib__4_4cyli(realsolid)],
 // 1 383 0 26 -59 2 0 0 0 0 2 0 1 0 4-4disc.dat
-  [1,383,0,26,-59,2,0,0,0,0,2,0,1,0, ldraw_lib__4_4disc()],
+  [1,383,0,26,-59,2,0,0,0,0,2,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 383 0 26 -59 2 0 0 0 0 2 0 1 0 4-4edge.dat
-  [1,383,0,26,-59,2,0,0,0,0,2,0,1,0, ldraw_lib__4_4edge()],
+  [1,383,0,26,-59,2,0,0,0,0,2,0,1,0, ldraw_lib__4_4edge(realsolid)],
 // 1 383 0 26 47 2 0 0 0 0 2 0 1 0 4-4disc.dat
-  [1,383,0,26,47,2,0,0,0,0,2,0,1,0, ldraw_lib__4_4disc()],
+  [1,383,0,26,47,2,0,0,0,0,2,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 383 0 26 47 2 0 0 0 0 2 0 1 0 4-4edge.dat
-  [1,383,0,26,47,2,0,0,0,0,2,0,1,0, ldraw_lib__4_4edge()],
+  [1,383,0,26,47,2,0,0,0,0,2,0,1,0, ldraw_lib__4_4edge(realsolid)],
 // 1 0 0 26 -59 1 0 0 0 0 1 0 11 0 axle.dat
-  [1,0,0,26,-59,1,0,0,0,0,1,0,11,0, ldraw_lib__axle()],
+  [1,0,0,26,-59,1,0,0,0,0,1,0,11,0, ldraw_lib__axle(realsolid)],
 // 1 0 0 26 -43 1 0 0 0 0 1 0 3 0 axle.dat
-  [1,0,0,26,-43,1,0,0,0,0,1,0,3,0, ldraw_lib__axle()],
+  [1,0,0,26,-43,1,0,0,0,0,1,0,3,0, ldraw_lib__axle(realsolid)],
 // 1 0 0 26 -40 6 0 0 0 0 6 0 1 0 4-4disc.dat
-  [1,0,0,26,-40,6,0,0,0,0,6,0,1,0, ldraw_lib__4_4disc()],
+  [1,0,0,26,-40,6,0,0,0,0,6,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 0 0 26 -48 2.5 0 0 0 0 2.5 0 5 0 4-4cyli.dat
-  [1,0,0,26,-48,2.5,0,0,0,0,2.5,0,5,0, ldraw_lib__4_4cyli()],
+  [1,0,0,26,-48,2.5,0,0,0,0,2.5,0,5,0, ldraw_lib__4_4cyli(realsolid)],
 // 1 0 0 26 -48 2.5 0 0 0 0 2.5 0 1 0 4-4edge.dat
-  [1,0,0,26,-48,2.5,0,0,0,0,2.5,0,1,0, ldraw_lib__4_4edge()],
+  [1,0,0,26,-48,2.5,0,0,0,0,2.5,0,1,0, ldraw_lib__4_4edge(realsolid)],
 // 1 0 0 26 -43 2.5 0 0 0 0 2.5 0 1 0 4-4edge.dat
-  [1,0,0,26,-43,2.5,0,0,0,0,2.5,0,1,0, ldraw_lib__4_4edge()],
+  [1,0,0,26,-43,2.5,0,0,0,0,2.5,0,1,0, ldraw_lib__4_4edge(realsolid)],
 // 0
 ];
 module ldraw_lib__s__6216mc(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__6216mc(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__6216mc(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__6216mc(line=0.2);

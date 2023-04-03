@@ -2,7 +2,8 @@ use <../lib.scad>
 use <766a.scad>
 use <u9019.scad>
 use <u9020.scad>
-function ldraw_lib__70423() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__70423(realsolid=false) = [
 // 0 Electric Plug (Type 4) Twin with Centre Plastic Pin (Complete)
 // 0 Name: 70423.dat
 // 0 Author: Chris Dee [cwdee]
@@ -28,16 +29,16 @@ function ldraw_lib__70423() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 766a.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__766a()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__766a(realsolid)],
 // 1 494 10 0 22 1 0 0 0 1 0 0 0 1 u9019.dat
-  [1,494,10,0,22,1,0,0,0,1,0,0,0,1, ldraw_lib__u9019()],
+  [1,494,10,0,22,1,0,0,0,1,0,0,0,1, ldraw_lib__u9019(realsolid)],
 // 1 494 10 -6 17 0.707 0 -0.707 0 1 0 0.707 0 0.707 u9020.dat
-  [1,494,10,-6,17,0.707,0,-0.707,0,1,0,0.707,0,0.707, ldraw_lib__u9020()],
+  [1,494,10,-6,17,0.707,0,-0.707,0,1,0,0.707,0,0.707, ldraw_lib__u9020(realsolid)],
 // 1 494 -10 0 22 1 0 0 0 1 0 0 0 1 u9019.dat
-  [1,494,-10,0,22,1,0,0,0,1,0,0,0,1, ldraw_lib__u9019()],
+  [1,494,-10,0,22,1,0,0,0,1,0,0,0,1, ldraw_lib__u9019(realsolid)],
 // 1 494 -10 -6 17 0.707 0 -0.707 0 1 0 0.707 0 0.707 u9020.dat
-  [1,494,-10,-6,17,0.707,0,-0.707,0,1,0,0.707,0,0.707, ldraw_lib__u9020()],
+  [1,494,-10,-6,17,0.707,0,-0.707,0,1,0,0.707,0,0.707, ldraw_lib__u9020(realsolid)],
 ];
 module ldraw_lib__70423(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__70423(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__70423(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__70423(line=0.2);

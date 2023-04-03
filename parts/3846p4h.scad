@@ -2,7 +2,8 @@ use <../lib.scad>
 use <s/3846p4gs01.scad>
 use <s/3846p4gs02.scad>
 use <s/3846s01.scad>
-function ldraw_lib__3846p4h() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3846p4h(realsolid=false) = [
 // 0 Minifig Shield Triangular with Yellow Lion on Blue Pattern
 // 0 Name: 3846p4h.dat
 // 0 Author: Bernd Broich [bbroich]
@@ -24,9 +25,9 @@ function ldraw_lib__3846p4h() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3846s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3846s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3846s01(realsolid)],
 // 1 14 0 0 -10 1 0 0 0 1 0 0 0 1 s\3846p4gs01.dat
-  [1,14,0,0,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3846p4gs01()],
+  [1,14,0,0,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3846p4gs01(realsolid)],
 // 0 // Tongue
 // 4 4 -3 -2.5 -10 -3 -3.375 -10 -3.375 -3.625 -10 -3.5 -1.875 -10
   [4,4,-3,-2.5,-10,-3,-3.375,-10,-3.375,-3.625,-10,-3.5,-1.875,-10],
@@ -38,7 +39,7 @@ function ldraw_lib__3846p4h() = [
   [4,4,-5.5,-1.875,-10,-5.625,-3.125,-10,-6.75,-2,-10,-6.75,-1.375,-10],
 // 0 // Background
 // 1 1 0 0 -10 1 0 0 0 1 0 0 0 1 s\3846p4gs02.dat
-  [1,1,0,0,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3846p4gs02()],
+  [1,1,0,0,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3846p4gs02(realsolid)],
 // 0 // Border
 // 4 4 -11.945 13.198 -10 -14.975 5.075 -10 -18.72 6.03 -10 -14.93 15.68 -10
   [4,4,-11.945,13.198,-10,-14.975,5.075,-10,-18.72,6.03,-10,-14.93,15.68,-10],
@@ -66,5 +67,5 @@ function ldraw_lib__3846p4h() = [
   [4,4,8.76,24.57,-10,14.93,15.68,-10,11.945,13.198,-10,7.008,20.68,-10],
 ];
 module ldraw_lib__3846p4h(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3846p4h(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3846p4h(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3846p4h(line=0.2);

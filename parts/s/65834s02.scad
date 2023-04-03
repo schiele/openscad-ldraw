@@ -2,7 +2,8 @@ use <../../lib.scad>
 use <../../p/48/1-4con18.scad>
 use <../../p/48/1-4con23.scad>
 use <../../p/48/1-4con53.scad>
-function ldraw_lib__s__65834s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__65834s02(realsolid=false) = [
 // 0 ~Tyre for Wheel 14 x 35 with  4 Spokes with Integral Tyre - 1/8
 // 0 Name: s\65834s02.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -17,11 +18,11 @@ function ldraw_lib__s__65834s02() = [
 // 
 // 
 // 1 16 0 0 13.2 2.67325 0 0 0 0 -2.67325 0 4.3 0 48\1-4con18.dat
-  [1,16,0,0,13.2,2.67325,0,0,0,0,-2.67325,0,4.3,0, ldraw_lib__48__1_4con18()],
+  [1,16,0,0,13.2,2.67325,0,0,0,0,-2.67325,0,4.3,0, ldraw_lib__48__1_4con18(realsolid)],
 // 1 16 0 0 7 2.20833 0 0 0 0 -2.20833 0 6.2 0 48\1-4con23.dat
-  [1,16,0,0,7,2.20833,0,0,0,0,-2.20833,0,6.2,0, ldraw_lib__48__1_4con23()],
+  [1,16,0,0,7,2.20833,0,0,0,0,-2.20833,0,6.2,0, ldraw_lib__48__1_4con23(realsolid)],
 // 1 16 0 0 0 1 0 0 0 0 -1 0 7 0 48\1-4con53.dat
-  [1,16,0,0,0,1,0,0,0,0,-1,0,7,0, ldraw_lib__48__1_4con53()],
+  [1,16,0,0,0,1,0,0,0,0,-1,0,7,0, ldraw_lib__48__1_4con53(realsolid)],
 // 5 24 52.1586 -13.9752 0 53.5356 -7.047 0 52.5442 -6.9165 -7 52.5442 -6.9165 7
   [5,24,52.1586,-13.9752,0,53.5356,-7.047,0,52.5442,-6.9165,-7,52.5442,-6.9165,7],
 // 5 24 52.5442 -6.9165 7 53 0 7 50.7917 0 13.2 53.5356 -7.047 0
@@ -96,5 +97,5 @@ function ldraw_lib__s__65834s02() = [
   [5,24,30.922,-40.2981,13.2,25.3958,-43.9856,13.2,26.5,-45.898,7,29.2945,-38.1772,17.5],
 ];
 module ldraw_lib__s__65834s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__65834s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__65834s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__65834s02(line=0.2);

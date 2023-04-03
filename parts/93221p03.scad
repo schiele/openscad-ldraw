@@ -4,7 +4,8 @@ use <../p/4-4ndis.scad>
 use <s/93221s01.scad>
 use <s/93221s03.scad>
 use <s/93221s04.scad>
-function ldraw_lib__93221p03() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__93221p03(realsolid=false) = [
 // 0 Minifig Boombox  1 x  3 x  1 with Black Rimmed Speakers, Cassette Player and Switches Pattern
 // 0 Name: 93221p03.dat
 // 0 Author: Vincent Messenet [Cheenzo]
@@ -23,27 +24,27 @@ function ldraw_lib__93221p03() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\93221s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__93221s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__93221s01(realsolid)],
 // 1 0 0 0 0 1 0 0 0 1 0 0 0 1 s\93221s03.dat
-  [1,0,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__93221s03()],
+  [1,0,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__93221s03(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\93221s04.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__93221s04()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__93221s04(realsolid)],
 // 1 0 0 0 0 -1 0 0 0 1 0 0 0 1 s\93221s03.dat
-  [1,0,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__93221s03()],
+  [1,0,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__93221s03(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\93221s04.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__93221s04()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__93221s04(realsolid)],
 // 1 16 -2.75 11.625 -10 .5 0 0 0 0 .5 0 1 0 4-4disc.dat
-  [1,16,-2.75,11.625,-10,.5,0,0,0,0,.5,0,1,0, ldraw_lib__4_4disc()],
+  [1,16,-2.75,11.625,-10,.5,0,0,0,0,.5,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 16 2.75 11.625 -10 .5 0 0 0 0 .5 0 1 0 4-4disc.dat
-  [1,16,2.75,11.625,-10,.5,0,0,0,0,.5,0,1,0, ldraw_lib__4_4disc()],
+  [1,16,2.75,11.625,-10,.5,0,0,0,0,.5,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 0 -2.75 11.625 -10 .5 0 0 0 0 .5 0 1 0 4-4ndis.dat
-  [1,0,-2.75,11.625,-10,.5,0,0,0,0,.5,0,1,0, ldraw_lib__4_4ndis()],
+  [1,0,-2.75,11.625,-10,.5,0,0,0,0,.5,0,1,0, ldraw_lib__4_4ndis(realsolid)],
 // 1 0 2.75 11.625 -10 .5 0 0 0 0 .5 0 1 0 4-4ndis.dat
-  [1,0,2.75,11.625,-10,.5,0,0,0,0,.5,0,1,0, ldraw_lib__4_4ndis()],
+  [1,0,2.75,11.625,-10,.5,0,0,0,0,.5,0,1,0, ldraw_lib__4_4ndis(realsolid)],
 // 1 16 1.88 5.88 -10 1 0 0 0 0 1 0 1 0 4-4disc.dat
-  [1,16,1.88,5.88,-10,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4disc()],
+  [1,16,1.88,5.88,-10,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 0 1.88 5.88 -10 1 0 0 0 0 1 0 1 0 4-4ndis.dat
-  [1,0,1.88,5.88,-10,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4ndis()],
+  [1,0,1.88,5.88,-10,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4ndis(realsolid)],
 // 4 16 -4.75 19.75 -10 -4.75 18.25 -10 -6 18.25 -10 -6 19.75 -10
   [4,16,-4.75,19.75,-10,-4.75,18.25,-10,-6,18.25,-10,-6,19.75,-10],
 // 4 0 -6.75 17.5 -10 -6 18.25 -10 -4.75 18.25 -10 -4 17.5 -10
@@ -300,5 +301,5 @@ function ldraw_lib__93221p03() = [
   [3,16,-8.5,3.25,-10,-6.75,6.25,-10,-6.75,5.5,-10],
 ];
 module ldraw_lib__93221p03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__93221p03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__93221p03(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__93221p03(line=0.2);

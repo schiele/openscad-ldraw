@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/1-4disc.scad>
 use <../p/1-4ndis.scad>
 use <s/3039s01.scad>
-function ldraw_lib__3039p02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3039p02(realsolid=false) = [
 // 0 Slope Brick 45  2 x  2 with Left Green Inverse 1/4 Disc Pattern
 // 0 Name: 3039p02.dat
 // 0 Author: Steffen [Steffen]
@@ -23,12 +24,12 @@ function ldraw_lib__3039p02() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3039s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3039s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3039s01(realsolid)],
 // 
 // 1 2 20 19.799 -29.799 -36 0 0 0 12.7279 -12.7279 0 12.7279 12.7279 1-4ndis.dat
-  [1,2,20,19.799,-29.799,-36,0,0,0,12.7279,-12.7279,0,12.7279,12.7279, ldraw_lib__1_4ndis()],
+  [1,2,20,19.799,-29.799,-36,0,0,0,12.7279,-12.7279,0,12.7279,12.7279, ldraw_lib__1_4ndis(realsolid)],
 // 1 16 20 19.799 -29.799 -36 0 0 0 12.7279 -12.7279 0 12.7279 12.7279 1-4disc.dat
-  [1,16,20,19.799,-29.799,-36,0,0,0,12.7279,-12.7279,0,12.7279,12.7279, ldraw_lib__1_4disc()],
+  [1,16,20,19.799,-29.799,-36,0,0,0,12.7279,-12.7279,0,12.7279,12.7279, ldraw_lib__1_4disc(realsolid)],
 // 4 2 -16 7.0711 -17.0711 -20 0 -10 20 0 -10 20 7.0711 -17.0711
   [4,2,-16,7.0711,-17.0711,-20,0,-10,20,0,-10,20,7.0711,-17.0711],
 // 4 2 -20 0 -10 -16 7.0711 -17.0711 -16 19.799 -29.799 -20 20 -30
@@ -40,5 +41,5 @@ function ldraw_lib__3039p02() = [
 // 0
 ];
 module ldraw_lib__3039p02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3039p02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3039p02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3039p02(line=0.2);

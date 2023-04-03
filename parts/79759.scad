@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/box.scad>
 use <../p/stug-8x8.scad>
-function ldraw_lib__79759() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__79759(realsolid=false) = [
 // 0 Baseplate  8 x  8 with Sharp Corners
 // 0 Name: 79759.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -16,10 +17,10 @@ function ldraw_lib__79759() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 stug-8x8.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_8x8()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_8x8(realsolid)],
 // 1 16 0 2 0 80 0 0 0 2 0 0 0 80 box.dat
-  [1,16,0,2,0,80,0,0,0,2,0,0,0,80, ldraw_lib__box()],
+  [1,16,0,2,0,80,0,0,0,2,0,0,0,80, ldraw_lib__box(realsolid)],
 ];
 module ldraw_lib__79759(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__79759(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__79759(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__79759(line=0.2);

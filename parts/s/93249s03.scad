@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__93249s03() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__93249s03(realsolid=false) = [
 // 0 ~Minifig Headdress Horus - Eye Pattern
 // 0 Name: s\93249s03.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -289,5 +290,5 @@ function ldraw_lib__s__93249s03() = [
   [5,24,9.1,-3.47,-11.675,9.898,-5.011,-9.773,6.905,-6,-13.6,12.707,-2.192,-6.529],
 ];
 module ldraw_lib__s__93249s03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__93249s03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__93249s03(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__93249s03(line=0.2);

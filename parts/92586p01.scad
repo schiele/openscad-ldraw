@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/92586s01.scad>
-function ldraw_lib__92586p01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__92586p01(realsolid=false) = [
 // 0 Animal Dog German Shepherd with Black Eyes, Nose, Blaze and Dark Brown Muzzle Pattern
 // 0 Name: 92586p01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -17,7 +18,7 @@ function ldraw_lib__92586p01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\92586s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__92586s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__92586s01(realsolid)],
 // 
 // 3 0 -0.02 -3.14 -48.16 -0.02 -1.38 -48.96 1.9 -3 -48.07
   [3,0,-0.02,-3.14,-48.16,-0.02,-1.38,-48.96,1.9,-3,-48.07],
@@ -695,5 +696,5 @@ function ldraw_lib__92586p01() = [
   [4,16,-3.0257,-11.8316,-38.2746,-2.66,-9.92,-39.945,-2.67,-10.71,-39.2654,-2.82,-11.34,-38.7126],
 ];
 module ldraw_lib__92586p01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__92586p01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__92586p01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__92586p01(line=0.2);

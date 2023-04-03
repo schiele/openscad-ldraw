@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/48/4-4ndis.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__821421a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__821421a(realsolid=false) = [
 // 0 Sticker  3.4 x  3.8 with Blue Globe, Yellow Box and Curved Arrows
 // 0 Name: 821421a.dat
 // 0 Author: Ulrich Röder [UR]
@@ -24,9 +25,9 @@ function ldraw_lib__821421a() = [
 // 0 // Main
 // 
 // 1 16 0 -.25 0 38 0 0 0 .25 0 0 0 -34 box5-12.dat
-  [1,16,0,-.25,0,38,0,0,0,.25,0,0,0,-34, ldraw_lib__box5_12()],
+  [1,16,0,-.25,0,38,0,0,0,.25,0,0,0,-34, ldraw_lib__box5_12(realsolid)],
 // 1 16 0 -.25 0 36 0 0 0 1 0 0 0 25.6 48\4-4ndis.dat
-  [1,16,0,-.25,0,36,0,0,0,1,0,0,0,25.6, ldraw_lib__48__4_4ndis()],
+  [1,16,0,-.25,0,36,0,0,0,1,0,0,0,25.6, ldraw_lib__48__4_4ndis(realsolid)],
 // 4 16 0 -.25 25.6 36 -.25 25.6 38 -.25 34 -38 -.25 34
   [4,16,0,-.25,25.6,36,-.25,25.6,38,-.25,34,-38,-.25,34],
 // 3 16 -38 -.25 34 -36 -.25 25.6 0 -.25 25.6
@@ -1601,5 +1602,5 @@ function ldraw_lib__821421a() = [
   [4,0,-18.75,-.25,8.481,-17.135,-.25,10.064,-17.052,-.25,11.603,-17.921,-.25,10.407],
 ];
 module ldraw_lib__821421a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__821421a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__821421a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__821421a(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__004283a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__004283a(realsolid=false) = [
 // 0 Sticker  2.3 x  3.9 with Red Pretzel on Yellow Background
 // 0 Name: 004283a.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -18,7 +19,7 @@ function ldraw_lib__004283a() = [
 // 
 // 
 // 1 16 0 -0.25 0 39 0 0 0 0.25 0 0 0 23 box5-12.dat
-  [1,16,0,-0.25,0,39,0,0,0,0.25,0,0,0,23, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,39,0,0,0,0.25,0,0,0,23, ldraw_lib__box5_12(realsolid)],
 // 4 4 -3.7 -0.25 9.7 0 -0.25 10 0 -0.25 20 -5.6 -0.25 19.8
   [4,4,-3.7,-0.25,9.7,0,-0.25,10,0,-0.25,20,-5.6,-0.25,19.8],
 // 4 4 -4.6 -0.25 9.4 -3.7 -0.25 9.7 -5.6 -0.25 19.8 -11.7 -0.25 18.7
@@ -201,5 +202,5 @@ function ldraw_lib__004283a() = [
   [4,14,22.5,-0.25,-8.4,13.8,-0.25,-9.9,17.5,-0.25,-10.5,20.1,-0.25,-10],
 ];
 module ldraw_lib__004283a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__004283a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__004283a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__004283a(line=0.2);

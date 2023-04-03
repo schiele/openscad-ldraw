@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__3_16cylh() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3_16cylh(realsolid=false) = [
 // 0 Cylinder Helical 0.1875
 // 0 Name: 3-16cylh.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -27,5 +28,5 @@ function ldraw_lib__3_16cylh() = [
   [5,24,0.3827,0.75,0.9239,0.3827,0,0.9239,0.7071,0,0.7071,0,0,1.0824],
 ];
 module ldraw_lib__3_16cylh(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3_16cylh(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3_16cylh(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3_16cylh(line=0.2);

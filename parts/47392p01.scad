@@ -4,7 +4,8 @@ use <../p/1-8cyli.scad>
 use <../p/1-8sphe.scad>
 use <s/47392s01.scad>
 use <s/47392s03.scad>
-function ldraw_lib__47392p01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__47392p01(realsolid=false) = [
 // 0 Figure Duplo Adult Torso with Vest Open over White Shirt Pattern
 // 0 Name: 47392p01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -19,20 +20,20 @@ function ldraw_lib__47392p01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\47392s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__47392s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__47392s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\47392s03.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__47392s03()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__47392s03(realsolid)],
 // 
 // 1 16 20 -14 -11 0 -2 5 0 -28 0 -5 0 0 1-4cyli.dat
-  [1,16,20,-14,-11,0,-2,5,0,-28,0,-5,0,0, ldraw_lib__1_4cyli()],
+  [1,16,20,-14,-11,0,-2,5,0,-28,0,-5,0,0, ldraw_lib__1_4cyli(realsolid)],
 // 1 16 18 -42 -11 0 0 5 0 -5 0 -5 0 0 1-8sphe.dat
-  [1,16,18,-42,-11,0,0,5,0,-5,0,-5,0,0, ldraw_lib__1_8sphe()],
+  [1,16,18,-42,-11,0,0,5,0,-5,0,-5,0,0, ldraw_lib__1_8sphe(realsolid)],
 // 1 16 -20 -14 -11 0 2 -5 0 -28 0 -5 0 0 1-4cyli.dat
-  [1,16,-20,-14,-11,0,2,-5,0,-28,0,-5,0,0, ldraw_lib__1_4cyli()],
+  [1,16,-20,-14,-11,0,2,-5,0,-28,0,-5,0,0, ldraw_lib__1_4cyli(realsolid)],
 // 1 16 -18 -42 -11 0 0 -5 0 -5 0 -5 0 0 1-8sphe.dat
-  [1,16,-18,-42,-11,0,0,-5,0,-5,0,-5,0,0, ldraw_lib__1_8sphe()],
+  [1,16,-18,-42,-11,0,0,-5,0,-5,0,-5,0,0, ldraw_lib__1_8sphe(realsolid)],
 // 1 16 -18 -42 -11 0 36 0 -5 0 0 0 0 -5 1-8cyli.dat
-  [1,16,-18,-42,-11,0,36,0,-5,0,0,0,0,-5, ldraw_lib__1_8cyli()],
+  [1,16,-18,-42,-11,0,36,0,-5,0,0,0,0,-5, ldraw_lib__1_8cyli(realsolid)],
 // 
 // 4 0 8.49 -42 -16 7.8 -41.5 -16 8.6 -40.6 -16 9.7 -40.3 -16
   [4,0,8.49,-42,-16,7.8,-41.5,-16,8.6,-40.6,-16,9.7,-40.3,-16],
@@ -855,5 +856,5 @@ function ldraw_lib__47392p01() = [
   [5,24,-18,-42,-16,18,-42,-16,-18,-43.9135,-15.6195,-18,-37,-16],
 ];
 module ldraw_lib__47392p01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__47392p01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__47392p01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__47392p01(line=0.2);

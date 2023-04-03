@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5.scad>
-function ldraw_lib__88327() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__88327(realsolid=false) = [
 // 0 ~Electric Power Functions Solar Panel Silicon
 // 0 Name: 88327.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -15,7 +16,7 @@ function ldraw_lib__88327() = [
 // 
 // 
 // 1 16 0 0 0 78 0 0 0 10 0 0 0 130 box5.dat
-  [1,16,0,0,0,78,0,0,0,10,0,0,0,130, ldraw_lib__box5()],
+  [1,16,0,0,0,78,0,0,0,10,0,0,0,130, ldraw_lib__box5(realsolid)],
 // 4 494 2 0 -122 2 0 122 -2 0 122 -2 0 -122
   [4,494,2,0,-122,2,0,122,-2,0,122,-2,0,-122],
 // 4 494 70 0 -1 70 0 0 2 0 0 2 0 -1
@@ -312,5 +313,5 @@ function ldraw_lib__88327() = [
   [4,16,-78,0,-130,78,0,-130,70,0,-122,-70,0,-122],
 ];
 module ldraw_lib__88327(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__88327(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__88327(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__88327(line=0.2);

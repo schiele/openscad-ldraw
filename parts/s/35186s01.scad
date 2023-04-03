@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/box3u5p.scad>
-function ldraw_lib__s__35186s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__35186s01(realsolid=false) = [
 // 0 ~Technic Transmission Driving Ring Extension Clutch Tooth
 // 0 Name: s\35186s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -15,7 +16,7 @@ function ldraw_lib__s__35186s01() = [
 // 
 // 
 // 1 16 0 -11.5767 -13 0 0 1.5 0 -1.9231 0 -3 0 0 box3u5p.dat
-  [1,16,0,-11.5767,-13,0,0,1.5,0,-1.9231,0,-3,0,0, ldraw_lib__box3u5p()],
+  [1,16,0,-11.5767,-13,0,0,1.5,0,-1.9231,0,-3,0,0, ldraw_lib__box3u5p(realsolid)],
 // 2 24 1.5 -13.5 -16 0 -11.875 -18
   [2,24,1.5,-13.5,-16,0,-11.875,-18],
 // 2 24 1.5 -11.5767 -16 0 -11.875 -18
@@ -90,5 +91,5 @@ function ldraw_lib__s__35186s01() = [
   [5,24,1.5,-13.5,-16,-1.5,-13.5,-16,0,-11.875,-18,-1.5,-13.4998,-10],
 ];
 module ldraw_lib__s__35186s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__35186s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__35186s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__35186s01(line=0.2);

@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/box3u10p.scad>
 use <../../p/box4.scad>
-function ldraw_lib__s__94318s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__94318s02(realsolid=false) = [
 // 0 ~Sheet Fabric  4.3 x 30.7 Pop-up Roof with 10 Rectangular Holes - Short Side
 // 0 Name: s\94318s02.dat
 // 0 Author: Frank Engel [lostcontinent]
@@ -25,20 +26,20 @@ function ldraw_lib__s__94318s02() = [
   [4,16,-14,73,.4,-14,13,.4,14,13,.4,14,73,.4],
 // 
 // 1 16 0 7 0 14 0 0 0 -7 0 0 0 -.4 box3u10p.dat
-  [1,16,0,7,0,14,0,0,0,-7,0,0,0,-.4, ldraw_lib__box3u10p()],
+  [1,16,0,7,0,14,0,0,0,-7,0,0,0,-.4, ldraw_lib__box3u10p(realsolid)],
 // 1 16 0 79 0 14 0 0 0 7 0 0 0 .4 box3u10p.dat
-  [1,16,0,79,0,14,0,0,0,7,0,0,0,.4, ldraw_lib__box3u10p()],
+  [1,16,0,79,0,14,0,0,0,7,0,0,0,.4, ldraw_lib__box3u10p(realsolid)],
 // 
 // 0 // Holes
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 10 -.4 14 0 0 0 0 -3 0 .8 0 box4.dat
-  [1,16,0,10,-.4,14,0,0,0,0,-3,0,.8,0, ldraw_lib__box4()],
+  [1,16,0,10,-.4,14,0,0,0,0,-3,0,.8,0, ldraw_lib__box4(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 76 -.4 14 0 0 0 0 -3 0 .8 0 box4.dat
-  [1,16,0,76,-.4,14,0,0,0,0,-3,0,.8,0, ldraw_lib__box4()],
+  [1,16,0,76,-.4,14,0,0,0,0,-3,0,.8,0, ldraw_lib__box4(realsolid)],
 ];
 module ldraw_lib__s__94318s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__94318s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__94318s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__94318s02(line=0.2);

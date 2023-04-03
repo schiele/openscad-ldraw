@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <3011.scad>
-function ldraw_lib__31459() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__31459(realsolid=false) = [
 // 0 =Duplo Brick  2 x  4
 // 0 Name: 31459.dat
 // 0 Author: Rolf Osterthun [Rolf]
@@ -22,8 +23,8 @@ function ldraw_lib__31459() = [
 // 0 // Part 31459 is the transparent counterpart of 3011
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 3011.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3011()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3011(realsolid)],
 ];
 module ldraw_lib__31459(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__31459(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__31459(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__31459(line=0.2);

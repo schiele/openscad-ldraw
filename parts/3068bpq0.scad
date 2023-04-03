@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3068bs01.scad>
-function ldraw_lib__3068bpq0() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3068bpq0(realsolid=false) = [
 // 0 Tile  2 x  2 with Map Pyramid and Sphinx Pattern
 // 0 Name: 3068bpq0.dat
 // 0 Author: Christian Neumann [Wesley]
@@ -17,7 +18,7 @@ function ldraw_lib__3068bpq0() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3068bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3068bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3068bs01(realsolid)],
 // 0 // pattern
 // 4 72 -18.82 0 2.33 -18.78 0 0.44 -18.14 0 0.4 -18.14 0 2
   [4,72,-18.82,0,2.33,-18.78,0,0.44,-18.14,0,0.4,-18.14,0,2],
@@ -3623,5 +3624,5 @@ function ldraw_lib__3068bpq0() = [
   [3,16,8.97,0,2.87,8.93,0,2.73,9.67,0,3.04],
 ];
 module ldraw_lib__3068bpq0(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3068bpq0(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3068bpq0(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3068bpq0(line=0.2);

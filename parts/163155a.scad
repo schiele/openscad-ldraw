@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__163155a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__163155a(realsolid=false) = [
 // 0 Sticker  2.6 x  3.8 with Airport Schedule
 // 0 Name: 163155a.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -19,7 +20,7 @@ function ldraw_lib__163155a() = [
 // 
 // 
 // 1 16 0 -0.25 0 38 0 0 0 0.25 0 0 0 -26 box5-12.dat
-  [1,16,0,-0.25,0,38,0,0,0,0.25,0,0,0,-26, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,38,0,0,0,0.25,0,0,0,-26, ldraw_lib__box5_12(realsolid)],
 // 
 // 4 4 -34.14 -0.25 -16.129 -32.91 -0.25 -17.36 -33.78 -0.25 -15.26 -34.05 -0.25 -15.66
   [4,4,-34.14,-0.25,-16.129,-32.91,-0.25,-17.36,-33.78,-0.25,-15.26,-34.05,-0.25,-15.66],
@@ -6345,5 +6346,5 @@ function ldraw_lib__163155a() = [
   [3,7,38,-0.25,0,35.16,-0.25,-6.79,35.16,-0.25,-13.21],
 ];
 module ldraw_lib__163155a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__163155a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__163155a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__163155a(line=0.2);

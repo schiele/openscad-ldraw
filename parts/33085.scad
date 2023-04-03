@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4edge.scad>
-function ldraw_lib__33085() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__33085(realsolid=false) = [
 // 0 Minifig Food Banana
 // 0 Name: 33085.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -19,11 +20,11 @@ function ldraw_lib__33085() = [
 // 
 // 
 // 1 16 0 0 0 0 1 0 -4 0 0 0 0 4 4-4edge.dat
-  [1,16,0,0,0,0,1,0,-4,0,0,0,0,4, ldraw_lib__4_4edge()],
+  [1,16,0,0,0,0,1,0,-4,0,0,0,0,4, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 0 0 0 -1 0 -4 0 0 0 0 4 4-4disc.dat
-  [1,16,0,0,0,0,-1,0,-4,0,0,0,0,4, ldraw_lib__4_4disc()],
+  [1,16,0,0,0,0,-1,0,-4,0,0,0,0,4, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 0 0 0 -8 0 -4 0 0 0 0 4 4-4cyli.dat
-  [1,16,0,0,0,0,-8,0,-4,0,0,0,0,4, ldraw_lib__4_4cyli()],
+  [1,16,0,0,0,0,-8,0,-4,0,0,0,0,4, ldraw_lib__4_4cyli(realsolid)],
 // 3 16 -10.062 -1.911 -3.406 -14.2 -4.7 -1.775 -13.935 -2.366 -3.674
   [3,16,-10.062,-1.911,-3.406,-14.2,-4.7,-1.775,-13.935,-2.366,-3.674],
 // 3 16 -10.062 -1.911 -3.406 -10.15 -3.795 -1.875 -14.2 -4.7 -1.775
@@ -1214,5 +1215,5 @@ function ldraw_lib__33085() = [
   [5,24,-8,-3.696,1.531,-8,-2.828,2.828,-10.35,-3.795,1.625,0,-2.828,2.828],
 ];
 module ldraw_lib__33085(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__33085(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__33085(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__33085(line=0.2);

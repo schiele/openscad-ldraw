@@ -4,7 +4,8 @@ use <../../p/1-8cyli.scad>
 use <../../p/1-8edge.scad>
 use <../../p/rect2a.scad>
 use <../../p/rect2p.scad>
-function ldraw_lib__s__64451s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__64451s01(realsolid=false) = [
 // 0 ~Technic Link  4 x  6 Bent 53.13 Peghole Negative Quarter
 // 0 Name: s\64451s01.dat
 // 0 Author: Santeri Piippo [arezey]
@@ -20,7 +21,7 @@ function ldraw_lib__s__64451s01() = [
 // 
 // 
 // 1 16 6.432 -3.75 6.262 0.068 -0.51 0 0 0 1.25 -0.102 -0.34 0 rect2a.dat
-  [1,16,6.432,-3.75,6.262,0.068,-0.51,0,0,0,1.25,-0.102,-0.34,0, ldraw_lib__rect2a()],
+  [1,16,6.432,-3.75,6.262,0.068,-0.51,0,0,0,1.25,-0.102,-0.34,0, ldraw_lib__rect2a(realsolid)],
 // 4 16 6.5 -2.5 8.692 6.5 -2.5 9 0 -2.5 9 3.444 -2.5 8.315
   [4,16,6.5,-2.5,8.692,6.5,-2.5,9,0,-2.5,9,3.444,-2.5,8.315],
 // 4 16 6.5 -2.5 6.5 6.5 -2.5 8.692 3.444 -2.5 8.315 6.364 -2.5 6.364
@@ -46,15 +47,15 @@ function ldraw_lib__s__64451s01() = [
 // 2 24 8.315 -5 3.444 6.5 -5 6.16
   [2,24,8.315,-5,3.444,6.5,-5,6.16],
 // 1 16 6.5 -3.75 7.58 0 1 0 0 0 -1.25 -1.42 0 0 rect2p.dat
-  [1,16,6.5,-3.75,7.58,0,1,0,0,0,-1.25,-1.42,0,0, ldraw_lib__rect2p()],
+  [1,16,6.5,-3.75,7.58,0,1,0,0,0,-1.25,-1.42,0,0, ldraw_lib__rect2p(realsolid)],
 // 1 16 0 -10 0 9 0 0 0 5 0 0 0 9 1-4cyli.dat
-  [1,16,0,-10,0,9,0,0,0,5,0,0,0,9, ldraw_lib__1_4cyli()],
+  [1,16,0,-10,0,9,0,0,0,5,0,0,0,9, ldraw_lib__1_4cyli(realsolid)],
 // 1 16 0 -2.5 0 6.364 0 -6.364 0 5 0 6.364 0 6.364 1-8edge.dat
-  [1,16,0,-2.5,0,6.364,0,-6.364,0,5,0,6.364,0,6.364, ldraw_lib__1_8edge()],
+  [1,16,0,-2.5,0,6.364,0,-6.364,0,5,0,6.364,0,6.364, ldraw_lib__1_8edge(realsolid)],
 // 1 16 0 -5 0 6.364 0 -6.364 0 2.5 0 6.364 0 6.364 1-8cyli.dat
-  [1,16,0,-5,0,6.364,0,-6.364,0,2.5,0,6.364,0,6.364, ldraw_lib__1_8cyli()],
+  [1,16,0,-5,0,6.364,0,-6.364,0,2.5,0,6.364,0,6.364, ldraw_lib__1_8cyli(realsolid)],
 // 0 //
 ];
 module ldraw_lib__s__64451s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__64451s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__64451s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__64451s01(line=0.2);

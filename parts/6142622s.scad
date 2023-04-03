@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <6142622t.scad>
-function ldraw_lib__6142622s() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6142622s(realsolid=false) = [
 // 0 Sticker  4.0 x  1.8 with Black Arch on Yellow Background Left
 // 0 Name: 6142622s.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -17,8 +18,8 @@ function ldraw_lib__6142622s() = [
 // 
 // 
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 6142622t.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__6142622t()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__6142622t(realsolid)],
 ];
 module ldraw_lib__6142622s(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6142622s(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6142622s(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6142622s(line=0.2);

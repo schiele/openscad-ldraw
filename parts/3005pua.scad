@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3005s01.scad>
-function ldraw_lib__3005pua() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3005pua(realsolid=false) = [
 // 0 Brick  1 x  1 with Blue "Æ" (AE Diphthong) Pattern
 // 0 Name: 3005pua.dat
 // 0 Author: Tore Eriksson [Tore_Eriksson]
@@ -22,7 +23,7 @@ function ldraw_lib__3005pua() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3005s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3005s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3005s01(realsolid)],
 // 4 1 6.85 8.75 -10 1.25 8.75 -10 -1.75 7.5 -10 6.85 7.5 -10
   [4,1,6.85,8.75,-10,1.25,8.75,-10,-1.75,7.5,-10,6.85,7.5,-10],
 // 4 1 1.25 16.75 -10 6.85 16.75 -10 6.85 18 -10 0 18 -10
@@ -63,5 +64,5 @@ function ldraw_lib__3005pua() = [
   [4,16,-3,14.3,-10,-1.25,9.75,-10,0,9.75,-10,0,14.3,-10],
 ];
 module ldraw_lib__3005pua(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3005pua(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3005pua(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3005pua(line=0.2);

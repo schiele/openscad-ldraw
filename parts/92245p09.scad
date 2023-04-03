@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <92244p09.scad>
-function ldraw_lib__92245p09() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__92245p09(realsolid=false) = [
 // 0 Figure Friends Female Right Arm with Bright Green Short Sleeve Pattern
 // 0 Name: 92245p09.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -17,8 +18,8 @@ function ldraw_lib__92245p09() = [
 // 
 // 
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 92244p09.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__92244p09()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__92244p09(realsolid)],
 ];
 module ldraw_lib__92245p09(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__92245p09(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__92245p09(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__92245p09(line=0.2);

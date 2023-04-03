@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <280.scad>
 use <735.scad>
-function ldraw_lib__280c01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__280c01(realsolid=false) = [
 // 0 Train Base  6 x 22 Type 2 with Buffers and Magnets (Complete)
 // 0 Name: 280c01.dat
 // 0 Author: Niels Karsdorp [nielsk]
@@ -20,13 +21,13 @@ function ldraw_lib__280c01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 280.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__280()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__280(realsolid)],
 // 1 4 -200 37 0 -1 0 0 0 1 0 0 0 -1 735.dat
-  [1,4,-200,37,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__735()],
+  [1,4,-200,37,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__735(realsolid)],
 // 1 1 200 37 0 1 0 0 0 1 0 0 0 1 735.dat
-  [1,1,200,37,0,1,0,0,0,1,0,0,0,1, ldraw_lib__735()],
+  [1,1,200,37,0,1,0,0,0,1,0,0,0,1, ldraw_lib__735(realsolid)],
 // 0
 ];
 module ldraw_lib__280c01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__280c01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__280c01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__280c01(line=0.2);

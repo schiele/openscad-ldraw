@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__004452d() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__004452d(realsolid=false) = [
 // 0 Sticker  1.1 x  7.9 with Black "FIRE STATION" on Yellow Background
 // 0 Name: 004452d.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -17,7 +18,7 @@ function ldraw_lib__004452d() = [
 // 
 // 
 // 1 16 0 -0.25 0 79 0 0 0 0.25 0 0 0 11 box5-12.dat
-  [1,16,0,-0.25,0,79,0,0,0,0.25,0,0,0,11, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,79,0,0,0,0.25,0,0,0,11, ldraw_lib__box5_12(realsolid)],
 // 4 0 -72.49 -.25 -7.56 -69.38 -.25 -7.56 -69.38 -.25 -1.03 -72.49 -.25 7.78
   [4,0,-72.49,-.25,-7.56,-69.38,-.25,-7.56,-69.38,-.25,-1.03,-72.49,-.25,7.78],
 // 3 0 -72.49 -.25 7.78 -69.38 -.25 -1.03 -69.38 -.25 1.64
@@ -584,5 +585,5 @@ function ldraw_lib__004452d() = [
   [3,14,0,-.25,11,-37.95,-.25,7.78,-26.8,-.25,7.78],
 ];
 module ldraw_lib__004452d(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__004452d(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__004452d(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__004452d(line=0.2);

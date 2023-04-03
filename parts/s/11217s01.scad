@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/rect2p.scad>
-function ldraw_lib__s__11217s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__11217s01(realsolid=false) = [
 // 0 ~Minifig Helmet SW Clone Trooper Phase 2 - Half
 // 0 Name: s\11217s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -353,7 +354,7 @@ function ldraw_lib__s__11217s01() = [
 // 3 16 17.681 17.298 -0.868 16.6 13.099 2.087 16.6 13.375 -1.68
   [3,16,17.681,17.298,-0.868,16.6,13.099,2.087,16.6,13.375,-1.68],
 // 1 16 2.4004 -1.532 -15.2863 2.4004 0 0 0 1 0 0.407 0 0.1415 rect2p.dat
-  [1,16,2.4004,-1.532,-15.2863,2.4004,0,0,0,1,0,0.407,0,0.1415, ldraw_lib__rect2p()],
+  [1,16,2.4004,-1.532,-15.2863,2.4004,0,0,0,1,0,0.407,0,0.1415, ldraw_lib__rect2p(realsolid)],
 // 3 16 16.05 20.765 3.232 17.694 17.362 2.569 15.988 20.907 -0.397
   [3,16,16.05,20.765,3.232,17.694,17.362,2.569,15.988,20.907,-0.397],
 // 3 16 17.694 17.362 2.569 17.681 17.298 -0.868 15.988 20.907 -0.397
@@ -2277,5 +2278,5 @@ function ldraw_lib__s__11217s01() = [
   [5,24,12.21,23.08,-11.652,14.948,20.944,-5.719,12.0104,23,-4.9752,13.053,19.355,-14.219],
 ];
 module ldraw_lib__s__11217s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__11217s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__11217s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__11217s01(line=0.2);

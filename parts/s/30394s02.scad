@@ -3,7 +3,8 @@ use <../../p/1-4cyli.scad>
 use <../../p/1-4cyls.scad>
 use <../../p/1-4disc.scad>
 use <../../p/1-4edge.scad>
-function ldraw_lib__s__30394s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__30394s02(realsolid=false) = [
 // 0 ~Excavator Bucket  6 x  3 with Click Hinge 2-Finger - Finger
 // 0 Name: s\30394s02.dat
 // 0 Author: Michael Heidemann [mikeheide]
@@ -78,31 +79,31 @@ function ldraw_lib__s__30394s02() = [
 // 4 16 -4 0 0 -4 0 -11 -4 -3.333 -11 -4 -5 -1
   [4,16,-4,0,0,-4,0,-11,-4,-3.333,-11,-4,-5,-1],
 // 1 16 -2 0 -11 -2 0 0 0 -3 0 0 0 -2 1-4cyli.dat
-  [1,16,-2,0,-11,-2,0,0,0,-3,0,0,0,-2, ldraw_lib__1_4cyli()],
+  [1,16,-2,0,-11,-2,0,0,0,-3,0,0,0,-2, ldraw_lib__1_4cyli(realsolid)],
 // 1 16 -2 0 -11 -2 0 0 0 -3 0 0 0 -2 1-4edge.dat
-  [1,16,-2,0,-11,-2,0,0,0,-3,0,0,0,-2, ldraw_lib__1_4edge()],
+  [1,16,-2,0,-11,-2,0,0,0,-3,0,0,0,-2, ldraw_lib__1_4edge(realsolid)],
 // 1 16 -2 0 -11 -2 0 0 0 -3 0 0 0 -2 1-4disc.dat
-  [1,16,-2,0,-11,-2,0,0,0,-3,0,0,0,-2, ldraw_lib__1_4disc()],
+  [1,16,-2,0,-11,-2,0,0,0,-3,0,0,0,-2, ldraw_lib__1_4disc(realsolid)],
 // 1 16 2 0 -11 0 0 2 0 -3 0 -2 0 0 1-4cyli.dat
-  [1,16,2,0,-11,0,0,2,0,-3,0,-2,0,0, ldraw_lib__1_4cyli()],
+  [1,16,2,0,-11,0,0,2,0,-3,0,-2,0,0, ldraw_lib__1_4cyli(realsolid)],
 // 1 16 2 0 -11 0 0 2 0 -3 0 -2 0 0 1-4edge.dat
-  [1,16,2,0,-11,0,0,2,0,-3,0,-2,0,0, ldraw_lib__1_4edge()],
+  [1,16,2,0,-11,0,0,2,0,-3,0,-2,0,0, ldraw_lib__1_4edge(realsolid)],
 // 1 16 2 0 -11 0 0 2 0 -3 0 -2 0 0 1-4disc.dat
-  [1,16,2,0,-11,0,0,2,0,-3,0,-2,0,0, ldraw_lib__1_4disc()],
+  [1,16,2,0,-11,0,0,2,0,-3,0,-2,0,0, ldraw_lib__1_4disc(realsolid)],
 // 1 16 -2 -3.334 -11 -2 0 0 0 1.973 0.329 0 0.329 -1.973 1-4edge.dat
-  [1,16,-2,-3.334,-11,-2,0,0,0,1.973,0.329,0,0.329,-1.973, ldraw_lib__1_4edge()],
+  [1,16,-2,-3.334,-11,-2,0,0,0,1.973,0.329,0,0.329,-1.973, ldraw_lib__1_4edge(realsolid)],
 // 1 16 -2 -3.334 -11 -2 0 0 0 1.973 0.329 0 0.329 -1.973 1-4disc.dat
-  [1,16,-2,-3.334,-11,-2,0,0,0,1.973,0.329,0,0.329,-1.973, ldraw_lib__1_4disc()],
+  [1,16,-2,-3.334,-11,-2,0,0,0,1.973,0.329,0,0.329,-1.973, ldraw_lib__1_4disc(realsolid)],
 // 1 16 -2 -3 -11 0 0 -2 0 -0.334 0 -2 0 0 1-4cyls.dat
-  [1,16,-2,-3,-11,0,0,-2,0,-0.334,0,-2,0,0, ldraw_lib__1_4cyls()],
+  [1,16,-2,-3,-11,0,0,-2,0,-0.334,0,-2,0,0, ldraw_lib__1_4cyls(realsolid)],
 // 1 16 2 -3.334 -11 0 0 2 0.329 1.973 0 -1.973 0.329 0 1-4edge.dat
-  [1,16,2,-3.334,-11,0,0,2,0.329,1.973,0,-1.973,0.329,0, ldraw_lib__1_4edge()],
+  [1,16,2,-3.334,-11,0,0,2,0.329,1.973,0,-1.973,0.329,0, ldraw_lib__1_4edge(realsolid)],
 // 1 16 2 -3.334 -11 0 0 2 0.329 1.973 0 -1.973 0.329 0 1-4disc.dat
-  [1,16,2,-3.334,-11,0,0,2,0.329,1.973,0,-1.973,0.329,0, ldraw_lib__1_4disc()],
+  [1,16,2,-3.334,-11,0,0,2,0.329,1.973,0,-1.973,0.329,0, ldraw_lib__1_4disc(realsolid)],
 // 1 16 2 -3 -11 0 0 2 0 -0.334 0 -2 0 0 1-4cyls.dat
-  [1,16,2,-3,-11,0,0,2,0,-0.334,0,-2,0,0, ldraw_lib__1_4cyls()],
+  [1,16,2,-3,-11,0,0,2,0,-0.334,0,-2,0,0, ldraw_lib__1_4cyls(realsolid)],
 // 0
 ];
 module ldraw_lib__s__30394s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__30394s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__30394s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__30394s02(line=0.2);

@@ -2,7 +2,8 @@ use <../../lib.scad>
 use <../../p/1-4cyli.scad>
 use <../../p/1-4edge.scad>
 use <../../p/t04o6250.scad>
-function ldraw_lib__s__4156s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__4156s01(realsolid=false) = [
 // 0 ~Minifig Garrison Cap Quarter
 // 0 Name: s\4156s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -17,15 +18,15 @@ function ldraw_lib__s__4156s01() = [
 // 
 // 
 // 1 16 0 5 0 0 0 13 0 1 0 -13 0 0 1-4edge.dat
-  [1,16,0,5,0,0,0,13,0,1,0,-13,0,0, ldraw_lib__1_4edge()],
+  [1,16,0,5,0,0,0,13,0,1,0,-13,0,0, ldraw_lib__1_4edge(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 5 0 0 0 13 0 -1 0 -13 0 0 1-4cyli.dat
-  [1,16,0,5,0,0,0,13,0,-1,0,-13,0,0, ldraw_lib__1_4cyli()],
+  [1,16,0,5,0,0,0,13,0,-1,0,-13,0,0, ldraw_lib__1_4cyli(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 4 0 8 0 0 0 -6.4 0 0 0 -8 t04o6250.dat
-  [1,16,0,4,0,8,0,0,0,-6.4,0,0,0,-8, ldraw_lib__t04o6250()],
+  [1,16,0,4,0,8,0,0,0,-6.4,0,0,0,-8, ldraw_lib__t04o6250(realsolid)],
 // 4 16 12.3792 -1.8897 -4.9994 13.2325 -1.1858 0 5.862 -10.1 0 5.5507 -10.1512 -4.9994
   [4,16,12.3792,-1.8897,-4.9994,13.2325,-1.1858,0,5.862,-10.1,0,5.5507,-10.1512,-4.9994],
 // 4 16 14.4147 1.633 0 13.2325 -1.1858 0 12.3792 -1.8897 -4.9994 13.4851 0.7293 -4.9994
@@ -208,5 +209,5 @@ function ldraw_lib__s__4156s01() = [
   [5,24,14.4147,1.633,0,13.2325,-1.1858,0,12.3792,-1.8897,-4.9994,13.4851,0.7293,4.9994],
 ];
 module ldraw_lib__s__4156s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__4156s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__4156s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__4156s01(line=0.2);

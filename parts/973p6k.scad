@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/1-4cyli.scad>
 use <s/973s01.scad>
-function ldraw_lib__973p6k() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__973p6k(realsolid=false) = [
 // 0 Minifig Torso with Insectoids with Green Circuitry & Silver Hose on Sides Pattern
 // 0 Name: 973p6k.dat
 // 0 Author: Mikkel Bech Jensen [gaia]
@@ -21,7 +22,7 @@ function ldraw_lib__973p6k() = [
 // 
 // 0 // Subfile
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01(realsolid)],
 // 
 // 0 // Back
 // 4 16 19 29 10 19 32 10 -19 32 10 -19 29 10
@@ -33,7 +34,7 @@ function ldraw_lib__973p6k() = [
 // 
 // 0 // Neck mark
 // 1 15 0 -4 0 4.243 0 -4.243 0 -8 0 -4.243 0 -4.243 1-4cyli.dat
-  [1,15,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli()],
+  [1,15,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli(realsolid)],
 // 
 // 0 // Pattern
 // 0 // Black
@@ -2635,5 +2636,5 @@ function ldraw_lib__973p6k() = [
   [3,16,13.084,5.757,-10,13.06,6.367,-10,13.276,7.729,-10],
 ];
 module ldraw_lib__973p6k(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__973p6k(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__973p6k(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__973p6k(line=0.2);

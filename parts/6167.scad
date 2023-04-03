@@ -5,7 +5,8 @@ use <../p/ring1.scad>
 use <../p/ring3.scad>
 use <../p/ring4.scad>
 use <../p/stud10.scad>
-function ldraw_lib__6167() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6167(realsolid=false) = [
 // 0 ~Support  2 x  2 x 11 Solid Pillar Top
 // 0 Name: 6167.dat
 // 0 Author: James Jessiman
@@ -24,43 +25,43 @@ function ldraw_lib__6167() = [
 // 
 // 
 // 1 16 0 240 0 16 0 0 0 1 0 0 0 16 4-4edge.dat
-  [1,16,0,240,0,16,0,0,0,1,0,0,0,16, ldraw_lib__4_4edge()],
+  [1,16,0,240,0,16,0,0,0,1,0,0,0,16, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 240 0 20 0 0 0 1 0 0 0 20 4-4edge.dat
-  [1,16,0,240,0,20,0,0,0,1,0,0,0,20, ldraw_lib__4_4edge()],
+  [1,16,0,240,0,20,0,0,0,1,0,0,0,20, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 240 0 4 0 0 0 -1 0 0 0 4 ring4.dat
-  [1,16,0,240,0,4,0,0,0,-1,0,0,0,4, ldraw_lib__ring4()],
+  [1,16,0,240,0,4,0,0,0,-1,0,0,0,4, ldraw_lib__ring4(realsolid)],
 // 1 16 0 4 0 6 0 0 0 1 0 0 0 6 4-4edge.dat
-  [1,16,0,4,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4edge()],
+  [1,16,0,4,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 4 0 16 0 0 0 1 0 0 0 16 4-4edge.dat
-  [1,16,0,4,0,16,0,0,0,1,0,0,0,16, ldraw_lib__4_4edge()],
+  [1,16,0,4,0,16,0,0,0,1,0,0,0,16, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 0 0 6 0 0 0 1 0 0 0 6 4-4edge.dat
-  [1,16,0,0,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4edge()],
+  [1,16,0,0,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4edge(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 4 0 16 0 0 0 236 0 0 0 16 4-4cyli.dat
-  [1,16,0,4,0,16,0,0,0,236,0,0,0,16, ldraw_lib__4_4cyli()],
+  [1,16,0,4,0,16,0,0,0,236,0,0,0,16, ldraw_lib__4_4cyli(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 0 6 0 0 0 4 0 0 0 6 4-4cyli.dat
-  [1,16,0,0,0,6,0,0,0,4,0,0,0,6, ldraw_lib__4_4cyli()],
+  [1,16,0,0,0,6,0,0,0,4,0,0,0,6, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 0 0 20 0 0 0 240 0 0 0 20 4-4cyli.dat
-  [1,16,0,0,0,20,0,0,0,240,0,0,0,20, ldraw_lib__4_4cyli()],
+  [1,16,0,0,0,20,0,0,0,240,0,0,0,20, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 0 0 6 0 0 0 1 0 0 0 6 ring1.dat
-  [1,16,0,0,0,6,0,0,0,1,0,0,0,6, ldraw_lib__ring1()],
+  [1,16,0,0,0,6,0,0,0,1,0,0,0,6, ldraw_lib__ring1(realsolid)],
 // 1 16 0 0 0 10 0 0 0 1 0 0 0 10 ring1.dat
-  [1,16,0,0,0,10,0,0,0,1,0,0,0,10, ldraw_lib__ring1()],
+  [1,16,0,0,0,10,0,0,0,1,0,0,0,10, ldraw_lib__ring1(realsolid)],
 // 1 16 0 4 0 6 0 0 0 -1 0 0 0 6 ring1.dat
-  [1,16,0,4,0,6,0,0,0,-1,0,0,0,6, ldraw_lib__ring1()],
+  [1,16,0,4,0,6,0,0,0,-1,0,0,0,6, ldraw_lib__ring1(realsolid)],
 // 1 16 0 4 0 4 0 0 0 -1 0 0 0 4 ring3.dat
-  [1,16,0,4,0,4,0,0,0,-1,0,0,0,4, ldraw_lib__ring3()],
+  [1,16,0,4,0,4,0,0,0,-1,0,0,0,4, ldraw_lib__ring3(realsolid)],
 // 1 16 10 0 10 1 0 0 0 1 0 0 0 1 stud10.dat
-  [1,16,10,0,10,1,0,0,0,1,0,0,0,1, ldraw_lib__stud10()],
+  [1,16,10,0,10,1,0,0,0,1,0,0,0,1, ldraw_lib__stud10(realsolid)],
 // 1 16 -10 0 10 0 0 -1 0 1 0 1 0 0 stud10.dat
-  [1,16,-10,0,10,0,0,-1,0,1,0,1,0,0, ldraw_lib__stud10()],
+  [1,16,-10,0,10,0,0,-1,0,1,0,1,0,0, ldraw_lib__stud10(realsolid)],
 // 1 16 10 0 -10 0 0 1 0 1 0 -1 0 0 stud10.dat
-  [1,16,10,0,-10,0,0,1,0,1,0,-1,0,0, ldraw_lib__stud10()],
+  [1,16,10,0,-10,0,0,1,0,1,0,-1,0,0, ldraw_lib__stud10(realsolid)],
 // 1 16 -10 0 -10 -1 0 0 0 1 0 0 0 -1 stud10.dat
-  [1,16,-10,0,-10,-1,0,0,0,1,0,0,0,-1, ldraw_lib__stud10()],
+  [1,16,-10,0,-10,-1,0,0,0,1,0,0,0,-1, ldraw_lib__stud10(realsolid)],
 // 2 24 -7.6537 0 -18.4776 0 0 -20
   [2,24,-7.6537,0,-18.4776,0,0,-20],
 // 2 24 0 0 -20 7.6537 0 -18.4774
@@ -96,5 +97,5 @@ function ldraw_lib__6167() = [
 // 0
 ];
 module ldraw_lib__6167(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6167(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6167(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6167(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3815s01.scad>
-function ldraw_lib__3815pq1() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3815pq1(realsolid=false) = [
 // 0 ~Minifig Hips with Gold X-Belt and Decorated Loincloth Pattern (Obsolete)
 // 0 Name: 3815pq1.dat
 // 0 Author: Christian Neumann [Wesley]
@@ -19,7 +20,7 @@ function ldraw_lib__3815pq1() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3815s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3815s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3815s01(realsolid)],
 // 0 // belt
 // 4 272 -6 4 -10 -5 4 -10 -5 2 -10 -6 2 -10
   [4,272,-6,4,-10,-5,4,-10,-5,2,-10,-6,2,-10],
@@ -978,5 +979,5 @@ function ldraw_lib__3815pq1() = [
   [5,24,2,20.3152024,-3.4441968,-2,20.3152024,-3.4441968,2,18.364,-6.364,2,21.7420112,0],
 ];
 module ldraw_lib__3815pq1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3815pq1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3815pq1(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3815pq1(line=0.2);

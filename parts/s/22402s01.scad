@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/rect.scad>
-function ldraw_lib__s__22402s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__22402s01(realsolid=false) = [
 // 0 ~Minifig Armour Breastplate with Shoulder Pads Large, Pentagonal Cut-out and 4 Studs on Back - Half
 // 0 Name: s\22402s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -743,7 +744,7 @@ function ldraw_lib__s__22402s01() = [
 // 4 16 7.065 9.889 -15.991 7.065 9.885 -10 0 16.93 -10 0 17.039 -15.975
   [4,16,7.065,9.889,-15.991,7.065,9.885,-10,0,16.93,-10,0,17.039,-15.975],
 // 1 16 7.08 6.5693 -12.9978 0 1 0.0145 0.002 0 -3.318 -2.9955 0 0 rect.dat
-  [1,16,7.08,6.5693,-12.9978,0,1,0.0145,0.002,0,-3.318,-2.9955,0,0, ldraw_lib__rect()],
+  [1,16,7.08,6.5693,-12.9978,0,1,0.0145,0.002,0,-3.318,-2.9955,0,0, ldraw_lib__rect(realsolid)],
 // 3 16 7.094 3.249 -10 17.008 0 -10 16.585 3.169 -10
   [3,16,7.094,3.249,-10,17.008,0,-10,16.585,3.169,-10],
 // 4 16 0 4.002 15.25 0 2.514 14.496 1.319 2.514 14.311 1.568 4.002 15.026
@@ -2168,5 +2169,5 @@ function ldraw_lib__s__22402s01() = [
   [5,24,17.4415,4.8055,-16.0662,16.9802,5.2256,-14.4275,17.5526,5.0721,-14.377,16.965,4.932,-16.359],
 ];
 module ldraw_lib__s__22402s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__22402s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__22402s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__22402s01(line=0.2);

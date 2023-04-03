@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/2-4edge.scad>
 use <../../p/box5.scad>
-function ldraw_lib__s__6130s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__6130s02(realsolid=false) = [
 // 0 ~Animal Dragon Body Half Inside
 // 0 Name: s\6130s02.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -914,7 +915,7 @@ function ldraw_lib__s__6130s02() = [
 // 2 24 0 27.86 -100.28 6.8 27.86 -100.28
   [2,24,0,27.86,-100.28,6.8,27.86,-100.28],
 // 1 16 15.84 14 -77 0 1 0 -10 0 0 0 0 10 2-4edge.dat
-  [1,16,15.84,14,-77,0,1,0,-10,0,0,0,0,10, ldraw_lib__2_4edge()],
+  [1,16,15.84,14,-77,0,1,0,-10,0,0,0,0,10, ldraw_lib__2_4edge(realsolid)],
 // 2 24 15.84 24 -77 15.84 23.38 -80.13
   [2,24,15.84,24,-77,15.84,23.38,-80.13],
 // 2 24 15.84 23.38 -80.13 15.47 23.24 -80.83
@@ -1195,7 +1196,7 @@ function ldraw_lib__s__6130s02() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 15.8 19 -57 0 2 0 -5.196 0 1.5 3 0 2.598 box5.dat
-  [1,16,15.8,19,-57,0,2,0,-5.196,0,1.5,3,0,2.598, ldraw_lib__box5()],
+  [1,16,15.8,19,-57,0,2,0,-5.196,0,1.5,3,0,2.598, ldraw_lib__box5(realsolid)],
 // 4 16 16 8.5 -18 16 11.24 -18.35 15.84 12.61 -28.19 15.84 3.98 -23.65
   [4,16,16,8.5,-18,16,11.24,-18.35,15.84,12.61,-28.19,15.84,3.98,-23.65],
 // 3 16 16 8.5 -18 15.84 3.98 -23.65 16 3 -18
@@ -2081,5 +2082,5 @@ function ldraw_lib__s__6130s02() = [
   [2,24,11,-50.19,-38.03,11,-48.12,-59.98],
 ];
 module ldraw_lib__s__6130s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__6130s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__6130s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__6130s02(line=0.2);

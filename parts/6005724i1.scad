@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__6005724i1() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6005724i1(realsolid=false) = [
 // 0 Sticker  2.8 x  3.5 with Books, Cobweb, Stones and Arrow Right
 // 0 Name: 6005724i1.dat
 // 0 Author: Christian Neumann [Wesley]
@@ -17,7 +18,7 @@ function ldraw_lib__6005724i1() = [
 // 
 // 
 // 1 16 0 -0.25 0 35 0 0 0 0.25 0 0 0 28 box5-12.dat
-  [1,16,0,-0.25,0,35,0,0,0,0.25,0,0,0,28, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,35,0,0,0,0.25,0,0,0,28, ldraw_lib__box5_12(realsolid)],
 // 4 0 -30.3 -0.25 -25.2 -29 -0.25 -25.8 -28.8 -0.25 -24 -30.5 -0.25 -23.9
   [4,0,-30.3,-0.25,-25.2,-29,-0.25,-25.8,-28.8,-0.25,-24,-30.5,-0.25,-23.9],
 // 4 0 -30.5 -0.25 -23.9 -28.8 -0.25 -24 -28.3 -0.25 -22.7 -29.8 -0.25 -21.8
@@ -2080,5 +2081,5 @@ function ldraw_lib__6005724i1() = [
   [3,28,28.2,-0.25,-18.2,26.3,-0.25,-19.4,27.2,-0.25,-20.2],
 ];
 module ldraw_lib__6005724i1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6005724i1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6005724i1(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6005724i1(line=0.2);

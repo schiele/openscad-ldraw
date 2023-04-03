@@ -4,7 +4,8 @@ use <../p/4-4cylo.scad>
 use <../p/4-4edge.scad>
 use <../p/connhole.scad>
 use <s/65141s01.scad>
-function ldraw_lib__65141() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__65141(realsolid=false) = [
 // 0 ~Technic Shock Absorber 11L Piston Connector with Peghole
 // 0 Name: 65141.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -19,23 +20,23 @@ function ldraw_lib__65141() = [
 // 
 // 
 // 1 16 0 0 0 -1 0 0 0 0 1 0 1 0 connhole.dat
-  [1,16,0,0,0,-1,0,0,0,0,1,0,1,0, ldraw_lib__connhole()],
+  [1,16,0,0,0,-1,0,0,0,0,1,0,1,0, ldraw_lib__connhole(realsolid)],
 // 1 16 0 0 10 -9 0 0 0 0 9 0 -20 0 4-4cylo.dat
-  [1,16,0,0,10,-9,0,0,0,0,9,0,-20,0, ldraw_lib__4_4cylo()],
+  [1,16,0,0,10,-9,0,0,0,0,9,0,-20,0, ldraw_lib__4_4cylo(realsolid)],
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\65141s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__65141s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__65141s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 -1 s\65141s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__65141s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__65141s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\65141s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__65141s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__65141s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 -1 s\65141s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__65141s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__65141s01(realsolid)],
 // 
 // 1 16 0 -23 0 9 0 0 0 9 0 0 0 9 4-4cyli.dat
-  [1,16,0,-23,0,9,0,0,0,9,0,0,0,9, ldraw_lib__4_4cyli()],
+  [1,16,0,-23,0,9,0,0,0,9,0,0,0,9, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 -23 0 9 0 0 0 1 0 0 0 9 4-4edge.dat
-  [1,16,0,-23,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4edge()],
+  [1,16,0,-23,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4edge(realsolid)],
 // 
 // 4 16 4.402 -23 -1.75 4.402 -23 1.75 4.402 -18 1.75 4.402 -18 -1.75
   [4,16,4.402,-23,-1.75,4.402,-23,1.75,4.402,-18,1.75,4.402,-18,-1.75],
@@ -73,5 +74,5 @@ function ldraw_lib__65141() = [
   [5,24,0,-17,-6.5,0,-17,-4.75,.9375,-17.2,-6.3136,-.9375,-17.2,-6.3136],
 ];
 module ldraw_lib__65141(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__65141(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__65141(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__65141(line=0.2);

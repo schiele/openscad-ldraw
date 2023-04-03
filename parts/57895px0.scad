@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/57895s01.scad>
-function ldraw_lib__57895px0() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__57895px0(realsolid=false) = [
 // 0 Glass for Window  1 x  4 x  6 with Central Perk Logo Pattern
 // 0 Name: 57895px0.dat
 // 0 Author: Vincent Messenet [Cheenzo]
@@ -17,7 +18,7 @@ function ldraw_lib__57895px0() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\57895s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__57895s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__57895s01(realsolid)],
 // 0 BFC NOCLIP
   [0,"BFC","NOCLIP"],
 // 4 0 -.299 117.159 -2 -.897 117.607 -2 -.299 118.355 -2 .224 117.832 -2
@@ -2680,5 +2681,5 @@ function ldraw_lib__57895px0() = [
   [0,"BFC","CLIP"],
 ];
 module ldraw_lib__57895px0(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__57895px0(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__57895px0(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__57895px0(line=0.2);

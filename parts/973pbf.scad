@@ -5,7 +5,8 @@ use <../p/4-4rin11.scad>
 use <../p/4-4rin16.scad>
 use <../p/4-4ring9.scad>
 use <s/973s01.scad>
-function ldraw_lib__973pbf() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__973pbf(realsolid=false) = [
 // 0 Minifig Torso with Iron Man Armoured Suit Mark XLII Pattern
 // 0 Name: 973pbf.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -20,19 +21,19 @@ function ldraw_lib__973pbf() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01(realsolid)],
 // 1 15 0 -4 0 4.243 0 -4.243 0 -8 0 -4.243 0 -4.243 1-4cyli.dat
-  [1,15,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli()],
+  [1,15,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli(realsolid)],
 // 
 // 0 // frontside
 // 1 15 0 7.9 -10 3.3 0 0 0 0 -3.3 0 1 0 4-4disc.dat
-  [1,15,0,7.9,-10,3.3,0,0,0,0,-3.3,0,1,0, ldraw_lib__4_4disc()],
+  [1,15,0,7.9,-10,3.3,0,0,0,0,-3.3,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 0 0 7.9 -10 0.3 0 0 0 0 -0.3 0 1 0 4-4rin11.dat
-  [1,0,0,7.9,-10,0.3,0,0,0,0,-0.3,0,1,0, ldraw_lib__4_4rin11()],
+  [1,0,0,7.9,-10,0.3,0,0,0,0,-0.3,0,1,0, ldraw_lib__4_4rin11(realsolid)],
 // 1 0 0 7.9 -10 0.4 0 0 0 0 -0.4 0 1 0 4-4ring9.dat
-  [1,0,0,7.9,-10,0.4,0,0,0,0,-0.4,0,1,0, ldraw_lib__4_4ring9()],
+  [1,0,0,7.9,-10,0.4,0,0,0,0,-0.4,0,1,0, ldraw_lib__4_4ring9(realsolid)],
 // 1 82 0 7.9 -10 0.25 0 0 0 0 -0.25 0 1 0 4-4rin16.dat
-  [1,82,0,7.9,-10,0.25,0,0,0,0,-0.25,0,1,0, ldraw_lib__4_4rin16()],
+  [1,82,0,7.9,-10,0.25,0,0,0,0,-0.25,0,1,0, ldraw_lib__4_4rin16(realsolid)],
 // 4 0 -4.25 7.9 -10 -3.9266 6.2735 -10 -4.345 6.1 -10 -4.435 6.553 -10
   [4,0,-4.25,7.9,-10,-3.9266,6.2735,-10,-4.345,6.1,-10,-4.435,6.553,-10],
 // 4 0 -3.9266 9.5265 -10 -4.25 7.9 -10 -4.703 7.9 -10 -4.345 9.7 -10
@@ -2057,5 +2058,5 @@ function ldraw_lib__973pbf() = [
   [4,0,-0.5,24.5,10,0.5,24.5,10,0.5,25.1,10,-0.5,25.1,10],
 ];
 module ldraw_lib__973pbf(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__973pbf(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__973pbf(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__973pbf(line=0.2);

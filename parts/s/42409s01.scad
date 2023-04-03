@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/1-4cylc.scad>
-function ldraw_lib__s__42409s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__42409s01(realsolid=false) = [
 // 0 ~Snow Flake  4 x  4 - Arm Half with Flat End
 // 0 Name: s\42409s01.dat
 // 0 Author: Alex Taylor [anathema]
@@ -426,7 +427,7 @@ function ldraw_lib__s__42409s01() = [
   [3,16,3.704,-7.191,10.004,0,-4.872,9.187,5.304,-4.881,9.187],
 // 0 // Stud
 // 1 16 0 -10.4 39.75 4 0 0 0 0 -4 0 -4.35 0 1-4cylc.dat
-  [1,16,0,-10.4,39.75,4,0,0,0,0,-4,0,-4.35,0, ldraw_lib__1_4cylc()],
+  [1,16,0,-10.4,39.75,4,0,0,0,0,-4,0,-4.35,0, ldraw_lib__1_4cylc(realsolid)],
 // 2 24 3.507 -8.609 39.75 3.075 -7.934 39.75
   [2,24,3.507,-8.609,39.75,3.075,-7.934,39.75],
 // 5 24 3.075 -7.934 39.75 3.506 -8.606 35.407 3.507 -8.609 39.75 3.078 -7.901 35.407
@@ -1037,5 +1038,5 @@ function ldraw_lib__s__42409s01() = [
   [5,24,3.078,-7.901,35.407,0,-7.901,35.407,2.115,-7.939,33.79,0,-7.935,39.75],
 ];
 module ldraw_lib__s__42409s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__42409s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__42409s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__42409s01(line=0.2);

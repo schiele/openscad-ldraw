@@ -3,7 +3,8 @@ use <../p/4-4cyli.scad>
 use <../p/4-4edge.scad>
 use <../p/4-4ring2.scad>
 use <../p/axl2hole.scad>
-function ldraw_lib__32053() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__32053(realsolid=false) = [
 // 0 ~Technic Gear 24 Tooth Clutch Center
 // 0 Name: 32053.dat
 // 0 Author: Marc Klein [marckl]
@@ -23,18 +24,18 @@ function ldraw_lib__32053() = [
 // 
 // 
 // 1 16 0 0 -10 9 0 0 0 0 9 0 1 0 4-4edge.dat
-  [1,16,0,0,-10,9,0,0,0,0,9,0,1,0, ldraw_lib__4_4edge()],
+  [1,16,0,0,-10,9,0,0,0,0,9,0,1,0, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 0 -10 9 0 0 0 0 9 0 20 0 4-4cyli.dat
-  [1,16,0,0,-10,9,0,0,0,0,9,0,20,0, ldraw_lib__4_4cyli()],
+  [1,16,0,0,-10,9,0,0,0,0,9,0,20,0, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 0 10 9 0 0 0 0 9 0 1 0 4-4edge.dat
-  [1,16,0,0,10,9,0,0,0,0,9,0,1,0, ldraw_lib__4_4edge()],
+  [1,16,0,0,10,9,0,0,0,0,9,0,1,0, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 0 -10 3 0 0 0 0 3 0 1 0 4-4ring2.dat
-  [1,16,0,0,-10,3,0,0,0,0,3,0,1,0, ldraw_lib__4_4ring2()],
+  [1,16,0,0,-10,3,0,0,0,0,3,0,1,0, ldraw_lib__4_4ring2(realsolid)],
 // 1 16 0 0 10 3 0 0 0 0 3 0 -1 0 4-4ring2.dat
-  [1,16,0,0,10,3,0,0,0,0,3,0,-1,0, ldraw_lib__4_4ring2()],
+  [1,16,0,0,10,3,0,0,0,0,3,0,-1,0, ldraw_lib__4_4ring2(realsolid)],
 // 1 16 0 0 -10 1 0 0 0 0 1 0 20 0 axl2hole.dat
-  [1,16,0,0,-10,1,0,0,0,0,1,0,20,0, ldraw_lib__axl2hole()],
+  [1,16,0,0,-10,1,0,0,0,0,1,0,20,0, ldraw_lib__axl2hole(realsolid)],
 ];
 module ldraw_lib__32053(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__32053(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__32053(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__32053(line=0.2);

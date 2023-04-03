@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__1_8sphc() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__1_8sphc(realsolid=false) = [
 // 0 Sphere 0.175 x  1.1414 Cut Off
 // 0 Name: 1-8sphc.dat
 // 0 Author: Franklin W. Cain [fwcain]
@@ -94,5 +95,5 @@ function ldraw_lib__1_8sphc() = [
 // 0
 ];
 module ldraw_lib__1_8sphc(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__1_8sphc(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__1_8sphc(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__1_8sphc(line=0.2);

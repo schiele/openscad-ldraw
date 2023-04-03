@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4ring1.scad>
 use <s/3351as01.scad>
-function ldraw_lib__3351ap04() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3351ap04(realsolid=false) = [
 // 0 Roadsign Triangular Type 1 with Skidding Car/Spare Wheel Pattern
 // 0 Name: 3351ap04.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -17,7 +18,7 @@ function ldraw_lib__3351ap04() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3351as01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3351as01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3351as01(realsolid)],
 // 0 //
 // 4 4 -22 -70 -2 -22 -68 -2 22 -68 -2 22 -70 -2
   [4,4,-22,-70,-2,-22,-68,-2,22,-68,-2,22,-70,-2],
@@ -45,7 +46,7 @@ function ldraw_lib__3351ap04() = [
   [4,4,1,-109.83,-2,0,-110.1,-2,0,-108.1,-2,1.73,-109.1,-2],
 // 0 //
 // 1 0 -0.7 -85.4 -2 1.6 0 0 0 0 -1.6 0 1.6 0 4-4disc.dat
-  [1,0,-0.7,-85.4,-2,1.6,0,0,0,0,-1.6,0,1.6,0, ldraw_lib__4_4disc()],
+  [1,0,-0.7,-85.4,-2,1.6,0,0,0,0,-1.6,0,1.6,0, ldraw_lib__4_4disc(realsolid)],
 // 4 0 -2.2 -93.2 -2 -2 -91.8 -2 -1 -91.7 -2 -1 -93.1 -2
   [4,0,-2.2,-93.2,-2,-2,-91.8,-2,-1,-91.7,-2,-1,-93.1,-2],
 // 4 0 0.7 -91.3 -2 0.5 -92.8 -2 -1 -93.1 -2 -1 -91.7 -2
@@ -170,7 +171,7 @@ function ldraw_lib__3351ap04() = [
   [4,0,6.1,-80.5,-2,4.3,-82.1,-2,3.8,-82.4,-2,5.9,-79.1,-2],
 // 0 //
 // 1 16 -0.7 -85.4 -2 1.6 0 0 0 0 -1.6 0 1.6 0 4-4ring1.dat
-  [1,16,-0.7,-85.4,-2,1.6,0,0,0,0,-1.6,0,1.6,0, ldraw_lib__4_4ring1()],
+  [1,16,-0.7,-85.4,-2,1.6,0,0,0,0,-1.6,0,1.6,0, ldraw_lib__4_4ring1(realsolid)],
 // 3 16 -3.3 -90 -2 -2.7 -89.9 -2 -3.1 -90.7 -2
   [3,16,-3.3,-90,-2,-2.7,-89.9,-2,-3.1,-90.7,-2],
 // 4 16 -2.8 -91.5 -2 -3.1 -90.7 -2 -2.7 -89.9 -2 -1.8 -89.7 -2
@@ -290,5 +291,5 @@ function ldraw_lib__3351ap04() = [
 // 0 //
 ];
 module ldraw_lib__3351ap04(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3351ap04(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3351ap04(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3351ap04(line=0.2);

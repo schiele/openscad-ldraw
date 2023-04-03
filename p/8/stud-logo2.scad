@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <stud.scad>
-function ldraw_lib__8__stud_logo2() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__8__stud_logo2(realsolid=false) = [
 // 0 Stud with LEGO Logo - Non-3D Outlined (Fast-Draw)
 // 0 Name: 8\stud-logo2.dat
 // 0 Author: Steffen [Steffen]
@@ -15,8 +16,8 @@ function ldraw_lib__8__stud_logo2() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 8\stud.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__8__stud()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__8__stud(realsolid)],
 ];
 module ldraw_lib__8__stud_logo2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__8__stud_logo2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__8__stud_logo2(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__8__stud_logo2(line=0.2);

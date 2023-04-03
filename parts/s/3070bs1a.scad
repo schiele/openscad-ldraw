@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__3070bs1a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__3070bs1a(realsolid=false) = [
 // 0 ~Tile  1 x  1 With SW Mini Snowspeeder Pattern - Dark Red
 // 0 Name: s\3070bs1a.dat
 // 0 Author: Orion Pobursky [OrionP]
@@ -28,5 +29,5 @@ function ldraw_lib__s__3070bs1a() = [
 // 
 ];
 module ldraw_lib__s__3070bs1a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__3070bs1a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__3070bs1a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__3070bs1a(line=0.2);

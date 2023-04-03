@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/42918s01.scad>
-function ldraw_lib__42918p02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__42918p02(realsolid=false) = [
 // 0 Slope Brick Curved  8 x  2 with Porsche Logo Pattern
 // 0 Name: 42918p02.dat
 // 0 Author: Ulrich Röder [UR]
@@ -17,7 +18,7 @@ function ldraw_lib__42918p02() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\42918s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__42918s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__42918s01(realsolid)],
 // 
 // 0 // Main
 // 4 16 20 0 40 -20 0 40 -20 .089 29.223 20 .089 29.223
@@ -2875,5 +2876,5 @@ function ldraw_lib__42918p02() = [
   [3,14,1.25,12.8257,-88.4861,1.41,12.839,-88.5494,1.78,12.824,-88.478],
 ];
 module ldraw_lib__42918p02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__42918p02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__42918p02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__42918p02(line=0.2);

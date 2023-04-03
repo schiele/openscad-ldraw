@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__8__2_4chrd() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__8__2_4chrd(realsolid=false) = [
 // 0 Chord 0.5
 // 0 Name: 8\2-4chrd.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -19,5 +20,5 @@ function ldraw_lib__8__2_4chrd() = [
   [4,16,.7071,0,.7071,-.7071,0,.7071,-1,0,0,1,0,0],
 ];
 module ldraw_lib__8__2_4chrd(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__8__2_4chrd(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__8__2_4chrd(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__8__2_4chrd(line=0.2);

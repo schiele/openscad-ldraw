@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4edge.scad>
 use <../p/stud16.scad>
-function ldraw_lib__92081() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__92081(realsolid=false) = [
 // 0 Minifig Hair Combed Front to Rear
 // 0 Name: 92081.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -1381,11 +1382,11 @@ function ldraw_lib__92081() = [
 // 2 24 12.902 8.412 -0.134 12.792 8.82 1.096
   [2,24,12.902,8.412,-0.134,12.792,8.82,1.096],
 // 1 16 0 -4 0 1 0 0 0 -1 0 0 0 -1 stud16.dat
-  [1,16,0,-4,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__stud16()],
+  [1,16,0,-4,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__stud16(realsolid)],
 // 1 16 0 -4 0 9 0 0 0 -1 0 0 0 9 4-4disc.dat
-  [1,16,0,-4,0,9,0,0,0,-1,0,0,0,9, ldraw_lib__4_4disc()],
+  [1,16,0,-4,0,9,0,0,0,-1,0,0,0,9, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 -4 0 9 0 0 0 1 0 0 0 9 4-4edge.dat
-  [1,16,0,-4,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4edge()],
+  [1,16,0,-4,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4edge(realsolid)],
 // 3 16 -12.309 2.63 1.799 -8.3151 -4 3.4443 -9 -4 0
   [3,16,-12.309,2.63,1.799,-8.3151,-4,3.4443,-9,-4,0],
 // 3 16 -12.309 2.63 1.799 -9 -4 0 -12.349 2.63 0
@@ -3610,5 +3611,5 @@ function ldraw_lib__92081() = [
   [4,16,-6.218,18.768,11.317,-0.046,18.907,12.89,0,2.63,12.349,-6.174,2.63,10.694],
 ];
 module ldraw_lib__92081(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__92081(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__92081(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__92081(line=0.2);

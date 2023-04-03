@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__21490c01s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__21490c01s01(realsolid=false) = [
 // 0 ~Figure Friends Cape Cloth Neck Area Formed
 // 0 Name: s\21490c01s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -1955,5 +1956,5 @@ function ldraw_lib__s__21490c01s01() = [
   [5,24,.507,-14.968,-5.052,.509,-14.741,-4.856,7.94,-14.65,-4.793,-7.135,-14.543,-4.763],
 ];
 module ldraw_lib__s__21490c01s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__21490c01s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__21490c01s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__21490c01s01(line=0.2);

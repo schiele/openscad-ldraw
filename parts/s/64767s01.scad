@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__64767s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__64767s01(realsolid=false) = [
 // 0 ~Minifig Head Spongebob Octopus Half without Front Surface
 // 0 Name: s\64767s01.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -1041,5 +1042,5 @@ function ldraw_lib__s__64767s01() = [
   [5,24,0,-4.662,-14.408,0,-4.115,-11.361,1.358,-4.863,-14.366,-1.358,-4.863,-14.366],
 ];
 module ldraw_lib__s__64767s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__64767s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__64767s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__64767s01(line=0.2);

@@ -3,7 +3,8 @@ use <../p/axleend.scad>
 use <../p/axlehol2.scad>
 use <../p/axlehol8.scad>
 use <../p/axlehol9.scad>
-function ldraw_lib__32062() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__32062(realsolid=false) = [
 // 0 Technic Axle  2 Notched
 // 0 Name: 32062.dat
 // 0 Author: Steve Bliss [sbliss]
@@ -24,39 +25,39 @@ function ldraw_lib__32062() = [
 // 
 // 
 // 1 16 -8 0 0 0 16 0 -1 0 0 0 0 1 axlehol8.dat
-  [1,16,-8,0,0,0,16,0,-1,0,0,0,0,1, ldraw_lib__axlehol8()],
+  [1,16,-8,0,0,0,16,0,-1,0,0,0,0,1, ldraw_lib__axlehol8(realsolid)],
 // 1 16 11 0 0 0 9 0 -1 0 0 0 0 1 axlehol8.dat
-  [1,16,11,0,0,0,9,0,-1,0,0,0,0,1, ldraw_lib__axlehol8()],
+  [1,16,11,0,0,0,9,0,-1,0,0,0,0,1, ldraw_lib__axlehol8(realsolid)],
 // 1 16 -20 0 0 0 9 0 -1 0 0 0 0 1 axlehol8.dat
-  [1,16,-20,0,0,0,9,0,-1,0,0,0,0,1, ldraw_lib__axlehol8()],
+  [1,16,-20,0,0,0,9,0,-1,0,0,0,0,1, ldraw_lib__axlehol8(realsolid)],
 // 1 16 -20 0 0 0 1 0 -1 0 0 0 0 1 axleend.dat
-  [1,16,-20,0,0,0,1,0,-1,0,0,0,0,1, ldraw_lib__axleend()],
+  [1,16,-20,0,0,0,1,0,-1,0,0,0,0,1, ldraw_lib__axleend(realsolid)],
 // 1 16 -8 0 0 0 1 0 -1 0 0 0 0 1 axleend.dat
-  [1,16,-8,0,0,0,1,0,-1,0,0,0,0,1, ldraw_lib__axleend()],
+  [1,16,-8,0,0,0,1,0,-1,0,0,0,0,1, ldraw_lib__axleend(realsolid)],
 // 1 16 11 0 0 0 1 0 -1 0 0 0 0 1 axleend.dat
-  [1,16,11,0,0,0,1,0,-1,0,0,0,0,1, ldraw_lib__axleend()],
+  [1,16,11,0,0,0,1,0,-1,0,0,0,0,1, ldraw_lib__axleend(realsolid)],
 // 1 16 -20 0 0 0 1 0 -1 0 0 0 0 1 axlehol2.dat
-  [1,16,-20,0,0,0,1,0,-1,0,0,0,0,1, ldraw_lib__axlehol2()],
+  [1,16,-20,0,0,0,1,0,-1,0,0,0,0,1, ldraw_lib__axlehol2(realsolid)],
 // 1 16 -11 0 0 0 1 0 -1 0 0 0 0 1 axlehol2.dat
-  [1,16,-11,0,0,0,1,0,-1,0,0,0,0,1, ldraw_lib__axlehol2()],
+  [1,16,-11,0,0,0,1,0,-1,0,0,0,0,1, ldraw_lib__axlehol2(realsolid)],
 // 1 16 -8 0 0 0 1 0 -1 0 0 0 0 1 axlehol2.dat
-  [1,16,-8,0,0,0,1,0,-1,0,0,0,0,1, ldraw_lib__axlehol2()],
+  [1,16,-8,0,0,0,1,0,-1,0,0,0,0,1, ldraw_lib__axlehol2(realsolid)],
 // 1 16 8 0 0 0 1 0 -1 0 0 0 0 1 axlehol2.dat
-  [1,16,8,0,0,0,1,0,-1,0,0,0,0,1, ldraw_lib__axlehol2()],
+  [1,16,8,0,0,0,1,0,-1,0,0,0,0,1, ldraw_lib__axlehol2(realsolid)],
 // 1 16 11 0 0 0 1 0 -1 0 0 0 0 1 axlehol2.dat
-  [1,16,11,0,0,0,1,0,-1,0,0,0,0,1, ldraw_lib__axlehol2()],
+  [1,16,11,0,0,0,1,0,-1,0,0,0,0,1, ldraw_lib__axlehol2(realsolid)],
 // 1 16 -20 0 0 0 1 0 -1 0 0 0 0 1 axlehol9.dat
-  [1,16,-20,0,0,0,1,0,-1,0,0,0,0,1, ldraw_lib__axlehol9()],
+  [1,16,-20,0,0,0,1,0,-1,0,0,0,0,1, ldraw_lib__axlehol9(realsolid)],
 // 1 16 20 0 0 0 -1 0 -1 0 0 0 0 1 axleend.dat
-  [1,16,20,0,0,0,-1,0,-1,0,0,0,0,1, ldraw_lib__axleend()],
+  [1,16,20,0,0,0,-1,0,-1,0,0,0,0,1, ldraw_lib__axleend(realsolid)],
 // 1 16 8 0 0 0 -1 0 -1 0 0 0 0 1 axleend.dat
-  [1,16,8,0,0,0,-1,0,-1,0,0,0,0,1, ldraw_lib__axleend()],
+  [1,16,8,0,0,0,-1,0,-1,0,0,0,0,1, ldraw_lib__axleend(realsolid)],
 // 1 16 -11 0 0 0 -1 0 -1 0 0 0 0 1 axleend.dat
-  [1,16,-11,0,0,0,-1,0,-1,0,0,0,0,1, ldraw_lib__axleend()],
+  [1,16,-11,0,0,0,-1,0,-1,0,0,0,0,1, ldraw_lib__axleend(realsolid)],
 // 1 16 20 0 0 0 1 0 -1 0 0 0 0 1 axlehol2.dat
-  [1,16,20,0,0,0,1,0,-1,0,0,0,0,1, ldraw_lib__axlehol2()],
+  [1,16,20,0,0,0,1,0,-1,0,0,0,0,1, ldraw_lib__axlehol2(realsolid)],
 // 1 16 20 0 0 0 1 0 -1 0 0 0 0 1 axlehol9.dat
-  [1,16,20,0,0,0,1,0,-1,0,0,0,0,1, ldraw_lib__axlehol9()],
+  [1,16,20,0,0,0,1,0,-1,0,0,0,0,1, ldraw_lib__axlehol9(realsolid)],
 // 2 24 -11 -5.58 2 -11 -3.58 2
   [2,24,-11,-5.58,2,-11,-3.58,2],
 // 2 24 -11 -3.58 2 -8 -3.58 2
@@ -316,5 +317,5 @@ function ldraw_lib__32062() = [
 // 0
 ];
 module ldraw_lib__32062(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__32062(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__32062(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__32062(line=0.2);

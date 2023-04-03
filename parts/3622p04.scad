@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3622s01.scad>
-function ldraw_lib__3622p04() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3622p04(realsolid=false) = [
 // 0 Brick  1 x  3 with Cat Face Sick Pattern
 // 0 Name: 3622p04.dat
 // 0 Author: John Troxler [Gargan]
@@ -18,7 +19,7 @@ function ldraw_lib__3622p04() = [
 // 
 // 0 // Brick without front face
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3622s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3622s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3622s01(realsolid)],
 // 
 // 0 // Front face
 // 4 326 -10.588 10.796 -10 -2.862 11.303 -10 -2.869 10.984 -10 -5.963 7.775 -10
@@ -2161,5 +2162,5 @@ function ldraw_lib__3622p04() = [
   [3,16,-27.209,16.934,-10,-27.331,17.151,-10,-26.768,16.566,-10],
 ];
 module ldraw_lib__3622p04(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3622p04(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3622p04(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3622p04(line=0.2);

@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <18675ps1s02.scad>
-function ldraw_lib__s__18675ps1s03() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__18675ps1s03(realsolid=false) = [
 // 0 ~Dish  6 x  6 Inverted - No Studs with Handle with Octagonal Cockpit Pattern -  Pattern around Handle 1/2
 // 0 Name: s\18675ps1s03.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -15,7 +16,7 @@ function ldraw_lib__s__18675ps1s03() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 -1 s\18675ps1s02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__18675ps1s02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__18675ps1s02(realsolid)],
 // 
 // 0 // Pattern Within Handle
 // 3 16 -11.646 -5.25 -43.4655 -13.9752 -.1 -52.1586 -5.8725 -5.25 -44.613
@@ -208,5 +209,5 @@ function ldraw_lib__s__18675ps1s03() = [
   [4,0,-40.937,2.5607,-40.937,-41.4082,3.016,-41.4082,-39.8549,3.016,-42.7694,-37.5661,2.5607,-43.8911],
 ];
 module ldraw_lib__s__18675ps1s03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__18675ps1s03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__18675ps1s03(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__18675ps1s03(line=0.2);

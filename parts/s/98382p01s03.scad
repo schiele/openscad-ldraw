@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__98382p01s03() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__98382p01s03(realsolid=false) = [
 // 0 ~Minifig Teddy Bear with Arms Down Muzzle Half with Black Nose Pattern
 // 0 Name: s\98382p01s03.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -187,5 +188,5 @@ function ldraw_lib__s__98382p01s03() = [
   [3,16,0,-35.14,-13.459,0,-33.72,-12.556,0.511,-34.675,-13.087],
 ];
 module ldraw_lib__s__98382p01s03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__98382p01s03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__98382p01s03(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__98382p01s03(line=0.2);

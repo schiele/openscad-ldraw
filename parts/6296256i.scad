@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__6296256i() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6296256i(realsolid=false) = [
 // 0 Sticker  0.4 x  4.5 with A-pillar in Bright Light Yellow
 // 0 Name: 6296256i.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -17,10 +18,10 @@ function ldraw_lib__6296256i() = [
 // 
 // 
 // 1 16 0 -.25 0 45 0 0 0 .25 0 0 0 4 box5-12.dat
-  [1,16,0,-.25,0,45,0,0,0,.25,0,0,0,4, ldraw_lib__box5_12()],
+  [1,16,0,-.25,0,45,0,0,0,.25,0,0,0,4, ldraw_lib__box5_12(realsolid)],
 // 4 226 45 -.25 4 -45 -.25 4 -45 -.25 -4 45 -.25 -4
   [4,226,45,-.25,4,-45,-.25,4,-45,-.25,-4,45,-.25,-4],
 ];
 module ldraw_lib__6296256i(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6296256i(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6296256i(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6296256i(line=0.2);

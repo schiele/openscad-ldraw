@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/1-4disc.scad>
 use <../../p/1-4ndis.scad>
-function ldraw_lib__s__190435cs01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__190435cs01(realsolid=false) = [
 // 0 ~Pattern Car Grille for Brick  1 x  4 - Mask
 // 0 Name: s\190435cs01.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -18,40 +19,40 @@ function ldraw_lib__s__190435cs01() = [
 // 0 // Left light corners
 // 
 // 1 16 -31.35 9 -10 -0.95 0 0 0 0 -1 0 1 0 1-4ndis.dat
-  [1,16,-31.35,9,-10,-0.95,0,0,0,0,-1,0,1,0, ldraw_lib__1_4ndis()],
+  [1,16,-31.35,9,-10,-0.95,0,0,0,0,-1,0,1,0, ldraw_lib__1_4ndis(realsolid)],
 // 1 16 -22.8 9 -10 0.95 0 0 0 0 -1 0 1 0 1-4ndis.dat
-  [1,16,-22.8,9,-10,0.95,0,0,0,0,-1,0,1,0, ldraw_lib__1_4ndis()],
+  [1,16,-22.8,9,-10,0.95,0,0,0,0,-1,0,1,0, ldraw_lib__1_4ndis(realsolid)],
 // 1 16 -31.35 15 -10 -0.95 0 0 0 0 1 0 1 0 1-4ndis.dat
-  [1,16,-31.35,15,-10,-0.95,0,0,0,0,1,0,1,0, ldraw_lib__1_4ndis()],
+  [1,16,-31.35,15,-10,-0.95,0,0,0,0,1,0,1,0, ldraw_lib__1_4ndis(realsolid)],
 // 1 16 -22.8 15 -10 0.95 0 0 0 0 1 0 1 0 1-4ndis.dat
-  [1,16,-22.8,15,-10,0.95,0,0,0,0,1,0,1,0, ldraw_lib__1_4ndis()],
+  [1,16,-22.8,15,-10,0.95,0,0,0,0,1,0,1,0, ldraw_lib__1_4ndis(realsolid)],
 // 0 // Right light corners
 // 1 16 22.8 9 -10 -0.95 0 0 0 0 -1 0 1 0 1-4ndis.dat
-  [1,16,22.8,9,-10,-0.95,0,0,0,0,-1,0,1,0, ldraw_lib__1_4ndis()],
+  [1,16,22.8,9,-10,-0.95,0,0,0,0,-1,0,1,0, ldraw_lib__1_4ndis(realsolid)],
 // 1 16 31.35 9 -10 0.95 0 0 0 0 -1 0 1 0 1-4ndis.dat
-  [1,16,31.35,9,-10,0.95,0,0,0,0,-1,0,1,0, ldraw_lib__1_4ndis()],
+  [1,16,31.35,9,-10,0.95,0,0,0,0,-1,0,1,0, ldraw_lib__1_4ndis(realsolid)],
 // 1 16 22.8 15 -10 -0.95 0 0 0 0 1 0 1 0 1-4ndis.dat
-  [1,16,22.8,15,-10,-0.95,0,0,0,0,1,0,1,0, ldraw_lib__1_4ndis()],
+  [1,16,22.8,15,-10,-0.95,0,0,0,0,1,0,1,0, ldraw_lib__1_4ndis(realsolid)],
 // 1 16 31.35 15 -10 0.95 0 0 0 0 1 0 1 0 1-4ndis.dat
-  [1,16,31.35,15,-10,0.95,0,0,0,0,1,0,1,0, ldraw_lib__1_4ndis()],
+  [1,16,31.35,15,-10,0.95,0,0,0,0,1,0,1,0, ldraw_lib__1_4ndis(realsolid)],
 // 0 // Line corners inside
 // 1 16 32.3 8 -10 1.9 0 0 0 0 -2 0 1 0 1-4disc.dat
-  [1,16,32.3,8,-10,1.9,0,0,0,0,-2,0,1,0, ldraw_lib__1_4disc()],
+  [1,16,32.3,8,-10,1.9,0,0,0,0,-2,0,1,0, ldraw_lib__1_4disc(realsolid)],
 // 1 16 -32.3 8 -10 -1.9 0 0 0 0 -2 0 1 0 1-4disc.dat
-  [1,16,-32.3,8,-10,-1.9,0,0,0,0,-2,0,1,0, ldraw_lib__1_4disc()],
+  [1,16,-32.3,8,-10,-1.9,0,0,0,0,-2,0,1,0, ldraw_lib__1_4disc(realsolid)],
 // 1 16 32.3 16 -10 1.9 0 0 0 0 2 0 1 0 1-4disc.dat
-  [1,16,32.3,16,-10,1.9,0,0,0,0,2,0,1,0, ldraw_lib__1_4disc()],
+  [1,16,32.3,16,-10,1.9,0,0,0,0,2,0,1,0, ldraw_lib__1_4disc(realsolid)],
 // 1 16 -32.3 16 -10 -1.9 0 0 0 0 2 0 1 0 1-4disc.dat
-  [1,16,-32.3,16,-10,-1.9,0,0,0,0,2,0,1,0, ldraw_lib__1_4disc()],
+  [1,16,-32.3,16,-10,-1.9,0,0,0,0,2,0,1,0, ldraw_lib__1_4disc(realsolid)],
 // 0 // Line corners outside
 // 1 16 32.3 8 -10 2.85 0 0 0 0 -3 0 1 0 1-4ndis.dat
-  [1,16,32.3,8,-10,2.85,0,0,0,0,-3,0,1,0, ldraw_lib__1_4ndis()],
+  [1,16,32.3,8,-10,2.85,0,0,0,0,-3,0,1,0, ldraw_lib__1_4ndis(realsolid)],
 // 1 16 -32.3 8 -10 -2.85 0 0 0 0 -3 0 1 0 1-4ndis.dat
-  [1,16,-32.3,8,-10,-2.85,0,0,0,0,-3,0,1,0, ldraw_lib__1_4ndis()],
+  [1,16,-32.3,8,-10,-2.85,0,0,0,0,-3,0,1,0, ldraw_lib__1_4ndis(realsolid)],
 // 1 16 32.3 16 -10 2.85 0 0 0 0 3 0 1 0 1-4ndis.dat
-  [1,16,32.3,16,-10,2.85,0,0,0,0,3,0,1,0, ldraw_lib__1_4ndis()],
+  [1,16,32.3,16,-10,2.85,0,0,0,0,3,0,1,0, ldraw_lib__1_4ndis(realsolid)],
 // 1 16 -32.3 16 -10 -2.85 0 0 0 0 3 0 1 0 1-4ndis.dat
-  [1,16,-32.3,16,-10,-2.85,0,0,0,0,3,0,1,0, ldraw_lib__1_4ndis()],
+  [1,16,-32.3,16,-10,-2.85,0,0,0,0,3,0,1,0, ldraw_lib__1_4ndis(realsolid)],
 // 0 // Outside
 // 3 16 -37.5 3 -10 -35.15 5 -10 -32.3 5 -10
   [3,16,-37.5,3,-10,-35.15,5,-10,-32.3,5,-10],
@@ -142,5 +143,5 @@ function ldraw_lib__s__190435cs01() = [
   [3,16,34.2,8,-10,32.3,8,-10,32.3,9,-10],
 ];
 module ldraw_lib__s__190435cs01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__190435cs01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__190435cs01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__190435cs01(line=0.2);

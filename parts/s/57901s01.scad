@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/2-4cylc.scad>
-function ldraw_lib__s__57901s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__57901s01(realsolid=false) = [
 // 0 ~Minifig Head Nautolan Half without Patterned Areas
 // 0 Name: s\57901s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -4183,7 +4184,7 @@ function ldraw_lib__s__57901s01() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -30 0 0 0 6 0 30 0 -6 0 0 2-4cylc.dat
-  [1,16,0,-30,0,0,0,6,0,30,0,-6,0,0, ldraw_lib__2_4cylc()],
+  [1,16,0,-30,0,0,0,6,0,30,0,-6,0,0, ldraw_lib__2_4cylc(realsolid)],
 // 3 16 3.1 0 -9.2 0 0 -9 0 0 -6
   [3,16,3.1,0,-9.2,0,0,-9,0,0,-6],
 // 4 16 2.3 0 -5.5 4.9 0 -9.4 3.1 0 -9.2 0 0 -6
@@ -9680,5 +9681,5 @@ function ldraw_lib__s__57901s01() = [
   [5,24,0,-34.3,3.3,0,-34.2,3,0.7,-34.4,3.3,-0.7,-34.4,3.3],
 ];
 module ldraw_lib__s__57901s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__57901s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__57901s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__57901s01(line=0.2);

@@ -4,7 +4,8 @@ use <../p/3-8edge.scad>
 use <../p/4-4cylc.scad>
 use <../p/4-4edge.scad>
 use <../p/stud4o.scad>
-function ldraw_lib__11605() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__11605(realsolid=false) = [
 // 0 Figure Friends Hair Long with Ponytail French Braided with  1 Pin Holes
 // 0 Name: 11605.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -25,17 +26,17 @@ function ldraw_lib__11605() = [
 // 
 // 
 // 1 16 0 -5 0 1 0 0 0 -1.25 0 0 0 -1 stud4o.dat
-  [1,16,0,-5,0,1,0,0,0,-1.25,0,0,0,-1, ldraw_lib__stud4o()],
+  [1,16,0,-5,0,1,0,0,0,-1.25,0,0,0,-1, ldraw_lib__stud4o(realsolid)],
 // 1 16 0 0 0 8 0 0 0 1 0 0 0 8 4-4edge.dat
-  [1,16,0,0,0,8,0,0,0,1,0,0,0,8, ldraw_lib__4_4edge()],
+  [1,16,0,0,0,8,0,0,0,1,0,0,0,8, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 -0.4 0 -7.39104 0 3.06147 0 1 0 -3.06147 0 -7.39104 3-8edge.dat
-  [1,16,0,-0.4,0,-7.39104,0,3.06147,0,1,0,-3.06147,0,-7.39104, ldraw_lib__3_8edge()],
+  [1,16,0,-0.4,0,-7.39104,0,3.06147,0,1,0,-3.06147,0,-7.39104, ldraw_lib__3_8edge(realsolid)],
 // 1 16 0 -0.4 0 -7.39104 0 3.06147 0 0.4 0 -3.06147 0 -7.39104 3-8cyli.dat
-  [1,16,0,-0.4,0,-7.39104,0,3.06147,0,0.4,0,-3.06147,0,-7.39104, ldraw_lib__3_8cyli()],
+  [1,16,0,-0.4,0,-7.39104,0,3.06147,0,0.4,0,-3.06147,0,-7.39104, ldraw_lib__3_8cyli(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -0.74 4.8 14.37 2 0 0 0 0 2 0 7.2 0.3 4-4cylc.dat
-  [1,16,-0.74,4.8,14.37,2,0,0,0,0,2,0,7.2,0.3, ldraw_lib__4_4cylc()],
+  [1,16,-0.74,4.8,14.37,2,0,0,0,0,2,0,7.2,0.3, ldraw_lib__4_4cylc(realsolid)],
 // 3 16 -8 0 0 -7.3912 0 -3.0616 -7.391 -0.4 -3.0615
   [3,16,-8,0,0,-7.3912,0,-3.0616,-7.391,-0.4,-3.0615],
 // 3 16 7.391 -0.4 -3.0614 7.3912 0 -3.0616 7.93 -0.4 -0.78
@@ -9207,5 +9208,5 @@ function ldraw_lib__11605() = [
   [5,24,12.27,13.29,-4.23,12.54,17.46,-3.67,12.36,14.55,-4.15,12.53,12.3,-3.62],
 ];
 module ldraw_lib__11605(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__11605(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__11605(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__11605(line=0.2);

@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__2525ps1a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__2525ps1a(realsolid=false) = [
 // 0 ~Flag  6 x  4 with SW Jedi Starfighter Pattern - Maroon
 // 0 Name: s\2525ps1a.dat
 // 0 Author: Chris Dee [cwdee]
@@ -50,5 +51,5 @@ function ldraw_lib__s__2525ps1a() = [
 // 0
 ];
 module ldraw_lib__s__2525ps1a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__2525ps1a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__2525ps1a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__2525ps1a(line=0.2);

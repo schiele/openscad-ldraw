@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <30259p03.scad>
-function ldraw_lib__4116679() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4116679(realsolid=false) = [
 // 0 ~_Roadsign Clip-on  2.2 x  2.667 Triangular with Bend Pattern White (Obsolete)
 // 0 Name: 4116679.dat
 // 0 Author: [PTadmin]
@@ -20,8 +21,8 @@ function ldraw_lib__4116679() = [
 // 0 // colouring of the part (White).
 // 
 // 1 15 0 0 0 1 0 0 0 1 0 0 0 1 30259p03.dat
-  [1,15,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__30259p03()],
+  [1,15,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__30259p03(realsolid)],
 ];
 module ldraw_lib__4116679(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4116679(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4116679(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4116679(line=0.2);

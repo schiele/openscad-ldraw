@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__987() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__987(realsolid=false) = [
 // 0 ~Technic Axle Joiner  3 x  2 with Spring - Spring
 // 0 Name: 987.dat
 // 0 Author: Michael Heidemann [mikeheide]
@@ -1554,5 +1555,5 @@ function ldraw_lib__987() = [
   [4,16,7.973,0,-3.303,8.63,0,0,9.26,0.63,0,8.555,0.63,-3.544],
 ];
 module ldraw_lib__987(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__987(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__987(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__987(line=0.2);

@@ -3,7 +3,8 @@ use <../p/box4-1.scad>
 use <../p/box5.scad>
 use <../p/stud7.scad>
 use <../p/stud8.scad>
-function ldraw_lib__31110() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__31110(realsolid=false) = [
 // 0 Duplo Brick  2 x  2  x 2
 // 0 Name: 31110.dat
 // 0 Author: Tony Hafner [hafhead]
@@ -24,11 +25,11 @@ function ldraw_lib__31110() = [
 // 
 // 
 // 1 16 0 4 0 1 0 0 0 -22 0 0 0 1 stud8.dat
-  [1,16,0,4,0,1,0,0,0,-22,0,0,0,1, ldraw_lib__stud8()],
+  [1,16,0,4,0,1,0,0,0,-22,0,0,0,1, ldraw_lib__stud8(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 96 0 36 0 0 0 -92 0 0 0 36 box5.dat
-  [1,16,0,96,0,36,0,0,0,-92,0,0,0,36, ldraw_lib__box5()],
+  [1,16,0,96,0,36,0,0,0,-92,0,0,0,36, ldraw_lib__box5(realsolid)],
 // 4 16 40 96 40 36 96 36 -36 96 36 -40 96 40
   [4,16,40,96,40,36,96,36,-36,96,36,-40,96,40],
 // 4 16 -40 96 40 -36 96 36 -36 96 -36 -40 96 -40
@@ -38,33 +39,33 @@ function ldraw_lib__31110() = [
 // 4 16 40 96 -40 36 96 -36 36 96 36 40 96 40
   [4,16,40,96,-40,36,96,-36,36,96,36,40,96,40],
 // 1 16 0 96 0 40 0 0 0 -96 0 0 0 40 box5.dat
-  [1,16,0,96,0,40,0,0,0,-96,0,0,0,40, ldraw_lib__box5()],
+  [1,16,0,96,0,40,0,0,0,-96,0,0,0,40, ldraw_lib__box5(realsolid)],
 // 1 16 20 0 20 1 0 0 0 2.75 0 0 0 1 stud7.dat
-  [1,16,20,0,20,1,0,0,0,2.75,0,0,0,1, ldraw_lib__stud7()],
+  [1,16,20,0,20,1,0,0,0,2.75,0,0,0,1, ldraw_lib__stud7(realsolid)],
 // 1 16 -20 0 20 1 0 0 0 2.75 0 0 0 1 stud7.dat
-  [1,16,-20,0,20,1,0,0,0,2.75,0,0,0,1, ldraw_lib__stud7()],
+  [1,16,-20,0,20,1,0,0,0,2.75,0,0,0,1, ldraw_lib__stud7(realsolid)],
 // 1 16 20 0 -20 1 0 0 0 2.75 0 0 0 1 stud7.dat
-  [1,16,20,0,-20,1,0,0,0,2.75,0,0,0,1, ldraw_lib__stud7()],
+  [1,16,20,0,-20,1,0,0,0,2.75,0,0,0,1, ldraw_lib__stud7(realsolid)],
 // 1 16 -20 0 -20 1 0 0 0 2.75 0 0 0 1 stud7.dat
-  [1,16,-20,0,-20,1,0,0,0,2.75,0,0,0,1, ldraw_lib__stud7()],
+  [1,16,-20,0,-20,1,0,0,0,2.75,0,0,0,1, ldraw_lib__stud7(realsolid)],
 // 1 16 20 4 -34 1.5 0 0 0 91 0 0 0 2 box4-1.dat
-  [1,16,20,4,-34,1.5,0,0,0,91,0,0,0,2, ldraw_lib__box4_1()],
+  [1,16,20,4,-34,1.5,0,0,0,91,0,0,0,2, ldraw_lib__box4_1(realsolid)],
 // 1 16 -20 4 -34 1.5 0 0 0 91 0 0 0 2 box4-1.dat
-  [1,16,-20,4,-34,1.5,0,0,0,91,0,0,0,2, ldraw_lib__box4_1()],
+  [1,16,-20,4,-34,1.5,0,0,0,91,0,0,0,2, ldraw_lib__box4_1(realsolid)],
 // 1 16 20 4 34 1.5 0 0 0 91 0 0 0 -2 box4-1.dat
-  [1,16,20,4,34,1.5,0,0,0,91,0,0,0,-2, ldraw_lib__box4_1()],
+  [1,16,20,4,34,1.5,0,0,0,91,0,0,0,-2, ldraw_lib__box4_1(realsolid)],
 // 1 16 -20 4 34 1.5 0 0 0 91 0 0 0 -2 box4-1.dat
-  [1,16,-20,4,34,1.5,0,0,0,91,0,0,0,-2, ldraw_lib__box4_1()],
+  [1,16,-20,4,34,1.5,0,0,0,91,0,0,0,-2, ldraw_lib__box4_1(realsolid)],
 // 1 16 -34 4 -20 0 0 2 0 91 0 -1.5 0 0 box4-1.dat
-  [1,16,-34,4,-20,0,0,2,0,91,0,-1.5,0,0, ldraw_lib__box4_1()],
+  [1,16,-34,4,-20,0,0,2,0,91,0,-1.5,0,0, ldraw_lib__box4_1(realsolid)],
 // 1 16 34 4 -20 0 0 -2 0 91 0 1.5 0 0 box4-1.dat
-  [1,16,34,4,-20,0,0,-2,0,91,0,1.5,0,0, ldraw_lib__box4_1()],
+  [1,16,34,4,-20,0,0,-2,0,91,0,1.5,0,0, ldraw_lib__box4_1(realsolid)],
 // 1 16 -34 4 20 0 0 2 0 91 0 -1.5 0 0 box4-1.dat
-  [1,16,-34,4,20,0,0,2,0,91,0,-1.5,0,0, ldraw_lib__box4_1()],
+  [1,16,-34,4,20,0,0,2,0,91,0,-1.5,0,0, ldraw_lib__box4_1(realsolid)],
 // 1 16 34 4 20 0 0 -2 0 91 0 1.5 0 0 box4-1.dat
-  [1,16,34,4,20,0,0,-2,0,91,0,1.5,0,0, ldraw_lib__box4_1()],
+  [1,16,34,4,20,0,0,-2,0,91,0,1.5,0,0, ldraw_lib__box4_1(realsolid)],
 // 0
 ];
 module ldraw_lib__31110(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__31110(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__31110(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__31110(line=0.2);

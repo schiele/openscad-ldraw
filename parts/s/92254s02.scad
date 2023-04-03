@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/stud4o.scad>
-function ldraw_lib__s__92254s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__92254s02(realsolid=false) = [
 // 0 ~Figure Friends Hair Long with Ponytail and Side Bangs
 // 0 Name: s\92254s02.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -17,7 +18,7 @@ function ldraw_lib__s__92254s02() = [
 // 
 // 
 // 1 16 0 -5.2 0 1 0 0 0 -1.3 0 0 0 -1 stud4o.dat
-  [1,16,0,-5.2,0,1,0,0,0,-1.3,0,0,0,-1, ldraw_lib__stud4o()],
+  [1,16,0,-5.2,0,1,0,0,0,-1.3,0,0,0,-1, ldraw_lib__stud4o(realsolid)],
 // 2 24 12.55 12.629 3.617 10.266 17.45 8.052
   [2,24,12.55,12.629,3.617,10.266,17.45,8.052],
 // 2 24 6.854 19.245 10.96 2.792 20.159 12.714
@@ -2916,5 +2917,5 @@ function ldraw_lib__s__92254s02() = [
   [5,24,0,0,-8,-4.823,1.161,-10.086,-3.0616,0,-7.3912,0,1.134,-11.424],
 ];
 module ldraw_lib__s__92254s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__92254s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__92254s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__92254s02(line=0.2);

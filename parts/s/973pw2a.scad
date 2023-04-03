@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/4-4disc.scad>
-function ldraw_lib__s__973pw2a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__973pw2a(realsolid=false) = [
 // 0 ~Minifig Torso with US Cavalry Officer Pattern - Gold
 // 0 Name: s\973pw2a.dat
 // 0 Author: Willy Tschager [Holly-Wood]
@@ -17,7 +18,7 @@ function ldraw_lib__s__973pw2a() = [
 // 0 // Gold
 // 
 // 1 16 11.64 30.14 -10 1.117 0 0 0 0 -0.512 0 1 0 4-4disc.dat
-  [1,16,11.64,30.14,-10,1.117,0,0,0,0,-0.512,0,1,0, ldraw_lib__4_4disc()],
+  [1,16,11.64,30.14,-10,1.117,0,0,0,0,-0.512,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 4 16 -11.06 0 -10 -11.48 0.85 -10 -11.11 0.88 -10 -10.65 0 -10
   [4,16,-11.06,0,-10,-11.48,0.85,-10,-11.11,0.88,-10,-10.65,0,-10],
 // 4 16 -11.48 0.85 -10 -12.02 2.22 -10 -11.62 2.25 -10 -11.11 0.88 -10
@@ -61,5 +62,5 @@ function ldraw_lib__s__973pw2a() = [
 // 0
 ];
 module ldraw_lib__s__973pw2a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__973pw2a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__973pw2a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__973pw2a(line=0.2);

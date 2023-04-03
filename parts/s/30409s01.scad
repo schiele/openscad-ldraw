@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/t04o4167.scad>
-function ldraw_lib__s__30409s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__30409s01(realsolid=false) = [
 // 0 ~Minifig Hair with Two Buns - Half
 // 0 Name: s\30409s01.dat
 // 0 Author: Michael Heidemann [mikeheide]
@@ -2062,11 +2063,11 @@ function ldraw_lib__s__30409s01() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 3.75 0 -9 0 0 0 -9 0 0 0 -9 t04o4167.dat
-  [1,16,0,3.75,0,-9,0,0,0,-9,0,0,0,-9, ldraw_lib__t04o4167()],
+  [1,16,0,3.75,0,-9,0,0,0,-9,0,0,0,-9, ldraw_lib__t04o4167(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 3.75 0 0 0 -9 0 -9 0 9 0 0 t04o4167.dat
-  [1,16,0,3.75,0,0,0,-9,0,-9,0,9,0,0, ldraw_lib__t04o4167()],
+  [1,16,0,3.75,0,0,0,-9,0,-9,0,9,0,0, ldraw_lib__t04o4167(realsolid)],
 // 3 16 0 5.45 12.73 0 3.75 12.75 -3.08 5.9 12.29
   [3,16,0,5.45,12.73,0,3.75,12.75,-3.08,5.9,12.29],
 // 3 16 -3.08 5.9 12.29 0 3.75 12.75 -4.88 3.75 11.78
@@ -4690,5 +4691,5 @@ function ldraw_lib__s__30409s01() = [
   [5,24,0,3.75,-12.75,-3.93,17.54,-12.11,-4.88,3.75,-11.78,0,17.1,-12.73],
 ];
 module ldraw_lib__s__30409s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__30409s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__30409s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__30409s01(line=0.2);

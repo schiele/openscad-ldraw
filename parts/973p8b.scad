@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/1-4cyli.scad>
 use <../p/4-4ring3.scad>
 use <s/973s01.scad>
-function ldraw_lib__973p8b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__973p8b(realsolid=false) = [
 // 0 Minifig Torso with RES-Q Orange Pockets and Logo Pattern
 // 0 Name: 973p8b.dat
 // 0 Author: Thomas Burger [grapeape]
@@ -26,10 +27,10 @@ function ldraw_lib__973p8b() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01(realsolid)],
 // 0 // neck mark
 // 1 0 0 -4 0 4.24 0 -4.24 0 -8 0 -4.24 0 -4.24 1-4cyli.dat
-  [1,0,0,-4,0,4.24,0,-4.24,0,-8,0,-4.24,0,-4.24, ldraw_lib__1_4cyli()],
+  [1,0,0,-4,0,4.24,0,-4.24,0,-8,0,-4.24,0,-4.24, ldraw_lib__1_4cyli(realsolid)],
 // 0 // front pattern
 // 4 25 -6.1 23.3 -10 -7.5 22.5 -10 -12.9 30 -10 -11.6 30.9 -10
   [4,25,-6.1,23.3,-10,-7.5,22.5,-10,-12.9,30,-10,-11.6,30.9,-10],
@@ -423,7 +424,7 @@ function ldraw_lib__973p8b() = [
   [4,16,12,0,-10,-12,0,-10,-10.1,1.2,-10,9.8,1.2,-10],
 // 0 // back pattern
 // 1 25 0.4 16.3 10 -1 0 0 0 0 1 0 -1 0 4-4ring3.dat
-  [1,25,0.4,16.3,10,-1,0,0,0,0,1,0,-1,0, ldraw_lib__4_4ring3()],
+  [1,25,0.4,16.3,10,-1,0,0,0,0,1,0,-1,0, ldraw_lib__4_4ring3(realsolid)],
 // 4 0 -1.7 17.5 10 -1.721 18.421 10 -2.372 17.448 10 -2.1 16.7 10
   [4,0,-1.7,17.5,10,-1.721,18.421,10,-2.372,17.448,10,-2.1,16.7,10],
 // 4 0 -2.1 16.7 10 -2.372 17.448 10 -2.6 16.3 10 -2.1 15.9 10
@@ -762,5 +763,5 @@ function ldraw_lib__973p8b() = [
   [4,16,-12,0,10,12,0,10,8.6,5.4,10,-9.5,5.4,10],
 ];
 module ldraw_lib__973p8b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__973p8b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__973p8b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__973p8b(line=0.2);

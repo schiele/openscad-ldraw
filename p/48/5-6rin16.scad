@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__48__5_6rin16() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__48__5_6rin16(realsolid=false) = [
 // 0 Hi-Res Ring 16 x 0.8333
 // 0 Name: 48\5-6rin16.dat
 // 0 Author: Alex Taylor [anathema]
@@ -96,5 +97,5 @@ function ldraw_lib__48__5_6rin16() = [
 // 0
 ];
 module ldraw_lib__48__5_6rin16(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__48__5_6rin16(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__48__5_6rin16(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__48__5_6rin16(line=0.2);

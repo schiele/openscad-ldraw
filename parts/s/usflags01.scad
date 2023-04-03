@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <usflags02.scad>
 use <usflags03.scad>
-function ldraw_lib__s__usflags01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__usflags01(realsolid=false) = [
 // 0 ~United States Flag
 // 0 Name: s\usflags01.dat
 // 0 Author: Orion Pobursky [OrionP]
@@ -23,10 +24,10 @@ function ldraw_lib__s__usflags01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\usflags02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__usflags02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__usflags02(realsolid)],
 // 1 16 76 0 0 114 0 0 0 1 0 0 0 1 s\usflags03.dat
-  [1,16,76,0,0,114,0,0,0,1,0,0,0,1, ldraw_lib__s__usflags03()],
+  [1,16,76,0,0,114,0,0,0,1,0,0,0,1, ldraw_lib__s__usflags03(realsolid)],
 ];
 module ldraw_lib__s__usflags01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__usflags01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__usflags01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__usflags01(line=0.2);

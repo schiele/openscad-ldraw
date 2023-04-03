@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__48__3_8chrd() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__48__3_8chrd(realsolid=false) = [
 // 0 Hi-Res Chord 0.375
 // 0 Name: 48\3-8chrd.dat
 // 0 Author: Alex Taylor [anathema]
@@ -49,5 +50,5 @@ function ldraw_lib__48__3_8chrd() = [
   [3,16,1,0,0,-0.6088,0,0.7934,-0.7071,0,0.7071],
 ];
 module ldraw_lib__48__3_8chrd(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__48__3_8chrd(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__48__3_8chrd(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__48__3_8chrd(line=0.2);

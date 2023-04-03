@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/48/8-8sphe.scad>
-function ldraw_lib__light() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__light(realsolid=false) = [
 // 0 ~Light Source
 // 0 Name: light.dat
 // 0 Author: James Jessiman
@@ -33,8 +34,8 @@ function ldraw_lib__light() = [
   [0,"BFC","NOCLIP"],
 // 
 // 1 16 0 0 0 22 0 0 0 22 0 0 0 22 48\8-8sphe.dat
-  [1,16,0,0,0,22,0,0,0,22,0,0,0,22, ldraw_lib__48__8_8sphe()],
+  [1,16,0,0,0,22,0,0,0,22,0,0,0,22, ldraw_lib__48__8_8sphe(realsolid)],
 ];
 module ldraw_lib__light(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__light(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__light(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__light(line=0.2);

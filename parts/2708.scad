@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/4-4cylc.scad>
 use <../p/t04o6250.scad>
-function ldraw_lib__2708() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2708(realsolid=false) = [
 // 0 Technic Action Figure Hair
 // 0 Name: 2708.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -18,15 +19,15 @@ function ldraw_lib__2708() = [
 // 
 // 
 // 1 16 0 4 0 9.84615 0 0 0 -4 0 0 0 9.84615 4-4cylc.dat
-  [1,16,0,4,0,9.84615,0,0,0,-4,0,0,0,9.84615, ldraw_lib__4_4cylc()],
+  [1,16,0,4,0,9.84615,0,0,0,-4,0,0,0,9.84615, ldraw_lib__4_4cylc(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 8 0 -9.84615 0 0 0 -12.8 0 0 0 9.84615 t04o6250.dat
-  [1,16,0,8,0,-9.84615,0,0,0,-12.8,0,0,0,9.84615, ldraw_lib__t04o6250()],
+  [1,16,0,8,0,-9.84615,0,0,0,-12.8,0,0,0,9.84615, ldraw_lib__t04o6250(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 8 0 0 0 9.84615 0 -12.8 0 9.84615 0 0 t04o6250.dat
-  [1,16,0,8,0,0,0,9.84615,0,-12.8,0,9.84615,0,0, ldraw_lib__t04o6250()],
+  [1,16,0,8,0,0,0,9.84615,0,-12.8,0,9.84615,0,0, ldraw_lib__t04o6250(realsolid)],
 // 3 16 -1.271 16.249 20.898 -0.139 17.43 20.866 -1.122 18.936 20.306
   [3,16,-1.271,16.249,20.898,-0.139,17.43,20.866,-1.122,18.936,20.306],
 // 3 16 -2.724 19.292 19.644 -2.123 16.049 20.658 -1.122 18.936 20.306
@@ -10707,5 +10708,5 @@ function ldraw_lib__2708() = [
 // 0 //
 ];
 module ldraw_lib__2708(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2708(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2708(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2708(line=0.2);

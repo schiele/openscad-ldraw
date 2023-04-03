@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/rect.scad>
-function ldraw_lib__s__30324s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__30324s01(realsolid=false) = [
 // 0 ~Wheel Hard with Treads - Single Tread Section
 // 0 Name: s\30324s01.dat
 // 0 Author: Chris Dee [cwdee]
@@ -144,7 +145,7 @@ function ldraw_lib__s__30324s01() = [
 // 4 16 40 -5 -49 39 -5 -50 39 5 -50 40 5 -49
   [4,16,40,-5,-49,39,-5,-50,39,5,-50,40,5,-49],
 // 1 16 43 0 -49 3 0 0 0 0 5 0 1 0 rect.dat
-  [1,16,43,0,-49,3,0,0,0,0,5,0,1,0, ldraw_lib__rect()],
+  [1,16,43,0,-49,3,0,0,0,0,5,0,1,0, ldraw_lib__rect(realsolid)],
 // 4 16 54 -5 -41 46 -5 -49 46 5 -49 54 5 -41
   [4,16,54,-5,-41,46,-5,-49,46,5,-49,54,5,-41],
 // 2 24 46 5 -49 54 5 -41
@@ -152,7 +153,7 @@ function ldraw_lib__s__30324s01() = [
 // 2 24 46 -5 -49 54 -5 -41
   [2,24,46,-5,-49,54,-5,-41],
 // 1 16 54 0 -28.5 0 -1 0 5 0 0 0 0 12.5 rect.dat
-  [1,16,54,0,-28.5,0,-1,0,5,0,0,0,0,12.5, ldraw_lib__rect()],
+  [1,16,54,0,-28.5,0,-1,0,5,0,0,0,0,12.5, ldraw_lib__rect(realsolid)],
 // 4 16 55 -5 -9 54 -5 -16 54 5 -16 55 5 -9
   [4,16,55,-5,-9,54,-5,-16,54,5,-16,55,5,-9],
 // 5 24 55 5 -9 55 -5 -9 54 5 -16 54 5 -2
@@ -160,7 +161,7 @@ function ldraw_lib__s__30324s01() = [
 // 4 16 54 -5 -2 55 -5 -9 55 5 -9 54 5 -2
   [4,16,54,-5,-2,55,-5,-9,55,5,-9,54,5,-2],
 // 1 16 54 0 5 0 -1 0 5 0 0 0 0 7 rect.dat
-  [1,16,54,0,5,0,-1,0,5,0,0,0,0,7, ldraw_lib__rect()],
+  [1,16,54,0,5,0,-1,0,5,0,0,0,0,7, ldraw_lib__rect(realsolid)],
 // 2 24 49 5 20 54 5 12
   [2,24,49,5,20,54,5,12],
 // 2 24 49 -5 20 54 -5 12
@@ -271,5 +272,5 @@ function ldraw_lib__s__30324s01() = [
 // 
 ];
 module ldraw_lib__s__30324s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__30324s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__30324s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__30324s01(line=0.2);

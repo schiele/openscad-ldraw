@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/48/1-16cyli.scad>
 use <s/61068s01.scad>
 use <s/88930s01.scad>
-function ldraw_lib__88930pz3() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__88930pz3(realsolid=false) = [
 // 0 Slope Brick Curved  2 x  4 with Dark Red Trapezoid with Black Outline and  2 Black Angled Lines Pattern
 // 0 Name: 88930pz3.dat
 // 0 Author: Vincent Messenet [Cheenzo]
@@ -20,16 +21,16 @@ function ldraw_lib__88930pz3() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\61068s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__61068s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__61068s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\88930s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__88930s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__88930s01(realsolid)],
 // 1 16 20 0 0 1 0 0 0 1 0 0 0 1 s\88930s01.dat
-  [1,16,20,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__88930s01()],
+  [1,16,20,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__88930s01(realsolid)],
 // 1 16 -20 0 0 1 0 0 0 1 0 0 0 1 s\88930s01.dat
-  [1,16,-20,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__88930s01()],
+  [1,16,-20,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__88930s01(realsolid)],
 // 
 // 1 16 -40 24.97 20 0 80 0 -40.96 0 0 0 0 -56.58 48\1-16cyli.dat
-  [1,16,-40,24.97,20,0,80,0,-40.96,0,0,0,0,-56.58, ldraw_lib__48__1_16cyli()],
+  [1,16,-40,24.97,20,0,80,0,-40.96,0,0,0,0,-56.58, ldraw_lib__48__1_16cyli(realsolid)],
 // 
 // 3 0 -38.25 -9.344 -10.686 -38.849 -7.538 -14.444 -37.651 -7.538 -14.444
   [3,0,-38.25,-9.344,-10.686,-38.849,-7.538,-14.444,-37.651,-7.538,-14.444],
@@ -117,5 +118,5 @@ function ldraw_lib__88930pz3() = [
   [5,24,-40,-7.528,-14.446,40,-7.528,-14.446,-40,-3.993,-20.008,-40,-10.501,-8.29],
 ];
 module ldraw_lib__88930pz3(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__88930pz3(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__88930pz3(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__88930pz3(line=0.2);

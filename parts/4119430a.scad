@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/48/4-4cylc3.scad>
 use <../p/48/4-4disc.scad>
-function ldraw_lib__4119430a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4119430a(realsolid=false) = [
 // 0 Sticker  3.2 x  3.2 Round Mirror
 // 0 Name: 4119430a.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -23,10 +24,10 @@ function ldraw_lib__4119430a() = [
 // 
 // 
 // 1 383 0 0 0 32 0 0 0 -0.25 0 0 0 32 48\4-4cylc3.dat
-  [1,383,0,0,0,32,0,0,0,-0.25,0,0,0,32, ldraw_lib__48__4_4cylc3()],
+  [1,383,0,0,0,32,0,0,0,-0.25,0,0,0,32, ldraw_lib__48__4_4cylc3(realsolid)],
 // 1 383 0 -0.25 0 32 0 0 0 1 0 0 0 32 48\4-4disc.dat
-  [1,383,0,-0.25,0,32,0,0,0,1,0,0,0,32, ldraw_lib__48__4_4disc()],
+  [1,383,0,-0.25,0,32,0,0,0,1,0,0,0,32, ldraw_lib__48__4_4disc(realsolid)],
 ];
 module ldraw_lib__4119430a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4119430a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4119430a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4119430a(line=0.2);

@@ -3,7 +3,8 @@ use <../p/box5-12.scad>
 use <../p/logo-technic-1.scad>
 use <../p/logo-technic-2.scad>
 use <s/99141s02.scad>
-function ldraw_lib__4548064c() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4548064c(realsolid=false) = [
 // 0 Sticker  0.8 x  5.8 with "TECHNIC" Logo and Yellow on Right
 // 0 Name: 4548064c.dat
 // 0 Author: Santeri Piippo [arezey]
@@ -21,13 +22,13 @@ function ldraw_lib__4548064c() = [
 // 
 // 
 // 1 16 0 -0.25 0 57.5 0 0 0 0.25 0 0 0 7.5 box5-12.dat
-  [1,16,0,-0.25,0,57.5,0,0,0,0.25,0,0,0,7.5, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,57.5,0,0,0,0.25,0,0,0,7.5, ldraw_lib__box5_12(realsolid)],
 // 1 16 -48.1 -0.25 -0.2 0.62488 0 0 0 1 0 0 0 0.62488 s\99141s02.dat
-  [1,16,-48.1,-0.25,-0.2,0.62488,0,0,0,1,0,0,0,0.62488, ldraw_lib__s__99141s02()],
+  [1,16,-48.1,-0.25,-0.2,0.62488,0,0,0,1,0,0,0,0.62488, ldraw_lib__s__99141s02(realsolid)],
 // 1 16 -14.45 -0.25 -0.25 0.75457 0 0 0 1 0 0 0 0.75457 logo-technic-1.dat
-  [1,16,-14.45,-0.25,-0.25,0.75457,0,0,0,1,0,0,0,0.75457, ldraw_lib__logo_technic_1()],
+  [1,16,-14.45,-0.25,-0.25,0.75457,0,0,0,1,0,0,0,0.75457, ldraw_lib__logo_technic_1(realsolid)],
 // 1 0 -14.45 -0.25 -0.25 0.75457 0 0 0 1 0 0 0 0.75457 logo-technic-2.dat
-  [1,0,-14.45,-0.25,-0.25,0.75457,0,0,0,1,0,0,0,0.75457, ldraw_lib__logo_technic_2()],
+  [1,0,-14.45,-0.25,-0.25,0.75457,0,0,0,1,0,0,0,0.75457, ldraw_lib__logo_technic_2(realsolid)],
 // 4 0 21.9 -0.25 3 57.5 -0.25 3 57.5 -0.25 7.5 12.7145 -0.25 4.2774
   [4,0,21.9,-0.25,3,57.5,-0.25,3,57.5,-0.25,7.5,12.7145,-0.25,4.2774],
 // 4 0 -57.5 -0.25 7.5 -57.5 -0.25 -7.5 -54.3488 -0.25 -6.4488 -54.3488 -0.25 6.0488
@@ -48,5 +49,5 @@ function ldraw_lib__4548064c() = [
   [4,14,21.9,-0.25,3,15.7,-0.25,-7.5,57.5,-0.25,-7.5,57.5,-0.25,3],
 ];
 module ldraw_lib__4548064c(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4548064c(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4548064c(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4548064c(line=0.2);

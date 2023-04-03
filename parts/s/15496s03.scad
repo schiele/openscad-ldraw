@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/4-4con22.scad>
 use <../../p/4-4cyli.scad>
-function ldraw_lib__s__15496s03() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__15496s03(realsolid=false) = [
 // 0 ~Minifig Cup Takeaway Lid Rim
 // 0 Name: s\15496s03.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -16,9 +17,9 @@ function ldraw_lib__s__15496s03() = [
 // 
 // 
 // 1 16 0 -22 0 9.75 0 0 0 -1 0 0 0 9.75 4-4cyli.dat
-  [1,16,0,-22,0,9.75,0,0,0,-1,0,0,0,9.75, ldraw_lib__4_4cyli()],
+  [1,16,0,-22,0,9.75,0,0,0,-1,0,0,0,9.75, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 -23 0 0.42391 0 0 0 -3 0 0 0 0.42391 4-4con22.dat
-  [1,16,0,-23,0,0.42391,0,0,0,-3,0,0,0,0.42391, ldraw_lib__4_4con22()],
+  [1,16,0,-23,0,0.42391,0,0,0,-3,0,0,0,0.42391, ldraw_lib__4_4con22(realsolid)],
 // 5 24 9.008 -23 3.7313 9.75 -23 0 9.008 -22 3.7313 8.6164 -26 3.5691
   [5,24,9.008,-23,3.7313,9.75,-23,0,9.008,-22,3.7313,8.6164,-26,3.5691],
 // 5 24 6.8942 -23 6.8942 9.008 -23 3.7313 6.8942 -22 6.8942 6.5945 -26 6.5945
@@ -53,5 +54,5 @@ function ldraw_lib__s__15496s03() = [
   [5,24,9.75,-23,0,9.008,-23,-3.7313,9.75,-22,0,9.3261,-26,0],
 ];
 module ldraw_lib__s__15496s03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__15496s03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__15496s03(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__15496s03(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__6259759d() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6259759d(realsolid=false) = [
 // 0 Sticker  4.8 x  4.8 with White Stars and Dark Turquoise, Magenta and White Bars
 // 0 Name: 6259759d.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -17,7 +18,7 @@ function ldraw_lib__6259759d() = [
 // 
 // 
 // 1 16 0 -0.25 0 48.75 0 0 0 0.25 0 0 0 48.75 box5-12.dat
-  [1,16,0,-0.25,0,48.75,0,0,0,0.25,0,0,0,48.75, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,48.75,0,0,0,0.25,0,0,0,48.75, ldraw_lib__box5_12(realsolid)],
 // 
 // 4 3 -41.5 -0.25 -42 -46 -0.25 -42 -46 -0.25 -46.5 -41.5 -0.25 -46.5
   [4,3,-41.5,-0.25,-42,-46,-0.25,-42,-46,-0.25,-46.5,-41.5,-0.25,-46.5],
@@ -1333,5 +1334,5 @@ function ldraw_lib__6259759d() = [
   [4,0,29,-0.25,-12,21.25,-0.25,-12,21.25,-0.25,-13.25,29,-0.25,-13.25],
 ];
 module ldraw_lib__6259759d(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6259759d(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6259759d(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6259759d(line=0.2);

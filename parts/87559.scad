@@ -3,7 +3,8 @@ use <../p/4-4cyli.scad>
 use <s/87559s01.scad>
 use <../p/stud.scad>
 use <../p/stud4a.scad>
-function ldraw_lib__87559() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__87559(realsolid=false) = [
 // 0 Brick  6 x  6 x  2 Corner Round with Curved Top
 // 0 Name: 87559.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -20,23 +21,23 @@ function ldraw_lib__87559() = [
 // 
 // 
 // 1 16 0 0 0 0 0 1 0 1 0 -1 0 0 s\87559s01.dat
-  [1,16,0,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__s__87559s01()],
+  [1,16,0,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__s__87559s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 -1 s\87559s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__87559s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__87559s01(realsolid)],
 // 1 16 50 0 -50 0 0 1 0 1 0 -1 0 0 stud.dat
-  [1,16,50,0,-50,0,0,1,0,1,0,-1,0,0, ldraw_lib__stud()],
+  [1,16,50,0,-50,0,0,1,0,1,0,-1,0,0, ldraw_lib__stud(realsolid)],
 // 1 16 70 0 -10 0 0 1 0 1 0 -1 0 0 stud.dat
-  [1,16,70,0,-10,0,0,1,0,1,0,-1,0,0, ldraw_lib__stud()],
+  [1,16,70,0,-10,0,0,1,0,1,0,-1,0,0, ldraw_lib__stud(realsolid)],
 // 1 16 10 0 -70 0 0 1 0 1 0 -1 0 0 stud.dat
-  [1,16,10,0,-70,0,0,1,0,1,0,-1,0,0, ldraw_lib__stud()],
+  [1,16,10,0,-70,0,0,1,0,1,0,-1,0,0, ldraw_lib__stud(realsolid)],
 // 1 16 60 44 -60 0 0 1 0 -1 0 -1 0 0 stud4a.dat
-  [1,16,60,44,-60,0,0,1,0,-1,0,-1,0,0, ldraw_lib__stud4a()],
+  [1,16,60,44,-60,0,0,1,0,-1,0,-1,0,0, ldraw_lib__stud4a(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 60 44 -60 0 0 6 0 -19 0 -6 0 0 4-4cyli.dat
-  [1,16,60,44,-60,0,0,6,0,-19,0,-6,0,0, ldraw_lib__4_4cyli()],
+  [1,16,60,44,-60,0,0,6,0,-19,0,-6,0,0, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 60 44 -60 0 0 8 0 -19 0 -8 0 0 4-4cyli.dat
-  [1,16,60,44,-60,0,0,8,0,-19,0,-8,0,0, ldraw_lib__4_4cyli()],
+  [1,16,60,44,-60,0,0,8,0,-19,0,-8,0,0, ldraw_lib__4_4cyli(realsolid)],
 // 5 24 64.243 6.155 -64.243 64.243 25 -64.243 62.296 6.155 -65.543 65.543 6.155 -62.296
   [5,24,64.243,6.155,-64.243,64.243,25,-64.243,62.296,6.155,-65.543,65.543,6.155,-62.296],
 // 5 24 65.657 25 -65.657 65.657 6.552 -65.657 63.062 6.552 -67.391 67.391 25 -63.062
@@ -69,5 +70,5 @@ function ldraw_lib__87559() = [
   [5,24,84.852,48,-84.8525,84.852,44,-84.8525,78.108,44,-90.7735,90.7735,44,-78.108],
 ];
 module ldraw_lib__87559(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__87559(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__87559(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__87559(line=0.2);

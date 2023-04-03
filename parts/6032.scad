@@ -7,7 +7,8 @@ use <../p/axlehol2.scad>
 use <../p/axlehol3.scad>
 use <s/6032s01.scad>
 use <../p/stud4a.scad>
-function ldraw_lib__6032() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6032(realsolid=false) = [
 // 0 Brick  2 x  3 x  1.667 Octagonal Offset
 // 0 Name: 6032.dat
 // 0 Author: Rolf Osterthun [Rolf]
@@ -26,26 +27,26 @@ function ldraw_lib__6032() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\6032s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6032s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6032s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\6032s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__6032s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__6032s01(realsolid)],
 // 
 // 1 16 0 23 20 0 0 1 0 -1 0 -1 0 0 axl5hol9.dat
-  [1,16,0,23,20,0,0,1,0,-1,0,-1,0,0, ldraw_lib__axl5hol9()],
+  [1,16,0,23,20,0,0,1,0,-1,0,-1,0,0, ldraw_lib__axl5hol9(realsolid)],
 // 1 16 0 23 20 0 0 1 0 -1 0 -1 0 0 axl5end.dat
-  [1,16,0,23,20,0,0,1,0,-1,0,-1,0,0, ldraw_lib__axl5end()],
+  [1,16,0,23,20,0,0,1,0,-1,0,-1,0,0, ldraw_lib__axl5end(realsolid)],
 // 1 16 0 23 20 0 0 1 0 -1 0 -1 0 0 axlehol2.dat
-  [1,16,0,23,20,0,0,1,0,-1,0,-1,0,0, ldraw_lib__axlehol2()],
+  [1,16,0,23,20,0,0,1,0,-1,0,-1,0,0, ldraw_lib__axlehol2(realsolid)],
 // 1 16 0 36 20 0 0 1 0 -1 0 -1 0 0 axlehol3.dat
-  [1,16,0,36,20,0,0,1,0,-1,0,-1,0,0, ldraw_lib__axlehol3()],
+  [1,16,0,36,20,0,0,1,0,-1,0,-1,0,0, ldraw_lib__axlehol3(realsolid)],
 // 1 16 0 36 20 0 0 1 0 -1 0 -1 0 0 stud4a.dat
-  [1,16,0,36,20,0,0,1,0,-1,0,-1,0,0, ldraw_lib__stud4a()],
+  [1,16,0,36,20,0,0,1,0,-1,0,-1,0,0, ldraw_lib__stud4a(realsolid)],
 // 1 16 0 36 20 0 0 1 0 -1 0 -1 0 0 axl5ho10.dat
-  [1,16,0,36,20,0,0,1,0,-1,0,-1,0,0, ldraw_lib__axl5ho10()],
+  [1,16,0,36,20,0,0,1,0,-1,0,-1,0,0, ldraw_lib__axl5ho10(realsolid)],
 // 1 16 0 36 20 0 0 1 0 -1 0 -1 0 0 axl5hol9.dat
-  [1,16,0,36,20,0,0,1,0,-1,0,-1,0,0, ldraw_lib__axl5hol9()],
+  [1,16,0,36,20,0,0,1,0,-1,0,-1,0,0, ldraw_lib__axl5hol9(realsolid)],
 // 1 16 0 36 20 0 0 1 0 -13 0 -1 0 0 axl5hol8.dat
-  [1,16,0,36,20,0,0,1,0,-13,0,-1,0,0, ldraw_lib__axl5hol8()],
+  [1,16,0,36,20,0,0,1,0,-13,0,-1,0,0, ldraw_lib__axl5hol8(realsolid)],
 // 
 // 2 24 -7 33 4 7 33 4
   [2,24,-7,33,4,7,33,4],
@@ -119,13 +120,13 @@ function ldraw_lib__6032() = [
   [4,16,8,40,0,-8,40,0,-12,40,4,12,40,4],
 // 
 // 1 16 0 4 0 0 0 1 0 1 0 -1 0 0 stud4a.dat
-  [1,16,0,4,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__stud4a()],
+  [1,16,0,4,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__stud4a(realsolid)],
 // 1 16 0 4 0 0 0 1 0 1 0 -1 0 0 axl5ho10.dat
-  [1,16,0,4,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__axl5ho10()],
+  [1,16,0,4,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__axl5ho10(realsolid)],
 // 1 16 0 4 0 0 0 1 0 1 0 -1 0 0 axlehol3.dat
-  [1,16,0,4,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__axlehol3()],
+  [1,16,0,4,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__axlehol3(realsolid)],
 // 1 16 0 4 0 0 0 1 0 1 0 -1 0 0 axl5hol9.dat
-  [1,16,0,4,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__axl5hol9()],
+  [1,16,0,4,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__axl5hol9(realsolid)],
 // 
 // 2 24 -7 0 -16 7 0 -16
   [2,24,-7,0,-16,7,0,-16],
@@ -175,5 +176,5 @@ function ldraw_lib__6032() = [
   [5,24,0,25.57,6,0,4,6,-2,26.309,5.602,2,26.309,5.602],
 ];
 module ldraw_lib__6032(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6032(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6032(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6032(line=0.2);

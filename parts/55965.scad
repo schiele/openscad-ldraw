@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/1-4cyli.scad>
-function ldraw_lib__55965() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__55965(realsolid=false) = [
 // 0 ~Electric Mindstorms NXT Sound Sensor Foam
 // 0 Name: 55965.dat
 // 0 Author: Steve Bliss [sbliss]
@@ -18,15 +19,15 @@ function ldraw_lib__55965() = [
 // 0 // Hidden zones in closed sensor not modelled
 // 
 // 1 16 16 -16 -14 0 -32 0 -7 0 0 0 0 -7 1-4cyli.dat
-  [1,16,16,-16,-14,0,-32,0,-7,0,0,0,0,-7, ldraw_lib__1_4cyli()],
+  [1,16,16,-16,-14,0,-32,0,-7,0,0,0,0,-7, ldraw_lib__1_4cyli(realsolid)],
 // 4 16 -16 18 -21 16 18 -21 16 -16 -21 -16 -16 -21
   [4,16,-16,18,-21,16,18,-21,16,-16,-21,-16,-16,-21],
 // 1 16 -16 18 -14 0 0 -7 0 -34 0 -7 0 0 1-4cyli.dat
-  [1,16,-16,18,-14,0,0,-7,0,-34,0,-7,0,0, ldraw_lib__1_4cyli()],
+  [1,16,-16,18,-14,0,0,-7,0,-34,0,-7,0,0, ldraw_lib__1_4cyli(realsolid)],
 // 1 16 16 18 -14 7 0 0 0 -34 0 0 0 -7 1-4cyli.dat
-  [1,16,16,18,-14,7,0,0,0,-34,0,0,0,-7, ldraw_lib__1_4cyli()],
+  [1,16,16,18,-14,7,0,0,0,-34,0,0,0,-7, ldraw_lib__1_4cyli(realsolid)],
 // 1 16 16 18 -14 0 -32 0 0 0 7 -7 0 0 1-4cyli.dat
-  [1,16,16,18,-14,0,-32,0,0,0,7,-7,0,0, ldraw_lib__1_4cyli()],
+  [1,16,16,18,-14,0,-32,0,0,0,7,-7,0,0, ldraw_lib__1_4cyli(realsolid)],
 // 4 16 23 -16 15 23 -16 -14 23 18 -14 23 18 15
   [4,16,23,-16,15,23,-16,-14,23,18,-14,23,18,15],
 // 4 16 -23 18 15 -23 18 -14 -23 -16 -14 -23 -16 15
@@ -37,5 +38,5 @@ function ldraw_lib__55965() = [
   [4,16,-16,25,15,16,25,15,16,25,-14,-16,25,-14],
 ];
 module ldraw_lib__55965(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__55965(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__55965(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__55965(line=0.2);

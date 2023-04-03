@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/u9007s02.scad>
 use <s/u9008s01.scad>
-function ldraw_lib__u9008p04() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__u9008p04(realsolid=false) = [
 // 0 Roadsign Round with Round Base with No Entry Pattern
 // 0 Name: u9008p04.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -16,9 +17,9 @@ function ldraw_lib__u9008p04() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\u9007s02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__u9007s02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__u9007s02(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\u9008s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__u9008s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__u9008s01(realsolid)],
 // 0 //
 // 4 16 -17 -61 -2.6 17 -61 -2.6 17 -67 -2.6 -17 -67 -2.6
   [4,16,-17,-61,-2.6,17,-61,-2.6,17,-67,-2.6,-17,-67,-2.6],
@@ -54,5 +55,5 @@ function ldraw_lib__u9008p04() = [
 // 0 //
 ];
 module ldraw_lib__u9008p04(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__u9008p04(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__u9008p04(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__u9008p04(line=0.2);

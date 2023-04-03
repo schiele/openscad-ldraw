@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <29a.scad>
 use <845.scad>
-function ldraw_lib__29ac01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__29ac01(realsolid=false) = [
 // 0 Window  1 x  1 x  2 Classic with Solid Studs (Complete)
 // 0 Name: 29ac01.dat
 // 0 Author: Tore Eriksson [Tore_Eriksson]
@@ -17,11 +18,11 @@ function ldraw_lib__29ac01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 29a.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__29a()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__29a(realsolid)],
 // 1 47 0 0 0 1 0 0 0 1 0 0 0 1 845.dat
-  [1,47,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__845()],
+  [1,47,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__845(realsolid)],
 // 0
 ];
 module ldraw_lib__29ac01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__29ac01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__29ac01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__29ac01(line=0.2);

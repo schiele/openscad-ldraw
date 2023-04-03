@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__190145a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__190145a(realsolid=false) = [
 // 0 Sticker  1.9 x  3.8 with Yellow Box and Arrows
 // 0 Name: 190145a.dat
 // 0 Author: Rafael Skibicki [Rola]
@@ -19,7 +20,7 @@ function ldraw_lib__190145a() = [
 // 
 // 
 // 1 16 0 -0.25 0 38 0 0 0 0.25 0 0 0 19 box5-12.dat
-  [1,16,0,-0.25,0,38,0,0,0,0.25,0,0,0,19, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,38,0,0,0,0.25,0,0,0,19, ldraw_lib__box5_12(realsolid)],
 // 4 14 -15.69 -0.25 -4.61 -15.69 -0.25 4.6 -24.85 -0.25 4.6 -24.85 -0.25 -4.61
   [4,14,-15.69,-0.25,-4.61,-15.69,-0.25,4.6,-24.85,-0.25,4.6,-24.85,-0.25,-4.61],
 // 4 0 -34.04 -0.25 0 -24.85 -0.25 9.13 -24.33 -0.25 10.44 -34.84 -0.25 0
@@ -182,5 +183,5 @@ function ldraw_lib__190145a() = [
   [3,14,34.04,-0.25,0,24.85,-0.25,-4.61,24.85,-0.25,-9.13],
 ];
 module ldraw_lib__190145a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__190145a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__190145a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__190145a(line=0.2);

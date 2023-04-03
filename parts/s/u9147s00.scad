@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <u9147s01.scad>
-function ldraw_lib__s__u9147s00() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__u9147s00(realsolid=false) = [
 // 0 ~Figure Fabuland Pig Head Half with Blank Eye Area
 // 0 Name: s\u9147s00.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -15,7 +16,7 @@ function ldraw_lib__s__u9147s00() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\u9147s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__u9147s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__u9147s01(realsolid)],
 // 0 // Eye area
 // 3 16 11.539 -34.744 -14.57 12.203 -31.947 -15.687 12.833 -33.305 -14.215
   [3,16,11.539,-34.744,-14.57,12.203,-31.947,-15.687,12.833,-33.305,-14.215],
@@ -177,5 +178,5 @@ function ldraw_lib__s__u9147s00() = [
   [5,24,7.994,-26.641,-20.986,9.489,-23.793,-21.717,9.595,-26.716,-19.774,7.628,-24.143,-23.721],
 ];
 module ldraw_lib__s__u9147s00(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__u9147s00(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__u9147s00(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__u9147s00(line=0.2);

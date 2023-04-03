@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/3-4cyli.scad>
 use <../p/4-4cyli.scad>
 use <s/30367cs01.scad>
-function ldraw_lib__30367cps0() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__30367cps0(realsolid=false) = [
 // 0 Cylinder  2 x  2 with Dome Top with SW Green and Light Bluish Grey Pattern
 // 0 Name: 30367cps0.dat
 // 0 Author: John Troxler [Gargan]
@@ -19,15 +20,15 @@ function ldraw_lib__30367cps0() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\30367cs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30367cs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30367cs01(realsolid)],
 // 
 // 0 // Pattern
 // 1 2 0 16.7 0 20 0 0 0 2.6 0 0 0 20 4-4cyli.dat
-  [1,2,0,16.7,0,20,0,0,0,2.6,0,0,0,20, ldraw_lib__4_4cyli()],
+  [1,2,0,16.7,0,20,0,0,0,2.6,0,0,0,20, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 16 0 -7.653669 0 -18.477591 0 0.7 0 18.477591 0 -7.653669 3-4cyli.dat
-  [1,16,0,16,0,-7.653669,0,-18.477591,0,0.7,0,18.477591,0,-7.653669, ldraw_lib__3_4cyli()],
+  [1,16,0,16,0,-7.653669,0,-18.477591,0,0.7,0,18.477591,0,-7.653669, ldraw_lib__3_4cyli(realsolid)],
 // 1 16 0 19.3 0 20 0 0 0 0.7 0 0 0 20 4-4cyli.dat
-  [1,16,0,19.3,0,20,0,0,0,0.7,0,0,0,20, ldraw_lib__4_4cyli()],
+  [1,16,0,19.3,0,20,0,0,0,0.7,0,0,0,20, ldraw_lib__4_4cyli(realsolid)],
 // 4 16 -8.598 0.3462 3.5618 -9.3066 0.3462 0 -8 0 0 -7.391 0 3.062
   [4,16,-8.598,0.3462,3.5618,-9.3066,0.3462,0,-8,0,0,-7.391,0,3.062],
 // 4 16 -8 0 0 -9.3066 0.3462 0 -8.5979 0.3462 -3.5618 -7.391 0 -3.062
@@ -2352,5 +2353,5 @@ function ldraw_lib__30367cps0() = [
   [5,24,14.142,16,14.142,14.142,16.7,14.142,7.654,16,18.478,18.478,16,7.654],
 ];
 module ldraw_lib__30367cps0(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__30367cps0(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__30367cps0(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__30367cps0(line=0.2);

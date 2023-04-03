@@ -6,7 +6,8 @@ use <s/93083s04.scad>
 use <s/93083s05.scad>
 use <s/93084p03s01.scad>
 use <s/93084p04s01.scad>
-function ldraw_lib__93083p04() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__93083p04(realsolid=false) = [
 // 0 ~Animal Horse Friends Right with Reddish Brown Eyes, White Blaze, Black Mane and Black Tail Pattern
 // 0 Name: 93083p04.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -21,20 +22,20 @@ function ldraw_lib__93083p04() = [
 // 
 // 
 // 1 0 0 0 0 1 0 0 0 1 0 0 0 1 s\93083s01.dat
-  [1,0,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__93083s01()],
+  [1,0,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__93083s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\93083s02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__93083s02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__93083s02(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\93084p03s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__93084p03s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__93084p03s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\93084p04s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__93084p04s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__93084p04s01(realsolid)],
 // 1 0 0 0 0 1 0 0 0 1 0 0 0 1 s\93083s03.dat
-  [1,0,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__93083s03()],
+  [1,0,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__93083s03(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\93083s04.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__93083s04()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__93083s04(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\93083s05.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__93083s05()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__93083s05(realsolid)],
 ];
 module ldraw_lib__93083p04(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__93083p04(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__93083p04(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__93083p04(line=0.2);

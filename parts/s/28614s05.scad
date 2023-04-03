@@ -8,7 +8,8 @@ use <../../p/4-4cylo.scad>
 use <../../p/4-4edge.scad>
 use <../../p/4-4ring5.scad>
 use <../../p/rect3.scad>
-function ldraw_lib__s__28614s05() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__28614s05(realsolid=false) = [
 // 0 ~Figure Elves Goblin Body Half
 // 0 Name: s\28614s05.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -589,7 +590,7 @@ function ldraw_lib__s__28614s05() = [
 // 4 16 8.5 -7 -3.1 8.5 -24 -4 13.5 -24 -4 13.5 -7 -3.1
   [4,16,8.5,-7,-3.1,8.5,-24,-4,13.5,-24,-4,13.5,-7,-3.1],
 // 1 16 11 -18.5 8 -2.5 0 0 0 0 11.5 0 1 0 rect3.dat
-  [1,16,11,-18.5,8,-2.5,0,0,0,0,11.5,0,1,0, ldraw_lib__rect3()],
+  [1,16,11,-18.5,8,-2.5,0,0,0,0,11.5,0,1,0, ldraw_lib__rect3(realsolid)],
 // 2 24 13.5 -7 -3.1 13.5 -24 -4
   [2,24,13.5,-7,-3.1,13.5,-24,-4],
 // 2 24 13.5 -24 -4 13.5 -30 -4
@@ -605,29 +606,29 @@ function ldraw_lib__s__28614s05() = [
 // 2 24 8.5 -30 -4 8.5 -30 8
   [2,24,8.5,-30,-4,8.5,-30,8],
 // 1 16 17 -30 2 0 -1 0 1 0 0 0 0 1 4-4ring5.dat
-  [1,16,17,-30,2,0,-1,0,1,0,0,0,0,1, ldraw_lib__4_4ring5()],
+  [1,16,17,-30,2,0,-1,0,1,0,0,0,0,1, ldraw_lib__4_4ring5(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 17 -30 2 0 -2 0 5 0 0 0 0 5 4-4cylo.dat
-  [1,16,17,-30,2,0,-2,0,5,0,0,0,0,5, ldraw_lib__4_4cylo()],
+  [1,16,17,-30,2,0,-2,0,5,0,0,0,0,5, ldraw_lib__4_4cylo(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 13.5 -30 2 0 1.5 0 1 0 0 0 0 1 4-4con5.dat
-  [1,16,13.5,-30,2,0,1.5,0,1,0,0,0,0,1, ldraw_lib__4_4con5()],
+  [1,16,13.5,-30,2,0,1.5,0,1,0,0,0,0,1, ldraw_lib__4_4con5(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 13.5 -30 2 0 -5 0 0 0 -6 -6 0 0 2-4cyli.dat
-  [1,16,13.5,-30,2,0,-5,0,0,0,-6,-6,0,0, ldraw_lib__2_4cyli()],
+  [1,16,13.5,-30,2,0,-5,0,0,0,-6,-6,0,0, ldraw_lib__2_4cyli(realsolid)],
 // 1 16 8.5 -30 2 0 -1 0 0 0 -6 -6 0 0 2-4chrd.dat
-  [1,16,8.5,-30,2,0,-1,0,0,0,-6,-6,0,0, ldraw_lib__2_4chrd()],
+  [1,16,8.5,-30,2,0,-1,0,0,0,-6,-6,0,0, ldraw_lib__2_4chrd(realsolid)],
 // 1 16 13.5 -30 2 0 1 0 6 0 0 0 0 6 4-4edge.dat
-  [1,16,13.5,-30,2,0,1,0,6,0,0,0,0,6, ldraw_lib__4_4edge()],
+  [1,16,13.5,-30,2,0,1,0,6,0,0,0,0,6, ldraw_lib__4_4edge(realsolid)],
 // 1 16 13.5 -30 2 0 1 0 0 0 6 -6 0 0 2-4ndis.dat
-  [1,16,13.5,-30,2,0,1,0,0,0,6,-6,0,0, ldraw_lib__2_4ndis()],
+  [1,16,13.5,-30,2,0,1,0,0,0,6,-6,0,0, ldraw_lib__2_4ndis(realsolid)],
 // 1 16 8.5 -30 2 0 -1 0 0 0 -6 -6 0 0 2-4edge.dat
-  [1,16,8.5,-30,2,0,-1,0,0,0,-6,-6,0,0, ldraw_lib__2_4edge()],
+  [1,16,8.5,-30,2,0,-1,0,0,0,-6,-6,0,0, ldraw_lib__2_4edge(realsolid)],
 // 1 16 17 -30 2 0 -1 0 6 0 0 0 0 6 4-4edge.dat
-  [1,16,17,-30,2,0,-1,0,6,0,0,0,0,6, ldraw_lib__4_4edge()],
+  [1,16,17,-30,2,0,-1,0,6,0,0,0,0,6, ldraw_lib__4_4edge(realsolid)],
 // 5 24 17 -12.8 4.5 16.9 -16.5 4.5 16.4 -16.1 6.8 17.1 -13.5 1.4
   [5,24,17,-12.8,4.5,16.9,-16.5,4.5,16.4,-16.1,6.8,17.1,-13.5,1.4],
 // 5 24 16.9 -16.5 4.5 17.1 -13.5 1.4 17 -17.1 1.7 17 -12.8 4.5
@@ -1358,5 +1359,5 @@ function ldraw_lib__s__28614s05() = [
   [5,24,0,-31,12.5,0,-34.4967,11.6372,1.8,-31.7,12.3,-1.8,-31.7,12.3],
 ];
 module ldraw_lib__s__28614s05(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__28614s05(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__28614s05(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__28614s05(line=0.2);

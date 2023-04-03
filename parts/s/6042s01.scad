@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <6042s02.scad>
 use <../../p/stud17.scad>
-function ldraw_lib__s__6042s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__6042s01(realsolid=false) = [
 // 0 ~Brick  2 x  2 x  3.333 Octagonal With Side Studs - Half
 // 0 Name: s\6042s01.dat
 // 0 Author: Rolf Osterthun [Rolf]
@@ -18,9 +19,9 @@ function ldraw_lib__s__6042s01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\6042s02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6042s02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6042s02(realsolid)],
 // 1 16 0 80 0 1 0 0 0 -1 0 0 0 1 s\6042s02.dat
-  [1,16,0,80,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__s__6042s02()],
+  [1,16,0,80,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__s__6042s02(realsolid)],
 // 4 16 16 80 -12 16 80 12 20 80 8 20 80 -8
   [4,16,16,80,-12,16,80,12,20,80,8,20,80,-8],
 // 2 24 16 80 -12 16 80 12
@@ -150,9 +151,9 @@ function ldraw_lib__s__6042s01() = [
   [3,16,3.062,12.609,-8.75,4,3.15,-8.75,0,12,-8.75],
 // 0 // outside top
 // 1 16 10 0 10 1 0 0 0 1 0 0 0 1 stud17.dat
-  [1,16,10,0,10,1,0,0,0,1,0,0,0,1, ldraw_lib__stud17()],
+  [1,16,10,0,10,1,0,0,0,1,0,0,0,1, ldraw_lib__stud17(realsolid)],
 // 1 16 10 0 -10 0 0 1 0 1 0 -1 0 0 stud17.dat
-  [1,16,10,0,-10,0,0,1,0,1,0,-1,0,0, ldraw_lib__stud17()],
+  [1,16,10,0,-10,0,0,1,0,1,0,-1,0,0, ldraw_lib__stud17(realsolid)],
 // 4 16 6 0 -6 20 0 -8 20 0 8 6 0 6
   [4,16,6,0,-6,20,0,-8,20,0,8,6,0,6],
 // 2 24 20 0 -8 20 0 8
@@ -260,5 +261,5 @@ function ldraw_lib__s__6042s01() = [
   [5,24,3.062,12.609,-20,3.062,12.609,-8.75,0,12,-20,4,13.236,-8.75],
 ];
 module ldraw_lib__s__6042s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__6042s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__6042s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__6042s01(line=0.2);

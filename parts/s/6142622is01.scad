@@ -6,7 +6,8 @@ use <../../p/1-4ring4.scad>
 use <../../p/1-4ring7.scad>
 use <../../p/5-16chrd.scad>
 use <../../p/5-16ndis.scad>
-function ldraw_lib__s__6142622is01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__6142622is01(realsolid=false) = [
 // 0 ~Sticker  0.8 x  1.9 with Red and White Taillamp on Yellow Background Right - Upper Section 1
 // 0 Name: s\6142622is01.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -23,21 +24,21 @@ function ldraw_lib__s__6142622is01() = [
 // 0 // Primitives
 // 
 // 1 14 -6.5 -.25 3.8922 -1.5 0 0 0 1 0 0 0 1.5 1-4chrd.dat
-  [1,14,-6.5,-.25,3.8922,-1.5,0,0,0,1,0,0,0,1.5, ldraw_lib__1_4chrd()],
+  [1,14,-6.5,-.25,3.8922,-1.5,0,0,0,1,0,0,0,1.5, ldraw_lib__1_4chrd(realsolid)],
 // 1 14 6.5 -.25 3.8922 1.5 0 0 0 1 0 0 0 1.5 1-4chrd.dat
-  [1,14,6.5,-.25,3.8922,1.5,0,0,0,1,0,0,0,1.5, ldraw_lib__1_4chrd()],
+  [1,14,6.5,-.25,3.8922,1.5,0,0,0,1,0,0,0,1.5, ldraw_lib__1_4chrd(realsolid)],
 // 1 14 .575 -.25 1.1211 -2.25 0 0 0 1 0 0 0 2.25 5-16ndis.dat
-  [1,14,.575,-.25,1.1211,-2.25,0,0,0,1,0,0,0,2.25, ldraw_lib__5_16ndis()],
+  [1,14,.575,-.25,1.1211,-2.25,0,0,0,1,0,0,0,2.25, ldraw_lib__5_16ndis(realsolid)],
 // 1 0 .575 -.25 1.1211 -.45 0 0 0 1 0 0 0 .45 1-4ring4.dat
-  [1,0,.575,-.25,1.1211,-.45,0,0,0,1,0,0,0,.45, ldraw_lib__1_4ring4()],
+  [1,0,.575,-.25,1.1211,-.45,0,0,0,1,0,0,0,.45, ldraw_lib__1_4ring4(realsolid)],
 // 1 0 .575 -.25 1.1211 -.225 0 0 0 1 0 0 0 .225 1-4ring7.dat
-  [1,0,.575,-.25,1.1211,-.225,0,0,0,1,0,0,0,.225, ldraw_lib__1_4ring7()],
+  [1,0,.575,-.25,1.1211,-.225,0,0,0,1,0,0,0,.225, ldraw_lib__1_4ring7(realsolid)],
 // 1 0 .575 -.25 1.1211 0 0 2.25 0 1 0 2.25 0 0 1-16chrd.dat
-  [1,0,.575,-.25,1.1211,0,0,2.25,0,1,0,2.25,0,0, ldraw_lib__1_16chrd()],
+  [1,0,.575,-.25,1.1211,0,0,2.25,0,1,0,2.25,0,0, ldraw_lib__1_16chrd(realsolid)],
 // 1 0 .575 -.25 1.1211 0 0 1.575 0 1 0 1.575 0 0 1-16ndis.dat
-  [1,0,.575,-.25,1.1211,0,0,1.575,0,1,0,1.575,0,0, ldraw_lib__1_16ndis()],
+  [1,0,.575,-.25,1.1211,0,0,1.575,0,1,0,1.575,0,0, ldraw_lib__1_16ndis(realsolid)],
 // 1 4 .575 -.25 1.1211 -1.575 0 0 0 1 0 0 0 1.575 5-16chrd.dat
-  [1,4,.575,-.25,1.1211,-1.575,0,0,0,1,0,0,0,1.575, ldraw_lib__5_16chrd()],
+  [1,4,.575,-.25,1.1211,-1.575,0,0,0,1,0,0,0,1.575, ldraw_lib__5_16chrd(realsolid)],
 // 0 // Red faces
 // 4 4 -.9801 -.25 -.0121 4.1936 -.25 1.0687 1.1777525 -.25 2.5762425 -1 -.25 1.1211
   [4,4,-.9801,-.25,-.0121,4.1936,-.25,1.0687,1.1777525,-.25,2.5762425,-1,-.25,1.1211],
@@ -75,5 +76,5 @@ function ldraw_lib__s__6142622is01() = [
   [4,14,4.675,-.25,1.3711,4.765,-.25,-.0121,8,-.25,-.0121,8,-.25,3.8922],
 ];
 module ldraw_lib__s__6142622is01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__6142622is01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__6142622is01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__6142622is01(line=0.2);

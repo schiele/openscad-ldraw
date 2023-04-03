@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/2-4disc.scad>
 use <../../p/2-4ndis.scad>
-function ldraw_lib__s__973p4ks01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__973p4ks01(realsolid=false) = [
 // 0 ~Minifig Torso with Black Spider, Yellow Circles and Red Shirt Pattern -  1/2
 // 0 Name: s\973p4ks01.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -16,13 +17,13 @@ function ldraw_lib__s__973p4ks01() = [
 // 
 // 
 // 1 14 0 19.5 0 0 0 1.5 1.5 0 0 0 1 0 2-4disc.dat
-  [1,14,0,19.5,0,0,0,1.5,1.5,0,0,0,1,0, ldraw_lib__2_4disc()],
+  [1,14,0,19.5,0,0,0,1.5,1.5,0,0,0,1,0, ldraw_lib__2_4disc(realsolid)],
 // 1 14 0 24.3 0 0 0 1.5 1.5 0 0 0 1 0 2-4disc.dat
-  [1,14,0,24.3,0,0,0,1.5,1.5,0,0,0,1,0, ldraw_lib__2_4disc()],
+  [1,14,0,24.3,0,0,0,1.5,1.5,0,0,0,1,0, ldraw_lib__2_4disc(realsolid)],
 // 1 16 0 19.5 0 0 0 1.5 1.5 0 0 0 1 0 2-4ndis.dat
-  [1,16,0,19.5,0,0,0,1.5,1.5,0,0,0,1,0, ldraw_lib__2_4ndis()],
+  [1,16,0,19.5,0,0,0,1.5,1.5,0,0,0,1,0, ldraw_lib__2_4ndis(realsolid)],
 // 1 16 0 24.3 0 0 0 1.5 1.5 0 0 0 1 0 2-4ndis.dat
-  [1,16,0,24.3,0,0,0,1.5,1.5,0,0,0,1,0, ldraw_lib__2_4ndis()],
+  [1,16,0,24.3,0,0,0,1.5,1.5,0,0,0,1,0, ldraw_lib__2_4ndis(realsolid)],
 // 4 14 0 27.7 0 2.8 30.8 0 2.9 30.2 0 0 27 0
   [4,14,0,27.7,0,2.8,30.8,0,2.9,30.2,0,0,27,0],
 // 3 16 2.8 30.8 0 0 27.7 0 0 32 0
@@ -299,5 +300,5 @@ function ldraw_lib__s__973p4ks01() = [
   [4,16,5.45,10.65,0,5.134,9.8734,0,3.8701,10.3969,0,4.189,12,0],
 ];
 module ldraw_lib__s__973p4ks01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__973p4ks01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__973p4ks01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__973p4ks01(line=0.2);

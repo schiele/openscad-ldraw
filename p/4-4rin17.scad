@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__4_4rin17() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4_4rin17(realsolid=false) = [
 // 0 Ring 17 x 1.0
 // 0 Name: 4-4rin17.dat
 // 0 Author: Miklos Hosszu [hmick]
@@ -51,5 +52,5 @@ function ldraw_lib__4_4rin17() = [
   [4,16,16.6302,0,-6.8886,18,0,0,17,0,0,15.7063,0,-6.5059],
 ];
 module ldraw_lib__4_4rin17(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4_4rin17(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4_4rin17(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4_4rin17(line=0.2);

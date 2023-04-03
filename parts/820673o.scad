@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__820673o() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__820673o(realsolid=false) = [
 // 0 Sticker  1.1 x  0.9 with Black Bold "2" on White Background
 // 0 Name: 820673o.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -18,7 +19,7 @@ function ldraw_lib__820673o() = [
 // 
 // 
 // 1 16 0 -0.25 0 9 0 0 0 0.25 0 0 0 11 box5-12.dat
-  [1,16,0,-0.25,0,9,0,0,0,0.25,0,0,0,11, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,9,0,0,0,0.25,0,0,0,11, ldraw_lib__box5_12(realsolid)],
 // 4 0 1.71 -0.25 -4.73 0.09 -0.25 2.29 -7.87 -0.25 -4.95 -7.87 -0.25 -8.7
   [4,0,1.71,-0.25,-4.73,0.09,-0.25,2.29,-7.87,-0.25,-4.95,-7.87,-0.25,-8.7],
 // 4 0 -0.99 -0.25 3.76 -7.87 -0.25 5.49 -7.87 -0.25 2.71 -0.99 -0.25 2.71
@@ -101,5 +102,5 @@ function ldraw_lib__820673o() = [
   [3,15,9,-0.25,11,5.14,-0.25,8.56,6.47,-0.25,7.92],
 ];
 module ldraw_lib__820673o(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__820673o(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__820673o(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__820673o(line=0.2);

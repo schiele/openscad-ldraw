@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <2431.scad>
 use <6005724f1.scad>
-function ldraw_lib__2431dm8() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2431dm8(realsolid=false) = [
 // 0 Tile  1 x  4 with Bricks and Cracks Type 5 Sticker
 // 0 Name: 2431dm8.dat
 // 0 Author: Christian Neumann [Wesley]
@@ -20,10 +21,10 @@ function ldraw_lib__2431dm8() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 2431.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2431()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2431(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 6005724f1.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__6005724f1()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__6005724f1(realsolid)],
 ];
 module ldraw_lib__2431dm8(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2431dm8(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2431dm8(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2431dm8(line=0.2);

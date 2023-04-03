@@ -5,7 +5,8 @@ use <../../p/rect2a.scad>
 use <../../p/rect2p.scad>
 use <../../p/rect3.scad>
 use <../../p/recte3.scad>
-function ldraw_lib__s__633s03() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__633s03(realsolid=false) = [
 // 0 ~Conveyor Belt Frame - Side Section
 // 0 Name: s\633s03.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -21,27 +22,27 @@ function ldraw_lib__s__633s03() = [
 // 
 // 
 // 1 16 28 -25.5 0 0 0 8 0 24.5 0 -2 0 0 box2-7.dat
-  [1,16,28,-25.5,0,0,0,8,0,24.5,0,-2,0,0, ldraw_lib__box2_7()],
+  [1,16,28,-25.5,0,0,0,8,0,24.5,0,-2,0,0, ldraw_lib__box2_7(realsolid)],
 // 1 16 20 -3 0 0 -1 0 0 0 2 -2 0 0 recte3.dat
-  [1,16,20,-3,0,0,-1,0,0,0,2,-2,0,0, ldraw_lib__recte3()],
+  [1,16,20,-3,0,0,-1,0,0,0,2,-2,0,0, ldraw_lib__recte3(realsolid)],
 // 1 16 26 -5 6 -6 0 0 0 -1 0 0 0 4 rect.dat
-  [1,16,26,-5,6,-6,0,0,0,-1,0,0,0,4, ldraw_lib__rect()],
+  [1,16,26,-5,6,-6,0,0,0,-1,0,0,0,4, ldraw_lib__rect(realsolid)],
 // 1 16 26 -5 -6 -6 0 0 0 -1 0 0 0 4 rect.dat
-  [1,16,26,-5,-6,-6,0,0,0,-1,0,0,0,4, ldraw_lib__rect()],
+  [1,16,26,-5,-6,-6,0,0,0,-1,0,0,0,4, ldraw_lib__rect(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 24 -20 0 0 0 4 0 12 0 -10 0 0 box2-7.dat
-  [1,16,24,-20,0,0,0,4,0,12,0,-10,0,0, ldraw_lib__box2_7()],
+  [1,16,24,-20,0,0,0,4,0,12,0,-10,0,0, ldraw_lib__box2_7(realsolid)],
 // 1 16 20 -6.5 20 0 -1 0 -1.5 0 0 0 0 -10 rect2a.dat
-  [1,16,20,-6.5,20,0,-1,0,-1.5,0,0,0,0,-10, ldraw_lib__rect2a()],
+  [1,16,20,-6.5,20,0,-1,0,-1.5,0,0,0,0,-10, ldraw_lib__rect2a(realsolid)],
 // 1 16 30 -32 20 2 0 0 0 -1 0 0 0 -10 rect3.dat
-  [1,16,30,-32,20,2,0,0,0,-1,0,0,0,-10, ldraw_lib__rect3()],
+  [1,16,30,-32,20,2,0,0,0,-1,0,0,0,-10, ldraw_lib__rect3(realsolid)],
 // 1 16 34 -50 16.2 2 0 0 0 -1 0 0 0 -14.2 rect3.dat
-  [1,16,34,-50,16.2,2,0,0,0,-1,0,0,0,-14.2, ldraw_lib__rect3()],
+  [1,16,34,-50,16.2,2,0,0,0,-1,0,0,0,-14.2, ldraw_lib__rect3(realsolid)],
 // 1 16 34 -50 -5.8 -2 0 0 0 -1 0 0 0 3.8 rect3.dat
-  [1,16,34,-50,-5.8,-2,0,0,0,-1,0,0,0,3.8, ldraw_lib__rect3()],
+  [1,16,34,-50,-5.8,-2,0,0,0,-1,0,0,0,3.8, ldraw_lib__rect3(realsolid)],
 // 1 16 32 -18.5 0 0 -1 0 -13.5 0 0 0 0 -10 rect2p.dat
-  [1,16,32,-18.5,0,0,-1,0,-13.5,0,0,0,0,-10, ldraw_lib__rect2p()],
+  [1,16,32,-18.5,0,0,-1,0,-13.5,0,0,0,0,-10, ldraw_lib__rect2p(realsolid)],
 // 2 24 20 -8 -10 20 -5 -10
   [2,24,20,-8,-10,20,-5,-10],
 // 2 24 28 -32 -10 32 -32 -10
@@ -72,5 +73,5 @@ function ldraw_lib__s__633s03() = [
   [4,16,36,-1,-2,36,-50,-2,32,-50,-2,32,-5,-2],
 ];
 module ldraw_lib__s__633s03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__633s03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__633s03(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__633s03(line=0.2);

@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4con1.scad>
 use <../p/4-4cylc.scad>
 use <../p/4-4cylo.scad>
-function ldraw_lib__2488() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2488(realsolid=false) = [
 // 0 Minifig Whip
 // 0 Name: 2488.dat
 // 0 Author: Franklin W. Cain [fwcain]
@@ -26,9 +27,9 @@ function ldraw_lib__2488() = [
 // 
 // 
 // 1 16 0 24 0 4 0 0 0 -48 0 0 0 -4 4-4cylc.dat
-  [1,16,0,24,0,4,0,0,0,-48,0,0,0,-4, ldraw_lib__4_4cylc()],
+  [1,16,0,24,0,4,0,0,0,-48,0,0,0,-4, ldraw_lib__4_4cylc(realsolid)],
 // 1 16 0 -24 0 2 0 0 0 -64 0 0 0 2 4-4con1.dat
-  [1,16,0,-24,0,2,0,0,0,-64,0,0,0,2, ldraw_lib__4_4con1()],
+  [1,16,0,-24,0,2,0,0,0,-64,0,0,0,2, ldraw_lib__4_4con1(realsolid)],
 // 4 16 0 -88 -2 0 -99.48 -4.283 -0.765 -99.538 -4.143 -0.765 -88 -1.848
   [4,16,0,-88,-2,0,-99.48,-4.283,-0.765,-99.538,-4.143,-0.765,-88,-1.848],
 // 4 16 0 -88 -2 0.765 -88 -1.848 0.765 -99.538 -4.143 0 -99.48 -4.283
@@ -1712,7 +1713,7 @@ function ldraw_lib__2488() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -118 -100 6 0 0 0 -4 0 0 0 6 4-4cylo.dat
-  [1,16,0,-118,-100,6,0,0,0,-4,0,0,0,6, ldraw_lib__4_4cylo()],
+  [1,16,0,-118,-100,6,0,0,0,-4,0,0,0,6, ldraw_lib__4_4cylo(realsolid)],
 // 5 24 0 -99.48 -4.283 -0.765 -99.538 -4.143 0 -88 -2 0 -109.213 -10.787
   [5,24,0,-99.48,-4.283,-0.765,-99.538,-4.143,0,-88,-2,0,-109.213,-10.787],
 // 5 24 -0.765 -88 -1.848 0 -88 -2 0 -99.48 -4.283 -1.5308 -24 -3.6956
@@ -2021,5 +2022,5 @@ function ldraw_lib__2488() = [
   [5,24,2.882,-118.152,-93.043,2.296,-118,-94.457,0,-118,-88,5.325,-118.152,-94.675],
 ];
 module ldraw_lib__2488(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2488(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2488(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2488(line=0.2);

@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <u9243.scad>
 use <u9244.scad>
-function ldraw_lib__843() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__843(realsolid=false) = [
 // 0 Homemaker Stove Door with Glass (Complete)
 // 0 Name: 843.dat
 // 0 Author: Arne Hackstein
@@ -22,10 +23,10 @@ function ldraw_lib__843() = [
 // 
 // 
 // 1 16 0 4.25 -36.5 1 0 0 0 1 0 0 0 1 u9243.dat
-  [1,16,0,4.25,-36.5,1,0,0,0,1,0,0,0,1, ldraw_lib__u9243()],
+  [1,16,0,4.25,-36.5,1,0,0,0,1,0,0,0,1, ldraw_lib__u9243(realsolid)],
 // 1 47 0 9.25 -35.25 1 0 0 0 1 0 0 0 1 u9244.dat
-  [1,47,0,9.25,-35.25,1,0,0,0,1,0,0,0,1, ldraw_lib__u9244()],
+  [1,47,0,9.25,-35.25,1,0,0,0,1,0,0,0,1, ldraw_lib__u9244(realsolid)],
 ];
 module ldraw_lib__843(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__843(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__843(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__843(line=0.2);

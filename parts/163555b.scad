@@ -13,7 +13,8 @@ use <../p/type-swiss721bt-bold-n6.scad>
 use <../p/type-swiss721bt-bold-n7.scad>
 use <../p/type-swiss721bt-bold-n8.scad>
 use <../p/type-swiss721bt-bold-n9.scad>
-function ldraw_lib__163555b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__163555b(realsolid=false) = [
 // 0 Sticker  3.5 x  3.5 with Flight Schedule
 // 0 Name: 163555b.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -31,103 +32,103 @@ function ldraw_lib__163555b() = [
 // 
 // 
 // 1 16 0 -0.25 0 35 0 0 0 0.25 0 0 0 35 box5-12.dat
-  [1,16,0,-0.25,0,35,0,0,0,0.25,0,0,0,35, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,35,0,0,0,0.25,0,0,0,35, ldraw_lib__box5_12(realsolid)],
 // 0 BFC NOCLIP
   [0,"BFC","NOCLIP"],
 // 1 16 -26.2 -0.25 1 4 0 0 0 1 0 0 0 4 type-swiss721bt-bold-n7.dat
-  [1,16,-26.2,-0.25,1,4,0,0,0,1,0,0,0,4, ldraw_lib__type_swiss721bt_bold_n7()],
+  [1,16,-26.2,-0.25,1,4,0,0,0,1,0,0,0,4, ldraw_lib__type_swiss721bt_bold_n7(realsolid)],
 // 1 16 -23 -0.25 7.5 4 0 0 0 1 0 0 0 4 type-swiss721bt-bold-n7.dat
-  [1,16,-23,-0.25,7.5,4,0,0,0,1,0,0,0,4, ldraw_lib__type_swiss721bt_bold_n7()],
+  [1,16,-23,-0.25,7.5,4,0,0,0,1,0,0,0,4, ldraw_lib__type_swiss721bt_bold_n7(realsolid)],
 // 1 16 -26.2 -0.25 7.5 4 0 0 0 1 0 0 0 4 type-swiss721bt-bold-n7.dat
-  [1,16,-26.2,-0.25,7.5,4,0,0,0,1,0,0,0,4, ldraw_lib__type_swiss721bt_bold_n7()],
+  [1,16,-26.2,-0.25,7.5,4,0,0,0,1,0,0,0,4, ldraw_lib__type_swiss721bt_bold_n7(realsolid)],
 // 1 16 -23 -0.25 1 4 0 0 0 1 0 0 0 4 type-swiss721bt-bold-n7.dat
-  [1,16,-23,-0.25,1,4,0,0,0,1,0,0,0,4, ldraw_lib__type_swiss721bt_bold_n7()],
+  [1,16,-23,-0.25,1,4,0,0,0,1,0,0,0,4, ldraw_lib__type_swiss721bt_bold_n7(realsolid)],
 // 1 16 -26.2 -0.25 -5.5 4 0 0 0 1 0 0 0 4 type-swiss721bt-bold-n7.dat
-  [1,16,-26.2,-0.25,-5.5,4,0,0,0,1,0,0,0,4, ldraw_lib__type_swiss721bt_bold_n7()],
+  [1,16,-26.2,-0.25,-5.5,4,0,0,0,1,0,0,0,4, ldraw_lib__type_swiss721bt_bold_n7(realsolid)],
 // 1 16 -23 -0.25 -5.5 4 0 0 0 1 0 0 0 4 type-swiss721bt-bold-n7.dat
-  [1,16,-23,-0.25,-5.5,4,0,0,0,1,0,0,0,4, ldraw_lib__type_swiss721bt_bold_n7()],
+  [1,16,-23,-0.25,-5.5,4,0,0,0,1,0,0,0,4, ldraw_lib__type_swiss721bt_bold_n7(realsolid)],
 // 1 16 -26.2 -0.25 -12 4 0 0 0 1 0 0 0 4 type-swiss721bt-bold-n7.dat
-  [1,16,-26.2,-0.25,-12,4,0,0,0,1,0,0,0,4, ldraw_lib__type_swiss721bt_bold_n7()],
+  [1,16,-26.2,-0.25,-12,4,0,0,0,1,0,0,0,4, ldraw_lib__type_swiss721bt_bold_n7(realsolid)],
 // 1 16 -23 -0.25 -12 4 0 0 0 1 0 0 0 4 type-swiss721bt-bold-n7.dat
-  [1,16,-23,-0.25,-12,4,0,0,0,1,0,0,0,4, ldraw_lib__type_swiss721bt_bold_n7()],
+  [1,16,-23,-0.25,-12,4,0,0,0,1,0,0,0,4, ldraw_lib__type_swiss721bt_bold_n7(realsolid)],
 // 1 16 -26.2 -0.25 -18.5 4 0 0 0 1 0 0 0 4 type-swiss721bt-bold-n7.dat
-  [1,16,-26.2,-0.25,-18.5,4,0,0,0,1,0,0,0,4, ldraw_lib__type_swiss721bt_bold_n7()],
+  [1,16,-26.2,-0.25,-18.5,4,0,0,0,1,0,0,0,4, ldraw_lib__type_swiss721bt_bold_n7(realsolid)],
 // 1 16 -23 -0.25 -18.5 4 0 0 0 1 0 0 0 4 type-swiss721bt-bold-n7.dat
-  [1,16,-23,-0.25,-18.5,4,0,0,0,1,0,0,0,4, ldraw_lib__type_swiss721bt_bold_n7()],
+  [1,16,-23,-0.25,-18.5,4,0,0,0,1,0,0,0,4, ldraw_lib__type_swiss721bt_bold_n7(realsolid)],
 // 1 16 -26.2 -0.25 -25 4 0 0 0 1 0 0 0 4 type-swiss721bt-bold-n7.dat
-  [1,16,-26.2,-0.25,-25,4,0,0,0,1,0,0,0,4, ldraw_lib__type_swiss721bt_bold_n7()],
+  [1,16,-26.2,-0.25,-25,4,0,0,0,1,0,0,0,4, ldraw_lib__type_swiss721bt_bold_n7(realsolid)],
 // 1 16 -23 -0.25 -25 4 0 0 0 1 0 0 0 4 type-swiss721bt-bold-n7.dat
-  [1,16,-23,-0.25,-25,4,0,0,0,1,0,0,0,4, ldraw_lib__type_swiss721bt_bold_n7()],
+  [1,16,-23,-0.25,-25,4,0,0,0,1,0,0,0,4, ldraw_lib__type_swiss721bt_bold_n7(realsolid)],
 // 1 16 21.8 -0.25 -25 4 0 0 0 1 0 0 0 4 type-swiss721bt-bold-n7.dat
-  [1,16,21.8,-0.25,-25,4,0,0,0,1,0,0,0,4, ldraw_lib__type_swiss721bt_bold_n7()],
+  [1,16,21.8,-0.25,-25,4,0,0,0,1,0,0,0,4, ldraw_lib__type_swiss721bt_bold_n7(realsolid)],
 // 1 16 -19.8 -0.25 7.5 4 0 0 0 1 0 0 0 4 type-swiss721bt-bold-n2.dat
-  [1,16,-19.8,-0.25,7.5,4,0,0,0,1,0,0,0,4, ldraw_lib__type_swiss721bt_bold_n2()],
+  [1,16,-19.8,-0.25,7.5,4,0,0,0,1,0,0,0,4, ldraw_lib__type_swiss721bt_bold_n2(realsolid)],
 // 1 16 21.9 -0.25 1 4 0 0 0 1 0 0 0 4 type-swiss721bt-bold-n2.dat
-  [1,16,21.9,-0.25,1,4,0,0,0,1,0,0,0,4, ldraw_lib__type_swiss721bt_bold_n2()],
+  [1,16,21.9,-0.25,1,4,0,0,0,1,0,0,0,4, ldraw_lib__type_swiss721bt_bold_n2(realsolid)],
 // 1 16 -19.8 -0.25 -5.5 4 0 0 0 1 0 0 0 4 type-swiss721bt-bold-n2.dat
-  [1,16,-19.8,-0.25,-5.5,4,0,0,0,1,0,0,0,4, ldraw_lib__type_swiss721bt_bold_n2()],
+  [1,16,-19.8,-0.25,-5.5,4,0,0,0,1,0,0,0,4, ldraw_lib__type_swiss721bt_bold_n2(realsolid)],
 // 1 16 -19.8 -0.25 -25 4 0 0 0 1 0 0 0 4 type-swiss721bt-bold-n2.dat
-  [1,16,-19.8,-0.25,-25,4,0,0,0,1,0,0,0,4, ldraw_lib__type_swiss721bt_bold_n2()],
+  [1,16,-19.8,-0.25,-25,4,0,0,0,1,0,0,0,4, ldraw_lib__type_swiss721bt_bold_n2(realsolid)],
 // 1 16 -16.5 -0.25 7.5 4 0 0 0 1 0 0 0 4 type-swiss721bt-bold-n5.dat
-  [1,16,-16.5,-0.25,7.5,4,0,0,0,1,0,0,0,4, ldraw_lib__type_swiss721bt_bold_n5()],
+  [1,16,-16.5,-0.25,7.5,4,0,0,0,1,0,0,0,4, ldraw_lib__type_swiss721bt_bold_n5(realsolid)],
 // 1 16 -19.8 -0.25 1 4 0 0 0 1 0 0 0 4 type-swiss721bt-bold-n5.dat
-  [1,16,-19.8,-0.25,1,4,0,0,0,1,0,0,0,4, ldraw_lib__type_swiss721bt_bold_n5()],
+  [1,16,-19.8,-0.25,1,4,0,0,0,1,0,0,0,4, ldraw_lib__type_swiss721bt_bold_n5(realsolid)],
 // 1 16 -16.5 -0.25 1 4 0 0 0 1 0 0 0 4 type-swiss721bt-bold-n5.dat
-  [1,16,-16.5,-0.25,1,4,0,0,0,1,0,0,0,4, ldraw_lib__type_swiss721bt_bold_n5()],
+  [1,16,-16.5,-0.25,1,4,0,0,0,1,0,0,0,4, ldraw_lib__type_swiss721bt_bold_n5(realsolid)],
 // 1 16 -17.6 -0.25 -12 4 0 0 0 1 0 0 0 4 type-swiss721bt-bold-n5.dat
-  [1,16,-17.6,-0.25,-12,4,0,0,0,1,0,0,0,4, ldraw_lib__type_swiss721bt_bold_n5()],
+  [1,16,-17.6,-0.25,-12,4,0,0,0,1,0,0,0,4, ldraw_lib__type_swiss721bt_bold_n5(realsolid)],
 // 1 16 26.5 -0.25 9.5 2.4 0 0 0 1 0 0 0 2.4 type-swiss721bt-bold-n5.dat
-  [1,16,26.5,-0.25,9.5,2.4,0,0,0,1,0,0,0,2.4, ldraw_lib__type_swiss721bt_bold_n5()],
+  [1,16,26.5,-0.25,9.5,2.4,0,0,0,1,0,0,0,2.4, ldraw_lib__type_swiss721bt_bold_n5(realsolid)],
 // 1 16 26.5 -0.25 -3.5 2.4 0 0 0 1 0 0 0 2.4 type-swiss721bt-bold-n5.dat
-  [1,16,26.5,-0.25,-3.5,2.4,0,0,0,1,0,0,0,2.4, ldraw_lib__type_swiss721bt_bold_n5()],
+  [1,16,26.5,-0.25,-3.5,2.4,0,0,0,1,0,0,0,2.4, ldraw_lib__type_swiss721bt_bold_n5(realsolid)],
 // 1 16 26.5 -0.25 -23 2.4 0 0 0 1 0 0 0 2.4 type-swiss721bt-bold-n5.dat
-  [1,16,26.5,-0.25,-23,2.4,0,0,0,1,0,0,0,2.4, ldraw_lib__type_swiss721bt_bold_n5()],
+  [1,16,26.5,-0.25,-23,2.4,0,0,0,1,0,0,0,2.4, ldraw_lib__type_swiss721bt_bold_n5(realsolid)],
 // 1 16 -16.7 -0.25 -5.5 4 0 0 0 1 0 0 0 4 type-swiss721bt-bold-n0.dat
-  [1,16,-16.7,-0.25,-5.5,4,0,0,0,1,0,0,0,4, ldraw_lib__type_swiss721bt_bold_n0()],
+  [1,16,-16.7,-0.25,-5.5,4,0,0,0,1,0,0,0,4, ldraw_lib__type_swiss721bt_bold_n0(realsolid)],
 // 1 16 22.1 -0.25 -5.5 4 0 0 0 1 0 0 0 4 type-swiss721bt-bold-n0.dat
-  [1,16,22.1,-0.25,-5.5,4,0,0,0,1,0,0,0,4, ldraw_lib__type_swiss721bt_bold_n0()],
+  [1,16,22.1,-0.25,-5.5,4,0,0,0,1,0,0,0,4, ldraw_lib__type_swiss721bt_bold_n0(realsolid)],
 // 1 16 26.5 -0.25 3 2.4 0 0 0 1 0 0 0 2.4 type-swiss721bt-bold-n0.dat
-  [1,16,26.5,-0.25,3,2.4,0,0,0,1,0,0,0,2.4, ldraw_lib__type_swiss721bt_bold_n0()],
+  [1,16,26.5,-0.25,3,2.4,0,0,0,1,0,0,0,2.4, ldraw_lib__type_swiss721bt_bold_n0(realsolid)],
 // 1 16 26.5 -0.25 -10 2.4 0 0 0 1 0 0 0 2.4 type-swiss721bt-bold-n0.dat
-  [1,16,26.5,-0.25,-10,2.4,0,0,0,1,0,0,0,2.4, ldraw_lib__type_swiss721bt_bold_n0()],
+  [1,16,26.5,-0.25,-10,2.4,0,0,0,1,0,0,0,2.4, ldraw_lib__type_swiss721bt_bold_n0(realsolid)],
 // 1 16 24.3 -0.25 -16.5 2.4 0 0 0 1 0 0 0 2.4 type-swiss721bt-bold-n0.dat
-  [1,16,24.3,-0.25,-16.5,2.4,0,0,0,1,0,0,0,2.4, ldraw_lib__type_swiss721bt_bold_n0()],
+  [1,16,24.3,-0.25,-16.5,2.4,0,0,0,1,0,0,0,2.4, ldraw_lib__type_swiss721bt_bold_n0(realsolid)],
 // 1 16 26.5 -0.25 -16.5 2.4 0 0 0 1 0 0 0 2.4 type-swiss721bt-bold-n0.dat
-  [1,16,26.5,-0.25,-16.5,2.4,0,0,0,1,0,0,0,2.4, ldraw_lib__type_swiss721bt_bold_n0()],
+  [1,16,26.5,-0.25,-16.5,2.4,0,0,0,1,0,0,0,2.4, ldraw_lib__type_swiss721bt_bold_n0(realsolid)],
 // 1 16 -20.4 -0.25 -12 4 0 0 0 1 0 0 0 4 type-swiss721bt-bold-n1.dat
-  [1,16,-20.4,-0.25,-12,4,0,0,0,1,0,0,0,4, ldraw_lib__type_swiss721bt_bold_n1()],
+  [1,16,-20.4,-0.25,-12,4,0,0,0,1,0,0,0,4, ldraw_lib__type_swiss721bt_bold_n1(realsolid)],
 // 1 16 -20.4 -0.25 -18.5 4 0 0 0 1 0 0 0 4 type-swiss721bt-bold-n1.dat
-  [1,16,-20.4,-0.25,-18.5,4,0,0,0,1,0,0,0,4, ldraw_lib__type_swiss721bt_bold_n1()],
+  [1,16,-20.4,-0.25,-18.5,4,0,0,0,1,0,0,0,4, ldraw_lib__type_swiss721bt_bold_n1(realsolid)],
 // 1 16 -17.1 -0.25 -25 4 0 0 0 1 0 0 0 4 type-swiss721bt-bold-n1.dat
-  [1,16,-17.1,-0.25,-25,4,0,0,0,1,0,0,0,4, ldraw_lib__type_swiss721bt_bold_n1()],
+  [1,16,-17.1,-0.25,-25,4,0,0,0,1,0,0,0,4, ldraw_lib__type_swiss721bt_bold_n1(realsolid)],
 // 1 16 19.3 -0.25 -5.5 4 0 0 0 1 0 0 0 4 type-swiss721bt-bold-n1.dat
-  [1,16,19.3,-0.25,-5.5,4,0,0,0,1,0,0,0,4, ldraw_lib__type_swiss721bt_bold_n1()],
+  [1,16,19.3,-0.25,-5.5,4,0,0,0,1,0,0,0,4, ldraw_lib__type_swiss721bt_bold_n1(realsolid)],
 // 1 16 24.6 -0.25 3 2.4 0 0 0 1 0 0 0 2.4 type-swiss721bt-bold-n1.dat
-  [1,16,24.6,-0.25,3,2.4,0,0,0,1,0,0,0,2.4, ldraw_lib__type_swiss721bt_bold_n1()],
+  [1,16,24.6,-0.25,3,2.4,0,0,0,1,0,0,0,2.4, ldraw_lib__type_swiss721bt_bold_n1(realsolid)],
 // 1 16 24.6 -0.25 -3.5 2.4 0 0 0 1 0 0 0 2.4 type-swiss721bt-bold-n1.dat
-  [1,16,24.6,-0.25,-3.5,2.4,0,0,0,1,0,0,0,2.4, ldraw_lib__type_swiss721bt_bold_n1()],
+  [1,16,24.6,-0.25,-3.5,2.4,0,0,0,1,0,0,0,2.4, ldraw_lib__type_swiss721bt_bold_n1(realsolid)],
 // 1 16 24.6 -0.25 -23 2.4 0 0 0 1 0 0 0 2.4 type-swiss721bt-bold-n1.dat
-  [1,16,24.6,-0.25,-23,2.4,0,0,0,1,0,0,0,2.4, ldraw_lib__type_swiss721bt_bold_n1()],
+  [1,16,24.6,-0.25,-23,2.4,0,0,0,1,0,0,0,2.4, ldraw_lib__type_swiss721bt_bold_n1(realsolid)],
 // 1 16 -17.6 -0.25 -18.5 4 0 0 0 1 0 0 0 4 type-swiss721bt-bold-n9.dat
-  [1,16,-17.6,-0.25,-18.5,4,0,0,0,1,0,0,0,4, ldraw_lib__type_swiss721bt_bold_n9()],
+  [1,16,-17.6,-0.25,-18.5,4,0,0,0,1,0,0,0,4, ldraw_lib__type_swiss721bt_bold_n9(realsolid)],
 // 1 16 21.5 -0.25 7.5 4 0 0 0 1 0 0 0 4 type-swiss721bt-bold-n8.dat
-  [1,16,21.5,-0.25,7.5,4,0,0,0,1,0,0,0,4, ldraw_lib__type_swiss721bt_bold_n8()],
+  [1,16,21.5,-0.25,7.5,4,0,0,0,1,0,0,0,4, ldraw_lib__type_swiss721bt_bold_n8(realsolid)],
 // 1 16 21.5 -0.25 -12 4 0 0 0 1 0 0 0 4 type-swiss721bt-bold-n6.dat
-  [1,16,21.5,-0.25,-12,4,0,0,0,1,0,0,0,4, ldraw_lib__type_swiss721bt_bold_n6()],
+  [1,16,21.5,-0.25,-12,4,0,0,0,1,0,0,0,4, ldraw_lib__type_swiss721bt_bold_n6(realsolid)],
 // 1 16 21.5 -0.25 -18.5 4 0 0 0 1 0 0 0 4 type-swiss721bt-bold-n3.dat
-  [1,16,21.5,-0.25,-18.5,4,0,0,0,1,0,0,0,4, ldraw_lib__type_swiss721bt_bold_n3()],
+  [1,16,21.5,-0.25,-18.5,4,0,0,0,1,0,0,0,4, ldraw_lib__type_swiss721bt_bold_n3(realsolid)],
 // 1 16 24.3 -0.25 -10 2.4 0 0 0 1 0 0 0 2.4 type-swiss721bt-bold-n3.dat
-  [1,16,24.3,-0.25,-10,2.4,0,0,0,1,0,0,0,2.4, ldraw_lib__type_swiss721bt_bold_n3()],
+  [1,16,24.3,-0.25,-10,2.4,0,0,0,1,0,0,0,2.4, ldraw_lib__type_swiss721bt_bold_n3(realsolid)],
 // 1 16 24.4 -0.25 9.5 2.4 0 0 0 1 0 0 0 2.4 type-swiss721bt-bold-n4.dat
-  [1,16,24.4,-0.25,9.5,2.4,0,0,0,1,0,0,0,2.4, ldraw_lib__type_swiss721bt_bold_n4()],
+  [1,16,24.4,-0.25,9.5,2.4,0,0,0,1,0,0,0,2.4, ldraw_lib__type_swiss721bt_bold_n4(realsolid)],
 // 1 2 28 -0.25 28 2 0 0 0 1 0 0 0 2 1-4ring1.dat
-  [1,2,28,-0.25,28,2,0,0,0,1,0,0,0,2, ldraw_lib__1_4ring1()],
+  [1,2,28,-0.25,28,2,0,0,0,1,0,0,0,2, ldraw_lib__1_4ring1(realsolid)],
 // 1 2 -28 -0.25 28 0 0 -2 0 1 0 2 0 0 1-4ring1.dat
-  [1,2,-28,-0.25,28,0,0,-2,0,1,0,2,0,0, ldraw_lib__1_4ring1()],
+  [1,2,-28,-0.25,28,0,0,-2,0,1,0,2,0,0, ldraw_lib__1_4ring1(realsolid)],
 // 1 2 -28 -0.25 -28 -2 0 0 0 1 0 0 0 -2 1-4ring1.dat
-  [1,2,-28,-0.25,-28,-2,0,0,0,1,0,0,0,-2, ldraw_lib__1_4ring1()],
+  [1,2,-28,-0.25,-28,-2,0,0,0,1,0,0,0,-2, ldraw_lib__1_4ring1(realsolid)],
 // 1 2 28 -0.25 -28 0 0 2 0 1 0 -2 0 0 1-4ring1.dat
-  [1,2,28,-0.25,-28,0,0,2,0,1,0,-2,0,0, ldraw_lib__1_4ring1()],
+  [1,2,28,-0.25,-28,0,0,2,0,1,0,-2,0,0, ldraw_lib__1_4ring1(realsolid)],
 // 4 0 1 -0.25 26.3 -1 -0.25 26.3 -2.3 -0.25 25.2 2.3 -0.25 25.2
   [4,0,1,-0.25,26.3,-1,-0.25,26.3,-2.3,-0.25,25.2,2.3,-0.25,25.2],
 // 4 0 2.3 -0.25 25.2 -2.3 -0.25 25.2 -2.3 -0.25 20.6 2.3 -0.25 20.6
@@ -387,21 +388,21 @@ function ldraw_lib__163555b() = [
 // 0 BFC CLIP
   [0,"BFC","CLIP"],
 // 1 16 28 -0.25 28 2 0 0 0 1 0 0 0 2 1-4chrd.dat
-  [1,16,28,-0.25,28,2,0,0,0,1,0,0,0,2, ldraw_lib__1_4chrd()],
+  [1,16,28,-0.25,28,2,0,0,0,1,0,0,0,2, ldraw_lib__1_4chrd(realsolid)],
 // 1 16 -28 -0.25 28 0 0 -2 0 1 0 2 0 0 1-4chrd.dat
-  [1,16,-28,-0.25,28,0,0,-2,0,1,0,2,0,0, ldraw_lib__1_4chrd()],
+  [1,16,-28,-0.25,28,0,0,-2,0,1,0,2,0,0, ldraw_lib__1_4chrd(realsolid)],
 // 1 16 -28 -0.25 -28 -2 0 0 0 1 0 0 0 -2 1-4chrd.dat
-  [1,16,-28,-0.25,-28,-2,0,0,0,1,0,0,0,-2, ldraw_lib__1_4chrd()],
+  [1,16,-28,-0.25,-28,-2,0,0,0,1,0,0,0,-2, ldraw_lib__1_4chrd(realsolid)],
 // 1 16 28 -0.25 -28 0 0 2 0 1 0 -2 0 0 1-4chrd.dat
-  [1,16,28,-0.25,-28,0,0,2,0,1,0,-2,0,0, ldraw_lib__1_4chrd()],
+  [1,16,28,-0.25,-28,0,0,2,0,1,0,-2,0,0, ldraw_lib__1_4chrd(realsolid)],
 // 1 16 28 -0.25 28 4 0 0 0 1 0 0 0 4 1-4ndis.dat
-  [1,16,28,-0.25,28,4,0,0,0,1,0,0,0,4, ldraw_lib__1_4ndis()],
+  [1,16,28,-0.25,28,4,0,0,0,1,0,0,0,4, ldraw_lib__1_4ndis(realsolid)],
 // 1 16 -28 -0.25 28 0 0 -4 0 1 0 4 0 0 1-4ndis.dat
-  [1,16,-28,-0.25,28,0,0,-4,0,1,0,4,0,0, ldraw_lib__1_4ndis()],
+  [1,16,-28,-0.25,28,0,0,-4,0,1,0,4,0,0, ldraw_lib__1_4ndis(realsolid)],
 // 1 16 -28 -0.25 -28 -4 0 0 0 1 0 0 0 -4 1-4ndis.dat
-  [1,16,-28,-0.25,-28,-4,0,0,0,1,0,0,0,-4, ldraw_lib__1_4ndis()],
+  [1,16,-28,-0.25,-28,-4,0,0,0,1,0,0,0,-4, ldraw_lib__1_4ndis(realsolid)],
 // 1 16 28 -0.25 -28 0 0 4 0 1 0 -4 0 0 1-4ndis.dat
-  [1,16,28,-0.25,-28,0,0,4,0,1,0,-4,0,0, ldraw_lib__1_4ndis()],
+  [1,16,28,-0.25,-28,0,0,4,0,1,0,-4,0,0, ldraw_lib__1_4ndis(realsolid)],
 // 4 16 28 -0.25 30 -28 -0.25 30 -1 -0.25 26.3 1 -0.25 26.3
   [4,16,28,-0.25,30,-28,-0.25,30,-1,-0.25,26.3,1,-0.25,26.3],
 // 3 16 -28 -0.25 30 -2.3 -0.25 25.2 -1 -0.25 26.3
@@ -1474,5 +1475,5 @@ function ldraw_lib__163555b() = [
   [3,16,35,-0.25,35,-28,-0.25,32,28,-0.25,32],
 ];
 module ldraw_lib__163555b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__163555b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__163555b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__163555b(line=0.2);

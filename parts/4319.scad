@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4edge.scad>
 use <../p/h2.scad>
-function ldraw_lib__4319() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4319(realsolid=false) = [
 // 0 Hinge Bar  8 with Split Bar Holder
 // 0 Name: 4319.dat
 // 0 Author: Steve Bliss [sbliss]
@@ -36,13 +37,13 @@ function ldraw_lib__4319() = [
 // 2 24 -10 8 0 -10 0 0
   [2,24,-10,8,0,-10,0,0],
 // 1 16 0 4 0 0 0 -1 1 0 0 0 -1 0 h2.dat
-  [1,16,0,4,0,0,0,-1,1,0,0,0,-1,0, ldraw_lib__h2()],
+  [1,16,0,4,0,0,0,-1,1,0,0,0,-1,0, ldraw_lib__h2(realsolid)],
 // 1 16 0 4 0 4 0 0 0 0 4 0 1 0 4-4edge.dat
-  [1,16,0,4,0,4,0,0,0,0,4,0,1,0, ldraw_lib__4_4edge()],
+  [1,16,0,4,0,4,0,0,0,0,4,0,1,0, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 4 120 4 0 0 0 0 4 0 1 0 4-4edge.dat
-  [1,16,0,4,120,4,0,0,0,0,4,0,1,0, ldraw_lib__4_4edge()],
+  [1,16,0,4,120,4,0,0,0,0,4,0,1,0, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 4 0 4 0 0 0 0 4 0 120 0 4-4cyli.dat
-  [1,16,0,4,0,4,0,0,0,0,4,0,120,0, ldraw_lib__4_4cyli()],
+  [1,16,0,4,0,4,0,0,0,0,4,0,120,0, ldraw_lib__4_4cyli(realsolid)],
 // 2 24 -4 0 120 4 0 120
   [2,24,-4,0,120,4,0,120],
 // 2 24 4 0 120 4 8 120
@@ -677,5 +678,5 @@ function ldraw_lib__4319() = [
 // 0
 ];
 module ldraw_lib__4319(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4319(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4319(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4319(line=0.2);

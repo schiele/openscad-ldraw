@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__163156a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__163156a(realsolid=false) = [
 // 0 Sticker  1.4 x  1.9 with Town Airport Lockers - 101 Lock
 // 0 Name: 163156a.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -19,7 +20,7 @@ function ldraw_lib__163156a() = [
 // 
 // 
 // 1 16 0 -0.25 0 19 0 0 0 0.25 0 0 0 14 box5-12.dat
-  [1,16,0,-0.25,0,19,0,0,0,0.25,0,0,0,14, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,19,0,0,0,0.25,0,0,0,14, ldraw_lib__box5_12(realsolid)],
 // 4 0 -11.75 -0.25 8.86 -11.75 -0.25 8.64 -11.65 -0.25 8.63 -11.51 -0.25 8.63
   [4,0,-11.75,-0.25,8.86,-11.75,-0.25,8.64,-11.65,-0.25,8.63,-11.51,-0.25,8.63],
 // 4 0 -11.32 -0.25 8.92 -11.75 -0.25 8.86 -11.51 -0.25 8.63 -11.17 -0.25 8.65
@@ -348,5 +349,5 @@ function ldraw_lib__163156a() = [
   [4,7,-9.25,-0.25,-0.5,-10.24,-0.25,-1.24,-9.67,-0.25,-1.62,-9.25,-0.25,-1.5],
 ];
 module ldraw_lib__163156a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__163156a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__163156a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__163156a(line=0.2);

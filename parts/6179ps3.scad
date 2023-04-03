@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/6179ps0s01.scad>
 use <s/6179s01.scad>
-function ldraw_lib__6179ps3() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6179ps3(realsolid=false) = [
 // 0 Plate  4 x  4 with 4 Studs on One Edge with "20 YEARS LEGO STAR WARS 1999-2019" and "DARTH VADER" Pattern
 // 0 Name: 6179ps3.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -20,9 +21,9 @@ function ldraw_lib__6179ps3() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\6179s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6179s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6179s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\6179ps0s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6179ps0s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6179ps0s01(realsolid)],
 // 
 // 4 15 -23.1277 0 -34.9138 -24.6773 0 -36.0543 -22.3751 0 -36.0543 -22.7479 0 -34.9138
   [4,15,-23.1277,0,-34.9138,-24.6773,0,-36.0543,-22.3751,0,-36.0543,-22.7479,0,-34.9138],
@@ -556,5 +557,5 @@ function ldraw_lib__6179ps3() = [
   [3,16,-20.0763,0,-33.1924,-20.0627,0,-33.5284,-18.1954,0,-31.0339],
 ];
 module ldraw_lib__6179ps3(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6179ps3(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6179ps3(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6179ps3(line=0.2);

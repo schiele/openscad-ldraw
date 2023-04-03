@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__98388p03s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__98388p03s01(realsolid=false) = [
 // 0 ~Animal Friends Bird Half Front with Eye with Eyelash Pattern
 // 0 Name: s\98388p03s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -475,5 +476,5 @@ function ldraw_lib__s__98388p03s01() = [
   [5,24,6.984,-42.607,-15.118,6.178,-38.571,-18.24,5.154,-42.447,-17.167,8.38,-38.682,-15.781],
 ];
 module ldraw_lib__s__98388p03s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__98388p03s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__98388p03s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__98388p03s01(line=0.2);

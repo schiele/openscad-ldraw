@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/31111s01.scad>
-function ldraw_lib__31111p09() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__31111p09(realsolid=false) = [
 // 0 Duplo Brick  2 x  4 x  2 with Crocodile Body Pattern
 // 0 Name: 31111p09.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -18,7 +19,7 @@ function ldraw_lib__31111p09() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\31111s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__31111s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__31111s01(realsolid)],
 // 
 // 4 2 -57 30.2 -40 -68.6 33.6 -40 -66.2 38.4 -40 -53.8 33.8 -40
   [4,2,-57,30.2,-40,-68.6,33.6,-40,-66.2,38.4,-40,-53.8,33.8,-40],
@@ -940,5 +941,5 @@ function ldraw_lib__31111p09() = [
   [4,16,-80,0,-40,-16.2,4.2,-40,17,4,-40,80,0,-40],
 ];
 module ldraw_lib__31111p09(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__31111p09(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__31111p09(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__31111p09(line=0.2);

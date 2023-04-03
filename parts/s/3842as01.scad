@@ -2,7 +2,8 @@ use <../../lib.scad>
 use <../../p/1-4cyli.scad>
 use <../../p/2-4edge.scad>
 use <../../p/3-16edge.scad>
-function ldraw_lib__s__3842as01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__3842as01(realsolid=false) = [
 // 0 ~Minifig Helmet Classic - Structure
 // 0 Name: s\3842as01.dat
 // 0 Author: Willy Tschager [Holly-Wood]
@@ -20,10 +21,10 @@ function ldraw_lib__s__3842as01() = [
 // 
 // 0 // Edge Bottom Inside
 // 1 16 0 21 0 0 0 -13 0 1 0 13 0 0 3-16edge.dat
-  [1,16,0,21,0,0,0,-13,0,1,0,13,0,0, ldraw_lib__3_16edge()],
+  [1,16,0,21,0,0,0,-13,0,1,0,13,0,0, ldraw_lib__3_16edge(realsolid)],
 // 0 // Edge Bottom Outside
 // 1 16 0 21 0 0 0 -14.5 0 1 0 14.5 0 0 3-16edge.dat
-  [1,16,0,21,0,0,0,-14.5,0,1,0,14.5,0,0, ldraw_lib__3_16edge()],
+  [1,16,0,21,0,0,0,-14.5,0,1,0,14.5,0,0, ldraw_lib__3_16edge(realsolid)],
 // 0 // Edge Visor Inside
 // 2 24 -11.834 14.187 -5.239 -12.011 12 -4.975
   [2,24,-11.834,14.187,-5.239,-12.011,12,-4.975],
@@ -64,7 +65,7 @@ function ldraw_lib__s__3842as01() = [
   [2,24,-5.549,4,-13.396,0,4,-14.5],
 // 0 // Edge Top Inside
 // 1 16 0 3 0 0 0 -13 0 1 0 13 0 0 2-4edge.dat
-  [1,16,0,3,0,0,0,-13,0,1,0,13,0,0, ldraw_lib__2_4edge()],
+  [1,16,0,3,0,0,0,-13,0,1,0,13,0,0, ldraw_lib__2_4edge(realsolid)],
 // 0 // Ring Bottom
 // 4 16 -12.011 21 4.975 -9.192 21 9.192 -10.253 21 10.253 -13.396 21 5.549
   [4,16,-12.011,21,4.975,-9.192,21,9.192,-10.253,21,10.253,-13.396,21,5.549],
@@ -122,7 +123,7 @@ function ldraw_lib__s__3842as01() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 3 0 0 0 -13 0 18 0 13 0 0 1-4cyli.dat
-  [1,16,0,3,0,0,0,-13,0,18,0,13,0,0, ldraw_lib__1_4cyli()],
+  [1,16,0,3,0,0,0,-13,0,18,0,13,0,0, ldraw_lib__1_4cyli(realsolid)],
 // 5 24 0 3 -13 0 4 -13 4.975 3 -12.011 -4.975 4 -12.011
   [5,24,0,3,-13,0,4,-13,4.975,3,-12.011,-4.975,4,-12.011],
 // 0 // Cone Inside
@@ -509,5 +510,5 @@ function ldraw_lib__s__3842as01() = [
   [5,24,0,-7.36,-4.428,0,-7.684,0,-1.694,-7.36,-4.091,1.694,-7.36,-4.091],
 ];
 module ldraw_lib__s__3842as01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__3842as01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__3842as01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__3842as01(line=0.2);

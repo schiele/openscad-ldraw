@@ -4,7 +4,8 @@ use <../p/4-4con7.scad>
 use <../p/4-4cylc.scad>
 use <../p/4-4cylo.scad>
 use <../p/stud4.scad>
-function ldraw_lib__28551() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__28551(realsolid=false) = [
 // 0 Minifig Hair Bushy Swept Back
 // 0 Name: 28551.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -3618,23 +3619,23 @@ function ldraw_lib__28551() = [
   [2,24,2.155,8.812,20.072,1.365,6.855,20.939],
 // 0 // Stud4
 // 1 16 0 -6.25 0 1 0 0 0 -1.5625 0 0 0 1 stud4.dat
-  [1,16,0,-6.25,0,1,0,0,0,-1.5625,0,0,0,1, ldraw_lib__stud4()],
+  [1,16,0,-6.25,0,1,0,0,0,-1.5625,0,0,0,1, ldraw_lib__stud4(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -6.25 0 0.75 0 0 0 -1 0 0 0 0.75 4-4con7.dat
-  [1,16,0,-6.25,0,0.75,0,0,0,-1,0,0,0,0.75, ldraw_lib__4_4con7()],
+  [1,16,0,-6.25,0,0.75,0,0,0,-1,0,0,0,0.75, ldraw_lib__4_4con7(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -12.9 0 5.25 0 0 0 5.65 0 0 0 5.25 4-4cylo.dat
-  [1,16,0,-12.9,0,5.25,0,0,0,5.65,0,0,0,5.25, ldraw_lib__4_4cylo()],
+  [1,16,0,-12.9,0,5.25,0,0,0,5.65,0,0,0,5.25, ldraw_lib__4_4cylo(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -12.9 0 1.75 0 0 0 -1 0 0 0 1.75 4-4con2.dat
-  [1,16,0,-12.9,0,1.75,0,0,0,-1,0,0,0,1.75, ldraw_lib__4_4con2()],
+  [1,16,0,-12.9,0,1.75,0,0,0,-1,0,0,0,1.75, ldraw_lib__4_4con2(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -15.6 0 3.5 0 0 0 1.7 0 0 0 3.5 4-4cylc.dat
-  [1,16,0,-15.6,0,3.5,0,0,0,1.7,0,0,0,3.5, ldraw_lib__4_4cylc()],
+  [1,16,0,-15.6,0,3.5,0,0,0,1.7,0,0,0,3.5, ldraw_lib__4_4cylc(realsolid)],
 // 2 24 -3.602 -8.216 15.479 -2.333 -9.674 15.213
   [2,24,-3.602,-8.216,15.479,-2.333,-9.674,15.213],
 // 2 24 -6.275 -14.024 5.841 -4.204 -10.853 13.331
@@ -8197,5 +8198,5 @@ function ldraw_lib__28551() = [
   [5,24,6.528,5.576,20.327,6.392,8.021,18.027,7.437,5.748,20.703,5.9,7.611,18.431],
 ];
 module ldraw_lib__28551(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__28551(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__28551(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__28551(line=0.2);

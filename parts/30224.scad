@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/30224s01.scad>
 use <../p/stud3.scad>
-function ldraw_lib__30224() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__30224(realsolid=false) = [
 // 0 Animal Fish Ornamental
 // 0 Name: 30224.dat
 // 0 Author: Mark Chittenden [mdublade]
@@ -19,11 +20,11 @@ function ldraw_lib__30224() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\30224s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30224s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30224s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\30224s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__30224s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__30224s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 -2 0 0 0 1 stud3.dat
-  [1,16,0,0,0,-1,0,0,0,-2,0,0,0,1, ldraw_lib__stud3()],
+  [1,16,0,0,0,-1,0,0,0,-2,0,0,0,1, ldraw_lib__stud3(realsolid)],
 // 
 // 5 24 0 .005 -5.752 0 0 -4 2.313 -.117 -5.762 -2.313 -.117 -5.762
   [5,24,0,.005,-5.752,0,0,-4,2.313,-.117,-5.762,-2.313,-.117,-5.762],
@@ -91,5 +92,5 @@ function ldraw_lib__30224() = [
   [5,24,0,-.001,9.059,0,-.692,13.05,-4.887,-.192,11.3,4.887,-.192,11.3],
 ];
 module ldraw_lib__30224(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__30224(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__30224(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__30224(line=0.2);

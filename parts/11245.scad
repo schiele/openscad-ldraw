@@ -7,7 +7,8 @@ use <../p/4-4edge.scad>
 use <../p/4-4ring5.scad>
 use <s/11245s01.scad>
 use <../p/stud4od.scad>
-function ldraw_lib__11245() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__11245(realsolid=false) = [
 // 0 Figure Friends School Bag
 // 0 Name: 11245.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -28,30 +29,30 @@ function ldraw_lib__11245() = [
 // 
 // 
 // 1 16 -8 -38 4.5 0 16 0 4 0 0 0 0 4 4-4cylo.dat
-  [1,16,-8,-38,4.5,0,16,0,4,0,0,0,0,4, ldraw_lib__4_4cylo()],
+  [1,16,-8,-38,4.5,0,16,0,4,0,0,0,0,4, ldraw_lib__4_4cylo(realsolid)],
 // 1 16 0 -5 0 1 0 0 0 -1.25 0 0 0 -1 stud4od.dat
-  [1,16,0,-5,0,1,0,0,0,-1.25,0,0,0,-1, ldraw_lib__stud4od()],
+  [1,16,0,-5,0,1,0,0,0,-1.25,0,0,0,-1, ldraw_lib__stud4od(realsolid)],
 // 1 16 0 -5 0 1 0 0 0 -1 0 0 0 -1 4-4ring5.dat
-  [1,16,0,-5,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__4_4ring5()],
+  [1,16,0,-5,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__4_4ring5(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -5 0 5 0 0 0 -16 0 0 0 5 4-4cyli.dat
-  [1,16,0,-5,0,5,0,0,0,-16,0,0,0,5, ldraw_lib__4_4cyli()],
+  [1,16,0,-5,0,5,0,0,0,-16,0,0,0,5, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 -5 0 5 0 0 0 -1 0 0 0 5 4-4edge.dat
-  [1,16,0,-5,0,5,0,0,0,-1,0,0,0,5, ldraw_lib__4_4edge()],
+  [1,16,0,-5,0,5,0,0,0,-1,0,0,0,5, ldraw_lib__4_4edge(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -21 0 0 0 5 0 -3 0 -5 0 0 4-4cyls.dat
-  [1,16,0,-21,0,0,0,5,0,-3,0,-5,0,0, ldraw_lib__4_4cyls()],
+  [1,16,0,-21,0,0,0,5,0,-3,0,-5,0,0, ldraw_lib__4_4cyls(realsolid)],
 // 1 16 0 -24 0 0 0 5 3 -1 0 -5 0 0 4-4disc.dat
-  [1,16,0,-24,0,0,0,5,3,-1,0,-5,0,0, ldraw_lib__4_4disc()],
+  [1,16,0,-24,0,0,0,5,3,-1,0,-5,0,0, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 -24 0 0 0 5 3 -1 0 -5 0 0 4-4edge.dat
-  [1,16,0,-24,0,0,0,5,3,-1,0,-5,0,0, ldraw_lib__4_4edge()],
+  [1,16,0,-24,0,0,0,5,3,-1,0,-5,0,0, ldraw_lib__4_4edge(realsolid)],
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\11245s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__11245s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__11245s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\11245s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__11245s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__11245s01(realsolid)],
 // 
 // 0 // Patternable area
 // 3 16 0.835 -15.133 -10.76 1.112 -15.134 -10.819 0.716 -15.209 -11.292
@@ -503,5 +504,5 @@ function ldraw_lib__11245() = [
   [5,24,-8.612,-1.899,-10.096,-3.918,-4.716,-12.005,-9.098,-5.383,-11.177,-3.813,-1.597,-10.882],
 ];
 module ldraw_lib__11245(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__11245(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__11245(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__11245(line=0.2);

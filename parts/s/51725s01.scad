@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/2-4chrd.scad>
-function ldraw_lib__s__51725s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__51725s01(realsolid=false) = [
 // 0 ~Duplo Flag Wavy  2 x  5 Patternable Surface
 // 0 Name: s\51725s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -183,10 +184,10 @@ function ldraw_lib__s__51725s01() = [
 // 5 24 87.552 16.9928 -3.472 87.552 40.16 -3.472 92.325 41.401 -6.279 82.355 14.5063 -1.66
   [5,24,87.552,16.9928,-3.472,87.552,40.16,-3.472,92.325,41.401,-6.279,82.355,14.5063,-1.66],
 // 1 16 152.3 -.9 -2.4 0 0 6 6.2 0 .5 0 1 0 2-4chrd.dat
-  [1,16,152.3,-.9,-2.4,0,0,6,6.2,0,.5,0,1,0, ldraw_lib__2_4chrd()],
+  [1,16,152.3,-.9,-2.4,0,0,6,6.2,0,.5,0,1,0, ldraw_lib__2_4chrd(realsolid)],
 // 1 16 152.3 43.4 -2.4 0 0 6 6.3 0 0 0 1 0 2-4chrd.dat
-  [1,16,152.3,43.4,-2.4,0,0,6,6.3,0,0,0,1,0, ldraw_lib__2_4chrd()],
+  [1,16,152.3,43.4,-2.4,0,0,6,6.3,0,0,0,1,0, ldraw_lib__2_4chrd(realsolid)],
 ];
 module ldraw_lib__s__51725s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__51725s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__51725s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__51725s01(line=0.2);

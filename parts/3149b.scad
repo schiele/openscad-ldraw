@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <3148.scad>
-function ldraw_lib__3149b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3149b(realsolid=false) = [
 // 0 ~Moved to 3148
 // 0 Name: 3149b.dat
 // 0 Author: [PTadmin]
@@ -20,8 +21,8 @@ function ldraw_lib__3149b() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 3148.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3148()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3148(realsolid)],
 ];
 module ldraw_lib__3149b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3149b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3149b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3149b(line=0.2);

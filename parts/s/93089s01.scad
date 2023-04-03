@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/4-4cylc.scad>
-function ldraw_lib__s__93089s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__93089s01(realsolid=false) = [
 // 0 ~Animal Cat Standing Looking Left without Patternable Areas
 // 0 Name: s\93089s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -19,7 +20,7 @@ function ldraw_lib__s__93089s01() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -0.064 -32.632 -20.213 1.98907 0.01763 -0.20876 -0.11261 -5.21312 -1.11733 0.17587 -3.53739 1.6456 4-4cylc.dat
-  [1,16,-0.064,-32.632,-20.213,1.98907,0.01763,-0.20876,-0.11261,-5.21312,-1.11733,0.17587,-3.53739,1.6456, ldraw_lib__4_4cylc()],
+  [1,16,-0.064,-32.632,-20.213,1.98907,0.01763,-0.20876,-0.11261,-5.21312,-1.11733,0.17587,-3.53739,1.6456, ldraw_lib__4_4cylc(realsolid)],
 // 3 16 1.309 -21.682 -35.314 1.385 -24.062 -36.894 -0.754 -21.986 -35.596
   [3,16,1.309,-21.682,-35.314,1.385,-24.062,-36.894,-0.754,-21.986,-35.596],
 // 3 16 -0.754 -21.986 -35.596 1.385 -24.062 -36.894 -0.337 -24.124 -37.053
@@ -3284,5 +3285,5 @@ function ldraw_lib__s__93089s01() = [
   [5,24,-2.677,-46.281,15.986,-2.573,-40.432,11.011,0.574,-40.819,9.906,-4.135,-43.918,17.185],
 ];
 module ldraw_lib__s__93089s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__93089s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__93089s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__93089s01(line=0.2);

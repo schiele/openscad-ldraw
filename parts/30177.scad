@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4disc.scad>
 use <../p/stud4.scad>
 use <../p/t04o6250.scad>
-function ldraw_lib__30177() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__30177(realsolid=false) = [
 // 0 Minifig Ninja Wrap
 // 0 Name: 30177.dat
 // 0 Author: Mark Chittenden [mdublade]
@@ -27,9 +28,9 @@ function ldraw_lib__30177() = [
 // 
 // 
 // 1 16 0 -4 0 1 0 0 0 -1 0 0 0 1 stud4.dat
-  [1,16,0,-4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4()],
+  [1,16,0,-4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4(realsolid)],
 // 1 16 0 -4 0 6 0 0 0 -1 0 0 0 6 4-4disc.dat
-  [1,16,0,-4,0,6,0,0,0,-1,0,0,0,6, ldraw_lib__4_4disc()],
+  [1,16,0,-4,0,6,0,0,0,-1,0,0,0,6, ldraw_lib__4_4disc(realsolid)],
 // 4 16 -1.552 -9.978 -1.733 1.609 -9.979 -1.733 1.606 -9.903 1.905 -1.565 -9.861 1.905
   [4,16,-1.552,-9.978,-1.733,1.609,-9.979,-1.733,1.606,-9.903,1.905,-1.565,-9.861,1.905],
 // 3 16 1.582 -8.976 -4.889 1.609 -9.979 -1.733 -1.565 -9.138 -4.845
@@ -2284,19 +2285,19 @@ function ldraw_lib__30177() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 0 0 0 8 0 -6.4 0 8 0 0 t04o6250.dat
-  [1,16,0,0,0,0,0,8,0,-6.4,0,8,0,0, ldraw_lib__t04o6250()],
+  [1,16,0,0,0,0,0,8,0,-6.4,0,8,0,0, ldraw_lib__t04o6250(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 0 -8 0 0 0 -6.4 0 0 0 8 t04o6250.dat
-  [1,16,0,0,0,-8,0,0,0,-6.4,0,0,0,8, ldraw_lib__t04o6250()],
+  [1,16,0,0,0,-8,0,0,0,-6.4,0,0,0,8, ldraw_lib__t04o6250(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 0 0 0 -8 0 -6.4 0 -8 0 0 t04o6250.dat
-  [1,16,0,0,0,0,0,-8,0,-6.4,0,-8,0,0, ldraw_lib__t04o6250()],
+  [1,16,0,0,0,0,0,-8,0,-6.4,0,-8,0,0, ldraw_lib__t04o6250(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 0 8 0 0 0 -6.4 0 0 0 -8 t04o6250.dat
-  [1,16,0,0,0,8,0,0,0,-6.4,0,0,0,-8, ldraw_lib__t04o6250()],
+  [1,16,0,0,0,8,0,0,0,-6.4,0,0,0,-8, ldraw_lib__t04o6250(realsolid)],
 // 3 16 -.202 30.467 24.468 3.262 22.968 23.464 4.607 24.131 24.438
   [3,16,-.202,30.467,24.468,3.262,22.968,23.464,4.607,24.131,24.438],
 // 3 16 -4.088 27.146 24.564 -5.312 26.106 24.392 -.587 19.915 24.512
@@ -5191,5 +5192,5 @@ function ldraw_lib__30177() = [
   [5,24,-13.9883,23.0738,8.0083,-12.961,23.655,7.913,-12.7455,24,10.0335,-15.7423,22.2718,3.3253],
 ];
 module ldraw_lib__30177(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__30177(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__30177(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__30177(line=0.2);

@@ -6,7 +6,8 @@ use <../../p/box5-1.scad>
 use <../../p/rect.scad>
 use <../../p/rect2p.scad>
 use <../../p/recte3.scad>
-function ldraw_lib__s__28192s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__28192s01(realsolid=false) = [
 // 0 ~Slope Brick 45  2 x  1 with Cutout and without Stud without Top Surface
 // 0 Name: s\28192s01.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -29,11 +30,11 @@ function ldraw_lib__s__28192s01() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 8 -2 -6 0 0 0 -4 0 0 0 8 box5-1.dat
-  [1,16,0,8,-2,-6,0,0,0,-4,0,0,0,8, ldraw_lib__box5_1()],
+  [1,16,0,8,-2,-6,0,0,0,-4,0,0,0,8, ldraw_lib__box5_1(realsolid)],
 // 1 16 0 6 -10 -1.5 0 0 0 0 2 0 4 0 box4-1.dat
-  [1,16,0,6,-10,-1.5,0,0,0,0,2,0,4,0, ldraw_lib__box4_1()],
+  [1,16,0,6,-10,-1.5,0,0,0,0,2,0,4,0, ldraw_lib__box4_1(realsolid)],
 // 1 16 0 4 -10 0 0 10 -4 0 0 0 20 0 box3u4a.dat
-  [1,16,0,4,-10,0,0,10,-4,0,0,0,20,0, ldraw_lib__box3u4a()],
+  [1,16,0,4,-10,0,0,10,-4,0,0,0,20,0, ldraw_lib__box3u4a(realsolid)],
 // 2 24 -10 8 -10 -6 8 -10
   [2,24,-10,8,-10,-6,8,-10],
 // 2 24 6 8 -10 10 8 -10
@@ -50,9 +51,9 @@ function ldraw_lib__s__28192s01() = [
   [2,24,-10,8,-10,-10,24,-10],
 // 
 // 1 16 0 24 -20 6 0 0 0 1 0 0 0 6 recte3.dat
-  [1,16,0,24,-20,6,0,0,0,1,0,0,0,6, ldraw_lib__recte3()],
+  [1,16,0,24,-20,6,0,0,0,1,0,0,0,6, ldraw_lib__recte3(realsolid)],
 // 1 16 0 16 -14 0 0 -6 -8 0 0 0 1 0 rect2p.dat
-  [1,16,0,16,-14,0,0,-6,-8,0,0,0,1,0, ldraw_lib__rect2p()],
+  [1,16,0,16,-14,0,0,-6,-8,0,0,0,1,0, ldraw_lib__rect2p(realsolid)],
 // 4 16 -6 8 -14 -6 20 -26 -6 24 -26 -6 24 -14
   [4,16,-6,8,-14,-6,20,-26,-6,24,-26,-6,24,-14],
 // 4 16 6 8 -14 6 24 -14 6 24 -26 6 20 -26
@@ -60,7 +61,7 @@ function ldraw_lib__s__28192s01() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 16 -20 6 0 0 0 -2 6 0 0 -6 box2-5.dat
-  [1,16,0,16,-20,6,0,0,0,-2,6,0,0,-6, ldraw_lib__box2_5()],
+  [1,16,0,16,-20,6,0,0,0,-2,6,0,0,-6, ldraw_lib__box2_5(realsolid)],
 // 
 // 4 16 -6 24 -14 -6 24 -26 -10 24 -30 -10 24 -10
   [4,16,-6,24,-14,-6,24,-26,-10,24,-30,-10,24,-10],
@@ -71,7 +72,7 @@ function ldraw_lib__s__28192s01() = [
 // 4 16 -6 24 -26 6 24 -26 10 24 -30 -10 24 -30
   [4,16,-6,24,-26,6,24,-26,10,24,-30,-10,24,-30],
 // 1 16 0 24 -20 10 0 0 0 1 0 0 0 10 recte3.dat
-  [1,16,0,24,-20,10,0,0,0,1,0,0,0,10, ldraw_lib__recte3()],
+  [1,16,0,24,-20,10,0,0,0,1,0,0,0,10, ldraw_lib__recte3(realsolid)],
 // 4 16 -10 24 -10 -10 24 -30 -10 20 -30 -10 8 -10
   [4,16,-10,24,-10,-10,24,-30,-10,20,-30,-10,8,-10],
 // 3 16 -10 0 -10 -10 8 -10 -10 20 -30
@@ -82,10 +83,10 @@ function ldraw_lib__s__28192s01() = [
   [3,16,10,20,-30,10,8,-10,10,0,-10],
 // 
 // 1 16 0 10 -20 10 0 0 0 1 -10 0 0 10 recte3.dat
-  [1,16,0,10,-20,10,0,0,0,1,-10,0,0,10, ldraw_lib__recte3()],
+  [1,16,0,10,-20,10,0,0,0,1,-10,0,0,10, ldraw_lib__recte3(realsolid)],
 // 1 16 0 22 -30 10 0 0 0 0 2 0 1 0 rect.dat
-  [1,16,0,22,-30,10,0,0,0,0,2,0,1,0, ldraw_lib__rect()],
+  [1,16,0,22,-30,10,0,0,0,0,2,0,1,0, ldraw_lib__rect(realsolid)],
 ];
 module ldraw_lib__s__28192s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__28192s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__28192s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__28192s01(line=0.2);

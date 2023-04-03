@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/11217s01.scad>
 use <../p/stud4.scad>
-function ldraw_lib__11217() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__11217(realsolid=false) = [
 // 0 Minifig Helmet SW Clone Trooper Phase 2
 // 0 Name: 11217.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -20,11 +21,11 @@ function ldraw_lib__11217() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\11217s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__11217s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__11217s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\11217s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__11217s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__11217s01(realsolid)],
 // 1 16 0 -5.591 0 -1 0 0 0 -1.39775 0 0 0 1 stud4.dat
-  [1,16,0,-5.591,0,-1,0,0,0,-1.39775,0,0,0,1, ldraw_lib__stud4()],
+  [1,16,0,-5.591,0,-1,0,0,0,-1.39775,0,0,0,1, ldraw_lib__stud4(realsolid)],
 // 4 16 2.278 -14.131 6.579 -2.278 -14.131 6.579 -2.278 -15.405 2.003 2.278 -15.405 2.003
   [4,16,2.278,-14.131,6.579,-2.278,-14.131,6.579,-2.278,-15.405,2.003,2.278,-15.405,2.003],
 // 4 16 2.037 21.331 16.387 -2.037 21.331 16.387 -1.884 18.95 18.308 1.884 18.95 18.308
@@ -129,5 +130,5 @@ function ldraw_lib__11217() = [
   [5,24,0,-3.746,-15.602,0,-1.532,-15.5518,2.279,-3.611,-14.975,-2.279,-3.611,-14.975],
 ];
 module ldraw_lib__11217(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__11217(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__11217(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__11217(line=0.2);

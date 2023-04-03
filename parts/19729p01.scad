@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/19729s01.scad>
-function ldraw_lib__19729p01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__19729p01(realsolid=false) = [
 // 0 Minifig Head Cuboid with Minecraft Pumpkin Pattern
 // 0 Name: 19729p01.dat
 // 0 Author: Merlijn Wissink [legolijntje]
@@ -15,7 +16,7 @@ function ldraw_lib__19729p01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\19729s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__19729s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__19729s01(realsolid)],
 // 
 // 4 70 -3.5 15 -15 -10 15 -15 -10 12 -15 -6.5 12 -15
   [4,70,-3.5,15,-15,-10,15,-15,-10,12,-15,-6.5,12,-15],
@@ -125,5 +126,5 @@ function ldraw_lib__19729p01() = [
   [3,16,-10.5,18,-15,-10.5,25.5,-15,-15,30,-15],
 ];
 module ldraw_lib__19729p01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__19729p01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__19729p01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__19729p01(line=0.2);

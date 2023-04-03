@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3298s01.scad>
-function ldraw_lib__3298p6u() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3298p6u(realsolid=false) = [
 // 0 Slope Brick 33  3 x  2 with UFO Pattern
 // 0 Name: 3298p6u.dat
 // 0 Author: Nils Schmidt [BlackBrick89]
@@ -15,7 +16,7 @@ function ldraw_lib__3298p6u() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3298s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3298s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3298s01(realsolid)],
 // 3 0 -14.755 1.94 -13.88 -13.27 1.225 -12.45 -13.81 0.77 -11.54
   [3,0,-14.755,1.94,-13.88,-13.27,1.225,-12.45,-13.81,0.77,-11.54],
 // 4 0 -17.185 3.24 -16.48 -14.755 1.94 -13.88 -13.81 0.77 -11.54 -18.265 2.915 -15.83
@@ -3655,5 +3656,5 @@ function ldraw_lib__3298p6u() = [
 // 0
 ];
 module ldraw_lib__3298p6u(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3298p6u(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3298p6u(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3298p6u(line=0.2);

@@ -7,7 +7,8 @@ use <../p/4-4ring3.scad>
 use <../p/4-4ring4.scad>
 use <../p/4-4ring5.scad>
 use <../p/stud.scad>
-function ldraw_lib__4075() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4075(realsolid=false) = [
 // 0 ~Wheel 10 x  3
 // 0 Name: 4075.dat
 // 0 Author: Alex Taylor [anathema]
@@ -26,29 +27,29 @@ function ldraw_lib__4075() = [
 // 
 // 
 // 1 16 0 0 0 0 0 1 1 0 0 0 1 0 stud.dat
-  [1,16,0,0,0,0,0,1,1,0,0,0,1,0, ldraw_lib__stud()],
+  [1,16,0,0,0,0,0,1,1,0,0,0,1,0, ldraw_lib__stud(realsolid)],
 // 1 16 0 0 0 13 0 0 0 0 -13 0 8 0 4-4cylc.dat
-  [1,16,0,0,0,13,0,0,0,0,-13,0,8,0, ldraw_lib__4_4cylc()],
+  [1,16,0,0,0,13,0,0,0,0,-13,0,8,0, ldraw_lib__4_4cylc(realsolid)],
 // 1 16 0 0 8 5 0 0 0 0 -5 0 2.5 0 4-4cylo.dat
-  [1,16,0,0,8,5,0,0,0,0,-5,0,2.5,0, ldraw_lib__4_4cylo()],
+  [1,16,0,0,8,5,0,0,0,0,-5,0,2.5,0, ldraw_lib__4_4cylo(realsolid)],
 // 1 16 0 0 10.5 0.5 0 0 0 0 0.5 0 -1 0 4-4ring5.dat
-  [1,16,0,0,10.5,0.5,0,0,0,0,0.5,0,-1,0, ldraw_lib__4_4ring5()],
+  [1,16,0,0,10.5,0.5,0,0,0,0,0.5,0,-1,0, ldraw_lib__4_4ring5(realsolid)],
 // 1 16 0 0 8 1 0 0 0 0 1 0 -1 0 4-4ring5.dat
-  [1,16,0,0,8,1,0,0,0,0,1,0,-1,0, ldraw_lib__4_4ring5()],
+  [1,16,0,0,8,1,0,0,0,0,1,0,-1,0, ldraw_lib__4_4ring5(realsolid)],
 // 1 16 0 0 8 6 0 0 0 0 6 0 -1 0 4-4ring1.dat
-  [1,16,0,0,8,6,0,0,0,0,6,0,-1,0, ldraw_lib__4_4ring1()],
+  [1,16,0,0,8,6,0,0,0,0,6,0,-1,0, ldraw_lib__4_4ring1(realsolid)],
 // 1 16 0 0 8 1 0 0 0 0 1 0 -1 0 4-4rin12.dat
-  [1,16,0,0,8,1,0,0,0,0,1,0,-1,0, ldraw_lib__4_4rin12()],
+  [1,16,0,0,8,1,0,0,0,0,1,0,-1,0, ldraw_lib__4_4rin12(realsolid)],
 // 1 16 0 0 10.5 1 0 0 0 0 1 0 -1 0 4-4ring3.dat
-  [1,16,0,0,10.5,1,0,0,0,0,1,0,-1,0, ldraw_lib__4_4ring3()],
+  [1,16,0,0,10.5,1,0,0,0,0,1,0,-1,0, ldraw_lib__4_4ring3(realsolid)],
 // 1 16 0 0 10.5 1 0 0 0 0 1 0 -1 0 4-4ring4.dat
-  [1,16,0,0,10.5,1,0,0,0,0,1,0,-1,0, ldraw_lib__4_4ring4()],
+  [1,16,0,0,10.5,1,0,0,0,0,1,0,-1,0, ldraw_lib__4_4ring4(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 8 2.5 0 0 0 0 -2.5 0 2.5 0 4-4cylc.dat
-  [1,16,0,0,8,2.5,0,0,0,0,-2.5,0,2.5,0, ldraw_lib__4_4cylc()],
+  [1,16,0,0,8,2.5,0,0,0,0,-2.5,0,2.5,0, ldraw_lib__4_4cylc(realsolid)],
 // 
 ];
 module ldraw_lib__4075(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4075(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4075(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4075(line=0.2);

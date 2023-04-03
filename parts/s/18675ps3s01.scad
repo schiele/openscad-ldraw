@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__18675ps3s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__18675ps3s01(realsolid=false) = [
 // 0 ~Dish  6 x  6 Inverted - No Studs with Handle with Grey Lines on Black Background, Red Area and Window Pattern - Half
 // 0 Name: s\18675ps3s01.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -1212,5 +1213,5 @@ function ldraw_lib__s__18675ps3s01() = [
   [5,24,0,-16,0,-12,-15.2,0,-3.7985,-15.7446,-0.5,-11.9826,-15.2,0.2639],
 ];
 module ldraw_lib__s__18675ps3s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__18675ps3s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__18675ps3s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__18675ps3s01(line=0.2);

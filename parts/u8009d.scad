@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/rect.scad>
 use <../p/slotm.scad>
 use <../p/stud.scad>
-function ldraw_lib__u8009d() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__u8009d(realsolid=false) = [
 // 0 Mursten Brick  4 x  4 Corner with 2 Slots Right
 // 0 Name: u8009d.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -28,21 +29,21 @@ function ldraw_lib__u8009d() = [
 // 4 16 20 24 60 16 24 56 16 24 16 20 24 20
   [4,16,20,24,60,16,24,56,16,24,16,20,24,20],
 // 1 16 20 14 -16 36 0 0 0 0 -10 0 -12 0 rect.dat
-  [1,16,20,14,-16,36,0,0,0,0,-10,0,-12,0, ldraw_lib__rect()],
+  [1,16,20,14,-16,36,0,0,0,0,-10,0,-12,0, ldraw_lib__rect(realsolid)],
 // 1 16 36 14 16 -20 0 0 0 0 -10 0 12 0 rect.dat
-  [1,16,36,14,16,-20,0,0,0,0,-10,0,12,0, ldraw_lib__rect()],
+  [1,16,36,14,16,-20,0,0,0,0,-10,0,12,0, ldraw_lib__rect(realsolid)],
 // 1 16 -16 14 20 0 -12 0 -10 0 0 0 0 36 rect.dat
-  [1,16,-16,14,20,0,-12,0,-10,0,0,0,0,36, ldraw_lib__rect()],
+  [1,16,-16,14,20,0,-12,0,-10,0,0,0,0,36, ldraw_lib__rect(realsolid)],
 // 1 16 16 14 36 0 12 0 -10 0 0 0 0 -20 rect.dat
-  [1,16,16,14,36,0,12,0,-10,0,0,0,0,-20, ldraw_lib__rect()],
+  [1,16,16,14,36,0,12,0,-10,0,0,0,0,-20, ldraw_lib__rect(realsolid)],
 // 1 16 40 12 20 0 0 20 -12 0 0 0 -4 0 rect.dat
-  [1,16,40,12,20,0,0,20,-12,0,0,0,-4,0, ldraw_lib__rect()],
+  [1,16,40,12,20,0,0,20,-12,0,0,0,-4,0, ldraw_lib__rect(realsolid)],
 // 1 16 20 12 40 0 -4 0 -12 0 0 0 0 -20 rect.dat
-  [1,16,20,12,40,0,-4,0,-12,0,0,0,0,-20, ldraw_lib__rect()],
+  [1,16,20,12,40,0,-4,0,-12,0,0,0,0,-20, ldraw_lib__rect(realsolid)],
 // 1 16 20 12 -20 0 0 -40 -12 0 0 0 4 0 rect.dat
-  [1,16,20,12,-20,0,0,-40,-12,0,0,0,4,0, ldraw_lib__rect()],
+  [1,16,20,12,-20,0,0,-40,-12,0,0,0,4,0, ldraw_lib__rect(realsolid)],
 // 1 16 -20 12 20 0 4 0 -12 0 0 0 0 40 rect.dat
-  [1,16,-20,12,20,0,4,0,-12,0,0,0,0,40, ldraw_lib__rect()],
+  [1,16,-20,12,20,0,4,0,-12,0,0,0,0,40, ldraw_lib__rect(realsolid)],
 // 4 16 56 4 16 -16 4 16 -16 4 -16 56 4 -16
   [4,16,56,4,16,-16,4,16,-16,4,-16,56,4,-16],
 // 4 16 -16 4 56 -16 4 16 16 4 16 16 4 56
@@ -56,36 +57,36 @@ function ldraw_lib__u8009d() = [
 // 2 24 16 4 56 -16 4 56
   [2,24,16,4,56,-16,4,56],
 // 1 16 40 0 0 0 0 -1 0 1 0 1 0 0 slotm.dat
-  [1,16,40,0,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__slotm()],
+  [1,16,40,0,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__slotm(realsolid)],
 // 1 16 0 0 40 -1 0 0 0 1 0 0 0 -1 slotm.dat
-  [1,16,0,0,40,-1,0,0,0,1,0,0,0,-1, ldraw_lib__slotm()],
+  [1,16,0,0,40,-1,0,0,0,1,0,0,0,-1, ldraw_lib__slotm(realsolid)],
 // 0
 // 1 16 -10 0 30 1 0 0 0 1 0 0 0 1 stud.dat
-  [1,16,-10,0,30,1,0,0,0,1,0,0,0,1, ldraw_lib__stud()],
+  [1,16,-10,0,30,1,0,0,0,1,0,0,0,1, ldraw_lib__stud(realsolid)],
 // 1 16 -10 0 50 1 0 0 0 1 0 0 0 1 stud.dat
-  [1,16,-10,0,50,1,0,0,0,1,0,0,0,1, ldraw_lib__stud()],
+  [1,16,-10,0,50,1,0,0,0,1,0,0,0,1, ldraw_lib__stud(realsolid)],
 // 1 16 -10 0 10 1 0 0 0 1 0 0 0 1 stud.dat
-  [1,16,-10,0,10,1,0,0,0,1,0,0,0,1, ldraw_lib__stud()],
+  [1,16,-10,0,10,1,0,0,0,1,0,0,0,1, ldraw_lib__stud(realsolid)],
 // 1 16 -10 0 -10 1 0 0 0 1 0 0 0 1 stud.dat
-  [1,16,-10,0,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__stud()],
+  [1,16,-10,0,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__stud(realsolid)],
 // 1 16 10 0 -10 1 0 0 0 1 0 0 0 1 stud.dat
-  [1,16,10,0,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__stud()],
+  [1,16,10,0,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__stud(realsolid)],
 // 1 16 10 0 10 1 0 0 0 1 0 0 0 1 stud.dat
-  [1,16,10,0,10,1,0,0,0,1,0,0,0,1, ldraw_lib__stud()],
+  [1,16,10,0,10,1,0,0,0,1,0,0,0,1, ldraw_lib__stud(realsolid)],
 // 1 16 10 0 30 1 0 0 0 1 0 0 0 1 stud.dat
-  [1,16,10,0,30,1,0,0,0,1,0,0,0,1, ldraw_lib__stud()],
+  [1,16,10,0,30,1,0,0,0,1,0,0,0,1, ldraw_lib__stud(realsolid)],
 // 1 16 10 0 50 1 0 0 0 1 0 0 0 1 stud.dat
-  [1,16,10,0,50,1,0,0,0,1,0,0,0,1, ldraw_lib__stud()],
+  [1,16,10,0,50,1,0,0,0,1,0,0,0,1, ldraw_lib__stud(realsolid)],
 // 1 16 30 0 -10 1 0 0 0 1 0 0 0 1 stud.dat
-  [1,16,30,0,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__stud()],
+  [1,16,30,0,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__stud(realsolid)],
 // 1 16 30 0 10 1 0 0 0 1 0 0 0 1 stud.dat
-  [1,16,30,0,10,1,0,0,0,1,0,0,0,1, ldraw_lib__stud()],
+  [1,16,30,0,10,1,0,0,0,1,0,0,0,1, ldraw_lib__stud(realsolid)],
 // 1 16 50 0 -10 1 0 0 0 1 0 0 0 1 stud.dat
-  [1,16,50,0,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__stud()],
+  [1,16,50,0,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__stud(realsolid)],
 // 1 16 50 0 10 1 0 0 0 1 0 0 0 1 stud.dat
-  [1,16,50,0,10,1,0,0,0,1,0,0,0,1, ldraw_lib__stud()],
+  [1,16,50,0,10,1,0,0,0,1,0,0,0,1, ldraw_lib__stud(realsolid)],
 // 0
 ];
 module ldraw_lib__u8009d(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__u8009d(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__u8009d(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__u8009d(line=0.2);

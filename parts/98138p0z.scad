@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/4-4ering.scad>
 use <s/98138s02.scad>
-function ldraw_lib__98138p0z() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__98138p0z(realsolid=false) = [
 // 0 Tile  1 x  1 Round with Panda Face with Bright Pink Cheeks and Bright Green Bamboo Pattern
 // 0 Name: 98138p0z.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -18,9 +19,9 @@ function ldraw_lib__98138p0z() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\98138s02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s02(realsolid)],
 // 1 16 0 0 0 10 0 0 0 1 0 0 0 10 4-4ering.dat
-  [1,16,0,0,0,10,0,0,0,1,0,0,0,10, ldraw_lib__4_4ering()],
+  [1,16,0,0,0,10,0,0,0,1,0,0,0,10, ldraw_lib__4_4ering(realsolid)],
 // 
 // 4 0 -3.56 0 5.9 -4.83 0 7.23 -5.66 0 6.62 -3.89 0 5.18
   [4,0,-3.56,0,5.9,-4.83,0,7.23,-5.66,0,6.62,-3.89,0,5.18],
@@ -560,5 +561,5 @@ function ldraw_lib__98138p0z() = [
   [3,16,6.73,0,5.51,7.071,0,7.071,5.62,0,6.62],
 ];
 module ldraw_lib__98138p0z(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__98138p0z(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__98138p0z(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__98138p0z(line=0.2);

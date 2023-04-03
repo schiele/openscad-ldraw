@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__3811p02a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__3811p02a(realsolid=false) = [
 // 0 ~Baseplate 32 x 32 with Island Pattern - 1/8 Island Pattern
 // 0 Name: s\3811p02a.dat
 // 0 Author: Andy Westrate [westrate]
@@ -95,5 +96,5 @@ function ldraw_lib__s__3811p02a() = [
 // 0
 ];
 module ldraw_lib__s__3811p02a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__3811p02a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__3811p02a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__3811p02a(line=0.2);

@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <11263.scad>
 use <973.scad>
-function ldraw_lib__11938() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__11938(realsolid=false) = [
 // 0 Minifig Torso with Bird Wing Arms
 // 0 Name: 11938.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -16,12 +17,12 @@ function ldraw_lib__11938() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 973.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__973()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__973(realsolid)],
 // 1 16 15.552 9 0 .985 .17 0 -.17 .985 0 0 0 1 11263.dat
-  [1,16,15.552,9,0,.985,.17,0,-.17,.985,0,0,0,1, ldraw_lib__11263()],
+  [1,16,15.552,9,0,.985,.17,0,-.17,.985,0,0,0,1, ldraw_lib__11263(realsolid)],
 // 1 16 -15.552 9 0 -.985 -.17 0 -.17 .985 0 0 0 -1 11263.dat
-  [1,16,-15.552,9,0,-.985,-.17,0,-.17,.985,0,0,0,-1, ldraw_lib__11263()],
+  [1,16,-15.552,9,0,-.985,-.17,0,-.17,.985,0,0,0,-1, ldraw_lib__11263(realsolid)],
 ];
 module ldraw_lib__11938(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__11938(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__11938(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__11938(line=0.2);

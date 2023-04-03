@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/4-4ndis.scad>
-function ldraw_lib__s__973p35d() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__973p35d(realsolid=false) = [
 // 0 ~Minifig Torso with Imperial Guard Pattern - Background
 // 0 Name: s\973p35d.dat
 // 0 Author: Chris Dee [cwdee]
@@ -19,17 +20,17 @@ function ldraw_lib__s__973p35d() = [
 // 
 // 
 // 1 16 0 1.5 -10 -0.75 0 0 0 0 0.75 0 1 0 4-4ndis.dat
-  [1,16,0,1.5,-10,-0.75,0,0,0,0,0.75,0,1,0, ldraw_lib__4_4ndis()],
+  [1,16,0,1.5,-10,-0.75,0,0,0,0,0.75,0,1,0, ldraw_lib__4_4ndis(realsolid)],
 // 1 16 0 5.5 -10 -0.75 0 0 0 0 0.75 0 1 0 4-4ndis.dat
-  [1,16,0,5.5,-10,-0.75,0,0,0,0,0.75,0,1,0, ldraw_lib__4_4ndis()],
+  [1,16,0,5.5,-10,-0.75,0,0,0,0,0.75,0,1,0, ldraw_lib__4_4ndis(realsolid)],
 // 1 16 0 18 -10 -0.75 0 0 0 0 0.75 0 1 0 4-4ndis.dat
-  [1,16,0,18,-10,-0.75,0,0,0,0,0.75,0,1,0, ldraw_lib__4_4ndis()],
+  [1,16,0,18,-10,-0.75,0,0,0,0,0.75,0,1,0, ldraw_lib__4_4ndis(realsolid)],
 // 1 16 0 22 -10 -0.75 0 0 0 0 0.75 0 1 0 4-4ndis.dat
-  [1,16,0,22,-10,-0.75,0,0,0,0,0.75,0,1,0, ldraw_lib__4_4ndis()],
+  [1,16,0,22,-10,-0.75,0,0,0,0,0.75,0,1,0, ldraw_lib__4_4ndis(realsolid)],
 // 1 16 0 26 -10 -0.75 0 0 0 0 0.75 0 1 0 4-4ndis.dat
-  [1,16,0,26,-10,-0.75,0,0,0,0,0.75,0,1,0, ldraw_lib__4_4ndis()],
+  [1,16,0,26,-10,-0.75,0,0,0,0,0.75,0,1,0, ldraw_lib__4_4ndis(realsolid)],
 // 1 16 0 30 -10 -0.75 0 0 0 0 0.75 0 1 0 4-4ndis.dat
-  [1,16,0,30,-10,-0.75,0,0,0,0,0.75,0,1,0, ldraw_lib__4_4ndis()],
+  [1,16,0,30,-10,-0.75,0,0,0,0,0.75,0,1,0, ldraw_lib__4_4ndis(realsolid)],
 // 4 0 3.833 2.5 -10 5.5 0 -10 2 0 -10 1.7 1.5 -10
   [4,0,3.833,2.5,-10,5.5,0,-10,2,0,-10,1.7,1.5,-10],
 // 4 16 4.5 11.5 -10 12 0 -10 5.5 0 -10 3.833 2.5 -10
@@ -200,5 +201,5 @@ function ldraw_lib__s__973p35d() = [
   [3,16,1.833,5.5,-10,0.5,7.5,-10,4.5,11.5,-10],
 ];
 module ldraw_lib__s__973p35d(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__973p35d(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__973p35d(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__973p35d(line=0.2);

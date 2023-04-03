@@ -3,7 +3,8 @@ use <../p/1-4cyli.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4ndis.scad>
 use <s/973s01.scad>
-function ldraw_lib__973p1l() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__973p1l(realsolid=false) = [
 // 0 Minifig Torso with Polo Shirt, Name Badge and LEGO Logo on Back Pattern
 // 0 Name: 973p1l.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -20,18 +21,18 @@ function ldraw_lib__973p1l() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01(realsolid)],
 // 1 15 0 -4 0 4.243 0 -4.243 0 -8 0 -4.243 0 -4.243 1-4cyli.dat
-  [1,15,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli()],
+  [1,15,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli(realsolid)],
 // 0 // Front
 // 1 71 0 8 -10 .6 0 0 0 0 -.6 0 1 0 4-4disc.dat
-  [1,71,0,8,-10,.6,0,0,0,0,-.6,0,1,0, ldraw_lib__4_4disc()],
+  [1,71,0,8,-10,.6,0,0,0,0,-.6,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 8 -10 .6 0 0 0 0 -.6 0 1 0 4-4ndis.dat
-  [1,16,0,8,-10,.6,0,0,0,0,-.6,0,1,0, ldraw_lib__4_4ndis()],
+  [1,16,0,8,-10,.6,0,0,0,0,-.6,0,1,0, ldraw_lib__4_4ndis(realsolid)],
 // 1 71 0 10 -10 .6 0 0 0 0 -.6 0 1 0 4-4disc.dat
-  [1,71,0,10,-10,.6,0,0,0,0,-.6,0,1,0, ldraw_lib__4_4disc()],
+  [1,71,0,10,-10,.6,0,0,0,0,-.6,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 10 -10 .6 0 0 0 0 -.6 0 1 0 4-4ndis.dat
-  [1,16,0,10,-10,.6,0,0,0,0,-.6,0,1,0, ldraw_lib__4_4ndis()],
+  [1,16,0,10,-10,.6,0,0,0,0,-.6,0,1,0, ldraw_lib__4_4ndis(realsolid)],
 // 4 71 -10.8 2 -10 -9.9 2 -10 -10.7 .5 -10 -11.5 .5 -10
   [4,71,-10.8,2,-10,-9.9,2,-10,-10.7,.5,-10,-11.5,.5,-10],
 // 4 71 -9.8 3.7 -10 -8.9 3.7 -10 -9.9 2 -10 -10.8 2 -10
@@ -1512,5 +1513,5 @@ function ldraw_lib__973p1l() = [
   [3,15,5.0581,12.308,10,4.9552,11.8005,10,6.0732,11.4106,10],
 ];
 module ldraw_lib__973p1l(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__973p1l(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__973p1l(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__973p1l(line=0.2);

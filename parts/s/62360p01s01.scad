@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__62360p01s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__62360p01s01(realsolid=false) = [
 // 0 ~Windscreen  3 x  6 x  1 Curved - Front Face with Black Frame Pattern
 // 0 Name: s\62360p01s01.dat
 // 0 Author: Ulrich Röder [UR]
@@ -234,5 +235,5 @@ function ldraw_lib__s__62360p01s01() = [
   [5,24,45.898,2,-13.97705,50.181,2,-9.26505,50.181,0,-7.314,45.898,18.114,-29.2343],
 ];
 module ldraw_lib__s__62360p01s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__62360p01s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__62360p01s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__62360p01s01(line=0.2);

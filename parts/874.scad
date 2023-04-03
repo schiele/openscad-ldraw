@@ -7,7 +7,8 @@ use <../p/4-4ring4.scad>
 use <../p/4-4ring5.scad>
 use <../p/4-4ring7.scad>
 use <../p/stud.scad>
-function ldraw_lib__874() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__874(realsolid=false) = [
 // 0 Tractor Chassis Steering Wheel
 // 0 Name: 874.dat
 // 0 Author: Arne Hackstein
@@ -27,35 +28,35 @@ function ldraw_lib__874() = [
 // 
 // 
 // 1 16 0 19 0 0.5 0 0 0 -1 0 0 0 -0.5 4-4ring7.dat
-  [1,16,0,19,0,0.5,0,0,0,-1,0,0,0,-0.5, ldraw_lib__4_4ring7()],
+  [1,16,0,19,0,0.5,0,0,0,-1,0,0,0,-0.5, ldraw_lib__4_4ring7(realsolid)],
 // 1 16 0 19 0 4 0 0 0 -1 0 0 0 -4 4-4ring1.dat
-  [1,16,0,19,0,4,0,0,0,-1,0,0,0,-4, ldraw_lib__4_4ring1()],
+  [1,16,0,19,0,4,0,0,0,-1,0,0,0,-4, ldraw_lib__4_4ring1(realsolid)],
 // 1 16 0 19 0 2 0 0 0 -1 0 0 0 -2 4-4ring4.dat
-  [1,16,0,19,0,2,0,0,0,-1,0,0,0,-2, ldraw_lib__4_4ring4()],
+  [1,16,0,19,0,2,0,0,0,-1,0,0,0,-2, ldraw_lib__4_4ring4(realsolid)],
 // 1 16 0 9 0 3.5 0 0 0 1 0 0 0 3.5 4-4edge.dat
-  [1,16,0,9,0,3.5,0,0,0,1,0,0,0,3.5, ldraw_lib__4_4edge()],
+  [1,16,0,9,0,3.5,0,0,0,1,0,0,0,3.5, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 9 0 2 0 0 0 -1 0 0 0 -2 4-4ring1.dat
-  [1,16,0,9,0,2,0,0,0,-1,0,0,0,-2, ldraw_lib__4_4ring1()],
+  [1,16,0,9,0,2,0,0,0,-1,0,0,0,-2, ldraw_lib__4_4ring1(realsolid)],
 // 
 // 1 16 0 0 0 2 0 0 0 -1 0 0 0 -2 4-4ring5.dat
-  [1,16,0,0,0,2,0,0,0,-1,0,0,0,-2, ldraw_lib__4_4ring5()],
+  [1,16,0,0,0,2,0,0,0,-1,0,0,0,-2, ldraw_lib__4_4ring5(realsolid)],
 // 1 16 0 -2 0 6 0 0 0 1 0 0 0 6 4-4ring1.dat
-  [1,16,0,-2,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4ring1()],
+  [1,16,0,-2,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4ring1(realsolid)],
 // 1 16 0 -2 0 1 0 0 0 1 0 0 0 1 stud.dat
-  [1,16,0,-2,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud()],
+  [1,16,0,-2,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud(realsolid)],
 // 
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 19 0 3.5 0 0 0 -10 0 0 0 3.5 4-4cylo.dat
-  [1,16,0,19,0,3.5,0,0,0,-10,0,0,0,3.5, ldraw_lib__4_4cylo()],
+  [1,16,0,19,0,3.5,0,0,0,-10,0,0,0,3.5, ldraw_lib__4_4cylo(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 3 0 2 0 0 0 6 0 0 0 2 4-4cylc.dat
-  [1,16,0,3,0,2,0,0,0,6,0,0,0,2, ldraw_lib__4_4cylc()],
+  [1,16,0,3,0,2,0,0,0,6,0,0,0,2, ldraw_lib__4_4cylc(realsolid)],
 // 1 16 0 0 0 10 0 0 0 19 0 0 0 10 4-4cylo.dat
-  [1,16,0,0,0,10,0,0,0,19,0,0,0,10, ldraw_lib__4_4cylo()],
+  [1,16,0,0,0,10,0,0,0,19,0,0,0,10, ldraw_lib__4_4cylo(realsolid)],
 // 1 16 0 -2 0 12 0 0 0 2 0 0 0 12 4-4cylo.dat
-  [1,16,0,-2,0,12,0,0,0,2,0,0,0,12, ldraw_lib__4_4cylo()],
+  [1,16,0,-2,0,12,0,0,0,2,0,0,0,12, ldraw_lib__4_4cylo(realsolid)],
 // 
 // 2 24 4 1.0127 9.1234 3.827 0.9966 9.239
   [2,24,4,1.0127,9.1234,3.827,0.9966,9.239],
@@ -1029,5 +1030,5 @@ function ldraw_lib__874() = [
   [5,24,9.64,-2.82,23.26,0,-2.82,25.18,9.18,0,22.17,10.72,-4,25.87],
 ];
 module ldraw_lib__874(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__874(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__874(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__874(line=0.2);

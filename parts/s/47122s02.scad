@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/rect.scad>
-function ldraw_lib__s__47122s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__47122s02(realsolid=false) = [
 // 0 ~Brick  2 x 24 with Grooves and  2 Top Pegs - Walls and Ribs
 // 0 Name: s\47122s02.dat
 // 0 Author: Greg Teft [gregteft]
@@ -15,13 +16,13 @@ function ldraw_lib__s__47122s02() = [
 // 
 // 
 // 1 16 0 13.5 1 2.1989 0 0 0 0 10.5 0 -1 0 rect.dat
-  [1,16,0,13.5,1,2.1989,0,0,0,0,10.5,0,-1,0, ldraw_lib__rect()],
+  [1,16,0,13.5,1,2.1989,0,0,0,0,10.5,0,-1,0, ldraw_lib__rect(realsolid)],
 // 1 16 0 13.5 -1 2.1989 0 0 0 0 -10.5 0 1 0 rect.dat
-  [1,16,0,13.5,-1,2.1989,0,0,0,0,-10.5,0,1,0, ldraw_lib__rect()],
+  [1,16,0,13.5,-1,2.1989,0,0,0,0,-10.5,0,1,0, ldraw_lib__rect(realsolid)],
 // 1 16 9 11 11.90055 0 1 0 0 0 -8 -4.09945 0 0 rect.dat
-  [1,16,9,11,11.90055,0,1,0,0,0,-8,-4.09945,0,0, ldraw_lib__rect()],
+  [1,16,9,11,11.90055,0,1,0,0,0,-8,-4.09945,0,0, ldraw_lib__rect(realsolid)],
 // 1 16 9 11 -11.90055 0 1 0 0 0 -8 -4.09945 0 0 rect.dat
-  [1,16,9,11,-11.90055,0,1,0,0,0,-8,-4.09945,0,0, ldraw_lib__rect()],
+  [1,16,9,11,-11.90055,0,1,0,0,0,-8,-4.09945,0,0, ldraw_lib__rect(realsolid)],
 // 
 // 3 16 6 0 10 10 0 20 5.5433 0 12.2961
   [3,16,6,0,10,10,0,20,5.5433,0,12.2961],
@@ -279,5 +280,5 @@ function ldraw_lib__s__47122s02() = [
   [4,16,-10,0,-20,-10,24,-20,10,24,-20,10,0,-20],
 ];
 module ldraw_lib__s__47122s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__47122s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__47122s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__47122s02(line=0.2);

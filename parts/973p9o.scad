@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/1-4cyli.scad>
 use <s/973s01.scad>
-function ldraw_lib__973p9o() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__973p9o(realsolid=false) = [
 // 0 Minifig Torso with Safety Vest with Reflective Stripes, Reddish Brown Shirt and Belt with Pouches and Pliers Pattern
 // 0 Name: 973p9o.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -18,9 +19,9 @@ function ldraw_lib__973p9o() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01(realsolid)],
 // 1 0 0 -4 0 4.243 0 -4.243 0 -8 0 -4.243 0 -4.243 1-4cyli.dat
-  [1,0,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli()],
+  [1,0,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli(realsolid)],
 // 4 80 -10.3 0.7 -10 -11.7 0.7 -10 -12.4 1 -10 -12.9 1.6 -10
   [4,80,-10.3,0.7,-10,-11.7,0.7,-10,-12.4,1,-10,-12.9,1.6,-10],
 // 4 80 -10.3 0.7 -10 -12.9 1.6 -10 -13.6 2.7 -10 -10 10.5 -10
@@ -1661,5 +1662,5 @@ function ldraw_lib__973p9o() = [
   [3,16,2.9,31.3,-10,1,31.3,-10,-19,32,-10],
 ];
 module ldraw_lib__973p9o(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__973p9o(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__973p9o(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__973p9o(line=0.2);

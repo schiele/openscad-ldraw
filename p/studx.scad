@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__studx() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__studx(realsolid=false) = [
 // 0 Stud Cross
 // 0 Name: studx.dat
 // 0 Author: Marc Klein [marckl]
@@ -131,5 +132,5 @@ function ldraw_lib__studx() = [
   [4,16,-4,0,-1.5,-4,-4,-1.5,-4,-4,1.5,-4,0,1.5],
 ];
 module ldraw_lib__studx(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__studx(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__studx(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__studx(line=0.2);

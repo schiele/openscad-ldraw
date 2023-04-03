@@ -5,7 +5,8 @@ use <../p/4-4cylse.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4edge.scad>
 use <s/15534s01.scad>
-function ldraw_lib__15534() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__15534(realsolid=false) = [
 // 0 Minifig Tool Grappling Hook with Bar
 // 0 Name: 15534.dat
 // 0 Author: John Troxler [Gargan]
@@ -26,25 +27,25 @@ function ldraw_lib__15534() = [
 // 
 // 
 // 1 16 0 4 0 1 0 0 0 1 0 0 0 1 s\15534s01.dat
-  [1,16,0,4,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__15534s01()],
+  [1,16,0,4,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__15534s01(realsolid)],
 // 1 16 0 4 0 -0.5 0 -0.866025 0 1 0 0.866025 0 -0.5 s\15534s01.dat
-  [1,16,0,4,0,-0.5,0,-0.866025,0,1,0,0.866025,0,-0.5, ldraw_lib__s__15534s01()],
+  [1,16,0,4,0,-0.5,0,-0.866025,0,1,0,0.866025,0,-0.5, ldraw_lib__s__15534s01(realsolid)],
 // 1 16 0 4 0 -0.5 0 0.866025 0 1 0 -0.866025 0 -0.5 s\15534s01.dat
-  [1,16,0,4,0,-0.5,0,0.866025,0,1,0,-0.866025,0,-0.5, ldraw_lib__s__15534s01()],
+  [1,16,0,4,0,-0.5,0,0.866025,0,1,0,-0.866025,0,-0.5, ldraw_lib__s__15534s01(realsolid)],
 // 1 16 0 4 0 4 0 0 0 25.125 0 0 0 4 4-4cyli.dat
-  [1,16,0,4,0,4,0,0,0,25.125,0,0,0,4, ldraw_lib__4_4cyli()],
+  [1,16,0,4,0,4,0,0,0,25.125,0,0,0,4, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 4 0 -4 0 0 0 -4 0 0 0 4 4-4cylse.dat
-  [1,16,0,4,0,-4,0,0,0,-4,0,0,0,4, ldraw_lib__4_4cylse()],
+  [1,16,0,4,0,-4,0,0,0,-4,0,0,0,4, ldraw_lib__4_4cylse(realsolid)],
 // 1 16 0 29.125 0 4 0 0 0 1 0 0 0 4 4-4edge.dat
-  [1,16,0,29.125,0,4,0,0,0,1,0,0,0,4, ldraw_lib__4_4edge()],
+  [1,16,0,29.125,0,4,0,0,0,1,0,0,0,4, ldraw_lib__4_4edge(realsolid)],
 // 1 16 -4 0 0 0 4 0 4 0 0 0 0 -4 4-4cyls.dat
-  [1,16,-4,0,0,0,4,0,4,0,0,0,0,-4, ldraw_lib__4_4cyls()],
+  [1,16,-4,0,0,0,4,0,4,0,0,0,0,-4, ldraw_lib__4_4cyls(realsolid)],
 // 1 16 -14 0 0 0 10 0 -4 0 0 0 0 4 4-4cyli.dat
-  [1,16,-14,0,0,0,10,0,-4,0,0,0,0,4, ldraw_lib__4_4cyli()],
+  [1,16,-14,0,0,0,10,0,-4,0,0,0,0,4, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 -14 0 0 0 1 0 -4 0 0 0 0 4 4-4disc.dat
-  [1,16,-14,0,0,0,1,0,-4,0,0,0,0,4, ldraw_lib__4_4disc()],
+  [1,16,-14,0,0,0,1,0,-4,0,0,0,0,4, ldraw_lib__4_4disc(realsolid)],
 // 1 16 -14 0 0 0 1 0 -4 0 0 0 0 4 4-4edge.dat
-  [1,16,-14,0,0,0,1,0,-4,0,0,0,0,4, ldraw_lib__4_4edge()],
+  [1,16,-14,0,0,0,1,0,-4,0,0,0,0,4, ldraw_lib__4_4edge(realsolid)],
 // 4 16 0 29.125 5 -2.5 29.125 4.33 -1.531 29.125 3.696 0 29.125 4
   [4,16,0,29.125,5,-2.5,29.125,4.33,-1.531,29.125,3.696,0,29.125,4],
 // 3 16 -1.531 29.125 -3.696 -2.828 29.125 -2.828 -2.5 29.125 -4.33
@@ -87,5 +88,5 @@ function ldraw_lib__15534() = [
   [4,16,3.696,29.125,-1.531,4.33,29.125,-2.5,5,29.125,0,4,29.125,0],
 ];
 module ldraw_lib__15534(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__15534(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__15534(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__15534(line=0.2);

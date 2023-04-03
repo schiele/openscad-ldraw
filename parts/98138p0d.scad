@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/4-4ering.scad>
 use <s/98138s01.scad>
-function ldraw_lib__98138p0d() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__98138p0d(realsolid=false) = [
 // 0 Tile  1 x  1 Round with Spiral Red Pattern
 // 0 Name: 98138p0d.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -18,9 +19,9 @@ function ldraw_lib__98138p0d() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\98138s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01(realsolid)],
 // 1 16 0 0 0 9 0 0 0 1 0 0 0 9 4-4ering.dat
-  [1,16,0,0,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4ering()],
+  [1,16,0,0,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4ering(realsolid)],
 // 
 // 4 4 -0.69 0 -1.01 -0.605 0 -0.605 -1.275 0 -1.275 -1.14 0 -1.37
   [4,4,-0.69,0,-1.01,-0.605,0,-0.605,-1.275,0,-1.275,-1.14,0,-1.37],
@@ -390,5 +391,5 @@ function ldraw_lib__98138p0d() = [
   [4,16,-0.8,0,-3.41,0,0,-3.19,0,0,0,-1.4007,0,-3.3814],
 ];
 module ldraw_lib__98138p0d(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__98138p0d(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__98138p0d(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__98138p0d(line=0.2);

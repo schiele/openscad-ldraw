@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__48__5_12edge() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__48__5_12edge(realsolid=false) = [
 // 0 Hi-Res Circle 0.4167
 // 0 Name: 48\5-12edge.dat
 // 0 Author: Alex Taylor [anathema]
@@ -55,5 +56,5 @@ function ldraw_lib__48__5_12edge() = [
   [2,24,-0.7934,0,0.6088,-0.866,0,0.5],
 ];
 module ldraw_lib__48__5_12edge(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__48__5_12edge(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__48__5_12edge(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__48__5_12edge(line=0.2);

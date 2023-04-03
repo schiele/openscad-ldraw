@@ -2,7 +2,8 @@ use <../../lib.scad>
 use <../../p/4-4cyli.scad>
 use <../../p/4-4disc.scad>
 use <../../p/4-4edge.scad>
-function ldraw_lib__s__15530s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__15530s01(realsolid=false) = [
 // 0 ~Minifig Hat Police
 // 0 Name: s\15530s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -312,11 +313,11 @@ function ldraw_lib__s__15530s01() = [
 // 3 16 7.702 -5 -1.5 7.702 -5 1.5 13 -6.162 0
   [3,16,7.702,-5,-1.5,7.702,-5,1.5,13,-6.162,0],
 // 1 16 17.3 1.9 0 0 -1 0 2.2 0 0 0 0 2.2 4-4edge.dat
-  [1,16,17.3,1.9,0,0,-1,0,2.2,0,0,0,0,2.2, ldraw_lib__4_4edge()],
+  [1,16,17.3,1.9,0,0,-1,0,2.2,0,0,0,0,2.2, ldraw_lib__4_4edge(realsolid)],
 // 1 16 17.3 1.9 0 0 -1 0 2.2 0 0 0 0 2.2 4-4disc.dat
-  [1,16,17.3,1.9,0,0,-1,0,2.2,0,0,0,0,2.2, ldraw_lib__4_4disc()],
+  [1,16,17.3,1.9,0,0,-1,0,2.2,0,0,0,0,2.2, ldraw_lib__4_4disc(realsolid)],
 // 1 16 17.3 1.9 0 0 -2 0 2.2 0 0 0 0 2.2 4-4cyli.dat
-  [1,16,17.3,1.9,0,0,-2,0,2.2,0,0,0,0,2.2, ldraw_lib__4_4cyli()],
+  [1,16,17.3,1.9,0,0,-2,0,2.2,0,0,0,0,2.2, ldraw_lib__4_4cyli(realsolid)],
 // 
 // 2 24 15.7809 4.1 0 15.6114 3.9326 0.8419
   [2,24,15.7809,4.1,0,15.6114,3.9326,0.8419],
@@ -599,5 +600,5 @@ function ldraw_lib__s__15530s01() = [
   [5,24,16.309,-1.052,-0.051,17.304,-6.793,-5.733,14.443,-2.083,-5.523,19.104,-5.878,0.282],
 ];
 module ldraw_lib__s__15530s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__15530s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__15530s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__15530s01(line=0.2);

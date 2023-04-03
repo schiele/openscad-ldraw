@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <u9158.scad>
-function ldraw_lib__54869() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__54869(realsolid=false) = [
 // 0 ~_Electric Light Brick  2 x  3 x  1.333 - TrRed Top - Red LED (Obsolete)
 // 0 Name: 54869.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -17,8 +18,8 @@ function ldraw_lib__54869() = [
 // 
 // 
 // 1 36 0 0 0 1 0 0 0 1 0 0 0 1 u9158.dat
-  [1,36,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9158()],
+  [1,36,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9158(realsolid)],
 ];
 module ldraw_lib__54869(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__54869(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__54869(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__54869(line=0.2);

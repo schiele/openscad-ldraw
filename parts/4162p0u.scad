@@ -3,7 +3,8 @@ use <../p/3-4ndis.scad>
 use <s/4162s01.scad>
 use <s/777s07.scad>
 use <s/777s09.scad>
-function ldraw_lib__4162p0u() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4162p0u(realsolid=false) = [
 // 0 Tile  1 x  8 with "Marina Bay Sands" Pattern
 // 0 Name: 4162p0u.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -24,13 +25,13 @@ function ldraw_lib__4162p0u() = [
 // 0 // Font match is not perfect, but manually corrected with LD Pattern Creator
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4162s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4162s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4162s01(realsolid)],
 // 1 16 50.75 0 3.2 0.3 0 0 0 1 0 0 0 0.3 s\777s07.dat
-  [1,16,50.75,0,3.2,0.3,0,0,0,1,0,0,0,0.3, ldraw_lib__s__777s07()],
+  [1,16,50.75,0,3.2,0.3,0,0,0,1,0,0,0,0.3, ldraw_lib__s__777s07(realsolid)],
 // 1 15 50.75 0 3.2 0.3 0 0 0 1 0 0 0 0.3 s\777s09.dat
-  [1,15,50.75,0,3.2,0.3,0,0,0,1,0,0,0,0.3, ldraw_lib__s__777s09()],
+  [1,15,50.75,0,3.2,0.3,0,0,0,1,0,0,0,0.3, ldraw_lib__s__777s09(realsolid)],
 // 1 16 50.75 0 3.2 0 0 2.1 0 1 0 -2.1 0 0 3-4ndis.dat
-  [1,16,50.75,0,3.2,0,0,2.1,0,1,0,-2.1,0,0, ldraw_lib__3_4ndis()],
+  [1,16,50.75,0,3.2,0,0,2.1,0,1,0,-2.1,0,0, ldraw_lib__3_4ndis(realsolid)],
 // 
 // 4 15 -47.925 0 3.451 -45.396 0 -4 -44.811 0 -2.739 -47.298 0 4.754
   [4,15,-47.925,0,3.451,-45.396,0,-4,-44.811,0,-2.739,-47.298,0,4.754],
@@ -1151,5 +1152,5 @@ function ldraw_lib__4162p0u() = [
   [4,16,48.04,0,2.269,48.8098,0,2.39636,48.65,0,3.2,47.43,0,2.43],
 ];
 module ldraw_lib__4162p0u(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4162p0u(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4162p0u(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4162p0u(line=0.2);

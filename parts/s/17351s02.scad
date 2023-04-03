@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__17351s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__17351s02(realsolid=false) = [
 // 0 ~Minifig Headdress Pig Half without Ear and Eye Area
 // 0 Name: s\17351s02.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -967,5 +968,5 @@ function ldraw_lib__s__17351s02() = [
   [5,24,12.141,-6.105,-6.378,10.323,-8.244,-6.801,13.366,-2.082,-7.793,13.182,-6.483,-2.356],
 ];
 module ldraw_lib__s__17351s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__17351s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__17351s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__17351s02(line=0.2);

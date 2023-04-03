@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/4-4disc.scad>
 use <../p/stud4.scad>
-function ldraw_lib__11255() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__11255(realsolid=false) = [
 // 0 Minifig Hair Long with Curls
 // 0 Name: 11255.dat
 // 0 Author: Nils Schmidt [BlackBrick89]
@@ -23,9 +24,9 @@ function ldraw_lib__11255() = [
 // 0 // Created with Philo at Billund Airport
 // 
 // 1 16 0 -4 0 6 0 0 0 -1 0 0 0 6 4-4disc.dat
-  [1,16,0,-4,0,6,0,0,0,-1,0,0,0,6, ldraw_lib__4_4disc()],
+  [1,16,0,-4,0,6,0,0,0,-1,0,0,0,6, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 -4 0 1 0 0 0 -1 0 0 0 1 stud4.dat
-  [1,16,0,-4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4()],
+  [1,16,0,-4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4(realsolid)],
 // 3 16 -18.298 23.455 -3.451 -20.312 20.091 -4.024 -20.711 19.977 2.597
   [3,16,-18.298,23.455,-3.451,-20.312,20.091,-4.024,-20.711,19.977,2.597],
 // 3 16 -20.711 19.977 2.597 -18.353 22.772 2.483 -18.298 23.455 -3.451
@@ -7268,5 +7269,5 @@ function ldraw_lib__11255() = [
   [5,24,14.227,20.863,14.993,13.519,20.981,15.356,13.356,22.895,15.377,11.678,18.102,13.585],
 ];
 module ldraw_lib__11255(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__11255(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__11255(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__11255(line=0.2);

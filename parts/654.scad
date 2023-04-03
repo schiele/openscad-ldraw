@@ -3,7 +3,8 @@ use <../p/4-4cyli.scad>
 use <../p/4-4edge.scad>
 use <../p/4-4ring5.scad>
 use <../p/4-4ring6.scad>
-function ldraw_lib__654() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__654(realsolid=false) = [
 // 0 Hinge Brick  1 x  8 Joining Ring
 // 0 Name: 654.dat
 // 0 Author: Arne Hackstein
@@ -23,28 +24,28 @@ function ldraw_lib__654() = [
 // 
 // 
 // 1 16 0 0 9 0 0 7 7 0 0 0 1 0 4-4edge.dat
-  [1,16,0,0,9,0,0,7,7,0,0,0,1,0, ldraw_lib__4_4edge()],
+  [1,16,0,0,9,0,0,7,7,0,0,0,1,0, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 0 9 0 0 5 5 0 0 0 1 0 4-4edge.dat
-  [1,16,0,0,9,0,0,5,5,0,0,0,1,0, ldraw_lib__4_4edge()],
+  [1,16,0,0,9,0,0,5,5,0,0,0,1,0, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 0 -9 0 0 7 7 0 0 0 1 0 4-4edge.dat
-  [1,16,0,0,-9,0,0,7,7,0,0,0,1,0, ldraw_lib__4_4edge()],
+  [1,16,0,0,-9,0,0,7,7,0,0,0,1,0, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 0 -9 0 0 5 5 0 0 0 1 0 4-4edge.dat
-  [1,16,0,0,-9,0,0,5,5,0,0,0,1,0, ldraw_lib__4_4edge()],
+  [1,16,0,0,-9,0,0,5,5,0,0,0,1,0, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 0 -9 0 0 7 7 0 0 0 18 0 4-4cyli.dat
-  [1,16,0,0,-9,0,0,7,7,0,0,0,18,0, ldraw_lib__4_4cyli()],
+  [1,16,0,0,-9,0,0,7,7,0,0,0,18,0, ldraw_lib__4_4cyli(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 -9 0 0 5 5 0 0 0 18 0 4-4cyli.dat
-  [1,16,0,0,-9,0,0,5,5,0,0,0,18,0, ldraw_lib__4_4cyli()],
+  [1,16,0,0,-9,0,0,5,5,0,0,0,18,0, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 0 -9 0 0 1 1 0 0 0 1 0 4-4ring5.dat
-  [1,16,0,0,-9,0,0,1,1,0,0,0,1,0, ldraw_lib__4_4ring5()],
+  [1,16,0,0,-9,0,0,1,1,0,0,0,1,0, ldraw_lib__4_4ring5(realsolid)],
 // 1 16 0 0 -9 0 0 1 1 0 0 0 1 0 4-4ring6.dat
-  [1,16,0,0,-9,0,0,1,1,0,0,0,1,0, ldraw_lib__4_4ring6()],
+  [1,16,0,0,-9,0,0,1,1,0,0,0,1,0, ldraw_lib__4_4ring6(realsolid)],
 // 1 16 0 0 9 0 0 -1 1 0 0 0 -1 0 4-4ring5.dat
-  [1,16,0,0,9,0,0,-1,1,0,0,0,-1,0, ldraw_lib__4_4ring5()],
+  [1,16,0,0,9,0,0,-1,1,0,0,0,-1,0, ldraw_lib__4_4ring5(realsolid)],
 // 1 16 0 0 9 0 0 -1 1 0 0 0 -1 0 4-4ring6.dat
-  [1,16,0,0,9,0,0,-1,1,0,0,0,-1,0, ldraw_lib__4_4ring6()],
+  [1,16,0,0,9,0,0,-1,1,0,0,0,-1,0, ldraw_lib__4_4ring6(realsolid)],
 ];
 module ldraw_lib__654(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__654(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__654(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__654(line=0.2);

@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <2558.scad>
 use <2559.scad>
-function ldraw_lib__4100339() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4100339(realsolid=false) = [
 // 0 ~_Boat Stern 16 x 14 x  5 & 1/3 Red/Dark Grey (Obsolete)
 // 0 Name: 4100339.dat
 // 0 Author: Paul Easter [pneaster]
@@ -20,10 +21,10 @@ function ldraw_lib__4100339() = [
 // 
 // 
 // 1 8 0 0 0 1 0 0 0 1 0 0 0 1 2559.dat
-  [1,8,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2559()],
+  [1,8,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2559(realsolid)],
 // 1 4 0 0 0 1 0 0 0 1 0 0 0 1 2558.dat
-  [1,4,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2558()],
+  [1,4,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2558(realsolid)],
 ];
 module ldraw_lib__4100339(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4100339(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4100339(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4100339(line=0.2);

@@ -3,7 +3,8 @@ use <../p/4-4cylc.scad>
 use <../p/4-4cylo.scad>
 use <../p/4-4ring1.scad>
 use <s/28870s01.scad>
-function ldraw_lib__28870() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__28870(realsolid=false) = [
 // 0 Plant Stem Curved with  2 Thorns and  2 Swirls
 // 0 Name: 28870.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -18,17 +19,17 @@ function ldraw_lib__28870() = [
 // 
 // 
 // 1 16 0 0 0 4 0 0 0 10 0 0 0 4 4-4cylo.dat
-  [1,16,0,0,0,4,0,0,0,10,0,0,0,4, ldraw_lib__4_4cylo()],
+  [1,16,0,0,0,4,0,0,0,10,0,0,0,4, ldraw_lib__4_4cylo(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -10 0 2 0 0 0 20 0 0 0 2 4-4cylc.dat
-  [1,16,0,-10,0,2,0,0,0,20,0,0,0,2, ldraw_lib__4_4cylc()],
+  [1,16,0,-10,0,2,0,0,0,20,0,0,0,2, ldraw_lib__4_4cylc(realsolid)],
 // 1 16 0 10 0 2 0 0 0 -1 0 0 0 2 4-4ring1.dat
-  [1,16,0,10,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__4_4ring1()],
+  [1,16,0,10,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__4_4ring1(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\28870s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__28870s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__28870s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\28870s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__28870s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__28870s01(realsolid)],
 // 5 24 0 0 6 0 -4.5017 5.7606 2.247 -4.4792 5.3144 -2.2962 0 5.5434
   [5,24,0,0,6,0,-4.5017,5.7606,2.247,-4.4792,5.3144,-2.2962,0,5.5434],
 // 5 24 0 -3.9106 -5.9672 0 0 -6 2.2962 0 -5.5434 -2.2962 0 -5.5434
@@ -193,5 +194,5 @@ function ldraw_lib__28870() = [
   [5,24,0,-9.9621,-10.7422,0,-8.7586,-11.2412,0.7109,-9.6187,-10.7008,-0.7109,-9.6187,-10.7008],
 ];
 module ldraw_lib__28870(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__28870(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__28870(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__28870(line=0.2);

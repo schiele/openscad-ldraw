@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__4650854j() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4650854j(realsolid=false) = [
 // 0 Sticker  1.9 x  1.9 with Hearts and Friends Horse and Rider
 // 0 Name: 4650854j.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -17,7 +18,7 @@ function ldraw_lib__4650854j() = [
 // 
 // 
 // 1 16 0 -0.25 0 19 0 0 0 0.25 0 0 0 19 box5-12.dat
-  [1,16,0,-0.25,0,19,0,0,0,0.25,0,0,0,19, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,19,0,0,0,0.25,0,0,0,19, ldraw_lib__box5_12(realsolid)],
 // 4 5 -5.7 -0.25 -15.7 -4.3 -0.25 -16.1 -5.6 -0.25 -11.8 -6.4 -0.25 -11.5
   [4,5,-5.7,-0.25,-15.7,-4.3,-0.25,-16.1,-5.6,-0.25,-11.8,-6.4,-0.25,-11.5],
 // 4 5 -6.9 -0.25 -15.2 -5.7 -0.25 -15.7 -6.4 -0.25 -11.5 -7.4 -0.25 -11.5
@@ -2162,5 +2163,5 @@ function ldraw_lib__4650854j() = [
   [3,15,8.1,-0.25,0.5,6.6,-0.25,0.3,8.2,-0.25,-0.5],
 ];
 module ldraw_lib__4650854j(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4650854j(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4650854j(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4650854j(line=0.2);

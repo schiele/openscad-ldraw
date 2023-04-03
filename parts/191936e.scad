@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__191936e() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__191936e(realsolid=false) = [
 // 0 Sticker  1.2 x  0.8 with Yellow and Black Diagonal Stripes
 // 0 Name: 191936e.dat
 // 0 Author: Steffen [Steffen]
@@ -24,7 +25,7 @@ function ldraw_lib__191936e() = [
 // 
 // 0 // Main
 // 1 16 0 -.25 0 8 0 0 0 .25 0 0 0 12 box5-12.dat
-  [1,16,0,-.25,0,8,0,0,0,.25,0,0,0,12, ldraw_lib__box5_12()],
+  [1,16,0,-.25,0,8,0,0,0,.25,0,0,0,12, ldraw_lib__box5_12(realsolid)],
 // 
 // 0 // Black
 // 3 0 -6 -.25 -12 -8 -.25 -12 -8 -.25 -10
@@ -53,5 +54,5 @@ function ldraw_lib__191936e() = [
   [3,14,8,-.25,12,8,-.25,9,5,-.25,12],
 ];
 module ldraw_lib__191936e(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__191936e(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__191936e(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__191936e(line=0.2);

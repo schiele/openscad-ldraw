@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <191915f.scad>
 use <3900.scad>
-function ldraw_lib__3900d01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3900d01(realsolid=false) = [
 // 0 Minifig Signal Holder with Green Circle on White Sticker
 // 0 Name: 3900d01.dat
 // 0 Author: Steffen [Steffen]
@@ -21,10 +22,10 @@ function ldraw_lib__3900d01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 3900.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3900()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3900(realsolid)],
 // 1 15 0 4 0 1 0 0 0 -1 0 0 0 -1 191915f.dat
-  [1,15,0,4,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__191915f()],
+  [1,15,0,4,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__191915f(realsolid)],
 ];
 module ldraw_lib__3900d01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3900d01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3900d01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3900d01(line=0.2);

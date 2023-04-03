@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/004315s01.scad>
-function ldraw_lib__003428c() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__003428c(realsolid=false) = [
 // 0 Sticker Minifig Torso with Black Suit without Buttons and Red Tie
 // 0 Name: 003428c.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -17,7 +18,7 @@ function ldraw_lib__003428c() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\004315s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__004315s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__004315s01(realsolid)],
 // 
 // 4 15 -9.275 -.25 14.871 -9.7 -.25 12 -9.1 -.25 11.8 -8.5 -.25 15
   [4,15,-9.275,-.25,14.871,-9.7,-.25,12,-9.1,-.25,11.8,-8.5,-.25,15],
@@ -195,5 +196,5 @@ function ldraw_lib__003428c() = [
   [3,4,1.5,-.25,-2.6,-1.5,-.25,-2.6,0,-.25,-3.9],
 ];
 module ldraw_lib__003428c(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__003428c(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__003428c(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__003428c(line=0.2);

@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <1-4disc.scad>
 use <1-4ndis.scad>
-function ldraw_lib__typestn0() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__typestn0(realsolid=false) = [
 // 0 Type Stencil Number 0
 // 0 Name: typestn0.dat
 // 0 Author: Willy Tschager [Holly-Wood]
@@ -19,13 +20,13 @@ function ldraw_lib__typestn0() = [
 // 
 // 0 // Black
 // 1 0 -0.27 0 3.24 -0.6 0 0 0 1 0 0 0 1.01 1-4ndis.dat
-  [1,0,-0.27,0,3.24,-0.6,0,0,0,1,0,0,0,1.01, ldraw_lib__1_4ndis()],
+  [1,0,-0.27,0,3.24,-0.6,0,0,0,1,0,0,0,1.01, ldraw_lib__1_4ndis(realsolid)],
 // 1 0 0.27 0 3.24 0.6 0 0 0 1 0 0 0 1.01 1-4ndis.dat
-  [1,0,0.27,0,3.24,0.6,0,0,0,1,0,0,0,1.01, ldraw_lib__1_4ndis()],
+  [1,0,0.27,0,3.24,0.6,0,0,0,1,0,0,0,1.01, ldraw_lib__1_4ndis(realsolid)],
 // 1 0 -0.27 0 -3.24 -0.6 0 0 0 1 0 0 0 -1.01 1-4ndis.dat
-  [1,0,-0.27,0,-3.24,-0.6,0,0,0,1,0,0,0,-1.01, ldraw_lib__1_4ndis()],
+  [1,0,-0.27,0,-3.24,-0.6,0,0,0,1,0,0,0,-1.01, ldraw_lib__1_4ndis(realsolid)],
 // 1 0 0.27 0 -3.24 0.6 0 0 0 1 0 0 0 -1.01 1-4ndis.dat
-  [1,0,0.27,0,-3.24,0.6,0,0,0,1,0,0,0,-1.01, ldraw_lib__1_4ndis()],
+  [1,0,0.27,0,-3.24,0.6,0,0,0,1,0,0,0,-1.01, ldraw_lib__1_4ndis(realsolid)],
 // 4 0 0.27 0 5 0.27 0 4.25 0.87 0 4.25 0.961 0 4.888
   [4,0,0.27,0,5,0.27,0,4.25,0.87,0,4.25,0.961,0,4.888],
 // 4 0 2.319 0 4.009 1.646 0 4.558 0.961 0 4.888 0.87 0 4.25
@@ -69,13 +70,13 @@ function ldraw_lib__typestn0() = [
 // 
 // 0 // Main Color
 // 1 16 -0.27 0 3.24 -0.6 0 0 0 1 0 0 0 1.01 1-4disc.dat
-  [1,16,-0.27,0,3.24,-0.6,0,0,0,1,0,0,0,1.01, ldraw_lib__1_4disc()],
+  [1,16,-0.27,0,3.24,-0.6,0,0,0,1,0,0,0,1.01, ldraw_lib__1_4disc(realsolid)],
 // 1 16 0.27 0 3.24 0.6 0 0 0 1 0 0 0 1.01 1-4disc.dat
-  [1,16,0.27,0,3.24,0.6,0,0,0,1,0,0,0,1.01, ldraw_lib__1_4disc()],
+  [1,16,0.27,0,3.24,0.6,0,0,0,1,0,0,0,1.01, ldraw_lib__1_4disc(realsolid)],
 // 1 16 -0.27 0 -3.24 -0.6 0 0 0 1 0 0 0 -1.01 1-4disc.dat
-  [1,16,-0.27,0,-3.24,-0.6,0,0,0,1,0,0,0,-1.01, ldraw_lib__1_4disc()],
+  [1,16,-0.27,0,-3.24,-0.6,0,0,0,1,0,0,0,-1.01, ldraw_lib__1_4disc(realsolid)],
 // 1 16 0.27 0 -3.24 0.6 0 0 0 1 0 0 0 -1.01 1-4disc.dat
-  [1,16,0.27,0,-3.24,0.6,0,0,0,1,0,0,0,-1.01, ldraw_lib__1_4disc()],
+  [1,16,0.27,0,-3.24,0.6,0,0,0,1,0,0,0,-1.01, ldraw_lib__1_4disc(realsolid)],
 // 4 16 -0.27 0 3.24 -0.87 0 3.24 -0.87 0 -3.24 -0.27 0 -3.24
   [4,16,-0.27,0,3.24,-0.87,0,3.24,-0.87,0,-3.24,-0.27,0,-3.24],
 // 4 16 0.87 0 3.24 0.27 0 3.24 0.27 0 -3.24 0.87 0 -3.24
@@ -149,5 +150,5 @@ function ldraw_lib__typestn0() = [
   [3,16,0.27,0,5,0.961,0,4.888,3.8,0,5],
 ];
 module ldraw_lib__typestn0(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__typestn0(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__typestn0(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__typestn0(line=0.2);

@@ -3,7 +3,8 @@ use <../p/1-4disc.scad>
 use <../p/1-4ndis.scad>
 use <../p/1-4ring2.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__190295e() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__190295e(realsolid=false) = [
 // 0 Sticker  1.1 x  3.9 with Black "25 Legoland" Bus Rollsign
 // 0 Name: 190295e.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -22,31 +23,31 @@ function ldraw_lib__190295e() = [
 // 0 // Font: Times New Roman
 // 
 // 1 16 0 -0.25 0 39 0 0 0 0.25 0 0 0 11 box5-12.dat
-  [1,16,0,-0.25,0,39,0,0,0,0.25,0,0,0,11, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,39,0,0,0,0.25,0,0,0,11, ldraw_lib__box5_12(realsolid)],
 // 1 14 -33 -.25 5 0 0 -2 0 1 0 2 0 0 1-4disc.dat
-  [1,14,-33,-.25,5,0,0,-2,0,1,0,2,0,0, ldraw_lib__1_4disc()],
+  [1,14,-33,-.25,5,0,0,-2,0,1,0,2,0,0, ldraw_lib__1_4disc(realsolid)],
 // 1 14 33 -.25 5 2 0 0 0 1 0 0 0 2 1-4disc.dat
-  [1,14,33,-.25,5,2,0,0,0,1,0,0,0,2, ldraw_lib__1_4disc()],
+  [1,14,33,-.25,5,2,0,0,0,1,0,0,0,2, ldraw_lib__1_4disc(realsolid)],
 // 1 14 -33 -.25 -5 -2 0 0 0 1 0 0 0 -2 1-4disc.dat
-  [1,14,-33,-.25,-5,-2,0,0,0,1,0,0,0,-2, ldraw_lib__1_4disc()],
+  [1,14,-33,-.25,-5,-2,0,0,0,1,0,0,0,-2, ldraw_lib__1_4disc(realsolid)],
 // 1 14 33 -.25 -5 0 0 2 0 1 0 -2 0 0 1-4disc.dat
-  [1,14,33,-.25,-5,0,0,2,0,1,0,-2,0,0, ldraw_lib__1_4disc()],
+  [1,14,33,-.25,-5,0,0,2,0,1,0,-2,0,0, ldraw_lib__1_4disc(realsolid)],
 // 1 0 -33 -.25 5 0 0 -1 0 1 0 1 0 0 1-4ring2.dat
-  [1,0,-33,-.25,5,0,0,-1,0,1,0,1,0,0, ldraw_lib__1_4ring2()],
+  [1,0,-33,-.25,5,0,0,-1,0,1,0,1,0,0, ldraw_lib__1_4ring2(realsolid)],
 // 1 0 33 -.25 5 1 0 0 0 1 0 0 0 1 1-4ring2.dat
-  [1,0,33,-.25,5,1,0,0,0,1,0,0,0,1, ldraw_lib__1_4ring2()],
+  [1,0,33,-.25,5,1,0,0,0,1,0,0,0,1, ldraw_lib__1_4ring2(realsolid)],
 // 1 0 -33 -.25 -5 -1 0 0 0 1 0 0 0 -1 1-4ring2.dat
-  [1,0,-33,-.25,-5,-1,0,0,0,1,0,0,0,-1, ldraw_lib__1_4ring2()],
+  [1,0,-33,-.25,-5,-1,0,0,0,1,0,0,0,-1, ldraw_lib__1_4ring2(realsolid)],
 // 1 0 33 -.25 -5 0 0 1 0 1 0 -1 0 0 1-4ring2.dat
-  [1,0,33,-.25,-5,0,0,1,0,1,0,-1,0,0, ldraw_lib__1_4ring2()],
+  [1,0,33,-.25,-5,0,0,1,0,1,0,-1,0,0, ldraw_lib__1_4ring2(realsolid)],
 // 1 15 -33 -.25 5 0 0 -3 0 1 0 3 0 0 1-4ndis.dat
-  [1,15,-33,-.25,5,0,0,-3,0,1,0,3,0,0, ldraw_lib__1_4ndis()],
+  [1,15,-33,-.25,5,0,0,-3,0,1,0,3,0,0, ldraw_lib__1_4ndis(realsolid)],
 // 1 15 33 -.25 5 3 0 0 0 1 0 0 0 3 1-4ndis.dat
-  [1,15,33,-.25,5,3,0,0,0,1,0,0,0,3, ldraw_lib__1_4ndis()],
+  [1,15,33,-.25,5,3,0,0,0,1,0,0,0,3, ldraw_lib__1_4ndis(realsolid)],
 // 1 15 -33 -.25 -5 -3 0 0 0 1 0 0 0 -3 1-4ndis.dat
-  [1,15,-33,-.25,-5,-3,0,0,0,1,0,0,0,-3, ldraw_lib__1_4ndis()],
+  [1,15,-33,-.25,-5,-3,0,0,0,1,0,0,0,-3, ldraw_lib__1_4ndis(realsolid)],
 // 1 15 33 -.25 -5 0 0 3 0 1 0 -3 0 0 1-4ndis.dat
-  [1,15,33,-.25,-5,0,0,3,0,1,0,-3,0,0, ldraw_lib__1_4ndis()],
+  [1,15,33,-.25,-5,0,0,3,0,1,0,-3,0,0, ldraw_lib__1_4ndis(realsolid)],
 // 4 0 -31.38 -.25 -2.4 -32.31 -.25 -3.53 -32.31 -.25 -3.66 -30.64 -.25 -2.18
   [4,0,-31.38,-.25,-2.4,-32.31,-.25,-3.53,-32.31,-.25,-3.66,-30.64,-.25,-2.18],
 // 4 0 -30.64 -.25 -2.18 -29.51 -.25 -1.02 -30.65 -.25 -1.47 -31.38 -.25 -2.4
@@ -1071,5 +1072,5 @@ function ldraw_lib__190295e() = [
   [3,15,-39,-.25,11,-36,-.25,8,-33,-.25,8],
 ];
 module ldraw_lib__190295e(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__190295e(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__190295e(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__190295e(line=0.2);

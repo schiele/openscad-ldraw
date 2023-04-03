@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <3005ptz.scad>
-function ldraw_lib__3005_z() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3005_z(realsolid=false) = [
 // 0 ~Moved to 3005ptz
 // 0 Name: 3005-z.dat
 // 0 Author: [PTadmin]
@@ -18,8 +19,8 @@ function ldraw_lib__3005_z() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 3005ptz.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3005ptz()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3005ptz(realsolid)],
 ];
 module ldraw_lib__3005_z(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3005_z(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3005_z(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3005_z(line=0.2);

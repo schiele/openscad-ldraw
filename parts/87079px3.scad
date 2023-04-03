@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/logo-lego-2.scad>
 use <s/87079s01.scad>
 use <s/logostarwars01.scad>
-function ldraw_lib__87079px3() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__87079px3(realsolid=false) = [
 // 0 Tile  2 x  4 with Lego and Star Wars Logo and "2020" Pattern
 // 0 Name: 87079px3.dat
 // 0 Author: Marc Giraudet [Mad_Marc]
@@ -19,11 +20,11 @@ function ldraw_lib__87079px3() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\87079s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__87079s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__87079s01(realsolid)],
 // 1 16 -26.5 0 6.5 0.55 0 0 0 0 1 0 -0.55 0 logo-lego-2.dat
-  [1,16,-26.5,0,6.5,0.55,0,0,0,0,1,0,-0.55,0, ldraw_lib__logo_lego_2()],
+  [1,16,-26.5,0,6.5,0.55,0,0,0,0,1,0,-0.55,0, ldraw_lib__logo_lego_2(realsolid)],
 // 1 16 -15.25 0 18.6 0.55 0 0 0 0 1 0 -0.55 0 s\logostarwars01.dat
-  [1,16,-15.25,0,18.6,0.55,0,0,0,0,1,0,-0.55,0, ldraw_lib__s__logostarwars01()],
+  [1,16,-15.25,0,18.6,0.55,0,0,0,0,1,0,-0.55,0, ldraw_lib__s__logostarwars01(realsolid)],
 // 4 15 -37.5 0 -7 -37.5 0 -8 37.5 0 -8 37.5 0 -7
   [4,15,-37.5,0,-7,-37.5,0,-8,37.5,0,-8,37.5,0,-7],
 // 4 15 -2.234 0 -11.406 -3.561 0 -10.968 -3.731 0 -11.493 -2.355 0 -11.992
@@ -526,5 +527,5 @@ function ldraw_lib__87079px3() = [
   [3,16,40,0,20,39.75,0,-5.6,40,0,-20],
 ];
 module ldraw_lib__87079px3(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__87079px3(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__87079px3(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__87079px3(line=0.2);

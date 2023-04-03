@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/24581s01.scad>
-function ldraw_lib__24581p01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__24581p01(realsolid=false) = [
 // 0 Minifig Baby Head with Eyes and Smile Pattern
 // 0 Name: 24581p01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -15,7 +16,7 @@ function ldraw_lib__24581p01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\24581s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__24581s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__24581s01(realsolid)],
 // 5 24 -7.0711 -12.5 -7.0711 -7.0711 -3.5 -7.0711 -3.8269 -12.5 -9.2391 -14.1421 -12.5 0
   [5,24,-7.0711,-12.5,-7.0711,-7.0711,-3.5,-7.0711,-3.8269,-12.5,-9.2391,-14.1421,-12.5,0],
 // 5 24 -3.8269 -12.5 -9.2391 -3.8269 -3.5 -9.2391 0 -12.5 -9.9999 -7.0711 -12.5 -7.0711
@@ -244,5 +245,5 @@ function ldraw_lib__24581p01() = [
   [3,16,-3.2908,-7.7582,-9.3456,-2.14,-6.24,-9.5744,-2.7416,-7.6671,-9.4548],
 ];
 module ldraw_lib__24581p01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__24581p01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__24581p01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__24581p01(line=0.2);

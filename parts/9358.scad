@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <3067p12.scad>
-function ldraw_lib__9358() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__9358(realsolid=false) = [
 // 0 ~_Brick  1 x  6 without Centre Studs with "POLICE" Pattern TransBlue (Obsolete)
 // 0 Name: 9358.dat
 // 0 Author: [PTadmin]
@@ -20,8 +21,8 @@ function ldraw_lib__9358() = [
 // 0 // colouring of the part (Trans Blue).
 // 
 // 1 33 0 0 0 1 0 0 0 1 0 0 0 1 3067p12.dat
-  [1,33,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3067p12()],
+  [1,33,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3067p12(realsolid)],
 ];
 module ldraw_lib__9358(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__9358(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__9358(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__9358(line=0.2);

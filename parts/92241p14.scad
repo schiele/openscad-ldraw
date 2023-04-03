@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/92241s01.scad>
-function ldraw_lib__92241p14() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__92241p14(realsolid=false) = [
 // 0 Figure Friends Girl Torso with White Open Jacket with Belt over Magenta Shirt Pattern
 // 0 Name: 92241p14.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -15,7 +16,7 @@ function ldraw_lib__92241p14() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\92241s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__92241s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__92241s01(realsolid)],
 // 0 // Front
 // 4 85 2.34 15.66 -8.564 2.3748 14.6621 -8.5855 1.8532 15.3952 -8.6304 1.86 16.32 -8.6057
   [4,85,2.34,15.66,-8.564,2.3748,14.6621,-8.5855,1.8532,15.3952,-8.6304,1.86,16.32,-8.6057],
@@ -2987,5 +2988,5 @@ function ldraw_lib__92241p14() = [
   [5,24,-6.99,4.64,-8.69,-4.41,2.39,-8.84,-7.24,2.4,-8.04,-4.37,4.31,-9.23],
 ];
 module ldraw_lib__92241p14(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__92241p14(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__92241p14(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__92241p14(line=0.2);

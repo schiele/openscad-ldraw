@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <3794.scad>
-function ldraw_lib__4211119() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4211119(realsolid=false) = [
 // 0 ~_Plate  1 x  2 with 1 Stud Dark Bluish Grey (Obsolete)
 // 0 Name: 4211119.dat
 // 0 Author: Michael Heidemann [mikeheide]
@@ -22,8 +23,8 @@ function ldraw_lib__4211119() = [
 // 0 // colouring of the part (Dark_Bluish_Grey).
 // 
 // 1 72 0 0 0 1 0 0 0 1 0 0 0 1 3794.dat
-  [1,72,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3794()],
+  [1,72,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3794(realsolid)],
 ];
 module ldraw_lib__4211119(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4211119(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4211119(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4211119(line=0.2);

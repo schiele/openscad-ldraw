@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3069bs01.scad>
-function ldraw_lib__3069bp0n() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3069bp0n(realsolid=false) = [
 // 0 Tile  1 x  2 with Playing Cards Four Aces Pattern
 // 0 Name: 3069bp0n.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -17,7 +18,7 @@ function ldraw_lib__3069bp0n() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3069bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3069bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3069bs01(realsolid)],
 // 4 4 6.5 0 -2.1 7 0 -2.5 7.8 0 0.8 7.4 0 1.2
   [4,4,6.5,0,-2.1,7,0,-2.5,7.8,0,0.8,7.4,0,1.2],
 // 4 4 5.7 0 -1.3 6.5 0 -2.1 7.4 0 1.2 6.8 0 1.6
@@ -606,5 +607,5 @@ function ldraw_lib__3069bp0n() = [
   [3,16,0,0,10,-6.4,0,8.9,-5.8,0,8.6],
 ];
 module ldraw_lib__3069bp0n(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3069bp0n(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3069bp0n(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3069bp0n(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <1-16chrd.scad>
-function ldraw_lib__1_4ering() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__1_4ering(realsolid=false) = [
 // 0 Adapter Ring Triangles to Normal 0.25
 // 0 Name: 1-4ering.dat
 // 0 Author: Steffen [Steffen]
@@ -20,14 +21,14 @@ function ldraw_lib__1_4ering() = [
 // 0 // This file is based on an idea by Darats at http://forums.ldraw.org/read.php?19,14500,14500#msg-14500
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 1-16chrd.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__1_16chrd()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__1_16chrd(realsolid)],
 // 1 16 0 0 0 0.38268 0 -0.92388 0 1 0 0.92388 0 0.38268 1-16chrd.dat
-  [1,16,0,0,0,0.38268,0,-0.92388,0,1,0,0.92388,0,0.38268, ldraw_lib__1_16chrd()],
+  [1,16,0,0,0,0.38268,0,-0.92388,0,1,0,0.92388,0,0.38268, ldraw_lib__1_16chrd(realsolid)],
 // 1 16 0 0 0 0.70711 0 -0.70711 0 1 0 0.70711 0 0.70711 1-16chrd.dat
-  [1,16,0,0,0,0.70711,0,-0.70711,0,1,0,0.70711,0,0.70711, ldraw_lib__1_16chrd()],
+  [1,16,0,0,0,0.70711,0,-0.70711,0,1,0,0.70711,0,0.70711, ldraw_lib__1_16chrd(realsolid)],
 // 1 16 0 0 0 0.92388 0 -0.38268 0 1 0 0.38268 0 0.92388 1-16chrd.dat
-  [1,16,0,0,0,0.92388,0,-0.38268,0,1,0,0.38268,0,0.92388, ldraw_lib__1_16chrd()],
+  [1,16,0,0,0,0.92388,0,-0.38268,0,1,0,0.38268,0,0.92388, ldraw_lib__1_16chrd(realsolid)],
 ];
 module ldraw_lib__1_4ering(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__1_4ering(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__1_4ering(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__1_4ering(line=0.2);

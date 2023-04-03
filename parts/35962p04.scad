@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/35962s01.scad>
-function ldraw_lib__35962p04() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__35962p04(realsolid=false) = [
 // 0 Duplo Train Action Brick with Black Light Pattern
 // 0 Name: 35962p04.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -18,7 +19,7 @@ function ldraw_lib__35962p04() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\35962s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__35962s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__35962s01(realsolid)],
 // 4 16 -23.578 -7 -105.754 -5.1 -7 -118.1 5.1 -7 -118.1 23.578 -7 -105.754
   [4,16,-23.578,-7,-105.754,-5.1,-7,-118.1,5.1,-7,-118.1,23.578,-7,-105.754],
 // 4 16 -32.1 -7 0 -23.578 -7 -105.754 23.578 -7 -105.754 32.1 -7 0
@@ -311,5 +312,5 @@ function ldraw_lib__35962p04() = [
   [3,16,-11.1016,-7,98.256,-15.3386,-7,102.5043,-9.8606,-7,95.393],
 ];
 module ldraw_lib__35962p04(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__35962p04(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__35962p04(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__35962p04(line=0.2);

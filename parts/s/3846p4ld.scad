@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__3846p4ld() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__3846p4ld(realsolid=false) = [
 // 0 ~Gold Lion on Red/White Quarters Background Pattern - Segment D
 // 0 Name: s\3846p4ld.dat
 // 0 Author: Joerg Sommerer [Brickaneer]
@@ -1475,5 +1476,5 @@ function ldraw_lib__s__3846p4ld() = [
   [3,15,2.7,2.3,0,3,3.2928,0,3.8739,3.1508,0],
 ];
 module ldraw_lib__s__3846p4ld(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__3846p4ld(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__3846p4ld(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__3846p4ld(line=0.2);

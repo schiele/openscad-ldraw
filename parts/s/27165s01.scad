@@ -4,7 +4,8 @@ use <../../p/rect.scad>
 use <../../p/rect3.scad>
 use <27165s02.scad>
 use <../../p/stug-2x2.scad>
-function ldraw_lib__s__27165s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__27165s01(realsolid=false) = [
 // 0 ~Windscreen 11 x  4 x  2.333 Pointed with Handle without Outside Faces
 // 0 Name: s\27165s01.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -19,9 +20,9 @@ function ldraw_lib__s__27165s01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\27165s02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__27165s02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__27165s02(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\27165s02.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__27165s02()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__27165s02(realsolid)],
 // 
 // 3 16 -3.5355 54 -204.5355 3.5355 54 -204.5355 0 54 -206
   [3,16,-3.5355,54,-204.5355,3.5355,54,-204.5355,0,54,-206],
@@ -39,7 +40,7 @@ function ldraw_lib__s__27165s01() = [
 // 3 16 -18.5969 2 -50 18.5969 2 -50 0 2 -68.6074
   [3,16,-18.5969,2,-50,18.5969,2,-50,0,2,-68.6074],
 // 1 16 0 2 -31.5 -18.5969 0 0 0 -1 0 0 0 18.5 rect3.dat
-  [1,16,0,2,-31.5,-18.5969,0,0,0,-1,0,0,0,18.5, ldraw_lib__rect3()],
+  [1,16,0,2,-31.5,-18.5969,0,0,0,-1,0,0,0,18.5, ldraw_lib__rect3(realsolid)],
 // 4 16 23.5969 6 -13 18.5969 2 -13 -18.5969 2 -13 -23.5969 6 -13
   [4,16,23.5969,6,-13,18.5969,2,-13,-18.5969,2,-13,-23.5969,6,-13],
 // 4 16 14 6 -10 23.5969 6 -13 -23.5969 6 -13 -14 6 -10
@@ -49,9 +50,9 @@ function ldraw_lib__s__27165s01() = [
 // 
 // 0 // Handle
 // 1 16 -14 0 0 0 28 0 4 0 0 0 0 -4 4-4cylo.dat
-  [1,16,-14,0,0,0,28,0,4,0,0,0,0,-4, ldraw_lib__4_4cylo()],
+  [1,16,-14,0,0,0,28,0,4,0,0,0,0,-4, ldraw_lib__4_4cylo(realsolid)],
 // 1 16 0 2 -10 0 0 14 4 0 0 0 -1 0 rect.dat
-  [1,16,0,2,-10,0,0,14,4,0,0,0,-1,0, ldraw_lib__rect()],
+  [1,16,0,2,-10,0,0,14,4,0,0,0,-1,0, ldraw_lib__rect(realsolid)],
 // 
 // 0 // Top Surface
 // 3 16 4 -2 -46 -4 -2 -46 0 -2 -70
@@ -69,10 +70,10 @@ function ldraw_lib__s__27165s01() = [
 // 4 16 -14 -2 -10 -4 -2 -14 4 -2 -14 14 -2 -10
   [4,16,-14,-2,-10,-4,-2,-14,4,-2,-14,14,-2,-10],
 // 1 16 0 -2 -30 0 0 -1 0 1 0 1 0 0 stug-2x2.dat
-  [1,16,0,-2,-30,0,0,-1,0,1,0,1,0,0, ldraw_lib__stug_2x2()],
+  [1,16,0,-2,-30,0,0,-1,0,1,0,1,0,0, ldraw_lib__stug_2x2(realsolid)],
 // 2 24 0 -2 -70 0 48.5143 -206
   [2,24,0,-2,-70,0,48.5143,-206],
 ];
 module ldraw_lib__s__27165s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__27165s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__27165s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__27165s01(line=0.2);

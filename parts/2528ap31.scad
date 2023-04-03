@@ -2,7 +2,8 @@ use <../lib.scad>
 use <s/2528ap31s01.scad>
 use <s/2528as01.scad>
 use <s/2528as03.scad>
-function ldraw_lib__2528ap31() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2528ap31(realsolid=false) = [
 // 0 Minifig Hat Bicorne with Small Rounded Skull and Crossbones Pattern
 // 0 Name: 2528ap31.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -25,15 +26,15 @@ function ldraw_lib__2528ap31() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2528as01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2528as01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2528as01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 -1 s\2528as03.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__2528as03()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__2528as03(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 -1 s\2528as03.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__2528as03()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__2528as03(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2528ap31s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2528ap31s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2528ap31s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\2528ap31s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__2528ap31s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__2528ap31s01(realsolid)],
 // 
 // 4 15 1.9924 -1.3166 -13.5498 .56925 -.6525 -13.86707 1.1134 -.4825 -13.8616 1.9999 -1.2258 -13.5739
   [4,15,1.9924,-1.3166,-13.5498,.56925,-.6525,-13.86707,1.1134,-.4825,-13.8616,1.9999,-1.2258,-13.5739],
@@ -59,5 +60,5 @@ function ldraw_lib__2528ap31() = [
   [3,16,0,-2.0756,-13.5324,-1.9924,-1.791,-13.4201,-1.9924,-1.3166,-13.5498],
 ];
 module ldraw_lib__2528ap31(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2528ap31(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2528ap31(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2528ap31(line=0.2);

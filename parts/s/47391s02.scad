@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__47391s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__47391s02(realsolid=false) = [
 // 0 ~Figure Duplo Head Adult Back Half
 // 0 Name: s\47391s02.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -95,5 +96,5 @@ function ldraw_lib__s__47391s02() = [
   [5,24,16.9878,-30,18.849,23.7685,-21.7512,13.7223,15.2366,-21.7512,19.6901,24.0471,-31.5301,13.8831],
 ];
 module ldraw_lib__s__47391s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__47391s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__47391s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__47391s02(line=0.2);

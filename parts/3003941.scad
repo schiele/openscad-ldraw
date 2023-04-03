@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <3070b.scad>
-function ldraw_lib__3003941() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3003941(realsolid=false) = [
 // 0 ~_Tile  1 x  1 with Groove Trans Red (Obsolete)
 // 0 Name: 3003941.dat
 // 0 Author: [PTadmin]
@@ -20,8 +21,8 @@ function ldraw_lib__3003941() = [
 // 0 // colouring of the part (Trans Red).
 // 
 // 1 36 0 0 0 1 0 0 0 1 0 0 0 1 3070b.dat
-  [1,36,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3070b()],
+  [1,36,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3070b(realsolid)],
 ];
 module ldraw_lib__3003941(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3003941(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3003941(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3003941(line=0.2);

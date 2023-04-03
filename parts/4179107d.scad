@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/48/4-4aring.scad>
 use <../p/48/4-4cyli.scad>
 use <../p/48/4-4disc.scad>
-function ldraw_lib__4179107d() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4179107d(realsolid=false) = [
 // 0 Sticker  6.0 x  6.0 Round with Black Iron Cross on White Background
 // 0 Name: 4179107d.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -22,11 +23,11 @@ function ldraw_lib__4179107d() = [
 // 0 // Primitives
 // 
 // 1 16 0 0 0 60 0 0 0 -1 0 0 0 60 48\4-4disc.dat
-  [1,16,0,0,0,60,0,0,0,-1,0,0,0,60, ldraw_lib__48__4_4disc()],
+  [1,16,0,0,0,60,0,0,0,-1,0,0,0,60, ldraw_lib__48__4_4disc(realsolid)],
 // 1 16 0 -.25 0 60 0 0 0 0.25 0 0 0 60 48\4-4cyli.dat
-  [1,16,0,-.25,0,60,0,0,0,0.25,0,0,0,60, ldraw_lib__48__4_4cyli()],
+  [1,16,0,-.25,0,60,0,0,0,0.25,0,0,0,60, ldraw_lib__48__4_4cyli(realsolid)],
 // 1 15 0 -.25 0 60 0 0 0 1 0 0 0 60 48\4-4aring.dat
-  [1,15,0,-.25,0,60,0,0,0,1,0,0,0,60, ldraw_lib__48__4_4aring()],
+  [1,15,0,-.25,0,60,0,0,0,1,0,0,0,60, ldraw_lib__48__4_4aring(realsolid)],
 // 0 // Top faces
 // 0 // Black faces
 // 4 0 -16.1284 -.25 46.1049 16.1284 -.25 46.1049 19 -.25 53.01 -19 -.25 53.01
@@ -162,5 +163,5 @@ function ldraw_lib__4179107d() = [
   [3,15,0,-.25,-60,22.962,-.25,-55.434,19,-.25,-53.01],
 ];
 module ldraw_lib__4179107d(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4179107d(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4179107d(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4179107d(line=0.2);

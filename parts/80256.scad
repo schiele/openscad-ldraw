@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <6099p03.scad>
-function ldraw_lib__80256() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__80256(realsolid=false) = [
 // 0 ~_Baseplate 32 x 32 Road 9-Stud Landing Pad with Yellow Circle (Obsolete)
 // 0 Name: 80256.dat
 // 0 Author: [PTadmin]
@@ -19,8 +20,8 @@ function ldraw_lib__80256() = [
 // 
 // 
 // 1 7 0 0 0 1 0 0 0 1 0 0 0 1 6099p03.dat
-  [1,7,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__6099p03()],
+  [1,7,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__6099p03(realsolid)],
 ];
 module ldraw_lib__80256(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__80256(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__80256(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__80256(line=0.2);

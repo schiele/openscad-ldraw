@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <23798.scad>
 use <44772.scad>
-function ldraw_lib__44772c02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__44772c02(realsolid=false) = [
 // 0 Wheel Rim 34 x 56 with 6 Spokes and 3 Pegholes with Tyre 44/ 58 x 56 R Tractor
 // 0 Name: 44772c02.dat
 // 0 Author: Steffen [Steffen]
@@ -16,10 +17,10 @@ function ldraw_lib__44772c02() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 44772.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__44772()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__44772(realsolid)],
 // 1 256 0 0 -3 1 0 0 0 1 0 0 0 1 23798.dat
-  [1,256,0,0,-3,1,0,0,0,1,0,0,0,1, ldraw_lib__23798()],
+  [1,256,0,0,-3,1,0,0,0,1,0,0,0,1, ldraw_lib__23798(realsolid)],
 ];
 module ldraw_lib__44772c02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__44772c02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__44772c02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__44772c02(line=0.2);

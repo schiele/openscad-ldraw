@@ -4,7 +4,8 @@ use <../p/1-4disc.scad>
 use <../p/4-4cylo.scad>
 use <../p/4-4ndis.scad>
 use <../p/rect2p.scad>
-function ldraw_lib__384() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__384(realsolid=false) = [
 // 0 Cardboard Trading Card
 // 0 Name: 384.dat
 // 0 Author: Michael Heidemann [mikeheide]
@@ -24,39 +25,39 @@ function ldraw_lib__384() = [
 // 
 // 
 // 1 16 0 0.5 -112 68 0 0 0 0 -0.5 0 1 0 rect2p.dat
-  [1,16,0,0.5,-112,68,0,0,0,0,-0.5,0,1,0, ldraw_lib__rect2p()],
+  [1,16,0,0.5,-112,68,0,0,0,0,-0.5,0,1,0, ldraw_lib__rect2p(realsolid)],
 // 1 16 0 0.5 112 -68 0 0 0 0 -0.5 0 -1 0 rect2p.dat
-  [1,16,0,0.5,112,-68,0,0,0,0,-0.5,0,-1,0, ldraw_lib__rect2p()],
+  [1,16,0,0.5,112,-68,0,0,0,0,-0.5,0,-1,0, ldraw_lib__rect2p(realsolid)],
 // 1 16 -78 0.5 0 0 1 0 0 0 -0.5 -102 0 0 rect2p.dat
-  [1,16,-78,0.5,0,0,1,0,0,0,-0.5,-102,0,0, ldraw_lib__rect2p()],
+  [1,16,-78,0.5,0,0,1,0,0,0,-0.5,-102,0,0, ldraw_lib__rect2p(realsolid)],
 // 1 16 78 0.5 0 0 -1 0 0 0 -0.5 102 0 0 rect2p.dat
-  [1,16,78,0.5,0,0,-1,0,0,0,-0.5,102,0,0, ldraw_lib__rect2p()],
+  [1,16,78,0.5,0,0,-1,0,0,0,-0.5,102,0,0, ldraw_lib__rect2p(realsolid)],
 // 
 // 1 16 -68 0 -102 -10 0 0 0 1 0 0 0 -10 1-4cylc.dat
-  [1,16,-68,0,-102,-10,0,0,0,1,0,0,0,-10, ldraw_lib__1_4cylc()],
+  [1,16,-68,0,-102,-10,0,0,0,1,0,0,0,-10, ldraw_lib__1_4cylc(realsolid)],
 // 1 16 -68 1 -102 0 0 -10 0 -1 0 -10 0 0 1-4disc.dat
-  [1,16,-68,1,-102,0,0,-10,0,-1,0,-10,0,0, ldraw_lib__1_4disc()],
+  [1,16,-68,1,-102,0,0,-10,0,-1,0,-10,0,0, ldraw_lib__1_4disc(realsolid)],
 // 1 16 68 0 -102 0 0 10 0 1 0 -10 0 0 1-4cylc.dat
-  [1,16,68,0,-102,0,0,10,0,1,0,-10,0,0, ldraw_lib__1_4cylc()],
+  [1,16,68,0,-102,0,0,10,0,1,0,-10,0,0, ldraw_lib__1_4cylc(realsolid)],
 // 1 16 68 1 -102 10 0 0 0 -1 0 0 0 -10 1-4disc.dat
-  [1,16,68,1,-102,10,0,0,0,-1,0,0,0,-10, ldraw_lib__1_4disc()],
+  [1,16,68,1,-102,10,0,0,0,-1,0,0,0,-10, ldraw_lib__1_4disc(realsolid)],
 // 1 16 68 0 102 10 0 0 0 1 0 0 0 10 1-4cylc.dat
-  [1,16,68,0,102,10,0,0,0,1,0,0,0,10, ldraw_lib__1_4cylc()],
+  [1,16,68,0,102,10,0,0,0,1,0,0,0,10, ldraw_lib__1_4cylc(realsolid)],
 // 1 16 68 1 102 0 0 10 0 -1 0 10 0 0 1-4disc.dat
-  [1,16,68,1,102,0,0,10,0,-1,0,10,0,0, ldraw_lib__1_4disc()],
+  [1,16,68,1,102,0,0,10,0,-1,0,10,0,0, ldraw_lib__1_4disc(realsolid)],
 // 1 16 -68 0 102 0 0 -10 0 1 0 10 0 0 1-4cylc.dat
-  [1,16,-68,0,102,0,0,-10,0,1,0,10,0,0, ldraw_lib__1_4cylc()],
+  [1,16,-68,0,102,0,0,-10,0,1,0,10,0,0, ldraw_lib__1_4cylc(realsolid)],
 // 1 16 -68 1 102 -10 0 0 0 -1 0 0 0 10 1-4disc.dat
-  [1,16,-68,1,102,-10,0,0,0,-1,0,0,0,10, ldraw_lib__1_4disc()],
+  [1,16,-68,1,102,-10,0,0,0,-1,0,0,0,10, ldraw_lib__1_4disc(realsolid)],
 // 
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 34 0 0 -6 0 1 0 6 0 0 4-4cylo.dat
-  [1,16,0,0,34,0,0,-6,0,1,0,6,0,0, ldraw_lib__4_4cylo()],
+  [1,16,0,0,34,0,0,-6,0,1,0,6,0,0, ldraw_lib__4_4cylo(realsolid)],
 // 1 16 0 1 34 0 0 -6 0 -1 0 -6 0 0 4-4ndis.dat
-  [1,16,0,1,34,0,0,-6,0,-1,0,-6,0,0, ldraw_lib__4_4ndis()],
+  [1,16,0,1,34,0,0,-6,0,-1,0,-6,0,0, ldraw_lib__4_4ndis(realsolid)],
 // 1 16 0 0 34 0 0 -6 0 1 0 6 0 0 4-4ndis.dat
-  [1,16,0,0,34,0,0,-6,0,1,0,6,0,0, ldraw_lib__4_4ndis()],
+  [1,16,0,0,34,0,0,-6,0,1,0,6,0,0, ldraw_lib__4_4ndis(realsolid)],
 // 
 // 4 16 68 1 102 -68 1 102 -68 1 112 68 1 112
   [4,16,68,1,102,-68,1,102,-68,1,112,68,1,112],
@@ -101,5 +102,5 @@ function ldraw_lib__384() = [
   [4,16,-6,0,40,-78,0,102,-78,0,-102,-6,0,34],
 ];
 module ldraw_lib__384(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__384(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__384(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__384(line=0.2);

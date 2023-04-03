@@ -3,7 +3,8 @@ use <../p/4-4ering.scad>
 use <../p/4-4ndis.scad>
 use <../p/4-4ring6.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__194535h() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__194535h(realsolid=false) = [
 // 0 Sticker  0.9 x  1.2 with Black Telephone Receiver in Circle on Transparent Background
 // 0 Name: 194535h.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -21,11 +22,11 @@ function ldraw_lib__194535h() = [
 // 
 // 
 // 1 16 0 -0.25 0 12 0 0 0 0.25 0 0 0 9 box5-12.dat
-  [1,16,0,-0.25,0,12,0,0,0,0.25,0,0,0,9, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,12,0,0,0,0.25,0,0,0,9, ldraw_lib__box5_12(realsolid)],
 // 0 BFC NOCLIP
   [0,"BFC","NOCLIP"],
 // 1 0 3 -0.25 0 1 0 0 0 1 0 0 0 1 4-4ring6.dat
-  [1,0,3,-0.25,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4ring6()],
+  [1,0,3,-0.25,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4ring6(realsolid)],
 // 4 0 3.3 -0.25 2.3 4.4 -0.25 2.3 4 -0.25 3.7 3.2 -0.25 3.1
   [4,0,3.3,-0.25,2.3,4.4,-0.25,2.3,4,-0.25,3.7,3.2,-0.25,3.1],
 // 4 0 3.2 -0.25 3.1 4 -0.25 3.7 3.2 -0.25 4.8 2 -0.25 3.1
@@ -49,9 +50,9 @@ function ldraw_lib__194535h() = [
 // 0 BFC CLIP
   [0,"BFC","CLIP"],
 // 1 16 3 -0.25 0 7 0 0 0 1 0 0 0 7 4-4ndis.dat
-  [1,16,3,-0.25,0,7,0,0,0,1,0,0,0,7, ldraw_lib__4_4ndis()],
+  [1,16,3,-0.25,0,7,0,0,0,1,0,0,0,7, ldraw_lib__4_4ndis(realsolid)],
 // 1 16 3 -0.25 0 6 0 0 0 1 0 0 0 6 4-4ering.dat
-  [1,16,3,-0.25,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4ering()],
+  [1,16,3,-0.25,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4ering(realsolid)],
 // 4 16 1.5 -0.25 5.1 2.3 -0.25 5.2 3 -0.25 6 0.7039 -0.25 5.5433
   [4,16,1.5,-0.25,5.1,2.3,-0.25,5.2,3,-0.25,6,0.7039,-0.25,5.5433],
 // 4 16 1.3 -0.25 4.8 1.5 -0.25 5.1 0.7039 -0.25 5.5433 -1.2426 -0.25 4.2426
@@ -110,5 +111,5 @@ function ldraw_lib__194535h() = [
   [3,16,12,-0.25,9,3,-0.25,7,10,-0.25,7],
 ];
 module ldraw_lib__194535h(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__194535h(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__194535h(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__194535h(line=0.2);

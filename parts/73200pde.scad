@@ -2,7 +2,8 @@ use <../lib.scad>
 use <3815bpde.scad>
 use <3816bpde.scad>
 use <3817bpde.scad>
-function ldraw_lib__73200pde() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__73200pde(realsolid=false) = [
 // 0 Minifig Hips and Legs with Laboratory Smock Pattern
 // 0 Name: 73200pde.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -23,12 +24,12 @@ function ldraw_lib__73200pde() = [
 // 
 // 
 // 1 15 0 0 0 1 0 0 0 1 0 0 0 1 3815bpde.dat
-  [1,15,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3815bpde()],
+  [1,15,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3815bpde(realsolid)],
 // 1 16 0 12 0 1 0 0 0 1 0 0 0 1 3816bpde.dat
-  [1,16,0,12,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3816bpde()],
+  [1,16,0,12,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3816bpde(realsolid)],
 // 1 16 0 12 0 1 0 0 0 1 0 0 0 1 3817bpde.dat
-  [1,16,0,12,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3817bpde()],
+  [1,16,0,12,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3817bpde(realsolid)],
 ];
 module ldraw_lib__73200pde(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__73200pde(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__73200pde(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__73200pde(line=0.2);

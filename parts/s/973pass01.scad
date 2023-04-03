@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__973pass01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__973pass01(realsolid=false) = [
 // 0 ~Minifig Torso Test Tube Symbol
 // 0 Name: s\973pass01.dat
 // 0 Author: Joerg Sommerer [Brickaneer]
@@ -63,5 +64,5 @@ function ldraw_lib__s__973pass01() = [
   [4,0,-0.892,14.786,0,-1.227,15.379,0,-0.3,16.306,0,2.191,17.867,0],
 ];
 module ldraw_lib__s__973pass01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__973pass01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__973pass01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__973pass01(line=0.2);

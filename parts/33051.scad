@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/33051s01.scad>
-function ldraw_lib__33051() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__33051(realsolid=false) = [
 // 0 Minifig Food Apple
 // 0 Name: 33051.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -22,9 +23,9 @@ function ldraw_lib__33051() = [
 // 
 // 
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 -1 s\33051s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__33051s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__33051s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\33051s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__33051s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__33051s01(realsolid)],
 // 5 24 -21.04 -28.06 0 -19.36 -25.86 0 -20.57 -27.53 -1.9 -20.57 -27.53 1.9
   [5,24,-21.04,-28.06,0,-19.36,-25.86,0,-20.57,-27.53,-1.9,-20.57,-27.53,1.9],
 // 5 24 -21.6 -28.99 0 -21.04 -28.06 0 -20.57 -27.53 -1.9 -20.57 -27.53 1.9
@@ -179,5 +180,5 @@ function ldraw_lib__33051() = [
   [5,24,-3.1,-1.6,0,0,-2.6,0,-2.7,-1.4,-1.5,-2.7,-1.4,1.5],
 ];
 module ldraw_lib__33051(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__33051(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__33051(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__33051(line=0.2);

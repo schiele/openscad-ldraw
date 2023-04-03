@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/2-4ring4.scad>
 use <../p/3-4ring5.scad>
 use <s/11014s01.scad>
-function ldraw_lib__11014p01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__11014p01(realsolid=false) = [
 // 0 ~Electric Mindstorms EV3 Colour Sensor Opto Support with Red Edge
 // 0 Name: 11014p01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -23,11 +24,11 @@ function ldraw_lib__11014p01() = [
 // 0 // Part inside sensor is highly simplified
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\11014s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__11014s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__11014s01(realsolid)],
 // 1 4 0 0 0 -1.76777 0 -1.76777 1.76777 0 -1.76777 0 1 0 3-4ring5.dat
-  [1,4,0,0,0,-1.76777,0,-1.76777,1.76777,0,-1.76777,0,1,0, ldraw_lib__3_4ring5()],
+  [1,4,0,0,0,-1.76777,0,-1.76777,1.76777,0,-1.76777,0,1,0, ldraw_lib__3_4ring5(realsolid)],
 // 1 4 0 13 0 2.15 0 0 0 0 2.15 0 1 0 2-4ring4.dat
-  [1,4,0,13,0,2.15,0,0,0,0,2.15,0,1,0, ldraw_lib__2_4ring4()],
+  [1,4,0,13,0,2.15,0,0,0,0,2.15,0,1,0, ldraw_lib__2_4ring4(realsolid)],
 // 4 4 7.946 9.709 0 10.6 10.6 0 8.839 8.839 0 7.819 9.52 0
   [4,4,7.946,9.709,0,10.6,10.6,0,8.839,8.839,0,7.819,9.52,0],
 // 4 4 10.75 13 0 10.6 10.6 0 7.946 9.709 0 8.6 13 0
@@ -38,5 +39,5 @@ function ldraw_lib__11014p01() = [
   [4,4,-8.6,13,0,-7.946,9.709,0,-10.6,10.6,0,-10.75,13,0],
 ];
 module ldraw_lib__11014p01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__11014p01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__11014p01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__11014p01(line=0.2);

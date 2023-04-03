@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3070bs01.scad>
-function ldraw_lib__3070bp02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3070bp02(realsolid=false) = [
 // 0 Tile  1 x  1 with Black "2" Pattern
 // 0 Name: 3070bp02.dat
 // 0 Author: John Riley [jriley]
@@ -19,7 +20,7 @@ function ldraw_lib__3070bp02() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3070bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3070bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3070bs01(realsolid)],
 // 4 0 -1.458 0 -4.192 -3.958 0 -3.899 -4.217 0 -4.662 -4.388 0 -5.512
   [4,0,-1.458,0,-4.192,-3.958,0,-3.899,-4.217,0,-4.662,-4.388,0,-5.512],
 // 4 0 -3.578 0 -3.173 -3.958 0 -3.899 -1.458 0 -4.192 -1.317 0 -3.782
@@ -181,5 +182,5 @@ function ldraw_lib__3070bp02() = [
 // 0
 ];
 module ldraw_lib__3070bp02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3070bp02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3070bp02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3070bp02(line=0.2);

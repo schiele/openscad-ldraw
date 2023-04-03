@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/48/4-4cylo.scad>
 use <../p/48/4-4disc.scad>
 use <../p/stud4.scad>
-function ldraw_lib__11252() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__11252(realsolid=false) = [
 // 0 Minifig Tray Oval
 // 0 Name: 11252.dat
 // 0 Author: Owen Burgoyne [C3POwen]
@@ -22,17 +23,17 @@ function ldraw_lib__11252() = [
 // 
 // 
 // 1 16 0 -4 0 1 0 0 0 -1 0 0 0 1 stud4.dat
-  [1,16,0,-4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4()],
+  [1,16,0,-4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4(realsolid)],
 // 1 16 0 -4 0 26.5 0 0 0 -1 0 0 0 18 48\4-4disc.dat
-  [1,16,0,-4,0,26.5,0,0,0,-1,0,0,0,18, ldraw_lib__48__4_4disc()],
+  [1,16,0,-4,0,26.5,0,0,0,-1,0,0,0,18, ldraw_lib__48__4_4disc(realsolid)],
 // 1 16 0 -8 0 0 0 -26.5 0 4 0 18 0 0 48\4-4cylo.dat
-  [1,16,0,-8,0,0,0,-26.5,0,4,0,18,0,0, ldraw_lib__48__4_4cylo()],
+  [1,16,0,-8,0,0,0,-26.5,0,4,0,18,0,0, ldraw_lib__48__4_4cylo(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -8 0 0 0 -24.5 0 1 0 16 0 0 48\4-4cylo.dat
-  [1,16,0,-8,0,0,0,-24.5,0,1,0,16,0,0, ldraw_lib__48__4_4cylo()],
+  [1,16,0,-8,0,0,0,-24.5,0,1,0,16,0,0, ldraw_lib__48__4_4cylo(realsolid)],
 // 1 16 0 -7 0 0 0 -24.5 0 1 0 16 0 0 48\4-4disc.dat
-  [1,16,0,-7,0,0,0,-24.5,0,1,0,16,0,0, ldraw_lib__48__4_4disc()],
+  [1,16,0,-7,0,0,0,-24.5,0,1,0,16,0,0, ldraw_lib__48__4_4disc(realsolid)],
 // 
 // 4 16 -24.5 -8 0 -24.2893 -8 2.088 -26.2721 -8 2.349 -26.5 -8 0
   [4,16,-24.5,-8,0,-24.2893,-8,2.088,-26.2721,-8,2.349,-26.5,-8,0],
@@ -135,5 +136,5 @@ function ldraw_lib__11252() = [
   [4,16,-26.5,-8,0,-26.2721,-8,-2.349,-24.2893,-8,-2.088,-24.5,-8,0],
 ];
 module ldraw_lib__11252(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__11252(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__11252(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__11252(line=0.2);

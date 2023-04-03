@@ -5,7 +5,8 @@ use <../../p/1-4edge.scad>
 use <../../p/1-4ndis.scad>
 use <../../p/rect2p.scad>
 use <../../p/rect3.scad>
-function ldraw_lib__s__48138s04() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__48138s04(realsolid=false) = [
 // 0 ~Quatro Rib - Freestanding
 // 0 Name: s\48138s04.dat
 // 0 Author: Andy Westrate [westrate]
@@ -21,7 +22,7 @@ function ldraw_lib__s__48138s04() = [
 // 
 // 0 // outside
 // 1 16 0 51 23.75 0 0 -1.5 -38 0 0 0 1 0 rect2p.dat
-  [1,16,0,51,23.75,0,0,-1.5,-38,0,0,0,1,0, ldraw_lib__rect2p()],
+  [1,16,0,51,23.75,0,0,-1.5,-38,0,0,0,1,0, ldraw_lib__rect2p(realsolid)],
 // 0 // side
 // 4 16 -1.5 3 23.75 -1.5 3 33 -1.5 6 36 -1.5 13 23.75
   [4,16,-1.5,3,23.75,-1.5,3,33,-1.5,6,36,-1.5,13,23.75],
@@ -46,35 +47,35 @@ function ldraw_lib__s__48138s04() = [
 // 
 // 0 // bottom inside curve
 // 1 16 1.5 89 29.75 0 -3 0 6 0 0 0 0 -6 1-4cylo.dat
-  [1,16,1.5,89,29.75,0,-3,0,6,0,0,0,0,-6, ldraw_lib__1_4cylo()],
+  [1,16,1.5,89,29.75,0,-3,0,6,0,0,0,0,-6, ldraw_lib__1_4cylo(realsolid)],
 // 1 16 1.5 89 29.75 0 -1 0 6 0 0 0 0 -6 1-4chrd.dat
-  [1,16,1.5,89,29.75,0,-1,0,6,0,0,0,0,-6, ldraw_lib__1_4chrd()],
+  [1,16,1.5,89,29.75,0,-1,0,6,0,0,0,0,-6, ldraw_lib__1_4chrd(realsolid)],
 // 1 16 -1.5 89 29.75 0 1 0 6 0 0 0 0 -6 1-4chrd.dat
-  [1,16,-1.5,89,29.75,0,1,0,6,0,0,0,0,-6, ldraw_lib__1_4chrd()],
+  [1,16,-1.5,89,29.75,0,1,0,6,0,0,0,0,-6, ldraw_lib__1_4chrd(realsolid)],
 // 0 // bottom
 // 1 16 0 95 32.875 -1.5 0 0 0 -1 0 0 0 3.125 rect3.dat
-  [1,16,0,95,32.875,-1.5,0,0,0,-1,0,0,0,3.125, ldraw_lib__rect3()],
+  [1,16,0,95,32.875,-1.5,0,0,0,-1,0,0,0,3.125, ldraw_lib__rect3(realsolid)],
 // 
 // 0 // top outside curve
 // 1 16 -1.5 6 33 0 1 0 -3 0 0 0 0 3 1-4edge.dat
-  [1,16,-1.5,6,33,0,1,0,-3,0,0,0,0,3, ldraw_lib__1_4edge()],
+  [1,16,-1.5,6,33,0,1,0,-3,0,0,0,0,3, ldraw_lib__1_4edge(realsolid)],
 // 1 16 1.5 6 33 0 1 0 -3 0 0 0 0 3 1-4edge.dat
-  [1,16,1.5,6,33,0,1,0,-3,0,0,0,0,3, ldraw_lib__1_4edge()],
+  [1,16,1.5,6,33,0,1,0,-3,0,0,0,0,3, ldraw_lib__1_4edge(realsolid)],
 // 1 16 -1.5 6 33 0 1 0 -3 0 0 0 0 3 1-4chrd.dat
-  [1,16,-1.5,6,33,0,1,0,-3,0,0,0,0,3, ldraw_lib__1_4chrd()],
+  [1,16,-1.5,6,33,0,1,0,-3,0,0,0,0,3, ldraw_lib__1_4chrd(realsolid)],
 // 1 16 1.5 6 33 0 -1 0 -3 0 0 0 0 3 1-4chrd.dat
-  [1,16,1.5,6,33,0,-1,0,-3,0,0,0,0,3, ldraw_lib__1_4chrd()],
+  [1,16,1.5,6,33,0,-1,0,-3,0,0,0,0,3, ldraw_lib__1_4chrd(realsolid)],
 // 
 // 0 // top inside curve
 // 1 16 -1.5 13 11.75 0 1 0 -10 0 0 0 0 12 1-4ndis.dat
-  [1,16,-1.5,13,11.75,0,1,0,-10,0,0,0,0,12, ldraw_lib__1_4ndis()],
+  [1,16,-1.5,13,11.75,0,1,0,-10,0,0,0,0,12, ldraw_lib__1_4ndis(realsolid)],
 // 1 16 1.5 13 11.75 0 -1 0 -10 0 0 0 0 12 1-4ndis.dat
-  [1,16,1.5,13,11.75,0,-1,0,-10,0,0,0,0,12, ldraw_lib__1_4ndis()],
+  [1,16,1.5,13,11.75,0,-1,0,-10,0,0,0,0,12, ldraw_lib__1_4ndis(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 1.5 13 11.75 0 -3 0 -10 0 0 0 0 12 1-4cylo.dat
-  [1,16,1.5,13,11.75,0,-3,0,-10,0,0,0,0,12, ldraw_lib__1_4cylo()],
+  [1,16,1.5,13,11.75,0,-3,0,-10,0,0,0,0,12, ldraw_lib__1_4cylo(realsolid)],
 ];
 module ldraw_lib__s__48138s04(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__48138s04(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__48138s04(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__48138s04(line=0.2);

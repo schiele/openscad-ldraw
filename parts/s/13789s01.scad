@@ -3,7 +3,8 @@ use <../../p/2-4con2.scad>
 use <../../p/2-4cyli.scad>
 use <../../p/2-4cyls.scad>
 use <../../p/2-4edge.scad>
-function ldraw_lib__s__13789s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__13789s01(realsolid=false) = [
 // 0 ~Minifig Police Helmet Half
 // 0 Name: s\13789s01.dat
 // 0 Author: Stan Isachenko [angmarec]
@@ -18,19 +19,19 @@ function ldraw_lib__s__13789s01() = [
 // 
 // 
 // 1 16 0 8.9342 0 0 0 13 -1.8146 1 0 -13 0 0 2-4edge.dat
-  [1,16,0,8.9342,0,0,0,13,-1.8146,1,0,-13,0,0, ldraw_lib__2_4edge()],
+  [1,16,0,8.9342,0,0,0,13,-1.8146,1,0,-13,0,0, ldraw_lib__2_4edge(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 7.119 0 0 0 13 0 1.8146 0 -13 0 0 2-4cyls.dat
-  [1,16,0,7.119,0,0,0,13,0,1.8146,0,-13,0,0, ldraw_lib__2_4cyls()],
+  [1,16,0,7.119,0,0,0,13,0,1.8146,0,-13,0,0, ldraw_lib__2_4cyls(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 7.119 0 0 0 13 0 -3.119 0 -13 0 0 2-4cyli.dat
-  [1,16,0,7.119,0,0,0,13,0,-3.119,0,-13,0,0, ldraw_lib__2_4cyli()],
+  [1,16,0,7.119,0,0,0,13,0,-3.119,0,-13,0,0, ldraw_lib__2_4cyli(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 4 0 0 0 4.33333 0 -14 0 4.33333 0 0 2-4con2.dat
-  [1,16,0,4,0,0,0,4.33333,0,-14,0,4.33333,0,0, ldraw_lib__2_4con2()],
+  [1,16,0,4,0,0,0,4.33333,0,-14,0,4.33333,0,0, ldraw_lib__2_4con2(realsolid)],
 // 5 24 0 4 -13 4.9751 4 -12.0107 4.9751 7.119 -12.0107 0 -10 -8.6667
   [5,24,0,4,-13,4.9751,4,-12.0107,4.9751,7.119,-12.0107,0,-10,-8.6667],
 // 5 24 4.9751 4 -12.0107 9.1923 4 -9.1923 9.1923 7.119 -9.1923 3.3167 -10 -8.0071
@@ -869,5 +870,5 @@ function ldraw_lib__s__13789s01() = [
   [5,24,0,9.387,-21.968,0,7.1196,-13,4.9751,7.2577,-12.0107,-10.017,8.826,-16.655],
 ];
 module ldraw_lib__s__13789s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__13789s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__13789s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__13789s01(line=0.2);

@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/rect1.scad>
 use <s/6153as01.scad>
-function ldraw_lib__6153ap7a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6153ap7a(realsolid=false) = [
 // 0 Wedge  6 x  4 without Stud Notches with Arctic Pattern
 // 0 Name: 6153ap7a.dat
 // 0 Author: Thomas Burger [grapeape]
@@ -23,12 +24,12 @@ function ldraw_lib__6153ap7a() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\6153as01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6153as01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6153as01(realsolid)],
 // 0 // side quads
 // 1 16 30 10 -20 -10 -1 0 0 0 10 -30 0 -20 rect1.dat
-  [1,16,30,10,-20,-10,-1,0,0,0,10,-30,0,-20, ldraw_lib__rect1()],
+  [1,16,30,10,-20,-10,-1,0,0,0,10,-30,0,-20, ldraw_lib__rect1(realsolid)],
 // 1 16 -30 10 -20 10 1 0 0 0 -10 -30 0 20 rect1.dat
-  [1,16,-30,10,-20,10,1,0,0,0,-10,-30,0,20, ldraw_lib__rect1()],
+  [1,16,-30,10,-20,10,1,0,0,0,-10,-30,0,20, ldraw_lib__rect1(realsolid)],
 // 0 // Pattern
 // 4 0 17.5 12.0748 -54.1495 17.5 7.379 -44.758 16.5 7.8262 -45.6525 16.5 11.6276 -53.2551
   [4,0,17.5,12.0748,-54.1495,17.5,7.379,-44.758,16.5,7.8262,-45.6525,16.5,11.6276,-53.2551],
@@ -429,5 +430,5 @@ function ldraw_lib__6153ap7a() = [
   [4,9,2.5,5.5902,-41.1803,4.75,6.4846,-42.9692,7.8,4.338,-38.6759,0.75,4.4721,-38.9443],
 ];
 module ldraw_lib__6153ap7a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6153ap7a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6153ap7a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6153ap7a(line=0.2);

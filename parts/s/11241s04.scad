@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__11241s04() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__11241s04(realsolid=false) = [
 // 0 ~Animal Foal Friends Rear
 // 0 Name: s\11241s04.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -199,5 +200,5 @@ function ldraw_lib__s__11241s04() = [
   [5,24,0,-42.997,29.922,-2.713,-42.51,30.083,0.32,-45.327,29.416,-2.124,-40.966,28.217],
 ];
 module ldraw_lib__s__11241s04(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__11241s04(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__11241s04(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__11241s04(line=0.2);

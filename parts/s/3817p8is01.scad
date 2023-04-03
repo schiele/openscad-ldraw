@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__3817p8is01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__3817p8is01(realsolid=false) = [
 // 0 ~Minifig Leg Left Front Surface with 'EMMET' Badge Pattern
 // 0 Name: s\3817p8is01.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -564,5 +565,5 @@ function ldraw_lib__s__3817p8is01() = [
   [3,16,4.617,5.924,-6.56,2,6.74,-6,5,6,-6.508],
 ];
 module ldraw_lib__s__3817p8is01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__3817p8is01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__3817p8is01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__3817p8is01(line=0.2);

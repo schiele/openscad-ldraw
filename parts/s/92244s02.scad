@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/4-4edge.scad>
-function ldraw_lib__s__92244s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__92244s02(realsolid=false) = [
 // 0 ~Figure Friends Female Left Arm Upper
 // 0 Name: s\92244s02.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -15,7 +16,7 @@ function ldraw_lib__s__92244s02() = [
 // 
 // 
 // 1 16 0 0 0 0 1 0 0 0 4 -4 0 0 4-4edge.dat
-  [1,16,0,0,0,0,1,0,0,0,4,-4,0,0, ldraw_lib__4_4edge()],
+  [1,16,0,0,0,0,1,0,0,0,4,-4,0,0, ldraw_lib__4_4edge(realsolid)],
 // 3 16 0.304 1.918 4.202 0 2.828 2.828 0 1.531 3.696
   [3,16,0.304,1.918,4.202,0,2.828,2.828,0,1.531,3.696],
 // 3 16 0.304 1.918 4.202 0 1.531 3.696 0 0 4
@@ -722,5 +723,5 @@ function ldraw_lib__s__92244s02() = [
   [5,24,2.5577,7.6791,0.2625,1.883,6.592,-0.205,1.4593,7.9195,1.2117,3.066,5.982,-0.865],
 ];
 module ldraw_lib__s__92244s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__92244s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__92244s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__92244s02(line=0.2);

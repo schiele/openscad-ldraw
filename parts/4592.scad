@@ -4,7 +4,8 @@ use <../p/4-4ering.scad>
 use <../p/box4o4a.scad>
 use <../p/bump5000.scad>
 use <../p/stud4a.scad>
-function ldraw_lib__4592() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4592(realsolid=false) = [
 // 0 Hinge Control Stick Base
 // 0 Name: 4592.dat
 // 0 Author: Steve Bliss [sbliss]
@@ -27,13 +28,13 @@ function ldraw_lib__4592() = [
 // 
 // 0 // Base cylinder
 // 1 16 0 2 0 -1 0 0 0 -1.5 0 0 0 1 stud4a.dat
-  [1,16,0,2,0,-1,0,0,0,-1.5,0,0,0,1, ldraw_lib__stud4a()],
+  [1,16,0,2,0,-1,0,0,0,-1.5,0,0,0,1, ldraw_lib__stud4a(realsolid)],
 // 1 16 0 2 0 6 0 0 0 1 0 0 0 6 4-4edge.dat
-  [1,16,0,2,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4edge()],
+  [1,16,0,2,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4edge(realsolid)],
 // 
 // 0 // Underside slotted disc
 // 1 16 0 2 0 6 0 0 0 -1 0 0 0 6 4-4ering.dat
-  [1,16,0,2,0,6,0,0,0,-1,0,0,0,6, ldraw_lib__4_4ering()],
+  [1,16,0,2,0,6,0,0,0,-1,0,0,0,6, ldraw_lib__4_4ering(realsolid)],
 // 3 16 5.5434 2 2.2962 6 2 0 5.5434 2 -2.2962
   [3,16,5.5434,2,2.2962,6,2,0,5.5434,2,-2.2962],
 // 4 16 2 2 -5 2 2 5 4.2426 2 4.2426 4.2426 2 -4.2426
@@ -217,7 +218,7 @@ function ldraw_lib__4592() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 2 0 2 0 0 0 -2 0 0 0 5 box4o4a.dat
-  [1,16,0,2,0,2,0,0,0,-2,0,0,0,5, ldraw_lib__box4o4a()],
+  [1,16,0,2,0,2,0,0,0,-2,0,0,0,5, ldraw_lib__box4o4a(realsolid)],
 // 4 16 2 0 -5 2 0 -7.127 2 -1.319 -6.754 2 -2.435 -6.007
   [4,16,2,0,-5,2,0,-7.127,2,-1.319,-6.754,2,-2.435,-6.007],
 // 4 16 2 -4.754 -3.319 2 -5.392 -1.064 2 -5.392 1.064 2 -4.754 3.319
@@ -247,7 +248,7 @@ function ldraw_lib__4592() = [
 // 4 16 -2 -2.435 6.007 -2 -4.007 4.435 -2 -4.007 -4.435 -2 -2.435 -6.007
   [4,16,-2,-2.435,6.007,-2,-4.007,4.435,-2,-4.007,-4.435,-2,-2.435,-6.007],
 // 1 16 -2 -2 0 0 -1 0 3 0 0 0 0 3 bump5000.dat
-  [1,16,-2,-2,0,0,-1,0,3,0,0,0,0,3, ldraw_lib__bump5000()],
+  [1,16,-2,-2,0,0,-1,0,3,0,0,0,0,3, ldraw_lib__bump5000(realsolid)],
 // 
 // 2 24 0 0 -7.603 1.064 0 -7.392
   [2,24,0,0,-7.603,1.064,0,-7.392],
@@ -521,5 +522,5 @@ function ldraw_lib__4592() = [
   [5,24,3.0616,2,-7.3912,5.6568,2,-5.6568,3.0616,8,-7.3912,3.512,-1.512,-6.272],
 ];
 module ldraw_lib__4592(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4592(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4592(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4592(line=0.2);

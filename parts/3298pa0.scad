@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3298s01.scad>
-function ldraw_lib__3298pa0() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3298pa0(realsolid=false) = [
 // 0 Slope Brick 33  3 x  2 with Louvre Pattern
 // 0 Name: 3298pa0.dat
 // 0 Author: Tim Lampmann [L4mpi]
@@ -17,7 +18,7 @@ function ldraw_lib__3298pa0() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3298s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3298s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3298s01(realsolid)],
 // 
 // 4 0 -20 .224 -10.447 -10 2.46 -14.919 -19.5 0 -10 -20 0 -10
   [4,0,-20,.224,-10.447,-10,2.46,-14.919,-19.5,0,-10,-20,0,-10],
@@ -407,5 +408,5 @@ function ldraw_lib__3298pa0() = [
   [4,83,11,9.615,-29.23,12.6,10.733,-31.466,13.484,9.933,-29.867,11,8.944,-27.889],
 ];
 module ldraw_lib__3298pa0(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3298pa0(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3298pa0(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3298pa0(line=0.2);

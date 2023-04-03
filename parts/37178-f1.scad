@@ -2,7 +2,8 @@ use <../lib.scad>
 use <37178k01.scad>
 use <37178k02.scad>
 use <4449k01.scad>
-function ldraw_lib__37178_f1() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__37178_f1(realsolid=false) = [
 // 0 Minifig Suitcase with Long Handle (Closed)
 // 0 Name: 37178-f1.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -19,12 +20,12 @@ function ldraw_lib__37178_f1() = [
 // 
 // 
 // 1 16 0 34.25 -4.75 -1 0 0 0 0 -1 0 -1 0 37178k02.dat
-  [1,16,0,34.25,-4.75,-1,0,0,0,0,-1,0,-1,0, ldraw_lib__37178k02()],
+  [1,16,0,34.25,-4.75,-1,0,0,0,0,-1,0,-1,0, ldraw_lib__37178k02(realsolid)],
 // 1 16 0 34.25 -4.25 1 0 0 0 0 -1 0 1 0 37178k01.dat
-  [1,16,0,34.25,-4.25,1,0,0,0,0,-1,0,1,0, ldraw_lib__37178k01()],
+  [1,16,0,34.25,-4.25,1,0,0,0,0,-1,0,1,0, ldraw_lib__37178k01(realsolid)],
 // 1 16 25.8 34.25 -4.5 0 -1 0 -1 0 0 0 0 -.7 4449k01.dat
-  [1,16,25.8,34.25,-4.5,0,-1,0,-1,0,0,0,0,-.7, ldraw_lib__4449k01()],
+  [1,16,25.8,34.25,-4.5,0,-1,0,-1,0,0,0,0,-.7, ldraw_lib__4449k01(realsolid)],
 ];
 module ldraw_lib__37178_f1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__37178_f1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__37178_f1(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__37178_f1(line=0.2);

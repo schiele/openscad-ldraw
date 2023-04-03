@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/box2-5.scad>
 use <../p/rect.scad>
 use <s/32058p01s01.scad>
-function ldraw_lib__32058p01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__32058p01(realsolid=false) = [
 // 0 ~Electric Mindstorms RCX Module with AC Socket - Top Housing with "RCX 1.0" Pattern
 // 0 Name: 32058p01.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -20,7 +21,7 @@ function ldraw_lib__32058p01() = [
 // 0 // Using font: "Arial Rounded MT Bold" style: "Regular" size: 50pt
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\32058p01s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__32058p01s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__32058p01s01(realsolid)],
 // 0 // A/C Plug-in hole
 // 4 16 12 34 120 12 4 116 12 2 116 12 0 120
   [4,16,12,34,120,12,4,116,12,2,116,12,0,120],
@@ -47,11 +48,11 @@ function ldraw_lib__32058p01() = [
 // 2 24 -12 4 116 -12 34 116
   [2,24,-12,4,116,-12,34,116],
 // 1 16 0 2 112.5 12 0 0 0 -1 1 0 0 3.5 box2-5.dat
-  [1,16,0,2,112.5,12,0,0,0,-1,1,0,0,3.5, ldraw_lib__box2_5()],
+  [1,16,0,2,112.5,12,0,0,0,-1,1,0,0,3.5, ldraw_lib__box2_5(realsolid)],
 // 4 16 -12 0 102 12 0 102 12 0 109 -12 0 109
   [4,16,-12,0,102,12,0,102,12,0,109,-12,0,109],
 // 1 16 0 34 118 12 0 0 0 1 0 0 0 2 rect.dat
-  [1,16,0,34,118,12,0,0,0,1,0,0,0,2, ldraw_lib__rect()],
+  [1,16,0,34,118,12,0,0,0,1,0,0,0,2, ldraw_lib__rect(realsolid)],
 // 4 16 12 4 116 12 4 102 -12 4 102 -12 4 116
   [4,16,12,4,116,12,4,102,-12,4,102,-12,4,116],
 // 
@@ -1986,5 +1987,5 @@ function ldraw_lib__32058p01() = [
   [3,16,-65.167,2.067,86.979,-65.174,2.07,92.789,-65.229,2.092,87.753],
 ];
 module ldraw_lib__32058p01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__32058p01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__32058p01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__32058p01(line=0.2);

@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <13710gs02.scad>
-function ldraw_lib__s__13710gs01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__13710gs01(realsolid=false) = [
 // 0 ~Sticker Bottom for Technic Panel Fairing Smooth (Long) Flat
 // 0 Name: s\13710gs01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -17,7 +18,7 @@ function ldraw_lib__s__13710gs01() = [
 // 0 // Bottom surface
 // 
 // 1 16 0 -0.25 0 1 0 0 0 -1 0 0 0 1 s\13710gs02.dat
-  [1,16,0,-0.25,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__s__13710gs02()],
+  [1,16,0,-0.25,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__s__13710gs02(realsolid)],
 // 0 // Edge surface
 // 4 16 -15.378 0 101.529 -16.097 0 101.427 -16.097 -0.25 101.427 -15.378 -0.25 101.529
   [4,16,-15.378,0,101.529,-16.097,0,101.427,-16.097,-0.25,101.427,-15.378,-0.25,101.529],
@@ -191,5 +192,5 @@ function ldraw_lib__s__13710gs01() = [
   [5,24,-14.602,0,101.275,-14.602,-0.25,101.275,-13.588,0,100.6,-15.378,0,101.529],
 ];
 module ldraw_lib__s__13710gs01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__13710gs01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__13710gs01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__13710gs01(line=0.2);

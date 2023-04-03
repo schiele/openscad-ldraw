@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/30119s01.scad>
-function ldraw_lib__30119() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__30119(realsolid=false) = [
 // 0 Wing  8 x  4 -  2 x  3.333 Down
 // 0 Name: 30119.dat
 // 0 Author: Lutz Uhlmann [El-Lutzo]
@@ -28,8 +29,8 @@ function ldraw_lib__30119() = [
 // 4 16 20 32 -64.4444 -20 32 -64.4444 -20 72 -120 20 72 -120
   [4,16,20,32,-64.4444,-20,32,-64.4444,-20,72,-120,20,72,-120],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\30119s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30119s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30119s01(realsolid)],
 ];
 module ldraw_lib__30119(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__30119(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__30119(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__30119(line=0.2);

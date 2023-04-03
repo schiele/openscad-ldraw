@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <4073.scad>
-function ldraw_lib__3005741() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3005741(realsolid=false) = [
 // 0 ~_Plate  1 x  1 Round Trans Red (Obsolete)
 // 0 Name: 3005741.dat
 // 0 Author: Michael Heidemann [mikeheide]
@@ -20,8 +21,8 @@ function ldraw_lib__3005741() = [
 // 0 // colouring of the part (Trans Red).
 // 
 // 1 36 0 0 0 1 0 0 0 1 0 0 0 1 4073.dat
-  [1,36,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4073()],
+  [1,36,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4073(realsolid)],
 ];
 module ldraw_lib__3005741(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3005741(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3005741(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3005741(line=0.2);

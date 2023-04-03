@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__169675as01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__169675as01(realsolid=false) = [
 // 0 ~Blue Globe, Yellow Box and Curved Arrows
 // 0 Name: s\169675as01.dat
 // 0 Author: Ulrich Röder [UR]
@@ -1557,5 +1558,5 @@ function ldraw_lib__s__169675as01() = [
   [4,0,-7.5,0,2.892,-6.854,0,3.526,-6.821,0,4.141,-7.168,0,3.663],
 ];
 module ldraw_lib__s__169675as01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__169675as01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__169675as01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__169675as01(line=0.2);

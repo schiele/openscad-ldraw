@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <3350p03.scad>
-function ldraw_lib__3350p04() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3350p04(realsolid=false) = [
 // 0 Roadsign Round with No Waiting Right Pattern
 // 0 Name: 3350p04.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -15,9 +16,9 @@ function ldraw_lib__3350p04() = [
 // 
 // 
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 3350p03.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__3350p03()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__3350p03(realsolid)],
 // 0 //
 ];
 module ldraw_lib__3350p04(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3350p04(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3350p04(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3350p04(line=0.2);

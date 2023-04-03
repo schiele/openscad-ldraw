@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <58121.scad>
 use <u9190c02.scad>
-function ldraw_lib__58121c01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__58121c01(realsolid=false) = [
 // 0 Electric Power Functions XL Motor with Coiled Cable
 // 0 Name: 58121c01.dat
 // 0 Author: Johann Eisner [technicbasics]
@@ -16,10 +17,10 @@ function ldraw_lib__58121c01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 58121.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__58121()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__58121(realsolid)],
 // 1 0 0 -23.5 116 1 0 0 0 1 0 0 0 1 u9190c02.dat
-  [1,0,0,-23.5,116,1,0,0,0,1,0,0,0,1, ldraw_lib__u9190c02()],
+  [1,0,0,-23.5,116,1,0,0,0,1,0,0,0,1, ldraw_lib__u9190c02(realsolid)],
 ];
 module ldraw_lib__58121c01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__58121c01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__58121c01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__58121c01(line=0.2);

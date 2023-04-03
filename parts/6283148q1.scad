@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/1-4chrd.scad>
 use <../p/1-4cyli.scad>
-function ldraw_lib__6283148q1() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6283148q1(realsolid=false) = [
 // 0 Sticker  0.8 x  5.8 with 2 Black Triangles on Olive Green Up Left
 // 0 Name: 6283148q1.dat
 // 0 Author: Chris Dee [cwdee]
@@ -18,22 +19,22 @@ function ldraw_lib__6283148q1() = [
 // 
 // 
 // 1 16 56 0 6 0 0 2 0 -1 0 2 0 0 1-4chrd.dat
-  [1,16,56,0,6,0,0,2,0,-1,0,2,0,0, ldraw_lib__1_4chrd()],
+  [1,16,56,0,6,0,0,2,0,-1,0,2,0,0, ldraw_lib__1_4chrd(realsolid)],
 // 1 16 -56 0 6 0 0 -2 0 -1 0 2 0 0 1-4chrd.dat
-  [1,16,-56,0,6,0,0,-2,0,-1,0,2,0,0, ldraw_lib__1_4chrd()],
+  [1,16,-56,0,6,0,0,-2,0,-1,0,2,0,0, ldraw_lib__1_4chrd(realsolid)],
 // 1 16 56 0 -6 0 0 2 0 -1 0 -2 0 0 1-4chrd.dat
-  [1,16,56,0,-6,0,0,2,0,-1,0,-2,0,0, ldraw_lib__1_4chrd()],
+  [1,16,56,0,-6,0,0,2,0,-1,0,-2,0,0, ldraw_lib__1_4chrd(realsolid)],
 // 1 16 -56 0 -6 0 0 -2 0 -1 0 -2 0 0 1-4chrd.dat
-  [1,16,-56,0,-6,0,0,-2,0,-1,0,-2,0,0, ldraw_lib__1_4chrd()],
+  [1,16,-56,0,-6,0,0,-2,0,-1,0,-2,0,0, ldraw_lib__1_4chrd(realsolid)],
 // 
 // 1 16 56 0 6 0 0 2 0 -0.25 0 2 0 0 1-4cyli.dat
-  [1,16,56,0,6,0,0,2,0,-0.25,0,2,0,0, ldraw_lib__1_4cyli()],
+  [1,16,56,0,6,0,0,2,0,-0.25,0,2,0,0, ldraw_lib__1_4cyli(realsolid)],
 // 1 16 -56 0 6 0 0 -2 0 -0.25 0 2 0 0 1-4cyli.dat
-  [1,16,-56,0,6,0,0,-2,0,-0.25,0,2,0,0, ldraw_lib__1_4cyli()],
+  [1,16,-56,0,6,0,0,-2,0,-0.25,0,2,0,0, ldraw_lib__1_4cyli(realsolid)],
 // 1 16 56 0 -6 0 0 2 0 -0.25 0 -2 0 0 1-4cyli.dat
-  [1,16,56,0,-6,0,0,2,0,-0.25,0,-2,0,0, ldraw_lib__1_4cyli()],
+  [1,16,56,0,-6,0,0,2,0,-0.25,0,-2,0,0, ldraw_lib__1_4cyli(realsolid)],
 // 1 16 -56 0 -6 0 0 -2 0 -0.25 0 -2 0 0 1-4cyli.dat
-  [1,16,-56,0,-6,0,0,-2,0,-0.25,0,-2,0,0, ldraw_lib__1_4cyli()],
+  [1,16,-56,0,-6,0,0,-2,0,-0.25,0,-2,0,0, ldraw_lib__1_4cyli(realsolid)],
 // 
 // 4 16 -58 0 -6 -58 0 6 58 0 6 58 0 -6
   [4,16,-58,0,-6,-58,0,6,58,0,6,58,0,-6],
@@ -52,13 +53,13 @@ function ldraw_lib__6283148q1() = [
 // 
 // 0 // Triangles
 // 1 0 56 -0.25 6 0 0 2 0 1 0 2 0 0 1-4chrd.dat
-  [1,0,56,-0.25,6,0,0,2,0,1,0,2,0,0, ldraw_lib__1_4chrd()],
+  [1,0,56,-0.25,6,0,0,2,0,1,0,2,0,0, ldraw_lib__1_4chrd(realsolid)],
 // 1 0 -56 -0.25 6 0 0 -2 0 1 0 2 0 0 1-4chrd.dat
-  [1,0,-56,-0.25,6,0,0,-2,0,1,0,2,0,0, ldraw_lib__1_4chrd()],
+  [1,0,-56,-0.25,6,0,0,-2,0,1,0,2,0,0, ldraw_lib__1_4chrd(realsolid)],
 // 1 0 56 -0.25 -6 0 0 2 0 1 0 -2 0 0 1-4chrd.dat
-  [1,0,56,-0.25,-6,0,0,2,0,1,0,-2,0,0, ldraw_lib__1_4chrd()],
+  [1,0,56,-0.25,-6,0,0,2,0,1,0,-2,0,0, ldraw_lib__1_4chrd(realsolid)],
 // 1 0 -56 -0.25 -6 0 0 -2 0 1 0 -2 0 0 1-4chrd.dat
-  [1,0,-56,-0.25,-6,0,0,-2,0,1,0,-2,0,0, ldraw_lib__1_4chrd()],
+  [1,0,-56,-0.25,-6,0,0,-2,0,1,0,-2,0,0, ldraw_lib__1_4chrd(realsolid)],
 // 4 0 -58 -0.25 -6 -56 -0.25 -8 -56 -0.25 8 -58 -0.25 6
   [4,0,-58,-0.25,-6,-56,-0.25,-8,-56,-0.25,8,-58,-0.25,6],
 // 3 0 -56 -0.25 -8 -42 -0.25 -8 -56 -0.25 8
@@ -72,5 +73,5 @@ function ldraw_lib__6283148q1() = [
   [4,330,-56,-0.25,8,-42,-0.25,-8,56,-0.25,-8,42,-0.25,8],
 ];
 module ldraw_lib__6283148q1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6283148q1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6283148q1(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6283148q1(line=0.2);

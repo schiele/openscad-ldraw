@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__95342s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__95342s02(realsolid=false) = [
 // 0 ~Animal Chicken Eye
 // 0 Name: s\95342s02.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -53,5 +54,5 @@ function ldraw_lib__s__95342s02() = [
   [5,24,3.266,-37.068,-14.657,3.153,-38.266,-14.655,2.716,-37.617,-15.924,3.274,-37.076,-14.617],
 ];
 module ldraw_lib__s__95342s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__95342s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__95342s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__95342s02(line=0.2);

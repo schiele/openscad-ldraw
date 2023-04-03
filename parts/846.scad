@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4edge.scad>
 use <../p/4-8sphe.scad>
 use <../p/box.scad>
-function ldraw_lib__846() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__846(realsolid=false) = [
 // 0 ~Window  1 x  2 x  1 Classic Glass
 // 0 Name: 846.dat
 // 0 Author: Tore Eriksson [Tore_Eriksson]
@@ -18,14 +19,14 @@ function ldraw_lib__846() = [
 // 
 // 
 // 1 16 0 10 -4 16 0 0 0 0 7 0 -1 0 box.dat
-  [1,16,0,10,-4,16,0,0,0,0,7,0,-1,0, ldraw_lib__box()],
+  [1,16,0,10,-4,16,0,0,0,0,7,0,-1,0, ldraw_lib__box(realsolid)],
 // 1 16 0 3 -4 1 0 0 0 1 0 0 0 1 4-4edge.dat
-  [1,16,0,3,-4,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4edge()],
+  [1,16,0,3,-4,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 3 -4 1 0 0 0 -1 0 0 0 1 4-8sphe.dat
-  [1,16,0,3,-4,1,0,0,0,-1,0,0,0,1, ldraw_lib__4_8sphe()],
+  [1,16,0,3,-4,1,0,0,0,-1,0,0,0,1, ldraw_lib__4_8sphe(realsolid)],
 // 0
 // 
 ];
 module ldraw_lib__846(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__846(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__846(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__846(line=0.2);

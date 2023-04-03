@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <168315e.scad>
-function ldraw_lib__168135e() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__168135e(realsolid=false) = [
 // 0 ~Moved to 168315e
 // 0 Name: 168135e.dat
 // 0 Author: [PTadmin]
@@ -16,8 +17,8 @@ function ldraw_lib__168135e() = [
 // 
 // 0 // Sticker Technic Supercar Mirror
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 168315e.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__168315e()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__168315e(realsolid)],
 ];
 module ldraw_lib__168135e(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__168135e(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__168135e(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__168135e(line=0.2);

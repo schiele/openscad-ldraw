@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/box5.scad>
 use <../p/stud2.scad>
 use <../p/stud3.scad>
-function ldraw_lib__3794a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3794a(realsolid=false) = [
 // 0 Plate  1 x  2 without Groove with 1 Centre Stud
 // 0 Name: 3794a.dat
 // 0 Author: James Jessiman
@@ -27,11 +28,11 @@ function ldraw_lib__3794a() = [
 // 
 // 
 // 1 16 0 4 0 1 0 0 0 -1 0 0 0 1 stud3.dat
-  [1,16,0,4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud3()],
+  [1,16,0,4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud3(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 8 0 16 0 0 0 -4 0 0 0 6 box5.dat
-  [1,16,0,8,0,16,0,0,0,-4,0,0,0,6, ldraw_lib__box5()],
+  [1,16,0,8,0,16,0,0,0,-4,0,0,0,6, ldraw_lib__box5(realsolid)],
 // 0
 // 4 16 20 8 10 16 8 6 -16 8 6 -20 8 10
   [4,16,20,8,10,16,8,6,-16,8,6,-20,8,10],
@@ -42,12 +43,12 @@ function ldraw_lib__3794a() = [
 // 4 16 20 8 -10 16 8 -6 16 8 6 20 8 10
   [4,16,20,8,-10,16,8,-6,16,8,6,20,8,10],
 // 1 16 0 8 0 20 0 0 0 -8 0 0 0 10 box5.dat
-  [1,16,0,8,0,20,0,0,0,-8,0,0,0,10, ldraw_lib__box5()],
+  [1,16,0,8,0,20,0,0,0,-8,0,0,0,10, ldraw_lib__box5(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 stud2.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2(realsolid)],
 // 0
 // 
 ];
 module ldraw_lib__3794a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3794a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3794a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3794a(line=0.2);

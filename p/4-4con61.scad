@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__4_4con61() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4_4con61(realsolid=false) = [
 // 0 Cone 61 x 1.0
 // 0 Name: 4-4con61.dat
 // 0 Author: Michael Heidemann [mikeheide]
@@ -82,5 +83,5 @@ function ldraw_lib__4_4con61() = [
 // 0 //
 ];
 module ldraw_lib__4_4con61(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4_4con61(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4_4con61(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4_4con61(line=0.2);

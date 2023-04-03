@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__190155i() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__190155i(realsolid=false) = [
 // 0 Sticker  2.3 x  2.9 with Shell Logo on Red Background
 // 0 Name: 190155i.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -18,7 +19,7 @@ function ldraw_lib__190155i() = [
 // 
 // 
 // 1 16 0 -0.25 0 29 0 0 0 0.25 0 0 0 23 box5-12.dat
-  [1,16,0,-0.25,0,29,0,0,0,0.25,0,0,0,23, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,29,0,0,0,0.25,0,0,0,23, ldraw_lib__box5_12(realsolid)],
 // 4 14 0 -0.25 -6.35 1.31 -0.25 -14.87 1.93 -0.25 -14.35 1.93 -0.25 -6.61
   [4,14,0,-0.25,-6.35,1.31,-0.25,-14.87,1.93,-0.25,-14.35,1.93,-0.25,-6.61],
 // 4 14 -0.72 -0.25 -15.25 0 -0.25 -15.37 0 -0.25 -6.35 -1.31 -0.25 -14.87
@@ -283,5 +284,5 @@ function ldraw_lib__190155i() = [
   [3,4,29,-0.25,23,0,-0.25,20,4.2,-0.25,19.7],
 ];
 module ldraw_lib__190155i(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__190155i(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__190155i(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__190155i(line=0.2);

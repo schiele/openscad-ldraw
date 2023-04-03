@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__004239a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__004239a(realsolid=false) = [
 // 0 Sticker  3.5 x 14 "USS Constellation" on Scroll
 // 0 Name: 004239a.dat
 // 0 Author: Howard Lande [HowardLande]
@@ -3225,5 +3226,5 @@ function ldraw_lib__004239a() = [
   [5,24,-100.05,-.25,-16.79,-100.05,0,-16.79,-100.95,-.25,-14.08,-99.79,-.25,-19.84],
 ];
 module ldraw_lib__004239a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__004239a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__004239a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__004239a(line=0.2);

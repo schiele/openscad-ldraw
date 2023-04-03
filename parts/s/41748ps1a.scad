@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__41748ps1a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__41748ps1a(realsolid=false) = [
 // 0 ~Wedge  2 x  6 Double Left with AT-TE Pattern - Pattern
 // 0 Name: s\41748ps1a.dat
 // 0 Author: Damien Roux [Darats]
@@ -937,5 +938,5 @@ function ldraw_lib__s__41748ps1a() = [
   [4,320,-9.5,18.96,-97.4,9.5,18.96,-97.4,9.5,12,-80,-9.5,12,-80],
 ];
 module ldraw_lib__s__41748ps1a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__41748ps1a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__41748ps1a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__41748ps1a(line=0.2);

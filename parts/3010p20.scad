@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3010s01.scad>
-function ldraw_lib__3010p20() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3010p20(realsolid=false) = [
 // 0 Brick  1 x  4 with "Café" Pattern
 // 0 Name: 3010p20.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -17,7 +18,7 @@ function ldraw_lib__3010p20() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3010s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3010s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3010s01(realsolid)],
 // 4 13 -22.3 5.4 -10 -23.1 6.1 -10 -21.5 6.7 -10 -21.1 6.2 -10
   [4,13,-22.3,5.4,-10,-23.1,6.1,-10,-21.5,6.7,-10,-21.1,6.2,-10],
 // 4 13 -21.1 4.7 -10 -22.3 5.4 -10 -21.1 6.2 -10 -20 5.4 -10
@@ -1026,5 +1027,5 @@ function ldraw_lib__3010p20() = [
   [4,16,-21.9,16.4,-10,-24.8,14.1,-10,-24.2,15,-10,-23.2,15.9,-10],
 ];
 module ldraw_lib__3010p20(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3010p20(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3010p20(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3010p20(line=0.2);

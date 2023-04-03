@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__6296256k() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6296256k(realsolid=false) = [
 // 0 Sticker  0.8 x  2.9 with "PN 10 271" Licence Plate
 // 0 Name: 6296256k.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -17,7 +18,7 @@ function ldraw_lib__6296256k() = [
 // 
 // 
 // 1 16 0 -0.25 0 29 0 0 0 0.25 0 0 0 8 box5-12.dat
-  [1,16,0,-0.25,0,29,0,0,0,0.25,0,0,0,8, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,29,0,0,0,0.25,0,0,0,8, ldraw_lib__box5_12(realsolid)],
 // 3 0 -21.11 -.25 -.94 -22.52 -.25 -4.16 -21.11 -.25 -4.16
   [3,0,-21.11,-.25,-.94,-22.52,-.25,-4.16,-21.11,-.25,-4.16],
 // 4 0 -22.52 -.25 -4.16 -21.11 -.25 -.94 -21.11 -.25 .51 -22.52 -.25 4.37
@@ -637,5 +638,5 @@ function ldraw_lib__6296256k() = [
 // 
 ];
 module ldraw_lib__6296256k(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6296256k(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6296256k(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6296256k(line=0.2);

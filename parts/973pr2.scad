@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/1-4cyli.scad>
 use <s/973s01.scad>
-function ldraw_lib__973pr2() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__973pr2(realsolid=false) = [
 // 0 Minifig Torso with SW Robe and Rope Belt Pattern
 // 0 Name: 973pr2.dat
 // 0 Author: Damien Roux [Darats]
@@ -18,7 +19,7 @@ function ldraw_lib__973pr2() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01(realsolid)],
 // 0 // Plain back
 // 4 16 19 29 10 19 32 10 -19 32 10 -19 29 10
   [4,16,19,29,10,19,32,10,-19,32,10,-19,29,10],
@@ -28,7 +29,7 @@ function ldraw_lib__973pr2() = [
   [4,16,-14.345,2,10,-12,0,10,12,0,10,14.345,2,10],
 // 0 // Neck mark
 // 1 71 0 -4 0 4.243 0 -4.243 0 -8 0 -4.243 0 -4.243 1-4cyli.dat
-  [1,71,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli()],
+  [1,71,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli(realsolid)],
 // 0 // Pattern
 // 4 0 -4.698 2.315 -10 -4.85 2.304 -10 -4.284 2.968 -10 -4.058 2.995 -10
   [4,0,-4.698,2.315,-10,-4.85,2.304,-10,-4.284,2.968,-10,-4.058,2.995,-10],
@@ -1574,5 +1575,5 @@ function ldraw_lib__973pr2() = [
   [4,72,18.614,27.45,-10,18.731,27.438,-10,18.645,26.939,-10,17.077,27.006,-10],
 ];
 module ldraw_lib__973pr2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__973pr2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__973pr2(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__973pr2(line=0.2);

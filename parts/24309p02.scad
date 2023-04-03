@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/24309s01.scad>
-function ldraw_lib__24309p02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__24309p02(realsolid=false) = [
 // 0 Slope Brick Curved  3 x  2 with Red "S" Pattern
 // 0 Name: 24309p02.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -17,7 +18,7 @@ function ldraw_lib__24309p02() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\24309s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__24309s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__24309s01(realsolid)],
 // 
 // 4 16 -20 0 30 -20 0.587232 18.9266 20 0.587232 18.9266 20 0 30
   [4,16,-20,0,30,-20,0.587232,18.9266,20,0.587232,18.9266,20,0,30],
@@ -236,5 +237,5 @@ function ldraw_lib__24309p02() = [
   [5,24,-20,14.1072,-21.6589,20,14.1072,-21.6589,-20,20,-30,-20,9.1499,-12.4268],
 ];
 module ldraw_lib__24309p02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__24309p02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__24309p02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__24309p02(line=0.2);

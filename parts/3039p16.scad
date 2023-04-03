@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3039s01.scad>
-function ldraw_lib__3039p16() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3039p16(realsolid=false) = [
 // 0 Slope Brick 45  2 x  2 with Headlights Pattern
 // 0 Name: 3039p16.dat
 // 0 Author: Victor Di Rienzo [tatubias]
@@ -15,7 +16,7 @@ function ldraw_lib__3039p16() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3039s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3039s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3039s01(realsolid)],
 // 4 16 20 20 -30 5.2 18.37 -28.37 -5.25 18.38 -28.38 -20 20 -30
   [4,16,20,20,-30,5.2,18.37,-28.37,-5.25,18.38,-28.38,-20,20,-30],
 // 4 16 -0.04 4.65 -14.65 18.03 4.65 -14.65 20 0 -10 -20 0 -10
@@ -156,5 +157,5 @@ function ldraw_lib__3039p16() = [
   [3,0,16.87,11.34,-21.34,16.59,11.71,-21.71,17.85,11.58,-21.58],
 ];
 module ldraw_lib__3039p16(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3039p16(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3039p16(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3039p16(line=0.2);

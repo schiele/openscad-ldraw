@@ -9,7 +9,8 @@ use <../p/4-4ring27.scad>
 use <../p/4-4ring4.scad>
 use <../p/4-4ring7.scad>
 use <s/3664s01.scad>
-function ldraw_lib__3664p05() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3664p05(realsolid=false) = [
 // 0 Duplo Brick  2 x  2 x  2 Curved Top with Black Clock Hands 2:30 Pattern
 // 0 Name: 3664p05.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -27,25 +28,25 @@ function ldraw_lib__3664p05() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3664s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3664s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3664s01(realsolid)],
 // 1 16 0 -24 -40 23 0 0 0 0 -23 0 1 0 4-4ering.dat
-  [1,16,0,-24,-40,23,0,0,0,0,-23,0,1,0, ldraw_lib__4_4ering()],
+  [1,16,0,-24,-40,23,0,0,0,0,-23,0,1,0, ldraw_lib__4_4ering(realsolid)],
 // 1 0 0 -24 -40 1 0 0 0 0 -1 0 1 0 4-4rin23.dat
-  [1,0,0,-24,-40,1,0,0,0,0,-1,0,1,0, ldraw_lib__4_4rin23()],
+  [1,0,0,-24,-40,1,0,0,0,0,-1,0,1,0, ldraw_lib__4_4rin23(realsolid)],
 // 1 0 0 -24 -40 1 0 0 0 0 -1 0 1 0 4-4rin24.dat
-  [1,0,0,-24,-40,1,0,0,0,0,-1,0,1,0, ldraw_lib__4_4rin24()],
+  [1,0,0,-24,-40,1,0,0,0,0,-1,0,1,0, ldraw_lib__4_4rin24(realsolid)],
 // 1 16 0 -24 -40 1 0 0 0 0 -1 0 1 0 4-4rin25.dat
-  [1,16,0,-24,-40,1,0,0,0,0,-1,0,1,0, ldraw_lib__4_4rin25()],
+  [1,16,0,-24,-40,1,0,0,0,0,-1,0,1,0, ldraw_lib__4_4rin25(realsolid)],
 // 1 16 0 -24 -40 1 0 0 0 0 -1 0 1 0 4-4rin26.dat
-  [1,16,0,-24,-40,1,0,0,0,0,-1,0,1,0, ldraw_lib__4_4rin26()],
+  [1,16,0,-24,-40,1,0,0,0,0,-1,0,1,0, ldraw_lib__4_4rin26(realsolid)],
 // 1 0 0 -24 -40 1 0 0 0 0 -1 0 1 0 4-4ring27.dat
-  [1,0,0,-24,-40,1,0,0,0,0,-1,0,1,0, ldraw_lib__4_4ring27()],
+  [1,0,0,-24,-40,1,0,0,0,0,-1,0,1,0, ldraw_lib__4_4ring27(realsolid)],
 // 1 16 0 -24 -40 4 0 0 0 0 -4 0 1 0 4-4ring7.dat
-  [1,16,0,-24,-40,4,0,0,0,0,-4,0,1,0, ldraw_lib__4_4ring7()],
+  [1,16,0,-24,-40,4,0,0,0,0,-4,0,1,0, ldraw_lib__4_4ring7(realsolid)],
 // 1 16 0 -24 -40 8 0 0 0 0 -8 0 1 0 4-4ring4.dat
-  [1,16,0,-24,-40,8,0,0,0,0,-8,0,1,0, ldraw_lib__4_4ring4()],
+  [1,16,0,-24,-40,8,0,0,0,0,-8,0,1,0, ldraw_lib__4_4ring4(realsolid)],
 // 1 16 0 -24 -40 -40 0 0 0 0 40 0 1 0 2-4ndis.dat
-  [1,16,0,-24,-40,-40,0,0,0,0,40,0,1,0, ldraw_lib__2_4ndis()],
+  [1,16,0,-24,-40,-40,0,0,0,0,40,0,1,0, ldraw_lib__2_4ndis(realsolid)],
 // 4 16 40 24 -40 40 16 -40 -40 16 -40 -40 24 -40
   [4,16,40,24,-40,40,16,-40,-40,16,-40,-40,24,-40],
 // 4 0 -1.5 -24 -40 -1.39 -24.57 -40 -2.77 -25.15 -40 -3 -24 -40
@@ -630,5 +631,5 @@ function ldraw_lib__3664p05() = [
   [3,16,0,-47,-40,-0.77,-44.35,-40,0,-44.5,-40],
 ];
 module ldraw_lib__3664p05(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3664p05(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3664p05(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3664p05(line=0.2);

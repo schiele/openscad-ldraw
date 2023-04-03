@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3070bs01.scad>
-function ldraw_lib__3070bp0b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3070bp0b(realsolid=false) = [
 // 0 Tile  1 x  1 with "R/T" Pattern
 // 0 Name: 3070bp0b.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -17,7 +18,7 @@ function ldraw_lib__3070bp0b() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3070bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3070bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3070bs01(realsolid)],
 // 4 4 3.13 0 -1.1 1.85 0 -2.9 3.35 0 -2.9 4.7 0 -1.1
   [4,4,3.13,0,-1.1,1.85,0,-2.9,3.35,0,-2.9,4.7,0,-1.1],
 // 4 4 4.7 0 -1.1 6.68 0 -1.1 7.1 0 -0.6 1.38 0 -0.6
@@ -168,5 +169,5 @@ function ldraw_lib__3070bp0b() = [
   [4,80,3.35,0,-2.9,3.8,0,-3.5,5.2,0,-1.7,4.7,0,-1.1],
 ];
 module ldraw_lib__3070bp0b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3070bp0b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3070bp0b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3070bp0b(line=0.2);

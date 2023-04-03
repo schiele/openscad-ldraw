@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/2-4ndis.scad>
 use <../../p/4-4disc.scad>
-function ldraw_lib__s__973pw7a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__973pw7a(realsolid=false) = [
 // 0 ~Minifig Torso with Red Undershirt and Fringe Pattern - Button
 // 0 Name: s\973pw7a.dat
 // 0 Author: Willy Tschager [Holly-Wood]
@@ -18,7 +19,7 @@ function ldraw_lib__s__973pw7a() = [
 // 0 // Grey
 // 
 // 1 7 1.15 1.15 0 0.8 0 0 0 0 0.8 0 1 0 4-4disc.dat
-  [1,7,1.15,1.15,0,0.8,0,0,0,0,0.8,0,1,0, ldraw_lib__4_4disc()],
+  [1,7,1.15,1.15,0,0.8,0,0,0,0,0.8,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 
 // 0 // Black
 // 4 0 1.15 0 0 1.15 0.35 0 0.844 0.411 0 0.71 0.087 0
@@ -61,7 +62,7 @@ function ldraw_lib__s__973pw7a() = [
 // 
 // 0 // Red
 // 1 4 1.15 1.15 0 0 0 -1.15 1.15 0 0 0 1 0 2-4ndis.dat
-  [1,4,1.15,1.15,0,0,0,-1.15,1.15,0,0,0,1,0, ldraw_lib__2_4ndis()],
+  [1,4,1.15,1.15,0,0,0,-1.15,1.15,0,0,0,1,0, ldraw_lib__2_4ndis(realsolid)],
 // 3 4 3.15 2.3 0 1.15 2.3 0 1.59 2.213 0
   [3,4,3.15,2.3,0,1.15,2.3,0,1.59,2.213,0],
 // 3 4 3.15 2.3 0 1.59 2.213 0 1.963 1.963 0
@@ -81,5 +82,5 @@ function ldraw_lib__s__973pw7a() = [
 // 0
 ];
 module ldraw_lib__s__973pw7a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__973pw7a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__973pw7a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__973pw7a(line=0.2);

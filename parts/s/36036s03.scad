@@ -2,7 +2,8 @@ use <../../lib.scad>
 use <../../p/3-16cyli.scad>
 use <../../p/3-16edge.scad>
 use <../../p/hipstud.scad>
-function ldraw_lib__s__36036s03() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__36036s03(realsolid=false) = [
 // 0 ~Minifig Hips and Skirt Side
 // 0 Name: s\36036s03.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -227,15 +228,15 @@ function ldraw_lib__s__36036s03() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 30.4 10 0 0 6 0 -26.4 0 -6 0 0 3-16cyli.dat
-  [1,16,0,30.4,10,0,0,6,0,-26.4,0,-6,0,0, ldraw_lib__3_16cyli()],
+  [1,16,0,30.4,10,0,0,6,0,-26.4,0,-6,0,0, ldraw_lib__3_16cyli(realsolid)],
 // 1 16 0 30.4 10 0 0 8 0 -26.4 0 -8 0 0 3-16cyli.dat
-  [1,16,0,30.4,10,0,0,8,0,-26.4,0,-8,0,0, ldraw_lib__3_16cyli()],
+  [1,16,0,30.4,10,0,0,8,0,-26.4,0,-8,0,0, ldraw_lib__3_16cyli(realsolid)],
 // 1 16 0 4 10 0 0 6 0 1 0 -6 0 0 3-16edge.dat
-  [1,16,0,4,10,0,0,6,0,1,0,-6,0,0, ldraw_lib__3_16edge()],
+  [1,16,0,4,10,0,0,6,0,1,0,-6,0,0, ldraw_lib__3_16edge(realsolid)],
 // 1 16 0 4 10 0 0 8 0 -1 0 -8 0 0 3-16edge.dat
-  [1,16,0,4,10,0,0,8,0,-1,0,-8,0,0, ldraw_lib__3_16edge()],
+  [1,16,0,4,10,0,0,8,0,-1,0,-8,0,0, ldraw_lib__3_16edge(realsolid)],
 // 1 16 10 0 0 1 0 0 0 1 0 0 0 -1 hipstud.dat
-  [1,16,10,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__hipstud()],
+  [1,16,10,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__hipstud(realsolid)],
 // 5 24 5.5434 4 7.7038 5.5434 30.4 7.7038 6 30.4 10 4.2426 30.4 5.7574
   [5,24,5.5434,4,7.7038,5.5434,30.4,7.7038,6,30.4,10,4.2426,30.4,5.7574],
 // 5 24 7.3912 30.4 6.9384 7.3912 4 6.9384 5.6568 30.4 4.3432 8 30.4 10
@@ -330,5 +331,5 @@ function ldraw_lib__s__36036s03() = [
   [5,24,4.2426,30.4,14.2426,4.2426,24.707,14.2426,5.5434,30.4,12.2962,2.2962,26.5869,15.5434],
 ];
 module ldraw_lib__s__36036s03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__36036s03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__36036s03(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__36036s03(line=0.2);

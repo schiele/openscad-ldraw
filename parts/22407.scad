@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/4-4cylc.scad>
 use <s/22407s01.scad>
-function ldraw_lib__22407() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__22407(realsolid=false) = [
 // 0 Minifig Axe Head Faceted with Bar  0.5L
 // 0 Name: 22407.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -20,12 +21,12 @@ function ldraw_lib__22407() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\22407s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__22407s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__22407s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 -1 s\22407s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__22407s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__22407s01(realsolid)],
 // 1 16 0 24 0 4 0 0 0 -10 0 0 0 4 4-4cylc.dat
-  [1,16,0,24,0,4,0,0,0,-10,0,0,0,4, ldraw_lib__4_4cylc()],
+  [1,16,0,24,0,4,0,0,0,-10,0,0,0,4, ldraw_lib__4_4cylc(realsolid)],
 ];
 module ldraw_lib__22407(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__22407(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__22407(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__22407(line=0.2);

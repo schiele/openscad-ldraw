@@ -5,7 +5,8 @@ use <s/6142622vs03.scad>
 use <s/6142622vs04.scad>
 use <s/6142622vs05.scad>
 use <s/6142622vs06.scad>
-function ldraw_lib__6142622v() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6142622v(realsolid=false) = [
 // 0 Sticker  2.9 x  0.8 with Black Trapezoid on Yellow Background Left
 // 0 Name: 6142622v.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -25,20 +26,20 @@ function ldraw_lib__6142622v() = [
 // 
 // 
 // 1 16 0 0 20.1754 1 0 0 0 1 0 0 0 1 s\6142622vs01.dat
-  [1,16,0,0,20.1754,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6142622vs01()],
+  [1,16,0,0,20.1754,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6142622vs01(realsolid)],
 // 4 14 -8 -.25 20.1733 -8 -.25 9.392 8 -.25 9.392 8 -.25 20.1733
   [4,14,-8,-.25,20.1733,-8,-.25,9.392,8,-.25,9.392,8,-.25,20.1733],
 // 1 16 0 0 -1.6871 1 0 0 0 1 0 0 0 1 s\6142622vs02.dat
-  [1,16,0,0,-1.6871,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6142622vs02()],
+  [1,16,0,0,-1.6871,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6142622vs02(realsolid)],
 // 1 16 0 0 -1.6919 1 0 0 0 1 0 0 0 1 s\6142622vs03.dat
-  [1,16,0,0,-1.6919,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6142622vs03()],
+  [1,16,0,0,-1.6919,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6142622vs03(realsolid)],
 // 1 16 0 0 -22.9507 1 0 0 0 1 0 0 0 1 s\6142622vs04.dat
-  [1,16,0,0,-22.9507,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6142622vs04()],
+  [1,16,0,0,-22.9507,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6142622vs04(realsolid)],
 // 1 16 0 0 -22.9549 1 0 0 0 1 0 0 0 1 s\6142622vs05.dat
-  [1,16,0,0,-22.9549,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6142622vs05()],
+  [1,16,0,0,-22.9549,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6142622vs05(realsolid)],
 // 1 16 0 0 -49.9063 1 0 0 0 1 0 0 0 1 s\6142622vs06.dat
-  [1,16,0,0,-49.9063,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6142622vs06()],
+  [1,16,0,0,-49.9063,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6142622vs06(realsolid)],
 ];
 module ldraw_lib__6142622v(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6142622v(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6142622v(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6142622v(line=0.2);

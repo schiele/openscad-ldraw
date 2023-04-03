@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/rect3.scad>
-function ldraw_lib__s__54760s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__54760s01(realsolid=false) = [
 // 0 ~Glass for Plane Front  8 x 16 x  5 Half
 // 0 Name: s\54760s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -407,7 +408,7 @@ function ldraw_lib__s__54760s01() = [
 // 3 16 20.606 30.406 -129.287 0 30.406 -132.949 0 27.144 -125.707
   [3,16,20.606,30.406,-129.287,0,30.406,-132.949,0,27.144,-125.707],
 // 1 16 8.168 27.091 -125.707 0 0 8.168 -0.533 0 0.482 0 -1 0 rect3.dat
-  [1,16,8.168,27.091,-125.707,0,0,8.168,-0.533,0,0.482,0,-1,0, ldraw_lib__rect3()],
+  [1,16,8.168,27.091,-125.707,0,0,8.168,-0.533,0,0.482,0,-1,0, ldraw_lib__rect3(realsolid)],
 // 4 16 16.336 21.701 -109.628 16.336 28.108 -125.707 16.336 27.034 -125.707 16.336 22.613 -122.44
   [4,16,16.336,21.701,-109.628,16.336,28.108,-125.707,16.336,27.034,-125.707,16.336,22.613,-122.44],
 // 3 16 16.336 27.034 -125.707 0 26.078 -125.707 16.336 25.204 -128.485
@@ -2056,5 +2057,5 @@ function ldraw_lib__s__54760s01() = [
   [5,24,63.231,30.406,-69.855,71.969,40.618,-77.87,72.861,44.692,-81.288,69.645,33.147,-71.601],
 ];
 module ldraw_lib__s__54760s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__54760s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__54760s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__54760s01(line=0.2);

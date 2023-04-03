@@ -12,7 +12,8 @@ use <../p/4-4rin19.scad>
 use <../p/5-16chrd.scad>
 use <../p/5-16rin5.scad>
 use <s/98138s02.scad>
-function ldraw_lib__98138p8f() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__98138p8f(realsolid=false) = [
 // 0 Tile  1 x  1 Round with Black Eye with White Pupil and Semi Circle  Pattern
 // 0 Name: 98138p8f.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -29,47 +30,47 @@ function ldraw_lib__98138p8f() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\98138s02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s02(realsolid)],
 // 1 16 0 0 0 0.5 0 0 0 1 0 0 0 .5 4-4rin19.dat
-  [1,16,0,0,0,0.5,0,0,0,1,0,0,0,.5, ldraw_lib__4_4rin19()],
+  [1,16,0,0,0,0.5,0,0,0,1,0,0,0,.5, ldraw_lib__4_4rin19(realsolid)],
 // 
 // 1 16 0 0 0 2.5 0 0 0 1 0 0 0 -2.5 2-4disc.dat
-  [1,16,0,0,0,2.5,0,0,0,1,0,0,0,-2.5, ldraw_lib__2_4disc()],
+  [1,16,0,0,0,2.5,0,0,0,1,0,0,0,-2.5, ldraw_lib__2_4disc(realsolid)],
 // 1 16 0 0 0 -2.5 0 0 0 1 0 0 0 2.5 1-16disc.dat
-  [1,16,0,0,0,-2.5,0,0,0,1,0,0,0,2.5, ldraw_lib__1_16disc()],
+  [1,16,0,0,0,-2.5,0,0,0,1,0,0,0,2.5, ldraw_lib__1_16disc(realsolid)],
 // 1 0 0 0 0 2.5 0 0 0 1 0 0 0 -2.5 2-4ndis.dat
-  [1,0,0,0,0,2.5,0,0,0,1,0,0,0,-2.5, ldraw_lib__2_4ndis()],
+  [1,0,0,0,0,2.5,0,0,0,1,0,0,0,-2.5, ldraw_lib__2_4ndis(realsolid)],
 // 1 0 0 0 0 -2.5 0 0 0 1 0 0 0 2.5 1-16ndis.dat
-  [1,0,0,0,0,-2.5,0,0,0,1,0,0,0,2.5, ldraw_lib__1_16ndis()],
+  [1,0,0,0,0,-2.5,0,0,0,1,0,0,0,2.5, ldraw_lib__1_16ndis(realsolid)],
 // 1 16 0 0 0 1.3 0 0 0 1 0 0 0 -1.3 1-4ring5.dat
-  [1,16,0,0,0,1.3,0,0,0,1,0,0,0,-1.3, ldraw_lib__1_4ring5()],
+  [1,16,0,0,0,1.3,0,0,0,1,0,0,0,-1.3, ldraw_lib__1_4ring5(realsolid)],
 // 1 16 0 0 0 0 0 -1.3 0 1 0 -1.3 0 0 5-16rin5.dat
-  [1,16,0,0,0,0,0,-1.3,0,1,0,-1.3,0,0, ldraw_lib__5_16rin5()],
+  [1,16,0,0,0,0,0,-1.3,0,1,0,-1.3,0,0, ldraw_lib__5_16rin5(realsolid)],
 // 1 0 0 0 0 6.5 0 0 0 1 0 0 0 -6.5 1-4chrd.dat
-  [1,0,0,0,0,6.5,0,0,0,1,0,0,0,-6.5, ldraw_lib__1_4chrd()],
+  [1,0,0,0,0,6.5,0,0,0,1,0,0,0,-6.5, ldraw_lib__1_4chrd(realsolid)],
 // 1 0 0 0 0 0 0 -6.5 0 1 0 -6.5 0 0 5-16chrd.dat
-  [1,0,0,0,0,0,0,-6.5,0,1,0,-6.5,0,0, ldraw_lib__5_16chrd()],
+  [1,0,0,0,0,0,0,-6.5,0,1,0,-6.5,0,0, ldraw_lib__5_16chrd(realsolid)],
 // 1 0 0 0 0 9.5 0 0 0 1 0 0 0 9.5 1-4chrd.dat
-  [1,0,0,0,0,9.5,0,0,0,1,0,0,0,9.5, ldraw_lib__1_4chrd()],
+  [1,0,0,0,0,9.5,0,0,0,1,0,0,0,9.5, ldraw_lib__1_4chrd(realsolid)],
 // 1 0 0 0 0 -9.5 0 0 0 1 0 0 0 9.5 1-8chrd.dat
-  [1,0,0,0,0,-9.5,0,0,0,1,0,0,0,9.5, ldraw_lib__1_8chrd()],
+  [1,0,0,0,0,-9.5,0,0,0,1,0,0,0,9.5, ldraw_lib__1_8chrd(realsolid)],
 // 1 0 0 0 0 -9.5 0 0 0 1 0 0 0 -9.5 1-8chrd.dat
-  [1,0,0,0,0,-9.5,0,0,0,1,0,0,0,-9.5, ldraw_lib__1_8chrd()],
+  [1,0,0,0,0,-9.5,0,0,0,1,0,0,0,-9.5, ldraw_lib__1_8chrd(realsolid)],
 // 1 0 0 0 0 9.5 0 0 0 1 0 0 0 -9.5 1-8chrd.dat
-  [1,0,0,0,0,9.5,0,0,0,1,0,0,0,-9.5, ldraw_lib__1_8chrd()],
+  [1,0,0,0,0,9.5,0,0,0,1,0,0,0,-9.5, ldraw_lib__1_8chrd(realsolid)],
 // 1 0 0 0 0 0 0 -9.5 0 1 0 -9.5 0 0 1-8chrd.dat
-  [1,0,0,0,0,0,0,-9.5,0,1,0,-9.5,0,0, ldraw_lib__1_8chrd()],
+  [1,0,0,0,0,0,0,-9.5,0,1,0,-9.5,0,0, ldraw_lib__1_8chrd(realsolid)],
 // 1 0 0 0 0 0 0 9.5 0 1 0 -9.5 0 0 1-8chrd.dat
-  [1,0,0,0,0,0,0,9.5,0,1,0,-9.5,0,0, ldraw_lib__1_8chrd()],
+  [1,0,0,0,0,0,0,9.5,0,1,0,-9.5,0,0, ldraw_lib__1_8chrd(realsolid)],
 // 1 0 0 0 0 0 0 -9.5 0 1 0 9.5 0 0 1-8chrd.dat
-  [1,0,0,0,0,0,0,-9.5,0,1,0,9.5,0,0, ldraw_lib__1_8chrd()],
+  [1,0,0,0,0,0,0,-9.5,0,1,0,9.5,0,0, ldraw_lib__1_8chrd(realsolid)],
 // 
 // 1 0 0 0 0 7.8 0 0 0 1 0 0 0 -7.8 1-4tang.dat
-  [1,0,0,0,0,7.8,0,0,0,1,0,0,0,-7.8, ldraw_lib__1_4tang()],
+  [1,0,0,0,0,7.8,0,0,0,1,0,0,0,-7.8, ldraw_lib__1_4tang(realsolid)],
 // 1 0 0 0 0 -7.8 0 0 0 1 0 0 0 -7.8 1-4tang.dat
-  [1,0,0,0,0,-7.8,0,0,0,1,0,0,0,-7.8, ldraw_lib__1_4tang()],
+  [1,0,0,0,0,-7.8,0,0,0,1,0,0,0,-7.8, ldraw_lib__1_4tang(realsolid)],
 // 1 0 0 0 0 -7.8 0 0 0 1 0 0 0 7.8 1-16tang.dat
-  [1,0,0,0,0,-7.8,0,0,0,1,0,0,0,7.8, ldraw_lib__1_16tang()],
+  [1,0,0,0,0,-7.8,0,0,0,1,0,0,0,7.8, ldraw_lib__1_16tang(realsolid)],
 // 
 // 3 0 -6.00535 0 2.48755 -2.5 0 0 -2.5 0 2.5
   [3,0,-6.00535,0,2.48755,-2.5,0,0,-2.5,0,2.5],
@@ -151,5 +152,5 @@ function ldraw_lib__98138p8f() = [
   [3,0,7.8,0,-1.55142,9.5,0,0,7.8,0,0],
 ];
 module ldraw_lib__98138p8f(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__98138p8f(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__98138p8f(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__98138p8f(line=0.2);

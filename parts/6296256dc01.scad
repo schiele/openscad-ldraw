@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__6296256dc01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6296256dc01(realsolid=false) = [
 // 0 Sticker  1.9 x  1.8 with Ignition Key, Switches and Ashtray (Formed)
 // 0 Name: 6296256dc01.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -1101,5 +1102,5 @@ function ldraw_lib__6296256dc01() = [
   [5,24,17.5,-7.5316,-14.436,-17.5,-7.5316,-14.436,17.5,-10.5099,-8.284,17.5,-5.2174,-18.0819],
 ];
 module ldraw_lib__6296256dc01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6296256dc01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6296256dc01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6296256dc01(line=0.2);

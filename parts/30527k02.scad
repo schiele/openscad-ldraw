@@ -5,7 +5,8 @@ use <../p/4-4disc.scad>
 use <../p/4-4edge.scad>
 use <../p/4-4ring1.scad>
 use <../p/4-8sphe.scad>
-function ldraw_lib__30527k02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__30527k02(realsolid=false) = [
 // 0 ~Hose Flexible 12L Segment
 // 0 Name: 30527k02.dat
 // 0 Author: Steve Bliss [sbliss]
@@ -29,22 +30,22 @@ function ldraw_lib__30527k02() = [
 // 
 // 
 // 1 16 0 2.2710 0 4 0 0 0 1 0 0 0 4 4-4edge.dat
-  [1,16,0,2.2710,0,4,0,0,0,1,0,0,0,4, ldraw_lib__4_4edge()],
+  [1,16,0,2.2710,0,4,0,0,0,1,0,0,0,4, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 5.1613 0 -4 0 0 0 -1 0 0 0 4 4-4edge.dat
-  [1,16,0,5.1613,0,-4,0,0,0,-1,0,0,0,4, ldraw_lib__4_4edge()],
+  [1,16,0,5.1613,0,-4,0,0,0,-1,0,0,0,4, ldraw_lib__4_4edge(realsolid)],
 // 
 // 1 16 0 2.2710 0 4 0 0 0 1 0 0 0 4 4-4ring1.dat
-  [1,16,0,2.2710,0,4,0,0,0,1,0,0,0,4, ldraw_lib__4_4ring1()],
+  [1,16,0,2.2710,0,4,0,0,0,1,0,0,0,4, ldraw_lib__4_4ring1(realsolid)],
 // 1 16 0 2.2710 0 8 0 0 0 2.8903 0 0 0 8 4-4cylo.dat
-  [1,16,0,2.2710,0,8,0,0,0,2.8903,0,0,0,8, ldraw_lib__4_4cylo()],
+  [1,16,0,2.2710,0,8,0,0,0,2.8903,0,0,0,8, ldraw_lib__4_4cylo(realsolid)],
 // 1 16 0 5.1613 0 -8 0 0 0 -1 0 0 0 8 4-4disc.dat
-  [1,16,0,5.1613,0,-8,0,0,0,-1,0,0,0,8, ldraw_lib__4_4disc()],
+  [1,16,0,5.1613,0,-8,0,0,0,-1,0,0,0,8, ldraw_lib__4_4disc(realsolid)],
 // 
 // 1 16 0 0 0 4 0 0 0 2.2710 0 0 0 4 4-4cyli.dat
-  [1,16,0,0,0,4,0,0,0,2.2710,0,0,0,4, ldraw_lib__4_4cyli()],
+  [1,16,0,0,0,4,0,0,0,2.2710,0,0,0,4, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 0 0 -4 0 0 0 -4 0 0 0 4 4-8sphe.dat
-  [1,16,0,0,0,-4,0,0,0,-4,0,0,0,4, ldraw_lib__4_8sphe()],
+  [1,16,0,0,0,-4,0,0,0,-4,0,0,0,4, ldraw_lib__4_8sphe(realsolid)],
 ];
 module ldraw_lib__30527k02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__30527k02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__30527k02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__30527k02(line=0.2);

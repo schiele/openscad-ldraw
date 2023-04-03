@@ -6,7 +6,8 @@ use <../p/type-swiss721bt-bold-un.scad>
 use <../p/type-swiss721bt-bold-uo.scad>
 use <../p/type-swiss721bt-bold-us.scad>
 use <../p/type-swiss721bt-bold-uu.scad>
-function ldraw_lib__004488d() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__004488d(realsolid=false) = [
 // 0 Sticker  1.2 x  6.6 with Black "M/S UNION" on Red Background
 // 0 Name: 004488d.dat
 // 0 Author: Willy Tschager [Holly-Wood]
@@ -30,19 +31,19 @@ function ldraw_lib__004488d() = [
 // 
 // 0 // Red
 // 1 4 -52.2 -.25 -.4 17.5 0 0 0 1 0 0 0 17.5 type-swiss721bt-bold-um.dat
-  [1,4,-52.2,-.25,-.4,17.5,0,0,0,1,0,0,0,17.5, ldraw_lib__type_swiss721bt_bold_um()],
+  [1,4,-52.2,-.25,-.4,17.5,0,0,0,1,0,0,0,17.5, ldraw_lib__type_swiss721bt_bold_um(realsolid)],
 // 1 4 -28.3 -.25 -.3 18.2 0 0 0 1 0 0 0 18.2 type-swiss721bt-bold-us.dat
-  [1,4,-28.3,-.25,-.3,18.2,0,0,0,1,0,0,0,18.2, ldraw_lib__type_swiss721bt_bold_us()],
+  [1,4,-28.3,-.25,-.3,18.2,0,0,0,1,0,0,0,18.2, ldraw_lib__type_swiss721bt_bold_us(realsolid)],
 // 1 4 -2.7 -.25 -.4 17.5 0 0 0 1 0 0 0 17.5 type-swiss721bt-bold-uu.dat
-  [1,4,-2.7,-.25,-.4,17.5,0,0,0,1,0,0,0,17.5, ldraw_lib__type_swiss721bt_bold_uu()],
+  [1,4,-2.7,-.25,-.4,17.5,0,0,0,1,0,0,0,17.5, ldraw_lib__type_swiss721bt_bold_uu(realsolid)],
 // 1 4 13.9 -.25 -.4 17.5 0 0 0 1 0 0 0 17.5 type-swiss721bt-bold-un.dat
-  [1,4,13.9,-.25,-.4,17.5,0,0,0,1,0,0,0,17.5, ldraw_lib__type_swiss721bt_bold_un()],
+  [1,4,13.9,-.25,-.4,17.5,0,0,0,1,0,0,0,17.5, ldraw_lib__type_swiss721bt_bold_un(realsolid)],
 // 1 4 25.9 -.25 -.4 17.5 0 0 0 1 0 0 0 17.5 type-swiss721bt-bold-ui.dat
-  [1,4,25.9,-.25,-.4,17.5,0,0,0,1,0,0,0,17.5, ldraw_lib__type_swiss721bt_bold_ui()],
+  [1,4,25.9,-.25,-.4,17.5,0,0,0,1,0,0,0,17.5, ldraw_lib__type_swiss721bt_bold_ui(realsolid)],
 // 1 4 37.5 -.25 -.3 18.2 0 0 0 1 0 0 0 18.2 type-swiss721bt-bold-uo.dat
-  [1,4,37.5,-.25,-.3,18.2,0,0,0,1,0,0,0,18.2, ldraw_lib__type_swiss721bt_bold_uo()],
+  [1,4,37.5,-.25,-.3,18.2,0,0,0,1,0,0,0,18.2, ldraw_lib__type_swiss721bt_bold_uo(realsolid)],
 // 1 4 54.8 -.25 -.4 17.5 0 0 0 1 0 0 0 17.5 type-swiss721bt-bold-un.dat
-  [1,4,54.8,-.25,-.4,17.5,0,0,0,1,0,0,0,17.5, ldraw_lib__type_swiss721bt_bold_un()],
+  [1,4,54.8,-.25,-.4,17.5,0,0,0,1,0,0,0,17.5, ldraw_lib__type_swiss721bt_bold_un(realsolid)],
 // 
 // 0 // Background
 // 4 4 -42.627 -.25 -8.836 -37.064 -.25 8.283 -43.45 -.25 8.35 -43.45 -.25 -9.15
@@ -115,8 +116,8 @@ function ldraw_lib__004488d() = [
 // 
 // 0 // Small Box
 // 1 16 0 -0.25 0 66 0 0 0 0.25 0 0 0 12 box5-12.dat
-  [1,16,0,-0.25,0,66,0,0,0,0.25,0,0,0,12, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,66,0,0,0,0.25,0,0,0,12, ldraw_lib__box5_12(realsolid)],
 ];
 module ldraw_lib__004488d(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__004488d(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__004488d(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__004488d(line=0.2);

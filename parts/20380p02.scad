@@ -7,7 +7,8 @@ use <s/20380s02.scad>
 use <s/92252s01.scad>
 use <s/92252s03.scad>
 use <s/92252s04.scad>
-function ldraw_lib__20380p02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__20380p02(realsolid=false) = [
 // 0 Figure Friends Legs with Asymmetric Layered Skirt Short with Magenta Ruffle, Medium Nougat Legs and Magenta Flame Sandals Pattern
 // 0 Name: 20380p02.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -26,32 +27,32 @@ function ldraw_lib__20380p02() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\20380s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__20380s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__20380s01(realsolid)],
 // 1 26 0 0 0 1 0 0 0 1 0 0 0 1 s\20380s02.dat
-  [1,26,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__20380s02()],
+  [1,26,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__20380s02(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\92252s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__92252s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__92252s01(realsolid)],
 // 1 84 0 0 0 1 0 0 0 1 0 0 0 1 s\92252s03.dat
-  [1,84,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__92252s03()],
+  [1,84,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__92252s03(realsolid)],
 // 1 84 0 0 0 1 0 0 0 1 0 0 0 1 s\92252s04.dat
-  [1,84,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__92252s04()],
+  [1,84,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__92252s04(realsolid)],
 // 1 84 0 0 0 1 0 0 0 1 0 0 0 1 s\20380p02s01.dat
-  [1,84,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__20380p02s01()],
+  [1,84,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__20380p02s01(realsolid)],
 // 1 26 0 0 0 1 0 0 0 1 0 0 0 1 s\20380p02s02.dat
-  [1,26,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__20380p02s02()],
+  [1,26,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__20380p02s02(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\20380p01s03.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__20380p01s03()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__20380p01s03(realsolid)],
 // 1 84 0 0 0 -1 0 0 0 1 0 0 0 1 s\92252s03.dat
-  [1,84,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__92252s03()],
+  [1,84,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__92252s03(realsolid)],
 // 1 84 0 0 0 -1 0 0 0 1 0 0 0 1 s\92252s04.dat
-  [1,84,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__92252s04()],
+  [1,84,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__92252s04(realsolid)],
 // 1 84 0 0 0 -1 0 0 0 1 0 0 0 1 s\20380p02s01.dat
-  [1,84,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__20380p02s01()],
+  [1,84,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__20380p02s01(realsolid)],
 // 1 26 0 0 0 -1 0 0 0 1 0 0 0 1 s\20380p02s02.dat
-  [1,26,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__20380p02s02()],
+  [1,26,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__20380p02s02(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\20380p01s03.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__20380p01s03()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__20380p01s03(realsolid)],
 ];
 module ldraw_lib__20380p02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__20380p02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__20380p02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__20380p02(line=0.2);

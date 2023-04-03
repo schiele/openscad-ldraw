@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/49311s01.scad>
-function ldraw_lib__49311ps0() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__49311ps0(realsolid=false) = [
 // 0 Brick  1 x  4 x  3 with Metallic Gold "50" and "LUCASFILM Ltd" Pattern
 // 0 Name: 49311ps0.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -19,7 +20,7 @@ function ldraw_lib__49311ps0() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\49311s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__49311s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__49311s01(realsolid)],
 // 
 // 3 82 -21.5 55.3 -10 -21.9 55.3 -10 -22.25 57.65 -10
   [3,82,-21.5,55.3,-10,-21.9,55.3,-10,-22.25,57.65,-10],
@@ -4041,5 +4042,5 @@ function ldraw_lib__49311ps0() = [
   [4,16,2.85,59.35,-10,2.1,59.45,-10,2.5,59.7,-10,2.75,59.6,-10],
 ];
 module ldraw_lib__49311ps0(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__49311ps0(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__49311ps0(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__49311ps0(line=0.2);

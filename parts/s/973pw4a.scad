@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/4-4disc.scad>
 use <../../p/4-4ndis.scad>
-function ldraw_lib__s__973pw4a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__973pw4a(realsolid=false) = [
 // 0 ~Minifig Torso with Sheriff Pattern - Button
 // 0 Name: s\973pw4a.dat
 // 0 Author: Willy Tschager [Holly-Wood]
@@ -18,7 +19,7 @@ function ldraw_lib__s__973pw4a() = [
 // 0 // Gold
 // 
 // 1 334 0 0 0 0.7 0 0 0 0 -0.7 0 1 0 4-4disc.dat
-  [1,334,0,0,0,0.7,0,0,0,0,-0.7,0,1,0, ldraw_lib__4_4disc()],
+  [1,334,0,0,0,0.7,0,0,0,0,-0.7,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 0 // Black
 // 4 0 0.268 -0.647 0 0 -0.7 0 0 -1.14 0 0.436 -1.053 0
   [4,0,0.268,-0.647,0,0,-0.7,0,0,-1.14,0,0.436,-1.053,0],
@@ -54,9 +55,9 @@ function ldraw_lib__s__973pw4a() = [
   [4,0,0,-0.7,0,-0.268,-0.647,0,-0.436,-1.053,0,0,-1.14,0],
 // 0 // Main Color
 // 1 16 0 0 0 1.14 0 0 0 0 -1.14 0 1 0 4-4ndis.dat
-  [1,16,0,0,0,1.14,0,0,0,0,-1.14,0,1,0, ldraw_lib__4_4ndis()],
+  [1,16,0,0,0,1.14,0,0,0,0,-1.14,0,1,0, ldraw_lib__4_4ndis(realsolid)],
 // 0
 ];
 module ldraw_lib__s__973pw4a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__973pw4a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__973pw4a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__973pw4a(line=0.2);

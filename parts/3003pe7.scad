@@ -6,7 +6,8 @@ use <../p/4-4ndis.scad>
 use <../p/4-4rin10.scad>
 use <../p/4-4ring2.scad>
 use <s/3003s01.scad>
-function ldraw_lib__3003pe7() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3003pe7(realsolid=false) = [
 // 0 Brick  2 x  2 with Centred White Eye Pattern
 // 0 Name: 3003pe7.dat
 // 0 Author: Vincent Messenet [Cheenzo]
@@ -23,28 +24,28 @@ function ldraw_lib__3003pe7() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3003s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3003s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3003s01(realsolid)],
 // 
 // 1 15 0 14.5 -20 1.75 0 0 0 0 1.75 0 1 0 4-4disc.dat
-  [1,15,0,14.5,-20,1.75,0,0,0,0,1.75,0,1,0, ldraw_lib__4_4disc()],
+  [1,15,0,14.5,-20,1.75,0,0,0,0,1.75,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 14.5 -20 1.75 0 0 0 0 1.75 0 1 0 4-4ndis.dat
-  [1,16,0,14.5,-20,1.75,0,0,0,0,1.75,0,1,0, ldraw_lib__4_4ndis()],
+  [1,16,0,14.5,-20,1.75,0,0,0,0,1.75,0,1,0, ldraw_lib__4_4ndis(realsolid)],
 // 1 16 0 12.25 -20 5 0 0 0 0 -5 0 1 0 2-4chrd.dat
-  [1,16,0,12.25,-20,5,0,0,0,0,-5,0,1,0, ldraw_lib__2_4chrd()],
+  [1,16,0,12.25,-20,5,0,0,0,0,-5,0,1,0, ldraw_lib__2_4chrd(realsolid)],
 // 1 16 0 12.25 -20 5 0 0 0 0 5 0 1 0 1-8chrd.dat
-  [1,16,0,12.25,-20,5,0,0,0,0,5,0,1,0, ldraw_lib__1_8chrd()],
+  [1,16,0,12.25,-20,5,0,0,0,0,5,0,1,0, ldraw_lib__1_8chrd(realsolid)],
 // 1 16 0 12.25 -20 0 0 5 5 0 0 0 1 0 1-8chrd.dat
-  [1,16,0,12.25,-20,0,0,5,5,0,0,0,1,0, ldraw_lib__1_8chrd()],
+  [1,16,0,12.25,-20,0,0,5,5,0,0,0,1,0, ldraw_lib__1_8chrd(realsolid)],
 // 1 16 0 12.25 -20 0 0 -5 5 0 0 0 1 0 1-8chrd.dat
-  [1,16,0,12.25,-20,0,0,-5,5,0,0,0,1,0, ldraw_lib__1_8chrd()],
+  [1,16,0,12.25,-20,0,0,-5,5,0,0,0,1,0, ldraw_lib__1_8chrd(realsolid)],
 // 1 16 0 12.25 -20 -5 0 0 0 0 5 0 1 0 1-8chrd.dat
-  [1,16,0,12.25,-20,-5,0,0,0,0,5,0,1,0, ldraw_lib__1_8chrd()],
+  [1,16,0,12.25,-20,-5,0,0,0,0,5,0,1,0, ldraw_lib__1_8chrd(realsolid)],
 // 1 15 0 12.25 -20 2.5 0 0 0 0 2.5 0 1 0 4-4ring2.dat
-  [1,15,0,12.25,-20,2.5,0,0,0,0,2.5,0,1,0, ldraw_lib__4_4ring2()],
+  [1,15,0,12.25,-20,2.5,0,0,0,0,2.5,0,1,0, ldraw_lib__4_4ring2(realsolid)],
 // 1 15 0 12.25 -20 .75 0 0 0 0 .75 0 1 0 4-4rin10.dat
-  [1,15,0,12.25,-20,.75,0,0,0,0,.75,0,1,0, ldraw_lib__4_4rin10()],
+  [1,15,0,12.25,-20,.75,0,0,0,0,.75,0,1,0, ldraw_lib__4_4rin10(realsolid)],
 // 1 16 0 12.25 -20 8.25 0 0 0 0 8.25 0 1 0 4-4ndis.dat
-  [1,16,0,12.25,-20,8.25,0,0,0,0,8.25,0,1,0, ldraw_lib__4_4ndis()],
+  [1,16,0,12.25,-20,8.25,0,0,0,0,8.25,0,1,0, ldraw_lib__4_4ndis(realsolid)],
 // 3 16 -20 0 -20 -8.25 4 -20 0 4 -20
   [3,16,-20,0,-20,-8.25,4,-20,0,4,-20],
 // 3 16 -20 0 -20 0 4 -20 8.25 4 -20
@@ -97,5 +98,5 @@ function ldraw_lib__3003pe7() = [
   [3,16,-5,12.25,-20,-1.75,14.5,-20,-1.75,12.75,-20],
 ];
 module ldraw_lib__3003pe7(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3003pe7(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3003pe7(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3003pe7(line=0.2);

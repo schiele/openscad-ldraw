@@ -6,7 +6,8 @@ use <s/10908s04.scad>
 use <s/10908s05.scad>
 use <s/10908s06.scad>
 use <s/10908s07.scad>
-function ldraw_lib__10908p03() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__10908p03(realsolid=false) = [
 // 0 Minifig Helmet Visor Iron Man with Silver Face, White Eyes Pattern
 // 0 Name: 10908p03.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -26,27 +27,27 @@ function ldraw_lib__10908p03() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\10908s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__10908s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__10908s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\10908s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__10908s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__10908s01(realsolid)],
 // 1 15 0 0 0 1 0 0 0 1 0 0 0 1 s\10908s02.dat
-  [1,15,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__10908s02()],
+  [1,15,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__10908s02(realsolid)],
 // 1 0 0 0 0 1 0 0 0 1 0 0 0 1 s\10908s03.dat
-  [1,0,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__10908s03()],
+  [1,0,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__10908s03(realsolid)],
 // 1 80 0 0 0 1 0 0 0 1 0 0 0 1 s\10908s04.dat
-  [1,80,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__10908s04()],
+  [1,80,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__10908s04(realsolid)],
 // 1 80 0 0 0 -1 0 0 0 1 0 0 0 1 s\10908s04.dat
-  [1,80,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__10908s04()],
+  [1,80,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__10908s04(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\10908s05.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__10908s05()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__10908s05(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\10908s06.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__10908s06()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__10908s06(realsolid)],
 // 1 80 0 0 0 1 0 0 0 1 0 0 0 1 s\10908s07.dat
-  [1,80,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__10908s07()],
+  [1,80,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__10908s07(realsolid)],
 // 1 80 0 0 0 -1 0 0 0 1 0 0 0 1 s\10908s07.dat
-  [1,80,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__10908s07()],
+  [1,80,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__10908s07(realsolid)],
 // 
 ];
 module ldraw_lib__10908p03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__10908p03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__10908p03(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__10908p03(line=0.2);

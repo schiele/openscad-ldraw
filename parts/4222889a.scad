@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__4222889a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4222889a(realsolid=false) = [
 // 0 Sticker  1.0 x  5.2 with Yellow "4855-194"
 // 0 Name: 4222889a.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -17,7 +18,7 @@ function ldraw_lib__4222889a() = [
 // 
 // 
 // 1 16 0 -.25 0 52 0 0 0 .25 0 0 0 10 box5-12.dat
-  [1,16,0,-.25,0,52,0,0,0,.25,0,0,0,10, ldraw_lib__box5_12()],
+  [1,16,0,-.25,0,52,0,0,0,.25,0,0,0,10, ldraw_lib__box5_12(realsolid)],
 // 
 // 0 // Font: Impact
 // 4 14 -6.489 -.25 4.133 -10.494 -.25 6.022 -10.669 -.25 .075 -6.489 -.25 2.128
@@ -774,5 +775,5 @@ function ldraw_lib__4222889a() = [
   [3,16,-30.935,-.25,6.243,-29.587,-.25,6.193,-52,-.25,10],
 ];
 module ldraw_lib__4222889a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4222889a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4222889a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4222889a(line=0.2);

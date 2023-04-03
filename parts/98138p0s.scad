@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/4-4ering.scad>
 use <s/98138s01.scad>
-function ldraw_lib__98138p0s() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__98138p0s(realsolid=false) = [
 // 0 Tile  1 x  1 Round with White Eight-Pointed Snowflake Pattern
 // 0 Name: 98138p0s.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -20,9 +21,9 @@ function ldraw_lib__98138p0s() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\98138s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01(realsolid)],
 // 1 16 0 0 0 9 0 0 0 1 0 0 0 9 4-4ering.dat
-  [1,16,0,0,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4ering()],
+  [1,16,0,0,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4ering(realsolid)],
 // 
 // 4 16 -8.315 0 3.444 -9 0 0 -8.27 0 0 -6.56 0 1.01
   [4,16,-8.315,0,3.444,-9,0,0,-8.27,0,0,-6.56,0,1.01],
@@ -304,5 +305,5 @@ function ldraw_lib__98138p0s() = [
   [4,15,1.852,0,-.767,1.852,0,.767,-.767,0,-1.852,.767,0,-1.852],
 ];
 module ldraw_lib__98138p0s(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__98138p0s(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__98138p0s(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__98138p0s(line=0.2);

@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/4-4cylc.scad>
 use <88811s02.scad>
-function ldraw_lib__s__88811s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__88811s01(realsolid=false) = [
 // 0 ~Minifig Weapon Base
 // 0 Name: s\88811s01.dat
 // 0 Author: Rolf Osterthun [Rolf]
@@ -24,7 +25,7 @@ function ldraw_lib__s__88811s01() = [
 // 5 24 0 -16.25 17.5 0 -16.832 17.208 0.594 -16.25 17.226 -0.598 -16.25 17.223
   [5,24,0,-16.25,17.5,0,-16.832,17.208,0.594,-16.25,17.226,-0.598,-16.25,17.223],
 // 1 16 0 0 0 0 0 -4 0 -12.25 0 -4 0 0 4-4cylc.dat
-  [1,16,0,0,0,0,0,-4,0,-12.25,0,-4,0,0, ldraw_lib__4_4cylc()],
+  [1,16,0,0,0,0,0,-4,0,-12.25,0,-4,0,0, ldraw_lib__4_4cylc(realsolid)],
 // 5 24 0 -17.125 16.625 0 -16.832 17.208 -0.598 -16.848 16.625 0.598 -16.848 16.625
   [5,24,0,-17.125,16.625,0,-16.832,17.208,-0.598,-16.848,16.625,0.598,-16.848,16.625],
 // 5 24 0 -17.125 -2.875 0 -16.833 -3.457 0.598 -16.848 -2.875 -0.598 -16.848 -2.875
@@ -55,10 +56,10 @@ function ldraw_lib__s__88811s01() = [
   [4,16,-4.507,-12.25,20,-3.925,-16.179,20,-3.197,-16.25,20,4.507,-12.25,20],
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\88811s02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__88811s02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__88811s02(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\88811s02.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__88811s02()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__88811s02(realsolid)],
 ];
 module ldraw_lib__s__88811s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__88811s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__88811s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__88811s01(line=0.2);

@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <2431.scad>
 use <4654778b.scad>
-function ldraw_lib__2431ds0() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2431ds0(realsolid=false) = [
 // 0 Tile  1 x  4 with  5 Red Rectangles on White Background Sticker
 // 0 Name: 2431ds0.dat
 // 0 Author: Vincent Messenet [Cheenzo]
@@ -18,10 +19,10 @@ function ldraw_lib__2431ds0() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 2431.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2431()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2431(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 4654778b.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4654778b()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4654778b(realsolid)],
 ];
 module ldraw_lib__2431ds0(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2431ds0(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2431ds0(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2431ds0(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__6296256j() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6296256j(realsolid=false) = [
 // 0 Sticker  0.8 x  2.9 with "DK 10.271" Licence Plate
 // 0 Name: 6296256j.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -17,7 +18,7 @@ function ldraw_lib__6296256j() = [
 // 
 // 
 // 1 16 0 -.25 0 29 0 0 0 .25 0 0 0 8 box5-12.dat
-  [1,16,0,-.25,0,29,0,0,0,.25,0,0,0,8, ldraw_lib__box5_12()],
+  [1,16,0,-.25,0,29,0,0,0,.25,0,0,0,8, ldraw_lib__box5_12(realsolid)],
 // 3 0 -29 -.25 8 -26.26 -.25 6.08 -25.74 -.25 6.18
   [3,0,-29,-.25,8,-26.26,-.25,6.08,-25.74,-.25,6.18],
 // 3 0 -29 -.25 8 -26.69 -.25 5.78 -26.26 -.25 6.08
@@ -498,5 +499,5 @@ function ldraw_lib__6296256j() = [
   [3,15,-5.86,-.25,2.6,-5.86,-.25,1.14,-5.27,-.25,1.27],
 ];
 module ldraw_lib__6296256j(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6296256j(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6296256j(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6296256j(line=0.2);

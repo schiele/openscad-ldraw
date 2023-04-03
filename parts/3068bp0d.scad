@@ -5,7 +5,8 @@ use <../p/4-4disc.scad>
 use <../p/4-4ering.scad>
 use <../p/4-4ndis.scad>
 use <s/3068bs01.scad>
-function ldraw_lib__3068bp0d() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3068bp0d(realsolid=false) = [
 // 0 Tile  2 x  2 with Black Dot and White "E" on Red Disc Pattern
 // 0 Name: 3068bp0d.dat
 // 0 Author: Christophe Mitillo [Christophe_Mitillo]
@@ -23,23 +24,23 @@ function ldraw_lib__3068bp0d() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3068bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3068bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3068bs01(realsolid)],
 // 1 0 -14.8 0 0 2.022 0 0 0 1 0 0 0 2.022 4-4disc.dat
-  [1,0,-14.8,0,0,2.022,0,0,0,1,0,0,0,2.022, ldraw_lib__4_4disc()],
+  [1,0,-14.8,0,0,2.022,0,0,0,1,0,0,0,2.022, ldraw_lib__4_4disc(realsolid)],
 // 1 4 -5.2 0 -3.2 -2.2 0 0 0 1 0 0 0 -2.2 1-4ndis.dat
-  [1,4,-5.2,0,-3.2,-2.2,0,0,0,1,0,0,0,-2.2, ldraw_lib__1_4ndis()],
+  [1,4,-5.2,0,-3.2,-2.2,0,0,0,1,0,0,0,-2.2, ldraw_lib__1_4ndis(realsolid)],
 // 1 4 -5.2 0 3.2 0 0 -2.2 0 1 0 2.2 0 0 1-4ndis.dat
-  [1,4,-5.2,0,3.2,0,0,-2.2,0,1,0,2.2,0,0, ldraw_lib__1_4ndis()],
+  [1,4,-5.2,0,3.2,0,0,-2.2,0,1,0,2.2,0,0, ldraw_lib__1_4ndis(realsolid)],
 // 1 4 0 0 0 10.16 0 0 0 1 0 0 0 10.16 4-4ering.dat
-  [1,4,0,0,0,10.16,0,0,0,1,0,0,0,10.16, ldraw_lib__4_4ering()],
+  [1,4,0,0,0,10.16,0,0,0,1,0,0,0,10.16, ldraw_lib__4_4ering(realsolid)],
 // 1 15 -5.2 0 -3.2 -2.2 0 0 0 1 0 0 0 -2.2 1-4chrd.dat
-  [1,15,-5.2,0,-3.2,-2.2,0,0,0,1,0,0,0,-2.2, ldraw_lib__1_4chrd()],
+  [1,15,-5.2,0,-3.2,-2.2,0,0,0,1,0,0,0,-2.2, ldraw_lib__1_4chrd(realsolid)],
 // 1 15 -5.2 0 3.2 0 0 -2.2 0 1 0 2.2 0 0 1-4chrd.dat
-  [1,15,-5.2,0,3.2,0,0,-2.2,0,1,0,2.2,0,0, ldraw_lib__1_4chrd()],
+  [1,15,-5.2,0,3.2,0,0,-2.2,0,1,0,2.2,0,0, ldraw_lib__1_4chrd(realsolid)],
 // 1 16 -14.8 0 0 2.022 0 0 0 1 0 0 0 2.022 4-4ndis.dat
-  [1,16,-14.8,0,0,2.022,0,0,0,1,0,0,0,2.022, ldraw_lib__4_4ndis()],
+  [1,16,-14.8,0,0,2.022,0,0,0,1,0,0,0,2.022, ldraw_lib__4_4ndis(realsolid)],
 // 1 16 0 0 0 10.16 0 0 0 1 0 0 0 10.16 4-4ndis.dat
-  [1,16,0,0,0,10.16,0,0,0,1,0,0,0,10.16, ldraw_lib__4_4ndis()],
+  [1,16,0,0,0,10.16,0,0,0,1,0,0,0,10.16, ldraw_lib__4_4ndis(realsolid)],
 // 3 4 -7.4 0 -3.2 -9.387 0 -3.888 -7.4 0 -5.4
   [3,4,-7.4,0,-3.2,-9.387,0,-3.888,-7.4,0,-5.4],
 // 4 4 -10.16 0 0 -9.387 0 -3.888 -7.4 0 -3.2 -7.4 0 3.2
@@ -118,5 +119,5 @@ function ldraw_lib__3068bp0d() = [
   [4,16,0,0,10.16,10.16,0,10.16,20,0,20,-20,0,20],
 ];
 module ldraw_lib__3068bp0d(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3068bp0d(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3068bp0d(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3068bp0d(line=0.2);

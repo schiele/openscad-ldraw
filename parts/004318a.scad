@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <004695c.scad>
-function ldraw_lib__004318a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__004318a(realsolid=false) = [
 // 0 =Sticker Minifig Torso with Shell Logo 1971
 // 0 Name: 004318a.dat
 // 0 Author: Alex Taylor [anathema]
@@ -17,8 +18,8 @@ function ldraw_lib__004318a() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 004695c.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__004695c()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__004695c(realsolid)],
 ];
 module ldraw_lib__004318a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__004318a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__004318a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__004318a(line=0.2);

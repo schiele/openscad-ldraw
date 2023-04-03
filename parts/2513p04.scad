@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/2-4ndis.scad>
 use <s/2513s01.scad>
-function ldraw_lib__2513p04() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2513p04(realsolid=false) = [
 // 0 Car Mudguard  3 x  4 with Dual Headlights Pattern
 // 0 Name: 2513p04.dat
 // 0 Author: Michael Heidemann [mikeheide]
@@ -22,11 +23,11 @@ function ldraw_lib__2513p04() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2513s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2513s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2513s01(realsolid)],
 // 1 16 0 16.547 -43.094 -6 0 0 0 2.9069 1.4534 0 1.4534 -2.9069 2-4ndis.dat
-  [1,16,0,16.547,-43.094,-6,0,0,0,2.9069,1.4534,0,1.4534,-2.9069, ldraw_lib__2_4ndis()],
+  [1,16,0,16.547,-43.094,-6,0,0,0,2.9069,1.4534,0,1.4534,-2.9069, ldraw_lib__2_4ndis(realsolid)],
 // 1 16 0 16.547 -43.094 6 0 0 0 2.9069 -1.4534 0 1.4534 2.9069 2-4ndis.dat
-  [1,16,0,16.547,-43.094,6,0,0,0,2.9069,-1.4534,0,1.4534,2.9069, ldraw_lib__2_4ndis()],
+  [1,16,0,16.547,-43.094,6,0,0,0,2.9069,-1.4534,0,1.4534,2.9069, ldraw_lib__2_4ndis(realsolid)],
 // 4 25 17.25 18 -46 37.5 18 -46 37.5 18.336 -46.672 17.25 18.336 -46.672
   [4,25,17.25,18,-46,37.5,18,-46,37.5,18.336,-46.672,17.25,18.336,-46.672],
 // 4 80 26 17.344 -44.688 17.25 17.344 -44.688 17.25 14.646 -39.292 26 14.087 -38.175
@@ -193,5 +194,5 @@ function ldraw_lib__2513p04() = [
   [3,16,14.5,14.758,-39.516,6,16.547,-43.094,6,15.094,-40.187],
 ];
 module ldraw_lib__2513p04(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2513p04(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2513p04(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2513p04(line=0.2);

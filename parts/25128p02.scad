@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/25128s01.scad>
 use <s/25128s02.scad>
-function ldraw_lib__25128p02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__25128p02(realsolid=false) = [
 // 0 Minifig Baby Body with Yellow Hands and Bib with Elephant Pattern
 // 0 Name: 25128p02.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -22,11 +23,11 @@ function ldraw_lib__25128p02() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\25128s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__25128s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__25128s01(realsolid)],
 // 1 14 0 0 0 1 0 0 0 1 0 0 0 1 s\25128s02.dat
-  [1,14,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__25128s02()],
+  [1,14,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__25128s02(realsolid)],
 // 1 14 0 0 0 -1 0 0 0 1 0 0 0 1 s\25128s02.dat
-  [1,14,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__25128s02()],
+  [1,14,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__25128s02(realsolid)],
 // 4 1 -0.6 -19.9 -6.979 -0.7711 -20.0711 -6.9578 -0.842 -19.9 -6.979 -0.7711 -19.7289 -7.0002
   [4,1,-0.6,-19.9,-6.979,-0.7711,-20.0711,-6.9578,-0.842,-19.9,-6.979,-0.7711,-19.7289,-7.0002],
 // 4 1 -0.6 -19.9 -6.979 -0.7711 -19.7289 -7.0002 -0.6 -19.658 -7.009 -0.4289 -19.7289 -7.0002
@@ -411,5 +412,5 @@ function ldraw_lib__25128p02() = [
   [4,16,-2.22,-18.82,-7.1129,-2.1934,-18.4599,-7.1575,-1.6376,-18.5733,-7.1434,-1.66,-18.82,-7.1129],
 ];
 module ldraw_lib__25128p02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__25128p02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__25128p02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__25128p02(line=0.2);

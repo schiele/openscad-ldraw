@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__1_4rin11() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__1_4rin11(realsolid=false) = [
 // 0 Ring 11 x 0.25
 // 0 Name: 1-4rin11.dat
 // 0 Author: Franklin W. Cain [fwcain]
@@ -27,5 +28,5 @@ function ldraw_lib__1_4rin11() = [
   [4,16,4.5922,0,11.0866,0,0,12,0,0,11,4.2095,0,10.1627],
 ];
 module ldraw_lib__1_4rin11(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__1_4rin11(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__1_4rin11(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__1_4rin11(line=0.2);

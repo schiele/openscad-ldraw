@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <2335pw1.scad>
-function ldraw_lib__4105279() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4105279(realsolid=false) = [
 // 0 ~_Flag  2 x  2 with Cavalry Logo Pattern White (Obsolete)
 // 0 Name: 4105279.dat
 // 0 Author: Chris Dee [cwdee]
@@ -20,8 +21,8 @@ function ldraw_lib__4105279() = [
 // 0 // colouring of the part (White).
 // 
 // 1 15 0 0 0 1 0 0 0 1 0 0 0 1 2335pw1.dat
-  [1,15,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2335pw1()],
+  [1,15,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2335pw1(realsolid)],
 ];
 module ldraw_lib__4105279(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4105279(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4105279(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4105279(line=0.2);

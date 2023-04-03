@@ -3,7 +3,8 @@ use <../p/box5.scad>
 use <../p/stud.scad>
 use <../p/stud2.scad>
 use <../p/stud3.scad>
-function ldraw_lib__3579() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3579(realsolid=false) = [
 // 0 Door  1 x  3 x  4 Frame
 // 0 Name: 3579.dat
 // 0 Author: James Jessiman
@@ -22,13 +23,13 @@ function ldraw_lib__3579() = [
 // 
 // 
 // 1 16 10 92 0 1 0 0 0 -1 0 0 0 1 stud3.dat
-  [1,16,10,92,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud3()],
+  [1,16,10,92,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud3(realsolid)],
 // 1 16 -10 92 0 1 0 0 0 -1 0 0 0 1 stud3.dat
-  [1,16,-10,92,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud3()],
+  [1,16,-10,92,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud3(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 96 0 26 0 0 0 -4 0 0 0 6 box5.dat
-  [1,16,0,96,0,26,0,0,0,-4,0,0,0,6, ldraw_lib__box5()],
+  [1,16,0,96,0,26,0,0,0,-4,0,0,0,6, ldraw_lib__box5(realsolid)],
 // 
 // 4 16 30 96 10 26 96 6 -26 96 6 -30 96 10
   [4,16,30,96,10,26,96,6,-26,96,6,-30,96,10],
@@ -213,14 +214,14 @@ function ldraw_lib__3579() = [
   [4,16,-26,4,-10,26,4,-10,30,0,-10,-30,0,-10],
 // 
 // 1 16 -20 0 0 1 0 0 0 1 0 0 0 1 stud.dat
-  [1,16,-20,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud()],
+  [1,16,-20,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 stud2.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2(realsolid)],
 // 1 16 20 0 0 1 0 0 0 1 0 0 0 1 stud.dat
-  [1,16,20,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud()],
+  [1,16,20,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud(realsolid)],
 // 0
 // 
 ];
 module ldraw_lib__3579(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3579(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3579(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3579(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/2431s01.scad>
-function ldraw_lib__2431p12() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2431p12(realsolid=false) = [
 // 0 Tile  1 x  4 with Radar Pattern
 // 0 Name: 2431p12.dat
 // 0 Author: Thomas Burger [grapeape]
@@ -25,7 +26,7 @@ function ldraw_lib__2431p12() = [
 // 0 // Subfile
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2431s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2431s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2431s01(realsolid)],
 // 
 // 4 0 -38.2 0 -7.41 -39.3 0 -8.1 -39.26 0 -8.29 -39.15 0 -8.45
   [4,0,-38.2,0,-7.41,-39.3,0,-8.1,-39.26,0,-8.29,-39.15,0,-8.45],
@@ -427,5 +428,5 @@ function ldraw_lib__2431p12() = [
   [4,80,2.5,0,-6.6,2.5,0,6.6,1.3,0,6.6,1.3,0,-6.6],
 ];
 module ldraw_lib__2431p12(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2431p12(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2431p12(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2431p12(line=0.2);

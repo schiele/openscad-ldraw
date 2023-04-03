@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/48/4-4cylc3.scad>
 use <../p/48/4-4rin17.scad>
 use <../p/48/4-4rin18.scad>
-function ldraw_lib__4125165b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4125165b(realsolid=false) = [
 // 0 Sticker  1.9 x  1.9 Round Tachometer
 // 0 Name: 4125165b.dat
 // 0 Author: Johann Eisner [technicbasics]
@@ -19,11 +20,11 @@ function ldraw_lib__4125165b() = [
 // 
 // 
 // 1 16 0 0 0 0 0 19 0 -0.25 0 19 0 0 48\4-4cylc3.dat
-  [1,16,0,0,0,0,0,19,0,-0.25,0,19,0,0, ldraw_lib__48__4_4cylc3()],
+  [1,16,0,0,0,0,0,19,0,-0.25,0,19,0,0, ldraw_lib__48__4_4cylc3(realsolid)],
 // 1 0 0 -.25 0 1 0 0 0 1 0 0 0 1 48\4-4rin18.dat
-  [1,0,0,-.25,0,1,0,0,0,1,0,0,0,1, ldraw_lib__48__4_4rin18()],
+  [1,0,0,-.25,0,1,0,0,0,1,0,0,0,1, ldraw_lib__48__4_4rin18(realsolid)],
 // 1 0 0 -.25 0 1 0 0 0 1 0 0 0 1 48\4-4rin17.dat
-  [1,0,0,-.25,0,1,0,0,0,1,0,0,0,1, ldraw_lib__48__4_4rin17()],
+  [1,0,0,-.25,0,1,0,0,0,1,0,0,0,1, ldraw_lib__48__4_4rin17(realsolid)],
 // 4 0 .72 -.25 16.484 -.72 -.25 16.484 -.567 -.25 12.988 .567 -.25 12.988
   [4,0,.72,-.25,16.484,-.72,-.25,16.484,-.567,-.25,12.988,.567,-.25,12.988],
 // 4 0 4.962 -.25 15.736 3.571 -.25 16.109 3.247 -.25 14.644 4.511 -.25 14.306
@@ -432,5 +433,5 @@ function ldraw_lib__4125165b() = [
   [4,15,-2.389,-.25,-.887,-2.57,-.25,-.038,-10.99,-.25,-.48,-2.904,-.25,-1.544],
 ];
 module ldraw_lib__4125165b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4125165b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4125165b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4125165b(line=0.2);

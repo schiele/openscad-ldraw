@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/6228bs01.scad>
-function ldraw_lib__6228b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6228b(realsolid=false) = [
 // 0 Animal Dolphin
 // 0 Name: 6228b.dat
 // 0 Author: Willy Tschager [Holly-Wood]
@@ -17,9 +18,9 @@ function ldraw_lib__6228b() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\6228bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6228bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6228bs01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\6228bs01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__6228bs01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__6228bs01(realsolid)],
 // 
 // 5 24 0 -7.839 -58.15 0 -5.299 -50.653 9.406 -8.697 -52.287 -9.406 -8.697 -52.287
   [5,24,0,-7.839,-58.15,0,-5.299,-50.653,9.406,-8.697,-52.287,-9.406,-8.697,-52.287],
@@ -111,5 +112,5 @@ function ldraw_lib__6228b() = [
   [5,24,0,-54.998,37.009,0,-56.327,35.547,-1.409,-55.151,36.668,1.409,-55.151,36.668],
 ];
 module ldraw_lib__6228b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6228b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6228b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6228b(line=0.2);

@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
 use <s/2525p32a.scad>
-function ldraw_lib__820785a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__820785a(realsolid=false) = [
 // 0 Sticker  4.8 x  6 with Crossed Cannons Blue Crossed Flag Left
 // 0 Name: 820785a.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -18,10 +19,10 @@ function ldraw_lib__820785a() = [
 // 
 // 
 // 1 16 0 -0.25 0 60 0 0 0 0.25 0 0 0 48 box5-12.dat
-  [1,16,0,-0.25,0,60,0,0,0,0.25,0,0,0,48, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,60,0,0,0,0.25,0,0,0,48, ldraw_lib__box5_12(realsolid)],
 // 1 15 0 -0.25 0 1 0 0 0 1 0 0 0 1 s\2525p32a.dat
-  [1,15,0,-0.25,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2525p32a()],
+  [1,15,0,-0.25,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2525p32a(realsolid)],
 ];
 module ldraw_lib__820785a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__820785a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__820785a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__820785a(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <41334.scad>
-function ldraw_lib__530() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__530(realsolid=false) = [
 // 0 ~Moved to 41334
 // 0 Name: 530.dat
 // 0 Author: [PTadmin]
@@ -18,8 +19,8 @@ function ldraw_lib__530() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 41334.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__41334()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__41334(realsolid)],
 ];
 module ldraw_lib__530(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__530(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__530(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__530(line=0.2);

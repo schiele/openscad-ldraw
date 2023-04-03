@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <46413.scad>
 use <6109079bc01.scad>
-function ldraw_lib__46413d03() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__46413d03(realsolid=false) = [
 // 0 Hinge Brick  4 x  8 x  2 Curved Locking with 2 Dual Fingers with Lime Bicycle Sticker
 // 0 Name: 46413d03.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -16,10 +17,10 @@ function ldraw_lib__46413d03() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 46413.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__46413()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__46413(realsolid)],
 // 1 10047 0 2 -40 1 0 0 0 1 0 0 0 1 6109079bc01.dat
-  [1,10047,0,2,-40,1,0,0,0,1,0,0,0,1, ldraw_lib__6109079bc01()],
+  [1,10047,0,2,-40,1,0,0,0,1,0,0,0,1, ldraw_lib__6109079bc01(realsolid)],
 ];
 module ldraw_lib__46413d03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__46413d03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__46413d03(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__46413d03(line=0.2);

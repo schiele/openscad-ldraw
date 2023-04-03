@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__15527s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__15527s01(realsolid=false) = [
 // 0 ~Minifig Head Simpsons Homer Simpson Mouth Half
 // 0 Name: s\15527s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -1319,5 +1320,5 @@ function ldraw_lib__s__15527s01() = [
   [5,24,0,-5.0721,-15.8874,0,-4.8986,-15.2726,2.9961,-5.0384,-14.962,-2.9961,-5.0384,-14.962],
 ];
 module ldraw_lib__s__15527s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__15527s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__15527s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__15527s01(line=0.2);

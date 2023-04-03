@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/clh1.scad>
 use <s/30364s01.scad>
-function ldraw_lib__30364() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__30364(realsolid=false) = [
 // 0 Hinge Brick  1 x  2 Locking with Single Finger On End
 // 0 Name: 30364.dat
 // 0 Author: John Van Zwieten [jvan]
@@ -21,11 +22,11 @@ function ldraw_lib__30364() = [
 // 
 // 
 // 1 16 30 9 0 1 0 0 0 1 0 0 0 1 s\30364s01.dat
-  [1,16,30,9,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30364s01()],
+  [1,16,30,9,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30364s01(realsolid)],
 // 1 16 20 10 0 0 0 -1 0 1 0 1 0 0 clh1.dat
-  [1,16,20,10,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__clh1()],
+  [1,16,20,10,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__clh1(realsolid)],
 // 0
 ];
 module ldraw_lib__30364(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__30364(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__30364(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__30364(line=0.2);

@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__92250p01s03() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__92250p01s03(realsolid=false) = [
 // 0 ~Figure Friends Foot with Shoe with White Tops and Laces Pattern, Ankle
 // 0 Name: s\92250p01s03.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -143,5 +144,5 @@ function ldraw_lib__s__92250p01s03() = [
   [5,24,9.53,-11.62,-0.17,10.4136,-10.6927,-0.7374,11.5889,-10.6797,0.3171,9.1582,-10.5357,-1.4989],
 ];
 module ldraw_lib__s__92250p01s03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__92250p01s03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__92250p01s03(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__92250p01s03(line=0.2);

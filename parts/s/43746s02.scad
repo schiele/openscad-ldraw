@@ -5,7 +5,8 @@ use <../../p/1-8cyli.scad>
 use <../../p/1-8edge.scad>
 use <../../p/8/1-4chrd.scad>
 use <../../p/8/1-4cylo.scad>
-function ldraw_lib__s__43746s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__43746s02(realsolid=false) = [
 // 0 ~Animal Serpent Basilisk Head - Connector 1/4
 // 0 Name: s\43746s02.dat
 // 0 Author: Willy Tschager [Holly-Wood]
@@ -20,26 +21,26 @@ function ldraw_lib__s__43746s02() = [
 // 
 // 
 // 1 16 0 0 0 20 0 0 0 0 -20 0 2.5 0 1-4cylo.dat
-  [1,16,0,0,0,20,0,0,0,0,-20,0,2.5,0, ldraw_lib__1_4cylo()],
+  [1,16,0,0,0,20,0,0,0,0,-20,0,2.5,0, ldraw_lib__1_4cylo(realsolid)],
 // 1 16 0 0 2.5 20 0 0 0 0 -20 0 -1 0 1-8chrd.dat
-  [1,16,0,0,2.5,20,0,0,0,0,-20,0,-1,0, ldraw_lib__1_8chrd()],
+  [1,16,0,0,2.5,20,0,0,0,0,-20,0,-1,0, ldraw_lib__1_8chrd(realsolid)],
 // 1 16 0 0 2.5 0 0 20 -20 0 0 0 -1 0 1-8chrd.dat
-  [1,16,0,0,2.5,0,0,20,-20,0,0,0,-1,0, ldraw_lib__1_8chrd()],
+  [1,16,0,0,2.5,0,0,20,-20,0,0,0,-1,0, ldraw_lib__1_8chrd(realsolid)],
 // 
 // 1 16 0 0 20 7.39104 0 -3.06147 -3.06147 0 -7.39104 0 2 0 1-8cyli.dat
-  [1,16,0,0,20,7.39104,0,-3.06147,-3.06147,0,-7.39104,0,2,0, ldraw_lib__1_8cyli()],
+  [1,16,0,0,20,7.39104,0,-3.06147,-3.06147,0,-7.39104,0,2,0, ldraw_lib__1_8cyli(realsolid)],
 // 1 16 0 0 20 7.39104 0 -3.06147 -3.06147 0 -7.39104 0 2 0 1-8chrd.dat
-  [1,16,0,0,20,7.39104,0,-3.06147,-3.06147,0,-7.39104,0,2,0, ldraw_lib__1_8chrd()],
+  [1,16,0,0,20,7.39104,0,-3.06147,-3.06147,0,-7.39104,0,2,0, ldraw_lib__1_8chrd(realsolid)],
 // 1 16 0 0 20 7.39104 0 -3.06147 -3.06147 0 -7.39104 0 2 0 1-8edge.dat
-  [1,16,0,0,20,7.39104,0,-3.06147,-3.06147,0,-7.39104,0,2,0, ldraw_lib__1_8edge()],
+  [1,16,0,0,20,7.39104,0,-3.06147,-3.06147,0,-7.39104,0,2,0, ldraw_lib__1_8edge(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 5 -5 20 0 0 -2.5 2.5 0 0 0 -16 0 8\1-4cylo.dat
-  [1,16,5,-5,20,0,0,-2.5,2.5,0,0,0,-16,0, ldraw_lib__8__1_4cylo()],
+  [1,16,5,-5,20,0,0,-2.5,2.5,0,0,0,-16,0, ldraw_lib__8__1_4cylo(realsolid)],
 // 1 16 5 -5 20 0 0 -2.5 2.5 0 0 0 1 0 8\1-4chrd.dat
-  [1,16,5,-5,20,0,0,-2.5,2.5,0,0,0,1,0, ldraw_lib__8__1_4chrd()],
+  [1,16,5,-5,20,0,0,-2.5,2.5,0,0,0,1,0, ldraw_lib__8__1_4chrd(realsolid)],
 // 1 16 5 -5 4 0 0 -2.5 2.5 0 0 0 -1 0 8\1-4chrd.dat
-  [1,16,5,-5,4,0,0,-2.5,2.5,0,0,0,-1,0, ldraw_lib__8__1_4chrd()],
+  [1,16,5,-5,4,0,0,-2.5,2.5,0,0,0,-1,0, ldraw_lib__8__1_4chrd(realsolid)],
 // 
 // 2 24 5 -2.5 4 16.816 -2.5 4
   [2,24,5,-2.5,4,16.816,-2.5,4],
@@ -219,5 +220,5 @@ function ldraw_lib__s__43746s02() = [
   [5,24,2.5,-7.503,20,0,-8,20,0,-8,22,0,-8.6,18.5],
 ];
 module ldraw_lib__s__43746s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__43746s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__43746s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__43746s02(line=0.2);

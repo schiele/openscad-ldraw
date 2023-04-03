@@ -3,7 +3,8 @@ use <../p/2-4edge.scad>
 use <2538a.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-8sphe.scad>
-function ldraw_lib__2538b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2538b(realsolid=false) = [
 // 0 Boat Mast  2 x  2 x 16 Top with Bottom Nubs
 // 0 Name: 2538b.dat
 // 0 Author: Andy Westrate [westrate]
@@ -24,25 +25,25 @@ function ldraw_lib__2538b() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 2538a.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2538a()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2538a(realsolid)],
 // 0 // added knobs in b version
 // 1 16 -16 -6 0 0 -2 0 0 0 -2 2 0 0 4-8sphe.dat
-  [1,16,-16,-6,0,0,-2,0,0,0,-2,2,0,0, ldraw_lib__4_8sphe()],
+  [1,16,-16,-6,0,0,-2,0,0,0,-2,2,0,0, ldraw_lib__4_8sphe(realsolid)],
 // 1 16 -16 -6 0 0 2.5 0 0 0 -2 2 0 0 4-4cyli.dat
-  [1,16,-16,-6,0,0,2.5,0,0,0,-2,2,0,0, ldraw_lib__4_4cyli()],
+  [1,16,-16,-6,0,0,2.5,0,0,0,-2,2,0,0, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 -13.945 -6 0 -.02 -1 .4 2 0 0 0 0 -2 2-4edge.dat
-  [1,16,-13.945,-6,0,-.02,-1,.4,2,0,0,0,0,-2, ldraw_lib__2_4edge()],
+  [1,16,-13.945,-6,0,-.02,-1,.4,2,0,0,0,0,-2, ldraw_lib__2_4edge(realsolid)],
 // 1 16 -13.945 -6 0 -.02 -1 .4 2 0 0 0 0 2 2-4edge.dat
-  [1,16,-13.945,-6,0,-.02,-1,.4,2,0,0,0,0,2, ldraw_lib__2_4edge()],
+  [1,16,-13.945,-6,0,-.02,-1,.4,2,0,0,0,0,2, ldraw_lib__2_4edge(realsolid)],
 // 1 16 16 -6 0 0 -2.5 0 0 0 -2 -2 0 0 4-4cyli.dat
-  [1,16,16,-6,0,0,-2.5,0,0,0,-2,-2,0,0, ldraw_lib__4_4cyli()],
+  [1,16,16,-6,0,0,-2.5,0,0,0,-2,-2,0,0, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 16 -6 0 0 2 0 0 0 -2 -2 0 0 4-8sphe.dat
-  [1,16,16,-6,0,0,2,0,0,0,-2,-2,0,0, ldraw_lib__4_8sphe()],
+  [1,16,16,-6,0,0,2,0,0,0,-2,-2,0,0, ldraw_lib__4_8sphe(realsolid)],
 // 1 16 13.945 -6 0 .02 -1 -.4 2 0 0 0 0 -2 2-4edge.dat
-  [1,16,13.945,-6,0,.02,-1,-.4,2,0,0,0,0,-2, ldraw_lib__2_4edge()],
+  [1,16,13.945,-6,0,.02,-1,-.4,2,0,0,0,0,-2, ldraw_lib__2_4edge(realsolid)],
 // 1 16 13.945 -6 0 .02 -1 -.4 2 0 0 0 0 2 2-4edge.dat
-  [1,16,13.945,-6,0,.02,-1,-.4,2,0,0,0,0,2, ldraw_lib__2_4edge()],
+  [1,16,13.945,-6,0,.02,-1,-.4,2,0,0,0,0,2, ldraw_lib__2_4edge(realsolid)],
 ];
 module ldraw_lib__2538b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2538b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2538b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2538b(line=0.2);

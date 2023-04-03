@@ -6,7 +6,8 @@ use <../p/2-4ring1.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4ndis.scad>
 use <s/3005s01.scad>
-function ldraw_lib__3005pwf() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3005pwf(realsolid=false) = [
 // 0 Brick  1 x  1 with Lightblue "Ü" (U Dieresis) Pattern
 // 0 Name: 3005pwf.dat
 // 0 Author: Tore Eriksson [Tore_Eriksson]
@@ -27,21 +28,21 @@ function ldraw_lib__3005pwf() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3005s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3005s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3005s01(realsolid)],
 // 1 9 0 14 -10 2.5 0 0 0 0 2.5 0 1 0 2-4ring1.dat
-  [1,9,0,14,-10,2.5,0,0,0,0,2.5,0,1,0, ldraw_lib__2_4ring1()],
+  [1,9,0,14,-10,2.5,0,0,0,0,2.5,0,1,0, ldraw_lib__2_4ring1(realsolid)],
 // 1 9 0 14 -10 1 0 0 0 0 1 0 1 0 1-4ring5.dat
-  [1,9,0,14,-10,1,0,0,0,0,1,0,1,0, ldraw_lib__1_4ring5()],
+  [1,9,0,14,-10,1,0,0,0,0,1,0,1,0, ldraw_lib__1_4ring5(realsolid)],
 // 1 9 0 14 -10 -1 0 0 0 0 1 0 1 0 1-4ring5.dat
-  [1,9,0,14,-10,-1,0,0,0,0,1,0,1,0, ldraw_lib__1_4ring5()],
+  [1,9,0,14,-10,-1,0,0,0,0,1,0,1,0, ldraw_lib__1_4ring5(realsolid)],
 // 4 9 -6 6 -10 -2.5 6 -10 -2.5 14 -10 -6 14 -10
   [4,9,-6,6,-10,-2.5,6,-10,-2.5,14,-10,-6,14,-10],
 // 4 9 2.5 6 -10 6 6 -10 6 14 -10 2.5 14 -10
   [4,9,2.5,6,-10,6,6,-10,6,14,-10,2.5,14,-10],
 // 1 16 0 14 -10 2.5 0 0 0 0 2.5 0 1 0 2-4disc.dat
-  [1,16,0,14,-10,2.5,0,0,0,0,2.5,0,1,0, ldraw_lib__2_4disc()],
+  [1,16,0,14,-10,2.5,0,0,0,0,2.5,0,1,0, ldraw_lib__2_4disc(realsolid)],
 // 1 16 0 14 -10 6 0 0 0 0 6 0 1 0 2-4ndis.dat
-  [1,16,0,14,-10,6,0,0,0,0,6,0,1,0, ldraw_lib__2_4ndis()],
+  [1,16,0,14,-10,6,0,0,0,0,6,0,1,0, ldraw_lib__2_4ndis(realsolid)],
 // 4 16 -2.5 6 -10 2.5 6 -10 2.5 14 -10 -2.5 14 -10
   [4,16,-2.5,6,-10,2.5,6,-10,2.5,14,-10,-2.5,14,-10],
 // 4 16 10 24 -10 6 20 -10 6 6 -10 10 0 -10
@@ -51,13 +52,13 @@ function ldraw_lib__3005pwf() = [
 // 4 16 -10 0 -10 -6 6 -10 -6 20 -10 -10 24 -10
   [4,16,-10,0,-10,-6,6,-10,-6,20,-10,-10,24,-10],
 // 1 9 -3 4 -10 1 0 0 0 0 1 0 1 0 4-4disc.dat
-  [1,9,-3,4,-10,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4disc()],
+  [1,9,-3,4,-10,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 9 3 4 -10 1 0 0 0 0 1 0 1 0 4-4disc.dat
-  [1,9,3,4,-10,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4disc()],
+  [1,9,3,4,-10,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 16 -3 4 -10 1 0 0 0 0 1 0 1 0 4-4ndis.dat
-  [1,16,-3,4,-10,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4ndis()],
+  [1,16,-3,4,-10,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4ndis(realsolid)],
 // 1 16 3 4 -10 1 0 0 0 0 1 0 1 0 4-4ndis.dat
-  [1,16,3,4,-10,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4ndis()],
+  [1,16,3,4,-10,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4ndis(realsolid)],
 // 4 16 -10 0 -10 10 0 -10 4 3 -10 -4 3 -10
   [4,16,-10,0,-10,10,0,-10,4,3,-10,-4,3,-10],
 // 4 16 10 0 -10 6 6 -10 4 5 -10 4 3 -10
@@ -71,5 +72,5 @@ function ldraw_lib__3005pwf() = [
 // 
 ];
 module ldraw_lib__3005pwf(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3005pwf(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3005pwf(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3005pwf(line=0.2);

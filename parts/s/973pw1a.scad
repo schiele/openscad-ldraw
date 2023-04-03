@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/2-4ndis.scad>
 use <../../p/4-4disc.scad>
-function ldraw_lib__s__973pw1a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__973pw1a(realsolid=false) = [
 // 0 ~Minifig Torso with Cavalry General Pattern - Button
 // 0 Name: s\973pw1a.dat
 // 0 Author: Willy Tschager [Holly-Wood]
@@ -18,7 +19,7 @@ function ldraw_lib__s__973pw1a() = [
 // 0 // Gold
 // 
 // 1 334 -0.545 0 0 0.66 0 0 0 0 -0.66 0 1 0 4-4disc.dat
-  [1,334,-0.545,0,0,0.66,0,0,0,0,-0.66,0,1,0, ldraw_lib__4_4disc()],
+  [1,334,-0.545,0,0,0.66,0,0,0,0,-0.66,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 
 // 0 Black
 // 4 0 -0.082 -1.118 0 -0.545 -1.21 0 -0.545 -0.66 0 -0.292 -0.61 0
@@ -62,7 +63,7 @@ function ldraw_lib__s__973pw1a() = [
 // 
 // 0 Main Color
 // 1 16 -0.55 0 0 0 0 -1.21 -1.21 0 0 0 1 0 2-4ndis.dat
-  [1,16,-0.55,0,0,0,0,-1.21,-1.21,0,0,0,1,0, ldraw_lib__2_4ndis()],
+  [1,16,-0.55,0,0,0,0,-1.21,-1.21,0,0,0,1,0, ldraw_lib__2_4ndis(realsolid)],
 // 3 16 1.755 -1.21 0 -0.545 -1.21 0 -0.082 -1.118 0
   [3,16,1.755,-1.21,0,-0.545,-1.21,0,-0.082,-1.118,0],
 // 3 16 1.755 -1.21 0 -0.082 -1.118 0 0.311 -0.856 0
@@ -80,5 +81,5 @@ function ldraw_lib__s__973pw1a() = [
 // 0
 ];
 module ldraw_lib__s__973pw1a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__973pw1a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__973pw1a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__973pw1a(line=0.2);

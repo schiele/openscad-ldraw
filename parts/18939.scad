@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/connhol3.scad>
 use <s/18939s01.scad>
-function ldraw_lib__18939() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__18939(realsolid=false) = [
 // 0 Technic Turntable 60 Tooth Bottom
 // 0 Name: 18939.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -16,18 +17,18 @@ function ldraw_lib__18939() = [
 // 
 // 
 // 1 16 40 20 0 0 -1 0 0 0 -1 1 0 0 connhol3.dat
-  [1,16,40,20,0,0,-1,0,0,0,-1,1,0,0, ldraw_lib__connhol3()],
+  [1,16,40,20,0,0,-1,0,0,0,-1,1,0,0, ldraw_lib__connhol3(realsolid)],
 // 1 16 -40 20 0 0 1 0 0 0 -1 -1 0 0 connhol3.dat
-  [1,16,-40,20,0,0,1,0,0,0,-1,-1,0,0, ldraw_lib__connhol3()],
+  [1,16,-40,20,0,0,1,0,0,0,-1,-1,0,0, ldraw_lib__connhol3(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\18939s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__18939s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__18939s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\18939s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__18939s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__18939s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 -1 s\18939s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__18939s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__18939s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 -1 s\18939s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__18939s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__18939s01(realsolid)],
 ];
 module ldraw_lib__18939(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__18939(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__18939(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__18939(line=0.2);

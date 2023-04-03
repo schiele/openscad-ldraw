@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/18836s01.scad>
-function ldraw_lib__18836pq0() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__18836pq0(realsolid=false) = [
 // 0 Minifig Shield Triangular Long with Black Pyramid and Sun Pattern
 // 0 Name: 18836pq0.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -18,7 +19,7 @@ function ldraw_lib__18836pq0() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\18836s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__18836s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__18836s01(realsolid)],
 // 
 // 4 0 -17.615 -3.1263 -12 -18 -9 -12 -19 -9 -12 -18.6065 -2.9958 -12
   [4,0,-17.615,-3.1263,-12,-18,-9,-12,-19,-9,-12,-18.6065,-2.9958,-12],
@@ -344,5 +345,5 @@ function ldraw_lib__18836pq0() = [
   [4,16,.7296,7.0169,-12,3.1815,-3.4607,-12,.3,.4888,-12,.3,6.9597,-12],
 ];
 module ldraw_lib__18836pq0(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__18836pq0(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__18836pq0(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__18836pq0(line=0.2);

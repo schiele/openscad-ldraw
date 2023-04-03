@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__6258203ms01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__6258203ms01(realsolid=false) = [
 // 0 ~Sticker  1.9 x  1.9 Round with Gas Cap and Classic "GT" Emblem Segment
 // 0 Name: s\6258203ms01.dat
 // 0 Author: Ulrich Röder [UR]
@@ -372,5 +373,5 @@ function ldraw_lib__s__6258203ms01() = [
   [4,0,-3.052,0,-13.128,-2.831,0,-12.917,-3.429,0,-12.798,-3.494,0,-13.04],
 ];
 module ldraw_lib__s__6258203ms01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__6258203ms01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__6258203ms01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__6258203ms01(line=0.2);

@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <90617s02.scad>
-function ldraw_lib__s__90634s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__90634s01(realsolid=false) = [
 // 0 ~Technic Connector  3 x  1 with Two Pins and Three Ball Joints on Axle  5L - One Quarter
 // 0 Name: s\90634s01.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -16,7 +17,7 @@ function ldraw_lib__s__90634s01() = [
 // 
 // 0 // Subpart
 // 1 16 0 -30 0 0 1 0 0 0 1 1 0 0 s\90617s02.dat
-  [1,16,0,-30,0,0,1,0,0,0,1,1,0,0, ldraw_lib__s__90617s02()],
+  [1,16,0,-30,0,0,1,0,0,0,1,1,0,0, ldraw_lib__s__90617s02(realsolid)],
 // 0 // Lower face
 // 3 16 20 0 9.25 8.25 0 0 7.622 0 3.157
   [3,16,20,0,9.25,8.25,0,0,7.622,0,3.157],
@@ -171,5 +172,5 @@ function ldraw_lib__s__90634s01() = [
   [2,24,3.75,-3,4.875,3.75,-1.34154,4.875],
 ];
 module ldraw_lib__s__90634s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__90634s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__90634s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__90634s01(line=0.2);

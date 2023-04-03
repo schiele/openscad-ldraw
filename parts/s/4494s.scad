@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/rect3.scad>
-function ldraw_lib__s__4494s() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__4494s(realsolid=false) = [
 // 0 ~Animal Horse Body Connector Female - 1/6
 // 0 Name: s\4494s.dat
 // 0 Author: Bernd Broich [bbroich]
@@ -51,7 +52,7 @@ function ldraw_lib__s__4494s() = [
   [2,24,8,1,13.8564,4.1411,1,15.4545],
 // 0 // Mantle
 // 1 16 1.6077 0.5 12 0 0 1.6077 0.5 0 0 0 1 0 rect3.dat
-  [1,16,1.6077,0.5,12,0,0,1.6077,0.5,0,0,0,1,0, ldraw_lib__rect3()],
+  [1,16,1.6077,0.5,12,0,0,1.6077,0.5,0,0,0,1,0, ldraw_lib__rect3(realsolid)],
 // 4 16 3.2154 0 8.5359 3.2154 0 12 3.2154 1 12 3.2154 1 8.5359
   [4,16,3.2154,0,8.5359,3.2154,0,12,3.2154,1,12,3.2154,1,8.5359],
 // 4 16 3.2154 1 8.5359 3.6077 1 7.1547 3.6077 0 7.1547 3.2154 0 8.5359
@@ -74,5 +75,5 @@ function ldraw_lib__s__4494s() = [
   [5,24,8,0,13.8564,8,1,13.8564,11.3135,0,11.3134,4.1411,0,15.4545],
 ];
 module ldraw_lib__s__4494s(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__4494s(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__4494s(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__4494s(line=0.2);

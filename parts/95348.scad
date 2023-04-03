@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/rect.scad>
-function ldraw_lib__95348() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__95348(realsolid=false) = [
 // 0 Minifig Sword Scabbard with Shoulder Strap
 // 0 Name: 95348.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -206,7 +207,7 @@ function ldraw_lib__95348() = [
 // 3 16 19.5 35.338 -6.318 23.269 35.422 -5.79 19.5 46.504 -9.731
   [3,16,19.5,35.338,-6.318,23.269,35.422,-5.79,19.5,46.504,-9.731],
 // 1 16 27.95 41.9635 -4.48725 0 1 0 -0.731 0 -5.6185 -2.391 0 1.7175 rect.dat
-  [1,16,27.95,41.9635,-4.48725,0,1,0,-0.731,0,-5.6185,-2.391,0,1.7175, ldraw_lib__rect()],
+  [1,16,27.95,41.9635,-4.48725,0,1,0,-0.731,0,-5.6185,-2.391,0,1.7175, ldraw_lib__rect(realsolid)],
 // 3 16 19.5 35.338 -6.318 19.5 37.423 0.757 23.269 35.422 -5.79
   [3,16,19.5,35.338,-6.318,19.5,37.423,0.757,23.269,35.422,-5.79],
 // 4 16 23.269 35.422 -5.79 19.5 37.423 0.757 23.874 37.244 0.169 27.95 35.614 -5.16
@@ -867,5 +868,5 @@ function ldraw_lib__95348() = [
   [2,24,22.649,33.827,1.394,22.5,33.445,4.653],
 ];
 module ldraw_lib__95348(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__95348(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__95348(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__95348(line=0.2);

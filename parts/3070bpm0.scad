@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3070bs01.scad>
-function ldraw_lib__3070bpm0() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3070bpm0(realsolid=false) = [
 // 0 Tile  1 x  1 with LOTR Ent Eye Pattern
 // 0 Name: 3070bpm0.dat
 // 0 Author: Joao Almeida [TullariS]
@@ -17,7 +18,7 @@ function ldraw_lib__3070bpm0() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3070bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3070bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3070bs01(realsolid)],
 // 4 0 -8.15 0 1.6 -7.17 0 -0.4 -7.03 0 1.04 -7.54 0 3.31
   [4,0,-8.15,0,1.6,-7.17,0,-0.4,-7.03,0,1.04,-7.54,0,3.31],
 // 4 0 -6.61 0 -3.23 -7.03 0 -1.84 -8.15 0 -2.35 -7.71 0 -3.69
@@ -822,5 +823,5 @@ function ldraw_lib__3070bpm0() = [
   [3,25,-1,0,3.83,-1.76,0,2.57,-1.14,0,2.9],
 ];
 module ldraw_lib__3070bpm0(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3070bpm0(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3070bpm0(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3070bpm0(line=0.2);

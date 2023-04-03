@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3010s01.scad>
-function ldraw_lib__3010pzg() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3010pzg(realsolid=false) = [
 // 0 Brick  1 x  4 with White Spider Pattern
 // 0 Name: 3010pzg.dat
 // 0 Author: Damien Roux [Darats]
@@ -17,7 +18,7 @@ function ldraw_lib__3010pzg() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3010s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3010s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3010s01(realsolid)],
 // 4 15 -40 24 -10 -20.851 18.085 -10 -21.031 15.12 -10 -40 19.749 -10
   [4,15,-40,24,-10,-20.851,18.085,-10,-21.031,15.12,-10,-40,19.749,-10],
 // 4 15 -40 18.514 -10 -20.844 13.839 -10 -21.059 10.857 -10 -40 13.98 -10
@@ -356,5 +357,5 @@ function ldraw_lib__3010pzg() = [
   [3,16,20.851,18.085,-10,10.788,24,-10,40,24,-10],
 ];
 module ldraw_lib__3010pzg(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3010pzg(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3010pzg(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3010pzg(line=0.2);

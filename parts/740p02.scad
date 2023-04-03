@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/2-4disc.scad>
 use <../p/2-4ndis.scad>
 use <s/740s01.scad>
-function ldraw_lib__740p02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__740p02(realsolid=false) = [
 // 0 Roadsign Square Large without Base with Parking Narrow Pattern
 // 0 Name: 740p02.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -17,12 +18,12 @@ function ldraw_lib__740p02() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\740s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__740s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__740s01(realsolid)],
 // 0 //
 // 1 16 0.4 -67.4 -2 0 0 4.6 4.5 0 0 0 1 0 2-4ndis.dat
-  [1,16,0.4,-67.4,-2,0,0,4.6,4.5,0,0,0,1,0, ldraw_lib__2_4ndis()],
+  [1,16,0.4,-67.4,-2,0,0,4.6,4.5,0,0,0,1,0, ldraw_lib__2_4ndis(realsolid)],
 // 1 16 5 -67.4 -2 0 0 5.5 6.3 0 0 0 1 0 2-4disc.dat
-  [1,16,5,-67.4,-2,0,0,5.5,6.3,0,0,0,1,0, ldraw_lib__2_4disc()],
+  [1,16,5,-67.4,-2,0,0,5.5,6.3,0,0,0,1,0, ldraw_lib__2_4disc(realsolid)],
 // 4 16 5 -61.1 -2 0.4 -62.9 -2 -1 -62.9 -2 -1 -61.1 -2
   [4,16,5,-61.1,-2,0.4,-62.9,-2,-1,-62.9,-2,-1,-61.1,-2],
 // 3 16 0.4 -71.9 -2 5 -71.9 -2 5 -73.7 -2
@@ -47,9 +48,9 @@ function ldraw_lib__740p02() = [
   [3,16,5,-62.9,-2,0.4,-62.9,-2,5,-61.1,-2],
 // 0 //
 // 1 1 5 -67.4 -2 0 0 5.5 6.3 0 0 0 1 0 2-4ndis.dat
-  [1,1,5,-67.4,-2,0,0,5.5,6.3,0,0,0,1,0, ldraw_lib__2_4ndis()],
+  [1,1,5,-67.4,-2,0,0,5.5,6.3,0,0,0,1,0, ldraw_lib__2_4ndis(realsolid)],
 // 1 1 0.4 -67.4 -2 0 0 4.6 4.5 0 0 0 1 0 2-4disc.dat
-  [1,1,0.4,-67.4,-2,0,0,4.6,4.5,0,0,0,1,0, ldraw_lib__2_4disc()],
+  [1,1,0.4,-67.4,-2,0,0,4.6,4.5,0,0,0,1,0, ldraw_lib__2_4disc(realsolid)],
 // 3 1 -8 -73.4 -2 -8 -73.7 -2 -17 -78 -2
   [3,1,-8,-73.4,-2,-8,-73.7,-2,-17,-78,-2],
 // 4 1 1.3 -49 -2 1.3 -48.6 -2 17 -44 -2 10.5 -61.1 -2
@@ -75,5 +76,5 @@ function ldraw_lib__740p02() = [
 // 0 //
 ];
 module ldraw_lib__740p02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__740p02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__740p02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__740p02(line=0.2);

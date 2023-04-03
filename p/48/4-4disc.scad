@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__48__4_4disc() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__48__4_4disc(realsolid=false) = [
 // 0 Hi-Res Disc 1.0
 // 0 Name: 48\4-4disc.dat
 // 0 Author: Miklos Hosszu [hmick]
@@ -115,5 +116,5 @@ function ldraw_lib__48__4_4disc() = [
   [3,16,0.9914,0,-0.1305,1,0,0,0,0,0],
 ];
 module ldraw_lib__48__4_4disc(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__48__4_4disc(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__48__4_4disc(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__48__4_4disc(line=0.2);

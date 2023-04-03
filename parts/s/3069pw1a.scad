@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__3069pw1a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__3069pw1a(realsolid=false) = [
 // 0 ~Tile  1 x  2 with Playing Cards Pattern - Letter A
 // 0 Name: s\3069pw1a.dat
 // 0 Author: Willy Tschager [Holly-Wood]
@@ -52,5 +53,5 @@ function ldraw_lib__s__3069pw1a() = [
 // 0
 ];
 module ldraw_lib__s__3069pw1a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__3069pw1a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__3069pw1a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__3069pw1a(line=0.2);

@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/2-4ering.scad>
 use <../../p/2-4ndis.scad>
-function ldraw_lib__s__3010pzbs01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__3010pzbs01(realsolid=false) = [
 // 0 ~Brick  1 x  4 with Black Batman Logo in Black Outlined Yellow Oval Pattern - Half
 // 0 Name: s\3010pzbs01.dat
 // 0 Author: Damien Roux [Darats]
@@ -16,9 +17,9 @@ function ldraw_lib__s__3010pzbs01() = [
 // 
 // 
 // 1 16 0 12 0 0 0 -18.25 -10 0 0 0 1 0 2-4ndis.dat
-  [1,16,0,12,0,0,0,-18.25,-10,0,0,0,1,0, ldraw_lib__2_4ndis()],
+  [1,16,0,12,0,0,0,-18.25,-10,0,0,0,1,0, ldraw_lib__2_4ndis(realsolid)],
 // 1 0 0 12 0 0 0 -18.25 -10 0 0 0 1 0 2-4ering.dat
-  [1,0,0,12,0,0,0,-18.25,-10,0,0,0,1,0, ldraw_lib__2_4ering()],
+  [1,0,0,12,0,0,0,-18.25,-10,0,0,0,1,0, ldraw_lib__2_4ering(realsolid)],
 // 3 0 -16.978 11.542 0 -18.25 12 0 -17 12 0
   [3,0,-16.978,11.542,0,-18.25,12,0,-17,12,0],
 // 3 0 -17 12 0 -18.25 12 0 -16.978 12.458 0
@@ -357,5 +358,5 @@ function ldraw_lib__s__3010pzbs01() = [
   [4,16,-18.25,22,0,-40,24,0,0,24,0,0,22,0],
 ];
 module ldraw_lib__s__3010pzbs01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__3010pzbs01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__3010pzbs01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__3010pzbs01(line=0.2);

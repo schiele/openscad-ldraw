@@ -7,7 +7,8 @@ use <../p/4-4ring2.scad>
 use <../p/4-4ring9.scad>
 use <../p/axlehol2.scad>
 use <../p/axlehole.scad>
-function ldraw_lib__u9510() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__u9510(realsolid=false) = [
 // 0 Electric Technic Motor 4.5V  6 x 17 x 5 Axle Type 2
 // 0 Name: u9510.dat
 // 0 Author: Javier Orquera [kuramapika1]
@@ -23,37 +24,37 @@ function ldraw_lib__u9510() = [
 // 
 // 
 // 1 16 0 0 0 3 0 0 0 0 3 0 1 0 4-4ring2.dat
-  [1,16,0,0,0,3,0,0,0,0,3,0,1,0, ldraw_lib__4_4ring2()],
+  [1,16,0,0,0,3,0,0,0,0,3,0,1,0, ldraw_lib__4_4ring2(realsolid)],
 // 1 16 0 0 19.25 9 0 0 0 0 9 0 -12.25 0 4-4cylo.dat
-  [1,16,0,0,19.25,9,0,0,0,0,9,0,-12.25,0, ldraw_lib__4_4cylo()],
+  [1,16,0,0,19.25,9,0,0,0,0,9,0,-12.25,0, ldraw_lib__4_4cylo(realsolid)],
 // 1 16 0 0 4 9 0 0 0 0 9 0 -4 0 4-4cylo.dat
-  [1,16,0,0,4,9,0,0,0,0,9,0,-4,0, ldraw_lib__4_4cylo()],
+  [1,16,0,0,4,9,0,0,0,0,9,0,-4,0, ldraw_lib__4_4cylo(realsolid)],
 // 1 16 0 0 4 10 0 0 0 0 10 0 3 0 4-4cylo.dat
-  [1,16,0,0,4,10,0,0,0,0,10,0,3,0, ldraw_lib__4_4cylo()],
+  [1,16,0,0,4,10,0,0,0,0,10,0,3,0, ldraw_lib__4_4cylo(realsolid)],
 // 1 16 0 0 0 1 0 0 0 0 1 0 19.25 0 axlehole.dat
-  [1,16,0,0,0,1,0,0,0,0,1,0,19.25,0, ldraw_lib__axlehole()],
+  [1,16,0,0,0,1,0,0,0,0,1,0,19.25,0, ldraw_lib__axlehole(realsolid)],
 // 1 16 0 0 0 1 0 0 0 0 1 0 1 0 axlehol2.dat
-  [1,16,0,0,0,1,0,0,0,0,1,0,1,0, ldraw_lib__axlehol2()],
+  [1,16,0,0,0,1,0,0,0,0,1,0,1,0, ldraw_lib__axlehol2(realsolid)],
 // 1 16 0 0 19.25 1 0 0 0 0 1 0 1 0 axlehol2.dat
-  [1,16,0,0,19.25,1,0,0,0,0,1,0,1,0, ldraw_lib__axlehol2()],
+  [1,16,0,0,19.25,1,0,0,0,0,1,0,1,0, ldraw_lib__axlehol2(realsolid)],
 // 1 16 0 0 7 -1 0 0 0 0 1 0 -1 0 4-4ring9.dat
-  [1,16,0,0,7,-1,0,0,0,0,1,0,-1,0, ldraw_lib__4_4ring9()],
+  [1,16,0,0,7,-1,0,0,0,0,1,0,-1,0, ldraw_lib__4_4ring9(realsolid)],
 // 1 16 0 0 4 1 0 0 0 0 1 0 1 0 4-4ring9.dat
-  [1,16,0,0,4,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4ring9()],
+  [1,16,0,0,4,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4ring9(realsolid)],
 // 1 16 0 0 19.25 10 0 0 0 0 10 0 14.75 0 4-4cylo.dat
-  [1,16,0,0,19.25,10,0,0,0,0,10,0,14.75,0, ldraw_lib__4_4cylo()],
+  [1,16,0,0,19.25,10,0,0,0,0,10,0,14.75,0, ldraw_lib__4_4cylo(realsolid)],
 // 1 16 0 0 19.25 1 0 0 0 0 1 0 1 0 4-4ring9.dat
-  [1,16,0,0,19.25,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4ring9()],
+  [1,16,0,0,19.25,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4ring9(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 21.25 -2.5 0 0 0 0 2.5 0 -2 0 4-4cylc.dat
-  [1,16,0,0,21.25,-2.5,0,0,0,0,2.5,0,-2,0, ldraw_lib__4_4cylc()],
+  [1,16,0,0,21.25,-2.5,0,0,0,0,2.5,0,-2,0, ldraw_lib__4_4cylc(realsolid)],
 // 1 16 0 0 34 5 0 0 0 0 5 0 -1 0 4-4ring1.dat
-  [1,16,0,0,34,5,0,0,0,0,5,0,-1,0, ldraw_lib__4_4ring1()],
+  [1,16,0,0,34,5,0,0,0,0,5,0,-1,0, ldraw_lib__4_4ring1(realsolid)],
 // 1 16 0 0 34 2.5 0 0 0 0 2.5 0 -1 0 4-4ring1.dat
-  [1,16,0,0,34,2.5,0,0,0,0,2.5,0,-1,0, ldraw_lib__4_4ring1()],
+  [1,16,0,0,34,2.5,0,0,0,0,2.5,0,-1,0, ldraw_lib__4_4ring1(realsolid)],
 // 1 16 0 0 38 -2.5 0 0 0 0 2.5 0 -4 0 4-4cylc.dat
-  [1,16,0,0,38,-2.5,0,0,0,0,2.5,0,-4,0, ldraw_lib__4_4cylc()],
+  [1,16,0,0,38,-2.5,0,0,0,0,2.5,0,-4,0, ldraw_lib__4_4cylc(realsolid)],
 // 3 16 -2 -5.6023 19.25 -2 -4 19.25 0 -6 19.25
   [3,16,-2,-5.6023,19.25,-2,-4,19.25,0,-6,19.25],
 // 4 16 2 -5.6023 19.25 0 -6 19.25 -2 -4 19.25 2 -4 19.25
@@ -87,8 +88,8 @@ function ldraw_lib__u9510() = [
 // 4 16 2.5 0 19.25 4 2 19.25 4 -2 19.25 2.5 -2.5 19.25
   [4,16,2.5,0,19.25,4,2,19.25,4,-2,19.25,2.5,-2.5,19.25],
 // 1 16 0 0 19.25 2.5 0 0 0 0 2.5 0 1 0 4-4ndis.dat
-  [1,16,0,0,19.25,2.5,0,0,0,0,2.5,0,1,0, ldraw_lib__4_4ndis()],
+  [1,16,0,0,19.25,2.5,0,0,0,0,2.5,0,1,0, ldraw_lib__4_4ndis(realsolid)],
 ];
 module ldraw_lib__u9510(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__u9510(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__u9510(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__u9510(line=0.2);

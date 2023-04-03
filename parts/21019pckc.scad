@@ -2,7 +2,8 @@ use <../lib.scad>
 use <20460pckc.scad>
 use <20461pckc.scad>
 use <3815bpckc.scad>
-function ldraw_lib__21019pckc() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__21019pckc(realsolid=false) = [
 // 0 Minifig Hips and Legs with Wetsuit, Coral and Dark Azure Trim Pattern
 // 0 Name: 21019pckc.dat
 // 0 Author: Chris Dee [cwdee]
@@ -21,12 +22,12 @@ function ldraw_lib__21019pckc() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 3815bpckc.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3815bpckc()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3815bpckc(realsolid)],
 // 1 16 0 12 0 1 0 0 0 01 0 0 0 1 20461pckc.dat
-  [1,16,0,12,0,1,0,0,0,01,0,0,0,1, ldraw_lib__20461pckc()],
+  [1,16,0,12,0,1,0,0,0,01,0,0,0,1, ldraw_lib__20461pckc(realsolid)],
 // 1 16 0 12 0 1 0 0 0 01 0 0 0 1 20460pckc.dat
-  [1,16,0,12,0,1,0,0,0,01,0,0,0,1, ldraw_lib__20460pckc()],
+  [1,16,0,12,0,1,0,0,0,01,0,0,0,1, ldraw_lib__20460pckc(realsolid)],
 ];
 module ldraw_lib__21019pckc(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__21019pckc(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__21019pckc(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__21019pckc(line=0.2);

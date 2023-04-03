@@ -5,7 +5,8 @@ use <../../p/4-4cylc.scad>
 use <../../p/rect.scad>
 use <../../p/rect2p.scad>
 use <../../p/rect3.scad>
-function ldraw_lib__s__23860s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__23860s01(realsolid=false) = [
 // 0 ~Minifig Weapon Blade Faceted 3.8 L with Bar 0.5 L - Half Blade
 // 0 Name: s\23860s01.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -23,25 +24,25 @@ function ldraw_lib__s__23860s01() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 2.5 -18 0 0 1.5 0 6 0 0 0 0 6 4-4cylc.dat
-  [1,16,2.5,-18,0,0,1.5,0,6,0,0,0,0,6, ldraw_lib__4_4cylc()],
+  [1,16,2.5,-18,0,0,1.5,0,6,0,0,0,0,6, ldraw_lib__4_4cylc(realsolid)],
 // 1 16 4 -18 0 0 -1 0 0 0 6 6 0 0 2-4ndis.dat
-  [1,16,4,-18,0,0,-1,0,0,0,6,6,0,0, ldraw_lib__2_4ndis()],
+  [1,16,4,-18,0,0,-1,0,0,0,6,6,0,0, ldraw_lib__2_4ndis(realsolid)],
 // 1 16 4 -18 0 0 -1 0 -6 0 0 0 0 -6 1-4tang.dat
-  [1,16,4,-18,0,0,-1,0,-6,0,0,0,0,-6, ldraw_lib__1_4tang()],
+  [1,16,4,-18,0,0,-1,0,-6,0,0,0,0,-6, ldraw_lib__1_4tang(realsolid)],
 // 1 16 4 -18 0 0 -1 0 -6 0 0 0 0 6 1-4tang.dat
-  [1,16,4,-18,0,0,-1,0,-6,0,0,0,0,6, ldraw_lib__1_4tang()],
+  [1,16,4,-18,0,0,-1,0,-6,0,0,0,0,6, ldraw_lib__1_4tang(realsolid)],
 // 1 16 0 -43.875 8.75 0 0 1.125 -13.425 0 0 0 -1 0 rect2p.dat
-  [1,16,0,-43.875,8.75,0,0,1.125,-13.425,0,0,0,-1,0, ldraw_lib__rect2p()],
+  [1,16,0,-43.875,8.75,0,0,1.125,-13.425,0,0,0,-1,0, ldraw_lib__rect2p(realsolid)],
 // 1 16 1.5625 -43.875 3.625 0 0 .4375 8.75 0 0 0 -1 0 rect.dat
-  [1,16,1.5625,-43.875,3.625,0,0,.4375,8.75,0,0,0,-1,0, ldraw_lib__rect()],
+  [1,16,1.5625,-43.875,3.625,0,0,.4375,8.75,0,0,0,-1,0, ldraw_lib__rect(realsolid)],
 // 1 16 1.5625 -43.875 -3.625 0 0 .4375 8.75 0 0 0 1 0 rect.dat
-  [1,16,1.5625,-43.875,-3.625,0,0,.4375,8.75,0,0,0,1,0, ldraw_lib__rect()],
+  [1,16,1.5625,-43.875,-3.625,0,0,.4375,8.75,0,0,0,1,0, ldraw_lib__rect(realsolid)],
 // 1 16 0 -62.275 8.75 -1.125 0 0 0 0 -4.975 0 -1 0 rect3.dat
-  [1,16,0,-62.275,8.75,-1.125,0,0,0,0,-4.975,0,-1,0, ldraw_lib__rect3()],
+  [1,16,0,-62.275,8.75,-1.125,0,0,0,0,-4.975,0,-1,0, ldraw_lib__rect3(realsolid)],
 // 1 16 3 -25.5 0 0 0 -1 0 1 0 3 0 0 rect.dat
-  [1,16,3,-25.5,0,0,0,-1,0,1,0,3,0,0, ldraw_lib__rect()],
+  [1,16,3,-25.5,0,0,0,-1,0,1,0,3,0,0, ldraw_lib__rect(realsolid)],
 // 1 16 0 -23.225 8.75 1.125 0 0 0 0 7.225 0 -1 0 rect3.dat
-  [1,16,0,-23.225,8.75,1.125,0,0,0,0,7.225,0,-1,0, ldraw_lib__rect3()],
+  [1,16,0,-23.225,8.75,1.125,0,0,0,0,7.225,0,-1,0, ldraw_lib__rect3(realsolid)],
 // 0 // Faces
 // 4 16 2 -52.625 3.625 2 -52.625 -3.625 2 -35.125 -3.625 2 -35.125 3.625
   [4,16,2,-52.625,3.625,2,-52.625,-3.625,2,-35.125,-3.625,2,-35.125,3.625],
@@ -267,5 +268,5 @@ function ldraw_lib__s__23860s01() = [
   [5,24,-.6783,-83.5885,1.8385,.6783,-83.5885,1.8385,.6633,-82.745,2.4021,-.7744,-84.1521,.995],
 ];
 module ldraw_lib__s__23860s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__23860s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__23860s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__23860s01(line=0.2);

@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/4-4cyli.scad>
 use <../p/t04q3750.scad>
-function ldraw_lib__60169k02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__60169k02(realsolid=false) = [
 // 0 Minifig Chain Link for Chain 16L
 // 0 Name: 60169k02.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -25,18 +26,18 @@ function ldraw_lib__60169k02() = [
 // 
 // 
 // 1 16 4 0 0 1.5 0 0 0 -8 0 0 0 1.5 4-4cyli.dat
-  [1,16,4,0,0,1.5,0,0,0,-8,0,0,0,1.5, ldraw_lib__4_4cyli()],
+  [1,16,4,0,0,1.5,0,0,0,-8,0,0,0,1.5, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 -4 0 0 1.5 0 0 0 -8 0 0 0 1.5 4-4cyli.dat
-  [1,16,-4,0,0,1.5,0,0,0,-8,0,0,0,1.5, ldraw_lib__4_4cyli()],
+  [1,16,-4,0,0,1.5,0,0,0,-8,0,0,0,1.5, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 0 0 -4 0 0 0 0 4 0 4 0 t04q3750.dat
-  [1,16,0,0,0,-4,0,0,0,0,4,0,4,0, ldraw_lib__t04q3750()],
+  [1,16,0,0,0,-4,0,0,0,0,4,0,4,0, ldraw_lib__t04q3750(realsolid)],
 // 1 16 0 0 0 4 0 0 0 0 4 0 -4 0 t04q3750.dat
-  [1,16,0,0,0,4,0,0,0,0,4,0,-4,0, ldraw_lib__t04q3750()],
+  [1,16,0,0,0,4,0,0,0,0,4,0,-4,0, ldraw_lib__t04q3750(realsolid)],
 // 1 16 0 -8 0 4 0 0 0 0 -4 0 4 0 t04q3750.dat
-  [1,16,0,-8,0,4,0,0,0,0,-4,0,4,0, ldraw_lib__t04q3750()],
+  [1,16,0,-8,0,4,0,0,0,0,-4,0,4,0, ldraw_lib__t04q3750(realsolid)],
 // 1 16 0 -8 0 -4 0 0 0 0 -4 0 -4 0 t04q3750.dat
-  [1,16,0,-8,0,-4,0,0,0,0,-4,0,-4,0, ldraw_lib__t04q3750()],
+  [1,16,0,-8,0,-4,0,0,0,0,-4,0,-4,0, ldraw_lib__t04q3750(realsolid)],
 ];
 module ldraw_lib__60169k02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__60169k02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__60169k02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__60169k02(line=0.2);

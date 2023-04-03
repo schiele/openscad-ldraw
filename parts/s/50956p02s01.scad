@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <50956p02s02.scad>
 use <50956s02.scad>
-function ldraw_lib__s__50956p02s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__50956p02s01(realsolid=false) = [
 // 0 ~Wedge 10 x  3 x  1 Double Rounded without Studs with Louvres Pattern
 // 0 Name: s\50956p02s01.dat
 // 0 Author: Ulrich Röder [UR]
@@ -18,9 +19,9 @@ function ldraw_lib__s__50956p02s01() = [
 // 0 // Main
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\50956p02s02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__50956p02s02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__50956p02s02(realsolid)],
 // 1 16 0 0 40 1 0 0 0 1 0 0 0 1 s\50956s02.dat
-  [1,16,0,0,40,1,0,0,0,1,0,0,0,1, ldraw_lib__s__50956s02()],
+  [1,16,0,0,40,1,0,0,0,1,0,0,0,1, ldraw_lib__s__50956s02(realsolid)],
 // 4 16 -10 0 -30 10 0 -30 10 0 10 -10 0 10
   [4,16,-10,0,-30,10,0,-30,10,0,10,-10,0,10],
 // 4 16 10 0.1 -50 10 0 -30 -10 0 -30 -10 0.1 -50
@@ -129,5 +130,5 @@ function ldraw_lib__s__50956p02s01() = [
   [5,24,-10,10.5,-150,-20,20,-150,-25,20,-130,-16.25,20,-165],
 ];
 module ldraw_lib__s__50956p02s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__50956p02s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__50956p02s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__50956p02s01(line=0.2);

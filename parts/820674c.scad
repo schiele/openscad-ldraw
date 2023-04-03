@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__820674c() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__820674c(realsolid=false) = [
 // 0 Sticker  0.9 x  1.6 with White "C12"
 // 0 Name: 820674c.dat
 // 0 Author: Alexandre Bourdais [x-or]
@@ -17,7 +18,7 @@ function ldraw_lib__820674c() = [
 // 
 // 
 // 1 16 0 -0.25 0 16 0 0 0 0.25 0 0 0 8.5 box5-12.dat
-  [1,16,0,-0.25,0,16,0,0,0,0.25,0,0,0,8.5, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,16,0,0,0,0.25,0,0,0,8.5, ldraw_lib__box5_12(realsolid)],
 // 4 15 -5.2 -0.25 1.8 -3.3 -0.25 1.8 -3.4 -0.25 2.7 -5.3 -0.25 2.4
   [4,15,-5.2,-0.25,1.8,-3.3,-0.25,1.8,-3.4,-0.25,2.7,-5.3,-0.25,2.4],
 // 4 15 -5.3 -0.25 2.4 -3.4 -0.25 2.7 -3.7 -0.25 3.4 -4.1 -0.25 4
@@ -310,5 +311,5 @@ function ldraw_lib__820674c() = [
   [3,16,-16,-0.25,8.5,-12.7,-0.25,1.6,-12.4,-0.25,2.5],
 ];
 module ldraw_lib__820674c(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__820674c(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__820674c(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__820674c(line=0.2);

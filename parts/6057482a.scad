@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__6057482a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6057482a(realsolid=false) = [
 // 0 Sticker  0.8 x  1.9 with  7 Gauges
 // 0 Name: 6057482a.dat
 // 0 Author: Johann Eisner [technicbasics]
@@ -17,7 +18,7 @@ function ldraw_lib__6057482a() = [
 // 
 // 
 // 1 16 0 -.25 0 19 0 0 0 .25 0 0 0 8 box5-12.dat
-  [1,16,0,-.25,0,19,0,0,0,.25,0,0,0,8, ldraw_lib__box5_12()],
+  [1,16,0,-.25,0,19,0,0,0,.25,0,0,0,8, ldraw_lib__box5_12(realsolid)],
 // 4 0 .18 -.25 4.87 .45 -.25 6.09 -.46 -.25 6.09 -.19 -.25 4.87
   [4,0,.18,-.25,4.87,.45,-.25,6.09,-.46,-.25,6.09,-.19,-.25,4.87],
 // 4 0 1.75 -.25 4.23 2.71 -.25 5.1 1.96 -.25 5.6 1.45 -.25 4.44
@@ -912,5 +913,5 @@ function ldraw_lib__6057482a() = [
   [3,0,3.89,-.25,1.42,3.68,-.25,.52,6.72,-.25,.52],
 ];
 module ldraw_lib__6057482a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6057482a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6057482a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6057482a(line=0.2);

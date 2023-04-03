@@ -4,7 +4,8 @@ use <../p/4-4ering.scad>
 use <../p/4-4rin10.scad>
 use <../p/4-4rin19.scad>
 use <../p/4-4ring9.scad>
-function ldraw_lib__195985e() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__195985e(realsolid=false) = [
 // 0 Sticker  2.1 x  2.1 Round with Blue Motorcycle and Red Circle
 // 0 Name: 195985e.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -22,15 +23,15 @@ function ldraw_lib__195985e() = [
 // 
 // 
 // 1 16 0 0 0 22 0 0 0 -0.25 0 0 0 22 4-4cylc3.dat
-  [1,16,0,0,0,22,0,0,0,-0.25,0,0,0,22, ldraw_lib__4_4cylc3()],
+  [1,16,0,0,0,22,0,0,0,-0.25,0,0,0,22, ldraw_lib__4_4cylc3(realsolid)],
 // 1 4 0 -.25 0 1.9 0 0 0 1 0 0 0 1.9 4-4ring9.dat
-  [1,4,0,-.25,0,1.9,0,0,0,1,0,0,0,1.9, ldraw_lib__4_4ring9()],
+  [1,4,0,-.25,0,1.9,0,0,0,1,0,0,0,1.9, ldraw_lib__4_4ring9(realsolid)],
 // 1 15 0 -.25 0 1 0 0 0 1 0 0 0 1 4-4rin19.dat
-  [1,15,0,-.25,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4rin19()],
+  [1,15,0,-.25,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4rin19(realsolid)],
 // 1 15 0 -.25 0 2 0 0 0 1 0 0 0 2 4-4rin10.dat
-  [1,15,0,-.25,0,2,0,0,0,1,0,0,0,2, ldraw_lib__4_4rin10()],
+  [1,15,0,-.25,0,2,0,0,0,1,0,0,0,2, ldraw_lib__4_4rin10(realsolid)],
 // 1 15 0 -.25 0 17.1 0 0 0 1 0 0 0 17.1 4-4ering.dat
-  [1,15,0,-.25,0,17.1,0,0,0,1,0,0,0,17.1, ldraw_lib__4_4ering()],
+  [1,15,0,-.25,0,17.1,0,0,0,1,0,0,0,17.1, ldraw_lib__4_4ering(realsolid)],
 // 4 1 -5.1 -.25 10.1 -5.5 -.25 9.6 -5.1 -.25 9.2 -3.2 -.25 10.2
   [4,1,-5.1,-.25,10.1,-5.5,-.25,9.6,-5.1,-.25,9.2,-3.2,-.25,10.2],
 // 4 1 -2.8 -.25 9.8 -3.2 -.25 10.2 -5.1 -.25 9.2 -3.2 -.25 9.3
@@ -677,5 +678,5 @@ function ldraw_lib__195985e() = [
   [4,0,-8.5,-.25,9.5,-8.9,-.25,8.9,-8.9,-.25,6.6,-8.5,-.25,6.2],
 ];
 module ldraw_lib__195985e(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__195985e(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__195985e(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__195985e(line=0.2);

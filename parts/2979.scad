@@ -2,7 +2,8 @@ use <../lib.scad>
 use <2979a.scad>
 use <../p/box3u5p.scad>
 use <../p/box3u7a.scad>
-function ldraw_lib__2979() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2979(realsolid=false) = [
 // 0 ~Electric Temperature Sensor Top (Obsolete)
 // 0 Name: 2979.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -21,15 +22,15 @@ function ldraw_lib__2979() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 2979a.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2979a()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2979a(realsolid)],
 // 0 // wire stump
 // 1 0 -31 15 0 -5 0 0 0 0 -1 0 -3 0 box3u7a.dat
-  [1,0,-31,15,0,-5,0,0,0,0,-1,0,-3,0, ldraw_lib__box3u7a()],
+  [1,0,-31,15,0,-5,0,0,0,0,-1,0,-3,0, ldraw_lib__box3u7a(realsolid)],
 // 1 0 -31 15 0 -5 0 0 0 0 -1 0 3 0 box3u5p.dat
-  [1,0,-31,15,0,-5,0,0,0,0,-1,0,3,0, ldraw_lib__box3u5p()],
+  [1,0,-31,15,0,-5,0,0,0,0,-1,0,3,0, ldraw_lib__box3u5p(realsolid)],
 // 4 0 -36 14 -3 -36 14 3 -36 16 3 -36 16 -3
   [4,0,-36,14,-3,-36,14,3,-36,16,3,-36,16,-3],
 ];
 module ldraw_lib__2979(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2979(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2979(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2979(line=0.2);

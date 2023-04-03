@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__821410a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__821410a(realsolid=false) = [
 // 0 Sticker  3.5 x  3.5 with White/Clear Stripes
 // 0 Name: 821410a.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -20,7 +21,7 @@ function ldraw_lib__821410a() = [
 // 
 // 
 // 1 16 0 -0.25 0 35 0 0 0 0.25 0 0 0 35 box5-12.dat
-  [1,16,0,-0.25,0,35,0,0,0,0.25,0,0,0,35, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,35,0,0,0,0.25,0,0,0,35, ldraw_lib__box5_12(realsolid)],
 // 4 16 -35 -0.25 -32.45 35 -0.25 -32.45 35 -0.25 -35 -35 -0.25 -35
   [4,16,-35,-0.25,-32.45,35,-0.25,-32.45,35,-0.25,-35,-35,-0.25,-35],
 // 4 15 -35 -0.25 -28.87 35 -0.25 -28.87 35 -0.25 -32.45 -35 -0.25 -32.45
@@ -69,5 +70,5 @@ function ldraw_lib__821410a() = [
   [4,16,-35,-0.25,35,35,-0.25,35,35,-0.25,32.45,-35,-0.25,32.45],
 ];
 module ldraw_lib__821410a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__821410a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__821410a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__821410a(line=0.2);

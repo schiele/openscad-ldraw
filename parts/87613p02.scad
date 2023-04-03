@@ -9,7 +9,8 @@ use <../p/stud3.scad>
 use <../p/stud4a.scad>
 use <../p/stug-2x1.scad>
 use <../p/stug-4x1.scad>
-function ldraw_lib__87613p02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__87613p02(realsolid=false) = [
 // 0 Plane Front  6 x 10 x  4 with Black Roof Pattern
 // 0 Name: 87613p02.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -26,45 +27,45 @@ function ldraw_lib__87613p02() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\87613s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__87613s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__87613s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\87613s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__87613s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__87613s01(realsolid)],
 // 1 16 0 2.75 10 1 0 0 0 -1.3125 0 0 0 1 stud3.dat
-  [1,16,0,2.75,10,1,0,0,0,-1.3125,0,0,0,1, ldraw_lib__stud3()],
+  [1,16,0,2.75,10,1,0,0,0,-1.3125,0,0,0,1, ldraw_lib__stud3(realsolid)],
 // 1 16 0 0 -10 0 0 -1 0 1 0 1 0 0 stug-2x1.dat
-  [1,16,0,0,-10,0,0,-1,0,1,0,1,0,0, ldraw_lib__stug_2x1()],
+  [1,16,0,0,-10,0,0,-1,0,1,0,1,0,0, ldraw_lib__stug_2x1(realsolid)],
 // 1 16 0 0 10 0 0 -1 0 1 0 1 0 0 stug-4x1.dat
-  [1,16,0,0,10,0,0,-1,0,1,0,1,0,0, ldraw_lib__stug_4x1()],
+  [1,16,0,0,10,0,0,-1,0,1,0,1,0,0, ldraw_lib__stug_4x1(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 76 -140 0 0 -6 0 -2.7 0 -6 0 0 4-4cyls.dat
-  [1,16,0,76,-140,0,0,-6,0,-2.7,0,-6,0,0, ldraw_lib__4_4cyls()],
+  [1,16,0,76,-140,0,0,-6,0,-2.7,0,-6,0,0, ldraw_lib__4_4cyls(realsolid)],
 // 1 16 0 77 -140 0 0 -8 0 -3.6 0 -8 0 0 4-4cyls.dat
-  [1,16,0,77,-140,0,0,-8,0,-3.6,0,-8,0,0, ldraw_lib__4_4cyls()],
+  [1,16,0,77,-140,0,0,-8,0,-3.6,0,-8,0,0, ldraw_lib__4_4cyls(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 92 -140 -6 0 0 0 -16 0 0 0 6 4-4cyli.dat
-  [1,16,0,92,-140,-6,0,0,0,-16,0,0,0,6, ldraw_lib__4_4cyli()],
+  [1,16,0,92,-140,-6,0,0,0,-16,0,0,0,6, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 92 -140 -8 0 0 0 -15 0 0 0 8 4-4cyli.dat
-  [1,16,0,92,-140,-8,0,0,0,-15,0,0,0,8, ldraw_lib__4_4cyli()],
+  [1,16,0,92,-140,-8,0,0,0,-15,0,0,0,8, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 92 -140 1 0 0 0 -1 0 0 0 1 stud4a.dat
-  [1,16,0,92,-140,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4a()],
+  [1,16,0,92,-140,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4a(realsolid)],
 // 
 // 0 // top patternable area
 // 1 0 0 0 0 1 0 0 0 1 0 0 0 1 s\87613s03.dat
-  [1,0,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__87613s03()],
+  [1,0,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__87613s03(realsolid)],
 // 1 0 0 0 0 -1 0 0 0 1 0 0 0 1 s\87613s03.dat
-  [1,0,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__87613s03()],
+  [1,0,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__87613s03(realsolid)],
 // 0 // front patternable area
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\87613s02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__87613s02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__87613s02(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\87613s02.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__87613s02()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__87613s02(realsolid)],
 // 0 // sides patternable area
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\87613s04.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__87613s04()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__87613s04(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\87613s04.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__87613s04()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__87613s04(realsolid)],
 // 
 // 0 // Condlines
 // 5 24 0 83.59 -162.06 0 82.56 -160 8.81 83.01 -160 -8.02 84.16 -162.37
@@ -133,5 +134,5 @@ function ldraw_lib__87613p02() = [
   [5,24,0,24.1,-79.08,0,22.23,-77.63,18.08,24.1,-78.86,-18.08,24.1,-78.86],
 ];
 module ldraw_lib__87613p02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__87613p02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__87613p02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__87613p02(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/4162s01.scad>
-function ldraw_lib__4162p1e() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4162p1e(realsolid=false) = [
 // 0 Tile  1 x  8 with "Trafalgar Square" Pattern
 // 0 Name: 4162p1e.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -20,7 +21,7 @@ function ldraw_lib__4162p1e() = [
 // 0 // Using font: "Arial" style: "Regular" size: 50pt
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4162s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4162s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4162s01(realsolid)],
 // 
 // 0 // Char: 84
 // 4 15 -46.9 0 5.13 -43.93 0 4.07 -42.74 0 4.07 -39.76 0 5.13
@@ -1509,5 +1510,5 @@ function ldraw_lib__4162p1e() = [
   [3,16,-25.43,0,5.29,-24.94,0,5.26,-17.03,0,5.13],
 ];
 module ldraw_lib__4162p1e(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4162p1e(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4162p1e(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4162p1e(line=0.2);

@@ -4,7 +4,8 @@ use <941.scad>
 use <942.scad>
 use <943.scad>
 use <u9550c01.scad>
-function ldraw_lib__3443bc05() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3443bc05(realsolid=false) = [
 // 0 Train Battery Box Car with Three Contact Holes, Red Switch Lever and Black Wheels (Complete)
 // 0 Name: 3443bc05.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -20,18 +21,18 @@ function ldraw_lib__3443bc05() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 941.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__941()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__941(realsolid)],
 // 1 0 0 96 0 1 0 0 0 1 0 0 0 1 3443b.dat
-  [1,0,0,96,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3443b()],
+  [1,0,0,96,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3443b(realsolid)],
 // 1 0 0 135 70 1 0 0 0 1 0 0 0 1 u9550c01.dat
-  [1,0,0,135,70,1,0,0,0,1,0,0,0,1, ldraw_lib__u9550c01()],
+  [1,0,0,135,70,1,0,0,0,1,0,0,0,1, ldraw_lib__u9550c01(realsolid)],
 // 1 0 0 135 -70 1 0 0 0 1 0 0 0 1 u9550c01.dat
-  [1,0,0,135,-70,1,0,0,0,1,0,0,0,1, ldraw_lib__u9550c01()],
+  [1,0,0,135,-70,1,0,0,0,1,0,0,0,1, ldraw_lib__u9550c01(realsolid)],
 // 1 4 0 131 -44 1 0 0 0 1 0 0 0 1 943.dat
-  [1,4,0,131,-44,1,0,0,0,1,0,0,0,1, ldraw_lib__943()],
+  [1,4,0,131,-44,1,0,0,0,1,0,0,0,1, ldraw_lib__943(realsolid)],
 // 1 4 0 128 0 0 0 -1 0 1 0 1 0 0 942.dat
-  [1,4,0,128,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__942()],
+  [1,4,0,128,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__942(realsolid)],
 ];
 module ldraw_lib__3443bc05(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3443bc05(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3443bc05(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3443bc05(line=0.2);

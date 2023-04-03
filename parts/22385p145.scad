@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4ndis.scad>
 use <s/22385s01.scad>
-function ldraw_lib__22385p145() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__22385p145(realsolid=false) = [
 // 0 Tile  3 x  2 with Angled End with Nexo Power Shield Pattern - Mechanical Griffin
 // 0 Name: 22385p145.dat
 // 0 Author: Johann Eisner [technicbasics]
@@ -17,23 +18,23 @@ function ldraw_lib__22385p145() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\22385s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__22385s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__22385s01(realsolid)],
 // 1 15 -.16 0 15.07 .37 0 0 0 1 0 0 0 .37 4-4disc.dat
-  [1,15,-.16,0,15.07,.37,0,0,0,1,0,0,0,.37, ldraw_lib__4_4disc()],
+  [1,15,-.16,0,15.07,.37,0,0,0,1,0,0,0,.37, ldraw_lib__4_4disc(realsolid)],
 // 1 0 -.16 0 15.07 .37 0 0 0 1 0 0 0 .37 4-4ndis.dat
-  [1,0,-.16,0,15.07,.37,0,0,0,1,0,0,0,.37, ldraw_lib__4_4ndis()],
+  [1,0,-.16,0,15.07,.37,0,0,0,1,0,0,0,.37, ldraw_lib__4_4ndis(realsolid)],
 // 1 0 0 0 9.41 .47 0 0 0 1 0 0 0 .47 4-4disc.dat
-  [1,0,0,0,9.41,.47,0,0,0,1,0,0,0,.47, ldraw_lib__4_4disc()],
+  [1,0,0,0,9.41,.47,0,0,0,1,0,0,0,.47, ldraw_lib__4_4disc(realsolid)],
 // 1 15 0 0 9.41 .47 0 0 0 1 0 0 0 .47 4-4ndis.dat
-  [1,15,0,0,9.41,.47,0,0,0,1,0,0,0,.47, ldraw_lib__4_4ndis()],
+  [1,15,0,0,9.41,.47,0,0,0,1,0,0,0,.47, ldraw_lib__4_4ndis(realsolid)],
 // 1 0 -4.09 0 3.63 .53 0 0 0 1 0 0 0 .53 4-4disc.dat
-  [1,0,-4.09,0,3.63,.53,0,0,0,1,0,0,0,.53, ldraw_lib__4_4disc()],
+  [1,0,-4.09,0,3.63,.53,0,0,0,1,0,0,0,.53, ldraw_lib__4_4disc(realsolid)],
 // 1 15 -4.09 0 3.63 .53 0 0 0 1 0 0 0 .53 4-4ndis.dat
-  [1,15,-4.09,0,3.63,.53,0,0,0,1,0,0,0,.53, ldraw_lib__4_4ndis()],
+  [1,15,-4.09,0,3.63,.53,0,0,0,1,0,0,0,.53, ldraw_lib__4_4ndis(realsolid)],
 // 1 0 -2.43 0 .86 .53 0 0 0 1 0 0 0 .53 4-4disc.dat
-  [1,0,-2.43,0,.86,.53,0,0,0,1,0,0,0,.53, ldraw_lib__4_4disc()],
+  [1,0,-2.43,0,.86,.53,0,0,0,1,0,0,0,.53, ldraw_lib__4_4disc(realsolid)],
 // 1 15 -2.43 0 .86 .53 0 0 0 1 0 0 0 .53 4-4ndis.dat
-  [1,15,-2.43,0,.86,.53,0,0,0,1,0,0,0,.53, ldraw_lib__4_4ndis()],
+  [1,15,-2.43,0,.86,.53,0,0,0,1,0,0,0,.53, ldraw_lib__4_4ndis(realsolid)],
 // 4 0x296CA3C 0 0 -19.6 -13.2 0 -5.8 -15.6 0 -7.1 0 0 -22.8
   [4,43436604,0,0,-19.6,-13.2,0,-5.8,-15.6,0,-7.1,0,0,-22.8],
 // 4 288 -9.6 0 -5.8 -12 0 -5.8 0 0 -19.6 0 0 -15.6
@@ -876,5 +877,5 @@ function ldraw_lib__22385p145() = [
   [2,4,0,8,-24.3501,2.92893,8,-21.4142],
 ];
 module ldraw_lib__22385p145(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__22385p145(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__22385p145(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__22385p145(line=0.2);

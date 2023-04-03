@@ -4,7 +4,8 @@ use <2980.scad>
 use <../p/7-8chrd.scad>
 use <993.scad>
 use <../p/rect.scad>
-function ldraw_lib__72633() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__72633(realsolid=false) = [
 // 0 Electric Brick  2 x  3 Sensor Temperature
 // 0 Name: 72633.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -21,19 +22,19 @@ function ldraw_lib__72633() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 2979a.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2979a()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2979a(realsolid)],
 // 1 8 0 16 0 1 0 0 0 1 0 0 0 1 2980.dat
-  [1,8,0,16,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2980()],
+  [1,8,0,16,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2980(realsolid)],
 // 0 // cable
 // 1 256 -24 14.5 0 0 -2 0 -1 0 0 0 0 1 993.dat
-  [1,256,-24,14.5,0,0,-2,0,-1,0,0,0,0,1, ldraw_lib__993()],
+  [1,256,-24,14.5,0,0,-2,0,-1,0,0,0,0,1, ldraw_lib__993(realsolid)],
 // 1 256 -26 14.5 1.3858 0 1 0 -0.574 0 -1.3858 -1.3858 0 0.574 7-8chrd.dat
-  [1,256,-26,14.5,1.3858,0,1,0,-0.574,0,-1.3858,-1.3858,0,0.574, ldraw_lib__7_8chrd()],
+  [1,256,-26,14.5,1.3858,0,1,0,-0.574,0,-1.3858,-1.3858,0,0.574, ldraw_lib__7_8chrd(realsolid)],
 // 1 256 -26 14.5 -1.3858 0 1 0 0.574 0 1.3858 1.3858 0 -0.574 7-8chrd.dat
-  [1,256,-26,14.5,-1.3858,0,1,0,0.574,0,1.3858,1.3858,0,-0.574, ldraw_lib__7_8chrd()],
+  [1,256,-26,14.5,-1.3858,0,1,0,0.574,0,1.3858,1.3858,0,-0.574, ldraw_lib__7_8chrd(realsolid)],
 // 1 0 -24 14 0 0 1 0 -2 0 0 0 0 4.5 rect.dat
-  [1,0,-24,14,0,0,1,0,-2,0,0,0,0,4.5, ldraw_lib__rect()],
+  [1,0,-24,14,0,0,1,0,-2,0,0,0,0,4.5, ldraw_lib__rect(realsolid)],
 ];
 module ldraw_lib__72633(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__72633(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__72633(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__72633(line=0.2);

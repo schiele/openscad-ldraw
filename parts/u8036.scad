@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box.scad>
-function ldraw_lib__u8036() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__u8036(realsolid=false) = [
 // 0 ~Mursten Glass for Window  1 x  3 x  3
 // 0 Name: u8036.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -21,8 +22,8 @@ function ldraw_lib__u8036() = [
 // 
 // 
 // 1 16 0 35 -5 26 0 0 0 0 -31 0 1 0 box.dat
-  [1,16,0,35,-5,26,0,0,0,0,-31,0,1,0, ldraw_lib__box()],
+  [1,16,0,35,-5,26,0,0,0,0,-31,0,1,0, ldraw_lib__box(realsolid)],
 ];
 module ldraw_lib__u8036(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__u8036(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__u8036(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__u8036(line=0.2);

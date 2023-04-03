@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4edge.scad>
-function ldraw_lib__2705() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2705(realsolid=false) = [
 // 0 Technic Action Figure Arm Bearing Pin
 // 0 Name: 2705.dat
 // 0 Author: Donald Sutter [technog]
@@ -20,16 +21,16 @@ function ldraw_lib__2705() = [
 // 
 // 
 // 1 16 0 -9 0 -2.5 0 0 0 1 0 0 0 2.5 4-4disc.dat
-  [1,16,0,-9,0,-2.5,0,0,0,1,0,0,0,2.5, ldraw_lib__4_4disc()],
+  [1,16,0,-9,0,-2.5,0,0,0,1,0,0,0,2.5, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 -9 0 -2.5 0 0 0 1 0 0 0 2.5 4-4edge.dat
-  [1,16,0,-9,0,-2.5,0,0,0,1,0,0,0,2.5, ldraw_lib__4_4edge()],
+  [1,16,0,-9,0,-2.5,0,0,0,1,0,0,0,2.5, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 9 0 -2.5 0 0 0 -18 0 0 0 2.5 4-4cyli.dat
-  [1,16,0,9,0,-2.5,0,0,0,-18,0,0,0,2.5, ldraw_lib__4_4cyli()],
+  [1,16,0,9,0,-2.5,0,0,0,-18,0,0,0,2.5, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 9 0 -2.5 0 0 0 1 0 0 0 2.5 4-4edge.dat
-  [1,16,0,9,0,-2.5,0,0,0,1,0,0,0,2.5, ldraw_lib__4_4edge()],
+  [1,16,0,9,0,-2.5,0,0,0,1,0,0,0,2.5, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 9 0 2.5 0 0 0 -1 0 0 0 2.5 4-4disc.dat
-  [1,16,0,9,0,2.5,0,0,0,-1,0,0,0,2.5, ldraw_lib__4_4disc()],
+  [1,16,0,9,0,2.5,0,0,0,-1,0,0,0,2.5, ldraw_lib__4_4disc(realsolid)],
 ];
 module ldraw_lib__2705(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2705(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2705(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2705(line=0.2);

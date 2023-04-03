@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <164365c.scad>
-function ldraw_lib__164365b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__164365b(realsolid=false) = [
 // 0 Sticker  1.8 x  1.5 with Red Outline "5"
 // 0 Name: 164365b.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -17,8 +18,8 @@ function ldraw_lib__164365b() = [
 // 
 // 
 // 1 16 0 0 0 1.5 0 0 0 1 0 0 0 1.5 164365c.dat
-  [1,16,0,0,0,1.5,0,0,0,1,0,0,0,1.5, ldraw_lib__164365c()],
+  [1,16,0,0,0,1.5,0,0,0,1,0,0,0,1.5, ldraw_lib__164365c(realsolid)],
 ];
 module ldraw_lib__164365b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__164365b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__164365b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__164365b(line=0.2);

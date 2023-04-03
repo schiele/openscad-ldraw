@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/1-4chrd.scad>
 use <../p/1-4ndis.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__196695a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__196695a(realsolid=false) = [
 // 0 Sticker  2.3 x  7.9 with Fire Station Logo on Black Rounded Rectangle
 // 0 Name: 196695a.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -20,25 +21,25 @@ function ldraw_lib__196695a() = [
 // 
 // 
 // 1 16 0 -0.25 0 79 0 0 0 0.25 0 0 0 23 box5-12.dat
-  [1,16,0,-0.25,0,79,0,0,0,0.25,0,0,0,23, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,79,0,0,0,0.25,0,0,0,23, ldraw_lib__box5_12(realsolid)],
 // 1 16 74 -0.25 18 2 0 0 0 1 0 0 0 2 1-4ndis.dat
-  [1,16,74,-0.25,18,2,0,0,0,1,0,0,0,2, ldraw_lib__1_4ndis()],
+  [1,16,74,-0.25,18,2,0,0,0,1,0,0,0,2, ldraw_lib__1_4ndis(realsolid)],
 // 1 16 -74 -0.25 18 0 0 -2 0 1 0 2 0 0 1-4ndis.dat
-  [1,16,-74,-0.25,18,0,0,-2,0,1,0,2,0,0, ldraw_lib__1_4ndis()],
+  [1,16,-74,-0.25,18,0,0,-2,0,1,0,2,0,0, ldraw_lib__1_4ndis(realsolid)],
 // 1 16 -74 -0.25 -18 -2 0 0 0 1 0 0 0 -2 1-4ndis.dat
-  [1,16,-74,-0.25,-18,-2,0,0,0,1,0,0,0,-2, ldraw_lib__1_4ndis()],
+  [1,16,-74,-0.25,-18,-2,0,0,0,1,0,0,0,-2, ldraw_lib__1_4ndis(realsolid)],
 // 1 16 74 -0.25 -18 0 0 2 0 1 0 -2 0 0 1-4ndis.dat
-  [1,16,74,-0.25,-18,0,0,2,0,1,0,-2,0,0, ldraw_lib__1_4ndis()],
+  [1,16,74,-0.25,-18,0,0,2,0,1,0,-2,0,0, ldraw_lib__1_4ndis(realsolid)],
 // 0 BFC NOCLIP
   [0,"BFC","NOCLIP"],
 // 1 0 74 -0.25 18 2 0 0 0 1 0 0 0 2 1-4chrd.dat
-  [1,0,74,-0.25,18,2,0,0,0,1,0,0,0,2, ldraw_lib__1_4chrd()],
+  [1,0,74,-0.25,18,2,0,0,0,1,0,0,0,2, ldraw_lib__1_4chrd(realsolid)],
 // 1 0 -74 -0.25 18 0 0 -2 0 1 0 2 0 0 1-4chrd.dat
-  [1,0,-74,-0.25,18,0,0,-2,0,1,0,2,0,0, ldraw_lib__1_4chrd()],
+  [1,0,-74,-0.25,18,0,0,-2,0,1,0,2,0,0, ldraw_lib__1_4chrd(realsolid)],
 // 1 0 -74 -0.25 -18 -2 0 0 0 1 0 0 0 -2 1-4chrd.dat
-  [1,0,-74,-0.25,-18,-2,0,0,0,1,0,0,0,-2, ldraw_lib__1_4chrd()],
+  [1,0,-74,-0.25,-18,-2,0,0,0,1,0,0,0,-2, ldraw_lib__1_4chrd(realsolid)],
 // 1 0 74 -0.25 -18 0 0 2 0 1 0 -2 0 0 1-4chrd.dat
-  [1,0,74,-0.25,-18,0,0,2,0,1,0,-2,0,0, ldraw_lib__1_4chrd()],
+  [1,0,74,-0.25,-18,0,0,2,0,1,0,-2,0,0, ldraw_lib__1_4chrd(realsolid)],
 // 4 15 -6.7 -0.25 12.2 -7.5 -0.25 9.6 -5.6 -0.25 10.5 -5.4 -0.25 13.6
   [4,15,-6.7,-0.25,12.2,-7.5,-0.25,9.6,-5.6,-0.25,10.5,-5.4,-0.25,13.6],
 // 4 15 -5.4 -0.25 13.6 -5.6 -0.25 10.5 -2.6 -0.25 10.9 -2.5 -0.25 14.2
@@ -651,5 +652,5 @@ function ldraw_lib__196695a() = [
   [3,16,79,-0.25,23,74,-0.25,20,76,-0.25,20],
 ];
 module ldraw_lib__196695a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__196695a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__196695a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__196695a(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__4620855b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4620855b(realsolid=false) = [
 // 0 Sticker  0.9 x  2.9 with Orange and Yellow Shooting Star, S-Shape
 // 0 Name: 4620855b.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -17,7 +18,7 @@ function ldraw_lib__4620855b() = [
 // 
 // 
 // 1 16 0 -0.25 0 29 0 0 0 0.25 0 0 0 9 box5-12.dat
-  [1,16,0,-0.25,0,29,0,0,0,0.25,0,0,0,9, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,29,0,0,0,0.25,0,0,0,9, ldraw_lib__box5_12(realsolid)],
 // 4 25 22.3 -0.25 0.2 22.2 -0.25 2.4 20 -0.25 3 18.8 -0.25 0.9
   [4,25,22.3,-0.25,0.2,22.2,-0.25,2.4,20,-0.25,3,18.8,-0.25,0.9],
 // 4 25 22.3 -0.25 0.2 18.8 -0.25 0.9 20.3 -0.25 -0.6 22.2 -0.25 -2
@@ -190,5 +191,5 @@ function ldraw_lib__4620855b() = [
   [3,30,16.5,-0.25,3.9,11,-0.25,3.3,16.8,-0.25,2.4],
 ];
 module ldraw_lib__4620855b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4620855b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4620855b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4620855b(line=0.2);

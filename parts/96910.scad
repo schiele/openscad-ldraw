@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/box4.scad>
 use <../p/box5.scad>
-function ldraw_lib__96910() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__96910(realsolid=false) = [
 // 0 Tile  1 x  2 Chamfered with 2 Top Indentations
 // 0 Name: 96910.dat
 // 0 Author: Stan Isachenko [angmarec]
@@ -46,15 +47,15 @@ function ldraw_lib__96910() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -11 0 0 3 0 0 0 0.5 0 0 0 6 box5.dat
-  [1,16,-11,0,0,3,0,0,0,0.5,0,0,0,6, ldraw_lib__box5()],
+  [1,16,-11,0,0,3,0,0,0,0.5,0,0,0,6, ldraw_lib__box5(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 11 0 0 3 0 0 0 0.5 0 0 0 6 box5.dat
-  [1,16,11,0,0,3,0,0,0,0.5,0,0,0,6, ldraw_lib__box5()],
+  [1,16,11,0,0,3,0,0,0,0.5,0,0,0,6, ldraw_lib__box5(realsolid)],
 // 1 16 0 5 0 20 0 0 0 2 0 0 0 10 box4.dat
-  [1,16,0,5,0,20,0,0,0,2,0,0,0,10, ldraw_lib__box4()],
+  [1,16,0,5,0,20,0,0,0,2,0,0,0,10, ldraw_lib__box4(realsolid)],
 // 1 16 0 7 0 19 0 0 0 1 0 0 0 9 box4.dat
-  [1,16,0,7,0,19,0,0,0,1,0,0,0,9, ldraw_lib__box4()],
+  [1,16,0,7,0,19,0,0,0,1,0,0,0,9, ldraw_lib__box4(realsolid)],
 // 4 16 -20 5 -10 20 5 -10 17.5 0 -7.5 -17.5 0 -7.5
   [4,16,-20,5,-10,20,5,-10,17.5,0,-7.5,-17.5,0,-7.5],
 // 4 16 20 5 -10 20 5 10 17.5 0 7.5 17.5 0 -7.5
@@ -98,8 +99,8 @@ function ldraw_lib__96910() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 8 0 16 0 0 0 -5.25 0 0 0 6 box5.dat
-  [1,16,0,8,0,16,0,0,0,-5.25,0,0,0,6, ldraw_lib__box5()],
+  [1,16,0,8,0,16,0,0,0,-5.25,0,0,0,6, ldraw_lib__box5(realsolid)],
 ];
 module ldraw_lib__96910(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__96910(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__96910(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__96910(line=0.2);

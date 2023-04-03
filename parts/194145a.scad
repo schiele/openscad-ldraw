@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <194215a.scad>
-function ldraw_lib__194145a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__194145a(realsolid=false) = [
 // 0 =Sticker  3.3 x  3.5 with Mail Logo
 // 0 Name: 194145a.dat
 // 0 Author: [PTadmin]
@@ -19,9 +20,9 @@ function ldraw_lib__194145a() = [
 // 0 // Alias of 194215a
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 194215a.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__194215a()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__194215a(realsolid)],
 // 0
 ];
 module ldraw_lib__194145a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__194145a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__194145a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__194145a(line=0.2);

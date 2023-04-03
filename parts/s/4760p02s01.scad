@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/1-4chrd.scad>
 use <../../p/1-4ndis.scad>
-function ldraw_lib__s__4760p02s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__4760p02s01(realsolid=false) = [
 // 0 ~Electric  9V Battery Box  4 x  8 x  2.333 Cover with "LL-6482" Pattern - Side
 // 0 Name: s\4760p02s01.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -18,21 +19,21 @@ function ldraw_lib__s__4760p02s01() = [
 // 0 // Font Arial Black
 // 
 // 1 14 0 8 -56 0 -1 0 -4 0 0 0 0 -4 1-4chrd.dat
-  [1,14,0,8,-56,0,-1,0,-4,0,0,0,0,-4, ldraw_lib__1_4chrd()],
+  [1,14,0,8,-56,0,-1,0,-4,0,0,0,0,-4, ldraw_lib__1_4chrd(realsolid)],
 // 1 14 0 8 56 0 -1 0 0 0 -4 4 0 0 1-4chrd.dat
-  [1,14,0,8,56,0,-1,0,0,0,-4,4,0,0, ldraw_lib__1_4chrd()],
+  [1,14,0,8,56,0,-1,0,0,0,-4,4,0,0, ldraw_lib__1_4chrd(realsolid)],
 // 1 14 0 26 -56 0 -1 0 0 0 4 -4 0 0 1-4chrd.dat
-  [1,14,0,26,-56,0,-1,0,0,0,4,-4,0,0, ldraw_lib__1_4chrd()],
+  [1,14,0,26,-56,0,-1,0,0,0,4,-4,0,0, ldraw_lib__1_4chrd(realsolid)],
 // 1 14 0 26 56 0 -1 0 4 0 0 0 0 4 1-4chrd.dat
-  [1,14,0,26,56,0,-1,0,4,0,0,0,0,4, ldraw_lib__1_4chrd()],
+  [1,14,0,26,56,0,-1,0,4,0,0,0,0,4, ldraw_lib__1_4chrd(realsolid)],
 // 1 16 0 8 -56 0 -1 0 -4 0 0 0 0 -4 1-4ndis.dat
-  [1,16,0,8,-56,0,-1,0,-4,0,0,0,0,-4, ldraw_lib__1_4ndis()],
+  [1,16,0,8,-56,0,-1,0,-4,0,0,0,0,-4, ldraw_lib__1_4ndis(realsolid)],
 // 1 16 0 8 56 0 -1 0 0 0 -4 4 0 0 1-4ndis.dat
-  [1,16,0,8,56,0,-1,0,0,0,-4,4,0,0, ldraw_lib__1_4ndis()],
+  [1,16,0,8,56,0,-1,0,0,0,-4,4,0,0, ldraw_lib__1_4ndis(realsolid)],
 // 1 16 0 26 -56 0 -1 0 0 0 4 -4 0 0 1-4ndis.dat
-  [1,16,0,26,-56,0,-1,0,0,0,4,-4,0,0, ldraw_lib__1_4ndis()],
+  [1,16,0,26,-56,0,-1,0,0,0,4,-4,0,0, ldraw_lib__1_4ndis(realsolid)],
 // 1 16 0 26 56 0 -1 0 4 0 0 0 0 4 1-4ndis.dat
-  [1,16,0,26,56,0,-1,0,4,0,0,0,0,4, ldraw_lib__1_4ndis()],
+  [1,16,0,26,56,0,-1,0,4,0,0,0,0,4, ldraw_lib__1_4ndis(realsolid)],
 // 4 4 0 9.82 -48.67 0 24.13 -48.67 0 20.61 -44.25 0 9.82 -44.25
   [4,4,0,9.82,-48.67,0,24.13,-48.67,0,20.61,-44.25,0,9.82,-44.25],
 // 4 4 0 20.61 -44.25 0 24.13 -48.67 0 24.13 -37.34 0 20.61 -37.34
@@ -551,5 +552,5 @@ function ldraw_lib__s__4760p02s01() = [
   [4,16,0,4,-60,0,4,60,0,0,80,0,0,-80],
 ];
 module ldraw_lib__s__4760p02s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__4760p02s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__4760p02s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__4760p02s01(line=0.2);

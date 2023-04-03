@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/2-4disc.scad>
 use <../p/2-4ndis.scad>
-function ldraw_lib__164365a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__164365a(realsolid=false) = [
 // 0 Sticker  3.6 x  4 with Black Aircraft and Five Coloured Stripes
 // 0 Name: 164365a.dat
 // 0 Author: Michael Heidemann [mikeheide]
@@ -80,7 +81,7 @@ function ldraw_lib__164365a() = [
 // 4 14 -40 -0.25 -16 -5.5 -0.25 -12.25 -5.5 -0.25 -11 -40 -0.25 -11
   [4,14,-40,-0.25,-16,-5.5,-0.25,-12.25,-5.5,-0.25,-11,-40,-0.25,-11],
 // 1 0 0 -0.25 2.75 3 0 0 0 3 0 0 0 3 2-4disc.dat
-  [1,0,0,-0.25,2.75,3,0,0,0,3,0,0,0,3, ldraw_lib__2_4disc()],
+  [1,0,0,-0.25,2.75,3,0,0,0,3,0,0,0,3, ldraw_lib__2_4disc(realsolid)],
 // 3 0 -3 -0.25 2.75 -3 -0.25 -1.5 0 -0.25 2.75
   [3,0,-3,-0.25,2.75,-3,-0.25,-1.5,0,-0.25,2.75],
 // 3 0 0 -0.25 2.75 3 -0.25 -1.5 3 -0.25 2.75
@@ -164,7 +165,7 @@ function ldraw_lib__164365a() = [
 // 4 15 -18 -0.25 -8.5 -18 -0.25 -6 -40 -0.25 36 -40 -0.25 -11
   [4,15,-18,-0.25,-8.5,-18,-0.25,-6,-40,-0.25,36,-40,-0.25,-11],
 // 1 15 0 -0.25 2.75 3 0 0 0 3 0 0 0 3 2-4ndis.dat
-  [1,15,0,-0.25,2.75,3,0,0,0,3,0,0,0,3, ldraw_lib__2_4ndis()],
+  [1,15,0,-0.25,2.75,3,0,0,0,3,0,0,0,3, ldraw_lib__2_4ndis(realsolid)],
 // 4 15 3 -0.25 -1.5 18 -0.25 -6 40 -0.25 36 3 -0.25 2.75
   [4,15,3,-0.25,-1.5,18,-0.25,-6,40,-0.25,36,3,-0.25,2.75],
 // 4 15 -40 -0.25 36 -18 -0.25 -6 -3 -0.25 -1.5 -3 -0.25 2.75
@@ -191,5 +192,5 @@ function ldraw_lib__164365a() = [
 // 0
 ];
 module ldraw_lib__164365a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__164365a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__164365a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__164365a(line=0.2);

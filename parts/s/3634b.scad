@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/box5-4a.scad>
 use <../../p/rect2p.scad>
-function ldraw_lib__s__3634b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__3634b(realsolid=false) = [
 // 0 ~Tyre 10/130 x 17 Outer Tooth
 // 0 Name: s\3634b.dat
 // 0 Author: Leonardo Zide [leozide]
@@ -20,14 +21,14 @@ function ldraw_lib__s__3634b() = [
 // 
 // 
 // 1 16 0 43 -6.25 5 0 0 0 11 0 0 0 6.25 box5-4a.dat
-  [1,16,0,43,-6.25,5,0,0,0,11,0,0,0,6.25, ldraw_lib__box5_4a()],
+  [1,16,0,43,-6.25,5,0,0,0,11,0,0,0,6.25, ldraw_lib__box5_4a(realsolid)],
 // 2 24 -5 43 -12.5 -5 43 0
   [2,24,-5,43,-12.5,-5,43,0],
 // 2 24 5 43 -12.5 5 43 0
   [2,24,5,43,-12.5,5,43,0],
 // 1 16 0 43.264 6.25 -1.768 0 0 0 -1.00455 0 0 0 6.25 rect2p.dat
-  [1,16,0,43.264,6.25,-1.768,0,0,0,-1.00455,0,0,0,6.25, ldraw_lib__rect2p()],
+  [1,16,0,43.264,6.25,-1.768,0,0,0,-1.00455,0,0,0,6.25, ldraw_lib__rect2p(realsolid)],
 ];
 module ldraw_lib__s__3634b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__3634b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__3634b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__3634b(line=0.2);

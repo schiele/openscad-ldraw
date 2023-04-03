@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/30118s01.scad>
-function ldraw_lib__30118p6v() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__30118p6v(realsolid=false) = [
 // 0 Wing  8 x  4 -  2 x  3.333 Up with UFO Engine Pattern
 // 0 Name: 30118p6v.dat
 // 0 Author: Nils Schmidt [BlackBrick89]
@@ -15,7 +16,7 @@ function ldraw_lib__30118p6v() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\30118s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30118s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30118s01(realsolid)],
 // 3 16 -20 -21.4655 49.8132 -20 -26.9742 57.4642 -25.7565 -24.1704 53.57
   [3,16,-20,-21.4655,49.8132,-20,-26.9742,57.4642,-25.7565,-24.1704,53.57],
 // 4 16 -20 -21.4655 49.8132 -25.7565 -24.1704 53.57 -20.6687 -14.1515 39.6548 -20 -14.084 39.5611
@@ -3430,5 +3431,5 @@ function ldraw_lib__30118p6v() = [
   [4,25,4.8907,-59.0357,101.9941,3.1875,-59.4531,102.5738,2.443,-58.8151,101.6876,3.7333,-58.0437,100.6163],
 ];
 module ldraw_lib__30118p6v(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__30118p6v(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__30118p6v(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__30118p6v(line=0.2);

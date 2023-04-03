@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__168365f() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__168365f(realsolid=false) = [
 // 0 Sticker  3.1 x  17.2 with Yellow Gears on Blue Background and "Classic" LEGO Technic Wording
 // 0 Name: 168365f.dat
 // 0 Author: Max Martin Richter [MMR1988]
@@ -10463,5 +10464,5 @@ function ldraw_lib__168365f() = [
   [5,24,9.95,-0.25,-31.2,9.95,0,-31.2,0,-0.25,-31.35,19.95,-0.25,-30.25],
 ];
 module ldraw_lib__168365f(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__168365f(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__168365f(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__168365f(line=0.2);

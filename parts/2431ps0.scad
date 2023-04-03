@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/2431s01.scad>
-function ldraw_lib__2431ps0() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2431ps0(realsolid=false) = [
 // 0 Tile  1 x  4 with SW Black Naboo Symbols Pattern
 // 0 Name: 2431ps0.dat
 // 0 Author: Alex Taylor [anathema]
@@ -17,7 +18,7 @@ function ldraw_lib__2431ps0() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2431s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2431s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2431s01(realsolid)],
 // 4 0 -39.075 0 -1.36 -38.382 0 -1.36 -38.289 0 -1.051 -38.89 0 -0.704
   [4,0,-39.075,0,-1.36,-38.382,0,-1.36,-38.289,0,-1.051,-38.89,0,-0.704],
 // 4 0 -38.89 0 -0.704 -38.289 0 -1.051 -37.952 0 -0.703 -38.362 0 -0.149
@@ -862,5 +863,5 @@ function ldraw_lib__2431ps0() = [
   [3,16,31.843,0,-5.031,30.92,0,-5.454,40,0,-10],
 ];
 module ldraw_lib__2431ps0(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2431ps0(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2431ps0(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2431ps0(line=0.2);

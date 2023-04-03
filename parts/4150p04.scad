@@ -3,7 +3,8 @@ use <../p/1-4chrd.scad>
 use <s/3069p06b.scad>
 use <s/3069p06c.scad>
 use <s/4150s01.scad>
-function ldraw_lib__4150p04() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4150p04(realsolid=false) = [
 // 0 Tile  2 x  2 Round with Yellow Arrow with Black Border Pattern
 // 0 Name: 4150p04.dat
 // 0 Author: James Jessiman
@@ -26,15 +27,15 @@ function ldraw_lib__4150p04() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4150s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4150s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4150s01(realsolid)],
 // 1 16 0 0 0 20 0 0 0 1 0 0 0 20 1-4chrd.dat
-  [1,16,0,0,0,20,0,0,0,1,0,0,0,20, ldraw_lib__1_4chrd()],
+  [1,16,0,0,0,20,0,0,0,1,0,0,0,20, ldraw_lib__1_4chrd(realsolid)],
 // 1 16 0 0 0 20 0 0 0 1 0 0 0 -20 1-4chrd.dat
-  [1,16,0,0,0,20,0,0,0,1,0,0,0,-20, ldraw_lib__1_4chrd()],
+  [1,16,0,0,0,20,0,0,0,1,0,0,0,-20, ldraw_lib__1_4chrd(realsolid)],
 // 1 16 0 0 0 -20 0 0 0 1 0 0 0 20 1-4chrd.dat
-  [1,16,0,0,0,-20,0,0,0,1,0,0,0,20, ldraw_lib__1_4chrd()],
+  [1,16,0,0,0,-20,0,0,0,1,0,0,0,20, ldraw_lib__1_4chrd(realsolid)],
 // 1 16 0 0 0 -20 0 0 0 1 0 0 0 -20 1-4chrd.dat
-  [1,16,0,0,0,-20,0,0,0,1,0,0,0,-20, ldraw_lib__1_4chrd()],
+  [1,16,0,0,0,-20,0,0,0,1,0,0,0,-20, ldraw_lib__1_4chrd(realsolid)],
 // 3 16 3.3 0 -14.9 0 0 -20 -3.3 0 -14.9
   [3,16,3.3,0,-14.9,0,0,-20,-3.3,0,-14.9],
 // 3 16 -3.3 0 -14.9 0 0 -20 -20 0 0
@@ -50,11 +51,11 @@ function ldraw_lib__4150p04() = [
 // 3 16 20 0 0 0 0 -20 3.3 0 -14.9
   [3,16,20,0,0,0,0,-20,3.3,0,-14.9],
 // 1 14 0 0 0 0 0 -1 0 1 0 1 0 0 s\3069p06c.dat
-  [1,14,0,0,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__s__3069p06c()],
+  [1,14,0,0,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__s__3069p06c(realsolid)],
 // 1 0 0 0 0 0 0 -1 0 1 0 1 0 0 s\3069p06b.dat
-  [1,0,0,0,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__s__3069p06b()],
+  [1,0,0,0,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__s__3069p06b(realsolid)],
 // 0
 ];
 module ldraw_lib__4150p04(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4150p04(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4150p04(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4150p04(line=0.2);

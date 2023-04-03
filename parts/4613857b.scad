@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__4613857b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4613857b(realsolid=false) = [
 // 0 Sticker Tail Left with White Eagle Head in Circle on DkRed
 // 0 Name: 4613857b.dat
 // 0 Author: Christian Neumann [Wesley]
@@ -1249,5 +1250,5 @@ function ldraw_lib__4613857b() = [
   [3,272,-8.66,-0.25,-15.92377,-8.74416,-0.25,-16.49126,-8.66,-0.25,-16.508],
 ];
 module ldraw_lib__4613857b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4613857b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4613857b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4613857b(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/2582s01.scad>
-function ldraw_lib__2582p6u() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2582p6u(realsolid=false) = [
 // 0 Hinge Panel  2 x  4 x  3.333 with UFO Pattern
 // 0 Name: 2582p6u.dat
 // 0 Author: Nils Schmidt [BlackBrick89]
@@ -15,7 +16,7 @@ function ldraw_lib__2582p6u() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2582s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2582s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2582s01(realsolid)],
 // 3 16 -39.7676 20 -30 -39.6776 20 -30 -39.7678 19.973 -29.973
   [3,16,-39.7676,20,-30,-39.6776,20,-30,-39.7678,19.973,-29.973],
 // 3 16 -39.6776 20 -30 -39.6196 20 -30 -39.7678 19.973 -29.973
@@ -4423,5 +4424,5 @@ function ldraw_lib__2582p6u() = [
 // 0
 ];
 module ldraw_lib__2582p6u(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2582p6u(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2582p6u(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2582p6u(line=0.2);

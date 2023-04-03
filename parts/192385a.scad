@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__192385a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__192385a(realsolid=false) = [
 // 0 Sticker  1.9 x 13.9 with Blue "LEGOLAND HOTEL" on Yellow Background
 // 0 Name: 192385a.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -17,7 +18,7 @@ function ldraw_lib__192385a() = [
 // 
 // 
 // 1 16 0 -0.25 0 139 0 0 0 0.25 0 0 0 19 box5-12.dat
-  [1,16,0,-0.25,0,139,0,0,0,0.25,0,0,0,19, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,139,0,0,0,0.25,0,0,0,19, ldraw_lib__box5_12(realsolid)],
 // 4 1 -119.8 -0.25 -9.52 -120.88 -0.25 -9.72 -120.88 -0.25 -10.5 -112.54 -0.25 -8.62
   [4,1,-119.8,-0.25,-9.52,-120.88,-0.25,-9.72,-120.88,-0.25,-10.5,-112.54,-0.25,-8.62],
 // 3 1 -112.54 -0.25 -8.62 -119.09 -0.25 -8.99 -119.8 -0.25 -9.52
@@ -1232,5 +1233,5 @@ function ldraw_lib__192385a() = [
   [3,14,73.34,-0.25,-3.1,72.45,-0.25,-5.78,76.93,-0.25,-8.06],
 ];
 module ldraw_lib__192385a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__192385a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__192385a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__192385a(line=0.2);

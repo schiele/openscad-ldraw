@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-4a.scad>
-function ldraw_lib__87612() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__87612(realsolid=false) = [
 // 0 Glass for Plane Front  6 x 10 x  4
 // 0 Name: 87612.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -20,7 +21,7 @@ function ldraw_lib__87612() = [
 // 
 // 
 // 1 16 0 53.5 -96.138 8.25 0 0 0 7.499 0 0 0 2.341 box5-4a.dat
-  [1,16,0,53.5,-96.138,8.25,0,0,0,7.499,0,0,0,2.341, ldraw_lib__box5_4a()],
+  [1,16,0,53.5,-96.138,8.25,0,0,0,7.499,0,0,0,2.341, ldraw_lib__box5_4a(realsolid)],
 // 4 16 51.626 25.483 -29.672 51.626 45.238 -39.629 51.626 31.411 -35.752 51.626 24.325 -29.905
   [4,16,51.626,25.483,-29.672,51.626,45.238,-39.629,51.626,31.411,-35.752,51.626,24.325,-29.905],
 // 3 16 51.467 22.707 -31.534 51.626 31.411 -35.752 51.3 22.483 -32.672
@@ -1903,5 +1904,5 @@ function ldraw_lib__87612() = [
   [5,24,-43.549,25.182,-66.487,-43.718,25.316,-70.78,-42.364,24.369,-67.281,-43.902,26.465,-67.056],
 ];
 module ldraw_lib__87612(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__87612(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__87612(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__87612(line=0.2);

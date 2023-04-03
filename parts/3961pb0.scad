@@ -2,7 +2,8 @@ use <../lib.scad>
 use <s/3961pb0s01.scad>
 use <s/3961s01.scad>
 use <../p/stug-2x2.scad>
-function ldraw_lib__3961pb0() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3961pb0(realsolid=false) = [
 // 0 Dish  8 x  8 Inverted with "TIVAN", "28 MB" and Dark Red Leaf Pattern
 // 0 Name: 3961pb0.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -24,13 +25,13 @@ function ldraw_lib__3961pb0() = [
 // 
 // 
 // 1 16 0 0 0 0 0 1 0 1 0 -1 0 0 s\3961s01.dat
-  [1,16,0,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__s__3961s01()],
+  [1,16,0,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__s__3961s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 stug-2x2.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_2x2()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_2x2(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3961pb0s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3961pb0s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3961pb0s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\3961pb0s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__3961pb0s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__3961pb0s01(realsolid)],
 // 
 // 3 16 -47 5.12768 -1.4 -49.9 6.01152 -2.1 -48.75 5.70606 -4.1
   [3,16,-47,5.12768,-1.4,-49.9,6.01152,-2.1,-48.75,5.70606,-4.1],
@@ -4910,5 +4911,5 @@ function ldraw_lib__3961pb0() = [
   [5,24,31.736,3,-24.352,34.64,3,-20,15.868,0,-12.176,51.96,9,-30],
 ];
 module ldraw_lib__3961pb0(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3961pb0(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3961pb0(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3961pb0(line=0.2);

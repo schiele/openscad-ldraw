@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__191915e() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__191915e(realsolid=false) = [
 // 0 Sticker  0.9 x  6 with White "SPEISEWAGEN"
 // 0 Name: 191915e.dat
 // 0 Author: Steffen [Steffen]
@@ -421,7 +422,7 @@ function ldraw_lib__191915e() = [
   [3,15,47.849,-0.25,1.952,52.27,-0.25,-5.163,52.372,-0.25,-1.922],
 // 0 // Bounding Box
 // 1 16 0 -0.25 0 60 0 0 0 0.25 0 0 0 -9 box5-12.dat
-  [1,16,0,-0.25,0,60,0,0,0,0.25,0,0,0,-9, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,60,0,0,0,0.25,0,0,0,-9, ldraw_lib__box5_12(realsolid)],
 // 4 16 -56.4 -0.25 5.637 56.4 -0.25 5.637 60 -0.25 9 -60 -0.25 9
   [4,16,-56.4,-0.25,5.637,56.4,-0.25,5.637,60,-0.25,9,-60,-0.25,9],
 // 4 16 -60 -0.25 9 -60 -0.25 -9 -56.4 -0.25 -9 -56.4 -0.25 5.637
@@ -894,5 +895,5 @@ function ldraw_lib__191915e() = [
   [3,16,-2.178,-0.25,5.194,-16.234,-0.25,5.475,-10.035,-0.25,5.194],
 ];
 module ldraw_lib__191915e(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__191915e(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__191915e(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__191915e(line=0.2);

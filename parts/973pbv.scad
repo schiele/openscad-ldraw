@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/1-4cyli.scad>
 use <s/973s01.scad>
-function ldraw_lib__973pbv() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__973pbv(realsolid=false) = [
 // 0 Minifig Torso with Spider Man Pattern
 // 0 Name: 973pbv.dat
 // 0 Author: Johann Eisner [technicbasics]
@@ -18,10 +19,10 @@ function ldraw_lib__973pbv() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01(realsolid)],
 // 0 // Neck mark
 // 1 0 0 -4 0 4.243 0 -4.243 0 -8 0 -4.243 0 -4.243 1-4cyli.dat
-  [1,0,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli()],
+  [1,0,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli(realsolid)],
 // 0 // Plain front
 // 4 0 -7.533 3.139 -10 -8 3.25 -10 -8 3.75 -10 -7.533 3.639 -10
   [4,0,-7.533,3.139,-10,-8,3.25,-10,-8,3.75,-10,-7.533,3.639,-10],
@@ -3450,5 +3451,5 @@ function ldraw_lib__973pbv() = [
   [4,16,17.25,26.1,10,17.25,25.5,10,19,29,10,17.566,28.091,10],
 ];
 module ldraw_lib__973pbv(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__973pbv(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__973pbv(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__973pbv(line=0.2);

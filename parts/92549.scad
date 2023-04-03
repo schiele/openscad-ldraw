@@ -8,7 +8,8 @@ use <../p/recte4.scad>
 use <s/92549s01.scad>
 use <s/92549s02.scad>
 use <../p/stud4a.scad>
-function ldraw_lib__92549() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__92549(realsolid=false) = [
 // 0 ~Spinner Ninjago  6 x  6 x  1.333 Type 1 Bottom
 // 0 Name: 92549.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -27,42 +28,42 @@ function ldraw_lib__92549() = [
 // 0 // Subparts
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\92549s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__92549s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__92549s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\92549s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__92549s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__92549s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\92549s02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__92549s02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__92549s02(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\92549s02.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__92549s02()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__92549s02(realsolid)],
 // 0 // Primitives
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 26 0 16 0 0 0 5.6928 0 0 0 16 box4o8a.dat
-  [1,16,0,26,0,16,0,0,0,5.6928,0,0,0,16, ldraw_lib__box4o8a()],
+  [1,16,0,26,0,16,0,0,0,5.6928,0,0,0,16, ldraw_lib__box4o8a(realsolid)],
 // 1 16 0 26 0 1 0 0 0 -1.5 0 0 0 1 stud4a.dat
-  [1,16,0,26,0,1,0,0,0,-1.5,0,0,0,1, ldraw_lib__stud4a()],
+  [1,16,0,26,0,1,0,0,0,-1.5,0,0,0,1, ldraw_lib__stud4a(realsolid)],
 // 1 16 0 26 0 8 0 0 0 1 0 0 0 8 4-4edge.dat
-  [1,16,0,26,0,8,0,0,0,1,0,0,0,8, ldraw_lib__4_4edge()],
+  [1,16,0,26,0,8,0,0,0,1,0,0,0,8, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 26 0 8 0 0 0 -1 0 0 0 8 4-4ndis.dat
-  [1,16,0,26,0,8,0,0,0,-1,0,0,0,8, ldraw_lib__4_4ndis()],
+  [1,16,0,26,0,8,0,0,0,-1,0,0,0,8, ldraw_lib__4_4ndis(realsolid)],
 // 1 16 0 26 0 16 0 0 0 1 0 0 0 16 recte4.dat
-  [1,16,0,26,0,16,0,0,0,1,0,0,0,16, ldraw_lib__recte4()],
+  [1,16,0,26,0,16,0,0,0,1,0,0,0,16, ldraw_lib__recte4(realsolid)],
 // 1 16 0 4 0 46 0 0 0 19 0 0 0 46 4-4cylo.dat
-  [1,16,0,4,0,46,0,0,0,19,0,0,0,46, ldraw_lib__4_4cylo()],
+  [1,16,0,4,0,46,0,0,0,19,0,0,0,46, ldraw_lib__4_4cylo(realsolid)],
 // 1 16 0 4 0 42 0 0 0 1 0 0 0 42 4-4edge.dat
-  [1,16,0,4,0,42,0,0,0,1,0,0,0,42, ldraw_lib__4_4edge()],
+  [1,16,0,4,0,42,0,0,0,1,0,0,0,42, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 25.615 0 51.2 0 0 0 1 0 0 0 51.2 48\4-4edge.dat
-  [1,16,0,25.615,0,51.2,0,0,0,1,0,0,0,51.2, ldraw_lib__48__4_4edge()],
+  [1,16,0,25.615,0,51.2,0,0,0,1,0,0,0,51.2, ldraw_lib__48__4_4edge(realsolid)],
 // 1 16 0 28 0 26.5 0 0 0 1 0 0 0 26.5 4-4edge.dat
-  [1,16,0,28,0,26.5,0,0,0,1,0,0,0,26.5, ldraw_lib__4_4edge()],
+  [1,16,0,28,0,26.5,0,0,0,1,0,0,0,26.5, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 24 0 22.5 0 0 0 1 0 0 0 22.5 4-4edge.dat
-  [1,16,0,24,0,22.5,0,0,0,1,0,0,0,22.5, ldraw_lib__4_4edge()],
+  [1,16,0,24,0,22.5,0,0,0,1,0,0,0,22.5, ldraw_lib__4_4edge(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 24 0 4.625 0 0 0 2 0 0 0 4.625 4-4cylo.dat
-  [1,16,0,24,0,4.625,0,0,0,2,0,0,0,4.625, ldraw_lib__4_4cylo()],
+  [1,16,0,24,0,4.625,0,0,0,2,0,0,0,4.625, ldraw_lib__4_4cylo(realsolid)],
 // 1 16 0 26 0 6 0 0 0 1 0 0 0 6 4-4edge.dat
-  [1,16,0,26,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4edge()],
+  [1,16,0,26,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4edge(realsolid)],
 // 0 // Complements of stripes
 // 0 // Faces
 // 4 16 .6 11 58.247 .6 18.23813 58.247 -.6 18.23813 58.247 -.6 11 58.247
@@ -127,5 +128,5 @@ function ldraw_lib__92549() = [
   [2,24,11.9782,32,-16,-11.9782,32,-16],
 ];
 module ldraw_lib__92549(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__92549(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__92549(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__92549(line=0.2);

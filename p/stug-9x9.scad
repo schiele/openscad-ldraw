@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <stug-3x3.scad>
 use <stug-6x6.scad>
-function ldraw_lib__stug_9x9() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__stug_9x9(realsolid=false) = [
 // 0 Stud Group  9 x  9
 // 0 Name: stug-9x9.dat
 // 0 Author: Michael Heidemann [mikeheide]
@@ -20,19 +21,19 @@ function ldraw_lib__stug_9x9() = [
 // 
 // 
 // 1 16 -30 0 -30 1 0 0 0 1 0 0 0 1 stug-6x6.dat
-  [1,16,-30,0,-30,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_6x6()],
+  [1,16,-30,0,-30,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_6x6(realsolid)],
 // 1 16 -60 0 60 1 0 0 0 1 0 0 0 1 stug-3x3.dat
-  [1,16,-60,0,60,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_3x3()],
+  [1,16,-60,0,60,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_3x3(realsolid)],
 // 1 16 0 0 60 1 0 0 0 1 0 0 0 1 stug-3x3.dat
-  [1,16,0,0,60,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_3x3()],
+  [1,16,0,0,60,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_3x3(realsolid)],
 // 1 16 60 0 60 1 0 0 0 1 0 0 0 1 stug-3x3.dat
-  [1,16,60,0,60,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_3x3()],
+  [1,16,60,0,60,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_3x3(realsolid)],
 // 1 16 60 0 -60 1 0 0 0 1 0 0 0 1 stug-3x3.dat
-  [1,16,60,0,-60,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_3x3()],
+  [1,16,60,0,-60,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_3x3(realsolid)],
 // 1 16 60 0 0 1 0 0 0 1 0 0 0 1 stug-3x3.dat
-  [1,16,60,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_3x3()],
+  [1,16,60,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_3x3(realsolid)],
 // 0
 ];
 module ldraw_lib__stug_9x9(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__stug_9x9(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__stug_9x9(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__stug_9x9(line=0.2);

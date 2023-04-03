@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/4-4cylc.scad>
 use <s/4792s01.scad>
-function ldraw_lib__4792() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4792(realsolid=false) = [
 // 0 Fabuland Captain's Cap
 // 0 Name: 4792.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -18,13 +19,13 @@ function ldraw_lib__4792() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4792s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4792s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4792s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\4792s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__4792s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__4792s01(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -8 0 12 0 0 0 8 0 0 0 12 4-4cylc.dat
-  [1,16,0,-8,0,12,0,0,0,8,0,0,0,12, ldraw_lib__4_4cylc()],
+  [1,16,0,-8,0,12,0,0,0,8,0,0,0,12, ldraw_lib__4_4cylc(realsolid)],
 // 5 24 0 0.2 20.7 0 1 20.1 -0.9 -0.3 21 0.9 -0.3 21
   [5,24,0,0.2,20.7,0,1,20.1,-0.9,-0.3,21,0.9,-0.3,21],
 // 5 24 0 -2.6 21.2 0 -2.4 21.2 -2.8 -1.6 21 4.6 -3.4 20.9
@@ -173,5 +174,5 @@ function ldraw_lib__4792() = [
   [5,24,0,-6.6,-24.2,0,-7.2,-24.4,-0.8,-7.2,-24.2,0.8,-7.2,-24.2],
 ];
 module ldraw_lib__4792(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4792(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4792(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4792(line=0.2);

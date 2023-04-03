@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/4-4ering.scad>
 use <s/98138s01.scad>
-function ldraw_lib__98138pa2() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__98138pa2(realsolid=false) = [
 // 0 Tile  1 x  1 Round with Crocodile Eye Pattern
 // 0 Name: 98138pa2.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -18,9 +19,9 @@ function ldraw_lib__98138pa2() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\98138s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01(realsolid)],
 // 1 16 0 0 0 9 0 0 0 1 0 0 0 9 4-4ering.dat
-  [1,16,0,0,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4ering()],
+  [1,16,0,0,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4ering(realsolid)],
 // 4 0 -8.166 0 0.553 -8.243 0 0 -7.4 0 0 -7.36 0 0.38
   [4,0,-8.166,0,0.553,-8.243,0,0,-7.4,0,0,-7.36,0,0.38],
 // 4 0 -7.866 0 1.293 -8.166 0 0.553 -7.36 0 0.38 -6.943 0 0.9
@@ -613,5 +614,5 @@ function ldraw_lib__98138pa2() = [
   [3,16,9,0,0,7.459,0,0,7.459,0,-0.176],
 ];
 module ldraw_lib__98138pa2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__98138pa2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__98138pa2(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__98138pa2(line=0.2);

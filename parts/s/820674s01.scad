@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__820674s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__820674s01(realsolid=false) = [
 // 0 ~Sticker White and Red Lifebuoy on Blue Blazon - Half
 // 0 Name: s\820674s01.dat
 // 0 Author: Alexandre Bourdais [x-or]
@@ -283,5 +284,5 @@ function ldraw_lib__s__820674s01() = [
   [3,16,0.7,0,-6.3,9.7,0,-6.8,9.5,0,-6.5],
 ];
 module ldraw_lib__s__820674s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__820674s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__820674s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__820674s01(line=0.2);

@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/box2-5.scad>
 use <../../p/rect2a.scad>
-function ldraw_lib__s__6024s2() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__6024s2(realsolid=false) = [
 // 0 ~Baseplate 32 x 32 Canyon - Island Surface
 // 0 Name: s\6024s2.dat
 // 0 Author: Mark Kennedy [mkennedy]
@@ -57,17 +58,17 @@ function ldraw_lib__s__6024s2() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 270 -36 270 10 -20 0 36 0 0 10 0 -20 box2-5.dat
-  [1,16,270,-36,270,10,-20,0,36,0,0,10,0,-20, ldraw_lib__box2_5()],
+  [1,16,270,-36,270,10,-20,0,36,0,0,10,0,-20, ldraw_lib__box2_5(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 190 -36 170 -10 40 0 36 0 0 -10 0 20 box2-5.dat
-  [1,16,190,-36,170,-10,40,0,36,0,0,-10,0,20, ldraw_lib__box2_5()],
+  [1,16,190,-36,170,-10,40,0,36,0,0,-10,0,20, ldraw_lib__box2_5(realsolid)],
 // 1 16 200 -72 240 -40 0 0 0 1 0 0 0 40 rect2a.dat
-  [1,16,200,-72,240,-40,0,0,0,1,0,0,0,40, ldraw_lib__rect2a()],
+  [1,16,200,-72,240,-40,0,0,0,1,0,0,0,40, ldraw_lib__rect2a(realsolid)],
 // 1 16 260 -72 200 20 0 0 0 1 0 0 0 -40 rect2a.dat
-  [1,16,260,-72,200,20,0,0,0,1,0,0,0,-40, ldraw_lib__rect2a()],
+  [1,16,260,-72,200,20,0,0,0,1,0,0,0,-40, ldraw_lib__rect2a(realsolid)],
 // 0
 ];
 module ldraw_lib__s__6024s2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__6024s2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__6024s2(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__6024s2(line=0.2);

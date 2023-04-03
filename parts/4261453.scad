@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <6536.scad>
-function ldraw_lib__4261453() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4261453(realsolid=false) = [
 // 0 ~_Technic Cross Block 1 x 2 (Axle/Pin) Lime (Obsolete)
 // 0 Name: 4261453.dat
 // 0 Author: Michael Heidemann [mikeheide]
@@ -20,8 +21,8 @@ function ldraw_lib__4261453() = [
 // 0 // colouring of the part (Lime).
 // 
 // 1 27 0 0 0 1 0 0 0 1 0 0 0 1 6536.dat
-  [1,27,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__6536()],
+  [1,27,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__6536(realsolid)],
 ];
 module ldraw_lib__4261453(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4261453(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4261453(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4261453(line=0.2);

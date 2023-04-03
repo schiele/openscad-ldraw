@@ -6,7 +6,8 @@ use <../../p/4-4cyli.scad>
 use <../../p/4-4edge.scad>
 use <../../p/4-4ring3.scad>
 use <../../p/peghole.scad>
-function ldraw_lib__s__88517s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__88517s01(realsolid=false) = [
 // 0 ~Wheel 17 x 75 Motorcycle with Holes in Rim Subpart 1
 // 0 Name: s\88517s01.dat
 // 0 Author: Ronald Vallenduuk [Duq]
@@ -21,25 +22,25 @@ function ldraw_lib__s__88517s01() = [
 // 
 // 
 // 1 16 0 10 20 7.39104 0 -3.06147 0 2 0 3.06147 0 7.391 3-8edge.dat
-  [1,16,0,10,20,7.39104,0,-3.06147,0,2,0,3.06147,0,7.391, ldraw_lib__3_8edge()],
+  [1,16,0,10,20,7.39104,0,-3.06147,0,2,0,3.06147,0,7.391, ldraw_lib__3_8edge(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 8 20 7.39104 0 -3.06147 0 2 0 3.06147 0 7.391 3-8cyli.dat
-  [1,16,0,8,20,7.39104,0,-3.06147,0,2,0,3.06147,0,7.391, ldraw_lib__3_8cyli()],
+  [1,16,0,8,20,7.39104,0,-3.06147,0,2,0,3.06147,0,7.391, ldraw_lib__3_8cyli(realsolid)],
 // 1 16 0 8 20 6 0 0 0 1 0 0 0 6 4-4edge.dat
-  [1,16,0,8,20,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4edge()],
+  [1,16,0,8,20,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 8 20 -2 0 0 0 -1 0 0 0 2 4-4ring3.dat
-  [1,16,0,8,20,-2,0,0,0,-1,0,0,0,2, ldraw_lib__4_4ring3()],
+  [1,16,0,8,20,-2,0,0,0,-1,0,0,0,2, ldraw_lib__4_4ring3(realsolid)],
 // 1 16 0 8 20 7.39104 0 -3.06147 0 2 0 3.06147 0 7.391 3-8edge.dat
-  [1,16,0,8,20,7.39104,0,-3.06147,0,2,0,3.06147,0,7.391, ldraw_lib__3_8edge()],
+  [1,16,0,8,20,7.39104,0,-3.06147,0,2,0,3.06147,0,7.391, ldraw_lib__3_8edge(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -8 20 6 0 0 0 16 0 0 0 6 4-4cyli.dat
-  [1,16,0,-8,20,6,0,0,0,16,0,0,0,6, ldraw_lib__4_4cyli()],
+  [1,16,0,-8,20,6,0,0,0,16,0,0,0,6, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 -10 20 1 0 0 0 1 0 0 0 1 peghole.dat
-  [1,16,0,-10,20,1,0,0,0,1,0,0,0,1, ldraw_lib__peghole()],
+  [1,16,0,-10,20,1,0,0,0,1,0,0,0,1, ldraw_lib__peghole(realsolid)],
 // 1 16 0 -10 20 -1.41421 0 1.41421 0 1 0 -1.41421 0 -1.41421 1-4ring4.dat
-  [1,16,0,-10,20,-1.41421,0,1.41421,0,1,0,-1.41421,0,-1.41421, ldraw_lib__1_4ring4()],
+  [1,16,0,-10,20,-1.41421,0,1.41421,0,1,0,-1.41421,0,-1.41421, ldraw_lib__1_4ring4(realsolid)],
 // 4 16 7.391 10 23.061 5.657 10 25.657 9.309 10 24.702 10.58 10 22.326
   [4,16,7.391,10,23.061,5.657,10,25.657,9.309,10,24.702,10.58,10,22.326],
 // 4 16 5.657 10 25.657 4.7 10 30 10 10 28.3 9.309 10 24.702
@@ -230,5 +231,5 @@ function ldraw_lib__s__88517s01() = [
   [5,24,-9.35,-9,50,-14,-9,50,-10,-10,28.3,-9.75,-7.25,70],
 ];
 module ldraw_lib__s__88517s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__88517s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__88517s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__88517s01(line=0.2);

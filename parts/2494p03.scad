@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/logo-octan-3.scad>
 use <../p/logo-octantext2.scad>
 use <s/2494s01.scad>
-function ldraw_lib__2494p03() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2494p03(realsolid=false) = [
 // 0 Glass for Window  1 x  4 x  5 with Octan Logo Pattern
 // 0 Name: 2494p03.dat
 // 0 Author: Tim Lampmann [L4mpi]
@@ -19,7 +20,7 @@ function ldraw_lib__2494p03() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2494s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2494s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2494s01(realsolid)],
 // 
 // 4 16 -17 94 -6 -36 112 -6 -25 112 -6 -6 94 -6
   [4,16,-17,94,-6,-36,112,-6,-25,112,-6,-6,94,-6],
@@ -50,9 +51,9 @@ function ldraw_lib__2494p03() = [
   [0,"BFC","NOCLIP"],
 // 
 // 1 15 8.5 84 -6 1 0 0 0 0 -1 0 1 0 logo-octantext2.dat
-  [1,15,8.5,84,-6,1,0,0,0,0,-1,0,1,0, ldraw_lib__logo_octantext2()],
+  [1,15,8.5,84,-6,1,0,0,0,0,-1,0,1,0, ldraw_lib__logo_octantext2(realsolid)],
 // 1 15 -25.5 83.5 -6 1 0 0 0 0 -1 0 1 0 logo-octan-3.dat
-  [1,15,-25.5,83.5,-6,1,0,0,0,0,-1,0,1,0, ldraw_lib__logo_octan_3()],
+  [1,15,-25.5,83.5,-6,1,0,0,0,0,-1,0,1,0, ldraw_lib__logo_octan_3(realsolid)],
 // 4 15 -33 89 -6 -33 78 -6 -36 76 -6 -36 92 -6
   [4,15,-33,89,-6,-33,78,-6,-36,76,-6,-36,92,-6],
 // 4 15 36 76 -6 33 77.5 -6 33 89.5 -6 36 92 -6
@@ -77,5 +78,5 @@ function ldraw_lib__2494p03() = [
   [4,4,-36,112,-6,-17,94,-6,-27,94,-6,-36,102.53,-6],
 ];
 module ldraw_lib__2494p03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2494p03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2494p03(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2494p03(line=0.2);

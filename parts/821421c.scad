@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/box5-12.scad>
 use <s/821421cs01.scad>
 use <s/821421cs02.scad>
-function ldraw_lib__821421c() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__821421c(realsolid=false) = [
 // 0 Sticker  2.4 x  2.8 with Octan Logo and Text
 // 0 Name: 821421c.dat
 // 0 Author: Ulrich Röder [UR]
@@ -20,17 +21,17 @@ function ldraw_lib__821421c() = [
 // 
 // 0 // Logo
 // 1 4 0 -.25 8 1 0 0 0 1 0 0 0 1 s\821421cs01.dat
-  [1,4,0,-.25,8,1,0,0,0,1,0,0,0,1, ldraw_lib__s__821421cs01()],
+  [1,4,0,-.25,8,1,0,0,0,1,0,0,0,1, ldraw_lib__s__821421cs01(realsolid)],
 // 1 2 0 -.25 8 -1 0 0 0 1 0 0 0 -1 s\821421cs01.dat
-  [1,2,0,-.25,8,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__821421cs01()],
+  [1,2,0,-.25,8,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__821421cs01(realsolid)],
 // 
 // 0 // Main
 // 0 // Text
 // 1 16 0 -.25 -16 0.8 0 0 0 1 0 0 0 0.8 s\821421cs02.dat
-  [1,16,0,-.25,-16,0.8,0,0,0,1,0,0,0,0.8, ldraw_lib__s__821421cs02()],
+  [1,16,0,-.25,-16,0.8,0,0,0,1,0,0,0,0.8, ldraw_lib__s__821421cs02(realsolid)],
 // 0 // Others
 // 1 16 0 -0.25 0 28 0 0 0 0.25 0 0 0 -24 box5-12.dat
-  [1,16,0,-0.25,0,28,0,0,0,0.25,0,0,0,-24, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,28,0,0,0,0.25,0,0,0,-24, ldraw_lib__box5_12(realsolid)],
 // 3 16 24.8 -.25 -9.6 8.678 -.25 -4.729 7.116 -.25 -5.134
   [3,16,24.8,-.25,-9.6,8.678,-.25,-4.729,7.116,-.25,-5.134],
 // 3 16 24.8 -.25 -9.6 7.116 -.25 -5.134 5.629 -.25 -5.372
@@ -223,5 +224,5 @@ function ldraw_lib__821421c() = [
   [3,16,-24.8,-.25,-22.4,-28,-.25,-24,0,-.25,-22.4],
 ];
 module ldraw_lib__821421c(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__821421c(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__821421c(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__821421c(line=0.2);

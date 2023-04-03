@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/48/4-4cylc3.scad>
-function ldraw_lib__6196607b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6196607b(realsolid=false) = [
 // 0 Sticker  1.7 x  1.7 Round with White Flower on Chrome Gold Background
 // 0 Name: 6196607b.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -17,7 +18,7 @@ function ldraw_lib__6196607b() = [
 // 
 // 
 // 1 16 0 0 0 18 0 0 0 -.25 0 0 0 18 48\4-4cylc3.dat
-  [1,16,0,0,0,18,0,0,0,-.25,0,0,0,18, ldraw_lib__48__4_4cylc3()],
+  [1,16,0,0,0,18,0,0,0,-.25,0,0,0,18, ldraw_lib__48__4_4cylc3(realsolid)],
 // 
 // 4 15 -11.3 -.25 -2.05 -11.05 -.25 -2.5 -10.55 -.25 -2 -11.4 -.25 -1.15
   [4,15,-11.3,-.25,-2.05,-11.05,-.25,-2.5,-10.55,-.25,-2,-11.4,-.25,-1.15],
@@ -1097,5 +1098,5 @@ function ldraw_lib__6196607b() = [
   [4,334,4.75,-.25,-11.8,4.5,-.25,-12.125,6.889,-.25,-16.63,9,-.25,-15.588],
 ];
 module ldraw_lib__6196607b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6196607b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6196607b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6196607b(line=0.2);

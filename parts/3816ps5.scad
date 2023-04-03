@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3816s01.scad>
-function ldraw_lib__3816ps5() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3816ps5(realsolid=false) = [
 // 0 ~Minifig Leg Right with SW Gunbelt Pattern (Obsolete)
 // 0 Name: 3816ps5.dat
 // 0 Author: Franklin W. Cain [fwcain]
@@ -28,7 +29,7 @@ function ldraw_lib__3816ps5() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3816s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3816s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3816s01(realsolid)],
 // 3 0 -4.46 -1.72 -8.638 -3.33 -1.44 -8.697 -3.45 -1.58 -8.667
   [3,0,-4.46,-1.72,-8.638,-3.33,-1.44,-8.697,-3.45,-1.58,-8.667],
 // 4 0 -3.93 -2.15 -8.547 -4.46 -1.72 -8.638 -3.45 -1.58 -8.667 -2.41 -1.84 -8.613
@@ -557,5 +558,5 @@ function ldraw_lib__3816ps5() = [
   [4,80,-11.69,-1.99,-8.581,-11.96,-2,-8.579,-12.32,-1.85,-8.611,-11.48,-1.88,-8.604],
 ];
 module ldraw_lib__3816ps5(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3816ps5(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3816ps5(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3816ps5(line=0.2);

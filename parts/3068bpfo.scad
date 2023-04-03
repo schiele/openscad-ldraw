@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3068bs01.scad>
-function ldraw_lib__3068bpfo() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3068bpfo(realsolid=false) = [
 // 0 Tile  2 x  2 with Purple Heart on White Pattern
 // 0 Name: 3068bpfo.dat
 // 0 Author: Steffen [Steffen]
@@ -19,7 +20,7 @@ function ldraw_lib__3068bpfo() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3068bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3068bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3068bs01(realsolid)],
 // 
 // 4 22 1.7 0 9.9 0 0 7.1 0 0 -14.3 2.7 0 -11
   [4,22,1.7,0,9.9,0,0,7.1,0,0,-14.3,2.7,0,-11],
@@ -116,5 +117,5 @@ function ldraw_lib__3068bpfo() = [
   [3,15,-2.7,0,-11,-5.3,0,-9,-8.8,0,-7],
 ];
 module ldraw_lib__3068bpfo(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3068bpfo(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3068bpfo(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3068bpfo(line=0.2);

@@ -2,7 +2,8 @@ use <../lib.scad>
 use <4620856b.scad>
 use <4620856c.scad>
 use <90397.scad>
-function ldraw_lib__90397d01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__90397d01(realsolid=false) = [
 // 0 Minifig Surf Board  2 x  6.5 with Hearts and Flowers Sticker
 // 0 Name: 90397d01.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -19,12 +20,12 @@ function ldraw_lib__90397d01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 90397.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__90397()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__90397(realsolid)],
 // 1 16 0 0 -40 -1 0 0 0 1 0 0 0 -1 4620856b.dat
-  [1,16,0,0,-40,-1,0,0,0,1,0,0,0,-1, ldraw_lib__4620856b()],
+  [1,16,0,0,-40,-1,0,0,0,1,0,0,0,-1, ldraw_lib__4620856b(realsolid)],
 // 1 16 0 0 30 -1 0 0 0 1 0 0 0 -1 4620856c.dat
-  [1,16,0,0,30,-1,0,0,0,1,0,0,0,-1, ldraw_lib__4620856c()],
+  [1,16,0,0,30,-1,0,0,0,1,0,0,0,-1, ldraw_lib__4620856c(realsolid)],
 ];
 module ldraw_lib__90397d01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__90397d01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__90397d01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__90397d01(line=0.2);

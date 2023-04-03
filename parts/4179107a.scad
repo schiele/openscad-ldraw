@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__4179107a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4179107a(realsolid=false) = [
 // 0 Sticker  5.0 x  8.0 with Black Iron Cross on White Background - Main Part
 // 0 Name: 4179107a.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -20,7 +21,7 @@ function ldraw_lib__4179107a() = [
 // 0 // Primitives
 // 
 // 1 16 0 -.25 0 80 0 0 0 0.25 0 0 0 50 box5-12.dat
-  [1,16,0,-.25,0,80,0,0,0,0.25,0,0,0,50, ldraw_lib__box5_12()],
+  [1,16,0,-.25,0,80,0,0,0,0.25,0,0,0,50, ldraw_lib__box5_12(realsolid)],
 // 0 // Top faces
 // 0 // Black faces
 // 3 0 -69.75 -.25 50 -69.75 -.25 15 -60.458 -.25 18.778
@@ -94,5 +95,5 @@ function ldraw_lib__4179107a() = [
   [4,15,80,-.25,-50,80,-.25,50,69.75,-.25,50,69.75,-.25,15],
 ];
 module ldraw_lib__4179107a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4179107a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4179107a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4179107a(line=0.2);

@@ -3,7 +3,8 @@ use <../p/4-4con3.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4edge.scad>
-function ldraw_lib__4332() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4332(realsolid=false) = [
 // 0 Minifig Broom
 // 0 Name: 4332.dat
 // 0 Author: Stan Isachenko [angmarec]
@@ -23,17 +24,17 @@ function ldraw_lib__4332() = [
 // 
 // 
 // 1 16 0 1.17 0 4 0 0 0 1 0 0 0 4 4-4edge.dat
-  [1,16,0,1.17,0,4,0,0,0,1,0,0,0,4, ldraw_lib__4_4edge()],
+  [1,16,0,1.17,0,4,0,0,0,1,0,0,0,4, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 89.298 0 4 0 0 0 1 0 0 0 4 4-4edge.dat
-  [1,16,0,89.298,0,4,0,0,0,1,0,0,0,4, ldraw_lib__4_4edge()],
+  [1,16,0,89.298,0,4,0,0,0,1,0,0,0,4, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 1.17 0 4 0 0 0 88.3 0 0 0 4 4-4cyli.dat
-  [1,16,0,1.17,0,4,0,0,0,88.3,0,0,0,4, ldraw_lib__4_4cyli()],
+  [1,16,0,1.17,0,4,0,0,0,88.3,0,0,0,4, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 0 0 0 0 3 0 1 0 3 0 0 4-4edge.dat
-  [1,16,0,0,0,0,0,3,0,1,0,3,0,0, ldraw_lib__4_4edge()],
+  [1,16,0,0,0,0,0,3,0,1,0,3,0,0, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 0 0 0 0 3 0 1 0 3 0 0 4-4disc.dat
-  [1,16,0,0,0,0,0,3,0,1,0,3,0,0, ldraw_lib__4_4disc()],
+  [1,16,0,0,0,0,0,3,0,1,0,3,0,0, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 1.17 0 0 0 1 0 -1.17 0 -1 0 0 4-4con3.dat
-  [1,16,0,1.17,0,0,0,1,0,-1.17,0,-1,0,0, ldraw_lib__4_4con3()],
+  [1,16,0,1.17,0,0,0,1,0,-1.17,0,-1,0,0, ldraw_lib__4_4con3(realsolid)],
 // 3 16 2.43 103.744 4.26 2.7 103.37 5 4.55 103.514 0.83
   [3,16,2.43,103.744,4.26,2.7,103.37,5,4.55,103.514,0.83],
 // 3 16 -0.06 103.761 5.06 -3.61 103.783 3.35 -0.06 102.588 5.92
@@ -4405,5 +4406,5 @@ function ldraw_lib__4332() = [
   [5,24,5.04,95.911,2.96,5.44,94.885,2.27,5.77,94.947,0.11,4.81,95.139,3.2],
 ];
 module ldraw_lib__4332(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4332(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4332(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4332(line=0.2);

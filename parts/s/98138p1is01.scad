@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/4-4ering.scad>
-function ldraw_lib__s__98138p1is01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__98138p1is01(realsolid=false) = [
 // 0 ~Tile  1 x  1 Round with Speech Bubble - Speech Bubble
 // 0 Name: s\98138p1is01.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -15,7 +16,7 @@ function ldraw_lib__s__98138p1is01() = [
 // 
 // 
 // 1 16 0 0 0 9 0 0 0 1 0 0 0 9 4-4ering.dat
-  [1,16,0,0,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4ering()],
+  [1,16,0,0,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4ering(realsolid)],
 // 3 16 -7.2 0 1 -9 0 0 -7.06 0 -.27
   [3,16,-7.2,0,1,-9,0,0,-7.06,0,-.27],
 // 4 16 -9 0 0 -7.2 0 1 -7.06 0 2.27 -8.3151 0 3.4443
@@ -90,5 +91,5 @@ function ldraw_lib__s__98138p1is01() = [
   [3,16,0,0,9,0,0,7.5,1.4,0,7.38],
 ];
 module ldraw_lib__s__98138p1is01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__98138p1is01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__98138p1is01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__98138p1is01(line=0.2);

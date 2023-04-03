@@ -6,7 +6,8 @@ use <913.scad>
 use <914.scad>
 use <916.scad>
 use <u9013.scad>
-function ldraw_lib__32288c01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__32288c01(realsolid=false) = [
 // 0 Electric Technic Motor 4.5V  6 x 17 x  5 with Dark Grey Base Type 1
 // 0 Name: 32288c01.dat
 // 0 Author: Guy Vivan [guyvivan]
@@ -24,22 +25,22 @@ function ldraw_lib__32288c01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 32288.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__32288()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__32288(realsolid)],
 // 1 8 0 0 0 1 0 0 0 1 0 0 0 1 32289a.dat
-  [1,8,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__32289a()],
+  [1,8,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__32289a(realsolid)],
 // 1 8 0 0 40 1 0 0 0 1 0 0 0 1 32290.dat
-  [1,8,0,0,40,1,0,0,0,1,0,0,0,1, ldraw_lib__32290()],
+  [1,8,0,0,40,1,0,0,0,1,0,0,0,1, ldraw_lib__32290(realsolid)],
 // 1 8 0 2 -80 1 0 0 0 1 0 0 0 1 913.dat
-  [1,8,0,2,-80,1,0,0,0,1,0,0,0,1, ldraw_lib__913()],
+  [1,8,0,2,-80,1,0,0,0,1,0,0,0,1, ldraw_lib__913(realsolid)],
 // 1 15 0 82 0 1 0 0 0 1 0 0 0 1 914.dat
-  [1,15,0,82,0,1,0,0,0,1,0,0,0,1, ldraw_lib__914()],
+  [1,15,0,82,0,1,0,0,0,1,0,0,0,1, ldraw_lib__914(realsolid)],
 // 1 0 -4 90 -48 -1 0 0 0 1 0 0 0 1 916.dat
-  [1,0,-4,90,-48,-1,0,0,0,1,0,0,0,1, ldraw_lib__916()],
+  [1,0,-4,90,-48,-1,0,0,0,1,0,0,0,1, ldraw_lib__916(realsolid)],
 // 1 494 50 86 -274 0.8 0 0 0 -0.8 0 0 0 0.8 u9013.dat
-  [1,494,50,86,-274,0.8,0,0,0,-0.8,0,0,0,0.8, ldraw_lib__u9013()],
+  [1,494,50,86,-274,0.8,0,0,0,-0.8,0,0,0,0.8, ldraw_lib__u9013(realsolid)],
 // 1 494 -50 86 -274 0.8 0 0 0 -0.8 0 0 0 0.8 u9013.dat
-  [1,494,-50,86,-274,0.8,0,0,0,-0.8,0,0,0,0.8, ldraw_lib__u9013()],
+  [1,494,-50,86,-274,0.8,0,0,0,-0.8,0,0,0,0.8, ldraw_lib__u9013(realsolid)],
 ];
 module ldraw_lib__32288c01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__32288c01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__32288c01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__32288c01(line=0.2);

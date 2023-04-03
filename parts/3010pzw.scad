@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3010s01.scad>
-function ldraw_lib__3010pzw() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3010pzw(realsolid=false) = [
 // 0 Brick  1 x  4 with  2 Dark Blue Squares,  4 Blue Squares and  4 Medium Blue Squares Pattern
 // 0 Name: 3010pzw.dat
 // 0 Author: Vincent Messenet [Cheenzo]
@@ -17,7 +18,7 @@ function ldraw_lib__3010pzw() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3010s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3010s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3010s01(realsolid)],
 // 
 // 4 272 -23.4 8.175 -10 -23.4 15.825 -10 -15.6 15.825 -10 -15.6 8.175 -10
   [4,272,-23.4,8.175,-10,-23.4,15.825,-10,-15.6,15.825,-10,-15.6,8.175,-10],
@@ -104,5 +105,5 @@ function ldraw_lib__3010pzw() = [
   [4,16,31.2,15.825,-10,23.4,15.825,-10,23.4,23.475,-10,31.2,23.475,-10],
 ];
 module ldraw_lib__3010pzw(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3010pzw(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3010pzw(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3010pzw(line=0.2);

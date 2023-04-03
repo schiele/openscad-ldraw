@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4edge.scad>
 use <../p/4-8sphe.scad>
 use <../p/box5-4a.scad>
-function ldraw_lib__4448() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4448(realsolid=false) = [
 // 0 Glass for Window  4 x  4 x  3 Roof
 // 0 Name: 4448.dat
 // 0 Author: James Jessiman
@@ -103,19 +104,19 @@ function ldraw_lib__4448() = [
 // 4 16 -35 60 -60 -35 4 -11.47 35 4 -11.47 35 60 -60
   [4,16,-35,60,-60,-35,4,-11.47,35,4,-11.47,35,60,-60],
 // 1 16 36 34 -33.735 0 1 0 -2 0 0 0 0 2 4-4edge.dat
-  [1,16,36,34,-33.735,0,1,0,-2,0,0,0,0,2, ldraw_lib__4_4edge()],
+  [1,16,36,34,-33.735,0,1,0,-2,0,0,0,0,2, ldraw_lib__4_4edge(realsolid)],
 // 1 16 36 34 -33.735 0 1 0 -2 0 0 0 0 2 4-8sphe.dat
-  [1,16,36,34,-33.735,0,1,0,-2,0,0,0,0,2, ldraw_lib__4_8sphe()],
+  [1,16,36,34,-33.735,0,1,0,-2,0,0,0,0,2, ldraw_lib__4_8sphe(realsolid)],
 // 1 16 35 34 -33.735 0 1 0 -4.5343 0 1.85238 3.92939 0 2.13754 box5-4a.dat
-  [1,16,35,34,-33.735,0,1,0,-4.5343,0,1.85238,3.92939,0,2.13754, ldraw_lib__box5_4a()],
+  [1,16,35,34,-33.735,0,1,0,-4.5343,0,1.85238,3.92939,0,2.13754, ldraw_lib__box5_4a(realsolid)],
 // 1 16 -36 34 -33.735 0 -1 0 -2 0 0 0 0 2 4-4edge.dat
-  [1,16,-36,34,-33.735,0,-1,0,-2,0,0,0,0,2, ldraw_lib__4_4edge()],
+  [1,16,-36,34,-33.735,0,-1,0,-2,0,0,0,0,2, ldraw_lib__4_4edge(realsolid)],
 // 1 16 -36 34 -33.735 0 -1 0 -2 0 0 0 0 2 4-8sphe.dat
-  [1,16,-36,34,-33.735,0,-1,0,-2,0,0,0,0,2, ldraw_lib__4_8sphe()],
+  [1,16,-36,34,-33.735,0,-1,0,-2,0,0,0,0,2, ldraw_lib__4_8sphe(realsolid)],
 // 1 16 -35 34 -33.735 0 -1 0 -4.5343 0 1.85238 3.92939 0 2.13754 box5-4a.dat
-  [1,16,-35,34,-33.735,0,-1,0,-4.5343,0,1.85238,3.92939,0,2.13754, ldraw_lib__box5_4a()],
+  [1,16,-35,34,-33.735,0,-1,0,-4.5343,0,1.85238,3.92939,0,2.13754, ldraw_lib__box5_4a(realsolid)],
 // 0
 ];
 module ldraw_lib__4448(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4448(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4448(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4448(line=0.2);

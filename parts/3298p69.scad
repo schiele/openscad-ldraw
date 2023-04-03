@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/3068p69a.scad>
 use <s/3298s01.scad>
-function ldraw_lib__3298p69() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3298p69(realsolid=false) = [
 // 0 Slope Brick 33  3 x  2 with Space Police II Pattern
 // 0 Name: 3298p69.dat
 // 0 Author: Carsten Schmitz [Deckard]
@@ -20,9 +21,9 @@ function ldraw_lib__3298p69() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3298s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3298s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3298s01(realsolid)],
 // 1 16 0 10 -30 0.105 0 0 0 1 -0.045 0 0 0.09 s\3068p69a.dat
-  [1,16,0,10,-30,0.105,0,0,0,1,-0.045,0,0,0.09, ldraw_lib__s__3068p69a()],
+  [1,16,0,10,-30,0.105,0,0,0,1,-0.045,0,0,0.09, ldraw_lib__s__3068p69a(realsolid)],
 // 
 // 4 4 18.8406 1.1842 -12.3684 -18.8406 1.1842 -12.3684 -18.8406 2.8947 -15.7895 18.8406 2.8947 -15.7895
   [4,4,18.8406,1.1842,-12.3684,-18.8406,1.1842,-12.3684,-18.8406,2.8947,-15.7895,18.8406,2.8947,-15.7895],
@@ -61,5 +62,5 @@ function ldraw_lib__3298p69() = [
   [4,16,18.8406,19.0789,-48.1579,-18.8406,19.0789,-48.1579,-20,20,-50,20,20,-50],
 ];
 module ldraw_lib__3298p69(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3298p69(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3298p69(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3298p69(line=0.2);

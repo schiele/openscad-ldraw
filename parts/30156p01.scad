@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/30156s01.scad>
-function ldraw_lib__30156p01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__30156p01(realsolid=false) = [
 // 0 Panel  4 x  6 x  6 Sloped with Light Grey Rocks Pattern
 // 0 Name: 30156p01.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -17,7 +18,7 @@ function ldraw_lib__30156p01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\30156s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30156s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30156s01(realsolid)],
 // 
 // 4 71 -58.15 7.6599 16.17 -58.2 11.014 14.493 -45.95 11.819 14.0905 -58.05 4.5742 17.7129
   [4,71,-58.15,7.6599,16.17,-58.2,11.014,14.493,-45.95,11.819,14.0905,-58.05,4.5742,17.7129],
@@ -3423,5 +3424,5 @@ function ldraw_lib__30156p01() = [
   [3,16,55.1,117.674,-38.837,60,120,-40,56.45,117.719,-38.8595],
 ];
 module ldraw_lib__30156p01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__30156p01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__30156p01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__30156p01(line=0.2);

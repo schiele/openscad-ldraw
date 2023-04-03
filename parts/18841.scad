@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <30367c.scad>
-function ldraw_lib__18841() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__18841(realsolid=false) = [
 // 0 =Cylinder  2 x  2 with Dome Top with Axle Hole and Hollow Stud
 // 0 Name: 18841.dat
 // 0 Author: Vincent Messenet [Cheenzo]
@@ -18,8 +19,8 @@ function ldraw_lib__18841() = [
 // 0 // Part 18841 is the transparent counterpart of 30367c
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 30367c.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__30367c()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__30367c(realsolid)],
 ];
 module ldraw_lib__18841(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__18841(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__18841(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__18841(line=0.2);

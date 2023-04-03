@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__4533401j() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4533401j(realsolid=false) = [
 // 0 Sticker  1.6 x  5.7 with Red "00:15:10" and Planet
 // 0 Name: 4533401j.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -17,7 +18,7 @@ function ldraw_lib__4533401j() = [
 // 
 // 
 // 1 16 0 -0.25 0 57.5 0 0 0 0.25 0 0 0 16 box5-12.dat
-  [1,16,0,-0.25,0,57.5,0,0,0,0.25,0,0,0,16, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,57.5,0,0,0,0.25,0,0,0,16, ldraw_lib__box5_12(realsolid)],
 // 
 // 4 4 20.85 -0.25 10.1 21.4 -0.25 9.05 22.6 -0.25 9.05 24.05 -0.25 10.1
   [4,4,20.85,-0.25,10.1,21.4,-0.25,9.05,22.6,-0.25,9.05,24.05,-0.25,10.1],
@@ -5669,5 +5670,5 @@ function ldraw_lib__4533401j() = [
   [4,0,6,-0.25,-16,5,-0.25,-15.45,4.75,-0.25,-15.65,4.6,-0.25,-16],
 ];
 module ldraw_lib__4533401j(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4533401j(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4533401j(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4533401j(line=0.2);

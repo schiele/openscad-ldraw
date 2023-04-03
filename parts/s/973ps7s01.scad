@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__973ps7s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__973ps7s01(realsolid=false) = [
 // 0 ~Minifig Torso with SW Darth Vader Pattern Torso Half
 // 0 Name: s\973ps7s01.dat
 // 0 Author: Daniel Goerner [TK-949]
@@ -273,5 +274,5 @@ function ldraw_lib__s__973ps7s01() = [
   [4,80,1.5,16.16,-10,0.54,16.16,-10,0.54,19.01,-10,1.5,19.01,-10],
 ];
 module ldraw_lib__s__973ps7s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__973ps7s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__973ps7s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__973ps7s01(line=0.2);

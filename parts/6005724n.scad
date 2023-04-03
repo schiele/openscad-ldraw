@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__6005724n() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6005724n(realsolid=false) = [
 // 0 Sticker  5.9 x  1.8 with Wall and Diamond Bricks
 // 0 Name: 6005724n.dat
 // 0 Author: Christian Neumann [Wesley]
@@ -19,7 +20,7 @@ function ldraw_lib__6005724n() = [
 // 
 // 
 // 1 16 0 -0.25 0 18 0 0 0 0.25 0 0 0 59 box5-12.dat
-  [1,16,0,-0.25,0,18,0,0,0,0.25,0,0,0,59, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,18,0,0,0,0.25,0,0,0,59, ldraw_lib__box5_12(realsolid)],
 // 4 0 -8.73 -0.25 -0.72 -9.63 -0.25 -1.91 -8.03 -0.25 -2.02 -8.03 -0.25 0.19
   [4,0,-8.73,-0.25,-0.72,-9.63,-0.25,-1.91,-8.03,-0.25,-2.02,-8.03,-0.25,0.19],
 // 4 0 -4.53 -0.25 2.87 -8.03 -0.25 0.19 -8.03 -0.25 -2.02 -2.83 -0.25 2.68
@@ -1070,5 +1071,5 @@ function ldraw_lib__6005724n() = [
   [4,16,-3.9,-0.25,31.9,-5.7,-0.25,32.7,-5.1,-0.25,30,-1.8,-0.25,29.8],
 ];
 module ldraw_lib__6005724n(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6005724n(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6005724n(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6005724n(line=0.2);

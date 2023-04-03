@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/box4o4a.scad>
 use <../p/clh4.scad>
 use <s/2424s01.scad>
-function ldraw_lib__51858() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__51858(realsolid=false) = [
 // 0 Crane Basket  3 x  2 x  2 with Click Lock Hinge
 // 0 Name: 51858.dat
 // 0 Author: Guy Vivan [guyvivan]
@@ -23,15 +24,15 @@ function ldraw_lib__51858() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2424s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2424s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2424s01(realsolid)],
 // 1 16 0 -30 26 1 0 0 0 1 0 0 0 1 clh4.dat
-  [1,16,0,-30,26,1,0,0,0,1,0,0,0,1, ldraw_lib__clh4()],
+  [1,16,0,-30,26,1,0,0,0,1,0,0,0,1, ldraw_lib__clh4(realsolid)],
 // 1 16 0 -30 26 -1 0 0 0 -1 0 0 0 1 clh4.dat
-  [1,16,0,-30,26,-1,0,0,0,-1,0,0,0,1, ldraw_lib__clh4()],
+  [1,16,0,-30,26,-1,0,0,0,-1,0,0,0,1, ldraw_lib__clh4(realsolid)],
 // 1 16 6.25 -30 20 2.25 0 0 0 0 -6 0 6 0 box4o4a.dat
-  [1,16,6.25,-30,20,2.25,0,0,0,0,-6,0,6,0, ldraw_lib__box4o4a()],
+  [1,16,6.25,-30,20,2.25,0,0,0,0,-6,0,6,0, ldraw_lib__box4o4a(realsolid)],
 // 1 16 -6.25 -30 20 2.25 0 0 0 0 -6 0 6 0 box4o4a.dat
-  [1,16,-6.25,-30,20,2.25,0,0,0,0,-6,0,6,0, ldraw_lib__box4o4a()],
+  [1,16,-6.25,-30,20,2.25,0,0,0,0,-6,0,6,0, ldraw_lib__box4o4a(realsolid)],
 // 2 24 -30 -40 20 30 -40 20
   [2,24,-30,-40,20,30,-40,20],
 // 2 24 -26 -40 16 26 -40 16
@@ -45,5 +46,5 @@ function ldraw_lib__51858() = [
 // 0
 ];
 module ldraw_lib__51858(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__51858(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__51858(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__51858(line=0.2);

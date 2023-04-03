@@ -6,7 +6,8 @@ use <../p/4-4ring3.scad>
 use <../p/4-4ring4.scad>
 use <../p/4-4ring5.scad>
 use <s/14769s01.scad>
-function ldraw_lib__14769p0g() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__14769p0g(realsolid=false) = [
 // 0 Tile  2 x  2 Round with Round Underside Stud with  3 Red Concentric Circles Pattern
 // 0 Name: 14769p0g.dat
 // 0 Author: Vincent Messenet [Cheenzo]
@@ -23,21 +24,21 @@ function ldraw_lib__14769p0g() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\14769s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__14769s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__14769s01(realsolid)],
 // 
 // 1 4 0 0 0 0 0 3.3333 0 1 0 3.3333 0 0 4-4disc.dat
-  [1,4,0,0,0,0,0,3.3333,0,1,0,3.3333,0,0, ldraw_lib__4_4disc()],
+  [1,4,0,0,0,0,0,3.3333,0,1,0,3.3333,0,0, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 0 0 0 0 3.3333 0 1 0 3.3333 0 0 4-4ring1.dat
-  [1,16,0,0,0,0,0,3.3333,0,1,0,3.3333,0,0, ldraw_lib__4_4ring1()],
+  [1,16,0,0,0,0,0,3.3333,0,1,0,3.3333,0,0, ldraw_lib__4_4ring1(realsolid)],
 // 1 4 0 0 0 0 0 3.3333 0 1 0 3.3333 0 0 4-4ring2.dat
-  [1,4,0,0,0,0,0,3.3333,0,1,0,3.3333,0,0, ldraw_lib__4_4ring2()],
+  [1,4,0,0,0,0,0,3.3333,0,1,0,3.3333,0,0, ldraw_lib__4_4ring2(realsolid)],
 // 1 16 0 0 0 0 0 3.3333 0 1 0 3.3333 0 0 4-4ring3.dat
-  [1,16,0,0,0,0,0,3.3333,0,1,0,3.3333,0,0, ldraw_lib__4_4ring3()],
+  [1,16,0,0,0,0,0,3.3333,0,1,0,3.3333,0,0, ldraw_lib__4_4ring3(realsolid)],
 // 1 4 0 0 0 0 0 3.3333 0 1 0 3.3333 0 0 4-4ring4.dat
-  [1,4,0,0,0,0,0,3.3333,0,1,0,3.3333,0,0, ldraw_lib__4_4ring4()],
+  [1,4,0,0,0,0,0,3.3333,0,1,0,3.3333,0,0, ldraw_lib__4_4ring4(realsolid)],
 // 1 16 0 0 0 0 0 3.3333 0 1 0 3.3333 0 0 4-4ring5.dat
-  [1,16,0,0,0,0,0,3.3333,0,1,0,3.3333,0,0, ldraw_lib__4_4ring5()],
+  [1,16,0,0,0,0,0,3.3333,0,1,0,3.3333,0,0, ldraw_lib__4_4ring5(realsolid)],
 ];
 module ldraw_lib__14769p0g(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__14769p0g(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__14769p0g(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__14769p0g(line=0.2);

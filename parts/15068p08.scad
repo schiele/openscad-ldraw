@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/15068s01.scad>
-function ldraw_lib__15068p08() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__15068p08(realsolid=false) = [
 // 0 Slope Brick Curved  2 x  2 x  0.667 with Arctic 2018 Logo Pattern
 // 0 Name: 15068p08.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -18,7 +19,7 @@ function ldraw_lib__15068p08() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\15068s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__15068s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__15068s01(realsolid)],
 // 
 // 5 24 -20 -15.6524 12.616 20 -15.6524 12.616 20 -16.0001 20 20 -14.6036 5.36
   [5,24,-20,-15.6524,12.616,20,-15.6524,12.616,20,-16.0001,20,20,-14.6036,5.36],
@@ -491,5 +492,5 @@ function ldraw_lib__15068p08() = [
   [4,15,13.5071,-14.8062,6.7615,13.1008,-14.9441,7.7155,6.3505,-15.0074,8.1535,7.71,-14.7395,6.3],
 ];
 module ldraw_lib__15068p08(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__15068p08(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__15068p08(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__15068p08(line=0.2);

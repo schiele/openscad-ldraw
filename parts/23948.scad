@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/axle.scad>
-function ldraw_lib__23948() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__23948(realsolid=false) = [
 // 0 Technic Axle 11
 // 0 Name: 23948.dat
 // 0 Author: Rolf Osterthun [Rolf]
@@ -15,8 +16,8 @@ function ldraw_lib__23948() = [
 // 
 // 
 // 1 16 110 0 0 0 -220 0 1 0 0 0 0 1 axle.dat
-  [1,16,110,0,0,0,-220,0,1,0,0,0,0,1, ldraw_lib__axle()],
+  [1,16,110,0,0,0,-220,0,1,0,0,0,0,1, ldraw_lib__axle(realsolid)],
 ];
 module ldraw_lib__23948(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__23948(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__23948(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__23948(line=0.2);

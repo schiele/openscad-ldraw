@@ -3,7 +3,8 @@ use <../p/48/4-4ndis.scad>
 use <../p/48/4-4rin17.scad>
 use <../p/48/4-4rin18.scad>
 use <s/4198s01.scad>
-function ldraw_lib__4198p07() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4198p07(realsolid=false) = [
 // 0 Duplo Brick  2 x  4 x  2 with Rounded Ends with Clock Pattern
 // 0 Name: 4198p07.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -22,13 +23,13 @@ function ldraw_lib__4198p07() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4198s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4198s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4198s01(realsolid)],
 // 1 0 0 48 -40 2 0 0 0 0 -2 0 1 0 48\4-4rin17.dat
-  [1,0,0,48,-40,2,0,0,0,0,-2,0,1,0, ldraw_lib__48__4_4rin17()],
+  [1,0,0,48,-40,2,0,0,0,0,-2,0,1,0, ldraw_lib__48__4_4rin17(realsolid)],
 // 1 0 0 48 -40 2 0 0 0 0 -2 0 1 0 48\4-4rin18.dat
-  [1,0,0,48,-40,2,0,0,0,0,-2,0,1,0, ldraw_lib__48__4_4rin18()],
+  [1,0,0,48,-40,2,0,0,0,0,-2,0,1,0, ldraw_lib__48__4_4rin18(realsolid)],
 // 1 16 0 48 -40 38 0 0 0 0 -38 0 1 0 48\4-4ndis.dat
-  [1,16,0,48,-40,38,0,0,0,0,-38,0,1,0, ldraw_lib__48__4_4ndis()],
+  [1,16,0,48,-40,38,0,0,0,0,-38,0,1,0, ldraw_lib__48__4_4ndis(realsolid)],
 // 4 15 0 48 -40 -1.39 47.43 -40 -1.5 48 -40 -1.39 48.57 -40
   [4,15,0,48,-40,-1.39,47.43,-40,-1.5,48,-40,-1.39,48.57,-40],
 // 4 15 0 48 -40 -1.39 48.57 -40 -1.06 49.06 -40 -0.57 49.39 -40
@@ -1007,5 +1008,5 @@ function ldraw_lib__4198p07() = [
   [3,16,38,10,-40,38,48,-40,80,48,-40],
 ];
 module ldraw_lib__4198p07(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4198p07(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4198p07(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4198p07(line=0.2);

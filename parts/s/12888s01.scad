@@ -4,7 +4,8 @@ use <../../p/2-4con1.scad>
 use <../../p/2-4edge.scad>
 use <../../p/rect2p.scad>
 use <../../p/stud4od.scad>
-function ldraw_lib__s__12888s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__12888s01(realsolid=false) = [
 // 0 ~Animal Dog Chihuahua without Pattern Areas
 // 0 Name: s\12888s01.dat
 // 0 Author: Steffen [Steffen]
@@ -1494,29 +1495,29 @@ function ldraw_lib__s__12888s01() = [
 // 
 // 0 // Hollowed stud inside
 // 1 16 0 -4 0 1 0 0 0 -1 0 0 0 1 stud4od.dat
-  [1,16,0,-4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4od()],
+  [1,16,0,-4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4od(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -4 0 -3 0 0 0 -13 0 0 0 3 2-4con1.dat
-  [1,16,0,-4,0,-3,0,0,0,-13,0,0,0,3, ldraw_lib__2_4con1()],
+  [1,16,0,-4,0,-3,0,0,0,-13,0,0,0,3, ldraw_lib__2_4con1(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -4 0 -3 0 0 0 -13 0 0 -2 -3 2-4con1.dat
-  [1,16,0,-4,0,-3,0,0,0,-13,0,0,-2,-3, ldraw_lib__2_4con1()],
+  [1,16,0,-4,0,-3,0,0,0,-13,0,0,-2,-3, ldraw_lib__2_4con1(realsolid)],
 // 1 16 0 -17 0 -3 0 0 0 -1 0 0 0 3 2-4chrd.dat
-  [1,16,0,-17,0,-3,0,0,0,-1,0,0,0,3, ldraw_lib__2_4chrd()],
+  [1,16,0,-17,0,-3,0,0,0,-1,0,0,0,3, ldraw_lib__2_4chrd(realsolid)],
 // 1 16 0 -17 -2 -3 0 0 0 -1 0 0 0 -3 2-4chrd.dat
-  [1,16,0,-17,-2,-3,0,0,0,-1,0,0,0,-3, ldraw_lib__2_4chrd()],
+  [1,16,0,-17,-2,-3,0,0,0,-1,0,0,0,-3, ldraw_lib__2_4chrd(realsolid)],
 // 1 16 0 -17 0 -3 0 0 0 -1 0 0 0 3 2-4edge.dat
-  [1,16,0,-17,0,-3,0,0,0,-1,0,0,0,3, ldraw_lib__2_4edge()],
+  [1,16,0,-17,0,-3,0,0,0,-1,0,0,0,3, ldraw_lib__2_4edge(realsolid)],
 // 1 16 0 -17 -2 -3 0 0 0 -1 0 0 0 -3 2-4edge.dat
-  [1,16,0,-17,-2,-3,0,0,0,-1,0,0,0,-3, ldraw_lib__2_4edge()],
+  [1,16,0,-17,-2,-3,0,0,0,-1,0,0,0,-3, ldraw_lib__2_4edge(realsolid)],
 // 3 16 -3 -17 -2 -6 -4 0 -3 -17 0
   [3,16,-3,-17,-2,-6,-4,0,-3,-17,0],
 // 3 16 3 -17 -2 3 -17 0 6 -4 0
   [3,16,3,-17,-2,3,-17,0,6,-4,0],
 // 1 16 0 -17 -1 0 0 3 0 -1 0 1 0 0 rect2p.dat
-  [1,16,0,-17,-1,0,0,3,0,-1,0,1,0,0, ldraw_lib__rect2p()],
+  [1,16,0,-17,-1,0,0,3,0,-1,0,1,0,0, ldraw_lib__rect2p(realsolid)],
 // 
 // 0 // Added cond-lines
 // 5 24 -6.968 -10.58 -8.686 -5.638 -13.865 -11.055 -7.063 -13.835 -9.153 -5.618 -10.611 -10.231
@@ -2819,5 +2820,5 @@ function ldraw_lib__s__12888s01() = [
   [5,24,-9.433,-3.26,-3.724,-9.122,0,-3.824,-7.442,-3.034,-7.521,-9.378,0,0.245],
 ];
 module ldraw_lib__s__12888s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__12888s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__12888s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__12888s01(line=0.2);

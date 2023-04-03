@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/1-4chrd.scad>
 use <s/6216s01.scad>
-function ldraw_lib__6216p01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6216p01(realsolid=false) = [
 // 0 Brick  2 x  4 x  2 with Curved Top with Antenna Pattern
 // 0 Name: 6216p01.dat
 // 0 Author: Damien Roux [Darats]
@@ -16,16 +17,16 @@ function ldraw_lib__6216p01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\6216s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6216s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6216s01(realsolid)],
 // 
 // 1 16 0 20 -20 -20 0 0 0 0 -20 0 1 0 1-4chrd.dat
-  [1,16,0,20,-20,-20,0,0,0,0,-20,0,1,0, ldraw_lib__1_4chrd()],
+  [1,16,0,20,-20,-20,0,0,0,0,-20,0,1,0, ldraw_lib__1_4chrd(realsolid)],
 // 1 16 0 20 -20 0 0 20 -20 0 0 0 1 0 1-4chrd.dat
-  [1,16,0,20,-20,0,0,20,-20,0,0,0,1,0, ldraw_lib__1_4chrd()],
+  [1,16,0,20,-20,0,0,20,-20,0,0,0,1,0, ldraw_lib__1_4chrd(realsolid)],
 // 1 16 -20 44 -20 -20 0 0 0 0 -20 0 1 0 1-4chrd.dat
-  [1,16,-20,44,-20,-20,0,0,0,0,-20,0,1,0, ldraw_lib__1_4chrd()],
+  [1,16,-20,44,-20,-20,0,0,0,0,-20,0,1,0, ldraw_lib__1_4chrd(realsolid)],
 // 1 16 20 44 -20 0 0 20 -20 0 0 0 1 0 1-4chrd.dat
-  [1,16,20,44,-20,0,0,20,-20,0,0,0,1,0, ldraw_lib__1_4chrd()],
+  [1,16,20,44,-20,0,0,20,-20,0,0,0,1,0, ldraw_lib__1_4chrd(realsolid)],
 // 
 // 4 0 -13.1 24.4 -20 -17.543 20.735 -20 -17.874 21.178 -20 -18.162 21.652 -20
   [4,0,-13.1,24.4,-20,-17.543,20.735,-20,-17.874,21.178,-20,-18.162,21.652,-20],
@@ -433,5 +434,5 @@ function ldraw_lib__6216p01() = [
   [4,16,4.02,45.764,-20,3.993,48.029,-20,40,48,-20,40,44,-20],
 ];
 module ldraw_lib__6216p01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6216p01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6216p01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6216p01(line=0.2);

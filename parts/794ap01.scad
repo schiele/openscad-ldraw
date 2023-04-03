@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <448p01.scad>
 use <449.scad>
-function ldraw_lib__794ap01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__794ap01(realsolid=false) = [
 // 0 Container Storage Box 24 x 40 with Red Handle and LEGO Logo Closed "O" Pattern
 // 0 Name: 794ap01.dat
 // 0 Author: Steffen [Steffen]
@@ -19,10 +20,10 @@ function ldraw_lib__794ap01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 448p01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__448p01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__448p01(realsolid)],
 // 1 4 0 -1 0 1 0 0 0 1 0 0 0 1 449.dat
-  [1,4,0,-1,0,1,0,0,0,1,0,0,0,1, ldraw_lib__449()],
+  [1,4,0,-1,0,1,0,0,0,1,0,0,0,1, ldraw_lib__449(realsolid)],
 ];
 module ldraw_lib__794ap01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__794ap01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__794ap01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__794ap01(line=0.2);

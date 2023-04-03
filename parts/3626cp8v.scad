@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/1-16cyli.scad>
 use <s/3626cs01.scad>
 use <../p/t04o6250.scad>
-function ldraw_lib__3626cp8v() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3626cp8v(realsolid=false) = [
 // 0 Minifig Head Female with Black and Silver Sunglasses, Black Eyebrows, Peach Lips Pattern - Hollow Stud
 // 0 Name: 3626cp8v.dat
 // 0 Author: Ulrich Röder [UR]
@@ -20,19 +21,19 @@ function ldraw_lib__3626cp8v() = [
 // 
 // 0 // Main
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3626cs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626cs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626cs01(realsolid)],
 // 1 16 0 4 0 8 0 0 0 -6.4 0 0 0 -8 t04o6250.dat
-  [1,16,0,4,0,8,0,0,0,-6.4,0,0,0,-8, ldraw_lib__t04o6250()],
+  [1,16,0,4,0,8,0,0,0,-6.4,0,0,0,-8, ldraw_lib__t04o6250(realsolid)],
 // 1 16 0 4 0 0 0 -8 0 -6.4 0 -8 0 0 t04o6250.dat
-  [1,16,0,4,0,0,0,-8,0,-6.4,0,-8,0,0, ldraw_lib__t04o6250()],
+  [1,16,0,4,0,0,0,-8,0,-6.4,0,-8,0,0, ldraw_lib__t04o6250(realsolid)],
 // 1 16 0 17 0 -8 0 0 0 6.4 0 0 0 -8 t04o6250.dat
-  [1,16,0,17,0,-8,0,0,0,6.4,0,0,0,-8, ldraw_lib__t04o6250()],
+  [1,16,0,17,0,-8,0,0,0,6.4,0,0,0,-8, ldraw_lib__t04o6250(realsolid)],
 // 1 16 0 17 0 0 0 8 0 6.4 0 -8 0 0 t04o6250.dat
-  [1,16,0,17,0,0,0,8,0,6.4,0,-8,0,0, ldraw_lib__t04o6250()],
+  [1,16,0,17,0,0,0,8,0,6.4,0,-8,0,0, ldraw_lib__t04o6250(realsolid)],
 // 1 16 0 4 0 13 0 0 0 13 0 0 0 -13 1-16cyli.dat
-  [1,16,0,4,0,13,0,0,0,13,0,0,0,-13, ldraw_lib__1_16cyli()],
+  [1,16,0,4,0,13,0,0,0,13,0,0,0,-13, ldraw_lib__1_16cyli(realsolid)],
 // 1 16 0 4 0 -13 0 0 0 13 0 0 0 -13 1-16cyli.dat
-  [1,16,0,4,0,-13,0,0,0,13,0,0,0,-13, ldraw_lib__1_16cyli()],
+  [1,16,0,4,0,-13,0,0,0,13,0,0,0,-13, ldraw_lib__1_16cyli(realsolid)],
 // 3 16 4.97489 14.856 -12.0104 4.97489 15.171 -12.0104 9.192 17 -9.192
   [3,16,4.97489,14.856,-12.0104,4.97489,15.171,-12.0104,9.192,17,-9.192],
 // 3 16 9.192 17 -9.192 4.97489 15.171 -12.0104 4.9752 17 -12.0104
@@ -1013,5 +1014,5 @@ function ldraw_lib__3626cp8v() = [
   [5,24,0,15.613,-13,0,16.617,-13,0.3656,16.69,-12.9273,-0.60534,15.571,-12.8796],
 ];
 module ldraw_lib__3626cp8v(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3626cp8v(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3626cp8v(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3626cp8v(line=0.2);

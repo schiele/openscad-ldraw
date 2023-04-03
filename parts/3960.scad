@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/3960s01.scad>
 use <s/3960s03.scad>
-function ldraw_lib__3960() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3960(realsolid=false) = [
 // 0 Dish  4 x  4 Inverted
 // 0 Name: 3960.dat
 // 0 Author: James Jessiman
@@ -23,11 +24,11 @@ function ldraw_lib__3960() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3960s03.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3960s03()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3960s03(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3960s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3960s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3960s01(realsolid)],
 // 0
 ];
 module ldraw_lib__3960(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3960(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3960(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3960(line=0.2);

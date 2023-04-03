@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/4-4cylc.scad>
-function ldraw_lib__44740() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__44740(realsolid=false) = [
 // 0 Minifig Hair Decoration Plume Ribbon
 // 0 Name: 44740.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -20,7 +21,7 @@ function ldraw_lib__44740() = [
 // 
 // 
 // 1 16 0 5 0 2 0 0 0 -5 0 0 0 2 4-4cylc.dat
-  [1,16,0,5,0,2,0,0,0,-5,0,0,0,2, ldraw_lib__4_4cylc()],
+  [1,16,0,5,0,2,0,0,0,-5,0,0,0,2, ldraw_lib__4_4cylc(realsolid)],
 // 
 // 3 16 2.339 -3.631 -2.871 2.353 -3.811 3.143 2.38 -7.201 -2.595
   [3,16,2.339,-3.631,-2.871,2.353,-3.811,3.143,2.38,-7.201,-2.595],
@@ -1526,5 +1527,5 @@ function ldraw_lib__44740() = [
   [2,24,-2.346,0,2.815,-2.344,0,-3.167],
 ];
 module ldraw_lib__44740(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__44740(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__44740(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__44740(line=0.2);

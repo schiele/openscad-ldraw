@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/box5.scad>
 use <../p/stud.scad>
-function ldraw_lib__14716() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__14716(realsolid=false) = [
 // 0 Brick  1 x  1 x  3
 // 0 Name: 14716.dat
 // 0 Author: Owen Burgoyne [C3POwen]
@@ -26,12 +27,12 @@ function ldraw_lib__14716() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 72 0 6 0 0 0 -68 0 0 0 6 box5.dat
-  [1,16,0,72,0,6,0,0,0,-68,0,0,0,6, ldraw_lib__box5()],
+  [1,16,0,72,0,6,0,0,0,-68,0,0,0,6, ldraw_lib__box5(realsolid)],
 // 1 16 0 72 0 10 0 0 0 -72 0 0 0 10 box5.dat
-  [1,16,0,72,0,10,0,0,0,-72,0,0,0,10, ldraw_lib__box5()],
+  [1,16,0,72,0,10,0,0,0,-72,0,0,0,10, ldraw_lib__box5(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 stud.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud(realsolid)],
 ];
 module ldraw_lib__14716(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__14716(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__14716(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__14716(line=0.2);

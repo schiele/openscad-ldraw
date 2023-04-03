@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <10352.scad>
 use <10353.scad>
-function ldraw_lib__10352c01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__10352c01(realsolid=false) = [
 // 0 Animal Horse Poseable Body
 // 0 Name: 10352c01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -22,10 +23,10 @@ function ldraw_lib__10352c01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 10352.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__10352()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__10352(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 10353.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__10353()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__10353(realsolid)],
 ];
 module ldraw_lib__10352c01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__10352c01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__10352c01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__10352c01(line=0.2);

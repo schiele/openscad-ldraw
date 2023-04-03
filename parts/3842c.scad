@@ -3,7 +3,8 @@ use <../p/4-4disc.scad>
 use <s/3842as01.scad>
 use <s/3842cs02.scad>
 use <../p/stud4.scad>
-function ldraw_lib__3842c() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3842c(realsolid=false) = [
 // 0 Minifig Helmet Classic with Thick Chin Guard
 // 0 Name: 3842c.dat
 // 0 Author: Willy Tschager [Holly-Wood]
@@ -30,24 +31,24 @@ function ldraw_lib__3842c() = [
 // 
 // 0 // Top Inside
 // 1 16 0 -4 0 1 0 0 0 -1 0 0 0 1 stud4.dat
-  [1,16,0,-4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4()],
+  [1,16,0,-4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4(realsolid)],
 // 1 16 0 -4 0 6 0 0 0 -1 0 0 0 -6 4-4disc.dat
-  [1,16,0,-4,0,6,0,0,0,-1,0,0,0,-6, ldraw_lib__4_4disc()],
+  [1,16,0,-4,0,6,0,0,0,-1,0,0,0,-6, ldraw_lib__4_4disc(realsolid)],
 // 
 // 0 // Structure right
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3842as01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3842as01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3842as01(realsolid)],
 // 0 // Structure left
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\3842as01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__3842as01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__3842as01(realsolid)],
 // 
 // 0 // Thick chin guard right
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3842cs02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3842cs02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3842cs02(realsolid)],
 // 0 // Thick chin guard left
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\3842cs02.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__3842cs02()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__3842cs02(realsolid)],
 ];
 module ldraw_lib__3842c(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3842c(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3842c(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3842c(line=0.2);

@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/54872s01.scad>
 use <s/54872s03.scad>
-function ldraw_lib__54872p02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__54872p02(realsolid=false) = [
 // 0 Minifig Head SpongeBob with Shocked Pattern
 // 0 Name: 54872p02.dat
 // 0 Author: Merlijn Wissink [legolijntje]
@@ -18,10 +19,10 @@ function ldraw_lib__54872p02() = [
 // 
 // 
 // 1 16 0 16 0 1 0 0 0 1 0 0 0 1 s\54872s01.dat
-  [1,16,0,16,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__54872s01()],
+  [1,16,0,16,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__54872s01(realsolid)],
 // 0 // Rear Face
 // 1 16 0 0 14.5 -1 0 0 0 1 0 0 0 -1 s\54872s03.dat
-  [1,16,0,0,14.5,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__54872s03()],
+  [1,16,0,0,14.5,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__54872s03(realsolid)],
 // 0 // Front Face Pattern
 // 4 70 15.7717 46.1481 -14.5 16 45 -14.5 13 45 -14.5 15.1213 47.1213 -14.5
   [4,70,15.7717,46.1481,-14.5,16,45,-14.5,13,45,-14.5,15.1213,47.1213,-14.5],
@@ -1139,5 +1140,5 @@ function ldraw_lib__54872p02() = [
   [4,16,6.3,4.6,-14.5,6.7,4.5,-14.5,7.2,2,-14.5,2.2,2,-14.5],
 ];
 module ldraw_lib__54872p02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__54872p02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__54872p02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__54872p02(line=0.2);

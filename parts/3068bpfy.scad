@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3068bs01.scad>
-function ldraw_lib__3068bpfy() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3068bpfy(realsolid=false) = [
 // 0 Tile  2 x  2 with Fabuland Airmail Letter with "3" Stamp Pattern
 // 0 Name: 3068bpfy.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -15,7 +16,7 @@ function ldraw_lib__3068bpfy() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3068bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3068bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3068bs01(realsolid)],
 // 4 16 -5.2 0 -4.3 -6.1864 0 -3.7305 -6.339 0 -4.3 -6.1864 0 -4.8695
   [4,16,-5.2,0,-4.3,-6.1864,0,-3.7305,-6.339,0,-4.3,-6.1864,0,-4.8695],
 // 4 16 -5.2 0 -4.3 -6.1864 0 -4.8695 -5.7695 0 -5.2864 -5.2 0 -5.439
@@ -1188,5 +1189,5 @@ function ldraw_lib__3068bpfy() = [
   [3,16,-20,0,20,-17.25,0,17.75,-16.25,0,18.3],
 ];
 module ldraw_lib__3068bpfy(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3068bpfy(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3068bpfy(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3068bpfy(line=0.2);

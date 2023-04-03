@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <003238r.scad>
 use <3596.scad>
-function ldraw_lib__3596d02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3596d02(realsolid=false) = [
 // 0 Flag on Flagpole Type 5 with Crown on Violet Sticker
 // 0 Name: 3596d02.dat
 // 0 Author: Alex Taylor [anathema]
@@ -16,13 +17,13 @@ function ldraw_lib__3596d02() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 3596.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3596()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3596(realsolid)],
 // 1 16 2 -132 34 0 -1 0 0 0 -1 1 0 0 003238r.dat
-  [1,16,2,-132,34,0,-1,0,0,0,-1,1,0,0, ldraw_lib__003238r()],
+  [1,16,2,-132,34,0,-1,0,0,0,-1,1,0,0, ldraw_lib__003238r(realsolid)],
 // 1 16 -2 -132 34 0 1 0 0 0 -1 -1 0 0 003238r.dat
-  [1,16,-2,-132,34,0,1,0,0,0,-1,-1,0,0, ldraw_lib__003238r()],
+  [1,16,-2,-132,34,0,1,0,0,0,-1,-1,0,0, ldraw_lib__003238r(realsolid)],
 // 0
 ];
 module ldraw_lib__3596d02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3596d02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3596d02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3596d02(line=0.2);

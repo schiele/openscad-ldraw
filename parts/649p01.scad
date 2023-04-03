@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/1-4disc.scad>
 use <s/3351as01.scad>
-function ldraw_lib__649p01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__649p01(realsolid=false) = [
 // 0 ~Roadsign Triangle with Level Crossing Pattern (Obsolete)
 // 0 Name: 649p01.dat
 // 0 Author: Chris Dee [cwdee]
@@ -22,17 +23,17 @@ function ldraw_lib__649p01() = [
 // 
 // 
 // 1 4 0 -108.1 -2 1 0 -1.732 -1.732 0 -1 0 4 0 1-4disc.dat
-  [1,4,0,-108.1,-2,1,0,-1.732,-1.732,0,-1,0,4,0, ldraw_lib__1_4disc()],
+  [1,4,0,-108.1,-2,1,0,-1.732,-1.732,0,-1,0,4,0, ldraw_lib__1_4disc(realsolid)],
 // 1 4 0 -108.1 -2 1.732 0 -1 -1 0 -1.732 0 4 0 1-4disc.dat
-  [1,4,0,-108.1,-2,1.732,0,-1,-1,0,-1.732,0,4,0, ldraw_lib__1_4disc()],
+  [1,4,0,-108.1,-2,1.732,0,-1,-1,0,-1.732,0,4,0, ldraw_lib__1_4disc(realsolid)],
 // 1 4 21.997 -70 -2 1 0 1.732 1.732 0 -1 0 4 0 1-4disc.dat
-  [1,4,21.997,-70,-2,1,0,1.732,1.732,0,-1,0,4,0, ldraw_lib__1_4disc()],
+  [1,4,21.997,-70,-2,1,0,1.732,1.732,0,-1,0,4,0, ldraw_lib__1_4disc(realsolid)],
 // 1 4 21.997 -70 -2 0 0 2 2 0 0 0 4 0 1-4disc.dat
-  [1,4,21.997,-70,-2,0,0,2,2,0,0,0,4,0, ldraw_lib__1_4disc()],
+  [1,4,21.997,-70,-2,0,0,2,2,0,0,0,4,0, ldraw_lib__1_4disc(realsolid)],
 // 1 4 -21.997 -70 -2 -2 0 0 0 0 2 0 4 0 1-4disc.dat
-  [1,4,-21.997,-70,-2,-2,0,0,0,0,2,0,4,0, ldraw_lib__1_4disc()],
+  [1,4,-21.997,-70,-2,-2,0,0,0,0,2,0,4,0, ldraw_lib__1_4disc(realsolid)],
 // 1 4 -21.997 -70 -2 -1.732 0 -1 -1 0 1.732 0 4 0 1-4disc.dat
-  [1,4,-21.997,-70,-2,-1.732,0,-1,-1,0,1.732,0,4,0, ldraw_lib__1_4disc()],
+  [1,4,-21.997,-70,-2,-1.732,0,-1,-1,0,1.732,0,4,0, ldraw_lib__1_4disc(realsolid)],
 // 4 4 -22 -70 -2 -22 -68 -2 22 -68 -2 22 -70 -2
   [4,4,-22,-70,-2,-22,-68,-2,22,-68,-2,22,-70,-2],
 // 4 4 22 -70 -2 16.8 -73 -2 -16.8 -73 -2 -22 -70 -2
@@ -126,9 +127,9 @@ function ldraw_lib__649p01() = [
 // 3 0 7.15 -87 -2 6.3 -85 -2 8 -85 -2
   [3,0,7.15,-87,-2,6.3,-85,-2,8,-85,-2],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3351as01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3351as01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3351as01(realsolid)],
 // 0
 ];
 module ldraw_lib__649p01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__649p01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__649p01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__649p01(line=0.2);

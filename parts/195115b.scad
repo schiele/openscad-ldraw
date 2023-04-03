@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__195115b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__195115b(realsolid=false) = [
 // 0 Sticker  1.9 x  2.7 with Drink and Ice Pop
 // 0 Name: 195115b.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -18,7 +19,7 @@ function ldraw_lib__195115b() = [
 // 
 // 
 // 1 16 0 -0.25 0 27 0 0 0 0.25 0 0 0 19 box5-12.dat
-  [1,16,0,-0.25,0,27,0,0,0,0.25,0,0,0,19, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,27,0,0,0,0.25,0,0,0,19, ldraw_lib__box5_12(realsolid)],
 // 0 BFC NOCLIP
   [0,"BFC","NOCLIP"],
 // 4 4 12.9 -0.25 -9.7 5 -0.25 -2.1 0.1 -0.25 -6 8.7 -0.25 -14.2
@@ -455,5 +456,5 @@ function ldraw_lib__195115b() = [
   [3,16,27,-0.25,19,-15,-0.25,17.3,-14.4,-0.25,17.2],
 ];
 module ldraw_lib__195115b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__195115b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__195115b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__195115b(line=0.2);

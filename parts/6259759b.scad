@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__6259759b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6259759b(realsolid=false) = [
 // 0 Sticker  3.8 x  5.6 with Coral Star on Magenta Circle and Stripe
 // 0 Name: 6259759b.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -17,7 +18,7 @@ function ldraw_lib__6259759b() = [
 // 
 // 
 // 1 16 0 -0.25 0 56.25 0 0 0 0.25 0 0 0 38.75 box5-12.dat
-  [1,16,0,-0.25,0,56.25,0,0,0,0.25,0,0,0,38.75, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,56.25,0,0,0,0.25,0,0,0,38.75, ldraw_lib__box5_12(realsolid)],
 // 
 // 4 26 40.363 -0.25 9.627 48.207 -0.25 2.516 55.126 -0.25 6.126 54.976 -0.25 9.177
   [4,26,40.363,-0.25,9.627,48.207,-0.25,2.516,55.126,-0.25,6.126,54.976,-0.25,9.177],
@@ -303,5 +304,5 @@ function ldraw_lib__6259759b() = [
   [3,15,-56.25,-0.25,-25,-56.25,-0.25,-38.75,24,-0.25,-25],
 ];
 module ldraw_lib__6259759b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6259759b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6259759b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6259759b(line=0.2);

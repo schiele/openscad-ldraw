@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__6005745d() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6005745d(realsolid=false) = [
 // 0 Sticker  1.1 x  3.9 with Black "SOPWITH"
 // 0 Name: 6005745d.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -17,7 +18,7 @@ function ldraw_lib__6005745d() = [
 // 
 // 
 // 1 16 0 -0.25 0 39 0 0 0 0.25 0 0 0 11 box5-12.dat
-  [1,16,0,-0.25,0,39,0,0,0,0.25,0,0,0,11, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,39,0,0,0,0.25,0,0,0,11, ldraw_lib__box5_12(realsolid)],
 // 0 //
 // 4 0 -35.182 -0.25 -5.41 -34.261 -0.25 -5.801 -34.538 -0.25 -3.315 -35.484 -0.25 -1.96
   [4,0,-35.182,-0.25,-5.41,-34.261,-0.25,-5.801,-34.538,-0.25,-3.315,-35.484,-0.25,-1.96],
@@ -814,5 +815,5 @@ function ldraw_lib__6005745d() = [
   [4,71,21.435,-0.25,-6,16.407,-0.25,-6,0,-0.25,-11,39,-0.25,-11],
 ];
 module ldraw_lib__6005745d(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6005745d(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6005745d(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6005745d(line=0.2);

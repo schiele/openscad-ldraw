@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <1-12ring17.scad>
-function ldraw_lib__48__1_12ri17() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__48__1_12ri17(realsolid=false) = [
 // 0 ~Moved to 48\1-12ring17
 // 0 Name: 48\1-12ri17.dat
 // 0 Author: [PTadmin]
@@ -16,8 +17,8 @@ function ldraw_lib__48__1_12ri17() = [
 // 
 // 0 // Hi-Res Ring 17 x 0.0833
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 48\1-12ring17.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__48__1_12ring17()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__48__1_12ring17(realsolid)],
 ];
 module ldraw_lib__48__1_12ri17(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__48__1_12ri17(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__48__1_12ri17(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__48__1_12ri17(line=0.2);

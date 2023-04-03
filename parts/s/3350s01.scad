@@ -3,7 +3,8 @@ use <../../p/4-4cyli.scad>
 use <../../p/4-4disc.scad>
 use <../../p/7-8edge.scad>
 use <3350bs02.scad>
-function ldraw_lib__s__3350s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__3350s01(realsolid=false) = [
 // 0 ~Roadsign Round without Front Face
 // 0 Name: s\3350s01.dat
 // 0 Author: Manfred Moolhuysen
@@ -27,20 +28,20 @@ function ldraw_lib__s__3350s01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3350bs02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3350bs02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3350bs02(realsolid)],
 // 0 //
 // 1 16 0 -88 2 -20 0 0 0 0 20 0 -20 0 4-4disc.dat
-  [1,16,0,-88,2,-20,0,0,0,0,20,0,-20,0, ldraw_lib__4_4disc()],
+  [1,16,0,-88,2,-20,0,0,0,0,20,0,-20,0, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 -88 -2 20 0 0 0 0 20 0 4 0 4-4cyli.dat
-  [1,16,0,-88,-2,20,0,0,0,0,20,0,4,0, ldraw_lib__4_4cyli()],
+  [1,16,0,-88,-2,20,0,0,0,0,20,0,4,0, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 -88 2 -7.6536 0 -18.4774 18.4774 0 -7.6536 0 20 0 7-8edge.dat
-  [1,16,0,-88,2,-7.6536,0,-18.4774,18.4774,0,-7.6536,0,20,0, ldraw_lib__7_8edge()],
+  [1,16,0,-88,2,-7.6536,0,-18.4774,18.4774,0,-7.6536,0,20,0, ldraw_lib__7_8edge(realsolid)],
 // 2 24 7.654 -69.522 2 5.235 -69.048 2
   [2,24,7.654,-69.522,2,5.235,-69.048,2],
 // 2 24 -7.654 -69.522 2 -5.235 -69.048 2
   [2,24,-7.654,-69.522,2,-5.235,-69.048,2],
 // 1 16 0 -88 -2 -7.6536 0 -18.4774 18.4774 0 -7.6536 0 20 0 7-8edge.dat
-  [1,16,0,-88,-2,-7.6536,0,-18.4774,18.4774,0,-7.6536,0,20,0, ldraw_lib__7_8edge()],
+  [1,16,0,-88,-2,-7.6536,0,-18.4774,18.4774,0,-7.6536,0,20,0, ldraw_lib__7_8edge(realsolid)],
 // 2 24 7.654 -69.522 -2 5.235 -69.048 -2
   [2,24,7.654,-69.522,-2,5.235,-69.048,-2],
 // 2 24 -7.654 -69.522 -2 -5.235 -69.048 -2
@@ -48,5 +49,5 @@ function ldraw_lib__s__3350s01() = [
 // 0 //
 ];
 module ldraw_lib__s__3350s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__3350s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__3350s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__3350s01(line=0.2);

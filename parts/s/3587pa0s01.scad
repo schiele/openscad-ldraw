@@ -2,7 +2,8 @@ use <../../lib.scad>
 use <../../p/1-4chrd.scad>
 use <../../p/4-4disc.scad>
 use <../../p/4-4ndis.scad>
-function ldraw_lib__s__3587pa0s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__3587pa0s01(realsolid=false) = [
 // 0 ~Tail  2 x  5 x  3.667 Plane with Aquashark Blue Shark with Red 'X' Pattern Subpart
 // 0 Name: s\3587pa0s01.dat
 // 0 Author: Mikkel Bech Jensen [gaia]
@@ -856,16 +857,16 @@ function ldraw_lib__s__3587pa0s01() = [
   [3,16,0,-30.867,43.39,0,-30.267,44.37,0,-30.717,43.88],
 // 
 // 1 16 0 -70 64 0 -1 0 -10 0 0 0 0 10 1-4chrd.dat
-  [1,16,0,-70,64,0,-1,0,-10,0,0,0,0,10, ldraw_lib__1_4chrd()],
+  [1,16,0,-70,64,0,-1,0,-10,0,0,0,0,10, ldraw_lib__1_4chrd(realsolid)],
 // 1 1 0 -47.37 33.436 0 -1 0 0 0 -1.12 1.12 0 0 4-4ndis.dat
-  [1,1,0,-47.37,33.436,0,-1,0,0,0,-1.12,1.12,0,0, ldraw_lib__4_4ndis()],
+  [1,1,0,-47.37,33.436,0,-1,0,0,0,-1.12,1.12,0,0, ldraw_lib__4_4ndis(realsolid)],
 // 1 1 0 -47.37 46.165 0 -1 0 0 0 -1.12 1.12 0 0 4-4ndis.dat
-  [1,1,0,-47.37,46.165,0,-1,0,0,0,-1.12,1.12,0,0, ldraw_lib__4_4ndis()],
+  [1,1,0,-47.37,46.165,0,-1,0,0,0,-1.12,1.12,0,0, ldraw_lib__4_4ndis(realsolid)],
 // 1 16 0 -47.37 46.165 0 -1 0 0 0 -1.12 1.12 0 0 4-4disc.dat
-  [1,16,0,-47.37,46.165,0,-1,0,0,0,-1.12,1.12,0,0, ldraw_lib__4_4disc()],
+  [1,16,0,-47.37,46.165,0,-1,0,0,0,-1.12,1.12,0,0, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 -47.37 33.436 0 -1 0 0 0 -1.12 1.12 0 0 4-4disc.dat
-  [1,16,0,-47.37,33.436,0,-1,0,0,0,-1.12,1.12,0,0, ldraw_lib__4_4disc()],
+  [1,16,0,-47.37,33.436,0,-1,0,0,0,-1.12,1.12,0,0, ldraw_lib__4_4disc(realsolid)],
 ];
 module ldraw_lib__s__3587pa0s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__3587pa0s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__3587pa0s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__3587pa0s01(line=0.2);

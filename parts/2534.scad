@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__2534() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2534(realsolid=false) = [
 // 0 ~Minifig Cannon Shooting Plunger
 // 0 Name: 2534.dat
 // 0 Author: Andy Westrate [westrate]
@@ -1384,5 +1385,5 @@ function ldraw_lib__2534() = [
 // 0
 ];
 module ldraw_lib__2534(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2534(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2534(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2534(line=0.2);

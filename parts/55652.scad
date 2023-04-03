@@ -5,7 +5,8 @@ use <../p/4-4disc.scad>
 use <../p/4-4edge.scad>
 use <../p/4-4ring4.scad>
 use <../p/4-4ring6.scad>
-function ldraw_lib__55652() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__55652(realsolid=false) = [
 // 0 ~Electric Mindstorms NXT Ultrasonic Sensor Transducer
 // 0 Name: 55652.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -20,27 +21,27 @@ function ldraw_lib__55652() = [
 // 
 // 
 // 1 16 0 12 0 12 0 0 0 1 0 0 0 12 4-4edge.dat
-  [1,16,0,12,0,12,0,0,0,1,0,0,0,12, ldraw_lib__4_4edge()],
+  [1,16,0,12,0,12,0,0,0,1,0,0,0,12, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 13 0 12 0 0 0 1 0 0 0 12 4-4edge.dat
-  [1,16,0,13,0,12,0,0,0,1,0,0,0,12, ldraw_lib__4_4edge()],
+  [1,16,0,13,0,12,0,0,0,1,0,0,0,12, ldraw_lib__4_4edge(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 12 0 12 0 0 0 1 0 0 0 12 4-4cyli.dat
-  [1,16,0,12,0,12,0,0,0,1,0,0,0,12, ldraw_lib__4_4cyli()],
+  [1,16,0,12,0,12,0,0,0,1,0,0,0,12, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 35 0 15 0 0 0 1 0 0 0 15 4-4edge.dat
-  [1,16,0,35,0,15,0,0,0,1,0,0,0,15, ldraw_lib__4_4edge()],
+  [1,16,0,35,0,15,0,0,0,1,0,0,0,15, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 35 0 15 0 0 0 -1 0 0 0 15 4-4disc.dat
-  [1,16,0,35,0,15,0,0,0,-1,0,0,0,15, ldraw_lib__4_4disc()],
+  [1,16,0,35,0,15,0,0,0,-1,0,0,0,15, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 12 0 15 0 0 0 1 0 0 0 15 4-4edge.dat
-  [1,16,0,12,0,15,0,0,0,1,0,0,0,15, ldraw_lib__4_4edge()],
+  [1,16,0,12,0,15,0,0,0,1,0,0,0,15, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 12 0 15 0 0 0 23 0 0 0 15 4-4cyli.dat
-  [1,16,0,12,0,15,0,0,0,23,0,0,0,15, ldraw_lib__4_4cyli()],
+  [1,16,0,12,0,15,0,0,0,23,0,0,0,15, ldraw_lib__4_4cyli(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 13 0 14 0 0 0 8 0 0 0 14 4-4cyli.dat
-  [1,16,0,13,0,14,0,0,0,8,0,0,0,14, ldraw_lib__4_4cyli()],
+  [1,16,0,13,0,14,0,0,0,8,0,0,0,14, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 12 0 -3 0 0 0 1 0 0 0 3 4-4ring4.dat
-  [1,16,0,12,0,-3,0,0,0,1,0,0,0,3, ldraw_lib__4_4ring4()],
+  [1,16,0,12,0,-3,0,0,0,1,0,0,0,3, ldraw_lib__4_4ring4(realsolid)],
 // 4 0 0.04 13 -13 0.04 13 13 -0.04 13 13 -0.04 13 -13
   [4,0,0.04,13,-13,0.04,13,13,-0.04,13,13,-0.04,13,-13],
 // 4 0 -1.36 13 -13 -1.36 13 13 -1.44 13 13 -1.44 13 -13
@@ -110,19 +111,19 @@ function ldraw_lib__55652() = [
 // 4 0 -8 13 11.16 8 13 11.16 8 13 11.24 -8 13 11.24
   [4,0,-8,13,11.16,8,13,11.16,8,13,11.24,-8,13,11.24],
 // 1 16 0 19 0 12 0 0 0 1 0 0 0 12 4-4disc.dat
-  [1,16,0,19,0,12,0,0,0,1,0,0,0,12, ldraw_lib__4_4disc()],
+  [1,16,0,19,0,12,0,0,0,1,0,0,0,12, ldraw_lib__4_4disc(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 15 0 -10 0 0 0 5 0 0 0 10 4-4con0.dat
-  [1,16,0,15,0,-10,0,0,0,5,0,0,0,10, ldraw_lib__4_4con0()],
+  [1,16,0,15,0,-10,0,0,0,5,0,0,0,10, ldraw_lib__4_4con0(realsolid)],
 // 1 16 0 15 0 -10 0 0 0 1 0 0 0 10 4-4edge.dat
-  [1,16,0,15,0,-10,0,0,0,1,0,0,0,10, ldraw_lib__4_4edge()],
+  [1,16,0,15,0,-10,0,0,0,1,0,0,0,10, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 19 0 -2 0 0 0 1 0 0 0 2 4-4edge.dat
-  [1,16,0,19,0,-2,0,0,0,1,0,0,0,2, ldraw_lib__4_4edge()],
+  [1,16,0,19,0,-2,0,0,0,1,0,0,0,2, ldraw_lib__4_4edge(realsolid)],
 // 1 0 0 19 0 -2 0 0 0 1 0 0 0 2 4-4ring6.dat
-  [1,0,0,19,0,-2,0,0,0,1,0,0,0,2, ldraw_lib__4_4ring6()],
+  [1,0,0,19,0,-2,0,0,0,1,0,0,0,2, ldraw_lib__4_4ring6(realsolid)],
 // 0
 ];
 module ldraw_lib__55652(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__55652(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__55652(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__55652(line=0.2);

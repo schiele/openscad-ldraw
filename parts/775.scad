@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <4506.scad>
-function ldraw_lib__775() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__775(realsolid=false) = [
 // 0 ~Moved to 4506
 // 0 Name: 775.dat
 // 0 Author: [PTadmin]
@@ -16,8 +17,8 @@ function ldraw_lib__775() = [
 // 
 // 0 // Minifig Forestman Cap
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 4506.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4506()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4506(realsolid)],
 ];
 module ldraw_lib__775(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__775(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__775(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__775(line=0.2);

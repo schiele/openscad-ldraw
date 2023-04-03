@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__43898px1s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__43898px1s01(realsolid=false) = [
 // 0 ~Dish  3 x  3 Inverted with Six Orange Flower Petals and Black Outline Pattern - Quarter
 // 0 Name: s\43898px1s01.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -425,5 +426,5 @@ function ldraw_lib__s__43898px1s01() = [
   [4,16,-29.742,12,3.915,-27.1,8.85702,2.17,-26.83712,8.58,2.47168,-26.7678,8.58,3.5235],
 ];
 module ldraw_lib__s__43898px1s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__43898px1s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__43898px1s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__43898px1s01(line=0.2);

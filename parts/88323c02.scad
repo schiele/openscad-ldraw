@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <24375.scad>
 use <88323.scad>
-function ldraw_lib__88323c02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__88323c02(realsolid=false) = [
 // 0 Technic Chain Tread 5 Wide Reinforced with Single Black Rubber Foot Left
 // 0 Name: 88323c02.dat
 // 0 Author: Chris Dee [cwdee]
@@ -18,10 +19,10 @@ function ldraw_lib__88323c02() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 88323.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__88323()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__88323(realsolid)],
 // 1 256 -20 -14 -17 1 0 0 0 1 0 0 0 1 24375.dat
-  [1,256,-20,-14,-17,1,0,0,0,1,0,0,0,1, ldraw_lib__24375()],
+  [1,256,-20,-14,-17,1,0,0,0,1,0,0,0,1, ldraw_lib__24375(realsolid)],
 ];
 module ldraw_lib__88323c02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__88323c02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__88323c02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__88323c02(line=0.2);

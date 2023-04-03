@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/6179ps0s01.scad>
 use <s/6179s01.scad>
-function ldraw_lib__6179ps5() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6179ps5(realsolid=false) = [
 // 0 Plate  4 x  4 with 4 Studs on One Edge with "20 YEARS LEGO STAR WARS 1999-2019" and "OBI-WAN KENOBI" Pattern
 // 0 Name: 6179ps5.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -20,9 +21,9 @@ function ldraw_lib__6179ps5() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\6179s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6179s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6179s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\6179ps0s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6179ps0s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6179ps0s01(realsolid)],
 // 
 // 4 15 -21.062 0 -31.0339 -21.062 0 -36.0543 -19.5072 0 -36.0543 -19.5072 0 -31.0339
   [4,15,-21.062,0,-31.0339,-21.062,0,-36.0543,-19.5072,0,-36.0543,-19.5072,0,-31.0339],
@@ -834,5 +835,5 @@ function ldraw_lib__6179ps5() = [
   [3,16,29.5914,0,-31.0339,29.9379,0,-31.0701,40,0,-30],
 ];
 module ldraw_lib__6179ps5(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6179ps5(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6179ps5(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6179ps5(line=0.2);

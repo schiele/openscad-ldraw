@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/4-4ering.scad>
 use <s/98138s01.scad>
-function ldraw_lib__98138pm5() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__98138pm5(realsolid=false) = [
 // 0 Tile  1 x  1 Round with Octagon (Arkenstone) Pattern
 // 0 Name: 98138pm5.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -22,9 +23,9 @@ function ldraw_lib__98138pm5() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\98138s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01(realsolid)],
 // 1 16 0 0 0 9 0 0 0 1 0 0 0 9 4-4ering.dat
-  [1,16,0,0,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4ering()],
+  [1,16,0,0,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4ering(realsolid)],
 // 0 BFC NOCLIP
   [0,"BFC","NOCLIP"],
 // 4 80 -8 0 3.5 -7.3 0 2.9 -4.4 0 1.7 -7.1 0 3.4
@@ -147,5 +148,5 @@ function ldraw_lib__98138pm5() = [
   [4,16,1.8,0,-3.9,3.9,0,-1.8,-3.9,0,-1.8,-1.8,0,-3.9],
 ];
 module ldraw_lib__98138pm5(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__98138pm5(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__98138pm5(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__98138pm5(line=0.2);

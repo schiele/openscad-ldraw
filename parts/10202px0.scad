@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/10202s01.scad>
-function ldraw_lib__10202px0() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__10202px0(realsolid=false) = [
 // 0 Tile  6 x  6 with Groove and Underside Studs with Black Eyes, Eyebrows, Open Mouth Evil Smile, Teeth and Red Tongue Pattern
 // 0 Name: 10202px0.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -17,7 +18,7 @@ function ldraw_lib__10202px0() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\10202s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__10202s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__10202s01(realsolid)],
 // 
 // 4 0 -34.22 0 41.03 -34.89 0 41.19 -35.12 0 40.78 -33.09 0 38.88
   [4,0,-34.22,0,41.03,-34.89,0,41.19,-35.12,0,40.78,-33.09,0,38.88],
@@ -939,5 +940,5 @@ function ldraw_lib__10202px0() = [
   [3,16,-16.46,0,6.67,-14.3,0,-6.2,-15.4,0,6.46],
 ];
 module ldraw_lib__10202px0(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__10202px0(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__10202px0(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__10202px0(line=0.2);

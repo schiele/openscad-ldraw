@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__30102p1b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__30102p1b(realsolid=false) = [
 // 0 ~Door  2 x  8 x  6 Revolving - Ninja Pattern - Silver
 // 0 Name: s\30102p1b.dat
 // 0 Author: Franklin W. Cain [fwcain]
@@ -100,5 +101,5 @@ function ldraw_lib__s__30102p1b() = [
 // 0 end of file
 ];
 module ldraw_lib__s__30102p1b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__30102p1b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__30102p1b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__30102p1b(line=0.2);

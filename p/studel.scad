@@ -5,7 +5,8 @@ use <3-4cyli.scad>
 use <4-4cyli.scad>
 use <4-4disc.scad>
 use <4-4edge.scad>
-function ldraw_lib__studel() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__studel(realsolid=false) = [
 // 0 Stud with Electric Contact
 // 0 Name: studel.dat
 // 0 Author: Remco Braak [remco1974]
@@ -30,24 +31,24 @@ function ldraw_lib__studel() = [
 // 
 // 
 // 1 16 0 0 0 6 0 0 0 1 0 0 0 6 4-4edge.dat
-  [1,16,0,0,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4edge()],
+  [1,16,0,0,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 -4 0 6 0 0 0 1 0 0 0 6 4-4edge.dat
-  [1,16,0,-4,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4edge()],
+  [1,16,0,-4,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 0 0 0 0 6 0 -3 0 -6 0 0 3-4cyli.dat
-  [1,16,0,0,0,0,0,6,0,-3,0,-6,0,0, ldraw_lib__3_4cyli()],
+  [1,16,0,0,0,0,0,6,0,-3,0,-6,0,0, ldraw_lib__3_4cyli(realsolid)],
 // 1 16 0 -3 0 0 0 6 0 -1 0 -6 0 0 4-4cyli.dat
-  [1,16,0,-3,0,0,0,6,0,-1,0,-6,0,0, ldraw_lib__4_4cyli()],
+  [1,16,0,-3,0,0,0,6,0,-1,0,-6,0,0, ldraw_lib__4_4cyli(realsolid)],
 // 1 494 0 0 0 -6 0 0 0 -3 0 0 0 -6 1-4cyli.dat
-  [1,494,0,0,0,-6,0,0,0,-3,0,0,0,-6, ldraw_lib__1_4cyli()],
+  [1,494,0,0,0,-6,0,0,0,-3,0,0,0,-6, ldraw_lib__1_4cyli(realsolid)],
 // 1 16 0 -3 0 -6 0 0 0 1 0 0 0 -6 1-4edge.dat
-  [1,16,0,-3,0,-6,0,0,0,1,0,0,0,-6, ldraw_lib__1_4edge()],
+  [1,16,0,-3,0,-6,0,0,0,1,0,0,0,-6, ldraw_lib__1_4edge(realsolid)],
 // 2 24 -6 0 0 -6 -3 0
   [2,24,-6,0,0,-6,-3,0],
 // 2 24 0 0 -6 0 -3 -6
   [2,24,0,0,-6,0,-3,-6],
 // 1 16 0 -4 0 6 0 0 0 1 0 0 0 6 4-4disc.dat
-  [1,16,0,-4,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4disc()],
+  [1,16,0,-4,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4disc(realsolid)],
 ];
 module ldraw_lib__studel(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__studel(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__studel(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__studel(line=0.2);

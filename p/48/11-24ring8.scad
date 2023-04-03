@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__48__11_24ring8() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__48__11_24ring8(realsolid=false) = [
 // 0 Hi-Res Ring  8 x 0.4583
 // 0 Name: 48\11-24ring8.dat
 // 0 Author: Ulrich Röder [UR]
@@ -60,5 +61,5 @@ function ldraw_lib__48__11_24ring8() = [
 // 0 // Build by Primitive Generator 2
 ];
 module ldraw_lib__48__11_24ring8(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__48__11_24ring8(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__48__11_24ring8(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__48__11_24ring8(line=0.2);

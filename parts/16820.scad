@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/16820s01.scad>
-function ldraw_lib__16820() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__16820(realsolid=false) = [
 // 0 Minifig Skirt  0.7L with 11 Diamond Points
 // 0 Name: 16820.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -20,7 +21,7 @@ function ldraw_lib__16820() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\16820s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__16820s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__16820s01(realsolid)],
 // 4 16 55.1 0 -10 54.9 0 -13.8 54.5 0 -17.1 53.8 0 -19.9
   [4,16,55.1,0,-10,54.9,0,-13.8,54.5,0,-17.1,53.8,0,-19.9],
 // 4 16 55.1 0 -10 53.8 0 -19.9 52.7 0 -22.4 51 0 -24.4
@@ -1210,5 +1211,5 @@ function ldraw_lib__16820() = [
   [5,24,2.7,-0.25,-22.4,2.7,0,-22.4,4.2,0,-20.1,1,-0.25,-24.4],
 ];
 module ldraw_lib__16820(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__16820(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__16820(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__16820(line=0.2);

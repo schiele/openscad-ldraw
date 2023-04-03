@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <450.scad>
 use <u9132.scad>
-function ldraw_lib__u9132c02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__u9132c02(realsolid=false) = [
 // 0 ~Axle Steel  4 x 72 with Two Wheels  6.4 x  8
 // 0 Name: u9132c02.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -19,12 +20,12 @@ function ldraw_lib__u9132c02() = [
 // 
 // 
 // 1 16 -31 0 0 0 0 1 0 1 0 -1 0 0 450.dat
-  [1,16,-31,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__450()],
+  [1,16,-31,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__450(realsolid)],
 // 1 16 31 0 0 0 0 -1 0 1 0 1 0 0 450.dat
-  [1,16,31,0,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__450()],
+  [1,16,31,0,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__450(realsolid)],
 // 1 494 0 0 0 1 0 0 0 1 0 0 0 1 u9132.dat
-  [1,494,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9132()],
+  [1,494,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9132(realsolid)],
 ];
 module ldraw_lib__u9132c02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__u9132c02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__u9132c02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__u9132c02(line=0.2);

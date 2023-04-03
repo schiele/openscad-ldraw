@@ -3,7 +3,8 @@ use <../p/48/4-4cylc.scad>
 use <../p/48/4-4cyli.scad>
 use <../p/48/4-4disc.scad>
 use <../p/48/4-4edge.scad>
-function ldraw_lib__23222() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__23222(realsolid=false) = [
 // 0 ~Hose Air Pump 16 x 14 x 13 Bellows (Needs Work)
 // 0 Name: 23222.dat
 // 0 Author: Mikkel Bech Jensen [gaia]
@@ -20,40 +21,40 @@ function ldraw_lib__23222() = [
 // 0 // Needs work - the bottom and inside is simplified
 // 
 // 1 16 0 -6 0 0 0 92 0 -10 0 92 0 0 48\4-4cyli.dat
-  [1,16,0,-6,0,0,0,92,0,-10,0,92,0,0, ldraw_lib__48__4_4cyli()],
+  [1,16,0,-6,0,0,0,92,0,-10,0,92,0,0, ldraw_lib__48__4_4cyli(realsolid)],
 // 1 16 0 -4 0 0 0 96 0 -2 0 96 0 0 48\4-4cyli.dat
-  [1,16,0,-4,0,0,0,96,0,-2,0,96,0,0, ldraw_lib__48__4_4cyli()],
+  [1,16,0,-4,0,0,0,96,0,-2,0,96,0,0, ldraw_lib__48__4_4cyli(realsolid)],
 // 1 16 0 -4 0 0 0 96 0 -1 0 96 0 0 48\4-4disc.dat
-  [1,16,0,-4,0,0,0,96,0,-1,0,96,0,0, ldraw_lib__48__4_4disc()],
+  [1,16,0,-4,0,0,0,96,0,-1,0,96,0,0, ldraw_lib__48__4_4disc(realsolid)],
 // 1 16 0 -4 0 0 0 96 0 -1 0 96 0 0 48\4-4edge.dat
-  [1,16,0,-4,0,0,0,96,0,-1,0,96,0,0, ldraw_lib__48__4_4edge()],
+  [1,16,0,-4,0,0,0,96,0,-1,0,96,0,0, ldraw_lib__48__4_4edge(realsolid)],
 // 1 16 0 -6 0 0 0 96 0 -1 0 96 0 0 48\4-4edge.dat
-  [1,16,0,-6,0,0,0,96,0,-1,0,96,0,0, ldraw_lib__48__4_4edge()],
+  [1,16,0,-6,0,0,0,96,0,-1,0,96,0,0, ldraw_lib__48__4_4edge(realsolid)],
 // 1 16 0 -6 0 0 0 92 0 -1 0 92 0 0 48\4-4edge.dat
-  [1,16,0,-6,0,0,0,92,0,-1,0,92,0,0, ldraw_lib__48__4_4edge()],
+  [1,16,0,-6,0,0,0,92,0,-1,0,92,0,0, ldraw_lib__48__4_4edge(realsolid)],
 // 1 16 0 -16 0 0 0 92 0 -1 0 92 0 0 48\4-4edge.dat
-  [1,16,0,-16,0,0,0,92,0,-1,0,92,0,0, ldraw_lib__48__4_4edge()],
+  [1,16,0,-16,0,0,0,92,0,-1,0,92,0,0, ldraw_lib__48__4_4edge(realsolid)],
 // 
 // 1 16 0 -70 0 0 0 84 0 6 0 84 0 0 48\4-4cyli.dat
-  [1,16,0,-70,0,0,0,84,0,6,0,84,0,0, ldraw_lib__48__4_4cyli()],
+  [1,16,0,-70,0,0,0,84,0,6,0,84,0,0, ldraw_lib__48__4_4cyli(realsolid)],
 // 1 16 0 -124 0 0 0 84 0 6 0 84 0 0 48\4-4cyli.dat
-  [1,16,0,-124,0,0,0,84,0,6,0,84,0,0, ldraw_lib__48__4_4cyli()],
+  [1,16,0,-124,0,0,0,84,0,6,0,84,0,0, ldraw_lib__48__4_4cyli(realsolid)],
 // 
 // 1 16 0 -70 0 0 0 84 0 1 0 84 0 0 48\4-4edge.dat
-  [1,16,0,-70,0,0,0,84,0,1,0,84,0,0, ldraw_lib__48__4_4edge()],
+  [1,16,0,-70,0,0,0,84,0,1,0,84,0,0, ldraw_lib__48__4_4edge(realsolid)],
 // 1 16 0 -64 0 0 0 84 0 1 0 84 0 0 48\4-4edge.dat
-  [1,16,0,-64,0,0,0,84,0,1,0,84,0,0, ldraw_lib__48__4_4edge()],
+  [1,16,0,-64,0,0,0,84,0,1,0,84,0,0, ldraw_lib__48__4_4edge(realsolid)],
 // 1 16 0 -124 0 0 0 84 0 1 0 84 0 0 48\4-4edge.dat
-  [1,16,0,-124,0,0,0,84,0,1,0,84,0,0, ldraw_lib__48__4_4edge()],
+  [1,16,0,-124,0,0,0,84,0,1,0,84,0,0, ldraw_lib__48__4_4edge(realsolid)],
 // 1 16 0 -118 0 0 0 84 0 1 0 84 0 0 48\4-4edge.dat
-  [1,16,0,-118,0,0,0,84,0,1,0,84,0,0, ldraw_lib__48__4_4edge()],
+  [1,16,0,-118,0,0,0,84,0,1,0,84,0,0, ldraw_lib__48__4_4edge(realsolid)],
 // 
 // 1 16 0 -182 0 0 0 34 0 -2 0 34 0 0 48\4-4cyli.dat
-  [1,16,0,-182,0,0,0,34,0,-2,0,34,0,0, ldraw_lib__48__4_4cyli()],
+  [1,16,0,-182,0,0,0,34,0,-2,0,34,0,0, ldraw_lib__48__4_4cyli(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -182 0 0 0 26 0 -2 0 26 0 0 48\4-4cylc.dat
-  [1,16,0,-182,0,0,0,26,0,-2,0,26,0,0, ldraw_lib__48__4_4cylc()],
+  [1,16,0,-182,0,0,0,26,0,-2,0,26,0,0, ldraw_lib__48__4_4cylc(realsolid)],
 // 
 // 4 16 95.1744 -6 12.528 91.2088 -6 12.006 92 -6 0 96 -6 0
   [4,16,95.1744,-6,12.528,91.2088,-6,12.006,92,-6,0,96,-6,0],
@@ -5769,5 +5770,5 @@ function ldraw_lib__23222() = [
   [2,24,-27.21944,-182,-20.33377,-26.9756,-182,-20.6992],
 ];
 module ldraw_lib__23222(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__23222(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__23222(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__23222(line=0.2);

@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <3001.scad>
 use <4615865g.scad>
-function ldraw_lib__3001d01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3001d01(realsolid=false) = [
 // 0 Brick  2 x  4 with Black/Red/Blue Badge and "POLICE" Right Sticker
 // 0 Name: 3001d01.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -18,10 +19,10 @@ function ldraw_lib__3001d01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 3001.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3001()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3001(realsolid)],
 // 1 16 0 12 -20 1 0 0 0 0 -1 0 1 0 4615865g.dat
-  [1,16,0,12,-20,1,0,0,0,0,-1,0,1,0, ldraw_lib__4615865g()],
+  [1,16,0,12,-20,1,0,0,0,0,-1,0,1,0, ldraw_lib__4615865g(realsolid)],
 ];
 module ldraw_lib__3001d01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3001d01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3001d01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3001d01(line=0.2);

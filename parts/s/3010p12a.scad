@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/4-4disc.scad>
-function ldraw_lib__s__3010p12a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__3010p12a(realsolid=false) = [
 // 0 ~Envelope on Red Background Pattern
 // 0 Name: s\3010p12a.dat
 // 0 Author: Michael Heidemann [mikeheide]
@@ -23,7 +24,7 @@ function ldraw_lib__s__3010p12a() = [
 // 4 4 -38 1 -10 -38 23 -10 -24.25 23 -10 -24.25 1 -10
   [4,4,-38,1,-10,-38,23,-10,-24.25,23,-10,-24.25,1,-10],
 // 1 4 -10.5 12.75 -10 -2 0 0 0 0 2 0 2 0 4-4disc.dat
-  [1,4,-10.5,12.75,-10,-2,0,0,0,0,2,0,2,0, ldraw_lib__4_4disc()],
+  [1,4,-10.5,12.75,-10,-2,0,0,0,0,2,0,2,0, ldraw_lib__4_4disc(realsolid)],
 // 3 4 -12.3478 13.5154 -10 -23.25 21 -10 -11.9142 14.1642 -10
   [3,4,-12.3478,13.5154,-10,-23.25,21,-10,-11.9142,14.1642,-10],
 // 3 4 -24.25 20.5 -10 -23.25 21 -10 -12.3478 13.5154 -10
@@ -82,5 +83,5 @@ function ldraw_lib__s__3010p12a() = [
   [3,16,-24.25,20.5,-10,-12.5,12.75,-10,-24.25,4.5,-10],
 ];
 module ldraw_lib__s__3010p12a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__3010p12a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__3010p12a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__3010p12a(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/59349s01.scad>
-function ldraw_lib__59349p02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__59349p02(realsolid=false) = [
 // 0 Panel  1 x  6 x  5 with Metallic Gold "40 Years LEGO Education" Badge Pattern
 // 0 Name: 59349p02.dat
 // 0 Author: Max Martin Richter [MMR1988]
@@ -17,7 +18,7 @@ function ldraw_lib__59349p02() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\59349s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__59349s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__59349s01(realsolid)],
 // 
 // 4 82 -54 103.5 -10 -56.2962 105.9566 -10 -54 105.5 -10 -50.9384 104.1088 -10
   [4,82,-54,103.5,-10,-56.2962,105.9566,-10,-54,105.5,-10,-50.9384,104.1088,-10],
@@ -3987,5 +3988,5 @@ function ldraw_lib__59349p02() = [
   [4,82,-13.53,58.46556,-10,-13.33595,58.50415,-10,-13.03515,57.77796,-10,-13.53,57.67956,-10],
 ];
 module ldraw_lib__59349p02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__59349p02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__59349p02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__59349p02(line=0.2);

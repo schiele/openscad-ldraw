@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <6142622rc01.scad>
 use <93606.scad>
-function ldraw_lib__93606dy0() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__93606dy0(realsolid=false) = [
 // 0 Slope Brick Curved  4 x  2 with Chevrolet Corvette Z06-C7 Logo on Yellow Background and Dark Grey Air Vents on Black Background Sticker
 // 0 Name: 93606dy0.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -18,10 +19,10 @@ function ldraw_lib__93606dy0() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 93606.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__93606()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__93606(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 6142622rc01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__6142622rc01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__6142622rc01(realsolid)],
 ];
 module ldraw_lib__93606dy0(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__93606dy0(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__93606dy0(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__93606dy0(line=0.2);

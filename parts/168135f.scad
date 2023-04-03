@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <168315f.scad>
-function ldraw_lib__168135f() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__168135f(realsolid=false) = [
 // 0 ~Moved to 168315f
 // 0 Name: 168135f.dat
 // 0 Author: [PTadmin]
@@ -16,8 +17,8 @@ function ldraw_lib__168135f() = [
 // 
 // 0 // Sticker Technic Supercar Gearbox 1&2 Black
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 168315f.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__168315f()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__168315f(realsolid)],
 ];
 module ldraw_lib__168135f(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__168135f(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__168135f(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__168135f(line=0.2);

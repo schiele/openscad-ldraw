@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <191915snla.scad>
 use <191915snlb.scad>
-function ldraw_lib__s__191915snl() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__191915snl(realsolid=false) = [
 // 0 ~Netherlands Railways Logo White
 // 0 Name: s\191915snl.dat
 // 0 Author: Chris Dee [cwdee]
@@ -16,11 +17,11 @@ function ldraw_lib__s__191915snl() = [
 // 
 // 
 // 1 15 0 0 0 1 0 0 0 1 0 0 0 1 s\191915snla.dat
-  [1,15,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__191915snla()],
+  [1,15,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__191915snla(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\191915snlb.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__191915snlb()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__191915snlb(realsolid)],
 // 0
 ];
 module ldraw_lib__s__191915snl(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__191915snl(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__191915snl(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__191915snl(line=0.2);

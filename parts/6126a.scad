@@ -5,7 +5,8 @@ use <../p/4-4disc.scad>
 use <../p/4-4edge.scad>
 use <../p/cylj4x8.scad>
 use <s/6126s01.scad>
-function ldraw_lib__6126a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6126a(realsolid=false) = [
 // 0 Minifig Flame with Pegs
 // 0 Name: 6126a.dat
 // 0 Author: James Jessiman
@@ -34,33 +35,33 @@ function ldraw_lib__6126a() = [
 // 0 // Central
 // 
 // 1 16 0 0 -8 4 0 0 0 0 4 0 0.5 0 4-4disc.dat
-  [1,16,0,0,-8,4,0,0,0,0,4,0,0.5,0, ldraw_lib__4_4disc()],
+  [1,16,0,0,-8,4,0,0,0,0,4,0,0.5,0, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 0 2 4 0 0 0 0 4 0 -10 0 4-4cylc.dat
-  [1,16,0,0,2,4,0,0,0,0,4,0,-10,0, ldraw_lib__4_4cylc()],
+  [1,16,0,0,2,4,0,0,0,0,4,0,-10,0, ldraw_lib__4_4cylc(realsolid)],
 // 
 // 0 // Bottom Stud
 // 1 16 0 4 0 0.5 0 0 0 0.5 0 0 0 0.5 cylj4x8.dat
-  [1,16,0,4,0,0.5,0,0,0,0.5,0,0,0,0.5, ldraw_lib__cylj4x8()],
+  [1,16,0,4,0,0.5,0,0,0,0.5,0,0,0,0.5, ldraw_lib__cylj4x8(realsolid)],
 // 1 16 0 8 0 2 0 0 0 -1 0 0 0 2 4-4disc.dat
-  [1,16,0,8,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__4_4disc()],
+  [1,16,0,8,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 8 0 2 0 0 0 -1 0 0 0 2 4-4edge.dat
-  [1,16,0,8,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__4_4edge()],
+  [1,16,0,8,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 8 0 2 0 0 0 -4 0 0 0 2 4-4cyli.dat
-  [1,16,0,8,0,2,0,0,0,-4,0,0,0,2, ldraw_lib__4_4cyli()],
+  [1,16,0,8,0,2,0,0,0,-4,0,0,0,2, ldraw_lib__4_4cyli(realsolid)],
 // 
 // 0 // Left Stud
 // 1 16 -4 0 0 0 -0.5 0 0.5 0 0 0 0 0.5 cylj4x8.dat
-  [1,16,-4,0,0,0,-0.5,0,0.5,0,0,0,0,0.5, ldraw_lib__cylj4x8()],
+  [1,16,-4,0,0,0,-0.5,0,0.5,0,0,0,0,0.5, ldraw_lib__cylj4x8(realsolid)],
 // 1 16 -4 0 0 0 -4 0 -2 0 0 0 0 2 4-4cyli.dat
-  [1,16,-4,0,0,0,-4,0,-2,0,0,0,0,2, ldraw_lib__4_4cyli()],
+  [1,16,-4,0,0,0,-4,0,-2,0,0,0,0,2, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 -8 0 0 0 1 0 2 0 0 0 0 2 4-4disc.dat
-  [1,16,-8,0,0,0,1,0,2,0,0,0,0,2, ldraw_lib__4_4disc()],
+  [1,16,-8,0,0,0,1,0,2,0,0,0,0,2, ldraw_lib__4_4disc(realsolid)],
 // 1 16 -8 0 0 0 1 0 2 0 0 0 0 2 4-4edge.dat
-  [1,16,-8,0,0,0,1,0,2,0,0,0,0,2, ldraw_lib__4_4edge()],
+  [1,16,-8,0,0,0,1,0,2,0,0,0,0,2, ldraw_lib__4_4edge(realsolid)],
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\6126s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6126s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6126s01(realsolid)],
 ];
 module ldraw_lib__6126a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6126a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6126a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6126a(line=0.2);

@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/1-4chrd.scad>
-function ldraw_lib__s__6177949es06() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__6177949es06(realsolid=false) = [
 // 0 ~Sticker  1.8 x  1.9 with Black Radiator Grille and Bugatti Logo on Transparent Background - Sixth Face
 // 0 Name: s\6177949es06.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -16,9 +17,9 @@ function ldraw_lib__s__6177949es06() = [
 // 
 // 0 // Primitives
 // 1 16 -16.5 -.25 -3.0901 -1.5 0 0 0 1 0 0 0 -1.5 1-4chrd.dat
-  [1,16,-16.5,-.25,-3.0901,-1.5,0,0,0,1,0,0,0,-1.5, ldraw_lib__1_4chrd()],
+  [1,16,-16.5,-.25,-3.0901,-1.5,0,0,0,1,0,0,0,-1.5, ldraw_lib__1_4chrd(realsolid)],
 // 1 16 16.5 -.25 -3.0901 1.5 0 0 0 1 0 0 0 -1.5 1-4chrd.dat
-  [1,16,16.5,-.25,-3.0901,1.5,0,0,0,1,0,0,0,-1.5, ldraw_lib__1_4chrd()],
+  [1,16,16.5,-.25,-3.0901,1.5,0,0,0,1,0,0,0,-1.5, ldraw_lib__1_4chrd(realsolid)],
 // 0 // Transparent faces
 // 4 16 -18 -.25 .0144 -18 -.25 -3.0901 -5.2529 -.25 -1.0014 -7.7179 -.25 .0144
   [4,16,-18,-.25,.0144,-18,-.25,-3.0901,-5.2529,-.25,-1.0014,-7.7179,-.25,.0144],
@@ -64,5 +65,5 @@ function ldraw_lib__s__6177949es06() = [
   [4,0,-2.6274,-.25,-1.416,-2.6582,-.25,-1.6143,0,-.25,-1.819,0,-.25,-1.6328],
 ];
 module ldraw_lib__s__6177949es06(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__6177949es06(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__6177949es06(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__6177949es06(line=0.2);

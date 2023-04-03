@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/30350bs01.scad>
-function ldraw_lib__30350bpx2() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__30350bpx2(realsolid=false) = [
 // 0 Tile  2 x  3 with Clips Horizontal (Thick C-Clips) with Pixelated Watermelon in Ground Pattern
 // 0 Name: 30350bpx2.dat
 // 0 Author: Vincent Messenet [Cheenzo]
@@ -17,7 +18,7 @@ function ldraw_lib__30350bpx2() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\30350bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30350bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30350bs01(realsolid)],
 // 
 // 4 2 -10 0 -12 -10 0 18.5 -14 0 18.5 -14 0 -12
   [4,2,-10,0,-12,-10,0,18.5,-14,0,18.5,-14,0,-12],
@@ -77,5 +78,5 @@ function ldraw_lib__30350bpx2() = [
   [4,16,-6,0,30,-2,0,18.5,2,0,18.5,6,0,30],
 ];
 module ldraw_lib__30350bpx2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__30350bpx2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__30350bpx2(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__30350bpx2(line=0.2);

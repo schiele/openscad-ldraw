@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4ndis.scad>
 use <s/4198s01.scad>
-function ldraw_lib__4198p08() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4198p08(realsolid=false) = [
 // 0 Duplo Brick  2 x  4 x  2 with Rounded Ends with Dog Face Plain Pattern
 // 0 Name: 4198p08.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -20,31 +21,31 @@ function ldraw_lib__4198p08() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4198s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4198s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4198s01(realsolid)],
 // 1 0 -22 82 -40 2 0 0 0 0 -2 0 1 0 4-4disc.dat
-  [1,0,-22,82,-40,2,0,0,0,0,-2,0,1,0, ldraw_lib__4_4disc()],
+  [1,0,-22,82,-40,2,0,0,0,0,-2,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 0 -22 75 -40 2 0 0 0 0 -2 0 1 0 4-4disc.dat
-  [1,0,-22,75,-40,2,0,0,0,0,-2,0,1,0, ldraw_lib__4_4disc()],
+  [1,0,-22,75,-40,2,0,0,0,0,-2,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 0 -15 82 -40 2 0 0 0 0 -2 0 1 0 4-4disc.dat
-  [1,0,-15,82,-40,2,0,0,0,0,-2,0,1,0, ldraw_lib__4_4disc()],
+  [1,0,-15,82,-40,2,0,0,0,0,-2,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 16 -22 75 -40 2 0 0 0 0 -2 0 1 0 4-4ndis.dat
-  [1,16,-22,75,-40,2,0,0,0,0,-2,0,1,0, ldraw_lib__4_4ndis()],
+  [1,16,-22,75,-40,2,0,0,0,0,-2,0,1,0, ldraw_lib__4_4ndis(realsolid)],
 // 1 16 -22 82 -40 2 0 0 0 0 -2 0 1 0 4-4ndis.dat
-  [1,16,-22,82,-40,2,0,0,0,0,-2,0,1,0, ldraw_lib__4_4ndis()],
+  [1,16,-22,82,-40,2,0,0,0,0,-2,0,1,0, ldraw_lib__4_4ndis(realsolid)],
 // 1 16 -15 82 -40 2 0 0 0 0 -2 0 1 0 4-4ndis.dat
-  [1,16,-15,82,-40,2,0,0,0,0,-2,0,1,0, ldraw_lib__4_4ndis()],
+  [1,16,-15,82,-40,2,0,0,0,0,-2,0,1,0, ldraw_lib__4_4ndis(realsolid)],
 // 1 0 22 75 -40 2 0 0 0 0 -2 0 1 0 4-4disc.dat
-  [1,0,22,75,-40,2,0,0,0,0,-2,0,1,0, ldraw_lib__4_4disc()],
+  [1,0,22,75,-40,2,0,0,0,0,-2,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 0 22 82 -40 2 0 0 0 0 -2 0 1 0 4-4disc.dat
-  [1,0,22,82,-40,2,0,0,0,0,-2,0,1,0, ldraw_lib__4_4disc()],
+  [1,0,22,82,-40,2,0,0,0,0,-2,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 0 15 82 -40 2 0 0 0 0 -2 0 1 0 4-4disc.dat
-  [1,0,15,82,-40,2,0,0,0,0,-2,0,1,0, ldraw_lib__4_4disc()],
+  [1,0,15,82,-40,2,0,0,0,0,-2,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 16 22 75 -40 2 0 0 0 0 -2 0 1 0 4-4ndis.dat
-  [1,16,22,75,-40,2,0,0,0,0,-2,0,1,0, ldraw_lib__4_4ndis()],
+  [1,16,22,75,-40,2,0,0,0,0,-2,0,1,0, ldraw_lib__4_4ndis(realsolid)],
 // 1 16 22 82 -40 2 0 0 0 0 -2 0 1 0 4-4ndis.dat
-  [1,16,22,82,-40,2,0,0,0,0,-2,0,1,0, ldraw_lib__4_4ndis()],
+  [1,16,22,82,-40,2,0,0,0,0,-2,0,1,0, ldraw_lib__4_4ndis(realsolid)],
 // 1 16 15 82 -40 2 0 0 0 0 -2 0 1 0 4-4ndis.dat
-  [1,16,15,82,-40,2,0,0,0,0,-2,0,1,0, ldraw_lib__4_4ndis()],
+  [1,16,15,82,-40,2,0,0,0,0,-2,0,1,0, ldraw_lib__4_4ndis(realsolid)],
 // 4 0 0 74.5 -40 0 55.5 -40 -4 56 -40 -4 73 -40
   [4,0,0,74.5,-40,0,55.5,-40,-4,56,-40,-4,73,-40],
 // 4 0 -4 73 -40 -4 56 -40 -8 58 -40 -8 70.5 -40
@@ -935,5 +936,5 @@ function ldraw_lib__4198p08() = [
   [4,16,20,82,-40,17,82,-40,17,84,-40,20,84,-40],
 ];
 module ldraw_lib__4198p08(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4198p08(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4198p08(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4198p08(line=0.2);

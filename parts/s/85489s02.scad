@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/3-16cyli.scad>
-function ldraw_lib__s__85489s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__85489s02(realsolid=false) = [
 // 0 ~Train Wheel Large Spokes Half
 // 0 Name: s\85489s02.dat
 // 0 Author: Donald Sutter [technog]
@@ -365,7 +366,7 @@ function ldraw_lib__s__85489s02() = [
 // 2 24 7.84 -24.154 0 8.315 -23.444 0
   [2,24,7.84,-24.154,0,8.315,-23.444,0],
 // 1 16 0 -20 0 0 0 9 -9 0 0 0 -9 0 3-16cyli.dat
-  [1,16,0,-20,0,0,0,9,-9,0,0,0,-9,0, ldraw_lib__3_16cyli()],
+  [1,16,0,-20,0,0,0,9,-9,0,0,0,-9,0, ldraw_lib__3_16cyli(realsolid)],
 // 2 24 0 -29 -9 1.5 -28.702 -9
   [2,24,0,-29,-9,1.5,-28.702,-9],
 // 4 16 0 -29 -9 1.5 -28.702 -9 1.5 -33.902 -9 0 -34 -9
@@ -390,5 +391,5 @@ function ldraw_lib__s__85489s02() = [
   [4,16,2,-28.602,0,0,-29,0,0,-34,0,2,-33.869,0],
 ];
 module ldraw_lib__s__85489s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__85489s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__85489s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__85489s02(line=0.2);

@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/4-4ering.scad>
 use <s/98138s01.scad>
-function ldraw_lib__98138p8e() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__98138p8e(realsolid=false) = [
 // 0 Tile  1 x  1 Round with White "LIGHT" on Medium Azure Half and Angry Eyes Pattern
 // 0 Name: 98138p8e.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -19,9 +20,9 @@ function ldraw_lib__98138p8e() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\98138s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01(realsolid)],
 // 1 16 0 0 0 9 0 0 0 1 0 0 0 9 4-4ering.dat
-  [1,16,0,0,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4ering()],
+  [1,16,0,0,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4ering(realsolid)],
 // 4 0 -2.8 0 2.35 -2.76 0 2.54 -3.9 0 2.84 -4 0 2.34
   [4,0,-2.8,0,2.35,-2.76,0,2.54,-3.9,0,2.84,-4,0,2.34],
 // 4 0 -2.76 0 2.16 -2.8 0 2.35 -4 0 2.34 -3.9 0 1.84
@@ -438,5 +439,5 @@ function ldraw_lib__98138p8e() = [
   [4,16,8.52,0,1.54,8.68,0,.97,9,0,0,8.3151,0,3.4443],
 ];
 module ldraw_lib__98138p8e(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__98138p8e(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__98138p8e(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__98138p8e(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <4865d02.scad>
-function ldraw_lib__4865p02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4865p02(realsolid=false) = [
 // 0 ~Moved to 4865d02
 // 0 Name: 4865p02.dat
 // 0 Author: [PTadmin]
@@ -16,8 +17,8 @@ function ldraw_lib__4865p02() = [
 // 
 // 0 // Panel 1 x 2 x 1 with Train Logo White Pattern
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 4865d02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4865d02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4865d02(realsolid)],
 ];
 module ldraw_lib__4865p02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4865p02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4865p02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4865p02(line=0.2);

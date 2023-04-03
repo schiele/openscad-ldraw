@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__4614415g() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4614415g(realsolid=false) = [
 // 0 Sticker  1.7 x  3.7 with Beach, Surfboard and Sunset
 // 0 Name: 4614415g.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -17,7 +18,7 @@ function ldraw_lib__4614415g() = [
 // 
 // 
 // 1 16 0 -0.25 0 37.5 0 0 0 0.25 0 0 0 17.5 box5-12.dat
-  [1,16,0,-0.25,0,37.5,0,0,0,0.25,0,0,0,17.5, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,37.5,0,0,0,0.25,0,0,0,17.5, ldraw_lib__box5_12(realsolid)],
 // 
 // 4 0 -36.1 -0.25 -13.6 -37.5 -0.25 -13.5 -37.5 -0.25 -14.1 -35.55 -0.25 -14.15
   [4,0,-36.1,-0.25,-13.6,-37.5,-0.25,-13.5,-37.5,-0.25,-14.1,-35.55,-0.25,-14.15],
@@ -1421,5 +1422,5 @@ function ldraw_lib__4614415g() = [
   [4,15,-21.3,-0.25,7.6,-21.6,-0.25,7.6,-21.55,-0.25,7.35,-21.05,-0.25,7.5],
 ];
 module ldraw_lib__4614415g(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4614415g(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4614415g(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4614415g(line=0.2);

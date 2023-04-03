@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/3822s01.scad>
 use <../p/stud.scad>
-function ldraw_lib__3822p24() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3822p24(realsolid=false) = [
 // 0 Door  1 x  3 x  1 Left with Red Cross Pattern
 // 0 Name: 3822p24.dat
 // 0 Author: Niels Karsdorp [nielsk]
@@ -21,9 +22,9 @@ function ldraw_lib__3822p24() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3822s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3822s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3822s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 stud.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud(realsolid)],
 // 4 16 10 6 22 10 10 22 10 10 26 10 0 50
   [4,16,10,6,22,10,10,22,10,10,26,10,0,50],
 // 4 16 10 10 14 10 10 18 10 6 18 10 0 0
@@ -62,5 +63,5 @@ function ldraw_lib__3822p24() = [
   [4,4,10,10,26,10,10,22,10,14,22,10,14,26],
 ];
 module ldraw_lib__3822p24(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3822p24(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3822p24(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3822p24(line=0.2);

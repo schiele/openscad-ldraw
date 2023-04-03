@@ -6,7 +6,8 @@ use <../p/stug-6x1.scad>
 use <../p/stug3-1x7.scad>
 use <../p/tri3-1.scad>
 use <../p/tri3-3.scad>
-function ldraw_lib__4151c() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4151c(realsolid=false) = [
 // 0 Plate  8 x  8 with Recessed Grille with Diamond-Shaped Centre Hole
 // 0 Name: 4151c.dat
 // 0 Author: Steffen [Steffen]
@@ -23,29 +24,29 @@ function ldraw_lib__4151c() = [
 // 
 // 
 // 1 16 0 4 -70 1 0 0 0 -1 0 0 0 1 stug3-1x7.dat
-  [1,16,0,4,-70,1,0,0,0,-1,0,0,0,1, ldraw_lib__stug3_1x7()],
+  [1,16,0,4,-70,1,0,0,0,-1,0,0,0,1, ldraw_lib__stug3_1x7(realsolid)],
 // 1 16 0 4 70 1 0 0 0 -1 0 0 0 1 stug3-1x7.dat
-  [1,16,0,4,70,1,0,0,0,-1,0,0,0,1, ldraw_lib__stug3_1x7()],
+  [1,16,0,4,70,1,0,0,0,-1,0,0,0,1, ldraw_lib__stug3_1x7(realsolid)],
 // 1 16 -70 4 0 0 0 -1 0 -1 0 1 0 0 stug3-1x7.dat
-  [1,16,-70,4,0,0,0,-1,0,-1,0,1,0,0, ldraw_lib__stug3_1x7()],
+  [1,16,-70,4,0,0,0,-1,0,-1,0,1,0,0, ldraw_lib__stug3_1x7(realsolid)],
 // 1 16 70 4 0 0 0 -1 0 -1 0 1 0 0 stug3-1x7.dat
-  [1,16,70,4,0,0,0,-1,0,-1,0,1,0,0, ldraw_lib__stug3_1x7()],
+  [1,16,70,4,0,0,0,-1,0,-1,0,1,0,0, ldraw_lib__stug3_1x7(realsolid)],
 // 1 16 0 0 70 1 0 0 0 1 0 0 0 1 stug-1x8.dat
-  [1,16,0,0,70,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_1x8()],
+  [1,16,0,0,70,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_1x8(realsolid)],
 // 1 16 0 0 -70 1 0 0 0 1 0 0 0 1 stug-1x8.dat
-  [1,16,0,0,-70,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_1x8()],
+  [1,16,0,0,-70,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_1x8(realsolid)],
 // 1 16 -70 0 0 1 0 0 0 1 0 0 0 1 stug-6x1.dat
-  [1,16,-70,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_6x1()],
+  [1,16,-70,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_6x1(realsolid)],
 // 1 16 70 0 0 1 0 0 0 1 0 0 0 1 stug-6x1.dat
-  [1,16,70,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_6x1()],
+  [1,16,70,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_6x1(realsolid)],
 // 1 16 0 8 0 64 0 0 0 -4 0 0 0 64 box4.dat
-  [1,16,0,8,0,64,0,0,0,-4,0,0,0,64, ldraw_lib__box4()],
+  [1,16,0,8,0,64,0,0,0,-4,0,0,0,64, ldraw_lib__box4(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 8 0 76 0 0 0 -4 0 0 0 76 box4.dat
-  [1,16,0,8,0,76,0,0,0,-4,0,0,0,76, ldraw_lib__box4()],
+  [1,16,0,8,0,76,0,0,0,-4,0,0,0,76, ldraw_lib__box4(realsolid)],
 // 1 16 0 8 0 80 0 0 0 -8 0 0 0 80 box4.dat
-  [1,16,0,8,0,80,0,0,0,-8,0,0,0,80, ldraw_lib__box4()],
+  [1,16,0,8,0,80,0,0,0,-8,0,0,0,80, ldraw_lib__box4(realsolid)],
 // 4 16 60 8 -60 64 8 -64 -64 8 -64 -60 8 -60
   [4,16,60,8,-60,64,8,-64,-64,8,-64,-60,8,-60],
 // 4 16 -60 8 -60 -64 8 -64 -64 8 64 -60 8 60
@@ -81,287 +82,287 @@ function ldraw_lib__4151c() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 60 4 60 -8 0 0 0 4 0 0 0 -8 tri3-3.dat
-  [1,16,60,4,60,-8,0,0,0,4,0,0,0,-8, ldraw_lib__tri3_3()],
+  [1,16,60,4,60,-8,0,0,0,4,0,0,0,-8, ldraw_lib__tri3_3(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 40 4 52 8 0 -8 0 4 0 8 0 8 tri3-1.dat
-  [1,16,40,4,52,8,0,-8,0,4,0,8,0,8, ldraw_lib__tri3_1()],
+  [1,16,40,4,52,8,0,-8,0,4,0,8,0,8, ldraw_lib__tri3_1(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 20 4 52 8 0 -8 0 4 0 8 0 8 tri3-1.dat
-  [1,16,20,4,52,8,0,-8,0,4,0,8,0,8, ldraw_lib__tri3_1()],
+  [1,16,20,4,52,8,0,-8,0,4,0,8,0,8, ldraw_lib__tri3_1(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 4 52 8 0 -8 0 4 0 8 0 8 tri3-1.dat
-  [1,16,0,4,52,8,0,-8,0,4,0,8,0,8, ldraw_lib__tri3_1()],
+  [1,16,0,4,52,8,0,-8,0,4,0,8,0,8, ldraw_lib__tri3_1(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -20 4 52 8 0 -8 0 4 0 8 0 8 tri3-1.dat
-  [1,16,-20,4,52,8,0,-8,0,4,0,8,0,8, ldraw_lib__tri3_1()],
+  [1,16,-20,4,52,8,0,-8,0,4,0,8,0,8, ldraw_lib__tri3_1(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -40 4 52 8 0 -8 0 4 0 8 0 8 tri3-1.dat
-  [1,16,-40,4,52,8,0,-8,0,4,0,8,0,8, ldraw_lib__tri3_1()],
+  [1,16,-40,4,52,8,0,-8,0,4,0,8,0,8, ldraw_lib__tri3_1(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -60 4 60 8 0 0 0 4 0 0 0 -8 tri3-3.dat
-  [1,16,-60,4,60,8,0,0,0,4,0,0,0,-8, ldraw_lib__tri3_3()],
+  [1,16,-60,4,60,8,0,0,0,4,0,0,0,-8, ldraw_lib__tri3_3(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 50 4 50 4 0 4 0 4 0 4 0 -4 box4.dat
-  [1,16,50,4,50,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4()],
+  [1,16,50,4,50,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 30 4 50 4 0 4 0 4 0 4 0 -4 box4.dat
-  [1,16,30,4,50,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4()],
+  [1,16,30,4,50,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 10 4 50 4 0 4 0 4 0 4 0 -4 box4.dat
-  [1,16,10,4,50,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4()],
+  [1,16,10,4,50,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -10 4 50 4 0 4 0 4 0 4 0 -4 box4.dat
-  [1,16,-10,4,50,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4()],
+  [1,16,-10,4,50,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -30 4 50 4 0 4 0 4 0 4 0 -4 box4.dat
-  [1,16,-30,4,50,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4()],
+  [1,16,-30,4,50,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -50 4 50 4 0 4 0 4 0 4 0 -4 box4.dat
-  [1,16,-50,4,50,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4()],
+  [1,16,-50,4,50,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 52 4 40 8 0 8 0 4 0 8 0 -8 tri3-1.dat
-  [1,16,52,4,40,8,0,8,0,4,0,8,0,-8, ldraw_lib__tri3_1()],
+  [1,16,52,4,40,8,0,8,0,4,0,8,0,-8, ldraw_lib__tri3_1(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 40 4 40 4 0 4 0 4 0 4 0 -4 box4.dat
-  [1,16,40,4,40,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4()],
+  [1,16,40,4,40,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 20 4 40 4 0 4 0 4 0 4 0 -4 box4.dat
-  [1,16,20,4,40,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4()],
+  [1,16,20,4,40,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 4 40 4 0 4 0 4 0 4 0 -4 box4.dat
-  [1,16,0,4,40,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4()],
+  [1,16,0,4,40,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -20 4 40 4 0 4 0 4 0 4 0 -4 box4.dat
-  [1,16,-20,4,40,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4()],
+  [1,16,-20,4,40,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -40 4 40 4 0 4 0 4 0 4 0 -4 box4.dat
-  [1,16,-40,4,40,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4()],
+  [1,16,-40,4,40,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -52 4 40 -8 0 -8 0 4 0 8 0 -8 tri3-1.dat
-  [1,16,-52,4,40,-8,0,-8,0,4,0,8,0,-8, ldraw_lib__tri3_1()],
+  [1,16,-52,4,40,-8,0,-8,0,4,0,8,0,-8, ldraw_lib__tri3_1(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 50 4 30 4 0 4 0 4 0 4 0 -4 box4.dat
-  [1,16,50,4,30,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4()],
+  [1,16,50,4,30,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 30 4 30 4 0 4 0 4 0 4 0 -4 box4.dat
-  [1,16,30,4,30,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4()],
+  [1,16,30,4,30,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 10 4 30 4 0 4 0 4 0 4 0 -4 box4.dat
-  [1,16,10,4,30,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4()],
+  [1,16,10,4,30,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -10 4 30 4 0 4 0 4 0 4 0 -4 box4.dat
-  [1,16,-10,4,30,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4()],
+  [1,16,-10,4,30,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -30 4 30 4 0 4 0 4 0 4 0 -4 box4.dat
-  [1,16,-30,4,30,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4()],
+  [1,16,-30,4,30,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -50 4 30 4 0 4 0 4 0 4 0 -4 box4.dat
-  [1,16,-50,4,30,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4()],
+  [1,16,-50,4,30,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 52 4 20 8 0 8 0 4 0 8 0 -8 tri3-1.dat
-  [1,16,52,4,20,8,0,8,0,4,0,8,0,-8, ldraw_lib__tri3_1()],
+  [1,16,52,4,20,8,0,8,0,4,0,8,0,-8, ldraw_lib__tri3_1(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 40 4 20 4 0 4 0 4 0 4 0 -4 box4.dat
-  [1,16,40,4,20,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4()],
+  [1,16,40,4,20,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -40 4 20 4 0 4 0 4 0 4 0 -4 box4.dat
-  [1,16,-40,4,20,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4()],
+  [1,16,-40,4,20,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -52 4 20 -8 0 -8 0 4 0 8 0 -8 tri3-1.dat
-  [1,16,-52,4,20,-8,0,-8,0,4,0,8,0,-8, ldraw_lib__tri3_1()],
+  [1,16,-52,4,20,-8,0,-8,0,4,0,8,0,-8, ldraw_lib__tri3_1(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 50 4 10 4 0 4 0 4 0 4 0 -4 box4.dat
-  [1,16,50,4,10,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4()],
+  [1,16,50,4,10,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 30 4 10 4 0 4 0 4 0 4 0 -4 box4.dat
-  [1,16,30,4,10,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4()],
+  [1,16,30,4,10,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -30 4 10 4 0 4 0 4 0 4 0 -4 box4.dat
-  [1,16,-30,4,10,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4()],
+  [1,16,-30,4,10,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -20 4 20 4 0 4 0 4 0 4 0 -4 box4.dat
-  [1,16,-20,4,20,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4()],
+  [1,16,-20,4,20,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 20 4 20 4 0 4 0 4 0 4 0 -4 box4.dat
-  [1,16,20,4,20,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4()],
+  [1,16,20,4,20,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 20 4 -20 4 0 4 0 4 0 4 0 -4 box4.dat
-  [1,16,20,4,-20,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4()],
+  [1,16,20,4,-20,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 4 0 14 0 14 0 4 0 14 0 -14 box4.dat
-  [1,16,0,4,0,14,0,14,0,4,0,14,0,-14, ldraw_lib__box4()],
+  [1,16,0,4,0,14,0,14,0,4,0,14,0,-14, ldraw_lib__box4(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -50 4 10 4 0 4 0 4 0 4 0 -4 box4.dat
-  [1,16,-50,4,10,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4()],
+  [1,16,-50,4,10,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 52 4 0 8 0 8 0 4 0 8 0 -8 tri3-1.dat
-  [1,16,52,4,0,8,0,8,0,4,0,8,0,-8, ldraw_lib__tri3_1()],
+  [1,16,52,4,0,8,0,8,0,4,0,8,0,-8, ldraw_lib__tri3_1(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 40 4 0 4 0 4 0 4 0 4 0 -4 box4.dat
-  [1,16,40,4,0,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4()],
+  [1,16,40,4,0,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -40 4 0 4 0 4 0 4 0 4 0 -4 box4.dat
-  [1,16,-40,4,0,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4()],
+  [1,16,-40,4,0,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -52 4 0 -8 0 -8 0 4 0 8 0 -8 tri3-1.dat
-  [1,16,-52,4,0,-8,0,-8,0,4,0,8,0,-8, ldraw_lib__tri3_1()],
+  [1,16,-52,4,0,-8,0,-8,0,4,0,8,0,-8, ldraw_lib__tri3_1(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 50 4 -10 4 0 4 0 4 0 4 0 -4 box4.dat
-  [1,16,50,4,-10,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4()],
+  [1,16,50,4,-10,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 30 4 -10 4 0 4 0 4 0 4 0 -4 box4.dat
-  [1,16,30,4,-10,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4()],
+  [1,16,30,4,-10,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -30 4 -10 4 0 4 0 4 0 4 0 -4 box4.dat
-  [1,16,-30,4,-10,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4()],
+  [1,16,-30,4,-10,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -20 4 -20 4 0 4 0 4 0 4 0 -4 box4.dat
-  [1,16,-20,4,-20,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4()],
+  [1,16,-20,4,-20,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -50 4 -10 4 0 4 0 4 0 4 0 -4 box4.dat
-  [1,16,-50,4,-10,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4()],
+  [1,16,-50,4,-10,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 52 4 -20 8 0 8 0 4 0 8 0 -8 tri3-1.dat
-  [1,16,52,4,-20,8,0,8,0,4,0,8,0,-8, ldraw_lib__tri3_1()],
+  [1,16,52,4,-20,8,0,8,0,4,0,8,0,-8, ldraw_lib__tri3_1(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 40 4 -20 4 0 4 0 4 0 4 0 -4 box4.dat
-  [1,16,40,4,-20,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4()],
+  [1,16,40,4,-20,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -40 4 -20 4 0 4 0 4 0 4 0 -4 box4.dat
-  [1,16,-40,4,-20,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4()],
+  [1,16,-40,4,-20,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -52 4 -20 -8 0 -8 0 4 0 8 0 -8 tri3-1.dat
-  [1,16,-52,4,-20,-8,0,-8,0,4,0,8,0,-8, ldraw_lib__tri3_1()],
+  [1,16,-52,4,-20,-8,0,-8,0,4,0,8,0,-8, ldraw_lib__tri3_1(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 50 4 -30 4 0 4 0 4 0 4 0 -4 box4.dat
-  [1,16,50,4,-30,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4()],
+  [1,16,50,4,-30,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 30 4 -30 4 0 4 0 4 0 4 0 -4 box4.dat
-  [1,16,30,4,-30,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4()],
+  [1,16,30,4,-30,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 10 4 -30 4 0 4 0 4 0 4 0 -4 box4.dat
-  [1,16,10,4,-30,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4()],
+  [1,16,10,4,-30,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -10 4 -30 4 0 4 0 4 0 4 0 -4 box4.dat
-  [1,16,-10,4,-30,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4()],
+  [1,16,-10,4,-30,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -30 4 -30 4 0 4 0 4 0 4 0 -4 box4.dat
-  [1,16,-30,4,-30,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4()],
+  [1,16,-30,4,-30,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -50 4 -30 4 0 4 0 4 0 4 0 -4 box4.dat
-  [1,16,-50,4,-30,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4()],
+  [1,16,-50,4,-30,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 52 4 -40 8 0 8 0 4 0 8 0 -8 tri3-1.dat
-  [1,16,52,4,-40,8,0,8,0,4,0,8,0,-8, ldraw_lib__tri3_1()],
+  [1,16,52,4,-40,8,0,8,0,4,0,8,0,-8, ldraw_lib__tri3_1(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 40 4 -40 4 0 4 0 4 0 4 0 -4 box4.dat
-  [1,16,40,4,-40,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4()],
+  [1,16,40,4,-40,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 20 4 -40 4 0 4 0 4 0 4 0 -4 box4.dat
-  [1,16,20,4,-40,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4()],
+  [1,16,20,4,-40,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 4 -40 4 0 4 0 4 0 4 0 -4 box4.dat
-  [1,16,0,4,-40,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4()],
+  [1,16,0,4,-40,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -20 4 -40 4 0 4 0 4 0 4 0 -4 box4.dat
-  [1,16,-20,4,-40,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4()],
+  [1,16,-20,4,-40,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -40 4 -40 4 0 4 0 4 0 4 0 -4 box4.dat
-  [1,16,-40,4,-40,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4()],
+  [1,16,-40,4,-40,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -52 4 -40 -8 0 -8 0 4 0 8 0 -8 tri3-1.dat
-  [1,16,-52,4,-40,-8,0,-8,0,4,0,8,0,-8, ldraw_lib__tri3_1()],
+  [1,16,-52,4,-40,-8,0,-8,0,4,0,8,0,-8, ldraw_lib__tri3_1(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 50 4 -50 4 0 4 0 4 0 4 0 -4 box4.dat
-  [1,16,50,4,-50,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4()],
+  [1,16,50,4,-50,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 30 4 -50 4 0 4 0 4 0 4 0 -4 box4.dat
-  [1,16,30,4,-50,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4()],
+  [1,16,30,4,-50,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 10 4 -50 4 0 4 0 4 0 4 0 -4 box4.dat
-  [1,16,10,4,-50,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4()],
+  [1,16,10,4,-50,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -10 4 -50 4 0 4 0 4 0 4 0 -4 box4.dat
-  [1,16,-10,4,-50,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4()],
+  [1,16,-10,4,-50,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -30 4 -50 4 0 4 0 4 0 4 0 -4 box4.dat
-  [1,16,-30,4,-50,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4()],
+  [1,16,-30,4,-50,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -50 4 -50 4 0 4 0 4 0 4 0 -4 box4.dat
-  [1,16,-50,4,-50,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4()],
+  [1,16,-50,4,-50,4,0,4,0,4,0,4,0,-4, ldraw_lib__box4(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 60 4 -60 -8 0 0 0 4 0 0 0 8 tri3-3.dat
-  [1,16,60,4,-60,-8,0,0,0,4,0,0,0,8, ldraw_lib__tri3_3()],
+  [1,16,60,4,-60,-8,0,0,0,4,0,0,0,8, ldraw_lib__tri3_3(realsolid)],
 // 2 24 52 4 60 60 4 52
   [2,24,52,4,60,60,4,52],
 // 2 24 -60 4 52 -52 4 60
@@ -373,31 +374,31 @@ function ldraw_lib__4151c() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 40 4 -52 8 0 -8 0 4 0 -8 0 -8 tri3-1.dat
-  [1,16,40,4,-52,8,0,-8,0,4,0,-8,0,-8, ldraw_lib__tri3_1()],
+  [1,16,40,4,-52,8,0,-8,0,4,0,-8,0,-8, ldraw_lib__tri3_1(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 20 4 -52 8 0 -8 0 4 0 -8 0 -8 tri3-1.dat
-  [1,16,20,4,-52,8,0,-8,0,4,0,-8,0,-8, ldraw_lib__tri3_1()],
+  [1,16,20,4,-52,8,0,-8,0,4,0,-8,0,-8, ldraw_lib__tri3_1(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 4 -52 8 0 -8 0 4 0 -8 0 -8 tri3-1.dat
-  [1,16,0,4,-52,8,0,-8,0,4,0,-8,0,-8, ldraw_lib__tri3_1()],
+  [1,16,0,4,-52,8,0,-8,0,4,0,-8,0,-8, ldraw_lib__tri3_1(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -20 4 -52 8 0 -8 0 4 0 -8 0 -8 tri3-1.dat
-  [1,16,-20,4,-52,8,0,-8,0,4,0,-8,0,-8, ldraw_lib__tri3_1()],
+  [1,16,-20,4,-52,8,0,-8,0,4,0,-8,0,-8, ldraw_lib__tri3_1(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -40 4 -52 8 0 -8 0 4 0 -8 0 -8 tri3-1.dat
-  [1,16,-40,4,-52,8,0,-8,0,4,0,-8,0,-8, ldraw_lib__tri3_1()],
+  [1,16,-40,4,-52,8,0,-8,0,4,0,-8,0,-8, ldraw_lib__tri3_1(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -60 4 -60 8 0 0 0 4 0 0 0 8 tri3-3.dat
-  [1,16,-60,4,-60,8,0,0,0,4,0,0,0,8, ldraw_lib__tri3_3()],
+  [1,16,-60,4,-60,8,0,0,0,4,0,0,0,8, ldraw_lib__tri3_3(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 0 60 0 0 0 4 0 0 0 60 box4o4a.dat
-  [1,16,0,0,0,60,0,0,0,4,0,0,0,60, ldraw_lib__box4o4a()],
+  [1,16,0,0,0,60,0,0,0,4,0,0,0,60, ldraw_lib__box4o4a(realsolid)],
 // 2 24 -48 4 60 -52 4 60
   [2,24,-48,4,60,-52,4,60],
 // 2 24 -28 4 60 -32 4 60
@@ -1296,5 +1297,5 @@ function ldraw_lib__4151c() = [
   [3,16,-28,8,60,-30,8,58,-32,8,60],
 ];
 module ldraw_lib__4151c(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4151c(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4151c(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4151c(line=0.2);

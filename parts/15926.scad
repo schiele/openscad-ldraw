@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <32474p01.scad>
-function ldraw_lib__15926() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__15926(realsolid=false) = [
 // 0 =Technic Ball Joint with Axlehole Blind with Eye Pattern
 // 0 Name: 15926.dat
 // 0 Author: [PTadmin]
@@ -17,9 +18,9 @@ function ldraw_lib__15926() = [
 // 0 // Alias of 32474p01
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 32474p01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__32474p01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__32474p01(realsolid)],
 // 0
 ];
 module ldraw_lib__15926(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__15926(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__15926(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__15926(line=0.2);

@@ -4,7 +4,8 @@ use <../../p/2-4disc.scad>
 use <../../p/3-8ring7.scad>
 use <../../p/4-4ndis.scad>
 use <../../p/48/1-16chrd.scad>
-function ldraw_lib__s__3003pe1s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__3003pe1s01(realsolid=false) = [
 // 0 ~Brick  2 x  2 with Black Eye Pattern on Both Sides - Outer of the Eye
 // 0 Name: s\3003pe1s01.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -20,21 +21,21 @@ function ldraw_lib__s__3003pe1s01() = [
 // 
 // 0 // Primitives
 // 1 16 8 14 0 0 0 8 8 0 0 0 1 0 4-4ndis.dat
-  [1,16,8,14,0,0,0,8,8,0,0,0,1,0, ldraw_lib__4_4ndis()],
+  [1,16,8,14,0,0,0,8,8,0,0,0,1,0, ldraw_lib__4_4ndis(realsolid)],
 // 1 0 8 14 0 0 0 8 8 0 0 0 1 0 1-8chrd.dat
-  [1,0,8,14,0,0,0,8,8,0,0,0,1,0, ldraw_lib__1_8chrd()],
+  [1,0,8,14,0,0,0,8,8,0,0,0,1,0, ldraw_lib__1_8chrd(realsolid)],
 // 1 0 8 14 0 0 0 -8 8 0 0 0 1 0 1-8chrd.dat
-  [1,0,8,14,0,0,0,-8,8,0,0,0,1,0, ldraw_lib__1_8chrd()],
+  [1,0,8,14,0,0,0,-8,8,0,0,0,1,0, ldraw_lib__1_8chrd(realsolid)],
 // 1 0 8 14 0 0 0 -1 -1 0 0 0 1 0 3-8ring7.dat
-  [1,0,8,14,0,0,0,-1,-1,0,0,0,1,0, ldraw_lib__3_8ring7()],
+  [1,0,8,14,0,0,0,-1,-1,0,0,0,1,0, ldraw_lib__3_8ring7(realsolid)],
 // 1 0 8 14 0 0 0 1 -1 0 0 0 1 0 3-8ring7.dat
-  [1,0,8,14,0,0,0,1,-1,0,0,0,1,0, ldraw_lib__3_8ring7()],
+  [1,0,8,14,0,0,0,1,-1,0,0,0,1,0, ldraw_lib__3_8ring7(realsolid)],
 // 1 0 8 17 0 -5 0 0 0 0 -5 0 1 0 2-4disc.dat
-  [1,0,8,17,0,-5,0,0,0,0,-5,0,1,0, ldraw_lib__2_4disc()],
+  [1,0,8,17,0,-5,0,0,0,0,-5,0,1,0, ldraw_lib__2_4disc(realsolid)],
 // 1 0 8 17 0 -5 0 0 0 0 5 0 1 0 48\1-16chrd.dat
-  [1,0,8,17,0,-5,0,0,0,0,5,0,1,0, ldraw_lib__48__1_16chrd()],
+  [1,0,8,17,0,-5,0,0,0,0,5,0,1,0, ldraw_lib__48__1_16chrd(realsolid)],
 // 1 0 8 17 0 5 0 0 0 0 5 0 1 0 48\1-16chrd.dat
-  [1,0,8,17,0,5,0,0,0,0,5,0,1,0, ldraw_lib__48__1_16chrd()],
+  [1,0,8,17,0,5,0,0,0,0,5,0,1,0, ldraw_lib__48__1_16chrd(realsolid)],
 // 0 // Outer neutral faces
 // 4 16 0 6 0 8 6 0 20 0 0 -20 0 0
   [4,16,0,6,0,8,6,0,20,0,0,-20,0,0],
@@ -69,5 +70,5 @@ function ldraw_lib__s__3003pe1s01() = [
   [3,0,12.3354,19.489,0,8,17,0,3.6646,19.489,0],
 ];
 module ldraw_lib__s__3003pe1s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__3003pe1s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__3003pe1s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__3003pe1s01(line=0.2);

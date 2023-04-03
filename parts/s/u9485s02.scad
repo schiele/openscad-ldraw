@@ -6,7 +6,8 @@ use <../../p/connhol3.scad>
 use <../../p/rect1.scad>
 use <../../p/rect2p.scad>
 use <u9485s01.scad>
-function ldraw_lib__s__u9485s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__u9485s02(realsolid=false) = [
 // 0 ~Electric Control+ L Motor Back Side Common Geometry
 // 0 Name: s\u9485s02.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -21,11 +22,11 @@ function ldraw_lib__s__u9485s02() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\u9485s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__u9485s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__u9485s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 -1 0 0 0 1 s\u9485s01.dat
-  [1,16,0,0,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__s__u9485s01()],
+  [1,16,0,0,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__s__u9485s01(realsolid)],
 // 1 16 28 0 -65 0 0 1 14 0 0 0 1 0 rect2p.dat
-  [1,16,28,0,-65,0,0,1,14,0,0,0,1,0, ldraw_lib__rect2p()],
+  [1,16,28,0,-65,0,0,1,14,0,0,0,1,0, ldraw_lib__rect2p(realsolid)],
 // 4 16 29 9.3 -50.3 29 -9.3 -50.3 29 -14 -65 29 14 -65
   [4,16,29,9.3,-50.3,29,-9.3,-50.3,29,-14,-65,29,14,-65],
 // 4 16 29 -20 11 29 -9.3 -31.7 29 9.3 -31.7 29 20 11
@@ -45,17 +46,17 @@ function ldraw_lib__s__u9485s02() = [
 // 2 24 30 -20 29 30 20 29
   [2,24,30,-20,29,30,20,29],
 // 1 16 29.5 0 11 0 0 0.5 20 0 0 0 1 0 rect2p.dat
-  [1,16,29.5,0,11,0,0,0.5,20,0,0,0,1,0, ldraw_lib__rect2p()],
+  [1,16,29.5,0,11,0,0,0.5,20,0,0,0,1,0, ldraw_lib__rect2p(realsolid)],
 // 1 16 20 0 20 1 0 0 0 0 -1 0 -1 0 connhol3.dat
-  [1,16,20,0,20,1,0,0,0,0,-1,0,-1,0, ldraw_lib__connhol3()],
+  [1,16,20,0,20,1,0,0,0,0,-1,0,-1,0, ldraw_lib__connhol3(realsolid)],
 // 1 16 20 0 12 1 0 0 0 0 1 0 1 0 4-4ring6.dat
-  [1,16,20,0,12,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4ring6()],
+  [1,16,20,0,12,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4ring6(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 20 0 10 7 0 0 0 0 7 0 2 0 4-4cylo.dat
-  [1,16,20,0,10,7,0,0,0,0,7,0,2,0, ldraw_lib__4_4cylo()],
+  [1,16,20,0,10,7,0,0,0,0,7,0,2,0, ldraw_lib__4_4cylo(realsolid)],
 // 1 16 20 0 10 7 0 0 0 0 7 0 -1 0 4-4disc.dat
-  [1,16,20,0,10,7,0,0,0,0,7,0,-1,0, ldraw_lib__4_4disc()],
+  [1,16,20,0,10,7,0,0,0,0,7,0,-1,0, ldraw_lib__4_4disc(realsolid)],
 // 3 16 29 0 29 30 -11 29 30 11 29
   [3,16,29,0,29,30,-11,29,30,11,29],
 // 3 16 10 11 29 10 -11 29 11 0 29
@@ -67,8 +68,8 @@ function ldraw_lib__s__u9485s02() = [
 // 4 16 27 14 -65 27 -14 -65 27 -27 7 27 27 7
   [4,16,27,14,-65,27,-14,-65,27,-27,7,27,27,7],
 // 1 16 22 0 7 5 0 0 0 0 -27 0 1 0 rect1.dat
-  [1,16,22,0,7,5,0,0,0,0,-27,0,1,0, ldraw_lib__rect1()],
+  [1,16,22,0,7,5,0,0,0,0,-27,0,1,0, ldraw_lib__rect1(realsolid)],
 ];
 module ldraw_lib__s__u9485s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__u9485s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__u9485s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__u9485s02(line=0.2);

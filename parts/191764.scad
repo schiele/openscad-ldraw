@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5.scad>
-function ldraw_lib__191764() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__191764(realsolid=false) = [
 // 0 Cardboard  6 x  6 Thick with Sharp Corners with 2 Dogs Photo
 // 0 Name: 191764.dat
 // 0 Author: Steffen [Steffen]
@@ -18,7 +19,7 @@ function ldraw_lib__191764() = [
 // 
 // 
 // 1 16 0 0 0 60 0 0 0 2 0 0 0 60 box5.dat
-  [1,16,0,0,0,60,0,0,0,2,0,0,0,60, ldraw_lib__box5()],
+  [1,16,0,0,0,60,0,0,0,2,0,0,0,60, ldraw_lib__box5(realsolid)],
 // 
 // 0 !TEXMAP START PLANAR -60 0 60 60 0 60 -60 0 -60 191764.png
 // 0 !: 4 16 -60 0 -60 60 0 -60 60 0 60 -60 0 60
@@ -28,5 +29,5 @@ function ldraw_lib__191764() = [
 // 0 !TEXMAP END
 ];
 module ldraw_lib__191764(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__191764(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__191764(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__191764(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/u9328c01s01.scad>
-function ldraw_lib__u9328c01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__u9328c01(realsolid=false) = [
 // 0 Canvas Tepee Cover (Formed)
 // 0 Name: u9328c01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -19,7 +20,7 @@ function ldraw_lib__u9328c01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\u9328c01s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__u9328c01s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__u9328c01s01(realsolid)],
 // 0 // surface
 // 3 16 1.3639 -208.746 -49.2881 0 -276 -16 -1.5557 -210.492 -48.4089
   [3,16,1.3639,-208.746,-49.2881,0,-276,-16,-1.5557,-210.492,-48.4089],
@@ -804,5 +805,5 @@ function ldraw_lib__u9328c01() = [
   [3,16,94.3086,-118.214,0,109.536,-40.3981,-8.37,109.879,-39.7809,0],
 ];
 module ldraw_lib__u9328c01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__u9328c01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__u9328c01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__u9328c01(line=0.2);

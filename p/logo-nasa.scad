@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__logo_nasa() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__logo_nasa(realsolid=false) = [
 // 0 Logo NASA Worm Logo
 // 0 Name: logo-nasa.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -124,5 +125,5 @@ function ldraw_lib__logo_nasa() = [
   [3,16,32.299,0,7.8,28.7,0,5,32.8,0,6.5],
 ];
 module ldraw_lib__logo_nasa(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__logo_nasa(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__logo_nasa(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__logo_nasa(line=0.2);

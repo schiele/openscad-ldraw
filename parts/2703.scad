@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <2709.scad>
-function ldraw_lib__2703() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2703(realsolid=false) = [
 // 0 Technic Action Figure Leg Upper Left
 // 0 Name: 2703.dat
 // 0 Author: Donald Sutter [technog]
@@ -18,8 +19,8 @@ function ldraw_lib__2703() = [
 // 
 // 
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 2709.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__2709()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__2709(realsolid)],
 ];
 module ldraw_lib__2703(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2703(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2703(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2703(line=0.2);

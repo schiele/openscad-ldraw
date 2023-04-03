@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/64805s01.scad>
-function ldraw_lib__64805() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__64805(realsolid=false) = [
 // 0 Minifig Head Ewok
 // 0 Name: 64805.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -19,7 +20,7 @@ function ldraw_lib__64805() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\64805s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__64805s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__64805s01(realsolid)],
 // 0 // eyes
 // 3 16 6.33 -12.38 -14.36 6.97 -13.35 -13.96 5.26 -13.58 -14.8
   [3,16,6.33,-12.38,-14.36,6.97,-13.35,-13.96,5.26,-13.58,-14.8],
@@ -2848,5 +2849,5 @@ function ldraw_lib__64805() = [
   [5,24,-13.94,12.57,16.07,-17.6,5.42,13.73,-14.42,9.4,18.74,-19.23,2.93,8.36],
 ];
 module ldraw_lib__64805(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__64805(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__64805(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__64805(line=0.2);

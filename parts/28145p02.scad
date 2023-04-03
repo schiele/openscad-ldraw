@@ -2,7 +2,8 @@ use <../lib.scad>
 use <s/28145p02s01.scad>
 use <s/28145s01.scad>
 use <s/28145s02.scad>
-function ldraw_lib__28145p02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__28145p02(realsolid=false) = [
 // 0 Minifig Hair Wavy Parted with Black Large Thick Glasses and Green Eyes Winking Pattern
 // 0 Name: 28145p02.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -21,11 +22,11 @@ function ldraw_lib__28145p02() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\28145s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__28145s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__28145s01(realsolid)],
 // 1 0 0 0 0 1 0 0 0 1 0 0 0 1 s\28145s02.dat
-  [1,0,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__28145s02()],
+  [1,0,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__28145s02(realsolid)],
 // 1 2 0 0 0 1 0 0 0 1 0 0 0 1 s\28145p02s01.dat
-  [1,2,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__28145p02s01()],
+  [1,2,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__28145p02s01(realsolid)],
 // 0 // winking eye
 // 4 0 -6.673 6.2461 -14.9547 -6.4005 6.0338 -14.9885 -6.4124 5.0958 -14.9684 -7.0939 5.2934 -14.8773
   [4,0,-6.673,6.2461,-14.9547,-6.4005,6.0338,-14.9885,-6.4124,5.0958,-14.9684,-7.0939,5.2934,-14.8773],
@@ -341,5 +342,5 @@ function ldraw_lib__28145p02() = [
   [4,2,-5.1199,11.2106,-15.0401,-5.2407,12.9318,-14.9629,-4.7378,12.7792,-15.0122,-4.7235,11.4734,-15.064],
 ];
 module ldraw_lib__28145p02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__28145p02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__28145p02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__28145p02(line=0.2);

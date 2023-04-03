@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
 use <s/4616559ps5.scad>
-function ldraw_lib__4616559e() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4616559e(realsolid=false) = [
 // 0 Sticker  3.8 x  4.4 with Maersk Logo
 // 0 Name: 4616559e.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -18,13 +19,13 @@ function ldraw_lib__4616559e() = [
 // 
 // 
 // 1 16 0 -0.25 0 44 0 0 0 0.25 0 0 0 38 box5-12.dat
-  [1,16,0,-0.25,0,44,0,0,0,0.25,0,0,0,38, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,44,0,0,0,0.25,0,0,0,38, ldraw_lib__box5_12(realsolid)],
 // 0 //
 // 1 16 0 -0.25 0 1 0 0 0 1 0 0 0 1 s\4616559ps5.dat
-  [1,16,0,-0.25,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4616559ps5()],
+  [1,16,0,-0.25,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4616559ps5(realsolid)],
 // 1 16 0 -0.25 0 -1 0 0 0 1 0 0 0 1 s\4616559ps5.dat
-  [1,16,0,-0.25,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__4616559ps5()],
+  [1,16,0,-0.25,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__4616559ps5(realsolid)],
 ];
 module ldraw_lib__4616559e(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4616559e(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4616559e(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4616559e(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <55805.scad>
-function ldraw_lib__11146() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__11146(realsolid=false) = [
 // 0 Electric Mindstorms EV3 Cable 35 cm
 // 0 Name: 11146.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -15,8 +16,8 @@ function ldraw_lib__11146() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 55805.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__55805()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__55805(realsolid)],
 ];
 module ldraw_lib__11146(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__11146(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__11146(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__11146(line=0.2);

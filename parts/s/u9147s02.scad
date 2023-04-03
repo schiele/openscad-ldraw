@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__u9147s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__u9147s02(realsolid=false) = [
 // 0 ~Figure Fabuland Pig Eye  1
 // 0 Name: s\u9147s02.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -397,5 +398,5 @@ function ldraw_lib__s__u9147s02() = [
   [5,24,7.994,-26.641,-20.986,9.489,-23.793,-21.717,9.595,-26.716,-19.774,7.628,-24.143,-23.721],
 ];
 module ldraw_lib__s__u9147s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__u9147s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__u9147s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__u9147s02(line=0.2);

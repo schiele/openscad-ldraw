@@ -3,7 +3,8 @@ use <62810.scad>
 use <92198p10.scad>
 use <92253p01c01.scad>
 use <u9210p02c01.scad>
-function ldraw_lib__92198p10c02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__92198p10c02(realsolid=false) = [
 // 0 _Figure Friends Robert with Dark Blue Trousers, Bright Green Polo Shirt
 // 0 Name: 92198p10c02.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -20,14 +21,14 @@ function ldraw_lib__92198p10c02() = [
 // 
 // 
 // 1 272 0 0 0 1 0 0 0 1 0 0 0 1 92253p01c01.dat
-  [1,272,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__92253p01c01()],
+  [1,272,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__92253p01c01(realsolid)],
 // 1 84 0 -64 0 1 0 0 0 1 0 0 0 1 u9210p02c01.dat
-  [1,84,0,-64,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9210p02c01()],
+  [1,84,0,-64,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9210p02c01(realsolid)],
 // 1 84 0 -110 3.9 1 0 0 0 1 0 0 0 1 92198p10.dat
-  [1,84,0,-110,3.9,1,0,0,0,1,0,0,0,1, ldraw_lib__92198p10()],
+  [1,84,0,-110,3.9,1,0,0,0,1,0,0,0,1, ldraw_lib__92198p10(realsolid)],
 // 1 308 0 -110 0.9 1 0 0 0 1 0 0 0 1 62810.dat
-  [1,308,0,-110,0.9,1,0,0,0,1,0,0,0,1, ldraw_lib__62810()],
+  [1,308,0,-110,0.9,1,0,0,0,1,0,0,0,1, ldraw_lib__62810(realsolid)],
 ];
 module ldraw_lib__92198p10c02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__92198p10c02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__92198p10c02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__92198p10c02(line=0.2);

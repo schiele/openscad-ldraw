@@ -7,7 +7,8 @@ use <../p/axlehol2.scad>
 use <../p/axlehole.scad>
 use <../p/bushloc2.scad>
 use <../p/t04i2500.scad>
-function ldraw_lib__4265a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4265a(realsolid=false) = [
 // 0 Technic Bush  1/2 Type 1
 // 0 Name: 4265a.dat
 // 0 Author: James Jessiman
@@ -30,19 +31,19 @@ function ldraw_lib__4265a() = [
 // 
 // 
 // 1 16 0 0 -5 1 0 0 0 0 1 0 8 0 axlehole.dat
-  [1,16,0,0,-5,1,0,0,0,0,1,0,8,0, ldraw_lib__axlehole()],
+  [1,16,0,0,-5,1,0,0,0,0,1,0,8,0, ldraw_lib__axlehole(realsolid)],
 // 1 16 0 0 -5 1 0 0 0 0 1 0 1 0 axlehol2.dat
-  [1,16,0,0,-5,1,0,0,0,0,1,0,1,0, ldraw_lib__axlehol2()],
+  [1,16,0,0,-5,1,0,0,0,0,1,0,1,0, ldraw_lib__axlehol2(realsolid)],
 // 1 16 0 0 -5 3 0 0 0 0 3 0 1 0 4-4ring2.dat
-  [1,16,0,0,-5,3,0,0,0,0,3,0,1,0, ldraw_lib__4_4ring2()],
+  [1,16,0,0,-5,3,0,0,0,0,3,0,1,0, ldraw_lib__4_4ring2(realsolid)],
 // 1 16 0 0 -5 9 0 0 0 0 9 0 2.5 0 4-4cylo.dat
-  [1,16,0,0,-5,9,0,0,0,0,9,0,2.5,0, ldraw_lib__4_4cylo()],
+  [1,16,0,0,-5,9,0,0,0,0,9,0,2.5,0, ldraw_lib__4_4cylo(realsolid)],
 // 1 16 0 0 2.5 9 0 0 0 0 9 0 1 0 4-4edge.dat
-  [1,16,0,0,2.5,9,0,0,0,0,9,0,1,0, ldraw_lib__4_4edge()],
+  [1,16,0,0,2.5,9,0,0,0,0,9,0,1,0, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 0 2.5 9 0 0 0 0 9 0 0.5 0 4-4cyli.dat
-  [1,16,0,0,2.5,9,0,0,0,0,9,0,0.5,0, ldraw_lib__4_4cyli()],
+  [1,16,0,0,2.5,9,0,0,0,0,9,0,0.5,0, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 0 3 -1 0 0 0 0 1 0 1 0 bushloc2.dat
-  [1,16,0,0,3,-1,0,0,0,0,1,0,1,0, ldraw_lib__bushloc2()],
+  [1,16,0,0,3,-1,0,0,0,0,1,0,1,0, ldraw_lib__bushloc2(realsolid)],
 // 
 // 2 24 6 0 3 5.77 1.15 3
   [2,24,6,0,3,5.77,1.15,3],
@@ -90,36 +91,36 @@ function ldraw_lib__4265a() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 0 9 0 0 0 0 -9 0 10 0 t04i2500.dat
-  [1,16,0,0,0,9,0,0,0,0,-9,0,10,0, ldraw_lib__t04i2500()],
+  [1,16,0,0,0,9,0,0,0,0,-9,0,10,0, ldraw_lib__t04i2500(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 0 0 0 -9 -9 0 0 0 10 0 t04i2500.dat
-  [1,16,0,0,0,0,0,-9,-9,0,0,0,10,0, ldraw_lib__t04i2500()],
+  [1,16,0,0,0,0,0,-9,-9,0,0,0,10,0, ldraw_lib__t04i2500(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 0 -9 0 0 0 0 9 0 10 0 t04i2500.dat
-  [1,16,0,0,0,-9,0,0,0,0,9,0,10,0, ldraw_lib__t04i2500()],
+  [1,16,0,0,0,-9,0,0,0,0,9,0,10,0, ldraw_lib__t04i2500(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 0 0 0 9 9 0 0 0 10 0 t04i2500.dat
-  [1,16,0,0,0,0,0,9,9,0,0,0,10,0, ldraw_lib__t04i2500()],
+  [1,16,0,0,0,0,0,9,9,0,0,0,10,0, ldraw_lib__t04i2500(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 0 -9 0 0 0 0 -9 0 -10 0 t04i2500.dat
-  [1,16,0,0,0,-9,0,0,0,0,-9,0,-10,0, ldraw_lib__t04i2500()],
+  [1,16,0,0,0,-9,0,0,0,0,-9,0,-10,0, ldraw_lib__t04i2500(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 0 0 0 9 -9 0 0 0 -10 0 t04i2500.dat
-  [1,16,0,0,0,0,0,9,-9,0,0,0,-10,0, ldraw_lib__t04i2500()],
+  [1,16,0,0,0,0,0,9,-9,0,0,0,-10,0, ldraw_lib__t04i2500(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 0 9 0 0 0 0 9 0 -10 0 t04i2500.dat
-  [1,16,0,0,0,9,0,0,0,0,9,0,-10,0, ldraw_lib__t04i2500()],
+  [1,16,0,0,0,9,0,0,0,0,9,0,-10,0, ldraw_lib__t04i2500(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 0 0 0 -9 9 0 0 0 -10 0 t04i2500.dat
-  [1,16,0,0,0,0,0,-9,9,0,0,0,-10,0, ldraw_lib__t04i2500()],
+  [1,16,0,0,0,0,0,-9,9,0,0,0,-10,0, ldraw_lib__t04i2500(realsolid)],
 ];
 module ldraw_lib__4265a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4265a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4265a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4265a(line=0.2);

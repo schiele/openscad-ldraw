@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__87610ps4s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__87610ps4s02(realsolid=false) = [
 // 0 ~Minifig Helmet Mandalorian Visor with Small Eye Slit and Black Partial Cheek Pattern Half
 // 0 Name: s\87610ps4s02.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -135,5 +136,5 @@ function ldraw_lib__s__87610ps4s02() = [
   [3,0,11.4623,12.6893,-11.2073,10.4405,9.949,-13.5142,10.8533,13.1994,-12.0661],
 ];
 module ldraw_lib__s__87610ps4s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__87610ps4s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__87610ps4s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__87610ps4s02(line=0.2);

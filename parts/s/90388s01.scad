@@ -3,7 +3,8 @@ use <../../p/4-4con0.scad>
 use <../../p/4-4con1.scad>
 use <../../p/4-4edge.scad>
 use <90388s02.scad>
-function ldraw_lib__s__90388s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__90388s01(realsolid=false) = [
 // 0 ~Minifig Hat Sombrero without Printed Surfaces
 // 0 Name: s\90388s01.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -18,17 +19,17 @@ function ldraw_lib__s__90388s01() = [
 // 
 // 
 // 1 16 0 -12 2.5 0 0 5.5 0 1 0 -5.5 0 0 4-4edge.dat
-  [1,16,0,-12,2.5,0,0,5.5,0,1,0,-5.5,0,0, ldraw_lib__4_4edge()],
+  [1,16,0,-12,2.5,0,0,5.5,0,1,0,-5.5,0,0, ldraw_lib__4_4edge(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -12 2.5 0 0 5.5 0 -2 0 -5.5 1 0 4-4con0.dat
-  [1,16,0,-12,2.5,0,0,5.5,0,-2,0,-5.5,1,0, ldraw_lib__4_4con0()],
+  [1,16,0,-12,2.5,0,0,5.5,0,-2,0,-5.5,1,0, ldraw_lib__4_4con0(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 0 0 0 5.5 0 -12 0 -5.5 2.5 0 4-4con1.dat
-  [1,16,0,0,0,0,0,5.5,0,-12,0,-5.5,2.5,0, ldraw_lib__4_4con1()],
+  [1,16,0,0,0,0,0,5.5,0,-12,0,-5.5,2.5,0, ldraw_lib__4_4con1(realsolid)],
 // 1 16 0 0 0 0 0 11 0 1 0 -11 0 0 4-4edge.dat
-  [1,16,0,0,0,0,0,11,0,1,0,-11,0,0, ldraw_lib__4_4edge()],
+  [1,16,0,0,0,0,0,11,0,1,0,-11,0,0, ldraw_lib__4_4edge(realsolid)],
 // 
 // 2 24 -1.5 0 6 1.5 0 6
   [2,24,-1.5,0,6,1.5,0,6],
@@ -44,9 +45,9 @@ function ldraw_lib__s__90388s01() = [
   [3,16,1.5,0,6,-1.5,0,6,0,0,11],
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\90388s02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__90388s02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__90388s02(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\90388s02.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__90388s02()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__90388s02(realsolid)],
 // 
 // 5 24 0 4.653 -14.467 0 0 -11 5.604 4.665 -13.218 -5.604 4.665 -13.218
   [5,24,0,4.653,-14.467,0,0,-11,5.604,4.665,-13.218,-5.604,4.665,-13.218],
@@ -138,5 +139,5 @@ function ldraw_lib__s__90388s01() = [
   [5,24,0,0,11,0,3,13,4.975,3,12.01,-4.975,3,12.01],
 ];
 module ldraw_lib__s__90388s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__90388s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__90388s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__90388s01(line=0.2);

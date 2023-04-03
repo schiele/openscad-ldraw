@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/42444s01.scad>
 use <../p/stud4.scad>
-function ldraw_lib__42444() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__42444(realsolid=false) = [
 // 0 Minifig Hair Peaked
 // 0 Name: 42444.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -20,11 +21,11 @@ function ldraw_lib__42444() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\42444s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__42444s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__42444s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\42444s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__42444s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__42444s01(realsolid)],
 // 1 16 0 -4 0 -1 0 0 0 -1 0 0 0 1 stud4.dat
-  [1,16,0,-4,0,-1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4()],
+  [1,16,0,-4,0,-1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4(realsolid)],
 // 5 24 0 4.525 -15.539 0 6.596 -15.225 4.565 2.772 -13.719 -4.565 2.772 -13.719
   [5,24,0,4.525,-15.539,0,6.596,-15.225,4.565,2.772,-13.719,-4.565,2.772,-13.719],
 // 5 24 0 -0.39 -13.263 0 4.525 -15.539 4.363 -0.957 -12.231 -4.363 -0.957 -12.231
@@ -61,5 +62,5 @@ function ldraw_lib__42444() = [
   [5,24,0,2,13,0,17.113,13,3.992,16.906,12.206,-3.992,16.906,12.206],
 ];
 module ldraw_lib__42444(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__42444(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__42444(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__42444(line=0.2);

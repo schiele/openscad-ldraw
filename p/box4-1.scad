@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__box4_1() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__box4_1(realsolid=false) = [
 // 0 Box with 4 Faces without 1 Edge
 // 0 Name: box4-1.dat
 // 0 Author: Tore Eriksson [Tore_Eriksson]
@@ -51,5 +52,5 @@ function ldraw_lib__box4_1() = [
   [4,16,1,1,1,1,0,1,1,0,-1,1,1,-1],
 ];
 module ldraw_lib__box4_1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__box4_1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__box4_1(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__box4_1(line=0.2);

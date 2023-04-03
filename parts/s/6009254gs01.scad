@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/1-4chrd.scad>
 use <logoferraris02.scad>
-function ldraw_lib__s__6009254gs01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__6009254gs01(realsolid=false) = [
 // 0 ~Sticker  1.0 x  0.8 with Logo Scuderia Ferrari on Red Background - Upper Section 1
 // 0 Name: s\6009254gs01.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -20,12 +21,12 @@ function ldraw_lib__s__6009254gs01() = [
 // 0 // Original position is -3.13885 -0.25 -6.0209625
 // 
 // 1 4 -3.1389 -0.25 -6.021 0 0 -0.275 0 1 0 0.275 0 0 s\logoferraris02.dat
-  [1,4,-3.1389,-0.25,-6.021,0,0,-0.275,0,1,0,0.275,0,0, ldraw_lib__s__logoferraris02()],
+  [1,4,-3.1389,-0.25,-6.021,0,0,-0.275,0,1,0,0.275,0,0, ldraw_lib__s__logoferraris02(realsolid)],
 // 0 // Primitives
 // 1 16 -6 -0.25 -7.9843 -2 0 0 0 1 0 0 0 -2 1-4chrd.dat
-  [1,16,-6,-0.25,-7.9843,-2,0,0,0,1,0,0,0,-2, ldraw_lib__1_4chrd()],
+  [1,16,-6,-0.25,-7.9843,-2,0,0,0,1,0,0,0,-2, ldraw_lib__1_4chrd(realsolid)],
 // 1 16 6 -0.25 -7.9843 0 0 2 0 1 0 -2 0 0 1-4chrd.dat
-  [1,16,6,-0.25,-7.9843,0,0,2,0,1,0,-2,0,0, ldraw_lib__1_4chrd()],
+  [1,16,6,-0.25,-7.9843,0,0,2,0,1,0,-2,0,0, ldraw_lib__1_4chrd(realsolid)],
 // 0 // Neutral border
 // 4 16 8 -0.25 -7.9843 8 -0.25 0.0157 6.05 -0.25 0.0157 6.05 -0.25 -8.6193
   [4,16,8,-0.25,-7.9843,8,-0.25,0.0157,6.05,-0.25,0.0157,6.05,-0.25,-8.6193],
@@ -493,5 +494,5 @@ function ldraw_lib__s__6009254gs01() = [
   [4,16,3.421,-0.25,0.0157,3.421,-0.25,-7.0242,6.05,-0.25,-8.6193,6.05,-0.25,0.0157],
 ];
 module ldraw_lib__s__6009254gs01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__6009254gs01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__6009254gs01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__6009254gs01(line=0.2);

@@ -2,7 +2,8 @@ use <../../lib.scad>
 use <../../p/1-4disc.scad>
 use <../../p/2-4disc.scad>
 use <../../p/2-4ndis.scad>
-function ldraw_lib__s__973pw1b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__973pw1b(realsolid=false) = [
 // 0 ~Minifig Torso with Cavalry General Pattern - Belt
 // 0 Name: s\973pw1b.dat
 // 0 Author: Willy Tschager [Holly-Wood]
@@ -19,13 +20,13 @@ function ldraw_lib__s__973pw1b() = [
 // 0 // Gold
 // 
 // 1 16 -1.17 29.96 -10 -0.579 0 0 0 0 0.421 0 0.579 0 2-4disc.dat
-  [1,16,-1.17,29.96,-10,-0.579,0,0,0,0,0.421,0,0.579,0, ldraw_lib__2_4disc()],
+  [1,16,-1.17,29.96,-10,-0.579,0,0,0,0,0.421,0,0.579,0, ldraw_lib__2_4disc(realsolid)],
 // 1 16 -1.35 29.96 -10 -1.216 0 0 0 0 0.861 0 1.216 0 2-4ndis.dat
-  [1,16,-1.35,29.96,-10,-1.216,0,0,0,0,0.861,0,1.216,0, ldraw_lib__2_4ndis()],
+  [1,16,-1.35,29.96,-10,-1.216,0,0,0,0,0.861,0,1.216,0, ldraw_lib__2_4ndis(realsolid)],
 // 1 16 -2.9 28.1 -10 0 0 -0.9 -0.9 0 0 0 0.9 0 1-4disc.dat
-  [1,16,-2.9,28.1,-10,0,0,-0.9,-0.9,0,0,0,0.9,0, ldraw_lib__1_4disc()],
+  [1,16,-2.9,28.1,-10,0,0,-0.9,-0.9,0,0,0,0.9,0, ldraw_lib__1_4disc(realsolid)],
 // 1 16 3.3 28.1 -10 0.9 0 0 0 0 -0.9 0 0.9 0 1-4disc.dat
-  [1,16,3.3,28.1,-10,0.9,0,0,0,0,-0.9,0,0.9,0, ldraw_lib__1_4disc()],
+  [1,16,3.3,28.1,-10,0.9,0,0,0,0,-0.9,0,0.9,0, ldraw_lib__1_4disc(realsolid)],
 // 4 16 -2.9 27.2 -10 -2.9 28.1 -10 0.2 28.1 -10 3.3 27.2 -10
   [4,16,-2.9,27.2,-10,-2.9,28.1,-10,0.2,28.1,-10,3.3,27.2,-10],
 // 3 16 3.3 27.2 -10 0.2 28.1 -10 3.3 28.1 -10
@@ -173,5 +174,5 @@ function ldraw_lib__s__973pw1b() = [
 // 0
 ];
 module ldraw_lib__s__973pw1b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__973pw1b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__973pw1b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__973pw1b(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__196705a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__196705a(realsolid=false) = [
 // 0 Sticker  1.6 x  2.9 with White/Clear Stripes
 // 0 Name: 196705a.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -18,7 +19,7 @@ function ldraw_lib__196705a() = [
 // 
 // 
 // 1 16 0 -0.25 0 29 0 0 0 0.25 0 0 0 16.6 box5-12.dat
-  [1,16,0,-0.25,0,29,0,0,0,0.25,0,0,0,16.6, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,29,0,0,0,0.25,0,0,0,16.6, ldraw_lib__box5_12(realsolid)],
 // 4 16 29 -.25 -16.6 29 -.25 -14.05 -29 -.25 -14.05 -29 -.25 -16.6
   [4,16,29,-.25,-16.6,29,-.25,-14.05,-29,-.25,-14.05,-29,-.25,-16.6],
 // 4 16 29 -.25 -10.47 29 -.25 -7.91 -29 -.25 -7.91 -29 -.25 -10.47
@@ -45,5 +46,5 @@ function ldraw_lib__196705a() = [
   [4,15,29,-.25,10.48,29,-.25,14.06,-29,-.25,14.06,-29,-.25,10.48],
 ];
 module ldraw_lib__196705a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__196705a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__196705a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__196705a(line=0.2);

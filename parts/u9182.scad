@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/4-4disc.scad>
 use <s/u9181s01.scad>
-function ldraw_lib__u9182() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__u9182(realsolid=false) = [
 // 0 ~Technic Motor Pull Back  5 x  7 x  3 Type 6 Right (needs work)
 // 0 Name: u9182.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -20,7 +21,7 @@ function ldraw_lib__u9182() = [
 // 0 // This file has no inner surface modelled
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\u9181s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__u9181s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__u9181s01(realsolid)],
 // 
 // 2 24 -29 -63.89 80.71 -29 -63.06 81.09
   [2,24,-29,-63.89,80.71,-29,-63.06,81.09],
@@ -39,11 +40,11 @@ function ldraw_lib__u9182() = [
 // 2 24 -30 -49.34 56.3 -30 -63.03 81.09
   [2,24,-30,-49.34,56.3,-30,-63.03,81.09],
 // 1 16 -10 -80 0 0 1 0 -9 0 0 0 0 -9 4-4disc.dat
-  [1,16,-10,-80,0,0,1,0,-9,0,0,0,0,-9, ldraw_lib__4_4disc()],
+  [1,16,-10,-80,0,0,1,0,-9,0,0,0,0,-9, ldraw_lib__4_4disc(realsolid)],
 // 1 16 -10 -20 0 0 1 0 -9 0 0 0 0 -9 4-4disc.dat
-  [1,16,-10,-20,0,0,1,0,-9,0,0,0,0,-9, ldraw_lib__4_4disc()],
+  [1,16,-10,-20,0,0,1,0,-9,0,0,0,0,-9, ldraw_lib__4_4disc(realsolid)],
 // 1 16 -10 -40 120 0 1 0 0 0 9 -9 0 0 4-4disc.dat
-  [1,16,-10,-40,120,0,1,0,0,0,9,-9,0,0, ldraw_lib__4_4disc()],
+  [1,16,-10,-40,120,0,1,0,0,0,9,-9,0,0, ldraw_lib__4_4disc(realsolid)],
 // 3 16 -29 -64.01 85.65 -29 -63.89 80.71 -29 -82.17 107.83
   [3,16,-29,-64.01,85.65,-29,-63.89,80.71,-29,-82.17,107.83],
 // 3 16 -29 -64.01 85.65 -29 -38.48 92.34 -29 -63.89 80.71
@@ -66,5 +67,5 @@ function ldraw_lib__u9182() = [
   [4,16,-30,-49.34,56.3,-30,-63.03,81.09,-29,-63.03,81.09,-29,-49.34,56.3],
 ];
 module ldraw_lib__u9182(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__u9182(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__u9182(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__u9182(line=0.2);

@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/48/1-4cyli.scad>
 use <s/30485s01.scad>
 use <../p/stug-2x2.scad>
-function ldraw_lib__30485() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__30485(realsolid=false) = [
 // 0 Windscreen  6 x  8 x  3 Curved Canopy
 // 0 Name: 30485.dat
 // 0 Author: Marc Schickele [samrotule]
@@ -20,21 +21,21 @@ function ldraw_lib__30485() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\30485s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30485s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30485s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\30485s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__30485s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__30485s01(realsolid)],
 // 1 16 0 0 20 1 0 0 0 1 0 0 0 1 stug-2x2.dat
-  [1,16,0,0,20,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_2x2()],
+  [1,16,0,0,20,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_2x2(realsolid)],
 // 1 16 0 0 -20 1 0 0 0 1 0 0 0 1 stug-2x2.dat
-  [1,16,0,0,-20,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_2x2()],
+  [1,16,0,0,-20,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_2x2(realsolid)],
 // 1 16 -20 40 40 -40 0 0 0 0 -40 0 -100 0 48\1-4cyli.dat
-  [1,16,-20,40,40,-40,0,0,0,0,-40,0,-100,0, ldraw_lib__48__1_4cyli()],
+  [1,16,-20,40,40,-40,0,0,0,0,-40,0,-100,0, ldraw_lib__48__1_4cyli(realsolid)],
 // 1 16 -20 40 -60 -40 20 0 0 24 -40 0 -60 0 48\1-4cyli.dat
-  [1,16,-20,40,-60,-40,20,0,0,24,-40,0,-60,0, ldraw_lib__48__1_4cyli()],
+  [1,16,-20,40,-60,-40,20,0,0,24,-40,0,-60,0, ldraw_lib__48__1_4cyli(realsolid)],
 // 1 16 20 40 -60 40 0 0 0 0 -40 0 100 0 48\1-4cyli.dat
-  [1,16,20,40,-60,40,0,0,0,0,-40,0,100,0, ldraw_lib__48__1_4cyli()],
+  [1,16,20,40,-60,40,0,0,0,0,-40,0,100,0, ldraw_lib__48__1_4cyli(realsolid)],
 // 1 16 0 64 -120 40 20 0 0 -24 -40 0 60 0 48\1-4cyli.dat
-  [1,16,0,64,-120,40,20,0,0,-24,-40,0,60,0, ldraw_lib__48__1_4cyli()],
+  [1,16,0,64,-120,40,20,0,0,-24,-40,0,60,0, ldraw_lib__48__1_4cyli(realsolid)],
 // 3 16 60 40 -60 40 64 -120 60 64 -60
   [3,16,60,40,-60,40,64,-120,60,64,-60],
 // 3 16 -60 40 -60 -60 64 -60 -40 64 -120
@@ -49,5 +50,5 @@ function ldraw_lib__30485() = [
   [4,16,60,72,-60,60,72,40,60,40,40,60,40,-60],
 ];
 module ldraw_lib__30485(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__30485(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__30485(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__30485(line=0.2);

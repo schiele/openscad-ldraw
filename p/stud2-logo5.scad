@@ -5,7 +5,8 @@ use <4-4ring5.scad>
 use <4-4ring6.scad>
 use <logo5.scad>
 use <t01o0714.scad>
-function ldraw_lib__stud2_logo5() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__stud2_logo5(realsolid=false) = [
 // 0 Stud Open with LEGO Logo - 3D Flattened
 // 0 Name: stud2-logo5.dat
 // 0 Author: Steffen [Steffen]
@@ -20,27 +21,27 @@ function ldraw_lib__stud2_logo5() = [
 // 
 // 
 // 1 16 0 0 0 4 0 0 0 1 0 0 0 4 4-4edge.dat
-  [1,16,0,0,0,4,0,0,0,1,0,0,0,4, ldraw_lib__4_4edge()],
+  [1,16,0,0,0,4,0,0,0,1,0,0,0,4, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 0 0 6 0 0 0 1 0 0 0 6 4-4edge.dat
-  [1,16,0,0,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4edge()],
+  [1,16,0,0,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 -4 0 4 0 0 0 1 0 0 0 4 4-4edge.dat
-  [1,16,0,-4,0,4,0,0,0,1,0,0,0,4, ldraw_lib__4_4edge()],
+  [1,16,0,-4,0,4,0,0,0,1,0,0,0,4, ldraw_lib__4_4edge(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -4 0 4 0 0 0 4 0 0 0 4 4-4cyli.dat
-  [1,16,0,-4,0,4,0,0,0,4,0,0,0,4, ldraw_lib__4_4cyli()],
+  [1,16,0,-4,0,4,0,0,0,4,0,0,0,4, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 -3.6 0 6 0 0 0 3.6 0 0 0 6 4-4cyli.dat
-  [1,16,0,-3.6,0,6,0,0,0,3.6,0,0,0,6, ldraw_lib__4_4cyli()],
+  [1,16,0,-3.6,0,6,0,0,0,3.6,0,0,0,6, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 -4 0 0.8 0 0 0 1 0 0 0 0.8 4-4ring5.dat
-  [1,16,0,-4,0,0.8,0,0,0,1,0,0,0,0.8, ldraw_lib__4_4ring5()],
+  [1,16,0,-4,0,0.8,0,0,0,1,0,0,0,0.8, ldraw_lib__4_4ring5(realsolid)],
 // 1 16 0 -4 0 0.8 0 0 0 1 0 0 0 0.8 4-4ring6.dat
-  [1,16,0,-4,0,0.8,0,0,0,1,0,0,0,0.8, ldraw_lib__4_4ring6()],
+  [1,16,0,-4,0,0.8,0,0,0,1,0,0,0,0.8, ldraw_lib__4_4ring6(realsolid)],
 // 1 16 0 -3.6 0 5.6 0 0 0 -5.6 0 0 0 5.6 t01o0714.dat
-  [1,16,0,-3.6,0,5.6,0,0,0,-5.6,0,0,0,5.6, ldraw_lib__t01o0714()],
+  [1,16,0,-3.6,0,5.6,0,0,0,-5.6,0,0,0,5.6, ldraw_lib__t01o0714(realsolid)],
 // 
 // 1 16 0 0 0 0.62 0 0 0 0.62 0 0 0 0.62 logo5.dat
-  [1,16,0,0,0,0.62,0,0,0,0.62,0,0,0,0.62, ldraw_lib__logo5()],
+  [1,16,0,0,0,0.62,0,0,0,0.62,0,0,0,0.62, ldraw_lib__logo5(realsolid)],
 ];
 module ldraw_lib__stud2_logo5(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__stud2_logo5(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__stud2_logo5(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__stud2_logo5(line=0.2);

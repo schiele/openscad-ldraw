@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/3-8cyli.scad>
-function ldraw_lib__s__23986s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__23986s01(realsolid=false) = [
 // 0 ~Minifig Teapot Half
 // 0 Name: s\23986s01.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -15,7 +16,7 @@ function ldraw_lib__s__23986s01() = [
 // 
 // 
 // 1 16 -20 3.575 0 -4 0 0 0 9.85 0 0 0 4 3-8cyli.dat
-  [1,16,-20,3.575,0,-4,0,0,0,9.85,0,0,0,4, ldraw_lib__3_8cyli()],
+  [1,16,-20,3.575,0,-4,0,0,0,9.85,0,0,0,4, ldraw_lib__3_8cyli(realsolid)],
 // 3 16 -7.3912 18.75 3.0616 -8 18.75 0 -11.409 16.75 0
   [3,16,-7.3912,18.75,3.0616,-8,18.75,0,-11.409,16.75,0],
 // 3 16 -11.409 16.75 0 -11.736 16.12 2.581 -7.3912 18.75 3.0616
@@ -822,5 +823,5 @@ function ldraw_lib__s__23986s01() = [
   [5,24,12.6622,11.678,6.7593,13.036,12.873,4.962,13.3244,10.6416,5.1688,10.848,15.889,5.6386],
 ];
 module ldraw_lib__s__23986s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__23986s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__23986s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__23986s01(line=0.2);

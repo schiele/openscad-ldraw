@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/777s02.scad>
-function ldraw_lib__777p09() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__777p09(realsolid=false) = [
 // 0 Flag on Flagpole Type 2 with Belgium Pattern
 // 0 Name: 777p09.dat
 // 0 Author: Tore Eriksson [Tore_Eriksson]
@@ -20,7 +21,7 @@ function ldraw_lib__777p09() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\777s02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__777s02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__777s02(realsolid)],
 // 
 // 0 REM Decorated surfaces
 // 4 0 1.5 -154 -1.5 21.5 -146 -1.5 21.5 -98 -1.5 1.5 -106 -1.5
@@ -54,5 +55,5 @@ function ldraw_lib__777p09() = [
 // 0
 ];
 module ldraw_lib__777p09(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__777p09(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__777p09(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__777p09(line=0.2);

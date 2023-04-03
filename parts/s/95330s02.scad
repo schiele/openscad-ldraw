@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__95330s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__95330s02(realsolid=false) = [
 // 0 ~Minifig Axe Blade
 // 0 Name: s\95330s02.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -155,5 +156,5 @@ function ldraw_lib__s__95330s02() = [
   [5,24,-1.125,-57.915,-20.999,-3.25,-57.915,-14.017,-1.185,-53.082,-20.087,-1.185,-62.748,-20.087],
 ];
 module ldraw_lib__s__95330s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__95330s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__95330s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__95330s02(line=0.2);

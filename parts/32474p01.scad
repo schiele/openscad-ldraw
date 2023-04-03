@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/2-8sphe.scad>
 use <s/32474s01.scad>
-function ldraw_lib__32474p01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__32474p01(realsolid=false) = [
 // 0 Technic Ball Joint with Axlehole Blind with Eye Pattern
 // 0 Name: 32474p01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -18,9 +19,9 @@ function ldraw_lib__32474p01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\32474s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__32474s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__32474s01(realsolid)],
 // 1 16 0 0 0 12.75 0 0 0 -12.75 0 0 0 12.75 2-8sphe.dat
-  [1,16,0,0,0,12.75,0,0,0,-12.75,0,0,0,12.75, ldraw_lib__2_8sphe()],
+  [1,16,0,0,0,12.75,0,0,0,-12.75,0,0,0,12.75, ldraw_lib__2_8sphe(realsolid)],
 // 5 24 12.75 0 0 11.7797 -4.8794 0 12.75 0 1.275 11.78 0 -4.879
   [5,24,12.75,0,0,11.7797,-4.8794,0,12.75,0,1.275,11.78,0,-4.879],
 // 5 24 11.7797 -4.8794 0 11.78 0 -4.879 12.75 0 0 9.9909 -5.6011 -5.6011
@@ -347,5 +348,5 @@ function ldraw_lib__32474p01() = [
   [3,0,-4.8046,-5.4985,-10.2453,-3.7,-4.6298,-10.8035,0,-4.8794,-11.7797],
 ];
 module ldraw_lib__32474p01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__32474p01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__32474p01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__32474p01(line=0.2);

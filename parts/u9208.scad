@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/4-4cylc.scad>
 use <../p/4-4ring3.scad>
-function ldraw_lib__u9208() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__u9208(realsolid=false) = [
 // 0 ~Electric Mindstorms EV3 Rechargeable Battery Assembly Pin
 // 0 Name: u9208.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -16,12 +17,12 @@ function ldraw_lib__u9208() = [
 // 
 // 
 // 1 16 0 18 0 3 0 0 0 -18 0 0 0 3 4-4cylc.dat
-  [1,16,0,18,0,3,0,0,0,-18,0,0,0,3, ldraw_lib__4_4cylc()],
+  [1,16,0,18,0,3,0,0,0,-18,0,0,0,3, ldraw_lib__4_4cylc(realsolid)],
 // 1 16 0 -4 0 4 0 0 0 4 0 0 0 4 4-4cylc.dat
-  [1,16,0,-4,0,4,0,0,0,4,0,0,0,4, ldraw_lib__4_4cylc()],
+  [1,16,0,-4,0,4,0,0,0,4,0,0,0,4, ldraw_lib__4_4cylc(realsolid)],
 // 1 16 0 0 0 1 0 0 0 -1 0 0 0 1 4-4ring3.dat
-  [1,16,0,0,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__4_4ring3()],
+  [1,16,0,0,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__4_4ring3(realsolid)],
 ];
 module ldraw_lib__u9208(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__u9208(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__u9208(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__u9208(line=0.2);

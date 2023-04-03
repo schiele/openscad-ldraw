@@ -3,7 +3,8 @@ use <431.scad>
 use <433.scad>
 use <u9057.scad>
 use <u9130.scad>
-function ldraw_lib__433c02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__433c02(realsolid=false) = [
 // 0 Electric Train 12V Brick  2 x  4 Type 1 (Pushed In Contacts)
 // 0 Name: 433c02.dat
 // 0 Author: Steffen [Steffen]
@@ -26,18 +27,18 @@ function ldraw_lib__433c02() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 433.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__433()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__433(realsolid)],
 // 1 16 0 20 0 1 0 0 0 1 0 0 0 1 431.dat
-  [1,16,0,20,0,1,0,0,0,1,0,0,0,1, ldraw_lib__431()],
+  [1,16,0,20,0,1,0,0,0,1,0,0,0,1, ldraw_lib__431(realsolid)],
 // 1 494 10 0 10 1 0 0 0 1 0 0 0 1 u9057.dat
-  [1,494,10,0,10,1,0,0,0,1,0,0,0,1, ldraw_lib__u9057()],
+  [1,494,10,0,10,1,0,0,0,1,0,0,0,1, ldraw_lib__u9057(realsolid)],
 // 1 494 -10 0 10 1 0 0 0 1 0 0 0 1 u9057.dat
-  [1,494,-10,0,10,1,0,0,0,1,0,0,0,1, ldraw_lib__u9057()],
+  [1,494,-10,0,10,1,0,0,0,1,0,0,0,1, ldraw_lib__u9057(realsolid)],
 // 1 494 -11.5 18.5 0 1 0 0 0 1 0 0 0 1 u9130.dat
-  [1,494,-11.5,18.5,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9130()],
+  [1,494,-11.5,18.5,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9130(realsolid)],
 // 1 494 11.5 18.5 0 1 0 0 0 1 0 0 0 1 u9130.dat
-  [1,494,11.5,18.5,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9130()],
+  [1,494,11.5,18.5,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9130(realsolid)],
 ];
 module ldraw_lib__433c02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__433c02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__433c02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__433c02(line=0.2);

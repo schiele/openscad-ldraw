@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__168335l() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__168335l(realsolid=false) = [
 // 0 Sticker  1.2 x 19.0 with  6 White Stars, Stripes and "RED BIRD" Aligned Left
 // 0 Name: 168335l.dat
 // 0 Author: Ulrich Röder [UR]
@@ -18,7 +19,7 @@ function ldraw_lib__168335l() = [
 // 
 // 0 // Main
 // 1 16 0 -0.25 0 190 0 0 0 0.25 0 0 0 12 box5-12.dat
-  [1,16,0,-0.25,0,190,0,0,0,0.25,0,0,0,12, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,190,0,0,0,0.25,0,0,0,12, ldraw_lib__box5_12(realsolid)],
 // 
 // 0 // Red
 // 4 4 122.232 -.25 2.717 118.521 -.25 0 137.787 -.25 0 133.941 -.25 3.251
@@ -2333,5 +2334,5 @@ function ldraw_lib__168335l() = [
   [3,0,-47.192,-.25,8.844,-47.698,-.25,8.595,-44.622,-.25,8.354],
 ];
 module ldraw_lib__168335l(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__168335l(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__168335l(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__168335l(line=0.2);

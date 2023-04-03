@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/1-4chrd.scad>
 use <logochevl02.scad>
-function ldraw_lib__s__6142622rs03() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__6142622rs03(realsolid=false) = [
 // 0 ~Sticker  4.0 x  1.8 with Chevrolet Corvette Z06-C7 Logo on Yellow Background and Dark Grey Air Vents on Black Background - Upper Section 4
 // 0 Name: s\6142622rs03.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -16,12 +17,12 @@ function ldraw_lib__s__6142622rs03() = [
 // 
 // 
 // 1 14 0 -.25 -9.8403 3.1 0 0 0 1 0 0 0 3.1 s\logochevl02.dat
-  [1,14,0,-.25,-9.8403,3.1,0,0,0,1,0,0,0,3.1, ldraw_lib__s__logochevl02()],
+  [1,14,0,-.25,-9.8403,3.1,0,0,0,1,0,0,0,3.1, ldraw_lib__s__logochevl02(realsolid)],
 // 0 // Primitives
 // 1 14 -16.5 -.25 -17.162 -1.5 0 0 0 1 0 0 0 -1.5 1-4chrd.dat
-  [1,14,-16.5,-.25,-17.162,-1.5,0,0,0,1,0,0,0,-1.5, ldraw_lib__1_4chrd()],
+  [1,14,-16.5,-.25,-17.162,-1.5,0,0,0,1,0,0,0,-1.5, ldraw_lib__1_4chrd(realsolid)],
 // 1 14 16.5 -.25 -17.162 1.5 0 0 0 1 0 0 0 -1.5 1-4chrd.dat
-  [1,14,16.5,-.25,-17.162,1.5,0,0,0,1,0,0,0,-1.5, ldraw_lib__1_4chrd()],
+  [1,14,16.5,-.25,-17.162,1.5,0,0,0,1,0,0,0,-1.5, ldraw_lib__1_4chrd(realsolid)],
 // 0 // Top face
 // 4 14 -18 -.25 .0157 -18 -.25 -17.162 -9.5666 -.25 -3.4853 -9.5666 -.25 -3.4047
   [4,14,-18,-.25,.0157,-18,-.25,-17.162,-9.5666,-.25,-3.4853,-9.5666,-.25,-3.4047],
@@ -45,5 +46,5 @@ function ldraw_lib__s__6142622rs03() = [
   [4,14,16.5,-.25,-18.662,18,-.25,-17.162,9.5666,-.25,-3.4853,9.5666,-.25,-16.2759],
 ];
 module ldraw_lib__s__6142622rs03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__6142622rs03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__6142622rs03(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__6142622rs03(line=0.2);

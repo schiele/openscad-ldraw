@@ -4,7 +4,8 @@ use <../../p/1-4ndis.scad>
 use <../../p/box3u4a.scad>
 use <../../p/rect3.scad>
 use <../../p/tri3u3.scad>
-function ldraw_lib__s__650s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__650s01(realsolid=false) = [
 // 0 ~Hinge Plate  2 x  7 with 3L Bendable Coupling Nylon - End
 // 0 Name: s\650s01.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -19,11 +20,11 @@ function ldraw_lib__s__650s01() = [
 // 
 // 
 // 1 16 0 1.25 20 0 0 20 -1.25 0 0 0 -40 0 box3u4a.dat
-  [1,16,0,1.25,20,0,0,20,-1.25,0,0,0,-40,0, ldraw_lib__box3u4a()],
+  [1,16,0,1.25,20,0,0,20,-1.25,0,0,0,-40,0, ldraw_lib__box3u4a(realsolid)],
 // 1 16 13.75 1.25 20 0 0 6.25 -1.25 0 0 0 -1 0 rect3.dat
-  [1,16,13.75,1.25,20,0,0,6.25,-1.25,0,0,0,-1,0, ldraw_lib__rect3()],
+  [1,16,13.75,1.25,20,0,0,6.25,-1.25,0,0,0,-1,0, ldraw_lib__rect3(realsolid)],
 // 1 16 -13.75 1.25 20 0 0 -6.25 1.25 0 0 0 -1 0 rect3.dat
-  [1,16,-13.75,1.25,20,0,0,-6.25,1.25,0,0,0,-1,0, ldraw_lib__rect3()],
+  [1,16,-13.75,1.25,20,0,0,-6.25,1.25,0,0,0,-1,0, ldraw_lib__rect3(realsolid)],
 // 3 16 -7.5 0 20 -20 0 20 -20 0 -20
   [3,16,-7.5,0,20,-20,0,20,-20,0,-20],
 // 3 16 -1.5 0 20 -7.5 0 20 -20 0 -20
@@ -45,26 +46,26 @@ function ldraw_lib__s__650s01() = [
 // 3 16 7.5 2.5 20 20 2.5 20 20 2.5 -20
   [3,16,7.5,2.5,20,20,2.5,20,20,2.5,-20],
 // 1 16 1.5 2.5 26 0 -3 0 0 0 2 -15 0 0 tri3u3.dat
-  [1,16,1.5,2.5,26,0,-3,0,0,0,2,-15,0,0, ldraw_lib__tri3u3()],
+  [1,16,1.5,2.5,26,0,-3,0,0,0,2,-15,0,0, ldraw_lib__tri3u3(realsolid)],
 // 1 16 7.5 2.5 26 -6 0 0 0 -1 0 0 0 -6 1-4ndis.dat
-  [1,16,7.5,2.5,26,-6,0,0,0,-1,0,0,0,-6, ldraw_lib__1_4ndis()],
+  [1,16,7.5,2.5,26,-6,0,0,0,-1,0,0,0,-6, ldraw_lib__1_4ndis(realsolid)],
 // 1 16 -7.5 2.5 26 6 0 0 0 -1 0 0 0 -6 1-4ndis.dat
-  [1,16,-7.5,2.5,26,6,0,0,0,-1,0,0,0,-6, ldraw_lib__1_4ndis()],
+  [1,16,-7.5,2.5,26,6,0,0,0,-1,0,0,0,-6, ldraw_lib__1_4ndis(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 7.5 2.5 26 -6 0 0 0 -2.5 0 0 0 -6 1-4cylo.dat
-  [1,16,7.5,2.5,26,-6,0,0,0,-2.5,0,0,0,-6, ldraw_lib__1_4cylo()],
+  [1,16,7.5,2.5,26,-6,0,0,0,-2.5,0,0,0,-6, ldraw_lib__1_4cylo(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -7.5 2.5 26 0 0 6 0 -2.5 0 -6 0 0 1-4cylo.dat
-  [1,16,-7.5,2.5,26,0,0,6,0,-2.5,0,-6,0,0, ldraw_lib__1_4cylo()],
+  [1,16,-7.5,2.5,26,0,0,6,0,-2.5,0,-6,0,0, ldraw_lib__1_4cylo(realsolid)],
 // 1 16 7.5 0 26 -6 0 0 0 1 0 0 0 -6 1-4ndis.dat
-  [1,16,7.5,0,26,-6,0,0,0,1,0,0,0,-6, ldraw_lib__1_4ndis()],
+  [1,16,7.5,0,26,-6,0,0,0,1,0,0,0,-6, ldraw_lib__1_4ndis(realsolid)],
 // 1 16 -7.5 0 26 6 0 0 0 1 0 0 0 -6 1-4ndis.dat
-  [1,16,-7.5,0,26,6,0,0,0,1,0,0,0,-6, ldraw_lib__1_4ndis()],
+  [1,16,-7.5,0,26,6,0,0,0,1,0,0,0,-6, ldraw_lib__1_4ndis(realsolid)],
 // 4 16 1.5 0 20 1.5 0 26 -1.5 0 26 -1.5 0 20
   [4,16,1.5,0,20,1.5,0,26,-1.5,0,26,-1.5,0,20],
 ];
 module ldraw_lib__s__650s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__650s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__650s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__650s01(line=0.2);

@@ -5,7 +5,8 @@ use <../p/4-4edge.scad>
 use <../p/knob1.scad>
 use <s/62691s01.scad>
 use <../p/stud2a.scad>
-function ldraw_lib__62691() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__62691(realsolid=false) = [
 // 0 Minifig Arm Robot with Hollow Stud
 // 0 Name: 62691.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -22,23 +23,23 @@ function ldraw_lib__62691() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\62691s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__62691s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__62691s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 -1 0 0 0 1 s\62691s01.dat
-  [1,16,0,0,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__s__62691s01()],
+  [1,16,0,0,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__s__62691s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 0.70711 0.70711 0 -0.70711 0.70711 knob1.dat
-  [1,16,0,0,0,1,0,0,0,0.70711,0.70711,0,-0.70711,0.70711, ldraw_lib__knob1()],
+  [1,16,0,0,0,1,0,0,0,0.70711,0.70711,0,-0.70711,0.70711, ldraw_lib__knob1(realsolid)],
 // 1 16 -6.25 0 -20 1 0 0 0 0 -1 0 1.1125 0 stud2a.dat
-  [1,16,-6.25,0,-20,1,0,0,0,0,-1,0,1.1125,0, ldraw_lib__stud2a()],
+  [1,16,-6.25,0,-20,1,0,0,0,0,-1,0,1.1125,0, ldraw_lib__stud2a(realsolid)],
 // 1 16 -6.25 0 -20 6 0 0 0 0 -6 0 1 0 4-4edge.dat
-  [1,16,-6.25,0,-20,6,0,0,0,0,-6,0,1,0, ldraw_lib__4_4edge()],
+  [1,16,-6.25,0,-20,6,0,0,0,0,-6,0,1,0, ldraw_lib__4_4edge(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -6.25 0 -20 4 0 0 0 0 -4 0 8 0 4-4cyli.dat
-  [1,16,-6.25,0,-20,4,0,0,0,0,-4,0,8,0, ldraw_lib__4_4cyli()],
+  [1,16,-6.25,0,-20,4,0,0,0,0,-4,0,8,0, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 -6.25 0 -12 4 0 0 0 0 -4 0 1 0 4-4edge.dat
-  [1,16,-6.25,0,-12,4,0,0,0,0,-4,0,1,0, ldraw_lib__4_4edge()],
+  [1,16,-6.25,0,-12,4,0,0,0,0,-4,0,1,0, ldraw_lib__4_4edge(realsolid)],
 // 1 16 -6.25 0 -12 4 0 0 0 0 -4 0 1 0 4-4disc.dat
-  [1,16,-6.25,0,-12,4,0,0,0,0,-4,0,1,0, ldraw_lib__4_4disc()],
+  [1,16,-6.25,0,-12,4,0,0,0,0,-4,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 4 16 0 4.991 -4.583 0 -4.991 -4.583 0 -5.277 -6.222 0 5.277 -6.222
   [4,16,0,4.991,-4.583,0,-4.991,-4.583,0,-5.277,-6.222,0,5.277,-6.222],
 // 3 16 0 4.991 -4.583 0 0 -3 0 -4.991 -4.583
@@ -103,5 +104,5 @@ function ldraw_lib__62691() = [
   [5,24,-10.356,0,-4.16,-10.427,0,-4.582,-9.947,-1.862,-4.164,-9.947,1.862,-4.164],
 ];
 module ldraw_lib__62691(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__62691(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__62691(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__62691(line=0.2);

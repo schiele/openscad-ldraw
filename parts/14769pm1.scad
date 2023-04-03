@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/4-4ering.scad>
 use <s/14769s01.scad>
-function ldraw_lib__14769pm1() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__14769pm1(realsolid=false) = [
 // 0 Tile  2 x  2 Round with Round Underside Stud with Fire Element Pattern
 // 0 Name: 14769pm1.dat
 // 0 Author: Rolf Osterthun [Rolf]
@@ -18,9 +19,9 @@ function ldraw_lib__14769pm1() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\14769s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__14769s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__14769s01(realsolid)],
 // 1 16 0 0 0 20 0 0 0 1 0 0 0 20 4-4ering.dat
-  [1,16,0,0,0,20,0,0,0,1,0,0,0,20, ldraw_lib__4_4ering()],
+  [1,16,0,0,0,20,0,0,0,1,0,0,0,20, ldraw_lib__4_4ering(realsolid)],
 // 
 // 4 16 -18.478 0 7.654 -15.6 0 10.921 -14.418 0 12.458 -14.142 0 14.142
   [4,16,-18.478,0,7.654,-15.6,0,10.921,-14.418,0,12.458,-14.142,0,14.142],
@@ -928,5 +929,5 @@ function ldraw_lib__14769pm1() = [
   [4,191,1.559,0,15.13,.972,0,17.186,-.9,0,17.186,.044,0,15.207],
 ];
 module ldraw_lib__14769pm1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__14769pm1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__14769pm1(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__14769pm1(line=0.2);

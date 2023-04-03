@@ -5,7 +5,8 @@ use <../p/5-16cylo.scad>
 use <../p/box2-5.scad>
 use <../p/box5-2p.scad>
 use <../p/rect2p.scad>
-function ldraw_lib__37341c() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__37341c(realsolid=false) = [
 // 0 Minifig Sword Katana  3.5 L with Short Smooth Grip and Square Crossguard
 // 0 Name: 37341c.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -23,25 +24,25 @@ function ldraw_lib__37341c() = [
 // 
 // 
 // 1 16 0 0 0 4 0 0 0 -10 0 0 0 4 4-4cylc.dat
-  [1,16,0,0,0,4,0,0,0,-10,0,0,0,4, ldraw_lib__4_4cylc()],
+  [1,16,0,0,0,4,0,0,0,-10,0,0,0,4, ldraw_lib__4_4cylc(realsolid)],
 // 1 16 0 -12 -3.5 5.5 0 0 0 0 2 0 -2 0 box5-2p.dat
-  [1,16,0,-12,-3.5,5.5,0,0,0,0,2,0,-2,0, ldraw_lib__box5_2p()],
+  [1,16,0,-12,-3.5,5.5,0,0,0,0,2,0,-2,0, ldraw_lib__box5_2p(realsolid)],
 // 1 16 0 -12 3.5 5.5 0 0 0 0 2 0 2 0 box5-2p.dat
-  [1,16,0,-12,3.5,5.5,0,0,0,0,2,0,2,0, ldraw_lib__box5_2p()],
+  [1,16,0,-12,3.5,5.5,0,0,0,0,2,0,2,0, ldraw_lib__box5_2p(realsolid)],
 // 
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 5 -12 .5 0 -.5 0 -2 0 0 0 -.5 2.5 box2-5.dat
-  [1,16,5,-12,.5,0,-.5,0,-2,0,0,0,-.5,2.5, ldraw_lib__box2_5()],
+  [1,16,5,-12,.5,0,-.5,0,-2,0,0,0,-.5,2.5, ldraw_lib__box2_5(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -5 -12 -.5 0 .5 0 -2 0 0 0 .5 -2.5 box2-5.dat
-  [1,16,-5,-12,-.5,0,.5,0,-2,0,0,0,.5,-2.5, ldraw_lib__box2_5()],
+  [1,16,-5,-12,-.5,0,.5,0,-2,0,0,0,.5,-2.5, ldraw_lib__box2_5(realsolid)],
 // 
 // 1 16 -5 -12 3 -.5 1 0 0 0 2 .5 0 0 rect2p.dat
-  [1,16,-5,-12,3,-.5,1,0,0,0,2,.5,0,0, ldraw_lib__rect2p()],
+  [1,16,-5,-12,3,-.5,1,0,0,0,2,.5,0,0, ldraw_lib__rect2p(realsolid)],
 // 1 16 5 -12 -3 .5 -1 0 0 0 2 -.5 0 0 rect2p.dat
-  [1,16,5,-12,-3,.5,-1,0,0,0,2,-.5,0,0, ldraw_lib__rect2p()],
+  [1,16,5,-12,-3,.5,-1,0,0,0,2,-.5,0,0, ldraw_lib__rect2p(realsolid)],
 // 4 16 4.5 -14 2.5 5.5 -14 3.5 -5.5 -14 3.5 -4.5 -14 2.5
   [4,16,4.5,-14,2.5,5.5,-14,3.5,-5.5,-14,3.5,-4.5,-14,2.5],
 // 4 16 4.5 -14 2.5 -4.5 -14 2.5 -4.5 -14 -2.5 4.5 -14 -2.5
@@ -58,11 +59,11 @@ function ldraw_lib__37341c() = [
 // 0 // Inlined and shortened Blade s\30173s01.dat by Franklin W. Cain [fwcain]
 // 0 // Primitives
 // 1 16 -1.625 -84.0971 9.1321 0 3.25 0 -2 0 0 0 0 2 5-16cylo.dat
-  [1,16,-1.625,-84.0971,9.1321,0,3.25,0,-2,0,0,0,0,2, ldraw_lib__5_16cylo()],
+  [1,16,-1.625,-84.0971,9.1321,0,3.25,0,-2,0,0,0,0,2, ldraw_lib__5_16cylo(realsolid)],
 // 1 16 -1.625 -84.0971 9.1321 0 1 0 -2 0 0 0 0 2 5-16chrd.dat
-  [1,16,-1.625,-84.0971,9.1321,0,1,0,-2,0,0,0,0,2, ldraw_lib__5_16chrd()],
+  [1,16,-1.625,-84.0971,9.1321,0,1,0,-2,0,0,0,0,2, ldraw_lib__5_16chrd(realsolid)],
 // 1 16 1.625 -84.0971 9.1321 0 -1 0 -2 0 0 0 0 2 5-16chrd.dat
-  [1,16,1.625,-84.0971,9.1321,0,-1,0,-2,0,0,0,0,2, ldraw_lib__5_16chrd()],
+  [1,16,1.625,-84.0971,9.1321,0,-1,0,-2,0,0,0,0,2, ldraw_lib__5_16chrd(realsolid)],
 // 0 // Central band
 // 0 // Faces
 // 4 16 .75 -14 -4 .75 -36.7674 -2.6875 -.75 -36.7674 -2.6875 -.75 -14 -4
@@ -279,5 +280,5 @@ function ldraw_lib__37341c() = [
   [5,24,1.625,-78.8601,10.1921,1.625,-82.6733,5.9489,1.7,-71.7891,9.08,1.625,-85.4221,8.0221],
 ];
 module ldraw_lib__37341c(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__37341c(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__37341c(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__37341c(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/4-4cylc.scad>
-function ldraw_lib__33322() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__33322(realsolid=false) = [
 // 0 Minifig Crown Tiara
 // 0 Name: 33322.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -20,7 +21,7 @@ function ldraw_lib__33322() = [
 // 
 // 
 // 1 16 0 6.5 0 1.875 0 0 0 -6.5 0 0 0 1.875 4-4cylc.dat
-  [1,16,0,6.5,0,1.875,0,0,0,-6.5,0,0,0,1.875, ldraw_lib__4_4cylc()],
+  [1,16,0,6.5,0,1.875,0,0,0,-6.5,0,0,0,1.875, ldraw_lib__4_4cylc(realsolid)],
 // 4 16 -1.105 -17.524 -3.354 0 -17.524 -2.896 0 -16.419 -3.354 -0.781 -16.419 -3.677
   [4,16,-1.105,-17.524,-3.354,0,-17.524,-2.896,0,-16.419,-3.354,-0.781,-16.419,-3.677],
 // 4 16 0 -17.524 -2.896 1.105 -17.524 -3.354 0.781 -16.419 -3.677 0 -16.419 -3.354
@@ -2076,5 +2077,5 @@ function ldraw_lib__33322() = [
   [5,24,-15.468,-10.98,2.705,-16.573,-11.438,2.705,-15.791,-10.98,1.924,-15.791,-10.98,3.486],
 ];
 module ldraw_lib__33322(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__33322(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__33322(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__33322(line=0.2);

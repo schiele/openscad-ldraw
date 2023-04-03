@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/48/2-4chrd.scad>
 use <s/65474s01.scad>
-function ldraw_lib__65474() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__65474(realsolid=false) = [
 // 0 Tile  6 x  8 with Rounded Corners and Groove
 // 0 Name: 65474.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -16,15 +17,15 @@ function ldraw_lib__65474() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\65474s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__65474s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__65474s01(realsolid)],
 // 
 // 1 16 -20 0 0 0 0 -60 0 1 0 60 0 0 48\2-4chrd.dat
-  [1,16,-20,0,0,0,0,-60,0,1,0,60,0,0, ldraw_lib__48__2_4chrd()],
+  [1,16,-20,0,0,0,0,-60,0,1,0,60,0,0, ldraw_lib__48__2_4chrd(realsolid)],
 // 4 16 -20 0 60 -20 0 -60 20 0 -60 20 0 60
   [4,16,-20,0,60,-20,0,-60,20,0,-60,20,0,60],
 // 1 16 20 0 0 0 0 60 0 1 0 60 0 0 48\2-4chrd.dat
-  [1,16,20,0,0,0,0,60,0,1,0,60,0,0, ldraw_lib__48__2_4chrd()],
+  [1,16,20,0,0,0,0,60,0,1,0,60,0,0, ldraw_lib__48__2_4chrd(realsolid)],
 ];
 module ldraw_lib__65474(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__65474(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__65474(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__65474(line=0.2);

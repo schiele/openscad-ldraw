@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/2-4ndis.scad>
-function ldraw_lib__s__letra() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__letra(realsolid=false) = [
 // 0 ~Mindstorms RCX Letter "R"
 // 0 Name: s\letra.dat
 // 0 Author: John Van Zwieten [jvan]
@@ -16,7 +17,7 @@ function ldraw_lib__s__letra() = [
 // 
 // 
 // 1 16 2 9 -10 0 0 2 2 0 0 0 0 0 2-4ndis.dat
-  [1,16,2,9,-10,0,0,2,2,0,0,0,0,0, ldraw_lib__2_4ndis()],
+  [1,16,2,9,-10,0,0,2,2,0,0,0,0,0, ldraw_lib__2_4ndis(realsolid)],
 // 4 16 -6 5 -10 -6 19 -10 -4 19 -10 -4 7 -10
   [4,16,-6,5,-10,-6,19,-10,-4,19,-10,-4,7,-10],
 // 4 16 -4 13 -10 2 13 -10 4 11 -10 -4 11 -10
@@ -38,5 +39,5 @@ function ldraw_lib__s__letra() = [
 // 0
 ];
 module ldraw_lib__s__letra(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__letra(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__letra(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__letra(line=0.2);

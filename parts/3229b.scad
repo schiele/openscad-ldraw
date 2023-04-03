@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4edge.scad>
 use <../p/stud3a.scad>
-function ldraw_lib__3229b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3229b(realsolid=false) = [
 // 0 Train Track Slotted Rail Curved Outside
 // 0 Name: 3229b.dat
 // 0 Author: Manfred Moolhuysen
@@ -199,11 +200,11 @@ function ldraw_lib__3229b() = [
 // 4 16 -4 8 -2.01 -4 6 -2.01 -4 6 1.99 -4 8 1.99
   [4,16,-4,8,-2.01,-4,6,-2.01,-4,6,1.99,-4,8,1.99],
 // 1 16 0 12 0 1 0 0 0 -1 0 0 0 1 stud3a.dat
-  [1,16,0,12,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud3a()],
+  [1,16,0,12,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud3a(realsolid)],
 // 1 16 0 10 0 4 0 0 0 2 0 0 0 4 4-4cyli.dat
-  [1,16,0,10,0,4,0,0,0,2,0,0,0,4, ldraw_lib__4_4cyli()],
+  [1,16,0,10,0,4,0,0,0,2,0,0,0,4, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 10 0 4 0 0 0 2 0 0 0 4 4-4edge.dat
-  [1,16,0,10,0,4,0,0,0,2,0,0,0,4, ldraw_lib__4_4edge()],
+  [1,16,0,10,0,4,0,0,0,2,0,0,0,4, ldraw_lib__4_4edge(realsolid)],
 // 2 24 4 6 1.99 4 8 1.99
   [2,24,4,6,1.99,4,8,1.99],
 // 2 24 4 8 1.99 4 8 3
@@ -5164,5 +5165,5 @@ function ldraw_lib__3229b() = [
   [2,24,167.78,16,-6.52,167.78,8,-6.52],
 ];
 module ldraw_lib__3229b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3229b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3229b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3229b(line=0.2);

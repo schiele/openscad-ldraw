@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/1-4disc.scad>
 use <../../p/1-4ndis.scad>
-function ldraw_lib__s__4616559ps1() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__4616559ps1(realsolid=false) = [
 // 0 ~Sticker Maersk Logo
 // 0 Name: s\4616559ps1.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -16,13 +17,13 @@ function ldraw_lib__s__4616559ps1() = [
 // 
 // 
 // 1 313 -9 0 9.7 0 0 -3 0 1 0 3 0 0 1-4disc.dat
-  [1,313,-9,0,9.7,0,0,-3,0,1,0,3,0,0, ldraw_lib__1_4disc()],
+  [1,313,-9,0,9.7,0,0,-3,0,1,0,3,0,0, ldraw_lib__1_4disc(realsolid)],
 // 1 313 9 0 9.7 3 0 0 0 1 0 0 0 3 1-4disc.dat
-  [1,313,9,0,9.7,3,0,0,0,1,0,0,0,3, ldraw_lib__1_4disc()],
+  [1,313,9,0,9.7,3,0,0,0,1,0,0,0,3, ldraw_lib__1_4disc(realsolid)],
 // 1 313 9 0 -9.7 0 0 3 0 1 0 -3 0 0 1-4disc.dat
-  [1,313,9,0,-9.7,0,0,3,0,1,0,-3,0,0, ldraw_lib__1_4disc()],
+  [1,313,9,0,-9.7,0,0,3,0,1,0,-3,0,0, ldraw_lib__1_4disc(realsolid)],
 // 1 313 -9 0 -9.7 -3 0 0 0 1 0 0 0 -3 1-4disc.dat
-  [1,313,-9,0,-9.7,-3,0,0,0,1,0,0,0,-3, ldraw_lib__1_4disc()],
+  [1,313,-9,0,-9.7,-3,0,0,0,1,0,0,0,-3, ldraw_lib__1_4disc(realsolid)],
 // 0 //
 // 4 15 0 0 -3.994 3.123 0 -2.49 0 0 0 -3.123 0 -2.49
   [4,15,0,0,-3.994,3.123,0,-2.49,0,0,0,-3.123,0,-2.49],
@@ -83,14 +84,14 @@ function ldraw_lib__s__4616559ps1() = [
   [3,313,9,0,12.7,0,0,11,9,0,9.7],
 // 0 //
 // 1 16 9 0 9.7 3 0 0 0 1 0 0 0 3 1-4ndis.dat
-  [1,16,9,0,9.7,3,0,0,0,1,0,0,0,3, ldraw_lib__1_4ndis()],
+  [1,16,9,0,9.7,3,0,0,0,1,0,0,0,3, ldraw_lib__1_4ndis(realsolid)],
 // 1 16 9 0 -9.7 0 0 3 0 1 0 -3 0 0 1-4ndis.dat
-  [1,16,9,0,-9.7,0,0,3,0,1,0,-3,0,0, ldraw_lib__1_4ndis()],
+  [1,16,9,0,-9.7,0,0,3,0,1,0,-3,0,0, ldraw_lib__1_4ndis(realsolid)],
 // 1 16 -9 0 -9.7 -3 0 0 0 1 0 0 0 -3 1-4ndis.dat
-  [1,16,-9,0,-9.7,-3,0,0,0,1,0,0,0,-3, ldraw_lib__1_4ndis()],
+  [1,16,-9,0,-9.7,-3,0,0,0,1,0,0,0,-3, ldraw_lib__1_4ndis(realsolid)],
 // 1 16 -9 0 9.7 0 0 -3 0 1 0 3 0 0 1-4ndis.dat
-  [1,16,-9,0,9.7,0,0,-3,0,1,0,3,0,0, ldraw_lib__1_4ndis()],
+  [1,16,-9,0,9.7,0,0,-3,0,1,0,3,0,0, ldraw_lib__1_4ndis(realsolid)],
 ];
 module ldraw_lib__s__4616559ps1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__4616559ps1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__4616559ps1(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__4616559ps1(line=0.2);

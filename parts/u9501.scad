@@ -9,7 +9,8 @@ use <../p/box2-7.scad>
 use <../p/rect.scad>
 use <../p/rect2p.scad>
 use <../p/rect3.scad>
-function ldraw_lib__u9501() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__u9501(realsolid=false) = [
 // 0 ~Door  1 x  3 x  3 Left with Window and Horizontal Handle - Lower
 // 0 Name: u9501.dat
 // 0 Author: Alex Taylor [anathema]
@@ -26,19 +27,19 @@ function ldraw_lib__u9501() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 24 0 6 0 0 0 48 0 0 0 6 4-4cylo.dat
-  [1,16,0,24,0,6,0,0,0,48,0,0,0,6, ldraw_lib__4_4cylo()],
+  [1,16,0,24,0,6,0,0,0,48,0,0,0,6, ldraw_lib__4_4cylo(realsolid)],
 // 1 16 0 24 0 10 0 0 0 48 0 0 0 -10 3-4cylo.dat
-  [1,16,0,24,0,10,0,0,0,48,0,0,0,-10, ldraw_lib__3_4cylo()],
+  [1,16,0,24,0,10,0,0,0,48,0,0,0,-10, ldraw_lib__3_4cylo(realsolid)],
 // 1 16 0 72 0 2 0 0 0 -1 0 0 0 -2 3-4ring3.dat
-  [1,16,0,72,0,2,0,0,0,-1,0,0,0,-2, ldraw_lib__3_4ring3()],
+  [1,16,0,72,0,2,0,0,0,-1,0,0,0,-2, ldraw_lib__3_4ring3(realsolid)],
 // 1 16 0 72 0 2 0 0 0 -1 0 0 0 -2 3-4ring4.dat
-  [1,16,0,72,0,2,0,0,0,-1,0,0,0,-2, ldraw_lib__3_4ring4()],
+  [1,16,0,72,0,2,0,0,0,-1,0,0,0,-2, ldraw_lib__3_4ring4(realsolid)],
 // 1 16 12.5 26 36 0 2.5 0 0 0 -2 -6 0 0 box2-7.dat
-  [1,16,12.5,26,36,0,2.5,0,0,0,-2,-6,0,0, ldraw_lib__box2_7()],
+  [1,16,12.5,26,36,0,2.5,0,0,0,-2,-6,0,0, ldraw_lib__box2_7(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 11.5 27 36 0 1.5 0 0 0 -1 -6 0 0 box2-5.dat
-  [1,16,11.5,27,36,0,1.5,0,0,0,-1,-6,0,0, ldraw_lib__box2_5()],
+  [1,16,11.5,27,36,0,1.5,0,0,0,-1,-6,0,0, ldraw_lib__box2_5(realsolid)],
 // 4 16 13 28 30 15 28 30 15 24 30 13 26 30
   [4,16,13,28,30,15,28,30,15,24,30,13,26,30],
 // 4 16 13 26 42 15 24 42 15 28 42 13 28 42
@@ -58,15 +59,15 @@ function ldraw_lib__u9501() = [
 // 2 24 10 72 0 10 72 50
   [2,24,10,72,0,10,72,50],
 // 1 16 14 28 36 0 0 1 0 -1 0 6 0 0 rect3.dat
-  [1,16,14,28,36,0,0,1,0,-1,0,6,0,0, ldraw_lib__rect3()],
+  [1,16,14,28,36,0,0,1,0,-1,0,6,0,0, ldraw_lib__rect3(realsolid)],
 // 1 16 0 24 0 2 0 0 0 1 0 0 0 -2 3-4ring3.dat
-  [1,16,0,24,0,2,0,0,0,1,0,0,0,-2, ldraw_lib__3_4ring3()],
+  [1,16,0,24,0,2,0,0,0,1,0,0,0,-2, ldraw_lib__3_4ring3(realsolid)],
 // 1 16 0 24 0 2 0 0 0 1 0 0 0 -2 3-4ring4.dat
-  [1,16,0,24,0,2,0,0,0,1,0,0,0,-2, ldraw_lib__3_4ring4()],
+  [1,16,0,24,0,2,0,0,0,1,0,0,0,-2, ldraw_lib__3_4ring4(realsolid)],
 // 1 16 0 72 0 6 0 0 0 -1 0 0 0 6 1-4ndis.dat
-  [1,16,0,72,0,6,0,0,0,-1,0,0,0,6, ldraw_lib__1_4ndis()],
+  [1,16,0,72,0,6,0,0,0,-1,0,0,0,6, ldraw_lib__1_4ndis(realsolid)],
 // 1 16 0 24 0 6 0 0 0 1 0 0 0 6 1-4ndis.dat
-  [1,16,0,24,0,6,0,0,0,1,0,0,0,6, ldraw_lib__1_4ndis()],
+  [1,16,0,24,0,6,0,0,0,1,0,0,0,6, ldraw_lib__1_4ndis(realsolid)],
 // 4 16 6 72 10 6 72 50 10 72 50 10 72 0
   [4,16,6,72,10,6,72,50,10,72,50,10,72,0],
 // 4 16 10 24 0 10 24 30 6 24 50 6 24 10
@@ -94,13 +95,13 @@ function ldraw_lib__u9501() = [
 // 3 16 6 24 10 6 24 6 10 24 0
   [3,16,6,24,10,6,24,6,10,24,0],
 // 1 16 8 48 50 2 0 0 0 0 24 0 -1 0 rect.dat
-  [1,16,8,48,50,2,0,0,0,0,24,0,-1,0, ldraw_lib__rect()],
+  [1,16,8,48,50,2,0,0,0,0,24,0,-1,0, ldraw_lib__rect(realsolid)],
 // 1 16 6 48 30 0 1 0 0 0 24 -20 0 0 rect.dat
-  [1,16,6,48,30,0,1,0,0,0,24,-20,0,0, ldraw_lib__rect()],
+  [1,16,6,48,30,0,1,0,0,0,24,-20,0,0, ldraw_lib__rect(realsolid)],
 // 1 16 3 48 10 -3 0 0 0 0 24 0 -1 0 rect2p.dat
-  [1,16,3,48,10,-3,0,0,0,0,24,0,-1,0, ldraw_lib__rect2p()],
+  [1,16,3,48,10,-3,0,0,0,0,24,0,-1,0, ldraw_lib__rect2p(realsolid)],
 // 0
 ];
 module ldraw_lib__u9501(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__u9501(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__u9501(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__u9501(line=0.2);

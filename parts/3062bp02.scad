@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/2-4cyli.scad>
 use <s/3062bs01.scad>
-function ldraw_lib__3062bp02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3062bp02(realsolid=false) = [
 // 0 Brick  1 x  1 Round with Black, Yellow and White "BUZZ COLA" Pattern
 // 0 Name: 3062bp02.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -18,9 +19,9 @@ function ldraw_lib__3062bp02() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3062bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3062bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3062bs01(realsolid)],
 // 1 16 0 0 0 10 0 0 0 19 0 0 0 10 2-4cyli.dat
-  [1,16,0,0,0,10,0,0,0,19,0,0,0,10, ldraw_lib__2_4cyli()],
+  [1,16,0,0,0,10,0,0,0,19,0,0,0,10, ldraw_lib__2_4cyli(realsolid)],
 // 
 // 4 0 -9.3681 14.55 -3.1778 -9.4477 14.3 -2.7775 -9.577 14.6421 -2.1271 -9.6367 15.3 -1.827
   [4,0,-9.3681,14.55,-3.1778,-9.4477,14.3,-2.7775,-9.577,14.6421,-2.1271,-9.6367,15.3,-1.827],
@@ -1308,5 +1309,5 @@ function ldraw_lib__3062bp02() = [
   [5,24,-10,0,0,-10,19,0,-9.975,11.9,-.126,-9.239,0,3.827],
 ];
 module ldraw_lib__3062bp02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3062bp02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3062bp02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3062bp02(line=0.2);

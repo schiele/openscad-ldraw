@@ -3,7 +3,8 @@ use <s/30366ps0s01.scad>
 use <s/30366ps0s02.scad>
 use <s/30366ps0s03.scad>
 use <s/30366s01.scad>
-function ldraw_lib__30366ps0() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__30366ps0(realsolid=false) = [
 // 0 Windscreen  3 x  6 x  5 Canopy with Millennium Falcon Pattern
 // 0 Name: 30366ps0.dat
 // 0 Author: Daniel Goerner [TK-949]
@@ -18,23 +19,23 @@ function ldraw_lib__30366ps0() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\30366s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30366s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30366s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\30366ps0s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30366ps0s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30366ps0s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\30366ps0s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__30366ps0s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__30366ps0s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\30366ps0s02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30366ps0s02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30366ps0s02(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\30366ps0s02.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__30366ps0s02()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__30366ps0s02(realsolid)],
 // 1 16 0 120 0 -1 0 0 0 -1 0 0 0 1 s\30366ps0s02.dat
-  [1,16,0,120,0,-1,0,0,0,-1,0,0,0,1, ldraw_lib__s__30366ps0s02()],
+  [1,16,0,120,0,-1,0,0,0,-1,0,0,0,1, ldraw_lib__s__30366ps0s02(realsolid)],
 // 1 16 0 120 0 1 0 0 0 -1 0 0 0 1 s\30366ps0s02.dat
-  [1,16,0,120,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__s__30366ps0s02()],
+  [1,16,0,120,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__s__30366ps0s02(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\30366ps0s03.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30366ps0s03()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30366ps0s03(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\30366ps0s03.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__30366ps0s03()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__30366ps0s03(realsolid)],
 // 0 // Conditional Lines
 // 5 24 -1.703 72.938 -39.14 -3.377 85.657 -36.59 0 73.05 -39.14 -3.377 72.605 -39.14
   [5,24,-1.703,72.938,-39.14,-3.377,85.657,-36.59,0,73.05,-39.14,-3.377,72.605,-39.14],
@@ -890,5 +891,5 @@ function ldraw_lib__30366ps0() = [
   [5,24,-36.965,50.096,-32.39,-35.358,45.354,-32.39,-24.997,53.302,-36.59,-48.295,47.06,-26.6],
 ];
 module ldraw_lib__30366ps0(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__30366ps0(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__30366ps0(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__30366ps0(line=0.2);

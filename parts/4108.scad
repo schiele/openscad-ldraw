@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4cylc.scad>
 use <../p/4-4cylo.scad>
 use <../p/4-4disc.scad>
-function ldraw_lib__4108() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4108(realsolid=false) = [
 // 0 ~Axle for Wheel 10 x  3
 // 0 Name: 4108.dat
 // 0 Author: Alex Taylor [anathema]
@@ -22,21 +23,21 @@ function ldraw_lib__4108() = [
 // 
 // 
 // 1 16 25 0 0 0 -50 0 0 0 -2.5 2.5 0 0 4-4cylo.dat
-  [1,16,25,0,0,0,-50,0,0,0,-2.5,2.5,0,0, ldraw_lib__4_4cylo()],
+  [1,16,25,0,0,0,-50,0,0,0,-2.5,2.5,0,0, ldraw_lib__4_4cylo(realsolid)],
 // 1 16 29.5 0 0 0 -2.5 0 0 0 -2.5 2.5 0 0 4-4cylc.dat
-  [1,16,29.5,0,0,0,-2.5,0,0,0,-2.5,2.5,0,0, ldraw_lib__4_4cylc()],
+  [1,16,29.5,0,0,0,-2.5,0,0,0,-2.5,2.5,0,0, ldraw_lib__4_4cylc(realsolid)],
 // 1 16 -29.5 0 0 0 2.5 0 0 0 -2.5 -2.5 0 0 4-4cylc.dat
-  [1,16,-29.5,0,0,0,2.5,0,0,0,-2.5,-2.5,0,0, ldraw_lib__4_4cylc()],
+  [1,16,-29.5,0,0,0,2.5,0,0,0,-2.5,-2.5,0,0, ldraw_lib__4_4cylc(realsolid)],
 // 1 16 -27 0 0 0 2 0 0 0 -5 -5 0 0 4-4cylc.dat
-  [1,16,-27,0,0,0,2,0,0,0,-5,-5,0,0, ldraw_lib__4_4cylc()],
+  [1,16,-27,0,0,0,2,0,0,0,-5,-5,0,0, ldraw_lib__4_4cylc(realsolid)],
 // 1 16 -25 0 0 0 -1 0 0 0 -5 5 0 0 4-4disc.dat
-  [1,16,-25,0,0,0,-1,0,0,0,-5,5,0,0, ldraw_lib__4_4disc()],
+  [1,16,-25,0,0,0,-1,0,0,0,-5,5,0,0, ldraw_lib__4_4disc(realsolid)],
 // 1 16 25 0 0 0 2 0 0 0 -5 -5 0 0 4-4cylc.dat
-  [1,16,25,0,0,0,2,0,0,0,-5,-5,0,0, ldraw_lib__4_4cylc()],
+  [1,16,25,0,0,0,2,0,0,0,-5,-5,0,0, ldraw_lib__4_4cylc(realsolid)],
 // 1 16 27 0 0 0 -1 0 0 0 -5 5 0 0 4-4disc.dat
-  [1,16,27,0,0,0,-1,0,0,0,-5,5,0,0, ldraw_lib__4_4disc()],
+  [1,16,27,0,0,0,-1,0,0,0,-5,5,0,0, ldraw_lib__4_4disc(realsolid)],
 // 
 ];
 module ldraw_lib__4108(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4108(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4108(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4108(line=0.2);

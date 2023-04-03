@@ -3,7 +3,8 @@ use <../p/1-4ering.scad>
 use <../p/3-4disc.scad>
 use <../p/3-4ndis.scad>
 use <s/25269s01.scad>
-function ldraw_lib__25269p04() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__25269p04(realsolid=false) = [
 // 0 Tile  1 x  1 Corner Round with Large Eye on Coral and Bright Pink Background Pattern
 // 0 Name: 25269p04.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -20,13 +21,13 @@ function ldraw_lib__25269p04() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\25269s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__25269s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__25269s01(realsolid)],
 // 1 16 -10 0 10 0 0 20 0 1 0 -20 0 0 1-4ering.dat
-  [1,16,-10,0,10,0,0,20,0,1,0,-20,0,0, ldraw_lib__1_4ering()],
+  [1,16,-10,0,10,0,0,20,0,1,0,-20,0,0, ldraw_lib__1_4ering(realsolid)],
 // 1 0 -2.5 0 2.5 2.4 0 0 0 1 0 0 0 2.4 3-4disc.dat
-  [1,0,-2.5,0,2.5,2.4,0,0,0,1,0,0,0,2.4, ldraw_lib__3_4disc()],
+  [1,0,-2.5,0,2.5,2.4,0,0,0,1,0,0,0,2.4, ldraw_lib__3_4disc(realsolid)],
 // 1 16 -2.5 0 2.5 2.4 0 0 0 1 0 0 0 2.4 3-4ndis.dat
-  [1,16,-2.5,0,2.5,2.4,0,0,0,1,0,0,0,2.4, ldraw_lib__3_4ndis()],
+  [1,16,-2.5,0,2.5,2.4,0,0,0,1,0,0,0,2.4, ldraw_lib__3_4ndis(realsolid)],
 // 4 0 -0.15 0 2.029 -0.1 0 2.5 -2.5 0 2.5 -0.28 0 1.58
   [4,0,-0.15,0,2.029,-0.1,0,2.5,-2.5,0,2.5,-0.28,0,1.58],
 // 4 0 -0.5 0 1.17 -0.28 0 1.58 -2.5 0 2.5 -0.8 0 0.8
@@ -195,5 +196,5 @@ function ldraw_lib__25269p04() = [
   [3,353,5.19,0,-0.86,4.45,0,-2.24,5.07,0,-1.57],
 ];
 module ldraw_lib__25269p04(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__25269p04(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__25269p04(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__25269p04(line=0.2);

@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/1-4cyli.scad>
 use <s/973s01.scad>
-function ldraw_lib__973puf() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__973puf(realsolid=false) = [
 // 0 Minifig Torso with Hoodie with White Drawstrings, Silver Adjusters and Kangaroo Pockets Pattern
 // 0 Name: 973puf.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -18,9 +19,9 @@ function ldraw_lib__973puf() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01(realsolid)],
 // 1 0 0 -4 0 4.243 0 -4.243 0 -8 0 -4.243 0 -4.243 1-4cyli.dat
-  [1,0,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli()],
+  [1,0,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli(realsolid)],
 // 0 // Front
 // 3 0 -15.45 30.9 -10 -17.95 31.6 -10 -13.75 31.1 -10
   [3,0,-15.45,30.9,-10,-17.95,31.6,-10,-13.75,31.1,-10],
@@ -1213,5 +1214,5 @@ function ldraw_lib__973puf() = [
   [4,16,17.95,29.5,10,17.9,30.1,10,15.45,30.9,10,15.8,29.85,10],
 ];
 module ldraw_lib__973puf(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__973puf(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__973puf(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__973puf(line=0.2);

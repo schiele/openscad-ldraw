@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <2496.scad>
 use <42511.scad>
-function ldraw_lib__42511c01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__42511c01(realsolid=false) = [
 // 0 Minifig Skateboard with Black Wheels (Complete)
 // 0 Name: 42511c01.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -18,12 +19,12 @@ function ldraw_lib__42511c01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 42511.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__42511()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__42511(realsolid)],
 // 1 0 29.6 14.3 0 0 0 1 0 1 0 -1 0 0 2496.dat
-  [1,0,29.6,14.3,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__2496()],
+  [1,0,29.6,14.3,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__2496(realsolid)],
 // 1 0 -29.6 14.3 0 0 0 1 0 1 0 -1 0 0 2496.dat
-  [1,0,-29.6,14.3,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__2496()],
+  [1,0,-29.6,14.3,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__2496(realsolid)],
 ];
 module ldraw_lib__42511c01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__42511c01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__42511c01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__42511c01(line=0.2);

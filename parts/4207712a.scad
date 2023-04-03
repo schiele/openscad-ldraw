@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <4201018a.scad>
-function ldraw_lib__4207712a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4207712a(realsolid=false) = [
 // 0 =Sticker  2.0 x  3.8 with  4 White Stripes
 // 0 Name: 4207712a.dat
 // 0 Author: Tim Lampmann [L4mpi]
@@ -19,8 +20,8 @@ function ldraw_lib__4207712a() = [
 // 0 // Alias of 4201018a
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 4201018a.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4201018a()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4201018a(realsolid)],
 ];
 module ldraw_lib__4207712a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4207712a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4207712a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4207712a(line=0.2);

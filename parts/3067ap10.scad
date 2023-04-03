@@ -3,7 +3,8 @@ use <../p/48/4-4disc.scad>
 use <../p/48/4-4ndis.scad>
 use <../p/48/4-4ring1.scad>
 use <s/3067s01.scad>
-function ldraw_lib__3067ap10() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3067ap10(realsolid=false) = [
 // 0 Brick  1 x  6 without Centre Studs with White "STATION" Pattern
 // 0 Name: 3067ap10.dat
 // 0 Author: Alex Taylor [anathema]
@@ -22,7 +23,7 @@ function ldraw_lib__3067ap10() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3067s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3067s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3067s01(realsolid)],
 // 4 15 -8 8.75 -10 5 8.75 -10 5 4 -10 -8 4 -10
   [4,15,-8,8.75,-10,5,8.75,-10,5,4,-10,-8,4,-10],
 // 4 15 -4 20 -10 1 20 -10 1 8.75 -10 -4 8.75 -10
@@ -90,13 +91,13 @@ function ldraw_lib__3067ap10() = [
 // 3 16 40 4 -10 35 4 -10 40 12 -10
   [3,16,40,4,-10,35,4,-10,40,12,-10],
 // 1 16 21 12 -10 3.5 0 0 0 0 -4.25 0 1 0 48\4-4disc.dat
-  [1,16,21,12,-10,3.5,0,0,0,0,-4.25,0,1,0, ldraw_lib__48__4_4disc()],
+  [1,16,21,12,-10,3.5,0,0,0,0,-4.25,0,1,0, ldraw_lib__48__4_4disc(realsolid)],
 // 1 15 21 12 -10 3.5 0 0 0 0 -4.25 0 1 0 48\4-4ring1.dat
-  [1,15,21,12,-10,3.5,0,0,0,0,-4.25,0,1,0, ldraw_lib__48__4_4ring1()],
+  [1,15,21,12,-10,3.5,0,0,0,0,-4.25,0,1,0, ldraw_lib__48__4_4ring1(realsolid)],
 // 1 15 21 12 -10 4 0 0 0 0 -4.25 0 1 0 48\4-4ring1.dat
-  [1,15,21,12,-10,4,0,0,0,0,-4.25,0,1,0, ldraw_lib__48__4_4ring1()],
+  [1,15,21,12,-10,4,0,0,0,0,-4.25,0,1,0, ldraw_lib__48__4_4ring1(realsolid)],
 // 1 16 21 12 -10 8 0 0 0 0 -8.5 0 1 0 48\4-4ndis.dat
-  [1,16,21,12,-10,8,0,0,0,0,-8.5,0,1,0, ldraw_lib__48__4_4ndis()],
+  [1,16,21,12,-10,8,0,0,0,0,-8.5,0,1,0, ldraw_lib__48__4_4ndis(realsolid)],
 // 4 15 -46.8961 16.1009 -10 -46.6616 16.8122 -10 -42.8058 15.0067 -10 -42.893 14.5317 -10
   [4,15,-46.8961,16.1009,-10,-46.6616,16.8122,-10,-42.8058,15.0067,-10,-42.893,14.5317,-10],
 // 3 16 -46.8961 16.1009 -10 -60 24 -10 -46.6616 16.8122 -10
@@ -464,5 +465,5 @@ function ldraw_lib__3067ap10() = [
 // 0
 ];
 module ldraw_lib__3067ap10(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3067ap10(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3067ap10(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3067ap10(line=0.2);

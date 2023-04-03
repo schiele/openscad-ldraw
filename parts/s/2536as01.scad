@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/1-4ndis.scad>
-function ldraw_lib__s__2536as01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__2536as01(realsolid=false) = [
 // 0 ~Plant Tree Palm Trunk Long Indented Connector  1/4
 // 0 Name: s\2536as01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -75,7 +76,7 @@ function ldraw_lib__s__2536as01() = [
 // 5 24 3.7887 4.2 9.1466 3.6739 1 8.8694 0 4.2 9.9 4.2585 3 8.6999
   [5,24,3.7887,4.2,9.1466,3.6739,1,8.8694,0,4.2,9.9,4.2585,3,8.6999],
 // 1 16 0 9.5 0 4.24264 0 -4.24264 0 -1 0 4.24264 0 4.24264 1-4ndis.dat
-  [1,16,0,9.5,0,4.24264,0,-4.24264,0,-1,0,4.24264,0,4.24264, ldraw_lib__1_4ndis()],
+  [1,16,0,9.5,0,4.24264,0,-4.24264,0,-1,0,4.24264,0,4.24264, ldraw_lib__1_4ndis(realsolid)],
 // 4 16 -3.6356 9.5 8.777 0 9.5 9.5 0 9.5 8.4853 -4.3363 9.5 8.3088
   [4,16,-3.6356,9.5,8.777,0,9.5,9.5,0,9.5,8.4853,-4.3363,9.5,8.3088],
 // 4 16 -5.7574 9.5 5.7574 -4.4566 9.5 7.7038 0 9.5 8.4853 -4.2426 9.5 4.2426
@@ -196,5 +197,5 @@ function ldraw_lib__s__2536as01() = [
   [5,24,5.7574,3,5.7574,5.7574,9.5,5.7574,4.4566,9.5,7.7038,7.7038,3,4.4566],
 ];
 module ldraw_lib__s__2536as01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__2536as01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__2536as01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__2536as01(line=0.2);

@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/1-8edge.scad>
 use <../p/3-8ring4.scad>
 use <../p/stud4o.scad>
-function ldraw_lib__27186() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__27186(realsolid=false) = [
 // 0 Minifig Hair with Large High Bun
 // 0 Name: 27186.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -21,15 +22,15 @@ function ldraw_lib__27186() = [
 // 
 // 
 // 1 16 0 -5 0 -1 0 0 0 -1.25 0 0 0 1 stud4o.dat
-  [1,16,0,-5,0,-1,0,0,0,-1.25,0,0,0,1, ldraw_lib__stud4o()],
+  [1,16,0,-5,0,-1,0,0,0,-1.25,0,0,0,1, ldraw_lib__stud4o(realsolid)],
 // 1 16 0 0 0 0 0 -2 0 -1 0 -2 0 0 3-8ring4.dat
-  [1,16,0,0,0,0,0,-2,0,-1,0,-2,0,0, ldraw_lib__3_8ring4()],
+  [1,16,0,0,0,0,0,-2,0,-1,0,-2,0,0, ldraw_lib__3_8ring4(realsolid)],
 // 1 16 0 0 0 0 0 2 0 -1 0 -2 0 0 3-8ring4.dat
-  [1,16,0,0,0,0,0,2,0,-1,0,-2,0,0, ldraw_lib__3_8ring4()],
+  [1,16,0,0,0,0,0,2,0,-1,0,-2,0,0, ldraw_lib__3_8ring4(realsolid)],
 // 1 16 0 0 0 0 0 -8 0 -1 0 8 0 0 1-8edge.dat
-  [1,16,0,0,0,0,0,-8,0,-1,0,8,0,0, ldraw_lib__1_8edge()],
+  [1,16,0,0,0,0,0,-8,0,-1,0,8,0,0, ldraw_lib__1_8edge(realsolid)],
 // 1 16 0 0 0 0 0 8 0 -1 0 8 0 0 1-8edge.dat
-  [1,16,0,0,0,0,0,8,0,-1,0,8,0,0, ldraw_lib__1_8edge()],
+  [1,16,0,0,0,0,0,8,0,-1,0,8,0,0, ldraw_lib__1_8edge(realsolid)],
 // 4 16 4.9749 -5 12.0104 0 -5 13 0 18.207 13 4.9749 18.081 12.0104
   [4,16,4.9749,-5,12.0104,0,-5,13,0,18.207,13,4.9749,18.081,12.0104],
 // 4 16 9.239 0 3.827 7.071 0 7.071 8.2024 1 8.2024 10.717 1 4.4391
@@ -5225,5 +5226,5 @@ function ldraw_lib__27186() = [
   [5,24,4.8214,2.4271,-11.6399,3.488,2.451,-13.066,5.922,2.027,-12.113,0,2.7965,-12.8576],
 ];
 module ldraw_lib__27186(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__27186(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__27186(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__27186(line=0.2);

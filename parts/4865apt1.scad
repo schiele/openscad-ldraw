@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/4865as01.scad>
-function ldraw_lib__4865apt1() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4865apt1(realsolid=false) = [
 // 0 Panel  1 x  2 x  1 with Red "Shell" Pattern
 // 0 Name: 4865apt1.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -17,7 +18,7 @@ function ldraw_lib__4865apt1() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4865as01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4865as01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4865as01(realsolid)],
 // 4 4 10.5 10.6 10 15 10.6 10 13.9 11.5 10 11.7 11.5 10
   [4,4,10.5,10.6,10,15,10.6,10,13.9,11.5,10,11.7,11.5,10],
 // 4 4 8.9 10.9 10 10.5 10.6 10 11.7 11.5 10 11.3 11.7 10
@@ -256,5 +257,5 @@ function ldraw_lib__4865apt1() = [
   [4,16,-14.4,10.9,10,-12.9,10.9,10,-12.9,17.1,10,-14.4,17.1,10],
 ];
 module ldraw_lib__4865apt1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4865apt1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4865apt1(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4865apt1(line=0.2);

@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__50231s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__50231s02(realsolid=false) = [
 // 0 ~Minifig Cape Cloth (Formed) Neck Top Surface
 // 0 Name: s\50231s02.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -161,5 +162,5 @@ function ldraw_lib__s__50231s02() = [
   [4,16,0.44,-0.3,16.63,-0.88,-0.3,16.94,-1.68,-0.3,6.26,0.85,-0.3,6.43],
 ];
 module ldraw_lib__s__50231s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__50231s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__50231s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__50231s02(line=0.2);

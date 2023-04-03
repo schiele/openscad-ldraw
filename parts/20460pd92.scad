@@ -6,7 +6,8 @@ use <../p/2-4ndis.scad>
 use <s/20460s03.scad>
 use <s/20460s04.scad>
 use <s/3817bs03.scad>
-function ldraw_lib__20460pd92() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__20460pd92(realsolid=false) = [
 // 0 Minifig Leg Left with Ruffles, Black Lower Leg and White Feet Pattern
 // 0 Name: 20460pd92.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -23,22 +24,22 @@ function ldraw_lib__20460pd92() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\20460s04.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__20460s04()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__20460s04(realsolid)],
 // 0 // Front
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3817bs03.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3817bs03()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3817bs03(realsolid)],
 // 1 0 10.1 10.4 -4 4.3 0 0 0 0 2 0 1 0 2-4ndis.dat
-  [1,0,10.1,10.4,-4,4.3,0,0,0,0,2,0,1,0, ldraw_lib__2_4ndis()],
+  [1,0,10.1,10.4,-4,4.3,0,0,0,0,2,0,1,0, ldraw_lib__2_4ndis(realsolid)],
 // 1 0 1.5 10.4 -4 4.3 0 0 0 0 2 0 1 0 1-4ndis.dat
-  [1,0,1.5,10.4,-4,4.3,0,0,0,0,2,0,1,0, ldraw_lib__1_4ndis()],
+  [1,0,1.5,10.4,-4,4.3,0,0,0,0,2,0,1,0, ldraw_lib__1_4ndis(realsolid)],
 // 1 0 18.7 10.4 -4 -4.3 0 0 0 0 2 0 1 0 1-4ndis.dat
-  [1,0,18.7,10.4,-4,-4.3,0,0,0,0,2,0,1,0, ldraw_lib__1_4ndis()],
+  [1,0,18.7,10.4,-4,-4.3,0,0,0,0,2,0,1,0, ldraw_lib__1_4ndis(realsolid)],
 // 1 16 10.1 10.4 -4 4.3 0 0 0 0 2 0 1 0 2-4chrd.dat
-  [1,16,10.1,10.4,-4,4.3,0,0,0,0,2,0,1,0, ldraw_lib__2_4chrd()],
+  [1,16,10.1,10.4,-4,4.3,0,0,0,0,2,0,1,0, ldraw_lib__2_4chrd(realsolid)],
 // 1 16 1.5 10.4 -4 4.3 0 0 0 0 2 0 1 0 1-4chrd.dat
-  [1,16,1.5,10.4,-4,4.3,0,0,0,0,2,0,1,0, ldraw_lib__1_4chrd()],
+  [1,16,1.5,10.4,-4,4.3,0,0,0,0,2,0,1,0, ldraw_lib__1_4chrd(realsolid)],
 // 1 16 18.7 10.4 -4 -4.3 0 0 0 0 2 0 1 0 1-4chrd.dat
-  [1,16,18.7,10.4,-4,-4.3,0,0,0,0,2,0,1,0, ldraw_lib__1_4chrd()],
+  [1,16,18.7,10.4,-4,-4.3,0,0,0,0,2,0,1,0, ldraw_lib__1_4chrd(realsolid)],
 // 4 16 2 7.657 -4 1.5 7.657 -4 1.5 12.4 -4 5.8 10.4 -4
   [4,16,2,7.657,-4,1.5,7.657,-4,1.5,12.4,-4,5.8,10.4,-4],
 // 4 16 2 7.657 -4 5.8 10.4 -4 14.4 10.4 -4 18.804 7.399 -4
@@ -64,7 +65,7 @@ function ldraw_lib__20460pd92() = [
   [3,16,18.755,6.187,-6.187,18.804,7.399,-4,18.546,0,8.75],
 // 0 // Boot
 // 1 0 0 0 0 1 0 0 0 1 0 0 0 1 s\20460s03.dat
-  [1,0,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__20460s03()],
+  [1,0,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__20460s03(realsolid)],
 // 0 // Toes
 // 4 15 19.5 28 -10 19.23 20 -10 1.5 20 -10 1.5 28 -10
   [4,15,19.5,28,-10,19.23,20,-10,1.5,20,-10,1.5,28,-10],
@@ -92,5 +93,5 @@ function ldraw_lib__20460pd92() = [
   [3,15,19.23,20,9.6429,19.23,20,-4,19.5,28,10],
 ];
 module ldraw_lib__20460pd92(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__20460pd92(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__20460pd92(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__20460pd92(line=0.2);

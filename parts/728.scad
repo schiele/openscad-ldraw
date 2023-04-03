@@ -4,7 +4,8 @@ use <../p/stug-8x1.scad>
 use <../p/stug-8x8.scad>
 use <../p/stug4-1x7.scad>
 use <../p/stug4-7x7.scad>
-function ldraw_lib__728() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__728(realsolid=false) = [
 // 0 Plate  8 x 11
 // 0 Name: 728.dat
 // 0 Author: Tore Eriksson [Tore_Eriksson]
@@ -23,17 +24,17 @@ function ldraw_lib__728() = [
 // 
 // 
 // 1 16 -30 4 0 1 0 0 0 -1 0 0 0 1 stug4-7x7.dat
-  [1,16,-30,4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stug4_7x7()],
+  [1,16,-30,4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stug4_7x7(realsolid)],
 // 1 16 50 4 0 0 0 -1 0 -1 0 1 0 0 stug4-1x7.dat
-  [1,16,50,4,0,0,0,-1,0,-1,0,1,0,0, ldraw_lib__stug4_1x7()],
+  [1,16,50,4,0,0,0,-1,0,-1,0,1,0,0, ldraw_lib__stug4_1x7(realsolid)],
 // 1 16 70 4 0 0 0 -1 0 -1 0 1 0 0 stug4-1x7.dat
-  [1,16,70,4,0,0,0,-1,0,-1,0,1,0,0, ldraw_lib__stug4_1x7()],
+  [1,16,70,4,0,0,0,-1,0,-1,0,1,0,0, ldraw_lib__stug4_1x7(realsolid)],
 // 1 16 90 4 0 0 0 -1 0 -1 0 1 0 0 stug4-1x7.dat
-  [1,16,90,4,0,0,0,-1,0,-1,0,1,0,0, ldraw_lib__stug4_1x7()],
+  [1,16,90,4,0,0,0,-1,0,-1,0,1,0,0, ldraw_lib__stug4_1x7(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 8 0 106 0 0 0 -4 0 0 0 76 box5.dat
-  [1,16,0,8,0,106,0,0,0,-4,0,0,0,76, ldraw_lib__box5()],
+  [1,16,0,8,0,106,0,0,0,-4,0,0,0,76, ldraw_lib__box5(realsolid)],
 // 4 16 -110 8 80 110 8 80 106 8 76 -106 8 76
   [4,16,-110,8,80,110,8,80,106,8,76,-106,8,76],
 // 4 16 -106 8 -76 106 8 -76 110 8 -80 -110 8 -80
@@ -43,16 +44,16 @@ function ldraw_lib__728() = [
 // 4 16 106 8 -76 106 8 76 110 8 80 110 8 -80
   [4,16,106,8,-76,106,8,76,110,8,80,110,8,-80],
 // 1 16 0 8 0 110 0 0 0 -8 0 0 0 80 box5.dat
-  [1,16,0,8,0,110,0,0,0,-8,0,0,0,80, ldraw_lib__box5()],
+  [1,16,0,8,0,110,0,0,0,-8,0,0,0,80, ldraw_lib__box5(realsolid)],
 // 1 16 -30 0 0 1 0 0 0 1 0 0 0 1 stug-8x8.dat
-  [1,16,-30,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_8x8()],
+  [1,16,-30,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_8x8(realsolid)],
 // 1 16 60 0 0 1 0 0 0 1 0 0 0 1 stug-8x1.dat
-  [1,16,60,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_8x1()],
+  [1,16,60,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_8x1(realsolid)],
 // 1 16 80 0 0 1 0 0 0 1 0 0 0 1 stug-8x1.dat
-  [1,16,80,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_8x1()],
+  [1,16,80,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_8x1(realsolid)],
 // 1 16 100 0 0 1 0 0 0 1 0 0 0 1 stug-8x1.dat
-  [1,16,100,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_8x1()],
+  [1,16,100,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_8x1(realsolid)],
 ];
 module ldraw_lib__728(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__728(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__728(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__728(line=0.2);

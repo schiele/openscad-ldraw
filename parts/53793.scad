@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <53793c00.scad>
 use <55968.scad>
-function ldraw_lib__53793() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__53793(realsolid=false) = [
 // 0 Electric Mindstorms NXT Touch Sensor (Button Not Pressed)
 // 0 Name: 53793.dat
 // 0 Author: Steve Bliss [sbliss]
@@ -19,10 +20,10 @@ function ldraw_lib__53793() = [
 // 
 // 
 // 1 25 0 -40 -90 1 0 0 0 0 -1 0 1 0 55968.dat
-  [1,25,0,-40,-90,1,0,0,0,0,-1,0,1,0, ldraw_lib__55968()],
+  [1,25,0,-40,-90,1,0,0,0,0,-1,0,1,0, ldraw_lib__55968(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 53793c00.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__53793c00()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__53793c00(realsolid)],
 ];
 module ldraw_lib__53793(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__53793(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__53793(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__53793(line=0.2);

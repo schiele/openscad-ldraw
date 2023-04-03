@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/973pses01.scad>
 use <s/973s01.scad>
-function ldraw_lib__973pre() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__973pre(realsolid=false) = [
 // 0 Minifig Torso with SW Scout Trooper Bluish Grey Pattern
 // 0 Name: 973pre.dat
 // 0 Author: Daniel Goerner [TK-949]
@@ -16,9 +17,9 @@ function ldraw_lib__973pre() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973pses01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973pses01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973pses01(realsolid)],
 // 3 72 -14.41 13.03 -10 -13.1 16.66 -10 -12.81 14.93 -10
   [3,72,-14.41,13.03,-10,-13.1,16.66,-10,-12.81,14.93,-10],
 // 4 72 -2.91 14.93 -10 -12.81 14.93 -10 -13.1 16.66 -10 -1.99 16.66 -10
@@ -115,5 +116,5 @@ function ldraw_lib__973pre() = [
   [3,72,-16.69,30.2,-10,-16.73,30.3,-10,-15.46,30.36,-10],
 ];
 module ldraw_lib__973pre(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__973pre(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__973pre(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__973pre(line=0.2);

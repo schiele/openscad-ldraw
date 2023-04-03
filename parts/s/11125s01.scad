@@ -6,7 +6,8 @@ use <../../p/2-4edge.scad>
 use <../../p/connhole.scad>
 use <11125s02.scad>
 use <11125s03.scad>
-function ldraw_lib__s__11125s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__11125s01(realsolid=false) = [
 // 0 ~Motor Inertia Flywheel  4 x  7 x  1 Housing with 2 Vertical Pegholes and 4 Studs - Half
 // 0 Name: s\11125s01.dat
 // 0 Author: Ingolf Weisheit [stahlwollschaf]
@@ -27,19 +28,19 @@ function ldraw_lib__s__11125s01() = [
 // 0 // not symmetric to xz-plane
 // 
 // 1 16 -20 0 -30 0 0 1 0 1 0 1 0 0 connhole.dat
-  [1,16,-20,0,-30,0,0,1,0,1,0,1,0,0, ldraw_lib__connhole()],
+  [1,16,-20,0,-30,0,0,1,0,1,0,1,0,0, ldraw_lib__connhole(realsolid)],
 // 1 16 -20 -10 -30 9 0 0 0 1 0 0 0 -9 1-4ndis.dat
-  [1,16,-20,-10,-30,9,0,0,0,1,0,0,0,-9, ldraw_lib__1_4ndis()],
+  [1,16,-20,-10,-30,9,0,0,0,1,0,0,0,-9, ldraw_lib__1_4ndis(realsolid)],
 // 
 // 0 // outer surface around peghole
 // 1 16 -20 -10 -30 -9 0 0 0 1 0 0 0 -9 1-4edge.dat
-  [1,16,-20,-10,-30,-9,0,0,0,1,0,0,0,-9, ldraw_lib__1_4edge()],
+  [1,16,-20,-10,-30,-9,0,0,0,1,0,0,0,-9, ldraw_lib__1_4edge(realsolid)],
 // 1 16 -20 10 -30 -9 0 0 0 1 0 0 0 -9 2-4edge.dat
-  [1,16,-20,10,-30,-9,0,0,0,1,0,0,0,-9, ldraw_lib__2_4edge()],
+  [1,16,-20,10,-30,-9,0,0,0,1,0,0,0,-9, ldraw_lib__2_4edge(realsolid)],
 // 1 16 -20 -10 -30 -9 0 0 0 20 0 0 0 -9 1-4cyli.dat
-  [1,16,-20,-10,-30,-9,0,0,0,20,0,0,0,-9, ldraw_lib__1_4cyli()],
+  [1,16,-20,-10,-30,-9,0,0,0,20,0,0,0,-9, ldraw_lib__1_4cyli(realsolid)],
 // 1 16 -20 6 -30 0 0 9 0 4 0 -9 0 0 1-4cyli.dat
-  [1,16,-20,6,-30,0,0,9,0,4,0,-9,0,0, ldraw_lib__1_4cyli()],
+  [1,16,-20,6,-30,0,0,9,0,4,0,-9,0,0, ldraw_lib__1_4cyli(realsolid)],
 // 
 // 2 24 -20 6 -39 -16.5557 6 -38.3151
   [2,24,-20,6,-39,-16.5557,6,-38.3151],
@@ -128,17 +129,17 @@ function ldraw_lib__s__11125s01() = [
 // 
 // 0 // s02: symmetric to xz-plane
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\11125s02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__11125s02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__11125s02(realsolid)],
 // 1 16 0 0 0 1 0 0 0 -1 0 0 0 1 s\11125s02.dat
-  [1,16,0,0,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__s__11125s02()],
+  [1,16,0,0,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__s__11125s02(realsolid)],
 // 
 // 0 // s03: symmetric to xy-plane
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\11125s03.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__11125s03()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__11125s03(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 -1 s\11125s03.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__11125s03()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__11125s03(realsolid)],
 // 
 ];
 module ldraw_lib__s__11125s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__11125s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__11125s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__11125s01(line=0.2);

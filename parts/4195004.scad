@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <3048.scad>
-function ldraw_lib__4195004() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4195004(realsolid=false) = [
 // 0 ~_Slope Brick 45  1 x  2 Triple Red (Obsolete)
 // 0 Name: 4195004.dat
 // 0 Author: [PTadmin]
@@ -20,8 +21,8 @@ function ldraw_lib__4195004() = [
 // 0 // colouring of the part (Red).
 // 
 // 1 4 0 0 0 1 0 0 0 1 0 0 0 1 3048.dat
-  [1,4,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3048()],
+  [1,4,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3048(realsolid)],
 ];
 module ldraw_lib__4195004(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4195004(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4195004(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4195004(line=0.2);

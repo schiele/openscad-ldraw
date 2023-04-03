@@ -3,7 +3,8 @@ use <../p/rect2p.scad>
 use <s/46882s01.scad>
 use <s/46882s02.scad>
 use <s/46882s03.scad>
-function ldraw_lib__46882() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__46882(realsolid=false) = [
 // 0 Technic Panel 15 x  2 x  7 Mudguard with Trapezoidal Arch
 // 0 Name: 46882.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -22,21 +23,21 @@ function ldraw_lib__46882() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\46882s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__46882s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__46882s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 -1 s\46882s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__46882s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__46882s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\46882s02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__46882s02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__46882s02(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 -1 s\46882s02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__46882s02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__46882s02(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\46882s03.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__46882s03()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__46882s03(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 -1 s\46882s03.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__46882s03()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__46882s03(realsolid)],
 // 1 16 6 -90 0 0 0 6 0 1 0 -80 0 0 rect2p.dat
-  [1,16,6,-90,0,0,0,6,0,1,0,-80,0,0, ldraw_lib__rect2p()],
+  [1,16,6,-90,0,0,0,6,0,1,0,-80,0,0, ldraw_lib__rect2p(realsolid)],
 // 1 16 5.75 -86.3639 0 0 0 -5.75 0 -1 0 -73.6361 0 0 rect2p.dat
-  [1,16,5.75,-86.3639,0,0,0,-5.75,0,-1,0,-73.6361,0,0, ldraw_lib__rect2p()],
+  [1,16,5.75,-86.3639,0,0,0,-5.75,0,-1,0,-73.6361,0,0, ldraw_lib__rect2p(realsolid)],
 // 3 16 11.5 -86.3639 -73.6361 11.5 -86.3639 73.6361 37 -66.4 0
   [3,16,11.5,-86.3639,-73.6361,11.5,-86.3639,73.6361,37,-66.4,0],
 // 4 16 12 -90 -80 14.0416 -88.3151 -76.5557 14.0416 -88.3151 76.5557 12 -90 80
@@ -59,5 +60,5 @@ function ldraw_lib__46882() = [
   [5,24,37,-58.7,0,32,-58.7,0,37,-58.4,-22.5,37,-58.4,22.5],
 ];
 module ldraw_lib__46882(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__46882(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__46882(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__46882(line=0.2);

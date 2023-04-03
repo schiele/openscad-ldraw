@@ -3,7 +3,8 @@ use <865.scad>
 use <u9034.scad>
 use <u9036.scad>
 use <u9037.scad>
-function ldraw_lib__73697c00() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__73697c00(realsolid=false) = [
 // 0 ~Train Track 12V Slotted Point Right Base (Branching)
 // 0 Name: 73697c00.dat
 // 0 Author: Steffen [Steffen]
@@ -24,14 +25,14 @@ function ldraw_lib__73697c00() = [
 // 0 // position of the actuator adjusted accordingly.
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 865.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__865()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__865(realsolid)],
 // 1 8 0 16 0 0 0 1 0 1 0 -1 0 0 u9034.dat
-  [1,8,0,16,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__u9034()],
+  [1,8,0,16,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__u9034(realsolid)],
 // 1 8 -180 16 -180 1 0 0 0 1 0 0 0 1 u9036.dat
-  [1,8,-180,16,-180,1,0,0,0,1,0,0,0,1, ldraw_lib__u9036()],
+  [1,8,-180,16,-180,1,0,0,0,1,0,0,0,1, ldraw_lib__u9036(realsolid)],
 // 1 0 -248.6 16 -183 -1 0 0 0 1 0 0 0 1 u9037.dat
-  [1,0,-248.6,16,-183,-1,0,0,0,1,0,0,0,1, ldraw_lib__u9037()],
+  [1,0,-248.6,16,-183,-1,0,0,0,1,0,0,0,1, ldraw_lib__u9037(realsolid)],
 ];
 module ldraw_lib__73697c00(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__73697c00(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__73697c00(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__73697c00(line=0.2);

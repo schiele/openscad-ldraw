@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/22385s01.scad>
-function ldraw_lib__22385px2() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__22385px2(realsolid=false) = [
 // 0 Tile  3 x  2 with Angled End with Dark Bluish Grey "VMVII", Bat and Helmet Pattern
 // 0 Name: 22385px2.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -17,7 +18,7 @@ function ldraw_lib__22385px2() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\22385s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__22385s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__22385s01(realsolid)],
 // 
 // 4 72 -12.45 0 5.6 -12.6 0 6.9 -13.1 0 6.7 -13.45 0 6.35
   [4,72,-12.45,0,5.6,-12.6,0,6.9,-13.1,0,6.7,-13.45,0,6.35],
@@ -3061,5 +3062,5 @@ function ldraw_lib__22385px2() = [
   [4,16,3.95,0,-11.8,4.5,0,-12.35,5.05,0,-11.75,4.45,0,-11.75],
 ];
 module ldraw_lib__22385px2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__22385px2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__22385px2(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__22385px2(line=0.2);

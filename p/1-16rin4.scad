@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__1_16rin4() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__1_16rin4(realsolid=false) = [
 // 0 Ring  4 x 0.0625
 // 0 Name: 1-16rin4.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -18,5 +19,5 @@ function ldraw_lib__1_16rin4() = [
 // 0 // Build by Primitive Generator 2
 ];
 module ldraw_lib__1_16rin4(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__1_16rin4(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__1_16rin4(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__1_16rin4(line=0.2);

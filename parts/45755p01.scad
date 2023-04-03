@@ -2,7 +2,8 @@ use <../lib.scad>
 use <s/45755s01.scad>
 use <s/45755s02.scad>
 use <../p/stud4.scad>
-function ldraw_lib__45755p01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__45755p01(realsolid=false) = [
 // 0 Minifig Headdress Circular Slice 60 Degrees with Green and White Rind and Black Watermelon Seeds Pattern
 // 0 Name: 45755p01.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -21,12 +22,12 @@ function ldraw_lib__45755p01() = [
 // 
 // 
 // 1 16 0 -6 0 1 0 0 0 -1.5 0 0 0 1 stud4.dat
-  [1,16,0,-6,0,1,0,0,0,-1.5,0,0,0,1, ldraw_lib__stud4()],
+  [1,16,0,-6,0,1,0,0,0,-1.5,0,0,0,1, ldraw_lib__stud4(realsolid)],
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\45755s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__45755s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__45755s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\45755s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__45755s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__45755s01(realsolid)],
 // 5 24 0 56 -16.5 0 56 -13 -1.9135 55.6195 -16.5 1.9135 55.6195 -16.5
   [5,24,0,56,-16.5,0,56,-13,-1.9135,55.6195,-16.5,1.9135,55.6195,-16.5],
 // 5 24 0 56 13 0 56 16.5 -1.9135 55.6195 16.5 1.9135 55.6195 16.5
@@ -51,9 +52,9 @@ function ldraw_lib__45755p01() = [
   [5,24,0,56,16.5,0,23,16.5,-4.9604,23.326,16.47,4.9604,23.326,16.47],
 // 
 // 1 2 0 0 0 1 0 0 0 1 0 0 0 1 s\45755s02.dat
-  [1,2,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__45755s02()],
+  [1,2,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__45755s02(realsolid)],
 // 1 2 0 0 0 -1 0 0 0 1 0 0 0 1 s\45755s02.dat
-  [1,2,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__45755s02()],
+  [1,2,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__45755s02(realsolid)],
 // 5 24 0 -16 -16.5 0 -11 -16.5 -10.0505 -15.3413 -16.171 10.0505 -15.3413 -16.171
   [5,24,0,-16,-16.5,0,-11,-16.5,-10.0505,-15.3413,-16.171,10.0505,-15.3413,-16.171],
 // 5 24 0 -16 -16.5 0 -16 16.5 10.0505 -15.3413 16.171 -10.0505 -15.3413 16.171
@@ -1332,5 +1333,5 @@ function ldraw_lib__45755p01() = [
   [3,16,22.1971,7.4264,15.65,21.79112,10.05057,15.71984,21.29833,9.59461,15.73007],
 ];
 module ldraw_lib__45755p01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__45755p01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__45755p01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__45755p01(line=0.2);

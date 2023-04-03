@@ -6,7 +6,8 @@ use <../p/4-4edge.scad>
 use <s/23986s01.scad>
 use <../p/stud2.scad>
 use <../p/stud4a.scad>
-function ldraw_lib__23986() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__23986(realsolid=false) = [
 // 0 Minifig Teapot
 // 0 Name: 23986.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -27,35 +28,35 @@ function ldraw_lib__23986() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\23986s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__23986s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__23986s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 -1 s\23986s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__23986s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__23986s01(realsolid)],
 // 
 // 0 // bottom
 // 1 16 0 4.33 0 6 0 0 0 -1 0 0 0 6 4-4disc.dat
-  [1,16,0,4.33,0,6,0,0,0,-1,0,0,0,6, ldraw_lib__4_4disc()],
+  [1,16,0,4.33,0,6,0,0,0,-1,0,0,0,6, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 4.33 0 6 0 0 0 1 0 0 0 6 4-4edge.dat
-  [1,16,0,4.33,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4edge()],
+  [1,16,0,4.33,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4edge(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 4.33 0 6 0 0 0 14.42 0 0 0 6 4-4cyli.dat
-  [1,16,0,4.33,0,6,0,0,0,14.42,0,0,0,6, ldraw_lib__4_4cyli()],
+  [1,16,0,4.33,0,6,0,0,0,14.42,0,0,0,6, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 18.75 0 1 0 0 0 -1.3125 0 0 0 1 stud4a.dat
-  [1,16,0,18.75,0,1,0,0,0,-1.3125,0,0,0,1, ldraw_lib__stud4a()],
+  [1,16,0,18.75,0,1,0,0,0,-1.3125,0,0,0,1, ldraw_lib__stud4a(realsolid)],
 // 1 16 0 18.75 0 8 0 0 0 1 0 0 0 8 4-4edge.dat
-  [1,16,0,18.75,0,8,0,0,0,1,0,0,0,8, ldraw_lib__4_4edge()],
+  [1,16,0,18.75,0,8,0,0,0,1,0,0,0,8, ldraw_lib__4_4edge(realsolid)],
 // 0 // top
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 stud2.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2(realsolid)],
 // 1 16 0 0 0 8.75 0 0 0 1 0 0 0 8.75 4-4edge.dat
-  [1,16,0,0,0,8.75,0,0,0,1,0,0,0,8.75, ldraw_lib__4_4edge()],
+  [1,16,0,0,0,8.75,0,0,0,1,0,0,0,8.75, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 0 0 8.75 0 0 0 1 0 0 0 8.75 4-4disc.dat
-  [1,16,0,0,0,8.75,0,0,0,1,0,0,0,8.75, ldraw_lib__4_4disc()],
+  [1,16,0,0,0,8.75,0,0,0,1,0,0,0,8.75, ldraw_lib__4_4disc(realsolid)],
 // 0 // spout
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 20 10.65 0 2 0 0 0 -5.2 0 0 0 2 4-4cylc.dat
-  [1,16,20,10.65,0,2,0,0,0,-5.2,0,0,0,2, ldraw_lib__4_4cylc()],
+  [1,16,20,10.65,0,2,0,0,0,-5.2,0,0,0,2, ldraw_lib__4_4cylc(realsolid)],
 // 
 // 5 24 -8 18.75 0 -11.409 16.75 0 -7.3912 18.75 3.0616 -7.3912 18.75 -3.0616
   [5,24,-8,18.75,0,-11.409,16.75,0,-7.3912,18.75,3.0616,-7.3912,18.75,-3.0616],
@@ -101,5 +102,5 @@ function ldraw_lib__23986() = [
   [5,24,14.753,5.741,0,13.178,5.724,0,13.2857,6.6377,2.4394,13.2857,6.6377,-2.4394],
 ];
 module ldraw_lib__23986(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__23986(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__23986(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__23986(line=0.2);

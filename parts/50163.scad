@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <48168.scad>
 use <48452.scad>
-function ldraw_lib__50163() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__50163(realsolid=false) = [
 // 0 ~_Technic Turntable Type 2 (Complete) Black/Dark Stone (Obsolete)
 // 0 Name: 50163.dat
 // 0 Author: Santeri Piippo [arezey]
@@ -18,10 +19,10 @@ function ldraw_lib__50163() = [
 // 
 // 
 // 1 72 0 0 0 1 0 0 0 1 0 0 0 1 48452.dat
-  [1,72,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__48452()],
+  [1,72,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__48452(realsolid)],
 // 1 0 0 0 0 1 0 0 0 1 0 0 0 1 48168.dat
-  [1,0,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__48168()],
+  [1,0,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__48168(realsolid)],
 ];
 module ldraw_lib__50163(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__50163(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__50163(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__50163(line=0.2);

@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/box5.scad>
-function ldraw_lib__s__30296s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__30296s01(realsolid=false) = [
 // 0 ~Arch  2 x 14 x  2.333 - Leg
 // 0 Name: s\30296s01.dat
 // 0 Author: Joseph H. Cardana
@@ -175,11 +176,11 @@ function ldraw_lib__s__30296s01() = [
   [2,24,120,4,11,88,4,11],
 // 
 // 1 16 100 4 -20 4 0 0 0 4 0 0 0 2 box5.dat
-  [1,16,100,4,-20,4,0,0,0,4,0,0,0,2, ldraw_lib__box5()],
+  [1,16,100,4,-20,4,0,0,0,4,0,0,0,2, ldraw_lib__box5(realsolid)],
 // 1 16 100 4 0 4 0 0 0 4 0 0 0 2 box5.dat
-  [1,16,100,4,0,4,0,0,0,4,0,0,0,2, ldraw_lib__box5()],
+  [1,16,100,4,0,4,0,0,0,4,0,0,0,2, ldraw_lib__box5(realsolid)],
 // 1 16 100 4 19 4 0 0 0 4 0 0 0 2 box5.dat
-  [1,16,100,4,19,4,0,0,0,4,0,0,0,2, ldraw_lib__box5()],
+  [1,16,100,4,19,4,0,0,0,4,0,0,0,2, ldraw_lib__box5(realsolid)],
 // 
 // 4 16 140 56 -10 136 56 -6 124 56 -6 120 56 -10
   [4,16,140,56,-10,136,56,-6,124,56,-6,120,56,-10],
@@ -282,5 +283,5 @@ function ldraw_lib__s__30296s01() = [
 // 0
 ];
 module ldraw_lib__s__30296s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__30296s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__30296s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__30296s01(line=0.2);

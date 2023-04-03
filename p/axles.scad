@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__axles() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__axles(realsolid=false) = [
 // 0 Axle Sloped
 // 0 Name: axles.dat
 // 0 Author: Kevin Roach [KROACH]
@@ -110,5 +111,5 @@ function ldraw_lib__axles() = [
   [2,24,5.602,-0.3333,-2,6,-0.5,0],
 ];
 module ldraw_lib__axles(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__axles(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__axles(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__axles(line=0.2);

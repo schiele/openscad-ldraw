@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <3741a.scad>
 use <3742.scad>
-function ldraw_lib__3741ac02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3741ac02(realsolid=false) = [
 // 0 Plant Flower Stem Green with Three Flowers with 6 Petals Centre Downwards
 // 0 Name: 3741ac02.dat
 // 0 Author: Max Martin Richter [MMR1988]
@@ -20,16 +21,16 @@ function ldraw_lib__3741ac02() = [
 // 
 // 
 // 1 2 0 0 0 1 0 0 0 1 0 0 0 1 3741a.dat
-  [1,2,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3741a()],
+  [1,2,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3741a(realsolid)],
 // 
 // 1 16 0 -19.56 15.491 1 0 0 0 -0.96592 0.25882 0 0.258825 0.965919 3742.dat
-  [1,16,0,-19.56,15.491,1,0,0,0,-0.96592,0.25882,0,0.258825,0.965919, ldraw_lib__3742()],
+  [1,16,0,-19.56,15.491,1,0,0,0,-0.96592,0.25882,0,0.258825,0.965919, ldraw_lib__3742(realsolid)],
 // 1 16 -14.536 -24.39 -8.393 -0.5 -0.224145 -0.836511 0 -0.96592 0.25882 0.866036 -0.12941 -0.48296 3742.dat
-  [1,16,-14.536,-24.39,-8.393,-0.5,-0.224145,-0.836511,0,-0.96592,0.25882,0.866036,-0.12941,-0.48296, ldraw_lib__3742()],
+  [1,16,-14.536,-24.39,-8.393,-0.5,-0.224145,-0.836511,0,-0.96592,0.25882,0.866036,-0.12941,-0.48296, ldraw_lib__3742(realsolid)],
 // 1 16 15.657 -29.219 -9.04 -0.5 0.224145 0.836511 0 -0.96592 0.25882 -0.866025 -0.12941 -0.48296 3742.dat
-  [1,16,15.657,-29.219,-9.04,-0.5,0.224145,0.836511,0,-0.96592,0.25882,-0.866025,-0.12941,-0.48296, ldraw_lib__3742()],
+  [1,16,15.657,-29.219,-9.04,-0.5,0.224145,0.836511,0,-0.96592,0.25882,-0.866025,-0.12941,-0.48296, ldraw_lib__3742(realsolid)],
 // 0
 ];
 module ldraw_lib__3741ac02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3741ac02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3741ac02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3741ac02(line=0.2);

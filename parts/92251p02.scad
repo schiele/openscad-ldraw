@@ -5,7 +5,8 @@ use <s/92251s03.scad>
 use <s/92251s04.scad>
 use <s/92252s01.scad>
 use <s/92252s03.scad>
-function ldraw_lib__92251p02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__92251p02(realsolid=false) = [
 // 0 Figure Friends Legs with Cropped Trousers with Dark Pink Flower, Medium Nougat Legs and Bright Pink Sandals Pattern
 // 0 Name: 92251p02.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -24,25 +25,25 @@ function ldraw_lib__92251p02() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\92252s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__92252s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__92252s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\92251s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__92251s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__92251s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\92251s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__92251s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__92251s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\92251s02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__92251s02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__92251s02(realsolid)],
 // 1 84 0 0 0 1 0 0 0 1 0 0 0 1 s\92252s03.dat
-  [1,84,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__92252s03()],
+  [1,84,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__92252s03(realsolid)],
 // 1 84 0 0 0 -1 0 0 0 1 0 0 0 1 s\92252s03.dat
-  [1,84,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__92252s03()],
+  [1,84,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__92252s03(realsolid)],
 // 1 29 0 0 0 1 0 0 0 1 0 0 0 1 s\92251s03.dat
-  [1,29,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__92251s03()],
+  [1,29,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__92251s03(realsolid)],
 // 1 84 0 0 0 1 0 0 0 1 0 0 0 1 s\92251s04.dat
-  [1,84,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__92251s04()],
+  [1,84,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__92251s04(realsolid)],
 // 1 29 0 0 0 -1 0 0 0 1 0 0 0 1 s\92251s03.dat
-  [1,29,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__92251s03()],
+  [1,29,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__92251s03(realsolid)],
 // 1 84 0 0 0 -1 0 0 0 1 0 0 0 1 s\92251s04.dat
-  [1,84,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__92251s04()],
+  [1,84,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__92251s04(realsolid)],
 // 5 24 -11.83 -41.73 0.16 -12.08 -37.86 0.48 -12.2238 -38.8682 2.2742 -11.554 -39.679 -1.208
   [5,24,-11.83,-41.73,0.16,-12.08,-37.86,0.48,-12.2238,-38.8682,2.2742,-11.554,-39.679,-1.208],
 // 5 24 -11.554 -39.679 -1.208 -12.08 -37.86 0.48 -11.83 -41.73 0.16 -12.251 -31.882 0.587
@@ -503,5 +504,5 @@ function ldraw_lib__92251p02() = [
   [3,16,-12.62,-33.09,2.63,-12.4555,-33.18,1.7998,-12.5589,-33.6293,2.3869],
 ];
 module ldraw_lib__92251p02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__92251p02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__92251p02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__92251p02(line=0.2);

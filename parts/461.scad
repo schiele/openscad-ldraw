@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <3688.scad>
-function ldraw_lib__461() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__461(realsolid=false) = [
 // 0 ~Moved to 3688
 // 0 Name: 461.dat
 // 0 Author: [PTadmin]
@@ -17,8 +18,8 @@ function ldraw_lib__461() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 3688.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3688()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3688(realsolid)],
 ];
 module ldraw_lib__461(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__461(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__461(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__461(line=0.2);

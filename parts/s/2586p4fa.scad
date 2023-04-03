@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__2586p4fa() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__2586p4fa(realsolid=false) = [
 // 0 ~Black and Red Bat Pattern
 // 0 Name: s\2586p4fa.dat
 // 0 Author: Chris Dee [cwdee]
@@ -377,5 +378,5 @@ function ldraw_lib__s__2586p4fa() = [
 // 
 ];
 module ldraw_lib__s__2586p4fa(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__2586p4fa(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__2586p4fa(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__2586p4fa(line=0.2);

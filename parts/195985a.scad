@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4ndis.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__195985a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__195985a(realsolid=false) = [
 // 0 Sticker  3.9 x  7.9 with Red Motorcycle on White Background and Blue Border
 // 0 Name: 195985a.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -20,11 +21,11 @@ function ldraw_lib__195985a() = [
 // 
 // 
 // 1 16 0 -0.25 0 79 0 0 0 0.25 0 0 0 39 box5-12.dat
-  [1,16,0,-0.25,0,79,0,0,0,0.25,0,0,0,39, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,79,0,0,0,0.25,0,0,0,39, ldraw_lib__box5_12(realsolid)],
 // 1 0 30 -0.25 1 3 0 0 0 1 0 0 0 3 4-4disc.dat
-  [1,0,30,-0.25,1,3,0,0,0,1,0,0,0,3, ldraw_lib__4_4disc()],
+  [1,0,30,-0.25,1,3,0,0,0,1,0,0,0,3, ldraw_lib__4_4disc(realsolid)],
 // 1 4 30 -0.25 1 3 0 0 0 1 0 0 0 3 4-4ndis.dat
-  [1,4,30,-0.25,1,3,0,0,0,1,0,0,0,3, ldraw_lib__4_4ndis()],
+  [1,4,30,-0.25,1,3,0,0,0,1,0,0,0,3, ldraw_lib__4_4ndis(realsolid)],
 // 4 4 -15 -0.25 32.9 -21.6 -0.25 31 -19.8 -0.25 26.5 -13.1 -0.25 27.7
   [4,4,-15,-0.25,32.9,-21.6,-0.25,31,-19.8,-0.25,26.5,-13.1,-0.25,27.7],
 // 4 4 -13.1 -0.25 32.7 -15 -0.25 32.9 -13.1 -0.25 27.7 -11.8 -0.25 29
@@ -1559,5 +1560,5 @@ function ldraw_lib__195985a() = [
   [3,4,-43.5,-0.25,-6.5,-45.94,-0.25,-6.89,-44.8,-0.25,-9.66],
 ];
 module ldraw_lib__195985a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__195985a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__195985a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__195985a(line=0.2);

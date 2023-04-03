@@ -3,7 +3,8 @@ use <2574a.scad>
 use <2575.scad>
 use <3111.scad>
 use <7039.scad>
-function ldraw_lib__2574c01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2574c01(realsolid=false) = [
 // 0 Motor Pull Back  4 x  9 x  2 with 2 Red Wheels with 4 Studs
 // 0 Name: 2574c01.dat
 // 0 Author: John Van Zwieten [jvan]
@@ -26,18 +27,18 @@ function ldraw_lib__2574c01() = [
 // 
 // 
 // 1 16 0 28 0 1 0 0 0 1 0 0 0 1 2574a.dat
-  [1,16,0,28,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2574a()],
+  [1,16,0,28,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2574a(realsolid)],
 // 1 0 22 34 50 1 0 0 0 1 0 0 0 1 3111.dat
-  [1,0,22,34,50,1,0,0,0,1,0,0,0,1, ldraw_lib__3111()],
+  [1,0,22,34,50,1,0,0,0,1,0,0,0,1, ldraw_lib__3111(realsolid)],
 // 1 0 -22 34 50 1 0 0 0 1 0 0 0 1 3111.dat
-  [1,0,-22,34,50,1,0,0,0,1,0,0,0,1, ldraw_lib__3111()],
+  [1,0,-22,34,50,1,0,0,0,1,0,0,0,1, ldraw_lib__3111(realsolid)],
 // 1 4 -53 34 50 0 0 1 0 1 0 -1 0 0 7039.dat
-  [1,4,-53,34,50,0,0,1,0,1,0,-1,0,0, ldraw_lib__7039()],
+  [1,4,-53,34,50,0,0,1,0,1,0,-1,0,0, ldraw_lib__7039(realsolid)],
 // 1 4 53 34 50 0 0 -1 0 1 0 1 0 0 7039.dat
-  [1,4,53,34,50,0,0,-1,0,1,0,1,0,0, ldraw_lib__7039()],
+  [1,4,53,34,50,0,0,-1,0,1,0,1,0,0, ldraw_lib__7039(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 2575.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2575()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2575(realsolid)],
 ];
 module ldraw_lib__2574c01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2574c01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2574c01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2574c01(line=0.2);

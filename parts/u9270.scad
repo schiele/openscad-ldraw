@@ -3,7 +3,8 @@ use <../p/4-4cylc.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4ring2.scad>
 use <../p/axl2hole.scad>
-function ldraw_lib__u9270() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__u9270(realsolid=false) = [
 // 0 ~Electric Motor Unit  6 x 18 x  4 - On Switch Bush
 // 0 Name: u9270.dat
 // 0 Author: Chris Dee [cwdee]
@@ -19,14 +20,14 @@ function ldraw_lib__u9270() = [
 // 
 // 
 // 1 16 0 -6 0 1 0 0 0 16 0 0 0 1 axl2hole.dat
-  [1,16,0,-6,0,1,0,0,0,16,0,0,0,1, ldraw_lib__axl2hole()],
+  [1,16,0,-6,0,1,0,0,0,16,0,0,0,1, ldraw_lib__axl2hole(realsolid)],
 // 1 16 0 -6 0 3 0 0 0 1 0 0 0 3 4-4ring2.dat
-  [1,16,0,-6,0,3,0,0,0,1,0,0,0,3, ldraw_lib__4_4ring2()],
+  [1,16,0,-6,0,3,0,0,0,1,0,0,0,3, ldraw_lib__4_4ring2(realsolid)],
 // 1 16 0 10 0 6 0 0 0 1 0 0 0 6 4-4disc.dat
-  [1,16,0,10,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4disc()],
+  [1,16,0,10,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 14 0 9 0 0 0 -20 0 0 0 9 4-4cylc.dat
-  [1,16,0,14,0,9,0,0,0,-20,0,0,0,9, ldraw_lib__4_4cylc()],
+  [1,16,0,14,0,9,0,0,0,-20,0,0,0,9, ldraw_lib__4_4cylc(realsolid)],
 ];
 module ldraw_lib__u9270(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__u9270(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__u9270(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__u9270(line=0.2);

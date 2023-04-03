@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/4-4ering.scad>
 use <s/98138s01.scad>
-function ldraw_lib__98138p0b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__98138p0b(realsolid=false) = [
 // 0 Tile  1 x  1 Round with Eye Half Closed Pattern
 // 0 Name: 98138p0b.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -16,9 +17,9 @@ function ldraw_lib__98138p0b() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\98138s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01(realsolid)],
 // 1 16 0 0 0 9 0 0 0 1 0 0 0 9 4-4ering.dat
-  [1,16,0,0,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4ering()],
+  [1,16,0,0,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4ering(realsolid)],
 // 4 0 -1.15 0 -1.55 0 0 -1.5 0 0 6.55 -1.15 0 6.4
   [4,0,-1.15,0,-1.55,0,0,-1.5,0,0,6.55,-1.15,0,6.4],
 // 4 0 -1.15 0 -1.55 -1.15 0 6.4 -2.4 0 6 -3.45 0 5.4
@@ -165,5 +166,5 @@ function ldraw_lib__98138p0b() = [
   [3,0,1.15,0,6.4,0.8555,0,3.9945,1.587,0,4.4833],
 ];
 module ldraw_lib__98138p0b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__98138p0b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__98138p0b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__98138p0b(line=0.2);

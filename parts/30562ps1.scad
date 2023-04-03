@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/30562ps1s01.scad>
 use <s/30562s01.scad>
-function ldraw_lib__30562ps1() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__30562ps1(realsolid=false) = [
 // 0 Panel  4 x  4 x  6 Corner Round with SW Escape Pod Pattern
 // 0 Name: 30562ps1.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -18,12 +19,12 @@ function ldraw_lib__30562ps1() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\30562s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30562s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30562s01(realsolid)],
 // 0 // Pattern
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\30562ps1s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30562ps1s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30562ps1s01(realsolid)],
 // 1 16 0 0 0 0 0 -1 0 1 0 -1 0 0 s\30562ps1s01.dat
-  [1,16,0,0,0,0,0,-1,0,1,0,-1,0,0, ldraw_lib__s__30562ps1s01()],
+  [1,16,0,0,0,0,0,-1,0,1,0,-1,0,0, ldraw_lib__s__30562ps1s01(realsolid)],
 // 0 // Conditional lines
 // 5 24 0 140 -80 0 0 -80 -80 140 -80 10.44 140 -79.312
   [5,24,0,140,-80,0,0,-80,-80,140,-80,10.44,140,-79.312],
@@ -53,5 +54,5 @@ function ldraw_lib__30562ps1() = [
   [5,24,80,140,0,80,0,0,79.312,140,-10.44,80,140,80],
 ];
 module ldraw_lib__30562ps1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__30562ps1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__30562ps1(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__30562ps1(line=0.2);

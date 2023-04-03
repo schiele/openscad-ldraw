@@ -2,7 +2,8 @@ use <../../lib.scad>
 use <../../p/4-4disc.scad>
 use <../../p/4-4edge.scad>
 use <../../p/stud2a.scad>
-function ldraw_lib__s__87944s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__87944s02(realsolid=false) = [
 // 0 ~Car Air Blast Receiver Stud
 // 0 Name: s\87944s02.dat
 // 0 Author: Santeri Piippo [arezey]
@@ -17,11 +18,11 @@ function ldraw_lib__s__87944s02() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 stud2a.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2a()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2a(realsolid)],
 // 1 16 0 0 0 4 0 0 0 1 0 0 0 4 4-4edge.dat
-  [1,16,0,0,0,4,0,0,0,1,0,0,0,4, ldraw_lib__4_4edge()],
+  [1,16,0,0,0,4,0,0,0,1,0,0,0,4, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 0 0 4 0 0 0 1 0 0 0 4 4-4disc.dat
-  [1,16,0,0,0,4,0,0,0,1,0,0,0,4, ldraw_lib__4_4disc()],
+  [1,16,0,0,0,4,0,0,0,1,0,0,0,4, ldraw_lib__4_4disc(realsolid)],
 // 4 16 6 0.997 0 5.543 1.088 2.296 5.543 0 2.296 6 0 0
   [4,16,6,0.997,0,5.543,1.088,2.296,5.543,0,2.296,6,0,0],
 // 4 16 5.543 1.088 2.296 4.243 1.347 4.243 4.243 0 4.243 5.543 0 2.296
@@ -153,5 +154,5 @@ function ldraw_lib__s__87944s02() = [
 // 0 //
 ];
 module ldraw_lib__s__87944s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__87944s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__87944s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__87944s02(line=0.2);

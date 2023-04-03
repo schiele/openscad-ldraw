@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/26603s01.scad>
-function ldraw_lib__26603p01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__26603p01(realsolid=false) = [
 // 0 Tile  2 x  3 with Technical Text Tabular on Chalkboard Pattern
 // 0 Name: 26603p01.dat
 // 0 Author: Ulrich Röder [UR]
@@ -22,7 +23,7 @@ function ldraw_lib__26603p01() = [
 // 0 // Main
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\26603s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__26603s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__26603s01(realsolid)],
 // 4 16 19.925 0 -8.125 19.975 0 -8.425 20.275 0 -8.9 20.625 0 -8.225
   [4,16,19.925,0,-8.125,19.975,0,-8.425,20.275,0,-8.9,20.625,0,-8.225],
 // 4 16 -8.146 0 18 -20.875 0 17.3 -20.65 0 16.45 -20.1 0 16.5
@@ -2343,5 +2344,5 @@ function ldraw_lib__26603p01() = [
   [3,16,-22.47,0,-12.57,-21.86,0,-11.13,-22.952,0,-13.17],
 ];
 module ldraw_lib__26603p01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__26603p01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__26603p01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__26603p01(line=0.2);

@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/4-4cyli.scad>
 use <../p/t02q1765.scad>
-function ldraw_lib__85543_f4() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__85543_f4(realsolid=false) = [
 // 0 Rubber Belt Round 15 /  1.6 (Formed for  2 Technic Bushes)
 // 0 Name: 85543-f4.dat
 // 0 Author: Ulrich Röder [UR]
@@ -24,14 +25,14 @@ function ldraw_lib__85543_f4() = [
 // 
 // 
 // 1 16 25 0 0 0 0 8.5 -8.5 0 0 0 -8.5 0 t02q1765.dat
-  [1,16,25,0,0,0,0,8.5,-8.5,0,0,0,-8.5,0, ldraw_lib__t02q1765()],
+  [1,16,25,0,0,0,0,8.5,-8.5,0,0,0,-8.5,0, ldraw_lib__t02q1765(realsolid)],
 // 1 16 -25 0 0 0 0 -8.5 -8.5 0 0 0 -8.5 0 t02q1765.dat
-  [1,16,-25,0,0,0,0,-8.5,-8.5,0,0,0,-8.5,0, ldraw_lib__t02q1765()],
+  [1,16,-25,0,0,0,0,-8.5,-8.5,0,0,0,-8.5,0, ldraw_lib__t02q1765(realsolid)],
 // 1 16 25 -8.5 0 0 -50 0 -1.5 0 0 0 0 -1.5 4-4cyli.dat
-  [1,16,25,-8.5,0,0,-50,0,-1.5,0,0,0,0,-1.5, ldraw_lib__4_4cyli()],
+  [1,16,25,-8.5,0,0,-50,0,-1.5,0,0,0,0,-1.5, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 -25 8.5 0 0 50 0 1.5 0 0 0 0 -1.5 4-4cyli.dat
-  [1,16,-25,8.5,0,0,50,0,1.5,0,0,0,0,-1.5, ldraw_lib__4_4cyli()],
+  [1,16,-25,8.5,0,0,50,0,1.5,0,0,0,0,-1.5, ldraw_lib__4_4cyli(realsolid)],
 ];
 module ldraw_lib__85543_f4(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__85543_f4(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__85543_f4(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__85543_f4(line=0.2);

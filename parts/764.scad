@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/764s01.scad>
-function ldraw_lib__764() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__764(realsolid=false) = [
 // 0 Signpost Cantilever with Suspended Sign
 // 0 Name: 764.dat
 // 0 Author: Chris Dee [cwdee]
@@ -21,7 +22,7 @@ function ldraw_lib__764() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\764s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__764s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__764s01(realsolid)],
 // 0 potentially decorated surfaces
 // 4 16 1 -139 -42 1 -139 -6 1 -111 -6 1 -111 -42
   [4,16,1,-139,-42,1,-139,-6,1,-111,-6,1,-111,-42],
@@ -32,5 +33,5 @@ function ldraw_lib__764() = [
 // 0
 ];
 module ldraw_lib__764(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__764(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__764(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__764(line=0.2);

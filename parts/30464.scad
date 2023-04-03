@@ -5,7 +5,8 @@ use <../p/4-4disc.scad>
 use <../p/4-4edge.scad>
 use <s/30464s01.scad>
 use <../p/stud4a.scad>
-function ldraw_lib__30464() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__30464(realsolid=false) = [
 // 0 Animal Dinosaur Tyrannosaurus Rex Baby
 // 0 Name: 30464.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -22,25 +23,25 @@ function ldraw_lib__30464() = [
 // 
 // 
 // 1 16 0 -5.5 0 1 0 0 0 1 0 0 0 -1 s\30464s01.dat
-  [1,16,0,-5.5,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__30464s01()],
+  [1,16,0,-5.5,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__30464s01(realsolid)],
 // 1 16 0 -5.5 0 -1 0 0 0 1 0 0 0 -1 s\30464s01.dat
-  [1,16,0,-5.5,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__30464s01()],
+  [1,16,0,-5.5,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__30464s01(realsolid)],
 // 1 16 0 -5.5 0 1 0 0 0 -1.375 0 0 0 -1 stud4a.dat
-  [1,16,0,-5.5,0,1,0,0,0,-1.375,0,0,0,-1, ldraw_lib__stud4a()],
+  [1,16,0,-5.5,0,1,0,0,0,-1.375,0,0,0,-1, ldraw_lib__stud4a(realsolid)],
 // 1 16 0 -5.5 0 8 0 0 0 1 0 0 0 8 4-4edge.dat
-  [1,16,0,-5.5,0,8,0,0,0,1,0,0,0,8, ldraw_lib__4_4edge()],
+  [1,16,0,-5.5,0,8,0,0,0,1,0,0,0,8, ldraw_lib__4_4edge(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -5.5 0 6 0 0 0 -20 0 0 0 6 4-4cyli.dat
-  [1,16,0,-5.5,0,6,0,0,0,-20,0,0,0,6, ldraw_lib__4_4cyli()],
+  [1,16,0,-5.5,0,6,0,0,0,-20,0,0,0,6, ldraw_lib__4_4cyli(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -25.5 0 3 0 0 0 -30 0 0 0 3 4-4con1.dat
-  [1,16,0,-25.5,0,3,0,0,0,-30,0,0,0,3, ldraw_lib__4_4con1()],
+  [1,16,0,-25.5,0,3,0,0,0,-30,0,0,0,3, ldraw_lib__4_4con1(realsolid)],
 // 1 16 0 -55.5 0 3 0 0 0 -1 0 0 0 3 4-4edge.dat
-  [1,16,0,-55.5,0,3,0,0,0,-1,0,0,0,3, ldraw_lib__4_4edge()],
+  [1,16,0,-55.5,0,3,0,0,0,-1,0,0,0,3, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 -55.5 0 3 0 0 0 -1 0 0 0 3 4-4disc.dat
-  [1,16,0,-55.5,0,3,0,0,0,-1,0,0,0,3, ldraw_lib__4_4disc()],
+  [1,16,0,-55.5,0,3,0,0,0,-1,0,0,0,3, ldraw_lib__4_4disc(realsolid)],
 // 3 16 10.241 -19.64 -2.881 10.241 -19.77 -1.661 10.241 -20.21 -2.165
   [3,16,10.241,-19.64,-2.881,10.241,-19.77,-1.661,10.241,-20.21,-2.165],
 // 3 16 10.761 -13.32 3.688 11.371 -25.38 4.608 10.931 -15.28 2.153
@@ -1319,5 +1320,5 @@ function ldraw_lib__30464() = [
   [5,24,-11.721,-24.34,-9.092,-11.881,-24.37,-8.653,-11.731,-24.6,-9.031,-11.054,-12.51,-6.993],
 ];
 module ldraw_lib__30464(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__30464(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__30464(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__30464(line=0.2);

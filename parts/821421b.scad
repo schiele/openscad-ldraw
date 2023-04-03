@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
 use <s/logolegos01.scad>
-function ldraw_lib__821421b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__821421b(realsolid=false) = [
 // 0 Sticker  3.4 x  3.8 with Lego Logo (1973-1998)
 // 0 Name: 821421b.dat
 // 0 Author: Ulrich Röder [UR]
@@ -20,9 +21,9 @@ function ldraw_lib__821421b() = [
 // 0 // narrower yellow border
 // 
 // 1 16 0 -0.25 0 38 0 0 0 0.25 0 0 0 -34 box5-12.dat
-  [1,16,0,-0.25,0,38,0,0,0,0.25,0,0,0,-34, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,38,0,0,0,0.25,0,0,0,-34, ldraw_lib__box5_12(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\logolegos01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__logolegos01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__logolegos01(realsolid)],
 // 4 16 38 -.25 34 28 -.25 24 28 -.25 -24 38 -.25 -34
   [4,16,38,-.25,34,28,-.25,24,28,-.25,-24,38,-.25,-34],
 // 4 16 28 -.25 -24 -28 -.25 -24 -38 -.25 -34 38 -.25 -34
@@ -77,5 +78,5 @@ function ldraw_lib__821421b() = [
   [3,4,-27.8,-.25,23.8,-12,-.25,10,-2.5,-.25,10],
 ];
 module ldraw_lib__821421b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__821421b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__821421b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__821421b(line=0.2);

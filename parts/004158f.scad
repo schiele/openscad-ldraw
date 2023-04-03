@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__004158f() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__004158f(realsolid=false) = [
 // 0 Sticker  2.4 x  3 with Italy Flag
 // 0 Name: 004158f.dat
 // 0 Author: Willy Tschager [Holly-Wood]
@@ -28,9 +29,9 @@ function ldraw_lib__004158f() = [
 // 0 // www.holly-wood.it
 // 
 // 1 15 0 -0.25 0 30 0 0 0 0.25 0 0 0 24 box5-12.dat
-  [1,15,0,-0.25,0,30,0,0,0,0.25,0,0,0,24, ldraw_lib__box5_12()],
+  [1,15,0,-0.25,0,30,0,0,0,0.25,0,0,0,24, ldraw_lib__box5_12(realsolid)],
 // 0
 ];
 module ldraw_lib__004158f(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__004158f(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__004158f(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__004158f(line=0.2);

@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__18836p42s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__18836p42s01(realsolid=false) = [
 // 0 ~Minifig Shield Triangular Long with Dark Red Edge with Rivets and Black Bat on Metallic Silver Background Pattern, Half
 // 0 Name: s\18836p42s01.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -1163,5 +1164,5 @@ function ldraw_lib__s__18836p42s01() = [
   [4,80,-12.95,-8.35,-12,-12.79,-8.95,-12,-15.5,-24.15,-12,-15.5,-6.5,-12],
 ];
 module ldraw_lib__s__18836p42s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__18836p42s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__18836p42s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__18836p42s01(line=0.2);

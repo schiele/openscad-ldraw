@@ -4,7 +4,8 @@ use <../p/48/4-4cyli.scad>
 use <../p/48/4-4ring4.scad>
 use <../p/axl2hole.scad>
 use <../p/toothb12.scad>
-function ldraw_lib__32270() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__32270(realsolid=false) = [
 // 0 Technic Gear 12 Tooth Double Bevel
 // 0 Name: 32270.dat
 // 0 Author: Marc Klein [marckl]
@@ -23,41 +24,41 @@ function ldraw_lib__32270() = [
 // 
 // 
 // 1 16 0 10 0 1 0 0 0 1 0 0 0 1 toothb12.dat
-  [1,16,0,10,0,1,0,0,0,1,0,0,0,1, ldraw_lib__toothb12()],
+  [1,16,0,10,0,1,0,0,0,1,0,0,0,1, ldraw_lib__toothb12(realsolid)],
 // 1 16 5 8.66 0 0.866 0.5 0 -0.5 0.866 0 0 0 1 toothb12.dat
-  [1,16,5,8.66,0,0.866,0.5,0,-0.5,0.866,0,0,0,1, ldraw_lib__toothb12()],
+  [1,16,5,8.66,0,0.866,0.5,0,-0.5,0.866,0,0,0,1, ldraw_lib__toothb12(realsolid)],
 // 1 16 8.66 5 0 0.5 0.866 0 -0.866 0.5 0 0 0 1 toothb12.dat
-  [1,16,8.66,5,0,0.5,0.866,0,-0.866,0.5,0,0,0,1, ldraw_lib__toothb12()],
+  [1,16,8.66,5,0,0.5,0.866,0,-0.866,0.5,0,0,0,1, ldraw_lib__toothb12(realsolid)],
 // 1 16 10 0 0 0 1 0 -1 0 0 0 0 1 toothb12.dat
-  [1,16,10,0,0,0,1,0,-1,0,0,0,0,1, ldraw_lib__toothb12()],
+  [1,16,10,0,0,0,1,0,-1,0,0,0,0,1, ldraw_lib__toothb12(realsolid)],
 // 1 16 8.66 -5 0 -0.5 0.866 0 -0.866 -0.5 0 0 0 1 toothb12.dat
-  [1,16,8.66,-5,0,-0.5,0.866,0,-0.866,-0.5,0,0,0,1, ldraw_lib__toothb12()],
+  [1,16,8.66,-5,0,-0.5,0.866,0,-0.866,-0.5,0,0,0,1, ldraw_lib__toothb12(realsolid)],
 // 1 16 5 -8.66 0 -0.866 0.5 0 -0.5 -0.866 0 0 0 1 toothb12.dat
-  [1,16,5,-8.66,0,-0.866,0.5,0,-0.5,-0.866,0,0,0,1, ldraw_lib__toothb12()],
+  [1,16,5,-8.66,0,-0.866,0.5,0,-0.5,-0.866,0,0,0,1, ldraw_lib__toothb12(realsolid)],
 // 1 16 0 -10 0 -1 0 0 0 -1 0 0 0 1 toothb12.dat
-  [1,16,0,-10,0,-1,0,0,0,-1,0,0,0,1, ldraw_lib__toothb12()],
+  [1,16,0,-10,0,-1,0,0,0,-1,0,0,0,1, ldraw_lib__toothb12(realsolid)],
 // 1 16 -5 -8.66 0 -0.866 -0.5 0 0.5 -0.866 0 0 0 1 toothb12.dat
-  [1,16,-5,-8.66,0,-0.866,-0.5,0,0.5,-0.866,0,0,0,1, ldraw_lib__toothb12()],
+  [1,16,-5,-8.66,0,-0.866,-0.5,0,0.5,-0.866,0,0,0,1, ldraw_lib__toothb12(realsolid)],
 // 1 16 -8.66 -5 0 -0.5 -0.866 0 0.866 -0.5 0 0 0 1 toothb12.dat
-  [1,16,-8.66,-5,0,-0.5,-0.866,0,0.866,-0.5,0,0,0,1, ldraw_lib__toothb12()],
+  [1,16,-8.66,-5,0,-0.5,-0.866,0,0.866,-0.5,0,0,0,1, ldraw_lib__toothb12(realsolid)],
 // 1 16 -10 0 0 0 -1 0 1 0 0 0 0 1 toothb12.dat
-  [1,16,-10,0,0,0,-1,0,1,0,0,0,0,1, ldraw_lib__toothb12()],
+  [1,16,-10,0,0,0,-1,0,1,0,0,0,0,1, ldraw_lib__toothb12(realsolid)],
 // 1 16 -8.66 5 0 0.5 -0.866 0 0.866 0.5 0 0 0 1 toothb12.dat
-  [1,16,-8.66,5,0,0.5,-0.866,0,0.866,0.5,0,0,0,1, ldraw_lib__toothb12()],
+  [1,16,-8.66,5,0,0.5,-0.866,0,0.866,0.5,0,0,0,1, ldraw_lib__toothb12(realsolid)],
 // 1 16 -5 8.66 0 0.866 -0.5 0 0.5 0.866 0 0 0 1 toothb12.dat
-  [1,16,-5,8.66,0,0.866,-0.5,0,0.5,0.866,0,0,0,1, ldraw_lib__toothb12()],
+  [1,16,-5,8.66,0,0.866,-0.5,0,0.5,0.866,0,0,0,1, ldraw_lib__toothb12(realsolid)],
 // 1 16 0 0 -10 10 0 0 0 0 10 0 20 0 48\4-4cyli.dat
-  [1,16,0,0,-10,10,0,0,0,0,10,0,20,0, ldraw_lib__48__4_4cyli()],
+  [1,16,0,0,-10,10,0,0,0,0,10,0,20,0, ldraw_lib__48__4_4cyli(realsolid)],
 // 1 16 0 0 10 2 0 0 0 0 2 0 -1 0 48\4-4ring4.dat
-  [1,16,0,0,10,2,0,0,0,0,2,0,-1,0, ldraw_lib__48__4_4ring4()],
+  [1,16,0,0,10,2,0,0,0,0,2,0,-1,0, ldraw_lib__48__4_4ring4(realsolid)],
 // 1 16 0 0 -10 -2 0 0 0 0 2 0 1 0 48\4-4ring4.dat
-  [1,16,0,0,-10,-2,0,0,0,0,2,0,1,0, ldraw_lib__48__4_4ring4()],
+  [1,16,0,0,-10,-2,0,0,0,0,2,0,1,0, ldraw_lib__48__4_4ring4(realsolid)],
 // 1 16 0 0 10 3 0 0 0 0 3 0 -1 0 4-4ring2.dat
-  [1,16,0,0,10,3,0,0,0,0,3,0,-1,0, ldraw_lib__4_4ring2()],
+  [1,16,0,0,10,3,0,0,0,0,3,0,-1,0, ldraw_lib__4_4ring2(realsolid)],
 // 1 16 0 0 -10 -3 0 0 0 0 3 0 1 0 4-4ring2.dat
-  [1,16,0,0,-10,-3,0,0,0,0,3,0,1,0, ldraw_lib__4_4ring2()],
+  [1,16,0,0,-10,-3,0,0,0,0,3,0,1,0, ldraw_lib__4_4ring2(realsolid)],
 // 1 16 0 0 -10 1 0 0 0 0 1 0 20 0 axl2hole.dat
-  [1,16,0,0,-10,1,0,0,0,0,1,0,20,0, ldraw_lib__axl2hole()],
+  [1,16,0,0,-10,1,0,0,0,0,1,0,20,0, ldraw_lib__axl2hole(realsolid)],
 // 2 24 1.3053 9.9144 10 2.5882 9.6592 10
   [2,24,1.3053,9.9144,10,2.5882,9.6592,10],
 // 2 24 2.5882 9.6592 10 3.8268 9.2387 10
@@ -157,5 +158,5 @@ function ldraw_lib__32270() = [
 // 0
 ];
 module ldraw_lib__32270(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__32270(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__32270(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__32270(line=0.2);

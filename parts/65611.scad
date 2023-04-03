@@ -4,7 +4,8 @@ use <../p/4-4cylc.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4edge.scad>
 use <s/65611s01.scad>
-function ldraw_lib__65611() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__65611(realsolid=false) = [
 // 0 Minifig Hand Harpoon
 // 0 Name: 65611.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -23,25 +24,25 @@ function ldraw_lib__65611() = [
 // 0 // Post
 // 
 // 1 16 0 0 13 2.5 0 0 0 0 -2.5 0 -13 0 4-4cylc.dat
-  [1,16,0,0,13,2.5,0,0,0,0,-2.5,0,-13,0, ldraw_lib__4_4cylc()],
+  [1,16,0,0,13,2.5,0,0,0,0,-2.5,0,-13,0, ldraw_lib__4_4cylc(realsolid)],
 // 
 // 0 // Cuff
 // 1 16 0 0 0 4.5 0 0 0 0 4.5 0 -1 0 4-4disc.dat
-  [1,16,0,0,0,4.5,0,0,0,0,4.5,0,-1,0, ldraw_lib__4_4disc()],
+  [1,16,0,0,0,4.5,0,0,0,0,4.5,0,-1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 0 0 4.5 0 0 0 0 4.5 0 -1 0 4-4edge.dat
-  [1,16,0,0,0,4.5,0,0,0,0,4.5,0,-1,0, ldraw_lib__4_4edge()],
+  [1,16,0,0,0,4.5,0,0,0,0,4.5,0,-1,0, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 0 0 .5 0 0 0 0 .5 0 -9 0 4-4con8.dat
-  [1,16,0,0,0,.5,0,0,0,0,.5,0,-9,0, ldraw_lib__4_4con8()],
+  [1,16,0,0,0,.5,0,0,0,0,.5,0,-9,0, ldraw_lib__4_4con8(realsolid)],
 // 1 16 0 0 -9 4 0 0 0 0 4 0 1 0 4-4disc.dat
-  [1,16,0,0,-9,4,0,0,0,0,4,0,1,0, ldraw_lib__4_4disc()],
+  [1,16,0,0,-9,4,0,0,0,0,4,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 0 -9 4 0 0 0 0 4 0 -1 0 4-4edge.dat
-  [1,16,0,0,-9,4,0,0,0,0,4,0,-1,0, ldraw_lib__4_4edge()],
+  [1,16,0,0,-9,4,0,0,0,0,4,0,-1,0, ldraw_lib__4_4edge(realsolid)],
 // 
 // 0 // Hand
 // 1 16 0 -.5 0 1 0 0 0 1 0 0 0 1 s\65611s01.dat
-  [1,16,0,-.5,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__65611s01()],
+  [1,16,0,-.5,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__65611s01(realsolid)],
 // 1 16 0 -.5 0 -1 0 0 0 1 0 0 0 1 s\65611s01.dat
-  [1,16,0,-.5,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__65611s01()],
+  [1,16,0,-.5,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__65611s01(realsolid)],
 // 
 // 0 // Seam
 // 2 24 0 -3.5 -9 0 -3.66 -10.21
@@ -114,5 +115,5 @@ function ldraw_lib__65611() = [
   [2,24,0,-1.9,-24.91,0,-1.55,-24.71],
 ];
 module ldraw_lib__65611(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__65611(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__65611(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__65611(line=0.2);

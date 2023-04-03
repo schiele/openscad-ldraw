@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__18905p01s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__18905p01s01(realsolid=false) = [
 // 0 ~Animal Crocodile  4 x  9 Head - Yellow Eye with White Glint
 // 0 Name: s\18905p01s01.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -316,5 +317,5 @@ function ldraw_lib__s__18905p01s01() = [
 // 0 // 1 16 10.153800152762840397976963451404 -10.705665162575225459789034671058 -28.293048904615290426510383890148 -.62968810539760802403874310681706 -.4223611512720848929771948763321 -.097260999539532321573316957967946 -.23738569603057417127958426534426 .84923406826196102184272876924275 -.28531882754544983774241660856208 -.20310494280387939203074438472468 .31687940166466792489073933310249 .63501508735397565912734175290203 4-4cyli.dat
 ];
 module ldraw_lib__s__18905p01s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__18905p01s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__18905p01s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__18905p01s01(line=0.2);

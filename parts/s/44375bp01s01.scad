@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__44375bp01s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__44375bp01s01(realsolid=false) = [
 // 0 ~Dish  6 x  6 Inverted with Solid Studs with Clock with Roman Numerals Pattern -  1/12
 // 0 Name: s\44375bp01s01.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -357,5 +358,5 @@ function ldraw_lib__s__44375bp01s01() = [
   [4,15,2.6688,6.648887,51.1219,2.4156,6.767194,51.3752,1.062,6.722593,51.3752,0.3813,6.359764,50.6944],
 ];
 module ldraw_lib__s__44375bp01s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__44375bp01s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__44375bp01s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__44375bp01s01(line=0.2);

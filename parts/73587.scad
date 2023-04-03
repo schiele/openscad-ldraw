@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <4592.scad>
 use <4593.scad>
-function ldraw_lib__73587() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__73587(realsolid=false) = [
 // 0 ~_Hinge Control Stick and Base (Complete) Black/Black (Obsolete)
 // 0 Name: 73587.dat
 // 0 Author: Chris Dee [cwdee]
@@ -18,10 +19,10 @@ function ldraw_lib__73587() = [
 // 
 // 
 // 1 0 0 0 0 1 0 0 0 1 0 0 0 1 4592.dat
-  [1,0,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4592()],
+  [1,0,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4592(realsolid)],
 // 1 0 0 0 0 1 0 0 0 0.92388 0.382683 0 -0.382683 0.92388 4593.dat
-  [1,0,0,0,0,1,0,0,0,0.92388,0.382683,0,-0.382683,0.92388, ldraw_lib__4593()],
+  [1,0,0,0,0,1,0,0,0,0.92388,0.382683,0,-0.382683,0.92388, ldraw_lib__4593(realsolid)],
 ];
 module ldraw_lib__73587(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__73587(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__73587(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__73587(line=0.2);

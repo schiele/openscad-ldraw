@@ -3,7 +3,8 @@ use <../p/2-4disc.scad>
 use <../p/2-4ndis.scad>
 use <s/3070batd.scad>
 use <s/3070bs01.scad>
-function ldraw_lib__3070bptd() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3070bptd(realsolid=false) = [
 // 0 Tile  1 x  1 with Silver "D" Pattern
 // 0 Name: 3070bptd.dat
 // 0 Author: Chris Dee [cwdee]
@@ -20,9 +21,9 @@ function ldraw_lib__3070bptd() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3070bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3070bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3070bs01(realsolid)],
 // 1 80 0 0 0 1 0 0 0 1 0 0 0 1 s\3070batd.dat
-  [1,80,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3070batd()],
+  [1,80,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3070batd(realsolid)],
 // 4 16 -6 0 -7.5 -10 0 -10 -10 0 10 -6 0 7.5
   [4,16,-6,0,-7.5,-10,0,-10,-10,0,10,-6,0,7.5],
 // 4 16 -6 0 7.5 -10 0 10 10 0 10 6 0 7.5
@@ -34,11 +35,11 @@ function ldraw_lib__3070bptd() = [
 // 4 16 -4 0 -5.5 -4 0 5.5 0 0 5.5 0 0 -5.5
   [4,16,-4,0,-5.5,-4,0,5.5,0,0,5.5,0,0,-5.5],
 // 1 16 0 0 0 0 0 4 0 1 0 5.5 0 0 2-4disc.dat
-  [1,16,0,0,0,0,0,4,0,1,0,5.5,0,0, ldraw_lib__2_4disc()],
+  [1,16,0,0,0,0,0,4,0,1,0,5.5,0,0, ldraw_lib__2_4disc(realsolid)],
 // 1 16 0 0 0 0 0 6 0 1 0 7.5 0 0 2-4ndis.dat
-  [1,16,0,0,0,0,0,6,0,1,0,7.5,0,0, ldraw_lib__2_4ndis()],
+  [1,16,0,0,0,0,0,6,0,1,0,7.5,0,0, ldraw_lib__2_4ndis(realsolid)],
 // 
 ];
 module ldraw_lib__3070bptd(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3070bptd(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3070bptd(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3070bptd(line=0.2);

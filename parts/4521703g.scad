@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__4521703g() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4521703g(realsolid=false) = [
 // 0 Sticker  0.8 x  1.8 with Black "LE 0158" and Border
 // 0 Name: 4521703g.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -17,7 +18,7 @@ function ldraw_lib__4521703g() = [
 // 
 // 
 // 1 16 0 -0.25 0 17.5 0 0 0 0.25 0 0 0 7.5 box5-12.dat
-  [1,16,0,-0.25,0,17.5,0,0,0,0.25,0,0,0,7.5, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,17.5,0,0,0,0.25,0,0,0,7.5, ldraw_lib__box5_12(realsolid)],
 // 4 0 -15.5 -0.25 -5.5 -15.5 -0.25 5.5 -17.5 -0.25 7.5 -17.5 -0.25 -7.5
   [4,0,-15.5,-0.25,-5.5,-15.5,-0.25,5.5,-17.5,-0.25,7.5,-17.5,-0.25,-7.5],
 // 4 0 15.5 -0.25 5.5 15.5 -0.25 -5.5 17.5 -0.25 -7.5 17.5 -0.25 7.5
@@ -331,5 +332,5 @@ function ldraw_lib__4521703g() = [
   [3,15,11.3473,-0.25,1.5468,11.5927,-0.25,0.9225,12.2345,-0.25,0.68],
 ];
 module ldraw_lib__4521703g(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4521703g(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4521703g(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4521703g(line=0.2);

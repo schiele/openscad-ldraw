@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/48/1-16cyli.scad>
 use <s/15068s01.scad>
-function ldraw_lib__15068pz1() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__15068pz1(realsolid=false) = [
 // 0 Slope Brick Curved  2 x  2 x  0.667 with Metallic Silver and White Hole Pattern
 // 0 Name: 15068pz1.dat
 // 0 Author: Damien Roux [Darats]
@@ -18,9 +19,9 @@ function ldraw_lib__15068pz1() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\15068s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__15068s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__15068s01(realsolid)],
 // 1 16 20 24.972 20 0 -40 0 -40.972 0 0 0 0 -56.568 48\1-16cyli.dat
-  [1,16,20,24.972,20,0,-40,0,-40.972,0,0,0,0,-56.568, ldraw_lib__48__1_16cyli()],
+  [1,16,20,24.972,20,0,-40,0,-40.972,0,0,0,0,-56.568, ldraw_lib__48__1_16cyli(realsolid)],
 // 4 15 -12.447 -11.7637 -4.7764 -12.7813 -11.248 -6.2188 -9.7031 -11.6559 -5.0781 -10.7162 -12.0601 -3.9476
   [4,15,-12.447,-11.7637,-4.7764,-12.7813,-11.248,-6.2188,-9.7031,-11.6559,-5.0781,-10.7162,-12.0601,-3.9476],
 // 3 15 -10.0625 -7.94017 -13.5938 -8.625 -8.27282 -12.9063 -11.4688 -8.40896 -12.625
@@ -138,5 +139,5 @@ function ldraw_lib__15068pz1() = [
   [5,24,20,-10.509886,-8.284,-20,-10.509886,-8.284,20,-12.882685,-1.648,20,-7.531575,-14.436],
 ];
 module ldraw_lib__15068pz1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__15068pz1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__15068pz1(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__15068pz1(line=0.2);

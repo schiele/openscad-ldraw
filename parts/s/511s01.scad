@@ -3,7 +3,8 @@ use <../../p/2-4cyli.scad>
 use <../../p/2-4edge.scad>
 use <../../p/2-4rin14.scad>
 use <../../p/box4-4a.scad>
-function ldraw_lib__s__511s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__511s01(realsolid=false) = [
 // 0 ~Metal Contact for Electric Train Track Contact Base
 // 0 Name: s\511s01.dat
 // 0 Author: Niels Karsdorp [nielsk]
@@ -34,27 +35,27 @@ function ldraw_lib__s__511s01() = [
 // 4 16 -15 4 -5 -15 4 5 -27 4 5 -27 4 -5
   [4,16,-15,4,-5,-15,4,5,-27,4,5,-27,4,-5],
 // 1 16 21 4 0 0 0 6 0 -1 0 5 0 0 box4-4a.dat
-  [1,16,21,4,0,0,0,6,0,-1,0,5,0,0, ldraw_lib__box4_4a()],
+  [1,16,21,4,0,0,0,6,0,-1,0,5,0,0, ldraw_lib__box4_4a(realsolid)],
 // 1 16 -21 4 0 0 0 -6 0 -1 0 5 0 0 box4-4a.dat
-  [1,16,-21,4,0,0,0,-6,0,-1,0,5,0,0, ldraw_lib__box4_4a()],
+  [1,16,-21,4,0,0,0,-6,0,-1,0,5,0,0, ldraw_lib__box4_4a(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 3 -5 14 0 0 0 0 -8.4 0 10 0 2-4cyli.dat
-  [1,16,0,3,-5,14,0,0,0,0,-8.4,0,10,0, ldraw_lib__2_4cyli()],
+  [1,16,0,3,-5,14,0,0,0,0,-8.4,0,10,0, ldraw_lib__2_4cyli(realsolid)],
 // 1 16 0 3 -5 15 0 0 0 0 -9 0 10 0 2-4cyli.dat
-  [1,16,0,3,-5,15,0,0,0,0,-9,0,10,0, ldraw_lib__2_4cyli()],
+  [1,16,0,3,-5,15,0,0,0,0,-9,0,10,0, ldraw_lib__2_4cyli(realsolid)],
 // 1 16 0 3 -5 1 0 0 0 0 -.6 0 1 0 2-4rin14.dat
-  [1,16,0,3,-5,1,0,0,0,0,-.6,0,1,0, ldraw_lib__2_4rin14()],
+  [1,16,0,3,-5,1,0,0,0,0,-.6,0,1,0, ldraw_lib__2_4rin14(realsolid)],
 // 1 16 0 3 5 1 0 0 0 0 -.6 0 -1 0 2-4rin14.dat
-  [1,16,0,3,5,1,0,0,0,0,-.6,0,-1,0, ldraw_lib__2_4rin14()],
+  [1,16,0,3,5,1,0,0,0,0,-.6,0,-1,0, ldraw_lib__2_4rin14(realsolid)],
 // 1 16 0 3 -5 15 0 0 0 0 -9 0 1 0 2-4edge.dat
-  [1,16,0,3,-5,15,0,0,0,0,-9,0,1,0, ldraw_lib__2_4edge()],
+  [1,16,0,3,-5,15,0,0,0,0,-9,0,1,0, ldraw_lib__2_4edge(realsolid)],
 // 1 16 0 3 5 15 0 0 0 0 -9 0 1 0 2-4edge.dat
-  [1,16,0,3,5,15,0,0,0,0,-9,0,1,0, ldraw_lib__2_4edge()],
+  [1,16,0,3,5,15,0,0,0,0,-9,0,1,0, ldraw_lib__2_4edge(realsolid)],
 // 1 16 0 3 -5 14 0 0 0 0 -8.4 0 1 0 2-4edge.dat
-  [1,16,0,3,-5,14,0,0,0,0,-8.4,0,1,0, ldraw_lib__2_4edge()],
+  [1,16,0,3,-5,14,0,0,0,0,-8.4,0,1,0, ldraw_lib__2_4edge(realsolid)],
 // 1 16 0 3 5 14 0 0 0 0 -8.4 0 1 0 2-4edge.dat
-  [1,16,0,3,5,14,0,0,0,0,-8.4,0,1,0, ldraw_lib__2_4edge()],
+  [1,16,0,3,5,14,0,0,0,0,-8.4,0,1,0, ldraw_lib__2_4edge(realsolid)],
 // 2 24 15 3 -5 15 3 5
   [2,24,15,3,-5,15,3,5],
 // 2 24 -15 3 -5 -15 3 5
@@ -78,5 +79,5 @@ function ldraw_lib__s__511s01() = [
 // 0
 ];
 module ldraw_lib__s__511s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__511s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__511s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__511s01(line=0.2);

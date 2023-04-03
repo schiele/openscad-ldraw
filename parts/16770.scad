@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/clip12.scad>
-function ldraw_lib__16770() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__16770(realsolid=false) = [
 // 0 Claw Wide with Clip
 // 0 Name: 16770.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -20,7 +21,7 @@ function ldraw_lib__16770() = [
 // 
 // 
 // 1 16 0 0 0 0 -1 0 -1 0 0 0 0 -1 clip12.dat
-  [1,16,0,0,0,0,-1,0,-1,0,0,0,0,-1, ldraw_lib__clip12()],
+  [1,16,0,0,0,0,-1,0,-1,0,0,0,0,-1, ldraw_lib__clip12(realsolid)],
 // 2 24 3.0317 3.2013 -6.6381 3.0043 4.2266 -6.2319
   [2,24,3.0317,3.2013,-6.6381,3.0043,4.2266,-6.2319],
 // 2 24 3.0043 4.2266 -6.2319 2.987 5.2259 -5.2545
@@ -702,5 +703,5 @@ function ldraw_lib__16770() = [
   [5,24,-3.107,1.603,-8.99,-2.25,1.603,-8.99,-3.262,-1.274,-9.053,-2.953,5.122,-7.57],
 ];
 module ldraw_lib__16770(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__16770(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__16770(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__16770(line=0.2);

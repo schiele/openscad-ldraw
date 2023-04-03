@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/stud4od.scad>
-function ldraw_lib__15675() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__15675(realsolid=false) = [
 // 0 Figure Friends Hair Long with Ponytail French Braided with  3 Pin Holes
 // 0 Name: 15675.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -24,7 +25,7 @@ function ldraw_lib__15675() = [
 // 
 // 
 // 1 16 0 -5.162 0 1 0 0 0 -1.2905 0 0 0 1 stud4od.dat
-  [1,16,0,-5.162,0,1,0,0,0,-1.2905,0,0,0,1, ldraw_lib__stud4od()],
+  [1,16,0,-5.162,0,1,0,0,0,-1.2905,0,0,0,1, ldraw_lib__stud4od(realsolid)],
 // 2 24 1.587 -5.162 3.853 2.245 -5.162 2.266
   [2,24,1.587,-5.162,3.853,2.245,-5.162,2.266],
 // 2 24 0 -5.162 4.511 1.587 -5.162 3.853
@@ -4047,5 +4048,5 @@ function ldraw_lib__15675() = [
   [5,24,0.336,-9.63,-1.405,-1.605,-9.459,0.646,-3.216,-8.627,-1.683,0,-9.5,0.021],
 ];
 module ldraw_lib__15675(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__15675(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__15675(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__15675(line=0.2);

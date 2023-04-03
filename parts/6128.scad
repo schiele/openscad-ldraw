@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <6127.scad>
-function ldraw_lib__6128() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6128(realsolid=false) = [
 // 0 Animal Dragon Arm Left
 // 0 Name: 6128.dat
 // 0 Author: Bernd Broich [bbroich]
@@ -23,9 +24,9 @@ function ldraw_lib__6128() = [
 // 
 // 
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 6127.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__6127()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__6127(realsolid)],
 // 
 ];
 module ldraw_lib__6128(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6128(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6128(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6128(line=0.2);

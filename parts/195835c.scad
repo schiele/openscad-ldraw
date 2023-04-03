@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/48/2-4chrd.scad>
 use <../p/48/2-4cyli.scad>
-function ldraw_lib__195835c() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__195835c(realsolid=false) = [
 // 0 Sticker  1.9 x  4.4 with Fuel Pump Hose and Clamp
 // 0 Name: 195835c.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -896,14 +897,14 @@ function ldraw_lib__195835c() = [
 // 3 16 -34.3 -0.25 4.8 -35.9 -0.25 1.2 -32.8 -0.25 6.5
   [3,16,-34.3,-0.25,4.8,-35.9,-0.25,1.2,-32.8,-0.25,6.5],
 // 1 16 25 0 0 0 0 19 0 -0.25 0 -19 0 0 48\2-4cyli.dat
-  [1,16,25,0,0,0,0,19,0,-0.25,0,-19,0,0, ldraw_lib__48__2_4cyli()],
+  [1,16,25,0,0,0,0,19,0,-0.25,0,-19,0,0, ldraw_lib__48__2_4cyli(realsolid)],
 // 1 16 25 0 0 0 0 19 0 -1 0 -19 0 0 48\2-4chrd.dat
-  [1,16,25,0,0,0,0,19,0,-1,0,-19,0,0, ldraw_lib__48__2_4chrd()],
+  [1,16,25,0,0,0,0,19,0,-1,0,-19,0,0, ldraw_lib__48__2_4chrd(realsolid)],
 // 
 // 1 16 -25 0 0 0 0 -19 0 -0.25 0 -19 0 0 48\2-4cyli.dat
-  [1,16,-25,0,0,0,0,-19,0,-0.25,0,-19,0,0, ldraw_lib__48__2_4cyli()],
+  [1,16,-25,0,0,0,0,-19,0,-0.25,0,-19,0,0, ldraw_lib__48__2_4cyli(realsolid)],
 // 1 16 -25 0 0 0 0 -19 0 -1 0 -19 0 0 48\2-4chrd.dat
-  [1,16,-25,0,0,0,0,-19,0,-1,0,-19,0,0, ldraw_lib__48__2_4chrd()],
+  [1,16,-25,0,0,0,0,-19,0,-1,0,-19,0,0, ldraw_lib__48__2_4chrd(realsolid)],
 // 4 16 25 -0.25 -19 -25 -0.25 -19 -25 0 -19 25 0 -19
   [4,16,25,-0.25,-19,-25,-0.25,-19,-25,0,-19,25,0,-19],
 // 4 16 25 0 -19 -25 0 -19 -25 0 19 25 0 19
@@ -912,5 +913,5 @@ function ldraw_lib__195835c() = [
   [4,16,25,0,19,-25,0,19,-25,-0.25,19,25,-0.25,19],
 ];
 module ldraw_lib__195835c(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__195835c(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__195835c(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__195835c(line=0.2);

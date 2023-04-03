@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/4-4ering.scad>
 use <s/98138s01.scad>
-function ldraw_lib__98138pa3() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__98138pa3(realsolid=false) = [
 // 0 Tile  1 x  1 Round with Cracked Medium Blue and White Lightning Burst from Centre Pattern
 // 0 Name: 98138pa3.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -18,9 +19,9 @@ function ldraw_lib__98138pa3() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\98138s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01(realsolid)],
 // 1 16 0 0 0 9 0 0 0 1 0 0 0 9 4-4ering.dat
-  [1,16,0,0,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4ering()],
+  [1,16,0,0,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4ering(realsolid)],
 // 4 73 -6.37 0 -0.62 -6.03 0 -1.18 -5.7 0 -0.95 -5.44 0 0.05
   [4,73,-6.37,0,-0.62,-6.03,0,-1.18,-5.7,0,-0.95,-5.44,0,0.05],
 // 4 73 -3.31 0 -1.57 -5.44 0 0.05 -5.7 0 -0.95 -3.47 0 -2.6
@@ -351,5 +352,5 @@ function ldraw_lib__98138pa3() = [
   [3,15,6.71,0,-.38,6.93,0,.95,6.54,0,.05],
 ];
 module ldraw_lib__98138pa3(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__98138pa3(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__98138pa3(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__98138pa3(line=0.2);

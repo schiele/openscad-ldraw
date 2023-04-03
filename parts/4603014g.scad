@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__4603014g() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4603014g(realsolid=false) = [
 // 0 Sticker  2.9 x  3.9 with "Café" and Red Cup and Saucer
 // 0 Name: 4603014g.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -17,7 +18,7 @@ function ldraw_lib__4603014g() = [
 // 
 // 
 // 1 16 0 -0.25 0 39 0 0 0 0.25 0 0 0 29 box5-12.dat
-  [1,16,0,-0.25,0,39,0,0,0,0.25,0,0,0,29, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,39,0,0,0,0.25,0,0,0,29, ldraw_lib__box5_12(realsolid)],
 // 4 4 -22.3 -0.25 10.5 -24.2 -0.25 9 -23.4 -0.25 8 -22.1 -0.25 7.7
   [4,4,-22.3,-0.25,10.5,-24.2,-0.25,9,-23.4,-0.25,8,-22.1,-0.25,7.7],
 // 4 4 -22.3 -0.25 10.5 -22.1 -0.25 7.7 -20.7 -0.25 8.4 -21.2 -0.25 11.8
@@ -1558,5 +1559,5 @@ function ldraw_lib__4603014g() = [
   [3,15,28.6,-0.25,-2.2,28.3,-0.25,-3.1,29.4,-0.25,-3.6],
 ];
 module ldraw_lib__4603014g(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4603014g(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4603014g(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4603014g(line=0.2);

@@ -2,7 +2,8 @@ use <../lib.scad>
 use <s/003238s1.scad>
 use <s/003238s2.scad>
 use <s/3238s01.scad>
-function ldraw_lib__003238a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__003238a(realsolid=false) = [
 // 0 Sticker Minifig Shield Triangular with Crown on Dark Pink Background
 // 0 Name: 003238a.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -23,15 +24,15 @@ function ldraw_lib__003238a() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3238s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3238s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3238s01(realsolid)],
 // 1 8 0 -0.25 -10 0.08 0 0 0 1 0 0 0 0.08 s\003238s1.dat
-  [1,8,0,-0.25,-10,0.08,0,0,0,1,0,0,0,0.08, ldraw_lib__s__003238s1()],
+  [1,8,0,-0.25,-10,0.08,0,0,0,1,0,0,0,0.08, ldraw_lib__s__003238s1(realsolid)],
 // 1 5 0 -0.25 -10 0.08 0 0 0 1 0 0 0 0.08 s\003238s2.dat
-  [1,5,0,-0.25,-10,0.08,0,0,0,1,0,0,0,0.08, ldraw_lib__s__003238s2()],
+  [1,5,0,-0.25,-10,0.08,0,0,0,1,0,0,0,0.08, ldraw_lib__s__003238s2(realsolid)],
 // 1 8 0 -0.25 -10 -0.08 0 0 0 1 0 0 0 0.08 s\003238s1.dat
-  [1,8,0,-0.25,-10,-0.08,0,0,0,1,0,0,0,0.08, ldraw_lib__s__003238s1()],
+  [1,8,0,-0.25,-10,-0.08,0,0,0,1,0,0,0,0.08, ldraw_lib__s__003238s1(realsolid)],
 // 1 5 0 -0.25 -10 -0.08 0 0 0 1 0 0 0 0.08 s\003238s2.dat
-  [1,5,0,-0.25,-10,-0.08,0,0,0,1,0,0,0,0.08, ldraw_lib__s__003238s2()],
+  [1,5,0,-0.25,-10,-0.08,0,0,0,1,0,0,0,0.08, ldraw_lib__s__003238s2(realsolid)],
 // 4 5 -11.6 -0.25 6 11.6 -0.25 6 20 -0.25 14 -20 -0.25 14
   [4,5,-11.6,-0.25,6,11.6,-0.25,6,20,-0.25,14,-20,-0.25,14],
 // 4 5 18.72 -0.25 -6.03 20 -0.25 4 20 -0.25 14 11.6 -0.25 6
@@ -50,5 +51,5 @@ function ldraw_lib__003238a() = [
   [3,5,0,-0.25,-32.37,11.6,-0.25,-14.15,-11.6,-0.25,-14.15],
 ];
 module ldraw_lib__003238a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__003238a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__003238a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__003238a(line=0.2);

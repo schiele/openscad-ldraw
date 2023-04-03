@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3622s01.scad>
-function ldraw_lib__3622p07() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3622p07(realsolid=false) = [
 // 0 Brick  1 x  3 with Cat Face, Wide Round Eyes and Open Mouth with Tongue Pattern
 // 0 Name: 3622p07.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -17,7 +18,7 @@ function ldraw_lib__3622p07() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3622s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3622s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3622s01(realsolid)],
 // 
 // 3 5 -28.7639 20.3451 -10 -28.934 21.2 -10 -24.466 21.2 -10
   [3,5,-28.7639,20.3451,-10,-28.934,21.2,-10,-24.466,21.2,-10],
@@ -967,5 +968,5 @@ function ldraw_lib__3622p07() = [
   [3,320,.3,15.2,-10,-.3,15.2,-10,0,18,-10],
 ];
 module ldraw_lib__3622p07(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3622p07(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3622p07(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3622p07(line=0.2);

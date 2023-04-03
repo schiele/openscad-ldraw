@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3069bs01.scad>
-function ldraw_lib__3069b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3069b(realsolid=false) = [
 // 0 Tile  1 x  2 with Groove
 // 0 Name: 3069b.dat
 // 0 Author: Santeri Piippo [arezey]
@@ -17,9 +18,9 @@ function ldraw_lib__3069b() = [
 // 4 16 20 0 -10 20 0 10 -20 0 10 -20 0 -10
   [4,16,20,0,-10,20,0,10,-20,0,10,-20,0,-10],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3069bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3069bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3069bs01(realsolid)],
 // 0 //
 ];
 module ldraw_lib__3069b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3069b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3069b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3069b(line=0.2);

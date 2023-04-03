@@ -3,7 +3,8 @@ use <../p/2-4cyli.scad>
 use <../p/2-4disc.scad>
 use <../p/2-4edge.scad>
 use <../p/2-8sphe.scad>
-function ldraw_lib__4449k01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4449k01(realsolid=false) = [
 // 0 ~Minifig Suitcase Joiner Tab
 // 0 Name: 4449k01.dat
 // 0 Author: Franklin W. Cain [fwcain]
@@ -27,24 +28,24 @@ function ldraw_lib__4449k01() = [
 // 4 16 -9.5 0 -1 9.5 0 -1 9.5 0 1 -9.5 0 1
   [4,16,-9.5,0,-1,9.5,0,-1,9.5,0,1,-9.5,0,1],
 // 1 16 -9.5 0 0 0 0 -0.5 0 1 0 1 0 0 2-4disc.dat
-  [1,16,-9.5,0,0,0,0,-0.5,0,1,0,1,0,0, ldraw_lib__2_4disc()],
+  [1,16,-9.5,0,0,0,0,-0.5,0,1,0,1,0,0, ldraw_lib__2_4disc(realsolid)],
 // 1 16 9.5 0 0 0 0 0.5 0 1 0 1 0 0 2-4disc.dat
-  [1,16,9.5,0,0,0,0,0.5,0,1,0,1,0,0, ldraw_lib__2_4disc()],
+  [1,16,9.5,0,0,0,0,0.5,0,1,0,1,0,0, ldraw_lib__2_4disc(realsolid)],
 // 1 16 -9.5 0 0 0 19 0 0 0 0.5 1 0 0 2-4cyli.dat
-  [1,16,-9.5,0,0,0,19,0,0,0,0.5,1,0,0, ldraw_lib__2_4cyli()],
+  [1,16,-9.5,0,0,0,19,0,0,0,0.5,1,0,0, ldraw_lib__2_4cyli(realsolid)],
 // 1 16 -9.5 0 0 0 -0.5 0 0 0 0.5 1 0 0 2-8sphe.dat
-  [1,16,-9.5,0,0,0,-0.5,0,0,0,0.5,1,0,0, ldraw_lib__2_8sphe()],
+  [1,16,-9.5,0,0,0,-0.5,0,0,0,0.5,1,0,0, ldraw_lib__2_8sphe(realsolid)],
 // 1 16 9.5 0 0 0 0.5 0 0 0 0.5 1 0 0 2-8sphe.dat
-  [1,16,9.5,0,0,0,0.5,0,0,0,0.5,1,0,0, ldraw_lib__2_8sphe()],
+  [1,16,9.5,0,0,0,0.5,0,0,0,0.5,1,0,0, ldraw_lib__2_8sphe(realsolid)],
 // 2 24 -9.5 0 -1 9.5 0 -1
   [2,24,-9.5,0,-1,9.5,0,-1],
 // 2 24 -9.5 0 1 9.5 0 1
   [2,24,-9.5,0,1,9.5,0,1],
 // 1 16 -9.5 0 0 0 0 -0.5 0 1 0 1 0 0 2-4edge.dat
-  [1,16,-9.5,0,0,0,0,-0.5,0,1,0,1,0,0, ldraw_lib__2_4edge()],
+  [1,16,-9.5,0,0,0,0,-0.5,0,1,0,1,0,0, ldraw_lib__2_4edge(realsolid)],
 // 1 16 9.5 0 0 0 0 0.5 0 1 0 1 0 0 2-4edge.dat
-  [1,16,9.5,0,0,0,0,0.5,0,1,0,1,0,0, ldraw_lib__2_4edge()],
+  [1,16,9.5,0,0,0,0,0.5,0,1,0,1,0,0, ldraw_lib__2_4edge(realsolid)],
 ];
 module ldraw_lib__4449k01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4449k01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4449k01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4449k01(line=0.2);

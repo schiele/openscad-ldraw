@@ -5,7 +5,8 @@ use <10127.scad>
 use <10128p01.scad>
 use <10154.scad>
 use <43093.scad>
-function ldraw_lib__10128p01c01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__10128p01c01(realsolid=false) = [
 // 0 Bigfig Figure Hulk with Dark Purple Trousers
 // 0 Name: 10128p01c01.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -22,22 +23,22 @@ function ldraw_lib__10128p01c01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 10128p01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__10128p01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__10128p01(realsolid)],
 // 0 // left arm
 // 1 1 40 -126 0 1 0 0 0 1 0 0 0 1 43093.dat
-  [1,1,40,-126,0,1,0,0,0,1,0,0,0,1, ldraw_lib__43093()],
+  [1,1,40,-126,0,1,0,0,0,1,0,0,0,1, ldraw_lib__43093(realsolid)],
 // 1 16 40 -126 0 1 0 0 0 1 0 0 0 1 10154.dat
-  [1,16,40,-126,0,1,0,0,0,1,0,0,0,1, ldraw_lib__10154()],
+  [1,16,40,-126,0,1,0,0,0,1,0,0,0,1, ldraw_lib__10154(realsolid)],
 // 1 16 70 -86 -40 0.92388 0.382683 0 -0.382683 0.92388 0 0 0 1 10127.dat
-  [1,16,70,-86,-40,0.92388,0.382683,0,-0.382683,0.92388,0,0,0,1, ldraw_lib__10127()],
+  [1,16,70,-86,-40,0.92388,0.382683,0,-0.382683,0.92388,0,0,0,1, ldraw_lib__10127(realsolid)],
 // 0 // right arm
 // 1 1 -40 -126 0 -1 0 0 0 1 0 0 0 -1 43093.dat
-  [1,1,-40,-126,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__43093()],
+  [1,1,-40,-126,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__43093(realsolid)],
 // 1 16 -40 -126 0 1 0 0 0 1 0 0 0 1 10124.dat
-  [1,16,-40,-126,0,1,0,0,0,1,0,0,0,1, ldraw_lib__10124()],
+  [1,16,-40,-126,0,1,0,0,0,1,0,0,0,1, ldraw_lib__10124(realsolid)],
 // 1 16 -70 -86 -40 0.92388 -0.382683 0 0.382683 0.92388 0 0 0 1 10126.dat
-  [1,16,-70,-86,-40,0.92388,-0.382683,0,0.382683,0.92388,0,0,0,1, ldraw_lib__10126()],
+  [1,16,-70,-86,-40,0.92388,-0.382683,0,0.382683,0.92388,0,0,0,1, ldraw_lib__10126(realsolid)],
 ];
 module ldraw_lib__10128p01c01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__10128p01c01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__10128p01c01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__10128p01c01(line=0.2);

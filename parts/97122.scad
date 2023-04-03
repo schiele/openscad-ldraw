@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/rect2p.scad>
 use <s/97122s01.scad>
 use <s/97122s02.scad>
-function ldraw_lib__97122() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__97122(realsolid=false) = [
 // 0 Sheet Fabric Curtain for Window  1 x  4 x  3 with Red/Green/Medium Brown Plaid Pattern
 // 0 Name: 97122.dat
 // 0 Author: Max Martin Richter [MMR1988]
@@ -24,18 +25,18 @@ function ldraw_lib__97122() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\97122s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__97122s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__97122s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\97122s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__97122s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__97122s01(realsolid)],
 // 1 16 0 0.625 0 1 0 0 0 -1 0 0 0 1 s\97122s01.dat
-  [1,16,0,0.625,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__s__97122s01()],
+  [1,16,0,0.625,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__s__97122s01(realsolid)],
 // 1 16 0 0.625 0 -1 0 0 0 -1 0 0 0 1 s\97122s01.dat
-  [1,16,0,0.625,0,-1,0,0,0,-1,0,0,0,1, ldraw_lib__s__97122s01()],
+  [1,16,0,0.625,0,-1,0,0,0,-1,0,0,0,1, ldraw_lib__s__97122s01(realsolid)],
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\97122s02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__97122s02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__97122s02(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\97122s02.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__97122s02()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__97122s02(realsolid)],
 // 
 // 4 4 -2.25 0.625 -18.5 2.25 0.625 -18.5 2.25 0.625 -23 -2.25 0.625 -23
   [4,4,-2.25,0.625,-18.5,2.25,0.625,-18.5,2.25,0.625,-23,-2.25,0.625,-23],
@@ -60,14 +61,14 @@ function ldraw_lib__97122() = [
   [4,16,-2.25,0,-1.5,2.25,0,-1.5,2.25,0,0,-2.25,0,0],
 // 
 // 1 4 0 0.3125 -6 -2.25 0 0 0 0 0.3125 0 1 0 rect2p.dat
-  [1,4,0,0.3125,-6,-2.25,0,0,0,0,0.3125,0,1,0, ldraw_lib__rect2p()],
+  [1,4,0,0.3125,-6,-2.25,0,0,0,0,0.3125,0,1,0, ldraw_lib__rect2p(realsolid)],
 // 1 16 0 0.3125 -25 -2.25 0 0 0 0 0.3125 0 1 0 rect2p.dat
-  [1,16,0,0.3125,-25,-2.25,0,0,0,0,0.3125,0,1,0, ldraw_lib__rect2p()],
+  [1,16,0,0.3125,-25,-2.25,0,0,0,0,0.3125,0,1,0, ldraw_lib__rect2p(realsolid)],
 // 1 16 0 0.3125 -16 2.25 0 0 0 0 0.3125 0 -1 0 rect2p.dat
-  [1,16,0,0.3125,-16,2.25,0,0,0,0,0.3125,0,-1,0, ldraw_lib__rect2p()],
+  [1,16,0,0.3125,-16,2.25,0,0,0,0,0.3125,0,-1,0, ldraw_lib__rect2p(realsolid)],
 // 1 16 0 0.3125 0 2.25 0 0 0 0 0.3125 0 -1 0 rect2p.dat
-  [1,16,0,0.3125,0,2.25,0,0,0,0,0.3125,0,-1,0, ldraw_lib__rect2p()],
+  [1,16,0,0.3125,0,2.25,0,0,0,0,0.3125,0,-1,0, ldraw_lib__rect2p(realsolid)],
 ];
 module ldraw_lib__97122(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__97122(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__97122(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__97122(line=0.2);

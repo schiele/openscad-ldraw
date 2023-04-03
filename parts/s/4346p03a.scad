@@ -2,7 +2,8 @@ use <../../lib.scad>
 use <../../p/1-4disc.scad>
 use <../../p/1-4ndis.scad>
 use <4346p03b.scad>
-function ldraw_lib__s__4346p03a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__4346p03a(realsolid=false) = [
 // 0 ~Pattern Mail with Border Red
 // 0 Name: s\4346p03a.dat
 // 0 Author: Steffen [Steffen]
@@ -18,23 +19,23 @@ function ldraw_lib__s__4346p03a() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4346p03b.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4346p03b()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4346p03b(realsolid)],
 // 1 16 -15.74 0 9.72 -2 0 0 0 1 0 0 0 2 1-4ndis.dat
-  [1,16,-15.74,0,9.72,-2,0,0,0,1,0,0,0,2, ldraw_lib__1_4ndis()],
+  [1,16,-15.74,0,9.72,-2,0,0,0,1,0,0,0,2, ldraw_lib__1_4ndis(realsolid)],
 // 1 16 -15.74 0 -9.72 0 0 -2 0 1 0 -2 0 0 1-4ndis.dat
-  [1,16,-15.74,0,-9.72,0,0,-2,0,1,0,-2,0,0, ldraw_lib__1_4ndis()],
+  [1,16,-15.74,0,-9.72,0,0,-2,0,1,0,-2,0,0, ldraw_lib__1_4ndis(realsolid)],
 // 1 16 15.74 0 -9.72 2 0 0 0 1 0 0 0 -2 1-4ndis.dat
-  [1,16,15.74,0,-9.72,2,0,0,0,1,0,0,0,-2, ldraw_lib__1_4ndis()],
+  [1,16,15.74,0,-9.72,2,0,0,0,1,0,0,0,-2, ldraw_lib__1_4ndis(realsolid)],
 // 1 16 15.74 0 9.72 0 0 2 0 1 0 2 0 0 1-4ndis.dat
-  [1,16,15.74,0,9.72,0,0,2,0,1,0,2,0,0, ldraw_lib__1_4ndis()],
+  [1,16,15.74,0,9.72,0,0,2,0,1,0,2,0,0, ldraw_lib__1_4ndis(realsolid)],
 // 1 4 -15.74 0 9.72 -2 0 0 0 1 0 0 0 2 1-4disc.dat
-  [1,4,-15.74,0,9.72,-2,0,0,0,1,0,0,0,2, ldraw_lib__1_4disc()],
+  [1,4,-15.74,0,9.72,-2,0,0,0,1,0,0,0,2, ldraw_lib__1_4disc(realsolid)],
 // 1 4 -15.74 0 -9.72 0 0 -2 0 1 0 -2 0 0 1-4disc.dat
-  [1,4,-15.74,0,-9.72,0,0,-2,0,1,0,-2,0,0, ldraw_lib__1_4disc()],
+  [1,4,-15.74,0,-9.72,0,0,-2,0,1,0,-2,0,0, ldraw_lib__1_4disc(realsolid)],
 // 1 4 15.74 0 -9.72 2 0 0 0 1 0 0 0 -2 1-4disc.dat
-  [1,4,15.74,0,-9.72,2,0,0,0,1,0,0,0,-2, ldraw_lib__1_4disc()],
+  [1,4,15.74,0,-9.72,2,0,0,0,1,0,0,0,-2, ldraw_lib__1_4disc(realsolid)],
 // 1 4 15.74 0 9.72 0 0 2 0 1 0 2 0 0 1-4disc.dat
-  [1,4,15.74,0,9.72,0,0,2,0,1,0,2,0,0, ldraw_lib__1_4disc()],
+  [1,4,15.74,0,9.72,0,0,2,0,1,0,2,0,0, ldraw_lib__1_4disc(realsolid)],
 // 4 4 -15.74 0 11.72 -15.74 0 9.72 15.74 0 9.72 15.74 0 11.72
   [4,4,-15.74,0,11.72,-15.74,0,9.72,15.74,0,9.72,15.74,0,11.72],
 // 4 4 -15.74 0 9.72 -12.42 0 9 12.42 0 9 15.74 0 9.72
@@ -53,5 +54,5 @@ function ldraw_lib__s__4346p03a() = [
   [4,4,-15.74,0,-9.72,-15.74,0,9.72,-17.74,0,9.72,-17.74,0,-9.72],
 ];
 module ldraw_lib__s__4346p03a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__4346p03a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__4346p03a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__4346p03a(line=0.2);

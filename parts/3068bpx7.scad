@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3068bs01.scad>
-function ldraw_lib__3068bpx7() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3068bpx7(realsolid=false) = [
 // 0 Tile  2 x  2 with "The ITCHY & SCRATCHY Show" Pattern
 // 0 Name: 3068bpx7.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -17,7 +18,7 @@ function ldraw_lib__3068bpx7() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3068bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3068bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3068bs01(realsolid)],
 // 
 // 4 0 -15.65 0 -7.9 -16 0 -7.05 -16.75 0 -6.8 -16.85 0 -7.6
   [4,0,-15.65,0,-7.9,-16,0,-7.05,-16.75,0,-6.8,-16.85,0,-7.6],
@@ -3193,5 +3194,5 @@ function ldraw_lib__3068bpx7() = [
   [3,1,-6.35,0,1.375,-6.825,0,0.875,-6.1,0,1.25],
 ];
 module ldraw_lib__3068bpx7(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3068bpx7(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3068bpx7(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3068bpx7(line=0.2);

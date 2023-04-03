@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <axlehol2.scad>
 use <axlehol9.scad>
-function ldraw_lib__axlecap() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__axlecap(realsolid=false) = [
 // 0 Axle Endcap
 // 0 Name: axlecap.dat
 // 0 Author: Jens Bauer [rockford]
@@ -64,9 +65,9 @@ function ldraw_lib__axlecap() = [
 // 4 16 -1 1 -4.802 -2 0 -5.602 -2 0 -2 -1 1 -1
   [4,16,-1,1,-4.802,-2,0,-5.602,-2,0,-2,-1,1,-1],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 axlehol9.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__axlehol9()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__axlehol9(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 axlehol2.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__axlehol2()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__axlehol2(realsolid)],
 // 2 24 5 1 0 4.802 1 1
   [2,24,5,1,0,4.802,1,1],
 // 2 24 5 1 0 4.802 1 -1
@@ -134,5 +135,5 @@ function ldraw_lib__axlecap() = [
 // 0
 ];
 module ldraw_lib__axlecap(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__axlecap(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__axlecap(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__axlecap(line=0.2);

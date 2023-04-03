@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__48__3_4cyli() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__48__3_4cyli(realsolid=false) = [
 // 0 Hi-Res Cylinder 0.75
 // 0 Name: 48\3-4cyli.dat
 // 0 Author: Guy Vivan [guyvivan]
@@ -166,5 +167,5 @@ function ldraw_lib__48__3_4cyli() = [
 // 
 ];
 module ldraw_lib__48__3_4cyli(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__48__3_4cyli(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__48__3_4cyli(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__48__3_4cyli(line=0.2);

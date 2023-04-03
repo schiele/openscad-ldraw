@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__973p71b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__973p71b(realsolid=false) = [
 // 0 ~Minifig Torso with Bead Necklace - Outline
 // 0 Name: s\973p71b.dat
 // 0 Author: Heather Patey
@@ -1079,5 +1080,5 @@ function ldraw_lib__s__973p71b() = [
   [3,16,2.4,18,0,0.3827,18.4239,0,2.5,22.7,0],
 ];
 module ldraw_lib__s__973p71b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__973p71b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__973p71b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__973p71b(line=0.2);

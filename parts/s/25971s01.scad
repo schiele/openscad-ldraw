@@ -3,7 +3,8 @@ use <../../p/2-4con2.scad>
 use <../../p/2-4cylo.scad>
 use <../../p/2-4rin12.scad>
 use <../../p/5-16cyli.scad>
-function ldraw_lib__s__25971s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__25971s01(realsolid=false) = [
 // 0 ~Minifig Headdress Bird Half without Patternable Areas
 // 0 Name: s\25971s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -20,17 +21,17 @@ function ldraw_lib__s__25971s01() = [
 // 
 // 
 // 1 16 0 -3 0 0 0 8 0 3 0 -8 0 0 2-4cylo.dat
-  [1,16,0,-3,0,0,0,8,0,3,0,-8,0,0, ldraw_lib__2_4cylo()],
+  [1,16,0,-3,0,0,0,8,0,3,0,-8,0,0, ldraw_lib__2_4cylo(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 3 0 0 0 13 0 20.5 0 13 0 0 5-16cyli.dat
-  [1,16,0,3,0,0,0,13,0,20.5,0,13,0,0, ldraw_lib__5_16cyli()],
+  [1,16,0,3,0,0,0,13,0,20.5,0,13,0,0, ldraw_lib__5_16cyli(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 3 0 0 0 4.33333 0 -6 0 4.33333 0 0 2-4con2.dat
-  [1,16,0,3,0,0,0,4.33333,0,-6,0,4.33333,0,0, ldraw_lib__2_4con2()],
+  [1,16,0,3,0,0,0,4.33333,0,-6,0,4.33333,0,0, ldraw_lib__2_4con2(realsolid)],
 // 1 16 0 -3 0 0 0 0.66667 0 -3 0 -0.66667 0 0 2-4rin12.dat
-  [1,16,0,-3,0,0,0,0.66667,0,-3,0,-0.66667,0,0, ldraw_lib__2_4rin12()],
+  [1,16,0,-3,0,0,0,0.66667,0,-3,0,-0.66667,0,0, ldraw_lib__2_4rin12(realsolid)],
 // 
 // 3 16 0 26.501 -13.186 0 18.594 -13.125 3.556 18.513 -12.633
   [3,16,0,26.501,-13.186,0,18.594,-13.125,3.556,18.513,-12.633],
@@ -375,5 +376,5 @@ function ldraw_lib__s__25971s01() = [
   [5,24,2.7015,-6.7945,-9.729,6.333,-7.0335,-7.195,4.1315,-8.097,-6.857,4.403,-5.631,-10.067],
 ];
 module ldraw_lib__s__25971s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__25971s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__25971s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__25971s01(line=0.2);

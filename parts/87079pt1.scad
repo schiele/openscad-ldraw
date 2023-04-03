@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/2-4chrd.scad>
 use <../p/2-4ndis.scad>
 use <s/87079s01.scad>
-function ldraw_lib__87079pt1() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__87079pt1(realsolid=false) = [
 // 0 Tile  2 x  4 with Metallic Gold "BOOKS" Pattern
 // 0 Name: 87079pt1.dat
 // 0 Author: Ulrich Röder [UR]
@@ -21,11 +22,11 @@ function ldraw_lib__87079pt1() = [
 // 0 // Main
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\87079s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__87079s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__87079s01(realsolid)],
 // 1 16 -37.2 0 -12.6 0 0 -.6 0 1 0 .7 0 0 2-4ndis.dat
-  [1,16,-37.2,0,-12.6,0,0,-.6,0,1,0,.7,0,0, ldraw_lib__2_4ndis()],
+  [1,16,-37.2,0,-12.6,0,0,-.6,0,1,0,.7,0,0, ldraw_lib__2_4ndis(realsolid)],
 // 1 16 36.8 0 -12.6 0 0 .6 0 1 0 -.7 0 0 2-4ndis.dat
-  [1,16,36.8,0,-12.6,0,0,.6,0,1,0,-.7,0,0, ldraw_lib__2_4ndis()],
+  [1,16,36.8,0,-12.6,0,0,.6,0,1,0,-.7,0,0, ldraw_lib__2_4ndis(realsolid)],
 // 4 16 -1.01 0 -7.21 1.7 0 -6.69 2.21 0 -6.01 -1.7 0 -6.42
   [4,16,-1.01,0,-7.21,1.7,0,-6.69,2.21,0,-6.01,-1.7,0,-6.42],
 // 4 16 .08 0 -7.83 .54 0 -7.69 1.03 0 -7.32 -.35 0 -7.7
@@ -454,9 +455,9 @@ function ldraw_lib__87079pt1() = [
 // 0 // Metallic Gold
 // 
 // 1 82 36.8 0 -12.6 0 0 .6 0 1 0 -.7 0 0 2-4chrd.dat
-  [1,82,36.8,0,-12.6,0,0,.6,0,1,0,-.7,0,0, ldraw_lib__2_4chrd()],
+  [1,82,36.8,0,-12.6,0,0,.6,0,1,0,-.7,0,0, ldraw_lib__2_4chrd(realsolid)],
 // 1 82 -37.2 0 -12.6 0 0 -.6 0 1 0 .7 0 0 2-4chrd.dat
-  [1,82,-37.2,0,-12.6,0,0,-.6,0,1,0,.7,0,0, ldraw_lib__2_4chrd()],
+  [1,82,-37.2,0,-12.6,0,0,-.6,0,1,0,.7,0,0, ldraw_lib__2_4chrd(realsolid)],
 // 3 82 26.11 0 -12.38 36.8 0 -11.9 26.27 0 -11.9
   [3,82,26.11,0,-12.38,36.8,0,-11.9,26.27,0,-11.9],
 // 4 82 25.89 0 -12.86 36.8 0 -13.3 36.8 0 -11.9 26.11 0 -12.38
@@ -831,5 +832,5 @@ function ldraw_lib__87079pt1() = [
   [3,82,20.55,0,-12.74,-37.2,0,-13.3,21.07,0,-13.3],
 ];
 module ldraw_lib__87079pt1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__87079pt1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__87079pt1(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__87079pt1(line=0.2);

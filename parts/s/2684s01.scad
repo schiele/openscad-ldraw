@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/4-4cylc.scad>
 use <../u9075.scad>
-function ldraw_lib__s__2684s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__2684s01(realsolid=false) = [
 // 0 ~Monorail Motor - Brass Metal Twelve Tooth Gear (Obsolete)
 // 0 Name: s\2684s01.dat
 // 0 Author: [PTadmin]
@@ -18,10 +19,10 @@ function ldraw_lib__s__2684s01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 u9075.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9075()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9075(realsolid)],
 // 1 494 0 -0.5 0 -2.5 0 0 0 -6.5 0 0 0 2.5 4-4cylc.dat
-  [1,494,0,-0.5,0,-2.5,0,0,0,-6.5,0,0,0,2.5, ldraw_lib__4_4cylc()],
+  [1,494,0,-0.5,0,-2.5,0,0,0,-6.5,0,0,0,2.5, ldraw_lib__4_4cylc(realsolid)],
 ];
 module ldraw_lib__s__2684s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__2684s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__2684s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__2684s01(line=0.2);

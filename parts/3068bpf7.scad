@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3068bs01.scad>
-function ldraw_lib__3068bpf7() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3068bpf7(realsolid=false) = [
 // 0 Tile  2 x  2 with Fabuland "3" Orange Pattern
 // 0 Name: 3068bpf7.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -15,7 +16,7 @@ function ldraw_lib__3068bpf7() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3068bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3068bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3068bs01(realsolid)],
 // 4 25 -5.8 0 9.6 -5.1 0 10.7 -7.8 0 11.7 -7.9 0 10.5
   [4,25,-5.8,0,9.6,-5.1,0,10.7,-7.8,0,11.7,-7.9,0,10.5],
 // 4 25 -6.6 0 9.2 -5.8 0 9.6 -7.9 0 10.5 -7.5 0 9.5
@@ -304,5 +305,5 @@ function ldraw_lib__3068bpf7() = [
   [3,16,-20,0,20,-10.1,0,-6.5,-9.5,0,-5.1],
 ];
 module ldraw_lib__3068bpf7(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3068bpf7(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3068bpf7(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3068bpf7(line=0.2);

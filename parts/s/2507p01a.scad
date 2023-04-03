@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__2507p01a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__2507p01a(realsolid=false) = [
 // 0 ~Windscreen 10 x  4 x  2 & 1/3 Canopy - Silver
 // 0 Name: s\2507p01a.dat
 // 0 Author: Steve Bliss [sbliss]
@@ -38,5 +39,5 @@ function ldraw_lib__s__2507p01a() = [
 // 0
 ];
 module ldraw_lib__s__2507p01a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__2507p01a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__2507p01a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__2507p01a(line=0.2);

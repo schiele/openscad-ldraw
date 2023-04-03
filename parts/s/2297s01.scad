@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/1-4cylo.scad>
 use <../../p/1-4ndis.scad>
-function ldraw_lib__s__2297s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__2297s01(realsolid=false) = [
 // 0 ~Duplo Plant Bush Half Shell Half
 // 0 Name: s\2297s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -18,9 +19,9 @@ function ldraw_lib__s__2297s01() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 20 0 0 0 0 16 0 -4 0 -16 0 0 1-4cylo.dat
-  [1,16,20,0,0,0,0,16,0,-4,0,-16,0,0, ldraw_lib__1_4cylo()],
+  [1,16,20,0,0,0,0,16,0,-4,0,-16,0,0, ldraw_lib__1_4cylo(realsolid)],
 // 1 16 20 0 0 0 0 16 0 -1 0 -16 0 0 1-4ndis.dat
-  [1,16,20,0,0,0,0,16,0,-1,0,-16,0,0, ldraw_lib__1_4ndis()],
+  [1,16,20,0,0,0,0,16,0,-1,0,-16,0,0, ldraw_lib__1_4ndis(realsolid)],
 // 4 16 3.732 -55.106 -33.583 0 -55.676 -33.587 0 -51.713 -35.019 6.4615 -52.514 -34.362
   [4,16,3.732,-55.106,-33.583,0,-55.676,-33.587,0,-51.713,-35.019,6.4615,-52.514,-34.362],
 // 3 16 0 -58.557 -31.506 0 -55.676 -33.587 3.732 -55.106 -33.583
@@ -3119,5 +3120,5 @@ function ldraw_lib__s__2297s01() = [
   [5,24,53.055,-18.316,-12.718,45.5757,-14.184,-16.9607,57.082,-18.226,-8.62,49.864,-19.747,-15.521],
 ];
 module ldraw_lib__s__2297s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__2297s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__2297s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__2297s01(line=0.2);

@@ -7,7 +7,8 @@ use <../p/48/4-4ring1.scad>
 use <../p/48/4-4ring2.scad>
 use <../p/48/4-4ring3.scad>
 use <../p/48/4-4ring6.scad>
-function ldraw_lib__6005745a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6005745a(realsolid=false) = [
 // 0 Sticker  5.8 x  5.8 Round with Red/White/DarkBlue Concentric Rings
 // 0 Name: 6005745a.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -26,23 +27,23 @@ function ldraw_lib__6005745a() = [
 // 
 // 
 // 1 16 0 0 0 58 0 0 0 -0.25 0 0 0 58 48\4-4cylc3.dat
-  [1,16,0,0,0,58,0,0,0,-0.25,0,0,0,58, ldraw_lib__48__4_4cylc3()],
+  [1,16,0,0,0,58,0,0,0,-0.25,0,0,0,58, ldraw_lib__48__4_4cylc3(realsolid)],
 // 
 // 1 4 0 -0.25 0 11 0 0 0 1 0 0 0 11 48\4-4disc.dat
-  [1,4,0,-0.25,0,11,0,0,0,1,0,0,0,11, ldraw_lib__48__4_4disc()],
+  [1,4,0,-0.25,0,11,0,0,0,1,0,0,0,11, ldraw_lib__48__4_4disc(realsolid)],
 // 1 15 0 -0.25 0 11 0 0 0 1 0 0 0 11 48\4-4ring1.dat
-  [1,15,0,-0.25,0,11,0,0,0,1,0,0,0,11, ldraw_lib__48__4_4ring1()],
+  [1,15,0,-0.25,0,11,0,0,0,1,0,0,0,11, ldraw_lib__48__4_4ring1(realsolid)],
 // 1 15 0 -0.25 0 11 0 0 0 1 0 0 0 11 48\4-4ring2.dat
-  [1,15,0,-0.25,0,11,0,0,0,1,0,0,0,11, ldraw_lib__48__4_4ring2()],
+  [1,15,0,-0.25,0,11,0,0,0,1,0,0,0,11, ldraw_lib__48__4_4ring2(realsolid)],
 // 1 15 0 -0.25 0 3 0 0 0 1 0 0 0 3 48\4-4rin11.dat
-  [1,15,0,-0.25,0,3,0,0,0,1,0,0,0,3, ldraw_lib__48__4_4rin11()],
+  [1,15,0,-0.25,0,3,0,0,0,1,0,0,0,3, ldraw_lib__48__4_4rin11(realsolid)],
 // 1 1 0 -0.25 0 12 0 0 0 1 0 0 0 12 48\4-4ring3.dat
-  [1,1,0,-0.25,0,12,0,0,0,1,0,0,0,12, ldraw_lib__48__4_4ring3()],
+  [1,1,0,-0.25,0,12,0,0,0,1,0,0,0,12, ldraw_lib__48__4_4ring3(realsolid)],
 // 1 1 0 -0.25 0 8 0 0 0 1 0 0 0 8 48\4-4ring6.dat
-  [1,1,0,-0.25,0,8,0,0,0,1,0,0,0,8, ldraw_lib__48__4_4ring6()],
+  [1,1,0,-0.25,0,8,0,0,0,1,0,0,0,8, ldraw_lib__48__4_4ring6(realsolid)],
 // 1 15 0 -0.25 0 2 0 0 0 1 0 0 0 2 48\4-4rin28.dat
-  [1,15,0,-0.25,0,2,0,0,0,1,0,0,0,2, ldraw_lib__48__4_4rin28()],
+  [1,15,0,-0.25,0,2,0,0,0,1,0,0,0,2, ldraw_lib__48__4_4rin28(realsolid)],
 ];
 module ldraw_lib__6005745a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6005745a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6005745a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6005745a(line=0.2);

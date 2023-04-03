@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3005s01.scad>
-function ldraw_lib__3005pva() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3005pva(realsolid=false) = [
 // 0 Brick  1 x  1 with Lightblue "A" Pattern
 // 0 Name: 3005pva.dat
 // 0 Author: Tore Eriksson [Tore_Eriksson]
@@ -19,7 +20,7 @@ function ldraw_lib__3005pva() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3005s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3005s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3005s01(realsolid)],
 // 
 // 3 9 -2 6 -10 2 6 -10 0 10.2 -10
   [3,9,-2,6,-10,2,6,-10,0,10.2,-10],
@@ -52,5 +53,5 @@ function ldraw_lib__3005pva() = [
 // 0
 ];
 module ldraw_lib__3005pva(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3005pva(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3005pva(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3005pva(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <47154c01.scad>
-function ldraw_lib__44486() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__44486(realsolid=false) = [
 // 0 ~_Electric Technic Motor 9V Geared (480RPM) (Trans-Clear) (Obsolete)
 // 0 Name: 44486.dat
 // 0 Author: Guy Vivan [guyvivan]
@@ -17,8 +18,8 @@ function ldraw_lib__44486() = [
 // 
 // 
 // 1 47 0 0 0 1 0 0 0 1 0 0 0 1 47154c01.dat
-  [1,47,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__47154c01()],
+  [1,47,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__47154c01(realsolid)],
 ];
 module ldraw_lib__44486(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__44486(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__44486(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__44486(line=0.2);

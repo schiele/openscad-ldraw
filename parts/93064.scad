@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/93064s01.scad>
 use <s/93064s02.scad>
-function ldraw_lib__93064() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__93064(realsolid=false) = [
 // 0 Minifig Head Skeleton with Five Spikes
 // 0 Name: 93064.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -18,13 +19,13 @@ function ldraw_lib__93064() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\93064s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__93064s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__93064s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\93064s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__93064s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__93064s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\93064s02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__93064s02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__93064s02(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\93064s02.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__93064s02()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__93064s02(realsolid)],
 // 
 // 0 // left side
 // 0 // skull
@@ -361,5 +362,5 @@ function ldraw_lib__93064() = [
   [5,24,0,13.498,-28.279,0,13.533,-25.855,-3.578,13.637,-27.58,3.578,13.637,-27.58],
 ];
 module ldraw_lib__93064(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__93064(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__93064(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__93064(line=0.2);

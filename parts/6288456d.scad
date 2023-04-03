@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__6288456d() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6288456d(realsolid=false) = [
 // 0 Sticker  0.8 x  1.8 with White "RESERVED" on Black Background
 // 0 Name: 6288456d.dat
 // 0 Author: Vincent Messenet [Cheenzo]
@@ -17,7 +18,7 @@ function ldraw_lib__6288456d() = [
 // 
 // 
 // 1 16 0 -0.25 0 18 0 0 0 0.25 0 0 0 -8 box5-12.dat
-  [1,16,0,-0.25,0,18,0,0,0,0.25,0,0,0,-8, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,18,0,0,0,0.25,0,0,0,-8, ldraw_lib__box5_12(realsolid)],
 // 
 // 4 0 .225 -.25 -3.84 .225 -.25 3.04 -.675 -.25 2 -.9 -.25 .2
   [4,0,.225,-.25,-3.84,.225,-.25,3.04,-.675,-.25,2,-.9,-.25,.2],
@@ -435,5 +436,5 @@ function ldraw_lib__6288456d() = [
   [3,15,7.02,-.25,-3.84,6.21,-.25,-.8,5.4,-.25,-3.84],
 ];
 module ldraw_lib__6288456d(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6288456d(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6288456d(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6288456d(line=0.2);

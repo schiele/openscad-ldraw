@@ -3,7 +3,8 @@ use <../p/1-4cyli.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4ndis.scad>
 use <s/973s01.scad>
-function ldraw_lib__973pxd() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__973pxd(realsolid=false) = [
 // 0 Minifig Torso with Tank Top and  2 Dark Red Dots Pattern
 // 0 Name: 973pxd.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -21,18 +22,18 @@ function ldraw_lib__973pxd() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01(realsolid)],
 // 1 15 0 -4 0 4.243 0 -4.243 0 -8 0 -4.243 0 -4.243 1-4cyli.dat
-  [1,15,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli()],
+  [1,15,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli(realsolid)],
 // 
 // 1 320 3.05 1.5 -10 0.5 0 0 0 0 -0.5 0 1 0 4-4disc.dat
-  [1,320,3.05,1.5,-10,0.5,0,0,0,0,-0.5,0,1,0, ldraw_lib__4_4disc()],
+  [1,320,3.05,1.5,-10,0.5,0,0,0,0,-0.5,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 320 3.1 3.1 -10 0.5 0 0 0 0 -0.5 0 1 0 4-4disc.dat
-  [1,320,3.1,3.1,-10,0.5,0,0,0,0,-0.5,0,1,0, ldraw_lib__4_4disc()],
+  [1,320,3.1,3.1,-10,0.5,0,0,0,0,-0.5,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 15 3.1 3.1 -10 0.5 0 0 0 0 -0.5 0 1 0 4-4ndis.dat
-  [1,15,3.1,3.1,-10,0.5,0,0,0,0,-0.5,0,1,0, ldraw_lib__4_4ndis()],
+  [1,15,3.1,3.1,-10,0.5,0,0,0,0,-0.5,0,1,0, ldraw_lib__4_4ndis(realsolid)],
 // 1 15 3.05 1.5 -10 0.5 0 0 0 0 -0.5 0 1 0 4-4ndis.dat
-  [1,15,3.05,1.5,-10,0.5,0,0,0,0,-0.5,0,1,0, ldraw_lib__4_4ndis()],
+  [1,15,3.05,1.5,-10,0.5,0,0,0,0,-0.5,0,1,0, ldraw_lib__4_4ndis(realsolid)],
 // 4 0 16.6 29.35 -10 17.3 30.3 -10 18 31 -10 18 29 -10
   [4,0,16.6,29.35,-10,17.3,30.3,-10,18,31,-10,18,29,-10],
 // 3 0 15.98 28.3 -10 16.6 29.35 -10 18 29 -10
@@ -367,5 +368,5 @@ function ldraw_lib__973pxd() = [
   [4,16,-8.15,26.1,10,-14.15,19.85,10,-2.65,26.55,10,-5.8,26.45,10],
 ];
 module ldraw_lib__973pxd(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__973pxd(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__973pxd(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__973pxd(line=0.2);

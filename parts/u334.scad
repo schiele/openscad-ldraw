@@ -2,7 +2,8 @@ use <../lib.scad>
 use <u9010.scad>
 use <u9011.scad>
 use <u9012.scad>
-function ldraw_lib__u334() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__u334(realsolid=false) = [
 // 0 Technic Axle Flexible 26 with Axle 4L and Axle 2L on Ends
 // 0 Name: u334.dat
 // 0 Author: Michael Heidemann [mikeheide]
@@ -19,14 +20,14 @@ function ldraw_lib__u334() = [
 // 
 // 
 // 1 8 -25 0 0 1 0 0 0 1 0 0 0 1 u9012.dat
-  [1,8,-25,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9012()],
+  [1,8,-25,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9012(realsolid)],
 // 1 16 -195 0 0 -1 0 0 0 1 0 0 0 -1 u9011.dat
-  [1,16,-195,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__u9011()],
+  [1,16,-195,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__u9011(realsolid)],
 // 1 16 145 0 0 1 0 0 0 -1 0 0 0 -1 u9010.dat
-  [1,16,145,0,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__u9010()],
+  [1,16,145,0,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__u9010(realsolid)],
 // 0 //
 // 0 //
 ];
 module ldraw_lib__u334(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__u334(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__u334(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__u334(line=0.2);

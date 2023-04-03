@@ -8,7 +8,8 @@ use <../p/box3u4a.scad>
 use <../p/bump5000.scad>
 use <s/2400s01.scad>
 use <../p/stud2a.scad>
-function ldraw_lib__2400() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2400(realsolid=false) = [
 // 0 Door  1 x  5 x 10 with 1/4 Circle Top
 // 0 Name: 2400.dat
 // 0 Author: Adam Howard [Whist]
@@ -31,48 +32,48 @@ function ldraw_lib__2400() = [
 // 
 // 
 // 1 16 2 24 80 0 -1 0 1 0 0 0 0 1 stud2a.dat
-  [1,16,2,24,80,0,-1,0,1,0,0,0,0,1, ldraw_lib__stud2a()],
+  [1,16,2,24,80,0,-1,0,1,0,0,0,0,1, ldraw_lib__stud2a(realsolid)],
 // 1 16 -2 24 80 0 1 0 1 0 0 0 0 -1 stud2a.dat
-  [1,16,-2,24,80,0,1,0,1,0,0,0,0,-1, ldraw_lib__stud2a()],
+  [1,16,-2,24,80,0,1,0,1,0,0,0,0,-1, ldraw_lib__stud2a(realsolid)],
 // 
 // 1 16 0 4.5 44.75 2 0 0 0 110.5 0 0 0 44.75 box2-7.dat
-  [1,16,0,4.5,44.75,2,0,0,0,110.5,0,0,0,44.75, ldraw_lib__box2_7()],
+  [1,16,0,4.5,44.75,2,0,0,0,110.5,0,0,0,44.75, ldraw_lib__box2_7(realsolid)],
 // 1 16 0 -106 89.5 2 0 0 0 0 -2 0 -1 0 2-4chrd.dat
-  [1,16,0,-106,89.5,2,0,0,0,0,-2,0,-1,0, ldraw_lib__2_4chrd()],
+  [1,16,0,-106,89.5,2,0,0,0,0,-2,0,-1,0, ldraw_lib__2_4chrd(realsolid)],
 // 1 16 0 -106 89.5 2 0 0 0 0 -2 0 1 0 2-4edge.dat
-  [1,16,0,-106,89.5,2,0,0,0,0,-2,0,1,0, ldraw_lib__2_4edge()],
+  [1,16,0,-106,89.5,2,0,0,0,0,-2,0,1,0, ldraw_lib__2_4edge(realsolid)],
 // 1 16 0 115 0 -2 0 0 0 -1 0 0 0 -2 2-4chrd.dat
-  [1,16,0,115,0,-2,0,0,0,-1,0,0,0,-2, ldraw_lib__2_4chrd()],
+  [1,16,0,115,0,-2,0,0,0,-1,0,0,0,-2, ldraw_lib__2_4chrd(realsolid)],
 // 1 16 0 115 0 2 0 0 0 -65 0 0 0 -2 2-4cylo.dat
-  [1,16,0,115,0,2,0,0,0,-65,0,0,0,-2, ldraw_lib__2_4cylo()],
+  [1,16,0,115,0,2,0,0,0,-65,0,0,0,-2, ldraw_lib__2_4cylo(realsolid)],
 // 1 16 0 50 0 2 0 0 0 1 0 0 0 -2 2-4chrd.dat
-  [1,16,0,50,0,2,0,0,0,1,0,0,0,-2, ldraw_lib__2_4chrd()],
+  [1,16,0,50,0,2,0,0,0,1,0,0,0,-2, ldraw_lib__2_4chrd(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 47 0 -2 0 0 0 0 3 0 5.5 0 box3u4a.dat
-  [1,16,0,47,0,-2,0,0,0,0,3,0,5.5,0, ldraw_lib__box3u4a()],
+  [1,16,0,47,0,-2,0,0,0,0,3,0,5.5,0, ldraw_lib__box3u4a(realsolid)],
 // 1 16 0 44 0 -2 0 0 0 -1 0 0 0 -2 bump5000.dat
-  [1,16,0,44,0,-2,0,0,0,-1,0,0,0,-2, ldraw_lib__bump5000()],
+  [1,16,0,44,0,-2,0,0,0,-1,0,0,0,-2, ldraw_lib__bump5000(realsolid)],
 // 1 16 0 44 0 2 0 0 0 -40 0 0 0 -2 2-4cyli.dat
-  [1,16,0,44,0,2,0,0,0,-40,0,0,0,-2, ldraw_lib__2_4cyli()],
+  [1,16,0,44,0,2,0,0,0,-40,0,0,0,-2, ldraw_lib__2_4cyli(realsolid)],
 // 1 16 0 4 0 -2 0 0 0 1 0 0 0 2 bump5000.dat
-  [1,16,0,4,0,-2,0,0,0,1,0,0,0,2, ldraw_lib__bump5000()],
+  [1,16,0,4,0,-2,0,0,0,1,0,0,0,2, ldraw_lib__bump5000(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 1 0 -2 0 0 0 0 3 0 5.5 0 box3u4a.dat
-  [1,16,0,1,0,-2,0,0,0,0,3,0,5.5,0, ldraw_lib__box3u4a()],
+  [1,16,0,1,0,-2,0,0,0,0,3,0,5.5,0, ldraw_lib__box3u4a(realsolid)],
 // 1 16 0 -2 0 -2 0 0 0 -1 0 0 0 -2 2-4chrd.dat
-  [1,16,0,-2,0,-2,0,0,0,-1,0,0,0,-2, ldraw_lib__2_4chrd()],
+  [1,16,0,-2,0,-2,0,0,0,-1,0,0,0,-2, ldraw_lib__2_4chrd(realsolid)],
 // 1 16 0 -2 0 -2 0 0 0 1 0 0 0 -2 2-4edge.dat
-  [1,16,0,-2,0,-2,0,0,0,1,0,0,0,-2, ldraw_lib__2_4edge()],
+  [1,16,0,-2,0,-2,0,0,0,1,0,0,0,-2, ldraw_lib__2_4edge(realsolid)],
 // 1 16 0 -2 0 2 0 0 0 -14.5 0 0 0 -2 2-4cyli.dat
-  [1,16,0,-2,0,2,0,0,0,-14.5,0,0,0,-2, ldraw_lib__2_4cyli()],
+  [1,16,0,-2,0,2,0,0,0,-14.5,0,0,0,-2, ldraw_lib__2_4cyli(realsolid)],
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2400s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2400s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2400s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\2400s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__2400s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__2400s01(realsolid)],
 ];
 module ldraw_lib__2400(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2400(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2400(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2400(line=0.2);

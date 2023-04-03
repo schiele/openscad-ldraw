@@ -3,7 +3,8 @@ use <../p/2-4cyli.scad>
 use <../p/2-4edge.scad>
 use <../p/2-4ring2.scad>
 use <../p/axlehol4.scad>
-function ldraw_lib__41677() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__41677(realsolid=false) = [
 // 0 Technic Beam  2 x  0.5 Liftarm
 // 0 Name: 41677.dat
 // 0 Author: Orion Pobursky [OrionP]
@@ -22,21 +23,21 @@ function ldraw_lib__41677() = [
 // 
 // 
 // 1 16 0 -5 20 9 0 0 0 10 0 0 0 9 2-4cyli.dat
-  [1,16,0,-5,20,9,0,0,0,10,0,0,0,9, ldraw_lib__2_4cyli()],
+  [1,16,0,-5,20,9,0,0,0,10,0,0,0,9, ldraw_lib__2_4cyli(realsolid)],
 // 1 16 0 -5 0 -9 0 0 0 10 0 0 0 -9 2-4cyli.dat
-  [1,16,0,-5,0,-9,0,0,0,10,0,0,0,-9, ldraw_lib__2_4cyli()],
+  [1,16,0,-5,0,-9,0,0,0,10,0,0,0,-9, ldraw_lib__2_4cyli(realsolid)],
 // 1 16 0 -5 20 -1 0 0 0 10 0 0 0 -1 axlehol4.dat
-  [1,16,0,-5,20,-1,0,0,0,10,0,0,0,-1, ldraw_lib__axlehol4()],
+  [1,16,0,-5,20,-1,0,0,0,10,0,0,0,-1, ldraw_lib__axlehol4(realsolid)],
 // 1 16 0 -5 0 1 0 0 0 10 0 0 0 1 axlehol4.dat
-  [1,16,0,-5,0,1,0,0,0,10,0,0,0,1, ldraw_lib__axlehol4()],
+  [1,16,0,-5,0,1,0,0,0,10,0,0,0,1, ldraw_lib__axlehol4(realsolid)],
 // 1 16 0 -5 20 3 0 0 0 1 0 0 0 3 2-4ring2.dat
-  [1,16,0,-5,20,3,0,0,0,1,0,0,0,3, ldraw_lib__2_4ring2()],
+  [1,16,0,-5,20,3,0,0,0,1,0,0,0,3, ldraw_lib__2_4ring2(realsolid)],
 // 1 16 0 5 20 3 0 0 0 -1 0 0 0 3 2-4ring2.dat
-  [1,16,0,5,20,3,0,0,0,-1,0,0,0,3, ldraw_lib__2_4ring2()],
+  [1,16,0,5,20,3,0,0,0,-1,0,0,0,3, ldraw_lib__2_4ring2(realsolid)],
 // 1 16 0 -5 0 -3 0 0 0 1 0 0 0 -3 2-4ring2.dat
-  [1,16,0,-5,0,-3,0,0,0,1,0,0,0,-3, ldraw_lib__2_4ring2()],
+  [1,16,0,-5,0,-3,0,0,0,1,0,0,0,-3, ldraw_lib__2_4ring2(realsolid)],
 // 1 16 0 5 0 -3 0 0 0 -1 0 0 0 -3 2-4ring2.dat
-  [1,16,0,5,0,-3,0,0,0,-1,0,0,0,-3, ldraw_lib__2_4ring2()],
+  [1,16,0,5,0,-3,0,0,0,-1,0,0,0,-3, ldraw_lib__2_4ring2(realsolid)],
 // 4 16 6 -5 20 6 -5 0 9 -5 0 9 -5 20
   [4,16,6,-5,20,6,-5,0,9,-5,0,9,-5,20],
 // 4 16 6 5 20 9 5 20 9 5 0 6 5 0
@@ -114,13 +115,13 @@ function ldraw_lib__41677() = [
 // 2 24 -9 -5 20 -9 -5 0
   [2,24,-9,-5,20,-9,-5,0],
 // 1 16 0 5 0 -9 0 0 0 1 0 0 0 -9 2-4edge.dat
-  [1,16,0,5,0,-9,0,0,0,1,0,0,0,-9, ldraw_lib__2_4edge()],
+  [1,16,0,5,0,-9,0,0,0,1,0,0,0,-9, ldraw_lib__2_4edge(realsolid)],
 // 1 16 0 -5 0 -9 0 0 0 1 0 0 0 -9 2-4edge.dat
-  [1,16,0,-5,0,-9,0,0,0,1,0,0,0,-9, ldraw_lib__2_4edge()],
+  [1,16,0,-5,0,-9,0,0,0,1,0,0,0,-9, ldraw_lib__2_4edge(realsolid)],
 // 1 16 0 5 20 9 0 0 0 1 0 0 0 9 2-4edge.dat
-  [1,16,0,5,20,9,0,0,0,1,0,0,0,9, ldraw_lib__2_4edge()],
+  [1,16,0,5,20,9,0,0,0,1,0,0,0,9, ldraw_lib__2_4edge(realsolid)],
 // 1 16 0 -5 20 9 0 0 0 1 0 0 0 9 2-4edge.dat
-  [1,16,0,-5,20,9,0,0,0,1,0,0,0,9, ldraw_lib__2_4edge()],
+  [1,16,0,-5,20,9,0,0,0,1,0,0,0,9, ldraw_lib__2_4edge(realsolid)],
 // 3 16 5.543 -5 2.296 6 -5 0 6 -5 6
   [3,16,5.543,-5,2.296,6,-5,0,6,-5,6],
 // 3 16 4.243 -5 4.243 5.543 -5 2.296 6 -5 6
@@ -203,5 +204,5 @@ function ldraw_lib__41677() = [
   [2,24,2,5,14,2,5,14.398],
 ];
 module ldraw_lib__41677(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__41677(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__41677(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__41677(line=0.2);

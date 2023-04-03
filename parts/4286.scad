@@ -4,7 +4,8 @@ use <../p/4-4edge.scad>
 use <../p/box5.scad>
 use <../p/stud.scad>
 use <../p/stud3a.scad>
-function ldraw_lib__4286() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4286(realsolid=false) = [
 // 0 Slope Brick 33  3 x  1
 // 0 Name: 4286.dat
 // 0 Author: James Jessiman
@@ -23,16 +24,16 @@ function ldraw_lib__4286() = [
 // 
 // 
 // 1 16 0 20 -30 -1 0 0 0 -1 0 0 0 1 stud3a.dat
-  [1,16,0,20,-30,-1,0,0,0,-1,0,0,0,1, ldraw_lib__stud3a()],
+  [1,16,0,20,-30,-1,0,0,0,-1,0,0,0,1, ldraw_lib__stud3a(realsolid)],
 // 1 16 0 14 -30 4 0 0 0 0.894 2 0 0.447 -4 4-4edge.dat
-  [1,16,0,14,-30,4,0,0,0,0.894,2,0,0.447,-4, ldraw_lib__4_4edge()],
+  [1,16,0,14,-30,4,0,0,0,0.894,2,0,0.447,-4, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 14 -30 4 0 0 0 8 2 0 0 -4 4-4cyli.dat
-  [1,16,0,14,-30,4,0,0,0,8,2,0,0,-4, ldraw_lib__4_4cyli()],
+  [1,16,0,14,-30,4,0,0,0,8,2,0,0,-4, ldraw_lib__4_4cyli(realsolid)],
 // 
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 24 0 -6 0 0 0 -20 0 0 0 6 box5.dat
-  [1,16,0,24,0,-6,0,0,0,-20,0,0,0,6, ldraw_lib__box5()],
+  [1,16,0,24,0,-6,0,0,0,-20,0,0,0,6, ldraw_lib__box5(realsolid)],
 // 
 // 2 24 6 24 -10 2 24 -10
   [2,24,6,24,-10,2,24,-10],
@@ -175,9 +176,9 @@ function ldraw_lib__4286() = [
   [4,16,10,20,-50,10,0,-10,-10,0,-10,-10,20,-50],
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 stud.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud(realsolid)],
 // 0
 ];
 module ldraw_lib__4286(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4286(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4286(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4286(line=0.2);

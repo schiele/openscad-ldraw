@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3069bs01.scad>
-function ldraw_lib__3069bpze() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3069bpze(realsolid=false) = [
 // 0 Tile  1 x  2 with Black Wonder Woman Logo Pattern
 // 0 Name: 3069bpze.dat
 // 0 Author: Vincent Messenet [Cheenzo]
@@ -17,7 +18,7 @@ function ldraw_lib__3069bpze() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3069bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3069bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3069bs01(realsolid)],
 // 
 // 4 0 3.25 0 2.75 1.5 0 9 .75 0 7.5 2.5 0 4.1
   [4,0,3.25,0,2.75,1.5,0,9,.75,0,7.5,2.5,0,4.1],
@@ -117,5 +118,5 @@ function ldraw_lib__3069bpze() = [
   [4,16,0,0,-6,0,0,-2.5,-3.25,0,2.75,-4.25,0,1],
 ];
 module ldraw_lib__3069bpze(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3069bpze(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3069bpze(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3069bpze(line=0.2);

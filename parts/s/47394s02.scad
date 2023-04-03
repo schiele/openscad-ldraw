@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__47394s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__47394s02(realsolid=false) = [
 // 0 ~Figure Duplo Adult Legs Front Patternable Area
 // 0 Name: s\47394s02.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -184,5 +185,5 @@ function ldraw_lib__s__47394s02() = [
   [4,16,33.682,-15.182,4.5154,33.7209,-22.8315,4.4591,30.5328,-22.6364,0.243,30.5,-16.5,0],
 ];
 module ldraw_lib__s__47394s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__47394s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__47394s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__47394s02(line=0.2);

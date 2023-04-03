@@ -2,7 +2,8 @@ use <../lib.scad>
 use <2605.scad>
 use <2606.scad>
 use <70864.scad>
-function ldraw_lib__2605c01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2605c01(realsolid=false) = [
 // 0 Brick  1 x  2 x  2.333 Shock Absorber (Complete)
 // 0 Name: 2605c01.dat
 // 0 Author: Paul Easter [pneaster]
@@ -32,12 +33,12 @@ function ldraw_lib__2605c01() = [
 // 0 // bushing at bottom
 // 
 // 1 494 0 4 10 1 0 0 0 1 0 0 0 1 70864.dat
-  [1,494,0,4,10,1,0,0,0,1,0,0,0,1, ldraw_lib__70864()],
+  [1,494,0,4,10,1,0,0,0,1,0,0,0,1, ldraw_lib__70864(realsolid)],
 // 1 15 0 42 10 1 0 0 0 1 0 0 0 1 2606.dat
-  [1,15,0,42,10,1,0,0,0,1,0,0,0,1, ldraw_lib__2606()],
+  [1,15,0,42,10,1,0,0,0,1,0,0,0,1, ldraw_lib__2606(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 2605.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2605()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2605(realsolid)],
 ];
 module ldraw_lib__2605c01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2605c01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2605c01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2605c01(line=0.2);

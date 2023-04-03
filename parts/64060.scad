@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/box3u2p.scad>
 use <../p/rect3.scad>
 use <s/64060s01.scad>
-function ldraw_lib__64060() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__64060(realsolid=false) = [
 // 0 ~Electric Power Functions IR Distance Sensor Top
 // 0 Name: 64060.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -21,15 +22,15 @@ function ldraw_lib__64060() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\64060s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__64060s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__64060s01(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -40 4 0 0 4 0 4 0 0 0 0 -6 box3u2p.dat
-  [1,16,-40,4,0,0,4,0,4,0,0,0,0,-6, ldraw_lib__box3u2p()],
+  [1,16,-40,4,0,0,4,0,4,0,0,0,0,-6, ldraw_lib__box3u2p(realsolid)],
 // 1 16 -40 4 13 0 4 0 -4 0 0 0 0 7 rect3.dat
-  [1,16,-40,4,13,0,4,0,-4,0,0,0,0,7, ldraw_lib__rect3()],
+  [1,16,-40,4,13,0,4,0,-4,0,0,0,0,7, ldraw_lib__rect3(realsolid)],
 // 1 16 -40 4 -13 0 4 0 4 0 0 0 0 -7 rect3.dat
-  [1,16,-40,4,-13,0,4,0,4,0,0,0,0,-7, ldraw_lib__rect3()],
+  [1,16,-40,4,-13,0,4,0,4,0,0,0,0,-7, ldraw_lib__rect3(realsolid)],
 // 4 16 -40 8 6 -40 8 20 -34 8 18 -36 8 6
   [4,16,-40,8,6,-40,8,20,-34,8,18,-36,8,6],
 // 4 16 -36 8 -6 -34 8 -18 -40 8 -20 -40 8 -6
@@ -44,5 +45,5 @@ function ldraw_lib__64060() = [
   [4,16,-36,0,6,-36,0,-6,20,0,-20,20,0,20],
 ];
 module ldraw_lib__64060(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__64060(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__64060(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__64060(line=0.2);

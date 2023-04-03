@@ -3,7 +3,8 @@ use <../p/box2-5.scad>
 use <../p/rect.scad>
 use <s/61345s01.scad>
 use <../p/stug2-1x2.scad>
-function ldraw_lib__60032() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__60032(realsolid=false) = [
 // 0 Window  1 x  2 x  2 Plane with Single Hole Top and Bottom for Glass
 // 0 Name: 60032.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -40,15 +41,15 @@ function ldraw_lib__60032() = [
 // 4 16 -16 48 -6 -20 48 -10 -20 48 10 -16 48 6
   [4,16,-16,48,-6,-20,48,-10,-20,48,10,-16,48,6],
 // 1 16 -16 46 0 0 -1 0 2 0 0 0 0 6 rect.dat
-  [1,16,-16,46,0,0,-1,0,2,0,0,0,0,6, ldraw_lib__rect()],
+  [1,16,-16,46,0,0,-1,0,2,0,0,0,0,6, ldraw_lib__rect(realsolid)],
 // 1 16 -18.5 21.5 -5 0 1.5 0 18.5 0 0 0 0 2 box2-5.dat
-  [1,16,-18.5,21.5,-5,0,1.5,0,18.5,0,0,0,0,2, ldraw_lib__box2_5()],
+  [1,16,-18.5,21.5,-5,0,1.5,0,18.5,0,0,0,0,2, ldraw_lib__box2_5(realsolid)],
 // 1 16 -20 0 0 1 0 0 0 1 0 0 0 1 s\61345s01.dat
-  [1,16,-20,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__61345s01()],
+  [1,16,-20,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__61345s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 stug2-1x2.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug2_1x2()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug2_1x2(realsolid)],
 // 
 ];
 module ldraw_lib__60032(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__60032(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__60032(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__60032(line=0.2);

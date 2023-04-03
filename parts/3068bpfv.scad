@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3068bs01.scad>
-function ldraw_lib__3068bpfv() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3068bpfv(realsolid=false) = [
 // 0 Tile  2 x  2 with Red, Purple, Bright Purple Flying Bird Pattern
 // 0 Name: 3068bpfv.dat
 // 0 Author: Steffen [Steffen]
@@ -19,7 +20,7 @@ function ldraw_lib__3068bpfv() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3068bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3068bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3068bs01(realsolid)],
 // 4 0 -15.2 0 1.3 -18 0 0 -14.4 0 -1.1 -13.9 0 -1.1
   [4,0,-15.2,0,1.3,-18,0,0,-14.4,0,-1.1,-13.9,0,-1.1],
 // 4 0 -15.2 0 1.3 -13.9 0 -1.1 -14 0 0.4 -14.6 0 1.1
@@ -1108,5 +1109,5 @@ function ldraw_lib__3068bpfv() = [
   [3,16,-20,0,20,-9.3,0,10.5,-6.1,0,14.1],
 ];
 module ldraw_lib__3068bpfv(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3068bpfv(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3068bpfv(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3068bpfv(line=0.2);

@@ -2,7 +2,8 @@ use <../../lib.scad>
 use <u590s01.scad>
 use <u590s03.scad>
 use <u590s05.scad>
-function ldraw_lib__s__u590s00() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__u590s00(realsolid=false) = [
 // 0 ~Figure Fabuland Goat Head Half with Blank Pattern Areas
 // 0 Name: s\u590s00.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -17,11 +18,11 @@ function ldraw_lib__s__u590s00() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\u590s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__u590s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__u590s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\u590s03.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__u590s03()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__u590s03(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\u590s05.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__u590s05()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__u590s05(realsolid)],
 // 0 // Eye area
 // 3 16 9.9 -27.2 -18.8 9.4 -28.8 -18.4 7.9 -28.5 -19.1
   [3,16,9.9,-27.2,-18.8,9.4,-28.8,-18.4,7.9,-28.5,-19.1],
@@ -531,5 +532,5 @@ function ldraw_lib__s__u590s00() = [
   [5,24,3.9,-26.2,-20.7,5.6,-28.5,-19.6,3.4,-28.4,-19.9,7.9,-28.5,-19.1],
 ];
 module ldraw_lib__s__u590s00(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__u590s00(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__u590s00(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__u590s00(line=0.2);

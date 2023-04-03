@@ -4,7 +4,8 @@ use <s/85947s01.scad>
 use <s/85947s02.scad>
 use <s/85947s03.scad>
 use <s/85947s04.scad>
-function ldraw_lib__85947() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__85947(realsolid=false) = [
 // 0 Minifig Head Alien Squidman
 // 0 Name: 85947.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -21,21 +22,21 @@ function ldraw_lib__85947() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\85947s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__85947s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__85947s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\85947s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__85947s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__85947s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\85947s02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__85947s02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__85947s02(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\85947s03.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__85947s03()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__85947s03(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\85947s04.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__85947s04()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__85947s04(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\85947s04.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__85947s04()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__85947s04(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -17 0 0 0 6 0 17 0 6 0 0 4-4cylc.dat
-  [1,16,0,-17,0,0,0,6,0,17,0,6,0,0, ldraw_lib__4_4cylc()],
+  [1,16,0,-17,0,0,0,6,0,17,0,6,0,0, ldraw_lib__4_4cylc(realsolid)],
 // 5 24 0 -17.01 17.65 0 -18.52 15.81 3.83 -18.74 13.88 -3.83 -18.74 13.88
   [5,24,0,-17.01,17.65,0,-18.52,15.81,3.83,-18.74,13.88,-3.83,-18.74,13.88],
 // 5 24 0 -13.18 19.03 0 -17.01 17.65 4.87 -16.5 15.76 -4.87 -16.5 15.76
@@ -62,5 +63,5 @@ function ldraw_lib__85947() = [
   [5,24,0,-16.9,-9.63,0,-11.93,-15.31,4.25,-16.99,-9.26,-4.25,-16.99,-9.26],
 ];
 module ldraw_lib__85947(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__85947(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__85947(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__85947(line=0.2);

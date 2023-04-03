@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/63864s01.scad>
-function ldraw_lib__63864pz1() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__63864pz1(realsolid=false) = [
 // 0 Tile  1 x  3 with  3 White Triangles with Black Outlines Pattern
 // 0 Name: 63864pz1.dat
 // 0 Author: Vincent Messenet [Cheenzo]
@@ -18,7 +19,7 @@ function ldraw_lib__63864pz1() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\63864s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__63864s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__63864s01(realsolid)],
 // 
 // 3 15 0 0 2.75 -6.5 0 -8 6.5 0 -8
   [3,15,0,0,2.75,-6.5,0,-8,6.5,0,-8],
@@ -166,5 +167,5 @@ function ldraw_lib__63864pz1() = [
   [4,16,30,0,-10,15.29,0,-8.94,-15.29,0,-8.94,-30,0,-10],
 ];
 module ldraw_lib__63864pz1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__63864pz1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__63864pz1(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__63864pz1(line=0.2);

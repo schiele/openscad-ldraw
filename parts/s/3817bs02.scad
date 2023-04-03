@@ -5,7 +5,8 @@ use <../../p/4-4ndis.scad>
 use <../../p/rect.scad>
 use <../../p/rect2p.scad>
 use <../../p/recte4.scad>
-function ldraw_lib__s__3817bs02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__3817bs02(realsolid=false) = [
 // 0 ~Minifig Leg Left without Front and Side Surfaces
 // 0 Name: s\3817bs02.dat
 // 0 Author: Nils Schmidt [BlackBrick89]
@@ -22,35 +23,35 @@ function ldraw_lib__s__3817bs02() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 2 0 0 0 5.25 0 3 0 0 0 0 3 4-4cyli.dat
-  [1,16,2,0,0,0,5.25,0,3,0,0,0,0,3, ldraw_lib__4_4cyli()],
+  [1,16,2,0,0,0,5.25,0,3,0,0,0,0,3, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 2 0 0 0 1 0 3 0 0 0 0 3 4-4ndis.dat
-  [1,16,2,0,0,0,1,0,3,0,0,0,0,3, ldraw_lib__4_4ndis()],
+  [1,16,2,0,0,0,1,0,3,0,0,0,0,3, ldraw_lib__4_4ndis(realsolid)],
 // 1 16 7.25 0 0 0 -1 0 3 0 0 0 0 3 4-4ndis.dat
-  [1,16,7.25,0,0,0,-1,0,3,0,0,0,0,3, ldraw_lib__4_4ndis()],
+  [1,16,7.25,0,0,0,-1,0,3,0,0,0,0,3, ldraw_lib__4_4ndis(realsolid)],
 // 1 16 10 18 6 0 0 6 6 0 0 0 1 0 4-4ndis.dat
-  [1,16,10,18,6,0,0,6,6,0,0,0,1,0, ldraw_lib__4_4ndis()],
+  [1,16,10,18,6,0,0,6,6,0,0,0,1,0, ldraw_lib__4_4ndis(realsolid)],
 // 1 16 2 0 0 0 1 0 3 0 0 0 0 3 4-4edge.dat
-  [1,16,2,0,0,0,1,0,3,0,0,0,0,3, ldraw_lib__4_4edge()],
+  [1,16,2,0,0,0,1,0,3,0,0,0,0,3, ldraw_lib__4_4edge(realsolid)],
 // 1 16 7.25 0 0 0 1 0 3 0 0 0 0 3 4-4edge.dat
-  [1,16,7.25,0,0,0,1,0,3,0,0,0,0,3, ldraw_lib__4_4edge()],
+  [1,16,7.25,0,0,0,1,0,3,0,0,0,0,3, ldraw_lib__4_4edge(realsolid)],
 // 1 16 10 18 6 0 0 6 6 0 0 0 1 0 4-4edge.dat
-  [1,16,10,18,6,0,0,6,6,0,0,0,1,0, ldraw_lib__4_4edge()],
+  [1,16,10,18,6,0,0,6,6,0,0,0,1,0, ldraw_lib__4_4edge(realsolid)],
 // 1 16 10.365 20 -7 8.865 0 0 0 1 0 0 0 3 recte4.dat
-  [1,16,10.365,20,-7,8.865,0,0,0,1,0,0,0,3, ldraw_lib__recte4()],
+  [1,16,10.365,20,-7,8.865,0,0,0,1,0,0,0,3, ldraw_lib__recte4(realsolid)],
 // 1 16 10.5 28 0 9 0 0 0 1 0 0 0 10 recte4.dat
-  [1,16,10.5,28,0,9,0,0,0,1,0,0,0,10, ldraw_lib__recte4()],
+  [1,16,10.5,28,0,9,0,0,0,1,0,0,0,10, ldraw_lib__recte4(realsolid)],
 // 1 16 10 28 0 6 0 0 0 1 0 0 0 6 recte4.dat
-  [1,16,10,28,0,6,0,0,0,1,0,0,0,6, ldraw_lib__recte4()],
+  [1,16,10,28,0,6,0,0,0,1,0,0,0,6, ldraw_lib__recte4(realsolid)],
 // 1 16 10 22.5 -4 6 0 0 0 1 0 0 0 2 recte4.dat
-  [1,16,10,22.5,-4,6,0,0,0,1,0,0,0,2, ldraw_lib__recte4()],
+  [1,16,10,22.5,-4,6,0,0,0,1,0,0,0,2, ldraw_lib__recte4(realsolid)],
 // 1 16 10 5.5 2 6 0 0 0 -1 0 0 0 4 rect.dat
-  [1,16,10,5.5,2,6,0,0,0,-1,0,0,0,4, ldraw_lib__rect()],
+  [1,16,10,5.5,2,6,0,0,0,-1,0,0,0,4, ldraw_lib__rect(realsolid)],
 // 1 16 10 14 -2 0 0 -6 8.5 0 0 0 -1 0 rect2p.dat
-  [1,16,10,14,-2,0,0,-6,8.5,0,0,0,-1,0, ldraw_lib__rect2p()],
+  [1,16,10,14,-2,0,0,-6,8.5,0,0,0,-1,0, ldraw_lib__rect2p(realsolid)],
 // 1 16 1.75 3.349 8.49175 0 0 -0.25 0 1 0 0.40775 0 0 rect.dat
-  [1,16,1.75,3.349,8.49175,0,0,-0.25,0,1,0,0.40775,0,0, ldraw_lib__rect()],
+  [1,16,1.75,3.349,8.49175,0,0,-0.25,0,1,0,0.40775,0,0, ldraw_lib__rect(realsolid)],
 // 1 16 10 25.25 -6 0 0 6 -2.75 0 0 0 -1 0 rect2p.dat
-  [1,16,10,25.25,-6,0,0,6,-2.75,0,0,0,-1,0, ldraw_lib__rect2p()],
+  [1,16,10,25.25,-6,0,0,6,-2.75,0,0,0,-1,0, ldraw_lib__rect2p(realsolid)],
 // 4 16 4.457 -4.296 7.449 5.722 -6.187 6.187 5.805 -6.31 6 4.457 -4.296 6
   [4,16,4.457,-4.296,7.449,5.722,-6.187,6.187,5.805,-6.31,6,4.457,-4.296,6],
 // 4 16 5.757 2.243 8.8502 5.757 2.243 6 7.25 3.24 6 7.704 3.543 8.9082
@@ -670,5 +671,5 @@ function ldraw_lib__s__3817bs02() = [
   [5,24,14.298,-6.187,6.187,18.337,-6.187,6.187,18.273,-8.084,3.349,18.433,-3.349,8.084],
 ];
 module ldraw_lib__s__3817bs02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__3817bs02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__3817bs02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__3817bs02(line=0.2);

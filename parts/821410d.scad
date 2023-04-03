@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3009p17a.scad>
-function ldraw_lib__821410d() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__821410d(realsolid=false) = [
 // 0 Sticker  1.0 x  3.8 with Black "POLICE" and Red Line
 // 0 Name: 821410d.dat
 // 0 Author: Michael Heidemann [mikeheide]
@@ -21,7 +22,7 @@ function ldraw_lib__821410d() = [
 // 
 // 
 // 1 16 0 9.75 11 1 0 0 0 0 1 0 -1 0 s\3009p17a.dat
-  [1,16,0,9.75,11,1,0,0,0,0,1,0,-1,0, ldraw_lib__s__3009p17a()],
+  [1,16,0,9.75,11,1,0,0,0,0,1,0,-1,0, ldraw_lib__s__3009p17a(realsolid)],
 // 4 16 -38 -0.25 10 -38 -0.25 -10 -31 -0.25 -9.5 -31 -0.25 9
   [4,16,-38,-0.25,10,-38,-0.25,-10,-31,-0.25,-9.5,-31,-0.25,9],
 // 4 16 32 -0.25 9 32 -0.25 -9.5 38 -0.25 -10 38 -0.25 10
@@ -43,5 +44,5 @@ function ldraw_lib__821410d() = [
 // 0
 ];
 module ldraw_lib__821410d(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__821410d(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__821410d(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__821410d(line=0.2);

@@ -6,7 +6,8 @@ use <../p/2-8sphe.scad>
 use <../p/rect.scad>
 use <../p/rect2p.scad>
 use <s/u9248s01.scad>
-function ldraw_lib__u9248() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__u9248(realsolid=false) = [
 // 0 Electric Light & Sound Insectoid Tail  4 x 20 x  4.333 Side Prism
 // 0 Name: u9248.dat
 // 0 Author: Paul Easter [pneaster]
@@ -27,31 +28,31 @@ function ldraw_lib__u9248() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\u9248s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__u9248s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__u9248s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\u9248s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__u9248s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__u9248s01(realsolid)],
 // 
 // 0 // LED Cavity
 // 1 16 0 -10 -136 -4 0 0 0 0 -4 0 1 0 2-4edge.dat
-  [1,16,0,-10,-136,-4,0,0,0,0,-4,0,1,0, ldraw_lib__2_4edge()],
+  [1,16,0,-10,-136,-4,0,0,0,0,-4,0,1,0, ldraw_lib__2_4edge(realsolid)],
 // 1 16 0 -10 -136 -4 0 0 0 0 -4 0 1 0 2-4ndis.dat
-  [1,16,0,-10,-136,-4,0,0,0,0,-4,0,1,0, ldraw_lib__2_4ndis()],
+  [1,16,0,-10,-136,-4,0,0,0,0,-4,0,1,0, ldraw_lib__2_4ndis(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -10 -132 -4 0 0 0 0 -4 0 4 0 2-8sphe.dat
-  [1,16,0,-10,-132,-4,0,0,0,0,-4,0,4,0, ldraw_lib__2_8sphe()],
+  [1,16,0,-10,-132,-4,0,0,0,0,-4,0,4,0, ldraw_lib__2_8sphe(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -10 -136 -4 0 0 0 0 -4 0 4 0 2-4cyli.dat
-  [1,16,0,-10,-136,-4,0,0,0,0,-4,0,4,0, ldraw_lib__2_4cyli()],
+  [1,16,0,-10,-136,-4,0,0,0,0,-4,0,4,0, ldraw_lib__2_4cyli(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -10 -132 -4 0 0 0 10 0 0 0 4 2-4cyli.dat
-  [1,16,0,-10,-132,-4,0,0,0,10,0,0,0,4, ldraw_lib__2_4cyli()],
+  [1,16,0,-10,-132,-4,0,0,0,10,0,0,0,4, ldraw_lib__2_4cyli(realsolid)],
 // 1 16 0 0 -132 -4 0 0 0 1 0 0 0 4 2-4edge.dat
-  [1,16,0,0,-132,-4,0,0,0,1,0,0,0,4, ldraw_lib__2_4edge()],
+  [1,16,0,0,-132,-4,0,0,0,1,0,0,0,4, ldraw_lib__2_4edge(realsolid)],
 // 1 16 0 0 -132 -4 0 0 0 -1 0 0 0 4 2-4ndis.dat
-  [1,16,0,0,-132,-4,0,0,0,-1,0,0,0,4, ldraw_lib__2_4ndis()],
+  [1,16,0,0,-132,-4,0,0,0,-1,0,0,0,4, ldraw_lib__2_4ndis(realsolid)],
 // 
 // 3 16 4 -18 -136 -4 -18 -136 0 -14 -136
   [3,16,4,-18,-136,-4,-18,-136,0,-14,-136],
@@ -207,12 +208,12 @@ function ldraw_lib__u9248() = [
 // 
 // 0 // Outside
 // 1 16 0 -18 -56 -4 0 0 0 1 0 0 0 -80 rect.dat
-  [1,16,0,-18,-56,-4,0,0,0,1,0,0,0,-80, ldraw_lib__rect()],
+  [1,16,0,-18,-56,-4,0,0,0,1,0,0,0,-80, ldraw_lib__rect(realsolid)],
 // 1 16 0 -10.29715 54.5617 0 0 4 -7.70285 1 0 -30.5617 0 0 rect2p.dat
-  [1,16,0,-10.29715,54.5617,0,0,4,-7.70285,1,0,-30.5617,0,0, ldraw_lib__rect2p()],
+  [1,16,0,-10.29715,54.5617,0,0,4,-7.70285,1,0,-30.5617,0,0, ldraw_lib__rect2p(realsolid)],
 // 3 16 0 -2.3734 86 -4 -2.5943 85.1234 4 -2.5943 85.1234
   [3,16,0,-2.3734,86,-4,-2.5943,85.1234,4,-2.5943,85.1234],
 ];
 module ldraw_lib__u9248(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__u9248(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__u9248(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__u9248(line=0.2);

@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
 use <s/3004s60.scad>
-function ldraw_lib__003605d() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__003605d(realsolid=false) = [
 // 0 Sticker  1.3 x  1.3 with Shell Logo 1971
 // 0 Name: 003605d.dat
 // 0 Author: Willy Tschager [Holly-Wood]
@@ -19,11 +20,11 @@ function ldraw_lib__003605d() = [
 // 
 // 0 // Small box
 // 1 16 0 -.25 0 13 0 0 0 .25 0 0 0 13 box5-12.dat
-  [1,16,0,-.25,0,13,0,0,0,.25,0,0,0,13, ldraw_lib__box5_12()],
+  [1,16,0,-.25,0,13,0,0,0,.25,0,0,0,13, ldraw_lib__box5_12(realsolid)],
 // 
 // 0 // Pattern
 // 1 15 0 -.25 0 .85 0 0 0 0 1 0 -.85 0 s\3004s60.dat
-  [1,15,0,-.25,0,.85,0,0,0,0,1,0,-.85,0, ldraw_lib__s__3004s60()],
+  [1,15,0,-.25,0,.85,0,0,0,0,1,0,-.85,0, ldraw_lib__s__3004s60(realsolid)],
 // 
 // 4 15 13 -.25 -13 13 -.25 13 9.775 -.25 8.925 9.775 -.25 -2.0349
   [4,15,13,-.25,-13,13,-.25,13,9.775,-.25,8.925,9.775,-.25,-2.0349],
@@ -43,5 +44,5 @@ function ldraw_lib__003605d() = [
   [3,15,13,-.25,13,0,-.25,8.925,9.775,-.25,8.925],
 ];
 module ldraw_lib__003605d(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__003605d(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__003605d(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__003605d(line=0.2);

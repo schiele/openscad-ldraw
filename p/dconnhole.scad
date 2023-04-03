@@ -3,7 +3,8 @@ use <4-4cylo.scad>
 use <4-4ring3.scad>
 use <4-4ring4.scad>
 use <box3u5p.scad>
-function ldraw_lib__dconnhole() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__dconnhole(realsolid=false) = [
 // 0 Duplo Connector Hole
 // 0 Name: dconnhole.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -18,29 +19,29 @@ function ldraw_lib__dconnhole() = [
 // 
 // 
 // 1 16 0 -20 0 15 0 0 0 40 0 0 0 15 4-4cylo.dat
-  [1,16,0,-20,0,15,0,0,0,40,0,0,0,15, ldraw_lib__4_4cylo()],
+  [1,16,0,-20,0,15,0,0,0,40,0,0,0,15, ldraw_lib__4_4cylo(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -20 0 12 0 0 0 11 0 0 0 12 4-4cylo.dat
-  [1,16,0,-20,0,12,0,0,0,11,0,0,0,12, ldraw_lib__4_4cylo()],
+  [1,16,0,-20,0,12,0,0,0,11,0,0,0,12, ldraw_lib__4_4cylo(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 20 0 12 0 0 0 -11 0 0 0 12 4-4cylo.dat
-  [1,16,0,20,0,12,0,0,0,-11,0,0,0,12, ldraw_lib__4_4cylo()],
+  [1,16,0,20,0,12,0,0,0,-11,0,0,0,12, ldraw_lib__4_4cylo(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -9 0 9 0 0 0 18 0 0 0 9 4-4cylo.dat
-  [1,16,0,-9,0,9,0,0,0,18,0,0,0,9, ldraw_lib__4_4cylo()],
+  [1,16,0,-9,0,9,0,0,0,18,0,0,0,9, ldraw_lib__4_4cylo(realsolid)],
 // 1 16 0 -20 0 3 0 0 0 1 0 0 0 3 4-4ring4.dat
-  [1,16,0,-20,0,3,0,0,0,1,0,0,0,3, ldraw_lib__4_4ring4()],
+  [1,16,0,-20,0,3,0,0,0,1,0,0,0,3, ldraw_lib__4_4ring4(realsolid)],
 // 1 16 0 -9 0 3 0 0 0 1 0 0 0 3 4-4ring3.dat
-  [1,16,0,-9,0,3,0,0,0,1,0,0,0,3, ldraw_lib__4_4ring3()],
+  [1,16,0,-9,0,3,0,0,0,1,0,0,0,3, ldraw_lib__4_4ring3(realsolid)],
 // 1 16 0 20 0 3 0 0 0 -1 0 0 0 3 4-4ring4.dat
-  [1,16,0,20,0,3,0,0,0,-1,0,0,0,3, ldraw_lib__4_4ring4()],
+  [1,16,0,20,0,3,0,0,0,-1,0,0,0,3, ldraw_lib__4_4ring4(realsolid)],
 // 1 16 0 9 0 3 0 0 0 -1 0 0 0 3 4-4ring3.dat
-  [1,16,0,9,0,3,0,0,0,-1,0,0,0,3, ldraw_lib__4_4ring3()],
+  [1,16,0,9,0,3,0,0,0,-1,0,0,0,3, ldraw_lib__4_4ring3(realsolid)],
 // 1 16 -17.351 -2 0 2.64915 0 0 0 -16 0 0 0 1.5 box3u5p.dat
-  [1,16,-17.351,-2,0,2.64915,0,0,0,-16,0,0,0,1.5, ldraw_lib__box3u5p()],
+  [1,16,-17.351,-2,0,2.64915,0,0,0,-16,0,0,0,1.5, ldraw_lib__box3u5p(realsolid)],
 // 2 24 -15 -18 0 -14.702 -18 1.5
   [2,24,-15,-18,0,-14.702,-18,1.5],
 // 2 24 -14.702 -18 -1.5 -15 -18 0
@@ -50,7 +51,7 @@ function ldraw_lib__dconnhole() = [
 // 2 24 -14.702 -18 -1.5 -14.702 -2 -1.5
   [2,24,-14.702,-18,-1.5,-14.702,-2,-1.5],
 // 1 16 17.351 -2 0 -2.64915 0 0 0 -16 0 0 0 1.5 box3u5p.dat
-  [1,16,17.351,-2,0,-2.64915,0,0,0,-16,0,0,0,1.5, ldraw_lib__box3u5p()],
+  [1,16,17.351,-2,0,-2.64915,0,0,0,-16,0,0,0,1.5, ldraw_lib__box3u5p(realsolid)],
 // 2 24 15 -18 0 14.702 -18 1.5
   [2,24,15,-18,0,14.702,-18,1.5],
 // 2 24 14.702 -18 -1.5 15 -18 0
@@ -60,7 +61,7 @@ function ldraw_lib__dconnhole() = [
 // 2 24 14.702 -18 -1.5 14.702 -2 -1.5
   [2,24,14.702,-18,-1.5,14.702,-2,-1.5],
 // 1 16 -17.351 2 0 2.64915 0 0 0 16 0 0 0 1.5 box3u5p.dat
-  [1,16,-17.351,2,0,2.64915,0,0,0,16,0,0,0,1.5, ldraw_lib__box3u5p()],
+  [1,16,-17.351,2,0,2.64915,0,0,0,16,0,0,0,1.5, ldraw_lib__box3u5p(realsolid)],
 // 2 24 -15 18 0 -14.702 18 1.5
   [2,24,-15,18,0,-14.702,18,1.5],
 // 2 24 -14.702 18 -1.5 -15 18 0
@@ -70,7 +71,7 @@ function ldraw_lib__dconnhole() = [
 // 2 24 -14.702 18 -1.5 -14.702 2 -1.5
   [2,24,-14.702,18,-1.5,-14.702,2,-1.5],
 // 1 16 17.351 2 0 -2.64915 0 0 0 16 0 0 0 1.5 box3u5p.dat
-  [1,16,17.351,2,0,-2.64915,0,0,0,16,0,0,0,1.5, ldraw_lib__box3u5p()],
+  [1,16,17.351,2,0,-2.64915,0,0,0,16,0,0,0,1.5, ldraw_lib__box3u5p(realsolid)],
 // 2 24 15 18 0 14.702 18 1.5
   [2,24,15,18,0,14.702,18,1.5],
 // 2 24 14.702 18 -1.5 15 18 0
@@ -81,5 +82,5 @@ function ldraw_lib__dconnhole() = [
   [2,24,14.702,18,-1.5,14.702,2,-1.5],
 ];
 module ldraw_lib__dconnhole(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__dconnhole(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__dconnhole(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__dconnhole(line=0.2);

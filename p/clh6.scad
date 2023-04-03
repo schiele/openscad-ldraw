@@ -3,7 +3,8 @@ use <clh6c.scad>
 use <rect.scad>
 use <rect2p.scad>
 use <rect3.scad>
-function ldraw_lib__clh6() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__clh6(realsolid=false) = [
 // 0 Click Lock Hinge Single Finger for Plate Ends
 // 0 Name: clh6.dat
 // 0 Author: Chris Dee [cwdee]
@@ -27,17 +28,17 @@ function ldraw_lib__clh6() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 clh6c.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__clh6c()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__clh6c(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 clh6c.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__clh6c()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__clh6c(realsolid)],
 // 
 // 0 // Middle Part
 // 4 16 -9 -2 0 -4 -3.098 -1.098 4 -3.098 -1.098 9 -2 0
   [4,16,-9,-2,0,-4,-3.098,-1.098,4,-3.098,-1.098,9,-2,0],
 // 1 16 0 -5.239 -3.239 0 0 4 -2.141 1 0 -2.141 0 0 rect2p.dat
-  [1,16,0,-5.239,-3.239,0,0,4,-2.141,1,0,-2.141,0,0, ldraw_lib__rect2p()],
+  [1,16,0,-5.239,-3.239,0,0,4,-2.141,1,0,-2.141,0,0, ldraw_lib__rect2p(realsolid)],
 // 1 16 0 -6.65425 -10.16575 4 0 0 0 1 -.72575 0 0 4.78575 rect.dat
-  [1,16,0,-6.65425,-10.16575,4,0,0,0,1,-.72575,0,0,4.78575, ldraw_lib__rect()],
+  [1,16,0,-6.65425,-10.16575,4,0,0,0,1,-.72575,0,0,4.78575, ldraw_lib__rect(realsolid)],
 // 3 16 -4 -5.9285 -14.9515 -4 -4 -15.16 -3.075 -4 -15.16
   [3,16,-4,-5.9285,-14.9515,-4,-4,-15.16,-3.075,-4,-15.16],
 // 3 16 4 -5.9285 -14.9515 3.075 -4 -15.16 4 -4 -15.16
@@ -57,7 +58,7 @@ function ldraw_lib__clh6() = [
 // 4 16 4 6 -14.9438 3.075 4 -15.16 -3.075 4 -15.16 -4 6 -14.9438
   [4,16,4,6,-14.9438,3.075,4,-15.16,-3.075,4,-15.16,-4,6,-14.9438],
 // 1 16 0 6 -7.4719 4 0 0 0 -1 0 0 0 -7.4719 rect3.dat
-  [1,16,0,6,-7.4719,4,0,0,0,-1,0,0,0,-7.4719, ldraw_lib__rect3()],
+  [1,16,0,6,-7.4719,4,0,0,0,-1,0,0,0,-7.4719, ldraw_lib__rect3(realsolid)],
 // 2 24 9 -2 0 -9 -2 0
   [2,24,9,-2,0,-9,-2,0],
 // 5 24 3 -2.26 -15.35 -3 -2.26 -15.35 0 0 -15.35 0 -5.48 -15
@@ -66,5 +67,5 @@ function ldraw_lib__clh6() = [
   [5,24,-3,2.26,-15.35,3,2.26,-15.35,0,0,-15.35,0,5.48,-15],
 ];
 module ldraw_lib__clh6(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__clh6(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__clh6(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__clh6(line=0.2);

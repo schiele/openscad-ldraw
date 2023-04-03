@@ -6,7 +6,8 @@ use <../p/4-4edge.scad>
 use <../p/4-8sphe.scad>
 use <../p/box4o4a.scad>
 use <../p/box5.scad>
-function ldraw_lib__64898() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__64898(realsolid=false) = [
 // 0 ~Electric Mindstorms NXT Colour Sensor / Lamp Phototransistor
 // 0 Name: 64898.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -24,28 +25,28 @@ function ldraw_lib__64898() = [
 // 
 // 
 // 1 16 0 0 -11 4 0 0 0 0 4 0 -3 0 4-8sphe.dat
-  [1,16,0,0,-11,4,0,0,0,0,4,0,-3,0, ldraw_lib__4_8sphe()],
+  [1,16,0,0,-11,4,0,0,0,0,4,0,-3,0, ldraw_lib__4_8sphe(realsolid)],
 // 1 16 0 0 0 4 0 0 0 0 4 0 -11 0 4-4cyli.dat
-  [1,16,0,0,0,4,0,0,0,0,4,0,-11,0, ldraw_lib__4_4cyli()],
+  [1,16,0,0,0,4,0,0,0,0,4,0,-11,0, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 0 0 4 0 0 0 0 4 0 -11 0 4-4disc.dat
-  [1,16,0,0,0,4,0,0,0,0,4,0,-11,0, ldraw_lib__4_4disc()],
+  [1,16,0,0,0,4,0,0,0,0,4,0,-11,0, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 0 0 4 0 0 0 0 4 0 -11 0 4-4edge.dat
-  [1,16,0,0,0,4,0,0,0,0,4,0,-11,0, ldraw_lib__4_4edge()],
+  [1,16,0,0,0,4,0,0,0,0,4,0,-11,0, ldraw_lib__4_4edge(realsolid)],
 // 1 494 -1.237 0 0 0 0 0.5 -0.5 0 0 0 4 0 box5.dat
-  [1,494,-1.237,0,0,0,0,0.5,-0.5,0,0,0,4,0, ldraw_lib__box5()],
+  [1,494,-1.237,0,0,0,0,0.5,-0.5,0,0,0,4,0, ldraw_lib__box5(realsolid)],
 // 1 494 -1.237 0 -4 0 0 0.5 -0.5 0 0 0 4 0 box4o4a.dat
-  [1,494,-1.237,0,-4,0,0,0.5,-0.5,0,0,0,4,0, ldraw_lib__box4o4a()],
+  [1,494,-1.237,0,-4,0,0,0.5,-0.5,0,0,0,4,0, ldraw_lib__box4o4a(realsolid)],
 // 1 494 1.237 0 0 0 0 0.5 -0.5 0 0 0 4 0 box5.dat
-  [1,494,1.237,0,0,0,0,0.5,-0.5,0,0,0,4,0, ldraw_lib__box5()],
+  [1,494,1.237,0,0,0,0,0.5,-0.5,0,0,0,4,0, ldraw_lib__box5(realsolid)],
 // 1 494 0 0 -5 0 0 -0.5 -0.5 0 0 0 -0.2 0 box5.dat
-  [1,494,0,0,-5,0,0,-0.5,-0.5,0,0,0,-0.2,0, ldraw_lib__box5()],
+  [1,494,0,0,-5,0,0,-0.5,-0.5,0,0,0,-0.2,0, ldraw_lib__box5(realsolid)],
 // 1 494 1.237 0 -4 0 0 0.5 -0.5 0 0 0 4 0 box4o4a.dat
-  [1,494,1.237,0,-4,0,0,0.5,-0.5,0,0,0,4,0, ldraw_lib__box4o4a()],
+  [1,494,1.237,0,-4,0,0,0.5,-0.5,0,0,0,4,0, ldraw_lib__box4o4a(realsolid)],
 // 1 494 0 0 -4 3 0 0 0 0 3 0 -1 0 4-4disc.dat
-  [1,494,0,0,-4,3,0,0,0,0,3,0,-1,0, ldraw_lib__4_4disc()],
+  [1,494,0,0,-4,3,0,0,0,0,3,0,-1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 494 0 0 -5 3 0 0 0 0 3 0 1 0 4-4cylc.dat
-  [1,494,0,0,-5,3,0,0,0,0,3,0,1,0, ldraw_lib__4_4cylc()],
+  [1,494,0,0,-5,3,0,0,0,0,3,0,1,0, ldraw_lib__4_4cylc(realsolid)],
 ];
 module ldraw_lib__64898(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__64898(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__64898(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__64898(line=0.2);

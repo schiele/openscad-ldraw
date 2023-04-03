@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__168335e() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__168335e(realsolid=false) = [
 // 0 Sticker  1.1 x  1.8 Diagonal Red White Stripes Right Up
 // 0 Name: 168335e.dat
 // 0 Author: Ulrich Röder [UR]
@@ -17,7 +18,7 @@ function ldraw_lib__168335e() = [
 // 
 // 
 // 1 16 0 -0.25 0 19 0 0 0 0.25 0 0 0 11 box5-12.dat
-  [1,16,0,-0.25,0,19,0,0,0,0.25,0,0,0,11, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,19,0,0,0,0.25,0,0,0,11, ldraw_lib__box5_12(realsolid)],
 // 
 // 0 // White
 // 
@@ -68,5 +69,5 @@ function ldraw_lib__168335e() = [
   [4,4,-16.74,-0.25,-11,-13.74,-0.25,-11,4.74,-0.25,11,1.74,-0.25,11],
 ];
 module ldraw_lib__168335e(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__168335e(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__168335e(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__168335e(line=0.2);

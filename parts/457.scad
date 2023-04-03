@@ -5,7 +5,8 @@ use <../p/axleend.scad>
 use <../p/axlehol2.scad>
 use <../p/axlehol8.scad>
 use <../p/axlehol9.scad>
-function ldraw_lib__457() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__457(realsolid=false) = [
 // 0 Maxifig Tool Oar
 // 0 Name: 457.dat
 // 0 Author: Steffen [Steffen]
@@ -24,13 +25,13 @@ function ldraw_lib__457() = [
 // 
 // 
 // 1 16 -30 -1.33333 0 30 0 0 0 1 0 0 0 20 4-4disc.dat
-  [1,16,-30,-1.33333,0,30,0,0,0,1,0,0,0,20, ldraw_lib__4_4disc()],
+  [1,16,-30,-1.33333,0,30,0,0,0,1,0,0,0,20, ldraw_lib__4_4disc(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -30 1.33333 0 30 0 0 0 1 0 0 0 20 4-4disc.dat
-  [1,16,-30,1.33333,0,30,0,0,0,1,0,0,0,20, ldraw_lib__4_4disc()],
+  [1,16,-30,1.33333,0,30,0,0,0,1,0,0,0,20, ldraw_lib__4_4disc(realsolid)],
 // 1 16 -30 -1.33333 0 30 0 0 0 2.66666 0 0 0 20 4-4cyli.dat
-  [1,16,-30,-1.33333,0,30,0,0,0,2.66666,0,0,0,20, ldraw_lib__4_4cyli()],
+  [1,16,-30,-1.33333,0,30,0,0,0,2.66666,0,0,0,20, ldraw_lib__4_4cyli(realsolid)],
 // 0 new lines
 // 2 24 -1.11396 -1.333 3.73467 -2.283 -1.333 7.654
   [2,24,-1.11396,-1.333,3.73467,-2.283,-1.333,7.654],
@@ -98,13 +99,13 @@ function ldraw_lib__457() = [
 // 2 24 -8.787 1.333 -14.142 -2.283 1.333 -7.654
   [2,24,-8.787,1.333,-14.142,-2.283,1.333,-7.654],
 // 1 16 59 0 0 0 -40 0 0 0 0.666667 -0.666667 0 0 axlehol8.dat
-  [1,16,59,0,0,0,-40,0,0,0,0.666667,-0.666667,0,0, ldraw_lib__axlehol8()],
+  [1,16,59,0,0,0,-40,0,0,0,0.666667,-0.666667,0,0, ldraw_lib__axlehol8(realsolid)],
 // 1 16 59 0 0 0 -40 0 0 0 0.666667 -0.666667 0 0 axlehol9.dat
-  [1,16,59,0,0,0,-40,0,0,0,0.666667,-0.666667,0,0, ldraw_lib__axlehol9()],
+  [1,16,59,0,0,0,-40,0,0,0,0.666667,-0.666667,0,0, ldraw_lib__axlehol9(realsolid)],
 // 1 16 59 0 0 0 -40 0 0 0 0.666667 -0.666667 0 0 axlehol2.dat
-  [1,16,59,0,0,0,-40,0,0,0,0.666667,-0.666667,0,0, ldraw_lib__axlehol2()],
+  [1,16,59,0,0,0,-40,0,0,0,0.666667,-0.666667,0,0, ldraw_lib__axlehol2(realsolid)],
 // 1 16 59 0 0 0 -1 0 0 0 0.666667 0.666667 0 0 axleend.dat
-  [1,16,59,0,0,0,-1,0,0,0,0.666667,0.666667,0,0, ldraw_lib__axleend()],
+  [1,16,59,0,0,0,-1,0,0,0,0.666667,0.666667,0,0, ldraw_lib__axleend(realsolid)],
 // 2 24 19 1.33333 -3.73467 -1.11396 1.33333 -3.73467
   [2,24,19,1.33333,-3.73467,-1.11396,1.33333,-3.73467],
 // 2 24 19 1.33333 -1.33333 -5 1.33333 -1.33333
@@ -178,5 +179,5 @@ function ldraw_lib__457() = [
 // 0
 ];
 module ldraw_lib__457(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__457(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__457(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__457(line=0.2);

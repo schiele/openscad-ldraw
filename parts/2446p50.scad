@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/2446s01.scad>
-function ldraw_lib__2446p50() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2446p50(realsolid=false) = [
 // 0 Minifig Helmet Modern with Blue and Silver Spyrius Pattern
 // 0 Name: 2446p50.dat
 // 0 Author: Damien Roux [Darats]
@@ -17,7 +18,7 @@ function ldraw_lib__2446p50() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2446s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2446s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2446s01(realsolid)],
 // 0 // Top
 // 3 1 0 -9.48 -0.125 -0.042 -9.478 -0.125 0 -9.236 -1.625
   [3,1,0,-9.48,-0.125,-0.042,-9.478,-0.125,0,-9.236,-1.625],
@@ -1299,5 +1300,5 @@ function ldraw_lib__2446p50() = [
   [5,24,14.783,6.5,6.12,14.119,12.623,5.848,15.6,8.222,4.157,11.313,6.5,11.313],
 ];
 module ldraw_lib__2446p50(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2446p50(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2446p50(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2446p50(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3002s01.scad>
-function ldraw_lib__3002p11() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3002p11(realsolid=false) = [
 // 0 Brick  2 x  3 with White "TAXI" Pattern
 // 0 Name: 3002p11.dat
 // 0 Author: Niels Karsdorp [nielsk]
@@ -18,7 +19,7 @@ function ldraw_lib__3002p11() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3002s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3002s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3002s01(realsolid)],
 // 
 // 0 Front edges
 // 4 16 -30 0 -20 30 0 -20 17 7.5 -20 -18 7.5 -20
@@ -81,5 +82,5 @@ function ldraw_lib__3002p11() = [
 // 0
 ];
 module ldraw_lib__3002p11(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3002p11(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3002p11(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3002p11(line=0.2);

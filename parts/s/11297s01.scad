@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/2-4cylc.scad>
-function ldraw_lib__s__11297s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__11297s01(realsolid=false) = [
 // 0 ~Glass for Plane Front  6 x  8 x  4 with  8 Windows - Half
 // 0 Name: s\11297s01.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -1639,7 +1640,7 @@ function ldraw_lib__s__11297s01() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 60.832 -96.2 0 0 5.216 -5.216 0 0 0 -1.386 0 2-4cylc.dat
-  [1,16,0,60.832,-96.2,0,0,5.216,-5.216,0,0,0,-1.386,0, ldraw_lib__2_4cylc()],
+  [1,16,0,60.832,-96.2,0,0,5.216,-5.216,0,0,0,-1.386,0, ldraw_lib__2_4cylc(realsolid)],
 // 4 16 0 53.345 -97.582 0 55.616 -97.586 1.9962 56.0129 -97.586 3.541 53.345 -97.582
   [4,16,0,53.345,-97.582,0,55.616,-97.586,1.9962,56.0129,-97.586,3.541,53.345,-97.582],
 // 4 16 3.541 53.345 -97.582 1.9962 56.0129 -97.586 3.6882 57.1438 -97.586 7.575 51.845 -97.537
@@ -2973,5 +2974,5 @@ function ldraw_lib__s__11297s01() = [
   [5,24,35.413,5.414,-33.778,26.673,3.5009,-33.257,28.682,6.2162,-43.254,33.881,4.9499,-29.25],
 ];
 module ldraw_lib__s__11297s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__11297s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__11297s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__11297s01(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/30363s01.scad>
-function ldraw_lib__30363ps2() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__30363ps2(realsolid=false) = [
 // 0 Slope Brick 18  4 x  2 with Imperial Shuttle Cockpit Pattern
 // 0 Name: 30363ps2.dat
 // 0 Author: Miklos Hosszu [hmick]
@@ -15,7 +16,7 @@ function ldraw_lib__30363ps2() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\30363s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30363s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30363s01(realsolid)],
 // 
 // 4 0 16 3.16085 -19.4826 16 9.16921 -37.5076 -16 9.16921 -37.5076 -16 3.16085 -19.4826
   [4,0,16,3.16085,-19.4826,16,9.16921,-37.5076,-16,9.16921,-37.5076,-16,3.16085,-19.4826],
@@ -80,5 +81,5 @@ function ldraw_lib__30363ps2() = [
 // 0
 ];
 module ldraw_lib__30363ps2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__30363ps2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__30363ps2(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__30363ps2(line=0.2);

@@ -6,7 +6,8 @@ use <../p/bump5000.scad>
 use <../p/recte4.scad>
 use <../p/stug2-1x6.scad>
 use <../p/stug4-1x5.scad>
-function ldraw_lib__73090b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__73090b(realsolid=false) = [
 // 0 Brick  2 x  6 x  2 Weight with Plate Bottom
 // 0 Name: 73090b.dat
 // 0 Author: Dee Earley [DeannaEarley]
@@ -28,12 +29,12 @@ function ldraw_lib__73090b() = [
 // 
 // 
 // 1 16 0 44 0 1 0 0 0 -1 0 0 0 1 stug4-1x5.dat
-  [1,16,0,44,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stug4_1x5()],
+  [1,16,0,44,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stug4_1x5(realsolid)],
 // 
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 48 0 56 0 0 0 -4 0 0 0 16 box5.dat
-  [1,16,0,48,0,56,0,0,0,-4,0,0,0,16, ldraw_lib__box5()],
+  [1,16,0,48,0,56,0,0,0,-4,0,0,0,16, ldraw_lib__box5(realsolid)],
 // 4 16 60 48 20 56 48 16 -56 48 16 -60 48 20
   [4,16,60,48,20,56,48,16,-56,48,16,-60,48,20],
 // 4 16 -60 48 20 -56 48 16 -56 48 -16 -60 48 -20
@@ -43,11 +44,11 @@ function ldraw_lib__73090b() = [
 // 4 16 -60 48 -20 -56 48 -16 56 48 -16 60 48 -20
   [4,16,-60,48,-20,-56,48,-16,56,48,-16,60,48,-20],
 // 1 16 0 48 0 0 0 60 0 -48 0 -20 0 0 box4t.dat
-  [1,16,0,48,0,0,0,60,0,-48,0,-20,0,0, ldraw_lib__box4t()],
+  [1,16,0,48,0,0,0,60,0,-48,0,-20,0,0, ldraw_lib__box4t(realsolid)],
 // 1 16 0 0 10 1 0 0 0 1 0 0 0 1 stug2-1x6.dat
-  [1,16,0,0,10,1,0,0,0,1,0,0,0,1, ldraw_lib__stug2_1x6()],
+  [1,16,0,0,10,1,0,0,0,1,0,0,0,1, ldraw_lib__stug2_1x6(realsolid)],
 // 1 16 0 0 -10 1 0 0 0 1 0 0 0 1 stug2-1x6.dat
-  [1,16,0,0,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__stug2_1x6()],
+  [1,16,0,0,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__stug2_1x6(realsolid)],
 // 
 // 2 24 60 44 -20 60 44 20
   [2,24,60,44,-20,60,44,20],
@@ -57,14 +58,14 @@ function ldraw_lib__73090b() = [
   [2,24,60,44,20,-60,44,20],
 // 
 // 1 16 -60 22 0 0 1 0 21 0 0 0 0 19 recte4.dat
-  [1,16,-60,22,0,0,1,0,21,0,0,0,0,19, ldraw_lib__recte4()],
+  [1,16,-60,22,0,0,1,0,21,0,0,0,0,19, ldraw_lib__recte4(realsolid)],
 // 1 16 -60 22 0 0 1 0 4 0 0 0 0 4 4-4ndis.dat
-  [1,16,-60,22,0,0,1,0,4,0,0,0,0,4, ldraw_lib__4_4ndis()],
+  [1,16,-60,22,0,0,1,0,4,0,0,0,0,4, ldraw_lib__4_4ndis(realsolid)],
 // 
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -60 22 0 0 -2 0 4 0 0 0 0 4 bump5000.dat
-  [1,16,-60,22,0,0,-2,0,4,0,0,0,0,4, ldraw_lib__bump5000()],
+  [1,16,-60,22,0,0,-2,0,4,0,0,0,0,4, ldraw_lib__bump5000(realsolid)],
 // 
 // 3 16 -60 18 -4 -60 0 -20 -60 18 0
   [3,16,-60,18,-4,-60,0,-20,-60,18,0],
@@ -84,5 +85,5 @@ function ldraw_lib__73090b() = [
   [4,16,-60,18,-4,-60,22,-4,-60,48,-20,-60,0,-20],
 ];
 module ldraw_lib__73090b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__73090b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__73090b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__73090b(line=0.2);

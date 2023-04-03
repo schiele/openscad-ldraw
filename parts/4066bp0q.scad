@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/4066bs01.scad>
-function ldraw_lib__4066bp0q() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4066bp0q(realsolid=false) = [
 // 0 Duplo Brick  1 x  2 x  2 with Screwdriver and Wrench Pattern
 // 0 Name: 4066bp0q.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -18,7 +19,7 @@ function ldraw_lib__4066bp0q() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4066bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4066bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4066bs01(realsolid)],
 // 4 14 -15.5 7 -20 -26 7 -20 -29 18 -20 -12.5 18 -20
   [4,14,-15.5,7,-20,-26,7,-20,-29,18,-20,-12.5,18,-20],
 // 4 14 -12.5 18 -20 -29 18 -20 -27 19 -20 -14.5 19 -20
@@ -465,5 +466,5 @@ function ldraw_lib__4066bp0q() = [
   [4,16,14.5,72.5,-20,10.25,70.75,-20,14,82.25,-20,16.25,77.5,-20],
 ];
 module ldraw_lib__4066bp0q(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4066bp0q(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4066bp0q(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4066bp0q(line=0.2);

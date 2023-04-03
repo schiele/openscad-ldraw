@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/86210s01.scad>
-function ldraw_lib__86210p01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__86210p01(realsolid=false) = [
 // 0 Glass for Window  1 x  4 x  3 Opening with "ACE BRICKMAN PRIVATE DETECTIVE" Sign
 // 0 Name: 86210p01.dat
 // 0 Author: Willy Tschager [Holly-Wood]
@@ -19,7 +20,7 @@ function ldraw_lib__86210p01() = [
 // 
 // 0 // Subfile without front or back face
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\86210s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__86210s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__86210s01(realsolid)],
 // 
 // 0 // Back
 // 3 16 -33.5 3.385 2 -28.5 3.385 2 -33.5 8 2
@@ -2784,5 +2785,5 @@ function ldraw_lib__86210p01() = [
   [4,16,28.5,3.385,-2,20.938,8,-2,33.5,8,-2,33.5,3.385,-2],
 ];
 module ldraw_lib__86210p01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__86210p01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__86210p01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__86210p01(line=0.2);

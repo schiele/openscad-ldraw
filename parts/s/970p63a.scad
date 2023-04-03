@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__970p63a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__970p63a(realsolid=false) = [
 // 0 ~Minifig Hips with Robot Pattern - Silver (Obsolete)
 // 0 Name: s\970p63a.dat
 // 0 Author: Chris Dee [cwdee]
@@ -34,5 +35,5 @@ function ldraw_lib__s__970p63a() = [
 // 0
 ];
 module ldraw_lib__s__970p63a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__970p63a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__970p63a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__970p63a(line=0.2);

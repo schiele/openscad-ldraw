@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/4-4cylc.scad>
-function ldraw_lib__s__64805s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__64805s01(realsolid=false) = [
 // 0 ~Minifig Head Ewok Fur
 // 0 Name: s\64805s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -17,7 +18,7 @@ function ldraw_lib__s__64805s01() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -24 0 6 0 0 0 24 0 0 0 6 4-4cylc.dat
-  [1,16,0,-24,0,6,0,0,0,24,0,0,0,6, ldraw_lib__4_4cylc()],
+  [1,16,0,-24,0,6,0,0,0,24,0,0,0,6, ldraw_lib__4_4cylc(realsolid)],
 // 4 16 5.54 0 -2.3 6 0 0 15.88 0 2.08 15.88 0 -3.91
   [4,16,5.54,0,-2.3,6,0,0,15.88,0,2.08,15.88,0,-3.91],
 // 4 16 15.67 0 -7.99 4.24 0 -4.24 5.54 0 -2.3 15.88 0 -3.91
@@ -9970,5 +9971,5 @@ function ldraw_lib__s__64805s01() = [
   [5,24,-19.23,2.93,8.36,-13.94,12.57,16.07,-17.6,5.42,13.73,-15.88,9.35,12.02],
 ];
 module ldraw_lib__s__64805s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__64805s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__64805s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__64805s01(line=0.2);

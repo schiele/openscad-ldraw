@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3960s01.scad>
-function ldraw_lib__3960ps3() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3960ps3(realsolid=false) = [
 // 0 Dish  4 x  4 Inverted with Sith Pattern
 // 0 Name: 3960ps3.dat
 // 0 Author: Damien Roux [Darats]
@@ -17,7 +18,7 @@ function ldraw_lib__3960ps3() = [
 // 
 // 
 // 1 16 0 0 0 0 0 1 0 1 0 -1 0 0 s\3960s01.dat
-  [1,16,0,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__s__3960s01()],
+  [1,16,0,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__s__3960s01(realsolid)],
 // 0 // Pattern
 // 4 0 10.41 0.083 -1.371 10.5 0.083 0 10 0 0 9.914 0 -1.305
   [4,0,10.41,0.083,-1.371,10.5,0.083,0,10,0,0,9.914,0,-1.305],
@@ -4317,5 +4318,5 @@ function ldraw_lib__3960ps3() = [
   [5,24,-33.807,6,-9.059,-38.637,8,-10.353,-39.656,8,-5.222,-32.334,6,-13.393],
 ];
 module ldraw_lib__3960ps3(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3960ps3(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3960ps3(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3960ps3(line=0.2);

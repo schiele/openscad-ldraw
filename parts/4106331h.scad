@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__4106331h() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4106331h(realsolid=false) = [
 // 0 Sticker  1.5 x  0.8 with "WE TRADE GOLD" Sign and Ornament
 // 0 Name: 4106331h.dat
 // 0 Author: Willy Tschager [Holly-Wood]
@@ -19,7 +20,7 @@ function ldraw_lib__4106331h() = [
 // 
 // 0 // Box
 // 1 16 0 -.25 0 15 0 0 0 .25 0 0 0 30 box5-12.dat
-  [1,16,0,-.25,0,15,0,0,0,.25,0,0,0,30, ldraw_lib__box5_12()],
+  [1,16,0,-.25,0,15,0,0,0,.25,0,0,0,30, ldraw_lib__box5_12(realsolid)],
 // 
 // 0 // Black
 // 4 0 8.867 -.25 -8.638 9.055 -.25 -8.381 8.955 -.25 -8.343 8.791 -.25 -8.568
@@ -3986,5 +3987,5 @@ function ldraw_lib__4106331h() = [
   [4,15,15,-.25,-21,13.359,-.25,-21.035,13.359,-.25,-25.6,15,-.25,-30],
 ];
 module ldraw_lib__4106331h(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4106331h(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4106331h(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4106331h(line=0.2);

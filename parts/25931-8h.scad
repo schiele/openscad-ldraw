@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/2593s02.scad>
-function ldraw_lib__25931_8h() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__25931_8h(realsolid=false) = [
 // 0 ~Moved to s\2593s02
 // 0 Name: 25931-8h.dat
 // 0 Author: [PTadmin]
@@ -20,8 +21,8 @@ function ldraw_lib__25931_8h() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2593s02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2593s02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2593s02(realsolid)],
 ];
 module ldraw_lib__25931_8h(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__25931_8h(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__25931_8h(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__25931_8h(line=0.2);

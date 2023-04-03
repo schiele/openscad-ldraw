@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__logoferraris02b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__logoferraris02b(realsolid=false) = [
 // 0 ~Logo Ferrari Horse Emblem Background
 // 0 Name: s\logoferraris02b.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -2715,5 +2716,5 @@ function ldraw_lib__s__logoferraris02b() = [
   [4,16,4,0,-5.625,4,0,-1.8,3.3,0,-3.3,3.3,0,-5],
 ];
 module ldraw_lib__s__logoferraris02b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__logoferraris02b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__logoferraris02b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__logoferraris02b(line=0.2);

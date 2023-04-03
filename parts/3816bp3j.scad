@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3817bs01.scad>
-function ldraw_lib__3816bp3j() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3816bp3j(realsolid=false) = [
 // 0 Minifig Leg Right with Grass Skirt Pattern
 // 0 Name: 3816bp3j.dat
 // 0 Author: Alex Taylor [anathema]
@@ -23,7 +24,7 @@ function ldraw_lib__3816bp3j() = [
 // 
 // 
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\3817bs01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__3817bs01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__3817bs01(realsolid)],
 // 4 16 -1.5 20 -10 -1.5 20 -4 -19.23 20 -4 -19.23 20 -10
   [4,16,-1.5,20,-10,-1.5,20,-4,-19.23,20,-4,-19.23,20,-10],
 // 4 2 -15.502 7.45 -4 -15.3 8 -4 -14.2 8 -4 -12.686 7.493 -4
@@ -168,5 +169,5 @@ function ldraw_lib__3816bp3j() = [
   [5,24,-2,3.349,-8.084,-15.465,3.349,-8.084,-14.64,.7,-8.611,-8.48,4.8,-7.114],
 ];
 module ldraw_lib__3816bp3j(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3816bp3j(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3816bp3j(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3816bp3j(line=0.2);

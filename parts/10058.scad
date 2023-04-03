@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/10058s01.scad>
-function ldraw_lib__10058() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__10058(realsolid=false) = [
 // 0 Minifig Arm Wiry Bent with Clip
 // 0 Name: 10058.dat
 // 0 Author: Christian Neumann [Wesley]
@@ -22,9 +23,9 @@ function ldraw_lib__10058() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\10058s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__10058s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__10058s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\10058s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__10058s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__10058s01(realsolid)],
 // 5 24 0 -0.699 6.006 0 -0.307 5.545 3.835 0.233 4.901 -2.694 -0.713 6.017
   [5,24,0,-0.699,6.006,0,-0.307,5.545,3.835,0.233,4.901,-2.694,-0.713,6.017],
 // 5 24 0 -0.415 6.247 0 -0.699 6.006 2.694 -0.713 6.017 -2.694 -0.713 6.017
@@ -71,5 +72,5 @@ function ldraw_lib__10058() = [
   [5,24,0,18.533,-17.126,0,18.515,-15.562,3.026,18.272,-17.155,-3.026,18.272,-17.155],
 ];
 module ldraw_lib__10058(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__10058(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__10058(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__10058(line=0.2);

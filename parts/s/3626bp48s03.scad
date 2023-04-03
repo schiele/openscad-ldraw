@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__3626bp48s03() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__3626bp48s03(realsolid=false) = [
 // 0 ~Minifig Head Eye, Eye Patch and Grin with Upper Lip Pattern
 // 0 Name: s\3626bp48s03.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -203,5 +204,5 @@ function ldraw_lib__s__3626bp48s03() = [
   [4,0,-3.96,15.64,-12.2126,-3.8,16.06,-12.2444,-3.66,14.92,-12.2722,-3.92,15.26,-12.2205],
 ];
 module ldraw_lib__s__3626bp48s03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__3626bp48s03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__3626bp48s03(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__3626bp48s03(line=0.2);

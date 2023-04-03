@@ -2,7 +2,8 @@ use <../lib.scad>
 use <765.scad>
 use <u9020.scad>
 use <u9146.scad>
-function ldraw_lib__765c01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__765c01(realsolid=false) = [
 // 0 Electric Plug (Type 4) Single (Complete)
 // 0 Name: 765c01.dat
 // 0 Author: Chris Dee [cwdee]
@@ -28,12 +29,12 @@ function ldraw_lib__765c01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 765.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__765()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__765(realsolid)],
 // 1 494 0 0 11 1 0 0 0 1 0 0 0 1 u9146.dat
-  [1,494,0,0,11,1,0,0,0,1,0,0,0,1, ldraw_lib__u9146()],
+  [1,494,0,0,11,1,0,0,0,1,0,0,0,1, ldraw_lib__u9146(realsolid)],
 // 1 494 0 -5.5 6 0.707107 0 -0.707107 0 1 0 0.707107 0 0.707107 u9020.dat
-  [1,494,0,-5.5,6,0.707107,0,-0.707107,0,1,0,0.707107,0,0.707107, ldraw_lib__u9020()],
+  [1,494,0,-5.5,6,0.707107,0,-0.707107,0,1,0,0.707107,0,0.707107, ldraw_lib__u9020(realsolid)],
 ];
 module ldraw_lib__765c01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__765c01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__765c01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__765c01(line=0.2);

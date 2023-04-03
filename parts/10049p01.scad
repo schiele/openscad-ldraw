@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/10049s01.scad>
-function ldraw_lib__10049p01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__10049p01(realsolid=false) = [
 // 0 Minifig Shield Broad with Spiked Bottom, Cutout Corner with White Handprint Pattern
 // 0 Name: 10049p01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -23,7 +24,7 @@ function ldraw_lib__10049p01() = [
 // 0 // Main body
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\10049s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__10049s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__10049s01(realsolid)],
 // 
 // 0 // Front Face
 // 4 15 -4.9 -18.8 -8.47 -5.6 -18.6 -8.358 -6 -17.9 -8.272 -4.1 -18.6 -8.583
@@ -408,5 +409,5 @@ function ldraw_lib__10049p01() = [
   [2,24,0,22,-7.675,0,-28.5,-9.569],
 ];
 module ldraw_lib__10049p01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__10049p01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__10049p01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__10049p01(line=0.2);

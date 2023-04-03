@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/4162s01.scad>
-function ldraw_lib__4162p1h() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4162p1h(realsolid=false) = [
 // 0 Tile  1 x  8 with "Statue of Liberty" Pattern
 // 0 Name: 4162p1h.dat
 // 0 Author: Vincent Messenet [Cheenzo]
@@ -19,7 +20,7 @@ function ldraw_lib__4162p1h() = [
 // 0 // Produced by txt2dat, Copyright 2005-2007, 2009 R. Crawford
 // 0 // Using font: "Arial" style: "Regular" size: 50pt
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4162s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4162s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4162s01(realsolid)],
 // 
 // 4 15 -43.086 0 -.961 -44.173 0 -1.056 -43.695 0 -2.62 -42.727 0 -2.032
   [4,15,-43.086,0,-.961,-44.173,0,-1.056,-43.695,0,-2.62,-42.727,0,-2.032],
@@ -841,5 +842,5 @@ function ldraw_lib__4162p1h() = [
   [3,16,-80,0,-10,-43.695,0,-2.62,-44.173,0,-1.056],
 ];
 module ldraw_lib__4162p1h(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4162p1h(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4162p1h(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4162p1h(line=0.2);

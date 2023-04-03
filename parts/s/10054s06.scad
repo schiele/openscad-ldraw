@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__10054s06() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__10054s06(realsolid=false) = [
 // 0 ~Minifig Helmet Castle Rohan with Cheek Protection & Comb - Theoden Pattern
 // 0 Name: s\10054s06.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -2759,5 +2760,5 @@ function ldraw_lib__s__10054s06() = [
   [3,16,12.55,3.6,-9.285,12.95,3.9,-8.718,12.775,3.625,-8.934],
 ];
 module ldraw_lib__s__10054s06(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__10054s06(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__10054s06(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__10054s06(line=0.2);

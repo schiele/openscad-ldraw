@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <1-8ndis.scad>
 use <npeghol3a.scad>
-function ldraw_lib__npeghol4a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__npeghol4a(realsolid=false) = [
 // 0 Technic Peg Hole / Axle Hole Negative with Top Surface Extension without One Edge
 // 0 Name: npeghol4a.dat
 // 0 Author: Max Murtazin [SwampKryakwa]
@@ -16,15 +17,15 @@ function ldraw_lib__npeghol4a() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 npeghol3a.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__npeghol3a()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__npeghol3a(realsolid)],
 // 1 16 0 0 -10 9 0 0 0 1 0 0 0 9 1-8ndis.dat
-  [1,16,0,0,-10,9,0,0,0,1,0,0,0,9, ldraw_lib__1_8ndis()],
+  [1,16,0,0,-10,9,0,0,0,1,0,0,0,9, ldraw_lib__1_8ndis(realsolid)],
 // 1 16 0 0 10 9 0 0 0 1 0 0 0 -9 1-8ndis.dat
-  [1,16,0,0,10,9,0,0,0,1,0,0,0,-9, ldraw_lib__1_8ndis()],
+  [1,16,0,0,10,9,0,0,0,1,0,0,0,-9, ldraw_lib__1_8ndis(realsolid)],
 // 1 16 0 0 10 -9 0 0 0 1 0 0 0 -9 1-8ndis.dat
-  [1,16,0,0,10,-9,0,0,0,1,0,0,0,-9, ldraw_lib__1_8ndis()],
+  [1,16,0,0,10,-9,0,0,0,1,0,0,0,-9, ldraw_lib__1_8ndis(realsolid)],
 // 1 16 0 0 -10 -9 0 0 0 1 0 0 0 9 1-8ndis.dat
-  [1,16,0,0,-10,-9,0,0,0,1,0,0,0,9, ldraw_lib__1_8ndis()],
+  [1,16,0,0,-10,-9,0,0,0,1,0,0,0,9, ldraw_lib__1_8ndis(realsolid)],
 // 3 16 6.3639 0 -1.53212 6.3639 0 -3.6361 9 0 -1
   [3,16,6.3639,0,-1.53212,6.3639,0,-3.6361,9,0,-1],
 // 3 16 6.3639 0 1.53212 9 0 1 6.3639 0 3.6361
@@ -38,13 +39,13 @@ function ldraw_lib__npeghol4a() = [
 // 4 16 6.3639 0 1.53212 6.3639 0 -1.53212 9 0 -1 9 0 1
   [4,16,6.3639,0,1.53212,6.3639,0,-1.53212,9,0,-1,9,0,1],
 // 1 16 0 1 -10 9 0 0 0 -1 0 0 0 9 1-8ndis.dat
-  [1,16,0,1,-10,9,0,0,0,-1,0,0,0,9, ldraw_lib__1_8ndis()],
+  [1,16,0,1,-10,9,0,0,0,-1,0,0,0,9, ldraw_lib__1_8ndis(realsolid)],
 // 1 16 0 1 10 9 0 0 0 -1 0 0 0 -9 1-8ndis.dat
-  [1,16,0,1,10,9,0,0,0,-1,0,0,0,-9, ldraw_lib__1_8ndis()],
+  [1,16,0,1,10,9,0,0,0,-1,0,0,0,-9, ldraw_lib__1_8ndis(realsolid)],
 // 1 16 0 1 10 -9 0 0 0 -1 0 0 0 -9 1-8ndis.dat
-  [1,16,0,1,10,-9,0,0,0,-1,0,0,0,-9, ldraw_lib__1_8ndis()],
+  [1,16,0,1,10,-9,0,0,0,-1,0,0,0,-9, ldraw_lib__1_8ndis(realsolid)],
 // 1 16 0 1 -10 -9 0 0 0 -1 0 0 0 9 1-8ndis.dat
-  [1,16,0,1,-10,-9,0,0,0,-1,0,0,0,9, ldraw_lib__1_8ndis()],
+  [1,16,0,1,-10,-9,0,0,0,-1,0,0,0,9, ldraw_lib__1_8ndis(realsolid)],
 // 3 16 6.3639 1 -3.6361 6.3639 1 -1.53212 9 1 -1
   [3,16,6.3639,1,-3.6361,6.3639,1,-1.53212,9,1,-1],
 // 3 16 9 1 1 6.3639 1 1.53212 6.3639 1 3.6361
@@ -59,5 +60,5 @@ function ldraw_lib__npeghol4a() = [
   [4,16,9,1,-1,6.3639,1,-1.53212,6.3639,1,1.53212,9,1,1],
 ];
 module ldraw_lib__npeghol4a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__npeghol4a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__npeghol4a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__npeghol4a(line=0.2);

@@ -4,7 +4,8 @@ use <s/973psbs01.scad>
 use <s/973psbs02.scad>
 use <s/973psbs03.scad>
 use <s/973s01.scad>
-function ldraw_lib__973psj() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__973psj(realsolid=false) = [
 // 0 Minifig Torso with SW Blast Armour (Silver Plates) Pattern
 // 0 Name: 973psj.dat
 // 0 Author: Thomas Burger [grapeape]
@@ -33,17 +34,17 @@ function ldraw_lib__973psj() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01(realsolid)],
 // 1 15 0 -4 0 4.243 0 -4.243 0 -8 0 -4.243 0 -4.243 1-4cyli.dat
-  [1,15,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli()],
+  [1,15,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973psbs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973psbs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973psbs01(realsolid)],
 // 1 0 0 0 0 1 0 0 0 1 0 0 0 1 s\973psbs02.dat
-  [1,0,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973psbs02()],
+  [1,0,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973psbs02(realsolid)],
 // 1 80 0 0 0 1 0 0 0 1 0 0 0 1 s\973psbs03.dat
-  [1,80,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973psbs03()],
+  [1,80,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973psbs03(realsolid)],
 // 1 80 0 0 0 -1 0 0 0 1 0 0 0 1 s\973psbs03.dat
-  [1,80,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__973psbs03()],
+  [1,80,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__973psbs03(realsolid)],
 // 4 80 -8.3 25.6 -10 -10.7 25.6 -10 -10.7 27.8 -10 -8.3 27.8 -10
   [4,80,-8.3,25.6,-10,-10.7,25.6,-10,-10.7,27.8,-10,-8.3,27.8,-10],
 // 4 80 8.3 27.8 -10 10.7 27.8 -10 10.7 25.6 -10 8.3 25.6 -10
@@ -74,5 +75,5 @@ function ldraw_lib__973psj() = [
   [4,0,9.55,8.72,-10,5.1,8.72,-10,5.1,9.4,-10,9.55,9.4,-10],
 ];
 module ldraw_lib__973psj(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__973psj(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__973psj(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__973psj(line=0.2);

@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/4-4disc.scad>
 use <../../p/4-4ndis.scad>
-function ldraw_lib__s__973phbs01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__973phbs01(realsolid=false) = [
 // 0 ~Minifig Torso with Purple Greatcoat without Border
 // 0 Name: s\973phbs01.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -16,13 +17,13 @@ function ldraw_lib__s__973phbs01() = [
 // 
 // 
 // 1 22 2.75 14.75 -10 1 0 0 0 0 1 0 1 0 4-4ndis.dat
-  [1,22,2.75,14.75,-10,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4ndis()],
+  [1,22,2.75,14.75,-10,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4ndis(realsolid)],
 // 1 22 3.5 19.5 -10 1 0 0 0 0 1 0 1 0 4-4ndis.dat
-  [1,22,3.5,19.5,-10,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4ndis()],
+  [1,22,3.5,19.5,-10,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4ndis(realsolid)],
 // 1 22 3 24.75 -10 1 0 0 0 0 1 0 1 0 4-4ndis.dat
-  [1,22,3,24.75,-10,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4ndis()],
+  [1,22,3,24.75,-10,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4ndis(realsolid)],
 // 1 22 3.25 29 -10 1 0 0 0 0 1 0 1 0 4-4ndis.dat
-  [1,22,3.25,29,-10,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4ndis()],
+  [1,22,3.25,29,-10,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4ndis(realsolid)],
 // 4 22 11 16 -10 14.5 15 -10 14 11 -10 7.5 11.5 -10
   [4,22,11,16,-10,14.5,15,-10,14,11,-10,7.5,11.5,-10],
 // 4 22 -1 3 -10 0 3.5 -10 1 3 -10 0 1 -10
@@ -155,13 +156,13 @@ function ldraw_lib__s__973phbs01() = [
   [3,22,-2.5,9.5,-10,-0.5,10.25,-10,-3.5,4.75,-10],
 // 
 // 1 16 2.75 14.75 -10 1 0 0 0 0 1 0 1 0 4-4disc.dat
-  [1,16,2.75,14.75,-10,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4disc()],
+  [1,16,2.75,14.75,-10,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 16 3.5 19.5 -10 1 0 0 0 0 1 0 1 0 4-4disc.dat
-  [1,16,3.5,19.5,-10,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4disc()],
+  [1,16,3.5,19.5,-10,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 16 3 24.75 -10 1 0 0 0 0 1 0 1 0 4-4disc.dat
-  [1,16,3,24.75,-10,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4disc()],
+  [1,16,3,24.75,-10,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 16 3.25 29 -10 1 0 0 0 0 1 0 1 0 4-4disc.dat
-  [1,16,3.25,29,-10,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4disc()],
+  [1,16,3.25,29,-10,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 4 16 7.25 19.75 -10 10.75 17 -10 11 16 -10 6.5 19.5 -10
   [4,16,7.25,19.75,-10,10.75,17,-10,11,16,-10,6.5,19.5,-10],
 // 4 16 -12 25.75 -10 -13 24 -10 -13 25 -10 -12 27 -10
@@ -250,5 +251,5 @@ function ldraw_lib__s__973phbs01() = [
   [4,16,-.5,9,-10,.5,9,-10,1.5,4,-10,0,4.5,-10],
 ];
 module ldraw_lib__s__973phbs01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__973phbs01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__973phbs01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__973phbs01(line=0.2);

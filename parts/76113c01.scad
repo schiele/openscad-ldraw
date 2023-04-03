@@ -6,7 +6,8 @@ use <71645p01.scad>
 use <71645p02.scad>
 use <71748.scad>
 use <76113.scad>
-function ldraw_lib__76113c01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__76113c01(realsolid=false) = [
 // 0 ~Electric Mindstorms RCX 1.0 Module
 // 0 Name: 76113c01.dat
 // 0 Author: John Van Zwieten [jvan]
@@ -28,16 +29,16 @@ function ldraw_lib__76113c01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 76113.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__76113()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__76113(realsolid)],
 // 0 // Curcuit board
 // 1 2 0 0 0 1 0 0 0 1 0 0 0 1 71748.dat
-  [1,2,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__71748()],
+  [1,2,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__71748(realsolid)],
 // 0 // Battery box
 // 1 2 0 40 0 1 0 0 0 1 0 0 0 1 32116.dat
-  [1,2,0,40,0,1,0,0,0,1,0,0,0,1, ldraw_lib__32116()],
+  [1,2,0,40,0,1,0,0,0,1,0,0,0,1, ldraw_lib__32116(realsolid)],
 // 0 // IR Glass
 // 1 32 0 0 0 1 0 0 0 1 0 0 0 1 32110.dat
-  [1,32,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__32110()],
+  [1,32,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__32110(realsolid)],
 // 0 // vision blocker, behind the IR glass
 // 4 0 62 14 -114 62 14 -95 -62 14 -95 -62 14 -114
   [4,0,62,14,-114,62,14,-95,-62,14,-95,-62,14,-114],
@@ -46,24 +47,24 @@ function ldraw_lib__76113c01() = [
 // 0 // Rubber Buttons
 // 0 // green/grey
 // 1 67 -58 12 -9 1 0 0 0 1 0 0 0 1 71645p02.dat
-  [1,67,-58,12,-9,1,0,0,0,1,0,0,0,1, ldraw_lib__71645p02()],
+  [1,67,-58,12,-9,1,0,0,0,1,0,0,0,1, ldraw_lib__71645p02(realsolid)],
 // 0 // red/black
 // 1 67 58 12 -9 1 0 0 0 1 0 0 0 1 71645p01.dat
-  [1,67,58,12,-9,1,0,0,0,1,0,0,0,1, ldraw_lib__71645p01()],
+  [1,67,58,12,-9,1,0,0,0,1,0,0,0,1, ldraw_lib__71645p01(realsolid)],
 // 0 // Ports
 // 1 0 -40 8 40 0 0 1 0 1 0 -1 0 0 6554c01.dat
-  [1,0,-40,8,40,0,0,1,0,1,0,-1,0,0, ldraw_lib__6554c01()],
+  [1,0,-40,8,40,0,0,1,0,1,0,-1,0,0, ldraw_lib__6554c01(realsolid)],
 // 1 0 0 8 40 0 0 1 0 1 0 -1 0 0 6554c01.dat
-  [1,0,0,8,40,0,0,1,0,1,0,-1,0,0, ldraw_lib__6554c01()],
+  [1,0,0,8,40,0,0,1,0,1,0,-1,0,0, ldraw_lib__6554c01(realsolid)],
 // 1 0 40 8 40 0 0 1 0 1 0 -1 0 0 6554c01.dat
-  [1,0,40,8,40,0,0,1,0,1,0,-1,0,0, ldraw_lib__6554c01()],
+  [1,0,40,8,40,0,0,1,0,1,0,-1,0,0, ldraw_lib__6554c01(realsolid)],
 // 1 8 -40 8 -60 0 0 1 0 1 0 -1 0 0 6554c01.dat
-  [1,8,-40,8,-60,0,0,1,0,1,0,-1,0,0, ldraw_lib__6554c01()],
+  [1,8,-40,8,-60,0,0,1,0,1,0,-1,0,0, ldraw_lib__6554c01(realsolid)],
 // 1 8 0 8 -60 0 0 1 0 1 0 -1 0 0 6554c01.dat
-  [1,8,0,8,-60,0,0,1,0,1,0,-1,0,0, ldraw_lib__6554c01()],
+  [1,8,0,8,-60,0,0,1,0,1,0,-1,0,0, ldraw_lib__6554c01(realsolid)],
 // 1 8 40 8 -60 0 0 1 0 1 0 -1 0 0 6554c01.dat
-  [1,8,40,8,-60,0,0,1,0,1,0,-1,0,0, ldraw_lib__6554c01()],
+  [1,8,40,8,-60,0,0,1,0,1,0,-1,0,0, ldraw_lib__6554c01(realsolid)],
 ];
 module ldraw_lib__76113c01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__76113c01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__76113c01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__76113c01(line=0.2);

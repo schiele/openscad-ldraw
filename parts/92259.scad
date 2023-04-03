@@ -8,7 +8,8 @@ use <../p/7-16cyli.scad>
 use <../p/stud4od.scad>
 use <../p/t04o6250.scad>
 use <../p/t08o6250.scad>
-function ldraw_lib__92259() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__92259(realsolid=false) = [
 // 0 Figure Friends Hair Short, Bob Cut
 // 0 Name: 92259.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -28,47 +29,47 @@ function ldraw_lib__92259() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 4 0 -5.65685 0 -5.65685 0 -6.4 0 -5.65685 0 5.65685 t08o6250.dat
-  [1,16,0,4,0,-5.65685,0,-5.65685,0,-6.4,0,-5.65685,0,5.65685, ldraw_lib__t08o6250()],
+  [1,16,0,4,0,-5.65685,0,-5.65685,0,-6.4,0,-5.65685,0,5.65685, ldraw_lib__t08o6250(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 4 0 3.06147 0 7.39103 0 -6.4 0 7.39103 0 -3.06147 t04o6250.dat
-  [1,16,0,4,0,3.06147,0,7.39103,0,-6.4,0,7.39103,0,-3.06147, ldraw_lib__t04o6250()],
+  [1,16,0,4,0,3.06147,0,7.39103,0,-6.4,0,7.39103,0,-3.06147, ldraw_lib__t04o6250(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 4 0 -7.39103 0 3.06147 0 -6.4 0 3.06147 0 7.39103 t04o6250.dat
-  [1,16,0,4,0,-7.39103,0,3.06147,0,-6.4,0,3.06147,0,7.39103, ldraw_lib__t04o6250()],
+  [1,16,0,4,0,-7.39103,0,3.06147,0,-6.4,0,3.06147,0,7.39103, ldraw_lib__t04o6250(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 4 0 13 0 0 0 13 0 0 0 13 7-16cyli.dat
-  [1,16,0,4,0,13,0,0,0,13,0,0,0,13, ldraw_lib__7_16cyli()],
+  [1,16,0,4,0,13,0,0,0,13,0,0,0,13, ldraw_lib__7_16cyli(realsolid)],
 // 1 16 0 -6 0 -1 0 0 0 -1.5 0 0 0 1 stud4od.dat
-  [1,16,0,-6,0,-1,0,0,0,-1.5,0,0,0,1, ldraw_lib__stud4od()],
+  [1,16,0,-6,0,-1,0,0,0,-1.5,0,0,0,1, ldraw_lib__stud4od(realsolid)],
 // 1 16 0 -6 0 2 0 0 0 -1 0 0 0 2 4-4edge.dat
-  [1,16,0,-6,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__4_4edge()],
+  [1,16,0,-6,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 -6 0 2 0 0 0 -1 0 0 0 2 4-4ring1.dat
-  [1,16,0,-6,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__4_4ring1()],
+  [1,16,0,-6,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__4_4ring1(realsolid)],
 // 1 16 0 -6 0 2 0 0 0 -1 0 0 0 2 4-4ring2.dat
-  [1,16,0,-6,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__4_4ring2()],
+  [1,16,0,-6,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__4_4ring2(realsolid)],
 // 1 16 0 -11.2 0 2 0 0 0 1 -0.2 0 0 2 4-4edge.dat
-  [1,16,0,-11.2,0,2,0,0,0,1,-0.2,0,0,2, ldraw_lib__4_4edge()],
+  [1,16,0,-11.2,0,2,0,0,0,1,-0.2,0,0,2, ldraw_lib__4_4edge(realsolid)],
 // 1 16 -18.6 4.2 2.2 0.4 1 0 -2 0 0 0 0 2 4-4edge.dat
-  [1,16,-18.6,4.2,2.2,0.4,1,0,-2,0,0,0,0,2, ldraw_lib__4_4edge()],
+  [1,16,-18.6,4.2,2.2,0.4,1,0,-2,0,0,0,0,2, ldraw_lib__4_4edge(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -11 0 0 0 2 0 -0.2 0 -2 0 0 4-4cyls.dat
-  [1,16,0,-11,0,0,0,2,0,-0.2,0,-2,0,0, ldraw_lib__4_4cyls()],
+  [1,16,0,-11,0,0,0,2,0,-0.2,0,-2,0,0, ldraw_lib__4_4cyls(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -11 0 2 0 0 0 5 0 0 0 2 4-4cyli.dat
-  [1,16,0,-11,0,2,0,0,0,5,0,0,0,2, ldraw_lib__4_4cyli()],
+  [1,16,0,-11,0,2,0,0,0,5,0,0,0,2, ldraw_lib__4_4cyli(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -18.2 4.2 2.2 0 4.7 0 -2 0 0 0 0 2 4-4cyli.dat
-  [1,16,-18.2,4.2,2.2,0,4.7,0,-2,0,0,0,0,2, ldraw_lib__4_4cyli()],
+  [1,16,-18.2,4.2,2.2,0,4.7,0,-2,0,0,0,0,2, ldraw_lib__4_4cyli(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -18.2 4.2 2.2 0 -0.4 0 -2 0 0 0 0 2 4-4cyls.dat
-  [1,16,-18.2,4.2,2.2,0,-0.4,0,-2,0,0,0,0,2, ldraw_lib__4_4cyls()],
+  [1,16,-18.2,4.2,2.2,0,-0.4,0,-2,0,0,0,0,2, ldraw_lib__4_4cyls(realsolid)],
 // 3 16 11.68 -6.13 -2.98 10.5 -7.61 -0.38 8.85 -8.03 -0.44
   [3,16,11.68,-6.13,-2.98,10.5,-7.61,-0.38,8.85,-8.03,-0.44],
 // 3 16 -15.44 13.94 10.4 -14.58 13.94 11.28 -13.83 17.66 10.84
@@ -6693,5 +6694,5 @@ function ldraw_lib__92259() = [
   [5,24,-13.5,3.435,4.048,-12.05,3.43,4.05,-13.5,2.786,3.614,-13.5,4,4.16],
 ];
 module ldraw_lib__92259(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__92259(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__92259(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__92259(line=0.2);

@@ -2,7 +2,8 @@ use <../lib.scad>
 use <1-8cyli.scad>
 use <4-4cyli.scad>
 use <4-4edge.scad>
-function ldraw_lib__clikitsstud() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__clikitsstud(realsolid=false) = [
 // 0 Clikits Stud
 // 0 Name: clikitsstud.dat
 // 0 Author: Chris Dee [cwdee]
@@ -22,25 +23,25 @@ function ldraw_lib__clikitsstud() = [
 // 0 // Outer diameter of collar 12LDu
 // 
 // 1 16 0 0 0 6 0 0 0 -1 0 0 0 6 4-4cyli.dat
-  [1,16,0,0,0,6,0,0,0,-1,0,0,0,6, ldraw_lib__4_4cyli()],
+  [1,16,0,0,0,6,0,0,0,-1,0,0,0,6, ldraw_lib__4_4cyli(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -4 0 -1.72208 0 -4.15746 0 3 0 4.15746 0 -1.72208 1-8cyli.dat
-  [1,16,0,-4,0,-1.72208,0,-4.15746,0,3,0,4.15746,0,-1.72208, ldraw_lib__1_8cyli()],
+  [1,16,0,-4,0,-1.72208,0,-4.15746,0,3,0,4.15746,0,-1.72208, ldraw_lib__1_8cyli(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -4 0 4.15746 0 -1.72208 0 3 0 1.72208 0 4.15746 1-8cyli.dat
-  [1,16,0,-4,0,4.15746,0,-1.72208,0,3,0,1.72208,0,4.15746, ldraw_lib__1_8cyli()],
+  [1,16,0,-4,0,4.15746,0,-1.72208,0,3,0,1.72208,0,4.15746, ldraw_lib__1_8cyli(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -4 0 -4.15746 0 1.72208 0 3 0 -1.72208 0 -4.15746 1-8cyli.dat
-  [1,16,0,-4,0,-4.15746,0,1.72208,0,3,0,-1.72208,0,-4.15746, ldraw_lib__1_8cyli()],
+  [1,16,0,-4,0,-4.15746,0,1.72208,0,3,0,-1.72208,0,-4.15746, ldraw_lib__1_8cyli(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -4 0 1.72208 0 4.15746 0 3 0 -4.15746 0 1.72208 1-8cyli.dat
-  [1,16,0,-4,0,1.72208,0,4.15746,0,3,0,-4.15746,0,1.72208, ldraw_lib__1_8cyli()],
+  [1,16,0,-4,0,1.72208,0,4.15746,0,3,0,-4.15746,0,1.72208, ldraw_lib__1_8cyli(realsolid)],
 // 1 16 0 0 0 6 0 0 0 -1 0 0 0 6 4-4edge.dat
-  [1,16,0,0,0,6,0,0,0,-1,0,0,0,6, ldraw_lib__4_4edge()],
+  [1,16,0,0,0,6,0,0,0,-1,0,0,0,6, ldraw_lib__4_4edge(realsolid)],
 // 4 16 0.75 -3 -5.85 0.75 -1 -5.85 2.296 -1 -5.543 2.296 -3 -5.543
   [4,16,0.75,-3,-5.85,0.75,-1,-5.85,2.296,-1,-5.543,2.296,-3,-5.543],
 // 4 16 2.296 -3 -5.543 2.296 -1 -5.543 4.243 -1 -4.243 4.243 -3 -4.243
@@ -540,9 +541,9 @@ function ldraw_lib__clikitsstud() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 0 4.5 0 0 0 -1 0 0 0 4.5 4-4cyli.dat
-  [1,16,0,0,0,4.5,0,0,0,-1,0,0,0,4.5, ldraw_lib__4_4cyli()],
+  [1,16,0,0,0,4.5,0,0,0,-1,0,0,0,4.5, ldraw_lib__4_4cyli(realsolid)],
 // 0
 ];
 module ldraw_lib__clikitsstud(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__clikitsstud(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__clikitsstud(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__clikitsstud(line=0.2);

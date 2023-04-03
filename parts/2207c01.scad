@@ -2,7 +2,8 @@ use <../lib.scad>
 use <2206.scad>
 use <2207.scad>
 use <2208.scad>
-function ldraw_lib__2207c01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2207c01(realsolid=false) = [
 // 0 Duplo Building  6 x  8 x  6 with Front Windows with White Doors and Windows
 // 0 Name: 2207c01.dat
 // 0 Author: Tim Lampmann [L4mpi]
@@ -19,17 +20,17 @@ function ldraw_lib__2207c01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 2207.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2207()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2207(realsolid)],
 // 
 // 1 15 -134.5 22 117 1 0 0 0 1 0 0 0 1 2208.dat
-  [1,15,-134.5,22,117,1,0,0,0,1,0,0,0,1, ldraw_lib__2208()],
+  [1,15,-134.5,22,117,1,0,0,0,1,0,0,0,1, ldraw_lib__2208(realsolid)],
 // 1 15 134.5 22 117 -1 0 0 0 1 0 0 0 -1 2208.dat
-  [1,15,134.5,22,117,-1,0,0,0,1,0,0,0,-1, ldraw_lib__2208()],
+  [1,15,134.5,22,117,-1,0,0,0,1,0,0,0,-1, ldraw_lib__2208(realsolid)],
 // 1 15 -139.5 85 -117 1 0 0 0 1 0 0 0 1 2206.dat
-  [1,15,-139.5,85,-117,1,0,0,0,1,0,0,0,1, ldraw_lib__2206()],
+  [1,15,-139.5,85,-117,1,0,0,0,1,0,0,0,1, ldraw_lib__2206(realsolid)],
 // 1 15 139.5 85 -117 -1 0 0 0 1 0 0 0 -1 2206.dat
-  [1,15,139.5,85,-117,-1,0,0,0,1,0,0,0,-1, ldraw_lib__2206()],
+  [1,15,139.5,85,-117,-1,0,0,0,1,0,0,0,-1, ldraw_lib__2206(realsolid)],
 ];
 module ldraw_lib__2207c01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2207c01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2207c01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2207c01(line=0.2);

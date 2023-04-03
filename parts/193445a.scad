@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__193445a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__193445a(realsolid=false) = [
 // 0 Sticker  1.6 x  5.7 with Red Helicopter
 // 0 Name: 193445a.dat
 // 0 Author: Ulrich Röder [UR]
@@ -19,7 +20,7 @@ function ldraw_lib__193445a() = [
 // 0 // Main
 // 
 // 1 16 0 -0.25 0 57 0 0 0 0.25 0 0 0 16 box5-12.dat
-  [1,16,0,-0.25,0,57,0,0,0,0.25,0,0,0,16, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,57,0,0,0,0.25,0,0,0,16, ldraw_lib__box5_12(realsolid)],
 // 
 // 0 // Red
 // 4 4 -12.632 -.25 -2.46 -11.696 -.25 1.492 -16.688 -.25 1.492 -22.512 -.25 -2.46
@@ -388,5 +389,5 @@ function ldraw_lib__193445a() = [
   [3,0,57,-0.25,-16,40.512,-0.25,-14.108,40.414,-0.25,-14.288],
 ];
 module ldraw_lib__193445a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__193445a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__193445a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__193445a(line=0.2);

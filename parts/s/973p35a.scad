@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/4-4disc.scad>
-function ldraw_lib__s__973p35a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__973p35a(realsolid=false) = [
 // 0 ~Minifig Torso with Imperial Guard Pattern - Gold
 // 0 Name: s\973p35a.dat
 // 0 Author: Chris Dee [cwdee]
@@ -40,19 +41,19 @@ function ldraw_lib__s__973p35a() = [
 // 3 16 -14.5 32 -10 -12.5 30 -10 -10.5 32 -10
   [3,16,-14.5,32,-10,-12.5,30,-10,-10.5,32,-10],
 // 1 16 0 1.5 -10 -.75 0 0 0 0 0.75 0 1 0 4-4disc.dat
-  [1,16,0,1.5,-10,-.75,0,0,0,0,0.75,0,1,0, ldraw_lib__4_4disc()],
+  [1,16,0,1.5,-10,-.75,0,0,0,0,0.75,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 5.5 -10 -.75 0 0 0 0 0.75 0 1 0 4-4disc.dat
-  [1,16,0,5.5,-10,-.75,0,0,0,0,0.75,0,1,0, ldraw_lib__4_4disc()],
+  [1,16,0,5.5,-10,-.75,0,0,0,0,0.75,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 18 -10 -.75 0 0 0 0 0.75 0 1 0 4-4disc.dat
-  [1,16,0,18,-10,-.75,0,0,0,0,0.75,0,1,0, ldraw_lib__4_4disc()],
+  [1,16,0,18,-10,-.75,0,0,0,0,0.75,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 22 -10 -.75 0 0 0 0 0.75 0 1 0 4-4disc.dat
-  [1,16,0,22,-10,-.75,0,0,0,0,0.75,0,1,0, ldraw_lib__4_4disc()],
+  [1,16,0,22,-10,-.75,0,0,0,0,0.75,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 26 -10 -.75 0 0 0 0 0.75 0 1 0 4-4disc.dat
-  [1,16,0,26,-10,-.75,0,0,0,0,0.75,0,1,0, ldraw_lib__4_4disc()],
+  [1,16,0,26,-10,-.75,0,0,0,0,0.75,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 30 -10 -.75 0 0 0 0 0.75 0 1 0 4-4disc.dat
-  [1,16,0,30,-10,-.75,0,0,0,0,0.75,0,1,0, ldraw_lib__4_4disc()],
+  [1,16,0,30,-10,-.75,0,0,0,0,0.75,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 0
 ];
 module ldraw_lib__s__973p35a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__973p35a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__973p35a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__973p35a(line=0.2);

@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/2-4cylc.scad>
 use <../../p/2-4ndis.scad>
-function ldraw_lib__s__80679s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__80679s01(realsolid=false) = [
 // 0 ~Animal Squirrel Standing Body Half without Patternable Areas
 // 0 Name: s\80679s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -18,9 +19,9 @@ function ldraw_lib__s__80679s01() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -21 0 0 0 -6 0 21 0 6 0 0 2-4cylc.dat
-  [1,16,0,-21,0,0,0,-6,0,21,0,6,0,0, ldraw_lib__2_4cylc()],
+  [1,16,0,-21,0,0,0,-6,0,21,0,6,0,0, ldraw_lib__2_4cylc(realsolid)],
 // 1 16 0 0 0 0 0 -6 0 -1 0 6 0 0 2-4ndis.dat
-  [1,16,0,0,0,0,0,-6,0,-1,0,6,0,0, ldraw_lib__2_4ndis()],
+  [1,16,0,0,0,0,0,-6,0,-1,0,6,0,0, ldraw_lib__2_4ndis(realsolid)],
 // 
 // 3 16 -1.0684 -25.26 -19.1848 0 -25.394 -19.2477 -1.3663 -27.3105 -18.019
   [3,16,-1.0684,-25.26,-19.1848,0,-25.394,-19.2477,-1.3663,-27.3105,-18.019],
@@ -3603,5 +3604,5 @@ function ldraw_lib__s__80679s01() = [
   [5,24,0,-25.394,-19.2477,0,-27.4584,-18.0662,1.3663,-27.3105,-18.019,-1.3663,-27.3105,-18.019],
 ];
 module ldraw_lib__s__80679s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__80679s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__80679s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__80679s01(line=0.2);

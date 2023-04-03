@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4ndis.scad>
 use <s/004315s01.scad>
-function ldraw_lib__004315a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__004315a(realsolid=false) = [
 // 0 Sticker Minifig Torso with Yellow Buttons and Grey Belt
 // 0 Name: 004315a.dat
 // 0 Author: Michael Heidemann [mikeheide]
@@ -18,7 +19,7 @@ function ldraw_lib__004315a() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\004315s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__004315s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__004315s01(realsolid)],
 // 4 7 -18 -0.25 -15 18 -0.25 -15 16.929 -0.25 -10 -16.929 -0.25 -10
   [4,7,-18,-0.25,-15,18,-0.25,-15,16.929,-0.25,-10,-16.929,-0.25,-10],
 // 4 0 1.5 -0.25 -6.5 -1.5 -0.25 -6.5 -16.929 -0.25 -10 16.929 -0.25 -10
@@ -72,22 +73,22 @@ function ldraw_lib__004315a() = [
 // 4 0 1.5 -0.25 11.5 8.5 -0.25 15 -8.5 -0.25 15 -1.5 -0.25 11.5
   [4,0,1.5,-0.25,11.5,8.5,-0.25,15,-8.5,-0.25,15,-1.5,-0.25,11.5],
 // 1 14 0 -.25 10 1.5 0 0 0 1.5 0 0 0 1.5 4-4disc.dat
-  [1,14,0,-.25,10,1.5,0,0,0,1.5,0,0,0,1.5, ldraw_lib__4_4disc()],
+  [1,14,0,-.25,10,1.5,0,0,0,1.5,0,0,0,1.5, ldraw_lib__4_4disc(realsolid)],
 // 1 14 0 -.25 5 1.5 0 0 0 1.5 0 0 0 1.5 4-4disc.dat
-  [1,14,0,-.25,5,1.5,0,0,0,1.5,0,0,0,1.5, ldraw_lib__4_4disc()],
+  [1,14,0,-.25,5,1.5,0,0,0,1.5,0,0,0,1.5, ldraw_lib__4_4disc(realsolid)],
 // 1 14 0 -.25 0 1.5 0 0 0 1.5 0 0 0 1.5 4-4disc.dat
-  [1,14,0,-.25,0,1.5,0,0,0,1.5,0,0,0,1.5, ldraw_lib__4_4disc()],
+  [1,14,0,-.25,0,1.5,0,0,0,1.5,0,0,0,1.5, ldraw_lib__4_4disc(realsolid)],
 // 1 14 0 -.25 -5 1.5 0 0 0 1.5 0 0 0 1.5 4-4disc.dat
-  [1,14,0,-.25,-5,1.5,0,0,0,1.5,0,0,0,1.5, ldraw_lib__4_4disc()],
+  [1,14,0,-.25,-5,1.5,0,0,0,1.5,0,0,0,1.5, ldraw_lib__4_4disc(realsolid)],
 // 1 0 0 -.25 -5 1.5 0 0 0 1.5 0 0 0 1.5 4-4ndis.dat
-  [1,0,0,-.25,-5,1.5,0,0,0,1.5,0,0,0,1.5, ldraw_lib__4_4ndis()],
+  [1,0,0,-.25,-5,1.5,0,0,0,1.5,0,0,0,1.5, ldraw_lib__4_4ndis(realsolid)],
 // 1 0 0 -.25 0 1.5 0 0 0 1.5 0 0 0 1.5 4-4ndis.dat
-  [1,0,0,-.25,0,1.5,0,0,0,1.5,0,0,0,1.5, ldraw_lib__4_4ndis()],
+  [1,0,0,-.25,0,1.5,0,0,0,1.5,0,0,0,1.5, ldraw_lib__4_4ndis(realsolid)],
 // 1 0 0 -.25 5 1.5 0 0 0 1.5 0 0 0 1.5 4-4ndis.dat
-  [1,0,0,-.25,5,1.5,0,0,0,1.5,0,0,0,1.5, ldraw_lib__4_4ndis()],
+  [1,0,0,-.25,5,1.5,0,0,0,1.5,0,0,0,1.5, ldraw_lib__4_4ndis(realsolid)],
 // 1 0 0 -.25 10 1.5 0 0 0 1.5 0 0 0 1.5 4-4ndis.dat
-  [1,0,0,-.25,10,1.5,0,0,0,1.5,0,0,0,1.5, ldraw_lib__4_4ndis()],
+  [1,0,0,-.25,10,1.5,0,0,0,1.5,0,0,0,1.5, ldraw_lib__4_4ndis(realsolid)],
 ];
 module ldraw_lib__004315a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__004315a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__004315a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__004315a(line=0.2);

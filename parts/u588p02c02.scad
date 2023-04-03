@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <u588p02c01.scad>
 use <u9159.scad>
-function ldraw_lib__u588p02c02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__u588p02c02(realsolid=false) = [
 // 0 Figure Fabuland Elephant Head  2 w Neck and Sou'wester Yellow
 // 0 Name: u588p02c02.dat
 // 0 Author: Steffen [Steffen]
@@ -16,11 +17,11 @@ function ldraw_lib__u588p02c02() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 u588p02c01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u588p02c01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u588p02c01(realsolid)],
 // 1 14 0 -57 0 1 0 0 0 1 0 0 0 1 u9159.dat
-  [1,14,0,-57,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9159()],
+  [1,14,0,-57,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9159(realsolid)],
 // 
 ];
 module ldraw_lib__u588p02c02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__u588p02c02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__u588p02c02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__u588p02c02(line=0.2);

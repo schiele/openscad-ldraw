@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <4864a.scad>
-function ldraw_lib__6268a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6268a(realsolid=false) = [
 // 0 =Panel  1 x  2 x  2 with Solid Studs
 // 0 Name: 6268a.dat
 // 0 Author: Chris Dee [cwdee]
@@ -22,9 +23,9 @@ function ldraw_lib__6268a() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 4864a.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4864a()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4864a(realsolid)],
 // 0
 ];
 module ldraw_lib__6268a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6268a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6268a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6268a(line=0.2);

@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/rect2p.scad>
 use <../p/stud4.scad>
-function ldraw_lib__97785() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__97785(realsolid=false) = [
 // 0 Figure Friends Dish Rectangular
 // 0 Name: 97785.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -689,7 +690,7 @@ function ldraw_lib__97785() = [
 // 2 24 9.95 2.25 -9.75 11.102 2.25 -9.441
   [2,24,9.95,2.25,-9.75,11.102,2.25,-9.441],
 // 1 16 0 2.25 0 1 0 0 0 -1.4375 0 0 0 -1 stud4.dat
-  [1,16,0,2.25,0,1,0,0,0,-1.4375,0,0,0,-1, ldraw_lib__stud4()],
+  [1,16,0,2.25,0,1,0,0,0,-1.4375,0,0,0,-1, ldraw_lib__stud4(realsolid)],
 // 2 24 -11.91 0 10.554 -10.202 0 11.099
   [2,24,-11.91,0,10.554,-10.202,0,11.099],
 // 2 24 -13.185 0 9.184 -11.91 0 10.554
@@ -725,7 +726,7 @@ function ldraw_lib__97785() = [
 // 4 16 11.91 0 10.554 10.202 0 11.099 -10.202 0 11.099 -11.91 0 10.554
   [4,16,11.91,0,10.554,10.202,0,11.099,-10.202,0,11.099,-11.91,0,10.554],
 // 1 16 0 0 0 0 0 -13.612 0 1 0 6.506 0 0 rect2p.dat
-  [1,16,0,0,0,0,0,-13.612,0,1,0,6.506,0,0, ldraw_lib__rect2p()],
+  [1,16,0,0,0,0,0,-13.612,0,1,0,6.506,0,0, ldraw_lib__rect2p(realsolid)],
 // 4 16 -13.185 0 -9.184 13.185 0 -9.184 13.612 0 -6.506 -13.612 0 -6.506
   [4,16,-13.185,0,-9.184,13.185,0,-9.184,13.612,0,-6.506,-13.612,0,-6.506],
 // 4 16 -11.91 0 -10.554 11.91 0 -10.554 13.185 0 -9.184 -13.185 0 -9.184
@@ -1083,5 +1084,5 @@ function ldraw_lib__97785() = [
   [5,24,9.95,8,-9.75,9.95,2.25,-9.75,11.102,8,-9.441,-9.95,2.25,-9.75],
 ];
 module ldraw_lib__97785(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__97785(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__97785(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__97785(line=0.2);

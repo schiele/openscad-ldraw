@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/1-4ering.scad>
-function ldraw_lib__s__4150pf3s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__4150pf3s01(realsolid=false) = [
 // 0 ~Tile  2 x  2 Round with Six Purple Hearts on White Background Pattern - Quarter
 // 0 Name: s\4150pf3s01.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -15,7 +16,7 @@ function ldraw_lib__s__4150pf3s01() = [
 // 
 // 
 // 1 16 0 0 0 20 0 0 0 1 0 0 0 20 1-4ering.dat
-  [1,16,0,0,0,20,0,0,0,1,0,0,0,20, ldraw_lib__1_4ering()],
+  [1,16,0,0,0,20,0,0,0,1,0,0,0,20, ldraw_lib__1_4ering(realsolid)],
 // 4 22 0.5 0 5 0 0 5 0 0 2.6 0.5 0 2.6
   [4,22,0.5,0,5,0,0,5,0,0,2.6,0.5,0,2.6],
 // 4 22 0.5 0 5 0.5 0 2.6 1.2 0 3.3 1.2 0 4.3
@@ -136,5 +137,5 @@ function ldraw_lib__s__4150pf3s01() = [
   [4,15,6.3,0,13.2,8.28,0,12.06,9.49,0,12.76,6.3,0,14.6],
 ];
 module ldraw_lib__s__4150pf3s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__4150pf3s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__4150pf3s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__4150pf3s01(line=0.2);

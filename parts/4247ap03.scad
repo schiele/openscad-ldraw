@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/4247as01.scad>
-function ldraw_lib__4247ap03() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4247ap03(realsolid=false) = [
 // 0 Duplo Door  1 x  4 x  3 with Arched Top with Large Window with Blue "FIRE CHIEF" Pattern
 // 0 Name: 4247ap03.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -18,7 +19,7 @@ function ldraw_lib__4247ap03() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4247as01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4247as01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4247as01(realsolid)],
 // 4 1 -128 26 -2.5 -123.5 27 -2.5 -128 24 -2.5 -129 24.5 -2.5
   [4,1,-128,26,-2.5,-123.5,27,-2.5,-128,24,-2.5,-129,24.5,-2.5],
 // 3 1 -129 24.5 -2.5 -129 25.5 -2.5 -128 26 -2.5
@@ -593,5 +594,5 @@ function ldraw_lib__4247ap03() = [
   [3,16,-117.5,9,-2.5,-128,24,-2.5,-118.75,24,-2.5],
 ];
 module ldraw_lib__4247ap03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4247ap03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4247ap03(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4247ap03(line=0.2);

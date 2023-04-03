@@ -3,7 +3,8 @@ use <../../p/4-4cyli.scad>
 use <../../p/4-4disc.scad>
 use <../../p/4-4edge.scad>
 use <../../p/4-4ring3.scad>
-function ldraw_lib__s__6131s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__6131s01(realsolid=false) = [
 // 0 ~Minifig Wizards Hat without Patterned Area
 // 0 Name: s\6131s01.dat
 // 0 Author: Chris Dee [cwdee]
@@ -841,23 +842,23 @@ function ldraw_lib__s__6131s01() = [
   [5,24,0,-1.666,-12.558,0,-3.732,-13.997,5,-1.335,-11.624,-5,-1.335,-11.624],
 // 0 // Inside
 // 1 16 0 -5 0 6 0 0 0 -1 0 0 0 6 4-4disc.dat
-  [1,16,0,-5,0,6,0,0,0,-1,0,0,0,6, ldraw_lib__4_4disc()],
+  [1,16,0,-5,0,6,0,0,0,-1,0,0,0,6, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 -5 0 6 0 0 0 1 0 0 0 6 4-4edge.dat
-  [1,16,0,-5,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4edge()],
+  [1,16,0,-5,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4edge(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -5 0 6 0 0 0 5 0 0 0 6 4-4cyli.dat
-  [1,16,0,-5,0,6,0,0,0,5,0,0,0,6, ldraw_lib__4_4cyli()],
+  [1,16,0,-5,0,6,0,0,0,5,0,0,0,6, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 0 0 6 0 0 0 1 0 0 0 6 4-4edge.dat
-  [1,16,0,0,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4edge()],
+  [1,16,0,0,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 0 0 2 0 0 0 -1 0 0 0 2 4-4ring3.dat
-  [1,16,0,0,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__4_4ring3()],
+  [1,16,0,0,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__4_4ring3(realsolid)],
 // 1 16 0 0 0 8 0 0 0 1 0 0 0 8 4-4edge.dat
-  [1,16,0,0,0,8,0,0,0,1,0,0,0,8, ldraw_lib__4_4edge()],
+  [1,16,0,0,0,8,0,0,0,1,0,0,0,8, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 -3 0 8 0 0 0 3 0 0 0 8 4-4cyli.dat
-  [1,16,0,-3,0,8,0,0,0,3,0,0,0,8, ldraw_lib__4_4cyli()],
+  [1,16,0,-3,0,8,0,0,0,3,0,0,0,8, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 -3 0 8 0 0 0 1 0 0 0 8 4-4edge.dat
-  [1,16,0,-3,0,8,0,0,0,1,0,0,0,8, ldraw_lib__4_4edge()],
+  [1,16,0,-3,0,8,0,0,0,1,0,0,0,8, ldraw_lib__4_4edge(realsolid)],
 // 4 16 -5.657 -3 5.657 -9.192 1 9.192 -4.975 1 12.01 -3.061 -3 7.391
   [4,16,-5.657,-3,5.657,-9.192,1,9.192,-4.975,1,12.01,-3.061,-3,7.391],
 // 4 16 -7.391 -3 3.061 -12.01 1 4.975 -9.192 1 9.192 -5.657 -3 5.657
@@ -891,11 +892,11 @@ function ldraw_lib__s__6131s01() = [
 // 4 16 -3.061 -3 7.391 -4.975 1 12.01 0 1 13 0 -3 8
   [4,16,-3.061,-3,7.391,-4.975,1,12.01,0,1,13,0,-3,8],
 // 1 16 0 1 0 13 0 0 0 1 0 0 0 13 4-4edge.dat
-  [1,16,0,1,0,13,0,0,0,1,0,0,0,13, ldraw_lib__4_4edge()],
+  [1,16,0,1,0,13,0,0,0,1,0,0,0,13, ldraw_lib__4_4edge(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 1 0 13 0 0 0 5 0 0 0 13 4-4cyli.dat
-  [1,16,0,1,0,13,0,0,0,5,0,0,0,13, ldraw_lib__4_4cyli()],
+  [1,16,0,1,0,13,0,0,0,5,0,0,0,13, ldraw_lib__4_4cyli(realsolid)],
 // 4 16 -9.192 6 9.192 -9.192 12.741 9.192 -4.975 13.581 12.01 -4.975 6 12.01
   [4,16,-9.192,6,9.192,-9.192,12.741,9.192,-4.975,13.581,12.01,-4.975,6,12.01],
 // 4 16 -12.01 6 4.975 -12.01 11.483 4.975 -9.192 12.741 9.192 -9.192 6 9.192
@@ -1404,5 +1405,5 @@ function ldraw_lib__s__6131s01() = [
   [3,16,0,-17.8,38.7,-0.765,-17.815,38.685,0,-18,38.5],
 ];
 module ldraw_lib__s__6131s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__6131s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__6131s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__6131s01(line=0.2);

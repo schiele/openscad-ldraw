@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__190085b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__190085b(realsolid=false) = [
 // 0 Sticker  3 x  1.3 Towel Red with Blue Stripes Hanging
 // 0 Name: 190085b.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -1779,5 +1780,5 @@ function ldraw_lib__190085b() = [
 // 
 ];
 module ldraw_lib__190085b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__190085b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__190085b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__190085b(line=0.2);

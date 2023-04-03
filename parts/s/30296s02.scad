@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/stud4.scad>
 use <../../p/stug2.scad>
-function ldraw_lib__s__30296s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__30296s02(realsolid=false) = [
 // 0 ~Arch  2 x 14 x  2.333 - Bridge
 // 0 Name: s\30296s02.dat
 // 0 Author: Joseph H. Cardana
@@ -60,55 +61,55 @@ function ldraw_lib__s__30296s02() = [
   [4,16,120,0,30,120,0,-30,117,0,-28,117,0,-12.685],
 // 
 // 1 16 80 4 -10 1 0 0 0 -1 0 0 0 -1 stud4.dat
-  [1,16,80,4,-10,1,0,0,0,-1,0,0,0,-1, ldraw_lib__stud4()],
+  [1,16,80,4,-10,1,0,0,0,-1,0,0,0,-1, ldraw_lib__stud4(realsolid)],
 // 1 16 60 4 -10 1 0 0 0 -1 0 0 0 -1 stud4.dat
-  [1,16,60,4,-10,1,0,0,0,-1,0,0,0,-1, ldraw_lib__stud4()],
+  [1,16,60,4,-10,1,0,0,0,-1,0,0,0,-1, ldraw_lib__stud4(realsolid)],
 // 1 16 40 4 -10 1 0 0 0 -1 0 0 0 -1 stud4.dat
-  [1,16,40,4,-10,1,0,0,0,-1,0,0,0,-1, ldraw_lib__stud4()],
+  [1,16,40,4,-10,1,0,0,0,-1,0,0,0,-1, ldraw_lib__stud4(realsolid)],
 // 1 16 20 4 -10 1 0 0 0 -1 0 0 0 -1 stud4.dat
-  [1,16,20,4,-10,1,0,0,0,-1,0,0,0,-1, ldraw_lib__stud4()],
+  [1,16,20,4,-10,1,0,0,0,-1,0,0,0,-1, ldraw_lib__stud4(realsolid)],
 // 1 16 0 4 -10 1 0 0 0 -1 0 0 0 -1 stud4.dat
-  [1,16,0,4,-10,1,0,0,0,-1,0,0,0,-1, ldraw_lib__stud4()],
+  [1,16,0,4,-10,1,0,0,0,-1,0,0,0,-1, ldraw_lib__stud4(realsolid)],
 // 1 16 -20 4 -10 1 0 0 0 -1 0 0 0 -1 stud4.dat
-  [1,16,-20,4,-10,1,0,0,0,-1,0,0,0,-1, ldraw_lib__stud4()],
+  [1,16,-20,4,-10,1,0,0,0,-1,0,0,0,-1, ldraw_lib__stud4(realsolid)],
 // 1 16 -40 4 -10 1 0 0 0 -1 0 0 0 -1 stud4.dat
-  [1,16,-40,4,-10,1,0,0,0,-1,0,0,0,-1, ldraw_lib__stud4()],
+  [1,16,-40,4,-10,1,0,0,0,-1,0,0,0,-1, ldraw_lib__stud4(realsolid)],
 // 1 16 -60 4 -10 1 0 0 0 -1 0 0 0 -1 stud4.dat
-  [1,16,-60,4,-10,1,0,0,0,-1,0,0,0,-1, ldraw_lib__stud4()],
+  [1,16,-60,4,-10,1,0,0,0,-1,0,0,0,-1, ldraw_lib__stud4(realsolid)],
 // 1 16 -80 4 -10 1 0 0 0 -1 0 0 0 -1 stud4.dat
-  [1,16,-80,4,-10,1,0,0,0,-1,0,0,0,-1, ldraw_lib__stud4()],
+  [1,16,-80,4,-10,1,0,0,0,-1,0,0,0,-1, ldraw_lib__stud4(realsolid)],
 // 1 16 80 4 10 1 0 0 0 -1 0 0 0 -1 stud4.dat
-  [1,16,80,4,10,1,0,0,0,-1,0,0,0,-1, ldraw_lib__stud4()],
+  [1,16,80,4,10,1,0,0,0,-1,0,0,0,-1, ldraw_lib__stud4(realsolid)],
 // 1 16 60 4 10 1 0 0 0 -1 0 0 0 -1 stud4.dat
-  [1,16,60,4,10,1,0,0,0,-1,0,0,0,-1, ldraw_lib__stud4()],
+  [1,16,60,4,10,1,0,0,0,-1,0,0,0,-1, ldraw_lib__stud4(realsolid)],
 // 1 16 40 4 10 1 0 0 0 -1 0 0 0 -1 stud4.dat
-  [1,16,40,4,10,1,0,0,0,-1,0,0,0,-1, ldraw_lib__stud4()],
+  [1,16,40,4,10,1,0,0,0,-1,0,0,0,-1, ldraw_lib__stud4(realsolid)],
 // 1 16 20 4 10 1 0 0 0 -1 0 0 0 -1 stud4.dat
-  [1,16,20,4,10,1,0,0,0,-1,0,0,0,-1, ldraw_lib__stud4()],
+  [1,16,20,4,10,1,0,0,0,-1,0,0,0,-1, ldraw_lib__stud4(realsolid)],
 // 1 16 0 4 10 1 0 0 0 -1 0 0 0 -1 stud4.dat
-  [1,16,0,4,10,1,0,0,0,-1,0,0,0,-1, ldraw_lib__stud4()],
+  [1,16,0,4,10,1,0,0,0,-1,0,0,0,-1, ldraw_lib__stud4(realsolid)],
 // 1 16 -20 4 10 1 0 0 0 -1 0 0 0 -1 stud4.dat
-  [1,16,-20,4,10,1,0,0,0,-1,0,0,0,-1, ldraw_lib__stud4()],
+  [1,16,-20,4,10,1,0,0,0,-1,0,0,0,-1, ldraw_lib__stud4(realsolid)],
 // 1 16 -40 4 10 1 0 0 0 -1 0 0 0 -1 stud4.dat
-  [1,16,-40,4,10,1,0,0,0,-1,0,0,0,-1, ldraw_lib__stud4()],
+  [1,16,-40,4,10,1,0,0,0,-1,0,0,0,-1, ldraw_lib__stud4(realsolid)],
 // 1 16 -60 4 10 1 0 0 0 -1 0 0 0 -1 stud4.dat
-  [1,16,-60,4,10,1,0,0,0,-1,0,0,0,-1, ldraw_lib__stud4()],
+  [1,16,-60,4,10,1,0,0,0,-1,0,0,0,-1, ldraw_lib__stud4(realsolid)],
 // 1 16 -80 4 10 1 0 0 0 -1 0 0 0 -1 stud4.dat
-  [1,16,-80,4,10,1,0,0,0,-1,0,0,0,-1, ldraw_lib__stud4()],
+  [1,16,-80,4,10,1,0,0,0,-1,0,0,0,-1, ldraw_lib__stud4(realsolid)],
 // 1 16 100 0 10 1 0 0 0 1 0 0 0 1 stug2.dat
-  [1,16,100,0,10,1,0,0,0,1,0,0,0,1, ldraw_lib__stug2()],
+  [1,16,100,0,10,1,0,0,0,1,0,0,0,1, ldraw_lib__stug2(realsolid)],
 // 1 16 60 0 10 1 0 0 0 1 0 0 0 1 stug2.dat
-  [1,16,60,0,10,1,0,0,0,1,0,0,0,1, ldraw_lib__stug2()],
+  [1,16,60,0,10,1,0,0,0,1,0,0,0,1, ldraw_lib__stug2(realsolid)],
 // 1 16 20 0 10 1 0 0 0 1 0 0 0 1 stug2.dat
-  [1,16,20,0,10,1,0,0,0,1,0,0,0,1, ldraw_lib__stug2()],
+  [1,16,20,0,10,1,0,0,0,1,0,0,0,1, ldraw_lib__stug2(realsolid)],
 // 1 16 -20 0 10 1 0 0 0 1 0 0 0 1 stug2.dat
-  [1,16,-20,0,10,1,0,0,0,1,0,0,0,1, ldraw_lib__stug2()],
+  [1,16,-20,0,10,1,0,0,0,1,0,0,0,1, ldraw_lib__stug2(realsolid)],
 // 1 16 -60 0 10 1 0 0 0 1 0 0 0 1 stug2.dat
-  [1,16,-60,0,10,1,0,0,0,1,0,0,0,1, ldraw_lib__stug2()],
+  [1,16,-60,0,10,1,0,0,0,1,0,0,0,1, ldraw_lib__stug2(realsolid)],
 // 1 16 -100 0 10 1 0 0 0 1 0 0 0 1 stug2.dat
-  [1,16,-100,0,10,1,0,0,0,1,0,0,0,1, ldraw_lib__stug2()],
+  [1,16,-100,0,10,1,0,0,0,1,0,0,0,1, ldraw_lib__stug2(realsolid)],
 // 0
 ];
 module ldraw_lib__s__30296s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__30296s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__30296s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__30296s02(line=0.2);

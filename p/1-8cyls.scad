@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__1_8cyls() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__1_8cyls(realsolid=false) = [
 // 0 Cylinder Sloped 0.125
 // 0 Name: 1-8cyls.dat
 // 0 Author: Guy Vivan [guyvivan]
@@ -27,5 +28,5 @@ function ldraw_lib__1_8cyls() = [
   [5,24,0.7071,0,0.7071,0.7071,0.2929,0.7071,0.3827,0,0.9239,0.9239,0,0.3827],
 ];
 module ldraw_lib__1_8cyls(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__1_8cyls(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__1_8cyls(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__1_8cyls(line=0.2);

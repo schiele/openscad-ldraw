@@ -2,7 +2,8 @@ use <../lib.scad>
 use <3815pbg.scad>
 use <3816pbg.scad>
 use <3817pbg.scad>
-function ldraw_lib__3815cbg() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3815cbg(realsolid=false) = [
 // 0 ~Minifig Hips and Legs with Iron Patriot Armoured Suit Pattern (Obsolete)
 // 0 Name: 3815cbg.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -21,13 +22,13 @@ function ldraw_lib__3815cbg() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 3815pbg.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3815pbg()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3815pbg(realsolid)],
 // 1 16 0 12 0 1 0 0 0 1 0 0 0 1 3816pbg.dat
-  [1,16,0,12,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3816pbg()],
+  [1,16,0,12,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3816pbg(realsolid)],
 // 1 16 0 12 0 1 0 0 0 1 0 0 0 1 3817pbg.dat
-  [1,16,0,12,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3817pbg()],
+  [1,16,0,12,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3817pbg(realsolid)],
 // 
 ];
 module ldraw_lib__3815cbg(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3815cbg(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3815cbg(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3815cbg(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/95195c02s01.scad>
-function ldraw_lib__95195c02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__95195c02(realsolid=false) = [
 // 0 Sheet Fabric 22 x 18 Triangular Carousel Roof (Formed Shape 2)
 // 0 Name: 95195c02.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -24,17 +25,17 @@ function ldraw_lib__95195c02() = [
 // 0 // Shape realized in collaboration with Jerome Schlitter
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\95195c02s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__95195c02s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__95195c02s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\95195c02s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__95195c02s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__95195c02s01(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0.3 0.3 1 0 0 0 1 0 0 0 1 s\95195c02s01.dat
-  [1,16,0,0.3,0.3,1,0,0,0,1,0,0,0,1, ldraw_lib__s__95195c02s01()],
+  [1,16,0,0.3,0.3,1,0,0,0,1,0,0,0,1, ldraw_lib__s__95195c02s01(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0.3 0.3 -1 0 0 0 1 0 0 0 1 s\95195c02s01.dat
-  [1,16,0,0.3,0.3,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__95195c02s01()],
+  [1,16,0,0.3,0.3,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__95195c02s01(realsolid)],
 // 5 24 0 -85.74 205.68 0 -58.07 160.57 58.11 -75 205.62 -58.11 -75 205.62
   [5,24,0,-85.74,205.68,0,-58.07,160.57,58.11,-75,205.62,-58.11,-75,205.62],
 // 5 24 0 -128.06 256.26 0 -115.91 241.44 45.21 -105.96 241.57 -45.21 -105.96 241.57
@@ -423,5 +424,5 @@ function ldraw_lib__95195c02() = [
   [5,24,-56.55,1.72,-55.95,-56.55,1.42,-56.25,-113.03,0.44,-45.06,0,2.05,-59.7],
 ];
 module ldraw_lib__95195c02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__95195c02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__95195c02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__95195c02(line=0.2);

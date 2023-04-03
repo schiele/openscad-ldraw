@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
 use <s/6109079cs01.scad>
-function ldraw_lib__6109079c() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6109079c(realsolid=false) = [
 // 0 Sticker  1.8 x  3.8 with Two White Outlined Lids with White "WATER and "ELECTRICS"
 // 0 Name: 6109079c.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -18,16 +19,16 @@ function ldraw_lib__6109079c() = [
 // 
 // 
 // 1 16 0 -.25 0 38 0 0 0 .25 0 0 0 -8 box5-12.dat
-  [1,16,0,-.25,0,38,0,0,0,.25,0,0,0,-8, ldraw_lib__box5_12()],
+  [1,16,0,-.25,0,38,0,0,0,.25,0,0,0,-8, ldraw_lib__box5_12(realsolid)],
 // 
 // 1 16 17.8 -.25 0 1 0 0 0 1 0 0 0 1 s\6109079cs01.dat
-  [1,16,17.8,-.25,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6109079cs01()],
+  [1,16,17.8,-.25,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6109079cs01(realsolid)],
 // 1 16 17.8 -.25 0 -1 0 0 0 1 0 0 0 1 s\6109079cs01.dat
-  [1,16,17.8,-.25,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__6109079cs01()],
+  [1,16,17.8,-.25,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__6109079cs01(realsolid)],
 // 1 16 -17.8 -.25 0 1 0 0 0 1 0 0 0 1 s\6109079cs01.dat
-  [1,16,-17.8,-.25,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6109079cs01()],
+  [1,16,-17.8,-.25,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6109079cs01(realsolid)],
 // 1 16 -17.8 -.25 0 -1 0 0 0 1 0 0 0 1 s\6109079cs01.dat
-  [1,16,-17.8,-.25,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__6109079cs01()],
+  [1,16,-17.8,-.25,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__6109079cs01(realsolid)],
 // 
 // 3 16 -33.6 -.25 5.6 -32.1 -.25 5.6 -38 -.25 8
   [3,16,-33.6,-.25,5.6,-32.1,-.25,5.6,-38,-.25,8],
@@ -824,5 +825,5 @@ function ldraw_lib__6109079c() = [
   [3,16,15.2352,-.25,1.1504,14.844,-.25,1.9832,14.784,-.25,1.4184],
 ];
 module ldraw_lib__6109079c(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6109079c(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6109079c(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6109079c(line=0.2);

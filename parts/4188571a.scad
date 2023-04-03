@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__4188571a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4188571a(realsolid=false) = [
 // 0 Sticker  1.9 x  1.9 with American Indian Head and Santa Fe Super Chief Logo
 // 0 Name: 4188571a.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -17,7 +18,7 @@ function ldraw_lib__4188571a() = [
 // 
 // 
 // 1 80 0 -0.25 0 19 0 0 0 0.25 0 0 0 19 box5-12.dat
-  [1,80,0,-0.25,0,19,0,0,0,0.25,0,0,0,19, ldraw_lib__box5_12()],
+  [1,80,0,-0.25,0,19,0,0,0,0.25,0,0,0,19, ldraw_lib__box5_12(realsolid)],
 // 
 // 4 80 -16 -0.25 0 -15.863 -0.25 2.088 -17.35 -0.25 2.284 -17.5 -0.25 0
   [4,80,-16,-0.25,0,-15.863,-0.25,2.088,-17.35,-0.25,2.284,-17.5,-0.25,0],
@@ -1709,5 +1710,5 @@ function ldraw_lib__4188571a() = [
   [3,0,-2.284,-0.25,-17.35,-19,-0.25,-19,0,-0.25,-17.5],
 ];
 module ldraw_lib__4188571a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4188571a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4188571a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4188571a(line=0.2);

@@ -5,7 +5,8 @@ use <../p/4-4edge.scad>
 use <../p/axl5end.scad>
 use <../p/axl5hol9.scad>
 use <../p/axlehol2.scad>
-function ldraw_lib__2975() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2975(realsolid=false) = [
 // 0 Electric Brick  2 x  4 Sensor Touch - Button
 // 0 Name: 2975.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -298,17 +299,17 @@ function ldraw_lib__2975() = [
 // 
 // 0 // inside
 // 1 16 -14 0 0 0 1 0 0 0 8 8 0 0 4-4edge.dat
-  [1,16,-14,0,0,0,1,0,0,0,8,8,0,0, ldraw_lib__4_4edge()],
+  [1,16,-14,0,0,0,1,0,0,0,8,8,0,0, ldraw_lib__4_4edge(realsolid)],
 // 1 16 -14 0 0 0 1 0 0 0 8 8 0 0 4-4disc.dat
-  [1,16,-14,0,0,0,1,0,0,0,8,8,0,0, ldraw_lib__4_4disc()],
+  [1,16,-14,0,0,0,1,0,0,0,8,8,0,0, ldraw_lib__4_4disc(realsolid)],
 // 1 16 -14 0 0 0 8 0 0 0 8 8 0 0 4-4cyli.dat
-  [1,16,-14,0,0,0,8,0,0,0,8,8,0,0, ldraw_lib__4_4cyli()],
+  [1,16,-14,0,0,0,8,0,0,0,8,8,0,0, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 -10 0 0 0 -1 0 0 0 1 1 0 0 axl5end.dat
-  [1,16,-10,0,0,0,-1,0,0,0,1,1,0,0, ldraw_lib__axl5end()],
+  [1,16,-10,0,0,0,-1,0,0,0,1,1,0,0, ldraw_lib__axl5end(realsolid)],
 // 1 16 -10 0 0 0 -1 0 0 0 1 1 0 0 axlehol2.dat
-  [1,16,-10,0,0,0,-1,0,0,0,1,1,0,0, ldraw_lib__axlehol2()],
+  [1,16,-10,0,0,0,-1,0,0,0,1,1,0,0, ldraw_lib__axlehol2(realsolid)],
 // 1 16 -10 0 0 0 -1 0 0 0 1 1 0 0 axl5hol9.dat
-  [1,16,-10,0,0,0,-1,0,0,0,1,1,0,0, ldraw_lib__axl5hol9()],
+  [1,16,-10,0,0,0,-1,0,0,0,1,1,0,0, ldraw_lib__axl5hol9(realsolid)],
 // 4 16 9.6023 -4 2 9.6023 -5.602 2 -10 -5.602 2 -10 -4 2
   [4,16,9.6023,-4,2,9.6023,-5.602,2,-10,-5.602,2,-10,-4,2],
 // 4 16 -10 -4 2 -10 -2.5 2.5 9.5029 -2.5 2.5 9.6023 -4 2
@@ -462,5 +463,5 @@ function ldraw_lib__2975() = [
   [5,24,8.764,-2,-4,-10,-2,-4,7.6934,-2,-5.602,9.3912,-2.3128,-3.0616],
 ];
 module ldraw_lib__2975(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2975(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2975(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2975(line=0.2);

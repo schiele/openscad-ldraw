@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/recte3.scad>
-function ldraw_lib__s__u9267s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__u9267s01(realsolid=false) = [
 // 0 ~Screw 30 x  7.5 Dome Cruciform - 1/4 Top Head
 // 0 Name: s\u9267s01.dat
 // 0 Author: Max Martin Richter [MMR1988]
@@ -97,7 +98,7 @@ function ldraw_lib__s__u9267s01() = [
 // 2 24 4.1879 -5.0839 -1.5 4.0353 -5.1166 -1.5
   [2,24,4.1879,-5.0839,-1.5,4.0353,-5.1166,-1.5],
 // 1 16 2.844 -3.292 0 0 -1 -1.344 0 0 1.792 -1.5 0 0 recte3.dat
-  [1,16,2.844,-3.292,0,0,-1,-1.344,0,0,1.792,-1.5,0,0, ldraw_lib__recte3()],
+  [1,16,2.844,-3.292,0,0,-1,-1.344,0,0,1.792,-1.5,0,0, ldraw_lib__recte3(realsolid)],
 // 5 24 1.5 -1.5 1.5 0 -1 0 1.5 -1.5 -1.5 -1.5 -1.5 1.5
   [5,24,1.5,-1.5,1.5,0,-1,0,1.5,-1.5,-1.5,-1.5,-1.5,1.5],
 // 
@@ -208,5 +209,5 @@ function ldraw_lib__s__u9267s01() = [
   [5,24,4.0353,-5.1166,1.5,3.0685,-5.1789,3.0239,2.8722,-5.2832,1.5,3.1178,-5.1662,3.0751],
 ];
 module ldraw_lib__s__u9267s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__u9267s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__u9267s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__u9267s01(line=0.2);

@@ -9,7 +9,8 @@ use <../p/box5.scad>
 use <s/18904s01.scad>
 use <../p/stud4.scad>
 use <../p/stug-1x3.scad>
-function ldraw_lib__18904() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__18904(realsolid=false) = [
 // 0 Animal Crocodile  4 x  9 Body
 // 0 Name: 18904.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -26,47 +27,47 @@ function ldraw_lib__18904() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\18904s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__18904s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__18904s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\18904s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__18904s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__18904s01(realsolid)],
 // 1 16 10 0 10 0 0 -1 0 1 0 1 0 0 stug-1x3.dat
-  [1,16,10,0,10,0,0,-1,0,1,0,1,0,0, ldraw_lib__stug_1x3()],
+  [1,16,10,0,10,0,0,-1,0,1,0,1,0,0, ldraw_lib__stug_1x3(realsolid)],
 // 1 16 -10 0 10 0 0 -1 0 1 0 1 0 0 stug-1x3.dat
-  [1,16,-10,0,10,0,0,-1,0,1,0,1,0,0, ldraw_lib__stug_1x3()],
+  [1,16,-10,0,10,0,0,-1,0,1,0,1,0,0, ldraw_lib__stug_1x3(realsolid)],
 // 
 // 0 // middle box
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 32 0 19 0 0 0 -28 0 0 0 16 box5.dat
-  [1,16,0,32,0,19,0,0,0,-28,0,0,0,16, ldraw_lib__box5()],
+  [1,16,0,32,0,19,0,0,0,-28,0,0,0,16, ldraw_lib__box5(realsolid)],
 // 1 16 0 4 0 1 0 0 0 -7 0 0 0 1 stud4.dat
-  [1,16,0,4,0,1,0,0,0,-7,0,0,0,1, ldraw_lib__stud4()],
+  [1,16,0,4,0,1,0,0,0,-7,0,0,0,1, ldraw_lib__stud4(realsolid)],
 // 
 // 0 // tail socket
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 22.4 60 6 0 0 0 -4 0 0 0 6 4-4cyli.dat
-  [1,16,0,22.4,60,6,0,0,0,-4,0,0,0,6, ldraw_lib__4_4cyli()],
+  [1,16,0,22.4,60,6,0,0,0,-4,0,0,0,6, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 22.4 60 6 0 0 0 -1 0 0 0 6 4-4edge.dat
-  [1,16,0,22.4,60,6,0,0,0,-1,0,0,0,6, ldraw_lib__4_4edge()],
+  [1,16,0,22.4,60,6,0,0,0,-1,0,0,0,6, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 14.85 60 6 0 0 0 -1 0 0 0 -6 2-4edge.dat
-  [1,16,0,14.85,60,6,0,0,0,-1,0,0,0,-6, ldraw_lib__2_4edge()],
+  [1,16,0,14.85,60,6,0,0,0,-1,0,0,0,-6, ldraw_lib__2_4edge(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 14.85 60 6 0 0 0 3.55 0 0 0 -6 2-4cyli.dat
-  [1,16,0,14.85,60,6,0,0,0,3.55,0,0,0,-6, ldraw_lib__2_4cyli()],
+  [1,16,0,14.85,60,6,0,0,0,3.55,0,0,0,-6, ldraw_lib__2_4cyli(realsolid)],
 // 1 16 0 18.4 60 6 0 0 0 -1 0 0 0 6 2-4edge.dat
-  [1,16,0,18.4,60,6,0,0,0,-1,0,0,0,6, ldraw_lib__2_4edge()],
+  [1,16,0,18.4,60,6,0,0,0,-1,0,0,0,6, ldraw_lib__2_4edge(realsolid)],
 // 1 16 0 22.4 60 3 0 0 0 -1 0 0 0 -3 2-4ring2.dat
-  [1,16,0,22.4,60,3,0,0,0,-1,0,0,0,-3, ldraw_lib__2_4ring2()],
+  [1,16,0,22.4,60,3,0,0,0,-1,0,0,0,-3, ldraw_lib__2_4ring2(realsolid)],
 // 1 16 0 22.4 60 9 0 0 0 -3.9 0 0 0 -9 2-4cylo.dat
-  [1,16,0,22.4,60,9,0,0,0,-3.9,0,0,0,-9, ldraw_lib__2_4cylo()],
+  [1,16,0,22.4,60,9,0,0,0,-3.9,0,0,0,-9, ldraw_lib__2_4cylo(realsolid)],
 // 
 // 0 // head socket
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 10.8 6.9 -40.2 0 -21.6 0 0 0 -2.4 2.4 0 0 2-4cylo.dat
-  [1,16,10.8,6.9,-40.2,0,-21.6,0,0,0,-2.4,2.4,0,0, ldraw_lib__2_4cylo()],
+  [1,16,10.8,6.9,-40.2,0,-21.6,0,0,0,-2.4,2.4,0,0, ldraw_lib__2_4cylo(realsolid)],
 // 
 // 0 // between
 // 4 16 17.95 32 -20.016 -17.95 32 -20.016 -19 32 -16 19 32 -16
@@ -293,5 +294,5 @@ function ldraw_lib__18904() = [
   [5,24,3.775,26.7,-43.595,-3.775,26.7,-43.595,-10.9,11.078,-43.062,3.711,28.752,-43.656],
 ];
 module ldraw_lib__18904(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__18904(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__18904(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__18904(line=0.2);

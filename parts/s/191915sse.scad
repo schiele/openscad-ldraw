@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <191915ssea.scad>
 use <191915sseb.scad>
-function ldraw_lib__s__191915sse() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__191915sse(realsolid=false) = [
 // 0 ~Swedish Railways Logo White
 // 0 Name: s\191915sse.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -16,10 +17,10 @@ function ldraw_lib__s__191915sse() = [
 // 
 // 
 // 1 15 0 0 0 1 0 0 0 1 0 0 0 1 s\191915ssea.dat
-  [1,15,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__191915ssea()],
+  [1,15,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__191915ssea(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\191915sseb.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__191915sseb()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__191915sseb(realsolid)],
 ];
 module ldraw_lib__s__191915sse(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__191915sse(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__191915sse(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__191915sse(line=0.2);

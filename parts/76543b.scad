@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <30584b.scad>
 use <30587c01.scad>
-function ldraw_lib__76543b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__76543b(realsolid=false) = [
 // 0 Hose Air Pump 16 x 14 x 13 with Fins
 // 0 Name: 76543b.dat
 // 0 Author: Mikkel Bech Jensen [gaia]
@@ -18,10 +19,10 @@ function ldraw_lib__76543b() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 30584b.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__30584b()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__30584b(realsolid)],
 // 1 16 0 0 150 1 0 0 0 1 0 0 0 1 30587c01.dat
-  [1,16,0,0,150,1,0,0,0,1,0,0,0,1, ldraw_lib__30587c01()],
+  [1,16,0,0,150,1,0,0,0,1,0,0,0,1, ldraw_lib__30587c01(realsolid)],
 ];
 module ldraw_lib__76543b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__76543b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__76543b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__76543b(line=0.2);

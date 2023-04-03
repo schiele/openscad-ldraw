@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__u406() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__u406(realsolid=false) = [
 // 0 Maxifig Hair with Bun
 // 0 Name: u406.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -6017,5 +6018,5 @@ function ldraw_lib__u406() = [
   [5,24,-12.57,-28.4,8.91,-15.71,-25.61,11.94,-11.27,-27.87,11.68,-16.06,-26.9,8.18],
 ];
 module ldraw_lib__u406(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__u406(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__u406(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__u406(line=0.2);

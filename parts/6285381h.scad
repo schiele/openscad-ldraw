@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__6285381h() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6285381h(realsolid=false) = [
 // 0 Sticker  0.9 x  2.6 with Black Curved Stripe Left on Transparent Background
 // 0 Name: 6285381h.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -179,5 +180,5 @@ function ldraw_lib__6285381h() = [
   [3,0,-27.45,-.25,-8.75,-17.733,-.25,-5.1916,-27.45,-.25,-5.832],
 ];
 module ldraw_lib__6285381h(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6285381h(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6285381h(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6285381h(line=0.2);

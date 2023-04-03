@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/98138p1is01.scad>
 use <s/98138s01.scad>
-function ldraw_lib__98138p1k() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__98138p1k(realsolid=false) = [
 // 0 Tile  1 x  1 Round with Dark Turquoise "NOPE." in Speech Bubble on Bright Light Orange Background Pattern
 // 0 Name: 98138p1k.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -18,9 +19,9 @@ function ldraw_lib__98138p1k() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\98138s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01(realsolid)],
 // 1 191 0 0 0 1 0 0 0 1 0 0 0 1 s\98138p1is01.dat
-  [1,191,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138p1is01()],
+  [1,191,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138p1is01(realsolid)],
 // 
 // 4 3 -4.64 0 -0.11 -4.58 0 0.79 -5.64 0 -0.01 -5.57 0 -0.31
   [4,3,-4.64,0,-0.11,-4.58,0,0.79,-5.64,0,-0.01,-5.57,0,-0.31],
@@ -342,5 +343,5 @@ function ldraw_lib__98138p1k() = [
   [4,16,-3.22,0,2.59,-2.88,0,2.52,-4,0,6.4,-5.09,0,5.6],
 ];
 module ldraw_lib__98138p1k(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__98138p1k(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__98138p1k(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__98138p1k(line=0.2);

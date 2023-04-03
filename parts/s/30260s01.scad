@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/clip4.scad>
 use <../../p/rect.scad>
-function ldraw_lib__s__30260s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__30260s01(realsolid=false) = [
 // 0 ~Roadsign Clip-on  2 x  2 Octagonal without Pattern Area
 // 0 Name: s\30260s01.dat
 // 0 Author: John Van Zwieten [jvan]
@@ -22,13 +23,13 @@ function ldraw_lib__s__30260s01() = [
 // 
 // 
 // 1 16 20 0 -7.5 0 -1 0 0 0 -8 1.5 0 0 rect.dat
-  [1,16,20,0,-7.5,0,-1,0,0,0,-8,1.5,0,0, ldraw_lib__rect()],
+  [1,16,20,0,-7.5,0,-1,0,0,0,-8,1.5,0,0, ldraw_lib__rect(realsolid)],
 // 1 16 -20 0 -7.5 0 1 0 0 0 8 1.5 0 0 rect.dat
-  [1,16,-20,0,-7.5,0,1,0,0,0,8,1.5,0,0, ldraw_lib__rect()],
+  [1,16,-20,0,-7.5,0,1,0,0,0,8,1.5,0,0, ldraw_lib__rect(realsolid)],
 // 1 16 0 20 -7.5 0 0 8 0 -1 0 1.5 0 0 rect.dat
-  [1,16,0,20,-7.5,0,0,8,0,-1,0,1.5,0,0, ldraw_lib__rect()],
+  [1,16,0,20,-7.5,0,0,8,0,-1,0,1.5,0,0, ldraw_lib__rect(realsolid)],
 // 1 16 0 -20 -7.5 0 0 -8 0 1 0 1.5 0 0 rect.dat
-  [1,16,0,-20,-7.5,0,0,-8,0,1,0,1.5,0,0, ldraw_lib__rect()],
+  [1,16,0,-20,-7.5,0,0,-8,0,1,0,1.5,0,0, ldraw_lib__rect(realsolid)],
 // 
 // 2 24 20 8 -9 8 20 -9
   [2,24,20,8,-9,8,20,-9],
@@ -65,8 +66,8 @@ function ldraw_lib__s__30260s01() = [
   [4,16,20,8,-6,8,20,-6,-8,20,-6,-20,8,-6],
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 clip4.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__clip4()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__clip4(realsolid)],
 ];
 module ldraw_lib__s__30260s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__30260s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__30260s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__30260s01(line=0.2);

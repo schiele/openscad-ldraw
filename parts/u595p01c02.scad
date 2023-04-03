@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <4791.scad>
 use <u595p01c01.scad>
-function ldraw_lib__u595p01c02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__u595p01c02(realsolid=false) = [
 // 0 Figure Fabuland Monkey Head  1 with Neck and Sailor's Cap White
 // 0 Name: u595p01c02.dat
 // 0 Author: Steffen [Steffen]
@@ -16,10 +17,10 @@ function ldraw_lib__u595p01c02() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 u595p01c01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u595p01c01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u595p01c01(realsolid)],
 // 1 15 -4.8 -50.1 2.1 -0.692627 0.190681 -0.695635 0.220169 0.974288 0.0478457 0.686872 -0.120018 -0.7168 4791.dat
-  [1,15,-4.8,-50.1,2.1,-0.692627,0.190681,-0.695635,0.220169,0.974288,0.0478457,0.686872,-0.120018,-0.7168, ldraw_lib__4791()],
+  [1,15,-4.8,-50.1,2.1,-0.692627,0.190681,-0.695635,0.220169,0.974288,0.0478457,0.686872,-0.120018,-0.7168, ldraw_lib__4791(realsolid)],
 ];
 module ldraw_lib__u595p01c02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__u595p01c02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__u595p01c02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__u595p01c02(line=0.2);

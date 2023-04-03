@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/50944s01.scad>
-function ldraw_lib__51719() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__51719(realsolid=false) = [
 // 0 Wheel Rim  6.4 x 11 with 5 Spokes and Silver Pattern
 // 0 Name: 51719.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -16,7 +17,7 @@ function ldraw_lib__51719() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\50944s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__50944s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__50944s01(realsolid)],
 // 0 // Front face, Silver
 // 4 80 -4.88 10.96 -8 0 12 -8 0 14 -8 -5.36 12.93 -8
   [4,80,-4.88,10.96,-8,0,12,-8,0,14,-8,-5.36,12.93,-8],
@@ -127,5 +128,5 @@ function ldraw_lib__51719() = [
 // 
 ];
 module ldraw_lib__51719(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__51719(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__51719(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__51719(line=0.2);

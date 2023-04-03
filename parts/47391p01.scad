@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/47391s01.scad>
 use <s/47391s02.scad>
-function ldraw_lib__47391p01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__47391p01(realsolid=false) = [
 // 0 Figure Duplo Head Adult with Brown Eyes and Lopsided Open Mouth Pattern
 // 0 Name: 47391p01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -16,13 +17,13 @@ function ldraw_lib__47391p01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\47391s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__47391s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__47391s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\47391s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__47391s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__47391s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\47391s02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__47391s02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__47391s02(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\47391s02.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__47391s02()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__47391s02(realsolid)],
 // 4 0 5.12 -7.87 -22.7803 6.234 -8.8478 -23.2643 5.49 -8.8478 -23.359 4.39 -8.09 -23.014
   [4,0,5.12,-7.87,-22.7803,6.234,-8.8478,-23.2643,5.49,-8.8478,-23.359,4.39,-8.09,-23.014],
 // 4 0 3.7 -7.23 -22.5514 5.12 -7.87 -22.7803 4.39 -8.09 -23.014 3.44 -7.78 -22.9365
@@ -1210,5 +1211,5 @@ function ldraw_lib__47391p01() = [
   [3,0,16.6884,-22.472,-18.837,17.1054,-21.7461,-18.669033333333333333333333333333,17.254,-22.5327,-18.6134],
 ];
 module ldraw_lib__47391p01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__47391p01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__47391p01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__47391p01(line=0.2);

@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <32227.scad>
 use <32228.scad>
-function ldraw_lib__4140643() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4140643(realsolid=false) = [
 // 0 ~_Znap Connector  3 x  3 -  4 Way Closed with Rotating Section Black/Yellow (Obsolete)
 // 0 Name: 4140643.dat
 // 0 Author: Michael Heidemann [mikeheide]
@@ -19,12 +20,12 @@ function ldraw_lib__4140643() = [
 // 
 // 
 // 1 14 0 0 0 1 0 0 0 1 0 0 0 1 32228.dat
-  [1,14,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__32228()],
+  [1,14,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__32228(realsolid)],
 // 1 0 0 0 0 1 0 0 0 1 0 0 0 1 32227.dat
-  [1,0,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__32227()],
+  [1,0,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__32227(realsolid)],
 // 1 0 0 0 0 1 0 0 0 -1 0 0 0 -1 32227.dat
-  [1,0,0,0,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__32227()],
+  [1,0,0,0,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__32227(realsolid)],
 ];
 module ldraw_lib__4140643(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4140643(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4140643(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4140643(line=0.2);

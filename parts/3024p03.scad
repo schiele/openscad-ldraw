@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/3024s01.scad>
 use <s/logoferraris02.scad>
-function ldraw_lib__3024p03() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3024p03(realsolid=false) = [
 // 0 Plate  1 x  1 with Logo Ferrari Badge Rounded Pattern
 // 0 Name: 3024p03.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -18,9 +19,9 @@ function ldraw_lib__3024p03() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3024s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3024s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3024s01(realsolid)],
 // 1 16 0 4 -10 0.5 0 0 0 0 -0.5 0 1 0 s\logoferraris02.dat
-  [1,16,0,4,-10,0.5,0,0,0,0,-0.5,0,1,0, ldraw_lib__s__logoferraris02()],
+  [1,16,0,4,-10,0.5,0,0,0,0,-0.5,0,1,0, ldraw_lib__s__logoferraris02(realsolid)],
 // 4 16 -10 8 -10 10 8 -10 2.73 7.8 -10 -2.73 7.8 -10
   [4,16,-10,8,-10,10,8,-10,2.73,7.8,-10,-2.73,7.8,-10],
 // 4 16 -2.73 0.2 -10 -10 0 -10 -10 8 -10 -2.73 7.8 -10
@@ -31,5 +32,5 @@ function ldraw_lib__3024p03() = [
   [4,16,-10,0,-10,-2.73,0.2,-10,2.73,0.2,-10,10,0,-10],
 ];
 module ldraw_lib__3024p03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3024p03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3024p03(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3024p03(line=0.2);

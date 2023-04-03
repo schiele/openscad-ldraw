@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3039s01.scad>
-function ldraw_lib__3039p73() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3039p73(realsolid=false) = [
 // 0 Slope Brick 45  2 x  2 with "3" over Black Stripes Pattern
 // 0 Name: 3039p73.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -15,7 +16,7 @@ function ldraw_lib__3039p73() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3039s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3039s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3039s01(realsolid)],
 // 3 0 8.172 12.728 -22.728 7.893 13.717 -23.717 19.8 13.718 -23.718
   [3,0,8.172,12.728,-22.728,7.893,13.717,-23.717,19.8,13.718,-23.718],
 // 3 0 -0.3 10.253 -20.253 -2.3 10.253 -20.253 -3.629 12.587 -22.587
@@ -298,5 +299,5 @@ function ldraw_lib__3039p73() = [
   [4,16,-1.898,5.006,-15.006,1.098,5.006,-15.006,0.747,4.634,-14.634,0.221,4.385,-14.385],
 ];
 module ldraw_lib__3039p73(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3039p73(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3039p73(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3039p73(line=0.2);

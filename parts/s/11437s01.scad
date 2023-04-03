@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__11437s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__11437s01(realsolid=false) = [
 // 0 ~Minifig Helmet Ornament Horn Elaborate - Half
 // 0 Name: s\11437s01.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -1414,5 +1415,5 @@ function ldraw_lib__s__11437s01() = [
   [2,24,-16.44,-14.376,1.5,-14.266,-13.054,1.5],
 ];
 module ldraw_lib__s__11437s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__11437s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__11437s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__11437s01(line=0.2);

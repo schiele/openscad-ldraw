@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3069bs01.scad>
-function ldraw_lib__3069bpc0() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3069bpc0(realsolid=false) = [
 // 0 Tile  1 x  2 with 56-Key 'QWERTYUIOP' Keyboard Pattern
 // 0 Name: 3069bpc0.dat
 // 0 Author: Vincent Messenet [Cheenzo]
@@ -17,7 +18,7 @@ function ldraw_lib__3069bpc0() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3069bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3069bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3069bs01(realsolid)],
 // 
 // 3 16 -13.933 0 7.685 -13.708 0 7.326 -13.438 0 7.64
   [3,16,-13.933,0,7.685,-13.708,0,7.326,-13.438,0,7.64],
@@ -3883,5 +3884,5 @@ function ldraw_lib__3069bpc0() = [
   [4,16,18.921,0,-5.978,18.831,0,-5.753,16.944,0,-5.753,16.899,0,-5.888],
 ];
 module ldraw_lib__3069bpc0(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3069bpc0(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3069bpc0(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3069bpc0(line=0.2);

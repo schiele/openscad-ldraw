@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__6299663b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6299663b(realsolid=false) = [
 // 0 Sticker  0.7 x  1.7 with Red and White Triangle on Dark Red Background
 // 0 Name: 6299663b.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -17,7 +18,7 @@ function ldraw_lib__6299663b() = [
 // 
 // 
 // 1 16 0 -0.25 0 17.5 0 0 0 0.25 0 0 0 7.5 box5-12.dat
-  [1,16,0,-0.25,0,17.5,0,0,0,0.25,0,0,0,7.5, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,17.5,0,0,0,0.25,0,0,0,7.5, ldraw_lib__box5_12(realsolid)],
 // 
 // 4 4 -6.8 -0.25 -2.8 -5.5 -0.25 -2.8 -1.6 -0.25 3.2 -2.2 -0.25 4.3
   [4,4,-6.8,-0.25,-2.8,-5.5,-0.25,-2.8,-1.6,-0.25,3.2,-2.2,-0.25,4.3],
@@ -75,5 +76,5 @@ function ldraw_lib__6299663b() = [
   [4,320,-5.4,-0.25,-6.4,-17.5,-0.25,-7.5,17.5,-0.25,-7.5,5.4,-0.25,-6.4],
 ];
 module ldraw_lib__6299663b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6299663b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6299663b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6299663b(line=0.2);

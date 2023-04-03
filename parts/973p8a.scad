@@ -3,7 +3,8 @@ use <../p/1-4cyli.scad>
 use <../p/2-4disc.scad>
 use <../p/2-4ndis.scad>
 use <s/973s01.scad>
-function ldraw_lib__973p8a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__973p8a(realsolid=false) = [
 // 0 Minifig Torso with Extreme Team Jacket Logo Pattern
 // 0 Name: 973p8a.dat
 // 0 Author: Thomas Burger [grapeape]
@@ -27,17 +28,17 @@ function ldraw_lib__973p8a() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01(realsolid)],
 // 1 80 0 -4 0 4.243 0 -4.243 0 -8 0 -4.243 0 -4.243 1-4cyli.dat
-  [1,80,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli()],
+  [1,80,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli(realsolid)],
 // 1 14 -7 5.1 -10 0 0 -0.6 0.6 0 0 0 1 0 2-4disc.dat
-  [1,14,-7,5.1,-10,0,0,-0.6,0.6,0,0,0,1,0, ldraw_lib__2_4disc()],
+  [1,14,-7,5.1,-10,0,0,-0.6,0.6,0,0,0,1,0, ldraw_lib__2_4disc(realsolid)],
 // 1 14 7.5 1.2 -10 0 0 -0.6 0.6 0 0 0 1 0 2-4disc.dat
-  [1,14,7.5,1.2,-10,0,0,-0.6,0.6,0,0,0,1,0, ldraw_lib__2_4disc()],
+  [1,14,7.5,1.2,-10,0,0,-0.6,0.6,0,0,0,1,0, ldraw_lib__2_4disc(realsolid)],
 // 1 16 -7 5.1 -10 0 0 -0.6 0.6 0 0 0 1 0 2-4ndis.dat
-  [1,16,-7,5.1,-10,0,0,-0.6,0.6,0,0,0,1,0, ldraw_lib__2_4ndis()],
+  [1,16,-7,5.1,-10,0,0,-0.6,0.6,0,0,0,1,0, ldraw_lib__2_4ndis(realsolid)],
 // 1 16 7.5 1.2 -10 0 0 -0.6 0.6 0 0 0 1 0 2-4ndis.dat
-  [1,16,7.5,1.2,-10,0,0,-0.6,0.6,0,0,0,1,0, ldraw_lib__2_4ndis()],
+  [1,16,7.5,1.2,-10,0,0,-0.6,0.6,0,0,0,1,0, ldraw_lib__2_4ndis(realsolid)],
 // 4 14 8.3 4.4 -10 8.79 5.6 -10 9.64 5.04 -10 8.72 4.12 -10
   [4,14,8.3,4.4,-10,8.79,5.6,-10,9.64,5.04,-10,8.72,4.12,-10],
 // 4 14 8.72 4.12 -10 9.64 5.04 -10 10.2 4.19 -10 9 3.7 -10
@@ -665,5 +666,5 @@ function ldraw_lib__973p8a() = [
   [4,14,9.239,15.574,10,10,15,10,12,15,10,11.087,15.689,10],
 ];
 module ldraw_lib__973p8a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__973p8a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__973p8a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__973p8a(line=0.2);

@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__973sdfb() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__973sdfb(realsolid=false) = [
 // 0 ~Minifig Torso with Black Suit, Red Shirt, Gold Clasps - Red
 // 0 Name: s\973sdfb.dat
 // 0 Author: Larry Pieniazek [lar]
@@ -380,5 +381,5 @@ function ldraw_lib__s__973sdfb() = [
 // 0 COMMENT end of file
 ];
 module ldraw_lib__s__973sdfb(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__973sdfb(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__973sdfb(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__973sdfb(line=0.2);

@@ -8,7 +8,8 @@ use <../../p/2-4ring3.scad>
 use <../../p/3-16chrd.scad>
 use <../../p/3-16cylo.scad>
 use <../../p/3-8ndis.scad>
-function ldraw_lib__s__17485s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__17485s01(realsolid=false) = [
 // 0 ~Brick  2 x  2 Round with Pin Holes - 3/16 without Patterned Surface
 // 0 Name: s\17485s01.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -29,9 +30,9 @@ function ldraw_lib__s__17485s01() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 20 0 6 0 0 0 4 0 0 0 -6 3-16cylo.dat
-  [1,16,0,20,0,6,0,0,0,4,0,0,0,-6, ldraw_lib__3_16cylo()],
+  [1,16,0,20,0,6,0,0,0,4,0,0,0,-6, ldraw_lib__3_16cylo(realsolid)],
 // 1 16 0 20 0 6 0 0 0 -1 0 0 0 -6 3-16chrd.dat
-  [1,16,0,20,0,6,0,0,0,-1,0,0,0,-6, ldraw_lib__3_16chrd()],
+  [1,16,0,20,0,6,0,0,0,-1,0,0,0,-6, ldraw_lib__3_16chrd(realsolid)],
 // 2 24 2 24 -6.5 2 24 -5.6023
   [2,24,2,24,-6.5,2,24,-5.6023],
 // 2 24 2 24 -5.6023 2.2962 24 -5.5434
@@ -59,7 +60,7 @@ function ldraw_lib__s__17485s01() = [
 // 2 24 4 24 -6.7641 5.6568 24 -5.6568
   [2,24,4,24,-6.7641,5.6568,24,-5.6568],
 // 1 16 0 24 0 8 0 0 0 1 0 0 0 -8 1-8edge.dat
-  [1,16,0,24,0,8,0,0,0,1,0,0,0,-8, ldraw_lib__1_8edge()],
+  [1,16,0,24,0,8,0,0,0,1,0,0,0,-8, ldraw_lib__1_8edge(realsolid)],
 // 3 16 4 24 -9 2 24 -6.5 4 24 -6.7641
   [3,16,4,24,-9,2,24,-6.5,4,24,-6.7641],
 // 4 16 2 24 -6.5 2 24 -5.6023 2.2962 24 -5.5434 4 24 -6.7641
@@ -67,7 +68,7 @@ function ldraw_lib__s__17485s01() = [
 // 4 16 2.2962 24 -5.5434 4.2426 24 -4.2426 5.6568 24 -5.6568 4 24 -6.7641
   [4,16,2.2962,24,-5.5434,4.2426,24,-4.2426,5.6568,24,-5.6568,4,24,-6.7641],
 // 1 16 0 24 0 2 0 0 0 -1 0 0 0 -2 1-8ring3.dat
-  [1,16,0,24,0,2,0,0,0,-1,0,0,0,-2, ldraw_lib__1_8ring3()],
+  [1,16,0,24,0,2,0,0,0,-1,0,0,0,-2, ldraw_lib__1_8ring3(realsolid)],
 // 
 // 0 // outside of understud
 // 2 24 4 10 -9 4 24 -9
@@ -197,17 +198,17 @@ function ldraw_lib__s__17485s01() = [
 // 
 // 0 // peghole
 // 1 16 2 10 0 0 1 0 0.5 0 0 0 0 -0.5 2-4rin12.dat
-  [1,16,2,10,0,0,1,0,0.5,0,0,0,0,-0.5, ldraw_lib__2_4rin12()],
+  [1,16,2,10,0,0,1,0,0.5,0,0,0,0,-0.5, ldraw_lib__2_4rin12(realsolid)],
 // 1 16 2 10 0 0 1 0 6.5 0 0 0 0 -6.5 3-8ndis.dat
-  [1,16,2,10,0,0,1,0,6.5,0,0,0,0,-6.5, ldraw_lib__3_8ndis()],
+  [1,16,2,10,0,0,1,0,6.5,0,0,0,0,-6.5, ldraw_lib__3_8ndis(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 2 10 0 0 16 0 6 0 0 0 0 -6 2-4cylo.dat
-  [1,16,2,10,0,0,16,0,6,0,0,0,0,-6, ldraw_lib__2_4cylo()],
+  [1,16,2,10,0,0,16,0,6,0,0,0,0,-6, ldraw_lib__2_4cylo(realsolid)],
 // 1 16 18 10 0 0 -1 0 2 0 0 0 0 -2 2-4ring3.dat
-  [1,16,18,10,0,0,-1,0,2,0,0,0,0,-2, ldraw_lib__2_4ring3()],
+  [1,16,18,10,0,0,-1,0,2,0,0,0,0,-2, ldraw_lib__2_4ring3(realsolid)],
 // 1 16 18 10 0 0 -1 0 8 0 0 0 0 -8 2-4edge.dat
-  [1,16,18,10,0,0,-1,0,8,0,0,0,0,-8, ldraw_lib__2_4edge()],
+  [1,16,18,10,0,0,-1,0,8,0,0,0,0,-8, ldraw_lib__2_4edge(realsolid)],
 // 4 16 20 18 0 18 18 0 18 17.3912 -3.0616 19.39 17.3912 -3.0616
   [4,16,20,18,0,18,18,0,18,17.3912,-3.0616,19.39,17.3912,-3.0616],
 // 2 24 20 18 0 19.39 17.3912 -3.0616
@@ -400,5 +401,5 @@ function ldraw_lib__s__17485s01() = [
   [4,16,0,0,0,15.6145,0,-11.9387,18.478,0,-7.654,20,0,0],
 ];
 module ldraw_lib__s__17485s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__17485s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__17485s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__17485s01(line=0.2);

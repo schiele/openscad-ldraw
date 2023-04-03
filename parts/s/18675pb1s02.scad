@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__18675pb1s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__18675pb1s02(realsolid=false) = [
 // 0 ~Dish  6 x  6 Inverted - No Studs with Handle with Red/Orange Patch and Wires Pattern - 1/2
 // 0 Name: s\18675pb1s02.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -2921,5 +2922,5 @@ function ldraw_lib__s__18675pb1s02() = [
   [4,0,-55.1094,.9265,-5.9592,-55.2801,.9258,-3.3556,-56,1.2667,0,-55.5209,1.2685,-7.3095],
 ];
 module ldraw_lib__s__18675pb1s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__18675pb1s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__18675pb1s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__18675pb1s02(line=0.2);

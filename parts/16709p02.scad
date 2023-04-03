@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/16709s01.scad>
 use <s/16709s02.scad>
-function ldraw_lib__16709p02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__16709p02(realsolid=false) = [
 // 0 Minifig Hips and Legs Short with Yellow Horizontal Stripe and Slingshot on Back Pattern
 // 0 Name: 16709p02.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -18,9 +19,9 @@ function ldraw_lib__16709p02() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\16709s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__16709s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__16709s01(realsolid)],
 // 1 14 0 0 0 1 0 0 0 1 0 0 0 1 s\16709s02.dat
-  [1,14,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__16709s02()],
+  [1,14,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__16709s02(realsolid)],
 // 4 0 5.2 1.3 10 5 0 10 5.7 0 10 5.9 1.3 10
   [4,0,5.2,1.3,10,5,0,10,5.7,0,10,5.9,1.3,10],
 // 4 0 5.7 2.4 10 5.2 1.3 10 5.9 1.3 10 6.3 2.2 10
@@ -157,5 +158,5 @@ function ldraw_lib__16709p02() = [
   [3,16,6.8,3,10,8.5,3.2,10,7.3,3.6,10],
 ];
 module ldraw_lib__16709p02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__16709p02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__16709p02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__16709p02(line=0.2);

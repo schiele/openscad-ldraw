@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../rect3.scad>
-function ldraw_lib__8__stud21a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__8__stud21a(realsolid=false) = [
 // 0 Stud Tube Open Slot without Slot Base Edges (Fast-Draw)
 // 0 Name: 8\stud21a.dat
 // 0 Author: Joerg Sommerer [Brickaneer]
@@ -83,7 +84,7 @@ function ldraw_lib__8__stud21a() = [
 // 5 24 4.2 -4 4.2 4.2 0 4.2 5.1429 -4 2 0 -4 6
   [5,24,4.2,-4,4.2,4.2,0,4.2,5.1429,-4,2,0,-4,6],
 // 1 16 6.1429 -2 2 1 0 0 0 0 -2 0 1 0 rect3.dat
-  [1,16,6.1429,-2,2,1,0,0,0,0,-2,0,1,0, ldraw_lib__rect3()],
+  [1,16,6.1429,-2,2,1,0,0,0,0,-2,0,1,0, ldraw_lib__rect3(realsolid)],
 // 2 24 -8 0 0 -5.6 0 -5.6
   [2,24,-8,0,0,-5.6,0,-5.6],
 // 2 24 -8 -4 0 -5.6 -4 -5.6
@@ -147,7 +148,7 @@ function ldraw_lib__8__stud21a() = [
 // 2 24 4.2 -4 -4.2 5.1429 -4 -2
   [2,24,4.2,-4,-4.2,5.1429,-4,-2],
 // 1 16 6.1429 -2 -2 -1 0 0 0 0 -2 0 -1 0 rect3.dat
-  [1,16,6.1429,-2,-2,-1,0,0,0,0,-2,0,-1,0, ldraw_lib__rect3()],
+  [1,16,6.1429,-2,-2,-1,0,0,0,0,-2,0,-1,0, ldraw_lib__rect3(realsolid)],
 // 4 16 5.1429 -4 -2 4.2 -4 -4.2 5.6 -4 -5.6 7.1429 -4 -2
   [4,16,5.1429,-4,-2,4.2,-4,-4.2,5.6,-4,-5.6,7.1429,-4,-2],
 // 4 16 7.1429 -4 -2 5.6 -4 -5.6 5.6 0 -5.6 7.1429 0 -2
@@ -160,5 +161,5 @@ function ldraw_lib__8__stud21a() = [
   [5,24,4.2,-4,-4.2,4.2,0,-4.2,5.1429,-4,-2,0,-4,-6],
 ];
 module ldraw_lib__8__stud21a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__8__stud21a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__8__stud21a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__8__stud21a(line=0.2);

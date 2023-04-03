@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <4463.scad>
-function ldraw_lib__264() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__264(realsolid=false) = [
 // 0 ~Moved to 4463
 // 0 Name: 264.dat
 // 0 Author: [PTadmin]
@@ -16,8 +17,8 @@ function ldraw_lib__264() = [
 // 
 // 0 // Window 1 x 4 x 5 Curved Top
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 4463.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4463()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4463(realsolid)],
 ];
 module ldraw_lib__264(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__264(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__264(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__264(line=0.2);

@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/1-4cyli.scad>
 use <s/30361ds01.scad>
-function ldraw_lib__30361d() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__30361d(realsolid=false) = [
 // 0 Cylinder  2 x  2 x  2 Robot Body with Bottom Axle Holder
 // 0 Name: 30361d.dat
 // 0 Author: Joerg Sommerer [Brickaneer]
@@ -17,9 +18,9 @@ function ldraw_lib__30361d() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\30361ds01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30361ds01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30361ds01(realsolid)],
 // 1 16 0 30 0 14.14 0 -14.14 0 -40 0 -14.14 0 -14.14 1-4cyli.dat
-  [1,16,0,30,0,14.14,0,-14.14,0,-40,0,-14.14,0,-14.14, ldraw_lib__1_4cyli()],
+  [1,16,0,30,0,14.14,0,-14.14,0,-40,0,-14.14,0,-14.14, ldraw_lib__1_4cyli(realsolid)],
 // 5 24 14.14 30 -14.14 14.14 -10 -14.14 7.653 30 -18.475 28.28 30 0
   [5,24,14.14,30,-14.14,14.14,-10,-14.14,7.653,30,-18.475,28.28,30,0],
 // 5 24 -14.14 30 -14.14 -14.14 -10 -14.14 -7.653 30 -18.475 -28.28 30 0
@@ -38,5 +39,5 @@ function ldraw_lib__30361d() = [
   [4,16,-18.48,30,-7.654,-14.14,30,-14.14,-14.14,-10,-14.14,-18.48,1.741,-7.654],
 ];
 module ldraw_lib__30361d(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__30361d(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__30361d(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__30361d(line=0.2);

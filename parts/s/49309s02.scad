@@ -5,7 +5,8 @@ use <../../p/4-4disc.scad>
 use <../../p/4-4edge.scad>
 use <../../p/4-4ring3.scad>
 use <../../p/stud6a.scad>
-function ldraw_lib__s__49309s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__49309s02(realsolid=false) = [
 // 0 ~Cone  2 x  2 x  2 Inverted - 1/4 Inside
 // 0 Name: s\49309s02.dat
 // 0 Author: Chris Dee [cwdee]
@@ -46,7 +47,7 @@ function ldraw_lib__s__49309s02() = [
   [2,24,7.654,0,18.478,0,0,20],
 // 
 // 1 16 10 0 10 1 0 0 0 1 0 0 0 1 stud6a.dat
-  [1,16,10,0,10,1,0,0,0,1,0,0,0,1, ldraw_lib__stud6a()],
+  [1,16,10,0,10,1,0,0,0,1,0,0,0,1, ldraw_lib__stud6a(realsolid)],
 // 
 // 4 16 17.1423 0 0 20 0 0 18.4780 0 7.6540 15.8378 0 6.5604
   [4,16,17.1423,0,0,20,0,0,18.4780,0,7.6540,15.8378,0,6.5604],
@@ -115,14 +116,14 @@ function ldraw_lib__s__49309s02() = [
   [5,24,6.5604,4,15.8378,6.5604,0,15.8378,7.3523,0,15.3085,0,0,17.1423],
 // 
 // 1 16 10 0 10 4 0 0 0 1 0 0 0 4 4-4edge.dat
-  [1,16,10,0,10,4,0,0,0,1,0,0,0,4, ldraw_lib__4_4edge()],
+  [1,16,10,0,10,4,0,0,0,1,0,0,0,4, ldraw_lib__4_4edge(realsolid)],
 // 1 16 10 0 10 1 0 0 0 1 0 0 0 1 4-4ring3.dat
-  [1,16,10,0,10,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4ring3()],
+  [1,16,10,0,10,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4ring3(realsolid)],
 // 1 16 10 0 10 3 0 0 0 1 0 0 0 3 4-4edge.dat
-  [1,16,10,0,10,3,0,0,0,1,0,0,0,3, ldraw_lib__4_4edge()],
+  [1,16,10,0,10,3,0,0,0,1,0,0,0,3, ldraw_lib__4_4edge(realsolid)],
 // 0 // top of interstuds and fillets
 // 1 16 10 0 0 3 0 0 0 1 0 0 0 3 4-4disc.dat
-  [1,16,10,0,0,3,0,0,0,1,0,0,0,3, ldraw_lib__4_4disc()],
+  [1,16,10,0,0,3,0,0,0,1,0,0,0,3, ldraw_lib__4_4disc(realsolid)],
 // 2 24 13 0 0 12.772 0 1.148
   [2,24,13,0,0,12.772,0,1.148],
 // 2 24 12.772 0 1.148 12.121 0 2.121
@@ -184,10 +185,10 @@ function ldraw_lib__s__49309s02() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 10 0 10 3 0 0 0 4 0 0 0 3 4-4cyli.dat
-  [1,16,10,0,10,3,0,0,0,4,0,0,0,3, ldraw_lib__4_4cyli()],
+  [1,16,10,0,10,3,0,0,0,4,0,0,0,3, ldraw_lib__4_4cyli(realsolid)],
 // 0 // outside of stud extension y=0 to 4
 // 1 16 10 0 10 0 0 -6 0 4 0 6 0 0 3-4cyli.dat
-  [1,16,10,0,10,0,0,-6,0,4,0,6,0,0, ldraw_lib__3_4cyli()],
+  [1,16,10,0,10,0,0,-6,0,4,0,6,0,0, ldraw_lib__3_4cyli(realsolid)],
 // 0 // joining fillet and inter-stud CW
 // 2 24 9 0 4.1989 9 32.0927 4.1989
   [2,24,9,0,4.1989,9,32.0927,4.1989],
@@ -567,5 +568,5 @@ function ldraw_lib__s__49309s02() = [
   [2,24,1.1481,40,7.2283,0,40,7],
 ];
 module ldraw_lib__s__49309s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__49309s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__49309s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__49309s02(line=0.2);

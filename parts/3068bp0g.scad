@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/1-4disc.scad>
 use <../p/1-4ndis.scad>
 use <s/3068bs01.scad>
-function ldraw_lib__3068bp0g() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3068bp0g(realsolid=false) = [
 // 0 Tile  2 x  2 with Music Notes and Butterflies Pattern
 // 0 Name: 3068bp0g.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -19,23 +20,23 @@ function ldraw_lib__3068bp0g() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3068bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3068bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3068bs01(realsolid)],
 // 1 29 -15 0 7 0 0 -0.8 0 1 0 0.8 0 0 1-4disc.dat
-  [1,29,-15,0,7,0,0,-0.8,0,1,0,0.8,0,0, ldraw_lib__1_4disc()],
+  [1,29,-15,0,7,0,0,-0.8,0,1,0,0.8,0,0, ldraw_lib__1_4disc(realsolid)],
 // 1 29 15 0 7 0.8 0 0 0 1 0 0 0 0.8 1-4disc.dat
-  [1,29,15,0,7,0.8,0,0,0,1,0,0,0,0.8, ldraw_lib__1_4disc()],
+  [1,29,15,0,7,0.8,0,0,0,1,0,0,0,0.8, ldraw_lib__1_4disc(realsolid)],
 // 1 29 -15 0 -15 -0.8 0 0 0 1 0 0 0 -0.8 1-4disc.dat
-  [1,29,-15,0,-15,-0.8,0,0,0,1,0,0,0,-0.8, ldraw_lib__1_4disc()],
+  [1,29,-15,0,-15,-0.8,0,0,0,1,0,0,0,-0.8, ldraw_lib__1_4disc(realsolid)],
 // 1 29 15 0 -15 0 0 0.8 0 1 0 -0.8 0 0 1-4disc.dat
-  [1,29,15,0,-15,0,0,0.8,0,1,0,-0.8,0,0, ldraw_lib__1_4disc()],
+  [1,29,15,0,-15,0,0,0.8,0,1,0,-0.8,0,0, ldraw_lib__1_4disc(realsolid)],
 // 1 16 15 0 7 0.8 0 0 0 1 0 0 0 0.8 1-4ndis.dat
-  [1,16,15,0,7,0.8,0,0,0,1,0,0,0,0.8, ldraw_lib__1_4ndis()],
+  [1,16,15,0,7,0.8,0,0,0,1,0,0,0,0.8, ldraw_lib__1_4ndis(realsolid)],
 // 1 16 -15 0 -15 -0.8 0 0 0 1 0 0 0 -0.8 1-4ndis.dat
-  [1,16,-15,0,-15,-0.8,0,0,0,1,0,0,0,-0.8, ldraw_lib__1_4ndis()],
+  [1,16,-15,0,-15,-0.8,0,0,0,1,0,0,0,-0.8, ldraw_lib__1_4ndis(realsolid)],
 // 1 16 -15 0 7 0 0 -0.8 0 1 0 0.8 0 0 1-4ndis.dat
-  [1,16,-15,0,7,0,0,-0.8,0,1,0,0.8,0,0, ldraw_lib__1_4ndis()],
+  [1,16,-15,0,7,0,0,-0.8,0,1,0,0.8,0,0, ldraw_lib__1_4ndis(realsolid)],
 // 1 16 15 0 -15 0 0 0.8 0 1 0 -0.8 0 0 1-4ndis.dat
-  [1,16,15,0,-15,0,0,0.8,0,1,0,-0.8,0,0, ldraw_lib__1_4ndis()],
+  [1,16,15,0,-15,0,0,0.8,0,1,0,-0.8,0,0, ldraw_lib__1_4ndis(realsolid)],
 // 3 321 -13.5 0 18 -13.9 0 15.4 -13.1 0 15.4
   [3,321,-13.5,0,18,-13.9,0,15.4,-13.1,0,15.4],
 // 4 321 -13.1 0 15.4 -13.9 0 15.4 -14.4 0 14.9 -12.6 0 14.9
@@ -1478,5 +1479,5 @@ function ldraw_lib__3068bp0g() = [
   [4,16,15,0,-13.6,12.2,0,-13.6,12.2,0,-15,15,0,-15],
 ];
 module ldraw_lib__3068bp0g(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3068bp0g(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3068bp0g(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3068bp0g(line=0.2);

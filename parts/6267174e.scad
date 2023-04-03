@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__6267174e() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6267174e(realsolid=false) = [
 // 0 Sticker  0.8 x  1.9 with Bricks
 // 0 Name: 6267174e.dat
 // 0 Author: Howard Lande [HowardLande]
@@ -17,7 +18,7 @@ function ldraw_lib__6267174e() = [
 // 
 // 
 // 1 16 0 -0.25 0 19 0 0 0 0.25 0 0 0 8.5 box5-12.dat
-  [1,16,0,-0.25,0,19,0,0,0,0.25,0,0,0,8.5, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,19,0,0,0,0.25,0,0,0,8.5, ldraw_lib__box5_12(realsolid)],
 // 
 // 4 70 0.318 -0.25 8.5 -0.53 -0.25 8.5 -0.636 -0.25 7.526 0.53 -0.25 7.208
   [4,70,0.318,-0.25,8.5,-0.53,-0.25,8.5,-0.636,-0.25,7.526,0.53,-0.25,7.208],
@@ -378,5 +379,5 @@ function ldraw_lib__6267174e() = [
 // 0
 ];
 module ldraw_lib__6267174e(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6267174e(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6267174e(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6267174e(line=0.2);

@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__59718d() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__59718d(realsolid=false) = [
 // 0 Sticker  0.9 x  0.9 with Round Green/White Arrows
 // 0 Name: 59718d.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -167,5 +168,5 @@ function ldraw_lib__59718d() = [
 // 0 //
 ];
 module ldraw_lib__59718d(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__59718d(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__59718d(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__59718d(line=0.2);

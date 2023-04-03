@@ -4,7 +4,8 @@ use <../../p/1-4ring4.scad>
 use <../../p/1-4ring7.scad>
 use <../../p/2-4cylo.scad>
 use <../../p/2-4ndis.scad>
-function ldraw_lib__s__32533s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__32533s01(realsolid=false) = [
 // 0 ~Technic Disc  5 x  5 Projectile without Top Face  1/6
 // 0 Name: s\32533s01.dat
 // 0 Author: Santeri Piippo [arezey]
@@ -1061,11 +1062,11 @@ function ldraw_lib__s__32533s01() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 3.5 0 42 0 1.5 0 0 0 -2.5 5 0 0 2-4cylo.dat
-  [1,16,3.5,0,42,0,1.5,0,0,0,-2.5,5,0,0, ldraw_lib__2_4cylo()],
+  [1,16,3.5,0,42,0,1.5,0,0,0,-2.5,5,0,0, ldraw_lib__2_4cylo(realsolid)],
 // 1 16 3.5 0 42 0 1 0 0 0 -2.5 5 0 0 2-4ndis.dat
-  [1,16,3.5,0,42,0,1,0,0,0,-2.5,5,0,0, ldraw_lib__2_4ndis()],
+  [1,16,3.5,0,42,0,1,0,0,0,-2.5,5,0,0, ldraw_lib__2_4ndis(realsolid)],
 // 1 16 5 0 42 0 -1 0 0 0 -2.5 5 0 0 2-4ndis.dat
-  [1,16,5,0,42,0,-1,0,0,0,-2.5,5,0,0, ldraw_lib__2_4ndis()],
+  [1,16,5,0,42,0,-1,0,0,0,-2.5,5,0,0, ldraw_lib__2_4ndis(realsolid)],
 // 2 24 3.5 0 17.5 3.5 0 37
   [2,24,3.5,0,17.5,3.5,0,37],
 // 2 24 5 0 17.5 5 0 37
@@ -1075,13 +1076,13 @@ function ldraw_lib__s__32533s01() = [
 // 2 24 5 0 47 5 0 48.171
   [2,24,5,0,47,5,0,48.171],
 // 1 16 0 0 17.5 0.5 0 0 0 -1 0 0 0 -0.5 1-4ring7.dat
-  [1,16,0,0,17.5,0.5,0,0,0,-1,0,0,0,-0.5, ldraw_lib__1_4ring7()],
+  [1,16,0,0,17.5,0.5,0,0,0,-1,0,0,0,-0.5, ldraw_lib__1_4ring7(realsolid)],
 // 1 16 0 0 17.5 1 0 0 0 -1 0 0 0 -1 1-4ring4.dat
-  [1,16,0,0,17.5,1,0,0,0,-1,0,0,0,-1, ldraw_lib__1_4ring4()],
+  [1,16,0,0,17.5,1,0,0,0,-1,0,0,0,-1, ldraw_lib__1_4ring4(realsolid)],
 // 1 16 0 0 17.5 3.5 0 0 0 1 0 0 0 -3.5 1-4edge.dat
-  [1,16,0,0,17.5,3.5,0,0,0,1,0,0,0,-3.5, ldraw_lib__1_4edge()],
+  [1,16,0,0,17.5,3.5,0,0,0,1,0,0,0,-3.5, ldraw_lib__1_4edge(realsolid)],
 // 1 16 0 0 17.5 5 0 0 0 1 0 0 0 -5 1-4edge.dat
-  [1,16,0,0,17.5,5,0,0,0,1,0,0,0,-5, ldraw_lib__1_4edge()],
+  [1,16,0,0,17.5,5,0,0,0,1,0,0,0,-5, ldraw_lib__1_4edge(realsolid)],
 // 2 24 6.331 0 48.0887 12.553 0 46.851
   [2,24,6.331,0,48.0887,12.553,0,46.851],
 // 2 24 12.553 0 46.851 18.561 0 44.811
@@ -1556,5 +1557,5 @@ function ldraw_lib__s__32533s01() = [
   [5,24,22.8533,-11.518,13.1951,20.9356,-11.518,16.0656,15.2866,-10.157,11.7291,28.6629,-14.451,21.993],
 ];
 module ldraw_lib__s__32533s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__32533s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__32533s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__32533s01(line=0.2);

@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/1-4cyli.scad>
 use <s/3004p90b.scad>
 use <s/973s01.scad>
-function ldraw_lib__973p6i() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__973p6i(realsolid=false) = [
 // 0 Minifig Torso with Green Futuron Pattern
 // 0 Name: 973p6i.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -21,9 +22,9 @@ function ldraw_lib__973p6i() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01(realsolid)],
 // 1 0 0 -4 0 4.243 0 -4.243 0 -8 0 -4.243 0 -4.243 1-4cyli.dat
-  [1,0,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli()],
+  [1,0,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli(realsolid)],
 // 0 // back pattern
 // 4 0 10.7 27.7 10 10.7 31.4 10 9.9 31.4 10 9.9 28.1 10
   [4,0,10.7,27.7,10,10.7,31.4,10,9.9,31.4,10,9.9,28.1,10],
@@ -176,7 +177,7 @@ function ldraw_lib__973p6i() = [
 // 
 // 0 // front pattern
 // 1 82 -5.4 1.7 -10 0.45 0 0 0 0.45 0 0 0 1 s\3004p90b.dat
-  [1,82,-5.4,1.7,-10,0.45,0,0,0,0.45,0,0,0,1, ldraw_lib__s__3004p90b()],
+  [1,82,-5.4,1.7,-10,0.45,0,0,0,0.45,0,0,0,1, ldraw_lib__s__3004p90b(realsolid)],
 // 3 2 3.4 2.3 -10 2.4044 3.6539 -10 2.6766 3.8929 -10
   [3,2,3.4,2.3,-10,2.4044,3.6539,-10,2.6766,3.8929,-10],
 // 4 2 2.7131 4.2461 -10 4.8 8 -10 3.4 2.3 -10 2.6766 3.8929 -10
@@ -755,5 +756,5 @@ function ldraw_lib__973p6i() = [
   [3,2,.5895,6.8791,-10,-3.1838,8.567,-10,4.8,8,-10],
 ];
 module ldraw_lib__973p6i(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__973p6i(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__973p6i(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__973p6i(line=0.2);

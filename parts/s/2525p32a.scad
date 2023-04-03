@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/2-4disc.scad>
 use <../../p/3-4disc.scad>
-function ldraw_lib__s__2525p32a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__2525p32a(realsolid=false) = [
 // 0 ~Crossed Cannons over Blue Crossed Flag
 // 0 Name: s\2525p32a.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -16,13 +17,13 @@ function ldraw_lib__s__2525p32a() = [
 // 
 // 
 // 1 0 18 0 -13.43 -2.957 0 3.524 0 1 0 -3.524 0 -2.957 2-4disc.dat
-  [1,0,18,0,-13.43,-2.957,0,3.524,0,1,0,-3.524,0,-2.957, ldraw_lib__2_4disc()],
+  [1,0,18,0,-13.43,-2.957,0,3.524,0,1,0,-3.524,0,-2.957, ldraw_lib__2_4disc(realsolid)],
 // 1 0 -19.32 0 -13.15 -2.957 0 -3.524 0 1 0 3.524 0 -2.957 2-4disc.dat
-  [1,0,-19.32,0,-13.15,-2.957,0,-3.524,0,1,0,3.524,0,-2.957, ldraw_lib__2_4disc()],
+  [1,0,-19.32,0,-13.15,-2.957,0,-3.524,0,1,0,3.524,0,-2.957, ldraw_lib__2_4disc(realsolid)],
 // 1 0 23.06 0 -17.88 -2 0 0 0 1 0 0 0 -2 3-4disc.dat
-  [1,0,23.06,0,-17.88,-2,0,0,0,1,0,0,0,-2, ldraw_lib__3_4disc()],
+  [1,0,23.06,0,-17.88,-2,0,0,0,1,0,0,0,-2, ldraw_lib__3_4disc(realsolid)],
 // 1 0 -24.29 0 -17.29 0 0 -2 0 1 0 2 0 0 3-4disc.dat
-  [1,0,-24.29,0,-17.29,0,0,-2,0,1,0,2,0,0, ldraw_lib__3_4disc()],
+  [1,0,-24.29,0,-17.29,0,0,-2,0,1,0,2,0,0, ldraw_lib__3_4disc(realsolid)],
 // 4 0 -4.69 0 23.02 -5.22 0 23.55 -5.439 0 23.02 -5.22 0 22.49
   [4,0,-4.69,0,23.02,-5.22,0,23.55,-5.439,0,23.02,-5.22,0,22.49],
 // 4 0 -4.69 0 23.02 -5.22 0 22.49 -4.69 0 22.271 -4.16 0 22.49
@@ -1519,5 +1520,5 @@ function ldraw_lib__s__2525p32a() = [
   [4,16,3.749,0,19.593,4.975,0,19.032,5.2,0,19.61,3.89,0,20.26],
 ];
 module ldraw_lib__s__2525p32a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__2525p32a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__2525p32a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__2525p32a(line=0.2);

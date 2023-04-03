@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/1-4ering.scad>
 use <../../p/1-4rin20.scad>
-function ldraw_lib__s__u9251p02s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__u9251p02s01(realsolid=false) = [
 // 0 ~1/4 Ring of 3 Red and Yellow Flowers on LtGreen/Green Leaves Pattern
 // 0 Name: s\u9251p02s01.dat
 // 0 Author: Steffen [Steffen]
@@ -16,9 +17,9 @@ function ldraw_lib__s__u9251p02s01() = [
 // 
 // 
 // 1 16 20 0 20 -40 0 0 0 1 0 0 0 -40 1-4ering.dat
-  [1,16,20,0,20,-40,0,0,0,1,0,0,0,-40, ldraw_lib__1_4ering()],
+  [1,16,20,0,20,-40,0,0,0,1,0,0,0,-40, ldraw_lib__1_4ering(realsolid)],
 // 1 16 20 0 20 -1 0 0 0 1 0 0 0 -1 1-4rin20.dat
-  [1,16,20,0,20,-1,0,0,0,1,0,0,0,-1, ldraw_lib__1_4rin20()],
+  [1,16,20,0,20,-1,0,0,0,1,0,0,0,-1, ldraw_lib__1_4rin20(realsolid)],
 // 4 0 -15.4 0 19.6 -15.1 0 18.8 -14.6 0 19.1 -15.4 0 20
   [4,0,-15.4,0,19.6,-15.1,0,18.8,-14.6,0,19.1,-15.4,0,20],
 // 3 0 -14.7 0 20 -15.4 0 20 -14.6 0 19.1
@@ -2015,5 +2016,5 @@ function ldraw_lib__s__u9251p02s01() = [
   [3,16,-2.83828,0,15.9389,-3.21712,0,15.0243,-2.7262,0,14.3617],
 ];
 module ldraw_lib__s__u9251p02s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__u9251p02s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__u9251p02s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__u9251p02s01(line=0.2);

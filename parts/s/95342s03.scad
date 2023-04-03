@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__95342s03() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__95342s03(realsolid=false) = [
 // 0 ~Animal Chicken Wattle and Comb - Half
 // 0 Name: s\95342s03.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -382,5 +383,5 @@ function ldraw_lib__s__95342s03() = [
   [5,24,0,-38.732,-17.415,1.569,-39.333,-17.388,1.321,-40.628,-17.996,1.876,-38.733,-17.212],
 ];
 module ldraw_lib__s__95342s03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__95342s03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__95342s03(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__95342s03(line=0.2);

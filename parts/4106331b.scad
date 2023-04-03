@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__4106331b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4106331b(realsolid=false) = [
 // 0 Sticker  5.5 x  3.7 with Reversed "OPEN" Sign
 // 0 Name: 4106331b.dat
 // 0 Author: Willy Tschager [Holly-Wood]
@@ -20,7 +21,7 @@ function ldraw_lib__4106331b() = [
 // 0 // Box
 // 
 // 1 16 0 -0.25 0 37 0 0 0 0.25 0 0 0 55 box5-12.dat
-  [1,16,0,-0.25,0,37,0,0,0,0.25,0,0,0,55, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,37,0,0,0,0.25,0,0,0,55, ldraw_lib__box5_12(realsolid)],
 // 
 // 0 BFC NOCLIP
   [0,"BFC","NOCLIP"],
@@ -736,5 +737,5 @@ function ldraw_lib__4106331b() = [
   [4,16,-14.5,-0.25,6.67,-1.6,-0.25,6.67,-1.6,-0.25,11.705,-14.5,-0.25,13.093],
 ];
 module ldraw_lib__4106331b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4106331b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4106331b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4106331b(line=0.2);

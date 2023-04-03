@@ -7,7 +7,8 @@ use <../p/4-4rin10.scad>
 use <../p/4-4ring4.scad>
 use <../p/rect.scad>
 use <../p/rect2p.scad>
-function ldraw_lib__87618() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__87618(realsolid=false) = [
 // 0 Bar  4.5L with Handle
 // 0 Name: 87618.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -24,15 +25,15 @@ function ldraw_lib__87618() = [
 // 
 // 
 // 1 16 0 0 -30 4 0 0 0 0 -4 0 20 0 4-4cylc.dat
-  [1,16,0,0,-30,4,0,0,0,0,-4,0,20,0, ldraw_lib__4_4cylc()],
+  [1,16,0,0,-30,4,0,0,0,0,-4,0,20,0, ldraw_lib__4_4cylc(realsolid)],
 // 1 16 0 0 -10 1 0 0 0 0 -1 0 1 0 4-4ring4.dat
-  [1,16,0,0,-10,1,0,0,0,0,-1,0,1,0, ldraw_lib__4_4ring4()],
+  [1,16,0,0,-10,1,0,0,0,0,-1,0,1,0, ldraw_lib__4_4ring4(realsolid)],
 // 1 16 0 0 -10 0.5 0 0 0 0 -0.5 0 1 0 4-4rin10.dat
-  [1,16,0,0,-10,0.5,0,0,0,0,-0.5,0,1,0, ldraw_lib__4_4rin10()],
+  [1,16,0,0,-10,0.5,0,0,0,0,-0.5,0,1,0, ldraw_lib__4_4rin10(realsolid)],
 // 1 16 0 0 10 5.5 0 0 0 0 5.5 0 -20 0 4-4cylc.dat
-  [1,16,0,0,10,5.5,0,0,0,0,5.5,0,-20,0, ldraw_lib__4_4cylc()],
+  [1,16,0,0,10,5.5,0,0,0,0,5.5,0,-20,0, ldraw_lib__4_4cylc(realsolid)],
 // 1 16 0 -8.5 0 0 0 2 0 1 0 -6 0 0 rect.dat
-  [1,16,0,-8.5,0,0,0,2,0,1,0,-6,0,0, ldraw_lib__rect()],
+  [1,16,0,-8.5,0,0,0,2,0,1,0,-6,0,0, ldraw_lib__rect(realsolid)],
 // 0 // baseline
 // 2 24 -2 -5.1 -9.4 0 -5.5 -9
   [2,24,-2,-5.1,-9.4,0,-5.5,-9],
@@ -51,9 +52,9 @@ function ldraw_lib__87618() = [
 // 4 16 -2 -5.1 9.4 -2 -5.1 -9.4 -2 -8.5 -6 -2 -8.5 6
   [4,16,-2,-5.1,9.4,-2,-5.1,-9.4,-2,-8.5,-6,-2,-8.5,6],
 // 1 16 0 -6.8 -7.7 0 0 -2 -1.7 1 0 1.7 1 0 rect2p.dat
-  [1,16,0,-6.8,-7.7,0,0,-2,-1.7,1,0,1.7,1,0, ldraw_lib__rect2p()],
+  [1,16,0,-6.8,-7.7,0,0,-2,-1.7,1,0,1.7,1,0, ldraw_lib__rect2p(realsolid)],
 // 1 16 0 -6.8 7.7 0 0 -2 1.7 1 0 1.7 -1 0 rect2p.dat
-  [1,16,0,-6.8,7.7,0,0,-2,1.7,1,0,1.7,-1,0, ldraw_lib__rect2p()],
+  [1,16,0,-6.8,7.7,0,0,-2,1.7,1,0,1.7,-1,0, ldraw_lib__rect2p(realsolid)],
 // 0 // edge ring
 // 2 24 -1.53 -8.5 3.7 0 -8.5 4
   [2,24,-1.53,-8.5,3.7,0,-8.5,4],
@@ -120,12 +121,12 @@ function ldraw_lib__87618() = [
 // 2 24 0 -8.5 4 1.53 -8.5 3.7
   [2,24,0,-8.5,4,1.53,-8.5,3.7],
 // 1 16 0 -98.5 0 4 0 0 0 1 0 0 0 4 4-4edge.dat
-  [1,16,0,-98.5,0,4,0,0,0,1,0,0,0,4, ldraw_lib__4_4edge()],
+  [1,16,0,-98.5,0,4,0,0,0,1,0,0,0,4, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 -98.5 0 4 0 0 0 1 0 0 0 4 4-4disc.dat
-  [1,16,0,-98.5,0,4,0,0,0,1,0,0,0,4, ldraw_lib__4_4disc()],
+  [1,16,0,-98.5,0,4,0,0,0,1,0,0,0,4, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 -98.5 0 4 0 0 0 95 0 0 0 4 4-4cyli.dat
-  [1,16,0,-98.5,0,4,0,0,0,95,0,0,0,4, ldraw_lib__4_4cyli()],
+  [1,16,0,-98.5,0,4,0,0,0,95,0,0,0,4, ldraw_lib__4_4cyli(realsolid)],
 ];
 module ldraw_lib__87618(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__87618(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__87618(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__87618(line=0.2);

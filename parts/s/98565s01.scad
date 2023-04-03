@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/rect2p.scad>
 use <90617s04.scad>
-function ldraw_lib__s__98565s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__98565s01(realsolid=false) = [
 // 0 ~Constraction Connector  2 x  2 with Double Reinforced Ball Sockets - Quarter
 // 0 Name: s\98565s01.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -16,13 +17,13 @@ function ldraw_lib__s__98565s01() = [
 // 
 // 
 // 1 16 0 0 20 1 0 0 0 1 0 0 0 1 s\90617s04.dat
-  [1,16,0,0,20,1,0,0,0,1,0,0,0,1, ldraw_lib__s__90617s04()],
+  [1,16,0,0,20,1,0,0,0,1,0,0,0,1, ldraw_lib__s__90617s04(realsolid)],
 // 1 16 11.9697 -7 1.2803 0.53033 0 0 0 0 -2.25 0.21968 1 0 rect2p.dat
-  [1,16,11.9697,-7,1.2803,0.53033,0,0,0,0,-2.25,0.21968,1,0, ldraw_lib__rect2p()],
+  [1,16,11.9697,-7,1.2803,0.53033,0,0,0,0,-2.25,0.21968,1,0, ldraw_lib__rect2p(realsolid)],
 // 1 16 11.2197 -7 0.5303 0.21968 -1 0 0 0 -2.25 0.53033 0 0 rect2p.dat
-  [1,16,11.2197,-7,0.5303,0.21968,-1,0,0,0,-2.25,0.53033,0,0, ldraw_lib__rect2p()],
+  [1,16,11.2197,-7,0.5303,0.21968,-1,0,0,0,-2.25,0.53033,0,0, ldraw_lib__rect2p(realsolid)],
 // 1 16 15 -7 2.75 -2.5 0 0 0 0 2.25 -1.25 1 0 rect2p.dat
-  [1,16,15,-7,2.75,-2.5,0,0,0,0,2.25,-1.25,1,0, ldraw_lib__rect2p()],
+  [1,16,15,-7,2.75,-2.5,0,0,0,0,2.25,-1.25,1,0, ldraw_lib__rect2p(realsolid)],
 // 3 16 11 -4.75 0 2.25 -4.75 0 11.4393 -4.75 1.0607
   [3,16,11,-4.75,0,2.25,-4.75,0,11.4393,-4.75,1.0607],
 // 4 16 17.5 -4.75 4 12.5 -4.75 1.5 11.4393 -4.75 1.0607 2.25 -4.75 0
@@ -41,5 +42,5 @@ function ldraw_lib__s__98565s01() = [
   [5,24,17.5,-9.25,4,17.5,-4.75,4,19.7,-9.25,7.62,12.5,-9.25,1.5],
 ];
 module ldraw_lib__s__98565s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__98565s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__98565s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__98565s01(line=0.2);

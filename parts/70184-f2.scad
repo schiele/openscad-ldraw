@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__70184_f2() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__70184_f2(realsolid=false) = [
 // 0 ~Spring for Pneumatic Pump  2 x  2 x  5 without Knob (Extended)
 // 0 Name: 70184-f2.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -3985,5 +3986,5 @@ function ldraw_lib__70184_f2() = [
   [4,16,-6.47,1,-2.68,-7,1,0,-6.5,0.5,0,-6.01,0.5,-2.49],
 ];
 module ldraw_lib__70184_f2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__70184_f2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__70184_f2(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__70184_f2(line=0.2);

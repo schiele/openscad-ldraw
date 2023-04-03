@@ -3,7 +3,8 @@ use <../p/4-4cyli.scad>
 use <../p/4-4edge.scad>
 use <../p/connhole.scad>
 use <s/53550s01.scad>
-function ldraw_lib__53550() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__53550(realsolid=false) = [
 // 0 Technic Bionicle Weapon Ball Shooter Magazine
 // 0 Name: 53550.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -20,19 +21,19 @@ function ldraw_lib__53550() = [
 // 
 // 
 // 1 16 0 0 0 0 -1 0 0 0 -1 1 0 0 connhole.dat
-  [1,16,0,0,0,0,-1,0,0,0,-1,1,0,0, ldraw_lib__connhole()],
+  [1,16,0,0,0,0,-1,0,0,0,-1,1,0,0, ldraw_lib__connhole(realsolid)],
 // 1 16 10 0 0 0 -1 0 0 0 -9 9 0 0 4-4edge.dat
-  [1,16,10,0,0,0,-1,0,0,0,-9,9,0,0, ldraw_lib__4_4edge()],
+  [1,16,10,0,0,0,-1,0,0,0,-9,9,0,0, ldraw_lib__4_4edge(realsolid)],
 // 1 16 10 0 0 0 -20 0 0 0 -9 9 0 0 4-4cyli.dat
-  [1,16,10,0,0,0,-20,0,0,0,-9,9,0,0, ldraw_lib__4_4cyli()],
+  [1,16,10,0,0,0,-20,0,0,0,-9,9,0,0, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 -10 0 0 0 -1 0 0 0 -9 9 0 0 4-4edge.dat
-  [1,16,-10,0,0,0,-1,0,0,0,-9,9,0,0, ldraw_lib__4_4edge()],
+  [1,16,-10,0,0,0,-1,0,0,0,-9,9,0,0, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\53550s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__53550s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__53550s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 -0.924 0.383 0 0.383 0.924 s\53550s01.dat
-  [1,16,0,0,0,-1,0,0,0,-0.924,0.383,0,0.383,0.924, ldraw_lib__s__53550s01()],
+  [1,16,0,0,0,-1,0,0,0,-0.924,0.383,0,0.383,0.924, ldraw_lib__s__53550s01(realsolid)],
 // 0 //
 ];
 module ldraw_lib__53550(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__53550(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__53550(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__53550(line=0.2);

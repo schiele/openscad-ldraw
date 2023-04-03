@@ -5,7 +5,8 @@ use <../p/4-4cyli.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4edge.scad>
 use <s/92218s01.scad>
-function ldraw_lib__92218() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__92218(realsolid=false) = [
 // 0 Claw  7L with  3 Bars  0.5L
 // 0 Name: 92218.dat
 // 0 Author: Joerg Sommerer [Brickaneer]
@@ -23,25 +24,25 @@ function ldraw_lib__92218() = [
 // 
 // 
 // 1 16 -0.0001 0 0 -4 0 0 0 0 4 0 1 0 4-4edge.dat
-  [1,16,-0.0001,0,0,-4,0,0,0,0,4,0,1,0, ldraw_lib__4_4edge()],
+  [1,16,-0.0001,0,0,-4,0,0,0,0,4,0,1,0, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 0 0 4 0 0 0 0 4 0 -1 0 4-4disc.dat
-  [1,16,0,0,0,4,0,0,0,0,4,0,-1,0, ldraw_lib__4_4disc()],
+  [1,16,0,0,0,4,0,0,0,0,4,0,-1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 16 -0.0001 0 -10 -4 0 0 0 0 4 0 10 0 2-4cyli.dat
-  [1,16,-0.0001,0,-10,-4,0,0,0,0,4,0,10,0, ldraw_lib__2_4cyli()],
+  [1,16,-0.0001,0,-10,-4,0,0,0,0,4,0,10,0, ldraw_lib__2_4cyli(realsolid)],
 // 1 16 -0.0001 0 -10 -4 0 0 0 0 4 0 1 0 2-4edge.dat
-  [1,16,-0.0001,0,-10,-4,0,0,0,0,4,0,1,0, ldraw_lib__2_4edge()],
+  [1,16,-0.0001,0,-10,-4,0,0,0,0,4,0,1,0, ldraw_lib__2_4edge(realsolid)],
 // 1 16 0 20 -20 -4 0 0 0 1 0 0 0 -4 4-4edge.dat
-  [1,16,0,20,-20,-4,0,0,0,1,0,0,0,-4, ldraw_lib__4_4edge()],
+  [1,16,0,20,-20,-4,0,0,0,1,0,0,0,-4, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 20 -20 -4 0 0 0 -1 0 0 0 4 4-4disc.dat
-  [1,16,0,20,-20,-4,0,0,0,-1,0,0,0,4, ldraw_lib__4_4disc()],
+  [1,16,0,20,-20,-4,0,0,0,-1,0,0,0,4, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 20 -20 -4 0 0 0 -10 0 0 0 4 4-4cyli.dat
-  [1,16,0,20,-20,-4,0,0,0,-10,0,0,0,4, ldraw_lib__4_4cyli()],
+  [1,16,0,20,-20,-4,0,0,0,-10,0,0,0,4, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 20 -40 -4 0 0 0 1 0 0 0 -4 4-4edge.dat
-  [1,16,0,20,-40,-4,0,0,0,1,0,0,0,-4, ldraw_lib__4_4edge()],
+  [1,16,0,20,-40,-4,0,0,0,1,0,0,0,-4, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 20 -40 -4 0 0 0 -1 0 0 0 4 4-4disc.dat
-  [1,16,0,20,-40,-4,0,0,0,-1,0,0,0,4, ldraw_lib__4_4disc()],
+  [1,16,0,20,-40,-4,0,0,0,-1,0,0,0,4, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 20 -40 -4 0 0 0 -10 0 0 0 4 4-4cyli.dat
-  [1,16,0,20,-40,-4,0,0,0,-10,0,0,0,4, ldraw_lib__4_4cyli()],
+  [1,16,0,20,-40,-4,0,0,0,-10,0,0,0,4, ldraw_lib__4_4cyli(realsolid)],
 // 2 24 7 10 -10 -7 10 -10
   [2,24,7,10,-10,-7,10,-10],
 // 3 16 -7 10 -10 0 4 -10 7 10 -10
@@ -167,10 +168,10 @@ function ldraw_lib__92218() = [
 // 5 24 0 5.0448 -140.311 0 4.4 -150.22 2.15 4.5 -147 -2.15 4.5 -147
   [5,24,0,5.0448,-140.311,0,4.4,-150.22,2.15,4.5,-147,-2.15,4.5,-147],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\92218s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__92218s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__92218s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\92218s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__92218s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__92218s01(realsolid)],
 ];
 module ldraw_lib__92218(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__92218(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__92218(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__92218(line=0.2);

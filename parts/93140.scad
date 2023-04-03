@@ -2,7 +2,8 @@ use <../lib.scad>
 use <s/4714s01.scad>
 use <../p/stug-2x1.scad>
 use <../p/stug4-1x5.scad>
-function ldraw_lib__93140() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__93140(realsolid=false) = [
 // 0 Minifig Stretcher without Bottom Hinges
 // 0 Name: 93140.dat
 // 0 Author: Owen Burgoyne [C3POwen]
@@ -19,14 +20,14 @@ function ldraw_lib__93140() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4714s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4714s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4714s01(realsolid)],
 // 1 16 0 4 0 1 0 0 0 -1 0 0 0 1 stug4-1x5.dat
-  [1,16,0,4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stug4_1x5()],
+  [1,16,0,4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stug4_1x5(realsolid)],
 // 1 16 -50 0 0 1 0 0 0 1 0 0 0 1 stug-2x1.dat
-  [1,16,-50,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_2x1()],
+  [1,16,-50,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_2x1(realsolid)],
 // 1 16 50 0 0 1 0 0 0 1 0 0 0 1 stug-2x1.dat
-  [1,16,50,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_2x1()],
+  [1,16,50,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_2x1(realsolid)],
 ];
 module ldraw_lib__93140(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__93140(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__93140(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__93140(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3818s01.scad>
-function ldraw_lib__3818pda2() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3818pda2(realsolid=false) = [
 // 0 Minifig Arm Right with Medium Azure and Magenta Stripes Pattern
 // 0 Name: 3818pda2.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -25,7 +26,7 @@ function ldraw_lib__3818pda2() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3818s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3818s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3818s01(realsolid)],
 // 
 // 3 16 -1.666 0 6.5 -0.957 -2.2 6.005 0 -2.488 6.005
   [3,16,-1.666,0,6.5,-0.957,-2.2,6.005,0,-2.488,6.005],
@@ -749,5 +750,5 @@ function ldraw_lib__3818pda2() = [
   [3,16,-10.0232,15.4104,-6.502,-10.0218,15.6205,-6.7066,-10.0053,15.5,-6.8],
 ];
 module ldraw_lib__3818pda2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3818pda2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3818pda2(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3818pda2(line=0.2);

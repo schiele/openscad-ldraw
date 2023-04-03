@@ -2,7 +2,8 @@ use <../lib.scad>
 use <s/92198p01s03.scad>
 use <s/92198p05s01.scad>
 use <s/92198s01.scad>
-function ldraw_lib__92198p05() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__92198p05(realsolid=false) = [
 // 0 Figure Friends Female Head with Light Brown Eyes, Freckles, Pink Lips and Closed Mouth Pattern
 // 0 Name: 92198p05.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -19,11 +20,11 @@ function ldraw_lib__92198p05() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\92198s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__92198s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__92198s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\92198p05s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__92198p05s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__92198p05s01(realsolid)],
 // 1 450 0 0 0 1 0 0 0 1 0 0 0 1 s\92198p01s03.dat
-  [1,450,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__92198p01s03()],
+  [1,450,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__92198p01s03(realsolid)],
 // 4 16 7.78 19.34 -11.69 7.98034 17.8071 -11.7818 7.77966 17.8071 -11.9163 5.77905 18.1618 -13.2043
   [4,16,7.78,19.34,-11.69,7.98034,17.8071,-11.7818,7.77966,17.8071,-11.9163,5.77905,18.1618,-13.2043],
 // 4 16 7.94726 15.8032 -12.0995 8.07286 15.6666 -12.0355 6.8 15.05 -12.8705 6.84846 16.6062 -12.6959
@@ -258,5 +259,5 @@ function ldraw_lib__92198p05() = [
   [4,16,5.209,17.96,-13.5713,5.27604,17.7537,-13.5496,4.5109,15.2964,-14.2459,4.08,20.01,-14.07],
 ];
 module ldraw_lib__92198p05(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__92198p05(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__92198p05(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__92198p05(line=0.2);

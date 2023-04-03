@@ -6,7 +6,8 @@ use <../p/4-4rin14.scad>
 use <../p/4-4ring6.scad>
 use <../p/axlehol6.scad>
 use <../p/tooth8a.scad>
-function ldraw_lib__11955() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__11955(realsolid=false) = [
 // 0 Technic Gear  8 Tooth Reinforced Sliding
 // 0 Name: 11955.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -21,17 +22,17 @@ function ldraw_lib__11955() = [
 // 
 // 
 // 1 16 0 0 -10 1 0 0 0 0 1 0 20 0 axlehol6.dat
-  [1,16,0,0,-10,1,0,0,0,0,1,0,20,0, ldraw_lib__axlehol6()],
+  [1,16,0,0,-10,1,0,0,0,0,1,0,20,0, ldraw_lib__axlehol6(realsolid)],
 // 1 16 0 0 -10 -1 0 0 0 0 -1 0 20 0 axlehol6.dat
-  [1,16,0,0,-10,-1,0,0,0,0,-1,0,20,0, ldraw_lib__axlehol6()],
+  [1,16,0,0,-10,-1,0,0,0,0,-1,0,20,0, ldraw_lib__axlehol6(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 -10 0 0 6 -6 0 0 0 20 0 1-4cylo.dat
-  [1,16,0,0,-10,0,0,6,-6,0,0,0,20,0, ldraw_lib__1_4cylo()],
+  [1,16,0,0,-10,0,0,6,-6,0,0,0,20,0, ldraw_lib__1_4cylo(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 -10 0 0 -6 6 0 0 0 20 0 1-4cylo.dat
-  [1,16,0,0,-10,0,0,-6,6,0,0,0,20,0, ldraw_lib__1_4cylo()],
+  [1,16,0,0,-10,0,0,-6,6,0,0,0,20,0, ldraw_lib__1_4cylo(realsolid)],
 // 2 24 6 0 -10 5.602 2 -10
   [2,24,6,0,-10,5.602,2,-10],
 // 2 24 2 5.602 -10 0 6 -10
@@ -65,36 +66,36 @@ function ldraw_lib__11955() = [
 // 5 24 0 -6 10 0 -6 -10 -2 -5.602 10 2.296 -5.543 10
   [5,24,0,-6,10,0,-6,-10,-2,-5.602,10,2.296,-5.543,10],
 // 1 16 0 0 -10 1 0 0 0 0 1 0 1 0 4-4ring6.dat
-  [1,16,0,0,-10,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4ring6()],
+  [1,16,0,0,-10,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4ring6(realsolid)],
 // 1 16 0 0 -10 0.5 0 0 0 0 0.5 0 1 0 4-4rin14.dat
-  [1,16,0,0,-10,0.5,0,0,0,0,0.5,0,1,0, ldraw_lib__4_4rin14()],
+  [1,16,0,0,-10,0.5,0,0,0,0,0.5,0,1,0, ldraw_lib__4_4rin14(realsolid)],
 // 1 16 0 0 10 1 0 0 0 0 1 0 -1 0 4-4ring6.dat
-  [1,16,0,0,10,1,0,0,0,0,1,0,-1,0, ldraw_lib__4_4ring6()],
+  [1,16,0,0,10,1,0,0,0,0,1,0,-1,0, ldraw_lib__4_4ring6(realsolid)],
 // 1 16 0 0 10 0.5 0 0 0 0 0.5 0 -1 0 4-4rin14.dat
-  [1,16,0,0,10,0.5,0,0,0,0,0.5,0,-1,0, ldraw_lib__4_4rin14()],
+  [1,16,0,0,10,0.5,0,0,0,0,0.5,0,-1,0, ldraw_lib__4_4rin14(realsolid)],
 // 1 16 0 0 -10 7.5 0 0 0 0 7.5 0 1 0 4-4edge.dat
-  [1,16,0,0,-10,7.5,0,0,0,0,7.5,0,1,0, ldraw_lib__4_4edge()],
+  [1,16,0,0,-10,7.5,0,0,0,0,7.5,0,1,0, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 0 10 7.5 0 0 0 0 7.5 0 1 0 4-4edge.dat
-  [1,16,0,0,10,7.5,0,0,0,0,7.5,0,1,0, ldraw_lib__4_4edge()],
+  [1,16,0,0,10,7.5,0,0,0,0,7.5,0,1,0, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 0 -10 7.5 0 0 0 0 7.5 0 20 0 4-4cyli.dat
-  [1,16,0,0,-10,7.5,0,0,0,0,7.5,0,20,0, ldraw_lib__4_4cyli()],
+  [1,16,0,0,-10,7.5,0,0,0,0,7.5,0,20,0, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 -7 0 1 0 0 0 -1 0 0 0 1 tooth8a.dat
-  [1,16,0,-7,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__tooth8a()],
+  [1,16,0,-7,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__tooth8a(realsolid)],
 // 1 16 -4.95 -4.95 0 0.707 -0.707 0 -0.707 -0.707 0 0 0 1 tooth8a.dat
-  [1,16,-4.95,-4.95,0,0.707,-0.707,0,-0.707,-0.707,0,0,0,1, ldraw_lib__tooth8a()],
+  [1,16,-4.95,-4.95,0,0.707,-0.707,0,-0.707,-0.707,0,0,0,1, ldraw_lib__tooth8a(realsolid)],
 // 1 16 -7 0 0 0 -1 0 -1 0 0 0 0 1 tooth8a.dat
-  [1,16,-7,0,0,0,-1,0,-1,0,0,0,0,1, ldraw_lib__tooth8a()],
+  [1,16,-7,0,0,0,-1,0,-1,0,0,0,0,1, ldraw_lib__tooth8a(realsolid)],
 // 1 16 -4.95 4.95 0 -0.707 -0.707 0 -0.707 0.707 0 0 0 1 tooth8a.dat
-  [1,16,-4.95,4.95,0,-0.707,-0.707,0,-0.707,0.707,0,0,0,1, ldraw_lib__tooth8a()],
+  [1,16,-4.95,4.95,0,-0.707,-0.707,0,-0.707,0.707,0,0,0,1, ldraw_lib__tooth8a(realsolid)],
 // 1 16 0 7 0 -1 0 0 0 1 0 0 0 1 tooth8a.dat
-  [1,16,0,7,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__tooth8a()],
+  [1,16,0,7,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__tooth8a(realsolid)],
 // 1 16 4.95 4.95 0 -0.707 0.707 0 0.707 0.707 0 0 0 1 tooth8a.dat
-  [1,16,4.95,4.95,0,-0.707,0.707,0,0.707,0.707,0,0,0,1, ldraw_lib__tooth8a()],
+  [1,16,4.95,4.95,0,-0.707,0.707,0,0.707,0.707,0,0,0,1, ldraw_lib__tooth8a(realsolid)],
 // 1 16 7 0 0 0 1 0 1 0 0 0 0 1 tooth8a.dat
-  [1,16,7,0,0,0,1,0,1,0,0,0,0,1, ldraw_lib__tooth8a()],
+  [1,16,7,0,0,0,1,0,1,0,0,0,0,1, ldraw_lib__tooth8a(realsolid)],
 // 1 16 4.95 -4.95 0 0.707 0.707 0 0.707 -0.707 0 0 0 1 tooth8a.dat
-  [1,16,4.95,-4.95,0,0.707,0.707,0,0.707,-0.707,0,0,0,1, ldraw_lib__tooth8a()],
+  [1,16,4.95,-4.95,0,0.707,0.707,0,0.707,-0.707,0,0,0,1, ldraw_lib__tooth8a(realsolid)],
 ];
 module ldraw_lib__11955(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__11955(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__11955(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__11955(line=0.2);

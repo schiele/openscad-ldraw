@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/4346s01.scad>
-function ldraw_lib__4346p61() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4346p61(realsolid=false) = [
 // 0 Container Box  2 x  2 x  2 Door with Slot and Spyrius Pattern
 // 0 Name: 4346p61.dat
 // 0 Author: Philip Peickert [mr51flip]
@@ -15,7 +16,7 @@ function ldraw_lib__4346p61() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4346s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4346s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4346s01(realsolid)],
 // 4 80 2.125 18.375 -30 0.605218 17.7455 -30 0.48 18.375 -30 0.605218 19.0045 -30
   [4,80,2.125,18.375,-30,0.605218,17.7455,-30,0.48,18.375,-30,0.605218,19.0045,-30],
 // 4 80 2.125 18.375 -30 0.605218 19.0045 -30 0.961809 19.5382 -30 1.49549 19.8948 -30
@@ -992,5 +993,5 @@ function ldraw_lib__4346p61() = [
   [4,16,11.6,13,-30,12.0903,10.7245,-30,10,12,-30,10,13,-30],
 ];
 module ldraw_lib__4346p61(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4346p61(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4346p61(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4346p61(line=0.2);

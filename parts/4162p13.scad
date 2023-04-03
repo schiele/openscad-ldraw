@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/4162s01.scad>
-function ldraw_lib__4162p13() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4162p13(realsolid=false) = [
 // 0 Tile  1 x  8 with "United States Capitol Building" Pattern
 // 0 Name: 4162p13.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -18,7 +19,7 @@ function ldraw_lib__4162p13() = [
 // 0 // Using font: "Myriad Web Pro" style: "Regular" size: 50pt
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4162s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4162s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4162s01(realsolid)],
 // 4 15 -73.82 0 -3.18 -73.4 0 -3.6 -72.99 0 -2.46 -74.15 0 -2.64
   [4,15,-73.82,0,-3.18,-73.4,0,-3.6,-72.99,0,-2.46,-74.15,0,-2.64],
 // 4 15 -72.61 0 -2.86 -73.4 0 -3.6 -72.89 0 -3.9 -72.14 0 -3.1
@@ -2163,5 +2164,5 @@ function ldraw_lib__4162p13() = [
   [3,16,15.94,0,4.87,-0.61,0,4.82,0.15,0,4.77],
 ];
 module ldraw_lib__4162p13(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4162p13(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4162p13(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4162p13(line=0.2);

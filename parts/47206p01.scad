@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/47206s01.scad>
-function ldraw_lib__47206p01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__47206p01(realsolid=false) = [
 // 0 Figure Duplo Child Head with Brown Eyes and Smile Pattern
 // 0 Name: 47206p01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -15,9 +16,9 @@ function ldraw_lib__47206p01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\47206s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__47206s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__47206s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\47206s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__47206s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__47206s01(realsolid)],
 // 
 // 0 !TEXMAP START PLANAR -21.5 -27 20 21.5 -27 20 -21.5 -3.3 20 47206p01.png
 // 0 !: 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\47206s02.dat
@@ -913,5 +914,5 @@ function ldraw_lib__47206p01() = [
   [5,24,0,-22,-24.9993,0,-27,-24.9993,6.4705,-27,-24.1477,-6.4705,-27,-24.1478],
 ];
 module ldraw_lib__47206p01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__47206p01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__47206p01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__47206p01(line=0.2);

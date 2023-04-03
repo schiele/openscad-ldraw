@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__4613906d() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4613906d(realsolid=false) = [
 // 0 Sticker  3.75 x  1.75 with Hieroglyphs, Scarab on Top
 // 0 Name: 4613906d.dat
 // 0 Author: Christian Neumann [Wesley]
@@ -19,7 +20,7 @@ function ldraw_lib__4613906d() = [
 // 
 // 
 // 1 16 0 -0.25 0 17.5 0 0 0 0.25 0 0 0 37.5 box5-12.dat
-  [1,16,0,-0.25,0,17.5,0,0,0,0.25,0,0,0,37.5, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,17.5,0,0,0,0.25,0,0,0,37.5, ldraw_lib__box5_12(realsolid)],
 // 4 72 0.95 -0.25 0.5 0.92 -0.25 0.04 1.59 -0.25 0 1.59 -0.25 0.9
   [4,72,0.95,-0.25,0.5,0.92,-0.25,0.04,1.59,-0.25,0,1.59,-0.25,0.9],
 // 4 72 0.95 -0.25 0.5 1.59 -0.25 0.9 0.93 -0.25 1.24 0.57 -0.25 0.56
@@ -1974,5 +1975,5 @@ function ldraw_lib__4613906d() = [
   [4,19,5.27,-0.25,-10.22,4.81,-0.25,-9.7,4.89,-0.25,-10.42,5.2,-0.25,-10.73],
 ];
 module ldraw_lib__4613906d(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4613906d(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4613906d(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4613906d(line=0.2);

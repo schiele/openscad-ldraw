@@ -3,7 +3,8 @@ use <../p/2-4stud4.scad>
 use <../p/box4-4a.scad>
 use <../p/box5-1.scad>
 use <../p/stug-2x1.scad>
-function ldraw_lib__27261() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__27261(realsolid=false) = [
 // 0 Plate  1 x  2 with  3 Rocky Claws
 // 0 Name: 27261.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -22,15 +23,15 @@ function ldraw_lib__27261() = [
 // 
 // 
 // 1 16 0 8 0 20 0 0 0 -8 0 0 0 10 box4-4a.dat
-  [1,16,0,8,0,20,0,0,0,-8,0,0,0,10, ldraw_lib__box4_4a()],
+  [1,16,0,8,0,20,0,0,0,-8,0,0,0,10, ldraw_lib__box4_4a(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 8 -2 16 0 0 0 -5 0 0 0 8 box5-1.dat
-  [1,16,0,8,-2,16,0,0,0,-5,0,0,0,8, ldraw_lib__box5_1()],
+  [1,16,0,8,-2,16,0,0,0,-5,0,0,0,8, ldraw_lib__box5_1(realsolid)],
 // 1 16 0 0 0 0 0 1 0 1 0 -1 0 0 stug-2x1.dat
-  [1,16,0,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__stug_2x1()],
+  [1,16,0,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__stug_2x1(realsolid)],
 // 1 16 0 3 -10 -1 0 0 0 -1.25 0 0 0 1 2-4stud4.dat
-  [1,16,0,3,-10,-1,0,0,0,-1.25,0,0,0,1, ldraw_lib__2_4stud4()],
+  [1,16,0,3,-10,-1,0,0,0,-1.25,0,0,0,1, ldraw_lib__2_4stud4(realsolid)],
 // 4 16 16 8 -10 20 8 -10 20 16 -10 -20 16 -10
   [4,16,16,8,-10,20,8,-10,20,16,-10,-20,16,-10],
 // 3 16 -20 8 -10 -16 8 -10 -20 16 -10
@@ -667,5 +668,5 @@ function ldraw_lib__27261() = [
   [2,24,-6,8,-10,-6,3,-10],
 ];
 module ldraw_lib__27261(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__27261(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__27261(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__27261(line=0.2);

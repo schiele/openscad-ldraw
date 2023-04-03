@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__3037ps2a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__3037ps2a(realsolid=false) = [
 // 0 ~Slope Brick 45  2 x  4 with Red Dragon Left Pattern
 // 0 Name: s\3037ps2a.dat
 // 0 Author: Damien Roux [Darats]
@@ -1289,5 +1290,5 @@ function ldraw_lib__s__3037ps2a() = [
   [4,16,-23.5,9.84,-19.84,-23.43,9.6,-19.6,-23.54,9.41,-19.41,-23.71,9.96,-19.96],
 ];
 module ldraw_lib__s__3037ps2a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__3037ps2a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__3037ps2a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__3037ps2a(line=0.2);

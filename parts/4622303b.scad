@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <4622303a.scad>
-function ldraw_lib__4622303b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4622303b(realsolid=false) = [
 // 0 Sticker  0.75 x  5.5 Red/White Diagonal Stripes Left Up
 // 0 Name: 4622303b.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -17,8 +18,8 @@ function ldraw_lib__4622303b() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 -1 4622303a.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__4622303a()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__4622303a(realsolid)],
 ];
 module ldraw_lib__4622303b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4622303b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4622303b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4622303b(line=0.2);

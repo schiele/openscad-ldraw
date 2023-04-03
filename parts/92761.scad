@@ -7,7 +7,8 @@ use <../p/4-4rin10.scad>
 use <../p/4-4ring3.scad>
 use <../p/4-4ring6.scad>
 use <../p/t04o6250.scad>
-function ldraw_lib__92761() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__92761(realsolid=false) = [
 // 0 Minifig Headdress SW Zabrak Horns
 // 0 Name: 92761.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -29,45 +30,45 @@ function ldraw_lib__92761() = [
 // 
 // 
 // 1 16 0 2.15 0 12.5 0 0 0 1 0 0 0 12.5 4-4edge.dat
-  [1,16,0,2.15,0,12.5,0,0,0,1,0,0,0,12.5, ldraw_lib__4_4edge()],
+  [1,16,0,2.15,0,12.5,0,0,0,1,0,0,0,12.5, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 1.9 0 0.5 0 0 0 0.25 0 0 0 -0.5 4-4con25.dat
-  [1,16,0,1.9,0,0.5,0,0,0,0.25,0,0,0,-0.5, ldraw_lib__4_4con25()],
+  [1,16,0,1.9,0,0.5,0,0,0,0.25,0,0,0,-0.5, ldraw_lib__4_4con25(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 2.15 0 7.6923 0 0 0 -3.44 0 0 0 -7.6923 t04o6250.dat
-  [1,16,0,2.15,0,7.6923,0,0,0,-3.44,0,0,0,-7.6923, ldraw_lib__t04o6250()],
+  [1,16,0,2.15,0,7.6923,0,0,0,-3.44,0,0,0,-7.6923, ldraw_lib__t04o6250(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 2.15 0 0 0 7.6923 0 -3.44 0 7.6923 0 0 t04o6250.dat
-  [1,16,0,2.15,0,0,0,7.6923,0,-3.44,0,7.6923,0,0, ldraw_lib__t04o6250()],
+  [1,16,0,2.15,0,0,0,7.6923,0,-3.44,0,7.6923,0,0, ldraw_lib__t04o6250(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 2.15 0 -7.6923 0 0 0 -3.44 0 0 0 7.6923 t04o6250.dat
-  [1,16,0,2.15,0,-7.6923,0,0,0,-3.44,0,0,0,7.6923, ldraw_lib__t04o6250()],
+  [1,16,0,2.15,0,-7.6923,0,0,0,-3.44,0,0,0,7.6923, ldraw_lib__t04o6250(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 2.15 0 0 0 -7.6923 0 -3.44 0 -7.6923 0 0 t04o6250.dat
-  [1,16,0,2.15,0,0,0,-7.6923,0,-3.44,0,-7.6923,0,0, ldraw_lib__t04o6250()],
+  [1,16,0,2.15,0,0,0,-7.6923,0,-3.44,0,-7.6923,0,0, ldraw_lib__t04o6250(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 -1 0 0 0 1 4-4ring6.dat
-  [1,16,0,0,0,-1,0,0,0,-1,0,0,0,1, ldraw_lib__4_4ring6()],
+  [1,16,0,0,0,-1,0,0,0,-1,0,0,0,1, ldraw_lib__4_4ring6(realsolid)],
 // 1 16 0 0 0 -0.7 0 0 0 -1 0 0 0 0.7 4-4rin10.dat
-  [1,16,0,0,0,-0.7,0,0,0,-1,0,0,0,0.7, ldraw_lib__4_4rin10()],
+  [1,16,0,0,0,-0.7,0,0,0,-1,0,0,0,0.7, ldraw_lib__4_4rin10(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -5 0 6 0 0 0 5 0 0 0 6 4-4cylo.dat
-  [1,16,0,-5,0,6,0,0,0,5,0,0,0,6, ldraw_lib__4_4cylo()],
+  [1,16,0,-5,0,6,0,0,0,5,0,0,0,6, ldraw_lib__4_4cylo(realsolid)],
 // 1 16 0 0 0 0 0 13 0 1.9 0 -13 0 0 4-4cyli.dat
-  [1,16,0,0,0,0,0,13,0,1.9,0,-13,0,0, ldraw_lib__4_4cyli()],
+  [1,16,0,0,0,0,0,13,0,1.9,0,-13,0,0, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 0 0 8 0 0 0 -8 0 0 0 -8 t04o6250.dat
-  [1,16,0,0,0,8,0,0,0,-8,0,0,0,-8, ldraw_lib__t04o6250()],
+  [1,16,0,0,0,8,0,0,0,-8,0,0,0,-8, ldraw_lib__t04o6250(realsolid)],
 // 1 16 0 0 0 0 0 8 0 -8 0 8 0 0 t04o6250.dat
-  [1,16,0,0,0,0,0,8,0,-8,0,8,0,0, ldraw_lib__t04o6250()],
+  [1,16,0,0,0,0,0,8,0,-8,0,8,0,0, ldraw_lib__t04o6250(realsolid)],
 // 1 16 0 0 0 -8 0 0 0 -8 0 0 0 8 t04o6250.dat
-  [1,16,0,0,0,-8,0,0,0,-8,0,0,0,8, ldraw_lib__t04o6250()],
+  [1,16,0,0,0,-8,0,0,0,-8,0,0,0,8, ldraw_lib__t04o6250(realsolid)],
 // 1 16 0 0 0 0 0 -8 0 -8 0 -8 0 0 t04o6250.dat
-  [1,16,0,0,0,0,0,-8,0,-8,0,-8,0,0, ldraw_lib__t04o6250()],
+  [1,16,0,0,0,0,0,-8,0,-8,0,-8,0,0, ldraw_lib__t04o6250(realsolid)],
 // 1 16 0 -5 0 0 0 2 0 1 0 2 0 0 4-4ring3.dat
-  [1,16,0,-5,0,0,0,2,0,1,0,2,0,0, ldraw_lib__4_4ring3()],
+  [1,16,0,-5,0,0,0,2,0,1,0,2,0,0, ldraw_lib__4_4ring3(realsolid)],
 // 0 // top horn edge line
 // 2 24 0.945 -4.739 9.123 0.566 -4.619 9.801
   [2,24,0.945,-4.739,9.123,0.566,-4.619,9.801],
@@ -5167,5 +5168,5 @@ function ldraw_lib__92761() = [
   [5,24,4.975,1.9,-12.011,9.192,1.9,-9.192,8.839,2.15,-8.839,9.192,0,-9.192],
 ];
 module ldraw_lib__92761(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__92761(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__92761(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__92761(line=0.2);

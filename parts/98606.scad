@@ -7,7 +7,8 @@ use <../p/48/4-4con4.scad>
 use <../p/48/4-4con5.scad>
 use <../p/48/4-4ring1.scad>
 use <s/98606s01.scad>
-function ldraw_lib__98606() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__98606(realsolid=false) = [
 // 0 Dish  9 x  9 Inverted with Pinhole
 // 0 Name: 98606.dat
 // 0 Author: Santeri Piippo [arezey]
@@ -24,21 +25,21 @@ function ldraw_lib__98606() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\98606s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98606s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98606s01(realsolid)],
 // 1 16 0 -10 0 10 0 0 0 1 0 0 0 10 48\4-4ring1.dat
-  [1,16,0,-10,0,10,0,0,0,1,0,0,0,10, ldraw_lib__48__4_4ring1()],
+  [1,16,0,-10,0,10,0,0,0,1,0,0,0,10, ldraw_lib__48__4_4ring1(realsolid)],
 // 1 16 0 -10 0 1 0 0 0 1 0 0 0 1 4-4ring9.dat
-  [1,16,0,-10,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4ring9()],
+  [1,16,0,-10,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4ring9(realsolid)],
 // 1 16 0 -10 0 10 0 0 0 1 0 0 0 10 48\4-4aring.dat
-  [1,16,0,-10,0,10,0,0,0,1,0,0,0,10, ldraw_lib__48__4_4aring()],
+  [1,16,0,-10,0,10,0,0,0,1,0,0,0,10, ldraw_lib__48__4_4aring(realsolid)],
 // 1 16 0 -5 0 20 0 0 0 -3.5 0 0 0 20 48\4-4con2.dat
-  [1,16,0,-5,0,20,0,0,0,-3.5,0,0,0,20, ldraw_lib__48__4_4con2()],
+  [1,16,0,-5,0,20,0,0,0,-3.5,0,0,0,20, ldraw_lib__48__4_4con2(realsolid)],
 // 1 16 0 -8.5 0 20 0 0 0 -1.5 0 0 0 20 48\4-4con1.dat
-  [1,16,0,-8.5,0,20,0,0,0,-1.5,0,0,0,20, ldraw_lib__48__4_4con1()],
+  [1,16,0,-8.5,0,20,0,0,0,-1.5,0,0,0,20, ldraw_lib__48__4_4con1(realsolid)],
 // 1 16 0 0 0 15 0 0 0 -5 0 0 0 15 48\4-4con4.dat
-  [1,16,0,0,0,15,0,0,0,-5,0,0,0,15, ldraw_lib__48__4_4con4()],
+  [1,16,0,0,0,15,0,0,0,-5,0,0,0,15, ldraw_lib__48__4_4con4(realsolid)],
 // 1 16 0 8 0 15 0 0 0 -8 0 0 0 15 48\4-4con5.dat
-  [1,16,0,8,0,15,0,0,0,-8,0,0,0,15, ldraw_lib__48__4_4con5()],
+  [1,16,0,8,0,15,0,0,0,-8,0,0,0,15, ldraw_lib__48__4_4con5(realsolid)],
 // 5 24 39.656 -8.5 5.22 40 -8.5 0 19.828 -10 2.61 59.484 -5 7.83
   [5,24,39.656,-8.5,5.22,40,-8.5,0,19.828,-10,2.61,59.484,-5,7.83],
 // 5 24 20 -10 0 19.828 -10 2.61 39.656 -8.5 5.22 10 -10 0
@@ -425,5 +426,5 @@ function ldraw_lib__98606() = [
   [5,24,74.355,0,-9.7875,75,0,0,90,8,0,59.484,-5,-7.83],
 ];
 module ldraw_lib__98606(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__98606(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__98606(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__98606(line=0.2);

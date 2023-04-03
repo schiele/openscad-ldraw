@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/3068bp9na.scad>
 use <s/3068bs01.scad>
-function ldraw_lib__3068bp9s() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3068bp9s(realsolid=false) = [
 // 0 Tile  2 x  2 with Compass South in Dark Red Pointer Pattern
 // 0 Name: 3068bp9s.dat
 // 0 Author: Joerg Sommerer [Brickaneer]
@@ -16,15 +17,15 @@ function ldraw_lib__3068bp9s() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3068bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3068bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3068bs01(realsolid)],
 // 3 16 -20 0 -20 20 0 -20 0 0 -18.1899
   [3,16,-20,0,-20,20,0,-20,0,0,-18.1899],
 // 3 16 -20 0 20 0 0 18.9437 20 0 20
   [3,16,-20,0,20,0,0,18.9437,20,0,20],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3068bp9na.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3068bp9na()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3068bp9na(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\3068bp9na.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__3068bp9na()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__3068bp9na(realsolid)],
 // 4 15 0 0 -17.8502 2.2731 0 -17.8502 1.6493 0 -14.8 0 0 -6.8115
   [4,15,0,0,-17.8502,2.2731,0,-17.8502,1.6493,0,-14.8,0,0,-6.8115],
 // 4 72 -1.6493 0 -14.8 -2.2731 0 -17.8502 0 0 -17.8502 0 0 -6.8115
@@ -299,5 +300,5 @@ function ldraw_lib__3068bp9s() = [
   [3,0,17.0579,0,-13.2182,16.293,0,-13.2182,16.0758,0,-15.6707],
 ];
 module ldraw_lib__3068bp9s(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3068bp9s(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3068bp9s(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3068bp9s(line=0.2);

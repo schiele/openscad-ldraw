@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/4-4disc.scad>
 use <../p/stud4.scad>
-function ldraw_lib__98371() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__98371(realsolid=false) = [
 // 0 Minifig Hair Rocker with Sideburns
 // 0 Name: 98371.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -7083,9 +7084,9 @@ function ldraw_lib__98371() = [
 // 5 24 9 -7.6 0 7.794 -7.6 4.5 12.754 -5.08 0.545 8 -7.6 0
   [5,24,9,-7.6,0,7.794,-7.6,4.5,12.754,-5.08,0.545,8,-7.6,0],
 // 1 16 0 -7.6 0 1 0 0 0 -1.9 0 0 0 1 stud4.dat
-  [1,16,0,-7.6,0,1,0,0,0,-1.9,0,0,0,1, ldraw_lib__stud4()],
+  [1,16,0,-7.6,0,1,0,0,0,-1.9,0,0,0,1, ldraw_lib__stud4(realsolid)],
 // 1 16 0 -7.6 0 6 0 0 0 -1 0 0 0 -6 4-4disc.dat
-  [1,16,0,-7.6,0,6,0,0,0,-1,0,0,0,-6, ldraw_lib__4_4disc()],
+  [1,16,0,-7.6,0,6,0,0,0,-1,0,0,0,-6, ldraw_lib__4_4disc(realsolid)],
 // 0 // Added lines/Condlines
 // 5 24 11.673 17.232 5.977 13.468 16.019 5.315 12.198 16.052 4.875 11.802 16.126 9.835
   [5,24,11.673,17.232,5.977,13.468,16.019,5.315,12.198,16.052,4.875,11.802,16.126,9.835],
@@ -7135,5 +7136,5 @@ function ldraw_lib__98371() = [
   [5,24,-8.967,2.223,-8.757,-9.94,1.379,-9.614,-10.645,2.632,-9.228,-9.083,1.167,-10.186],
 ];
 module ldraw_lib__98371(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__98371(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__98371(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__98371(line=0.2);

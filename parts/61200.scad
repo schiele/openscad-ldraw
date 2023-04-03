@@ -3,7 +3,8 @@ use <../p/4-4rin16.scad>
 use <s/61200s01.scad>
 use <s/61200s02.scad>
 use <../p/stud4o.scad>
-function ldraw_lib__61200() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__61200(realsolid=false) = [
 // 0 Minifig Head Kel'Dor with Breathing Apparatus
 // 0 Name: 61200.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -23,18 +24,18 @@ function ldraw_lib__61200() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\61200s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__61200s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__61200s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\61200s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__61200s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__61200s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\61200s02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__61200s02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__61200s02(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\61200s02.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__61200s02()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__61200s02(realsolid)],
 // 
 // 1 16 0 -29 0 1 0 0 0 -7.25 0 0 0 1 stud4o.dat
-  [1,16,0,-29,0,1,0,0,0,-7.25,0,0,0,1, ldraw_lib__stud4o()],
+  [1,16,0,-29,0,1,0,0,0,-7.25,0,0,0,1, ldraw_lib__stud4o(realsolid)],
 // 1 16 0 0 0 .5 0 0 0 -1 0 0 0 .5 4-4rin16.dat
-  [1,16,0,0,0,.5,0,0,0,-1,0,0,0,.5, ldraw_lib__4_4rin16()],
+  [1,16,0,0,0,.5,0,0,0,-1,0,0,0,.5, ldraw_lib__4_4rin16(realsolid)],
 // 
 // 3 16 0 -29.196 -13.045 -1.184 -28.499 -13.491 1.184 -28.499 -13.491
   [3,16,0,-29.196,-13.045,-1.184,-28.499,-13.491,1.184,-28.499,-13.491],
@@ -206,5 +207,5 @@ function ldraw_lib__61200() = [
   [5,24,1.266,-9.58,-17.543,-1.266,-9.58,-17.543,-1.409,-8.057,-17.544,1.881,-11.956,-16.95],
 ];
 module ldraw_lib__61200(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__61200(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__61200(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__61200(line=0.2);

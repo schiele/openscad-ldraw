@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/4-4disc.scad>
 use <../p/stud16.scad>
-function ldraw_lib__30381() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__30381(realsolid=false) = [
 // 0 Minifig Hood
 // 0 Name: 30381.dat
 // 0 Author: Andy Westrate [westrate]
@@ -23,9 +24,9 @@ function ldraw_lib__30381() = [
 // 
 // 
 // 1 16 0 -4 0 -8 0 0 0 -1 0 0 0 8 4-4disc.dat
-  [1,16,0,-4,0,-8,0,0,0,-1,0,0,0,8, ldraw_lib__4_4disc()],
+  [1,16,0,-4,0,-8,0,0,0,-1,0,0,0,8, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 -4 0 1 0 0 0 -1 0 0 0 1 stud16.dat
-  [1,16,0,-4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud16()],
+  [1,16,0,-4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud16(realsolid)],
 // 3 16 15 14.77 8.363 14.86 8.618 6.455 15.85 14.77 6.526
   [3,16,15,14.77,8.363,14.86,8.618,6.455,15.85,14.77,6.526],
 // 3 16 14.86 8.618 6.455 16.69 14.77 4.69 15.85 14.77 6.526
@@ -3991,5 +3992,5 @@ function ldraw_lib__30381() = [
 // 0
 ];
 module ldraw_lib__30381(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__30381(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__30381(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__30381(line=0.2);

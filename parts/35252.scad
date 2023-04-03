@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/1-4chrd.scad>
 use <s/35252s01.scad>
-function ldraw_lib__35252() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__35252(realsolid=false) = [
 // 0 Flag  8 x  3 with Rod without Reinforced Base and Flat Sides
 // 0 Name: 35252.dat
 // 0 Author: Orion Pobursky [OrionP]
@@ -16,7 +17,7 @@ function ldraw_lib__35252() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\35252s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__35252s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__35252s01(realsolid)],
 // 
 // 3 16 -2 -30 10 -2 -30 148 -2 -24 10
   [3,16,-2,-30,10,-2,-30,148,-2,-24,10],
@@ -27,9 +28,9 @@ function ldraw_lib__35252() = [
 // 4 16 -2 -30 148 -2 -28 150 -2 28 150 -2 30 148
   [4,16,-2,-30,148,-2,-28,150,-2,28,150,-2,30,148],
 // 1 16 -2 -28 148 0 1 0 -2 0 0 0 0 2 1-4chrd.dat
-  [1,16,-2,-28,148,0,1,0,-2,0,0,0,0,2, ldraw_lib__1_4chrd()],
+  [1,16,-2,-28,148,0,1,0,-2,0,0,0,0,2, ldraw_lib__1_4chrd(realsolid)],
 // 1 16 -2 28 148 0 1 0 2 0 0 0 0 2 1-4chrd.dat
-  [1,16,-2,28,148,0,1,0,2,0,0,0,0,2, ldraw_lib__1_4chrd()],
+  [1,16,-2,28,148,0,1,0,2,0,0,0,0,2, ldraw_lib__1_4chrd(realsolid)],
 // 
 // 3 16 2 -30 148 2 -30 10 2 -24 10
   [3,16,2,-30,148,2,-30,10,2,-24,10],
@@ -40,10 +41,10 @@ function ldraw_lib__35252() = [
 // 4 16 2 28 150 2 -28 150 2 -30 148 2 30 148
   [4,16,2,28,150,2,-28,150,2,-30,148,2,30,148],
 // 1 16 2 -28 148 0 -1 0 -2 0 0 0 0 2 1-4chrd.dat
-  [1,16,2,-28,148,0,-1,0,-2,0,0,0,0,2, ldraw_lib__1_4chrd()],
+  [1,16,2,-28,148,0,-1,0,-2,0,0,0,0,2, ldraw_lib__1_4chrd(realsolid)],
 // 1 16 2 28 148 0 -1 0 2 0 0 0 0 2 1-4chrd.dat
-  [1,16,2,28,148,0,-1,0,2,0,0,0,0,2, ldraw_lib__1_4chrd()],
+  [1,16,2,28,148,0,-1,0,2,0,0,0,0,2, ldraw_lib__1_4chrd(realsolid)],
 ];
 module ldraw_lib__35252(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__35252(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__35252(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__35252(line=0.2);

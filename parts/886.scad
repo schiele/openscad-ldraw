@@ -2,7 +2,8 @@ use <../lib.scad>
 use <2976.scad>
 use <../p/rect1.scad>
 use <../p/rect2p.scad>
-function ldraw_lib__886() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__886(realsolid=false) = [
 // 0 ~Electric Rotation Sensor Top (Obsolete)
 // 0 Name: 886.dat
 // 0 Author: Jonathan P. Brown
@@ -23,14 +24,14 @@ function ldraw_lib__886() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 2976.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2976()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2976(realsolid)],
 // 0 // cable
 // 1 0 -47.5 40 0 11.5 0 0 0 -1 0 0 0 -3 rect2p.dat
-  [1,0,-47.5,40,0,11.5,0,0,0,-1,0,0,0,-3, ldraw_lib__rect2p()],
+  [1,0,-47.5,40,0,11.5,0,0,0,-1,0,0,0,-3, ldraw_lib__rect2p(realsolid)],
 // 1 0 -47.5 38.25 -3 0 0 -11.5 -1.75 0 0 0 1 0 rect1.dat
-  [1,0,-47.5,38.25,-3,0,0,-11.5,-1.75,0,0,0,1,0, ldraw_lib__rect1()],
+  [1,0,-47.5,38.25,-3,0,0,-11.5,-1.75,0,0,0,1,0, ldraw_lib__rect1(realsolid)],
 // 1 0 -47.5 38.25 3 0 0 11.5 -1.75 0 0 0 -1 0 rect1.dat
-  [1,0,-47.5,38.25,3,0,0,11.5,-1.75,0,0,0,-1,0, ldraw_lib__rect1()],
+  [1,0,-47.5,38.25,3,0,0,11.5,-1.75,0,0,0,-1,0, ldraw_lib__rect1(realsolid)],
 // 4 0 -36 36.5 -3 -36 36.5 3 -59 36.5 3 -59 36.5 -3
   [4,0,-36,36.5,-3,-36,36.5,3,-59,36.5,3,-59,36.5,-3],
 // 4 0 -59 36.5 3 -59 40 3 -59 40 -3 -59 36.5 -3
@@ -41,5 +42,5 @@ function ldraw_lib__886() = [
   [2,7,-36,36.5,0,-59,36.5,0],
 ];
 module ldraw_lib__886(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__886(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__886(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__886(line=0.2);

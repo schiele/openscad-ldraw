@@ -3,7 +3,8 @@ use <../p/1-8chrd.scad>
 use <../p/3-16chrd.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4disc.scad>
-function ldraw_lib__4624296b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4624296b(realsolid=false) = [
 // 0 Sticker  1.75 x  1.75 Round with White "STOP FUEL" on Red Background
 // 0 Name: 4624296b.dat
 // 0 Author: Damien Roux [Darats]
@@ -22,22 +23,22 @@ function ldraw_lib__4624296b() = [
 // 
 // 
 // 1 4 0 -0.25 0 0 0 -17.5 0 1 0 -17.5 0 0 3-16chrd.dat
-  [1,4,0,-0.25,0,0,0,-17.5,0,1,0,-17.5,0,0, ldraw_lib__3_16chrd()],
+  [1,4,0,-0.25,0,0,0,-17.5,0,1,0,-17.5,0,0, ldraw_lib__3_16chrd(realsolid)],
 // 1 4 0 -0.25 0 0 0 17.5 0 1 0 -17.5 0 0 3-16chrd.dat
-  [1,4,0,-0.25,0,0,0,17.5,0,1,0,-17.5,0,0, ldraw_lib__3_16chrd()],
+  [1,4,0,-0.25,0,0,0,17.5,0,1,0,-17.5,0,0, ldraw_lib__3_16chrd(realsolid)],
 // 1 4 0 -0.25 0 0 0 17.5 0 1 0 17.5 0 0 3-16chrd.dat
-  [1,4,0,-0.25,0,0,0,17.5,0,1,0,17.5,0,0, ldraw_lib__3_16chrd()],
+  [1,4,0,-0.25,0,0,0,17.5,0,1,0,17.5,0,0, ldraw_lib__3_16chrd(realsolid)],
 // 1 4 0 -0.25 0 0 0 -17.5 0 1 0 17.5 0 0 3-16chrd.dat
-  [1,4,0,-0.25,0,0,0,-17.5,0,1,0,17.5,0,0, ldraw_lib__3_16chrd()],
+  [1,4,0,-0.25,0,0,0,-17.5,0,1,0,17.5,0,0, ldraw_lib__3_16chrd(realsolid)],
 // 1 4 0 -0.25 0 -16.1679 0 -6.69696 0 1 0 -6.69696 0 16.1679 1-8chrd.dat
-  [1,4,0,-0.25,0,-16.1679,0,-6.69696,0,1,0,-6.69696,0,16.1679, ldraw_lib__1_8chrd()],
+  [1,4,0,-0.25,0,-16.1679,0,-6.69696,0,1,0,-6.69696,0,16.1679, ldraw_lib__1_8chrd(realsolid)],
 // 1 4 0 -0.25 0 16.1679 0 6.69696 0 1 0 -6.69696 0 16.1679 1-8chrd.dat
-  [1,4,0,-0.25,0,16.1679,0,6.69696,0,1,0,-6.69696,0,16.1679, ldraw_lib__1_8chrd()],
+  [1,4,0,-0.25,0,16.1679,0,6.69696,0,1,0,-6.69696,0,16.1679, ldraw_lib__1_8chrd(realsolid)],
 // 
 // 1 16 0 -0.25 0 17.5 0 0 0 0.25 0 0 0 17.5 4-4cyli.dat
-  [1,16,0,-0.25,0,17.5,0,0,0,0.25,0,0,0,17.5, ldraw_lib__4_4cyli()],
+  [1,16,0,-0.25,0,17.5,0,0,0,0.25,0,0,0,17.5, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 0 0 -17.5 0 0 0 -1 0 0 0 17.5 4-4disc.dat
-  [1,16,0,0,0,-17.5,0,0,0,-1,0,0,0,17.5, ldraw_lib__4_4disc()],
+  [1,16,0,0,0,-17.5,0,0,0,-1,0,0,0,17.5, ldraw_lib__4_4disc(realsolid)],
 // 
 // 3 15 -10.967 -0.25 3.989 -12.36 -0.25 3.989 -12.379 -0.25 3.622
   [3,15,-10.967,-0.25,3.989,-12.36,-0.25,3.989,-12.379,-0.25,3.622],
@@ -655,5 +656,5 @@ function ldraw_lib__4624296b() = [
   [4,4,11.342,-0.25,6.96,11.557,-0.25,6.876,16.1683,-0.25,6.69725,0,-0.25,17.5],
 ];
 module ldraw_lib__4624296b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4624296b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4624296b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4624296b(line=0.2);

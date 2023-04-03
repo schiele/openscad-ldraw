@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/4-4ring4.scad>
 use <../p/stud4o.scad>
-function ldraw_lib__61183() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__61183(realsolid=false) = [
 // 0 Minifig Hair Swept Back Tousled
 // 0 Name: 61183.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -21,9 +22,9 @@ function ldraw_lib__61183() = [
 // 
 // 
 // 1 16 0 -4.8 0 1 0 0 0 -1.2 0 0 0 -1 stud4o.dat
-  [1,16,0,-4.8,0,1,0,0,0,-1.2,0,0,0,-1, ldraw_lib__stud4o()],
+  [1,16,0,-4.8,0,1,0,0,0,-1.2,0,0,0,-1, ldraw_lib__stud4o(realsolid)],
 // 1 16 0 0 0 2 0 0 0 -1 0 0 0 2 4-4ring4.dat
-  [1,16,0,0,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__4_4ring4()],
+  [1,16,0,0,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__4_4ring4(realsolid)],
 // 3 16 13.1031 1.268 -1.0205 10 0 0 11.7985 1.4565 4.8084
   [3,16,13.1031,1.268,-1.0205,10,0,0,11.7985,1.4565,4.8084],
 // 3 16 9.239 0 -3.827 10 0 0 13.1031 1.268 -1.0205
@@ -4867,5 +4868,5 @@ function ldraw_lib__61183() = [
   [5,24,-13.7473,16.8376,4.9941,-13.5904,17.5268,5.4883,-12.4595,16.6698,4.5251,-14.7853,16.8013,5.8525],
 ];
 module ldraw_lib__61183(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__61183(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__61183(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__61183(line=0.2);

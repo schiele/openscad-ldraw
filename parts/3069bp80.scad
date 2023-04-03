@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/3069bs01.scad>
 use <s/3069p80a.scad>
-function ldraw_lib__3069bp80() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3069bp80(realsolid=false) = [
 // 0 Tile  1 x  2 with 28-Key 'QERYUIOP' Keyboard Pattern
 // 0 Name: 3069bp80.dat
 // 0 Author: Willy Tschager [Holly-Wood]
@@ -34,13 +35,13 @@ function ldraw_lib__3069bp80() = [
 // 
 // 0 Pattern
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3069p80a.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3069p80a()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3069p80a(realsolid)],
 // 
 // 0 Tile 1 x 2 with Groove without Face
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3069bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3069bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3069bs01(realsolid)],
 // 0
 ];
 module ldraw_lib__3069bp80(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3069bp80(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3069bp80(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3069bp80(line=0.2);

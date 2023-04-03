@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/4-4ering.scad>
 use <s/14769s01.scad>
-function ldraw_lib__14769pm3() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__14769pm3(realsolid=false) = [
 // 0 Tile  2 x  2 Round with Round Underside Stud with Water Element Pattern
 // 0 Name: 14769pm3.dat
 // 0 Author: Rolf Osterthun [Rolf]
@@ -18,9 +19,9 @@ function ldraw_lib__14769pm3() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\14769s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__14769s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__14769s01(realsolid)],
 // 1 16 0 0 0 20 0 0 0 1 0 0 0 20 4-4ering.dat
-  [1,16,0,0,0,20,0,0,0,1,0,0,0,20, ldraw_lib__4_4ering()],
+  [1,16,0,0,0,20,0,0,0,1,0,0,0,20, ldraw_lib__4_4ering(realsolid)],
 // 
 // 4 16 -18.478 0 7.654 -15.72 0 10.887 -14.532 0 12.422 -14.142 0 14.142
   [4,16,-18.478,0,7.654,-15.72,0,10.887,-14.532,0,12.422,-14.142,0,14.142],
@@ -978,5 +979,5 @@ function ldraw_lib__14769pm3() = [
   [3,15,2.844,0,6.039,2,0,6.694,1.985,0,5.762],
 ];
 module ldraw_lib__14769pm3(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__14769pm3(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__14769pm3(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__14769pm3(line=0.2);

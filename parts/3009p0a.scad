@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3009s01.scad>
-function ldraw_lib__3009p0a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3009p0a(realsolid=false) = [
 // 0 Brick  1 x  6 with Chrome Gold "722" Pattern
 // 0 Name: 3009p0a.dat
 // 0 Author: Steffen [Steffen]
@@ -19,7 +20,7 @@ function ldraw_lib__3009p0a() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3009s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3009s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3009s01(realsolid)],
 // 
 // 4 334 -22.4915 20.6453 -10 -23.475 21.504 -10 25.175 21.504 -10 24.2915 20.6453 -10
   [4,334,-22.4915,20.6453,-10,-23.475,21.504,-10,25.175,21.504,-10,24.2915,20.6453,-10],
@@ -489,5 +490,5 @@ function ldraw_lib__3009p0a() = [
   [3,16,21.082,13,-10,20.982,14.7,-10,24.2915,20.6453,-10],
 ];
 module ldraw_lib__3009p0a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3009p0a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3009p0a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3009p0a(line=0.2);

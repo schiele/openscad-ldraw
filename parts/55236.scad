@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4cylc.scad>
 use <../p/4-4disc.scad>
 use <../p/rect.scad>
-function ldraw_lib__55236() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__55236(realsolid=false) = [
 // 0 Technic Bionicle Barraki Spines
 // 0 Name: 55236.dat
 // 0 Author: Alex Taylor [anathema]
@@ -843,11 +844,11 @@ function ldraw_lib__55236() = [
 // 2 24 87.394 -26.9 -1.003 88.794 -29.3 -0.986
   [2,24,87.394,-26.9,-1.003,88.794,-29.3,-0.986],
 // 1 16 -0.1 -10 0 5.9 0 0 0 -0.1 0 0 0 -2 rect.dat
-  [1,16,-0.1,-10,0,5.9,0,0,0,-0.1,0,0,0,-2, ldraw_lib__rect()],
+  [1,16,-0.1,-10,0,5.9,0,0,0,-0.1,0,0,0,-2, ldraw_lib__rect(realsolid)],
 // 1 16 0 0 0 4 0 0 0 -10 0 0 0 4 4-4cylc.dat
-  [1,16,0,0,0,4,0,0,0,-10,0,0,0,4, ldraw_lib__4_4cylc()],
+  [1,16,0,0,0,4,0,0,0,-10,0,0,0,4, ldraw_lib__4_4cylc(realsolid)],
 // 1 16 0 -10 0 4 0 0 0 1 0 0 0 4 4-4disc.dat
-  [1,16,0,-10,0,4,0,0,0,1,0,0,0,4, ldraw_lib__4_4disc()],
+  [1,16,0,-10,0,4,0,0,0,1,0,0,0,4, ldraw_lib__4_4disc(realsolid)],
 // 4 16 3.9 -12.8 2.911 3.3 -10 2.918 -3.4 -10 3 -2.7 -12.4 2.991
   [4,16,3.9,-12.8,2.911,3.3,-10,2.918,-3.4,-10,3,-2.7,-12.4,2.991],
 // 4 16 5.299 -15.3 2.894 3.9 -12.8 2.911 -2.7 -12.4 2.991 -1.5 -14.7 2.977
@@ -2809,5 +2810,5 @@ function ldraw_lib__55236() = [
 // 0
 ];
 module ldraw_lib__55236(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__55236(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__55236(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__55236(line=0.2);

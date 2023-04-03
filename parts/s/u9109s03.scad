@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__u9109s03() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__u9109s03(realsolid=false) = [
 // 0 ~Figure Fabuland Hippo Eye  2
 // 0 Name: s\u9109s03.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -781,5 +782,5 @@ function ldraw_lib__s__u9109s03() = [
   [5,24,-13.302,-32.438,-12.952,-12.074,-32.199,-13.575,-11.421,-33.711,-12.811,-13.28,-31.074,-13.889],
 ];
 module ldraw_lib__s__u9109s03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__u9109s03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__u9109s03(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__u9109s03(line=0.2);

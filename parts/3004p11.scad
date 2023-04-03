@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3004s01.scad>
-function ldraw_lib__3004p11() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3004p11(realsolid=false) = [
 // 0 Brick  1 x  2 with Radio and Microphone Pattern
 // 0 Name: 3004p11.dat
 // 0 Author: Matthew Morrison [cuddlyogre]
@@ -17,7 +18,7 @@ function ldraw_lib__3004p11() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3004s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3004s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3004s01(realsolid)],
 // 
 // 0 // Design
 // 
@@ -1836,5 +1837,5 @@ function ldraw_lib__3004p11() = [
   [4,16,-11.856,8.659,-10,-11.853,10.036,-10,-9.037,11.24,-10,-9.037,10.179,-10],
 ];
 module ldraw_lib__3004p11(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3004p11(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3004p11(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3004p11(line=0.2);

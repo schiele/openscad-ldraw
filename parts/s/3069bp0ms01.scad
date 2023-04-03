@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__3069bp0ms01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__3069bp0ms01(realsolid=false) = [
 // 0 ~Carbon Fibre Pattern
 // 0 Name: s\3069bp0ms01.dat
 // 0 Author: Jens Brühl [jb70]
@@ -62,5 +63,5 @@ function ldraw_lib__s__3069bp0ms01() = [
   [3,87,2.75,0,.75,.75,0,-.25,4.25,0,.25],
 ];
 module ldraw_lib__s__3069bp0ms01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__3069bp0ms01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__3069bp0ms01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__3069bp0ms01(line=0.2);

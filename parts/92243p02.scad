@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/92241s01.scad>
-function ldraw_lib__92243p02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__92243p02(realsolid=false) = [
 // 0 Figure Friends Woman Torso with Medium Lavender Vest over Lavender Shirt Pattern
 // 0 Name: 92243p02.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -15,7 +16,7 @@ function ldraw_lib__92243p02() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\92241s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__92241s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__92241s01(realsolid)],
 // 0 // Front
 // 3 85 -8.813 2.0281 -7.6594 -9 2.1899 -7.6074 -8.7416 2.2303 -7.9003
   [3,85,-8.813,2.0281,-7.6594,-9,2.1899,-7.6074,-8.7416,2.2303,-7.9003],
@@ -2661,5 +2662,5 @@ function ldraw_lib__92243p02() = [
   [5,24,-9.45,6.79,3.76,-10.12,4.28,3.87,-8.09,6.81,4.83,-10.69,6.76,0.57],
 ];
 module ldraw_lib__92243p02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__92243p02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__92243p02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__92243p02(line=0.2);

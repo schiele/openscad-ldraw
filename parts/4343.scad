@@ -5,7 +5,8 @@ use <../p/box4.scad>
 use <../p/box5.scad>
 use <../p/rect2p.scad>
 use <../p/recte3.scad>
-function ldraw_lib__4343() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4343(realsolid=false) = [
 // 0 ~Door  1 x  4 x  5 Frame
 // 0 Name: 4343.dat
 // 0 Author: James Jessiman
@@ -25,11 +26,11 @@ function ldraw_lib__4343() = [
 // 
 // 
 // 1 16 4 57 30 0 -1 0 57 0 0 0 0 40 recte3.dat
-  [1,16,4,57,30,0,-1,0,57,0,0,0,0,40, ldraw_lib__recte3()],
+  [1,16,4,57,30,0,-1,0,57,0,0,0,0,40, ldraw_lib__recte3(realsolid)],
 // 1 16 -2 57 40 0 -1 0 57 0 0 0 0 30 recte3.dat
-  [1,16,-2,57,40,0,-1,0,57,0,0,0,0,30, ldraw_lib__recte3()],
+  [1,16,-2,57,40,0,-1,0,57,0,0,0,0,30, ldraw_lib__recte3(realsolid)],
 // 1 16 3 57 -10 0 0 1 57 0 0 0 -1 0 recte3.dat
-  [1,16,3,57,-10,0,0,1,57,0,0,0,-1,0, ldraw_lib__recte3()],
+  [1,16,3,57,-10,0,0,1,57,0,0,0,-1,0, ldraw_lib__recte3(realsolid)],
 // 2 24 2 114 10 2 114 -10
   [2,24,2,114,10,2,114,-10],
 // 2 24 2 0 10 2 0 -10
@@ -40,27 +41,27 @@ function ldraw_lib__4343() = [
   [2,24,2,0,-10,2,8,-10],
 // 
 // 1 16 0 1 39 2 0 0 0 1 0 0 0 -29 box2-5.dat
-  [1,16,0,1,39,2,0,0,0,1,0,0,0,-29, ldraw_lib__box2_5()],
+  [1,16,0,1,39,2,0,0,0,1,0,0,0,-29, ldraw_lib__box2_5(realsolid)],
 // 1 16 0 57 68 0 0 2 -55 0 0 0 1 0 rect2p.dat
-  [1,16,0,57,68,0,0,2,-55,0,0,0,1,0, ldraw_lib__rect2p()],
+  [1,16,0,57,68,0,0,2,-55,0,0,0,1,0, ldraw_lib__rect2p(realsolid)],
 // 1 16 0 113 39 2 0 0 0 -1 0 0 0 -29 box2-5.dat
-  [1,16,0,113,39,2,0,0,0,-1,0,0,0,-29, ldraw_lib__box2_5()],
+  [1,16,0,113,39,2,0,0,0,-1,0,0,0,-29, ldraw_lib__box2_5(realsolid)],
 // 
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 2 57 30 0 2 0 47 0 0 0 0 30 box4.dat
-  [1,16,2,57,30,0,2,0,47,0,0,0,0,30, ldraw_lib__box4()],
+  [1,16,2,57,30,0,2,0,47,0,0,0,0,30, ldraw_lib__box4(realsolid)],
 // 
 // 1 16 2 57 -8 0 -8 0 49 0 0 0 0 2 box4-1.dat
-  [1,16,2,57,-8,0,-8,0,49,0,0,0,0,2, ldraw_lib__box4_1()],
+  [1,16,2,57,-8,0,-8,0,49,0,0,0,0,2, ldraw_lib__box4_1(realsolid)],
 // 
 // 1 16 4 57 60 0 4 0 6 0 0 0 0 6 box5.dat
-  [1,16,4,57,60,0,4,0,6,0,0,0,0,6, ldraw_lib__box5()],
+  [1,16,4,57,60,0,4,0,6,0,0,0,0,6, ldraw_lib__box5(realsolid)],
 // 4 16 4 63 54 4 51 54 4 51 60 4 63 60
   [4,16,4,63,54,4,51,54,4,51,60,4,63,60],
 // 
 // 1 16 1 57 70 -3 0 0 0 0 57 0 -1 0 rect2p.dat
-  [1,16,1,57,70,-3,0,0,0,0,57,0,-1,0, ldraw_lib__rect2p()],
+  [1,16,1,57,70,-3,0,0,0,0,57,0,-1,0, ldraw_lib__rect2p(realsolid)],
 // 
 // 4 16 -2 114 10 -2 112 10 -2 112 68 -2 114 70
   [4,16,-2,114,10,-2,112,10,-2,112,68,-2,114,70],
@@ -118,5 +119,5 @@ function ldraw_lib__4343() = [
   [4,16,4,0,70,4,10,60,4,51,60,4,51,66],
 ];
 module ldraw_lib__4343(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4343(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4343(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4343(line=0.2);

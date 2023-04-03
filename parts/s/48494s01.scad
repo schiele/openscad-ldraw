@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <61856s01.scad>
 use <../../p/stud2.scad>
-function ldraw_lib__s__48494s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__48494s01(realsolid=false) = [
 // 0 ~Minifig Shield Octagonal with Stud without Decorated Surface
 // 0 Name: s\48494s01.dat
 // 0 Author: Chris Dee [cwdee]
@@ -18,10 +19,10 @@ function ldraw_lib__s__48494s01() = [
 // 
 // 
 // 1 16 0 0 -12 1 0 0 0 0 -1 0 1 0 stud2.dat
-  [1,16,0,0,-12,1,0,0,0,0,-1,0,1,0, ldraw_lib__stud2()],
+  [1,16,0,0,-12,1,0,0,0,0,-1,0,1,0, ldraw_lib__stud2(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\61856s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__61856s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__61856s01(realsolid)],
 ];
 module ldraw_lib__s__48494s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__48494s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__48494s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__48494s01(line=0.2);

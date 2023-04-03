@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__10054s04() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__10054s04(realsolid=false) = [
 // 0 ~Minifig Helmet Castle Rohan with Cheek Protection & Comb - Neck
 // 0 Name: s\10054s04.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -283,5 +284,5 @@ function ldraw_lib__s__10054s04() = [
   [5,24,14.76,16.8,4.87,13.94,18.4,7.53,13.26,13.68,8.47,14.7,17.3,4.67],
 ];
 module ldraw_lib__s__10054s04(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__10054s04(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__10054s04(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__10054s04(line=0.2);

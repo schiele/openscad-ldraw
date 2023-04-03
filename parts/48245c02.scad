@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <48245.scad>
 use <71861.scad>
-function ldraw_lib__48245c02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__48245c02(realsolid=false) = [
 // 0 Bucket  2 x  2 with Hanging Handle
 // 0 Name: 48245c02.dat
 // 0 Author: Max Martin Richter [MMR1988]
@@ -20,10 +21,10 @@ function ldraw_lib__48245c02() = [
 // 
 // 
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 -1 48245.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__48245()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__48245(realsolid)],
 // 1 16 0 -35 0 -0.7071 -0.5801 -0.4043 0 -0.5717 0.8205 -0.7071 0.5801 0.4043 71861.dat
-  [1,16,0,-35,0,-0.7071,-0.5801,-0.4043,0,-0.5717,0.8205,-0.7071,0.5801,0.4043, ldraw_lib__71861()],
+  [1,16,0,-35,0,-0.7071,-0.5801,-0.4043,0,-0.5717,0.8205,-0.7071,0.5801,0.4043, ldraw_lib__71861(realsolid)],
 ];
 module ldraw_lib__48245c02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__48245c02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__48245c02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__48245c02(line=0.2);

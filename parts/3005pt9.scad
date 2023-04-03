@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3005s01.scad>
-function ldraw_lib__3005pt9() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3005pt9(realsolid=false) = [
 // 0 Brick  1 x  1 with Blue "9" Pattern
 // 0 Name: 3005pt9.dat
 // 0 Author: Tore Eriksson [Tore_Eriksson]
@@ -17,7 +18,7 @@ function ldraw_lib__3005pt9() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3005s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3005s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3005s01(realsolid)],
 // 
 // 4 1 -3 9.9 -10 -5 10 -10 -4.8 8.6 -10 -2.8 9.26 -10
   [4,1,-3,9.9,-10,-5,10,-10,-4.8,8.6,-10,-2.8,9.26,-10],
@@ -131,5 +132,5 @@ function ldraw_lib__3005pt9() = [
   [4,16,0,10,-10,-2.22,11.08,-10,-2.78,10.54,-10,-3,9.9,-10],
 ];
 module ldraw_lib__3005pt9(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3005pt9(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3005pt9(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3005pt9(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__194535b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__194535b(realsolid=false) = [
 // 0 Sticker  2.4 x  3 with Black "ANWB" on Yellow Background
 // 0 Name: 194535b.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -18,7 +19,7 @@ function ldraw_lib__194535b() = [
 // 
 // 
 // 1 16 0 -0.25 0 30 0 0 0 0.25 0 0 0 24 box5-12.dat
-  [1,16,0,-0.25,0,30,0,0,0,0.25,0,0,0,24, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,30,0,0,0,0.25,0,0,0,24, ldraw_lib__box5_12(realsolid)],
 // 3 0 -23.87 -0.25 -3.86 -28.21 -0.25 -4.8 -24.21 -0.25 -4.8
   [3,0,-23.87,-0.25,-3.86,-28.21,-0.25,-4.8,-24.21,-0.25,-4.8],
 // 4 0 -22.99 -0.25 -1.48 -24.04 -0.25 4.83 -28.21 -0.25 -4.8 -23.87 -0.25 -3.86
@@ -239,5 +240,5 @@ function ldraw_lib__194535b() = [
   [3,14,30,-0.25,24,23.2,-0.25,4.83,24.41,-0.25,4.77],
 ];
 module ldraw_lib__194535b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__194535b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__194535b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__194535b(line=0.2);

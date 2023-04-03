@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <6142622vc01.scad>
-function ldraw_lib__6142622wc01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6142622wc01(realsolid=false) = [
 // 0 Sticker  2.9 x  0.8 with Black Trapezoid on Yellow Background Right (Formed)
 // 0 Name: 6142622wc01.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -20,8 +21,8 @@ function ldraw_lib__6142622wc01() = [
 // 
 // 
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 6142622vc01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__6142622vc01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__6142622vc01(realsolid)],
 ];
 module ldraw_lib__6142622wc01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6142622wc01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6142622wc01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6142622wc01(line=0.2);

@@ -3,7 +3,8 @@ use <../../p/1-8cylh.scad>
 use <../../p/1-8edgh.scad>
 use <../../p/3-16cylh.scad>
 use <../../p/3-16edgh.scad>
-function ldraw_lib__s__21459s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__21459s01(realsolid=false) = [
 // 0 ~Minifig Sword Grip Segment with Cone
 // 0 Name: s\21459s01.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -19,17 +20,17 @@ function ldraw_lib__s__21459s01() = [
 // 
 // 0 // Primitives for regular cylinder
 // 1 16 0 0 0 3.69552 0 -1.53073 0 3 0 1.53073 0 3.69552 3-16cylh.dat
-  [1,16,0,0,0,3.69552,0,-1.53073,0,3,0,1.53073,0,3.69552, ldraw_lib__3_16cylh()],
+  [1,16,0,0,0,3.69552,0,-1.53073,0,3,0,1.53073,0,3.69552, ldraw_lib__3_16cylh(realsolid)],
 // 1 16 0 2.25 0 2.82843 0 2.82843 0 -3 0 2.82843 0 -2.82843 1-8cylh.dat
-  [1,16,0,2.25,0,2.82843,0,2.82843,0,-3,0,2.82843,0,-2.82843, ldraw_lib__1_8cylh()],
+  [1,16,0,2.25,0,2.82843,0,2.82843,0,-3,0,2.82843,0,-2.82843, ldraw_lib__1_8cylh(realsolid)],
 // 1 16 0 0 0 3.23358 0 -1.33939 0 3 0 1.33939 0 3.23358 3-16edgh.dat
-  [1,16,0,0,0,3.23358,0,-1.33939,0,3,0,1.33939,0,3.23358, ldraw_lib__3_16edgh()],
+  [1,16,0,0,0,3.23358,0,-1.33939,0,3,0,1.33939,0,3.23358, ldraw_lib__3_16edgh(realsolid)],
 // 1 16 0 0 0 3.69552 0 -1.53073 0 3 0 1.53073 0 3.69552 3-16edgh.dat
-  [1,16,0,0,0,3.69552,0,-1.53073,0,3,0,1.53073,0,3.69552, ldraw_lib__3_16edgh()],
+  [1,16,0,0,0,3.69552,0,-1.53073,0,3,0,1.53073,0,3.69552, ldraw_lib__3_16edgh(realsolid)],
 // 1 16 0 3 0 1.33939 0 3.23358 0 -3 0 3.23358 0 -1.33939 3-16edgh.dat
-  [1,16,0,3,0,1.33939,0,3.23358,0,-3,0,3.23358,0,-1.33939, ldraw_lib__3_16edgh()],
+  [1,16,0,3,0,1.33939,0,3.23358,0,-3,0,3.23358,0,-1.33939, ldraw_lib__3_16edgh(realsolid)],
 // 1 16 0 2.25 0 2.82843 0 2.82843 0 -3 0 2.82843 0 -2.82843 1-8edgh.dat
-  [1,16,0,2.25,0,2.82843,0,2.82843,0,-3,0,2.82843,0,-2.82843, ldraw_lib__1_8edgh()],
+  [1,16,0,2.25,0,2.82843,0,2.82843,0,-3,0,2.82843,0,-2.82843, ldraw_lib__1_8edgh(realsolid)],
 // 0 // Lower cylinder
 // 0 // Faces
 // 4 16 4 2.55 0 3.6956 2.55 1.5308 3.6956 2.25 1.5308 4 2.25 0
@@ -179,5 +180,5 @@ function ldraw_lib__s__21459s01() = [
   [5,24,1.5308,1.5,3.6956,1.3395,1.5,3.2337,2.4749,0.75,2.4749,0,2.25,4],
 ];
 module ldraw_lib__s__21459s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__21459s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__21459s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__21459s01(line=0.2);

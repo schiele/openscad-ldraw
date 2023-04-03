@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__logobugat01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__logobugat01(realsolid=false) = [
 // 0 ~Logo Bugatti Text "Chiron"
 // 0 Name: s\logobugat01.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -1821,5 +1822,5 @@ function ldraw_lib__s__logobugat01() = [
   [3,16,13.5,0,-2.515,13.49,0,-2.4968,12.8818,0,-2.5102],
 ];
 module ldraw_lib__s__logobugat01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__logobugat01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__logobugat01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__logobugat01(line=0.2);

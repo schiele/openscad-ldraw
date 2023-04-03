@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <4070.scad>
-function ldraw_lib__4211044() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4211044(realsolid=false) = [
 // 0 ~_Brick  1 x  1 with Headlight Dark Bluish Grey (Obsolete)
 // 0 Name: 4211044.dat
 // 0 Author: [PTadmin]
@@ -22,8 +23,8 @@ function ldraw_lib__4211044() = [
 // 0 // colouring of the part (Dark_Bluish_Grey).
 // 
 // 1 72 0 0 0 1 0 0 0 1 0 0 0 1 4070.dat
-  [1,72,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4070()],
+  [1,72,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4070(realsolid)],
 ];
 module ldraw_lib__4211044(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4211044(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4211044(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4211044(line=0.2);

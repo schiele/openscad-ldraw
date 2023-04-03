@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/8/4-4disc.scad>
 use <../p/8/4-4ndis.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__6288456b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6288456b(realsolid=false) = [
 // 0 Sticker  1.8 x  2.8 with White "LIVE TONIGHT" and Bright Light Yellow "PHOEBE BUFFAY"
 // 0 Name: 6288456b.dat
 // 0 Author: Vincent Messenet [Cheenzo]
@@ -19,16 +20,16 @@ function ldraw_lib__6288456b() = [
 // 
 // 
 // 1 16 0 -0.25 0 28 0 0 0 0.25 0 0 0 -18 box5-12.dat
-  [1,16,0,-0.25,0,28,0,0,0,0.25,0,0,0,-18, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,28,0,0,0,0.25,0,0,0,-18, ldraw_lib__box5_12(realsolid)],
 // 
 // 1 15 -16.61 -.25 11.61 .37 0 0 0 1 0 0 0 .36 8\4-4disc.dat
-  [1,15,-16.61,-.25,11.61,.37,0,0,0,1,0,0,0,.36, ldraw_lib__8__4_4disc()],
+  [1,15,-16.61,-.25,11.61,.37,0,0,0,1,0,0,0,.36, ldraw_lib__8__4_4disc(realsolid)],
 // 1 0 -16.61 -.25 11.61 .37 0 0 0 1 0 0 0 .36 8\4-4ndis.dat
-  [1,0,-16.61,-.25,11.61,.37,0,0,0,1,0,0,0,.36, ldraw_lib__8__4_4ndis()],
+  [1,0,-16.61,-.25,11.61,.37,0,0,0,1,0,0,0,.36, ldraw_lib__8__4_4ndis(realsolid)],
 // 1 15 -15.21 -.25 11.61 .37 0 0 0 1 0 0 0 .36 8\4-4disc.dat
-  [1,15,-15.21,-.25,11.61,.37,0,0,0,1,0,0,0,.36, ldraw_lib__8__4_4disc()],
+  [1,15,-15.21,-.25,11.61,.37,0,0,0,1,0,0,0,.36, ldraw_lib__8__4_4disc(realsolid)],
 // 1 0 -15.21 -.25 11.61 .37 0 0 0 1 0 0 0 .36 8\4-4ndis.dat
-  [1,0,-15.21,-.25,11.61,.37,0,0,0,1,0,0,0,.36, ldraw_lib__8__4_4ndis()],
+  [1,0,-15.21,-.25,11.61,.37,0,0,0,1,0,0,0,.36, ldraw_lib__8__4_4ndis(realsolid)],
 // 
 // 3 0 -.49 -.25 -10.15 -2.27 -.25 -10.31 -.32 -.25 -10.47
   [3,0,-.49,-.25,-10.15,-2.27,-.25,-10.31,-.32,-.25,-10.47],
@@ -1854,5 +1855,5 @@ function ldraw_lib__6288456b() = [
   [4,29,26.13,-.25,11.95,25.81,-.25,11.95,24.67,-.25,10.8,25,-.25,10.15],
 ];
 module ldraw_lib__6288456b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6288456b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6288456b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6288456b(line=0.2);

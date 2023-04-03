@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/47753s01.scad>
-function ldraw_lib__47753pq3() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__47753pq3(realsolid=false) = [
 // 0 Wedge  4 x  4 Triple Curved with Bricks and 4 Eyes Pattern
 // 0 Name: 47753pq3.dat
 // 0 Author: Christian Neumann [Wesley]
@@ -19,7 +20,7 @@ function ldraw_lib__47753pq3() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\47753s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__47753s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__47753s01(realsolid)],
 // 0 // top surface edges
 // 5 24 -20 2 20 20 2 20 0 6 0 0 0 40
   [5,24,-20,2,20,20,2,20,0,6,0,0,0,40],
@@ -2798,5 +2799,5 @@ function ldraw_lib__47753pq3() = [
   [3,16,20.87,16.228,-27.09,21.11,16.268,-26.23,20.5,14.724,-24.81],
 ];
 module ldraw_lib__47753pq3(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__47753pq3(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__47753pq3(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__47753pq3(line=0.2);

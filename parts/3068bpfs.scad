@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3068bs01.scad>
-function ldraw_lib__3068bpfs() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3068bpfs(realsolid=false) = [
 // 0 Tile  2 x  2 with Brown and White Flower with 12 Petals Pattern
 // 0 Name: 3068bpfs.dat
 // 0 Author: Steffen [Steffen]
@@ -20,7 +21,7 @@ function ldraw_lib__3068bpfs() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3068bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3068bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3068bs01(realsolid)],
 // 
 // 4 0 -1.8 0 6 -2.6 0 5.7 -2.14 0 5.16 0 0 5.59
   [4,0,-1.8,0,6,-2.6,0,5.7,-2.14,0,5.16,0,0,5.59],
@@ -1068,5 +1069,5 @@ function ldraw_lib__3068bpfs() = [
   [4,450,5.16,0,2.14,0,0,0,5.16,0,-2.14,5.59,0,0],
 ];
 module ldraw_lib__3068bpfs(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3068bpfs(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3068bpfs(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3068bpfs(line=0.2);

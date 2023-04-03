@@ -2,7 +2,8 @@ use <../lib.scad>
 use <2484.scad>
 use <2485.scad>
 use <u9070.scad>
-function ldraw_lib__2484c01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2484c01(realsolid=false) = [
 // 0 Car Wheel Holder  2 x  2 with Suspension
 // 0 Name: 2484c01.dat
 // 0 Author: Thomas Burger [grapeape]
@@ -23,14 +24,14 @@ function ldraw_lib__2484c01() = [
 // 
 // 
 // 1 494 22 2 0 1 0 0 0 1 0 0 0 1 u9070.dat
-  [1,494,22,2,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9070()],
+  [1,494,22,2,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9070(realsolid)],
 // 1 494 -22 2 0 1 0 0 0 1 0 0 0 1 u9070.dat
-  [1,494,-22,2,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9070()],
+  [1,494,-22,2,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9070(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 2484.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2484()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2484(realsolid)],
 // 1 16 0 16 0 1 0 0 0 1 0 0 0 1 2485.dat
-  [1,16,0,16,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2485()],
+  [1,16,0,16,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2485(realsolid)],
 ];
 module ldraw_lib__2484c01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2484c01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2484c01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2484c01(line=0.2);

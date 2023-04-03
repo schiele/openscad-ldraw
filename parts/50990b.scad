@@ -4,7 +4,8 @@ use <../p/48/4-4con2.scad>
 use <../p/48/4-4con3.scad>
 use <../p/48/4-4con4.scad>
 use <s/50990bs01.scad>
-function ldraw_lib__50990b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__50990b(realsolid=false) = [
 // 0 Dish 10 x 10 Inverted with Solid Studs
 // 0 Name: 50990b.dat
 // 0 Author: Damien Roux [Darats]
@@ -19,15 +20,15 @@ function ldraw_lib__50990b() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\50990bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__50990bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__50990bs01(realsolid)],
 // 1 16 0 1 0 -20 0 0 0 -1 0 0 0 20 48\4-4con1.dat
-  [1,16,0,1,0,-20,0,0,0,-1,0,0,0,20, ldraw_lib__48__4_4con1()],
+  [1,16,0,1,0,-20,0,0,0,-1,0,0,0,20, ldraw_lib__48__4_4con1(realsolid)],
 // 1 16 0 5 0 -20 0 0 0 -4 0 0 0 20 48\4-4con2.dat
-  [1,16,0,5,0,-20,0,0,0,-4,0,0,0,20, ldraw_lib__48__4_4con2()],
+  [1,16,0,5,0,-20,0,0,0,-4,0,0,0,20, ldraw_lib__48__4_4con2(realsolid)],
 // 1 16 0 11 0 -20 0 0 0 -6 0 0 0 20 48\4-4con3.dat
-  [1,16,0,11,0,-20,0,0,0,-6,0,0,0,20, ldraw_lib__48__4_4con3()],
+  [1,16,0,11,0,-20,0,0,0,-6,0,0,0,20, ldraw_lib__48__4_4con3(realsolid)],
 // 1 16 0 19 0 -20 0 0 0 -8 0 0 0 20 48\4-4con4.dat
-  [1,16,0,19,0,-20,0,0,0,-8,0,0,0,20, ldraw_lib__48__4_4con4()],
+  [1,16,0,19,0,-20,0,0,0,-8,0,0,0,20, ldraw_lib__48__4_4con4(realsolid)],
 // 5 24 19.828 0 2.61 20 0 0 0 0 0 39.656 1 5.22
   [5,24,19.828,0,2.61,20,0,0,0,0,0,39.656,1,5.22],
 // 5 24 19.318 0 5.176 19.828 0 2.61 0 0 0 38.636 1 10.352
@@ -414,5 +415,5 @@ function ldraw_lib__50990b() = [
   [5,24,-80,11,0,-79.312,11,-10.44,-59.484,5,-7.83,-100,19,0],
 ];
 module ldraw_lib__50990b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__50990b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__50990b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__50990b(line=0.2);

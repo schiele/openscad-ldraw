@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <8/stud4h.scad>
-function ldraw_lib__stu24h() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__stu24h(realsolid=false) = [
 // 0 ~Moved to 8\stud4h
 // 0 Name: stu24h.dat
 // 0 Author: [PTadmin]
@@ -16,8 +17,8 @@ function ldraw_lib__stu24h() = [
 // 
 // 0 // Stud Tube Open with Extended Hole (Fast-Draw)
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 8\stud4h.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__8__stud4h()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__8__stud4h(realsolid)],
 ];
 module ldraw_lib__stu24h(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__stu24h(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__stu24h(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__stu24h(line=0.2);

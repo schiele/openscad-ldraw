@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/98376s01.scad>
 use <s/98376s02.scad>
-function ldraw_lib__98376() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__98376(realsolid=false) = [
 // 0 Minifig Hips Genie
 // 0 Name: 98376.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -18,7 +19,7 @@ function ldraw_lib__98376() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\98376s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98376s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98376s01(realsolid)],
 // 0 // belt
 // 4 16 16.89 5.463 -9.467 17.616 5.463 -8.642 17.605 0 -9 16.885 0 -9.8
   [4,16,16.89,5.463,-9.467,17.616,5.463,-8.642,17.605,0,-9,16.885,0,-9.8],
@@ -48,8 +49,8 @@ function ldraw_lib__98376() = [
   [4,16,17.616,5.463,-8.642,17.619,5.463,8.67,17.596,0,9.219,17.605,0,-9],
 // 0 // front surface
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\98376s02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98376s02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98376s02(realsolid)],
 ];
 module ldraw_lib__98376(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__98376(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__98376(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__98376(line=0.2);

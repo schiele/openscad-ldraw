@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/48/4-4edge.scad>
-function ldraw_lib__s__93221s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__93221s02(realsolid=false) = [
 // 0 ~Minifig Boombox  1 x  3 x  1 - Speaker Grille
 // 0 Name: s\93221s02.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -2943,7 +2944,7 @@ function ldraw_lib__s__93221s02() = [
   [3,16,0,-8.5,0.8163,0.3626,-8.4762,0.807,0,-8.5,0],
 // 0 // Edge lines
 // 1 16 0 0 0 8.5 0 0 0 0 -8.5 0 1 0 48\4-4edge.dat
-  [1,16,0,0,0,8.5,0,0,0,0,-8.5,0,1,0, ldraw_lib__48__4_4edge()],
+  [1,16,0,0,0,8.5,0,0,0,0,-8.5,0,1,0, ldraw_lib__48__4_4edge(realsolid)],
 // 2 24 -4.0118 7.4787 1.2825 -4.0118 7.4787 1.7575
   [2,24,-4.0118,7.4787,1.2825,-4.0118,7.4787,1.7575],
 // 2 24 4.0118 7.4787 0.8252 4.0118 7.4787 1.7575
@@ -3059,5 +3060,5 @@ function ldraw_lib__s__93221s02() = [
   [5,24,0,8.5,0.8163,0,8.5,0,1.1095,8.4273,0,-0.3626,8.4762,0.807],
 ];
 module ldraw_lib__s__93221s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__93221s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__93221s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__93221s02(line=0.2);

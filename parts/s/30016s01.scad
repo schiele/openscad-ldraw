@@ -2,7 +2,8 @@ use <../../lib.scad>
 use <../../p/box2-5.scad>
 use <../../p/rect.scad>
 use <../../p/rect3.scad>
-function ldraw_lib__s__30016s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__30016s01(realsolid=false) = [
 // 0 ~Panel  6 x  6 x 12 Corner Lattice Row
 // 0 Name: s\30016s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -19,11 +20,11 @@ function ldraw_lib__s__30016s01() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 14.75 24.75 0 0 -11 11 0 -11 -11 -10 0 0 box2-5.dat
-  [1,16,14.75,24.75,0,0,-11,11,0,-11,-11,-10,0,0, ldraw_lib__box2_5()],
+  [1,16,14.75,24.75,0,0,-11,11,0,-11,-11,-10,0,0, ldraw_lib__box2_5(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -10 0 0 0 -11 11 0 11 11 -10 0 0 box2-5.dat
-  [1,16,-10,0,0,0,-11,11,0,11,11,-10,0,0, ldraw_lib__box2_5()],
+  [1,16,-10,0,0,0,-11,11,0,11,11,-10,0,0, ldraw_lib__box2_5(realsolid)],
 // 2 24 56 0 -10 56 5.5 -10
   [2,24,56,0,-10,56,5.5,-10],
 // 2 24 56 11 -10 56 25 -10
@@ -37,13 +38,13 @@ function ldraw_lib__s__30016s01() = [
 // 4 16 56 0 -10 56 0 10 56 5.5 10 56 5.5 -10
   [4,16,56,0,-10,56,0,10,56,5.5,10,56,5.5,-10],
 // 1 16 49.125 17.875 0 -6.875 -1 0 6.875 -1 0 0 0 10 rect.dat
-  [1,16,49.125,17.875,0,-6.875,-1,0,6.875,-1,0,0,0,10, ldraw_lib__rect()],
+  [1,16,49.125,17.875,0,-6.875,-1,0,6.875,-1,0,0,0,10, ldraw_lib__rect(realsolid)],
 // 1 16 28.5 11 0 -11 -1 0 -11 1 0 0 0 -10 rect.dat
-  [1,16,28.5,11,0,-11,-1,0,-11,1,0,0,0,-10, ldraw_lib__rect()],
+  [1,16,28.5,11,0,-11,-1,0,-11,1,0,0,0,-10, ldraw_lib__rect(realsolid)],
 // 1 16 47.75 13.75 0 0 1 8.25 0 1 -8.25 -10 0 0 rect3.dat
-  [1,16,47.75,13.75,0,0,1,8.25,0,1,-8.25,-10,0,0, ldraw_lib__rect3()],
+  [1,16,47.75,13.75,0,0,1,8.25,0,1,-8.25,-10,0,0, ldraw_lib__rect3(realsolid)],
 // 1 16 -23.75 13.75 0 0 1 11 0 -1 11 10 0 0 rect3.dat
-  [1,16,-23.75,13.75,0,0,1,11,0,-1,11,10,0,0, ldraw_lib__rect3()],
+  [1,16,-23.75,13.75,0,0,1,11,0,-1,11,10,0,0, ldraw_lib__rect3(realsolid)],
 // 4 16 -37.5 0 -10 -56 18.5 -10 -56 24 -10 -34.75 2.75 -10
   [4,16,-37.5,0,-10,-56,18.5,-10,-56,24,-10,-34.75,2.75,-10],
 // 4 16 -34.75 2.75 -10 -12.75 24.75 -10 -10 22 -10 -32 0 -10
@@ -116,5 +117,5 @@ function ldraw_lib__s__30016s01() = [
   [2,24,-56,24.75,-6,-56,24,-6],
 ];
 module ldraw_lib__s__30016s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__30016s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__30016s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__30016s01(line=0.2);

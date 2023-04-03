@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <79393s02.scad>
-function ldraw_lib__s__79393s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__79393s01(realsolid=false) = [
 // 0 ~Tile  3 x  3 Corner Round - Without Patternable Surface
 // 0 Name: s\79393s01.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -15,9 +16,9 @@ function ldraw_lib__s__79393s01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\79393s02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__79393s02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__79393s02(realsolid)],
 // 1 16 0 0 0 0 0 -1 0 1 0 -1 0 0 s\79393s02.dat
-  [1,16,0,0,0,0,0,-1,0,1,0,-1,0,0, ldraw_lib__s__79393s02()],
+  [1,16,0,0,0,0,0,-1,0,1,0,-1,0,0, ldraw_lib__s__79393s02(realsolid)],
 // 
 // 5 24 42.426 7 -42.426 42.426 4 -42.426 47.604 7 -36.52805 36.528 7 -47.604
   [5,24,42.426,7,-42.426,42.426,4,-42.426,47.604,7,-36.52805,36.528,7,-47.604],
@@ -27,5 +28,5 @@ function ldraw_lib__s__79393s01() = [
   [5,24,39.9512,8,-39.9512,39.9512,4,-39.9512,43.8584,8,-35.5006,35.5006,8,-43.8584],
 ];
 module ldraw_lib__s__79393s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__79393s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__79393s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__79393s01(line=0.2);

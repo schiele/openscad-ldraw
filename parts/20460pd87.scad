@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/20460s01.scad>
 use <s/20460s03.scad>
-function ldraw_lib__20460pd87() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__20460pd87(realsolid=false) = [
 // 0 Minifig Leg Left with White Lower Leg and Green Sandals Pattern
 // 0 Name: 20460pd87.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -18,9 +19,9 @@ function ldraw_lib__20460pd87() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\20460s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__20460s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__20460s01(realsolid)],
 // 1 15 0 0 0 1 0 0 0 1 0 0 0 1 s\20460s03.dat
-  [1,15,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__20460s03()],
+  [1,15,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__20460s03(realsolid)],
 // 
 // 4 15 1.5 20 -4 1.5 20 -10 19.23 20 -10 19.23 20 -4
   [4,15,1.5,20,-4,1.5,20,-10,19.23,20,-10,19.23,20,-4],
@@ -193,5 +194,5 @@ function ldraw_lib__20460pd87() = [
   [3,15,3.46,23.39,-10,3.29,23.33,-10,1.5,28,-10],
 ];
 module ldraw_lib__20460pd87(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__20460pd87(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__20460pd87(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__20460pd87(line=0.2);

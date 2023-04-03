@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/31111s01.scad>
-function ldraw_lib__31111p0f() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__31111p0f(realsolid=false) = [
 // 0 Duplo Brick  2 x  4 x  2 with Zebra Body Pattern
 // 0 Name: 31111p0f.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -18,7 +19,7 @@ function ldraw_lib__31111p0f() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\31111s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__31111s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__31111s01(realsolid)],
 // 
 // 4 70 -62.2 23.4 -40 -68.2 21.4 -40 -69.4 23.2 -40 -61.8 24.2 -40
   [4,70,-62.2,23.4,-40,-68.2,21.4,-40,-69.4,23.2,-40,-61.8,24.2,-40],
@@ -867,5 +868,5 @@ function ldraw_lib__31111p0f() = [
   [3,16,-80,96,-40,-7.2,92.2,-40,-13.8,92.2,-40],
 ];
 module ldraw_lib__31111p0f(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__31111p0f(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__31111p0f(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__31111p0f(line=0.2);

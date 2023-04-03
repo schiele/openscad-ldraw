@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__21490() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__21490(realsolid=false) = [
 // 0 Figure Friends Cape Cloth Short with 2 Bottom Curves and 4 Heart Shaped Holes
 // 0 Name: 21490.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -2416,5 +2417,5 @@ function ldraw_lib__21490() = [
   [5,24,-25.2,0,-30.1,-25.2,-0.3,-30.1,-26,0,-28.8,-24.1,0,-31.1],
 ];
 module ldraw_lib__21490(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__21490(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__21490(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__21490(line=0.2);

@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4cylc.scad>
 use <s/43745s01.scad>
 use <s/43745s02.scad>
-function ldraw_lib__43745() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__43745(realsolid=false) = [
 // 0 Minifig Head Elf
 // 0 Name: 43745.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -19,17 +20,17 @@ function ldraw_lib__43745() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\43745s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__43745s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__43745s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\43745s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__43745s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__43745s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\43745s02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__43745s02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__43745s02(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\43745s02.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__43745s02()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__43745s02(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -24 0 6 0 0 0 24 0 0 0 6 4-4cylc.dat
-  [1,16,0,-24,0,6,0,0,0,24,0,0,0,6, ldraw_lib__4_4cylc()],
+  [1,16,0,-24,0,6,0,0,0,24,0,0,0,6, ldraw_lib__4_4cylc(realsolid)],
 // 0 // Middle Condlines
 // 5 24 0 -17.621 13.028 0 -16.61 12.722 -0.915 -17.339 12.873 0.915 -17.339 12.873
   [5,24,0,-17.621,13.028,0,-16.61,12.722,-0.915,-17.339,12.873,0.915,-17.339,12.873],
@@ -181,5 +182,5 @@ function ldraw_lib__43745() = [
   [5,24,0,-9.708,-20.292,0,-10.593,-20.831,-0.646,-10.556,-20.797,0.646,-10.556,-20.797],
 ];
 module ldraw_lib__43745(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__43745(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__43745(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__43745(line=0.2);

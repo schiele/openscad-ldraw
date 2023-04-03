@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <6259.scad>
-function ldraw_lib__20430() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__20430(realsolid=false) = [
 // 0 =Cylinder  2 x  4 x  4
 // 0 Name: 20430.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -17,8 +18,8 @@ function ldraw_lib__20430() = [
 // 0 // Alias of 6259
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 6259.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__6259()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__6259(realsolid)],
 ];
 module ldraw_lib__20430(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__20430(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__20430(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__20430(line=0.2);

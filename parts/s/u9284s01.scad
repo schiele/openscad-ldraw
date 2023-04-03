@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/2-4edge.scad>
 use <../../p/3-16cyli.scad>
-function ldraw_lib__s__u9284s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__u9284s01(realsolid=false) = [
 // 0 ~Battery Mignon (AA) - Half
 // 0 Name: s\u9284s01.dat
 // 0 Author: Max Martin Richter [MMR1988]
@@ -16,13 +17,13 @@ function ldraw_lib__s__u9284s01() = [
 // 
 // 
 // 1 16 57.5 0 0 0 -119 0 0 0 -17.5 17.5 0 0 3-16cyli.dat
-  [1,16,57.5,0,0,0,-119,0,0,0,-17.5,17.5,0,0, ldraw_lib__3_16cyli()],
+  [1,16,57.5,0,0,0,-119,0,0,0,-17.5,17.5,0,0, ldraw_lib__3_16cyli(realsolid)],
 // 1 16 57.5 0 0 0 -119 0 0 0 -17.5 -17.5 0 0 3-16cyli.dat
-  [1,16,57.5,0,0,0,-119,0,0,0,-17.5,-17.5,0,0, ldraw_lib__3_16cyli()],
+  [1,16,57.5,0,0,0,-119,0,0,0,-17.5,-17.5,0,0, ldraw_lib__3_16cyli(realsolid)],
 // 1 16 57.5 0 0 0 1 0 0 0 -17.5 -17.5 0 0 2-4edge.dat
-  [1,16,57.5,0,0,0,1,0,0,0,-17.5,-17.5,0,0, ldraw_lib__2_4edge()],
+  [1,16,57.5,0,0,0,1,0,0,0,-17.5,-17.5,0,0, ldraw_lib__2_4edge(realsolid)],
 // 1 16 -61.5 0 0 0 1 0 0 0 -17.5 -17.5 0 0 2-4edge.dat
-  [1,16,-61.5,0,0,0,1,0,0,0,-17.5,-17.5,0,0, ldraw_lib__2_4edge()],
+  [1,16,-61.5,0,0,0,1,0,0,0,-17.5,-17.5,0,0, ldraw_lib__2_4edge(realsolid)],
 // 
 // 5 24 57.5 -17.5 0 -61.5 -17.5 0 57.5 -16.1682 -6.6973 57.5 -16.1682 6.6973
   [5,24,57.5,-17.5,0,-61.5,-17.5,0,57.5,-16.1682,-6.6973,57.5,-16.1682,6.6973],
@@ -823,5 +824,5 @@ function ldraw_lib__s__u9284s01() = [
   [3,16,-3.741,-17.5,0,-3.797,-17.4623,-0.1893,-3.526,-17.1812,-1.6026],
 ];
 module ldraw_lib__s__u9284s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__u9284s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__u9284s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__u9284s01(line=0.2);

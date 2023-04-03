@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__6005724j2() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6005724j2(realsolid=false) = [
 // 0 Sticker  2.6 x  1.6 with Book Cover Moria Chronicles (Back)
 // 0 Name: 6005724j2.dat
 // 0 Author: Christian Neumann [Wesley]
@@ -19,7 +20,7 @@ function ldraw_lib__6005724j2() = [
 // 
 // 
 // 1 16 0 -0.25 0 16 0 0 0 0.25 0 0 0 26 box5-12.dat
-  [1,16,0,-0.25,0,16,0,0,0,0.25,0,0,0,26, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,16,0,0,0,0.25,0,0,0,26, ldraw_lib__box5_12(realsolid)],
 // 4 0 12.44 -0.25 19.23 11.31 -0.25 19.06 11.4 -0.25 18.5 12.63 -0.25 18.3
   [4,0,12.44,-0.25,19.23,11.31,-0.25,19.06,11.4,-0.25,18.5,12.63,-0.25,18.3],
 // 4 0 12.63 -0.25 18.3 11.4 -0.25 18.5 11.31 -0.25 18.04 12.44 -0.25 17.37
@@ -970,5 +971,5 @@ function ldraw_lib__6005724j2() = [
   [4,16,-7.1,-0.25,-23,-4.7,-0.25,-22.3,-6.37,-0.25,-20.05,-7.59,-0.25,-22.82],
 ];
 module ldraw_lib__6005724j2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6005724j2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6005724j2(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6005724j2(line=0.2);

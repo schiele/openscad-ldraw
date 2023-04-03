@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/2-4disc.scad>
-function ldraw_lib__s__3069bs18() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__3069bs18(realsolid=false) = [
 // 0 ~Pattern Thin Black "POLICE"
 // 0 Name: s\3069bs18.dat
 // 0 Author: John Riley [jriley]
@@ -19,7 +20,7 @@ function ldraw_lib__s__3069bs18() = [
 // 
 // 
 // 1 16 -14.016 0 2.1 0 0 1.344 0 1 0 -1.5 0 0 2-4disc.dat
-  [1,16,-14.016,0,2.1,0,0,1.344,0,1,0,-1.5,0,0, ldraw_lib__2_4disc()],
+  [1,16,-14.016,0,2.1,0,0,1.344,0,1,0,-1.5,0,0, ldraw_lib__2_4disc(realsolid)],
 // 0 // P
 // 4 0 -11.53256 0 3.13329 -12.77428 0 2.67405 -12.672 0 2.1 -11.328 0 2.1
   [4,0,-11.53256,0,3.13329,-12.77428,0,2.67405,-12.672,0,2.1,-11.328,0,2.1],
@@ -303,5 +304,5 @@ function ldraw_lib__s__3069bs18() = [
   [3,16,17,0,-5,2.496,0,-4.8,1.6,0,-4.8],
 ];
 module ldraw_lib__s__3069bs18(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__3069bs18(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__3069bs18(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__3069bs18(line=0.2);

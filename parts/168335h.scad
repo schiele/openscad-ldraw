@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__168335h() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__168335h(realsolid=false) = [
 // 0 Sticker  2.7 x  3.0 with Red "RED BIRD TEAM" and Black Stripe Right
 // 0 Name: 168335h.dat
 // 0 Author: Ulrich Röder [UR]
@@ -18,7 +19,7 @@ function ldraw_lib__168335h() = [
 // 
 // 0 // Main
 // 1 16 0 -0.25 0 30 0 0 0 0.25 0 0 0 27 box5-12.dat
-  [1,16,0,-0.25,0,30,0,0,0,0.25,0,0,0,27, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,30,0,0,0,0.25,0,0,0,27, ldraw_lib__box5_12(realsolid)],
 // 
 // 0 // Black
 // 4 0 -22.172 -0.25 18.538 -22.299 -0.25 18.197 -21.983 -0.25 18.177 -21.857 -0.25 18.492
@@ -2223,5 +2224,5 @@ function ldraw_lib__168335h() = [
   [3,16,30,-.25,-19,14.061,-.25,-17.25,13.895,-.25,-17.25],
 ];
 module ldraw_lib__168335h(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__168335h(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__168335h(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__168335h(line=0.2);

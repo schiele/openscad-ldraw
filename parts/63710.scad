@@ -7,7 +7,8 @@ use <47392.scad>
 use <47393.scad>
 use <47394.scad>
 use <63351.scad>
-function ldraw_lib__63710() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__63710(realsolid=false) = [
 // 0 Figure Duplo Adult Male with Cap
 // 0 Name: 63710.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -22,22 +23,22 @@ function ldraw_lib__63710() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 47394.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__47394()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__47394(realsolid)],
 // 1 16 0 -56 12 1 0 0 0 1 0 0 0 1 47207.dat
-  [1,16,0,-56,12,1,0,0,0,1,0,0,0,1, ldraw_lib__47207()],
+  [1,16,0,-56,12,1,0,0,0,1,0,0,0,1, ldraw_lib__47207(realsolid)],
 // 1 16 0 -56 12 1 0 0 0 1 0 0 0 1 47393.dat
-  [1,16,0,-56,12,1,0,0,0,1,0,0,0,1, ldraw_lib__47393()],
+  [1,16,0,-56,12,1,0,0,0,1,0,0,0,1, ldraw_lib__47393(realsolid)],
 // 1 16 0 -56 12 1 0 0 0 1 0 0 0 1 47392.dat
-  [1,16,0,-56,12,1,0,0,0,1,0,0,0,1, ldraw_lib__47392()],
+  [1,16,0,-56,12,1,0,0,0,1,0,0,0,1, ldraw_lib__47392(realsolid)],
 // 1 16 22 -90 12.5 1 0 0 0 1 0 0 0 1 47380.dat
-  [1,16,22,-90,12.5,1,0,0,0,1,0,0,0,1, ldraw_lib__47380()],
+  [1,16,22,-90,12.5,1,0,0,0,1,0,0,0,1, ldraw_lib__47380(realsolid)],
 // 1 16 -22 -90 12.5 1 0 0 0 1 0 0 0 1 47389.dat
-  [1,16,-22,-90,12.5,1,0,0,0,1,0,0,0,1, ldraw_lib__47389()],
+  [1,16,-22,-90,12.5,1,0,0,0,1,0,0,0,1, ldraw_lib__47389(realsolid)],
 // 1 16 0 -106 14 1 0 0 0 1 0 0 0 1 47391.dat
-  [1,16,0,-106,14,1,0,0,0,1,0,0,0,1, ldraw_lib__47391()],
+  [1,16,0,-106,14,1,0,0,0,1,0,0,0,1, ldraw_lib__47391(realsolid)],
 // 1 16 0 -106 14 1 0 0 0 1 0 0 0 1 63351.dat
-  [1,16,0,-106,14,1,0,0,0,1,0,0,0,1, ldraw_lib__63351()],
+  [1,16,0,-106,14,1,0,0,0,1,0,0,0,1, ldraw_lib__63351(realsolid)],
 ];
 module ldraw_lib__63710(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__63710(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__63710(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__63710(line=0.2);

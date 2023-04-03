@@ -2,7 +2,8 @@ use <../lib.scad>
 use <3815bps5.scad>
 use <3816bps5.scad>
 use <3817b.scad>
-function ldraw_lib__73200ps5() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__73200ps5(realsolid=false) = [
 // 0 Minifig Hips and Legs with SW Gunbelt Pattern
 // 0 Name: 73200ps5.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -23,12 +24,12 @@ function ldraw_lib__73200ps5() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 3815bps5.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3815bps5()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3815bps5(realsolid)],
 // 1 16 0 12 0 1 0 0 0 1 0 0 0 1 3816bps5.dat
-  [1,16,0,12,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3816bps5()],
+  [1,16,0,12,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3816bps5(realsolid)],
 // 1 16 0 12 0 1 0 0 0 1 0 0 0 1 3817b.dat
-  [1,16,0,12,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3817b()],
+  [1,16,0,12,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3817b(realsolid)],
 ];
 module ldraw_lib__73200ps5(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__73200ps5(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__73200ps5(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__73200ps5(line=0.2);

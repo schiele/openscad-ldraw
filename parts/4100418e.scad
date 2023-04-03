@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__4100418e() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4100418e(realsolid=false) = [
 // 0 Sticker  1.1 x  1.9 with Horizontal Grille
 // 0 Name: 4100418e.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -17,7 +18,7 @@ function ldraw_lib__4100418e() = [
 // 
 // 
 // 1 16 0 -0.25 0 19 0 0 0 0.25 0 0 0 11 box5-12.dat
-  [1,16,0,-0.25,0,19,0,0,0,0.25,0,0,0,11, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,19,0,0,0,0.25,0,0,0,11, ldraw_lib__box5_12(realsolid)],
 // 0 //
 // 4 0 16 -0.25 5 -16 -0.25 5 -16 -0.25 3 16 -0.25 3
   [4,0,16,-0.25,5,-16,-0.25,5,-16,-0.25,3,16,-0.25,3],
@@ -169,5 +170,5 @@ function ldraw_lib__4100418e() = [
   [4,16,-13.4,-0.25,9.4,13.4,-0.25,9.4,19,-0.25,11,-19,-0.25,11],
 ];
 module ldraw_lib__4100418e(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4100418e(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4100418e(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4100418e(line=0.2);

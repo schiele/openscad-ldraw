@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/3960ps2a.scad>
 use <s/3960s01.scad>
-function ldraw_lib__3960ps2() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3960ps2(realsolid=false) = [
 // 0 Dish  4 x  4 Inverted with TIE Hatch Pattern
 // 0 Name: 3960ps2.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -18,11 +19,11 @@ function ldraw_lib__3960ps2() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3960s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3960s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3960s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3960ps2a.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3960ps2a()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3960ps2a(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\3960ps2a.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__3960ps2a()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__3960ps2a(realsolid)],
 // 0 // Pattern center part
 // 4 16 -5.414 0.691 -13.07 -5.412 1.818 -20.197 -2.588 0 -9.659 -3.827 0 -9.239
   [4,16,-5.414,0.691,-13.07,-5.412,1.818,-20.197,-2.588,0,-9.659,-3.827,0,-9.239],
@@ -465,5 +466,5 @@ function ldraw_lib__3960ps2() = [
 // 0 //
 ];
 module ldraw_lib__3960ps2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3960ps2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3960ps2(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3960ps2(line=0.2);

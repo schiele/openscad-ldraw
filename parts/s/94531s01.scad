@@ -8,7 +8,8 @@ use <94531s03.scad>
 use <94531s04.scad>
 use <../../p/stud4a.scad>
 use <../../p/stug-2x2.scad>
-function ldraw_lib__s__94531s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__94531s01(realsolid=false) = [
 // 0 ~Windscreen 12 x  6 x  6 Curved without Pin Holes - Without Patternable Area
 // 0 Name: s\94531s01.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -24,44 +25,44 @@ function ldraw_lib__s__94531s01() = [
 // 
 // 0 // Subparts
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\94531s03.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__94531s03()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__94531s03(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\94531s03.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__94531s03()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__94531s03(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\94531s04.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__94531s04()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__94531s04(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\94531s04.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__94531s04()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__94531s04(realsolid)],
 // 0 // Primitives
 // 1 16 0 0 0 0 0 1 0 1 0 -1 0 0 stug-2x2.dat
-  [1,16,0,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__stug_2x2()],
+  [1,16,0,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__stug_2x2(realsolid)],
 // 1 16 0 4 -10 18 0 0 0 -1 0 0 0 10 rect3.dat
-  [1,16,0,4,-10,18,0,0,0,-1,0,0,0,10, ldraw_lib__rect3()],
+  [1,16,0,4,-10,18,0,0,0,-1,0,0,0,10, ldraw_lib__rect3(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 18 187.486 -20 0 -36 0 -183.486 0 0 0 0 -202.92 48\5-24cyli.dat
-  [1,16,18,187.486,-20,0,-36,0,-183.486,0,0,0,0,-202.92, ldraw_lib__48__5_24cyli()],
+  [1,16,18,187.486,-20,0,-36,0,-183.486,0,0,0,0,-202.92, ldraw_lib__48__5_24cyli(realsolid)],
 // 1 16 0 110.5699 -182 18 0 0 0 0 33.4301 0 -1 0 rect.dat
-  [1,16,0,110.5699,-182,18,0,0,0,0,33.4301,0,-1,0, ldraw_lib__rect()],
+  [1,16,0,110.5699,-182,18,0,0,0,0,33.4301,0,-1,0, ldraw_lib__rect(realsolid)],
 // 4 16 18 144 -182 16 144 -184 -16 144 -184 -18 144 -182
   [4,16,18,144,-182,16,144,-184,-16,144,-184,-18,144,-182],
 // 1 16 0 111.925 -184 16 0 0 0 0 32.075 0 1 0 rect.dat
-  [1,16,0,111.925,-184,16,0,0,0,0,32.075,0,1,0, ldraw_lib__rect()],
+  [1,16,0,111.925,-184,16,0,0,0,0,32.075,0,1,0, ldraw_lib__rect(realsolid)],
 // 1 16 0 118.66 -200 1 0 0 0 -6.335 0 0 0 1 stud4a.dat
-  [1,16,0,118.66,-200,1,0,0,0,-6.335,0,0,0,1, ldraw_lib__stud4a()],
+  [1,16,0,118.66,-200,1,0,0,0,-6.335,0,0,0,1, ldraw_lib__stud4a(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 118.66 -200 6 0 0 0 -4.1 0 0 0 6 4-4cyli.dat
-  [1,16,0,118.66,-200,6,0,0,0,-4.1,0,0,0,6, ldraw_lib__4_4cyli()],
+  [1,16,0,118.66,-200,6,0,0,0,-4.1,0,0,0,6, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 142 -218 -16 0 0 0 0 2 0 2 0 box2-9p.dat
-  [1,16,0,142,-218,-16,0,0,0,0,2,0,2,0, ldraw_lib__box2_9p()],
+  [1,16,0,142,-218,-16,0,0,0,0,2,0,2,0, ldraw_lib__box2_9p(realsolid)],
 // 1 16 0 0 0 -20 0 0 0 1 0 0 0 20 rect3.dat
-  [1,16,0,0,0,-20,0,0,0,1,0,0,0,20, ldraw_lib__rect3()],
+  [1,16,0,0,0,-20,0,0,0,1,0,0,0,20, ldraw_lib__rect3(realsolid)],
 // 1 16 0 142 -220 20 0 0 0 0 2 0 1 0 rect.dat
-  [1,16,0,142,-220,20,0,0,0,0,2,0,1,0, ldraw_lib__rect()],
+  [1,16,0,142,-220,20,0,0,0,0,2,0,1,0, ldraw_lib__rect(realsolid)],
 // 1 16 0 24 18 40 0 0 0 -1 0 0 0 2 rect.dat
-  [1,16,0,24,18,40,0,0,0,-1,0,0,0,2, ldraw_lib__rect()],
+  [1,16,0,24,18,40,0,0,0,-1,0,0,0,2, ldraw_lib__rect(realsolid)],
 // 1 16 0 24 2 40 0 0 0 -1 0 0 0 2 rect.dat
-  [1,16,0,24,2,40,0,0,0,-1,0,0,0,2, ldraw_lib__rect()],
+  [1,16,0,24,2,40,0,0,0,-1,0,0,0,2, ldraw_lib__rect(realsolid)],
 // 0 // Complementary faces
 // 4 16 -40 24 20 -20 0 20 20 0 20 40 24 20
   [4,16,-40,24,20,-20,0,20,20,0,20,40,24,20],
@@ -110,5 +111,5 @@ function ldraw_lib__s__94531s01() = [
   [5,24,-20,116.597,-211.304,20,116.597,-211.304,-20,94.4415,-199.315,-20,140,-220],
 ];
 module ldraw_lib__s__94531s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__94531s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__94531s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__94531s01(line=0.2);

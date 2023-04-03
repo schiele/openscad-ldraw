@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <2456.scad>
 use <4613908f.scad>
-function ldraw_lib__2456dq0() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2456dq0(realsolid=false) = [
 // 0 Brick  2 x  6 with Hieroglyphs Sticker
 // 0 Name: 2456dq0.dat
 // 0 Author: Christian Neumann [Wesley]
@@ -20,10 +21,10 @@ function ldraw_lib__2456dq0() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 2456.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2456()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2456(realsolid)],
 // 1 16 0 12 -20 1 0 0 0 0 -1 0 1 0 4613908f.dat
-  [1,16,0,12,-20,1,0,0,0,0,-1,0,1,0, ldraw_lib__4613908f()],
+  [1,16,0,12,-20,1,0,0,0,0,-1,0,1,0, ldraw_lib__4613908f(realsolid)],
 ];
 module ldraw_lib__2456dq0(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2456dq0(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2456dq0(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2456dq0(line=0.2);

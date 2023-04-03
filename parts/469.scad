@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <30261.scad>
-function ldraw_lib__469() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__469(realsolid=false) = [
 // 0 ~Moved to 30261
 // 0 Name: 469.dat
 // 0 Author: [PTadmin]
@@ -16,8 +17,8 @@ function ldraw_lib__469() = [
 // 
 // 0 // Roadsign Clip-on 2 x 2 Round
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 30261.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__30261()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__30261(realsolid)],
 ];
 module ldraw_lib__469(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__469(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__469(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__469(line=0.2);

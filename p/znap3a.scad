@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__znap3a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__znap3a(realsolid=false) = [
 // 0 Znap Between Pegholes 3a
 // 0 Name: znap3a.dat
 // 0 Author: Thomas Woelk [t.woelk]
@@ -106,5 +107,5 @@ function ldraw_lib__znap3a() = [
 // 0 //
 ];
 module ldraw_lib__znap3a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__znap3a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__znap3a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__znap3a(line=0.2);

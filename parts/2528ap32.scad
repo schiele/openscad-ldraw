@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/2528ap32s01.scad>
 use <s/2528as01.scad>
-function ldraw_lib__2528ap32() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2528ap32(realsolid=false) = [
 // 0 Minifig Hat Bicorne with Admiral Pattern
 // 0 Name: 2528ap32.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -20,14 +21,14 @@ function ldraw_lib__2528ap32() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2528as01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2528as01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2528as01(realsolid)],
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 -1 s\2528ap32s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__2528ap32s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__2528ap32s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\2528ap32s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__2528ap32s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__2528ap32s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 -1 s\2528ap32s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__2528ap32s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__2528ap32s01(realsolid)],
 // 
 // 4 16 4.0114 -18.2215 -5.45 0 -18.749 -5.45 0 -17.70195 -6.10113 .66868 -16.72868 -6.65169
   [4,16,4.0114,-18.2215,-5.45,0,-18.749,-5.45,0,-17.70195,-6.10113,.66868,-16.72868,-6.65169],
@@ -409,5 +410,5 @@ function ldraw_lib__2528ap32() = [
   [4,0,0,-4.6841,-12.8194,4.8446,-3.6109,-12.6506,6.4843,-10.2878,-9.5286,0,-11.9876,-9.6547],
 ];
 module ldraw_lib__2528ap32(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2528ap32(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2528ap32(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2528ap32(line=0.2);

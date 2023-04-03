@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4ering.scad>
 use <s/6256s01.scad>
 use <../p/t04i1538.scad>
-function ldraw_lib__6256p02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6256p02(realsolid=false) = [
 // 0 Minifig Dinner Plate with Green and Lime Lettuce Leaf and Yellow Splotches Pattern
 // 0 Name: 6256p02.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -21,16 +22,16 @@ function ldraw_lib__6256p02() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\6256s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6256s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6256s01(realsolid)],
 // 
 // 1 16 0 -7 0 26 0 0 0 -26 0 0 0 26 t04i1538.dat
-  [1,16,0,-7,0,26,0,0,0,-26,0,0,0,26, ldraw_lib__t04i1538()],
+  [1,16,0,-7,0,26,0,0,0,-26,0,0,0,26, ldraw_lib__t04i1538(realsolid)],
 // 1 16 0 -7 0 26 0 0 0 -26 0 0 0 -26 t04i1538.dat
-  [1,16,0,-7,0,26,0,0,0,-26,0,0,0,-26, ldraw_lib__t04i1538()],
+  [1,16,0,-7,0,26,0,0,0,-26,0,0,0,-26, ldraw_lib__t04i1538(realsolid)],
 // 1 16 0 -7 0 -26 0 0 0 -26 0 0 0 26 t04i1538.dat
-  [1,16,0,-7,0,-26,0,0,0,-26,0,0,0,26, ldraw_lib__t04i1538()],
+  [1,16,0,-7,0,-26,0,0,0,-26,0,0,0,26, ldraw_lib__t04i1538(realsolid)],
 // 1 16 0 -7 0 -26 0 0 0 -26 0 0 0 -26 t04i1538.dat
-  [1,16,0,-7,0,-26,0,0,0,-26,0,0,0,-26, ldraw_lib__t04i1538()],
+  [1,16,0,-7,0,-26,0,0,0,-26,0,0,0,-26, ldraw_lib__t04i1538(realsolid)],
 // 
 // 2 24 17.8444 0 0 16.4864 0 6.8291
   [2,24,17.8444,0,0,16.4864,0,6.8291],
@@ -66,7 +67,7 @@ function ldraw_lib__6256p02() = [
   [2,24,16.4864,0,-6.8291,17.8444,0,0],
 // 
 // 1 16 0 -8.53085 0 22.3054 0 0 0 1 0 0 0 22.3054 4-4ering.dat
-  [1,16,0,-8.53085,0,22.3054,0,0,0,1,0,0,0,22.3054, ldraw_lib__4_4ering()],
+  [1,16,0,-8.53085,0,22.3054,0,0,0,1,0,0,0,22.3054, ldraw_lib__4_4ering(realsolid)],
 // 
 // 5 24 0 -8.5314 22.3054 0 0 17.8444 6.8291 0 16.4864 -6.8291 0 16.4864
   [5,24,0,-8.5314,22.3054,0,0,17.8444,6.8291,0,16.4864,-6.8291,0,16.4864],
@@ -2299,5 +2300,5 @@ function ldraw_lib__6256p02() = [
   [3,27,-5.34,0,11.42,-4.85,0,10.41,-4.53,0,10.63],
 ];
 module ldraw_lib__6256p02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6256p02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6256p02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6256p02(line=0.2);

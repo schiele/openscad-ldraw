@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/2-4edge.scad>
 use <../../p/2-8sphe.scad>
-function ldraw_lib__s__35660s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__35660s01(realsolid=false) = [
 // 0 ~Minifig Hair with Ponytail and Baseball Cap - Cap Half
 // 0 Name: s\35660s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -1010,9 +1011,9 @@ function ldraw_lib__s__35660s01() = [
 // 3 16 1.692 -8.907 7.7075 0 -8.6025 8.3175 0 -9.2218 7.162
   [3,16,1.692,-8.907,7.7075,0,-8.6025,8.3175,0,-9.2218,7.162],
 // 1 16 0 -9.865 4.862 0 2.42 0 0.6432 0 -1.9126 2.3 -0.3 0.6 2-8sphe.dat
-  [1,16,0,-9.865,4.862,0,2.42,0,0.6432,0,-1.9126,2.3,-0.3,0.6, ldraw_lib__2_8sphe()],
+  [1,16,0,-9.865,4.862,0,2.42,0,0.6432,0,-1.9126,2.3,-0.3,0.6, ldraw_lib__2_8sphe(realsolid)],
 // 1 16 0 -9.865 4.862 0 0 2.42 0.6432 1 0 2.3 0 -0.3 2-4edge.dat
-  [1,16,0,-9.865,4.862,0,0,2.42,0.6432,1,0,2.3,0,-0.3, ldraw_lib__2_4edge()],
+  [1,16,0,-9.865,4.862,0,0,2.42,0.6432,1,0,2.3,0,-0.3, ldraw_lib__2_4edge(realsolid)],
 // 2 24 3.2475 -9.07 6.8775 2.5825 -9.35 6.71
   [2,24,3.2475,-9.07,6.8775,2.5825,-9.35,6.71],
 // 2 24 3.2475 -9.07 6.8775 4.1 -8.3975 7.675
@@ -2591,5 +2592,5 @@ function ldraw_lib__s__35660s01() = [
   [5,24,11.3167,6.495,-10.9263,11.5675,7.04,-14.6363,8.3125,5.6175,-12.095,12.935,7.3075,-13.07],
 ];
 module ldraw_lib__s__35660s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__35660s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__35660s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__35660s01(line=0.2);

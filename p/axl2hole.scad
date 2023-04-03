@@ -3,7 +3,8 @@ use <axl2ho10.scad>
 use <axl2hol2.scad>
 use <axl2hol8.scad>
 use <axl2hol9.scad>
-function ldraw_lib__axl2hole() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__axl2hole(realsolid=false) = [
 // 0 Technic Axle Hole Reduced Closed
 // 0 Name: axl2hole.dat
 // 0 Author: Steve Bliss [sbliss]
@@ -29,20 +30,20 @@ function ldraw_lib__axl2hole() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 axl2hol2.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__axl2hol2()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__axl2hol2(realsolid)],
 // 1 16 0 1 0 1 0 0 0 1 0 0 0 1 axl2hol2.dat
-  [1,16,0,1,0,1,0,0,0,1,0,0,0,1, ldraw_lib__axl2hol2()],
+  [1,16,0,1,0,1,0,0,0,1,0,0,0,1, ldraw_lib__axl2hol2(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 axl2hol9.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__axl2hol9()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__axl2hol9(realsolid)],
 // 1 16 0 1 0 1 0 0 0 1 0 0 0 1 axl2hol9.dat
-  [1,16,0,1,0,1,0,0,0,1,0,0,0,1, ldraw_lib__axl2hol9()],
+  [1,16,0,1,0,1,0,0,0,1,0,0,0,1, ldraw_lib__axl2hol9(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 axl2hol8.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__axl2hol8()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__axl2hol8(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 axl2ho10.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__axl2ho10()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__axl2ho10(realsolid)],
 // 1 16 0 1 0 0 0 1 0 -1 0 1 0 0 axl2ho10.dat
-  [1,16,0,1,0,0,0,1,0,-1,0,1,0,0, ldraw_lib__axl2ho10()],
+  [1,16,0,1,0,0,0,1,0,-1,0,1,0,0, ldraw_lib__axl2ho10(realsolid)],
 ];
 module ldraw_lib__axl2hole(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__axl2hole(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__axl2hole(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__axl2hole(line=0.2);

@@ -7,7 +7,8 @@ use <../p/rect1.scad>
 use <../p/rect2p.scad>
 use <../p/rect3.scad>
 use <../p/stud.scad>
-function ldraw_lib__50967() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__50967(realsolid=false) = [
 // 0 Slope Brick Curved  8 x  1 x  1 & 2/3 with Arch
 // 0 Name: 50967.dat
 // 0 Author: Orion Pobursky [OrionP]
@@ -24,68 +25,68 @@ function ldraw_lib__50967() = [
 // 
 // 
 // 1 16 0 0 10 -1 0 0 0 1 0 0 0 -1 stud.dat
-  [1,16,0,0,10,-1,0,0,0,1,0,0,0,-1, ldraw_lib__stud()],
+  [1,16,0,0,10,-1,0,0,0,1,0,0,0,-1, ldraw_lib__stud(realsolid)],
 // 
 // 1 16 0 0 -10 -1 0 0 0 1 0 0 0 -1 stud.dat
-  [1,16,0,0,-10,-1,0,0,0,1,0,0,0,-1, ldraw_lib__stud()],
+  [1,16,0,0,-10,-1,0,0,0,1,0,0,0,-1, ldraw_lib__stud(realsolid)],
 // 1 16 0 -4 -20 10 0 0 0 0 4 0 -1 0 rect.dat
-  [1,16,0,-4,-20,10,0,0,0,0,4,0,-1,0, ldraw_lib__rect()],
+  [1,16,0,-4,-20,10,0,0,0,0,4,0,-1,0, ldraw_lib__rect(realsolid)],
 // 1 16 0 4 20 10 0 0 0 0 4 0 -1 0 rect.dat
-  [1,16,0,4,20,10,0,0,0,0,4,0,-1,0, ldraw_lib__rect()],
+  [1,16,0,4,20,10,0,0,0,0,4,0,-1,0, ldraw_lib__rect(realsolid)],
 // 1 16 10 4 10 0 -1 0 4 0 0 0 0 10 rect1.dat
-  [1,16,10,4,10,0,-1,0,4,0,0,0,0,10, ldraw_lib__rect1()],
+  [1,16,10,4,10,0,-1,0,4,0,0,0,0,10, ldraw_lib__rect1(realsolid)],
 // 1 16 -10 4 10 0 1 0 4 0 0 0 0 -10 rect1.dat
-  [1,16,-10,4,10,0,1,0,4,0,0,0,0,-10, ldraw_lib__rect1()],
+  [1,16,-10,4,10,0,1,0,4,0,0,0,0,-10, ldraw_lib__rect1(realsolid)],
 // 1 16 10 22 -130 0 -1 0 2 0 0 0 0 10 rect1.dat
-  [1,16,10,22,-130,0,-1,0,2,0,0,0,0,10, ldraw_lib__rect1()],
+  [1,16,10,22,-130,0,-1,0,2,0,0,0,0,10, ldraw_lib__rect1(realsolid)],
 // 1 16 -10 22 -130 0 1 0 2 0 0 0 0 -10 rect1.dat
-  [1,16,-10,22,-130,0,1,0,2,0,0,0,0,-10, ldraw_lib__rect1()],
+  [1,16,-10,22,-130,0,1,0,2,0,0,0,0,-10, ldraw_lib__rect1(realsolid)],
 // 1 16 0 22 -140 10 0 0 0 0 -2 0 1 0 rect.dat
-  [1,16,0,22,-140,10,0,0,0,0,-2,0,1,0, ldraw_lib__rect()],
+  [1,16,0,22,-140,10,0,0,0,0,-2,0,1,0, ldraw_lib__rect(realsolid)],
 // 1 16 0 20 0 10 0 0 0 0 12 0 -1 0 rect3.dat
-  [1,16,0,20,0,10,0,0,0,0,12,0,-1,0, ldraw_lib__rect3()],
+  [1,16,0,20,0,10,0,0,0,0,12,0,-1,0, ldraw_lib__rect3(realsolid)],
 // 1 16 0 20 -4 6 0 0 0 0 -12 0 1 0 rect.dat
-  [1,16,0,20,-4,6,0,0,0,0,-12,0,1,0, ldraw_lib__rect()],
+  [1,16,0,20,-4,6,0,0,0,0,-12,0,1,0, ldraw_lib__rect(realsolid)],
 // 1 16 0 8 -14 6 0 0 0 -1 0 0 0 -10 rect3.dat
-  [1,16,0,8,-14,6,0,0,0,-1,0,0,0,-10, ldraw_lib__rect3()],
+  [1,16,0,8,-14,6,0,0,0,-1,0,0,0,-10, ldraw_lib__rect3(realsolid)],
 // 1 16 0 3.5 -24 6 0 0 0 0 -4.5 0 1 0 rect3.dat
-  [1,16,0,3.5,-24,6,0,0,0,0,-4.5,0,1,0, ldraw_lib__rect3()],
+  [1,16,0,3.5,-24,6,0,0,0,0,-4.5,0,1,0, ldraw_lib__rect3(realsolid)],
 // 1 16 0 -1 -44 6 0 0 0 -1 0 0 0 -20 rect3.dat
-  [1,16,0,-1,-44,6,0,0,0,-1,0,0,0,-20, ldraw_lib__rect3()],
+  [1,16,0,-1,-44,6,0,0,0,-1,0,0,0,-20, ldraw_lib__rect3(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 24 -130 6 0 0 0 -2 0 0 0 -6 box4o4a.dat
-  [1,16,0,24,-130,6,0,0,0,-2,0,0,0,-6, ldraw_lib__box4o4a()],
+  [1,16,0,24,-130,6,0,0,0,-2,0,0,0,-6, ldraw_lib__box4o4a(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 8 8 -6 0 0 0 -4 0 0 0 8 box4-1.dat
-  [1,16,0,8,8,-6,0,0,0,-4,0,0,0,8, ldraw_lib__box4_1()],
+  [1,16,0,8,8,-6,0,0,0,-4,0,0,0,8, ldraw_lib__box4_1(realsolid)],
 // 1 16 0 4 2 1 0 0 0 4 0 0 0 2 box4-4a.dat
-  [1,16,0,4,2,1,0,0,0,4,0,0,0,2, ldraw_lib__box4_4a()],
+  [1,16,0,4,2,1,0,0,0,4,0,0,0,2, ldraw_lib__box4_4a(realsolid)],
 // 1 16 3.5 6 0 2.5 0 0 0 0 2 0 -1 0 rect1.dat
-  [1,16,3.5,6,0,2.5,0,0,0,0,2,0,-1,0, ldraw_lib__rect1()],
+  [1,16,3.5,6,0,2.5,0,0,0,0,2,0,-1,0, ldraw_lib__rect1(realsolid)],
 // 1 16 -3.5 6 0 2.5 0 0 0 0 2 0 -1 0 rect1.dat
-  [1,16,-3.5,6,0,2.5,0,0,0,0,2,0,-1,0, ldraw_lib__rect1()],
+  [1,16,-3.5,6,0,2.5,0,0,0,0,2,0,-1,0, ldraw_lib__rect1(realsolid)],
 // 1 16 0 0 0 0 0 10 0 1 0 -20 0 0 rect2p.dat
-  [1,16,0,0,0,0,0,10,0,1,0,-20,0,0, ldraw_lib__rect2p()],
+  [1,16,0,0,0,0,0,10,0,1,0,-20,0,0, ldraw_lib__rect2p(realsolid)],
 // 1 16 -8 28 -120 2 0 0 0 0 -4 0 1 0 rect.dat
-  [1,16,-8,28,-120,2,0,0,0,0,-4,0,1,0, ldraw_lib__rect()],
+  [1,16,-8,28,-120,2,0,0,0,0,-4,0,1,0, ldraw_lib__rect(realsolid)],
 // 1 16 8 28 -120 2 0 0 0 0 -4 0 1 0 rect.dat
-  [1,16,8,28,-120,2,0,0,0,0,-4,0,1,0, ldraw_lib__rect()],
+  [1,16,8,28,-120,2,0,0,0,0,-4,0,1,0, ldraw_lib__rect(realsolid)],
 // 1 16 -8 32 -117 2 0 0 0 -1 0 0 0 -3 rect3.dat
-  [1,16,-8,32,-117,2,0,0,0,-1,0,0,0,-3, ldraw_lib__rect3()],
+  [1,16,-8,32,-117,2,0,0,0,-1,0,0,0,-3, ldraw_lib__rect3(realsolid)],
 // 1 16 8 32 -117 2 0 0 0 -1 0 0 0 -3 rect3.dat
-  [1,16,8,32,-117,2,0,0,0,-1,0,0,0,-3, ldraw_lib__rect3()],
+  [1,16,8,32,-117,2,0,0,0,-1,0,0,0,-3, ldraw_lib__rect3(realsolid)],
 // 1 16 8 32 -5 -2 0 0 0 -1 0 0 0 1 rect3.dat
-  [1,16,8,32,-5,-2,0,0,0,-1,0,0,0,1, ldraw_lib__rect3()],
+  [1,16,8,32,-5,-2,0,0,0,-1,0,0,0,1, ldraw_lib__rect3(realsolid)],
 // 1 16 -8 32 -5 -2 0 0 0 -1 0 0 0 1 rect3.dat
-  [1,16,-8,32,-5,-2,0,0,0,-1,0,0,0,1, ldraw_lib__rect3()],
+  [1,16,-8,32,-5,-2,0,0,0,-1,0,0,0,1, ldraw_lib__rect3(realsolid)],
 // 1 16 0 32 -2 0 0 10 0 -1 0 2 0 0 rect2p.dat
-  [1,16,0,32,-2,0,0,10,0,-1,0,2,0,0, ldraw_lib__rect2p()],
+  [1,16,0,32,-2,0,0,10,0,-1,0,2,0,0, ldraw_lib__rect2p(realsolid)],
 // 1 16 0 19.228 -124 6 0 0 0 0 -2.772 0 1 0 rect3.dat
-  [1,16,0,19.228,-124,6,0,0,0,0,-2.772,0,1,0, ldraw_lib__rect3()],
+  [1,16,0,19.228,-124,6,0,0,0,0,-2.772,0,1,0, ldraw_lib__rect3(realsolid)],
 // 1 16 0 19.37 -120 6 0 0 0 0 4.63 0 -1 0 rect.dat
-  [1,16,0,19.37,-120,6,0,0,0,0,4.63,0,-1,0, ldraw_lib__rect()],
+  [1,16,0,19.37,-120,6,0,0,0,0,4.63,0,-1,0, ldraw_lib__rect(realsolid)],
 // 4 16 -10 8 0 -10 8 20 -6 8 16 -6 8 0
   [4,16,-10,8,0,-10,8,20,-6,8,16,-6,8,0],
 // 4 16 10 8 0 6 8 0 6 8 16 10 8 20
@@ -615,5 +616,5 @@ function ldraw_lib__50967() = [
 // 0
 ];
 module ldraw_lib__50967(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__50967(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__50967(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__50967(line=0.2);

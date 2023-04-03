@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__7_8disc() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__7_8disc(realsolid=false) = [
 // 0 Disc 0.875
 // 0 Name: 7-8disc.dat
 // 0 Author: Max Martin Richter [MMR1988]
@@ -44,5 +45,5 @@ function ldraw_lib__7_8disc() = [
 // 0 // Build by Primitive Generator 2
 ];
 module ldraw_lib__7_8disc(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__7_8disc(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__7_8disc(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__7_8disc(line=0.2);

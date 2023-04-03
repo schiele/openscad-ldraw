@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/22587s01.scad>
-function ldraw_lib__22587c() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__22587c(realsolid=false) = [
 // 0 Sticker Minifig Torso with Large "TINE" Logo
 // 0 Name: 22587c.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -31,7 +32,7 @@ function ldraw_lib__22587c() = [
   [4,16,-17,-0.25,-14,-12,-0.25,14,-12,0,14,-17,0,-14],
 // 0 //
 // 1 1 0 -0.25 -3.35 1 0 0 0 1 0 0 0 1 s\22587s01.dat
-  [1,1,0,-0.25,-3.35,1,0,0,0,1,0,0,0,1, ldraw_lib__s__22587s01()],
+  [1,1,0,-0.25,-3.35,1,0,0,0,1,0,0,0,1, ldraw_lib__s__22587s01(realsolid)],
 // 0 //
 // 4 1 -11.7 -0.25 4 -12 -0.25 14 -17 -0.25 -14 -11.7 -0.25 -10.7
   [4,1,-11.7,-0.25,4,-12,-0.25,14,-17,-0.25,-14,-11.7,-0.25,-10.7],
@@ -43,5 +44,5 @@ function ldraw_lib__22587c() = [
   [4,1,-11.7,-0.25,-10.7,-17,-0.25,-14,17,-0.25,-14,11.7,-0.25,-10.7],
 ];
 module ldraw_lib__22587c(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__22587c(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__22587c(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__22587c(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <3023.scad>
-function ldraw_lib__4177932() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4177932(realsolid=false) = [
 // 0 ~_Plate  1 x  2 Orange (Obsolete)
 // 0 Name: 4177932.dat
 // 0 Author: Michael Heidemann [mikeheide]
@@ -20,8 +21,8 @@ function ldraw_lib__4177932() = [
 // 0 // colouring of the part (Orange).
 // 
 // 1 25 0 0 0 1 0 0 0 1 0 0 0 1 3023.dat
-  [1,25,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3023()],
+  [1,25,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3023(realsolid)],
 ];
 module ldraw_lib__4177932(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4177932(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4177932(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4177932(line=0.2);

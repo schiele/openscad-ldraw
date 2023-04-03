@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/1-4cyli.scad>
 use <s/973s01.scad>
-function ldraw_lib__973pbn() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__973pbn(realsolid=false) = [
 // 0 Minifig Torso Riddler Black Question Mark on Chest and Back and Lavender Belt Pattern
 // 0 Name: 973pbn.dat
 // 0 Author: Heiko Jelnikar [KlotzKiste]
@@ -16,9 +17,9 @@ function ldraw_lib__973pbn() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01(realsolid)],
 // 1 0 0 -4 0 4.24 0 -4.24 0 -8 0 -4.24 0 -4.24 1-4cyli.dat
-  [1,0,0,-4,0,4.24,0,-4.24,0,-8,0,-4.24,0,-4.24, ldraw_lib__1_4cyli()],
+  [1,0,0,-4,0,4.24,0,-4.24,0,-8,0,-4.24,0,-4.24, ldraw_lib__1_4cyli(realsolid)],
 // 
 // 0 // FRONT
 // 4 0 0.04 20.14 -10 -1.27 19.6 -10 -1.38 20.14 -10 -1.27 20.68 -10
@@ -841,5 +842,5 @@ function ldraw_lib__973pbn() = [
   [3,16,-14.345,2,10,-17.05,24.2,10,-19,29,10],
 ];
 module ldraw_lib__973pbn(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__973pbn(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__973pbn(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__973pbn(line=0.2);

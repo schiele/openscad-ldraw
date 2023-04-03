@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__168335q() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__168335q(realsolid=false) = [
 // 0 Sticker  1.0 x  2.0 With Black Grille on Grey Background
 // 0 Name: 168335q.dat
 // 0 Author: Ulrich Röder [UR]
@@ -18,7 +19,7 @@ function ldraw_lib__168335q() = [
 // 
 // 0 // Main
 // 1 16 0 -.25 0 20 0 0 0 .25 0 0 0 10 box5-12.dat
-  [1,16,0,-.25,0,20,0,0,0,.25,0,0,0,10, ldraw_lib__box5_12()],
+  [1,16,0,-.25,0,20,0,0,0,.25,0,0,0,10, ldraw_lib__box5_12(realsolid)],
 // 4 16 18 -.25 -5.6 20 -.25 -10 20 -.25 10 18 -.25 5.6
   [4,16,18,-.25,-5.6,20,-.25,-10,20,-.25,10,18,-.25,5.6],
 // 3 16 20 -.25 10 17.99 -.25 5.875 18 -.25 5.6
@@ -413,5 +414,5 @@ function ldraw_lib__168335q() = [
   [3,7,15.652,-.25,7.4,16.825,-.25,6.726,16.725,-.25,6.858],
 ];
 module ldraw_lib__168335q(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__168335q(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__168335q(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__168335q(line=0.2);

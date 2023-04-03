@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/33207s01.scad>
 use <s/33207s02.scad>
-function ldraw_lib__33207() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__33207(realsolid=false) = [
 // 0 Animal Rabbit
 // 0 Name: 33207.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -19,10 +20,10 @@ function ldraw_lib__33207() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\33207s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__33207s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__33207s01(realsolid)],
 // 0 // nose
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\33207s02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__33207s02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__33207s02(realsolid)],
 // 0 // Right eye area
 // 3 16 -3.57 -67.25 -8.9 -2.481 -62.57 -11.25 1.05 -68.26 -8.181
   [3,16,-3.57,-67.25,-8.9,-2.481,-62.57,-11.25,1.05,-68.26,-8.181],
@@ -69,5 +70,5 @@ function ldraw_lib__33207() = [
   [5,24,9.83,-63.2,-3.6,13.5,-57.51,-4.99,12.67,-58.27,-12.19,8.69,-62.65,3.31],
 ];
 module ldraw_lib__33207(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__33207(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__33207(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__33207(line=0.2);

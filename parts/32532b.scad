@@ -6,7 +6,8 @@ use <s/32532s01.scad>
 use <../p/stud3a.scad>
 use <../p/stug2-1x6.scad>
 use <../p/stug2-6x1.scad>
-function ldraw_lib__32532b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__32532b(realsolid=false) = [
 // 0 Technic Brick  6 x  8 with Open Centre  4 x  6 with Round Underside Studs
 // 0 Name: 32532b.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -23,107 +24,107 @@ function ldraw_lib__32532b() = [
 // 0 // Subparts
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\32532s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__32532s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__32532s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 -1 s\32532s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__32532s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__32532s01(realsolid)],
 // 0 // Primitives
 // 1 16 0 12 0 80 0 0 0 12 0 0 0 60 box0.dat
-  [1,16,0,12,0,80,0,0,0,12,0,0,0,60, ldraw_lib__box0()],
+  [1,16,0,12,0,80,0,0,0,12,0,0,0,60, ldraw_lib__box0(realsolid)],
 // 1 16 0 0 0 60 0 0 0 1 0 0 0 40 recte4.dat
-  [1,16,0,0,0,60,0,0,0,1,0,0,0,40, ldraw_lib__recte4()],
+  [1,16,0,0,0,60,0,0,0,1,0,0,0,40, ldraw_lib__recte4(realsolid)],
 // 1 16 0 24 0 77 0 0 0 1 0 0 0 57 recte4.dat
-  [1,16,0,24,0,77,0,0,0,1,0,0,0,57, ldraw_lib__recte4()],
+  [1,16,0,24,0,77,0,0,0,1,0,0,0,57, ldraw_lib__recte4(realsolid)],
 // 0 // Upper studs
 // 1 16 0 0 50 1 0 0 0 1 0 0 0 1 stug2-1x6.dat
-  [1,16,0,0,50,1,0,0,0,1,0,0,0,1, ldraw_lib__stug2_1x6()],
+  [1,16,0,0,50,1,0,0,0,1,0,0,0,1, ldraw_lib__stug2_1x6(realsolid)],
 // 1 16 -70 0 0 1 0 0 0 1 0 0 0 1 stug2-6x1.dat
-  [1,16,-70,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug2_6x1()],
+  [1,16,-70,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug2_6x1(realsolid)],
 // 1 16 70 0 0 1 0 0 0 1 0 0 0 1 stug2-6x1.dat
-  [1,16,70,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug2_6x1()],
+  [1,16,70,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug2_6x1(realsolid)],
 // 1 16 0 0 -50 1 0 0 0 1 0 0 0 1 stug2-1x6.dat
-  [1,16,0,0,-50,1,0,0,0,1,0,0,0,1, ldraw_lib__stug2_1x6()],
+  [1,16,0,0,-50,1,0,0,0,1,0,0,0,1, ldraw_lib__stug2_1x6(realsolid)],
 // 0 // Underside studs
 // 1 16 -60 18 50 1 0 0 0 -1.5 0 0 0 1 stud3a.dat
-  [1,16,-60,18,50,1,0,0,0,-1.5,0,0,0,1, ldraw_lib__stud3a()],
+  [1,16,-60,18,50,1,0,0,0,-1.5,0,0,0,1, ldraw_lib__stud3a(realsolid)],
 // 1 16 -40 18 50 1 0 0 0 -1.5 0 0 0 1 stud3a.dat
-  [1,16,-40,18,50,1,0,0,0,-1.5,0,0,0,1, ldraw_lib__stud3a()],
+  [1,16,-40,18,50,1,0,0,0,-1.5,0,0,0,1, ldraw_lib__stud3a(realsolid)],
 // 1 16 -20 18 50 1 0 0 0 -1.5 0 0 0 1 stud3a.dat
-  [1,16,-20,18,50,1,0,0,0,-1.5,0,0,0,1, ldraw_lib__stud3a()],
+  [1,16,-20,18,50,1,0,0,0,-1.5,0,0,0,1, ldraw_lib__stud3a(realsolid)],
 // 1 16 0 18 50 1 0 0 0 -1.5 0 0 0 1 stud3a.dat
-  [1,16,0,18,50,1,0,0,0,-1.5,0,0,0,1, ldraw_lib__stud3a()],
+  [1,16,0,18,50,1,0,0,0,-1.5,0,0,0,1, ldraw_lib__stud3a(realsolid)],
 // 1 16 20 18 50 1 0 0 0 -1.5 0 0 0 1 stud3a.dat
-  [1,16,20,18,50,1,0,0,0,-1.5,0,0,0,1, ldraw_lib__stud3a()],
+  [1,16,20,18,50,1,0,0,0,-1.5,0,0,0,1, ldraw_lib__stud3a(realsolid)],
 // 1 16 40 18 50 1 0 0 0 -1.5 0 0 0 1 stud3a.dat
-  [1,16,40,18,50,1,0,0,0,-1.5,0,0,0,1, ldraw_lib__stud3a()],
+  [1,16,40,18,50,1,0,0,0,-1.5,0,0,0,1, ldraw_lib__stud3a(realsolid)],
 // 1 16 60 18 50 1 0 0 0 -1.5 0 0 0 1 stud3a.dat
-  [1,16,60,18,50,1,0,0,0,-1.5,0,0,0,1, ldraw_lib__stud3a()],
+  [1,16,60,18,50,1,0,0,0,-1.5,0,0,0,1, ldraw_lib__stud3a(realsolid)],
 // 1 16 -70 18 20 1 0 0 0 -1.5 0 0 0 1 stud3a.dat
-  [1,16,-70,18,20,1,0,0,0,-1.5,0,0,0,1, ldraw_lib__stud3a()],
+  [1,16,-70,18,20,1,0,0,0,-1.5,0,0,0,1, ldraw_lib__stud3a(realsolid)],
 // 1 16 70 18 20 1 0 0 0 -1.5 0 0 0 1 stud3a.dat
-  [1,16,70,18,20,1,0,0,0,-1.5,0,0,0,1, ldraw_lib__stud3a()],
+  [1,16,70,18,20,1,0,0,0,-1.5,0,0,0,1, ldraw_lib__stud3a(realsolid)],
 // 1 16 -70 18 0 1 0 0 0 -1.5 0 0 0 1 stud3a.dat
-  [1,16,-70,18,0,1,0,0,0,-1.5,0,0,0,1, ldraw_lib__stud3a()],
+  [1,16,-70,18,0,1,0,0,0,-1.5,0,0,0,1, ldraw_lib__stud3a(realsolid)],
 // 1 16 70 18 0 1 0 0 0 -1.5 0 0 0 1 stud3a.dat
-  [1,16,70,18,0,1,0,0,0,-1.5,0,0,0,1, ldraw_lib__stud3a()],
+  [1,16,70,18,0,1,0,0,0,-1.5,0,0,0,1, ldraw_lib__stud3a(realsolid)],
 // 1 16 -70 18 -20 1 0 0 0 -1.5 0 0 0 1 stud3a.dat
-  [1,16,-70,18,-20,1,0,0,0,-1.5,0,0,0,1, ldraw_lib__stud3a()],
+  [1,16,-70,18,-20,1,0,0,0,-1.5,0,0,0,1, ldraw_lib__stud3a(realsolid)],
 // 1 16 70 18 -20 1 0 0 0 -1.5 0 0 0 1 stud3a.dat
-  [1,16,70,18,-20,1,0,0,0,-1.5,0,0,0,1, ldraw_lib__stud3a()],
+  [1,16,70,18,-20,1,0,0,0,-1.5,0,0,0,1, ldraw_lib__stud3a(realsolid)],
 // 1 16 -60 18 -50 1 0 0 0 -1.5 0 0 0 1 stud3a.dat
-  [1,16,-60,18,-50,1,0,0,0,-1.5,0,0,0,1, ldraw_lib__stud3a()],
+  [1,16,-60,18,-50,1,0,0,0,-1.5,0,0,0,1, ldraw_lib__stud3a(realsolid)],
 // 1 16 -40 18 -50 1 0 0 0 -1.5 0 0 0 1 stud3a.dat
-  [1,16,-40,18,-50,1,0,0,0,-1.5,0,0,0,1, ldraw_lib__stud3a()],
+  [1,16,-40,18,-50,1,0,0,0,-1.5,0,0,0,1, ldraw_lib__stud3a(realsolid)],
 // 1 16 -20 18 -50 1 0 0 0 -1.5 0 0 0 1 stud3a.dat
-  [1,16,-20,18,-50,1,0,0,0,-1.5,0,0,0,1, ldraw_lib__stud3a()],
+  [1,16,-20,18,-50,1,0,0,0,-1.5,0,0,0,1, ldraw_lib__stud3a(realsolid)],
 // 1 16 0 18 -50 1 0 0 0 -1.5 0 0 0 1 stud3a.dat
-  [1,16,0,18,-50,1,0,0,0,-1.5,0,0,0,1, ldraw_lib__stud3a()],
+  [1,16,0,18,-50,1,0,0,0,-1.5,0,0,0,1, ldraw_lib__stud3a(realsolid)],
 // 1 16 20 18 -50 1 0 0 0 -1.5 0 0 0 1 stud3a.dat
-  [1,16,20,18,-50,1,0,0,0,-1.5,0,0,0,1, ldraw_lib__stud3a()],
+  [1,16,20,18,-50,1,0,0,0,-1.5,0,0,0,1, ldraw_lib__stud3a(realsolid)],
 // 1 16 40 18 -50 1 0 0 0 -1.5 0 0 0 1 stud3a.dat
-  [1,16,40,18,-50,1,0,0,0,-1.5,0,0,0,1, ldraw_lib__stud3a()],
+  [1,16,40,18,-50,1,0,0,0,-1.5,0,0,0,1, ldraw_lib__stud3a(realsolid)],
 // 1 16 60 18 -50 1 0 0 0 -1.5 0 0 0 1 stud3a.dat
-  [1,16,60,18,-50,1,0,0,0,-1.5,0,0,0,1, ldraw_lib__stud3a()],
+  [1,16,60,18,-50,1,0,0,0,-1.5,0,0,0,1, ldraw_lib__stud3a(realsolid)],
 // 1 16 -60 18 50 1 0 0 0 1 0 0 0 1 cylj4x8.dat
-  [1,16,-60,18,50,1,0,0,0,1,0,0,0,1, ldraw_lib__cylj4x8()],
+  [1,16,-60,18,50,1,0,0,0,1,0,0,0,1, ldraw_lib__cylj4x8(realsolid)],
 // 1 16 -40 18 50 1 0 0 0 1 0 0 0 1 cylj4x8.dat
-  [1,16,-40,18,50,1,0,0,0,1,0,0,0,1, ldraw_lib__cylj4x8()],
+  [1,16,-40,18,50,1,0,0,0,1,0,0,0,1, ldraw_lib__cylj4x8(realsolid)],
 // 1 16 -20 18 50 1 0 0 0 1 0 0 0 1 cylj4x8.dat
-  [1,16,-20,18,50,1,0,0,0,1,0,0,0,1, ldraw_lib__cylj4x8()],
+  [1,16,-20,18,50,1,0,0,0,1,0,0,0,1, ldraw_lib__cylj4x8(realsolid)],
 // 1 16 0 18 50 1 0 0 0 1 0 0 0 1 cylj4x8.dat
-  [1,16,0,18,50,1,0,0,0,1,0,0,0,1, ldraw_lib__cylj4x8()],
+  [1,16,0,18,50,1,0,0,0,1,0,0,0,1, ldraw_lib__cylj4x8(realsolid)],
 // 1 16 20 18 50 1 0 0 0 1 0 0 0 1 cylj4x8.dat
-  [1,16,20,18,50,1,0,0,0,1,0,0,0,1, ldraw_lib__cylj4x8()],
+  [1,16,20,18,50,1,0,0,0,1,0,0,0,1, ldraw_lib__cylj4x8(realsolid)],
 // 1 16 40 18 50 1 0 0 0 1 0 0 0 1 cylj4x8.dat
-  [1,16,40,18,50,1,0,0,0,1,0,0,0,1, ldraw_lib__cylj4x8()],
+  [1,16,40,18,50,1,0,0,0,1,0,0,0,1, ldraw_lib__cylj4x8(realsolid)],
 // 1 16 60 18 50 1 0 0 0 1 0 0 0 1 cylj4x8.dat
-  [1,16,60,18,50,1,0,0,0,1,0,0,0,1, ldraw_lib__cylj4x8()],
+  [1,16,60,18,50,1,0,0,0,1,0,0,0,1, ldraw_lib__cylj4x8(realsolid)],
 // 1 16 -70 18 20 0 0 1 0 1 0 -1 0 0 cylj4x8.dat
-  [1,16,-70,18,20,0,0,1,0,1,0,-1,0,0, ldraw_lib__cylj4x8()],
+  [1,16,-70,18,20,0,0,1,0,1,0,-1,0,0, ldraw_lib__cylj4x8(realsolid)],
 // 1 16 70 18 20 0 0 1 0 1 0 -1 0 0 cylj4x8.dat
-  [1,16,70,18,20,0,0,1,0,1,0,-1,0,0, ldraw_lib__cylj4x8()],
+  [1,16,70,18,20,0,0,1,0,1,0,-1,0,0, ldraw_lib__cylj4x8(realsolid)],
 // 1 16 -70 18 0 0 0 1 0 1 0 -1 0 0 cylj4x8.dat
-  [1,16,-70,18,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__cylj4x8()],
+  [1,16,-70,18,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__cylj4x8(realsolid)],
 // 1 16 70 18 0 0 0 1 0 1 0 -1 0 0 cylj4x8.dat
-  [1,16,70,18,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__cylj4x8()],
+  [1,16,70,18,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__cylj4x8(realsolid)],
 // 1 16 -70 18 -20 0 0 1 0 1 0 -1 0 0 cylj4x8.dat
-  [1,16,-70,18,-20,0,0,1,0,1,0,-1,0,0, ldraw_lib__cylj4x8()],
+  [1,16,-70,18,-20,0,0,1,0,1,0,-1,0,0, ldraw_lib__cylj4x8(realsolid)],
 // 1 16 70 18 -20 0 0 1 0 1 0 -1 0 0 cylj4x8.dat
-  [1,16,70,18,-20,0,0,1,0,1,0,-1,0,0, ldraw_lib__cylj4x8()],
+  [1,16,70,18,-20,0,0,1,0,1,0,-1,0,0, ldraw_lib__cylj4x8(realsolid)],
 // 1 16 -60 18 -50 1 0 0 0 1 0 0 0 1 cylj4x8.dat
-  [1,16,-60,18,-50,1,0,0,0,1,0,0,0,1, ldraw_lib__cylj4x8()],
+  [1,16,-60,18,-50,1,0,0,0,1,0,0,0,1, ldraw_lib__cylj4x8(realsolid)],
 // 1 16 -40 18 -50 1 0 0 0 1 0 0 0 1 cylj4x8.dat
-  [1,16,-40,18,-50,1,0,0,0,1,0,0,0,1, ldraw_lib__cylj4x8()],
+  [1,16,-40,18,-50,1,0,0,0,1,0,0,0,1, ldraw_lib__cylj4x8(realsolid)],
 // 1 16 -20 18 -50 1 0 0 0 1 0 0 0 1 cylj4x8.dat
-  [1,16,-20,18,-50,1,0,0,0,1,0,0,0,1, ldraw_lib__cylj4x8()],
+  [1,16,-20,18,-50,1,0,0,0,1,0,0,0,1, ldraw_lib__cylj4x8(realsolid)],
 // 1 16 0 18 -50 1 0 0 0 1 0 0 0 1 cylj4x8.dat
-  [1,16,0,18,-50,1,0,0,0,1,0,0,0,1, ldraw_lib__cylj4x8()],
+  [1,16,0,18,-50,1,0,0,0,1,0,0,0,1, ldraw_lib__cylj4x8(realsolid)],
 // 1 16 20 18 -50 1 0 0 0 1 0 0 0 1 cylj4x8.dat
-  [1,16,20,18,-50,1,0,0,0,1,0,0,0,1, ldraw_lib__cylj4x8()],
+  [1,16,20,18,-50,1,0,0,0,1,0,0,0,1, ldraw_lib__cylj4x8(realsolid)],
 // 1 16 40 18 -50 1 0 0 0 1 0 0 0 1 cylj4x8.dat
-  [1,16,40,18,-50,1,0,0,0,1,0,0,0,1, ldraw_lib__cylj4x8()],
+  [1,16,40,18,-50,1,0,0,0,1,0,0,0,1, ldraw_lib__cylj4x8(realsolid)],
 // 1 16 60 18 -50 1 0 0 0 1 0 0 0 1 cylj4x8.dat
-  [1,16,60,18,-50,1,0,0,0,1,0,0,0,1, ldraw_lib__cylj4x8()],
+  [1,16,60,18,-50,1,0,0,0,1,0,0,0,1, ldraw_lib__cylj4x8(realsolid)],
 ];
 module ldraw_lib__32532b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__32532b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__32532b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__32532b(line=0.2);

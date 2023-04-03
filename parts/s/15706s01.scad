@@ -3,7 +3,8 @@ use <../../p/box3u7a.scad>
 use <../../p/box5.scad>
 use <../../p/recte3.scad>
 use <../../p/stug3-1x3.scad>
-function ldraw_lib__s__15706s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__15706s01(realsolid=false) = [
 // 0 ~Plate  1 x  4 with Plate  1 x  4 at 45 Degrees - Half
 // 0 Name: s\15706s01.dat
 // 0 Author: Owen Burgoyne [C3POwen]
@@ -18,7 +19,7 @@ function ldraw_lib__s__15706s01() = [
 // 
 // 
 // 1 16 -40 8 -10 40 0 0 0 1 0 0 0 -10 recte3.dat
-  [1,16,-40,8,-10,40,0,0,0,1,0,0,0,-10, ldraw_lib__recte3()],
+  [1,16,-40,8,-10,40,0,0,0,1,0,0,0,-10, ldraw_lib__recte3(realsolid)],
 // 2 24 -80 8 0 -44 8 0
   [2,24,-80,8,0,-44,8,0],
 // 2 24 -40 8 0 -4 8 0
@@ -38,11 +39,11 @@ function ldraw_lib__s__15706s01() = [
 // 4 16 0 8 -20 -80 8 -20 -76 8 -16 -4 8 -16
   [4,16,0,8,-20,-80,8,-20,-76,8,-16,-4,8,-16],
 // 1 16 -40 4 -10 1 0 0 0 -1 0 0 0 -1 stug3-1x3.dat
-  [1,16,-40,4,-10,1,0,0,0,-1,0,0,0,-1, ldraw_lib__stug3_1x3()],
+  [1,16,-40,4,-10,1,0,0,0,-1,0,0,0,-1, ldraw_lib__stug3_1x3(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -40 8 -10 36 0 0 0 -4 0 0 0 6 box5.dat
-  [1,16,-40,8,-10,36,0,0,0,-4,0,0,0,6, ldraw_lib__box5()],
+  [1,16,-40,8,-10,36,0,0,0,-4,0,0,0,6, ldraw_lib__box5(realsolid)],
 // 4 16 -80 8 0 -80 0 0 -60 0 0 -60 3 0
   [4,16,-80,8,0,-80,0,0,-60,0,0,-60,3,0],
 // 4 16 -80 8 0 -60 3 0 -44 3 0 -44 8 0
@@ -72,7 +73,7 @@ function ldraw_lib__s__15706s01() = [
 // 2 24 -4 3 0 -4 8 0
   [2,24,-4,3,0,-4,8,0],
 // 1 16 -40 4 0 0 0 -40 4 0 0 0 -20 0 box3u7a.dat
-  [1,16,-40,4,0,0,0,-40,4,0,0,0,-20,0, ldraw_lib__box3u7a()],
+  [1,16,-40,4,0,0,0,-40,4,0,0,0,-20,0, ldraw_lib__box3u7a(realsolid)],
 // 3 16 -80 0 0 -80 0 -20 -60 0 0
   [3,16,-80,0,0,-80,0,-20,-60,0,0],
 // 3 16 -60 0 0 -80 0 -20 -40 0 0
@@ -83,5 +84,5 @@ function ldraw_lib__s__15706s01() = [
   [4,16,-20,0,0,-80,0,-20,0,0,-20,0,0,0],
 ];
 module ldraw_lib__s__15706s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__15706s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__15706s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__15706s01(line=0.2);

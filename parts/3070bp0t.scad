@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3070bs01.scad>
-function ldraw_lib__3070bp0t() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3070bp0t(realsolid=false) = [
 // 0 Tile  1 x  1 with Bright Pink Splotch on Dark Turquoise Background Pattern
 // 0 Name: 3070bp0t.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -17,7 +18,7 @@ function ldraw_lib__3070bp0t() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3070bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3070bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3070bs01(realsolid)],
 // 4 3 -7.16 0 2.25 -7.86 0 -0.98 -4.91 0 -1.96 -2.67 0 1.82
   [4,3,-7.16,0,2.25,-7.86,0,-0.98,-4.91,0,-1.96,-2.67,0,1.82],
 // 4 29 3.64 0 -6.75 2.95 0 -6.6 4.84 0 -8.41 4.24 0 -7.15
@@ -120,5 +121,5 @@ function ldraw_lib__3070bp0t() = [
   [3,3,-7.35,0,3.57,-1.89,0,2.47,-7.81,0,4.07],
 ];
 module ldraw_lib__3070bp0t(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3070bp0t(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3070bp0t(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3070bp0t(line=0.2);

@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/4-4ering.scad>
 use <s/98138s01.scad>
-function ldraw_lib__98138pc3() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__98138pc3(realsolid=false) = [
 // 0 Tile  1 x  1 Round with Flame Symbol in Black Triangle and Semicircular Gauge on Metallic Silver Background Pattern
 // 0 Name: 98138pc3.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -18,9 +19,9 @@ function ldraw_lib__98138pc3() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\98138s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01(realsolid)],
 // 1 80 0 0 0 9 0 0 0 1 0 0 0 9 4-4ering.dat
-  [1,80,0,0,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4ering()],
+  [1,80,0,0,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4ering(realsolid)],
 // 4 80 3.4443 0 8.3151 5.11 0 6.55 5.49 0 6.45 6.3639 0 6.3639
   [4,80,3.4443,0,8.3151,5.11,0,6.55,5.49,0,6.45,6.3639,0,6.3639],
 // 4 80 .33 0 4.27 -.03 0 4.48 -.08 0 4.06 .6 0 3.93
@@ -741,5 +742,5 @@ function ldraw_lib__98138pc3() = [
   [4,0,-2.41,0,-6.25,-2.87,0,-6.09,-3.14,0,-6.74,-2.12,0,-7.08],
 ];
 module ldraw_lib__98138pc3(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__98138pc3(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__98138pc3(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__98138pc3(line=0.2);

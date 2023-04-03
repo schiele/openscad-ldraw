@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__87610ps0s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__87610ps0s02(realsolid=false) = [
 // 0 ~Minifig Helmet Mandalorian, Dark Red Visor and Metallic Silver Weathering Pattern - Half
 // 0 Name: s\87610ps0s02.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -181,5 +182,5 @@ function ldraw_lib__s__87610ps0s02() = [
   [3,16,15.8945,12.5557,-3.9892,16.539,20.344,-3.39,16.607,20.306,-3],
 ];
 module ldraw_lib__s__87610ps0s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__87610ps0s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__87610ps0s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__87610ps0s02(line=0.2);

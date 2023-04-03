@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/26603s01.scad>
-function ldraw_lib__26603px0() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__26603px0(realsolid=false) = [
 // 0 Tile  2 x  3 with  8 Metallic Silver Squares and 12 Reddish Brown Quadrilateral on Dark Brown Background Pattern
 // 0 Name: 26603px0.dat
 // 0 Author: Vincent Messenet [Cheenzo]
@@ -17,7 +18,7 @@ function ldraw_lib__26603px0() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\26603s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__26603s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__26603s01(realsolid)],
 // 
 // 4 80 -20 0 12 -20 0 8 -16 0 8 -16 0 12
   [4,80,-20,0,12,-20,0,8,-16,0,8,-16,0,12],
@@ -204,5 +205,5 @@ function ldraw_lib__26603px0() = [
   [4,16,-28,0,-16,-28,0,16,-30,0,20,-30,0,-20],
 ];
 module ldraw_lib__26603px0(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__26603px0(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__26603px0(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__26603px0(line=0.2);

@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__3001p03s() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__3001p03s(realsolid=false) = [
 // 0 ~Brick  2 x  4 Pattern Stripe with 8 Black Windows
 // 0 Name: s\3001p03s.dat
 // 0 Author: Troy [peloquin]
@@ -281,5 +282,5 @@ function ldraw_lib__s__3001p03s() = [
 // 0
 ];
 module ldraw_lib__s__3001p03s(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__3001p03s(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__3001p03s(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__3001p03s(line=0.2);

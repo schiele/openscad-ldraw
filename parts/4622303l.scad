@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__4622303l() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4622303l(realsolid=false) = [
 // 0 Sticker  1.75 x  1.75 Mercedes-Benz Logo on Orange
 // 0 Name: 4622303l.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -17,7 +18,7 @@ function ldraw_lib__4622303l() = [
 // 
 // 
 // 1 16 0 -0.25 0 17.5 0 0 0 0.25 0 0 0 17.5 box5-12.dat
-  [1,16,0,-0.25,0,17.5,0,0,0,0.25,0,0,0,17.5, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,17.5,0,0,0,0.25,0,0,0,17.5, ldraw_lib__box5_12(realsolid)],
 // 0 //
 // 4 80 0 -0.25 0 0 -0.25 13.695 -0.4665 -0.25 13.695 -2.4045 -0.25 1.3885
   [4,80,0,-0.25,0,0,-0.25,13.695,-0.4665,-0.25,13.695,-2.4045,-0.25,1.3885],
@@ -175,5 +176,5 @@ function ldraw_lib__4622303l() = [
   [3,25,16.0875,-0.25,0,17.5,-0.25,-17.5,17.5,-0.25,17.5],
 ];
 module ldraw_lib__4622303l(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4622303l(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4622303l(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4622303l(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__6267174h() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6267174h(realsolid=false) = [
 // 0 Sticker  6.7 x  5.9 with Sorting Hat and Arches
 // 0 Name: 6267174h.dat
 // 0 Author: Howard Lande [HowardLande]
@@ -18,7 +19,7 @@ function ldraw_lib__6267174h() = [
 // 
 // 
 // 1 16 0 -0.25 0 59 0 0 0 0.25 0 0 0 67 box5-12.dat
-  [1,16,0,-0.25,0,59,0,0,0,0.25,0,0,0,67, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,59,0,0,0,0.25,0,0,0,67, ldraw_lib__box5_12(realsolid)],
 // 
 // 4 19 31.705 -0.25 -27.166 31.7 -0.25 -67 59 -0.25 -67 32.21 -0.25 -25.915
   [4,19,31.705,-0.25,-27.166,31.7,-0.25,-67,59,-0.25,-67,32.21,-0.25,-25.915],
@@ -4891,5 +4892,5 @@ function ldraw_lib__6267174h() = [
   [3,6,55.916,-.25,67,59,-.25,66.397,59,-.25,67],
 ];
 module ldraw_lib__6267174h(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6267174h(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6267174h(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6267174h(line=0.2);

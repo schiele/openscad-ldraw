@@ -2,7 +2,8 @@ use <../../lib.scad>
 use <../../p/4-4cylc.scad>
 use <../../p/4-4ndis.scad>
 use <../../p/knob1.scad>
-function ldraw_lib__s__3818s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__3818s01(realsolid=false) = [
 // 0 ~Minifig Arm Right Inner Half
 // 0 Name: s\3818s01.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -19,7 +20,7 @@ function ldraw_lib__s__3818s01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 knob1.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__knob1()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__knob1(realsolid)],
 // 0 // flat inner arm
 // 2 24 0 0 6.5 0 -2.4876 6.0054
   [2,24,0,0,6.5,0,-2.4876,6.0054],
@@ -64,11 +65,11 @@ function ldraw_lib__s__3818s01() = [
 // 
 // 0 // hand hole
 // 1 16 -5 18.9 -9.9 2.5 0 0 0 -1 -1.7678 0 0 -1.7678 4-4ndis.dat
-  [1,16,-5,18.9,-9.9,2.5,0,0,0,-1,-1.7678,0,0,-1.7678, ldraw_lib__4_4ndis()],
+  [1,16,-5,18.9,-9.9,2.5,0,0,0,-1,-1.7678,0,0,-1.7678, ldraw_lib__4_4ndis(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -5 8.294 0.707 2.5 0 0 0 10.6066 -1.76777 0 -10.6066 -1.76777 4-4cylc.dat
-  [1,16,-5,8.294,0.707,2.5,0,0,0,10.6066,-1.76777,0,-10.6066,-1.76777, ldraw_lib__4_4cylc()],
+  [1,16,-5,8.294,0.707,2.5,0,0,0,10.6066,-1.76777,0,-10.6066,-1.76777, ldraw_lib__4_4cylc(realsolid)],
 // 2 24 0 18.9 -9.9 -0.3805 17.5468 -11.2532
   [2,24,0,18.9,-9.9,-0.3805,17.5468,-11.2532],
 // 2 24 -0.3805 17.5468 -11.2532 -1.4645 16.3997 -12.4003
@@ -245,5 +246,5 @@ function ldraw_lib__s__3818s01() = [
   [5,24,-1.666,0,-6.5,-5.02,8.4209,-6.5354,0,0,-6.5,-2.942,-1.53,-6.005],
 ];
 module ldraw_lib__s__3818s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__3818s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__3818s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__3818s01(line=0.2);

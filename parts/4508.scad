@@ -3,7 +3,8 @@ use <../p/box3u2p.scad>
 use <../p/h2.scad>
 use <../p/rect3.scad>
 use <s/3680s01.scad>
-function ldraw_lib__4508() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4508(realsolid=false) = [
 // 0 Turntable  2 x  2 Plate Base with Hinge
 // 0 Name: 4508.dat
 // 0 Author: James Jessiman
@@ -26,13 +27,13 @@ function ldraw_lib__4508() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3680s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3680s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3680s01(realsolid)],
 // 1 16 0 4 -20 0 0 1 1 0 0 0 -1 0 h2.dat
-  [1,16,0,4,-20,0,0,1,1,0,0,0,-1,0, ldraw_lib__h2()],
+  [1,16,0,4,-20,0,0,1,1,0,0,0,-1,0, ldraw_lib__h2(realsolid)],
 // 1 16 -15 4 -20 0 0 5 4 0 0 0 1 0 rect3.dat
-  [1,16,-15,4,-20,0,0,5,4,0,0,0,1,0, ldraw_lib__rect3()],
+  [1,16,-15,4,-20,0,0,5,4,0,0,0,1,0, ldraw_lib__rect3(realsolid)],
 // 1 16 15 4 -20 0 0 -5 4 0 0 0 1 0 rect3.dat
-  [1,16,15,4,-20,0,0,-5,4,0,0,0,1,0, ldraw_lib__rect3()],
+  [1,16,15,4,-20,0,0,-5,4,0,0,0,1,0, ldraw_lib__rect3(realsolid)],
 // 4 16 20 8 -20 16 8 -16 16 8 16 20 8 20
   [4,16,20,8,-20,16,8,-16,16,8,16,20,8,20],
 // 4 16 -20 8 -20 -16 8 -16 16 8 -16 20 8 -20
@@ -42,8 +43,8 @@ function ldraw_lib__4508() = [
 // 4 16 -20 8 20 20 8 20 16 8 16 -16 8 16
   [4,16,-20,8,20,20,8,20,16,8,16,-16,8,16],
 // 1 16 0 4 -20 0 0 20 4 0 0 0 40 0 box3u2p.dat
-  [1,16,0,4,-20,0,0,20,4,0,0,0,40,0, ldraw_lib__box3u2p()],
+  [1,16,0,4,-20,0,0,20,4,0,0,0,40,0, ldraw_lib__box3u2p(realsolid)],
 ];
 module ldraw_lib__4508(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4508(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4508(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4508(line=0.2);

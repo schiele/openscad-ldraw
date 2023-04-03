@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/30102s01.scad>
-function ldraw_lib__30102() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__30102(realsolid=false) = [
 // 0 Door  2 x  8 x  6 Revolving
 // 0 Name: 30102.dat
 // 0 Author: Franklin W. Cain [fwcain]
@@ -23,7 +24,7 @@ function ldraw_lib__30102() = [
 // 0 // a.k.a 30344
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\30102s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30102s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30102s01(realsolid)],
 // 
 // 0 // this is the front face (for the pattern)
 // 4 16 -49 1 -1 -49 121 -1 49 121 -1 49 1 -1
@@ -33,5 +34,5 @@ function ldraw_lib__30102() = [
   [4,16,49,1,1,49,121,1,-49,121,1,-49,1,1],
 ];
 module ldraw_lib__30102(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__30102(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__30102(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__30102(line=0.2);

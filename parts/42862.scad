@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/42862s01.scad>
 use <../p/stug-1x3.scad>
-function ldraw_lib__42862() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__42862(realsolid=false) = [
 // 0 Wedge  3 x  3 Sloped Left
 // 0 Name: 42862.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -16,12 +17,12 @@ function ldraw_lib__42862() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\42862s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__42862s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__42862s01(realsolid)],
 // 1 16 -20 0 0 0 0 -1 0 1 0 1 0 0 stug-1x3.dat
-  [1,16,-20,0,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__stug_1x3()],
+  [1,16,-20,0,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__stug_1x3(realsolid)],
 // 4 16 -10 0 -30 10 20 -30 30 20 30 10 0 30
   [4,16,-10,0,-30,10,20,-30,30,20,30,10,0,30],
 ];
 module ldraw_lib__42862(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__42862(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__42862(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__42862(line=0.2);

@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/48/4-4cyli.scad>
 use <../p/48/4-4disc.scad>
-function ldraw_lib__6153754o() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6153754o(realsolid=false) = [
 // 0 Sticker  1.0 x  1.6 with Black "Al's BOARDS" between Blue Stripes on White Background
 // 0 Name: 6153754o.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -18,9 +19,9 @@ function ldraw_lib__6153754o() = [
 // 
 // 
 // 1 16 0 0 0 16 0 0 0 -0.25 0 0 0 10 48\4-4cyli.dat
-  [1,16,0,0,0,16,0,0,0,-0.25,0,0,0,10, ldraw_lib__48__4_4cyli()],
+  [1,16,0,0,0,16,0,0,0,-0.25,0,0,0,10, ldraw_lib__48__4_4cyli(realsolid)],
 // 1 16 0 0 0 -16 0 0 0 -1 0 0 0 10 48\4-4disc.dat
-  [1,16,0,0,0,-16,0,0,0,-1,0,0,0,10, ldraw_lib__48__4_4disc()],
+  [1,16,0,0,0,-16,0,0,0,-1,0,0,0,10, ldraw_lib__48__4_4disc(realsolid)],
 // 4 0 -8.526 -0.25 -5.094 -8.494 -0.25 -5.279 -8.342 -0.25 -5.426 -7.824 -0.25 -4.803
   [4,0,-8.526,-0.25,-5.094,-8.494,-0.25,-5.279,-8.342,-0.25,-5.426,-7.824,-0.25,-4.803],
 // 4 0 -8.549 -0.25 -4.821 -8.526 -0.25 -5.094 -7.824 -0.25 -4.803 -7.914 -0.25 -4.592
@@ -1027,5 +1028,5 @@ function ldraw_lib__6153754o() = [
   [4,15,15.862,-0.25,-1.305,15.916,-0.25,-0.8,7.259,-0.25,-2.23,7.546,-0.25,-2.484],
 ];
 module ldraw_lib__6153754o(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6153754o(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6153754o(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6153754o(line=0.2);

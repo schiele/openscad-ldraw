@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <2348a.scad>
-function ldraw_lib__808() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__808(realsolid=false) = [
 // 0 ~Moved to 2348a
 // 0 Name: 808.dat
 // 0 Author: [PTadmin]
@@ -18,9 +19,9 @@ function ldraw_lib__808() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 2348a.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2348a()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2348a(realsolid)],
 // 
 ];
 module ldraw_lib__808(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__808(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__808(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__808(line=0.2);

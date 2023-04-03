@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/51349s01.scad>
 use <../p/stud4a.scad>
-function ldraw_lib__51349() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__51349(realsolid=false) = [
 // 0 Minifig Headdress Shark
 // 0 Name: 51349.dat
 // 0 Author: Stan Isachenko [angmarec]
@@ -23,12 +24,12 @@ function ldraw_lib__51349() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\51349s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__51349s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__51349s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\51349s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__51349s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__51349s01(realsolid)],
 // 
 // 1 16 0 -4 0 1 0 0 0 -1 0 0 0 1 stud4a.dat
-  [1,16,0,-4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4a()],
+  [1,16,0,-4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4a(realsolid)],
 // 
 // 5 24 0 -8.62 -20.529 0 -1.856 -21.594 -4.44 -6.942 -19.939 4.44 -6.942 -19.939
   [5,24,0,-8.62,-20.529,0,-1.856,-21.594,-4.44,-6.942,-19.939,4.44,-6.942,-19.939],
@@ -68,5 +69,5 @@ function ldraw_lib__51349() = [
   [5,24,0,-17.736,1.801,0,-22.958,-3.225,-4.322,-22.437,-3.102,4.322,-22.437,-3.102],
 ];
 module ldraw_lib__51349(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__51349(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__51349(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__51349(line=0.2);

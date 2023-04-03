@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <190775a.scad>
-function ldraw_lib__004595b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__004595b(realsolid=false) = [
 // 0 Sticker  1.1 x  1.1 Round with Black "9" on White
 // 0 Name: 004595b.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -17,8 +18,8 @@ function ldraw_lib__004595b() = [
 // 
 // 
 // 1 16 0 0 0 -.355 0 0 0 1 0 0 0 -.355 190775a.dat
-  [1,16,0,0,0,-.355,0,0,0,1,0,0,0,-.355, ldraw_lib__190775a()],
+  [1,16,0,0,0,-.355,0,0,0,1,0,0,0,-.355, ldraw_lib__190775a(realsolid)],
 ];
 module ldraw_lib__004595b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__004595b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__004595b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__004595b(line=0.2);

@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__92250p03s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__92250p03s01(realsolid=false) = [
 // 0 ~Figure Friends Foot with Boot without Laces Pattern
 // 0 Name: s\92250p03s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -1157,5 +1158,5 @@ function ldraw_lib__s__92250p03s01() = [
   [5,24,5.02,-12.04,0.2,5.1112,-12.0239,0.1592,5.4267,-12.4678,0.1615,5.1106,-11.6719,-0.0981],
 ];
 module ldraw_lib__s__92250p03s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__92250p03s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__92250p03s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__92250p03s01(line=0.2);

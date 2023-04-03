@@ -6,7 +6,8 @@ use <../p/48/4-4rin28.scad>
 use <../p/rect1.scad>
 use <../p/rect2p.scad>
 use <s/u9367s01.scad>
-function ldraw_lib__u9367() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__u9367(realsolid=false) = [
 // 0 ~Electric Powered Up Large Angular Motor Front Top
 // 0 Name: u9367.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -25,9 +26,9 @@ function ldraw_lib__u9367() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\u9367s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__u9367s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__u9367s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\u9367s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__u9367s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__u9367s01(realsolid)],
 // 4 16 -50 31 -29 -32 31 -27 32 31 -27 50 31 -29
   [4,16,-50,31,-29,-32,31,-27,32,31,-27,50,31,-29],
 // 2 24 -50 31 -29 50 31 -29
@@ -35,19 +36,19 @@ function ldraw_lib__u9367() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -10 0 28 0 0 0 -5.5 0 0 0 28 48\4-4cylo.dat
-  [1,16,0,-10,0,28,0,0,0,-5.5,0,0,0,28, ldraw_lib__48__4_4cylo()],
+  [1,16,0,-10,0,28,0,0,0,-5.5,0,0,0,28, ldraw_lib__48__4_4cylo(realsolid)],
 // 1 16 0 -15.5 0 1 0 0 0 1 0 0 0 1 48\4-4rin28.dat
-  [1,16,0,-15.5,0,1,0,0,0,1,0,0,0,1, ldraw_lib__48__4_4rin28()],
+  [1,16,0,-15.5,0,1,0,0,0,1,0,0,0,1, ldraw_lib__48__4_4rin28(realsolid)],
 // 1 16 0 -10 0 6.36396 0 6.36396 0 1 0 -6.36396 0 6.36396 4-4ndis.dat
-  [1,16,0,-10,0,6.36396,0,6.36396,0,1,0,-6.36396,0,6.36396, ldraw_lib__4_4ndis()],
+  [1,16,0,-10,0,6.36396,0,6.36396,0,1,0,-6.36396,0,6.36396, ldraw_lib__4_4ndis(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -10 0 9 0 0 0 3 0 0 0 9 4-4cylo.dat
-  [1,16,0,-10,0,9,0,0,0,3,0,0,0,9, ldraw_lib__4_4cylo()],
+  [1,16,0,-10,0,9,0,0,0,3,0,0,0,9, ldraw_lib__4_4cylo(realsolid)],
 // 1 16 0 -8 55 34 0 0 0 0 1 0 -1 0 rect2p.dat
-  [1,16,0,-8,55,34,0,0,0,0,1,0,-1,0, ldraw_lib__rect2p()],
+  [1,16,0,-8,55,34,0,0,0,0,1,0,-1,0, ldraw_lib__rect2p(realsolid)],
 // 1 16 0 -7 0 9 0 0 0 -1 0 0 0 9 4-4ndis.dat
-  [1,16,0,-7,0,9,0,0,0,-1,0,0,0,9, ldraw_lib__4_4ndis()],
+  [1,16,0,-7,0,9,0,0,0,-1,0,0,0,9, ldraw_lib__4_4ndis(realsolid)],
 // 4 16 9 -7 9 -9 -7 9 -32 -7 28 32 -7 28
   [4,16,9,-7,9,-9,-7,9,-32,-7,28,32,-7,28],
 // 4 16 34 -7 55 32 -7 28 -32 -7 28 -34 -7 55
@@ -57,9 +58,9 @@ function ldraw_lib__u9367() = [
 // 2 24 32 31 -27 -32 31 -27
   [2,24,32,31,-27,-32,31,-27],
 // 1 16 0 1 -26.5 32 0 0 0 0 7 0 -1 -0.5 rect2p.dat
-  [1,16,0,1,-26.5,32,0,0,0,0,7,0,-1,-0.5, ldraw_lib__rect2p()],
+  [1,16,0,1,-26.5,32,0,0,0,0,7,0,-1,-0.5, ldraw_lib__rect2p(realsolid)],
 // 1 16 0 -6.5 -25 0 0 32 -0.5 -1 0 1 0 0 rect1.dat
-  [1,16,0,-6.5,-25,0,0,32,-0.5,-1,0,1,0,0, ldraw_lib__rect1()],
+  [1,16,0,-6.5,-25,0,0,32,-0.5,-1,0,1,0,0, ldraw_lib__rect1(realsolid)],
 // 4 16 9 -7 -9 32 -7 -24 -32 -7 -24 -9 -7 -9
   [4,16,9,-7,-9,32,-7,-24,-32,-7,-24,-9,-7,-9],
 // 5 24 0 -7.5 -29 0 0 -29 3.7855 -1.2522 -28.751 -3.7855 -1.2522 -28.751
@@ -80,5 +81,5 @@ function ldraw_lib__u9367() = [
   [4,16,15,19,-27,-15,19,-27,-15,13,-27,15,13,-27],
 ];
 module ldraw_lib__u9367(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__u9367(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__u9367(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__u9367(line=0.2);

@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <20460s03.scad>
-function ldraw_lib__s__20460s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__20460s02(realsolid=false) = [
 // 0 ~Minifig Leg Left Dual Mould Lower Half
 // 0 Name: s\20460s02.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -17,7 +18,7 @@ function ldraw_lib__s__20460s02() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\20460s03.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__20460s03()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__20460s03(realsolid)],
 // 0 // Toes
 // 4 16 19.5 28 -10 19.23 20 -10 1.5 20 -10 1.5 28 -10
   [4,16,19.5,28,-10,19.23,20,-10,1.5,20,-10,1.5,28,-10],
@@ -33,5 +34,5 @@ function ldraw_lib__s__20460s02() = [
   [4,16,19.5,28,10,18.9685,12.3998,9.3036,18.9731,12.4,-4,19.23,20,-4],
 ];
 module ldraw_lib__s__20460s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__20460s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__20460s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__20460s02(line=0.2);

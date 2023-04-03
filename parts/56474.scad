@@ -4,7 +4,8 @@ use <../p/4-4edge.scad>
 use <../p/4-4rin11.scad>
 use <../p/4-4ring4.scad>
 use <../p/4-4ring5.scad>
-function ldraw_lib__56474() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__56474(realsolid=false) = [
 // 0 ~Electric Mindstorms NXT Ultrasonic Sensor Flexible Insert
 // 0 Name: 56474.dat
 // 0 Author: Steve Bliss [sbliss]
@@ -20,47 +21,47 @@ function ldraw_lib__56474() = [
 // 
 // 
 // 1 16 0 0 0 11 0 0 0 1 0 0 0 11 4-4edge.dat
-  [1,16,0,0,0,11,0,0,0,1,0,0,0,11, ldraw_lib__4_4edge()],
+  [1,16,0,0,0,11,0,0,0,1,0,0,0,11, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 0 0 15 0 0 0 1 0 0 0 15 4-4edge.dat
-  [1,16,0,0,0,15,0,0,0,1,0,0,0,15, ldraw_lib__4_4edge()],
+  [1,16,0,0,0,15,0,0,0,1,0,0,0,15, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 8 0 15 0 0 0 1 0 0 0 15 4-4edge.dat
-  [1,16,0,8,0,15,0,0,0,1,0,0,0,15, ldraw_lib__4_4edge()],
+  [1,16,0,8,0,15,0,0,0,1,0,0,0,15, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 12 0 11 0 0 0 1 0 0 0 11 4-4edge.dat
-  [1,16,0,12,0,11,0,0,0,1,0,0,0,11, ldraw_lib__4_4edge()],
+  [1,16,0,12,0,11,0,0,0,1,0,0,0,11, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 8 0 18 0 0 0 1 0 0 0 18 4-4edge.dat
-  [1,16,0,8,0,18,0,0,0,1,0,0,0,18, ldraw_lib__4_4edge()],
+  [1,16,0,8,0,18,0,0,0,1,0,0,0,18, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 35 0 18 0 0 0 1 0 0 0 18 4-4edge.dat
-  [1,16,0,35,0,18,0,0,0,1,0,0,0,18, ldraw_lib__4_4edge()],
+  [1,16,0,35,0,18,0,0,0,1,0,0,0,18, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 35 0 15 0 0 0 1 0 0 0 15 4-4edge.dat
-  [1,16,0,35,0,15,0,0,0,1,0,0,0,15, ldraw_lib__4_4edge()],
+  [1,16,0,35,0,15,0,0,0,1,0,0,0,15, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 12 0 15 0 0 0 1 0 0 0 15 4-4edge.dat
-  [1,16,0,12,0,15,0,0,0,1,0,0,0,15, ldraw_lib__4_4edge()],
+  [1,16,0,12,0,15,0,0,0,1,0,0,0,15, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 35 0 -3 0 0 0 -1 0 0 0 3 4-4ring5.dat
-  [1,16,0,35,0,-3,0,0,0,-1,0,0,0,3, ldraw_lib__4_4ring5()],
+  [1,16,0,35,0,-3,0,0,0,-1,0,0,0,3, ldraw_lib__4_4ring5(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 12 0 15 0 0 0 23 0 0 0 15 4-4cyli.dat
-  [1,16,0,12,0,15,0,0,0,23,0,0,0,15, ldraw_lib__4_4cyli()],
+  [1,16,0,12,0,15,0,0,0,23,0,0,0,15, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 12 0 -1 0 0 0 -1 0 0 0 1 4-4rin11.dat
-  [1,16,0,12,0,-1,0,0,0,-1,0,0,0,1, ldraw_lib__4_4rin11()],
+  [1,16,0,12,0,-1,0,0,0,-1,0,0,0,1, ldraw_lib__4_4rin11(realsolid)],
 // 1 16 0 12 0 -3 0 0 0 -1 0 0 0 3 4-4ring4.dat
-  [1,16,0,12,0,-3,0,0,0,-1,0,0,0,3, ldraw_lib__4_4ring4()],
+  [1,16,0,12,0,-3,0,0,0,-1,0,0,0,3, ldraw_lib__4_4ring4(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 0 11 0 0 0 12 0 0 0 11 4-4cyli.dat
-  [1,16,0,0,0,11,0,0,0,12,0,0,0,11, ldraw_lib__4_4cyli()],
+  [1,16,0,0,0,11,0,0,0,12,0,0,0,11, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 8 0 18 0 0 0 27 0 0 0 18 4-4cyli.dat
-  [1,16,0,8,0,18,0,0,0,27,0,0,0,18, ldraw_lib__4_4cyli()],
+  [1,16,0,8,0,18,0,0,0,27,0,0,0,18, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 4-4rin11.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4rin11()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4rin11(realsolid)],
 // 1 16 0 0 0 3 0 0 0 1 0 0 0 3 4-4ring4.dat
-  [1,16,0,0,0,3,0,0,0,1,0,0,0,3, ldraw_lib__4_4ring4()],
+  [1,16,0,0,0,3,0,0,0,1,0,0,0,3, ldraw_lib__4_4ring4(realsolid)],
 // 1 16 0 0 0 15 0 0 0 8 0 0 0 15 4-4cyli.dat
-  [1,16,0,0,0,15,0,0,0,8,0,0,0,15, ldraw_lib__4_4cyli()],
+  [1,16,0,0,0,15,0,0,0,8,0,0,0,15, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 8 0 3 0 0 0 1 0 0 0 3 4-4ring5.dat
-  [1,16,0,8,0,3,0,0,0,1,0,0,0,3, ldraw_lib__4_4ring5()],
+  [1,16,0,8,0,3,0,0,0,1,0,0,0,3, ldraw_lib__4_4ring5(realsolid)],
 // 0
 ];
 module ldraw_lib__56474(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__56474(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__56474(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__56474(line=0.2);

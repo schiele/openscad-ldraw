@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__164555g() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__164555g(realsolid=false) = [
 // 0 Sticker  1.1 x  1.1 with White Banknote and Coins on Black Background
 // 0 Name: 164555g.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -18,7 +19,7 @@ function ldraw_lib__164555g() = [
 // 
 // 
 // 1 16 0 -0.25 0 11 0 0 0 0.25 0 0 0 11 box5-12.dat
-  [1,16,0,-0.25,0,11,0,0,0,0.25,0,0,0,11, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,11,0,0,0,0.25,0,0,0,11, ldraw_lib__box5_12(realsolid)],
 // 4 0 1.2 -0.25 6.4 0.7 -0.25 6.4 0.7 -0.25 6.1 1.2 -0.25 6.1
   [4,0,1.2,-0.25,6.4,0.7,-0.25,6.4,0.7,-0.25,6.1,1.2,-0.25,6.1],
 // 4 0 1.2 -0.25 6.1 0.7 -0.25 6.1 0.7 -0.25 5.5 1.2 -0.25 5.5
@@ -465,5 +466,5 @@ function ldraw_lib__164555g() = [
   [3,0,-11,-0.25,11,-7.7,-0.25,9.2,-7,-0.25,9.5],
 ];
 module ldraw_lib__164555g(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__164555g(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__164555g(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__164555g(line=0.2);

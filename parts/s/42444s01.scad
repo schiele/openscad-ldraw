@@ -2,7 +2,8 @@ use <../../lib.scad>
 use <../../p/2-4con2.scad>
 use <../../p/2-4disc.scad>
 use <../../p/2-4edge.scad>
-function ldraw_lib__s__42444s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__42444s01(realsolid=false) = [
 // 0 ~Minifig Hair Peaked Half
 // 0 Name: s\42444s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -21,11 +22,11 @@ function ldraw_lib__s__42444s01() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 2 0 0 0 4.33333 0 -6 0 -4.33333 0 0 2-4con2.dat
-  [1,16,0,2,0,0,0,4.33333,0,-6,0,-4.33333,0,0, ldraw_lib__2_4con2()],
+  [1,16,0,2,0,0,0,4.33333,0,-6,0,-4.33333,0,0, ldraw_lib__2_4con2(realsolid)],
 // 1 16 0 -4 0 0 0 8.66667 0 -1 0 -8.66667 0 0 2-4disc.dat
-  [1,16,0,-4,0,0,0,8.66667,0,-1,0,-8.66667,0,0, ldraw_lib__2_4disc()],
+  [1,16,0,-4,0,0,0,8.66667,0,-1,0,-8.66667,0,0, ldraw_lib__2_4disc(realsolid)],
 // 1 16 0 -4 0 0 0 8.66667 0 -1 0 -8.66667 0 0 2-4edge.dat
-  [1,16,0,-4,0,0,0,8.66667,0,-1,0,-8.66667,0,0, ldraw_lib__2_4edge()],
+  [1,16,0,-4,0,0,0,8.66667,0,-1,0,-8.66667,0,0, ldraw_lib__2_4edge(realsolid)],
 // 3 16 10.655 3.414 -8.416 9.778 3.568 -8.555 10.539 4.932 -7.744
   [3,16,10.655,3.414,-8.416,9.778,3.568,-8.555,10.539,4.932,-7.744],
 // 3 16 15.865 10.879 -3.774 13.909 14.796 -4.163 12.429 11.179 -3.798
@@ -2154,5 +2155,5 @@ function ldraw_lib__s__42444s01() = [
   [5,24,0,2,13,3.992,16.906,12.206,4.975,16.879,12.011,0,17.113,13],
 ];
 module ldraw_lib__s__42444s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__42444s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__42444s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__42444s01(line=0.2);

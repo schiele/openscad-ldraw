@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <4609.scad>
 use <4610.scad>
-function ldraw_lib__4610c01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4610c01(realsolid=false) = [
 // 0 Fabuland Telephone
 // 0 Name: 4610c01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -18,10 +19,10 @@ function ldraw_lib__4610c01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 4610.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4610()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4610(realsolid)],
 // 1 16 0 -38 15 -1 0 0 0 1 0 0 0 -1 4609.dat
-  [1,16,0,-38,15,-1,0,0,0,1,0,0,0,-1, ldraw_lib__4609()],
+  [1,16,0,-38,15,-1,0,0,0,1,0,0,0,-1, ldraw_lib__4609(realsolid)],
 ];
 module ldraw_lib__4610c01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4610c01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4610c01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4610c01(line=0.2);

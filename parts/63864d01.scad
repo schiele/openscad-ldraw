@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <6255869b.scad>
 use <63864.scad>
-function ldraw_lib__63864d01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__63864d01(realsolid=false) = [
 // 0 Tile  1 x  3 with "HEMI" on Red/Black Stripe Sticker
 // 0 Name: 63864d01.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -18,10 +19,10 @@ function ldraw_lib__63864d01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 63864.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__63864()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__63864(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 6255869b.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__6255869b()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__6255869b(realsolid)],
 ];
 module ldraw_lib__63864d01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__63864d01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__63864d01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__63864d01(line=0.2);

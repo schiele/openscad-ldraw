@@ -3,7 +3,8 @@ use <../p/4-4disc.scad>
 use <../p/4-4ndis.scad>
 use <s/3070baud.scad>
 use <s/3070bs01.scad>
-function ldraw_lib__3070bpud() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3070bpud(realsolid=false) = [
 // 0 Tile  1 x  1 with Silver "Ö" Pattern
 // 0 Name: 3070bpud.dat
 // 0 Author: Chris Dee [cwdee]
@@ -24,13 +25,13 @@ function ldraw_lib__3070bpud() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3070bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3070bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3070bs01(realsolid)],
 // 1 80 0 0 0 1 0 0 0 1 0 0 0 1 s\3070baud.dat
-  [1,80,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3070baud()],
+  [1,80,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3070baud(realsolid)],
 // 1 16 0 0 -1.125 4.125 0 0 0 1 0 0 0 4.675 4-4disc.dat
-  [1,16,0,0,-1.125,4.125,0,0,0,1,0,0,0,4.675, ldraw_lib__4_4disc()],
+  [1,16,0,0,-1.125,4.125,0,0,0,1,0,0,0,4.675, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 0 -1.125 5.625 0 0 0 1 0 0 0 6.375 4-4ndis.dat
-  [1,16,0,0,-1.125,5.625,0,0,0,1,0,0,0,6.375, ldraw_lib__4_4ndis()],
+  [1,16,0,0,-1.125,5.625,0,0,0,1,0,0,0,6.375, ldraw_lib__4_4ndis(realsolid)],
 // 3 16 -10 0 -10 -5.625 0 -1.125 -5.625 0 -7.5
   [3,16,-10,0,-10,-5.625,0,-1.125,-5.625,0,-7.5],
 // 4 16 -5.625 0 -1.125 -10 0 -10 -10 0 10 -5.625 0 5.25
@@ -63,5 +64,5 @@ function ldraw_lib__3070bpud() = [
   [4,16,10,0,10,0.5,0,7.5,-0.5,0,7.5,-10,0,10],
 ];
 module ldraw_lib__3070bpud(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3070bpud(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3070bpud(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3070bpud(line=0.2);

@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__87566s03() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__87566s03(realsolid=false) = [
 // 0 ~Minifig Mechanical Torso Cyborg - Body Half
 // 0 Name: s\87566s03.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -1471,5 +1472,5 @@ function ldraw_lib__s__87566s03() = [
   [5,24,9.736,-24.344,-6.857,8.178,-24.9165,-7.8275,7.033,-22.375,-7.255,9.5272,-24.6541,-7.0736],
 ];
 module ldraw_lib__s__87566s03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__87566s03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__87566s03(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__87566s03(line=0.2);

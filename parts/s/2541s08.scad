@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__2541s08() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__2541s08(realsolid=false) = [
 // 0 ~Boat Rigging  5 x 27 Obtuse Inner Joint
 // 0 Name: s\2541s08.dat
 // 0 Author: William Howard [WilliamH]
@@ -90,5 +91,5 @@ function ldraw_lib__s__2541s08() = [
   [2,24,0.699,-0.7071,0.7071,0.691,-0.691,0.718],
 ];
 module ldraw_lib__s__2541s08(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__2541s08(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__2541s08(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__2541s08(line=0.2);

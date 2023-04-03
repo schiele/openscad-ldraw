@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/1-4disc.scad>
 use <s/610s01.scad>
-function ldraw_lib__610p01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__610p01(realsolid=false) = [
 // 0 Baseplate 32 x 32 Road 8-Stud Straight with Road Pattern
 // 0 Name: 610p01.dat
 // 0 Author: Leonardo Zide [leozide]
@@ -20,7 +21,7 @@ function ldraw_lib__610p01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\610s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__610s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__610s01(realsolid)],
 // 4 16 316 0 320 156 0 320 156 0 -320 316 0 -320
   [4,16,316,0,320,156,0,320,156,0,-320,316,0,-320],
 // 4 16 124 0 320 124 0 -320 136 0 -320 136 0 320
@@ -84,14 +85,14 @@ function ldraw_lib__610p01() = [
 // 4 16 320 0 316 316 0 316 316 0 -316 320 0 -316
   [4,16,320,0,316,316,0,316,316,0,-316,320,0,-316],
 // 1 16 316 0 316 4 0 0 0 1 0 0 0 4 1-4disc.dat
-  [1,16,316,0,316,4,0,0,0,1,0,0,0,4, ldraw_lib__1_4disc()],
+  [1,16,316,0,316,4,0,0,0,1,0,0,0,4, ldraw_lib__1_4disc(realsolid)],
 // 1 16 -316 0 316 0 0 -4 0 1 0 4 0 0 1-4disc.dat
-  [1,16,-316,0,316,0,0,-4,0,1,0,4,0,0, ldraw_lib__1_4disc()],
+  [1,16,-316,0,316,0,0,-4,0,1,0,4,0,0, ldraw_lib__1_4disc(realsolid)],
 // 1 16 -316 0 -316 -4 0 0 0 1 0 0 0 -4 1-4disc.dat
-  [1,16,-316,0,-316,-4,0,0,0,1,0,0,0,-4, ldraw_lib__1_4disc()],
+  [1,16,-316,0,-316,-4,0,0,0,1,0,0,0,-4, ldraw_lib__1_4disc(realsolid)],
 // 1 16 316 0 -316 0 0 4 0 1 0 -4 0 0 1-4disc.dat
-  [1,16,316,0,-316,0,0,4,0,1,0,-4,0,0, ldraw_lib__1_4disc()],
+  [1,16,316,0,-316,0,0,4,0,1,0,-4,0,0, ldraw_lib__1_4disc(realsolid)],
 ];
 module ldraw_lib__610p01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__610p01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__610p01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__610p01(line=0.2);

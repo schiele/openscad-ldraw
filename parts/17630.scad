@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/4-4cylo.scad>
 use <../p/stud4o.scad>
-function ldraw_lib__17630() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__17630(realsolid=false) = [
 // 0 Minifig Hair Straight Cut with Short Ponytail
 // 0 Name: 17630.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -20,9 +21,9 @@ function ldraw_lib__17630() = [
 // 
 // 
 // 1 16 0 0 0 8 0 0 0 -1.8 0 0 0 8 4-4cylo.dat
-  [1,16,0,0,0,8,0,0,0,-1.8,0,0,0,8, ldraw_lib__4_4cylo()],
+  [1,16,0,0,0,8,0,0,0,-1.8,0,0,0,8, ldraw_lib__4_4cylo(realsolid)],
 // 1 16 0 -4 0 1 0 0 0 -1 0 0 0 1 stud4o.dat
-  [1,16,0,-4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4o()],
+  [1,16,0,-4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4o(realsolid)],
 // 3 16 9.78 -1 0.18 8 -1.8 0 8.11 -1.78 4.16
   [3,16,9.78,-1,0.18,8,-1.8,0,8.11,-1.78,4.16],
 // 3 16 8.37 -1.04 -4.98 8 -1.8 0 9.78 -1 0.18
@@ -4679,5 +4680,5 @@ function ldraw_lib__17630() = [
   [5,24,-8,13.33,14.22,-3.53,15.85,16.07,-8.1,13.56,14.03,-3.6,15,16.43],
 ];
 module ldraw_lib__17630(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__17630(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__17630(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__17630(line=0.2);

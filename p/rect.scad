@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__rect() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__rect(realsolid=false) = [
 // 0 Rectangle
 // 0 Name: rect.dat
 // 0 Author: James Jessiman
@@ -31,5 +32,5 @@ function ldraw_lib__rect() = [
 // 0
 ];
 module ldraw_lib__rect(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__rect(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__rect(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__rect(line=0.2);

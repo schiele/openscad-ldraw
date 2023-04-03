@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <4613.scad>
 use <u9167.scad>
-function ldraw_lib__4613c01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4613c01(realsolid=false) = [
 // 0 Vehicle Base 10 x  4 with Two Wheels Light Grey
 // 0 Name: 4613c01.dat
 // 0 Author: Alex Taylor [anathema]
@@ -20,12 +21,12 @@ function ldraw_lib__4613c01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 4613.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4613()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4613(realsolid)],
 // 1 7 46 30 0 0 0 -1 0 -1 0 -1 0 0 u9167.dat
-  [1,7,46,30,0,0,0,-1,0,-1,0,-1,0,0, ldraw_lib__u9167()],
+  [1,7,46,30,0,0,0,-1,0,-1,0,-1,0,0, ldraw_lib__u9167(realsolid)],
 // 1 7 -46 30 0 0 0 1 0 -1 0 1 0 0 u9167.dat
-  [1,7,-46,30,0,0,0,1,0,-1,0,1,0,0, ldraw_lib__u9167()],
+  [1,7,-46,30,0,0,0,1,0,-1,0,1,0,0, ldraw_lib__u9167(realsolid)],
 ];
 module ldraw_lib__4613c01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4613c01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4613c01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4613c01(line=0.2);

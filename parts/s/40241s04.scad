@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__40241s04() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__40241s04(realsolid=false) = [
 // 0 ~Door  1 x  4 x  6 with Window - Rivet
 // 0 Name: s\40241s04.dat
 // 0 Author: Andy Westrate [westrate]
@@ -160,5 +161,5 @@ function ldraw_lib__s__40241s04() = [
 // 0
 ];
 module ldraw_lib__s__40241s04(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__40241s04(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__40241s04(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__40241s04(line=0.2);

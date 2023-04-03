@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__30370ps2c() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__30370ps2c(realsolid=false) = [
 // 0 ~Minifig Helmet Star Wars Rebel Pilot - Rebel Logo Frame
 // 0 Name: s\30370ps2c.dat
 // 0 Author: Damien Roux [Darats]
@@ -367,5 +368,5 @@ function ldraw_lib__s__30370ps2c() = [
   [5,24,4.826,5.131,-15.519,7.112,2.87,-14.199,4.115,1.346,-15.164,10.262,5.461,-13.437],
 ];
 module ldraw_lib__s__30370ps2c(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__30370ps2c(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__30370ps2c(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__30370ps2c(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/4-4cylc.scad>
-function ldraw_lib__36083a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__36083a(realsolid=false) = [
 // 0 Minifig Weapon Web Effect  5L Narrow with Bars at Both Ends
 // 0 Name: 36083a.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -20,9 +21,9 @@ function ldraw_lib__36083a() = [
 // 
 // 
 // 1 16 0 0 0 4 0 0 0 -15 0 0 0 4 4-4cylc.dat
-  [1,16,0,0,0,4,0,0,0,-15,0,0,0,4, ldraw_lib__4_4cylc()],
+  [1,16,0,0,0,4,0,0,0,-15,0,0,0,4, ldraw_lib__4_4cylc(realsolid)],
 // 1 16 0 -100 0 4 0 0 0 15 0 0 0 4 4-4cylc.dat
-  [1,16,0,-100,0,4,0,0,0,15,0,0,0,4, ldraw_lib__4_4cylc()],
+  [1,16,0,-100,0,4,0,0,0,15,0,0,0,4, ldraw_lib__4_4cylc(realsolid)],
 // 4 16 -0.025 -15 4.219 -0.197 -16.842 4.219 2.381 -17.151 4.219 2.497 -15 4.219
   [4,16,-0.025,-15,4.219,-0.197,-16.842,4.219,2.381,-17.151,4.219,2.497,-15,4.219],
 // 4 16 -0.197 -16.842 4.219 -0.025 -15 4.219 -2.364 -15 4.219 -2.539 -16.732 4.219
@@ -4542,5 +4543,5 @@ function ldraw_lib__36083a() = [
   [5,24,-3.331,-29.49,3.97,-3.335,-30.878,4.7,-4.72,-30.307,4.706,-2.22,-29.72,3.676],
 ];
 module ldraw_lib__36083a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__36083a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__36083a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__36083a(line=0.2);

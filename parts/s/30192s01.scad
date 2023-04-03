@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__30192s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__30192s01(realsolid=false) = [
 // 0 ~Minifig Tool Grappling Hook Arm
 // 0 Name: s\30192s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -835,5 +836,5 @@ function ldraw_lib__s__30192s01() = [
   [5,24,-2.12,-24.96,17.58,-2.213,-26.42,17.19,-1.05,-25.62,18.21,-2.934,-25.58,16.31],
 ];
 module ldraw_lib__s__30192s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__30192s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__30192s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__30192s01(line=0.2);

@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/rect2p.scad>
 use <s/2297s01.scad>
-function ldraw_lib__2297() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2297(realsolid=false) = [
 // 0 ~Duplo Plant Bush Half Shell
 // 0 Name: 2297.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -18,13 +19,13 @@ function ldraw_lib__2297() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2297s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2297s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2297s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\2297s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__2297s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__2297s01(realsolid)],
 // 3 16 0 -4 -20.3481 20 -4 -16 -20 -4 -16
   [3,16,0,-4,-20.3481,20,-4,-16,-20,-4,-16],
 // 1 16 0 -2 -16 20 0 0 0 0 2 0 -1 0 rect2p.dat
-  [1,16,0,-2,-16,20,0,0,0,0,2,0,-1,0, ldraw_lib__rect2p()],
+  [1,16,0,-2,-16,20,0,0,0,0,2,0,-1,0, ldraw_lib__rect2p(realsolid)],
 // 3 16 0 0 -22.77 -20 0 -16 20 0 -16
   [3,16,0,0,-22.77,-20,0,-16,20,0,-16],
 // 5 24 0 -130.68 -6.632 0 -128.593 -12.467 -5.642 -128.657 -11.336 5.642 -128.657 -11.336
@@ -93,5 +94,5 @@ function ldraw_lib__2297() = [
   [5,24,0,-55.676,-33.587,0,-51.713,-35.019,-3.732,-55.106,-33.583,3.732,-55.106,-33.583],
 ];
 module ldraw_lib__2297(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2297(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2297(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2297(line=0.2);

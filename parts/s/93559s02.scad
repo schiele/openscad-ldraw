@@ -2,7 +2,8 @@ use <../../lib.scad>
 use <../../p/1-4cylh.scad>
 use <../../p/1-4cyli.scad>
 use <../../p/1-4edgh.scad>
-function ldraw_lib__s__93559s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__93559s02(realsolid=false) = [
 // 0 ~Minifig Hockey Stick with  1.1 L Bar - 0.25 Bar with Groove
 // 0 Name: s\93559s02.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -18,19 +19,19 @@ function ldraw_lib__s__93559s02() = [
 // 
 // 0 // Primitives
 // 1 16 0 -0.825 0 0 0 -4 0 0.825 0 -4 0 0 1-4cylh.dat
-  [1,16,0,-0.825,0,0,0,-4,0,0.825,0,-4,0,0, ldraw_lib__1_4cylh()],
+  [1,16,0,-0.825,0,0,0,-4,0,0.825,0,-4,0,0, ldraw_lib__1_4cylh(realsolid)],
 // 1 16 0 -0.825 0 -4 0 0 0 -1.045 0 0 0 -4 1-4cyli.dat
-  [1,16,0,-0.825,0,-4,0,0,0,-1.045,0,0,0,-4, ldraw_lib__1_4cyli()],
+  [1,16,0,-0.825,0,-4,0,0,0,-1.045,0,0,0,-4, ldraw_lib__1_4cyli(realsolid)],
 // 1 16 0 -1.87 0 -4 0 0 0 -0.825 0 0 0 -4 1-4cylh.dat
-  [1,16,0,-1.87,0,-4,0,0,0,-0.825,0,0,0,-4, ldraw_lib__1_4cylh()],
+  [1,16,0,-1.87,0,-4,0,0,0,-0.825,0,0,0,-4, ldraw_lib__1_4cylh(realsolid)],
 // 1 16 0 -0.11 0 0 0 -3.475 0 0.825 0 -3.475 0 0 1-4edgh.dat
-  [1,16,0,-0.11,0,0,0,-3.475,0,0.825,0,-3.475,0,0, ldraw_lib__1_4edgh()],
+  [1,16,0,-0.11,0,0,0,-3.475,0,0.825,0,-3.475,0,0, ldraw_lib__1_4edgh(realsolid)],
 // 1 16 0 -0.825 0 0 0 -4 0 0.825 0 -4 0 0 1-4edgh.dat
-  [1,16,0,-0.825,0,0,0,-4,0,0.825,0,-4,0,0, ldraw_lib__1_4edgh()],
+  [1,16,0,-0.825,0,0,0,-4,0,0.825,0,-4,0,0, ldraw_lib__1_4edgh(realsolid)],
 // 1 16 0 -2.695 0 0 0 -4 0 0.825 0 -4 0 0 1-4edgh.dat
-  [1,16,0,-2.695,0,0,0,-4,0,0.825,0,-4,0,0, ldraw_lib__1_4edgh()],
+  [1,16,0,-2.695,0,0,0,-4,0,0.825,0,-4,0,0, ldraw_lib__1_4edgh(realsolid)],
 // 1 16 0 -3.41 0 0 0 -3.475 0 0.825 0 -3.475 0 0 1-4edgh.dat
-  [1,16,0,-3.41,0,0,0,-3.475,0,0.825,0,-3.475,0,0, ldraw_lib__1_4edgh()],
+  [1,16,0,-3.41,0,0,0,-3.475,0,0.825,0,-3.475,0,0, ldraw_lib__1_4edgh(realsolid)],
 // 0 // Conditional lines
 // 5 24 -4 0 0 -4 -1.87 0 -3.6956 -0.825 1.5308 -3.6956 -0.825 -1.5308
   [5,24,-4,0,0,-4,-1.87,0,-3.6956,-0.825,1.5308,-3.6956,-0.825,-1.5308],
@@ -112,5 +113,5 @@ function ldraw_lib__s__93559s02() = [
   [5,24,0,-2.695,-4,0,-3.41,-3.475,-1.5308,-2.48875,-3.6956,1.5308,-2.90125,-3.6956],
 ];
 module ldraw_lib__s__93559s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__93559s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__93559s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__93559s02(line=0.2);

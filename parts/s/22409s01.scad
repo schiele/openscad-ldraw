@@ -3,7 +3,8 @@ use <../../p/4-4cylc.scad>
 use <../../p/4-4cylo.scad>
 use <../../p/4-4ndis.scad>
 use <../../p/4-4ring1.scad>
-function ldraw_lib__s__22409s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__22409s01(realsolid=false) = [
 // 0 ~Minifig Shield Pentagonal Jagged Half
 // 0 Name: s\22409s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -22,15 +23,15 @@ function ldraw_lib__s__22409s01() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 20 -30 -10 4 0 0 0 4.5 0 0 0 4 4-4cylo.dat
-  [1,16,20,-30,-10,4,0,0,0,4.5,0,0,0,4, ldraw_lib__4_4cylo()],
+  [1,16,20,-30,-10,4,0,0,0,4.5,0,0,0,4, ldraw_lib__4_4cylo(realsolid)],
 // 1 16 20 -30 -10 4 0 0 0 1 0 0 0 4 4-4ndis.dat
-  [1,16,20,-30,-10,4,0,0,0,1,0,0,0,4, ldraw_lib__4_4ndis()],
+  [1,16,20,-30,-10,4,0,0,0,1,0,0,0,4, ldraw_lib__4_4ndis(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 20 -19.5 -10 2.2 0 0 0 -6 0 0 0 2.2 4-4cylc.dat
-  [1,16,20,-19.5,-10,2.2,0,0,0,-6,0,0,0,2.2, ldraw_lib__4_4cylc()],
+  [1,16,20,-19.5,-10,2.2,0,0,0,-6,0,0,0,2.2, ldraw_lib__4_4cylc(realsolid)],
 // 1 16 20 -25.5 -10 2.2 0 0 0 1 0 0 0 2.2 4-4ring1.dat
-  [1,16,20,-25.5,-10,2.2,0,0,0,1,0,0,0,2.2, ldraw_lib__4_4ring1()],
+  [1,16,20,-25.5,-10,2.2,0,0,0,1,0,0,0,2.2, ldraw_lib__4_4ring1(realsolid)],
 // 3 16 22.199 7.843 -10 26.336 9.758 -11.42 22.519 11.467 -10
   [3,16,22.199,7.843,-10,26.336,9.758,-11.42,22.519,11.467,-10],
 // 3 16 22.519 11.467 -10 26.336 9.758 -11.42 25.885 11.771 -11.239
@@ -1035,5 +1036,5 @@ function ldraw_lib__s__22409s01() = [
   [5,24,6.974,35,-10,6.281,36.367,-6.124,6.84,36.293,-6.315,-6.974,35,-10],
 ];
 module ldraw_lib__s__22409s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__22409s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__22409s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__22409s01(line=0.2);

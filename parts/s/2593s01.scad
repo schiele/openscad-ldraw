@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__2593s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__2593s01(realsolid=false) = [
 // 0 ~Wheel 30 x 35 with Tread on Sidewall - 1/12 Tread Segment
 // 0 Name: s\2593s01.dat
 // 0 Author: Steve Bliss [sbliss]
@@ -661,5 +662,5 @@ function ldraw_lib__s__2593s01() = [
   [5,24,-8.697,-35.788,-32.83,-0.45,-36.827,-32.83,-7.9626,-36.604,-32,-2.164,-35.935,-33.46],
 ];
 module ldraw_lib__s__2593s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__2593s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__2593s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__2593s01(line=0.2);

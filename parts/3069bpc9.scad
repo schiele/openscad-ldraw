@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3069bs01.scad>
-function ldraw_lib__3069bpc9() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3069bpc9(realsolid=false) = [
 // 0 Tile  1 x  2 with Cell Phone with Face and  9 Buttons Pattern
 // 0 Name: 3069bpc9.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -20,7 +21,7 @@ function ldraw_lib__3069bpc9() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3069bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3069bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3069bs01(realsolid)],
 // 3 16 20 0 10 17.5 0 8.725 17.73 0 8.6793
   [3,16,20,0,10,17.5,0,8.725,17.73,0,8.6793],
 // 3 16 20 0 10 17.73 0 8.6793 17.924 0 8.5493
@@ -1975,5 +1976,5 @@ function ldraw_lib__3069bpc9() = [
   [4,272,-13.9,0,6.85,-13.657,0,7.2182,-13.803,0,7.3158,-13.975,0,7.35],
 ];
 module ldraw_lib__3069bpc9(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3069bpc9(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3069bpc9(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3069bpc9(line=0.2);

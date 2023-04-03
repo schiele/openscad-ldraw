@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__4614415f() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4614415f(realsolid=false) = [
 // 0 Sticker  3.7 x  1.7 with Flowers, Red LEGO Brick and "Make LEGO Models Not War"
 // 0 Name: 4614415f.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -17,7 +18,7 @@ function ldraw_lib__4614415f() = [
 // 
 // 
 // 1 16 0 -0.25 0 17.5 0 0 0 0.25 0 0 0 37.5 box5-12.dat
-  [1,16,0,-0.25,0,17.5,0,0,0,0.25,0,0,0,37.5, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,17.5,0,0,0,0.25,0,0,0,37.5, ldraw_lib__box5_12(realsolid)],
 // 
 // 4 0 -8.8 -0.25 28.2 -7.65 -0.25 28.2 -7.85 -0.25 29.2 -9 -0.25 29.6
   [4,0,-8.8,-0.25,28.2,-7.65,-0.25,28.2,-7.85,-0.25,29.2,-9,-0.25,29.6],
@@ -6465,5 +6466,5 @@ function ldraw_lib__4614415f() = [
   [3,14,17.5,-0.25,30,15.939,-0.25,25.308,16.001,-0.25,24.261],
 ];
 module ldraw_lib__4614415f(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4614415f(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4614415f(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4614415f(line=0.2);

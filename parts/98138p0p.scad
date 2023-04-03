@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4ering.scad>
 use <s/98138p0ps01.scad>
 use <s/98138s01.scad>
-function ldraw_lib__98138p0p() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__98138p0p(realsolid=false) = [
 // 0 Tile  1 x  1 Round with Bright Pink, Dark Pink and Magenta Faceted Jewel Pattern
 // 0 Name: 98138p0p.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -19,25 +20,25 @@ function ldraw_lib__98138p0p() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\98138s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01(realsolid)],
 // 1 16 0 0 0 9 0 0 0 1 0 0 0 9 4-4ering.dat
-  [1,16,0,0,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4ering()],
+  [1,16,0,0,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4ering(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\98138p0ps01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138p0ps01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138p0ps01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 -1 s\98138p0ps01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__98138p0ps01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__98138p0ps01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\98138p0ps01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138p0ps01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138p0ps01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 -1 s\98138p0ps01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__98138p0ps01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__98138p0ps01(realsolid)],
 // 1 16 0 0 0 0 0 -1 0 1 0 1 0 0 s\98138p0ps01.dat
-  [1,16,0,0,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__s__98138p0ps01()],
+  [1,16,0,0,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__s__98138p0ps01(realsolid)],
 // 1 16 0 0 0 0 0 1 0 1 0 1 0 0 s\98138p0ps01.dat
-  [1,16,0,0,0,0,0,1,0,1,0,1,0,0, ldraw_lib__s__98138p0ps01()],
+  [1,16,0,0,0,0,0,1,0,1,0,1,0,0, ldraw_lib__s__98138p0ps01(realsolid)],
 // 1 16 0 0 0 0 0 -1 0 1 0 -1 0 0 s\98138p0ps01.dat
-  [1,16,0,0,0,0,0,-1,0,1,0,-1,0,0, ldraw_lib__s__98138p0ps01()],
+  [1,16,0,0,0,0,0,-1,0,1,0,-1,0,0, ldraw_lib__s__98138p0ps01(realsolid)],
 // 1 16 0 0 0 0 0 1 0 1 0 -1 0 0 s\98138p0ps01.dat
-  [1,16,0,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__s__98138p0ps01()],
+  [1,16,0,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__s__98138p0ps01(realsolid)],
 // 4 26 -2.6474 0 -2.6474 -4.1012 0 -4.1012 -3.5308 0 -4.6014 -2.9 0 -5.0229
   [4,26,-2.6474,0,-2.6474,-4.1012,0,-4.1012,-3.5308,0,-4.6014,-2.9,0,-5.0229],
 // 4 26 -1.6508 0 -3.6435 -2.6474 0 -2.6474 -2.9 0 -5.0229 -2.3458 0 -5.3038
@@ -104,5 +105,5 @@ function ldraw_lib__98138p0p() = [
   [4,26,-3.7436,0,0,-3.7436,0,1.409,-5.7504,0,0.7571,-5.8,0,0],
 ];
 module ldraw_lib__98138p0p(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__98138p0p(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__98138p0p(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__98138p0p(line=0.2);

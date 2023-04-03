@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__003605a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__003605a(realsolid=false) = [
 // 0 Sticker  1.1 x  8 with "OIL COMPANY" Sign on Red Background
 // 0 Name: 003605a.dat
 // 0 Author: Willy Tschager [Holly-Wood]
@@ -20,7 +21,7 @@ function ldraw_lib__003605a() = [
 // 0 // Small box
 // 
 // 1 16 0 -.25 0 79.5 0 0 0 .25 0 0 0 11 box5-12.dat
-  [1,16,0,-.25,0,79.5,0,0,0,.25,0,0,0,11, ldraw_lib__box5_12()],
+  [1,16,0,-.25,0,79.5,0,0,0,.25,0,0,0,11, ldraw_lib__box5_12(realsolid)],
 // 
 // 0 // Background
 // 4 4 -64.062 -.25 -3.09 -64.496 -.25 0 -79.5 -.25 11 -79.5 -.25 -11
@@ -553,5 +554,5 @@ function ldraw_lib__003605a() = [
   [4,15,58.14,-.25,1.05,59.666,-.25,-1.89,64.272,-.25,7.5,61.01,-.25,7.5],
 ];
 module ldraw_lib__003605a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__003605a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__003605a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__003605a(line=0.2);

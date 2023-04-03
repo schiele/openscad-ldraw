@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/box2-5.scad>
-function ldraw_lib__s__3228s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__3228s01(realsolid=false) = [
 // 0 ~Train Track Rail Straight 4 Teeth
 // 0 Name: s\3228s01.dat
 // 0 Author: Tore Eriksson [Tore_Eriksson]
@@ -16,13 +17,13 @@ function ldraw_lib__s__3228s01() = [
 // 
 // 
 // 1 16 -3.75 1.001 0 0 -0.625 0.625 0 -0.5 -0.5 2 0 0 box2-5.dat
-  [1,16,-3.75,1.001,0,0,-0.625,0.625,0,-0.5,-0.5,2,0,0, ldraw_lib__box2_5()],
+  [1,16,-3.75,1.001,0,0,-0.625,0.625,0,-0.5,-0.5,2,0,0, ldraw_lib__box2_5(realsolid)],
 // 1 16 -1.25 1.001 0 0 -0.625 0.625 0 -0.5 -0.5 2 0 0 box2-5.dat
-  [1,16,-1.25,1.001,0,0,-0.625,0.625,0,-0.5,-0.5,2,0,0, ldraw_lib__box2_5()],
+  [1,16,-1.25,1.001,0,0,-0.625,0.625,0,-0.5,-0.5,2,0,0, ldraw_lib__box2_5(realsolid)],
 // 1 16 1.25 1.001 0 0 -0.625 0.625 0 -0.5 -0.5 2 0 0 box2-5.dat
-  [1,16,1.25,1.001,0,0,-0.625,0.625,0,-0.5,-0.5,2,0,0, ldraw_lib__box2_5()],
+  [1,16,1.25,1.001,0,0,-0.625,0.625,0,-0.5,-0.5,2,0,0, ldraw_lib__box2_5(realsolid)],
 // 1 16 3.75 1.001 0 0 -0.625 0.625 0 -0.5 -0.5 2 0 0 box2-5.dat
-  [1,16,3.75,1.001,0,0,-0.625,0.625,0,-0.5,-0.5,2,0,0, ldraw_lib__box2_5()],
+  [1,16,3.75,1.001,0,0,-0.625,0.625,0,-0.5,-0.5,2,0,0, ldraw_lib__box2_5(realsolid)],
 // 3 16 0 1 2 2.5 1 2 1.25 0 2
   [3,16,0,1,2,2.5,1,2,1.25,0,2],
 // 3 16 2.5 1 2 5 1 2 3.75 0 2
@@ -42,5 +43,5 @@ function ldraw_lib__s__3228s01() = [
 // 0
 ];
 module ldraw_lib__s__3228s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__3228s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__3228s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__3228s01(line=0.2);

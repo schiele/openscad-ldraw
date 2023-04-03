@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__29117bs01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__29117bs01(realsolid=false) = [
 // 0 ~Spoke Half for Wheel Rim 11 x 18 Front with  5 Split Spokes
 // 0 Name: s\29117bs01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -155,5 +156,5 @@ function ldraw_lib__s__29117bs01() = [
   [5,24,0,6.44,-3.04,0,6.1672,-3.3,1.1341,6.2441,-3,-1.0244,5.9631,-3.3],
 ];
 module ldraw_lib__s__29117bs01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__29117bs01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__29117bs01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__29117bs01(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__004848a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__004848a(realsolid=false) = [
 // 0 Sticker  0.7 x  3.9 with White "Harley-Davidson" on Black Background
 // 0 Name: 004848a.dat
 // 0 Author: Alex Taylor [anathema]
@@ -20,7 +21,7 @@ function ldraw_lib__004848a() = [
 // 
 // 0 // Font Swiss721 BT Bold
 // 1 16 0 -0.25 0 39 0 0 0 0.25 0 0 0 7 box5-12.dat
-  [1,16,0,-0.25,0,39,0,0,0,0.25,0,0,0,7, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,39,0,0,0,0.25,0,0,0,7, ldraw_lib__box5_12(realsolid)],
 // 4 15 -36 -0.25 -3.3 -34.61 -0.25 -3.3 -34.61 -0.25 -0.32 -36 -0.25 3.41
   [4,15,-36,-0.25,-3.3,-34.61,-0.25,-3.3,-34.61,-0.25,-0.32,-36,-0.25,3.41],
 // 3 15 -34.61 -0.25 3.41 -36 -0.25 3.41 -34.61 -0.25 0.91
@@ -1017,5 +1018,5 @@ function ldraw_lib__004848a() = [
   [3,0,0.12,-0.25,3.04,4.39,-0.25,1.83,5.03,-0.25,1.79],
 ];
 module ldraw_lib__004848a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__004848a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__004848a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__004848a(line=0.2);

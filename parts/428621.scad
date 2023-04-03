@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <4286.scad>
-function ldraw_lib__428621() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__428621(realsolid=false) = [
 // 0 ~_Slope Brick 33  3 x  1 Red (Obsolete)
 // 0 Name: 428621.dat
 // 0 Author: [PTadmin]
@@ -20,8 +21,8 @@ function ldraw_lib__428621() = [
 // 0 // colouring of the part (Red).
 // 
 // 1 4 0 0 0 1 0 0 0 1 0 0 0 1 4286.dat
-  [1,4,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4286()],
+  [1,4,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4286(realsolid)],
 ];
 module ldraw_lib__428621(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__428621(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__428621(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__428621(line=0.2);

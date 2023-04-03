@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__3068bph0s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__3068bph0s02(realsolid=false) = [
 // 0 ~Tile  2 x  2 with Groove with HP House Crest Pattern - HIghlight Colour 1
 // 0 Name: s\3068bph0s02.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -423,5 +424,5 @@ function ldraw_lib__s__3068bph0s02() = [
   [3,16,-10.96,0,-4.34,-10.36,0,-5.01,-10.41,0,-4.45],
 ];
 module ldraw_lib__s__3068bph0s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__3068bph0s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__3068bph0s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__3068bph0s02(line=0.2);

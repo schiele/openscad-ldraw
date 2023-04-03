@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/22385s01.scad>
-function ldraw_lib__22385p126() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__22385p126(realsolid=false) = [
 // 0 Tile  3 x  2 with Angled End with Nexo Power Shield Pattern - Magic Anti Evil Ultra Armor Upgrade
 // 0 Name: 22385p126.dat
 // 0 Author: Johann Eisner [technicbasics]
@@ -17,7 +18,7 @@ function ldraw_lib__22385p126() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\22385s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__22385s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__22385s01(realsolid)],
 // 4 120 0 0 -19.6 -13.2 0 -5.8 -15.6 0 -7.1 0 0 -22.8
   [4,120,0,0,-19.6,-13.2,0,-5.8,-15.6,0,-7.1,0,0,-22.8],
 // 4 288 0 0 -19.6 0 0 -15.6 -9.6 0 -5.8 -12 0 -5.8
@@ -1138,5 +1139,5 @@ function ldraw_lib__22385p126() = [
   [3,120,-7.54,0,-0.51,-9.6,0,-1,-7.71,0,-0.96],
 ];
 module ldraw_lib__22385p126(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__22385p126(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__22385p126(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__22385p126(line=0.2);

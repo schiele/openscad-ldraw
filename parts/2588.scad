@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/stud4o.scad>
-function ldraw_lib__2588() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2588(realsolid=false) = [
 // 0 Minifig Ghost Shroud
 // 0 Name: 2588.dat
 // 0 Author: Stan Isachenko [angmarec]
@@ -22,7 +23,7 @@ function ldraw_lib__2588() = [
 // 
 // 
 // 1 16 0 -4 0 1 0 0 0 -1 0 0 0 1 stud4o.dat
-  [1,16,0,-4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4o()],
+  [1,16,0,-4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4o(realsolid)],
 // 4 16 4.243 0 4.243 2.296 0 5.543 0 -0.001 12.875 6.437 -0.001 11.15
   [4,16,4.243,0,4.243,2.296,0,5.543,0,-0.001,12.875,6.437,-0.001,11.15],
 // 4 16 5.543 0 2.296 4.243 0 4.243 6.437 -0.001 11.15 11.15 -0.001 6.437
@@ -6763,5 +6764,5 @@ function ldraw_lib__2588() = [
   [5,24,-4.279,12.381,-16.877,-4.693,12.121,-16.43,-4.919,13.202,-17.057,-3.463,10.984,-16.648],
 ];
 module ldraw_lib__2588(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2588(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2588(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2588(line=0.2);

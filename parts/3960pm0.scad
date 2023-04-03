@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/3960s01.scad>
 use <s/3960s05.scad>
-function ldraw_lib__3960pm0() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3960pm0(realsolid=false) = [
 // 0 Dish  4 x  4 Inverted with Sand Blue Swirls Pattern
 // 0 Name: 3960pm0.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -18,9 +19,9 @@ function ldraw_lib__3960pm0() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3960s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3960s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3960s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3960s05.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3960s05()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3960s05(realsolid)],
 // 
 // 4 379 -3.07 7.36893 38.22 -3.14 7.46277 38.45 -5.0614 7.51387 38.45113 -4.96266 7.2112 37.70097
   [4,379,-3.07,7.36893,38.22,-3.14,7.46277,38.45,-5.0614,7.51387,38.45113,-4.96266,7.2112,37.70097],
@@ -4516,5 +4517,5 @@ function ldraw_lib__3960pm0() = [
   [3,16,30.85,5.98829,16.34,30.79,5.70844,14.72,31.86391,6,14.35193],
 ];
 module ldraw_lib__3960pm0(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3960pm0(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3960pm0(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3960pm0(line=0.2);

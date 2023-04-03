@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__4198678dc01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4198678dc01(realsolid=false) = [
 // 0 Sticker  1.2 x  1.9 with Silver Train Logo (Formed)
 // 0 Name: 4198678dc01.dat
 // 0 Author: Tim Lampmann [L4mpi]
@@ -236,5 +237,5 @@ function ldraw_lib__4198678dc01() = [
   [5,24,18.75,4.75,-60,-18.75,4.75,-60,0,2.35,-50,0,7.15,-68],
 ];
 module ldraw_lib__4198678dc01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4198678dc01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4198678dc01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4198678dc01(line=0.2);

@@ -2,7 +2,8 @@ use <../lib.scad>
 use <4613857b.scad>
 use <4613857c.scad>
 use <6239.scad>
-function ldraw_lib__6239d02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6239d02(realsolid=false) = [
 // 0 Tail Shuttle  2 x  6 x  4 with Eagle Head Sticker on Two Sides
 // 0 Name: 6239d02.dat
 // 0 Author: Christian Neumann [Wesley]
@@ -21,12 +22,12 @@ function ldraw_lib__6239d02() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 6239.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__6239()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__6239(realsolid)],
 // 1 16 2 -40 30 0 -1 0 0 0 -1 1 0 0 4613857b.dat
-  [1,16,2,-40,30,0,-1,0,0,0,-1,1,0,0, ldraw_lib__4613857b()],
+  [1,16,2,-40,30,0,-1,0,0,0,-1,1,0,0, ldraw_lib__4613857b(realsolid)],
 // 1 16 -2 -40 30 0 1 0 0 0 -1 -1 0 0 4613857c.dat
-  [1,16,-2,-40,30,0,1,0,0,0,-1,-1,0,0, ldraw_lib__4613857c()],
+  [1,16,-2,-40,30,0,1,0,0,0,-1,-1,0,0, ldraw_lib__4613857c(realsolid)],
 ];
 module ldraw_lib__6239d02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6239d02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6239d02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6239d02(line=0.2);

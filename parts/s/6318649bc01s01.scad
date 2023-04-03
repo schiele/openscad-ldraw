@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__6318649bc01s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__6318649bc01s01(realsolid=false) = [
 // 0 ~Sticker  0.6 x  8.5 with Dark Bluish Grey Lines on Black Background (Formed) - Half
 // 0 Name: s\6318649bc01s01.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -361,5 +362,5 @@ function ldraw_lib__s__6318649bc01s01() = [
   [5,24,0,-60.25,-148.5,0,-60.25,-149.5,7.8626,-59.7319,-149.5,-7.8626,-59.7319,-149.5],
 ];
 module ldraw_lib__s__6318649bc01s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__6318649bc01s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__6318649bc01s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__6318649bc01s01(line=0.2);

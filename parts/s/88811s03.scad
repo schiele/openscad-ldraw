@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__88811s03() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__88811s03(realsolid=false) = [
 // 0 ~Minifig Weapon Bladed Claw Half
 // 0 Name: s\88811s03.dat
 // 0 Author: Rolf Osterthun [Rolf]
@@ -389,5 +390,5 @@ function ldraw_lib__s__88811s03() = [
   [5,24,6.722,-11.25,-18.976,6.306,-12.2,-20.729,6.297,-11.25,-20.761,6.754,-12.594,-19.019],
 ];
 module ldraw_lib__s__88811s03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__88811s03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__88811s03(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__88811s03(line=0.2);

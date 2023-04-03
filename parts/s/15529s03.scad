@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__15529s03() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__15529s03(realsolid=false) = [
 // 0 ~Minifig Head Simpsons Ned Flanders Moustache Half
 // 0 Name: s\15529s03.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -791,5 +792,5 @@ function ldraw_lib__s__15529s03() = [
   [5,24,6.4168,-13.0861,-18.3485,7.6886,-13.2517,-17.4884,6.8115,-15.066,-16.3157,7.3868,-11.8552,-18.675],
 ];
 module ldraw_lib__s__15529s03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__15529s03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__15529s03(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__15529s03(line=0.2);

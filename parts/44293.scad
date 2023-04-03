@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <u9030.scad>
 use <u9031.scad>
-function ldraw_lib__44293() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__44293(realsolid=false) = [
 // 0 Wheel 14 x 29 Smooth with Black Tyre (Complete)
 // 0 Name: 44293.dat
 // 0 Author: Sven Moritz Hein [smhltec]
@@ -19,11 +20,11 @@ function ldraw_lib__44293() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 u9030.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9030()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9030(realsolid)],
 // 1 256 0 0 0 1 0 0 0 1 0 0 0 1 u9031.dat
-  [1,256,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9031()],
+  [1,256,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9031(realsolid)],
 // 
 ];
 module ldraw_lib__44293(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__44293(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__44293(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__44293(line=0.2);

@@ -3,7 +3,8 @@ use <../p/4-4cylc.scad>
 use <../p/4-4ring1.scad>
 use <../p/4-4ring3.scad>
 use <s/243s01.scad>
-function ldraw_lib__u9550() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__u9550(realsolid=false) = [
 // 0 ~Train Wheel Spoked with Cylindrical Rim with 6 LDU Axle Hole
 // 0 Name: u9550.dat
 // 0 Author: Willy Tschager [Holly-Wood]
@@ -19,18 +20,18 @@ function ldraw_lib__u9550() = [
 // 
 // 0 // Subpart
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\243s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__243s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__243s01(realsolid)],
 // 
 // 0 // Axle connector
 // 1 16 0 0 10 3 0 0 0 0 -3 0 -1 0 4-4ring1.dat
-  [1,16,0,0,10,3,0,0,0,0,-3,0,-1,0, ldraw_lib__4_4ring1()],
+  [1,16,0,0,10,3,0,0,0,0,-3,0,-1,0, ldraw_lib__4_4ring1(realsolid)],
 // 1 16 0 0 10 2 0 0 0 0 -2 0 -1 0 4-4ring3.dat
-  [1,16,0,0,10,2,0,0,0,0,-2,0,-1,0, ldraw_lib__4_4ring3()],
+  [1,16,0,0,10,2,0,0,0,0,-2,0,-1,0, ldraw_lib__4_4ring3(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 -8 -3 0 0 0 0 3 0 18 0 4-4cylc.dat
-  [1,16,0,0,-8,-3,0,0,0,0,3,0,18,0, ldraw_lib__4_4cylc()],
+  [1,16,0,0,-8,-3,0,0,0,0,3,0,18,0, ldraw_lib__4_4cylc(realsolid)],
 ];
 module ldraw_lib__u9550(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__u9550(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__u9550(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__u9550(line=0.2);

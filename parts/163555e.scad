@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__163555e() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__163555e(realsolid=false) = [
 // 0 Sticker  1.9 x  7.9 with Airport Shuttle Logo
 // 0 Name: 163555e.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -18,7 +19,7 @@ function ldraw_lib__163555e() = [
 // 
 // 
 // 1 16 0 -0.25 0 79 0 0 0 0.25 0 0 0 19 box5-12.dat
-  [1,16,0,-0.25,0,79,0,0,0,0.25,0,0,0,19, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,79,0,0,0,0.25,0,0,0,19, ldraw_lib__box5_12(realsolid)],
 // 0 BFC NOCLIP
   [0,"BFC","NOCLIP"],
 // 4 15 1.32 -0.25 10.47 0 -0.25 10.56 -1.32 -0.25 10.47 -2.62 -0.25 10.22
@@ -2021,5 +2022,5 @@ function ldraw_lib__163555e() = [
   [3,16,79,-0.25,19,0,-0.25,16,2.09,-0.25,15.86],
 ];
 module ldraw_lib__163555e(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__163555e(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__163555e(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__163555e(line=0.2);

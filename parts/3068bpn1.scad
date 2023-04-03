@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3068bs01.scad>
-function ldraw_lib__3068bpn1() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3068bpn1(realsolid=false) = [
 // 0 Tile  2 x  2 with Map, Pagoda and Ship Pattern
 // 0 Name: 3068bpn1.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -17,7 +18,7 @@ function ldraw_lib__3068bpn1() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3068bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3068bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3068bs01(realsolid)],
 // 4 0 -13.8 0 18.7 -18.6 0 18.7 -18.15 0 18.05 -14.1 0 18.1
   [4,0,-13.8,0,18.7,-18.6,0,18.7,-18.15,0,18.05,-14.1,0,18.1],
 // 4 0 -13.4 0 18.5 -13.8 0 18.7 -14.1 0 18.1 -13.5 0 17.85
@@ -2714,5 +2715,5 @@ function ldraw_lib__3068bpn1() = [
   [4,212,11.75,0,-11.05,12.3,0,-11.9,12.85,0,-11.85,13.05,0,-10.95],
 ];
 module ldraw_lib__3068bpn1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3068bpn1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3068bpn1(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3068bpn1(line=0.2);

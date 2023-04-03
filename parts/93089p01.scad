@@ -3,7 +3,8 @@ use <s/93089p01s01.scad>
 use <s/93089p01s02.scad>
 use <s/93089p01s03.scad>
 use <s/93089s01.scad>
-function ldraw_lib__93089p01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__93089p01(realsolid=false) = [
 // 0 Animal Cat Standing Looking Left with Yellowish Green Eyes and Dark Bluish Grey Stripes Pattern
 // 0 Name: 93089p01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -22,11 +23,11 @@ function ldraw_lib__93089p01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\93089s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__93089s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__93089s01(realsolid)],
 // 
 // 0 // Face
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\93089p01s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__93089p01s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__93089p01s01(realsolid)],
 // 4 15 9.576 -32.74 -12.3 9.782 -31.96 -11.77 9.414 -32.82 -11.51 9.302 -33.13 -11.54
   [4,15,9.576,-32.74,-12.3,9.782,-31.96,-11.77,9.414,-32.82,-11.51,9.302,-33.13,-11.54],
 // 4 15 9.576 -32.74 -12.3 9.302 -33.13 -11.54 9.136 -33.814 -12.093 9.387 -33.488 -12.855
@@ -195,9 +196,9 @@ function ldraw_lib__93089p01() = [
   [3,326,9.959,-31.82,-12.51,10.088,-31.5,-12.56,10.201,-31.13,-12.4],
 // 0 // Tail and head stripes
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\93089p01s02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__93089p01s02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__93089p01s02(realsolid)],
 // 1 72 0 0 0 1 0 0 0 1 0 0 0 1 s\93089p01s03.dat
-  [1,72,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__93089p01s03()],
+  [1,72,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__93089p01s03(realsolid)],
 // 3 16 0.593 -47.408 17.574 1.175 -47.125 17.605 2.086 -46.694 17.768
   [3,16,0.593,-47.408,17.574,1.175,-47.125,17.605,2.086,-46.694,17.768],
 // 3 72 2.481 -46.517 17.927 0.593 -47.408 17.574 2.086 -46.694 17.768
@@ -228,5 +229,5 @@ function ldraw_lib__93089p01() = [
   [3,72,-1.34,-47.004,18.929,0.1,-47.434,19.052,-0.975,-47.117,18.995],
 ];
 module ldraw_lib__93089p01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__93089p01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__93089p01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__93089p01(line=0.2);

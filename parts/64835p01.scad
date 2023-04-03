@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/64835s01.scad>
-function ldraw_lib__64835p01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__64835p01(realsolid=false) = [
 // 0 ~Animal Cow Head Left with Blaze, Muzzle and Eye Pattern
 // 0 Name: 64835p01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -17,7 +18,7 @@ function ldraw_lib__64835p01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\64835s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__64835s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__64835s01(realsolid)],
 // 0 // Blaze
 // 3 15 2.01028 -17.8786 -51.5713 0 -16.913 -52.275 3.6 -17.3 -51.7825
   [3,15,2.01028,-17.8786,-51.5713,0,-16.913,-52.275,3.6,-17.3,-51.7825],
@@ -683,5 +684,5 @@ function ldraw_lib__64835p01() = [
 // 0
 ];
 module ldraw_lib__64835p01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__64835p01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__64835p01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__64835p01(line=0.2);

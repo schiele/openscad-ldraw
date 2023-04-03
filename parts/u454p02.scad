@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/u454p02s01.scad>
 use <s/u454s01.scad>
-function ldraw_lib__u454p02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__u454p02(realsolid=false) = [
 // 0 Signpost Slanted Cantilever with Suspended Sign with Shell Logo 1955 Pattern
 // 0 Name: u454p02.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -20,12 +21,12 @@ function ldraw_lib__u454p02() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\u454s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__u454s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__u454s01(realsolid)],
 // 1 16 1 -145 -44 1 0 0 0 1 0 0 0 1 s\u454p02s01.dat
-  [1,16,1,-145,-44,1,0,0,0,1,0,0,0,1, ldraw_lib__s__u454p02s01()],
+  [1,16,1,-145,-44,1,0,0,0,1,0,0,0,1, ldraw_lib__s__u454p02s01(realsolid)],
 // 1 16 -1 -145 -44 -1 0 0 0 1 0 0 0 -1 s\u454p02s01.dat
-  [1,16,-1,-145,-44,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__u454p02s01()],
+  [1,16,-1,-145,-44,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__u454p02s01(realsolid)],
 ];
 module ldraw_lib__u454p02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__u454p02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__u454p02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__u454p02(line=0.2);

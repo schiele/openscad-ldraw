@@ -4,7 +4,8 @@ use <../p/1-4con2.scad>
 use <../p/1-4cylo.scad>
 use <../p/1-4edge.scad>
 use <../p/stud4o.scad>
-function ldraw_lib__21268() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__21268(realsolid=false) = [
 // 0 Minifig Hair Short Swept Back with Sideburns and Widow's Peak
 // 0 Name: 21268.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -23,19 +24,19 @@ function ldraw_lib__21268() = [
 // 
 // 
 // 1 16 0 0 0 -5.65685 0 5.65685 0 -2.4 0 5.65685 0 5.65685 1-4cylo.dat
-  [1,16,0,0,0,-5.65685,0,5.65685,0,-2.4,0,5.65685,0,5.65685, ldraw_lib__1_4cylo()],
+  [1,16,0,0,0,-5.65685,0,5.65685,0,-2.4,0,5.65685,0,5.65685, ldraw_lib__1_4cylo(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -2 0 -2.82843 0 2.82843 0 -0.4 0 2.82843 0 2.82843 1-4con2.dat
-  [1,16,0,-2,0,-2.82843,0,2.82843,0,-0.4,0,2.82843,0,2.82843, ldraw_lib__1_4con2()],
+  [1,16,0,-2,0,-2.82843,0,2.82843,0,-0.4,0,2.82843,0,2.82843, ldraw_lib__1_4con2(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 4 0 -0.70711 0 0.70711 0 -6 0 0.70711 0 0.70711 1-4con12.dat
-  [1,16,0,4,0,-0.70711,0,0.70711,0,-6,0,0.70711,0,0.70711, ldraw_lib__1_4con12()],
+  [1,16,0,4,0,-0.70711,0,0.70711,0,-6,0,0.70711,0,0.70711, ldraw_lib__1_4con12(realsolid)],
 // 1 16 0 -2 0 -8.48528 0 8.48528 0 -1 0 8.48528 0 8.48528 1-4edge.dat
-  [1,16,0,-2,0,-8.48528,0,8.48528,0,-1,0,8.48528,0,8.48528, ldraw_lib__1_4edge()],
+  [1,16,0,-2,0,-8.48528,0,8.48528,0,-1,0,8.48528,0,8.48528, ldraw_lib__1_4edge(realsolid)],
 // 1 16 0 -5 0 -1 0 0 0 -1.25 0 0 0 1 stud4o.dat
-  [1,16,0,-5,0,-1,0,0,0,-1.25,0,0,0,1, ldraw_lib__stud4o()],
+  [1,16,0,-5,0,-1,0,0,0,-1.25,0,0,0,1, ldraw_lib__stud4o(realsolid)],
 // 3 16 -13.446 14.57 7.591 -12.032 16.702 8.355 -10.959 14.979 6.992
   [3,16,-13.446,14.57,7.591,-12.032,16.702,8.355,-10.959,14.979,6.992],
 // 3 16 -10.959 14.979 6.992 -12.032 16.702 8.355 -10.437 16.705 7.757
@@ -6198,5 +6199,5 @@ function ldraw_lib__21268() = [
   [5,24,3.985,-9.141,-3.226,6.095,-8.296,-2.996,4.022,-9.153,-1.135,4.343,-8.063,-4.523],
 ];
 module ldraw_lib__21268(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__21268(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__21268(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__21268(line=0.2);

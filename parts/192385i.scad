@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4ndis.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__192385i() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__192385i(realsolid=false) = [
 // 0 Sticker  2.3 x  5.9 with Steering Wheel and Yellow Car
 // 0 Name: 192385i.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -19,15 +20,15 @@ function ldraw_lib__192385i() = [
 // 
 // 
 // 1 16 0 -0.25 0 59 0 0 0 0.25 0 0 0 23 box5-12.dat
-  [1,16,0,-0.25,0,59,0,0,0,0.25,0,0,0,23, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,59,0,0,0,0.25,0,0,0,23, ldraw_lib__box5_12(realsolid)],
 // 1 14 -35.7 -0.25 0 3.5 0 0 0 1 0 0 0 3.5 4-4disc.dat
-  [1,14,-35.7,-0.25,0,3.5,0,0,0,1,0,0,0,3.5, ldraw_lib__4_4disc()],
+  [1,14,-35.7,-0.25,0,3.5,0,0,0,1,0,0,0,3.5, ldraw_lib__4_4disc(realsolid)],
 // 1 0 -35.7 -0.25 0 3.5 0 0 0 1 0 0 0 3.5 4-4ndis.dat
-  [1,0,-35.7,-0.25,0,3.5,0,0,0,1,0,0,0,3.5, ldraw_lib__4_4ndis()],
+  [1,0,-35.7,-0.25,0,3.5,0,0,0,1,0,0,0,3.5, ldraw_lib__4_4ndis(realsolid)],
 // 1 4 9 -0.25 -14.6 2.4 0 0 0 1 0 0 0 2.4 4-4disc.dat
-  [1,4,9,-0.25,-14.6,2.4,0,0,0,1,0,0,0,2.4, ldraw_lib__4_4disc()],
+  [1,4,9,-0.25,-14.6,2.4,0,0,0,1,0,0,0,2.4, ldraw_lib__4_4disc(realsolid)],
 // 1 4 42.3 -0.25 -8.4 2.2 0 0 0 1 0 0 0 2.2 4-4disc.dat
-  [1,4,42.3,-0.25,-8.4,2.2,0,0,0,1,0,0,0,2.2, ldraw_lib__4_4disc()],
+  [1,4,42.3,-0.25,-8.4,2.2,0,0,0,1,0,0,0,2.2, ldraw_lib__4_4disc(realsolid)],
 // 4 1 -11.5 -0.25 23 -14.5 -0.25 23 -14.5 -0.25 -23 -11.5 -0.25 -23
   [4,1,-11.5,-0.25,23,-14.5,-0.25,23,-14.5,-0.25,-23,-11.5,-0.25,-23],
 // 4 0 -37.6 -0.25 -5.7 -37.66 -0.25 -14.87 -33.74 -0.25 -14.87 -33.8 -0.25 -5.7
@@ -1266,5 +1267,5 @@ function ldraw_lib__192385i() = [
   [4,15,14.9,-0.25,11.9,12.8,-0.25,15.4,11.3,-0.25,15.4,14.9,-0.25,10.9],
 ];
 module ldraw_lib__192385i(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__192385i(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__192385i(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__192385i(line=0.2);

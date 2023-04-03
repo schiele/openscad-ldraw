@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <stug7-2x2.scad>
-function ldraw_lib__stug7_6x6() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__stug7_6x6(realsolid=false) = [
 // 0 Stud Duplo Open Group  6 x  6
 // 0 Name: stug7-6x6.dat
 // 0 Author: Rolf Osterthun [Rolf]
@@ -15,24 +16,24 @@ function ldraw_lib__stug7_6x6() = [
 // 
 // 
 // 1 16 80 0 0 1 0 0 0 1 0 0 0 1 stug7-2x2.dat
-  [1,16,80,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug7_2x2()],
+  [1,16,80,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug7_2x2(realsolid)],
 // 1 16 80 0 80 1 0 0 0 1 0 0 0 1 stug7-2x2.dat
-  [1,16,80,0,80,1,0,0,0,1,0,0,0,1, ldraw_lib__stug7_2x2()],
+  [1,16,80,0,80,1,0,0,0,1,0,0,0,1, ldraw_lib__stug7_2x2(realsolid)],
 // 1 16 80 0 -80 1 0 0 0 1 0 0 0 1 stug7-2x2.dat
-  [1,16,80,0,-80,1,0,0,0,1,0,0,0,1, ldraw_lib__stug7_2x2()],
+  [1,16,80,0,-80,1,0,0,0,1,0,0,0,1, ldraw_lib__stug7_2x2(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 stug7-2x2.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug7_2x2()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug7_2x2(realsolid)],
 // 1 16 0 0 80 1 0 0 0 1 0 0 0 1 stug7-2x2.dat
-  [1,16,0,0,80,1,0,0,0,1,0,0,0,1, ldraw_lib__stug7_2x2()],
+  [1,16,0,0,80,1,0,0,0,1,0,0,0,1, ldraw_lib__stug7_2x2(realsolid)],
 // 1 16 0 0 -80 1 0 0 0 1 0 0 0 1 stug7-2x2.dat
-  [1,16,0,0,-80,1,0,0,0,1,0,0,0,1, ldraw_lib__stug7_2x2()],
+  [1,16,0,0,-80,1,0,0,0,1,0,0,0,1, ldraw_lib__stug7_2x2(realsolid)],
 // 1 16 -80 0 0 1 0 0 0 1 0 0 0 1 stug7-2x2.dat
-  [1,16,-80,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug7_2x2()],
+  [1,16,-80,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug7_2x2(realsolid)],
 // 1 16 -80 0 80 1 0 0 0 1 0 0 0 1 stug7-2x2.dat
-  [1,16,-80,0,80,1,0,0,0,1,0,0,0,1, ldraw_lib__stug7_2x2()],
+  [1,16,-80,0,80,1,0,0,0,1,0,0,0,1, ldraw_lib__stug7_2x2(realsolid)],
 // 1 16 -80 0 -80 1 0 0 0 1 0 0 0 1 stug7-2x2.dat
-  [1,16,-80,0,-80,1,0,0,0,1,0,0,0,1, ldraw_lib__stug7_2x2()],
+  [1,16,-80,0,-80,1,0,0,0,1,0,0,0,1, ldraw_lib__stug7_2x2(realsolid)],
 ];
 module ldraw_lib__stug7_6x6(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__stug7_6x6(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__stug7_6x6(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__stug7_6x6(line=0.2);

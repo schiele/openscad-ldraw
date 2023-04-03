@@ -5,7 +5,8 @@ use <../p/4-4edge.scad>
 use <../p/4-4ring8.scad>
 use <s/41535s01.scad>
 use <../p/stud4a.scad>
-function ldraw_lib__41535() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__41535(realsolid=false) = [
 // 0 Animal Dragon Baby (Needs Work)
 // 0 Name: 41535.dat
 // 0 Author: Stan Isachenko [angmarec]
@@ -27,25 +28,25 @@ function ldraw_lib__41535() = [
 // 0 // Needs Work: Shape is quite rough still.
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\41535s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__41535s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__41535s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\41535s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__41535s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__41535s01(realsolid)],
 // 1 16 0 -5.25 0 1 0 0 0 -1.3125 0 0 0 -1 stud4a.dat
-  [1,16,0,-5.25,0,1,0,0,0,-1.3125,0,0,0,-1, ldraw_lib__stud4a()],
+  [1,16,0,-5.25,0,1,0,0,0,-1.3125,0,0,0,-1, ldraw_lib__stud4a(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -5.25 0 6 0 0 0 -22.25 0 0 0 6 4-4cyli.dat
-  [1,16,0,-5.25,0,6,0,0,0,-22.25,0,0,0,6, ldraw_lib__4_4cyli()],
+  [1,16,0,-5.25,0,6,0,0,0,-22.25,0,0,0,6, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 -5.25 0 8 0 0 0 -1 0 0 0 8 4-4edge.dat
-  [1,16,0,-5.25,0,8,0,0,0,-1,0,0,0,8, ldraw_lib__4_4edge()],
+  [1,16,0,-5.25,0,8,0,0,0,-1,0,0,0,8, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 -5.25 0 1 0 0 0 -1 0 0 0 1 4-4ring8.dat
-  [1,16,0,-5.25,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__4_4ring8()],
+  [1,16,0,-5.25,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__4_4ring8(realsolid)],
 // 1 16 0 -27.499 0 6 0 0 0 -1 0 0 0 6 4-4disc.dat
-  [1,16,0,-27.499,0,6,0,0,0,-1,0,0,0,6, ldraw_lib__4_4disc()],
+  [1,16,0,-27.499,0,6,0,0,0,-1,0,0,0,6, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 -27.499 0 6 0 0 0 1 0 0 0 6 4-4edge.dat
-  [1,16,0,-27.499,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4edge()],
+  [1,16,0,-27.499,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 0 0 6 0 0 0 1 0 0 0 6 4-4edge.dat
-  [1,16,0,0,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4edge()],
+  [1,16,0,0,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4edge(realsolid)],
 // 5 24 0 -54.136 -18.47 0 -52.005 -21.705 1.055 -52.233 -21.206 -1.055 -52.233 -21.206
   [5,24,0,-54.136,-18.47,0,-52.005,-21.705,1.055,-52.233,-21.206,-1.055,-52.233,-21.206],
 // 5 24 0 -52.005 -21.705 0 -49.878 -23.388 1.3 -51.258 -21.708 -1.3 -51.258 -21.708
@@ -200,5 +201,5 @@ function ldraw_lib__41535() = [
   [5,24,0,-45.386,-24.525,0,-45.086,-24.125,2.088,-45.168,-23.139,-2.088,-45.168,-23.139],
 ];
 module ldraw_lib__41535(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__41535(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__41535(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__41535(line=0.2);

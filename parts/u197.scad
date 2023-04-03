@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__u197() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__u197(realsolid=false) = [
 // 0 Maxifig Hair Short
 // 0 Name: u197.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -7853,5 +7854,5 @@ function ldraw_lib__u197() = [
   [5,24,-18.74,1.89,15.5,-18.74,-6.68,14.37,-13.97,-3.06,19.96,-22.13,-1.75,10.07],
 ];
 module ldraw_lib__u197(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__u197(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__u197(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__u197(line=0.2);

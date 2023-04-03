@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__48__2_3ring7() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__48__2_3ring7(realsolid=false) = [
 // 0 Hi-Res Ring  7 x 0.6667
 // 0 Name: 48\2-3ring7.dat
 // 0 Author: Alex Taylor [anathema]
@@ -80,5 +81,5 @@ function ldraw_lib__48__2_3ring7() = [
 // 0
 ];
 module ldraw_lib__48__2_3ring7(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__48__2_3ring7(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__48__2_3ring7(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__48__2_3ring7(line=0.2);

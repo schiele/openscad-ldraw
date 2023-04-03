@@ -4,7 +4,8 @@ use <../p/4-4disc.scad>
 use <../p/box3u2p.scad>
 use <../p/stud2.scad>
 use <../p/stud4.scad>
-function ldraw_lib__98549() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__98549(realsolid=false) = [
 // 0 Tile  2 x  2 with Bar and Stud with Stop Ring
 // 0 Name: 98549.dat
 // 0 Author: Rolf Osterthun [Rolf]
@@ -127,28 +128,28 @@ function ldraw_lib__98549() = [
   [4,16,20,0,20,5,0,-19.25,5.417,0,-20,20,0,-20],
 // 
 // 1 16 0 -4.45 0 6.125 0 0 0 4.45 0 0 0 6.125 4-4cylo.dat
-  [1,16,0,-4.45,0,6.125,0,0,0,4.45,0,0,0,6.125, ldraw_lib__4_4cylo()],
+  [1,16,0,-4.45,0,6.125,0,0,0,4.45,0,0,0,6.125, ldraw_lib__4_4cylo(realsolid)],
 // 1 16 0 -4.45 0 6.125 0 0 0 1 0 0 0 6.125 4-4disc.dat
-  [1,16,0,-4.45,0,6.125,0,0,0,1,0,0,0,6.125, ldraw_lib__4_4disc()],
+  [1,16,0,-4.45,0,6.125,0,0,0,1,0,0,0,6.125, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 -109 0 4 0 0 0 104.55 0 0 0 4 4-4cylo.dat
-  [1,16,0,-109,0,4,0,0,0,104.55,0,0,0,4, ldraw_lib__4_4cylo()],
+  [1,16,0,-109,0,4,0,0,0,104.55,0,0,0,4, ldraw_lib__4_4cylo(realsolid)],
 // 1 16 0 -109 0 -7.5 0 0 0 -1 0 0 0 7.5 4-4disc.dat
-  [1,16,0,-109,0,-7.5,0,0,0,-1,0,0,0,7.5, ldraw_lib__4_4disc()],
+  [1,16,0,-109,0,-7.5,0,0,0,-1,0,0,0,7.5, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 -112 0 7.5 0 0 0 3 0 0 0 7.5 4-4cylo.dat
-  [1,16,0,-112,0,7.5,0,0,0,3,0,0,0,7.5, ldraw_lib__4_4cylo()],
+  [1,16,0,-112,0,7.5,0,0,0,3,0,0,0,7.5, ldraw_lib__4_4cylo(realsolid)],
 // 1 16 0 -112 0 7.5 0 0 0 1 0 0 0 7.5 4-4disc.dat
-  [1,16,0,-112,0,7.5,0,0,0,1,0,0,0,7.5, ldraw_lib__4_4disc()],
+  [1,16,0,-112,0,7.5,0,0,0,1,0,0,0,7.5, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 -112 0 1 0 0 0 1 0 0 0 1 stud2.dat
-  [1,16,0,-112,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2()],
+  [1,16,0,-112,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2(realsolid)],
 // 1 16 0 4 0 1 0 0 0 -1 0 0 0 -1 stud4.dat
-  [1,16,0,4,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__stud4()],
+  [1,16,0,4,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__stud4(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 6 -16 0 0 16 2 0 0 0 32 0 box3u2p.dat
-  [1,16,0,6,-16,0,0,16,2,0,0,0,32,0, ldraw_lib__box3u2p()],
+  [1,16,0,6,-16,0,0,16,2,0,0,0,32,0, ldraw_lib__box3u2p(realsolid)],
 // 1 16 0 4 -20 0 0 20 4 0 0 0 40 0 box3u2p.dat
-  [1,16,0,4,-20,0,0,20,4,0,0,0,40,0, ldraw_lib__box3u2p()],
+  [1,16,0,4,-20,0,0,20,4,0,0,0,40,0, ldraw_lib__box3u2p(realsolid)],
 ];
 module ldraw_lib__98549(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__98549(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__98549(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__98549(line=0.2);

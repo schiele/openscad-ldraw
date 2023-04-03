@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/1-8cyli.scad>
 use <../../p/t04o6250.scad>
-function ldraw_lib__s__3626ph3a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__3626ph3a(realsolid=false) = [
 // 0 ~Minifig Head with Ron Weasley Pattern - Face
 // 0 Name: s\3626ph3a.dat
 // 0 Author: Andy Westrate [westrate]
@@ -308,9 +309,9 @@ function ldraw_lib__s__3626ph3a() = [
 // 3 16 4.8296 18.5309 -11.659 4.975 17 -12.01 1 17 -12.801
   [3,16,4.8296,18.5309,-11.659,4.975,17,-12.01,1,17,-12.801],
 // 1 16 0 4 0 13 0 0 0 13 0 0 0 -13 1-8cyli.dat
-  [1,16,0,4,0,13,0,0,0,13,0,0,0,-13, ldraw_lib__1_8cyli()],
+  [1,16,0,4,0,13,0,0,0,13,0,0,0,-13, ldraw_lib__1_8cyli(realsolid)],
 // 1 16 0 4 0 -13 0 0 0 13 0 0 0 -13 1-8cyli.dat
-  [1,16,0,4,0,-13,0,0,0,13,0,0,0,-13, ldraw_lib__1_8cyli()],
+  [1,16,0,4,0,-13,0,0,0,13,0,0,0,-13, ldraw_lib__1_8cyli(realsolid)],
 // 5 24 -4.975 4 -12.01 -4.975 17 -12.01 -9.192 4 -9.192 0 4 -13
   [5,24,-4.975,4,-12.01,-4.975,17,-12.01,-9.192,4,-9.192,0,4,-13],
 // 5 24 0 4 -13 0 17 -13 -4.975 4 -12.01 4.975 4 -12.01
@@ -318,9 +319,9 @@ function ldraw_lib__s__3626ph3a() = [
 // 5 24 4.975 4 -12.01 4.975 17 -12.01 0 4 -13 9.192 4 -9.192
   [5,24,4.975,4,-12.01,4.975,17,-12.01,0,4,-13,9.192,4,-9.192],
 // 1 16 0 4 0 -8 0 0 0 -6.4 0 0 0 -8 t04o6250.dat
-  [1,16,0,4,0,-8,0,0,0,-6.4,0,0,0,-8, ldraw_lib__t04o6250()],
+  [1,16,0,4,0,-8,0,0,0,-6.4,0,0,0,-8, ldraw_lib__t04o6250(realsolid)],
 // 1 16 0 4 0 0 0 8 0 -6.4 0 -8 0 0 t04o6250.dat
-  [1,16,0,4,0,0,0,8,0,-6.4,0,-8,0,0, ldraw_lib__t04o6250()],
+  [1,16,0,4,0,0,0,8,0,-6.4,0,-8,0,0, ldraw_lib__t04o6250(realsolid)],
 // 0
 // 0
 // 4 16 3.7936 20.6954 -9.1592 0 20.6954 -9.9136 0 21 -8 3.0616 21 -7.3912
@@ -388,5 +389,5 @@ function ldraw_lib__s__3626ph3a() = [
 // 0
 ];
 module ldraw_lib__s__3626ph3a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__3626ph3a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__3626ph3a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__3626ph3a(line=0.2);

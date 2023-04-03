@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4cylc.scad>
 use <../p/axle.scad>
 use <s/15107s01.scad>
-function ldraw_lib__15107() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__15107(realsolid=false) = [
 // 0 Animal Leg Segmented with Axle and Bar  1L on Tip
 // 0 Name: 15107.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -19,13 +20,13 @@ function ldraw_lib__15107() = [
 // 
 // 
 // 1 16 0 0 0 -1 0 0 0 20 0 0 0 -1 axle.dat
-  [1,16,0,0,0,-1,0,0,0,20,0,0,0,-1, ldraw_lib__axle()],
+  [1,16,0,0,0,-1,0,0,0,20,0,0,0,-1, ldraw_lib__axle(realsolid)],
 // 1 16 0 -170 -120 -4 0 0 0 0 -4 0 20 0 4-4cylc.dat
-  [1,16,0,-170,-120,-4,0,0,0,0,-4,0,20,0, ldraw_lib__4_4cylc()],
+  [1,16,0,-170,-120,-4,0,0,0,0,-4,0,20,0, ldraw_lib__4_4cylc(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\15107s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__15107s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__15107s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\15107s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__15107s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__15107s01(realsolid)],
 // 2 24 -1.25 -104.208 -19.678 -1.25 -107.458 -11.612
   [2,24,-1.25,-104.208,-19.678,-1.25,-107.458,-11.612],
 // 2 24 -1.25 -123.765 -32.145 -1.25 -105.278 -22.264
@@ -1502,5 +1503,5 @@ function ldraw_lib__15107() = [
   [5,24,0,0,13.98,0,-24.482,9.338,4.75,-24.45,8.552,-4.75,-24.45,8.552],
 ];
 module ldraw_lib__15107(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__15107(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__15107(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__15107(line=0.2);

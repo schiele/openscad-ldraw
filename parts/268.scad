@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box.scad>
-function ldraw_lib__268() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__268(realsolid=false) = [
 // 0 ~Glass for Door  1 x  3 x  4
 // 0 Name: 268.dat
 // 0 Author: Niels Karsdorp [nielsk]
@@ -17,9 +18,9 @@ function ldraw_lib__268() = [
 // 
 // 
 // 1 16 24 42 1 20.5 0 0 0 36.5 0 0 0 1 box.dat
-  [1,16,24,42,1,20.5,0,0,0,36.5,0,0,0,1, ldraw_lib__box()],
+  [1,16,24,42,1,20.5,0,0,0,36.5,0,0,0,1, ldraw_lib__box(realsolid)],
 // 0
 ];
 module ldraw_lib__268(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__268(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__268(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__268(line=0.2);

@@ -4,7 +4,8 @@ use <u9221.scad>
 use <u9223.scad>
 use <u9225.scad>
 use <u9226.scad>
-function ldraw_lib__u9234() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__u9234(realsolid=false) = [
 // 0 ~Train Track 12V Tapered Point Right Electric (Straight)
 // 0 Name: u9234.dat
 // 0 Author: Steffen [Steffen]
@@ -25,16 +26,16 @@ function ldraw_lib__u9234() = [
 // 0 // position of the actuator adjusted accordingly.
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 u9221.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9221()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9221(realsolid)],
 // 1 15 0 16 0 0 0 1 0 1 0 -1 0 0 u9034.dat
-  [1,15,0,16,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__u9034()],
+  [1,15,0,16,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__u9034(realsolid)],
 // 1 16 -180 16 -180 1 0 0 0 1 0 0 0 1 u9223.dat
-  [1,16,-180,16,-180,1,0,0,0,1,0,0,0,1, ldraw_lib__u9223()],
+  [1,16,-180,16,-180,1,0,0,0,1,0,0,0,1, ldraw_lib__u9223(realsolid)],
 // 1 16 -180 -8 -180 1 0 0 0 1 0 0 0 1 u9225.dat
-  [1,16,-180,-8,-180,1,0,0,0,1,0,0,0,1, ldraw_lib__u9225()],
+  [1,16,-180,-8,-180,1,0,0,0,1,0,0,0,1, ldraw_lib__u9225(realsolid)],
 // 1 79 -240 -28 -180 1 0 0 0 1 0 0 0 1 u9226.dat
-  [1,79,-240,-28,-180,1,0,0,0,1,0,0,0,1, ldraw_lib__u9226()],
+  [1,79,-240,-28,-180,1,0,0,0,1,0,0,0,1, ldraw_lib__u9226(realsolid)],
 ];
 module ldraw_lib__u9234(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__u9234(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__u9234(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__u9234(line=0.2);

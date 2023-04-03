@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/2-4cyli.scad>
 use <../p/connhole.scad>
 use <../p/znap6.scad>
-function ldraw_lib__32205() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__32205(realsolid=false) = [
 // 0 Znap Beam Curved  3 Holes
 // 0 Name: 32205.dat
 // 0 Author: Thomas Woelk [t.woelk]
@@ -19,15 +20,15 @@ function ldraw_lib__32205() = [
 // 
 // 
 // 1 16 0 0 40 0 0 -1 0 1 0 1 0 0 connhole.dat
-  [1,16,0,0,40,0,0,-1,0,1,0,1,0,0, ldraw_lib__connhole()],
+  [1,16,0,0,40,0,0,-1,0,1,0,1,0,0, ldraw_lib__connhole(realsolid)],
 // 1 16 -40 0 -20 1 0 0 0 1 0 0 0 1 znap6.dat
-  [1,16,-40,0,-20,1,0,0,0,1,0,0,0,1, ldraw_lib__znap6()],
+  [1,16,-40,0,-20,1,0,0,0,1,0,0,0,1, ldraw_lib__znap6(realsolid)],
 // 1 16 40 0 -20 1 0 0 0 1 0 0 0 1 znap6.dat
-  [1,16,40,0,-20,1,0,0,0,1,0,0,0,1, ldraw_lib__znap6()],
+  [1,16,40,0,-20,1,0,0,0,1,0,0,0,1, ldraw_lib__znap6(realsolid)],
 // 1 16 -40 0 0 1 0 0 0 1 0 0 0 1 connhole.dat
-  [1,16,-40,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__connhole()],
+  [1,16,-40,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__connhole(realsolid)],
 // 1 16 40 0 0 1 0 0 0 1 0 0 0 1 connhole.dat
-  [1,16,40,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__connhole()],
+  [1,16,40,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__connhole(realsolid)],
 // 0 //
 // 4 16 -50 -10 0 -50 -10 -25 -50 10 -25 -50 10 0
   [4,16,-50,-10,0,-50,-10,-25,-50,10,-25,-50,10,0],
@@ -54,11 +55,11 @@ function ldraw_lib__32205() = [
 // 2 24 50 10 0 50 10 -25
   [2,24,50,10,0,50,10,-25],
 // 1 16 0 -10 0 50 0 0 0 20 0 0 0 50 2-4cyli.dat
-  [1,16,0,-10,0,50,0,0,0,20,0,0,0,50, ldraw_lib__2_4cyli()],
+  [1,16,0,-10,0,50,0,0,0,20,0,0,0,50, ldraw_lib__2_4cyli(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -10 0 30 0 0 0 20 0 0 0 30 2-4cyli.dat
-  [1,16,0,-10,0,30,0,0,0,20,0,0,0,30, ldraw_lib__2_4cyli()],
+  [1,16,0,-10,0,30,0,0,0,20,0,0,0,30, ldraw_lib__2_4cyli(realsolid)],
 // 0 //
 // 4 16 -27.717 -10 11.481 -31.08 -10 12.874 -23.7868 -10 23.7868 -21.213 -10 21.213
   [4,16,-27.717,-10,11.481,-31.08,-10,12.874,-23.7868,-10,23.7868,-21.213,-10,21.213],
@@ -832,5 +833,5 @@ function ldraw_lib__32205() = [
 // 0 //
 ];
 module ldraw_lib__32205(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__32205(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__32205(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__32205(line=0.2);

@@ -3,7 +3,8 @@ use <../p/4-4cyli.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4edge.scad>
 use <s/11103s01.scad>
-function ldraw_lib__11103() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__11103(realsolid=false) = [
 // 0 Minifig Sword Double Blade with Bar Holder
 // 0 Name: 11103.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -24,9 +25,9 @@ function ldraw_lib__11103() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\11103s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__11103s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__11103s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 -1 s\11103s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__11103s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__11103s01(realsolid)],
 // 
 // 2 24 4.125 -22.748 0 3.375 -18.055 0
   [2,24,4.125,-22.748,0,3.375,-18.055,0],
@@ -55,11 +56,11 @@ function ldraw_lib__11103() = [
 // 2 24 -3.325 -34.258 0 -4.644 -31.968 0
   [2,24,-3.325,-34.258,0,-4.644,-31.968,0],
 // 1 16 0 10 0 0 0 -4 0 -20.85 0 4 0 0 4-4cyli.dat
-  [1,16,0,10,0,0,0,-4,0,-20.85,0,4,0,0, ldraw_lib__4_4cyli()],
+  [1,16,0,10,0,0,0,-4,0,-20.85,0,4,0,0, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 10 0 0 0 -4 0 -1 0 4 0 0 4-4edge.dat
-  [1,16,0,10,0,0,0,-4,0,-1,0,4,0,0, ldraw_lib__4_4edge()],
+  [1,16,0,10,0,0,0,-4,0,-1,0,4,0,0, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 10 0 0 0 -4 0 -1 0 4 0 0 4-4disc.dat
-  [1,16,0,10,0,0,0,-4,0,-1,0,4,0,0, ldraw_lib__4_4disc()],
+  [1,16,0,10,0,0,0,-4,0,-1,0,4,0,0, ldraw_lib__4_4disc(realsolid)],
 // 2 24 4 -10.85 0 -4 -10.85 0
   [2,24,4,-10.85,0,-4,-10.85,0],
 // 5 24 4.25 -39.75 0 4.25 -45.099 0 3.678 -39.75 2.128 3.678 -39.75 -2.128
@@ -102,5 +103,5 @@ function ldraw_lib__11103() = [
   [5,24,-4.25,-40.5,0,-4.25,-37.5,0,-3.681,-40.5,-2.125,-3.681,-40.5,2.125],
 ];
 module ldraw_lib__11103(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__11103(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__11103(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__11103(line=0.2);

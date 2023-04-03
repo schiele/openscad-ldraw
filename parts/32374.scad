@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/32058s01.scad>
 use <../p/stug-2x1.scad>
-function ldraw_lib__32374() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__32374(realsolid=false) = [
 // 0 ~Electric Mindstorms RCX Module without AC Socket - Top Housing
 // 0 Name: 32374.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -18,7 +19,7 @@ function ldraw_lib__32374() = [
 // 0 // inside structue is simplified and missing details
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\32058s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__32058s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__32058s01(realsolid)],
 // 
 // 0 // A/C Plug-in hole blocker
 // 2 24 -12 0 120 12 0 120
@@ -36,7 +37,7 @@ function ldraw_lib__32374() = [
 // 2 24 12 4 116 -12 4 116
   [2,24,12,4,116,-12,4,116],
 // 1 16 0 0 110 0 0 -1 0 1 0 1 0 0 stug-2x1.dat
-  [1,16,0,0,110,0,0,-1,0,1,0,1,0,0, ldraw_lib__stug_2x1()],
+  [1,16,0,0,110,0,0,-1,0,1,0,1,0,0, ldraw_lib__stug_2x1(realsolid)],
 // 
 // 0 // printed surfaces
 // 4 16 80 8 120 60 0 120 60 0 60 80 8 60
@@ -73,5 +74,5 @@ function ldraw_lib__32374() = [
   [4,16,-48,8,-2,-48,8,-16,-40,8,-23,-40,8,3],
 ];
 module ldraw_lib__32374(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__32374(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__32374(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__32374(line=0.2);

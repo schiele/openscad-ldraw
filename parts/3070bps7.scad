@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3070bs01.scad>
-function ldraw_lib__3070bps7() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3070bps7(realsolid=false) = [
 // 0 Tile  1 x  1 with Star Wars Galactic Empire Jetpack Pattern
 // 0 Name: 3070bps7.dat
 // 0 Author: Vincent Messenet [Cheenzo]
@@ -17,7 +18,7 @@ function ldraw_lib__3070bps7() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3070bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3070bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3070bs01(realsolid)],
 // 
 // 3 72 -7.25 0 -1.75 -7.4 0 -5.25 -5.6 0 -1.75
   [3,72,-7.25,0,-1.75,-7.4,0,-5.25,-5.6,0,-1.75],
@@ -433,5 +434,5 @@ function ldraw_lib__3070bps7() = [
   [4,16,1.6,0,-2,1.55434,0,-2.22962,1.55434,0,-3.77038,1.6,0,-4],
 ];
 module ldraw_lib__3070bps7(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3070bps7(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3070bps7(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3070bps7(line=0.2);

@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__4640189bs02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__4640189bs02(realsolid=false) = [
 // 0 ~Sticker  0.75 x  7.65 with White "Shinkai 6500" on Black Background - Background
 // 0 Name: s\4640189bs02.dat
 // 0 Author: Damien Roux [Darats]
@@ -825,5 +826,5 @@ function ldraw_lib__s__4640189bs02() = [
   [3,16,58,0,7.5,52.825,0,5.353,53.478,0,4.815],
 ];
 module ldraw_lib__s__4640189bs02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__4640189bs02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__4640189bs02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__4640189bs02(line=0.2);

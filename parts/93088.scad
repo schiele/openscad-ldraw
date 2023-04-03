@@ -5,7 +5,8 @@ use <s/93088s03.scad>
 use <s/93088s04.scad>
 use <s/93088s05.scad>
 use <s/93088s06.scad>
-function ldraw_lib__93088() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__93088(realsolid=false) = [
 // 0 Animal Puppy Standing
 // 0 Name: 93088.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -24,18 +25,18 @@ function ldraw_lib__93088() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\93088s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__93088s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__93088s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\93088s02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__93088s02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__93088s02(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\93088s03.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__93088s03()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__93088s03(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\93088s04.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__93088s04()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__93088s04(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\93088s05.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__93088s05()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__93088s05(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\93088s06.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__93088s06()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__93088s06(realsolid)],
 ];
 module ldraw_lib__93088(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__93088(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__93088(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__93088(line=0.2);

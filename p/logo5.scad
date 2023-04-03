@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__logo5() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__logo5(realsolid=false) = [
 // 0 LEGO Logo for Studs - 3D Flattened
 // 0 Name: logo5.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -1996,5 +1997,5 @@ function ldraw_lib__logo5() = [
   [5,24,-1.563,-0.0749,4.5009,-1.5627,-0.05,4.3545,1.3213,-0.0749,3.9039,-1.7712,-0.05,4.313],
 ];
 module ldraw_lib__logo5(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__logo5(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__logo5(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__logo5(line=0.2);

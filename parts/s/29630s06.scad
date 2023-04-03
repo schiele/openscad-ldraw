@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__29630s06() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__29630s06(realsolid=false) = [
 // 0 ~Container Hemispherical Pod  6 x  2.4 x  6 Inner Surfaces - Partial Quarter Section 1
 // 0 Name: s\29630s06.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -210,5 +211,5 @@ function ldraw_lib__s__29630s06() = [
   [5,24,60.75,-35.074,40.5,58.7247,-33.9047,44,62.6477,-25.9495,44,55.6522,-42.7034,40.5],
 ];
 module ldraw_lib__s__29630s06(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__29630s06(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__29630s06(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__29630s06(line=0.2);

@@ -5,7 +5,8 @@ use <../p/4-4ndis.scad>
 use <../p/4-4ring2.scad>
 use <s/4460s01.scad>
 use <../p/stud2a.scad>
-function ldraw_lib__4460a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4460a(realsolid=false) = [
 // 0 Slope Brick 75  2 x  1 x  3 with Open Stud
 // 0 Name: 4460a.dat
 // 0 Author: James Jessiman
@@ -26,23 +27,23 @@ function ldraw_lib__4460a() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4460s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4460s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4460s01(realsolid)],
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 stud2a.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2a()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2a(realsolid)],
 // 1 16 0 0 0 6 0 0 0 1 0 0 0 6 4-4edge.dat
-  [1,16,0,0,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4edge()],
+  [1,16,0,0,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4edge(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 0 4 0 0 0 4 0 0 0 4 4-4cyli.dat
-  [1,16,0,0,0,4,0,0,0,4,0,0,0,4, ldraw_lib__4_4cyli()],
+  [1,16,0,0,0,4,0,0,0,4,0,0,0,4, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 4 0 4 0 0 0 1 0 0 0 4 4-4edge.dat
-  [1,16,0,4,0,4,0,0,0,1,0,0,0,4, ldraw_lib__4_4edge()],
+  [1,16,0,4,0,4,0,0,0,1,0,0,0,4, ldraw_lib__4_4edge(realsolid)],
 // 
 // 1 16 0 4 0 2 0 0 0 -1 0 0 0 2 4-4ring2.dat
-  [1,16,0,4,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__4_4ring2()],
+  [1,16,0,4,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__4_4ring2(realsolid)],
 // 1 16 0 4 0 6 0 0 0 -1 0 0 0 6 4-4ndis.dat
-  [1,16,0,4,0,6,0,0,0,-1,0,0,0,6, ldraw_lib__4_4ndis()],
+  [1,16,0,4,0,6,0,0,0,-1,0,0,0,6, ldraw_lib__4_4ndis(realsolid)],
 // 
 // 3 16 -6 4 -8 -6 4 -6 0 4 -6
   [3,16,-6,4,-8,-6,4,-6,0,4,-6],
@@ -50,7 +51,7 @@ function ldraw_lib__4460a() = [
   [4,16,-6,4,-8,0,4,-6,6,4,-6,6,4,-8],
 // 
 // 1 16 0 0 0 6 0 0 0 1 0 0 0 6 4-4ndis.dat
-  [1,16,0,0,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4ndis()],
+  [1,16,0,0,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4ndis(realsolid)],
 // 
 // 3 16 0 0 -6 -6 0 -6 -10 0 -10
   [3,16,0,0,-6,-6,0,-6,-10,0,-10],
@@ -70,5 +71,5 @@ function ldraw_lib__4460a() = [
   [4,16,10,0,10,6,0,6,6,0,0,10,0,-10],
 ];
 module ldraw_lib__4460a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4460a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4460a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4460a(line=0.2);

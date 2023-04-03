@@ -2,7 +2,8 @@ use <../../lib.scad>
 use <../../p/1-4cyli.scad>
 use <../../p/1-8ndis.scad>
 use <../../p/1-8sphe.scad>
-function ldraw_lib__s__47203s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__47203s02(realsolid=false) = [
 // 0 ~Figure Duplo Child Torso Front
 // 0 Name: s\47203s02.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -17,19 +18,19 @@ function ldraw_lib__s__47203s02() = [
 // 
 // 
 // 1 16 -20 -11 -11 0 1.5 -5 0 -23 0 -5 0 0 1-4cyli.dat
-  [1,16,-20,-11,-11,0,1.5,-5,0,-23,0,-5,0,0, ldraw_lib__1_4cyli()],
+  [1,16,-20,-11,-11,0,1.5,-5,0,-23,0,-5,0,0, ldraw_lib__1_4cyli(realsolid)],
 // 1 16 -18.5 -34 -11 0 0 -5 0 -5 0 -5 0 0 1-8sphe.dat
-  [1,16,-18.5,-34,-11,0,0,-5,0,-5,0,-5,0,0, ldraw_lib__1_8sphe()],
+  [1,16,-18.5,-34,-11,0,0,-5,0,-5,0,-5,0,0, ldraw_lib__1_8sphe(realsolid)],
 // 1 16 -18.5 -34 -11 0 37 0 -5 0 0 0 0 -5 1-4cyli.dat
-  [1,16,-18.5,-34,-11,0,37,0,-5,0,0,0,0,-5, ldraw_lib__1_4cyli()],
+  [1,16,-18.5,-34,-11,0,37,0,-5,0,0,0,0,-5, ldraw_lib__1_4cyli(realsolid)],
 // 1 16 -14 -4.5 -16 0 0 10 -6.5 0 0 0 1 0 1-8ndis.dat
-  [1,16,-14,-4.5,-16,0,0,10,-6.5,0,0,0,1,0, ldraw_lib__1_8ndis()],
+  [1,16,-14,-4.5,-16,0,0,10,-6.5,0,0,0,1,0, ldraw_lib__1_8ndis(realsolid)],
 // 1 16 20 -11 -11 0 -1.5 5 0 -23 0 -5 0 0 1-4cyli.dat
-  [1,16,20,-11,-11,0,-1.5,5,0,-23,0,-5,0,0, ldraw_lib__1_4cyli()],
+  [1,16,20,-11,-11,0,-1.5,5,0,-23,0,-5,0,0, ldraw_lib__1_4cyli(realsolid)],
 // 1 16 18.5 -34 -11 0 0 5 0 -5 0 -5 0 0 1-8sphe.dat
-  [1,16,18.5,-34,-11,0,0,5,0,-5,0,-5,0,0, ldraw_lib__1_8sphe()],
+  [1,16,18.5,-34,-11,0,0,5,0,-5,0,-5,0,0, ldraw_lib__1_8sphe(realsolid)],
 // 1 16 14 -4.5 -16 0 0 -10 -6.5 0 0 0 1 0 1-8ndis.dat
-  [1,16,14,-4.5,-16,0,0,-10,-6.5,0,0,0,1,0, ldraw_lib__1_8ndis()],
+  [1,16,14,-4.5,-16,0,0,-10,-6.5,0,0,0,1,0, ldraw_lib__1_8ndis(realsolid)],
 // 3 16 -18.5 -34 -16 -20 -11 -16 -14 -11 -16
   [3,16,-18.5,-34,-16,-20,-11,-16,-14,-11,-16],
 // 3 16 -18.5 -34 -16 -14 -11 -16 -4 -11 -16
@@ -48,5 +49,5 @@ function ldraw_lib__s__47203s02() = [
   [3,16,4.761,-6.9876,-16,6.929,-9.0962,-16,4,-11,-16],
 ];
 module ldraw_lib__s__47203s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__47203s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__47203s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__47203s02(line=0.2);

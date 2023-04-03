@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/1-4chrd.scad>
-function ldraw_lib__s__6142622ts04() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__6142622ts04(realsolid=false) = [
 // 0 ~Sticker  4.0 x  1.8 with Black Arch on Yellow Background Right - Upper Section 4
 // 0 Name: s\6142622ts04.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -17,9 +18,9 @@ function ldraw_lib__s__6142622ts04() = [
 // 0 // Primitives
 // 
 // 1 0 -16.5 -.25 -17.162 -1.5 0 0 0 1 0 0 0 -1.5 1-4chrd.dat
-  [1,0,-16.5,-.25,-17.162,-1.5,0,0,0,1,0,0,0,-1.5, ldraw_lib__1_4chrd()],
+  [1,0,-16.5,-.25,-17.162,-1.5,0,0,0,1,0,0,0,-1.5, ldraw_lib__1_4chrd(realsolid)],
 // 1 14 16.5 -.25 -17.162 1.5 0 0 0 1 0 0 0 -1.5 1-4chrd.dat
-  [1,14,16.5,-.25,-17.162,1.5,0,0,0,1,0,0,0,-1.5, ldraw_lib__1_4chrd()],
+  [1,14,16.5,-.25,-17.162,1.5,0,0,0,1,0,0,0,-1.5, ldraw_lib__1_4chrd(realsolid)],
 // 0 // Yellow faces
 // 4 14 16.5 -.25 -18.662 18 -.25 -17.162 18 -.25 .0157 8.8524 -.25 .0157
   [4,14,16.5,-.25,-18.662,18,-.25,-17.162,18,-.25,.0157,8.8524,-.25,.0157],
@@ -38,5 +39,5 @@ function ldraw_lib__s__6142622ts04() = [
   [4,0,-16.5,-.25,-18.662,3.6722,-.25,-18.662,4.253,-.25,-17.7916,4.7162,-.25,-16.8532],
 ];
 module ldraw_lib__s__6142622ts04(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__6142622ts04(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__6142622ts04(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__6142622ts04(line=0.2);

@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__25061s05() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__25061s05(realsolid=false) = [
 // 0 ~Train Track Roller Coaster Curve Diagonal Member
 // 0 Name: s\25061s05.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -202,5 +203,5 @@ function ldraw_lib__s__25061s05() = [
   [5,24,221.3197,-2,8.3568,251.9029,-2,57.3001,219.4836,-2.3044,8.3072,254.0411,-2.3044,57.8332],
 ];
 module ldraw_lib__s__25061s05(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__25061s05(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__25061s05(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__25061s05(line=0.2);

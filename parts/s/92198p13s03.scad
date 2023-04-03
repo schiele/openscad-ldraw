@@ -2,7 +2,8 @@ use <../../lib.scad>
 use <92198p13s01.scad>
 use <92198p13s02.scad>
 use <92198s01.scad>
-function ldraw_lib__s__92198p13s03() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__92198p13s03(realsolid=false) = [
 // 0 ~Figure Friends Elves Azari Head without Mouth Pattern
 // 0 Name: s\92198p13s03.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -17,11 +18,11 @@ function ldraw_lib__s__92198p13s03() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\92198s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__92198s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__92198s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\92198p13s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__92198p13s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__92198p13s01(realsolid)],
 // 1 191 0 0 0 1 0 0 0 1 0 0 0 1 s\92198p13s02.dat
-  [1,191,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__92198p13s02()],
+  [1,191,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__92198p13s02(realsolid)],
 // 5 24 0 25.49 -12.39 3.39 23.09 -13.11 0 23.1 -13.86 2.87 25.46 -11.32
   [5,24,0,25.49,-12.39,3.39,23.09,-13.11,0,23.1,-13.86,2.87,25.46,-11.32],
 // 5 24 3.39 23.09 -13.11 0 23.1 -13.86 0 25.49 -12.39 4.08 20.01 -14.07
@@ -832,5 +833,5 @@ function ldraw_lib__s__92198p13s03() = [
   [3,16,-3.51,10.31,-14.882,-3.91,10.34,-14.79,-4.84,10.51,-14.57],
 ];
 module ldraw_lib__s__92198p13s03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__92198p13s03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__92198p13s03(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__92198p13s03(line=0.2);

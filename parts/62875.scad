@@ -5,7 +5,8 @@ use <../p/2-4edge.scad>
 use <../p/box.scad>
 use <../p/box4o4a.scad>
 use <../p/rect.scad>
-function ldraw_lib__62875() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__62875(realsolid=false) = [
 // 0 ~Electric Power Functions Pole Reverser Slider
 // 0 Name: 62875.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -20,41 +21,41 @@ function ldraw_lib__62875() = [
 // 
 // 
 // 1 16 0 1 0 4 0 0 0 1 0 0 0 9 box.dat
-  [1,16,0,1,0,4,0,0,0,1,0,0,0,9, ldraw_lib__box()],
+  [1,16,0,1,0,4,0,0,0,1,0,0,0,9, ldraw_lib__box(realsolid)],
 // 1 16 0 0 0 3 0 0 0 -8 0 0 0 -2 box4o4a.dat
-  [1,16,0,0,0,3,0,0,0,-8,0,0,0,-2, ldraw_lib__box4o4a()],
+  [1,16,0,0,0,3,0,0,0,-8,0,0,0,-2, ldraw_lib__box4o4a(realsolid)],
 // 1 16 0 -8 -2 3 0 0 0 0 -2 0 1.5 0 2-4cyli.dat
-  [1,16,0,-8,-2,3,0,0,0,0,-2,0,1.5,0, ldraw_lib__2_4cyli()],
+  [1,16,0,-8,-2,3,0,0,0,0,-2,0,1.5,0, ldraw_lib__2_4cyli(realsolid)],
 // 1 16 0 -8 -2 3 0 0 0 0 -2 0 1.5 0 2-4edge.dat
-  [1,16,0,-8,-2,3,0,0,0,0,-2,0,1.5,0, ldraw_lib__2_4edge()],
+  [1,16,0,-8,-2,3,0,0,0,0,-2,0,1.5,0, ldraw_lib__2_4edge(realsolid)],
 // 1 16 0 -8 -2 3 0 0 0 0 -2 0 1.5 0 2-4disc.dat
-  [1,16,0,-8,-2,3,0,0,0,0,-2,0,1.5,0, ldraw_lib__2_4disc()],
+  [1,16,0,-8,-2,3,0,0,0,0,-2,0,1.5,0, ldraw_lib__2_4disc(realsolid)],
 // 1 16 0 -8 2 -3 0 0 0 0 -2 0 -1.5 0 2-4disc.dat
-  [1,16,0,-8,2,-3,0,0,0,0,-2,0,-1.5,0, ldraw_lib__2_4disc()],
+  [1,16,0,-8,2,-3,0,0,0,0,-2,0,-1.5,0, ldraw_lib__2_4disc(realsolid)],
 // 1 16 0 -8 -0.5 -3 0 0 0 0 -2 0 -1.5 0 2-4disc.dat
-  [1,16,0,-8,-0.5,-3,0,0,0,0,-2,0,-1.5,0, ldraw_lib__2_4disc()],
+  [1,16,0,-8,-0.5,-3,0,0,0,0,-2,0,-1.5,0, ldraw_lib__2_4disc(realsolid)],
 // 1 16 0 -8 0.5 3 0 0 0 0 -2 0 1.5 0 2-4disc.dat
-  [1,16,0,-8,0.5,3,0,0,0,0,-2,0,1.5,0, ldraw_lib__2_4disc()],
+  [1,16,0,-8,0.5,3,0,0,0,0,-2,0,1.5,0, ldraw_lib__2_4disc(realsolid)],
 // 1 16 0 -8 2 3 0 0 0 0 -2 0 1.5 0 2-4edge.dat
-  [1,16,0,-8,2,3,0,0,0,0,-2,0,1.5,0, ldraw_lib__2_4edge()],
+  [1,16,0,-8,2,3,0,0,0,0,-2,0,1.5,0, ldraw_lib__2_4edge(realsolid)],
 // 1 16 0 -8 2 -3 0 0 0 0 -2 0 -1.5 0 2-4cyli.dat
-  [1,16,0,-8,2,-3,0,0,0,0,-2,0,-1.5,0, ldraw_lib__2_4cyli()],
+  [1,16,0,-8,2,-3,0,0,0,0,-2,0,-1.5,0, ldraw_lib__2_4cyli(realsolid)],
 // 1 16 0 -8 0.5 -2 0 0 0 0 -1 0 -1 0 2-4cyli.dat
-  [1,16,0,-8,0.5,-2,0,0,0,0,-1,0,-1,0, ldraw_lib__2_4cyli()],
+  [1,16,0,-8,0.5,-2,0,0,0,0,-1,0,-1,0, ldraw_lib__2_4cyli(realsolid)],
 // 1 16 0 -8 0.5 -2 0 0 0 0 -1 0 -1 0 2-4edge.dat
-  [1,16,0,-8,0.5,-2,0,0,0,0,-1,0,-1,0, ldraw_lib__2_4edge()],
+  [1,16,0,-8,0.5,-2,0,0,0,0,-1,0,-1,0, ldraw_lib__2_4edge(realsolid)],
 // 1 16 0 -8 -0.5 -2 0 0 0 0 -1 0 -1 0 2-4edge.dat
-  [1,16,0,-8,-0.5,-2,0,0,0,0,-1,0,-1,0, ldraw_lib__2_4edge()],
+  [1,16,0,-8,-0.5,-2,0,0,0,0,-1,0,-1,0, ldraw_lib__2_4edge(realsolid)],
 // 1 16 0 -8 -0.5 -3 0 0 0 0 -2 0 -1 0 2-4edge.dat
-  [1,16,0,-8,-0.5,-3,0,0,0,0,-2,0,-1,0, ldraw_lib__2_4edge()],
+  [1,16,0,-8,-0.5,-3,0,0,0,0,-2,0,-1,0, ldraw_lib__2_4edge(realsolid)],
 // 1 16 0 -8 0.5 -3 0 0 0 0 -2 0 -1 0 2-4edge.dat
-  [1,16,0,-8,0.5,-3,0,0,0,0,-2,0,-1,0, ldraw_lib__2_4edge()],
+  [1,16,0,-8,0.5,-3,0,0,0,0,-2,0,-1,0, ldraw_lib__2_4edge(realsolid)],
 // 1 16 2.5 -8 0 -0.5 0 0 0 1 0 0 0 -0.5 rect.dat
-  [1,16,2.5,-8,0,-0.5,0,0,0,1,0,0,0,-0.5, ldraw_lib__rect()],
+  [1,16,2.5,-8,0,-0.5,0,0,0,1,0,0,0,-0.5, ldraw_lib__rect(realsolid)],
 // 1 16 -2.5 -8 0 -0.5 0 0 0 1 0 0 0 -0.5 rect.dat
-  [1,16,-2.5,-8,0,-0.5,0,0,0,1,0,0,0,-0.5, ldraw_lib__rect()],
+  [1,16,-2.5,-8,0,-0.5,0,0,0,1,0,0,0,-0.5, ldraw_lib__rect(realsolid)],
 // 
 ];
 module ldraw_lib__62875(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__62875(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__62875(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__62875(line=0.2);

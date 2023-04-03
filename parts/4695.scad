@@ -3,7 +3,8 @@ use <../p/axleend.scad>
 use <../p/axlehol2.scad>
 use <../p/axlehol8.scad>
 use <../p/axlehol9.scad>
-function ldraw_lib__4695() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4695(realsolid=false) = [
 // 0 ~Technic Pneumatic Valve Lever
 // 0 Name: 4695.dat
 // 0 Author: Marc Klein [marckl]
@@ -20,13 +21,13 @@ function ldraw_lib__4695() = [
 // 
 // 
 // 1 16 0 0 -40.5 0 0 1 1 0 0 0 1 0 axleend.dat
-  [1,16,0,0,-40.5,0,0,1,1,0,0,0,1,0, ldraw_lib__axleend()],
+  [1,16,0,0,-40.5,0,0,1,1,0,0,0,1,0, ldraw_lib__axleend(realsolid)],
 // 1 16 0 0 -40.5 0 0 1 1 0 0 0 1 0 axlehol2.dat
-  [1,16,0,0,-40.5,0,0,1,1,0,0,0,1,0, ldraw_lib__axlehol2()],
+  [1,16,0,0,-40.5,0,0,1,1,0,0,0,1,0, ldraw_lib__axlehol2(realsolid)],
 // 1 16 0 0 -40.5 0 0 1 1 0 0 0 1 0 axlehol9.dat
-  [1,16,0,0,-40.5,0,0,1,1,0,0,0,1,0, ldraw_lib__axlehol9()],
+  [1,16,0,0,-40.5,0,0,1,1,0,0,0,1,0, ldraw_lib__axlehol9(realsolid)],
 // 1 16 0 0 -40.5 0 0 1 1 0 0 0 32.5 0 axlehol8.dat
-  [1,16,0,0,-40.5,0,0,1,1,0,0,0,32.5,0, ldraw_lib__axlehol8()],
+  [1,16,0,0,-40.5,0,0,1,1,0,0,0,32.5,0, ldraw_lib__axlehol8(realsolid)],
 // 4 16 2 -2 -6.533 5.602 -2 -6.533 6 -16.38 3.536 2 -5.602 -3.974
   [4,16,2,-2,-6.533,5.602,-2,-6.533,6,-16.38,3.536,2,-5.602,-3.974],
 // 2 24 2 -2 -6.533 5.602 -2 -6.533
@@ -172,5 +173,5 @@ function ldraw_lib__4695() = [
 // 0 //
 ];
 module ldraw_lib__4695(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4695(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4695(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4695(line=0.2);

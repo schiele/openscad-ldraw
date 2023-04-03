@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3010s01.scad>
-function ldraw_lib__3010pzn() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3010pzn(realsolid=false) = [
 // 0 Brick  1 x  4 with Tan Shapes And Metallic Gold Eagle Pattern
 // 0 Name: 3010pzn.dat
 // 0 Author: Vincent Messenet [Cheenzo]
@@ -17,7 +18,7 @@ function ldraw_lib__3010pzn() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3010s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3010s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3010s01(realsolid)],
 // 
 // 0 // Main Color Shapes
 // 3 16 -40 17 -10 -40 24 -10 -33 12.5 -10
@@ -184,5 +185,5 @@ function ldraw_lib__3010pzn() = [
   [3,0,-3,11,-10,-.5,13.5,-10,0,12.25,-10],
 ];
 module ldraw_lib__3010pzn(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3010pzn(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3010pzn(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3010pzn(line=0.2);

@@ -2,7 +2,8 @@ use <../lib.scad>
 use <50950.scad>
 use <6285381cc01.scad>
 use <6285381g.scad>
-function ldraw_lib__50950dy2() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__50950dy2(realsolid=false) = [
 // 0 Slope Brick Curved  3 x  1 with Indicator Light and Black Stripes Right Sticker
 // 0 Name: 50950dy2.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -19,12 +20,12 @@ function ldraw_lib__50950dy2() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 50950.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__50950()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__50950(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 6285381cc01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__6285381cc01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__6285381cc01(realsolid)],
 // 1 16 -10 12 0 0 1 0 0 0 1 1 0 0 6285381g.dat
-  [1,16,-10,12,0,0,1,0,0,0,1,1,0,0, ldraw_lib__6285381g()],
+  [1,16,-10,12,0,0,1,0,0,0,1,1,0,0, ldraw_lib__6285381g(realsolid)],
 ];
 module ldraw_lib__50950dy2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__50950dy2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__50950dy2(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__50950dy2(line=0.2);

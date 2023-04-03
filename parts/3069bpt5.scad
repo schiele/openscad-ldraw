@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3069bs01.scad>
-function ldraw_lib__3069bpt5() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3069bpt5(realsolid=false) = [
 // 0 Tile  1 x  2 with Black "Once upon a time..." and Gold Scrolls Pattern
 // 0 Name: 3069bpt5.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -17,7 +18,7 @@ function ldraw_lib__3069bpt5() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3069bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3069bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3069bs01(realsolid)],
 // 4 82 18.95 0 7.7 18.9 0 8.65 17.9 0 8.65 18 0 7.1
   [4,82,18.95,0,7.7,18.9,0,8.65,17.9,0,8.65,18,0,7.1],
 // 4 82 18.9 0 5.2 18.95 0 7.7 18 0 7.1 18 0 5.05
@@ -1708,5 +1709,5 @@ function ldraw_lib__3069bpt5() = [
   [3,16,-11.35,0,-5.55,-11.55,0,-5.65,-9.95,0,-7.45],
 ];
 module ldraw_lib__3069bpt5(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3069bpt5(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3069bpt5(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3069bpt5(line=0.2);

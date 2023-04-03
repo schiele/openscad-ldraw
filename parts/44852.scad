@@ -4,7 +4,8 @@ use <985.scad>
 use <986.scad>
 use <987.scad>
 use <u9013.scad>
-function ldraw_lib__44852() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__44852(realsolid=false) = [
 // 0 Technic Axle Joiner 3 x 2 with Axial Torsion Spring
 // 0 Name: 44852.dat
 // 0 Author: Michael Heidemann [mikeheide]
@@ -22,18 +23,18 @@ function ldraw_lib__44852() = [
 // 
 // 
 // 1 47 0 3 -10 1 0 0 0 1 0 0 0 1 984.dat
-  [1,47,0,3,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__984()],
+  [1,47,0,3,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__984(realsolid)],
 // 1 494 0 6 -10 1 0 0 0 1 0 0 0 1 987.dat
-  [1,494,0,6,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__987()],
+  [1,494,0,6,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__987(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 985.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__985()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__985(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 986.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__986()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__986(realsolid)],
 // 1 494 -21.2 3 -4.6 0.6 0 0 0 0.6 0 0 0 0.6 u9013.dat
-  [1,494,-21.2,3,-4.6,0.6,0,0,0,0.6,0,0,0,0.6, ldraw_lib__u9013()],
+  [1,494,-21.2,3,-4.6,0.6,0,0,0,0.6,0,0,0,0.6, ldraw_lib__u9013(realsolid)],
 // 1 494 21.2 3 -4.6 0.6 0 0 0 0.6 0 0 0 0.6 u9013.dat
-  [1,494,21.2,3,-4.6,0.6,0,0,0,0.6,0,0,0,0.6, ldraw_lib__u9013()],
+  [1,494,21.2,3,-4.6,0.6,0,0,0,0.6,0,0,0,0.6, ldraw_lib__u9013(realsolid)],
 ];
 module ldraw_lib__44852(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__44852(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__44852(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__44852(line=0.2);

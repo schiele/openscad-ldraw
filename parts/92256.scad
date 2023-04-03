@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/rect2p.scad>
 use <../p/stud4od.scad>
-function ldraw_lib__92256() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__92256(realsolid=false) = [
 // 0 Figure Friends Hair Long Wavy
 // 0 Name: 92256.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -23,7 +24,7 @@ function ldraw_lib__92256() = [
 // 
 // 
 // 1 16 0 -5.265 0 1 0 0 0 -1.31625 0 0 0 1 stud4od.dat
-  [1,16,0,-5.265,0,1,0,0,0,-1.31625,0,0,0,1, ldraw_lib__stud4od()],
+  [1,16,0,-5.265,0,1,0,0,0,-1.31625,0,0,0,1, ldraw_lib__stud4od(realsolid)],
 // 2 24 12.65 12.698 -3.607 12.451 7.439 -5.045
   [2,24,12.65,12.698,-3.607,12.451,7.439,-5.045],
 // 2 24 11.061 4.352 -6.969 10.01 3.423 -8.177
@@ -351,7 +352,7 @@ function ldraw_lib__92256() = [
 // 3 16 -1 -9.877 -0.872 -0.255 -10.092 -1.957 0 -9.928 -1.14
   [3,16,-1,-9.877,-0.872,-0.255,-10.092,-1.957,0,-9.928,-1.14],
 // 1 16 -1.366 -7.8525 2.226 0.366 -1 0 0 0 -2.592 0.366 0 0 rect2p.dat
-  [1,16,-1.366,-7.8525,2.226,0.366,-1,0,0,0,-2.592,0.366,0,0, ldraw_lib__rect2p()],
+  [1,16,-1.366,-7.8525,2.226,0.366,-1,0,0,0,-2.592,0.366,0,0, ldraw_lib__rect2p(realsolid)],
 // 3 16 -1 -10.431 2.592 -6.784 -8.34 6.965 -1.732 -10.449 1.86
   [3,16,-1,-10.431,2.592,-6.784,-8.34,6.965,-1.732,-10.449,1.86],
 // 3 16 -1.732 -10.449 1.86 -6.784 -8.34 6.965 -7.269 -7.746 5.785
@@ -6333,5 +6334,5 @@ function ldraw_lib__92256() = [
   [5,24,0,-10.475,2.86,0,-5.265,2.86,1,-5.265,2.592,-1,-10.431,2.592],
 ];
 module ldraw_lib__92256(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__92256(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__92256(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__92256(line=0.2);

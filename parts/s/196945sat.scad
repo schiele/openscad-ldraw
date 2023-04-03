@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <191915sata.scad>
 use <191915satb.scad>
-function ldraw_lib__s__196945sat() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__196945sat(realsolid=false) = [
 // 0 ~Austrian Railways Logo Black
 // 0 Name: s\196945sat.dat
 // 0 Author: Chris Dee [cwdee]
@@ -16,11 +17,11 @@ function ldraw_lib__s__196945sat() = [
 // 
 // 
 // 1 0 0 0 0 1 0 0 0 1 0 0 0 1 s\191915sata.dat
-  [1,0,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__191915sata()],
+  [1,0,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__191915sata(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\191915satb.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__191915satb()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__191915satb(realsolid)],
 // 0
 ];
 module ldraw_lib__s__196945sat(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__196945sat(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__196945sat(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__196945sat(line=0.2);

@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/1-4cyli.scad>
 use <s/19212s01.scad>
-function ldraw_lib__19212() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__19212(realsolid=false) = [
 // 0 Windscreen  1 x 12 x  4 Trapezoidal
 // 0 Name: 19212.dat
 // 0 Author: Owen Burgoyne [C3POwen]
@@ -16,18 +17,18 @@ function ldraw_lib__19212() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\19212s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__19212s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__19212s01(realsolid)],
 // 4 16 -120 88 10 -120 88 0 -80 0 0 -80 0 10
   [4,16,-120,88,10,-120,88,0,-80,0,0,-80,0,10],
 // 1 16 -70 0 0 -10 -40 0 0 88 0 0 0 -10 1-4cyli.dat
-  [1,16,-70,0,0,-10,-40,0,0,88,0,0,0,-10, ldraw_lib__1_4cyli()],
+  [1,16,-70,0,0,-10,-40,0,0,88,0,0,0,-10, ldraw_lib__1_4cyli(realsolid)],
 // 4 16 110 88 -10 70 0 -10 -70 0 -10 -110 88 -10
   [4,16,110,88,-10,70,0,-10,-70,0,-10,-110,88,-10],
 // 1 16 70 0 0 0 40 10 0 88 0 -10 0 0 1-4cyli.dat
-  [1,16,70,0,0,0,40,10,0,88,0,-10,0,0, ldraw_lib__1_4cyli()],
+  [1,16,70,0,0,0,40,10,0,88,0,-10,0,0, ldraw_lib__1_4cyli(realsolid)],
 // 4 16 80 0 10 80 0 0 120 88 0 120 88 10
   [4,16,80,0,10,80,0,0,120,88,0,120,88,10],
 ];
 module ldraw_lib__19212(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__19212(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__19212(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__19212(line=0.2);

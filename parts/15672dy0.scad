@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <15672.scad>
 use <6142275i.scad>
-function ldraw_lib__15672dy0() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__15672dy0(realsolid=false) = [
 // 0 Slope Plate 45  2 x  1 with Red Line on Black, Grey and White Background Right Sticker
 // 0 Name: 15672dy0.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -18,10 +19,10 @@ function ldraw_lib__15672dy0() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 15672.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__15672()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__15672(realsolid)],
 // 1 16 0 -6 -10 1 0 0 0 .707107 -.707107 0 .707107 .707107 6142275i.dat
-  [1,16,0,-6,-10,1,0,0,0,.707107,-.707107,0,.707107,.707107, ldraw_lib__6142275i()],
+  [1,16,0,-6,-10,1,0,0,0,.707107,-.707107,0,.707107,.707107, ldraw_lib__6142275i(realsolid)],
 ];
 module ldraw_lib__15672dy0(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__15672dy0(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__15672dy0(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__15672dy0(line=0.2);

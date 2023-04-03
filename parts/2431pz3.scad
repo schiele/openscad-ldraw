@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/2431s01.scad>
-function ldraw_lib__2431pz3() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2431pz3(realsolid=false) = [
 // 0 Tile  1 x  4 with Black Moustache Pattern
 // 0 Name: 2431pz3.dat
 // 0 Author: Damien Roux [Darats]
@@ -17,7 +18,7 @@ function ldraw_lib__2431pz3() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2431s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2431s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2431s01(realsolid)],
 // 4 0 -21.58 0 -2.53 -19.72 0 -6.46 -19.13 0 -3.39 -20.3 0 0.38
   [4,0,-21.58,0,-2.53,-19.72,0,-6.46,-19.13,0,-3.39,-20.3,0,0.38],
 // 4 0 -20.3 0 0.38 -19.13 0 -3.39 -6.24 0 -2.58 -11.58 0 2.9
@@ -78,5 +79,5 @@ function ldraw_lib__2431pz3() = [
   [4,16,11.58,0,2.9,20.3,0,0.38,40,0,10,1.81,0,6.89],
 ];
 module ldraw_lib__2431pz3(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2431pz3(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2431pz3(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2431pz3(line=0.2);

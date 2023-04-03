@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <30080b.scad>
 use <30081.scad>
-function ldraw_lib__75979() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__75979(realsolid=false) = [
 // 0 Panel  4 x  3 x  3 w/ TransMediumBlue Porthole Glass (Complete)
 // 0 Name: 75979.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -24,10 +25,10 @@ function ldraw_lib__75979() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 30080b.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__30080b()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__30080b(realsolid)],
 // 1 41 0 22.815 -28.365 -1 0 0 0 0.689657 0.724136 0 0.724136 -0.689657 30081.dat
-  [1,41,0,22.815,-28.365,-1,0,0,0,0.689657,0.724136,0,0.724136,-0.689657, ldraw_lib__30081()],
+  [1,41,0,22.815,-28.365,-1,0,0,0,0.689657,0.724136,0,0.724136,-0.689657, ldraw_lib__30081(realsolid)],
 ];
 module ldraw_lib__75979(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__75979(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__75979(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__75979(line=0.2);

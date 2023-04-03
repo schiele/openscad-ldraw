@@ -2,7 +2,8 @@ use <../lib.scad>
 use <2740.scad>
 use <2742.scad>
 use <3701.scad>
-function ldraw_lib__2742c01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2742c01(realsolid=false) = [
 // 0 Propeller  3 Blade 15 Diameter with Light Grey Technic Brick and Gear 24t
 // 0 Name: 2742c01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -21,12 +22,12 @@ function ldraw_lib__2742c01() = [
 // 
 // 
 // 1 7 0 0 0 1 0 0 0 1 0 0 0 1 3701.dat
-  [1,7,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3701()],
+  [1,7,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3701(realsolid)],
 // 1 7 0 10 20 -1 0 0 0 1 0 0 0 -1 2740.dat
-  [1,7,0,10,20,-1,0,0,0,1,0,0,0,-1, ldraw_lib__2740()],
+  [1,7,0,10,20,-1,0,0,0,1,0,0,0,-1, ldraw_lib__2740(realsolid)],
 // 1 16 0 10 -8 1 0 0 0 1 0 0 0 1 2742.dat
-  [1,16,0,10,-8,1,0,0,0,1,0,0,0,1, ldraw_lib__2742()],
+  [1,16,0,10,-8,1,0,0,0,1,0,0,0,1, ldraw_lib__2742(realsolid)],
 ];
 module ldraw_lib__2742c01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2742c01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2742c01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2742c01(line=0.2);

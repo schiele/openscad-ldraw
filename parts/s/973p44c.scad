@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__973p44c() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__973p44c(realsolid=false) = [
 // 0 ~Minifig Torso with Wolfman Pattern - maroon
 // 0 Name: s\973p44c.dat
 // 0 Author: Chris Dee [cwdee]
@@ -41,5 +42,5 @@ function ldraw_lib__s__973p44c() = [
   [4,16,-3.5,26.5,-10,-4,28.5,-10,0,31,-10,0,29,-10],
 ];
 module ldraw_lib__s__973p44c(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__973p44c(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__973p44c(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__973p44c(line=0.2);

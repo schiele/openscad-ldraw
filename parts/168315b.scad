@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__168315b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__168315b(realsolid=false) = [
 // 0 Sticker  1.8 x  0.8 Technic Supercar Gearbox 1&2 White
 // 0 Name: 168315b.dat
 // 0 Author: Imre Papp [ampi]
@@ -223,5 +224,5 @@ function ldraw_lib__168315b() = [
 // 0
 ];
 module ldraw_lib__168315b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__168315b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__168315b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__168315b(line=0.2);

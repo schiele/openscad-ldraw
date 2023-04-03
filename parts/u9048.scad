@@ -4,7 +4,8 @@ use <../p/4-4edge.scad>
 use <../p/4-4rin10.scad>
 use <../p/4-4ring4.scad>
 use <../p/wpin4.scad>
-function ldraw_lib__u9048() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__u9048(realsolid=false) = [
 // 0 ~Motor Pull Back  2 x  6 Axle
 // 0 Name: u9048.dat
 // 0 Author: Michael Heidemann [mikeheide]
@@ -23,44 +24,44 @@ function ldraw_lib__u9048() = [
 // 
 // 
 // 1 16 -23 0 0 0 -1 0 0 0 0.5 -0.5 0 0 4-4rin10.dat
-  [1,16,-23,0,0,0,-1,0,0,0,0.5,-0.5,0,0, ldraw_lib__4_4rin10()],
+  [1,16,-23,0,0,0,-1,0,0,0,0.5,-0.5,0,0, ldraw_lib__4_4rin10(realsolid)],
 // 1 16 -23 0 0 0 1 0 0 0 5.5 5.5 0 0 4-4edge.dat
-  [1,16,-23,0,0,0,1,0,0,0,5.5,5.5,0,0, ldraw_lib__4_4edge()],
+  [1,16,-23,0,0,0,1,0,0,0,5.5,5.5,0,0, ldraw_lib__4_4edge(realsolid)],
 // 1 16 -23 0 0 0 1 0 0 0 5 5 0 0 4-4edge.dat
-  [1,16,-23,0,0,0,1,0,0,0,5,5,0,0, ldraw_lib__4_4edge()],
+  [1,16,-23,0,0,0,1,0,0,0,5,5,0,0, ldraw_lib__4_4edge(realsolid)],
 // 1 16 -24 0 0 0 1 0 0 0 1 1 0 0 wpin4.dat
-  [1,16,-24,0,0,0,1,0,0,0,1,1,0,0, ldraw_lib__wpin4()],
+  [1,16,-24,0,0,0,1,0,0,0,1,1,0,0, ldraw_lib__wpin4(realsolid)],
 // 1 16 -24 0 0 0 1 0 0 0 4 4 0 0 4-4edge.dat
-  [1,16,-24,0,0,0,1,0,0,0,4,4,0,0, ldraw_lib__4_4edge()],
+  [1,16,-24,0,0,0,1,0,0,0,4,4,0,0, ldraw_lib__4_4edge(realsolid)],
 // 1 16 -24 0 0 0 1 0 0 0 5.5 5.5 0 0 4-4edge.dat
-  [1,16,-24,0,0,0,1,0,0,0,5.5,5.5,0,0, ldraw_lib__4_4edge()],
+  [1,16,-24,0,0,0,1,0,0,0,5.5,5.5,0,0, ldraw_lib__4_4edge(realsolid)],
 // 1 16 -24 0 0 0 1 0 0 0 1 1 0 0 4-4ring4.dat
-  [1,16,-24,0,0,0,1,0,0,0,1,1,0,0, ldraw_lib__4_4ring4()],
+  [1,16,-24,0,0,0,1,0,0,0,1,1,0,0, ldraw_lib__4_4ring4(realsolid)],
 // 1 16 -24 0 0 0 1 0 0 0 0.5 0.5 0 0 4-4rin10.dat
-  [1,16,-24,0,0,0,1,0,0,0,0.5,0.5,0,0, ldraw_lib__4_4rin10()],
+  [1,16,-24,0,0,0,1,0,0,0,0.5,0.5,0,0, ldraw_lib__4_4rin10(realsolid)],
 // 1 16 -24 0 0 0 1 0 0 0 5.5 5.5 0 0 4-4cyli.dat
-  [1,16,-24,0,0,0,1,0,0,0,5.5,5.5,0,0, ldraw_lib__4_4cyli()],
+  [1,16,-24,0,0,0,1,0,0,0,5.5,5.5,0,0, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 23 0 0 0 1 0 0 0 0.5 0.5 0 0 4-4rin10.dat
-  [1,16,23,0,0,0,1,0,0,0,0.5,0.5,0,0, ldraw_lib__4_4rin10()],
+  [1,16,23,0,0,0,1,0,0,0,0.5,0.5,0,0, ldraw_lib__4_4rin10(realsolid)],
 // 1 16 23 0 0 0 -1 0 0 0 5.5 -5.5 0 0 4-4edge.dat
-  [1,16,23,0,0,0,-1,0,0,0,5.5,-5.5,0,0, ldraw_lib__4_4edge()],
+  [1,16,23,0,0,0,-1,0,0,0,5.5,-5.5,0,0, ldraw_lib__4_4edge(realsolid)],
 // 1 16 23 0 0 0 -1 0 0 0 5 -5 0 0 4-4edge.dat
-  [1,16,23,0,0,0,-1,0,0,0,5,-5,0,0, ldraw_lib__4_4edge()],
+  [1,16,23,0,0,0,-1,0,0,0,5,-5,0,0, ldraw_lib__4_4edge(realsolid)],
 // 1 16 24 0 0 0 -1 0 0 0 1 -1 0 0 wpin4.dat
-  [1,16,24,0,0,0,-1,0,0,0,1,-1,0,0, ldraw_lib__wpin4()],
+  [1,16,24,0,0,0,-1,0,0,0,1,-1,0,0, ldraw_lib__wpin4(realsolid)],
 // 1 16 24 0 0 0 -1 0 0 0 4 -4 0 0 4-4edge.dat
-  [1,16,24,0,0,0,-1,0,0,0,4,-4,0,0, ldraw_lib__4_4edge()],
+  [1,16,24,0,0,0,-1,0,0,0,4,-4,0,0, ldraw_lib__4_4edge(realsolid)],
 // 1 16 24 0 0 0 -1 0 0 0 5.5 -5.5 0 0 4-4edge.dat
-  [1,16,24,0,0,0,-1,0,0,0,5.5,-5.5,0,0, ldraw_lib__4_4edge()],
+  [1,16,24,0,0,0,-1,0,0,0,5.5,-5.5,0,0, ldraw_lib__4_4edge(realsolid)],
 // 1 16 24 0 0 0 -1 0 0 0 1 -1 0 0 4-4ring4.dat
-  [1,16,24,0,0,0,-1,0,0,0,1,-1,0,0, ldraw_lib__4_4ring4()],
+  [1,16,24,0,0,0,-1,0,0,0,1,-1,0,0, ldraw_lib__4_4ring4(realsolid)],
 // 1 16 24 0 0 0 -1 0 0 0 0.5 -0.5 0 0 4-4rin10.dat
-  [1,16,24,0,0,0,-1,0,0,0,0.5,-0.5,0,0, ldraw_lib__4_4rin10()],
+  [1,16,24,0,0,0,-1,0,0,0,0.5,-0.5,0,0, ldraw_lib__4_4rin10(realsolid)],
 // 1 16 24 0 0 0 -1 0 0 0 5.5 -5.5 0 0 4-4cyli.dat
-  [1,16,24,0,0,0,-1,0,0,0,5.5,-5.5,0,0, ldraw_lib__4_4cyli()],
+  [1,16,24,0,0,0,-1,0,0,0,5.5,-5.5,0,0, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 23 0 0 0 -46 0 0 0 5 -5 0 0 4-4cyli.dat
-  [1,16,23,0,0,0,-46,0,0,0,5,-5,0,0, ldraw_lib__4_4cyli()],
+  [1,16,23,0,0,0,-46,0,0,0,5,-5,0,0, ldraw_lib__4_4cyli(realsolid)],
 ];
 module ldraw_lib__u9048(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__u9048(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__u9048(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__u9048(line=0.2);

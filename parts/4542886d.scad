@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__4542886d() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4542886d(realsolid=false) = [
 // 0 Sticker  2.7 x  1.7 with Horse Head and Gold Border
 // 0 Name: 4542886d.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -17,7 +18,7 @@ function ldraw_lib__4542886d() = [
 // 
 // 
 // 1 16 0 -0.25 0 17.5 0 0 0 0.25 0 0 0 27.5 box5-12.dat
-  [1,16,0,-0.25,0,17.5,0,0,0,0.25,0,0,0,27.5, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,17.5,0,0,0,0.25,0,0,0,27.5, ldraw_lib__box5_12(realsolid)],
 // 4 308 -14.7374 -0.25 24.2 -14.6965 -0.25 24.4057 -15.2283 -0.25 24.6259 -15.313 -0.25 24.2
   [4,308,-14.7374,-0.25,24.2,-14.6965,-0.25,24.4057,-15.2283,-0.25,24.6259,-15.313,-0.25,24.2],
 // 4 308 -14.6965 -0.25 23.9944 -14.7374 -0.25 24.2 -15.313 -0.25 24.2 -15.2283 -0.25 23.7741
@@ -1884,5 +1885,5 @@ function ldraw_lib__4542886d() = [
   [4,70,16,-0.25,-17.2,17.5,-0.25,0,15.1,-0.25,0,15.1,-0.25,-17.2],
 ];
 module ldraw_lib__4542886d(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4542886d(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4542886d(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4542886d(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <4215p06.scad>
-function ldraw_lib__80651() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__80651(realsolid=false) = [
 // 0 ~_Panel  1 x  4 x  3 Left with Blue Stripe Pattern White (Obsolete)
 // 0 Name: 80651.dat
 // 0 Author: [PTadmin]
@@ -19,8 +20,8 @@ function ldraw_lib__80651() = [
 // 
 // 
 // 1 15 0 0 0 1 0 0 0 1 0 0 0 1 4215p06.dat
-  [1,15,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4215p06()],
+  [1,15,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4215p06(realsolid)],
 ];
 module ldraw_lib__80651(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__80651(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__80651(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__80651(line=0.2);

@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/rect.scad>
 use <../p/rect2p.scad>
 use <../p/rect3.scad>
-function ldraw_lib__486k02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__486k02(realsolid=false) = [
 // 0 ~Technic Tread Crawler Wedge Shaped Segment Transition
 // 0 Name: 486k02.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -19,9 +20,9 @@ function ldraw_lib__486k02() = [
 // 
 // 
 // 1 16 1.95 0 0 4.35 0 0 0 -1 0 0 0 6 rect2p.dat
-  [1,16,1.95,0,0,4.35,0,0,0,-1,0,0,0,6, ldraw_lib__rect2p()],
+  [1,16,1.95,0,0,4.35,0,0,0,-1,0,0,0,6, ldraw_lib__rect2p(realsolid)],
 // 1 16 -4.35 0.45 0 -1.95 0 0 0.45 -1 0 0 0 6 rect2p.dat
-  [1,16,-4.35,0.45,0,-1.95,0,0,0.45,-1,0,0,0,6, ldraw_lib__rect2p()],
+  [1,16,-4.35,0.45,0,-1.95,0,0,0.45,-1,0,0,0,6, ldraw_lib__rect2p(realsolid)],
 // 5 24 -2.4 0 6 -2.4 0 -6 6.3 0 6 -6.3 0.9 6
   [5,24,-2.4,0,6,-2.4,0,-6,6.3,0,6,-6.3,0.9,6],
 // 4 16 6.3 0 -6 6.3 -3 -7 -2.4 -3 -7 -2.4 0 -6
@@ -38,20 +39,20 @@ function ldraw_lib__486k02() = [
   [5,24,-2.4,0,6,-2.4,-3,7,6.3,0,6,-6.3,0.9,6],
 // 0 //
 // 1 16 0 -3 -8 2.4 0 0 0 -1 0 0 0 1 rect.dat
-  [1,16,0,-3,-8,2.4,0,0,0,-1,0,0,0,1, ldraw_lib__rect()],
+  [1,16,0,-3,-8,2.4,0,0,0,-1,0,0,0,1, ldraw_lib__rect(realsolid)],
 // 1 16 0 -3 8 2.4 0 0 0 -1 0 0 0 1 rect.dat
-  [1,16,0,-3,8,2.4,0,0,0,-1,0,0,0,1, ldraw_lib__rect()],
+  [1,16,0,-3,8,2.4,0,0,0,-1,0,0,0,1, ldraw_lib__rect(realsolid)],
 // 1 16 4.35 -3 0 0 0 -1.95 0 1 0 7 0 0 rect3.dat
-  [1,16,4.35,-3,0,0,0,-1.95,0,1,0,7,0,0, ldraw_lib__rect3()],
+  [1,16,4.35,-3,0,0,0,-1.95,0,1,0,7,0,0, ldraw_lib__rect3(realsolid)],
 // 1 16 -4.45 -2.55 0 0 0 2.05 0 1 -0.45 -7 0 0 rect3.dat
-  [1,16,-4.45,-2.55,0,0,0,2.05,0,1,-0.45,-7,0,0, ldraw_lib__rect3()],
+  [1,16,-4.45,-2.55,0,0,0,2.05,0,1,-0.45,-7,0,0, ldraw_lib__rect3(realsolid)],
 // 0 //
 // 4 16 -4.2 -12.5 -9 -2.4 -3 -9 2.4 -3 -9 4.2 -12.5 -9
   [4,16,-4.2,-12.5,-9,-2.4,-3,-9,2.4,-3,-9,4.2,-12.5,-9],
 // 4 16 4.2 -12.5 9 2.4 -3 9 -2.4 -3 9 -4.2 -12.5 9
   [4,16,4.2,-12.5,9,2.4,-3,9,-2.4,-3,9,-4.2,-12.5,9],
 // 1 16 0 -12.5 0 -4.2 0 0 0 1 0 0 0 -9 rect.dat
-  [1,16,0,-12.5,0,-4.2,0,0,0,1,0,0,0,-9, ldraw_lib__rect()],
+  [1,16,0,-12.5,0,-4.2,0,0,0,1,0,0,0,-9, ldraw_lib__rect(realsolid)],
 // 0 //
 // 3 16 4.2 -12.5 -9 2.4 -3 -9 2.4 -3 -7
   [3,16,4.2,-12.5,-9,2.4,-3,-9,2.4,-3,-7],
@@ -76,5 +77,5 @@ function ldraw_lib__486k02() = [
   [2,24,-4.2,-12.5,9,-2.4,-3,9],
 ];
 module ldraw_lib__486k02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__486k02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__486k02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__486k02(line=0.2);

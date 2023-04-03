@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3298s01.scad>
-function ldraw_lib__3298ps2() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3298ps2(realsolid=false) = [
 // 0 Slope Brick 33  3 x  2 with Black Symbol and White T-Shape Pattern
 // 0 Name: 3298ps2.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -17,7 +18,7 @@ function ldraw_lib__3298ps2() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3298s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3298s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3298s01(realsolid)],
 // 4 0 -6.9143 12.2089 -34.4179 -6.8468 11.9023 -33.8046 -7.891 11.8094 -33.6189 -7.979 12.2089 -34.4179
   [4,0,-6.9143,12.2089,-34.4179,-6.8468,11.9023,-33.8046,-7.891,11.8094,-33.6189,-7.979,12.2089,-34.4179],
 // 4 0 -6.8468 12.5156 -35.0311 -6.9143 12.2089 -34.4179 -7.979 12.2089 -34.4179 -7.891 12.6084 -35.2169
@@ -254,5 +255,5 @@ function ldraw_lib__3298ps2() = [
   [3,16,20,15.4289,-40.8577,0,15.4289,-40.8577,20,20,-50],
 ];
 module ldraw_lib__3298ps2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3298ps2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3298ps2(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3298ps2(line=0.2);

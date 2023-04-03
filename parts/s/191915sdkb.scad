@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__191915sdkb() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__191915sdkb(realsolid=false) = [
 // 0 ~Danish Railways Logo Background
 // 0 Name: s\191915sdkb.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -169,5 +170,5 @@ function ldraw_lib__s__191915sdkb() = [
   [4,16,57,0,-39,41.4,0,-5.45,21.6,0,-5.45,-57,0,-39],
 ];
 module ldraw_lib__s__191915sdkb(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__191915sdkb(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__191915sdkb(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__191915sdkb(line=0.2);

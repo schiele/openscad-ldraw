@@ -3,7 +3,8 @@ use <../p/4-4rin23.scad>
 use <../p/4-4rin24.scad>
 use <../p/4-4rin45.scad>
 use <s/3350s01.scad>
-function ldraw_lib__3350p07() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3350p07(realsolid=false) = [
 // 0 Roadsign Round with End of Speed Limit "40" Pattern
 // 0 Name: 3350p07.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -18,14 +19,14 @@ function ldraw_lib__3350p07() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3350s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3350s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3350s01(realsolid)],
 // 0 //
 // 1 8 0 -88 -2 0.4 0 0 0 0 -0.4 0 1 0 4-4rin45.dat
-  [1,8,0,-88,-2,0.4,0,0,0,0,-0.4,0,1,0, ldraw_lib__4_4rin45()],
+  [1,8,0,-88,-2,0.4,0,0,0,0,-0.4,0,1,0, ldraw_lib__4_4rin45(realsolid)],
 // 1 16 0 -88 -2 0.8 0 0 0 0 -0.8 0 1 0 4-4rin23.dat
-  [1,16,0,-88,-2,0.8,0,0,0,0,-0.8,0,1,0, ldraw_lib__4_4rin23()],
+  [1,16,0,-88,-2,0.8,0,0,0,0,-0.8,0,1,0, ldraw_lib__4_4rin23(realsolid)],
 // 1 16 0 -88 -2 0.8 0 0 0 0 -0.8 0 1 0 4-4rin24.dat
-  [1,16,0,-88,-2,0.8,0,0,0,0,-0.8,0,1,0, ldraw_lib__4_4rin24()],
+  [1,16,0,-88,-2,0.8,0,0,0,0,-0.8,0,1,0, ldraw_lib__4_4rin24(realsolid)],
 // 0 //
 // 4 8 -15.22 -85.32 -2 -12.22 -85.32 -2 -6.46 -92.16 -2 -6.46 -96.3 -2
   [4,8,-15.22,-85.32,-2,-12.22,-85.32,-2,-6.46,-92.16,-2,-6.46,-96.3,-2],
@@ -295,5 +296,5 @@ function ldraw_lib__3350p07() = [
 // 0 //
 ];
 module ldraw_lib__3350p07(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3350p07(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3350p07(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3350p07(line=0.2);

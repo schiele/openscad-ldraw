@@ -4,7 +4,8 @@ use <1-8chrd.scad>
 use <3-4ndis.scad>
 use <4-4ring5.scad>
 use <type-swiss721bt-bold-ur.scad>
-function ldraw_lib__logo_lego_4() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__logo_lego_4(realsolid=false) = [
 // 0 Logo LEGO System (1965-1972)
 // 0 Name: logo-lego-4.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -20,23 +21,23 @@ function ldraw_lib__logo_lego_4() = [
 // 
 // 0 // (R) Marking
 // 1 16 47.2 0 20.5 2.2 0 0 0 1 0 0 0 2.5 type-swiss721bt-bold-ur.dat
-  [1,16,47.2,0,20.5,2.2,0,0,0,1,0,0,0,2.5, ldraw_lib__type_swiss721bt_bold_ur()],
+  [1,16,47.2,0,20.5,2.2,0,0,0,1,0,0,0,2.5, ldraw_lib__type_swiss721bt_bold_ur(realsolid)],
 // 1 16 47.2 0 20.5 -2 0 0 0 1 0 0 0 -2 1-8chrd.dat
-  [1,16,47.2,0,20.5,-2,0,0,0,1,0,0,0,-2, ldraw_lib__1_8chrd()],
+  [1,16,47.2,0,20.5,-2,0,0,0,1,0,0,0,-2, ldraw_lib__1_8chrd(realsolid)],
 // 1 16 47.2 0 20.5 -2 0 0 0 1 0 0 0 2 1-8chrd.dat
-  [1,16,47.2,0,20.5,-2,0,0,0,1,0,0,0,2, ldraw_lib__1_8chrd()],
+  [1,16,47.2,0,20.5,-2,0,0,0,1,0,0,0,2, ldraw_lib__1_8chrd(realsolid)],
 // 1 16 47.2 0 20.5 2 0 0 0 1 0 0 0 -2 1-8chrd.dat
-  [1,16,47.2,0,20.5,2,0,0,0,1,0,0,0,-2, ldraw_lib__1_8chrd()],
+  [1,16,47.2,0,20.5,2,0,0,0,1,0,0,0,-2, ldraw_lib__1_8chrd(realsolid)],
 // 1 16 47.2 0 20.5 2 0 0 0 1 0 0 0 2 1-8chrd.dat
-  [1,16,47.2,0,20.5,2,0,0,0,1,0,0,0,2, ldraw_lib__1_8chrd()],
+  [1,16,47.2,0,20.5,2,0,0,0,1,0,0,0,2, ldraw_lib__1_8chrd(realsolid)],
 // 1 16 47.2 0 20.5 0 0 -2 0 1 0 2 0 0 1-8chrd.dat
-  [1,16,47.2,0,20.5,0,0,-2,0,1,0,2,0,0, ldraw_lib__1_8chrd()],
+  [1,16,47.2,0,20.5,0,0,-2,0,1,0,2,0,0, ldraw_lib__1_8chrd(realsolid)],
 // 1 16 47.2 0 20.5 0 0 2 0 1 0 2 0 0 1-8chrd.dat
-  [1,16,47.2,0,20.5,0,0,2,0,1,0,2,0,0, ldraw_lib__1_8chrd()],
+  [1,16,47.2,0,20.5,0,0,2,0,1,0,2,0,0, ldraw_lib__1_8chrd(realsolid)],
 // 1 16 47.2 0 20.5 0 0 -2 0 1 0 -2 0 0 1-8chrd.dat
-  [1,16,47.2,0,20.5,0,0,-2,0,1,0,-2,0,0, ldraw_lib__1_8chrd()],
+  [1,16,47.2,0,20.5,0,0,-2,0,1,0,-2,0,0, ldraw_lib__1_8chrd(realsolid)],
 // 1 16 47.2 0 20.5 0 0 2 0 1 0 -2 0 0 1-8chrd.dat
-  [1,16,47.2,0,20.5,0,0,2,0,1,0,-2,0,0, ldraw_lib__1_8chrd()],
+  [1,16,47.2,0,20.5,0,0,2,0,1,0,-2,0,0, ldraw_lib__1_8chrd(realsolid)],
 // 4 16 46.2936 0 19.25 45.7858 0 19.0858 47.2 0 18.5 46.7446 0 19.25
   [4,16,46.2936,0,19.25,45.7858,0,19.0858,47.2,0,18.5,46.7446,0,19.25],
 // 3 16 46.7446 0 19.25 47.2 0 18.5 47.6092 0 19.25
@@ -57,11 +58,11 @@ function ldraw_lib__logo_lego_4() = [
   [4,16,46.2936,0,19.25,46.2936,0,21.75,45.2,0,20.5,45.7858,0,19.0858],
 // 
 // 1 0 47.2 0 20.5 .4 0 0 0 1 0 0 0 .4 4-4ring5.dat
-  [1,0,47.2,0,20.5,.4,0,0,0,1,0,0,0,.4, ldraw_lib__4_4ring5()],
+  [1,0,47.2,0,20.5,.4,0,0,0,1,0,0,0,.4, ldraw_lib__4_4ring5(realsolid)],
 // 1 16 47.2 0 20.5 -2.4 0 0 0 1 0 0 0 2.4 3-4ndis.dat
-  [1,16,47.2,0,20.5,-2.4,0,0,0,1,0,0,0,2.4, ldraw_lib__3_4ndis()],
+  [1,16,47.2,0,20.5,-2.4,0,0,0,1,0,0,0,2.4, ldraw_lib__3_4ndis(realsolid)],
 // 1 16 47.2 0 20.5 -2.4 0 0 0 1 0 0 0 -2.4 1-4tang.dat
-  [1,16,47.2,0,20.5,-2.4,0,0,0,1,0,0,0,-2.4, ldraw_lib__1_4tang()],
+  [1,16,47.2,0,20.5,-2.4,0,0,0,1,0,0,0,-2.4, ldraw_lib__1_4tang(realsolid)],
 // 3 16 44.8 0 20.02264 44.368 0 19.762 44.98264 0 19.58152
   [3,16,44.8,0,20.02264,44.368,0,19.762,44.98264,0,19.58152],
 // 4 16 45.411 0 18.185 45.16528 0 19.1404 44.98264 0 19.58152 44.368 0 19.762
@@ -3700,5 +3701,5 @@ function ldraw_lib__logo_lego_4() = [
   [3,16,33.164,0,1.061,32.75,0,.901,32.953,0,.925],
 ];
 module ldraw_lib__logo_lego_4(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__logo_lego_4(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__logo_lego_4(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__logo_lego_4(line=0.2);

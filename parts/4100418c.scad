@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__4100418c() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4100418c(realsolid=false) = [
 // 0 Sticker  1.1 x  1.9 with 11 Black Stripes
 // 0 Name: 4100418c.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -17,7 +18,7 @@ function ldraw_lib__4100418c() = [
 // 
 // 
 // 1 16 0 -0.25 0 19 0 0 0 0.25 0 0 0 11 box5-12.dat
-  [1,16,0,-0.25,0,19,0,0,0,0.25,0,0,0,11, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,19,0,0,0,0.25,0,0,0,11, ldraw_lib__box5_12(realsolid)],
 // 0 //
 // 4 16 -0.55 -0.25 10 -2.75 -0.25 10 -2.75 -0.25 -10 -0.55 -0.25 -10
   [4,16,-0.55,-0.25,10,-2.75,-0.25,10,-2.75,-0.25,-10,-0.55,-0.25,-10],
@@ -152,5 +153,5 @@ function ldraw_lib__4100418c() = [
   [4,0,15.95,-0.25,-10,17.05,-0.25,-10,17.05,-0.25,10,15.95,-0.25,10],
 ];
 module ldraw_lib__4100418c(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4100418c(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4100418c(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4100418c(line=0.2);

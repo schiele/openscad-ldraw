@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__logo_lamborghini_text() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__logo_lamborghini_text(realsolid=false) = [
 // 0 ~Logo Lamborghini Text
 // 0 Name: logo-lamborghini-text.dat
 // 0 Author: Jens Brühl [jb70]
@@ -1516,5 +1517,5 @@ function ldraw_lib__logo_lamborghini_text() = [
   [4,16,3.3789,0,-3.0357,3.27,0,-2.7451,3.2041,0,-2.7717,3.2598,0,-3.0519],
 ];
 module ldraw_lib__logo_lamborghini_text(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__logo_lamborghini_text(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__logo_lamborghini_text(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__logo_lamborghini_text(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <4275b.scad>
-function ldraw_lib__4275() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4275(realsolid=false) = [
 // 0 ~Moved to 4275b
 // 0 Name: 4275.dat
 // 0 Author: [PTadmin]
@@ -17,8 +18,8 @@ function ldraw_lib__4275() = [
 // 0 // Hinge Plate 1 x 2 with 3 Fingers and Hollow Studs
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 4275b.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4275b()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4275b(realsolid)],
 ];
 module ldraw_lib__4275(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4275(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4275(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4275(line=0.2);

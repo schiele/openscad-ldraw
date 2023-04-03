@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/3068bp72s01.scad>
 use <s/3068bs01.scad>
-function ldraw_lib__3068bp72() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3068bp72(realsolid=false) = [
 // 0 Tile  2 x  2 with Green Monitor Screen, Light Bluish Grey Button and Window Pattern
 // 0 Name: 3068bp72.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -16,9 +17,9 @@ function ldraw_lib__3068bp72() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3068bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3068bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3068bs01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3068bp72s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3068bp72s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3068bp72s01(realsolid)],
 // 
 // 0 // on-off button icon
 // 4 71 13.53 0 -15.28 13.53 0 -16.53 13.8 0 -16.53 13.8 0 -15.28
@@ -374,5 +375,5 @@ function ldraw_lib__3068bp72() = [
   [4,16,-4.5,0,-0.1,-4.5,0,1.2,-5.8,0,2.2,-5.8,0,-2.1],
 ];
 module ldraw_lib__3068bp72(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3068bp72(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3068bp72(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3068bp72(line=0.2);

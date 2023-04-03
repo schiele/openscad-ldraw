@@ -4,7 +4,8 @@ use <../p/4-4edge.scad>
 use <../p/axle.scad>
 use <../p/axleho10.scad>
 use <../p/axlehol3.scad>
-function ldraw_lib__6549() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6549(realsolid=false) = [
 // 0 Technic 4 Speed Shift Lever
 // 0 Name: 6549.dat
 // 0 Author: Donald Sutter [technog]
@@ -21,15 +22,15 @@ function ldraw_lib__6549() = [
 // 
 // 
 // 1 16 0 -79 0 1 0 0 0 50 0 0 0 1 axle.dat
-  [1,16,0,-79,0,1,0,0,0,50,0,0,0,1, ldraw_lib__axle()],
+  [1,16,0,-79,0,1,0,0,0,50,0,0,0,1, ldraw_lib__axle(realsolid)],
 // 1 16 0 -29 0 1 0 0 0 1 0 0 0 1 axleho10.dat
-  [1,16,0,-29,0,1,0,0,0,1,0,0,0,1, ldraw_lib__axleho10()],
+  [1,16,0,-29,0,1,0,0,0,1,0,0,0,1, ldraw_lib__axleho10(realsolid)],
 // 1 16 0 -29 0 1 0 0 0 1 0 0 0 1 axlehol3.dat
-  [1,16,0,-29,0,1,0,0,0,1,0,0,0,1, ldraw_lib__axlehol3()],
+  [1,16,0,-29,0,1,0,0,0,1,0,0,0,1, ldraw_lib__axlehol3(realsolid)],
 // 1 16 0 -29 0 6 0 0 0 18 0 0 0 6 4-4cyli.dat
-  [1,16,0,-29,0,6,0,0,0,18,0,0,0,6, ldraw_lib__4_4cyli()],
+  [1,16,0,-29,0,6,0,0,0,18,0,0,0,6, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 -11 0 6 0 0 0 1 0 0 0 6 4-4edge.dat
-  [1,16,0,-11,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4edge()],
+  [1,16,0,-11,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4edge(realsolid)],
 // 4 16 5.66 -11 -5.66 8 -11 0 6 -11 0 4.26 -11 -4.26
   [4,16,5.66,-11,-5.66,8,-11,0,6,-11,0,4.26,-11,-4.26],
 // 4 16 0 -11 -8 5.66 -11 -5.66 4 -11 -4 0 -11 -6
@@ -1200,5 +1201,5 @@ function ldraw_lib__6549() = [
   [5,24,0,25,-5,0,25,5,10,24,2,-10,24,-2],
 ];
 module ldraw_lib__6549(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6549(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6549(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6549(line=0.2);

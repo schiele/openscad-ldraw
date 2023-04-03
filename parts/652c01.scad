@@ -2,7 +2,8 @@ use <../lib.scad>
 use <652.scad>
 use <653.scad>
 use <654.scad>
-function ldraw_lib__652c01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__652c01(realsolid=false) = [
 // 0 Hinge Brick  1 x  8 (Complete)
 // 0 Name: 652c01.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -17,12 +18,12 @@ function ldraw_lib__652c01() = [
 // 
 // 
 // 1 16 -40 0 0 1 0 0 0 1 0 0 0 1 652.dat
-  [1,16,-40,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__652()],
+  [1,16,-40,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__652(realsolid)],
 // 1 16 40 0 0 -1 0 0 0 1 0 0 0 -1 653.dat
-  [1,16,40,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__653()],
+  [1,16,40,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__653(realsolid)],
 // 1 16 0 -5 0 1 0 0 0 1 0 0 0 1 654.dat
-  [1,16,0,-5,0,1,0,0,0,1,0,0,0,1, ldraw_lib__654()],
+  [1,16,0,-5,0,1,0,0,0,1,0,0,0,1, ldraw_lib__654(realsolid)],
 ];
 module ldraw_lib__652c01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__652c01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__652c01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__652c01(line=0.2);

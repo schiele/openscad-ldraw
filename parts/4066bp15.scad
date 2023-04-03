@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/4066bs01.scad>
-function ldraw_lib__4066bp15() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4066bp15(realsolid=false) = [
 // 0 Duplo Brick  1 x  2 x  2 with Wheat and Braided Rope Pattern
 // 0 Name: 4066bp15.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -19,7 +20,7 @@ function ldraw_lib__4066bp15() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4066bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4066bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4066bs01(realsolid)],
 // 4 14 -29.75 23.25 -20 -31 23.5 -20 -31.5 24.25 -20 -31.25 25.25 -20
   [4,14,-29.75,23.25,-20,-31,23.5,-20,-31.5,24.25,-20,-31.25,25.25,-20],
 // 4 14 -28.5 23.75 -20 -29.75 23.25 -20 -31.25 25.25 -20 -30.5 26.5 -20
@@ -1658,5 +1659,5 @@ function ldraw_lib__4066bp15() = [
   [3,0,-18.25,38.25,-20,-20.5,41.5,-20,-17.25,40,-20],
 ];
 module ldraw_lib__4066bp15(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4066bp15(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4066bp15(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4066bp15(line=0.2);

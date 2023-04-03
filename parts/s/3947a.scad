@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__3947a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__3947a(realsolid=false) = [
 // 0 ~Baseplate 32 x 32 Craters - Optional Lines
 // 0 Name: s\3947a.dat
 // 0 Author: Orion Pobursky [OrionP]
@@ -14705,5 +14706,5 @@ function ldraw_lib__s__3947a() = [
   [5,24,55.708,-24,221.577,60,-37.8,227.63,54.69,-37.832,226.975,60,-24,222],
 ];
 module ldraw_lib__s__3947a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__3947a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__3947a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__3947a(line=0.2);

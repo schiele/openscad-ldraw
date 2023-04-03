@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/1-4chrd.scad>
-function ldraw_lib__s__6177949fs06() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__6177949fs06(realsolid=false) = [
 // 0 ~Sticker  0.8 x  1.9 with Black and Dark Blue Headlamp on Transparent Background Right - Upper Section 6
 // 0 Name: s\6177949fs06.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -17,9 +18,9 @@ function ldraw_lib__s__6177949fs06() = [
 // 0 // Primitives
 // 
 // 1 16 -6.5 -.25 -3.0901 -1.5 0 0 0 1 0 0 0 -1.5 1-4chrd.dat
-  [1,16,-6.5,-.25,-3.0901,-1.5,0,0,0,1,0,0,0,-1.5, ldraw_lib__1_4chrd()],
+  [1,16,-6.5,-.25,-3.0901,-1.5,0,0,0,1,0,0,0,-1.5, ldraw_lib__1_4chrd(realsolid)],
 // 1 16 6.5 -.25 -3.0901 1.5 0 0 0 1 0 0 0 -1.5 1-4chrd.dat
-  [1,16,6.5,-.25,-3.0901,1.5,0,0,0,1,0,0,0,-1.5, ldraw_lib__1_4chrd()],
+  [1,16,6.5,-.25,-3.0901,1.5,0,0,0,1,0,0,0,-1.5, ldraw_lib__1_4chrd(realsolid)],
 // 0 // Transparent faces
 // 4 16 -8 -.25 .0144 -8 -.25 -3.0901 -6 -.25 -.994 -6 -.25 .0144
   [4,16,-8,-.25,.0144,-8,-.25,-3.0901,-6,-.25,-.994,-6,-.25,.0144],
@@ -114,5 +115,5 @@ function ldraw_lib__s__6177949fs06() = [
   [3,15,-5.5,-.25,.0144,-5.25,-.25,-.194,-4.9201,-.25,-.194],
 ];
 module ldraw_lib__s__6177949fs06(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__6177949fs06(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__6177949fs06(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__6177949fs06(line=0.2);

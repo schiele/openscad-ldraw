@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/4-4ering.scad>
 use <s/98138s01.scad>
-function ldraw_lib__98138p0n() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__98138p0n(realsolid=false) = [
 // 0 Tile  1 x  1 Round with Tan and Dark Tan Tree Stump Pattern
 // 0 Name: 98138p0n.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -18,9 +19,9 @@ function ldraw_lib__98138p0n() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\98138s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01(realsolid)],
 // 1 16 0 0 0 9 0 0 0 1 0 0 0 9 4-4ering.dat
-  [1,16,0,0,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4ering()],
+  [1,16,0,0,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4ering(realsolid)],
 // 4 16 -6.53 0 0.2 -5.64 0 0.33 -5.72 0 0.47 -6.63 0 0.75
   [4,16,-6.53,0,0.2,-5.64,0,0.33,-5.72,0,0.47,-6.63,0,0.75],
 // 4 16 -7.59 0 0.09 -6.53 0 0.2 -6.63 0 0.75 -7.58 0 1.05
@@ -1279,5 +1280,5 @@ function ldraw_lib__98138p0n() = [
   [4,19,-5.59,0,-1.29,-5.24,0,-1.07,-5.44,0,-.54,-5.6,0,-.85],
 ];
 module ldraw_lib__98138p0n(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__98138p0n(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__98138p0n(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__98138p0n(line=0.2);

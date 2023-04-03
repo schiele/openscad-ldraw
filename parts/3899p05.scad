@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3899s01.scad>
-function ldraw_lib__3899p05() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3899p05(realsolid=false) = [
 // 0 Minifig Cup with Black "I Heart SOUTH PAWS" Pattern
 // 0 Name: 3899p05.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -20,7 +21,7 @@ function ldraw_lib__3899p05() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3899s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3899s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3899s01(realsolid)],
 // 
 // 4 0 -3.27 4.72 -8.8498 -3.33 4.9 -8.8378 -3.24 5.06 -8.8557 -2.91 4.56 -8.9214
   [4,0,-3.27,4.72,-8.8498,-3.33,4.9,-8.8378,-3.24,5.06,-8.8557,-2.91,4.56,-8.9214],
@@ -1090,5 +1091,5 @@ function ldraw_lib__3899p05() = [
   [3,16,-3.59,8.21,-8.7861,-3.6357,4,-8.7771,-3.6357,8.35,-8.7771],
 ];
 module ldraw_lib__3899p05(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3899p05(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3899p05(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3899p05(line=0.2);

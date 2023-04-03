@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/1-4cyli.scad>
 use <s/973s01.scad>
-function ldraw_lib__973pba() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__973pba(realsolid=false) = [
 // 0 Minifig Torso Female with Harlequin Black/White Pattern
 // 0 Name: 973pba.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -18,7 +19,7 @@ function ldraw_lib__973pba() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01(realsolid)],
 // 4 16 19 29 10 19 32 10 -19 32 10 -19 29 10
   [4,16,19,29,10,19,32,10,-19,32,10,-19,29,10],
 // 4 16 -14.345 2 10 14.345 2 10 19 29 10 -19 29 10
@@ -26,7 +27,7 @@ function ldraw_lib__973pba() = [
 // 4 16 -14.345 2 10 -12 0 10 12 0 10 14.345 2 10
   [4,16,-14.345,2,10,-12,0,10,12,0,10,14.345,2,10],
 // 1 0 0 -4 0 4.243 0 -4.243 0 -8 0 -4.243 0 -4.243 1-4cyli.dat
-  [1,0,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli()],
+  [1,0,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli(realsolid)],
 // 
 // 4 15 -13.45 11.5 -10 -13.95 10.85 -10 -13.8 11.75 -10 -13.45 12.5 -10
   [4,15,-13.45,11.5,-10,-13.95,10.85,-10,-13.8,11.75,-10,-13.45,12.5,-10],
@@ -970,5 +971,5 @@ function ldraw_lib__973pba() = [
   [3,15,7.17349,8.12683,-10,7.40606,8.59609,-10,7.69108,8.97109,-10],
 ];
 module ldraw_lib__973pba(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__973pba(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__973pba(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__973pba(line=0.2);

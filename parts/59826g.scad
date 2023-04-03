@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/4-4cylc3.scad>
 use <../p/4-4ering.scad>
-function ldraw_lib__59826g() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__59826g(realsolid=false) = [
 // 0 Sticker  1.75 x  1.75 Round with Quarter Circle Arrow
 // 0 Name: 59826g.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -19,7 +20,7 @@ function ldraw_lib__59826g() = [
 // 
 // 
 // 1 16 0 0 0 17.5 0 0 0 -0.25 0 0 0 17.5 4-4cylc3.dat
-  [1,16,0,0,0,17.5,0,0,0,-0.25,0,0,0,17.5, ldraw_lib__4_4cylc3()],
+  [1,16,0,0,0,17.5,0,0,0,-0.25,0,0,0,17.5, ldraw_lib__4_4cylc3(realsolid)],
 // 
 // 3 1 2.2 -0.25 9.6 2.2 -0.25 12.2 6.5 -0.25 7.9
   [3,1,2.2,-0.25,9.6,2.2,-0.25,12.2,6.5,-0.25,7.9],
@@ -168,8 +169,8 @@ function ldraw_lib__59826g() = [
 // 4 7 8.5 -0.25 8.3 1.4 -0.25 15 0 -0.25 17.5 6.6972 -0.25 16.1682
   [4,7,8.5,-0.25,8.3,1.4,-0.25,15,0,-0.25,17.5,6.6972,-0.25,16.1682],
 // 1 7 0 -.25 0 17.5 0 0 0 1 0 0 0 17.5 4-4ering.dat
-  [1,7,0,-.25,0,17.5,0,0,0,1,0,0,0,17.5, ldraw_lib__4_4ering()],
+  [1,7,0,-.25,0,17.5,0,0,0,1,0,0,0,17.5, ldraw_lib__4_4ering(realsolid)],
 ];
 module ldraw_lib__59826g(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__59826g(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__59826g(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__59826g(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__168335n() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__168335n(realsolid=false) = [
 // 0 Sticker  1.5 x  1.8 with "MT 5591"
 // 0 Name: 168335n.dat
 // 0 Author: Ulrich Röder [UR]
@@ -17,7 +18,7 @@ function ldraw_lib__168335n() = [
 // 
 // 
 // 1 16 0 -0.25 0 18 0 0 0 0.25 0 0 0 14.5 box5-12.dat
-  [1,16,0,-0.25,0,18,0,0,0,0.25,0,0,0,14.5, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,18,0,0,0,0.25,0,0,0,14.5, ldraw_lib__box5_12(realsolid)],
 // 
 // 0 // Black
 // 4 0 -6.59 -.25 -7.323 -6.528 -.25 -6.636 -9.029 -.25 -6.563 -9.048 -.25 -6.847
@@ -642,5 +643,5 @@ function ldraw_lib__168335n() = [
   [4,15,-4.758,-.25,1.418,-4.139,-.25,7.631,-4.139,-.25,9.814,-4.758,-.25,9.814],
 ];
 module ldraw_lib__168335n(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__168335n(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__168335n(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__168335n(line=0.2);

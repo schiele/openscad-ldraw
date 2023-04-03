@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/2-4chrd.scad>
 use <../p/2-4ndis.scad>
-function ldraw_lib__195985b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__195985b(realsolid=false) = [
 // 0 Sticker  4.6 x 2.9 with Red and Black Diagonal Stripe and White Helmet
 // 0 Name: 195985b.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -67,9 +68,9 @@ function ldraw_lib__195985b() = [
 // 3 16 -29 0 -46 -29 0 -43 -28.5 0 -46
   [3,16,-29,0,-46,-29,0,-43,-28.5,0,-46],
 // 1 7 2.5 -.25 -8.5 0 0 -4.5 0 1 0 4.5 0 0 2-4chrd.dat
-  [1,7,2.5,-.25,-8.5,0,0,-4.5,0,1,0,4.5,0,0, ldraw_lib__2_4chrd()],
+  [1,7,2.5,-.25,-8.5,0,0,-4.5,0,1,0,4.5,0,0, ldraw_lib__2_4chrd(realsolid)],
 // 1 15 2.5 -.25 -8.5 0 0 -4.5 0 1 0 4.5 0 0 2-4ndis.dat
-  [1,15,2.5,-.25,-8.5,0,0,-4.5,0,1,0,4.5,0,0, ldraw_lib__2_4ndis()],
+  [1,15,2.5,-.25,-8.5,0,0,-4.5,0,1,0,4.5,0,0, ldraw_lib__2_4ndis(realsolid)],
 // 4 4 9 -.25 7 29 -.25 33 29 -.25 46 6 -.25 9
   [4,4,9,-.25,7,29,-.25,33,29,-.25,46,6,-.25,9],
 // 3 4 29 -.25 46 3 -.25 10 6 -.25 9
@@ -221,5 +222,5 @@ function ldraw_lib__195985b() = [
   [5,24,-7,-.25,8,-7,0,8,-11,-.25,4,-3,-.25,10],
 ];
 module ldraw_lib__195985b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__195985b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__195985b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__195985b(line=0.2);

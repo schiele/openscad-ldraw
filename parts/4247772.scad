@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <50967.scad>
-function ldraw_lib__4247772() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4247772(realsolid=false) = [
 // 0 ~_Slope Brick Curved  8 x  1 x  1.667 with Arch Red (Obsolete)
 // 0 Name: 4247772.dat
 // 0 Author: [PTadmin]
@@ -20,8 +21,8 @@ function ldraw_lib__4247772() = [
 // 0 // colouring of the part (Red).
 // 
 // 1 4 0 0 0 1 0 0 0 1 0 0 0 1 50967.dat
-  [1,4,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__50967()],
+  [1,4,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__50967(realsolid)],
 ];
 module ldraw_lib__4247772(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4247772(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4247772(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4247772(line=0.2);

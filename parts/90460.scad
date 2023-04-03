@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <6131.scad>
-function ldraw_lib__90460() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__90460(realsolid=false) = [
 // 0 =Minifig Wizards Hat
 // 0 Name: 90460.dat
 // 0 Author: Rolf Osterthun [Rolf]
@@ -19,8 +20,8 @@ function ldraw_lib__90460() = [
 // 0 // Alias of 6131
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 6131.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__6131()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__6131(realsolid)],
 ];
 module ldraw_lib__90460(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__90460(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__90460(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__90460(line=0.2);

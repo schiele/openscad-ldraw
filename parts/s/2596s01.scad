@@ -2,7 +2,8 @@ use <../../lib.scad>
 use <../../p/2-4cyli.scad>
 use <../../p/2-4edge.scad>
 use <../../p/2-4ndis.scad>
-function ldraw_lib__s__2596s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__2596s01(realsolid=false) = [
 // 0 ~Door  1 x  9 x 11 - Clip
 // 0 Name: s\2596s01.dat
 // 0 Author: Marek Idec [Maras]
@@ -21,11 +22,11 @@ function ldraw_lib__s__2596s01() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -4 0 0 0 4 0 8 0 4 0 0 2-4cyli.dat
-  [1,16,0,-4,0,0,0,4,0,8,0,4,0,0, ldraw_lib__2_4cyli()],
+  [1,16,0,-4,0,0,0,4,0,8,0,4,0,0, ldraw_lib__2_4cyli(realsolid)],
 // 1 16 0 -4 0 0 0 4 0 8 0 4 0 0 2-4edge.dat
-  [1,16,0,-4,0,0,0,4,0,8,0,4,0,0, ldraw_lib__2_4edge()],
+  [1,16,0,-4,0,0,0,4,0,8,0,4,0,0, ldraw_lib__2_4edge(realsolid)],
 // 1 16 0 4 0 0 0 4 0 8 0 4 0 0 2-4edge.dat
-  [1,16,0,4,0,0,0,4,0,8,0,4,0,0, ldraw_lib__2_4edge()],
+  [1,16,0,4,0,0,0,4,0,8,0,4,0,0, ldraw_lib__2_4edge(realsolid)],
 // 
 // 4 16 -4 4 -4 -4 -4 -4 0 -4 -4 0 4 -4
   [4,16,-4,4,-4,-4,-4,-4,0,-4,-4,0,4,-4],
@@ -87,9 +88,9 @@ function ldraw_lib__s__2596s01() = [
   [4,16,22,-4,-1.9,0,-4,-8,0,4,-8,22,4,-1.9],
 // 
 // 1 16 0 -4 0 0 0 4 0 8 0 4 0 0 2-4ndis.dat
-  [1,16,0,-4,0,0,0,4,0,8,0,4,0,0, ldraw_lib__2_4ndis()],
+  [1,16,0,-4,0,0,0,4,0,8,0,4,0,0, ldraw_lib__2_4ndis(realsolid)],
 // 1 16 0 4 0 0 0 4 0 -8 0 -4 0 0 2-4ndis.dat
-  [1,16,0,4,0,0,0,4,0,-8,0,-4,0,0, ldraw_lib__2_4ndis()],
+  [1,16,0,4,0,0,0,4,0,-8,0,-4,0,0, ldraw_lib__2_4ndis(realsolid)],
 // 2 24 0 -4 -4 -4 -4 -4
   [2,24,0,-4,-4,-4,-4,-4],
 // 2 24 -4 -4 -4 -4 -4 -8
@@ -172,5 +173,5 @@ function ldraw_lib__s__2596s01() = [
 // 0
 ];
 module ldraw_lib__s__2596s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__2596s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__2596s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__2596s01(line=0.2);

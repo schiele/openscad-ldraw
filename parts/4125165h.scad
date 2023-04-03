@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__4125165h() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4125165h(realsolid=false) = [
 // 0 Sticker  0.8 x  3.7 with Black Air Vents on Dark Grey Dashboard
 // 0 Name: 4125165h.dat
 // 0 Author: Max Martin Richter [MMR1988]
@@ -17,7 +18,7 @@ function ldraw_lib__4125165h() = [
 // 
 // 
 // 1 16 0 -.25 0 36.75 0 0 0 .25 0 0 0 8 box5-12.dat
-  [1,16,0,-.25,0,36.75,0,0,0,.25,0,0,0,8, ldraw_lib__box5_12()],
+  [1,16,0,-.25,0,36.75,0,0,0,.25,0,0,0,8, ldraw_lib__box5_12(realsolid)],
 // 
 // 4 14 -30.4528 -0.25 3.4371 -30.759 -0.25 3.498 -30.759 -0.25 2.998 -30.6442 -0.25 2.9752
   [4,14,-30.4528,-0.25,3.4371,-30.759,-0.25,3.498,-30.759,-0.25,2.998,-30.6442,-0.25,2.9752],
@@ -1747,5 +1748,5 @@ function ldraw_lib__4125165h() = [
   [3,8,-32.149,-0.25,1.898,-29.6081,-0.25,-2.2558,-29.4347,-0.25,-1.9963],
 ];
 module ldraw_lib__4125165h(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4125165h(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4125165h(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4125165h(line=0.2);

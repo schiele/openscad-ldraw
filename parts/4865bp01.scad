@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/1-4chrd.scad>
 use <../p/1-4ring1.scad>
 use <s/4865bs01.scad>
-function ldraw_lib__4865bp01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4865bp01(realsolid=false) = [
 // 0 Panel  1 x  2 x  1 with Rounded Corners with Brick Wall and Tunnel Pattern
 // 0 Name: 4865bp01.dat
 // 0 Author: Damien Roux [Darats]
@@ -19,16 +20,16 @@ function ldraw_lib__4865bp01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4865bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4865bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4865bs01(realsolid)],
 // 
 // 1 484 18 2 10 0 0 1 -1 0 0 0 -1 0 1-4chrd.dat
-  [1,484,18,2,10,0,0,1,-1,0,0,0,-1,0, ldraw_lib__1_4chrd()],
+  [1,484,18,2,10,0,0,1,-1,0,0,0,-1,0, ldraw_lib__1_4chrd(realsolid)],
 // 1 484 -18 2 10 -1 0 0 0 0 -1 0 -1 0 1-4chrd.dat
-  [1,484,-18,2,10,-1,0,0,0,0,-1,0,-1,0, ldraw_lib__1_4chrd()],
+  [1,484,-18,2,10,-1,0,0,0,0,-1,0,-1,0, ldraw_lib__1_4chrd(realsolid)],
 // 1 16 18 2 10 0 0 1 -1 0 0 0 -1 0 1-4ring1.dat
-  [1,16,18,2,10,0,0,1,-1,0,0,0,-1,0, ldraw_lib__1_4ring1()],
+  [1,16,18,2,10,0,0,1,-1,0,0,0,-1,0, ldraw_lib__1_4ring1(realsolid)],
 // 1 16 -18 2 10 -1 0 0 0 0 -1 0 -1 0 1-4ring1.dat
-  [1,16,-18,2,10,-1,0,0,0,0,-1,0,-1,0, ldraw_lib__1_4ring1()],
+  [1,16,-18,2,10,-1,0,0,0,0,-1,0,-1,0, ldraw_lib__1_4ring1(realsolid)],
 // 4 0 -14.624 18.482 10 -14.492 16.825 10 -11.392 17.215 10 -11.509 18.482 10
   [4,0,-14.624,18.482,10,-14.492,16.825,10,-11.392,17.215,10,-11.509,18.482,10],
 // 4 0 -14.492 16.825 10 -14.222 15.218 10 -11.173 15.986 10 -11.392 17.215 10
@@ -667,5 +668,5 @@ function ldraw_lib__4865bp01() = [
   [3,72,14.598,18.482,10,15.304,18.482,10,19,19.25,10],
 ];
 module ldraw_lib__4865bp01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4865bp01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4865bp01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4865bp01(line=0.2);

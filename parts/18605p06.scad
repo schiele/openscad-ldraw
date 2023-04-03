@@ -2,7 +2,8 @@ use <../lib.scad>
 use <s/18605p05s01.scad>
 use <s/18605p05s02.scad>
 use <s/18605s01.scad>
-function ldraw_lib__18605p06() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__18605p06(realsolid=false) = [
 // 0 ~Brick  4 x  4 x  0.667 Round - Top with  2 Studs with Medium Azure Panel and "ZAP" Pattern
 // 0 Name: 18605p06.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -17,11 +18,11 @@ function ldraw_lib__18605p06() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\18605s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__18605s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__18605s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\18605p05s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__18605p05s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__18605p05s01(realsolid)],
 // 1 322 0 0 0 1 0 0 0 1 0 0 0 1 s\18605p05s02.dat
-  [1,322,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__18605p05s02()],
+  [1,322,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__18605p05s02(realsolid)],
 // 4 0 -4.3 0 -27.6 -3.9 0 -22.8 -5.8 0 -25.5 -6.1 0 -30.2
   [4,0,-4.3,0,-27.6,-3.9,0,-22.8,-5.8,0,-25.5,-6.1,0,-30.2],
 // 4 0 -4.3 0 -27.6 -6.1 0 -30.2 -2.5 0 -28.9 -2.53 0 -28.6
@@ -172,5 +173,5 @@ function ldraw_lib__18605p06() = [
   [3,15,4.69,0,-25.48,4.6,0,-25.94,4.68,0,-25.72],
 ];
 module ldraw_lib__18605p06(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__18605p06(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__18605p06(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__18605p06(line=0.2);

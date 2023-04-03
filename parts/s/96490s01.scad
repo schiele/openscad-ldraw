@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/rect.scad>
-function ldraw_lib__s__96490s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__96490s01(realsolid=false) = [
 // 0 ~Figure Friends Glasses Oval Shaped with Pin - Half
 // 0 Name: s\96490s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -285,7 +286,7 @@ function ldraw_lib__s__96490s01() = [
 // 4 16 14.078 3.754 -1.807 14.88 4.077 -1.097 14.88 -2.611 -1.097 14.078 -2.883 -1.807
   [4,16,14.078,3.754,-1.807,14.88,4.077,-1.097,14.88,-2.611,-1.097,14.078,-2.883,-1.807],
 // 1 16 14.88 0.733 0.624 0 -1 0 0 0 3.344 -1.721 0 0 rect.dat
-  [1,16,14.88,0.733,0.624,0,-1,0,0,0,3.344,-1.721,0,0, ldraw_lib__rect()],
+  [1,16,14.88,0.733,0.624,0,-1,0,0,0,3.344,-1.721,0,0, ldraw_lib__rect(realsolid)],
 // 4 16 14.88 -2.611 2.345 14.88 4.077 2.345 13.782 3.641 2.721 13.782 -2.979 2.721
   [4,16,14.88,-2.611,2.345,14.88,4.077,2.345,13.782,3.641,2.721,13.782,-2.979,2.721],
 // 3 16 13.782 -2.979 2.721 13.782 3.641 2.721 13.393 -3.102 2.762
@@ -794,5 +795,5 @@ function ldraw_lib__s__96490s01() = [
   [5,24,13.782,3.641,2.721,14.078,3.754,-1.807,13.455,3.518,-2.025,14.88,4.077,2.345],
 ];
 module ldraw_lib__s__96490s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__96490s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__96490s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__96490s01(line=0.2);

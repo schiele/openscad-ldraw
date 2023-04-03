@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__29117as01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__29117as01(realsolid=false) = [
 // 0 ~Wheel Rim 11 x 18 Front with  5 Wide Spokes
 // 0 Name: s\29117as01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -83,5 +84,5 @@ function ldraw_lib__s__29117as01() = [
   [3,16,0,7.2444,0,5.865,9.21,0,5.556,9.7702,0],
 ];
 module ldraw_lib__s__29117as01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__29117as01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__29117as01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__29117as01(line=0.2);

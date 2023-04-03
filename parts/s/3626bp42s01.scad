@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__3626bp42s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__3626bp42s01(realsolid=false) = [
 // 0 ~Minifig Head Beard and Messy Hair Background Pattern - Half
 // 0 Name: s\3626bp42s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -561,5 +562,5 @@ function ldraw_lib__s__3626bp42s01() = [
   [3,16,11.94,4.62,-5.0809,11.72,14.72,-5.4101,11.8,16.14,-5.2904],
 ];
 module ldraw_lib__s__3626bp42s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__3626bp42s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__3626bp42s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__3626bp42s01(line=0.2);

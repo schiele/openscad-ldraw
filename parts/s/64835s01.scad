@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/4-4cylc.scad>
 use <../../p/4-4cylo.scad>
-function ldraw_lib__s__64835s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__64835s01(realsolid=false) = [
 // 0 ~Animal Cow Head Half without Pattern Areas
 // 0 Name: s\64835s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -20,11 +21,11 @@ function ldraw_lib__s__64835s01() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 0 0 10 0 16 0 0 0 0 16 4-4cylo.dat
-  [1,16,0,0,0,0,10,0,16,0,0,0,0,16, ldraw_lib__4_4cylo()],
+  [1,16,0,0,0,0,10,0,16,0,0,0,0,16, ldraw_lib__4_4cylo(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 2 -21.7 -43 0 8.6 0 4 0 0 0 0 4 4-4cylc.dat
-  [1,16,2,-21.7,-43,0,8.6,0,4,0,0,0,0,4, ldraw_lib__4_4cylc()],
+  [1,16,2,-21.7,-43,0,8.6,0,4,0,0,0,0,4, ldraw_lib__4_4cylc(realsolid)],
 // 3 16 0 0.193 -61.854 5.433 -3.622 -58.575 0 -5.183 -58.182
   [3,16,0,0.193,-61.854,5.433,-3.622,-58.575,0,-5.183,-58.182],
 // 3 16 0 0.193 -61.854 5.162 0.111 -61.313 5.433 -3.622 -58.575
@@ -1813,5 +1814,5 @@ function ldraw_lib__s__64835s01() = [
   [5,24,6.918,14.983,-58.959,9.162,11.854,-61.547,0,15.345,-59.867,9.992,12.547,-56.281],
 ];
 module ldraw_lib__s__64835s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__64835s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__64835s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__64835s01(line=0.2);

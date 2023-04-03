@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__4615865e() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4615865e(realsolid=false) = [
 // 0 Sticker  1.0 x  0.9 with Twin Exhaust Pipes Right
 // 0 Name: 4615865e.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -19,7 +20,7 @@ function ldraw_lib__4615865e() = [
 // 0 // Box
 // 
 // 1 16 0 -0.25 -1.5 9 0 0 0 0.25 0 0 0 10 box5-12.dat
-  [1,16,0,-0.25,-1.5,9,0,0,0,0.25,0,0,0,10, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,-1.5,9,0,0,0,0.25,0,0,0,10, ldraw_lib__box5_12(realsolid)],
 // 0 // Black surface
 // 3 0 0 -0.25 3.6074 -0.27 -0.25 1.17 0.27 -0.25 1.17
   [3,0,0,-0.25,3.6074,-0.27,-0.25,1.17,0.27,-0.25,1.17],
@@ -358,5 +359,5 @@ function ldraw_lib__4615865e() = [
   [4,0,-5.58,-0.25,-2.88,-4.95,-0.25,-3.33,-4.95,-0.25,-2.88,-5.58,-0.25,-2.43],
 ];
 module ldraw_lib__4615865e(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4615865e(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4615865e(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4615865e(line=0.2);

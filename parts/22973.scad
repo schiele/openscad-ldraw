@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <32189.scad>
-function ldraw_lib__22973() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__22973(realsolid=false) = [
 // 0 =Technic Panel Fairing #4
 // 0 Name: 22973.dat
 // 0 Author: Steve Bliss [sbliss]
@@ -20,8 +21,8 @@ function ldraw_lib__22973() = [
 // 
 // 0 // Alias of 32189
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 32189.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__32189()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__32189(realsolid)],
 ];
 module ldraw_lib__22973(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__22973(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__22973(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__22973(line=0.2);

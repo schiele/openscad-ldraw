@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <4544258c.scad>
-function ldraw_lib__4544258d() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4544258d(realsolid=false) = [
 // 0 Sticker  1.8 x  1.8 with Porthole Front Left
 // 0 Name: 4544258d.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -17,8 +18,8 @@ function ldraw_lib__4544258d() = [
 // 
 // 
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 4544258c.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__4544258c()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__4544258c(realsolid)],
 ];
 module ldraw_lib__4544258d(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4544258d(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4544258d(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4544258d(line=0.2);

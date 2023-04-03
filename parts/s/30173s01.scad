@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/5-16chrd.scad>
 use <../../p/5-16cylo.scad>
-function ldraw_lib__s__30173s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__30173s01(realsolid=false) = [
 // 0 ~Minifig Sword Katana Blade
 // 0 Name: s\30173s01.dat
 // 0 Author: Franklin W. Cain [fwcain]
@@ -23,11 +24,11 @@ function ldraw_lib__s__30173s01() = [
 // 
 // 0 // Primitives
 // 1 16 -1.625 -96 10.375 0 3.25 0 -2 0 0 0 0 2 5-16cylo.dat
-  [1,16,-1.625,-96,10.375,0,3.25,0,-2,0,0,0,0,2, ldraw_lib__5_16cylo()],
+  [1,16,-1.625,-96,10.375,0,3.25,0,-2,0,0,0,0,2, ldraw_lib__5_16cylo(realsolid)],
 // 1 16 -1.625 -96 10.375 0 1 0 -2 0 0 0 0 2 5-16chrd.dat
-  [1,16,-1.625,-96,10.375,0,1,0,-2,0,0,0,0,2, ldraw_lib__5_16chrd()],
+  [1,16,-1.625,-96,10.375,0,1,0,-2,0,0,0,0,2, ldraw_lib__5_16chrd(realsolid)],
 // 1 16 1.625 -96 10.375 0 -1 0 -2 0 0 0 0 2 5-16chrd.dat
-  [1,16,1.625,-96,10.375,0,-1,0,-2,0,0,0,0,2, ldraw_lib__5_16chrd()],
+  [1,16,1.625,-96,10.375,0,-1,0,-2,0,0,0,0,2, ldraw_lib__5_16chrd(realsolid)],
 // 0 // Central band
 // 0 // Faces
 // 4 16 0.75 -18 -4 0.75 -40.7674 -2.6875 -0.75 -40.7674 -2.6875 -0.75 -18 -4
@@ -244,5 +245,5 @@ function ldraw_lib__s__30173s01() = [
   [5,24,1.625,-90.763,11.435,1.625,-94.5762,7.1918,1.7,-75.7891,9.08,1.625,-97.325,9.265],
 ];
 module ldraw_lib__s__30173s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__30173s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__30173s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__30173s01(line=0.2);

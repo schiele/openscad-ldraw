@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <24375.scad>
 use <88323.scad>
-function ldraw_lib__88323c06() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__88323c06(realsolid=false) = [
 // 0 Technic Chain Tread 5 Wide Reinforced with 2 Orange Rubber Feet
 // 0 Name: 88323c06.dat
 // 0 Author: Steffen [Steffen]
@@ -18,12 +19,12 @@ function ldraw_lib__88323c06() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 88323.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__88323()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__88323(realsolid)],
 // 1 350 20 -14 -17 1 0 0 0 1 0 0 0 1 24375.dat
-  [1,350,20,-14,-17,1,0,0,0,1,0,0,0,1, ldraw_lib__24375()],
+  [1,350,20,-14,-17,1,0,0,0,1,0,0,0,1, ldraw_lib__24375(realsolid)],
 // 1 350 -20 -14 -17 1 0 0 0 1 0 0 0 1 24375.dat
-  [1,350,-20,-14,-17,1,0,0,0,1,0,0,0,1, ldraw_lib__24375()],
+  [1,350,-20,-14,-17,1,0,0,0,1,0,0,0,1, ldraw_lib__24375(realsolid)],
 ];
 module ldraw_lib__88323c06(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__88323c06(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__88323c06(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__88323c06(line=0.2);

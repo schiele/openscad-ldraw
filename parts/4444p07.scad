@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/4444s01.scad>
-function ldraw_lib__4444p07() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4444p07(realsolid=false) = [
 // 0 Panel  2 x  5 x  6 with Red Scattered Bricks Pattern
 // 0 Name: 4444p07.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -17,7 +18,7 @@ function ldraw_lib__4444p07() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4444s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4444s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4444s01(realsolid)],
 // 0 //
 // 4 4 -34.5 62.8 -10 -34.5 63.45 -10 -31.35 64.6 -10 -33 62.5 -10
   [4,4,-34.5,62.8,-10,-34.5,63.45,-10,-31.35,64.6,-10,-33,62.5,-10],
@@ -1059,5 +1060,5 @@ function ldraw_lib__4444p07() = [
   [3,16,36.65,43.2,-10,35.8,43.25,-10,34.2,43.75,-10],
 ];
 module ldraw_lib__4444p07(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4444p07(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4444p07(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4444p07(line=0.2);

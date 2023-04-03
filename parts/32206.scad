@@ -4,7 +4,8 @@ use <../p/znap1.scad>
 use <../p/znap4.scad>
 use <../p/znap5.scad>
 use <../p/znap6.scad>
-function ldraw_lib__32206() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__32206(realsolid=false) = [
 // 0 Znap Beam Angle  5 Holes
 // 0 Name: 32206.dat
 // 0 Author: Thomas Woelk [t.woelk]
@@ -22,35 +23,35 @@ function ldraw_lib__32206() = [
 // 
 // 
 // 1 16 -80 0 -60 1 0 0 0 1 0 0 0 1 znap6.dat
-  [1,16,-80,0,-60,1,0,0,0,1,0,0,0,1, ldraw_lib__znap6()],
+  [1,16,-80,0,-60,1,0,0,0,1,0,0,0,1, ldraw_lib__znap6(realsolid)],
 // 1 16 -80 0 -40 1 0 0 0 1 0 0 0 1 connhole.dat
-  [1,16,-80,0,-40,1,0,0,0,1,0,0,0,1, ldraw_lib__connhole()],
+  [1,16,-80,0,-40,1,0,0,0,1,0,0,0,1, ldraw_lib__connhole(realsolid)],
 // 1 16 -80 0 -40 -1 0 0 0 -1 0 0 0 1 znap4.dat
-  [1,16,-80,0,-40,-1,0,0,0,-1,0,0,0,1, ldraw_lib__znap4()],
+  [1,16,-80,0,-40,-1,0,0,0,-1,0,0,0,1, ldraw_lib__znap4(realsolid)],
 // 1 16 80 0 -60 -1 0 0 0 -1 0 0 0 1 znap6.dat
-  [1,16,80,0,-60,-1,0,0,0,-1,0,0,0,1, ldraw_lib__znap6()],
+  [1,16,80,0,-60,-1,0,0,0,-1,0,0,0,1, ldraw_lib__znap6(realsolid)],
 // 1 16 80 0 -40 -1 0 0 0 -1 0 0 0 1 connhole.dat
-  [1,16,80,0,-40,-1,0,0,0,-1,0,0,0,1, ldraw_lib__connhole()],
+  [1,16,80,0,-40,-1,0,0,0,-1,0,0,0,1, ldraw_lib__connhole(realsolid)],
 // 1 16 -40 0 0 -1 0 0 0 -1 0 0 0 1 connhole.dat
-  [1,16,-40,0,0,-1,0,0,0,-1,0,0,0,1, ldraw_lib__connhole()],
+  [1,16,-40,0,0,-1,0,0,0,-1,0,0,0,1, ldraw_lib__connhole(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 -1 0 0 0 1 connhole.dat
-  [1,16,0,0,0,-1,0,0,0,-1,0,0,0,1, ldraw_lib__connhole()],
+  [1,16,0,0,0,-1,0,0,0,-1,0,0,0,1, ldraw_lib__connhole(realsolid)],
 // 1 16 40 0 0 -1 0 0 0 -1 0 0 0 1 connhole.dat
-  [1,16,40,0,0,-1,0,0,0,-1,0,0,0,1, ldraw_lib__connhole()],
+  [1,16,40,0,0,-1,0,0,0,-1,0,0,0,1, ldraw_lib__connhole(realsolid)],
 // 1 16 40 0 0 0 0 1 0 -1 0 1 0 0 znap4.dat
-  [1,16,40,0,0,0,0,1,0,-1,0,1,0,0, ldraw_lib__znap4()],
+  [1,16,40,0,0,0,0,1,0,-1,0,1,0,0, ldraw_lib__znap4(realsolid)],
 // 1 16 -40 0 0 0 0 -1 0 1 0 1 0 0 znap4.dat
-  [1,16,-40,0,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__znap4()],
+  [1,16,-40,0,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__znap4(realsolid)],
 // 1 16 -60 0 -20 -0.707107 0 5.85767 0 -1 0 0.707107 0 5.85767 znap5.dat
-  [1,16,-60,0,-20,-0.707107,0,5.85767,0,-1,0,0.707107,0,5.85767, ldraw_lib__znap5()],
+  [1,16,-60,0,-20,-0.707107,0,5.85767,0,-1,0,0.707107,0,5.85767, ldraw_lib__znap5(realsolid)],
 // 1 16 60 0 -20 0.707107 0 -5.85767 0 1 0 0.707107 0 5.85767 znap5.dat
-  [1,16,60,0,-20,0.707107,0,-5.85767,0,1,0,0.707107,0,5.85767, ldraw_lib__znap5()],
+  [1,16,60,0,-20,0.707107,0,-5.85767,0,1,0,0.707107,0,5.85767, ldraw_lib__znap5(realsolid)],
 // 1 16 80 0 -40 1 0 0 0 1 0 0 0 1 znap4.dat
-  [1,16,80,0,-40,1,0,0,0,1,0,0,0,1, ldraw_lib__znap4()],
+  [1,16,80,0,-40,1,0,0,0,1,0,0,0,1, ldraw_lib__znap4(realsolid)],
 // 1 16 -20 0 0 0 0 1 0 -1 0 1 0 0 znap1.dat
-  [1,16,-20,0,0,0,0,1,0,-1,0,1,0,0, ldraw_lib__znap1()],
+  [1,16,-20,0,0,0,0,1,0,-1,0,1,0,0, ldraw_lib__znap1(realsolid)],
 // 1 16 20 0 0 0 0 1 0 -1 0 1 0 0 znap1.dat
-  [1,16,20,0,0,0,0,1,0,-1,0,1,0,0, ldraw_lib__znap1()],
+  [1,16,20,0,0,0,0,1,0,-1,0,1,0,0, ldraw_lib__znap1(realsolid)],
 // 4 16 -40 10 10 40 10 10 40 -10 10 -40 -10 10
   [4,16,-40,10,10,40,10,10,40,-10,10,-40,-10,10],
 // 2 24 -40 -10 10 40 -10 10
@@ -91,5 +92,5 @@ function ldraw_lib__32206() = [
 // 0 //
 ];
 module ldraw_lib__32206(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__32206(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__32206(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__32206(line=0.2);

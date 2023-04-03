@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__68881p01s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__68881p01s01(realsolid=false) = [
 // 0 ~Brick 10 x  5 x  2.667 Semi Circle with Curved Top - Eyes Pattern
 // 0 Name: s\68881p01s01.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -438,5 +439,5 @@ function ldraw_lib__s__68881p01s01() = [
   [4,0,22.6751,-28.2139,54.7425,24.78837,-25.4906,59.84441,23.8,-25.55655,60.039,20.91715,-26.28012,59.47142],
 ];
 module ldraw_lib__s__68881p01s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__68881p01s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__68881p01s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__68881p01s01(line=0.2);

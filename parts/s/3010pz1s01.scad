@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__3010pz1s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__3010pz1s01(realsolid=false) = [
 // 0 ~Brick  1 x  4 with Yellow Batgirl Logo with Black Border Pattern - Half
 // 0 Name: s\3010pz1s01.dat
 // 0 Author: Damien Roux [Darats]
@@ -549,5 +550,5 @@ function ldraw_lib__s__3010pz1s01() = [
   [3,16,-0.36,22.796,0,0,24,0,-0.176,22.831,0],
 ];
 module ldraw_lib__s__3010pz1s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__3010pz1s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__3010pz1s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__3010pz1s01(line=0.2);

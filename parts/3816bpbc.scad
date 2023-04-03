@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3817bs01.scad>
-function ldraw_lib__3816bpbc() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3816bpbc(realsolid=false) = [
 // 0 Minifig Leg Right with Iron Man Armoured Suit Mark VII Pattern
 // 0 Name: 3816bpbc.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -19,7 +20,7 @@ function ldraw_lib__3816bpbc() = [
 // 
 // 
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\3817bs01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__3817bs01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__3817bs01(realsolid)],
 // 4 16 -19.23 20 -4 -19.23 20 -10 -1.5 20 -10 -1.5 20 -4
   [4,16,-19.23,20,-4,-19.23,20,-10,-1.5,20,-10,-1.5,20,-4],
 // 4 16 -19.23 20 -10 -19.5 28 -10 -1.5 28 -10 -1.5 20 -10
@@ -296,5 +297,5 @@ function ldraw_lib__3816bpbc() = [
   [4,16,-18.755,6.187,-6.187,-18.804,7.399,-4,-17,7.399,-4,-16.9587,6.187,-6.187],
 ];
 module ldraw_lib__3816bpbc(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3816bpbc(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3816bpbc(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3816bpbc(line=0.2);

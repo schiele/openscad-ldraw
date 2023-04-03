@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__4162510e() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4162510e(realsolid=false) = [
 // 0 Sticker  1.2 x  4.0 with Black "H3451" on White Background
 // 0 Name: 4162510e.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -18,7 +19,7 @@ function ldraw_lib__4162510e() = [
 // 
 // 0 // Primitives
 // 1 16 0 -.25 0 40 0 0 0 .25 0 0 0 12 box5-12.dat
-  [1,16,0,-.25,0,40,0,0,0,.25,0,0,0,12, ldraw_lib__box5_12()],
+  [1,16,0,-.25,0,40,0,0,0,.25,0,0,0,12, ldraw_lib__box5_12(realsolid)],
 // 0 // Top faces
 // 0 // Letter "H"
 // 3 0 -31.75 -.25 2 -31.75 -.25 8 -35.75 -.25 8
@@ -364,5 +365,5 @@ function ldraw_lib__4162510e() = [
   [3,15,32,-.25,-8,21.9142,-.25,-7.021,19.881,-.25,-8.057],
 ];
 module ldraw_lib__4162510e(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4162510e(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4162510e(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4162510e(line=0.2);

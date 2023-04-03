@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <3067p11.scad>
-function ldraw_lib__9359() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__9359(realsolid=false) = [
 // 0 ~_Brick  1 x  6 without Centre Studs with "TAXI" Pattern Trans Green (Obsolete)
 // 0 Name: 9359.dat
 // 0 Author: Chris Dee [cwdee]
@@ -17,8 +18,8 @@ function ldraw_lib__9359() = [
 // 
 // 
 // 1 34 0 0 0 1 0 0 0 1 0 0 0 1 3067p11.dat
-  [1,34,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3067p11()],
+  [1,34,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3067p11(realsolid)],
 ];
 module ldraw_lib__9359(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__9359(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__9359(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__9359(line=0.2);

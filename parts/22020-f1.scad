@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__22020_f1() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__22020_f1(realsolid=false) = [
 // 0 Technic Shock Absorber 10L Damped Spring (Extended)
 // 0 Name: 22020-f1.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -3538,5 +3539,5 @@ function ldraw_lib__22020_f1() = [
   [4,16,-9.24,2,-3.83,-10,2,0,-9,1,0,-8.31,1,-3.44],
 ];
 module ldraw_lib__22020_f1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__22020_f1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__22020_f1(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__22020_f1(line=0.2);

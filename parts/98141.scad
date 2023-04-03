@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/4-4cylc.scad>
 use <s/98141s01.scad>
-function ldraw_lib__98141() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__98141(realsolid=false) = [
 // 0 Minifig Weapon Crescent Blade Serrated with Bar 0.5L
 // 0 Name: 98141.dat
 // 0 Author: Joerg Sommerer [Brickaneer]
@@ -18,7 +19,7 @@ function ldraw_lib__98141() = [
 // 
 // 
 // 1 16 0 0 -0.0004 0 0 -4 0 -10 0 -4 0 0 4-4cylc.dat
-  [1,16,0,0,-0.0004,0,0,-4,0,-10,0,-4,0,0, ldraw_lib__4_4cylc()],
+  [1,16,0,0,-0.0004,0,0,-4,0,-10,0,-4,0,0, ldraw_lib__4_4cylc(realsolid)],
 // 2 24 1.3 -10 7.5403 -1.3 -10 7.5403
   [2,24,1.3,-10,7.5403,-1.3,-10,7.5403],
 // 2 24 0 -10.6976 7.7317 0 -13.73 8.97
@@ -240,10 +241,10 @@ function ldraw_lib__98141() = [
 // 5 24 1.3 -15.0517 -55.1403 -1.3 -15.0517 -55.1403 -1.3 -15.6028 -54.5556 1.3 -14.2623 -55.2895
   [5,24,1.3,-15.0517,-55.1403,-1.3,-15.0517,-55.1403,-1.3,-15.6028,-54.5556,1.3,-14.2623,-55.2895],
 // 1 16 0 0 -0.0004 -1 0 0 0 1 0 0 0 1 s\98141s01.dat
-  [1,16,0,0,-0.0004,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__98141s01()],
+  [1,16,0,0,-0.0004,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__98141s01(realsolid)],
 // 1 16 0 0 -0.0004 1 0 0 0 1 0 0 0 1 s\98141s01.dat
-  [1,16,0,0,-0.0004,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98141s01()],
+  [1,16,0,0,-0.0004,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98141s01(realsolid)],
 ];
 module ldraw_lib__98141(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__98141(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__98141(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__98141(line=0.2);

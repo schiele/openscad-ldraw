@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__195835e() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__195835e(realsolid=false) = [
 // 0 Sticker  2.0 x  2.9 with Tyre, Clamp and Screw
 // 0 Name: 195835e.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -1649,5 +1650,5 @@ function ldraw_lib__195835e() = [
   [5,24,-15.1,0,-17,-15.1,-0.25,-17,-18.6054,0,-16.741,22,0,-17],
 ];
 module ldraw_lib__195835e(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__195835e(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__195835e(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__195835e(line=0.2);

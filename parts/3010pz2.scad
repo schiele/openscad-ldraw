@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3010s01.scad>
-function ldraw_lib__3010pz2() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3010pz2(realsolid=false) = [
 // 0 Brick  1 x  4 with Yellow Collar and Yellow Robin Logo Pattern
 // 0 Name: 3010pz2.dat
 // 0 Author: Damien Roux [Darats]
@@ -17,7 +18,7 @@ function ldraw_lib__3010pz2() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3010s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3010s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3010s01(realsolid)],
 // 4 0 -36.426 0 -10 -37.74 0 -10 -33.044 12.966 -10 -32.366 11.208 -10
   [4,0,-36.426,0,-10,-37.74,0,-10,-33.044,12.966,-10,-32.366,11.208,-10],
 // 4 0 -20.781 6.457 -10 -20.894 5.118 -10 -32.366 11.208 -10 -33.044 12.966 -10
@@ -282,5 +283,5 @@ function ldraw_lib__3010pz2() = [
   [4,19,15.917,0,-10,-15.867,0,-10,-7.618,8.178,-10,7.667,8.178,-10],
 ];
 module ldraw_lib__3010pz2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3010pz2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3010pz2(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3010pz2(line=0.2);

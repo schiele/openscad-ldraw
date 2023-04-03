@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/1-4cyli.scad>
 use <s/973phbs01.scad>
 use <s/973s01.scad>
-function ldraw_lib__973phb() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__973phb(realsolid=false) = [
 // 0 Minifig Torso with Purple Greatcoat with Dark Grey Border Pattern
 // 0 Name: 973phb.dat
 // 0 Author: Andy Westrate [westrate]
@@ -29,7 +30,7 @@ function ldraw_lib__973phb() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01(realsolid)],
 // 4 16 -12 0 10 12 0 10 14.345 2 10 -14.345 2 10
   [4,16,-12,0,10,12,0,10,14.345,2,10,-14.345,2,10],
 // 4 16 -14.345 2 10 14.345 2 10 19 29 10 -19 29 10
@@ -37,10 +38,10 @@ function ldraw_lib__973phb() = [
 // 4 16 -19 29 10 19 29 10 19 32 10 -19 32 10
   [4,16,-19,29,10,19,29,10,19,32,10,-19,32,10],
 // 1 15 0 -4 0 4.243 0 -4.243 0 -8 0 -4.243 0 -4.243 1-4cyli.dat
-  [1,15,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli()],
+  [1,15,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli(realsolid)],
 // 
 // 1 8 0 0 0 1 0 0 0 1 0 0 0 1 s\973phbs01.dat
-  [1,8,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973phbs01()],
+  [1,8,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973phbs01(realsolid)],
 // 0 // border
 // 4 8 -16 26 -10 -18 31 -10 -17 32 -10 -16.5 31 -10
   [4,8,-16,26,-10,-18,31,-10,-17,32,-10,-16.5,31,-10],
@@ -116,5 +117,5 @@ function ldraw_lib__973phb() = [
   [3,16,-19,29,-10,-16,26,-10,-16,21,-10],
 ];
 module ldraw_lib__973phb(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__973phb(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__973phb(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__973phb(line=0.2);

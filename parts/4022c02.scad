@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <4022.scad>
 use <4023c02.scad>
-function ldraw_lib__4022c02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4022c02(realsolid=false) = [
 // 0 Train Buffer Beam with Black Coupling Type 1 with Magnet in Uncoupled Position
 // 0 Name: 4022c02.dat
 // 0 Author: Steffen [Steffen]
@@ -16,10 +17,10 @@ function ldraw_lib__4022c02() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 4022.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4022()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4022(realsolid)],
 // 1 0 0 16 -30 1 0 0 0 1 0 0 0 1 4023c02.dat
-  [1,0,0,16,-30,1,0,0,0,1,0,0,0,1, ldraw_lib__4023c02()],
+  [1,0,0,16,-30,1,0,0,0,1,0,0,0,1, ldraw_lib__4023c02(realsolid)],
 ];
 module ldraw_lib__4022c02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4022c02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4022c02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4022c02(line=0.2);

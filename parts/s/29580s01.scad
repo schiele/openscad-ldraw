@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <29580s03.scad>
-function ldraw_lib__s__29580s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__29580s01(realsolid=false) = [
 // 0 ~Minifig Headdress Rocket Costume Outer Surface without Patternable Area
 // 0 Name: s\29580s01.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -15,13 +16,13 @@ function ldraw_lib__s__29580s01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\29580s03.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__29580s03()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__29580s03(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 -1 s\29580s03.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__29580s03()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__29580s03(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\29580s03.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__29580s03()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__29580s03(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 -1 s\29580s03.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__29580s03()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__29580s03(realsolid)],
 // 
 // 0 // Back Side
 // 4 16 8.13 24 19.63 7.85 37.75 18.94 0 37.75 20.5 0 24 21.25
@@ -199,5 +200,5 @@ function ldraw_lib__s__29580s01() = [
   [5,24,0,50,-18.75,0,37.75,-20.5,7.85,37.75,-18.94,-7.85,37.75,-18.94],
 ];
 module ldraw_lib__s__29580s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__29580s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__29580s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__29580s01(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/85984s01.scad>
-function ldraw_lib__85984pz0() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__85984pz0(realsolid=false) = [
 // 0 Slope Brick 31  1 x  2 x  0.667 with Dark Red Mythosaur Skull and White Background Pattern
 // 0 Name: 85984pz0.dat
 // 0 Author: Damien Roux [Darats]
@@ -18,7 +19,7 @@ function ldraw_lib__85984pz0() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\85984s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__85984s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__85984s01(realsolid)],
 // 4 0 -6.095 -9.4906 -0.849 -6.095 -10.5706 0.951 -6.294 -10.6408 1.068 -6.294 -9.4414 -0.931
   [4,0,-6.095,-9.4906,-0.849,-6.095,-10.5706,0.951,-6.294,-10.6408,1.068,-6.294,-9.4414,-0.931],
 // 4 0 -5.394 -9.6226 -0.629 -5.194 -9.6928 -0.512 -5.194 -10.4812 0.802 -5.394 -10.5292 0.882
@@ -211,5 +212,5 @@ function ldraw_lib__85984pz0() = [
   [4,16,20,-13.6,6,19.41,-15.01,8.35,18,-15.6,9.3333,20,-4,-10],
 ];
 module ldraw_lib__85984pz0(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__85984pz0(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__85984pz0(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__85984pz0(line=0.2);

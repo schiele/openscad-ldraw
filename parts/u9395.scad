@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/48/4-4cylo.scad>
 use <../p/48/4-4ring9.scad>
-function ldraw_lib__u9395() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__u9395(realsolid=false) = [
 // 0 ~Electric Powered Up 6 Port Hub On Button Lighting Ring
 // 0 Name: u9395.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -20,16 +21,16 @@ function ldraw_lib__u9395() = [
 // 
 // 
 // 1 16 0 0 0 19.16667 0 0 0 2 0 0 0 19.16667 48\4-4cylo.dat
-  [1,16,0,0,0,19.16667,0,0,0,2,0,0,0,19.16667, ldraw_lib__48__4_4cylo()],
+  [1,16,0,0,0,19.16667,0,0,0,2,0,0,0,19.16667, ldraw_lib__48__4_4cylo(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 0 17.25 0 0 0 2 0 0 0 17.25 48\4-4cylo.dat
-  [1,16,0,0,0,17.25,0,0,0,2,0,0,0,17.25, ldraw_lib__48__4_4cylo()],
+  [1,16,0,0,0,17.25,0,0,0,2,0,0,0,17.25, ldraw_lib__48__4_4cylo(realsolid)],
 // 1 16 0 0 0 1.91667 0 0 0 1 0 0 0 1.91667 48\4-4ring9.dat
-  [1,16,0,0,0,1.91667,0,0,0,1,0,0,0,1.91667, ldraw_lib__48__4_4ring9()],
+  [1,16,0,0,0,1.91667,0,0,0,1,0,0,0,1.91667, ldraw_lib__48__4_4ring9(realsolid)],
 // 1 16 0 2 0 1.91667 0 0 0 -1 0 0 0 1.91667 48\4-4ring9.dat
-  [1,16,0,2,0,1.91667,0,0,0,-1,0,0,0,1.91667, ldraw_lib__48__4_4ring9()],
+  [1,16,0,2,0,1.91667,0,0,0,-1,0,0,0,1.91667, ldraw_lib__48__4_4ring9(realsolid)],
 ];
 module ldraw_lib__u9395(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__u9395(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__u9395(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__u9395(line=0.2);

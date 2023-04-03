@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/4864s01.scad>
 use <../p/stud2.scad>
-function ldraw_lib__4864bp71() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4864bp71(realsolid=false) = [
 // 0 Panel  1 x  2 x  2 with Phone in White Circle and Lines Pattern
 // 0 Name: 4864bp71.dat
 // 0 Author: Michael Heidemann [mikeheide]
@@ -20,11 +21,11 @@ function ldraw_lib__4864bp71() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4864s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4864s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4864s01(realsolid)],
 // 1 16 -10 0 0 1 0 0 0 1 0 0 0 1 stud2.dat
-  [1,16,-10,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2()],
+  [1,16,-10,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2(realsolid)],
 // 1 16 10 0 0 1 0 0 0 1 0 0 0 1 stud2.dat
-  [1,16,10,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2()],
+  [1,16,10,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2(realsolid)],
 // 4 15 3.1942 15.9351 10 -0.25 15.25 10 -0.25 13.25 10 3.9595 14.0873 10
   [4,15,3.1942,15.9351,10,-0.25,15.25,10,-0.25,13.25,10,3.9595,14.0873,10],
 // 4 15 3.9595 14.0873 10 7.5282 16.4718 10 6.114 17.886 10 3.1942 15.9351 10
@@ -225,5 +226,5 @@ function ldraw_lib__4864bp71() = [
 // 0
 ];
 module ldraw_lib__4864bp71(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4864bp71(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4864bp71(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4864bp71(line=0.2);

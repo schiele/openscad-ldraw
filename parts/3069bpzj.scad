@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3069bs01.scad>
-function ldraw_lib__3069bpzj() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3069bpzj(realsolid=false) = [
 // 0 Tile  1 x  2 with  6 Coloured Ovals with Black Outlines Pattern
 // 0 Name: 3069bpzj.dat
 // 0 Author: Vincent Messenet [Cheenzo]
@@ -18,7 +19,7 @@ function ldraw_lib__3069bpzj() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3069bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3069bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3069bs01(realsolid)],
 // 
 // 4 27 -14.23 0 7.31 -15 0 7.5 -15.77 0 7.31 -13.59 0 6.77
   [4,27,-14.23,0,7.31,-15,0,7.5,-15.77,0,7.31,-13.59,0,6.77],
@@ -442,5 +443,5 @@ function ldraw_lib__3069bpzj() = [
   [4,16,15,0,-9,13.66,0,-8.7,6.84,0,-8.7,5.5,0,-9],
 ];
 module ldraw_lib__3069bpzj(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3069bpzj(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3069bpzj(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3069bpzj(line=0.2);

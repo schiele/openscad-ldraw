@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__48__7_24chrd() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__48__7_24chrd(realsolid=false) = [
 // 0 Hi-Res Chord 0.2917
 // 0 Name: 48\7-24chrd.dat
 // 0 Author: Alex Taylor [anathema]
@@ -41,5 +42,5 @@ function ldraw_lib__48__7_24chrd() = [
   [3,16,1,0,0,-0.1305,0,0.9914,-0.2588,0,0.9659],
 ];
 module ldraw_lib__48__7_24chrd(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__48__7_24chrd(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__48__7_24chrd(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__48__7_24chrd(line=0.2);

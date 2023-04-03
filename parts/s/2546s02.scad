@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/4-4ndis.scad>
-function ldraw_lib__s__2546s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__2546s02(realsolid=false) = [
 // 0 ~Animal Bird Parrot - Half Patternable Surface
 // 0 Name: s\2546s02.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -100,7 +101,7 @@ function ldraw_lib__s__2546s02() = [
 // 
 // 0 // RIGHT CHEEK - LARGE FILL IN
 // 1 16 4.3 -45.11 -1.7 0 -1 0 -0.85 0 0 0 0 0.85 4-4ndis.dat
-  [1,16,4.3,-45.11,-1.7,0,-1,0,-0.85,0,0,0,0,0.85, ldraw_lib__4_4ndis()],
+  [1,16,4.3,-45.11,-1.7,0,-1,0,-0.85,0,0,0,0,0.85, ldraw_lib__4_4ndis(realsolid)],
 // 3 16 4.3 -45.96 -2.55 4.3 -45.96 -0.85 4.79 -49.76 1.63
   [3,16,4.3,-45.96,-2.55,4.3,-45.96,-0.85,4.79,-49.76,1.63],
 // 3 16 4.3 -45.96 -2.55 4.79 -49.76 1.63 3.8 -49.76 -7.07
@@ -149,5 +150,5 @@ function ldraw_lib__s__2546s02() = [
   [5,24,4.3,-44.26,-2.55,4.3,-45.11,-2.55,3.8,-35.81,-6.83,4.3,-44.26,-1.7],
 ];
 module ldraw_lib__s__2546s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__2546s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__2546s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__2546s02(line=0.2);

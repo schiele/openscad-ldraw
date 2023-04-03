@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__4533401e() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4533401e(realsolid=false) = [
 // 0 Sticker  1.1 x  1.6 with Buttons and Circuitry
 // 0 Name: 4533401e.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -17,7 +18,7 @@ function ldraw_lib__4533401e() = [
 // 
 // 
 // 1 16 0 -0.25 0 16 0 0 0 0.25 0 0 0 11 box5-12.dat
-  [1,16,0,-0.25,0,16,0,0,0,0.25,0,0,0,11, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,16,0,0,0,0.25,0,0,0,11, ldraw_lib__box5_12(realsolid)],
 // 
 // 4 80 6.02699 -0.25 6.4 6.15434 -0.25 7.04023 4.8175 -0.25 7.59397 4.58 -0.25 6.4
   [4,80,6.02699,-0.25,6.4,6.15434,-0.25,7.04023,4.8175,-0.25,7.59397,4.58,-0.25,6.4],
@@ -499,5 +500,5 @@ function ldraw_lib__4533401e() = [
   [3,0,13,-0.25,4.601,10.82,-0.25,6.4,11.2,-0.25,4.601],
 ];
 module ldraw_lib__4533401e(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4533401e(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4533401e(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4533401e(line=0.2);

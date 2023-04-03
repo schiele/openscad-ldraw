@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/1-4chrd.scad>
 use <../p/4-4ring9.scad>
 use <s/98138s01.scad>
-function ldraw_lib__98138p0q() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__98138p0q(realsolid=false) = [
 // 0 Tile  1 x  1 Round with Light Yellow Flash of Lightning on Medium Lavender Background Pattern
 // 0 Name: 98138p0q.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -19,9 +20,9 @@ function ldraw_lib__98138p0q() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\98138s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 4-4ring9.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4ring9()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4ring9(realsolid)],
 // 4 226 1 0 2 2.9 0 5.8 -1.8 0 5.8 -4.2 0 -0.2
   [4,226,1,0,2,2.9,0,5.8,-1.8,0,5.8,-4.2,0,-0.2],
 // 4 226 1 0 2 -4.2 0 -0.2 -0.9 0 -0.2 4.7 0 2
@@ -49,14 +50,14 @@ function ldraw_lib__98138p0q() = [
 // 3 30 -1.8 0 5.8 -9 0 0 -4.2 0 -0.2
   [3,30,-1.8,0,5.8,-9,0,0,-4.2,0,-0.2],
 // 1 30 0 0 0 0 0 -9 0 1 0 9 0 0 1-4chrd.dat
-  [1,30,0,0,0,0,0,-9,0,1,0,9,0,0, ldraw_lib__1_4chrd()],
+  [1,30,0,0,0,0,0,-9,0,1,0,9,0,0, ldraw_lib__1_4chrd(realsolid)],
 // 1 30 0 0 0 9 0 0 0 1 0 0 0 9 1-4chrd.dat
-  [1,30,0,0,0,9,0,0,0,1,0,0,0,9, ldraw_lib__1_4chrd()],
+  [1,30,0,0,0,9,0,0,0,1,0,0,0,9, ldraw_lib__1_4chrd(realsolid)],
 // 1 30 0 0 0 0 0 9 0 1 0 -9 0 0 1-4chrd.dat
-  [1,30,0,0,0,0,0,9,0,1,0,-9,0,0, ldraw_lib__1_4chrd()],
+  [1,30,0,0,0,0,0,9,0,1,0,-9,0,0, ldraw_lib__1_4chrd(realsolid)],
 // 1 30 0 0 0 -9 0 0 0 1 0 0 0 -9 1-4chrd.dat
-  [1,30,0,0,0,-9,0,0,0,1,0,0,0,-9, ldraw_lib__1_4chrd()],
+  [1,30,0,0,0,-9,0,0,0,1,0,0,0,-9, ldraw_lib__1_4chrd(realsolid)],
 ];
 module ldraw_lib__98138p0q(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__98138p0q(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__98138p0q(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__98138p0q(line=0.2);

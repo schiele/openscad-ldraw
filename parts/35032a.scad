@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/4-4cylc.scad>
-function ldraw_lib__35032a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__35032a(realsolid=false) = [
 // 0 Power Burst Blaster with Bar
 // 0 Name: 35032a.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -20,7 +21,7 @@ function ldraw_lib__35032a() = [
 // 
 // 
 // 1 16 0 0 0 4 0 0 0 -10 0 0 0 4 4-4cylc.dat
-  [1,16,0,0,0,4,0,0,0,-10,0,0,0,4, ldraw_lib__4_4cylc()],
+  [1,16,0,0,0,4,0,0,0,-10,0,0,0,4, ldraw_lib__4_4cylc(realsolid)],
 // 
 // 3 16 3.965 -17.846 1.857 3.082 -19.823 5.11 2.621 -18.304 1.763
   [3,16,3.965,-17.846,1.857,3.082,-19.823,5.11,2.621,-18.304,1.763],
@@ -3780,5 +3781,5 @@ function ldraw_lib__35032a() = [
   [5,24,5.251,-10.045,6.737,6.992,-10,5.982,5.014,-10,4.885,5.038,-10.147,8.934],
 ];
 module ldraw_lib__35032a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__35032a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__35032a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__35032a(line=0.2);

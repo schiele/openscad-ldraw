@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__192375e() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__192375e(realsolid=false) = [
 // 0 Sticker  1.1 x  5.9 with White "Happy Motoring!" on Red Background
 // 0 Name: 192375e.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -17,7 +18,7 @@ function ldraw_lib__192375e() = [
 // 
 // 
 // 1 16 0 -0.25 0 59 0 0 0 0.25 0 0 0 11 box5-12.dat
-  [1,16,0,-0.25,0,59,0,0,0,0.25,0,0,0,11, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,59,0,0,0,0.25,0,0,0,11, ldraw_lib__box5_12(realsolid)],
 // 4 15 -54.02 -.25 -4.17 -51.95 -.25 -4.17 -51.19 -.25 .18 -52.26 -.25 5.74
   [4,15,-54.02,-.25,-4.17,-51.95,-.25,-4.17,-51.19,-.25,.18,-52.26,-.25,5.74],
 // 4 15 -50.85 -.25 1.93 -51.19 -.25 .18 -47.35 -.25 .18 -47.02 -.25 1.93
@@ -1014,5 +1015,5 @@ function ldraw_lib__192375e() = [
   [4,4,50.92,-.25,-2.17,49.72,-.25,3.17,48.41,-.25,-4.14,50.58,-.25,-4.17],
 ];
 module ldraw_lib__192375e(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__192375e(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__192375e(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__192375e(line=0.2);

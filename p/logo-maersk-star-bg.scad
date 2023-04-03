@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__logo_maersk_star_bg() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__logo_maersk_star_bg(realsolid=false) = [
 // 0 Logo Maersk Star Background
 // 0 Name: logo-maersk-star-bg.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -33,5 +34,5 @@ function ldraw_lib__logo_maersk_star_bg() = [
   [3,16,0,0,-4.3,-4.7,0,-10,4.7,0,-10],
 ];
 module ldraw_lib__logo_maersk_star_bg(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__logo_maersk_star_bg(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__logo_maersk_star_bg(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__logo_maersk_star_bg(line=0.2);

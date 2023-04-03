@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__44359s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__44359s01(realsolid=false) = [
 // 0 ~Hemisphere  3 x  3 Ball Turret - 1/8
 // 0 Name: s\44359s01.dat
 // 0 Author: Greg Teft [gregteft]
@@ -1499,5 +1500,5 @@ function ldraw_lib__s__44359s01() = [
   [4,16,23.6023,0,18.1107,21.2222,0,16.2844,18.9151,0,18.9151,21.0364,0,21.0364],
 ];
 module ldraw_lib__s__44359s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__44359s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__44359s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__44359s01(line=0.2);

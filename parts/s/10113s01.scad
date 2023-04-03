@@ -3,7 +3,8 @@ use <../../p/1-4ndis.scad>
 use <../../p/3-8cyli.scad>
 use <../../p/t08o6250.scad>
 use <../../p/t16o6250.scad>
-function ldraw_lib__s__10113s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__10113s01(realsolid=false) = [
 // 0 ~Minifig Headdress Batman with Angular Ears - Half
 // 0 Name: s\10113s01.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -22,25 +23,25 @@ function ldraw_lib__s__10113s01() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 4 0 0 0 -13 0 16.5 0 13 0 0 3-8cyli.dat
-  [1,16,0,4,0,0,0,-13,0,16.5,0,13,0,0, ldraw_lib__3_8cyli()],
+  [1,16,0,4,0,0,0,-13,0,16.5,0,13,0,0, ldraw_lib__3_8cyli(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 4 0 -5.65685 0 5.65685 0 -14.4 0 5.65685 0 5.65685 t08o6250.dat
-  [1,16,0,4,0,-5.65685,0,5.65685,0,-14.4,0,5.65685,0,5.65685, ldraw_lib__t08o6250()],
+  [1,16,0,4,0,-5.65685,0,5.65685,0,-14.4,0,5.65685,0,5.65685, ldraw_lib__t08o6250(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 4 0 -7.39104 0 3.06147 0 -14.4 0 3.06147 0 7.39104 t16o6250.dat
-  [1,16,0,4,0,-7.39104,0,3.06147,0,-14.4,0,3.06147,0,7.39104, ldraw_lib__t16o6250()],
+  [1,16,0,4,0,-7.39104,0,3.06147,0,-14.4,0,3.06147,0,7.39104, ldraw_lib__t16o6250(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 4 0 -3.06147 0 -7.39104 0 -14.4 0 -7.39104 0 3.06147 t08o6250.dat
-  [1,16,0,4,0,-3.06147,0,-7.39104,0,-14.4,0,-7.39104,0,3.06147, ldraw_lib__t08o6250()],
+  [1,16,0,4,0,-3.06147,0,-7.39104,0,-14.4,0,-7.39104,0,3.06147, ldraw_lib__t08o6250(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 4 0 0 0 -8 0 -14.4 0 -8 0 0 t16o6250.dat
-  [1,16,0,4,0,0,0,-8,0,-14.4,0,-8,0,0, ldraw_lib__t16o6250()],
+  [1,16,0,4,0,0,0,-8,0,-14.4,0,-8,0,0, ldraw_lib__t16o6250(realsolid)],
 // 1 16 -7.391 4 3.061 -4.6194 .38268 0 0 0 -9 1.91342 .92388 0 1-4ndis.dat
-  [1,16,-7.391,4,3.061,-4.6194,.38268,0,0,0,-9,1.91342,.92388,0, ldraw_lib__1_4ndis()],
+  [1,16,-7.391,4,3.061,-4.6194,.38268,0,0,0,-9,1.91342,.92388,0, ldraw_lib__1_4ndis(realsolid)],
 // 
 // 4 16 -12.011 -5 4.975 -7.391 -5 3.062 -8 -5 0 -13 -5 0
   [4,16,-12.011,-5,4.975,-7.391,-5,3.062,-8,-5,0,-13,-5,0],
@@ -3725,5 +3726,5 @@ function ldraw_lib__s__10113s01() = [
   [5,24,0,9,15.846,0,10.739,15.942,-3.691,10.778,15.516,3.691,10.778,15.516],
 ];
 module ldraw_lib__s__10113s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__10113s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__10113s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__10113s01(line=0.2);

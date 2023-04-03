@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/10178s01.scad>
 use <s/10178s02.scad>
-function ldraw_lib__10178p01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__10178p01(realsolid=false) = [
 // 0 Rock Stepped with Dark Green Swamp Gas Pattern
 // 0 Name: 10178p01.dat
 // 0 Author: Christian Neumann [Wesley]
@@ -20,9 +21,9 @@ function ldraw_lib__10178p01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\10178s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__10178s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__10178s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 -1 s\10178s02.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__10178s02()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__10178s02(realsolid)],
 // 0 // front pattern
 // 4 288 5.925 -20.1 -8.25 6.003 -20.492 -8.25 5.633 -20.645 -8.25 5.525 -20.1 -8.25
   [4,288,5.925,-20.1,-8.25,6.003,-20.492,-8.25,5.633,-20.645,-8.25,5.525,-20.1,-8.25],
@@ -1168,5 +1169,5 @@ function ldraw_lib__10178p01() = [
   [3,16,0.775,-39.695,-8.25,0.864,-39.25,-8.25,1.77,-38.34,-8.25],
 ];
 module ldraw_lib__10178p01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__10178p01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__10178p01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__10178p01(line=0.2);

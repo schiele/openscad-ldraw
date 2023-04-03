@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3298s01.scad>
-function ldraw_lib__3298p05() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3298p05(realsolid=false) = [
 // 0 Slope Brick 33  3 x  2 with Dark Pink Lines, Centre Square, White Triangles and Snowflake Pattern
 // 0 Name: 3298p05.dat
 // 0 Author: Bertrand Lequy [Berth]
@@ -17,7 +18,7 @@ function ldraw_lib__3298p05() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3298s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3298s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3298s01(realsolid)],
 // 4 16 -2.6607 10 -30 0 8.81011 -27.6202 0 7.51319 -25.0264 -5.5607 10 -30
   [4,16,-2.6607,10,-30,0,8.81011,-27.6202,0,7.51319,-25.0264,-5.5607,10,-30],
 // 4 15 -6.2 6.4846 -22.9692 -8 7.28958 -24.5792 -6.36061 8.02274 -26.0455 -4.50501 7.24262 -24.4852
@@ -254,5 +255,5 @@ function ldraw_lib__3298p05() = [
   [4,16,-20,19.5528,-49.1056,-20,20,-50,0,20,-50,0,19.5528,-49.1056],
 ];
 module ldraw_lib__3298p05(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3298p05(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3298p05(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3298p05(line=0.2);

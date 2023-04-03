@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/box5-12.scad>
 use <../p/logo-octan-3.scad>
 use <../p/logo-octantext2.scad>
-function ldraw_lib__165395d() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__165395d(realsolid=false) = [
 // 0 Sticker  0.7 x  3.9 with Octan Logo and Text
 // 0 Name: 165395d.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -20,13 +21,13 @@ function ldraw_lib__165395d() = [
 // 
 // 
 // 1 16 0 -0.25 0 39 0 0 0 0.25 0 0 0 7 box5-12.dat
-  [1,16,0,-0.25,0,39,0,0,0,0.25,0,0,0,7, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,39,0,0,0,0.25,0,0,0,7, ldraw_lib__box5_12(realsolid)],
 // 0 BFC NOCLIP
   [0,"BFC","NOCLIP"],
 // 1 16 -27 -0.25 0 1 0 0 0 1 0 0 0 1 logo-octan-3.dat
-  [1,16,-27,-0.25,0,1,0,0,0,1,0,0,0,1, ldraw_lib__logo_octan_3()],
+  [1,16,-27,-0.25,0,1,0,0,0,1,0,0,0,1, ldraw_lib__logo_octan_3(realsolid)],
 // 1 16 9.5 -0.25 -0.5 1 0 0 0 1 0 0 0 1 logo-octantext2.dat
-  [1,16,9.5,-0.25,-0.5,1,0,0,0,1,0,0,0,1, ldraw_lib__logo_octantext2()],
+  [1,16,9.5,-0.25,-0.5,1,0,0,0,1,0,0,0,1, ldraw_lib__logo_octantext2(realsolid)],
 // 0 BFC CLIP
   [0,"BFC","CLIP"],
 // 4 16 34 -0.25 6 39 -0.25 7 -39 -0.25 7 -15 -0.25 6
@@ -45,5 +46,5 @@ function ldraw_lib__165395d() = [
   [4,16,34,-0.25,6,34,-0.25,-6,39,-0.25,-7,39,-0.25,7],
 ];
 module ldraw_lib__165395d(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__165395d(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__165395d(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__165395d(line=0.2);

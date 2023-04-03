@@ -4,7 +4,8 @@ use <../p/4-4cyli.scad>
 use <../p/4-4edge.scad>
 use <../p/box5-4a.scad>
 use <s/6246s01.scad>
-function ldraw_lib__55298() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__55298(realsolid=false) = [
 // 0 Minifig Tool Screwdriver
 // 0 Name: 55298.dat
 // 0 Author: Steve Bliss [sbliss]
@@ -29,17 +30,17 @@ function ldraw_lib__55298() = [
 // 
 // 
 // 1 16 0 -10 0 4 0 0 0 4 0 0 0 4 4-4edge.dat
-  [1,16,0,-10,0,4,0,0,0,4,0,0,0,4, ldraw_lib__4_4edge()],
+  [1,16,0,-10,0,4,0,0,0,4,0,0,0,4, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 -10 0 2 0 0 0 -3 0 0 0 2 4-4con1.dat
-  [1,16,0,-10,0,2,0,0,0,-3,0,0,0,2, ldraw_lib__4_4con1()],
+  [1,16,0,-10,0,2,0,0,0,-3,0,0,0,2, ldraw_lib__4_4con1(realsolid)],
 // 1 16 0 -13 0 2 0 0 0 2 0 0 0 2 4-4edge.dat
-  [1,16,0,-13,0,2,0,0,0,2,0,0,0,2, ldraw_lib__4_4edge()],
+  [1,16,0,-13,0,2,0,0,0,2,0,0,0,2, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 -36 0 1 0 0 0 1 0 0 0 1 s\6246s01.dat
-  [1,16,0,-36,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6246s01()],
+  [1,16,0,-36,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6246s01(realsolid)],
 // 1 16 0 -26 0 2 0 0 0 13 0 0 0 2 4-4cyli.dat
-  [1,16,0,-26,0,2,0,0,0,13,0,0,0,2, ldraw_lib__4_4cyli()],
+  [1,16,0,-26,0,2,0,0,0,13,0,0,0,2, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 -34 0 2.2 0 0 0 -2 0 0 0 -1 box5-4a.dat
-  [1,16,0,-34,0,2.2,0,0,0,-2,0,0,0,-1, ldraw_lib__box5_4a()],
+  [1,16,0,-34,0,2.2,0,0,0,-2,0,0,0,-1, ldraw_lib__box5_4a(realsolid)],
 // 4 16 2.2 -34 1 1.6 -32 1.25 -1.6 -32 1.25 -2.2 -34 1
   [4,16,2.2,-34,1,1.6,-32,1.25,-1.6,-32,1.25,-2.2,-34,1],
 // 4 16 -0.8 -27 1.875 -1.6 -32 1.25 1.6 -32 1.25 0.8 -27 1.875
@@ -262,5 +263,5 @@ function ldraw_lib__55298() = [
   [5,24,-2,-26,0,-2.2,-32.6,0,-2.2,-33,0.8,-2.2,-33,-0.8],
 ];
 module ldraw_lib__55298(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__55298(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__55298(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__55298(line=0.2);

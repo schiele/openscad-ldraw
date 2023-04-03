@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3039s01.scad>
-function ldraw_lib__3039pcm() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3039pcm(realsolid=false) = [
 // 0 Slope Brick 45  2 x  2 with Dark Blue Sonar Screen Pattern
 // 0 Name: 3039pcm.dat
 // 0 Author: Fredrik Hareide [fhareide]
@@ -17,7 +18,7 @@ function ldraw_lib__3039pcm() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3039s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3039s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3039s01(realsolid)],
 // 
 // 0 // Black
 // 3 0 18.3441 17.0491 -27.0491 18.3318 18.2463 -28.2463 19.2143 18.3603 -28.3604
@@ -742,5 +743,5 @@ function ldraw_lib__3039pcm() = [
   [4,322,-17.3153,14.1819,-24.1819,-17.3153,15.8804,-25.8804,-13.6367,15.8804,-25.8804,-13.6367,14.1819,-24.1819],
 ];
 module ldraw_lib__3039pcm(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3039pcm(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3039pcm(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3039pcm(line=0.2);

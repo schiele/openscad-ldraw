@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__4613908m() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4613908m(realsolid=false) = [
 // 0 Sticker  2.1 x  1.8 with Eye of Horus
 // 0 Name: 4613908m.dat
 // 0 Author: Christian Neumann [Wesley]
@@ -19,7 +20,7 @@ function ldraw_lib__4613908m() = [
 // 
 // 
 // 1 16 0 -0.25 0 18 0 0 0 0.25 0 0 0 21 box5-12.dat
-  [1,16,0,-0.25,0,18,0,0,0,0.25,0,0,0,21, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,18,0,0,0,0.25,0,0,0,21, ldraw_lib__box5_12(realsolid)],
 // 4 308 -14.4 -0.25 17.6 -15.3 -0.25 16.7 -14.65 -0.25 16.3 -13.75 -0.25 17.1
   [4,308,-14.4,-0.25,17.6,-15.3,-0.25,16.7,-14.65,-0.25,16.3,-13.75,-0.25,17.1],
 // 4 308 -12.3 -0.25 18.55 -14.4 -0.25 17.6 -13.75 -0.25 17.1 -11.7 -0.25 17.8
@@ -1458,5 +1459,5 @@ function ldraw_lib__4613908m() = [
   [3,19,-8.75,-0.25,1.15,-13.36,-0.25,1.14,-13.2,-0.25,0.8],
 ];
 module ldraw_lib__4613908m(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4613908m(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4613908m(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4613908m(line=0.2);

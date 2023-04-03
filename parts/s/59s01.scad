@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/4-4edge.scad>
 use <../../p/t04o3333.scad>
-function ldraw_lib__s__59s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__59s01(realsolid=false) = [
 // 0 ~Minifig Sword Greatsword - Grip Segment
 // 0 Name: s\59s01.dat
 // 0 Author: Franklin W. Cain [fwcain]
@@ -21,27 +22,27 @@ function ldraw_lib__s__59s01() = [
 // 
 // 
 // 1 16 0 0 0 -3 0 0 0 -3 0 0 0 3 t04o3333.dat
-  [1,16,0,0,0,-3,0,0,0,-3,0,0,0,3, ldraw_lib__t04o3333()],
+  [1,16,0,0,0,-3,0,0,0,-3,0,0,0,3, ldraw_lib__t04o3333(realsolid)],
 // 1 16 0 0 0 3 0 0 0 -3 0 0 0 -3 t04o3333.dat
-  [1,16,0,0,0,3,0,0,0,-3,0,0,0,-3, ldraw_lib__t04o3333()],
+  [1,16,0,0,0,3,0,0,0,-3,0,0,0,-3, ldraw_lib__t04o3333(realsolid)],
 // 1 16 0 0 0 0 0 -3 0 -3 0 -3 0 0 t04o3333.dat
-  [1,16,0,0,0,0,0,-3,0,-3,0,-3,0,0, ldraw_lib__t04o3333()],
+  [1,16,0,0,0,0,0,-3,0,-3,0,-3,0,0, ldraw_lib__t04o3333(realsolid)],
 // 1 16 0 0 0 0 0 3 0 -3 0 3 0 0 t04o3333.dat
-  [1,16,0,0,0,0,0,3,0,-3,0,3,0,0, ldraw_lib__t04o3333()],
+  [1,16,0,0,0,0,0,3,0,-3,0,3,0,0, ldraw_lib__t04o3333(realsolid)],
 // 1 16 0 0 0 -3 0 0 0 3 0 0 0 -3 t04o3333.dat
-  [1,16,0,0,0,-3,0,0,0,3,0,0,0,-3, ldraw_lib__t04o3333()],
+  [1,16,0,0,0,-3,0,0,0,3,0,0,0,-3, ldraw_lib__t04o3333(realsolid)],
 // 1 16 0 0 0 3 0 0 0 3 0 0 0 3 t04o3333.dat
-  [1,16,0,0,0,3,0,0,0,3,0,0,0,3, ldraw_lib__t04o3333()],
+  [1,16,0,0,0,3,0,0,0,3,0,0,0,3, ldraw_lib__t04o3333(realsolid)],
 // 1 16 0 0 0 0 0 -3 0 3 0 3 0 0 t04o3333.dat
-  [1,16,0,0,0,0,0,-3,0,3,0,3,0,0, ldraw_lib__t04o3333()],
+  [1,16,0,0,0,0,0,-3,0,3,0,3,0,0, ldraw_lib__t04o3333(realsolid)],
 // 1 16 0 0 0 0 0 3 0 3 0 -3 0 0 t04o3333.dat
-  [1,16,0,0,0,0,0,3,0,3,0,-3,0,0, ldraw_lib__t04o3333()],
+  [1,16,0,0,0,0,0,3,0,3,0,-3,0,0, ldraw_lib__t04o3333(realsolid)],
 // 1 16 0 -1 0 3 0 0 0 1 0 0 0 3 4-4edge.dat
-  [1,16,0,-1,0,3,0,0,0,1,0,0,0,3, ldraw_lib__4_4edge()],
+  [1,16,0,-1,0,3,0,0,0,1,0,0,0,3, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 1 0 3 0 0 0 1 0 0 0 3 4-4edge.dat
-  [1,16,0,1,0,3,0,0,0,1,0,0,0,3, ldraw_lib__4_4edge()],
+  [1,16,0,1,0,3,0,0,0,1,0,0,0,3, ldraw_lib__4_4edge(realsolid)],
 // 0
 ];
 module ldraw_lib__s__59s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__59s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__59s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__59s01(line=0.2);

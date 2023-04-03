@@ -10,7 +10,8 @@ use <../p/4-4ring6.scad>
 use <../p/4-4ring7.scad>
 use <../p/4-4ring8.scad>
 use <../p/stud2a.scad>
-function ldraw_lib__39144() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__39144(realsolid=false) = [
 // 0 Minifig Megaphone
 // 0 Name: 39144.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -28,49 +29,49 @@ function ldraw_lib__39144() = [
 // 
 // 
 // 1 16 0 0 10 1 0 0 0 0 1 0 -1 0 stud2a.dat
-  [1,16,0,0,10,1,0,0,0,0,1,0,-1,0, ldraw_lib__stud2a()],
+  [1,16,0,0,10,1,0,0,0,0,1,0,-1,0, ldraw_lib__stud2a(realsolid)],
 // 1 16 0 0 10 6 0 0 0 0 6 0 -1 0 4-4edge.dat
-  [1,16,0,0,10,6,0,0,0,0,6,0,-1,0, ldraw_lib__4_4edge()],
+  [1,16,0,0,10,6,0,0,0,0,6,0,-1,0, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 0 10 4 0 0 0 0 4 0 -1 0 4-4edge.dat
-  [1,16,0,0,10,4,0,0,0,0,4,0,-1,0, ldraw_lib__4_4edge()],
+  [1,16,0,0,10,4,0,0,0,0,4,0,-1,0, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 0 10 1 0 0 0 0 1 0 -1 0 4-4ring6.dat
-  [1,16,0,0,10,1,0,0,0,0,1,0,-1,0, ldraw_lib__4_4ring6()],
+  [1,16,0,0,10,1,0,0,0,0,1,0,-1,0, ldraw_lib__4_4ring6(realsolid)],
 // 1 16 0 0 10 7 0 0 0 0 7 0 -1 0 4-4edge.dat
-  [1,16,0,0,10,7,0,0,0,0,7,0,-1,0, ldraw_lib__4_4edge()],
+  [1,16,0,0,10,7,0,0,0,0,7,0,-1,0, ldraw_lib__4_4edge(realsolid)],
 // 
 // 0 // Cones adjusted for R4 to R10.5 over 32.5
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 7.5 .5 0 0 0 0 .5 0 2.5 0 4-4con8.dat
-  [1,16,0,0,7.5,.5,0,0,0,0,.5,0,2.5,0, ldraw_lib__4_4con8()],
+  [1,16,0,0,7.5,.5,0,0,0,0,.5,0,2.5,0, ldraw_lib__4_4con8(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 -15 4.5 0 0 0 0 4.5 0 22.5 0 4-4con1.dat
-  [1,16,0,0,-15,4.5,0,0,0,0,4.5,0,22.5,0, ldraw_lib__4_4con1()],
+  [1,16,0,0,-15,4.5,0,0,0,0,4.5,0,22.5,0, ldraw_lib__4_4con1(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 -22.5 1.5 0 0 0 0 1.5 0 7.5 0 4-4con6.dat
-  [1,16,0,0,-22.5,1.5,0,0,0,0,1.5,0,7.5,0, ldraw_lib__4_4con6()],
+  [1,16,0,0,-22.5,1.5,0,0,0,0,1.5,0,7.5,0, ldraw_lib__4_4con6(realsolid)],
 // 
 // 1 16 0 0 -22.5 1.5 0 0 0 0 1.5 0 1 0 4-4ring7.dat
-  [1,16,0,0,-22.5,1.5,0,0,0,0,1.5,0,1,0, ldraw_lib__4_4ring7()],
+  [1,16,0,0,-22.5,1.5,0,0,0,0,1.5,0,1,0, ldraw_lib__4_4ring7(realsolid)],
 // 1 16 0 0 -22.5 1.5 0 0 0 0 1.5 0 1 0 4-4ring8.dat
-  [1,16,0,0,-22.5,1.5,0,0,0,0,1.5,0,1,0, ldraw_lib__4_4ring8()],
+  [1,16,0,0,-22.5,1.5,0,0,0,0,1.5,0,1,0, ldraw_lib__4_4ring8(realsolid)],
 // 1 16 0 0 -22.5 10.5 0 0 0 0 10.5 0 -1 0 4-4edge.dat
-  [1,16,0,0,-22.5,10.5,0,0,0,0,10.5,0,-1,0, ldraw_lib__4_4edge()],
+  [1,16,0,0,-22.5,10.5,0,0,0,0,10.5,0,-1,0, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 0 -22.5 13.5 0 0 0 0 13.5 0 -1 0 4-4edge.dat
-  [1,16,0,0,-22.5,13.5,0,0,0,0,13.5,0,-1,0, ldraw_lib__4_4edge()],
+  [1,16,0,0,-22.5,13.5,0,0,0,0,13.5,0,-1,0, ldraw_lib__4_4edge(realsolid)],
 // 
 // 0 // Cones adjusted for R7 to R13.5 over 32.5
 // 1 16 0 0 -7.5 3.5 0 0 0 0 3.5 0 17.5 0 4-4con2.dat
-  [1,16,0,0,-7.5,3.5,0,0,0,0,3.5,0,17.5,0, ldraw_lib__4_4con2()],
+  [1,16,0,0,-7.5,3.5,0,0,0,0,3.5,0,17.5,0, ldraw_lib__4_4con2(realsolid)],
 // 1 16 0 0 -15 1.5 0 0 0 0 1.5 0 7.5 0 4-4con7.dat
-  [1,16,0,0,-15,1.5,0,0,0,0,1.5,0,7.5,0, ldraw_lib__4_4con7()],
+  [1,16,0,0,-15,1.5,0,0,0,0,1.5,0,7.5,0, ldraw_lib__4_4con7(realsolid)],
 // 1 16 0 0 -22.5 1.5 0 0 0 0 1.5 0 7.5 0 4-4con8.dat
-  [1,16,0,0,-22.5,1.5,0,0,0,0,1.5,0,7.5,0, ldraw_lib__4_4con8()],
+  [1,16,0,0,-22.5,1.5,0,0,0,0,1.5,0,7.5,0, ldraw_lib__4_4con8(realsolid)],
 // 
 // 1 16 0 20 0 4 0 0 0 -13 0 0 0 4 4-4cylc.dat
-  [1,16,0,20,0,4,0,0,0,-13,0,0,0,4, ldraw_lib__4_4cylc()],
+  [1,16,0,20,0,4,0,0,0,-13,0,0,0,4, ldraw_lib__4_4cylc(realsolid)],
 // 2 24 1.5308 9.43472 -3.6956 0 9.8 -4
   [2,24,1.5308,9.43472,-3.6956,0,9.8,-4],
 // 2 24 -1.5308 9.43472 -3.6956 0 9.8 -4
@@ -113,5 +114,5 @@ function ldraw_lib__39144() = [
   [2,24,3.6956,7.785988,1.5308,3.279475,7.917185,2.153452],
 ];
 module ldraw_lib__39144(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__39144(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__39144(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__39144(line=0.2);

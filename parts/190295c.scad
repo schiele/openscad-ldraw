@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__190295c() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__190295c(realsolid=false) = [
 // 0 Sticker  1.1 x  3.9 with Black "Ticket" on Yellow Background
 // 0 Name: 190295c.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -19,7 +20,7 @@ function ldraw_lib__190295c() = [
 // 0 // Font: Times New Roman
 // 
 // 1 16 0 -0.25 0 39 0 0 0 0.25 0 0 0 11 box5-12.dat
-  [1,16,0,-0.25,0,39,0,0,0,0.25,0,0,0,11, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,39,0,0,0,0.25,0,0,0,11, ldraw_lib__box5_12(realsolid)],
 // 3 0 -24.57 -.25 -6.63 -25.06 -.25 -6.63 -25.06 -.25 -7.03
   [3,0,-24.57,-.25,-6.63,-25.06,-.25,-6.63,-25.06,-.25,-7.03],
 // 4 0 -23.54 -.25 -6.4 -24.57 -.25 -6.63 -25.06 -.25 -7.03 -18.84 -.25 -6.41
@@ -474,5 +475,5 @@ function ldraw_lib__190295c() = [
   [4,14,-14.33,-.25,-6.64,-17.35,-.25,-6.63,-17.35,-.25,-7.03,-14.33,-.25,-7.03],
 ];
 module ldraw_lib__190295c(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__190295c(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__190295c(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__190295c(line=0.2);

@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/4-4disc.scad>
 use <../../p/4-4ndis.scad>
-function ldraw_lib__s__3626ap01s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__3626ap01s01(realsolid=false) = [
 // 0 ~Minifig Head Standard Grin Pattern - Half
 // 0 Name: s\3626ap01s01.dat
 // 0 Author: Max Martin Richter [MMR1988]
@@ -19,7 +20,7 @@ function ldraw_lib__s__3626ap01s01() = [
 // 
 // 0 // neutral area
 // 1 16 3.5 10 -12.3035 1.226 0 0 0 0 -1.25 0.2442 1 0 4-4ndis.dat
-  [1,16,3.5,10,-12.3035,1.226,0,0,0,0,-1.25,0.2442,1,0, ldraw_lib__4_4ndis()],
+  [1,16,3.5,10,-12.3035,1.226,0,0,0,0,-1.25,0.2442,1,0, ldraw_lib__4_4ndis(realsolid)],
 // 4 16 3 14.2 -12.403 3.5 14.5 -12.30367 4.726 11.25 -12.0593 3.5 11.25 -12.3035
   [4,16,3,14.2,-12.403,3.5,14.5,-12.30367,4.726,11.25,-12.0593,3.5,11.25,-12.3035],
 // 4 16 3 14.2 -12.403 3.5 11.25 -12.3035 2.274 11.25 -12.5477 1.75 14.75 -12.652
@@ -44,7 +45,7 @@ function ldraw_lib__s__3626ap01s01() = [
   [4,16,0,16,-13,0,17,-13,4.9751,17,-12.0107,1.75,15.75,-12.652],
 // 0 // black areas
 // 1 0 3.5 10 -12.3035 1.226 0 0 0 0 -1.25 0.2442 1 0 4-4disc.dat
-  [1,0,3.5,10,-12.3035,1.226,0,0,0,0,-1.25,0.2442,1,0, ldraw_lib__4_4disc()],
+  [1,0,3.5,10,-12.3035,1.226,0,0,0,0,-1.25,0.2442,1,0, ldraw_lib__4_4disc(realsolid)],
 // 4 0 1.75 14.75 -12.652 0 15 -13 0 16 -13 1.75 15.75 -12.652
   [4,0,1.75,14.75,-12.652,0,15,-13,0,16,-13,1.75,15.75,-12.652],
 // 4 0 3 14.2 -12.403 1.75 14.75 -12.652 1.75 15.75 -12.652 3.5 15 -12.30388
@@ -53,5 +54,5 @@ function ldraw_lib__s__3626ap01s01() = [
   [3,0,3.5,14.5,-12.30367,3,14.2,-12.403,3.5,15,-12.30388],
 ];
 module ldraw_lib__s__3626ap01s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__3626ap01s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__3626ap01s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__3626ap01s01(line=0.2);

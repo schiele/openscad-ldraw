@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/13392p01s01.scad>
 use <s/13392s01.scad>
-function ldraw_lib__13392p02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__13392p02(realsolid=false) = [
 // 0 Animal Dolphin Jumping with Eyes Pattern
 // 0 Name: 13392p02.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -18,13 +19,13 @@ function ldraw_lib__13392p02() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\13392s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__13392s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__13392s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\13392s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__13392s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__13392s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\13392p01s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__13392p01s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__13392p01s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\13392p01s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__13392p01s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__13392p01s01(realsolid)],
 // 0 // eyelashes
 // 
 // 4 16 14.2418 -43.58 -83.77 14.0695 -43.47 -84.3 14.3365 -43.15 -83.59 14.4328 -43.36 -83.26
@@ -156,5 +157,5 @@ function ldraw_lib__13392p02() = [
   [5,24,0,-47.85,-73,0,-47.5,-75,0.7654,-47.7468,-73.1522,-0.7654,-47.7468,-73.1522],
 ];
 module ldraw_lib__13392p02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__13392p02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__13392p02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__13392p02(line=0.2);

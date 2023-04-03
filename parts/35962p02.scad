@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/35962s01.scad>
-function ldraw_lib__35962p02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__35962p02(realsolid=false) = [
 // 0 Duplo Train Action Brick with White Double Arrow Pattern
 // 0 Name: 35962p02.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -18,7 +19,7 @@ function ldraw_lib__35962p02() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\35962s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__35962s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__35962s01(realsolid)],
 // 4 16 -23.578 -7 -105.754 -5.1 -7 -118.1 5.1 -7 -118.1 23.578 -7 -105.754
   [4,16,-23.578,-7,-105.754,-5.1,-7,-118.1,5.1,-7,-118.1,23.578,-7,-105.754],
 // 4 16 -32.1 -7 0 -23.578 -7 -105.754 23.578 -7 -105.754 32.1 -7 0
@@ -57,5 +58,5 @@ function ldraw_lib__35962p02() = [
   [4,16,-11.4,-7,95,-11.4,-7,77.4,-5.5,-7,77.4,-5.5,-7,95],
 ];
 module ldraw_lib__35962p02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__35962p02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__35962p02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__35962p02(line=0.2);

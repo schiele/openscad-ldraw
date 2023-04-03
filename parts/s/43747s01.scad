@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/4-4cylc.scad>
 use <43936s02.scad>
-function ldraw_lib__s__43747s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__43747s01(realsolid=false) = [
 // 0 ~Animal Serpent Basilisk Tail/Neck S Curve - Bottom - Without patternable area
 // 0 Name: s\43747s01.dat
 // 0 Author: Willy Tschager [Holly-Wood]
@@ -16,13 +17,13 @@ function ldraw_lib__s__43747s01() = [
 // 
 // 
 // 1 16 80 0 78 1 0 0 0 1 0 0 0 1 s\43936s02.dat
-  [1,16,80,0,78,1,0,0,0,1,0,0,0,1, ldraw_lib__s__43936s02()],
+  [1,16,80,0,78,1,0,0,0,1,0,0,0,1, ldraw_lib__s__43936s02(realsolid)],
 // 1 16 80 0 78 0 -1 0 1 0 0 0 0 1 s\43936s02.dat
-  [1,16,80,0,78,0,-1,0,1,0,0,0,0,1, ldraw_lib__s__43936s02()],
+  [1,16,80,0,78,0,-1,0,1,0,0,0,0,1, ldraw_lib__s__43936s02(realsolid)],
 // 1 16 80 0 78 -1 0 0 0 -1 0 0 0 1 s\43936s02.dat
-  [1,16,80,0,78,-1,0,0,0,-1,0,0,0,1, ldraw_lib__s__43936s02()],
+  [1,16,80,0,78,-1,0,0,0,-1,0,0,0,1, ldraw_lib__s__43936s02(realsolid)],
 // 1 16 80 0 78 0 1 0 -1 0 0 0 0 1 s\43936s02.dat
-  [1,16,80,0,78,0,1,0,-1,0,0,0,0,1, ldraw_lib__s__43936s02()],
+  [1,16,80,0,78,0,1,0,-1,0,0,0,0,1, ldraw_lib__s__43936s02(realsolid)],
 // 
 // 2 24 -8 0 -16 -7.391 3.062 -16
   [2,24,-8,0,-16,-7.391,3.062,-16],
@@ -177,7 +178,7 @@ function ldraw_lib__s__43747s01() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 80 0 60 6 0 0 0 0 -6 0 18 0 4-4cylc.dat
-  [1,16,80,0,60,6,0,0,0,0,-6,0,18,0, ldraw_lib__4_4cylc()],
+  [1,16,80,0,60,6,0,0,0,0,-6,0,18,0, ldraw_lib__4_4cylc(realsolid)],
 // 
 // 4 16 90.793 -7.654 60.747 92.071 0 59.92 97.525 0 72.995 96.086 -7.553 73.424
   [4,16,90.793,-7.654,60.747,92.071,0,59.92,97.525,0,72.995,96.086,-7.553,73.424],
@@ -875,5 +876,5 @@ function ldraw_lib__s__43747s01() = [
   [3,16,80,-17.6,100,80,-20,100,82.11,-17.181,100],
 ];
 module ldraw_lib__s__43747s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__43747s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__43747s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__43747s01(line=0.2);

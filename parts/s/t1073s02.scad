@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__t1073s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__t1073s02(realsolid=false) = [
 // 0 ~| BBB Train Wheel XL Flanged Driver 36.8 mm - Spoke
 // 0 Name: s\t1073s02.dat
 // 0 Author: Ulrich Röder [UR]
@@ -489,5 +490,5 @@ function ldraw_lib__s__t1073s02() = [
   [5,24,2.615657,-39.914329,-8,2.615657,-39.914329,-17.5,5.220815,-39.657855,-8,2.083023,-39.623009,-17.5],
 ];
 module ldraw_lib__s__t1073s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__t1073s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__t1073s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__t1073s02(line=0.2);

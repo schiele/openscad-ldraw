@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/4-4cylc.scad>
-function ldraw_lib__15082() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__15082(realsolid=false) = [
 // 0 Animal Wing Bat with  0.5L Bar
 // 0 Name: 15082.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -17,7 +18,7 @@ function ldraw_lib__15082() = [
 // 
 // 
 // 1 16 0 10 0 4 0 0 0 -10 0 0 0 4 4-4cylc.dat
-  [1,16,0,10,0,4,0,0,0,-10,0,0,0,4, ldraw_lib__4_4cylc()],
+  [1,16,0,10,0,4,0,0,0,-10,0,0,0,4, ldraw_lib__4_4cylc(realsolid)],
 // 
 // 3 16 2.485 -39.949 48.699 2.483 -43.452 47.03 2.344 -37.988 39.811
   [3,16,2.485,-39.949,48.699,2.483,-43.452,47.03,2.344,-37.988,39.811],
@@ -3144,5 +3145,5 @@ function ldraw_lib__15082() = [
   [5,24,2.235,-34.504,30.034,2.325,-32.264,29.171,2.501,-30.348,36.304,2.259,-31.681,27.559],
 ];
 module ldraw_lib__15082(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__15082(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__15082(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__15082(line=0.2);

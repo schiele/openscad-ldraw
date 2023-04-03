@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3068bs01.scad>
-function ldraw_lib__3068bpc1() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3068bpc1(realsolid=false) = [
 // 0 Tile  2 x  2 with Yellow Horizontal Stripes and "SOLAR CHARGE LEVEL" Pattern
 // 0 Name: 3068bpc1.dat
 // 0 Author: Christophe Mitillo [Christophe_Mitillo]
@@ -17,7 +18,7 @@ function ldraw_lib__3068bpc1() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3068bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3068bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3068bs01(realsolid)],
 // 4 14 -16.328 0 16.497 -16.744 0 16.471 -16.705 0 16.237 -16.276 0 16.315
   [4,14,-16.328,0,16.497,-16.744,0,16.471,-16.705,0,16.237,-16.276,0,16.315],
 // 4 14 -16.276 0 16.315 -16.705 0 16.237 -16.588 0 16.003 -16.198 0 16.185
@@ -1454,5 +1455,5 @@ function ldraw_lib__3068bpc1() = [
   [3,16,-12.65,0,5.35,-6.75,0,-3.45,-6.75,0,-1.3],
 ];
 module ldraw_lib__3068bpc1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3068bpc1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3068bpc1(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3068bpc1(line=0.2);

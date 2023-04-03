@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/t04o6250.scad>
-function ldraw_lib__s__87998s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__87998s01(realsolid=false) = [
 // 0 ~Minifig Helmet Army Half without Front
 // 0 Name: s\87998s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -321,11 +322,11 @@ function ldraw_lib__s__87998s01() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 4 0 0 0 8 0 -12.8 0 8 0 0 t04o6250.dat
-  [1,16,0,4,0,0,0,8,0,-12.8,0,8,0,0, ldraw_lib__t04o6250()],
+  [1,16,0,4,0,0,0,8,0,-12.8,0,8,0,0, ldraw_lib__t04o6250(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 4 0 8 0 0 0 -12.8 0 0 0 -8 t04o6250.dat
-  [1,16,0,4,0,8,0,0,0,-12.8,0,0,0,-8, ldraw_lib__t04o6250()],
+  [1,16,0,4,0,8,0,0,0,-12.8,0,0,0,-8, ldraw_lib__t04o6250(realsolid)],
 // 3 16 2.888 6.2 -15.416 0 6.2 -15.7 0 4 -13
   [3,16,2.888,6.2,-15.416,0,6.2,-15.7,0,4,-13],
 // 3 16 4.975 4 -12.011 2.888 6.2 -15.416 0 4 -13
@@ -760,5 +761,5 @@ function ldraw_lib__s__87998s01() = [
   [5,24,2.05,-9.391,-4.95,0,-9.391,-5.358,3.789,-7.657,-9.146,0,-10,0],
 ];
 module ldraw_lib__s__87998s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__87998s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__87998s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__87998s01(line=0.2);

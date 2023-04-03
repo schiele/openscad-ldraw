@@ -5,7 +5,8 @@ use <../p/4-4disc.scad>
 use <../p/4-4edge.scad>
 use <../p/4-4ring2.scad>
 use <../p/4-4ring8.scad>
-function ldraw_lib__47200() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__47200(realsolid=false) = [
 // 0 Figure Duplo Child Hair with 2 Plaits
 // 0 Name: 47200.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -20,25 +21,25 @@ function ldraw_lib__47200() = [
 // 
 // 
 // 1 16 0 -39 0 0 0 15 0 -1 0 -15 0 0 4-4disc.dat
-  [1,16,0,-39,0,0,0,15,0,-1,0,-15,0,0, ldraw_lib__4_4disc()],
+  [1,16,0,-39,0,0,0,15,0,-1,0,-15,0,0, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 -39 0 0 0 15 0 -1 0 -15 0 0 4-4edge.dat
-  [1,16,0,-39,0,0,0,15,0,-1,0,-15,0,0, ldraw_lib__4_4edge()],
+  [1,16,0,-39,0,0,0,15,0,-1,0,-15,0,0, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 -10 0 0 0 10 0 -29 0 10 0 0 4-4cylo.dat
-  [1,16,0,-10,0,0,0,10,0,-29,0,10,0,0, ldraw_lib__4_4cylo()],
+  [1,16,0,-10,0,0,0,10,0,-29,0,10,0,0, ldraw_lib__4_4cylo(realsolid)],
 // 1 16 0 -10 0 0 0 3.33333 0 -1 0 3.33333 0 0 4-4ring2.dat
-  [1,16,0,-10,0,0,0,3.33333,0,-1,0,3.33333,0,0, ldraw_lib__4_4ring2()],
+  [1,16,0,-10,0,0,0,3.33333,0,-1,0,3.33333,0,0, ldraw_lib__4_4ring2(realsolid)],
 // 1 16 0 -10 0 0 0 7.2 0 15 0 7.2 0 0 4-4cylo.dat
-  [1,16,0,-10,0,0,0,7.2,0,15,0,7.2,0,0, ldraw_lib__4_4cylo()],
+  [1,16,0,-10,0,0,0,7.2,0,15,0,7.2,0,0, ldraw_lib__4_4cylo(realsolid)],
 // 1 16 0 5 0 0 0 2.7 0 2 0 2.7 0 0 4-4con2.dat
-  [1,16,0,5,0,0,0,2.7,0,2,0,2.7,0,0, ldraw_lib__4_4con2()],
+  [1,16,0,5,0,0,0,2.7,0,2,0,2.7,0,0, ldraw_lib__4_4con2(realsolid)],
 // 1 16 0 5 0 0 0 8.1 0 1 0 8.1 0 0 4-4edge.dat
-  [1,16,0,5,0,0,0,8.1,0,1,0,8.1,0,0, ldraw_lib__4_4edge()],
+  [1,16,0,5,0,0,0,8.1,0,1,0,8.1,0,0, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 5 0 0 0 .9 0 1 0 .9 0 0 4-4ring8.dat
-  [1,16,0,5,0,0,0,.9,0,1,0,.9,0,0, ldraw_lib__4_4ring8()],
+  [1,16,0,5,0,0,0,.9,0,1,0,.9,0,0, ldraw_lib__4_4ring8(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 7 0 0 0 5.4 0 -46 0 5.4 0 0 4-4cylo.dat
-  [1,16,0,7,0,0,0,5.4,0,-46,0,5.4,0,0, ldraw_lib__4_4cylo()],
+  [1,16,0,7,0,0,0,5.4,0,-46,0,5.4,0,0, ldraw_lib__4_4cylo(realsolid)],
 // 3 16 -26.39 -36.03 17.84 -27.91 -34.23 18.54 -29.03 -34.22 15.6
   [3,16,-26.39,-36.03,17.84,-27.91,-34.23,18.54,-29.03,-34.22,15.6],
 // 3 16 -29.03 -34.22 15.6 -29.88 -32.21 15.68 -28.72 -34.84 13.84
@@ -8123,5 +8124,5 @@ function ldraw_lib__47200() = [
   [5,24,23.85,-18.86,-11.03,22.36,-18.59,-10.95,23.26,-16.38,-8.96,23.62,-21.09,-14.13],
 ];
 module ldraw_lib__47200(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__47200(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__47200(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__47200(line=0.2);

@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__6115204ds02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__6115204ds02(realsolid=false) = [
 // 0 ~SHIELD Logo Background
 // 0 Name: s\6115204ds02.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -173,5 +174,5 @@ function ldraw_lib__s__6115204ds02() = [
   [4,16,-14.45,0,1.35,-15.863,0,2.088,-16,0,0,-14.6,0,-0.65],
 ];
 module ldraw_lib__s__6115204ds02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__6115204ds02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__6115204ds02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__6115204ds02(line=0.2);

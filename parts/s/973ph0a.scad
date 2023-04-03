@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__973ph0a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__973ph0a(realsolid=false) = [
 // 0 ~Minifig Torso with School Uniform - Trim Detail
 // 0 Name: s\973ph0a.dat
 // 0 Author: Andy Westrate [westrate]
@@ -592,5 +593,5 @@ function ldraw_lib__s__973ph0a() = [
   [3,0,-18,29.75,-10,-16,30,-10,-17,30,-10],
 ];
 module ldraw_lib__s__973ph0a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__973ph0a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__973ph0a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__973ph0a(line=0.2);

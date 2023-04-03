@@ -2,7 +2,8 @@ use <../lib.scad>
 use <3815pde.scad>
 use <3816pde.scad>
 use <3817pde.scad>
-function ldraw_lib__3815cde() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3815cde(realsolid=false) = [
 // 0 ~Minifig Hips and Legs with Laboratory Smock Pattern (Obsolete)
 // 0 Name: 3815cde.dat
 // 0 Author: Andy Westrate [westrate]
@@ -23,13 +24,13 @@ function ldraw_lib__3815cde() = [
 // 
 // 
 // 1 15 0 0 0 1 0 0 0 1 0 0 0 1 3815pde.dat
-  [1,15,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3815pde()],
+  [1,15,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3815pde(realsolid)],
 // 1 16 0 12 0 1 0 0 0 1 0 0 0 1 3816pde.dat
-  [1,16,0,12,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3816pde()],
+  [1,16,0,12,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3816pde(realsolid)],
 // 1 16 0 12 0 1 0 0 0 1 0 0 0 1 3817pde.dat
-  [1,16,0,12,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3817pde()],
+  [1,16,0,12,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3817pde(realsolid)],
 // 0
 ];
 module ldraw_lib__3815cde(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3815cde(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3815cde(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3815cde(line=0.2);

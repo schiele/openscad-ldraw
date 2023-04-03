@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/42545s01.scad>
 use <s/42545s02.scad>
-function ldraw_lib__42545p03() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__42545p03(realsolid=false) = [
 // 0 Technic Panel 13 x  2 x  5 Mudguard Arched #31 with Black/Red/Grey Diagonal Stripes Left Pattern
 // 0 Name: 42545p03.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -18,11 +19,11 @@ function ldraw_lib__42545p03() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\42545s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__42545s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__42545s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 -1 s\42545s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__42545s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__42545s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 -1 s\42545s02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__42545s02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__42545s02(realsolid)],
 // 4 4 -1.07 -72.3023 93.6997 0.0765 -70.5326 91.7299 -0.8679 -72.0233 95.0897 -1.1702 -72.4747 94.804
   [4,4,-1.07,-72.3023,93.6997,0.0765,-70.5326,91.7299,-0.8679,-72.0233,95.0897,-1.1702,-72.4747,94.804],
 // 4 4 0.0765 -70.5326 91.7299 3.2787 -65.0963 93.4 0.5427 -69.6 96.8 -0.8679 -72.0233 95.0897
@@ -249,5 +250,5 @@ function ldraw_lib__42545p03() = [
   [5,24,-1.3527,-72.7885,72.827,-1.3527,-72.7885,63.8199,3.5206,-65.0963,79.4775,-3.7988,-75.9,70.6],
 ];
 module ldraw_lib__42545p03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__42545p03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__42545p03(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__42545p03(line=0.2);

@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/48/4-4cylc3.scad>
 use <../p/48/4-4rin17.scad>
 use <../p/48/4-4rin18.scad>
-function ldraw_lib__4125165a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4125165a(realsolid=false) = [
 // 0 Sticker  1.9 x  1.9 Round Speedometer
 // 0 Name: 4125165a.dat
 // 0 Author: Johann Eisner [technicbasics]
@@ -19,11 +20,11 @@ function ldraw_lib__4125165a() = [
 // 
 // 
 // 1 16 0 0 0 0 0 19 0 -0.25 0 19 0 0 48\4-4cylc3.dat
-  [1,16,0,0,0,0,0,19,0,-0.25,0,19,0,0, ldraw_lib__48__4_4cylc3()],
+  [1,16,0,0,0,0,0,19,0,-0.25,0,19,0,0, ldraw_lib__48__4_4cylc3(realsolid)],
 // 1 0 0 -0.25 0 1 0 0 0 1 0 0 0 1 48\4-4rin18.dat
-  [1,0,0,-0.25,0,1,0,0,0,1,0,0,0,1, ldraw_lib__48__4_4rin18()],
+  [1,0,0,-0.25,0,1,0,0,0,1,0,0,0,1, ldraw_lib__48__4_4rin18(realsolid)],
 // 1 0 0 -0.25 0 1 0 0 0 1 0 0 0 1 48\4-4rin17.dat
-  [1,0,0,-0.25,0,1,0,0,0,1,0,0,0,1, ldraw_lib__48__4_4rin17()],
+  [1,0,0,-0.25,0,1,0,0,0,1,0,0,0,1, ldraw_lib__48__4_4rin17(realsolid)],
 // 4 71 5 -0.25 -12 5 -0.25 -9.5 -5 -0.25 -9.5 -5 -0.25 -12
   [4,71,5,-0.25,-12,5,-0.25,-9.5,-5,-0.25,-9.5,-5,-0.25,-12],
 // 4 0 5 -0.25 -9.5 8 -0.25 -9 -8 -0.25 -9 -5 -0.25 -9.5
@@ -436,5 +437,5 @@ function ldraw_lib__4125165a() = [
   [3,15,13.01,-0.25,1.674,2.963,-0.25,-1.018,12.988,-0.25,0.567],
 ];
 module ldraw_lib__4125165a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4125165a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4125165a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4125165a(line=0.2);

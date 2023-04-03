@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <4629791b.scad>
 use <85984.scad>
-function ldraw_lib__85984d08() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__85984d08(realsolid=false) = [
 // 0 Slope Brick 31  1 x  2 x  0.667 with Chrome Silver Sticker
 // 0 Name: 85984d08.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -18,10 +19,10 @@ function ldraw_lib__85984d08() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 85984.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__85984()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__85984(realsolid)],
 // 1 16 0 -10 0 1 0 0 0 .857491 -.514499 0 .514499 .857491 4629791b.dat
-  [1,16,0,-10,0,1,0,0,0,.857491,-.514499,0,.514499,.857491, ldraw_lib__4629791b()],
+  [1,16,0,-10,0,1,0,0,0,.857491,-.514499,0,.514499,.857491, ldraw_lib__4629791b(realsolid)],
 ];
 module ldraw_lib__85984d08(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__85984d08(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__85984d08(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__85984d08(line=0.2);

@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/48/1-12cyli.scad>
 use <s/93273s01.scad>
-function ldraw_lib__93273pz0() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__93273pz0(realsolid=false) = [
 // 0 Slope Brick Curved  4 x  1 Double with Red Star with Black Border Pattern
 // 0 Name: 93273pz0.dat
 // 0 Author: Damien Roux [Darats]
@@ -18,11 +19,11 @@ function ldraw_lib__93273pz0() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\93273s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__93273s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__93273s01(realsolid)],
 // 1 16 10 24.9719 0 0 -20 0 -28.9719 0 -28.9719 -40 0 40 48\1-12cyli.dat
-  [1,16,10,24.9719,0,0,-20,0,-28.9719,0,-28.9719,-40,0,40, ldraw_lib__48__1_12cyli()],
+  [1,16,10,24.9719,0,0,-20,0,-28.9719,0,-28.9719,-40,0,40, ldraw_lib__48__1_12cyli(realsolid)],
 // 1 16 -10 24.9719 0 0 20 0 -28.9719 0 -28.9719 40 0 -40 48\1-12cyli.dat
-  [1,16,-10,24.9719,0,0,20,0,-28.9719,0,-28.9719,40,0,-40, ldraw_lib__48__1_12cyli()],
+  [1,16,-10,24.9719,0,0,20,0,-28.9719,0,-28.9719,40,0,-40, ldraw_lib__48__1_12cyli(realsolid)],
 // 4 0 -1.84 -15.9 -2.11 -6.12 -16 0 -8.94 -16 0 -2.98 -15.86 -2.94
   [4,0,-1.84,-15.9,-2.11,-6.12,-16,0,-8.94,-16,0,-2.98,-15.86,-2.94],
 // 4 0 -1.84 -15.9 2.11 -2.98 -15.86 2.94 -8.94 -16 0 -6.12 -16 0
@@ -107,5 +108,5 @@ function ldraw_lib__93273pz0() = [
   [5,24,10,-14.603715,14.64,-10,-14.603715,14.64,-2.02,-15.34,9.52,10,-12.882785,21.648],
 ];
 module ldraw_lib__93273pz0(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__93273pz0(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__93273pz0(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__93273pz0(line=0.2);

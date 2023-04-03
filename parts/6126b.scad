@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4cylc.scad>
 use <../p/4-4ring2.scad>
 use <s/6126s01.scad>
-function ldraw_lib__6126b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6126b(realsolid=false) = [
 // 0 Minifig Flame with Rim
 // 0 Name: 6126b.dat
 // 0 Author: Stephan Meisinger [smr]
@@ -21,14 +22,14 @@ function ldraw_lib__6126b() = [
 // 
 // 
 // 1 16 0 0 -8 4 0 0 0 0 4 0 6 0 4-4cylc.dat
-  [1,16,0,0,-8,4,0,0,0,0,4,0,6,0, ldraw_lib__4_4cylc()],
+  [1,16,0,0,-8,4,0,0,0,0,4,0,6,0, ldraw_lib__4_4cylc(realsolid)],
 // 1 16 0 0 2 6 0 0 0 0 6 0 -4 0 4-4cylc.dat
-  [1,16,0,0,2,6,0,0,0,0,6,0,-4,0, ldraw_lib__4_4cylc()],
+  [1,16,0,0,2,6,0,0,0,0,6,0,-4,0, ldraw_lib__4_4cylc(realsolid)],
 // 1 16 0 0 -2 2 0 0 0 0 2 0 0.5 0 4-4ring2.dat
-  [1,16,0,0,-2,2,0,0,0,0,2,0,0.5,0, ldraw_lib__4_4ring2()],
+  [1,16,0,0,-2,2,0,0,0,0,2,0,0.5,0, ldraw_lib__4_4ring2(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\6126s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6126s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6126s01(realsolid)],
 ];
 module ldraw_lib__6126b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6126b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6126b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6126b(line=0.2);

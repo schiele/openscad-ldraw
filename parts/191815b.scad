@@ -3,7 +3,8 @@ use <../p/2-4chrd.scad>
 use <../p/2-4ndis.scad>
 use <../p/2-4ring1.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__191815b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__191815b(realsolid=false) = [
 // 0 Sticker  1.1 x  4.5 with Black Wrench on Yellow Background
 // 0 Name: 191815b.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -20,21 +21,21 @@ function ldraw_lib__191815b() = [
 // 
 // 
 // 1 16 0 -0.25 0 45 0 0 0 0.25 0 0 0 11 box5-12.dat
-  [1,16,0,-0.25,0,45,0,0,0,0.25,0,0,0,11, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,45,0,0,0,0.25,0,0,0,11, ldraw_lib__box5_12(realsolid)],
 // 1 0 -24 -0.25 0 0 0 -1 0 1 0 1 0 0 2-4chrd.dat
-  [1,0,-24,-0.25,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__2_4chrd()],
+  [1,0,-24,-0.25,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__2_4chrd(realsolid)],
 // 1 0 13 -0.25 0 0 0 1 0 1 0 -1 0 0 2-4chrd.dat
-  [1,0,13,-0.25,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__2_4chrd()],
+  [1,0,13,-0.25,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__2_4chrd(realsolid)],
 // 1 14 -24 -0.25 0 0 0 -1 0 1 0 1 0 0 2-4ring1.dat
-  [1,14,-24,-0.25,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__2_4ring1()],
+  [1,14,-24,-0.25,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__2_4ring1(realsolid)],
 // 1 14 13 -0.25 0 0 0 1 0 1 0 -1 0 0 2-4ring1.dat
-  [1,14,13,-0.25,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__2_4ring1()],
+  [1,14,13,-0.25,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__2_4ring1(realsolid)],
 // 1 0 -24 -0.25 0 0 0 -2 0 1 0 2 0 0 2-4ring1.dat
-  [1,0,-24,-0.25,0,0,0,-2,0,1,0,2,0,0, ldraw_lib__2_4ring1()],
+  [1,0,-24,-0.25,0,0,0,-2,0,1,0,2,0,0, ldraw_lib__2_4ring1(realsolid)],
 // 1 0 13 -0.25 0 0 0 2 0 1 0 -2 0 0 2-4ndis.dat
-  [1,0,13,-0.25,0,0,0,2,0,1,0,-2,0,0, ldraw_lib__2_4ndis()],
+  [1,0,13,-0.25,0,0,0,2,0,1,0,-2,0,0, ldraw_lib__2_4ndis(realsolid)],
 // 1 14 -24 -0.25 0 0 0 -4 0 1 0 4 0 0 2-4ndis.dat
-  [1,14,-24,-0.25,0,0,0,-4,0,1,0,4,0,0, ldraw_lib__2_4ndis()],
+  [1,14,-24,-0.25,0,0,0,-4,0,1,0,4,0,0, ldraw_lib__2_4ndis(realsolid)],
 // 4 0 13 -0.25 1 -24 -0.25 1 -24 -0.25 -1 13 -0.25 -1
   [4,0,13,-0.25,1,-24,-0.25,1,-24,-0.25,-1,13,-0.25,-1],
 // 4 14 13 -0.25 2 -24 -0.25 2 -24 -0.25 1 13 -0.25 1
@@ -127,5 +128,5 @@ function ldraw_lib__191815b() = [
   [3,14,45,-0.25,11,27.7,-0.25,7.4,30.1,-0.25,5.5],
 ];
 module ldraw_lib__191815b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__191815b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__191815b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__191815b(line=0.2);

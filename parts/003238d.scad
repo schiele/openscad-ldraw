@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/003238s7.scad>
 use <s/3238s01.scad>
-function ldraw_lib__003238d() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__003238d(realsolid=false) = [
 // 0 Sticker Minifig Shield Triangular with Yellow Trefoils on Blue
 // 0 Name: 003238d.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -50,15 +51,15 @@ function ldraw_lib__003238d() = [
 // 4 1 8.76 -0.25 -24.57 6 -0.25 -19.3 0 -0.25 -19.3 0 -0.25 -32.37
   [4,1,8.76,-0.25,-24.57,6,-0.25,-19.3,0,-0.25,-19.3,0,-0.25,-32.37],
 // 1 1 0 -0.25 -11.9 0.1 0 0 0 1 0 0 0 0.1 s\003238s7.dat
-  [1,1,0,-0.25,-11.9,0.1,0,0,0,1,0,0,0,0.1, ldraw_lib__s__003238s7()],
+  [1,1,0,-0.25,-11.9,0.1,0,0,0,1,0,0,0,0.1, ldraw_lib__s__003238s7(realsolid)],
 // 1 1 10 -0.25 0.1 0.1 0 0 0 1 0 0 0 0.1 s\003238s7.dat
-  [1,1,10,-0.25,0.1,0.1,0,0,0,1,0,0,0,0.1, ldraw_lib__s__003238s7()],
+  [1,1,10,-0.25,0.1,0.1,0,0,0,1,0,0,0,0.1, ldraw_lib__s__003238s7(realsolid)],
 // 1 1 -10 -0.25 0.1 0.1 0 0 0 1 0 0 0 0.1 s\003238s7.dat
-  [1,1,-10,-0.25,0.1,0.1,0,0,0,1,0,0,0,0.1, ldraw_lib__s__003238s7()],
+  [1,1,-10,-0.25,0.1,0.1,0,0,0,1,0,0,0,0.1, ldraw_lib__s__003238s7(realsolid)],
 // 1 1 0 0 0 1 0 0 0 1 0 0 0 1 s\3238s01.dat
-  [1,1,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3238s01()],
+  [1,1,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3238s01(realsolid)],
 // 0
 ];
 module ldraw_lib__003238d(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__003238d(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__003238d(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__003238d(line=0.2);

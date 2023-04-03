@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/4-4disc.scad>
 use <s/3067s01.scad>
-function ldraw_lib__3067apt2() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3067apt2(realsolid=false) = [
 // 0 Brick  1 x  6 without Centre Studs with Black "ANNO 1762" Pattern
 // 0 Name: 3067apt2.dat
 // 0 Author: Michael Heidemann [mikeheide]
@@ -20,7 +21,7 @@ function ldraw_lib__3067apt2() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3067s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3067s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3067s01(realsolid)],
 // 4 0 -39 17 -10 -44 8 -10 -45.25 8 -10 -41.5 17 -10
   [4,0,-39,17,-10,-44,8,-10,-45.25,8,-10,-41.5,17,-10],
 // 3 0 -45.25 8 -10 -43.25 14.75 -10 -41.5 17 -10
@@ -78,7 +79,7 @@ function ldraw_lib__3067apt2() = [
 // 4 0 -9.75 8.5 -10 -11 8.5 -10 -11 15 -10 -9.75 17 -10
   [4,0,-9.75,8.5,-10,-11,8.5,-10,-11,15,-10,-9.75,17,-10],
 // 1 16 -1.25 12.75 -10 4 0 0 0 0 -4 0 4 0 4-4disc.dat
-  [1,16,-1.25,12.75,-10,4,0,0,0,0,-4,0,4,0, ldraw_lib__4_4disc()],
+  [1,16,-1.25,12.75,-10,4,0,0,0,0,-4,0,4,0, ldraw_lib__4_4disc(realsolid)],
 // 4 0 -3.25 8 -10 -2.7807 9.0545 -10 -1.25 8.75 -10 -1.25 7.75 -10
   [4,0,-3.25,8,-10,-2.7807,9.0545,-10,-1.25,8.75,-10,-1.25,7.75,-10],
 // 4 0 -4.0784 9.9216 -10 -2.7807 9.0545 -10 -3.25 8 -10 -5.25 9 -10
@@ -453,5 +454,5 @@ function ldraw_lib__3067apt2() = [
 // 0
 ];
 module ldraw_lib__3067apt2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3067apt2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3067apt2(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3067apt2(line=0.2);

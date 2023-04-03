@@ -3,7 +3,8 @@ use <../p/box.scad>
 use <u9399.scad>
 use <u9472.scad>
 use <u9473.scad>
-function ldraw_lib__45610() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__45610(realsolid=false) = [
 // 0 Electric Powered Up 6 Port Hub Rechargeable Battery
 // 0 Name: 45610.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -24,20 +25,20 @@ function ldraw_lib__45610() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 u9472.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9472()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9472(realsolid)],
 // 1 16 0 -52 0 1 0 0 0 1 0 0 0 1 u9399.dat
-  [1,16,0,-52,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9399()],
+  [1,16,0,-52,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9399(realsolid)],
 // 1 494 51.5308 -44 24 1 0 0 0 1 0 0 0 1 u9473.dat
-  [1,494,51.5308,-44,24,1,0,0,0,1,0,0,0,1, ldraw_lib__u9473()],
+  [1,494,51.5308,-44,24,1,0,0,0,1,0,0,0,1, ldraw_lib__u9473(realsolid)],
 // 1 494 51.5308 -44 -24 1 0 0 0 1 0 0 0 1 u9473.dat
-  [1,494,51.5308,-44,-24,1,0,0,0,1,0,0,0,1, ldraw_lib__u9473()],
+  [1,494,51.5308,-44,-24,1,0,0,0,1,0,0,0,1, ldraw_lib__u9473(realsolid)],
 // 1 494 -51.5308 -44 24 1 0 0 0 1 0 0 0 1 u9473.dat
-  [1,494,-51.5308,-44,24,1,0,0,0,1,0,0,0,1, ldraw_lib__u9473()],
+  [1,494,-51.5308,-44,24,1,0,0,0,1,0,0,0,1, ldraw_lib__u9473(realsolid)],
 // 1 494 -51.5308 -44 -24 1 0 0 0 1 0 0 0 1 u9473.dat
-  [1,494,-51.5308,-44,-24,1,0,0,0,1,0,0,0,1, ldraw_lib__u9473()],
+  [1,494,-51.5308,-44,-24,1,0,0,0,1,0,0,0,1, ldraw_lib__u9473(realsolid)],
 // 1 0 0 -50 87 8 0 0 0 2 0 0 0 4 box.dat
-  [1,0,0,-50,87,8,0,0,0,2,0,0,0,4, ldraw_lib__box()],
+  [1,0,0,-50,87,8,0,0,0,2,0,0,0,4, ldraw_lib__box(realsolid)],
 ];
 module ldraw_lib__45610(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__45610(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__45610(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__45610(line=0.2);

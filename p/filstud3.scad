@@ -4,7 +4,8 @@ use <1-4edge.scad>
 use <3-16cyli.scad>
 use <3-16edge.scad>
 use <box2-5.scad>
-function ldraw_lib__filstud3() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__filstud3(realsolid=false) = [
 // 0 Stud Filler with 3 Ribs for Hollow Studs
 // 0 Name: filstud3.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -19,11 +20,11 @@ function ldraw_lib__filstud3() = [
 // 
 // 
 // 1 16 0 4 0 4 0 0 0 1 0 0 0 4 3-16edge.dat
-  [1,16,0,4,0,4,0,0,0,1,0,0,0,4, ldraw_lib__3_16edge()],
+  [1,16,0,4,0,4,0,0,0,1,0,0,0,4, ldraw_lib__3_16edge(realsolid)],
 // 1 16 0 4 0 -1.5307 0 -3.6955 0 1 0 3.6955 0 -1.5307 3-16edge.dat
-  [1,16,0,4,0,-1.5307,0,-3.6955,0,1,0,3.6955,0,-1.5307, ldraw_lib__3_16edge()],
+  [1,16,0,4,0,-1.5307,0,-3.6955,0,1,0,3.6955,0,-1.5307, ldraw_lib__3_16edge(realsolid)],
 // 1 16 0 4 0 -2.8284 0 2.8284 0 1 0 -2.8284 0 -2.8284 1-4edge.dat
-  [1,16,0,4,0,-2.8284,0,2.8284,0,1,0,-2.8284,0,-2.8284, ldraw_lib__1_4edge()],
+  [1,16,0,4,0,-2.8284,0,2.8284,0,1,0,-2.8284,0,-2.8284, ldraw_lib__1_4edge(realsolid)],
 // 2 24 1 4 3.801 1.5307 4 3.6955
   [2,24,1,4,3.801,1.5307,4,3.6955],
 // 2 24 -1 4 3.801 -1.5307 4 3.6955
@@ -48,27 +49,27 @@ function ldraw_lib__filstud3() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 2.397 2 1.3825 0 -1.397 0 -2 0 0 0 0.8065 -1.612 box2-5.dat
-  [1,16,2.397,2,1.3825,0,-1.397,0,-2,0,0,0,0.8065,-1.612, ldraw_lib__box2_5()],
+  [1,16,2.397,2,1.3825,0,-1.397,0,-2,0,0,0,0.8065,-1.612, ldraw_lib__box2_5(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -2.397 2 1.3825 0 1.397 0 2 0 0 0 0.8065 -1.612 box2-5.dat
-  [1,16,-2.397,2,1.3825,0,1.397,0,2,0,0,0,0.8065,-1.612, ldraw_lib__box2_5()],
+  [1,16,-2.397,2,1.3825,0,1.397,0,2,0,0,0,0.8065,-1.612, ldraw_lib__box2_5(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 2 -2.8284 0 1.4142 -1.4142 -2 0 0 0 0.83695 0.83695 box2-5.dat
-  [1,16,0,2,-2.8284,0,1.4142,-1.4142,-2,0,0,0,0.83695,0.83695, ldraw_lib__box2_5()],
+  [1,16,0,2,-2.8284,0,1.4142,-1.4142,-2,0,0,0,0.83695,0.83695, ldraw_lib__box2_5(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 0 4 0 0 0 4 0 0 0 4 3-16cyli.dat
-  [1,16,0,0,0,4,0,0,0,4,0,0,0,4, ldraw_lib__3_16cyli()],
+  [1,16,0,0,0,4,0,0,0,4,0,0,0,4, ldraw_lib__3_16cyli(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 0 -1.5307 0 -3.6955 0 4 0 3.6955 0 -1.5307 3-16cyli.dat
-  [1,16,0,0,0,-1.5307,0,-3.6955,0,4,0,3.6955,0,-1.5307, ldraw_lib__3_16cyli()],
+  [1,16,0,0,0,-1.5307,0,-3.6955,0,4,0,3.6955,0,-1.5307, ldraw_lib__3_16cyli(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 0 -2.8284 0 2.8284 0 4 0 -2.8284 0 -2.8284 1-4cyli.dat
-  [1,16,0,0,0,-2.8284,0,2.8284,0,4,0,-2.8284,0,-2.8284, ldraw_lib__1_4cyli()],
+  [1,16,0,0,0,-2.8284,0,2.8284,0,4,0,-2.8284,0,-2.8284, ldraw_lib__1_4cyli(realsolid)],
 // 4 16 1 4 3.801 1.5307 4 3.6955 1.5307 0 3.6955 1 0 3.801
   [4,16,1,4,3.801,1.5307,4,3.6955,1.5307,0,3.6955,1,0,3.801],
 // 4 16 -1 0 3.801 -1.5307 0 3.6955 -1.5307 4 3.6955 -1 4 3.801
@@ -112,5 +113,5 @@ function ldraw_lib__filstud3() = [
   [4,16,0,0,0,3.6955,0,-1.5307,3.794,0,-1.036,1,0,0.577],
 ];
 module ldraw_lib__filstud3(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__filstud3(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__filstud3(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__filstud3(line=0.2);

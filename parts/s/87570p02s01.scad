@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__87570p02s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__87570p02s01(realsolid=false) = [
 // 0 ~Minifig Head Trandoshan with White Teeth and Orange Eyes with Black and White Pupil Pattern Half
 // 0 Name: s\87570p02s01.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -282,5 +283,5 @@ function ldraw_lib__s__87570p02s01() = [
   [5,24,2.625,-6.572,-20.758,3.153,-6.804,-20.384,2.623,-6.686,-20.769,3.666,-4.959,-20.496],
 ];
 module ldraw_lib__s__87570p02s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__87570p02s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__87570p02s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__87570p02s01(line=0.2);

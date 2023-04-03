@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/17457s01.scad>
-function ldraw_lib__17457() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__17457(realsolid=false) = [
 // 0 Windscreen  2 x  6 x  2 Vertical Glass
 // 0 Name: 17457.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -17,9 +18,9 @@ function ldraw_lib__17457() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\17457s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__17457s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__17457s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\17457s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__17457s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__17457s01(realsolid)],
 // 4 16 37.697 40 -3.5 -37.697 40 -3.5 -5.782 36.502 -3.5 5.782 36.502 -3.5
   [4,16,37.697,40,-3.5,-37.697,40,-3.5,-5.782,36.502,-3.5,5.782,36.502,-3.5],
 // 4 16 5.782 7.248 -3.5 -5.782 7.248 -3.5 -37.697 3.75 -3.5 37.697 3.75 -3.5
@@ -54,5 +55,5 @@ function ldraw_lib__17457() = [
   [4,16,5.875,4.252,-6.5,7.75,3.75,-6.5,-7.75,3.75,-6.5,-5.875,4.252,-6.5],
 ];
 module ldraw_lib__17457(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__17457(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__17457(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__17457(line=0.2);

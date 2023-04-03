@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__973p4el() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__973p4el(realsolid=false) = [
 // 0 ~Royal Knights Lion with Red in Crown Pattern - Half
 // 0 Name: s\973p4el.dat
 // 0 Author: Bernd Broich [bbroich]
@@ -330,5 +331,5 @@ function ldraw_lib__s__973p4el() = [
   [4,4,3.875,-15.45,0,3.875,-14.888,0,5.938,-14.888,0,5.938,-15.45,0],
 ];
 module ldraw_lib__s__973p4el(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__973p4el(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__973p4el(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__973p4el(line=0.2);

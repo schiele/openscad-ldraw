@@ -2,7 +2,8 @@ use <../lib.scad>
 use <4-4cyli.scad>
 use <4-4ring8.scad>
 use <peghole.scad>
-function ldraw_lib__connhole() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__connhole(realsolid=false) = [
 // 0 Technic Connector Hole Long
 // 0 Name: connhole.dat
 // 0 Author: Thomas Woelk [t.woelk]
@@ -18,19 +19,19 @@ function ldraw_lib__connhole() = [
 // 
 // 
 // 1 16 0 -10 0 1 0 0 0 1 0 0 0 1 peghole.dat
-  [1,16,0,-10,0,1,0,0,0,1,0,0,0,1, ldraw_lib__peghole()],
+  [1,16,0,-10,0,1,0,0,0,1,0,0,0,1, ldraw_lib__peghole(realsolid)],
 // 1 16 0 10 0 1 0 0 0 -1 0 0 0 1 peghole.dat
-  [1,16,0,10,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__peghole()],
+  [1,16,0,10,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__peghole(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -8 0 6 0 0 0 16 0 0 0 6 4-4cyli.dat
-  [1,16,0,-8,0,6,0,0,0,16,0,0,0,6, ldraw_lib__4_4cyli()],
+  [1,16,0,-8,0,6,0,0,0,16,0,0,0,6, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 -10 0 1 0 0 0 1 0 0 0 1 4-4ring8.dat
-  [1,16,0,-10,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4ring8()],
+  [1,16,0,-10,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4ring8(realsolid)],
 // 1 16 0 10 0 1 0 0 0 -1 0 0 0 -1 4-4ring8.dat
-  [1,16,0,10,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__4_4ring8()],
+  [1,16,0,10,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__4_4ring8(realsolid)],
 // 0
 ];
 module ldraw_lib__connhole(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__connhole(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__connhole(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__connhole(line=0.2);

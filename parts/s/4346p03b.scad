@@ -2,7 +2,8 @@ use <../../lib.scad>
 use <../../p/4-4disc.scad>
 use <../../p/4-4ndis.scad>
 use <../../p/4-4ring5.scad>
-function ldraw_lib__s__4346p03b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__4346p03b(realsolid=false) = [
 // 0 ~Pattern Mail without Border
 // 0 Name: s\4346p03b.dat
 // 0 Author: Steffen [Steffen]
@@ -133,13 +134,13 @@ function ldraw_lib__s__4346p03b() = [
 // 4 0 -6.03 0 2.04 -4.98 0 1.25 -4.84 0 1.97 -5.24 0 2.24
   [4,0,-6.03,0,2.04,-4.98,0,1.25,-4.84,0,1.97,-5.24,0,2.24],
 // 1 15 1.55 0 3.35 1.25 0 0 0 1.25 0 0 0 1.25 4-4disc.dat
-  [1,15,1.55,0,3.35,1.25,0,0,0,1.25,0,0,0,1.25, ldraw_lib__4_4disc()],
+  [1,15,1.55,0,3.35,1.25,0,0,0,1.25,0,0,0,1.25, ldraw_lib__4_4disc(realsolid)],
 // 1 0 1.55 0 3.35 0.25 0 0 0 0.25 0 0 0 0.25 4-4ring5.dat
-  [1,0,1.55,0,3.35,0.25,0,0,0,0.25,0,0,0,0.25, ldraw_lib__4_4ring5()],
+  [1,0,1.55,0,3.35,0.25,0,0,0,0.25,0,0,0,0.25, ldraw_lib__4_4ring5(realsolid)],
 // 1 0 1.55 0 3.35 0.3 0 0 0 0.3 0 0 0 0.3 4-4ring5.dat
-  [1,0,1.55,0,3.35,0.3,0,0,0,0.3,0,0,0,0.3, ldraw_lib__4_4ring5()],
+  [1,0,1.55,0,3.35,0.3,0,0,0,0.3,0,0,0,0.3, ldraw_lib__4_4ring5(realsolid)],
 // 1 14 1.55 0 3.35 1.8 0 0 0 1.8 0 0 0 1.8 4-4ndis.dat
-  [1,14,1.55,0,3.35,1.8,0,0,0,1.8,0,0,0,1.8, ldraw_lib__4_4ndis()],
+  [1,14,1.55,0,3.35,1.8,0,0,0,1.8,0,0,0,1.8, ldraw_lib__4_4ndis(realsolid)],
 // 4 14 -2.01 0 6.71 -5.24 0 2.24 -4.84 0 1.97 -1.61 0 6.44
   [4,14,-2.01,0,6.71,-5.24,0,2.24,-4.84,0,1.97,-1.61,0,6.44],
 // 4 14 -1.81 0 5.79 -1.61 0 6.44 -4.84 0 1.97 -4.45 0 2.3
@@ -255,5 +256,5 @@ function ldraw_lib__s__4346p03b() = [
   [4,15,0,0,-7.89,10.05,0,-7.89,1.31,0,-5.14,0.71,0,-5.52],
 ];
 module ldraw_lib__s__4346p03b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__4346p03b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__4346p03b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__4346p03b(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <190775a.scad>
-function ldraw_lib__190775() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__190775(realsolid=false) = [
 // 0 ~Moved to 190775a
 // 0 Name: 190775.dat
 // 0 Author: [PTadmin]
@@ -16,8 +17,8 @@ function ldraw_lib__190775() = [
 // 
 // 0 // Sticker Technic Black "6" or "9" on Round White Background
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 190775a.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__190775a()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__190775a(realsolid)],
 ];
 module ldraw_lib__190775(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__190775(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__190775(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__190775(line=0.2);

@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <2558.scad>
 use <2559.scad>
-function ldraw_lib__2559c02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2559c02(realsolid=false) = [
 // 0 Boat Stern 16 x 14 x  5.333 with Red Bottom
 // 0 Name: 2559c02.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -19,10 +20,10 @@ function ldraw_lib__2559c02() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 2559.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2559()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2559(realsolid)],
 // 1 4 0 0 0 1 0 0 0 1 0 0 0 1 2558.dat
-  [1,4,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2558()],
+  [1,4,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2558(realsolid)],
 ];
 module ldraw_lib__2559c02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2559c02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2559c02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2559c02(line=0.2);

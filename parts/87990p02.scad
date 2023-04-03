@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/87990s01.scad>
 use <s/87990s03.scad>
-function ldraw_lib__87990p02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__87990p02(realsolid=false) = [
 // 0 Minifig Hair with Ponytail and Swept Sideways Fringe with Yellow Hairband Pattern
 // 0 Name: 87990p02.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -20,9 +21,9 @@ function ldraw_lib__87990p02() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\87990s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__87990s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__87990s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\87990s03.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__87990s03()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__87990s03(realsolid)],
 // 
 // 2 24 -10.324 -3.758 -4.731 -10.1139 -4.1227 -4.0555
   [2,24,-10.324,-3.758,-4.731,-10.1139,-4.1227,-4.0555],
@@ -1346,5 +1347,5 @@ function ldraw_lib__87990p02() = [
   [5,14,15.687,4.802,1.985,15.503,3.65,3.572,15.128,4.872,4.695,15.285,2.164,2.197],
 ];
 module ldraw_lib__87990p02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__87990p02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__87990p02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__87990p02(line=0.2);

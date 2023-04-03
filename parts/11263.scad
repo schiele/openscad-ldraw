@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/knob1.scad>
 use <s/11263s01.scad>
-function ldraw_lib__11263() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__11263(realsolid=false) = [
 // 0 Minifig Arm Bird Wing
 // 0 Name: 11263.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -20,11 +21,11 @@ function ldraw_lib__11263() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\11263s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__11263s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__11263s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 -1 s\11263s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__11263s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__11263s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 -0.25882 -0.96593 0 -0.96593 0.25882 knob1.dat
-  [1,16,0,0,0,-1,0,0,0,-0.25882,-0.96593,0,-0.96593,0.25882, ldraw_lib__knob1()],
+  [1,16,0,0,0,-1,0,0,0,-0.25882,-0.96593,0,-0.96593,0.25882, ldraw_lib__knob1(realsolid)],
 // 5 24 10.236 28.203 0 9.998 28.184 0 10.155 27.6 1.312 10.155 27.6 -1.312
   [5,24,10.236,28.203,0,9.998,28.184,0,10.155,27.6,1.312,10.155,27.6,-1.312],
 // 5 24 9.998 24.359 0 12.034 23.867 0 11.269 25.055 1.873 11.269 25.055 -1.873
@@ -75,5 +76,5 @@ function ldraw_lib__11263() = [
   [5,24,15.338,18.688,0,16.221,23.92,0,14.461,18.074,-3.41,14.461,18.074,3.41],
 ];
 module ldraw_lib__11263(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__11263(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__11263(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__11263(line=0.2);

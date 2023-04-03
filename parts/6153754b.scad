@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <6153754a.scad>
-function ldraw_lib__6153754b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6153754b(realsolid=false) = [
 // 0 Sticker  3.4 x  1.4 with Dark Azure Volkswagen Right Front Window Pillar
 // 0 Name: 6153754b.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -17,8 +18,8 @@ function ldraw_lib__6153754b() = [
 // 
 // 
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 6153754a.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__6153754a()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__6153754a(realsolid)],
 ];
 module ldraw_lib__6153754b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6153754b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6153754b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6153754b(line=0.2);

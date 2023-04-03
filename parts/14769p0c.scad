@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/1-8chrd.scad>
 use <s/14769s01.scad>
-function ldraw_lib__14769p0c() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__14769p0c(realsolid=false) = [
 // 0 Tile  2 x  2 Round with Round Underside Stud with Octan Logo and Classic "OCTAN GAS" Pattern
 // 0 Name: 14769p0c.dat
 // 0 Author: Ulrich Röder [UR]
@@ -21,23 +22,23 @@ function ldraw_lib__14769p0c() = [
 // 
 // 0 // Main
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\14769s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__14769s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__14769s01(realsolid)],
 // 1 16 0 0 0 20 0 0 0 1 0 0 0 20 1-8chrd.dat
-  [1,16,0,0,0,20,0,0,0,1,0,0,0,20, ldraw_lib__1_8chrd()],
+  [1,16,0,0,0,20,0,0,0,1,0,0,0,20, ldraw_lib__1_8chrd(realsolid)],
 // 1 16 0 0 0 20 0 0 0 1 0 0 0 -20 1-8chrd.dat
-  [1,16,0,0,0,20,0,0,0,1,0,0,0,-20, ldraw_lib__1_8chrd()],
+  [1,16,0,0,0,20,0,0,0,1,0,0,0,-20, ldraw_lib__1_8chrd(realsolid)],
 // 1 16 0 0 0 -20 0 0 0 1 0 0 0 20 1-8chrd.dat
-  [1,16,0,0,0,-20,0,0,0,1,0,0,0,20, ldraw_lib__1_8chrd()],
+  [1,16,0,0,0,-20,0,0,0,1,0,0,0,20, ldraw_lib__1_8chrd(realsolid)],
 // 1 16 0 0 0 -20 0 0 0 1 0 0 0 -20 1-8chrd.dat
-  [1,16,0,0,0,-20,0,0,0,1,0,0,0,-20, ldraw_lib__1_8chrd()],
+  [1,16,0,0,0,-20,0,0,0,1,0,0,0,-20, ldraw_lib__1_8chrd(realsolid)],
 // 1 16 0 0 0 0 0 -20 0 1 0 20 0 0 1-8chrd.dat
-  [1,16,0,0,0,0,0,-20,0,1,0,20,0,0, ldraw_lib__1_8chrd()],
+  [1,16,0,0,0,0,0,-20,0,1,0,20,0,0, ldraw_lib__1_8chrd(realsolid)],
 // 1 16 0 0 0 0 0 20 0 1 0 20 0 0 1-8chrd.dat
-  [1,16,0,0,0,0,0,20,0,1,0,20,0,0, ldraw_lib__1_8chrd()],
+  [1,16,0,0,0,0,0,20,0,1,0,20,0,0, ldraw_lib__1_8chrd(realsolid)],
 // 1 16 0 0 0 0 0 -20 0 1 0 -20 0 0 1-8chrd.dat
-  [1,16,0,0,0,0,0,-20,0,1,0,-20,0,0, ldraw_lib__1_8chrd()],
+  [1,16,0,0,0,0,0,-20,0,1,0,-20,0,0, ldraw_lib__1_8chrd(realsolid)],
 // 1 16 0 0 0 0 0 20 0 1 0 -20 0 0 1-8chrd.dat
-  [1,16,0,0,0,0,0,20,0,1,0,-20,0,0, ldraw_lib__1_8chrd()],
+  [1,16,0,0,0,0,0,20,0,1,0,-20,0,0, ldraw_lib__1_8chrd(realsolid)],
 // 3 16 14.142 0 14.142 6.401 0 12.686 6.622 0 12.021
   [3,16,14.142,0,14.142,6.401,0,12.686,6.622,0,12.021],
 // 3 16 6.059 0 13.295 6.401 0 12.686 14.142 0 14.142
@@ -1080,5 +1081,5 @@ function ldraw_lib__14769p0c() = [
   [4,2,3.275,0,-11,3.525,0,-10.85,3.625,0,-10.05,3.075,0,-9.625],
 ];
 module ldraw_lib__14769p0c(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__14769p0c(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__14769p0c(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__14769p0c(line=0.2);

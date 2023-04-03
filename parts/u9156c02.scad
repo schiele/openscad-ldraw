@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <55205c01.scad>
 use <55209.scad>
-function ldraw_lib__u9156c02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__u9156c02(realsolid=false) = [
 // 0 Electric Sound Brick  2 x  4 x  2 with Orange Button
 // 0 Name: u9156c02.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -19,10 +20,10 @@ function ldraw_lib__u9156c02() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 55205c01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__55205c01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__55205c01(realsolid)],
 // 1 25 48 34 0 0 0 -1 0 1 0 1 0 0 55209.dat
-  [1,25,48,34,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__55209()],
+  [1,25,48,34,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__55209(realsolid)],
 ];
 module ldraw_lib__u9156c02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__u9156c02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__u9156c02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__u9156c02(line=0.2);

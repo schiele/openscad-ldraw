@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <4285b.scad>
-function ldraw_lib__30234() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__30234(realsolid=false) = [
 // 0 =Dish  6 x  6 Inverted Webbed Type 2
 // 0 Name: 30234.dat
 // 0 Author: Rolf Osterthun [Rolf]
@@ -18,8 +19,8 @@ function ldraw_lib__30234() = [
 // 0 // Part 30234 is the transparent counterpart of 4285b
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 4285b.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4285b()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4285b(realsolid)],
 ];
 module ldraw_lib__30234(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__30234(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__30234(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__30234(line=0.2);

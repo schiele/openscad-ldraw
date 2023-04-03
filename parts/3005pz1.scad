@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3005s01.scad>
-function ldraw_lib__3005pz1() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3005pz1(realsolid=false) = [
 // 0 Brick  1 x  1 with Pocket Pattern
 // 0 Name: 3005pz1.dat
 // 0 Author: Vincent Messenet [Cheenzo]
@@ -17,7 +18,7 @@ function ldraw_lib__3005pz1() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3005s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3005s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3005s01(realsolid)],
 // 
 // 4 0 -6.25 23.25 -10 -5.625 21.75 -10 -7.75 19.375 -10 -9.25 20 -10
   [4,0,-6.25,23.25,-10,-5.625,21.75,-10,-7.75,19.375,-10,-9.25,20,-10],
@@ -69,5 +70,5 @@ function ldraw_lib__3005pz1() = [
   [4,16,7.75,6.875,-10,6.25,8.5,-10,5.625,21.75,-10,7.75,19.375,-10],
 ];
 module ldraw_lib__3005pz1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3005pz1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3005pz1(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3005pz1(line=0.2);

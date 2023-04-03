@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/2586p4fa.scad>
 use <s/3846s01.scad>
-function ldraw_lib__3846p4f() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3846p4f(realsolid=false) = [
 // 0 Minifig Shield Triangular with Bat Pattern
 // 0 Name: 3846p4f.dat
 // 0 Author: Chris Dee [cwdee]
@@ -24,9 +25,9 @@ function ldraw_lib__3846p4f() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3846s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3846s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3846s01(realsolid)],
 // 1 16 0 7 -2 1 0 0 0 0.8 0 0 0 1 s\2586p4fa.dat
-  [1,16,0,7,-2,1,0,0,0,0.8,0,0,0,1, ldraw_lib__s__2586p4fa()],
+  [1,16,0,7,-2,1,0,0,0,0.8,0,0,0,1, ldraw_lib__s__2586p4fa(realsolid)],
 // 
 // 4 4 -17 -11 -10 -20 -14 -10 20 -14 -10 17 -11 -10
   [4,4,-17,-11,-10,-20,-14,-10,20,-14,-10,17,-11,-10],
@@ -76,5 +77,5 @@ function ldraw_lib__3846p4f() = [
   [4,80,0,28.353,-10,-6.53,22.594,-10,-6,20.6,-10,0,27,-10],
 ];
 module ldraw_lib__3846p4f(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3846p4f(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3846p4f(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3846p4f(line=0.2);

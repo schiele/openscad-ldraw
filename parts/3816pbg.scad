@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/3816pbda.scad>
 use <s/3816s01.scad>
-function ldraw_lib__3816pbg() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3816pbg(realsolid=false) = [
 // 0 ~Minifig Leg Right with Iron Patriot Armoured Suit Kneepad Pattern (Obsolete)
 // 0 Name: 3816pbg.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -20,9 +21,9 @@ function ldraw_lib__3816pbg() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3816s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3816s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3816s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3816pbda.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3816pbda()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3816pbda(realsolid)],
 // 
 // 0 // silver star
 // 4 80 -10.3 -4.832 -7.309 -10.043 -4.154 -7.775 -9.835 -4.441 -7.578 -10.3 -5.668 -6.735
@@ -132,5 +133,5 @@ function ldraw_lib__3816pbg() = [
   [4,16,-12.9,22.1,-11,-12.596,22.543,-11,-8.004,22.543,-11,-7.7,22.1,-11],
 ];
 module ldraw_lib__3816pbg(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3816pbg(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3816pbg(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3816pbg(line=0.2);

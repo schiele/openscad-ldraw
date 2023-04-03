@@ -4,7 +4,8 @@ use <s/3846p4lb.scad>
 use <s/3846p4lc.scad>
 use <s/3846p4ld.scad>
 use <s/3846s01.scad>
-function ldraw_lib__3846p4l() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3846p4l(realsolid=false) = [
 // 0 Minifig Shield Triangular with Gold Lion on Red/White Quarters Pattern
 // 0 Name: 3846p4l.dat
 // 0 Author: Joerg Sommerer [Brickaneer]
@@ -24,15 +25,15 @@ function ldraw_lib__3846p4l() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3846s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3846s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3846s01(realsolid)],
 // 1 15 2.45 -3.4 -10 1 0 0 0 1 0 0 0 1 s\3846p4la.dat
-  [1,15,2.45,-3.4,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3846p4la()],
+  [1,15,2.45,-3.4,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3846p4la(realsolid)],
 // 1 82 2.45 -3.4 -10 1 0 0 0 1 0 0 0 1 s\3846p4lb.dat
-  [1,82,2.45,-3.4,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3846p4lb()],
+  [1,82,2.45,-3.4,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3846p4lb(realsolid)],
 // 1 82 2.45 -3.4 -10 1 0 0 0 1 0 0 0 1 s\3846p4lc.dat
-  [1,82,2.45,-3.4,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3846p4lc()],
+  [1,82,2.45,-3.4,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3846p4lc(realsolid)],
 // 1 16 2.45 -3.4 -10 1 0 0 0 1 0 0 0 1 s\3846p4ld.dat
-  [1,16,2.45,-3.4,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3846p4ld()],
+  [1,16,2.45,-3.4,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3846p4ld(realsolid)],
 // 3 15 0 32.37 -10 -5.55 25.6 -10 -8.76 24.57 -10
   [3,15,0,32.37,-10,-5.55,25.6,-10,-8.76,24.57,-10],
 // 3 15 0 23.6 -10 -5.55 25.6 -10 0 32.37 -10
@@ -73,5 +74,5 @@ function ldraw_lib__3846p4l() = [
   [4,15,0,-9.4,-10,2.45,-9.4,-10,20,-14,-10,0,-14,-10],
 ];
 module ldraw_lib__3846p4l(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3846p4l(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3846p4l(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3846p4l(line=0.2);

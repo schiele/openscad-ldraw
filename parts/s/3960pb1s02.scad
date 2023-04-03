@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__3960pb1s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__3960pb1s02(realsolid=false) = [
 // 0 ~Dish  4 x  4 Inverted with Inverse Bat on Metallic Silver Pattern - Background Half
 // 0 Name: s\3960pb1s02.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -357,5 +358,5 @@ function ldraw_lib__s__3960pb1s02() = [
   [4,80,-.5,1.50057,-18.97045,-2.2609,1.22082,-17.17593,-2.871,2,-21.8108,-.5,2,-21.96705],
 ];
 module ldraw_lib__s__3960pb1s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__3960pb1s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__3960pb1s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__3960pb1s02(line=0.2);

@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/87561p01s01.scad>
 use <s/87561s01.scad>
-function ldraw_lib__87561p01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__87561p01(realsolid=false) = [
 // 0 Block  6 x  4 x  1 with Handles and Minifig Outline with Han Solo in Carbonite Pattern
 // 0 Name: 87561p01.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -21,13 +22,13 @@ function ldraw_lib__87561p01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\87561s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__87561s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__87561s01(realsolid)],
 // 
 // 0 // Outside Panels
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\87561p01s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__87561p01s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__87561p01s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 -1 s\87561p01s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__87561p01s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__87561p01s01(realsolid)],
 // 
 // 0 // Surface Pattern
 // 4 16 -25.148 -25.25 16.785 -26.935 -25.25 19.453 -26.932 -25.25 15.746 -25.434 -25.25 15.535
@@ -2476,5 +2477,5 @@ function ldraw_lib__87561p01() = [
   [3,16,-9.012,-28.113,23.916,-7.159,-25.25,22.821,-5.351,-27.344,22.944],
 ];
 module ldraw_lib__87561p01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__87561p01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__87561p01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__87561p01(line=0.2);

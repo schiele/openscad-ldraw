@@ -2,7 +2,8 @@ use <../../lib.scad>
 use <../../p/1-4con3.scad>
 use <../../p/1-4cyli.scad>
 use <../../p/1-4edge.scad>
-function ldraw_lib__s__90640s04() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__90640s04(realsolid=false) = [
 // 0 ~Constraction Shell - Ball Connector Quarter
 // 0 Name: s\90640s04.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -17,17 +18,17 @@ function ldraw_lib__s__90640s04() = [
 // 
 // 
 // 1 16 0 12.15 0 4.5 0 0 0 1 0 0 0 4.5 1-4edge.dat
-  [1,16,0,12.15,0,4.5,0,0,0,1,0,0,0,4.5, ldraw_lib__1_4edge()],
+  [1,16,0,12.15,0,4.5,0,0,0,1,0,0,0,4.5, ldraw_lib__1_4edge(realsolid)],
 // 1 16 0 11.75 0 6 0 0 0 1 0 0 0 6 1-4edge.dat
-  [1,16,0,11.75,0,6,0,0,0,1,0,0,0,6, ldraw_lib__1_4edge()],
+  [1,16,0,11.75,0,6,0,0,0,1,0,0,0,6, ldraw_lib__1_4edge(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 11.75 0 1.5 0 0 0 .4 0 0 0 1.5 1-4con3.dat
-  [1,16,0,11.75,0,1.5,0,0,0,.4,0,0,0,1.5, ldraw_lib__1_4con3()],
+  [1,16,0,11.75,0,1.5,0,0,0,.4,0,0,0,1.5, ldraw_lib__1_4con3(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 12.15 0 4.5 0 0 0 7.85 0 0 0 4.5 1-4cyli.dat
-  [1,16,0,12.15,0,4.5,0,0,0,7.85,0,0,0,4.5, ldraw_lib__1_4cyli()],
+  [1,16,0,12.15,0,4.5,0,0,0,7.85,0,0,0,4.5, ldraw_lib__1_4cyli(realsolid)],
 // 2 24 11.121 3.079 5.9 10 3.079 7.666
   [2,24,11.121,3.079,5.9,10,3.079,7.666],
 // 2 24 10 3.079 7.666 7.464 11.75 5.748
@@ -246,5 +247,5 @@ function ldraw_lib__s__90640s04() = [
   [5,24,12.358,-7.275,6.104,10,-3.788,6.853,10.899,-3.791,5.287,10,-7.275,9.512],
 ];
 module ldraw_lib__s__90640s04(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__90640s04(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__90640s04(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__90640s04(line=0.2);

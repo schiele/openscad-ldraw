@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/2-4ndis.scad>
 use <../../p/4-4ndis.scad>
-function ldraw_lib__s__u66s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__u66s02(realsolid=false) = [
 // 0 ~Sheet Plastic  6 x 12 Triangular - Surface
 // 0 Name: s\u66s02.dat
 // 0 Author: Damien Roux [Darats]
@@ -16,13 +17,13 @@ function ldraw_lib__s__u66s02() = [
 // 
 // 
 // 1 16 88 0 32 0 0 4 0 1 0 -4 0 0 2-4ndis.dat
-  [1,16,88,0,32,0,0,4,0,1,0,-4,0,0, ldraw_lib__2_4ndis()],
+  [1,16,88,0,32,0,0,4,0,1,0,-4,0,0, ldraw_lib__2_4ndis(realsolid)],
 // 1 16 74 0 32 0 0 -4 0 1 0 -4 0 0 2-4ndis.dat
-  [1,16,74,0,32,0,0,-4,0,1,0,-4,0,0, ldraw_lib__2_4ndis()],
+  [1,16,74,0,32,0,0,-4,0,1,0,-4,0,0, ldraw_lib__2_4ndis(realsolid)],
 // 1 16 0 0 198 -4 0 0 0 1 0 0 0 -4 2-4ndis.dat
-  [1,16,0,0,198,-4,0,0,0,1,0,0,0,-4, ldraw_lib__2_4ndis()],
+  [1,16,0,0,198,-4,0,0,0,1,0,0,0,-4, ldraw_lib__2_4ndis(realsolid)],
 // 1 16 0 0 0 7 0 0 0 1 0 0 0 7 4-4ndis.dat
-  [1,16,0,0,0,7,0,0,0,1,0,0,0,7, ldraw_lib__4_4ndis()],
+  [1,16,0,0,0,7,0,0,0,1,0,0,0,7, ldraw_lib__4_4ndis(realsolid)],
 // 
 // 4 16 -13.24 0 -21.56 -7 0 -7 -19.13 0 -17.79 -16.46 0 -20.11
   [4,16,-13.24,0,-21.56,-7,0,-7,-19.13,0,-17.79,-16.46,0,-20.11],
@@ -102,5 +103,5 @@ function ldraw_lib__s__u66s02() = [
   [4,16,101.46,0,28.44,101.98,0,31.37,101.77,0,34.33,92,0,32],
 ];
 module ldraw_lib__s__u66s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__u66s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__u66s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__u66s02(line=0.2);

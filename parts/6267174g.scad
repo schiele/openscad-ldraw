@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__6267174g() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6267174g(realsolid=false) = [
 // 0 Sticker  1.1 x  3.9 with Arches
 // 0 Name: 6267174g.dat
 // 0 Author: Howard Lande [HowardLande]
@@ -17,7 +18,7 @@ function ldraw_lib__6267174g() = [
 // 
 // 
 // 1 16 0 -0.25 0 39 0 0 0 0.25 0 0 0 11 box5-12.dat
-  [1,16,0,-0.25,0,39,0,0,0,0.25,0,0,0,11, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,39,0,0,0,0.25,0,0,0,11, ldraw_lib__box5_12(realsolid)],
 // 
 // 4 297 -10.2 -0.25 3.3 -10.144 -0.25 3.744 -10.6 -0.25 4.8 -12 -0.25 1.23
   [4,297,-10.2,-0.25,3.3,-10.144,-0.25,3.744,-10.6,-0.25,4.8,-12,-0.25,1.23],
@@ -4585,5 +4586,5 @@ function ldraw_lib__6267174g() = [
   [3,70,37.5,-0.25,-11,39,-0.25,-11,37.5,-0.25,-10.08],
 ];
 module ldraw_lib__6267174g(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6267174g(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6267174g(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6267174g(line=0.2);

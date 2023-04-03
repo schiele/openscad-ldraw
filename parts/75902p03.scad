@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/75902p03s01.scad>
 use <s/75902s01.scad>
-function ldraw_lib__75902p03() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__75902p03(realsolid=false) = [
 // 0 Minifig Shield Round Bowed with Gold Eagle Pattern
 // 0 Name: 75902p03.dat
 // 0 Author: Christian Neumann [Wesley]
@@ -21,12 +22,12 @@ function ldraw_lib__75902p03() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\75902s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__75902s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__75902s01(realsolid)],
 // 0 // pattern
 // 1 16 0 0 -6.2 1 0 0 0 0 -1 0 1 0 s\75902p03s01.dat
-  [1,16,0,0,-6.2,1,0,0,0,0,-1,0,1,0, ldraw_lib__s__75902p03s01()],
+  [1,16,0,0,-6.2,1,0,0,0,0,-1,0,1,0, ldraw_lib__s__75902p03s01(realsolid)],
 // 1 16 0 0 -6.2 -1 0 0 0 0 -1 0 1 0 s\75902p03s01.dat
-  [1,16,0,0,-6.2,-1,0,0,0,0,-1,0,1,0, ldraw_lib__s__75902p03s01()],
+  [1,16,0,0,-6.2,-1,0,0,0,0,-1,0,1,0, ldraw_lib__s__75902p03s01(realsolid)],
 // 5 24 0 -9 -8.6 0 -18 -7.4 1.1745 -8.9226 -8.6 -1.1745 -8.9226 -8.6
   [5,24,0,-9,-8.6,0,-18,-7.4,1.1745,-8.9226,-8.6,-1.1745,-8.9226,-8.6],
 // 5 24 0 18 -7.4 0 24 -6.2 -2.349 17.8452 -7.4 2.349 17.8452 -7.4
@@ -287,5 +288,5 @@ function ldraw_lib__75902p03() = [
   [4,82,0,0,-9.2,-2.599,-4.5006,-8.8535,-4.0622,-5.2939,-8.7552,-3,-3.45,-8.8946],
 ];
 module ldraw_lib__75902p03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__75902p03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__75902p03(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__75902p03(line=0.2);

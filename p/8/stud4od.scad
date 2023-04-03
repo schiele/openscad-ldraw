@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__8__stud4od() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__8__stud4od(realsolid=false) = [
 // 0 Stud Tube Open w/o Outer Cylinder and Top Surface (Fast-Draw)
 // 0 Name: 8\stud4od.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -105,5 +106,5 @@ function ldraw_lib__8__stud4od() = [
   [2,24,-6,0,0,-4.2,0,4.2],
 ];
 module ldraw_lib__8__stud4od(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__8__stud4od(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__8__stud4od(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__8__stud4od(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <6142275k.scad>
-function ldraw_lib__6142275l() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6142275l(realsolid=false) = [
 // 0 Sticker  1 x  0.8 with White Trapezoid on Black Background Right
 // 0 Name: 6142275l.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -17,8 +18,8 @@ function ldraw_lib__6142275l() = [
 // 
 // 
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 6142275k.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__6142275k()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__6142275k(realsolid)],
 ];
 module ldraw_lib__6142275l(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6142275l(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6142275l(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6142275l(line=0.2);

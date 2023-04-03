@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3069bs01.scad>
-function ldraw_lib__3069bpm0() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3069bpm0(realsolid=false) = [
 // 0 Tile  1 x  2 with Goblin Eye and 2 Sparkling Crystals on Yellowish Green Parchment Background Pattern
 // 0 Name: 3069bpm0.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -17,7 +18,7 @@ function ldraw_lib__3069bpm0() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3069bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3069bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3069bs01(realsolid)],
 // 0 BFC NOCLIP
   [0,"BFC","NOCLIP"],
 // 3 16 -1.6 0 -0.8 3.3 0 1.6 1.9 0 3.5
@@ -500,5 +501,5 @@ function ldraw_lib__3069bpm0() = [
   [3,326,-5.6,0,7.9,-3.1,0,5.6,-3.3,0,7.9],
 ];
 module ldraw_lib__3069bpm0(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3069bpm0(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3069bpm0(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3069bpm0(line=0.2);

@@ -3,7 +3,8 @@ use <s/3068bs01.scad>
 use <s/3069p06a.scad>
 use <s/3069p06b.scad>
 use <s/3069p06c.scad>
-function ldraw_lib__3068bp08() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3068bp08(realsolid=false) = [
 // 0 Tile  2 x  2 with Yellow Arrow with Black Border Pattern
 // 0 Name: 3068bp08.dat
 // 0 Author: Bram Lambrecht
@@ -23,13 +24,13 @@ function ldraw_lib__3068bp08() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3068bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3068bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3068bs01(realsolid)],
 // 1 16 0 0 0 0 0 -1 0 1 0 1 0 0 s\3069p06a.dat
-  [1,16,0,0,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__s__3069p06a()],
+  [1,16,0,0,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__s__3069p06a(realsolid)],
 // 1 0 0 0 0 0 0 -1 0 1 0 1 0 0 s\3069p06b.dat
-  [1,0,0,0,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__s__3069p06b()],
+  [1,0,0,0,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__s__3069p06b(realsolid)],
 // 1 14 0 0 0 0 0 -1 0 1 0 1 0 0 s\3069p06c.dat
-  [1,14,0,0,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__s__3069p06c()],
+  [1,14,0,0,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__s__3069p06c(realsolid)],
 // 4 16 -20 0 -20 -10 0 -20 -10 0 20 -20 0 20
   [4,16,-20,0,-20,-10,0,-20,-10,0,20,-20,0,20],
 // 4 16 10 0 -20 20 0 -20 20 0 20 10 0 20
@@ -37,5 +38,5 @@ function ldraw_lib__3068bp08() = [
 // 0
 ];
 module ldraw_lib__3068bp08(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3068bp08(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3068bp08(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3068bp08(line=0.2);

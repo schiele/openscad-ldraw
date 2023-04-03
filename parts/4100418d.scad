@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__4100418d() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4100418d(realsolid=false) = [
 // 0 Sticker  1.5 x  1.9 with "MT 5571"
 // 0 Name: 4100418d.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -17,7 +18,7 @@ function ldraw_lib__4100418d() = [
 // 
 // 
 // 1 16 0 -0.25 0 19 0 0 0 0.25 0 0 0 15 box5-12.dat
-  [1,16,0,-0.25,0,19,0,0,0,0.25,0,0,0,15, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,19,0,0,0,0.25,0,0,0,15, ldraw_lib__box5_12(realsolid)],
 // 4 0 -19 -0.25 15 -19 -0.25 -15 -17 -0.25 -13 -17 -0.25 0
   [4,0,-19,-0.25,15,-19,-0.25,-15,-17,-0.25,-13,-17,-0.25,0],
 // 3 0 -19 -0.25 15 -17 -0.25 0 -17 -0.25 13
@@ -342,5 +343,5 @@ function ldraw_lib__4100418d() = [
   [4,15,-0.731,-0.25,2.2,12.9,-0.25,-0.09,14.548,-0.25,-0.09,17,-0.25,0],
 ];
 module ldraw_lib__4100418d(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4100418d(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4100418d(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4100418d(line=0.2);

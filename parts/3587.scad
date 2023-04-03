@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/1-4chrd.scad>
 use <../p/1-8chrd.scad>
 use <s/3587s01.scad>
-function ldraw_lib__3587() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3587(realsolid=false) = [
 // 0 Tail  2 x  5 x  3.667 Plane
 // 0 Name: 3587.dat
 // 0 Author: James Jessiman
@@ -26,12 +27,12 @@ function ldraw_lib__3587() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3587s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3587s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3587s01(realsolid)],
 // 
 // 1 16 2 -70 64 0 -1 0 -10 0 0 0 0 10 1-4chrd.dat
-  [1,16,2,-70,64,0,-1,0,-10,0,0,0,0,10, ldraw_lib__1_4chrd()],
+  [1,16,2,-70,64,0,-1,0,-10,0,0,0,0,10, ldraw_lib__1_4chrd(realsolid)],
 // 1 16 2 -50 64 0 -1 0 -30 0 0 0 0 -30 1-8chrd.dat
-  [1,16,2,-50,64,0,-1,0,-30,0,0,0,0,-30, ldraw_lib__1_8chrd()],
+  [1,16,2,-50,64,0,-1,0,-30,0,0,0,0,-30, ldraw_lib__1_8chrd(realsolid)],
 // 3 16 2 -16 30 2 0 -30 2 0 30
   [3,16,2,-16,30,2,0,-30,2,0,30],
 // 3 16 2 -71.213 42.787 2 -70 74 2 -80 64
@@ -42,9 +43,9 @@ function ldraw_lib__3587() = [
   [4,16,2,-16,70,2,-70,74,2,-71.213,42.787,2,-16,30],
 // 
 // 1 16 -2 -70 64 0 1 0 -10 0 0 0 0 10 1-4chrd.dat
-  [1,16,-2,-70,64,0,1,0,-10,0,0,0,0,10, ldraw_lib__1_4chrd()],
+  [1,16,-2,-70,64,0,1,0,-10,0,0,0,0,10, ldraw_lib__1_4chrd(realsolid)],
 // 1 16 -2 -50 64 0 1 0 -30 0 0 0 0 -30 1-8chrd.dat
-  [1,16,-2,-50,64,0,1,0,-30,0,0,0,0,-30, ldraw_lib__1_8chrd()],
+  [1,16,-2,-50,64,0,1,0,-30,0,0,0,0,-30, ldraw_lib__1_8chrd(realsolid)],
 // 3 16 -2 -16 30 -2 0 30 -2 0 -30
   [3,16,-2,-16,30,-2,0,30,-2,0,-30],
 // 3 16 -2 -80 64 -2 -70 74 -2 -71.213 42.787
@@ -55,5 +56,5 @@ function ldraw_lib__3587() = [
   [4,16,-2,-71.213,42.787,-2,-70,74,-2,-16,70,-2,-16,30],
 ];
 module ldraw_lib__3587(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3587(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3587(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3587(line=0.2);

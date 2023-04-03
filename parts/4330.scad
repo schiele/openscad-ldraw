@@ -5,7 +5,8 @@ use <../p/4-4cyli.scad>
 use <../p/4-4disc.scad>
 use <s/4330s01.scad>
 use <s/4330s02.scad>
-function ldraw_lib__4330() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4330(realsolid=false) = [
 // 0 ~Fabuland Shovel (Obsolete)
 // 0 Name: 4330.dat
 // 0 Author: Shimpei Ohsumi [Shimpei-Ohsumi]
@@ -28,19 +29,19 @@ function ldraw_lib__4330() = [
 // 
 // 
 // 1 16 -15 0 0 0 30 0 0 0 -4 4 0 0 4-4cylc.dat
-  [1,16,-15,0,0,0,30,0,0,0,-4,4,0,0, ldraw_lib__4_4cylc()],
+  [1,16,-15,0,0,0,30,0,0,0,-4,4,0,0, ldraw_lib__4_4cylc(realsolid)],
 // 1 16 15 0 0 0 -1 0 0 0 -4 4 0 0 4-4disc.dat
-  [1,16,15,0,0,0,-1,0,0,0,-4,4,0,0, ldraw_lib__4_4disc()],
+  [1,16,15,0,0,0,-1,0,0,0,-4,4,0,0, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 0 0 0 -1 4 0 0 4 -4 0 0 2-4edge.dat
-  [1,16,0,0,0,0,-1,4,0,0,4,-4,0,0, ldraw_lib__2_4edge()],
+  [1,16,0,0,0,0,-1,4,0,0,4,-4,0,0, ldraw_lib__2_4edge(realsolid)],
 // 1 16 0 0 0 0 -1 -4 0 0 4 -4 0 0 2-4edge.dat
-  [1,16,0,0,0,0,-1,-4,0,0,4,-4,0,0, ldraw_lib__2_4edge()],
+  [1,16,0,0,0,0,-1,-4,0,0,4,-4,0,0, ldraw_lib__2_4edge(realsolid)],
 // 1 16 0 0 0 0 0 4 0 90 0 4 0 0 4-4cyli.dat
-  [1,16,0,0,0,0,0,4,0,90,0,4,0,0, ldraw_lib__4_4cyli()],
+  [1,16,0,0,0,0,0,4,0,90,0,4,0,0, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 90 4 1 0 0 0 1 0 0 0 1 s\4330s01.dat
-  [1,16,0,90,4,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4330s01()],
+  [1,16,0,90,4,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4330s01(realsolid)],
 // 1 16 0 90 4 -1 0 0 0 1 0 0 0 1 s\4330s01.dat
-  [1,16,0,90,4,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__4330s01()],
+  [1,16,0,90,4,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__4330s01(realsolid)],
 // 5 24 0 125.576 -20.581 0 125.94 -16.75 3 124.71 -20.081 -3 124.71 -20.081
   [5,24,0,125.576,-20.581,0,125.94,-16.75,3,124.71,-20.081,-3,124.71,-20.081],
 // 5 24 0 99.085 -5.864 0 99.335 -5.431 1.2 98.989 -5.231 -1.2 98.739 -5.664
@@ -51,8 +52,8 @@ function ldraw_lib__4330() = [
   [5,24,0,66.7,-3.5,0,66.7,-4.5,0.9,67,-4.321,-0.9,67,-4.321],
 // 0 // Fabuland logo
 // 1 16 0 104.704 -8.531 1 0 0 0 0.5 -0.86603 0 0.86603 0.5 s\4330s02.dat
-  [1,16,0,104.704,-8.531,1,0,0,0,0.5,-0.86603,0,0.86603,0.5, ldraw_lib__s__4330s02()],
+  [1,16,0,104.704,-8.531,1,0,0,0,0.5,-0.86603,0,0.86603,0.5, ldraw_lib__s__4330s02(realsolid)],
 ];
 module ldraw_lib__4330(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4330(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4330(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4330(line=0.2);

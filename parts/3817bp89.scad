@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3817bs01.scad>
-function ldraw_lib__3817bp89() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3817bp89(realsolid=false) = [
 // 0 Minifig Leg Left with White Apron Pattern
 // 0 Name: 3817bp89.dat
 // 0 Author: Chris Dee [cwdee]
@@ -19,7 +20,7 @@ function ldraw_lib__3817bp89() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3817bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3817bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3817bs01(realsolid)],
 // 5 24 2 3.349 -8.084 18.659 3.349 -8.084 2 0 -8.75 2 6.187 -6.187
   [5,24,2,3.349,-8.084,18.659,3.349,-8.084,2,0,-8.75,2,6.187,-6.187],
 // 5 24 2 6.187 -6.187 18.755 6.187 -6.187 2 7.399 -4 2 3.349 -8.084
@@ -111,5 +112,5 @@ function ldraw_lib__3817bp89() = [
   [4,16,18.755,6.187,-6.187,15.444,6.187,-6.187,15.55,7.399,-4,18.804,7.399,-4],
 ];
 module ldraw_lib__3817bp89(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3817bp89(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3817bp89(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3817bp89(line=0.2);

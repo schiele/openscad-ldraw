@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/t04o6250.scad>
-function ldraw_lib__s__24088s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__24088s01(realsolid=false) = [
 // 0 ~Minifig Helmet with Wings and Eagle Head - Half
 // 0 Name: s\24088s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -19,11 +20,11 @@ function ldraw_lib__s__24088s01() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 4 0 0 0 8 0 -6.4 0 8 0 0 t04o6250.dat
-  [1,16,0,4,0,0,0,8,0,-6.4,0,8,0,0, ldraw_lib__t04o6250()],
+  [1,16,0,4,0,0,0,8,0,-6.4,0,8,0,0, ldraw_lib__t04o6250(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 4 0 8 0 0 0 -6.4 0 0 0 -8 t04o6250.dat
-  [1,16,0,4,0,8,0,0,0,-6.4,0,0,0,-8, ldraw_lib__t04o6250()],
+  [1,16,0,4,0,8,0,0,0,-6.4,0,0,0,-8, ldraw_lib__t04o6250(realsolid)],
 // 3 16 3.442 -3.649 -15.144 4.221 -2.96 -15.017 3.544 -5.069 -14.231
   [3,16,3.442,-3.649,-15.144,4.221,-2.96,-15.017,3.544,-5.069,-14.231],
 // 3 16 3.544 -5.069 -14.231 4.221 -2.96 -15.017 5.373 -4.391 -13.039
@@ -2160,5 +2161,5 @@ function ldraw_lib__s__24088s01() = [
   [5,24,25.941,-22.281,13.558,22.941,-22.409,15.44,22.986,-23.733,13.852,25.636,-20.789,14.288],
 ];
 module ldraw_lib__s__24088s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__24088s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__24088s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__24088s01(line=0.2);

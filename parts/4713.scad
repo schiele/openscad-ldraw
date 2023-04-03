@@ -3,7 +3,8 @@ use <../p/4-4edge.scad>
 use <../p/4-4ndis.scad>
 use <../p/4-8sphe.scad>
 use <../p/box5.scad>
-function ldraw_lib__4713() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4713(realsolid=false) = [
 // 0 ~Technic Pneumatic Valve Side Cover
 // 0 Name: 4713.dat
 // 0 Author: Marc Klein [marckl]
@@ -20,15 +21,15 @@ function ldraw_lib__4713() = [
 // 
 // 
 // 1 16 0 26 1 0 3 0 24 0 0 0 0 19 box5.dat
-  [1,16,0,26,1,0,3,0,24,0,0,0,0,19, ldraw_lib__box5()],
+  [1,16,0,26,1,0,3,0,24,0,0,0,0,19, ldraw_lib__box5(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 26 -5 0 1 0 4 0 0 0 0 4 4-8sphe.dat
-  [1,16,0,26,-5,0,1,0,4,0,0,0,0,4, ldraw_lib__4_8sphe()],
+  [1,16,0,26,-5,0,1,0,4,0,0,0,0,4, ldraw_lib__4_8sphe(realsolid)],
 // 1 16 0 26 -5 0 1 0 4 0 0 0 0 4 4-4ndis.dat
-  [1,16,0,26,-5,0,1,0,4,0,0,0,0,4, ldraw_lib__4_4ndis()],
+  [1,16,0,26,-5,0,1,0,4,0,0,0,0,4, ldraw_lib__4_4ndis(realsolid)],
 // 1 16 0 26 -5 0 1 0 4 0 0 0 0 4 4-4edge.dat
-  [1,16,0,26,-5,0,1,0,4,0,0,0,0,4, ldraw_lib__4_4edge()],
+  [1,16,0,26,-5,0,1,0,4,0,0,0,0,4, ldraw_lib__4_4edge(realsolid)],
 // 4 16 0 2 20 0 22 -1 0 22 -9 0 2 -18
   [4,16,0,2,20,0,22,-1,0,22,-9,0,2,-18],
 // 4 16 0 50 20 0 30 -1 0 22 -1 0 2 20
@@ -40,5 +41,5 @@ function ldraw_lib__4713() = [
 // 0 //
 ];
 module ldraw_lib__4713(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4713(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4713(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4713(line=0.2);

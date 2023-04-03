@@ -4,7 +4,8 @@ use <../p/box4.scad>
 use <../p/box5.scad>
 use <../p/stug2-1x4.scad>
 use <../p/stug3-1x3.scad>
-function ldraw_lib__6160a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6160a(realsolid=false) = [
 // 0 ~Window  1 x  4 x  6 Frame
 // 0 Name: 6160a.dat
 // 0 Author: James Jessiman
@@ -23,11 +24,11 @@ function ldraw_lib__6160a() = [
 // 
 // 
 // 1 16 0 140 0 1 0 0 0 -1 0 0 0 1 stug3-1x3.dat
-  [1,16,0,140,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stug3_1x3()],
+  [1,16,0,140,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stug3_1x3(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 144 0 36 0 0 0 -4 0 0 0 6 box5.dat
-  [1,16,0,144,0,36,0,0,0,-4,0,0,0,6, ldraw_lib__box5()],
+  [1,16,0,144,0,36,0,0,0,-4,0,0,0,6, ldraw_lib__box5(realsolid)],
 // 
 // 4 16 40 144 10 36 144 6 -36 144 6 -40 144 10
   [4,16,40,144,10,36,144,6,-36,144,6,-40,144,10],
@@ -44,23 +45,23 @@ function ldraw_lib__6160a() = [
   [2,24,-40,144,-10,40,144,-10],
 // 
 // 1 16 0 144 0 0 0 40 0 -144 0 10 0 0 box3u2p.dat
-  [1,16,0,144,0,0,0,40,0,-144,0,10,0,0, ldraw_lib__box3u2p()],
+  [1,16,0,144,0,0,0,40,0,-144,0,10,0,0, ldraw_lib__box3u2p(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 70 -6 0 0 37 66 0 0 0 16 0 box4.dat
-  [1,16,0,70,-6,0,0,37,66,0,0,0,16,0, ldraw_lib__box4()],
+  [1,16,0,70,-6,0,0,37,66,0,0,0,16,0, ldraw_lib__box4(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 26 -10 0 0 35 19 0 0 0 4 0 box4.dat
-  [1,16,0,26,-10,0,0,35,19,0,0,0,4,0, ldraw_lib__box4()],
+  [1,16,0,26,-10,0,0,35,19,0,0,0,4,0, ldraw_lib__box4(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 70 -10 0 0 35 19 0 0 0 4 0 box4.dat
-  [1,16,0,70,-10,0,0,35,19,0,0,0,4,0, ldraw_lib__box4()],
+  [1,16,0,70,-10,0,0,35,19,0,0,0,4,0, ldraw_lib__box4(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 114 -10 0 0 35 19 0 0 0 4 0 box4.dat
-  [1,16,0,114,-10,0,0,35,19,0,0,0,4,0, ldraw_lib__box4()],
+  [1,16,0,114,-10,0,0,35,19,0,0,0,4,0, ldraw_lib__box4(realsolid)],
 // 
 // 4 16 -40 144 10 -37 136 10 37 136 10 40 144 10
   [4,16,-40,144,10,-37,136,10,37,136,10,40,144,10],
@@ -98,8 +99,8 @@ function ldraw_lib__6160a() = [
   [4,16,-35,89,-10,-35,95,-10,35,95,-10,35,89,-10],
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 stug2-1x4.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug2_1x4()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug2_1x4(realsolid)],
 ];
 module ldraw_lib__6160a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6160a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6160a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6160a(line=0.2);

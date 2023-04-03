@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/2586s01.scad>
 use <s/973p4dl.scad>
-function ldraw_lib__2586p4d() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2586p4d(realsolid=false) = [
 // 0 Minifig Shield Ovoid with Royal Knights Lion Pattern
 // 0 Name: 2586p4d.dat
 // 0 Author: Bernd Broich [bbroich]
@@ -25,11 +26,11 @@ function ldraw_lib__2586p4d() = [
 // 
 // 0 // Subparts
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2586s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2586s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2586s01(realsolid)],
 // 1 16 0 -7 -8 1 0 0 0 1 0 0 0 1 s\973p4dl.dat
-  [1,16,0,-7,-8,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973p4dl()],
+  [1,16,0,-7,-8,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973p4dl(realsolid)],
 // 1 16 0 -7 -8 -1 0 0 0 1 0 0 0 1 s\973p4dl.dat
-  [1,16,0,-7,-8,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__973p4dl()],
+  [1,16,0,-7,-8,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__973p4dl(realsolid)],
 // 
 // 0 // Border
 // 4 1 0 33.3 -8 0 37.501 -8 2.296 37.044 -8 2 32.89 -8
@@ -198,5 +199,5 @@ function ldraw_lib__2586p4d() = [
   [4,16,-9.25,8.5,-8,-11.375,18.9,-8,-6.5,9.5,-8,-8,6.5,-8],
 ];
 module ldraw_lib__2586p4d(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2586p4d(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2586p4d(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2586p4d(line=0.2);

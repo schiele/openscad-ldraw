@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4ndis.scad>
 use <s/3069bs01.scad>
-function ldraw_lib__3069bpca() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3069bpca(realsolid=false) = [
 // 0 Tile  1 x  2 with Silver Buttons, Meter and "Detecting Relic" Pattern
 // 0 Name: 3069bpca.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -19,28 +20,28 @@ function ldraw_lib__3069bpca() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3069bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3069bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3069bs01(realsolid)],
 // 
 // 1 4 15.75 0 6 1 0 0 0 1 0 0 0 1 4-4disc.dat
-  [1,4,15.75,0,6,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4disc()],
+  [1,4,15.75,0,6,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4disc(realsolid)],
 // 1 25 18.25 0 6 1 0 0 0 1 0 0 0 1 4-4disc.dat
-  [1,25,18.25,0,6,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4disc()],
+  [1,25,18.25,0,6,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4disc(realsolid)],
 // 1 16 15.75 0 6 1 0 0 0 1 0 0 0 1 4-4ndis.dat
-  [1,16,15.75,0,6,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4ndis()],
+  [1,16,15.75,0,6,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4ndis(realsolid)],
 // 1 16 18.25 0 6 1 0 0 0 1 0 0 0 1 4-4ndis.dat
-  [1,16,18.25,0,6,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4ndis()],
+  [1,16,18.25,0,6,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4ndis(realsolid)],
 // 1 15 -10 0 -6.5 0.5 0 0 0 1 0 0 0 0.5 4-4disc.dat
-  [1,15,-10,0,-6.5,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__4_4disc()],
+  [1,15,-10,0,-6.5,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__4_4disc(realsolid)],
 // 1 15 -2.7 0 -6.5 0.5 0 0 0 1 0 0 0 0.5 4-4disc.dat
-  [1,15,-2.7,0,-6.5,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__4_4disc()],
+  [1,15,-2.7,0,-6.5,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__4_4disc(realsolid)],
 // 1 15 4.5 0 -6.5 0.5 0 0 0 1 0 0 0 0.5 4-4disc.dat
-  [1,15,4.5,0,-6.5,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__4_4disc()],
+  [1,15,4.5,0,-6.5,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__4_4disc(realsolid)],
 // 1 16 -10 0 -6.5 0.5 0 0 0 1 0 0 0 0.5 4-4ndis.dat
-  [1,16,-10,0,-6.5,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__4_4ndis()],
+  [1,16,-10,0,-6.5,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__4_4ndis(realsolid)],
 // 1 16 -2.7 0 -6.5 0.5 0 0 0 1 0 0 0 0.5 4-4ndis.dat
-  [1,16,-2.7,0,-6.5,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__4_4ndis()],
+  [1,16,-2.7,0,-6.5,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__4_4ndis(realsolid)],
 // 1 16 4.5 0 -6.5 0.5 0 0 0 1 0 0 0 0.5 4-4ndis.dat
-  [1,16,4.5,0,-6.5,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__4_4ndis()],
+  [1,16,4.5,0,-6.5,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__4_4ndis(realsolid)],
 // 4 80 -15.2 0 4.3 -14.9 0 4.8 -15.3 0 5.1 -18.6 0 5.1
   [4,80,-15.2,0,4.3,-14.9,0,4.8,-15.3,0,5.1,-18.6,0,5.1],
 // 4 80 -18.6 0 5.1 -19 0 4.8 -18.7 0 4.3 -15.2 0 4.3
@@ -1171,5 +1172,5 @@ function ldraw_lib__3069bpca() = [
   [4,16,4.1,0,-4.7,4.5,0,-6,5,0,-6,6,0,-2.8],
 ];
 module ldraw_lib__3069bpca(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3069bpca(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3069bpca(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3069bpca(line=0.2);

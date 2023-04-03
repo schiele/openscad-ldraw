@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__6042677a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6042677a(realsolid=false) = [
 // 0 Sticker  0.8 x  1.8 with Iron Man Armoured Suit Mark V
 // 0 Name: 6042677a.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -15,7 +16,7 @@ function ldraw_lib__6042677a() = [
 // 
 // 
 // 1 16 0 -0.25 0 18 0 0 0 0.25 0 0 0 7.6 box5-12.dat
-  [1,16,0,-0.25,0,18,0,0,0,0.25,0,0,0,7.6, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,18,0,0,0,0.25,0,0,0,7.6, ldraw_lib__box5_12(realsolid)],
 // 4 0 -16.15 -0.25 -6.17 -16.53 -0.25 -5.79 -16.69 -0.25 -6.17 -16.53 -0.25 -6.55
   [4,0,-16.15,-0.25,-6.17,-16.53,-0.25,-5.79,-16.69,-0.25,-6.17,-16.53,-0.25,-6.55],
 // 4 0 -16.15 -0.25 6.17 -16.53 -0.25 6.55 -16.69 -0.25 6.17 -16.53 -0.25 5.79
@@ -494,5 +495,5 @@ function ldraw_lib__6042677a() = [
   [3,320,18,-0.25,-2.56,16.15,-0.25,-5.63,16.53,-0.25,-5.79],
 ];
 module ldraw_lib__6042677a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6042677a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6042677a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6042677a(line=0.2);

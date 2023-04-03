@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/1-4cylo.scad>
 use <../p/1-4disc.scad>
 use <../p/box5.scad>
-function ldraw_lib__6231() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6231(realsolid=false) = [
 // 0 Panel  1 x  1 x  1 Corner with Rounded Corners
 // 0 Name: 6231.dat
 // 0 Author: James Jessiman
@@ -73,7 +74,7 @@ function ldraw_lib__6231() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 24 0 6 0 0 0 -4 0 0 0 6 box5.dat
-  [1,16,0,24,0,6,0,0,0,-4,0,0,0,6, ldraw_lib__box5()],
+  [1,16,0,24,0,6,0,0,0,-4,0,0,0,6, ldraw_lib__box5(realsolid)],
 // 4 16 10 16 6 10 16 -10 -6 16 -10 -6 16 6
   [4,16,10,16,6,10,16,-10,-6,16,-10,-6,16,6],
 // 4 16 -6 16 -10 10 16 -10 10 24 -10 -10 24 -10
@@ -106,19 +107,19 @@ function ldraw_lib__6231() = [
   [4,16,-6,0,6,-6,0,-8,-10,0,-8,-10,0,10],
 // 
 // 1 16 8 2 6 2 0 0 0 0 -2 0 2 0 1-4disc.dat
-  [1,16,8,2,6,2,0,0,0,0,-2,0,2,0, ldraw_lib__1_4disc()],
+  [1,16,8,2,6,2,0,0,0,0,-2,0,2,0, ldraw_lib__1_4disc(realsolid)],
 // 1 16 8 2 10 2 0 0 0 0 -2 0 -2 0 1-4disc.dat
-  [1,16,8,2,10,2,0,0,0,0,-2,0,-2,0, ldraw_lib__1_4disc()],
+  [1,16,8,2,10,2,0,0,0,0,-2,0,-2,0, ldraw_lib__1_4disc(realsolid)],
 // 1 16 8 2 6 2 0 0 0 0 -2 0 4 0 1-4cylo.dat
-  [1,16,8,2,6,2,0,0,0,0,-2,0,4,0, ldraw_lib__1_4cylo()],
+  [1,16,8,2,6,2,0,0,0,0,-2,0,4,0, ldraw_lib__1_4cylo(realsolid)],
 // 1 16 -10 2 -8 0 2 0 0 0 -2 -2 0 0 1-4disc.dat
-  [1,16,-10,2,-8,0,2,0,0,0,-2,-2,0,0, ldraw_lib__1_4disc()],
+  [1,16,-10,2,-8,0,2,0,0,0,-2,-2,0,0, ldraw_lib__1_4disc(realsolid)],
 // 1 16 -6 2 -8 0 -2 0 -2 0 0 0 0 -2 1-4disc.dat
-  [1,16,-6,2,-8,0,-2,0,-2,0,0,0,0,-2, ldraw_lib__1_4disc()],
+  [1,16,-6,2,-8,0,-2,0,-2,0,0,0,0,-2, ldraw_lib__1_4disc(realsolid)],
 // 1 16 -10 2 -8 0 4 0 0 0 -2 -2 0 0 1-4cylo.dat
-  [1,16,-10,2,-8,0,4,0,0,0,-2,-2,0,0, ldraw_lib__1_4cylo()],
+  [1,16,-10,2,-8,0,4,0,0,0,-2,-2,0,0, ldraw_lib__1_4cylo(realsolid)],
 // 0 //
 ];
 module ldraw_lib__6231(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6231(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6231(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6231(line=0.2);

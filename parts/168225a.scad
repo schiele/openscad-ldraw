@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__168225a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__168225a(realsolid=false) = [
 // 0 Sticker  1 x  2 Letter
 // 0 Name: 168225a.dat
 // 0 Author: Max Martin Richter [MMR1988]
@@ -56,8 +57,8 @@ function ldraw_lib__168225a() = [
   [4,16,-20,-0.25,-10,-14,-0.25,-4.5,-14,-0.25,-4,-20,-0.25,-3],
 // 
 // 1 16 0 -0.25 0 20 0 0 0 0.25 0 0 0 10 box5-12.dat
-  [1,16,0,-0.25,0,20,0,0,0,0.25,0,0,0,10, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,20,0,0,0,0.25,0,0,0,10, ldraw_lib__box5_12(realsolid)],
 ];
 module ldraw_lib__168225a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__168225a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__168225a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__168225a(line=0.2);

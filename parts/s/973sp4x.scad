@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__973sp4x() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__973sp4x(realsolid=false) = [
 // 0 ~Minifig Torso with Dk Green Corset - Ruffle
 // 0 Name: s\973sp4x.dat
 // 0 Author: Lee Gaiteri [LummoxJR]
@@ -374,5 +375,5 @@ function ldraw_lib__s__973sp4x() = [
   [3,16,-2.66,12.63,0,-4.45,12.78,0,-3.09,12.11,0],
 ];
 module ldraw_lib__s__973sp4x(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__973sp4x(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__973sp4x(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__973sp4x(line=0.2);

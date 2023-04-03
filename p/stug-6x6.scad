@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <stug-3x3.scad>
-function ldraw_lib__stug_6x6() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__stug_6x6(realsolid=false) = [
 // 0 Stud Group  6 x  6
 // 0 Name: stug-6x6.dat
 // 0 Author: Tore Eriksson [Tore_Eriksson]
@@ -19,15 +20,15 @@ function ldraw_lib__stug_6x6() = [
 // 
 // 
 // 1 16 -30 0 -30 1 0 0 0 1 0 0 0 1 stug-3x3.dat
-  [1,16,-30,0,-30,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_3x3()],
+  [1,16,-30,0,-30,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_3x3(realsolid)],
 // 1 16 -30 0 30 1 0 0 0 1 0 0 0 1 stug-3x3.dat
-  [1,16,-30,0,30,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_3x3()],
+  [1,16,-30,0,30,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_3x3(realsolid)],
 // 1 16 30 0 30 1 0 0 0 1 0 0 0 1 stug-3x3.dat
-  [1,16,30,0,30,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_3x3()],
+  [1,16,30,0,30,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_3x3(realsolid)],
 // 1 16 30 0 -30 1 0 0 0 1 0 0 0 1 stug-3x3.dat
-  [1,16,30,0,-30,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_3x3()],
+  [1,16,30,0,-30,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_3x3(realsolid)],
 // 0
 ];
 module ldraw_lib__stug_6x6(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__stug_6x6(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__stug_6x6(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__stug_6x6(line=0.2);

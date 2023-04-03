@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <47844.scad>
-function ldraw_lib__4506847() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4506847(realsolid=false) = [
 // 0 ~_Windscreen  9 x  3 x  1.667 Bubble Canopy Trans_Orange (Obsolete)
 // 0 Name: 4506847.dat
 // 0 Author: Michael Heidemann [mikeheide]
@@ -17,8 +18,8 @@ function ldraw_lib__4506847() = [
 // 
 // 
 // 1 57 0 0 0 1 0 0 0 1 0 0 0 1 47844.dat
-  [1,57,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__47844()],
+  [1,57,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__47844(realsolid)],
 ];
 module ldraw_lib__4506847(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4506847(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4506847(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4506847(line=0.2);

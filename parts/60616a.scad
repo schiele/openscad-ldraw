@@ -5,7 +5,8 @@ use <../p/box5-4a.scad>
 use <../p/recte3.scad>
 use <s/60616s01.scad>
 use <../p/stud2.scad>
-function ldraw_lib__60616a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__60616a(realsolid=false) = [
 // 0 Door  1 x  4 x  6 Smooth with Square Handle Plinth
 // 0 Name: 60616a.dat
 // 0 Author: Max Martin Richter [MMR1988]
@@ -31,27 +32,27 @@ function ldraw_lib__60616a() = [
 // 
 // 
 // 1 16 0 4 0 1 0 0 0 1 0 0 0 1 s\60616s01.dat
-  [1,16,0,4,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__60616s01()],
+  [1,16,0,4,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__60616s01(realsolid)],
 // 1 16 0 136 0 1 0 0 0 -1 0 0 0 1 s\60616s01.dat
-  [1,16,0,136,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__s__60616s01()],
+  [1,16,0,136,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__s__60616s01(realsolid)],
 // 
 // 1 16 3.0871 70 0 0 -6.1742 0 60.75 0 0 0 0 2 box3u4a.dat
-  [1,16,3.0871,70,0,0,-6.1742,0,60.75,0,0,0,0,2, ldraw_lib__box3u4a()],
+  [1,16,3.0871,70,0,0,-6.1742,0,60.75,0,0,0,0,2, ldraw_lib__box3u4a(realsolid)],
 // 
 // 1 16 37.25 32 0 0 0 29.75 0 -28 0 2 0 0 box2-7.dat
-  [1,16,37.25,32,0,0,0,29.75,0,-28,0,2,0,0, ldraw_lib__box2_7()],
+  [1,16,37.25,32,0,0,0,29.75,0,-28,0,2,0,0, ldraw_lib__box2_7(realsolid)],
 // 4 16 67 60 2 67 60 -2 67 80 -2 67 80 2
   [4,16,67,60,2,67,60,-2,67,80,-2,67,80,2],
 // 1 16 37.25 108 0 0 0 29.75 0 28 0 2 0 0 box2-7.dat
-  [1,16,37.25,108,0,0,0,29.75,0,28,0,2,0,0, ldraw_lib__box2_7()],
+  [1,16,37.25,108,0,0,0,29.75,0,28,0,2,0,0, ldraw_lib__box2_7(realsolid)],
 // 1 16 57 70 2 10 0 0 0 0 -10 0 1.75 0 box5-4a.dat
-  [1,16,57,70,2,10,0,0,0,0,-10,0,1.75,0, ldraw_lib__box5_4a()],
+  [1,16,57,70,2,10,0,0,0,0,-10,0,1.75,0, ldraw_lib__box5_4a(realsolid)],
 // 1 16 57 70 -2 10 0 0 0 0 -10 0 -1.75 0 box5-4a.dat
-  [1,16,57,70,-2,10,0,0,0,0,-10,0,-1.75,0, ldraw_lib__box5_4a()],
+  [1,16,57,70,-2,10,0,0,0,0,-10,0,-1.75,0, ldraw_lib__box5_4a(realsolid)],
 // 1 16 57 70 2 0 0 -10 10 0 0 0 1 0 recte3.dat
-  [1,16,57,70,2,0,0,-10,10,0,0,0,1,0, ldraw_lib__recte3()],
+  [1,16,57,70,2,0,0,-10,10,0,0,0,1,0, ldraw_lib__recte3(realsolid)],
 // 1 16 57 70 -2 0 0 -10 10 0 0 0 1 0 recte3.dat
-  [1,16,57,70,-2,0,0,-10,10,0,0,0,1,0, ldraw_lib__recte3()],
+  [1,16,57,70,-2,0,0,-10,10,0,0,0,1,0, ldraw_lib__recte3(realsolid)],
 // 
 // 4 16 67 80 2 67 136 2 7.5 136 2 7.5 133.5 2
   [4,16,67,80,2,67,136,2,7.5,136,2,7.5,133.5,2],
@@ -84,10 +85,10 @@ function ldraw_lib__60616a() = [
   [4,16,67,60,-2,67,4,-2,7.5,4,-2,7.5,6.5,-2],
 // 
 // 1 16 57 70 -3.75 0 0 1 1 0 0 0 1 0 stud2.dat
-  [1,16,57,70,-3.75,0,0,1,1,0,0,0,1,0, ldraw_lib__stud2()],
+  [1,16,57,70,-3.75,0,0,1,1,0,0,0,1,0, ldraw_lib__stud2(realsolid)],
 // 1 16 57 70 3.75 0 0 -1 1 0 0 0 -1 0 stud2.dat
-  [1,16,57,70,3.75,0,0,-1,1,0,0,0,-1,0, ldraw_lib__stud2()],
+  [1,16,57,70,3.75,0,0,-1,1,0,0,0,-1,0, ldraw_lib__stud2(realsolid)],
 ];
 module ldraw_lib__60616a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__60616a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__60616a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__60616a(line=0.2);

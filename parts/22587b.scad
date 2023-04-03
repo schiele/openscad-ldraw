@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/22587s01.scad>
-function ldraw_lib__22587b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__22587b(realsolid=false) = [
 // 0 Sticker Minifig Torso with Small "TINE" Logo, Brown Zipper and Red Collar
 // 0 Name: 22587b.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -31,7 +32,7 @@ function ldraw_lib__22587b() = [
   [4,16,-17,-0.25,-14,-12,-0.25,14,-12,0,14,-17,0,-14],
 // 0 //
 // 1 1 8 -0.25 -1.5 0.43 0 0 0 1 0 0 0 0.43 s\22587s01.dat
-  [1,1,8,-0.25,-1.5,0.43,0,0,0,1,0,0,0,0.43, ldraw_lib__s__22587s01()],
+  [1,1,8,-0.25,-1.5,0.43,0,0,0,1,0,0,0,0.43, ldraw_lib__s__22587s01(realsolid)],
 // 0 //
 // 4 4 0 -0.25 14 -1 -0.25 10.6 0 -0.25 8.2 1 -0.25 10.6
   [4,4,0,-0.25,14,-1,-0.25,10.6,0,-0.25,8.2,1,-0.25,10.6],
@@ -239,5 +240,5 @@ function ldraw_lib__22587b() = [
 // 
 ];
 module ldraw_lib__22587b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__22587b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__22587b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__22587b(line=0.2);

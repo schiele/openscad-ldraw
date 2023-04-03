@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/4-4cylc.scad>
-function ldraw_lib__s__2546s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__2546s01(realsolid=false) = [
 // 0 ~Animal Bird Parrot - Half
 // 0 Name: s\2546s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -426,7 +427,7 @@ function ldraw_lib__s__2546s01() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 1.3 -45.11 -1.7 0 3 0 -0.85 0 0 0 0 0.85 4-4cylc.dat
-  [1,16,1.3,-45.11,-1.7,0,3,0,-0.85,0,0,0,0,0.85, ldraw_lib__4_4cylc()],
+  [1,16,1.3,-45.11,-1.7,0,3,0,-0.85,0,0,0,0,0.85, ldraw_lib__4_4cylc(realsolid)],
 // 0 // RIGHT CHEEK - CLOSE FILL IN
 // 
 // 0 // Added lines/Condlines
@@ -621,5 +622,5 @@ function ldraw_lib__s__2546s01() = [
 // 
 ];
 module ldraw_lib__s__2546s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__2546s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__2546s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__2546s01(line=0.2);

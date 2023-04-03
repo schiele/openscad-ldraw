@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__48__1_8tndis() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__48__1_8tndis(realsolid=false) = [
 // 0 Hi-Res Disc Negative Truncated 0.125
 // 0 Name: 48\1-8tndis.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -27,5 +28,5 @@ function ldraw_lib__48__1_8tndis() = [
   [3,16,1,0,.7071,.7071,0,.7071,.7934,0,.6088],
 ];
 module ldraw_lib__48__1_8tndis(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__48__1_8tndis(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__48__1_8tndis(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__48__1_8tndis(line=0.2);

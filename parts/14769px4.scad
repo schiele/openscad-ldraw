@@ -5,7 +5,8 @@ use <../p/2-4ring19.scad>
 use <../p/48/5-24chrd.scad>
 use <../p/48/5-24ndis.scad>
 use <s/14769s01.scad>
-function ldraw_lib__14769px4() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__14769px4(realsolid=false) = [
 // 0 Tile  2 x  2 Round with Round Underside Stud with Medium Lilac Eyelid and Black Pupil Pattern
 // 0 Name: 14769px4.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -24,12 +25,12 @@ function ldraw_lib__14769px4() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\14769s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__14769s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__14769s01(realsolid)],
 // 
 // 1 85 0 0 0 -19 0 0 0 1 0 0 0 19 2-4chrd.dat
-  [1,85,0,0,0,-19,0,0,0,1,0,0,0,19, ldraw_lib__2_4chrd()],
+  [1,85,0,0,0,-19,0,0,0,1,0,0,0,19, ldraw_lib__2_4chrd(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 2-4ring19.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2_4ring19()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2_4ring19(realsolid)],
 // 
 // 3 0 -7.92038 0 -1.5292 -19 0 0 -19 0 -1.5292
   [3,0,-7.92038,0,-1.5292,-19,0,0,-19,0,-1.5292],
@@ -40,21 +41,21 @@ function ldraw_lib__14769px4() = [
 // 4 0 -19 0 0 -7.92038 0 -1.5292 7.92038 0 -1.5292 19 0 0
   [4,0,-19,0,0,-7.92038,0,-1.5292,7.92038,0,-1.5292,19,0,0],
 // 1 0 0 0 .8 0 0 -8.2 0 1 0 -9 0 0 48\5-24chrd.dat
-  [1,0,0,0,.8,0,0,-8.2,0,1,0,-9,0,0, ldraw_lib__48__5_24chrd()],
+  [1,0,0,0,.8,0,0,-8.2,0,1,0,-9,0,0, ldraw_lib__48__5_24chrd(realsolid)],
 // 1 0 0 0 .8 0 0 8.2 0 1 0 -9 0 0 48\5-24chrd.dat
-  [1,0,0,0,.8,0,0,8.2,0,1,0,-9,0,0, ldraw_lib__48__5_24chrd()],
+  [1,0,0,0,.8,0,0,8.2,0,1,0,-9,0,0, ldraw_lib__48__5_24chrd(realsolid)],
 // 1 16 0 0 .8 0 0 8.2 0 1 0 -9 0 0 48\5-24ndis.dat
-  [1,16,0,0,.8,0,0,8.2,0,1,0,-9,0,0, ldraw_lib__48__5_24ndis()],
+  [1,16,0,0,.8,0,0,8.2,0,1,0,-9,0,0, ldraw_lib__48__5_24ndis(realsolid)],
 // 1 16 0 0 .8 0 0 -8.2 0 1 0 -9 0 0 48\5-24ndis.dat
-  [1,16,0,0,.8,0,0,-8.2,0,1,0,-9,0,0, ldraw_lib__48__5_24ndis()],
+  [1,16,0,0,.8,0,0,-8.2,0,1,0,-9,0,0, ldraw_lib__48__5_24ndis(realsolid)],
 // 1 16 0 0 0 20 0 0 0 1 0 0 0 -20 1-8chrd.dat
-  [1,16,0,0,0,20,0,0,0,1,0,0,0,-20, ldraw_lib__1_8chrd()],
+  [1,16,0,0,0,20,0,0,0,1,0,0,0,-20, ldraw_lib__1_8chrd(realsolid)],
 // 1 16 0 0 0 -20 0 0 0 1 0 0 0 -20 1-8chrd.dat
-  [1,16,0,0,0,-20,0,0,0,1,0,0,0,-20, ldraw_lib__1_8chrd()],
+  [1,16,0,0,0,-20,0,0,0,1,0,0,0,-20, ldraw_lib__1_8chrd(realsolid)],
 // 1 16 0 0 0 0 0 -20 0 1 0 -20 0 0 1-8chrd.dat
-  [1,16,0,0,0,0,0,-20,0,1,0,-20,0,0, ldraw_lib__1_8chrd()],
+  [1,16,0,0,0,0,0,-20,0,1,0,-20,0,0, ldraw_lib__1_8chrd(realsolid)],
 // 1 16 0 0 0 0 0 20 0 1 0 -20 0 0 1-8chrd.dat
-  [1,16,0,0,0,0,0,20,0,1,0,-20,0,0, ldraw_lib__1_8chrd()],
+  [1,16,0,0,0,0,0,20,0,1,0,-20,0,0, ldraw_lib__1_8chrd(realsolid)],
 // 3 16 -20 0 0 -19 0 -1.5292 -19 0 0
   [3,16,-20,0,0,-19,0,-1.5292,-19,0,0],
 // 3 16 19 0 0 19 0 -1.5292 20 0 0
@@ -73,5 +74,5 @@ function ldraw_lib__14769px4() = [
   [3,16,-19,0,-1.5292,-20,0,0,-14.1421,0,-14.1421],
 ];
 module ldraw_lib__14769px4(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__14769px4(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__14769px4(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__14769px4(line=0.2);

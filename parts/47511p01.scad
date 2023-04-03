@@ -6,7 +6,8 @@ use <47204.scad>
 use <47205.scad>
 use <47206p01.scad>
 use <47207.scad>
-function ldraw_lib__47511p01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__47511p01(realsolid=false) = [
 // 0 Figure Duplo Child Boy with Medium Blue Legs, Blue Top with "SKATE" and Lime Cap Pattern
 // 0 Name: 47511p01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -23,22 +24,22 @@ function ldraw_lib__47511p01() = [
 // 
 // 
 // 1 73 0 0 0 1 0 0 0 1 0 0 0 1 47205.dat
-  [1,73,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__47205()],
+  [1,73,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__47205(realsolid)],
 // 1 72 0 -37 6 1 0 0 0 1 0 0 0 1 47207.dat
-  [1,72,0,-37,6,1,0,0,0,1,0,0,0,1, ldraw_lib__47207()],
+  [1,72,0,-37,6,1,0,0,0,1,0,0,0,1, ldraw_lib__47207(realsolid)],
 // 1 73 0 -37 6 1 0 0 0 1 0 0 0 1 47204.dat
-  [1,73,0,-37,6,1,0,0,0,1,0,0,0,1, ldraw_lib__47204()],
+  [1,73,0,-37,6,1,0,0,0,1,0,0,0,1, ldraw_lib__47204(realsolid)],
 // 1 1 0 -37 6 1 0 0 0 1 0 0 0 1 47203p01.dat
-  [1,1,0,-37,6,1,0,0,0,1,0,0,0,1, ldraw_lib__47203p01()],
+  [1,1,0,-37,6,1,0,0,0,1,0,0,0,1, ldraw_lib__47203p01(realsolid)],
 // 1 1 0 -64 6.5 1 0 0 0 1 0 0 0 1 47198p01.dat
-  [1,1,0,-64,6.5,1,0,0,0,1,0,0,0,1, ldraw_lib__47198p01()],
+  [1,1,0,-64,6.5,1,0,0,0,1,0,0,0,1, ldraw_lib__47198p01(realsolid)],
 // 1 1 0 -64 6.5 -1 0 0 0 1 0 0 0 -1 47198p01.dat
-  [1,1,0,-64,6.5,-1,0,0,0,1,0,0,0,-1, ldraw_lib__47198p01()],
+  [1,1,0,-64,6.5,-1,0,0,0,1,0,0,0,-1, ldraw_lib__47198p01(realsolid)],
 // 1 92 0 -79 8 1 0 0 0 1 0 0 0 1 47206p01.dat
-  [1,92,0,-79,8,1,0,0,0,1,0,0,0,1, ldraw_lib__47206p01()],
+  [1,92,0,-79,8,1,0,0,0,1,0,0,0,1, ldraw_lib__47206p01(realsolid)],
 // 1 27 0 -79 8 1 0 0 0 1 0 0 0 1 47199.dat
-  [1,27,0,-79,8,1,0,0,0,1,0,0,0,1, ldraw_lib__47199()],
+  [1,27,0,-79,8,1,0,0,0,1,0,0,0,1, ldraw_lib__47199(realsolid)],
 ];
 module ldraw_lib__47511p01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__47511p01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__47511p01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__47511p01(line=0.2);

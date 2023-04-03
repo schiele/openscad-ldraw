@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3010s01.scad>
-function ldraw_lib__3010pt0() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3010pt0(realsolid=false) = [
 // 0 Brick  1 x  4 with "HE 124" Pattern
 // 0 Name: 3010pt0.dat
 // 0 Author: Michael Heidemann [mikeheide]
@@ -21,7 +22,7 @@ function ldraw_lib__3010pt0() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3010s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3010s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3010s01(realsolid)],
 // 4 0 -6 7.5 -10 -6 19.5 -10 -2.75 19.5 -10 -2.75 4.5 -10
   [4,0,-6,7.5,-10,-6,19.5,-10,-2.75,19.5,-10,-2.75,4.5,-10],
 // 4 0 -7.5 7.5 -10 -6 7.5 -10 -2.75 4.5 -10 -7.5 4.5 -10
@@ -178,5 +179,5 @@ function ldraw_lib__3010pt0() = [
 // 0
 ];
 module ldraw_lib__3010pt0(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3010pt0(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3010pt0(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3010pt0(line=0.2);

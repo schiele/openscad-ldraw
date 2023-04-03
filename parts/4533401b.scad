@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__4533401b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4533401b(realsolid=false) = [
 // 0 Sticker  5.9 x  1.9 with SW Death Star Wall Light Single Column
 // 0 Name: 4533401b.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -17,7 +18,7 @@ function ldraw_lib__4533401b() = [
 // 
 // 
 // 1 16 0 -0.25 0 17.5 0 0 0 0.25 0 0 0 60 box5-12.dat
-  [1,16,0,-0.25,0,17.5,0,0,0,0.25,0,0,0,60, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,17.5,0,0,0,0.25,0,0,0,60, ldraw_lib__box5_12(realsolid)],
 // 
 // 3 14 -4.2 -0.25 53 -4.43825 -0.25 53.2371 -4.45972 -0.25 52.8
   [3,14,-4.2,-0.25,53,-4.43825,-0.25,53.2371,-4.45972,-0.25,52.8],
@@ -3513,5 +3514,5 @@ function ldraw_lib__4533401b() = [
   [3,16,-8.7,-0.25,20,-17.5,-0.25,60,-8.7,-0.25,-20],
 ];
 module ldraw_lib__4533401b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4533401b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4533401b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4533401b(line=0.2);

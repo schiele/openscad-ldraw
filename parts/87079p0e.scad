@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/87079s01.scad>
-function ldraw_lib__87079p0e() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__87079p0e(realsolid=false) = [
 // 0 Tile  2 x  4 with '60 years' Pattern
 // 0 Name: 87079p0e.dat
 // 0 Author: Johann Eisner [technicbasics]
@@ -15,7 +16,7 @@ function ldraw_lib__87079p0e() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\87079s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__87079s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__87079s01(realsolid)],
 // 4 82 3.6 0 -15.7 2.4 0 -17 12.6 0 -19.3 11.8 0 -17.62
   [4,82,3.6,0,-15.7,2.4,0,-17,12.6,0,-19.3,11.8,0,-17.62],
 // 4 82 11.8 0 -17.62 12.6 0 -19.3 24.79 0 -5.75 22.84 0 -5.05
@@ -2924,5 +2925,5 @@ function ldraw_lib__87079p0e() = [
   [3,16,.856,0,-12.051,.59,0,-12.09,2.4,0,-17],
 ];
 module ldraw_lib__87079p0e(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__87079p0e(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__87079p0e(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__87079p0e(line=0.2);

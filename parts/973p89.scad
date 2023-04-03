@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/1-4cyli.scad>
 use <s/973s01.scad>
-function ldraw_lib__973p89() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__973p89(realsolid=false) = [
 // 0 Minifig Torso with Crew Neck Sweater with Collar and "HAIL TO THE CHEF" on White Apron Pattern
 // 0 Name: 973p89.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -18,7 +19,7 @@ function ldraw_lib__973p89() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01(realsolid)],
 // 4 16 19 29 10 19 32 10 -19 32 10 -19 29 10
   [4,16,19,29,10,19,32,10,-19,32,10,-19,29,10],
 // 4 16 -14.345 2 10 14.345 2 10 19 29 10 -19 29 10
@@ -26,7 +27,7 @@ function ldraw_lib__973p89() = [
 // 4 16 -14.345 2 10 -12 0 10 12 0 10 14.345 2 10
   [4,16,-14.345,2,10,-12,0,10,12,0,10,14.345,2,10],
 // 1 16 0 -4 0 4.243 0 -4.243 0 -8 0 -4.243 0 -4.243 1-4cyli.dat
-  [1,16,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli()],
+  [1,16,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli(realsolid)],
 // 4 0 0 1.8 -10 0 0.9 -10 -1.05 1.5 -10 -1 2.5 -10
   [4,0,0,1.8,-10,0,0.9,-10,-1.05,1.5,-10,-1,2.5,-10],
 // 4 0 -1 2.5 -10 -1.05 1.5 -10 -2.2 2.7 -10 -2.1 3.8 -10
@@ -1145,5 +1146,5 @@ function ldraw_lib__973p89() = [
   [3,15,2.3,23.35,-10,2.05,24.9,-10,2.9,24.85,-10],
 ];
 module ldraw_lib__973p89(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__973p89(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__973p89(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__973p89(line=0.2);

@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/knob1.scad>
-function ldraw_lib__s__16000s03() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__16000s03(realsolid=false) = [
 // 0 ~Minifig Arm Right Dual Mould Upper Half Inner
 // 0 Name: s\16000s03.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -16,7 +17,7 @@ function ldraw_lib__s__16000s03() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 knob1.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__knob1()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__knob1(realsolid)],
 // 2 24 0 0 6.5 0 -2.48755 6.00535
   [2,24,0,0,6.5,0,-2.48755,6.00535],
 // 2 24 0 -2.48755 6.00535 0 -4.59615 4.59615
@@ -121,5 +122,5 @@ function ldraw_lib__s__16000s03() = [
   [5,24,-1.666,0,-6.5,-4.27269,6.54462,-6.52751,0,0,-6.5,-2.942,-1.53,-6.005],
 ];
 module ldraw_lib__s__16000s03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__16000s03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__16000s03(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__16000s03(line=0.2);

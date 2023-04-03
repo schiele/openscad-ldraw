@@ -4,7 +4,8 @@ use <../p/axlehol2.scad>
 use <../p/axlehole.scad>
 use <s/2418s01.scad>
 use <../p/stug-2x2.scad>
-function ldraw_lib__2418bp60() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2418bp60(realsolid=false) = [
 // 0 Windscreen  6 x  6 Octagonal Canopy with Axlehole and Insectoids Pattern
 // 0 Name: 2418bp60.dat
 // 0 Author: Mikkel Bech Jensen [gaia]
@@ -21,17 +22,17 @@ function ldraw_lib__2418bp60() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2418s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2418s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2418s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 4 0 0 0 1 axlehole.dat
-  [1,16,0,0,0,1,0,0,0,4,0,0,0,1, ldraw_lib__axlehole()],
+  [1,16,0,0,0,1,0,0,0,4,0,0,0,1, ldraw_lib__axlehole(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 axlehol2.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__axlehol2()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__axlehol2(realsolid)],
 // 1 16 0 4 0 1 0 0 0 1 0 0 0 1 axlehol2.dat
-  [1,16,0,4,0,1,0,0,0,1,0,0,0,1, ldraw_lib__axlehol2()],
+  [1,16,0,4,0,1,0,0,0,1,0,0,0,1, ldraw_lib__axlehol2(realsolid)],
 // 1 16 0 0 0 6 0 0 0 1 0 0 0 6 4-4ndis.dat
-  [1,16,0,0,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4ndis()],
+  [1,16,0,0,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4ndis(realsolid)],
 // 1 16 0 4 0 -6 0 0 0 -1 0 0 0 6 4-4ndis.dat
-  [1,16,0,4,0,-6,0,0,0,-1,0,0,0,6, ldraw_lib__4_4ndis()],
+  [1,16,0,4,0,-6,0,0,0,-1,0,0,0,6, ldraw_lib__4_4ndis(realsolid)],
 // 4 16 -6 0 6 -10 0 20 -20 0 10 -6 0 0
   [4,16,-6,0,6,-10,0,20,-20,0,10,-6,0,0],
 // 4 16 -6 0 0 -20 0 10 -20 0 -10 -6 0 -6
@@ -65,7 +66,7 @@ function ldraw_lib__2418bp60() = [
 // 4 16 0 4 6 -10 4 20 10 4 20 6 4 6
   [4,16,0,4,6,-10,4,20,10,4,20,6,4,6],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 stug-2x2.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_2x2()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_2x2(realsolid)],
 // 0 BFC NOCLIP
   [0,"BFC","NOCLIP"],
 // 4 0 -15.834 14.003 43.338 -15.671 13.61 42.683 -14.1 13.68 42.8 -14.1 14.04 43.4
@@ -2194,5 +2195,5 @@ function ldraw_lib__2418bp60() = [
   [3,16,60,24,20,53.61,20.64,19.39,52.871,20.048,18.896],
 ];
 module ldraw_lib__2418bp60(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2418bp60(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2418bp60(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2418bp60(line=0.2);

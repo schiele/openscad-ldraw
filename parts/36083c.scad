@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/4-4cylc.scad>
-function ldraw_lib__36083c() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__36083c(realsolid=false) = [
 // 0 Minifig Weapon Web Effect Web  4 x  3 with Bar
 // 0 Name: 36083c.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -20,7 +21,7 @@ function ldraw_lib__36083c() = [
 // 
 // 
 // 1 16 0 0 0 4 0 0 0 -17.5 0 0 0 4 4-4cylc.dat
-  [1,16,0,0,0,4,0,0,0,-17.5,0,0,0,4, ldraw_lib__4_4cylc()],
+  [1,16,0,0,0,4,0,0,0,-17.5,0,0,0,4, ldraw_lib__4_4cylc(realsolid)],
 // 
 // 3 16 3.593 -22.821 -0.041 2.315 -23.045 1.163 2.664 -23.061 -0.649
   [3,16,3.593,-22.821,-0.041,2.315,-23.045,1.163,2.664,-23.061,-0.649],
@@ -6360,5 +6361,5 @@ function ldraw_lib__36083c() = [
   [5,24,-17.737,-19.639,8.381,-17.05,-19.497,7.471,-15.867,-20.057,7.474,-17.064,-19.214,5.338],
 ];
 module ldraw_lib__36083c(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__36083c(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__36083c(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__36083c(line=0.2);

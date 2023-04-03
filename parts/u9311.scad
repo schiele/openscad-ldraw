@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/box3u2p.scad>
 use <../p/box4-1.scad>
 use <s/u9311s01.scad>
-function ldraw_lib__u9311() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__u9311(realsolid=false) = [
 // 0 ~Fabuland House Block End Panel Solid
 // 0 Name: u9311.dat
 // 0 Author: Chris Dee [cwdee]
@@ -21,22 +22,22 @@ function ldraw_lib__u9311() = [
 // 0 // Connection structure guessed from assembled part
 // 
 // 1 16 0 100 8 0 0 100 100 0 0 0 -16 0 box3u2p.dat
-  [1,16,0,100,8,0,0,100,100,0,0,0,-16,0, ldraw_lib__box3u2p()],
+  [1,16,0,100,8,0,0,100,100,0,0,0,-16,0, ldraw_lib__box3u2p(realsolid)],
 // 0 // Underside clips
 // 1 16 88 200 2 1 0 0 0 -1 0 0 0 -1 s\u9311s01.dat
-  [1,16,88,200,2,1,0,0,0,-1,0,0,0,-1, ldraw_lib__s__u9311s01()],
+  [1,16,88,200,2,1,0,0,0,-1,0,0,0,-1, ldraw_lib__s__u9311s01(realsolid)],
 // 2 24 96 200 -4 96 200 8
   [2,24,96,200,-4,96,200,8],
 // 2 24 80 200 -4 80 200 8
   [2,24,80,200,-4,80,200,8],
 // 1 16 0 200 2 1 0 0 0 -1 0 0 0 -1 s\u9311s01.dat
-  [1,16,0,200,2,1,0,0,0,-1,0,0,0,-1, ldraw_lib__s__u9311s01()],
+  [1,16,0,200,2,1,0,0,0,-1,0,0,0,-1, ldraw_lib__s__u9311s01(realsolid)],
 // 2 24 8 200 -4 8 200 8
   [2,24,8,200,-4,8,200,8],
 // 2 24 -8 200 -4 -8 200 8
   [2,24,-8,200,-4,-8,200,8],
 // 1 16 -88 200 2 1 0 0 0 -1 0 0 0 -1 s\u9311s01.dat
-  [1,16,-88,200,2,1,0,0,0,-1,0,0,0,-1, ldraw_lib__s__u9311s01()],
+  [1,16,-88,200,2,1,0,0,0,-1,0,0,0,-1, ldraw_lib__s__u9311s01(realsolid)],
 // 2 24 -80 200 -4 -80 200 8
   [2,24,-80,200,-4,-80,200,8],
 // 2 24 -96 200 -4 -96 200 8
@@ -94,7 +95,7 @@ function ldraw_lib__u9311() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -98 100 8 0 0 1 100 0 0 0 -2 0 box3u2p.dat
-  [1,16,-98,100,8,0,0,1,100,0,0,0,-2,0, ldraw_lib__box3u2p()],
+  [1,16,-98,100,8,0,0,1,100,0,0,0,-2,0, ldraw_lib__box3u2p(realsolid)],
 // 4 16 -99 0 8 -100 0 8 -100 200 8 -99 200 8
   [4,16,-99,0,8,-100,0,8,-100,200,8,-99,200,8],
 // 4 16 -97 200 8 -96 200 8 -84 198 8 -96 196 8
@@ -108,7 +109,7 @@ function ldraw_lib__u9311() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 98 100 8 0 0 1 100 0 0 0 -2 0 box3u2p.dat
-  [1,16,98,100,8,0,0,1,100,0,0,0,-2,0, ldraw_lib__box3u2p()],
+  [1,16,98,100,8,0,0,1,100,0,0,0,-2,0, ldraw_lib__box3u2p(realsolid)],
 // 4 16 99 200 8 100 200 8 100 0 8 99 0 8
   [4,16,99,200,8,100,200,8,100,0,8,99,0,8],
 // 4 16 96 196 8 84 198 8 96 200 8 97 200 8
@@ -168,7 +169,7 @@ function ldraw_lib__u9311() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -92 6 8 4 0 0 0 0 6 0 -12 0 box4-1.dat
-  [1,16,-92,6,8,4,0,0,0,0,6,0,-12,0, ldraw_lib__box4_1()],
+  [1,16,-92,6,8,4,0,0,0,0,6,0,-12,0, ldraw_lib__box4_1(realsolid)],
 // 
 // 2 24 96 196 -4 96 196 8
   [2,24,96,196,-4,96,196,8],
@@ -195,7 +196,7 @@ function ldraw_lib__u9311() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 92 6 8 4 0 0 0 0 6 0 -12 0 box4-1.dat
-  [1,16,92,6,8,4,0,0,0,0,6,0,-12,0, ldraw_lib__box4_1()],
+  [1,16,92,6,8,4,0,0,0,0,6,0,-12,0, ldraw_lib__box4_1(realsolid)],
 // 
 // 2 24 72 0 -4 -72 0 -4
   [2,24,72,0,-4,-72,0,-4],
@@ -254,5 +255,5 @@ function ldraw_lib__u9311() = [
   [2,24,72,0,-4,72,16,-4],
 ];
 module ldraw_lib__u9311(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__u9311(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__u9311(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__u9311(line=0.2);

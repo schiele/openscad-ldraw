@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/4-4disc.scad>
-function ldraw_lib__s__973p11b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__973p11b(realsolid=false) = [
 // 0 ~Minifig Torso with Dungarees Pattern - Background
 // 0 Name: s\973p11b.dat
 // 0 Author: Chris Dee [cwdee]
@@ -20,9 +21,9 @@ function ldraw_lib__s__973p11b() = [
 // 
 // 
 // 1 16 8.6 12.6 -10 1 0 0 0 0 -1 0 1 0 4-4disc.dat
-  [1,16,8.6,12.6,-10,1,0,0,0,0,-1,0,1,0, ldraw_lib__4_4disc()],
+  [1,16,8.6,12.6,-10,1,0,0,0,0,-1,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 16 -8.6 12.6 -10 1 0 0 0 0 -1 0 1 0 4-4disc.dat
-  [1,16,-8.6,12.6,-10,1,0,0,0,0,-1,0,1,0, ldraw_lib__4_4disc()],
+  [1,16,-8.6,12.6,-10,1,0,0,0,0,-1,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 3 16 7.8 1 -10 11.8 1 -10 12 0 -10
   [3,16,7.8,1,-10,11.8,1,-10,12,0,-10],
 // 4 16 12 0 -10 -12 0 -10 -7.8 1 -10 7.8 1 -10
@@ -213,5 +214,5 @@ function ldraw_lib__s__973p11b() = [
   [3,16,11.61,9.69,-10,12.7,9,-10,11.65,9.52,-10],
 ];
 module ldraw_lib__s__973p11b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__973p11b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__973p11b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__973p11b(line=0.2);

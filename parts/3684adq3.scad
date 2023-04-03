@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <3684a.scad>
 use <4613908j.scad>
-function ldraw_lib__3684adq3() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3684adq3(realsolid=false) = [
 // 0 Slope Brick 75  2 x  2 x  3 with Hieroglyphs Type 4 Sticker
 // 0 Name: 3684adq3.dat
 // 0 Author: Christian Neumann [Wesley]
@@ -20,10 +21,10 @@ function ldraw_lib__3684adq3() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 3684a.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3684a()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3684a(realsolid)],
 // 1 16 0 34 -20 1 0 0 0 0.28217 -0.95937 0 0.95937 0.28217 4613908j.dat
-  [1,16,0,34,-20,1,0,0,0,0.28217,-0.95937,0,0.95937,0.28217, ldraw_lib__4613908j()],
+  [1,16,0,34,-20,1,0,0,0,0.28217,-0.95937,0,0.95937,0.28217, ldraw_lib__4613908j(realsolid)],
 ];
 module ldraw_lib__3684adq3(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3684adq3(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3684adq3(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3684adq3(line=0.2);

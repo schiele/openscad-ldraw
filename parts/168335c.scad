@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__168335c() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__168335c(realsolid=false) = [
 // 0 Sticker  2.7 x  2.7 Trapezoid Left with White "Mach II"
 // 0 Name: 168335c.dat
 // 0 Author: Ulrich Röder [UR]
@@ -598,5 +599,5 @@ function ldraw_lib__168335c() = [
   [4,4,1.61,-.25,13.803,-4.448,-.25,-8.633,4.139,-.25,-8.879,10.203,-.25,13.58],
 ];
 module ldraw_lib__168335c(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__168335c(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__168335c(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__168335c(line=0.2);

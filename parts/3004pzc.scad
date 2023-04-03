@@ -4,7 +4,8 @@ use <../p/4-4ndis.scad>
 use <../p/4-4ring4.scad>
 use <../p/4-4ring6.scad>
 use <s/3004s01.scad>
-function ldraw_lib__3004pzc() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3004pzc(realsolid=false) = [
 // 0 Brick  1 x  2 with Belt and Buckles Pattern
 // 0 Name: 3004pzc.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -21,26 +22,26 @@ function ldraw_lib__3004pzc() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3004s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3004s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3004s01(realsolid)],
 // 
 // 1 80 -13.3 12.5 -10 2.5 0 0 0 0 -2.5 0 1 0 4-4ndis.dat
-  [1,80,-13.3,12.5,-10,2.5,0,0,0,0,-2.5,0,1,0, ldraw_lib__4_4ndis()],
+  [1,80,-13.3,12.5,-10,2.5,0,0,0,0,-2.5,0,1,0, ldraw_lib__4_4ndis(realsolid)],
 // 1 80 -13.3 12.5 -10 2 0 0 0 0 -2 0 1 0 4-4disc.dat
-  [1,80,-13.3,12.5,-10,2,0,0,0,0,-2,0,1,0, ldraw_lib__4_4disc()],
+  [1,80,-13.3,12.5,-10,2,0,0,0,0,-2,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 72 -13.3 12.5 -10 .5 0 0 0 0 -.5 0 1 0 4-4ring4.dat
-  [1,72,-13.3,12.5,-10,.5,0,0,0,0,-.5,0,1,0, ldraw_lib__4_4ring4()],
+  [1,72,-13.3,12.5,-10,.5,0,0,0,0,-.5,0,1,0, ldraw_lib__4_4ring4(realsolid)],
 // 1 80 13.3 12.5 -10 2.5 0 0 0 0 -2.5 0 1 0 4-4ndis.dat
-  [1,80,13.3,12.5,-10,2.5,0,0,0,0,-2.5,0,1,0, ldraw_lib__4_4ndis()],
+  [1,80,13.3,12.5,-10,2.5,0,0,0,0,-2.5,0,1,0, ldraw_lib__4_4ndis(realsolid)],
 // 1 72 13.3 12.5 -10 .5 0 0 0 0 -.5 0 1 0 4-4ring4.dat
-  [1,72,13.3,12.5,-10,.5,0,0,0,0,-.5,0,1,0, ldraw_lib__4_4ring4()],
+  [1,72,13.3,12.5,-10,.5,0,0,0,0,-.5,0,1,0, ldraw_lib__4_4ring4(realsolid)],
 // 1 80 13.3 12.5 -10 2 0 0 0 0 -2 0 1 0 4-4disc.dat
-  [1,80,13.3,12.5,-10,2,0,0,0,0,-2,0,1,0, ldraw_lib__4_4disc()],
+  [1,80,13.3,12.5,-10,2,0,0,0,0,-2,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 80 0 15.4 -10 3.5 0 0 0 0 -3.5 0 1 0 4-4ndis.dat
-  [1,80,0,15.4,-10,3.5,0,0,0,0,-3.5,0,1,0, ldraw_lib__4_4ndis()],
+  [1,80,0,15.4,-10,3.5,0,0,0,0,-3.5,0,1,0, ldraw_lib__4_4ndis(realsolid)],
 // 1 80 0 15.4 -10 3 0 0 0 0 -3 0 1 0 4-4disc.dat
-  [1,80,0,15.4,-10,3,0,0,0,0,-3,0,1,0, ldraw_lib__4_4disc()],
+  [1,80,0,15.4,-10,3,0,0,0,0,-3,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 72 0 15.4 -10 .5 0 0 0 0 -.5 0 1 0 4-4ring6.dat
-  [1,72,0,15.4,-10,.5,0,0,0,0,-.5,0,1,0, ldraw_lib__4_4ring6()],
+  [1,72,0,15.4,-10,.5,0,0,0,0,-.5,0,1,0, ldraw_lib__4_4ring6(realsolid)],
 // 4 72 -18.61 10.06 -10 -17.31 10.66 -10 -15.67 9.29 -10 -16.44 8.24 -10
   [4,72,-18.61,10.06,-10,-17.31,10.66,-10,-15.67,9.29,-10,-16.44,8.24,-10],
 // 4 72 -9.04 11.39 -10 -7.65 11.02 -10 -9.47 8.85 -10 -10.41 9.75 -10
@@ -201,5 +202,5 @@ function ldraw_lib__3004pzc() = [
   [3,71,8,15,-10,7.1,18.09,-10,8.7,17,-10],
 ];
 module ldraw_lib__3004pzc(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3004pzc(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3004pzc(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3004pzc(line=0.2);

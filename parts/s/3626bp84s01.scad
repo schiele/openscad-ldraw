@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/1-8cyli.scad>
 use <../../p/t04o6250.scad>
-function ldraw_lib__s__3626bp84s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__3626bp84s01(realsolid=false) = [
 // 0 ~Minifig Head with Smile and White Pupils Pattern without Eyebrows
 // 0 Name: s\3626bp84s01.dat
 // 0 Author: Vincent Messenet [Cheenzo]
@@ -17,17 +18,17 @@ function ldraw_lib__s__3626bp84s01() = [
 // 
 // 0 // Head Missing Decorative Surface
 // 1 16 0 4 0 0 0 -8 0 -6.4 0 -8 0 0 t04o6250.dat
-  [1,16,0,4,0,0,0,-8,0,-6.4,0,-8,0,0, ldraw_lib__t04o6250()],
+  [1,16,0,4,0,0,0,-8,0,-6.4,0,-8,0,0, ldraw_lib__t04o6250(realsolid)],
 // 1 16 0 4 0 8 0 0 0 -6.4 0 0 0 -8 t04o6250.dat
-  [1,16,0,4,0,8,0,0,0,-6.4,0,0,0,-8, ldraw_lib__t04o6250()],
+  [1,16,0,4,0,8,0,0,0,-6.4,0,0,0,-8, ldraw_lib__t04o6250(realsolid)],
 // 1 16 0 17 0 0 0 8 0 6.4 0 -8 0 0 t04o6250.dat
-  [1,16,0,17,0,0,0,8,0,6.4,0,-8,0,0, ldraw_lib__t04o6250()],
+  [1,16,0,17,0,0,0,8,0,6.4,0,-8,0,0, ldraw_lib__t04o6250(realsolid)],
 // 1 16 0 17 0 -8 0 0 0 6.4 0 0 0 -8 t04o6250.dat
-  [1,16,0,17,0,-8,0,0,0,6.4,0,0,0,-8, ldraw_lib__t04o6250()],
+  [1,16,0,17,0,-8,0,0,0,6.4,0,0,0,-8, ldraw_lib__t04o6250(realsolid)],
 // 1 16 0 4 0 -13 0 0 0 13 0 0 0 -13 1-8cyli.dat
-  [1,16,0,4,0,-13,0,0,0,13,0,0,0,-13, ldraw_lib__1_8cyli()],
+  [1,16,0,4,0,-13,0,0,0,13,0,0,0,-13, ldraw_lib__1_8cyli(realsolid)],
 // 1 16 0 4 0 13 0 0 0 13 0 0 0 -13 1-8cyli.dat
-  [1,16,0,4,0,13,0,0,0,13,0,0,0,-13, ldraw_lib__1_8cyli()],
+  [1,16,0,4,0,13,0,0,0,13,0,0,0,-13, ldraw_lib__1_8cyli(realsolid)],
 // 5 24 -9.192 17 -9.192 -9.192 4 -9.192 -12.011 17 -4.975 -4.975 17 -12.011
   [5,24,-9.192,17,-9.192,-9.192,4,-9.192,-12.011,17,-4.975,-4.975,17,-12.011],
 // 5 24 -4.975 17 -12.011 -4.975 4 -12.011 -9.192 17 -9.192 0 17 -13
@@ -632,5 +633,5 @@ function ldraw_lib__s__3626bp84s01() = [
   [3,16,9.192,17,-9.192,5.109,10.34,-11.921,5.22,10.059,-11.847],
 ];
 module ldraw_lib__s__3626bp84s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__3626bp84s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__3626bp84s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__3626bp84s01(line=0.2);

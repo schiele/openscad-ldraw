@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/1-8cyli.scad>
 use <s/93598s01.scad>
-function ldraw_lib__93598pk0() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__93598pk0(realsolid=false) = [
 // 0 Windscreen  2 x  3 x  2 with  2 x  4 Base with Green Eyes on White Background Pattern
 // 0 Name: 93598pk0.dat
 // 0 Author: Damien Roux [Darats]
@@ -18,12 +19,12 @@ function ldraw_lib__93598pk0() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\93598s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__93598s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__93598s01(realsolid)],
 // 
 // 1 16 20 0 0 10 0 0 0 40 0 0 -20 -10 1-8cyli.dat
-  [1,16,20,0,0,10,0,0,0,40,0,0,-20,-10, ldraw_lib__1_8cyli()],
+  [1,16,20,0,0,10,0,0,0,40,0,0,-20,-10, ldraw_lib__1_8cyli(realsolid)],
 // 1 16 -20 0 0 -10 0 0 0 40 0 0 -20 -10 1-8cyli.dat
-  [1,16,-20,0,0,-10,0,0,0,40,0,0,-20,-10, ldraw_lib__1_8cyli()],
+  [1,16,-20,0,0,-10,0,0,0,40,0,0,-20,-10, ldraw_lib__1_8cyli(realsolid)],
 // 
 // 3 0 -24.1434 1.85396 -9.95453 -24.8497 1.14796 -9.1295 -24.1434 13.6317 -15.8434
   [3,0,-24.1434,1.85396,-9.95453,-24.8497,1.14796,-9.1295,-24.1434,13.6317,-15.8434],
@@ -949,5 +950,5 @@ function ldraw_lib__93598pk0() = [
   [5,24,-27.071,0,-7.071,-27.071,40,-27.071,-23.827,0,-9.239,-29.239,0,-3.827],
 ];
 module ldraw_lib__93598pk0(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__93598pk0(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__93598pk0(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__93598pk0(line=0.2);

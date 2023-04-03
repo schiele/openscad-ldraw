@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__163145bc01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__163145bc01(realsolid=false) = [
 // 0 Sticker  2.9 x  5.9 with White/Clear Stripes (Formed)
 // 0 Name: 163145bc01.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -128,5 +129,5 @@ function ldraw_lib__163145bc01() = [
   [5,24,-59,2.478,-20.704,59,2.478,-20.704,-59,3.1434,-22.6669,59,2.2972,-19.7944],
 ];
 module ldraw_lib__163145bc01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__163145bc01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__163145bc01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__163145bc01(line=0.2);

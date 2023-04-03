@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <821421cs03.scad>
 use <821421cs04.scad>
-function ldraw_lib__s__821421cs02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__821421cs02(realsolid=false) = [
 // 0 ~Sticker "Octan", Text Body
 // 0 Name: s\821421cs02.dat
 // 0 Author: Ulrich Röder [UR]
@@ -20,11 +21,11 @@ function ldraw_lib__s__821421cs02() = [
 // 
 // 0 // Red
 // 1 4 0 0 0 1 0 0 0 1 0 0 0 1 s\821421cs03.dat
-  [1,4,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__821421cs03()],
+  [1,4,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__821421cs03(realsolid)],
 // 
 // 0 // Green
 // 1 2 0 0 0 1 0 0 0 1 0 0 0 1 s\821421cs04.dat
-  [1,2,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__821421cs04()],
+  [1,2,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__821421cs04(realsolid)],
 // 
 // 0 // Main
 // 3 16 -22.513 0 7.485 0 0 8 -31 0 8
@@ -339,5 +340,5 @@ function ldraw_lib__s__821421cs02() = [
   [3,16,29.214,0,1.928,29.601,0,1.389,31,0,8],
 ];
 module ldraw_lib__s__821421cs02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__821421cs02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__821421cs02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__821421cs02(line=0.2);

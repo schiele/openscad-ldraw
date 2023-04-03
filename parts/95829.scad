@@ -5,7 +5,8 @@ use <../p/4-4cylc.scad>
 use <../p/4-4cylo.scad>
 use <../p/4-4edge.scad>
 use <../p/4-4ring1.scad>
-function ldraw_lib__95829() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__95829(realsolid=false) = [
 // 0 Plant Flower Rose with Bar and Pin Hole
 // 0 Name: 95829.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -24,19 +25,19 @@ function ldraw_lib__95829() = [
 // 
 // 
 // 1 16 0 -7.95 0 7.5 0 0 0 1 0 0 0 7.5 4-4edge.dat
-  [1,16,0,-7.95,0,7.5,0,0,0,1,0,0,0,7.5, ldraw_lib__4_4edge()],
+  [1,16,0,-7.95,0,7.5,0,0,0,1,0,0,0,7.5, ldraw_lib__4_4edge(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -13.75 0 2 0 0 0 13.75 0 0 0 2 4-4cylc.dat
-  [1,16,0,-13.75,0,2,0,0,0,13.75,0,0,0,2, ldraw_lib__4_4cylc()],
+  [1,16,0,-13.75,0,2,0,0,0,13.75,0,0,0,2, ldraw_lib__4_4cylc(realsolid)],
 // 1 16 0 0 0 -2 0 0 0 -1 0 0 0 2 4-4ring1.dat
-  [1,16,0,0,0,-2,0,0,0,-1,0,0,0,2, ldraw_lib__4_4ring1()],
+  [1,16,0,0,0,-2,0,0,0,-1,0,0,0,2, ldraw_lib__4_4ring1(realsolid)],
 // 1 16 0 0 0 -4 0 0 0 -5.75 0 0 0 4 4-4cylo.dat
-  [1,16,0,0,0,-4,0,0,0,-5.75,0,0,0,4, ldraw_lib__4_4cylo()],
+  [1,16,0,0,0,-4,0,0,0,-5.75,0,0,0,4, ldraw_lib__4_4cylo(realsolid)],
 // 1 16 0 -6.65 0 2 0 0 0 0.9 0 0 0 2 4-4con2.dat
-  [1,16,0,-6.65,0,2,0,0,0,0.9,0,0,0,2, ldraw_lib__4_4con2()],
+  [1,16,0,-6.65,0,2,0,0,0,0.9,0,0,0,2, ldraw_lib__4_4con2(realsolid)],
 // 1 16 0 -7.95 0 1.5 0 0 0 1.3 0 0 0 1.5 4-4con4.dat
-  [1,16,0,-7.95,0,1.5,0,0,0,1.3,0,0,0,1.5, ldraw_lib__4_4con4()],
+  [1,16,0,-7.95,0,1.5,0,0,0,1.3,0,0,0,1.5, ldraw_lib__4_4con4(realsolid)],
 // 0 // adapted
 // 2 24 0 -10.4 7.468 0 -9.41 7.555
   [2,24,0,-10.4,7.468,0,-9.41,7.555],
@@ -3768,5 +3769,5 @@ function ldraw_lib__95829() = [
   [5,24,6,-6.65,0,5.5434,-6.65,-2.2962,4,-5.75,0,7.5,-7.95,0],
 ];
 module ldraw_lib__95829(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__95829(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__95829(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__95829(line=0.2);

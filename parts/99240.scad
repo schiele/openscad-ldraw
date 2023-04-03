@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/7-8cylo.scad>
 use <../p/stud4o.scad>
-function ldraw_lib__99240() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__99240(realsolid=false) = [
 // 0 Minifig Hair Swept Back Into Bun
 // 0 Name: 99240.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -22,9 +23,9 @@ function ldraw_lib__99240() = [
 // 
 // 
 // 1 16 0 -6 0 -1 0 0 0 -1.5 0 0 0 1 stud4o.dat
-  [1,16,0,-6,0,-1,0,0,0,-1.5,0,0,0,1, ldraw_lib__stud4o()],
+  [1,16,0,-6,0,-1,0,0,0,-1.5,0,0,0,1, ldraw_lib__stud4o(realsolid)],
 // 1 16 0 -4.4 0 -3.06147 0 -7.39104 0 4.4 0 7.39104 0 -3.06147 7-8cylo.dat
-  [1,16,0,-4.4,0,-3.06147,0,-7.39104,0,4.4,0,7.39104,0,-3.06147, ldraw_lib__7_8cylo()],
+  [1,16,0,-4.4,0,-3.06147,0,-7.39104,0,4.4,0,7.39104,0,-3.06147, ldraw_lib__7_8cylo(realsolid)],
 // 2 24 0.988 -0.007 9.416 0 -0.007 9.151
   [2,24,0.988,-0.007,9.416,0,-0.007,9.151],
 // 2 24 0 -0.007 9.151 -0.988 -0.007 9.416
@@ -5465,5 +5466,5 @@ function ldraw_lib__99240() = [
   [5,24,5.389,-7.713,9.113,1.976,-7.73,11.127,4.718,-8.231,8.741,1.711,-7.626,12.115],
 ];
 module ldraw_lib__99240(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__99240(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__99240(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__99240(line=0.2);

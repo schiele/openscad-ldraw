@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/4162s01.scad>
-function ldraw_lib__4162p0e() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4162p0e(realsolid=false) = [
 // 0 Tile  1 x  8 with "Sungnyemun" Pattern
 // 0 Name: 4162p0e.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -22,7 +23,7 @@ function ldraw_lib__4162p0e() = [
 // 0 // Font match is not perfect, but manually corrected with LD Pattern Creator
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4162s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4162s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4162s01(realsolid)],
 // 0 //
 // 4 15 -34.389 0 -2.043 -35.433 0 -2.672 -34.852 0 -3.323 -33.449 0 -2.773
   [4,15,-34.389,0,-2.043,-35.433,0,-2.672,-34.852,0,-3.323,-33.449,0,-2.773],
@@ -813,5 +814,5 @@ function ldraw_lib__4162p0e() = [
   [3,16,39.645,0,0.17,80,0,10,39.581,0,1.288],
 ];
 module ldraw_lib__4162p0e(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4162p0e(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4162p0e(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4162p0e(line=0.2);

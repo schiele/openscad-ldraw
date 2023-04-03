@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/2586s01.scad>
 use <s/3846p4ka.scad>
-function ldraw_lib__2586p4k() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2586p4k(realsolid=false) = [
 // 0 Minifig Shield Ovoid with Dark Green Dragon on Medium Nougat/Tan Pattern
 // 0 Name: 2586p4k.dat
 // 0 Author: Joerg Sommerer [Brickaneer]
@@ -20,7 +21,7 @@ function ldraw_lib__2586p4k() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2586s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2586s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2586s01(realsolid)],
 // 3 84 7.654 -32.978 -8 0 -34.5 -8 0 -28.55 -8
   [3,84,7.654,-32.978,-8,0,-34.5,-8,0,-28.55,-8],
 // 3 84 16.9 -22.05 -8 7.654 -32.978 -8 0 -28.55 -8
@@ -90,8 +91,8 @@ function ldraw_lib__2586p4k() = [
 // 3 84 0 37.5 -8 0 20.85 -8 -2.2962 37.0434 -8
   [3,84,0,37.5,-8,0,20.85,-8,-2.2962,37.0434,-8],
 // 1 16 0 -7.75 -8 1.3 0 0 0 1.3 0 0 0 1 s\3846p4ka.dat
-  [1,16,0,-7.75,-8,1.3,0,0,0,1.3,0,0,0,1, ldraw_lib__s__3846p4ka()],
+  [1,16,0,-7.75,-8,1.3,0,0,0,1.3,0,0,0,1, ldraw_lib__s__3846p4ka(realsolid)],
 ];
 module ldraw_lib__2586p4k(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2586p4k(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2586p4k(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2586p4k(line=0.2);

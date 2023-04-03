@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/clip12.scad>
 use <87567s03.scad>
-function ldraw_lib__s__87567s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__87567s01(realsolid=false) = [
 // 0 ~Minifig Mechanical Head Cyborg - Neck
 // 0 Name: s\87567s01.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -16,11 +17,11 @@ function ldraw_lib__s__87567s01() = [
 // 
 // 
 // 1 16 0 0 0 0 -1 0 0 0 -1 1 0 0 clip12.dat
-  [1,16,0,0,0,0,-1,0,0,0,-1,1,0,0, ldraw_lib__clip12()],
+  [1,16,0,0,0,0,-1,0,0,0,-1,1,0,0, ldraw_lib__clip12(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\87567s03.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__87567s03()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__87567s03(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\87567s03.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__87567s03()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__87567s03(realsolid)],
 // 
 // 5 24 0 -12.349 -5.2361 0 -14.0859 -7.0602 -2 -13.6934 -7.4202 2 -13.6934 -7.4202
   [5,24,0,-12.349,-5.2361,0,-14.0859,-7.0602,-2,-13.6934,-7.4202,2,-13.6934,-7.4202],
@@ -72,5 +73,5 @@ function ldraw_lib__s__87567s01() = [
   [5,24,0,-14.1163,-18.6594,0,-13.202,-17.3831,1.625,-13.5516,-17.1262,-1.625,-13.5516,-17.1262],
 ];
 module ldraw_lib__s__87567s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__87567s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__87567s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__87567s01(line=0.2);

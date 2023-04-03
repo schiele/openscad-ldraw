@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/5-8cylo.scad>
-function ldraw_lib__93223() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__93223(realsolid=false) = [
 // 0 Minifig Beard Medium Short
 // 0 Name: 93223.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -2046,7 +2047,7 @@ function ldraw_lib__93223() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 0 7.39104 0 3.06147 0 -2.2 0 -3.06147 0 7.39104 5-8cylo.dat
-  [1,16,0,0,0,7.39104,0,3.06147,0,-2.2,0,-3.06147,0,7.39104, ldraw_lib__5_8cylo()],
+  [1,16,0,0,0,7.39104,0,3.06147,0,-2.2,0,-3.06147,0,7.39104, ldraw_lib__5_8cylo(realsolid)],
 // 0 // Added lines/Condlines
 // 5 24 -2.698 -2.739 -16.99 -1.436 0.678 -17.922 -0.63 -2.672 -16.223 -3.016 0.412 -18.072
   [5,24,-2.698,-2.739,-16.99,-1.436,0.678,-17.922,-0.63,-2.672,-16.223,-3.016,0.412,-18.072],
@@ -4066,5 +4067,5 @@ function ldraw_lib__93223() = [
   [5,24,-13.755,-2.422,-0.367,-13.869,-0.744,-2.177,-15.682,-3.606,-0.893,-12.282,-1.494,-0.012],
 ];
 module ldraw_lib__93223(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__93223(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__93223(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__93223(line=0.2);

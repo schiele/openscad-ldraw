@@ -3,7 +3,8 @@ use <rect.scad>
 use <rect2p.scad>
 use <rect3.scad>
 use <recte3.scad>
-function ldraw_lib__toothb28d() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__toothb28d(realsolid=false) = [
 // 0 Single Tooth for Technic Double Bevel Gear 28 Tooth
 // 0 Name: toothb28d.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -22,19 +23,19 @@ function ldraw_lib__toothb28d() = [
 // 0 // Tooth
 // 0 // Primitives
 // 1 16 0 0 36.802 0.8531 0 0 0 0 4 0 -1 0 rect.dat
-  [1,16,0,0,36.802,0.8531,0,0,0,0,4,0,-1,0, ldraw_lib__rect()],
+  [1,16,0,0,36.802,0.8531,0,0,0,0,4,0,-1,0, ldraw_lib__rect(realsolid)],
 // 1 16 -0.94055 0 36.545 -0.08745 1 0 0 0 -4 -0.257 0 0 rect2p.dat
-  [1,16,-0.94055,0,36.545,-0.08745,1,0,0,0,-4,-0.257,0,0, ldraw_lib__rect2p()],
+  [1,16,-0.94055,0,36.545,-0.08745,1,0,0,0,-4,-0.257,0,0, ldraw_lib__rect2p(realsolid)],
 // 1 16 0.94055 0 36.545 -0.08745 -1 0 0 0 -4 0.257 0 0 rect2p.dat
-  [1,16,0.94055,0,36.545,-0.08745,-1,0,0,0,-4,0.257,0,0, ldraw_lib__rect2p()],
+  [1,16,0.94055,0,36.545,-0.08745,-1,0,0,0,-4,0.257,0,0, ldraw_lib__rect2p(realsolid)],
 // 1 16 0 5 36.288 -1.028 0 0 0 0 -1 0 -1 0 rect3.dat
-  [1,16,0,5,36.288,-1.028,0,0,0,0,-1,0,-1,0, ldraw_lib__rect3()],
+  [1,16,0,5,36.288,-1.028,0,0,0,0,-1,0,-1,0, ldraw_lib__rect3(realsolid)],
 // 1 16 0 -5 36.288 1.028 0 0 0 0 1 0 -1 0 rect3.dat
-  [1,16,0,-5,36.288,1.028,0,0,0,0,1,0,-1,0, ldraw_lib__rect3()],
+  [1,16,0,-5,36.288,1.028,0,0,0,0,1,0,-1,0, ldraw_lib__rect3(realsolid)],
 // 1 16 -2.056 0 30.6521 0 1 0 4 0 0 0 0 .7021 recte3.dat
-  [1,16,-2.056,0,30.6521,0,1,0,4,0,0,0,0,.7021, ldraw_lib__recte3()],
+  [1,16,-2.056,0,30.6521,0,1,0,4,0,0,0,0,.7021, ldraw_lib__recte3(realsolid)],
 // 1 16 2.056 0 30.6521 0 1 0 4 0 0 0 0 .7021 recte3.dat
-  [1,16,2.056,0,30.6521,0,1,0,4,0,0,0,0,.7021, ldraw_lib__recte3()],
+  [1,16,2.056,0,30.6521,0,1,0,4,0,0,0,0,.7021, ldraw_lib__recte3(realsolid)],
 // 0 // Faces
 // 4 16 -1.028 4 36.288 -0.8531 4 36.802 0.8531 4 36.802 1.028 4 36.288
   [4,16,-1.028,4,36.288,-0.8531,4,36.802,0.8531,4,36.802,1.028,4,36.288],
@@ -210,5 +211,5 @@ function ldraw_lib__toothb28d() = [
 // 
 ];
 module ldraw_lib__toothb28d(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__toothb28d(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__toothb28d(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__toothb28d(line=0.2);

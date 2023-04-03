@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <4492s01.scad>
-function ldraw_lib__s__4492s() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__4492s(realsolid=false) = [
 // 0 ~Animal Horse Head Side with Bridle Pattern Background
 // 0 Name: s\4492s.dat
 // 0 Author: Sascha Broich
@@ -21,7 +22,7 @@ function ldraw_lib__s__4492s() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4492s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4492s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4492s01(realsolid)],
 // 0 // ear outer plane
 // 3 16 6.406 -73 -25 6.406 -73 -27 6.512 -66.25 -28.35
   [3,16,6.406,-73,-25,6.406,-73,-27,6.512,-66.25,-28.35],
@@ -1452,5 +1453,5 @@ function ldraw_lib__s__4492s() = [
   [5,24,10,-17.75,0,10,-17.612,2.088,9.75,-25,2.5,10,-16,0],
 ];
 module ldraw_lib__s__4492s(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__4492s(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__4492s(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__4492s(line=0.2);

@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/5-16cyli.scad>
 use <s/3815bs01.scad>
-function ldraw_lib__3815bp6u() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3815bp6u(realsolid=false) = [
 // 0 Minifig Hips with Gold Belt and Orange Cable Pattern
 // 0 Name: 3815bp6u.dat
 // 0 Author: Chris Dee [cwdee]
@@ -21,9 +22,9 @@ function ldraw_lib__3815bp6u() = [
 // 
 // 
 // 1 16 -2 12 0 0 4 0 8.08395 0 -3.34848 -3.34848 0 -8.08395 5-16cyli.dat
-  [1,16,-2,12,0,0,4,0,8.08395,0,-3.34848,-3.34848,0,-8.08395, ldraw_lib__5_16cyli()],
+  [1,16,-2,12,0,0,4,0,8.08395,0,-3.34848,-3.34848,0,-8.08395, ldraw_lib__5_16cyli(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3815bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3815bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3815bs01(realsolid)],
 // 0 // Pattern
 // 4 25 1.071 2.502 -10 1.178 2.9 -10 0.381 2.9 -10 0.779 2.21 -10
   [4,25,1.071,2.502,-10,1.178,2.9,-10,0.381,2.9,-10,0.779,2.21,-10],
@@ -99,5 +100,5 @@ function ldraw_lib__3815bp6u() = [
   [4,16,3,0,-10,18,0,-10,6,0.9,-10,4.8,0.9,-10],
 ];
 module ldraw_lib__3815bp6u(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3815bp6u(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3815bp6u(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3815bp6u(line=0.2);

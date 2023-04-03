@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__u9222() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__u9222(realsolid=false) = [
 // 0 ~Train Track 12V Tapered Point Left Bottom Plate
 // 0 Name: u9222.dat
 // 0 Author: Steffen [Steffen]
@@ -153,5 +154,5 @@ function ldraw_lib__u9222() = [
   [4,16,160,8,-240,156,8,-236,-96,8,-236,-100,8,-240],
 ];
 module ldraw_lib__u9222(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__u9222(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__u9222(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__u9222(line=0.2);

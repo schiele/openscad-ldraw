@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3068bs01.scad>
-function ldraw_lib__3068bpg5() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3068bpg5(realsolid=false) = [
 // 0 Tile  2 x  2 with Fabuland Apple Pattern
 // 0 Name: 3068bpg5.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -17,7 +18,7 @@ function ldraw_lib__3068bpg5() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3068bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3068bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3068bs01(realsolid)],
 // 4 4 -1 0 5 7.9 0 -2.1 6.6 0 4.5 0.1 0 5.5
   [4,4,-1,0,5,7.9,0,-2.1,6.6,0,4.5,0.1,0,5.5],
 // 4 4 0.1 0 5.5 6.6 0 4.5 5.5 0 5.3 1.3 0 6.1
@@ -500,5 +501,5 @@ function ldraw_lib__3068bpg5() = [
   [3,16,-2.5,0,13.6,-4.2,0,13.4,-3.2,0,11.9],
 ];
 module ldraw_lib__3068bpg5(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3068bpg5(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3068bpg5(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3068bpg5(line=0.2);

@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4edge.scad>
 use <../p/4-4ndis.scad>
-function ldraw_lib__506() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__506(realsolid=false) = [
 // 0 Train Steam Drive Rod Holder
 // 0 Name: 506.dat
 // 0 Author: Niels Karsdorp [nielsk]
@@ -79,18 +80,18 @@ function ldraw_lib__506() = [
   [2,24,12.512,-14,-5,13,-15,-5],
 // 0 // -- Remaining edges
 // 1 16 0 0 -5 6 0 0 0 0 6 0 1 0 4-4edge.dat
-  [1,16,0,0,-5,6,0,0,0,0,6,0,1,0, ldraw_lib__4_4edge()],
+  [1,16,0,0,-5,6,0,0,0,0,6,0,1,0, ldraw_lib__4_4edge(realsolid)],
 // 1 16 -14 0 -5 4 0 0 0 0 4 0 1 0 4-4edge.dat
-  [1,16,-14,0,-5,4,0,0,0,0,4,0,1,0, ldraw_lib__4_4edge()],
+  [1,16,-14,0,-5,4,0,0,0,0,4,0,1,0, ldraw_lib__4_4edge(realsolid)],
 // 2 24 -17 -10 -5 5.584 -10 -5
   [2,24,-17,-10,-5,5.584,-10,-5],
 // 2 24 -17 10 -5 5.584 10 -5
   [2,24,-17,10,-5,5.584,10,-5],
 // 0 // ---- Bottom faces
 // 1 16 0 0 -5 6 0 0 0 0 6 0 1 0 4-4ndis.dat
-  [1,16,0,0,-5,6,0,0,0,0,6,0,1,0, ldraw_lib__4_4ndis()],
+  [1,16,0,0,-5,6,0,0,0,0,6,0,1,0, ldraw_lib__4_4ndis(realsolid)],
 // 1 16 -14 0 -5 4 0 0 0 0 4 0 1 0 4-4ndis.dat
-  [1,16,-14,0,-5,4,0,0,0,0,4,0,1,0, ldraw_lib__4_4ndis()],
+  [1,16,-14,0,-5,4,0,0,0,0,4,0,1,0, ldraw_lib__4_4ndis(realsolid)],
 // 4 16 5.584 -10 -5 6 -6 -5 -6 -6 -5 -17 -10 -5
   [4,16,5.584,-10,-5,6,-6,-5,-6,-6,-5,-17,-10,-5],
 // 4 16 -17 10 -5 -6 6 -5 6 6 -5 5.584 10 -5
@@ -195,14 +196,14 @@ function ldraw_lib__506() = [
   [2,24,12.512,-14,0,13,-15,0],
 // 0 // -- Remaining edges
 // 1 16 0 0 0 6 0 0 0 0 6 0 1 0 4-4edge.dat
-  [1,16,0,0,0,6,0,0,0,0,6,0,1,0, ldraw_lib__4_4edge()],
+  [1,16,0,0,0,6,0,0,0,0,6,0,1,0, ldraw_lib__4_4edge(realsolid)],
 // 2 24 -17 -10 0 5.584 -10 0
   [2,24,-17,-10,0,5.584,-10,0],
 // 2 24 -17 10 0 5.584 10 0
   [2,24,-17,10,0,5.584,10,0],
 // 0 // ---- Front faces
 // 1 16 0 0 0 6 0 0 0 0 6 0 -1 0 4-4ndis.dat
-  [1,16,0,0,0,6,0,0,0,0,6,0,-1,0, ldraw_lib__4_4ndis()],
+  [1,16,0,0,0,6,0,0,0,0,6,0,-1,0, ldraw_lib__4_4ndis(realsolid)],
 // 4 16 -17 -10 0 -6 -6 0 6 -6 0 5.584 -10 0
   [4,16,-17,-10,0,-6,-6,0,6,-6,0,5.584,-10,0],
 // 4 16 5.584 10 0 6 6 0 -6 6 0 -17 10 0
@@ -369,11 +370,11 @@ function ldraw_lib__506() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 0 6 0 0 0 0 6 0 -5 0 4-4cyli.dat
-  [1,16,0,0,0,6,0,0,0,0,6,0,-5,0, ldraw_lib__4_4cyli()],
+  [1,16,0,0,0,6,0,0,0,0,6,0,-5,0, ldraw_lib__4_4cyli(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -14 0 0 4 0 0 0 0 4 0 -5 0 4-4cyli.dat
-  [1,16,-14,0,0,4,0,0,0,0,4,0,-5,0, ldraw_lib__4_4cyli()],
+  [1,16,-14,0,0,4,0,0,0,0,4,0,-5,0, ldraw_lib__4_4cyli(realsolid)],
 // 4 16 -17 -10 0 5.584 -10 0 5.584 -10 -5 -17 -10 -5
   [4,16,-17,-10,0,5.584,-10,0,5.584,-10,-5,-17,-10,-5],
 // 4 16 -17 10 -5 5.584 10 -5 5.584 10 0 -17 10 0
@@ -866,5 +867,5 @@ function ldraw_lib__506() = [
   [2,24,-14,4,0,-15,3.801,0],
 ];
 module ldraw_lib__506(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__506(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__506(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__506(line=0.2);

@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/13788s01.scad>
 use <s/13788s02.scad>
-function ldraw_lib__13788() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__13788(realsolid=false) = [
 // 0 Minifig Hat with Wide Brim Down
 // 0 Name: 13788.dat
 // 0 Author: Stan Isachenko [angmarec]
@@ -21,9 +22,9 @@ function ldraw_lib__13788() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\13788s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__13788s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__13788s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\13788s02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__13788s02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__13788s02(realsolid)],
 // 
 // 0 // outside surface
 // 4 16 6.907 -1.747 14.898 11.792 -3.294 9.851 12.74 1.155 9.288 7.488 2.776 14.797
@@ -240,5 +241,5 @@ function ldraw_lib__13788() = [
   [5,24,-7.628,-3.36,-10.591,-9.307,-3.597,-8.97,-9.019,-3.253,-9.541,-6.846,-7.755,-8.62],
 ];
 module ldraw_lib__13788(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__13788(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__13788(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__13788(line=0.2);

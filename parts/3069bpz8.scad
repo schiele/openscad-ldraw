@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3069bs01.scad>
-function ldraw_lib__3069bpz8() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3069bpz8(realsolid=false) = [
 // 0 Tile  1 x  2 with Metallic Silver Claw Bracelet Pattern
 // 0 Name: 3069bpz8.dat
 // 0 Author: Damien Roux [Darats]
@@ -17,7 +18,7 @@ function ldraw_lib__3069bpz8() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3069bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3069bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3069bs01(realsolid)],
 // 4 16 -20 0 -10 -19.5 0 -5.814 -19.5 0 -4.161 -20 0 10
   [4,16,-20,0,-10,-19.5,0,-5.814,-19.5,0,-4.161,-20,0,10],
 // 4 16 -16.536 0 -2.773 -13.276 0 0.493 -13.292 0 0.887 -19.5 0 -4.161
@@ -502,5 +503,5 @@ function ldraw_lib__3069bpz8() = [
   [4,80,19.5,0,-4.161,16.536,0,-2.773,16.408,0,-4.381,19.5,0,-5.814],
 ];
 module ldraw_lib__3069bpz8(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3069bpz8(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3069bpz8(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3069bpz8(line=0.2);

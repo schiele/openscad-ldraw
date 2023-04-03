@@ -5,7 +5,8 @@ use <../p/rect2p.scad>
 use <../p/rect3.scad>
 use <../p/stud3.scad>
 use <../p/toothr.scad>
-function ldraw_lib__3743() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3743(realsolid=false) = [
 // 0 Technic Gear Rack  1 x  4
 // 0 Name: 3743.dat
 // 0 Author: James Jessiman
@@ -26,59 +27,59 @@ function ldraw_lib__3743() = [
 // 
 // 
 // 1 16 20 4 0 1 0 0 0 -1 0 0 0 1 stud3.dat
-  [1,16,20,4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud3()],
+  [1,16,20,4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud3(realsolid)],
 // 1 16 0 4 0 1 0 0 0 -1 0 0 0 1 stud3.dat
-  [1,16,0,4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud3()],
+  [1,16,0,4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud3(realsolid)],
 // 1 16 -20 4 0 1 0 0 0 -1 0 0 0 1 stud3.dat
-  [1,16,-20,4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud3()],
+  [1,16,-20,4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud3(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 8 0 36 0 0 0 -4 0 0 0 6 box5.dat
-  [1,16,0,8,0,36,0,0,0,-4,0,0,0,6, ldraw_lib__box5()],
+  [1,16,0,8,0,36,0,0,0,-4,0,0,0,6, ldraw_lib__box5(realsolid)],
 // 1 16 0 8 0 40 0 0 0 -9 0 0 0 10 box4o4a.dat
-  [1,16,0,8,0,40,0,0,0,-9,0,0,0,10, ldraw_lib__box4o4a()],
+  [1,16,0,8,0,40,0,0,0,-9,0,0,0,10, ldraw_lib__box4o4a(realsolid)],
 // 1 16 39.5 -1 0 0 0 0.5 0 1 0 10 0 0 rect3.dat
-  [1,16,39.5,-1,0,0,0,0.5,0,1,0,10,0,0, ldraw_lib__rect3()],
+  [1,16,39.5,-1,0,0,0,0.5,0,1,0,10,0,0, ldraw_lib__rect3(realsolid)],
 // 1 16 36 -1 0 1 0 0 0 -1 0 0 0 1 toothr.dat
-  [1,16,36,-1,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__toothr()],
+  [1,16,36,-1,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__toothr(realsolid)],
 // 1 16 32 -1 0 1 0 0 0 1 0 0 0 10 rect2p.dat
-  [1,16,32,-1,0,1,0,0,0,1,0,0,0,10, ldraw_lib__rect2p()],
+  [1,16,32,-1,0,1,0,0,0,1,0,0,0,10, ldraw_lib__rect2p(realsolid)],
 // 1 16 28 -1 0 1 0 0 0 -1 0 0 0 1 toothr.dat
-  [1,16,28,-1,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__toothr()],
+  [1,16,28,-1,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__toothr(realsolid)],
 // 1 16 24 -1 0 1 0 0 0 1 0 0 0 10 rect2p.dat
-  [1,16,24,-1,0,1,0,0,0,1,0,0,0,10, ldraw_lib__rect2p()],
+  [1,16,24,-1,0,1,0,0,0,1,0,0,0,10, ldraw_lib__rect2p(realsolid)],
 // 1 16 20 -1 0 1 0 0 0 -1 0 0 0 1 toothr.dat
-  [1,16,20,-1,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__toothr()],
+  [1,16,20,-1,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__toothr(realsolid)],
 // 1 16 16 -1 0 1 0 0 0 1 0 0 0 10 rect2p.dat
-  [1,16,16,-1,0,1,0,0,0,1,0,0,0,10, ldraw_lib__rect2p()],
+  [1,16,16,-1,0,1,0,0,0,1,0,0,0,10, ldraw_lib__rect2p(realsolid)],
 // 1 16 12 -1 0 1 0 0 0 -1 0 0 0 1 toothr.dat
-  [1,16,12,-1,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__toothr()],
+  [1,16,12,-1,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__toothr(realsolid)],
 // 1 16 8 -1 0 1 0 0 0 1 0 0 0 10 rect2p.dat
-  [1,16,8,-1,0,1,0,0,0,1,0,0,0,10, ldraw_lib__rect2p()],
+  [1,16,8,-1,0,1,0,0,0,1,0,0,0,10, ldraw_lib__rect2p(realsolid)],
 // 1 16 4 -1 0 1 0 0 0 -1 0 0 0 1 toothr.dat
-  [1,16,4,-1,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__toothr()],
+  [1,16,4,-1,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__toothr(realsolid)],
 // 1 16 0 -1 0 1 0 0 0 1 0 0 0 10 rect2p.dat
-  [1,16,0,-1,0,1,0,0,0,1,0,0,0,10, ldraw_lib__rect2p()],
+  [1,16,0,-1,0,1,0,0,0,1,0,0,0,10, ldraw_lib__rect2p(realsolid)],
 // 1 16 -4 -1 0 1 0 0 0 -1 0 0 0 1 toothr.dat
-  [1,16,-4,-1,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__toothr()],
+  [1,16,-4,-1,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__toothr(realsolid)],
 // 1 16 -8 -1 0 1 0 0 0 1 0 0 0 10 rect2p.dat
-  [1,16,-8,-1,0,1,0,0,0,1,0,0,0,10, ldraw_lib__rect2p()],
+  [1,16,-8,-1,0,1,0,0,0,1,0,0,0,10, ldraw_lib__rect2p(realsolid)],
 // 1 16 -12 -1 0 1 0 0 0 -1 0 0 0 1 toothr.dat
-  [1,16,-12,-1,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__toothr()],
+  [1,16,-12,-1,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__toothr(realsolid)],
 // 1 16 -16 -1 0 1 0 0 0 1 0 0 0 10 rect2p.dat
-  [1,16,-16,-1,0,1,0,0,0,1,0,0,0,10, ldraw_lib__rect2p()],
+  [1,16,-16,-1,0,1,0,0,0,1,0,0,0,10, ldraw_lib__rect2p(realsolid)],
 // 1 16 -20 -1 0 1 0 0 0 -1 0 0 0 1 toothr.dat
-  [1,16,-20,-1,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__toothr()],
+  [1,16,-20,-1,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__toothr(realsolid)],
 // 1 16 -24 -1 0 1 0 0 0 1 0 0 0 10 rect2p.dat
-  [1,16,-24,-1,0,1,0,0,0,1,0,0,0,10, ldraw_lib__rect2p()],
+  [1,16,-24,-1,0,1,0,0,0,1,0,0,0,10, ldraw_lib__rect2p(realsolid)],
 // 1 16 -28 -1 0 1 0 0 0 -1 0 0 0 1 toothr.dat
-  [1,16,-28,-1,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__toothr()],
+  [1,16,-28,-1,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__toothr(realsolid)],
 // 1 16 -32 -1 0 1 0 0 0 1 0 0 0 10 rect2p.dat
-  [1,16,-32,-1,0,1,0,0,0,1,0,0,0,10, ldraw_lib__rect2p()],
+  [1,16,-32,-1,0,1,0,0,0,1,0,0,0,10, ldraw_lib__rect2p(realsolid)],
 // 1 16 -36 -1 0 1 0 0 0 -1 0 0 0 1 toothr.dat
-  [1,16,-36,-1,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__toothr()],
+  [1,16,-36,-1,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__toothr(realsolid)],
 // 1 16 -39.5 -1 0 0 0 -0.5 0 1 0 10 0 0 rect3.dat
-  [1,16,-39.5,-1,0,0,0,-0.5,0,1,0,10,0,0, ldraw_lib__rect3()],
+  [1,16,-39.5,-1,0,0,0,-0.5,0,1,0,10,0,0, ldraw_lib__rect3(realsolid)],
 // 4 16 40 8 10 36 8 6 -36 8 6 -40 8 10
   [4,16,40,8,10,36,8,6,-36,8,6,-40,8,10],
 // 4 16 -40 8 10 -36 8 6 -36 8 -6 -40 8 -10
@@ -90,5 +91,5 @@ function ldraw_lib__3743() = [
 // 0
 ];
 module ldraw_lib__3743(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3743(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3743(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3743(line=0.2);

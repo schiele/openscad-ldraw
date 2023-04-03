@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/48/4-4aring.scad>
-function ldraw_lib__s__004659cs01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__004659cs01(realsolid=false) = [
 // 0 ~Pattern Clock Hands 10:06:32
 // 0 Name: s\004659cs01.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -15,7 +16,7 @@ function ldraw_lib__s__004659cs01() = [
 // 
 // 
 // 1 0 0 -.25 0 23 0 0 0 1 0 0 0 23 48\4-4aring.dat
-  [1,0,0,-.25,0,23,0,0,0,1,0,0,0,23, ldraw_lib__48__4_4aring()],
+  [1,0,0,-.25,0,23,0,0,0,1,0,0,0,23, ldraw_lib__48__4_4aring(realsolid)],
 // 4 0 2.21 -0.25 19.37 1.87 -0.25 19.41 1.75 -0.25 18.22 2.07 -0.25 18.18
   [4,0,2.21,-0.25,19.37,1.87,-0.25,19.41,1.75,-0.25,18.22,2.07,-0.25,18.18],
 // 4 0 4.22 -0.25 19.04 3.89 -0.25 19.11 3.65 -0.25 17.93 3.96 -0.25 17.87
@@ -1712,5 +1713,5 @@ function ldraw_lib__s__004659cs01() = [
   [3,15,11.2,-0.25,11.3,11.9,-0.25,10.5,12.6,-0.25,10.8],
 ];
 module ldraw_lib__s__004659cs01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__004659cs01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__004659cs01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__004659cs01(line=0.2);

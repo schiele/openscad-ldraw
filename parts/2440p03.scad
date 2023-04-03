@@ -4,7 +4,8 @@ use <../p/logo-shell-h.scad>
 use <../p/logo-shell-s.scad>
 use <../p/rect2p.scad>
 use <s/2440s01.scad>
-function ldraw_lib__2440p03() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2440p03(realsolid=false) = [
 // 0 Hinge  6 x  3 Radar with Red and Yellow Stripes and Red "Shell" Pattern
 // 0 Name: 2440p03.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -23,15 +24,15 @@ function ldraw_lib__2440p03() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2440s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2440s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2440s01(realsolid)],
 // 
 // 0 // Letters
 // 1 16 -38.325 -3 0 1.15 0 0 0 1 0 0 0 1.03 logo-shell-s.dat
-  [1,16,-38.325,-3,0,1.15,0,0,0,1,0,0,0,1.03, ldraw_lib__logo_shell_s()],
+  [1,16,-38.325,-3,0,1.15,0,0,0,1,0,0,0,1.03, ldraw_lib__logo_shell_s(realsolid)],
 // 1 16 -9.825 -3 0 1.15 0 0 0 1 0 0 0 1.03 logo-shell-h.dat
-  [1,16,-9.825,-3,0,1.15,0,0,0,1,0,0,0,1.03, ldraw_lib__logo_shell_h()],
+  [1,16,-9.825,-3,0,1.15,0,0,0,1,0,0,0,1.03, ldraw_lib__logo_shell_h(realsolid)],
 // 1 16 15.725 -3 -2.8 1.15 0 0 0 1 0 0 0 1.03 logo-shell-e.dat
-  [1,16,15.725,-3,-2.8,1.15,0,0,0,1,0,0,0,1.03, ldraw_lib__logo_shell_e()],
+  [1,16,15.725,-3,-2.8,1.15,0,0,0,1,0,0,0,1.03, ldraw_lib__logo_shell_e(realsolid)],
 // 4 4 30.85 -3 9.785 30.85 -3 -9.785 38.9 -3 -9.785 38.9 -3 9.785
   [4,4,30.85,-3,9.785,30.85,-3,-9.785,38.9,-3,-9.785,38.9,-3,9.785],
 // 4 4 42.95 -3 9.785 42.95 -3 -9.785 51 -3 -9.785 51 -3 9.785
@@ -84,9 +85,9 @@ function ldraw_lib__2440p03() = [
   [4,16,42.95,-3,9.785,38.9,-3,9.785,38.9,-3,-9.785,42.95,-3,-9.785],
 // 
 // 1 16 0 -3.75 -16.5 60 0 0 0 1 .75 0 0 .5 rect2p.dat
-  [1,16,0,-3.75,-16.5,60,0,0,0,1,.75,0,0,.5, ldraw_lib__rect2p()],
+  [1,16,0,-3.75,-16.5,60,0,0,0,1,.75,0,0,.5, ldraw_lib__rect2p(realsolid)],
 // 1 16 0 -3.75 16.5 -60 0 0 0 1 .75 0 0 -.5 rect2p.dat
-  [1,16,0,-3.75,16.5,-60,0,0,0,1,.75,0,0,-.5, ldraw_lib__rect2p()],
+  [1,16,0,-3.75,16.5,-60,0,0,0,1,.75,0,0,-.5, ldraw_lib__rect2p(realsolid)],
 // 4 14 -59 -6.808 -29 59 -6.808 -29 59 -5.75 -23.5 -59 -5.75 -23.5
   [4,14,-59,-6.808,-29,59,-6.808,-29,59,-5.75,-23.5,-59,-5.75,-23.5],
 // 4 4 -59 -5.75 -23.5 59 -5.75 -23.5 59 -4.692 -18 -59 -4.692 -18
@@ -121,5 +122,5 @@ function ldraw_lib__2440p03() = [
   [3,16,-59,-4.692,18,-59,-5.75,23.5,-60,-4.5,17],
 ];
 module ldraw_lib__2440p03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2440p03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2440p03(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2440p03(line=0.2);

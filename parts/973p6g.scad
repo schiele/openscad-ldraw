@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/1-4cyli.scad>
 use <s/973s01.scad>
-function ldraw_lib__973p6g() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__973p6g(realsolid=false) = [
 // 0 Minifig Torso with Female Jumpsuit with Zipper, White and Gold Markings and Classic Space Logo Pattern
 // 0 Name: 973p6g.dat
 // 0 Author: Christophe Mitillo [Christophe_Mitillo]
@@ -21,10 +22,10 @@ function ldraw_lib__973p6g() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01(realsolid)],
 // 0 // Neck mark
 // 1 0 0 -4 0 4.243 0 -4.243 0 -8 0 -4.243 0 -4.243 1-4cyli.dat
-  [1,0,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli()],
+  [1,0,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli(realsolid)],
 // 
 // 0 // Devant
 // 4 0 -0.25 22.3 -10 -0.15 22.1 -10 -0.75 22.1 -10 -0.75 22.3 -10
@@ -3775,5 +3776,5 @@ function ldraw_lib__973p6g() = [
   [4,16,7.709,18.985,10,7.469,18.618,10,7.735,18.48,10,7.962,19.146,10],
 ];
 module ldraw_lib__973p6g(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__973p6g(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__973p6g(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__973p6g(line=0.2);

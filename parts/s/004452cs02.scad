@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__004452cs02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__004452cs02(realsolid=false) = [
 // 0 ~Sticker  1.1 x  1.9 with Number "2" - Background
 // 0 Name: s\004452cs02.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -81,5 +82,5 @@ function ldraw_lib__s__004452cs02() = [
   [3,16,19,-.25,11,.36,-.25,9.52,2.15,-.25,9.35],
 ];
 module ldraw_lib__s__004452cs02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__004452cs02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__004452cs02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__004452cs02(line=0.2);

@@ -2,7 +2,8 @@ use <../lib.scad>
 use <3-4cyli.scad>
 use <3-4disc.scad>
 use <3-4edge.scad>
-function ldraw_lib__stud10() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__stud10(realsolid=false) = [
 // 0 Stud Truncated Laterally Curved 40D for Round  2 x  2 Parts
 // 0 Name: stud10.dat
 // 0 Author: Orion Pobursky [OrionP]
@@ -49,13 +50,13 @@ function ldraw_lib__stud10() = [
   [5,24,0,-4,6,0,0,6,1.9397,-4,5.6145,-2.2962,-4,5.5434],
 // 
 // 1 16 0 -4 0 0 0 -6 0 4 0 6 0 0 3-4cyli.dat
-  [1,16,0,-4,0,0,0,-6,0,4,0,6,0,0, ldraw_lib__3_4cyli()],
+  [1,16,0,-4,0,0,0,-6,0,4,0,6,0,0, ldraw_lib__3_4cyli(realsolid)],
 // 1 16 0 0 0 0 0 -6 0 1 0 6 0 0 3-4edge.dat
-  [1,16,0,0,0,0,0,-6,0,1,0,6,0,0, ldraw_lib__3_4edge()],
+  [1,16,0,0,0,0,0,-6,0,1,0,6,0,0, ldraw_lib__3_4edge(realsolid)],
 // 1 16 0 -4 0 0 0 -6 0 1 0 6 0 0 3-4edge.dat
-  [1,16,0,-4,0,0,0,-6,0,1,0,6,0,0, ldraw_lib__3_4edge()],
+  [1,16,0,-4,0,0,0,-6,0,1,0,6,0,0, ldraw_lib__3_4edge(realsolid)],
 // 1 16 0 -4 0 0 0 -6 0 1 0 6 0 0 3-4disc.dat
-  [1,16,0,-4,0,0,0,-6,0,1,0,6,0,0, ldraw_lib__3_4disc()],
+  [1,16,0,-4,0,0,0,-6,0,1,0,6,0,0, ldraw_lib__3_4disc(realsolid)],
 // 3 16 6 -4 0 5.6145 -4 1.9397 0 -4 0
   [3,16,6,-4,0,5.6145,-4,1.9397,0,-4,0],
 // 3 16 5.6145 -4 1.9397 4.142 -4 4.142 0 -4 0
@@ -74,5 +75,5 @@ function ldraw_lib__stud10() = [
   [4,16,1.9387,0,5.6145,0,0,6,0,-4,6,1.9397,-4,5.6145],
 ];
 module ldraw_lib__stud10(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__stud10(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__stud10(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__stud10(line=0.2);

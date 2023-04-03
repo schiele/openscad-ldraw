@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__87990s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__87990s01(realsolid=false) = [
 // 0 ~Minifig Hair with Ponytail and Swept Sideways Fringe - Fringe
 // 0 Name: s\87990s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -149,5 +150,5 @@ function ldraw_lib__s__87990s01() = [
   [5,24,4.289,-3.302,-13.334,-0.832,-3.465,-13.157,0.046,-1.765,-15.462,3.701,-4.311,-11.458],
 ];
 module ldraw_lib__s__87990s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__87990s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__87990s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__87990s01(line=0.2);

@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <4075.scad>
 use <4108.scad>
-function ldraw_lib__4108c01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4108c01(realsolid=false) = [
 // 0 ~Axle Red with Two Wheels 10 x  3 (Complete)
 // 0 Name: 4108c01.dat
 // 0 Author: Alex Taylor [anathema]
@@ -21,13 +22,13 @@ function ldraw_lib__4108c01() = [
 // 
 // 
 // 1 4 0 0 0 1 0 0 0 1 0 0 0 1 4108.dat
-  [1,4,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4108()],
+  [1,4,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4108(realsolid)],
 // 1 16 37.5 0 0 0 0 -1 0 1 0 1 0 0 4075.dat
-  [1,16,37.5,0,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__4075()],
+  [1,16,37.5,0,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__4075(realsolid)],
 // 1 16 -37.5 0 0 0 0 1 0 1 0 -1 0 0 4075.dat
-  [1,16,-37.5,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__4075()],
+  [1,16,-37.5,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__4075(realsolid)],
 // 
 ];
 module ldraw_lib__4108c01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4108c01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4108c01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4108c01(line=0.2);

@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <3326a.scad>
 use <575.scad>
-function ldraw_lib__575c01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__575c01(realsolid=false) = [
 // 0 Technic Universal Joint 4L with Slotted Ends with Milky White Centre Type 1 (Complete)
 // 0 Name: 575c01.dat
 // 0 Author: Guy Vivan [guyvivan]
@@ -20,12 +21,12 @@ function ldraw_lib__575c01() = [
 // 
 // 
 // 1 16 0 0 30 1 0 0 0 1 0 0 0 1 575.dat
-  [1,16,0,0,30,1,0,0,0,1,0,0,0,1, ldraw_lib__575()],
+  [1,16,0,0,30,1,0,0,0,1,0,0,0,1, ldraw_lib__575(realsolid)],
 // 1 16 0 0 -30 0 1 0 1 0 0 0 0 -1 575.dat
-  [1,16,0,0,-30,0,1,0,1,0,0,0,0,-1, ldraw_lib__575()],
+  [1,16,0,0,-30,0,1,0,1,0,0,0,0,-1, ldraw_lib__575(realsolid)],
 // 1 79 0 0 0 1 0 0 0 1 0 0 0 1 3326a.dat
-  [1,79,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3326a()],
+  [1,79,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3326a(realsolid)],
 ];
 module ldraw_lib__575c01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__575c01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__575c01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__575c01(line=0.2);

@@ -7,7 +7,8 @@ use <../p/axl2hol8.scad>
 use <../p/axl2hol9.scad>
 use <../p/clh4.scad>
 use <s/40902s01.scad>
-function ldraw_lib__40902() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__40902(realsolid=false) = [
 // 0 Hinge Brick  2 x  2 Locking with Reduced Axlehole and Dual Finger, 9 Teeth
 // 0 Name: 40902.dat
 // 0 Author: Donald Sutter [technog]
@@ -29,29 +30,29 @@ function ldraw_lib__40902() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\40902s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__40902s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__40902s01(realsolid)],
 // 
 // 1 16 0 0 0 0 0 1 0 16 0 -1 0 0 axl2hol8.dat
-  [1,16,0,0,0,0,0,1,0,16,0,-1,0,0, ldraw_lib__axl2hol8()],
+  [1,16,0,0,0,0,0,1,0,16,0,-1,0,0, ldraw_lib__axl2hol8(realsolid)],
 // 1 16 0 0 0 0 0 1 0 1 0 -1 0 0 axl2ho10.dat
-  [1,16,0,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__axl2ho10()],
+  [1,16,0,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__axl2ho10(realsolid)],
 // 1 16 0 0 0 0 0 1 0 1 0 -1 0 0 axl2hol2.dat
-  [1,16,0,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__axl2hol2()],
+  [1,16,0,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__axl2hol2(realsolid)],
 // 1 16 0 0 0 0 0 1 0 1 0 -1 0 0 axl2hol9.dat
-  [1,16,0,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__axl2hol9()],
+  [1,16,0,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__axl2hol9(realsolid)],
 // 1 16 0 16 0 0 0 1 0 -1 0 -1 0 0 axl2ho10.dat
-  [1,16,0,16,0,0,0,1,0,-1,0,-1,0,0, ldraw_lib__axl2ho10()],
+  [1,16,0,16,0,0,0,1,0,-1,0,-1,0,0, ldraw_lib__axl2ho10(realsolid)],
 // 1 16 0 16 0 0 0 1 0 1 0 -1 0 0 axl2hol3.dat
-  [1,16,0,16,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__axl2hol3()],
+  [1,16,0,16,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__axl2hol3(realsolid)],
 // 1 16 0 16 0 0 0 1 0 1 0 -1 0 0 axl2hol9.dat
-  [1,16,0,16,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__axl2hol9()],
+  [1,16,0,16,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__axl2hol9(realsolid)],
 // 1 16 0 0 0 6 0 0 0 1 0 0 0 6 4-4ering.dat
-  [1,16,0,0,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4ering()],
+  [1,16,0,0,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4ering(realsolid)],
 // 1 16 26 10 0 0 0 1 0 1 0 -1 0 0 clh4.dat
-  [1,16,26,10,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__clh4()],
+  [1,16,26,10,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__clh4(realsolid)],
 // 1 16 26 10 0 0 0 1 0 1 0 1 0 0 clh4.dat
-  [1,16,26,10,0,0,0,1,0,1,0,1,0,0, ldraw_lib__clh4()],
+  [1,16,26,10,0,0,0,1,0,1,0,1,0,0, ldraw_lib__clh4(realsolid)],
 ];
 module ldraw_lib__40902(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__40902(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__40902(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__40902(line=0.2);

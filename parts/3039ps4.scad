@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3039s01.scad>
-function ldraw_lib__3039ps4() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3039ps4(realsolid=false) = [
 // 0 Slope Brick 45  2 x  2 with SW Blue Segmented Fish Pattern
 // 0 Name: 3039ps4.dat
 // 0 Author: Daniel Goerner [TK-949]
@@ -15,7 +16,7 @@ function ldraw_lib__3039ps4() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3039s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3039s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3039s01(realsolid)],
 // 4 0 -5.25 18.586 -28.586 -5.1 18.459 -28.459 -5.09 18.296 -28.296 -5.17 18.133 -28.133
   [4,0,-5.25,18.586,-28.586,-5.1,18.459,-28.459,-5.09,18.296,-28.296,-5.17,18.133,-28.133],
 // 4 0 -5.43 18.635 -28.635 -5.25 18.586 -28.586 -5.17 18.133 -28.133 -5.61 18.642 -28.642
@@ -1702,5 +1703,5 @@ function ldraw_lib__3039ps4() = [
   [3,1,6.26,9.344,-19.344,6.46,9.811,-19.811,6.67,9.768,-19.768],
 ];
 module ldraw_lib__3039ps4(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3039ps4(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3039ps4(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3039ps4(line=0.2);

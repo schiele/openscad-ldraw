@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/64779s01.scad>
-function ldraw_lib__64779() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__64779(realsolid=false) = [
 // 0 ~Animal Cow Body Left
 // 0 Name: 64779.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -17,7 +18,7 @@ function ldraw_lib__64779() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\64779s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__64779s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__64779s01(realsolid)],
 // 3 16 13.073 -32 42.084 20 -32 31.243 20 -26.254 36.167
   [3,16,13.073,-32,42.084,20,-32,31.243,20,-26.254,36.167],
 // 3 16 20 -26.254 36.167 10.215 -25.507 47.335 13.073 -32 42.084
@@ -252,5 +253,5 @@ function ldraw_lib__64779() = [
   [5,24,20,-4.963,-43.466,12.239,1.31,-53.49,20,5.85,-37.116,12.386,-7.524,-56.031],
 ];
 module ldraw_lib__64779(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__64779(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__64779(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__64779(line=0.2);

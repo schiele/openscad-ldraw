@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <8/stud19.scad>
-function ldraw_lib__stu219() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__stu219(realsolid=false) = [
 // 0 ~Moved to 8\stud19
 // 0 Name: stu219.dat
 // 0 Author: [PTadmin]
@@ -17,8 +18,8 @@ function ldraw_lib__stu219() = [
 // 0 // Stud19 (Fast-Draw)
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 8\stud19.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__8__stud19()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__8__stud19(realsolid)],
 ];
 module ldraw_lib__stu219(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__stu219(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__stu219(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__stu219(line=0.2);

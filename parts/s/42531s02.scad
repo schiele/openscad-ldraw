@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__42531s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__42531s02(realsolid=false) = [
 // 0 ~Technic Panel  9 x  2 x  3 Mudguard Arched #30 Half Front
 // 0 Name: s\42531s02.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -145,5 +146,5 @@ function ldraw_lib__s__42531s02() = [
   [5,24,9,-32.9184,0,-13.6361,-46.3639,0,-12.1655,-44.9572,-14.6336,-12.1655,-44.9572,14.6336],
 ];
 module ldraw_lib__s__42531s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__42531s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__42531s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__42531s02(line=0.2);

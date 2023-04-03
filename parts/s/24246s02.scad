@@ -5,7 +5,8 @@ use <../../p/2-4ring2.scad>
 use <../../p/2-4ring9.scad>
 use <../../p/box3u4a.scad>
 use <../../p/box4-4a.scad>
-function ldraw_lib__s__24246s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__24246s02(realsolid=false) = [
 // 0 ~Tile  1 x  1 with Rounded End without Complete Top Face
 // 0 Name: s\24246s02.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -26,21 +27,21 @@ function ldraw_lib__s__24246s02() = [
 // 4 16 9 8 9 9 8 0 6 8 0 6 8 6
   [4,16,9,8,9,9,8,0,6,8,0,6,8,6],
 // 1 16 0 8 0 3 0 0 0 -1 0 0 0 -3 2-4ring2.dat
-  [1,16,0,8,0,3,0,0,0,-1,0,0,0,-3, ldraw_lib__2_4ring2()],
+  [1,16,0,8,0,3,0,0,0,-1,0,0,0,-3, ldraw_lib__2_4ring2(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 8 3 6 0 0 0 -4 0 0 0 3 box4-4a.dat
-  [1,16,0,8,3,6,0,0,0,-4,0,0,0,3, ldraw_lib__box4_4a()],
+  [1,16,0,8,3,6,0,0,0,-4,0,0,0,3, ldraw_lib__box4_4a(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 4 0 6 0 0 0 4 0 0 0 -6 2-4cylo.dat
-  [1,16,0,4,0,6,0,0,0,4,0,0,0,-6, ldraw_lib__2_4cylo()],
+  [1,16,0,4,0,6,0,0,0,4,0,0,0,-6, ldraw_lib__2_4cylo(realsolid)],
 // 1 16 0 4 0 6 0 0 0 -4 0 0 0 -6 2-4chrd.dat
-  [1,16,0,4,0,6,0,0,0,-4,0,0,0,-6, ldraw_lib__2_4chrd()],
+  [1,16,0,4,0,6,0,0,0,-4,0,0,0,-6, ldraw_lib__2_4chrd(realsolid)],
 // 1 16 0 7.5 0 0 0 9 0.5 0 0 0 9 0 box3u4a.dat
-  [1,16,0,7.5,0,0,0,9,0.5,0,0,0,9,0, ldraw_lib__box3u4a()],
+  [1,16,0,7.5,0,0,0,9,0.5,0,0,0,9,0, ldraw_lib__box3u4a(realsolid)],
 // 1 16 0 7 0 9 0 0 0 1 0 0 0 -9 2-4cylo.dat
-  [1,16,0,7,0,9,0,0,0,1,0,0,0,-9, ldraw_lib__2_4cylo()],
+  [1,16,0,7,0,9,0,0,0,1,0,0,0,-9, ldraw_lib__2_4cylo(realsolid)],
 // 4 16 -10 7 0 -10 7 10 -9 7 9 -9 7 0
   [4,16,-10,7,0,-10,7,10,-9,7,9,-9,7,0],
 // 4 16 -10 7 10 10 7 10 9 7 9 -9 7 9
@@ -48,12 +49,12 @@ function ldraw_lib__s__24246s02() = [
 // 4 16 10 7 10 10 7 0 9 7 0 9 7 9
   [4,16,10,7,10,10,7,0,9,7,0,9,7,9],
 // 1 16 0 7 0 1 0 0 0 -1 0 0 0 -1 2-4ring9.dat
-  [1,16,0,7,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__2_4ring9()],
+  [1,16,0,7,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__2_4ring9(realsolid)],
 // 1 16 0 3.5 0 0 0 -10 -3.5 0 0 0 10 0 box3u4a.dat
-  [1,16,0,3.5,0,0,0,-10,-3.5,0,0,0,10,0, ldraw_lib__box3u4a()],
+  [1,16,0,3.5,0,0,0,-10,-3.5,0,0,0,10,0, ldraw_lib__box3u4a(realsolid)],
 // 1 16 0 0 0 10 0 0 0 7 0 0 0 -10 2-4cylo.dat
-  [1,16,0,0,0,10,0,0,0,7,0,0,0,-10, ldraw_lib__2_4cylo()],
+  [1,16,0,0,0,10,0,0,0,7,0,0,0,-10, ldraw_lib__2_4cylo(realsolid)],
 ];
 module ldraw_lib__s__24246s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__24246s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__24246s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__24246s02(line=0.2);

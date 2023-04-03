@@ -6,7 +6,8 @@ use <../../p/4-4disc.scad>
 use <../../p/4-4edge.scad>
 use <../../p/stud2.scad>
 use <../../p/t04o6250.scad>
-function ldraw_lib__s__92240s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__92240s01(realsolid=false) = [
 // 0 ~Figure Friends Male Head without Face
 // 0 Name: s\92240s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -279,37 +280,37 @@ function ldraw_lib__s__92240s01() = [
 // 5 24 -0.383 16.876 -16 0 17.8 -16.2 -0.707 17.093 -16 0 16.8 -16
   [5,24,-0.383,16.876,-16,0,17.8,-16.2,-0.707,17.093,-16,0,16.8,-16],
 // 1 16 0 4 -3 8 0 0 0 -6.4 0 0 0 -8 t04o6250.dat
-  [1,16,0,4,-3,8,0,0,0,-6.4,0,0,0,-8, ldraw_lib__t04o6250()],
+  [1,16,0,4,-3,8,0,0,0,-6.4,0,0,0,-8, ldraw_lib__t04o6250(realsolid)],
 // 1 16 0 4 -3 0 0 8 0 -6.4 0 8 0 0 t04o6250.dat
-  [1,16,0,4,-3,0,0,8,0,-6.4,0,8,0,0, ldraw_lib__t04o6250()],
+  [1,16,0,4,-3,0,0,8,0,-6.4,0,8,0,0, ldraw_lib__t04o6250(realsolid)],
 // 1 16 0 4 -3 -8 0 0 0 -6.4 0 0 0 -8 t04o6250.dat
-  [1,16,0,4,-3,-8,0,0,0,-6.4,0,0,0,-8, ldraw_lib__t04o6250()],
+  [1,16,0,4,-3,-8,0,0,0,-6.4,0,0,0,-8, ldraw_lib__t04o6250(realsolid)],
 // 1 16 0 4 -3 0 0 -8 0 -6.4 0 8 0 0 t04o6250.dat
-  [1,16,0,4,-3,0,0,-8,0,-6.4,0,8,0,0, ldraw_lib__t04o6250()],
+  [1,16,0,4,-3,0,0,-8,0,-6.4,0,8,0,0, ldraw_lib__t04o6250(realsolid)],
 // 1 16 0 26 0 0 0 4 -1.7 -1 -0.3 4 0 0 2-4edge.dat
-  [1,16,0,26,0,0,0,4,-1.7,-1,-0.3,4,0,0, ldraw_lib__2_4edge()],
+  [1,16,0,26,0,0,0,4,-1.7,-1,-0.3,4,0,0, ldraw_lib__2_4edge(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 26 0 0 0 4 -1.7 -1.7 -0.3 4 0 0 2-4cyls.dat
-  [1,16,0,26,0,0,0,4,-1.7,-1.7,-0.3,4,0,0, ldraw_lib__2_4cyls()],
+  [1,16,0,26,0,0,0,4,-1.7,-1.7,-0.3,4,0,0, ldraw_lib__2_4cyls(realsolid)],
 // 1 16 0 26 0 0 0 -4 -1.7 -1 -0.3 4 0 0 2-4edge.dat
-  [1,16,0,26,0,0,0,-4,-1.7,-1,-0.3,4,0,0, ldraw_lib__2_4edge()],
+  [1,16,0,26,0,0,0,-4,-1.7,-1,-0.3,4,0,0, ldraw_lib__2_4edge(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 26 0 0 0 -4 -1.7 -1.7 -0.3 4 0 0 2-4cyls.dat
-  [1,16,0,26,0,0,0,-4,-1.7,-1.7,-0.3,4,0,0, ldraw_lib__2_4cyls()],
+  [1,16,0,26,0,0,0,-4,-1.7,-1.7,-0.3,4,0,0, ldraw_lib__2_4cyls(realsolid)],
 // 1 16 0 0 -3 0 0 -8 0 1 0 8 0 0 4-4disc.dat
-  [1,16,0,0,-3,0,0,-8,0,1,0,8,0,0, ldraw_lib__4_4disc()],
+  [1,16,0,0,-3,0,0,-8,0,1,0,8,0,0, ldraw_lib__4_4disc(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 24.3 0 0 0 4 0 -8 0 4 0 0 4-4cyli.dat
-  [1,16,0,24.3,0,0,0,4,0,-8,0,4,0,0, ldraw_lib__4_4cyli()],
+  [1,16,0,24.3,0,0,0,4,0,-8,0,4,0,0, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 16.3 0 0 0 4 0 -8 0 4 0 0 4-4edge.dat
-  [1,16,0,16.3,0,0,0,4,0,-8,0,4,0,0, ldraw_lib__4_4edge()],
+  [1,16,0,16.3,0,0,0,4,0,-8,0,4,0,0, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 16.3 0 0 0 4 0 -1 0 4 0 0 4-4disc.dat
-  [1,16,0,16.3,0,0,0,4,0,-1,0,4,0,0, ldraw_lib__4_4disc()],
+  [1,16,0,16.3,0,0,0,4,0,-1,0,4,0,0, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 0 -3 0 0 1 0 1 0 -1 0 0 stud2.dat
-  [1,16,0,0,-3,0,0,1,0,1,0,-1,0,0, ldraw_lib__stud2()],
+  [1,16,0,0,-3,0,0,1,0,1,0,-1,0,0, ldraw_lib__stud2(realsolid)],
 // 
 // 3 16 4.33 26.93 -7.14 5.15 26.29 -4.85 6.98 25.31 -5.94
   [3,16,4.33,26.93,-7.14,5.15,26.29,-4.85,6.98,25.31,-5.94],
@@ -929,5 +930,5 @@ function ldraw_lib__s__92240s01() = [
   [5,24,-1.79,22.97,5.94,0,24.3,4,-1.531,24.315,3.696,0,22.93,6.23],
 ];
 module ldraw_lib__s__92240s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__92240s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__92240s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__92240s01(line=0.2);

@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <u9185.scad>
 use <u9186.scad>
-function ldraw_lib__2688() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2688(realsolid=false) = [
 // 0 ~Axle Steel  5 x  67.5 LDU with Two Wheels  1.6 x 10
 // 0 Name: 2688.dat
 // 0 Author: Bernd Broich [bbroich]
@@ -26,12 +27,12 @@ function ldraw_lib__2688() = [
 // 
 // 
 // 1 16 0 0 -28.25 1 0 0 0 1 0 0 0 1 u9186.dat
-  [1,16,0,0,-28.25,1,0,0,0,1,0,0,0,1, ldraw_lib__u9186()],
+  [1,16,0,0,-28.25,1,0,0,0,1,0,0,0,1, ldraw_lib__u9186(realsolid)],
 // 1 16 0 0 28.25 1 0 0 0 1 0 0 0 1 u9186.dat
-  [1,16,0,0,28.25,1,0,0,0,1,0,0,0,1, ldraw_lib__u9186()],
+  [1,16,0,0,28.25,1,0,0,0,1,0,0,0,1, ldraw_lib__u9186(realsolid)],
 // 1 494 0 0 0 0 0 1 0 1 0 -1 0 0 u9185.dat
-  [1,494,0,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__u9185()],
+  [1,494,0,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__u9185(realsolid)],
 ];
 module ldraw_lib__2688(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2688(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2688(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2688(line=0.2);

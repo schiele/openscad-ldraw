@@ -3,7 +3,8 @@ use <1-8ndis.scad>
 use <2-4ring9.scad>
 use <3-16ndis.scad>
 use <npeghol10.scad>
-function ldraw_lib__npeghol9() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__npeghol9(realsolid=false) = [
 // 0 Technic Peg Hole Negative for Alternate Beam Type 2 with Extensions
 // 0 Name: npeghol9.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -21,19 +22,19 @@ function ldraw_lib__npeghol9() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 npeghol10.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__npeghol10()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__npeghol10(realsolid)],
 // 1 16 0 -10 10 1 0 0 0 1 0 0 0 -1 2-4ring9.dat
-  [1,16,0,-10,10,1,0,0,0,1,0,0,0,-1, ldraw_lib__2_4ring9()],
+  [1,16,0,-10,10,1,0,0,0,1,0,0,0,-1, ldraw_lib__2_4ring9(realsolid)],
 // 1 16 0 -10 10 10 0 0 0 1 0 0 0 -10 1-8ndis.dat
-  [1,16,0,-10,10,10,0,0,0,1,0,0,0,-10, ldraw_lib__1_8ndis()],
+  [1,16,0,-10,10,10,0,0,0,1,0,0,0,-10, ldraw_lib__1_8ndis(realsolid)],
 // 1 16 0 -10 10 -10 0 0 0 1 0 0 0 -10 1-8ndis.dat
-  [1,16,0,-10,10,-10,0,0,0,1,0,0,0,-10, ldraw_lib__1_8ndis()],
+  [1,16,0,-10,10,-10,0,0,0,1,0,0,0,-10, ldraw_lib__1_8ndis(realsolid)],
 // 1 16 0 10 10 1 0 0 0 -1 0 0 0 -1 2-4ring9.dat
-  [1,16,0,10,10,1,0,0,0,-1,0,0,0,-1, ldraw_lib__2_4ring9()],
+  [1,16,0,10,10,1,0,0,0,-1,0,0,0,-1, ldraw_lib__2_4ring9(realsolid)],
 // 1 16 0 10 10 -10 0 0 0 -1 0 0 0 -10 1-8ndis.dat
-  [1,16,0,10,10,-10,0,0,0,-1,0,0,0,-10, ldraw_lib__1_8ndis()],
+  [1,16,0,10,10,-10,0,0,0,-1,0,0,0,-10, ldraw_lib__1_8ndis(realsolid)],
 // 1 16 0 10 10 10 0 0 0 -1 0 0 0 -10 3-16ndis.dat
-  [1,16,0,10,10,10,0,0,0,-1,0,0,0,-10, ldraw_lib__3_16ndis()],
+  [1,16,0,10,10,10,0,0,0,-1,0,0,0,-10, ldraw_lib__3_16ndis(realsolid)],
 // 3 16 -7.0728 10 .5962 -10 10 0 -7.0711 10 2.9289
   [3,16,-7.0728,10,.5962,-10,10,0,-7.0711,10,2.9289],
 // 4 16 -10 10 0 -7.0728 10 .5962 -7.071 10 -10 -10 10 -10
@@ -54,5 +55,5 @@ function ldraw_lib__npeghol9() = [
   [4,16,-7.0711,-10,.5897,-10,-10,0,-10,-10,-10,-7.0711,-10,-10],
 ];
 module ldraw_lib__npeghol9(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__npeghol9(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__npeghol9(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__npeghol9(line=0.2);

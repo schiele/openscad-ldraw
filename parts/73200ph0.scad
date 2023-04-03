@@ -2,7 +2,8 @@ use <../lib.scad>
 use <3815bph0.scad>
 use <3816bph0.scad>
 use <3817bph0.scad>
-function ldraw_lib__73200ph0() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__73200ph0(realsolid=false) = [
 // 0 Minifig Hips and Legs with Dark Blue Coattails and Dark Tan Vest Tails Pattern
 // 0 Name: 73200ph0.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -20,12 +21,12 @@ function ldraw_lib__73200ph0() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 3815bph0.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3815bph0()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3815bph0(realsolid)],
 // 1 16 0 12 0 1 0 0 0 1 0 0 0 1 3816bph0.dat
-  [1,16,0,12,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3816bph0()],
+  [1,16,0,12,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3816bph0(realsolid)],
 // 1 16 0 12 0 1 0 0 0 1 0 0 0 1 3817bph0.dat
-  [1,16,0,12,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3817bph0()],
+  [1,16,0,12,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3817bph0(realsolid)],
 ];
 module ldraw_lib__73200ph0(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__73200ph0(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__73200ph0(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__73200ph0(line=0.2);

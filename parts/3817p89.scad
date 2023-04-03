@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3817s01.scad>
-function ldraw_lib__3817p89() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3817p89(realsolid=false) = [
 // 0 ~Minifig Leg Left with White Apron Pattern (Obsolete)
 // 0 Name: 3817p89.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -17,7 +18,7 @@ function ldraw_lib__3817p89() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3817s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3817s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3817s01(realsolid)],
 // 4 16 1.5 20 -6 1.5 20 -11 19.18 20 -11 19.18 20 -6
   [4,16,1.5,20,-6,1.5,20,-11,19.18,20,-11,19.18,20,-6],
 // 4 0 14.6 -6.3 -6.3 14.4 -3.42 -8.28 15.1 -3.42 -8.28 15.3 -6.3 -6.3
@@ -98,5 +99,5 @@ function ldraw_lib__3817p89() = [
   [3,15,2,7.7,-6,14.5,12.2,-6,14.85,11.9,-6],
 ];
 module ldraw_lib__3817p89(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3817p89(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3817p89(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3817p89(line=0.2);

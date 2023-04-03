@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/5-8cyli.scad>
 use <../p/5-8edge.scad>
-function ldraw_lib__30530() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__30530(realsolid=false) = [
 // 0 Minifig Martian Legs
 // 0 Name: 30530.dat
 // 0 Author: Mark Chittenden [mdublade]
@@ -21,13 +22,13 @@ function ldraw_lib__30530() = [
 // 
 // 
 // 1 16 4 -40 0 0 -1 0 -1.5307 0 3.6955 -3.6955 0 -1.5307 5-8edge.dat
-  [1,16,4,-40,0,0,-1,0,-1.5307,0,3.6955,-3.6955,0,-1.5307, ldraw_lib__5_8edge()],
+  [1,16,4,-40,0,0,-1,0,-1.5307,0,3.6955,-3.6955,0,-1.5307, ldraw_lib__5_8edge(realsolid)],
 // 1 16 -4 -40 0 0 -1 0 -1.5307 0 3.6955 -3.6955 0 -1.5307 5-8edge.dat
-  [1,16,-4,-40,0,0,-1,0,-1.5307,0,3.6955,-3.6955,0,-1.5307, ldraw_lib__5_8edge()],
+  [1,16,-4,-40,0,0,-1,0,-1.5307,0,3.6955,-3.6955,0,-1.5307, ldraw_lib__5_8edge(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 4 -40 0 0 -8 0 -1.5307 0 3.6955 -3.6955 0 -1.5307 5-8cyli.dat
-  [1,16,4,-40,0,0,-8,0,-1.5307,0,3.6955,-3.6955,0,-1.5307, ldraw_lib__5_8cyli()],
+  [1,16,4,-40,0,0,-8,0,-1.5307,0,3.6955,-3.6955,0,-1.5307, ldraw_lib__5_8cyli(realsolid)],
 // 3 16 4.01 -38.88 -7.38 4.01 -36.75 -6.9 4 -38.47 -3.7
   [3,16,4.01,-38.88,-7.38,4.01,-36.75,-6.9,4,-38.47,-3.7],
 // 3 16 -4.01 -36.75 -6.9 -4.01 -38.88 -7.38 -4 -38.47 -3.7
@@ -2507,5 +2508,5 @@ function ldraw_lib__30530() = [
   [5,24,-1.68,-9.19,8.8,-1.28,0,8.3,-2.38,0,9.4,-0.88,0,6.8],
 ];
 module ldraw_lib__30530(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__30530(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__30530(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__30530(line=0.2);

@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__41880s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__41880s01(realsolid=false) = [
 // 0 ~Minifig Head Yoda with Curved Ears - Half
 // 0 Name: s\41880s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -9335,5 +9336,5 @@ function ldraw_lib__s__41880s01() = [
   [5,24,0,-28.4,-2.1,0.7,-27.6,-3.9,2.3,-28,-3,0,-27.644,-3.769],
 ];
 module ldraw_lib__s__41880s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__41880s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__41880s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__41880s01(line=0.2);

@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__3003px2s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__3003px2s01(realsolid=false) = [
 // 0 ~Pattern with Silver Stripes and Black "POTATO BIN"
 // 0 Name: s\3003px2s01.dat
 // 0 Author: Max Martin Richter [MMR1988]
@@ -1423,5 +1424,5 @@ function ldraw_lib__s__3003px2s01() = [
   [3,16,-7.67186,21.65048,0,-7.7911,21.8289,0,-4.75,22.03,0],
 ];
 module ldraw_lib__s__3003px2s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__3003px2s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__3003px2s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__3003px2s01(line=0.2);

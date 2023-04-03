@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3069bs01.scad>
-function ldraw_lib__3069bpz6() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3069bpz6(realsolid=false) = [
 // 0 Tile  1 x  2 with Dark Red Lines Pattern
 // 0 Name: 3069bpz6.dat
 // 0 Author: Damien Roux [Darats]
@@ -17,7 +18,7 @@ function ldraw_lib__3069bpz6() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3069bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3069bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3069bs01(realsolid)],
 // 4 320 -19 0 6.67 -14.86 0 -0.38 -18.38 0 9 -19 0 9
   [4,320,-19,0,6.67,-14.86,0,-0.38,-18.38,0,9,-19,0,9],
 // 4 320 -13.12 0 -9 -14.33 0 -1.78 -14.86 0 -0.38 -19 0 6.67
@@ -122,5 +123,5 @@ function ldraw_lib__3069bpz6() = [
   [3,16,20,0,10,18.38,0,9,19,0,9],
 ];
 module ldraw_lib__3069bpz6(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3069bpz6(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3069bpz6(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3069bpz6(line=0.2);

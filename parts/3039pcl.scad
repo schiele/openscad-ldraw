@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3039s01.scad>
-function ldraw_lib__3039pcl() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3039pcl(realsolid=false) = [
 // 0 Slope Brick 45  2 x  2 with Control Panel with Medium Azure and Dark Blue Buttons, Crosshairs, Bar Chart and Slot Pattern
 // 0 Name: 3039pcl.dat
 // 0 Author: Fredrik Hareide [fhareide]
@@ -17,7 +18,7 @@ function ldraw_lib__3039pcl() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3039s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3039s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3039s01(realsolid)],
 // 
 // 0 // Black
 // 4 0 18.7134 0.7216 -10.7216 17.9067 1.1886 -11.1886 18.4128 1.354 -11.354 19.3427 1.1665 -11.1665
@@ -1222,5 +1223,5 @@ function ldraw_lib__3039pcl() = [
   [4,322,17.1873,13.5996,-23.5996,17.1873,12.0326,-22.0326,13.4253,12.0326,-22.0326,13.4253,13.5996,-23.5996],
 ];
 module ldraw_lib__3039pcl(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3039pcl(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3039pcl(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3039pcl(line=0.2);

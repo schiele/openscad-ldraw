@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3623s01.scad>
-function ldraw_lib__3623p05() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3623p05(realsolid=false) = [
 // 0 Plate  1 x  3 with High and Pointed Eyebrows Pattern
 // 0 Name: 3623p05.dat
 // 0 Author: Johann Eisner [technicbasics]
@@ -15,7 +16,7 @@ function ldraw_lib__3623p05() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3623s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3623s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3623s01(realsolid)],
 // 4 0 -19.72907 3.04379 -10 -20.16038 3.63784 -10 -19.84 3.73 -10 -18.81006 3.07133 -10
   [4,0,-19.72907,3.04379,-10,-20.16038,3.63784,-10,-19.84,3.73,-10,-18.81006,3.07133,-10],
 // 4 0 -19.22803 2.50616 -10 -19.72907 3.04379 -10 -18.81006 3.07133 -10 -17.70842 2.55177 -10
@@ -154,5 +155,5 @@ function ldraw_lib__3623p05() = [
   [4,16,0,2.78,-10,9.98,0.32,-10,0,0,-10,-9.98,0.32,-10],
 ];
 module ldraw_lib__3623p05(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3623p05(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3623p05(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3623p05(line=0.2);

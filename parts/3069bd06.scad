@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <3069b.scad>
 use <6258203d.scad>
-function ldraw_lib__3069bd06() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3069bd06(realsolid=false) = [
 // 0 Tile  1 x  2 with Groove and Simulated Black Car in Rear-Mirror Sticker
 // 0 Name: 3069bd06.dat
 // 0 Author: Ulrich Röder [UR]
@@ -18,10 +19,10 @@ function ldraw_lib__3069bd06() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 3069b.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3069b()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3069b(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 6258203d.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__6258203d()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__6258203d(realsolid)],
 ];
 module ldraw_lib__3069bd06(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3069bd06(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3069bd06(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3069bd06(line=0.2);

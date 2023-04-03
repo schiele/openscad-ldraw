@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <4166a.scad>
-function ldraw_lib__767() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__767(realsolid=false) = [
 // 0 ~Moved to 4166a
 // 0 Name: 767.dat
 // 0 Author: [PTadmin]
@@ -16,8 +17,8 @@ function ldraw_lib__767() = [
 // 
 // 0 // Train Track Sleeper Plate 2 x 8 without Cable Grooves
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 4166a.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4166a()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4166a(realsolid)],
 ];
 module ldraw_lib__767(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__767(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__767(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__767(line=0.2);

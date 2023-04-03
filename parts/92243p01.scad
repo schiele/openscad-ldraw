@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/92241s01.scad>
-function ldraw_lib__92243p01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__92243p01(realsolid=false) = [
 // 0 Figure Friends Woman Torso with Dark Blue Blouse Top with Open Collar, Necklace with Red Pendant and Belt Pattern
 // 0 Name: 92243p01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -17,7 +18,7 @@ function ldraw_lib__92243p01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\92241s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__92241s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__92241s01(realsolid)],
 // 0 // Right side
 // 4 272 8.68 18 3.79 8.62 13.25 4.14 9.57 13.24 2.98 9.61 18 2.62
   [4,272,8.68,18,3.79,8.62,13.25,4.14,9.57,13.24,2.98,9.61,18,2.62],
@@ -2458,5 +2459,5 @@ function ldraw_lib__92243p01() = [
   [3,272,-8.7,13.2,-5.89,-9.21,9.34,-5.15,-9.13,13.09,-5.22],
 ];
 module ldraw_lib__92243p01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__92243p01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__92243p01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__92243p01(line=0.2);

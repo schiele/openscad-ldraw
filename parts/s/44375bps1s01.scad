@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__44375bps1s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__44375bps1s01(realsolid=false) = [
 // 0 ~Dish  6 x  6 Inverted with 6 Spoke Grey Radial Pattern 1/6
 // 0 Name: s\44375bps1s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -207,5 +208,5 @@ function ldraw_lib__s__44375bps1s01() = [
   [5,24,6.525,6,49.57,0,6,50,0,3,40,0,11,60],
 ];
 module ldraw_lib__s__44375bps1s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__44375bps1s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__44375bps1s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__44375bps1s01(line=0.2);

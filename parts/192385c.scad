@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__192385c() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__192385c(realsolid=false) = [
 // 0 Sticker  2.4 x  3.0 with "LEGOLAND HOTEL" Right Down
 // 0 Name: 192385c.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -17,7 +18,7 @@ function ldraw_lib__192385c() = [
 // 
 // 
 // 1 16 0 -0.25 0 30 0 0 0 0.25 0 0 0 24 box5-12.dat
-  [1,16,0,-0.25,0,30,0,0,0,0.25,0,0,0,24, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,30,0,0,0,0.25,0,0,0,24, ldraw_lib__box5_12(realsolid)],
 // 3 1 30 -0.25 24 -10 -0.25 24 30 -0.25 -1
   [3,1,30,-0.25,24,-10,-0.25,24,30,-0.25,-1],
 // 3 1 -30 -0.25 1 -30 -0.25 -24 10 -0.25 -24
@@ -1222,5 +1223,5 @@ function ldraw_lib__192385c() = [
   [3,14,-10,-0.25,24,-18.56,-0.25,22.57,-15.28,-0.25,20.52],
 ];
 module ldraw_lib__192385c(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__192385c(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__192385c(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__192385c(line=0.2);

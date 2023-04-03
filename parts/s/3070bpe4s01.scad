@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__3070bpe4s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__3070bpe4s01(realsolid=false) = [
 // 0 ~Blue and White Falcon Background
 // 0 Name: s\3070bpe4s01.dat
 // 0 Author: Vincent Messenet [Cheenzo]
@@ -326,5 +327,5 @@ function ldraw_lib__s__3070bpe4s01() = [
   [3,15,-.81,0,-5.41,-1.38,0,-5.89,-.81,0,-6.76],
 ];
 module ldraw_lib__s__3070bpe4s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__3070bpe4s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__3070bpe4s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__3070bpe4s01(line=0.2);

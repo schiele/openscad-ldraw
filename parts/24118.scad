@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/24118s01.scad>
-function ldraw_lib__24118() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__24118(realsolid=false) = [
 // 0 Technic Panel 15 x  2 x  5 Mudguard Arched
 // 0 Name: 24118.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -17,9 +18,9 @@ function ldraw_lib__24118() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\24118s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__24118s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__24118s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 -1 s\24118s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__24118s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__24118s01(realsolid)],
 // 0 // Front face half
 // 5 24 3.1206 -65.0963 -122.502 3.5206 -65.0963 -91.7965 -0.1737 -70.761 -103.827 6.3655 -56.9713 -106.113
   [5,24,3.1206,-65.0963,-122.502,3.5206,-65.0963,-91.7965,-0.1737,-70.761,-103.827,6.3655,-56.9713,-106.113],
@@ -298,5 +299,5 @@ function ldraw_lib__24118() = [
   [3,16,9,-62.6665,-54.4356,9,-68.6406,-36.812,-1.3527,-72.7885,-73.712],
 ];
 module ldraw_lib__24118(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__24118(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__24118(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__24118(line=0.2);

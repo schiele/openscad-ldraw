@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/4-4disc.scad>
-function ldraw_lib__s__973p04a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__973p04a(realsolid=false) = [
 // 0 ~Minifig Torso with Six Button Suit and Airplane Pattern - Gold
 // 0 Name: s\973p04a.dat
 // 0 Author: Chris Dee [cwdee]
@@ -18,17 +19,17 @@ function ldraw_lib__s__973p04a() = [
 // 
 // 0 // Buttons
 // 1 16 5.75 17.5 -10 0.75 0 0 0 0 0.75 0 1 0 4-4disc.dat
-  [1,16,5.75,17.5,-10,0.75,0,0,0,0,0.75,0,1,0, ldraw_lib__4_4disc()],
+  [1,16,5.75,17.5,-10,0.75,0,0,0,0,0.75,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 16 -5.75 17.5 -10 0.75 0 0 0 0 0.75 0 1 0 4-4disc.dat
-  [1,16,-5.75,17.5,-10,0.75,0,0,0,0,0.75,0,1,0, ldraw_lib__4_4disc()],
+  [1,16,-5.75,17.5,-10,0.75,0,0,0,0,0.75,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 16 3 23 -10 0.75 0 0 0 0 0.75 0 1 0 4-4disc.dat
-  [1,16,3,23,-10,0.75,0,0,0,0,0.75,0,1,0, ldraw_lib__4_4disc()],
+  [1,16,3,23,-10,0.75,0,0,0,0,0.75,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 16 -3 23 -10 0.75 0 0 0 0 0.75 0 1 0 4-4disc.dat
-  [1,16,-3,23,-10,0.75,0,0,0,0,0.75,0,1,0, ldraw_lib__4_4disc()],
+  [1,16,-3,23,-10,0.75,0,0,0,0,0.75,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 16 3 28.5 -10 0.75 0 0 0 0 0.75 0 1 0 4-4disc.dat
-  [1,16,3,28.5,-10,0.75,0,0,0,0,0.75,0,1,0, ldraw_lib__4_4disc()],
+  [1,16,3,28.5,-10,0.75,0,0,0,0,0.75,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 16 -3 28.5 -10 0.75 0 0 0 0 0.75 0 1 0 4-4disc.dat
-  [1,16,-3,28.5,-10,0.75,0,0,0,0,0.75,0,1,0, ldraw_lib__4_4disc()],
+  [1,16,-3,28.5,-10,0.75,0,0,0,0,0.75,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 0 Airplane logo
 // 4 16 8.5 12 -10 9.5 12 -10 14 14 -10 4 14 -10
   [4,16,8.5,12,-10,9.5,12,-10,14,14,-10,4,14,-10],
@@ -47,5 +48,5 @@ function ldraw_lib__s__973p04a() = [
 // 0
 ];
 module ldraw_lib__s__973p04a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__973p04a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__973p04a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__973p04a(line=0.2);

@@ -3,7 +3,8 @@ use <../p/2-4disc.scad>
 use <../p/2-4ndis.scad>
 use <../p/2-4ring1.scad>
 use <s/3068bs01.scad>
-function ldraw_lib__3068bp40() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3068bp40(realsolid=false) = [
 // 0 Tile  2 x  2 with Magic Scroll Pattern
 // 0 Name: 3068bp40.dat
 // 0 Author: Andy Westrate [westrate]
@@ -25,7 +26,7 @@ function ldraw_lib__3068bp40() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3068bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3068bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3068bs01(realsolid)],
 // 3 4 -12.25 0 11.75 -13 0 13.75 -14 0 11.75
   [3,4,-12.25,0,11.75,-13,0,13.75,-14,0,11.75],
 // 3 4 -11.5 0 10 -10.25 0 12 -12.25 0 11.75
@@ -603,11 +604,11 @@ function ldraw_lib__3068bp40() = [
 // 4 0 11.25 0 -1.25 11.25 0 -2 12 0 -2.25 12 0 -1.5
   [4,0,11.25,0,-1.25,11.25,0,-2,12,0,-2.25,12,0,-1.5],
 // 1 16 6 0 0.875 0 0 1.5 0 1 0 -1.125 0 0 2-4ndis.dat
-  [1,16,6,0,0.875,0,0,1.5,0,1,0,-1.125,0,0, ldraw_lib__2_4ndis()],
+  [1,16,6,0,0.875,0,0,1.5,0,1,0,-1.125,0,0, ldraw_lib__2_4ndis(realsolid)],
 // 1 0 6 0 0.875 0 0 0.75 0 1 0 -0.5625 0 0 2-4ring1.dat
-  [1,0,6,0,0.875,0,0,0.75,0,1,0,-0.5625,0,0, ldraw_lib__2_4ring1()],
+  [1,0,6,0,0.875,0,0,0.75,0,1,0,-0.5625,0,0, ldraw_lib__2_4ring1(realsolid)],
 // 1 16 6 0 0.875 0 0 0.75 0 1 0 -0.5625 0 0 2-4disc.dat
-  [1,16,6,0,0.875,0,0,0.75,0,1,0,-0.5625,0,0, ldraw_lib__2_4disc()],
+  [1,16,6,0,0.875,0,0,0.75,0,1,0,-0.5625,0,0, ldraw_lib__2_4disc(realsolid)],
 // 4 16 8.75 0 -1.75 8.75 0 -0.75 8.5 0 -0.75 8.25 0 -1.75
   [4,16,8.75,0,-1.75,8.75,0,-0.75,8.5,0,-0.75,8.25,0,-1.75],
 // 4 16 7 0 -1.5 7.5 0 -0.75 7.5 0 -0.25 6 0 -0.25
@@ -1371,5 +1372,5 @@ function ldraw_lib__3068bp40() = [
 // 0
 ];
 module ldraw_lib__3068bp40(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3068bp40(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3068bp40(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3068bp40(line=0.2);

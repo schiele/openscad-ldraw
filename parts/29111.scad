@@ -4,7 +4,8 @@ use <../p/4-4con5.scad>
 use <../p/4-4edge.scad>
 use <s/29111s01.scad>
 use <../p/stud4od.scad>
-function ldraw_lib__29111() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__29111(realsolid=false) = [
 // 0 Animal Spider with Elongated Abdomen
 // 0 Name: 29111.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -21,21 +22,21 @@ function ldraw_lib__29111() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\29111s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__29111s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__29111s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\29111s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__29111s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__29111s01(realsolid)],
 // 1 16 0 -5 0 -1 0 0 0 -1.25 0 0 0 1 stud4od.dat
-  [1,16,0,-5,0,-1,0,0,0,-1.25,0,0,0,1, ldraw_lib__stud4od()],
+  [1,16,0,-5,0,-1,0,0,0,-1.25,0,0,0,1, ldraw_lib__stud4od(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -5 0 1 0 0 0 -5.5 0 0 -.5 1 4-4con5.dat
-  [1,16,0,-5,0,1,0,0,0,-5.5,0,0,-.5,1, ldraw_lib__4_4con5()],
+  [1,16,0,-5,0,1,0,0,0,-5.5,0,0,-.5,1, ldraw_lib__4_4con5(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -10.5 -.5 5 0 0 0 -3.5 0 0 -.5 5 4-4con0.dat
-  [1,16,0,-10.5,-.5,5,0,0,0,-3.5,0,0,-.5,5, ldraw_lib__4_4con0()],
+  [1,16,0,-10.5,-.5,5,0,0,0,-3.5,0,0,-.5,5, ldraw_lib__4_4con0(realsolid)],
 // 1 16 0 0 0 8 0 0 0 -1 0 0 0 8 4-4edge.dat
-  [1,16,0,0,0,8,0,0,0,-1,0,0,0,8, ldraw_lib__4_4edge()],
+  [1,16,0,0,0,8,0,0,0,-1,0,0,0,8, ldraw_lib__4_4edge(realsolid)],
 // 3 16 1.61 -13.878 -7.589 0 -16.841 -2.955 -1.61 -13.878 -7.589
   [3,16,1.61,-13.878,-7.589,0,-16.841,-2.955,-1.61,-13.878,-7.589],
 // 4 16 1.956 -12.935 9.087 -1.956 -12.935 9.087 -1.801 -12.01 8.42 1.801 -12.01 8.42
@@ -104,5 +105,5 @@ function ldraw_lib__29111() = [
   [5,24,0,-13.552,-8.031,0,-13.125,-8.125,1.61,-13.878,-7.589,-1.61,-13.878,-7.589],
 ];
 module ldraw_lib__29111(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__29111(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__29111(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__29111(line=0.2);

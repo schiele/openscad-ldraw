@@ -3,7 +3,8 @@ use <2-4cyli.scad>
 use <3-4disc.scad>
 use <3-4edge.scad>
 use <rect.scad>
-function ldraw_lib__handle2() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__handle2(realsolid=false) = [
 // 0 Handle for Bent Shields
 // 0 Name: handle2.dat
 // 0 Author: Rolf Osterthun [Rolf]
@@ -115,9 +116,9 @@ function ldraw_lib__handle2() = [
 // 2 24 0 4 4 -1.531 3.94 3.696
   [2,24,0,4,4,-1.531,3.94,3.696],
 // 1 16 -7.5 0 4 0 1 0 2.828 0 2.828 -2.828 0 2.828 3-4edge.dat
-  [1,16,-7.5,0,4,0,1,0,2.828,0,2.828,-2.828,0,2.828, ldraw_lib__3_4edge()],
+  [1,16,-7.5,0,4,0,1,0,2.828,0,2.828,-2.828,0,2.828, ldraw_lib__3_4edge(realsolid)],
 // 1 16 7.5 0 4 0 1 0 2.828 0 2.828 -2.828 0 2.828 3-4edge.dat
-  [1,16,7.5,0,4,0,1,0,2.828,0,2.828,-2.828,0,2.828, ldraw_lib__3_4edge()],
+  [1,16,7.5,0,4,0,1,0,2.828,0,2.828,-2.828,0,2.828, ldraw_lib__3_4edge(realsolid)],
 // 
 // 3 16 7 1.531 0.304 7 2.5 0.952 7 2.5 -4
   [3,16,7,1.531,0.304,7,2.5,0.952,7,2.5,-4],
@@ -236,15 +237,15 @@ function ldraw_lib__handle2() = [
 // 3 16 -7.5 2.828 1.172 -7.5 2.5 0.952 -7.5 0 4
   [3,16,-7.5,2.828,1.172,-7.5,2.5,0.952,-7.5,0,4],
 // 1 16 0 0 -4 7 0 0 0 0 2.5 0 -1 0 rect.dat
-  [1,16,0,0,-4,7,0,0,0,0,2.5,0,-1,0, ldraw_lib__rect()],
+  [1,16,0,0,-4,7,0,0,0,0,2.5,0,-1,0, ldraw_lib__rect(realsolid)],
 // 1 16 -7.5 0 4 0 1 0 2.828 0 2.828 -2.828 0 2.828 3-4disc.dat
-  [1,16,-7.5,0,4,0,1,0,2.828,0,2.828,-2.828,0,2.828, ldraw_lib__3_4disc()],
+  [1,16,-7.5,0,4,0,1,0,2.828,0,2.828,-2.828,0,2.828, ldraw_lib__3_4disc(realsolid)],
 // 1 16 7.5 0 4 0 -1 0 2.828 0 2.828 -2.828 0 2.828 3-4disc.dat
-  [1,16,7.5,0,4,0,-1,0,2.828,0,2.828,-2.828,0,2.828, ldraw_lib__3_4disc()],
+  [1,16,7.5,0,4,0,-1,0,2.828,0,2.828,-2.828,0,2.828, ldraw_lib__3_4disc(realsolid)],
 // 1 16 7.5 0 4 0 -7.5 0 4 0 0 0 0 4 2-4cyli.dat
-  [1,16,7.5,0,4,0,-7.5,0,4,0,0,0,0,4, ldraw_lib__2_4cyli()],
+  [1,16,7.5,0,4,0,-7.5,0,4,0,0,0,0,4, ldraw_lib__2_4cyli(realsolid)],
 // 1 16 0 0 4 0 -7.5 0 4 0 0 0 0 4 2-4cyli.dat
-  [1,16,0,0,4,0,-7.5,0,4,0,0,0,0,4, ldraw_lib__2_4cyli()],
+  [1,16,0,0,4,0,-7.5,0,4,0,0,0,0,4, ldraw_lib__2_4cyli(realsolid)],
 // 
 // 5 24 -7.5 -3.696 2.469 -3.068 -3.696 2.469 -7.5 -3.068 1.531 -7.5 -3.767 2.828
   [5,24,-7.5,-3.696,2.469,-3.068,-3.696,2.469,-7.5,-3.068,1.531,-7.5,-3.767,2.828],
@@ -294,5 +295,5 @@ function ldraw_lib__handle2() = [
   [5,24,0,-4,4,0,4,4,1.531,0,3.696,-1.531,0,3.696],
 ];
 module ldraw_lib__handle2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__handle2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__handle2(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__handle2(line=0.2);

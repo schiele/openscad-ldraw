@@ -4,7 +4,8 @@ use <s/26056s02.scad>
 use <s/26056s03.scad>
 use <s/26056s04.scad>
 use <s/26056s05.scad>
-function ldraw_lib__26056() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__26056(realsolid=false) = [
 // 0 Minifig Head Gremlin
 // 0 Name: 26056.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -23,27 +24,27 @@ function ldraw_lib__26056() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\26056s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__26056s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__26056s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\26056s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__26056s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__26056s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\26056s02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__26056s02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__26056s02(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\26056s02.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__26056s02()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__26056s02(realsolid)],
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\26056s03.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__26056s03()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__26056s03(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\26056s03.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__26056s03()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__26056s03(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\26056s04.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__26056s04()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__26056s04(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\26056s04.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__26056s04()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__26056s04(realsolid)],
 // 
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\26056s05.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__26056s05()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__26056s05(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\26056s05.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__26056s05()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__26056s05(realsolid)],
 // 
 // 0 // Chin
 // 3 16 -4.232 -2.186 -14.479 -6.422 -2.347 -13.855 -7.447 -.068 -11.262
@@ -189,5 +190,5 @@ function ldraw_lib__26056() = [
   [5,24,0,-3.528,14.409,0,-.098,9.848,5.247,-3.481,13.906,-5.247,-3.481,13.906],
 ];
 module ldraw_lib__26056(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__26056(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__26056(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__26056(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__195475b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__195475b(realsolid=false) = [
 // 0 Sticker  0.8 x  8 with Black and Yellow Chevrons
 // 0 Name: 195475b.dat
 // 0 Author: Ulrich Röder [UR]
@@ -18,7 +19,7 @@ function ldraw_lib__195475b() = [
 // 
 // 0 // Main
 // 1 16 0 -0.25 0 79.8 0 0 0 0.25 0 0 0 -7.8 box5-12.dat
-  [1,16,0,-0.25,0,79.8,0,0,0,0.25,0,0,0,-7.8, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,79.8,0,0,0,0.25,0,0,0,-7.8, ldraw_lib__box5_12(realsolid)],
 // 
 // 0 // Yellow
 // 3 14 79.8 -.25 0 79.8 -.25 7.8 72.75 -.25 7.8
@@ -79,5 +80,5 @@ function ldraw_lib__195475b() = [
   [4,0,-45,-.25,7.8,-29,-.25,-7.8,-19,-.25,-7.8,-35.5,-.25,7.8],
 ];
 module ldraw_lib__195475b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__195475b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__195475b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__195475b(line=0.2);

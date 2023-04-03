@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/48/4-4ndis.scad>
 use <s/u826s01.scad>
-function ldraw_lib__u826p01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__u826p01(realsolid=false) = [
 // 0 Duplo Door  1 x  4 x  3 with Arched Top with Porthole with Yellow "BOAT YARD" Pattern
 // 0 Name: u826p01.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -19,10 +20,10 @@ function ldraw_lib__u826p01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\u826s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__u826s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__u826s01(realsolid)],
 // 
 // 1 16 -65.5 -17 -2.5 24 0 0 0 0 -24 0 5 0 48\4-4ndis.dat
-  [1,16,-65.5,-17,-2.5,24,0,0,0,0,-24,0,5,0, ldraw_lib__48__4_4ndis()],
+  [1,16,-65.5,-17,-2.5,24,0,0,0,0,-24,0,5,0, ldraw_lib__48__4_4ndis(realsolid)],
 // 4 14 -92.5 15.75 -2.5 -92.5 11.5 -2.5 -94 12 -2.5 -94 15.25 -2.5
   [4,14,-92.5,15.75,-2.5,-92.5,11.5,-2.5,-94,12,-2.5,-94,15.25,-2.5],
 // 4 14 -94 15.25 -2.5 -94 12 -2.5 -94.75 13 -2.5 -94.75 14.25 -2.5
@@ -613,5 +614,5 @@ function ldraw_lib__u826p01() = [
   [4,16,-38.25,30,-2.5,-40,33.5,-2.5,-37.75,34,-2.5,-37,29.5,-2.5],
 ];
 module ldraw_lib__u826p01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__u826p01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__u826p01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__u826p01(line=0.2);

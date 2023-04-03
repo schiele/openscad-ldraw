@@ -3,7 +3,8 @@ use <../p/4-4disc.scad>
 use <../p/4-4ndis.scad>
 use <../p/4-4ring1.scad>
 use <s/3069bs01.scad>
-function ldraw_lib__3069bpzc() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3069bpzc(realsolid=false) = [
 // 0 Tile  1 x  2 with Red and Grey Video Recorder Pattern
 // 0 Name: 3069bpzc.dat
 // 0 Author: Vincent Messenet [Cheenzo]
@@ -21,27 +22,27 @@ function ldraw_lib__3069bpzc() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3069bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3069bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3069bs01(realsolid)],
 // 
 // 0 // Circles
 // 1 16 -15 0 -2.75 .75 0 0 0 1 0 0 0 .75 4-4disc.dat
-  [1,16,-15,0,-2.75,.75,0,0,0,1,0,0,0,.75, ldraw_lib__4_4disc()],
+  [1,16,-15,0,-2.75,.75,0,0,0,1,0,0,0,.75, ldraw_lib__4_4disc(realsolid)],
 // 1 71 -15 0 -2.75 .75 0 0 0 1 0 0 0 .75 4-4ring1.dat
-  [1,71,-15,0,-2.75,.75,0,0,0,1,0,0,0,.75, ldraw_lib__4_4ring1()],
+  [1,71,-15,0,-2.75,.75,0,0,0,1,0,0,0,.75, ldraw_lib__4_4ring1(realsolid)],
 // 1 16 -15 0 -2.75 1.5 0 0 0 1 0 0 0 1.5 4-4ndis.dat
-  [1,16,-15,0,-2.75,1.5,0,0,0,1,0,0,0,1.5, ldraw_lib__4_4ndis()],
+  [1,16,-15,0,-2.75,1.5,0,0,0,1,0,0,0,1.5, ldraw_lib__4_4ndis(realsolid)],
 // 
 // 1 16 -11.75 0 -2.75 .75 0 0 0 1 0 0 0 .75 4-4disc.dat
-  [1,16,-11.75,0,-2.75,.75,0,0,0,1,0,0,0,.75, ldraw_lib__4_4disc()],
+  [1,16,-11.75,0,-2.75,.75,0,0,0,1,0,0,0,.75, ldraw_lib__4_4disc(realsolid)],
 // 1 71 -11.75 0 -2.75 .75 0 0 0 1 0 0 0 .75 4-4ring1.dat
-  [1,71,-11.75,0,-2.75,.75,0,0,0,1,0,0,0,.75, ldraw_lib__4_4ring1()],
+  [1,71,-11.75,0,-2.75,.75,0,0,0,1,0,0,0,.75, ldraw_lib__4_4ring1(realsolid)],
 // 1 16 -11.75 0 -2.75 1.5 0 0 0 1 0 0 0 1.5 4-4ndis.dat
-  [1,16,-11.75,0,-2.75,1.5,0,0,0,1,0,0,0,1.5, ldraw_lib__4_4ndis()],
+  [1,16,-11.75,0,-2.75,1.5,0,0,0,1,0,0,0,1.5, ldraw_lib__4_4ndis(realsolid)],
 // 
 // 1 4 -5 0 -5.5 2 0 0 0 1 0 0 0 2 4-4disc.dat
-  [1,4,-5,0,-5.5,2,0,0,0,1,0,0,0,2, ldraw_lib__4_4disc()],
+  [1,4,-5,0,-5.5,2,0,0,0,1,0,0,0,2, ldraw_lib__4_4disc(realsolid)],
 // 1 16 -5 0 -5.5 2 0 0 0 1 0 0 0 2 4-4ndis.dat
-  [1,16,-5,0,-5.5,2,0,0,0,1,0,0,0,2, ldraw_lib__4_4ndis()],
+  [1,16,-5,0,-5.5,2,0,0,0,1,0,0,0,2, ldraw_lib__4_4ndis(realsolid)],
 // 
 // 0 // Grey Squares
 // 4 71 -16.5 0 9.25 -16.5 0 0 -15.75 0 .75 -15.75 0 8.5
@@ -241,5 +242,5 @@ function ldraw_lib__3069bpzc() = [
   [4,16,-13.5,0,-2.75,-13.5,0,-4.25,-13.25,0,-4.25,-13.25,0,-2.75],
 ];
 module ldraw_lib__3069bpzc(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3069bpzc(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3069bpzc(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3069bpzc(line=0.2);

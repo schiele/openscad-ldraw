@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/rect2p.scad>
-function ldraw_lib__s__u9328s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__u9328s01(realsolid=false) = [
 // 0 ~Canvas Tepee Cover Surface
 // 0 Name: s\u9328s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -15,9 +16,9 @@ function ldraw_lib__s__u9328s01() = [
 // 
 // 
 // 1 16 -235.5643 0 -21.97765 0.1355 0 30.7715 0 -1 0 1.75935 0 5.61885 rect2p.dat
-  [1,16,-235.5643,0,-21.97765,0.1355,0,30.7715,0,-1,0,1.75935,0,5.61885, ldraw_lib__rect2p()],
+  [1,16,-235.5643,0,-21.97765,0.1355,0,30.7715,0,-1,0,1.75935,0,5.61885, ldraw_lib__rect2p(realsolid)],
 // 1 16 225.332 0 -18.7996 0.589 0 31.095 0 -1 0 1.6539 0 -3.16915 rect2p.dat
-  [1,16,225.332,0,-18.7996,0.589,0,31.095,0,-1,0,1.6539,0,-3.16915, ldraw_lib__rect2p()],
+  [1,16,225.332,0,-18.7996,0.589,0,31.095,0,-1,0,1.6539,0,-3.16915, ldraw_lib__rect2p(realsolid)],
 // 4 16 -6.2696 0 -22.0805 -4.0607 0 -22.2345 -10.2935 0 -99.4727 -11.0954 0 -102.882
   [4,16,-6.2696,0,-22.0805,-4.0607,0,-22.2345,-10.2935,0,-99.4727,-11.0954,0,-102.882],
 // 3 16 30.3315 0 -319.328 5.1376 0 -186.048 5.8735 0 -182.627
@@ -1004,5 +1005,5 @@ function ldraw_lib__s__u9328s01() = [
   [2,24,-8.2172,0,-96.6151,-10.2935,0,-99.4727],
 ];
 module ldraw_lib__s__u9328s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__u9328s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__u9328s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__u9328s01(line=0.2);

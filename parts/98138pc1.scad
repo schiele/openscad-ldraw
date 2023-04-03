@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/98138s01.scad>
-function ldraw_lib__98138pc1() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__98138pc1(realsolid=false) = [
 // 0 Tile  1 x  1 Round with Groove with Gauge with Red Pointer Pattern
 // 0 Name: 98138pc1.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -15,7 +16,7 @@ function ldraw_lib__98138pc1() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\98138s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01(realsolid)],
 // 4 27 0.43 0 8.22 -0.41 0 8.22 -0.25 0 6.23 0.27 0 6.23
   [4,27,0.43,0,8.22,-0.41,0,8.22,-0.25,0,6.23,0.27,0,6.23],
 // 4 27 -0.9105 0 8.1769 -1.6413 0 8.0611 -1.3206 0 7.0589 -0.9058 0 7.1246
@@ -386,5 +387,5 @@ function ldraw_lib__98138pc1() = [
   [4,0,0,0,1.686,3.4617,0,5.1944,2.182,0,5.8463,1.6874,0,6.007],
 ];
 module ldraw_lib__98138pc1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__98138pc1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__98138pc1(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__98138pc1(line=0.2);

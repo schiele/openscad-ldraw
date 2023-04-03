@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4cylc.scad>
 use <../p/box3u2p.scad>
 use <s/u9329s01.scad>
-function ldraw_lib__u9329() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__u9329(realsolid=false) = [
 // 0 Technic Pneumatic Pump  2 x  2 Piston with  1.2 Rod
 // 0 Name: u9329.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -17,19 +18,19 @@ function ldraw_lib__u9329() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\u9329s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__u9329s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__u9329s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\u9329s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__u9329s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__u9329s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 -1 s\u9329s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__u9329s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__u9329s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 -1 s\u9329s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__u9329s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__u9329s01(realsolid)],
 // 1 16 0 90 0 12 0 0 0 -70 0 0 0 12 4-4cylc.dat
-  [1,16,0,90,0,12,0,0,0,-70,0,0,0,12, ldraw_lib__4_4cylc()],
+  [1,16,0,90,0,12,0,0,0,-70,0,0,0,12, ldraw_lib__4_4cylc(realsolid)],
 // 1 16 0 17 12 2 0 0 0 -15.5 0 0 0 2 box3u2p.dat
-  [1,16,0,17,12,2,0,0,0,-15.5,0,0,0,2, ldraw_lib__box3u2p()],
+  [1,16,0,17,12,2,0,0,0,-15.5,0,0,0,2, ldraw_lib__box3u2p(realsolid)],
 // 1 16 0 17 -12 2 0 0 0 -15.5 0 0 0 2 box3u2p.dat
-  [1,16,0,17,-12,2,0,0,0,-15.5,0,0,0,2, ldraw_lib__box3u2p()],
+  [1,16,0,17,-12,2,0,0,0,-15.5,0,0,0,2, ldraw_lib__box3u2p(realsolid)],
 // 5 24 13.5 0.63 0 18 0 0 12.4727 0.63 5.1665 12.4727 0.63 -5.1665
   [5,24,13.5,0.63,0,18,0,0,12.4727,0.63,5.1665,12.4727,0.63,-5.1665],
 // 5 24 10 0.9567 0 13.5 0.63 0 12.4727 0.63 5.1665 10 0.8798 -4.1422
@@ -72,5 +73,5 @@ function ldraw_lib__u9329() = [
   [5,24,-2,1.26,-6.3523,-6,1.098,-6,-6,0.63,-11.9156,-6,1.26,-2.9368],
 ];
 module ldraw_lib__u9329(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__u9329(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__u9329(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__u9329(line=0.2);

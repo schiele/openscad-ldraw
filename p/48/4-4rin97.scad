@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__48__4_4rin97() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__48__4_4rin97(realsolid=false) = [
 // 0 Hi-Res Ring 97 x 1.0
 // 0 Name: 48\4-4rin97.dat
 // 0 Author: Alex Taylor [anathema]
@@ -112,5 +113,5 @@ function ldraw_lib__48__4_4rin97() = [
 // 0
 ];
 module ldraw_lib__48__4_4rin97(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__48__4_4rin97(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__48__4_4rin97(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__48__4_4rin97(line=0.2);

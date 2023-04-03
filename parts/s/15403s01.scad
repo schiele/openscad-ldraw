@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__15403s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__15403s01(realsolid=false) = [
 // 0 ~Plate  1 x  2 with Mini Shooting Blaster
 // 0 Name: s\15403s01.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -805,5 +806,5 @@ function ldraw_lib__s__15403s01() = [
   [5,24,2,-19.813,-6.7,2,-19.813,-7.531,5.088,-18.622,-4.588,0,-20.016,-7.53],
 ];
 module ldraw_lib__s__15403s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__15403s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__15403s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__15403s01(line=0.2);

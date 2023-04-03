@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__48__1_6ring10() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__48__1_6ring10(realsolid=false) = [
 // 0 Hi-Res Ring 10 x 0.1667
 // 0 Name: 48\1-6ring10.dat
 // 0 Author: Santeri Piippo [arezey]
@@ -31,5 +32,5 @@ function ldraw_lib__48__1_6ring10() = [
   [4,16,6.088,0,7.934,6.6968,0,8.7274,5.5,0,9.526,5,0,8.66],
 ];
 module ldraw_lib__48__1_6ring10(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__48__1_6ring10(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__48__1_6ring10(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__48__1_6ring10(line=0.2);

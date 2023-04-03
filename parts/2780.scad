@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/confric5.scad>
-function ldraw_lib__2780() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2780(realsolid=false) = [
 // 0 Technic Pin with Friction and Slots
 // 0 Name: 2780.dat
 // 0 Author: Guy Vivan [guyvivan]
@@ -16,11 +17,11 @@ function ldraw_lib__2780() = [
 // 
 // 
 // 1 16 0 0 0 0 1 0 0 0 1 1 0 0 confric5.dat
-  [1,16,0,0,0,0,1,0,0,0,1,1,0,0, ldraw_lib__confric5()],
+  [1,16,0,0,0,0,1,0,0,0,1,1,0,0, ldraw_lib__confric5(realsolid)],
 // 1 16 0 0 0 0 -1 0 0 0 1 1 0 0 confric5.dat
-  [1,16,0,0,0,0,-1,0,0,0,1,1,0,0, ldraw_lib__confric5()],
+  [1,16,0,0,0,0,-1,0,0,0,1,1,0,0, ldraw_lib__confric5(realsolid)],
 // 0
 ];
 module ldraw_lib__2780(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2780(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2780(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2780(line=0.2);

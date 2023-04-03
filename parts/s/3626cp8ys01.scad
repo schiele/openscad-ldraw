@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/5-16cyli.scad>
 use <../../p/t04o6250.scad>
-function ldraw_lib__s__3626cp8ys01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__3626cp8ys01(realsolid=false) = [
 // 0 ~Minifig Head with Glasses Rounded, Brown Eyebrows and Smile Pattern Half
 // 0 Name: s\3626cp8ys01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -16,15 +17,15 @@ function ldraw_lib__s__3626cp8ys01() = [
 // 
 // 
 // 1 16 0 4 0 0 0 8 0 -6.4 0 8 0 0 t04o6250.dat
-  [1,16,0,4,0,0,0,8,0,-6.4,0,8,0,0, ldraw_lib__t04o6250()],
+  [1,16,0,4,0,0,0,8,0,-6.4,0,8,0,0, ldraw_lib__t04o6250(realsolid)],
 // 1 16 0 4 0 8 0 0 0 -6.4 0 0 0 -8 t04o6250.dat
-  [1,16,0,4,0,8,0,0,0,-6.4,0,0,0,-8, ldraw_lib__t04o6250()],
+  [1,16,0,4,0,8,0,0,0,-6.4,0,0,0,-8, ldraw_lib__t04o6250(realsolid)],
 // 1 16 0 4 0 0 0 13 0 13 0 13 0 0 5-16cyli.dat
-  [1,16,0,4,0,0,0,13,0,13,0,13,0,0, ldraw_lib__5_16cyli()],
+  [1,16,0,4,0,0,0,13,0,13,0,13,0,0, ldraw_lib__5_16cyli(realsolid)],
 // 1 16 0 17 0 0 0 8 0 6.4 0 8 0 0 t04o6250.dat
-  [1,16,0,17,0,0,0,8,0,6.4,0,8,0,0, ldraw_lib__t04o6250()],
+  [1,16,0,17,0,0,0,8,0,6.4,0,8,0,0, ldraw_lib__t04o6250(realsolid)],
 // 1 16 0 17 0 8 0 0 0 6.4 0 0 0 -8 t04o6250.dat
-  [1,16,0,17,0,8,0,0,0,6.4,0,0,0,-8, ldraw_lib__t04o6250()],
+  [1,16,0,17,0,8,0,0,0,6.4,0,0,0,-8, ldraw_lib__t04o6250(realsolid)],
 // 4 0 3.61 9.49 -12.2822 1.9357 9.4435 -12.6151 1.9865 10.1207 -12.605 2.2707 10.7201 -12.5485
   [4,0,3.61,9.49,-12.2822,1.9357,9.4435,-12.6151,1.9865,10.1207,-12.605,2.2707,10.7201,-12.5485],
 // 4 0 3.61 9.49 -12.2822 2.2707 10.7201 -12.5485 2.7451 11.1505 -12.4541 3.3375 11.3464 -12.3363
@@ -279,5 +280,5 @@ function ldraw_lib__s__3626cp8ys01() = [
   [5,24,4.9751,17,-12.0107,4.9751,4,-12.0107,9.1923,17,-9.1923,0,17,-13],
 ];
 module ldraw_lib__s__3626cp8ys01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__3626cp8ys01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__3626cp8ys01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__3626cp8ys01(line=0.2);

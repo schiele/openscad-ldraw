@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/85984s01.scad>
-function ldraw_lib__85984pc1() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__85984pc1(realsolid=false) = [
 // 0 Slope Brick 31  1 x  2 x  0.667 with Gauges Pattern
 // 0 Name: 85984pc1.dat
 // 0 Author: Bertrand Lequy [Berth]
@@ -17,7 +18,7 @@ function ldraw_lib__85984pc1() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\85984s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__85984s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__85984s01(realsolid)],
 // 
 // 4 0 -16.242 -9.9218 -0.1304 -16.97 -11.0655 1.7758 -17.4474 -10.2534 0.4222 -17.604 -9.4119 -0.9802
   [4,0,-16.242,-9.9218,-0.1304,-16.97,-11.0655,1.7758,-17.4474,-10.2534,0.4222,-17.604,-9.4119,-0.9802],
@@ -851,5 +852,5 @@ function ldraw_lib__85984pc1() = [
   [4,16,-19,-15.1254,8.5423,19,-15.1254,8.5423,18,-15.6,9.3333,-18,-15.6,9.3333],
 ];
 module ldraw_lib__85984pc1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__85984pc1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__85984pc1(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__85984pc1(line=0.2);

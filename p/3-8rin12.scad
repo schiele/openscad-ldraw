@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__3_8rin12() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3_8rin12(realsolid=false) = [
 // 0 Ring 12 x 0.375
 // 0 Name: 3-8rin12.dat
 // 0 Author: Niels Karsdorp [nielsk]
@@ -31,5 +32,5 @@ function ldraw_lib__3_8rin12() = [
   [4,16,-4.9751,0,12.0107,-9.1923,0,9.1923,-8.4852,0,8.4852,-4.5924,0,11.0868],
 ];
 module ldraw_lib__3_8rin12(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3_8rin12(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3_8rin12(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3_8rin12(line=0.2);

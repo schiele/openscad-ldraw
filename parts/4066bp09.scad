@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/4066bs01.scad>
-function ldraw_lib__4066bp09() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4066bp09(realsolid=false) = [
 // 0 Duplo Brick  1 x  2 x  2 with Bananas with Stickers Pattern
 // 0 Name: 4066bp09.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -18,7 +19,7 @@ function ldraw_lib__4066bp09() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4066bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4066bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4066bs01(realsolid)],
 // 4 16 -23.75 45.5 -20 -24.5 44.5 -20 -25.75 45.5 -20 -26.5 46.5 -20
   [4,16,-23.75,45.5,-20,-24.5,44.5,-20,-25.75,45.5,-20,-26.5,46.5,-20],
 // 4 16 -22.5 46.5 -20 -23.75 45.5 -20 -26.5 46.5 -20 -22.25 47 -20
@@ -943,5 +944,5 @@ function ldraw_lib__4066bp09() = [
   [3,16,0,0,-20,-6.5,12.5,-20,-2.5,12.5,-20],
 ];
 module ldraw_lib__4066bp09(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4066bp09(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4066bp09(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4066bp09(line=0.2);

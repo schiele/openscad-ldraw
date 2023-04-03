@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__4622303q() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4622303q(realsolid=false) = [
 // 0 Sticker  0.75 x  1.75 Badge "BLUETEC 5" on Orange
 // 0 Name: 4622303q.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -17,7 +18,7 @@ function ldraw_lib__4622303q() = [
 // 
 // 
 // 1 16 0 -0.25 0 -17.5 0 0 0 0.25 0 0 0 -7.5 box5-12.dat
-  [1,16,0,-0.25,0,-17.5,0,0,0,0.25,0,0,0,-7.5, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,-17.5,0,0,0,0.25,0,0,0,-7.5, ldraw_lib__box5_12(realsolid)],
 // 0 //
 // 4 1 7.8 -0.25 2.4 -9 -0.25 2.4 -2.6 -0.25 2.1 2 -0.25 2.1
   [4,1,7.8,-0.25,2.4,-9,-0.25,2.4,-2.6,-0.25,2.1,2,-0.25,2.1],
@@ -406,5 +407,5 @@ function ldraw_lib__4622303q() = [
   [3,25,-17.5,-0.25,-7.5,8.5,-0.25,-3.6,7.4,-0.25,-3.5],
 ];
 module ldraw_lib__4622303q(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4622303q(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4622303q(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4622303q(line=0.2);

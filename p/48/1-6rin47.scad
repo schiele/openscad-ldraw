@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__48__1_6rin47() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__48__1_6rin47(realsolid=false) = [
 // 0 Hi-Res Ring 47 x 0.1667
 // 0 Name: 48\1-6rin47.dat
 // 0 Author: Damien Roux [Darats]
@@ -32,5 +33,5 @@ function ldraw_lib__48__1_6rin47() = [
 // 0 // Built by Primitive Generator 2
 ];
 module ldraw_lib__48__1_6rin47(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__48__1_6rin47(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__48__1_6rin47(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__48__1_6rin47(line=0.2);

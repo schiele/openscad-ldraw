@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__3068bp12a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__3068bp12a(realsolid=false) = [
 // 0 ~Tile  2 x  2 with Radar Scope Pattern - Pattern
 // 0 Name: s\3068bp12a.dat
 // 0 Author: Damien Roux [Darats]
@@ -1119,5 +1120,5 @@ function ldraw_lib__s__3068bp12a() = [
   [4,15,-15.853,0,-4.573,-15.262,0,-6.274,0.297,0,-0.851,-0.296,0,0.85],
 ];
 module ldraw_lib__s__3068bp12a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__3068bp12a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__3068bp12a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__3068bp12a(line=0.2);

@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__26074s04() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__26074s04(realsolid=false) = [
 // 0 ~Animal Penguin Foot
 // 0 Name: s\26074s04.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -257,5 +258,5 @@ function ldraw_lib__s__26074s04() = [
   [5,24,0,-5.121,-12.157,0,-2.189,-12.182,0.874,-4.815,-12.315,-0.874,-4.815,-12.315],
 ];
 module ldraw_lib__s__26074s04(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__26074s04(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__26074s04(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__26074s04(line=0.2);

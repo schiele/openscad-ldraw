@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <61071.scad>
-function ldraw_lib__61070() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__61070(realsolid=false) = [
 // 0 Technic Beam  3 with Panel Fairing Right
 // 0 Name: 61070.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -17,10 +18,10 @@ function ldraw_lib__61070() = [
 // 
 // 
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 61071.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__61071()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__61071(realsolid)],
 // 0 //
 // 
 ];
 module ldraw_lib__61070(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__61070(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__61070(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__61070(line=0.2);

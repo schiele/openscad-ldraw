@@ -5,7 +5,8 @@ use <../../p/2-4edge.scad>
 use <../../p/4-4edge.scad>
 use <../../p/4-4ring4.scad>
 use <../../p/peghole.scad>
-function ldraw_lib__s__55706s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__55706s01(realsolid=false) = [
 // 0 ~Animal Wing  9 x  9 with Axle - Symmetrical Surface
 // 0 Name: s\55706s01.dat
 // 0 Author: Michael Heidemann [mikeheide]
@@ -22,26 +23,26 @@ function ldraw_lib__s__55706s01() = [
 // 
 // 
 // 1 16 0 -10 0 0 0 1 0 1 0 -1 0 0 peghole.dat
-  [1,16,0,-10,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__peghole()],
+  [1,16,0,-10,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__peghole(realsolid)],
 // 1 16 0 -10 0 0 0 10 0 -1 0 -10 0 0 4-4edge.dat
-  [1,16,0,-10,0,0,0,10,0,-1,0,-10,0,0, ldraw_lib__4_4edge()],
+  [1,16,0,-10,0,0,0,10,0,-1,0,-10,0,0, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 -10 0 -2 0 0 0 1 0 0 0 2 4-4ring4.dat
-  [1,16,0,-10,0,-2,0,0,0,1,0,0,0,2, ldraw_lib__4_4ring4()],
+  [1,16,0,-10,0,-2,0,0,0,1,0,0,0,2, ldraw_lib__4_4ring4(realsolid)],
 // 1 16 0 0 0 10 0 0 0 0 -10 0 -1 -10 2-4edge.dat
-  [1,16,0,0,0,10,0,0,0,0,-10,0,-1,-10, ldraw_lib__2_4edge()],
+  [1,16,0,0,0,10,0,0,0,0,-10,0,-1,-10, ldraw_lib__2_4edge(realsolid)],
 // 1 16 0 -10 0 10 0 0 0 10 0 0 0 10 2-4cyli.dat
-  [1,16,0,-10,0,10,0,0,0,10,0,0,0,10, ldraw_lib__2_4cyli()],
+  [1,16,0,-10,0,10,0,0,0,10,0,0,0,10, ldraw_lib__2_4cyli(realsolid)],
 // 1 16 0 -10 0 0 0 -10 0 10 0 -10 0 0 1-4cyls.dat
-  [1,16,0,-10,0,0,0,-10,0,10,0,-10,0,0, ldraw_lib__1_4cyls()],
+  [1,16,0,-10,0,0,0,-10,0,10,0,-10,0,0, ldraw_lib__1_4cyls(realsolid)],
 // 1 16 0 -10 0 0 0 10 0 10 0 -10 0 0 1-4cyls.dat
-  [1,16,0,-10,0,0,0,10,0,10,0,-10,0,0, ldraw_lib__1_4cyls()],
+  [1,16,0,-10,0,0,0,10,0,10,0,-10,0,0, ldraw_lib__1_4cyls(realsolid)],
 // 1 16 0 0 -10 0 0 -10 -10 0 0 0 10 0 1-4cyls.dat
-  [1,16,0,0,-10,0,0,-10,-10,0,0,0,10,0, ldraw_lib__1_4cyls()],
+  [1,16,0,0,-10,0,0,-10,-10,0,0,0,10,0, ldraw_lib__1_4cyls(realsolid)],
 // 1 16 0 0 -10 0 0 10 -10 0 0 0 10 0 1-4cyls.dat
-  [1,16,0,0,-10,0,0,10,-10,0,0,0,10,0, ldraw_lib__1_4cyls()],
+  [1,16,0,0,-10,0,0,10,-10,0,0,0,10,0, ldraw_lib__1_4cyls(realsolid)],
 // 0 // long
 // 1 16 -171 0 122 0 -13 0 0 0 -4 4 0 0 2-4cyli.dat
-  [1,16,-171,0,122,0,-13,0,0,0,-4,4,0,0, ldraw_lib__2_4cyli()],
+  [1,16,-171,0,122,0,-13,0,0,0,-4,4,0,0, ldraw_lib__2_4cyli(realsolid)],
 // 4 16 -171 -1.5308 118.3044 -147.169 -1.5 116.72 -147.069 -2.828 117.585 -171 -2.8284 119.172
   [4,16,-171,-1.5308,118.3044,-147.169,-1.5,116.72,-147.069,-2.828,117.585,-171,-2.8284,119.172],
 // 4 16 -171 -2.8284 119.172 -147.069 -2.828 117.585 -146.9 -3.696 118.871 -171 -3.6956 120.469
@@ -1241,5 +1242,5 @@ function ldraw_lib__s__55706s01() = [
   [5,24,-124,0,70.5,-124,-0.95692,70.3099,-121.842,-0.957,70.1656,-124.957,0,70.3097],
 ];
 module ldraw_lib__s__55706s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__55706s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__55706s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__55706s01(line=0.2);

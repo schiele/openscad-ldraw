@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__48__5_16chrd() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__48__5_16chrd(realsolid=false) = [
 // 0 Hi-Res Chord 0.3125
 // 0 Name: 48\5-16chrd.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -44,5 +45,5 @@ function ldraw_lib__48__5_16chrd() = [
 // 0 // Build by LDPartEditor (PrimGen 2.X)
 ];
 module ldraw_lib__48__5_16chrd(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__48__5_16chrd(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__48__5_16chrd(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__48__5_16chrd(line=0.2);

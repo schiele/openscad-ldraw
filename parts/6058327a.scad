@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/48/4-4cylc3.scad>
-function ldraw_lib__6058327a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6058327a(realsolid=false) = [
 // 0 Sticker  1.7 x  1.7 Round with Dark Red Semi-Circles
 // 0 Name: 6058327a.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -19,7 +20,7 @@ function ldraw_lib__6058327a() = [
 // 
 // 
 // 1 16 0 0 0 18 0 0 0 -0.25 0 0 0 18 48\4-4cylc3.dat
-  [1,16,0,0,0,18,0,0,0,-0.25,0,0,0,18, ldraw_lib__48__4_4cylc3()],
+  [1,16,0,0,0,18,0,0,0,-0.25,0,0,0,18, ldraw_lib__48__4_4cylc3(realsolid)],
 // 
 // 4 19 -12.016 -0.25 0 0 -0.25 0 -11.6772 -0.25 2.7 -17.8452 -0.25 2.349
   [4,19,-12.016,-0.25,0,0,-0.25,0,-11.6772,-0.25,2.7,-17.8452,-0.25,2.349],
@@ -155,5 +156,5 @@ function ldraw_lib__6058327a() = [
   [3,19,11.1013,-0.25,-4.5983,11.5862,-0.25,-3,0,-0.25,0],
 ];
 module ldraw_lib__6058327a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6058327a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6058327a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6058327a(line=0.2);

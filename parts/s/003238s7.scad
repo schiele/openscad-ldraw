@@ -2,7 +2,8 @@ use <../../lib.scad>
 use <../../p/2-4disc.scad>
 use <../../p/2-4ndis.scad>
 use <../../p/4-4disc.scad>
-function ldraw_lib__s__003238s7() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__003238s7(realsolid=false) = [
 // 0 ~Trefoil Yellow
 // 0 Name: s\003238s7.dat
 // 0 Author: Alex Taylor [anathema]
@@ -17,17 +18,17 @@ function ldraw_lib__s__003238s7() = [
 // 
 // 
 // 1 14 -30 0 -14 0 0 -30 0 1 0 30 0 0 2-4disc.dat
-  [1,14,-30,0,-14,0,0,-30,0,1,0,30,0,0, ldraw_lib__2_4disc()],
+  [1,14,-30,0,-14,0,0,-30,0,1,0,30,0,0, ldraw_lib__2_4disc(realsolid)],
 // 1 16 -30 0 -14 0 0 -30 0 1 0 30 0 0 2-4ndis.dat
-  [1,16,-30,0,-14,0,0,-30,0,1,0,30,0,0, ldraw_lib__2_4ndis()],
+  [1,16,-30,0,-14,0,0,-30,0,1,0,30,0,0, ldraw_lib__2_4ndis(realsolid)],
 // 1 14 30 0 -14 0 0 30 0 1 0 -30 0 0 2-4disc.dat
-  [1,14,30,0,-14,0,0,30,0,1,0,-30,0,0, ldraw_lib__2_4disc()],
+  [1,14,30,0,-14,0,0,30,0,1,0,-30,0,0, ldraw_lib__2_4disc(realsolid)],
 // 1 16 30 0 -14 0 0 30 0 1 0 -30 0 0 2-4ndis.dat
-  [1,16,30,0,-14,0,0,30,0,1,0,-30,0,0, ldraw_lib__2_4ndis()],
+  [1,16,30,0,-14,0,0,30,0,1,0,-30,0,0, ldraw_lib__2_4ndis(realsolid)],
 // 1 14 0 0 43.716 0 0 30 0 1 0 -30 0 0 4-4disc.dat
-  [1,14,0,0,43.716,0,0,30,0,1,0,-30,0,0, ldraw_lib__4_4disc()],
+  [1,14,0,0,43.716,0,0,30,0,1,0,-30,0,0, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 0 43.716 30 0 0 0 1 0 0 0 30 2-4ndis.dat
-  [1,16,0,0,43.716,30,0,0,0,1,0,0,0,30, ldraw_lib__2_4ndis()],
+  [1,16,0,0,43.716,30,0,0,0,1,0,0,0,30, ldraw_lib__2_4ndis(realsolid)],
 // 3 16 -30 0 16 -27.717 0 32.235 -30 0 43.716
   [3,16,-30,0,16,-27.717,0,32.235,-30,0,43.716],
 // 3 16 -30 0 16 -21.213 0 22.503 -27.717 0 32.235
@@ -57,5 +58,5 @@ function ldraw_lib__s__003238s7() = [
 // 0
 ];
 module ldraw_lib__s__003238s7(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__003238s7(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__003238s7(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__003238s7(line=0.2);

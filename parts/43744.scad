@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/4-4cylc.scad>
 use <../p/stud.scad>
-function ldraw_lib__43744() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__43744(realsolid=false) = [
 // 0 Animal Phoenix
 // 0 Name: 43744.dat
 // 0 Author: Stan Isachenko [angmarec]
@@ -22,15 +23,15 @@ function ldraw_lib__43744() = [
 // 
 // 
 // 1 16 0.02 0 0 0 0 -1 0 1 0 1 0 0 stud.dat
-  [1,16,0.02,0,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__stud()],
+  [1,16,0.02,0,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__stud(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 3.75 0 6 0 0 0 36.25 0 0 0 6 4-4cylc.dat
-  [1,16,0,3.75,0,6,0,0,0,36.25,0,0,0,6, ldraw_lib__4_4cylc()],
+  [1,16,0,3.75,0,6,0,0,0,36.25,0,0,0,6, ldraw_lib__4_4cylc(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 3.75 -35 -40 2 0 0 0 -7.5 0 0 0 2 4-4cylc.dat
-  [1,16,3.75,-35,-40,2,0,0,0,-7.5,0,0,0,2, ldraw_lib__4_4cylc()],
+  [1,16,3.75,-35,-40,2,0,0,0,-7.5,0,0,0,2, ldraw_lib__4_4cylc(realsolid)],
 // 3 16 1.75 -42.5 -40 1.9022 -42.5 -39.2346 -0.25 -42.5 -40.016
   [3,16,1.75,-42.5,-40,1.9022,-42.5,-39.2346,-0.25,-42.5,-40.016],
 // 4 16 0.921 -42.5 -42.844 1.9022 -42.5 -40.7654 1.75 -42.5 -40 -0.25 -42.5 -40.016
@@ -7495,5 +7496,5 @@ function ldraw_lib__43744() = [
   [5,24,15.607,70.972,37.171,22.5,69.8,40,7.059,69.8,40,22.5,70.971,37.171],
 ];
 module ldraw_lib__43744(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__43744(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__43744(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__43744(line=0.2);

@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <3069b.scad>
 use <4615865d.scad>
-function ldraw_lib__3069bd03() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3069bd03(realsolid=false) = [
 // 0 Tile  1 x  2 with Sticker  0.9 x  1.8 with Black/Red "POLICE" on White/Blue Stripes
 // 0 Name: 3069bd03.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -16,10 +17,10 @@ function ldraw_lib__3069bd03() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 3069b.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3069b()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3069b(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 4615865d.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4615865d()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4615865d(realsolid)],
 ];
 module ldraw_lib__3069bd03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3069bd03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3069bd03(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3069bd03(line=0.2);

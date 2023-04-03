@@ -3,7 +3,8 @@ use <../p/4-4cyli.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4edge.scad>
 use <../p/axle.scad>
-function ldraw_lib__868() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__868(realsolid=false) = [
 // 0 ~Train 12V Actuator Technic Axle
 // 0 Name: 868.dat
 // 0 Author: Steffen [Steffen]
@@ -18,19 +19,19 @@ function ldraw_lib__868() = [
 // 
 // 
 // 1 16 0 0 0 0 0 1 0 -20 0 1 0 0 axle.dat
-  [1,16,0,0,0,0,0,1,0,-20,0,1,0,0, ldraw_lib__axle()],
+  [1,16,0,0,0,0,0,1,0,-20,0,1,0,0, ldraw_lib__axle(realsolid)],
 // 1 16 0 0 0 6 0 0 0 8 0 0 0 6 4-4disc.dat
-  [1,16,0,0,0,6,0,0,0,8,0,0,0,6, ldraw_lib__4_4disc()],
+  [1,16,0,0,0,6,0,0,0,8,0,0,0,6, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 0 0 6 0 0 0 8 0 0 0 6 4-4edge.dat
-  [1,16,0,0,0,6,0,0,0,8,0,0,0,6, ldraw_lib__4_4edge()],
+  [1,16,0,0,0,6,0,0,0,8,0,0,0,6, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 8 0 6 0 0 0 -8 0 0 0 -6 4-4disc.dat
-  [1,16,0,8,0,6,0,0,0,-8,0,0,0,-6, ldraw_lib__4_4disc()],
+  [1,16,0,8,0,6,0,0,0,-8,0,0,0,-6, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 8 0 6 0 0 0 8 0 0 0 6 4-4edge.dat
-  [1,16,0,8,0,6,0,0,0,8,0,0,0,6, ldraw_lib__4_4edge()],
+  [1,16,0,8,0,6,0,0,0,8,0,0,0,6, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 8 0 6 0 0 0 -8 0 0 0 -6 4-4cyli.dat
-  [1,16,0,8,0,6,0,0,0,-8,0,0,0,-6, ldraw_lib__4_4cyli()],
+  [1,16,0,8,0,6,0,0,0,-8,0,0,0,-6, ldraw_lib__4_4cyli(realsolid)],
 // 0
 ];
 module ldraw_lib__868(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__868(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__868(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__868(line=0.2);

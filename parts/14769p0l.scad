@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/4-4ering.scad>
 use <s/14769s01.scad>
-function ldraw_lib__14769p0l() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__14769p0l(realsolid=false) = [
 // 0 Tile  2 x  2 Round with Round Underside Stud with Black Stern Eyebrows and Closed Mouth with Two Sharp Teeth and Dark Bluish Grey Eyepatch Pattern
 // 0 Name: 14769p0l.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -18,9 +19,9 @@ function ldraw_lib__14769p0l() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\14769s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__14769s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__14769s01(realsolid)],
 // 1 16 0 0 0 20 0 0 0 1 0 0 0 20 4-4ering.dat
-  [1,16,0,0,0,20,0,0,0,1,0,0,0,20, ldraw_lib__4_4ering()],
+  [1,16,0,0,0,20,0,0,0,1,0,0,0,20, ldraw_lib__4_4ering(realsolid)],
 // 
 // 4 0 -1.42 0 6.7 -0.56 0 7.32 -2.02 0 9.88 -2.38 0 6.64
   [4,0,-1.42,0,6.7,-0.56,0,7.32,-2.02,0,9.88,-2.38,0,6.64],
@@ -632,5 +633,5 @@ function ldraw_lib__14769p0l() = [
   [3,72,-15.48,0,6.18,-12.45,0,7.2,-15.18,0,7.92],
 ];
 module ldraw_lib__14769p0l(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__14769p0l(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__14769p0l(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__14769p0l(line=0.2);

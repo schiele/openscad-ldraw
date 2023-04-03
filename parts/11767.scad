@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <11125.scad>
 use <u9081c01.scad>
-function ldraw_lib__11767() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__11767(realsolid=false) = [
 // 0 Motor Inertia Flywheel  4 x  7 x  1 with Metal Wheel and DkAzur Tyre
 // 0 Name: 11767.dat
 // 0 Author: Ingolf Weisheit [stahlwollschaf]
@@ -21,10 +22,10 @@ function ldraw_lib__11767() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 11125.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__11125()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__11125(realsolid)],
 // 1 321 0 2 70 0 0 1 0 1 0 -1 0 0 u9081c01.dat
-  [1,321,0,2,70,0,0,1,0,1,0,-1,0,0, ldraw_lib__u9081c01()],
+  [1,321,0,2,70,0,0,1,0,1,0,-1,0,0, ldraw_lib__u9081c01(realsolid)],
 ];
 module ldraw_lib__11767(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__11767(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__11767(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__11767(line=0.2);

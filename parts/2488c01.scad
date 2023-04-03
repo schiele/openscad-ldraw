@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4edge.scad>
-function ldraw_lib__2488c01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2488c01(realsolid=false) = [
 // 0 Minifig Whip in Latched Position
 // 0 Name: 2488c01.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -19,14 +20,14 @@ function ldraw_lib__2488c01() = [
 // 
 // 
 // 1 16 0 24 0 4 0 0 0 -1 0 0 0 4 4-4disc.dat
-  [1,16,0,24,0,4,0,0,0,-1,0,0,0,4, ldraw_lib__4_4disc()],
+  [1,16,0,24,0,4,0,0,0,-1,0,0,0,4, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 24 0 4 0 0 0 1 0 0 0 4 4-4edge.dat
-  [1,16,0,24,0,4,0,0,0,1,0,0,0,4, ldraw_lib__4_4edge()],
+  [1,16,0,24,0,4,0,0,0,1,0,0,0,4, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 -24 0 4 0 0 0 48 0 0 0 4 4-4cyli.dat
-  [1,16,0,-24,0,4,0,0,0,48,0,0,0,4, ldraw_lib__4_4cyli()],
+  [1,16,0,-24,0,4,0,0,0,48,0,0,0,4, ldraw_lib__4_4cyli(realsolid)],
 // 0 // This edge line separates smooth handle and bumpy whip
 // 1 16 0 -24 0 4 0 0 0 1 0 0 0 4 4-4edge.dat
-  [1,16,0,-24,0,4,0,0,0,1,0,0,0,4, ldraw_lib__4_4edge()],
+  [1,16,0,-24,0,4,0,0,0,1,0,0,0,4, ldraw_lib__4_4edge(realsolid)],
 // 0 //
 // 3 16 -4 -24 0 -2.975 -46.801 -1.946 -3.22 -46.992 -0.729
   [3,16,-4,-24,0,-2.975,-46.801,-1.946,-3.22,-46.992,-0.729],
@@ -2577,17 +2578,17 @@ function ldraw_lib__2488c01() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -8 0 6 0 0 0 1.6961 -3.17952 0 -1.05984 -5.08829 4-4cyli.dat
-  [1,16,0,-8,0,6,0,0,0,1.6961,-3.17952,0,-1.05984,-5.08829, ldraw_lib__4_4cyli()],
+  [1,16,0,-8,0,6,0,0,0,1.6961,-3.17952,0,-1.05984,-5.08829, ldraw_lib__4_4cyli(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -8 0 6 0 0 0 -1.6961 -3.17952 0 1.05984 -5.08829 4-4cyli.dat
-  [1,16,0,-8,0,6,0,0,0,-1.6961,-3.17952,0,1.05984,-5.08829, ldraw_lib__4_4cyli()],
+  [1,16,0,-8,0,6,0,0,0,-1.6961,-3.17952,0,1.05984,-5.08829, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 -9.696 1.06 6 0 0 0 -0.848048 -3.17952 0 0.529919 -5.08829 4-4edge.dat
-  [1,16,0,-9.696,1.06,6,0,0,0,-0.848048,-3.17952,0,0.529919,-5.08829, ldraw_lib__4_4edge()],
+  [1,16,0,-9.696,1.06,6,0,0,0,-0.848048,-3.17952,0,0.529919,-5.08829, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 -6.304 -1.06 6 0 0 0 -0.848048 -3.17952 0 0.529919 -5.08829 4-4edge.dat
-  [1,16,0,-6.304,-1.06,6,0,0,0,-0.848048,-3.17952,0,0.529919,-5.08829, ldraw_lib__4_4edge()],
+  [1,16,0,-6.304,-1.06,6,0,0,0,-0.848048,-3.17952,0,0.529919,-5.08829, ldraw_lib__4_4edge(realsolid)],
 // 0 //
 ];
 module ldraw_lib__2488c01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2488c01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2488c01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2488c01(line=0.2);

@@ -4,7 +4,8 @@ use <../p/2-4cylo.scad>
 use <../p/2-4edge.scad>
 use <../p/2-4ring4.scad>
 use <../p/stud4o.scad>
-function ldraw_lib__21778() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__21778(realsolid=false) = [
 // 0 Minifig Hair Coiled
 // 0 Name: 21778.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -21,17 +22,17 @@ function ldraw_lib__21778() = [
 // 
 // 
 // 1 16 0 -5 0 1 0 0 0 -1.25 0 0 0 1 stud4o.dat
-  [1,16,0,-5,0,1,0,0,0,-1.25,0,0,0,1, ldraw_lib__stud4o()],
+  [1,16,0,-5,0,1,0,0,0,-1.25,0,0,0,1, ldraw_lib__stud4o(realsolid)],
 // 1 16 0 0 0 8 0 0 0 -4 0 0 0 8 2-4cylo.dat
-  [1,16,0,0,0,8,0,0,0,-4,0,0,0,8, ldraw_lib__2_4cylo()],
+  [1,16,0,0,0,8,0,0,0,-4,0,0,0,8, ldraw_lib__2_4cylo(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 0 3.25 0 0 0 -4 0 0 0 3.25 2-4con3.dat
-  [1,16,0,0,0,3.25,0,0,0,-4,0,0,0,3.25, ldraw_lib__2_4con3()],
+  [1,16,0,0,0,3.25,0,0,0,-4,0,0,0,3.25, ldraw_lib__2_4con3(realsolid)],
 // 1 16 0 -4 0 9.75 0 0 0 -1 0 0 0 9.75 2-4edge.dat
-  [1,16,0,-4,0,9.75,0,0,0,-1,0,0,0,9.75, ldraw_lib__2_4edge()],
+  [1,16,0,-4,0,9.75,0,0,0,-1,0,0,0,9.75, ldraw_lib__2_4edge(realsolid)],
 // 1 16 0 -4 0 2 0 0 0 -1 0 0 0 2 2-4ring4.dat
-  [1,16,0,-4,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__2_4ring4()],
+  [1,16,0,-4,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__2_4ring4(realsolid)],
 // 3 16 -10.869 5.2755 -7.1056 -12.0104 4 -4.9752 -10.474 3.525 -7.2676
   [3,16,-10.869,5.2755,-7.1056,-12.0104,4,-4.9752,-10.474,3.525,-7.2676],
 // 3 16 -10.869 5.2755 -7.1056 -11.6339 6.3427 -5.6853 -12.0104 4 -4.9752
@@ -10748,5 +10749,5 @@ function ldraw_lib__21778() = [
   [5,24,1.5465,-9.272,-6.0306,0.4265,-8.5825,-7.3691,0.3705,-9.2185,-5.9866,1.338,-8.606,-7.5531],
 ];
 module ldraw_lib__21778(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__21778(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__21778(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__21778(line=0.2);

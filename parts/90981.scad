@@ -3,7 +3,8 @@ use <../p/4-4cylc.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4disc.scad>
 use <s/30240s01.scad>
-function ldraw_lib__90981() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__90981(realsolid=false) = [
 // 0 Animal Spider Web with Bar
 // 0 Name: 90981.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -19,17 +20,17 @@ function ldraw_lib__90981() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\30240s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30240s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30240s01(realsolid)],
 // 0 // Bar
 // 1 16 10 0 0 0 -100 0 4 0 0 0 0 4 4-4cylc.dat
-  [1,16,10,0,0,0,-100,0,4,0,0,0,0,4, ldraw_lib__4_4cylc()],
+  [1,16,10,0,0,0,-100,0,4,0,0,0,0,4, ldraw_lib__4_4cylc(realsolid)],
 // 1 16 -90 0 0 0 1 0 4 0 0 0 0 4 4-4disc.dat
-  [1,16,-90,0,0,0,1,0,4,0,0,0,0,4, ldraw_lib__4_4disc()],
+  [1,16,-90,0,0,0,1,0,4,0,0,0,0,4, ldraw_lib__4_4disc(realsolid)],
 // 0 // Spokes
 // 1 16 -27.73 0 -59.545 1.96021 29.5094 0 0 0 -2.2 -0.998779 57.9154 0 4-4cyli.dat
-  [1,16,-27.73,0,-59.545,1.96021,29.5094,0,0,0,-2.2,-0.998779,57.9154,0, ldraw_lib__4_4cyli()],
+  [1,16,-27.73,0,-59.545,1.96021,29.5094,0,0,0,-2.2,-0.998779,57.9154,0, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 -33.231 0 -60.184 1.67886 -49.1155 0 0 0 -2.2 1.42177 57.9971 0 4-4cyli.dat
-  [1,16,-33.231,0,-60.184,1.67886,-49.1155,0,0,0,-2.2,1.42177,57.9971,0, ldraw_lib__4_4cyli()],
+  [1,16,-33.231,0,-60.184,1.67886,-49.1155,0,0,0,-2.2,1.42177,57.9971,0, ldraw_lib__4_4cyli(realsolid)],
 // 
 // 2 24 2.93814 -0.84194 -3.83258 3.04073 0 -4
   [2,24,2.93814,-0.84194,-3.83258,3.04073,0,-4],
@@ -347,5 +348,5 @@ function ldraw_lib__90981() = [
   [5,24,.980496,-.906099,-7.58022,.086,-1.184,-16.33,.577,0,-16.33,.437,-1.556,-7.691],
 ];
 module ldraw_lib__90981(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__90981(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__90981(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__90981(line=0.2);

@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/bump5000.scad>
-function ldraw_lib__s__30459s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__30459s01(realsolid=false) = [
 // 0 ~Animal Dinosaur Head Tyrannosaurus Rex - Half
 // 0 Name: s\30459s01.dat
 // 0 Author: Stan Isachenko [angmarec]
@@ -21,7 +22,7 @@ function ldraw_lib__s__30459s01() = [
 // 3 16 18.75 1.58 1.102 18.75 1.58 -1.103 18.75 -0.642 -1.784
   [3,16,18.75,1.58,1.102,18.75,1.58,-1.103,18.75,-0.642,-1.784],
 // 1 16 18.75 0 0 0 2 0 2 0 0.095 0.095 0 -2 bump5000.dat
-  [1,16,18.75,0,0,0,2,0,2,0,0.095,0.095,0,-2, ldraw_lib__bump5000()],
+  [1,16,18.75,0,0,0,2,0,2,0,0.095,0.095,0,-2, ldraw_lib__bump5000(realsolid)],
 // 3 16 0 -7.905 -81.009 0 -6.251 -81.191 4.37 -7.905 -81.009
   [3,16,0,-7.905,-81.009,0,-6.251,-81.191,4.37,-7.905,-81.009],
 // 4 16 0 -4.583 -81.374 4.407 -4.583 -81.374 4.37 -7.905 -81.009 0 -6.251 -81.191
@@ -3654,5 +3655,5 @@ function ldraw_lib__s__30459s01() = [
   [5,24,20.944,6.682,-59.515,22.569,3.448,-58.127,23.532,5.062,-61.228,21.938,5.275,-57.516],
 ];
 module ldraw_lib__s__30459s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__30459s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__30459s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__30459s01(line=0.2);

@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/1-4cyli.scad>
 use <s/973s01.scad>
-function ldraw_lib__973p0f() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__973p0f(realsolid=false) = [
 // 0 Minifig Torso with Zippers, Badge with Minifig Head, Radio and Belt Pattern
 // 0 Name: 973p0f.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -19,9 +20,9 @@ function ldraw_lib__973p0f() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01(realsolid)],
 // 1 15 0 -4 0 4.243 0 -4.243 0 -8 0 -4.243 0 -4.243 1-4cyli.dat
-  [1,15,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli()],
+  [1,15,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli(realsolid)],
 // 
 // 4 80 -2.93 30.1 -10 -3.39 30.1 -10 -3.27 30.55 -10 -2.87 30.32 -10
   [4,80,-2.93,30.1,-10,-3.39,30.1,-10,-3.27,30.55,-10,-2.87,30.32,-10],
@@ -2206,5 +2207,5 @@ function ldraw_lib__973p0f() = [
   [3,16,-17.36,25.3,10,-15.7,16.25,10,-14.2,17.3,10],
 ];
 module ldraw_lib__973p0f(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__973p0f(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__973p0f(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__973p0f(line=0.2);

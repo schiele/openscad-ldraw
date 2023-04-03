@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__4613908d() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4613908d(realsolid=false) = [
 // 0 Sticker  5.4 x  3.7 with Wall and Horus Painting
 // 0 Name: 4613908d.dat
 // 0 Author: Christian Neumann [Wesley]
@@ -21,7 +22,7 @@ function ldraw_lib__4613908d() = [
 // 
 // 
 // 1 16 0 -0.25 0 37.5 0 0 0 0.25 0 0 0 54 box5-12.dat
-  [1,16,0,-0.25,0,37.5,0,0,0,0.25,0,0,0,54, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,37.5,0,0,0,0.25,0,0,0,54, ldraw_lib__box5_12(realsolid)],
 // 4 484 -30.24 -0.25 35.28 -30.75 -0.25 35.38 -31.26 -0.25 35.28 -29.81 -0.25 34.99
   [4,484,-30.24,-0.25,35.28,-30.75,-0.25,35.38,-31.26,-0.25,35.28,-29.81,-0.25,34.99],
 // 4 484 -29.81 -0.25 34.99 -31.26 -0.25 35.28 -31.69 -0.25 34.99 -29.52 -0.25 34.56
@@ -4024,5 +4025,5 @@ function ldraw_lib__4613908d() = [
   [4,484,4.3,-0.25,12.5,-1.1,-0.25,10,-0.3,-0.25,9.8,3.65,-0.25,10.95],
 ];
 module ldraw_lib__4613908d(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4613908d(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4613908d(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4613908d(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/30186s01.scad>
-function ldraw_lib__30186() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__30186(realsolid=false) = [
 // 0 Glass for Window Bay  3 x  8 x  6
 // 0 Name: 30186.dat
 // 0 Author: Luis E. Fernandez [lfernand]
@@ -25,9 +26,9 @@ function ldraw_lib__30186() = [
 // 4 16 -38.45 136 -6 38.4 136 -6 38.4 4 -6 -38.45 4 -6
   [4,16,-38.45,136,-6,38.4,136,-6,38.4,4,-6,-38.45,4,-6],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\30186s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30186s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30186s01(realsolid)],
 // 0
 ];
 module ldraw_lib__30186(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__30186(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__30186(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__30186(line=0.2);

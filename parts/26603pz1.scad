@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/26603s01.scad>
-function ldraw_lib__26603pz1() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__26603pz1(realsolid=false) = [
 // 0 Tile  2 x  3 with Metallic Silver Angled Lines Pattern
 // 0 Name: 26603pz1.dat
 // 0 Author: Vincent Messenet [Cheenzo]
@@ -20,7 +21,7 @@ function ldraw_lib__26603pz1() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\26603s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__26603s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__26603s01(realsolid)],
 // 
 // 4 80 12 0 10.25 12 0 8.25 15.75 0 3.25 17 0 4
   [4,80,12,0,10.25,12,0,8.25,15.75,0,3.25,17,0,4],
@@ -94,5 +95,5 @@ function ldraw_lib__26603pz1() = [
   [4,16,25.75,0,-14.75,17,0,-14.75,14,0,-18.625,26.75,0,-15.75],
 ];
 module ldraw_lib__26603pz1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__26603pz1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__26603pz1(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__26603pz1(line=0.2);

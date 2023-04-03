@@ -2,7 +2,8 @@ use <../../lib.scad>
 use <../../p/1-16cyli.scad>
 use <../../p/t04o6250.scad>
 use <../../p/t16o6250.scad>
-function ldraw_lib__s__3626cpm7s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__3626cpm7s01(realsolid=false) = [
 // 0 ~Minifig Head with LOTR Darkbrown Beard and Stubble Pattern - Half
 // 0 Name: s\3626cpm7s01.dat
 // 0 Author: Christian Neumann [Wesley]
@@ -17,11 +18,11 @@ function ldraw_lib__s__3626cpm7s01() = [
 // 
 // 
 // 1 16 0 4 0 -8 0 0 0 -6.4 0 0 0 -8 t04o6250.dat
-  [1,16,0,4,0,-8,0,0,0,-6.4,0,0,0,-8, ldraw_lib__t04o6250()],
+  [1,16,0,4,0,-8,0,0,0,-6.4,0,0,0,-8, ldraw_lib__t04o6250(realsolid)],
 // 1 16 0 4 0 -13 0 0 0 13 0 0 0 -13 1-16cyli.dat
-  [1,16,0,4,0,-13,0,0,0,13,0,0,0,-13, ldraw_lib__1_16cyli()],
+  [1,16,0,4,0,-13,0,0,0,13,0,0,0,-13, ldraw_lib__1_16cyli(realsolid)],
 // 1 16 0 17 0 -8 0 0 0 6.4 0 0 0 -8 t16o6250.dat
-  [1,16,0,17,0,-8,0,0,0,6.4,0,0,0,-8, ldraw_lib__t16o6250()],
+  [1,16,0,17,0,-8,0,0,0,6.4,0,0,0,-8, ldraw_lib__t16o6250(realsolid)],
 // 5 24 -12.011 4 -4.975 -12.011 17 -4.975 -9.192 4 -9.192 -13 4 0
   [5,24,-12.011,4,-4.975,-12.011,17,-4.975,-9.192,4,-9.192,-13,4,0],
 // 5 24 -9.192 4 -9.192 -9.192 17 -9.192 -4.975 4 -12.011 -12.011 4 -4.975
@@ -919,5 +920,5 @@ function ldraw_lib__s__3626cpm7s01() = [
   [3,308,-1.02,17.63,-12.64,-0.6,17.48,-12.761,-1.52,17.36,-12.608],
 ];
 module ldraw_lib__s__3626cpm7s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__3626cpm7s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__3626cpm7s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__3626cpm7s01(line=0.2);

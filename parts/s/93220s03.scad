@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__93220s03() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__93220s03(realsolid=false) = [
 // 0 ~Minifig Baseball Bat Grip Wrap Quarter
 // 0 Name: s\93220s03.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -175,5 +176,5 @@ function ldraw_lib__s__93220s03() = [
   [5,24,-4,-2.345,0,-3.9,-1.39,0,-3.6956,-2.555,1.5308,-3.60321,-1.18,-1.49253],
 ];
 module ldraw_lib__s__93220s03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__93220s03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__93220s03(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__93220s03(line=0.2);

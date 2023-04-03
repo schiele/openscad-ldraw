@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/1-4disc.scad>
 use <s/3351as01.scad>
-function ldraw_lib__3351ap02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3351ap02(realsolid=false) = [
 // 0 Roadsign Triangular Type 1 with Cross Intersection Pattern
 // 0 Name: 3351ap02.dat
 // 0 Author: Arne Hackstein
@@ -70,21 +71,21 @@ function ldraw_lib__3351ap02() = [
 // 3 16 -2.5 -91 -2 0 -94 -2 0 -102.1 -2
   [3,16,-2.5,-91,-2,0,-94,-2,0,-102.1,-2],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3351as01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3351as01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3351as01(realsolid)],
 // 1 4 0 -108.1 -2 1 0 -1.732 -1.732 0 -1 0 4 0 1-4disc.dat
-  [1,4,0,-108.1,-2,1,0,-1.732,-1.732,0,-1,0,4,0, ldraw_lib__1_4disc()],
+  [1,4,0,-108.1,-2,1,0,-1.732,-1.732,0,-1,0,4,0, ldraw_lib__1_4disc(realsolid)],
 // 1 4 0 -108.1 -2 1.732 0 -1 -1 0 -1.732 0 4 0 1-4disc.dat
-  [1,4,0,-108.1,-2,1.732,0,-1,-1,0,-1.732,0,4,0, ldraw_lib__1_4disc()],
+  [1,4,0,-108.1,-2,1.732,0,-1,-1,0,-1.732,0,4,0, ldraw_lib__1_4disc(realsolid)],
 // 1 4 21.997 -70 -2 1 0 1.732 1.732 0 -1 0 4 0 1-4disc.dat
-  [1,4,21.997,-70,-2,1,0,1.732,1.732,0,-1,0,4,0, ldraw_lib__1_4disc()],
+  [1,4,21.997,-70,-2,1,0,1.732,1.732,0,-1,0,4,0, ldraw_lib__1_4disc(realsolid)],
 // 1 4 21.997 -70 -2 0 0 2 2 0 0 0 4 0 1-4disc.dat
-  [1,4,21.997,-70,-2,0,0,2,2,0,0,0,4,0, ldraw_lib__1_4disc()],
+  [1,4,21.997,-70,-2,0,0,2,2,0,0,0,4,0, ldraw_lib__1_4disc(realsolid)],
 // 1 4 -21.997 -70 -2 -2 0 0 0 0 2 0 4 0 1-4disc.dat
-  [1,4,-21.997,-70,-2,-2,0,0,0,0,2,0,4,0, ldraw_lib__1_4disc()],
+  [1,4,-21.997,-70,-2,-2,0,0,0,0,2,0,4,0, ldraw_lib__1_4disc(realsolid)],
 // 1 4 -21.997 -70 -2 -1.732 0 -1 -1 0 1.732 0 4 0 1-4disc.dat
-  [1,4,-21.997,-70,-2,-1.732,0,-1,-1,0,1.732,0,4,0, ldraw_lib__1_4disc()],
+  [1,4,-21.997,-70,-2,-1.732,0,-1,-1,0,1.732,0,4,0, ldraw_lib__1_4disc(realsolid)],
 // 0
 ];
 module ldraw_lib__3351ap02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3351ap02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3351ap02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3351ap02(line=0.2);

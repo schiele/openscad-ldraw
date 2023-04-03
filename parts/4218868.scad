@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <2723.scad>
-function ldraw_lib__4218868() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4218868(realsolid=false) = [
 // 0 ~_Technic Disc  3 x  3 with Axlehole Black (Obsolete)
 // 0 Name: 4218868.dat
 // 0 Author: Michael Heidemann [mikeheide]
@@ -17,8 +18,8 @@ function ldraw_lib__4218868() = [
 // 
 // 
 // 1 0 0 0 0 1 0 0 0 1 0 0 0 1 2723.dat
-  [1,0,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2723()],
+  [1,0,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2723(realsolid)],
 ];
 module ldraw_lib__4218868(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4218868(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4218868(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4218868(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <42023.scad>
-function ldraw_lib__41763() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__41763(realsolid=false) = [
 // 0 =Slope Brick Curved  6 x  1 Inverted
 // 0 Name: 41763.dat
 // 0 Author: Chris Dee [cwdee]
@@ -22,9 +23,9 @@ function ldraw_lib__41763() = [
 // 0 // 42023 is used for molding opaque parts, 41763 for transparent parts.
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 42023.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__42023()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__42023(realsolid)],
 // 0
 ];
 module ldraw_lib__41763(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__41763(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__41763(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__41763(line=0.2);

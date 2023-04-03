@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/5-16cyli.scad>
 use <../../p/5-16edge.scad>
-function ldraw_lib__s__44360s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__44360s01(realsolid=false) = [
 // 0 ~Minifig Helmet SW Snowtrooper - Half
 // 0 Name: s\44360s01.dat
 // 0 Author: Willy Tschager [Holly-Wood]
@@ -16,11 +17,11 @@ function ldraw_lib__s__44360s01() = [
 // 
 // 
 // 1 16 0 21 0 0 0 -13 0 1 0 13 0 0 5-16edge.dat
-  [1,16,0,21,0,0,0,-13,0,1,0,13,0,0, ldraw_lib__5_16edge()],
+  [1,16,0,21,0,0,0,-13,0,1,0,13,0,0, ldraw_lib__5_16edge(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -4 0 0 0 -13 0 25 0 13 0 0 5-16cyli.dat
-  [1,16,0,-4,0,0,0,-13,0,25,0,13,0,0, ldraw_lib__5_16cyli()],
+  [1,16,0,-4,0,0,0,-13,0,25,0,13,0,0, ldraw_lib__5_16cyli(realsolid)],
 // 
 // 2 24 -10.992 .485 11.502 -14.13 .484 5.585
   [2,24,-10.992,.485,11.502,-14.13,.484,5.585],
@@ -1573,5 +1574,5 @@ function ldraw_lib__s__44360s01() = [
   [5,24,-17.43,21.472,5.383,-15,21,0,-13.858,21,5.74,-17.092,21.4,-.44],
 ];
 module ldraw_lib__s__44360s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__44360s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__44360s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__44360s01(line=0.2);

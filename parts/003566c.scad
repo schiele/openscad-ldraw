@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <004159e.scad>
-function ldraw_lib__003566c() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__003566c(realsolid=false) = [
 // 0 =Sticker  2.4 x  3 with United States Flag
 // 0 Name: 003566c.dat
 // 0 Author: Willy Tschager [Holly-Wood]
@@ -19,8 +20,8 @@ function ldraw_lib__003566c() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 004159e.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__004159e()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__004159e(realsolid)],
 ];
 module ldraw_lib__003566c(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__003566c(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__003566c(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__003566c(line=0.2);

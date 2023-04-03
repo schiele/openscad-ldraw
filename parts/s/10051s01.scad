@@ -2,7 +2,8 @@ use <../../lib.scad>
 use <../../p/2-4con3.scad>
 use <../../p/2-4disc.scad>
 use <../../p/2-4edge.scad>
-function ldraw_lib__s__10051s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__10051s01(realsolid=false) = [
 // 0 ~Minifig Helmet Castle Uruk-Hai with Lateral Comb Half
 // 0 Name: s\10051s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -19,11 +20,11 @@ function ldraw_lib__s__10051s01() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 2 0 0 0 3.25 0 -6 0 -3.25 0 0 2-4con3.dat
-  [1,16,0,2,0,0,0,3.25,0,-6,0,-3.25,0,0, ldraw_lib__2_4con3()],
+  [1,16,0,2,0,0,0,3.25,0,-6,0,-3.25,0,0, ldraw_lib__2_4con3(realsolid)],
 // 1 16 0 -4 0 0 0 9.75 0 1 0 -9.75 0 0 2-4edge.dat
-  [1,16,0,-4,0,0,0,9.75,0,1,0,-9.75,0,0, ldraw_lib__2_4edge()],
+  [1,16,0,-4,0,0,0,9.75,0,1,0,-9.75,0,0, ldraw_lib__2_4edge(realsolid)],
 // 1 16 0 -4 0 0 0 9.75 0 -1 0 -9.75 0 0 2-4disc.dat
-  [1,16,0,-4,0,0,0,9.75,0,-1,0,-9.75,0,0, ldraw_lib__2_4disc()],
+  [1,16,0,-4,0,0,0,9.75,0,-1,0,-9.75,0,0, ldraw_lib__2_4disc(realsolid)],
 // 2 24 11.45 1.99 -11.06 12.63 2.56 -10.03
   [2,24,11.45,1.99,-11.06,12.63,2.56,-10.03],
 // 2 24 5.49 -1 -12.14 7.54 0.07 -12.07
@@ -3048,5 +3049,5 @@ function ldraw_lib__s__10051s01() = [
   [5,24,5.38,7.51,-15.63,7.6,3.52,-14.38,5.34,2.74,-14.92,7.63,7.55,-15.04],
 ];
 module ldraw_lib__s__10051s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__10051s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__10051s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__10051s01(line=0.2);

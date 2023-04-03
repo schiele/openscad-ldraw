@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__190155a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__190155a(realsolid=false) = [
 // 0 Sticker  2.3 x  1.9 with Light Grey Lever and Base and Black "NEW"
 // 0 Name: 190155a.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -18,7 +19,7 @@ function ldraw_lib__190155a() = [
 // 
 // 
 // 1 16 0 -0.25 0 19 0 0 0 0.25 0 0 0 23 box5-12.dat
-  [1,16,0,-0.25,0,19,0,0,0,0.25,0,0,0,23, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,19,0,0,0,0.25,0,0,0,23, ldraw_lib__box5_12(realsolid)],
 // 4 7 9.1 -0.25 9.8 7.44 -0.25 10.49 7.3 -0.25 9.8 7.44 -0.25 9.11
   [4,7,9.1,-0.25,9.8,7.44,-0.25,10.49,7.3,-0.25,9.8,7.44,-0.25,9.11],
 // 4 7 9.1 -0.25 9.8 7.44 -0.25 9.11 7.83 -0.25 8.53 8.41 -0.25 8.14
@@ -755,5 +756,5 @@ function ldraw_lib__190155a() = [
   [4,15,3.3,-0.25,-10.5,4.2,-0.25,-11,19,-0.25,-11,3.5,-0.25,-10],
 ];
 module ldraw_lib__190155a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__190155a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__190155a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__190155a(line=0.2);

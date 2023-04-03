@@ -3,7 +3,8 @@ use <s/2350s01.scad>
 use <s/2350s02.scad>
 use <../p/stug-1x7.scad>
 use <../p/stug-1x8.scad>
-function ldraw_lib__2350b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2350b(realsolid=false) = [
 // 0 Crane Arm Outside Narrow 15 Studs
 // 0 Name: 2350b.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -19,7 +20,7 @@ function ldraw_lib__2350b() = [
 // 
 // 
 // 1 16 0 0 140 1 0 0 0 1 0 0 0 1 s\2350s01.dat
-  [1,16,0,0,140,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2350s01()],
+  [1,16,0,0,140,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2350s01(realsolid)],
 // 2 24 20 24 120 12 24 120
   [2,24,20,24,120,12,24,120],
 // 2 24 8 24 120 -8 24 120
@@ -37,11 +38,11 @@ function ldraw_lib__2350b() = [
 // 4 16 8 24 120 8 2 120 -8 2 120 -8 24 120
   [4,16,8,24,120,8,2,120,-8,2,120,-8,24,120],
 // 1 16 0 0 -20 1 0 0 0 1 0 0 0 1 s\2350s02.dat
-  [1,16,0,0,-20,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2350s02()],
+  [1,16,0,0,-20,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2350s02(realsolid)],
 // 1 16 0 0 80 0 0 -1 0 1 0 1 0 0 stug-1x8.dat
-  [1,16,0,0,80,0,0,-1,0,1,0,1,0,0, ldraw_lib__stug_1x8()],
+  [1,16,0,0,80,0,0,-1,0,1,0,1,0,0, ldraw_lib__stug_1x8(realsolid)],
 // 1 16 0 0 -70 0 0 -1 0 1 0 1 0 0 stug-1x7.dat
-  [1,16,0,0,-70,0,0,-1,0,1,0,1,0,0, ldraw_lib__stug_1x7()],
+  [1,16,0,0,-70,0,0,-1,0,1,0,1,0,0, ldraw_lib__stug_1x7(realsolid)],
 // 4 16 12 24 120 12 0 120 12 0 -160 12 24 -160
   [4,16,12,24,120,12,0,120,12,0,-160,12,24,-160],
 // 4 16 -12 24 -160 -12 0 -160 -12 0 120 -12 24 120
@@ -49,5 +50,5 @@ function ldraw_lib__2350b() = [
 // 
 ];
 module ldraw_lib__2350b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2350b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2350b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2350b(line=0.2);

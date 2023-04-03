@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <u9044.scad>
 use <u9255.scad>
-function ldraw_lib__735() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__735(realsolid=false) = [
 // 0 Magnet Holder for Train Base  6 x 16 Type 1 with Magnet (Complete)
 // 0 Name: 735.dat
 // 0 Author: Tore Eriksson [Tore_Eriksson]
@@ -23,10 +24,10 @@ function ldraw_lib__735() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 u9255.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9255()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9255(realsolid)],
 // 1 493 48.5 -5 0 0 0 1 0 1 0 -1 0 0 u9044.dat
-  [1,493,48.5,-5,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__u9044()],
+  [1,493,48.5,-5,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__u9044(realsolid)],
 ];
 module ldraw_lib__735(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__735(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__735(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__735(line=0.2);

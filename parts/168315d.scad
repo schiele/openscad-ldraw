@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__168315d() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__168315d(realsolid=false) = [
 // 0 Sticker  0.8 x  3.8 Technic Supercar V8 Logo
 // 0 Name: 168315d.dat
 // 0 Author: Imre Papp [ampi]
@@ -20,7 +21,7 @@ function ldraw_lib__168315d() = [
 // 
 // 
 // 1 14 0 -0.25 0 38 0 0 0 0.25 0 0 0 8 box5-12.dat
-  [1,14,0,-0.25,0,38,0,0,0,0.25,0,0,0,8, ldraw_lib__box5_12()],
+  [1,14,0,-0.25,0,38,0,0,0,0.25,0,0,0,8, ldraw_lib__box5_12(realsolid)],
 // 0 // sticker pattern
 // 4 15 -26.18 -0.25 0.21 -24.97 -0.25 3.61 -20.72 -0.25 -2.07 -22.6 -0.25 -4.09
   [4,15,-26.18,-0.25,0.21,-24.97,-0.25,3.61,-20.72,-0.25,-2.07,-22.6,-0.25,-4.09],
@@ -214,5 +215,5 @@ function ldraw_lib__168315d() = [
   [3,0,-1.73,-0.25,0.44,-0.7,-0.25,1.17,-0.79,-0.25,-0.44],
 ];
 module ldraw_lib__168315d(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__168315d(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__168315d(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__168315d(line=0.2);

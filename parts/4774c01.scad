@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <4773a.scad>
 use <4774.scad>
-function ldraw_lib__4774c01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4774c01(realsolid=false) = [
 // 0 Electric Light & Sound Brick  2 x  2 x  1.333 Siren (Complete)
 // 0 Name: 4774c01.dat
 // 0 Author: Willy Tschager [Holly-Wood]
@@ -18,13 +19,13 @@ function ldraw_lib__4774c01() = [
 // 0 // Electric Light & Sound Brick 2 x 2 x 1 & 1/3 Siren Base
 // 
 // 1 16 0 24 0 1 0 0 0 1 0 0 0 1 4774.dat
-  [1,16,0,24,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4774()],
+  [1,16,0,24,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4774(realsolid)],
 // 
 // 0 // Electric Light & Sound Brick 2 x 2 x 1 & 1/3 Siren Top
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 4773a.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4773a()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4773a(realsolid)],
 // 0
 ];
 module ldraw_lib__4774c01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4774c01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4774c01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4774c01(line=0.2);

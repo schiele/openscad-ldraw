@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/92198s01.scad>
-function ldraw_lib__92198p06() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__92198p06(realsolid=false) = [
 // 0 Figure Friends Female Head with Light Blue Eyes with Eye Shadow, Red Lips and Closed Mouth Pattern
 // 0 Name: 92198p06.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -17,7 +18,7 @@ function ldraw_lib__92198p06() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\92198s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__92198s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__92198s01(realsolid)],
 // 5 24 0 25.49 -12.39 3.39 23.09 -13.11 0 23.1 -13.86 2.87 25.46 -11.32
   [5,24,0,25.49,-12.39,3.39,23.09,-13.11,0,23.1,-13.86,2.87,25.46,-11.32],
 // 5 24 3.39 23.09 -13.11 0 23.1 -13.86 0 25.49 -12.39 4.08 20.01 -14.07
@@ -932,5 +933,5 @@ function ldraw_lib__92198p06() = [
   [3,0,-3.44,11.84,-14.641,-3.72,13.38,-14.481,-3.3,12.76,-14.584],
 ];
 module ldraw_lib__92198p06(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__92198p06(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__92198p06(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__92198p06(line=0.2);

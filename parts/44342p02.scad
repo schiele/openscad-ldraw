@@ -17,7 +17,8 @@ use <../p/stug-6x1.scad>
 use <../p/stug-6x6.scad>
 use <../p/stug-7x7.scad>
 use <../p/stug-9x9.scad>
-function ldraw_lib__44342p02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__44342p02(realsolid=false) = [
 // 0 Baseplate 32 x 32 Road 6-Stud Curve with White Road Edge Pattern
 // 0 Name: 44342p02.dat
 // 0 Author: Sylvain Sauvage [SLS]
@@ -36,15 +37,15 @@ function ldraw_lib__44342p02() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3811s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3811s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3811s01(realsolid)],
 // 1 16 316 0 316 4 0 0 0 1 0 0 0 4 1-4disc.dat
-  [1,16,316,0,316,4,0,0,0,1,0,0,0,4, ldraw_lib__1_4disc()],
+  [1,16,316,0,316,4,0,0,0,1,0,0,0,4, ldraw_lib__1_4disc(realsolid)],
 // 1 16 -316 0 316 -4 0 0 0 1 0 0 0 4 1-4disc.dat
-  [1,16,-316,0,316,-4,0,0,0,1,0,0,0,4, ldraw_lib__1_4disc()],
+  [1,16,-316,0,316,-4,0,0,0,1,0,0,0,4, ldraw_lib__1_4disc(realsolid)],
 // 1 16 -316 0 -316 -4 0 0 0 1 0 0 0 -4 1-4disc.dat
-  [1,16,-316,0,-316,-4,0,0,0,1,0,0,0,-4, ldraw_lib__1_4disc()],
+  [1,16,-316,0,-316,-4,0,0,0,1,0,0,0,-4, ldraw_lib__1_4disc(realsolid)],
 // 1 16 316 0 -316 4 0 0 0 1 0 0 0 -4 1-4disc.dat
-  [1,16,316,0,-316,4,0,0,0,1,0,0,0,-4, ldraw_lib__1_4disc()],
+  [1,16,316,0,-316,4,0,0,0,1,0,0,0,-4, ldraw_lib__1_4disc(realsolid)],
 // 
 // 0 // outer line
 // 4 16 182 0 -320 192 0 -320 191.901 0 -309.947 181.903 0 -310.144
@@ -484,60 +485,60 @@ function ldraw_lib__44342p02() = [
 // 
 // 0 // outer studs
 // 1 16 230 0 230 1 0 0 0 1 0 0 0 1 stug-9x9.dat
-  [1,16,230,0,230,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_9x9()],
+  [1,16,230,0,230,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_9x9(realsolid)],
 // 1 16 50 0 230 1 0 0 0 1 0 0 0 1 stug-9x9.dat
-  [1,16,50,0,230,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_9x9()],
+  [1,16,50,0,230,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_9x9(realsolid)],
 // 1 16 230 0 50 1 0 0 0 1 0 0 0 1 stug-9x9.dat
-  [1,16,230,0,50,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_9x9()],
+  [1,16,230,0,50,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_9x9(realsolid)],
 // 1 16 -110 0 250 1 0 0 0 1 0 0 0 1 stug-7x7.dat
-  [1,16,-110,0,250,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_7x7()],
+  [1,16,-110,0,250,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_7x7(realsolid)],
 // 1 16 250 0 -110 1 0 0 0 1 0 0 0 1 stug-7x7.dat
-  [1,16,250,0,-110,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_7x7()],
+  [1,16,250,0,-110,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_7x7(realsolid)],
 // 1 16 -190 0 260 1 0 0 0 1 0 0 0 1 stug-6x1.dat
-  [1,16,-190,0,260,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_6x1()],
+  [1,16,-190,0,260,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_6x1(realsolid)],
 // 1 16 260 0 -190 1 0 0 0 1 0 0 0 1 stug-1x6.dat
-  [1,16,260,0,-190,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_1x6()],
+  [1,16,260,0,-190,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_1x6(realsolid)],
 // 1 16 -260 0 260 1 0 0 0 1 0 0 0 1 stug-6x6.dat
-  [1,16,-260,0,260,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_6x6()],
+  [1,16,-260,0,260,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_6x6(realsolid)],
 // 1 16 260 0 -260 1 0 0 0 1 0 0 0 1 stug-6x6.dat
-  [1,16,260,0,-260,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_6x6()],
+  [1,16,260,0,-260,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_6x6(realsolid)],
 // 1 16 -100 0 170 1 0 0 0 1 0 0 0 1 stug-1x2.dat
-  [1,16,-100,0,170,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_1x2()],
+  [1,16,-100,0,170,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_1x2(realsolid)],
 // 1 16 -60 0 160 1 0 0 0 1 0 0 0 1 stug-2x2.dat
-  [1,16,-60,0,160,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_2x2()],
+  [1,16,-60,0,160,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_2x2(realsolid)],
 // 1 16 50 0 130 1 0 0 0 1 0 0 0 1 stug-1x9.dat
-  [1,16,50,0,130,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_1x9()],
+  [1,16,50,0,130,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_1x9(realsolid)],
 // 1 16 60 0 110 1 0 0 0 1 0 0 0 1 stug-1x8.dat
-  [1,16,60,0,110,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_1x8()],
+  [1,16,60,0,110,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_1x8(realsolid)],
 // 1 16 80 0 90 1 0 0 0 1 0 0 0 1 stug-1x6.dat
-  [1,16,80,0,90,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_1x6()],
+  [1,16,80,0,90,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_1x6(realsolid)],
 // 1 16 90 0 70 1 0 0 0 1 0 0 0 1 stug-1x5.dat
-  [1,16,90,0,70,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_1x5()],
+  [1,16,90,0,70,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_1x5(realsolid)],
 // 1 16 100 0 50 1 0 0 0 1 0 0 0 1 stug-1x4.dat
-  [1,16,100,0,50,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_1x4()],
+  [1,16,100,0,50,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_1x4(realsolid)],
 // 1 16 110 0 30 1 0 0 0 1 0 0 0 1 stug-1x3.dat
-  [1,16,110,0,30,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_1x3()],
+  [1,16,110,0,30,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_1x3(realsolid)],
 // 1 16 120 0 0 1 0 0 0 1 0 0 0 1 stug-2x2.dat
-  [1,16,120,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_2x2()],
+  [1,16,120,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_2x2(realsolid)],
 // 1 16 130 0 -30 1 0 0 0 1 0 0 0 1 stud.dat
-  [1,16,130,0,-30,1,0,0,0,1,0,0,0,1, ldraw_lib__stud()],
+  [1,16,130,0,-30,1,0,0,0,1,0,0,0,1, ldraw_lib__stud(realsolid)],
 // 1 16 160 0 -60 1 0 0 0 1 0 0 0 1 stug-2x2.dat
-  [1,16,160,0,-60,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_2x2()],
+  [1,16,160,0,-60,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_2x2(realsolid)],
 // 1 16 170 0 -100 1 0 0 0 1 0 0 0 1 stug-2x1.dat
-  [1,16,170,0,-100,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_2x1()],
+  [1,16,170,0,-100,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_2x1(realsolid)],
 // 
 // 0 // inner studs
 // 1 16 -310 0 -210 1 0 0 0 1 0 0 0 1 stud.dat
-  [1,16,-310,0,-210,1,0,0,0,1,0,0,0,1, ldraw_lib__stud()],
+  [1,16,-310,0,-210,1,0,0,0,1,0,0,0,1, ldraw_lib__stud(realsolid)],
 // 1 16 -290 0 -230 1 0 0 0 1 0 0 0 1 stug-1x3.dat
-  [1,16,-290,0,-230,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_1x3()],
+  [1,16,-290,0,-230,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_1x3(realsolid)],
 // 1 16 -280 0 -280 1 0 0 0 1 0 0 0 1 stug-4x4.dat
-  [1,16,-280,0,-280,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_4x4()],
+  [1,16,-280,0,-280,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_4x4(realsolid)],
 // 1 16 -230 0 -290 1 0 0 0 1 0 0 0 1 stug-3x1.dat
-  [1,16,-230,0,-290,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_3x1()],
+  [1,16,-230,0,-290,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_3x1(realsolid)],
 // 1 16 -210 0 -310 1 0 0 0 1 0 0 0 1 stud.dat
-  [1,16,-210,0,-310,1,0,0,0,1,0,0,0,1, ldraw_lib__stud()],
+  [1,16,-210,0,-310,1,0,0,0,1,0,0,0,1, ldraw_lib__stud(realsolid)],
 ];
 module ldraw_lib__44342p02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__44342p02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__44342p02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__44342p02(line=0.2);

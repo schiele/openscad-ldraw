@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/4-4ering.scad>
 use <s/98138s01.scad>
-function ldraw_lib__98138pxa() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__98138pxa(realsolid=false) = [
 // 0 Tile  1 x  1 Round with Smilie Face and X Eyes Pattern
 // 0 Name: 98138pxa.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -18,9 +19,9 @@ function ldraw_lib__98138pxa() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\98138s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01(realsolid)],
 // 1 16 0 0 0 9 0 0 0 1 0 0 0 9 4-4ering.dat
-  [1,16,0,0,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4ering()],
+  [1,16,0,0,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4ering(realsolid)],
 // 4 0 -7.4 0 0 -7.93 0 1.04 -8 0 0 -7.34 0 -.97
   [4,0,-7.4,0,0,-7.93,0,1.04,-8,0,0,-7.34,0,-.97],
 // 4 0 -7.34 0 -.97 -8 0 0 -7.93 0 -1.04 -7.15 0 -1.92
@@ -589,5 +590,5 @@ function ldraw_lib__98138pxa() = [
   [4,16,-2.9,0,-1.82,-4.38,0,-1.32,-5.87,0,-4.5,-5.23,0,-5.23],
 ];
 module ldraw_lib__98138pxa(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__98138pxa(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__98138pxa(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__98138pxa(line=0.2);

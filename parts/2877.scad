@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/box5.scad>
 use <../p/stud.scad>
 use <../p/stud3.scad>
-function ldraw_lib__2877() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2877(realsolid=false) = [
 // 0 Brick  1 x  2 with Grille
 // 0 Name: 2877.dat
 // 0 Author: James Jessiman
@@ -20,11 +21,11 @@ function ldraw_lib__2877() = [
 // 
 // 
 // 1 16 0 4 0 1 0 0 0 -5 0 0 0 1 stud3.dat
-  [1,16,0,4,0,1,0,0,0,-5,0,0,0,1, ldraw_lib__stud3()],
+  [1,16,0,4,0,1,0,0,0,-5,0,0,0,1, ldraw_lib__stud3(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 24 0 16 0 0 0 -20 0 0 0 6 box5.dat
-  [1,16,0,24,0,16,0,0,0,-20,0,0,0,6, ldraw_lib__box5()],
+  [1,16,0,24,0,16,0,0,0,-20,0,0,0,6, ldraw_lib__box5(realsolid)],
 // 4 16 20 24 8 16 24 6 -16 24 6 -20 24 8
   [4,16,20,24,8,16,24,6,-16,24,6,-20,24,8],
 // 4 16 -20 24 8 -16 24 6 -16 24 -6 -20 24 -8
@@ -372,11 +373,11 @@ function ldraw_lib__2877() = [
 // 3 16 -16 0 8 -18 0 10 -20 0 8
   [3,16,-16,0,8,-18,0,10,-20,0,8],
 // 1 16 10 0 0 1 0 0 0 1 0 0 0 1 stud.dat
-  [1,16,10,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud()],
+  [1,16,10,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud(realsolid)],
 // 1 16 -10 0 0 1 0 0 0 1 0 0 0 1 stud.dat
-  [1,16,-10,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud()],
+  [1,16,-10,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud(realsolid)],
 // 0
 ];
 module ldraw_lib__2877(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2877(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2877(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2877(line=0.2);

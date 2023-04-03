@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/92586s01.scad>
-function ldraw_lib__92586() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__92586(realsolid=false) = [
 // 0 Animal Dog German Shepherd
 // 0 Name: 92586.dat
 // 0 Author: Stan Isachenko [angmarec]
@@ -19,7 +20,7 @@ function ldraw_lib__92586() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\92586s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__92586s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__92586s01(realsolid)],
 // 0 // Patternable face area
 // 3 16 -5.19 -10.71 -37.25 -7.16 -10.95 -33.49 -6.75 -7.08 -36.41
   [3,16,-5.19,-10.71,-37.25,-7.16,-10.95,-33.49,-6.75,-7.08,-36.41],
@@ -137,5 +138,5 @@ function ldraw_lib__92586() = [
   [3,16,1.74,-1.32,-48.73,-0.02,-1.38,-48.96,-0.02,-0.04,-48.52],
 ];
 module ldraw_lib__92586(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__92586(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__92586(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__92586(line=0.2);

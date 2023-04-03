@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3010s01.scad>
-function ldraw_lib__3010pzp() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3010pzp(realsolid=false) = [
 // 0 Brick  1 x  4 with Hazmat Suit with Chest Pocket and Dark Green Lapel Pattern
 // 0 Name: 3010pzp.dat
 // 0 Author: Vincent Messenet [Cheenzo]
@@ -18,7 +19,7 @@ function ldraw_lib__3010pzp() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3010s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3010s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3010s01(realsolid)],
 // 
 // 0 // Dark Green Shapes
 // 3 288 10 7.5 -10 10 1.25 -10 5 5 -10
@@ -178,5 +179,5 @@ function ldraw_lib__3010pzp() = [
   [4,16,24,17.25,-10,24,22,-10,37.25,22,-10,37.25,17.25,-10],
 ];
 module ldraw_lib__3010pzp(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3010pzp(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3010pzp(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3010pzp(line=0.2);

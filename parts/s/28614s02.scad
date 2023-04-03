@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/4-4cylc.scad>
-function ldraw_lib__s__28614s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__28614s02(realsolid=false) = [
 // 0 ~Figure Elves Goblin Hair
 // 0 Name: s\28614s02.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -17,7 +18,7 @@ function ldraw_lib__s__28614s02() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -55 15 2 0 0 0 0 2 0 7 0 4-4cylc.dat
-  [1,16,0,-55,15,2,0,0,0,0,2,0,7,0, ldraw_lib__4_4cylc()],
+  [1,16,0,-55,15,2,0,0,0,0,2,0,7,0, ldraw_lib__4_4cylc(realsolid)],
 // 3 16 11.5 -59.1 -8.4 12.9 -57.7 -7.4 12.6 -59.1 -7.4
   [3,16,11.5,-59.1,-8.4,12.9,-57.7,-7.4,12.6,-59.1,-7.4],
 // 3 16 12.6 -59.1 -7.4 12.9 -57.7 -7.4 13.2 -58 -7
@@ -7412,5 +7413,5 @@ function ldraw_lib__s__28614s02() = [
   [5,24,-2.1,-57.7,21.7,-1.4142,-56.4142,22,-1.8478,-55.7654,22,-0.7654,-56.8478,22],
 ];
 module ldraw_lib__s__28614s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__28614s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__28614s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__28614s02(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/15068s01.scad>
-function ldraw_lib__15068p0b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__15068p0b(realsolid=false) = [
 // 0 Slope Brick Curved  2 x  2 x  0.667 with Two Black Dots in Circles within Black Kidney Shaped Area Pattern
 // 0 Name: 15068p0b.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -18,7 +19,7 @@ function ldraw_lib__15068p0b() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\15068s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__15068s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__15068s01(realsolid)],
 // 
 // 5 24 -20 -15.6524 12.616 20 -15.6524 12.616 20 -16.0001 20 20 -14.6036 5.36
   [5,24,-20,-15.6524,12.616,20,-15.6524,12.616,20,-16.0001,20,20,-14.6036,5.36],
@@ -424,5 +425,5 @@ function ldraw_lib__15068p0b() = [
   [3,16,-13.435,-14.49041,4.899,-11.7509,-14.48541,4.87863,-20,-14.6036,5.36],
 ];
 module ldraw_lib__15068p0b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__15068p0b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__15068p0b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__15068p0b(line=0.2);

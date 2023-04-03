@@ -4,7 +4,8 @@ use <../p/4-4ering.scad>
 use <../p/4-4ndis.scad>
 use <../p/4-4ring8.scad>
 use <s/98138s01.scad>
-function ldraw_lib__98138pm8() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__98138pm8(realsolid=false) = [
 // 0 Tile  1 x  1 Round with Swirl / Wave Pattern
 // 0 Name: 98138pm8.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -21,23 +22,23 @@ function ldraw_lib__98138pm8() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\98138s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01(realsolid)],
 // 1 28 0 0 0 8 0 0 0 1 0 0 0 8 4-4ering.dat
-  [1,28,0,0,0,8,0,0,0,1,0,0,0,8, ldraw_lib__4_4ering()],
+  [1,28,0,0,0,8,0,0,0,1,0,0,0,8, ldraw_lib__4_4ering(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 4-4ring8.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4ring8()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4ring8(realsolid)],
 // 1 308 -4.49 0 -0.18 0.5 0 0 0 1 0 0 0 0.5 4-4disc.dat
-  [1,308,-4.49,0,-0.18,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__4_4disc()],
+  [1,308,-4.49,0,-0.18,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__4_4disc(realsolid)],
 // 1 28 -4.12 0 -2.45 0.7 0 0 0 1 0 0 0 0.7 4-4ndis.dat
-  [1,28,-4.12,0,-2.45,0.7,0,0,0,1,0,0,0,0.7, ldraw_lib__4_4ndis()],
+  [1,28,-4.12,0,-2.45,0.7,0,0,0,1,0,0,0,0.7, ldraw_lib__4_4ndis(realsolid)],
 // 1 308 -4.12 0 -2.45 0.7 0 0 0 1 0 0 0 0.7 4-4disc.dat
-  [1,308,-4.12,0,-2.45,0.7,0,0,0,1,0,0,0,0.7, ldraw_lib__4_4disc()],
+  [1,308,-4.12,0,-2.45,0.7,0,0,0,1,0,0,0,0.7, ldraw_lib__4_4disc(realsolid)],
 // 1 28 -4.49 0 -0.18 0.5 0 0 0 1 0 0 0 0.5 4-4ndis.dat
-  [1,28,-4.49,0,-0.18,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__4_4ndis()],
+  [1,28,-4.49,0,-0.18,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__4_4ndis(realsolid)],
 // 1 308 -2.66 0 -4.65 1 0 0 0 1 0 0 0 1 4-4disc.dat
-  [1,308,-2.66,0,-4.65,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4disc()],
+  [1,308,-2.66,0,-4.65,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4disc(realsolid)],
 // 1 28 -2.66 0 -4.65 0.707107 0 0.707107 0 1 0 -0.707107 0 0.707107 4-4ndis.dat
-  [1,28,-2.66,0,-4.65,0.707107,0,0.707107,0,1,0,-0.707107,0,0.707107, ldraw_lib__4_4ndis()],
+  [1,28,-2.66,0,-4.65,0.707107,0,0.707107,0,1,0,-0.707107,0,0.707107, ldraw_lib__4_4ndis(realsolid)],
 // 4 308 -1.8 0 -7.3 -1 0 -7.4 -2.6 0 -6.6 -2.7 0 -7.1
   [4,308,-1.8,0,-7.3,-1,0,-7.4,-2.6,0,-6.6,-2.7,0,-7.1],
 // 4 308 -3.89 0 -6.54 -2.7 0 -7.1 -2.6 0 -6.6 -3.5 0 -5.9
@@ -792,5 +793,5 @@ function ldraw_lib__98138pm8() = [
   [4,28,-.52,0,-1.07,-.76,0,-.96,-1.34,0,-1.4,-1.21,0,-1.77],
 ];
 module ldraw_lib__98138pm8(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__98138pm8(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__98138pm8(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__98138pm8(line=0.2);

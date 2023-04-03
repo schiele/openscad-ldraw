@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/4066bs01.scad>
-function ldraw_lib__4066bp16() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4066bp16(realsolid=false) = [
 // 0 Duplo Brick  1 x  2 x  2 with Three Balloons Pattern
 // 0 Name: 4066bp16.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -19,7 +20,7 @@ function ldraw_lib__4066bp16() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4066bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4066bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4066bs01(realsolid)],
 // 4 0 -28 33 -20 -27.85 30.78 -20 -29.84 30.52 -20 -30 33 -20
   [4,0,-28,33,-20,-27.85,30.78,-20,-29.84,30.52,-20,-30,33,-20],
 // 4 0 -27.85 35.22 -20 -28 33 -20 -30 33 -20 -29.84 35.48 -20
@@ -844,5 +845,5 @@ function ldraw_lib__4066bp16() = [
   [3,16,0,0,-20,-11,14,-20,-8.52,14.16,-20],
 ];
 module ldraw_lib__4066bp16(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4066bp16(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4066bp16(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4066bp16(line=0.2);

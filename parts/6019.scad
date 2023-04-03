@@ -4,7 +4,8 @@ use <../p/box5.scad>
 use <../p/clip3.scad>
 use <../p/rect3.scad>
 use <../p/stud.scad>
-function ldraw_lib__6019() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6019(realsolid=false) = [
 // 0 Plate  1 x  1 with Clip Horizontal (Thick U-Clip)
 // 0 Name: 6019.dat
 // 0 Author: James Jessiman
@@ -30,19 +31,19 @@ function ldraw_lib__6019() = [
 // 
 // 
 // 1 16 0 0 0 0 0 -1 0 1 0 1 0 0 stud.dat
-  [1,16,0,0,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__stud()],
+  [1,16,0,0,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__stud(realsolid)],
 // 1 16 0 0 -20 1 0 0 0 1 0 0 0 1 clip3.dat
-  [1,16,0,0,-20,1,0,0,0,1,0,0,0,1, ldraw_lib__clip3()],
+  [1,16,0,0,-20,1,0,0,0,1,0,0,0,1, ldraw_lib__clip3(realsolid)],
 // 1 16 0 4 -10 -10 0 0 0 0 -4 0 20 0 box4-2p.dat
-  [1,16,0,4,-10,-10,0,0,0,0,-4,0,20,0, ldraw_lib__box4_2p()],
+  [1,16,0,4,-10,-10,0,0,0,0,-4,0,20,0, ldraw_lib__box4_2p(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 8 0 6 0 0 0 -4 0 0 0 6 box5.dat
-  [1,16,0,8,0,6,0,0,0,-4,0,0,0,6, ldraw_lib__box5()],
+  [1,16,0,8,0,6,0,0,0,-4,0,0,0,6, ldraw_lib__box5(realsolid)],
 // 1 16 -7 4 -10 0 0 3 -4 0 0 0 1 0 rect3.dat
-  [1,16,-7,4,-10,0,0,3,-4,0,0,0,1,0, ldraw_lib__rect3()],
+  [1,16,-7,4,-10,0,0,3,-4,0,0,0,1,0, ldraw_lib__rect3(realsolid)],
 // 1 16 7 4 -10 0 0 -3 -4 0 0 0 1 0 rect3.dat
-  [1,16,7,4,-10,0,0,-3,-4,0,0,0,1,0, ldraw_lib__rect3()],
+  [1,16,7,4,-10,0,0,-3,-4,0,0,0,1,0, ldraw_lib__rect3(realsolid)],
 // 4 16 10 8 -10 6 8 -6 -6 8 -6 -10 8 -10
   [4,16,10,8,-10,6,8,-6,-6,8,-6,-10,8,-10],
 // 4 16 -10 8 -10 -6 8 -6 -6 8 6 -10 8 10
@@ -54,5 +55,5 @@ function ldraw_lib__6019() = [
 // 0
 ];
 module ldraw_lib__6019(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6019(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6019(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6019(line=0.2);

@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/1-4chrd.scad>
 use <../p/48/1-8chrd.scad>
 use <s/65633s01.scad>
-function ldraw_lib__65633() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__65633(realsolid=false) = [
 // 0 Windscreen  6 x  6 x  1.333 Angled Curved
 // 0 Name: 65633.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -17,7 +18,7 @@ function ldraw_lib__65633() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\65633s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__65633s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__65633s01(realsolid)],
 // 
 // 0 // roof
 // 4 16 -40 0 10 -40 0 -30 40 0 -30 40 0 10
@@ -26,9 +27,9 @@ function ldraw_lib__65633() = [
 // 3 16 -40 0 -30 0 0 -39.9864 40 0 -30
   [3,16,-40,0,-30,0,0,-39.9864,40,0,-30],
 // 1 16 0 0 -5.8914 0 0 56.56887 0 1 0 -34.095 0 0 48\1-8chrd.dat
-  [1,16,0,0,-5.8914,0,0,56.56887,0,1,0,-34.095,0,0, ldraw_lib__48__1_8chrd()],
+  [1,16,0,0,-5.8914,0,0,56.56887,0,1,0,-34.095,0,0, ldraw_lib__48__1_8chrd(realsolid)],
 // 1 16 0 0 -5.8914 0 0 -56.56887 0 1 0 -34.095 0 0 48\1-8chrd.dat
-  [1,16,0,0,-5.8914,0,0,-56.56887,0,1,0,-34.095,0,0, ldraw_lib__48__1_8chrd()],
+  [1,16,0,0,-5.8914,0,0,-56.56887,0,1,0,-34.095,0,0, ldraw_lib__48__1_8chrd(realsolid)],
 // 
 // 0 // windscreen
 // 3 16 51.6589 27.5 -95.9002 60 27.5 -90 40 0 -30
@@ -82,7 +83,7 @@ function ldraw_lib__65633() = [
 // 4 16 60 20.2336 -7.037 60 20.8705 -24.074 60 30 10 60 20 10
   [4,16,60,20.2336,-7.037,60,20.8705,-24.074,60,30,10,60,20,10],
 // 1 16 60 30 8 0 -1 0 2 0 0 0 0 2 1-4chrd.dat
-  [1,16,60,30,8,0,-1,0,2,0,0,0,0,2, ldraw_lib__1_4chrd()],
+  [1,16,60,30,8,0,-1,0,2,0,0,0,0,2, ldraw_lib__1_4chrd(realsolid)],
 // 
 // 0 // right side
 // 4 16 -40 0 -30 -40 0 10 -60 20 10 -60 20.2336 -7.037
@@ -106,8 +107,8 @@ function ldraw_lib__65633() = [
 // 4 16 -60 30 10 -60 20.8705 -24.074 -60 20.2336 -7.037 -60 20 10
   [4,16,-60,30,10,-60,20.8705,-24.074,-60,20.2336,-7.037,-60,20,10],
 // 1 16 -60 30 8 0 1 0 2 0 0 0 0 2 1-4chrd.dat
-  [1,16,-60,30,8,0,1,0,2,0,0,0,0,2, ldraw_lib__1_4chrd()],
+  [1,16,-60,30,8,0,1,0,2,0,0,0,0,2, ldraw_lib__1_4chrd(realsolid)],
 ];
 module ldraw_lib__65633(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__65633(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__65633(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__65633(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <55652.scad>
-function ldraw_lib__u9464() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__u9464(realsolid=false) = [
 // 0 ~Electric Powered Up Distance Sensor Transducer
 // 0 Name: u9464.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -19,8 +20,8 @@ function ldraw_lib__u9464() = [
 // 
 // 
 // 1 16 0 0 -12 1 0 0 0 0 -1 0 1 0 55652.dat
-  [1,16,0,0,-12,1,0,0,0,0,-1,0,1,0, ldraw_lib__55652()],
+  [1,16,0,0,-12,1,0,0,0,0,-1,0,1,0, ldraw_lib__55652(realsolid)],
 ];
 module ldraw_lib__u9464(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__u9464(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__u9464(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__u9464(line=0.2);

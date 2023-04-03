@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <3020.scad>
-function ldraw_lib__4211395() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4211395(realsolid=false) = [
 // 0 ~_Plate  2 x  4 Light Bluish Grey (Obsolete)
 // 0 Name: 4211395.dat
 // 0 Author: Michael Heidemann [mikeheide]
@@ -22,8 +23,8 @@ function ldraw_lib__4211395() = [
 // 0 // colouring of the part (Light_Bluish_Grey).
 // 
 // 1 71 0 0 0 1 0 0 0 1 0 0 0 1 3020.dat
-  [1,71,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3020()],
+  [1,71,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3020(realsolid)],
 ];
 module ldraw_lib__4211395(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4211395(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4211395(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4211395(line=0.2);

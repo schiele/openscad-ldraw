@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/60601s01.scad>
-function ldraw_lib__60601px1() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__60601px1(realsolid=false) = [
 // 0 Glass for Window  1 x  2 x  2 with Scattered Newspapers Pattern
 // 0 Name: 60601px1.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -18,7 +19,7 @@ function ldraw_lib__60601px1() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\60601s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__60601s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__60601s01(realsolid)],
 // 4 0 6.5 9.4 -7 6.8 8.5 -7 -3.2 5 -7 -5.8 5 -7
   [4,0,6.5,9.4,-7,6.8,8.5,-7,-3.2,5,-7,-5.8,5,-7],
 // 4 0 6 10.5 -7 -8.3 5.5 -7 -8.6 6.3 -7 5.7 11.3 -7
@@ -1117,5 +1118,5 @@ function ldraw_lib__60601px1() = [
   [3,16,-13.1,9.9,-7,-13.5,10.1,-7,-13.5,10.5,-7],
 ];
 module ldraw_lib__60601px1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__60601px1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__60601px1(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__60601px1(line=0.2);

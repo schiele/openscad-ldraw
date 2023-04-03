@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/1-4cyli.scad>
 use <s/973s01.scad>
-function ldraw_lib__973pbz() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__973pbz(realsolid=false) = [
 // 0 Minifig Torso with White Fear Lantern Logo and Muscles Outline Pattern
 // 0 Name: 973pbz.dat
 // 0 Author: Rolf Osterthun [Rolf]
@@ -18,9 +19,9 @@ function ldraw_lib__973pbz() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01(realsolid)],
 // 1 0 0 -4 0 4.243 0 -4.243 0 -8 0 -4.243 0 -4.243 1-4cyli.dat
-  [1,0,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli()],
+  [1,0,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli(realsolid)],
 // 
 // 0 // front
 // 4 0 -8.495 23.01 -10 -8.412 22.021 -10 -8.825 21.155 -10 -9.155 21.608 -10
@@ -2467,5 +2468,5 @@ function ldraw_lib__973pbz() = [
   [3,16,-2.216,28.377,10,.041,28.412,10,-1.373,29.099,10],
 ];
 module ldraw_lib__973pbz(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__973pbz(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__973pbz(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__973pbz(line=0.2);

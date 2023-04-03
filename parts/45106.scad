@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/45106s00.scad>
 use <s/45106s01.scad>
-function ldraw_lib__45106() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__45106(realsolid=false) = [
 // 0 Animal Dragon Tail Oriental
 // 0 Name: 45106.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -20,12 +21,12 @@ function ldraw_lib__45106() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\45106s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__45106s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__45106s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\45106s00.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__45106s00()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__45106s00(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\45106s00.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__45106s00()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__45106s00(realsolid)],
 ];
 module ldraw_lib__45106(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__45106(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__45106(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__45106(line=0.2);

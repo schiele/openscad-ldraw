@@ -2,7 +2,8 @@ use <../lib.scad>
 use <3815bpm0.scad>
 use <3816bpm0.scad>
 use <3817bpm0.scad>
-function ldraw_lib__73200pm0() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__73200pm0(realsolid=false) = [
 // 0 Minifig Hips and Legs with LOTR Leather Armour Pattern
 // 0 Name: 73200pm0.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -21,12 +22,12 @@ function ldraw_lib__73200pm0() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 3815bpm0.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3815bpm0()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3815bpm0(realsolid)],
 // 1 16 0 12 0 1 0 0 0 1 0 0 0 1 3816bpm0.dat
-  [1,16,0,12,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3816bpm0()],
+  [1,16,0,12,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3816bpm0(realsolid)],
 // 1 16 0 12 0 1 0 0 0 1 0 0 0 1 3817bpm0.dat
-  [1,16,0,12,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3817bpm0()],
+  [1,16,0,12,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3817bpm0(realsolid)],
 ];
 module ldraw_lib__73200pm0(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__73200pm0(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__73200pm0(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__73200pm0(line=0.2);

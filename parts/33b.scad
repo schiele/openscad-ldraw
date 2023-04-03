@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/32as01.scad>
 use <../p/stud2.scad>
-function ldraw_lib__33b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__33b(realsolid=false) = [
 // 0 ~Door  1 x  2 x  3 Right with Open Stud with Hole
 // 0 Name: 33b.dat
 // 0 Author: Chris Dee [cwdee]
@@ -16,12 +17,12 @@ function ldraw_lib__33b() = [
 // 
 // 
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\32as01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__32as01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__32as01(realsolid)],
 // 1 16 10 0 0 1 0 0 0 1 0 0 0 1 stud2.dat
-  [1,16,10,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2()],
+  [1,16,10,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2(realsolid)],
 // 1 16 -10 0 0 1 0 0 0 1 0 0 0 1 stud2.dat
-  [1,16,-10,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2()],
+  [1,16,-10,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2(realsolid)],
 ];
 module ldraw_lib__33b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__33b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__33b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__33b(line=0.2);

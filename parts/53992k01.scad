@@ -3,7 +3,8 @@ use <../p/box5.scad>
 use <../p/rect.scad>
 use <../p/rect2p.scad>
 use <../p/rect3.scad>
-function ldraw_lib__53992k01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__53992k01(realsolid=false) = [
 // 0 ~Caterpillar Track 2.5 Wide - Segment Straight
 // 0 Name: 53992k01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -22,17 +23,17 @@ function ldraw_lib__53992k01() = [
 // 
 // 
 // 1 16 0 -38 0 10 0 0 0 -1 0 0 0 25 rect2p.dat
-  [1,16,0,-38,0,10,0,0,0,-1,0,0,0,25, ldraw_lib__rect2p()],
+  [1,16,0,-38,0,10,0,0,0,-1,0,0,0,25, ldraw_lib__rect2p(realsolid)],
 // 1 16 7.5 -40 0 0 0 -2.5 0 1 0 25 0 0 rect3.dat
-  [1,16,7.5,-40,0,0,0,-2.5,0,1,0,25,0,0, ldraw_lib__rect3()],
+  [1,16,7.5,-40,0,0,0,-2.5,0,1,0,25,0,0, ldraw_lib__rect3(realsolid)],
 // 1 16 -7.5 -40 0 0 0 2.5 0 1 0 -25 0 0 rect3.dat
-  [1,16,-7.5,-40,0,0,0,2.5,0,1,0,-25,0,0, ldraw_lib__rect3()],
+  [1,16,-7.5,-40,0,0,0,2.5,0,1,0,-25,0,0, ldraw_lib__rect3(realsolid)],
 // 1 16 0 -46 0 0 0 2.5 0 1 0 -25 0 0 rect.dat
-  [1,16,0,-46,0,0,0,2.5,0,1,0,-25,0,0, ldraw_lib__rect()],
+  [1,16,0,-46,0,0,0,2.5,0,1,0,-25,0,0, ldraw_lib__rect(realsolid)],
 // 1 16 3.75 -43 0 1.25 0 0 3 1 0 0 0 25 rect2p.dat
-  [1,16,3.75,-43,0,1.25,0,0,3,1,0,0,0,25, ldraw_lib__rect2p()],
+  [1,16,3.75,-43,0,1.25,0,0,3,1,0,0,0,25, ldraw_lib__rect2p(realsolid)],
 // 1 16 -3.75 -43 0 -1.25 0 0 3 1 0 0 0 -25 rect2p.dat
-  [1,16,-3.75,-43,0,-1.25,0,0,3,1,0,0,0,-25, ldraw_lib__rect2p()],
+  [1,16,-3.75,-43,0,-1.25,0,0,3,1,0,0,0,-25, ldraw_lib__rect2p(realsolid)],
 // 4 16 -5 -40 25 -2.5 -46 25 2.5 -46 25 5 -40 25
   [4,16,-5,-40,25,-2.5,-46,25,2.5,-46,25,5,-40,25],
 // 4 16 10 -38 -25 5 -40 -25 -5 -40 -25 -10 -38 -25
@@ -50,8 +51,8 @@ function ldraw_lib__53992k01() = [
 // 4 16 5 -40 -25 2.5 -46 -25 -2.5 -46 -25 -5 -40 -25
   [4,16,5,-40,-25,2.5,-46,-25,-2.5,-46,-25,-5,-40,-25],
 // 1 16 0 -38 0 2 0 0 0 5 0 0 0 10 box5.dat
-  [1,16,0,-38,0,2,0,0,0,5,0,0,0,10, ldraw_lib__box5()],
+  [1,16,0,-38,0,2,0,0,0,5,0,0,0,10, ldraw_lib__box5(realsolid)],
 ];
 module ldraw_lib__53992k01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__53992k01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__53992k01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__53992k01(line=0.2);

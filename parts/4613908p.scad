@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__4613908p() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4613908p(realsolid=false) = [
 // 0 Sticker  5.8 x  1.8 with Hieroglyphs in Dark Orange Frames
 // 0 Name: 4613908p.dat
 // 0 Author: Christian Neumann [Wesley]
@@ -21,7 +22,7 @@ function ldraw_lib__4613908p() = [
 // 
 // 
 // 1 16 0 -0.25 0 18 0 0 0 0.25 0 0 0 58 box5-12.dat
-  [1,16,0,-0.25,0,18,0,0,0,0.25,0,0,0,58, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,18,0,0,0,0.25,0,0,0,58, ldraw_lib__box5_12(realsolid)],
 // 4 72 9.85 -0.25 -28.35 9.77 -0.25 -28.91 11.84 -0.25 -28.94 11.68 -0.25 -28.32
   [4,72,9.85,-0.25,-28.35,9.77,-0.25,-28.91,11.84,-0.25,-28.94,11.68,-0.25,-28.32],
 // 4 72 1.17 -0.25 -29.05 1.5 -0.25 -28.44 1.34 -0.25 -28.19 0.88 -0.25 -28.65
@@ -4550,5 +4551,5 @@ function ldraw_lib__4613908p() = [
   [3,19,12,-0.25,6.8,11.45,-0.25,5.05,12.3,-0.25,6.4],
 ];
 module ldraw_lib__4613908p(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4613908p(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4613908p(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4613908p(line=0.2);

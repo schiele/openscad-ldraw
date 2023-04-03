@@ -7,7 +7,8 @@ use <../../p/3-16edge.scad>
 use <../../p/4-4cyli.scad>
 use <../../p/4-4edge.scad>
 use <../../p/4-4ring4.scad>
-function ldraw_lib__s__51342s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__51342s01(realsolid=false) = [
 // 0 ~Animal Dragon Wing 19 x 11 - Half Wing Surface
 // 0 Name: s\51342s01.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -22,41 +23,41 @@ function ldraw_lib__s__51342s01() = [
 // 
 // 
 // 1 16 0 -10 0 0 1 0 0 0 -9 -9 0 0 3-16edge.dat
-  [1,16,0,-10,0,0,1,0,0,0,-9,-9,0,0, ldraw_lib__3_16edge()],
+  [1,16,0,-10,0,0,1,0,0,0,-9,-9,0,0, ldraw_lib__3_16edge(realsolid)],
 // 1 16 0 -10 0 0 1 0 0 0 9 -9 0 0 3-16edge.dat
-  [1,16,0,-10,0,0,1,0,0,0,9,-9,0,0, ldraw_lib__3_16edge()],
+  [1,16,0,-10,0,0,1,0,0,0,9,-9,0,0, ldraw_lib__3_16edge(realsolid)],
 // 1 16 18 -10 0 0 1 0 9 0 0 0 0 -9 2-4edge.dat
-  [1,16,18,-10,0,0,1,0,9,0,0,0,0,-9, ldraw_lib__2_4edge()],
+  [1,16,18,-10,0,0,1,0,9,0,0,0,0,-9, ldraw_lib__2_4edge(realsolid)],
 // 1 16 0 -10 0 0 18 0 9 0 0 0 0 -9 2-4cyli.dat
-  [1,16,0,-10,0,0,18,0,9,0,0,0,0,-9, ldraw_lib__2_4cyli()],
+  [1,16,0,-10,0,0,18,0,9,0,0,0,0,-9, ldraw_lib__2_4cyli(realsolid)],
 // 1 16 18 -10 0 0 -1 0 2 0 0 0 0 -2 2-4ring3.dat
-  [1,16,18,-10,0,0,-1,0,2,0,0,0,0,-2, ldraw_lib__2_4ring3()],
+  [1,16,18,-10,0,0,-1,0,2,0,0,0,0,-2, ldraw_lib__2_4ring3(realsolid)],
 // 1 16 18 -10 0 0 -1 0 1 0 0 0 0 -1 2-4ring8.dat
-  [1,16,18,-10,0,0,-1,0,1,0,0,0,0,-1, ldraw_lib__2_4ring8()],
+  [1,16,18,-10,0,0,-1,0,1,0,0,0,0,-1, ldraw_lib__2_4ring8(realsolid)],
 // 
 // 1 16 0 10 0 0 1 0 0 0 -9 -9 0 0 3-16edge.dat
-  [1,16,0,10,0,0,1,0,0,0,-9,-9,0,0, ldraw_lib__3_16edge()],
+  [1,16,0,10,0,0,1,0,0,0,-9,-9,0,0, ldraw_lib__3_16edge(realsolid)],
 // 1 16 0 10 0 0 1 0 0 0 9 -9 0 0 3-16edge.dat
-  [1,16,0,10,0,0,1,0,0,0,9,-9,0,0, ldraw_lib__3_16edge()],
+  [1,16,0,10,0,0,1,0,0,0,9,-9,0,0, ldraw_lib__3_16edge(realsolid)],
 // 1 16 18 10 0 0 1 0 9 0 0 0 0 -9 2-4edge.dat
-  [1,16,18,10,0,0,1,0,9,0,0,0,0,-9, ldraw_lib__2_4edge()],
+  [1,16,18,10,0,0,1,0,9,0,0,0,0,-9, ldraw_lib__2_4edge(realsolid)],
 // 1 16 0 10 0 0 18 0 9 0 0 0 0 -9 2-4cyli.dat
-  [1,16,0,10,0,0,18,0,9,0,0,0,0,-9, ldraw_lib__2_4cyli()],
+  [1,16,0,10,0,0,18,0,9,0,0,0,0,-9, ldraw_lib__2_4cyli(realsolid)],
 // 1 16 18 10 0 0 -1 0 2 0 0 0 0 -2 2-4ring3.dat
-  [1,16,18,10,0,0,-1,0,2,0,0,0,0,-2, ldraw_lib__2_4ring3()],
+  [1,16,18,10,0,0,-1,0,2,0,0,0,0,-2, ldraw_lib__2_4ring3(realsolid)],
 // 1 16 18 10 0 0 -1 0 1 0 0 0 0 -1 2-4ring8.dat
-  [1,16,18,10,0,0,-1,0,1,0,0,0,0,-1, ldraw_lib__2_4ring8()],
+  [1,16,18,10,0,0,-1,0,1,0,0,0,0,-1, ldraw_lib__2_4ring8(realsolid)],
 // 
 // 1 16 89.675 -70 -6.75 4 0 0 0 0 4 0 6.75 0 4-4edge.dat
-  [1,16,89.675,-70,-6.75,4,0,0,0,0,4,0,6.75,0, ldraw_lib__4_4edge()],
+  [1,16,89.675,-70,-6.75,4,0,0,0,0,4,0,6.75,0, ldraw_lib__4_4edge(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 89.675 -70 -6.75 4 0 0 0 0 4 0 6.75 0 4-4cyli.dat
-  [1,16,89.675,-70,-6.75,4,0,0,0,0,4,0,6.75,0, ldraw_lib__4_4cyli()],
+  [1,16,89.675,-70,-6.75,4,0,0,0,0,4,0,6.75,0, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 89.675 -70 -6.75 1 0 0 0 0 1 0 1 0 4-4ring4.dat
-  [1,16,89.675,-70,-6.75,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4ring4()],
+  [1,16,89.675,-70,-6.75,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4ring4(realsolid)],
 // 1 16 89.675 -70 -6.75 1.25 0 0 0 0 1.25 0 1 0 4-4ring4.dat
-  [1,16,89.675,-70,-6.75,1.25,0,0,0,0,1.25,0,1,0, ldraw_lib__4_4ring4()],
+  [1,16,89.675,-70,-6.75,1.25,0,0,0,0,1.25,0,1,0, ldraw_lib__4_4ring4(realsolid)],
 // 
 // 4 16 48.521 -0.722 -2.152 79.198 -57.122 -2.152 72.633 -73.917 -2.152 62.0131 -62.871 -2.152
   [4,16,48.521,-0.722,-2.152,79.198,-57.122,-2.152,72.633,-73.917,-2.152,62.0131,-62.871,-2.152],
@@ -2040,5 +2041,5 @@ function ldraw_lib__s__51342s01() = [
 // 
 ];
 module ldraw_lib__s__51342s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__51342s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__51342s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__51342s01(line=0.2);

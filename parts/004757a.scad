@@ -3,7 +3,8 @@ use <../p/48/4-4aring.scad>
 use <../p/48/4-4ndis.scad>
 use <../p/48/4-4rin20.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__004757a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__004757a(realsolid=false) = [
 // 0 Sticker  1.3 x  1.3 with White French Railways Logo ("SNCF")
 // 0 Name: 004757a.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -22,13 +23,13 @@ function ldraw_lib__004757a() = [
 // 
 // 
 // 1 16 0 -0.25 0 13 0 0 0 0.25 0 0 0 13 box5-12.dat
-  [1,16,0,-0.25,0,13,0,0,0,0.25,0,0,0,13, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,13,0,0,0,0.25,0,0,0,13, ldraw_lib__box5_12(realsolid)],
 // 1 4 0 -0.25 0 10 0 0 0 1 0 0 0 10 48\4-4aring.dat
-  [1,4,0,-0.25,0,10,0,0,0,1,0,0,0,10, ldraw_lib__48__4_4aring()],
+  [1,4,0,-0.25,0,10,0,0,0,1,0,0,0,10, ldraw_lib__48__4_4aring(realsolid)],
 // 1 15 0 -0.25 0 0.5 0 0 0 1 0 0 0 0.5 48\4-4rin20.dat
-  [1,15,0,-0.25,0,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__48__4_4rin20()],
+  [1,15,0,-0.25,0,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__48__4_4rin20(realsolid)],
 // 1 4 0 -0.25 0 10.5 0 0 0 1 0 0 0 10.5 48\4-4ndis.dat
-  [1,4,0,-0.25,0,10.5,0,0,0,1,0,0,0,10.5, ldraw_lib__48__4_4ndis()],
+  [1,4,0,-0.25,0,10.5,0,0,0,1,0,0,0,10.5, ldraw_lib__48__4_4ndis(realsolid)],
 // 4 15 5.7 -0.25 5.2 6.8 -0.25 6.3 6.51 -0.25 6.65 4.9 -0.25 6
   [4,15,5.7,-0.25,5.2,6.8,-0.25,6.3,6.51,-0.25,6.65,4.9,-0.25,6],
 // 4 15 4.9 -0.25 6 6.51 -0.25 6.65 5.6 -0.25 7.46 4 -0.25 6.8
@@ -403,5 +404,5 @@ function ldraw_lib__004757a() = [
   [3,4,3.4,-0.25,0.8,3.4,-0.25,-0.4,6.7,-0.25,-4.4],
 ];
 module ldraw_lib__004757a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__004757a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__004757a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__004757a(line=0.2);

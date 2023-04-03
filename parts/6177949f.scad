@@ -6,7 +6,8 @@ use <s/6177949fs04.scad>
 use <s/6177949fs05.scad>
 use <s/6177949fs06.scad>
 use <s/6177949fs07.scad>
-function ldraw_lib__6177949f() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6177949f(realsolid=false) = [
 // 0 Sticker  0.8 x  1.9 with Black and Dark Blue Headlamp on Transparent Background Right
 // 0 Name: 6177949f.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -23,20 +24,20 @@ function ldraw_lib__6177949f() = [
 // 
 // 
 // 1 16 13.8789 0 0 0 0 1 0 1 0 -1 0 0 s\6177949fs01.dat
-  [1,16,13.8789,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__s__6177949fs01()],
+  [1,16,13.8789,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__s__6177949fs01(realsolid)],
 // 1 16 13.8547 0 0 0 0 1 0 1 0 -1 0 0 s\6177949fs02.dat
-  [1,16,13.8547,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__s__6177949fs02()],
+  [1,16,13.8547,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__s__6177949fs02(realsolid)],
 // 1 16 -.7172 0 0 0 0 1 0 1 0 -1 0 0 s\6177949fs03.dat
-  [1,16,-.7172,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__s__6177949fs03()],
+  [1,16,-.7172,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__s__6177949fs03(realsolid)],
 // 1 16 -.7428 0 0 0 0 1 0 1 0 -1 0 0 s\6177949fs04.dat
-  [1,16,-.7428,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__s__6177949fs04()],
+  [1,16,-.7428,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__s__6177949fs04(realsolid)],
 // 1 16 -14.6522 0 0 0 0 1 0 1 0 -1 0 0 s\6177949fs05.dat
-  [1,16,-14.6522,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__s__6177949fs05()],
+  [1,16,-14.6522,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__s__6177949fs05(realsolid)],
 // 1 16 -14.681 0 0 0 0 1 0 1 0 -1 0 0 s\6177949fs06.dat
-  [1,16,-14.681,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__s__6177949fs06()],
+  [1,16,-14.681,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__s__6177949fs06(realsolid)],
 // 1 16 0 0 0 0 0 1 0 1 0 -1 0 0 s\6177949fs07.dat
-  [1,16,0,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__s__6177949fs07()],
+  [1,16,0,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__s__6177949fs07(realsolid)],
 ];
 module ldraw_lib__6177949f(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6177949f(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6177949f(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6177949f(line=0.2);

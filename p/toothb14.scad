@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <rect2p.scad>
 use <rect3.scad>
-function ldraw_lib__toothb14() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__toothb14(realsolid=false) = [
 // 0 Single Tooth for Technic Bevel Gear 14 Tooth
 // 0 Name: toothb14.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -21,9 +22,9 @@ function ldraw_lib__toothb14() = [
 // 2 24 -1.5 -13 0 -4.28904 -12.3634 0
   [2,24,-1.5,-13,0,-4.28904,-12.3634,0],
 // 1 16 0 -11.5 -4 0 0 1.5 -1.5 0 0 0 3 0 rect2p.dat
-  [1,16,0,-11.5,-4,0,0,1.5,-1.5,0,0,0,3,0, ldraw_lib__rect2p()],
+  [1,16,0,-11.5,-4,0,0,1.5,-1.5,0,0,0,3,0, ldraw_lib__rect2p(realsolid)],
 // 1 16 0 -15.5 0 -1.5 0 0 0 0 -2.5 0 -3 0 rect3.dat
-  [1,16,0,-15.5,0,-1.5,0,0,0,0,-2.5,0,-3,0, ldraw_lib__rect3()],
+  [1,16,0,-15.5,0,-1.5,0,0,0,0,-2.5,0,-3,0, ldraw_lib__rect3(realsolid)],
 // 2 24 1.5 -13 -4 1 -15 -4
   [2,24,1.5,-13,-4,1,-15,-4],
 // 2 24 1 -15 -4 -1 -15 -4
@@ -74,5 +75,5 @@ function ldraw_lib__toothb14() = [
   [5,24,1.5,-13,-4,1.5,-18,0,1,-15,-4,1.5,-10,-4],
 ];
 module ldraw_lib__toothb14(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__toothb14(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__toothb14(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__toothb14(line=0.2);

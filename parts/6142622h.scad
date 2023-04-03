@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <6142622g.scad>
-function ldraw_lib__6142622h() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6142622h(realsolid=false) = [
 // 0 Sticker  1.0 x  0.9 with Dark Grey Exhaust Pipe on Black and Yellow Background Left
 // 0 Name: 6142622h.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -17,8 +18,8 @@ function ldraw_lib__6142622h() = [
 // 
 // 
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 6142622g.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__6142622g()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__6142622g(realsolid)],
 ];
 module ldraw_lib__6142622h(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6142622h(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6142622h(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6142622h(line=0.2);

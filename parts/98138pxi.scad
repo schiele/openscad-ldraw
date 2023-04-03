@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/4-4ering.scad>
 use <s/98138s02.scad>
-function ldraw_lib__98138pxi() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__98138pxi(realsolid=false) = [
 // 0 Tile  1 x  1 Round with Overwatch Logo Pattern
 // 0 Name: 98138pxi.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -20,9 +21,9 @@ function ldraw_lib__98138pxi() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\98138s02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s02(realsolid)],
 // 1 16 0 0 0 10 0 0 0 1 0 0 0 10 4-4ering.dat
-  [1,16,0,0,0,10,0,0,0,1,0,0,0,10, ldraw_lib__4_4ering()],
+  [1,16,0,0,0,10,0,0,0,1,0,0,0,10, ldraw_lib__4_4ering(realsolid)],
 // 
 // 4 80 -8.56 0 0 -8.49 0 1.11 -9.02 0 1.19 -9.1 0 0
   [4,80,-8.56,0,0,-8.49,0,1.11,-9.02,0,1.19,-9.1,0,0],
@@ -376,5 +377,5 @@ function ldraw_lib__98138pxi() = [
   [3,16,1.19,0,-9.02,0,0,-9.1,0,0,-10],
 ];
 module ldraw_lib__98138pxi(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__98138pxi(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__98138pxi(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__98138pxi(line=0.2);

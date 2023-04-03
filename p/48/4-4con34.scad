@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__48__4_4con34() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__48__4_4con34(realsolid=false) = [
 // 0 Hi-Res Cone 34 x 1.0
 // 0 Name: 48\4-4con34.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -209,5 +210,5 @@ function ldraw_lib__48__4_4con34() = [
 // 0 // Build by LDPartEditor (PrimGen 2.X)
 ];
 module ldraw_lib__48__4_4con34(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__48__4_4con34(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__48__4_4con34(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__48__4_4con34(line=0.2);

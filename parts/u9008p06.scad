@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/u9007s02.scad>
 use <s/u9008s01.scad>
-function ldraw_lib__u9008p06() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__u9008p06(realsolid=false) = [
 // 0 Roadsign Round with Round Base with Turn Left Pattern
 // 0 Name: u9008p06.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -16,9 +17,9 @@ function ldraw_lib__u9008p06() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\u9007s02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__u9007s02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__u9007s02(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\u9008s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__u9008s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__u9008s01(realsolid)],
 // 0 //
 // 4 16 -8.4 -62.56 -2.6 14.4 -61.6 -2.6 14.4 -66.4 -2.6 -8.4 -65.44 -2.6
   [4,16,-8.4,-62.56,-2.6,14.4,-61.6,-2.6,14.4,-66.4,-2.6,-8.4,-65.44,-2.6],
@@ -55,5 +56,5 @@ function ldraw_lib__u9008p06() = [
 // 0 //
 ];
 module ldraw_lib__u9008p06(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__u9008p06(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__u9008p06(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__u9008p06(line=0.2);

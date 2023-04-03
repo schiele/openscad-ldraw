@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/1-4cyli.scad>
 use <s/95228s01.scad>
-function ldraw_lib__95228() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__95228(realsolid=false) = [
 // 0 Minifig Bottle  1 x  1 x  2 Cylindrical
 // 0 Name: 95228.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -18,10 +19,10 @@ function ldraw_lib__95228() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\95228s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__95228s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__95228s01(realsolid)],
 // 1 16 0 24 0 -7.0711 0 7.0711 0 19 0 -7.0711 0 -7.0711 1-4cyli.dat
-  [1,16,0,24,0,-7.0711,0,7.0711,0,19,0,-7.0711,0,-7.0711, ldraw_lib__1_4cyli()],
+  [1,16,0,24,0,-7.0711,0,7.0711,0,19,0,-7.0711,0,-7.0711, ldraw_lib__1_4cyli(realsolid)],
 ];
 module ldraw_lib__95228(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__95228(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__95228(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__95228(line=0.2);

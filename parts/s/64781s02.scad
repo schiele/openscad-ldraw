@@ -3,7 +3,8 @@ use <../../p/box2-11.scad>
 use <../../p/box2-7.scad>
 use <../../p/rect2p.scad>
 use <../../p/toothr.scad>
-function ldraw_lib__s__64781s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__64781s02(realsolid=false) = [
 // 0 ~Technic Gear Rack with Pegholes and Axleholes - Tooth Module
 // 0 Name: s\64781s02.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -18,19 +19,19 @@ function ldraw_lib__s__64781s02() = [
 // 
 // 
 // 1 16 0 -2.5 -4 0 0 -1 0 -1 0 -1 0 0 toothr.dat
-  [1,16,0,-2.5,-4,0,0,-1,0,-1,0,-1,0,0, ldraw_lib__toothr()],
+  [1,16,0,-2.5,-4,0,0,-1,0,-1,0,-1,0,0, ldraw_lib__toothr(realsolid)],
 // 1 16 0 0 -6 7 0 0 0 2 0 0 -1 1 box2-7.dat
-  [1,16,0,0,-6,7,0,0,0,2,0,0,-1,1, ldraw_lib__box2_7()],
+  [1,16,0,0,-6,7,0,0,0,2,0,0,-1,1, ldraw_lib__box2_7(realsolid)],
 // 1 16 0 0 -2 7 0 0 0 2 0 0 1 -1 box2-7.dat
-  [1,16,0,0,-2,7,0,0,0,2,0,0,1,-1, ldraw_lib__box2_7()],
+  [1,16,0,0,-2,7,0,0,0,2,0,0,1,-1, ldraw_lib__box2_7(realsolid)],
 // 1 16 0 -2.5 -0.5 0 0 10 0 1 0 0.5 0 0 rect2p.dat
-  [1,16,0,-2.5,-0.5,0,0,10,0,1,0,0.5,0,0, ldraw_lib__rect2p()],
+  [1,16,0,-2.5,-0.5,0,0,10,0,1,0,0.5,0,0, ldraw_lib__rect2p(realsolid)],
 // 1 16 0 -2.5 -7.5 0 0 10 0 1 0 0.5 0 0 rect2p.dat
-  [1,16,0,-2.5,-7.5,0,0,10,0,1,0,0.5,0,0, ldraw_lib__rect2p()],
+  [1,16,0,-2.5,-7.5,0,0,10,0,1,0,0.5,0,0, ldraw_lib__rect2p(realsolid)],
 // 1 16 8.5 4 -4 0 0 -1.5 0 6 0 -4 0 0 box2-11.dat
-  [1,16,8.5,4,-4,0,0,-1.5,0,6,0,-4,0,0, ldraw_lib__box2_11()],
+  [1,16,8.5,4,-4,0,0,-1.5,0,6,0,-4,0,0, ldraw_lib__box2_11(realsolid)],
 // 1 16 -8.5 4 -4 0 0 1.5 0 6 0 4 0 0 box2-11.dat
-  [1,16,-8.5,4,-4,0,0,1.5,0,6,0,4,0,0, ldraw_lib__box2_11()],
+  [1,16,-8.5,4,-4,0,0,1.5,0,6,0,4,0,0, ldraw_lib__box2_11(realsolid)],
 // 3 16 10 10 -8 10 -2.5 -7 10 -2.5 -8
   [3,16,10,10,-8,10,-2.5,-7,10,-2.5,-8],
 // 3 16 10 10 0 10 -2.5 0 10 -2.5 -1
@@ -52,5 +53,5 @@ function ldraw_lib__s__64781s02() = [
 // 
 ];
 module ldraw_lib__s__64781s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__64781s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__64781s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__64781s02(line=0.2);

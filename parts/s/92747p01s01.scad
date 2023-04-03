@@ -2,7 +2,8 @@ use <../../lib.scad>
 use <../../p/48/1-4disc.scad>
 use <../../p/48/1-4rin39.scad>
 use <../../p/48/1-4ring9.scad>
-function ldraw_lib__s__92747p01s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__92747p01s01(realsolid=false) = [
 // 0 ~Minifig Shield Oval with SW Gungan Patrol Shield Pattern - Quarter
 // 0 Name: s\92747p01s01.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -17,11 +18,11 @@ function ldraw_lib__s__92747p01s01() = [
 // 
 // 
 // 1 16 0 0 0 -0.5 0 0 0 0 -0.965 0 1 0 48\1-4rin39.dat
-  [1,16,0,0,0,-0.5,0,0,0,0,-0.965,0,1,0, ldraw_lib__48__1_4rin39()],
+  [1,16,0,0,0,-0.5,0,0,0,0,-0.965,0,1,0, ldraw_lib__48__1_4rin39(realsolid)],
 // 1 16 0 0 0 -4.5 0 0 0 0 -7.2 0 1 0 48\1-4disc.dat
-  [1,16,0,0,0,-4.5,0,0,0,0,-7.2,0,1,0, ldraw_lib__48__1_4disc()],
+  [1,16,0,0,0,-4.5,0,0,0,0,-7.2,0,1,0, ldraw_lib__48__1_4disc(realsolid)],
 // 1 0 0 0 0 -0.5 0 0 0 0 -0.8 0 1 0 48\1-4ring9.dat
-  [1,0,0,0,0,-0.5,0,0,0,0,-0.8,0,1,0, ldraw_lib__48__1_4ring9()],
+  [1,0,0,0,0,-0.5,0,0,0,0,-0.8,0,1,0, ldraw_lib__48__1_4ring9(realsolid)],
 // 4 0 -8.7 -0.6 0 -8.7 -1 0 -17.3 -1 0 -17.3 -0.6 0
   [4,0,-8.7,-0.6,0,-8.7,-1,0,-17.3,-1,0,-17.3,-0.6,0],
 // 4 0 -17.9 -0.85 0 -17.3 -0.6 0 -17.3 -1 0 -17.85 -1.45 0
@@ -406,5 +407,5 @@ function ldraw_lib__s__92747p01s01() = [
   [4,0,-2.54475,-37.311339,0,-2.478,-36.362,0,0,-36.676,0,0,-37.635,0],
 ];
 module ldraw_lib__s__92747p01s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__92747p01s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__92747p01s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__92747p01s01(line=0.2);

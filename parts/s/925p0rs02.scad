@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__925p0rs02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__925p0rs02(realsolid=false) = [
 // 0 ~Brick  1 x  8 with "KØBMAND" Italic Pattern - Background
 // 0 Name: s\925p0rs02.dat
 // 0 Author: N. W. Perry [Plastikean]
@@ -299,5 +300,5 @@ function ldraw_lib__s__925p0rs02() = [
   [4,16,48.2,17.5,-10,48.6,17.1,-10,48.9,16.5,-10,47.6,17.8,-10],
 ];
 module ldraw_lib__s__925p0rs02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__925p0rs02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__925p0rs02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__925p0rs02(line=0.2);

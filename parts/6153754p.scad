@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__6153754p() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6153754p(realsolid=false) = [
 // 0 Sticker  0.7 x  1.9 with Black Surfer in Orange Sunset
 // 0 Name: 6153754p.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -345,5 +346,5 @@ function ldraw_lib__6153754p() = [
   [3,321,15.596,-0.25,-1.35,14.702,-0.25,-1.577,15.314,-0.25,-1.639],
 ];
 module ldraw_lib__6153754p(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6153754p(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6153754p(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6153754p(line=0.2);

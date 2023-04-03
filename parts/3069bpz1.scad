@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/1-4disc.scad>
 use <../p/1-4ndis.scad>
 use <s/3069bs01.scad>
-function ldraw_lib__3069bpz1() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3069bpz1(realsolid=false) = [
 // 0 Tile  1 x  2 with Silver Rectangles and Medium Azure Trapezoid Pattern
 // 0 Name: 3069bpz1.dat
 // 0 Author: Damien Roux [Darats]
@@ -19,23 +20,23 @@ function ldraw_lib__3069bpz1() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3069bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3069bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3069bs01(realsolid)],
 // 1 0 -17.71 0 -5.45 -1.23 0 0 0 1 0 0 0 -1.23 1-4disc.dat
-  [1,0,-17.71,0,-5.45,-1.23,0,0,0,1,0,0,0,-1.23, ldraw_lib__1_4disc()],
+  [1,0,-17.71,0,-5.45,-1.23,0,0,0,1,0,0,0,-1.23, ldraw_lib__1_4disc(realsolid)],
 // 1 0 -17.71 0 5.8 0 0 -1.23 0 1 0 1.23 0 0 1-4disc.dat
-  [1,0,-17.71,0,5.8,0,0,-1.23,0,1,0,1.23,0,0, ldraw_lib__1_4disc()],
+  [1,0,-17.71,0,5.8,0,0,-1.23,0,1,0,1.23,0,0, ldraw_lib__1_4disc(realsolid)],
 // 1 0 17.71 0 -5.45 1.23 0 0 0 1 0 0 0 -1.23 1-4disc.dat
-  [1,0,17.71,0,-5.45,1.23,0,0,0,1,0,0,0,-1.23, ldraw_lib__1_4disc()],
+  [1,0,17.71,0,-5.45,1.23,0,0,0,1,0,0,0,-1.23, ldraw_lib__1_4disc(realsolid)],
 // 1 0 17.71 0 5.8 0 0 1.23 0 1 0 1.23 0 0 1-4disc.dat
-  [1,0,17.71,0,5.8,0,0,1.23,0,1,0,1.23,0,0, ldraw_lib__1_4disc()],
+  [1,0,17.71,0,5.8,0,0,1.23,0,1,0,1.23,0,0, ldraw_lib__1_4disc(realsolid)],
 // 1 16 -17.71 0 -5.45 -1.23 0 0 0 1 0 0 0 -1.23 1-4ndis.dat
-  [1,16,-17.71,0,-5.45,-1.23,0,0,0,1,0,0,0,-1.23, ldraw_lib__1_4ndis()],
+  [1,16,-17.71,0,-5.45,-1.23,0,0,0,1,0,0,0,-1.23, ldraw_lib__1_4ndis(realsolid)],
 // 1 16 -17.71 0 5.8 0 0 -1.23 0 1 0 1.23 0 0 1-4ndis.dat
-  [1,16,-17.71,0,5.8,0,0,-1.23,0,1,0,1.23,0,0, ldraw_lib__1_4ndis()],
+  [1,16,-17.71,0,5.8,0,0,-1.23,0,1,0,1.23,0,0, ldraw_lib__1_4ndis(realsolid)],
 // 1 16 17.71 0 -5.45 1.23 0 0 0 1 0 0 0 -1.23 1-4ndis.dat
-  [1,16,17.71,0,-5.45,1.23,0,0,0,1,0,0,0,-1.23, ldraw_lib__1_4ndis()],
+  [1,16,17.71,0,-5.45,1.23,0,0,0,1,0,0,0,-1.23, ldraw_lib__1_4ndis(realsolid)],
 // 1 16 17.71 0 5.8 0 0 1.23 0 1 0 1.23 0 0 1-4ndis.dat
-  [1,16,17.71,0,5.8,0,0,1.23,0,1,0,1.23,0,0, ldraw_lib__1_4ndis()],
+  [1,16,17.71,0,5.8,0,0,1.23,0,1,0,1.23,0,0, ldraw_lib__1_4ndis(realsolid)],
 // 3 0 -17.71 0 -3.94 -18.94 0 -5.45 -17.71 0 -5.45
   [3,0,-17.71,0,-3.94,-18.94,0,-5.45,-17.71,0,-5.45],
 // 3 0 -17.71 0 -3.23 -18.94 0 -5.45 -17.71 0 -3.94
@@ -426,5 +427,5 @@ function ldraw_lib__3069bpz1() = [
   [4,322,2.5,0,-4.73,-2.5,0,-4.73,-4.26,0,-7.46,4.26,0,-7.46],
 ];
 module ldraw_lib__3069bpz1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3069bpz1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3069bpz1(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3069bpz1(line=0.2);

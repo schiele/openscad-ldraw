@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/u9201s01.scad>
-function ldraw_lib__u9201() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__u9201(realsolid=false) = [
 // 0 Fabuland Straw Hat
 // 0 Name: u9201.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -19,9 +20,9 @@ function ldraw_lib__u9201() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\u9201s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__u9201s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__u9201s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\u9201s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__u9201s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__u9201s01(realsolid)],
 // 0 // Middle condlines
 // 5 24 0 -2.2 25.1 0 -0.8 25.2 1.2 -2.2 25.4 -1.2 -2.2 25.4
   [5,24,0,-2.2,25.1,0,-0.8,25.2,1.2,-2.2,25.4,-1.2,-2.2,25.4],
@@ -115,5 +116,5 @@ function ldraw_lib__u9201() = [
   [5,24,0,9.5,27.7,0,8.5,26.9,2.6,9.4,27.6,-2.6,9.4,27.6],
 ];
 module ldraw_lib__u9201(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__u9201(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__u9201(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__u9201(line=0.2);

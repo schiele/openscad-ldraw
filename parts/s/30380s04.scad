@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/rect2p.scad>
 use <../../p/rect3.scad>
-function ldraw_lib__s__30380s04() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__30380s04(realsolid=false) = [
 // 0 ~Minifig Helmet SW Mandalorian with Rocket Pack Helmet Ears
 // 0 Name: s\30380s04.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -190,11 +191,11 @@ function ldraw_lib__s__30380s04() = [
 // 5 24 -17.25 1.418 0.625 -17.25 1.273 0.0005 -17.25 1.418 -0.624 -16.75 -0.826 1.733
   [5,24,-17.25,1.418,0.625,-17.25,1.273,0.0005,-17.25,1.418,-0.624,-16.75,-0.826,1.733],
 // 1 16 -16.75 9.5 2.5 -0.25 0 0.25 0 -1 0 0 0 1.25 rect3.dat
-  [1,16,-16.75,9.5,2.5,-0.25,0,0.25,0,-1,0,0,0,1.25, ldraw_lib__rect3()],
+  [1,16,-16.75,9.5,2.5,-0.25,0,0.25,0,-1,0,0,0,1.25, ldraw_lib__rect3(realsolid)],
 // 1 16 -17 9.5 0 0 0 -0.25 0 -1 0 -1.25 0 0 rect2p.dat
-  [1,16,-17,9.5,0,0,0,-0.25,0,-1,0,-1.25,0,0, ldraw_lib__rect2p()],
+  [1,16,-17,9.5,0,0,0,-0.25,0,-1,0,-1.25,0,0, ldraw_lib__rect2p(realsolid)],
 // 1 16 -16.75 9.5 -2.5 0.25 0 0.25 0 -1 0 0 0 -1.25 rect3.dat
-  [1,16,-16.75,9.5,-2.5,0.25,0,0.25,0,-1,0,0,0,-1.25, ldraw_lib__rect3()],
+  [1,16,-16.75,9.5,-2.5,0.25,0,0.25,0,-1,0,0,0,-1.25, ldraw_lib__rect3(realsolid)],
 // 2 24 -15.5088 1.7545 3.4982 -15.4662 2.5 3.7341
   [2,24,-15.5088,1.7545,3.4982,-15.4662,2.5,3.7341],
 // 2 24 -15.3594 0.4896 3.0934 -15.5088 1.7545 3.4982
@@ -367,5 +368,5 @@ function ldraw_lib__s__30380s04() = [
   [5,24,-16.491,-1.202,0,-16.75,-1.202,0,-16.75,-0.825,-1.733,-16.504,-0.826,1.733],
 ];
 module ldraw_lib__s__30380s04(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__30380s04(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__30380s04(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__30380s04(line=0.2);

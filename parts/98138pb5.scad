@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4ering.scad>
 use <s/98138pb5s01.scad>
 use <s/98138s01.scad>
-function ldraw_lib__98138pb5() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__98138pb5(realsolid=false) = [
 // 0 Tile  1 x  1 Round with Sand Green Iron Man Chest Reactor Pattern
 // 0 Name: 98138pb5.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -19,19 +20,19 @@ function ldraw_lib__98138pb5() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\98138s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01(realsolid)],
 // 1 378 0 0 0 9 0 0 0 1 0 0 0 9 4-4ering.dat
-  [1,378,0,0,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4ering()],
+  [1,378,0,0,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4ering(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\98138pb5s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138pb5s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138pb5s01(realsolid)],
 // 1 16 0 0 0 .309017 0 -.951057 0 1 0 .951057 0 .309017 s\98138pb5s01.dat
-  [1,16,0,0,0,.309017,0,-.951057,0,1,0,.951057,0,.309017, ldraw_lib__s__98138pb5s01()],
+  [1,16,0,0,0,.309017,0,-.951057,0,1,0,.951057,0,.309017, ldraw_lib__s__98138pb5s01(realsolid)],
 // 1 16 0 0 0 -.809017 0 -.587785 0 1 0 .587785 0 -.809017 s\98138pb5s01.dat
-  [1,16,0,0,0,-.809017,0,-.587785,0,1,0,.587785,0,-.809017, ldraw_lib__s__98138pb5s01()],
+  [1,16,0,0,0,-.809017,0,-.587785,0,1,0,.587785,0,-.809017, ldraw_lib__s__98138pb5s01(realsolid)],
 // 1 16 0 0 0 .309017 0 .951057 0 1 0 -.951057 0 .309017 s\98138pb5s01.dat
-  [1,16,0,0,0,.309017,0,.951057,0,1,0,-.951057,0,.309017, ldraw_lib__s__98138pb5s01()],
+  [1,16,0,0,0,.309017,0,.951057,0,1,0,-.951057,0,.309017, ldraw_lib__s__98138pb5s01(realsolid)],
 // 1 16 0 0 0 -.809017 0 .587785 0 1 0 -.587785 0 -.809017 s\98138pb5s01.dat
-  [1,16,0,0,0,-.809017,0,.587785,0,1,0,-.587785,0,-.809017, ldraw_lib__s__98138pb5s01()],
+  [1,16,0,0,0,-.809017,0,.587785,0,1,0,-.587785,0,-.809017, ldraw_lib__s__98138pb5s01(realsolid)],
 // 3 378 0 0 -7.45 0 0 -9 .7 0 -7.45
   [3,378,0,0,-7.45,0,0,-9,.7,0,-7.45],
 // 3 378 0 0 -9 0 0 -7.45 -.7 0 -7.45
@@ -136,5 +137,5 @@ function ldraw_lib__98138pb5() = [
   [3,378,5.0107,0,-7.2369,6.3639,0,-6.3639,5.3343,0,-7.0018],
 ];
 module ldraw_lib__98138pb5(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__98138pb5(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__98138pb5(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__98138pb5(line=0.2);

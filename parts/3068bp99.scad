@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4ndis.scad>
 use <s/3068bs01.scad>
-function ldraw_lib__3068bp99() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3068bp99(realsolid=false) = [
 // 0 Tile  2 x  2 with  3 Black Dots and Mummy Head Pattern
 // 0 Name: 3068bp99.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -19,19 +20,19 @@ function ldraw_lib__3068bp99() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3068bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3068bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3068bs01(realsolid)],
 // 1 16 -13.5 0 1 3 0 0 0 1 0 0 0 3 4-4ndis.dat
-  [1,16,-13.5,0,1,3,0,0,0,1,0,0,0,3, ldraw_lib__4_4ndis()],
+  [1,16,-13.5,0,1,3,0,0,0,1,0,0,0,3, ldraw_lib__4_4ndis(realsolid)],
 // 1 16 -6 0 -6 3 0 0 0 1 0 0 0 3 4-4ndis.dat
-  [1,16,-6,0,-6,3,0,0,0,1,0,0,0,3, ldraw_lib__4_4ndis()],
+  [1,16,-6,0,-6,3,0,0,0,1,0,0,0,3, ldraw_lib__4_4ndis(realsolid)],
 // 1 16 1 0 -13.5 3 0 0 0 1 0 0 0 3 4-4ndis.dat
-  [1,16,1,0,-13.5,3,0,0,0,1,0,0,0,3, ldraw_lib__4_4ndis()],
+  [1,16,1,0,-13.5,3,0,0,0,1,0,0,0,3, ldraw_lib__4_4ndis(realsolid)],
 // 1 0 -13.5 0 1 3 0 0 0 1 0 0 0 3 4-4disc.dat
-  [1,0,-13.5,0,1,3,0,0,0,1,0,0,0,3, ldraw_lib__4_4disc()],
+  [1,0,-13.5,0,1,3,0,0,0,1,0,0,0,3, ldraw_lib__4_4disc(realsolid)],
 // 1 0 -6 0 -6 3 0 0 0 1 0 0 0 3 4-4disc.dat
-  [1,0,-6,0,-6,3,0,0,0,1,0,0,0,3, ldraw_lib__4_4disc()],
+  [1,0,-6,0,-6,3,0,0,0,1,0,0,0,3, ldraw_lib__4_4disc(realsolid)],
 // 1 0 1 0 -13.5 3 0 0 0 1 0 0 0 3 4-4disc.dat
-  [1,0,1,0,-13.5,3,0,0,0,1,0,0,0,3, ldraw_lib__4_4disc()],
+  [1,0,1,0,-13.5,3,0,0,0,1,0,0,0,3, ldraw_lib__4_4disc(realsolid)],
 // 4 0 4.1463 0 15.4985 5.0054 0 16.0726 4.8352 0 16.4836 3.8317 0 15.8131
   [4,0,4.1463,0,15.4985,5.0054,0,16.0726,4.8352,0,16.4836,3.8317,0,15.8131],
 // 4 0 7.1736 0 16.214 8.1034 0 15.7107 8.418 0 16.0252 7.3439 0 16.625
@@ -848,5 +849,5 @@ function ldraw_lib__3068bp99() = [
   [3,16,-3,0,-3,4,0,-10.5,18.3,0,-19],
 ];
 module ldraw_lib__3068bp99(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3068bp99(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3068bp99(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3068bp99(line=0.2);

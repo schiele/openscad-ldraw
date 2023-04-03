@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__axl2hol3() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__axl2hol3(realsolid=false) = [
 // 0 Technic Axle Hole Reduced Tooth Outer Edges
 // 0 Name: axl2hol3.dat
 // 0 Author: Guy Vivan [guyvivan]
@@ -44,5 +45,5 @@ function ldraw_lib__axl2hol3() = [
   [2,24,4.7316,0,-3.5115,4.2426,0,-4.2426],
 ];
 module ldraw_lib__axl2hol3(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__axl2hol3(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__axl2hol3(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__axl2hol3(line=0.2);

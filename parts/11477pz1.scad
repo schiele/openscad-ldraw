@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/11477s01.scad>
-function ldraw_lib__11477pz1() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__11477pz1(realsolid=false) = [
 // 0 Slope Brick Curved  2 x  1 with 7 Reddish Brown Arrowheads Pattern
 // 0 Name: 11477pz1.dat
 // 0 Author: Vincent Messenet [Cheenzo]
@@ -18,7 +19,7 @@ function ldraw_lib__11477pz1() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\11477s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__11477s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__11477s01(realsolid)],
 // 
 // 4 70 2 -15.776 15.25 0 -15.882 17.5 1.75 -15.765 15 2 -15.765 15
   [4,70,2,-15.776,15.25,0,-15.882,17.5,1.75,-15.765,15,2,-15.765,15],
@@ -207,5 +208,5 @@ function ldraw_lib__11477pz1() = [
   [5,24,10,-15.6524,12.616,-10,-15.6524,12.616,10,-16,20,10,-14.6036,5.36],
 ];
 module ldraw_lib__11477pz1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__11477pz1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__11477pz1(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__11477pz1(line=0.2);

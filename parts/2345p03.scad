@@ -2,7 +2,8 @@ use <../lib.scad>
 use <s/2345p02a.scad>
 use <s/2345p02b.scad>
 use <s/2345s01.scad>
-function ldraw_lib__2345p03() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2345p03(realsolid=false) = [
 // 0 Panel Wall  3 x  3 x  6 Corner with Light Grey Stones Pattern
 // 0 Name: 2345p03.dat
 // 0 Author: Chris Dee [cwdee]
@@ -17,15 +18,15 @@ function ldraw_lib__2345p03() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2345s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2345s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2345s01(realsolid)],
 // 0 Surround
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2345p02a.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2345p02a()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2345p02a(realsolid)],
 // 0 Stones
 // 1 7 0 0 0 1 0 0 0 1 0 0 0 1 s\2345p02b.dat
-  [1,7,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2345p02b()],
+  [1,7,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2345p02b(realsolid)],
 // 0
 ];
 module ldraw_lib__2345p03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2345p03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2345p03(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2345p03(line=0.2);

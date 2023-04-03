@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <1-4edge.scad>
-function ldraw_lib__confricrib4() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__confricrib4(realsolid=false) = [
 // 0 Technic Friction Pin Long Stop Ring
 // 0 Name: confricrib4.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -15,9 +16,9 @@ function ldraw_lib__confricrib4() = [
 // 
 // 
 // 1 16 0 2 0 6 0 0 0 1 0 0 0 6 1-4edge.dat
-  [1,16,0,2,0,6,0,0,0,1,0,0,0,6, ldraw_lib__1_4edge()],
+  [1,16,0,2,0,6,0,0,0,1,0,0,0,6, ldraw_lib__1_4edge(realsolid)],
 // 1 16 0 -2 0 6 0 0 0 1 0 0 0 6 1-4edge.dat
-  [1,16,0,-2,0,6,0,0,0,1,0,0,0,6, ldraw_lib__1_4edge()],
+  [1,16,0,-2,0,6,0,0,0,1,0,0,0,6, ldraw_lib__1_4edge(realsolid)],
 // 4 16 5.841 2 0.7994 5.5434 2 2.2962 5.7282 1.1 2.3727 6.0748 1.1 0.6294
   [4,16,5.841,2,0.7994,5.5434,2,2.2962,5.7282,1.1,2.3727,6.0748,1.1,0.6294],
 // 4 16 5.5434 2 2.2962 4.2426 2 4.2426 4.384 1.1 4.384 5.7282 1.1 2.3727
@@ -116,5 +117,5 @@ function ldraw_lib__confricrib4() = [
   [2,24,6.0748,1.1,0.6294,6.1475,0,0.5757],
 ];
 module ldraw_lib__confricrib4(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__confricrib4(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__confricrib4(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__confricrib4(line=0.2);

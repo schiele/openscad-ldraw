@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__163155c() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__163155c(realsolid=false) = [
 // 0 Sticker  2.4 x  3 with Town Airport Logo
 // 0 Name: 163155c.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -19,7 +20,7 @@ function ldraw_lib__163155c() = [
 // 
 // 
 // 1 16 0 -0.25 0 29.83 0 0 0 0.25 0 0 0 24 box5-12.dat
-  [1,16,0,-0.25,0,29.83,0,0,0,0.25,0,0,0,24, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,29.83,0,0,0,0.25,0,0,0,24, ldraw_lib__box5_12(realsolid)],
 // 4 0 29.83 -0.25 -24 29.83 -0.25 -19.79 -29.83 -0.25 -19.79 -29.83 -0.25 -24
   [4,0,29.83,-0.25,-24,29.83,-0.25,-19.79,-29.83,-0.25,-19.79,-29.83,-0.25,-24],
 // 4 15 29.83 -0.25 -19.79 29.83 -0.25 -15.58 -29.83 -0.25 -15.58 -29.83 -0.25 -19.79
@@ -106,5 +107,5 @@ function ldraw_lib__163155c() = [
   [3,14,29.83,-0.25,-2.95,3.17,-0.25,-2.95,29.83,-0.25,-7.16],
 ];
 module ldraw_lib__163155c(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__163155c(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__163155c(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__163155c(line=0.2);

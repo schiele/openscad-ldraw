@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <u9372.scad>
 use <u9376.scad>
-function ldraw_lib__u9372c02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__u9372c02(realsolid=false) = [
 // 0 Electric Technic Motor without Centre Pin Hole - Body Assembly
 // 0 Name: u9372c02.dat
 // 0 Author: Chris Dee [cwdee]
@@ -16,10 +17,10 @@ function ldraw_lib__u9372c02() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 u9372.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9372()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9372(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 u9376.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9376()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9376(realsolid)],
 ];
 module ldraw_lib__u9372c02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__u9372c02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__u9372c02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__u9372c02(line=0.2);

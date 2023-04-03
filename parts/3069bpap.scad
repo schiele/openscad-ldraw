@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/2-4disc.scad>
 use <../p/2-4ring1.scad>
 use <s/3069bs01.scad>
-function ldraw_lib__3069bpap() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3069bpap(realsolid=false) = [
 // 0 Tile  1 x  2 with Blue Boxes and Bubbles Pattern
 // 0 Name: 3069bpap.dat
 // 0 Author: Larry Pieniazek [lar]
@@ -27,7 +28,7 @@ function ldraw_lib__3069bpap() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3069bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3069bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3069bs01(realsolid)],
 // 0 // Silver portion (background) of panel
 // 4 80 18.5 0 -2.5 18.5 0 -8 19 0 -9 18.6 0 1
   [4,80,18.5,0,-2.5,18.5,0,-8,19,0,-9,18.6,0,1],
@@ -221,7 +222,7 @@ function ldraw_lib__3069bpap() = [
 // 4 15 8.35 0 -4.25 7.8 0 -5.6 8.75 0 -5.7 8.75 0 -4.3
   [4,15,8.35,0,-4.25,7.8,0,-5.6,8.75,0,-5.7,8.75,0,-4.3],
 // 1 15 7.1 0 1.4 -0.8 0 0 0 0.8 0 0 0 0.8 2-4disc.dat
-  [1,15,7.1,0,1.4,-0.8,0,0,0,0.8,0,0,0,0.8, ldraw_lib__2_4disc()],
+  [1,15,7.1,0,1.4,-0.8,0,0,0,0.8,0,0,0,0.8, ldraw_lib__2_4disc(realsolid)],
 // 4 15 6.9 0 -5.1 7.8 0 -5.6 8.35 0 -4.25 8.1 0 -4.05
   [4,15,6.9,0,-5.1,7.8,0,-5.6,8.35,0,-4.25,8.1,0,-4.05],
 // 4 15 7.9 0 -3.35 6.3 0 -3.35 6.4 0 -4.15 7.95 0 -3.75
@@ -691,7 +692,7 @@ function ldraw_lib__3069bpap() = [
   [3,1,2.965,0,-6.867,2.2,0,-7.05,3.5,0,-7.5],
 // 0 // Bubbles
 // 1 15 -5.5 0 -5.2 0 0 0.5 0 0.5 0 0.6 0 0 2-4ring1.dat
-  [1,15,-5.5,0,-5.2,0,0,0.5,0,0.5,0,0.6,0,0, ldraw_lib__2_4ring1()],
+  [1,15,-5.5,0,-5.2,0,0,0.5,0,0.5,0,0.6,0,0, ldraw_lib__2_4ring1(realsolid)],
 // 4 15 2.774 0 -6.313 2.965 0 -6.867 3.5 0 -6.45 3.261 0 -5.923
   [4,15,2.774,0,-6.313,2.965,0,-6.867,3.5,0,-6.45,3.261,0,-5.923],
 // 4 15 -0.4 0 -4.65 0.1 0 -4.65 0.214 0 -3.961 -0.248 0 -3.732
@@ -965,5 +966,5 @@ function ldraw_lib__3069bpap() = [
   [4,16,20,0,-10,19,0,-9,-19,0,-9,-20,0,-10],
 ];
 module ldraw_lib__3069bpap(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3069bpap(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3069bpap(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3069bpap(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3899s01.scad>
-function ldraw_lib__3899p07() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3899p07(realsolid=false) = [
 // 0 Minifig Cup with Medium Lilac and Medium Lavender "I Heart HLC" Pattern
 // 0 Name: 3899p07.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -19,7 +20,7 @@ function ldraw_lib__3899p07() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3899s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3899s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3899s01(realsolid)],
 // 
 // 4 85 -8.8776 8.04 -3.13 -9.0168 7.91 -2.43 -9.0307 10.85 -2.36 -9.0248 13.18 -2.39
   [4,85,-8.8776,8.04,-3.13,-9.0168,7.91,-2.43,-9.0307,10.85,-2.36,-9.0248,13.18,-2.39],
@@ -357,5 +358,5 @@ function ldraw_lib__3899p07() = [
   [3,16,0,14.82,-9.5,-.36,14.82,-9.4284,0,18,-9.5],
 ];
 module ldraw_lib__3899p07(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3899p07(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3899p07(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3899p07(line=0.2);

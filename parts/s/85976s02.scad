@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__85976s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__85976s02(realsolid=false) = [
 // 0 ~Train Track 4 Studs Wide Curve - 1/8 Section Rail
 // 0 Name: s\85976s02.dat
 // 0 Author: Ronald Vallenduuk [Duq]
@@ -576,5 +577,5 @@ function ldraw_lib__s__85976s02() = [
   [2,24,-8.774,-16.0,-33.186,0.0,-16.0,-33.1],
 ];
 module ldraw_lib__s__85976s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__85976s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__85976s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__85976s02(line=0.2);

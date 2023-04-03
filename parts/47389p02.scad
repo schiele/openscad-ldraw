@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <47380p02.scad>
-function ldraw_lib__47389p02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__47389p02(realsolid=false) = [
 // 0 Figure Duplo Arm Right Forward Bent with Medium Nougat Hand Pattern
 // 0 Name: 47389p02.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -17,8 +18,8 @@ function ldraw_lib__47389p02() = [
 // 
 // 
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 47380p02.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__47380p02()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__47380p02(realsolid)],
 ];
 module ldraw_lib__47389p02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__47389p02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__47389p02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__47389p02(line=0.2);

@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/4-4disc.scad>
 use <../../p/4-4ndis.scad>
-function ldraw_lib__s__3004p13s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__3004p13s01(realsolid=false) = [
 // 0 ~Pattern Black Telephone
 // 0 Name: s\3004p13s01.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -16,9 +17,9 @@ function ldraw_lib__s__3004p13s01() = [
 // 
 // 
 // 1 16 0 15.25 -10 0 0 4 4 0 0 0 1 0 4-4disc.dat
-  [1,16,0,15.25,-10,0,0,4,4,0,0,0,1,0, ldraw_lib__4_4disc()],
+  [1,16,0,15.25,-10,0,0,4,4,0,0,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 0 0 15.25 -10 0 0 4 4 0 0 0 1 0 4-4ndis.dat
-  [1,0,0,15.25,-10,0,0,4,4,0,0,0,1,0, ldraw_lib__4_4ndis()],
+  [1,0,0,15.25,-10,0,0,4,4,0,0,0,1,0, ldraw_lib__4_4ndis(realsolid)],
 // 3 16 2.25 7.75 -10 2 7.25 -10 0 7 -10
   [3,16,2.25,7.75,-10,2,7.25,-10,0,7,-10],
 // 3 16 0 7 -10 2 8.75 -10 2.25 7.75 -10
@@ -169,5 +170,5 @@ function ldraw_lib__s__3004p13s01() = [
   [3,16,11,1,-10,2.5,4.25,-10,5.75,5,-10],
 ];
 module ldraw_lib__s__3004p13s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__3004p13s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__3004p13s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__3004p13s01(line=0.2);

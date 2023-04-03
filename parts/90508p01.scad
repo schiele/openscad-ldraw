@@ -7,7 +7,8 @@ use <../p/4-4con4.scad>
 use <../p/4-4cylc.scad>
 use <../p/4-4edge.scad>
 use <s/90508p01a.scad>
-function ldraw_lib__90508p01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__90508p01(realsolid=false) = [
 // 0 Minifig Maracas with Green Border Pattern
 // 0 Name: 90508p01.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -24,27 +25,27 @@ function ldraw_lib__90508p01() = [
 // 
 // 
 // 1 16 0 -31 0 1 0 0 0 1 0 0 0 1 s\90508p01a.dat
-  [1,16,0,-31,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__90508p01a()],
+  [1,16,0,-31,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__90508p01a(realsolid)],
 // 1 16 0 -31 0 0 0 -1 0 1 0 1 0 0 s\90508p01a.dat
-  [1,16,0,-31,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__s__90508p01a()],
+  [1,16,0,-31,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__s__90508p01a(realsolid)],
 // 1 16 0 -31 0 0 0 1 0 1 0 -1 0 0 s\90508p01a.dat
-  [1,16,0,-31,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__s__90508p01a()],
+  [1,16,0,-31,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__s__90508p01a(realsolid)],
 // 1 16 0 -31 0 -1 0 0 0 1 0 0 0 -1 s\90508p01a.dat
-  [1,16,0,-31,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__90508p01a()],
+  [1,16,0,-31,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__90508p01a(realsolid)],
 // 1 16 0 -18 0 0.25 0 0 0 0.7 0 0 0 0.25 4-4con32.dat
-  [1,16,0,-18,0,0.25,0,0,0,0.7,0,0,0,0.25, ldraw_lib__4_4con32()],
+  [1,16,0,-18,0,0.25,0,0,0,0.7,0,0,0,0.25, ldraw_lib__4_4con32(realsolid)],
 // 1 16 0 -17.3 0 2 0 0 0 5.4 0 0 0 2 4-4con3.dat
-  [1,16,0,-17.3,0,2,0,0,0,5.4,0,0,0,2, ldraw_lib__4_4con3()],
+  [1,16,0,-17.3,0,2,0,0,0,5.4,0,0,0,2, ldraw_lib__4_4con3(realsolid)],
 // 1 16 0 -11.9 0 0.5 0 0 0 4.15 0 0 0 0.5 4-4con11.dat
-  [1,16,0,-11.9,0,0.5,0,0,0,4.15,0,0,0,0.5, ldraw_lib__4_4con11()],
+  [1,16,0,-11.9,0,0.5,0,0,0,4.15,0,0,0,0.5, ldraw_lib__4_4con11(realsolid)],
 // 1 16 0 -7.75 0 5.5 0 0 0 1 0 0 0 5.5 4-4edge.dat
-  [1,16,0,-7.75,0,5.5,0,0,0,1,0,0,0,5.5, ldraw_lib__4_4edge()],
+  [1,16,0,-7.75,0,5.5,0,0,0,1,0,0,0,5.5, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 -7.75 0 0.5 0 0 0 0.4 0 0 0 0.5 4-4con10.dat
-  [1,16,0,-7.75,0,0.5,0,0,0,0.4,0,0,0,0.5, ldraw_lib__4_4con10()],
+  [1,16,0,-7.75,0,0.5,0,0,0,0.4,0,0,0,0.5, ldraw_lib__4_4con10(realsolid)],
 // 1 16 0 -7.35 0 1 0 0 0 0.35 0 0 0 1 4-4con4.dat
-  [1,16,0,-7.35,0,1,0,0,0,0.35,0,0,0,1, ldraw_lib__4_4con4()],
+  [1,16,0,-7.35,0,1,0,0,0,0.35,0,0,0,1, ldraw_lib__4_4con4(realsolid)],
 // 1 16 0 8 0 -4 0 0 0 -15 0 0 0 4 4-4cylc.dat
-  [1,16,0,8,0,-4,0,0,0,-15,0,0,0,4, ldraw_lib__4_4cylc()],
+  [1,16,0,8,0,-4,0,0,0,-15,0,0,0,4, ldraw_lib__4_4cylc(realsolid)],
 // 0 // Added lines/Condlines
 // 5 24 8 -17.3 0 7.3912 -17.3 3.0616 7.62218 -18 3.15727 6 -11.9 0
   [5,24,8,-17.3,0,7.3912,-17.3,3.0616,7.62218,-18,3.15727,6,-11.9,0],
@@ -144,5 +145,5 @@ function ldraw_lib__90508p01() = [
   [5,24,4.6195,-7.35,-1.9135,5,-7.35,0,5.5,-7.75,0,3.6956,-7,-1.5308],
 ];
 module ldraw_lib__90508p01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__90508p01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__90508p01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__90508p01(line=0.2);

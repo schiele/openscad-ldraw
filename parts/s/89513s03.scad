@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__89513s03() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__89513s03(realsolid=false) = [
 // 0 ~Door  1 x  8 x 12 Castle Gate Portcullis Rounded Spike
 // 0 Name: s\89513s03.dat
 // 0 Author: El'dar Ismagilov [Eldar]
@@ -339,5 +340,5 @@ function ldraw_lib__s__89513s03() = [
   [5,24,-1.973,10,-3.4,0,13.059,-2.482,-2.042,10.705,-3.189,-1.531,9.013,-3.696],
 ];
 module ldraw_lib__s__89513s03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__89513s03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__89513s03(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__89513s03(line=0.2);

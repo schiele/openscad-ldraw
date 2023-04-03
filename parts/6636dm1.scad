@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <6005724c2.scad>
 use <6636.scad>
-function ldraw_lib__6636dm1() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6636dm1(realsolid=false) = [
 // 0 Tile  1 x  6 with Bricks and Cracks Type 2 Sticker
 // 0 Name: 6636dm1.dat
 // 0 Author: Christian Neumann [Wesley]
@@ -20,10 +21,10 @@ function ldraw_lib__6636dm1() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 6636.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__6636()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__6636(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 6005724c2.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__6005724c2()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__6005724c2(realsolid)],
 ];
 module ldraw_lib__6636dm1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6636dm1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6636dm1(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6636dm1(line=0.2);

@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__u9159s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__u9159s01(realsolid=false) = [
 // 0 ~Fabuland Sou'wester Half
 // 0 Name: s\u9159s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -4752,5 +4753,5 @@ function ldraw_lib__s__u9159s01() = [
   [5,24,21.4,-45,22.2,22.6,-45.7,19.8,22.6,-43.1,22.3,21.6,-46.3,20.6],
 ];
 module ldraw_lib__s__u9159s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__u9159s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__u9159s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__u9159s01(line=0.2);

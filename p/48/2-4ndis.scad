@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__48__2_4ndis() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__48__2_4ndis(realsolid=false) = [
 // 0 Hi-Res Disc Negative 0.5
 // 0 Name: 48\2-4ndis.dat
 // 0 Author: Guy Vivan [guyvivan]
@@ -66,5 +67,5 @@ function ldraw_lib__48__2_4ndis() = [
 // 
 ];
 module ldraw_lib__48__2_4ndis(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__48__2_4ndis(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__48__2_4ndis(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__48__2_4ndis(line=0.2);

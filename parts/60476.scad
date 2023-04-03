@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/clip6.scad>
 use <../p/recte4.scad>
 use <s/3005s01.scad>
-function ldraw_lib__60476() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__60476(realsolid=false) = [
 // 0 Brick  1 x  1 with Clip Horizontal (Thick C-Clip)
 // 0 Name: 60476.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -19,14 +20,14 @@ function ldraw_lib__60476() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3005s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3005s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3005s01(realsolid)],
 // 4 16 10 0 -10 -10 0 -10 -10 24 -10 10 24 -10
   [4,16,10,0,-10,-10,0,-10,-10,24,-10,10,24,-10],
 // 1 16 0 12 -10 0 0 4 4 0 0 0 1 0 recte4.dat
-  [1,16,0,12,-10,0,0,4,4,0,0,0,1,0, ldraw_lib__recte4()],
+  [1,16,0,12,-10,0,0,4,4,0,0,0,1,0, ldraw_lib__recte4(realsolid)],
 // 1 16 0 8 -20 1 0 0 0 1 0 0 0 1 clip6.dat
-  [1,16,0,8,-20,1,0,0,0,1,0,0,0,1, ldraw_lib__clip6()],
+  [1,16,0,8,-20,1,0,0,0,1,0,0,0,1, ldraw_lib__clip6(realsolid)],
 ];
 module ldraw_lib__60476(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__60476(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__60476(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__60476(line=0.2);

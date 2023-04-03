@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/box5-12.scad>
 use <s/4201639s01a.scad>
 use <s/4201639s01b.scad>
-function ldraw_lib__4201639c() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4201639c(realsolid=false) = [
 // 0 Sticker  1.4 x  5.5 with Green "CARGO"
 // 0 Name: 4201639c.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -19,9 +20,9 @@ function ldraw_lib__4201639c() = [
 // 
 // 
 // 1 16 0 -0.25 0 0.88 0 0 0 1 0 0 0 0.65 s\4201639s01a.dat
-  [1,16,0,-0.25,0,0.88,0,0,0,1,0,0,0,0.65, ldraw_lib__s__4201639s01a()],
+  [1,16,0,-0.25,0,0.88,0,0,0,1,0,0,0,0.65, ldraw_lib__s__4201639s01a(realsolid)],
 // 1 2 0 -0.25 0 0.88 0 0 0 1 0 0 0 0.65 s\4201639s01b.dat
-  [1,2,0,-0.25,0,0.88,0,0,0,1,0,0,0,0.65, ldraw_lib__s__4201639s01b()],
+  [1,2,0,-0.25,0,0.88,0,0,0,1,0,0,0,0.65, ldraw_lib__s__4201639s01b(realsolid)],
 // 4 16 -52.8 -0.25 -13.65 -52.8 -0.25 13.65 -55 -0.25 14 -55 -0.25 -14
   [4,16,-52.8,-0.25,-13.65,-52.8,-0.25,13.65,-55,-0.25,14,-55,-0.25,-14],
 // 4 16 52.8 -0.25 13.65 52.8 -0.25 -13.65 55 -0.25 -14 55 -0.25 14
@@ -31,8 +32,8 @@ function ldraw_lib__4201639c() = [
 // 4 16 -52.8 -0.25 13.65 52.8 -0.25 13.65 55 -0.25 14 -55 -0.25 14
   [4,16,-52.8,-0.25,13.65,52.8,-0.25,13.65,55,-0.25,14,-55,-0.25,14],
 // 1 16 0 -0.25 0 55 0 0 0 0.25 0 0 0 14 box5-12.dat
-  [1,16,0,-0.25,0,55,0,0,0,0.25,0,0,0,14, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,55,0,0,0,0.25,0,0,0,14, ldraw_lib__box5_12(realsolid)],
 ];
 module ldraw_lib__4201639c(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4201639c(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4201639c(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4201639c(line=0.2);

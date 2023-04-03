@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <2544.scad>
 use <87693.scad>
-function ldraw_lib__2544c01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2544c01(realsolid=false) = [
 // 0 Minifig Hat Tricorne with White Plume (Complete)
 // 0 Name: 2544c01.dat
 // 0 Author: Franklin W. Cain [fwcain]
@@ -25,10 +26,10 @@ function ldraw_lib__2544c01() = [
 // 
 // 
 // 1 16 0 0 0 -0.5 0 -0.866 0 1 0 0.866 0 -0.5 2544.dat
-  [1,16,0,0,0,-0.5,0,-0.866,0,1,0,0.866,0,-0.5, ldraw_lib__2544()],
+  [1,16,0,0,0,-0.5,0,-0.866,0,1,0,0.866,0,-0.5, ldraw_lib__2544(realsolid)],
 // 1 15 10.392 -10 6 1 0 0 0 1 0 0 0 1 87693.dat
-  [1,15,10.392,-10,6,1,0,0,0,1,0,0,0,1, ldraw_lib__87693()],
+  [1,15,10.392,-10,6,1,0,0,0,1,0,0,0,1, ldraw_lib__87693(realsolid)],
 ];
 module ldraw_lib__2544c01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2544c01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2544c01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2544c01(line=0.2);

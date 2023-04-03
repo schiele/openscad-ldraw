@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <3888a.scad>
 use <70081c02.scad>
-function ldraw_lib__3888ac02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3888ac02(realsolid=false) = [
 // 0 Vehicle Chassis 14 x  6 with Tow-Hook and Light-Grey  5.5 x 20 Wheels
 // 0 Name: 3888ac02.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -18,12 +19,12 @@ function ldraw_lib__3888ac02() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 3888a.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3888a()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3888a(realsolid)],
 // 1 7 0 13 110 1 0 0 0 1 0 0 0 1 70081c02.dat
-  [1,7,0,13,110,1,0,0,0,1,0,0,0,1, ldraw_lib__70081c02()],
+  [1,7,0,13,110,1,0,0,0,1,0,0,0,1, ldraw_lib__70081c02(realsolid)],
 // 1 7 0 13 -110 1 0 0 0 1 0 0 0 1 70081c02.dat
-  [1,7,0,13,-110,1,0,0,0,1,0,0,0,1, ldraw_lib__70081c02()],
+  [1,7,0,13,-110,1,0,0,0,1,0,0,0,1, ldraw_lib__70081c02(realsolid)],
 ];
 module ldraw_lib__3888ac02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3888ac02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3888ac02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3888ac02(line=0.2);

@@ -2,7 +2,8 @@ use <../lib.scad>
 use <3587.scad>
 use <4105242a.scad>
 use <4105242b.scad>
-function ldraw_lib__3587d01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3587d01(realsolid=false) = [
 // 0 Tail  2 x  5 x  3.667 Plane with Stickers with White Airplane, Yellow Disc and Sky Scene on both Sides
 // 0 Name: 3587d01.dat
 // 0 Author: Damien Roux [Darats]
@@ -19,12 +20,12 @@ function ldraw_lib__3587d01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 3587.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3587()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3587(realsolid)],
 // 1 16 2 -46.5 31.5 0 -1 0 0 0 -1 1 0 0 4105242a.dat
-  [1,16,2,-46.5,31.5,0,-1,0,0,0,-1,1,0,0, ldraw_lib__4105242a()],
+  [1,16,2,-46.5,31.5,0,-1,0,0,0,-1,1,0,0, ldraw_lib__4105242a(realsolid)],
 // 1 16 -2 -46.5 31.5 0 1 0 0 0 -1 -1 0 0 4105242b.dat
-  [1,16,-2,-46.5,31.5,0,1,0,0,0,-1,-1,0,0, ldraw_lib__4105242b()],
+  [1,16,-2,-46.5,31.5,0,1,0,0,0,-1,-1,0,0, ldraw_lib__4105242b(realsolid)],
 ];
 module ldraw_lib__3587d01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3587d01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3587d01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3587d01(line=0.2);

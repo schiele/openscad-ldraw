@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4con24.scad>
 use <../p/4-4cyli.scad>
 use <../p/t04o5000.scad>
-function ldraw_lib__11010() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__11010(realsolid=false) = [
 // 0 Minifig Ring  1 x  1
 // 0 Name: 11010.dat
 // 0 Author: Owen Burgoyne [C3POwen]
@@ -24,31 +25,31 @@ function ldraw_lib__11010() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 0 0.25 0 0 0 -0.25 0 0 0 -0.25 4-4con24.dat
-  [1,16,0,0,0,0.25,0,0,0,-0.25,0,0,0,-0.25, ldraw_lib__4_4con24()],
+  [1,16,0,0,0,0.25,0,0,0,-0.25,0,0,0,-0.25, ldraw_lib__4_4con24(realsolid)],
 // 1 16 0 -4 0 0 0 -6.25 0 8 0 6.25 0 0 t04o5000.dat
-  [1,16,0,-4,0,0,0,-6.25,0,8,0,6.25,0,0, ldraw_lib__t04o5000()],
+  [1,16,0,-4,0,0,0,-6.25,0,8,0,6.25,0,0, ldraw_lib__t04o5000(realsolid)],
 // 1 16 0 -4 0 6.25 0 0 0 8 0 0 0 6.25 t04o5000.dat
-  [1,16,0,-4,0,6.25,0,0,0,8,0,0,0,6.25, ldraw_lib__t04o5000()],
+  [1,16,0,-4,0,6.25,0,0,0,8,0,0,0,6.25, ldraw_lib__t04o5000(realsolid)],
 // 1 16 0 -4 0 0 0 6.25 0 8 0 -6.25 0 0 t04o5000.dat
-  [1,16,0,-4,0,0,0,6.25,0,8,0,-6.25,0,0, ldraw_lib__t04o5000()],
+  [1,16,0,-4,0,0,0,6.25,0,8,0,-6.25,0,0, ldraw_lib__t04o5000(realsolid)],
 // 1 16 0 -4 0 -6.25 0 0 0 8 0 0 0 -6.25 t04o5000.dat
-  [1,16,0,-4,0,-6.25,0,0,0,8,0,0,0,-6.25, ldraw_lib__t04o5000()],
+  [1,16,0,-4,0,-6.25,0,0,0,8,0,0,0,-6.25, ldraw_lib__t04o5000(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -0.25 0 6 0 0 0 -7.5 0 0 0 -6 4-4cyli.dat
-  [1,16,0,-0.25,0,6,0,0,0,-7.5,0,0,0,-6, ldraw_lib__4_4cyli()],
+  [1,16,0,-0.25,0,6,0,0,0,-7.5,0,0,0,-6, ldraw_lib__4_4cyli(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -8 0 0.25 0 0 0 0.25 0 0 0 0.25 4-4con24.dat
-  [1,16,0,-8,0,0.25,0,0,0,0.25,0,0,0,0.25, ldraw_lib__4_4con24()],
+  [1,16,0,-8,0,0.25,0,0,0,0.25,0,0,0,0.25, ldraw_lib__4_4con24(realsolid)],
 // 1 16 0 -4 0 -6.25 0 0 0 -8 0 0 0 6.25 t04o5000.dat
-  [1,16,0,-4,0,-6.25,0,0,0,-8,0,0,0,6.25, ldraw_lib__t04o5000()],
+  [1,16,0,-4,0,-6.25,0,0,0,-8,0,0,0,6.25, ldraw_lib__t04o5000(realsolid)],
 // 1 16 0 -4 0 0 0 6.25 0 -8 0 6.25 0 0 t04o5000.dat
-  [1,16,0,-4,0,0,0,6.25,0,-8,0,6.25,0,0, ldraw_lib__t04o5000()],
+  [1,16,0,-4,0,0,0,6.25,0,-8,0,6.25,0,0, ldraw_lib__t04o5000(realsolid)],
 // 1 16 0 -4 0 6.25 0 0 0 -8 0 0 0 -6.25 t04o5000.dat
-  [1,16,0,-4,0,6.25,0,0,0,-8,0,0,0,-6.25, ldraw_lib__t04o5000()],
+  [1,16,0,-4,0,6.25,0,0,0,-8,0,0,0,-6.25, ldraw_lib__t04o5000(realsolid)],
 // 1 16 0 -4 0 0 0 -6.25 0 -8 0 -6.25 0 0 t04o5000.dat
-  [1,16,0,-4,0,0,0,-6.25,0,-8,0,-6.25,0,0, ldraw_lib__t04o5000()],
+  [1,16,0,-4,0,0,0,-6.25,0,-8,0,-6.25,0,0, ldraw_lib__t04o5000(realsolid)],
 // 
 // 0 // Outer conditional lines
 // 5 24 -5.77438 0 2.39188 -6.25 0 0 -6 -0.25 0 -7.44625 -0.304 0
@@ -183,5 +184,5 @@ function ldraw_lib__11010() = [
   [5,24,-2.2962,-7.75,-5.5434,0,-7.75,-6,0,-8,-6.25,-2.2962,-0.25,-5.5434],
 ];
 module ldraw_lib__11010(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__11010(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__11010(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__11010(line=0.2);

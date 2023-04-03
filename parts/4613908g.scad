@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__4613908g() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4613908g(realsolid=false) = [
 // 0 Sticker  3.2 x  1.8 with Hieroglyphs Type 1 (Snake on Top)
 // 0 Name: 4613908g.dat
 // 0 Author: Christian Neumann [Wesley]
@@ -21,7 +22,7 @@ function ldraw_lib__4613908g() = [
 // 
 // 
 // 1 16 0 -0.25 0 18 0 0 0 0.25 0 0 0 32.5 box5-12.dat
-  [1,16,0,-0.25,0,18,0,0,0,0.25,0,0,0,32.5, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,18,0,0,0,0.25,0,0,0,32.5, ldraw_lib__box5_12(realsolid)],
 // 4 72 5.12 -0.25 -0.33 5.91 -0.25 -0.55 6.05 -0.25 -0.25 5.25 -0.25 0.03
   [4,72,5.12,-0.25,-0.33,5.91,-0.25,-0.55,6.05,-0.25,-0.25,5.25,-0.25,0.03],
 // 4 72 5.12 -0.25 -0.33 5.25 -0.25 0.03 3.69 -0.25 0.15 2.21 -0.25 -0.37
@@ -1616,5 +1617,5 @@ function ldraw_lib__4613908g() = [
   [4,28,0.49,-0.25,5.38,0.89,-0.25,7.19,0.19,-0.25,6.69,0.09,-0.25,6.09],
 ];
 module ldraw_lib__4613908g(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4613908g(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4613908g(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4613908g(line=0.2);

@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__7_16edge() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__7_16edge(realsolid=false) = [
 // 0 Circle 0.4375
 // 0 Name: 7-16edge.dat
 // 0 Author: Orion Pobursky [OrionP]
@@ -31,5 +32,5 @@ function ldraw_lib__7_16edge() = [
   [2,24,-.7071,0,.7071,-.9239,0,.3827],
 ];
 module ldraw_lib__7_16edge(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__7_16edge(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__7_16edge(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__7_16edge(line=0.2);

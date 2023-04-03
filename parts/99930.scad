@@ -3,7 +3,8 @@ use <../p/4-4con12.scad>
 use <../p/4-4con2.scad>
 use <../p/4-4disc.scad>
 use <../p/stud4.scad>
-function ldraw_lib__99930() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__99930(realsolid=false) = [
 // 0 Minifig Hair Short Combed Sideways with Left Parting
 // 0 Name: 99930.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -22,17 +23,17 @@ function ldraw_lib__99930() = [
 // 
 // 
 // 1 16 0 -4 0 1 0 0 0 -1 0 0 0 1 stud4.dat
-  [1,16,0,-4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4()],
+  [1,16,0,-4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4(realsolid)],
 // 1 16 0 -4 0 6 0 0 0 -1 0 0 0 6 4-4disc.dat
-  [1,16,0,-4,0,6,0,0,0,-1,0,0,0,6, ldraw_lib__4_4disc()],
+  [1,16,0,-4,0,6,0,0,0,-1,0,0,0,6, ldraw_lib__4_4disc(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 0 4 0 0 0 -4 0 0 0 4 4-4con2.dat
-  [1,16,0,0,0,4,0,0,0,-4,0,0,0,4, ldraw_lib__4_4con2()],
+  [1,16,0,0,0,4,0,0,0,-4,0,0,0,4, ldraw_lib__4_4con2(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 2 0 1 0 0 0 -2 0 0 0 1 4-4con12.dat
-  [1,16,0,2,0,1,0,0,0,-2,0,0,0,1, ldraw_lib__4_4con12()],
+  [1,16,0,2,0,1,0,0,0,-2,0,0,0,1, ldraw_lib__4_4con12(realsolid)],
 // 3 16 4.9751 19 12.0107 7.64 18.491 10.52 4.9751 2 12.0107
   [3,16,4.9751,19,12.0107,7.64,18.491,10.52,4.9751,2,12.0107],
 // 3 16 7.64 18.491 10.52 9.1923 18.0705 9.1923 9.1923 2 9.1923
@@ -3053,5 +3054,5 @@ function ldraw_lib__99930() = [
   [5,24,7.491,12.539,14.882,7.694,13.083,14.602,6.833,18.704,12.928,8.559,9.209,15.161],
 ];
 module ldraw_lib__99930(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__99930(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__99930(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__99930(line=0.2);

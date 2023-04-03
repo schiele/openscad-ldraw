@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__49656s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__49656s01(realsolid=false) = [
 // 0 ~Rock  1 x  1 Geode Crystal Interior
 // 0 Name: s\49656s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -1499,5 +1500,5 @@ function ldraw_lib__s__49656s01() = [
   [5,24,-2.826,-10.812,6,0,-12.089,3.326,0,-11.224,6,-2.421,-11.394,3.383],
 ];
 module ldraw_lib__s__49656s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__49656s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__49656s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__49656s01(line=0.2);

@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__87997s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__87997s02(realsolid=false) = [
 // 0 ~Minifig Cheerleader Pom Pom - Top
 // 0 Name: s\87997s02.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -3032,5 +3033,5 @@ function ldraw_lib__s__87997s02() = [
   [5,24,-4.528,-15.46,-16.418,-2.948,-14.247,-18.721,-2.826,-16.594,-15.367,-4.524,-14.215,-18.515],
 ];
 module ldraw_lib__s__87997s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__87997s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__87997s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__87997s02(line=0.2);

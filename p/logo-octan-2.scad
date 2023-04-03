@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__logo_octan_2() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__logo_octan_2(realsolid=false) = [
 // 0 Logo Octan - Single Drop
 // 0 Name: logo-octan-2.dat
 // 0 Author: Ulrich Röder [UR]
@@ -73,5 +74,5 @@ function ldraw_lib__logo_octan_2() = [
   [3,16,-3,0,5.14,-3.65,0,4.7,-4.12,0,4.24],
 ];
 module ldraw_lib__logo_octan_2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__logo_octan_2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__logo_octan_2(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__logo_octan_2(line=0.2);

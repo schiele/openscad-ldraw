@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/30192s01.scad>
-function ldraw_lib__30192() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__30192(realsolid=false) = [
 // 0 Minifig Tool Grappling Hook
 // 0 Name: 30192.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -19,11 +20,11 @@ function ldraw_lib__30192() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 -1 0 0 0 -1 s\30192s01.dat
-  [1,16,0,0,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__s__30192s01()],
+  [1,16,0,0,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__s__30192s01(realsolid)],
 // 1 16 0 0 0 -0.5 0 0.86603 0 -1 0 0.86603 0 0.5 s\30192s01.dat
-  [1,16,0,0,0,-0.5,0,0.86603,0,-1,0,0.86603,0,0.5, ldraw_lib__s__30192s01()],
+  [1,16,0,0,0,-0.5,0,0.86603,0,-1,0,0.86603,0,0.5, ldraw_lib__s__30192s01(realsolid)],
 // 1 16 0 0 0 -0.5 0 -0.86603 0 -1 0 -0.86603 0 0.5 s\30192s01.dat
-  [1,16,0,0,0,-0.5,0,-0.86603,0,-1,0,-0.86603,0,0.5, ldraw_lib__s__30192s01()],
+  [1,16,0,0,0,-0.5,0,-0.86603,0,-1,0,-0.86603,0,0.5, ldraw_lib__s__30192s01(realsolid)],
 // 5 24 -2 2.538 -3.464 0 2.538 -4 -0.712 1.847 -3.872 -2 27.31 -3.464
   [5,24,-2,2.538,-3.464,0,2.538,-4,-0.712,1.847,-3.872,-2,27.31,-3.464],
 // 5 24 -3.464 2.538 -2 -2 2.538 -3.464 -2.629 0.989 -3.014 -3.464 27.31 -2
@@ -614,5 +615,5 @@ function ldraw_lib__30192() = [
   [5,24,-2,0,2.5,-2,0,-2.5,-1.943,0.475,-2.5,-1.732,-1,2.5],
 ];
 module ldraw_lib__30192(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__30192(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__30192(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__30192(line=0.2);

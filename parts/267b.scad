@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/stud4.scad>
-function ldraw_lib__267b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__267b(realsolid=false) = [
 // 0 ~Electric Lightbrick  2 x  2 Type 2 Insert with Diffusor
 // 0 Name: 267b.dat
 // 0 Author: Steffen [Steffen]
@@ -17,7 +18,7 @@ function ldraw_lib__267b() = [
 // 
 // 
 // 1 16 0 20 0 1 0 0 0 -1 0 0 0 1 stud4.dat
-  [1,16,0,20,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4()],
+  [1,16,0,20,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4(realsolid)],
 // 4 16 -16 20 16 -16 20 -16 16 20 -16 16 20 16
   [4,16,-16,20,16,-16,20,-16,16,20,-16,16,20,16],
 // 4 16 -15.5 19.5 -16 -15.5 19.5 -18 15.5 19.5 -18 15.5 19.5 -16
@@ -270,5 +271,5 @@ function ldraw_lib__267b() = [
   [2,24,-15.5,4.5,-18,15.5,4.5,-18],
 ];
 module ldraw_lib__267b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__267b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__267b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__267b(line=0.2);

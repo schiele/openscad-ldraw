@@ -2,7 +2,8 @@ use <../lib.scad>
 use <4694.scad>
 use <4695.scad>
 use <4713.scad>
-function ldraw_lib__4694c01_f1() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4694c01_f1(realsolid=false) = [
 // 0 Technic Pneumatic Valve (Complete - Neutral Position)
 // 0 Name: 4694c01-f1.dat
 // 0 Author: Marc Klein [marckl]
@@ -20,13 +21,13 @@ function ldraw_lib__4694c01_f1() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 4694.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4694()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4694(realsolid)],
 // 1 16 -10 0 -2 1 0 0 0 1 0 0 0 1 4713.dat
-  [1,16,-10,0,-2,1,0,0,0,1,0,0,0,1, ldraw_lib__4713()],
+  [1,16,-10,0,-2,1,0,0,0,1,0,0,0,1, ldraw_lib__4713(realsolid)],
 // 1 0 0 26 -9 1 0 0 0 1 0 0 0 1 4695.dat
-  [1,0,0,26,-9,1,0,0,0,1,0,0,0,1, ldraw_lib__4695()],
+  [1,0,0,26,-9,1,0,0,0,1,0,0,0,1, ldraw_lib__4695(realsolid)],
 // 0 //
 ];
 module ldraw_lib__4694c01_f1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4694c01_f1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4694c01_f1(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4694c01_f1(line=0.2);

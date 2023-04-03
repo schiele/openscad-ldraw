@@ -2,7 +2,8 @@ use <../lib.scad>
 use <s/6088s01.scad>
 use <../p/stud2a.scad>
 use <../p/stud4o.scad>
-function ldraw_lib__6088() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6088(realsolid=false) = [
 // 0 Minifig Helmet with Underwater Antenna and Clips
 // 0 Name: 6088.dat
 // 0 Author: Nils Schmidt [BlackBrick89]
@@ -25,13 +26,13 @@ function ldraw_lib__6088() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\6088s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6088s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6088s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\6088s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__6088s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__6088s01(realsolid)],
 // 1 16 0 37.8 15.8 0 0 -1 1 0 0 0 -1.4 0 stud2a.dat
-  [1,16,0,37.8,15.8,0,0,-1,1,0,0,0,-1.4,0, ldraw_lib__stud2a()],
+  [1,16,0,37.8,15.8,0,0,-1,1,0,0,0,-1.4,0, ldraw_lib__stud2a(realsolid)],
 // 1 16 0 -4 0 1 0 0 0 -1 0 0 0 1 stud4o.dat
-  [1,16,0,-4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4o()],
+  [1,16,0,-4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4o(realsolid)],
 // 
 // 5 24 0 5.89 -13.247 0 4 -13 -4.975 4 -12.01 4.975 4 -12.01
   [5,24,0,5.89,-13.247,0,4,-13,-4.975,4,-12.01,4.975,4,-12.01],
@@ -121,5 +122,5 @@ function ldraw_lib__6088() = [
   [5,24,0,-6.607,-8.32,0,-4.192,-11.76,5.923,-4.199,-10.169,-5.923,-4.199,-10.169],
 ];
 module ldraw_lib__6088(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6088(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6088(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6088(line=0.2);

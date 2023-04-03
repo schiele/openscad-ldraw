@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/stud16.scad>
-function ldraw_lib__59363() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__59363(realsolid=false) = [
 // 0 Minifig Hair Long with French Braid
 // 0 Name: 59363.dat
 // 0 Author: Andy Westrate [westrate]
@@ -21,7 +22,7 @@ function ldraw_lib__59363() = [
 // 
 // 
 // 1 16 0 -4 0 0 0 -1 0 -1 0 1 0 0 stud16.dat
-  [1,16,0,-4,0,0,0,-1,0,-1,0,1,0,0, ldraw_lib__stud16()],
+  [1,16,0,-4,0,0,0,-1,0,-1,0,1,0,0, ldraw_lib__stud16(realsolid)],
 // 3 16 -12.02 11.26 -5.84 -13.73 16.75 -6.3 -12.35 16.92 -5.89
   [3,16,-12.02,11.26,-5.84,-13.73,16.75,-6.3,-12.35,16.92,-5.89],
 // 3 16 -15.1 36.02 10.18 -14.7 36.7 10.42 -13.39 33.66 10.26
@@ -6419,5 +6420,5 @@ function ldraw_lib__59363() = [
 // 0
 ];
 module ldraw_lib__59363(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__59363(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__59363(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__59363(line=0.2);

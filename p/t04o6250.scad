@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__t04o6250() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__t04o6250(realsolid=false) = [
 // 0 Torus Outside  1 x 0.6250 x 0.25
 // 0 Name: t04o6250.dat
 // 0 Author: Paul Easter [pneaster]
@@ -137,5 +138,5 @@ function ldraw_lib__t04o6250() = [
   [5,24,0,0.2392,1.5774,0,0,1.625,-0.6534,0.2392,1.5774,0.6037,0.2392,1.4574],
 ];
 module ldraw_lib__t04o6250(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__t04o6250(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__t04o6250(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__t04o6250(line=0.2);

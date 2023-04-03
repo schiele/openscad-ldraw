@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__30117p61s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__30117p61s01(realsolid=false) = [
 // 0 ~Panel 10 x 10 x  2.333 Quarter Saucer with Insectoid Pattern
 // 0 Name: s\30117p61s01.dat
 // 0 Author: Mikkel Bech Jensen [gaia]
@@ -3381,5 +3382,5 @@ function ldraw_lib__s__30117p61s01() = [
   [3,16,77.091,4.457,-59.306,77.113,4.464,-59.323,96.287,9.6,-63.453],
 ];
 module ldraw_lib__s__30117p61s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__30117p61s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__30117p61s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__30117p61s01(line=0.2);

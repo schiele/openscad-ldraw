@@ -3,7 +3,8 @@ use <../../p/1-4cyls.scad>
 use <../../p/2-4cyli.scad>
 use <../../p/2-4disc.scad>
 use <../../p/2-4edge.scad>
-function ldraw_lib__s__90639s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__90639s02(realsolid=false) = [
 // 0 ~Constraction Shell  2.5 x  3 x  5 Flat - Half
 // 0 Name: s\90639s02.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -20,19 +21,19 @@ function ldraw_lib__s__90639s02() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 -20 0 0 4.5 -4.5 0 0 0 -4.6 0 2-4cyli.dat
-  [1,16,0,0,-20,0,0,4.5,-4.5,0,0,0,-4.6,0, ldraw_lib__2_4cyli()],
+  [1,16,0,0,-20,0,0,4.5,-4.5,0,0,0,-4.6,0, ldraw_lib__2_4cyli(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 -24.6 4.5 0 0 0 0 4.5 0 -1.1 0 1-4cyls.dat
-  [1,16,0,0,-24.6,4.5,0,0,0,0,4.5,0,-1.1,0, ldraw_lib__1_4cyls()],
+  [1,16,0,0,-24.6,4.5,0,0,0,0,4.5,0,-1.1,0, ldraw_lib__1_4cyls(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 -24.6 4.5 0 0 0 0 -4.5 0 -1.1 0 1-4cyls.dat
-  [1,16,0,0,-24.6,4.5,0,0,0,0,-4.5,0,-1.1,0, ldraw_lib__1_4cyls()],
+  [1,16,0,0,-24.6,4.5,0,0,0,0,-4.5,0,-1.1,0, ldraw_lib__1_4cyls(realsolid)],
 // 1 16 0 0 -25.7 0 0 4.5 4.5 0 0 0 1 1.1 2-4edge.dat
-  [1,16,0,0,-25.7,0,0,4.5,4.5,0,0,0,1,1.1, ldraw_lib__2_4edge()],
+  [1,16,0,0,-25.7,0,0,4.5,4.5,0,0,0,1,1.1, ldraw_lib__2_4edge(realsolid)],
 // 1 16 0 0 -25.7 0 0 4.5 4.5 0 0 0 -1 1.1 2-4disc.dat
-  [1,16,0,0,-25.7,0,0,4.5,4.5,0,0,0,-1,1.1, ldraw_lib__2_4disc()],
+  [1,16,0,0,-25.7,0,0,4.5,4.5,0,0,0,-1,1.1, ldraw_lib__2_4disc(realsolid)],
 // 3 16 4.5 -20 -20 19.772 -18.96 -20 19.979 -14.533 -20
   [3,16,4.5,-20,-20,19.772,-18.96,-20,19.979,-14.533,-20],
 // 3 16 4.5 -20 -20 19.017 -25.637 -20 19.772 -18.96 -20
@@ -1183,5 +1184,5 @@ function ldraw_lib__s__90639s02() = [
   [5,24,18.643,14.642,-19.772,18.896,12.128,10.007,19.576,2.486,-20.304,18.689,14.355,8.927],
 ];
 module ldraw_lib__s__90639s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__90639s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__90639s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__90639s02(line=0.2);

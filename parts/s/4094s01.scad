@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/rect3.scad>
-function ldraw_lib__s__4094s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__4094s01(realsolid=false) = [
 // 0 ~Minifig Umbrella - 1/16
 // 0 Name: s\4094s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -35,7 +36,7 @@ function ldraw_lib__s__4094s01() = [
 // 3 16 0 30 53.298 -10.995 30 52.166 0 30 56.375
   [3,16,0,30,53.298,-10.995,30,52.166,0,30,56.375],
 // 1 16 -11.6 29.375 56.193 0 0.01572 -11.6 0.625 0 0 0 -1 -0.1824 rect3.dat
-  [1,16,-11.6,29.375,56.193,0,0.01572,-11.6,0.625,0,0,0,-1,-0.1824, ldraw_lib__rect3()],
+  [1,16,-11.6,29.375,56.193,0,0.01572,-11.6,0.625,0,0,0,-1,-0.1824, ldraw_lib__rect3(realsolid)],
 // 3 16 -18.429 16.086 44.491 0 16.907 45.274 -23.2 28.749 56.01
   [3,16,-18.429,16.086,44.491,0,16.907,45.274,-23.2,28.749,56.01],
 // 2 24 -23.2 28.749 56.01 -18.429 16.086 44.491
@@ -116,5 +117,5 @@ function ldraw_lib__s__4094s01() = [
 // 0 //
 ];
 module ldraw_lib__s__4094s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__4094s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__4094s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__4094s01(line=0.2);

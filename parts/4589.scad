@@ -10,7 +10,8 @@ use <../p/axlehol2.scad>
 use <../p/axlehol3.scad>
 use <../p/axlehole.scad>
 use <../p/stud2a.scad>
-function ldraw_lib__4589() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4589(realsolid=false) = [
 // 0 Cone  1 x  1
 // 0 Name: 4589.dat
 // 0 Author: James Jessiman
@@ -35,51 +36,51 @@ function ldraw_lib__4589() = [
 // 
 // 
 // 1 16 0 19 0 8 0 0 0 2.5 0 0 0 8 4-4edge.dat
-  [1,16,0,19,0,8,0,0,0,2.5,0,0,0,8, ldraw_lib__4_4edge()],
+  [1,16,0,19,0,8,0,0,0,2.5,0,0,0,8, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 24 0 8 0 0 0 2.5 0 0 0 8 4-4edge.dat
-  [1,16,0,24,0,8,0,0,0,2.5,0,0,0,8, ldraw_lib__4_4edge()],
+  [1,16,0,24,0,8,0,0,0,2.5,0,0,0,8, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 24 0 6 0 0 0 2.5 0 0 0 6 4-4edge.dat
-  [1,16,0,24,0,6,0,0,0,2.5,0,0,0,6, ldraw_lib__4_4edge()],
+  [1,16,0,24,0,6,0,0,0,2.5,0,0,0,6, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 24 0 2 0 0 0 -2.5 0 0 0 2 4-4ring3.dat
-  [1,16,0,24,0,2,0,0,0,-2.5,0,0,0,2, ldraw_lib__4_4ring3()],
+  [1,16,0,24,0,2,0,0,0,-2.5,0,0,0,2, ldraw_lib__4_4ring3(realsolid)],
 // 1 16 0 19 0 8 0 0 0 5 0 0 0 8 4-4cyli.dat
-  [1,16,0,19,0,8,0,0,0,5,0,0,0,8, ldraw_lib__4_4cyli()],
+  [1,16,0,19,0,8,0,0,0,5,0,0,0,8, ldraw_lib__4_4cyli(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 24 0 -6 0 0 0 -5 0 0 0 6 4-4cyli.dat
-  [1,16,0,24,0,-6,0,0,0,-5,0,0,0,6, ldraw_lib__4_4cyli()],
+  [1,16,0,24,0,-6,0,0,0,-5,0,0,0,6, ldraw_lib__4_4cyli(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 18 0 6 0 0 0 1 0 0 0 6 4-4cyli.dat
-  [1,16,0,18,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4cyli()],
+  [1,16,0,18,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 12 0 1 0 0 0 6 0 0 0 1 axlehole.dat
-  [1,16,0,12,0,1,0,0,0,6,0,0,0,1, ldraw_lib__axlehole()],
+  [1,16,0,12,0,1,0,0,0,6,0,0,0,1, ldraw_lib__axlehole(realsolid)],
 // 1 16 0 12 0 1 0 0 0 1 0 0 0 1 axlehol2.dat
-  [1,16,0,12,0,1,0,0,0,1,0,0,0,1, ldraw_lib__axlehol2()],
+  [1,16,0,12,0,1,0,0,0,1,0,0,0,1, ldraw_lib__axlehol2(realsolid)],
 // 1 16 0 18 0 1 0 0 0 1 0 0 0 1 axlehol3.dat
-  [1,16,0,18,0,1,0,0,0,1,0,0,0,1, ldraw_lib__axlehol3()],
+  [1,16,0,18,0,1,0,0,0,1,0,0,0,1, ldraw_lib__axlehol3(realsolid)],
 // 1 16 0 12 0 4 0 0 0 1 0 0 0 4 4-4edge.dat
-  [1,16,0,12,0,4,0,0,0,1,0,0,0,4, ldraw_lib__4_4edge()],
+  [1,16,0,12,0,4,0,0,0,1,0,0,0,4, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 19 0 10 0 0 0 1 0 0 0 10 4-4edge.dat
-  [1,16,0,19,0,10,0,0,0,1,0,0,0,10, ldraw_lib__4_4edge()],
+  [1,16,0,19,0,10,0,0,0,1,0,0,0,10, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 0 0 6 0 0 0 1 0 0 0 6 4-4edge.dat
-  [1,16,0,0,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4edge()],
+  [1,16,0,0,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4edge(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 0 4 0 0 0 12 0 0 0 4 4-4cyli.dat
-  [1,16,0,0,0,4,0,0,0,12,0,0,0,4, ldraw_lib__4_4cyli()],
+  [1,16,0,0,0,4,0,0,0,12,0,0,0,4, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 stud2a.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2a()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2a(realsolid)],
 // 1 16 0 19 0 -2 0 0 0 -1 0 0 0 2 4-4ring4.dat
-  [1,16,0,19,0,-2,0,0,0,-1,0,0,0,2, ldraw_lib__4_4ring4()],
+  [1,16,0,19,0,-2,0,0,0,-1,0,0,0,2, ldraw_lib__4_4ring4(realsolid)],
 // 1 16 0 12 0 -2 0 0 0 -1 0 0 0 2 4-4ring2.dat
-  [1,16,0,12,0,-2,0,0,0,-1,0,0,0,2, ldraw_lib__4_4ring2()],
+  [1,16,0,12,0,-2,0,0,0,-1,0,0,0,2, ldraw_lib__4_4ring2(realsolid)],
 // 1 16 0 9.5 0 -2 0 0 0 -9.5 0 0 0 2 4-4con3.dat
-  [1,16,0,9.5,0,-2,0,0,0,-9.5,0,0,0,2, ldraw_lib__4_4con3()],
+  [1,16,0,9.5,0,-2,0,0,0,-9.5,0,0,0,2, ldraw_lib__4_4con3(realsolid)],
 // 1 16 0 19 0 0 0 -2 0 -9.5 0 -2 0 0 4-4con4.dat
-  [1,16,0,19,0,0,0,-2,0,-9.5,0,-2,0,0, ldraw_lib__4_4con4()],
+  [1,16,0,19,0,0,0,-2,0,-9.5,0,-2,0,0, ldraw_lib__4_4con4(realsolid)],
 // 0 //
 ];
 module ldraw_lib__4589(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4589(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4589(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4589(line=0.2);

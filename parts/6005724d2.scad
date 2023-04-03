@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__6005724d2() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6005724d2(realsolid=false) = [
 // 0 Sticker  1.0 x  3.9 (No. 12) with Diamond Bricks and Cracks Type 2
 // 0 Name: 6005724d2.dat
 // 0 Author: Christian Neumann [Wesley]
@@ -19,7 +20,7 @@ function ldraw_lib__6005724d2() = [
 // 
 // 
 // 1 16 0 -.25 0 39 0 0 0 .25 0 0 0 10 box5-12.dat
-  [1,16,0,-.25,0,39,0,0,0,.25,0,0,0,10, ldraw_lib__box5_12()],
+  [1,16,0,-.25,0,39,0,0,0,.25,0,0,0,10, ldraw_lib__box5_12(realsolid)],
 // 4 0 -36.3 -0.25 -2.1 -38.6 -0.25 -1 -37.6 -0.25 -2.6 -33.1 -0.25 -6.2
   [4,0,-36.3,-0.25,-2.1,-38.6,-0.25,-1,-37.6,-0.25,-2.6,-33.1,-0.25,-6.2],
 // 3 0 -36.3 -0.25 -2.1 -33.1 -0.25 -6.2 -32.5 -0.25 -5
@@ -838,5 +839,5 @@ function ldraw_lib__6005724d2() = [
   [4,16,14.6,-0.25,-4.8,12.7,-0.25,-6.1,24.2,-0.25,-6.5,22,-0.25,-4.7],
 ];
 module ldraw_lib__6005724d2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6005724d2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6005724d2(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6005724d2(line=0.2);

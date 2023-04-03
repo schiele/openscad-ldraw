@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/1-4disc.scad>
 use <../../p/1-4ndis.scad>
-function ldraw_lib__s__004711bs01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__004711bs01(realsolid=false) = [
 // 0 ~Pattern Car Grille for Sticker  1.1 x  3.9 - Mask
 // 0 Name: s\004711bs01.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -19,31 +20,31 @@ function ldraw_lib__s__004711bs01() = [
 // 0 // Left light corners
 // 
 // 1 16 -33 -.25 3 -1 0 0 0 1 0 0 0 1 1-4ndis.dat
-  [1,16,-33,-.25,3,-1,0,0,0,1,0,0,0,1, ldraw_lib__1_4ndis()],
+  [1,16,-33,-.25,3,-1,0,0,0,1,0,0,0,1, ldraw_lib__1_4ndis(realsolid)],
 // 1 16 -24 -.25 3 1 0 0 0 1 0 0 0 1 1-4ndis.dat
-  [1,16,-24,-.25,3,1,0,0,0,1,0,0,0,1, ldraw_lib__1_4ndis()],
+  [1,16,-24,-.25,3,1,0,0,0,1,0,0,0,1, ldraw_lib__1_4ndis(realsolid)],
 // 1 16 -33 -.25 -3 -1 0 0 0 1 0 0 0 -1 1-4ndis.dat
-  [1,16,-33,-.25,-3,-1,0,0,0,1,0,0,0,-1, ldraw_lib__1_4ndis()],
+  [1,16,-33,-.25,-3,-1,0,0,0,1,0,0,0,-1, ldraw_lib__1_4ndis(realsolid)],
 // 1 16 -24 -.25 -3 1 0 0 0 1 0 0 0 -1 1-4ndis.dat
-  [1,16,-24,-.25,-3,1,0,0,0,1,0,0,0,-1, ldraw_lib__1_4ndis()],
+  [1,16,-24,-.25,-3,1,0,0,0,1,0,0,0,-1, ldraw_lib__1_4ndis(realsolid)],
 // 0 // Right light corners
 // 1 16 24 -.25 3 -1 0 0 0 1 0 0 0 1 1-4ndis.dat
-  [1,16,24,-.25,3,-1,0,0,0,1,0,0,0,1, ldraw_lib__1_4ndis()],
+  [1,16,24,-.25,3,-1,0,0,0,1,0,0,0,1, ldraw_lib__1_4ndis(realsolid)],
 // 1 16 33 -.25 3 1 0 0 0 1 0 0 0 1 1-4ndis.dat
-  [1,16,33,-.25,3,1,0,0,0,1,0,0,0,1, ldraw_lib__1_4ndis()],
+  [1,16,33,-.25,3,1,0,0,0,1,0,0,0,1, ldraw_lib__1_4ndis(realsolid)],
 // 1 16 24 -.25 -3 -1 0 0 0 1 0 0 0 -1 1-4ndis.dat
-  [1,16,24,-.25,-3,-1,0,0,0,1,0,0,0,-1, ldraw_lib__1_4ndis()],
+  [1,16,24,-.25,-3,-1,0,0,0,1,0,0,0,-1, ldraw_lib__1_4ndis(realsolid)],
 // 1 16 33 -.25 -3 1 0 0 0 1 0 0 0 -1 1-4ndis.dat
-  [1,16,33,-.25,-3,1,0,0,0,1,0,0,0,-1, ldraw_lib__1_4ndis()],
+  [1,16,33,-.25,-3,1,0,0,0,1,0,0,0,-1, ldraw_lib__1_4ndis(realsolid)],
 // 0 // Line corners inside
 // 1 16 34 -.25 4 2 0 0 0 1 0 0 0 2 1-4disc.dat
-  [1,16,34,-.25,4,2,0,0,0,1,0,0,0,2, ldraw_lib__1_4disc()],
+  [1,16,34,-.25,4,2,0,0,0,1,0,0,0,2, ldraw_lib__1_4disc(realsolid)],
 // 1 16 -34 -.25 4 -2 0 0 0 1 0 0 0 2 1-4disc.dat
-  [1,16,-34,-.25,4,-2,0,0,0,1,0,0,0,2, ldraw_lib__1_4disc()],
+  [1,16,-34,-.25,4,-2,0,0,0,1,0,0,0,2, ldraw_lib__1_4disc(realsolid)],
 // 1 16 34 -.25 -4 2 0 0 0 1 0 0 0 -2 1-4disc.dat
-  [1,16,34,-.25,-4,2,0,0,0,1,0,0,0,-2, ldraw_lib__1_4disc()],
+  [1,16,34,-.25,-4,2,0,0,0,1,0,0,0,-2, ldraw_lib__1_4disc(realsolid)],
 // 1 16 -34 -.25 -4 -2 0 0 0 1 0 0 0 -2 1-4disc.dat
-  [1,16,-34,-.25,-4,-2,0,0,0,1,0,0,0,-2, ldraw_lib__1_4disc()],
+  [1,16,-34,-.25,-4,-2,0,0,0,1,0,0,0,-2, ldraw_lib__1_4disc(realsolid)],
 // 0 // Inside
 // 4 16 -21 -.25 -1 21 -.25 -1 21 -.25 1 -21 -.25 1
   [4,16,-21,-.25,-1,21,-.25,-1,21,-.25,1,-21,-.25,1],
@@ -109,5 +110,5 @@ function ldraw_lib__s__004711bs01() = [
   [3,16,36,-.25,4,34,-.25,4,34,-.25,3],
 ];
 module ldraw_lib__s__004711bs01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__004711bs01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__004711bs01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__004711bs01(line=0.2);

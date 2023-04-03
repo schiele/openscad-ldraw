@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
 use <s/003238s8.scad>
-function ldraw_lib__003238s() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__003238s(realsolid=false) = [
 // 0 Sticker  1.0 x  5.8 with Violet Banner
 // 0 Name: 003238s.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -20,12 +21,12 @@ function ldraw_lib__003238s() = [
 // 
 // 
 // 1 16 0 -0.25 0 58 0 0 0 0.25 0 0 0 10 box5-12.dat
-  [1,16,0,-0.25,0,58,0,0,0,0.25,0,0,0,10, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,58,0,0,0,0.25,0,0,0,10, ldraw_lib__box5_12(realsolid)],
 // 1 22 0 0 0 1 0 0 0 1 0 0 0 1 s\003238s8.dat
-  [1,22,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__003238s8()],
+  [1,22,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__003238s8(realsolid)],
 // 1 22 0 0 0 -1 0 0 0 1 0 0 0 1 s\003238s8.dat
-  [1,22,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__003238s8()],
+  [1,22,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__003238s8(realsolid)],
 ];
 module ldraw_lib__003238s(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__003238s(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__003238s(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__003238s(line=0.2);

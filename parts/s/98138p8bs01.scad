@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/4-4ering.scad>
-function ldraw_lib__s__98138p8bs01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__98138p8bs01(realsolid=false) = [
 // 0 ~Tile  1 x  1 Round with Waffle Pattern - Grid
 // 0 Name: s\98138p8bs01.dat
 // 0 Author: Vincent Messenet [Cheenzo]
@@ -15,7 +16,7 @@ function ldraw_lib__s__98138p8bs01() = [
 // 
 // 
 // 1 16 0 0 0 10 0 0 0 1 0 0 0 10 4-4ering.dat
-  [1,16,0,0,0,10,0,0,0,1,0,0,0,10, ldraw_lib__4_4ering()],
+  [1,16,0,0,0,10,0,0,0,1,0,0,0,10, ldraw_lib__4_4ering(realsolid)],
 // 3 16 0 0 10 .5 0 8.5 1.5 0 8.5
   [3,16,0,0,10,.5,0,8.5,1.5,0,8.5],
 // 4 16 9.24 0 3.83 8.5 0 2.52 8.5 0 1.5 10 0 0
@@ -224,5 +225,5 @@ function ldraw_lib__s__98138p8bs01() = [
   [4,16,-7.07,0,7.07,-6.36,0,6.36,-5,0,7.28,-3.83,0,9.24],
 ];
 module ldraw_lib__s__98138p8bs01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__98138p8bs01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__98138p8bs01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__98138p8bs01(line=0.2);

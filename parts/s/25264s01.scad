@@ -7,7 +7,8 @@ use <../../p/5-16con12.scad>
 use <../../p/5-16edge.scad>
 use <../../p/t04o5000.scad>
 use <../../p/t04o6250.scad>
-function ldraw_lib__s__25264s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__25264s01(realsolid=false) = [
 // 0 ~Minifig Headdress with Panther Ears Half
 // 0 Name: s\25264s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -122,37 +123,37 @@ function ldraw_lib__s__25264s01() = [
 // 2 24 11.2546 -0.5814 -7.6347 9.846 -5.962 -8.276
   [2,24,11.2546,-0.5814,-7.6347,9.846,-5.962,-8.276],
 // 1 16 0 0 0 0 0 13 0 1.9 0 13 0 0 2-4cyli.dat
-  [1,16,0,0,0,0,0,13,0,1.9,0,13,0,0, ldraw_lib__2_4cyli()],
+  [1,16,0,0,0,0,0,13,0,1.9,0,13,0,0, ldraw_lib__2_4cyli(realsolid)],
 // 1 16 0 0 0 8 0 0 0 -8 0 0 0 -8 t04o6250.dat
-  [1,16,0,0,0,8,0,0,0,-8,0,0,0,-8, ldraw_lib__t04o6250()],
+  [1,16,0,0,0,8,0,0,0,-8,0,0,0,-8, ldraw_lib__t04o6250(realsolid)],
 // 1 16 0 0 0 0 0 8 0 -8 0 8 0 0 t04o6250.dat
-  [1,16,0,0,0,0,0,8,0,-8,0,8,0,0, ldraw_lib__t04o6250()],
+  [1,16,0,0,0,0,0,8,0,-8,0,8,0,0, ldraw_lib__t04o6250(realsolid)],
 // 1 16 0 1.9 0 0 0 13 0 1 0 13 0 0 5-16edge.dat
-  [1,16,0,1.9,0,0,0,13,0,1,0,13,0,0, ldraw_lib__5_16edge()],
+  [1,16,0,1.9,0,0,0,13,0,1,0,13,0,0, ldraw_lib__5_16edge(realsolid)],
 // 1 16 0 1.9 0 0 0 13 0 1 0 -13 0 0 1-8edge.dat
-  [1,16,0,1.9,0,0,0,13,0,1,0,-13,0,0, ldraw_lib__1_8edge()],
+  [1,16,0,1.9,0,0,0,13,0,1,0,-13,0,0, ldraw_lib__1_8edge(realsolid)],
 // 1 16 0 1.728 0 0 0 12 0 1 0 12 0 0 5-16edge.dat
-  [1,16,0,1.728,0,0,0,12,0,1,0,12,0,0, ldraw_lib__5_16edge()],
+  [1,16,0,1.728,0,0,0,12,0,1,0,12,0,0, ldraw_lib__5_16edge(realsolid)],
 // 1 16 0 1.728 0 0 0 12 0 1 0 -12 0 0 1-8edge.dat
-  [1,16,0,1.728,0,0,0,12,0,1,0,-12,0,0, ldraw_lib__1_8edge()],
+  [1,16,0,1.728,0,0,0,12,0,1,0,-12,0,0, ldraw_lib__1_8edge(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 1.728 0 8 0 0 0 -3.456 0 0 0 -8 t04o5000.dat
-  [1,16,0,1.728,0,8,0,0,0,-3.456,0,0,0,-8, ldraw_lib__t04o5000()],
+  [1,16,0,1.728,0,8,0,0,0,-3.456,0,0,0,-8, ldraw_lib__t04o5000(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 1.728 0 8 0 0 0 -3.456 0 0 0 8 t04o5000.dat
-  [1,16,0,1.728,0,8,0,0,0,-3.456,0,0,0,8, ldraw_lib__t04o5000()],
+  [1,16,0,1.728,0,8,0,0,0,-3.456,0,0,0,8, ldraw_lib__t04o5000(realsolid)],
 // 1 16 0 -5 0 0 0 2 0 1 0 2 0 0 2-4ring3.dat
-  [1,16,0,-5,0,0,0,2,0,1,0,2,0,0, ldraw_lib__2_4ring3()],
+  [1,16,0,-5,0,0,0,2,0,1,0,2,0,0, ldraw_lib__2_4ring3(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 1.9 0 0 0 1 0 -0.172 0 1 0 0 5-16con12.dat
-  [1,16,0,1.9,0,0,0,1,0,-0.172,0,1,0,0, ldraw_lib__5_16con12()],
+  [1,16,0,1.9,0,0,0,1,0,-0.172,0,1,0,0, ldraw_lib__5_16con12(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 1.9 0 0 0 1 0 -0.172 0 -1 0 0 1-8con12.dat
-  [1,16,0,1.9,0,0,0,1,0,-0.172,0,-1,0,0, ldraw_lib__1_8con12()],
+  [1,16,0,1.9,0,0,0,1,0,-0.172,0,-1,0,0, ldraw_lib__1_8con12(realsolid)],
 // 2 24 9.1923 0 -9.1923 9.1923 1.9 -9.1923
   [2,24,9.1923,0,-9.1923,9.1923,1.9,-9.1923],
 // 2 24 11.3872 1.9 -5.908 12.0107 1.9 -4.9751
@@ -265,5 +266,5 @@ function ldraw_lib__s__25264s01() = [
   [5,24,10.701,1.9532,-5.5546,9.3463,2.4691,-8.2901,10.6193,2.5943,-6.5701,8.4856,1.728,-8.4856],
 ];
 module ldraw_lib__s__25264s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__25264s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__25264s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__25264s01(line=0.2);

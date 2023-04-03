@@ -3,7 +3,8 @@ use <../p/4-4cylc3.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4ering.scad>
 use <../p/4-4ndis.scad>
-function ldraw_lib__4586822a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4586822a(realsolid=false) = [
 // 0 Sticker  0.8 x  0.8 Round with Black and White Eye
 // 0 Name: 4586822a.dat
 // 0 Author: Max Martin Richter [MMR1988]
@@ -25,13 +26,13 @@ function ldraw_lib__4586822a() = [
 // 
 // 
 // 1 16 0 0 0 8.25 0 0 0 -.25 0 0 0 8.25 4-4cylc3.dat
-  [1,16,0,0,0,8.25,0,0,0,-.25,0,0,0,8.25, ldraw_lib__4_4cylc3()],
+  [1,16,0,0,0,8.25,0,0,0,-.25,0,0,0,8.25, ldraw_lib__4_4cylc3(realsolid)],
 // 1 15 0 -.25 .5 1.25 0 0 0 1 0 0 0 1.25 4-4disc.dat
-  [1,15,0,-.25,.5,1.25,0,0,0,1,0,0,0,1.25, ldraw_lib__4_4disc()],
+  [1,15,0,-.25,.5,1.25,0,0,0,1,0,0,0,1.25, ldraw_lib__4_4disc(realsolid)],
 // 1 0 0 -.25 .5 1.25 0 0 0 1 0 0 0 1.25 4-4ndis.dat
-  [1,0,0,-.25,.5,1.25,0,0,0,1,0,0,0,1.25, ldraw_lib__4_4ndis()],
+  [1,0,0,-.25,.5,1.25,0,0,0,1,0,0,0,1.25, ldraw_lib__4_4ndis(realsolid)],
 // 1 0 0 -.25 0 8.25 0 0 0 1 0 0 0 8.25 4-4ering.dat
-  [1,0,0,-.25,0,8.25,0,0,0,1,0,0,0,8.25, ldraw_lib__4_4ering()],
+  [1,0,0,-.25,0,8.25,0,0,0,1,0,0,0,8.25, ldraw_lib__4_4ering(realsolid)],
 // 
 // 4 15 0 -.25 3 1.913 -.25 2.62 2.535 -.25 6.121 0 -.25 6.625
   [4,15,0,-.25,3,1.913,-.25,2.62,2.535,-.25,6.121,0,-.25,6.625],
@@ -111,5 +112,5 @@ function ldraw_lib__4586822a() = [
   [4,0,-2.535,-.25,6.121,0,-.25,6.625,0,-.25,8.25,-3.157,-.25,7.622],
 ];
 module ldraw_lib__4586822a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4586822a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4586822a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4586822a(line=0.2);

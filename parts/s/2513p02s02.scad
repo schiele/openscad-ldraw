@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__2513p02s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__2513p02s02(realsolid=false) = [
 // 0 ~Police Badge - Yellow Star Pattern Half Black Border
 // 0 Name: s\2513p02s02.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -45,5 +46,5 @@ function ldraw_lib__s__2513p02s02() = [
   [4,0,-2.4017,0,-22.7153,0,0,-24,0,0,-23.5,-2.1,0,-22.45],
 ];
 module ldraw_lib__s__2513p02s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__2513p02s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__2513p02s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__2513p02s02(line=0.2);

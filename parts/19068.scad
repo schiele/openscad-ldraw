@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/1-4chrd.scad>
 use <../p/1-4cylo.scad>
 use <../p/box4o8a.scad>
-function ldraw_lib__19068() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__19068(realsolid=false) = [
 // 0 ~Electric Power Functions 2.0 Hub Button
 // 0 Name: 19068.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -19,31 +20,31 @@ function ldraw_lib__19068() = [
 // 
 // 
 // 1 16 6.5 0 6.5 1.5 0 0 0 6 0 0 0 1.5 1-4cylo.dat
-  [1,16,6.5,0,6.5,1.5,0,0,0,6,0,0,0,1.5, ldraw_lib__1_4cylo()],
+  [1,16,6.5,0,6.5,1.5,0,0,0,6,0,0,0,1.5, ldraw_lib__1_4cylo(realsolid)],
 // 1 16 6.5 0 6.5 1.5 0 0 0 1 0 0 0 1.5 1-4chrd.dat
-  [1,16,6.5,0,6.5,1.5,0,0,0,1,0,0,0,1.5, ldraw_lib__1_4chrd()],
+  [1,16,6.5,0,6.5,1.5,0,0,0,1,0,0,0,1.5, ldraw_lib__1_4chrd(realsolid)],
 // 1 16 6.5 6 6.5 1.5 0 0 0 -1 0 0 0 1.5 1-4chrd.dat
-  [1,16,6.5,6,6.5,1.5,0,0,0,-1,0,0,0,1.5, ldraw_lib__1_4chrd()],
+  [1,16,6.5,6,6.5,1.5,0,0,0,-1,0,0,0,1.5, ldraw_lib__1_4chrd(realsolid)],
 // 1 16 -6.5 0 6.5 0 0 -1.5 0 6 0 1.5 0 0 1-4cylo.dat
-  [1,16,-6.5,0,6.5,0,0,-1.5,0,6,0,1.5,0,0, ldraw_lib__1_4cylo()],
+  [1,16,-6.5,0,6.5,0,0,-1.5,0,6,0,1.5,0,0, ldraw_lib__1_4cylo(realsolid)],
 // 1 16 -6.5 0 6.5 0 0 -1.5 0 1 0 1.5 0 0 1-4chrd.dat
-  [1,16,-6.5,0,6.5,0,0,-1.5,0,1,0,1.5,0,0, ldraw_lib__1_4chrd()],
+  [1,16,-6.5,0,6.5,0,0,-1.5,0,1,0,1.5,0,0, ldraw_lib__1_4chrd(realsolid)],
 // 1 16 -6.5 6 6.5 0 0 -1.5 0 -1 0 1.5 0 0 1-4chrd.dat
-  [1,16,-6.5,6,6.5,0,0,-1.5,0,-1,0,1.5,0,0, ldraw_lib__1_4chrd()],
+  [1,16,-6.5,6,6.5,0,0,-1.5,0,-1,0,1.5,0,0, ldraw_lib__1_4chrd(realsolid)],
 // 1 16 -6.5 0 -6.5 -1.5 0 0 0 6 0 0 0 -1.5 1-4cylo.dat
-  [1,16,-6.5,0,-6.5,-1.5,0,0,0,6,0,0,0,-1.5, ldraw_lib__1_4cylo()],
+  [1,16,-6.5,0,-6.5,-1.5,0,0,0,6,0,0,0,-1.5, ldraw_lib__1_4cylo(realsolid)],
 // 1 16 -6.5 0 -6.5 -1.5 0 0 0 1 0 0 0 -1.5 1-4chrd.dat
-  [1,16,-6.5,0,-6.5,-1.5,0,0,0,1,0,0,0,-1.5, ldraw_lib__1_4chrd()],
+  [1,16,-6.5,0,-6.5,-1.5,0,0,0,1,0,0,0,-1.5, ldraw_lib__1_4chrd(realsolid)],
 // 1 16 -6.5 6 -6.5 -1.5 0 0 0 -1 0 0 0 -1.5 1-4chrd.dat
-  [1,16,-6.5,6,-6.5,-1.5,0,0,0,-1,0,0,0,-1.5, ldraw_lib__1_4chrd()],
+  [1,16,-6.5,6,-6.5,-1.5,0,0,0,-1,0,0,0,-1.5, ldraw_lib__1_4chrd(realsolid)],
 // 1 16 6.5 0 -6.5 0 0 1.5 0 6 0 -1.5 0 0 1-4cylo.dat
-  [1,16,6.5,0,-6.5,0,0,1.5,0,6,0,-1.5,0,0, ldraw_lib__1_4cylo()],
+  [1,16,6.5,0,-6.5,0,0,1.5,0,6,0,-1.5,0,0, ldraw_lib__1_4cylo(realsolid)],
 // 1 16 6.5 0 -6.5 0 0 1.5 0 1 0 -1.5 0 0 1-4chrd.dat
-  [1,16,6.5,0,-6.5,0,0,1.5,0,1,0,-1.5,0,0, ldraw_lib__1_4chrd()],
+  [1,16,6.5,0,-6.5,0,0,1.5,0,1,0,-1.5,0,0, ldraw_lib__1_4chrd(realsolid)],
 // 1 16 6.5 6 -6.5 0 0 1.5 0 -1 0 -1.5 0 0 1-4chrd.dat
-  [1,16,6.5,6,-6.5,0,0,1.5,0,-1,0,-1.5,0,0, ldraw_lib__1_4chrd()],
+  [1,16,6.5,6,-6.5,0,0,1.5,0,-1,0,-1.5,0,0, ldraw_lib__1_4chrd(realsolid)],
 // 1 16 -6.5 3 0 0 13 0 3 0 0 0 0 8 box4o8a.dat
-  [1,16,-6.5,3,0,0,13,0,3,0,0,0,0,8, ldraw_lib__box4o8a()],
+  [1,16,-6.5,3,0,0,13,0,3,0,0,0,0,8, ldraw_lib__box4o8a(realsolid)],
 // 4 16 6.5 6 8 8 6 6.5 8 6 -6.5 6.5 6 -8
   [4,16,6.5,6,8,8,6,6.5,8,6,-6.5,6.5,6,-8],
 // 2 24 8 6 6.5 8 6 -6.5
@@ -66,5 +67,5 @@ function ldraw_lib__19068() = [
   [2,24,-8,0,6.5,-8,0,-6.5],
 ];
 module ldraw_lib__19068(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__19068(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__19068(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__19068(line=0.2);

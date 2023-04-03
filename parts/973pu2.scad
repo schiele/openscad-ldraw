@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/1-4cyli.scad>
 use <s/973s01.scad>
-function ldraw_lib__973pu2() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__973pu2(realsolid=false) = [
 // 0 Minifig Torso with Two Pocket Shirt with Red Bandana and Light Nougat Neckline Pattern
 // 0 Name: 973pu2.dat
 // 0 Author: Ulrich Röder [UR]
@@ -22,13 +23,13 @@ function ldraw_lib__973pu2() = [
 // 
 // 0 // Neck
 // 1 0 0 -4 0 4.243 0 -4.243 0 -8 0 -4.243 0 -4.243 1-4cyli.dat
-  [1,0,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli()],
+  [1,0,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli(realsolid)],
 // 
 // 0 // Front
 // 
 // 0 // Main
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01(realsolid)],
 // 4 16 13.25 19.38 -10 16.77 28.61 -10 19 32 -10 19 29 -10
   [4,16,13.25,19.38,-10,16.77,28.61,-10,19,32,-10,19,29,-10],
 // 3 16 -19 32 -10 -15.11 31.68 -10 -15.46 31.15 -10
@@ -3167,5 +3168,5 @@ function ldraw_lib__973pu2() = [
   [4,1,-4.6,10.8,10,-6.2,10.35,10,-7.83,9.87,10,-5.48,9.94,10],
 ];
 module ldraw_lib__973pu2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__973pu2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__973pu2(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__973pu2(line=0.2);

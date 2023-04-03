@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__925p0us02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__925p0us02(realsolid=false) = [
 // 0 ~Brick  1 x  8 with Swine Head and "SLAGTER" Rounded Pattern - Background
 // 0 Name: s\925p0us02.dat
 // 0 Author: N. W. Perry [Plastikean]
@@ -723,5 +724,5 @@ function ldraw_lib__s__925p0us02() = [
   [3,16,44.94,4.83,-10,45.23,5.59,-10,48.88,5.85,-10],
 ];
 module ldraw_lib__s__925p0us02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__925p0us02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__925p0us02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__925p0us02(line=0.2);

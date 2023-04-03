@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/rect.scad>
-function ldraw_lib__s__18969s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__18969s01(realsolid=false) = [
 // 0 ~Panel  4 x  4 x 13 Curved Tapered with Clip at Each End Half
 // 0 Name: s\18969s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -636,7 +637,7 @@ function ldraw_lib__s__18969s01() = [
 // 4 16 4 234.518 -5.3 14.635 234.566 -5.333 15.234 236.521 -6.779 4 236.55 -6.779
   [4,16,4,234.518,-5.3,14.635,234.566,-5.333,15.234,236.521,-6.779,4,236.55,-6.779],
 // 1 16 9.61725 239.9833 -6.779 5.617 0 0 -0.0145 0 3.45 0 -1 0 rect.dat
-  [1,16,9.61725,239.9833,-6.779,5.617,0,0,-0.0145,0,3.45,0,-1,0, ldraw_lib__rect()],
+  [1,16,9.61725,239.9833,-6.779,5.617,0,0,-0.0145,0,3.45,0,-1,0, ldraw_lib__rect(realsolid)],
 // 4 16 4 243.45 -6.779 15.235 243.412 -6.779 14.632 245.534 -5.263 4 245.482 -5.263
   [4,16,4,243.45,-6.779,15.235,243.412,-6.779,14.632,245.534,-5.263,4,245.482,-5.263],
 // 2 24 14.635 234.566 -5.333 4 234.518 -5.3
@@ -647,5 +648,5 @@ function ldraw_lib__s__18969s01() = [
   [3,16,14.632,245.534,-5.263,14.606,249.776,-5.263,4,245.482,-5.263],
 ];
 module ldraw_lib__s__18969s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__18969s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__18969s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__18969s01(line=0.2);

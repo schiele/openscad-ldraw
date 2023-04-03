@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3069bs01.scad>
-function ldraw_lib__3069bpzi() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3069bpzi(realsolid=false) = [
 // 0 Tile  1 x  2 with Metallic Silver and Dark Bluish Grey Lines Pattern
 // 0 Name: 3069bpzi.dat
 // 0 Author: Vincent Messenet [Cheenzo]
@@ -19,7 +20,7 @@ function ldraw_lib__3069bpzi() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3069bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3069bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3069bs01(realsolid)],
 // 
 // 4 72 -15.5 0 7.5 -11.25 0 4.5 0 0 1.75 0 0 4.5
   [4,72,-15.5,0,7.5,-11.25,0,4.5,0,0,1.75,0,0,4.5],
@@ -163,5 +164,5 @@ function ldraw_lib__3069bpzi() = [
   [3,16,-20,0,10,-19.5,0,8.25,-19.5,0,9.5],
 ];
 module ldraw_lib__3069bpzi(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3069bpzi(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3069bpzi(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3069bpzi(line=0.2);

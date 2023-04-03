@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/4-4cylo.scad>
 use <../../p/5-16cylo.scad>
-function ldraw_lib__s__11778s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__11778s01(realsolid=false) = [
 // 0 ~Animal Eagle Wing Left - Wing
 // 0 Name: s\11778s01.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -16,11 +17,11 @@ function ldraw_lib__s__11778s01() = [
 // 
 // 
 // 1 16 0 0 4 4 0 0 0 0 4 0 -8 0 4-4cylo.dat
-  [1,16,0,0,4,4,0,0,0,0,4,0,-8,0, ldraw_lib__4_4cylo()],
+  [1,16,0,0,4,4,0,0,0,0,4,0,-8,0, ldraw_lib__4_4cylo(realsolid)],
 // 1 16 0 0 -16 4 0 0 0 0 4 0 -8 0 4-4cylo.dat
-  [1,16,0,0,-16,4,0,0,0,0,4,0,-8,0, ldraw_lib__4_4cylo()],
+  [1,16,0,0,-16,4,0,0,0,0,4,0,-8,0, ldraw_lib__4_4cylo(realsolid)],
 // 1 16 0 0 -7 0 0 4 4 0 0 0 -6 0 5-16cylo.dat
-  [1,16,0,0,-7,0,0,4,4,0,0,0,-6,0, ldraw_lib__5_16cylo()],
+  [1,16,0,0,-7,0,0,4,4,0,0,0,-6,0, ldraw_lib__5_16cylo(realsolid)],
 // 3 16 74.964 -10.285 -12.08 75.543 -8.954 -14.856 75.226 -9.204 -11.822
   [3,16,74.964,-10.285,-12.08,75.543,-8.954,-14.856,75.226,-9.204,-11.822],
 // 3 16 75.344 -9.926 -15.016 75.543 -8.954 -14.856 74.964 -10.285 -12.08
@@ -3380,5 +3381,5 @@ function ldraw_lib__s__11778s01() = [
   [5,24,28.166,-9.506,-2.439,27.9645,-10.086,0.1855,27.378,-10.914,0.176,28.179,-9.267,-0.695],
 ];
 module ldraw_lib__s__11778s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__11778s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__11778s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__11778s01(line=0.2);

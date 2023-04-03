@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/box4o8a.scad>
 use <../p/rect.scad>
 use <../p/rect3.scad>
-function ldraw_lib__43903k01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__43903k01(realsolid=false) = [
 // 0 ~Caterpillar Track 1.7 Wide - Segment Straight
 // 0 Name: 43903k01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -19,13 +20,13 @@ function ldraw_lib__43903k01() = [
 // 
 // 
 // 1 16 -10 -22 0 0 20 0 -1 0 0 0 0 17 box4o8a.dat
-  [1,16,-10,-22,0,0,20,0,-1,0,0,0,0,17, ldraw_lib__box4o8a()],
+  [1,16,-10,-22,0,0,20,0,-1,0,0,0,0,17, ldraw_lib__box4o8a(realsolid)],
 // 1 16 0 -28 0 6 0 0 0 1 0 0 0 9 rect.dat
-  [1,16,0,-28,0,6,0,0,0,1,0,0,0,9, ldraw_lib__rect()],
+  [1,16,0,-28,0,6,0,0,0,1,0,0,0,9, ldraw_lib__rect(realsolid)],
 // 1 16 0 -25.5 11.5 6 0 0 0 1 2.5 0 0 2.5 rect3.dat
-  [1,16,0,-25.5,11.5,6,0,0,0,1,2.5,0,0,2.5, ldraw_lib__rect3()],
+  [1,16,0,-25.5,11.5,6,0,0,0,1,2.5,0,0,2.5, ldraw_lib__rect3(realsolid)],
 // 1 16 0 -25.5 -11.5 -6 0 0 0 1 2.5 0 0 -2.5 rect3.dat
-  [1,16,0,-25.5,-11.5,-6,0,0,0,1,2.5,0,0,-2.5, ldraw_lib__rect3()],
+  [1,16,0,-25.5,-11.5,-6,0,0,0,1,2.5,0,0,-2.5, ldraw_lib__rect3(realsolid)],
 // 2 24 6 -23 -14 6 -23 14
   [2,24,6,-23,-14,6,-23,14],
 // 2 24 -6 -23 -14 -6 -23 14
@@ -35,7 +36,7 @@ function ldraw_lib__43903k01() = [
 // 4 16 6 -23 -14 6 -23 14 6 -28 9 6 -28 -9
   [4,16,6,-23,-14,6,-23,14,6,-28,9,6,-28,-9],
 // 1 16 0 -15 0 3 0 0 0 -1 0 0 0 1 rect.dat
-  [1,16,0,-15,0,3,0,0,0,-1,0,0,0,1, ldraw_lib__rect()],
+  [1,16,0,-15,0,3,0,0,0,-1,0,0,0,1, ldraw_lib__rect(realsolid)],
 // 4 16 3 -15 -1 3 -15 1 4 -21 3 4 -21 -3
   [4,16,3,-15,-1,3,-15,1,4,-21,3,4,-21,-3],
 // 4 16 -3 -15 1 -3 -15 -1 -4 -21 -3 -4 -21 3
@@ -63,5 +64,5 @@ function ldraw_lib__43903k01() = [
 // 0 //
 ];
 module ldraw_lib__43903k01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__43903k01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__43903k01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__43903k01(line=0.2);

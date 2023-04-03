@@ -3,7 +3,8 @@ use <s/26051s01.scad>
 use <s/26051s02.scad>
 use <s/26051s03.scad>
 use <s/26051s04.scad>
-function ldraw_lib__26051() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__26051(realsolid=false) = [
 // 0 Minifig Head Sonic the Hedgehog
 // 0 Name: 26051.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -20,21 +21,21 @@ function ldraw_lib__26051() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\26051s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__26051s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__26051s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\26051s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__26051s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__26051s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\26051s02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__26051s02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__26051s02(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\26051s02.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__26051s02()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__26051s02(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\26051s03.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__26051s03()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__26051s03(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\26051s03.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__26051s03()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__26051s03(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\26051s04.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__26051s04()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__26051s04(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\26051s04.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__26051s04()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__26051s04(realsolid)],
 // 0 // Left Eye
 // 4 16 10.696 -20.186 -15.61 6.22 -23.711 -18.465 2.541 -16.827 -19.318 4.85 -10.589 -17.113
   [4,16,10.696,-20.186,-15.61,6.22,-23.711,-18.465,2.541,-16.827,-19.318,4.85,-10.589,-17.113],
@@ -137,5 +138,5 @@ function ldraw_lib__26051() = [
   [5,24,-6.22,-23.711,-18.465,-10.696,-20.186,-15.61,-2.541,-16.827,-19.318,-9.388,-26.841,-16.668],
 ];
 module ldraw_lib__26051(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__26051(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__26051(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__26051(line=0.2);

@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__196225a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__196225a(realsolid=false) = [
 // 0 Sticker  1.2 x  8.0 with Black "INTERNATIONAL" on Yellow Background
 // 0 Name: 196225a.dat
 // 0 Author: Ulrich Röder [UR]
@@ -1018,5 +1019,5 @@ function ldraw_lib__196225a() = [
   [3,14,61.256,-.25,5.422,80,-.25,12,56.076,-.25,5.422],
 ];
 module ldraw_lib__196225a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__196225a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__196225a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__196225a(line=0.2);

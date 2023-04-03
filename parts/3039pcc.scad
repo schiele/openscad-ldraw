@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3039s01.scad>
-function ldraw_lib__3039pcc() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3039pcc(realsolid=false) = [
 // 0 Slope Brick 45  2 x  2 with Control Panel with Red and Green Lamps Pattern
 // 0 Name: 3039pcc.dat
 // 0 Author: Christophe Mitillo [Christophe_Mitillo]
@@ -16,7 +17,7 @@ function ldraw_lib__3039pcc() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3039s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3039s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3039s01(realsolid)],
 // 
 // 4 2 -18.65 0.6 -10.6 -18.8 0.85 -10.85 -18.3 0.85 -10.85 -18.3 0.49 -10.49
   [4,2,-18.65,0.6,-10.6,-18.8,0.85,-10.85,-18.3,0.85,-10.85,-18.3,0.49,-10.49],
@@ -2256,5 +2257,5 @@ function ldraw_lib__3039pcc() = [
   [3,16,-14.8,0.85,-10.85,-14.8,2.26,-12.26,-14.3,1.56,-11.56],
 ];
 module ldraw_lib__3039pcc(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3039pcc(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3039pcc(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3039pcc(line=0.2);

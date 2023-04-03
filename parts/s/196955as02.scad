@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <196945sde.scad>
-function ldraw_lib__s__196955as02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__196955as02(realsolid=false) = [
 // 0 ~Sticker with Black German Railways Logo and White "7745" Upper
 // 0 Name: s\196955as02.dat
 // 0 Author: Steffen [Steffen]
@@ -23,7 +24,7 @@ function ldraw_lib__s__196955as02() = [
 // 4 16 20 0 0 20 0 23.5 20 -0.25 23.5 20 -0.25 0
   [4,16,20,0,0,20,0,23.5,20,-0.25,23.5,20,-0.25,0],
 // 1 16 0 -0.25 12 0.245 0 0 0 1 0 0 0 0.245 s\196945sde.dat
-  [1,16,0,-0.25,12,0.245,0,0,0,1,0,0,0,0.245, ldraw_lib__s__196945sde()],
+  [1,16,0,-0.25,12,0.245,0,0,0,1,0,0,0,0.245, ldraw_lib__s__196945sde(realsolid)],
 // 4 16 -20 -0.25 23.5 -13.965 -0.25 21.555 13.965 -0.25 21.555 20 -0.25 23.5
   [4,16,-20,-0.25,23.5,-13.965,-0.25,21.555,13.965,-0.25,21.555,20,-0.25,23.5],
 // 4 16 -13.965 -0.25 2.445 -16.6 -0.25 0 16.6 -0.25 0 13.965 -0.25 2.445
@@ -38,5 +39,5 @@ function ldraw_lib__s__196955as02() = [
   [4,16,13.965,-0.25,2.445,16.6,-0.25,0,20,-0.25,23.5,13.965,-0.25,21.555],
 ];
 module ldraw_lib__s__196955as02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__196955as02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__196955as02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__196955as02(line=0.2);

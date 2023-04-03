@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <29125c01.scad>
 use <47157.scad>
-function ldraw_lib__26913() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__26913(realsolid=false) = [
 // 0 Electric Power Functions 2.0 Boost Interactive Motor
 // 0 Name: 26913.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -22,11 +23,11 @@ function ldraw_lib__26913() = [
 // 0 // Case
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 29125c01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__29125c01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__29125c01(realsolid)],
 // 0 // Axle hub
 // 1 4 0 34 -60 1 0 0 0 1 0 0 0 1 47157.dat
-  [1,4,0,34,-60,1,0,0,0,1,0,0,0,1, ldraw_lib__47157()],
+  [1,4,0,34,-60,1,0,0,0,1,0,0,0,1, ldraw_lib__47157(realsolid)],
 ];
 module ldraw_lib__26913(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__26913(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__26913(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__26913(line=0.2);

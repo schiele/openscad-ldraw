@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/2-4cylo.scad>
 use <../../p/2-4ndis.scad>
-function ldraw_lib__s__11438s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__11438s01(realsolid=false) = [
 // 0 ~Minifig Armour Shoulder Pads with Ridges Half
 // 0 Name: s\11438s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -1306,14 +1307,14 @@ function ldraw_lib__s__11438s01() = [
 // 5 24 4.74 3.323 -15.068 9.647 3.034 -14.532 5.231 7.835 -15.789 4.442 -0.695 -13.531
   [5,24,4.74,3.323,-15.068,9.647,3.034,-14.532,5.231,7.835,-15.789,4.442,-0.695,-13.531],
 // 1 16 0 0 0 0 0 6 0 -1 0 -6 0 0 2-4ndis.dat
-  [1,16,0,0,0,0,0,6,0,-1,0,-6,0,0, ldraw_lib__2_4ndis()],
+  [1,16,0,0,0,0,0,6,0,-1,0,-6,0,0, ldraw_lib__2_4ndis(realsolid)],
 // 1 16 0 -4 0 0 0 6 0 1 0 -6 0 0 2-4ndis.dat
-  [1,16,0,-4,0,0,0,6,0,1,0,-6,0,0, ldraw_lib__2_4ndis()],
+  [1,16,0,-4,0,0,0,6,0,1,0,-6,0,0, ldraw_lib__2_4ndis(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 0 0 0 6 0 -4 0 -6 0 0 2-4cylo.dat
-  [1,16,0,0,0,0,0,6,0,-4,0,-6,0,0, ldraw_lib__2_4cylo()],
+  [1,16,0,0,0,0,0,6,0,-4,0,-6,0,0, ldraw_lib__2_4cylo(realsolid)],
 ];
 module ldraw_lib__s__11438s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__11438s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__11438s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__11438s01(line=0.2);

@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/48933s01.scad>
 use <../p/stug-2x1.scad>
-function ldraw_lib__48933ps1() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__48933ps1(realsolid=false) = [
 // 0 Wedge  4 x  4 Triple with Stud Notches & Grey Mechanical Pattern
 // 0 Name: 48933ps1.dat
 // 0 Author: Damien Roux [Darats]
@@ -18,9 +19,9 @@ function ldraw_lib__48933ps1() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\48933s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__48933s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__48933s01(realsolid)],
 // 1 16 0 0 0 0 0 1 0 1 0 -1 0 0 stug-2x1.dat
-  [1,16,0,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__stug_2x1()],
+  [1,16,0,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__stug_2x1(realsolid)],
 // 4 16 -20 0 10 -40 20 10 -40 20 -10 -20 0 -10
   [4,16,-20,0,10,-40,20,10,-40,20,-10,-20,0,-10],
 // 4 16 20 0 -10 40 20 -10 40 20 10 20 0 10
@@ -261,5 +262,5 @@ function ldraw_lib__48933ps1() = [
   [3,16,40,20,-10,33.25,13.667,-11.25,38.652,20,-14.044],
 ];
 module ldraw_lib__48933ps1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__48933ps1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__48933ps1(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__48933ps1(line=0.2);

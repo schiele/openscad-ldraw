@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__3068p11a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__3068p11a(realsolid=false) = [
 // 0 ~Launch Command Logo Pattern
 // 0 Name: s\3068p11a.dat
 // 0 Author: Miklos Hosszu [hmick]
@@ -392,5 +393,5 @@ function ldraw_lib__s__3068p11a() = [
 // 0
 ];
 module ldraw_lib__s__3068p11a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__3068p11a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__3068p11a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__3068p11a(line=0.2);

@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__92251s04() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__92251s04(realsolid=false) = [
 // 0 ~Figure Friends Foot with Negative Sandal Pattern
 // 0 Name: s\92251s04.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -573,5 +574,5 @@ function ldraw_lib__s__92251s04() = [
   [5,24,3.1312,-6.6527,-4.672,2.9285,-4.7272,-5.5188,6.315,-7.051,-7.6234,1.3798,-4.312,-1.181],
 ];
 module ldraw_lib__s__92251s04(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__92251s04(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__92251s04(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__92251s04(line=0.2);

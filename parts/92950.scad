@@ -4,7 +4,8 @@ use <../p/box3u2p.scad>
 use <../p/box3u4a.scad>
 use <../p/box5.scad>
 use <../p/stug-1x6.scad>
-function ldraw_lib__92950() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__92950(realsolid=false) = [
 // 0 Arch  1 x  6 Raised
 // 0 Name: 92950.dat
 // 0 Author: Alex Taylor [anathema]
@@ -23,27 +24,27 @@ function ldraw_lib__92950() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 48.972 -10 -40 0 40 -28.9719 0 -28.9719 0 4 0 48\1-4cylo.dat
-  [1,16,0,48.972,-10,-40,0,40,-28.9719,0,-28.9719,0,4,0, ldraw_lib__48__1_4cylo()],
+  [1,16,0,48.972,-10,-40,0,40,-28.9719,0,-28.9719,0,4,0, ldraw_lib__48__1_4cylo(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 48.972 10 -40 0 40 -28.9719 0 -28.9719 0 -4 0 48\1-4cylo.dat
-  [1,16,0,48.972,10,-40,0,40,-28.9719,0,-28.9719,0,-4,0, ldraw_lib__48__1_4cylo()],
+  [1,16,0,48.972,10,-40,0,40,-28.9719,0,-28.9719,0,-4,0, ldraw_lib__48__1_4cylo(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 50 24 0 6 0 0 0 -20 0 0 0 6 box5.dat
-  [1,16,50,24,0,6,0,0,0,-20,0,0,0,6, ldraw_lib__box5()],
+  [1,16,50,24,0,6,0,0,0,-20,0,0,0,6, ldraw_lib__box5(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -50 24 0 6 0 0 0 -20 0 0 0 6 box5.dat
-  [1,16,-50,24,0,6,0,0,0,-20,0,0,0,6, ldraw_lib__box5()],
+  [1,16,-50,24,0,6,0,0,0,-20,0,0,0,6, ldraw_lib__box5(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 20 0 0 0 -40 0 -16 0 -6 0 0 box3u4a.dat
-  [1,16,0,20,0,0,0,-40,0,-16,0,-6,0,0, ldraw_lib__box3u4a()],
+  [1,16,0,20,0,0,0,-40,0,-16,0,-6,0,0, ldraw_lib__box3u4a(realsolid)],
 // 1 16 0 24 0 0 0 -60 0 -24 0 -10 0 0 box3u2p.dat
-  [1,16,0,24,0,0,0,-60,0,-24,0,-10,0,0, ldraw_lib__box3u2p()],
+  [1,16,0,24,0,0,0,-60,0,-24,0,-10,0,0, ldraw_lib__box3u2p(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 stug-1x6.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_1x6()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_1x6(realsolid)],
 // 
 // 3 16 -40 24 10 -40 20 10 -40 20 6
   [3,16,-40,24,10,-40,20,10,-40,20,6],
@@ -208,5 +209,5 @@ function ldraw_lib__92950() = [
   [2,24,-40,24,10,-40,24,-10],
 ];
 module ldraw_lib__92950(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__92950(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__92950(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__92950(line=0.2);

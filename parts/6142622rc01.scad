@@ -3,7 +3,8 @@ use <s/6142622rs01.scad>
 use <s/6142622rs02.scad>
 use <s/6142622rs03.scad>
 use <s/6142622rs05.scad>
-function ldraw_lib__6142622rc01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6142622rc01(realsolid=false) = [
 // 0 Sticker  4.0 x  1.8 with Chevrolet Corvette Z06-C7 Logo on Yellow Background and Dark Grey Air Vents on Black Background (Formed)
 // 0 Name: 6142622rc01.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -20,16 +21,16 @@ function ldraw_lib__6142622rc01() = [
 // 
 // 
 // 1 16 0 1.2836 19.12 1 0 0 0 .998116 -.061359 0 .061359 .998116 s\6142622rs01.dat
-  [1,16,0,1.2836,19.12,1,0,0,0,.998116,-.061359,0,.061359,.998116, ldraw_lib__s__6142622rs01()],
+  [1,16,0,1.2836,19.12,1,0,0,0,.998116,-.061359,0,.061359,.998116, ldraw_lib__s__6142622rs01(realsolid)],
 // 1 16 0 1.2836 19.12 1 0 0 0 .983244 -.182294 0 .182294 .983244 s\6142622rs02.dat
-  [1,16,0,1.2836,19.12,1,0,0,0,.983244,-.182294,0,.182294,.983244, ldraw_lib__s__6142622rs02()],
+  [1,16,0,1.2836,19.12,1,0,0,0,.983244,-.182294,0,.182294,.983244, ldraw_lib__s__6142622rs02(realsolid)],
 // 4 14 -18 4.8465 -1.4687 -18 11.1246 -21.3223 18 11.1246 -21.3223 18 4.8465 -1.4687
   [4,14,-18,4.8465,-1.4687,-18,11.1246,-21.3223,18,11.1246,-21.3223,18,4.8465,-1.4687],
 // 1 16 0 11.3582 -21.232 1 0 0 0 .908334 -.418246 0 .418246 .908334 s\6142622rs03.dat
-  [1,16,0,11.3582,-21.232,1,0,0,0,.908334,-.418246,0,.418246,.908334, ldraw_lib__s__6142622rs03()],
+  [1,16,0,11.3582,-21.232,1,0,0,0,.908334,-.418246,0,.418246,.908334, ldraw_lib__s__6142622rs03(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\6142622rs05.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6142622rs05()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6142622rs05(realsolid)],
 ];
 module ldraw_lib__6142622rc01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6142622rc01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6142622rc01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6142622rc01(line=0.2);

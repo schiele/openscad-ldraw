@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <r04o1000.scad>
-function ldraw_lib__t04ounit() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__t04ounit(realsolid=false) = [
 // 0 ~Moved to r04o1000
 // 0 Name: t04ounit.dat
 // 0 Author: [PTadmin]
@@ -24,9 +25,9 @@ function ldraw_lib__t04ounit() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 r04o1000.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__r04o1000()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__r04o1000(realsolid)],
 // 
 ];
 module ldraw_lib__t04ounit(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__t04ounit(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__t04ounit(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__t04ounit(line=0.2);

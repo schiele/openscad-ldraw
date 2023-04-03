@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__4620855ac01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4620855ac01(realsolid=false) = [
 // 0 Sticker  2.9 x  4.2 with Orange and Yellow Shooting Star (Formed)
 // 0 Name: 4620855ac01.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -607,5 +608,5 @@ function ldraw_lib__4620855ac01() = [
   [5,24,-24.5,.4515,-37.0149,-24.5,.7015,-37.0149,-30,-.046,-32.0397,-26.5,.8507,-38.5074],
 ];
 module ldraw_lib__4620855ac01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4620855ac01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4620855ac01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4620855ac01(line=0.2);

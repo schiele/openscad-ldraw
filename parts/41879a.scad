@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/hipstud.scad>
 use <s/41879s01.scad>
-function ldraw_lib__41879a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__41879a(realsolid=false) = [
 // 0 Minifig Hips and Legs Short without Hole
 // 0 Name: 41879a.dat
 // 0 Author: Mark Kennedy [mkennedy]
@@ -25,11 +26,11 @@ function ldraw_lib__41879a() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\41879s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__41879s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__41879s01(realsolid)],
 // 1 16 10 0 0 1 0 0 0 1 0 0 0 1 hipstud.dat
-  [1,16,10,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__hipstud()],
+  [1,16,10,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__hipstud(realsolid)],
 // 1 16 -10 0 0 -1 0 0 0 1 0 0 0 -1 hipstud.dat
-  [1,16,-10,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__hipstud()],
+  [1,16,-10,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__hipstud(realsolid)],
 // 
 // 0 // on foot
 // 4 16 18.667 16 -10 18.667 16 -4 1 16 -4 1 16 -10
@@ -63,5 +64,5 @@ function ldraw_lib__41879a() = [
   [4,16,-19,24,10,-18.667,16,10,-1,16,10,-1,24,10],
 ];
 module ldraw_lib__41879a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__41879a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__41879a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__41879a(line=0.2);

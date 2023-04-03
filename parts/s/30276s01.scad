@@ -7,7 +7,8 @@ use <../../p/2-4edge.scad>
 use <../../p/4-4con0.scad>
 use <../../p/4-4con2.scad>
 use <../../p/4-4cylc.scad>
-function ldraw_lib__s__30276s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__30276s01(realsolid=false) = [
 // 0 ~Minifig Headdress with Hooked Beak and Feathers - Half
 // 0 Name: s\30276s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -24,23 +25,23 @@ function ldraw_lib__s__30276s01() = [
 // 
 // 
 // 1 16 30 15.5 8.7 4 0 0 0 -14.7 0 0 0 4 4-4cylc.dat
-  [1,16,30,15.5,8.7,4,0,0,0,-14.7,0,0,0,4, ldraw_lib__4_4cylc()],
+  [1,16,30,15.5,8.7,4,0,0,0,-14.7,0,0,0,4, ldraw_lib__4_4cylc(realsolid)],
 // 1 16 30 0.8 8.7 1.33333 0 0 0 -2.7 0 0 0 1.33333 4-4con2.dat
-  [1,16,30,0.8,8.7,1.33333,0,0,0,-2.7,0,0,0,1.33333, ldraw_lib__4_4con2()],
+  [1,16,30,0.8,8.7,1.33333,0,0,0,-2.7,0,0,0,1.33333, ldraw_lib__4_4con2(realsolid)],
 // 1 16 30 -1.9 8.7 2.66667 0 0 0 -4 0 0 0 2.66667 4-4con0.dat
-  [1,16,30,-1.9,8.7,2.66667,0,0,0,-4,0,0,0,2.66667, ldraw_lib__4_4con0()],
+  [1,16,30,-1.9,8.7,2.66667,0,0,0,-4,0,0,0,2.66667, ldraw_lib__4_4con0(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -4 0 0 0 6 0 -7 0 -6 0 0 2-4cyli.dat
-  [1,16,0,-4,0,0,0,6,0,-7,0,-6,0,0, ldraw_lib__2_4cyli()],
+  [1,16,0,-4,0,0,0,6,0,-7,0,-6,0,0, ldraw_lib__2_4cyli(realsolid)],
 // 1 16 0 -11 0 0 0 6 0 -1 0 -6 0 0 2-4edge.dat
-  [1,16,0,-11,0,0,0,6,0,-1,0,-6,0,0, ldraw_lib__2_4edge()],
+  [1,16,0,-11,0,0,0,6,0,-1,0,-6,0,0, ldraw_lib__2_4edge(realsolid)],
 // 1 16 0 -11 0 0 0 6 0 -1 0 -6 0 0 2-4chrd.dat
-  [1,16,0,-11,0,0,0,6,0,-1,0,-6,0,0, ldraw_lib__2_4chrd()],
+  [1,16,0,-11,0,0,0,6,0,-1,0,-6,0,0, ldraw_lib__2_4chrd(realsolid)],
 // 1 16 0 -4 0 0 0 8 0 -7 0 8 0 0 1-4cyli.dat
-  [1,16,0,-4,0,0,0,8,0,-7,0,8,0,0, ldraw_lib__1_4cyli()],
+  [1,16,0,-4,0,0,0,8,0,-7,0,8,0,0, ldraw_lib__1_4cyli(realsolid)],
 // 1 16 0 -11 0 0 0 8 0 -1 0 8 0 0 1-4edge.dat
-  [1,16,0,-11,0,0,0,8,0,-1,0,8,0,0, ldraw_lib__1_4edge()],
+  [1,16,0,-11,0,0,0,8,0,-1,0,8,0,0, ldraw_lib__1_4edge(realsolid)],
 // 3 16 20.314 1.315 0.627 19.616 2.936 -0.019 22.175 2.203 2.412
   [3,16,20.314,1.315,0.627,19.616,2.936,-0.019,22.175,2.203,2.412],
 // 3 16 22.175 2.203 2.412 19.616 2.936 -0.019 23.703 2.936 3.617
@@ -2908,5 +2909,5 @@ function ldraw_lib__s__30276s01() = [
   [2,24,33.438,.8,10.616,33.445,2.936,10.606],
 ];
 module ldraw_lib__s__30276s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__30276s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__30276s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__30276s01(line=0.2);

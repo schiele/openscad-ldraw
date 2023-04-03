@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <3815c01.scad>
-function ldraw_lib__4226869() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4226869(realsolid=false) = [
 // 0 ~_Minifig Hips and Legs (Complete) Dark Green (Obsolete)
 // 0 Name: 4226869.dat
 // 0 Author: [PTadmin]
@@ -20,8 +21,8 @@ function ldraw_lib__4226869() = [
 // 0 // colouring of the part (Dark Green).
 // 
 // 1 288 0 0 0 1 0 0 0 1 0 0 0 1 3815c01.dat
-  [1,288,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3815c01()],
+  [1,288,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3815c01(realsolid)],
 ];
 module ldraw_lib__4226869(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4226869(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4226869(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4226869(line=0.2);

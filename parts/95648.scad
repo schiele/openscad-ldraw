@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <99385c01.scad>
 use <99386.scad>
-function ldraw_lib__95648() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__95648(realsolid=false) = [
 // 0 Electric Mindstorms EV3 Touch Sensor
 // 0 Name: 95648.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -18,10 +19,10 @@ function ldraw_lib__95648() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 99385c01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__99385c01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__99385c01(realsolid)],
 // 1 4 0 -40 -80 1 0 0 0 1 0 0 0 1 99386.dat
-  [1,4,0,-40,-80,1,0,0,0,1,0,0,0,1, ldraw_lib__99386()],
+  [1,4,0,-40,-80,1,0,0,0,1,0,0,0,1, ldraw_lib__99386(realsolid)],
 ];
 module ldraw_lib__95648(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__95648(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__95648(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__95648(line=0.2);

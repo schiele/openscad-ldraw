@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <1-3cyli.scad>
 use <1-3edge.scad>
-function ldraw_lib__48__1_3cylo() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__48__1_3cylo(realsolid=false) = [
 // 0 Hi-Res Cylinder Open 0.3333
 // 0 Name: 48\1-3cylo.dat
 // 0 Author: Max Martin Richter [MMR1988]
@@ -16,12 +17,12 @@ function ldraw_lib__48__1_3cylo() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 48\1-3edge.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__48__1_3edge()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__48__1_3edge(realsolid)],
 // 1 16 0 1 0 1 0 0 0 1 0 0 0 1 48\1-3edge.dat
-  [1,16,0,1,0,1,0,0,0,1,0,0,0,1, ldraw_lib__48__1_3edge()],
+  [1,16,0,1,0,1,0,0,0,1,0,0,0,1, ldraw_lib__48__1_3edge(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 48\1-3cyli.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__48__1_3cyli()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__48__1_3cyli(realsolid)],
 ];
 module ldraw_lib__48__1_3cylo(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__48__1_3cylo(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__48__1_3cylo(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__48__1_3cylo(line=0.2);

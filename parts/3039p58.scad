@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3039s01.scad>
-function ldraw_lib__3039p58() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3039p58(realsolid=false) = [
 // 0 Slope Brick 45  2 x  2 with Divers Computer Pattern
 // 0 Name: 3039p58.dat
 // 0 Author: Thomas Burger [grapeape]
@@ -20,7 +21,7 @@ function ldraw_lib__3039p58() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3039s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3039s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3039s01(realsolid)],
 // 4 3 -2.2 3.041 -13.041 -1.6 2.616 -12.616 -5 2.263 -12.263 -5.8 2.546 -12.546
   [4,3,-2.2,3.041,-13.041,-1.6,2.616,-12.616,-5,2.263,-12.263,-5.8,2.546,-12.546],
 // 3 3 -0.8 2.263 -12.263 -5 2.263 -12.263 -1.6 2.616 -12.616
@@ -831,5 +832,5 @@ function ldraw_lib__3039p58() = [
   [4,16,-20,20,-30,20,20,-30,17,19.304,-29.304,-17,19.304,-29.304],
 ];
 module ldraw_lib__3039p58(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3039p58(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3039p58(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3039p58(line=0.2);

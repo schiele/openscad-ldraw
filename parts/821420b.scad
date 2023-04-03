@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__821420b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__821420b(realsolid=false) = [
 // 0 Sticker  1.4 x  2.6 with Light Grey Stripes
 // 0 Name: 821420b.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -44,8 +45,8 @@ function ldraw_lib__821420b() = [
   [4,7,26,-0.25,-13.8,26,-0.25,-11.4,-26,-0.25,-11.4,-26,-0.25,-13.8],
 // 
 // 1 16 0 -0.25 0 26 0 0 0 0.25 0 0 0 13.8 box5-12.dat
-  [1,16,0,-0.25,0,26,0,0,0,0.25,0,0,0,13.8, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,26,0,0,0,0.25,0,0,0,13.8, ldraw_lib__box5_12(realsolid)],
 ];
 module ldraw_lib__821420b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__821420b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__821420b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__821420b(line=0.2);

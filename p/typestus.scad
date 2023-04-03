@@ -3,7 +3,8 @@ use <1-4chrd.scad>
 use <1-4ndis.scad>
 use <2-4chrd.scad>
 use <2-4ndis.scad>
-function ldraw_lib__typestus() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__typestus(realsolid=false) = [
 // 0 Type Stencil Upper Case S
 // 0 Name: typestus.dat
 // 0 Author: Willy Tschager [Holly-Wood]
@@ -23,13 +24,13 @@ function ldraw_lib__typestus() = [
 // 
 // 0 // Black
 // 1 0 -3.13 0 -1.74 .4 0 0 0 1 0 0 0 .48 2-4chrd.dat
-  [1,0,-3.13,0,-1.74,.4,0,0,0,1,0,0,0,.48, ldraw_lib__2_4chrd()],
+  [1,0,-3.13,0,-1.74,.4,0,0,0,1,0,0,0,.48, ldraw_lib__2_4chrd(realsolid)],
 // 1 0 -3.13 0 -4.52 0 0 -.4 0 1 0 -.48 0 0 1-4chrd.dat
-  [1,0,-3.13,0,-4.52,0,0,-.4,0,1,0,-.48,0,0, ldraw_lib__1_4chrd()],
+  [1,0,-3.13,0,-4.52,0,0,-.4,0,1,0,-.48,0,0, ldraw_lib__1_4chrd(realsolid)],
 // 1 0 2.77 0 4.52 0 0 .4 0 1 0 .48 0 0 1-4chrd.dat
-  [1,0,2.77,0,4.52,0,0,.4,0,1,0,.48,0,0, ldraw_lib__1_4chrd()],
+  [1,0,2.77,0,4.52,0,0,.4,0,1,0,.48,0,0, ldraw_lib__1_4chrd(realsolid)],
 // 1 0 2.77 0 2.04 0 0 .4 0 1 0 -.48 0 0 1-4chrd.dat
-  [1,0,2.77,0,2.04,0,0,.4,0,1,0,-.48,0,0, ldraw_lib__1_4chrd()],
+  [1,0,2.77,0,2.04,0,0,.4,0,1,0,-.48,0,0, ldraw_lib__1_4chrd(realsolid)],
 // 4 0 3.17 0 4.52 2.77 0 5 2.617 0 4.963 2.487 0 4.859
   [4,0,3.17,0,4.52,2.77,0,5,2.617,0,4.963,2.487,0,4.859],
 // 4 0 2.36 0 4.57 3.17 0 4.52 2.487 0 4.859 2.4 0 4.72
@@ -131,13 +132,13 @@ function ldraw_lib__typestus() = [
 // 
 // 0 // Main Color
 // 1 16 -3.13 0 -1.74 0.4 0 0 0 1 0 0 0 0.48 2-4ndis.dat
-  [1,16,-3.13,0,-1.74,0.4,0,0,0,1,0,0,0,0.48, ldraw_lib__2_4ndis()],
+  [1,16,-3.13,0,-1.74,0.4,0,0,0,1,0,0,0,0.48, ldraw_lib__2_4ndis(realsolid)],
 // 1 16 -3.13 0 -4.52 0 0 -0.4 0 1 0 -0.48 0 0 1-4ndis.dat
-  [1,16,-3.13,0,-4.52,0,0,-0.4,0,1,0,-0.48,0,0, ldraw_lib__1_4ndis()],
+  [1,16,-3.13,0,-4.52,0,0,-0.4,0,1,0,-0.48,0,0, ldraw_lib__1_4ndis(realsolid)],
 // 1 16 2.77 0 4.52 0 0 0.4 0 1 0 0.48 0 0 1-4ndis.dat
-  [1,16,2.77,0,4.52,0,0,0.4,0,1,0,0.48,0,0, ldraw_lib__1_4ndis()],
+  [1,16,2.77,0,4.52,0,0,0.4,0,1,0,0.48,0,0, ldraw_lib__1_4ndis(realsolid)],
 // 1 16 2.77 0 2.04 0 0 0.4 0 1 0 -0.48 0 0 1-4ndis.dat
-  [1,16,2.77,0,2.04,0,0,0.4,0,1,0,-0.48,0,0, ldraw_lib__1_4ndis()],
+  [1,16,2.77,0,2.04,0,0,0.4,0,1,0,-0.48,0,0, ldraw_lib__1_4ndis(realsolid)],
 // 3 16 -3.53 0 1.783 -3.452 0 2.568 -3.53 0 5
   [3,16,-3.53,0,1.783,-3.452,0,2.568,-3.53,0,5],
 // 3 16 -3.452 0 2.568 -3.226 0 3.259 -3.53 0 5
@@ -281,5 +282,5 @@ function ldraw_lib__typestus() = [
   [3,16,-2.752,0,-.272,-3.13,0,-1.26,-2.73,0,-1.26],
 ];
 module ldraw_lib__typestus(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__typestus(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__typestus(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__typestus(line=0.2);

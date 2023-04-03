@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__14734s06() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__14734s06(realsolid=false) = [
 // 0 ~Lion / Tiger Cub Claws
 // 0 Name: s\14734s06.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -63,5 +64,5 @@ function ldraw_lib__s__14734s06() = [
   [5,24,12.06,-4.07,-33.028,11.56,-4.13,-33.737,12.17,-3.73,-32.882,11.81,-4.25,-33.284],
 ];
 module ldraw_lib__s__14734s06(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__14734s06(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__14734s06(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__14734s06(line=0.2);

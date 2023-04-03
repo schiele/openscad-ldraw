@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3817bs01.scad>
-function ldraw_lib__3816bp6g() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3816bp6g(realsolid=false) = [
 // 0 Minifig Leg Right with White and Gold Markings Pattern
 // 0 Name: 3816bp6g.dat
 // 0 Author: Chris Dee [cwdee]
@@ -21,7 +22,7 @@ function ldraw_lib__3816bp6g() = [
 // 
 // 
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\3817bs01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__3817bs01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__3817bs01(realsolid)],
 // 5 24 -2 3.349 -8.084 -18.659 3.349 -8.084 -2 0 -8.75 -2 6.187 -6.187
   [5,24,-2,3.349,-8.084,-18.659,3.349,-8.084,-2,0,-8.75,-2,6.187,-6.187],
 // 5 24 -2 6.187 -6.187 -18.755 6.187 -6.187 -2 7.399 -4 -2 3.349 -8.084
@@ -1227,5 +1228,5 @@ function ldraw_lib__3816bp6g() = [
   [3,16,-7.5,3.349,-8.084,-9.406,3.349,-8.084,-9.3,3.559,-7.944],
 ];
 module ldraw_lib__3816bp6g(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3816bp6g(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3816bp6g(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3816bp6g(line=0.2);

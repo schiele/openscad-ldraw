@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__4521703p() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4521703p(realsolid=false) = [
 // 0 Sticker  1.7 x  1.7 with Dark_Red "I"
 // 0 Name: 4521703p.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -15,7 +16,7 @@ function ldraw_lib__4521703p() = [
 // 
 // 
 // 1 15 0 -0.25 0 17.5 0 0 0 0.25 0 0 0 17.5 box5-12.dat
-  [1,15,0,-0.25,0,17.5,0,0,0,0.25,0,0,0,17.5, ldraw_lib__box5_12()],
+  [1,15,0,-0.25,0,17.5,0,0,0,0.25,0,0,0,17.5, ldraw_lib__box5_12(realsolid)],
 // 0 //
 // 4 320 2.258 -0.25 -11.407 2.258 -0.25 11.5 -2.367 -0.25 11.5 -2.367 -0.25 -11.407
   [4,320,2.258,-0.25,-11.407,2.258,-0.25,11.5,-2.367,-0.25,11.5,-2.367,-0.25,-11.407],
@@ -30,5 +31,5 @@ function ldraw_lib__4521703p() = [
 // 0 //
 ];
 module ldraw_lib__4521703p(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4521703p(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4521703p(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4521703p(line=0.2);

@@ -2,7 +2,8 @@ use <../../lib.scad>
 use <../../p/4-4cylc.scad>
 use <../../p/4-4edge.scad>
 use <../../p/stud4a.scad>
-function ldraw_lib__s__40001s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__40001s02(realsolid=false) = [
 // 0 ~Technic Steering Wheel Yoke Hub
 // 0 Name: s\40001s02.dat
 // 0 Author: Santeri Piippo [arezey]
@@ -833,32 +834,32 @@ function ldraw_lib__s__40001s02() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0.5 8 -1 0 0 0 -0.5 0 0 0 1 4-4cylc.dat
-  [1,16,0,0.5,8,-1,0,0,0,-0.5,0,0,0,1, ldraw_lib__4_4cylc()],
+  [1,16,0,0.5,8,-1,0,0,0,-0.5,0,0,0,1, ldraw_lib__4_4cylc(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 6.928 0.5 4 -0.5 0 0.866 0 -0.5 0 0.866 0 0.5 4-4cylc.dat
-  [1,16,6.928,0.5,4,-0.5,0,0.866,0,-0.5,0,0.866,0,0.5, ldraw_lib__4_4cylc()],
+  [1,16,6.928,0.5,4,-0.5,0,0.866,0,-0.5,0,0.866,0,0.5, ldraw_lib__4_4cylc(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 6.928 0.5 -4 0.5 0 0.866 0 -0.5 0 0.866 0 -0.5 4-4cylc.dat
-  [1,16,6.928,0.5,-4,0.5,0,0.866,0,-0.5,0,0.866,0,-0.5, ldraw_lib__4_4cylc()],
+  [1,16,6.928,0.5,-4,0.5,0,0.866,0,-0.5,0,0.866,0,-0.5, ldraw_lib__4_4cylc(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0.5 -8 1 0 0 0 -0.5 0 0 0 -1 4-4cylc.dat
-  [1,16,0,0.5,-8,1,0,0,0,-0.5,0,0,0,-1, ldraw_lib__4_4cylc()],
+  [1,16,0,0.5,-8,1,0,0,0,-0.5,0,0,0,-1, ldraw_lib__4_4cylc(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -6.928 0.5 -4 0.5 0 -0.866 0 -0.5 0 -0.866 0 -0.5 4-4cylc.dat
-  [1,16,-6.928,0.5,-4,0.5,0,-0.866,0,-0.5,0,-0.866,0,-0.5, ldraw_lib__4_4cylc()],
+  [1,16,-6.928,0.5,-4,0.5,0,-0.866,0,-0.5,0,-0.866,0,-0.5, ldraw_lib__4_4cylc(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -6.928 0.5 4 -0.5 0 -0.866 0 -0.5 0 -0.866 0 0.5 4-4cylc.dat
-  [1,16,-6.928,0.5,4,-0.5,0,-0.866,0,-0.5,0,-0.866,0,0.5, ldraw_lib__4_4cylc()],
+  [1,16,-6.928,0.5,4,-0.5,0,-0.866,0,-0.5,0,-0.866,0,0.5, ldraw_lib__4_4cylc(realsolid)],
 // 1 16 0 19 0 -8 0 0 0 1 0 0 0 -8 4-4edge.dat
-  [1,16,0,19,0,-8,0,0,0,1,0,0,0,-8, ldraw_lib__4_4edge()],
+  [1,16,0,19,0,-8,0,0,0,1,0,0,0,-8, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 19 0 1 0 0 0 -1 0 0 0 -1 stud4a.dat
-  [1,16,0,19,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__stud4a()],
+  [1,16,0,19,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__stud4a(realsolid)],
 ];
 module ldraw_lib__s__40001s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__40001s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__40001s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__40001s02(line=0.2);

@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/1-4cylo.scad>
-function ldraw_lib__s__15619s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__15619s01(realsolid=false) = [
 // 0 ~Minifig Bandana Ninja Neck - 1/4
 // 0 Name: s\15619s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -19,7 +20,7 @@ function ldraw_lib__s__15619s01() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 0 -8 0 0 0 -3 0 0 0 8 1-4cylo.dat
-  [1,16,0,0,0,-8,0,0,0,-3,0,0,0,8, ldraw_lib__1_4cylo()],
+  [1,16,0,0,0,-8,0,0,0,-3,0,0,0,8, ldraw_lib__1_4cylo(realsolid)],
 // 4 16 -10.6576 -4.1718 4.4144 -11.5352 -4.1718 0 -9.9136 -3.3046 0 -9.1592 -3.3046 3.7936
   [4,16,-10.6576,-4.1718,4.4144,-11.5352,-4.1718,0,-9.9136,-3.3046,0,-9.1592,-3.3046,3.7936],
 // 4 16 -3.7936 -3.3046 9.1592 0 -3.3046 9.9136 0 -4.1718 11.5352 -4.4144 -4.1718 10.6576
@@ -278,5 +279,5 @@ function ldraw_lib__s__15619s01() = [
   [5,24,-10.152,0,6.376,-10.667,-2.276,6.703,-6.378,0,10.15,-12.974,-2.276,-0.037],
 ];
 module ldraw_lib__s__15619s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__15619s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__15619s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__15619s01(line=0.2);

@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__92198p01s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__92198p01s02(realsolid=false) = [
 // 0 ~Figure Friends Female Head with Open Mouth Lips Pattern
 // 0 Name: s\92198p01s02.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -59,5 +60,5 @@ function ldraw_lib__s__92198p01s02() = [
   [3,16,-2.2,21.85,-13.8307,-2.75,21.25,-13.9231,-2.05,22.3,-13.6992],
 ];
 module ldraw_lib__s__92198p01s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__92198p01s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__92198p01s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__92198p01s02(line=0.2);

@@ -6,7 +6,8 @@ use <../p/4-4ring3.scad>
 use <../p/4-4ring4.scad>
 use <../p/box4o4a.scad>
 use <../p/stud2a.scad>
-function ldraw_lib__25893a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__25893a(realsolid=false) = [
 // 0 Plate  1 x  1 Round with Bar Handle on Short Stem
 // 0 Name: 25893a.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -21,25 +22,25 @@ function ldraw_lib__25893a() = [
 // 
 // 
 // 1 16 0 3 0 10 0 0 0 -3 0 0 0 10 4-4cylc.dat
-  [1,16,0,3,0,10,0,0,0,-3,0,0,0,10, ldraw_lib__4_4cylc()],
+  [1,16,0,3,0,10,0,0,0,-3,0,0,0,10, ldraw_lib__4_4cylc(realsolid)],
 // 1 16 0 0 0 2 0 0 0 1 0 0 0 2 4-4ring4.dat
-  [1,16,0,0,0,2,0,0,0,1,0,0,0,2, ldraw_lib__4_4ring4()],
+  [1,16,0,0,0,2,0,0,0,1,0,0,0,2, ldraw_lib__4_4ring4(realsolid)],
 // 1 16 0 0 0 2 0 0 0 1 0 0 0 2 4-4ring3.dat
-  [1,16,0,0,0,2,0,0,0,1,0,0,0,2, ldraw_lib__4_4ring3()],
+  [1,16,0,0,0,2,0,0,0,1,0,0,0,2, ldraw_lib__4_4ring3(realsolid)],
 // 1 16 0 0 0 4 0 0 0 1 0 0 0 4 4-4disc.dat
-  [1,16,0,0,0,4,0,0,0,1,0,0,0,4, ldraw_lib__4_4disc()],
+  [1,16,0,0,0,4,0,0,0,1,0,0,0,4, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 0 0 4 0 0 0 1 0 0 0 4 4-4edge.dat
-  [1,16,0,0,0,4,0,0,0,1,0,0,0,4, ldraw_lib__4_4edge()],
+  [1,16,0,0,0,4,0,0,0,1,0,0,0,4, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 0 0 6 0 0 0 1 0 0 0 6 4-4edge.dat
-  [1,16,0,0,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4edge()],
+  [1,16,0,0,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 stud2a.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2a()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2a(realsolid)],
 // 1 16 -10 8 0 0 20 0 -4 0 0 0 0 4 4-4cylc.dat
-  [1,16,-10,8,0,0,20,0,-4,0,0,0,0,4, ldraw_lib__4_4cylc()],
+  [1,16,-10,8,0,0,20,0,-4,0,0,0,0,4, ldraw_lib__4_4cylc(realsolid)],
 // 1 16 10 8 0 0 -1 0 -4 0 0 0 0 -4 4-4disc.dat
-  [1,16,10,8,0,0,-1,0,-4,0,0,0,0,-4, ldraw_lib__4_4disc()],
+  [1,16,10,8,0,0,-1,0,-4,0,0,0,0,-4, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 3 0 9.5 0 0 0 1.9521 0 0 0 2.5 box4o4a.dat
-  [1,16,0,3,0,9.5,0,0,0,1.9521,0,0,0,2.5, ldraw_lib__box4o4a()],
+  [1,16,0,3,0,9.5,0,0,0,1.9521,0,0,0,2.5, ldraw_lib__box4o4a(realsolid)],
 // 2 24 -9.5 4.9521 -2.5 9.5 4.9521 -2.5
   [2,24,-9.5,4.9521,-2.5,9.5,4.9521,-2.5],
 // 2 24 -9.5 4.9521 2.5 9.5 4.9521 2.5
@@ -62,5 +63,5 @@ function ldraw_lib__25893a() = [
   [2,24,-9.5,4.9521,-2.5,-9.5,4.3044,-1.5308],
 ];
 module ldraw_lib__25893a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__25893a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__25893a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__25893a(line=0.2);

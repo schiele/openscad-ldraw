@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__8__studel() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__8__studel(realsolid=false) = [
 // 0 Stud with Electric Contact (Fast-Draw)
 // 0 Name: 8\studel.dat
 // 0 Author: Max Martin Richter [MMR1988]
@@ -109,5 +110,5 @@ function ldraw_lib__8__studel() = [
   [5,24,4.2,-4,4.2,4.2,0,4.2,6,-4,0,0,-4,6],
 ];
 module ldraw_lib__8__studel(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__8__studel(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__8__studel(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__8__studel(line=0.2);

@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__48__1_6edge() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__48__1_6edge(realsolid=false) = [
 // 0 Hi-Res Circle 0.1667
 // 0 Name: 48\1-6edge.dat
 // 0 Author: Mark Kennedy [mkennedy]
@@ -36,5 +37,5 @@ function ldraw_lib__48__1_6edge() = [
 // 
 ];
 module ldraw_lib__48__1_6edge(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__48__1_6edge(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__48__1_6edge(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__48__1_6edge(line=0.2);

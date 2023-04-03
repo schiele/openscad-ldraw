@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <11208.scad>
 use <11209.scad>
-function ldraw_lib__11208c01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__11208c01(realsolid=false) = [
 // 0 Wheel Rim 10 x 14 with Fake Bolts and  6 Spokes with Tyre 10/ 32 x 14
 // 0 Name: 11208c01.dat
 // 0 Author: Steffen [Steffen]
@@ -16,10 +17,10 @@ function ldraw_lib__11208c01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 11208.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__11208()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__11208(realsolid)],
 // 1 256 0 0 0 1 0 0 0 1 0 0 0 1 11209.dat
-  [1,256,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__11209()],
+  [1,256,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__11209(realsolid)],
 ];
 module ldraw_lib__11208c01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__11208c01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__11208c01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__11208c01(line=0.2);

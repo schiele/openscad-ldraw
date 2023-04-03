@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <4492pw2.scad>
 use <4494pw2c01.scad>
-function ldraw_lib__4493pw2c00() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4493pw2c00(realsolid=false) = [
 // 0 Animal Horse Body with Blue Blanket and Red Circle Pattern (Complete)
 // 0 Name: 4493pw2c00.dat
 // 0 Author: Willy Tschager [Holly-Wood]
@@ -22,10 +23,10 @@ function ldraw_lib__4493pw2c00() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 4494pw2c01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4494pw2c01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4494pw2c01(realsolid)],
 // 1 16 0 -19.5 -33.5 1 0 0 0 0.9848 -0.1736 0 0.1736 0.9848 4492pw2.dat
-  [1,16,0,-19.5,-33.5,1,0,0,0,0.9848,-0.1736,0,0.1736,0.9848, ldraw_lib__4492pw2()],
+  [1,16,0,-19.5,-33.5,1,0,0,0,0.9848,-0.1736,0,0.1736,0.9848, ldraw_lib__4492pw2(realsolid)],
 ];
 module ldraw_lib__4493pw2c00(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4493pw2c00(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4493pw2c00(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4493pw2c00(line=0.2);

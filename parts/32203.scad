@@ -3,7 +3,8 @@ use <../p/connhole.scad>
 use <../p/rect.scad>
 use <../p/znap1.scad>
 use <../p/znap6.scad>
-function ldraw_lib__32203() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__32203(realsolid=false) = [
 // 0 Znap Beam  3 Holes
 // 0 Name: 32203.dat
 // 0 Author: Thomas Woelk [t.woelk]
@@ -19,25 +20,25 @@ function ldraw_lib__32203() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 connhole.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__connhole()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__connhole(realsolid)],
 // 1 16 0 0 -60 1 0 0 0 1 0 0 0 1 znap6.dat
-  [1,16,0,0,-60,1,0,0,0,1,0,0,0,1, ldraw_lib__znap6()],
+  [1,16,0,0,-60,1,0,0,0,1,0,0,0,1, ldraw_lib__znap6(realsolid)],
 // 1 16 0 0 60 -1 0 0 0 1 0 0 0 -1 znap6.dat
-  [1,16,0,0,60,-1,0,0,0,1,0,0,0,-1, ldraw_lib__znap6()],
+  [1,16,0,0,60,-1,0,0,0,1,0,0,0,-1, ldraw_lib__znap6(realsolid)],
 // 1 16 0 0 40 -1 0 0 0 1 0 0 0 -1 connhole.dat
-  [1,16,0,0,40,-1,0,0,0,1,0,0,0,-1, ldraw_lib__connhole()],
+  [1,16,0,0,40,-1,0,0,0,1,0,0,0,-1, ldraw_lib__connhole(realsolid)],
 // 1 16 0 0 -40 -1 0 0 0 1 0 0 0 -1 connhole.dat
-  [1,16,0,0,-40,-1,0,0,0,1,0,0,0,-1, ldraw_lib__connhole()],
+  [1,16,0,0,-40,-1,0,0,0,1,0,0,0,-1, ldraw_lib__connhole(realsolid)],
 // 1 16 0 0 -20 -1 0 0 0 1 0 0 0 -1 znap1.dat
-  [1,16,0,0,-20,-1,0,0,0,1,0,0,0,-1, ldraw_lib__znap1()],
+  [1,16,0,0,-20,-1,0,0,0,1,0,0,0,-1, ldraw_lib__znap1(realsolid)],
 // 1 16 0 0 20 -1 0 0 0 1 0 0 0 -1 znap1.dat
-  [1,16,0,0,20,-1,0,0,0,1,0,0,0,-1, ldraw_lib__znap1()],
+  [1,16,0,0,20,-1,0,0,0,1,0,0,0,-1, ldraw_lib__znap1(realsolid)],
 // 1 16 -10 0 0 0 1 0 10 0 0 0 0 65 rect.dat
-  [1,16,-10,0,0,0,1,0,10,0,0,0,0,65, ldraw_lib__rect()],
+  [1,16,-10,0,0,0,1,0,10,0,0,0,0,65, ldraw_lib__rect(realsolid)],
 // 1 16 10 0 0 0 -1 0 10 0 0 0 0 65 rect.dat
-  [1,16,10,0,0,0,-1,0,10,0,0,0,0,65, ldraw_lib__rect()],
+  [1,16,10,0,0,0,-1,0,10,0,0,0,0,65, ldraw_lib__rect(realsolid)],
 // 0
 ];
 module ldraw_lib__32203(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__32203(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__32203(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__32203(line=0.2);

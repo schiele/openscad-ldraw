@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <40574c01.scad>
-function ldraw_lib__43560() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__43560(realsolid=false) = [
 // 0 ~Electric Spybotic Brick with TransGreen Cover (Obsolete)
 // 0 Name: 43560.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -19,8 +20,8 @@ function ldraw_lib__43560() = [
 // 
 // 
 // 1 34 0 0 0 1 0 0 0 1 0 0 0 1 40574c01.dat
-  [1,34,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__40574c01()],
+  [1,34,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__40574c01(realsolid)],
 ];
 module ldraw_lib__43560(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__43560(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__43560(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__43560(line=0.2);

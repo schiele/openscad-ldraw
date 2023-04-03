@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/2528as01.scad>
 use <s/2528as03.scad>
-function ldraw_lib__2528ap3b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2528ap3b(realsolid=false) = [
 // 0 Minifig Hat Bicorne with White Skull and Crossed Cutlasses Pattern
 // 0 Name: 2528ap3b.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -19,12 +20,12 @@ function ldraw_lib__2528ap3b() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2528as01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2528as01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2528as01(realsolid)],
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 -1 s\2528as03.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__2528as03()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__2528as03(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 -1 s\2528as03.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__2528as03()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__2528as03(realsolid)],
 // 
 // 3 16 16.377 -3.5 -5.45 11.3211 -5.9962 -9.0144 14.9653 -.5318 -8.1312
   [3,16,16.377,-3.5,-5.45,11.3211,-5.9962,-9.0144,14.9653,-.5318,-8.1312],
@@ -1068,5 +1069,5 @@ function ldraw_lib__2528ap3b() = [
   [3,15,3.03,-3.05,-12.97701,.47253,-1.90698,-13.53341,3.46637,-2.77337,-13.011],
 ];
 module ldraw_lib__2528ap3b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2528ap3b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2528ap3b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2528ap3b(line=0.2);

@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__35660s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__35660s02(realsolid=false) = [
 // 0 ~Minifig Hair with Ponytail and Baseball Cap - Ponytail
 // 0 Name: s\35660s02.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -3227,5 +3228,5 @@ function ldraw_lib__s__35660s02() = [
   [5,24,3.8013,8.4875,21.55,3.57,8.345,20.945,2.7725,9.865,20.0825,3.8525,7.5725,21.73],
 ];
 module ldraw_lib__s__35660s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__35660s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__35660s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__35660s02(line=0.2);

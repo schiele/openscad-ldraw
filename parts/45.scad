@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <3069b.scad>
 use <../p/4-8sphe.scad>
-function ldraw_lib__45() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__45(realsolid=false) = [
 // 0 Tile  1 x  2 with Ball
 // 0 Name: 45.dat
 // 0 Author: Tore Eriksson [Tore_Eriksson]
@@ -21,9 +22,9 @@ function ldraw_lib__45() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 3069b.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3069b()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3069b(realsolid)],
 // 1 16 0 -6 0 10 0 0 0 -10 0 0 0 10 4-8sphe.dat
-  [1,16,0,-6,0,10,0,0,0,-10,0,0,0,10, ldraw_lib__4_8sphe()],
+  [1,16,0,-6,0,10,0,0,0,-10,0,0,0,10, ldraw_lib__4_8sphe(realsolid)],
 // 
 // 3 16 3.827 -6 -9.239 4.393 -1.607 -7.836 7.071 -6 -7.071
   [3,16,3.827,-6,-9.239,4.393,-1.607,-7.836,7.071,-6,-7.071],
@@ -332,5 +333,5 @@ function ldraw_lib__45() = [
   [2,24,1.75687,0,-7.37694,4.393,0,-6.229],
 ];
 module ldraw_lib__45(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__45(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__45(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__45(line=0.2);

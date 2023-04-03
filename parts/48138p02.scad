@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/48138s00.scad>
-function ldraw_lib__48138p02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__48138p02(realsolid=false) = [
 // 0 Quatro Brick  2 x  2 with Smiling Mouth Pattern
 // 0 Name: 48138p02.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -17,7 +18,7 @@ function ldraw_lib__48138p02() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\48138s00.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__48138s00()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__48138s00(realsolid)],
 // 
 // 4 0 0 42.3 -79 0.18 50.18 -79 5.12 49.16 -79 6.18 40.79 -79
   [4,0,0,42.3,-79,0.18,50.18,-79,5.12,49.16,-79,6.18,40.79,-79],
@@ -307,5 +308,5 @@ function ldraw_lib__48138p02() = [
   [4,16,45.16,14.78,-79,-48.47,29.16,-79,-47.69,30.26,-79,44.19,15.46,-79],
 ];
 module ldraw_lib__48138p02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__48138p02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__48138p02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__48138p02(line=0.2);

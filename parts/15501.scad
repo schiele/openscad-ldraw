@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__15501() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__15501(realsolid=false) = [
 // 0 Minifig Beard Short
 // 0 Name: 15501.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -6527,5 +6528,5 @@ function ldraw_lib__15501() = [
   [5,24,14.036,0,-4.033,15.467,-0.413,-5.444,13.747,-1.252,-3.39,14.355,-0.041,-5.484],
 ];
 module ldraw_lib__15501(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__15501(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__15501(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__15501(line=0.2);

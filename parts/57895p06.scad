@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/57895p06s01.scad>
 use <s/57895s01.scad>
-function ldraw_lib__57895p06() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__57895p06(realsolid=false) = [
 // 0 Glass for Window  1 x  4 x  6 with Metallic Gold Lattice over White Background
 // 0 Name: 57895p06.dat
 // 0 Author: Vincent Messenet [Cheenzo]
@@ -21,18 +22,18 @@ function ldraw_lib__57895p06() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\57895s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__57895s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__57895s01(realsolid)],
 // 0 BFC NOCLIP
   [0,"BFC","NOCLIP"],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\57895p06s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__57895p06s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__57895p06s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\57895p06s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__57895p06s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__57895p06s01(realsolid)],
 // 1 16 0 131.5 0 1 0 0 0 -1 0 0 0 1 s\57895p06s01.dat
-  [1,16,0,131.5,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__s__57895p06s01()],
+  [1,16,0,131.5,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__s__57895p06s01(realsolid)],
 // 1 16 0 131.5 0 -1 0 0 0 -1 0 0 0 1 s\57895p06s01.dat
-  [1,16,0,131.5,0,-1,0,0,0,-1,0,0,0,1, ldraw_lib__s__57895p06s01()],
+  [1,16,0,131.5,0,-1,0,0,0,-1,0,0,0,1, ldraw_lib__s__57895p06s01(realsolid)],
 ];
 module ldraw_lib__57895p06(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__57895p06(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__57895p06(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__57895p06(line=0.2);

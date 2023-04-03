@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/logo-lego-2.scad>
 use <s/87079s01.scad>
-function ldraw_lib__87079pt9() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__87079pt9(realsolid=false) = [
 // 0 Tile  2 x  4 with LEGO Friends Logo Pattern
 // 0 Name: 87079pt9.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -18,9 +19,9 @@ function ldraw_lib__87079pt9() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\87079s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__87079s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__87079s01(realsolid)],
 // 1 16 -23 0 -1 .56 0 0 0 0 1 0 -.56 0 logo-lego-2.dat
-  [1,16,-23,0,-1,.56,0,0,0,0,1,0,-.56,0, ldraw_lib__logo_lego_2()],
+  [1,16,-23,0,-1,.56,0,0,0,0,1,0,-.56,0, ldraw_lib__logo_lego_2(realsolid)],
 // 4 0 -11.8 0 10.2 -11 0 11 -35 0 11 -34.2 0 10.2
   [4,0,-11.8,0,10.2,-11,0,11,-35,0,11,-34.2,0,10.2],
 // 4 0 -34.2 0 -12.2 -34.2 0 10.2 -35 0 11 -35 0 -13
@@ -821,5 +822,5 @@ function ldraw_lib__87079pt9() = [
   [3,16,-4.8,0,-10.6,-11,0,-13,-3.6,0,-11.4],
 ];
 module ldraw_lib__87079pt9(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__87079pt9(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__87079pt9(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__87079pt9(line=0.2);

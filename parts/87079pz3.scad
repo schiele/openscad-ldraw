@@ -4,7 +4,8 @@ use <../p/1-8ndis.scad>
 use <../p/3-8chrd.scad>
 use <s/87079pz0s01.scad>
 use <s/87079s01.scad>
-function ldraw_lib__87079pz3() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__87079pz3(realsolid=false) = [
 // 0 Tile  2 x  4 with Brickheadz Series Number "2" Pattern
 // 0 Name: 87079pz3.dat
 // 0 Author: Damien Roux [Darats]
@@ -21,19 +22,19 @@ function ldraw_lib__87079pz3() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\87079s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__87079s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__87079s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\87079pz0s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__87079pz0s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__87079pz0s01(realsolid)],
 // 1 15 3 0 -7.17 1.06066 0 1.06066 0 1 0 -1.06066 0 1.06066 1-8ndis.dat
-  [1,15,3,0,-7.17,1.06066,0,1.06066,0,1,0,-1.06066,0,1.06066, ldraw_lib__1_8ndis()],
+  [1,15,3,0,-7.17,1.06066,0,1.06066,0,1,0,-1.06066,0,1.06066, ldraw_lib__1_8ndis(realsolid)],
 // 1 15 5 0 13 0 0 -0.5 0 1 0 0.5 0 0 1-4chrd.dat
-  [1,15,5,0,13,0,0,-0.5,0,1,0,0.5,0,0, ldraw_lib__1_4chrd()],
+  [1,15,5,0,13,0,0,-0.5,0,1,0,0.5,0,0, ldraw_lib__1_4chrd(realsolid)],
 // 1 15 33.5 0 13 0.5 0 0 0 1 0 0 0 0.5 1-4chrd.dat
-  [1,15,33.5,0,13,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__1_4chrd()],
+  [1,15,33.5,0,13,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__1_4chrd(realsolid)],
 // 1 15 33.5 0 -13 0 0 0.5 0 1 0 -0.5 0 0 1-4chrd.dat
-  [1,15,33.5,0,-13,0,0,0.5,0,1,0,-0.5,0,0, ldraw_lib__1_4chrd()],
+  [1,15,33.5,0,-13,0,0,0.5,0,1,0,-0.5,0,0, ldraw_lib__1_4chrd(realsolid)],
 // 1 15 0 0 -13 0 0 -0.5 0 1 0 -0.5 0 0 3-8chrd.dat
-  [1,15,0,0,-13,0,0,-0.5,0,1,0,-0.5,0,0, ldraw_lib__3_8chrd()],
+  [1,15,0,0,-13,0,0,-0.5,0,1,0,-0.5,0,0, ldraw_lib__3_8chrd(realsolid)],
 // 4 0 13.14 0 6.463 13.131 0 6.924 12.622 0 6.924 12.639 0 6.383
   [4,0,13.14,0,6.463,13.131,0,6.924,12.622,0,6.924,12.639,0,6.383],
 // 4 0 13.165 0 6.326 13.14 0 6.463 12.639 0 6.383 12.688 0 6.147
@@ -768,5 +769,5 @@ function ldraw_lib__87079pz3() = [
   [4,15,26.206,0,9.672,34,0,13,33.5,0,13.5,26.123,0,9.879],
 ];
 module ldraw_lib__87079pz3(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__87079pz3(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__87079pz3(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__87079pz3(line=0.2);

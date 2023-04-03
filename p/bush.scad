@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <bush0.scad>
 use <bush1.scad>
-function ldraw_lib__bush() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__bush(realsolid=false) = [
 // 0 Technic Bush without Base Collar
 // 0 Name: bush.dat
 // 0 Author: Guy Vivan [guyvivan]
@@ -18,17 +19,17 @@ function ldraw_lib__bush() = [
 // 0 // Based on 3651.dat by James Jessiman
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 bush0.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__bush0()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__bush0(realsolid)],
 // 1 16 0 0 10 1 0 0 0 1 0 0 0 1 bush1.dat
-  [1,16,0,0,10,1,0,0,0,1,0,0,0,1, ldraw_lib__bush1()],
+  [1,16,0,0,10,1,0,0,0,1,0,0,0,1, ldraw_lib__bush1(realsolid)],
 // 1 16 0 0 10 0 1 0 -1 0 0 0 0 1 bush1.dat
-  [1,16,0,0,10,0,1,0,-1,0,0,0,0,1, ldraw_lib__bush1()],
+  [1,16,0,0,10,0,1,0,-1,0,0,0,0,1, ldraw_lib__bush1(realsolid)],
 // 1 16 0 0 10 -1 0 0 0 -1 0 0 0 1 bush1.dat
-  [1,16,0,0,10,-1,0,0,0,-1,0,0,0,1, ldraw_lib__bush1()],
+  [1,16,0,0,10,-1,0,0,0,-1,0,0,0,1, ldraw_lib__bush1(realsolid)],
 // 1 16 0 0 10 0 -1 0 1 0 0 0 0 1 bush1.dat
-  [1,16,0,0,10,0,-1,0,1,0,0,0,0,1, ldraw_lib__bush1()],
+  [1,16,0,0,10,0,-1,0,1,0,0,0,0,1, ldraw_lib__bush1(realsolid)],
 // 0
 ];
 module ldraw_lib__bush(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__bush(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__bush(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__bush(line=0.2);

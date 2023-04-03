@@ -4,7 +4,8 @@ use <../../p/3-4edge.scad>
 use <../../p/4-4cyli.scad>
 use <../../p/4-4edge.scad>
 use <../../p/ring2.scad>
-function ldraw_lib__s__32109_1() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__32109_1(realsolid=false) = [
 // 0 ~Electric Mindstorms RCX Angled Bottom Stud For 32109
 // 0 Name: s\32109-1.dat
 // 0 Author: John Van Zwieten [jvan]
@@ -20,29 +21,29 @@ function ldraw_lib__s__32109_1() = [
 // 
 // 
 // 1 16 0 2 0 6 0 0 0 1 0 0 0 6 4-4edge.dat
-  [1,16,0,2,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4edge()],
+  [1,16,0,2,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 2 0 6.36 0 -6.36 0 1 0 6.36 0 6.36 3-4edge.dat
-  [1,16,0,2,0,6.36,0,-6.36,0,1,0,6.36,0,6.36, ldraw_lib__3_4edge()],
+  [1,16,0,2,0,6.36,0,-6.36,0,1,0,6.36,0,6.36, ldraw_lib__3_4edge(realsolid)],
 // 1 16 0 0 0 4.24 0 -4.24 0.941 1 -0.941 4.24 0 4.24 4-4edge.dat
-  [1,16,0,0,0,4.24,0,-4.24,0.941,1,-0.941,4.24,0,4.24, ldraw_lib__4_4edge()],
+  [1,16,0,0,0,4.24,0,-4.24,0.941,1,-0.941,4.24,0,4.24, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 0 0 6.36 0 -6.36 1.412 1 -1.412 6.36 0 6.36 3-4edge.dat
-  [1,16,0,0,0,6.36,0,-6.36,1.412,1,-1.412,6.36,0,6.36, ldraw_lib__3_4edge()],
+  [1,16,0,0,0,6.36,0,-6.36,1.412,1,-1.412,6.36,0,6.36, ldraw_lib__3_4edge(realsolid)],
 // 1 16 0 0 0 3 0 0 0.666 1 0 0 0 3 ring2.dat
-  [1,16,0,0,0,3,0,0,0.666,1,0,0,0,3, ldraw_lib__ring2()],
+  [1,16,0,0,0,3,0,0,0.666,1,0,0,0,3, ldraw_lib__ring2(realsolid)],
 // 1 16 0 1.60 0 6 0 0 0 -1.60 0 0 0 -6 2-4cyls.dat
-  [1,16,0,1.60,0,6,0,0,0,-1.60,0,0,0,-6, ldraw_lib__2_4cyls()],
+  [1,16,0,1.60,0,6,0,0,0,-1.60,0,0,0,-6, ldraw_lib__2_4cyls(realsolid)],
 // 1 16 0 1.60 0 6 0 0 0 -1.60 0 0 0 6 2-4cyls.dat
-  [1,16,0,1.60,0,6,0,0,0,-1.60,0,0,0,6, ldraw_lib__2_4cyls()],
+  [1,16,0,1.60,0,6,0,0,0,-1.60,0,0,0,6, ldraw_lib__2_4cyls(realsolid)],
 // 1 16 0 1.60 0 6 0 0 0 0.40 0 0 0 6 4-4cyli.dat
-  [1,16,0,1.60,0,6,0,0,0,0.40,0,0,0,6, ldraw_lib__4_4cyli()],
+  [1,16,0,1.60,0,6,0,0,0,0.40,0,0,0,6, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 2 0 9 0 0 0 -2 0 0 0 -9 2-4cyls.dat
-  [1,16,0,2,0,9,0,0,0,-2,0,0,0,-9, ldraw_lib__2_4cyls()],
+  [1,16,0,2,0,9,0,0,0,-2,0,0,0,-9, ldraw_lib__2_4cyls(realsolid)],
 // 1 16 0 2 0 9 0 0 0 -2 0 0 0 9 2-4cyls.dat
-  [1,16,0,2,0,9,0,0,0,-2,0,0,0,9, ldraw_lib__2_4cyls()],
+  [1,16,0,2,0,9,0,0,0,-2,0,0,0,9, ldraw_lib__2_4cyls(realsolid)],
 // 2 24 7 2 5.50 7 2 14.50
   [2,24,7,2,5.50,7,2,14.50],
 // 0
 ];
 module ldraw_lib__s__32109_1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__32109_1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__32109_1(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__32109_1(line=0.2);

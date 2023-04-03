@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/87079s01.scad>
-function ldraw_lib__87079ptc() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__87079ptc(realsolid=false) = [
 // 0 Tile  2 x  4 with "Manor von Barron" on Metallic Silver Shield Pattern
 // 0 Name: 87079ptc.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -17,7 +18,7 @@ function ldraw_lib__87079ptc() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\87079s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__87079s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__87079s01(realsolid)],
 // 
 // 4 0 36.3484 0 16.3484 36.8787 0 16.8787 36.2283 0 17.8519 35.5354 0 17.5649
   [4,0,36.3484,0,16.3484,36.8787,0,16.8787,36.2283,0,17.8519,35.5354,0,17.5649],
@@ -4819,5 +4820,5 @@ function ldraw_lib__87079ptc() = [
   [3,80,25.095,0,-10.5,25.0555,0,-11.091,26.15,0,-12.825],
 ];
 module ldraw_lib__87079ptc(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__87079ptc(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__87079ptc(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__87079ptc(line=0.2);

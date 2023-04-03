@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/stud4o.scad>
-function ldraw_lib__40235() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__40235(realsolid=false) = [
 // 0 Minifig Headdress Turban
 // 0 Name: 40235.dat
 // 0 Author: Stan Isachenko [angmarec]
@@ -22,7 +23,7 @@ function ldraw_lib__40235() = [
 // 
 // 
 // 1 16 0 -4 0 1 0 0 0 -1 0 0 0 1 stud4o.dat
-  [1,16,0,-4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4o()],
+  [1,16,0,-4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4o(realsolid)],
 // 0 //
 // 4 16 3.062 0 7.391 0 0 8 -4.928 0.001 11.895 0 0 12.875
   [4,16,3.062,0,7.391,0,0,8,-4.928,0.001,11.895,0,0,12.875],
@@ -6871,5 +6872,5 @@ function ldraw_lib__40235() = [
   [5,24,1.873,-3.741,-8.251,0.011,-3.741,-8.251,1.623,-2.81,-8.25,1.618,-4.683,-8.25],
 ];
 module ldraw_lib__40235(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__40235(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__40235(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__40235(line=0.2);

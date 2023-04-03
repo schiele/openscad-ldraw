@@ -2,7 +2,8 @@ use <../../lib.scad>
 use <../../p/1-4cyli.scad>
 use <../../p/1-4ndis.scad>
 use <4181s00.scad>
-function ldraw_lib__s__4181s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__4181s01(realsolid=false) = [
 // 0 ~Train Door  1 x  4 x  5 Left without Lower Front
 // 0 Name: s\4181s01.dat
 // 0 Author: James Jessiman
@@ -20,17 +21,17 @@ function ldraw_lib__s__4181s01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4181s00.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4181s00()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4181s00(realsolid)],
 // 1 16 10 12 46 0 -1 0 -4 0 0 0 0 4 1-4ndis.dat
-  [1,16,10,12,46,0,-1,0,-4,0,0,0,0,4, ldraw_lib__1_4ndis()],
+  [1,16,10,12,46,0,-1,0,-4,0,0,0,0,4, ldraw_lib__1_4ndis(realsolid)],
 // 1 16 10 60 46 0 -1 0 4 0 0 0 0 4 1-4ndis.dat
-  [1,16,10,60,46,0,-1,0,4,0,0,0,0,4, ldraw_lib__1_4ndis()],
+  [1,16,10,60,46,0,-1,0,4,0,0,0,0,4, ldraw_lib__1_4ndis(realsolid)],
 // 1 16 10 60 14 0 -1 0 4 0 0 0 0 -4 1-4ndis.dat
-  [1,16,10,60,14,0,-1,0,4,0,0,0,0,-4, ldraw_lib__1_4ndis()],
+  [1,16,10,60,14,0,-1,0,4,0,0,0,0,-4, ldraw_lib__1_4ndis(realsolid)],
 // 1 16 10 12 14 0 -1 0 -4 0 0 0 0 -4 1-4ndis.dat
-  [1,16,10,12,14,0,-1,0,-4,0,0,0,0,-4, ldraw_lib__1_4ndis()],
+  [1,16,10,12,14,0,-1,0,-4,0,0,0,0,-4, ldraw_lib__1_4ndis(realsolid)],
 // 1 16 0 0 0 10 0 0 0 72 0 0 0 -10 1-4cyli.dat
-  [1,16,0,0,0,10,0,0,0,72,0,0,0,-10, ldraw_lib__1_4cyli()],
+  [1,16,0,0,0,10,0,0,0,72,0,0,0,-10, ldraw_lib__1_4cyli(realsolid)],
 // 3 16 10 64 60 10 64 58 10 72 60
   [3,16,10,64,60,10,64,58,10,72,60],
 // 3 16 10 0 60 10 52 58 10 52 60
@@ -56,7 +57,7 @@ function ldraw_lib__s__4181s01() = [
 // 4 16 10 0 0 10 8 14 10 8 46 10 0 60
   [4,16,10,0,0,10,8,14,10,8,46,10,0,60],
 // 1 16 0 0 60 10 0 0 0 72 0 0 0 10 1-4cyli.dat
-  [1,16,0,0,60,10,0,0,0,72,0,0,0,10, ldraw_lib__1_4cyli()],
+  [1,16,0,0,60,10,0,0,0,72,0,0,0,10, ldraw_lib__1_4cyli(realsolid)],
 // 3 16 10 0 60 10 8 46 10 8 50
   [3,16,10,0,60,10,8,46,10,8,50],
 // 3 16 10 0 60 10 8 50 10 12 50
@@ -67,5 +68,5 @@ function ldraw_lib__s__4181s01() = [
   [3,16,10,8,10,10,8,14,10,0,0],
 ];
 module ldraw_lib__s__4181s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__4181s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__4181s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__4181s01(line=0.2);

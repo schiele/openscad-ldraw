@@ -5,7 +5,8 @@ use <../p/4-4ring1.scad>
 use <../p/4-4ring2.scad>
 use <../p/4-4ring3.scad>
 use <s/3005s01.scad>
-function ldraw_lib__3005pue() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3005pue(realsolid=false) = [
 // 0 Brick  1 x  1 with Blue "Ö" (O Dieresis) Pattern
 // 0 Name: 3005pue.dat
 // 0 Author: Tore Eriksson [Tore_Eriksson]
@@ -26,27 +27,27 @@ function ldraw_lib__3005pue() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3005s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3005s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3005s01(realsolid)],
 // 1 16 0 12 -10 4 0 0 0 0 4 0 1 0 4-4disc.dat
-  [1,16,0,12,-10,4,0,0,0,0,4,0,1,0, ldraw_lib__4_4disc()],
+  [1,16,0,12,-10,4,0,0,0,0,4,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 1 0 12 -10 2 0 0 0 0 2 0 1 0 4-4ring2.dat
-  [1,1,0,12,-10,2,0,0,0,0,2,0,1,0, ldraw_lib__4_4ring2()],
+  [1,1,0,12,-10,2,0,0,0,0,2,0,1,0, ldraw_lib__4_4ring2(realsolid)],
 // 1 1 0 12 -10 1.7 0 0 0 0 1.5 0 1 0 4-4ring3.dat
-  [1,1,0,12,-10,1.7,0,0,0,0,1.5,0,1,0, ldraw_lib__4_4ring3()],
+  [1,1,0,12,-10,1.7,0,0,0,0,1.5,0,1,0, ldraw_lib__4_4ring3(realsolid)],
 // 1 16 0 12 -10 6.8 0 0 0 0 6 0 1 0 4-4ndis.dat
-  [1,16,0,12,-10,6.8,0,0,0,0,6,0,1,0, ldraw_lib__4_4ndis()],
+  [1,16,0,12,-10,6.8,0,0,0,0,6,0,1,0, ldraw_lib__4_4ndis(realsolid)],
 // 1 1 -2 4 -10 1 0 0 0 0 1 0 1 0 4-4disc.dat
-  [1,1,-2,4,-10,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4disc()],
+  [1,1,-2,4,-10,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 16 -2 4 -10 1 0 0 0 0 1 0 1 0 4-4ring1.dat
-  [1,16,-2,4,-10,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4ring1()],
+  [1,16,-2,4,-10,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4ring1(realsolid)],
 // 1 16 -2 4 -10 2 0 0 0 0 2 0 1 0 4-4ndis.dat
-  [1,16,-2,4,-10,2,0,0,0,0,2,0,1,0, ldraw_lib__4_4ndis()],
+  [1,16,-2,4,-10,2,0,0,0,0,2,0,1,0, ldraw_lib__4_4ndis(realsolid)],
 // 1 1 2 4 -10 1 0 0 0 0 1 0 1 0 4-4disc.dat
-  [1,1,2,4,-10,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4disc()],
+  [1,1,2,4,-10,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 16 2 4 -10 1 0 0 0 0 1 0 1 0 4-4ring1.dat
-  [1,16,2,4,-10,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4ring1()],
+  [1,16,2,4,-10,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4ring1(realsolid)],
 // 1 16 2 4 -10 2 0 0 0 0 2 0 1 0 4-4ndis.dat
-  [1,16,2,4,-10,2,0,0,0,0,2,0,1,0, ldraw_lib__4_4ndis()],
+  [1,16,2,4,-10,2,0,0,0,0,2,0,1,0, ldraw_lib__4_4ndis(realsolid)],
 // 4 16 10 0 -10 6.8 6 -10 4 6 -10 4 2 -10
   [4,16,10,0,-10,6.8,6,-10,4,6,-10,4,2,-10],
 // 4 16 10 0 -10 10 24 -10 6.8 18 -10 6.8 6 -10
@@ -61,5 +62,5 @@ function ldraw_lib__3005pue() = [
   [4,16,-10,0,-10,10,0,-10,4,2,-10,-4,2,-10],
 ];
 module ldraw_lib__3005pue(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3005pue(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3005pue(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3005pue(line=0.2);

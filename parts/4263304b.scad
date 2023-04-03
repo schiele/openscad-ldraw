@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__4263304b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4263304b(realsolid=false) = [
 // 0 Sticker  0.8 x  1.0 with Metallic Silver "2256" on Black Background
 // 0 Name: 4263304b.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -20,7 +21,7 @@ function ldraw_lib__4263304b() = [
 // 0 // Book Antiqua
 // 
 // 1 16 0 -.25 0 10 0 0 0 .25 0 0 0 8 box5-12.dat
-  [1,16,0,-.25,0,10,0,0,0,.25,0,0,0,8, ldraw_lib__box5_12()],
+  [1,16,0,-.25,0,10,0,0,0,.25,0,0,0,8, ldraw_lib__box5_12(realsolid)],
 // 
 // 4 80 .43856 -.25 -3.204 .60312 -.25 -4.254 1.1272 -.25 -2.855 .76312 -.25 -1.948
   [4,80,.43856,-.25,-3.204,.60312,-.25,-4.254,1.1272,-.25,-2.855,.76312,-.25,-1.948],
@@ -486,5 +487,5 @@ function ldraw_lib__4263304b() = [
   [4,0,8.001,-.25,.612,8.27288,-.25,.113,10,-.25,8,8.21012,-.25,3.741],
 ];
 module ldraw_lib__4263304b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4263304b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4263304b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4263304b(line=0.2);

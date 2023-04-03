@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/1-4tang.scad>
-function ldraw_lib__s__98389s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__98389s01(realsolid=false) = [
 // 0 ~Animal Hedgehog Body without Printed Surfaces, Half
 // 0 Name: s\98389s01.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -15,9 +16,9 @@ function ldraw_lib__s__98389s01() = [
 // 
 // 
 // 1 16 0 0 0 -8 0 0 0 -1 0 0 0 8 1-4tang.dat
-  [1,16,0,0,0,-8,0,0,0,-1,0,0,0,8, ldraw_lib__1_4tang()],
+  [1,16,0,0,0,-8,0,0,0,-1,0,0,0,8, ldraw_lib__1_4tang(realsolid)],
 // 1 16 0 0 0 -8 0 0 0 -1 0 0 0 -8 1-4tang.dat
-  [1,16,0,0,0,-8,0,0,0,-1,0,0,0,-8, ldraw_lib__1_4tang()],
+  [1,16,0,0,0,-8,0,0,0,-1,0,0,0,-8, ldraw_lib__1_4tang(realsolid)],
 // 0 // Outside
 // 3 16 -2.24 0 8.004 -3.927 0 9.573 -1.881 -1.471 8.518
   [3,16,-2.24,0,8.004,-3.927,0,9.573,-1.881,-1.471,8.518],
@@ -816,5 +817,5 @@ function ldraw_lib__s__98389s01() = [
   [5,24,-3.761,-.801,9.933,-3.927,0,9.573,-6.178,0,10.227,-1.881,-1.471,8.518],
 ];
 module ldraw_lib__s__98389s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__98389s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__98389s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__98389s01(line=0.2);

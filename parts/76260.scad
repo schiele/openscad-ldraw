@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <77.scad>
 use <u9053.scad>
-function ldraw_lib__76260() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__76260(realsolid=false) = [
 // 0 Technic Flex-System Hose  8L (160LDU)
 // 0 Name: 76260.dat
 // 0 Author: Tim Gould [timgould]
@@ -18,12 +19,12 @@ function ldraw_lib__76260() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 u9053.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9053()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9053(realsolid)],
 // 1 16 0 1 0 1 0 0 0 158 0 0 0 1 77.dat
-  [1,16,0,1,0,1,0,0,0,158,0,0,0,1, ldraw_lib__77()],
+  [1,16,0,1,0,1,0,0,0,158,0,0,0,1, ldraw_lib__77(realsolid)],
 // 1 16 0 160 0 -1 0 0 0 -1 0 0 0 1 u9053.dat
-  [1,16,0,160,0,-1,0,0,0,-1,0,0,0,1, ldraw_lib__u9053()],
+  [1,16,0,160,0,-1,0,0,0,-1,0,0,0,1, ldraw_lib__u9053(realsolid)],
 ];
 module ldraw_lib__76260(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__76260(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__76260(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__76260(line=0.2);

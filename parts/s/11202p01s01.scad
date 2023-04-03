@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__11202p01s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__11202p01s01(realsolid=false) = [
 // 0 ~Figure Friends Foot with Sandal Type 2 Sole Pattern
 // 0 Name: s\11202p01s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -109,5 +110,5 @@ function ldraw_lib__s__11202p01s01() = [
   [5,24,14.2,0,9.8,17.9,-2,5.2,17.9,0,5.2,13.9883,-2.0483,9.8925],
 ];
 module ldraw_lib__s__11202p01s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__11202p01s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__11202p01s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__11202p01s01(line=0.2);

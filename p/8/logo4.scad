@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../empty.scad>
-function ldraw_lib__8__logo4() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__8__logo4(realsolid=false) = [
 // 0 LEGO Logo for Studs - 3D with Rounded Top (Fast-Draw)
 // 0 Name: 8\logo4.dat
 // 0 Author: Steffen [Steffen]
@@ -18,8 +19,8 @@ function ldraw_lib__8__logo4() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 empty.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__empty()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__empty(realsolid)],
 ];
 module ldraw_lib__8__logo4(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__8__logo4(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__8__logo4(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__8__logo4(line=0.2);

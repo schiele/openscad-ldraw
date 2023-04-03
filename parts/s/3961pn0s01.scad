@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__3961pn0s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__3961pn0s01(realsolid=false) = [
 // 0 ~Dish  8 x  8 Inverted With Metallic Gold Geometric and Black Circles and Red Dots Pattern, 1/12th
 // 0 Name: s\3961pn0s01.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -427,5 +428,5 @@ function ldraw_lib__s__3961pn0s01() = [
   [4,82,-62.7852,10.7507,16.8232,-64.4439,10.7511,8.4842,-59.484,9,7.83,-57.954,9,15.528],
 ];
 module ldraw_lib__s__3961pn0s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__3961pn0s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__3961pn0s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__3961pn0s01(line=0.2);

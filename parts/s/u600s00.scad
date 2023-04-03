@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <u600s01.scad>
 use <u600s02.scad>
-function ldraw_lib__s__u600s00() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__u600s00(realsolid=false) = [
 // 0 ~Figure Fabuland Poodle Half without Pattern
 // 0 Name: s\u600s00.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -16,9 +17,9 @@ function ldraw_lib__s__u600s00() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\u600s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__u600s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__u600s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\u600s02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__u600s02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__u600s02(realsolid)],
 // 0 // Eye area
 // 3 16 9.3 -28.36 -14.84 9.46 -30.95 -13.25 8.63 -28.42 -15.35
   [3,16,9.3,-28.36,-14.84,9.46,-30.95,-13.25,8.63,-28.42,-15.35],
@@ -278,5 +279,5 @@ function ldraw_lib__s__u600s00() = [
   [5,24,10.78,-24.53,-15.26,12.11,-22.12,-14.66,12.47,-22.97,-13.8,11.39,-22.11,-15.54],
 ];
 module ldraw_lib__s__u600s00(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__u600s00(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__u600s00(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__u600s00(line=0.2);

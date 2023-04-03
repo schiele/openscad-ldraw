@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/1-4cyli.scad>
 use <s/973s01.scad>
 use <s/99141s02.scad>
-function ldraw_lib__973p98() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__973p98(realsolid=false) = [
 // 0 Minifig Torso Polo Shirt with Pocket with Pen and LEGO Logo on Back Pattern
 // 0 Name: 973p98.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -19,9 +20,9 @@ function ldraw_lib__973p98() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01(realsolid)],
 // 1 0 0 -4 0 4.243 0 -4.243 0 -8 0 -4.243 0 -4.243 1-4cyli.dat
-  [1,0,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli()],
+  [1,0,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli(realsolid)],
 // 4 0 -17.3 29.7 -10 -17.4 30.1 -10 -8.5 30.3 -10 -8.5 29.9 -10
   [4,0,-17.3,29.7,-10,-17.4,30.1,-10,-8.5,30.3,-10,-8.5,29.9,-10],
 // 4 0 -8.5 29.9 -10 -8.5 30.3 -10 0 30.35 -10 0 29.95 -10
@@ -534,7 +535,7 @@ function ldraw_lib__973p98() = [
   [3,16,-0.6388,11.0915,-10,-1.35,12.05,-10,-0.3058,11.3334,-10],
 // 
 // 1 16 0 16 10 -1.05 0 0 0 0 -1.05 0 -1 0 s\99141s02.dat
-  [1,16,0,16,10,-1.05,0,0,0,0,-1.05,0,-1,0, ldraw_lib__s__99141s02()],
+  [1,16,0,16,10,-1.05,0,0,0,0,-1.05,0,-1,0, ldraw_lib__s__99141s02(realsolid)],
 // 4 0 -8 1.7 10 8.7 1.8 10 7.7 2.2 10 6.1 2.5 10
   [4,0,-8,1.7,10,8.7,1.8,10,7.7,2.2,10,6.1,2.5,10],
 // 4 0 -8 1.7 10 6.1 2.5 10 3.1 2.7 10 -0.1 2.7 10
@@ -611,5 +612,5 @@ function ldraw_lib__973p98() = [
   [3,16,1.35,8.6,-10,3.3,11.9,-10,3.4,11.45,-10],
 ];
 module ldraw_lib__973p98(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__973p98(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__973p98(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__973p98(line=0.2);

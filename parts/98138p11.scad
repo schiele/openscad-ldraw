@@ -5,7 +5,8 @@ use <../p/4-4ndis.scad>
 use <../p/4-4ring1.scad>
 use <../p/4-4ring2.scad>
 use <s/98138s01.scad>
-function ldraw_lib__98138p11() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__98138p11(realsolid=false) = [
 // 0 Tile  1 x  1 Round with Yellow Eye and Metallic Eyelid Pattern
 // 0 Name: 98138p11.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -23,21 +24,21 @@ function ldraw_lib__98138p11() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\98138s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01(realsolid)],
 // 1 16 0 0 0 9 0 0 0 1 0 0 0 9 4-4ering.dat
-  [1,16,0,0,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4ering()],
+  [1,16,0,0,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4ering(realsolid)],
 // 1 80 0 0 6.4 0.4 0 0 0 1 0 0 0 0.4 4-4disc.dat
-  [1,80,0,0,6.4,0.4,0,0,0,1,0,0,0,0.4, ldraw_lib__4_4disc()],
+  [1,80,0,0,6.4,0.4,0,0,0,1,0,0,0,0.4, ldraw_lib__4_4disc(realsolid)],
 // 1 0 0 0 6.4 0.4 0 0 0 1 0 0 0 0.4 4-4ring1.dat
-  [1,0,0,0,6.4,0.4,0,0,0,1,0,0,0,0.4, ldraw_lib__4_4ring1()],
+  [1,0,0,0,6.4,0.4,0,0,0,1,0,0,0,0.4, ldraw_lib__4_4ring1(realsolid)],
 // 1 0 0 0 6.4 0.4 0 0 0 1 0 0 0 0.4 4-4ring2.dat
-  [1,0,0,0,6.4,0.4,0,0,0,1,0,0,0,0.4, ldraw_lib__4_4ring2()],
+  [1,0,0,0,6.4,0.4,0,0,0,1,0,0,0,0.4, ldraw_lib__4_4ring2(realsolid)],
 // 1 16 0 0 6.4 1.2 0 0 0 1 0 0 0 1.2 4-4ndis.dat
-  [1,16,0,0,6.4,1.2,0,0,0,1,0,0,0,1.2, ldraw_lib__4_4ndis()],
+  [1,16,0,0,6.4,1.2,0,0,0,1,0,0,0,1.2, ldraw_lib__4_4ndis(realsolid)],
 // 1 15 -1.2 0 0.3 0.5 0 0 0 1 0 0 0 0.5 4-4disc.dat
-  [1,15,-1.2,0,0.3,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__4_4disc()],
+  [1,15,-1.2,0,0.3,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__4_4disc(realsolid)],
 // 1 14 -1.2 0 0.3 0.5 0 0 0 1 0 0 0 0.5 4-4ndis.dat
-  [1,14,-1.2,0,0.3,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__4_4ndis()],
+  [1,14,-1.2,0,0.3,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__4_4ndis(realsolid)],
 // 4 0 -1.8 0 6.4 -1.66 0 7.09 -2.029 0 7.24 -2.2 0 6.4
   [4,0,-1.8,0,6.4,-1.66,0,7.09,-2.029,0,7.24,-2.2,0,6.4],
 // 4 0 1.66 0 7.09 1.8 0 6.4 2.2 0 6.4 2.029 0 7.24
@@ -866,5 +867,5 @@ function ldraw_lib__98138p11() = [
   [3,16,0,0,9,0,0,8.6,0.84,0,8.43],
 ];
 module ldraw_lib__98138p11(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__98138p11(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__98138p11(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__98138p11(line=0.2);

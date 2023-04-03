@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <u9169c01.scad>
 use <u9170.scad>
-function ldraw_lib__u9170c01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__u9170c01(realsolid=false) = [
 // 0 Fabuland Stroller with Red Wheels (Complete)
 // 0 Name: u9170c01.dat
 // 0 Author: Alex Taylor [anathema]
@@ -19,12 +20,12 @@ function ldraw_lib__u9170c01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 u9170.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9170()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9170(realsolid)],
 // 1 4 0 17 -23 1 0 0 0 1 0 0 0 1 u9169c01.dat
-  [1,4,0,17,-23,1,0,0,0,1,0,0,0,1, ldraw_lib__u9169c01()],
+  [1,4,0,17,-23,1,0,0,0,1,0,0,0,1, ldraw_lib__u9169c01(realsolid)],
 // 1 4 0 17 23 1 0 0 0 1 0 0 0 1 u9169c01.dat
-  [1,4,0,17,23,1,0,0,0,1,0,0,0,1, ldraw_lib__u9169c01()],
+  [1,4,0,17,23,1,0,0,0,1,0,0,0,1, ldraw_lib__u9169c01(realsolid)],
 ];
 module ldraw_lib__u9170c01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__u9170c01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__u9170c01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__u9170c01(line=0.2);

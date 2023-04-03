@@ -3,7 +3,8 @@ use <30375ps3.scad>
 use <30376.scad>
 use <30377.scad>
 use <30378.scad>
-function ldraw_lib__30375cs3() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__30375cs3(realsolid=false) = [
 // 0 Minifig Mechanical SW Battle Droid Pilot (Shortcut)
 // 0 Name: 30375cs3.dat
 // 0 Author: Franklin W. Cain [fwcain]
@@ -25,17 +26,17 @@ function ldraw_lib__30375cs3() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 30376.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__30376()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__30376(realsolid)],
 // 1 16 0 -38 0 1 0 0 0 1 0 0 0 1 30375ps3.dat
-  [1,16,0,-38,0,1,0,0,0,1,0,0,0,1, ldraw_lib__30375ps3()],
+  [1,16,0,-38,0,1,0,0,0,1,0,0,0,1, ldraw_lib__30375ps3(realsolid)],
 // 1 16 0 -70 0 1 0 0 0 1 0 0 0 1 30378.dat
-  [1,16,0,-70,0,1,0,0,0,1,0,0,0,1, ldraw_lib__30378()],
+  [1,16,0,-70,0,1,0,0,0,1,0,0,0,1, ldraw_lib__30378(realsolid)],
 // 1 16 -16 -70 0 1 0 0 0 1 0 0 0 1 30377.dat
-  [1,16,-16,-70,0,1,0,0,0,1,0,0,0,1, ldraw_lib__30377()],
+  [1,16,-16,-70,0,1,0,0,0,1,0,0,0,1, ldraw_lib__30377(realsolid)],
 // 1 16 16 -70 0 1 0 0 0 1 0 0 0 1 30377.dat
-  [1,16,16,-70,0,1,0,0,0,1,0,0,0,1, ldraw_lib__30377()],
+  [1,16,16,-70,0,1,0,0,0,1,0,0,0,1, ldraw_lib__30377(realsolid)],
 // 0
 ];
 module ldraw_lib__30375cs3(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__30375cs3(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__30375cs3(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__30375cs3(line=0.2);

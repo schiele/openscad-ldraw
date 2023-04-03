@@ -2,7 +2,8 @@ use <../lib.scad>
 use <2312.scad>
 use <../p/box3u5p.scad>
 use <../p/stud8.scad>
-function ldraw_lib__11248() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__11248(realsolid=false) = [
 // 0 ~Duplo Car Base  2 x  6 with Bottom Tube
 // 0 Name: 11248.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -19,11 +20,11 @@ function ldraw_lib__11248() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 2312.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2312()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2312(realsolid)],
 // 1 16 0 4 0 0 0 1 0 -10 0 1 0 0 stud8.dat
-  [1,16,0,4,0,0,0,1,0,-10,0,1,0,0, ldraw_lib__stud8()],
+  [1,16,0,4,0,0,0,1,0,-10,0,1,0,0, ldraw_lib__stud8(realsolid)],
 // 1 16 0 32 -125.7 0 0 1 0 -26 0 -5.7 0 0 box3u5p.dat
-  [1,16,0,32,-125.7,0,0,1,0,-26,0,-5.7,0,0, ldraw_lib__box3u5p()],
+  [1,16,0,32,-125.7,0,0,1,0,-26,0,-5.7,0,0, ldraw_lib__box3u5p(realsolid)],
 // 2 24 -1 6 -131.1988 -1 32 -131.1988
   [2,24,-1,6,-131.1988,-1,32,-131.1988],
 // 2 24 -1 6 -131.1988 0 6 -131
@@ -34,5 +35,5 @@ function ldraw_lib__11248() = [
   [2,24,0,6,-131,1,6,-131.1988],
 ];
 module ldraw_lib__11248(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__11248(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__11248(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__11248(line=0.2);

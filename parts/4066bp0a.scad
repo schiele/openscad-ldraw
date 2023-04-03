@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/4066bs01.scad>
-function ldraw_lib__4066bp0a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4066bp0a(realsolid=false) = [
 // 0 Duplo Brick  1 x  2 x  2 with Sausages Pattern
 // 0 Name: 4066bp0a.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -19,7 +20,7 @@ function ldraw_lib__4066bp0a() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4066bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4066bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4066bs01(realsolid)],
 // 4 15 -13.75 16 -20 -15.25 16 -20 -16.75 17 -20 -14.5 17 -20
   [4,15,-13.75,16,-20,-15.25,16,-20,-16.75,17,-20,-14.5,17,-20],
 // 4 15 -14.5 17 -20 -16.75 17 -20 -18 18 -20 -15 18 -20
@@ -936,5 +937,5 @@ function ldraw_lib__4066bp0a() = [
   [4,16,-3,9,-20,-0.75,8,-20,0,0,-20,-6,7,-20],
 ];
 module ldraw_lib__4066bp0a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4066bp0a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4066bp0a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4066bp0a(line=0.2);

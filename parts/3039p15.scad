@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3039s01.scad>
-function ldraw_lib__3039p15() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3039p15(realsolid=false) = [
 // 0 Slope Brick 45  2 x  2 with Space Display Pattern
 // 0 Name: 3039p15.dat
 // 0 Author: Steve Bliss [sbliss]
@@ -20,7 +21,7 @@ function ldraw_lib__3039p15() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3039s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3039s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3039s01(realsolid)],
 // 4 4 15.8505 7.9026 -17.9026 16.7021 9.0844 -19.0844 17.4 8.9298 -18.9298 16.4228 7.6085 -17.6085
   [4,4,15.8505,7.9026,-17.9026,16.7021,9.0844,-19.0844,17.4,8.9298,-18.9298,16.4228,7.6085,-17.6085],
 // 4 4 14.5241 6.9646 -16.9646 15.8505 7.9026 -17.9026 16.4228 7.6085 -17.6085 14.9399 6.5599 -16.5599
@@ -483,5 +484,5 @@ function ldraw_lib__3039p15() = [
   [3,73,17.4,11.8591,-21.8591,16.4228,13.1804,-23.1804,17.4,15.8392,-25.8392],
 ];
 module ldraw_lib__3039p15(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3039p15(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3039p15(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3039p15(line=0.2);

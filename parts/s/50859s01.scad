@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__50859s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__50859s01(realsolid=false) = [
 // 0 ~Bike  2 Wheel Motorcycle Frame  2 x  6 x  3 - Half
 // 0 Name: s\50859s01.dat
 // 0 Author: Andy Westrate [westrate]
@@ -3863,5 +3864,5 @@ function ldraw_lib__s__50859s01() = [
   [4,16,10,-17.87,7.86,10,-14.6256,18.8908,10,-10.18,35.41,10,-10.68,35.48],
 ];
 module ldraw_lib__s__50859s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__50859s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__50859s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__50859s01(line=0.2);

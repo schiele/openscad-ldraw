@@ -3,7 +3,8 @@ use <../../p/1-4ndis.scad>
 use <../../p/2-4disc.scad>
 use <../../p/2-4ndis.scad>
 use <../../p/2-4ring3.scad>
-function ldraw_lib__s__3961s20a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__3961s20a(realsolid=false) = [
 // 0 ~Dish  8 x  8 Inverted With #10 Wedge Pattern
 // 0 Name: s\3961s20a.dat
 // 0 Author: Donald Sutter [technog]
@@ -18,17 +19,17 @@ function ldraw_lib__s__3961s20a() = [
 // 
 // 
 // 1 0 4.5 12.778 70.5 1 0 0 0.023 1 0.35 0 0 1 2-4ring3.dat
-  [1,0,4.5,12.778,70.5,1,0,0,0.023,1,0.35,0,0,1, ldraw_lib__2_4ring3()],
+  [1,0,4.5,12.778,70.5,1,0,0,0.023,1,0.35,0,0,1, ldraw_lib__2_4ring3(realsolid)],
 // 1 0 4.5 11.203 66 -1 0 0 -0.023 1 -0.35 0 0 -1 2-4ring3.dat
-  [1,0,4.5,11.203,66,-1,0,0,-0.023,1,-0.35,0,0,-1, ldraw_lib__2_4ring3()],
+  [1,0,4.5,11.203,66,-1,0,0,-0.023,1,-0.35,0,0,-1, ldraw_lib__2_4ring3(realsolid)],
 // 1 16 4.5 11.203 66 -4 0 0 -0.092 1 -1.4 0 0 -4 1-4ndis.dat
-  [1,16,4.5,11.203,66,-4,0,0,-0.092,1,-1.4,0,0,-4, ldraw_lib__1_4ndis()],
+  [1,16,4.5,11.203,66,-4,0,0,-0.092,1,-1.4,0,0,-4, ldraw_lib__1_4ndis(realsolid)],
 // 1 16 4.5 12.778 70.5 4 0 0 0.092 1 1.4 0 0 4 2-4ndis.dat
-  [1,16,4.5,12.778,70.5,4,0,0,0.092,1,1.4,0,0,4, ldraw_lib__2_4ndis()],
+  [1,16,4.5,12.778,70.5,4,0,0,0.092,1,1.4,0,0,4, ldraw_lib__2_4ndis(realsolid)],
 // 1 16 4.5 12.778 70.5 3 0 0 0.069 1 1.05 0 0 3 2-4disc.dat
-  [1,16,4.5,12.778,70.5,3,0,0,0.069,1,1.05,0,0,3, ldraw_lib__2_4disc()],
+  [1,16,4.5,12.778,70.5,3,0,0,0.069,1,1.05,0,0,3, ldraw_lib__2_4disc(realsolid)],
 // 1 16 4.5 11.203 66 3 0 0 0.069 1 -1.05 0 0 -3 2-4disc.dat
-  [1,16,4.5,11.203,66,3,0,0,0.069,1,-1.05,0,0,-3, ldraw_lib__2_4disc()],
+  [1,16,4.5,11.203,66,3,0,0,0.069,1,-1.05,0,0,-3, ldraw_lib__2_4disc(realsolid)],
 // 4 16 1.5 12.709 70.5 1.5 11.134 66 7.5 11.272 66 7.5 12.847 70.5
   [4,16,1.5,12.709,70.5,1.5,11.134,66,7.5,11.272,66,7.5,12.847,70.5],
 // 4 0 0.5 12.686 70.5 0.5 11.111 66 1.5 11.134 66 1.5 12.709 70.5
@@ -135,5 +136,5 @@ function ldraw_lib__s__3961s20a() = [
   [5,24,15.529,9,57.956,20.706,16,77.274,30.615,16,73.91,10.442,16,79.316],
 ];
 module ldraw_lib__s__3961s20a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__3961s20a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__3961s20a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__3961s20a(line=0.2);

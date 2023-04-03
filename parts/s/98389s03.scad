@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/1-4edge.scad>
 use <../../p/1-4tang.scad>
-function ldraw_lib__s__98389s03() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__98389s03(realsolid=false) = [
 // 0 ~Animal Hedgehog Spines
 // 0 Name: s\98389s03.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -16,13 +17,13 @@ function ldraw_lib__s__98389s03() = [
 // 
 // 
 // 1 16 0 -29.644 -10 -2 0 0 0 1 -.438 0 0 -2 1-4tang.dat
-  [1,16,0,-29.644,-10,-2,0,0,0,1,-.438,0,0,-2, ldraw_lib__1_4tang()],
+  [1,16,0,-29.644,-10,-2,0,0,0,1,-.438,0,0,-2, ldraw_lib__1_4tang(realsolid)],
 // 1 16 0 -29.644 -10 -2 0 0 0 1 -.438 0 0 -2 1-4edge.dat
-  [1,16,0,-29.644,-10,-2,0,0,0,1,-.438,0,0,-2, ldraw_lib__1_4edge()],
+  [1,16,0,-29.644,-10,-2,0,0,0,1,-.438,0,0,-2, ldraw_lib__1_4edge(realsolid)],
 // 1 16 0 -29.644 -10 -2 0 0 0 1 0 0 0 2 1-4edge.dat
-  [1,16,0,-29.644,-10,-2,0,0,0,1,0,0,0,2, ldraw_lib__1_4edge()],
+  [1,16,0,-29.644,-10,-2,0,0,0,1,0,0,0,2, ldraw_lib__1_4edge(realsolid)],
 // 1 16 0 -29.644 -10 -2 0 0 0 1 0 0 0 2 1-4tang.dat
-  [1,16,0,-29.644,-10,-2,0,0,0,1,0,0,0,2, ldraw_lib__1_4tang()],
+  [1,16,0,-29.644,-10,-2,0,0,0,1,0,0,0,2, ldraw_lib__1_4tang(realsolid)],
 // 
 // 3 16 -8 0 1.591 -8 0 0 -9.483 -2.592 3.617
   [3,16,-8,0,1.591,-8,0,0,-9.483,-2.592,3.617],
@@ -2719,5 +2720,5 @@ function ldraw_lib__s__98389s03() = [
   [5,24,-13.464,-20.957,5.831,-13.6845,-19.7952,4.0905,-12.889,-21.843,3.695,-13.45,-18.566,5.805],
 ];
 module ldraw_lib__s__98389s03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__98389s03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__98389s03(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__98389s03(line=0.2);

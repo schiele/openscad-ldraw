@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <6192.scad>
-function ldraw_lib__30337() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__30337(realsolid=false) = [
 // 0 =Brick  2 x  4 with Curved Top
 // 0 Name: 30337.dat
 // 0 Author: Steve Bliss [sbliss]
@@ -20,8 +21,8 @@ function ldraw_lib__30337() = [
 // 
 // 0 // Alias of 6192
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 6192.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__6192()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__6192(realsolid)],
 ];
 module ldraw_lib__30337(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__30337(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__30337(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__30337(line=0.2);

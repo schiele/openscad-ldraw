@@ -3,7 +3,8 @@ use <11237.scad>
 use <76607c01.scad>
 use <76609.scad>
 use <u9013.scad>
-function ldraw_lib__72156() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__72156(realsolid=false) = [
 // 0 Electric Mindstorms EV3 IR-Beacon / Remote Handset
 // 0 Name: 72156.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -22,14 +23,14 @@ function ldraw_lib__72156() = [
 // 
 // 
 // 1 4 0 -5 0 1 0 0 0 1 0 0 0 1 11237.dat
-  [1,4,0,-5,0,1,0,0,0,1,0,0,0,1, ldraw_lib__11237()],
+  [1,4,0,-5,0,1,0,0,0,1,0,0,0,1, ldraw_lib__11237(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 76607c01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__76607c01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__76607c01(realsolid)],
 // 1 71 0 49 0 1 0 0 0 1 0 0 0 1 76609.dat
-  [1,71,0,49,0,1,0,0,0,1,0,0,0,1, ldraw_lib__76609()],
+  [1,71,0,49,0,1,0,0,0,1,0,0,0,1, ldraw_lib__76609(realsolid)],
 // 1 0 0 33 70 -1 0 0 0 -1 0 0 0 1 u9013.dat
-  [1,0,0,33,70,-1,0,0,0,-1,0,0,0,1, ldraw_lib__u9013()],
+  [1,0,0,33,70,-1,0,0,0,-1,0,0,0,1, ldraw_lib__u9013(realsolid)],
 ];
 module ldraw_lib__72156(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__72156(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__72156(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__72156(line=0.2);

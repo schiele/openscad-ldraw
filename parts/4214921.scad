@@ -2,7 +2,8 @@ use <../lib.scad>
 use <3815.scad>
 use <3816.scad>
 use <3817.scad>
-function ldraw_lib__4214921() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4214921(realsolid=false) = [
 // 0 ~_Minifig Hips and Legs (Complete) Dark Grey/Orange (Obsolete)
 // 0 Name: 4214921.dat
 // 0 Author: Joshua Delahunty [dulcaoin]
@@ -19,12 +20,12 @@ function ldraw_lib__4214921() = [
 // 
 // 
 // 1 8 0 0 0 1 0 0 0 1 0 0 0 1 3815.dat
-  [1,8,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3815()],
+  [1,8,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3815(realsolid)],
 // 1 25 0 12 0 1 0 0 0 1 0 0 0 1 3816.dat
-  [1,25,0,12,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3816()],
+  [1,25,0,12,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3816(realsolid)],
 // 1 25 0 12 0 1 0 0 0 1 0 0 0 1 3817.dat
-  [1,25,0,12,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3817()],
+  [1,25,0,12,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3817(realsolid)],
 ];
 module ldraw_lib__4214921(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4214921(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4214921(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4214921(line=0.2);

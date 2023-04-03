@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__194305e() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__194305e(realsolid=false) = [
 // 0 Sticker  2.5 x  5.9 with Fire Station Logo with Black Border on Transparent Background
 // 0 Name: 194305e.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -17,7 +18,7 @@ function ldraw_lib__194305e() = [
 // 
 // 
 // 1 16 0 -0.25 0 59 0 0 0 0.25 0 0 0 25 box5-12.dat
-  [1,16,0,-0.25,0,59,0,0,0,0.25,0,0,0,25, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,59,0,0,0,0.25,0,0,0,25, ldraw_lib__box5_12(realsolid)],
 // 0 BFC NOCLIP
   [0,"BFC","NOCLIP"],
 // 4 15 -6.7 -0.25 12.2 -7.5 -0.25 9.6 -5.6 -0.25 10.5 -5.4 -0.25 13.6
@@ -670,5 +671,5 @@ function ldraw_lib__194305e() = [
   [3,16,-31,-0.25,22,-36,-0.25,11,-31,-0.25,8],
 ];
 module ldraw_lib__194305e(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__194305e(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__194305e(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__194305e(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <1-8chrd.scad>
-function ldraw_lib__axlehol6() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__axlehol6(realsolid=false) = [
 // 0 Technic Axle Hole Tooth
 // 0 Name: axlehol6.dat
 // 0 Author: Steve Bliss [sbliss]
@@ -25,9 +26,9 @@ function ldraw_lib__axlehol6() = [
 // 
 // 0 // Adapter rings
 // 1 16 0 0 0 5.54328 0 -2.29608 0 1 0 2.29608 0 5.54328 1-8chrd.dat
-  [1,16,0,0,0,5.54328,0,-2.29608,0,1,0,2.29608,0,5.54328, ldraw_lib__1_8chrd()],
+  [1,16,0,0,0,5.54328,0,-2.29608,0,1,0,2.29608,0,5.54328, ldraw_lib__1_8chrd(realsolid)],
 // 1 16 0 1 0 5.54328 0 -2.29608 0 -1 0 2.29608 0 5.54328 1-8chrd.dat
-  [1,16,0,1,0,5.54328,0,-2.29608,0,-1,0,2.29608,0,5.54328, ldraw_lib__1_8chrd()],
+  [1,16,0,1,0,5.54328,0,-2.29608,0,-1,0,2.29608,0,5.54328, ldraw_lib__1_8chrd(realsolid)],
 // 0 // Edges
 // 2 24 2 1 5.6023 2 0 5.6023
   [2,24,2,1,5.6023,2,0,5.6023],
@@ -79,5 +80,5 @@ function ldraw_lib__axlehol6() = [
   [5,24,2,0,4,2,1,4,2.5,0,2.5,2,0,5.6023],
 ];
 module ldraw_lib__axlehol6(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__axlehol6(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__axlehol6(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__axlehol6(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3069bs01.scad>
-function ldraw_lib__3069bp82() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3069bp82(realsolid=false) = [
 // 0 Tile  1 x  2 with "TICKET" and "0937" Pattern
 // 0 Name: 3069bp82.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -18,7 +19,7 @@ function ldraw_lib__3069bp82() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3069bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3069bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3069bs01(realsolid)],
 // 4 16 -20 0 -10 -17.504 0 -9 -17.6407 0 -8.3127 -18.03 0 -7.73
   [4,16,-20,0,-10,-17.504,0,-9,-17.6407,0,-8.3127,-18.03,0,-7.73],
 // 4 16 -20 0 -10 -18.03 0 -7.73 -18.6127 0 -7.3407 -19.3 0 -7.204
@@ -1089,5 +1090,5 @@ function ldraw_lib__3069bp82() = [
   [4,14,5.2,0,-2.7,6.7,0,-2.7,6.4,0,-0.8,5.2,0,-0.8],
 ];
 module ldraw_lib__3069bp82(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3069bp82(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3069bp82(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3069bp82(line=0.2);

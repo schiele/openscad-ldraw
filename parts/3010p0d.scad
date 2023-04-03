@@ -2,7 +2,8 @@ use <../lib.scad>
 use <s/3010a20.scad>
 use <s/3010b20.scad>
 use <s/3010s01.scad>
-function ldraw_lib__3010p0d() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3010p0d(realsolid=false) = [
 // 0 Brick  1 x  4 with Town Car Grille Chrome Silver Pattern
 // 0 Name: 3010p0d.dat
 // 0 Author: Tore Eriksson [Tore_Eriksson]
@@ -24,13 +25,13 @@ function ldraw_lib__3010p0d() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3010s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3010s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3010s01(realsolid)],
 // 1 383 0 0 0 1 0 0 0 1 0 0 0 1 s\3010a20.dat
-  [1,383,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3010a20()],
+  [1,383,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3010a20(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3010b20.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3010b20()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3010b20(realsolid)],
 // 0
 ];
 module ldraw_lib__3010p0d(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3010p0d(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3010p0d(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3010p0d(line=0.2);

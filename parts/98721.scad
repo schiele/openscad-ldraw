@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/4-4cyli.scad>
 use <s/98721s01.scad>
-function ldraw_lib__98721() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__98721(realsolid=false) = [
 // 0 Minifig Bar with Bat Wings
 // 0 Name: 98721.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -24,12 +25,12 @@ function ldraw_lib__98721() = [
 // 0 // 55707c was part of LEGO ID 4297205, a set of accessories. Part 98721 is its replacement.
 // 
 // 1 16 -9 0 0 0 18 0 4 0 0 0 0 4 4-4cyli.dat
-  [1,16,-9,0,0,0,18,0,4,0,0,0,0,4, ldraw_lib__4_4cyli()],
+  [1,16,-9,0,0,0,18,0,4,0,0,0,0,4, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\98721s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98721s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98721s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\98721s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__98721s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__98721s01(realsolid)],
 ];
 module ldraw_lib__98721(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__98721(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__98721(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__98721(line=0.2);

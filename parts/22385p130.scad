@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/3-4disc.scad>
 use <../p/3-4ndis.scad>
 use <s/22385s01.scad>
-function ldraw_lib__22385p130() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__22385p130(realsolid=false) = [
 // 0 Tile  3 x  2 with Angled End with Nexo Power Shield Pattern - Sidekick
 // 0 Name: 22385p130.dat
 // 0 Author: Johann Eisner [technicbasics]
@@ -17,15 +18,15 @@ function ldraw_lib__22385p130() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\22385s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__22385s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__22385s01(realsolid)],
 // 1 15 3.86 0 1.47 -.56292 0 -.325 0 1 0 .325 0 -.56292 3-4disc.dat
-  [1,15,3.86,0,1.47,-.56292,0,-.325,0,1,0,.325,0,-.56292, ldraw_lib__3_4disc()],
+  [1,15,3.86,0,1.47,-.56292,0,-.325,0,1,0,.325,0,-.56292, ldraw_lib__3_4disc(realsolid)],
 // 1 288 3.86 0 1.47 -.56292 0 -.325 0 1 0 .325 0 -.56292 3-4ndis.dat
-  [1,288,3.86,0,1.47,-.56292,0,-.325,0,1,0,.325,0,-.56292, ldraw_lib__3_4ndis()],
+  [1,288,3.86,0,1.47,-.56292,0,-.325,0,1,0,.325,0,-.56292, ldraw_lib__3_4ndis(realsolid)],
 // 1 0x296ca3c -3.86 0 6.49 .61616 0 .23652 0 1 0 -.23652 0 .61616 3-4disc.dat
-  [1,43436604,-3.86,0,6.49,.61616,0,.23652,0,1,0,-.23652,0,.61616, ldraw_lib__3_4disc()],
+  [1,43436604,-3.86,0,6.49,.61616,0,.23652,0,1,0,-.23652,0,.61616, ldraw_lib__3_4disc(realsolid)],
 // 1 288 -3.86 0 6.49 .61616 0 .23652 0 1 0 -.23652 0 .61616 3-4ndis.dat
-  [1,288,-3.86,0,6.49,.61616,0,.23652,0,1,0,-.23652,0,.61616, ldraw_lib__3_4ndis()],
+  [1,288,-3.86,0,6.49,.61616,0,.23652,0,1,0,-.23652,0,.61616, ldraw_lib__3_4ndis(realsolid)],
 // 4 288 0 0 -19.6 -13.2 0 -5.8 -15.6 0 -7.1 0 0 -22.8
   [4,288,0,0,-19.6,-13.2,0,-5.8,-15.6,0,-7.1,0,0,-22.8],
 // 4 0x296CA3C -9.6 0 -5.8 -12 0 -5.8 0 0 -19.6 0 0 -15.6
@@ -720,5 +721,5 @@ function ldraw_lib__22385p130() = [
   [3,288,-4.097,0,5.874,-4.76,0,5.44,-3.835,0,5.837],
 ];
 module ldraw_lib__22385p130(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__22385p130(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__22385p130(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__22385p130(line=0.2);

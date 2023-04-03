@@ -2,7 +2,8 @@ use <../lib.scad>
 use <s/61068s01.scad>
 use <s/88930pz1s01.scad>
 use <s/88930s01.scad>
-function ldraw_lib__88930pz1() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__88930pz1(realsolid=false) = [
 // 0 Slope Brick Curved  2 x  4 with Underside Studs with Yellow Arches and Circles Pattern
 // 0 Name: 88930pz1.dat
 // 0 Author: Damien Roux [Darats]
@@ -19,21 +20,21 @@ function ldraw_lib__88930pz1() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\61068s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__61068s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__61068s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\88930s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__88930s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__88930s01(realsolid)],
 // 1 16 20 0 0 1 0 0 0 1 0 0 0 1 s\88930s01.dat
-  [1,16,20,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__88930s01()],
+  [1,16,20,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__88930s01(realsolid)],
 // 1 16 -20 0 0 1 0 0 0 1 0 0 0 1 s\88930s01.dat
-  [1,16,-20,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__88930s01()],
+  [1,16,-20,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__88930s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\88930pz1s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__88930pz1s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__88930pz1s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\88930pz1s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__88930pz1s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__88930pz1s01(realsolid)],
 // 1 16 38.918 0 0 1 0 0 0 1 0 0 0 1 s\88930pz1s01.dat
-  [1,16,38.918,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__88930pz1s01()],
+  [1,16,38.918,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__88930pz1s01(realsolid)],
 // 1 16 -38.918 0 0 -1 0 0 0 1 0 0 0 1 s\88930pz1s01.dat
-  [1,16,-38.918,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__88930pz1s01()],
+  [1,16,-38.918,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__88930pz1s01(realsolid)],
 // 
 // 4 16 -40 -4 -20 -38.918 -3.998 -20 -38.918 -4.634 -19 -40 -7.528 -14.446
   [4,16,-40,-4,-20,-38.918,-3.998,-20,-38.918,-4.634,-19,-40,-7.528,-14.446],
@@ -104,5 +105,5 @@ function ldraw_lib__88930pz1() = [
   [5,24,-40,-7.528,-14.446,40,-7.528,-14.446,-40,-3.993,-20.008,-40,-10.501,-8.29],
 ];
 module ldraw_lib__88930pz1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__88930pz1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__88930pz1(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__88930pz1(line=0.2);

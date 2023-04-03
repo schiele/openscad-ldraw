@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <973p61.scad>
-function ldraw_lib__9326p61() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__9326p61(realsolid=false) = [
 // 0 ~Moved to 973p61
 // 0 Name: 9326p61.dat
 // 0 Author: [PTadmin]
@@ -19,9 +20,9 @@ function ldraw_lib__9326p61() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 973p61.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__973p61()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__973p61(realsolid)],
 // 0
 ];
 module ldraw_lib__9326p61(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__9326p61(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__9326p61(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__9326p61(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/2707s01.scad>
-function ldraw_lib__2707p04() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2707p04(realsolid=false) = [
 // 0 Technic Action Figure Head with Thick Eyebrows Pattern
 // 0 Name: 2707p04.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -18,9 +19,9 @@ function ldraw_lib__2707p04() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2707s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2707s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2707s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\2707s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__2707s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__2707s01(realsolid)],
 // 4 0 -11.8 -33.5 -10.586 -12.1 -31.5 -10.137 -11.314 -31.786 -11.314 -11.314 -33.743 -11.314
   [4,0,-11.8,-33.5,-10.586,-12.1,-31.5,-10.137,-11.314,-31.786,-11.314,-11.314,-33.743,-11.314],
 // 4 0 -12.9 -31.7 -8.94 -12.7 -31.4 -9.239 -12.1 -31.5 -10.137 -12.9 -32.2 -8.94
@@ -479,5 +480,5 @@ function ldraw_lib__2707p04() = [
   [5,24,6.123,-14.28,-14.782,6.123,-18,-14.782,0,-18,-16,11.314,-16,-11.314],
 ];
 module ldraw_lib__2707p04(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2707p04(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2707p04(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2707p04(line=0.2);

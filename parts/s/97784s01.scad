@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__97784s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__97784s01(realsolid=false) = [
 // 0 ~Friends Cupcake Case - 1/11
 // 0 Name: s\97784s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -121,5 +122,5 @@ function ldraw_lib__s__97784s01() = [
   [5,24,2.33431,-7.98,7.94991,2.33431,-13.48,7.94991,1.24,-7.98,8.751,3.68799,-7.98,8.03221],
 ];
 module ldraw_lib__s__97784s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__97784s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__97784s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__97784s01(line=0.2);

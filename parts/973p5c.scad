@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/1-4cyli.scad>
 use <s/973p5fs01.scad>
 use <s/973s01.scad>
-function ldraw_lib__973p5c() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__973p5c(realsolid=false) = [
 // 0 Minifig Torso with Dress with Wavy Lines Pattern
 // 0 Name: 973p5c.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -20,12 +21,12 @@ function ldraw_lib__973p5c() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01(realsolid)],
 // 1 71 0 -4 0 4.243 0 -4.243 0 -8 0 -4.243 0 -4.243 1-4cyli.dat
-  [1,71,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli()],
+  [1,71,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli(realsolid)],
 // 
 // 1 16 0 0 -10 1 0 0 0 1 0 0 0 1 s\973p5fs01.dat
-  [1,16,0,0,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973p5fs01()],
+  [1,16,0,0,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973p5fs01(realsolid)],
 // 4 16 7.85 5.82 -10 6.11 7.56 -10 7.56 7.64 -10 9.67 5.67 -10
   [4,16,7.85,5.82,-10,6.11,7.56,-10,7.56,7.64,-10,9.67,5.67,-10],
 // 4 71 7.93 4.58 -10 8.51 4.95 -10 8.95 4.95 -10 8.44 4.15 -10
@@ -602,7 +603,7 @@ function ldraw_lib__973p5c() = [
   [4,16,2.62,7.78,-10,1.53,7.64,-10,2.25,8.36,-10,2.62,8.36,-10],
 // 
 // 1 16 0 0 10 1 0 0 0 1 0 0 0 -1 s\973p5fs01.dat
-  [1,16,0,0,10,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__973p5fs01()],
+  [1,16,0,0,10,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__973p5fs01(realsolid)],
 // 4 71 13.16 1.89 10 13.24 2.33 10 13.16 2.47 10 12.44 2.47 10
   [4,71,13.16,1.89,10,13.24,2.33,10,13.16,2.47,10,12.44,2.47,10],
 // 3 16 12 0 10 12.07 1.02 10 11.35 1.02 10
@@ -1485,5 +1486,5 @@ function ldraw_lib__973p5c() = [
   [3,16,15.2,11.85,10,14.345,2,10,15.78,15.42,10],
 ];
 module ldraw_lib__973p5c(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__973p5c(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__973p5c(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__973p5c(line=0.2);

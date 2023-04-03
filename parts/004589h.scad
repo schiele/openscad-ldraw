@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__004589h() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__004589h(realsolid=false) = [
 // 0 Sticker  1.1 x  3.3 with Black "Bistro" on Blue Background
 // 0 Name: 004589h.dat
 // 0 Author: Alex Taylor [anathema]
@@ -20,7 +21,7 @@ function ldraw_lib__004589h() = [
 // 
 // 0 // Font Swiss721 BT Bold
 // 1 16 0 -0.25 0 33 0 0 0 0.25 0 0 0 11 box5-12.dat
-  [1,16,0,-0.25,0,33,0,0,0,0.25,0,0,0,11, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,33,0,0,0,0.25,0,0,0,11, ldraw_lib__box5_12(realsolid)],
 // 4 0 -27.31 -.25 -7.2 -24.47 -.25 -4.6 -24.47 -.25 -.84 -27.31 -.25 7.19
   [4,0,-27.31,-.25,-7.2,-24.47,-.25,-4.6,-24.47,-.25,-.84,-27.31,-.25,7.19],
 // 4 0 -20.76 -.25 -7.2 -20.97 -.25 -4.6 -24.47 -.25 -4.6 -27.31 -.25 -7.2
@@ -463,5 +464,5 @@ function ldraw_lib__004589h() = [
   [4,1,22.82,-.25,-4.96,23.6,-.25,-4.31,20.71,-.25,-4.96,21.77,-.25,-5.17],
 ];
 module ldraw_lib__004589h(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__004589h(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__004589h(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__004589h(line=0.2);

@@ -2,7 +2,8 @@ use <../lib.scad>
 use <567.scad>
 use <u9021.scad>
 use <u9238.scad>
-function ldraw_lib__567c04() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__567c04(realsolid=false) = [
 // 0 Electric Plug (Type 1) Twin with Hollow Pin (Complete)
 // 0 Name: 567c04.dat
 // 0 Author: Steffen [Steffen]
@@ -18,15 +19,15 @@ function ldraw_lib__567c04() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 567.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__567()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__567(realsolid)],
 // 1 494 10 0 0 1 0 0 0 1 0 0 0 1 u9238.dat
-  [1,494,10,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9238()],
+  [1,494,10,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9238(realsolid)],
 // 1 494 -10 0 0 1 0 0 0 1 0 0 0 1 u9238.dat
-  [1,494,-10,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9238()],
+  [1,494,-10,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9238(realsolid)],
 // 1 494 -10 -6 17 .98163 0 -.19081 0 1 0 .19081 0 .98163 u9021.dat
-  [1,494,-10,-6,17,.98163,0,-.19081,0,1,0,.19081,0,.98163, ldraw_lib__u9021()],
+  [1,494,-10,-6,17,.98163,0,-.19081,0,1,0,.19081,0,.98163, ldraw_lib__u9021(realsolid)],
 // 1 494 10 -6 17 .98163 0 -.19081 0 1 0 .19081 0 .98163 u9021.dat
-  [1,494,10,-6,17,.98163,0,-.19081,0,1,0,.19081,0,.98163, ldraw_lib__u9021()],
+  [1,494,10,-6,17,.98163,0,-.19081,0,1,0,.19081,0,.98163, ldraw_lib__u9021(realsolid)],
 // 
 // 2 24 11.7222 -4.1576 15.1994 11.7601 -4.1322 15.2245
   [2,24,11.7222,-4.1576,15.1994,11.7601,-4.1322,15.2245],
@@ -207,5 +208,5 @@ function ldraw_lib__567c04() = [
   [2,24,-11.7755,-3.827,15.2399,-11.6265,-3.9266,15.1394],
 ];
 module ldraw_lib__567c04(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__567c04(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__567c04(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__567c04(line=0.2);

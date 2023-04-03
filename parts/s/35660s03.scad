@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/t04o6250.scad>
 use <../../p/t08o6250.scad>
-function ldraw_lib__s__35660s03() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__35660s03(realsolid=false) = [
 // 0 ~Minifig Hair with Ponytail and Baseball Cap - Hair Half
 // 0 Name: s\35660s03.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -1076,11 +1077,11 @@ function ldraw_lib__s__35660s03() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 4 0 7.39104 0 3.06147 0 -6.4 0 -3.06147 0 7.39104 t04o6250.dat
-  [1,16,0,4,0,7.39104,0,3.06147,0,-6.4,0,-3.06147,0,7.39104, ldraw_lib__t04o6250()],
+  [1,16,0,4,0,7.39104,0,3.06147,0,-6.4,0,-3.06147,0,7.39104, ldraw_lib__t04o6250(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 4 0 3.06147 0 7.39104 0 -6.4 0 -7.39104 0 3.06147 t08o6250.dat
-  [1,16,0,4,0,3.06147,0,7.39104,0,-6.4,0,-7.39104,0,3.06147, ldraw_lib__t08o6250()],
+  [1,16,0,4,0,3.06147,0,7.39104,0,-6.4,0,-7.39104,0,3.06147, ldraw_lib__t08o6250(realsolid)],
 // 5 24 0 2.4691 12.6192 3.105 2.2375 12.1575 3.105 0 12.1575 3.2775 3.195 12.23
   [5,24,0,2.4691,12.6192,3.105,2.2375,12.1575,3.105,0,12.1575,3.2775,3.195,12.23],
 // 5 24 4.9749 4 -12.0104 6.445 4.75 -11.1625 4.9749 4.3 -12.0104 9.1927 4 -9.1922
@@ -1189,5 +1190,5 @@ function ldraw_lib__s__35660s03() = [
   [5,24,0,0,-8,3.0615,0,-7.391,2.2689,0,-5.4775,3.7936,0.3046,-9.1592],
 ];
 module ldraw_lib__s__35660s03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__35660s03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__35660s03(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__35660s03(line=0.2);

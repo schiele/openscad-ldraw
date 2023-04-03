@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <765c02.scad>
 use <993.scad>
-function ldraw_lib__765c03() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__765c03(realsolid=false) = [
 // 0 Electric Cable Grey with Plugs (Type 4) Single
 // 0 Name: 765c03.dat
 // 0 Author: Steffen [Steffen]
@@ -17,12 +18,12 @@ function ldraw_lib__765c03() = [
 // 
 // 
 // 1 16 0 0 181 -1 0 0 0 1 0 0 0 -1 765c02.dat
-  [1,16,0,0,181,-1,0,0,0,1,0,0,0,-1, ldraw_lib__765c02()],
+  [1,16,0,0,181,-1,0,0,0,1,0,0,0,-1, ldraw_lib__765c02(realsolid)],
 // 1 375 0 0 -159 0 0 1 1 0 0 0 318 0 993.dat
-  [1,375,0,0,-159,0,0,1,1,0,0,0,318,0, ldraw_lib__993()],
+  [1,375,0,0,-159,0,0,1,1,0,0,0,318,0, ldraw_lib__993(realsolid)],
 // 1 16 0 0 -181 1 0 0 0 1 0 0 0 1 765c02.dat
-  [1,16,0,0,-181,1,0,0,0,1,0,0,0,1, ldraw_lib__765c02()],
+  [1,16,0,0,-181,1,0,0,0,1,0,0,0,1, ldraw_lib__765c02(realsolid)],
 ];
 module ldraw_lib__765c03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__765c03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__765c03(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__765c03(line=0.2);

@@ -6,7 +6,8 @@ use <s/2528ap30s04.scad>
 use <s/2528ap30s05.scad>
 use <s/2528as01.scad>
 use <s/2528as03.scad>
-function ldraw_lib__2528ap30() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2528ap30(realsolid=false) = [
 // 0 Minifig Hat Bicorne with White Evil Skull and Crossbones Pattern
 // 0 Name: 2528ap30.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -29,28 +30,28 @@ function ldraw_lib__2528ap30() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2528as01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2528as01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2528as01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 -1 s\2528as03.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__2528as03()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__2528as03(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 -1 s\2528as03.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__2528as03()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__2528as03(realsolid)],
 // 
 // 1 15 0 0 0 1 0 0 0 1 0 0 0 1 s\2528ap30s01.dat
-  [1,15,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2528ap30s01()],
+  [1,15,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2528ap30s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2528ap30s02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2528ap30s02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2528ap30s02(realsolid)],
 // 1 15 0 0 0 1 0 0 0 1 0 0 0 1 s\2528ap30s03.dat
-  [1,15,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2528ap30s03()],
+  [1,15,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2528ap30s03(realsolid)],
 // 1 15 0 0 0 -1 0 0 0 1 0 0 0 1 s\2528ap30s03.dat
-  [1,15,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__2528ap30s03()],
+  [1,15,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__2528ap30s03(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2528ap30s04.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2528ap30s04()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2528ap30s04(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\2528ap30s04.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__2528ap30s04()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__2528ap30s04(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2528ap30s05.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2528ap30s05()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2528ap30s05(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\2528ap30s05.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__2528ap30s05()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__2528ap30s05(realsolid)],
 // 
 // 3 16 11.3211 -5.9962 -9.0144 10.9601 -14.2101 -5.45 6.4843 -10.2878 -9.5286
   [3,16,11.3211,-5.9962,-9.0144,10.9601,-14.2101,-5.45,6.4843,-10.2878,-9.5286],
@@ -82,5 +83,5 @@ function ldraw_lib__2528ap30() = [
   [4,16,-4.0114,-18.2215,-5.45,-1,-14.8702,-7.7803,0,-14.9549,-7.8092,0,-18.749,-5.45],
 ];
 module ldraw_lib__2528ap30(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2528ap30(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2528ap30(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2528ap30(line=0.2);

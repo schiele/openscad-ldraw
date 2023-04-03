@@ -2,7 +2,8 @@ use <../../lib.scad>
 use <../../p/3-4ndis.scad>
 use <777s07.scad>
 use <777s09.scad>
-function ldraw_lib__s__logolegos01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__logolegos01(realsolid=false) = [
 // 0 ~Logo Lego (1973-1998)
 // 0 Name: s\logolegos01.dat
 // 0 Author: Ulrich Röder [UR]
@@ -21,11 +22,11 @@ function ldraw_lib__s__logolegos01() = [
 // 0 // (R)
 // 
 // 1 0 25.75 -.25 7.75 .18 0 0 0 1 0 0 0 .18 s\777s09.dat
-  [1,0,25.75,-.25,7.75,.18,0,0,0,1,0,0,0,.18, ldraw_lib__s__777s09()],
+  [1,0,25.75,-.25,7.75,.18,0,0,0,1,0,0,0,.18, ldraw_lib__s__777s09(realsolid)],
 // 1 4 25.75 -.25 7.75 .18 0 0 0 1 0 0 0 .18 s\777s07.dat
-  [1,4,25.75,-.25,7.75,.18,0,0,0,1,0,0,0,.18, ldraw_lib__s__777s07()],
+  [1,4,25.75,-.25,7.75,.18,0,0,0,1,0,0,0,.18, ldraw_lib__s__777s07(realsolid)],
 // 1 4 25.75 -.25 7.75 0 0 1.26 0 1 0 -1.26 0 0 3-4ndis.dat
-  [1,4,25.75,-.25,7.75,0,0,1.26,0,1,0,-1.26,0,0, ldraw_lib__3_4ndis()],
+  [1,4,25.75,-.25,7.75,0,0,1.26,0,1,0,-1.26,0,0, ldraw_lib__3_4ndis(realsolid)],
 // 
 // 0 // White
 // 0 // "L"
@@ -1093,5 +1094,5 @@ function ldraw_lib__s__logolegos01() = [
   [3,4,-27.8,-.25,10,-24,-.25,.7,-22.92,-.25,2.69],
 ];
 module ldraw_lib__s__logolegos01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__logolegos01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__logolegos01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__logolegos01(line=0.2);

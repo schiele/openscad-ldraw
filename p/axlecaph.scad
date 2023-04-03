@@ -3,7 +3,8 @@ use <4-4edge.scad>
 use <4-4ndis.scad>
 use <axlehol2.scad>
 use <axlehol9.scad>
-function ldraw_lib__axlecaph() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__axlecaph(realsolid=false) = [
 // 0 Axle Endcap with Hole 4D
 // 0 Name: axlecaph.dat
 // 0 Author: Jens Bauer [rockford]
@@ -19,9 +20,9 @@ function ldraw_lib__axlecaph() = [
 // 
 // 
 // 1 16 0 1 0 2 0 0 0 1 0 0 0 2 4-4edge.dat
-  [1,16,0,1,0,2,0,0,0,1,0,0,0,2, ldraw_lib__4_4edge()],
+  [1,16,0,1,0,2,0,0,0,1,0,0,0,2, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 1 0 1.4142 0 1.4142 0 -1 0 -1.4142 0 1.4142 4-4ndis.dat
-  [1,16,0,1,0,1.4142,0,1.4142,0,-1,0,-1.4142,0,1.4142, ldraw_lib__4_4ndis()],
+  [1,16,0,1,0,1.4142,0,1.4142,0,-1,0,-1.4142,0,1.4142, ldraw_lib__4_4ndis(realsolid)],
 // 
 // 4 16 4.802 1 1 5 1 0 2.8284 1 0 2 1 1
   [4,16,4.802,1,1,5,1,0,2.8284,1,0,2,1,1],
@@ -104,9 +105,9 @@ function ldraw_lib__axlecaph() = [
 // 3 16 0 1 2.8284 1 1 2 1.412 1 1.412
   [3,16,0,1,2.8284,1,1,2,1.412,1,1.412],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 axlehol9.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__axlehol9()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__axlehol9(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 axlehol2.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__axlehol2()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__axlehol2(realsolid)],
 // 2 24 5 1 0 4.802 1 1
   [2,24,5,1,0,4.802,1,1],
 // 2 24 5 1 0 4.802 1 -1
@@ -189,5 +190,5 @@ function ldraw_lib__axlecaph() = [
   [2,24,1,1,-2,2,0,-2],
 ];
 module ldraw_lib__axlecaph(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__axlecaph(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__axlecaph(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__axlecaph(line=0.2);

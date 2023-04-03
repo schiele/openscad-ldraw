@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <3626b-4t.scad>
-function ldraw_lib__3626_4t() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3626_4t(realsolid=false) = [
 // 0 ~Moved to 3626b-4t
 // 0 Name: 3626-4t.dat
 // 0 Author: [PTadmin]
@@ -19,8 +20,8 @@ function ldraw_lib__3626_4t() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 3626b-4t.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3626b_4t()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3626b_4t(realsolid)],
 ];
 module ldraw_lib__3626_4t(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3626_4t(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3626_4t(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3626_4t(line=0.2);

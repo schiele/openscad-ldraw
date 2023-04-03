@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/822as01.scad>
-function ldraw_lib__822b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__822b(realsolid=false) = [
 // 0 ~Garage Door without Hinge Pins
 // 0 Name: 822b.dat
 // 0 Author: Arne Hackstein
@@ -18,7 +19,7 @@ function ldraw_lib__822b() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\822as01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__822as01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__822as01(realsolid)],
 // 0 // front surface
 // 4 16 20.5 50.5 46 20.5 50.5 -46 20.5 60.5 -52 20.5 60.5 52
   [4,16,20.5,50.5,46,20.5,50.5,-46,20.5,60.5,-52,20.5,60.5,52],
@@ -67,5 +68,5 @@ function ldraw_lib__822b() = [
   [3,16,2.5,-8.5,-52,2.5,-8.5,-48.5,2.5,-5.5,-48.5],
 ];
 module ldraw_lib__822b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__822b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__822b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__822b(line=0.2);

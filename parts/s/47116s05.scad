@@ -5,7 +5,8 @@ use <../../p/box3u6.scad>
 use <../../p/box4-4a.scad>
 use <../../p/stud4.scad>
 use <../../p/stud4f4n.scad>
-function ldraw_lib__s__47116s05() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__47116s05(realsolid=false) = [
 // 0 ~Brick 12 x 24 with Pegs - Double Stud Tubes and Flush H-Ribs
 // 0 Name: s\47116s05.dat
 // 0 Author: Greg Teft [gregteft]
@@ -20,50 +21,50 @@ function ldraw_lib__s__47116s05() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 stud4f4n.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud4f4n()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud4f4n(realsolid)],
 // 1 16 0 0 0 6 0 0 0 1 0 0 0 6 4-4edge.dat
-  [1,16,0,0,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4edge()],
+  [1,16,0,0,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4edge(realsolid)],
 // 1 16 20 0 20 1 0 0 0 1 0 0 0 1 stud4.dat
-  [1,16,20,0,20,1,0,0,0,1,0,0,0,1, ldraw_lib__stud4()],
+  [1,16,20,0,20,1,0,0,0,1,0,0,0,1, ldraw_lib__stud4(realsolid)],
 // 0 // rib to stud4f4n +x
 // 1 16 8.5 0 0 0.5 0 0 0 -4 0 0 0 1 box3u6.dat
-  [1,16,8.5,0,0,0.5,0,0,0,-4,0,0,0,1, ldraw_lib__box3u6()],
+  [1,16,8.5,0,0,0.5,0,0,0,-4,0,0,0,1, ldraw_lib__box3u6(realsolid)],
 // 1 16 31.5 0 0 -0.5 0 0 0 -4 0 0 0 -1 box3u6.dat
-  [1,16,31.5,0,0,-0.5,0,0,0,-4,0,0,0,-1, ldraw_lib__box3u6()],
+  [1,16,31.5,0,0,-0.5,0,0,0,-4,0,0,0,-1, ldraw_lib__box3u6(realsolid)],
 // 1 16 30 0 2.5 -1 0 0 0 -4 0 0 0 1.5 box4-4a.dat
-  [1,16,30,0,2.5,-1,0,0,0,-4,0,0,0,1.5, ldraw_lib__box4_4a()],
+  [1,16,30,0,2.5,-1,0,0,0,-4,0,0,0,1.5, ldraw_lib__box4_4a(realsolid)],
 // 1 16 30 0 -2.5 1 0 0 0 -4 0 0 0 -1.5 box4-4a.dat
-  [1,16,30,0,-2.5,1,0,0,0,-4,0,0,0,-1.5, ldraw_lib__box4_4a()],
+  [1,16,30,0,-2.5,1,0,0,0,-4,0,0,0,-1.5, ldraw_lib__box4_4a(realsolid)],
 // 1 16 20 0 0 -9 0 0 0 -4 0 0 0 1 box3u4p.dat
-  [1,16,20,0,0,-9,0,0,0,-4,0,0,0,1, ldraw_lib__box3u4p()],
+  [1,16,20,0,0,-9,0,0,0,-4,0,0,0,1, ldraw_lib__box3u4p(realsolid)],
 // 1 16 10 0 2.5 -1 0 0 0 -4 0 0 0 1.5 box4-4a.dat
-  [1,16,10,0,2.5,-1,0,0,0,-4,0,0,0,1.5, ldraw_lib__box4_4a()],
+  [1,16,10,0,2.5,-1,0,0,0,-4,0,0,0,1.5, ldraw_lib__box4_4a(realsolid)],
 // 1 16 10 0 -2.5 1 0 0 0 -4 0 0 0 -1.5 box4-4a.dat
-  [1,16,10,0,-2.5,1,0,0,0,-4,0,0,0,-1.5, ldraw_lib__box4_4a()],
+  [1,16,10,0,-2.5,1,0,0,0,-4,0,0,0,-1.5, ldraw_lib__box4_4a(realsolid)],
 // 4 16 9 -4 1 9 -4 -1 11 -4 -1 11 -4 1
   [4,16,9,-4,1,9,-4,-1,11,-4,-1,11,-4,1],
 // 4 16 29 -4 1 29 -4 -1 31 -4 -1 31 -4 1
   [4,16,29,-4,1,29,-4,-1,31,-4,-1,31,-4,1],
 // 0 // rib to stud4f4n +y
 // 1 16 0 0 8.5 0 0 -1 0 -4 0 0.5 0 0 box3u6.dat
-  [1,16,0,0,8.5,0,0,-1,0,-4,0,0.5,0,0, ldraw_lib__box3u6()],
+  [1,16,0,0,8.5,0,0,-1,0,-4,0,0.5,0,0, ldraw_lib__box3u6(realsolid)],
 // 1 16 0 0 31.5 0 0 1 0 -4 0 -0.5 0 0 box3u6.dat
-  [1,16,0,0,31.5,0,0,1,0,-4,0,-0.5,0,0, ldraw_lib__box3u6()],
+  [1,16,0,0,31.5,0,0,1,0,-4,0,-0.5,0,0, ldraw_lib__box3u6(realsolid)],
 // 1 16 -2.5 0 30 0 0 -1.5 0 -4 0 -1 0 0 box4-4a.dat
-  [1,16,-2.5,0,30,0,0,-1.5,0,-4,0,-1,0,0, ldraw_lib__box4_4a()],
+  [1,16,-2.5,0,30,0,0,-1.5,0,-4,0,-1,0,0, ldraw_lib__box4_4a(realsolid)],
 // 1 16 2.5 0 30 0 0 1.5 0 -4 0 1 0 0 box4-4a.dat
-  [1,16,2.5,0,30,0,0,1.5,0,-4,0,1,0,0, ldraw_lib__box4_4a()],
+  [1,16,2.5,0,30,0,0,1.5,0,-4,0,1,0,0, ldraw_lib__box4_4a(realsolid)],
 // 1 16 0 0 20 0 0 -1 0 -4 0 -9 0 0 box3u4p.dat
-  [1,16,0,0,20,0,0,-1,0,-4,0,-9,0,0, ldraw_lib__box3u4p()],
+  [1,16,0,0,20,0,0,-1,0,-4,0,-9,0,0, ldraw_lib__box3u4p(realsolid)],
 // 1 16 -2.5 0 10 0 0 -1.5 0 -4 0 -1 0 0 box4-4a.dat
-  [1,16,-2.5,0,10,0,0,-1.5,0,-4,0,-1,0,0, ldraw_lib__box4_4a()],
+  [1,16,-2.5,0,10,0,0,-1.5,0,-4,0,-1,0,0, ldraw_lib__box4_4a(realsolid)],
 // 1 16 2.5 0 10 0 0 1.5 0 -4 0 1 0 0 box4-4a.dat
-  [1,16,2.5,0,10,0,0,1.5,0,-4,0,1,0,0, ldraw_lib__box4_4a()],
+  [1,16,2.5,0,10,0,0,1.5,0,-4,0,1,0,0, ldraw_lib__box4_4a(realsolid)],
 // 4 16 -1 -4 9 1 -4 9 1 -4 11 -1 -4 11
   [4,16,-1,-4,9,1,-4,9,1,-4,11,-1,-4,11],
 // 4 16 -1 -4 29 1 -4 29 1 -4 31 -1 -4 31
   [4,16,-1,-4,29,1,-4,29,1,-4,31,-1,-4,31],
 ];
 module ldraw_lib__s__47116s05(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__47116s05(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__47116s05(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__47116s05(line=0.2);

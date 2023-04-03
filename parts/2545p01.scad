@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/2545s01.scad>
 use <s/2545s02.scad>
-function ldraw_lib__2545p01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2545p01(realsolid=false) = [
 // 0 Minifig Hat Imperial Guard Shako with Red Plume and Gold Badge Pattern
 // 0 Name: 2545p01.dat
 // 0 Author: Howard Lande [HowardLande]
@@ -21,10 +22,10 @@ function ldraw_lib__2545p01() = [
 // 0 // Subpart without decorative surfaces
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2545s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2545s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2545s01(realsolid)],
 // 0 // Brim
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2545s02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2545s02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2545s02(realsolid)],
 // 0 // Front Main Cone - Gold Badge Pattern
 // 3 16 -10.96 1.69 -10.678 -9.192 -21 -9.192 -14.32 0.678 -5.743
   [3,16,-10.96,1.69,-10.678,-9.192,-21,-9.192,-14.32,0.678,-5.743],
@@ -1073,5 +1074,5 @@ function ldraw_lib__2545p01() = [
   [5,24,-4.414,-26,-15.855,-3,-26,-16.441,-4.078,-27.689,-16.069,-1.599,-12.865,-13.442],
 ];
 module ldraw_lib__2545p01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2545p01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2545p01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2545p01(line=0.2);

@@ -6,7 +6,8 @@ use <3-8con3.scad>
 use <3-8edge.scad>
 use <3-8ndis.scad>
 use <8/2-4edge.scad>
-function ldraw_lib__clh3q() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__clh3q(realsolid=false) = [
 // 0 Click Lock Hinge Single Finger - Quarter
 // 0 Name: clh3q.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -23,11 +24,11 @@ function ldraw_lib__clh3q() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 4 0 -10 0 -1 0 0 0 -1 1 0 0 3-8con3.dat
-  [1,16,4,0,-10,0,-1,0,0,0,-1,1,0,0, ldraw_lib__3_8con3()],
+  [1,16,4,0,-10,0,-1,0,0,0,-1,1,0,0, ldraw_lib__3_8con3(realsolid)],
 // 1 16 4 0 -10 0 -1 0 0 0 -4 4 0 0 3-8edge.dat
-  [1,16,4,0,-10,0,-1,0,0,0,-4,4,0,0, ldraw_lib__3_8edge()],
+  [1,16,4,0,-10,0,-1,0,0,0,-4,4,0,0, ldraw_lib__3_8edge(realsolid)],
 // 1 16 4 0 -10 0 -1 0 0 0 -4 4 0 0 3-8ndis.dat
-  [1,16,4,0,-10,0,-1,0,0,0,-4,4,0,0, ldraw_lib__3_8ndis()],
+  [1,16,4,0,-10,0,-1,0,0,0,-4,4,0,0, ldraw_lib__3_8ndis(realsolid)],
 // 
 // 4 16 3 -2.1213 -12.1213 4 -2.8284 -12.8284 4 -2.2635 -13.2059 3.4745 -1.7324 -12.941
   [4,16,3,-2.1213,-12.1213,4,-2.8284,-12.8284,4,-2.2635,-13.2059,3.4745,-1.7324,-12.941],
@@ -69,11 +70,11 @@ function ldraw_lib__clh3q() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 4.62 0 -13.2059 -1.62 0 0 0 0 -2.45 0 -2.1441 0 3-16cyli.dat
-  [1,16,4.62,0,-13.2059,-1.62,0,0,0,0,-2.45,0,-2.1441,0, ldraw_lib__3_16cyli()],
+  [1,16,4.62,0,-13.2059,-1.62,0,0,0,0,-2.45,0,-2.1441,0, ldraw_lib__3_16cyli(realsolid)],
 // 1 16 4.62 0 -15.35 -1.62 0 0 0 0 -2.45 0 1 0 3-16edge.dat
-  [1,16,4.62,0,-15.35,-1.62,0,0,0,0,-2.45,0,1,0, ldraw_lib__3_16edge()],
+  [1,16,4.62,0,-15.35,-1.62,0,0,0,0,-2.45,0,1,0, ldraw_lib__3_16edge(realsolid)],
 // 1 16 4.62 0 -15.35 -1.62 0 0 0 0 -2.45 0 1 0 3-16tndis.dat
-  [1,16,4.62,0,-15.35,-1.62,0,0,0,0,-2.45,0,1,0, ldraw_lib__3_16tndis()],
+  [1,16,4.62,0,-15.35,-1.62,0,0,0,0,-2.45,0,1,0, ldraw_lib__3_16tndis(realsolid)],
 // 
 // 3 16 4 -4 -14 4 -5.9285 -14.9515 4 -2.2627 -15.35
   [3,16,4,-4,-14,4,-5.9285,-14.9515,4,-2.2627,-15.35],
@@ -96,8 +97,8 @@ function ldraw_lib__clh3q() = [
 // 
 // 0 // Arrestor
 // 1 16 4 -1.133 -4.359 0 -1 0 -.883 0 .117 -.176 0 -.589 8\2-4edge.dat
-  [1,16,4,-1.133,-4.359,0,-1,0,-.883,0,.117,-.176,0,-.589, ldraw_lib__8__2_4edge()],
+  [1,16,4,-1.133,-4.359,0,-1,0,-.883,0,.117,-.176,0,-.589, ldraw_lib__8__2_4edge(realsolid)],
 ];
 module ldraw_lib__clh3q(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__clh3q(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__clh3q(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__clh3q(line=0.2);

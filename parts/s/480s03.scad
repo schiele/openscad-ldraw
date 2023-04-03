@@ -3,7 +3,8 @@ use <../../p/1-4disc.scad>
 use <../../p/box2-5.scad>
 use <../../p/rect.scad>
 use <../../p/rect2a.scad>
-function ldraw_lib__s__480s03() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__480s03(realsolid=false) = [
 // 0 ~Hinge Arm Locking - Center Body 1/4
 // 0 Name: s\480s03.dat
 // 0 Author: Donald Sutter [technog]
@@ -20,21 +21,21 @@ function ldraw_lib__s__480s03() = [
 // 
 // 
 // 1 16 0 0 -7.125 9 0 0 0 0 9 0 -1 0 1-4disc.dat
-  [1,16,0,0,-7.125,9,0,0,0,0,9,0,-1,0, ldraw_lib__1_4disc()],
+  [1,16,0,0,-7.125,9,0,0,0,0,9,0,-1,0, ldraw_lib__1_4disc(realsolid)],
 // 1 16 0 0 7.125 9 0 0 0 0 9 0 1 0 1-4disc.dat
-  [1,16,0,0,7.125,9,0,0,0,0,9,0,1,0, ldraw_lib__1_4disc()],
+  [1,16,0,0,7.125,9,0,0,0,0,9,0,1,0, ldraw_lib__1_4disc(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 4.657 6.123 0 0 -3.657 0 0 0 -2.678 -1.425 0 0 box2-5.dat
-  [1,16,4.657,6.123,0,0,-3.657,0,0,0,-2.678,-1.425,0,0, ldraw_lib__box2_5()],
+  [1,16,4.657,6.123,0,0,-3.657,0,0,0,-2.678,-1.425,0,0, ldraw_lib__box2_5(realsolid)],
 // 1 16 4.9 1 6.412 0 0 3.9 0 -1 0 0.712 0 0 rect.dat
-  [1,16,4.9,1,6.412,0,0,3.9,0,-1,0,0.712,0,0, ldraw_lib__rect()],
+  [1,16,4.9,1,6.412,0,0,3.9,0,-1,0,0.712,0,0, ldraw_lib__rect(realsolid)],
 // 1 16 1 4.9 5.7 0 -1 0 0 0 3.9 1.425 0 0 rect2a.dat
-  [1,16,1,4.9,5.7,0,-1,0,0,0,3.9,1.425,0,0, ldraw_lib__rect2a()],
+  [1,16,1,4.9,5.7,0,-1,0,0,0,3.9,1.425,0,0, ldraw_lib__rect2a(realsolid)],
 // 1 16 4.9 1 -6.412 0 0 3.9 0 -1 0 0.712 0 0 rect.dat
-  [1,16,4.9,1,-6.412,0,0,3.9,0,-1,0,0.712,0,0, ldraw_lib__rect()],
+  [1,16,4.9,1,-6.412,0,0,3.9,0,-1,0,0.712,0,0, ldraw_lib__rect(realsolid)],
 // 1 16 1 4.9 -5.7 0 -1 0 0 0 3.9 -1.425 0 0 rect2a.dat
-  [1,16,1,4.9,-5.7,0,-1,0,0,0,3.9,-1.425,0,0, ldraw_lib__rect2a()],
+  [1,16,1,4.9,-5.7,0,-1,0,0,0,3.9,-1.425,0,0, ldraw_lib__rect2a(realsolid)],
 // 4 16 0 9 -7.125 1 8.801 -7.125 1 8.801 7.125 0 9 7.125
   [4,16,0,9,-7.125,1,8.801,-7.125,1,8.801,7.125,0,9,7.125],
 // 4 16 1 8.801 -1.425 1 8.801 -4.275 3.444 8.315 -4.275 3.444 8.315 -1.425
@@ -208,5 +209,5 @@ function ldraw_lib__s__480s03() = [
 // 0
 ];
 module ldraw_lib__s__480s03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__480s03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__480s03(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__480s03(line=0.2);

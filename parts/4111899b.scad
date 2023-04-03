@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/4111899as01.scad>
 use <s/4111899as02.scad>
-function ldraw_lib__4111899b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4111899b(realsolid=false) = [
 // 0 Sticker  1.7 x  8.85 Parallelogram with Yellow "HORNET" on Black Background - Skewed Right
 // 0 Name: 4111899b.dat
 // 0 Author: Ulrich Röder [UR]
@@ -20,9 +21,9 @@ function ldraw_lib__4111899b() = [
 // 0 // Main
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4111899as01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4111899as01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4111899as01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\4111899as02.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__4111899as02()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__4111899as02(realsolid)],
 // 
 // 0 // Black
 // 3 0 -61.5 -.25 12.04 -59.5 -.25 17 -87.5 -.25 -17
@@ -69,5 +70,5 @@ function ldraw_lib__4111899b() = [
   [3,0,59.5,-.25,-17,58.2,-.25,-6.74,35,-.25,-17],
 ];
 module ldraw_lib__4111899b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4111899b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4111899b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4111899b(line=0.2);

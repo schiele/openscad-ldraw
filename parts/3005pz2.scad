@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/8/4-4disc.scad>
 use <../p/8/4-4ndis.scad>
 use <s/3005s01.scad>
-function ldraw_lib__3005pz2() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3005pz2(realsolid=false) = [
 // 0 Brick  1 x  1 with Metallic Silver Boxes and 2 Red Dots on Black Background Pattern
 // 0 Name: 3005pz2.dat
 // 0 Author: Vincent Messenet [Cheenzo]
@@ -19,16 +20,16 @@ function ldraw_lib__3005pz2() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3005s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3005s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3005s01(realsolid)],
 // 
 // 1 4 2.325 4 -10 .75 0 0 0 0 .75 0 1 0 8\4-4disc.dat
-  [1,4,2.325,4,-10,.75,0,0,0,0,.75,0,1,0, ldraw_lib__8__4_4disc()],
+  [1,4,2.325,4,-10,.75,0,0,0,0,.75,0,1,0, ldraw_lib__8__4_4disc(realsolid)],
 // 1 16 2.325 4 -10 .75 0 0 0 0 .75 0 1 0 8\4-4ndis.dat
-  [1,16,2.325,4,-10,.75,0,0,0,0,.75,0,1,0, ldraw_lib__8__4_4ndis()],
+  [1,16,2.325,4,-10,.75,0,0,0,0,.75,0,1,0, ldraw_lib__8__4_4ndis(realsolid)],
 // 1 4 2.325 6.325 -10 .75 0 0 0 0 .75 0 1 0 8\4-4disc.dat
-  [1,4,2.325,6.325,-10,.75,0,0,0,0,.75,0,1,0, ldraw_lib__8__4_4disc()],
+  [1,4,2.325,6.325,-10,.75,0,0,0,0,.75,0,1,0, ldraw_lib__8__4_4disc(realsolid)],
 // 1 16 2.325 6.325 -10 .75 0 0 0 0 .75 0 1 0 8\4-4ndis.dat
-  [1,16,2.325,6.325,-10,.75,0,0,0,0,.75,0,1,0, ldraw_lib__8__4_4ndis()],
+  [1,16,2.325,6.325,-10,.75,0,0,0,0,.75,0,1,0, ldraw_lib__8__4_4ndis(realsolid)],
 // 4 80 -6 5.75 -10 -6 2.5 -10 -7.75 2.5 -10 -7.75 8 -10
   [4,80,-6,5.75,-10,-6,2.5,-10,-7.75,2.5,-10,-7.75,8,-10],
 // 4 80 -6 5.75 -10 -7.75 8 -10 -2.5 8 -10 -2.5 5.75 -10
@@ -119,5 +120,5 @@ function ldraw_lib__3005pz2() = [
   [4,16,10,24,-10,9,9.25,-10,-9,9.25,-10,-10,24,-10],
 ];
 module ldraw_lib__3005pz2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3005pz2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3005pz2(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3005pz2(line=0.2);

@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/box5.scad>
 use <../p/stud.scad>
 use <../p/stug2-1x2.scad>
-function ldraw_lib__32952() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__32952(realsolid=false) = [
 // 0 Brick  1 x  1 x  1.667 with Studs on 1 Side
 // 0 Name: 32952.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -19,7 +20,7 @@ function ldraw_lib__32952() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 40 0 6 0 0 0 -36 0 0 0 6 box5.dat
-  [1,16,0,40,0,6,0,0,0,-36,0,0,0,6, ldraw_lib__box5()],
+  [1,16,0,40,0,6,0,0,0,-36,0,0,0,6, ldraw_lib__box5(realsolid)],
 // 
 // 4 16 10 40 10 6 40 6 -6 40 6 -10 40 10
   [4,16,10,40,10,6,40,6,-6,40,6,-10,40,10],
@@ -31,13 +32,13 @@ function ldraw_lib__32952() = [
   [4,16,10,40,-10,6,40,-6,6,40,6,10,40,10],
 // 
 // 1 16 0 40 0 10 0 0 0 -40 0 0 0 10 box5.dat
-  [1,16,0,40,0,10,0,0,0,-40,0,0,0,10, ldraw_lib__box5()],
+  [1,16,0,40,0,10,0,0,0,-40,0,0,0,10, ldraw_lib__box5(realsolid)],
 // 
 // 1 16 0 0 0 0 0 1 0 1 0 -1 0 0 stud.dat
-  [1,16,0,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__stud()],
+  [1,16,0,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__stud(realsolid)],
 // 1 16 0 20 -10 0 0 1 1 0 0 0 1 0 stug2-1x2.dat
-  [1,16,0,20,-10,0,0,1,1,0,0,0,1,0, ldraw_lib__stug2_1x2()],
+  [1,16,0,20,-10,0,0,1,1,0,0,0,1,0, ldraw_lib__stug2_1x2(realsolid)],
 ];
 module ldraw_lib__32952(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__32952(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__32952(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__32952(line=0.2);

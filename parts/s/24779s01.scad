@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <24779s02.scad>
-function ldraw_lib__s__24779s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__24779s01(realsolid=false) = [
 // 0 ~Minifig Hipwear Duck Tail without Patternable Area
 // 0 Name: s\24779s01.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -18,7 +19,7 @@ function ldraw_lib__s__24779s01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\24779s02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__24779s02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__24779s02(realsolid)],
 // 
 // 3 16 18 0 10 15.624 4.682 10 12.37 4.105 14.505
   [3,16,18,0,10,15.624,4.682,10,12.37,4.105,14.505],
@@ -584,5 +585,5 @@ function ldraw_lib__s__24779s01() = [
   [5,24,4.722,-4.122,14.919,1.5019,-5.3813,16.5877,-.038,-4.467,14.861,2.587,-6.115,19.373],
 ];
 module ldraw_lib__s__24779s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__24779s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__24779s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__24779s01(line=0.2);

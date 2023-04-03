@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__6153754q() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6153754q(realsolid=false) = [
 // 0 Sticker  3.4 x  0.9 with Dark Azure Volkswagen Rear Window Shape
 // 0 Name: 6153754q.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -17,12 +18,12 @@ function ldraw_lib__6153754q() = [
 // 
 // 
 // 1 16 0 -0.25 0 9 0 0 0 0.25 0 0 0 34 box5-12.dat
-  [1,16,0,-0.25,0,9,0,0,0,0.25,0,0,0,34, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,9,0,0,0,0.25,0,0,0,34, ldraw_lib__box5_12(realsolid)],
 // 0 BFC NOCLIP
   [0,"BFC","NOCLIP"],
 // 4 321 -9 -0.25 34 -9 -0.25 -34 9 -0.25 -34 9 -0.25 34
   [4,321,-9,-0.25,34,-9,-0.25,-34,9,-0.25,-34,9,-0.25,34],
 ];
 module ldraw_lib__6153754q(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6153754q(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6153754q(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6153754q(line=0.2);

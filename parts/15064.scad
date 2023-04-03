@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/4-4cylc.scad>
 use <s/15064s01.scad>
-function ldraw_lib__15064() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__15064(realsolid=false) = [
 // 0 Animal Leg Segmented with Bar  0.5L
 // 0 Name: 15064.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -20,11 +21,11 @@ function ldraw_lib__15064() = [
 // 
 // 
 // 1 16 0 10 0 4 0 0 0 -10 0 0 0 4 4-4cylc.dat
-  [1,16,0,10,0,4,0,0,0,-10,0,0,0,4, ldraw_lib__4_4cylc()],
+  [1,16,0,10,0,4,0,0,0,-10,0,0,0,4, ldraw_lib__4_4cylc(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\15064s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__15064s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__15064s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\15064s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__15064s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__15064s01(realsolid)],
 // 4 16 -4.5 -13.457 -1.357 4.5 -13.457 -1.357 4.5 -19.672 -3.529 -4.5 -19.672 -3.529
   [4,16,-4.5,-13.457,-1.357,4.5,-13.457,-1.357,4.5,-19.672,-3.529,-4.5,-19.672,-3.529],
 // 4 16 4.5 -11.876 -6.135 -4.5 -11.876 -6.135 -4.5 -15.051 -7.033 4.5 -15.051 -7.033
@@ -301,5 +302,5 @@ function ldraw_lib__15064() = [
   [5,24,0,-43.416,-48.276,0,-43.752,-46.241,3.443,-45.081,-46.133,-3.443,-45.081,-46.133],
 ];
 module ldraw_lib__15064(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__15064(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__15064(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__15064(line=0.2);

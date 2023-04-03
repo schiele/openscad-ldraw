@@ -5,7 +5,8 @@ use <../../p/4-4cylc.scad>
 use <../../p/4-4cylo.scad>
 use <../../p/4-4disc.scad>
 use <../../p/4-4ring4.scad>
-function ldraw_lib__s__92244s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__92244s01(realsolid=false) = [
 // 0 ~Figure Friends Female Left Arm Structure
 // 0 Name: s\92244s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -23,28 +24,28 @@ function ldraw_lib__s__92244s01() = [
 // 
 // 0 // Shoulder
 // 1 16 0 0 0 0 1 0 0 0 4 -4 0 0 4-4disc.dat
-  [1,16,0,0,0,0,1,0,0,0,4,-4,0,0, ldraw_lib__4_4disc()],
+  [1,16,0,0,0,0,1,0,0,0,4,-4,0,0, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 0 0 0 -7 0 0 0 2 -2 0 0 4-4cylo.dat
-  [1,16,0,0,0,0,-7,0,0,0,2,-2,0,0, ldraw_lib__4_4cylo()],
+  [1,16,0,0,0,0,-7,0,0,0,2,-2,0,0, ldraw_lib__4_4cylo(realsolid)],
 // 1 16 -10 0 0 0 1 0 0 0 2 -2 0 0 4-4cylc.dat
-  [1,16,-10,0,0,0,1,0,0,0,2,-2,0,0, ldraw_lib__4_4cylc()],
+  [1,16,-10,0,0,0,1,0,0,0,2,-2,0,0, ldraw_lib__4_4cylc(realsolid)],
 // 1 16 -7 0 0 0 -2 0 0 0 2.5 -2.5 0 0 4-4cylo.dat
-  [1,16,-7,0,0,0,-2,0,0,0,2.5,-2.5,0,0, ldraw_lib__4_4cylo()],
+  [1,16,-7,0,0,0,-2,0,0,0,2.5,-2.5,0,0, ldraw_lib__4_4cylo(realsolid)],
 // 1 16 -7 0 0 0 -1 0 0 0 0.5 -0.5 0 0 4-4ring4.dat
-  [1,16,-7,0,0,0,-1,0,0,0,0.5,-0.5,0,0, ldraw_lib__4_4ring4()],
+  [1,16,-7,0,0,0,-1,0,0,0,0.5,-0.5,0,0, ldraw_lib__4_4ring4(realsolid)],
 // 1 16 -9 0 0 0 1 0 0 0 0.5 0.5 0 0 4-4ring4.dat
-  [1,16,-9,0,0,0,1,0,0,0,0.5,0.5,0,0, ldraw_lib__4_4ring4()],
+  [1,16,-9,0,0,0,1,0,0,0,0.5,0.5,0,0, ldraw_lib__4_4ring4(realsolid)],
 // 0 // Hand
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 15 27.5 7.3 -4 0 0 0 0 -4 0 -11 0 2-4cylo.dat
-  [1,16,15,27.5,7.3,-4,0,0,0,0,-4,0,-11,0, ldraw_lib__2_4cylo()],
+  [1,16,15,27.5,7.3,-4,0,0,0,0,-4,0,-11,0, ldraw_lib__2_4cylo(realsolid)],
 // 1 16 15 27.5 7.3 -6 0 0 0 0 -6 0 -11 0 2-4cylo.dat
-  [1,16,15,27.5,7.3,-6,0,0,0,0,-6,0,-11,0, ldraw_lib__2_4cylo()],
+  [1,16,15,27.5,7.3,-6,0,0,0,0,-6,0,-11,0, ldraw_lib__2_4cylo(realsolid)],
 // 1 16 15 27.5 7.3 -2 0 0 0 0 -2 0 -1 0 2-4ring2.dat
-  [1,16,15,27.5,7.3,-2,0,0,0,0,-2,0,-1,0, ldraw_lib__2_4ring2()],
+  [1,16,15,27.5,7.3,-2,0,0,0,0,-2,0,-1,0, ldraw_lib__2_4ring2(realsolid)],
 // 1 16 15 27.5 -3.7 2 0 0 0 0 -2 0 1 0 2-4ring2.dat
-  [1,16,15,27.5,-3.7,2,0,0,0,0,-2,0,1,0, ldraw_lib__2_4ring2()],
+  [1,16,15,27.5,-3.7,2,0,0,0,0,-2,0,1,0, ldraw_lib__2_4ring2(realsolid)],
 // 4 16 11.247 32.07 4.1 11.247 32.07 0.212 10.757 31.743 -1.176 10.757 31.743 5.576
   [4,16,11.247,32.07,4.1,11.247,32.07,0.212,10.757,31.743,-1.176,10.757,31.743,5.576],
 // 4 16 10.757 31.743 5.576 10.757 31.743 -1.176 10.194 30.9 -2.288 10.194 30.9 6.688
@@ -227,5 +228,5 @@ function ldraw_lib__s__92244s01() = [
   [5,24,21,27.5,-3.7,19,27.5,-3.7,18.543,29.796,-2.994,20.543,25.204,-3.7],
 ];
 module ldraw_lib__s__92244s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__92244s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__92244s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__92244s01(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <u9265.scad>
-function ldraw_lib__u9555() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__u9555(realsolid=false) = [
 // 0 ~Screw  7 x  2.5 Pan Hexalobular
 // 0 Name: u9555.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -19,8 +20,8 @@ function ldraw_lib__u9555() = [
 // 0 // Nomenclature: Screw length_(LDu) x thread_diameter_(LDu) {head type} {slot type}
 // 
 // 1 16 0 0 0 .5 0 0 0 .5 0 0 0 .5 u9265.dat
-  [1,16,0,0,0,.5,0,0,0,.5,0,0,0,.5, ldraw_lib__u9265()],
+  [1,16,0,0,0,.5,0,0,0,.5,0,0,0,.5, ldraw_lib__u9265(realsolid)],
 ];
 module ldraw_lib__u9555(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__u9555(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__u9555(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__u9555(line=0.2);

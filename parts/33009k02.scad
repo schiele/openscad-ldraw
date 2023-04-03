@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/33009s02.scad>
-function ldraw_lib__33009k02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__33009k02(realsolid=false) = [
 // 0 ~Minifig Book Front
 // 0 Name: 33009k02.dat
 // 0 Author: Franklin W. Cain [fwcain]
@@ -20,11 +21,11 @@ function ldraw_lib__33009k02() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\33009s02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__33009s02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__33009s02(realsolid)],
 // 0 // decorated surface
 // 4 16 34 -27 -1 0 -27 -1 0 27 -1 34 27 -1
   [4,16,34,-27,-1,0,-27,-1,0,27,-1,34,27,-1],
 ];
 module ldraw_lib__33009k02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__33009k02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__33009k02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__33009k02(line=0.2);

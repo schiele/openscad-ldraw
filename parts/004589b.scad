@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__004589b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__004589b(realsolid=false) = [
 // 0 Sticker  1.1 x  1.1 with Black Arrow on White Background
 // 0 Name: 004589b.dat
 // 0 Author: Alex Taylor [anathema]
@@ -17,7 +18,7 @@ function ldraw_lib__004589b() = [
 // 
 // 
 // 1 16 0 -0.25 0 11.4 0 0 0 0.25 0 0 0 11.4 box5-12.dat
-  [1,16,0,-0.25,0,11.4,0,0,0,0.25,0,0,0,11.4, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,11.4,0,0,0,0.25,0,0,0,11.4, ldraw_lib__box5_12(realsolid)],
 // 4 0 -9.5 -0.25 -2.5 0.7 -0.25 -2.5 0.7 -0.25 2.5 -9.5 -0.25 2.5
   [4,0,-9.5,-0.25,-2.5,0.7,-0.25,-2.5,0.7,-0.25,2.5,-9.5,-0.25,2.5],
 // 4 15 -9.5 -0.25 2.5 0.7 -0.25 2.5 -5.4 -0.25 8.8 -11.4 -0.25 11.4
@@ -44,5 +45,5 @@ function ldraw_lib__004589b() = [
   [3,15,11.4,-0.25,11.4,9.9,-0.25,0,11.4,-0.25,-11.4],
 ];
 module ldraw_lib__004589b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__004589b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__004589b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__004589b(line=0.2);

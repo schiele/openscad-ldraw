@@ -6,7 +6,8 @@ use <../p/4-4edge.scad>
 use <../p/4-8sphe.scad>
 use <s/30126s02.scad>
 use <s/30126s03.scad>
-function ldraw_lib__30126p03() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__30126p03(realsolid=false) = [
 // 0 Minifig Feathers with Pin and Red Tip with Black Stripe Pattern
 // 0 Name: 30126p03.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -26,19 +27,19 @@ function ldraw_lib__30126p03() = [
 // 
 // 
 // 1 16 0 4 0 2 0 0 0 2 0 0 0 2 4-8sphe.dat
-  [1,16,0,4,0,2,0,0,0,2,0,0,0,2, ldraw_lib__4_8sphe()],
+  [1,16,0,4,0,2,0,0,0,2,0,0,0,2, ldraw_lib__4_8sphe(realsolid)],
 // 1 16 0 0 0 2 0 0 0 4 0 0 0 2 4-4cyli.dat
-  [1,16,0,0,0,2,0,0,0,4,0,0,0,2, ldraw_lib__4_4cyli()],
+  [1,16,0,0,0,2,0,0,0,4,0,0,0,2, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 0 0 4 0 0 0 -1 0 0 0 4 4-4disc.dat
-  [1,16,0,0,0,4,0,0,0,-1,0,0,0,4, ldraw_lib__4_4disc()],
+  [1,16,0,0,0,4,0,0,0,-1,0,0,0,4, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 -8 0 4 0 0 0 8 0 0 0 4 4-4cylc.dat
-  [1,16,0,-8,0,4,0,0,0,8,0,0,0,4, ldraw_lib__4_4cylc()],
+  [1,16,0,-8,0,4,0,0,0,8,0,0,0,4, ldraw_lib__4_4cylc(realsolid)],
 // 1 16 0 0 0 2 0 0 0 1 0 0 0 2 4-4edge.dat
-  [1,16,0,0,0,2,0,0,0,1,0,0,0,2, ldraw_lib__4_4edge()],
+  [1,16,0,0,0,2,0,0,0,1,0,0,0,2, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 -8 0 1 0 0 0 1 0 0 0 1 s\30126s02.dat
-  [1,16,0,-8,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30126s02()],
+  [1,16,0,-8,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30126s02(realsolid)],
 // 1 16 0 -8 0 -1 0 0 0 1 0 0 0 -1 s\30126s03.dat
-  [1,16,0,-8,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__30126s03()],
+  [1,16,0,-8,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__30126s03(realsolid)],
 // 3 16 -2.684 -12.089 -0.167 -6.7294 -19.0936 -0.1644 -10.136 -17.763 -0.71
   [3,16,-2.684,-12.089,-0.167,-6.7294,-19.0936,-0.1644,-10.136,-17.763,-0.71],
 // 4 16 -5.4881 -19.0692 -0.147 -2.421 -13.655 -0.183 -0.863 -22.785 -0.795 -1.5632 -24.1673 -0.7916
@@ -385,5 +386,5 @@ function ldraw_lib__30126p03() = [
   [5,24,9.1081,-25.7712,-1.8895,7.2788,-22.133,-2.0097,9.774,-25.915,-1.897,8.9841,-25.8002,-1.8015],
 ];
 module ldraw_lib__30126p03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__30126p03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__30126p03(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__30126p03(line=0.2);

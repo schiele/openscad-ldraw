@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/4-4cylc.scad>
 use <s/10187s01.scad>
-function ldraw_lib__10187() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__10187(realsolid=false) = [
 // 0 Minifig Bladed Claw Spread
 // 0 Name: 10187.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -21,11 +22,11 @@ function ldraw_lib__10187() = [
 // 
 // 
 // 1 16 0 10 0 4 0 0 0 -10 0 0 0 4 4-4cylc.dat
-  [1,16,0,10,0,4,0,0,0,-10,0,0,0,4, ldraw_lib__4_4cylc()],
+  [1,16,0,10,0,4,0,0,0,-10,0,0,0,4, ldraw_lib__4_4cylc(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\10187s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__10187s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__10187s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\10187s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__10187s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__10187s01(realsolid)],
 // 4 16 -5.671 0 -2.366 5.671 0 -2.366 6.316 0 -6.456 -6.316 0 -6.456
   [4,16,-5.671,0,-2.366,5.671,0,-2.366,6.316,0,-6.456,-6.316,0,-6.456],
 // 4 16 -5.079 0 1.328 5.079 0 1.328 5.671 0 -2.366 -5.671 0 -2.366
@@ -116,5 +117,5 @@ function ldraw_lib__10187() = [
   [5,24,0.371,-7.2,-26.75,-0.371,-7.2,-26.75,0.864,-7.701,-21.156,-0.318,-7.16,-27.04],
 ];
 module ldraw_lib__10187(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__10187(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__10187(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__10187(line=0.2);

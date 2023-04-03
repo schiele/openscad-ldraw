@@ -11,7 +11,8 @@ use <../p/4-4ring9.scad>
 use <../p/axlehol2.scad>
 use <../p/axlehol8.scad>
 use <../p/axlehol9.scad>
-function ldraw_lib__2839a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2839a(realsolid=false) = [
 // 0 ~Electric Technic Motor  9V Shaft (with Fake Metal Axle)
 // 0 Name: 2839a.dat
 // 0 Author: James Jessiman
@@ -34,44 +35,44 @@ function ldraw_lib__2839a() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 0 1 0 -20 0 axlehol8.dat
-  [1,16,0,0,0,1,0,0,0,0,1,0,-20,0, ldraw_lib__axlehol8()],
+  [1,16,0,0,0,1,0,0,0,0,1,0,-20,0, ldraw_lib__axlehol8(realsolid)],
 // 1 16 0 0 0 1 0 0 0 0 1 0 -20 0 axlehol2.dat
-  [1,16,0,0,0,1,0,0,0,0,1,0,-20,0, ldraw_lib__axlehol2()],
+  [1,16,0,0,0,1,0,0,0,0,1,0,-20,0, ldraw_lib__axlehol2(realsolid)],
 // 1 16 0 0 0 1 0 0 0 0 1 0 -20 0 axlehol9.dat
-  [1,16,0,0,0,1,0,0,0,0,1,0,-20,0, ldraw_lib__axlehol9()],
+  [1,16,0,0,0,1,0,0,0,0,1,0,-20,0, ldraw_lib__axlehol9(realsolid)],
 // 1 16 0 0 -20 1 0 0 0 0 1 0 -20 0 axlehol2.dat
-  [1,16,0,0,-20,1,0,0,0,0,1,0,-20,0, ldraw_lib__axlehol2()],
+  [1,16,0,0,-20,1,0,0,0,0,1,0,-20,0, ldraw_lib__axlehol2(realsolid)],
 // 1 16 0 0 -20 1 0 0 0 0 1 0 -20 0 axlehol9.dat
-  [1,16,0,0,-20,1,0,0,0,0,1,0,-20,0, ldraw_lib__axlehol9()],
+  [1,16,0,0,-20,1,0,0,0,0,1,0,-20,0, ldraw_lib__axlehol9(realsolid)],
 // 
 // 1 16 0 0 2 10 0 0 0 0 10 0 2 0 4-4edge.dat
-  [1,16,0,0,2,10,0,0,0,0,10,0,2,0, ldraw_lib__4_4edge()],
+  [1,16,0,0,2,10,0,0,0,0,10,0,2,0, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 0 0 2.5 0 0 0 0 2.5 0 2 0 4-4con4.dat
-  [1,16,0,0,0,2.5,0,0,0,0,2.5,0,2,0, ldraw_lib__4_4con4()],
+  [1,16,0,0,0,2.5,0,0,0,0,2.5,0,2,0, ldraw_lib__4_4con4(realsolid)],
 // 1 16 0 0 0 12.5 0 0 0 0 12.5 0 2 0 4-4edge.dat
-  [1,16,0,0,0,12.5,0,0,0,0,12.5,0,2,0, ldraw_lib__4_4edge()],
+  [1,16,0,0,0,12.5,0,0,0,0,12.5,0,2,0, ldraw_lib__4_4edge(realsolid)],
 // 
 // 1 16 0 0 2 0 0 2.25 2.25 0 0 0 -1 0 4-4ring1.dat
-  [1,16,0,0,2,0,0,2.25,2.25,0,0,0,-1,0, ldraw_lib__4_4ring1()],
+  [1,16,0,0,2,0,0,2.25,2.25,0,0,0,-1,0, ldraw_lib__4_4ring1(realsolid)],
 // 1 16 0 0 2 0 0 4.5 4.5 0 0 0 -1 0 4-4ring1.dat
-  [1,16,0,0,2,0,0,4.5,4.5,0,0,0,-1,0, ldraw_lib__4_4ring1()],
+  [1,16,0,0,2,0,0,4.5,4.5,0,0,0,-1,0, ldraw_lib__4_4ring1(realsolid)],
 // 1 16 0 0 2 0 0 1 1 0 0 0 -1 0 4-4ring9.dat
-  [1,16,0,0,2,0,0,1,1,0,0,0,-1,0, ldraw_lib__4_4ring9()],
+  [1,16,0,0,2,0,0,1,1,0,0,0,-1,0, ldraw_lib__4_4ring9(realsolid)],
 // 
 // 1 16 0 0 0 0 0 2.5 2.5 0 0 0 1 0 4-4ring1.dat
-  [1,16,0,0,0,0,0,2.5,2.5,0,0,0,1,0, ldraw_lib__4_4ring1()],
+  [1,16,0,0,0,0,0,2.5,2.5,0,0,0,1,0, ldraw_lib__4_4ring1(realsolid)],
 // 1 16 0 0 0 0 0 5 5 0 0 0 1 0 4-4ring1.dat
-  [1,16,0,0,0,0,0,5,5,0,0,0,1,0, ldraw_lib__4_4ring1()],
+  [1,16,0,0,0,0,0,5,5,0,0,0,1,0, ldraw_lib__4_4ring1(realsolid)],
 // 1 16 0 0 0 0 0 2.5 2.5 0 0 0 1 0 4-4ring4.dat
-  [1,16,0,0,0,0,0,2.5,2.5,0,0,0,1,0, ldraw_lib__4_4ring4()],
+  [1,16,0,0,0,0,0,2.5,2.5,0,0,0,1,0, ldraw_lib__4_4ring4(realsolid)],
 // 
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 2 2.25 0 0 0 0 2.25 0 -22 0 4-4cylo.dat
-  [1,16,0,0,2,2.25,0,0,0,0,2.25,0,-22,0, ldraw_lib__4_4cylo()],
+  [1,16,0,0,2,2.25,0,0,0,0,2.25,0,-22,0, ldraw_lib__4_4cylo(realsolid)],
 // 
 // 1 16 0 0 -20 1.59099 0 -1.59099 1.59099 0 1.59099 0 1 0 4-4ndis.dat
-  [1,16,0,0,-20,1.59099,0,-1.59099,1.59099,0,1.59099,0,1,0, ldraw_lib__4_4ndis()],
+  [1,16,0,0,-20,1.59099,0,-1.59099,1.59099,0,1.59099,0,1,0, ldraw_lib__4_4ndis(realsolid)],
 // 
 // 3 16 2 2 -20 3.18198 0 -20 1.59099 1.59099 -20
   [3,16,2,2,-20,3.18198,0,-20,1.59099,1.59099,-20],
@@ -110,10 +111,10 @@ function ldraw_lib__2839a() = [
   [4,16,-2,-2,-20,0,-3.18198,-20,0,-6,-20,-2,-5.602,-20],
 // 
 // 1 494 0 0 -20 2.25 0 0 0 0 2.25 0 56 0 4-4cylc.dat
-  [1,494,0,0,-20,2.25,0,0,0,0,2.25,0,56,0, ldraw_lib__4_4cylc()],
+  [1,494,0,0,-20,2.25,0,0,0,0,2.25,0,56,0, ldraw_lib__4_4cylc(realsolid)],
 // 1 494 0 0 36 2.25 0 0 0 0 2.25 0 -1 0 4-4disc.dat
-  [1,494,0,0,36,2.25,0,0,0,0,2.25,0,-1,0, ldraw_lib__4_4disc()],
+  [1,494,0,0,36,2.25,0,0,0,0,2.25,0,-1,0, ldraw_lib__4_4disc(realsolid)],
 ];
 module ldraw_lib__2839a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2839a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2839a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2839a(line=0.2);

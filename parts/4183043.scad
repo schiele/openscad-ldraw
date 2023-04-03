@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <44301a.scad>
-function ldraw_lib__4183043() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4183043(realsolid=false) = [
 // 0 ~_Hinge Plate  1 x  2 Locking with Groove with Single Finger on End Vertical [Black] (Obsolete)
 // 0 Name: 4183043.dat
 // 0 Author: [PTadmin]
@@ -20,8 +21,8 @@ function ldraw_lib__4183043() = [
 // 0 // colouring of the part (Black).
 // 
 // 1 0 0 0 0 1 0 0 0 1 0 0 0 1 44301a.dat
-  [1,0,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__44301a()],
+  [1,0,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__44301a(realsolid)],
 ];
 module ldraw_lib__4183043(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4183043(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4183043(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4183043(line=0.2);

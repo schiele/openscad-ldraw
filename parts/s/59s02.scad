@@ -2,7 +2,8 @@ use <../../lib.scad>
 use <../../p/1-4con1.scad>
 use <../../p/1-4disc.scad>
 use <../../p/1-4edge.scad>
-function ldraw_lib__s__59s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__59s02(realsolid=false) = [
 // 0 ~Minifig Sword Greatsword - 1/4 Blade
 // 0 Name: s\59s02.dat
 // 0 Author: Franklin W. Cain [fwcain]
@@ -39,11 +40,11 @@ function ldraw_lib__s__59s02() = [
   [5,24,-1,-70,0,-1,-70,-3,0,-76,0,0,36,0],
 // 0
 // 1 16 0 -70 0 0 -1 0 -3 0 0 0 0 -3 1-4con1.dat
-  [1,16,0,-70,0,0,-1,0,-3,0,0,0,0,-3, ldraw_lib__1_4con1()],
+  [1,16,0,-70,0,0,-1,0,-3,0,0,0,0,-3, ldraw_lib__1_4con1(realsolid)],
 // 1 16 -1 -70 0 0 1 0 0 0 -3 -3 0 0 1-4disc.dat
-  [1,16,-1,-70,0,0,1,0,0,0,-3,-3,0,0, ldraw_lib__1_4disc()],
+  [1,16,-1,-70,0,0,1,0,0,0,-3,-3,0,0, ldraw_lib__1_4disc(realsolid)],
 // 1 16 0 -70 0 0 1 0 0 0 -6 -6 0 0 1-4edge.dat
-  [1,16,0,-70,0,0,1,0,0,0,-6,-6,0,0, ldraw_lib__1_4edge()],
+  [1,16,0,-70,0,0,1,0,0,0,-6,-6,0,0, ldraw_lib__1_4edge(realsolid)],
 // 0
 // 5 24 -1 -70 -3 -1 -71.148 -2.772 -1 -70 -6 -1 -70 0
   [5,24,-1,-70,-3,-1,-71.148,-2.772,-1,-70,-6,-1,-70,0],
@@ -57,5 +58,5 @@ function ldraw_lib__s__59s02() = [
 // 0 end of file
 ];
 module ldraw_lib__s__59s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__59s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__59s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__59s02(line=0.2);

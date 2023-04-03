@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/64798s01.scad>
 use <../p/stud4o.scad>
-function ldraw_lib__64798() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__64798(realsolid=false) = [
 // 0 Minifig Hair Backslick
 // 0 Name: 64798.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -22,11 +23,11 @@ function ldraw_lib__64798() = [
 // 
 // 
 // 1 16 0 -4 0 1 0 0 0 -1 0 0 0 1 stud4o.dat
-  [1,16,0,-4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4o()],
+  [1,16,0,-4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4o(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\64798s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__64798s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__64798s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\64798s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__64798s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__64798s01(realsolid)],
 // 5 24 0 -8.933 5.587 0 -9.491 3.283 3.993 -8.563 3.079 -3.993 -8.563 3.079
   [5,24,0,-8.933,5.587,0,-9.491,3.283,3.993,-8.563,3.079,-3.993,-8.563,3.079],
 // 5 24 0 -5.679 -9.568 0 -2.163 -11.47 3.056 -1.365 -10.992 -3.056 -1.365 -10.992
@@ -73,5 +74,5 @@ function ldraw_lib__64798() = [
   [5,24,0,4,13,0,18.293,13,4.975,17.865,12.011,-4.975,4,12.011],
 ];
 module ldraw_lib__64798(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__64798(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__64798(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__64798(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <6142275f.scad>
-function ldraw_lib__6142275y() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6142275y(realsolid=false) = [
 // 0 Sticker  0.8 x  3.8 with Red Line on Black, Grey and White Background Left
 // 0 Name: 6142275y.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -17,8 +18,8 @@ function ldraw_lib__6142275y() = [
 // 
 // 
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 6142275f.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__6142275f()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__6142275f(realsolid)],
 ];
 module ldraw_lib__6142275y(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6142275y(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6142275y(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6142275y(line=0.2);

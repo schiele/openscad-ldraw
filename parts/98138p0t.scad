@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/4-4ering.scad>
 use <s/98138s02.scad>
-function ldraw_lib__98138p0t() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__98138p0t(realsolid=false) = [
 // 0 Tile  1 x  1 Round with Heart with Rainbow Stripes Pattern
 // 0 Name: 98138p0t.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -18,9 +19,9 @@ function ldraw_lib__98138p0t() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\98138s02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s02(realsolid)],
 // 1 16 0 0 0 10 0 0 0 1 0 0 0 10 4-4ering.dat
-  [1,16,0,0,0,10,0,0,0,1,0,0,0,10, ldraw_lib__4_4ering()],
+  [1,16,0,0,0,10,0,0,0,1,0,0,0,10, ldraw_lib__4_4ering(realsolid)],
 // 4 3 -6.37 0 1.3 -5.998 0 2.766 -6.608 0 2.877 -6.922 0 1.3
   [4,3,-6.37,0,1.3,-5.998,0,2.766,-6.608,0,2.877,-6.922,0,1.3],
 // 4 3 -6.198 0 0.334 -6.37 0 1.3 -6.922 0 1.3 -6.608 0 -0.277
@@ -131,5 +132,5 @@ function ldraw_lib__98138p0t() = [
   [3,16,0.2,0,-7.1,-0.2,0,-7.1,0,0,-10],
 ];
 module ldraw_lib__98138p0t(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__98138p0t(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__98138p0t(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__98138p0t(line=0.2);

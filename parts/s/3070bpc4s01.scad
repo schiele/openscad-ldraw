@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/8/1-4chrd.scad>
 use <../../p/8/1-4ndis.scad>
-function ldraw_lib__s__3070bpc4s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__3070bpc4s01(realsolid=false) = [
 // 0 ~Tile  1 x  1 with Calculator Buttons, Medium Azure Screen and Red Power Button Pattern - Square Button
 // 0 Name: s\3070bpc4s01.dat
 // 0 Author: Vincent Messenet [Cheenzo]
@@ -16,21 +17,21 @@ function ldraw_lib__s__3070bpc4s01() = [
 // 
 // 
 // 1 16 3 0 3 .25 0 0 0 1 0 0 0 .25 8\1-4chrd.dat
-  [1,16,3,0,3,.25,0,0,0,1,0,0,0,.25, ldraw_lib__8__1_4chrd()],
+  [1,16,3,0,3,.25,0,0,0,1,0,0,0,.25, ldraw_lib__8__1_4chrd(realsolid)],
 // 1 0 3 0 3 .25 0 0 0 1 0 0 0 .25 8\1-4ndis.dat
-  [1,0,3,0,3,.25,0,0,0,1,0,0,0,.25, ldraw_lib__8__1_4ndis()],
+  [1,0,3,0,3,.25,0,0,0,1,0,0,0,.25, ldraw_lib__8__1_4ndis(realsolid)],
 // 1 16 .25 0 3 -.25 0 0 0 1 0 0 0 .25 8\1-4chrd.dat
-  [1,16,.25,0,3,-.25,0,0,0,1,0,0,0,.25, ldraw_lib__8__1_4chrd()],
+  [1,16,.25,0,3,-.25,0,0,0,1,0,0,0,.25, ldraw_lib__8__1_4chrd(realsolid)],
 // 1 0 .25 0 3 -.25 0 0 0 1 0 0 0 .25 8\1-4ndis.dat
-  [1,0,.25,0,3,-.25,0,0,0,1,0,0,0,.25, ldraw_lib__8__1_4ndis()],
+  [1,0,.25,0,3,-.25,0,0,0,1,0,0,0,.25, ldraw_lib__8__1_4ndis(realsolid)],
 // 1 16 .25 0 .25 -.25 0 0 0 1 0 0 0 -.25 8\1-4chrd.dat
-  [1,16,.25,0,.25,-.25,0,0,0,1,0,0,0,-.25, ldraw_lib__8__1_4chrd()],
+  [1,16,.25,0,.25,-.25,0,0,0,1,0,0,0,-.25, ldraw_lib__8__1_4chrd(realsolid)],
 // 1 0 .25 0 .25 -.25 0 0 0 1 0 0 0 -.25 8\1-4ndis.dat
-  [1,0,.25,0,.25,-.25,0,0,0,1,0,0,0,-.25, ldraw_lib__8__1_4ndis()],
+  [1,0,.25,0,.25,-.25,0,0,0,1,0,0,0,-.25, ldraw_lib__8__1_4ndis(realsolid)],
 // 1 16 3 0 .25 .25 0 0 0 1 0 0 0 -.25 8\1-4chrd.dat
-  [1,16,3,0,.25,.25,0,0,0,1,0,0,0,-.25, ldraw_lib__8__1_4chrd()],
+  [1,16,3,0,.25,.25,0,0,0,1,0,0,0,-.25, ldraw_lib__8__1_4chrd(realsolid)],
 // 1 0 3 0 .25 .25 0 0 0 1 0 0 0 -.25 8\1-4ndis.dat
-  [1,0,3,0,.25,.25,0,0,0,1,0,0,0,-.25, ldraw_lib__8__1_4ndis()],
+  [1,0,3,0,.25,.25,0,0,0,1,0,0,0,-.25, ldraw_lib__8__1_4ndis(realsolid)],
 // 4 16 3 0 3.25 .25 0 3.25 0 0 3 3.25 0 3
   [4,16,3,0,3.25,.25,0,3.25,0,0,3,3.25,0,3],
 // 4 16 3.25 0 .25 3.25 0 3 0 0 3 0 0 .25
@@ -45,5 +46,5 @@ function ldraw_lib__s__3070bpc4s01() = [
   [4,0,4.25,0,.25,3.25,0,.25,3.25,0,0,4.25,0,0],
 ];
 module ldraw_lib__s__3070bpc4s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__3070bpc4s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__3070bpc4s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__3070bpc4s01(line=0.2);

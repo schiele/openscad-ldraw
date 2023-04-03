@@ -3,7 +3,8 @@ use <../p/box5-12.scad>
 use <../p/logo-technic-1.scad>
 use <../p/logo-technic-2.scad>
 use <s/99141s02.scad>
-function ldraw_lib__4631649a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4631649a(realsolid=false) = [
 // 0 Sticker  0.8 x  3.8 with LEGO Logo and "TECHNIC"
 // 0 Name: 4631649a.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -23,13 +24,13 @@ function ldraw_lib__4631649a() = [
 // 
 // 
 // 1 16 0 -0.25 0 37.5 0 0 0 0.25 0 0 0 7.5 box5-12.dat
-  [1,16,0,-0.25,0,37.5,0,0,0,0.25,0,0,0,7.5, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,37.5,0,0,0,0.25,0,0,0,7.5, ldraw_lib__box5_12(realsolid)],
 // 1 16 -27.25 -0.25 0 .6 0 0 0 1 0 0 0 .6 s\99141s02.dat
-  [1,16,-27.25,-0.25,0,.6,0,0,0,1,0,0,0,.6, ldraw_lib__s__99141s02()],
+  [1,16,-27.25,-0.25,0,.6,0,0,0,1,0,0,0,.6, ldraw_lib__s__99141s02(realsolid)],
 // 1 16 5.9 -.25 0 .7536 0 0 0 .7536 0 0 0 .7536 logo-technic-1.dat
-  [1,16,5.9,-.25,0,.7536,0,0,0,.7536,0,0,0,.7536, ldraw_lib__logo_technic_1()],
+  [1,16,5.9,-.25,0,.7536,0,0,0,.7536,0,0,0,.7536, ldraw_lib__logo_technic_1(realsolid)],
 // 1 0 5.9 -.25 0 .7536 0 0 0 .7536 0 0 0 .7536 logo-technic-2.dat
-  [1,0,5.9,-.25,0,.7536,0,0,0,.7536,0,0,0,.7536, ldraw_lib__logo_technic_2()],
+  [1,0,5.9,-.25,0,.7536,0,0,0,.7536,0,0,0,.7536, ldraw_lib__logo_technic_2(realsolid)],
 // 4 0 33.0296 -0.25 -4.5216 37.5 -0.25 -7.5 37.5 -0.25 7.5 33.0296 -0.25 4.5216
   [4,0,33.0296,-0.25,-4.5216,37.5,-0.25,-7.5,37.5,-0.25,7.5,33.0296,-0.25,4.5216],
 // 4 0 -33.25 -0.25 -6 -33.25 -0.25 6 -37.5 -0.25 7.5 -37.5 -0.25 -7.5
@@ -46,5 +47,5 @@ function ldraw_lib__4631649a() = [
   [4,0,-21.25,-0.25,-6,37.5,-0.25,-7.5,33.0296,-0.25,-4.5216,-21.2296,-0.25,-4.5216],
 ];
 module ldraw_lib__4631649a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4631649a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4631649a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4631649a(line=0.2);

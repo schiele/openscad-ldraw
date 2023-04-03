@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/48/4-4cylc3.scad>
-function ldraw_lib__4629677f() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4629677f(realsolid=false) = [
 // 0 Sticker  1.9 x  1.9 Round with Five-String Banjo
 // 0 Name: 4629677f.dat
 // 0 Author: Howard Lande [HowardLande]
@@ -21,7 +22,7 @@ function ldraw_lib__4629677f() = [
 // 
 // 
 // 1 16 0 0 0 19 0 0 0 -0.25 0 0 0 19 48\4-4cylc3.dat
-  [1,16,0,0,0,19,0,0,0,-0.25,0,0,0,19, ldraw_lib__48__4_4cylc3()],
+  [1,16,0,0,0,19,0,0,0,-0.25,0,0,0,19, ldraw_lib__48__4_4cylc3(realsolid)],
 // 4 0 -15.591 -0.25 0 -15.516 -0.25 1.528 -16.093 -0.25 1.585 -16.171 -0.25 0
   [4,0,-15.591,-0.25,0,-15.516,-0.25,1.528,-16.093,-0.25,1.585,-16.171,-0.25,0],
 // 4 0 -15.516 -0.25 -1.528 -15.591 -0.25 0 -16.171 -0.25 0 -16.093 -0.25 -1.585
@@ -996,5 +997,5 @@ function ldraw_lib__4629677f() = [
   [3,70,0,-0.25,19,-2.48,-0.25,18.837,-1.228,-0.25,18.8],
 ];
 module ldraw_lib__4629677f(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4629677f(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4629677f(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4629677f(line=0.2);

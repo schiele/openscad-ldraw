@@ -2,7 +2,8 @@ use <../lib.scad>
 use <4-4cyli.scad>
 use <4-4cyls.scad>
 use <4-4edge.scad>
-function ldraw_lib__stud4s() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__stud4s(realsolid=false) = [
 // 0 Stud Tube Open Sloped
 // 0 Name: stud4s.dat
 // 0 Author: Guy Vivan [guyvivan]
@@ -24,21 +25,21 @@ function ldraw_lib__stud4s() = [
 // 
 // 
 // 1 16 0 0 0 8 0 0 0 -1 0 0 0 8 4-4cyls.dat
-  [1,16,0,0,0,8,0,0,0,-1,0,0,0,8, ldraw_lib__4_4cyls()],
+  [1,16,0,0,0,8,0,0,0,-1,0,0,0,8, ldraw_lib__4_4cyls(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -0.25 0 6 0 0 0 -0.75 0 0 0 6 4-4cyls.dat
-  [1,16,0,-0.25,0,6,0,0,0,-0.75,0,0,0,6, ldraw_lib__4_4cyls()],
+  [1,16,0,-0.25,0,6,0,0,0,-0.75,0,0,0,6, ldraw_lib__4_4cyls(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 0 6 0 0 0 -0.25 0 0 0 6 4-4cyli.dat
-  [1,16,0,0,0,6,0,0,0,-0.25,0,0,0,6, ldraw_lib__4_4cyli()],
+  [1,16,0,0,0,6,0,0,0,-0.25,0,0,0,6, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 -1 0 6 0 0 0.75 1 0 0 0 6 4-4edge.dat
-  [1,16,0,-1,0,6,0,0,0.75,1,0,0,0,6, ldraw_lib__4_4edge()],
+  [1,16,0,-1,0,6,0,0,0.75,1,0,0,0,6, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 -1 0 8 0 0 1 1 0 0 0 8 4-4edge.dat
-  [1,16,0,-1,0,8,0,0,1,1,0,0,0,8, ldraw_lib__4_4edge()],
+  [1,16,0,-1,0,8,0,0,1,1,0,0,0,8, ldraw_lib__4_4edge(realsolid)],
 // 0
 ];
 module ldraw_lib__stud4s(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__stud4s(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__stud4s(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__stud4s(line=0.2);

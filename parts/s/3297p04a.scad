@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/1-4chrd.scad>
-function ldraw_lib__s__3297p04a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__3297p04a(realsolid=false) = [
 // 0 ~Slope Brick 33 Roof Tile Pattern
 // 0 Name: s\3297p04a.dat
 // 0 Author: Chris Dee [cwdee]
@@ -24,9 +25,9 @@ function ldraw_lib__s__3297p04a() = [
 // 4 16 9 0 -16 -9 0 -16 -5 0 -20 5 0 -20
   [4,16,9,0,-16,-9,0,-16,-5,0,-20,5,0,-20],
 // 1 16 5 0 -16 4 0 0 0 1 0 0 0 -4 1-4chrd.dat
-  [1,16,5,0,-16,4,0,0,0,1,0,0,0,-4, ldraw_lib__1_4chrd()],
+  [1,16,5,0,-16,4,0,0,0,1,0,0,0,-4, ldraw_lib__1_4chrd(realsolid)],
 // 1 16 -5 0 -16 -4 0 0 0 1 0 0 0 -4 1-4chrd.dat
-  [1,16,-5,0,-16,-4,0,0,0,1,0,0,0,-4, ldraw_lib__1_4chrd()],
+  [1,16,-5,0,-16,-4,0,0,0,1,0,0,0,-4, ldraw_lib__1_4chrd(realsolid)],
 // 3 16 9 0 -20.5 5 0 -22 9 0 -38
   [3,16,9,0,-20.5,5,0,-22,9,0,-38],
 // 3 16 -9 0 -38 -5 0 -22 -9 0 -20.5
@@ -36,10 +37,10 @@ function ldraw_lib__s__3297p04a() = [
 // 4 16 9 0 -38 -9 0 -38 -5 0 -42 5 0 -42
   [4,16,9,0,-38,-9,0,-38,-5,0,-42,5,0,-42],
 // 1 16 5 0 -38 4 0 0 0 1 0 0 0 -4 1-4chrd.dat
-  [1,16,5,0,-38,4,0,0,0,1,0,0,0,-4, ldraw_lib__1_4chrd()],
+  [1,16,5,0,-38,4,0,0,0,1,0,0,0,-4, ldraw_lib__1_4chrd(realsolid)],
 // 1 16 -5 0 -38 -4 0 0 0 1 0 0 0 -4 1-4chrd.dat
-  [1,16,-5,0,-38,-4,0,0,0,1,0,0,0,-4, ldraw_lib__1_4chrd()],
+  [1,16,-5,0,-38,-4,0,0,0,1,0,0,0,-4, ldraw_lib__1_4chrd(realsolid)],
 ];
 module ldraw_lib__s__3297p04a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__3297p04a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__3297p04a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__3297p04a(line=0.2);

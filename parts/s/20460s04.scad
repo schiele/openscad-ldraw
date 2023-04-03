@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/4-4cylo.scad>
 use <../../p/4-4ndis.scad>
-function ldraw_lib__s__20460s04() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__20460s04(realsolid=false) = [
 // 0 ~Minifig Leg Left Dual Mould Upper Half without Front and Side
 // 0 Name: s\20460s04.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -46,11 +47,11 @@ function ldraw_lib__s__20460s04() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 2 0 0 0 5.25 0 3 0 0 0 0 3 4-4cylo.dat
-  [1,16,2,0,0,0,5.25,0,3,0,0,0,0,3, ldraw_lib__4_4cylo()],
+  [1,16,2,0,0,0,5.25,0,3,0,0,0,0,3, ldraw_lib__4_4cylo(realsolid)],
 // 1 16 2 0 0 0 1 0 3 0 0 0 0 3 4-4ndis.dat
-  [1,16,2,0,0,0,1,0,3,0,0,0,0,3, ldraw_lib__4_4ndis()],
+  [1,16,2,0,0,0,1,0,3,0,0,0,0,3, ldraw_lib__4_4ndis(realsolid)],
 // 1 16 7.25 0 0 0 -1 0 3 0 0 0 0 3 4-4ndis.dat
-  [1,16,7.25,0,0,0,-1,0,3,0,0,0,0,3, ldraw_lib__4_4ndis()],
+  [1,16,7.25,0,0,0,-1,0,3,0,0,0,0,3, ldraw_lib__4_4ndis(realsolid)],
 // 2 24 2 3.349 8.8995 1.5 3.349 8.8995
   [2,24,2,3.349,8.8995,1.5,3.349,8.8995],
 // 2 24 2 3.349 8.8995 2 3.349 8.084
@@ -469,5 +470,5 @@ function ldraw_lib__s__20460s04() = [
   [4,16,7.704,3.543,8.9082,7.25,3.24,6,7.25,3.2401,-4,7.7039,3.5433,-4],
 ];
 module ldraw_lib__s__20460s04(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__20460s04(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__20460s04(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__20460s04(line=0.2);

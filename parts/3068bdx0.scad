@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <3068b.scad>
 use <6288456a.scad>
-function ldraw_lib__3068bdx0() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3068bdx0(realsolid=false) = [
 // 0 Tile  2 x  2 with Bright Light Orange Flower Patterns on Dark Blue Background Sticker
 // 0 Name: 3068bdx0.dat
 // 0 Author: Vincent Messenet [Cheenzo]
@@ -18,10 +19,10 @@ function ldraw_lib__3068bdx0() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 3068b.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3068b()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3068b(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 6288456a.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__6288456a()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__6288456a(realsolid)],
 ];
 module ldraw_lib__3068bdx0(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3068bdx0(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3068bdx0(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3068bdx0(line=0.2);

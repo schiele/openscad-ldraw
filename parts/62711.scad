@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/stud4o.scad>
-function ldraw_lib__62711() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__62711(realsolid=false) = [
 // 0 Minifig Hair Short Bob Cut
 // 0 Name: 62711.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -19,7 +20,7 @@ function ldraw_lib__62711() = [
 // 
 // 
 // 1 16 0 -4 0 -1 0 0 0 -1 0 0 0 1 stud4o.dat
-  [1,16,0,-4,0,-1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4o()],
+  [1,16,0,-4,0,-1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4o(realsolid)],
 // 3 16 11.839 19.271 -5.383 11.625 19.203 -5.877 10.857 3.455 -6.268
   [3,16,11.839,19.271,-5.383,11.625,19.203,-5.877,10.857,3.455,-6.268],
 // 3 16 10.857 3.455 -6.268 11.625 19.203 -5.877 11.467 18.515 -6.158
@@ -5031,5 +5032,5 @@ function ldraw_lib__62711() = [
   [5,24,-14.739,18.971,-2.095,-16.014,13.884,-2.707,-14.53,18.926,-1.215,-14.87,13.755,-3.792],
 ];
 module ldraw_lib__62711(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__62711(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__62711(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__62711(line=0.2);

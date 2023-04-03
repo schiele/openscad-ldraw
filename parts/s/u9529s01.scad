@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__u9529s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__u9529s01(realsolid=false) = [
 // 0 ~Forklift  2 x  7 Spring Segment (Compressed)
 // 0 Name: s\u9529s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -943,5 +944,5 @@ function ldraw_lib__s__u9529s01() = [
   [4,16,-3.6955,4.4375,-1.5307,-4,4.5,0,-3.5,4,0,-3.2336,3.9375,-1.3394],
 ];
 module ldraw_lib__s__u9529s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__u9529s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__u9529s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__u9529s01(line=0.2);

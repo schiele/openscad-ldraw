@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <40359a.scad>
 use <40359b.scad>
-function ldraw_lib__40359c01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__40359c01(realsolid=false) = [
 // 0 Minifig Keys on Sprue
 // 0 Name: 40359c01.dat
 // 0 Author: Andy Westrate [westrate]
@@ -18,13 +19,13 @@ function ldraw_lib__40359c01() = [
 // 
 // 
 // 1 16 19 -47.75 0 0 -1 0 0 0 -1 1 0 0 40359a.dat
-  [1,16,19,-47.75,0,0,-1,0,0,0,-1,1,0,0, ldraw_lib__40359a()],
+  [1,16,19,-47.75,0,0,-1,0,0,0,-1,1,0,0, ldraw_lib__40359a(realsolid)],
 // 1 16 -19 -47.75 0 0 1 0 0 0 -1 -1 0 0 40359a.dat
-  [1,16,-19,-47.75,0,0,1,0,0,0,-1,-1,0,0, ldraw_lib__40359a()],
+  [1,16,-19,-47.75,0,0,1,0,0,0,-1,-1,0,0, ldraw_lib__40359a(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 40359b.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__40359b()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__40359b(realsolid)],
 // 
 ];
 module ldraw_lib__40359c01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__40359c01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__40359c01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__40359c01(line=0.2);

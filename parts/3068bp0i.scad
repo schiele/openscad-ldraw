@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3068bs01.scad>
-function ldraw_lib__3068bp0i() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3068bp0i(realsolid=false) = [
 // 0 Tile  2 x  2 with Guest Book and Gold "Visitors" Pattern
 // 0 Name: 3068bp0i.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -17,7 +18,7 @@ function ldraw_lib__3068bp0i() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3068bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3068bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3068bs01(realsolid)],
 // 4 70 18 0 16.3 17.925 0 16.683 17.708 0 17.008 17.383 0 17.225
   [4,70,18,0,16.3,17.925,0,16.683,17.708,0,17.008,17.383,0,17.225],
 // 4 70 18 0 16.3 17.383 0 17.225 17 0 17.3 16.8 0 16.3
@@ -3274,5 +3275,5 @@ function ldraw_lib__3068bp0i() = [
   [3,16,20,0,-20,0,0,-18.6,-20,0,-20],
 ];
 module ldraw_lib__3068bp0i(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3068bp0i(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3068bp0i(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3068bp0i(line=0.2);

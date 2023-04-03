@@ -5,7 +5,8 @@ use <../p/box4o4a.scad>
 use <../p/rect.scad>
 use <../p/rect2p.scad>
 use <../p/stud3.scad>
-function ldraw_lib__47458() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__47458(realsolid=false) = [
 // 0 Slope Brick Curved  1 x  2 x   2/3 with Fin without Studs
 // 0 Name: 47458.dat
 // 0 Author: Guy Vivan [guyvivan]
@@ -20,25 +21,25 @@ function ldraw_lib__47458() = [
 // 
 // 
 // 1 16 10 25 10 0 -1 0 -25 0 0 0 0 -25 48\1-12edge.dat
-  [1,16,10,25,10,0,-1,0,-25,0,0,0,0,-25, ldraw_lib__48__1_12edge()],
+  [1,16,10,25,10,0,-1,0,-25,0,0,0,0,-25, ldraw_lib__48__1_12edge(realsolid)],
 // 1 16 -10 25 10 0 -1 0 -25 0 0 0 0 -25 48\1-12edge.dat
-  [1,16,-10,25,10,0,-1,0,-25,0,0,0,0,-25, ldraw_lib__48__1_12edge()],
+  [1,16,-10,25,10,0,-1,0,-25,0,0,0,0,-25, ldraw_lib__48__1_12edge(realsolid)],
 // 1 16 10 25 10 0 -20 0 -25 0 0 0 0 -25 48\1-12cyli.dat
-  [1,16,10,25,10,0,-20,0,-25,0,0,0,0,-25, ldraw_lib__48__1_12cyli()],
+  [1,16,10,25,10,0,-20,0,-25,0,0,0,0,-25, ldraw_lib__48__1_12cyli(realsolid)],
 // 1 16 0 8 0 1 0 0 0 -2 0 0 0 1 stud3.dat
-  [1,16,0,8,0,1,0,0,0,-2,0,0,0,1, ldraw_lib__stud3()],
+  [1,16,0,8,0,1,0,0,0,-2,0,0,0,1, ldraw_lib__stud3(realsolid)],
 // 1 16 0 16 0 20 0 0 0 -6 0 0 0 10 box4o4a.dat
-  [1,16,0,16,0,20,0,0,0,-6,0,0,0,10, ldraw_lib__box4o4a()],
+  [1,16,0,16,0,20,0,0,0,-6,0,0,0,10, ldraw_lib__box4o4a(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 16 0 16 0 0 0 -4 0 0 0 6 box4o4a.dat
-  [1,16,0,16,0,16,0,0,0,-4,0,0,0,6, ldraw_lib__box4o4a()],
+  [1,16,0,16,0,16,0,0,0,-4,0,0,0,6, ldraw_lib__box4o4a(realsolid)],
 // 1 16 14 10 0 2 0 0 2 -1 0 0 0 6 rect.dat
-  [1,16,14,10,0,2,0,0,2,-1,0,0,0,6, ldraw_lib__rect()],
+  [1,16,14,10,0,2,0,0,2,-1,0,0,0,6, ldraw_lib__rect(realsolid)],
 // 1 16 -14 10 0 -2 0 0 2 -1 0 0 0 -6 rect.dat
-  [1,16,-14,10,0,-2,0,0,2,-1,0,0,0,-6, ldraw_lib__rect()],
+  [1,16,-14,10,0,-2,0,0,2,-1,0,0,0,-6, ldraw_lib__rect(realsolid)],
 // 1 16 0 8 0 -12 0 0 0 -1 0 0 0 -6 rect2p.dat
-  [1,16,0,8,0,-12,0,0,0,-1,0,0,0,-6, ldraw_lib__rect2p()],
+  [1,16,0,8,0,-12,0,0,0,-1,0,0,0,-6, ldraw_lib__rect2p(realsolid)],
 // 4 16 12 8 6 -12 8 6 -16 12 6 16 12 6
   [4,16,12,8,6,-12,8,6,-16,12,6,16,12,6],
 // 4 16 -12 8 -6 12 8 -6 16 12 -6 -16 12 -6
@@ -52,7 +53,7 @@ function ldraw_lib__47458() = [
 // 4 16 -20 16 -10 -20 16 10 -16 16 6 -16 16 -6
   [4,16,-20,16,-10,-20,16,10,-16,16,6,-16,16,-6],
 // 1 16 0 9 10 0 0 -20 -1 0 0 0 -1 0 rect2p.dat
-  [1,16,0,9,10,0,0,-20,-1,0,0,0,-1,0, ldraw_lib__rect2p()],
+  [1,16,0,9,10,0,0,-20,-1,0,0,0,-1,0, ldraw_lib__rect2p(realsolid)],
 // 2 24 20 8 10 10 0 10
   [2,24,20,8,10,10,0,10],
 // 2 24 -20 8 10 -10 0 10
@@ -352,5 +353,5 @@ function ldraw_lib__47458() = [
 // 0
 ];
 module ldraw_lib__47458(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__47458(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__47458(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__47458(line=0.2);

@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__43936p01s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__43936p01s01(realsolid=false) = [
 // 0 ~Animal Serpent Basilisk Body Segment - Scales Pattern
 // 0 Name: s\43936p01s01.dat
 // 0 Author: Willy Tschager [Holly-Wood]
@@ -3078,5 +3079,5 @@ function ldraw_lib__s__43936p01s01() = [
   [3,16,21.114,9.253,38.628,21.302,8.756,37.333,21.651,10.448,38.913],
 ];
 module ldraw_lib__s__43936p01s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__43936p01s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__43936p01s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__43936p01s01(line=0.2);

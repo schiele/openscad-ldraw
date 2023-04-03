@@ -2,7 +2,8 @@ use <../lib.scad>
 use <46528.scad>
 use <46530.scad>
 use <46538.scad>
-function ldraw_lib__49743() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__49743(realsolid=false) = [
 // 0 Spring Shooter  2 x  6 x  1.333 with Dark Bluish Grey Bottom
 // 0 Name: 49743.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -21,12 +22,12 @@ function ldraw_lib__49743() = [
 // 0 // loose part 46531 is part of this assembly, but doesn't show externally so omitted
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 46530.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__46530()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__46530(realsolid)],
 // 1 72 0 32 0 1 0 0 0 1 0 0 0 1 46528.dat
-  [1,72,0,32,0,1,0,0,0,1,0,0,0,1, ldraw_lib__46528()],
+  [1,72,0,32,0,1,0,0,0,1,0,0,0,1, ldraw_lib__46528(realsolid)],
 // 1 4 0 18 70 -1 0 0 0 1 0 0 0 -1 46538.dat
-  [1,4,0,18,70,-1,0,0,0,1,0,0,0,-1, ldraw_lib__46538()],
+  [1,4,0,18,70,-1,0,0,0,1,0,0,0,-1, ldraw_lib__46538(realsolid)],
 ];
 module ldraw_lib__49743(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__49743(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__49743(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__49743(line=0.2);

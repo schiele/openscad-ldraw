@@ -3,7 +3,8 @@ use <../p/4-4con2.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4edge.scad>
 use <../p/stud4.scad>
-function ldraw_lib__98381() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__98381(realsolid=false) = [
 // 0 Minifig Hat Flat Chef
 // 0 Name: 98381.dat
 // 0 Author: Vincent Messenet [Cheenzo]
@@ -22,19 +23,19 @@ function ldraw_lib__98381() = [
 // 
 // 
 // 1 16 0 -5 0 1 0 0 0 -1.2 0 0 0 1 stud4.dat
-  [1,16,0,-5,0,1,0,0,0,-1.2,0,0,0,1, ldraw_lib__stud4()],
+  [1,16,0,-5,0,1,0,0,0,-1.2,0,0,0,1, ldraw_lib__stud4(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -5 0 8 0 0 0 1 0 0 0 8 4-4disc.dat
-  [1,16,0,-5,0,8,0,0,0,1,0,0,0,8, ldraw_lib__4_4disc()],
+  [1,16,0,-5,0,8,0,0,0,1,0,0,0,8, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 -5 0 8 0 0 0 1 0 0 0 8 4-4edge.dat
-  [1,16,0,-5,0,8,0,0,0,1,0,0,0,8, ldraw_lib__4_4edge()],
+  [1,16,0,-5,0,8,0,0,0,1,0,0,0,8, ldraw_lib__4_4edge(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -2 0 4 0 0 0 -3 0 0 0 4 4-4con2.dat
-  [1,16,0,-2,0,4,0,0,0,-3,0,0,0,4, ldraw_lib__4_4con2()],
+  [1,16,0,-2,0,4,0,0,0,-3,0,0,0,4, ldraw_lib__4_4con2(realsolid)],
 // 1 16 0 -2 0 12 0 0 0 1 0 0 0 12 4-4edge.dat
-  [1,16,0,-2,0,12,0,0,0,1,0,0,0,12, ldraw_lib__4_4edge()],
+  [1,16,0,-2,0,12,0,0,0,1,0,0,0,12, ldraw_lib__4_4edge(realsolid)],
 // 4 16 .796 7.85 16.199 .266 7.75 13.662 -1.979 8.018 15.281 -.5 7.95 16.22
   [4,16,.796,7.85,16.199,.266,7.75,13.662,-1.979,8.018,15.281,-.5,7.95,16.22],
 // 3 16 .266 7.75 13.662 -4.07 8.05 13.507 -1.979 8.018 15.281
@@ -2099,5 +2100,5 @@ function ldraw_lib__98381() = [
   [5,24,-4.162,-4.193,15.465,-2.856,-.082,16.352,-4.397,-.092,15.434,-3.101,-4.172,16.638],
 ];
 module ldraw_lib__98381(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__98381(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__98381(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__98381(line=0.2);

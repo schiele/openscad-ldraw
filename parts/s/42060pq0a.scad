@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__42060pq0a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__42060pq0a(realsolid=false) = [
 // 0 ~Wedge 12 x  3 Double Right - Bricks & Hieroglyphs Pattern
 // 0 Name: s\42060pq0a.dat
 // 0 Author: Christian Neumann [Wesley]
@@ -3303,5 +3304,5 @@ function ldraw_lib__s__42060pq0a() = [
   [5,24,-10,10.5,-190,-20,20,-190,-25,20,-170,-16.25,20,-205],
 ];
 module ldraw_lib__s__42060pq0a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__42060pq0a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__42060pq0a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__42060pq0a(line=0.2);

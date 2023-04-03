@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__004659h() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__004659h(realsolid=false) = [
 // 0 Sticker  1.1 x 7.9 with White "ENGINE Co. No. 9" on Red Background
 // 0 Name: 004659h.dat
 // 0 Author: Alex Taylor [anathema]
@@ -19,7 +20,7 @@ function ldraw_lib__004659h() = [
 // 
 // 
 // 1 16 0 -0.25 0 79 0 0 0 0.25 0 0 0 11 box5-12.dat
-  [1,16,0,-0.25,0,79,0,0,0,0.25,0,0,0,11, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,79,0,0,0,0.25,0,0,0,11, ldraw_lib__box5_12(realsolid)],
 // 4 15 -75.07 -.25 -6.39 -72.48 -.25 -4.03 -72.48 -.25 -.74 -75.07 -.25 6.4
   [4,15,-75.07,-.25,-6.39,-72.48,-.25,-4.03,-72.48,-.25,-.74,-75.07,-.25,6.4],
 // 4 15 -72.48 -.25 -4.03 -75.07 -.25 -6.39 -65.47 -.25 -6.39 -65.47 -.25 -4.03
@@ -758,5 +759,5 @@ function ldraw_lib__004659h() = [
   [3,4,-41.4,-.25,-1.66,-44.3,-.25,-1.66,-41.76,-.25,-2.81],
 ];
 module ldraw_lib__004659h(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__004659h(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__004659h(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__004659h(line=0.2);

@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/box.scad>
 use <../p/box5.scad>
-function ldraw_lib__916() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__916(realsolid=false) = [
 // 0 Electric Technic Motor 4.5V  6 x 17 x  5 Switch
 // 0 Name: 916.dat
 // 0 Author: Javier Orquera [kuramapika1]
@@ -16,11 +17,11 @@ function ldraw_lib__916() = [
 // 
 // 
 // 1 16 0 0 0 0 0 20 2 0 0 0 8 0 box.dat
-  [1,16,0,0,0,0,0,20,2,0,0,0,8,0, ldraw_lib__box()],
+  [1,16,0,0,0,0,0,20,2,0,0,0,8,0, ldraw_lib__box(realsolid)],
 // 1 16 0 2 0 0 0 4 0 3 0 -4 0 0 box5.dat
-  [1,16,0,2,0,0,0,4,0,3,0,-4,0,0, ldraw_lib__box5()],
+  [1,16,0,2,0,0,0,4,0,3,0,-4,0,0, ldraw_lib__box5(realsolid)],
 // 0
 ];
 module ldraw_lib__916(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__916(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__916(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__916(line=0.2);

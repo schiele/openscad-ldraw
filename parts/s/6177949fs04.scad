@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__6177949fs04() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__6177949fs04(realsolid=false) = [
 // 0 ~Sticker  0.8 x  1.9 with Black and Dark Blue Headlamp on Transparent Background Right - Upper Section 4
 // 0 Name: s\6177949fs04.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -132,5 +133,5 @@ function ldraw_lib__s__6177949fs04() = [
   [3,15,-3.9618,-.25,-7.0573,-2.8122,-.25,-7.061,-3.7962,-.25,-6.8333],
 ];
 module ldraw_lib__s__6177949fs04(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__6177949fs04(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__6177949fs04(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__6177949fs04(line=0.2);

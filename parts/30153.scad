@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4edge.scad>
-function ldraw_lib__30153() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__30153(realsolid=false) = [
 // 0 Rock  1 x  1 Gem Facetted
 // 0 Name: 30153.dat
 // 0 Author: Franklin W. Cain [fwcain]
@@ -24,15 +25,15 @@ function ldraw_lib__30153() = [
 // 
 // 
 // 1 16 0 6 0 4 0 0 0 -6 0 0 0 4 4-4cyli.dat
-  [1,16,0,6,0,4,0,0,0,-6,0,0,0,4, ldraw_lib__4_4cyli()],
+  [1,16,0,6,0,4,0,0,0,-6,0,0,0,4, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 6 0 4 0 0 0 -1 0 0 0 4 4-4disc.dat
-  [1,16,0,6,0,4,0,0,0,-1,0,0,0,4, ldraw_lib__4_4disc()],
+  [1,16,0,6,0,4,0,0,0,-1,0,0,0,4, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 0 0 4 0 0 0 1 0 0 0 4 4-4disc.dat
-  [1,16,0,0,0,4,0,0,0,1,0,0,0,4, ldraw_lib__4_4disc()],
+  [1,16,0,0,0,4,0,0,0,1,0,0,0,4, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 6 0 4 0 0 0 1 0 0 0 4 4-4edge.dat
-  [1,16,0,6,0,4,0,0,0,1,0,0,0,4, ldraw_lib__4_4edge()],
+  [1,16,0,6,0,4,0,0,0,1,0,0,0,4, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 0 0 4 0 0 0 1 0 0 0 4 4-4edge.dat
-  [1,16,0,0,0,4,0,0,0,1,0,0,0,4, ldraw_lib__4_4edge()],
+  [1,16,0,0,0,4,0,0,0,1,0,0,0,4, ldraw_lib__4_4edge(realsolid)],
 // 0
 // 4 16 -1.531 0 -3.696 1.531 0 -3.696 3.536 -9.087 -8.536 -3.536 -9.087 -8.536
   [4,16,-1.531,0,-3.696,1.531,0,-3.696,3.536,-9.087,-8.536,-3.536,-9.087,-8.536],
@@ -265,5 +266,5 @@ function ldraw_lib__30153() = [
   [2,24,8.536,-12.586,3.536,0,-16,0],
 ];
 module ldraw_lib__30153(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__30153(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__30153(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__30153(line=0.2);

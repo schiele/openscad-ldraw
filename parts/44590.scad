@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <3754.scad>
-function ldraw_lib__44590() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__44590(realsolid=false) = [
 // 0 =Brick  1 x  6 x  5
 // 0 Name: 44590.dat
 // 0 Author: Rolf Osterthun [Rolf]
@@ -18,8 +19,8 @@ function ldraw_lib__44590() = [
 // 0 // Part 44590 is the transparent counterpart of 3754
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 3754.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3754()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3754(realsolid)],
 ];
 module ldraw_lib__44590(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__44590(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__44590(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__44590(line=0.2);

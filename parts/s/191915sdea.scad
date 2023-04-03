@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/48/1-4ring1.scad>
-function ldraw_lib__s__191915sdea() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__191915sdea(realsolid=false) = [
 // 0 ~German Railways Logo Foreground
 // 0 Name: s\191915sdea.dat
 // 0 Author: Steffen [Steffen]
@@ -17,13 +18,13 @@ function ldraw_lib__s__191915sdea() = [
 // 
 // 
 // 1 16 -35 0 17 0 0 -11 0 1 0 11 0 0 48\1-4ring1.dat
-  [1,16,-35,0,17,0,0,-11,0,1,0,11,0,0, ldraw_lib__48__1_4ring1()],
+  [1,16,-35,0,17,0,0,-11,0,1,0,11,0,0, ldraw_lib__48__1_4ring1(realsolid)],
 // 1 16 35 0 17 11 0 0 0 1 0 0 0 11 48\1-4ring1.dat
-  [1,16,35,0,17,11,0,0,0,1,0,0,0,11, ldraw_lib__48__1_4ring1()],
+  [1,16,35,0,17,11,0,0,0,1,0,0,0,11, ldraw_lib__48__1_4ring1(realsolid)],
 // 1 16 35 0 -17 0 0 11 0 1 0 -11 0 0 48\1-4ring1.dat
-  [1,16,35,0,-17,0,0,11,0,1,0,-11,0,0, ldraw_lib__48__1_4ring1()],
+  [1,16,35,0,-17,0,0,11,0,1,0,-11,0,0, ldraw_lib__48__1_4ring1(realsolid)],
 // 1 16 -35 0 -17 -11 0 0 0 1 0 0 0 -11 48\1-4ring1.dat
-  [1,16,-35,0,-17,-11,0,0,0,1,0,0,0,-11, ldraw_lib__48__1_4ring1()],
+  [1,16,-35,0,-17,-11,0,0,0,1,0,0,0,-11, ldraw_lib__48__1_4ring1(realsolid)],
 // 4 16 -57 0 -17 -46 0 -17 -46 0 17 -57 0 17
   [4,16,-57,0,-17,-46,0,-17,-46,0,17,-57,0,17],
 // 4 16 46 0 -17 57 0 -17 57 0 17 46 0 17
@@ -340,5 +341,5 @@ function ldraw_lib__s__191915sdea() = [
   [3,16,22.047,0,-2.031,24.195,0,-3.324,26.234,0,0.469],
 ];
 module ldraw_lib__s__191915sdea(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__191915sdea(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__191915sdea(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__191915sdea(line=0.2);

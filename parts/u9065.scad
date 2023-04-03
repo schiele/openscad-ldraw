@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__u9065() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__u9065(realsolid=false) = [
 // 0 ~Electric Train  4.5V On/Off Switch Brick  2 x  4 Bottom Plate
 // 0 Name: u9065.dat
 // 0 Author: Michael Heidemann [mikeheide]
@@ -95,5 +96,5 @@ function ldraw_lib__u9065() = [
   [2,24,-4,4,-2,-4,0,-2],
 ];
 module ldraw_lib__u9065(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__u9065(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__u9065(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__u9065(line=0.2);

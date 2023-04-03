@@ -3,7 +3,8 @@ use <46224.scad>
 use <46225.scad>
 use <46226.scad>
 use <46227.scad>
-function ldraw_lib__46224c01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__46224c01(realsolid=false) = [
 // 0 Technic Gearbox  2 x  4 x  4 (Complete)
 // 0 Name: 46224c01.dat
 // 0 Author: Guy Vivan [guyvivan]
@@ -18,15 +19,15 @@ function ldraw_lib__46224c01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 46224.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__46224()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__46224(realsolid)],
 // 1 8 0 34 0 1 0 0 0 1 0 0 0 1 46225.dat
-  [1,8,0,34,0,1,0,0,0,1,0,0,0,1, ldraw_lib__46225()],
+  [1,8,0,34,0,1,0,0,0,1,0,0,0,1, ldraw_lib__46225(realsolid)],
 // 1 8 0 34 0 1 0 0 0 1 0 0 0 1 46227.dat
-  [1,8,0,34,0,1,0,0,0,1,0,0,0,1, ldraw_lib__46227()],
+  [1,8,0,34,0,1,0,0,0,1,0,0,0,1, ldraw_lib__46227(realsolid)],
 // 1 15 0 74 0 0 0 -1 0 1 0 1 0 0 46226.dat
-  [1,15,0,74,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__46226()],
+  [1,15,0,74,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__46226(realsolid)],
 // 0
 ];
 module ldraw_lib__46224c01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__46224c01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__46224c01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__46224c01(line=0.2);

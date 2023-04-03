@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/rect1.scad>
 use <s/32058p01s01.scad>
 use <../p/stug-2x1.scad>
-function ldraw_lib__32374p01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__32374p01(realsolid=false) = [
 // 0 ~Electric Mindstorms RCX Module without AC Socket - Top Housing with "RCX 1.0" Pattern
 // 0 Name: 32374p01.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -22,20 +23,20 @@ function ldraw_lib__32374p01() = [
 // 0 // Using font: "Arial Rounded MT Bold" style: "Regular" size: 50pt
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\32058p01s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__32058p01s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__32058p01s01(realsolid)],
 // 0 // A/C Plug-in hole blocker
 // 4 16 -12 0 109 -12 0 102 12 0 102 12 0 109
   [4,16,-12,0,109,-12,0,102,12,0,102,12,0,109],
 // 1 16 0 0 114.5 0 0 -12 0 1 0 5.5 0 0 rect1.dat
-  [1,16,0,0,114.5,0,0,-12,0,1,0,5.5,0,0, ldraw_lib__rect1()],
+  [1,16,0,0,114.5,0,0,-12,0,1,0,5.5,0,0, ldraw_lib__rect1(realsolid)],
 // 4 16 -12 34 120 -12 0 120 12 0 120 12 34 120
   [4,16,-12,34,120,-12,0,120,12,0,120,12,34,120],
 // 1 16 0 19 116 0 0 -12 -15 0 0 0 1 0 rect1.dat
-  [1,16,0,19,116,0,0,-12,-15,0,0,0,1,0, ldraw_lib__rect1()],
+  [1,16,0,19,116,0,0,-12,-15,0,0,0,1,0, ldraw_lib__rect1(realsolid)],
 // 4 16 -12 4 116 12 4 116 12 4 102 -12 4 102
   [4,16,-12,4,116,12,4,116,12,4,102,-12,4,102],
 // 1 16 0 0 110 0 0 -1 0 1 0 1 0 0 stug-2x1.dat
-  [1,16,0,0,110,0,0,-1,0,1,0,1,0,0, ldraw_lib__stug_2x1()],
+  [1,16,0,0,110,0,0,-1,0,1,0,1,0,0, ldraw_lib__stug_2x1(realsolid)],
 // 
 // 0 // Label "RCX 1.0"
 // 0 // Numeral 1
@@ -764,5 +765,5 @@ function ldraw_lib__32374p01() = [
   [4,16,-65.204,2.081,102.222,-65.152,2.061,95.003,-60,0,60,-60,0,120],
 ];
 module ldraw_lib__32374p01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__32374p01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__32374p01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__32374p01(line=0.2);

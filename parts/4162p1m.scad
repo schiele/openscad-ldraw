@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/4162s01.scad>
-function ldraw_lib__4162p1m() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4162p1m(realsolid=false) = [
 // 0 Tile  1 x  8 with "White House" Pattern
 // 0 Name: 4162p1m.dat
 // 0 Author: Orion Pobursky [OrionP]
@@ -17,7 +18,7 @@ function ldraw_lib__4162p1m() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4162s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4162s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4162s01(realsolid)],
 // 4 15 -29.606 0 -4.094 -28.492 0 -4.094 -28.992 0 -2.493 -31.684 0 3.899
   [4,15,-29.606,0,-4.094,-28.492,0,-4.094,-28.992,0,-2.493,-31.684,0,3.899],
 // 4 15 -26.746 0 2.493 -27.305 0 3.899 -28.992 0 -2.493 -28.492 0 -4.094
@@ -754,5 +755,5 @@ function ldraw_lib__4162p1m() = [
   [3,16,11.411,0,1.816,6.512,0,3.899,10.594,0,1.906],
 ];
 module ldraw_lib__4162p1m(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4162p1m(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4162p1m(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4162p1m(line=0.2);

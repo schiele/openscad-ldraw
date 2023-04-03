@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3005s01.scad>
-function ldraw_lib__3005pe5() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3005pe5(realsolid=false) = [
 // 0 Brick  1 x  1 with Black Eyes and White Pupils Pattern
 // 0 Name: 3005pe5.dat
 // 0 Author: Christian Neumann [Wesley]
@@ -15,7 +16,7 @@ function ldraw_lib__3005pe5() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3005s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3005s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3005s01(realsolid)],
 // 0 // pattern
 // 4 15 5.804 18.086 -10 5.4 17.986 -10 4.996 18.086 -10 4.653 18.371 -10
   [4,15,5.804,18.086,-10,5.4,17.986,-10,4.996,18.086,-10,4.653,18.371,-10],
@@ -163,5 +164,5 @@ function ldraw_lib__3005pe5() = [
   [4,0,-5,14.966,-10,-6.154,15.235,-10,-5.004,18.086,-10,-4.6,17.986,-10],
 ];
 module ldraw_lib__3005pe5(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3005pe5(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3005pe5(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3005pe5(line=0.2);

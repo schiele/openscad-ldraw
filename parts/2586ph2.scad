@@ -5,7 +5,8 @@ use <../p/2-4ring7.scad>
 use <s/2586ph2a.scad>
 use <s/2586ph2b.scad>
 use <s/2586s01.scad>
-function ldraw_lib__2586ph2() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2586ph2(realsolid=false) = [
 // 0 Minifig Shield Ovoid with Silver Snake Pattern
 // 0 Name: 2586ph2.dat
 // 0 Author: Andy Westrate [westrate]
@@ -32,19 +33,19 @@ function ldraw_lib__2586ph2() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2586s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2586s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2586s01(realsolid)],
 // 1 80 0 0 0 1 0 0 0 1 0 0 0 1 s\2586ph2a.dat
-  [1,80,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2586ph2a()],
+  [1,80,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2586ph2a(realsolid)],
 // 1 288 0 0 0 1 0 0 0 1 0 0 0 1 s\2586ph2b.dat
-  [1,288,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2586ph2b()],
+  [1,288,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2586ph2b(realsolid)],
 // 1 16 0 -14.5 -8 2.429 0 0 0 0 -2.429 0 1 0 2-4ring7.dat
-  [1,16,0,-14.5,-8,2.429,0,0,0,0,-2.429,0,1,0, ldraw_lib__2_4ring7()],
+  [1,16,0,-14.5,-8,2.429,0,0,0,0,-2.429,0,1,0, ldraw_lib__2_4ring7(realsolid)],
 // 1 16 0 -14.5 -8 1 0 0 0 0 -1 0 1 0 1-4rin19.dat
-  [1,16,0,-14.5,-8,1,0,0,0,0,-1,0,1,0, ldraw_lib__1_4rin19()],
+  [1,16,0,-14.5,-8,1,0,0,0,0,-1,0,1,0, ldraw_lib__1_4rin19(realsolid)],
 // 1 16 0 -14.5 -8 0 0 -1 -1 0 0 0 1 0 1-4rin19.dat
-  [1,16,0,-14.5,-8,0,0,-1,-1,0,0,0,1,0, ldraw_lib__1_4rin19()],
+  [1,16,0,-14.5,-8,0,0,-1,-1,0,0,0,1,0, ldraw_lib__1_4rin19(realsolid)],
 // 1 16 0 31.5 -8 -1.06075 0 1.06075 1.06075 0 1.06075 0 1 0 1-4ring3.dat
-  [1,16,0,31.5,-8,-1.06075,0,1.06075,1.06075,0,1.06075,0,1,0, ldraw_lib__1_4ring3()],
+  [1,16,0,31.5,-8,-1.06075,0,1.06075,1.06075,0,1.06075,0,1,0, ldraw_lib__1_4ring3(realsolid)],
 // 3 16 17 -14.5 -8 16.5 -11 -8 20 -14.5 -8
   [3,16,17,-14.5,-8,16.5,-11,-8,20,-14.5,-8],
 // 4 16 19 -2.5 -8 20 -14.5 -8 16.5 -11 -8 15 2 -8
@@ -304,5 +305,5 @@ function ldraw_lib__2586ph2() = [
 // 
 ];
 module ldraw_lib__2586ph2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2586ph2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2586ph2(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2586ph2(line=0.2);

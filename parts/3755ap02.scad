@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3755as01.scad>
-function ldraw_lib__3755ap02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3755ap02(realsolid=false) = [
 // 0 Brick  1 x  3 x  5 with Wrench, Jack, and Pump Pattern
 // 0 Name: 3755ap02.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -17,7 +18,7 @@ function ldraw_lib__3755ap02() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3755as01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3755as01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3755as01(realsolid)],
 // 4 0 8 18 -10 -21 18 -10 -21 22.5 -10 8 22.5 -10
   [4,0,8,18,-10,-21,18,-10,-21,22.5,-10,8,22.5,-10],
 // 4 0 9.5 17.6 -10 8 18 -10 8 22.5 -10 9.5 23 -10
@@ -1460,5 +1461,5 @@ function ldraw_lib__3755ap02() = [
   [4,0,2.9,73.4,-10,3.2,73.1,-10,1.9,72.3,-10,2.3,73.6,-10],
 ];
 module ldraw_lib__3755ap02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3755ap02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3755ap02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3755ap02(line=0.2);

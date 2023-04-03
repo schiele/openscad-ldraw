@@ -4,7 +4,8 @@ use <../p/2-4ndis.scad>
 use <../p/2-4ring1.scad>
 use <../p/2-4ring2.scad>
 use <s/2454bs01.scad>
-function ldraw_lib__2454bpa1() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2454bpa1(realsolid=false) = [
 // 0 Brick  1 x  2 x  5 with Blocked Open Studs and Symmetric Inner Ridges with Hieroglyphs and Lion on Bottom Pattern
 // 0 Name: 2454bpa1.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -22,16 +23,16 @@ function ldraw_lib__2454bpa1() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2454bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2454bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2454bs01(realsolid)],
 // 
 // 1 0 1.225 77.275 -10 -.325 0 0 0 0 .325 0 1 0 2-4disc.dat
-  [1,0,1.225,77.275,-10,-.325,0,0,0,0,.325,0,1,0, ldraw_lib__2_4disc()],
+  [1,0,1.225,77.275,-10,-.325,0,0,0,0,.325,0,1,0, ldraw_lib__2_4disc(realsolid)],
 // 1 16 1.225 77.275 -10 -.325 0 0 0 0 .325 0 1 0 2-4ring1.dat
-  [1,16,1.225,77.275,-10,-.325,0,0,0,0,.325,0,1,0, ldraw_lib__2_4ring1()],
+  [1,16,1.225,77.275,-10,-.325,0,0,0,0,.325,0,1,0, ldraw_lib__2_4ring1(realsolid)],
 // 1 16 1.225 77.275 -10 -.325 0 0 0 0 .325 0 1 0 2-4ring2.dat
-  [1,16,1.225,77.275,-10,-.325,0,0,0,0,.325,0,1,0, ldraw_lib__2_4ring2()],
+  [1,16,1.225,77.275,-10,-.325,0,0,0,0,.325,0,1,0, ldraw_lib__2_4ring2(realsolid)],
 // 1 484 1.225 77.275 -10 -.975 0 0 0 0 .975 0 1 0 2-4ndis.dat
-  [1,484,1.225,77.275,-10,-.975,0,0,0,0,.975,0,1,0, ldraw_lib__2_4ndis()],
+  [1,484,1.225,77.275,-10,-.975,0,0,0,0,.975,0,1,0, ldraw_lib__2_4ndis(realsolid)],
 // 4 0 -15.836 12.523 -10 -16 14 -10 -14.4 14 -10 -14.265 12.677 -10
   [4,0,-15.836,12.523,-10,-16,14,-10,-14.4,14,-10,-14.265,12.677,-10],
 // 4 0 -14.265 12.677 -10 -13.941 11.376 -10 -15.429 10.974 -10 -15.836 12.523 -10
@@ -1884,5 +1885,5 @@ function ldraw_lib__2454bpa1() = [
   [4,0,.9,74.15,-10,.9,77.275,-10,1.225,77.275,-10,1.55,74.15,-10],
 ];
 module ldraw_lib__2454bpa1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2454bpa1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2454bpa1(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2454bpa1(line=0.2);

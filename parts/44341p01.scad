@@ -3,7 +3,8 @@ use <../p/1-4disc.scad>
 use <s/44341s01.scad>
 use <s/44341s02.scad>
 use <s/44341s03.scad>
-function ldraw_lib__44341p01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__44341p01(realsolid=false) = [
 // 0 Baseplate 32 x 32 Road 6-Stud T-Junction with Yellow Road Edge and White Pedestrian Crossing Pattern
 // 0 Name: 44341p01.dat
 // 0 Author: William Howard [WilliamH]
@@ -23,13 +24,13 @@ function ldraw_lib__44341p01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\44341s03.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__44341s03()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__44341s03(realsolid)],
 // 1 16 -316 0 316 -4 0 0 0 1 0 0 0 4 1-4disc.dat
-  [1,16,-316,0,316,-4,0,0,0,1,0,0,0,4, ldraw_lib__1_4disc()],
+  [1,16,-316,0,316,-4,0,0,0,1,0,0,0,4, ldraw_lib__1_4disc(realsolid)],
 // 4 16 -316 0 316 -320 0 316 -320 0 -316 -316 0 -316
   [4,16,-316,0,316,-320,0,316,-320,0,-316,-316,0,-316],
 // 1 16 -316 0 -316 -4 0 0 0 1 0 0 0 -4 1-4disc.dat
-  [1,16,-316,0,-316,-4,0,0,0,1,0,0,0,-4, ldraw_lib__1_4disc()],
+  [1,16,-316,0,-316,-4,0,0,0,1,0,0,0,-4, ldraw_lib__1_4disc(realsolid)],
 // 4 8 182 0 -320 182 0 320 6 0 320 6 0 -320
   [4,8,182,0,-320,182,0,320,6,0,320,6,0,-320],
 // 4 8 -182 0 -320 -6 0 -320 -6 0 320 -182 0 320
@@ -59,11 +60,11 @@ function ldraw_lib__44341p01() = [
   [4,8,6,0,291,6,0,320,-6,0,320,-6,0,291],
 // 
 // 1 8 0 0 0 1 0 0 0 1 0 0 0 1 s\44341s02.dat
-  [1,8,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__44341s02()],
+  [1,8,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__44341s02(realsolid)],
 // 1 16 182 0 182 1 0 0 0 1 0 0 0 1 s\44341s01.dat
-  [1,16,182,0,182,1,0,0,0,1,0,0,0,1, ldraw_lib__s__44341s01()],
+  [1,16,182,0,182,1,0,0,0,1,0,0,0,1, ldraw_lib__s__44341s01(realsolid)],
 // 1 16 182 0 -182 1 0 0 0 1 0 0 0 -1 s\44341s01.dat
-  [1,16,182,0,-182,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__44341s01()],
+  [1,16,182,0,-182,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__44341s01(realsolid)],
 // 
 // 4 8 -182 0 310 -182 0 320 -192 0 320 -192 0 310
   [4,8,-182,0,310,-182,0,320,-192,0,320,-192,0,310],
@@ -133,5 +134,5 @@ function ldraw_lib__44341p01() = [
   [4,8,-182,0,-320,-182,0,-310,-192,0,-310,-192,0,-320],
 ];
 module ldraw_lib__44341p01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__44341p01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__44341p01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__44341p01(line=0.2);

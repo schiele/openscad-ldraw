@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/4-4disc.scad>
-function ldraw_lib__s__973sdfa() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__973sdfa(realsolid=false) = [
 // 0 ~Minifig Torso with Black Suit, Red Shirt, Gold Clasps - Gold
 // 0 Name: s\973sdfa.dat
 // 0 Author: Larry Pieniazek [lar]
@@ -29,28 +30,28 @@ function ldraw_lib__s__973sdfa() = [
   [4,16,4,9.25,-10,-4,9.25,-10,-4,8.75,-10,4,8.75,-10],
 // 0 buttons
 // 1 16 -5.5 9 -10 1 0 0 0 0 1 0 1 0 4-4disc.dat
-  [1,16,-5.5,9,-10,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4disc()],
+  [1,16,-5.5,9,-10,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 16 5.5 9 -10 1 0 0 0 0 1 0 1 0 4-4disc.dat
-  [1,16,5.5,9,-10,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4disc()],
+  [1,16,5.5,9,-10,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 16 -4.3 14 -10 1 0 0 0 0 1 0 1 0 4-4disc.dat
-  [1,16,-4.3,14,-10,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4disc()],
+  [1,16,-4.3,14,-10,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 16 4.3 14 -10 1 0 0 0 0 1 0 1 0 4-4disc.dat
-  [1,16,4.3,14,-10,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4disc()],
+  [1,16,4.3,14,-10,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 16 -3.7 19 -10 1 0 0 0 0 1 0 1 0 4-4disc.dat
-  [1,16,-3.7,19,-10,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4disc()],
+  [1,16,-3.7,19,-10,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 16 3.7 19 -10 1 0 0 0 0 1 0 1 0 4-4disc.dat
-  [1,16,3.7,19,-10,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4disc()],
+  [1,16,3.7,19,-10,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 16 -3.2 24 -10 1 0 0 0 0 1 0 1 0 4-4disc.dat
-  [1,16,-3.2,24,-10,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4disc()],
+  [1,16,-3.2,24,-10,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 16 3.2 24 -10 1 0 0 0 0 1 0 1 0 4-4disc.dat
-  [1,16,3.2,24,-10,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4disc()],
+  [1,16,3.2,24,-10,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 16 -2.9 29 -10 1 0 0 0 0 1 0 1 0 4-4disc.dat
-  [1,16,-2.9,29,-10,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4disc()],
+  [1,16,-2.9,29,-10,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 16 2.9 29 -10 1 0 0 0 0 1 0 1 0 4-4disc.dat
-  [1,16,2.9,29,-10,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4disc()],
+  [1,16,2.9,29,-10,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 0
 // 0 COMMENT end of file
 ];
 module ldraw_lib__s__973sdfa(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__973sdfa(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__973sdfa(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__973sdfa(line=0.2);

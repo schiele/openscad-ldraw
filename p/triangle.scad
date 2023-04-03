@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__triangle() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__triangle(realsolid=false) = [
 // 0 Triangle
 // 0 Name: triangle.dat
 // 0 Author: Steffen [Steffen]
@@ -23,5 +24,5 @@ function ldraw_lib__triangle() = [
   [2,24,0,0,1,0,0,0],
 ];
 module ldraw_lib__triangle(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__triangle(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__triangle(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__triangle(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <2345p44.scad>
-function ldraw_lib__81155() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__81155(realsolid=false) = [
 // 0 ~_Panel Wall 3 x 3 x 6 Corner with Blacktron I Logo Pattern (Obsolete)
 // 0 Name: 81155.dat
 // 0 Author: [PTadmin]
@@ -19,8 +20,8 @@ function ldraw_lib__81155() = [
 // 
 // 
 // 1 0 0 0 0 1 0 0 0 1 0 0 0 1 2345p44.dat
-  [1,0,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2345p44()],
+  [1,0,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2345p44(realsolid)],
 ];
 module ldraw_lib__81155(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__81155(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__81155(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__81155(line=0.2);

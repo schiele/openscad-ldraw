@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <3005ptv.scad>
-function ldraw_lib__3005_v() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3005_v(realsolid=false) = [
 // 0 ~Moved to 3005ptv
 // 0 Name: 3005-v.dat
 // 0 Author: [PTadmin]
@@ -18,8 +19,8 @@ function ldraw_lib__3005_v() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 3005ptv.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3005ptv()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3005ptv(realsolid)],
 ];
 module ldraw_lib__3005_v(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3005_v(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3005_v(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3005_v(line=0.2);

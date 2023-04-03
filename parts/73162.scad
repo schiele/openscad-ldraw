@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <4257.scad>
 use <4258.scad>
-function ldraw_lib__73162() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__73162(realsolid=false) = [
 // 0 Duplo Brick  2 x  4 x  2 with Rounded Ends with Movable Eyes
 // 0 Name: 73162.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -18,12 +19,12 @@ function ldraw_lib__73162() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 4258.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4258()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4258(realsolid)],
 // 1 16 29 48 -40 1 0 0 0 1 0 0 0 1 4257.dat
-  [1,16,29,48,-40,1,0,0,0,1,0,0,0,1, ldraw_lib__4257()],
+  [1,16,29,48,-40,1,0,0,0,1,0,0,0,1, ldraw_lib__4257(realsolid)],
 // 1 16 -29 48 -40 1 0 0 0 1 0 0 0 1 4257.dat
-  [1,16,-29,48,-40,1,0,0,0,1,0,0,0,1, ldraw_lib__4257()],
+  [1,16,-29,48,-40,1,0,0,0,1,0,0,0,1, ldraw_lib__4257(realsolid)],
 ];
 module ldraw_lib__73162(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__73162(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__73162(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__73162(line=0.2);

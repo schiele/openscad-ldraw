@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <41750.scad>
-function ldraw_lib__42020() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__42020(realsolid=false) = [
 // 0 =Slope Brick Round  3 x  8 x  2 Left
 // 0 Name: 42020.dat
 // 0 Author: Chris Dee [cwdee]
@@ -22,9 +23,9 @@ function ldraw_lib__42020() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 41750.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__41750()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__41750(realsolid)],
 // 0
 ];
 module ldraw_lib__42020(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__42020(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__42020(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__42020(line=0.2);

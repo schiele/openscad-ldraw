@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3069bs01.scad>
-function ldraw_lib__3069bpc6() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3069bpc6(realsolid=false) = [
 // 0 Tile  1 x  2 with Cell Phone / Music Player Pattern
 // 0 Name: 3069bpc6.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -15,7 +16,7 @@ function ldraw_lib__3069bpc6() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3069bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3069bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3069bs01(realsolid)],
 // 4 5 -17.3586 0 3.7 -17.0801 0 5.1001 -17.5757 0 5.3054 -17.895 0 3.7
   [4,5,-17.3586,0,3.7,-17.0801,0,5.1001,-17.5757,0,5.3054,-17.895,0,3.7],
 // 4 5 -15.1001 0 7.0801 -13.7 0 7.3586 -13.7 0 7.895 -15.3054 0 7.5757
@@ -734,5 +735,5 @@ function ldraw_lib__3069bpc6() = [
   [4,16,20,0,10,18.2614,0,3.7,18.2614,0,-3.7,20,0,-10],
 ];
 module ldraw_lib__3069bpc6(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3069bpc6(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3069bpc6(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3069bpc6(line=0.2);

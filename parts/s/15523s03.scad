@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__15523s03() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__15523s03(realsolid=false) = [
 // 0 ~Minifig Head Simpsons Bart Simpson Pupil
 // 0 Name: s\15523s03.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -89,5 +90,5 @@ function ldraw_lib__s__15523s03() = [
   [5,24,8.6156,-22.2499,-17.7603,7.8895,-23.0153,-17.7808,7.7758,-22.1147,-18.1953,9.3834,-23.8601,-16.6466],
 ];
 module ldraw_lib__s__15523s03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__15523s03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__15523s03(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__15523s03(line=0.2);

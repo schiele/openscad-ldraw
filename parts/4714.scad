@@ -7,7 +7,8 @@ use <../p/bump5000.scad>
 use <s/4714s01.scad>
 use <../p/stug2-2x1.scad>
 use <../p/stug4-1x4.scad>
-function ldraw_lib__4714() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4714(realsolid=false) = [
 // 0 Minifig Stretcher with Bottom Hinges
 // 0 Name: 4714.dat
 // 0 Author: Jaco van der Molen [Jaco]
@@ -32,63 +33,63 @@ function ldraw_lib__4714() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4714s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4714s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4714s01(realsolid)],
 // 1 16 0 4 0 1 0 0 0 -1 0 0 0 1 stug4-1x4.dat
-  [1,16,0,4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stug4_1x4()],
+  [1,16,0,4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stug4_1x4(realsolid)],
 // 1 16 -40 0 0 1 0 0 0 1 0 0 0 1 stug2-2x1.dat
-  [1,16,-40,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug2_2x1()],
+  [1,16,-40,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug2_2x1(realsolid)],
 // 1 16 40 0 0 1 0 0 0 1 0 0 0 1 stug2-2x1.dat
-  [1,16,40,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug2_2x1()],
+  [1,16,40,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug2_2x1(realsolid)],
 // 0 // Hinges
 // 1 16 -40 8 16 0 0 -4 4 0 0 0 -4 0 box3u5p.dat
-  [1,16,-40,8,16,0,0,-4,4,0,0,0,-4,0, ldraw_lib__box3u5p()],
+  [1,16,-40,8,16,0,0,-4,4,0,0,0,-4,0, ldraw_lib__box3u5p(realsolid)],
 // 1 16 -40 12 12 4 0 0 0 0 4 0 4 0 2-4cylc.dat
-  [1,16,-40,12,12,4,0,0,0,0,4,0,4,0, ldraw_lib__2_4cylc()],
+  [1,16,-40,12,12,4,0,0,0,0,4,0,4,0, ldraw_lib__2_4cylc(realsolid)],
 // 1 16 -40 12 16 4 0 0 0 0 -4 0 -1 0 2-4ndis.dat
-  [1,16,-40,12,16,4,0,0,0,0,-4,0,-1,0, ldraw_lib__2_4ndis()],
+  [1,16,-40,12,16,4,0,0,0,0,-4,0,-1,0, ldraw_lib__2_4ndis(realsolid)],
 // 1 16 -40 12 16 1 0 0 0 0 -1 0 -1 0 4-4ring3.dat
-  [1,16,-40,12,16,1,0,0,0,0,-1,0,-1,0, ldraw_lib__4_4ring3()],
+  [1,16,-40,12,16,1,0,0,0,0,-1,0,-1,0, ldraw_lib__4_4ring3(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -40 12 16 3 0 0 0 0 3 0 1 0 bump5000.dat
-  [1,16,-40,12,16,3,0,0,0,0,3,0,1,0, ldraw_lib__bump5000()],
+  [1,16,-40,12,16,3,0,0,0,0,3,0,1,0, ldraw_lib__bump5000(realsolid)],
 // 1 16 40 8 16 0 0 -4 4 0 0 0 -4 0 box3u5p.dat
-  [1,16,40,8,16,0,0,-4,4,0,0,0,-4,0, ldraw_lib__box3u5p()],
+  [1,16,40,8,16,0,0,-4,4,0,0,0,-4,0, ldraw_lib__box3u5p(realsolid)],
 // 1 16 40 12 12 4 0 0 0 0 4 0 4 0 2-4cylc.dat
-  [1,16,40,12,12,4,0,0,0,0,4,0,4,0, ldraw_lib__2_4cylc()],
+  [1,16,40,12,12,4,0,0,0,0,4,0,4,0, ldraw_lib__2_4cylc(realsolid)],
 // 1 16 40 12 16 4 0 0 0 0 -4 0 -1 0 2-4ndis.dat
-  [1,16,40,12,16,4,0,0,0,0,-4,0,-1,0, ldraw_lib__2_4ndis()],
+  [1,16,40,12,16,4,0,0,0,0,-4,0,-1,0, ldraw_lib__2_4ndis(realsolid)],
 // 1 16 40 12 16 1 0 0 0 0 -1 0 -1 0 4-4ring3.dat
-  [1,16,40,12,16,1,0,0,0,0,-1,0,-1,0, ldraw_lib__4_4ring3()],
+  [1,16,40,12,16,1,0,0,0,0,-1,0,-1,0, ldraw_lib__4_4ring3(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 40 12 16 3 0 0 0 0 3 0 1 0 bump5000.dat
-  [1,16,40,12,16,3,0,0,0,0,3,0,1,0, ldraw_lib__bump5000()],
+  [1,16,40,12,16,3,0,0,0,0,3,0,1,0, ldraw_lib__bump5000(realsolid)],
 // 1 16 -40 8 -16 0 0 4 4 0 0 0 4 0 box3u5p.dat
-  [1,16,-40,8,-16,0,0,4,4,0,0,0,4,0, ldraw_lib__box3u5p()],
+  [1,16,-40,8,-16,0,0,4,4,0,0,0,4,0, ldraw_lib__box3u5p(realsolid)],
 // 1 16 -40 12 -12 -4 0 0 0 0 4 0 -4 0 2-4cylc.dat
-  [1,16,-40,12,-12,-4,0,0,0,0,4,0,-4,0, ldraw_lib__2_4cylc()],
+  [1,16,-40,12,-12,-4,0,0,0,0,4,0,-4,0, ldraw_lib__2_4cylc(realsolid)],
 // 1 16 -40 12 -16 -4 0 0 0 0 -4 0 1 0 2-4ndis.dat
-  [1,16,-40,12,-16,-4,0,0,0,0,-4,0,1,0, ldraw_lib__2_4ndis()],
+  [1,16,-40,12,-16,-4,0,0,0,0,-4,0,1,0, ldraw_lib__2_4ndis(realsolid)],
 // 1 16 -40 12 -16 -1 0 0 0 0 -1 0 1 0 4-4ring3.dat
-  [1,16,-40,12,-16,-1,0,0,0,0,-1,0,1,0, ldraw_lib__4_4ring3()],
+  [1,16,-40,12,-16,-1,0,0,0,0,-1,0,1,0, ldraw_lib__4_4ring3(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -40 12 -16 -3 0 0 0 0 3 0 -1 0 bump5000.dat
-  [1,16,-40,12,-16,-3,0,0,0,0,3,0,-1,0, ldraw_lib__bump5000()],
+  [1,16,-40,12,-16,-3,0,0,0,0,3,0,-1,0, ldraw_lib__bump5000(realsolid)],
 // 1 16 40 8 -16 0 0 4 4 0 0 0 4 0 box3u5p.dat
-  [1,16,40,8,-16,0,0,4,4,0,0,0,4,0, ldraw_lib__box3u5p()],
+  [1,16,40,8,-16,0,0,4,4,0,0,0,4,0, ldraw_lib__box3u5p(realsolid)],
 // 1 16 40 12 -12 -4 0 0 0 0 4 0 -4 0 2-4cylc.dat
-  [1,16,40,12,-12,-4,0,0,0,0,4,0,-4,0, ldraw_lib__2_4cylc()],
+  [1,16,40,12,-12,-4,0,0,0,0,4,0,-4,0, ldraw_lib__2_4cylc(realsolid)],
 // 1 16 40 12 -16 -4 0 0 0 0 -4 0 1 0 2-4ndis.dat
-  [1,16,40,12,-16,-4,0,0,0,0,-4,0,1,0, ldraw_lib__2_4ndis()],
+  [1,16,40,12,-16,-4,0,0,0,0,-4,0,1,0, ldraw_lib__2_4ndis(realsolid)],
 // 1 16 40 12 -16 -1 0 0 0 0 -1 0 1 0 4-4ring3.dat
-  [1,16,40,12,-16,-1,0,0,0,0,-1,0,1,0, ldraw_lib__4_4ring3()],
+  [1,16,40,12,-16,-1,0,0,0,0,-1,0,1,0, ldraw_lib__4_4ring3(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 40 12 -16 -3 0 0 0 0 3 0 -1 0 bump5000.dat
-  [1,16,40,12,-16,-3,0,0,0,0,3,0,-1,0, ldraw_lib__bump5000()],
+  [1,16,40,12,-16,-3,0,0,0,0,3,0,-1,0, ldraw_lib__bump5000(realsolid)],
 ];
 module ldraw_lib__4714(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4714(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4714(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4714(line=0.2);

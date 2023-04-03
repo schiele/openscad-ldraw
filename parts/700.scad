@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <700b.scad>
-function ldraw_lib__700() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__700(realsolid=false) = [
 // 0 ~Moved to 700b
 // 0 Name: 700.dat
 // 0 Author: [PTadmin]
@@ -17,8 +18,8 @@ function ldraw_lib__700() = [
 // 0 // Brick 10 x 20 with Underside Studs
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 700b.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__700b()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__700b(realsolid)],
 ];
 module ldraw_lib__700(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__700(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__700(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__700(line=0.2);

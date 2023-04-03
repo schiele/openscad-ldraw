@@ -5,7 +5,8 @@ use <../p/4-4cylo.scad>
 use <../p/4-4edge.scad>
 use <../p/4-4ring4.scad>
 use <../p/peghole.scad>
-function ldraw_lib__75535() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__75535(realsolid=false) = [
 // 0 Technic Pin Joiner Round
 // 0 Name: 75535.dat
 // 0 Author: James Jessiman
@@ -27,36 +28,36 @@ function ldraw_lib__75535() = [
 // 
 // 
 // 1 16 20 0 0 0 -1 0 1 0 0 0 0 1 peghole.dat
-  [1,16,20,0,0,0,-1,0,1,0,0,0,0,1, ldraw_lib__peghole()],
+  [1,16,20,0,0,0,-1,0,1,0,0,0,0,1, ldraw_lib__peghole(realsolid)],
 // 1 16 -20 0 0 0 1 0 1 0 0 0 0 1 peghole.dat
-  [1,16,-20,0,0,0,1,0,1,0,0,0,0,1, ldraw_lib__peghole()],
+  [1,16,-20,0,0,0,1,0,1,0,0,0,0,1, ldraw_lib__peghole(realsolid)],
 // 1 16 2 0 0 0 -2 0 1 0 0 0 0 1 peghole.dat
-  [1,16,2,0,0,0,-2,0,1,0,0,0,0,1, ldraw_lib__peghole()],
+  [1,16,2,0,0,0,-2,0,1,0,0,0,0,1, ldraw_lib__peghole(realsolid)],
 // 1 16 -2 0 0 0 2 0 1 0 0 0 0 1 peghole.dat
-  [1,16,-2,0,0,0,2,0,1,0,0,0,0,1, ldraw_lib__peghole()],
+  [1,16,-2,0,0,0,2,0,1,0,0,0,0,1, ldraw_lib__peghole(realsolid)],
 // 1 16 16 0 0 0 -1 0 9.5 0 0 0 0 9.5 4-4edge.dat
-  [1,16,16,0,0,0,-1,0,9.5,0,0,0,0,9.5, ldraw_lib__4_4edge()],
+  [1,16,16,0,0,0,-1,0,9.5,0,0,0,0,9.5, ldraw_lib__4_4edge(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 18 0 0 0 -16 0 6 0 0 0 0 6 4-4cyli.dat
-  [1,16,18,0,0,0,-16,0,6,0,0,0,0,6, ldraw_lib__4_4cyli()],
+  [1,16,18,0,0,0,-16,0,6,0,0,0,0,6, ldraw_lib__4_4cyli(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -18 0 0 0 16 0 6 0 0 0 0 6 4-4cyli.dat
-  [1,16,-18,0,0,0,16,0,6,0,0,0,0,6, ldraw_lib__4_4cyli()],
+  [1,16,-18,0,0,0,16,0,6,0,0,0,0,6, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 15.75 0 0 0 -35.75 0 10 0 0 0 0 10 4-4cylo.dat
-  [1,16,15.75,0,0,0,-35.75,0,10,0,0,0,0,10, ldraw_lib__4_4cylo()],
+  [1,16,15.75,0,0,0,-35.75,0,10,0,0,0,0,10, ldraw_lib__4_4cylo(realsolid)],
 // 1 16 20 0 0 0 -3.75 0 10 0 0 0 0 10 4-4cylo.dat
-  [1,16,20,0,0,0,-3.75,0,10,0,0,0,0,10, ldraw_lib__4_4cylo()],
+  [1,16,20,0,0,0,-3.75,0,10,0,0,0,0,10, ldraw_lib__4_4cylo(realsolid)],
 // 1 16 16.25 0 0 0 -0.25 0 0.5 0 0 0 0 0.5 4-4con19.dat
-  [1,16,16.25,0,0,0,-0.25,0,0.5,0,0,0,0,0.5, ldraw_lib__4_4con19()],
+  [1,16,16.25,0,0,0,-0.25,0,0.5,0,0,0,0,0.5, ldraw_lib__4_4con19(realsolid)],
 // 1 16 15.75 0 0 0 0.25 0 0.5 0 0 0 0 -0.5 4-4con19.dat
-  [1,16,15.75,0,0,0,0.25,0,0.5,0,0,0,0,-0.5, ldraw_lib__4_4con19()],
+  [1,16,15.75,0,0,0,0.25,0,0.5,0,0,0,0,-0.5, ldraw_lib__4_4con19(realsolid)],
 // 1 16 20 0 0 0 -1 0 2 0 0 0 0 -2 4-4ring4.dat
-  [1,16,20,0,0,0,-1,0,2,0,0,0,0,-2, ldraw_lib__4_4ring4()],
+  [1,16,20,0,0,0,-1,0,2,0,0,0,0,-2, ldraw_lib__4_4ring4(realsolid)],
 // 1 16 -20 0 0 0 1 0 2 0 0 0 0 2 4-4ring4.dat
-  [1,16,-20,0,0,0,1,0,2,0,0,0,0,2, ldraw_lib__4_4ring4()],
+  [1,16,-20,0,0,0,1,0,2,0,0,0,0,2, ldraw_lib__4_4ring4(realsolid)],
 ];
 module ldraw_lib__75535(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__75535(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__75535(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__75535(line=0.2);

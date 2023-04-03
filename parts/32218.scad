@@ -3,7 +3,8 @@ use <../p/2-4cyli.scad>
 use <../p/2-4ring9.scad>
 use <../p/connhole.scad>
 use <../p/znap6.scad>
-function ldraw_lib__32218() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__32218(realsolid=false) = [
 // 0 Znap Beam Curved Double  4 Holes
 // 0 Name: 32218.dat
 // 0 Author: Michael Heidemann [mikeheide]
@@ -221,21 +222,21 @@ function ldraw_lib__32218() = [
   [2,24,6.466,10,104.346,0,10,106.538],
 // 0 //
 // 1 16 -80 0 -20 1 0 0 0 1 0 0 0 1 znap6.dat
-  [1,16,-80,0,-20,1,0,0,0,1,0,0,0,1, ldraw_lib__znap6()],
+  [1,16,-80,0,-20,1,0,0,0,1,0,0,0,1, ldraw_lib__znap6(realsolid)],
 // 1 16 80 0 -20 1 0 0 0 1 0 0 0 1 znap6.dat
-  [1,16,80,0,-20,1,0,0,0,1,0,0,0,1, ldraw_lib__znap6()],
+  [1,16,80,0,-20,1,0,0,0,1,0,0,0,1, ldraw_lib__znap6(realsolid)],
 // 1 16 0 0 60 1 0 0 0 1 0 0 0 1 znap6.dat
-  [1,16,0,0,60,1,0,0,0,1,0,0,0,1, ldraw_lib__znap6()],
+  [1,16,0,0,60,1,0,0,0,1,0,0,0,1, ldraw_lib__znap6(realsolid)],
 // 1 16 0 0 180 -1 0 0 0 1 0 0 0 -1 znap6.dat
-  [1,16,0,0,180,-1,0,0,0,1,0,0,0,-1, ldraw_lib__znap6()],
+  [1,16,0,0,180,-1,0,0,0,1,0,0,0,-1, ldraw_lib__znap6(realsolid)],
 // 1 16 0 0 80 1 0 0 0 1 0 0 0 1 connhole.dat
-  [1,16,0,0,80,1,0,0,0,1,0,0,0,1, ldraw_lib__connhole()],
+  [1,16,0,0,80,1,0,0,0,1,0,0,0,1, ldraw_lib__connhole(realsolid)],
 // 1 16 0 0 160 1 0 0 0 1 0 0 0 1 connhole.dat
-  [1,16,0,0,160,1,0,0,0,1,0,0,0,1, ldraw_lib__connhole()],
+  [1,16,0,0,160,1,0,0,0,1,0,0,0,1, ldraw_lib__connhole(realsolid)],
 // 1 16 -80 0 0 1 0 0 0 1 0 0 0 1 connhole.dat
-  [1,16,-80,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__connhole()],
+  [1,16,-80,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__connhole(realsolid)],
 // 1 16 80 0 0 1 0 0 0 1 0 0 0 1 connhole.dat
-  [1,16,80,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__connhole()],
+  [1,16,80,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__connhole(realsolid)],
 // 0 //
 // 2 24 90 10 0 90 10 -25
   [2,24,90,10,0,90,10,-25],
@@ -1324,21 +1325,21 @@ function ldraw_lib__32218() = [
   [2,24,-29.2253,-2,72.1608,-28.16,-2,73.096],
 // 0 //
 // 1 16 0 -10 80 1 0 0 0 1 0 0 0 1 2-4ring9.dat
-  [1,16,0,-10,80,1,0,0,0,1,0,0,0,1, ldraw_lib__2_4ring9()],
+  [1,16,0,-10,80,1,0,0,0,1,0,0,0,1, ldraw_lib__2_4ring9(realsolid)],
 // 1 16 0 10 80 -1 0 0 0 -1 0 0 0 1 2-4ring9.dat
-  [1,16,0,10,80,-1,0,0,0,-1,0,0,0,1, ldraw_lib__2_4ring9()],
+  [1,16,0,10,80,-1,0,0,0,-1,0,0,0,1, ldraw_lib__2_4ring9(realsolid)],
 // 1 16 0 -10 80 10 0 0 0 20 0 0 0 10 2-4cyli.dat
-  [1,16,0,-10,80,10,0,0,0,20,0,0,0,10, ldraw_lib__2_4cyli()],
+  [1,16,0,-10,80,10,0,0,0,20,0,0,0,10, ldraw_lib__2_4cyli(realsolid)],
 // 1 16 -80 -10 0 9 0 0 0 20 0 0 0 9 2-4cyli.dat
-  [1,16,-80,-10,0,9,0,0,0,20,0,0,0,9, ldraw_lib__2_4cyli()],
+  [1,16,-80,-10,0,9,0,0,0,20,0,0,0,9, ldraw_lib__2_4cyli(realsolid)],
 // 1 16 80 -10 0 9 0 0 0 20 0 0 0 9 2-4cyli.dat
-  [1,16,80,-10,0,9,0,0,0,20,0,0,0,9, ldraw_lib__2_4cyli()],
+  [1,16,80,-10,0,9,0,0,0,20,0,0,0,9, ldraw_lib__2_4cyli(realsolid)],
 // 1 16 0 -10 160 -10 0 0 0 20 0 0 0 -10 2-4cyli.dat
-  [1,16,0,-10,160,-10,0,0,0,20,0,0,0,-10, ldraw_lib__2_4cyli()],
+  [1,16,0,-10,160,-10,0,0,0,20,0,0,0,-10, ldraw_lib__2_4cyli(realsolid)],
 // 1 16 0 -10 160 -1 0 0 0 1 0 0 0 -1 2-4ring9.dat
-  [1,16,0,-10,160,-1,0,0,0,1,0,0,0,-1, ldraw_lib__2_4ring9()],
+  [1,16,0,-10,160,-1,0,0,0,1,0,0,0,-1, ldraw_lib__2_4ring9(realsolid)],
 // 1 16 0 10 160 1 0 0 0 -1 0 0 0 -1 2-4ring9.dat
-  [1,16,0,10,160,1,0,0,0,-1,0,0,0,-1, ldraw_lib__2_4ring9()],
+  [1,16,0,10,160,1,0,0,0,-1,0,0,0,-1, ldraw_lib__2_4ring9(realsolid)],
 // 0 //
 // 4 16 -72.312 -10 6.998 -67.119 -10 22.317 -63.7564 -10 20.924 -68.7964 -10 6.056
   [4,16,-72.312,-10,6.998,-67.119,-10,22.317,-63.7564,-10,20.924,-68.7964,-10,6.056],
@@ -1954,5 +1955,5 @@ function ldraw_lib__32218() = [
 // 0 //
 ];
 module ldraw_lib__32218(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__32218(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__32218(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__32218(line=0.2);

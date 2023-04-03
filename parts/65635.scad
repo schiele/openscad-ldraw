@@ -6,7 +6,8 @@ use <s/65635s01.scad>
 use <../p/stug-1x4.scad>
 use <../p/stug2-2x1.scad>
 use <../p/stug4-1x3.scad>
-function ldraw_lib__65635() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__65635(realsolid=false) = [
 // 0 Plate  2 x  6 with Side Bricks  1 x  2 x  1.333 with Axlehole
 // 0 Name: 65635.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -21,37 +22,37 @@ function ldraw_lib__65635() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\65635s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__65635s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__65635s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 -1 s\65635s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__65635s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__65635s01(realsolid)],
 // 
 // 1 16 0 28 0 1 0 0 0 -1 0 0 0 1 stug4-1x3.dat
-  [1,16,0,28,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stug4_1x3()],
+  [1,16,0,28,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stug4_1x3(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 32 0 40 0 0 0 -4 0 0 0 16 box3u2p.dat
-  [1,16,0,32,0,40,0,0,0,-4,0,0,0,16, ldraw_lib__box3u2p()],
+  [1,16,0,32,0,40,0,0,0,-4,0,0,0,16, ldraw_lib__box3u2p(realsolid)],
 // 4 16 60 32 20 56 32 16 -56 32 16 -60 32 20
   [4,16,60,32,20,56,32,16,-56,32,16,-60,32,20],
 // 4 16 -60 32 -20 -56 32 -16 56 32 -16 60 32 -20
   [4,16,-60,32,-20,-56,32,-16,56,32,-16,60,32,-20],
 // 1 16 0 24 0 40 0 0 0 1 0 0 0 20 rect.dat
-  [1,16,0,24,0,40,0,0,0,1,0,0,0,20, ldraw_lib__rect()],
+  [1,16,0,24,0,40,0,0,0,1,0,0,0,20, ldraw_lib__rect(realsolid)],
 // 1 16 0 24 10 1 0 0 0 1 0 0 0 1 stug-1x4.dat
-  [1,16,0,24,10,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_1x4()],
+  [1,16,0,24,10,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_1x4(realsolid)],
 // 1 16 0 24 -10 1 0 0 0 1 0 0 0 1 stug-1x4.dat
-  [1,16,0,24,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_1x4()],
+  [1,16,0,24,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_1x4(realsolid)],
 // 1 16 0 32 0 60 0 0 0 1 0 0 0 20 recte4.dat
-  [1,16,0,32,0,60,0,0,0,1,0,0,0,20, ldraw_lib__recte4()],
+  [1,16,0,32,0,60,0,0,0,1,0,0,0,20, ldraw_lib__recte4(realsolid)],
 // 4 16 60 32 -20 40 24 -20 -40 24 -20 -60 32 -20
   [4,16,60,32,-20,40,24,-20,-40,24,-20,-60,32,-20],
 // 4 16 -40 24 20 40 24 20 60 32 20 -60 32 20
   [4,16,-40,24,20,40,24,20,60,32,20,-60,32,20],
 // 1 16 50 0 0 1 0 0 0 1 0 0 0 1 stug2-2x1.dat
-  [1,16,50,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug2_2x1()],
+  [1,16,50,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug2_2x1(realsolid)],
 // 1 16 -50 0 0 1 0 0 0 1 0 0 0 1 stug2-2x1.dat
-  [1,16,-50,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug2_2x1()],
+  [1,16,-50,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug2_2x1(realsolid)],
 ];
 module ldraw_lib__65635(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__65635(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__65635(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__65635(line=0.2);

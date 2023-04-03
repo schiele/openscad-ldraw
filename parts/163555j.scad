@@ -3,7 +3,8 @@ use <../p/1-4chrd.scad>
 use <../p/1-4ndis.scad>
 use <../p/1-4ring2.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__163555j() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__163555j(realsolid=false) = [
 // 0 Sticker  1.1 x  1.9 with Airport Direction Sign - Left
 // 0 Name: 163555j.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -21,33 +22,33 @@ function ldraw_lib__163555j() = [
 // 
 // 
 // 1 16 0 -0.25 0 19 0 0 0 0.25 0 0 0 11 box5-12.dat
-  [1,16,0,-0.25,0,19,0,0,0,0.25,0,0,0,11, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,19,0,0,0,0.25,0,0,0,11, ldraw_lib__box5_12(realsolid)],
 // 1 16 -14 -.25 7 0 0 -3 0 1 0 3 0 0 1-4ndis.dat
-  [1,16,-14,-.25,7,0,0,-3,0,1,0,3,0,0, ldraw_lib__1_4ndis()],
+  [1,16,-14,-.25,7,0,0,-3,0,1,0,3,0,0, ldraw_lib__1_4ndis(realsolid)],
 // 1 16 14 -.25 7 3 0 0 0 1 0 0 0 3 1-4ndis.dat
-  [1,16,14,-.25,7,3,0,0,0,1,0,0,0,3, ldraw_lib__1_4ndis()],
+  [1,16,14,-.25,7,3,0,0,0,1,0,0,0,3, ldraw_lib__1_4ndis(realsolid)],
 // 1 16 14 -.25 -7 0 0 3 0 1 0 -3 0 0 1-4ndis.dat
-  [1,16,14,-.25,-7,0,0,3,0,1,0,-3,0,0, ldraw_lib__1_4ndis()],
+  [1,16,14,-.25,-7,0,0,3,0,1,0,-3,0,0, ldraw_lib__1_4ndis(realsolid)],
 // 1 16 -14 -.25 -7 -3 0 0 0 1 0 0 0 -3 1-4ndis.dat
-  [1,16,-14,-.25,-7,-3,0,0,0,1,0,0,0,-3, ldraw_lib__1_4ndis()],
+  [1,16,-14,-.25,-7,-3,0,0,0,1,0,0,0,-3, ldraw_lib__1_4ndis(realsolid)],
 // 0 BFC NOCLIP
   [0,"BFC","NOCLIP"],
 // 1 15 -14 -.25 7 0 0 -2 0 1 0 2 0 0 1-4chrd.dat
-  [1,15,-14,-.25,7,0,0,-2,0,1,0,2,0,0, ldraw_lib__1_4chrd()],
+  [1,15,-14,-.25,7,0,0,-2,0,1,0,2,0,0, ldraw_lib__1_4chrd(realsolid)],
 // 1 0 -14 -.25 7 0 0 -1 0 1 0 1 0 0 1-4ring2.dat
-  [1,0,-14,-.25,7,0,0,-1,0,1,0,1,0,0, ldraw_lib__1_4ring2()],
+  [1,0,-14,-.25,7,0,0,-1,0,1,0,1,0,0, ldraw_lib__1_4ring2(realsolid)],
 // 1 15 14 -.25 7 2 0 0 0 1 0 0 0 2 1-4chrd.dat
-  [1,15,14,-.25,7,2,0,0,0,1,0,0,0,2, ldraw_lib__1_4chrd()],
+  [1,15,14,-.25,7,2,0,0,0,1,0,0,0,2, ldraw_lib__1_4chrd(realsolid)],
 // 1 0 14 -.25 7 1 0 0 0 1 0 0 0 1 1-4ring2.dat
-  [1,0,14,-.25,7,1,0,0,0,1,0,0,0,1, ldraw_lib__1_4ring2()],
+  [1,0,14,-.25,7,1,0,0,0,1,0,0,0,1, ldraw_lib__1_4ring2(realsolid)],
 // 1 15 -14 -.25 -7 -2 0 0 0 1 0 0 0 -2 1-4chrd.dat
-  [1,15,-14,-.25,-7,-2,0,0,0,1,0,0,0,-2, ldraw_lib__1_4chrd()],
+  [1,15,-14,-.25,-7,-2,0,0,0,1,0,0,0,-2, ldraw_lib__1_4chrd(realsolid)],
 // 1 0 -14 -.25 -7 -1 0 0 0 1 0 0 0 -1 1-4ring2.dat
-  [1,0,-14,-.25,-7,-1,0,0,0,1,0,0,0,-1, ldraw_lib__1_4ring2()],
+  [1,0,-14,-.25,-7,-1,0,0,0,1,0,0,0,-1, ldraw_lib__1_4ring2(realsolid)],
 // 1 15 14 -.25 -7 0 0 2 0 1 0 -2 0 0 1-4chrd.dat
-  [1,15,14,-.25,-7,0,0,2,0,1,0,-2,0,0, ldraw_lib__1_4chrd()],
+  [1,15,14,-.25,-7,0,0,2,0,1,0,-2,0,0, ldraw_lib__1_4chrd(realsolid)],
 // 1 0 14 -.25 -7 0 0 1 0 1 0 -1 0 0 1-4ring2.dat
-  [1,0,14,-.25,-7,0,0,1,0,1,0,-1,0,0, ldraw_lib__1_4ring2()],
+  [1,0,14,-.25,-7,0,0,1,0,1,0,-1,0,0, ldraw_lib__1_4ring2(realsolid)],
 // 4 4 14 -.25 -1.4 14 -.25 2 11.6 -.25 2 11.6 -.25 -1.4
   [4,4,14,-.25,-1.4,14,-.25,2,11.6,-.25,2,11.6,-.25,-1.4],
 // 4 0 -3.4 -.25 -6.1 -3.4 -.25 -5.7 -3.8 -.25 -5.7 -3.8 -.25 -6.1
@@ -286,5 +287,5 @@ function ldraw_lib__163555j() = [
   [3,16,-19,-.25,11,-17,-.25,7,-17,-.25,10],
 ];
 module ldraw_lib__163555j(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__163555j(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__163555j(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__163555j(line=0.2);

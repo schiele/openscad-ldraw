@@ -5,7 +5,8 @@ use <../../p/4-4cyli.scad>
 use <../../p/4-4edge.scad>
 use <../../p/4-4rin19.scad>
 use <../../p/4-4ring1.scad>
-function ldraw_lib__s__6122s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__6122s01(realsolid=false) = [
 // 0 ~Minifig Helmet Castle with Dragon Crown Top Half
 // 0 Name: s\6122s01.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -296,15 +297,15 @@ function ldraw_lib__s__6122s01() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 13 3.4 -0.7 0 6 0 -2 0 0 0 0 2 4-4cylc.dat
-  [1,16,13,3.4,-0.7,0,6,0,-2,0,0,0,0,2, ldraw_lib__4_4cylc()],
+  [1,16,13,3.4,-0.7,0,6,0,-2,0,0,0,0,2, ldraw_lib__4_4cylc(realsolid)],
 // 1 16 19 3.4 -0.7 0 1 0 -4.1 0 0 0 0 4.1 4-4edge.dat
-  [1,16,19,3.4,-0.7,0,1,0,-4.1,0,0,0,0,4.1, ldraw_lib__4_4edge()],
+  [1,16,19,3.4,-0.7,0,1,0,-4.1,0,0,0,0,4.1, ldraw_lib__4_4edge(realsolid)],
 // 1 16 19 3.4 -0.7 0 -1 0 -2 0 0 0 0 -2 4-4ring1.dat
-  [1,16,19,3.4,-0.7,0,-1,0,-2,0,0,0,0,-2, ldraw_lib__4_4ring1()],
+  [1,16,19,3.4,-0.7,0,-1,0,-2,0,0,0,0,-2, ldraw_lib__4_4ring1(realsolid)],
 // 1 16 19 3.4 -0.7 0 -1 0 -0.205 0 0 0 0 -0.205 4-4rin19.dat
-  [1,16,19,3.4,-0.7,0,-1,0,-0.205,0,0,0,0,-0.205, ldraw_lib__4_4rin19()],
+  [1,16,19,3.4,-0.7,0,-1,0,-0.205,0,0,0,0,-0.205, ldraw_lib__4_4rin19(realsolid)],
 // 1 16 14 3.4 -0.7 0 5 0 -4.1 0 0 0 0 4.1 4-4cyli.dat
-  [1,16,14,3.4,-0.7,0,5,0,-4.1,0,0,0,0,4.1, ldraw_lib__4_4cyli()],
+  [1,16,14,3.4,-0.7,0,5,0,-4.1,0,0,0,0,4.1, ldraw_lib__4_4cyli(realsolid)],
 // 0 // bottom of top pinhole
 // 2 24 2.899 -13 11.899 3.788 -13 10.569
   [2,24,2.899,-13,11.899,3.788,-13,10.569],
@@ -321,7 +322,7 @@ function ldraw_lib__s__6122s01() = [
 // 4 16 3.461 -13 6.942 2.766 -13 11.988 2.899 -13 11.899 3.788 -13 7.431
   [4,16,3.461,-13,6.942,2.766,-13,11.988,2.899,-13,11.899,3.788,-13,7.431],
 // 1 16 0 -7 0 7.391 0 3.0615 0 1 0 3.0615 0 -7.391 1-8edge.dat
-  [1,16,0,-7,0,7.391,0,3.0615,0,1,0,3.0615,0,-7.391, ldraw_lib__1_8edge()],
+  [1,16,0,-7,0,7.391,0,3.0615,0,1,0,3.0615,0,-7.391, ldraw_lib__1_8edge(realsolid)],
 // 0 //
 // 4 16 0 -12.1 -14.43 3.597 -12.1 -14.43 4 -12.94 -15.56 0 -12.94 -15.56
   [4,16,0,-12.1,-14.43,3.597,-12.1,-14.43,4,-12.94,-15.56,0,-12.94,-15.56],
@@ -2299,5 +2300,5 @@ function ldraw_lib__s__6122s01() = [
   [5,24,15.68,-0.8996,3.438,15.45,1.35,2.834,14.45,-0.1547,3.9,16.25,0.5028,1.987],
 ];
 module ldraw_lib__s__6122s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__6122s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__6122s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__6122s01(line=0.2);

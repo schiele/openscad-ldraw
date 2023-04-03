@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3298s01.scad>
-function ldraw_lib__3298p21() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3298p21(realsolid=false) = [
 // 0 Slope Brick 33  3 x  2 with Red Stars Pattern
 // 0 Name: 3298p21.dat
 // 0 Author: Tore Eriksson [Tore_Eriksson]
@@ -20,7 +21,7 @@ function ldraw_lib__3298p21() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3298s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3298s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3298s01(realsolid)],
 // 3 4 -0.0141 2.0991 -14.1983 -2.4722 5.4825 -20.9651 2.4441 5.4825 -20.9651
   [3,4,-0.0141,2.0991,-14.1983,-2.4722,5.4825,-20.9651,2.4441,5.4825,-20.9651],
 // 4 4 2.4441 5.4825 -20.9651 -2.4722 5.4825 -20.9651 -3.9915 7.5736 -25.1472 -0.0141 8.8659 -27.7318
@@ -173,5 +174,5 @@ function ldraw_lib__3298p21() = [
   [3,16,20,0,-10,-20,0,-10,0,1.1104,-12.2209],
 ];
 module ldraw_lib__3298p21(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3298p21(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3298p21(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3298p21(line=0.2);

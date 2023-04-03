@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3068bs01.scad>
-function ldraw_lib__3068bpg6() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3068bpg6(realsolid=false) = [
 // 0 Tile  2 x  2 with Fabuland Orange Pattern
 // 0 Name: 3068bpg6.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -17,7 +18,7 @@ function ldraw_lib__3068bpg6() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3068bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3068bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3068bs01(realsolid)],
 // 4 0 1.1 0 4.3 0 0 4.3 0 0 4 1.1 0 4
   [4,0,1.1,0,4.3,0,0,4.3,0,0,4,1.1,0,4],
 // 4 0 0.7 0 4.7 0.4 0 4.7 0.2 0 4.6 0.9 0 4.6
@@ -1180,5 +1181,5 @@ function ldraw_lib__3068bpg6() = [
   [3,16,0,0,20,-0.7,0,17.4,-0.1,0,16.6],
 ];
 module ldraw_lib__3068bpg6(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3068bpg6(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3068bpg6(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3068bpg6(line=0.2);

@@ -3,7 +3,8 @@ use <../p/2-4cyls.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4edge.scad>
 use <../p/4-4ndis.scad>
-function ldraw_lib__2890() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2890(realsolid=false) = [
 // 0 ~Monorail Points Rack Shover
 // 0 Name: 2890.dat
 // 0 Author: Bernd Broich [bbroich]
@@ -18,25 +19,25 @@ function ldraw_lib__2890() = [
 // 
 // 
 // 1 16 -19 0.5 0 3.5 0 0 -0.25 1 0 0 0 3.5 4-4edge.dat
-  [1,16,-19,0.5,0,3.5,0,0,-0.25,1,0,0,0,3.5, ldraw_lib__4_4edge()],
+  [1,16,-19,0.5,0,3.5,0,0,-0.25,1,0,0,0,3.5, ldraw_lib__4_4edge(realsolid)],
 // 1 16 -19 0.5 0 3.5 0 0 -0.25 1 0 0 0 3.5 4-4ndis.dat
-  [1,16,-19,0.5,0,3.5,0,0,-0.25,1,0,0,0,3.5, ldraw_lib__4_4ndis()],
+  [1,16,-19,0.5,0,3.5,0,0,-0.25,1,0,0,0,3.5, ldraw_lib__4_4ndis(realsolid)],
 // 1 16 -19 3 0 3.5 0 0 0 1 0 0 0 3.5 4-4edge.dat
-  [1,16,-19,3,0,3.5,0,0,0,1,0,0,0,3.5, ldraw_lib__4_4edge()],
+  [1,16,-19,3,0,3.5,0,0,0,1,0,0,0,3.5, ldraw_lib__4_4edge(realsolid)],
 // 1 16 -19 3 0 3.5 0 0 0 -1 0 0 0 3.5 4-4ndis.dat
-  [1,16,-19,3,0,3.5,0,0,0,-1,0,0,0,3.5, ldraw_lib__4_4ndis()],
+  [1,16,-19,3,0,3.5,0,0,0,-1,0,0,0,3.5, ldraw_lib__4_4ndis(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -19 0.75 0 -3.5 0 0 0 -0.25 0 0 0 -3.5 2-4cyls.dat
-  [1,16,-19,0.75,0,-3.5,0,0,0,-0.25,0,0,0,-3.5, ldraw_lib__2_4cyls()],
+  [1,16,-19,0.75,0,-3.5,0,0,0,-0.25,0,0,0,-3.5, ldraw_lib__2_4cyls(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -19 0.75 0 -3.5 0 0 0 -0.25 0 0 0 3.5 2-4cyls.dat
-  [1,16,-19,0.75,0,-3.5,0,0,0,-0.25,0,0,0,3.5, ldraw_lib__2_4cyls()],
+  [1,16,-19,0.75,0,-3.5,0,0,0,-0.25,0,0,0,3.5, ldraw_lib__2_4cyls(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -19 0.75 0 3.5 0 0 0 2.25 0 0 0 3.5 4-4cyli.dat
-  [1,16,-19,0.75,0,3.5,0,0,0,2.25,0,0,0,3.5, ldraw_lib__4_4cyli()],
+  [1,16,-19,0.75,0,3.5,0,0,0,2.25,0,0,0,3.5, ldraw_lib__4_4cyli(realsolid)],
 // 
 // 2 24 -12 0 9 -12 0 -9
   [2,24,-12,0,9,-12,0,-9],
@@ -261,5 +262,5 @@ function ldraw_lib__2890() = [
 // 
 ];
 module ldraw_lib__2890(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2890(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2890(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2890(line=0.2);

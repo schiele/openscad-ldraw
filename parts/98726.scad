@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4cylo.scad>
 use <../p/4-4ring8.scad>
 use <../p/stud4o.scad>
-function ldraw_lib__98726() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__98726(realsolid=false) = [
 // 0 Minifig Hair Swept Right with Front Curl
 // 0 Name: 98726.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -3044,11 +3045,11 @@ function ldraw_lib__98726() = [
 // 3 16 12.305 12.737 -4.177 12.011 12.565 -4.975 11.53 9.779 -6.012
   [3,16,12.305,12.737,-4.177,12.011,12.565,-4.975,11.53,9.779,-6.012],
 // 1 16 0 -2 0 9 0 0 0 2 0 0 0 9 4-4cylo.dat
-  [1,16,0,-2,0,9,0,0,0,2,0,0,0,9, ldraw_lib__4_4cylo()],
+  [1,16,0,-2,0,9,0,0,0,2,0,0,0,9, ldraw_lib__4_4cylo(realsolid)],
 // 1 16 0 0 0 1 0 0 0 -1 0 0 0 -1 4-4ring8.dat
-  [1,16,0,0,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__4_4ring8()],
+  [1,16,0,0,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__4_4ring8(realsolid)],
 // 1 16 0 -5.5 0 1 0 0 0 -1.375 0 0 0 1 stud4o.dat
-  [1,16,0,-5.5,0,1,0,0,0,-1.375,0,0,0,1, ldraw_lib__stud4o()],
+  [1,16,0,-5.5,0,1,0,0,0,-1.375,0,0,0,1, ldraw_lib__stud4o(realsolid)],
 // 0 // Added lines/Condlines
 // 5 24 11.826 12.486 -5.372 13.408 12.101 -5.739 13.273 9.779 -6.618 12.011 12.565 -4.975
   [5,24,11.826,12.486,-5.372,13.408,12.101,-5.739,13.273,9.779,-6.618,12.011,12.565,-4.975],
@@ -6468,5 +6469,5 @@ function ldraw_lib__98726() = [
   [5,24,-13.2,12.396,-5.821,-14.665,10.523,-4.287,-13.48,10,-6.462,-13.891,12.575,-3.973],
 ];
 module ldraw_lib__98726(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__98726(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__98726(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__98726(line=0.2);

@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4ndis.scad>
 use <s/3069bs01.scad>
-function ldraw_lib__3069bpw4() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3069bpw4(realsolid=false) = [
 // 0 Tile  1 x  2 with Card with Juggling Joker Pattern
 // 0 Name: 3069bpw4.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -19,24 +20,24 @@ function ldraw_lib__3069bpw4() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3069bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3069bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3069bs01(realsolid)],
 // 
 // 1 4 -10.2 0 4.65 1.2 0 0 0 1 0 0 0 1.2 4-4disc.dat
-  [1,4,-10.2,0,4.65,1.2,0,0,0,1,0,0,0,1.2, ldraw_lib__4_4disc()],
+  [1,4,-10.2,0,4.65,1.2,0,0,0,1,0,0,0,1.2, ldraw_lib__4_4disc(realsolid)],
 // 1 16 -10.2 0 4.65 1.2 0 0 0 1 0 0 0 1.2 4-4ndis.dat
-  [1,16,-10.2,0,4.65,1.2,0,0,0,1,0,0,0,1.2, ldraw_lib__4_4ndis()],
+  [1,16,-10.2,0,4.65,1.2,0,0,0,1,0,0,0,1.2, ldraw_lib__4_4ndis(realsolid)],
 // 1 0 -5 0 7.25 1.2 0 0 0 1 0 0 0 1.2 4-4disc.dat
-  [1,0,-5,0,7.25,1.2,0,0,0,1,0,0,0,1.2, ldraw_lib__4_4disc()],
+  [1,0,-5,0,7.25,1.2,0,0,0,1,0,0,0,1.2, ldraw_lib__4_4disc(realsolid)],
 // 1 2 -11.85 0 -1.45 1.2 0 0 0 1 0 0 0 1.2 4-4disc.dat
-  [1,2,-11.85,0,-1.45,1.2,0,0,0,1,0,0,0,1.2, ldraw_lib__4_4disc()],
+  [1,2,-11.85,0,-1.45,1.2,0,0,0,1,0,0,0,1.2, ldraw_lib__4_4disc(realsolid)],
 // 1 14 -8.25 0 -6.6 1.2 0 0 0 1 0 0 0 1.2 4-4disc.dat
-  [1,14,-8.25,0,-6.6,1.2,0,0,0,1,0,0,0,1.2, ldraw_lib__4_4disc()],
+  [1,14,-8.25,0,-6.6,1.2,0,0,0,1,0,0,0,1.2, ldraw_lib__4_4disc(realsolid)],
 // 1 16 -5 0 7.25 1.2 0 0 0 1 0 0 0 1.2 4-4ndis.dat
-  [1,16,-5,0,7.25,1.2,0,0,0,1,0,0,0,1.2, ldraw_lib__4_4ndis()],
+  [1,16,-5,0,7.25,1.2,0,0,0,1,0,0,0,1.2, ldraw_lib__4_4ndis(realsolid)],
 // 1 16 -11.85 0 -1.45 1.2 0 0 0 1 0 0 0 1.2 4-4ndis.dat
-  [1,16,-11.85,0,-1.45,1.2,0,0,0,1,0,0,0,1.2, ldraw_lib__4_4ndis()],
+  [1,16,-11.85,0,-1.45,1.2,0,0,0,1,0,0,0,1.2, ldraw_lib__4_4ndis(realsolid)],
 // 1 16 -8.25 0 -6.6 1.2 0 0 0 1 0 0 0 1.2 4-4ndis.dat
-  [1,16,-8.25,0,-6.6,1.2,0,0,0,1,0,0,0,1.2, ldraw_lib__4_4ndis()],
+  [1,16,-8.25,0,-6.6,1.2,0,0,0,1,0,0,0,1.2, ldraw_lib__4_4ndis(realsolid)],
 // 4 4 -4.5 0 -4.6 -4.2 0 -4.25 -4.25 0 -3.8 -4.55 0 -3.5
   [4,4,-4.5,0,-4.6,-4.2,0,-4.25,-4.25,0,-3.8,-4.55,0,-3.5],
 // 4 4 -4.5 0 -4.6 -4.55 0 -3.5 -4.95 0 -3.45 -5.3 0 -3.7
@@ -1245,5 +1246,5 @@ function ldraw_lib__3069bpw4() = [
   [3,16,3.4,0,-7.9,2.9,0,-7.95,20,0,-10],
 ];
 module ldraw_lib__3069bpw4(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3069bpw4(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3069bpw4(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3069bpw4(line=0.2);

@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/4-4ering.scad>
 use <s/98138s01.scad>
-function ldraw_lib__98138p1m() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__98138p1m(realsolid=false) = [
 // 0 Tile  1 x  1 Round with Yellow Pizza Slice with Coral Pepperoni and Crust on Bright Green Background Pattern
 // 0 Name: 98138p1m.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -18,9 +19,9 @@ function ldraw_lib__98138p1m() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\98138s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01(realsolid)],
 // 1 10 0 0 0 9 0 0 0 1 0 0 0 9 4-4ering.dat
-  [1,10,0,0,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4ering()],
+  [1,10,0,0,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4ering(realsolid)],
 // 4 14 -4.84 0 -3.33 -5.64 0 -1.66 -5.94 0 -4.24 -5.9 0 -4.43
   [4,14,-4.84,0,-3.33,-5.64,0,-1.66,-5.94,0,-4.24,-5.9,0,-4.43],
 // 4 14 -4.84 0 -3.33 -5.9 0 -4.43 -5.79 0 -4.59 -5.63 0 -4.7
@@ -489,5 +490,5 @@ function ldraw_lib__98138p1m() = [
   [3,10,6.67,0,-2.88,6.56,0,-2.96,8.3151,0,-3.4443],
 ];
 module ldraw_lib__98138p1m(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__98138p1m(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__98138p1m(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__98138p1m(line=0.2);

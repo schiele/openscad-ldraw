@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <3679.scad>
 use <3680.scad>
-function ldraw_lib__4221774() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4221774(realsolid=false) = [
 // 0 ~_Turntable  2 x  2 Plate (Complete) Black/Medium Stone Grey (Obsolete)
 // 0 Name: 4221774.dat
 // 0 Author: [PTadmin]
@@ -18,10 +19,10 @@ function ldraw_lib__4221774() = [
 // 
 // 
 // 1 71 0 0 0 1 0 0 0 1 0 0 0 1 3679.dat
-  [1,71,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3679()],
+  [1,71,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3679(realsolid)],
 // 1 0 0 0 0 1 0 0 0 1 0 0 0 1 3680.dat
-  [1,0,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3680()],
+  [1,0,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3680(realsolid)],
 ];
 module ldraw_lib__4221774(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4221774(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4221774(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4221774(line=0.2);

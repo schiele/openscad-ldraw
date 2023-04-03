@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/5-16cyli.scad>
 use <s/3815bs01.scad>
-function ldraw_lib__3815bpu1() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3815bpu1(realsolid=false) = [
 // 0 Minifig Hips with Medium Azure and Magenta Stripes Pattern
 // 0 Name: 3815bpu1.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -18,9 +19,9 @@ function ldraw_lib__3815bpu1() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3815bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3815bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3815bs01(realsolid)],
 // 1 16 -2 12 0 0 4 0 8.08395 0 -3.34848 -3.34848 0 -8.08395 5-16cyli.dat
-  [1,16,-2,12,0,0,4,0,8.08395,0,-3.34848,-3.34848,0,-8.08395, ldraw_lib__5_16cyli()],
+  [1,16,-2,12,0,0,4,0,8.08395,0,-3.34848,-3.34848,0,-8.08395, ldraw_lib__5_16cyli(realsolid)],
 // 
 // 4 322 -10.4 4.1 -10 -11.15 6 -10 -13.3 6 -10 -12.25 3.9 -10
   [4,322,-10.4,4.1,-10,-11.15,6,-10,-13.3,6,-10,-12.25,3.9,-10],
@@ -90,5 +91,5 @@ function ldraw_lib__3815bpu1() = [
   [3,16,-8.1,0.5,-10,-9,0.5,-10,-18,0,-10],
 ];
 module ldraw_lib__3815bpu1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3815bpu1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3815bpu1(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3815bpu1(line=0.2);

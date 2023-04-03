@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <20844.scad>
 use <u9218c01.scad>
-function ldraw_lib__20844c01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__20844c01(realsolid=false) = [
 // 0 Electric Power Functions 2.0 IR Distance Sensor with Coiled Cable
 // 0 Name: 20844c01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -18,10 +19,10 @@ function ldraw_lib__20844c01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 20844.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__20844()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__20844(realsolid)],
 // 1 256 -36 10 0 0 0 -1 0 1 0 1 0 0 u9218c01.dat
-  [1,256,-36,10,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__u9218c01()],
+  [1,256,-36,10,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__u9218c01(realsolid)],
 ];
 module ldraw_lib__20844c01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__20844c01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__20844c01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__20844c01(line=0.2);

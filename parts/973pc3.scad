@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/1-4cyli.scad>
 use <s/973s01.scad>
-function ldraw_lib__973pc3() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__973pc3(realsolid=false) = [
 // 0 Minifig Torso with White Jester Collar, Female Outline and Black Quarters Pattern
 // 0 Name: 973pc3.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -19,9 +20,9 @@ function ldraw_lib__973pc3() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01(realsolid)],
 // 1 0 0 -4 0 4.243 0 -4.243 0 -8 0 -4.243 0 -4.243 1-4cyli.dat
-  [1,0,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli()],
+  [1,0,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli(realsolid)],
 // 
 // 3 0 -3.45 4.65 -10 -4.35 4.35 -10 -3.15 5.45 -10
   [3,0,-3.45,4.65,-10,-4.35,4.35,-10,-3.15,5.45,-10],
@@ -1066,5 +1067,5 @@ function ldraw_lib__973pc3() = [
   [3,15,-8.45,1,10,0,1,10,-7.55,1.95,10],
 ];
 module ldraw_lib__973pc3(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__973pc3(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__973pc3(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__973pc3(line=0.2);

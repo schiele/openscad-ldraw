@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__6009254as08() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__6009254as08(realsolid=false) = [
 // 0 ~Sticker  4.3 x  1.8 with Number and Logos on Red Background - Upper Section 8
 // 0 Name: s\6009254as08.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -6771,5 +6772,5 @@ function ldraw_lib__s__6009254as08() = [
   [3,14,2.9655,-0.25,-42.9096,2.8073,-0.25,-42.8206,2.3922,-0.25,-42.8206],
 ];
 module ldraw_lib__s__6009254as08(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__6009254as08(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__6009254as08(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__6009254as08(line=0.2);

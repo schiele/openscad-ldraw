@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/rect2p.scad>
-function ldraw_lib__s__2742s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__2742s01(realsolid=false) = [
 // 0 ~Propeller  3 Blade 15 Diameter Blade
 // 0 Name: s\2742s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -25,7 +26,7 @@ function ldraw_lib__s__2742s01() = [
 // 2 24 6.866 -9.8923 -50 5.616 -7.7272 -50
   [2,24,6.866,-9.8923,-50,5.616,-7.7272,-50],
 // 1 16 6.275 -10.8686 -14 1.525 0 0.866 -2.6414 0 0.5 0 -1 0 rect2p.dat
-  [1,16,6.275,-10.8686,-14,1.525,0,0.866,-2.6414,0,0.5,0,-1,0, ldraw_lib__rect2p()],
+  [1,16,6.275,-10.8686,-14,1.525,0,0.866,-2.6414,0,0.5,0,-1,0, ldraw_lib__rect2p(realsolid)],
 // 3 16 129.087 -75.7177 -19.984 127.55 -77.7286 -18.1405 127.426 -77.553 -20.08
   [3,16,129.087,-75.7177,-19.984,127.55,-77.7286,-18.1405,127.426,-77.553,-20.08],
 // 3 16 131.352 -70.791 -20.0438 131.208 -71.3918 -18.1171 130.412 -73.3964 -19.9947
@@ -1418,5 +1419,5 @@ function ldraw_lib__s__2742s01() = [
   [5,24,32.1573,-2.5018,-12.892,24.7253,-15.3744,-16.284,31.9198,-25.351,-18.3168,20.5697,-10.0455,-15.1674],
 ];
 module ldraw_lib__s__2742s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__2742s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__2742s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__2742s01(line=0.2);

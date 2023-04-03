@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/2440s01.scad>
-function ldraw_lib__2440p02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2440p02(realsolid=false) = [
 // 0 Hinge  6 x  3 Radar with Red and Blue Stripes with White "2" and Stars Pattern
 // 0 Name: 2440p02.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -17,7 +18,7 @@ function ldraw_lib__2440p02() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2440s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2440s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2440s01(realsolid)],
 // 4 16 -5.89 -3 -6.04 -6.37 -3 -7.32 -0.03 -3 -4.91 -5.2 -3 -4.82
   [4,16,-5.89,-3,-6.04,-6.37,-3,-7.32,-0.03,-3,-4.91,-5.2,-3,-4.82],
 // 4 16 -4.17 -3 -3.54 -5.2 -3 -4.82 -0.03 -3 -4.91 -2.66 -3 -2.13
@@ -297,5 +298,5 @@ function ldraw_lib__2440p02() = [
   [4,16,-60,-7,30,-60,-4.5,17,-59,-4.692,18,-59,-6.808,29],
 ];
 module ldraw_lib__2440p02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2440p02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2440p02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2440p02(line=0.2);

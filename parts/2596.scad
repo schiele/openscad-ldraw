@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/2596s01.scad>
 use <../p/stud.scad>
-function ldraw_lib__2596() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2596(realsolid=false) = [
 // 0 Door  1 x  9 x 11
 // 0 Name: 2596.dat
 // 0 Author: Marek Idec [Maras]
@@ -20,9 +21,9 @@ function ldraw_lib__2596() = [
 // 
 // 
 // 1 16 0 244 0 1 0 0 0 1 0 0 0 1 s\2596s01.dat
-  [1,16,0,244,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2596s01()],
+  [1,16,0,244,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2596s01(realsolid)],
 // 1 16 0 180 0 1 0 0 0 1 0 0 0 1 s\2596s01.dat
-  [1,16,0,180,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2596s01()],
+  [1,16,0,180,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2596s01(realsolid)],
 // 0 Back side
 // 2 24 4 282 2.25 4 248 2.25
   [2,24,4,282,2.25,4,248,2.25],
@@ -1043,15 +1044,15 @@ function ldraw_lib__2596() = [
 // 4 16 189 17 -2.25 189 17 2.25 126 17 2.25 126 17 -2.25
   [4,16,189,17,-2.25,189,17,2.25,126,17,2.25,126,17,-2.25],
 // 1 16 179 194 -2.25 0 0 1 1 0 0 0 1 0 stud.dat
-  [1,16,179,194,-2.25,0,0,1,1,0,0,0,1,0, ldraw_lib__stud()],
+  [1,16,179,194,-2.25,0,0,1,1,0,0,0,1,0, ldraw_lib__stud(realsolid)],
 // 1 16 179 174 -2.25 0 0 1 1 0 0 0 1 0 stud.dat
-  [1,16,179,174,-2.25,0,0,1,1,0,0,0,1,0, ldraw_lib__stud()],
+  [1,16,179,174,-2.25,0,0,1,1,0,0,0,1,0, ldraw_lib__stud(realsolid)],
 // 1 16 179 194 2.25 0 0 -1 1 0 0 0 -1 0 stud.dat
-  [1,16,179,194,2.25,0,0,-1,1,0,0,0,-1,0, ldraw_lib__stud()],
+  [1,16,179,194,2.25,0,0,-1,1,0,0,0,-1,0, ldraw_lib__stud(realsolid)],
 // 1 16 179 174 2.25 0 0 -1 1 0 0 0 -1 0 stud.dat
-  [1,16,179,174,2.25,0,0,-1,1,0,0,0,-1,0, ldraw_lib__stud()],
+  [1,16,179,174,2.25,0,0,-1,1,0,0,0,-1,0, ldraw_lib__stud(realsolid)],
 // 0
 ];
 module ldraw_lib__2596(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2596(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2596(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2596(line=0.2);

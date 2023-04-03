@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__192895e() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__192895e(realsolid=false) = [
 // 0 Sticker  1.9 x  1.9 with Number 1 Red with White Outline on Red
 // 0 Name: 192895e.dat
 // 0 Author: Bjoern Sigve Storesund [Storesund]
@@ -17,7 +18,7 @@ function ldraw_lib__192895e() = [
 // 
 // 
 // 1 16 0 -0.25 0 18 0 0 0 0.25 0 0 0 18 box5-12.dat
-  [1,16,0,-0.25,0,18,0,0,0,0.25,0,0,0,18, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,18,0,0,0,0.25,0,0,0,18, ldraw_lib__box5_12(realsolid)],
 // 4 4 -18 -.25 18 -7 -.25 14 7 -.25 14 18 -.25 18
   [4,4,-18,-.25,18,-7,-.25,14,7,-.25,14,18,-.25,18],
 // 4 4 -5 -.25 12 -5 -.25 6 -1 -.25 6 5 -.25 12
@@ -46,5 +47,5 @@ function ldraw_lib__192895e() = [
   [4,15,-7,-.25,14,-7,-.25,4,-5,-.25,6,-5,-.25,12],
 ];
 module ldraw_lib__192895e(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__192895e(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__192895e(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__192895e(line=0.2);

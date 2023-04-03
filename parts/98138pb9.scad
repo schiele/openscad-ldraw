@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/4-4ering.scad>
 use <s/98138s01.scad>
-function ldraw_lib__98138pb9() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__98138pb9(realsolid=false) = [
 // 0 Tile  1 x  1 Round with Metallic Silver Batman Logo and Six Reddish Brown Rivets Pattern
 // 0 Name: 98138pb9.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -18,9 +19,9 @@ function ldraw_lib__98138pb9() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\98138s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01(realsolid)],
 // 1 16 0 0 0 9 0 0 0 1 0 0 0 9 4-4ering.dat
-  [1,16,0,0,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4ering()],
+  [1,16,0,0,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4ering(realsolid)],
 // 4 16 -0.57 0 -2.89 -0.99 0 -2.17 -1.26 0 -1.97 -1.54 0 -1.95
   [4,16,-0.57,0,-2.89,-0.99,0,-2.17,-1.26,0,-1.97,-1.54,0,-1.95],
 // 4 16 -0.57 0 -2.89 -1.54 0 -1.95 -1.79 0 -2.05 -2.04 0 -2.34
@@ -447,5 +448,5 @@ function ldraw_lib__98138pb9() = [
   [3,16,0,0,9,-1.04,0,5.27,1.04,0,5.27],
 ];
 module ldraw_lib__98138pb9(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__98138pb9(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__98138pb9(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__98138pb9(line=0.2);

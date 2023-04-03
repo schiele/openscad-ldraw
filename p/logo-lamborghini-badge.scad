@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <logo-lamborghini-bull-3.scad>
 use <logo-lamborghini-bull-4.scad>
-function ldraw_lib__logo_lamborghini_badge() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__logo_lamborghini_badge(realsolid=false) = [
 // 0 Logo Lamborghini Badge with Outer Box
 // 0 Name: logo-lamborghini-badge.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -20,9 +21,9 @@ function ldraw_lib__logo_lamborghini_badge() = [
 // 0 // External bull definition
 // 
 // 1 0 0.11 0 0.1562 1 0 0 0 1 0 0 0 1 logo-lamborghini-bull-3.dat
-  [1,0,0.11,0,0.1562,1,0,0,0,1,0,0,0,1, ldraw_lib__logo_lamborghini_bull_3()],
+  [1,0,0.11,0,0.1562,1,0,0,0,1,0,0,0,1, ldraw_lib__logo_lamborghini_bull_3(realsolid)],
 // 1 14 0.11 0 0.1562 1 0 0 0 1 0 0 0 1 logo-lamborghini-bull-4.dat
-  [1,14,0.11,0,0.1562,1,0,0,0,1,0,0,0,1, ldraw_lib__logo_lamborghini_bull_4()],
+  [1,14,0.11,0,0.1562,1,0,0,0,1,0,0,0,1, ldraw_lib__logo_lamborghini_bull_4(realsolid)],
 // 0 // Yellow text LAMBORGHINI
 // 0 // Letter Lamborghini
 // 4 14 -2.15 0 2.4242 -2.24 0 2.3991 -2.24 0 1.7591 -2.15 0 1.8776
@@ -1712,5 +1713,5 @@ function ldraw_lib__logo_lamborghini_badge() = [
   [3,16,2.6735,0,1.2387,2.6155,0,0.8111,2.72,0,-3.1],
 ];
 module ldraw_lib__logo_lamborghini_badge(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__logo_lamborghini_badge(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__logo_lamborghini_badge(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__logo_lamborghini_badge(line=0.2);

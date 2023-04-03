@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/hipstud.scad>
-function ldraw_lib__87749() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__87749(realsolid=false) = [
 // 0 Minifig Hips with Tentacles
 // 0 Name: 87749.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -19,9 +20,9 @@ function ldraw_lib__87749() = [
 // 
 // 
 // 1 16 10 0 0 1 0 0 0 1 0 0 0 1 hipstud.dat
-  [1,16,10,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__hipstud()],
+  [1,16,10,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__hipstud(realsolid)],
 // 1 16 -10 0 0 -1 0 0 0 1 0 0 0 -1 hipstud.dat
-  [1,16,-10,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__hipstud()],
+  [1,16,-10,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__hipstud(realsolid)],
 // 
 // 4 16 -16.25 40 80 -16.25 35.71 80 -15.413 35.477 76.875 -15.413 40 76.875
   [4,16,-16.25,40,80,-16.25,35.71,80,-15.413,35.477,76.875,-15.413,40,76.875],
@@ -8263,5 +8264,5 @@ function ldraw_lib__87749() = [
   [5,24,14.735,30.035,42.072,11.938,19.79,40.649,9.946,20.478,44.71,17.381,31.645,36.925],
 ];
 module ldraw_lib__87749(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__87749(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__87749(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__87749(line=0.2);

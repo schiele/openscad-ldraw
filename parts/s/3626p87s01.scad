@@ -2,7 +2,8 @@ use <../../lib.scad>
 use <../../p/1-16cyli.scad>
 use <../../p/2-4cyli.scad>
 use <../../p/t04o6250.scad>
-function ldraw_lib__s__3626p87s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__3626p87s01(realsolid=false) = [
 // 0 ~Minifig Glasses, Thin Brown Eyebrows and Smile Pattern
 // 0 Name: s\3626p87s01.dat
 // 0 Author: Howard Lande [HowardLande]
@@ -19,27 +20,27 @@ function ldraw_lib__s__3626p87s01() = [
 // 0 // Head without stud
 // 
 // 1 16 0 4 0 13 0 0 0 13 0 0 0 13 2-4cyli.dat
-  [1,16,0,4,0,13,0,0,0,13,0,0,0,13, ldraw_lib__2_4cyli()],
+  [1,16,0,4,0,13,0,0,0,13,0,0,0,13, ldraw_lib__2_4cyli(realsolid)],
 // 1 16 0 4 0 8 0 0 0 -6.4 0 0 0 8 t04o6250.dat
-  [1,16,0,4,0,8,0,0,0,-6.4,0,0,0,8, ldraw_lib__t04o6250()],
+  [1,16,0,4,0,8,0,0,0,-6.4,0,0,0,8, ldraw_lib__t04o6250(realsolid)],
 // 1 16 0 4 0 0 0 8 0 -6.4 0 -8 0 0 t04o6250.dat
-  [1,16,0,4,0,0,0,8,0,-6.4,0,-8,0,0, ldraw_lib__t04o6250()],
+  [1,16,0,4,0,0,0,8,0,-6.4,0,-8,0,0, ldraw_lib__t04o6250(realsolid)],
 // 1 16 0 4 0 -8 0 0 0 -6.4 0 0 0 -8 t04o6250.dat
-  [1,16,0,4,0,-8,0,0,0,-6.4,0,0,0,-8, ldraw_lib__t04o6250()],
+  [1,16,0,4,0,-8,0,0,0,-6.4,0,0,0,-8, ldraw_lib__t04o6250(realsolid)],
 // 1 16 0 4 0 0 0 -8 0 -6.4 0 8 0 0 t04o6250.dat
-  [1,16,0,4,0,0,0,-8,0,-6.4,0,8,0,0, ldraw_lib__t04o6250()],
+  [1,16,0,4,0,0,0,-8,0,-6.4,0,8,0,0, ldraw_lib__t04o6250(realsolid)],
 // 1 16 0 17 0 8 0 0 0 6.4 0 0 0 8 t04o6250.dat
-  [1,16,0,17,0,8,0,0,0,6.4,0,0,0,8, ldraw_lib__t04o6250()],
+  [1,16,0,17,0,8,0,0,0,6.4,0,0,0,8, ldraw_lib__t04o6250(realsolid)],
 // 1 16 0 17 0 0 0 -8 0 6.4 0 8 0 0 t04o6250.dat
-  [1,16,0,17,0,0,0,-8,0,6.4,0,8,0,0, ldraw_lib__t04o6250()],
+  [1,16,0,17,0,0,0,-8,0,6.4,0,8,0,0, ldraw_lib__t04o6250(realsolid)],
 // 1 16 0 17 0 -8 0 0 0 6.4 0 0 0 -8 t04o6250.dat
-  [1,16,0,17,0,-8,0,0,0,6.4,0,0,0,-8, ldraw_lib__t04o6250()],
+  [1,16,0,17,0,-8,0,0,0,6.4,0,0,0,-8, ldraw_lib__t04o6250(realsolid)],
 // 1 16 0 17 0 0 0 8 0 6.4 0 -8 0 0 t04o6250.dat
-  [1,16,0,17,0,0,0,8,0,6.4,0,-8,0,0, ldraw_lib__t04o6250()],
+  [1,16,0,17,0,0,0,8,0,6.4,0,-8,0,0, ldraw_lib__t04o6250(realsolid)],
 // 1 16 0 4 0 12.0104 0 4.9749 0 13 0 -4.9749 0 12.0104 1-16cyli.dat
-  [1,16,0,4,0,12.0104,0,4.9749,0,13,0,-4.9749,0,12.0104, ldraw_lib__1_16cyli()],
+  [1,16,0,4,0,12.0104,0,4.9749,0,13,0,-4.9749,0,12.0104, ldraw_lib__1_16cyli(realsolid)],
 // 1 16 0 4 0 -13 0 0 0 13 0 0 0 -13 1-16cyli.dat
-  [1,16,0,4,0,-13,0,0,0,13,0,0,0,-13, ldraw_lib__1_16cyli()],
+  [1,16,0,4,0,-13,0,0,0,13,0,0,0,-13, ldraw_lib__1_16cyli(realsolid)],
 // 
 // 0 // Pattern
 // 4 0 -9.192 7.56 -9.192 -9.192 6.86 -9.192 -11.5 6.62 -5.739 -11.56 7.32 -5.649
@@ -860,5 +861,5 @@ function ldraw_lib__s__3626p87s01() = [
   [5,24,12.011,17,-4.975,12.011,4,-4.975,9.192,17,-9.192,13,17,0],
 ];
 module ldraw_lib__s__3626p87s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__3626p87s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__3626p87s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__3626p87s01(line=0.2);

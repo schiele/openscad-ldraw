@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/21849ps1s01.scad>
 use <s/21849s01.scad>
-function ldraw_lib__21849ps1() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__21849ps1(realsolid=false) = [
 // 0 Windscreen  8 x  4 x  2 with Handle and  2 Studs with Silver Cockpit Windows and Rivets Pattern
 // 0 Name: 21849ps1.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -18,7 +19,7 @@ function ldraw_lib__21849ps1() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\21849s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__21849s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__21849s01(realsolid)],
 // 2 24 -40 25 -170 -20 -18 -50
   [2,24,-40,25,-170,-20,-18,-50],
 // 2 24 40 25 -170 20 -18 -50
@@ -28,9 +29,9 @@ function ldraw_lib__21849ps1() = [
   [0,"BFC","NOCLIP"],
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\21849ps1s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__21849ps1s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__21849ps1s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\21849ps1s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__21849ps1s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__21849ps1s01(realsolid)],
 // 4 0 -18.1594 -17.6417 -51 -17.6469 -17.4267 -51.6 17.6469 -17.4267 -51.6 18.1594 -17.6417 -51
   [4,0,-18.1594,-17.6417,-51,-17.6469,-17.4267,-51.6,17.6469,-17.4267,-51.6,18.1594,-17.6417,-51],
 // 4 0 -12.0945 -16.28 -54.8 -11.8274 -16.065 -55.4 11.8274 -16.065 -55.4 12.0945 -16.28 -54.8
@@ -45,5 +46,5 @@ function ldraw_lib__21849ps1() = [
   [3,16,14.1938,-15.1232,-58.0282,-14.1938,-15.1232,-58.0282,0,22.4916,-163],
 ];
 module ldraw_lib__21849ps1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__21849ps1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__21849ps1(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__21849ps1(line=0.2);

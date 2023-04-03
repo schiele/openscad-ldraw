@@ -3,7 +3,8 @@ use <../p/box3u10p.scad>
 use <../p/box3u2p.scad>
 use <../p/recte3.scad>
 use <s/4511s01.scad>
-function ldraw_lib__4511p01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4511p01(realsolid=false) = [
 // 0 Door  6.5 x  5 Sliding Corrugated Surface with Yellow "$" Pattern
 // 0 Name: 4511p01.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -20,48 +21,48 @@ function ldraw_lib__4511p01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4511s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4511s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4511s01(realsolid)],
 // 
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -116.25 0 -2 4.5 0 0 0 0 58 0 .5 0 box3u10p.dat
-  [1,16,-116.25,0,-2,4.5,0,0,0,0,58,0,.5,0, ldraw_lib__box3u10p()],
+  [1,16,-116.25,0,-2,4.5,0,0,0,0,58,0,.5,0, ldraw_lib__box3u10p(realsolid)],
 // 1 16 -108.25 0 -1.5 0 0 3.5 -58 0 0 0 -.5 0 box3u2p.dat
-  [1,16,-108.25,0,-1.5,0,0,3.5,-58,0,0,0,-.5,0, ldraw_lib__box3u2p()],
+  [1,16,-108.25,0,-1.5,0,0,3.5,-58,0,0,0,-.5,0, ldraw_lib__box3u2p(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -100.25 0 -2 4.5 0 0 0 0 58 0 .5 0 box3u10p.dat
-  [1,16,-100.25,0,-2,4.5,0,0,0,0,58,0,.5,0, ldraw_lib__box3u10p()],
+  [1,16,-100.25,0,-2,4.5,0,0,0,0,58,0,.5,0, ldraw_lib__box3u10p(realsolid)],
 // 1 16 -92.25 0 -1.5 0 0 3.5 -58 0 0 0 -.5 0 box3u2p.dat
-  [1,16,-92.25,0,-1.5,0,0,3.5,-58,0,0,0,-.5,0, ldraw_lib__box3u2p()],
+  [1,16,-92.25,0,-1.5,0,0,3.5,-58,0,0,0,-.5,0, ldraw_lib__box3u2p(realsolid)],
 // 1 16 -44.25 0 -1.5 0 0 3.5 -58 0 0 0 -.5 0 box3u2p.dat
-  [1,16,-44.25,0,-1.5,0,0,3.5,-58,0,0,0,-.5,0, ldraw_lib__box3u2p()],
+  [1,16,-44.25,0,-1.5,0,0,3.5,-58,0,0,0,-.5,0, ldraw_lib__box3u2p(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -36.25 0 -2 4.5 0 0 0 0 58 0 .5 0 box3u10p.dat
-  [1,16,-36.25,0,-2,4.5,0,0,0,0,58,0,.5,0, ldraw_lib__box3u10p()],
+  [1,16,-36.25,0,-2,4.5,0,0,0,0,58,0,.5,0, ldraw_lib__box3u10p(realsolid)],
 // 1 16 -28.25 0 -1.5 0 0 3.5 -58 0 0 0 -.5 0 box3u2p.dat
-  [1,16,-28.25,0,-1.5,0,0,3.5,-58,0,0,0,-.5,0, ldraw_lib__box3u2p()],
+  [1,16,-28.25,0,-1.5,0,0,3.5,-58,0,0,0,-.5,0, ldraw_lib__box3u2p(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -20.25 0 -2 4.5 0 0 0 0 58 0 .5 0 box3u10p.dat
-  [1,16,-20.25,0,-2,4.5,0,0,0,0,58,0,.5,0, ldraw_lib__box3u10p()],
+  [1,16,-20.25,0,-2,4.5,0,0,0,0,58,0,.5,0, ldraw_lib__box3u10p(realsolid)],
 // 1 16 -52.25 0 -1.5 0 0 -4.5 58 0 0 0 1 0 recte3.dat
-  [1,16,-52.25,0,-1.5,0,0,-4.5,58,0,0,0,1,0, ldraw_lib__recte3()],
+  [1,16,-52.25,0,-1.5,0,0,-4.5,58,0,0,0,1,0, ldraw_lib__recte3(realsolid)],
 // 1 16 -56.75 0 -1.75 0 -1 0 58 0 0 0 0 -.25 recte3.dat
-  [1,16,-56.75,0,-1.75,0,-1,0,58,0,0,0,0,-.25, ldraw_lib__recte3()],
+  [1,16,-56.75,0,-1.75,0,-1,0,58,0,0,0,0,-.25, ldraw_lib__recte3(realsolid)],
 // 1 16 -60.25 0 -2 0 0 -3.5 58 0 0 0 1 0 recte3.dat
-  [1,16,-60.25,0,-2,0,0,-3.5,58,0,0,0,1,0, ldraw_lib__recte3()],
+  [1,16,-60.25,0,-2,0,0,-3.5,58,0,0,0,1,0, ldraw_lib__recte3(realsolid)],
 // 1 16 -63.75 0 -1.75 0 -1 0 58 0 0 0 0 .25 recte3.dat
-  [1,16,-63.75,0,-1.75,0,-1,0,58,0,0,0,0,.25, ldraw_lib__recte3()],
+  [1,16,-63.75,0,-1.75,0,-1,0,58,0,0,0,0,.25, ldraw_lib__recte3(realsolid)],
 // 1 16 -68.25 0 -1.5 0 0 -4.5 58 0 0 0 1 0 recte3.dat
-  [1,16,-68.25,0,-1.5,0,0,-4.5,58,0,0,0,1,0, ldraw_lib__recte3()],
+  [1,16,-68.25,0,-1.5,0,0,-4.5,58,0,0,0,1,0, ldraw_lib__recte3(realsolid)],
 // 1 16 -72.75 0 -1.75 0 -1 0 58 0 0 0 0 -.25 recte3.dat
-  [1,16,-72.75,0,-1.75,0,-1,0,58,0,0,0,0,-.25, ldraw_lib__recte3()],
+  [1,16,-72.75,0,-1.75,0,-1,0,58,0,0,0,0,-.25, ldraw_lib__recte3(realsolid)],
 // 1 16 -76.25 0 -2 0 0 -3.5 58 0 0 0 1 0 recte3.dat
-  [1,16,-76.25,0,-2,0,0,-3.5,58,0,0,0,1,0, ldraw_lib__recte3()],
+  [1,16,-76.25,0,-2,0,0,-3.5,58,0,0,0,1,0, ldraw_lib__recte3(realsolid)],
 // 1 16 -79.75 0 -1.75 0 -1 0 58 0 0 0 0 .25 recte3.dat
-  [1,16,-79.75,0,-1.75,0,-1,0,58,0,0,0,0,.25, ldraw_lib__recte3()],
+  [1,16,-79.75,0,-1.75,0,-1,0,58,0,0,0,0,.25, ldraw_lib__recte3(realsolid)],
 // 
 // 0 // Pattern
 // 4 14 -79.75 -11.7667 -1.5 -81 -9.8 -1.5 -81.4 -7.6 -1.5 -79.75 -2.2036 -1.5
@@ -415,5 +416,5 @@ function ldraw_lib__4511p01() = [
   [2,24,-79.75,-58,-1.5,-88.75,-58,-1.5],
 ];
 module ldraw_lib__4511p01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4511p01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4511p01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4511p01(line=0.2);

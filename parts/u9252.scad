@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/1-4cylc.scad>
 use <../p/1-4disc.scad>
-function ldraw_lib__u9252() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__u9252(realsolid=false) = [
 // 0 Cardboard  6 x  6 Thick with Rounded Corners
 // 0 Name: u9252.dat
 // 0 Author: Steffen [Steffen]
@@ -19,13 +20,13 @@ function ldraw_lib__u9252() = [
 // 
 // 
 // 1 16 -52 0 52 0 0 -8 0 1 0 8 0 0 1-4disc.dat
-  [1,16,-52,0,52,0,0,-8,0,1,0,8,0,0, ldraw_lib__1_4disc()],
+  [1,16,-52,0,52,0,0,-8,0,1,0,8,0,0, ldraw_lib__1_4disc(realsolid)],
 // 1 16 52 0 52 8 0 0 0 1 0 0 0 8 1-4disc.dat
-  [1,16,52,0,52,8,0,0,0,1,0,0,0,8, ldraw_lib__1_4disc()],
+  [1,16,52,0,52,8,0,0,0,1,0,0,0,8, ldraw_lib__1_4disc(realsolid)],
 // 1 16 52 0 -52 0 0 8 0 1 0 -8 0 0 1-4disc.dat
-  [1,16,52,0,-52,0,0,8,0,1,0,-8,0,0, ldraw_lib__1_4disc()],
+  [1,16,52,0,-52,0,0,8,0,1,0,-8,0,0, ldraw_lib__1_4disc(realsolid)],
 // 1 16 -52 0 -52 -8 0 0 0 1 0 0 0 -8 1-4disc.dat
-  [1,16,-52,0,-52,-8,0,0,0,1,0,0,0,-8, ldraw_lib__1_4disc()],
+  [1,16,-52,0,-52,-8,0,0,0,1,0,0,0,-8, ldraw_lib__1_4disc(realsolid)],
 // 4 16 -52 0 -52 52 0 -52 52 0 52 -52 0 52
   [4,16,-52,0,-52,52,0,-52,52,0,52,-52,0,52],
 // 4 16 -52 0 52 52 0 52 52 0 60 -52 0 60
@@ -49,13 +50,13 @@ function ldraw_lib__u9252() = [
   [4,16,60,2,52,60,2,-52,52,2,-52,52,2,52],
 // 
 // 1 16 -52 2 -52 0 0 -8 0 -2 0 -8 0 0 1-4cylc.dat
-  [1,16,-52,2,-52,0,0,-8,0,-2,0,-8,0,0, ldraw_lib__1_4cylc()],
+  [1,16,-52,2,-52,0,0,-8,0,-2,0,-8,0,0, ldraw_lib__1_4cylc(realsolid)],
 // 1 16 -52 2 52 -8 0 0 0 -2 0 0 0 8 1-4cylc.dat
-  [1,16,-52,2,52,-8,0,0,0,-2,0,0,0,8, ldraw_lib__1_4cylc()],
+  [1,16,-52,2,52,-8,0,0,0,-2,0,0,0,8, ldraw_lib__1_4cylc(realsolid)],
 // 1 16 52 2 52 0 0 8 0 -2 0 8 0 0 1-4cylc.dat
-  [1,16,52,2,52,0,0,8,0,-2,0,8,0,0, ldraw_lib__1_4cylc()],
+  [1,16,52,2,52,0,0,8,0,-2,0,8,0,0, ldraw_lib__1_4cylc(realsolid)],
 // 1 16 52 2 -52 8 0 0 0 -2 0 0 0 -8 1-4cylc.dat
-  [1,16,52,2,-52,8,0,0,0,-2,0,0,0,-8, ldraw_lib__1_4cylc()],
+  [1,16,52,2,-52,8,0,0,0,-2,0,0,0,-8, ldraw_lib__1_4cylc(realsolid)],
 // 
 // 4 16 60 2 -52 60 2 52 60 0 52 60 0 -52
   [4,16,60,2,-52,60,2,52,60,0,52,60,0,-52],
@@ -84,5 +85,5 @@ function ldraw_lib__u9252() = [
   [2,24,-60,2,52,-60,2,-52],
 ];
 module ldraw_lib__u9252(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__u9252(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__u9252(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__u9252(line=0.2);

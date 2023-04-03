@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <3010.scad>
 use <6005724d2.scad>
-function ldraw_lib__3010dm1() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3010dm1(realsolid=false) = [
 // 0 Brick  1 x  4 with Diamond Bricks and Cracks Type 2 Sticker
 // 0 Name: 3010dm1.dat
 // 0 Author: Christian Neumann [Wesley]
@@ -20,10 +21,10 @@ function ldraw_lib__3010dm1() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 3010.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3010()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3010(realsolid)],
 // 1 16 0 12 -10 1 0 0 0 0 -1 0 1 0 6005724d2.dat
-  [1,16,0,12,-10,1,0,0,0,0,-1,0,1,0, ldraw_lib__6005724d2()],
+  [1,16,0,12,-10,1,0,0,0,0,-1,0,1,0, ldraw_lib__6005724d2(realsolid)],
 ];
 module ldraw_lib__3010dm1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3010dm1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3010dm1(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3010dm1(line=0.2);

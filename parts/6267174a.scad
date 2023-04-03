@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__6267174a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6267174a(realsolid=false) = [
 // 0 Sticker  3.5 x  1.9 with Moody Unforgivable Spider
 // 0 Name: 6267174a.dat
 // 0 Author: Howard Lande [HowardLande]
@@ -17,7 +18,7 @@ function ldraw_lib__6267174a() = [
 // 
 // 
 // 1 16 0 -0.25 0 19 0 0 0 0.25 0 0 0 35 box5-12.dat
-  [1,16,0,-0.25,0,19,0,0,0,0.25,0,0,0,35, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,19,0,0,0,0.25,0,0,0,35, ldraw_lib__box5_12(realsolid)],
 // 
 // 4 15 -14.58 -0.25 28.6 -14.86 -0.25 29.82 -14.92 -0.25 28.64 -14.9 -0.25 27.72
   [4,15,-14.58,-0.25,28.6,-14.86,-0.25,29.82,-14.92,-0.25,28.64,-14.9,-0.25,27.72],
@@ -3185,5 +3186,5 @@ function ldraw_lib__6267174a() = [
   [3,0,-5,-0.25,-20,2,-0.25,-21,-5,-0.25,-15],
 ];
 module ldraw_lib__6267174a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6267174a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6267174a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6267174a(line=0.2);

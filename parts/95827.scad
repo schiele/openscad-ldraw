@@ -5,7 +5,8 @@ use <../p/4-4ring4.scad>
 use <../p/4-4ring5.scad>
 use <s/95827s01.scad>
 use <../p/stud4od.scad>
-function ldraw_lib__95827() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__95827(realsolid=false) = [
 // 0 Animal Beetle with Stud Tube and Pin Hole
 // 0 Name: 95827.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -24,25 +25,25 @@ function ldraw_lib__95827() = [
 // 
 // 
 // 1 16 0 -5 0 0 0 -1 0 -1.25 0 -1 0 0 stud4od.dat
-  [1,16,0,-5,0,0,0,-1,0,-1.25,0,-1,0,0, ldraw_lib__stud4od()],
+  [1,16,0,-5,0,0,0,-1,0,-1.25,0,-1,0,0, ldraw_lib__stud4od(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -5 0 0 0 -5 0 -2 0 5 0 0 4-4cylo.dat
-  [1,16,0,-5,0,0,0,-5,0,-2,0,5,0,0, ldraw_lib__4_4cylo()],
+  [1,16,0,-5,0,0,0,-5,0,-2,0,5,0,0, ldraw_lib__4_4cylo(realsolid)],
 // 1 16 0 -5 0 1 0 0 0 -1 0 0 0 1 4-4ring5.dat
-  [1,16,0,-5,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__4_4ring5()],
+  [1,16,0,-5,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__4_4ring5(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -7 0 0 0 -2 0 -4.7 0 2 0 0 4-4cylo.dat
-  [1,16,0,-7,0,0,0,-2,0,-4.7,0,2,0,0, ldraw_lib__4_4cylo()],
+  [1,16,0,-7,0,0,0,-2,0,-4.7,0,2,0,0, ldraw_lib__4_4cylo(realsolid)],
 // 1 16 0 -7 0 2 0 0 0 -1 0 0 0 2 4-4ring1.dat
-  [1,16,0,-7,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__4_4ring1()],
+  [1,16,0,-7,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__4_4ring1(realsolid)],
 // 1 16 0 -7 0 1 0 0 0 -1 0 0 0 1 4-4ring4.dat
-  [1,16,0,-7,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__4_4ring4()],
+  [1,16,0,-7,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__4_4ring4(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\95827s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__95827s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__95827s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\95827s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__95827s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__95827s01(realsolid)],
 // 5 24 0 0 9.112 0 -2.5 9.129 0.706 0 9.325 -0.706 0 9.325
   [5,24,0,0,9.112,0,-2.5,9.129,0.706,0,9.325,-0.706,0,9.325],
 // 5 24 0 -2.5 9.129 0 -5.553 8.645 0.744 -2.5 9.374 -0.744 -2.5 9.374
@@ -73,5 +74,5 @@ function ldraw_lib__95827() = [
   [5,24,0,-5.143,-11.687,0,-2.5,-12.69,2.589,-5.113,-11.223,-2.589,-5.113,-11.223],
 ];
 module ldraw_lib__95827(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__95827(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__95827(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__95827(line=0.2);

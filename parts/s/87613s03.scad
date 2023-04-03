@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/1-4ndis.scad>
-function ldraw_lib__s__87613s03() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__87613s03(realsolid=false) = [
 // 0 ~Plane Front  6 x 10 x  4 - Half Top Pattern Area
 // 0 Name: s\87613s03.dat
 // 0 Author: Bertrand Lequy [Berth]
@@ -89,9 +90,9 @@ function ldraw_lib__s__87613s03() = [
 // 2 24 26.06 0 -19.31 0 0 -20
   [2,24,26.06,0,-19.31,0,0,-20],
 // 1 16 30 0 10 8 0 0 0 1 0 0 0 -8 1-4ndis.dat
-  [1,16,30,0,10,8,0,0,0,1,0,0,0,-8, ldraw_lib__1_4ndis()],
+  [1,16,30,0,10,8,0,0,0,1,0,0,0,-8, ldraw_lib__1_4ndis(realsolid)],
 // 1 16 10 0 -10 8 0 0 0 1 0 0 0 -8 1-4ndis.dat
-  [1,16,10,0,-10,8,0,0,0,1,0,0,0,-8, ldraw_lib__1_4ndis()],
+  [1,16,10,0,-10,8,0,0,0,1,0,0,0,-8, ldraw_lib__1_4ndis(realsolid)],
 // 4 16 10 0 -18 0 0 -18 0 0 -20 26.06 0 -19.31
   [4,16,10,0,-18,0,0,-18,0,0,-20,26.06,0,-19.31],
 // 3 16 26.06 0 -19.31 18 0 -18 10 0 -18
@@ -110,5 +111,5 @@ function ldraw_lib__s__87613s03() = [
   [3,16,38,0,10,38,0,2,40,0,0],
 ];
 module ldraw_lib__s__87613s03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__87613s03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__87613s03(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__87613s03(line=0.2);

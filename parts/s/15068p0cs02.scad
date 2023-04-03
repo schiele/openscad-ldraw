@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__15068p0cs02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__15068p0cs02(realsolid=false) = [
 // 0 ~Slope Brick Curved  2 x  2 x  0.667 with Gold and Red Ruffles with Dark Red Outline Pattern - Colour 1
 // 0 Name: s\15068p0cs02.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -407,5 +408,5 @@ function ldraw_lib__s__15068p0cs02() = [
   [3,16,10.6193,-14.6036,5.36,7.63,-14.4244,4.63,8.31,-14.2353,3.86],
 ];
 module ldraw_lib__s__15068p0cs02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__15068p0cs02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__15068p0cs02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__15068p0cs02(line=0.2);

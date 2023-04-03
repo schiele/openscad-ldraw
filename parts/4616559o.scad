@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/box5-12.scad>
 use <s/4616559ps6.scad>
 use <s/4616559ps7.scad>
-function ldraw_lib__4616559o() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4616559o(realsolid=false) = [
 // 0 Sticker  0.8 x  1 with Black "10219"
 // 0 Name: 4616559o.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -19,12 +20,12 @@ function ldraw_lib__4616559o() = [
 // 
 // 
 // 1 16 0 -0.25 0 10 0 0 0 0.25 0 0 0 8 box5-12.dat
-  [1,16,0,-0.25,0,10,0,0,0,0.25,0,0,0,8, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,10,0,0,0,0.25,0,0,0,8, ldraw_lib__box5_12(realsolid)],
 // 0 //
 // 1 0 0 -0.25 0 0.25 0 0 0 1 0 0 0 0.25 s\4616559ps6.dat
-  [1,0,0,-0.25,0,0.25,0,0,0,1,0,0,0,0.25, ldraw_lib__s__4616559ps6()],
+  [1,0,0,-0.25,0,0.25,0,0,0,1,0,0,0,0.25, ldraw_lib__s__4616559ps6(realsolid)],
 // 1 16 0 -0.25 0 0.25 0 0 0 1 0 0 0 0.25 s\4616559ps7.dat
-  [1,16,0,-0.25,0,0.25,0,0,0,1,0,0,0,0.25, ldraw_lib__s__4616559ps7()],
+  [1,16,0,-0.25,0,0.25,0,0,0,1,0,0,0,0.25, ldraw_lib__s__4616559ps7(realsolid)],
 // 0 //
 // 4 16 10 -0.25 8 -10 -0.25 8 -9.5 -0.25 2.5 9.5 -0.25 2.5
   [4,16,10,-0.25,8,-10,-0.25,8,-9.5,-0.25,2.5,9.5,-0.25,2.5],
@@ -36,5 +37,5 @@ function ldraw_lib__4616559o() = [
   [4,16,-10,-0.25,-8,-9.5,-0.25,-2.5,-9.5,-0.25,2.5,-10,-0.25,8],
 ];
 module ldraw_lib__4616559o(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4616559o(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4616559o(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4616559o(line=0.2);

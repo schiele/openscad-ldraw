@@ -3,7 +3,8 @@ use <../p/box5-4a.scad>
 use <s/19066s01.scad>
 use <../p/stug-1x2.scad>
 use <../p/stug-4x4.scad>
-function ldraw_lib__19066() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__19066(realsolid=false) = [
 // 0 ~Electric Power Functions 2.0 Hub Top
 // 0 Name: 19066.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -20,9 +21,9 @@ function ldraw_lib__19066() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\19066s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__19066s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__19066s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\19066s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__19066s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__19066s01(realsolid)],
 // 2 24 38 23 -78 -38 23 -78
   [2,24,38,23,-78,-38,23,-78],
 // 2 24 -40 23 -80 40 23 -80
@@ -70,14 +71,14 @@ function ldraw_lib__19066() = [
 // 4 16 6.5 0.5 80 4.5 3 80 -4.5 3 80 -6.5 0.5 80
   [4,16,6.5,0.5,80,4.5,3,80,-4.5,3,80,-6.5,0.5,80],
 // 1 16 0 0 20 0 0 1 0 1 0 -1 0 0 stug-4x4.dat
-  [1,16,0,0,20,0,0,1,0,1,0,-1,0,0, ldraw_lib__stug_4x4()],
+  [1,16,0,0,20,0,0,1,0,1,0,-1,0,0, ldraw_lib__stug_4x4(realsolid)],
 // 1 16 30 0 -40 0 0 1 0 1 0 -1 0 0 stug-1x2.dat
-  [1,16,30,0,-40,0,0,1,0,1,0,-1,0,0, ldraw_lib__stug_1x2()],
+  [1,16,30,0,-40,0,0,1,0,1,0,-1,0,0, ldraw_lib__stug_1x2(realsolid)],
 // 1 16 -30 0 -40 0 0 1 0 1 0 -1 0 0 stug-1x2.dat
-  [1,16,-30,0,-40,0,0,1,0,1,0,-1,0,0, ldraw_lib__stug_1x2()],
+  [1,16,-30,0,-40,0,0,1,0,1,0,-1,0,0, ldraw_lib__stug_1x2(realsolid)],
 // 1 16 0 5 79 4.5 0 0 0 10 0 0 0 1 box5-4a.dat
-  [1,16,0,5,79,4.5,0,0,0,10,0,0,0,1, ldraw_lib__box5_4a()],
+  [1,16,0,5,79,4.5,0,0,0,10,0,0,0,1, ldraw_lib__box5_4a(realsolid)],
 ];
 module ldraw_lib__19066(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__19066(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__19066(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__19066(line=0.2);

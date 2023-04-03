@@ -3,7 +3,8 @@ use <s/30116p6ua.scad>
 use <s/30116s01.scad>
 use <../p/stud.scad>
 use <../p/stug-2x2.scad>
-function ldraw_lib__30116p6u() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__30116p6u(realsolid=false) = [
 // 0 Panel 14 x 14 x  2.667 Quarter Saucer with Left UFO Pattern
 // 0 Name: 30116p6u.dat
 // 0 Author: Nils Schmidt [BlackBrick89]
@@ -20,28 +21,28 @@ function ldraw_lib__30116p6u() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\30116s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30116s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30116s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\30116p6ua.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30116p6ua()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30116p6ua(realsolid)],
 // 1 16 160 48 -160 1 0 0 0 1 0 0 0 1 stug-2x2.dat
-  [1,16,160,48,-160,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_2x2()],
+  [1,16,160,48,-160,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_2x2(realsolid)],
 // 1 16 90 8 -10 1 0 0 0 1 0 0 0 1 stud.dat
-  [1,16,90,8,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__stud()],
+  [1,16,90,8,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__stud(realsolid)],
 // 1 16 90 8 -30 1 0 0 0 1 0 0 0 1 stud.dat
-  [1,16,90,8,-30,1,0,0,0,1,0,0,0,1, ldraw_lib__stud()],
+  [1,16,90,8,-30,1,0,0,0,1,0,0,0,1, ldraw_lib__stud(realsolid)],
 // 1 16 70 8 -50 1 0 0 0 1 0 0 0 1 stud.dat
-  [1,16,70,8,-50,1,0,0,0,1,0,0,0,1, ldraw_lib__stud()],
+  [1,16,70,8,-50,1,0,0,0,1,0,0,0,1, ldraw_lib__stud(realsolid)],
 // 1 16 110 0 -10 1 0 0 0 1 0 0 0 1 stud.dat
-  [1,16,110,0,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__stud()],
+  [1,16,110,0,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__stud(realsolid)],
 // 1 16 10 8 -90 1 0 0 0 1 0 0 0 1 stud.dat
-  [1,16,10,8,-90,1,0,0,0,1,0,0,0,1, ldraw_lib__stud()],
+  [1,16,10,8,-90,1,0,0,0,1,0,0,0,1, ldraw_lib__stud(realsolid)],
 // 1 16 30 8 -90 1 0 0 0 1 0 0 0 1 stud.dat
-  [1,16,30,8,-90,1,0,0,0,1,0,0,0,1, ldraw_lib__stud()],
+  [1,16,30,8,-90,1,0,0,0,1,0,0,0,1, ldraw_lib__stud(realsolid)],
 // 1 16 50 8 -70 1 0 0 0 1 0 0 0 1 stud.dat
-  [1,16,50,8,-70,1,0,0,0,1,0,0,0,1, ldraw_lib__stud()],
+  [1,16,50,8,-70,1,0,0,0,1,0,0,0,1, ldraw_lib__stud(realsolid)],
 // 1 16 10 0 -110 1 0 0 0 1 0 0 0 1 stud.dat
-  [1,16,10,0,-110,1,0,0,0,1,0,0,0,1, ldraw_lib__stud()],
+  [1,16,10,0,-110,1,0,0,0,1,0,0,0,1, ldraw_lib__stud(realsolid)],
 ];
 module ldraw_lib__30116p6u(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__30116p6u(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__30116p6u(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__30116p6u(line=0.2);

@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <448.scad>
 use <449.scad>
-function ldraw_lib__794a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__794a(realsolid=false) = [
 // 0 Container Storage Box 24 x 40 with Red Handle
 // 0 Name: 794a.dat
 // 0 Author: Niels Karsdorp [nielsk]
@@ -16,10 +17,10 @@ function ldraw_lib__794a() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 448.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__448()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__448(realsolid)],
 // 1 4 0 0 0 1 0 0 0 1 0 0 0 1 449.dat
-  [1,4,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__449()],
+  [1,4,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__449(realsolid)],
 ];
 module ldraw_lib__794a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__794a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__794a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__794a(line=0.2);

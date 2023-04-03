@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/4-4cyli.scad>
 use <../p/r04q1000.scad>
-function ldraw_lib__85543_f3() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__85543_f3(realsolid=false) = [
 // 0 Rubber Belt Round 15 /  1.6 (Formed for 2 Plates  2 x  2 with Hinge - Unloaded)
 // 0 Name: 85543-f3.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -23,22 +24,22 @@ function ldraw_lib__85543_f3() = [
 // 
 // 
 // 1 16 14.5 -20 0 2 0 0 0 0 -2 0 2 0 r04q1000.dat
-  [1,16,14.5,-20,0,2,0,0,0,0,-2,0,2,0, ldraw_lib__r04q1000()],
+  [1,16,14.5,-20,0,2,0,0,0,0,-2,0,2,0, ldraw_lib__r04q1000(realsolid)],
 // 1 16 16.5 -20 0 2 0 0 0 40 0 0 0 2 4-4cyli.dat
-  [1,16,16.5,-20,0,2,0,0,0,40,0,0,0,2, ldraw_lib__4_4cyli()],
+  [1,16,16.5,-20,0,2,0,0,0,40,0,0,0,2, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 14.5 20 0 2 0 0 0 0 2 0 -2 0 r04q1000.dat
-  [1,16,14.5,20,0,2,0,0,0,0,2,0,-2,0, ldraw_lib__r04q1000()],
+  [1,16,14.5,20,0,2,0,0,0,0,2,0,-2,0, ldraw_lib__r04q1000(realsolid)],
 // 1 16 14.5 22 0 0 -29 0 2 0 0 0 0 2 4-4cyli.dat
-  [1,16,14.5,22,0,0,-29,0,2,0,0,0,0,2, ldraw_lib__4_4cyli()],
+  [1,16,14.5,22,0,0,-29,0,2,0,0,0,0,2, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 -14.5 20 0 -2 0 0 0 0 2 0 2 0 r04q1000.dat
-  [1,16,-14.5,20,0,-2,0,0,0,0,2,0,2,0, ldraw_lib__r04q1000()],
+  [1,16,-14.5,20,0,-2,0,0,0,0,2,0,2,0, ldraw_lib__r04q1000(realsolid)],
 // 1 16 -16.5 20 0 -2 0 0 0 -40 0 0 0 2 4-4cyli.dat
-  [1,16,-16.5,20,0,-2,0,0,0,-40,0,0,0,2, ldraw_lib__4_4cyli()],
+  [1,16,-16.5,20,0,-2,0,0,0,-40,0,0,0,2, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 -14.5 -20 0 -2 0 0 0 0 -2 0 -2 0 r04q1000.dat
-  [1,16,-14.5,-20,0,-2,0,0,0,0,-2,0,-2,0, ldraw_lib__r04q1000()],
+  [1,16,-14.5,-20,0,-2,0,0,0,0,-2,0,-2,0, ldraw_lib__r04q1000(realsolid)],
 // 1 16 -14.5 -22 0 0 29 0 -2 0 0 0 0 2 4-4cyli.dat
-  [1,16,-14.5,-22,0,0,29,0,-2,0,0,0,0,2, ldraw_lib__4_4cyli()],
+  [1,16,-14.5,-22,0,0,29,0,-2,0,0,0,0,2, ldraw_lib__4_4cyli(realsolid)],
 ];
 module ldraw_lib__85543_f3(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__85543_f3(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__85543_f3(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__85543_f3(line=0.2);

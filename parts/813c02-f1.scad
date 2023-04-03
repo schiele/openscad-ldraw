@@ -4,7 +4,8 @@ use <3228ac02.scad>
 use <813c01.scad>
 use <814c01-f1.scad>
 use <814c02-f1.scad>
-function ldraw_lib__813c02_f1() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__813c02_f1(realsolid=false) = [
 // 0 Train Track  4.5V Tapered Straight with Blue/Red/White Level Crossing Gate Type 1 (Closed)
 // 0 Name: 813c02-f1.dat
 // 0 Author: Steffen [Steffen]
@@ -21,22 +22,22 @@ function ldraw_lib__813c02_f1() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 3228ac02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3228ac02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3228ac02(realsolid)],
 // 1 7 0 24 0 0 0 1 0 1 0 -1 0 0 813c01.dat
-  [1,7,0,24,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__813c01()],
+  [1,7,0,24,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__813c01(realsolid)],
 // 1 1 150 8 -120 0 0 1 0 1 0 -1 0 0 814c01-f1.dat
-  [1,1,150,8,-120,0,0,1,0,1,0,-1,0,0, ldraw_lib__814c01_f1()],
+  [1,1,150,8,-120,0,0,1,0,1,0,-1,0,0, ldraw_lib__814c01_f1(realsolid)],
 // 1 1 -150 -8 -120 0 0 1 0 1 0 -1 0 0 3004.dat
-  [1,1,-150,-8,-120,0,0,1,0,1,0,-1,0,0, ldraw_lib__3004()],
+  [1,1,-150,-8,-120,0,0,1,0,1,0,-1,0,0, ldraw_lib__3004(realsolid)],
 // 1 1 -150 -32 -120 0 0 1 0 1 0 -1 0 0 3004.dat
-  [1,1,-150,-32,-120,0,0,1,0,1,0,-1,0,0, ldraw_lib__3004()],
+  [1,1,-150,-32,-120,0,0,1,0,1,0,-1,0,0, ldraw_lib__3004(realsolid)],
 // 1 1 150 8 120 0 0 1 0 1 0 -1 0 0 814c02-f1.dat
-  [1,1,150,8,120,0,0,1,0,1,0,-1,0,0, ldraw_lib__814c02_f1()],
+  [1,1,150,8,120,0,0,1,0,1,0,-1,0,0, ldraw_lib__814c02_f1(realsolid)],
 // 1 1 -150 -8 120 0 0 1 0 1 0 -1 0 0 3004.dat
-  [1,1,-150,-8,120,0,0,1,0,1,0,-1,0,0, ldraw_lib__3004()],
+  [1,1,-150,-8,120,0,0,1,0,1,0,-1,0,0, ldraw_lib__3004(realsolid)],
 // 1 1 -150 -32 120 0 0 1 0 1 0 -1 0 0 3004.dat
-  [1,1,-150,-32,120,0,0,1,0,1,0,-1,0,0, ldraw_lib__3004()],
+  [1,1,-150,-32,120,0,0,1,0,1,0,-1,0,0, ldraw_lib__3004(realsolid)],
 ];
 module ldraw_lib__813c02_f1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__813c02_f1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__813c02_f1(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__813c02_f1(line=0.2);

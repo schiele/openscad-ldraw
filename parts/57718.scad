@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <71944.scad>
-function ldraw_lib__57718() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__57718(realsolid=false) = [
 // 0 ~_Technic Ribbed Hose 19 Ribs Flat Silver (Obsolete)
 // 0 Name: 57718.dat
 // 0 Author: [PTadmin]
@@ -20,8 +21,8 @@ function ldraw_lib__57718() = [
 // 0 // colouring of the part (Flat Silver).
 // 
 // 1 179 0 0 0 1 0 0 0 1 0 0 0 1 71944.dat
-  [1,179,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__71944()],
+  [1,179,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__71944(realsolid)],
 ];
 module ldraw_lib__57718(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__57718(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__57718(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__57718(line=0.2);

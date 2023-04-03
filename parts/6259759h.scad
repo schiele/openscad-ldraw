@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__6259759h() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6259759h(realsolid=false) = [
 // 0 Sticker  0.7 x  3.7 with Alien "FUNBUS" Characters, Magenta Stars and Coral Outline
 // 0 Name: 6259759h.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -17,7 +18,7 @@ function ldraw_lib__6259759h() = [
 // 
 // 
 // 1 16 0 -0.25 0 37.5 0 0 0 0.25 0 0 0 7.5 box5-12.dat
-  [1,16,0,-0.25,0,37.5,0,0,0,0.25,0,0,0,7.5, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,37.5,0,0,0,0.25,0,0,0,7.5, ldraw_lib__box5_12(realsolid)],
 // 
 // 4 353 35.5 -0.25 5.5 35.5 -0.25 -5.5 37.5 -0.25 -7.5 37.5 -0.25 7.5
   [4,353,35.5,-0.25,5.5,35.5,-0.25,-5.5,37.5,-0.25,-7.5,37.5,-0.25,7.5],
@@ -723,5 +724,5 @@ function ldraw_lib__6259759h() = [
   [3,15,26.7,-0.25,-3.66,12.8,-0.25,-2.4,35.5,-0.25,-5.5],
 ];
 module ldraw_lib__6259759h(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6259759h(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6259759h(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6259759h(line=0.2);

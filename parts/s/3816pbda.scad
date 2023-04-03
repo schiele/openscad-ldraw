@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__3816pbda() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__3816pbda(realsolid=false) = [
 // 0 ~Minifig Leg with War Machine Armoured Suit Kneepad Pattern
 // 0 Name: s\3816pbda.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -447,5 +448,5 @@ function ldraw_lib__s__3816pbda() = [
   [4,16,-1.5,28,-11,-1.5,20,-11,-2.4,24.1,-11,-2.4,25,-11],
 ];
 module ldraw_lib__s__3816pbda(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__3816pbda(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__3816pbda(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__3816pbda(line=0.2);

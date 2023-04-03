@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <4320.scad>
 use <4323.scad>
-function ldraw_lib__4320c05() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4320c05(realsolid=false) = [
 // 0 Fabuland Roof Slope without Top Hole (Complete) Light Grey
 // 0 Name: 4320c05.dat
 // 0 Author: Steffen [Steffen]
@@ -20,10 +21,10 @@ function ldraw_lib__4320c05() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 4320.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4320()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4320(realsolid)],
 // 1 7 0 -16 0 1 0 0 0 1 0 0 0 1 4323.dat
-  [1,7,0,-16,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4323()],
+  [1,7,0,-16,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4323(realsolid)],
 ];
 module ldraw_lib__4320c05(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4320c05(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4320c05(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4320c05(line=0.2);

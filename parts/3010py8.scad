@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3010s01.scad>
-function ldraw_lib__3010py8() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3010py8(realsolid=false) = [
 // 0 Brick  1 x  4 with Jacket and  2 Pockets Pattern
 // 0 Name: 3010py8.dat
 // 0 Author: Vincent Messenet [Cheenzo]
@@ -18,7 +19,7 @@ function ldraw_lib__3010py8() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3010s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3010s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3010s01(realsolid)],
 // 
 // 4 16 -17.75 13.5 -10 -17.75 6.5 -10 -36.75 6.5 -10 -36.75 13.5 -10
   [4,16,-17.75,13.5,-10,-17.75,6.5,-10,-36.75,6.5,-10,-36.75,13.5,-10],
@@ -212,5 +213,5 @@ function ldraw_lib__3010py8() = [
   [4,16,40,0,-10,20.5,.5,-10,19.9,1.45,-10,38,5.25,-10],
 ];
 module ldraw_lib__3010py8(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3010py8(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3010py8(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3010py8(line=0.2);

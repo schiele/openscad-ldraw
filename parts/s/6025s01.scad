@@ -5,7 +5,8 @@ use <../../p/1-4ring1.scad>
 use <../../p/1-4ring2.scad>
 use <../../p/1-4ring6.scad>
 use <../../p/t04o2500.scad>
-function ldraw_lib__s__6025s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__6025s01(realsolid=false) = [
 // 0 ~Minifig Hair Islander Quarter
 // 0 Name: s\6025s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -566,25 +567,25 @@ function ldraw_lib__s__6025s01() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 2.6 0 10.4 0 0 0 -10.4 0 0 0 10.4 t04o2500.dat
-  [1,16,0,2.6,0,10.4,0,0,0,-10.4,0,0,0,10.4, ldraw_lib__t04o2500()],
+  [1,16,0,2.6,0,10.4,0,0,0,-10.4,0,0,0,10.4, ldraw_lib__t04o2500(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 0 6 0 0 0 -5 0 0 0 6 1-4cylo.dat
-  [1,16,0,0,0,6,0,0,0,-5,0,0,0,6, ldraw_lib__1_4cylo()],
+  [1,16,0,0,0,6,0,0,0,-5,0,0,0,6, ldraw_lib__1_4cylo(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -5 0 1.8 0 0 0 -5.4 0 0 0 1.8 1-4cylo.dat
-  [1,16,0,-5,0,1.8,0,0,0,-5.4,0,0,0,1.8, ldraw_lib__1_4cylo()],
+  [1,16,0,-5,0,1.8,0,0,0,-5.4,0,0,0,1.8, ldraw_lib__1_4cylo(realsolid)],
 // 1 16 0 -10.4 0 1.8 0 0 0 1 0 0 0 1.8 1-4ndis.dat
-  [1,16,0,-10.4,0,1.8,0,0,0,1,0,0,0,1.8, ldraw_lib__1_4ndis()],
+  [1,16,0,-10.4,0,1.8,0,0,0,1,0,0,0,1.8, ldraw_lib__1_4ndis(realsolid)],
 // 1 16 0 -5 0 1.8 0 0 0 -1 0 0 0 1.8 1-4ring1.dat
-  [1,16,0,-5,0,1.8,0,0,0,-1,0,0,0,1.8, ldraw_lib__1_4ring1()],
+  [1,16,0,-5,0,1.8,0,0,0,-1,0,0,0,1.8, ldraw_lib__1_4ring1(realsolid)],
 // 1 16 0 -5 0 3 0 0 0 -1 0 0 0 3 1-4ring1.dat
-  [1,16,0,-5,0,3,0,0,0,-1,0,0,0,3, ldraw_lib__1_4ring1()],
+  [1,16,0,-5,0,3,0,0,0,-1,0,0,0,3, ldraw_lib__1_4ring1(realsolid)],
 // 1 16 0 0 0 3 0 0 0 -1 0 0 0 3 1-4ring2.dat
-  [1,16,0,0,0,3,0,0,0,-1,0,0,0,3, ldraw_lib__1_4ring2()],
+  [1,16,0,0,0,3,0,0,0,-1,0,0,0,3, ldraw_lib__1_4ring2(realsolid)],
 // 1 16 0 0 0 1.48571 0 0 0 -1 0 0 0 1.48571 1-4ring6.dat
-  [1,16,0,0,0,1.48571,0,0,0,-1,0,0,0,1.48571, ldraw_lib__1_4ring6()],
+  [1,16,0,0,0,1.48571,0,0,0,-1,0,0,0,1.48571, ldraw_lib__1_4ring6(realsolid)],
 // 2 24 12 6.4 5 11.4 6.4 6.2
   [2,24,12,6.4,5,11.4,6.4,6.2],
 // 2 24 13 5.8 0 12.7 6.4 1.4
@@ -1081,5 +1082,5 @@ function ldraw_lib__s__6025s01() = [
   [5,24,4.975,2.6,12.011,5,6.4,12,9.2,6.4,9.2,0,2.6,13],
 ];
 module ldraw_lib__s__6025s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__6025s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__6025s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__6025s01(line=0.2);

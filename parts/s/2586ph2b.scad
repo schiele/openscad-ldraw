@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/1-4chrd.scad>
-function ldraw_lib__s__2586ph2b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__2586ph2b(realsolid=false) = [
 // 0 ~Minifig Shield Ovoid with Silver Snake - Green Detail
 // 0 Name: s\2586ph2b.dat
 // 0 Author: Andy Westrate [westrate]
@@ -18,9 +19,9 @@ function ldraw_lib__s__2586ph2b() = [
 // 
 // 0 // Dark Green Detail
 // 1 16 0 -14.5 -8 0 0 -17 -17 0 0 0 1 0 1-4chrd.dat
-  [1,16,0,-14.5,-8,0,0,-17,-17,0,0,0,1,0, ldraw_lib__1_4chrd()],
+  [1,16,0,-14.5,-8,0,0,-17,-17,0,0,0,1,0, ldraw_lib__1_4chrd(realsolid)],
 // 1 16 0 -14.5 -8 17 0 0 0 0 -17 0 1 0 1-4chrd.dat
-  [1,16,0,-14.5,-8,17,0,0,0,0,-17,0,1,0, ldraw_lib__1_4chrd()],
+  [1,16,0,-14.5,-8,17,0,0,0,0,-17,0,1,0, ldraw_lib__1_4chrd(realsolid)],
 // 3 16 0 -31.5 -8 0.5 -17.25 -8 4.5 -17.25 -8
   [3,16,0,-31.5,-8,0.5,-17.25,-8,4.5,-17.25,-8],
 // 4 16 4.75 4 -8 4 3.5 -8 3 3.5 -8 2.25 4 -8
@@ -156,5 +157,5 @@ function ldraw_lib__s__2586ph2b() = [
 // 0
 ];
 module ldraw_lib__s__2586ph2b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__2586ph2b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__2586ph2b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__2586ph2b(line=0.2);

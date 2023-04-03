@@ -3,7 +3,8 @@ use <6260.scad>
 use <6265.scad>
 use <6266.scad>
 use <82359.scad>
-function ldraw_lib__6260c01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6260c01(realsolid=false) = [
 // 0 Minifig Skeleton (Shortcut)
 // 0 Name: 6260c01.dat
 // 0 Author: Steve Bliss [sbliss]
@@ -20,19 +21,19 @@ function ldraw_lib__6260c01() = [
 // 
 // 
 // 1 16 0 -24 0 1 0 0 0 1 0 0 0 1 82359.dat
-  [1,16,0,-24,0,1,0,0,0,1,0,0,0,1, ldraw_lib__82359()],
+  [1,16,0,-24,0,1,0,0,0,1,0,0,0,1, ldraw_lib__82359(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 6260.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__6260()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__6260(realsolid)],
 // 1 16 -10 45 0 1 0 0 0 1 0 0 0 1 6266.dat
-  [1,16,-10,45,0,1,0,0,0,1,0,0,0,1, ldraw_lib__6266()],
+  [1,16,-10,45,0,1,0,0,0,1,0,0,0,1, ldraw_lib__6266(realsolid)],
 // 1 16 10 45 0 1 0 0 0 1 0 0 0 1 6266.dat
-  [1,16,10,45,0,1,0,0,0,1,0,0,0,1, ldraw_lib__6266()],
+  [1,16,10,45,0,1,0,0,0,1,0,0,0,1, ldraw_lib__6266(realsolid)],
 // 1 16 21.2 6.8 0 .9848 0 -.1736 -.1736 0 -.9848 0 1 0 6265.dat
-  [1,16,21.2,6.8,0,.9848,0,-.1736,-.1736,0,-.9848,0,1,0, ldraw_lib__6265()],
+  [1,16,21.2,6.8,0,.9848,0,-.1736,-.1736,0,-.9848,0,1,0, ldraw_lib__6265(realsolid)],
 // 1 16 -21.2 6.8 0 -.9848 0 .1736 -.1736 0 -.9848 0 1 0 6265.dat
-  [1,16,-21.2,6.8,0,-.9848,0,.1736,-.1736,0,-.9848,0,1,0, ldraw_lib__6265()],
+  [1,16,-21.2,6.8,0,-.9848,0,.1736,-.1736,0,-.9848,0,1,0, ldraw_lib__6265(realsolid)],
 // 0
 ];
 module ldraw_lib__6260c01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6260c01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6260c01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6260c01(line=0.2);

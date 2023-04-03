@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__60749() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__60749(realsolid=false) = [
 // 0 Minifig Beard Long with Five Braids
 // 0 Name: 60749.dat
 // 0 Author: Andy Westrate [westrate]
@@ -7206,5 +7207,5 @@ function ldraw_lib__60749() = [
 // 0
 ];
 module ldraw_lib__60749(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__60749(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__60749(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__60749(line=0.2);

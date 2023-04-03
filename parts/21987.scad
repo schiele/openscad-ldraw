@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/21987s01.scad>
 use <s/21987s02.scad>
-function ldraw_lib__21987() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__21987(realsolid=false) = [
 // 0 Constraction Bar 15L with Axle Bush End
 // 0 Name: 21987.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -18,11 +19,11 @@ function ldraw_lib__21987() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\21987s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__21987s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__21987s01(realsolid)],
 // 0 // Transparent Rubber Part
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\21987s02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__21987s02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__21987s02(realsolid)],
 ];
 module ldraw_lib__21987(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__21987(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__21987(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__21987(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <4085c.scad>
-function ldraw_lib__161() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__161(realsolid=false) = [
 // 0 ~Moved to 4085c
 // 0 Name: 161.dat
 // 0 Author: [PTadmin]
@@ -18,9 +19,9 @@ function ldraw_lib__161() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 4085c.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4085c()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4085c(realsolid)],
 // 0
 ];
 module ldraw_lib__161(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__161(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__161(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__161(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/stud4o.scad>
-function ldraw_lib__21269() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__21269(realsolid=false) = [
 // 0 Minifig Hair Swept Back with Widow's Peak, Chin-Length and Bushy in Back
 // 0 Name: 21269.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -20,7 +21,7 @@ function ldraw_lib__21269() = [
 // 
 // 
 // 1 16 0 -4 0 -1 0 0 0 -1 0 0 0 1 stud4o.dat
-  [1,16,0,-4,0,-1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4o()],
+  [1,16,0,-4,0,-1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4o(realsolid)],
 // 3 16 -0.004 -2.275 8.356 0 0 8 -4.172 -2.266 7.25
   [3,16,-0.004,-2.275,8.356,0,0,8,-4.172,-2.266,7.25],
 // 3 16 -4.172 -2.266 7.25 0 0 8 -3.0616 0 7.3912
@@ -5825,5 +5826,5 @@ function ldraw_lib__21269() = [
   [5,24,-12.107,20.924,5.218,-12.171,4.23,4.428,-11.747,21.532,6.172,-12.777,15.611,2.396],
 ];
 module ldraw_lib__21269(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__21269(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__21269(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__21269(line=0.2);

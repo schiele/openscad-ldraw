@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3068bs01.scad>
-function ldraw_lib__3068bp8a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3068bp8a(realsolid=false) = [
 // 0 Tile  2 x  2 with "Donut Fancy" and Doughnut on Hand Pattern
 // 0 Name: 3068bp8a.dat
 // 0 Author: Damien Roux [Darats]
@@ -19,7 +20,7 @@ function ldraw_lib__3068bp8a() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3068bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3068bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3068bs01(realsolid)],
 // 
 // 4 0 -16.112 0 8.152 -16.112 0 8.211 -16.656 0 8.101 -16.645 0 8.024
   [4,0,-16.112,0,8.152,-16.112,0,8.211,-16.656,0,8.101,-16.645,0,8.024],
@@ -8360,5 +8361,5 @@ function ldraw_lib__3068bp8a() = [
 // 0
 ];
 module ldraw_lib__3068bp8a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3068bp8a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3068bp8a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3068bp8a(line=0.2);

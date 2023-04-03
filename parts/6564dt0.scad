@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <168335t.scad>
 use <6564.scad>
-function ldraw_lib__6564dt0() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6564dt0(realsolid=false) = [
 // 0 Wedge  3 x  2 Right with Grille Sticker
 // 0 Name: 6564dt0.dat
 // 0 Author: Ulrich Röder [UR]
@@ -18,10 +19,10 @@ function ldraw_lib__6564dt0() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 6564.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__6564()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__6564(realsolid)],
 // 1 16 -10 10 0 0.315649 0.948876 0 0 0 -1 -0.948876 0.315649 0 168335t.dat
-  [1,16,-10,10,0,0.315649,0.948876,0,0,0,-1,-0.948876,0.315649,0, ldraw_lib__168335t()],
+  [1,16,-10,10,0,0.315649,0.948876,0,0,0,-1,-0.948876,0.315649,0, ldraw_lib__168335t(realsolid)],
 ];
 module ldraw_lib__6564dt0(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6564dt0(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6564dt0(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6564dt0(line=0.2);

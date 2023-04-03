@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/2-4cylc.scad>
-function ldraw_lib__s__15524s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__15524s01(realsolid=false) = [
 // 0 ~Minifig Head Simpsons Lisa Simpson Half
 // 0 Name: s\15524s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -17,7 +18,7 @@ function ldraw_lib__s__15524s01() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -30 0 0 0 6 0 30 0 -6 0 0 2-4cylc.dat
-  [1,16,0,-30,0,0,0,6,0,30,0,-6,0,0, ldraw_lib__2_4cylc()],
+  [1,16,0,-30,0,0,0,6,0,30,0,-6,0,0, ldraw_lib__2_4cylc(realsolid)],
 // 3 16 14.2286 -8.5282 5.7463 17.1227 -9.8566 4.9165 14.9805 -10.1721 2.9398
   [3,16,14.2286,-8.5282,5.7463,17.1227,-9.8566,4.9165,14.9805,-10.1721,2.9398],
 // 3 16 20.9859 -12.7308 3.5432 20.2171 -15.0455 1.5539 19.232 -13.1106 2.3232
@@ -3730,5 +3731,5 @@ function ldraw_lib__s__15524s01() = [
   [4,16,1.268,0,8.7397,2.2962,0,5.5434,0,0,6,0,0,8.8845],
 ];
 module ldraw_lib__s__15524s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__15524s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__15524s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__15524s01(line=0.2);

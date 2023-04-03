@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4ndis.scad>
 use <s/4162s01.scad>
-function ldraw_lib__4162p17() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4162p17(realsolid=false) = [
 // 0 Tile  1 x  8 with "Chicago" Pattern
 // 0 Name: 4162p17.dat
 // 0 Author: Damien Roux [Darats]
@@ -19,11 +20,11 @@ function ldraw_lib__4162p17() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4162s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4162s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4162s01(realsolid)],
 // 1 15 -5.81 0 4.19 0.77 0 0 0 1 0 0 0 0.77 4-4disc.dat
-  [1,15,-5.81,0,4.19,0.77,0,0,0,1,0,0,0,0.77, ldraw_lib__4_4disc()],
+  [1,15,-5.81,0,4.19,0.77,0,0,0,1,0,0,0,0.77, ldraw_lib__4_4disc(realsolid)],
 // 1 16 -5.81 0 4.19 0.77 0 0 0 1 0 0 0 0.77 4-4ndis.dat
-  [1,16,-5.81,0,4.19,0.77,0,0,0,1,0,0,0,0.77, ldraw_lib__4_4ndis()],
+  [1,16,-5.81,0,4.19,0.77,0,0,0,1,0,0,0,0.77, ldraw_lib__4_4ndis(realsolid)],
 // 3 16 -80 0 10 -22.743 0 0.081 -22.673 0 1.069
   [3,16,-80,0,10,-22.743,0,0.081,-22.673,0,1.069],
 // 4 16 -22.743 0 0.081 -80 0 10 -80 0 -10 -22.673 0 -0.908
@@ -912,5 +913,5 @@ function ldraw_lib__4162p17() = [
   [4,15,23.7,0,-1.084,22.465,0,-1.049,22.429,0,-1.543,23.63,0,-1.79],
 ];
 module ldraw_lib__4162p17(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4162p17(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4162p17(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4162p17(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/97781s01.scad>
-function ldraw_lib__34173() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__34173(realsolid=false) = [
 // 0 Figure Friends Cutlery Spoon
 // 0 Name: 34173.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -20,7 +21,7 @@ function ldraw_lib__34173() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\97781s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__97781s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__97781s01(realsolid)],
 // 3 16 -2.209 -8.75 -2.767 -2.335 -10.905 -2.507 -2.587 -8.75 1.596
   [3,16,-2.209,-8.75,-2.767,-2.335,-10.905,-2.507,-2.587,-8.75,1.596],
 // 3 16 -2.335 -10.905 -2.507 -2.364 -10.898 1.485 -2.587 -8.75 1.596
@@ -507,5 +508,5 @@ function ldraw_lib__34173() = [
   [5,24,3.203,-21.626,5.158,2.567,-26.577,4.294,5.325,-26.645,2.79,0,-21.626,5.685],
 ];
 module ldraw_lib__34173(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__34173(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__34173(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__34173(line=0.2);

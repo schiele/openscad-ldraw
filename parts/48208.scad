@@ -3,7 +3,8 @@ use <s/48208s01.scad>
 use <../p/stug-1x2.scad>
 use <../p/stug-1x4.scad>
 use <../p/stug-1x6.scad>
-function ldraw_lib__48208() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__48208(realsolid=false) = [
 // 0 Wing  4 x  6 Left
 // 0 Name: 48208.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -18,14 +19,14 @@ function ldraw_lib__48208() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\48208s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__48208s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__48208s01(realsolid)],
 // 1 16 -30 0 0 0 0 -1 0 1 0 1 0 0 stug-1x6.dat
-  [1,16,-30,0,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__stug_1x6()],
+  [1,16,-30,0,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__stug_1x6(realsolid)],
 // 1 16 -10 0 20 0 0 -1 0 1 0 1 0 0 stug-1x4.dat
-  [1,16,-10,0,20,0,0,-1,0,1,0,1,0,0, ldraw_lib__stug_1x4()],
+  [1,16,-10,0,20,0,0,-1,0,1,0,1,0,0, ldraw_lib__stug_1x4(realsolid)],
 // 1 16 10 0 40 0 0 -1 0 1 0 1 0 0 stug-1x2.dat
-  [1,16,10,0,40,0,0,-1,0,1,0,1,0,0, ldraw_lib__stug_1x2()],
+  [1,16,10,0,40,0,0,-1,0,1,0,1,0,0, ldraw_lib__stug_1x2(realsolid)],
 ];
 module ldraw_lib__48208(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__48208(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__48208(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__48208(line=0.2);

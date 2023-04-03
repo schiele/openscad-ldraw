@@ -3,7 +3,8 @@ use <../../p/1-4cyli.scad>
 use <../../p/1-4disc.scad>
 use <../../p/1-4edge.scad>
 use <../../p/1-4ndis.scad>
-function ldraw_lib__s__30601s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__30601s01(realsolid=false) = [
 // 0 ~Slope Brick  2 x  2 x  1.667 with Angled Blocks w/o Top Half
 // 0 Name: s\30601s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -454,17 +455,17 @@ function ldraw_lib__s__30601s01() = [
 // 4 16 0 -13.36 19.5 6.25 -13.36 19.5 6.25 6.49 19.5 0 6.49 19.5
   [4,16,0,-13.36,19.5,6.25,-13.36,19.5,6.25,6.49,19.5,0,6.49,19.5],
 // 1 16 0 6.49 19.5 6.25 0 0 0 0 6.25 0 -1 0 1-4disc.dat
-  [1,16,0,6.49,19.5,6.25,0,0,0,0,6.25,0,-1,0, ldraw_lib__1_4disc()],
+  [1,16,0,6.49,19.5,6.25,0,0,0,0,6.25,0,-1,0, ldraw_lib__1_4disc(realsolid)],
 // 1 16 0 6.49 19.5 6.25 0 0 0 0 6.25 0 -1 0 1-4edge.dat
-  [1,16,0,6.49,19.5,6.25,0,0,0,0,6.25,0,-1,0, ldraw_lib__1_4edge()],
+  [1,16,0,6.49,19.5,6.25,0,0,0,0,6.25,0,-1,0, ldraw_lib__1_4edge(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 6.49 19.5 6.25 0 0 0 0 6.25 0 0.5 0 1-4cyli.dat
-  [1,16,0,6.49,19.5,6.25,0,0,0,0,6.25,0,0.5,0, ldraw_lib__1_4cyli()],
+  [1,16,0,6.49,19.5,6.25,0,0,0,0,6.25,0,0.5,0, ldraw_lib__1_4cyli(realsolid)],
 // 1 16 0 6.49 20 6.25 0 0 0 0 6.25 0 -1 0 1-4edge.dat
-  [1,16,0,6.49,20,6.25,0,0,0,0,6.25,0,-1,0, ldraw_lib__1_4edge()],
+  [1,16,0,6.49,20,6.25,0,0,0,0,6.25,0,-1,0, ldraw_lib__1_4edge(realsolid)],
 // 1 16 0 6.49 20 6.25 0 0 0 0 6.25 0 -1 0 1-4ndis.dat
-  [1,16,0,6.49,20,6.25,0,0,0,0,6.25,0,-1,0, ldraw_lib__1_4ndis()],
+  [1,16,0,6.49,20,6.25,0,0,0,0,6.25,0,-1,0, ldraw_lib__1_4ndis(realsolid)],
 // 2 24 6.25 -13.36 19.5 6.25 6.49 19.5
   [2,24,6.25,-13.36,19.5,6.25,6.49,19.5],
 // 2 24 6.25 -13.53 20 6.25 -13.36 19.5
@@ -831,5 +832,5 @@ function ldraw_lib__s__30601s01() = [
   [2,24,16.25,2.88,-6.637,16.25,24,-6.637],
 ];
 module ldraw_lib__s__30601s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__30601s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__30601s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__30601s01(line=0.2);

@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__973p6ua() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__973p6ua(realsolid=false) = [
 // 0 ~Minifig Torso with UFO Alien Triangular Insignia Pattern - Half
 // 0 Name: s\973p6ua.dat
 // 0 Author: Nils Schmidt [BlackBrick89]
@@ -311,5 +312,5 @@ function ldraw_lib__s__973p6ua() = [
   [3,27,0,22.682,0,0.738,10.808,0,0.546,9.609,0],
 ];
 module ldraw_lib__s__973p6ua(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__973p6ua(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__973p6ua(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__973p6ua(line=0.2);

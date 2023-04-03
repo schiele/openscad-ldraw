@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__4620856a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4620856a(realsolid=false) = [
 // 0 Sticker  3.9 x  1.9 with Hearts, Star, Butterflies, Music Notes, Paw Prints, Flower and Mattress Buttons
 // 0 Name: 4620856a.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -17,7 +18,7 @@ function ldraw_lib__4620856a() = [
 // 
 // 
 // 1 16 0 -0.25 0 19 0 0 0 0.25 0 0 0 39 box5-12.dat
-  [1,16,0,-0.25,0,19,0,0,0,0.25,0,0,0,39, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,19,0,0,0,0.25,0,0,0,39, ldraw_lib__box5_12(realsolid)],
 // 4 191 0 -0.25 0.2 0 -0.25 0.8 -0.6 -0.25 0.6 -0.6 -0.25 0.4
   [4,191,0,-0.25,0.2,0,-0.25,0.8,-0.6,-0.25,0.6,-0.6,-0.25,0.4],
 // 4 191 0.6 -0.25 0.6 0 -0.25 0.8 0 -0.25 0.2 0.6 -0.25 0.4
@@ -1282,5 +1283,5 @@ function ldraw_lib__4620856a() = [
   [4,191,-0.7,-0.25,23,-0.1,-0.25,30.3,-1,-0.25,30.9,-2.6,-0.25,24.3],
 ];
 module ldraw_lib__4620856a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4620856a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4620856a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4620856a(line=0.2);

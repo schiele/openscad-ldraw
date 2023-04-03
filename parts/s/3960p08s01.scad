@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__3960p08s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__3960p08s01(realsolid=false) = [
 // 0 ~Dish  4 x  4 Inverted with Green Cross Pattern - 1/8
 // 0 Name: s\3960p08s01.dat
 // 0 Author: Steffen [Steffen]
@@ -326,5 +327,5 @@ function ldraw_lib__s__3960p08s01() = [
   [4,16,7.0707,0,-7.0707,6.0876,0,-7.9335,13.3927,2,-17.4536,15.5559,2,-15.5559],
 ];
 module ldraw_lib__s__3960p08s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__3960p08s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__3960p08s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__3960p08s01(line=0.2);

@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__logo() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__logo(realsolid=false) = [
 // 0 LEGO Logo for Studs - Non-3D Thin Lines
 // 0 Name: logo.dat
 // 0 Author: Paul Easter [pneaster]
@@ -70,5 +71,5 @@ function ldraw_lib__logo() = [
   [2,24,1.5,0,4,-1.5,0,4.75],
 ];
 module ldraw_lib__logo(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__logo(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__logo(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__logo(line=0.2);

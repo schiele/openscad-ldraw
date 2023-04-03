@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <1-8chrd.scad>
-function ldraw_lib__axleho10() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__axleho10(realsolid=false) = [
 // 0 Technic Axle Hole Tooth Surface
 // 0 Name: axleho10.dat
 // 0 Author: Steve Bliss [sbliss]
@@ -39,21 +40,21 @@ function ldraw_lib__axleho10() = [
 // 3 16 2.296 0 5.543 2 0 2 5.543 0 2.296
   [3,16,2.296,0,5.543,2,0,2,5.543,0,2.296],
 // 1 16 0 0 0 5.54328 0 -2.2961 0 1 0 2.2961 0 5.54328 1-8chrd.dat
-  [1,16,0,0,0,5.54328,0,-2.2961,0,1,0,2.2961,0,5.54328, ldraw_lib__1_8chrd()],
+  [1,16,0,0,0,5.54328,0,-2.2961,0,1,0,2.2961,0,5.54328, ldraw_lib__1_8chrd(realsolid)],
 // 3 16 -5.543 0 2.296 -2 0 2 -2.296 0 5.543
   [3,16,-5.543,0,2.296,-2,0,2,-2.296,0,5.543],
 // 1 16 0 0 0 -2.2961 0 -5.54328 0 1 0 5.54328 0 -2.2961 1-8chrd.dat
-  [1,16,0,0,0,-2.2961,0,-5.54328,0,1,0,5.54328,0,-2.2961, ldraw_lib__1_8chrd()],
+  [1,16,0,0,0,-2.2961,0,-5.54328,0,1,0,5.54328,0,-2.2961, ldraw_lib__1_8chrd(realsolid)],
 // 3 16 -2.296 0 -5.543 -2 0 -2 -5.543 0 -2.296
   [3,16,-2.296,0,-5.543,-2,0,-2,-5.543,0,-2.296],
 // 1 16 0 0 0 -5.54328 0 2.2961 0 1 0 -2.2961 0 -5.54328 1-8chrd.dat
-  [1,16,0,0,0,-5.54328,0,2.2961,0,1,0,-2.2961,0,-5.54328, ldraw_lib__1_8chrd()],
+  [1,16,0,0,0,-5.54328,0,2.2961,0,1,0,-2.2961,0,-5.54328, ldraw_lib__1_8chrd(realsolid)],
 // 3 16 5.543 0 -2.296 2 0 -2 2.296 0 -5.543
   [3,16,5.543,0,-2.296,2,0,-2,2.296,0,-5.543],
 // 1 16 0 0 0 2.2961 0 5.54328 0 1 0 -5.54328 0 2.2961 1-8chrd.dat
-  [1,16,0,0,0,2.2961,0,5.54328,0,1,0,-5.54328,0,2.2961, ldraw_lib__1_8chrd()],
+  [1,16,0,0,0,2.2961,0,5.54328,0,1,0,-5.54328,0,2.2961, ldraw_lib__1_8chrd(realsolid)],
 // 0
 ];
 module ldraw_lib__axleho10(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__axleho10(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__axleho10(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__axleho10(line=0.2);

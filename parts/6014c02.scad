@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <6014.scad>
 use <87697.scad>
-function ldraw_lib__6014c02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6014c02(realsolid=false) = [
 // 0 Wheel Rim 11.2 x 10.4 with Tyre 12/ 40 x 11 Wide with Centre Band
 // 0 Name: 6014c02.dat
 // 0 Author: Steffen [Steffen]
@@ -16,10 +17,10 @@ function ldraw_lib__6014c02() = [
 // 
 // 
 // 1 16 0 0 6 1 0 0 0 1 0 0 0 1 6014.dat
-  [1,16,0,0,6,1,0,0,0,1,0,0,0,1, ldraw_lib__6014()],
+  [1,16,0,0,6,1,0,0,0,1,0,0,0,1, ldraw_lib__6014(realsolid)],
 // 1 256 0 0 0 1 0 0 0 1 0 0 0 1 87697.dat
-  [1,256,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__87697()],
+  [1,256,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__87697(realsolid)],
 ];
 module ldraw_lib__6014c02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6014c02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6014c02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6014c02(line=0.2);

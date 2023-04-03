@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__4494t() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__4494t(realsolid=false) = [
 // 0 ~Animal Horse Tail - Half
 // 0 Name: s\4494t.dat
 // 0 Author: Sascha Broich
@@ -4496,5 +4497,5 @@ function ldraw_lib__s__4494t() = [
   [5,24,0,-89,45.97,0,-89.659,42.802,0.91,-89,45.636,-0.91,-89,45.636],
 ];
 module ldraw_lib__s__4494t(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__4494t(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__4494t(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__4494t(line=0.2);

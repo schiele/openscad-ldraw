@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__4622303c() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4622303c(realsolid=false) = [
 // 0 Sticker  1.5 x  4.5 Red/White Diagonal Stripes Right Up
 // 0 Name: 4622303c.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -17,7 +18,7 @@ function ldraw_lib__4622303c() = [
 // 
 // 
 // 1 16 0 -0.25 0 45 0 0 0 0.25 0 0 0 15 box5-12.dat
-  [1,16,0,-0.25,0,45,0,0,0,0.25,0,0,0,15, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,45,0,0,0,0.25,0,0,0,15, ldraw_lib__box5_12(realsolid)],
 // 0 //
 // 4 4 6.25 -0.25 -15 36.25 -0.25 15 7.5 -0.25 15 -22.5 -0.25 -15
   [4,4,6.25,-0.25,-15,36.25,-0.25,15,7.5,-0.25,15,-22.5,-0.25,-15],
@@ -35,5 +36,5 @@ function ldraw_lib__4622303c() = [
   [3,4,-21.25,-0.25,15,-45,-0.25,15,-45,-0.25,-8.75],
 ];
 module ldraw_lib__4622303c(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4622303c(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4622303c(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4622303c(line=0.2);

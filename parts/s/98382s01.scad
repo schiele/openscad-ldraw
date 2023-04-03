@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__98382s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__98382s01(realsolid=false) = [
 // 0 ~Minifig Teddy Bear with Arms Down Body Half
 // 0 Name: s\98382s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -923,5 +924,5 @@ function ldraw_lib__s__98382s01() = [
   [4,16,10.364,0,6.219,12.169,0,2.35,7.391,0,3.062,5.657,0,5.657],
 ];
 module ldraw_lib__s__98382s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__98382s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__98382s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__98382s01(line=0.2);

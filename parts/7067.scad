@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <3149ec01.scad>
-function ldraw_lib__7067() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__7067(realsolid=false) = [
 // 0 ~_Hinge Plate  2 x  5 with Large Hole (Complete) Light_Grey (Obsolete)
 // 0 Name: 7067.dat
 // 0 Author: Chris Dee [cwdee]
@@ -19,8 +20,8 @@ function ldraw_lib__7067() = [
 // 
 // 
 // 1 7 0 0 0 1 0 0 0 1 0 0 0 1 3149ec01.dat
-  [1,7,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3149ec01()],
+  [1,7,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3149ec01(realsolid)],
 ];
 module ldraw_lib__7067(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__7067(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__7067(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__7067(line=0.2);

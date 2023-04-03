@@ -2,7 +2,8 @@ use <../lib.scad>
 use <s/3011pt2s01.scad>
 use <s/3011pt2s02.scad>
 use <s/4247as01.scad>
-function ldraw_lib__4247ap01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4247ap01(realsolid=false) = [
 // 0 Duplo Door  1 x  4 x  3 with Arched Top with Large Window with Blue "POLICE" Pattern
 // 0 Name: 4247ap01.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -20,11 +21,11 @@ function ldraw_lib__4247ap01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4247as01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4247as01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4247as01(realsolid)],
 // 1 1 -70.7 17.2 37.5 .725 0 0 0 .725 0 0 0 1 s\3011pt2s01.dat
-  [1,1,-70.7,17.2,37.5,.725,0,0,0,.725,0,0,0,1, ldraw_lib__s__3011pt2s01()],
+  [1,1,-70.7,17.2,37.5,.725,0,0,0,.725,0,0,0,1, ldraw_lib__s__3011pt2s01(realsolid)],
 // 1 16 -70.7 17.2 37.5 .725 0 0 0 .725 0 0 0 1 s\3011pt2s02.dat
-  [1,16,-70.7,17.2,37.5,.725,0,0,0,.725,0,0,0,1, ldraw_lib__s__3011pt2s02()],
+  [1,16,-70.7,17.2,37.5,.725,0,0,0,.725,0,0,0,1, ldraw_lib__s__3011pt2s02(realsolid)],
 // 3 16 -133.5 -47 -2.5 -128.7 17.2 -2.5 -117.5 9 -2.5
   [3,16,-133.5,-47,-2.5,-128.7,17.2,-2.5,-117.5,9,-2.5],
 // 4 16 -128.7 17.2 -2.5 -133.5 -47 -2.5 -133.5 50 -2.5 -128.7 52 -2.5
@@ -55,5 +56,5 @@ function ldraw_lib__4247ap01() = [
   [4,16,-128.7,17.2,-2.5,-99.8969,10.4996,-2.5,-113.7962,8.5434,-2.5,-117.5,9,-2.5],
 ];
 module ldraw_lib__4247ap01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4247ap01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4247ap01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4247ap01(line=0.2);

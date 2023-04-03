@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/87079s01.scad>
-function ldraw_lib__87079p05() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__87079p05(realsolid=false) = [
 // 0 Tile  2 x  4 with "Cyanocitta cristata" Pattern
 // 0 Name: 87079p05.dat
 // 0 Author: Owen Burgoyne [C3POwen]
@@ -17,7 +18,7 @@ function ldraw_lib__87079p05() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\87079s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__87079s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__87079s01(realsolid)],
 // 4 15 -25.582 0 4.265 -26.533 0 4.049 -26.217 0 3.22 -25.343 0 3.639
   [4,15,-25.582,0,4.265,-26.533,0,4.049,-26.217,0,3.22,-25.343,0,3.639],
 // 4 15 -25.661 0 4.977 -26.639 0 4.977 -26.533 0 4.049 -25.582 0 4.265
@@ -1392,5 +1393,5 @@ function ldraw_lib__87079p05() = [
   [3,16,-26.533,0,4.049,-40,0,-20,-26.217,0,3.22],
 ];
 module ldraw_lib__87079p05(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__87079p05(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__87079p05(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__87079p05(line=0.2);

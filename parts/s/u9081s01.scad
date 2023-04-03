@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <11140s03.scad>
-function ldraw_lib__s__u9081s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__u9081s01(realsolid=false) = [
 // 0 ~Tyre  7/ 22 x 26 Racing Slick - Half of 1/6
 // 0 Name: s\u9081s01.dat
 // 0 Author: Ingolf Weisheit [stahlwollschaf]
@@ -22,7 +23,7 @@ function ldraw_lib__s__u9081s01() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\11140s03.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__11140s03()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__11140s03(realsolid)],
 // 
 // 0 // an outer torus with an elliptical cross-section R=33.125, ry=4, rz=8.75
 // 0 // major radius R=33.125 on xy-plane
@@ -231,5 +232,5 @@ function ldraw_lib__s__u9081s01() = [
 // 
 ];
 module ldraw_lib__s__u9081s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__u9081s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__u9081s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__u9081s01(line=0.2);

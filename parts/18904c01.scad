@@ -3,7 +3,8 @@ use <18904.scad>
 use <18905.scad>
 use <18906.scad>
 use <4274.scad>
-function ldraw_lib__18904c01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__18904c01(realsolid=false) = [
 // 0 Animal Crocodile  4 x  9 (Complete)
 // 0 Name: 18904c01.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -33,14 +34,14 @@ function ldraw_lib__18904c01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 18904.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__18904()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__18904(realsolid)],
 // 1 16 0 6.9 -40.2 1 0 0 0 1 0 0 0 1 18905.dat
-  [1,16,0,6.9,-40.2,1,0,0,0,1,0,0,0,1, ldraw_lib__18905()],
+  [1,16,0,6.9,-40.2,1,0,0,0,1,0,0,0,1, ldraw_lib__18905(realsolid)],
 // 1 16 0 14.75 60 1 0 0 0 1 0 0 0 1 18906.dat
-  [1,16,0,14.75,60,1,0,0,0,1,0,0,0,1, ldraw_lib__18906()],
+  [1,16,0,14.75,60,1,0,0,0,1,0,0,0,1, ldraw_lib__18906(realsolid)],
 // 1 16 0 25 60 0 -1 0 1 0 0 0 0 1 4274.dat
-  [1,16,0,25,60,0,-1,0,1,0,0,0,0,1, ldraw_lib__4274()],
+  [1,16,0,25,60,0,-1,0,1,0,0,0,0,1, ldraw_lib__4274(realsolid)],
 ];
 module ldraw_lib__18904c01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__18904c01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__18904c01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__18904c01(line=0.2);

@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/2040s01.scad>
 use <../p/stud.scad>
-function ldraw_lib__2040() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2040(realsolid=false) = [
 // 0 Fabuland Fence  1 x  6 x  2 Rounded
 // 0 Name: 2040.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -18,13 +19,13 @@ function ldraw_lib__2040() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2040s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2040s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2040s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\2040s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__2040s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__2040s01(realsolid)],
 // 1 16 -50 0 0 1 0 0 0 1 0 0 0 1 stud.dat
-  [1,16,-50,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud()],
+  [1,16,-50,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud(realsolid)],
 // 1 16 50 0 0 1 0 0 0 1 0 0 0 1 stud.dat
-  [1,16,50,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud()],
+  [1,16,50,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud(realsolid)],
 // 5 24 0 -5.2653 3.6956 0 -4.5 4 -4.1243 -4.4373 4 4.1502 -5.2023 3.6956
   [5,24,0,-5.2653,3.6956,0,-4.5,4,-4.1243,-4.4373,4,4.1502,-5.2023,3.6956],
 // 5 24 0 -5.914 2.8284 0 -5.2653 3.6956 -4.1502 -5.2023 3.6956 4.1722 -5.8507 2.8284
@@ -43,5 +44,5 @@ function ldraw_lib__2040() = [
   [5,24,0,-4.5,-4,0,-5.2653,-3.6956,-4.1502,-5.2023,-3.6956,4.1243,-4.4373,-4],
 ];
 module ldraw_lib__2040(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2040(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2040(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2040(line=0.2);

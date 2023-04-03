@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__11202p04s04() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__11202p04s04(realsolid=false) = [
 // 0 ~Figure Friends Foot Shoe with  3 Laces Negative Pattern
 // 0 Name: s\11202p04s04.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -131,5 +132,5 @@ function ldraw_lib__s__11202p04s04() = [
   [5,24,12.59,-11.76,3.73,13.65,-10.12,5.27,12.82,-11.33,6.29,13.06,-10.45,2.77],
 ];
 module ldraw_lib__s__11202p04s04(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__11202p04s04(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__11202p04s04(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__11202p04s04(line=0.2);

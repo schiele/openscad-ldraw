@@ -3,7 +3,8 @@ use <92198p06.scad>
 use <92243p01c01.scad>
 use <92249p01c01.scad>
 use <92259.scad>
-function ldraw_lib__92198p06c01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__92198p06c01(realsolid=false) = [
 // 0 _Figure Friends Anna with Red Long Skirt, Dark Blue Sleeveless Blouse Top
 // 0 Name: 92198p06c01.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -20,14 +21,14 @@ function ldraw_lib__92198p06c01() = [
 // 
 // 
 // 1 4 0 0 0 1 0 0 0 1 0 0 0 1 92249p01c01.dat
-  [1,4,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__92249p01c01()],
+  [1,4,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__92249p01c01(realsolid)],
 // 1 78 0 -64 0 1 0 0 0 1 0 0 0 1 92243p01c01.dat
-  [1,78,0,-64,0,1,0,0,0,1,0,0,0,1, ldraw_lib__92243p01c01()],
+  [1,78,0,-64,0,1,0,0,0,1,0,0,0,1, ldraw_lib__92243p01c01(realsolid)],
 // 1 78 0 -110 3.9 1 0 0 0 1 0 0 0 1 92198p06.dat
-  [1,78,0,-110,3.9,1,0,0,0,1,0,0,0,1, ldraw_lib__92198p06()],
+  [1,78,0,-110,3.9,1,0,0,0,1,0,0,0,1, ldraw_lib__92198p06(realsolid)],
 // 1 0 0 -110 0.9 1 0 0 0 1 0 0 0 1 92259.dat
-  [1,0,0,-110,0.9,1,0,0,0,1,0,0,0,1, ldraw_lib__92259()],
+  [1,0,0,-110,0.9,1,0,0,0,1,0,0,0,1, ldraw_lib__92259(realsolid)],
 ];
 module ldraw_lib__92198p06c01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__92198p06c01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__92198p06c01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__92198p06c01(line=0.2);

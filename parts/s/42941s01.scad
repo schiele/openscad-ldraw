@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <42938s01.scad>
 use <42938s03.scad>
-function ldraw_lib__s__42941s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__42941s01(realsolid=false) = [
 // 0 ~Car Track 16 x  8 x  2 Y-Branch - One Side
 // 0 Name: s\42941s01.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -18,9 +19,9 @@ function ldraw_lib__s__42941s01() = [
 // 0 // Subparts
 // 
 // 1 16 320 0 -85.744 -.86603 0 .5 0 1 0 .5 0 .86603 s\42938s01.dat
-  [1,16,320,0,-85.744,-.86603,0,.5,0,1,0,.5,0,.86603, ldraw_lib__s__42938s01()],
+  [1,16,320,0,-85.744,-.86603,0,.5,0,1,0,.5,0,.86603, ldraw_lib__s__42938s01(realsolid)],
 // 1 16 320 0 -85.744 -.86603 0 .5 0 1 0 .5 0 .86603 s\42938s03.dat
-  [1,16,320,0,-85.744,-.86603,0,.5,0,1,0,.5,0,.86603, ldraw_lib__s__42938s03()],
+  [1,16,320,0,-85.744,-.86603,0,.5,0,1,0,.5,0,.86603, ldraw_lib__s__42938s03(realsolid)],
 // 0 // End faces
 // 3 16 0 24 -10 0 26 -28 0 24 -60
   [3,16,0,24,-10,0,26,-28,0,24,-60],
@@ -1387,5 +1388,5 @@ function ldraw_lib__s__42941s01() = [
   [3,16,334.6794,40,-20.31808,332.4613,40,-24.16016,332.4613,48,-24.16016],
 ];
 module ldraw_lib__s__42941s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__42941s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__42941s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__42941s01(line=0.2);

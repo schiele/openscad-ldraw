@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/1-4edge.scad>
 use <../../p/1-4tang.scad>
-function ldraw_lib__s__11435s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__11435s01(realsolid=false) = [
 // 0 ~Animal Eagle Body Lower without Patternable Areas - Half
 // 0 Name: s\11435s01.dat
 // 0 Author: Christian Neumann [Wesley]
@@ -2014,7 +2015,7 @@ function ldraw_lib__s__11435s01() = [
 // 
 // 0 // Top surface
 // 1 16 0 0 -35.5 1.5 0 0 0 1 0 0 0 -2.5 1-4edge.dat
-  [1,16,0,0,-35.5,1.5,0,0,0,1,0,0,0,-2.5, ldraw_lib__1_4edge()],
+  [1,16,0,0,-35.5,1.5,0,0,0,1,0,0,0,-2.5, ldraw_lib__1_4edge(realsolid)],
 // 2 24 10.424 0 -23.184 14.27 0 -21.545
   [2,24,10.424,0,-23.184,14.27,0,-21.545],
 // 2 24 2.066 0 -32.267 3.974 0 -28.541
@@ -2048,10 +2049,10 @@ function ldraw_lib__s__11435s01() = [
 // 2 24 6.361 0 40.757 4.234 0 42.766
   [2,24,6.361,0,40.757,4.234,0,42.766],
 // 1 16 0 0 48 1.5 0 0 0 1 0 0 0 2.5 1-4edge.dat
-  [1,16,0,0,48,1.5,0,0,0,1,0,0,0,2.5, ldraw_lib__1_4edge()],
+  [1,16,0,0,48,1.5,0,0,0,1,0,0,0,2.5, ldraw_lib__1_4edge(realsolid)],
 // 
 // 1 16 0 0 -35.5 1.5 0 0 0 1 0 0 0 -2.5 1-4tang.dat
-  [1,16,0,0,-35.5,1.5,0,0,0,1,0,0,0,-2.5, ldraw_lib__1_4tang()],
+  [1,16,0,0,-35.5,1.5,0,0,0,1,0,0,0,-2.5, ldraw_lib__1_4tang(realsolid)],
 // 
 // 3 16 0 -1.939 -39.65 1.275 0 -38.479 0 0 -38.479
   [3,16,0,-1.939,-39.65,1.275,0,-38.479,0,0,-38.479],
@@ -2112,7 +2113,7 @@ function ldraw_lib__s__11435s01() = [
   [3,16,6.149,0,45.673,2.597,0,45.187,4.234,0,42.766],
 // 
 // 1 16 0 0 48 1.5 0 0 0 1 0 0 0 2.5 1-4tang.dat
-  [1,16,0,0,48,1.5,0,0,0,1,0,0,0,2.5, ldraw_lib__1_4tang()],
+  [1,16,0,0,48,1.5,0,0,0,1,0,0,0,2.5, ldraw_lib__1_4tang(realsolid)],
 // 
 // 0 // Edges and conds of the patternable area
 // 2 24 4.817 27.39 -80.481 0 27.178 -81.267
@@ -2333,5 +2334,5 @@ function ldraw_lib__s__11435s01() = [
   [3,16,11.806,21.815,-71.721,13.58,19.466,-60.65,13.511,16.101,-63.663],
 ];
 module ldraw_lib__s__11435s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__11435s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__11435s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__11435s01(line=0.2);

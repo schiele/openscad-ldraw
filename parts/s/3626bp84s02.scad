@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__3626bp84s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__3626bp84s02(realsolid=false) = [
 // 0 ~Minifig Head Eyebrows
 // 0 Name: s\3626bp84s02.dat
 // 0 Author: Vincent Messenet [Cheenzo]
@@ -63,5 +64,5 @@ function ldraw_lib__s__3626bp84s02() = [
   [4,16,4.975,5.86,-12.011,4.975,5.102,-12.011,5.32,5.115,-11.78,5.297,5.846,-11.796],
 ];
 module ldraw_lib__s__3626bp84s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__3626bp84s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__3626bp84s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__3626bp84s02(line=0.2);

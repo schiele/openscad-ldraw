@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/4162s01.scad>
-function ldraw_lib__4162p0x() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4162p0x(realsolid=false) = [
 // 0 Tile  1 x  8 with "Lincoln Memorial" Pattern
 // 0 Name: 4162p0x.dat
 // 0 Author: Owen Burgoyne [C3POwen]
@@ -15,7 +16,7 @@ function ldraw_lib__4162p0x() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4162s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4162s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4162s01(realsolid)],
 // 4 15 -43.175 0 3.909 -43.175 0 -3.8 -42.23 0 -2.89 -42.23 0 3.909
   [4,15,-43.175,0,3.909,-43.175,0,-3.8,-42.23,0,-2.89,-42.23,0,3.909],
 // 4 15 -42.23 0 -2.89 -43.175 0 -3.8 -38.264 0 -3.8 -38.264 0 -2.89
@@ -1138,5 +1139,5 @@ function ldraw_lib__4162p0x() = [
   [3,16,4.711,0,3.91,8.355,0,2.008,8.935,0,2.067],
 ];
 module ldraw_lib__4162p0x(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4162p0x(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4162p0x(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4162p0x(line=0.2);

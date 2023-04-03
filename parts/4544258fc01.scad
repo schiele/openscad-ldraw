@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__4544258fc01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4544258fc01(realsolid=false) = [
 // 0 Sticker  0.9 x  2.9 with Gold Stripe Left (Formed)
 // 0 Name: 4544258fc01.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -90,5 +91,5 @@ function ldraw_lib__4544258fc01() = [
   [3,16,5.5,11.1082,-21.232,-9,11.1082,-21.232,5.5,16.0663,-32],
 ];
 module ldraw_lib__4544258fc01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4544258fc01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4544258fc01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4544258fc01(line=0.2);

@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4ring4.scad>
 use <s/u1851s02.scad>
 use <s/u9006s01.scad>
-function ldraw_lib__u9006p01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__u9006p01(realsolid=false) = [
 // 0 Roadsign Round Large with "STOP" Pattern
 // 0 Name: u9006p01.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -18,12 +19,12 @@ function ldraw_lib__u9006p01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\u9006s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__u9006s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__u9006s01(realsolid)],
 // 1 16 0 -96.1 -2 0.3575 0 0 0 0 -0.3575 0 1 0 s\u1851s02.dat
-  [1,16,0,-96.1,-2,0.3575,0,0,0,0,-0.3575,0,1,0, ldraw_lib__s__u1851s02()],
+  [1,16,0,-96.1,-2,0.3575,0,0,0,0,-0.3575,0,1,0, ldraw_lib__s__u1851s02(realsolid)],
 // 0 //
 // 1 4 0 -93.988 -2 5.2 0 0 0 0 -5.2 0 1 0 4-4ring4.dat
-  [1,4,0,-93.988,-2,5.2,0,0,0,0,-5.2,0,1,0, ldraw_lib__4_4ring4()],
+  [1,4,0,-93.988,-2,5.2,0,0,0,0,-5.2,0,1,0, ldraw_lib__4_4ring4(realsolid)],
 // 4 4 18.4555 -103.088 -2 15.6319 -107.313 -2 -15.6319 -107.313 -2 -18.4555 -103.088 -2
   [4,4,18.4555,-103.088,-2,15.6319,-107.313,-2,-15.6319,-107.313,-2,-18.4555,-103.088,-2],
 // 4 4 19.4131 -100.962 -2 19.2171 -101.948 -2 18.4555 -103.088 -2 15.7617 -103.088 -2
@@ -66,5 +67,5 @@ function ldraw_lib__u9006p01() = [
 // 0 //
 ];
 module ldraw_lib__u9006p01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__u9006p01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__u9006p01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__u9006p01(line=0.2);

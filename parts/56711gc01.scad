@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__56711gc01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__56711gc01(realsolid=false) = [
 // 0 Sticker  1.7 x  1.7 Joker Face Small (Formed)
 // 0 Name: 56711gc01.dat
 // 0 Author: Michael Heidemann [mikeheide]
@@ -1160,5 +1161,5 @@ function ldraw_lib__56711gc01() = [
   [5,24,-17,-.25,-5.613,17,-.25,-5.613,17,-.25,17,17,1.27499,-16.8974],
 ];
 module ldraw_lib__56711gc01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__56711gc01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__56711gc01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__56711gc01(line=0.2);

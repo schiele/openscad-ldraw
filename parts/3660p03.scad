@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <3660bp03.scad>
-function ldraw_lib__3660p03() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3660p03(realsolid=false) = [
 // 0 ~Moved to 3660bp03
 // 0 Name: 3660p03.dat
 // 0 Author: [PTadmin]
@@ -16,8 +17,8 @@ function ldraw_lib__3660p03() = [
 // 
 // 0 // Slope Brick 45 2 x 2 Inverted with Black/Blue Stripes Pattern
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 3660bp03.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3660bp03()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3660bp03(realsolid)],
 ];
 module ldraw_lib__3660p03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3660p03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3660p03(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3660p03(line=0.2);

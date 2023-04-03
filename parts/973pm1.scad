@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/1-4cyli.scad>
 use <s/973s01.scad>
-function ldraw_lib__973pm1() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__973pm1(realsolid=false) = [
 // 0 Minifig Torso with LOTR Cloak, Rope and Belt Pattern
 // 0 Name: 973pm1.dat
 // 0 Author: Howard Lande [HowardLande]
@@ -18,9 +19,9 @@ function ldraw_lib__973pm1() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01(realsolid)],
 // 1 71 0 -4 0 4.243 0 -4.243 0 -8 0 -4.243 0 -4.243 1-4cyli.dat
-  [1,71,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli()],
+  [1,71,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli(realsolid)],
 // 
 // 0 // Front Pattern
 // 4 0 1.7 31.8 -10 2.75 31.49 -10 2.33 30.82 -10 1.787 30.937 -10
@@ -4965,5 +4966,5 @@ function ldraw_lib__973pm1() = [
 // 0
 ];
 module ldraw_lib__973pm1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__973pm1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__973pm1(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__973pm1(line=0.2);

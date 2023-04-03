@@ -3,7 +3,8 @@ use <../p/box5-12.scad>
 use <s/004158c1.scad>
 use <s/004159e1.scad>
 use <s/004219b1.scad>
-function ldraw_lib__004219b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__004219b(realsolid=false) = [
 // 0 Sticker  2.4 x  3 with Australia Flag
 // 0 Name: 004219b.dat
 // 0 Author: Willy Tschager [Holly-Wood]
@@ -74,28 +75,28 @@ function ldraw_lib__004219b() = [
 // 
 // 0 // Subpart Sticker with United Kingdom Flag Pattern - Pattern
 // 1 16 -15 -0.25 14 0.5 0 0 0 1 0 0 0 0.417 s\004158c1.dat
-  [1,16,-15,-0.25,14,0.5,0,0,0,1,0,0,0,0.417, ldraw_lib__s__004158c1()],
+  [1,16,-15,-0.25,14,0.5,0,0,0,1,0,0,0,0.417, ldraw_lib__s__004158c1(realsolid)],
 // 
 // 0 // Subpart Sticker with US-Flag Pattern - Stars
 // 1 272 18 -0.25 2.82 1.25 0 0 0 1 0 0 0 1.25 s\004159e1.dat
-  [1,272,18,-0.25,2.82,1.25,0,0,0,1,0,0,0,1.25, ldraw_lib__s__004159e1()],
+  [1,272,18,-0.25,2.82,1.25,0,0,0,1,0,0,0,1.25, ldraw_lib__s__004159e1(realsolid)],
 // 
 // 0 // Subpart Sticker with Australia Flag Pattern - Star
 // 1 272 -14.96 -0.25 -11.37 4.35 0 0 0 1 0 0 0 4.35 s\004219b1.dat
-  [1,272,-14.96,-0.25,-11.37,4.35,0,0,0,1,0,0,0,4.35, ldraw_lib__s__004219b1()],
+  [1,272,-14.96,-0.25,-11.37,4.35,0,0,0,1,0,0,0,4.35, ldraw_lib__s__004219b1(realsolid)],
 // 1 272 14.99 -0.25 14.08 2.05 0 0 0 1 0 0 0 2.05 s\004219b1.dat
-  [1,272,14.99,-0.25,14.08,2.05,0,0,0,1,0,0,0,2.05, ldraw_lib__s__004219b1()],
+  [1,272,14.99,-0.25,14.08,2.05,0,0,0,1,0,0,0,2.05, ldraw_lib__s__004219b1(realsolid)],
 // 1 272 21.68 -0.25 7.96 2.05 0 0 0 1 0 0 0 2.05 s\004219b1.dat
-  [1,272,21.68,-0.25,7.96,2.05,0,0,0,1,0,0,0,2.05, ldraw_lib__s__004219b1()],
+  [1,272,21.68,-0.25,7.96,2.05,0,0,0,1,0,0,0,2.05, ldraw_lib__s__004219b1(realsolid)],
 // 1 272 7.49 -0.25 5.96 2.05 0 0 0 1 0 0 0 2.05 s\004219b1.dat
-  [1,272,7.49,-0.25,5.96,2.05,0,0,0,1,0,0,0,2.05, ldraw_lib__s__004219b1()],
+  [1,272,7.49,-0.25,5.96,2.05,0,0,0,1,0,0,0,2.05, ldraw_lib__s__004219b1(realsolid)],
 // 1 272 14.96 -0.25 -13.93 2.05 0 0 0 1 0 0 0 2.05 s\004219b1.dat
-  [1,272,14.96,-0.25,-13.93,2.05,0,0,0,1,0,0,0,2.05, ldraw_lib__s__004219b1()],
+  [1,272,14.96,-0.25,-13.93,2.05,0,0,0,1,0,0,0,2.05, ldraw_lib__s__004219b1(realsolid)],
 // 
 // 1 15 0 -0.25 0 30 0 0 0 0.25 0 0 0 24 box5-12.dat
-  [1,15,0,-0.25,0,30,0,0,0,0.25,0,0,0,24, ldraw_lib__box5_12()],
+  [1,15,0,-0.25,0,30,0,0,0,0.25,0,0,0,24, ldraw_lib__box5_12(realsolid)],
 // 0
 ];
 module ldraw_lib__004219b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__004219b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__004219b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__004219b(line=0.2);

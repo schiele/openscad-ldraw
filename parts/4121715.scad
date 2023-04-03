@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <2780.scad>
-function ldraw_lib__4121715() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4121715(realsolid=false) = [
 // 0 ~_Technic Pin with Friction and Slots Black (Obsolete)
 // 0 Name: 4121715.dat
 // 0 Author: Michael Heidemann [mikeheide]
@@ -17,8 +18,8 @@ function ldraw_lib__4121715() = [
 // 
 // 
 // 1 0 0 0 0 1 0 0 0 1 0 0 0 1 2780.dat
-  [1,0,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2780()],
+  [1,0,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2780(realsolid)],
 ];
 module ldraw_lib__4121715(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4121715(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4121715(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4121715(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3039s01.scad>
-function ldraw_lib__3039pcf() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3039pcf(realsolid=false) = [
 // 0 Slope Brick 45  2 x  2 with Red Cash Register Pattern
 // 0 Name: 3039pcf.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -17,7 +18,7 @@ function ldraw_lib__3039pcf() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3039s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3039s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3039s01(realsolid)],
 // 4 0 6.9713 15.3459 -25.3459 6.8929 15.1609 -25.1609 6.6005 15.2409 -25.2409 6.7464 15.4944 -25.4944
   [4,0,6.9713,15.3459,-25.3459,6.8929,15.1609,-25.1609,6.6005,15.2409,-25.2409,6.7464,15.4944,-25.4944],
 // 4 0 6.5519 14.9104 -24.9104 6.6005 15.2409 -25.2409 6.8929 15.1609 -25.1609 6.8669 14.9107 -24.9107
@@ -1250,5 +1251,5 @@ function ldraw_lib__3039pcf() = [
   [3,4,13.8,6.0811,-16.0811,5.9,6.8589,-16.8589,8.5,6.8589,-16.8589],
 ];
 module ldraw_lib__3039pcf(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3039pcf(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3039pcf(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3039pcf(line=0.2);

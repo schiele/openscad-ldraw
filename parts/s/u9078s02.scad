@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__u9078s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__u9078s02(realsolid=false) = [
 // 0 ~Plant Flat Bush Half Trunk
 // 0 Name: s\u9078s02.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -883,5 +884,5 @@ function ldraw_lib__s__u9078s02() = [
   [5,24,34,1,19,31.5,0,19.5,31.5,1,15.5,32,1,22],
 ];
 module ldraw_lib__s__u9078s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__u9078s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__u9078s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__u9078s02(line=0.2);

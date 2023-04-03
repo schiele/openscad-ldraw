@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-8sphe.scad>
 use <../p/box.scad>
-function ldraw_lib__3841() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3841(realsolid=false) = [
 // 0 Minifig Pickaxe
 // 0 Name: 3841.dat
 // 0 Author: Imre Papp [ampi]
@@ -24,7 +25,7 @@ function ldraw_lib__3841() = [
 // 
 // 
 // 1 16 0 -34 0 3 0 0 0 6 0 0 0 5 box.dat
-  [1,16,0,-34,0,3,0,0,0,6,0,0,0,5, ldraw_lib__box()],
+  [1,16,0,-34,0,3,0,0,0,6,0,0,0,5, ldraw_lib__box(realsolid)],
 // 0 Axe blade edges
 // 2 24 -2 -39 -5 -2.4 -39 -10
   [2,24,-2,-39,-5,-2.4,-39,-10],
@@ -489,11 +490,11 @@ function ldraw_lib__3841() = [
   [5,24,3.6955,-10.4662,-1.5307,3.6955,-8,-1.5307,2.8284,0,-2.8284,4,0,0],
 // 0 Handle end
 // 1 16 0 -8 0 4 0 0 0 48 0 0 0 4 4-4cyli.dat
-  [1,16,0,-8,0,4,0,0,0,48,0,0,0,4, ldraw_lib__4_4cyli()],
+  [1,16,0,-8,0,4,0,0,0,48,0,0,0,4, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 40 0 4 0 0 0 2 0 0 0 4 4-8sphe.dat
-  [1,16,0,40,0,4,0,0,0,2,0,0,0,4, ldraw_lib__4_8sphe()],
+  [1,16,0,40,0,4,0,0,0,2,0,0,0,4, ldraw_lib__4_8sphe(realsolid)],
 // 0
 ];
 module ldraw_lib__3841(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3841(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3841(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3841(line=0.2);

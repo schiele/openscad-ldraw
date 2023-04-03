@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4ndis.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__004159d() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__004159d(realsolid=false) = [
 // 0 Sticker  2.4 x  3 with Japan Flag
 // 0 Name: 004159d.dat
 // 0 Author: Guy Vivan [guyvivan]
@@ -29,14 +30,14 @@ function ldraw_lib__004159d() = [
 // 4 15 -30 -0.25 -24 -15 -0.25 -15 15 -0.25 -15 30 -0.25 -24
   [4,15,-30,-0.25,-24,-15,-0.25,-15,15,-0.25,-15,30,-0.25,-24],
 // 1 15 0 -0.25 0 15 0 0 0 1 0 0 0 15 4-4ndis.dat
-  [1,15,0,-0.25,0,15,0,0,0,1,0,0,0,15, ldraw_lib__4_4ndis()],
+  [1,15,0,-0.25,0,15,0,0,0,1,0,0,0,15, ldraw_lib__4_4ndis(realsolid)],
 // 0 // Red
 // 1 4 0 -0.25 0 15 0 0 0 1 0 0 0 15 4-4disc.dat
-  [1,4,0,-0.25,0,15,0,0,0,1,0,0,0,15, ldraw_lib__4_4disc()],
+  [1,4,0,-0.25,0,15,0,0,0,1,0,0,0,15, ldraw_lib__4_4disc(realsolid)],
 // 1 15 0 -0.25 0 30 0 0 0 0.25 0 0 0 24 box5-12.dat
-  [1,15,0,-0.25,0,30,0,0,0,0.25,0,0,0,24, ldraw_lib__box5_12()],
+  [1,15,0,-0.25,0,30,0,0,0,0.25,0,0,0,24, ldraw_lib__box5_12(realsolid)],
 // 0
 ];
 module ldraw_lib__004159d(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__004159d(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__004159d(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__004159d(line=0.2);

@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <32495.scad>
 use <32496.scad>
-function ldraw_lib__32495c01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__32495c01(realsolid=false) = [
 // 0 Technic Wheel Spindle Steering Arm (Complete)
 // 0 Name: 32495c01.dat
 // 0 Author: Donald Sutter [technog]
@@ -17,11 +18,11 @@ function ldraw_lib__32495c01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 32495.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__32495()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__32495(realsolid)],
 // 1 0 0 0 0 .5 -.866 0 .866 .5 0 0 0 1 32496.dat
-  [1,0,0,0,0,.5,-.866,0,.866,.5,0,0,0,1, ldraw_lib__32496()],
+  [1,0,0,0,0,.5,-.866,0,.866,.5,0,0,0,1, ldraw_lib__32496(realsolid)],
 // 0
 ];
 module ldraw_lib__32495c01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__32495c01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__32495c01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__32495c01(line=0.2);

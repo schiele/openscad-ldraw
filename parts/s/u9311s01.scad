@@ -3,7 +3,8 @@ use <../../p/1-4cyli.scad>
 use <../../p/1-4disc.scad>
 use <../../p/1-4edge.scad>
 use <../../p/box4-4a.scad>
-function ldraw_lib__s__u9311s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__u9311s01(realsolid=false) = [
 // 0 ~Fabuland House Block End Panel - Clip
 // 0 Name: s\u9311s01.dat
 // 0 Author: Chris Dee [cwdee]
@@ -40,27 +41,27 @@ function ldraw_lib__s__u9311s01() = [
 // 2 24 8 -6 -10 8 -6 2
   [2,24,8,-6,-10,8,-6,2],
 // 1 16 8 -2 2 0 1 0 -4 0 0 0 0 4 1-4edge.dat
-  [1,16,8,-2,2,0,1,0,-4,0,0,0,0,4, ldraw_lib__1_4edge()],
+  [1,16,8,-2,2,0,1,0,-4,0,0,0,0,4, ldraw_lib__1_4edge(realsolid)],
 // 2 24 8 -2 6 8 0 6
   [2,24,8,-2,6,8,0,6],
 // 2 24 -8 -6 -10 -8 -6 2
   [2,24,-8,-6,-10,-8,-6,2],
 // 1 16 -8 -2 2 0 1 0 -4 0 0 0 0 4 1-4edge.dat
-  [1,16,-8,-2,2,0,1,0,-4,0,0,0,0,4, ldraw_lib__1_4edge()],
+  [1,16,-8,-2,2,0,1,0,-4,0,0,0,0,4, ldraw_lib__1_4edge(realsolid)],
 // 2 24 -8 -2 6 -8 0 6
   [2,24,-8,-2,6,-8,0,6],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -6 -1 4 0 0 0 4 0 0 0 -3 box4-4a.dat
-  [1,16,0,-6,-1,4,0,0,0,4,0,0,0,-3, ldraw_lib__box4_4a()],
+  [1,16,0,-6,-1,4,0,0,0,4,0,0,0,-3, ldraw_lib__box4_4a(realsolid)],
 // 1 16 4 -2 2 0 1 0 -4 0 0 0 0 4 1-4edge.dat
-  [1,16,4,-2,2,0,1,0,-4,0,0,0,0,4, ldraw_lib__1_4edge()],
+  [1,16,4,-2,2,0,1,0,-4,0,0,0,0,4, ldraw_lib__1_4edge(realsolid)],
 // 1 16 -4 -2 2 0 1 0 -4 0 0 0 0 4 1-4edge.dat
-  [1,16,-4,-2,2,0,1,0,-4,0,0,0,0,4, ldraw_lib__1_4edge()],
+  [1,16,-4,-2,2,0,1,0,-4,0,0,0,0,4, ldraw_lib__1_4edge(realsolid)],
 // 1 16 4 -2 2 0 1 0 -4 0 0 0 0 4 1-4disc.dat
-  [1,16,4,-2,2,0,1,0,-4,0,0,0,0,4, ldraw_lib__1_4disc()],
+  [1,16,4,-2,2,0,1,0,-4,0,0,0,0,4, ldraw_lib__1_4disc(realsolid)],
 // 1 16 -4 -2 2 0 -1 0 -4 0 0 0 0 4 1-4disc.dat
-  [1,16,-4,-2,2,0,-1,0,-4,0,0,0,0,4, ldraw_lib__1_4disc()],
+  [1,16,-4,-2,2,0,-1,0,-4,0,0,0,0,4, ldraw_lib__1_4disc(realsolid)],
 // 2 24 4 -2 2 4 -2 6
   [2,24,4,-2,2,4,-2,6],
 // 2 24 -4 -2 2 -4 -2 6
@@ -70,13 +71,13 @@ function ldraw_lib__s__u9311s01() = [
 // 4 16 -4 -2 2 -4 -2 6 4 -2 6 4 -2 2
   [4,16,-4,-2,2,-4,-2,6,4,-2,6,4,-2,2],
 // 1 16 8 -2 2 0 -1 0 -4 0 0 0 0 4 1-4disc.dat
-  [1,16,8,-2,2,0,-1,0,-4,0,0,0,0,4, ldraw_lib__1_4disc()],
+  [1,16,8,-2,2,0,-1,0,-4,0,0,0,0,4, ldraw_lib__1_4disc(realsolid)],
 // 1 16 -8 -2 2 0 1 0 -4 0 0 0 0 4 1-4disc.dat
-  [1,16,-8,-2,2,0,1,0,-4,0,0,0,0,4, ldraw_lib__1_4disc()],
+  [1,16,-8,-2,2,0,1,0,-4,0,0,0,0,4, ldraw_lib__1_4disc(realsolid)],
 // 1 16 8 -2 2 0 -4 0 -4 0 0 0 0 4 1-4cyli.dat
-  [1,16,8,-2,2,0,-4,0,-4,0,0,0,0,4, ldraw_lib__1_4cyli()],
+  [1,16,8,-2,2,0,-4,0,-4,0,0,0,0,4, ldraw_lib__1_4cyli(realsolid)],
 // 1 16 -8 -2 2 0 4 0 -4 0 0 0 0 4 1-4cyli.dat
-  [1,16,-8,-2,2,0,4,0,-4,0,0,0,0,4, ldraw_lib__1_4cyli()],
+  [1,16,-8,-2,2,0,4,0,-4,0,0,0,0,4, ldraw_lib__1_4cyli(realsolid)],
 // 4 16 8 0 6 4 -2 6 -4 -2 6 -8 0 6
   [4,16,8,0,6,4,-2,6,-4,-2,6,-8,0,6],
 // 3 16 8 0 6 8 -2 6 4 -2 6
@@ -109,5 +110,5 @@ function ldraw_lib__s__u9311s01() = [
   [4,16,8,-2,-6,8,0,-6,-8,0,-6,-8,-2,-6],
 ];
 module ldraw_lib__s__u9311s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__u9311s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__u9311s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__u9311s01(line=0.2);

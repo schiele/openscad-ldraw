@@ -6,7 +6,8 @@ use <../p/4-4rin15.scad>
 use <../p/4-4ring8.scad>
 use <s/98138pxcs01.scad>
 use <s/98138s01.scad>
-function ldraw_lib__98138pxd() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__98138pxd(realsolid=false) = [
 // 0 Tile  1 x  1 Round with Metallic Silver Goggles Outline and Off-Centred Reddish Brown Eye Pattern
 // 0 Name: 98138pxd.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -24,31 +25,31 @@ function ldraw_lib__98138pxd() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\98138s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01(realsolid)],
 // 1 80 0 0 0 1 0 0 0 1 0 0 0 1 4-4ring8.dat
-  [1,80,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4ring8()],
+  [1,80,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4ring8(realsolid)],
 // 1 0 0 0 0 .5 0 0 0 1 0 0 0 .5 4-4rin15.dat
-  [1,0,0,0,0,.5,0,0,0,1,0,0,0,.5, ldraw_lib__4_4rin15()],
+  [1,0,0,0,0,.5,0,0,0,1,0,0,0,.5, ldraw_lib__4_4rin15(realsolid)],
 // 
 // 1 70 2 0 0 .70711 0 -.70711 0 1 0 -.70711 0 -.70711 s\98138pxcs01.dat
-  [1,70,2,0,0,.70711,0,-.70711,0,1,0,-.70711,0,-.70711, ldraw_lib__s__98138pxcs01()],
+  [1,70,2,0,0,.70711,0,-.70711,0,1,0,-.70711,0,-.70711, ldraw_lib__s__98138pxcs01(realsolid)],
 // 1 70 2 0 0 -2.47487 0 2.47487 0 1 0 2.47487 0 2.47487 1-4chrd.dat
-  [1,70,2,0,0,-2.47487,0,2.47487,0,1,0,2.47487,0,2.47487, ldraw_lib__1_4chrd()],
+  [1,70,2,0,0,-2.47487,0,2.47487,0,1,0,2.47487,0,2.47487, ldraw_lib__1_4chrd(realsolid)],
 // 1 15 2 0 0 -2.47487 0 2.47487 0 1 0 2.47487 0 2.47487 1-4ndis.dat
-  [1,15,2,0,0,-2.47487,0,2.47487,0,1,0,2.47487,0,2.47487, ldraw_lib__1_4ndis()],
+  [1,15,2,0,0,-2.47487,0,2.47487,0,1,0,2.47487,0,2.47487, ldraw_lib__1_4ndis(realsolid)],
 // 
 // 1 15 0 0 0 7.5 0 0 0 1 0 0 0 7.5 1-8chrd.dat
-  [1,15,0,0,0,7.5,0,0,0,1,0,0,0,7.5, ldraw_lib__1_8chrd()],
+  [1,15,0,0,0,7.5,0,0,0,1,0,0,0,7.5, ldraw_lib__1_8chrd(realsolid)],
 // 1 15 0 0 0 7.5 0 0 0 1 0 0 0 -7.5 1-8chrd.dat
-  [1,15,0,0,0,7.5,0,0,0,1,0,0,0,-7.5, ldraw_lib__1_8chrd()],
+  [1,15,0,0,0,7.5,0,0,0,1,0,0,0,-7.5, ldraw_lib__1_8chrd(realsolid)],
 // 1 15 0 0 0 0 0 7.5 0 1 0 -7.5 0 0 1-8chrd.dat
-  [1,15,0,0,0,0,0,7.5,0,1,0,-7.5,0,0, ldraw_lib__1_8chrd()],
+  [1,15,0,0,0,0,0,7.5,0,1,0,-7.5,0,0, ldraw_lib__1_8chrd(realsolid)],
 // 1 15 0 0 0 0 0 7.5 0 1 0 7.5 0 0 1-8chrd.dat
-  [1,15,0,0,0,0,0,7.5,0,1,0,7.5,0,0, ldraw_lib__1_8chrd()],
+  [1,15,0,0,0,0,0,7.5,0,1,0,7.5,0,0, ldraw_lib__1_8chrd(realsolid)],
 // 1 15 0 0 0 -7.5 0 0 0 1 0 0 0 7.5 1-4chrd.dat
-  [1,15,0,0,0,-7.5,0,0,0,1,0,0,0,7.5, ldraw_lib__1_4chrd()],
+  [1,15,0,0,0,-7.5,0,0,0,1,0,0,0,7.5, ldraw_lib__1_4chrd(realsolid)],
 // 1 15 0 0 0 -7.5 0 0 0 1 0 0 0 -7.5 1-4chrd.dat
-  [1,15,0,0,0,-7.5,0,0,0,1,0,0,0,-7.5, ldraw_lib__1_4chrd()],
+  [1,15,0,0,0,-7.5,0,0,0,1,0,0,0,-7.5, ldraw_lib__1_4chrd(realsolid)],
 // 3 15 -2.94977 0 0 -7.5 0 0 -.474885 0 -2.474885
   [3,15,-2.94977,0,0,-7.5,0,0,-.474885,0,-2.474885],
 // 4 15 -7.5 0 0 0 0 -7.5 2 0 -4.94977 -.474885 0 -2.474885
@@ -67,5 +68,5 @@ function ldraw_lib__98138pxd() = [
   [4,15,0,0,7.5,2,0,4.94977,4.474885,0,2.474885,5.30325,0,5.30325],
 ];
 module ldraw_lib__98138pxd(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__98138pxd(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__98138pxd(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__98138pxd(line=0.2);

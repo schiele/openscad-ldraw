@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/95674s01.scad>
 use <../p/stud4a.scad>
-function ldraw_lib__95674p01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__95674p01(realsolid=false) = [
 // 0 Minifig Hat Bowler with Red Flower with Yellow Centre Pattern
 // 0 Name: 95674p01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -19,11 +20,11 @@ function ldraw_lib__95674p01() = [
 // 
 // 
 // 1 16 0 -4 0 1 0 0 0 -1 0 0 0 1 stud4a.dat
-  [1,16,0,-4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4a()],
+  [1,16,0,-4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4a(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\95674s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__95674s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__95674s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\95674s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__95674s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__95674s01(realsolid)],
 // 0 // Front area for patterns
 // 3 16 -5.25 -4.85 -12.54 -5.15 0.36 -13.01 0 0.53 -14.16
   [3,16,-5.25,-4.85,-12.54,-5.15,0.36,-13.01,0,0.53,-14.16],
@@ -529,5 +530,5 @@ function ldraw_lib__95674p01() = [
   [5,24,4.8,-8.32,-11.54,3.86,-11.12,-9.33,7.03,-11.09,-7.04,0,-8.36,-12.64],
 ];
 module ldraw_lib__95674p01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__95674p01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__95674p01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__95674p01(line=0.2);

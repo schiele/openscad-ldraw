@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__6313371a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6313371a(realsolid=false) = [
 // 0 Sticker  6 x 8 with Crocodile Locomotive
 // 0 Name: 6313371a.dat
 // 0 Author: Ulrich Röder [UR]
@@ -17,7 +18,7 @@ function ldraw_lib__6313371a() = [
 // 
 // 
 // 1 16 0 -0.25 0 0 0 -80 0 0.25 0 60 0 0 box5-12.dat
-  [1,16,0,-0.25,0,0,0,-80,0,0.25,0,60,0,0, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,0,0,-80,0,0.25,0,60,0,0, ldraw_lib__box5_12(realsolid)],
 // 0 !TEXMAP START PLANAR -80 -0.25 60 80 -0.25 60 -80 -0.25 -60 6313371a.png
 // 0 !: 4 0 -80 -0.25 60 -80 -0.25 -60 80 -0.25 -60 80 -0.25 60
 // 0 !TEXMAP FALLBACK
@@ -27,5 +28,5 @@ function ldraw_lib__6313371a() = [
 // 0 !TEXMAP END
 ];
 module ldraw_lib__6313371a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6313371a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6313371a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6313371a(line=0.2);

@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__50018gs01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__50018gs01(realsolid=false) = [
 // 0 ~Minifig Tool Circular Tooth Blade with Cover with Opposing Studs and Bar - Tooth 1/24
 // 0 Name: s\50018gs01.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -85,5 +86,5 @@ function ldraw_lib__s__50018gs01() = [
   [5,24,1.625,-15.5908,-6.4581,0,-15.5908,-6.4581,0,-16.6618,-4.4643,0,-14.289,-8.25],
 ];
 module ldraw_lib__s__50018gs01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__50018gs01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__50018gs01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__50018gs01(line=0.2);

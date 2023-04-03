@@ -4,7 +4,8 @@ use <../p/4-4ering.scad>
 use <../p/4-4ndis.scad>
 use <../p/4-4ring3.scad>
 use <s/98138s01.scad>
-function ldraw_lib__98138p1y() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__98138p1y(realsolid=false) = [
 // 0 Tile  1 x  1 Round with Light Aqua Emoji with Scared Eyes and Wide Irregular Open Mouth with Coral Tongue Pattern
 // 0 Name: 98138p1y.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -21,24 +22,24 @@ function ldraw_lib__98138p1y() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\98138s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01(realsolid)],
 // 1 323 0 0 0 9 0 0 0 1 0 0 0 9 4-4ering.dat
-  [1,323,0,0,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4ering()],
+  [1,323,0,0,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4ering(realsolid)],
 // 
 // 0 // Eyes
 // 1 16 -3.6 0 1 1.5 0 0 0 1 0 0 0 1.5 4-4disc.dat
-  [1,16,-3.6,0,1,1.5,0,0,0,1,0,0,0,1.5, ldraw_lib__4_4disc()],
+  [1,16,-3.6,0,1,1.5,0,0,0,1,0,0,0,1.5, ldraw_lib__4_4disc(realsolid)],
 // 1 0 -3.6 0 1 .5 0 0 0 1 0 0 0 .5 4-4ring3.dat
-  [1,0,-3.6,0,1,.5,0,0,0,1,0,0,0,.5, ldraw_lib__4_4ring3()],
+  [1,0,-3.6,0,1,.5,0,0,0,1,0,0,0,.5, ldraw_lib__4_4ring3(realsolid)],
 // 1 323 -3.6 0 1 2 0 0 0 1 0 0 0 2 4-4ndis.dat
-  [1,323,-3.6,0,1,2,0,0,0,1,0,0,0,2, ldraw_lib__4_4ndis()],
+  [1,323,-3.6,0,1,2,0,0,0,1,0,0,0,2, ldraw_lib__4_4ndis(realsolid)],
 // 
 // 1 16 3.6 0 1 1.5 0 0 0 1 0 0 0 1.5 4-4disc.dat
-  [1,16,3.6,0,1,1.5,0,0,0,1,0,0,0,1.5, ldraw_lib__4_4disc()],
+  [1,16,3.6,0,1,1.5,0,0,0,1,0,0,0,1.5, ldraw_lib__4_4disc(realsolid)],
 // 1 0 3.6 0 1 .5 0 0 0 1 0 0 0 .5 4-4ring3.dat
-  [1,0,3.6,0,1,.5,0,0,0,1,0,0,0,.5, ldraw_lib__4_4ring3()],
+  [1,0,3.6,0,1,.5,0,0,0,1,0,0,0,.5, ldraw_lib__4_4ring3(realsolid)],
 // 1 323 3.6 0 1 2 0 0 0 1 0 0 0 2 4-4ndis.dat
-  [1,323,3.6,0,1,2,0,0,0,1,0,0,0,2, ldraw_lib__4_4ndis()],
+  [1,323,3.6,0,1,2,0,0,0,1,0,0,0,2, ldraw_lib__4_4ndis(realsolid)],
 // 
 // 4 323 -1.6 0 3 -1.6 0 1 1.6 0 1 1.6 0 3
   [4,323,-1.6,0,3,-1.6,0,1,1.6,0,1,1.6,0,3],
@@ -362,5 +363,5 @@ function ldraw_lib__98138p1y() = [
   [4,323,-5.78,0,-1.28,-8.3151,0,-3.4443,-4.37,0,-2.72,-5.63,0,-1.34],
 ];
 module ldraw_lib__98138p1y(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__98138p1y(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__98138p1y(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__98138p1y(line=0.2);

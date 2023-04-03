@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/71771s01.scad>
-function ldraw_lib__71771() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__71771(realsolid=false) = [
 // 0 Slope Brick Curved  5 x  8 x  0.667 without Studs
 // 0 Name: 71771.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -15,7 +16,7 @@ function ldraw_lib__71771() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\71771s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__71771s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__71771s01(realsolid)],
 // 
 // 0 // Top
 // 4 16 80 11 -90 80 6 -70 -80 6 -70 -80 11 -90
@@ -36,5 +37,5 @@ function ldraw_lib__71771() = [
   [5,24,40,0,-10,-40,0,-10,40,.5,-30,40,0,10],
 ];
 module ldraw_lib__71771(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__71771(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__71771(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__71771(line=0.2);

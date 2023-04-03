@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3024s01.scad>
-function ldraw_lib__3024ptc1() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3024ptc1(realsolid=false) = [
 // 0 Plate  1 x  1 with Red, Dark Red and Black Squares Pattern
 // 0 Name: 3024ptc1.dat
 // 0 Author: Vincent Messenet [Cheenzo]
@@ -17,7 +18,7 @@ function ldraw_lib__3024ptc1() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3024s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3024s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3024s01(realsolid)],
 // 
 // 4 4 -9.75 .25 -10 -9.75 4 -10 -6.5 4 -10 -6.5 .25 -10
   [4,4,-9.75,.25,-10,-9.75,4,-10,-6.5,4,-10,-6.5,.25,-10],
@@ -63,5 +64,5 @@ function ldraw_lib__3024ptc1() = [
   [3,16,6.5,.25,-10,3.25,4,-10,6.5,4,-10],
 ];
 module ldraw_lib__3024ptc1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3024ptc1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3024ptc1(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3024ptc1(line=0.2);

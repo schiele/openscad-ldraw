@@ -2,7 +2,8 @@ use <../lib.scad>
 use <18603.scad>
 use <18605p01.scad>
 use <u9512.scad>
-function ldraw_lib__18603c02p01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__18603c02p01(realsolid=false) = [
 // 0 Brick  4 x  4 x  0.667 Round with RFID Tag and  2 Studs with Black Bat Symbol Pattern
 // 0 Name: 18603c02p01.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -19,12 +20,12 @@ function ldraw_lib__18603c02p01() = [
 // 
 // 
 // 1 16 0 8 0 1 0 0 0 1 0 0 0 1 18603.dat
-  [1,16,0,8,0,1,0,0,0,1,0,0,0,1, ldraw_lib__18603()],
+  [1,16,0,8,0,1,0,0,0,1,0,0,0,1, ldraw_lib__18603(realsolid)],
 // 1 47 0 11 0 1 0 0 0 1 0 0 0 1 u9512.dat
-  [1,47,0,11,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9512()],
+  [1,47,0,11,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9512(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 18605p01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__18605p01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__18605p01(realsolid)],
 ];
 module ldraw_lib__18603c02p01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__18603c02p01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__18603c02p01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__18603c02p01(line=0.2);

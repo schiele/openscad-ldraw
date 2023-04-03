@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/4-4ering.scad>
 use <s/98138s01.scad>
-function ldraw_lib__98138p0x() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__98138p0x(realsolid=false) = [
 // 0 Tile  1 x  1 Round with Yellow Fried Egg Pattern
 // 0 Name: 98138p0x.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -18,9 +19,9 @@ function ldraw_lib__98138p0x() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\98138s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01(realsolid)],
 // 1 16 0 0 0 9 0 0 0 1 0 0 0 9 4-4ering.dat
-  [1,16,0,0,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4ering()],
+  [1,16,0,0,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4ering(realsolid)],
 // 4 25 -2.46 0 2.46 -2.92 0 2.2 -2.3 0 1.86 -1.54 0 2.26
   [4,25,-2.46,0,2.46,-2.92,0,2.2,-2.3,0,1.86,-1.54,0,2.26],
 // 4 25 -1.54 0 2.26 -2.3 0 1.86 -1.42 0 1.24 -0.4 0 1.75
@@ -151,5 +152,5 @@ function ldraw_lib__98138p0x() = [
   [3,14,2.9,0,-0.9,1.53,0,-1.31,1.48,0,-2.06],
 ];
 module ldraw_lib__98138p0x(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__98138p0x(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__98138p0x(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__98138p0x(line=0.2);

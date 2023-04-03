@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__4201018a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4201018a(realsolid=false) = [
 // 0 Sticker  2.0 x  3.8 with  4 White Stripes
 // 0 Name: 4201018a.dat
 // 0 Author: Tim Lampmann [L4mpi]
@@ -17,7 +18,7 @@ function ldraw_lib__4201018a() = [
 // 
 // 
 // 1 16 0 -0.25 0 38 0 0 0 0.25 0 0 0 20 box5-12.dat
-  [1,16,0,-0.25,0,38,0,0,0,0.25,0,0,0,20, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,38,0,0,0,0.25,0,0,0,20, ldraw_lib__box5_12(realsolid)],
 // 
 // 4 16 38 -.25 20 -38 -.25 20 -38 -.25 17 38 -.25 17
   [4,16,38,-.25,20,-38,-.25,20,-38,-.25,17,38,-.25,17],
@@ -39,5 +40,5 @@ function ldraw_lib__4201018a() = [
   [4,16,38,-.25,-16,-38,-.25,-16,-38,-.25,-20,38,-.25,-20],
 ];
 module ldraw_lib__4201018a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4201018a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4201018a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4201018a(line=0.2);

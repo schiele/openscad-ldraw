@@ -3,7 +3,8 @@ use <s/3960pf2s01.scad>
 use <s/3960pf2s02.scad>
 use <s/3960s01.scad>
 use <s/3960s05.scad>
-function ldraw_lib__3960pf2() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3960pf2(realsolid=false) = [
 // 0 Dish  4 x  4 Inverted with Four Section Heart, Sun, Flower, Butterfly Pattern
 // 0 Name: 3960pf2.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -22,19 +23,19 @@ function ldraw_lib__3960pf2() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3960s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3960s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3960s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3960s05.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3960s05()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3960s05(realsolid)],
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3960pf2s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3960pf2s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3960pf2s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 -1 s\3960pf2s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__3960pf2s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__3960pf2s01(realsolid)],
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3960pf2s02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3960pf2s02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3960pf2s02(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\3960pf2s02.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__3960pf2s02()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__3960pf2s02(realsolid)],
 // 
 // 0 // Sun Rays
 // 4 14 -12.52 3.5812 -24.9 -13.0857 3.3208 -23.5343 -13.32 3.4841 -24.1 -13.0857 3.5919 -24.6657
@@ -701,5 +702,5 @@ function ldraw_lib__3960pf2() = [
   [4,5,17.9596,4,-23.4053,20.8595,4,-20.8595,13.6966,2.0809,-17.5915,13.5933,2.0875,-17.7151],
 ];
 module ldraw_lib__3960pf2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3960pf2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3960pf2(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3960pf2(line=0.2);

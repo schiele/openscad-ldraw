@@ -2,7 +2,8 @@ use <../lib.scad>
 use <20460p06.scad>
 use <20461p06.scad>
 use <3815b.scad>
-function ldraw_lib__21019p06() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__21019p06(realsolid=false) = [
 // 0 Minifig Hips and Legs with Dark Brown Lower Leg Pattern
 // 0 Name: 21019p06.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -17,12 +18,12 @@ function ldraw_lib__21019p06() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 3815b.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3815b()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3815b(realsolid)],
 // 1 16 0 12 0 1 0 0 0 1 0 0 0 1 20460p06.dat
-  [1,16,0,12,0,1,0,0,0,1,0,0,0,1, ldraw_lib__20460p06()],
+  [1,16,0,12,0,1,0,0,0,1,0,0,0,1, ldraw_lib__20460p06(realsolid)],
 // 1 16 0 12 0 1 0 0 0 1 0 0 0 1 20461p06.dat
-  [1,16,0,12,0,1,0,0,0,1,0,0,0,1, ldraw_lib__20461p06()],
+  [1,16,0,12,0,1,0,0,0,1,0,0,0,1, ldraw_lib__20461p06(realsolid)],
 ];
 module ldraw_lib__21019p06(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__21019p06(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__21019p06(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__21019p06(line=0.2);

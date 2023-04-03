@@ -8,7 +8,8 @@ use <../p/4-4cyli.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4edge.scad>
 use <../p/stud4a.scad>
-function ldraw_lib__15503() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__15503(realsolid=false) = [
 // 0 Minifig Hair Female Beehive Style with Sideways Fringe
 // 0 Name: 15503.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -29,47 +30,47 @@ function ldraw_lib__15503() = [
 // 
 // 0 // Inside
 // 1 16 0 -4 0 1 0 0 0 -1 0 0 0 1 stud4a.dat
-  [1,16,0,-4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4a()],
+  [1,16,0,-4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4a(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -4 0 6 0 0 0 -2 0 0 0 6 4-4cyli.dat
-  [1,16,0,-4,0,6,0,0,0,-2,0,0,0,6, ldraw_lib__4_4cyli()],
+  [1,16,0,-4,0,6,0,0,0,-2,0,0,0,6, ldraw_lib__4_4cyli(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -6 0 0 0 6 0 -3 0 -6 0 0 2-4cyls.dat
-  [1,16,0,-6,0,0,0,6,0,-3,0,-6,0,0, ldraw_lib__2_4cyls()],
+  [1,16,0,-6,0,0,0,6,0,-3,0,-6,0,0, ldraw_lib__2_4cyls(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -6 0 0 0 -6 0 -3 0 -6 0 0 2-4cyls.dat
-  [1,16,0,-6,0,0,0,-6,0,-3,0,-6,0,0, ldraw_lib__2_4cyls()],
+  [1,16,0,-6,0,0,0,-6,0,-3,0,-6,0,0, ldraw_lib__2_4cyls(realsolid)],
 // 1 16 0 -9 0 6 0 0 0 -1 -3 0 0 6 4-4disc.dat
-  [1,16,0,-9,0,6,0,0,0,-1,-3,0,0,6, ldraw_lib__4_4disc()],
+  [1,16,0,-9,0,6,0,0,0,-1,-3,0,0,6, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 -9 0 6 0 0 0 1 -3 0 0 6 4-4edge.dat
-  [1,16,0,-9,0,6,0,0,0,1,-3,0,0,6, ldraw_lib__4_4edge()],
+  [1,16,0,-9,0,6,0,0,0,1,-3,0,0,6, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 -4 0 0 0 8 0 -4 0 -8 0 0 1-4cyls2.dat
-  [1,16,0,-4,0,0,0,8,0,-4,0,-8,0,0, ldraw_lib__1_4cyls2()],
+  [1,16,0,-4,0,0,0,8,0,-4,0,-8,0,0, ldraw_lib__1_4cyls2(realsolid)],
 // 1 16 0 -4 0 0 0 -8 0 -4 0 -8 0 0 1-4cyls2.dat
-  [1,16,0,-4,0,0,0,-8,0,-4,0,-8,0,0, ldraw_lib__1_4cyls2()],
+  [1,16,0,-4,0,0,0,-8,0,-4,0,-8,0,0, ldraw_lib__1_4cyls2(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 2 0 1 0 0 0 -2 0 0 0 -1 2-4con12.dat
-  [1,16,0,2,0,1,0,0,0,-2,0,0,0,-1, ldraw_lib__2_4con12()],
+  [1,16,0,2,0,1,0,0,0,-2,0,0,0,-1, ldraw_lib__2_4con12(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 2 0 1 0 0 0 -2 -.5 0 0 1 2-4con12.dat
-  [1,16,0,2,0,1,0,0,0,-2,-.5,0,0,1, ldraw_lib__2_4con12()],
+  [1,16,0,2,0,1,0,0,0,-2,-.5,0,0,1, ldraw_lib__2_4con12(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 0 4 0 0 0 -4 -2 0 0 4 2-4con2.dat
-  [1,16,0,0,0,4,0,0,0,-4,-2,0,0,4, ldraw_lib__2_4con2()],
+  [1,16,0,0,0,4,0,0,0,-4,-2,0,0,4, ldraw_lib__2_4con2(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 0 4 0 0 0 -4 0 0 0 -4 2-4con2.dat
-  [1,16,0,0,0,4,0,0,0,-4,0,0,0,-4, ldraw_lib__2_4con2()],
+  [1,16,0,0,0,4,0,0,0,-4,0,0,0,-4, ldraw_lib__2_4con2(realsolid)],
 // 1 16 0 -4 0 8 0 0 0 1 0 0 0 -8 2-4edge.dat
-  [1,16,0,-4,0,8,0,0,0,1,0,0,0,-8, ldraw_lib__2_4edge()],
+  [1,16,0,-4,0,8,0,0,0,1,0,0,0,-8, ldraw_lib__2_4edge(realsolid)],
 // 1 16 0 -4 0 8 0 0 0 1 -4 0 0 8 2-4edge.dat
-  [1,16,0,-4,0,8,0,0,0,1,-4,0,0,8, ldraw_lib__2_4edge()],
+  [1,16,0,-4,0,8,0,0,0,1,-4,0,0,8, ldraw_lib__2_4edge(realsolid)],
 // 
 // 0 // Condlines
 // 5 24 -11.0868 0 -4.5924 -12 0 0 -13 2 0 -7.3912 -4 -3.0616
@@ -5593,5 +5594,5 @@ function ldraw_lib__15503() = [
   [5,24,18.185,-2.053,7.662,18.1907,.0918,5.6748,18.202,1.255,7.29,17.9675,-.5839,3.8037],
 ];
 module ldraw_lib__15503(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__15503(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__15503(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__15503(line=0.2);

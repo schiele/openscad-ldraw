@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3069bs01.scad>
-function ldraw_lib__3069bp83() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3069bp83(realsolid=false) = [
 // 0 Tile  1 x  2 with "I Love HLC" Postcard with Sailboat and Lighthouse Pattern
 // 0 Name: 3069bp83.dat
 // 0 Author: Bertrand Lequy [Berth]
@@ -15,7 +16,7 @@ function ldraw_lib__3069bp83() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3069bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3069bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3069bs01(realsolid)],
 // 4 272 -0.7 0 7.2 -0.7 0 7.8 -17.7 0 7.7 -17.2 0 7.2
   [4,272,-0.7,0,7.2,-0.7,0,7.8,-17.7,0,7.7,-17.2,0,7.2],
 // 4 272 -17.2 0 7.2 -17.7 0 7.7 -17.7 0 -8.2 -17.2 0 -4.5
@@ -746,5 +747,5 @@ function ldraw_lib__3069bp83() = [
   [3,16,18.2,0,4,17.8,0,3.4,18.4,0,3.1],
 ];
 module ldraw_lib__3069bp83(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3069bp83(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3069bp83(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3069bp83(line=0.2);

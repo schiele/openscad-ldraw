@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__004158c1() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__004158c1(realsolid=false) = [
 // 0 ~Sticker System with United Kingdom Flag Pattern - Pattern
 // 0 Name: s\004158c1.dat
 // 0 Author: Willy Tschager [Holly-Wood]
@@ -112,5 +113,5 @@ function ldraw_lib__s__004158c1() = [
 // 0
 ];
 module ldraw_lib__s__004158c1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__004158c1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__004158c1(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__004158c1(line=0.2);

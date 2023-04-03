@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <44658.scad>
-function ldraw_lib__37() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__37(realsolid=false) = [
 // 0 ~Moved to 44658
 // 0 Name: 37.dat
 // 0 Author: [PTadmin]
@@ -16,8 +17,8 @@ function ldraw_lib__37() = [
 // 
 // 0 // Minifig Knife
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 44658.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__44658()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__44658(realsolid)],
 ];
 module ldraw_lib__37(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__37(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__37(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__37(line=0.2);

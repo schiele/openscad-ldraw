@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/6636s01.scad>
-function ldraw_lib__6636p0b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6636p0b(realsolid=false) = [
 // 0 Tile  1 x  6 with Wood Grain and  4 Silver Nails Pattern
 // 0 Name: 6636p0b.dat
 // 0 Author: Ulrich Röder [UR]
@@ -17,7 +18,7 @@ function ldraw_lib__6636p0b() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\6636s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6636s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6636s01(realsolid)],
 // 
 // 3 308 54.81 0 5.23 55.51 0 4.99 55.38 0 5.49
   [3,308,54.81,0,5.23,55.51,0,4.99,55.38,0,5.49],
@@ -1884,5 +1885,5 @@ function ldraw_lib__6636p0b() = [
   [4,16,-60,0,-3.33,-59.2,0,.2,-59.2,0,.7,-60,0,3.33],
 ];
 module ldraw_lib__6636p0b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6636p0b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6636p0b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6636p0b(line=0.2);

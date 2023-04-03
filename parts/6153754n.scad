@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__6153754n() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6153754n(realsolid=false) = [
 // 0 Sticker  0.9 x  1.9 Rhomboid with Black "WAX" on Yellow Background
 // 0 Name: 6153754n.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -518,5 +519,5 @@ function ldraw_lib__6153754n() = [
   [3,14,7.9,-0.25,-2.73,7.77,-0.25,-2.45,7.2,-0.25,-2.42],
 ];
 module ldraw_lib__6153754n(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6153754n(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6153754n(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6153754n(line=0.2);

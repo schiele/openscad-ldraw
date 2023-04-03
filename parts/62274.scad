@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/4-4cylc.scad>
 use <60483.scad>
-function ldraw_lib__62274() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__62274(realsolid=false) = [
 // 0 ~Technic Linear Actuator  8 x  2 x  2 Piston Head
 // 0 Name: 62274.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -20,9 +21,9 @@ function ldraw_lib__62274() = [
 // 
 // 
 // 1 16 0 0 0 0 -1 0 1 0 0 0 0 1 60483.dat
-  [1,16,0,0,0,0,-1,0,1,0,0,0,0,1, ldraw_lib__60483()],
+  [1,16,0,0,0,0,-1,0,1,0,0,0,0,1, ldraw_lib__60483(realsolid)],
 // 1 16 0 0 -19 6 0 0 0 0 6 0 12.5 0 4-4cylc.dat
-  [1,16,0,0,-19,6,0,0,0,0,6,0,12.5,0, ldraw_lib__4_4cylc()],
+  [1,16,0,0,-19,6,0,0,0,0,6,0,12.5,0, ldraw_lib__4_4cylc(realsolid)],
 // 2 24 4.776 3.444 -8.315 4.243 4.243 -7.781
   [2,24,4.776,3.444,-8.315,4.243,4.243,-7.781],
 // 2 24 2.296 5.543 -6.913 4.243 4.243 -7.781
@@ -65,5 +66,5 @@ function ldraw_lib__62274() = [
   [2,24,4.243,-4.243,-7.781,4.776,-3.444,-8.315],
 ];
 module ldraw_lib__62274(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__62274(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__62274(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__62274(line=0.2);

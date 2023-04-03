@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/18675s01.scad>
-function ldraw_lib__18675pb0() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__18675pb0(realsolid=false) = [
 // 0 Dish  6 x  6 Inverted - No Studs with Handle with White Rose Window Pattern and 4 Crossing Dark Bluish Grey Lines Pattern
 // 0 Name: 18675pb0.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -17,7 +18,7 @@ function ldraw_lib__18675pb0() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\18675s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__18675s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__18675s01(realsolid)],
 // 
 // 0 BFC NOCLIP
   [0,"BFC","NOCLIP"],
@@ -6518,5 +6519,5 @@ function ldraw_lib__18675pb0() = [
   [5,24,0,-16,0,-11.8977,-15.2,-1.5663,-11.5907,-15.2,-3.1059,-11.9997,-15.2,.0002],
 ];
 module ldraw_lib__18675pb0(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__18675pb0(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__18675pb0(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__18675pb0(line=0.2);

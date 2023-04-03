@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__48__1_3ndis() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__48__1_3ndis(realsolid=false) = [
 // 0 Hi-Res Disc Negative 0.3333
 // 0 Name: 48\1-3ndis.dat
 // 0 Author: Alex Taylor [anathema]
@@ -48,5 +49,5 @@ function ldraw_lib__48__1_3ndis() = [
 // 0
 ];
 module ldraw_lib__48__1_3ndis(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__48__1_3ndis(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__48__1_3ndis(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__48__1_3ndis(line=0.2);

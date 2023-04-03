@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/1-4cyli.scad>
 use <s/973s01.scad>
-function ldraw_lib__973pxc() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__973pxc(realsolid=false) = [
 // 0 Minifig Torso with Pockets, Bright Green Shirt and 8-Bit Alien Pattern
 // 0 Name: 973pxc.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -18,9 +19,9 @@ function ldraw_lib__973pxc() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01(realsolid)],
 // 1 15 0 -4 0 4.243 0 -4.243 0 -8 0 -4.243 0 -4.243 1-4cyli.dat
-  [1,15,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli()],
+  [1,15,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli(realsolid)],
 // 
 // 4 71 -13.94 8.4 -10 -10.85 9 -10 -10.5 9 -10 -10 8.4 -10
   [4,71,-13.94,8.4,-10,-10.85,9,-10,-10.5,9,-10,-10,8.4,-10],
@@ -1227,5 +1228,5 @@ function ldraw_lib__973pxc() = [
   [3,16,-14.35,2,10,-14.35,8.25,10,-19,29,10],
 ];
 module ldraw_lib__973pxc(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__973pxc(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__973pxc(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__973pxc(line=0.2);

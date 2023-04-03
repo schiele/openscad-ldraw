@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__1_4tang() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__1_4tang(realsolid=false) = [
 // 0 Disc Negative Tangent 0.25
 // 0 Name: 1-4tang.dat
 // 0 Author: Andy Westrate [westrate]
@@ -24,5 +25,5 @@ function ldraw_lib__1_4tang() = [
 // 0 // end
 ];
 module ldraw_lib__1_4tang(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__1_4tang(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__1_4tang(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__1_4tang(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3960s01.scad>
-function ldraw_lib__3960p0a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3960p0a(realsolid=false) = [
 // 0 Dish  4 x  4 Inverted with Mushroom White Spots Pattern
 // 0 Name: 3960p0a.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -17,7 +18,7 @@ function ldraw_lib__3960p0a() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3960s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3960s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3960s01(realsolid)],
 // 5 24 34.7002 6 4.5684 39.656 8 5.22 40 8 0 33.8062 6 9.0583
   [5,24,34.7002,6,4.5684,39.656,8,5.22,40,8,0,33.8062,6,9.0583],
 // 5 24 34.9988 6 0 34.7002 6 4.5684 39.656 8 5.22 29.4987 4 0
@@ -2188,5 +2189,5 @@ function ldraw_lib__3960p0a() = [
   [3,16,-16.48,4.4028,25.72,-15.7008,4,24.9112,-14.7493,4,25.5466],
 ];
 module ldraw_lib__3960p0a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3960p0a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3960p0a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3960p0a(line=0.2);

@@ -9,7 +9,8 @@ use <../p/axlehole.scad>
 use <s/3943s01.scad>
 use <../p/stud4a.scad>
 use <../p/stug10-2x2.scad>
-function ldraw_lib__3943b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3943b(realsolid=false) = [
 // 0 Cone  4 x  4 x  2 with Axlehole
 // 0 Name: 3943b.dat
 // 0 Author: James Jessiman
@@ -34,24 +35,24 @@ function ldraw_lib__3943b() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3943s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3943s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3943s01(realsolid)],
 // 1 16 0 0 0 0 0 1 0 1 0 -1 0 0 s\3943s01.dat
-  [1,16,0,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__s__3943s01()],
+  [1,16,0,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__s__3943s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 -1 s\3943s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__3943s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__3943s01(realsolid)],
 // 1 16 0 0 0 0 0 -1 0 1 0 1 0 0 s\3943s01.dat
-  [1,16,0,0,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__s__3943s01()],
+  [1,16,0,0,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__s__3943s01(realsolid)],
 // 
 // 1 16 0 16 0 1 0 0 0 -8 0 0 0 1 stud4a.dat
-  [1,16,0,16,0,1,0,0,0,-8,0,0,0,1, ldraw_lib__stud4a()],
+  [1,16,0,16,0,1,0,0,0,-8,0,0,0,1, ldraw_lib__stud4a(realsolid)],
 // 1 16 0 0 0 1 0 0 0 16 0 0 0 1 axlehole.dat
-  [1,16,0,0,0,1,0,0,0,16,0,0,0,1, ldraw_lib__axlehole()],
+  [1,16,0,0,0,1,0,0,0,16,0,0,0,1, ldraw_lib__axlehole(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 axlehol2.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__axlehol2()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__axlehol2(realsolid)],
 // 1 16 0 16 0 1 0 0 0 1 0 0 0 1 axlehol3.dat
-  [1,16,0,16,0,1,0,0,0,1,0,0,0,1, ldraw_lib__axlehol3()],
+  [1,16,0,16,0,1,0,0,0,1,0,0,0,1, ldraw_lib__axlehol3(realsolid)],
 // 1 16 0 0 0 6 0 0 0 1 0 0 0 6 4-4ndis.dat
-  [1,16,0,0,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4ndis()],
+  [1,16,0,0,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4ndis(realsolid)],
 // 3 16 6 0 6 20 0 0 0 0 20
   [3,16,6,0,6,20,0,0,0,0,20],
 // 3 16 6 0 6 0 0 20 -6 0 6
@@ -69,11 +70,11 @@ function ldraw_lib__3943b() = [
 // 3 16 6 0 -6 20 0 0 6 0 6
   [3,16,6,0,-6,20,0,0,6,0,6],
 // 1 16 0 4 0 8 0 0 0 12 0 0 0 8 4-4cyli.dat
-  [1,16,0,4,0,8,0,0,0,12,0,0,0,8, ldraw_lib__4_4cyli()],
+  [1,16,0,4,0,8,0,0,0,12,0,0,0,8, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 4 0 8 0 0 0 1 0 0 0 8 4-4edge.dat
-  [1,16,0,4,0,8,0,0,0,1,0,0,0,8, ldraw_lib__4_4edge()],
+  [1,16,0,4,0,8,0,0,0,1,0,0,0,8, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 4 0 8 0 0 0 -1 0 0 0 8 4-4ndis.dat
-  [1,16,0,4,0,8,0,0,0,-1,0,0,0,8, ldraw_lib__4_4ndis()],
+  [1,16,0,4,0,8,0,0,0,-1,0,0,0,8, ldraw_lib__4_4ndis(realsolid)],
 // 3 16 18.5 4 0 8 4 8 0 4 18.5
   [3,16,18.5,4,0,8,4,8,0,4,18.5],
 // 3 16 0 4 18.5 8 4 8 -8 4 8
@@ -92,17 +93,17 @@ function ldraw_lib__3943b() = [
   [3,16,18.5,4,0,8,4,-8,8,4,8],
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 stug10-2x2.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug10_2x2()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug10_2x2(realsolid)],
 // 0 // outside surface
 // 1 16 0 44 0 20 0 0 0 -44 0 0 0 20 48\1-4con1.dat
-  [1,16,0,44,0,20,0,0,0,-44,0,0,0,20, ldraw_lib__48__1_4con1()],
+  [1,16,0,44,0,20,0,0,0,-44,0,0,0,20, ldraw_lib__48__1_4con1(realsolid)],
 // 1 16 0 44 0 0 0 20 0 -44 0 -20 0 0 48\1-4con1.dat
-  [1,16,0,44,0,0,0,20,0,-44,0,-20,0,0, ldraw_lib__48__1_4con1()],
+  [1,16,0,44,0,0,0,20,0,-44,0,-20,0,0, ldraw_lib__48__1_4con1(realsolid)],
 // 1 16 0 44 0 -20 0 0 0 -44 0 0 0 -20 48\1-4con1.dat
-  [1,16,0,44,0,-20,0,0,0,-44,0,0,0,-20, ldraw_lib__48__1_4con1()],
+  [1,16,0,44,0,-20,0,0,0,-44,0,0,0,-20, ldraw_lib__48__1_4con1(realsolid)],
 // 1 16 0 44 0 0 0 -20 0 -44 0 20 0 0 48\1-4con1.dat
-  [1,16,0,44,0,0,0,-20,0,-44,0,20,0,0, ldraw_lib__48__1_4con1()],
+  [1,16,0,44,0,0,0,-20,0,-44,0,20,0,0, ldraw_lib__48__1_4con1(realsolid)],
 ];
 module ldraw_lib__3943b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3943b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3943b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3943b(line=0.2);

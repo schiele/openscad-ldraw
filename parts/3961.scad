@@ -4,7 +4,8 @@ use <../p/48/4-4con2.scad>
 use <../p/48/4-4con3.scad>
 use <s/3961s01.scad>
 use <../p/stug-2x2.scad>
-function ldraw_lib__3961() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3961(realsolid=false) = [
 // 0 Dish  8 x  8 Inverted with Solid Studs
 // 0 Name: 3961.dat
 // 0 Author: Lutz Uhlmann [El-Lutzo]
@@ -30,16 +31,16 @@ function ldraw_lib__3961() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3961s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3961s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3961s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 stug-2x2.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_2x2()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_2x2(realsolid)],
 // 
 // 1 16 0 3 0 20 0 0 0 -3 0 0 0 20 48\4-4con1.dat
-  [1,16,0,3,0,20,0,0,0,-3,0,0,0,20, ldraw_lib__48__4_4con1()],
+  [1,16,0,3,0,20,0,0,0,-3,0,0,0,20, ldraw_lib__48__4_4con1(realsolid)],
 // 1 16 0 9 0 20 0 0 0 -6 0 0 0 20 48\4-4con2.dat
-  [1,16,0,9,0,20,0,0,0,-6,0,0,0,20, ldraw_lib__48__4_4con2()],
+  [1,16,0,9,0,20,0,0,0,-6,0,0,0,20, ldraw_lib__48__4_4con2(realsolid)],
 // 1 16 0 16 0 20 0 0 0 -7 0 0 0 20 48\4-4con3.dat
-  [1,16,0,16,0,20,0,0,0,-7,0,0,0,20, ldraw_lib__48__4_4con3()],
+  [1,16,0,16,0,20,0,0,0,-7,0,0,0,20, ldraw_lib__48__4_4con3(realsolid)],
 // 
 // 5 24 -38.636 3 10.352 -36.956 3 15.308 -57.954 9 15.528 -18.478 0 7.654
   [5,24,-38.636,3,10.352,-36.956,3,15.308,-57.954,9,15.528,-18.478,0,7.654],
@@ -235,5 +236,5 @@ function ldraw_lib__3961() = [
   [5,24,-60,9,0,-59.484,9,-7.83,-40,3,0,-79.312,16,-10.44],
 ];
 module ldraw_lib__3961(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3961(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3961(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3961(line=0.2);

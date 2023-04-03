@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/48/4-4disc.scad>
-function ldraw_lib__s__004488es01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__004488es01(realsolid=false) = [
 // 0 ~Sticker  2.3 x  2.3 Round with Lifepreserver - Pattern
 // 0 Name: s\004488es01.dat
 // 0 Author: Willy Tschager [Holly-Wood]
@@ -67,7 +68,7 @@ function ldraw_lib__s__004488es01() = [
 // 
 // 0 // White
 // 1 15 0 -.25 0 11 0 0 0 1 0 0 0 11 48\4-4disc.dat
-  [1,15,0,-.25,0,11,0,0,0,1,0,0,0,11, ldraw_lib__48__4_4disc()],
+  [1,15,0,-.25,0,11,0,0,0,1,0,0,0,11, ldraw_lib__48__4_4disc(realsolid)],
 // 4 15 -9.918 -.25 7.61 -9.335 -.25 8.274 -15.345 -.25 14.284 -16.661 -.25 12.785
   [4,15,-9.918,-.25,7.61,-9.335,-.25,8.274,-15.345,-.25,14.284,-16.661,-.25,12.785],
 // 4 15 -10.825 -.25 6.25 -9.918 -.25 7.61 -16.661 -.25 12.785 -18.186 -.25 10.5
@@ -336,5 +337,5 @@ function ldraw_lib__s__004488es01() = [
   [4,0,9.335,-.25,-8.274,8.274,-.25,-9.335,14.284,-.25,-15.345,15.345,-.25,-14.284],
 ];
 module ldraw_lib__s__004488es01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__004488es01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__004488es01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__004488es01(line=0.2);

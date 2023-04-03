@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <3846p4ja.scad>
-function ldraw_lib__s__2490p40a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__2490p40a(realsolid=false) = [
 // 0 ~Animal Horse Barding w/ Gold Crowns & Silver Chain Mail - Side
 // 0 Name: s\2490p40a.dat
 // 0 Author: Joerg Sommerer [Brickaneer]
@@ -15,9 +16,9 @@ function ldraw_lib__s__2490p40a() = [
 // 
 // 
 // 1 272 23.25 9.5 -38 0 0 -1 0 0.8 0 0.8 0 0 s\3846p4ja.dat
-  [1,272,23.25,9.5,-38,0,0,-1,0,0.8,0,0.8,0,0, ldraw_lib__s__3846p4ja()],
+  [1,272,23.25,9.5,-38,0,0,-1,0,0.8,0,0.8,0,0, ldraw_lib__s__3846p4ja(realsolid)],
 // 1 272 23.25 9.5 44 0 0 -1 0 0.8 0 0.8 0 0 s\3846p4ja.dat
-  [1,272,23.25,9.5,44,0,0,-1,0,0.8,0,0.8,0,0, ldraw_lib__s__3846p4ja()],
+  [1,272,23.25,9.5,44,0,0,-1,0,0.8,0,0.8,0,0, ldraw_lib__s__3846p4ja(realsolid)],
 // 3 0 23.25 16.7001 -16.695 23.25 15.4127 -16.2095 23.25 15.4127 -16.7175
   [3,0,23.25,16.7001,-16.695,23.25,15.4127,-16.2095,23.25,15.4127,-16.7175],
 // 3 0 23.25 17.4451 -16.682 23.25 15.4127 -16.2095 23.25 16.7001 -16.695
@@ -6206,5 +6207,5 @@ function ldraw_lib__s__2490p40a() = [
   [5,24,23.2824,37.8217,63.0116,23.2946,37.5501,64.2261,23.2828,38.38,63.5,23.2875,37.62,63.5],
 ];
 module ldraw_lib__s__2490p40a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__2490p40a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__2490p40a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__2490p40a(line=0.2);

@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__18605p0fs01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__18605p0fs01(realsolid=false) = [
 // 0 ~Electric Brick  4 x  4 x  0.667 Round - Top with  2 Studs with Pastel Rainbow and Clouds Pattern - Quarter
 // 0 Name: s\18605p0fs01.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -105,5 +106,5 @@ function ldraw_lib__s__18605p0fs01() = [
   [3,226,-23.3617,0,18.3804,-21.7,0,16.7,-21.55,0,20.15],
 ];
 module ldraw_lib__s__18605p0fs01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__18605p0fs01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__18605p0fs01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__18605p0fs01(line=0.2);

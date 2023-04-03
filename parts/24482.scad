@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/4-4cylc.scad>
 use <s/24482s01.scad>
-function ldraw_lib__24482() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__24482(realsolid=false) = [
 // 0 Spike  2.4L with  4 Fins with Bar  0.4L
 // 0 Name: 24482.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -21,24 +22,24 @@ function ldraw_lib__24482() = [
 // 
 // 
 // 1 16 0 8 0 4 0 0 0 -8 0 0 0 4 4-4cylc.dat
-  [1,16,0,8,0,4,0,0,0,-8,0,0,0,4, ldraw_lib__4_4cylc()],
+  [1,16,0,8,0,4,0,0,0,-8,0,0,0,4, ldraw_lib__4_4cylc(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\24482s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__24482s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__24482s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 -1 s\24482s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__24482s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__24482s01(realsolid)],
 // 1 16 0 0 0 0 0 1 0 1 0 -1 0 0 s\24482s01.dat
-  [1,16,0,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__s__24482s01()],
+  [1,16,0,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__s__24482s01(realsolid)],
 // 1 16 0 0 0 0 0 -1 0 1 0 -1 0 0 s\24482s01.dat
-  [1,16,0,0,0,0,0,-1,0,1,0,-1,0,0, ldraw_lib__s__24482s01()],
+  [1,16,0,0,0,0,0,-1,0,1,0,-1,0,0, ldraw_lib__s__24482s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 -1 s\24482s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__24482s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__24482s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\24482s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__24482s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__24482s01(realsolid)],
 // 1 16 0 0 0 0 0 -1 0 1 0 1 0 0 s\24482s01.dat
-  [1,16,0,0,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__s__24482s01()],
+  [1,16,0,0,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__s__24482s01(realsolid)],
 // 1 16 0 0 0 0 0 1 0 1 0 1 0 0 s\24482s01.dat
-  [1,16,0,0,0,0,0,1,0,1,0,1,0,0, ldraw_lib__s__24482s01()],
+  [1,16,0,0,0,0,0,1,0,1,0,1,0,0, ldraw_lib__s__24482s01(realsolid)],
 ];
 module ldraw_lib__24482(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__24482(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__24482(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__24482(line=0.2);

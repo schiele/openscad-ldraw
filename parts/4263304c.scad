@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__4263304c() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4263304c(realsolid=false) = [
 // 0 Sticker  1.1 x  3.6 with Black "2256"
 // 0 Name: 4263304c.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -17,7 +18,7 @@ function ldraw_lib__4263304c() = [
 // 
 // 
 // 1 16 0 -.25 0 36 0 0 0 .25 0 0 0 11 box5-12.dat
-  [1,16,0,-.25,0,36,0,0,0,.25,0,0,0,11, ldraw_lib__box5_12()],
+  [1,16,0,-.25,0,36,0,0,0,.25,0,0,0,11, ldraw_lib__box5_12(realsolid)],
 // 
 // 0 // "2256"
 // 0 // Book Antiqua (Modified)
@@ -493,5 +494,5 @@ function ldraw_lib__4263304c() = [
   [3,0,.16,-.25,-5.65,-.12,-.25,-6.85,.26,-.25,-6.5],
 ];
 module ldraw_lib__4263304c(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4263304c(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4263304c(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4263304c(line=0.2);

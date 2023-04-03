@@ -2,7 +2,8 @@ use <../lib.scad>
 use <5-16cyli.scad>
 use <5-16edge.scad>
 use <rect.scad>
-function ldraw_lib__npeghol12() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__npeghol12(realsolid=false) = [
 // 0 Technic Peg Hole with Extended Perimeter (One Side) and Surface
 // 0 Name: npeghol12.dat
 // 0 Author: Joerg Sommerer [Brickaneer]
@@ -17,17 +18,17 @@ function ldraw_lib__npeghol12() = [
 // 
 // 
 // 1 16 0 0 -10 6.36 0 -6.36 0 1 0 6.36 0 6.36 5-16edge.dat
-  [1,16,0,0,-10,6.36,0,-6.36,0,1,0,6.36,0,6.36, ldraw_lib__5_16edge()],
+  [1,16,0,0,-10,6.36,0,-6.36,0,1,0,6.36,0,6.36, ldraw_lib__5_16edge(realsolid)],
 // 1 16 0 1 -10 6.36 0 -6.36 0 1 0 6.36 0 6.36 5-16edge.dat
-  [1,16,0,1,-10,6.36,0,-6.36,0,1,0,6.36,0,6.36, ldraw_lib__5_16edge()],
+  [1,16,0,1,-10,6.36,0,-6.36,0,1,0,6.36,0,6.36, ldraw_lib__5_16edge(realsolid)],
 // 1 16 0 1 10 6.36 0 -6.36 0 -1 0 -6.36 0 -6.36 5-16edge.dat
-  [1,16,0,1,10,6.36,0,-6.36,0,-1,0,-6.36,0,-6.36, ldraw_lib__5_16edge()],
+  [1,16,0,1,10,6.36,0,-6.36,0,-1,0,-6.36,0,-6.36, ldraw_lib__5_16edge(realsolid)],
 // 1 16 0 0 10 6.36 0 -6.36 0 -1 0 -6.36 0 -6.36 5-16edge.dat
-  [1,16,0,0,10,6.36,0,-6.36,0,-1,0,-6.36,0,-6.36, ldraw_lib__5_16edge()],
+  [1,16,0,0,10,6.36,0,-6.36,0,-1,0,-6.36,0,-6.36, ldraw_lib__5_16edge(realsolid)],
 // 1 16 0 0 10 6.36 0 -6.36 0 1 0 -6.36 0 -6.36 5-16cyli.dat
-  [1,16,0,0,10,6.36,0,-6.36,0,1,0,-6.36,0,-6.36, ldraw_lib__5_16cyli()],
+  [1,16,0,0,10,6.36,0,-6.36,0,1,0,-6.36,0,-6.36, ldraw_lib__5_16cyli(realsolid)],
 // 1 16 0 1 -10 6.36 0 -6.36 0 -1 0 6.36 0 6.36 5-16cyli.dat
-  [1,16,0,1,-10,6.36,0,-6.36,0,-1,0,6.36,0,6.36, ldraw_lib__5_16cyli()],
+  [1,16,0,1,-10,6.36,0,-6.36,0,-1,0,6.36,0,6.36, ldraw_lib__5_16cyli(realsolid)],
 // 4 16 6.36 1 -3.64 6.36 1 3.64 3.442 1 1.69 3.442 1 -1.69
   [4,16,6.36,1,-3.64,6.36,1,3.64,3.442,1,1.69,3.442,1,-1.69],
 // 4 16 3.442 1 -1.69 3.442 1 1.69 0 1 1.0057 0 1 -1.0057
@@ -39,9 +40,9 @@ function ldraw_lib__npeghol12() = [
 // 4 16 -8.31 1 -6.558 -6.36 1 -3.64 -6.36 1 3.64 -8.31 1 6.558
   [4,16,-8.31,1,-6.558,-6.36,1,-3.64,-6.36,1,3.64,-8.31,1,6.558],
 // 1 16 6.36 0.5 0 0 1 0 0.5 0 0 0 0 3.64 rect.dat
-  [1,16,6.36,0.5,0,0,1,0,0.5,0,0,0,0,3.64, ldraw_lib__rect()],
+  [1,16,6.36,0.5,0,0,1,0,0.5,0,0,0,0,3.64, ldraw_lib__rect(realsolid)],
 // 1 16 -8.31 0.5 0 0 -1 0 0.5 0 0 0 0 6.558 rect.dat
-  [1,16,-8.31,0.5,0,0,-1,0,0.5,0,0,0,0,6.558, ldraw_lib__rect()],
+  [1,16,-8.31,0.5,0,0,-1,0,0.5,0,0,0,0,6.558, ldraw_lib__rect(realsolid)],
 // 4 16 8.31 0 6.558 6.36 0 3.64 6.36 0 -3.64 8.31 0 -6.558
   [4,16,8.31,0,6.558,6.36,0,3.64,6.36,0,-3.64,8.31,0,-6.558],
 // 4 16 9 0 10 8.31 0 6.558 8.31 0 -6.558 9 0 -10
@@ -51,5 +52,5 @@ function ldraw_lib__npeghol12() = [
 // 0
 ];
 module ldraw_lib__npeghol12(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__npeghol12(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__npeghol12(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__npeghol12(line=0.2);

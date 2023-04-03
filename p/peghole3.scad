@@ -4,7 +4,8 @@ use <1-4edge.scad>
 use <1-4ring3.scad>
 use <3-4ndis.scad>
 use <4-4edge.scad>
-function ldraw_lib__peghole3() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__peghole3(realsolid=false) = [
 // 0 Peg Hole End Extended 1/2
 // 0 Name: peghole3.dat
 // 0 Author: Steve Bliss [sbliss]
@@ -25,17 +26,17 @@ function ldraw_lib__peghole3() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 0 8 0 0 0 2 0 0 0 8 1-4cyli.dat
-  [1,16,0,0,0,8,0,0,0,2,0,0,0,8, ldraw_lib__1_4cyli()],
+  [1,16,0,0,0,8,0,0,0,2,0,0,0,8, ldraw_lib__1_4cyli(realsolid)],
 // 1 16 0 0 0 8 0 0 0 1 0 0 0 8 1-4edge.dat
-  [1,16,0,0,0,8,0,0,0,1,0,0,0,8, ldraw_lib__1_4edge()],
+  [1,16,0,0,0,8,0,0,0,1,0,0,0,8, ldraw_lib__1_4edge(realsolid)],
 // 1 16 0 2 0 8 0 0 0 1 0 0 0 8 1-4edge.dat
-  [1,16,0,2,0,8,0,0,0,1,0,0,0,8, ldraw_lib__1_4edge()],
+  [1,16,0,2,0,8,0,0,0,1,0,0,0,8, ldraw_lib__1_4edge(realsolid)],
 // 1 16 0 2 0 6 0 0 0 1 0 0 0 6 4-4edge.dat
-  [1,16,0,2,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4edge()],
+  [1,16,0,2,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 2 0 6 0 0 0 1 0 0 0 -6 3-4ndis.dat
-  [1,16,0,2,0,6,0,0,0,1,0,0,0,-6, ldraw_lib__3_4ndis()],
+  [1,16,0,2,0,6,0,0,0,1,0,0,0,-6, ldraw_lib__3_4ndis(realsolid)],
 // 1 16 0 2 0 2 0 0 0 1 0 0 0 2 1-4ring3.dat
-  [1,16,0,2,0,2,0,0,0,1,0,0,0,2, ldraw_lib__1_4ring3()],
+  [1,16,0,2,0,2,0,0,0,1,0,0,0,2, ldraw_lib__1_4ring3(realsolid)],
 // 4 16 -8 2 8 -6 2 6 0 2 6 0 2 8
   [4,16,-8,2,8,-6,2,6,0,2,6,0,2,8],
 // 4 16 -8 2 0 -6 2 0 -6 2 6 -8 2 8
@@ -65,5 +66,5 @@ function ldraw_lib__peghole3() = [
   [2,24,8,0,-14,8,2,-14],
 ];
 module ldraw_lib__peghole3(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__peghole3(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__peghole3(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__peghole3(line=0.2);

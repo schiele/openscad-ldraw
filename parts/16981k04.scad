@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/4-4cyli.scad>
-function ldraw_lib__16981k04() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__16981k04(realsolid=false) = [
 // 0 ~Plant Vine with 10 Leaves 16L Liana Segment
 // 0 Name: 16981k04.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -15,8 +16,8 @@ function ldraw_lib__16981k04() = [
 // 
 // 
 // 1 16 0 0 0 0 1 0 4 0 0 0 0 4 4-4cyli.dat
-  [1,16,0,0,0,0,1,0,4,0,0,0,0,4, ldraw_lib__4_4cyli()],
+  [1,16,0,0,0,0,1,0,4,0,0,0,0,4, ldraw_lib__4_4cyli(realsolid)],
 ];
 module ldraw_lib__16981k04(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__16981k04(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__16981k04(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__16981k04(line=0.2);

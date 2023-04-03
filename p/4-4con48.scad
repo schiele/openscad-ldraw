@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__4_4con48() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4_4con48(realsolid=false) = [
 // 0 Cone 48 x 1.0
 // 0 Name: 4-4con48.dat
 // 0 Author: Michael Heidemann [mikeheide]
@@ -81,5 +82,5 @@ function ldraw_lib__4_4con48() = [
 // 0 // Build by Primitive Generator 2
 ];
 module ldraw_lib__4_4con48(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4_4con48(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4_4con48(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4_4con48(line=0.2);

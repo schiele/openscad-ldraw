@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <21699.scad>
 use <577b.scad>
-function ldraw_lib__577bc03() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__577bc03(realsolid=false) = [
 // 0 Minifig Lightsaber Metallic Dark Grey - 1 Side On Blade with Cross Bar
 // 0 Name: 577bc03.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -19,10 +20,10 @@ function ldraw_lib__577bc03() = [
 // 
 // 
 // 1 87 0 0 0 1 0 0 0 1 0 0 0 1 577b.dat
-  [1,87,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__577b()],
+  [1,87,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__577b(realsolid)],
 // 1 16 0 3 0 1 0 0 0 1 0 0 0 1 21699.dat
-  [1,16,0,3,0,1,0,0,0,1,0,0,0,1, ldraw_lib__21699()],
+  [1,16,0,3,0,1,0,0,0,1,0,0,0,1, ldraw_lib__21699(realsolid)],
 ];
 module ldraw_lib__577bc03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__577bc03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__577bc03(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__577bc03(line=0.2);

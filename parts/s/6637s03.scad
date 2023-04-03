@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <6637s04.scad>
-function ldraw_lib__s__6637s03() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__6637s03(realsolid=false) = [
 // 0 ~Electric Technic Fiber Optics Element Cylinder Segment
 // 0 Name: s\6637s03.dat
 // 0 Author: Remco Braak [remco1974]
@@ -40,7 +41,7 @@ function ldraw_lib__s__6637s03() = [
   [4,16,22.0051,0,0,20.3253,8.419,0,25.8686,10.7151,0,28,0,0],
 // 
 // 1 16 16.63 6.888 0 -0.38268 0 0.92388 0.92388 0 0.38268 0 1 0 s\6637s04.dat
-  [1,16,16.63,6.888,0,-0.38268,0,0.92388,0.92388,0,0.38268,0,1,0, ldraw_lib__s__6637s04()],
+  [1,16,16.63,6.888,0,-0.38268,0,0.92388,0.92388,0,0.38268,0,1,0, ldraw_lib__s__6637s04(realsolid)],
 // 
 // 4 16 6.4673 2.6789 4 7 0 4 14 0 4 12.9346 5.3578 4
   [4,16,6.4673,2.6789,4,7,0,4,14,0,4,12.9346,5.3578,4],
@@ -65,5 +66,5 @@ function ldraw_lib__s__6637s03() = [
   [4,16,20.3258,8.4194,4,15.5562,15.5562,4,17.7124,9.5011,4,18.4778,7.6534,4],
 ];
 module ldraw_lib__s__6637s03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__6637s03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__6637s03(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__6637s03(line=0.2);

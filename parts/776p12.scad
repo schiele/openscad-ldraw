@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/776s01.scad>
-function ldraw_lib__776p12() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__776p12(realsolid=false) = [
 // 0 Flag on Flagpole Type 1 with Portugal Pattern
 // 0 Name: 776p12.dat
 // 0 Author: Tore Eriksson [Tore_Eriksson]
@@ -20,7 +21,7 @@ function ldraw_lib__776p12() = [
 // 
 // 0 // The LEGO version really has the gold symbol missing
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\776s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__776s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__776s01(realsolid)],
 // 
 // 0 REM Decorated surfaces
 // 4 2 1.5 -154 -1.5 21.5 -146 -1.5 21.5 -98 -1.5 1.5 -106 -1.5
@@ -58,5 +59,5 @@ function ldraw_lib__776p12() = [
 // 0
 ];
 module ldraw_lib__776p12(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__776p12(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__776p12(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__776p12(line=0.2);

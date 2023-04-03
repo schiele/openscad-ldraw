@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__168335p() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__168335p(realsolid=false) = [
 // 0 Sticker  1.2 x  3.9 with  3 White Stars and Stripes
 // 0 Name: 168335p.dat
 // 0 Author: Ulrich Röder [UR]
@@ -18,7 +19,7 @@ function ldraw_lib__168335p() = [
 // 
 // 0 // Main
 // 1 16 0 -0.25 0 39 0 0 0 0.25 0 0 0 11.4 box5-12.dat
-  [1,16,0,-0.25,0,39,0,0,0,0.25,0,0,0,11.4, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,39,0,0,0,0.25,0,0,0,11.4, ldraw_lib__box5_12(realsolid)],
 // 
 // 0 // Red
 // 3 4 26.219 -0.25 8.539 1.37 -0.25 3.272 7.059 -0.25 3.251
@@ -281,5 +282,5 @@ function ldraw_lib__168335p() = [
   [4,15,39,-0.25,-8.143,39,-0.25,-6.514,-39,-0.25,-6.514,-39,-0.25,-8.143],
 ];
 module ldraw_lib__168335p(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__168335p(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__168335p(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__168335p(line=0.2);

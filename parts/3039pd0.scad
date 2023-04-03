@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3039s01.scad>
-function ldraw_lib__3039pd0() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3039pd0(realsolid=false) = [
 // 0 Slope Brick 45  2 x  2 with Video Editing Screen Pattern
 // 0 Name: 3039pd0.dat
 // 0 Author: Tim Lampmann [L4mpi]
@@ -17,7 +18,7 @@ function ldraw_lib__3039pd0() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3039s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3039s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3039s01(realsolid)],
 // 
 // 3 16 -20 0 -10 -16.793 2.624 -12.624 -16.241 2.337 -12.337
   [3,16,-20,0,-10,-16.793,2.624,-12.624,-16.241,2.337,-12.337],
@@ -1705,5 +1706,5 @@ function ldraw_lib__3039pd0() = [
   [4,0,1.243,13.253,-23.253,1.596,13.503,-23.503,2.406,12.807,-22.807,1.989,12.61,-22.61],
 ];
 module ldraw_lib__3039pd0(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3039pd0(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3039pd0(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3039pd0(line=0.2);

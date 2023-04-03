@@ -2,7 +2,8 @@ use <../lib.scad>
 use <s/3626cps0s01.scad>
 use <s/3626cs01.scad>
 use <../p/t04o6250.scad>
-function ldraw_lib__3626cps0() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3626cps0(realsolid=false) = [
 // 0 Minifig Head with SW Jawa, Yellow Eyes with Orange Rim Pattern
 // 0 Name: 3626cps0.dat
 // 0 Author: John Troxler [Gargan]
@@ -22,21 +23,21 @@ function ldraw_lib__3626cps0() = [
 // 
 // 0 // Head without front face
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3626cs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626cs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626cs01(realsolid)],
 // 1 16 0 4 0 0 0 -8 0 -6.4 0 -8 0 0 t04o6250.dat
-  [1,16,0,4,0,0,0,-8,0,-6.4,0,-8,0,0, ldraw_lib__t04o6250()],
+  [1,16,0,4,0,0,0,-8,0,-6.4,0,-8,0,0, ldraw_lib__t04o6250(realsolid)],
 // 1 16 0 4 0 8 0 0 0 -6.4 0 0 0 -8 t04o6250.dat
-  [1,16,0,4,0,8,0,0,0,-6.4,0,0,0,-8, ldraw_lib__t04o6250()],
+  [1,16,0,4,0,8,0,0,0,-6.4,0,0,0,-8, ldraw_lib__t04o6250(realsolid)],
 // 1 16 0 17 0 0 0 8 0 6.4 0 -8 0 0 t04o6250.dat
-  [1,16,0,17,0,0,0,8,0,6.4,0,-8,0,0, ldraw_lib__t04o6250()],
+  [1,16,0,17,0,0,0,8,0,6.4,0,-8,0,0, ldraw_lib__t04o6250(realsolid)],
 // 1 16 0 17 0 -8 0 0 0 6.4 0 0 0 -8 t04o6250.dat
-  [1,16,0,17,0,-8,0,0,0,6.4,0,0,0,-8, ldraw_lib__t04o6250()],
+  [1,16,0,17,0,-8,0,0,0,6.4,0,0,0,-8, ldraw_lib__t04o6250(realsolid)],
 // 
 // 0 // Face Pattern
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3626cps0s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626cps0s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626cps0s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\3626cps0s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626cps0s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626cps0s01(realsolid)],
 // 
 // 0 // Conditional Lines
 // 5 24 13 17 0 13 4 0 13 17 5.3846 12.0107 17 -4.9751
@@ -59,5 +60,5 @@ function ldraw_lib__3626cps0() = [
   [5,24,-13,17,0,-13,4,0,-12.0107,17,-4.9751,-13,17,5.3846],
 ];
 module ldraw_lib__3626cps0(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3626cps0(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3626cps0(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3626cps0(line=0.2);

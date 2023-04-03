@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/box5.scad>
 use <s/37702s01.scad>
-function ldraw_lib__37702() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__37702(realsolid=false) = [
 // 0 Minifig Suitcase with Hinge
 // 0 Name: 37702.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -20,13 +21,13 @@ function ldraw_lib__37702() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\37702s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__37702s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__37702s01(realsolid)],
 // 0 // clasps
 // 1 16 18 8 0 4 0 0 0 -2 0 0 0 -2.5 box5.dat
-  [1,16,18,8,0,4,0,0,0,-2,0,0,0,-2.5, ldraw_lib__box5()],
+  [1,16,18,8,0,4,0,0,0,-2,0,0,0,-2.5, ldraw_lib__box5(realsolid)],
 // 1 16 -18 8 0 4 0 0 0 -2 0 0 0 -2.5 box5.dat
-  [1,16,-18,8,0,4,0,0,0,-2,0,0,0,-2.5, ldraw_lib__box5()],
+  [1,16,-18,8,0,4,0,0,0,-2,0,0,0,-2.5, ldraw_lib__box5(realsolid)],
 ];
 module ldraw_lib__37702(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__37702(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__37702(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__37702(line=0.2);

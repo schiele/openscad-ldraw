@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/handle.scad>
-function ldraw_lib__s__10049s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__10049s01(realsolid=false) = [
 // 0 ~Minifig Shield Broad with Spiked Bottom and Cutout Corner
 // 0 Name: s\10049s01.dat
 // 0 Author: Howard Lande [HowardLande]
@@ -756,7 +757,7 @@ function ldraw_lib__s__10049s01() = [
 // 
 // 0 // Handle
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 handle.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__handle()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__handle(realsolid)],
 // 
 // 0 // Other Lines
 // 2 24 19.5 -20.4 -7.518 19.5 -18 -5
@@ -807,5 +808,5 @@ function ldraw_lib__s__10049s01() = [
   [5,24,-18.644,8.341,-5.927,-18.644,8.341,-5,-17.501,15.911,-5,-19.622,1.235,-6.007],
 ];
 module ldraw_lib__s__10049s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__10049s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__10049s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__10049s01(line=0.2);

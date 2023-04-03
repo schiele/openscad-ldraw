@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__4125165g() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4125165g(realsolid=false) = [
 // 0 Sticker  0.6 x  4.5 Trapezoid with White "v8" on Right Side on Red Background
 // 0 Name: 4125165g.dat
 // 0 Author: Max Martin Richter [MMR1988]
@@ -310,5 +311,5 @@ function ldraw_lib__4125165g() = [
   [3,4,44.95,-0.25,5.6,-32.55,-0.25,5.6,32.668,-0.25,4.913],
 ];
 module ldraw_lib__4125165g(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4125165g(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4125165g(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4125165g(line=0.2);

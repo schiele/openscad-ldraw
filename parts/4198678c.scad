@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__4198678c() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4198678c(realsolid=false) = [
 // 0 Sticker  3.4 x  1.8 with Black and Yellow Danger Stripes Left
 // 0 Name: 4198678c.dat
 // 0 Author: Tim Lampmann [L4mpi]
@@ -17,7 +18,7 @@ function ldraw_lib__4198678c() = [
 // 
 // 
 // 1 16 0 -0.25 0 18 0 0 0 0.25 0 0 0 34 box5-12.dat
-  [1,16,0,-0.25,0,18,0,0,0,0.25,0,0,0,34, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,18,0,0,0,0.25,0,0,0,34, ldraw_lib__box5_12(realsolid)],
 // 
 // 3 0 18 -.25 -11.66 0 -.25 -34 18 -.25 -34
   [3,0,18,-.25,-11.66,0,-.25,-34,18,-.25,-34],
@@ -31,5 +32,5 @@ function ldraw_lib__4198678c() = [
   [3,0,0,-.25,34,-18,-.25,34,-18,-.25,11.66],
 ];
 module ldraw_lib__4198678c(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4198678c(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4198678c(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4198678c(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <32054.scad>
-function ldraw_lib__4140801() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4140801(realsolid=false) = [
 // 0 ~_Technic Pin Long with Stop Bush Black (Obsolete)
 // 0 Name: 4140801.dat
 // 0 Author: Michael Heidemann [mikeheide]
@@ -20,8 +21,8 @@ function ldraw_lib__4140801() = [
 // 0 // colouring of the part (Black).
 // 
 // 1 0 0 0 0 1 0 0 0 1 0 0 0 1 32054.dat
-  [1,0,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__32054()],
+  [1,0,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__32054(realsolid)],
 ];
 module ldraw_lib__4140801(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4140801(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4140801(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4140801(line=0.2);

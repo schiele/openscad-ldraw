@@ -5,7 +5,8 @@ use <../../p/1-4chrd.scad>
 use <../../p/3-16chrd.scad>
 use <../../p/3-16disc.scad>
 use <../../p/3-16ndis.scad>
-function ldraw_lib__s__6142622vs05() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__6142622vs05(realsolid=false) = [
 // 0 ~Sticker  2.9 x  0.8 with Black Trapezoid on Yellow Background Left - Sixth Face
 // 0 Name: s\6142622vs05.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -21,21 +22,21 @@ function ldraw_lib__s__6142622vs05() = [
 // 
 // 0 // Primitives
 // 1 0 -1.5 -.25 -2.4514 0 0 -.75 0 1 0 -.75 0 0 3-16disc.dat
-  [1,0,-1.5,-.25,-2.4514,0,0,-.75,0,1,0,-.75,0,0, ldraw_lib__3_16disc()],
+  [1,0,-1.5,-.25,-2.4514,0,0,-.75,0,1,0,-.75,0,0, ldraw_lib__3_16disc(realsolid)],
 // 1 0 -1.5 -.25 -2.4514 0 0 .75 0 1 0 -.75 0 0 1-16disc.dat
-  [1,0,-1.5,-.25,-2.4514,0,0,.75,0,1,0,-.75,0,0, ldraw_lib__1_16disc()],
+  [1,0,-1.5,-.25,-2.4514,0,0,.75,0,1,0,-.75,0,0, ldraw_lib__1_16disc(realsolid)],
 // 1 0 4.75 -.25 -.4514 .75 0 0 0 1 0 0 0 -.75 3-16chrd.dat
-  [1,0,4.75,-.25,-.4514,.75,0,0,0,1,0,0,0,-.75, ldraw_lib__3_16chrd()],
+  [1,0,4.75,-.25,-.4514,.75,0,0,0,1,0,0,0,-.75, ldraw_lib__3_16chrd(realsolid)],
 // 1 14 -1.5 -.25 -2.4514 0 0 -.75 0 1 0 -.75 0 0 3-16ndis.dat
-  [1,14,-1.5,-.25,-2.4514,0,0,-.75,0,1,0,-.75,0,0, ldraw_lib__3_16ndis()],
+  [1,14,-1.5,-.25,-2.4514,0,0,-.75,0,1,0,-.75,0,0, ldraw_lib__3_16ndis(realsolid)],
 // 1 14 -1.5 -.25 -2.4514 0 0 .75 0 1 0 -.75 0 0 1-16ndis.dat
-  [1,14,-1.5,-.25,-2.4514,0,0,.75,0,1,0,-.75,0,0, ldraw_lib__1_16ndis()],
+  [1,14,-1.5,-.25,-2.4514,0,0,.75,0,1,0,-.75,0,0, ldraw_lib__1_16ndis(realsolid)],
 // 1 14 4.75 -.25 -.4514 .75 0 0 0 1 0 0 0 -.75 3-16ndis.dat
-  [1,14,4.75,-.25,-.4514,.75,0,0,0,1,0,0,0,-.75, ldraw_lib__3_16ndis()],
+  [1,14,4.75,-.25,-.4514,.75,0,0,0,1,0,0,0,-.75, ldraw_lib__3_16ndis(realsolid)],
 // 1 14 -6.5 -.25 -4.4979 -1.5 0 0 0 1 0 0 0 -1.5 1-4chrd.dat
-  [1,14,-6.5,-.25,-4.4979,-1.5,0,0,0,1,0,0,0,-1.5, ldraw_lib__1_4chrd()],
+  [1,14,-6.5,-.25,-4.4979,-1.5,0,0,0,1,0,0,0,-1.5, ldraw_lib__1_4chrd(realsolid)],
 // 1 14 6.5 -.25 -4.4979 0 0 1.5 0 1 0 -1.5 0 0 1-4chrd.dat
-  [1,14,6.5,-.25,-4.4979,0,0,1.5,0,1,0,-1.5,0,0, ldraw_lib__1_4chrd()],
+  [1,14,6.5,-.25,-4.4979,0,0,1.5,0,1,0,-1.5,0,0, ldraw_lib__1_4chrd(realsolid)],
 // 0 // Black faces
 // 3 0 -2.741 -.25 .0021 -2.192925 -.25 -2.738425 -1.5 -.25 -2.4514
   [3,0,-2.741,-.25,.0021,-2.192925,-.25,-2.738425,-1.5,-.25,-2.4514],
@@ -64,5 +65,5 @@ function ldraw_lib__s__6142622vs05() = [
   [4,14,-6.5,-.25,-5.9979,6.5,-.25,-5.9979,5.5,-.25,-1.2014,-.75,-.25,-3.2014],
 ];
 module ldraw_lib__s__6142622vs05(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__6142622vs05(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__6142622vs05(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__6142622vs05(line=0.2);

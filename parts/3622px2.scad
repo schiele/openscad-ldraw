@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4ndis.scad>
 use <s/3622s01.scad>
-function ldraw_lib__3622px2() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3622px2(realsolid=false) = [
 // 0 Brick  1 x  3 with Black Eyes and Dark Purple Mouth with Fangs Pattern
 // 0 Name: 3622px2.dat
 // 0 Author: Bert Van Raemdonck [BEAVeR]
@@ -19,16 +20,16 @@ function ldraw_lib__3622px2() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3622s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3622s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3622s01(realsolid)],
 // 
 // 1 0 -12.5 8 -10 2.1 0 0 0 0 -1.7 0 1 0 4-4disc.dat
-  [1,0,-12.5,8,-10,2.1,0,0,0,0,-1.7,0,1,0, ldraw_lib__4_4disc()],
+  [1,0,-12.5,8,-10,2.1,0,0,0,0,-1.7,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 0 12.5 8 -10 2.1 0 0 0 0 -1.7 0 1 0 4-4disc.dat
-  [1,0,12.5,8,-10,2.1,0,0,0,0,-1.7,0,1,0, ldraw_lib__4_4disc()],
+  [1,0,12.5,8,-10,2.1,0,0,0,0,-1.7,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 16 -12.5 8 -10 2.1 0 0 0 0 -1.7 0 1 0 4-4ndis.dat
-  [1,16,-12.5,8,-10,2.1,0,0,0,0,-1.7,0,1,0, ldraw_lib__4_4ndis()],
+  [1,16,-12.5,8,-10,2.1,0,0,0,0,-1.7,0,1,0, ldraw_lib__4_4ndis(realsolid)],
 // 1 16 12.5 8 -10 2.1 0 0 0 0 -1.7 0 1 0 4-4ndis.dat
-  [1,16,12.5,8,-10,2.1,0,0,0,0,-1.7,0,1,0, ldraw_lib__4_4ndis()],
+  [1,16,12.5,8,-10,2.1,0,0,0,0,-1.7,0,1,0, ldraw_lib__4_4ndis(realsolid)],
 // 4 0 -6.8 14.85 -10 -7.2 14.85 -10 -7.2 15.5 -10 -6.8 15.5 -10
   [4,0,-6.8,14.85,-10,-7.2,14.85,-10,-7.2,15.5,-10,-6.8,15.5,-10],
 // 4 0 -6.8 15.5 -10 -7.2 15.5 -10 -7.05 16.3 -10 -6.7 16.2 -10
@@ -371,5 +372,5 @@ function ldraw_lib__3622px2() = [
   [3,16,10.4,6.3,-10,4.5,12.75,-10,6.05,12.35,-10],
 ];
 module ldraw_lib__3622px2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3622px2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3622px2(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3622px2(line=0.2);

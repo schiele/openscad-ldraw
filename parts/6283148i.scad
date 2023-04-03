@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/1-4chrd.scad>
 use <../p/1-4cyli.scad>
-function ldraw_lib__6283148i() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6283148i(realsolid=false) = [
 // 0 Sticker  0.8 x  4.0 with Silver "DEFENDER" on White
 // 0 Name: 6283148i.dat
 // 0 Author: Chris Dee [cwdee]
@@ -18,22 +19,22 @@ function ldraw_lib__6283148i() = [
 // 
 // 
 // 1 16 38 0 6 0 0 2 0 -1 0 2 0 0 1-4chrd.dat
-  [1,16,38,0,6,0,0,2,0,-1,0,2,0,0, ldraw_lib__1_4chrd()],
+  [1,16,38,0,6,0,0,2,0,-1,0,2,0,0, ldraw_lib__1_4chrd(realsolid)],
 // 1 16 -38 0 6 0 0 -2 0 -1 0 2 0 0 1-4chrd.dat
-  [1,16,-38,0,6,0,0,-2,0,-1,0,2,0,0, ldraw_lib__1_4chrd()],
+  [1,16,-38,0,6,0,0,-2,0,-1,0,2,0,0, ldraw_lib__1_4chrd(realsolid)],
 // 1 16 38 0 -6 0 0 2 0 -1 0 -2 0 0 1-4chrd.dat
-  [1,16,38,0,-6,0,0,2,0,-1,0,-2,0,0, ldraw_lib__1_4chrd()],
+  [1,16,38,0,-6,0,0,2,0,-1,0,-2,0,0, ldraw_lib__1_4chrd(realsolid)],
 // 1 16 -38 0 -6 0 0 -2 0 -1 0 -2 0 0 1-4chrd.dat
-  [1,16,-38,0,-6,0,0,-2,0,-1,0,-2,0,0, ldraw_lib__1_4chrd()],
+  [1,16,-38,0,-6,0,0,-2,0,-1,0,-2,0,0, ldraw_lib__1_4chrd(realsolid)],
 // 
 // 1 16 38 0 6 0 0 2 0 -0.25 0 2 0 0 1-4cyli.dat
-  [1,16,38,0,6,0,0,2,0,-0.25,0,2,0,0, ldraw_lib__1_4cyli()],
+  [1,16,38,0,6,0,0,2,0,-0.25,0,2,0,0, ldraw_lib__1_4cyli(realsolid)],
 // 1 16 -38 0 6 0 0 -2 0 -0.25 0 2 0 0 1-4cyli.dat
-  [1,16,-38,0,6,0,0,-2,0,-0.25,0,2,0,0, ldraw_lib__1_4cyli()],
+  [1,16,-38,0,6,0,0,-2,0,-0.25,0,2,0,0, ldraw_lib__1_4cyli(realsolid)],
 // 1 16 38 0 -6 0 0 2 0 -0.25 0 -2 0 0 1-4cyli.dat
-  [1,16,38,0,-6,0,0,2,0,-0.25,0,-2,0,0, ldraw_lib__1_4cyli()],
+  [1,16,38,0,-6,0,0,2,0,-0.25,0,-2,0,0, ldraw_lib__1_4cyli(realsolid)],
 // 1 16 -38 0 -6 0 0 -2 0 -0.25 0 -2 0 0 1-4cyli.dat
-  [1,16,-38,0,-6,0,0,-2,0,-0.25,0,-2,0,0, ldraw_lib__1_4cyli()],
+  [1,16,-38,0,-6,0,0,-2,0,-0.25,0,-2,0,0, ldraw_lib__1_4cyli(realsolid)],
 // 
 // 4 16 -40 0 -6 -40 0 6 40 0 6 40 0 -6
   [4,16,-40,0,-6,-40,0,6,40,0,6,40,0,-6],
@@ -484,14 +485,14 @@ function ldraw_lib__6283148i() = [
 // 4 15 -38 -0.25 -8 -32.5 -0.25 -3.5 -38.8 -0.25 -3.5 -40 -0.25 -6
   [4,15,-38,-0.25,-8,-32.5,-0.25,-3.5,-38.8,-0.25,-3.5,-40,-0.25,-6],
 // 1 15 38 -0.25 6 0 0 2 0 1 0 2 0 0 1-4chrd.dat
-  [1,15,38,-0.25,6,0,0,2,0,1,0,2,0,0, ldraw_lib__1_4chrd()],
+  [1,15,38,-0.25,6,0,0,2,0,1,0,2,0,0, ldraw_lib__1_4chrd(realsolid)],
 // 1 15 -38 -0.25 6 0 0 -2 0 1 0 2 0 0 1-4chrd.dat
-  [1,15,-38,-0.25,6,0,0,-2,0,1,0,2,0,0, ldraw_lib__1_4chrd()],
+  [1,15,-38,-0.25,6,0,0,-2,0,1,0,2,0,0, ldraw_lib__1_4chrd(realsolid)],
 // 1 15 38 -0.25 -6 0 0 2 0 1 0 -2 0 0 1-4chrd.dat
-  [1,15,38,-0.25,-6,0,0,2,0,1,0,-2,0,0, ldraw_lib__1_4chrd()],
+  [1,15,38,-0.25,-6,0,0,2,0,1,0,-2,0,0, ldraw_lib__1_4chrd(realsolid)],
 // 1 15 -38 -0.25 -6 0 0 -2 0 1 0 -2 0 0 1-4chrd.dat
-  [1,15,-38,-0.25,-6,0,0,-2,0,1,0,-2,0,0, ldraw_lib__1_4chrd()],
+  [1,15,-38,-0.25,-6,0,0,-2,0,1,0,-2,0,0, ldraw_lib__1_4chrd(realsolid)],
 ];
 module ldraw_lib__6283148i(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6283148i(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6283148i(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6283148i(line=0.2);

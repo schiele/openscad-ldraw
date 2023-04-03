@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/822as01.scad>
-function ldraw_lib__822bp01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__822bp01(realsolid=false) = [
 // 0 ~Garage Door without Hinge Pins with Yellow Grid Pattern
 // 0 Name: 822bp01.dat
 // 0 Author: Arne Hackstein
@@ -18,7 +19,7 @@ function ldraw_lib__822bp01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\822as01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__822as01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__822as01(realsolid)],
 // 0 // front surface
 // 4 16 20.5 59.5 50 20.5 59.5 -50 20.5 60.5 -52 20.5 60.5 52
   [4,16,20.5,59.5,50,20.5,59.5,-50,20.5,60.5,-52,20.5,60.5,52],
@@ -87,5 +88,5 @@ function ldraw_lib__822bp01() = [
   [3,16,2.5,-8.5,-52,2.5,-8.5,-48.5,2.5,-5.5,-48.5],
 ];
 module ldraw_lib__822bp01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__822bp01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__822bp01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__822bp01(line=0.2);

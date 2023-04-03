@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <3021.scad>
-function ldraw_lib__302101() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__302101(realsolid=false) = [
 // 0 ~_Plate  2 x  3 White (Obsolete)
 // 0 Name: 302101.dat
 // 0 Author: Michael Heidemann [mikeheide]
@@ -19,8 +20,8 @@ function ldraw_lib__302101() = [
 // 0 // This file is a "shortcut" with the correct number for the actual
 // 0 // colouring of the part (White).
 // 1 15 0 0 0 1 0 0 0 1 0 0 0 1 3021.dat
-  [1,15,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3021()],
+  [1,15,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3021(realsolid)],
 ];
 module ldraw_lib__302101(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__302101(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__302101(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__302101(line=0.2);

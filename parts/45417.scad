@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <3063b.scad>
-function ldraw_lib__45417() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__45417(realsolid=false) = [
 // 0 =Brick  2 x  2 Corner Round with Stud Notch
 // 0 Name: 45417.dat
 // 0 Author: Chris Dee [cwdee]
@@ -28,8 +29,8 @@ function ldraw_lib__45417() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 3063b.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3063b()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3063b(realsolid)],
 ];
 module ldraw_lib__45417(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__45417(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__45417(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__45417(line=0.2);

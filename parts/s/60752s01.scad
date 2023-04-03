@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__60752s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__60752s01(realsolid=false) = [
 // 0 ~Minifig Sword Scimitar with Jagged Edge - Half
 // 0 Name: s\60752s01.dat
 // 0 Author: El'dar Ismagilov [Eldar]
@@ -326,5 +327,5 @@ function ldraw_lib__s__60752s01() = [
   [5,24,18.18,-26.15,3.34,16.47,-28.65,3.565,17,-28.21,3.495,18.04,-25.55,3.358],
 ];
 module ldraw_lib__s__60752s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__60752s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__60752s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__60752s01(line=0.2);

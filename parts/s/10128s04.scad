@@ -4,7 +4,8 @@ use <../../p/4-4cylo.scad>
 use <../../p/4-4disc.scad>
 use <../../p/4-4ring4.scad>
 use <../../p/peghole.scad>
-function ldraw_lib__s__10128s04() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__10128s04(realsolid=false) = [
 // 0 ~Bigfig Hulk Body - Torso Half
 // 0 Name: s\10128s04.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -21,19 +22,19 @@ function ldraw_lib__s__10128s04() = [
 // 
 // 
 // 1 16 20 -126 0 0 1 0 -1 0 0 0 0 1 peghole.dat
-  [1,16,20,-126,0,0,1,0,-1,0,0,0,0,1, ldraw_lib__peghole()],
+  [1,16,20,-126,0,0,1,0,-1,0,0,0,0,1, ldraw_lib__peghole(realsolid)],
 // 1 16 40 -126 0 0 -1 0 -1 0 0 0 0 1 peghole.dat
-  [1,16,40,-126,0,0,-1,0,-1,0,0,0,0,1, ldraw_lib__peghole()],
+  [1,16,40,-126,0,0,-1,0,-1,0,0,0,0,1, ldraw_lib__peghole(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 22 -126 0 0 16 0 -6 0 0 0 0 6 4-4cyli.dat
-  [1,16,22,-126,0,0,16,0,-6,0,0,0,0,6, ldraw_lib__4_4cyli()],
+  [1,16,22,-126,0,0,16,0,-6,0,0,0,0,6, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 20 -126 0 0 -1 0 -8 0 0 0 0 8 4-4disc.dat
-  [1,16,20,-126,0,0,-1,0,-8,0,0,0,0,8, ldraw_lib__4_4disc()],
+  [1,16,20,-126,0,0,-1,0,-8,0,0,0,0,8, ldraw_lib__4_4disc(realsolid)],
 // 1 16 40 -126 0 0 -1 0 -2 0 0 0 0 -2 4-4ring4.dat
-  [1,16,40,-126,0,0,-1,0,-2,0,0,0,0,-2, ldraw_lib__4_4ring4()],
+  [1,16,40,-126,0,0,-1,0,-2,0,0,0,0,-2, ldraw_lib__4_4ring4(realsolid)],
 // 1 16 40 -126 0 0 -0.284 0 -10 0 0 0 0 10 4-4cylo.dat
-  [1,16,40,-126,0,0,-0.284,0,-10,0,0,0,0,10, ldraw_lib__4_4cylo()],
+  [1,16,40,-126,0,0,-0.284,0,-10,0,0,0,0,10, ldraw_lib__4_4cylo(realsolid)],
 // 
 // 4 16 39.716 -135.239 3.827 39.716 -144.775 9.654 39.716 -147.398 -3.95 39.716 -136 0
   [4,16,39.716,-135.239,3.827,39.716,-144.775,9.654,39.716,-147.398,-3.95,39.716,-136,0],
@@ -1387,5 +1388,5 @@ function ldraw_lib__s__10128s04() = [
   [5,24,36.064,-99.925,-12.173,27.74,-90.415,-12.883,34.572,-95.337,-8.268,29.797,-94.998,-15.045],
 ];
 module ldraw_lib__s__10128s04(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__10128s04(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__10128s04(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__10128s04(line=0.2);

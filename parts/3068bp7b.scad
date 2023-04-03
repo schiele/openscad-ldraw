@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3068bs01.scad>
-function ldraw_lib__3068bp7b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3068bp7b(realsolid=false) = [
 // 0 Tile  2 x  2 with Fire Logo Large Pattern
 // 0 Name: 3068bp7b.dat
 // 0 Author: Marc Giraudet [Mad_Marc]
@@ -17,7 +18,7 @@ function ldraw_lib__3068bp7b() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3068bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3068bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3068bs01(realsolid)],
 // 4 16 -20 0 20 -17 0 17 17 0 17 20 0 20
   [4,16,-20,0,20,-17,0,17,17,0,17,20,0,20],
 // 4 16 20 0 20 17 0 17 17 0 -17 20 0 -20
@@ -156,5 +157,5 @@ function ldraw_lib__3068bp7b() = [
   [4,14,12.4,0,3.9,4.8,0,5.1,2.6,0,2.9,12.5,0,0.8],
 ];
 module ldraw_lib__3068bp7b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3068bp7b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3068bp7b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3068bp7b(line=0.2);

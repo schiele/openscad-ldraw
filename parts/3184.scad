@@ -6,7 +6,8 @@ use <../p/8-8sphe.scad>
 use <../p/box5.scad>
 use <../p/stug-1x4.scad>
 use <../p/stug3-1x3.scad>
-function ldraw_lib__3184() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3184(realsolid=false) = [
 // 0 Plate  1 x  4 with Towball
 // 0 Name: 3184.dat
 // 0 Author: James Jessiman
@@ -24,12 +25,12 @@ function ldraw_lib__3184() = [
 // 
 // 
 // 1 16 0 4 0 1 0 0 0 -1 0 0 0 1 stug3-1x3.dat
-  [1,16,0,4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stug3_1x3()],
+  [1,16,0,4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stug3_1x3(realsolid)],
 // 
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 8 0 -36 0 0 0 -4 0 0 0 6 box5.dat
-  [1,16,0,8,0,-36,0,0,0,-4,0,0,0,6, ldraw_lib__box5()],
+  [1,16,0,8,0,-36,0,0,0,-4,0,0,0,6, ldraw_lib__box5(realsolid)],
 // 
 // 4 16 40 8 10 36 8 6 -36 8 6 -40 8 10
   [4,16,40,8,10,36,8,6,-36,8,6,-40,8,10],
@@ -41,21 +42,21 @@ function ldraw_lib__3184() = [
   [4,16,40,8,-10,36,8,-6,36,8,6,40,8,10],
 // 
 // 1 16 0 8 0 -40 0 0 0 -8 0 0 0 10 box5.dat
-  [1,16,0,8,0,-40,0,0,0,-8,0,0,0,10, ldraw_lib__box5()],
+  [1,16,0,8,0,-40,0,0,0,-8,0,0,0,10, ldraw_lib__box5(realsolid)],
 // 
 // 1 16 0 4 -10 4 0 0 0 0 4 0 -1 0 4-4edge.dat
-  [1,16,0,4,-10,4,0,0,0,0,4,0,-1,0, ldraw_lib__4_4edge()],
+  [1,16,0,4,-10,4,0,0,0,0,4,0,-1,0, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 4 -10 4 0 0 0 0 4 0 -10 0 4-4cyli.dat
-  [1,16,0,4,-10,4,0,0,0,0,4,0,-10,0, ldraw_lib__4_4cyli()],
+  [1,16,0,4,-10,4,0,0,0,0,4,0,-10,0, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 4 -28 4 0 0 0 0 4 0 -4 0 4-4cyl1sph2.dat
-  [1,16,0,4,-28,4,0,0,0,0,4,0,-4,0, ldraw_lib__4_4cyl1sph2()],
+  [1,16,0,4,-28,4,0,0,0,0,4,0,-4,0, ldraw_lib__4_4cyl1sph2(realsolid)],
 // 1 16 0 4 -28 8 0 0 0 8 0 0 0 8 8-8sphe.dat
-  [1,16,0,4,-28,8,0,0,0,8,0,0,0,8, ldraw_lib__8_8sphe()],
+  [1,16,0,4,-28,8,0,0,0,8,0,0,0,8, ldraw_lib__8_8sphe(realsolid)],
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 stug-1x4.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_1x4()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_1x4(realsolid)],
 // 
 ];
 module ldraw_lib__3184(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3184(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3184(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3184(line=0.2);

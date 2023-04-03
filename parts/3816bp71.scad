@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <3817bp71.scad>
-function ldraw_lib__3816bp71() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3816bp71(realsolid=false) = [
 // 0 Minifig Leg Right with Reflective Stripes and Tan Pocket Outline Pattern
 // 0 Name: 3816bp71.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -17,8 +18,8 @@ function ldraw_lib__3816bp71() = [
 // 
 // 
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 3817bp71.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__3817bp71()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__3817bp71(realsolid)],
 ];
 module ldraw_lib__3816bp71(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3816bp71(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3816bp71(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3816bp71(line=0.2);

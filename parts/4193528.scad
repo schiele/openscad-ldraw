@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <6222.scad>
-function ldraw_lib__4193528() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4193528(realsolid=false) = [
 // 0 ~_Brick  4 x  4 Round with Holes Yellow (Obsolete)
 // 0 Name: 4193528.dat
 // 0 Author: [PTadmin]
@@ -20,8 +21,8 @@ function ldraw_lib__4193528() = [
 // 0 // colouring of the part (Yellow). Used in 2002.
 // 
 // 1 14 0 0 0 1 0 0 0 1 0 0 0 1 6222.dat
-  [1,14,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__6222()],
+  [1,14,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__6222(realsolid)],
 ];
 module ldraw_lib__4193528(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4193528(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4193528(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4193528(line=0.2);

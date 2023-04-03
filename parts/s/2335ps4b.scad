@@ -2,7 +2,8 @@ use <../../lib.scad>
 use <../../p/1-4disc.scad>
 use <../../p/2-4disc.scad>
 use <../../p/2-4ndis.scad>
-function ldraw_lib__s__2335ps4b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__2335ps4b(realsolid=false) = [
 // 0 ~Flag  2 x  2 with Goblets & Grapes Pattern - Gold Detail
 // 0 Name: s\2335ps4b.dat
 // 0 Author: Bernd Broich [bbroich]
@@ -20,21 +21,21 @@ function ldraw_lib__s__2335ps4b() = [
 // 
 // 0 // Goblet
 // 1 16 0 23.25 39.125 0 -1 0 0 0 -2.5 -2.375 0 0 1-4disc.dat
-  [1,16,0,23.25,39.125,0,-1,0,0,0,-2.5,-2.375,0,0, ldraw_lib__1_4disc()],
+  [1,16,0,23.25,39.125,0,-1,0,0,0,-2.5,-2.375,0,0, ldraw_lib__1_4disc(realsolid)],
 // 1 16 0 25.125 20.75 0 -1 0 -3.875 0 0 0 0 -0.625 2-4disc.dat
-  [1,16,0,25.125,20.75,0,-1,0,-3.875,0,0,0,0,-0.625, ldraw_lib__2_4disc()],
+  [1,16,0,25.125,20.75,0,-1,0,-3.875,0,0,0,0,-0.625, ldraw_lib__2_4disc(realsolid)],
 // 1 16 0 25.125 20.75 0 -1 0 -3.875 0 0 0 0 1 2-4disc.dat
-  [1,16,0,25.125,20.75,0,-1,0,-3.875,0,0,0,0,1, ldraw_lib__2_4disc()],
+  [1,16,0,25.125,20.75,0,-1,0,-3.875,0,0,0,0,1, ldraw_lib__2_4disc(realsolid)],
 // 1 16 0 25.125 29 0 -1 0 -3.125 0 0 0 0 1.75 2-4disc.dat
-  [1,16,0,25.125,29,0,-1,0,-3.125,0,0,0,0,1.75, ldraw_lib__2_4disc()],
+  [1,16,0,25.125,29,0,-1,0,-3.125,0,0,0,0,1.75, ldraw_lib__2_4disc(realsolid)],
 // 1 16 0 25.125 36.25 0 -1 0 -1.375 0 0 0 0 0.75 2-4disc.dat
-  [1,16,0,25.125,36.25,0,-1,0,-1.375,0,0,0,0,0.75, ldraw_lib__2_4disc()],
+  [1,16,0,25.125,36.25,0,-1,0,-1.375,0,0,0,0,0.75, ldraw_lib__2_4disc(realsolid)],
 // 1 16 0 25.125 36.75 0 -1 0 -1.875 0 0 0 0 0.5 2-4ndis.dat
-  [1,16,0,25.125,36.75,0,-1,0,-1.875,0,0,0,0,0.5, ldraw_lib__2_4ndis()],
+  [1,16,0,25.125,36.75,0,-1,0,-1.875,0,0,0,0,0.5, ldraw_lib__2_4ndis(realsolid)],
 // 1 16 0 25.125 39.125 0 -1 0 -4.375 0 0 0 0 1.125 2-4disc.dat
-  [1,16,0,25.125,39.125,0,-1,0,-4.375,0,0,0,0,1.125, ldraw_lib__2_4disc()],
+  [1,16,0,25.125,39.125,0,-1,0,-4.375,0,0,0,0,1.125, ldraw_lib__2_4disc(realsolid)],
 // 1 16 0 27 39.125 0 -1 0 0 0 2.5 -2.375 0 0 1-4disc.dat
-  [1,16,0,27,39.125,0,-1,0,0,0,2.5,-2.375,0,0, ldraw_lib__1_4disc()],
+  [1,16,0,27,39.125,0,-1,0,0,0,2.5,-2.375,0,0, ldraw_lib__1_4disc(realsolid)],
 // 
 // 3 16 0 22 29 0 21.0829 21.6805 0 20.75 21.25
   [3,16,0,22,29,0,21.0829,21.6805,0,20.75,21.25],
@@ -235,5 +236,5 @@ function ldraw_lib__s__2335ps4b() = [
 // 
 ];
 module ldraw_lib__s__2335ps4b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__2335ps4b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__2335ps4b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__2335ps4b(line=0.2);

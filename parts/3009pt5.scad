@@ -2,7 +2,8 @@ use <../lib.scad>
 use <s/3009pt5a.scad>
 use <s/3009pt5b.scad>
 use <s/3009s01.scad>
-function ldraw_lib__3009pt5() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3009pt5(realsolid=false) = [
 // 0 Brick  1 x  6 with "MANCHESTER" on White Background Pattern
 // 0 Name: 3009pt5.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -17,7 +18,7 @@ function ldraw_lib__3009pt5() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3009s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3009s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3009s01(realsolid)],
 // 0 //
 // 4 16 -43.5 21.75 -10 -43.5 2.25 -10 -60 0 -10 -60 24 -10
   [4,16,-43.5,21.75,-10,-43.5,2.25,-10,-60,0,-10,-60,24,-10],
@@ -29,10 +30,10 @@ function ldraw_lib__3009pt5() = [
   [4,16,-43.5,2.25,-10,43.5,2.25,-10,60,0,-10,-60,0,-10],
 // 0 //
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3009pt5a.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3009pt5a()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3009pt5a(realsolid)],
 // 1 15 0 0 0 1 0 0 0 1 0 0 0 1 s\3009pt5b.dat
-  [1,15,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3009pt5b()],
+  [1,15,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3009pt5b(realsolid)],
 ];
 module ldraw_lib__3009pt5(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3009pt5(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3009pt5(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3009pt5(line=0.2);

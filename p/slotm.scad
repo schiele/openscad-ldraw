@@ -2,7 +2,8 @@ use <../lib.scad>
 use <rect1.scad>
 use <rect2a.scad>
 use <rect3.scad>
-function ldraw_lib__slotm() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__slotm(realsolid=false) = [
 // 0 Mursten Brick Slot
 // 0 Name: slotm.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -22,27 +23,27 @@ function ldraw_lib__slotm() = [
   [4,16,2,24,-20,2,24,-16,16,24,-16,20,24,-20],
 // 0
 // 1 16 -11 0 -18 0 0 9 0 1 0 -2 0 0 rect2a.dat
-  [1,16,-11,0,-18,0,0,9,0,1,0,-2,0,0, ldraw_lib__rect2a()],
+  [1,16,-11,0,-18,0,0,9,0,1,0,-2,0,0, ldraw_lib__rect2a(realsolid)],
 // 1 16 11 0 -18 -9 0 0 0 1 0 0 0 -2 rect2a.dat
-  [1,16,11,0,-18,-9,0,0,0,1,0,0,0,-2, ldraw_lib__rect2a()],
+  [1,16,11,0,-18,-9,0,0,0,1,0,0,0,-2, ldraw_lib__rect2a(realsolid)],
 // 0
 // 1 16 -9 14 -16 0 0 -7 10 0 0 0 -1 0 rect1.dat
-  [1,16,-9,14,-16,0,0,-7,10,0,0,0,-1,0, ldraw_lib__rect1()],
+  [1,16,-9,14,-16,0,0,-7,10,0,0,0,-1,0, ldraw_lib__rect1(realsolid)],
 // 1 16 9 14 -16 0 0 -7 10 0 0 0 -1 0 rect1.dat
-  [1,16,9,14,-16,0,0,-7,10,0,0,0,-1,0, ldraw_lib__rect1()],
+  [1,16,9,14,-16,0,0,-7,10,0,0,0,-1,0, ldraw_lib__rect1(realsolid)],
 // 1 16 0 2 -16 0 0 -2 -2 0 0 0 1 0 rect1.dat
-  [1,16,0,2,-16,0,0,-2,-2,0,0,0,1,0, ldraw_lib__rect1()],
+  [1,16,0,2,-16,0,0,-2,-2,0,0,0,1,0, ldraw_lib__rect1(realsolid)],
 // 1 16 -2 12 -18 0 -1 0 0 0 12 -2 0 0 rect3.dat
-  [1,16,-2,12,-18,0,-1,0,0,0,12,-2,0,0, ldraw_lib__rect3()],
+  [1,16,-2,12,-18,0,-1,0,0,0,12,-2,0,0, ldraw_lib__rect3(realsolid)],
 // 1 16 2 12 -18 0 1 0 0 0 12 2 0 0 rect3.dat
-  [1,16,2,12,-18,0,1,0,0,0,12,2,0,0, ldraw_lib__rect3()],
+  [1,16,2,12,-18,0,1,0,0,0,12,2,0,0, ldraw_lib__rect3(realsolid)],
 // 0
 // 1 16 11 12 -20 0 0 9 12 0 0 0 1 0 rect1.dat
-  [1,16,11,12,-20,0,0,9,12,0,0,0,1,0, ldraw_lib__rect1()],
+  [1,16,11,12,-20,0,0,9,12,0,0,0,1,0, ldraw_lib__rect1(realsolid)],
 // 1 16 -11 12 -20 0 0 9 12 0 0 0 1 0 rect1.dat
-  [1,16,-11,12,-20,0,0,9,12,0,0,0,1,0, ldraw_lib__rect1()],
+  [1,16,-11,12,-20,0,0,9,12,0,0,0,1,0, ldraw_lib__rect1(realsolid)],
 // 0
 ];
 module ldraw_lib__slotm(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__slotm(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__slotm(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__slotm(line=0.2);

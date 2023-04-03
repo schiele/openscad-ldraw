@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__970phba() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__970phba(realsolid=false) = [
 // 0 ~Minifig Hips with Greatcoat Pattern - Purple Detail
 // 0 Name: s\970phba.dat
 // 0 Author: Andy Westrate [westrate]
@@ -27,5 +28,5 @@ function ldraw_lib__s__970phba() = [
 // 0
 ];
 module ldraw_lib__s__970phba(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__970phba(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__970phba(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__970phba(line=0.2);

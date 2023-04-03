@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/6636s01.scad>
-function ldraw_lib__6636p07() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6636p07(realsolid=false) = [
 // 0 Tile  1 x  6 with Sandgreen Triangles and Lavender Dots Pattern
 // 0 Name: 6636p07.dat
 // 0 Author: Merlijn Wissink [legolijntje]
@@ -19,7 +20,7 @@ function ldraw_lib__6636p07() = [
 // 0 // Subfile
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\6636s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6636s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6636s01(realsolid)],
 // 3 378 -60 0 5 -60 0 -10 -48 0 -7
   [3,378,-60,0,5,-60,0,-10,-48,0,-7],
 // 4 378 -36 0 5 -48 0 -7 -36 0 -10 -24 0 -7
@@ -284,5 +285,5 @@ function ldraw_lib__6636p07() = [
   [3,16,49.158,0,1.20434,48,0,0.974,48,0,-7],
 ];
 module ldraw_lib__6636p07(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6636p07(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6636p07(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6636p07(line=0.2);

@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/4-4disc.scad>
 use <../../p/4-4ndis.scad>
-function ldraw_lib__s__98138pb5s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__98138pb5s01(realsolid=false) = [
 // 0 ~Tile  1 x  1 Round Sand Green Iron Man Chest Reactor Pattern 1/5
 // 0 Name: s\98138pb5s01.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -147,9 +148,9 @@ function ldraw_lib__s__98138pb5s01() = [
   [3,378,-.2,0,8.8,-1.576,0,4.8504,-.7978,0,5.0372],
 // 
 // 1 378 0 0 -6.75 .7 0 0 0 1 0 0 0 .7 4-4ndis.dat
-  [1,378,0,0,-6.75,.7,0,0,0,1,0,0,0,.7, ldraw_lib__4_4ndis()],
+  [1,378,0,0,-6.75,.7,0,0,0,1,0,0,0,.7, ldraw_lib__4_4ndis(realsolid)],
 // 1 378 0 0 -6.75 .4 0 0 0 1 0 0 0 .4 4-4disc.dat
-  [1,378,0,0,-6.75,.4,0,0,0,1,0,0,0,.4, ldraw_lib__4_4disc()],
+  [1,378,0,0,-6.75,.4,0,0,0,1,0,0,0,.4, ldraw_lib__4_4disc(realsolid)],
 // 4 0 -.4 0 -6.75 -.3696 0 -6.5969 -.6467 0 -6.4821 -.7 0 -6.75
   [4,0,-.4,0,-6.75,-.3696,0,-6.5969,-.6467,0,-6.4821,-.7,0,-6.75],
 // 4 0 -.3696 0 -6.9031 -.4 0 -6.75 -.7 0 -6.75 -.6467 0 -7.0179
@@ -196,5 +197,5 @@ function ldraw_lib__s__98138pb5s01() = [
   [3,378,-.7,0,-7.45,-.7,0,-6.75,-1.576,0,-4.8504],
 ];
 module ldraw_lib__s__98138pb5s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__98138pb5s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__98138pb5s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__98138pb5s01(line=0.2);

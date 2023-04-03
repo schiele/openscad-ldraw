@@ -2,7 +2,8 @@ use <../../lib.scad>
 use <../../p/1-4disc.scad>
 use <../../p/1-4edge.scad>
 use <../../p/clip6.scad>
-function ldraw_lib__s__98085s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__98085s01(realsolid=false) = [
 // 0 ~Animal Pteranodon/Eagle Body Upper - Half
 // 0 Name: s\98085s01.dat
 // 0 Author: Christian Neumann [Wesley]
@@ -20,9 +21,9 @@ function ldraw_lib__s__98085s01() = [
 // 
 // 
 // 1 16 30 0 -10 0 0 -1 0 1 0 1 0 0 clip6.dat
-  [1,16,30,0,-10,0,0,-1,0,1,0,1,0,0, ldraw_lib__clip6()],
+  [1,16,30,0,-10,0,0,-1,0,1,0,1,0,0, ldraw_lib__clip6(realsolid)],
 // 1 16 30 0 10 0 0 -1 0 1 0 1 0 0 clip6.dat
-  [1,16,30,0,10,0,0,-1,0,1,0,1,0,0, ldraw_lib__clip6()],
+  [1,16,30,0,10,0,0,-1,0,1,0,1,0,0, ldraw_lib__clip6(realsolid)],
 // 
 // 2 24 19.724 8 9.432 19.746 8 11.852
   [2,24,19.724,8,9.432,19.746,8,11.852],
@@ -138,9 +139,9 @@ function ldraw_lib__s__98085s01() = [
   [4,16,19.754,7.239,14,19.746,6.726,14,19.781,4.368,14,20,8,14],
 // 
 // 1 16 0 0 48 1.5 0 0 0 1 0 0 0 2.5 1-4disc.dat
-  [1,16,0,0,48,1.5,0,0,0,1,0,0,0,2.5, ldraw_lib__1_4disc()],
+  [1,16,0,0,48,1.5,0,0,0,1,0,0,0,2.5, ldraw_lib__1_4disc(realsolid)],
 // 1 16 0 0 -35.5 1.5 0 0 0 1 0 0 0 -2.5 1-4disc.dat
-  [1,16,0,0,-35.5,1.5,0,0,0,1,0,0,0,-2.5, ldraw_lib__1_4disc()],
+  [1,16,0,0,-35.5,1.5,0,0,0,1,0,0,0,-2.5, ldraw_lib__1_4disc(realsolid)],
 // 
 // 4 16 1.5 0 48 0 0 48 0 0 24.3 2.597 0 45.187
   [4,16,1.5,0,48,0,0,48,0,0,24.3,2.597,0,45.187],
@@ -228,9 +229,9 @@ function ldraw_lib__s__98085s01() = [
 // 
 // 0 // Edges
 // 1 16 0 0 48 1.5 0 0 0 1 0 0 0 2.5 1-4edge.dat
-  [1,16,0,0,48,1.5,0,0,0,1,0,0,0,2.5, ldraw_lib__1_4edge()],
+  [1,16,0,0,48,1.5,0,0,0,1,0,0,0,2.5, ldraw_lib__1_4edge(realsolid)],
 // 1 16 0 0 -35.5 1.5 0 0 0 1 0 0 0 -2.5 1-4edge.dat
-  [1,16,0,0,-35.5,1.5,0,0,0,1,0,0,0,-2.5, ldraw_lib__1_4edge()],
+  [1,16,0,0,-35.5,1.5,0,0,0,1,0,0,0,-2.5, ldraw_lib__1_4edge(realsolid)],
 // 2 24 10.424 0 -23.184 14.27 0 -21.545
   [2,24,10.424,0,-23.184,14.27,0,-21.545],
 // 2 24 2.066 0 -32.267 3.974 0 -28.541
@@ -325,5 +326,5 @@ function ldraw_lib__s__98085s01() = [
   [5,24,19.783,2.088,-19.991,19.781,2.159,-14,18.793,.4,-14,19.783,2.49,-14],
 ];
 module ldraw_lib__s__98085s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__98085s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__98085s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__98085s01(line=0.2);

@@ -8,7 +8,8 @@ use <../p/4-4rin10.scad>
 use <../p/4-4ring1.scad>
 use <../p/4-4ring4.scad>
 use <s/98138s01.scad>
-function ldraw_lib__98138p1q() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__98138p1q(realsolid=false) = [
 // 0 Tile  1 x  1 Round with Bright Light Yellow Emoji with Wide Open Eyes and Tight Lipped Straight Mouth Pattern
 // 0 Name: 98138p1q.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -25,39 +26,39 @@ function ldraw_lib__98138p1q() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\98138s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01(realsolid)],
 // 1 226 0 0 0 9 0 0 0 1 0 0 0 9 4-4ering.dat
-  [1,226,0,0,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4ering()],
+  [1,226,0,0,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4ering(realsolid)],
 // 
 // 1 0 4.7 0 .8 1 0 0 0 1 0 0 0 1 4-4disc.dat
-  [1,0,4.7,0,.8,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4disc()],
+  [1,0,4.7,0,.8,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4disc(realsolid)],
 // 1 0 -4.7 0 .8 1 0 0 0 1 0 0 0 1 4-4disc.dat
-  [1,0,-4.7,0,.8,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4disc()],
+  [1,0,-4.7,0,.8,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4disc(realsolid)],
 // 1 15 4.7 0 .8 1 0 0 0 1 0 0 0 1 4-4ring1.dat
-  [1,15,4.7,0,.8,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4ring1()],
+  [1,15,4.7,0,.8,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4ring1(realsolid)],
 // 1 15 -4.7 0 .8 1 0 0 0 1 0 0 0 1 4-4ring1.dat
-  [1,15,-4.7,0,.8,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4ring1()],
+  [1,15,-4.7,0,.8,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4ring1(realsolid)],
 // 1 0 4.7 0 .8 .5 0 0 0 1 0 0 0 .5 4-4ring4.dat
-  [1,0,4.7,0,.8,.5,0,0,0,1,0,0,0,.5, ldraw_lib__4_4ring4()],
+  [1,0,4.7,0,.8,.5,0,0,0,1,0,0,0,.5, ldraw_lib__4_4ring4(realsolid)],
 // 1 0 -4.7 0 .8 .5 0 0 0 1 0 0 0 .5 4-4ring4.dat
-  [1,0,-4.7,0,.8,.5,0,0,0,1,0,0,0,.5, ldraw_lib__4_4ring4()],
+  [1,0,-4.7,0,.8,.5,0,0,0,1,0,0,0,.5, ldraw_lib__4_4ring4(realsolid)],
 // 1 0 4.7 0 .8 .25 0 0 0 1 0 0 0 .25 4-4rin10.dat
-  [1,0,4.7,0,.8,.25,0,0,0,1,0,0,0,.25, ldraw_lib__4_4rin10()],
+  [1,0,4.7,0,.8,.25,0,0,0,1,0,0,0,.25, ldraw_lib__4_4rin10(realsolid)],
 // 1 0 -4.7 0 .8 .25 0 0 0 1 0 0 0 .25 4-4rin10.dat
-  [1,0,-4.7,0,.8,.25,0,0,0,1,0,0,0,.25, ldraw_lib__4_4rin10()],
+  [1,0,-4.7,0,.8,.25,0,0,0,1,0,0,0,.25, ldraw_lib__4_4rin10(realsolid)],
 // 1 226 4.7 0 .8 2.75 0 0 0 1 0 0 0 2.75 4-4ndis.dat
-  [1,226,4.7,0,.8,2.75,0,0,0,1,0,0,0,2.75, ldraw_lib__4_4ndis()],
+  [1,226,4.7,0,.8,2.75,0,0,0,1,0,0,0,2.75, ldraw_lib__4_4ndis(realsolid)],
 // 1 226 -4.7 0 .8 2.75 0 0 0 1 0 0 0 2.75 4-4ndis.dat
-  [1,226,-4.7,0,.8,2.75,0,0,0,1,0,0,0,2.75, ldraw_lib__4_4ndis()],
+  [1,226,-4.7,0,.8,2.75,0,0,0,1,0,0,0,2.75, ldraw_lib__4_4ndis(realsolid)],
 // 
 // 1 0 2.6 0 -3 0 0 .35 0 1 0 -.35 0 0 2-4chrd.dat
-  [1,0,2.6,0,-3,0,0,.35,0,1,0,-.35,0,0, ldraw_lib__2_4chrd()],
+  [1,0,2.6,0,-3,0,0,.35,0,1,0,-.35,0,0, ldraw_lib__2_4chrd(realsolid)],
 // 1 0 -2.6 0 -3 0 0 -.35 0 1 0 -.35 0 0 2-4chrd.dat
-  [1,0,-2.6,0,-3,0,0,-.35,0,1,0,-.35,0,0, ldraw_lib__2_4chrd()],
+  [1,0,-2.6,0,-3,0,0,-.35,0,1,0,-.35,0,0, ldraw_lib__2_4chrd(realsolid)],
 // 1 226 2.6 0 -3 0 0 .35 0 1 0 -.35 0 0 2-4ndis.dat
-  [1,226,2.6,0,-3,0,0,.35,0,1,0,-.35,0,0, ldraw_lib__2_4ndis()],
+  [1,226,2.6,0,-3,0,0,.35,0,1,0,-.35,0,0, ldraw_lib__2_4ndis(realsolid)],
 // 1 226 -2.6 0 -3 0 0 -.35 0 1 0 -.35 0 0 2-4ndis.dat
-  [1,226,-2.6,0,-3,0,0,-.35,0,1,0,-.35,0,0, ldraw_lib__2_4ndis()],
+  [1,226,-2.6,0,-3,0,0,-.35,0,1,0,-.35,0,0, ldraw_lib__2_4ndis(realsolid)],
 // 
 // 4 0 2.6 0 -2.65 -2.6 0 -2.65 -2.6 0 -3.35 2.6 0 -3.35
   [4,0,2.6,0,-2.65,-2.6,0,-2.65,-2.6,0,-3.35,2.6,0,-3.35],
@@ -115,5 +116,5 @@ function ldraw_lib__98138p1q() = [
   [3,226,-3.4443,0,-8.3151,0,0,-9,3.4443,0,-8.3151],
 ];
 module ldraw_lib__98138p1q(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__98138p1q(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__98138p1q(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__98138p1q(line=0.2);

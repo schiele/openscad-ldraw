@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <3069bps4.scad>
-function ldraw_lib__3069bps5() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3069bps5(realsolid=false) = [
 // 0 Tile  1 x  2 with SW Left Mini X-Wing Pattern
 // 0 Name: 3069bps5.dat
 // 0 Author: Orion Pobursky [OrionP]
@@ -19,9 +20,9 @@ function ldraw_lib__3069bps5() = [
 // 
 // 
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 3069bps4.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__3069bps4()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__3069bps4(realsolid)],
 // 0
 ];
 module ldraw_lib__3069bps5(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3069bps5(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3069bps5(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3069bps5(line=0.2);

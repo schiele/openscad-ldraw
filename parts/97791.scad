@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/4-4disc.scad>
 use <../p/stud4.scad>
-function ldraw_lib__97791() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__97791(realsolid=false) = [
 // 0 Figure Friends Mixing Bowl
 // 0 Name: 97791.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -343,9 +344,9 @@ function ldraw_lib__97791() = [
 // 2 24 9.27 -11.25 10.453 9.311 -8.25 10.037
   [2,24,9.27,-11.25,10.453,9.311,-8.25,10.037],
 // 1 16 0 3 0 -1 0 0 0 -1.25 0 0 0 1 stud4.dat
-  [1,16,0,3,0,-1,0,0,0,-1.25,0,0,0,1, ldraw_lib__stud4()],
+  [1,16,0,3,0,-1,0,0,0,-1.25,0,0,0,1, ldraw_lib__stud4(realsolid)],
 // 1 16 0 3 0 6 0 0 0 -1 0 0 0 6 4-4disc.dat
-  [1,16,0,3,0,6,0,0,0,-1,0,0,0,6, ldraw_lib__4_4disc()],
+  [1,16,0,3,0,6,0,0,0,-1,0,0,0,6, ldraw_lib__4_4disc(realsolid)],
 // 3 16 0 -0.063 -11.498 0 3 -8 3.0616 3 -7.3912
   [3,16,0,-0.063,-11.498,0,3,-8,3.0616,3,-7.3912],
 // 3 16 0 -0.063 -11.498 3.0616 3 -7.3912 5.749 -0.063 -9.958
@@ -777,5 +778,5 @@ function ldraw_lib__97791() = [
   [4,16,0,0,0,0,0,7.498,-3.749,0,6.493,-6.493,0,3.749],
 ];
 module ldraw_lib__97791(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__97791(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__97791(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__97791(line=0.2);

@@ -3,7 +3,8 @@ use <../p/4-4cylc.scad>
 use <../p/4-4ndis.scad>
 use <../p/knob1.scad>
 use <s/10303s01.scad>
-function ldraw_lib__10303() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__10303(realsolid=false) = [
 // 0 Minifig Arm Bat Wing
 // 0 Name: 10303.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -22,17 +23,17 @@ function ldraw_lib__10303() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\10303s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__10303s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__10303s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 -1 0 0 0 1 s\10303s01.dat
-  [1,16,0,0,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__s__10303s01()],
+  [1,16,0,0,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__s__10303s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 0.70711 -0.70711 0 0.70711 0.70711 knob1.dat
-  [1,16,0,0,0,1,0,0,0,0.70711,-0.70711,0,0.70711,0.70711, ldraw_lib__knob1()],
+  [1,16,0,0,0,1,0,0,0,0.70711,-0.70711,0,0.70711,0.70711, ldraw_lib__knob1(realsolid)],
 // 1 16 -20 0 -12 -2.08472 1 0 0 0 -2.5 1.37984 0 0 4-4ndis.dat
-  [1,16,-20,0,-12,-2.08472,1,0,0,0,-2.5,1.37984,0,0, ldraw_lib__4_4ndis()],
+  [1,16,-20,0,-12,-2.08472,1,0,0,0,-2.5,1.37984,0,0, ldraw_lib__4_4ndis(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -11.7209 0 .5083 -2.08472 -8.27906 0 0 0 -2.5 1.37984 -12.50829 0 4-4cylc.dat
-  [1,16,-11.7209,0,.5083,-2.08472,-8.27906,0,0,0,-2.5,1.37984,-12.50829,0, ldraw_lib__4_4cylc()],
+  [1,16,-11.7209,0,.5083,-2.08472,-8.27906,0,0,0,-2.5,1.37984,-12.50829,0, ldraw_lib__4_4cylc(realsolid)],
 // 
 // 3 16 -32.996 0 10.882 -33.744 1 7.774 -33.744 -1 7.774
   [3,16,-32.996,0,10.882,-33.744,1,7.774,-33.744,-1,7.774],
@@ -151,5 +152,5 @@ function ldraw_lib__10303() = [
   [5,24,-6.723,0,-7.318,-3.225,0,-6.988,-6.97,3.368,-6.586,-6.97,-3.368,-6.586],
 ];
 module ldraw_lib__10303(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__10303(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__10303(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__10303(line=0.2);

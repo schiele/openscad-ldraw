@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <003238d.scad>
 use <3846.scad>
-function ldraw_lib__3846d04() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3846d04(realsolid=false) = [
 // 0 Minifig Shield Triangular with Yellow Trefoils on Blue Sticker
 // 0 Name: 3846d04.dat
 // 0 Author: Alex Taylor [anathema]
@@ -20,11 +21,11 @@ function ldraw_lib__3846d04() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 3846.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3846()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3846(realsolid)],
 // 1 7 0 0 -10 1 0 0 0 0 -1 0 1 0 003238d.dat
-  [1,7,0,0,-10,1,0,0,0,0,-1,0,1,0, ldraw_lib__003238d()],
+  [1,7,0,0,-10,1,0,0,0,0,-1,0,1,0, ldraw_lib__003238d(realsolid)],
 // 0
 ];
 module ldraw_lib__3846d04(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3846d04(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3846d04(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3846d04(line=0.2);

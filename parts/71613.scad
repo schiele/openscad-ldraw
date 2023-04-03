@@ -2,7 +2,8 @@ use <../lib.scad>
 use <30346.scad>
 use <30348.scad>
 use <30406.scad>
-function ldraw_lib__71613() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__71613(realsolid=false) = [
 // 0 Electric Light & Sound Brick  4 x 12 x  2 Laser Drill
 // 0 Name: 71613.dat
 // 0 Author: Jason Mantor [Xanthra47]
@@ -25,12 +26,12 @@ function ldraw_lib__71613() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 30346.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__30346()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__30346(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 30348.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__30348()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__30348(realsolid)],
 // 1 256 0 -3 -30 1 0 0 0 1 0 0 0 1 30406.dat
-  [1,256,0,-3,-30,1,0,0,0,1,0,0,0,1, ldraw_lib__30406()],
+  [1,256,0,-3,-30,1,0,0,0,1,0,0,0,1, ldraw_lib__30406(realsolid)],
 ];
 module ldraw_lib__71613(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__71613(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__71613(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__71613(line=0.2);

@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__88516s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__88516s01(realsolid=false) = [
 // 0 ~Tyre 21/ 48 x 75 Motorcycle with Racing Tread - Segment
 // 0 Name: s\88516s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -683,5 +684,5 @@ function ldraw_lib__s__88516s01() = [
   [5,24,59.3748,102.837,0,45.4455,109.713,0,44.8449,108.741,7.224,58.2845,101.67,-9.5524],
 ];
 module ldraw_lib__s__88516s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__88516s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__88516s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__88516s01(line=0.2);

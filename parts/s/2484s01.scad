@@ -5,7 +5,8 @@ use <../../p/2-4cyli.scad>
 use <../../p/2-4edge.scad>
 use <../../p/rect.scad>
 use <../../p/rect2p.scad>
-function ldraw_lib__s__2484s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__2484s01(realsolid=false) = [
 // 0 ~Car Spring  2 x  2 Wheel Holder Guide
 // 0 Name: s\2484s01.dat
 // 0 Author: William Howard [WilliamH]
@@ -20,21 +21,21 @@ function ldraw_lib__s__2484s01() = [
 // 
 // 
 // 1 16 -14 0 0 0 0 -1.5 0 -10.5 0 1.5 0 0 2-4cyli.dat
-  [1,16,-14,0,0,0,0,-1.5,0,-10.5,0,1.5,0,0, ldraw_lib__2_4cyli()],
+  [1,16,-14,0,0,0,0,-1.5,0,-10.5,0,1.5,0,0, ldraw_lib__2_4cyli(realsolid)],
 // 1 16 -14 0 0 0 0 -1.5 0 1 0 1.5 0 0 2-4edge.dat
-  [1,16,-14,0,0,0,0,-1.5,0,1,0,1.5,0,0, ldraw_lib__2_4edge()],
+  [1,16,-14,0,0,0,0,-1.5,0,1,0,1.5,0,0, ldraw_lib__2_4edge(realsolid)],
 // 1 16 -8 -16 0 0 8 0 0 0 -1.5 1.5 0 0 1-4cyli.dat
-  [1,16,-8,-16,0,0,8,0,0,0,-1.5,1.5,0,0, ldraw_lib__1_4cyli()],
+  [1,16,-8,-16,0,0,8,0,0,0,-1.5,1.5,0,0, ldraw_lib__1_4cyli(realsolid)],
 // 1 16 -8 -16 0 0 8 0 -1.5 0 0 0 0 -1.5 1-16cyli.dat
-  [1,16,-8,-16,0,0,8,0,-1.5,0,0,0,0,-1.5, ldraw_lib__1_16cyli()],
+  [1,16,-8,-16,0,0,8,0,-1.5,0,0,0,0,-1.5, ldraw_lib__1_16cyli(realsolid)],
 // 1 16 -9.5 -16 0 0 1.5 0 0 0 -1.5 1.5 0 0 2-4cyli.dat
-  [1,16,-9.5,-16,0,0,1.5,0,0,0,-1.5,1.5,0,0, ldraw_lib__2_4cyli()],
+  [1,16,-9.5,-16,0,0,1.5,0,0,0,-1.5,1.5,0,0, ldraw_lib__2_4cyli(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -6 -5 0 0 10 0 0 0 5 1.5 0 0 rect.dat
-  [1,16,-6,-5,0,0,10,0,0,0,5,1.5,0,0, ldraw_lib__rect()],
+  [1,16,-6,-5,0,0,10,0,0,0,5,1.5,0,0, ldraw_lib__rect(realsolid)],
 // 1 16 -3 -10 0 3 0 0 0 -1 0 0 0 1.5 rect2p.dat
-  [1,16,-3,-10,0,3,0,0,0,-1,0,0,0,1.5, ldraw_lib__rect2p()],
+  [1,16,-3,-10,0,3,0,0,0,-1,0,0,0,1.5, ldraw_lib__rect2p(realsolid)],
 // 2 24 -14 0 1.5 -6 0 1.5
   [2,24,-14,0,1.5,-6,0,1.5],
 // 2 24 -14 0 -1.5 -6 0 -1.5
@@ -207,5 +208,5 @@ function ldraw_lib__s__2484s01() = [
 // 
 ];
 module ldraw_lib__s__2484s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__2484s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__2484s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__2484s01(line=0.2);

@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/2-4disc.scad>
-function ldraw_lib__s__letrb() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__letrb(realsolid=false) = [
 // 0 ~Mindstorms RCX Letter "R" Background
 // 0 Name: s\letrb.dat
 // 0 Author: John Van Zwieten [jvan]
@@ -16,7 +17,7 @@ function ldraw_lib__s__letrb() = [
 // 
 // 
 // 1 16 2 9 -10 0 0 2 2 0 0 0 0 0 2-4disc.dat
-  [1,16,2,9,-10,0,0,2,2,0,0,0,0,0, ldraw_lib__2_4disc()],
+  [1,16,2,9,-10,0,0,2,2,0,0,0,0,0, ldraw_lib__2_4disc(realsolid)],
 // 4 16 -10 0 -10 -6 5 -10 -6 19 -10 -10 24 -10
   [4,16,-10,0,-10,-6,5,-10,-6,19,-10,-10,24,-10],
 // 4 16 -10 24 -10 -6 19 -10 6 19 -10 10 24 -10
@@ -48,5 +49,5 @@ function ldraw_lib__s__letrb() = [
 // 0
 ];
 module ldraw_lib__s__letrb(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__letrb(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__letrb(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__letrb(line=0.2);

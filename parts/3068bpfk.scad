@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3068bs01.scad>
-function ldraw_lib__3068bpfk() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3068bpfk(realsolid=false) = [
 // 0 Tile  2 x  2 with "5" Blue Pattern
 // 0 Name: 3068bpfk.dat
 // 0 Author: Steffen [Steffen]
@@ -19,7 +20,7 @@ function ldraw_lib__3068bpfk() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3068bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3068bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3068bs01(realsolid)],
 // 4 16 -12.6 0 -0.2 -11.5 0 16.8 -20 0 20 -20 0 -20
   [4,16,-12.6,0,-0.2,-11.5,0,16.8,-20,0,20,-20,0,-20],
 // 3 16 -12.6 0 -0.2 -20 0 -20 -14.2 0 -5.7
@@ -360,5 +361,5 @@ function ldraw_lib__3068bpfk() = [
   [4,16,2.6,0,-4.1,2,0,-2.2,-5.2,0,-4.1,2.6,0,-6.3],
 ];
 module ldraw_lib__3068bpfk(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3068bpfk(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3068bpfk(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3068bpfk(line=0.2);

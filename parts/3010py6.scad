@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3010s01.scad>
-function ldraw_lib__3010py6() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3010py6(realsolid=false) = [
 // 0 Brick  1 x  4 with Metallic Silver Crossed Stripes, Black and Blue Wing and White Triangle Pattern
 // 0 Name: 3010py6.dat
 // 0 Author: Vincent Messenet [Cheenzo]
@@ -17,7 +18,7 @@ function ldraw_lib__3010py6() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3010s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3010s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3010s01(realsolid)],
 // 
 // 3 80 -39.5 16.25 -10 -39.5 23.5 -10 -29.75 16.25 -10
   [3,80,-39.5,16.25,-10,-39.5,23.5,-10,-29.75,16.25,-10],
@@ -117,5 +118,5 @@ function ldraw_lib__3010py6() = [
   [4,16,6.541,16.25,-10,22.25,16.25,-10,22.25,.5,-10,20.75,.5,-10],
 ];
 module ldraw_lib__3010py6(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3010py6(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3010py6(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3010py6(line=0.2);

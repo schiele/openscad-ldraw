@@ -3,7 +3,8 @@ use <../p/1-4cyli.scad>
 use <s/3626cs02.scad>
 use <../p/t04o6250.scad>
 use <../p/t08o6250.scad>
-function ldraw_lib__3626cpnf() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3626cpnf(realsolid=false) = [
 // 0 Minifig Head with Black Bushy Eyebrows, Smile / Angry 2-Sided Pattern
 // 0 Name: 3626cpnf.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -22,27 +23,27 @@ function ldraw_lib__3626cpnf() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3626cs02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626cs02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626cs02(realsolid)],
 // 1 16 0 4 0 -8 0 0 0 -6.4 0 0 0 8 t04o6250.dat
-  [1,16,0,4,0,-8,0,0,0,-6.4,0,0,0,8, ldraw_lib__t04o6250()],
+  [1,16,0,4,0,-8,0,0,0,-6.4,0,0,0,8, ldraw_lib__t04o6250(realsolid)],
 // 1 16 0 4 0 0 0 8 0 -6.4 0 8 0 0 t04o6250.dat
-  [1,16,0,4,0,0,0,8,0,-6.4,0,8,0,0, ldraw_lib__t04o6250()],
+  [1,16,0,4,0,0,0,8,0,-6.4,0,8,0,0, ldraw_lib__t04o6250(realsolid)],
 // 1 16 0 4 0 8 0 0 0 -6.4 0 0 0 -8 t08o6250.dat
-  [1,16,0,4,0,8,0,0,0,-6.4,0,0,0,-8, ldraw_lib__t08o6250()],
+  [1,16,0,4,0,8,0,0,0,-6.4,0,0,0,-8, ldraw_lib__t08o6250(realsolid)],
 // 1 16 0 4 0 0 0 -8 0 -6.4 0 -8 0 0 t04o6250.dat
-  [1,16,0,4,0,0,0,-8,0,-6.4,0,-8,0,0, ldraw_lib__t04o6250()],
+  [1,16,0,4,0,0,0,-8,0,-6.4,0,-8,0,0, ldraw_lib__t04o6250(realsolid)],
 // 1 16 0 4 0 9.19239 0 9.19239 0 13 0 -9.19239 0 9.19239 1-4cyli.dat
-  [1,16,0,4,0,9.19239,0,9.19239,0,13,0,-9.19239,0,9.19239, ldraw_lib__1_4cyli()],
+  [1,16,0,4,0,9.19239,0,9.19239,0,13,0,-9.19239,0,9.19239, ldraw_lib__1_4cyli(realsolid)],
 // 1 16 0 4 0 -9.19239 0 -9.19239 0 13 0 9.19239 0 -9.19239 1-4cyli.dat
-  [1,16,0,4,0,-9.19239,0,-9.19239,0,13,0,9.19239,0,-9.19239, ldraw_lib__1_4cyli()],
+  [1,16,0,4,0,-9.19239,0,-9.19239,0,13,0,9.19239,0,-9.19239, ldraw_lib__1_4cyli(realsolid)],
 // 1 16 0 17 0 -8 0 0 0 6.4 0 0 0 8 t04o6250.dat
-  [1,16,0,17,0,-8,0,0,0,6.4,0,0,0,8, ldraw_lib__t04o6250()],
+  [1,16,0,17,0,-8,0,0,0,6.4,0,0,0,8, ldraw_lib__t04o6250(realsolid)],
 // 1 16 0 17 0 0 0 8 0 6.4 0 8 0 0 t04o6250.dat
-  [1,16,0,17,0,0,0,8,0,6.4,0,8,0,0, ldraw_lib__t04o6250()],
+  [1,16,0,17,0,0,0,8,0,6.4,0,8,0,0, ldraw_lib__t04o6250(realsolid)],
 // 1 16 0 17 0 8 0 0 0 6.4 0 0 0 -8 t04o6250.dat
-  [1,16,0,17,0,8,0,0,0,6.4,0,0,0,-8, ldraw_lib__t04o6250()],
+  [1,16,0,17,0,8,0,0,0,6.4,0,0,0,-8, ldraw_lib__t04o6250(realsolid)],
 // 1 16 0 17 0 0 0 -8 0 6.4 0 -8 0 0 t04o6250.dat
-  [1,16,0,17,0,0,0,-8,0,6.4,0,-8,0,0, ldraw_lib__t04o6250()],
+  [1,16,0,17,0,0,0,-8,0,6.4,0,-8,0,0, ldraw_lib__t04o6250(realsolid)],
 // 
 // 0 // Front Face
 // 4 0 -4.975 6.6 -12.011 -4.975 4 -12.011 -5.98 4.14 -11.339 -5.98 6.82 -11.339
@@ -1094,5 +1095,5 @@ function ldraw_lib__3626cpnf() = [
   [5,24,-9.192,4,9.192,-9.192,17,9.192,-12.011,4,4.975,-4.975,4,12.011],
 ];
 module ldraw_lib__3626cpnf(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3626cpnf(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3626cpnf(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3626cpnf(line=0.2);

@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/4-4disc.scad>
 use <s/3070bs01.scad>
-function ldraw_lib__3070bph0() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3070bph0(realsolid=false) = [
 // 0 Tile  1 x  1 with Spider Pattern
 // 0 Name: 3070bph0.dat
 // 0 Author: Michael Heidemann [mikeheide]
@@ -16,7 +17,7 @@ function ldraw_lib__3070bph0() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3070bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3070bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3070bs01(realsolid)],
 // 3 0 1.5 0 8 -3.5 0 5 -2 0 4.25
   [3,0,1.5,0,8,-3.5,0,5,-2,0,4.25],
 // 4 0 -3.5 0 5 -2.75 0 1.75 -1.75 0 1.75 -2 0 4.25
@@ -218,7 +219,7 @@ function ldraw_lib__3070bph0() = [
 // 4 0 0.2346 0 4.0978 1 0 4.25 1 0 4.75 0.0433 0 4.5597
   [4,0,0.2346,0,4.0978,1,0,4.25,1,0,4.75,0.0433,0,4.5597],
 // 1 8 1 0 2.25 1 0 0 0 1 0 0 0 1 4-4disc.dat
-  [1,8,1,0,2.25,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4disc()],
+  [1,8,1,0,2.25,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4disc(realsolid)],
 // 4 7 1 0 4.25 1 0 3.25 1.3827 0 3.1739 1.7654 0 4.0978
   [4,7,1,0,4.25,1,0,3.25,1.3827,0,3.1739,1.7654,0,4.0978],
 // 4 7 1.7654 0 4.0978 1.3827 0 3.1739 1.7071 0 2.9571 2.4142 0 3.6642
@@ -257,5 +258,5 @@ function ldraw_lib__3070bph0() = [
 // 0
 ];
 module ldraw_lib__3070bph0(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3070bph0(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3070bph0(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3070bph0(line=0.2);

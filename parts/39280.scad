@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <13786p04.scad>
-function ldraw_lib__39280() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__39280(realsolid=false) = [
 // 0 =Animal Cat Standing Looking Forward with Black Eyes, Tan Chin, Nougat Nose and Reddish Brown Stripes on Forehead Pattern
 // 0 Name: 39280.dat
 // 0 Author: Willy Tschager [Holly-Wood]
@@ -17,8 +18,8 @@ function ldraw_lib__39280() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 13786p04.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__13786p04()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__13786p04(realsolid)],
 ];
 module ldraw_lib__39280(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__39280(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__39280(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__39280(line=0.2);

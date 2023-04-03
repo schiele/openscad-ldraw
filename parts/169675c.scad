@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
 use <s/169675cs01.scad>
-function ldraw_lib__169675c() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__169675c(realsolid=false) = [
 // 0 Sticker  2.5 x  3.3 with Three Round Circling Arrows
 // 0 Name: 169675c.dat
 // 0 Author: Ulrich Röder [UR]
@@ -19,10 +20,10 @@ function ldraw_lib__169675c() = [
 // 
 // 0 // Main
 // 1 16 0 -.25 0 2.5 0 0 0 1 0 0 0 2.5 s\169675cs01.dat
-  [1,16,0,-.25,0,2.5,0,0,0,1,0,0,0,2.5, ldraw_lib__s__169675cs01()],
+  [1,16,0,-.25,0,2.5,0,0,0,1,0,0,0,2.5, ldraw_lib__s__169675cs01(realsolid)],
 // 1 16 0 -.25 0 32.5 0 0 0 .25 0 0 0 -25 box5-12.dat
-  [1,16,0,-.25,0,32.5,0,0,0,.25,0,0,0,-25, ldraw_lib__box5_12()],
+  [1,16,0,-.25,0,32.5,0,0,0,.25,0,0,0,-25, ldraw_lib__box5_12(realsolid)],
 ];
 module ldraw_lib__169675c(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__169675c(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__169675c(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__169675c(line=0.2);

@@ -5,7 +5,8 @@ use <../p/stug-1x2.scad>
 use <../p/stug-4x4.scad>
 use <../p/stug-6x1.scad>
 use <../p/t02q3333.scad>
-function ldraw_lib__998() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__998(realsolid=false) = [
 // 0 ~Boat Section Bow  6 x  8 x  3.333 Deck
 // 0 Name: 998.dat
 // 0 Author: Michael Heidemann [mikeheide]
@@ -122,24 +123,24 @@ function ldraw_lib__998() = [
 // 4 16 72 8 50 -72 8 50 -72 0 50 72 0 50
   [4,16,72,8,50,-72,8,50,-72,0,50,72,0,50],
 // 1 16 0 -5 -44 0 -7.5 0 0 0 -7.5 7.5 0 0 t02q3333.dat
-  [1,16,0,-5,-44,0,-7.5,0,0,0,-7.5,7.5,0,0, ldraw_lib__t02q3333()],
+  [1,16,0,-5,-44,0,-7.5,0,0,0,-7.5,7.5,0,0, ldraw_lib__t02q3333(realsolid)],
 // 1 16 0 -5 -51.5 0 0 -2.5 0 5 0 2.5 0 0 4-4cyli.dat
-  [1,16,0,-5,-51.5,0,0,-2.5,0,5,0,2.5,0,0, ldraw_lib__4_4cyli()],
+  [1,16,0,-5,-51.5,0,0,-2.5,0,5,0,2.5,0,0, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 0 -51.5 0 0 -2.5 0 5 0 2.5 0 0 4-4edge.dat
-  [1,16,0,0,-51.5,0,0,-2.5,0,5,0,2.5,0,0, ldraw_lib__4_4edge()],
+  [1,16,0,0,-51.5,0,0,-2.5,0,5,0,2.5,0,0, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 0 -36.5 0 0 -2.5 0 5 0 2.5 0 0 4-4edge.dat
-  [1,16,0,0,-36.5,0,0,-2.5,0,5,0,2.5,0,0, ldraw_lib__4_4edge()],
+  [1,16,0,0,-36.5,0,0,-2.5,0,5,0,2.5,0,0, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 -5 -36.5 0 0 -2.5 0 5 0 2.5 0 0 4-4cyli.dat
-  [1,16,0,-5,-36.5,0,0,-2.5,0,5,0,2.5,0,0, ldraw_lib__4_4cyli()],
+  [1,16,0,-5,-36.5,0,0,-2.5,0,5,0,2.5,0,0, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 8 60 0 0 -1 0 1 0 1 0 0 stug-6x1.dat
-  [1,16,0,8,60,0,0,-1,0,1,0,1,0,0, ldraw_lib__stug_6x1()],
+  [1,16,0,8,60,0,0,-1,0,1,0,1,0,0, ldraw_lib__stug_6x1(realsolid)],
 // 1 16 0 0 10 0 0 -1 0 1 0 1 0 0 stug-4x4.dat
-  [1,16,0,0,10,0,0,-1,0,1,0,1,0,0, ldraw_lib__stug_4x4()],
+  [1,16,0,0,10,0,0,-1,0,1,0,1,0,0, ldraw_lib__stug_4x4(realsolid)],
 // 1 16 -50 0 30 0 0 -1 0 1 0 1 0 0 stug-1x2.dat
-  [1,16,-50,0,30,0,0,-1,0,1,0,1,0,0, ldraw_lib__stug_1x2()],
+  [1,16,-50,0,30,0,0,-1,0,1,0,1,0,0, ldraw_lib__stug_1x2(realsolid)],
 // 1 16 50 0 30 0 0 -1 0 1 0 1 0 0 stug-1x2.dat
-  [1,16,50,0,30,0,0,-1,0,1,0,1,0,0, ldraw_lib__stug_1x2()],
+  [1,16,50,0,30,0,0,-1,0,1,0,1,0,0, ldraw_lib__stug_1x2(realsolid)],
 ];
 module ldraw_lib__998(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__998(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__998(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__998(line=0.2);

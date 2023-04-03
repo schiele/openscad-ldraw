@@ -3,7 +3,8 @@ use <../p/2-4cyli.scad>
 use <../p/4-4disc.scad>
 use <../p/stud4.scad>
 use <../p/t04o6250.scad>
-function ldraw_lib__87991() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__87991(realsolid=false) = [
 // 0 Minifig Hair Tousled with Side Parting
 // 0 Name: 87991.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -4006,29 +4007,29 @@ function ldraw_lib__87991() = [
   [3,16,13.579,14.936,-2.172,14.256,11.893,-5.212,12.011,10.749,-4.975],
 // 0 // inside
 // 1 16 0 -4 0 1 0 0 0 -1 0 0 0 1 stud4.dat
-  [1,16,0,-4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4()],
+  [1,16,0,-4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4(realsolid)],
 // 1 16 0 -4 0 6 0 0 0 -1 0 0 0 -6 4-4disc.dat
-  [1,16,0,-4,0,6,0,0,0,-1,0,0,0,-6, ldraw_lib__4_4disc()],
+  [1,16,0,-4,0,6,0,0,0,-1,0,0,0,-6, ldraw_lib__4_4disc(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 0 13 0 0 0 17 0 0 0 13 2-4cyli.dat
-  [1,16,0,0,0,13,0,0,0,17,0,0,0,13, ldraw_lib__2_4cyli()],
+  [1,16,0,0,0,13,0,0,0,17,0,0,0,13, ldraw_lib__2_4cyli(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 0 0 0 8 0 -6.4 0 8 0 0 t04o6250.dat
-  [1,16,0,0,0,0,0,8,0,-6.4,0,8,0,0, ldraw_lib__t04o6250()],
+  [1,16,0,0,0,0,0,8,0,-6.4,0,8,0,0, ldraw_lib__t04o6250(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 0 -8 0 0 0 -6.4 0 0 0 8 t04o6250.dat
-  [1,16,0,0,0,-8,0,0,0,-6.4,0,0,0,8, ldraw_lib__t04o6250()],
+  [1,16,0,0,0,-8,0,0,0,-6.4,0,0,0,8, ldraw_lib__t04o6250(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 0 0 0 -8 0 -6.4 0 -8 0 0 t04o6250.dat
-  [1,16,0,0,0,0,0,-8,0,-6.4,0,-8,0,0, ldraw_lib__t04o6250()],
+  [1,16,0,0,0,0,0,-8,0,-6.4,0,-8,0,0, ldraw_lib__t04o6250(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 0 8 0 0 0 -6.4 0 0 0 -8 t04o6250.dat
-  [1,16,0,0,0,8,0,0,0,-6.4,0,0,0,-8, ldraw_lib__t04o6250()],
+  [1,16,0,0,0,8,0,0,0,-6.4,0,0,0,-8, ldraw_lib__t04o6250(realsolid)],
 // 0 // neckline
 // 2 24 12.98 18.887 0.014 12.859 19.042 1.785
   [2,24,12.98,18.887,0.014,12.859,19.042,1.785],
@@ -6917,5 +6918,5 @@ function ldraw_lib__87991() = [
 // 
 ];
 module ldraw_lib__87991(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__87991(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__87991(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__87991(line=0.2);

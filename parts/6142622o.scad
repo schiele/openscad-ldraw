@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <6142622p.scad>
-function ldraw_lib__6142622o() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6142622o(realsolid=false) = [
 // 0 Sticker  0.8 x  1.9 with Red Stripe on Black and Yellow Background Right
 // 0 Name: 6142622o.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -17,8 +18,8 @@ function ldraw_lib__6142622o() = [
 // 
 // 
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 6142622p.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__6142622p()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__6142622p(realsolid)],
 ];
 module ldraw_lib__6142622o(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6142622o(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6142622o(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6142622o(line=0.2);

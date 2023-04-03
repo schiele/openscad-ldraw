@@ -2,7 +2,8 @@ use <../../lib.scad>
 use <../../p/2-4con2.scad>
 use <../../p/2-4cylo.scad>
 use <../../p/2-4rin12.scad>
-function ldraw_lib__s__24076s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__24076s01(realsolid=false) = [
 // 0 ~Minifig Headdress Shark with Tail and Fin Half without Patternable Areas
 // 0 Name: s\24076s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -19,13 +20,13 @@ function ldraw_lib__s__24076s01() = [
 // 
 // 
 // 1 16 0 -3 0 0 0 8 0 3 0 -8 0 0 2-4cylo.dat
-  [1,16,0,-3,0,0,0,8,0,3,0,-8,0,0, ldraw_lib__2_4cylo()],
+  [1,16,0,-3,0,0,0,8,0,3,0,-8,0,0, ldraw_lib__2_4cylo(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 3 0 0 0 4.33333 0 -6 0 4.33333 0 0 2-4con2.dat
-  [1,16,0,3,0,0,0,4.33333,0,-6,0,4.33333,0,0, ldraw_lib__2_4con2()],
+  [1,16,0,3,0,0,0,4.33333,0,-6,0,4.33333,0,0, ldraw_lib__2_4con2(realsolid)],
 // 1 16 0 -3 0 0 0 0.66667 0 -1 0 -0.66667 0 0 2-4rin12.dat
-  [1,16,0,-3,0,0,0,0.66667,0,-1,0,-0.66667,0,0, ldraw_lib__2_4rin12()],
+  [1,16,0,-3,0,0,0,0.66667,0,-1,0,-0.66667,0,0, ldraw_lib__2_4rin12(realsolid)],
 // 3 16 0 65.908 30.689 0 58.347 25.119 3.748 66.472 29.084
   [3,16,0,65.908,30.689,0,58.347,25.119,3.748,66.472,29.084],
 // 3 16 3.748 66.472 29.084 0 58.347 25.119 5.804 58.692 21.597
@@ -1510,5 +1511,5 @@ function ldraw_lib__s__24076s01() = [
   [5,24,8.701,22.406,-14.67,11.83,23.7,-10.413,15.247,18.889,-8.333,9.019,27.229,-10.802],
 ];
 module ldraw_lib__s__24076s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__24076s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__24076s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__24076s01(line=0.2);

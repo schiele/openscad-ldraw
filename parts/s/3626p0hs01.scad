@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__3626p0hs01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__3626p0hs01(realsolid=false) = [
 // 0 ~Minifig Head with White and Light Bluish Grey Bushy Eyebrows, Open Mouth Smile Pattern - Half
 // 0 Name: s\3626p0hs01.dat
 // 0 Author: Ulrich Röder [UR]
@@ -538,5 +539,5 @@ function ldraw_lib__s__3626p0hs01() = [
   [3,0,4.788,13.122,-12.047,3.223,14.132,-12.359,4.644,13.36,-12.076],
 ];
 module ldraw_lib__s__3626p0hs01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__3626p0hs01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__3626p0hs01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__3626p0hs01(line=0.2);

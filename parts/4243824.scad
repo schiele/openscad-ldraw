@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <3031.scad>
-function ldraw_lib__4243824() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4243824(realsolid=false) = [
 // 0 ~_Plate  4 x  4 Tan (Obsolete)
 // 0 Name: 4243824.dat
 // 0 Author: Michael Heidemann [mikeheide]
@@ -20,8 +21,8 @@ function ldraw_lib__4243824() = [
 // 0 // colouring of the part (Tan).
 // 
 // 1 19 0 0 0 1 0 0 0 1 0 0 0 1 3031.dat
-  [1,19,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3031()],
+  [1,19,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3031(realsolid)],
 ];
 module ldraw_lib__4243824(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4243824(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4243824(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4243824(line=0.2);

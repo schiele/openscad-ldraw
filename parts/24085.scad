@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/4-4cylo.scad>
 use <../p/4-4ring5.scad>
-function ldraw_lib__24085() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__24085(realsolid=false) = [
 // 0 Minifig Mop
 // 0 Name: 24085.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -20,15 +21,15 @@ function ldraw_lib__24085() = [
 // 
 // 
 // 1 16 0 2.5 0 0.8 0 0 0 -1 0 0 0 0.8 4-4ring5.dat
-  [1,16,0,2.5,0,0.8,0,0,0,-1,0,0,0,0.8, ldraw_lib__4_4ring5()],
+  [1,16,0,2.5,0,0.8,0,0,0,-1,0,0,0,0.8, ldraw_lib__4_4ring5(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 0 4 0 0 0 2.5 0 0 0 4 4-4cylo.dat
-  [1,16,0,0,0,4,0,0,0,2.5,0,0,0,4, ldraw_lib__4_4cylo()],
+  [1,16,0,0,0,4,0,0,0,2.5,0,0,0,4, ldraw_lib__4_4cylo(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 2.5 0 4.8 0 0 0 14.3 0 0 0 4.8 4-4cylo.dat
-  [1,16,0,2.5,0,4.8,0,0,0,14.3,0,0,0,4.8, ldraw_lib__4_4cylo()],
+  [1,16,0,2.5,0,4.8,0,0,0,14.3,0,0,0,4.8, ldraw_lib__4_4cylo(realsolid)],
 // 3 16 11.389 18.308 2.575 11.854 12.551 1.056 12.636 17.825 -0.278
   [3,16,11.389,18.308,2.575,11.854,12.551,1.056,12.636,17.825,-0.278],
 // 3 16 12.636 17.825 -0.278 11.854 12.551 1.056 12.968 12.413 -2.037
@@ -3871,5 +3872,5 @@ function ldraw_lib__24085() = [
   [5,24,-5.92,31.099,2.53,-3.993,39.582,4.866,-3.696,29.217,4.802,-5.795,39.645,3.573],
 ];
 module ldraw_lib__24085(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__24085(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__24085(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__24085(line=0.2);

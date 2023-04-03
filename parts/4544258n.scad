@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__4544258n() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4544258n(realsolid=false) = [
 // 0 Sticker  1.1 x  1.8 with Gold "LRTS"
 // 0 Name: 4544258n.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -17,7 +18,7 @@ function ldraw_lib__4544258n() = [
 // 
 // 
 // 1 16 0 -0.25 0 18 0 0 0 0.25 0 0 0 11 box5-12.dat
-  [1,16,0,-0.25,0,18,0,0,0,0.25,0,0,0,11, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,18,0,0,0,0.25,0,0,0,11, ldraw_lib__box5_12(realsolid)],
 // 0 //
 // 4 82 -8.84 -0.25 -2.326 -9.592 -0.25 -3 -6.531 -0.25 -3 -6.031 -0.25 -2.326
   [4,82,-8.84,-0.25,-2.326,-9.592,-0.25,-3,-6.531,-0.25,-3,-6.031,-0.25,-2.326],
@@ -453,5 +454,5 @@ function ldraw_lib__4544258n() = [
   [3,16,-18,-0.25,11,-2.596,-0.25,2.701,-1.925,-0.25,2.662],
 ];
 module ldraw_lib__4544258n(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4544258n(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4544258n(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4544258n(line=0.2);

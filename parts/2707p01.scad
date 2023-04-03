@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/2707s01.scad>
-function ldraw_lib__2707p01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2707p01(realsolid=false) = [
 // 0 Technic Action Figure Head with Black Shades Pattern
 // 0 Name: 2707p01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -18,9 +19,9 @@ function ldraw_lib__2707p01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2707s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2707s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2707s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\2707s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__2707s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__2707s01(realsolid)],
 // 4 0 -11.7 -31.9 -10.736 -13 -30.5 -8.79 -11.314 -25.358 -11.314 -11.314 -32.08 -11.314
   [4,0,-11.7,-31.9,-10.736,-13,-30.5,-8.79,-11.314,-25.358,-11.314,-11.314,-32.08,-11.314],
 // 4 0 -13.6 -28.5 -7.892 -13.6 -26.9 -7.892 -11.314 -24.702 -11.314 -13 -30.5 -8.79
@@ -267,5 +268,5 @@ function ldraw_lib__2707p01() = [
   [5,24,6.123,-14.28,-14.782,6.123,-18,-14.782,0,-18,-16,11.314,-16,-11.314],
 ];
 module ldraw_lib__2707p01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2707p01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2707p01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2707p01(line=0.2);

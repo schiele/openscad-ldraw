@@ -2,7 +2,8 @@ use <../lib.scad>
 use <s/3008s01.scad>
 use <s/usflags02.scad>
 use <s/usflags03.scad>
-function ldraw_lib__3008p0e() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3008p0e(realsolid=false) = [
 // 0 Brick  1 x  8 with "United States" and Backward US Flag Pattern
 // 0 Name: 3008p0e.dat
 // 0 Author: Orion Pobursky [OrionP]
@@ -19,12 +20,12 @@ function ldraw_lib__3008p0e() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3008s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3008s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3008s01(realsolid)],
 // 
 // 1 16 66.84 3 -10 .16 0 0 0 0 -.16 0 1 0 s\usflags02.dat
-  [1,16,66.84,3,-10,.16,0,0,0,0,-.16,0,1,0, ldraw_lib__s__usflags02()],
+  [1,16,66.84,3,-10,.16,0,0,0,0,-.16,0,1,0, ldraw_lib__s__usflags02(realsolid)],
 // 1 16 49 3 -10 17.84 0 0 0 0 -.16 0 1 0 s\usflags03.dat
-  [1,16,49,3,-10,17.84,0,0,0,0,-.16,0,1,0, ldraw_lib__s__usflags03()],
+  [1,16,49,3,-10,17.84,0,0,0,0,-.16,0,1,0, ldraw_lib__s__usflags03(realsolid)],
 // 
 // 4 0 -75.68 14.364 -10 -78.367 15.626 -10 -77.575 16.608 -10 -74.75 15.234 -10
   [4,0,-75.68,14.364,-10,-78.367,15.626,-10,-77.575,16.608,-10,-74.75,15.234,-10],
@@ -980,5 +981,5 @@ function ldraw_lib__3008p0e() = [
   [3,16,66.84,19,-10,80,24,-10,79,19,-10],
 ];
 module ldraw_lib__3008p0e(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3008p0e(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3008p0e(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3008p0e(line=0.2);

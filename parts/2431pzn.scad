@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/2431s01.scad>
-function ldraw_lib__2431pzn() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2431pzn(realsolid=false) = [
 // 0 Tile  1 x  4 with Black Eyelashes Pattern
 // 0 Name: 2431pzn.dat
 // 0 Author: Vincent Messenet [Cheenzo]
@@ -17,7 +18,7 @@ function ldraw_lib__2431pzn() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2431s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2431s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2431s01(realsolid)],
 // 4 0 25.1 0 -8 26.4 0 -8 26.9 0 -5.6 25.7 0 -5.1
   [4,0,25.1,0,-8,26.4,0,-8,26.9,0,-5.6,25.7,0,-5.1],
 // 4 0 25.7 0 -5.1 26.9 0 -5.6 27.2 0 -3.4 26 0 -2.8
@@ -228,5 +229,5 @@ function ldraw_lib__2431pzn() = [
   [4,16,40,0,-10,25.1,0,-8,-25.1,0,-8,-40,0,-10],
 ];
 module ldraw_lib__2431pzn(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2431pzn(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2431pzn(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2431pzn(line=0.2);

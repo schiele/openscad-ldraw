@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/1-4cyls2.scad>
 use <../../p/1-4edge.scad>
-function ldraw_lib__s__95828s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__95828s01(realsolid=false) = [
 // 0 ~Animal Butterfly with Stud Tube and Pin Hole Half
 // 0 Name: s\95828s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -20,15 +21,15 @@ function ldraw_lib__s__95828s01() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -10.3 0 0 0 2 0 -0.4 0 -2 0 0 1-4cyls2.dat
-  [1,16,0,-10.3,0,0,0,2,0,-0.4,0,-2,0,0, ldraw_lib__1_4cyls2()],
+  [1,16,0,-10.3,0,0,0,2,0,-0.4,0,-2,0,0, ldraw_lib__1_4cyls2(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -10.3 0 0 0 2 0 -0.7 0 2 0 0 1-4cyls2.dat
-  [1,16,0,-10.3,0,0,0,2,0,-0.7,0,2,0,0, ldraw_lib__1_4cyls2()],
+  [1,16,0,-10.3,0,0,0,2,0,-0.7,0,2,0,0, ldraw_lib__1_4cyls2(realsolid)],
 // 1 16 0 -10.3 0 0 0 2 -0.7 1 0 -2 0 0 1-4edge.dat
-  [1,16,0,-10.3,0,0,0,2,-0.7,1,0,-2,0,0, ldraw_lib__1_4edge()],
+  [1,16,0,-10.3,0,0,0,2,-0.7,1,0,-2,0,0, ldraw_lib__1_4edge(realsolid)],
 // 1 16 0 -10.3 0 0 0 2 -0.4 1 0 2 0 0 1-4edge.dat
-  [1,16,0,-10.3,0,0,0,2,-0.4,1,0,2,0,0, ldraw_lib__1_4edge()],
+  [1,16,0,-10.3,0,0,0,2,-0.4,1,0,2,0,0, ldraw_lib__1_4edge(realsolid)],
 // 3 16 1.487 -10.64 -10.047 2.418 -9.921 -9.353 2.304 -10.042 -7.929
   [3,16,1.487,-10.64,-10.047,2.418,-9.921,-9.353,2.304,-10.042,-7.929],
 // 3 16 2.418 -9.921 -9.353 2.648 -9.634 -8.204 2.304 -10.042 -7.929
@@ -613,5 +614,5 @@ function ldraw_lib__s__95828s01() = [
   [5,24,11.819,-6.044,8.683,10.035,-5.751,12.337,11.029,-5.907,11.209,8.843,-5.583,12.937],
 ];
 module ldraw_lib__s__95828s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__95828s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__95828s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__95828s01(line=0.2);

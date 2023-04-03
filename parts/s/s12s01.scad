@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/48/2-4cyli.scad>
 use <../../p/48/2-4disc.scad>
-function ldraw_lib__s__s12s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__s12s01(realsolid=false) = [
 // 0 ~Sticker with Heat Sensitive UFO Drawing Background - Half
 // 0 Name: s\s12s01.dat
 // 0 Author: Nils Schmidt [BlackBrick89]
@@ -18,9 +19,9 @@ function ldraw_lib__s__s12s01() = [
 // 
 // 
 // 1 16 0 0 0 0 0 -19.4181 0 -1 0 -19.4181 0 0 48\2-4disc.dat
-  [1,16,0,0,0,0,0,-19.4181,0,-1,0,-19.4181,0,0, ldraw_lib__48__2_4disc()],
+  [1,16,0,0,0,0,0,-19.4181,0,-1,0,-19.4181,0,0, ldraw_lib__48__2_4disc(realsolid)],
 // 1 16 0 0 0 0 0 -19.4181 0 -0.25 0 -19.4181 0 0 48\2-4cyli.dat
-  [1,16,0,0,0,0,0,-19.4181,0,-0.25,0,-19.4181,0,0, ldraw_lib__48__2_4cyli()],
+  [1,16,0,0,0,0,0,-19.4181,0,-0.25,0,-19.4181,0,0, ldraw_lib__48__2_4cyli(realsolid)],
 // 4 16 -0.555 -0.25 -3.585 0 -0.25 -3.955 0 -0.25 4.925 -0.555 -0.25 4.925
   [4,16,-0.555,-0.25,-3.585,0,-0.25,-3.955,0,-0.25,4.925,-0.555,-0.25,4.925],
 // 4 16 -0.555 -0.25 9.365 -2.22 -0.25 9.365 -2.22 -0.25 8.07 -0.555 -0.25 8.07
@@ -453,5 +454,5 @@ function ldraw_lib__s__s12s01() = [
   [4,16,0,-0.25,-18.385,-1.665,-0.25,-18.2,-2.5346,-0.25,-19.252,0,-0.25,-19.4181],
 ];
 module ldraw_lib__s__s12s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__s12s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__s12s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__s12s01(line=0.2);

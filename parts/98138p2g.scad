@@ -3,7 +3,8 @@ use <../p/4-4disc.scad>
 use <../p/4-4ering.scad>
 use <../p/4-4ndis.scad>
 use <s/98138s01.scad>
-function ldraw_lib__98138p2g() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__98138p2g(realsolid=false) = [
 // 0 Tile  1 x  1 Round with Eye Half Closed and Centred Pupil Pattern
 // 0 Name: 98138p2g.dat
 // 0 Author: Vincent Messenet [Cheenzo]
@@ -24,13 +25,13 @@ function ldraw_lib__98138p2g() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\98138s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01(realsolid)],
 // 1 16 0 0 0 9 0 0 0 1 0 0 0 9 4-4ering.dat
-  [1,16,0,0,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4ering()],
+  [1,16,0,0,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4ering(realsolid)],
 // 1 16 0 0 2.4 2.4 0 0 0 1 0 0 0 2.25 4-4disc.dat
-  [1,16,0,0,2.4,2.4,0,0,0,1,0,0,0,2.25, ldraw_lib__4_4disc()],
+  [1,16,0,0,2.4,2.4,0,0,0,1,0,0,0,2.25, ldraw_lib__4_4disc(realsolid)],
 // 1 0 0 0 2.4 2.4 0 0 0 1 0 0 0 2.25 4-4ndis.dat
-  [1,0,0,0,2.4,2.4,0,0,0,1,0,0,0,2.25, ldraw_lib__4_4ndis()],
+  [1,0,0,0,2.4,2.4,0,0,0,1,0,0,0,2.25, ldraw_lib__4_4ndis(realsolid)],
 // 
 // 3 16 0 0 9 -1.15 0 6.4 0 0 6.55
   [3,16,0,0,9,-1.15,0,6.4,0,0,6.55],
@@ -148,5 +149,5 @@ function ldraw_lib__98138p2g() = [
   [3,0,-2.4,0,.15,-3.65,0,-1.85,-2.4,0,-1.7],
 ];
 module ldraw_lib__98138p2g(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__98138p2g(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__98138p2g(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__98138p2g(line=0.2);

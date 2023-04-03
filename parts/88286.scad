@@ -4,7 +4,8 @@ use <../p/4-4edge.scad>
 use <../p/stud4.scad>
 use <../p/t04o6250.scad>
 use <../p/t08o6250.scad>
-function ldraw_lib__88286() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__88286(realsolid=false) = [
 // 0 Minifig Hair Female Ponytail with Long French Braid
 // 0 Name: 88286.dat
 // 0 Author: Willy Tschager [Holly-Wood]
@@ -25,27 +26,27 @@ function ldraw_lib__88286() = [
 // 0 // Inner shell
 // 
 // 1 16 0 -4 0 6 0 0 0 -1 0 0 0 6 4-4disc.dat
-  [1,16,0,-4,0,6,0,0,0,-1,0,0,0,6, ldraw_lib__4_4disc()],
+  [1,16,0,-4,0,6,0,0,0,-1,0,0,0,6, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 -4 0 1 0 0 0 -1 0 0 0 1 stud4.dat
-  [1,16,0,-4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4()],
+  [1,16,0,-4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4(realsolid)],
 // 1 16 0 -1 0 8 0 0 0 1 0 0 0 8 4-4edge.dat
-  [1,16,0,-1,0,8,0,0,0,1,0,0,0,8, ldraw_lib__4_4edge()],
+  [1,16,0,-1,0,8,0,0,0,1,0,0,0,8, ldraw_lib__4_4edge(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 4 0 0 0 8 0 -8 0 8 0 0 t04o6250.dat
-  [1,16,0,4,0,0,0,8,0,-8,0,8,0,0, ldraw_lib__t04o6250()],
+  [1,16,0,4,0,0,0,8,0,-8,0,8,0,0, ldraw_lib__t04o6250(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 4 0 -8 0 0 0 -8 0 0 0 8 t04o6250.dat
-  [1,16,0,4,0,-8,0,0,0,-8,0,0,0,8, ldraw_lib__t04o6250()],
+  [1,16,0,4,0,-8,0,0,0,-8,0,0,0,8, ldraw_lib__t04o6250(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 4 0 8 0 0 0 -8 0 0 0 -8 t04o6250.dat
-  [1,16,0,4,0,8,0,0,0,-8,0,0,0,-8, ldraw_lib__t04o6250()],
+  [1,16,0,4,0,8,0,0,0,-8,0,0,0,-8, ldraw_lib__t04o6250(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 4 0 -5.65685 0 -5.65685 0 -8 0 -5.65685 0 5.65685 t08o6250.dat
-  [1,16,0,4,0,-5.65685,0,-5.65685,0,-8,0,-5.65685,0,5.65685, ldraw_lib__t08o6250()],
+  [1,16,0,4,0,-5.65685,0,-5.65685,0,-8,0,-5.65685,0,5.65685, ldraw_lib__t08o6250(realsolid)],
 // 
 // 4 16 -3.794 -.619 -9.159 -3.062 -1 -7.391 0 -1 -8 0 -.619 -9.914
   [4,16,-3.794,-.619,-9.159,-3.062,-1,-7.391,0,-1,-8,0,-.619,-9.914],
@@ -5717,5 +5718,5 @@ function ldraw_lib__88286() = [
   [5,24,12.011,4,4.975,12.011,12.888,4.975,9.192,4,9.192,13,10.972,0],
 ];
 module ldraw_lib__88286(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__88286(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__88286(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__88286(line=0.2);

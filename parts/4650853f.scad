@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__4650853f() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4650853f(realsolid=false) = [
 // 0 Sticker  1.9 x  1.9 with Medium Azure Seaplane and Waves on Yellow Background, Heading Left
 // 0 Name: 4650853f.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -17,7 +18,7 @@ function ldraw_lib__4650853f() = [
 // 
 // 
 // 1 16 0 -0.25 0 19 0 0 0 0.25 0 0 0 19 box5-12.dat
-  [1,16,0,-0.25,0,19,0,0,0,0.25,0,0,0,19, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,19,0,0,0,0.25,0,0,0,19, ldraw_lib__box5_12(realsolid)],
 // 4 322 0 -0.25 -9 0 -0.25 -6.8 -0.4 -0.25 -6.9 -0.9 -0.25 -9.7
   [4,322,0,-0.25,-9,0,-0.25,-6.8,-0.4,-0.25,-6.9,-0.9,-0.25,-9.7],
 // 4 322 -0.9 -0.25 -9.7 -0.4 -0.25 -6.9 -1.4 -0.25 -8.1 -2.2 -0.25 -10.2
@@ -468,5 +469,5 @@ function ldraw_lib__4650853f() = [
   [4,14,-6.5,-0.25,0.8,-9.3,-0.25,1.2,-8.1,-0.25,-1.7,-6.7,-0.25,-1.5],
 ];
 module ldraw_lib__4650853f(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4650853f(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4650853f(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4650853f(line=0.2);

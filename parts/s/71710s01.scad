@@ -4,7 +4,8 @@ use <../../p/2-4ndis.scad>
 use <../../p/4-4ring9.scad>
 use <../../p/connhole.scad>
 use <../../p/npeghol8.scad>
-function ldraw_lib__s__71710s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__71710s01(realsolid=false) = [
 // 0 ~Technic Beam with Alternating Holes -  2L Section
 // 0 Name: s\71710s01.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -19,46 +20,46 @@ function ldraw_lib__s__71710s01() = [
 // 
 // 
 // 1 16 0 0 -20 0 -1 0 -1 0 0 0 0 -1 connhole.dat
-  [1,16,0,0,-20,0,-1,0,-1,0,0,0,0,-1, ldraw_lib__connhole()],
+  [1,16,0,0,-20,0,-1,0,-1,0,0,0,0,-1, ldraw_lib__connhole(realsolid)],
 // 1 16 0 -10 10 -1 0 0 0 1 0 0 0 -1 npeghol8.dat
-  [1,16,0,-10,10,-1,0,0,0,1,0,0,0,-1, ldraw_lib__npeghol8()],
+  [1,16,0,-10,10,-1,0,0,0,1,0,0,0,-1, ldraw_lib__npeghol8(realsolid)],
 // 1 16 0 10 10 -1 0 0 0 -1 0 0 0 -1 npeghol8.dat
-  [1,16,0,10,10,-1,0,0,0,-1,0,0,0,-1, ldraw_lib__npeghol8()],
+  [1,16,0,10,10,-1,0,0,0,-1,0,0,0,-1, ldraw_lib__npeghol8(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 -1 connhole.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__connhole()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__connhole(realsolid)],
 // 1 16 0 -10 -10 1 0 0 0 1 0 0 0 1 npeghol8.dat
-  [1,16,0,-10,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__npeghol8()],
+  [1,16,0,-10,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__npeghol8(realsolid)],
 // 1 16 0 10 -10 1 0 0 0 -1 0 0 0 1 npeghol8.dat
-  [1,16,0,10,-10,1,0,0,0,-1,0,0,0,1, ldraw_lib__npeghol8()],
+  [1,16,0,10,-10,1,0,0,0,-1,0,0,0,1, ldraw_lib__npeghol8(realsolid)],
 // 
 // 1 16 10 0 -20 0 -1 0 9 0 0 0 0 9 2-4ndis.dat
-  [1,16,10,0,-20,0,-1,0,9,0,0,0,0,9, ldraw_lib__2_4ndis()],
+  [1,16,10,0,-20,0,-1,0,9,0,0,0,0,9, ldraw_lib__2_4ndis(realsolid)],
 // 1 16 10 0 20 0 -1 0 9 0 0 0 0 -9 2-4ndis.dat
-  [1,16,10,0,20,0,-1,0,9,0,0,0,0,-9, ldraw_lib__2_4ndis()],
+  [1,16,10,0,20,0,-1,0,9,0,0,0,0,-9, ldraw_lib__2_4ndis(realsolid)],
 // 1 16 0 -10 0 -1 0 0 0 1 0 0 0 -1 4-4ring9.dat
-  [1,16,0,-10,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__4_4ring9()],
+  [1,16,0,-10,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__4_4ring9(realsolid)],
 // 1 16 0 -10 0 -10 0 0 0 1 0 0 0 -10 1-8ndis.dat
-  [1,16,0,-10,0,-10,0,0,0,1,0,0,0,-10, ldraw_lib__1_8ndis()],
+  [1,16,0,-10,0,-10,0,0,0,1,0,0,0,-10, ldraw_lib__1_8ndis(realsolid)],
 // 1 16 0 -10 0 -10 0 0 0 1 0 0 0 10 1-8ndis.dat
-  [1,16,0,-10,0,-10,0,0,0,1,0,0,0,10, ldraw_lib__1_8ndis()],
+  [1,16,0,-10,0,-10,0,0,0,1,0,0,0,10, ldraw_lib__1_8ndis(realsolid)],
 // 1 16 0 -10 0 10 0 0 0 1 0 0 0 -10 1-8ndis.dat
-  [1,16,0,-10,0,10,0,0,0,1,0,0,0,-10, ldraw_lib__1_8ndis()],
+  [1,16,0,-10,0,10,0,0,0,1,0,0,0,-10, ldraw_lib__1_8ndis(realsolid)],
 // 1 16 0 -10 0 10 0 0 0 1 0 0 0 10 1-8ndis.dat
-  [1,16,0,-10,0,10,0,0,0,1,0,0,0,10, ldraw_lib__1_8ndis()],
+  [1,16,0,-10,0,10,0,0,0,1,0,0,0,10, ldraw_lib__1_8ndis(realsolid)],
 // 1 16 0 10 0 -1 0 0 0 -1 0 0 0 -1 4-4ring9.dat
-  [1,16,0,10,0,-1,0,0,0,-1,0,0,0,-1, ldraw_lib__4_4ring9()],
+  [1,16,0,10,0,-1,0,0,0,-1,0,0,0,-1, ldraw_lib__4_4ring9(realsolid)],
 // 1 16 0 10 0 -10 0 0 0 -1 0 0 0 -10 1-8ndis.dat
-  [1,16,0,10,0,-10,0,0,0,-1,0,0,0,-10, ldraw_lib__1_8ndis()],
+  [1,16,0,10,0,-10,0,0,0,-1,0,0,0,-10, ldraw_lib__1_8ndis(realsolid)],
 // 1 16 0 10 0 -10 0 0 0 -1 0 0 0 10 1-8ndis.dat
-  [1,16,0,10,0,-10,0,0,0,-1,0,0,0,10, ldraw_lib__1_8ndis()],
+  [1,16,0,10,0,-10,0,0,0,-1,0,0,0,10, ldraw_lib__1_8ndis(realsolid)],
 // 1 16 0 10 0 10 0 0 0 -1 0 0 0 -10 1-8ndis.dat
-  [1,16,0,10,0,10,0,0,0,-1,0,0,0,-10, ldraw_lib__1_8ndis()],
+  [1,16,0,10,0,10,0,0,0,-1,0,0,0,-10, ldraw_lib__1_8ndis(realsolid)],
 // 1 16 0 10 0 10 0 0 0 -1 0 0 0 10 1-8ndis.dat
-  [1,16,0,10,0,10,0,0,0,-1,0,0,0,10, ldraw_lib__1_8ndis()],
+  [1,16,0,10,0,10,0,0,0,-1,0,0,0,10, ldraw_lib__1_8ndis(realsolid)],
 // 1 16 -10 0 -20 0 1 0 -9 0 0 0 0 9 2-4ndis.dat
-  [1,16,-10,0,-20,0,1,0,-9,0,0,0,0,9, ldraw_lib__2_4ndis()],
+  [1,16,-10,0,-20,0,1,0,-9,0,0,0,0,9, ldraw_lib__2_4ndis(realsolid)],
 // 1 16 -10 0 20 0 1 0 -9 0 0 0 0 -9 2-4ndis.dat
-  [1,16,-10,0,20,0,1,0,-9,0,0,0,0,-9, ldraw_lib__2_4ndis()],
+  [1,16,-10,0,20,0,1,0,-9,0,0,0,0,-9, ldraw_lib__2_4ndis(realsolid)],
 // 
 // 4 16 10 -9 11 10 -9 -11 10 0 -11 10 0 11
   [4,16,10,-9,11,10,-9,-11,10,0,-11,10,0,11],
@@ -137,5 +138,5 @@ function ldraw_lib__s__71710s01() = [
   [2,24,10,-10,-10,10,-10,-20],
 ];
 module ldraw_lib__s__71710s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__71710s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__71710s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__71710s01(line=0.2);

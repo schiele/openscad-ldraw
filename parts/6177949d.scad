@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <6177949c.scad>
-function ldraw_lib__6177949d() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6177949d(realsolid=false) = [
 // 0 Sticker  1.5 x  4.0 for Bugatti Windscreen Right
 // 0 Name: 6177949d.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -15,8 +16,8 @@ function ldraw_lib__6177949d() = [
 // 
 // 
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 6177949c.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__6177949c()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__6177949c(realsolid)],
 ];
 module ldraw_lib__6177949d(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6177949d(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6177949d(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6177949d(line=0.2);

@@ -3,7 +3,8 @@ use <../p/2-4cyli.scad>
 use <s/3626bs02.scad>
 use <s/3626bs05.scad>
 use <../p/t04o6250.scad>
-function ldraw_lib__3626bpsl() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3626bpsl(realsolid=false) = [
 // 0 Minifig Head with SW Black Goggles and Chin Strap Pattern
 // 0 Name: 3626bpsl.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -20,19 +21,19 @@ function ldraw_lib__3626bpsl() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3626bs02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626bs02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626bs02(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3626bs05.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626bs05()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626bs05(realsolid)],
 // 1 16 0 4 0 13 0 0 0 13 0 0 0 13 2-4cyli.dat
-  [1,16,0,4,0,13,0,0,0,13,0,0,0,13, ldraw_lib__2_4cyli()],
+  [1,16,0,4,0,13,0,0,0,13,0,0,0,13, ldraw_lib__2_4cyli(realsolid)],
 // 1 16 0 4 0 0 0 8 0 -6.4 0 8 0 0 t04o6250.dat
-  [1,16,0,4,0,0,0,8,0,-6.4,0,8,0,0, ldraw_lib__t04o6250()],
+  [1,16,0,4,0,0,0,8,0,-6.4,0,8,0,0, ldraw_lib__t04o6250(realsolid)],
 // 1 16 0 4 0 -8 0 0 0 -6.4 0 0 0 8 t04o6250.dat
-  [1,16,0,4,0,-8,0,0,0,-6.4,0,0,0,8, ldraw_lib__t04o6250()],
+  [1,16,0,4,0,-8,0,0,0,-6.4,0,0,0,8, ldraw_lib__t04o6250(realsolid)],
 // 1 16 0 17 0 0 0 -8 0 6.4 0 8 0 0 t04o6250.dat
-  [1,16,0,17,0,0,0,-8,0,6.4,0,8,0,0, ldraw_lib__t04o6250()],
+  [1,16,0,17,0,0,0,-8,0,6.4,0,8,0,0, ldraw_lib__t04o6250(realsolid)],
 // 1 16 0 17 0 8 0 0 0 6.4 0 0 0 8 t04o6250.dat
-  [1,16,0,17,0,8,0,0,0,6.4,0,0,0,8, ldraw_lib__t04o6250()],
+  [1,16,0,17,0,8,0,0,0,6.4,0,0,0,8, ldraw_lib__t04o6250(realsolid)],
 // 
 // 4 16 -12.0107 17 -4.9751 -12.0107 4 -4.9751 -13 4 0 -13 17 0
   [4,16,-12.0107,17,-4.9751,-12.0107,4,-4.9751,-13,4,0,-13,17,0],
@@ -842,5 +843,5 @@ function ldraw_lib__3626bpsl() = [
   [4,72,-4.4001,17.45,-12.0132,-4.3213,17,-12.1407,-4.9751,17,-12.0107,-4.5501,17.7,-11.9212],
 ];
 module ldraw_lib__3626bpsl(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3626bpsl(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3626bpsl(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3626bpsl(line=0.2);

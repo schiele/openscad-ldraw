@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__4622303k() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4622303k(realsolid=false) = [
 // 0 Sticker  0.75 x  3.75 Silver "U400" on Orange
 // 0 Name: 4622303k.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -17,7 +18,7 @@ function ldraw_lib__4622303k() = [
 // 
 // 
 // 1 16 0 -0.25 0 -37.5 0 0 0 0.25 0 0 0 -7.5 box5-12.dat
-  [1,16,0,-0.25,0,-37.5,0,0,0,0.25,0,0,0,-7.5, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,-37.5,0,0,0,0.25,0,0,0,-7.5, ldraw_lib__box5_12(realsolid)],
 // 0 //
 // 4 80 -15.8 -0.25 -2.3 -14.4 -0.25 3.5 -17.1 -0.25 3.5 -18.5 -0.25 -2.3
   [4,80,-15.8,-0.25,-2.3,-14.4,-0.25,3.5,-17.1,-0.25,3.5,-18.5,-0.25,-2.3],
@@ -435,5 +436,5 @@ function ldraw_lib__4622303k() = [
   [4,25,-12.6,-0.25,-4.9,-17.7,-0.25,-4.9,-37.5,-0.25,-7.5,4,-0.25,-7.5],
 ];
 module ldraw_lib__4622303k(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4622303k(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4622303k(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4622303k(line=0.2);

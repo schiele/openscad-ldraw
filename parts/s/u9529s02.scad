@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/rect.scad>
-function ldraw_lib__s__u9529s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__u9529s02(realsolid=false) = [
 // 0 ~Forklift  2 x  7 Spring Attachment
 // 0 Name: s\u9529s02.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -224,8 +225,8 @@ function ldraw_lib__s__u9529s02() = [
 // 2 24 -4 -1 -1.5 -3.9347 -3.5 -1.4957
   [2,24,-4,-1,-1.5,-3.9347,-3.5,-1.4957],
 // 1 16 3.556275 -1.969275 0.562175 -0.2616 0 0.1964 -0.09565 -1 0.0957 0.21775 0 0.27805 rect.dat
-  [1,16,3.556275,-1.969275,0.562175,-0.2616,0,0.1964,-0.09565,-1,0.0957,0.21775,0,0.27805, ldraw_lib__rect()],
+  [1,16,3.556275,-1.969275,0.562175,-0.2616,0,0.1964,-0.09565,-1,0.0957,0.21775,0,0.27805, ldraw_lib__rect(realsolid)],
 ];
 module ldraw_lib__s__u9529s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__u9529s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__u9529s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__u9529s02(line=0.2);

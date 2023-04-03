@@ -4,7 +4,8 @@ use <../../p/2-4cyli.scad>
 use <../../p/2-4edge.scad>
 use <../../p/stud.scad>
 use <../../p/stud3a.scad>
-function ldraw_lib__s__3040s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__3040s01(realsolid=false) = [
 // 0 ~Slope Brick 45  2 x  1 without Front Face
 // 0 Name: s\3040s01.dat
 // 0 Author: Orion Pobursky [OrionP]
@@ -25,19 +26,19 @@ function ldraw_lib__s__3040s01() = [
 // 0 // 4 16 10 20 -30 10 0 -10 -10 0 -10 -10 20 -30
 // 
 // 1 16 0 20 -10 1 0 0 0 -1 0 0 0 1 stud3a.dat
-  [1,16,0,20,-10,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud3a()],
+  [1,16,0,20,-10,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud3a(realsolid)],
 // 1 16 0 4 -10 4 0 0 0 4 0 0 0 4 2-4edge.dat
-  [1,16,0,4,-10,4,0,0,0,4,0,0,0,4, ldraw_lib__2_4edge()],
+  [1,16,0,4,-10,4,0,0,0,4,0,0,0,4, ldraw_lib__2_4edge(realsolid)],
 // 1 16 0 4 -10 4 0 0 0 99 4 0 0 -4 2-4edge.dat
-  [1,16,0,4,-10,4,0,0,0,99,4,0,0,-4, ldraw_lib__2_4edge()],
+  [1,16,0,4,-10,4,0,0,0,99,4,0,0,-4, ldraw_lib__2_4edge(realsolid)],
 // 1 16 0 8 -10 0 0 4 0 -4 0 -4 0 0 1-4cyls.dat
-  [1,16,0,8,-10,0,0,4,0,-4,0,-4,0,0, ldraw_lib__1_4cyls()],
+  [1,16,0,8,-10,0,0,4,0,-4,0,-4,0,0, ldraw_lib__1_4cyls(realsolid)],
 // 1 16 0 8 -10 0 0 -4 0 -4 0 -4 0 0 1-4cyls.dat
-  [1,16,0,8,-10,0,0,-4,0,-4,0,-4,0,0, ldraw_lib__1_4cyls()],
+  [1,16,0,8,-10,0,0,-4,0,-4,0,-4,0,0, ldraw_lib__1_4cyls(realsolid)],
 // 1 16 0 4 -10 4 0 0 0 16 0 0 0 4 2-4cyli.dat
-  [1,16,0,4,-10,4,0,0,0,16,0,0,0,4, ldraw_lib__2_4cyli()],
+  [1,16,0,4,-10,4,0,0,0,16,0,0,0,4, ldraw_lib__2_4cyli(realsolid)],
 // 1 16 0 8 -10 4 0 0 0 12 0 0 0 -4 2-4cyli.dat
-  [1,16,0,8,-10,4,0,0,0,12,0,0,0,-4, ldraw_lib__2_4cyli()],
+  [1,16,0,8,-10,4,0,0,0,12,0,0,0,-4, ldraw_lib__2_4cyli(realsolid)],
 // 2 24 6 24 6 -6 24 6
   [2,24,6,24,6,-6,24,6],
 // 2 24 -6 24 6 -6 24 -26
@@ -137,9 +138,9 @@ function ldraw_lib__s__3040s01() = [
 // 4 16 -6 4 -10 6 4 -10 6 20 -26 -6 20 -26
   [4,16,-6,4,-10,6,4,-10,6,20,-26,-6,20,-26],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 stud.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud(realsolid)],
 // 0
 ];
 module ldraw_lib__s__3040s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__3040s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__3040s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__3040s01(line=0.2);

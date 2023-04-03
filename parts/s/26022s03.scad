@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/1-4edge.scad>
 use <../../p/1-4ndis.scad>
-function ldraw_lib__s__26022s03() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__26022s03(realsolid=false) = [
 // 0 ~Train Track Roller Coaster Straight  4 x  8 Middle Section
 // 0 Name: s\26022s03.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -29,9 +30,9 @@ function ldraw_lib__s__26022s03() = [
 // 4 16 18.1765 -9.5 -21.25 18.1765 -9.5 -24.5782 20 -9.5 -24.5782 20 -9.5 -21.25
   [4,16,18.1765,-9.5,-21.25,18.1765,-9.5,-24.5782,20,-9.5,-24.5782,20,-9.5,-21.25],
 // 1 16 20 -6 -20 -4 0 0 0 0 4 0 -1 0 1-4ndis.dat
-  [1,16,20,-6,-20,-4,0,0,0,0,4,0,-1,0, ldraw_lib__1_4ndis()],
+  [1,16,20,-6,-20,-4,0,0,0,0,4,0,-1,0, ldraw_lib__1_4ndis(realsolid)],
 // 1 16 20 -6 -20 -4 0 0 0 0 4 0 -1 0 1-4edge.dat
-  [1,16,20,-6,-20,-4,0,0,0,0,4,0,-1,0, ldraw_lib__1_4edge()],
+  [1,16,20,-6,-20,-4,0,0,0,0,4,0,-1,0, ldraw_lib__1_4edge(realsolid)],
 // 4 16 18.4692 -9.6956 -21.0721 20 -10 -20.7677 20 -10 15.225 18.4692 -9.6956 15.5294
   [4,16,18.4692,-9.6956,-21.0721,20,-10,-20.7677,20,-10,15.225,18.4692,-9.6956,15.5294],
 // 4 16 18.4692 -9.6956 -21.0721 18.4692 -9.6956 15.5294 18.1787 -9.5015 15.7236 18.1765 -9.5 -21.25
@@ -243,5 +244,5 @@ function ldraw_lib__s__26022s03() = [
   [5,24,-12.1964,-9.6956,-21.0544,15.876,-9.6956,21.0544,16.3581,-9.5,21.25,13.8332,-10,20.75],
 ];
 module ldraw_lib__s__26022s03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__26022s03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__26022s03(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__26022s03(line=0.2);

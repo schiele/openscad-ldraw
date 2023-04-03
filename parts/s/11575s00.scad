@@ -2,7 +2,8 @@ use <../../lib.scad>
 use <../../p/4-4cylc.scad>
 use <../../p/box5.scad>
 use <11575s01.scad>
-function ldraw_lib__s__11575s00() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__11575s00(realsolid=false) = [
 // 0 ~Animal Poodle Structure without Patternable Areas
 // 0 Name: s\11575s00.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -19,19 +20,19 @@ function ldraw_lib__s__11575s00() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -5 0.2 3.5 0 0 0 -12 0 0 0 2 box5.dat
-  [1,16,0,-5,0.2,3.5,0,0,0,-12,0,0,0,2, ldraw_lib__box5()],
+  [1,16,0,-5,0.2,3.5,0,0,0,-12,0,0,0,2, ldraw_lib__box5(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -5 22.5 3 0 0 0 -15 0 0 0 2 box5.dat
-  [1,16,0,-5,22.5,3,0,0,0,-15,0,0,0,2, ldraw_lib__box5()],
+  [1,16,0,-5,22.5,3,0,0,0,-15,0,0,0,2, ldraw_lib__box5(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -42 -4.6 2 0 0 0 -12.8 0.1 0 0 2 4-4cylc.dat
-  [1,16,0,-42,-4.6,2,0,0,0,-12.8,0.1,0,0,2, ldraw_lib__4_4cylc()],
+  [1,16,0,-42,-4.6,2,0,0,0,-12.8,0.1,0,0,2, ldraw_lib__4_4cylc(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\11575s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__11575s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__11575s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\11575s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__11575s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__11575s01(realsolid)],
 // 5 24 0 -13.558 -2.505 0 -11.82 -2.925 2.777 -14.442 -2.986 -2.777 -14.442 -2.986
   [5,24,0,-13.558,-2.505,0,-11.82,-2.925,2.777,-14.442,-2.986,-2.777,-14.442,-2.986],
 // 5 24 0 -11.82 -2.925 0 -9.665 -3.674 2.822 -12.639 -3.244 -2.822 -12.639 -3.244
@@ -166,5 +167,5 @@ function ldraw_lib__s__11575s00() = [
   [3,16,0,-5,26,3,-5,24.5,-3,-5,24.5],
 ];
 module ldraw_lib__s__11575s00(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__11575s00(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__11575s00(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__11575s00(line=0.2);

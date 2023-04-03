@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__194065e() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__194065e(realsolid=false) = [
 // 0 Sticker  2 x  1.9 with Red Heart
 // 0 Name: 194065e.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -385,5 +386,5 @@ function ldraw_lib__194065e() = [
   [5,24,5.6,0,-16,5.6,-.25,-16,.16,0,-16.48,8.96,0,-14.88],
 ];
 module ldraw_lib__194065e(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__194065e(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__194065e(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__194065e(line=0.2);

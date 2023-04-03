@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3245cs01.scad>
-function ldraw_lib__3245cpz9() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3245cpz9(realsolid=false) = [
 // 0 Brick  1 x  2 x  2 with Medium Nougat Fur and Dark Brown Belt Pattern
 // 0 Name: 3245cpz9.dat
 // 0 Author: Vincent Messenet [Cheenzo]
@@ -17,7 +18,7 @@ function ldraw_lib__3245cpz9() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3245cs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3245cs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3245cs01(realsolid)],
 // 
 // 4 0 -19.5 15.62 -10 -19.5 16.91 -10 10.73 41.39 -10 19.5 47.2 -10
   [4,0,-19.5,15.62,-10,-19.5,16.91,-10,10.73,41.39,-10,19.5,47.2,-10],
@@ -103,5 +104,5 @@ function ldraw_lib__3245cpz9() = [
   [3,16,-20,0,-10,-19.5,1.15,-10,-19.5,.5,-10],
 ];
 module ldraw_lib__3245cpz9(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3245cpz9(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3245cpz9(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3245cpz9(line=0.2);

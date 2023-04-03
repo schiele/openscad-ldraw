@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/2431s01.scad>
-function ldraw_lib__2431p03() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2431p03(realsolid=false) = [
 // 0 Tile  1 x  4 with Wood Grain Pattern
 // 0 Name: 2431p03.dat
 // 0 Author: Nils Schmidt [BlackBrick89]
@@ -15,7 +16,7 @@ function ldraw_lib__2431p03() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2431s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2431s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2431s01(realsolid)],
 // 4 84 -37.8 0 7.6 -37.8 0 7.4 -36.9 0 6.9 -37.4 0 7.6
   [4,84,-37.8,0,7.6,-37.8,0,7.4,-36.9,0,6.9,-37.4,0,7.6],
 // 4 84 -37.4 0 7.6 -36.9 0 6.9 -35.6 0 6.5 -36 0 7.1
@@ -1240,5 +1241,5 @@ function ldraw_lib__2431p03() = [
   [4,16,25.6,0,.8,25.5,0,.4,26.3,0,1,25.9,0,1],
 ];
 module ldraw_lib__2431p03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2431p03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2431p03(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2431p03(line=0.2);

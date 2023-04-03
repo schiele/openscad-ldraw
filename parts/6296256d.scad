@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__6296256d() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6296256d(realsolid=false) = [
 // 0 Sticker  1.9 x  1.8 with Ignition Key, Switches and Ashtray
 // 0 Name: 6296256d.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -17,7 +18,7 @@ function ldraw_lib__6296256d() = [
 // 
 // 
 // 1 16 0 -.25 0 17.5 0 0 0 .25 0 0 0 18.75 box5-12.dat
-  [1,16,0,-.25,0,17.5,0,0,0,.25,0,0,0,18.75, ldraw_lib__box5_12()],
+  [1,16,0,-.25,0,17.5,0,0,0,.25,0,0,0,18.75, ldraw_lib__box5_12(realsolid)],
 // 4 0 .02 -.25 -7.26 .44 -.25 -7.31 .46 -.25 -6.85 -.49 -.25 -6.85
   [4,0,.02,-.25,-7.26,.44,-.25,-7.31,.46,-.25,-6.85,-.49,-.25,-6.85],
 // 4 0 -1.69 -.25 -3.46 -2 -.25 -4.14 -1.43 -.25 -3.83 -1.17 -.25 -3.31
@@ -960,5 +961,5 @@ function ldraw_lib__6296256d() = [
   [4,226,-17.5,-.25,-18.75,-.23,-.25,-17.35,-.64,-.25,-16.93,-1.18,-.25,-16.38],
 ];
 module ldraw_lib__6296256d(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6296256d(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6296256d(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6296256d(line=0.2);

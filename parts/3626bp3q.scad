@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/3626b37a.scad>
 use <s/3626b37b.scad>
-function ldraw_lib__3626bp3q() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3626bp3q(realsolid=false) = [
 // 0 Minifig Head with Sideburns and Droopy Moustache Brown Pattern
 // 0 Name: 3626bp3q.dat
 // 0 Author: Franklin W. Cain [fwcain]
@@ -25,10 +26,10 @@ function ldraw_lib__3626bp3q() = [
 // 
 // 
 // 1 6 0 0 0 1 0 0 0 1 0 0 0 1 s\3626b37a.dat
-  [1,6,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626b37a()],
+  [1,6,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626b37a(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3626b37b.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626b37b()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626b37b(realsolid)],
 ];
 module ldraw_lib__3626bp3q(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3626bp3q(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3626bp3q(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3626bp3q(line=0.2);

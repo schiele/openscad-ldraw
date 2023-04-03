@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__13786p01s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__13786p01s01(realsolid=false) = [
 // 0 ~Animal Cat Standing Looking Forward with White Chest and Muzzle and Bright Pink Nose Pattern - Chest Filling
 // 0 Name: s\13786p01s01.dat
 // 0 Author: Willy Tschager [Holly-Wood]
@@ -85,5 +86,5 @@ function ldraw_lib__s__13786p01s01() = [
   [4,16,2.909,-16.762,-7.499,3.066,-17.488,-7.713,2.193,-15.723,-7.242,2.601,-16.134,-7.331],
 ];
 module ldraw_lib__s__13786p01s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__13786p01s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__13786p01s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__13786p01s01(line=0.2);

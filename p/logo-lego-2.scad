@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__logo_lego_2() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__logo_lego_2(realsolid=false) = [
 // 0 ~Logo Lego (since 1998)
 // 0 Name: logo-lego-2.dat
 // 0 Author: Damien Roux [Darats]
@@ -1532,5 +1533,5 @@ function ldraw_lib__logo_lego_2() = [
   [4,15,16.681,-4.048,0,13.389,-4.108,0,13.485,-4.039,0,16.66,-3.215,0],
 ];
 module ldraw_lib__logo_lego_2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__logo_lego_2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__logo_lego_2(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__logo_lego_2(line=0.2);

@@ -3,7 +3,8 @@ use <../p/4-4disc.scad>
 use <s/3626bs02.scad>
 use <s/3626bs04.scad>
 use <s/3626bs05.scad>
-function ldraw_lib__3626bp3r() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3626bp3r(realsolid=false) = [
 // 0 Minifig Head with Brown Moustache, Stubble, Eyebrows, Frowning Pattern
 // 0 Name: 3626bp3r.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -20,11 +21,11 @@ function ldraw_lib__3626bp3r() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3626bs02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626bs02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626bs02(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3626bs04.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626bs04()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626bs04(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3626bs05.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626bs05()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626bs05(realsolid)],
 // 
 // 4 0 -4.4 7.4 -12.125 -4.3 7.05 -12.145 -4.8 7 -12.046 -4.975 7.035 -12.011
   [4,0,-4.4,7.4,-12.125,-4.3,7.05,-12.145,-4.8,7,-12.046,-4.975,7.035,-12.011],
@@ -140,9 +141,9 @@ function ldraw_lib__3626bp3r() = [
   [3,0,3.5,14,-12.304,4,14.4,-12.205,3.9,14.1,-12.225],
 // 0 //
 // 1 15 -3.6 8.2 -12.284 0.7 0 0 0 0 -0.7 -0.139 1 0 4-4disc.dat
-  [1,15,-3.6,8.2,-12.284,0.7,0,0,0,0,-0.7,-0.139,1,0, ldraw_lib__4_4disc()],
+  [1,15,-3.6,8.2,-12.284,0.7,0,0,0,0,-0.7,-0.139,1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 15 3.6 8.2 -12.284 0.7 0 0 0 0 -0.7 0.139 1 0 4-4disc.dat
-  [1,15,3.6,8.2,-12.284,0.7,0,0,0,0,-0.7,0.139,1,0, ldraw_lib__4_4disc()],
+  [1,15,3.6,8.2,-12.284,0.7,0,0,0,0,-0.7,0.139,1,0, ldraw_lib__4_4disc(realsolid)],
 // 0 //
 // 4 6 -4.975 5.1 -12.011 -5.4 4.9 -11.727 -5.5 6.3 -11.66 -4.975 6.5 -12.011
   [4,6,-4.975,5.1,-12.011,-5.4,4.9,-11.727,-5.5,6.3,-11.66,-4.975,6.5,-12.011],
@@ -2129,5 +2130,5 @@ function ldraw_lib__3626bp3r() = [
   [3,16,4.4144,19.8282,-10.6576,4.8296,18.5309,-11.6592,4.76,18.531,-11.659],
 ];
 module ldraw_lib__3626bp3r(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3626bp3r(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3626bp3r(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3626bp3r(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__197875a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__197875a(realsolid=false) = [
 // 0 Sticker  1.1 x  4.4 with White "Police"
 // 0 Name: 197875a.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -17,7 +18,7 @@ function ldraw_lib__197875a() = [
 // 
 // 
 // 1 16 0 -0.25 0 44 0 0 0 0.25 0 0 0 11 box5-12.dat
-  [1,16,0,-0.25,0,44,0,0,0,0.25,0,0,0,11, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,44,0,0,0,0.25,0,0,0,11, ldraw_lib__box5_12(realsolid)],
 // 4 15 -4.5 -0.25 9 -7.5 -0.25 9 -7.5 -0.25 -8.5 -4.5 -0.25 -5.5
   [4,15,-4.5,-0.25,9,-7.5,-0.25,9,-7.5,-0.25,-8.5,-4.5,-0.25,-5.5],
 // 4 15 4 -0.25 -5.5 -4.5 -0.25 -5.5 -7.5 -0.25 -8.5 4 -0.25 -8.5
@@ -344,5 +345,5 @@ function ldraw_lib__197875a() = [
   [4,16,-44,-0.25,11,-31.5,-0.25,9,-19.7161,-0.25,8.8407,-17.6,-0.25,9.142],
 ];
 module ldraw_lib__197875a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__197875a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__197875a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__197875a(line=0.2);

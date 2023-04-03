@@ -3,7 +3,8 @@ use <s/821435as01.scad>
 use <s/821435as02.scad>
 use <s/821435as03.scad>
 use <../p/type-swiss721bt-bold-n1.scad>
-function ldraw_lib__821435b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__821435b(realsolid=false) = [
 // 0 Sticker with Red/Green Triangles and Racing Number "1", Left
 // 0 Name: 821435b.dat
 // 0 Author: Ulrich Röder [UR]
@@ -21,19 +22,19 @@ function ldraw_lib__821435b() = [
 // 
 // 0 // Main
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\821435as03.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__821435as03()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__821435as03(realsolid)],
 // 
 // 0 // Green
 // 1 2 0 0 0 -1 0 0 0 1 0 0 0 1 s\821435as01.dat
-  [1,2,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__821435as01()],
+  [1,2,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__821435as01(realsolid)],
 // 
 // 0 // Red
 // 1 4 0 0 0 -1 0 0 0 1 0 0 0 1 s\821435as02.dat
-  [1,4,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__821435as02()],
+  [1,4,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__821435as02(realsolid)],
 // 
 // 0 // White
 // 1 15 -8.5 -.25 -1.25 12 0 0 0 1 0 0 0 12 type-swiss721bt-bold-n1.dat
-  [1,15,-8.5,-.25,-1.25,12,0,0,0,1,0,0,0,12, ldraw_lib__type_swiss721bt_bold_n1()],
+  [1,15,-8.5,-.25,-1.25,12,0,0,0,1,0,0,0,12, ldraw_lib__type_swiss721bt_bold_n1(realsolid)],
 // 4 15 -11.11 -.25 2.638 -11.11 -.25 4.75 -13.063 -.25 6.25 -13.063 -.25 4.75
   [4,15,-11.11,-.25,2.638,-11.11,-.25,4.75,-13.063,-.25,6.25,-13.063,-.25,4.75],
 // 3 15 -13.063 -.25 4.75 -11.11 -.25 .946 -11.11 -.25 2.638
@@ -62,5 +63,5 @@ function ldraw_lib__821435b() = [
   [3,15,-7.822,-.25,4.75,-13.063,-.25,6.25,-11.11,-.25,4.75],
 ];
 module ldraw_lib__821435b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__821435b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__821435b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__821435b(line=0.2);

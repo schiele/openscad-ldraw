@@ -4,7 +4,8 @@ use <../p/logo-shell-e.scad>
 use <../p/logo-shell-h.scad>
 use <../p/logo-shell-s.scad>
 use <s/3004s60.scad>
-function ldraw_lib__004416a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__004416a(realsolid=false) = [
 // 0 Sticker  1.3 x  5.9 with "Shell" and Shell Logo - Logo Left
 // 0 Name: 004416a.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -21,15 +22,15 @@ function ldraw_lib__004416a() = [
 // 
 // 
 // 1 16 0 -0.25 0 59 0 0 0 0.25 0 0 0 13 box5-12.dat
-  [1,16,0,-0.25,0,59,0,0,0,0.25,0,0,0,13, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,59,0,0,0,0.25,0,0,0,13, ldraw_lib__box5_12(realsolid)],
 // 1 15 -42 -.25 0 1 0 0 0 0 1 0 -1 0 s\3004s60.dat
-  [1,15,-42,-.25,0,1,0,0,0,0,1,0,-1,0, ldraw_lib__s__3004s60()],
+  [1,15,-42,-.25,0,1,0,0,0,0,1,0,-1,0, ldraw_lib__s__3004s60(realsolid)],
 // 1 15 -16.2 -.25 -.4 .85 0 0 0 1 0 0 0 .85 logo-shell-s.dat
-  [1,15,-16.2,-.25,-.4,.85,0,0,0,1,0,0,0,.85, ldraw_lib__logo_shell_s()],
+  [1,15,-16.2,-.25,-.4,.85,0,0,0,1,0,0,0,.85, ldraw_lib__logo_shell_s(realsolid)],
 // 1 15 5.2 -.25 -.4 .85 0 0 0 1 0 0 0 .85 logo-shell-h.dat
-  [1,15,5.2,-.25,-.4,.85,0,0,0,1,0,0,0,.85, ldraw_lib__logo_shell_h()],
+  [1,15,5.2,-.25,-.4,.85,0,0,0,1,0,0,0,.85, ldraw_lib__logo_shell_h(realsolid)],
 // 1 15 25.4 -.25 -2.7 .85 0 0 0 1 0 0 0 .85 logo-shell-e.dat
-  [1,15,25.4,-.25,-2.7,.85,0,0,0,1,0,0,0,.85, ldraw_lib__logo_shell_e()],
+  [1,15,25.4,-.25,-2.7,.85,0,0,0,1,0,0,0,.85, ldraw_lib__logo_shell_e(realsolid)],
 // 4 4 36.925 -.25 7.675 36.925 -.25 -8.475 42.875 -.25 -8.475 42.875 -.25 7.675
   [4,4,36.925,-.25,7.675,36.925,-.25,-8.475,42.875,-.25,-8.475,42.875,-.25,7.675],
 // 4 4 46.325 -.25 7.675 46.325 -.25 -8.475 52.275 -.25 -8.475 52.275 -.25 7.675
@@ -87,5 +88,5 @@ function ldraw_lib__004416a() = [
   [3,15,52.275,-.25,-8.475,46.325,-.25,-8.475,59,-.25,-13],
 ];
 module ldraw_lib__004416a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__004416a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__004416a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__004416a(line=0.2);

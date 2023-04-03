@@ -3,7 +3,8 @@ use <../p/1-4chrd.scad>
 use <../p/1-8chrd.scad>
 use <../p/2-4ndis.scad>
 use <s/3068bs01.scad>
-function ldraw_lib__3068bp82() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3068bp82(realsolid=false) = [
 // 0 Tile  2 x  2 with Red "2" and White Striped Wedge Pattern
 // 0 Name: 3068bp82.dat
 // 0 Author: Alex Taylor [anathema]
@@ -18,7 +19,7 @@ function ldraw_lib__3068bp82() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3068bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3068bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3068bs01(realsolid)],
 // 4 4 -6.543 0 -3.239 -6.796 0 -4.013 -1.552 0 -1.966 -6.189 0 -2.486
   [4,4,-6.543,0,-3.239,-6.796,0,-4.013,-1.552,0,-1.966,-6.189,0,-2.486],
 // 4 15 -8 0 -4.6 -6.796 0 -4.013 -6.543 0 -3.239 -7.6 0 -2
@@ -232,13 +233,13 @@ function ldraw_lib__3068bp82() = [
 // 3 15 5.449 0 6.067 5.299 0 5.383 6.6 0 4.8
   [3,15,5.449,0,6.067,5.299,0,5.383,6.6,0,4.8],
 // 1 16 -0.4 0 7.4 7 0 0 0 1 0 0 0 5.7 2-4ndis.dat
-  [1,16,-0.4,0,7.4,7,0,0,0,1,0,0,0,5.7, ldraw_lib__2_4ndis()],
+  [1,16,-0.4,0,7.4,7,0,0,0,1,0,0,0,5.7, ldraw_lib__2_4ndis(realsolid)],
 // 1 15 -0.4 0 7.4 7 0 0 0 1 0 0 0 5.7 1-8chrd.dat
-  [1,15,-0.4,0,7.4,7,0,0,0,1,0,0,0,5.7, ldraw_lib__1_8chrd()],
+  [1,15,-0.4,0,7.4,7,0,0,0,1,0,0,0,5.7, ldraw_lib__1_8chrd(realsolid)],
 // 1 15 -0.4 0 7.4 -7 0 0 0 1 0 0 0 5.7 1-8chrd.dat
-  [1,15,-0.4,0,7.4,-7,0,0,0,1,0,0,0,5.7, ldraw_lib__1_8chrd()],
+  [1,15,-0.4,0,7.4,-7,0,0,0,1,0,0,0,5.7, ldraw_lib__1_8chrd(realsolid)],
 // 1 15 -0.4 0 7.4 -4.95 0 4.95 0 1 0 4.031 0 4.031 1-4chrd.dat
-  [1,15,-0.4,0,7.4,-4.95,0,4.95,0,1,0,4.031,0,4.031, ldraw_lib__1_4chrd()],
+  [1,15,-0.4,0,7.4,-4.95,0,4.95,0,1,0,4.031,0,4.031, ldraw_lib__1_4chrd(realsolid)],
 // 4 15 17 0 17 15.029 0 7.4 20 0 -20 20 0 20
   [4,15,17,0,17,15.029,0,7.4,20,0,-20,20,0,20],
 // 3 15 14.495 0 4.8 20 0 -20 15.029 0 7.4
@@ -286,5 +287,5 @@ function ldraw_lib__3068bp82() = [
 // 0
 ];
 module ldraw_lib__3068bp82(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3068bp82(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3068bp82(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3068bp82(line=0.2);

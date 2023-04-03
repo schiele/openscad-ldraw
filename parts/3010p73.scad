@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3010s01.scad>
-function ldraw_lib__3010p73() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3010p73(realsolid=false) = [
 // 0 Brick  1 x  4 with Lime and Green Triangles and Recycling Arrows Pattern
 // 0 Name: 3010p73.dat
 // 0 Author: Vincent Messenet [Cheenzo]
@@ -17,7 +18,7 @@ function ldraw_lib__3010p73() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3010s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3010s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3010s01(realsolid)],
 // 
 // 4 2 -31.94 20.53 -10 -39.5 21.5 -10 -39.5 23.5 -10 -9 23.5 -10
   [4,2,-31.94,20.53,-10,-39.5,21.5,-10,-39.5,23.5,-10,-9,23.5,-10],
@@ -283,5 +284,5 @@ function ldraw_lib__3010p73() = [
   [3,16,.83,5.5,-10,1.24,8.34,-10,2.05,7.84,-10],
 ];
 module ldraw_lib__3010p73(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3010p73(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3010p73(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3010p73(line=0.2);

@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__20953s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__20953s02(realsolid=false) = [
 // 0 ~Brick Round Sphere  2 x  2 x  1.667 with Stud  - 1/8 Patternable Faces
 // 0 Name: s\20953s02.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -211,5 +212,5 @@ function ldraw_lib__s__20953s02() = [
   [4,16,10.4449,32,8.0147,9.3088,32,9.3088,9.9998,31.142,9.9998,11.2203,31.142,8.6096],
 ];
 module ldraw_lib__s__20953s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__20953s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__20953s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__20953s02(line=0.2);

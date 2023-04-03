@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/3009p17a.scad>
 use <s/3900s01.scad>
-function ldraw_lib__3900p01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3900p01(realsolid=false) = [
 // 0 Minifig Signal Holder with Black "POLICE" and Red Line Pattern
 // 0 Name: 3900p01.dat
 // 0 Author: Stephan Meisinger [smr]
@@ -19,9 +20,9 @@ function ldraw_lib__3900p01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3900s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3900s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3900s01(realsolid)],
 // 1 16 -4.8 -0.15 0.25 0 0.415 0 0 0 -0.415 -0.415 0 0 s\3009p17a.dat
-  [1,16,-4.8,-0.15,0.25,0,0.415,0,0,0,-0.415,-0.415,0,0, ldraw_lib__s__3009p17a()],
+  [1,16,-4.8,-0.15,0.25,0,0.415,0,0,0,-0.415,-0.415,0,0, ldraw_lib__s__3009p17a(realsolid)],
 // 4 16 3.7075 4 13.115 5.3578 4 12.9346 9.8994 4 9.8994 12.9346 4 5.3578
   [4,16,3.7075,4,13.115,5.3578,4,12.9346,9.8994,4,9.8994,12.9346,4,5.3578],
 // 4 16 3.7075 4 13.115 12.9346 4 5.3578 14 4 0 3.7075 4 0.25
@@ -70,5 +71,5 @@ function ldraw_lib__3900p01() = [
   [3,16,3.7075,4,13.115,0,4,14,5.3578,4,12.9346],
 ];
 module ldraw_lib__3900p01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3900p01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3900p01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3900p01(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__s16() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s16(realsolid=false) = [
 // 0 Sticker  1.9 x  1.9 with Red and Blue Stripe
 // 0 Name: s16.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -17,7 +18,7 @@ function ldraw_lib__s16() = [
 // 
 // 
 // 1 16 0 -0.25 0 19 0 0 0 0.25 0 0 0 19 box5-12.dat
-  [1,16,0,-0.25,0,19,0,0,0,0.25,0,0,0,19, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,19,0,0,0,0.25,0,0,0,19, ldraw_lib__box5_12(realsolid)],
 // 4 4 10 -0.25 19 -10 -0.25 19 -10 -0.25 -19 10 -0.25 -19
   [4,4,10,-0.25,19,-10,-0.25,19,-10,-0.25,-19,10,-0.25,-19],
 // 4 15 -10 -0.25 19 -12 -0.25 19 -12 -0.25 -19 -10 -0.25 -19
@@ -34,5 +35,5 @@ function ldraw_lib__s16() = [
   [4,15,19,-0.25,19,17,-0.25,19,17,-0.25,-19,19,-0.25,-19],
 ];
 module ldraw_lib__s16(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s16(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s16(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s16(line=0.2);

@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/1-4cyli.scad>
 use <s/973s01.scad>
-function ldraw_lib__973p97() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__973p97(realsolid=false) = [
 // 0 Minifig Torso Shirt with Red Collar and Spaceship Orbiting Classic Space Helmet Pattern
 // 0 Name: 973p97.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -18,9 +19,9 @@ function ldraw_lib__973p97() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01(realsolid)],
 // 1 0 0 -4 0 4.243 0 -4.243 0 -8 0 -4.243 0 -4.243 1-4cyli.dat
-  [1,0,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli()],
+  [1,0,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli(realsolid)],
 // 4 0 -14.8 11 -10 -15.1 13.1 -10 -12.4 8.5 -10 -12.9 7.7 -10
   [4,0,-14.8,11,-10,-15.1,13.1,-10,-12.4,8.5,-10,-12.9,7.7,-10],
 // 4 0 -12.9 7.7 -10 -12.4 8.5 -10 -10.3 5.1 -10 -10.8 4.5 -10
@@ -631,5 +632,5 @@ function ldraw_lib__973p97() = [
   [4,16,-19,32,10,-12.4,8.5,10,12.4,8.5,10,19,32,10],
 ];
 module ldraw_lib__973p97(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__973p97(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__973p97(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__973p97(line=0.2);

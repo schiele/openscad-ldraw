@@ -3,7 +3,8 @@ use <../p/1-4cyli.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4ring2.scad>
 use <s/973s01.scad>
-function ldraw_lib__973p1r() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__973p1r(realsolid=false) = [
 // 0 Minifig Torso with Blue Striped Dungarees Pattern
 // 0 Name: 973p1r.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -18,10 +19,10 @@ function ldraw_lib__973p1r() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01(realsolid)],
 // 0 // neck mark
 // 1 0 0 -4 0 4.243 0 -4.243 0 -8 0 -4.243 0 -4.243 1-4cyli.dat
-  [1,0,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli()],
+  [1,0,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli(realsolid)],
 // 0 // plain back
 // 4 16 -19 32 10 -19 29 10 19 29 10 19 32 10
   [4,16,-19,32,10,-19,29,10,19,29,10,19,32,10],
@@ -31,15 +32,15 @@ function ldraw_lib__973p1r() = [
   [4,16,12,0,10,14.345,2,10,-14.345,2,10,-12,0,10],
 // 0 // front pattern
 // 1 16 10.6 10.4 -10 1.2 0 0 0 0 -1.2 0 1.2 0 4-4disc.dat
-  [1,16,10.6,10.4,-10,1.2,0,0,0,0,-1.2,0,1.2,0, ldraw_lib__4_4disc()],
+  [1,16,10.6,10.4,-10,1.2,0,0,0,0,-1.2,0,1.2,0, ldraw_lib__4_4disc(realsolid)],
 // 1 16 -10.2 10.2 -10 1.2 0 0 0 0 -1.2 0 1.2 0 4-4disc.dat
-  [1,16,-10.2,10.2,-10,1.2,0,0,0,0,-1.2,0,1.2,0, ldraw_lib__4_4disc()],
+  [1,16,-10.2,10.2,-10,1.2,0,0,0,0,-1.2,0,1.2,0, ldraw_lib__4_4disc(realsolid)],
 // 1 1 -10.2 10.2 -10 0.6 0 0 0 0 -0.6 0 0.6 0 4-4ring2.dat
-  [1,1,-10.2,10.2,-10,0.6,0,0,0,0,-0.6,0,0.6,0, ldraw_lib__4_4ring2()],
+  [1,1,-10.2,10.2,-10,0.6,0,0,0,0,-0.6,0,0.6,0, ldraw_lib__4_4ring2(realsolid)],
 // 1 1 10.6 10.4 -10 0.6 0 0 0 0 -0.6 0 0.6 0 4-4ring2.dat
-  [1,1,10.6,10.4,-10,0.6,0,0,0,0,-0.6,0,0.6,0, ldraw_lib__4_4ring2()],
+  [1,1,10.6,10.4,-10,0.6,0,0,0,0,-0.6,0,0.6,0, ldraw_lib__4_4ring2(realsolid)],
 // 1 16 -0.2 19.2 -10 1.1 0 0 0 0 -1.1 0 1.1 0 4-4disc.dat
-  [1,16,-0.2,19.2,-10,1.1,0,0,0,0,-1.1,0,1.1,0, ldraw_lib__4_4disc()],
+  [1,16,-0.2,19.2,-10,1.1,0,0,0,0,-1.1,0,1.1,0, ldraw_lib__4_4disc(realsolid)],
 // 4 1 -6.6 20 -10 -6.6 26.2 -10 -5.2 26.2 -10 -5.2 20.42 -10
   [4,1,-6.6,20,-10,-6.6,26.2,-10,-5.2,26.2,-10,-5.2,20.42,-10],
 // 4 1 -4.4 26.2 -10 -2.8 26.2 -10 -2.8 21.14 -10 -4.4 20.66 -10
@@ -491,5 +492,5 @@ function ldraw_lib__973p1r() = [
 // 0 //
 ];
 module ldraw_lib__973p1r(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__973p1r(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__973p1r(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__973p1r(line=0.2);

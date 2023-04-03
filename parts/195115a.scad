@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__195115a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__195115a(realsolid=false) = [
 // 0 Sticker  2.3 x  3.9 with Hamburger
 // 0 Name: 195115a.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -17,7 +18,7 @@ function ldraw_lib__195115a() = [
 // 
 // 
 // 1 16 0 -0.25 0 39 0 0 0 0.25 0 0 0 23 box5-12.dat
-  [1,16,0,-0.25,0,39,0,0,0,0.25,0,0,0,23, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,39,0,0,0,0.25,0,0,0,23, ldraw_lib__box5_12(realsolid)],
 // 0 BFC NOCLIP
   [0,"BFC","NOCLIP"],
 // 4 0 1.6 -0.25 16.2 1.1 -0.25 15.7 1.6 -0.25 15 2.7 -0.25 16.2
@@ -696,5 +697,5 @@ function ldraw_lib__195115a() = [
   [3,16,39,-0.25,23,2.8,-0.25,18.3,7.2,-0.25,17.8],
 ];
 module ldraw_lib__195115a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__195115a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__195115a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__195115a(line=0.2);

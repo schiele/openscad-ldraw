@@ -3,7 +3,8 @@ use <../p/1-4chrd.scad>
 use <../p/2-4ndis.scad>
 use <../p/2-4ring4.scad>
 use <s/2207s01.scad>
-function ldraw_lib__2207p01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2207p01(realsolid=false) = [
 // 0 Duplo Building  6 x  8 x  6 with Front Windows with Firehouse Pattern
 // 0 Name: 2207p01.dat
 // 0 Author: Tim Lampmann [L4mpi]
@@ -26,7 +27,7 @@ function ldraw_lib__2207p01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2207s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2207s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2207s01(realsolid)],
 // 
 // 3 16 42 19.5 -120 64.5 19.5 -120 160 0 -120
   [3,16,42,19.5,-120,64.5,19.5,-120,160,0,-120],
@@ -54,21 +55,21 @@ function ldraw_lib__2207p01() = [
   [3,16,-14,84,-120,-5,84,-120,-42,64.5,-120],
 // 
 // 1 16 42 42 -120 0 0 22.5 22.5 0 0 0 1 0 2-4ndis.dat
-  [1,16,42,42,-120,0,0,22.5,22.5,0,0,0,1,0, ldraw_lib__2_4ndis()],
+  [1,16,42,42,-120,0,0,22.5,22.5,0,0,0,1,0, ldraw_lib__2_4ndis(realsolid)],
 // 1 16 -42 42 -120 0 0 -22.5 22.5 0 0 0 1 0 2-4ndis.dat
-  [1,16,-42,42,-120,0,0,-22.5,22.5,0,0,0,1,0, ldraw_lib__2_4ndis()],
+  [1,16,-42,42,-120,0,0,-22.5,22.5,0,0,0,1,0, ldraw_lib__2_4ndis(realsolid)],
 // 1 14 -42 42 -120 -18 0 0 0 0 -18 0 1 0 1-4chrd.dat
-  [1,14,-42,42,-120,-18,0,0,0,0,-18,0,1,0, ldraw_lib__1_4chrd()],
+  [1,14,-42,42,-120,-18,0,0,0,0,-18,0,1,0, ldraw_lib__1_4chrd(realsolid)],
 // 1 14 -42 42 -120 -18 0 0 0 0 18 0 1 0 1-4chrd.dat
-  [1,14,-42,42,-120,-18,0,0,0,0,18,0,1,0, ldraw_lib__1_4chrd()],
+  [1,14,-42,42,-120,-18,0,0,0,0,18,0,1,0, ldraw_lib__1_4chrd(realsolid)],
 // 1 14 42 42 -120 18 0 0 0 0 -18 0 1 0 1-4chrd.dat
-  [1,14,42,42,-120,18,0,0,0,0,-18,0,1,0, ldraw_lib__1_4chrd()],
+  [1,14,42,42,-120,18,0,0,0,0,-18,0,1,0, ldraw_lib__1_4chrd(realsolid)],
 // 1 14 42 42 -120 18 0 0 0 0 18 0 1 0 1-4chrd.dat
-  [1,14,42,42,-120,18,0,0,0,0,18,0,1,0, ldraw_lib__1_4chrd()],
+  [1,14,42,42,-120,18,0,0,0,0,18,0,1,0, ldraw_lib__1_4chrd(realsolid)],
 // 1 0 -42 42 -120 0 0 -4.5 -4.5 0 0 0 1 0 2-4ring4.dat
-  [1,0,-42,42,-120,0,0,-4.5,-4.5,0,0,0,1,0, ldraw_lib__2_4ring4()],
+  [1,0,-42,42,-120,0,0,-4.5,-4.5,0,0,0,1,0, ldraw_lib__2_4ring4(realsolid)],
 // 1 0 42 42 -120 0 0 4.5 -4.5 0 0 0 1 0 2-4ring4.dat
-  [1,0,42,42,-120,0,0,4.5,-4.5,0,0,0,1,0, ldraw_lib__2_4ring4()],
+  [1,0,42,42,-120,0,0,4.5,-4.5,0,0,0,1,0, ldraw_lib__2_4ring4(realsolid)],
 // 
 // 4 4 -30.27 52.31 -120 -31 52.5 -120 -30.66 52.67 -120 -30.02 52.88 -120
   [4,4,-30.27,52.31,-120,-31,52.5,-120,-30.66,52.67,-120,-30.02,52.88,-120],
@@ -1479,5 +1480,5 @@ function ldraw_lib__2207p01() = [
   [3,0,42.14,37.76,-120,36.99,42.48,-120,42.99,38.69,-120],
 ];
 module ldraw_lib__2207p01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2207p01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2207p01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2207p01(line=0.2);

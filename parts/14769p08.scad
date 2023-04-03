@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/1-8chrd.scad>
 use <s/14769s01.scad>
-function ldraw_lib__14769p08() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__14769p08(realsolid=false) = [
 // 0 Tile  2 x  2 Round with Round Underside Stud with Green Foliage Pattern
 // 0 Name: 14769p08.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -18,15 +19,15 @@ function ldraw_lib__14769p08() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\14769s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__14769s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__14769s01(realsolid)],
 // 1 16 0 0 0 18.47759 0 7.65367 0 1 0 -7.65367 0 18.47759 1-8chrd.dat
-  [1,16,0,0,0,18.47759,0,7.65367,0,1,0,-7.65367,0,18.47759, ldraw_lib__1_8chrd()],
+  [1,16,0,0,0,18.47759,0,7.65367,0,1,0,-7.65367,0,18.47759, ldraw_lib__1_8chrd(realsolid)],
 // 1 16 0 0 0 -7.65367 0 18.47759 0 1 0 -18.47759 0 -7.65367 1-8chrd.dat
-  [1,16,0,0,0,-7.65367,0,18.47759,0,1,0,-18.47759,0,-7.65367, ldraw_lib__1_8chrd()],
+  [1,16,0,0,0,-7.65367,0,18.47759,0,1,0,-18.47759,0,-7.65367, ldraw_lib__1_8chrd(realsolid)],
 // 1 16 0 0 0 7.65367 0 -18.47759 0 1 0 18.47759 0 7.65367 1-8chrd.dat
-  [1,16,0,0,0,7.65367,0,-18.47759,0,1,0,18.47759,0,7.65367, ldraw_lib__1_8chrd()],
+  [1,16,0,0,0,7.65367,0,-18.47759,0,1,0,18.47759,0,7.65367, ldraw_lib__1_8chrd(realsolid)],
 // 1 16 0 0 0 -18.47759 0 -7.65367 0 1 0 7.65367 0 -18.47759 1-8chrd.dat
-  [1,16,0,0,0,-18.47759,0,-7.65367,0,1,0,7.65367,0,-18.47759, ldraw_lib__1_8chrd()],
+  [1,16,0,0,0,-18.47759,0,-7.65367,0,1,0,7.65367,0,-18.47759, ldraw_lib__1_8chrd(realsolid)],
 // 4 15 4.6 0 14.6 3.6387 0 15.155 3.49 0 14.6 3.6387 0 14.045
   [4,15,4.6,0,14.6,3.6387,0,15.155,3.49,0,14.6,3.6387,0,14.045],
 // 4 15 4.6 0 14.6 3.6387 0 14.045 4.045 0 13.6387 4.6 0 13.49
@@ -1200,5 +1201,5 @@ function ldraw_lib__14769p08() = [
   [4,16,-1.48,0,16.56,7.6537,0,18.4776,-7.654,0,18.478,-2.4,0,16.44],
 ];
 module ldraw_lib__14769p08(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__14769p08(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__14769p08(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__14769p08(line=0.2);

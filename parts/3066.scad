@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3066s01.scad>
-function ldraw_lib__3066() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3066(realsolid=false) = [
 // 0 Brick  1 x  4 without Centre Studs
 // 0 Name: 3066.dat
 // 0 Author: James Jessiman
@@ -18,10 +19,10 @@ function ldraw_lib__3066() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3066s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3066s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3066s01(realsolid)],
 // 4 16 -40 0 -10 -40 24 -10 40 24 -10 40 0 -10
   [4,16,-40,0,-10,-40,24,-10,40,24,-10,40,0,-10],
 ];
 module ldraw_lib__3066(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3066(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3066(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3066(line=0.2);

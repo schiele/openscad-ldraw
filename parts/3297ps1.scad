@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/48/1-4ndis.scad>
 use <s/3297s01.scad>
-function ldraw_lib__3297ps1() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3297ps1(realsolid=false) = [
 // 0 Slope Brick 33  3 x  4 with SW Grille Pattern
 // 0 Name: 3297ps1.dat
 // 0 Author: Franklin W. Cain [fwcain]
@@ -26,7 +27,7 @@ function ldraw_lib__3297ps1() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3297s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3297s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3297s01(realsolid)],
 // 
 // 3 8 21.612 2.843 -15.686 23.75 3.25 -16.5 23.75 3.187 -16.373
   [3,8,21.612,2.843,-15.686,23.75,3.25,-16.5,23.75,3.187,-16.373],
@@ -172,9 +173,9 @@ function ldraw_lib__3297ps1() = [
   [4,8,-35.195,7.152,-24.304,-35.41,7.75,-25.5,-24.25,7.75,-25.5,-24.25,6.5,-23],
 // 
 // 1 16 0 8 -26 -36 0 0 0 1 -6.75 0 0 13.5 48\1-4ndis.dat
-  [1,16,0,8,-26,-36,0,0,0,1,-6.75,0,0,13.5, ldraw_lib__48__1_4ndis()],
+  [1,16,0,8,-26,-36,0,0,0,1,-6.75,0,0,13.5, ldraw_lib__48__1_4ndis(realsolid)],
 // 1 16 0 8 -26 36 0 0 0 1 -6.75 0 0 13.5 48\1-4ndis.dat
-  [1,16,0,8,-26,36,0,0,0,1,-6.75,0,0,13.5, ldraw_lib__48__1_4ndis()],
+  [1,16,0,8,-26,36,0,0,0,1,-6.75,0,0,13.5, ldraw_lib__48__1_4ndis(realsolid)],
 // 3 16 -36 17 -44 -40 20 -50 -36 18.5 -47
   [3,16,-36,17,-44,-40,20,-50,-36,18.5,-47],
 // 3 16 -36 15.5 -41 -40 20 -50 -36 17 -44
@@ -693,5 +694,5 @@ function ldraw_lib__3297ps1() = [
   [4,7,8.25,2,-14,13.647,2,-14,9.187,1.721,-13.443,7.75,1.75,-13.5],
 ];
 module ldraw_lib__3297ps1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3297ps1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3297ps1(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3297ps1(line=0.2);

@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__973p7ma() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__973p7ma(realsolid=false) = [
 // 0 ~"POLICE" White for Minifig Torso
 // 0 Name: s\973p7ma.dat
 // 0 Author: Nils Schmidt [BlackBrick89]
@@ -495,5 +496,5 @@ function ldraw_lib__s__973p7ma() = [
   [4,16,12.3935,0,8.50325,12.608,0,8.252001,18.083,0,7.911,18.317,0,7.932],
 ];
 module ldraw_lib__s__973p7ma(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__973p7ma(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__973p7ma(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__973p7ma(line=0.2);

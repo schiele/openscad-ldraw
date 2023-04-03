@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__4208s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__4208s02(realsolid=false) = [
 // 0 ~Hose Reel  2 x  4 x  2 Drum - Teeth Segment
 // 0 Name: s\4208s02.dat
 // 0 Author: N. W. Perry [Plastikean]
@@ -342,5 +343,5 @@ function ldraw_lib__s__4208s02() = [
   [5,24,-4.03,-12.808,9.589,-5,-11.335,9.823,-4.03,-11.314,11.314,-5,-12.62,8.109],
 ];
 module ldraw_lib__s__4208s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__4208s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__4208s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__4208s02(line=0.2);

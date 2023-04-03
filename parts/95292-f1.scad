@@ -2,7 +2,8 @@ use <../lib.scad>
 use <2909.scad>
 use <2910.scad>
 use <u9411-f1.scad>
-function ldraw_lib__95292_f1() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__95292_f1(realsolid=false) = [
 // 0 Technic Shock Absorber  9L Extra Hard (Extended)
 // 0 Name: 95292-f1.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -17,12 +18,12 @@ function ldraw_lib__95292_f1() = [
 // 
 // 
 // 1 16 0 50 0 1 0 0 0 1 0 0 0 1 2909.dat
-  [1,16,0,50,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2909()],
+  [1,16,0,50,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2909(realsolid)],
 // 1 16 0 170 0 1 0 0 0 1 0 0 0 1 2910.dat
-  [1,16,0,170,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2910()],
+  [1,16,0,170,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2910(realsolid)],
 // 1 494 0 40 0 -1 0 0 0 1 0 0 0 1 u9411-f1.dat
-  [1,494,0,40,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__u9411_f1()],
+  [1,494,0,40,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__u9411_f1(realsolid)],
 ];
 module ldraw_lib__95292_f1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__95292_f1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__95292_f1(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__95292_f1(line=0.2);

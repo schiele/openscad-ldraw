@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/2-4cylo.scad>
 use <../p/2-4disc.scad>
 use <../p/box5-4a.scad>
-function ldraw_lib__60602() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__60602(realsolid=false) = [
 // 0 Glass for Window  1 x  2 x  3
 // 0 Name: 60602.dat
 // 0 Author: Alex Taylor [anathema]
@@ -18,21 +19,21 @@ function ldraw_lib__60602() = [
 // 
 // 
 // 1 16 2 33.5 -5 0 14.5 0 -29.5 0 0 0 0 2 box5-4a.dat
-  [1,16,2,33.5,-5,0,14.5,0,-29.5,0,0,0,0,2, ldraw_lib__box5_4a()],
+  [1,16,2,33.5,-5,0,14.5,0,-29.5,0,0,0,0,2, ldraw_lib__box5_4a(realsolid)],
 // 1 16 -2 33.5 -5 0 -14.5 0 29.5 0 0 0 0 2 box5-4a.dat
-  [1,16,-2,33.5,-5,0,-14.5,0,29.5,0,0,0,0,2, ldraw_lib__box5_4a()],
+  [1,16,-2,33.5,-5,0,-14.5,0,29.5,0,0,0,0,2, ldraw_lib__box5_4a(realsolid)],
 // 1 16 0 4 -7 2 0 0 0 0 -2 0 4 0 2-4cylo.dat
-  [1,16,0,4,-7,2,0,0,0,0,-2,0,4,0, ldraw_lib__2_4cylo()],
+  [1,16,0,4,-7,2,0,0,0,0,-2,0,4,0, ldraw_lib__2_4cylo(realsolid)],
 // 1 16 0 4 -7 2 0 0 0 0 -2 0 1 0 2-4disc.dat
-  [1,16,0,4,-7,2,0,0,0,0,-2,0,1,0, ldraw_lib__2_4disc()],
+  [1,16,0,4,-7,2,0,0,0,0,-2,0,1,0, ldraw_lib__2_4disc(realsolid)],
 // 1 16 0 4 -3 -2 0 0 0 0 -2 0 -1 0 2-4disc.dat
-  [1,16,0,4,-3,-2,0,0,0,0,-2,0,-1,0, ldraw_lib__2_4disc()],
+  [1,16,0,4,-3,-2,0,0,0,0,-2,0,-1,0, ldraw_lib__2_4disc(realsolid)],
 // 1 16 0 63 -7 -2 0 0 0 0 2 0 4 0 2-4cylo.dat
-  [1,16,0,63,-7,-2,0,0,0,0,2,0,4,0, ldraw_lib__2_4cylo()],
+  [1,16,0,63,-7,-2,0,0,0,0,2,0,4,0, ldraw_lib__2_4cylo(realsolid)],
 // 1 16 0 63 -7 -2 0 0 0 0 2 0 1 0 2-4disc.dat
-  [1,16,0,63,-7,-2,0,0,0,0,2,0,1,0, ldraw_lib__2_4disc()],
+  [1,16,0,63,-7,-2,0,0,0,0,2,0,1,0, ldraw_lib__2_4disc(realsolid)],
 // 1 16 0 63 -3 2 0 0 0 0 2 0 -1 0 2-4disc.dat
-  [1,16,0,63,-3,2,0,0,0,0,2,0,-1,0, ldraw_lib__2_4disc()],
+  [1,16,0,63,-3,2,0,0,0,0,2,0,-1,0, ldraw_lib__2_4disc(realsolid)],
 // 2 24 2 4 -3 2 4 -7
   [2,24,2,4,-3,2,4,-7],
 // 2 24 -2 4 -3 -2 4 -7
@@ -48,5 +49,5 @@ function ldraw_lib__60602() = [
 // 0
 ];
 module ldraw_lib__60602(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__60602(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__60602(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__60602(line=0.2);

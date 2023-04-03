@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__49656s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__49656s02(realsolid=false) = [
 // 0 ~Rock  1 x  1 Geode Matrix
 // 0 Name: s\49656s02.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -996,5 +997,5 @@ function ldraw_lib__s__49656s02() = [
   [5,24,-0.741,-27.5055,4.137,1.8825,-28.903,0.622,-4.1065,-28.9285,0.5125,0.2315,-27.4345,4.2625],
 ];
 module ldraw_lib__s__49656s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__49656s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__49656s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__49656s02(line=0.2);

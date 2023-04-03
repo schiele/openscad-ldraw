@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
 use <s/196955cs01.scad>
-function ldraw_lib__196955c() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__196955c(realsolid=false) = [
 // 0 Sticker  1.0 x  1.0 with Crossed Knife and Fork
 // 0 Name: 196955c.dat
 // 0 Author: Ulrich Röder [UR]
@@ -24,9 +25,9 @@ function ldraw_lib__196955c() = [
 // 0 // Main
 // 
 // 1 16 0 -.25 0 10 0 0 0 .25 0 0 0 -10 box5-12.dat
-  [1,16,0,-.25,0,10,0,0,0,.25,0,0,0,-10, ldraw_lib__box5_12()],
+  [1,16,0,-.25,0,10,0,0,0,.25,0,0,0,-10, ldraw_lib__box5_12(realsolid)],
 // 1 15 0 -.25 0 .70711 0 .70711 0 1 0 -.70711 0 .70711 s\196955cs01.dat
-  [1,15,0,-.25,0,.70711,0,.70711,0,1,0,-.70711,0,.70711, ldraw_lib__s__196955cs01()],
+  [1,15,0,-.25,0,.70711,0,.70711,0,1,0,-.70711,0,.70711, ldraw_lib__s__196955cs01(realsolid)],
 // 4 15 -10 -.25 10 -6.6114785 -.25 8.3085425 5.82375796 -.25 8.31844204 10 -.25 10
   [4,15,-10,-.25,10,-6.6114785,-.25,8.3085425,5.82375796,-.25,8.31844204,10,-.25,10],
 // 4 15 -10 -.25 10 -10 -.25 -10 -7.77821 -.25 -7.77821 -8.556031 -.25 6.858967
@@ -43,5 +44,5 @@ function ldraw_lib__196955c() = [
   [3,15,-6.6114785,-.25,8.3085425,-10,-.25,10,-8.556031,-.25,6.858967],
 ];
 module ldraw_lib__196955c(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__196955c(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__196955c(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__196955c(line=0.2);

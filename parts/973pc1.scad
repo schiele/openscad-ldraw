@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/1-4cyli.scad>
 use <s/973s01.scad>
-function ldraw_lib__973pc1() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__973pc1(realsolid=false) = [
 // 0 Minifig Torso Female with Gold Star and Zipper and Red Tied Sash and Muscles Outline Pattern
 // 0 Name: 973pc1.dat
 // 0 Author: Rolf Osterthun [Rolf]
@@ -19,9 +20,9 @@ function ldraw_lib__973pc1() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01(realsolid)],
 // 1 15 0 -4 0 4.243 0 -4.243 0 -8 0 -4.243 0 -4.243 1-4cyli.dat
-  [1,15,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli()],
+  [1,15,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli(realsolid)],
 // 
 // 0 // front
 // 3 16 -16.911 31.838 -10 -19 32 -10 -16.198 31.838 -10
@@ -1966,5 +1967,5 @@ function ldraw_lib__973pc1() = [
   [4,0,-14.706,20.902,10,-14.52,21.338,10,-15.842,27.313,10,-16.396,27.192,10],
 ];
 module ldraw_lib__973pc1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__973pc1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__973pc1(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__973pc1(line=0.2);

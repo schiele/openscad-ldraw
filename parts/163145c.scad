@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__163145c() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__163145c(realsolid=false) = [
 // 0 Sticker  3.1 x  5 with "Ristorante" and Grapes
 // 0 Name: 163145c.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -2209,5 +2210,5 @@ function ldraw_lib__163145c() = [
   [5,24,21,-.25,28,21,0,28,12,-.25,30,32,-.25,24],
 ];
 module ldraw_lib__163145c(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__163145c(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__163145c(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__163145c(line=0.2);

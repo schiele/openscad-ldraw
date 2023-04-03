@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <194325b.scad>
 use <3068b.scad>
-function ldraw_lib__3068bd01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3068bd01(realsolid=false) = [
 // 0 Tile  2 x  2 with 3 Black Circles Sticker
 // 0 Name: 3068bd01.dat
 // 0 Author: Steffen [Steffen]
@@ -26,10 +27,10 @@ function ldraw_lib__3068bd01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 3068b.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3068b()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3068b(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 194325b.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__194325b()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__194325b(realsolid)],
 ];
 module ldraw_lib__3068bd01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3068bd01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3068bd01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3068bd01(line=0.2);

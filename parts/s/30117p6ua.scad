@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__30117p6ua() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__30117p6ua(realsolid=false) = [
 // 0 ~Panel 10 x 10 x  2.333 Quarter Saucer UFO Pattern
 // 0 Name: s\30117p6ua.dat
 // 0 Author: Nils Schmidt [BlackBrick89]
@@ -6946,5 +6947,5 @@ function ldraw_lib__s__30117p6ua() = [
 // 0
 ];
 module ldraw_lib__s__30117p6ua(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__30117p6ua(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__30117p6ua(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__30117p6ua(line=0.2);

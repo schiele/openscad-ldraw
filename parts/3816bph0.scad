@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3817bs01.scad>
-function ldraw_lib__3816bph0() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3816bph0(realsolid=false) = [
 // 0 Minifig Leg Right with Dark Blue Coattails Pattern
 // 0 Name: 3816bph0.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -19,7 +20,7 @@ function ldraw_lib__3816bph0() = [
 // 
 // 
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\3817bs01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__3817bs01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__3817bs01(realsolid)],
 // 
 // 5 24 -2 3.349 -8.084 -18.659 3.349 -8.084 -2 0 -8.75 -18.755 6.187 -6.187
   [5,24,-2,3.349,-8.084,-18.659,3.349,-8.084,-2,0,-8.75,-18.755,6.187,-6.187],
@@ -178,5 +179,5 @@ function ldraw_lib__3816bph0() = [
   [4,16,-2,0,-8.75,-10.9,0,-8.75,-11.194,3.349,-8.084,-2,3.349,-8.084],
 ];
 module ldraw_lib__3816bph0(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3816bph0(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3816bph0(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3816bph0(line=0.2);

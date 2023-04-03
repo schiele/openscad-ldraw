@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4ndis.scad>
 use <s/30375s01.scad>
-function ldraw_lib__30375ps7() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__30375ps7(realsolid=false) = [
 // 0 Minifig Mechanical Torso with Red Dot Insignia Pattern
 // 0 Name: 30375ps7.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -22,12 +23,12 @@ function ldraw_lib__30375ps7() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\30375s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30375s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30375s01(realsolid)],
 // 
 // 1 4 8.25 -22 -8.725 2 0 0 0 0.062442 -1.996097 0 0.998049 0.124884 4-4disc.dat
-  [1,4,8.25,-22,-8.725,2,0,0,0,0.062442,-1.996097,0,0.998049,0.124884, ldraw_lib__4_4disc()],
+  [1,4,8.25,-22,-8.725,2,0,0,0,0.062442,-1.996097,0,0.998049,0.124884, ldraw_lib__4_4disc(realsolid)],
 // 1 16 8.25 -22 -8.725 2 0 0 0 0.062442 -1.996097 0 0.998049 0.124884 4-4ndis.dat
-  [1,16,8.25,-22,-8.725,2,0,0,0,0.062442,-1.996097,0,0.998049,0.124884, ldraw_lib__4_4ndis()],
+  [1,16,8.25,-22,-8.725,2,0,0,0,0.062442,-1.996097,0,0.998049,0.124884, ldraw_lib__4_4ndis(realsolid)],
 // 
 // 4 16 -6 -20 -8.85 6.25 -20 -8.85 6 -24 -8.6 -6 -24 -8.6
   [4,16,-6,-20,-8.85,6.25,-20,-8.85,6,-24,-8.6,-6,-24,-8.6],
@@ -159,5 +160,5 @@ function ldraw_lib__30375ps7() = [
   [3,16,10.25,-20.0039,-8.8499,7.5,-20.0039,-8.85,7.1,-18,-9],
 ];
 module ldraw_lib__30375ps7(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__30375ps7(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__30375ps7(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__30375ps7(line=0.2);

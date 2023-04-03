@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__6259759c() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6259759c(realsolid=false) = [
 // 0 Sticker  1.7 x  3.7 with Magenta and White Striped Bars, Dark Turquoise Starts and Coral Alien "KARAOKE" Characters
 // 0 Name: 6259759c.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -17,7 +18,7 @@ function ldraw_lib__6259759c() = [
 // 
 // 
 // 1 16 0 -0.25 0 37.5 0 0 0 0.25 0 0 0 17.5 box5-12.dat
-  [1,16,0,-0.25,0,37.5,0,0,0,0.25,0,0,0,17.5, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,37.5,0,0,0,0.25,0,0,0,17.5, ldraw_lib__box5_12(realsolid)],
 // 
 // 4 15 -19.5 -0.25 -4.25 -19.5 -0.25 -2.75 -22.5 -0.25 -2.75 -22.5 -0.25 -4.25
   [4,15,-19.5,-0.25,-4.25,-19.5,-0.25,-2.75,-22.5,-0.25,-2.75,-22.5,-0.25,-4.25],
@@ -1327,5 +1328,5 @@ function ldraw_lib__6259759c() = [
   [3,0,-8.6,-.25,11.516,-8.6,-.25,11.1,-7.8,-.25,11.3],
 ];
 module ldraw_lib__6259759c(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6259759c(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6259759c(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6259759c(line=0.2);

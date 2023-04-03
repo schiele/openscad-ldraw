@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/1-4cyli.scad>
 use <../../p/rect1.scad>
-function ldraw_lib__s__48138s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__48138s02(realsolid=false) = [
 // 0 ~Quatro Side
 // 0 Name: s\48138s02.dat
 // 0 Author: Andy Westrate [westrate]
@@ -23,17 +24,17 @@ function ldraw_lib__s__48138s02() = [
   [4,16,1,6,3,-1,6,3,-1,96,3,1,96,3],
 // 0 // top edge
 // 1 16 1 6 0 0 -2 0 -6 0 0 0 0 6 1-4cyli.dat
-  [1,16,1,6,0,0,-2,0,-6,0,0,0,0,6, ldraw_lib__1_4cyli()],
+  [1,16,1,6,0,0,-2,0,-6,0,0,0,0,6, ldraw_lib__1_4cyli(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 1 6 0 0 -2 0 -3 0 0 0 0 3 1-4cyli.dat
-  [1,16,1,6,0,0,-2,0,-3,0,0,0,0,3, ldraw_lib__1_4cyli()],
+  [1,16,1,6,0,0,-2,0,-3,0,0,0,0,3, ldraw_lib__1_4cyli(realsolid)],
 // 0 // bottom edge
 // 1 16 1 94 4 0 -2 0 2 0 0 0 0 2 1-4cyli.dat
-  [1,16,1,94,4,0,-2,0,2,0,0,0,0,2, ldraw_lib__1_4cyli()],
+  [1,16,1,94,4,0,-2,0,2,0,0,0,0,2, ldraw_lib__1_4cyli(realsolid)],
 // 1 16 0 96 3.5 0 0 1 0 -1 0 -0.5 0 0 rect1.dat
-  [1,16,0,96,3.5,0,0,1,0,-1,0,-0.5,0,0, ldraw_lib__rect1()],
+  [1,16,0,96,3.5,0,0,1,0,-1,0,-0.5,0,0, ldraw_lib__rect1(realsolid)],
 ];
 module ldraw_lib__s__48138s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__48138s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__48138s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__48138s02(line=0.2);

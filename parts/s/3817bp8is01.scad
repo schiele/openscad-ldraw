@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__3817bp8is01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__3817bp8is01(realsolid=false) = [
 // 0 ~Minifig Leg Left Front Surface with 'EMMET' Badge and Reflective Stripe Pattern
 // 0 Name: s\3817bp8is01.dat
 // 0 Author: Chris Dee [cwdee]
@@ -625,5 +626,5 @@ function ldraw_lib__s__3817bp8is01() = [
   [3,16,18.659,3.349,-8.084,17,5.659,-6.54,16.924,6.042,-6.284],
 ];
 module ldraw_lib__s__3817bp8is01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__3817bp8is01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__3817bp8is01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__3817bp8is01(line=0.2);

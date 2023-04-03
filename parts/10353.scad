@@ -6,7 +6,8 @@ use <../p/box3u5p.scad>
 use <../p/box5-4a.scad>
 use <../p/stud23.scad>
 use <../p/stug2-2x1.scad>
-function ldraw_lib__10353() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__10353(realsolid=false) = [
 // 0 ~Animal Horse Poseable Body Right
 // 0 Name: 10353.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -27,23 +28,23 @@ function ldraw_lib__10353() = [
 // 
 // 
 // 1 16 0 13.5 -40.9 0 0 1 0 1 0 -1 0 0 stug2-2x1.dat
-  [1,16,0,13.5,-40.9,0,0,1,0,1,0,-1,0,0, ldraw_lib__stug2_2x1()],
+  [1,16,0,13.5,-40.9,0,0,1,0,1,0,-1,0,0, ldraw_lib__stug2_2x1(realsolid)],
 // 1 16 -10 70.5 -66.9 -1 0 0 0 -1 0 0 0 1 stud23.dat
-  [1,16,-10,70.5,-66.9,-1,0,0,0,-1,0,0,0,1, ldraw_lib__stud23()],
+  [1,16,-10,70.5,-66.9,-1,0,0,0,-1,0,0,0,1, ldraw_lib__stud23(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 0 0 -4.5 0 13 0 0 0 0 13 4-4cylo.dat
-  [1,16,0,0,0,0,-4.5,0,13,0,0,0,0,13, ldraw_lib__4_4cylo()],
+  [1,16,0,0,0,0,-4.5,0,13,0,0,0,0,13, ldraw_lib__4_4cylo(realsolid)],
 // 1 16 0 -6.4 -74.7 0 1 0 12.6 0 0 0 0 12.6 4-4edge.dat
-  [1,16,0,-6.4,-74.7,0,1,0,12.6,0,0,0,0,12.6, ldraw_lib__4_4edge()],
+  [1,16,0,-6.4,-74.7,0,1,0,12.6,0,0,0,0,12.6, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 -6.4 -74.7 0 -1 0 12.6 0 0 0 0 12.6 4-4disc.dat
-  [1,16,0,-6.4,-74.7,0,-1,0,12.6,0,0,0,0,12.6, ldraw_lib__4_4disc()],
+  [1,16,0,-6.4,-74.7,0,-1,0,12.6,0,0,0,0,12.6, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 15.5 -40.9 0 16 0 2 0 0 0 0 10 box5-4a.dat
-  [1,16,0,15.5,-40.9,0,16,0,2,0,0,0,0,10, ldraw_lib__box5_4a()],
+  [1,16,0,15.5,-40.9,0,16,0,2,0,0,0,0,10, ldraw_lib__box5_4a(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -10 -18.5 -40.9 10 0 0 0 32 0 0 0 -10 box3u5p.dat
-  [1,16,-10,-18.5,-40.9,10,0,0,0,32,0,0,0,-10, ldraw_lib__box3u5p()],
+  [1,16,-10,-18.5,-40.9,10,0,0,0,32,0,0,0,-10, ldraw_lib__box3u5p(realsolid)],
 // 4 16 -20 -15.388 -16.038 -4.017 -15.388 -16.038 -4.017 -8.328 -20.755 -20 -8.328 -20.755
   [4,16,-20,-15.388,-16.038,-4.017,-15.388,-16.038,-4.017,-8.328,-20.755,-20,-8.328,-20.755],
 // 4 16 -4.017 0 -22.412 -20 0 -22.412 -20 -8.328 -20.755 -4.017 -8.328 -20.755
@@ -1879,5 +1880,5 @@ function ldraw_lib__10353() = [
   [5,24,-4.553,23.841,-18.513,0,22.9634,-14.7512,0,24.4226,-21.7512,-4.018,22.225,-11.586],
 ];
 module ldraw_lib__10353(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__10353(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__10353(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__10353(line=0.2);

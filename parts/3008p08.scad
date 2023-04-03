@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/3008s01.scad>
 use <s/4209p70a.scad>
-function ldraw_lib__3008p08() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3008p08(realsolid=false) = [
 // 0 Brick  1 x  8 with Fire Logo Badge and Diag Stripes Pattern
 // 0 Name: 3008p08.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -19,10 +20,10 @@ function ldraw_lib__3008p08() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3008s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3008s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3008s01(realsolid)],
 // 
 // 1 16 0 13 -10 0.78 0 0 0 0.78 0 0 0 1 s\4209p70a.dat
-  [1,16,0,13,-10,0.78,0,0,0,0.78,0,0,0,1, ldraw_lib__s__4209p70a()],
+  [1,16,0,13,-10,0.78,0,0,0,0.78,0,0,0,1, ldraw_lib__s__4209p70a(realsolid)],
 // 
 // 4 15 -80 14 -10 -74 20 -10 -69 20 -10 -80 9 -10
   [4,15,-80,14,-10,-74,20,-10,-69,20,-10,-80,9,-10],
@@ -238,5 +239,5 @@ function ldraw_lib__3008p08() = [
   [3,16,80,14,-10,74,20,-10,80,24,-10],
 ];
 module ldraw_lib__3008p08(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3008p08(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3008p08(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3008p08(line=0.2);

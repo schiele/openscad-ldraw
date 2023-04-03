@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/4066bs01.scad>
-function ldraw_lib__4066bp0i() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4066bp0i(realsolid=false) = [
 // 0 Duplo Brick  1 x  2 x  2 with Globe Pattern
 // 0 Name: 4066bp0i.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -18,7 +19,7 @@ function ldraw_lib__4066bp0i() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4066bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4066bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4066bs01(realsolid)],
 // 4 2 1.5 29.5 -20 0.5 29.5 -20 0.5 30.25 -20 1.5 30.25 -20
   [4,2,1.5,29.5,-20,0.5,29.5,-20,0.5,30.25,-20,1.5,30.25,-20],
 // 4 2 4.25 27.75 -20 3.5 27.75 -20 3.25 28.75 -20 4.5 28 -20
@@ -1439,5 +1440,5 @@ function ldraw_lib__4066bp0i() = [
   [3,0,18.25,36.25,-20,15.5,37,-20,18,37.5,-20],
 ];
 module ldraw_lib__4066bp0i(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4066bp0i(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4066bp0i(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4066bp0i(line=0.2);

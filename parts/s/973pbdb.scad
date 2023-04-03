@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__973pbdb() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__973pbdb(realsolid=false) = [
 // 0 ~Minifig Torso with War Machine Armoured Suit Pattern - "002" text
 // 0 Name: s\973pbdb.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -363,5 +364,5 @@ function ldraw_lib__s__973pbdb() = [
   [4,16,-9.385,6.414,-10,-9.436,6.209,-10,-11.221,6.822,-10,-9.232,7.587,-10],
 ];
 module ldraw_lib__s__973pbdb(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__973pbdb(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__973pbdb(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__973pbdb(line=0.2);

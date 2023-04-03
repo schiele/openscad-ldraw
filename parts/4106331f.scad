@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__4106331f() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4106331f(realsolid=false) = [
 // 0 Sticker  2.2 x  5.8 with "GENERAL STORE" Sign and Cereal Ears
 // 0 Name: 4106331f.dat
 // 0 Author: Willy Tschager [Holly-Wood]
@@ -19,7 +20,7 @@ function ldraw_lib__4106331f() = [
 // 
 // 0 // Box
 // 1 16 0 -.25 0 57.5 0 0 0 .25 0 0 0 21.5 box5-12.dat
-  [1,16,0,-.25,0,57.5,0,0,0,.25,0,0,0,21.5, ldraw_lib__box5_12()],
+  [1,16,0,-.25,0,57.5,0,0,0,.25,0,0,0,21.5, ldraw_lib__box5_12(realsolid)],
 // 
 // 0 // Black
 // 4 0 -35.86 -.25 -7.94 -37.9 -.25 -8.53 -37.71 -.25 -9.16 -35.73 -.25 -8.19
@@ -3991,5 +3992,5 @@ function ldraw_lib__4106331f() = [
   [4,4,35.504,-.25,4.467,35.178,-.25,4.16,36.118,-.25,4.582,35.834,-.25,4.615],
 ];
 module ldraw_lib__4106331f(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4106331f(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4106331f(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4106331f(line=0.2);

@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/4-4ering.scad>
 use <s/98138s01.scad>
-function ldraw_lib__98138p12() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__98138p12(realsolid=false) = [
 // 0 Tile  1 x  1 Round with Bone on Black Background Pattern
 // 0 Name: 98138p12.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -18,9 +19,9 @@ function ldraw_lib__98138p12() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\98138s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01(realsolid)],
 // 1 0 0 0 0 9 0 0 0 1 0 0 0 9 4-4ering.dat
-  [1,0,0,0,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4ering()],
+  [1,0,0,0,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4ering(realsolid)],
 // 4 16 2.2 0 1.8 -2.2 0 1.8 -2.2 0 -1.8 2.2 0 -1.8
   [4,16,2.2,0,1.8,-2.2,0,1.8,-2.2,0,-1.8,2.2,0,-1.8],
 // 4 16 -5.6 0 0 -2.2 0 -1.8 -2.2 0 1.8 -5.96 0 0.24
@@ -153,5 +154,5 @@ function ldraw_lib__98138p12() = [
   [3,0,0,0,9,2.2,0,1.8,2.37,0,2.64],
 ];
 module ldraw_lib__98138p12(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__98138p12(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__98138p12(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__98138p12(line=0.2);

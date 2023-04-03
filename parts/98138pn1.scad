@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/4-4ering.scad>
 use <s/98138s01.scad>
-function ldraw_lib__98138pn1() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__98138pn1(realsolid=false) = [
 // 0 Tile  1 x  1 Round with Ninjago Trapped Jay Pattern
 // 0 Name: 98138pn1.dat
 // 0 Author: Heiko Jelnikar [KlotzKiste]
@@ -16,9 +17,9 @@ function ldraw_lib__98138pn1() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\98138s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01(realsolid)],
 // 1 16 0 0 0 9 0 0 0 1 0 0 0 9 4-4ering.dat
-  [1,16,0,0,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4ering()],
+  [1,16,0,0,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4ering(realsolid)],
 // 
 // 3 0 -8.14 0 2.99 -6.49 0 2.52 -5.31 0 2.51
   [3,0,-8.14,0,2.99,-6.49,0,2.52,-5.31,0,2.51],
@@ -1170,5 +1171,5 @@ function ldraw_lib__98138pn1() = [
   [3,16,0,0,9,-1.52,0,8.54,-0.02,0,8.67],
 ];
 module ldraw_lib__98138pn1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__98138pn1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__98138pn1(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__98138pn1(line=0.2);

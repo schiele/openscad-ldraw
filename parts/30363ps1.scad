@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/30363as1.scad>
 use <s/30363s01.scad>
-function ldraw_lib__30363ps1() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__30363ps1(realsolid=false) = [
 // 0 Slope Brick 18  4 x  2 with Orange and Grey Rectangles Pattern
 // 0 Name: 30363ps1.dat
 // 0 Author: John Riley [jriley]
@@ -22,9 +23,9 @@ function ldraw_lib__30363ps1() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\30363s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30363s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30363s01(realsolid)],
 // 1 462 0 -1 -7 1 0 0 0 1 -0.3333 0 0 1 s\30363as1.dat
-  [1,462,0,-1,-7,1,0,0,0,1,-0.3333,0,0,1, ldraw_lib__s__30363as1()],
+  [1,462,0,-1,-7,1,0,0,0,1,-0.3333,0,0,1, ldraw_lib__s__30363as1(realsolid)],
 // 0 // 1 16 0 10 -40 1 0 0 0 1 -0.3333 0 0 1 s\30363bs1.dat
 // 4 16 -20 0.6665 -12 20 0.6665 -12 20 -0.0001 -10 -20 -0.0001 -10
   [4,16,-20,0.6665,-12,20,0.6665,-12,20,-0.0001,-10,-20,-0.0001,-10],
@@ -113,5 +114,5 @@ function ldraw_lib__30363ps1() = [
 // 0
 ];
 module ldraw_lib__30363ps1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__30363ps1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__30363ps1(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__30363ps1(line=0.2);

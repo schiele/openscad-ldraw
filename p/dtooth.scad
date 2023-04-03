@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__dtooth() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__dtooth(realsolid=false) = [
 // 0 Single Tooth for Duplo Gears 24 and 40 Tooth
 // 0 Name: dtooth.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -93,5 +94,5 @@ function ldraw_lib__dtooth() = [
   [5,24,-4.2,5.4,13.5,-4.2,5.4,-13.5,-2.6,9.6,-11,-5,0,-13.5],
 ];
 module ldraw_lib__dtooth(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__dtooth(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__dtooth(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__dtooth(line=0.2);

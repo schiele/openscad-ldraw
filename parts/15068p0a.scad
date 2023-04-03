@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/15068s01.scad>
-function ldraw_lib__15068p0a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__15068p0a(realsolid=false) = [
 // 0 Slope Brick Curved  2 x  2 x  0.667 with White Paw in Blue Seven Sided Star (Wildlife Rescue 2021 Logo) Pattern
 // 0 Name: 15068p0a.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -17,7 +18,7 @@ function ldraw_lib__15068p0a() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\15068s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__15068s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__15068s01(realsolid)],
 // 
 // 5 24 -20 -15.6524 12.616 20 -15.6524 12.616 20 -16.0001 20 20 -14.6036 5.36
   [5,24,-20,-15.6524,12.616,20,-15.6524,12.616,20,-16.0001,20,20,-14.6036,5.36],
@@ -769,5 +770,5 @@ function ldraw_lib__15068p0a() = [
   [3,19,6.656,-15.75151,14.721,7.11101,-15.72306,14.11679,7.631,-15.73571,14.3854],
 ];
 module ldraw_lib__15068p0a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__15068p0a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__15068p0a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__15068p0a(line=0.2);

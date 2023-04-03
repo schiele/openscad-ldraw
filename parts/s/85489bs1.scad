@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__85489bs1() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__85489bs1(realsolid=false) = [
 // 0 ~Train Wheel Large Outer Surface Smooth
 // 0 Name: s\85489bs1.dat
 // 0 Author: Donald Sutter [technog]
@@ -145,5 +146,5 @@ function ldraw_lib__s__85489bs1() = [
   [4,16,37.675,-4.96,1,36.684,-4.83,-10,37,0,-10,38,0,1],
 ];
 module ldraw_lib__s__85489bs1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__85489bs1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__85489bs1(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__85489bs1(line=0.2);

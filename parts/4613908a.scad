@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__4613908a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4613908a(realsolid=false) = [
 // 0 Sticker  3.2 x  3.1 Trapezoid with Wall and Hieroglyphs
 // 0 Name: 4613908a.dat
 // 0 Author: Christian Neumann [Wesley]
@@ -2844,5 +2845,5 @@ function ldraw_lib__4613908a() = [
   [3,28,19.89,-0.25,9.97,25.6,-0.25,-19.45,31,-0.25,-32.5],
 ];
 module ldraw_lib__4613908a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4613908a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4613908a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4613908a(line=0.2);

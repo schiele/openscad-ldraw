@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/1-4chrd.scad>
 use <../p/1-4ndis.scad>
-function ldraw_lib__4603014b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4603014b(realsolid=false) = [
 // 0 Sticker  1.2 x  1.5 with White "OPEN" on Red Sign
 // 0 Name: 4603014b.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -62,21 +63,21 @@ function ldraw_lib__4603014b() = [
 // 3 16 -14.5 0 4 -.468 0 -1.163 -15 0 2
   [3,16,-14.5,0,4,-.468,0,-1.163,-15,0,2],
 // 1 4 -10.5 -.25 1.5 0 0 -2 0 1 0 2 0 0 1-4chrd.dat
-  [1,4,-10.5,-.25,1.5,0,0,-2,0,1,0,2,0,0, ldraw_lib__1_4chrd()],
+  [1,4,-10.5,-.25,1.5,0,0,-2,0,1,0,2,0,0, ldraw_lib__1_4chrd(realsolid)],
 // 1 4 10.5 -.25 1.5 2 0 0 0 1 0 0 0 2 1-4chrd.dat
-  [1,4,10.5,-.25,1.5,2,0,0,0,1,0,0,0,2, ldraw_lib__1_4chrd()],
+  [1,4,10.5,-.25,1.5,2,0,0,0,1,0,0,0,2, ldraw_lib__1_4chrd(realsolid)],
 // 1 4 -10.5 -.25 -7 -2 0 0 0 1 0 0 0 -2 1-4chrd.dat
-  [1,4,-10.5,-.25,-7,-2,0,0,0,1,0,0,0,-2, ldraw_lib__1_4chrd()],
+  [1,4,-10.5,-.25,-7,-2,0,0,0,1,0,0,0,-2, ldraw_lib__1_4chrd(realsolid)],
 // 1 4 10.5 -.25 -7 0 0 2 0 1 0 -2 0 0 1-4chrd.dat
-  [1,4,10.5,-.25,-7,0,0,2,0,1,0,-2,0,0, ldraw_lib__1_4chrd()],
+  [1,4,10.5,-.25,-7,0,0,2,0,1,0,-2,0,0, ldraw_lib__1_4chrd(realsolid)],
 // 1 15 -10.5 -.25 1.5 0 0 -2 0 1 0 2 0 0 1-4ndis.dat
-  [1,15,-10.5,-.25,1.5,0,0,-2,0,1,0,2,0,0, ldraw_lib__1_4ndis()],
+  [1,15,-10.5,-.25,1.5,0,0,-2,0,1,0,2,0,0, ldraw_lib__1_4ndis(realsolid)],
 // 1 15 10.5 -.25 1.5 2 0 0 0 1 0 0 0 2 1-4ndis.dat
-  [1,15,10.5,-.25,1.5,2,0,0,0,1,0,0,0,2, ldraw_lib__1_4ndis()],
+  [1,15,10.5,-.25,1.5,2,0,0,0,1,0,0,0,2, ldraw_lib__1_4ndis(realsolid)],
 // 1 15 -10.5 -.25 -7 -2 0 0 0 1 0 0 0 -2 1-4ndis.dat
-  [1,15,-10.5,-.25,-7,-2,0,0,0,1,0,0,0,-2, ldraw_lib__1_4ndis()],
+  [1,15,-10.5,-.25,-7,-2,0,0,0,1,0,0,0,-2, ldraw_lib__1_4ndis(realsolid)],
 // 1 15 10.5 -.25 -7 0 0 2 0 1 0 -2 0 0 1-4ndis.dat
-  [1,15,10.5,-.25,-7,0,0,2,0,1,0,-2,0,0, ldraw_lib__1_4ndis()],
+  [1,15,10.5,-.25,-7,0,0,2,0,1,0,-2,0,0, ldraw_lib__1_4ndis(realsolid)],
 // 4 4 -6.1 -.25 -1.4 -6.9 -.25 -1.1 -7.6 -.25 -1.4 -8 -.25 -2.1
   [4,4,-6.1,-.25,-1.4,-6.9,-.25,-1.1,-7.6,-.25,-1.4,-8,-.25,-2.1],
 // 4 4 -6 -.25 -2.1 -6.1 -.25 -1.4 -8 -.25 -2.1 -8.2 -.25 -3.1
@@ -508,5 +509,5 @@ function ldraw_lib__4603014b() = [
 // 
 ];
 module ldraw_lib__4603014b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4603014b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4603014b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4603014b(line=0.2);

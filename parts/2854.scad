@@ -5,7 +5,8 @@ use <../p/2-4edge.scad>
 use <../p/2-4ring2.scad>
 use <../p/axl5end.scad>
 use <../p/axlehol4.scad>
-function ldraw_lib__2854() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2854(realsolid=false) = [
 // 0 Technic Engine Crankshaft Centre
 // 0 Name: 2854.dat
 // 0 Author: Guy Vivan [guyvivan]
@@ -235,13 +236,13 @@ function ldraw_lib__2854() = [
 // 2 24 -4 -7 1.5 -2 -7 1.5
   [2,24,-4,-7,1.5,-2,-7,1.5],
 // 1 16 10 0 -1.5 0 0 9 9 0 0 0 1 0 2-4edge.dat
-  [1,16,10,0,-1.5,0,0,9,9,0,0,0,1,0, ldraw_lib__2_4edge()],
+  [1,16,10,0,-1.5,0,0,9,9,0,0,0,1,0, ldraw_lib__2_4edge(realsolid)],
 // 1 16 -10 0 1.5 0 0 -9 9 0 0 0 1 0 2-4edge.dat
-  [1,16,-10,0,1.5,0,0,-9,9,0,0,0,1,0, ldraw_lib__2_4edge()],
+  [1,16,-10,0,1.5,0,0,-9,9,0,0,0,1,0, ldraw_lib__2_4edge(realsolid)],
 // 1 16 10 0 10 0 0 9 9 0 0 0 1 0 2-4edge.dat
-  [1,16,10,0,10,0,0,9,9,0,0,0,1,0, ldraw_lib__2_4edge()],
+  [1,16,10,0,10,0,0,9,9,0,0,0,1,0, ldraw_lib__2_4edge(realsolid)],
 // 1 16 -10 0 -10 0 0 -9 9 0 0 0 1 0 2-4edge.dat
-  [1,16,-10,0,-10,0,0,-9,9,0,0,0,1,0, ldraw_lib__2_4edge()],
+  [1,16,-10,0,-10,0,0,-9,9,0,0,0,1,0, ldraw_lib__2_4edge(realsolid)],
 // 5 24 2.52 -5 6.99 2.52 -5 10 4.34 -7 10 1.51 -3 10
   [5,24,2.52,-5,6.99,2.52,-5,10,4.34,-7,10,1.51,-3,10],
 // 5 24 2.52 5 6.99 2.52 5 10 4.34 7 10 1.51 3 10
@@ -431,27 +432,27 @@ function ldraw_lib__2854() = [
 // 4 16 -1.51 3 -10 -1 1 -10 -4.21 1 -10 -4.3977 2 -10
   [4,16,-1.51,3,-10,-1,1,-10,-4.21,1,-10,-4.3977,2,-10],
 // 1 16 -10 0 0 0 0 1 1 0 0 0 -10 0 axlehol4.dat
-  [1,16,-10,0,0,0,0,1,1,0,0,0,-10,0, ldraw_lib__axlehol4()],
+  [1,16,-10,0,0,0,0,1,1,0,0,0,-10,0, ldraw_lib__axlehol4(realsolid)],
 // 1 16 10 0 0 0 0 -1 1 0 0 0 10 0 axlehol4.dat
-  [1,16,10,0,0,0,0,-1,1,0,0,0,10,0, ldraw_lib__axlehol4()],
+  [1,16,10,0,0,0,0,-1,1,0,0,0,10,0, ldraw_lib__axlehol4(realsolid)],
 // 1 16 10 0 -1.5 0 0 9 9 0 0 0 1 0 2-4chrd.dat
-  [1,16,10,0,-1.5,0,0,9,9,0,0,0,1,0, ldraw_lib__2_4chrd()],
+  [1,16,10,0,-1.5,0,0,9,9,0,0,0,1,0, ldraw_lib__2_4chrd(realsolid)],
 // 1 16 -10 0 1.5 0 0 -9 9 0 0 0 -1 0 2-4chrd.dat
-  [1,16,-10,0,1.5,0,0,-9,9,0,0,0,-1,0, ldraw_lib__2_4chrd()],
+  [1,16,-10,0,1.5,0,0,-9,9,0,0,0,-1,0, ldraw_lib__2_4chrd(realsolid)],
 // 1 16 10 0 -1.5 0 0 9 9 0 0 0 11.5 0 2-4cyli.dat
-  [1,16,10,0,-1.5,0,0,9,9,0,0,0,11.5,0, ldraw_lib__2_4cyli()],
+  [1,16,10,0,-1.5,0,0,9,9,0,0,0,11.5,0, ldraw_lib__2_4cyli(realsolid)],
 // 1 16 -10 0 1.5 0 0 -9 9 0 0 0 -11.5 0 2-4cyli.dat
-  [1,16,-10,0,1.5,0,0,-9,9,0,0,0,-11.5,0, ldraw_lib__2_4cyli()],
+  [1,16,-10,0,1.5,0,0,-9,9,0,0,0,-11.5,0, ldraw_lib__2_4cyli(realsolid)],
 // 1 16 10 0 0 0 0 -1 1 0 0 0 -1 0 axl5end.dat
-  [1,16,10,0,0,0,0,-1,1,0,0,0,-1,0, ldraw_lib__axl5end()],
+  [1,16,10,0,0,0,0,-1,1,0,0,0,-1,0, ldraw_lib__axl5end(realsolid)],
 // 1 16 -10 0 0 0 0 -1 1 0 0 0 1 0 axl5end.dat
-  [1,16,-10,0,0,0,0,-1,1,0,0,0,1,0, ldraw_lib__axl5end()],
+  [1,16,-10,0,0,0,0,-1,1,0,0,0,1,0, ldraw_lib__axl5end(realsolid)],
 // 1 16 10 0 10 0 0 3 3 0 0 0 -1 0 2-4ring2.dat
-  [1,16,10,0,10,0,0,3,3,0,0,0,-1,0, ldraw_lib__2_4ring2()],
+  [1,16,10,0,10,0,0,3,3,0,0,0,-1,0, ldraw_lib__2_4ring2(realsolid)],
 // 1 16 -10 0 -10 0 0 -3 -3 0 0 0 1 0 2-4ring2.dat
-  [1,16,-10,0,-10,0,0,-3,-3,0,0,0,1,0, ldraw_lib__2_4ring2()],
+  [1,16,-10,0,-10,0,0,-3,-3,0,0,0,1,0, ldraw_lib__2_4ring2(realsolid)],
 // 0
 ];
 module ldraw_lib__2854(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2854(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2854(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2854(line=0.2);

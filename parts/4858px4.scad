@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/4858s01.scad>
-function ldraw_lib__4858px4() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4858px4(realsolid=false) = [
 // 0 Wedge  4 x  4 with SW Orange Rectangle and Vent Pattern
 // 0 Name: 4858px4.dat
 // 0 Author: Mark Chittenden [mdublade]
@@ -17,7 +18,7 @@ function ldraw_lib__4858px4() = [
 // 0 // Pattern from set 4500 Rebel Snowspeeder
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4858s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4858s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4858s01(realsolid)],
 // 3 16 -20 20 -70 -20 0 -10 -40 0 -10
   [3,16,-20,20,-70,-20,0,-10,-40,0,-10],
 // 3 16 20 20 -70 40 0 -10 20 0 -9.999
@@ -122,5 +123,5 @@ function ldraw_lib__4858px4() = [
   [4,8,11,16.996,-60.987,17,16.996,-60.987,17,16.364,-59.09,11,16.364,-59.09],
 ];
 module ldraw_lib__4858px4(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4858px4(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4858px4(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4858px4(line=0.2);

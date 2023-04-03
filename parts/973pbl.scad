@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/1-4cyli.scad>
 use <s/973s01.scad>
-function ldraw_lib__973pbl() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__973pbl(realsolid=false) = [
 // 0 Minifig Torso with Red/White Waist, Zipper and White Star Pattern
 // 0 Name: 973pbl.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -20,9 +21,9 @@ function ldraw_lib__973pbl() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01(realsolid)],
 // 1 15 0 -4 0 4.243 0 -4.243 0 -8 0 -4.243 0 -4.243 1-4cyli.dat
-  [1,15,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli()],
+  [1,15,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli(realsolid)],
 // 
 // 0 // frontside
 // 3 0 -13.13 2.63 -10 -13.23 3.33 -10 -11.7 3.6 -10
@@ -1857,5 +1858,5 @@ function ldraw_lib__973pbl() = [
   [4,16,6.55,31.3,10,19,32,10,-19,32,10,-6.55,31.3,10],
 ];
 module ldraw_lib__973pbl(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__973pbl(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__973pbl(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__973pbl(line=0.2);

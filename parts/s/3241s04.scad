@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/box3u8p.scad>
 use <3241s03.scad>
-function ldraw_lib__s__3241s04() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__3241s04(realsolid=false) = [
 // 0 ~Train Track 12V Insert: main sweep, plus top, plus rim
 // 0 Name: s\3241s04.dat
 // 0 Author: Steffen [Steffen]
@@ -16,11 +17,11 @@ function ldraw_lib__s__3241s04() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3241s03.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3241s03()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3241s03(realsolid)],
 // 1 16 0 12 0 5 0 0 0 1 0 0 0 -2 box3u8p.dat
-  [1,16,0,12,0,5,0,0,0,1,0,0,0,-2, ldraw_lib__box3u8p()],
+  [1,16,0,12,0,5,0,0,0,1,0,0,0,-2, ldraw_lib__box3u8p(realsolid)],
 // 0
 ];
 module ldraw_lib__s__3241s04(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__3241s04(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__3241s04(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__3241s04(line=0.2);

@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/box3u10p.scad>
 use <../p/rect.scad>
-function ldraw_lib__92713k01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__92713k01(realsolid=false) = [
 // 0 ~Conveyor Belt  4 x 16 with 14 Treads - Tread Segment (Formed Straight)
 // 0 Name: 92713k01.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -18,7 +19,7 @@ function ldraw_lib__92713k01() = [
 // 0 // Faces
 // 
 // 1 16 0 -1 0 -2 0 0 0 2 0 0 0 16.5 box3u10p.dat
-  [1,16,0,-1,0,-2,0,0,0,2,0,0,0,16.5, ldraw_lib__box3u10p()],
+  [1,16,0,-1,0,-2,0,0,0,2,0,0,0,16.5, ldraw_lib__box3u10p(realsolid)],
 // 4 16 -1.25 -9 16.5 1.25 -9 16.5 2 -1 16.5 -2 -1 16.5
   [4,16,-1.25,-9,16.5,1.25,-9,16.5,2,-1,16.5,-2,-1,16.5],
 // 4 16 -2 -1 16.5 -2 -1 -16.5 -1.25 -9 -16.5 -1.25 -9 16.5
@@ -28,7 +29,7 @@ function ldraw_lib__92713k01() = [
 // 4 16 -2 -1 -16.5 2 -1 -16.5 1.25 -9 -16.5 -1.25 -9 -16.5
   [4,16,-2,-1,-16.5,2,-1,-16.5,1.25,-9,-16.5,-1.25,-9,-16.5],
 // 1 16 0 -9 0 -1.25 0 0 0 1 0 0 0 16.5 rect.dat
-  [1,16,0,-9,0,-1.25,0,0,0,1,0,0,0,16.5, ldraw_lib__rect()],
+  [1,16,0,-9,0,-1.25,0,0,0,1,0,0,0,16.5, ldraw_lib__rect(realsolid)],
 // 0 // Edges
 // 2 24 -2 -1 16.5 -2 -1 -16.5
   [2,24,-2,-1,16.5,-2,-1,-16.5],
@@ -48,5 +49,5 @@ function ldraw_lib__92713k01() = [
   [2,24,1.25,-9,16.5,1.25,-9,-16.5],
 ];
 module ldraw_lib__92713k01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__92713k01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__92713k01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__92713k01(line=0.2);

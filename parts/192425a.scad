@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__192425a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__192425a(realsolid=false) = [
 // 0 Sticker  2.4 x  3 with Classic Space Logo
 // 0 Name: 192425a.dat
 // 0 Author: Willy Tschager [Holly-Wood]
@@ -711,9 +712,9 @@ function ldraw_lib__192425a() = [
   [4,272,-20.242,-0.25,-6.314,-19.254,-0.25,-6.975,-20.26,-0.25,-7.014,-20.46,-0.25,-6.669],
 // 
 // 1 15 0 -0.25 0 30 0 0 0 0.25 0 0 0 24 box5-12.dat
-  [1,15,0,-0.25,0,30,0,0,0,0.25,0,0,0,24, ldraw_lib__box5_12()],
+  [1,15,0,-0.25,0,30,0,0,0,0.25,0,0,0,24, ldraw_lib__box5_12(realsolid)],
 // 0
 ];
 module ldraw_lib__192425a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__192425a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__192425a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__192425a(line=0.2);

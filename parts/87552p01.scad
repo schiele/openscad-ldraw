@@ -3,7 +3,8 @@ use <../p/48/1-4chrd.scad>
 use <../p/48/1-4ndis.scad>
 use <s/87552s01.scad>
 use <../p/stug2-1x2.scad>
-function ldraw_lib__87552p01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__87552p01(realsolid=false) = [
 // 0 Panel  1 x  2 x  2 Reinforced with White Curved Corner Pattern - Right Aligned
 // 0 Name: 87552p01.dat
 // 0 Author: Ulrich Röder [UR]
@@ -22,13 +23,13 @@ function ldraw_lib__87552p01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\87552s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__87552s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__87552s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 stug2-1x2.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug2_1x2()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug2_1x2(realsolid)],
 // 1 15 -19.5 20 10 0 0 39 -20 0 0 0 -1 0 48\1-4ndis.dat
-  [1,15,-19.5,20,10,0,0,39,-20,0,0,0,-1,0, ldraw_lib__48__1_4ndis()],
+  [1,15,-19.5,20,10,0,0,39,-20,0,0,0,-1,0, ldraw_lib__48__1_4ndis(realsolid)],
 // 1 16 -19.5 20 10 0 0 39 -20 0 0 0 -1 0 48\1-4chrd.dat
-  [1,16,-19.5,20,10,0,0,39,-20,0,0,0,-1,0, ldraw_lib__48__1_4chrd()],
+  [1,16,-19.5,20,10,0,0,39,-20,0,0,0,-1,0, ldraw_lib__48__1_4chrd(realsolid)],
 // 4 16 19.5 20 10 19.5 0 10 20 0 10 20 48 10
   [4,16,19.5,20,10,19.5,0,10,20,0,10,20,48,10],
 // 3 16 -20 0 10 -19.5 0 10 -20 48 10
@@ -37,5 +38,5 @@ function ldraw_lib__87552p01() = [
   [4,16,-19.5,0,10,19.5,20,10,20,48,10,-20,48,10],
 ];
 module ldraw_lib__87552p01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__87552p01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__87552p01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__87552p01(line=0.2);

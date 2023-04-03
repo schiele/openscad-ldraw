@@ -5,7 +5,8 @@ use <../p/4-4rin32.scad>
 use <../p/4-4ring3.scad>
 use <s/27956s01.scad>
 use <s/27956s02.scad>
-function ldraw_lib__27956() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__27956(realsolid=false) = [
 // 0 Minifig Head Alien E. T.
 // 0 Name: 27956.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -24,24 +25,24 @@ function ldraw_lib__27956() = [
 // 
 // 
 // 1 16 0 0 0 2 0 0 0 -1 0 0 0 2 4-4ring3.dat
-  [1,16,0,0,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__4_4ring3()],
+  [1,16,0,0,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__4_4ring3(realsolid)],
 // 1 16 0 0 0 0.25 0 0 0 -1 0 0 0 0.25 4-4rin32.dat
-  [1,16,0,0,0,0.25,0,0,0,-1,0,0,0,0.25, ldraw_lib__4_4rin32()],
+  [1,16,0,0,0,0.25,0,0,0,-1,0,0,0,0.25, ldraw_lib__4_4rin32(realsolid)],
 // 1 16 0 0 0 8.25 0 0 0 -1 0 0 0 8.25 4-4edge.dat
-  [1,16,0,0,0,8.25,0,0,0,-1,0,0,0,8.25, ldraw_lib__4_4edge()],
+  [1,16,0,0,0,8.25,0,0,0,-1,0,0,0,8.25, ldraw_lib__4_4edge(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -30.5 0 6 0 0 0 30.5 0 0 0 6 4-4cylc.dat
-  [1,16,0,-30.5,0,6,0,0,0,30.5,0,0,0,6, ldraw_lib__4_4cylc()],
+  [1,16,0,-30.5,0,6,0,0,0,30.5,0,0,0,6, ldraw_lib__4_4cylc(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\27956s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__27956s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__27956s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\27956s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__27956s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__27956s01(realsolid)],
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\27956s02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__27956s02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__27956s02(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\27956s02.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__27956s02()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__27956s02(realsolid)],
 // 
 // 3 16 0 -33.871 -25.834 -0.24 -32.592 -26.626 0.24 -32.592 -26.626
   [3,16,0,-33.871,-25.834,-0.24,-32.592,-26.626,0.24,-32.592,-26.626],
@@ -123,5 +124,5 @@ function ldraw_lib__27956() = [
   [5,24,0,-27.026,-27.485,0,-25.793,-27.352,-2.552,-26.792,-27.436,2.552,-26.792,-27.436],
 ];
 module ldraw_lib__27956(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__27956(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__27956(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__27956(line=0.2);

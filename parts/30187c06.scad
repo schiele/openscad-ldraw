@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <30187.scad>
 use <30188.scad>
-function ldraw_lib__30187c06() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__30187c06(realsolid=false) = [
 // 0 Bike  3 Wheel Motorcycle Body with Reddish Brown Motor (Complete)
 // 0 Name: 30187c06.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -20,10 +21,10 @@ function ldraw_lib__30187c06() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 30187.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__30187()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__30187(realsolid)],
 // 1 70 0 30 0 1 0 0 0 1 0 0 0 1 30188.dat
-  [1,70,0,30,0,1,0,0,0,1,0,0,0,1, ldraw_lib__30188()],
+  [1,70,0,30,0,1,0,0,0,1,0,0,0,1, ldraw_lib__30188(realsolid)],
 ];
 module ldraw_lib__30187c06(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__30187c06(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__30187c06(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__30187c06(line=0.2);

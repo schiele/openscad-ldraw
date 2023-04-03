@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/4162s01.scad>
-function ldraw_lib__4162p1a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4162p1a(realsolid=false) = [
 // 0 Tile  1 x  8 with "San Francisco" Pattern
 // 0 Name: 4162p1a.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -21,7 +22,7 @@ function ldraw_lib__4162p1a() = [
 // 0 // Font match is not perfect, but comes close.
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4162s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4162s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4162s01(realsolid)],
 // 4 15 -51.1649 0 -2.7906 -52.6592 0 -3.243 -52.1815 0 -4.2596 -50.8468 0 -3.4491
   [4,15,-51.1649,0,-2.7906,-52.6592,0,-3.243,-52.1815,0,-4.2596,-50.8468,0,-3.4491],
 // 4 15 -50.8468 0 -3.4491 -52.1815 0 -4.2596 -51.4362 0 -5.0936 -50.3502 0 -3.9709
@@ -1177,5 +1178,5 @@ function ldraw_lib__4162p1a() = [
   [3,16,-37.9902,0,-6.0834,-38.8306,0,-6.1551,-35.3343,0,-5.9585],
 ];
 module ldraw_lib__4162p1a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4162p1a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4162p1a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4162p1a(line=0.2);

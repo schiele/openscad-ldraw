@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/30363s01.scad>
-function ldraw_lib__30363ps0() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__30363ps0(realsolid=false) = [
 // 0 Slope Brick 18  4 x  2 with Lime and Green Semi-Circles Pattern
 // 0 Name: 30363ps0.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -17,7 +18,7 @@ function ldraw_lib__30363ps0() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\30363s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30363s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30363s01(realsolid)],
 // 4 2 -1.6703 8.235 -34.7051 0 8.2091 -34.6273 0 8.054 -34.162 -1.7183 8.0807 -34.2421
   [4,2,-1.6703,8.235,-34.7051,0,8.2091,-34.6273,0,8.054,-34.162,-1.7183,8.0807,-34.2421],
 // 4 2 -3.3245 8.3126 -34.9379 -1.6703 8.235 -34.7051 -1.7183 8.0807 -34.2421 -3.4201 8.1605 -34.4816
@@ -1858,5 +1859,5 @@ function ldraw_lib__30363ps0() = [
   [3,2,-11.6,16.1909,-58.5726,-11.8,16.2541,-58.7623,-11,16.2225,-58.6675],
 ];
 module ldraw_lib__30363ps0(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__30363ps0(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__30363ps0(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__30363ps0(line=0.2);

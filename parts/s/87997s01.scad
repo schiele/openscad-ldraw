@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/4-4cylc.scad>
-function ldraw_lib__s__87997s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__87997s01(realsolid=false) = [
 // 0 ~Minifig Cheerleader Pom Pom - Bottom
 // 0 Name: s\87997s01.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -18,7 +19,7 @@ function ldraw_lib__s__87997s01() = [
 // 
 // 
 // 1 16 0 0 0 0 0 -4 0 -15.57 0 4 0 0 4-4cylc.dat
-  [1,16,0,0,0,0,0,-4,0,-15.57,0,4,0,0, ldraw_lib__4_4cylc()],
+  [1,16,0,0,0,0,0,-4,0,-15.57,0,4,0,0, ldraw_lib__4_4cylc(realsolid)],
 // 3 16 -5.121 -9.466 4.209 -5.98 -7.583 2.7 -5.238 -1.386 4.086
   [3,16,-5.121,-9.466,4.209,-5.98,-7.583,2.7,-5.238,-1.386,4.086],
 // 3 16 -5.238 -1.386 4.086 -5.98 -7.583 2.7 -6.922 -1.707 1.293
@@ -4515,5 +4516,5 @@ function ldraw_lib__s__87997s01() = [
   [5,24,4.256,-11.736,9.387,4.986,-12.619,8.466,5.045,-11.355,8.553,4.27,-12.539,9.563],
 ];
 module ldraw_lib__s__87997s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__87997s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__87997s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__87997s01(line=0.2);

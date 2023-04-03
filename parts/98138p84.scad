@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/4-4ering.scad>
 use <s/98138s01.scad>
-function ldraw_lib__98138p84() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__98138p84(realsolid=false) = [
 // 0 Tile  1 x  1 Round with Dark Tan Ammonite Fossil Pattern
 // 0 Name: 98138p84.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -18,9 +19,9 @@ function ldraw_lib__98138p84() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\98138s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01(realsolid)],
 // 1 16 0 0 0 9 0 0 0 1 0 0 0 9 4-4ering.dat
-  [1,16,0,0,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4ering()],
+  [1,16,0,0,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4ering(realsolid)],
 // 4 28 -4.63 0 0.14 -4.3 0 0.1 -4.2 0 0.3 -4.9 0 0.22
   [4,28,-4.63,0,0.14,-4.3,0,0.1,-4.2,0,0.3,-4.9,0,0.22],
 // 4 28 -4.9 0 0.22 -4.2 0 0.3 -4.175 0 1.225 -4.28 0 1.635
@@ -1373,5 +1374,5 @@ function ldraw_lib__98138p84() = [
   [3,16,4.36,0,-7.4,3.57,0,-7.74,3.4443,0,-8.3151],
 ];
 module ldraw_lib__98138p84(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__98138p84(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__98138p84(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__98138p84(line=0.2);

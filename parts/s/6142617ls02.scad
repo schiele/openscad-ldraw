@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/1-4chrd.scad>
 use <../../p/4-4ring3.scad>
-function ldraw_lib__s__6142617ls02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__6142617ls02(realsolid=false) = [
 // 0 ~Sticker  0.5 x  1.8 with White Disc and Stripe on Black Background Right - Headlamp
 // 0 Name: s\6142617ls02.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -18,15 +19,15 @@ function ldraw_lib__s__6142617ls02() = [
 // 0 // Primitives
 // 
 // 1 15 0 0 0 1 0 0 0 1 0 0 0 1 4-4ring3.dat
-  [1,15,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4ring3()],
+  [1,15,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4ring3(realsolid)],
 // 1 0 0 0 0 3 0 0 0 1 0 0 0 3 1-4chrd.dat
-  [1,0,0,0,0,3,0,0,0,1,0,0,0,3, ldraw_lib__1_4chrd()],
+  [1,0,0,0,0,3,0,0,0,1,0,0,0,3, ldraw_lib__1_4chrd(realsolid)],
 // 1 0 0 0 0 -3 0 0 0 1 0 0 0 3 1-4chrd.dat
-  [1,0,0,0,0,-3,0,0,0,1,0,0,0,3, ldraw_lib__1_4chrd()],
+  [1,0,0,0,0,-3,0,0,0,1,0,0,0,3, ldraw_lib__1_4chrd(realsolid)],
 // 1 0 0 0 0 -3 0 0 0 1 0 0 0 -3 1-4chrd.dat
-  [1,0,0,0,0,-3,0,0,0,1,0,0,0,-3, ldraw_lib__1_4chrd()],
+  [1,0,0,0,0,-3,0,0,0,1,0,0,0,-3, ldraw_lib__1_4chrd(realsolid)],
 // 1 0 0 0 0 3 0 0 0 1 0 0 0 -3 1-4chrd.dat
-  [1,0,0,0,0,3,0,0,0,1,0,0,0,-3, ldraw_lib__1_4chrd()],
+  [1,0,0,0,0,3,0,0,0,1,0,0,0,-3, ldraw_lib__1_4chrd(realsolid)],
 // 0 // Black faces
 // 3 0 0 0 3 -3 0 0 -1.4142 0 1.4142
   [3,0,0,0,3,-3,0,0,-1.4142,0,1.4142],
@@ -268,5 +269,5 @@ function ldraw_lib__s__6142617ls02() = [
   [3,15,1.8478,0,-.7654,1.83,0,-.56,1.7861,0,-.6661],
 ];
 module ldraw_lib__s__6142617ls02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__6142617ls02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__6142617ls02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__6142617ls02(line=0.2);

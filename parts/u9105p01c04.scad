@@ -2,7 +2,8 @@ use <../lib.scad>
 use <4791.scad>
 use <u9104.scad>
 use <u9105p01.scad>
-function ldraw_lib__u9105p01c04() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__u9105p01c04(realsolid=false) = [
 // 0 Figure Fabuland Mouse Head  1 with Neck and White Sailor's Cap
 // 0 Name: u9105p01c04.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -17,13 +18,13 @@ function ldraw_lib__u9105p01c04() = [
 // 
 // 
 // 1 7 0 0 0 1 0 0 0 1 0 0 0 1 u9104.dat
-  [1,7,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9104()],
+  [1,7,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9104(realsolid)],
 // 1 16 0 -7 0 1 0 0 0 1 0 0 0 1 u9105p01.dat
-  [1,16,0,-7,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9105p01()],
+  [1,16,0,-7,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9105p01(realsolid)],
 // 1 15 0 -51.774 4.31 1 0 0 0 0.98062 0.19595 0 -0.19595 0.98062 4791.dat
-  [1,15,0,-51.774,4.31,1,0,0,0,0.98062,0.19595,0,-0.19595,0.98062, ldraw_lib__4791()],
+  [1,15,0,-51.774,4.31,1,0,0,0,0.98062,0.19595,0,-0.19595,0.98062, ldraw_lib__4791(realsolid)],
 // 
 ];
 module ldraw_lib__u9105p01c04(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__u9105p01c04(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__u9105p01c04(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__u9105p01c04(line=0.2);

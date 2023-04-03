@@ -2,7 +2,8 @@ use <../lib.scad>
 use <92244p06.scad>
 use <92245p06.scad>
 use <u9210p01.scad>
-function ldraw_lib__u9210p01c01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__u9210p01c01(realsolid=false) = [
 // 0 Figure Friends Boy Torso with Arms with Bright Light Blue Polo Shirt with Dark Blue Sailboat Pattern
 // 0 Name: u9210p01c01.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -17,12 +18,12 @@ function ldraw_lib__u9210p01c01() = [
 // 
 // 
 // 1 16 0 -12.8 3.9 1 0 0 0 1 0 0 0 1 u9210p01.dat
-  [1,16,0,-12.8,3.9,1,0,0,0,1,0,0,0,1, ldraw_lib__u9210p01()],
+  [1,16,0,-12.8,3.9,1,0,0,0,1,0,0,0,1, ldraw_lib__u9210p01(realsolid)],
 // 1 16 11 -12.8 3.9 1 0 0 0 1 0 0 0 1 92244p06.dat
-  [1,16,11,-12.8,3.9,1,0,0,0,1,0,0,0,1, ldraw_lib__92244p06()],
+  [1,16,11,-12.8,3.9,1,0,0,0,1,0,0,0,1, ldraw_lib__92244p06(realsolid)],
 // 1 16 -11 -12.8 3.9 1 0 0 0 1 0 0 0 1 92245p06.dat
-  [1,16,-11,-12.8,3.9,1,0,0,0,1,0,0,0,1, ldraw_lib__92245p06()],
+  [1,16,-11,-12.8,3.9,1,0,0,0,1,0,0,0,1, ldraw_lib__92245p06(realsolid)],
 ];
 module ldraw_lib__u9210p01c01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__u9210p01c01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__u9210p01c01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__u9210p01c01(line=0.2);

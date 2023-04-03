@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/1-4cyli.scad>
 use <s/973s01.scad>
-function ldraw_lib__973p9s() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__973p9s(realsolid=false) = [
 // 0 Minifig Torso with Firefighter Vest with Gold Badge and Belt with Radio Pattern
 // 0 Name: 973p9s.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -18,9 +19,9 @@ function ldraw_lib__973p9s() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01(realsolid)],
 // 1 0 0 -4 0 4.243 0 -4.243 0 -8 0 -4.243 0 -4.243 1-4cyli.dat
-  [1,0,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli()],
+  [1,0,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli(realsolid)],
 // 4 0 -12.51 24.08 -10 -10.06 24.08 -10 -11.49 22.73 -10 -11.88 22.73 -10
   [4,0,-12.51,24.08,-10,-10.06,24.08,-10,-11.49,22.73,-10,-11.88,22.73,-10],
 // 4 16 -12.51 20.12 -10 -14.89 20.83 -10 -12.36 22.81 -10 -11.88 22.73 -10
@@ -2485,5 +2486,5 @@ function ldraw_lib__973p9s() = [
   [3,16,-11.11,25.17,10,-11.26,25.79,10,-11.5,25.79,10],
 ];
 module ldraw_lib__973p9s(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__973p9s(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__973p9s(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__973p9s(line=0.2);

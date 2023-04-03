@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3004s01.scad>
-function ldraw_lib__3004p0d() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3004p0d(realsolid=false) = [
 // 0 Brick  1 x  2 with 24 Dark Bluish Grey Rectangles Pattern
 // 0 Name: 3004p0d.dat
 // 0 Author: Orion Pobursky [OrionP]
@@ -15,7 +16,7 @@ function ldraw_lib__3004p0d() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3004s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3004s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3004s01(realsolid)],
 // 
 // 4 72 -18.75 6.75 -10 -16.25 6.75 -10 -16.25 1.25 -10 -18.75 1.25 -10
   [4,72,-18.75,6.75,-10,-16.25,6.75,-10,-16.25,1.25,-10,-18.75,1.25,-10],
@@ -180,5 +181,5 @@ function ldraw_lib__3004p0d() = [
   [4,16,18.75,22.75,-10,-18.75,22.75,-10,-20,24,-10,20,24,-10],
 ];
 module ldraw_lib__3004p0d(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3004p0d(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3004p0d(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3004p0d(line=0.2);

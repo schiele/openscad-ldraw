@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4ndis.scad>
 use <s/2341s01.scad>
-function ldraw_lib__2341pz1() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2341pz1(realsolid=false) = [
 // 0 Slope Brick 45  3 x  1 Inverted Double without Inner Stopper Rings with  5 White Dots Pattern
 // 0 Name: 2341pz1.dat
 // 0 Author: Vincent Messenet [Cheenzo]
@@ -20,28 +21,28 @@ function ldraw_lib__2341pz1() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2341s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2341s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2341s01(realsolid)],
 // 
 // 1 15 10 5.25 -19.5 0 -1 0 0 0 4.5 4.5 0 0 4-4disc.dat
-  [1,15,10,5.25,-19.5,0,-1,0,0,0,4.5,4.5,0,0, ldraw_lib__4_4disc()],
+  [1,15,10,5.25,-19.5,0,-1,0,0,0,4.5,4.5,0,0, ldraw_lib__4_4disc(realsolid)],
 // 1 16 10 5.25 -19.5 0 -1 0 0 0 4.5 4.5 0 0 4-4ndis.dat
-  [1,16,10,5.25,-19.5,0,-1,0,0,0,4.5,4.5,0,0, ldraw_lib__4_4ndis()],
+  [1,16,10,5.25,-19.5,0,-1,0,0,0,4.5,4.5,0,0, ldraw_lib__4_4ndis(realsolid)],
 // 1 15 10 5.25 0 0 -1 0 0 0 4.5 4.5 0 0 4-4disc.dat
-  [1,15,10,5.25,0,0,-1,0,0,0,4.5,4.5,0,0, ldraw_lib__4_4disc()],
+  [1,15,10,5.25,0,0,-1,0,0,0,4.5,4.5,0,0, ldraw_lib__4_4disc(realsolid)],
 // 1 16 10 5.25 0 0 -1 0 0 0 4.5 4.5 0 0 4-4ndis.dat
-  [1,16,10,5.25,0,0,-1,0,0,0,4.5,4.5,0,0, ldraw_lib__4_4ndis()],
+  [1,16,10,5.25,0,0,-1,0,0,0,4.5,4.5,0,0, ldraw_lib__4_4ndis(realsolid)],
 // 1 15 10 5.25 19.5 0 -1 0 0 0 4.5 4.5 0 0 4-4disc.dat
-  [1,15,10,5.25,19.5,0,-1,0,0,0,4.5,4.5,0,0, ldraw_lib__4_4disc()],
+  [1,15,10,5.25,19.5,0,-1,0,0,0,4.5,4.5,0,0, ldraw_lib__4_4disc(realsolid)],
 // 1 16 10 5.25 19.5 0 -1 0 0 0 4.5 4.5 0 0 4-4ndis.dat
-  [1,16,10,5.25,19.5,0,-1,0,0,0,4.5,4.5,0,0, ldraw_lib__4_4ndis()],
+  [1,16,10,5.25,19.5,0,-1,0,0,0,4.5,4.5,0,0, ldraw_lib__4_4ndis(realsolid)],
 // 1 15 10 17.75 -7 0 -1 0 0 0 4.5 4.5 0 0 4-4disc.dat
-  [1,15,10,17.75,-7,0,-1,0,0,0,4.5,4.5,0,0, ldraw_lib__4_4disc()],
+  [1,15,10,17.75,-7,0,-1,0,0,0,4.5,4.5,0,0, ldraw_lib__4_4disc(realsolid)],
 // 1 16 10 17.75 -7 0 -1 0 0 0 4.5 4.5 0 0 4-4ndis.dat
-  [1,16,10,17.75,-7,0,-1,0,0,0,4.5,4.5,0,0, ldraw_lib__4_4ndis()],
+  [1,16,10,17.75,-7,0,-1,0,0,0,4.5,4.5,0,0, ldraw_lib__4_4ndis(realsolid)],
 // 1 15 10 17.75 7 0 -1 0 0 0 4.5 4.5 0 0 4-4disc.dat
-  [1,15,10,17.75,7,0,-1,0,0,0,4.5,4.5,0,0, ldraw_lib__4_4disc()],
+  [1,15,10,17.75,7,0,-1,0,0,0,4.5,4.5,0,0, ldraw_lib__4_4disc(realsolid)],
 // 1 16 10 17.75 7 0 -1 0 0 0 4.5 4.5 0 0 4-4ndis.dat
-  [1,16,10,17.75,7,0,-1,0,0,0,4.5,4.5,0,0, ldraw_lib__4_4ndis()],
+  [1,16,10,17.75,7,0,-1,0,0,0,4.5,4.5,0,0, ldraw_lib__4_4ndis(realsolid)],
 // 3 16 10 0 -30 10 .75 -24 10 .75 -19.5
   [3,16,10,0,-30,10,.75,-24,10,.75,-19.5],
 // 3 16 10 0 -30 10 .75 -19.5 10 .75 -15
@@ -112,5 +113,5 @@ function ldraw_lib__2341pz1() = [
   [4,16,10,22.25,2.5,10,17.75,2.5,10,17.75,-2.5,10,22.25,-2.5],
 ];
 module ldraw_lib__2341pz1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2341pz1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2341pz1(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2341pz1(line=0.2);

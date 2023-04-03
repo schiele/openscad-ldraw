@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <1-8edge.scad>
 use <rect3.scad>
-function ldraw_lib__boxjcyl4() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__boxjcyl4(realsolid=false) = [
 // 0 Box to Cylinder Joint 1: 4
 // 0 Name: boxjcyl4.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -25,16 +26,16 @@ function ldraw_lib__boxjcyl4() = [
 // 
 // 
 // 1 16 2.613 1 0 -2.41421 0 -1 0 -1 0 -1 0 2.41421 1-8edge.dat
-  [1,16,2.613,1,0,-2.41421,0,-1,0,-1,0,-1,0,2.41421, ldraw_lib__1_8edge()],
+  [1,16,2.613,1,0,-2.41421,0,-1,0,-1,0,-1,0,2.41421, ldraw_lib__1_8edge(realsolid)],
 // 3 16 0.19891 1 -1 0 1 -1 0 1 0
   [3,16,0.19891,1,-1,0,1,-1,0,1,0],
 // 3 16 0 1 0 0 1 1 0.19891 1 1
   [3,16,0,1,0,0,1,1,0.19891,1,1],
 // 1 16 0.09946 0.5 -1 0 0 0.09946 0.5 0 0 0 0.19891 0 rect3.dat
-  [1,16,0.09946,0.5,-1,0,0,0.09946,0.5,0,0,0,0.19891,0, ldraw_lib__rect3()],
+  [1,16,0.09946,0.5,-1,0,0,0.09946,0.5,0,0,0,0.19891,0, ldraw_lib__rect3(realsolid)],
 // 1 16 0.09946 0.5 1 0 0 0.09946 -0.5 0 0 0 -0.19891 0 rect3.dat
-  [1,16,0.09946,0.5,1,0,0,0.09946,-0.5,0,0,0,-0.19891,0, ldraw_lib__rect3()],
+  [1,16,0.09946,0.5,1,0,0,0.09946,-0.5,0,0,0,-0.19891,0, ldraw_lib__rect3(realsolid)],
 ];
 module ldraw_lib__boxjcyl4(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__boxjcyl4(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__boxjcyl4(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__boxjcyl4(line=0.2);

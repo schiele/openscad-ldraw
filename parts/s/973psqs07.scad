@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__973psqs07() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__973psqs07(realsolid=false) = [
 // 0 ~Minifig Torso with SW Imperial Officer Pattern Patch  3
 // 0 Name: s\973psqs07.dat
 // 0 Author: Daniel Goerner [TK-949]
@@ -53,5 +54,5 @@ function ldraw_lib__s__973psqs07() = [
   [4,16,0,7.47,-10,0.047,12.613,-10,0.16,7.31,-10,0.047,7.357,-10],
 ];
 module ldraw_lib__s__973psqs07(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__973psqs07(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__973psqs07(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__973psqs07(line=0.2);

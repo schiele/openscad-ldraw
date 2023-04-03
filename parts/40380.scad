@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/stud4.scad>
-function ldraw_lib__40380() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__40380(realsolid=false) = [
 // 0 ~Animal Dinosaur Legs Short, Left (Needs Work)
 // 0 Name: 40380.dat
 // 0 Author: Andy Westrate [westrate]
@@ -19,7 +20,7 @@ function ldraw_lib__40380() = [
 // 0 // Piece is part of an assembly; only visible surfaces have been rendered.
 // 
 // 1 16 -50 89.5 -10 1 0 0 0 -1 0 0 0 1 stud4.dat
-  [1,16,-50,89.5,-10,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4()],
+  [1,16,-50,89.5,-10,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4(realsolid)],
 // 3 16 0.1 51.69 -14 0.01 51.12 -15.39 -4.75 51.69 -14
   [3,16,0.1,51.69,-14,0.01,51.12,-15.39,-4.75,51.69,-14],
 // 3 16 0.05 51.89 3.88 -4.71 51.89 3.89 0.01 51.78 9.48
@@ -2857,5 +2858,5 @@ function ldraw_lib__40380() = [
 // 
 ];
 module ldraw_lib__40380(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__40380(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__40380(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__40380(line=0.2);

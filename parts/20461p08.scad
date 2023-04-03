@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <20460p08.scad>
-function ldraw_lib__20461p08() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__20461p08(realsolid=false) = [
 // 0 Minifig Leg Right with Dark Green Lower Leg Pattern
 // 0 Name: 20461p08.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -19,8 +20,8 @@ function ldraw_lib__20461p08() = [
 // 
 // 
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 20460p08.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__20460p08()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__20460p08(realsolid)],
 ];
 module ldraw_lib__20461p08(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__20461p08(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__20461p08(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__20461p08(line=0.2);

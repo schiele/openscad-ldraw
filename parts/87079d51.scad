@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <6074343h.scad>
 use <87079.scad>
-function ldraw_lib__87079d51() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__87079d51(realsolid=false) = [
 // 0 Tile  2 x  4 with White Short Lines and Arrows Left Sticker
 // 0 Name: 87079d51.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -20,10 +21,10 @@ function ldraw_lib__87079d51() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 87079.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__87079()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__87079(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 6074343h.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__6074343h()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__6074343h(realsolid)],
 ];
 module ldraw_lib__87079d51(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__87079d51(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__87079d51(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__87079d51(line=0.2);

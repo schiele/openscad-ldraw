@@ -3,7 +3,8 @@ use <../p/4-4edge.scad>
 use <../p/box5.scad>
 use <../p/connect.scad>
 use <../p/stud4.scad>
-function ldraw_lib__4729() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4729(realsolid=false) = [
 // 0 Brick  2 x  2 no Studs with Pin Vertical
 // 0 Name: 4729.dat
 // 0 Author: James Jessiman
@@ -22,11 +23,11 @@ function ldraw_lib__4729() = [
 // 
 // 
 // 1 16 0 4 0 1 0 0 0 -5 0 0 0 1 stud4.dat
-  [1,16,0,4,0,1,0,0,0,-5,0,0,0,1, ldraw_lib__stud4()],
+  [1,16,0,4,0,1,0,0,0,-5,0,0,0,1, ldraw_lib__stud4(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 24 0 16 0 0 0 -20 0 0 0 16 box5.dat
-  [1,16,0,24,0,16,0,0,0,-20,0,0,0,16, ldraw_lib__box5()],
+  [1,16,0,24,0,16,0,0,0,-20,0,0,0,16, ldraw_lib__box5(realsolid)],
 // 4 16 20 24 20 16 24 16 -16 24 16 -20 24 20
   [4,16,20,24,20,16,24,16,-16,24,16,-20,24,20],
 // 4 16 -20 24 20 -16 24 16 -16 24 -16 -20 24 -20
@@ -36,15 +37,15 @@ function ldraw_lib__4729() = [
 // 4 16 20 24 -20 16 24 -16 16 24 16 20 24 20
   [4,16,20,24,-20,16,24,-16,16,24,16,20,24,20],
 // 1 16 0 24 0 20 0 0 0 -24 0 0 0 20 box5.dat
-  [1,16,0,24,0,20,0,0,0,-24,0,0,0,20, ldraw_lib__box5()],
+  [1,16,0,24,0,20,0,0,0,-24,0,0,0,20, ldraw_lib__box5(realsolid)],
 // 1 16 0 0 0 4 0 0 0 1 0 0 0 4 4-4edge.dat
-  [1,16,0,0,0,4,0,0,0,1,0,0,0,4, ldraw_lib__4_4edge()],
+  [1,16,0,0,0,4,0,0,0,1,0,0,0,4, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 0 0 8 0 0 0 1 0 0 0 8 4-4edge.dat
-  [1,16,0,0,0,8,0,0,0,1,0,0,0,8, ldraw_lib__4_4edge()],
+  [1,16,0,0,0,8,0,0,0,1,0,0,0,8, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 connect.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__connect()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__connect(realsolid)],
 // 0
 ];
 module ldraw_lib__4729(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4729(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4729(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4729(line=0.2);

@@ -3,7 +3,8 @@ use <30187.scad>
 use <30188.scad>
 use <30189c01.scad>
 use <6014c01.scad>
-function ldraw_lib__30187c01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__30187c01(realsolid=false) = [
 // 0 Bike  3 Wheel Motorcycle with Light_Grey Motor and White Wheels
 // 0 Name: 30187c01.dat
 // 0 Author: Paul Easter [pneaster]
@@ -28,16 +29,16 @@ function ldraw_lib__30187c01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 30187.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__30187()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__30187(realsolid)],
 // 1 7 0 30 0 1 0 0 0 1 0 0 0 1 30188.dat
-  [1,7,0,30,0,1,0,0,0,1,0,0,0,1, ldraw_lib__30188()],
+  [1,7,0,30,0,1,0,0,0,1,0,0,0,1, ldraw_lib__30188(realsolid)],
 // 1 16 0 0 -84 1 0 0 0 1 0 0 0 1 30189c01.dat
-  [1,16,0,0,-84,1,0,0,0,1,0,0,0,1, ldraw_lib__30189c01()],
+  [1,16,0,0,-84,1,0,0,0,1,0,0,0,1, ldraw_lib__30189c01(realsolid)],
 // 1 15 36 30 0 0 0 -1 0 1 0 -1 0 0 6014c01.dat
-  [1,15,36,30,0,0,0,-1,0,1,0,-1,0,0, ldraw_lib__6014c01()],
+  [1,15,36,30,0,0,0,-1,0,1,0,-1,0,0, ldraw_lib__6014c01(realsolid)],
 // 1 15 -36 30 0 0 0 1 0 1 0 -1 0 0 6014c01.dat
-  [1,15,-36,30,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__6014c01()],
+  [1,15,-36,30,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__6014c01(realsolid)],
 ];
 module ldraw_lib__30187c01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__30187c01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__30187c01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__30187c01(line=0.2);

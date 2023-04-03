@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/4-4cylc.scad>
-function ldraw_lib__30924() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__30924(realsolid=false) = [
 // 0 Minifig Arm Bandage Wrapped
 // 0 Name: 30924.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -19,7 +20,7 @@ function ldraw_lib__30924() = [
 // 
 // 
 // 1 16 0 0 0 4 0 0 0 -8.5 0 0 0 4 4-4cylc.dat
-  [1,16,0,0,0,4,0,0,0,-8.5,0,0,0,4, ldraw_lib__4_4cylc()],
+  [1,16,0,0,0,4,0,0,0,-8.5,0,0,0,4, ldraw_lib__4_4cylc(realsolid)],
 // 3 16 8.253 2.003 12.713 7.301 3.412 15.117 8 1.404 16.864
   [3,16,8.253,2.003,12.713,7.301,3.412,15.117,8,1.404,16.864],
 // 3 16 8.253 2.003 12.713 7.147 4.144 12.548 7.301 3.412 15.117
@@ -1946,5 +1947,5 @@ function ldraw_lib__30924() = [
   [5,24,-7.545,3.929,9.302,-8.009,1.963,9.022,-6.673,3.926,8.864,-8.475,2.226,9.543],
 ];
 module ldraw_lib__30924(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__30924(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__30924(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__30924(line=0.2);

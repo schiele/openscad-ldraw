@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/1-4chrd.scad>
 use <../p/1-4cyli.scad>
 use <s/logoferraris05.scad>
-function ldraw_lib__6009312e() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6009312e(realsolid=false) = [
 // 0 Sticker  2.2 x  1.8 with Logo Scuderia Ferrari on Red Background
 // 0 Name: 6009312e.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -21,31 +22,31 @@ function ldraw_lib__6009312e() = [
 // 0 // Primitives
 // 
 // 1 16 -16 0 20 0 0 -2 0 -1 0 2 0 0 1-4chrd.dat
-  [1,16,-16,0,20,0,0,-2,0,-1,0,2,0,0, ldraw_lib__1_4chrd()],
+  [1,16,-16,0,20,0,0,-2,0,-1,0,2,0,0, ldraw_lib__1_4chrd(realsolid)],
 // 1 16 16 0 20 2 0 0 0 -1 0 0 0 2 1-4chrd.dat
-  [1,16,16,0,20,2,0,0,0,-1,0,0,0,2, ldraw_lib__1_4chrd()],
+  [1,16,16,0,20,2,0,0,0,-1,0,0,0,2, ldraw_lib__1_4chrd(realsolid)],
 // 1 16 -16 0 -20 -2 0 0 0 -1 0 0 0 -2 1-4chrd.dat
-  [1,16,-16,0,-20,-2,0,0,0,-1,0,0,0,-2, ldraw_lib__1_4chrd()],
+  [1,16,-16,0,-20,-2,0,0,0,-1,0,0,0,-2, ldraw_lib__1_4chrd(realsolid)],
 // 1 16 16 0 -20 0 0 2 0 -1 0 -2 0 0 1-4chrd.dat
-  [1,16,16,0,-20,0,0,2,0,-1,0,-2,0,0, ldraw_lib__1_4chrd()],
+  [1,16,16,0,-20,0,0,2,0,-1,0,-2,0,0, ldraw_lib__1_4chrd(realsolid)],
 // 1 16 -16 -0.25 20 0 0 -2 0 0.25 0 2 0 0 1-4cyli.dat
-  [1,16,-16,-0.25,20,0,0,-2,0,0.25,0,2,0,0, ldraw_lib__1_4cyli()],
+  [1,16,-16,-0.25,20,0,0,-2,0,0.25,0,2,0,0, ldraw_lib__1_4cyli(realsolid)],
 // 1 16 16 -0.25 20 2 0 0 0 0.25 0 0 0 2 1-4cyli.dat
-  [1,16,16,-0.25,20,2,0,0,0,0.25,0,0,0,2, ldraw_lib__1_4cyli()],
+  [1,16,16,-0.25,20,2,0,0,0,0.25,0,0,0,2, ldraw_lib__1_4cyli(realsolid)],
 // 1 16 -16 -0.25 -20 -2 0 0 0 0.25 0 0 0 -2 1-4cyli.dat
-  [1,16,-16,-0.25,-20,-2,0,0,0,0.25,0,0,0,-2, ldraw_lib__1_4cyli()],
+  [1,16,-16,-0.25,-20,-2,0,0,0,0.25,0,0,0,-2, ldraw_lib__1_4cyli(realsolid)],
 // 1 16 16 -0.25 -20 0 0 2 0 0.25 0 -2 0 0 1-4cyli.dat
-  [1,16,16,-0.25,-20,0,0,2,0,0.25,0,-2,0,0, ldraw_lib__1_4cyli()],
+  [1,16,16,-0.25,-20,0,0,2,0,0.25,0,-2,0,0, ldraw_lib__1_4cyli(realsolid)],
 // 1 4 -16 -0.25 20 0 0 -2 0 1 0 2 0 0 1-4chrd.dat
-  [1,4,-16,-0.25,20,0,0,-2,0,1,0,2,0,0, ldraw_lib__1_4chrd()],
+  [1,4,-16,-0.25,20,0,0,-2,0,1,0,2,0,0, ldraw_lib__1_4chrd(realsolid)],
 // 1 4 16 -0.25 20 2 0 0 0 1 0 0 0 2 1-4chrd.dat
-  [1,4,16,-0.25,20,2,0,0,0,1,0,0,0,2, ldraw_lib__1_4chrd()],
+  [1,4,16,-0.25,20,2,0,0,0,1,0,0,0,2, ldraw_lib__1_4chrd(realsolid)],
 // 1 4 -16 -0.25 -20 -2 0 0 0 1 0 0 0 -2 1-4chrd.dat
-  [1,4,-16,-0.25,-20,-2,0,0,0,1,0,0,0,-2, ldraw_lib__1_4chrd()],
+  [1,4,-16,-0.25,-20,-2,0,0,0,1,0,0,0,-2, ldraw_lib__1_4chrd(realsolid)],
 // 1 4 16 -0.25 -20 0 0 2 0 1 0 -2 0 0 1-4chrd.dat
-  [1,4,16,-0.25,-20,0,0,2,0,1,0,-2,0,0, ldraw_lib__1_4chrd()],
+  [1,4,16,-0.25,-20,0,0,2,0,1,0,-2,0,0, ldraw_lib__1_4chrd(realsolid)],
 // 1 4 0 -0.25 0 0.41325 0 0 0 1 0 0 0 0.41325 s\logoferraris05.dat
-  [1,4,0,-0.25,0,0.41325,0,0,0,1,0,0,0,0.41325, ldraw_lib__s__logoferraris05()],
+  [1,4,0,-0.25,0,0.41325,0,0,0,1,0,0,0,0.41325, ldraw_lib__s__logoferraris05(realsolid)],
 // 0 // Top face
 // 4 4 -16 -0.25 22 -18 -0.25 20 18 -0.25 20 16 -0.25 22
   [4,4,-16,-0.25,22,-18,-0.25,20,18,-0.25,20,16,-0.25,22],
@@ -77,5 +78,5 @@ function ldraw_lib__6009312e() = [
   [4,16,18,0,-20,16,0,-22,-16,0,-22,-18,0,-20],
 ];
 module ldraw_lib__6009312e(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6009312e(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6009312e(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6009312e(line=0.2);

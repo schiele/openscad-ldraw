@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/3846s01.scad>
 use <s/973p4dl.scad>
-function ldraw_lib__3846p4d() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3846p4d(realsolid=false) = [
 // 0 Minifig Shield Triangular with Royal Knights Lion Pattern
 // 0 Name: 3846p4d.dat
 // 0 Author: Bernd Broich [bbroich]
@@ -25,11 +26,11 @@ function ldraw_lib__3846p4d() = [
 // 
 // 0 // Subparts
 // 1 16 0 6 -10 0.8 0 0 0 0.8 0 0 0 1 s\973p4dl.dat
-  [1,16,0,6,-10,0.8,0,0,0,0.8,0,0,0,1, ldraw_lib__s__973p4dl()],
+  [1,16,0,6,-10,0.8,0,0,0,0.8,0,0,0,1, ldraw_lib__s__973p4dl(realsolid)],
 // 1 16 0 6 -10 -0.8 0 0 0 0.8 0 0 0 1 s\973p4dl.dat
-  [1,16,0,6,-10,-0.8,0,0,0,0.8,0,0,0,1, ldraw_lib__s__973p4dl()],
+  [1,16,0,6,-10,-0.8,0,0,0,0.8,0,0,0,1, ldraw_lib__s__973p4dl(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3846s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3846s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3846s01(realsolid)],
 // 0 // Border
 // 4 1 0 32.37 -10 8.76 24.57 -10 7.665 22 -10 0 28.824 -10
   [4,1,0,32.37,-10,8.76,24.57,-10,7.665,22,-10,0,28.824,-10],
@@ -181,5 +182,5 @@ function ldraw_lib__3846p4d() = [
   [4,16,-7.665,22,-10,-7.4,18.4,-10,-8.2,17.2,-10,-13.064,14.22,-10],
 ];
 module ldraw_lib__3846p4d(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3846p4d(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3846p4d(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3846p4d(line=0.2);

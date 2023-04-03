@@ -3,7 +3,8 @@ use <../p/4-4cyli.scad>
 use <../p/4-4edge.scad>
 use <../p/4-4rin10.scad>
 use <../p/4-4ring9.scad>
-function ldraw_lib__48915() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__48915(realsolid=false) = [
 // 0 ~Technic Shock Absorber 11L/9L Setting Ring
 // 0 Name: 48915.dat
 // 0 Author: Guy Vivan [guyvivan]
@@ -18,19 +19,19 @@ function ldraw_lib__48915() = [
 // 
 // 
 // 1 16 0 60 0 22 0 0 0 8 0 0 0 22 4-4cyli.dat
-  [1,16,0,60,0,22,0,0,0,8,0,0,0,22, ldraw_lib__4_4cyli()],
+  [1,16,0,60,0,22,0,0,0,8,0,0,0,22, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 68 0 22 0 0 0 1 0 0 0 22 4-4edge.dat
-  [1,16,0,68,0,22,0,0,0,1,0,0,0,22, ldraw_lib__4_4edge()],
+  [1,16,0,68,0,22,0,0,0,1,0,0,0,22, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 68 0 2 0 0 0 -1 0 0 0 2 4-4ring9.dat
-  [1,16,0,68,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__4_4ring9()],
+  [1,16,0,68,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__4_4ring9(realsolid)],
 // 1 16 0 68 0 2 0 0 0 -1 0 0 0 2 4-4rin10.dat
-  [1,16,0,68,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__4_4rin10()],
+  [1,16,0,68,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__4_4rin10(realsolid)],
 // 1 16 0 68 0 18 0 0 0 1 0 0 0 18 4-4edge.dat
-  [1,16,0,68,0,18,0,0,0,1,0,0,0,18, ldraw_lib__4_4edge()],
+  [1,16,0,68,0,18,0,0,0,1,0,0,0,18, ldraw_lib__4_4edge(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 60 0 18 0 0 0 8 0 0 0 18 4-4cyli.dat
-  [1,16,0,60,0,18,0,0,0,8,0,0,0,18, ldraw_lib__4_4cyli()],
+  [1,16,0,60,0,18,0,0,0,8,0,0,0,18, ldraw_lib__4_4cyli(realsolid)],
 // 2 24 8.426 43 -20.328 10 43 -19.274
   [2,24,8.426,43,-20.328,10,43,-19.274],
 // 4 16 8.426 60 -20.328 10 60 -19.274 10 43 -19.274 8.426 43 -20.328
@@ -866,5 +867,5 @@ function ldraw_lib__48915() = [
 // 0
 ];
 module ldraw_lib__48915(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__48915(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__48915(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__48915(line=0.2);

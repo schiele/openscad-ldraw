@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__technic1a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__technic1a(realsolid=false) = [
 // 0 ~Technic Logo (Rounded Font) - Foreground
 // 0 Name: s\technic1a.dat
 // 0 Author: Michael Heidemann [mikeheide]
@@ -251,5 +252,5 @@ function ldraw_lib__s__technic1a() = [
   [3,16,10.99,0,-3.89,11.58,0,-1.4,9.65,0,3.18],
 ];
 module ldraw_lib__s__technic1a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__technic1a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__technic1a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__technic1a(line=0.2);

@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/4-4edge.scad>
 use <../p/confric.scad>
-function ldraw_lib__10127() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__10127(realsolid=false) = [
 // 0 Bigfig Hand Left
 // 0 Name: 10127.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -23,11 +24,11 @@ function ldraw_lib__10127() = [
 // 
 // 
 // 1 16 0 0 0 0 0 1 -1 0 0 0 -1 0 confric.dat
-  [1,16,0,0,0,0,0,1,-1,0,0,0,-1,0, ldraw_lib__confric()],
+  [1,16,0,0,0,0,0,1,-1,0,0,0,-1,0, ldraw_lib__confric(realsolid)],
 // 1 16 0 0 0 0 0 4 -4 0 0 0 -1 0 4-4edge.dat
-  [1,16,0,0,0,0,0,4,-4,0,0,0,-1,0, ldraw_lib__4_4edge()],
+  [1,16,0,0,0,0,0,4,-4,0,0,0,-1,0, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 0 0 0 0 8 -8 0 0 0 -1 0 4-4edge.dat
-  [1,16,0,0,0,0,0,8,-8,0,0,0,-1,0, ldraw_lib__4_4edge()],
+  [1,16,0,0,0,0,0,8,-8,0,0,0,-1,0, ldraw_lib__4_4edge(realsolid)],
 // 3 16 4.851 -17.993 -13.05 2.234 -17.956 -10.534 -0.379 -18.284 -11.337
   [3,16,4.851,-17.993,-13.05,2.234,-17.956,-10.534,-0.379,-18.284,-11.337],
 // 3 16 -1.211 -18.792 -14.884 -0.379 -18.284 -11.337 -1.729 -18.969 -11.43
@@ -2199,5 +2200,5 @@ function ldraw_lib__10127() = [
   [5,24,4.851,-17.993,-13.05,3.696,-18.7,-18.469,2.828,-18.5,-17.171,7.249,-17.51,-12.559],
 ];
 module ldraw_lib__10127(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__10127(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__10127(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__10127(line=0.2);

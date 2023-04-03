@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <3710.scad>
 use <../p/joint8socket2.scad>
-function ldraw_lib__98263() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__98263(realsolid=false) = [
 // 0 Plate  1 x  4 with Socket Joint-8 Square
 // 0 Name: 98263.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -20,15 +21,15 @@ function ldraw_lib__98263() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 3710.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3710()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3710(realsolid)],
 // 0 //
 // 4 16 10 0 -10 -10 0 -10 -10 -6 -10 10 -6 -10
   [4,16,10,0,-10,-10,0,-10,-10,-6,-10,10,-6,-10],
 // 4 16 10 14 -10 -10 14 -10 -10 8 -10 10 8 -10
   [4,16,10,14,-10,-10,14,-10,-10,8,-10,10,8,-10],
 // 1 16 0 4 -20 1 0 0 0 1 0 0 0 1 joint8socket2.dat
-  [1,16,0,4,-20,1,0,0,0,1,0,0,0,1, ldraw_lib__joint8socket2()],
+  [1,16,0,4,-20,1,0,0,0,1,0,0,0,1, ldraw_lib__joint8socket2(realsolid)],
 ];
 module ldraw_lib__98263(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__98263(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__98263(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__98263(line=0.2);

@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/4-4disc.scad>
 use <s/98100s01.scad>
-function ldraw_lib__98100p01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__98100p01(realsolid=false) = [
 // 0 Cone  2 x  2 Truncated with Four Black Trapezoids Pattern
 // 0 Name: 98100p01.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -21,10 +22,10 @@ function ldraw_lib__98100p01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\98100s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98100s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98100s01(realsolid)],
 // 
 // 1 16 0 0 0 14.5 0 0 0 1 0 0 0 14.5 4-4disc.dat
-  [1,16,0,0,0,14.5,0,0,0,1,0,0,0,14.5, ldraw_lib__4_4disc()],
+  [1,16,0,0,0,14.5,0,0,0,1,0,0,0,14.5, ldraw_lib__4_4disc(realsolid)],
 // 
 // 4 0 -2.41005 1.91005 -14.67734 -2.86424 1.60657 -14.4827 -3.4 1.5 -14.33953 -2.10657 2.36424 -14.89382
   [4,0,-2.41005,1.91005,-14.67734,-2.86424,1.60657,-14.4827,-3.4,1.5,-14.33953,-2.10657,2.36424,-14.89382],
@@ -352,5 +353,5 @@ function ldraw_lib__98100p01() = [
   [5,24,-7.654,16,18.478,-5.54915,0,13.39655,-14.142,16,14.142,0,16,20],
 ];
 module ldraw_lib__98100p01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__98100p01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__98100p01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__98100p01(line=0.2);

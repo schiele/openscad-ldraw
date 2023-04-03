@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3070bs01.scad>
-function ldraw_lib__3070bp0j() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3070bp0j(realsolid=false) = [
 // 0 Tile  1 x  1 with Cursive Writing Pattern
 // 0 Name: 3070bp0j.dat
 // 0 Author: Vincent Messenet [Cheenzo]
@@ -17,7 +18,7 @@ function ldraw_lib__3070bp0j() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3070bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3070bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3070bs01(realsolid)],
 // 
 // 4 0 6.751 0 8.832 6.613 0 8.971 6.428 0 9.017 6.243 0 8.925
   [4,0,6.751,0,8.832,6.613,0,8.971,6.428,0,9.017,6.243,0,8.925],
@@ -851,5 +852,5 @@ function ldraw_lib__3070bp0j() = [
   [3,0,3.052,0,-3.977,3.468,0,-4.578,3.376,0,-3.746],
 ];
 module ldraw_lib__3070bp0j(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3070bp0j(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3070bp0j(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3070bp0j(line=0.2);

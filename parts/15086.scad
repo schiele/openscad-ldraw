@@ -2,7 +2,8 @@ use <../lib.scad>
 use <s/15086s01.scad>
 use <../p/stud2.scad>
 use <../p/stug2-2x1.scad>
-function ldraw_lib__15086() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__15086(realsolid=false) = [
 // 0 Minifig Armour Shoulder Pads with Neck Protection, 1 Stud on Front, 2 Studs on Back
 // 0 Name: 15086.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -22,13 +23,13 @@ function ldraw_lib__15086() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\15086s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__15086s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__15086s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\15086s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__15086s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__15086s01(realsolid)],
 // 1 16 0 10 -14 0 0 1 1 0 0 0 1 0 stud2.dat
-  [1,16,0,10,-14,0,0,1,1,0,0,0,1,0, ldraw_lib__stud2()],
+  [1,16,0,10,-14,0,0,1,1,0,0,0,1,0, ldraw_lib__stud2(realsolid)],
 // 1 16 0 10 14 0 0 -1 1 0 0 0 -1 0 stug2-2x1.dat
-  [1,16,0,10,14,0,0,-1,1,0,0,0,-1,0, ldraw_lib__stug2_2x1()],
+  [1,16,0,10,14,0,0,-1,1,0,0,0,-1,0, ldraw_lib__stug2_2x1(realsolid)],
 // 3 16 0 19.612 -14 3.338 1.934 -14 -3.338 1.934 -14
   [3,16,0,19.612,-14,3.338,1.934,-14,-3.338,1.934,-14],
 // 4 16 -3.338 1.934 -14 3.338 1.934 -14 2.46 1.669 -13.98 -2.46 1.669 -13.98
@@ -73,5 +74,5 @@ function ldraw_lib__15086() = [
   [5,24,0,-1.068,19.171,0,-3.669,21.398,5.303,-1.42,18.366,-5.303,-1.42,18.366],
 ];
 module ldraw_lib__15086(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__15086(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__15086(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__15086(line=0.2);

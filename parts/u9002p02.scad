@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4ndis.scad>
 use <s/u9001s01.scad>
-function ldraw_lib__u9002p02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__u9002p02(realsolid=false) = [
 // 0 ~Electric Switch: Key Right with Green Signal Pattern
 // 0 Name: u9002p02.dat
 // 0 Author: Steffen [Steffen]
@@ -22,7 +23,7 @@ function ldraw_lib__u9002p02() = [
 // 
 // 
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\u9001s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__u9001s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__u9001s01(realsolid)],
 // 4 16 -40 -31 0 -30.75 -31 -6.7 21.4 -31 -6.7 40 -31 0
   [4,16,-40,-31,0,-30.75,-31,-6.7,21.4,-31,-6.7,40,-31,0],
 // 4 16 -30.75 -31 -83.15 -30.75 -31 -6.7 -40 -31 0 -40 -31 -160
@@ -40,10 +41,10 @@ function ldraw_lib__u9002p02() = [
 // 4 0 21.4 -31 -6.7 -30.75 -31 -6.7 -19.0034 -31 -16.6716 9.6534 -31 -16.6716
   [4,0,21.4,-31,-6.7,-30.75,-31,-6.7,-19.0034,-31,-16.6716,9.6534,-31,-16.6716],
 // 1 2 -4.675 -31 -31 14.3284 0 0 0 1 0 0 0 -14.3284 4-4disc.dat
-  [1,2,-4.675,-31,-31,14.3284,0,0,0,1,0,0,0,-14.3284, ldraw_lib__4_4disc()],
+  [1,2,-4.675,-31,-31,14.3284,0,0,0,1,0,0,0,-14.3284, ldraw_lib__4_4disc(realsolid)],
 // 1 0 -4.675 -31 -31 14.3284 0 0 0 1 0 0 0 -14.3284 4-4ndis.dat
-  [1,0,-4.675,-31,-31,14.3284,0,0,0,1,0,0,0,-14.3284, ldraw_lib__4_4ndis()],
+  [1,0,-4.675,-31,-31,14.3284,0,0,0,1,0,0,0,-14.3284, ldraw_lib__4_4ndis(realsolid)],
 ];
 module ldraw_lib__u9002p02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__u9002p02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__u9002p02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__u9002p02(line=0.2);

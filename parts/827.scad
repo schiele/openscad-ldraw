@@ -4,7 +4,8 @@ use <871.scad>
 use <872.scad>
 use <873.scad>
 use <874.scad>
-function ldraw_lib__827() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__827(realsolid=false) = [
 // 0 Tractor Chassis with Steering Wheel and Steering Linkage
 // 0 Name: 827.dat
 // 0 Author: Arne Hackstein
@@ -24,16 +25,16 @@ function ldraw_lib__827() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 870.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__870()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__870(realsolid)],
 // 1 0 26 14 0 0.92 0.39 0 -0.39 0.92 0 0 0 1 871.dat
-  [1,0,26,14,0,0.92,0.39,0,-0.39,0.92,0,0,0,1, ldraw_lib__871()],
+  [1,0,26,14,0,0.92,0.39,0,-0.39,0.92,0,0,0,1, ldraw_lib__871(realsolid)],
 // 1 0 60 0 0 1 0 0 0 1 0 0 0 1 872.dat
-  [1,0,60,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__872()],
+  [1,0,60,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__872(realsolid)],
 // 1 0 90 0 0 -1 0 0 0 1 0 0 0 -1 873.dat
-  [1,0,90,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__873()],
+  [1,0,90,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__873(realsolid)],
 // 1 0 -7 -64 0 0.92 0.39 0 -0.39 0.92 0 0 0 1 874.dat
-  [1,0,-7,-64,0,0.92,0.39,0,-0.39,0.92,0,0,0,1, ldraw_lib__874()],
+  [1,0,-7,-64,0,0.92,0.39,0,-0.39,0.92,0,0,0,1, ldraw_lib__874(realsolid)],
 ];
 module ldraw_lib__827(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__827(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__827(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__827(line=0.2);

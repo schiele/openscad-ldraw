@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <2348b.scad>
-function ldraw_lib__2348() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2348(realsolid=false) = [
 // 0 ~Moved to 2348b
 // 0 Name: 2348.dat
 // 0 Author: [PTadmin]
@@ -17,9 +18,9 @@ function ldraw_lib__2348() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 2348b.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2348b()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2348b(realsolid)],
 // 
 ];
 module ldraw_lib__2348(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2348(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2348(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2348(line=0.2);

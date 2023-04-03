@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/15423s01.scad>
-function ldraw_lib__15423() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__15423(realsolid=false) = [
 // 0 Minifig Body Armour Vest
 // 0 Name: 15423.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -19,7 +20,7 @@ function ldraw_lib__15423() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\15423s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__15423s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__15423s01(realsolid)],
 // 0 // Patternable Area Front
 // 4 16 0 6.899 -14.855 -4.383 1.626 -14.438 -6.506 4.897 -14.457 -4.632 7.133 -14.636
   [4,16,0,6.899,-14.855,-4.383,1.626,-14.438,-6.506,4.897,-14.457,-4.632,7.133,-14.636],
@@ -188,5 +189,5 @@ function ldraw_lib__15423() = [
   [3,16,12.172,4.16,13.361,12.224,6.535,13.359,7.343,6.199,14.341],
 ];
 module ldraw_lib__15423(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__15423(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__15423(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__15423(line=0.2);

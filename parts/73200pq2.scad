@@ -2,7 +2,8 @@ use <../lib.scad>
 use <3815bpq2.scad>
 use <3816bpq1.scad>
 use <3817bpq1.scad>
-function ldraw_lib__73200pq2() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__73200pq2(realsolid=false) = [
 // 0 Minifig Hips and Legs with DarkBlue and Gold Loincloth Pattern
 // 0 Name: 73200pq2.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -21,12 +22,12 @@ function ldraw_lib__73200pq2() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 3815bpq2.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3815bpq2()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3815bpq2(realsolid)],
 // 1 16 0 12 0 1 0 0 0 1 0 0 0 1 3816bpq1.dat
-  [1,16,0,12,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3816bpq1()],
+  [1,16,0,12,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3816bpq1(realsolid)],
 // 1 16 0 12 0 1 0 0 0 1 0 0 0 1 3817bpq1.dat
-  [1,16,0,12,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3817bpq1()],
+  [1,16,0,12,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3817bpq1(realsolid)],
 ];
 module ldraw_lib__73200pq2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__73200pq2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__73200pq2(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__73200pq2(line=0.2);

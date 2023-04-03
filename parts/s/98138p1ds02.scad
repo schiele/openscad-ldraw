@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__98138p1ds02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__98138p1ds02(realsolid=false) = [
 // 0 ~Tile  1 x  1 Round with Heart and Medium Lilac Banner with "BFF" Pattern - Heart
 // 0 Name: s\98138p1ds02.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -70,5 +71,5 @@ function ldraw_lib__s__98138p1ds02() = [
   [3,16,6.53,0,2.77,6.05,0,1.86,6.61,0,2.24],
 ];
 module ldraw_lib__s__98138p1ds02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__98138p1ds02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__98138p1ds02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__98138p1ds02(line=0.2);

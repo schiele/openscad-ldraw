@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__4603014c() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4603014c(realsolid=false) = [
 // 0 Sticker  5.2 x  2.0 with Pink Ice Cream Sundae
 // 0 Name: 4603014c.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -593,5 +594,5 @@ function ldraw_lib__4603014c() = [
   [5,24,17.3,-.25,42.5,17.3,0,42.5,20,-.25,42,14.5,-.25,43.1],
 ];
 module ldraw_lib__4603014c(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4603014c(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4603014c(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4603014c(line=0.2);

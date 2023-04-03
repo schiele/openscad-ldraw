@@ -2,7 +2,8 @@ use <../../lib.scad>
 use <4-4cyli.scad>
 use <4-4disc.scad>
 use <4-4edge.scad>
-function ldraw_lib__48__4_4cylc() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__48__4_4cylc(realsolid=false) = [
 // 0 Hi-Res Cylinder Closed 1.0
 // 0 Name: 48\4-4cylc.dat
 // 0 Author: Alex Taylor [anathema]
@@ -18,15 +19,15 @@ function ldraw_lib__48__4_4cylc() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 48\4-4edge.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__48__4_4edge()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__48__4_4edge(realsolid)],
 // 1 16 0 1 0 1 0 0 0 1 0 0 0 1 48\4-4edge.dat
-  [1,16,0,1,0,1,0,0,0,1,0,0,0,1, ldraw_lib__48__4_4edge()],
+  [1,16,0,1,0,1,0,0,0,1,0,0,0,1, ldraw_lib__48__4_4edge(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 48\4-4disc.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__48__4_4disc()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__48__4_4disc(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 48\4-4cyli.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__48__4_4cyli()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__48__4_4cyli(realsolid)],
 // 0
 ];
 module ldraw_lib__48__4_4cylc(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__48__4_4cylc(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__48__4_4cylc(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__48__4_4cylc(line=0.2);

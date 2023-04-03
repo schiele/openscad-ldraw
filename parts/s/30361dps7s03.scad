@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/1-4ndis.scad>
-function ldraw_lib__s__30361dps7s03() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__30361dps7s03(realsolid=false) = [
 // 0 ~Cylinder  2 x  2 x  2 Robot Body with SW Astromech Pattern - Centre Panel Background
 // 0 Name: s\30361dps7s03.dat
 // 0 Author: Willy Tschager [Holly-Wood]
@@ -15,13 +16,13 @@ function ldraw_lib__s__30361dps7s03() = [
 // 
 // 
 // 1 16 -.9 5 -19.821 0 0 -1.3 -1.3 0 0 0 1 .26 1-4ndis.dat
-  [1,16,-.9,5,-19.821,0,0,-1.3,-1.3,0,0,0,1,.26, ldraw_lib__1_4ndis()],
+  [1,16,-.9,5,-19.821,0,0,-1.3,-1.3,0,0,0,1,.26, ldraw_lib__1_4ndis(realsolid)],
 // 1 16 -.9 8.2 -19.821 -1.3 0 0 0 0 1.3 .26 1 0 1-4ndis.dat
-  [1,16,-.9,8.2,-19.821,-1.3,0,0,0,0,1.3,.26,1,0, ldraw_lib__1_4ndis()],
+  [1,16,-.9,8.2,-19.821,-1.3,0,0,0,0,1.3,.26,1,0, ldraw_lib__1_4ndis(realsolid)],
 // 1 16 -.9 15.6 -19.821 0 0 -1.3 1.3 0 0 0 1 .26 1-4ndis.dat
-  [1,16,-.9,15.6,-19.821,0,0,-1.3,1.3,0,0,0,1,.26, ldraw_lib__1_4ndis()],
+  [1,16,-.9,15.6,-19.821,0,0,-1.3,1.3,0,0,0,1,.26, ldraw_lib__1_4ndis(realsolid)],
 // 1 16 -.9 12.4 -19.821 -1.3 0 0 0 0 -1.3 .26 1 0 1-4ndis.dat
-  [1,16,-.9,12.4,-19.821,-1.3,0,0,0,0,-1.3,.26,1,0, ldraw_lib__1_4ndis()],
+  [1,16,-.9,12.4,-19.821,-1.3,0,0,0,0,-1.3,.26,1,0, ldraw_lib__1_4ndis(realsolid)],
 // 
 // 3 16 -2.2 3.7 -19.561 -.9 3.7 -19.821 -2.2 3.4 -19.561
   [3,16,-2.2,3.7,-19.561,-.9,3.7,-19.821,-2.2,3.4,-19.561],
@@ -37,5 +38,5 @@ function ldraw_lib__s__30361dps7s03() = [
   [4,16,-2.2,17.2,-19.561,0,17.2,-20,0,16.9,-20,-.9,16.9,-19.821],
 ];
 module ldraw_lib__s__30361dps7s03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__30361dps7s03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__30361dps7s03(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__30361dps7s03(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__6153754e() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6153754e(realsolid=false) = [
 // 0 Sticker  0.8 x  2.8 with Black "P51 AK1" on Transparent Background
 // 0 Name: 6153754e.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -17,7 +18,7 @@ function ldraw_lib__6153754e() = [
 // 
 // 
 // 1 16 0 -0.25 0 28 0 0 0 0.25 0 0 0 8 box5-12.dat
-  [1,16,0,-0.25,0,28,0,0,0,0.25,0,0,0,8, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,28,0,0,0,0.25,0,0,0,8, ldraw_lib__box5_12(realsolid)],
 // 3 0 -22.51 -0.25 -3.21 -24.37 -0.25 -5.95 -22.51 -0.25 -5.95
   [3,0,-22.51,-0.25,-3.21,-24.37,-0.25,-5.95,-22.51,-0.25,-5.95],
 // 4 0 -21.84 -0.25 -1.81 -22.51 -0.25 -1.81 -22.51 -0.25 -3.21 -21.73 -0.25 -3.21
@@ -678,5 +679,5 @@ function ldraw_lib__6153754e() = [
   [3,16,-28,-0.25,8,-25.03,-0.25,3.97,-25.1,-0.25,4.19],
 ];
 module ldraw_lib__6153754e(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6153754e(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6153754e(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6153754e(line=0.2);

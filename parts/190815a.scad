@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__190815a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__190815a(realsolid=false) = [
 // 0 Sticker  2.8 x  3.3 with City Street Map
 // 0 Name: 190815a.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -17,7 +18,7 @@ function ldraw_lib__190815a() = [
 // 
 // 
 // 1 16 0 -0.25 0 33 0 0 0 0.25 0 0 0 28 box5-12.dat
-  [1,16,0,-0.25,0,33,0,0,0,0.25,0,0,0,28, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,33,0,0,0,0.25,0,0,0,28, ldraw_lib__box5_12(realsolid)],
 // 4 0 4.1 -0.25 23.5 3.5 -0.25 23.5 1.2 -0.25 16.1 1.5 -0.25 15.3
   [4,0,4.1,-0.25,23.5,3.5,-0.25,23.5,1.2,-0.25,16.1,1.5,-0.25,15.3],
 // 4 0 -1.4 -0.25 17.1 1.5 -0.25 15.3 1.2 -0.25 16.1 -1.6 -0.25 18
@@ -1370,5 +1371,5 @@ function ldraw_lib__190815a() = [
   [3,15,-33,-0.25,28,-15,-0.25,24,0,-0.25,24],
 ];
 module ldraw_lib__190815a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__190815a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__190815a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__190815a(line=0.2);

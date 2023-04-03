@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <4694c01-f3.scad>
-function ldraw_lib__4694c03() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4694c03(realsolid=false) = [
 // 0 ~Moved to 4694c01-f3
 // 0 Name: 4694c03.dat
 // 0 Author: [PTadmin]
@@ -16,8 +17,8 @@ function ldraw_lib__4694c03() = [
 // 
 // 0 // Technic Pneumatic Valve (Complete - Up Position)
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 4694c01-f3.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4694c01_f3()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4694c01_f3(realsolid)],
 ];
 module ldraw_lib__4694c03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4694c03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4694c03(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4694c03(line=0.2);

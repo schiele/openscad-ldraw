@@ -2,7 +2,8 @@ use <../lib.scad>
 use <2807.scad>
 use <4719.scad>
 use <4720.scad>
-function ldraw_lib__4719c01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4719c01(realsolid=false) = [
 // 0 Minifig Bicycle (Complete)
 // 0 Name: 4719c01.dat
 // 0 Author: Tore Eriksson [Tore_Eriksson]
@@ -27,21 +28,21 @@ function ldraw_lib__4719c01() = [
 // 0 // bicycle frame
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 4719.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4719()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4719(realsolid)],
 // 0 // bicycle rear tire
 // 1 256 0 30 0 0 0 -1 0 1 0 1 0 0 2807.dat
-  [1,256,0,30,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__2807()],
+  [1,256,0,30,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__2807(realsolid)],
 // 0 // bicycle rear wheel
 // 1 47 0 30 0 0 0 -1 0 1 0 1 0 0 4720.dat
-  [1,47,0,30,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__4720()],
+  [1,47,0,30,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__4720(realsolid)],
 // 0 // bicycle front tire
 // 1 256 0 30 -86 0 0 -1 0 1 0 1 0 0 2807.dat
-  [1,256,0,30,-86,0,0,-1,0,1,0,1,0,0, ldraw_lib__2807()],
+  [1,256,0,30,-86,0,0,-1,0,1,0,1,0,0, ldraw_lib__2807(realsolid)],
 // 0 // bicycle front wheel
 // 1 47 0 30 -86 0 0 -1 0 1 0 1 0 0 4720.dat
-  [1,47,0,30,-86,0,0,-1,0,1,0,1,0,0, ldraw_lib__4720()],
+  [1,47,0,30,-86,0,0,-1,0,1,0,1,0,0, ldraw_lib__4720(realsolid)],
 // 0 //
 ];
 module ldraw_lib__4719c01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4719c01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4719c01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4719c01(line=0.2);

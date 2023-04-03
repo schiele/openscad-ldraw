@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__30371s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__30371s01(realsolid=false) = [
 // 0 ~Minifig Head Gungan Split Eye
 // 0 Name: s\30371s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -741,5 +742,5 @@ function ldraw_lib__s__30371s01() = [
   [5,24,7.0131,-31.8331,-11.1288,6.5273,-31.6248,-11.0356,6.9478,-31.4867,-11.1732,6.5099,-31.8698,-11.0081],
 ];
 module ldraw_lib__s__30371s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__30371s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__30371s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__30371s01(line=0.2);

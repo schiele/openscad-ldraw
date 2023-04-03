@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__168185a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__168185a(realsolid=false) = [
 // 0 Sticker  1 x  4 with Red/Green "Octan"
 // 0 Name: 168185a.dat
 // 0 Author: Michael Heidemann [mikeheide]
@@ -673,8 +674,8 @@ function ldraw_lib__168185a() = [
 // 0 // Created wholly or in part by Quad2Dat
 // 0 // Thanks James
 // 1 16 0 -0.25 0 40 0 0 0 0.25 0 0 0 10 box5-12.dat
-  [1,16,0,-0.25,0,40,0,0,0,0.25,0,0,0,10, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,40,0,0,0,0.25,0,0,0,10, ldraw_lib__box5_12(realsolid)],
 ];
 module ldraw_lib__168185a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__168185a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__168185a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__168185a(line=0.2);

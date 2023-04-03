@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__box5() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__box5(realsolid=false) = [
 // 0 Box with 5 Faces and All Edges
 // 0 Name: box5.dat
 // 0 Author: James Jessiman
@@ -54,5 +55,5 @@ function ldraw_lib__box5() = [
   [4,16,1,1,1,1,0,1,1,0,-1,1,1,-1],
 ];
 module ldraw_lib__box5(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__box5(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__box5(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__box5(line=0.2);

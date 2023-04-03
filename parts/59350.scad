@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <59349.scad>
-function ldraw_lib__59350() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__59350(realsolid=false) = [
 // 0 =Panel  1 x  6 x  5
 // 0 Name: 59350.dat
 // 0 Author: [PTadmin]
@@ -19,9 +20,9 @@ function ldraw_lib__59350() = [
 // 0 // Alias of 59349
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 59349.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__59349()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__59349(realsolid)],
 // 0
 ];
 module ldraw_lib__59350(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__59350(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__59350(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__59350(line=0.2);

@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <40344.scad>
 use <42865.scad>
-function ldraw_lib__43123() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__43123(realsolid=false) = [
 // 0 Technic Brick  4 x  6 with Open Center  2 x  4 Dual Pins on End
 // 0 Name: 43123.dat
 // 0 Author: Michael Heidemann [mikeheide]
@@ -16,13 +17,13 @@ function ldraw_lib__43123() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 40344.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__40344()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__40344(realsolid)],
 // 1 16 60 10 20 1 0 0 0 1 0 0 0 1 42865.dat
-  [1,16,60,10,20,1,0,0,0,1,0,0,0,1, ldraw_lib__42865()],
+  [1,16,60,10,20,1,0,0,0,1,0,0,0,1, ldraw_lib__42865(realsolid)],
 // 1 16 60 10 -20 1 0 0 0 1 0 0 0 1 42865.dat
-  [1,16,60,10,-20,1,0,0,0,1,0,0,0,1, ldraw_lib__42865()],
+  [1,16,60,10,-20,1,0,0,0,1,0,0,0,1, ldraw_lib__42865(realsolid)],
 // 0 //
 ];
 module ldraw_lib__43123(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__43123(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__43123(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__43123(line=0.2);

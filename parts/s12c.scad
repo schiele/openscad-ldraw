@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/s12s01.scad>
 use <s/s12s02.scad>
-function ldraw_lib__s12c() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s12c(realsolid=false) = [
 // 0 Sticker  1.9 x  1.9 Round with Cold Heat Sensitive UFO Drawing
 // 0 Name: s12c.dat
 // 0 Author: Nils Schmidt [BlackBrick89]
@@ -16,14 +17,14 @@ function ldraw_lib__s12c() = [
 // 
 // 
 // 1 0 0 0 0 1 0 0 0 1 0 0 0 1 s\s12s01.dat
-  [1,0,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__s12s01()],
+  [1,0,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__s12s01(realsolid)],
 // 1 272 0 0 0 1 0 0 0 1 0 0 0 1 s\s12s02.dat
-  [1,272,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__s12s02()],
+  [1,272,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__s12s02(realsolid)],
 // 1 0 0 0 0 -1 0 0 0 1 0 0 0 1 s\s12s01.dat
-  [1,0,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__s12s01()],
+  [1,0,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__s12s01(realsolid)],
 // 1 272 0 0 0 -1 0 0 0 1 0 0 0 1 s\s12s02.dat
-  [1,272,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__s12s02()],
+  [1,272,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__s12s02(realsolid)],
 ];
 module ldraw_lib__s12c(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s12c(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s12c(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s12c(line=0.2);

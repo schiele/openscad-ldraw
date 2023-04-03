@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <6233.scad>
-function ldraw_lib__45176() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__45176(realsolid=false) = [
 // 0 =Cone  3 x  3 x  2
 // 0 Name: 45176.dat
 // 0 Author: Rolf Osterthun [Rolf]
@@ -18,8 +19,8 @@ function ldraw_lib__45176() = [
 // 0 // Part 45176 is the chromed counterpart of 6233
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 6233.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__6233()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__6233(realsolid)],
 ];
 module ldraw_lib__45176(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__45176(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__45176(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__45176(line=0.2);

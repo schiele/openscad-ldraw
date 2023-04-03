@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__4616559i() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4616559i(realsolid=false) = [
 // 0 Sticker  3.9 x  1.8 with Maersk Blue/White Diagonal Up Left
 // 0 Name: 4616559i.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -17,7 +18,7 @@ function ldraw_lib__4616559i() = [
 // 
 // 
 // 1 16 0 -0.25 0 18 0 0 0 0.25 0 0 0 39 box5-12.dat
-  [1,16,0,-0.25,0,18,0,0,0,0.25,0,0,0,39, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,18,0,0,0,0.25,0,0,0,39, ldraw_lib__box5_12(realsolid)],
 // 0 //
 // 4 15 18 -0.25 -39 18 -0.25 -15 -18 -0.25 39 -18 -0.25 15
   [4,15,18,-0.25,-39,18,-0.25,-15,-18,-0.25,39,-18,-0.25,15],
@@ -27,5 +28,5 @@ function ldraw_lib__4616559i() = [
   [3,16,18,-0.25,-15,18,-0.25,39,-18,-0.25,39],
 ];
 module ldraw_lib__4616559i(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4616559i(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4616559i(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4616559i(line=0.2);

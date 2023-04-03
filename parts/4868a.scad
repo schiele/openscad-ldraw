@@ -3,7 +3,8 @@ use <../p/box5-4a.scad>
 use <../p/rect.scad>
 use <s/4868s01.scad>
 use <../p/stug2-2x1.scad>
-function ldraw_lib__4868a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4868a(realsolid=false) = [
 // 0 Plane Jet Engine with Plate  1 x  2
 // 0 Name: 4868a.dat
 // 0 Author: James Jessiman
@@ -25,16 +26,16 @@ function ldraw_lib__4868a() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4868s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4868s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4868s01(realsolid)],
 // 1 16 6 -22 0 -4 0 0 0 -1 0 0 0 20 rect.dat
-  [1,16,6,-22,0,-4,0,0,0,-1,0,0,0,20, ldraw_lib__rect()],
+  [1,16,6,-22,0,-4,0,0,0,-1,0,0,0,20, ldraw_lib__rect(realsolid)],
 // 1 16 -6 -22 0 -4 0 0 0 -1 0 0 0 20 rect.dat
-  [1,16,-6,-22,0,-4,0,0,0,-1,0,0,0,20, ldraw_lib__rect()],
+  [1,16,-6,-22,0,-4,0,0,0,-1,0,0,0,20, ldraw_lib__rect(realsolid)],
 // 1 16 0 -22 0 10 0 0 0 -4 0 0 0 20 box5-4a.dat
-  [1,16,0,-22,0,10,0,0,0,-4,0,0,0,20, ldraw_lib__box5_4a()],
+  [1,16,0,-22,0,10,0,0,0,-4,0,0,0,20, ldraw_lib__box5_4a(realsolid)],
 // 1 16 0 -26 0 1 0 0 0 1 0 0 0 1 stug2-2x1.dat
-  [1,16,0,-26,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug2_2x1()],
+  [1,16,0,-26,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug2_2x1(realsolid)],
 ];
 module ldraw_lib__4868a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4868a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4868a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4868a(line=0.2);

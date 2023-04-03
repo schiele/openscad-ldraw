@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__type_swiss721bt_bold_lm() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__type_swiss721bt_bold_lm(realsolid=false) = [
 // 0 Type Swiss721BT Lower Case "m" Bold
 // 0 Name: type-swiss721bt-bold-lm.dat
 // 0 Author: Ulrich Röder [UR]
@@ -120,5 +121,5 @@ function ldraw_lib__type_swiss721bt_bold_lm() = [
   [4,0,.1515,0,.173,.1015,0,.347,.0515,0,.414,-.1415,0,.22],
 ];
 module ldraw_lib__type_swiss721bt_bold_lm(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__type_swiss721bt_bold_lm(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__type_swiss721bt_bold_lm(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__type_swiss721bt_bold_lm(line=0.2);

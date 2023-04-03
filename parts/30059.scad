@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <4346.scad>
-function ldraw_lib__30059() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__30059(realsolid=false) = [
 // 0 =Container Box  2 x  2 x  2 Door with Slot
 // 0 Name: 30059.dat
 // 0 Author: Steve Bliss [sbliss]
@@ -20,8 +21,8 @@ function ldraw_lib__30059() = [
 // 
 // 0 // Alias of 4346
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 4346.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4346()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4346(realsolid)],
 ];
 module ldraw_lib__30059(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__30059(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__30059(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__30059(line=0.2);

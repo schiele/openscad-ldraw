@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/rect1.scad>
 use <38547s01.scad>
-function ldraw_lib__s__38547s03() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__38547s03(realsolid=false) = [
 // 0 ~Animal Dragon Wing  9 x  6 with Handle Bars Trailing Edge
 // 0 Name: s\38547s03.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -16,9 +17,9 @@ function ldraw_lib__s__38547s03() = [
 // 
 // 
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\38547s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__38547s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__38547s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\38547s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__38547s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__38547s01(realsolid)],
 // 4 16 1.5 -65.5 47.4 -1.5 -65.5 47.4 -1.5 -68.5 35.8 1.5 -68.5 35.8
   [4,16,1.5,-65.5,47.4,-1.5,-65.5,47.4,-1.5,-68.5,35.8,1.5,-68.5,35.8],
 // 4 16 1.5 -64.6 50.9 -1.5 -64.6 50.9 -1.5 -65.5 47.4 1.5 -65.5 47.4
@@ -160,7 +161,7 @@ function ldraw_lib__s__38547s03() = [
 // 3 16 -1.5 -10 20 1.5 -10 20 0 6 20
   [3,16,-1.5,-10,20,1.5,-10,20,0,6,20],
 // 1 16 0 -10 10 0 0 1.5 0 -1 0 4 0 0 rect1.dat
-  [1,16,0,-10,10,0,0,1.5,0,-1,0,4,0,0, ldraw_lib__rect1()],
+  [1,16,0,-10,10,0,0,1.5,0,-1,0,4,0,0, ldraw_lib__rect1(realsolid)],
 // 3 16 -1.5 -10 14 0 -4 14 1.5 -10 14
   [3,16,-1.5,-10,14,0,-4,14,1.5,-10,14],
 // 5 24 0 -159.8096 23.1752 0 -157.8608 24.1234 -0.8037 -157.9831 24.0206 0.8037 -157.9831 24.0206
@@ -185,5 +186,5 @@ function ldraw_lib__s__38547s03() = [
   [5,24,0,-153.9165,22.3056,-1.5,-154.1512,22.1117,-1.2246,-156.3683,23.6528,0,-150.536,18.4404],
 ];
 module ldraw_lib__s__38547s03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__38547s03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__38547s03(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__38547s03(line=0.2);

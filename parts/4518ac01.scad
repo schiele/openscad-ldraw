@@ -2,7 +2,8 @@ use <../lib.scad>
 use <4517.scad>
 use <4518a.scad>
 use <70181c01.scad>
-function ldraw_lib__4518ac01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4518ac01(realsolid=false) = [
 // 0 Forklift  4 x  6 x 7.667 with Black Rails (Complete)
 // 0 Name: 4518ac01.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -19,12 +20,12 @@ function ldraw_lib__4518ac01() = [
 // 
 // 
 // 1 16 0 -150 -38 1 0 0 0 1 0 0 0 1 4517.dat
-  [1,16,0,-150,-38,1,0,0,0,1,0,0,0,1, ldraw_lib__4517()],
+  [1,16,0,-150,-38,1,0,0,0,1,0,0,0,1, ldraw_lib__4517(realsolid)],
 // 1 0 0 0 0 1 0 0 0 1 0 0 0 1 4518a.dat
-  [1,0,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4518a()],
+  [1,0,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4518a(realsolid)],
 // 1 494 0 -141.6 -41 1 0 0 0 0.88 0 0 0 1 70181c01.dat
-  [1,494,0,-141.6,-41,1,0,0,0,0.88,0,0,0,1, ldraw_lib__70181c01()],
+  [1,494,0,-141.6,-41,1,0,0,0,0.88,0,0,0,1, ldraw_lib__70181c01(realsolid)],
 ];
 module ldraw_lib__4518ac01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4518ac01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4518ac01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4518ac01(line=0.2);

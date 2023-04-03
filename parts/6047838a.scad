@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__6047838a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6047838a(realsolid=false) = [
 // 0 Sticker  1.9 x  1.9 with VW Logo on Red/White Bus Front
 // 0 Name: 6047838a.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -17,7 +18,7 @@ function ldraw_lib__6047838a() = [
 // 
 // 
 // 1 16 0 -0.25 0 19 0 0 0 0.25 0 0 0 19 box5-12.dat
-  [1,16,0,-0.25,0,19,0,0,0,0.25,0,0,0,19, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,19,0,0,0,0.25,0,0,0,19, ldraw_lib__box5_12(realsolid)],
 // 
 // 3 0 0 -0.25 -17.166 -0.927 -0.25 -19 0.927 -0.25 -19
   [3,0,0,-0.25,-17.166,-0.927,-0.25,-19,0.927,-0.25,-19],
@@ -227,5 +228,5 @@ function ldraw_lib__6047838a() = [
   [4,80,0,-0.25,12.026,2.584,-0.25,12.638,0,-0.25,13.152,-1.491,-0.25,11.744],
 ];
 module ldraw_lib__6047838a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6047838a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6047838a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6047838a(line=0.2);

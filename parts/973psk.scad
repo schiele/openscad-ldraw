@@ -4,7 +4,8 @@ use <../p/4-4disc.scad>
 use <../p/4-4ndis.scad>
 use <../p/4-4ring3.scad>
 use <s/973s01.scad>
-function ldraw_lib__973psk() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__973psk(realsolid=false) = [
 // 0 Minifig Torso with SW Stormtrooper Pattern
 // 0 Name: 973psk.dat
 // 0 Author: Thomas Burger [grapeape]
@@ -28,9 +29,9 @@ function ldraw_lib__973psk() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01(realsolid)],
 // 1 0 0 -4 0 4.243 0 -4.243 0 -8 0 -4.243 0 -4.243 1-4cyli.dat
-  [1,0,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli()],
+  [1,0,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli(realsolid)],
 // 
 // 0 // Front Print torso
 // 4 72 15.85 32 -10 16.55 32 -10 16.55 28.8 -10 15.85 27.4 -10
@@ -1084,11 +1085,11 @@ function ldraw_lib__973psk() = [
 // 
 // 0 // start back side
 // 1 7 3.1 11 10 -0.5 0 0 0 0 0.5 0 -1 0 4-4ring3.dat
-  [1,7,3.1,11,10,-0.5,0,0,0,0,0.5,0,-1,0, ldraw_lib__4_4ring3()],
+  [1,7,3.1,11,10,-0.5,0,0,0,0,0.5,0,-1,0, ldraw_lib__4_4ring3(realsolid)],
 // 1 7 3.1 11 10 -0.8 0 0 0 0 0.8 0 -1 0 4-4disc.dat
-  [1,7,3.1,11,10,-0.8,0,0,0,0,0.8,0,-1,0, ldraw_lib__4_4disc()],
+  [1,7,3.1,11,10,-0.8,0,0,0,0,0.8,0,-1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 16 3.1 11 10 -2 0 0 0 0 2 0 -1 0 4-4ndis.dat
-  [1,16,3.1,11,10,-2,0,0,0,0,2,0,-1,0, ldraw_lib__4_4ndis()],
+  [1,16,3.1,11,10,-2,0,0,0,0,2,0,-1,0, ldraw_lib__4_4ndis(realsolid)],
 // 4 16 2.5343 11.5657 10 2.7938 11.7391 10 2.5259 12.3858 10 2.0394 12.0607 10
   [4,16,2.5343,11.5657,10,2.7938,11.7391,10,2.5259,12.3858,10,2.0394,12.0607,10],
 // 4 16 2.0394 12.0607 10 1.7141 11.574 10 2.3609 11.3062 10 2.5343 11.5657 10
@@ -1599,5 +1600,5 @@ function ldraw_lib__973psk() = [
   [3,16,10.3,18,10,13.36,9.48,10,14.6,12.6,10],
 ];
 module ldraw_lib__973psk(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__973psk(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__973psk(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__973psk(line=0.2);

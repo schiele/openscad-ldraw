@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__004677b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__004677b(realsolid=false) = [
 // 0 Sticker  2.1 x  3.9 with "396"
 // 0 Name: 004677b.dat
 // 0 Author: Willy Tschager [Holly-Wood]
@@ -19,7 +20,7 @@ function ldraw_lib__004677b() = [
 // 0 // Box
 // 
 // 1 16 0 -0.25 0 39 0 0 0 0.25 0 0 0 21.5 box5-12.dat
-  [1,16,0,-0.25,0,39,0,0,0,0.25,0,0,0,21.5, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,39,0,0,0,0.25,0,0,0,21.5, ldraw_lib__box5_12(realsolid)],
 // 
 // 0 // Pattern
 // 0 // Red
@@ -798,5 +799,5 @@ function ldraw_lib__004677b() = [
   [3,1,22.348,-0.25,9.224,16.75,-0.25,17,20.39,-0.25,9.635],
 ];
 module ldraw_lib__004677b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__004677b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__004677b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__004677b(line=0.2);

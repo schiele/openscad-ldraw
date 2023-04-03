@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4cylo.scad>
 use <../p/4-4ndis.scad>
 use <s/89917s01.scad>
-function ldraw_lib__89917() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__89917(realsolid=false) = [
 // 0 Minifig Breastplate with Fins and Embossed Atlantis Triangle
 // 0 Name: 89917.dat
 // 0 Author: Stan Isachenko [angmarec]
@@ -21,17 +22,17 @@ function ldraw_lib__89917() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\89917s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__89917s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__89917s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\89917s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__89917s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__89917s01(realsolid)],
 // 1 16 0 -2 0 6 0 0 0 1 0 0 0 -6 4-4ndis.dat
-  [1,16,0,-2,0,6,0,0,0,1,0,0,0,-6, ldraw_lib__4_4ndis()],
+  [1,16,0,-2,0,6,0,0,0,1,0,0,0,-6, ldraw_lib__4_4ndis(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -2 0 6 0 0 0 2 0 0 0 -6 4-4cylo.dat
-  [1,16,0,-2,0,6,0,0,0,2,0,0,0,-6, ldraw_lib__4_4cylo()],
+  [1,16,0,-2,0,6,0,0,0,2,0,0,0,-6, ldraw_lib__4_4cylo(realsolid)],
 // 1 16 0 0 0 6 0 0 0 -1 0 0 0 -6 4-4ndis.dat
-  [1,16,0,0,0,6,0,0,0,-1,0,0,0,-6, ldraw_lib__4_4ndis()],
+  [1,16,0,0,0,6,0,0,0,-1,0,0,0,-6, ldraw_lib__4_4ndis(realsolid)],
 // 
 // 5 24 0 5.034 15.576 0 5.003 14.073 -1.311 4.649 13.993 1.311 4.649 13.993
   [5,24,0,5.034,15.576,0,5.003,14.073,-1.311,4.649,13.993,1.311,4.649,13.993],
@@ -75,5 +76,5 @@ function ldraw_lib__89917() = [
   [5,24,0,5.22,-15.626,0,5.219,-15.036,1.344,5.579,-15.617,-1.344,5.579,-15.617],
 ];
 module ldraw_lib__89917(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__89917(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__89917(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__89917(line=0.2);

@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/4-4ering.scad>
 use <s/4150s01.scad>
-function ldraw_lib__4150pf1() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4150pf1(realsolid=false) = [
 // 0 Tile  2 x  2 Round with Scala Red Flower and Blue Center Pattern
 // 0 Name: 4150pf1.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -19,9 +20,9 @@ function ldraw_lib__4150pf1() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4150s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4150s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4150s01(realsolid)],
 // 1 16 0 0 0 20 0 0 0 1 0 0 0 20 4-4ering.dat
-  [1,16,0,0,0,20,0,0,0,1,0,0,0,20, ldraw_lib__4_4ering()],
+  [1,16,0,0,0,20,0,0,0,1,0,0,0,20, ldraw_lib__4_4ering(realsolid)],
 // 4 1 0 0 0 5.59 0 0 5.16 0 2.14 3.95 0 3.95
   [4,1,0,0,0,5.59,0,0,5.16,0,2.14,3.95,0,3.95],
 // 4 1 0 0 0 3.95 0 3.95 2.14 0 5.16 0 0 5.59
@@ -1082,5 +1083,5 @@ function ldraw_lib__4150pf1() = [
   [3,16,0,0,20,-2.55,0,17.67,-1.82,0,17.94],
 ];
 module ldraw_lib__4150pf1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4150pf1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4150pf1(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4150pf1(line=0.2);

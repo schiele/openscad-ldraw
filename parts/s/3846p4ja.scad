@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__3846p4ja() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__3846p4ja(realsolid=false) = [
 // 0 ~Gold Crown on Main Colour and Medium Blue Quarters Pattern
 // 0 Name: s\3846p4ja.dat
 // 0 Author: Joerg Sommerer [Brickaneer]
@@ -658,5 +659,5 @@ function ldraw_lib__s__3846p4ja() = [
   [4,16,1.7183,-1.5151,0,1.9163,-2.66,0,1.6924,-2.3415,0,1.6322,-1.9455,0],
 ];
 module ldraw_lib__s__3846p4ja(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__3846p4ja(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__3846p4ja(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__3846p4ja(line=0.2);

@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__4616559cc01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4616559cc01(realsolid=false) = [
 // 0 Sticker  1.8 x  1.8 with Maersk Logo (Formed)
 // 0 Name: 4616559cc01.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -284,5 +285,5 @@ function ldraw_lib__4616559cc01() = [
   [3,16,12.282,4.762,-60.143,18,6.906,-67.289,18,4.762,-60.143],
 ];
 module ldraw_lib__4616559cc01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4616559cc01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4616559cc01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4616559cc01(line=0.2);

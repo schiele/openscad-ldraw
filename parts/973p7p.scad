@@ -5,7 +5,8 @@ use <../p/4-4ndis.scad>
 use <../p/4-4ring1.scad>
 use <../p/4-4ring4.scad>
 use <s/973s01.scad>
-function ldraw_lib__973p7p() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__973p7p(realsolid=false) = [
 // 0 Minifig Torso with Blue Shirt, Brown Suspenders and Construction Jacket with Safety Stripes Pattern
 // 0 Name: 973p7p.dat
 // 0 Author: Tim Lampmann [L4mpi]
@@ -22,7 +23,7 @@ function ldraw_lib__973p7p() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01(realsolid)],
 // 
 // 4 16 19 29 10 19 32 10 -19 32 10 -19 29 10
   [4,16,19,29,10,19,32,10,-19,32,10,-19,29,10],
@@ -31,24 +32,24 @@ function ldraw_lib__973p7p() = [
 // 4 16 -14.345 2 10 -12 0 10 12 0 10 14.345 2 10
   [4,16,-14.345,2,10,-12,0,10,12,0,10,14.345,2,10],
 // 1 0 0 -4 0 4.243 0 -4.243 0 -8 0 -4.243 0 -4.243 1-4cyli.dat
-  [1,0,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli()],
+  [1,0,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli(realsolid)],
 // 
 // 1 7 14.75 30 -10 .5 0 0 0 0 -.5 0 1 0 4-4disc.dat
-  [1,7,14.75,30,-10,.5,0,0,0,0,-.5,0,1,0, ldraw_lib__4_4disc()],
+  [1,7,14.75,30,-10,.5,0,0,0,0,-.5,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 0 14.75 30 -10 .5 0 0 0 0 -.5 0 1 0 4-4ring1.dat
-  [1,0,14.75,30,-10,.5,0,0,0,0,-.5,0,1,0, ldraw_lib__4_4ring1()],
+  [1,0,14.75,30,-10,.5,0,0,0,0,-.5,0,1,0, ldraw_lib__4_4ring1(realsolid)],
 // 1 1 14.75 30 -10 1.25 0 0 0 0 -1.25 0 1 0 4-4ndis.dat
-  [1,1,14.75,30,-10,1.25,0,0,0,0,-1.25,0,1,0, ldraw_lib__4_4ndis()],
+  [1,1,14.75,30,-10,1.25,0,0,0,0,-1.25,0,1,0, ldraw_lib__4_4ndis(realsolid)],
 // 1 0 14.75 30 -10 .25 0 0 0 0 -.25 0 1 0 4-4ring4.dat
-  [1,0,14.75,30,-10,.25,0,0,0,0,-.25,0,1,0, ldraw_lib__4_4ring4()],
+  [1,0,14.75,30,-10,.25,0,0,0,0,-.25,0,1,0, ldraw_lib__4_4ring4(realsolid)],
 // 1 7 -14.75 30 -10 .5 0 0 0 0 -.5 0 1 0 4-4disc.dat
-  [1,7,-14.75,30,-10,.5,0,0,0,0,-.5,0,1,0, ldraw_lib__4_4disc()],
+  [1,7,-14.75,30,-10,.5,0,0,0,0,-.5,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 0 -14.75 30 -10 .5 0 0 0 0 -.5 0 1 0 4-4ring1.dat
-  [1,0,-14.75,30,-10,.5,0,0,0,0,-.5,0,1,0, ldraw_lib__4_4ring1()],
+  [1,0,-14.75,30,-10,.5,0,0,0,0,-.5,0,1,0, ldraw_lib__4_4ring1(realsolid)],
 // 1 0 -14.75 30 -10 .25 0 0 0 0 -.25 0 1 0 4-4ring4.dat
-  [1,0,-14.75,30,-10,.25,0,0,0,0,-.25,0,1,0, ldraw_lib__4_4ring4()],
+  [1,0,-14.75,30,-10,.25,0,0,0,0,-.25,0,1,0, ldraw_lib__4_4ring4(realsolid)],
 // 1 1 -14.75 30 -10 1.25 0 0 0 0 -1.25 0 1 0 4-4ndis.dat
-  [1,1,-14.75,30,-10,1.25,0,0,0,0,-1.25,0,1,0, ldraw_lib__4_4ndis()],
+  [1,1,-14.75,30,-10,1.25,0,0,0,0,-1.25,0,1,0, ldraw_lib__4_4ndis(realsolid)],
 // 
 // 4 0 -11.25 1.75 -10 -12 1 -10 -12 1.75 -10 -10.986 10.623 -10
   [4,0,-11.25,1.75,-10,-12,1,-10,-12,1.75,-10,-10.986,10.623,-10],
@@ -1110,5 +1111,5 @@ function ldraw_lib__973p7p() = [
   [3,0,17.326,28,-10,16,28.75,-10,16.75,28.75,-10],
 ];
 module ldraw_lib__973p7p(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__973p7p(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__973p7p(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__973p7p(line=0.2);

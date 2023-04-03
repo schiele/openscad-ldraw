@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3068bs01.scad>
-function ldraw_lib__3068bpff() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3068bpff(realsolid=false) = [
 // 0 Tile  2 x  2 with Fabuland Alarm Clock Pattern
 // 0 Name: 3068bpff.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -15,7 +16,7 @@ function ldraw_lib__3068bpff() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3068bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3068bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3068bs01(realsolid)],
 // 4 0 -0.6 0 -4 -1.6427 0 -3.398 -1.804 0 -4 -1.6427 0 -4.602
   [4,0,-0.6,0,-4,-1.6427,0,-3.398,-1.804,0,-4,-1.6427,0,-4.602],
 // 4 0 -0.6 0 -4 -1.6427 0 -4.602 -1.202 0 -5.0427 -0.6 0 -5.204
@@ -1290,5 +1291,5 @@ function ldraw_lib__3068bpff() = [
   [4,16,-7.1,0,-2.3,-7.5189,0,.4678,-7.5189,0,-7.8678,-7.3528,0,-8.4876],
 ];
 module ldraw_lib__3068bpff(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3068bpff(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3068bpff(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3068bpff(line=0.2);

@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/5-16cyli.scad>
 use <s/3815s01.scad>
-function ldraw_lib__3815pm1() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3815pm1(realsolid=false) = [
 // 0 ~Minifig Hips with LOTR Dark Red Belt & Scale Armour Pattern (Obsolete)
 // 0 Name: 3815pm1.dat
 // 0 Author: Christian Neumann [Wesley]
@@ -22,9 +23,9 @@ function ldraw_lib__3815pm1() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3815s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3815s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3815s01(realsolid)],
 // 1 16 -2 12 0 0 4 0 -6.364 0 6.364 -6.364 0 -6.364 5-16cyli.dat
-  [1,16,-2,12,0,0,4,0,-6.364,0,6.364,-6.364,0,-6.364, ldraw_lib__5_16cyli()],
+  [1,16,-2,12,0,0,4,0,-6.364,0,6.364,-6.364,0,-6.364, ldraw_lib__5_16cyli(realsolid)],
 // 0 // pattern
 // 4 0 -15.91 3.53 -10 -17.5 3.27 -10 -17.5 4 -10 -16.19 4.25 -10
   [4,0,-15.91,3.53,-10,-17.5,3.27,-10,-17.5,4,-10,-16.19,4.25,-10],
@@ -324,5 +325,5 @@ function ldraw_lib__3815pm1() = [
   [3,76,17.5,4,-10,16.19,4.25,-10,17.5,5.5,-10],
 ];
 module ldraw_lib__3815pm1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3815pm1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3815pm1(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3815pm1(line=0.2);

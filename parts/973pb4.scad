@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/1-4cyli.scad>
 use <s/3070bp70a.scad>
 use <s/973s01.scad>
-function ldraw_lib__973pb4() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__973pb4(realsolid=false) = [
 // 0 Minifig Torso with Security Guard Pattern
 // 0 Name: 973pb4.dat
 // 0 Author: Nils Schmidt [BlackBrick89]
@@ -19,7 +20,7 @@ function ldraw_lib__973pb4() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01(realsolid)],
 // 4 16 19 29 10 19 32 10 -19 32 10 -19 29 10
   [4,16,19,29,10,19,32,10,-19,32,10,-19,29,10],
 // 4 16 -14.345 2 10 14.345 2 10 19 29 10 -19 29 10
@@ -27,9 +28,9 @@ function ldraw_lib__973pb4() = [
 // 4 16 -14.345 2 10 -12 0 10 12 0 10 14.345 2 10
   [4,16,-14.345,2,10,-12,0,10,12,0,10,14.345,2,10],
 // 1 0 0 -4 0 4.243 0 -4.243 0 -8 0 -4.243 0 -4.243 1-4cyli.dat
-  [1,0,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli()],
+  [1,0,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli(realsolid)],
 // 1 82 7.991 14.9885 -10 0.69119 0 0 0 0 -0.69121 0 1 0 s\3070bp70a.dat
-  [1,82,7.991,14.9885,-10,0.69119,0,0,0,0,-0.69121,0,1,0, ldraw_lib__s__3070bp70a()],
+  [1,82,7.991,14.9885,-10,0.69119,0,0,0,0,-0.69121,0,1,0, ldraw_lib__s__3070bp70a(realsolid)],
 // 
 // 4 15 -13.552 29.798 -10 -13.764 29.506 -10 -13.922 29.74 -10 -13.845 30.01 -10
   [4,15,-13.552,29.798,-10,-13.764,29.506,-10,-13.922,29.74,-10,-13.845,30.01,-10],
@@ -2483,5 +2484,5 @@ function ldraw_lib__973pb4() = [
   [4,0,-15.429,29.658,-10,-15.352,29.928,-10,-15.059,29.716,-10,-15.271,29.423,-10],
 ];
 module ldraw_lib__973pb4(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__973pb4(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__973pb4(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__973pb4(line=0.2);

@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <13733.scad>
 use <14396.scad>
-function ldraw_lib__14397() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__14397(realsolid=false) = [
 // 0 Minifig Head Round  1.8 x  1.8 Biscuit with Filling
 // 0 Name: 14397.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -16,10 +17,10 @@ function ldraw_lib__14397() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 14396.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__14396()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__14396(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 13733.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__13733()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__13733(realsolid)],
 ];
 module ldraw_lib__14397(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__14397(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__14397(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__14397(line=0.2);

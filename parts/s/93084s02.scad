@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/stud4o.scad>
-function ldraw_lib__s__93084s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__93084s02(realsolid=false) = [
 // 0 ~Animal Horse Friends Body Structure Left
 // 0 Name: s\93084s02.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -3747,9 +3748,9 @@ function ldraw_lib__s__93084s02() = [
   [2,24,20,0,19.959,17,0,20],
 // 
 // 1 16 10 59 30 -1 0 0 0 -1.25 0 0 0 1 stud4o.dat
-  [1,16,10,59,30,-1,0,0,0,-1.25,0,0,0,1, ldraw_lib__stud4o()],
+  [1,16,10,59,30,-1,0,0,0,-1.25,0,0,0,1, ldraw_lib__stud4o(realsolid)],
 // 1 16 10 59 -30 -1 0 0 0 -1.25 0 0 0 1 stud4o.dat
-  [1,16,10,59,-30,-1,0,0,0,-1.25,0,0,0,1, ldraw_lib__stud4o()],
+  [1,16,10,59,-30,-1,0,0,0,-1.25,0,0,0,1, ldraw_lib__stud4o(realsolid)],
 // 4 16 18 64 -30 17.3912 64 -26.9384 19.607 64 -26.768 19.607 64 -33.064
   [4,16,18,64,-30,17.3912,64,-26.9384,19.607,64,-26.768,19.607,64,-33.064],
 // 4 16 15.906 64 -38.158 15.6568 64 -35.6568 17.3912 64 -33.0616 19.607 64 -33.064
@@ -5806,5 +5807,5 @@ function ldraw_lib__s__93084s02() = [
   [5,24,18.296,-11.66,47.466,12.248,-21.003,48.597,9.772,-17.325,49.846,17.734,-22.174,41.062],
 ];
 module ldraw_lib__s__93084s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__93084s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__93084s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__93084s02(line=0.2);

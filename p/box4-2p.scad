@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__box4_2p() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__box4_2p(realsolid=false) = [
 // 0 Box with 4 Faces without 2 Parallel Edges
 // 0 Name: box4-2p.dat
 // 0 Author: Guy Vivan [guyvivan]
@@ -44,5 +45,5 @@ function ldraw_lib__box4_2p() = [
 // 0
 ];
 module ldraw_lib__box4_2p(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__box4_2p(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__box4_2p(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__box4_2p(line=0.2);

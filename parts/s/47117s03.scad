@@ -5,7 +5,8 @@ use <../../p/box3u2p.scad>
 use <../../p/rect.scad>
 use <../../p/rect2p.scad>
 use <../../p/rect3.scad>
-function ldraw_lib__s__47117s03() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__47117s03(realsolid=false) = [
 // 0 ~Brick  2 x  2 with Grooves and Top Peg - Groove Wall
 // 0 Name: s\47117s03.dat
 // 0 Author: Greg Teft [gregteft]
@@ -20,29 +21,29 @@ function ldraw_lib__s__47117s03() = [
 // 
 // 
 // 1 16 0 13.5 12 3.5146 0 0 0 0 -10.5 0 1 0 rect.dat
-  [1,16,0,13.5,12,3.5146,0,0,0,0,-10.5,0,1,0, ldraw_lib__rect()],
+  [1,16,0,13.5,12,3.5146,0,0,0,0,-10.5,0,1,0, ldraw_lib__rect(realsolid)],
 // 1 16 11.7438 13.5 16 0 0 -4.2292 -10.5 0 0 0 1 0 rect3.dat
-  [1,16,11.7438,13.5,16,0,0,-4.2292,-10.5,0,0,0,1,0, ldraw_lib__rect3()],
+  [1,16,11.7438,13.5,16,0,0,-4.2292,-10.5,0,0,0,1,0, ldraw_lib__rect3(realsolid)],
 // 1 16 -11.7438 13.5 16 0 0 4.2292 10.5 0 0 0 1 0 rect3.dat
-  [1,16,-11.7438,13.5,16,0,0,4.2292,10.5,0,0,0,1,0, ldraw_lib__rect3()],
+  [1,16,-11.7438,13.5,16,0,0,4.2292,10.5,0,0,0,1,0, ldraw_lib__rect3(realsolid)],
 // 1 16 12 12 20 8 0 0 0 0 12 0 -1 0 rect2p.dat
-  [1,16,12,12,20,8,0,0,0,0,12,0,-1,0, ldraw_lib__rect2p()],
+  [1,16,12,12,20,8,0,0,0,0,12,0,-1,0, ldraw_lib__rect2p(realsolid)],
 // 1 16 -12 12 20 8 0 0 0 0 12 0 -1 0 rect2p.dat
-  [1,16,-12,12,20,8,0,0,0,0,12,0,-1,0, ldraw_lib__rect2p()],
+  [1,16,-12,12,20,8,0,0,0,0,12,0,-1,0, ldraw_lib__rect2p(realsolid)],
 // 1 16 5.5146 13.5 14 2 -1 0 0 0 -10.5 2 1 0 rect2p.dat
-  [1,16,5.5146,13.5,14,2,-1,0,0,0,-10.5,2,1,0, ldraw_lib__rect2p()],
+  [1,16,5.5146,13.5,14,2,-1,0,0,0,-10.5,2,1,0, ldraw_lib__rect2p(realsolid)],
 // 1 16 -5.5146 13.5 14 2 1 0 0 0 -10.5 -2 1 0 rect2p.dat
-  [1,16,-5.5146,13.5,14,2,1,0,0,0,-10.5,-2,1,0, ldraw_lib__rect2p()],
+  [1,16,-5.5146,13.5,14,2,1,0,0,0,-10.5,-2,1,0, ldraw_lib__rect2p(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 12 20 0 0 4 -12 0 0 0 -5 0 box3u2p.dat
-  [1,16,0,12,20,0,0,4,-12,0,0,0,-5,0, ldraw_lib__box3u2p()],
+  [1,16,0,12,20,0,0,4,-12,0,0,0,-5,0, ldraw_lib__box3u2p(realsolid)],
 // 1 16 10 0 10 2.828427 0 -2.828427 0 1 0 2.828427 0 2.828427 2-4disc.dat
-  [1,16,10,0,10,2.828427,0,-2.828427,0,1,0,2.828427,0,2.828427, ldraw_lib__2_4disc()],
+  [1,16,10,0,10,2.828427,0,-2.828427,0,1,0,2.828427,0,2.828427, ldraw_lib__2_4disc(realsolid)],
 // 1 16 -10 0 10 2.828427 0 2.828427 0 1 0 -2.828427 0 2.828427 2-4disc.dat
-  [1,16,-10,0,10,2.828427,0,2.828427,0,1,0,-2.828427,0,2.828427, ldraw_lib__2_4disc()],
+  [1,16,-10,0,10,2.828427,0,2.828427,0,1,0,-2.828427,0,2.828427, ldraw_lib__2_4disc(realsolid)],
 // 1 16 0 3 0 -4.242641 0 4.242641 0 -1 0 4.242641 0 4.242641 1-4disc.dat
-  [1,16,0,3,0,-4.242641,0,4.242641,0,-1,0,4.242641,0,4.242641, ldraw_lib__1_4disc()],
+  [1,16,0,3,0,-4.242641,0,4.242641,0,-1,0,4.242641,0,4.242641, ldraw_lib__1_4disc(realsolid)],
 // 
 // 3 16 -4 0 15 0 0 6 4 0 15
   [3,16,-4,0,15,0,0,6,4,0,15],
@@ -134,5 +135,5 @@ function ldraw_lib__s__47117s03() = [
   [4,16,-4,24,20,-7.5147,24,16,-16,24,16,-20,24,20],
 ];
 module ldraw_lib__s__47117s03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__47117s03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__47117s03(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__47117s03(line=0.2);

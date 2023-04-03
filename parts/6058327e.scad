@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__6058327e() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6058327e(realsolid=false) = [
 // 0 Sticker  2.8 x  3.7 with Droid Gunship and Target Screen
 // 0 Name: 6058327e.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -17,7 +18,7 @@ function ldraw_lib__6058327e() = [
 // 
 // 
 // 1 16 0 -0.25 0 37.5 0 0 0 0.25 0 0 0 28.75 box5-12.dat
-  [1,16,0,-0.25,0,37.5,0,0,0,0.25,0,0,0,28.75, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,37.5,0,0,0,0.25,0,0,0,28.75, ldraw_lib__box5_12(realsolid)],
 // 
 // 4 15 -30.6 -0.25 13.1 -31.11053 -0.25 13.61053 -31.322 -0.25 13.1 -31.11053 -0.25 12.58947
   [4,15,-30.6,-0.25,13.1,-31.11053,-0.25,13.61053,-31.322,-0.25,13.1,-31.11053,-0.25,12.58947],
@@ -4245,5 +4246,5 @@ function ldraw_lib__6058327e() = [
   [3,0,7,-0.25,24.9,9.18295,-0.25,24.9,9.66194,-0.25,26.5],
 ];
 module ldraw_lib__6058327e(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6058327e(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6058327e(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6058327e(line=0.2);

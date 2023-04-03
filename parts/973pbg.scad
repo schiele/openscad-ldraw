@@ -8,7 +8,8 @@ use <s/973pbde.scad>
 use <s/973pbdf.scad>
 use <s/973pbdg.scad>
 use <s/973s01.scad>
-function ldraw_lib__973pbg() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__973pbg(realsolid=false) = [
 // 0 Minifig Torso with Iron Patriot Armoured Suit Pattern
 // 0 Name: 973pbg.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -25,18 +26,18 @@ function ldraw_lib__973pbg() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01(realsolid)],
 // 1 15 0 -4 0 4.243 0 -4.243 0 -8 0 -4.243 0 -4.243 1-4cyli.dat
-  [1,15,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli()],
+  [1,15,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli(realsolid)],
 // 
 // 0 // frontside
 // 0 // main background
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973pbda.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973pbda()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973pbda(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\973pbda.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__973pbda()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__973pbda(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973pbdb.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973pbdb()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973pbdb(realsolid)],
 // 0 // waist
 // 4 16 14.486 17.941 -10 14.588 18.349 -10 16.22 17.533 -10 14.537 17.482 -10
   [4,16,14.486,17.941,-10,14.588,18.349,-10,16.22,17.533,-10,14.537,17.482,-10],
@@ -68,14 +69,14 @@ function ldraw_lib__973pbg() = [
   [3,16,-16.679,20.134,-10,-16.475,19.777,-10,-16.22,17.533,-10],
 // 0 // red and silver DANGER
 // 1 320 0 0 0 1 0 0 0 1 0 0 0 1 s\973pbdc.dat
-  [1,320,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973pbdc()],
+  [1,320,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973pbdc(realsolid)],
 // 1 80 0 0 0 1 0 0 0 1 0 0 0 1 s\973pbdd.dat
-  [1,80,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973pbdd()],
+  [1,80,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973pbdd(realsolid)],
 // 0 // chest plate
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973pbde.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973pbde()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973pbde(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\973pbde.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__973pbde()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__973pbde(realsolid)],
 // 0 // silver star
 // 0 // below reactor
 // 4 80 -3.264 11.514 -10 -3.778 12.785 -10 -3.098 13.279 -10 -0.668 11.514 -10
@@ -159,16 +160,16 @@ function ldraw_lib__973pbg() = [
 // 0 // backside
 // 0 // main background
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 -1 s\973pbdf.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__973pbdf()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__973pbdf(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 -1 s\973pbdf.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__973pbdf()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__973pbdf(realsolid)],
 // 4 80 -5.25125 7.54 10 -6.867333 9.459 10 -7.019 9.307 10 -5.453333 7.388 10
   [4,80,-5.25125,7.54,10,-6.867333,9.459,10,-7.019,9.307,10,-5.453333,7.388,10],
 // 4 80 5.453333 7.388 10 7.019 9.307 10 6.867333 9.459 10 5.25125 7.54 10
   [4,80,5.453333,7.388,10,7.019,9.307,10,6.867333,9.459,10,5.25125,7.54,10],
 // 0 // neck plate
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 -1 s\973pbdg.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__973pbdg()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__973pbdg(realsolid)],
 // 0 // waist
 // 3 320 -8.432 18.296 10 -8.432 18.953 10 -10.604 18.852 10
   [3,320,-8.432,18.296,10,-8.432,18.953,10,-10.604,18.852,10],
@@ -321,5 +322,5 @@ function ldraw_lib__973pbg() = [
   [4,320,-1.615,28.295,10,0,28.295,10,0,29.962,10,-1.413,29.962,10],
 ];
 module ldraw_lib__973pbg(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__973pbg(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__973pbg(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__973pbg(line=0.2);

@@ -3,7 +3,8 @@ use <../p/box2-5.scad>
 use <../p/box5-4a.scad>
 use <../p/recte3.scad>
 use <s/6196s01.scad>
-function ldraw_lib__6198() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6198(realsolid=false) = [
 // 0 Container Drawer  4 x  4 x  2 with Raised Front
 // 0 Name: 6198.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -18,17 +19,17 @@ function ldraw_lib__6198() = [
 // 
 // 
 // 1 16 0 19 -2 36 0 0 0 19 0 0 0 38 box2-5.dat
-  [1,16,0,19,-2,36,0,0,0,19,0,0,0,38, ldraw_lib__box2_5()],
+  [1,16,0,19,-2,36,0,0,0,19,0,0,0,38, ldraw_lib__box2_5(realsolid)],
 // 1 16 0 17 -38 36 0 0 0 0 -21 0 -2 0 box2-5.dat
-  [1,16,0,17,-38,36,0,0,0,0,-21,0,-2,0, ldraw_lib__box2_5()],
+  [1,16,0,17,-38,36,0,0,0,0,-21,0,-2,0, ldraw_lib__box2_5(realsolid)],
 // 4 16 -36 -4 -36 36 -4 -36 32 0 -36 -32 0 -36
   [4,16,-36,-4,-36,36,-4,-36,32,0,-36,-32,0,-36],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 -2 32 0 0 0 34 0 0 0 34 box5-4a.dat
-  [1,16,0,0,-2,32,0,0,0,34,0,0,0,34, ldraw_lib__box5_4a()],
+  [1,16,0,0,-2,32,0,0,0,34,0,0,0,34, ldraw_lib__box5_4a(realsolid)],
 // 1 16 0 0 -2 32 0 0 0 1 0 0 0 34 recte3.dat
-  [1,16,0,0,-2,32,0,0,0,1,0,0,0,34, ldraw_lib__recte3()],
+  [1,16,0,0,-2,32,0,0,0,1,0,0,0,34, ldraw_lib__recte3(realsolid)],
 // 4 16 32 0 32 36 0 36 -36 0 36 -32 0 32
   [4,16,32,0,32,36,0,36,-36,0,36,-32,0,32],
 // 4 16 36 0 -36 36 -4 -36 36 -4 -40 36 38 -40
@@ -61,8 +62,8 @@ function ldraw_lib__6198() = [
   [2,24,-36,0,-36,-36,0,36],
 // 
 // 1 16 0 17 -40 1 0 0 0 1 0 0 0 1 s\6196s01.dat
-  [1,16,0,17,-40,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6196s01()],
+  [1,16,0,17,-40,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6196s01(realsolid)],
 ];
 module ldraw_lib__6198(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6198(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6198(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6198(line=0.2);

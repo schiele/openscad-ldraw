@@ -3,7 +3,8 @@ use <s/26051s01.scad>
 use <s/26051s02.scad>
 use <s/26051s03.scad>
 use <s/26051s04.scad>
-function ldraw_lib__26051p01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__26051p01(realsolid=false) = [
 // 0 Minifig Head Sonic the Hedgehog with Green Eyes, Tan Face and Half Smile Pattern
 // 0 Name: 26051p01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -22,19 +23,19 @@ function ldraw_lib__26051p01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\26051s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__26051s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__26051s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\26051s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__26051s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__26051s01(realsolid)],
 // 1 0 0 0 0 1 0 0 0 1 0 0 0 1 s\26051s02.dat
-  [1,0,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__26051s02()],
+  [1,0,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__26051s02(realsolid)],
 // 1 0 0 0 0 -1 0 0 0 1 0 0 0 1 s\26051s02.dat
-  [1,0,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__26051s02()],
+  [1,0,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__26051s02(realsolid)],
 // 1 19 0 0 0 -1 0 0 0 1 0 0 0 1 s\26051s03.dat
-  [1,19,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__26051s03()],
+  [1,19,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__26051s03(realsolid)],
 // 1 19 0 0 0 1 0 0 0 1 0 0 0 1 s\26051s04.dat
-  [1,19,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__26051s04()],
+  [1,19,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__26051s04(realsolid)],
 // 1 19 0 0 0 -1 0 0 0 1 0 0 0 1 s\26051s04.dat
-  [1,19,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__26051s04()],
+  [1,19,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__26051s04(realsolid)],
 // 0 // Eyes
 // 4 0 5.187 -15.855 -17.7836 5.11 -15.253 -17.727 5.46 -14.854 -17.4806 6.447 -15.736 -17.1082
   [4,0,5.187,-15.855,-17.7836,5.11,-15.253,-17.727,5.46,-14.854,-17.4806,6.447,-15.736,-17.1082],
@@ -646,5 +647,5 @@ function ldraw_lib__26051p01() = [
   [5,24,0,-11.808,-21.204,0,-12.13,-18.723,-4.85,-10.589,-17.113,4.85,-10.589,-17.113],
 ];
 module ldraw_lib__26051p01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__26051p01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__26051p01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__26051p01(line=0.2);

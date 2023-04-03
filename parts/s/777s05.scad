@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/4-4disc.scad>
 use <../../p/4-4ndis.scad>
-function ldraw_lib__s__777s05() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__777s05(realsolid=false) = [
 // 0 ~Flag Oval Lego Logo with Open "O" Pattern
 // 0 Name: s\777s05.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -163,13 +164,13 @@ function ldraw_lib__s__777s05() = [
   [4,15,9,-3.5,0,9.75,-3,0,10.5,-3,0,11.25,-3.25,0],
 // 0 //
 // 1 0 -17.8 -0.9 0 1.1 0 0 0 0 -1.1 0 1.1 0 4-4disc.dat
-  [1,0,-17.8,-0.9,0,1.1,0,0,0,0,-1.1,0,1.1,0, ldraw_lib__4_4disc()],
+  [1,0,-17.8,-0.9,0,1.1,0,0,0,0,-1.1,0,1.1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 0 18.5 -0.5 0 1.1 0 0 0 0 -1.1 0 1.1 0 4-4disc.dat
-  [1,0,18.5,-0.5,0,1.1,0,0,0,0,-1.1,0,1.1,0, ldraw_lib__4_4disc()],
+  [1,0,18.5,-0.5,0,1.1,0,0,0,0,-1.1,0,1.1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 4 -17.8 -0.9 0 1.1 0 0 0 0 -1.1 0 1.1 0 4-4ndis.dat
-  [1,4,-17.8,-0.9,0,1.1,0,0,0,0,-1.1,0,1.1,0, ldraw_lib__4_4ndis()],
+  [1,4,-17.8,-0.9,0,1.1,0,0,0,0,-1.1,0,1.1,0, ldraw_lib__4_4ndis(realsolid)],
 // 1 4 18.5 -0.5 0 1.1 0 0 0 0 -1.1 0 1.1 0 4-4ndis.dat
-  [1,4,18.5,-0.5,0,1.1,0,0,0,0,-1.1,0,1.1,0, ldraw_lib__4_4ndis()],
+  [1,4,18.5,-0.5,0,1.1,0,0,0,0,-1.1,0,1.1,0, ldraw_lib__4_4ndis(realsolid)],
 // 0 //
 // 4 0 -8.3 -5.6 0 -9.2 -6.3 0 -9.8 -5.6 0 -9.5 -4.75 0
   [4,0,-8.3,-5.6,0,-9.2,-6.3,0,-9.8,-5.6,0,-9.5,-4.75,0],
@@ -633,5 +634,5 @@ function ldraw_lib__s__777s05() = [
 // 0 //
 ];
 module ldraw_lib__s__777s05(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__777s05(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__777s05(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__777s05(line=0.2);

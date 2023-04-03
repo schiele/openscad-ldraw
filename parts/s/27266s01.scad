@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__27266s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__27266s01(realsolid=false) = [
 // 0 ~Brick  2 x  2 Round - Two Spikes
 // 0 Name: s\27266s01.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -123,5 +124,5 @@ function ldraw_lib__s__27266s01() = [
   [5,24,20.5061,13.5,-18.3848,14.1421,15.5,-14.1421,16.6914,15.5,-10.3274,18.3848,13.5,-20.5061],
 ];
 module ldraw_lib__s__27266s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__27266s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__27266s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__27266s01(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__6288456a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6288456a(realsolid=false) = [
 // 0 Sticker  1.8 x  1.8 with Bright Light Orange Flower Patterns on Dark Blue Background
 // 0 Name: 6288456a.dat
 // 0 Author: Vincent Messenet [Cheenzo]
@@ -17,7 +18,7 @@ function ldraw_lib__6288456a() = [
 // 
 // 
 // 1 16 0 -.25 0 18 0 0 0 .25 0 0 0 -18 box5-12.dat
-  [1,16,0,-.25,0,18,0,0,0,.25,0,0,0,-18, ldraw_lib__box5_12()],
+  [1,16,0,-.25,0,18,0,0,0,.25,0,0,0,-18, ldraw_lib__box5_12(realsolid)],
 // 
 // 4 191 -1.64 -.25 -.65 -2.13 -.25 1.31 -4.58 -.25 1.64 -3.44 -.25 .49
   [4,191,-1.64,-.25,-.65,-2.13,-.25,1.31,-4.58,-.25,1.64,-3.44,-.25,.49],
@@ -1299,5 +1300,5 @@ function ldraw_lib__6288456a() = [
   [4,0,-7.85,-.25,-8.18,-8.67,-.25,-9.16,-7.36,-.25,-9.82,-7.53,-.25,-8.51],
 ];
 module ldraw_lib__6288456a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6288456a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6288456a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6288456a(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <3010p0c.scad>
-function ldraw_lib__3010p20b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3010p20b(realsolid=false) = [
 // 0 ~Moved to 3010p0c
 // 0 Name: 3010p20b.dat
 // 0 Author: [PTadmin]
@@ -16,8 +17,8 @@ function ldraw_lib__3010p20b() = [
 // 
 // 0 // Brick 1 x 4 with Town Car Grille Black Pattern
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 3010p0c.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3010p0c()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3010p0c(realsolid)],
 ];
 module ldraw_lib__3010p20b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3010p20b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3010p20b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3010p20b(line=0.2);

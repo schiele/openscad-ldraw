@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/1-4cyli.scad>
 use <s/973s01.scad>
 use <s/973sp1f1.scad>
-function ldraw_lib__973p1g() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__973p1g(realsolid=false) = [
 // 0 Minifig Torso with Zipper and Police Badge Plain Pattern
 // 0 Name: 973p1g.dat
 // 0 Author: Miklos Hosszu [hmick]
@@ -21,7 +22,7 @@ function ldraw_lib__973p1g() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01(realsolid)],
 // 4 16 -19 29 10 -19 32 10 19 32 10 19 29 10
   [4,16,-19,29,10,-19,32,10,19,32,10,19,29,10],
 // 4 16 -19 29 10 19 29 10 14.345 2 10 -14.345 2 10
@@ -29,9 +30,9 @@ function ldraw_lib__973p1g() = [
 // 4 16 14.345 2 10 12 0 10 -12 0 10 -14.345 2 10
   [4,16,14.345,2,10,12,0,10,-12,0,10,-14.345,2,10],
 // 1 15 0 -4 0 4.243 0 -4.243 0 -8 0 -4.243 0 -4.243 1-4cyli.dat
-  [1,15,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli()],
+  [1,15,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli(realsolid)],
 // 1 16 7 12 -10 1 0 0 0 1 0 0 0 1 s\973sp1f1.dat
-  [1,16,7,12,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973sp1f1()],
+  [1,16,7,12,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973sp1f1(realsolid)],
 // 4 15 -6 0.5287 -10 -7 0 -10 -2 0 -10 -5 1 -10
   [4,15,-6,0.5287,-10,-7,0,-10,-2,0,-10,-5,1,-10],
 // 4 15 -4 1.4139 -10 -5 1 -10 -2 0 -10 -3 1.7703 -10
@@ -550,5 +551,5 @@ function ldraw_lib__973p1g() = [
   [3,16,6,0,-10,10.5,8,-10,7,8,-10],
 ];
 module ldraw_lib__973p1g(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__973p1g(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__973p1g(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__973p1g(line=0.2);

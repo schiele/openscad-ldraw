@@ -3,7 +3,8 @@ use <32067.scad>
 use <32074.scad>
 use <32075.scad>
 use <71830.scad>
-function ldraw_lib__32074c01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__32074c01(realsolid=false) = [
 // 0 Technic Competition Cannon with Round Bottom (Complete)
 // 0 Name: 32074c01.dat
 // 0 Author: Santeri Piippo [arezey]
@@ -18,14 +19,14 @@ function ldraw_lib__32074c01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 32074.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__32074()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__32074(realsolid)],
 // 1 494 0 -20 28.75 0 0 1 -1 0 0 0 -1 0 71830.dat
-  [1,494,0,-20,28.75,0,0,1,-1,0,0,0,-1,0, ldraw_lib__71830()],
+  [1,494,0,-20,28.75,0,0,1,-1,0,0,0,-1,0, ldraw_lib__71830(realsolid)],
 // 1 16 0 -20 -59 -1 0 0 0 0 1 0 1 0 32067.dat
-  [1,16,0,-20,-59,-1,0,0,0,0,1,0,1,0, ldraw_lib__32067()],
+  [1,16,0,-20,-59,-1,0,0,0,0,1,0,1,0, ldraw_lib__32067(realsolid)],
 // 1 16 0 -14 37 1 0 0 0 1 0 0 0 1 32075.dat
-  [1,16,0,-14,37,1,0,0,0,1,0,0,0,1, ldraw_lib__32075()],
+  [1,16,0,-14,37,1,0,0,0,1,0,0,0,1, ldraw_lib__32075(realsolid)],
 ];
 module ldraw_lib__32074c01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__32074c01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__32074c01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__32074c01(line=0.2);

@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/2-4disc.scad>
 use <../../p/2-4ndis.scad>
-function ldraw_lib__s__71472s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__71472s01(realsolid=false) = [
 // 0 ~Pattern Town TV Logo
 // 0 Name: s\71472s01.dat
 // 0 Author: Willy Tschager [Holly-Wood]
@@ -189,7 +190,7 @@ function ldraw_lib__s__71472s01() = [
 // 4 15 -19.481 0 -9.36 -19.481 0 -6.89 -13.474 0 -6.89 -13.474 0 -9.36
   [4,15,-19.481,0,-9.36,-19.481,0,-6.89,-13.474,0,-6.89,-13.474,0,-9.36],
 // 1 15 -19.481 0 -8.125 0 0 -1.235 0 1 0 1.235 0 0 2-4disc.dat
-  [1,15,-19.481,0,-8.125,0,0,-1.235,0,1,0,1.235,0,0, ldraw_lib__2_4disc()],
+  [1,15,-19.481,0,-8.125,0,0,-1.235,0,1,0,1.235,0,0, ldraw_lib__2_4disc(realsolid)],
 // 
 // 0 Border
 // 3 16 -10.794 0 14.473 -8.351 0 15.278 -9.365 0 14.282
@@ -341,7 +342,7 @@ function ldraw_lib__s__71472s01() = [
 // 3 16 4.749 0 18.088 0 0 18.405 20.716 0 18.405
   [3,16,4.749,0,18.088,0,0,18.405,20.716,0,18.405],
 // 1 16 -19.481 0 -8.125 0 0 -1.235 0 1 0 1.235 0 0 2-4ndis.dat
-  [1,16,-19.481,0,-8.125,0,0,-1.235,0,1,0,1.235,0,0, ldraw_lib__2_4ndis()],
+  [1,16,-19.481,0,-8.125,0,0,-1.235,0,1,0,1.235,0,0, ldraw_lib__2_4ndis(realsolid)],
 // 3 16 -20.716 0 -9.36 -19.481 0 -9.36 -20.716 0 -18.405
   [3,16,-20.716,0,-9.36,-19.481,0,-9.36,-20.716,0,-18.405],
 // 4 16 -19.481 0 -9.36 -13.474 0 -9.36 -13.474 0 -17.535 -20.716 0 -18.405
@@ -393,5 +394,5 @@ function ldraw_lib__s__71472s01() = [
 // 0
 ];
 module ldraw_lib__s__71472s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__71472s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__71472s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__71472s01(line=0.2);

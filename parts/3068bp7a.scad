@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3068bs01.scad>
-function ldraw_lib__3068bp7a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3068bp7a(realsolid=false) = [
 // 0 Tile  2 x  2 with White Police Badge and Star Pattern
 // 0 Name: 3068bp7a.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -15,7 +16,7 @@ function ldraw_lib__3068bp7a() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3068bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3068bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3068bs01(realsolid)],
 // 4 15 0 0 9.9 0 0 15.4 -2.3 0 14.4 -7.9 0 8.9
   [4,15,0,0,9.9,0,0,15.4,-2.3,0,14.4,-7.9,0,8.9],
 // 3 15 -2.3 0 14.4 -4.9 0 13.8 -7.9 0 8.9
@@ -180,5 +181,5 @@ function ldraw_lib__3068bp7a() = [
   [3,15,2.11,0,2.81,3.42,0,-1.21,7.32,0,2.28],
 ];
 module ldraw_lib__3068bp7a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3068bp7a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3068bp7a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3068bp7a(line=0.2);

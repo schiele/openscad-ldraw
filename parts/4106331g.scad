@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__4106331g() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4106331g(realsolid=false) = [
 // 0 Sticker  1.3 x  0.8 with "NEWS PAPER" Sign and Pointing Hand
 // 0 Name: 4106331g.dat
 // 0 Author: Willy Tschager [Holly-Wood]
@@ -19,7 +20,7 @@ function ldraw_lib__4106331g() = [
 // 
 // 0 // Box
 // 1 16 0 -.25 0 15 0 0 0 .25 0 0 0 25 box5-12.dat
-  [1,16,0,-.25,0,15,0,0,0,.25,0,0,0,25, ldraw_lib__box5_12()],
+  [1,16,0,-.25,0,15,0,0,0,.25,0,0,0,25, ldraw_lib__box5_12(realsolid)],
 // 
 // 0 // Black
 // 3 0 -9.495 -.25 16.984 -9.414 -.25 16.681 -8.754 -.25 16.917
@@ -2881,5 +2882,5 @@ function ldraw_lib__4106331g() = [
   [4,15,-.096,-.25,-3.038,.028,-.25,-2.79,-.721,-.25,-2.79,-1.683,-.25,-5.324],
 ];
 module ldraw_lib__4106331g(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4106331g(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4106331g(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4106331g(line=0.2);

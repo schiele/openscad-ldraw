@@ -3,7 +3,8 @@ use <../../p/2-4cyli.scad>
 use <../../p/2-4disc.scad>
 use <../../p/2-4edge.scad>
 use <../../p/2-4ndis.scad>
-function ldraw_lib__s__44033s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__44033s01(realsolid=false) = [
 // 0 ~Technic Bionicle Weapon Blade 12L Blade Centre - Half
 // 0 Name: s\44033s01.dat
 // 0 Author: Santeri Piippo [arezey]
@@ -188,13 +189,13 @@ function ldraw_lib__s__44033s01() = [
   [3,16,1,4.067,-36.891,1,3.596,-28.214,1,3.444,-28.315],
 // 0 //
 // 1 16 1 10.756 -16.834 0 -1 0 1.756 0 0 0 0 1 2-4disc.dat
-  [1,16,1,10.756,-16.834,0,-1,0,1.756,0,0,0,0,1, ldraw_lib__2_4disc()],
+  [1,16,1,10.756,-16.834,0,-1,0,1.756,0,0,0,0,1, ldraw_lib__2_4disc(realsolid)],
 // 1 16 2 10.756 -16.834 0 -1 0 1.756 0 0 0 0 1 2-4ndis.dat
-  [1,16,2,10.756,-16.834,0,-1,0,1.756,0,0,0,0,1, ldraw_lib__2_4ndis()],
+  [1,16,2,10.756,-16.834,0,-1,0,1.756,0,0,0,0,1, ldraw_lib__2_4ndis(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 1 10.756 -16.834 0 1 0 1.756 0 0 0 0 1 2-4cyli.dat
-  [1,16,1,10.756,-16.834,0,1,0,1.756,0,0,0,0,1, ldraw_lib__2_4cyli()],
+  [1,16,1,10.756,-16.834,0,1,0,1.756,0,0,0,0,1, ldraw_lib__2_4cyli(realsolid)],
 // 2 24 1 12.512 -16.834 1 13.308 -24.228
   [2,24,1,12.512,-16.834,1,13.308,-24.228],
 // 2 24 1 13.308 -24.228 1 14.673 -34.123
@@ -498,9 +499,9 @@ function ldraw_lib__s__44033s01() = [
 // 5 24 4 4.436 -43.678 1 4.436 -43.678 1 4.777 -56.076 4 3.596 -28.214
   [5,24,4,4.436,-43.678,1,4.436,-43.678,1,4.777,-56.076,4,3.596,-28.214],
 // 1 16 1 10.756 -16.834 0 1 0 1.756 0 0 0 0 1 2-4edge.dat
-  [1,16,1,10.756,-16.834,0,1,0,1.756,0,0,0,0,1, ldraw_lib__2_4edge()],
+  [1,16,1,10.756,-16.834,0,1,0,1.756,0,0,0,0,1, ldraw_lib__2_4edge(realsolid)],
 // 1 16 2 10.756 -16.834 0 1 0 1.756 0 0 0 0 1 2-4edge.dat
-  [1,16,2,10.756,-16.834,0,1,0,1.756,0,0,0,0,1, ldraw_lib__2_4edge()],
+  [1,16,2,10.756,-16.834,0,1,0,1.756,0,0,0,0,1, ldraw_lib__2_4edge(realsolid)],
 // 2 24 4 3.596 -28.214 4 1.028 -28.796
   [2,24,4,3.596,-28.214,4,1.028,-28.796],
 // 2 24 2 9 -16.834 2 9 7.735
@@ -879,5 +880,5 @@ function ldraw_lib__s__44033s01() = [
 // 0 //
 ];
 module ldraw_lib__s__44033s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__44033s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__44033s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__44033s01(line=0.2);

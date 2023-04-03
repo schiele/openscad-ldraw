@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/2468s01.scad>
 use <s/3298p53c.scad>
-function ldraw_lib__2468p54() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2468p54(realsolid=false) = [
 // 0 Panel  3 x  3 x  6 Corner Convex with Space Police Right Pattern
 // 0 Name: 2468p54.dat
 // 0 Author: Carsten Schmitz [Deckard]
@@ -22,7 +23,7 @@ function ldraw_lib__2468p54() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2468s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2468s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2468s01(realsolid)],
 // 4 16 13.8 38.7 -46.2 46.2 38.7 -13.8 50 34 -10 10 34 -50
   [4,16,13.8,38.7,-46.2,46.2,38.7,-13.8,50,34,-10,10,34,-50],
 // 4 16 10 34 -50 10 90 -50 13.8 84.3 -46.2 13.8 38.7 -46.2
@@ -32,9 +33,9 @@ function ldraw_lib__2468p54() = [
 // 4 16 10 90 -50 50 90 -10 46.2 84.3 -13.8 13.8 84.3 -46.2
   [4,16,10,90,-50,50,90,-10,46.2,84.3,-13.8,13.8,84.3,-46.2],
 // 1 16 30 61.5 -30 0 -1 0.81 1.14 0 0 0 0 0.81 s\3298p53c.dat
-  [1,16,30,61.5,-30,0,-1,0.81,1.14,0,0,0,0,0.81, ldraw_lib__s__3298p53c()],
+  [1,16,30,61.5,-30,0,-1,0.81,1.14,0,0,0,0,0.81, ldraw_lib__s__3298p53c(realsolid)],
 // 
 ];
 module ldraw_lib__2468p54(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2468p54(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2468p54(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2468p54(line=0.2);

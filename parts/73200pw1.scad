@@ -2,7 +2,8 @@ use <../lib.scad>
 use <3815bpw1.scad>
 use <3816bpw1.scad>
 use <3817bpw1.scad>
-function ldraw_lib__73200pw1() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__73200pw1(realsolid=false) = [
 // 0 Minifig Hips and Legs with Red/White Triangles, Fringe Pattern
 // 0 Name: 73200pw1.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -23,12 +24,12 @@ function ldraw_lib__73200pw1() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 3815bpw1.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3815bpw1()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3815bpw1(realsolid)],
 // 1 16 0 12 0 1 0 0 0 1 0 0 0 1 3816bpw1.dat
-  [1,16,0,12,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3816bpw1()],
+  [1,16,0,12,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3816bpw1(realsolid)],
 // 1 16 0 12 0 1 0 0 0 1 0 0 0 1 3817bpw1.dat
-  [1,16,0,12,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3817bpw1()],
+  [1,16,0,12,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3817bpw1(realsolid)],
 ];
 module ldraw_lib__73200pw1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__73200pw1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__73200pw1(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__73200pw1(line=0.2);

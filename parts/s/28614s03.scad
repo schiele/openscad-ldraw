@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__28614s03() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__28614s03(realsolid=false) = [
 // 0 ~Figure Elves Goblin Face Half
 // 0 Name: s\28614s03.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -279,5 +280,5 @@ function ldraw_lib__s__28614s03() = [
   [5,24,7.1,-44.5,-16,4,-43.1,-17.5,6,-41.7,-16.2,4.1,-44.8,-17.3],
 ];
 module ldraw_lib__s__28614s03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__28614s03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__28614s03(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__28614s03(line=0.2);

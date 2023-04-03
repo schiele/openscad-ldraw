@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/2528s01.scad>
 use <s/2528s02.scad>
-function ldraw_lib__2528p30() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2528p30(realsolid=false) = [
 // 0 Minifig Hat Bicorne with Evil Skull and Crossbones Pattern (Obsolete)
 // 0 Name: 2528p30.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -26,9 +27,9 @@ function ldraw_lib__2528p30() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2528s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2528s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2528s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 -1 s\2528s02.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__2528s02()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__2528s02(realsolid)],
 // 0 // pattern created using Quad2Dat, SlicerPro, Edger2 and DATHeader
 // 4 15 0 -10 -12 5.56 -10 -11.0733 5.58 -10.7 -10.58 3.42 -14.3 -8.42
   [4,15,0,-10,-12,5.56,-10,-11.0733,5.58,-10.7,-10.58,3.42,-14.3,-8.42],
@@ -939,5 +940,5 @@ function ldraw_lib__2528p30() = [
   [4,16,3.87,-5.5,-13.51,5.75,-4,-13.4833,4.5,-6.5,-12.9,3.87,-5.87,-13.362],
 ];
 module ldraw_lib__2528p30(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2528p30(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2528p30(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2528p30(line=0.2);

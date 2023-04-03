@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/1-4cyli.scad>
 use <s/973p4dl.scad>
 use <s/973s01.scad>
-function ldraw_lib__973p4d() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__973p4d(realsolid=false) = [
 // 0 Minifig Torso with Royal Knights Lion-Head Shield Pattern
 // 0 Name: 973p4d.dat
 // 0 Author: Bernd Broich [bbroich]
@@ -24,7 +25,7 @@ function ldraw_lib__973p4d() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01(realsolid)],
 // 
 // 0 // Plain front
 // 3 16 0 26.185 -10 -19 29 -10 19 29 -10
@@ -59,9 +60,9 @@ function ldraw_lib__973p4d() = [
 // 0 // SHIELD
 // 0 // Lion
 // 1 16 0 13 -10 0.4 0 0 0 0.4 0 0 0 1 s\973p4dl.dat
-  [1,16,0,13,-10,0.4,0,0,0,0.4,0,0,0,1, ldraw_lib__s__973p4dl()],
+  [1,16,0,13,-10,0.4,0,0,0,0.4,0,0,0,1, ldraw_lib__s__973p4dl(realsolid)],
 // 1 16 0 13 -10 -0.4 0 0 0 0.4 0 0 0 1 s\973p4dl.dat
-  [1,16,0,13,-10,-0.4,0,0,0,0.4,0,0,0,1, ldraw_lib__s__973p4dl()],
+  [1,16,0,13,-10,-0.4,0,0,0,0.4,0,0,0,1, ldraw_lib__s__973p4dl(realsolid)],
 // 
 // 0 // Border
 // 4 1 0 26.185 -10 4.38 22.285 -10 3.8325 21 -10 0 24.412 -10
@@ -235,8 +236,8 @@ function ldraw_lib__973p4d() = [
 // 
 // 0 // Neck mark
 // 1 0 0 -4 0 4.243 0 -4.243 0 -8 0 -4.243 0 -4.243 1-4cyli.dat
-  [1,0,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli()],
+  [1,0,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli(realsolid)],
 ];
 module ldraw_lib__973p4d(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__973p4d(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__973p4d(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__973p4d(line=0.2);

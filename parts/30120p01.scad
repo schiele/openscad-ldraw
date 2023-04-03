@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/30120s00.scad>
 use <s/30120s02.scad>
-function ldraw_lib__30120p01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__30120p01(realsolid=false) = [
 // 0 Minifig Helmet with Hexagonal Top and Gold Alien Pattern
 // 0 Name: 30120p01.dat
 // 0 Author: Nils Schmidt [BlackBrick89]
@@ -23,10 +24,10 @@ function ldraw_lib__30120p01() = [
 // 0 // Helmet Base
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\30120s00.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30120s00()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30120s00(realsolid)],
 // 0 // Alien Pattern
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\30120s02.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__30120s02()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__30120s02(realsolid)],
 // 3 82 7.4685 -8.3192 -7.6304 7.412 -8.383 -7.575 7.4025 -8.3275 -7.6232
   [3,82,7.4685,-8.3192,-7.6304,7.412,-8.383,-7.575,7.4025,-8.3275,-7.6232],
 // 4 82 7.4685 -8.3192 -7.6304 7.4025 -8.3275 -7.6232 7.3612 -8.0856 -7.833 7.5264 -8.2539 -7.687
@@ -685,5 +686,5 @@ function ldraw_lib__30120p01() = [
   [3,82,0.1629,-8.383,7.144,1.9039,-8.383,6.6965,1.5107,-8.383,7.0319],
 ];
 module ldraw_lib__30120p01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__30120p01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__30120p01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__30120p01(line=0.2);

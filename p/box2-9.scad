@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__box2_9() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__box2_9(realsolid=false) = [
 // 0 Box with 2 Faces without 9 Edges
 // 0 Name: box2-9.dat
 // 0 Author: Mark Kennedy [mkennedy]
@@ -26,5 +27,5 @@ function ldraw_lib__box2_9() = [
 // 0
 ];
 module ldraw_lib__box2_9(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__box2_9(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__box2_9(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__box2_9(line=0.2);

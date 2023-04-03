@@ -4,7 +4,8 @@ use <../p/4-4disc.scad>
 use <../p/4-4edge.scad>
 use <../p/4-8sphe.scad>
 use <s/54809s01.scad>
-function ldraw_lib__54809() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__54809(realsolid=false) = [
 // 0 Electric Motor Boat Propeller with  2 Blades
 // 0 Name: 54809.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -23,20 +24,20 @@ function ldraw_lib__54809() = [
 // 
 // 
 // 1 16 0 0 0 2.5 0 0 0 0 2.5 0 2.5 0 4-4cylc.dat
-  [1,16,0,0,0,2.5,0,0,0,0,2.5,0,2.5,0, ldraw_lib__4_4cylc()],
+  [1,16,0,0,0,2.5,0,0,0,0,2.5,0,2.5,0, ldraw_lib__4_4cylc(realsolid)],
 // 1 16 0 0 2.5 -7.7 0 0 0 0 7.7 0 26.2 0 4-4cylc.dat
-  [1,16,0,0,2.5,-7.7,0,0,0,0,7.7,0,26.2,0, ldraw_lib__4_4cylc()],
+  [1,16,0,0,2.5,-7.7,0,0,0,0,7.7,0,26.2,0, ldraw_lib__4_4cylc(realsolid)],
 // 1 16 0 0 28.7 -7.7 0 0 0 0 7.7 0 -1 0 4-4disc.dat
-  [1,16,0,0,28.7,-7.7,0,0,0,0,7.7,0,-1,0, ldraw_lib__4_4disc()],
+  [1,16,0,0,28.7,-7.7,0,0,0,0,7.7,0,-1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 0 28.7 6 0 0 0 0 6 0 10.5 0 4-8sphe.dat
-  [1,16,0,0,28.7,6,0,0,0,0,6,0,10.5,0, ldraw_lib__4_8sphe()],
+  [1,16,0,0,28.7,6,0,0,0,0,6,0,10.5,0, ldraw_lib__4_8sphe(realsolid)],
 // 1 16 0 0 28.7 6 0 0 0 0 6 0 1 0 4-4edge.dat
-  [1,16,0,0,28.7,6,0,0,0,0,6,0,1,0, ldraw_lib__4_4edge()],
+  [1,16,0,0,28.7,6,0,0,0,0,6,0,1,0, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\54809s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__54809s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__54809s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 -1 0 0 0 1 s\54809s01.dat
-  [1,16,0,0,0,-1,0,0,0,-1,0,0,0,1, ldraw_lib__s__54809s01()],
+  [1,16,0,0,0,-1,0,0,0,-1,0,0,0,1, ldraw_lib__s__54809s01(realsolid)],
 ];
 module ldraw_lib__54809(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__54809(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__54809(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__54809(line=0.2);

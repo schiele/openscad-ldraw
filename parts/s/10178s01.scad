@@ -10,7 +10,8 @@ use <../../p/axl5hol9.scad>
 use <../../p/axlehol2.scad>
 use <../../p/axlehol3.scad>
 use <10178s03.scad>
-function ldraw_lib__s__10178s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__10178s01(realsolid=false) = [
 // 0 ~Rock Stepped Main
 // 0 Name: s\10178s01.dat
 // 0 Author: Rolf Osterthun [Rolf]
@@ -145,40 +146,40 @@ function ldraw_lib__s__10178s01() = [
   [4,16,1.692,-45,-4,2.304,-46,-4,-2.304,-46,-4,-1.692,-45,-4],
 // 
 // 1 16 0 0 0 6 0 0 0 -1 0 0 0 6 4-4edge.dat
-  [1,16,0,0,0,6,0,0,0,-1,0,0,0,6, ldraw_lib__4_4edge()],
+  [1,16,0,0,0,6,0,0,0,-1,0,0,0,6, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 0 0 8.25 0 0 0 -1 0 0 0 8.25 4-4edge.dat
-  [1,16,0,0,0,8.25,0,0,0,-1,0,0,0,8.25, ldraw_lib__4_4edge()],
+  [1,16,0,0,0,8.25,0,0,0,-1,0,0,0,8.25, ldraw_lib__4_4edge(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 0 6 0 0 0 -4.875 0 0 0 6 4-4cyli.dat
-  [1,16,0,0,0,6,0,0,0,-4.875,0,0,0,6, ldraw_lib__4_4cyli()],
+  [1,16,0,0,0,6,0,0,0,-4.875,0,0,0,6, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 0 0 2 0 0 0 -1 0 0 0 2 4-4ring3.dat
-  [1,16,0,0,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__4_4ring3()],
+  [1,16,0,0,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__4_4ring3(realsolid)],
 // 1 16 0 0 0 .25 0 0 0 -1 0 0 0 .25 4-4rin32.dat
-  [1,16,0,0,0,.25,0,0,0,-1,0,0,0,.25, ldraw_lib__4_4rin32()],
+  [1,16,0,0,0,.25,0,0,0,-1,0,0,0,.25, ldraw_lib__4_4rin32(realsolid)],
 // 1 16 0 -20 0 1 0 0 0 -1 0 0 0 -1 axl5end.dat
-  [1,16,0,-20,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__axl5end()],
+  [1,16,0,-20,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__axl5end(realsolid)],
 // 1 16 0 -20 0 1 0 0 0 1 0 0 0 1 axlehol2.dat
-  [1,16,0,-20,0,1,0,0,0,1,0,0,0,1, ldraw_lib__axlehol2()],
+  [1,16,0,-20,0,1,0,0,0,1,0,0,0,1, ldraw_lib__axlehol2(realsolid)],
 // 1 16 0 -20 0 1 0 0 0 1 0 0 0 1 axl5hol9.dat
-  [1,16,0,-20,0,1,0,0,0,1,0,0,0,1, ldraw_lib__axl5hol9()],
+  [1,16,0,-20,0,1,0,0,0,1,0,0,0,1, ldraw_lib__axl5hol9(realsolid)],
 // 1 16 0 -20 0 1 0 0 0 15.125 0 0 0 1 axl5hol8.dat
-  [1,16,0,-20,0,1,0,0,0,15.125,0,0,0,1, ldraw_lib__axl5hol8()],
+  [1,16,0,-20,0,1,0,0,0,15.125,0,0,0,1, ldraw_lib__axl5hol8(realsolid)],
 // 1 16 0 -4.875 0 1 0 0 0 -1 0 0 0 -1 axl5ho10.dat
-  [1,16,0,-4.875,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__axl5ho10()],
+  [1,16,0,-4.875,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__axl5ho10(realsolid)],
 // 1 16 0 -4.875 0 1 0 0 0 1 0 0 0 1 axl5hol9.dat
-  [1,16,0,-4.875,0,1,0,0,0,1,0,0,0,1, ldraw_lib__axl5hol9()],
+  [1,16,0,-4.875,0,1,0,0,0,1,0,0,0,1, ldraw_lib__axl5hol9(realsolid)],
 // 1 16 0 -4.875 0 1 0 0 0 1 0 0 0 1 axlehol3.dat
-  [1,16,0,-4.875,0,1,0,0,0,1,0,0,0,1, ldraw_lib__axlehol3()],
+  [1,16,0,-4.875,0,1,0,0,0,1,0,0,0,1, ldraw_lib__axlehol3(realsolid)],
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\10178s03.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__10178s03()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__10178s03(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 -1 s\10178s03.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__10178s03()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__10178s03(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 -1 s\10178s03.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__10178s03()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__10178s03(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\10178s03.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__10178s03()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__10178s03(realsolid)],
 // 
 // 5 24 0 0 8.25 0 -6.153 8.25 3.157 -6.02 7.622 -3.157 -6.02 7.622
   [5,24,0,0,8.25,0,-6.153,8.25,3.157,-6.02,7.622,-3.157,-6.02,7.622],
@@ -198,5 +199,5 @@ function ldraw_lib__s__10178s01() = [
   [5,24,-16.581,-5.602,0,-16.581,-14.113,0,-14.715,-11.309,0,-14.715,-11.309,4],
 ];
 module ldraw_lib__s__10178s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__10178s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__10178s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__10178s01(line=0.2);

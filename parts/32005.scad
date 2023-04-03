@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/axlehol8.scad>
 use <s/32005s01.scad>
-function ldraw_lib__32005() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__32005(realsolid=false) = [
 // 0 Technic Steering Link  6L Type 2
 // 0 Name: 32005.dat
 // 0 Author: Donald Sutter [technog]
@@ -18,11 +19,11 @@ function ldraw_lib__32005() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\32005s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__32005s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__32005s01(realsolid)],
 // 1 16 0 0 100 1 0 0 0 1 0 0 0 1 s\32005s01.dat
-  [1,16,0,0,100,1,0,0,0,1,0,0,0,1, ldraw_lib__s__32005s01()],
+  [1,16,0,0,100,1,0,0,0,1,0,0,0,1, ldraw_lib__s__32005s01(realsolid)],
 // 1 16 0 0 9.61 1 0 0 0 0 1 0 80.78 0 axlehol8.dat
-  [1,16,0,0,9.61,1,0,0,0,0,1,0,80.78,0, ldraw_lib__axlehol8()],
+  [1,16,0,0,9.61,1,0,0,0,0,1,0,80.78,0, ldraw_lib__axlehol8(realsolid)],
 // 2 24 0 6 10 2 5.61 9.61
   [2,24,0,6,10,2,5.61,9.61],
 // 2 24 2 2 9.61 2 5.61 9.61
@@ -162,5 +163,5 @@ function ldraw_lib__32005() = [
 // 0
 ];
 module ldraw_lib__32005(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__32005(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__32005(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__32005(line=0.2);

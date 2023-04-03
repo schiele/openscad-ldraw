@@ -7,7 +7,8 @@ use <s/973pw1a.scad>
 use <s/973pw1b.scad>
 use <s/973pw2a.scad>
 use <s/973s01.scad>
-function ldraw_lib__973pw2() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__973pw2(realsolid=false) = [
 // 0 Minifig Torso with US Cavalry Officer Pattern
 // 0 Name: 973pw2.dat
 // 0 Author: Willy Tschager [Holly-Wood]
@@ -31,9 +32,9 @@ function ldraw_lib__973pw2() = [
 // 0 // Black
 // 
 // 1 0 -10.3 15.9 -10 0.5 0 0 0 0 -0.5 0 0.5 0 2-4disc.dat
-  [1,0,-10.3,15.9,-10,0.5,0,0,0,0,-0.5,0,0.5,0, ldraw_lib__2_4disc()],
+  [1,0,-10.3,15.9,-10,0.5,0,0,0,0,-0.5,0,0.5,0, ldraw_lib__2_4disc(realsolid)],
 // 1 0 11.644 30.142 -10 1.117 0 0 0 0 -0.5125 0 1 0 4-4ndis.dat
-  [1,0,11.644,30.142,-10,1.117,0,0,0,0,-0.5125,0,1,0, ldraw_lib__4_4ndis()],
+  [1,0,11.644,30.142,-10,1.117,0,0,0,0,-0.5125,0,1,0, ldraw_lib__4_4ndis(realsolid)],
 // 4 0 -11.06 0 -10 -11.55 0 -10 -11.98 0.81 -10 -11.48 0.85 -10
   [4,0,-11.06,0,-10,-11.55,0,-10,-11.98,0.81,-10,-11.48,0.85,-10],
 // 4 0 -11.48 0.85 -10 -11.98 0.81 -10 -12.566 2.158 -10 -12.02 2.22 -10
@@ -303,7 +304,7 @@ function ldraw_lib__973pw2() = [
 // 
 // 0 // Main Color
 // 1 16 -10.3 15.9 -10 0.5 0 0 0 0 -0.5 0 0.5 0 2-4ndis.dat
-  [1,16,-10.3,15.9,-10,0.5,0,0,0,0,-0.5,0,0.5,0, ldraw_lib__2_4ndis()],
+  [1,16,-10.3,15.9,-10,0.5,0,0,0,0,-0.5,0,0.5,0, ldraw_lib__2_4ndis(realsolid)],
 // 3 16 -11.98 0.81 -10 -11.55 0 -10 -12 0 -10
   [3,16,-11.98,0.81,-10,-11.55,0,-10,-12,0,-10],
 // 4 16 -14.345 2 -10 -12.566 2.158 -10 -11.98 0.81 -10 -12 0 -10
@@ -577,27 +578,27 @@ function ldraw_lib__973pw2() = [
 // 
 // 0 // Subpart Gold Detail
 // 1 334 0 0 0 1 0 0 0 1 0 0 0 1 s\973pw2a.dat
-  [1,334,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973pw2a()],
+  [1,334,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973pw2a(realsolid)],
 // 
 // 0 // Subparts Buttons
 // 1 16 -5.965 10.21 -10 1 0 0 0 1 0 0 0 1 s\973pw1a.dat
-  [1,16,-5.965,10.21,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973pw1a()],
+  [1,16,-5.965,10.21,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973pw1a(realsolid)],
 // 1 16 -5.395 13.97 -10 1 0 0 0 1 0 0 0 1 s\973pw1a.dat
-  [1,16,-5.395,13.97,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973pw1a()],
+  [1,16,-5.395,13.97,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973pw1a(realsolid)],
 // 1 16 -5.485 17.71 -10 1 0 0 0 1 0 0 0 1 s\973pw1a.dat
-  [1,16,-5.485,17.71,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973pw1a()],
+  [1,16,-5.485,17.71,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973pw1a(realsolid)],
 // 1 16 -5.659 21.47 -10 1 0 0 0 1 0 0 0 1 s\973pw1a.dat
-  [1,16,-5.659,21.47,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973pw1a()],
+  [1,16,-5.659,21.47,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973pw1a(realsolid)],
 // 1 16 -4.985 25.25 -10 1 0 0 0 1 0 0 0 1 s\973pw1a.dat
-  [1,16,-4.985,25.25,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973pw1a()],
+  [1,16,-4.985,25.25,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973pw1a(realsolid)],
 // 
 // 0 // Subparts Belt Logo
 // 1 334 0 0 0 1 0 0 0 1 0 0 0 1 s\973pw1b.dat
-  [1,334,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973pw1b()],
+  [1,334,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973pw1b(realsolid)],
 // 
 // 0 // Subpart Minifig Torso without Front or Back
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01(realsolid)],
 // 
 // 0 // Back Shell
 // 4 16 19 32 10 -19 32 10 -19 29 10 19 29 10
@@ -609,9 +610,9 @@ function ldraw_lib__973pw2() = [
 // 
 // 0 // Neck Mark
 // 1 0 0 -4 0 4.243 0 -4.243 0 -8 0 -4.243 0 -4.243 1-4cyli.dat
-  [1,0,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli()],
+  [1,0,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli(realsolid)],
 // 0
 ];
 module ldraw_lib__973pw2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__973pw2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__973pw2(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__973pw2(line=0.2);

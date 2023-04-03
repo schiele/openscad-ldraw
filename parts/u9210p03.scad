@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/92241s01.scad>
-function ldraw_lib__u9210p03() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__u9210p03(realsolid=false) = [
 // 0 Figure Friends Boy Torso with Lime Vest over Bronze Diamond Shirt Pattern
 // 0 Name: u9210p03.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -15,7 +16,7 @@ function ldraw_lib__u9210p03() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\92241s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__92241s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__92241s01(realsolid)],
 // 4 27 8.68 18 3.79 7.67 18 4.5 7.8 12.9 4.76 8.62 13.25 4.14
   [4,27,8.68,18,3.79,7.67,18,4.5,7.8,12.9,4.76,8.62,13.25,4.14],
 // 3 27 4.4 13.26 5.71 7.67 18 4.5 4.34 18 5.73
@@ -3566,5 +3567,5 @@ function ldraw_lib__u9210p03() = [
   [4,300,7.24,2.4,-7.34,6.86,2.3987,-7.4286,6.8347,4.5046,-7.6335,6.99,4.64,-7.61],
 ];
 module ldraw_lib__u9210p03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__u9210p03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__u9210p03(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__u9210p03(line=0.2);

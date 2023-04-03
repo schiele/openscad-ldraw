@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/5-16cyli.scad>
 use <s/3815bs01.scad>
-function ldraw_lib__3815bphb() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3815bphb(realsolid=false) = [
 // 0 Minifig Hips with Purple Greatcoat with Dark Grey Border Pattern
 // 0 Name: 3815bphb.dat
 // 0 Author: Chris Dee [cwdee]
@@ -25,9 +26,9 @@ function ldraw_lib__3815bphb() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3815bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3815bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3815bs01(realsolid)],
 // 1 16 -2 12 0 0 4 0 8.08395 0 -3.34848 -3.34848 0 -8.08395 5-16cyli.dat
-  [1,16,-2,12,0,0,4,0,8.08395,0,-3.34848,-3.34848,0,-8.08395, ldraw_lib__5_16cyli()],
+  [1,16,-2,12,0,0,4,0,8.08395,0,-3.34848,-3.34848,0,-8.08395, ldraw_lib__5_16cyli(realsolid)],
 // 3 22 1 5 -10 0 3 -10 -1 5 -10
   [3,22,1,5,-10,0,3,-10,-1,5,-10],
 // 4 22 2 5 -10 15.5 5 -10 15 1.5 -10 14 1 -10
@@ -74,5 +75,5 @@ function ldraw_lib__3815bphb() = [
   [4,16,18,0,-10,-18,0,-10,-15.25,.25,-10,15.75,.25,-10],
 ];
 module ldraw_lib__3815bphb(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3815bphb(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3815bphb(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3815bphb(line=0.2);

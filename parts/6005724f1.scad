@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__6005724f1() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6005724f1(realsolid=false) = [
 // 0 Sticker  0.8 x  3.9 with Bricks and Cracks Type 5
 // 0 Name: 6005724f1.dat
 // 0 Author: Christian Neumann [Wesley]
@@ -19,7 +20,7 @@ function ldraw_lib__6005724f1() = [
 // 
 // 
 // 1 16 0 -0.25 0 39 0 0 0 0.25 0 0 0 8 box5-12.dat
-  [1,16,0,-0.25,0,39,0,0,0,0.25,0,0,0,8, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,39,0,0,0,0.25,0,0,0,8, ldraw_lib__box5_12(realsolid)],
 // 4 0 -20.6 -0.25 7.1 -19.5 -0.25 8 -21.8 -0.25 8 -22.9 -0.25 6.9
   [4,0,-20.6,-0.25,7.1,-19.5,-0.25,8,-21.8,-0.25,8,-22.9,-0.25,6.9],
 // 4 0 -23 -0.25 5.3 -20.6 -0.25 7.1 -22.9 -0.25 6.9 -24.4 -0.25 5.5
@@ -288,5 +289,5 @@ function ldraw_lib__6005724f1() = [
   [4,16,4.2,-0.25,-6.2,0.1,-0.25,-2.3,0.1,-0.25,-3.8,0.8,-0.25,-5.2],
 ];
 module ldraw_lib__6005724f1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6005724f1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6005724f1(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6005724f1(line=0.2);

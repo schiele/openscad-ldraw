@@ -2,7 +2,8 @@ use <../../lib.scad>
 use <../../p/box4-4a.scad>
 use <../../p/rect3.scad>
 use <3351bs02.scad>
-function ldraw_lib__s__647s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__647s01(realsolid=false) = [
 // 0 ~Roadsign Square without Decorated Surface
 // 0 Name: s\647s01.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -19,15 +20,15 @@ function ldraw_lib__s__647s01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3351bs02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3351bs02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3351bs02(realsolid)],
 // 0 //
 // 1 16 0 -88 -2 -20 0 0 0 0 -20 0 4 0 box4-4a.dat
-  [1,16,0,-88,-2,-20,0,0,0,0,-20,0,4,0, ldraw_lib__box4_4a()],
+  [1,16,0,-88,-2,-20,0,0,0,0,-20,0,4,0, ldraw_lib__box4_4a(realsolid)],
 // 1 16 -13 -68 0 0 0 -7 0 -4 0 2 0 0 rect3.dat
-  [1,16,-13,-68,0,0,0,-7,0,-4,0,2,0,0, ldraw_lib__rect3()],
+  [1,16,-13,-68,0,0,0,-7,0,-4,0,2,0,0, ldraw_lib__rect3(realsolid)],
 // 1 16 13 -68 0 0 0 7 0 -4 0 -2 0 0 rect3.dat
-  [1,16,13,-68,0,0,0,7,0,-4,0,-2,0,0, ldraw_lib__rect3()],
+  [1,16,13,-68,0,0,0,7,0,-4,0,-2,0,0, ldraw_lib__rect3(realsolid)],
 ];
 module ldraw_lib__s__647s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__647s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__647s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__647s01(line=0.2);

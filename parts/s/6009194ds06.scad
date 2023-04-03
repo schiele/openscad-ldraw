@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <6009194ds09.scad>
-function ldraw_lib__s__6009194ds06() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__6009194ds06(realsolid=false) = [
 // 0 ~Sticker  3.3 x  1.8 with White Stripe on Black Background and Logo Ferrari Rectangular - Upper Section 6
 // 0 Name: s\6009194ds06.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -33,8 +34,8 @@ function ldraw_lib__s__6009194ds06() = [
   [4,15,3.562,-0.25,-29.0588,3.562,-0.25,-33.9208,9,-0.25,-33.9208,9,-0.25,-22.7337],
 // 0 // Factor .65, cut at 7.48
 // 1 15 0 -0.25 -33.9208 .65 0 0 0 1 0 0 0 .65 s\6009194ds09.dat
-  [1,15,0,-0.25,-33.9208,.65,0,0,0,1,0,0,0,.65, ldraw_lib__s__6009194ds09()],
+  [1,15,0,-0.25,-33.9208,.65,0,0,0,1,0,0,0,.65, ldraw_lib__s__6009194ds09(realsolid)],
 ];
 module ldraw_lib__s__6009194ds06(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__6009194ds06(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__6009194ds06(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__6009194ds06(line=0.2);

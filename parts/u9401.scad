@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/box.scad>
 use <../p/box4-1.scad>
 use <../p/box5.scad>
-function ldraw_lib__u9401() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__u9401(realsolid=false) = [
 // 0 ~Electric Powered Up 6 Port Hub Micro-USB Connector
 // 0 Name: u9401.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -21,7 +22,7 @@ function ldraw_lib__u9401() = [
 // 
 // 
 // 1 0 0 9.5 0 9.5 0 0 0 1 0 0 0 3.5 box.dat
-  [1,0,0,9.5,0,9.5,0,0,0,1,0,0,0,3.5, ldraw_lib__box()],
+  [1,0,0,9.5,0,9.5,0,0,0,1,0,0,0,3.5, ldraw_lib__box(realsolid)],
 // 2 24 -8 0 3.5 -9.5 0 2
   [2,24,-8,0,3.5,-9.5,0,2],
 // 2 24 -9.5 0 0 -6 0 -3.5
@@ -143,17 +144,17 @@ function ldraw_lib__u9401() = [
 // 4 16 8.5 0 0.5 5.5 0 -2.5 6 0 -3.5 9.5 0 0
   [4,16,8.5,0,0.5,5.5,0,-2.5,6,0,-3.5,9.5,0,0],
 // 1 0 0 8.5 1 5 0 0 0 -7 0 0 0 .5 box5.dat
-  [1,0,0,8.5,1,5,0,0,0,-7,0,0,0,.5, ldraw_lib__box5()],
+  [1,0,0,8.5,1,5,0,0,0,-7,0,0,0,.5, ldraw_lib__box5(realsolid)],
 // 1 334 0 8.5 .4 .7 0 0 0 -6.8 0 0 0 -.1 box4-1.dat
-  [1,334,0,8.5,.4,.7,0,0,0,-6.8,0,0,0,-.1, ldraw_lib__box4_1()],
+  [1,334,0,8.5,.4,.7,0,0,0,-6.8,0,0,0,-.1, ldraw_lib__box4_1(realsolid)],
 // 1 334 2 8.5 .4 -.7 0 0 0 -6.8 0 0 0 -.1 box4-1.dat
-  [1,334,2,8.5,.4,-.7,0,0,0,-6.8,0,0,0,-.1, ldraw_lib__box4_1()],
+  [1,334,2,8.5,.4,-.7,0,0,0,-6.8,0,0,0,-.1, ldraw_lib__box4_1(realsolid)],
 // 1 334 4 8.5 .4 -.7 0 0 0 -6.8 0 0 0 -.1 box4-1.dat
-  [1,334,4,8.5,.4,-.7,0,0,0,-6.8,0,0,0,-.1, ldraw_lib__box4_1()],
+  [1,334,4,8.5,.4,-.7,0,0,0,-6.8,0,0,0,-.1, ldraw_lib__box4_1(realsolid)],
 // 1 334 -2 8.5 .4 .7 0 0 0 -6.8 0 0 0 -.1 box4-1.dat
-  [1,334,-2,8.5,.4,.7,0,0,0,-6.8,0,0,0,-.1, ldraw_lib__box4_1()],
+  [1,334,-2,8.5,.4,.7,0,0,0,-6.8,0,0,0,-.1, ldraw_lib__box4_1(realsolid)],
 // 1 334 -4 8.5 .4 .7 0 0 0 -6.8 0 0 0 -.1 box4-1.dat
-  [1,334,-4,8.5,.4,.7,0,0,0,-6.8,0,0,0,-.1, ldraw_lib__box4_1()],
+  [1,334,-4,8.5,.4,.7,0,0,0,-6.8,0,0,0,-.1, ldraw_lib__box4_1(realsolid)],
 // 4 16 5.5 0 -2.5 -5.5 0 -2.5 -6 0 -3.5 6 0 -3.5
   [4,16,5.5,0,-2.5,-5.5,0,-2.5,-6,0,-3.5,6,0,-3.5],
 // 4 16 8.5 0 1.5 8.5 0 0.5 9.5 0 0 9.5 0 2
@@ -180,5 +181,5 @@ function ldraw_lib__u9401() = [
   [2,24,-8.5,0,0.5,-8.5,0,1.5],
 ];
 module ldraw_lib__u9401(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__u9401(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__u9401(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__u9401(line=0.2);

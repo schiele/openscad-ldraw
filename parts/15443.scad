@@ -5,7 +5,8 @@ use <../p/4-4con12.scad>
 use <../p/4-4con2.scad>
 use <../p/4-4disc.scad>
 use <../p/stud16.scad>
-function ldraw_lib__15443() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__15443(realsolid=false) = [
 // 0 Minifig Hair with  2 Locks on Left Side
 // 0 Name: 15443.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -25,25 +26,25 @@ function ldraw_lib__15443() = [
 // 
 // 
 // 1 16 0 -4 0 1 0 0 0 -1 0 0 0 1 stud16.dat
-  [1,16,0,-4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud16()],
+  [1,16,0,-4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud16(realsolid)],
 // 1 16 0 -4 0 -6 0 0 0 -1 0 0 0 6 4-4disc.dat
-  [1,16,0,-4,0,-6,0,0,0,-1,0,0,0,6, ldraw_lib__4_4disc()],
+  [1,16,0,-4,0,-6,0,0,0,-1,0,0,0,6, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 -4 0 -7.39104 0 -3.06147 0 -1 0 -3.06147 0 7.39104 1-8edge.dat
-  [1,16,0,-4,0,-7.39104,0,-3.06147,0,-1,0,-3.06147,0,7.39104, ldraw_lib__1_8edge()],
+  [1,16,0,-4,0,-7.39104,0,-3.06147,0,-1,0,-3.06147,0,7.39104, ldraw_lib__1_8edge(realsolid)],
 // 1 16 0 -4 0 7.39104 0 3.06147 0 -1 0 3.06147 0 -7.39104 1-8edge.dat
-  [1,16,0,-4,0,7.39104,0,3.06147,0,-1,0,3.06147,0,-7.39104, ldraw_lib__1_8edge()],
+  [1,16,0,-4,0,7.39104,0,3.06147,0,-1,0,3.06147,0,-7.39104, ldraw_lib__1_8edge(realsolid)],
 // 1 16 0 -4 0 -1.84776 0 -0.765367 0 -1 0 -0.765367 0 1.84776 1-8ring3.dat
-  [1,16,0,-4,0,-1.84776,0,-0.765367,0,-1,0,-0.765367,0,1.84776, ldraw_lib__1_8ring3()],
+  [1,16,0,-4,0,-1.84776,0,-0.765367,0,-1,0,-0.765367,0,1.84776, ldraw_lib__1_8ring3(realsolid)],
 // 1 16 0 -4 0 1.84776 0 0.765367 0 -1 0 0.765367 0 -1.84776 1-8ring3.dat
-  [1,16,0,-4,0,1.84776,0,0.765367,0,-1,0,0.765367,0,-1.84776, ldraw_lib__1_8ring3()],
+  [1,16,0,-4,0,1.84776,0,0.765367,0,-1,0,0.765367,0,-1.84776, ldraw_lib__1_8ring3(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0.8 0 4 0 0 0 -4.8 0 0 0 4 4-4con2.dat
-  [1,16,0,0.8,0,4,0,0,0,-4.8,0,0,0,4, ldraw_lib__4_4con2()],
+  [1,16,0,0.8,0,4,0,0,0,-4.8,0,0,0,4, ldraw_lib__4_4con2(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 2 0 1 0 0 0 -1.2 0 0 0 1 4-4con12.dat
-  [1,16,0,2,0,1,0,0,0,-1.2,0,0,0,1, ldraw_lib__4_4con12()],
+  [1,16,0,2,0,1,0,0,0,-1.2,0,0,0,1, ldraw_lib__4_4con12(realsolid)],
 // 0 // Outside
 // 3 16 9.19 17.08 9.19 11.446 15.21 6.097 9.1923 2 9.1923
   [3,16,9.19,17.08,9.19,11.446,15.21,6.097,9.1923,2,9.1923],
@@ -3395,5 +3396,5 @@ function ldraw_lib__15443() = [
   [5,24,-11.38,11.32,11.234,-10.686,13.075,11.465,-10.942,13.068,10.709,-8.957,13.035,13.04],
 ];
 module ldraw_lib__15443(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__15443(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__15443(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__15443(line=0.2);

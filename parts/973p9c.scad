@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/1-4cyli.scad>
 use <s/973p9cs01.scad>
 use <s/973s01.scad>
-function ldraw_lib__973p9c() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__973p9c(realsolid=false) = [
 // 0 Minifig Torso with Knit Sweater Pattern
 // 0 Name: 973p9c.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -21,13 +22,13 @@ function ldraw_lib__973p9c() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973p9cs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973p9cs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973p9cs01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\973p9cs01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__973p9cs01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__973p9cs01(realsolid)],
 // 1 0 0 -4 0 4.243 0 -4.243 0 -8 0 -4.243 0 -4.243 1-4cyli.dat
-  [1,0,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli()],
+  [1,0,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli(realsolid)],
 // 4 28 7.7 1.3 10 8.8 1.35 10 7.8 2.4 10 6.6 2.25 10
   [4,28,7.7,1.3,10,8.8,1.35,10,7.8,2.4,10,6.6,2.25,10],
 // 4 28 6.6 2.25 10 7.8 2.4 10 6.2 3.15 10 5.55 2.7 10
@@ -237,5 +238,5 @@ function ldraw_lib__973p9c() = [
   [3,16,-6.1,1.8,-10,-7.3,4.6,-10,-6.4,5.4,-10],
 ];
 module ldraw_lib__973p9c(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__973p9c(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__973p9c(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__973p9c(line=0.2);

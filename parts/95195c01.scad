@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__95195c01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__95195c01(realsolid=false) = [
 // 0 Sheet Fabric 22 x 18 Triangular Carousel Roof (Formed Shape 1)
 // 0 Name: 95195c01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -1320,5 +1321,5 @@ function ldraw_lib__95195c01() = [
   [5,24,3.3,-150.72,270.68,3.3,-150.99,270.26,6.1,-152.2,271.78,0,-150.37,269.9],
 ];
 module ldraw_lib__95195c01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__95195c01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__95195c01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__95195c01(line=0.2);

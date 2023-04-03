@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <32123a.scad>
-function ldraw_lib__32123() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__32123(realsolid=false) = [
 // 0 ~Moved to 32123a
 // 0 Name: 32123.dat
 // 0 Author: [PTadmin]
@@ -16,8 +17,8 @@ function ldraw_lib__32123() = [
 // 
 // 0 // Technic Bush 1/2 Smooth
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 32123a.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__32123a()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__32123a(realsolid)],
 ];
 module ldraw_lib__32123(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__32123(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__32123(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__32123(line=0.2);

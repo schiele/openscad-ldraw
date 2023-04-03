@@ -3,7 +3,8 @@ use <4-4cylo.scad>
 use <../rect1.scad>
 use <../rect2a.scad>
 use <../rect3.scad>
-function ldraw_lib__8__stud28() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__8__stud28(realsolid=false) = [
 // 0 Duplo Tube and Stud Top (Fast Draw)
 // 0 Name: 8\stud28.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -18,23 +19,23 @@ function ldraw_lib__8__stud28() = [
 // 
 // 
 // 1 16 0 -4 0 16 0 0 0 4 0 0 0 16 8\4-4cylo.dat
-  [1,16,0,-4,0,16,0,0,0,4,0,0,0,16, ldraw_lib__8__4_4cylo()],
+  [1,16,0,-4,0,16,0,0,0,4,0,0,0,16, ldraw_lib__8__4_4cylo(realsolid)],
 // 1 16 9.375 -2 9.375 2.625 1 0 0 0 -2 -2.625 0 0 rect3.dat
-  [1,16,9.375,-2,9.375,2.625,1,0,0,0,-2,-2.625,0,0, ldraw_lib__rect3()],
+  [1,16,9.375,-2,9.375,2.625,1,0,0,0,-2,-2.625,0,0, ldraw_lib__rect3(realsolid)],
 // 1 16 0 -2 12 0 0 -6.75 -2 0 0 0 1 0 rect2a.dat
-  [1,16,0,-2,12,0,0,-6.75,-2,0,0,0,1,0, ldraw_lib__rect2a()],
+  [1,16,0,-2,12,0,0,-6.75,-2,0,0,0,1,0, ldraw_lib__rect2a(realsolid)],
 // 1 16 9.375 -2 -9.375 -2.625 1 0 0 0 -2 -2.625 0 0 rect3.dat
-  [1,16,9.375,-2,-9.375,-2.625,1,0,0,0,-2,-2.625,0,0, ldraw_lib__rect3()],
+  [1,16,9.375,-2,-9.375,-2.625,1,0,0,0,-2,-2.625,0,0, ldraw_lib__rect3(realsolid)],
 // 1 16 12 -2 0 0 1 0 -2 0 0 0 0 6.75 rect1.dat
-  [1,16,12,-2,0,0,1,0,-2,0,0,0,0,6.75, ldraw_lib__rect1()],
+  [1,16,12,-2,0,0,1,0,-2,0,0,0,0,6.75, ldraw_lib__rect1(realsolid)],
 // 1 16 -9.375 -2 -9.375 -2.625 -1 0 0 0 -2 2.625 0 0 rect3.dat
-  [1,16,-9.375,-2,-9.375,-2.625,-1,0,0,0,-2,2.625,0,0, ldraw_lib__rect3()],
+  [1,16,-9.375,-2,-9.375,-2.625,-1,0,0,0,-2,2.625,0,0, ldraw_lib__rect3(realsolid)],
 // 1 16 0 -2 -12 0 0 6.75 -2 0 0 0 -1 0 rect1.dat
-  [1,16,0,-2,-12,0,0,6.75,-2,0,0,0,-1,0, ldraw_lib__rect1()],
+  [1,16,0,-2,-12,0,0,6.75,-2,0,0,0,-1,0, ldraw_lib__rect1(realsolid)],
 // 1 16 -9.375 -2 9.375 0 -1 -2.625 -2 0 0 0 0 -2.625 rect2a.dat
-  [1,16,-9.375,-2,9.375,0,-1,-2.625,-2,0,0,0,0,-2.625, ldraw_lib__rect2a()],
+  [1,16,-9.375,-2,9.375,0,-1,-2.625,-2,0,0,0,0,-2.625, ldraw_lib__rect2a(realsolid)],
 // 1 16 -12 -2 0 0 -1 0 -2 0 0 0 0 -6.75 rect1.dat
-  [1,16,-12,-2,0,0,-1,0,-2,0,0,0,0,-6.75, ldraw_lib__rect1()],
+  [1,16,-12,-2,0,0,-1,0,-2,0,0,0,0,-6.75, ldraw_lib__rect1(realsolid)],
 // 3 16 16 -4 0 12 -4 6.75 12 -4 -6.75
   [3,16,16,-4,0,12,-4,6.75,12,-4,-6.75],
 // 3 16 16 -4 0 12 -4 -6.75 11.3136 -4 -11.3136
@@ -69,5 +70,5 @@ function ldraw_lib__8__stud28() = [
   [3,16,-11.3136,-4,11.3136,-6.75,-4,12,0,-4,16],
 ];
 module ldraw_lib__8__stud28(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__8__stud28(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__8__stud28(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__8__stud28(line=0.2);

@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/2-4ndis.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__4297014f() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4297014f(realsolid=false) = [
 // 0 Sticker  2.5 x  3.6 with Joker Face
 // 0 Name: 4297014f.dat
 // 0 Author: Michael Heidemann [mikeheide]
@@ -18,7 +19,7 @@ function ldraw_lib__4297014f() = [
 // 
 // 
 // 1 288 0 -0.25 0.5 -22 0 0 0 22 0 0 0 -22 2-4ndis.dat
-  [1,288,0,-0.25,0.5,-22,0,0,0,22,0,0,0,-22, ldraw_lib__2_4ndis()],
+  [1,288,0,-0.25,0.5,-22,0,0,0,22,0,0,0,-22, ldraw_lib__2_4ndis(realsolid)],
 // 4 288 36 -0.25 -25 36 -0.25 1 22 -0.25 0.5 22 -0.25 -21.5
   [4,288,36,-0.25,-25,36,-0.25,1,22,-0.25,0.5,22,-0.25,-21.5],
 // 4 288 22 -0.25 -21.5 0 -0.25 -21.5 0 -0.25 -25 36 -0.25 -25
@@ -1095,9 +1096,9 @@ function ldraw_lib__4297014f() = [
 // 0 Pattern created wholly or in part by Quad2Dat
 // 0 Thanks James
 // 1 288 0 -0.25 0 36 0 0 0 0.25 0 0 0 25 box5-12.dat
-  [1,288,0,-0.25,0,36,0,0,0,0.25,0,0,0,25, ldraw_lib__box5_12()],
+  [1,288,0,-0.25,0,36,0,0,0,0.25,0,0,0,25, ldraw_lib__box5_12(realsolid)],
 // 0
 ];
 module ldraw_lib__4297014f(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4297014f(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4297014f(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4297014f(line=0.2);

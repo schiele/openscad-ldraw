@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/stud4o.scad>
 use <../p/t04o6250.scad>
 use <../p/t08o6250.scad>
-function ldraw_lib__20595() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__20595(realsolid=false) = [
 // 0 Minifig Hair Long Tousled with Centre Parting
 // 0 Name: 20595.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -21,23 +22,23 @@ function ldraw_lib__20595() = [
 // 
 // 
 // 1 16 0 -4 0 1 0 0 0 -1 0 0 0 1 stud4o.dat
-  [1,16,0,-4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4o()],
+  [1,16,0,-4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4o(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 4 0 0 0 8 0 -6.4 0 8 0 0 t04o6250.dat
-  [1,16,0,4,0,0,0,8,0,-6.4,0,8,0,0, ldraw_lib__t04o6250()],
+  [1,16,0,4,0,0,0,8,0,-6.4,0,8,0,0, ldraw_lib__t04o6250(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 4 0 -8 0 0 0 -6.4 0 0 0 8 t04o6250.dat
-  [1,16,0,4,0,-8,0,0,0,-6.4,0,0,0,8, ldraw_lib__t04o6250()],
+  [1,16,0,4,0,-8,0,0,0,-6.4,0,0,0,8, ldraw_lib__t04o6250(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 4 0 -8 0 0 0 -6.4 0 0 0 -8 t08o6250.dat
-  [1,16,0,4,0,-8,0,0,0,-6.4,0,0,0,-8, ldraw_lib__t08o6250()],
+  [1,16,0,4,0,-8,0,0,0,-6.4,0,0,0,-8, ldraw_lib__t08o6250(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 4 0 8 0 0 0 -6.4 0 0 0 -8 t08o6250.dat
-  [1,16,0,4,0,8,0,0,0,-6.4,0,0,0,-8, ldraw_lib__t08o6250()],
+  [1,16,0,4,0,8,0,0,0,-6.4,0,0,0,-8, ldraw_lib__t08o6250(realsolid)],
 // 4 16 -5.6569 0 -5.6569 -3.0615 0 -7.3912 -3.794 0.3046 -9.159 -7.01 0.3046 -7.01
   [4,16,-5.6569,0,-5.6569,-3.0615,0,-7.3912,-3.794,0.3046,-9.159,-7.01,0.3046,-7.01],
 // 4 16 -7.01 0.3046 -7.01 -3.794 0.3046 -9.159 -4.4144 1.1718 -10.6576 -8.1566 1.1718 -8.1566
@@ -11970,5 +11971,5 @@ function ldraw_lib__20595() = [
   [5,24,2.152,-9.509,-5.505,0.1,-7.769,-5.179,-0.165,-7.812,-6.862,0.455,-7.864,-3.825],
 ];
 module ldraw_lib__20595(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__20595(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__20595(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__20595(line=0.2);

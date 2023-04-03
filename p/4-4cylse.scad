@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <4-4cyls.scad>
 use <4-4edge.scad>
-function ldraw_lib__4_4cylse() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4_4cylse(realsolid=false) = [
 // 0 Cylinder Sloped 1.0 with Edge
 // 0 Name: 4-4cylse.dat
 // 0 Author: Joerg Sommerer [Brickaneer]
@@ -18,10 +19,10 @@ function ldraw_lib__4_4cylse() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 4-4cyls.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4cyls()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4cyls(realsolid)],
 // 1 16 0 1 0 0 1 -1 0 1 1 1 0 0 4-4edge.dat
-  [1,16,0,1,0,0,1,-1,0,1,1,1,0,0, ldraw_lib__4_4edge()],
+  [1,16,0,1,0,0,1,-1,0,1,1,1,0,0, ldraw_lib__4_4edge(realsolid)],
 ];
 module ldraw_lib__4_4cylse(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4_4cylse(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4_4cylse(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4_4cylse(line=0.2);

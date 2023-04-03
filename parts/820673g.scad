@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__820673g() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__820673g(realsolid=false) = [
 // 0 Sticker  0.6 x  2.6 with White "ATLANTIC" on Transparent Background
 // 0 Name: 820673g.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -18,7 +19,7 @@ function ldraw_lib__820673g() = [
 // 
 // 
 // 1 16 0 -0.25 0 26 0 0 0 0.25 0 0 0 6 box5-12.dat
-  [1,16,0,-0.25,0,26,0,0,0,0.25,0,0,0,6, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,26,0,0,0,0.25,0,0,0,6, ldraw_lib__box5_12(realsolid)],
 // 0 BFC NOCLIP
   [0,"BFC","NOCLIP"],
 // 3 15 -21.53 -0.25 -2.05 -23.52 -0.25 -3.5 -21.99 -0.25 -3.5
@@ -319,5 +320,5 @@ function ldraw_lib__820673g() = [
   [3,16,11.05,-0.25,-3.5,9.61,-0.25,-3.5,0,-0.25,-6],
 ];
 module ldraw_lib__820673g(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__820673g(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__820673g(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__820673g(line=0.2);

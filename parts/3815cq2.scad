@@ -2,7 +2,8 @@ use <../lib.scad>
 use <3815pq2.scad>
 use <3816pq1.scad>
 use <3817pq1.scad>
-function ldraw_lib__3815cq2() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3815cq2(realsolid=false) = [
 // 0 ~Minifig Hips and Legs with DkBlue/Gold Loincloth Pattern (Obsolete)
 // 0 Name: 3815cq2.dat
 // 0 Author: Christian Neumann [Wesley]
@@ -23,12 +24,12 @@ function ldraw_lib__3815cq2() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 3815pq2.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3815pq2()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3815pq2(realsolid)],
 // 1 16 0 12 0 1 0 0 0 1 0 0 0 1 3816pq1.dat
-  [1,16,0,12,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3816pq1()],
+  [1,16,0,12,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3816pq1(realsolid)],
 // 1 16 0 12 0 1 0 0 0 1 0 0 0 1 3817pq1.dat
-  [1,16,0,12,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3817pq1()],
+  [1,16,0,12,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3817pq1(realsolid)],
 ];
 module ldraw_lib__3815cq2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3815cq2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3815cq2(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3815cq2(line=0.2);

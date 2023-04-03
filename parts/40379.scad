@@ -4,7 +4,8 @@ use <../p/4-4cyli.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4edge.scad>
 use <../p/4-8sphe.scad>
-function ldraw_lib__40379() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__40379(realsolid=false) = [
 // 0 Animal Tail Section End
 // 0 Name: 40379.dat
 // 0 Author: Bernd Broich [bbroich]
@@ -25,22 +26,22 @@ function ldraw_lib__40379() = [
 // 
 // 
 // 1 16 0 0 0 0 0 -4 -4 0 0 0 1 0 4-4edge.dat
-  [1,16,0,0,0,0,0,-4,-4,0,0,0,1,0, ldraw_lib__4_4edge()],
+  [1,16,0,0,0,0,0,-4,-4,0,0,0,1,0, ldraw_lib__4_4edge(realsolid)],
 // 
 // 1 16 0 0 0 0 0 -4 -4 0 0 0 1 0 2-4ring1.dat
-  [1,16,0,0,0,0,0,-4,-4,0,0,0,1,0, ldraw_lib__2_4ring1()],
+  [1,16,0,0,0,0,0,-4,-4,0,0,0,1,0, ldraw_lib__2_4ring1(realsolid)],
 // 1 16 0 0 0 0 0 4 4 0 0 0 1 0 2-4ring1.dat
-  [1,16,0,0,0,0,0,4,4,0,0,0,1,0, ldraw_lib__2_4ring1()],
+  [1,16,0,0,0,0,0,4,4,0,0,0,1,0, ldraw_lib__2_4ring1(realsolid)],
 // 1 16 0 0 0 0 0 -8 -8 0 0 0 1 0 4-4edge.dat
-  [1,16,0,0,0,0,0,-8,-8,0,0,0,1,0, ldraw_lib__4_4edge()],
+  [1,16,0,0,0,0,0,-8,-8,0,0,0,1,0, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 0 -7.5 0 0 -4 -4 0 0 0 1 0 4-4edge.dat
-  [1,16,0,0,-7.5,0,0,-4,-4,0,0,0,1,0, ldraw_lib__4_4edge()],
+  [1,16,0,0,-7.5,0,0,-4,-4,0,0,0,1,0, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 0 -7.5 0 0 -4 -4 0 0 0 1 0 4-4disc.dat
-  [1,16,0,0,-7.5,0,0,-4,-4,0,0,0,1,0, ldraw_lib__4_4disc()],
+  [1,16,0,0,-7.5,0,0,-4,-4,0,0,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 0 -7.5 0 0 -4 -4 0 0 0 7.5 0 4-4cyli.dat
-  [1,16,0,0,-7.5,0,0,-4,-4,0,0,0,7.5,0, ldraw_lib__4_4cyli()],
+  [1,16,0,0,-7.5,0,0,-4,-4,0,0,0,7.5,0, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 -62 70 0 0 -4 -1.03528 -3.8637 0 -3.8637 1.03528 0 4-8sphe.dat
-  [1,16,0,-62,70,0,0,-4,-1.03528,-3.8637,0,-3.8637,1.03528,0, ldraw_lib__4_8sphe()],
+  [1,16,0,-62,70,0,0,-4,-1.03528,-3.8637,0,-3.8637,1.03528,0, ldraw_lib__4_8sphe(realsolid)],
 // 
 // 0 Groove
 // 2 24 0 7.674 4.502 2.989 7.016 4.942
@@ -2444,5 +2445,5 @@ function ldraw_lib__40379() = [
 // 0
 ];
 module ldraw_lib__40379(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__40379(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__40379(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__40379(line=0.2);

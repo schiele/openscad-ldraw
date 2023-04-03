@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <3878.scad>
-function ldraw_lib__88412() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__88412(realsolid=false) = [
 // 0 =Minifig Top Hat
 // 0 Name: 88412.dat
 // 0 Author: Rolf Osterthun [Rolf]
@@ -19,8 +20,8 @@ function ldraw_lib__88412() = [
 // 0 // Alias of 3878
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 3878.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3878()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3878(realsolid)],
 ];
 module ldraw_lib__88412(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__88412(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__88412(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__88412(line=0.2);

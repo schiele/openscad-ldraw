@@ -6,7 +6,8 @@ use <../../p/2-4ndis.scad>
 use <../../p/4-4edge.scad>
 use <../../p/4-4ring2.scad>
 use <18675s02.scad>
-function ldraw_lib__s__18675s04() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__18675s04(realsolid=false) = [
 // 0 ~Dish  6 x  6 Inverted - No Studs with Handle Rim  1/8 with Handle
 // 0 Name: s\18675s04.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -21,16 +22,16 @@ function ldraw_lib__s__18675s04() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\18675s02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__18675s02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__18675s02(realsolid)],
 // 2 24 56.438 4 20 55.434 4 22.962
   [2,24,56.438,4,20,55.434,4,22.962],
 // 2 24 55.434 4 22.962 54.276 4 25.309
   [2,24,55.434,4,22.962,54.276,4,25.309],
 // 0 // Handle Side Parts
 // 1 16 70 2 20 0 0 6 6 0 0 0 -1 0 2-4disc.dat
-  [1,16,70,2,20,0,0,6,6,0,0,0,-1,0, ldraw_lib__2_4disc()],
+  [1,16,70,2,20,0,0,6,6,0,0,0,-1,0, ldraw_lib__2_4disc(realsolid)],
 // 1 16 70 2 20 0 0 6 6 0 0 0 -1 0 2-4edge.dat
-  [1,16,70,2,20,0,0,6,6,0,0,0,-1,0, ldraw_lib__2_4edge()],
+  [1,16,70,2,20,0,0,6,6,0,0,0,-1,0, ldraw_lib__2_4edge(realsolid)],
 // 3 16 48.283 -1.096 20 42.635 -4 20 70 -4 20
   [3,16,48.283,-1.096,20,42.635,-4,20,70,-4,20],
 // 3 16 70 -4 20 56.438 4 20 50.116 -0.1 20
@@ -52,13 +53,13 @@ function ldraw_lib__s__18675s04() = [
 // 2 24 56.438 8 20 70 8 20
   [2,24,56.438,8,20,70,8,20],
 // 1 16 70 2 14 0 0 -2 2 0 0 0 1 0 4-4ring2.dat
-  [1,16,70,2,14,0,0,-2,2,0,0,0,1,0, ldraw_lib__4_4ring2()],
+  [1,16,70,2,14,0,0,-2,2,0,0,0,1,0, ldraw_lib__4_4ring2(realsolid)],
 // 1 16 70 2 14 0 0 6 6 0 0 0 -1 0 2-4edge.dat
-  [1,16,70,2,14,0,0,6,6,0,0,0,-1,0, ldraw_lib__2_4edge()],
+  [1,16,70,2,14,0,0,6,6,0,0,0,-1,0, ldraw_lib__2_4edge(realsolid)],
 // 1 16 70 2 14 0 0 -6 6 0 0 0 1 0 2-4ndis.dat
-  [1,16,70,2,14,0,0,-6,6,0,0,0,1,0, ldraw_lib__2_4ndis()],
+  [1,16,70,2,14,0,0,-6,6,0,0,0,1,0, ldraw_lib__2_4ndis(realsolid)],
 // 1 16 70 2 14 0 0 4 4 0 0 0 -1 0 4-4edge.dat
-  [1,16,70,2,14,0,0,4,4,0,0,0,-1,0, ldraw_lib__4_4edge()],
+  [1,16,70,2,14,0,0,4,4,0,0,0,-1,0, ldraw_lib__4_4edge(realsolid)],
 // 2 24 70 -4 14 64 -4 14
   [2,24,70,-4,14,64,-4,14],
 // 2 24 64 -4 14 44.969 -4 14
@@ -99,7 +100,7 @@ function ldraw_lib__s__18675s04() = [
 // 2 24 43.594 -4 18.057 44.969 -4 14
   [2,24,43.594,-4,18.057,44.969,-4,14],
 // 1 16 70 2 20 0 0 6 6 0 0 0 -6 0 2-4cyli.dat
-  [1,16,70,2,20,0,0,6,6,0,0,0,-6,0, ldraw_lib__2_4cyli()],
+  [1,16,70,2,20,0,0,6,6,0,0,0,-6,0, ldraw_lib__2_4cyli(realsolid)],
 // 0 // Handle Base Center
 // 3 16 59.484 4 7.83 60 4 0 60 4 14
   [3,16,59.484,4,7.83,60,4,0,60,4,14],
@@ -130,5 +131,5 @@ function ldraw_lib__s__18675s04() = [
 // 
 ];
 module ldraw_lib__s__18675s04(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__18675s04(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__18675s04(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__18675s04(line=0.2);

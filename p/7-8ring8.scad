@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__7_8ring8() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__7_8ring8(realsolid=false) = [
 // 0 Ring  8 x 0.875
 // 0 Name: 7-8ring8.dat
 // 0 Author: Kevin Roach [KROACH]
@@ -44,5 +45,5 @@ function ldraw_lib__7_8ring8() = [
 // 
 ];
 module ldraw_lib__7_8ring8(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__7_8ring8(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__7_8ring8(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__7_8ring8(line=0.2);

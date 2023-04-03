@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <004488e.scad>
-function ldraw_lib__004632b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__004632b(realsolid=false) = [
 // 0 =Sticker  2.3 x  2.3 Round with Lifepreserver
 // 0 Name: 004632b.dat
 // 0 Author: Willy Tschager [Holly-Wood]
@@ -18,8 +19,8 @@ function ldraw_lib__004632b() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 004488e.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__004488e()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__004488e(realsolid)],
 ];
 module ldraw_lib__004632b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__004632b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__004632b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__004632b(line=0.2);

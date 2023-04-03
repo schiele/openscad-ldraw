@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <6283148q1.scad>
-function ldraw_lib__6283148q2() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6283148q2(realsolid=false) = [
 // 0 Sticker  0.8 x  5.8 with 2 Black Triangles on Olive Green Up Right
 // 0 Name: 6283148q2.dat
 // 0 Author: Chris Dee [cwdee]
@@ -17,8 +18,8 @@ function ldraw_lib__6283148q2() = [
 // 
 // 
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 6283148q1.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__6283148q1()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__6283148q1(realsolid)],
 ];
 module ldraw_lib__6283148q2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6283148q2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6283148q2(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6283148q2(line=0.2);

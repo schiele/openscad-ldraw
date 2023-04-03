@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <2412b.scad>
-function ldraw_lib__4125254() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4125254(realsolid=false) = [
 // 0 ~_Tile  1 x  2 Grille with Groove Orange (Obsolete)
 // 0 Name: 4125254.dat
 // 0 Author: Michael Heidemann [mikeheide]
@@ -20,8 +21,8 @@ function ldraw_lib__4125254() = [
 // 0 // colouring of the part (Orange).
 // 
 // 1 25 0 0 0 1 0 0 0 1 0 0 0 1 2412b.dat
-  [1,25,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2412b()],
+  [1,25,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2412b(realsolid)],
 ];
 module ldraw_lib__4125254(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4125254(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4125254(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4125254(line=0.2);

@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__19204s04() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__19204s04(realsolid=false) = [
 // 0 ~Figure Elves Hair Long Wavy with Ears Hair Middle
 // 0 Name: s\19204s04.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -1211,5 +1212,5 @@ function ldraw_lib__s__19204s04() = [
   [3,16,19.582,17.989,10.678,19.741,16.557,10.116,20.747,17.207,9.27],
 ];
 module ldraw_lib__s__19204s04(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__19204s04(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__19204s04(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__19204s04(line=0.2);

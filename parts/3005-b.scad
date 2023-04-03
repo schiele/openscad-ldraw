@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <3005ptb.scad>
-function ldraw_lib__3005_b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3005_b(realsolid=false) = [
 // 0 ~Moved to 3005ptb
 // 0 Name: 3005-b.dat
 // 0 Author: [PTadmin]
@@ -18,8 +19,8 @@ function ldraw_lib__3005_b() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 3005ptb.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3005ptb()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3005ptb(realsolid)],
 ];
 module ldraw_lib__3005_b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3005_b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3005_b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3005_b(line=0.2);

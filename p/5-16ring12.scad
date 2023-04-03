@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__5_16ring12() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__5_16ring12(realsolid=false) = [
 // 0 Ring 12 x 0.3125
 // 0 Name: 5-16ring12.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -28,5 +29,5 @@ function ldraw_lib__5_16ring12() = [
 // 0 // Build by Primitive Generator 2
 ];
 module ldraw_lib__5_16ring12(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__5_16ring12(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__5_16ring12(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__5_16ring12(line=0.2);

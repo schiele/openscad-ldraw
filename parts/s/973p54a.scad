@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/2-4disc.scad>
-function ldraw_lib__s__973p54a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__973p54a(realsolid=false) = [
 // 0 ~Minifig Torso with UFO Pattern - Silver
 // 0 Name: s\973p54a.dat
 // 0 Author: Carsten Schmitz [Deckard]
@@ -475,9 +476,9 @@ function ldraw_lib__s__973p54a() = [
 // 4 16 3.5 22.15 -10 1.55 20.1 -10 1.6 21.4 -10 2.35 21.95 -10
   [4,16,3.5,22.15,-10,1.55,20.1,-10,1.6,21.4,-10,2.35,21.95,-10],
 // 1 16 0 20.07 -10 0 0 0.8 0.67 0 0 0 0.8 0 2-4disc.dat
-  [1,16,0,20.07,-10,0,0,0.8,0.67,0,0,0,0.8,0, ldraw_lib__2_4disc()],
+  [1,16,0,20.07,-10,0,0,0.8,0.67,0,0,0,0.8,0, ldraw_lib__2_4disc(realsolid)],
 // 1 16 0 21.6 -10 0 0 0.8 0.62 0 0 0 0.8 0 2-4disc.dat
-  [1,16,0,21.6,-10,0,0,0.8,0.62,0,0,0,0.8,0, ldraw_lib__2_4disc()],
+  [1,16,0,21.6,-10,0,0,0.8,0.62,0,0,0,0.8,0, ldraw_lib__2_4disc(realsolid)],
 // 3 16 -0.7 20.05 -10 -0.7 19.4 -10 -1.2 19.45 -10
   [3,16,-0.7,20.05,-10,-0.7,19.4,-10,-1.2,19.45,-10],
 // 3 16 -0.7 20.05 -10 -1.2 19.45 -10 -1.55 19.8 -10
@@ -947,5 +948,5 @@ function ldraw_lib__s__973p54a() = [
 // 0
 ];
 module ldraw_lib__s__973p54a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__973p54a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__973p54a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__973p54a(line=0.2);

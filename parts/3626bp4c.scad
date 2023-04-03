@@ -2,7 +2,8 @@ use <../lib.scad>
 use <s/3626bp4cs01.scad>
 use <s/3626bs02.scad>
 use <s/3626bs04.scad>
-function ldraw_lib__3626bp4c() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3626bp4c(realsolid=false) = [
 // 0 Minifig Head with Moustache, Frown and Pointed Hairline Pattern
 // 0 Name: 3626bp4c.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -20,15 +21,15 @@ function ldraw_lib__3626bp4c() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3626bs02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626bs02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626bs02(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3626bs04.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626bs04()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626bs04(realsolid)],
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3626bp4cs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626bp4cs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626bp4cs01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\3626bp4cs01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626bp4cs01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626bp4cs01(realsolid)],
 ];
 module ldraw_lib__3626bp4c(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3626bp4c(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3626bp4c(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3626bp4c(line=0.2);

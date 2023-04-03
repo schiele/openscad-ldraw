@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3817bs02.scad>
-function ldraw_lib__3817bpd6e() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3817bpd6e(realsolid=false) = [
 // 0 Minifig Leg Left with Black Orca Pattern
 // 0 Name: 3817bpd6e.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -15,7 +16,7 @@ function ldraw_lib__3817bpd6e() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3817bs02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3817bs02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3817bs02(realsolid)],
 // 
 // 4 0 2 -3.349 -8.084 11.7 -3.349 -8.084 11.25 -6.187 -6.187 2 -6.187 -6.187
   [4,0,2,-3.349,-8.084,11.7,-3.349,-8.084,11.25,-6.187,-6.187,2,-6.187,-6.187],
@@ -133,5 +134,5 @@ function ldraw_lib__3817bpd6e() = [
   [3,0,18.804,7.399,-4,18.993,12.997,-4,18.849,8.769,-.98],
 ];
 module ldraw_lib__3817bpd6e(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3817bpd6e(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3817bpd6e(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3817bpd6e(line=0.2);

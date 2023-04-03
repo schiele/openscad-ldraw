@@ -5,7 +5,8 @@ use <../p/4-4ndis.scad>
 use <../p/box4.scad>
 use <../p/finger1.scad>
 use <../p/stud2.scad>
-function ldraw_lib__3081b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3081b(realsolid=false) = [
 // 0 ~Window  1 x  2 x  2 Classic with Long Sill
 // 0 Name: 3081b.dat
 // 0 Author: Tore Eriksson [Tore_Eriksson]
@@ -26,7 +27,7 @@ function ldraw_lib__3081b() = [
 // 2 24 4 48 -6 16 48 -6
   [2,24,4,48,-6,16,48,-6],
 // 1 16 0 48 0 1 0 0 0 1 0 0 0 1 finger1.dat
-  [1,16,0,48,0,1,0,0,0,1,0,0,0,1, ldraw_lib__finger1()],
+  [1,16,0,48,0,1,0,0,0,1,0,0,0,1, ldraw_lib__finger1(realsolid)],
 // 2 24 20 48 -12.5 20 42 -7
   [2,24,20,48,-12.5,20,42,-7],
 // 2 24 -20 48 -12.5 -20 42 -7
@@ -147,7 +148,7 @@ function ldraw_lib__3081b() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 23 -10 15 0 0 0 0 16 0 5 0 box4.dat
-  [1,16,0,23,-10,15,0,0,0,0,16,0,5,0, ldraw_lib__box4()],
+  [1,16,0,23,-10,15,0,0,0,0,16,0,5,0, ldraw_lib__box4(realsolid)],
 // 4 16 16 42 -5 15 39 -5 15 7 -5 16 3 -5
   [4,16,16,42,-5,15,39,-5,15,7,-5,16,3,-5],
 // 4 16 -16 42 -5 -16 3 -5 -15 7 -5 -15 39 -5
@@ -158,7 +159,7 @@ function ldraw_lib__3081b() = [
   [4,16,16,3,-5,15,7,-5,-15,7,-5,-16,3,-5],
 // 0 outer frame
 // 1 16 0 23 -10 -17 0 0 0 0 18 0 3 0 box4.dat
-  [1,16,0,23,-10,-17,0,0,0,0,18,0,3,0, ldraw_lib__box4()],
+  [1,16,0,23,-10,-17,0,0,0,0,18,0,3,0, ldraw_lib__box4(realsolid)],
 // 0 front frame
 // 4 16 17 41 -10 17 5 -10 15 7 -10 15 39 -10
   [4,16,17,41,-10,17,5,-10,15,7,-10,15,39,-10],
@@ -177,24 +178,24 @@ function ldraw_lib__3081b() = [
 // 4 16 20 2 -7 -20 2 -7 -17 5 -7 17 5 -7
   [4,16,20,2,-7,-20,2,-7,-17,5,-7,17,5,-7],
 // 1 16 -10 0 0 1 0 0 0 1 0 0 0 1 stud2.dat
-  [1,16,-10,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2()],
+  [1,16,-10,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2(realsolid)],
 // 1 16 10 0 0 1 0 0 0 1 0 0 0 1 stud2.dat
-  [1,16,10,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2()],
+  [1,16,10,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2(realsolid)],
 // 4 16 20 0 10 16 3 10 -16 3 10 -20 0 10
   [4,16,20,0,10,16,3,10,-16,3,10,-20,0,10],
 // 
 // 1 16 0 0 -4 1 0 0 0 1 0 0 0 1 4-4edge.dat
-  [1,16,0,0,-4,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4edge()],
+  [1,16,0,0,-4,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 0 -4 1 0 0 0 1 0 0 0 1 4-4ndis.dat
-  [1,16,0,0,-4,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4ndis()],
+  [1,16,0,0,-4,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4ndis(realsolid)],
 // 1 16 0 3 -4 1 0 0 0 1 0 0 0 1 4-4edge.dat
-  [1,16,0,3,-4,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4edge()],
+  [1,16,0,3,-4,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 3 -4 1 0 0 0 -1 0 0 0 1 4-4ndis.dat
-  [1,16,0,3,-4,1,0,0,0,-1,0,0,0,1, ldraw_lib__4_4ndis()],
+  [1,16,0,3,-4,1,0,0,0,-1,0,0,0,1, ldraw_lib__4_4ndis(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 3 -4 1 0 0 0 -3 0 0 0 1 4-4cyli.dat
-  [1,16,0,3,-4,1,0,0,0,-3,0,0,0,1, ldraw_lib__4_4cyli()],
+  [1,16,0,3,-4,1,0,0,0,-3,0,0,0,1, ldraw_lib__4_4cyli(realsolid)],
 // 4 16 20 0 -10 20 0 10 1 0 -3 1 0 -5
   [4,16,20,0,-10,20,0,10,1,0,-3,1,0,-5],
 // 4 16 -20 0 -10 -1 0 -5 -1 0 -3 -20 0 10
@@ -212,5 +213,5 @@ function ldraw_lib__3081b() = [
 // 0
 ];
 module ldraw_lib__3081b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3081b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3081b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3081b(line=0.2);

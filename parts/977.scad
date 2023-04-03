@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4edge.scad>
-function ldraw_lib__977() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__977(realsolid=false) = [
 // 0 ~Minifig Hand (Obsolete)
 // 0 Name: 977.dat
 // 0 Author: Leonardo Zide [leozide]
@@ -320,11 +321,11 @@ function ldraw_lib__977() = [
   [4,16,1.52,8,2.28,2,8,0,0,8,0,-0.32,8,1.52],
 // 
 // 1 16 0 4 0 0 16 0 0 0 -2.5 -2.5 0 0 4-4cyli.dat
-  [1,16,0,4,0,0,16,0,0,0,-2.5,-2.5,0,0, ldraw_lib__4_4cyli()],
+  [1,16,0,4,0,0,16,0,0,0,-2.5,-2.5,0,0, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 16 4 0 0 16 0 0 0 -2.5 -2.5 0 0 4-4edge.dat
-  [1,16,16,4,0,0,16,0,0,0,-2.5,-2.5,0,0, ldraw_lib__4_4edge()],
+  [1,16,16,4,0,0,16,0,0,0,-2.5,-2.5,0,0, ldraw_lib__4_4edge(realsolid)],
 // 1 16 16 4 0 0 -16 0 0 0 -2.5 2.5 0 0 4-4disc.dat
-  [1,16,16,4,0,0,-16,0,0,0,-2.5,2.5,0,0, ldraw_lib__4_4disc()],
+  [1,16,16,4,0,0,-16,0,0,0,-2.5,2.5,0,0, ldraw_lib__4_4disc(realsolid)],
 // 
 // 0 // intersect line
 // 2 24 2 1.5 0 1.799 1.69 0.957
@@ -369,5 +370,5 @@ function ldraw_lib__977() = [
   [2,24,1.499,4.957,-2.31,1.369,4,-2.5],
 ];
 module ldraw_lib__977(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__977(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__977(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__977(line=0.2);

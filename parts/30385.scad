@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/4-4cylc.scad>
-function ldraw_lib__30385() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__30385(realsolid=false) = [
 // 0 Rock  1 x  1 Crystal 5 Point
 // 0 Name: 30385.dat
 // 0 Author: Paul Easter [pneaster]
@@ -109,7 +110,7 @@ function ldraw_lib__30385() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -8 0 4 0 0 0 4 0 0 0 4 4-4cylc.dat
-  [1,16,0,-8,0,4,0,0,0,4,0,0,0,4, ldraw_lib__4_4cylc()],
+  [1,16,0,-8,0,4,0,0,0,4,0,0,0,4, ldraw_lib__4_4cylc(realsolid)],
 // 4 16 3.75 -4 6 6 -4 3.75 4 -4 0 3.6956 -4 1.5308
   [4,16,3.75,-4,6,6,-4,3.75,4,-4,0,3.6956,-4,1.5308],
 // 3 16 2.8284 -4 2.8284 3.75 -4 6 3.6956 -4 1.5308
@@ -519,5 +520,5 @@ function ldraw_lib__30385() = [
   [2,24,10,-8,-3.75,3.75,-8,-3.75],
 ];
 module ldraw_lib__30385(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__30385(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__30385(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__30385(line=0.2);

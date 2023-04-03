@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4cyli.scad>
 use <../p/arm1.scad>
 use <../p/arm2.scad>
-function ldraw_lib__3612() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3612(realsolid=false) = [
 // 0 Arm Piece with 2 and 3 Fingers Aligned
 // 0 Name: 3612.dat
 // 0 Author: James Jessiman
@@ -24,13 +25,13 @@ function ldraw_lib__3612() = [
 // 
 // 
 // 1 16 0 0 -2 10 0 0 0 0 10 0 4 0 4-4cyli.dat
-  [1,16,0,0,-2,10,0,0,0,0,10,0,4,0, ldraw_lib__4_4cyli()],
+  [1,16,0,0,-2,10,0,0,0,0,10,0,4,0, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 0 -2 1 0 0 0 1 0 0 0 1 arm1.dat
-  [1,16,0,0,-2,1,0,0,0,1,0,0,0,1, ldraw_lib__arm1()],
+  [1,16,0,0,-2,1,0,0,0,1,0,0,0,1, ldraw_lib__arm1(realsolid)],
 // 1 16 0 0 2 -1 0 0 0 1 0 0 0 -1 arm2.dat
-  [1,16,0,0,2,-1,0,0,0,1,0,0,0,-1, ldraw_lib__arm2()],
+  [1,16,0,0,2,-1,0,0,0,1,0,0,0,-1, ldraw_lib__arm2(realsolid)],
 // 0
 ];
 module ldraw_lib__3612(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3612(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3612(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3612(line=0.2);

@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/90636s00.scad>
 use <s/90636s01.scad>
-function ldraw_lib__90636() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__90636(realsolid=false) = [
 // 0 Constraction Shell  2.5 x  3 x  8 Flat
 // 0 Name: 90636.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -18,10 +19,10 @@ function ldraw_lib__90636() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\90636s00.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__90636s00()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__90636s00(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\90636s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__90636s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__90636s01(realsolid)],
 ];
 module ldraw_lib__90636(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__90636(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__90636(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__90636(line=0.2);

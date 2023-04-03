@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/rect.scad>
-function ldraw_lib__54703() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__54703(realsolid=false) = [
 // 0 ~Plane Aft Section  8 x 16 x  7 Tip
 // 0 Name: 54703.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -105,7 +106,7 @@ function ldraw_lib__54703() = [
 // 3 16 15.274 21.964 307.528 15.837 14.456 307.127 19.787 19.981 300
   [3,16,15.274,21.964,307.528,15.837,14.456,307.127,19.787,19.981,300],
 // 1 16 -0.0325 19.9805 254.675 0 0 12.3415 2.2495 0 0 0 1 0 rect.dat
-  [1,16,-0.0325,19.9805,254.675,0,0,12.3415,2.2495,0,0,0,1,0, ldraw_lib__rect()],
+  [1,16,-0.0325,19.9805,254.675,0,0,12.3415,2.2495,0,0,0,1,0, ldraw_lib__rect(realsolid)],
 // 4 16 -13.967 23.026 295.5 13.902 23.026 295.5 12.309 22.23 254.675 -12.374 22.23 254.675
   [4,16,-13.967,23.026,295.5,13.902,23.026,295.5,12.309,22.23,254.675,-12.374,22.23,254.675],
 // 4 16 -13.967 16.935 295.5 -12.374 17.731 254.675 12.309 17.731 254.675 13.902 16.935 295.5
@@ -516,5 +517,5 @@ function ldraw_lib__54703() = [
   [5,24,-13.967,16.935,295.5,-13.967,23.026,295.5,-12.374,17.731,254.675,-13.967,23.026,300],
 ];
 module ldraw_lib__54703(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__54703(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__54703(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__54703(line=0.2);

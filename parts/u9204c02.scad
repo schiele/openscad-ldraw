@@ -5,7 +5,8 @@ use <u9102.scad>
 use <u9103.scad>
 use <u9107p04c01.scad>
 use <u9204c01.scad>
-function ldraw_lib__u9204c02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__u9204c02(realsolid=false) = [
 // 0 Fabuland Scooter with Raccoon Figure
 // 0 Name: u9204c02.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -25,22 +26,22 @@ function ldraw_lib__u9204c02() = [
 // 
 // 
 // 1 4 0 0 0 1 0 0 0 1 0 0 0 1 u9204c01.dat
-  [1,4,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9204c01()],
+  [1,4,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9204c01(realsolid)],
 // 1 84 0 -67 4 1 0 0 0 1 0 0 0 1 u9107p04c01.dat
-  [1,84,0,-67,4,1,0,0,0,1,0,0,0,1, ldraw_lib__u9107p04c01()],
+  [1,84,0,-67,4,1,0,0,0,1,0,0,0,1, ldraw_lib__u9107p04c01(realsolid)],
 // 1 0 0 -37 4 1 0 0 0 1 0 0 0 1 u9102.dat
-  [1,0,0,-37,4,1,0,0,0,1,0,0,0,1, ldraw_lib__u9102()],
+  [1,0,0,-37,4,1,0,0,0,1,0,0,0,1, ldraw_lib__u9102(realsolid)],
 // 1 14 23 -63 4 1 0 0 0 0.70711 0.70711 0 -0.70711 0.70711 u9101.dat
-  [1,14,23,-63,4,1,0,0,0,0.70711,0.70711,0,-0.70711,0.70711, ldraw_lib__u9101()],
+  [1,14,23,-63,4,1,0,0,0,0.70711,0.70711,0,-0.70711,0.70711, ldraw_lib__u9101(realsolid)],
 // 1 14 -23 -63 4 -1 0 0 0 0.70711 -0.70711 0 -0.70711 -0.70711 u9101.dat
-  [1,14,-23,-63,4,-1,0,0,0,0.70711,-0.70711,0,-0.70711,-0.70711, ldraw_lib__u9101()],
+  [1,14,-23,-63,4,-1,0,0,0,0.70711,-0.70711,0,-0.70711,-0.70711, ldraw_lib__u9101(realsolid)],
 // 1 1 -10 -37 4 1 0 0 0 1 0 0 0 1 u9100.dat
-  [1,1,-10,-37,4,1,0,0,0,1,0,0,0,1, ldraw_lib__u9100()],
+  [1,1,-10,-37,4,1,0,0,0,1,0,0,0,1, ldraw_lib__u9100(realsolid)],
 // 1 1 10 -37 4 1 0 0 0 1 0 0 0 1 u9100.dat
-  [1,1,10,-37,4,1,0,0,0,1,0,0,0,1, ldraw_lib__u9100()],
+  [1,1,10,-37,4,1,0,0,0,1,0,0,0,1, ldraw_lib__u9100(realsolid)],
 // 1 4 0 -37 4 1 0 0 0 1 0 0 0 1 u9103.dat
-  [1,4,0,-37,4,1,0,0,0,1,0,0,0,1, ldraw_lib__u9103()],
+  [1,4,0,-37,4,1,0,0,0,1,0,0,0,1, ldraw_lib__u9103(realsolid)],
 ];
 module ldraw_lib__u9204c02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__u9204c02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__u9204c02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__u9204c02(line=0.2);

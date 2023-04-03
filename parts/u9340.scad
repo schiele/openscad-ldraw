@@ -3,7 +3,8 @@ use <../p/box2-5.scad>
 use <../p/box3u2p.scad>
 use <../p/rect2p.scad>
 use <../p/rect3.scad>
-function ldraw_lib__u9340() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__u9340(realsolid=false) = [
 // 0 ~Garage  4 x  8 x  3 Base
 // 0 Name: u9340.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -18,7 +19,7 @@ function ldraw_lib__u9340() = [
 // 
 // 
 // 1 16 0 6 -80 0 0 40 -6 0 0 0 160 0 box3u2p.dat
-  [1,16,0,6,-80,0,0,40,-6,0,0,0,160,0, ldraw_lib__box3u2p()],
+  [1,16,0,6,-80,0,0,40,-6,0,0,0,160,0, ldraw_lib__box3u2p(realsolid)],
 // 2 24 40 12 -80 -40 12 -80
   [2,24,40,12,-80,-40,12,-80],
 // 2 24 40 0 -80 34 0 -80
@@ -36,9 +37,9 @@ function ldraw_lib__u9340() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 10 0 -36 0 0 0 -4 -2 0 0 76 box2-5.dat
-  [1,16,0,10,0,-36,0,0,0,-4,-2,0,0,76, ldraw_lib__box2_5()],
+  [1,16,0,10,0,-36,0,0,0,-4,-2,0,0,76, ldraw_lib__box2_5(realsolid)],
 // 1 16 0 10 -76 36 0 0 0 0 2 0 -1 0 rect3.dat
-  [1,16,0,10,-76,36,0,0,0,0,2,0,-1,0, ldraw_lib__rect3()],
+  [1,16,0,10,-76,36,0,0,0,0,2,0,-1,0, ldraw_lib__rect3(realsolid)],
 // 2 24 36 12 76 36 12 -76
   [2,24,36,12,76,36,12,-76],
 // 2 24 -36 12 -76 -36 12 76
@@ -56,7 +57,7 @@ function ldraw_lib__u9340() = [
 // 4 16 -36 4 76 -36 8 -76 -36 12 -76 -36 12 76
   [4,16,-36,4,76,-36,8,-76,-36,12,-76,-36,12,76],
 // 1 16 0 2 1 0 0 31 2 1 0 -75 0 0 rect2p.dat
-  [1,16,0,2,1,0,0,31,2,1,0,-75,0,0, ldraw_lib__rect2p()],
+  [1,16,0,2,1,0,0,31,2,1,0,-75,0,0, ldraw_lib__rect2p(realsolid)],
 // 2 24 31 0 76 31 0 -74
   [2,24,31,0,76,31,0,-74],
 // 2 24 -31 0 76 -31 0 -74
@@ -68,11 +69,11 @@ function ldraw_lib__u9340() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 32.5 2 -77 0 1.5 0 -2 0 0 0 0 3 box2-5.dat
-  [1,16,32.5,2,-77,0,1.5,0,-2,0,0,0,0,3, ldraw_lib__box2_5()],
+  [1,16,32.5,2,-77,0,1.5,0,-2,0,0,0,0,3, ldraw_lib__box2_5(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -32.5 2 -77 0 -1.5 0 -2 0 0 0 0 3 box2-5.dat
-  [1,16,-32.5,2,-77,0,-1.5,0,-2,0,0,0,0,3, ldraw_lib__box2_5()],
+  [1,16,-32.5,2,-77,0,-1.5,0,-2,0,0,0,0,3, ldraw_lib__box2_5(realsolid)],
 // 4 16 -40 0 80 -40 0 -80 -34 0 -80 -34 0 -74
   [4,16,-40,0,80,-40,0,-80,-34,0,-80,-34,0,-74],
 // 4 16 34 0 -80 40 0 -80 40 0 80 34 0 -74
@@ -95,5 +96,5 @@ function ldraw_lib__u9340() = [
   [5,24,-31,0,76,31,0,76,40,0,80,31,4,-74],
 ];
 module ldraw_lib__u9340(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__u9340(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__u9340(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__u9340(line=0.2);

@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__2587pm0s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__2587pm0s01(realsolid=false) = [
 // 0 ~Minifig Armour Plate with LOTR King Theoden Pattern, Half Pat.
 // 0 Name: s\2587pm0s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -1697,5 +1698,5 @@ function ldraw_lib__s__2587pm0s01() = [
   [3,16,5.237,4.725,-17.024,4.9,4.975,-17.209,5.287,5.424,-17.196],
 ];
 module ldraw_lib__s__2587pm0s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__2587pm0s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__2587pm0s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__2587pm0s01(line=0.2);

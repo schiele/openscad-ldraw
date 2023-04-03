@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3678bs01.scad>
-function ldraw_lib__3678bp4w() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3678bp4w(realsolid=false) = [
 // 0 Slope Brick 65  2 x  2 x  2 with Tube and White Apron Pattern
 // 0 Name: 3678bp4w.dat
 // 0 Author: Lee Gaiteri [LummoxJR]
@@ -19,7 +20,7 @@ function ldraw_lib__3678bp4w() = [
 // 4 16 20 44 -30 20 0 -10 -20 0 -10 -20 44 -30
   [4,16,20,44,-30,20,0,-10,-20,0,-10,-20,44,-30],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3678bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3678bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3678bs01(realsolid)],
 // 
 // 0 // wrinkles in apron belt
 // 3 0 13.38 2.47 10 11.72 2.41 10 12.84 2.34 10
@@ -1226,5 +1227,5 @@ function ldraw_lib__3678bp4w() = [
   [3,16,15.14,37.55,10,16.22,37.86,10,10,48,10],
 ];
 module ldraw_lib__3678bp4w(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3678bp4w(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3678bp4w(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3678bp4w(line=0.2);

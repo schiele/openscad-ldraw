@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/3070bp70a.scad>
 use <s/3070bs01.scad>
-function ldraw_lib__3070bp70() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3070bp70(realsolid=false) = [
 // 0 Tile  1 x  1 with Gold Badge Pattern
 // 0 Name: 3070bp70.dat
 // 0 Author: Nils Schmidt [BlackBrick89]
@@ -18,9 +19,9 @@ function ldraw_lib__3070bp70() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3070bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3070bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3070bs01(realsolid)],
 // 1 82 0 0 0 1 0 0 0 1 0 0 0 1 s\3070bp70a.dat
-  [1,82,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3070bp70a()],
+  [1,82,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3070bp70a(realsolid)],
 // 4 0 0 0 7 10 0 10 -10 0 10 -2.5 0 6.75
   [4,0,0,0,7,10,0,10,-10,0,10,-2.5,0,6.75],
 // 3 0 10 0 10 0 0 7 2.5 0 6.75
@@ -77,5 +78,5 @@ function ldraw_lib__3070bp70() = [
   [3,0,10,0,10,5.6628,0,2,6,0,0],
 ];
 module ldraw_lib__3070bp70(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3070bp70(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3070bp70(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3070bp70(line=0.2);

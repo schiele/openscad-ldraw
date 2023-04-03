@@ -2,7 +2,8 @@ use <../lib.scad>
 use <3492.scad>
 use <3493.scad>
 use <519.scad>
-function ldraw_lib__4100545() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4100545(realsolid=false) = [
 // 0 ~_Crane Grab Jaws Yellow/Trans Dark Blue (Complete) (Obsolete)
 // 0 Name: 4100545.dat
 // 0 Author: Paul Easter [pneaster]
@@ -21,14 +22,14 @@ function ldraw_lib__4100545() = [
 // 
 // 
 // 1 14 0 0 0 1 0 0 0 1 0 0 0 1 3492.dat
-  [1,14,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3492()],
+  [1,14,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3492(realsolid)],
 // 1 33 0 0 0 1 0 0 0 1 0 0 0 1 3493.dat
-  [1,33,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3493()],
+  [1,33,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3493(realsolid)],
 // 1 33 0 0 0 -1 0 0 0 1 0 0 0 -1 3493.dat
-  [1,33,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__3493()],
+  [1,33,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__3493(realsolid)],
 // 1 494 0 29 -16 0 0 1 -1 0 0 0 1 0 519.dat
-  [1,494,0,29,-16,0,0,1,-1,0,0,0,1,0, ldraw_lib__519()],
+  [1,494,0,29,-16,0,0,1,-1,0,0,0,1,0, ldraw_lib__519(realsolid)],
 ];
 module ldraw_lib__4100545(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4100545(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4100545(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4100545(line=0.2);

@@ -2,7 +2,8 @@ use <../lib.scad>
 use <1-8cyli.scad>
 use <1-8edge.scad>
 use <1-8ndis.scad>
-function ldraw_lib__npeghol6() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__npeghol6(realsolid=false) = [
 // 0 Technic Peg Hole Negative 0.25
 // 0 Name: npeghol6.dat
 // 0 Author: Steve Bliss [sbliss]
@@ -24,11 +25,11 @@ function ldraw_lib__npeghol6() = [
 // 2 24 6.36 2 6.36 6.36 2 10
   [2,24,6.36,2,6.36,6.36,2,10],
 // 1 16 0 10 0 0 0 8.9944 0 -8 0 8.9944 0 0 1-8edge.dat
-  [1,16,0,10,0,0,0,8.9944,0,-8,0,8.9944,0,0, ldraw_lib__1_8edge()],
+  [1,16,0,10,0,0,0,8.9944,0,-8,0,8.9944,0,0, ldraw_lib__1_8edge(realsolid)],
 // 1 16 0 2 0 0 0 8.9944 0 -8 0 8.9944 0 0 1-8edge.dat
-  [1,16,0,2,0,0,0,8.9944,0,-8,0,8.9944,0,0, ldraw_lib__1_8edge()],
+  [1,16,0,2,0,0,0,8.9944,0,-8,0,8.9944,0,0, ldraw_lib__1_8edge(realsolid)],
 // 1 16 0 10 0 0 0 8.9944 0 -8 0 8.9944 0 0 1-8cyli.dat
-  [1,16,0,10,0,0,0,8.9944,0,-8,0,8.9944,0,0, ldraw_lib__1_8cyli()],
+  [1,16,0,10,0,0,0,8.9944,0,-8,0,8.9944,0,0, ldraw_lib__1_8cyli(realsolid)],
 // 3 16 6.36 -2 6.36 6.36 -2 10 3.442 -2 8.31
   [3,16,6.36,-2,6.36,6.36,-2,10,3.442,-2,8.31],
 // 4 16 3.442 -2 8.31 6.36 -2 10 0 -2 10 0 -2 8.9943
@@ -48,20 +49,20 @@ function ldraw_lib__npeghol6() = [
 // 2 24 6.36 -2 6.36 6.36 -2 10
   [2,24,6.36,-2,6.36,6.36,-2,10],
 // 1 16 0 -10 0 0 0 8.9944 0 8 0 8.9944 0 0 1-8edge.dat
-  [1,16,0,-10,0,0,0,8.9944,0,8,0,8.9944,0,0, ldraw_lib__1_8edge()],
+  [1,16,0,-10,0,0,0,8.9944,0,8,0,8.9944,0,0, ldraw_lib__1_8edge(realsolid)],
 // 1 16 0 -2 0 0 0 8.9944 0 8 0 8.9944 0 0 1-8edge.dat
-  [1,16,0,-2,0,0,0,8.9944,0,8,0,8.9944,0,0, ldraw_lib__1_8edge()],
+  [1,16,0,-2,0,0,0,8.9944,0,8,0,8.9944,0,0, ldraw_lib__1_8edge(realsolid)],
 // 1 16 0 -10 0 0 0 8.9944 0 8 0 8.9944 0 0 1-8cyli.dat
-  [1,16,0,-10,0,0,0,8.9944,0,8,0,8.9944,0,0, ldraw_lib__1_8cyli()],
+  [1,16,0,-10,0,0,0,8.9944,0,8,0,8.9944,0,0, ldraw_lib__1_8cyli(realsolid)],
 // 4 16 6.36 -2 10 6.36 -2 6.36 6.36 -10 6.36 6.36 -10 10
   [4,16,6.36,-2,10,6.36,-2,6.36,6.36,-10,6.36,6.36,-10,10],
 // 4 16 9 -10 10 6.36 -10 10 6.36 -10 6.36 9 -10 9
   [4,16,9,-10,10,6.36,-10,10,6.36,-10,6.36,9,-10,9],
 // 1 16 0 -10 0 9 0 0 0 1 0 0 0 9 1-8ndis.dat
-  [1,16,0,-10,0,9,0,0,0,1,0,0,0,9, ldraw_lib__1_8ndis()],
+  [1,16,0,-10,0,9,0,0,0,1,0,0,0,9, ldraw_lib__1_8ndis(realsolid)],
 // 1 16 0 10 0 9 0 0 0 -1 0 0 0 9 1-8ndis.dat
-  [1,16,0,10,0,9,0,0,0,-1,0,0,0,9, ldraw_lib__1_8ndis()],
+  [1,16,0,10,0,9,0,0,0,-1,0,0,0,9, ldraw_lib__1_8ndis(realsolid)],
 ];
 module ldraw_lib__npeghol6(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__npeghol6(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__npeghol6(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__npeghol6(line=0.2);

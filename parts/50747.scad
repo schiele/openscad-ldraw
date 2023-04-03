@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/50747s01.scad>
 use <s/50747s02.scad>
-function ldraw_lib__50747() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__50747(realsolid=false) = [
 // 0 Windscreen  6 x  6 x  3 Dome Hinge Locking with Two Dual Fingers
 // 0 Name: 50747.dat
 // 0 Author: Michael Heidemann [mikeheide]
@@ -21,13 +22,13 @@ function ldraw_lib__50747() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\50747s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__50747s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__50747s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\50747s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__50747s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__50747s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\50747s02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__50747s02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__50747s02(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\50747s02.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__50747s02()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__50747s02(realsolid)],
 // 2 24 36.75 -13.25 -4.05 -36.75 -13.25 -4.05
   [2,24,36.75,-13.25,-4.05,-36.75,-13.25,-4.05],
 // 4 16 -36.75 -13.25 9.45 36.75 -13.25 9.45 40 -10 9.45 -40 -10 9.45
@@ -149,5 +150,5 @@ function ldraw_lib__50747() = [
   [5,24,0,-85.53,-55.63,0,-92.96,-53.11,-5.95,-92.17,-53.11,5.95,-92.17,-53.11],
 ];
 module ldraw_lib__50747(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__50747(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__50747(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__50747(line=0.2);

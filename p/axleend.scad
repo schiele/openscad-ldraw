@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__axleend() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__axleend(realsolid=false) = [
 // 0 Axle End Surface
 // 0 Name: axleend.dat
 // 0 Author: Steve Bliss [sbliss]
@@ -36,5 +37,5 @@ function ldraw_lib__axleend() = [
 // 0
 ];
 module ldraw_lib__axleend(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__axleend(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__axleend(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__axleend(line=0.2);

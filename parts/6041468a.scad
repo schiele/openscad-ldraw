@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__6041468a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6041468a(realsolid=false) = [
 // 0 Sticker  0.6 x  3.6 with 10 Yellow Diagonal Stripes and Dark Bluish Grey Lines on Light Bluish Grey Background
 // 0 Name: 6041468a.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -373,5 +374,5 @@ function ldraw_lib__6041468a() = [
   [4,16,-35.25,0,6.25,-35.2516,-.25,6.2509,35.25,-.25,6.25,35.25,0,6.25],
 ];
 module ldraw_lib__6041468a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6041468a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6041468a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6041468a(line=0.2);

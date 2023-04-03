@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/92198s01.scad>
-function ldraw_lib__92198() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__92198(realsolid=false) = [
 // 0 Figure Friends Head without Pattern
 // 0 Name: 92198.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -17,7 +18,7 @@ function ldraw_lib__92198() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\92198s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__92198s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__92198s01(realsolid)],
 // 
 // 0 // Blank face
 // 0 // Right half
@@ -241,5 +242,5 @@ function ldraw_lib__92198() = [
   [5,24,0,4,-16,0,10.11,-15.68,4.9752,4,-15.0104,-4.9752,4,-15.0104],
 ];
 module ldraw_lib__92198(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__92198(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__92198(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__92198(line=0.2);

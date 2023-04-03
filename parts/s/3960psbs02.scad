@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__3960psbs02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__3960psbs02(realsolid=false) = [
 // 0 ~Dish 4 x 4 Inverted with SW Dejarik Hologame Board Pattern - Dots
 // 0 Name: s\3960psbs02.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -211,5 +212,5 @@ function ldraw_lib__s__3960psbs02() = [
   [3,16,4.2686,4.5507,30.7036,4.4118,4.3763,30.1874,4.3916,4.4722,30.4597],
 ];
 module ldraw_lib__s__3960psbs02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__3960psbs02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__3960psbs02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__3960psbs02(line=0.2);

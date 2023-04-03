@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
 use <../p/logo-octantext.scad>
-function ldraw_lib__821430c() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__821430c(realsolid=false) = [
 // 0 Sticker  0.9 x  2.5 with Red and Green "Octan" Logo with Black Border
 // 0 Name: 821430c.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -18,9 +19,9 @@ function ldraw_lib__821430c() = [
 // 
 // 
 // 1 16 0 -.25 0 25 0 0 0 .25 0 0 0 9 box5-12.dat
-  [1,16,0,-.25,0,25,0,0,0,.25,0,0,0,9, ldraw_lib__box5_12()],
+  [1,16,0,-.25,0,25,0,0,0,.25,0,0,0,9, ldraw_lib__box5_12(realsolid)],
 // 1 16 0 -.25 0 0.75 0 0 0 1 0 0 0 0.75 logo-octantext.dat
-  [1,16,0,-.25,0,0.75,0,0,0,1,0,0,0,0.75, ldraw_lib__logo_octantext()],
+  [1,16,0,-.25,0,0.75,0,0,0,1,0,0,0,0.75, ldraw_lib__logo_octantext(realsolid)],
 // 4 16 25 -.25 9 24.75 -.25 6.75 24.75 -.25 -6.75 25 -.25 -9
   [4,16,25,-.25,9,24.75,-.25,6.75,24.75,-.25,-6.75,25,-.25,-9],
 // 4 16 25 -.25 -9 24.75 -.25 -6.75 -24.75 -.25 -6.75 -25 -.25 -9
@@ -31,5 +32,5 @@ function ldraw_lib__821430c() = [
   [4,16,-25,-.25,9,-24.75,-.25,6.75,24.75,-.25,6.75,25,-.25,9],
 ];
 module ldraw_lib__821430c(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__821430c(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__821430c(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__821430c(line=0.2);

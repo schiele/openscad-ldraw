@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__93084s05() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__93084s05(realsolid=false) = [
 // 0 ~Animal Horse Friends Head Left
 // 0 Name: s\93084s05.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -251,5 +252,5 @@ function ldraw_lib__s__93084s05() = [
   [5,24,11.381,-54.382,-83.539,10.006,-49.327,-85.21,12.575,-46.731,-80.369,7.14,-55.789,-86.122],
 ];
 module ldraw_lib__s__93084s05(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__93084s05(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__93084s05(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__93084s05(line=0.2);

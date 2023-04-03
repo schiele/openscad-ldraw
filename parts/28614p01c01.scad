@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <28614p01.scad>
 use <u9332.scad>
-function ldraw_lib__28614p01c01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__28614p01c01(realsolid=false) = [
 // 0 _Figure Elves Goblin Roblin with Magenta Hair and Tunic
 // 0 Name: 28614p01c01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -20,12 +21,12 @@ function ldraw_lib__28614p01c01() = [
 // 
 // 
 // 1 326 17 -30 2 1 0 0 0 1 0 0 0 1 u9332.dat
-  [1,326,17,-30,2,1,0,0,0,1,0,0,0,1, ldraw_lib__u9332()],
+  [1,326,17,-30,2,1,0,0,0,1,0,0,0,1, ldraw_lib__u9332(realsolid)],
 // 1 326 -17 -30 2 -1 0 0 0 1 0 0 0 -1 u9332.dat
-  [1,326,-17,-30,2,-1,0,0,0,1,0,0,0,-1, ldraw_lib__u9332()],
+  [1,326,-17,-30,2,-1,0,0,0,1,0,0,0,-1, ldraw_lib__u9332(realsolid)],
 // 1 326 0 0 0 1 0 0 0 1 0 0 0 1 28614p01.dat
-  [1,326,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__28614p01()],
+  [1,326,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__28614p01(realsolid)],
 ];
 module ldraw_lib__28614p01c01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__28614p01c01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__28614p01c01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__28614p01c01(line=0.2);

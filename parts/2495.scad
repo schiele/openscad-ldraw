@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/2495s01.scad>
-function ldraw_lib__2495() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2495(realsolid=false) = [
 // 0 Minifig Hand Truck
 // 0 Name: 2495.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -17,9 +18,9 @@ function ldraw_lib__2495() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2495s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2495s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2495s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\2495s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__2495s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__2495s01(realsolid)],
 // 0
 // 2 24 20 4 -36 24 4 -16
   [2,24,20,4,-36,24,4,-16],
@@ -289,5 +290,5 @@ function ldraw_lib__2495() = [
 // 0
 ];
 module ldraw_lib__2495(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2495(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2495(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2495(line=0.2);

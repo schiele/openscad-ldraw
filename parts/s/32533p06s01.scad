@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__32533p06s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__32533p06s01(realsolid=false) = [
 // 0 ~Technic Disc  5 x  5 Projectile with Bionicle Onu-Metru Pattern - Inner Half
 // 0 Name: s\32533p06s01.dat
 // 0 Author: Santeri Piippo [arezey]
@@ -1125,5 +1126,5 @@ function ldraw_lib__s__32533p06s01() = [
   [4,16,1.5,-10.6024,-21.5,2.82806,-10.6155,-21.4818,2.5144,-10.157,-19.1031,1.5,-10.157,-19.1694],
 ];
 module ldraw_lib__s__32533p06s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__32533p06s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__32533p06s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__32533p06s01(line=0.2);

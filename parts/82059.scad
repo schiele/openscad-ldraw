@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <3815c63.scad>
-function ldraw_lib__82059() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__82059(realsolid=false) = [
 // 0 ~_Minifig Hips and Legs with Robot Pattern (Complete) [4] (Obsolete)
 // 0 Name: 82059.dat
 // 0 Author: [PTadmin]
@@ -20,8 +21,8 @@ function ldraw_lib__82059() = [
 // 0 // colouring of the part (Red).
 // 
 // 1 4 0 0 0 1 0 0 0 1 0 0 0 1 3815c63.dat
-  [1,4,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3815c63()],
+  [1,4,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3815c63(realsolid)],
 ];
 module ldraw_lib__82059(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__82059(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__82059(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__82059(line=0.2);

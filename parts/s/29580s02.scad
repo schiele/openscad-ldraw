@@ -6,7 +6,8 @@ use <../../p/4-4ring3.scad>
 use <../../p/8-8sphe.scad>
 use <29580s04.scad>
 use <../../p/stud4o.scad>
-function ldraw_lib__s__29580s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__29580s02(realsolid=false) = [
 // 0 ~Minifig Headdress Rocket Costume, Base
 // 0 Name: s\29580s02.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -21,33 +22,33 @@ function ldraw_lib__s__29580s02() = [
 // 
 // 
 // 1 16 0 -41 0 5.8 0 0 0 5.8 0 0 0 6 8-8sphe.dat
-  [1,16,0,-41,0,5.8,0,0,0,5.8,0,0,0,6, ldraw_lib__8_8sphe()],
+  [1,16,0,-41,0,5.8,0,0,0,5.8,0,0,0,6, ldraw_lib__8_8sphe(realsolid)],
 // 1 16 0 -32.533 0 5.5 0 0 0 1 0 0 0 5.5 4-4edge.dat
-  [1,16,0,-32.533,0,5.5,0,0,0,1,0,0,0,5.5, ldraw_lib__4_4edge()],
+  [1,16,0,-32.533,0,5.5,0,0,0,1,0,0,0,5.5, ldraw_lib__4_4edge(realsolid)],
 // 
 // 1 16 0 -24 0 1 0 0 0 -6 0 0 0 1 stud4o.dat
-  [1,16,0,-24,0,1,0,0,0,-6,0,0,0,1, ldraw_lib__stud4o()],
+  [1,16,0,-24,0,1,0,0,0,-6,0,0,0,1, ldraw_lib__stud4o(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 0 2.6 0 0 0 -6 0 0 0 2.6 4-4con4.dat
-  [1,16,0,0,0,2.6,0,0,0,-6,0,0,0,2.6, ldraw_lib__4_4con4()],
+  [1,16,0,0,0,2.6,0,0,0,-6,0,0,0,2.6, ldraw_lib__4_4con4(realsolid)],
 // 1 16 0 0 0 8 0 0 0 -6 0 0 0 8 4-4cylo.dat
-  [1,16,0,0,0,8,0,0,0,-6,0,0,0,8, ldraw_lib__4_4cylo()],
+  [1,16,0,0,0,8,0,0,0,-6,0,0,0,8, ldraw_lib__4_4cylo(realsolid)],
 // 1 16 0 -6 0 2.6 0 0 0 -1 0 0 0 2.6 4-4ring3.dat
-  [1,16,0,-6,0,2.6,0,0,0,-1,0,0,0,2.6, ldraw_lib__4_4ring3()],
+  [1,16,0,-6,0,2.6,0,0,0,-1,0,0,0,2.6, ldraw_lib__4_4ring3(realsolid)],
 // 1 16 0 -6 0 10.4 0 0 0 1 0 0 0 10.4 4-4edge.dat
-  [1,16,0,-6,0,10.4,0,0,0,1,0,0,0,10.4, ldraw_lib__4_4edge()],
+  [1,16,0,-6,0,10.4,0,0,0,1,0,0,0,10.4, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 0 0 13 0 0 0 1 0 0 0 13 4-4edge.dat
-  [1,16,0,0,0,13,0,0,0,1,0,0,0,13, ldraw_lib__4_4edge()],
+  [1,16,0,0,0,13,0,0,0,1,0,0,0,13, ldraw_lib__4_4edge(realsolid)],
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\29580s04.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__29580s04()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__29580s04(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 -1 s\29580s04.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__29580s04()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__29580s04(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\29580s04.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__29580s04()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__29580s04(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 -1 s\29580s04.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__29580s04()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__29580s04(realsolid)],
 // 
 // 0 // Backside
 // 4 16 4.975 0 12.011 0 0 13 0 65 13 4.975 65 12.011
@@ -536,5 +537,5 @@ function ldraw_lib__s__29580s02() = [
   [5,24,0,55,17.833,0,65,16,-6.1235,65,14.7822,6.1232,65,14.7824],
 ];
 module ldraw_lib__s__29580s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__29580s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__29580s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__29580s02(line=0.2);

@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/2-4ring3.scad>
-function ldraw_lib__s__62575s03() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__62575s03(realsolid=false) = [
 // 0 ~Animal Ant Opaque Areas Limit - Half
 // 0 Name: s\62575s03.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -17,7 +18,7 @@ function ldraw_lib__s__62575s03() = [
 // 
 // 
 // 1 16 0 -8 0 0 0 -2 0 -1 0 2 0 0 2-4ring3.dat
-  [1,16,0,-8,0,0,0,-2,0,-1,0,2,0,0, ldraw_lib__2_4ring3()],
+  [1,16,0,-8,0,0,0,-2,0,-1,0,2,0,0, ldraw_lib__2_4ring3(realsolid)],
 // 4 16 -14.435 -7.975 9.56 -15.698 -7.96 8.045 -16.647 -9.037 7.671 -14.237 -9.037 10.543
   [4,16,-14.435,-7.975,9.56,-15.698,-7.96,8.045,-16.647,-9.037,7.671,-14.237,-9.037,10.543],
 // 4 16 -14.237 -9.037 10.543 -16.647 -9.037 7.671 -21.297 -7.664 11.572 -18.887 -7.664 14.445
@@ -140,5 +141,5 @@ function ldraw_lib__s__62575s03() = [
   [5,24,-6.71,-17.794,5.489,-2.8169,-16.827,3.5806,-3,-18.694,5.489,-2.587,-14.482,2.312],
 ];
 module ldraw_lib__s__62575s03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__62575s03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__62575s03(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__62575s03(line=0.2);

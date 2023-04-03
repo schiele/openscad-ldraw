@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/2-4cyli.scad>
 use <s/3626bs02.scad>
 use <../p/t04o6250.scad>
-function ldraw_lib__3626bpab() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3626bpab(realsolid=false) = [
 // 0 Minifig Head with Aquanaut, Green Angled Sunglasses and Brown Hair Pattern
 // 0 Name: 3626bpab.dat
 // 0 Author: Mikkel Bech Jensen [gaia]
@@ -19,21 +20,21 @@ function ldraw_lib__3626bpab() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3626bs02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626bs02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626bs02(realsolid)],
 // 1 16 0 17 0 -13 0 0 0 -13 0 0 0 13 2-4cyli.dat
-  [1,16,0,17,0,-13,0,0,0,-13,0,0,0,13, ldraw_lib__2_4cyli()],
+  [1,16,0,17,0,-13,0,0,0,-13,0,0,0,13, ldraw_lib__2_4cyli(realsolid)],
 // 1 16 0 4 0 0 0 8 0 -6.4 0 8 0 0 t04o6250.dat
-  [1,16,0,4,0,0,0,8,0,-6.4,0,8,0,0, ldraw_lib__t04o6250()],
+  [1,16,0,4,0,0,0,8,0,-6.4,0,8,0,0, ldraw_lib__t04o6250(realsolid)],
 // 1 16 0 4 0 -8 0 0 0 -6.4 0 0 0 8 t04o6250.dat
-  [1,16,0,4,0,-8,0,0,0,-6.4,0,0,0,8, ldraw_lib__t04o6250()],
+  [1,16,0,4,0,-8,0,0,0,-6.4,0,0,0,8, ldraw_lib__t04o6250(realsolid)],
 // 1 16 0 17 0 0 0 -8 0 6.4 0 8 0 0 t04o6250.dat
-  [1,16,0,17,0,0,0,-8,0,6.4,0,8,0,0, ldraw_lib__t04o6250()],
+  [1,16,0,17,0,0,0,-8,0,6.4,0,8,0,0, ldraw_lib__t04o6250(realsolid)],
 // 1 16 0 17 0 8 0 0 0 6.4 0 0 0 8 t04o6250.dat
-  [1,16,0,17,0,8,0,0,0,6.4,0,0,0,8, ldraw_lib__t04o6250()],
+  [1,16,0,17,0,8,0,0,0,6.4,0,0,0,8, ldraw_lib__t04o6250(realsolid)],
 // 1 16 0 17 0 0 0 8 0 6.4 0 -8 0 0 t04o6250.dat
-  [1,16,0,17,0,0,0,8,0,6.4,0,-8,0,0, ldraw_lib__t04o6250()],
+  [1,16,0,17,0,0,0,8,0,6.4,0,-8,0,0, ldraw_lib__t04o6250(realsolid)],
 // 1 16 0 17 0 -8 0 0 0 6.4 0 0 0 -8 t04o6250.dat
-  [1,16,0,17,0,-8,0,0,0,6.4,0,0,0,-8, ldraw_lib__t04o6250()],
+  [1,16,0,17,0,-8,0,0,0,6.4,0,0,0,-8, ldraw_lib__t04o6250(realsolid)],
 // 
 // 3 484 12.2 7.2 -4.02 12.01 7.276 -4.975 12.01 8.055 -4.975
   [3,484,12.2,7.2,-4.02,12.01,7.276,-4.975,12.01,8.055,-4.975],
@@ -1080,5 +1081,5 @@ function ldraw_lib__3626bpab() = [
   [5,24,0,4,-13,0,2.469,-12.619,4.975,4,-12.01,-4.975,4,-12.01],
 ];
 module ldraw_lib__3626bpab(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3626bpab(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3626bpab(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3626bpab(line=0.2);

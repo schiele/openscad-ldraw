@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/4162s01.scad>
-function ldraw_lib__4162p1d() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4162p1d(realsolid=false) = [
 // 0 Tile  1 x  8 with "Paris" Pattern
 // 0 Name: 4162p1d.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -20,7 +21,7 @@ function ldraw_lib__4162p1d() = [
 // 0 // Using font: "Arial" style: "Regular" size: 50pt
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4162s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4162s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4162s01(realsolid)],
 // 3 15 -13.36 0 -4 -12.17 0 -4 -12.17 0 -0.34
   [3,15,-13.36,0,-4,-12.17,0,-4,-12.17,0,-0.34],
 // 4 15 -13.36 0 -4 -12.17 0 -0.34 -12.17 0 0.72 -13.36 0 5
@@ -473,5 +474,5 @@ function ldraw_lib__4162p1d() = [
   [3,16,8.81,0,1.6,9.05,0,1.94,7.19,0,2.52],
 ];
 module ldraw_lib__4162p1d(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4162p1d(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4162p1d(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4162p1d(line=0.2);

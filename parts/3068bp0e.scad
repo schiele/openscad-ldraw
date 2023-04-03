@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3068bs01.scad>
-function ldraw_lib__3068bp0e() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3068bp0e(realsolid=false) = [
 // 0 Tile  2 x  2 with White "POLICE" on Blue Badge Pattern
 // 0 Name: 3068bp0e.dat
 // 0 Author: Johann Eisner [technicbasics]
@@ -15,7 +16,7 @@ function ldraw_lib__3068bp0e() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3068bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3068bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3068bs01(realsolid)],
 // 4 272 0 0 15.45 0 0 17.8 -1.209 0 16.769 -1.123 0 14.736
   [4,272,0,0,15.45,0,0,17.8,-1.209,0,16.769,-1.123,0,14.736],
 // 4 272 -1.123 0 14.736 -1.209 0 16.769 -2.649 0 15.832 -2.539 0 14.04
@@ -1058,5 +1059,5 @@ function ldraw_lib__3068bp0e() = [
   [4,16,15.1,0,7.05,16.825,0,7.225,15,0,8.55,14.35,0,7.9],
 ];
 module ldraw_lib__3068bp0e(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3068bp0e(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3068bp0e(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3068bp0e(line=0.2);

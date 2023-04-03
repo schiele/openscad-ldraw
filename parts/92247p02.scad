@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <92246p02.scad>
-function ldraw_lib__92247p02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__92247p02(realsolid=false) = [
 // 0 Figure Friends Male Right Arm with Bright Green Short Sleeve Pattern
 // 0 Name: 92247p02.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -15,8 +16,8 @@ function ldraw_lib__92247p02() = [
 // 
 // 
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 92246p02.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__92246p02()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__92246p02(realsolid)],
 ];
 module ldraw_lib__92247p02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__92247p02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__92247p02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__92247p02(line=0.2);

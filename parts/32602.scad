@@ -3,7 +3,8 @@ use <../p/4-4con2.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4edge.scad>
 use <../p/stud4.scad>
-function ldraw_lib__32602() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__32602(realsolid=false) = [
 // 0 Minifig Hair Wavy Windblown to One Side
 // 0 Name: 32602.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -22,15 +23,15 @@ function ldraw_lib__32602() = [
 // 
 // 
 // 1 16 0 -4 0 0 0 -1 0 -1 0 -1 0 0 stud4.dat
-  [1,16,0,-4,0,0,0,-1,0,-1,0,-1,0,0, ldraw_lib__stud4()],
+  [1,16,0,-4,0,0,0,-1,0,-1,0,-1,0,0, ldraw_lib__stud4(realsolid)],
 // 1 16 0 -4 0 0 0 -8.66667 0 -1 0 8.66667 0 0 4-4disc.dat
-  [1,16,0,-4,0,0,0,-8.66667,0,-1,0,8.66667,0,0, ldraw_lib__4_4disc()],
+  [1,16,0,-4,0,0,0,-8.66667,0,-1,0,8.66667,0,0, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 -4 0 0 0 -8.66667 0 -1 0 8.66667 0 0 4-4edge.dat
-  [1,16,0,-4,0,0,0,-8.66667,0,-1,0,8.66667,0,0, ldraw_lib__4_4edge()],
+  [1,16,0,-4,0,0,0,-8.66667,0,-1,0,8.66667,0,0, ldraw_lib__4_4edge(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 0 -1.65829 0 -4.00348 0 -4 0 4.00348 0 -1.65829 4-4con2.dat
-  [1,16,0,0,0,-1.65829,0,-4.00348,0,-4,0,4.00348,0,-1.65829, ldraw_lib__4_4con2()],
+  [1,16,0,0,0,-1.65829,0,-4.00348,0,-4,0,4.00348,0,-1.65829, ldraw_lib__4_4con2(realsolid)],
 // 3 16 13.575 6.543 2.196 14.732 3.334 4.628 14.595 6.05 1.638
   [3,16,13.575,6.543,2.196,14.732,3.334,4.628,14.595,6.05,1.638],
 // 3 16 14.595 6.05 1.638 14.732 3.334 4.628 16.362 2.021 4.459
@@ -5173,5 +5174,5 @@ function ldraw_lib__32602() = [
   [5,24,7.7002,0,-10.1897,5.6948,-.3,-8.3189,6.8853,.987,-9.4421,4.9313,-4,-6.9281],
 ];
 module ldraw_lib__32602(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__32602(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__32602(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__32602(line=0.2);

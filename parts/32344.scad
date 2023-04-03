@@ -4,7 +4,8 @@ use <../p/rect.scad>
 use <../p/stug3-1x4.scad>
 use <../p/stug4-1x3.scad>
 use <../p/stug4-1x4.scad>
-function ldraw_lib__32344() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__32344(realsolid=false) = [
 // 0 ~Technic Micro-Scout Battery Lid
 // 0 Name: 32344.dat
 // 0 Author: Marc Klein [marckl]
@@ -22,19 +23,19 @@ function ldraw_lib__32344() = [
 // 
 // 
 // 1 16 0 0 0 0 0 -40 0 1 0 70 0 0 rect.dat
-  [1,16,0,0,0,0,0,-40,0,1,0,70,0,0, ldraw_lib__rect()],
+  [1,16,0,0,0,0,0,-40,0,1,0,70,0,0, ldraw_lib__rect(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -30 8 -20 -6 0 0 0 -4 0 0 0 46 box5.dat
-  [1,16,-30,8,-20,-6,0,0,0,-4,0,0,0,46, ldraw_lib__box5()],
+  [1,16,-30,8,-20,-6,0,0,0,-4,0,0,0,46, ldraw_lib__box5(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 30 8 -20 -6 0 0 0 -4 0 0 0 46 box5.dat
-  [1,16,30,8,-20,-6,0,0,0,-4,0,0,0,46, ldraw_lib__box5()],
+  [1,16,30,8,-20,-6,0,0,0,-4,0,0,0,46, ldraw_lib__box5(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 24 -20 -16 0 0 0 -4 0 0 0 46 box5.dat
-  [1,16,0,24,-20,-16,0,0,0,-4,0,0,0,46, ldraw_lib__box5()],
+  [1,16,0,24,-20,-16,0,0,0,-4,0,0,0,46, ldraw_lib__box5(realsolid)],
 // 4 16 -36 4 66 36 4 66 36 4 30 -36 4 30
   [4,16,-36,4,66,36,4,66,36,4,30,-36,4,30],
 // 4 16 -20 24 -70 -20 24 30 -16 24 26 -16 24 -66
@@ -174,14 +175,14 @@ function ldraw_lib__32344() = [
 // 2 24 -36 4 66 -36 4 30
   [2,24,-36,4,66,-36,4,30],
 // 1 16 30 4 -20 0 0 -1 0 -1 0 1 0 0 stug3-1x4.dat
-  [1,16,30,4,-20,0,0,-1,0,-1,0,1,0,0, ldraw_lib__stug3_1x4()],
+  [1,16,30,4,-20,0,0,-1,0,-1,0,1,0,0, ldraw_lib__stug3_1x4(realsolid)],
 // 1 16 -30 4 -20 0 0 -1 0 -1 0 1 0 0 stug3-1x4.dat
-  [1,16,-30,4,-20,0,0,-1,0,-1,0,1,0,0, ldraw_lib__stug3_1x4()],
+  [1,16,-30,4,-20,0,0,-1,0,-1,0,1,0,0, ldraw_lib__stug3_1x4(realsolid)],
 // 1 16 0 20 -20 0 0 -1 0 -1 0 1 0 0 stug4-1x4.dat
-  [1,16,0,20,-20,0,0,-1,0,-1,0,1,0,0, ldraw_lib__stug4_1x4()],
+  [1,16,0,20,-20,0,0,-1,0,-1,0,1,0,0, ldraw_lib__stug4_1x4(realsolid)],
 // 1 16 0 4 50 1 0 0 0 -1 0 0 0 1 stug4-1x3.dat
-  [1,16,0,4,50,1,0,0,0,-1,0,0,0,1, ldraw_lib__stug4_1x3()],
+  [1,16,0,4,50,1,0,0,0,-1,0,0,0,1, ldraw_lib__stug4_1x3(realsolid)],
 ];
 module ldraw_lib__32344(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__32344(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__32344(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__32344(line=0.2);

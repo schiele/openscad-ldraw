@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__u9105s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__u9105s02(realsolid=false) = [
 // 0 ~Figure Fabuland Mouse Eye  2
 // 0 Name: s\u9105s02.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -577,5 +578,5 @@ function ldraw_lib__s__u9105s02() = [
   [5,24,-7.05,-37.36,-18.109,-7.98,-40.061,-15.04,-11.34,-39.104,-14.2,-3.762,-36.96,-19.078],
 ];
 module ldraw_lib__s__u9105s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__u9105s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__u9105s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__u9105s02(line=0.2);

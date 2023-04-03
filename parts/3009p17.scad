@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/3009p17a.scad>
 use <s/3009s01.scad>
-function ldraw_lib__3009p17() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3009p17(realsolid=false) = [
 // 0 Brick  1 x  6 with Black "POLICE" and Red Line Pattern
 // 0 Name: 3009p17.dat
 // 0 Author: Michael Heidemann [mikeheide]
@@ -16,9 +17,9 @@ function ldraw_lib__3009p17() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3009s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3009s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3009s01(realsolid)],
 // 1 16 0 -1 0 1.1429 0 0 0 1.1429 0 0 0 1 s\3009p17a.dat
-  [1,16,0,-1,0,1.1429,0,0,0,1.1429,0,0,0,1, ldraw_lib__s__3009p17a()],
+  [1,16,0,-1,0,1.1429,0,0,0,1.1429,0,0,0,1, ldraw_lib__s__3009p17a(realsolid)],
 // 4 16 -60 24 -10 -35.4299 22.4294 -10 -35.4299 1.2858 -10 -60 0 -10
   [4,16,-60,24,-10,-35.4299,22.4294,-10,-35.4299,1.2858,-10,-60,0,-10],
 // 4 16 60 0 -10 36.5728 1.2858 -10 36.5728 22.4294 -10 60 24 -10
@@ -30,5 +31,5 @@ function ldraw_lib__3009p17() = [
 // 0
 ];
 module ldraw_lib__3009p17(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3009p17(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3009p17(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3009p17(line=0.2);

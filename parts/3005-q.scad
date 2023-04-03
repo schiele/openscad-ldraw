@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <3005ptq.scad>
-function ldraw_lib__3005_q() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3005_q(realsolid=false) = [
 // 0 ~Moved to 3005ptq
 // 0 Name: 3005-q.dat
 // 0 Author: [PTadmin]
@@ -18,8 +19,8 @@ function ldraw_lib__3005_q() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 3005ptq.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3005ptq()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3005ptq(realsolid)],
 ];
 module ldraw_lib__3005_q(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3005_q(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3005_q(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3005_q(line=0.2);

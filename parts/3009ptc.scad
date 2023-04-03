@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3009s01.scad>
-function ldraw_lib__3009ptc() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3009ptc(realsolid=false) = [
 // 0 Brick  1 x  6 with "GENOVA" on White Background Pattern
 // 0 Name: 3009ptc.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -19,7 +20,7 @@ function ldraw_lib__3009ptc() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3009s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3009s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3009s01(realsolid)],
 // 3 15 -43.5 2.25 -10 -29.454 11.938 -10 -29.372 10.665 -10
   [3,15,-43.5,2.25,-10,-29.454,11.938,-10,-29.372,10.665,-10],
 // 4 15 -29.454 11.938 -10 -43.5 2.25 -10 -43.5 21.75 -10 -29.371 13.203 -10
@@ -474,5 +475,5 @@ function ldraw_lib__3009ptc() = [
   [4,16,43.5,21.75,-10,-43.5,21.75,-10,-60,24,-10,60,24,-10],
 ];
 module ldraw_lib__3009ptc(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3009ptc(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3009ptc(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3009ptc(line=0.2);

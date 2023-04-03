@@ -2,7 +2,8 @@ use <../lib.scad>
 use <3815bp6v.scad>
 use <3816bp6v.scad>
 use <3817bp6v.scad>
-function ldraw_lib__73200p6v() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__73200p6v(realsolid=false) = [
 // 0 Minifig Hips and Legs with Salmon Cable Pattern
 // 0 Name: 73200p6v.dat
 // 0 Author: Chris Dee [cwdee]
@@ -22,13 +23,13 @@ function ldraw_lib__73200p6v() = [
 // 
 // 
 // 1 0 0 0 0 1 0 0 0 1 0 0 0 1 3815bp6v.dat
-  [1,0,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3815bp6v()],
+  [1,0,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3815bp6v(realsolid)],
 // 1 16 0 12 0 1 0 0 0 1 0 0 0 1 3816bp6v.dat
-  [1,16,0,12,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3816bp6v()],
+  [1,16,0,12,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3816bp6v(realsolid)],
 // 1 16 0 12 0 1 0 0 0 1 0 0 0 1 3817bp6v.dat
-  [1,16,0,12,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3817bp6v()],
+  [1,16,0,12,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3817bp6v(realsolid)],
 // 
 ];
 module ldraw_lib__73200p6v(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__73200p6v(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__73200p6v(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__73200p6v(line=0.2);

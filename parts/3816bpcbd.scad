@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <3817bpcbd.scad>
-function ldraw_lib__3816bpcbd() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3816bpcbd(realsolid=false) = [
 // 0 Minifig Leg Right with Black Triangles on Foot Pattern
 // 0 Name: 3816bpcbd.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -19,8 +20,8 @@ function ldraw_lib__3816bpcbd() = [
 // 
 // 
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 3817bpcbd.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__3817bpcbd()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__3817bpcbd(realsolid)],
 ];
 module ldraw_lib__3816bpcbd(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3816bpcbd(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3816bpcbd(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3816bpcbd(line=0.2);

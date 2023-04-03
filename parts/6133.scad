@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/2-4disc.scad>
 use <../p/2-4edge.scad>
 use <../p/4-4cyli.scad>
-function ldraw_lib__6133() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6133(realsolid=false) = [
 // 0 Animal Dragon Wing
 // 0 Name: 6133.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -907,25 +908,25 @@ function ldraw_lib__6133() = [
   [4,16,10,-4,-4.5,0,-4,-4.5,0,0,-4.5,10,0,-4.5],
 // 0 Handle
 // 1 16 0 0 8.5 4 0 0 0 0 4 0 -17 0 4-4cyli.dat
-  [1,16,0,0,8.5,4,0,0,0,0,4,0,-17,0, ldraw_lib__4_4cyli()],
+  [1,16,0,0,8.5,4,0,0,0,0,4,0,-17,0, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 0 8.5 0 0 -4 4 0 0 0 -1 0 2-4disc.dat
-  [1,16,0,0,8.5,0,0,-4,4,0,0,0,-1,0, ldraw_lib__2_4disc()],
+  [1,16,0,0,8.5,0,0,-4,4,0,0,0,-1,0, ldraw_lib__2_4disc(realsolid)],
 // 1 16 0 0 8.5 0 0 -4 4 0 0 0 -1 0 2-4edge.dat
-  [1,16,0,0,8.5,0,0,-4,4,0,0,0,-1,0, ldraw_lib__2_4edge()],
+  [1,16,0,0,8.5,0,0,-4,4,0,0,0,-1,0, ldraw_lib__2_4edge(realsolid)],
 // 1 16 0 0 -8.5 0 0 -4 4 0 0 0 1 0 2-4disc.dat
-  [1,16,0,0,-8.5,0,0,-4,4,0,0,0,1,0, ldraw_lib__2_4disc()],
+  [1,16,0,0,-8.5,0,0,-4,4,0,0,0,1,0, ldraw_lib__2_4disc(realsolid)],
 // 1 16 0 0 -8.5 0 0 -4 4 0 0 0 -1 0 2-4edge.dat
-  [1,16,0,0,-8.5,0,0,-4,4,0,0,0,-1,0, ldraw_lib__2_4edge()],
+  [1,16,0,0,-8.5,0,0,-4,4,0,0,0,-1,0, ldraw_lib__2_4edge(realsolid)],
 // 2 24 10 -4 4.5 10 4 4.5
   [2,24,10,-4,4.5,10,4,4.5],
 // 2 24 10 -4 -4.5 10 4 -4.5
   [2,24,10,-4,-4.5,10,4,-4.5],
 // 1 16 0 0 4.5 0 0 4 -4 0 0 0 -1 0 2-4edge.dat
-  [1,16,0,0,4.5,0,0,4,-4,0,0,0,-1,0, ldraw_lib__2_4edge()],
+  [1,16,0,0,4.5,0,0,4,-4,0,0,0,-1,0, ldraw_lib__2_4edge(realsolid)],
 // 1 16 0 0 -4.5 0 0 4 -4 0 0 0 -1 0 2-4edge.dat
-  [1,16,0,0,-4.5,0,0,4,-4,0,0,0,-1,0, ldraw_lib__2_4edge()],
+  [1,16,0,0,-4.5,0,0,4,-4,0,0,0,-1,0, ldraw_lib__2_4edge(realsolid)],
 // 0
 ];
 module ldraw_lib__6133(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6133(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6133(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6133(line=0.2);

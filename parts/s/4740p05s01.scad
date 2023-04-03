@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/1-4ering.scad>
-function ldraw_lib__s__4740p05s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__4740p05s01(realsolid=false) = [
 // 0 ~Dish  2 x  2 Inverted with 2 Black Rings and 10 Black Holes Pattern - Quarter Top Face
 // 0 Name: s\4740p05s01.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -15,7 +16,7 @@ function ldraw_lib__s__4740p05s01() = [
 // 
 // 
 // 1 16 0 5.6 0 20 0 0 0 1 0 0 0 20 1-4ering.dat
-  [1,16,0,5.6,0,20,0,0,0,1,0,0,0,20, ldraw_lib__1_4ering()],
+  [1,16,0,5.6,0,20,0,0,0,1,0,0,0,20, ldraw_lib__1_4ering(realsolid)],
 // 0 // First ring
 // 4 16 6 0 0 9.25 .9208 0 8.5461 .9208 3.54 5.5434 0 2.2962
   [4,16,6,0,0,9.25,.9208,0,8.5461,.9208,3.54,5.5434,0,2.2962],
@@ -232,5 +233,5 @@ function ldraw_lib__s__4740p05s01() = [
   [5,24,0,3.3,16,0,5.6,20,6.1232,3.3,14.7824,-6.1232,3.3,14.7824],
 ];
 module ldraw_lib__s__4740p05s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__4740p05s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__4740p05s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__4740p05s01(line=0.2);

@@ -2,7 +2,8 @@ use <../lib.scad>
 use <s/2431pt4s01.scad>
 use <s/2431pt4s02.scad>
 use <s/3009s01.scad>
-function ldraw_lib__3009ptf() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3009ptf(realsolid=false) = [
 // 0 Brick  1 x  6 with Black "CATERHAM" on Yellow Stripe Pattern
 // 0 Name: 3009ptf.dat
 // 0 Author: Ulrich Röder [UR]
@@ -22,7 +23,7 @@ function ldraw_lib__3009ptf() = [
 // 
 // 0 // Main
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3009s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3009s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3009s01(realsolid)],
 // 4 16 59.28 18.24 -10 60 24 -10 60 0 -10 59.28 5.76 -10
   [4,16,59.28,18.24,-10,60,24,-10,60,0,-10,59.28,5.76,-10],
 // 4 16 -59.28 5.76 -10 -60 0 -10 -60 24 -10 -59.28 18.24 -10
@@ -46,12 +47,12 @@ function ldraw_lib__3009ptf() = [
 // 
 // 0 // Yellow
 // 1 14 0 12 -10 1.56 0 0 0 0 -1.56 0 1 0 s\2431pt4s02.dat
-  [1,14,0,12,-10,1.56,0,0,0,0,-1.56,0,1,0, ldraw_lib__s__2431pt4s02()],
+  [1,14,0,12,-10,1.56,0,0,0,0,-1.56,0,1,0, ldraw_lib__s__2431pt4s02(realsolid)],
 // 
 // 0 // Black
 // 1 0 0 12 -10 1.56 0 0 0 0 -1.56 0 1 0 s\2431pt4s01.dat
-  [1,0,0,12,-10,1.56,0,0,0,0,-1.56,0,1,0, ldraw_lib__s__2431pt4s01()],
+  [1,0,0,12,-10,1.56,0,0,0,0,-1.56,0,1,0, ldraw_lib__s__2431pt4s01(realsolid)],
 ];
 module ldraw_lib__3009ptf(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3009ptf(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3009ptf(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3009ptf(line=0.2);

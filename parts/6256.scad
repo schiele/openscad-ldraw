@@ -4,7 +4,8 @@ use <../p/4-4disc.scad>
 use <../p/4-4edge.scad>
 use <s/6256s01.scad>
 use <../p/t04i1538.scad>
-function ldraw_lib__6256() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6256(realsolid=false) = [
 // 0 Minifig Dinner Plate
 // 0 Name: 6256.dat
 // 0 Author: Andy Westrate [westrate]
@@ -24,27 +25,27 @@ function ldraw_lib__6256() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\6256s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6256s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6256s01(realsolid)],
 // 
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -8.5303 0 4.4611 0 0 0 8.5303 0 0 0 4.4611 4-4con4.dat
-  [1,16,0,-8.5303,0,4.4611,0,0,0,8.5303,0,0,0,4.4611, ldraw_lib__4_4con4()],
+  [1,16,0,-8.5303,0,4.4611,0,0,0,8.5303,0,0,0,4.4611, ldraw_lib__4_4con4(realsolid)],
 // 
 // 1 16 0 -7 0 26 0 0 0 -26 0 0 0 26 t04i1538.dat
-  [1,16,0,-7,0,26,0,0,0,-26,0,0,0,26, ldraw_lib__t04i1538()],
+  [1,16,0,-7,0,26,0,0,0,-26,0,0,0,26, ldraw_lib__t04i1538(realsolid)],
 // 1 16 0 -7 0 26 0 0 0 -26 0 0 0 -26 t04i1538.dat
-  [1,16,0,-7,0,26,0,0,0,-26,0,0,0,-26, ldraw_lib__t04i1538()],
+  [1,16,0,-7,0,26,0,0,0,-26,0,0,0,-26, ldraw_lib__t04i1538(realsolid)],
 // 1 16 0 -7 0 -26 0 0 0 -26 0 0 0 26 t04i1538.dat
-  [1,16,0,-7,0,-26,0,0,0,-26,0,0,0,26, ldraw_lib__t04i1538()],
+  [1,16,0,-7,0,-26,0,0,0,-26,0,0,0,26, ldraw_lib__t04i1538(realsolid)],
 // 1 16 0 -7 0 -26 0 0 0 -26 0 0 0 -26 t04i1538.dat
-  [1,16,0,-7,0,-26,0,0,0,-26,0,0,0,-26, ldraw_lib__t04i1538()],
+  [1,16,0,-7,0,-26,0,0,0,-26,0,0,0,-26, ldraw_lib__t04i1538(realsolid)],
 // 
 // 1 16 0 0 0 17.8444 0 0 0 1 0 0 0 17.8444 4-4disc.dat
-  [1,16,0,0,0,17.8444,0,0,0,1,0,0,0,17.8444, ldraw_lib__4_4disc()],
+  [1,16,0,0,0,17.8444,0,0,0,1,0,0,0,17.8444, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 0 0 17.8444 0 0 0 1 0 0 0 17.8444 4-4edge.dat
-  [1,16,0,0,0,17.8444,0,0,0,1,0,0,0,17.8444, ldraw_lib__4_4edge()],
+  [1,16,0,0,0,17.8444,0,0,0,1,0,0,0,17.8444, ldraw_lib__4_4edge(realsolid)],
 ];
 module ldraw_lib__6256(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6256(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6256(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6256(line=0.2);

@@ -3,7 +3,8 @@ use <88324.scad>
 use <88325.scad>
 use <88326.scad>
 use <88327.scad>
-function ldraw_lib__87578() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__87578(realsolid=false) = [
 // 0 Electric Power Functions Solar Panel
 // 0 Name: 87578.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -20,14 +21,14 @@ function ldraw_lib__87578() = [
 // 
 // 
 // 1 72 0 0 0 1 0 0 0 1 0 0 0 1 88325.dat
-  [1,72,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__88325()],
+  [1,72,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__88325(realsolid)],
 // 1 16 0 -49 0 1 0 0 0 1 0 0 0 1 88324.dat
-  [1,16,0,-49,0,1,0,0,0,1,0,0,0,1, ldraw_lib__88324()],
+  [1,16,0,-49,0,1,0,0,0,1,0,0,0,1, ldraw_lib__88324(realsolid)],
 // 1 47 0 -45 19 1 0 0 0 1 0 0 0 1 88326.dat
-  [1,47,0,-45,19,1,0,0,0,1,0,0,0,1, ldraw_lib__88326()],
+  [1,47,0,-45,19,1,0,0,0,1,0,0,0,1, ldraw_lib__88326(realsolid)],
 // 1 0 0 -43.5 19 1 0 0 0 1 0 0 0 1 88327.dat
-  [1,0,0,-43.5,19,1,0,0,0,1,0,0,0,1, ldraw_lib__88327()],
+  [1,0,0,-43.5,19,1,0,0,0,1,0,0,0,1, ldraw_lib__88327(realsolid)],
 ];
 module ldraw_lib__87578(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__87578(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__87578(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__87578(line=0.2);

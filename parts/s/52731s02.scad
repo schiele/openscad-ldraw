@@ -2,7 +2,8 @@ use <../../lib.scad>
 use <../../p/1-4cylc.scad>
 use <../../p/1-4cyli.scad>
 use <../../p/3-16cyli.scad>
-function ldraw_lib__s__52731s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__52731s02(realsolid=false) = [
 // 0 ~Technic Steering Constant Velocity 8mm Joint Male Ball Quarter
 // 0 Name: s\52731s02.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -17,9 +18,9 @@ function ldraw_lib__s__52731s02() = [
 // 
 // 
 // 1 16 6.2 0 4.5842 2.5 0 0 0 0 -2.5 0 15.03 0 1-4cyli.dat
-  [1,16,6.2,0,4.5842,2.5,0,0,0,0,-2.5,0,15.03,0, ldraw_lib__1_4cyli()],
+  [1,16,6.2,0,4.5842,2.5,0,0,0,0,-2.5,0,15.03,0, ldraw_lib__1_4cyli(realsolid)],
 // 1 16 0 -1.35 7 0 0 6.5 -3.1 0 0 0 11.3 0 3-16cyli.dat
-  [1,16,0,-1.35,7,0,0,6.5,-3.1,0,0,0,11.3,0, ldraw_lib__3_16cyli()],
+  [1,16,0,-1.35,7,0,0,6.5,-3.1,0,0,0,11.3,0, ldraw_lib__3_16cyli(realsolid)],
 // 4 16 6.2 -2.5 19.6142 6.0054 -2.5364 18.3 6.0054 -2.5364 7 6.2 -2.5 4.5842
   [4,16,6.2,-2.5,19.6142,6.0054,-2.5364,18.3,6.0054,-2.5364,7,6.2,-2.5,4.5842],
 // 2 24 6.0054 -2.5364 7.0321 6.0054 -2.5364 18.2236
@@ -27,7 +28,7 @@ function ldraw_lib__s__52731s02() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 -8.3 3.5 0 0 0 0 -3.5 0 -1 0 1-4cylc.dat
-  [1,16,0,0,-8.3,3.5,0,0,0,0,-3.5,0,-1,0, ldraw_lib__1_4cylc()],
+  [1,16,0,0,-8.3,3.5,0,0,0,0,-3.5,0,-1,0, ldraw_lib__1_4cylc(realsolid)],
 // 3 16 9.239 0 -3.827 10 0 0 9.239 -3.827 0
   [3,16,9.239,0,-3.827,10,0,0,9.239,-3.827,0],
 // 3 16 7.836 -4.393 -4.393 9.239 0 -3.827 9.239 -3.827 0
@@ -294,5 +295,5 @@ function ldraw_lib__s__52731s02() = [
   [5,24,4.393,-4.393,-7.836,2.125,-6.6198,-6.7969,4.393,-7.836,-4.393,1.8191,-5.9621,-7.4878],
 ];
 module ldraw_lib__s__52731s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__52731s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__52731s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__52731s02(line=0.2);

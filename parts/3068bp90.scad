@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3068bs01.scad>
-function ldraw_lib__3068bp90() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3068bp90(realsolid=false) = [
 // 0 Tile  2 x  2 with "Rock & Roll", Guitarist and Record Pattern
 // 0 Name: 3068bp90.dat
 // 0 Author: Ulrich Röder [UR]
@@ -23,7 +24,7 @@ function ldraw_lib__3068bp90() = [
 // 0 // Main
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3068bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3068bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3068bs01(realsolid)],
 // 3 16 -4.73 0 -3.439 -5.157 0 -3.957 -5.015 0 -4.119
   [3,16,-4.73,0,-3.439,-5.157,0,-3.957,-5.015,0,-4.119],
 // 4 16 -4.643 0 -2.86 -5.629 0 -3.25 -5.157 0 -3.957 -4.73 0 -3.439
@@ -4784,5 +4785,5 @@ function ldraw_lib__3068bp90() = [
   [4,15,1.244,0,-13.74,-.12,0,-14.35,.2,0,-14.5,1.596,0,-14.244],
 ];
 module ldraw_lib__3068bp90(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3068bp90(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3068bp90(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3068bp90(line=0.2);

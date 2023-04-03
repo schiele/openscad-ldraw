@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <50859b.scad>
 use <50862c01.scad>
-function ldraw_lib__50859bc01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__50859bc01(realsolid=false) = [
 // 0 Bike  2 Wheel Motorcycle Frame (Long Pins) with Light Bluish Grey Wheels
 // 0 Name: 50859bc01.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -20,12 +21,12 @@ function ldraw_lib__50859bc01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 50859b.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__50859b()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__50859b(realsolid)],
 // 1 71 0 -3.7 63.5 0 0 1 0 1 0 1 0 0 50862c01.dat
-  [1,71,0,-3.7,63.5,0,0,1,0,1,0,1,0,0, ldraw_lib__50862c01()],
+  [1,71,0,-3.7,63.5,0,0,1,0,1,0,1,0,0, ldraw_lib__50862c01(realsolid)],
 // 1 71 0 -3.7 -43.5 0 0 1 0 1 0 1 0 0 50862c01.dat
-  [1,71,0,-3.7,-43.5,0,0,1,0,1,0,1,0,0, ldraw_lib__50862c01()],
+  [1,71,0,-3.7,-43.5,0,0,1,0,1,0,1,0,0, ldraw_lib__50862c01(realsolid)],
 ];
 module ldraw_lib__50859bc01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__50859bc01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__50859bc01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__50859bc01(line=0.2);

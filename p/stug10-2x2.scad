@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <stud10.scad>
-function ldraw_lib__stug10_2x2() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__stug10_2x2(realsolid=false) = [
 // 0 Stud Group Truncated Laterally Curved 40D for Round 2 x 2 Parts
 // 0 Name: stug10-2x2.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -22,14 +23,14 @@ function ldraw_lib__stug10_2x2() = [
 // 0 // 1 16 10 -4 -10 1 0 0 0 1 0 0 0 1 logo5.dat
 // 
 // 1 16 10 0 10 1 0 0 0 1 0 0 0 1 stud10.dat
-  [1,16,10,0,10,1,0,0,0,1,0,0,0,1, ldraw_lib__stud10()],
+  [1,16,10,0,10,1,0,0,0,1,0,0,0,1, ldraw_lib__stud10(realsolid)],
 // 1 16 -10 0 10 0 0 -1 0 1 0 1 0 0 stud10.dat
-  [1,16,-10,0,10,0,0,-1,0,1,0,1,0,0, ldraw_lib__stud10()],
+  [1,16,-10,0,10,0,0,-1,0,1,0,1,0,0, ldraw_lib__stud10(realsolid)],
 // 1 16 10 0 -10 0 0 1 0 1 0 -1 0 0 stud10.dat
-  [1,16,10,0,-10,0,0,1,0,1,0,-1,0,0, ldraw_lib__stud10()],
+  [1,16,10,0,-10,0,0,1,0,1,0,-1,0,0, ldraw_lib__stud10(realsolid)],
 // 1 16 -10 0 -10 -1 0 0 0 1 0 0 0 -1 stud10.dat
-  [1,16,-10,0,-10,-1,0,0,0,1,0,0,0,-1, ldraw_lib__stud10()],
+  [1,16,-10,0,-10,-1,0,0,0,1,0,0,0,-1, ldraw_lib__stud10(realsolid)],
 ];
 module ldraw_lib__stug10_2x2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__stug10_2x2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__stug10_2x2(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__stug10_2x2(line=0.2);

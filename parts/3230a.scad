@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/stud3.scad>
-function ldraw_lib__3230a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3230a(realsolid=false) = [
 // 0 Train Track Tapered Rail Curved Inside
 // 0 Name: 3230a.dat
 // 0 Author: Manfred Moolhuysen
@@ -3131,12 +3132,12 @@ function ldraw_lib__3230a() = [
 // 2 24 148.27 16 -4.60 148.27 9 -4.60
   [2,24,148.27,16,-4.60,148.27,9,-4.60],
 // 1 16 -126.65 12 -10.77 1 0 0 0 -0.75 0 0 0 1 stud3.dat
-  [1,16,-126.65,12,-10.77,1,0,0,0,-0.75,0,0,0,1, ldraw_lib__stud3()],
+  [1,16,-126.65,12,-10.77,1,0,0,0,-0.75,0,0,0,1, ldraw_lib__stud3(realsolid)],
 // 1 16 0 12 0 1 0 0 0 -1 0 0 0 1 stud3.dat
-  [1,16,0,12,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud3()],
+  [1,16,0,12,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud3(realsolid)],
 // 1 16 126.65 12 -10.77 1 0 0 0 -0.75 0 0 0 1 stud3.dat
-  [1,16,126.65,12,-10.77,1,0,0,0,-0.75,0,0,0,1, ldraw_lib__stud3()],
+  [1,16,126.65,12,-10.77,1,0,0,0,-0.75,0,0,0,1, ldraw_lib__stud3(realsolid)],
 ];
 module ldraw_lib__3230a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3230a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3230a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3230a(line=0.2);

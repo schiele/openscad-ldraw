@@ -2,7 +2,8 @@ use <../lib.scad>
 use <47674.scad>
 use <47675.scad>
 use <47676.scad>
-function ldraw_lib__47674c01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__47674c01(realsolid=false) = [
 // 0 Container Storage X-Pod (Complete, Clear Middle)
 // 0 Name: 47674c01.dat
 // 0 Author: Steffen [Steffen]
@@ -17,12 +18,12 @@ function ldraw_lib__47674c01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 47675.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__47675()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__47675(realsolid)],
 // 1 47 0 18 0 1 0 0 0 1 0 0 0 1 47674.dat
-  [1,47,0,18,0,1,0,0,0,1,0,0,0,1, ldraw_lib__47674()],
+  [1,47,0,18,0,1,0,0,0,1,0,0,0,1, ldraw_lib__47674(realsolid)],
 // 1 16 0 116 0 1 0 0 0 1 0 0 0 1 47676.dat
-  [1,16,0,116,0,1,0,0,0,1,0,0,0,1, ldraw_lib__47676()],
+  [1,16,0,116,0,1,0,0,0,1,0,0,0,1, ldraw_lib__47676(realsolid)],
 ];
 module ldraw_lib__47674c01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__47674c01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__47674c01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__47674c01(line=0.2);

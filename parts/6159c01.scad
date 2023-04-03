@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <6159a.scad>
 use <6164.scad>
-function ldraw_lib__6159c01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6159c01(realsolid=false) = [
 // 0 Window  4 x  4 x  3 Roof with Centre Bar with Fixed Transparent Light Blue Glass
 // 0 Name: 6159c01.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -18,10 +19,10 @@ function ldraw_lib__6159c01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 6159a.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__6159a()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__6159a(realsolid)],
 // 1 43 0 0 0 1 0 0 0 1 0 0 0 1 6164.dat
-  [1,43,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__6164()],
+  [1,43,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__6164(realsolid)],
 ];
 module ldraw_lib__6159c01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6159c01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6159c01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6159c01(line=0.2);

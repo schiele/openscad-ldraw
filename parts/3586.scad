@@ -6,7 +6,8 @@ use <../p/stug-2x1.scad>
 use <../p/stug-4x1.scad>
 use <../p/stug-6x1.scad>
 use <../p/stug-8x1.scad>
-function ldraw_lib__3586() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3586(realsolid=false) = [
 // 0 Wing  7 x 12 Left
 // 0 Name: 3586.dat
 // 0 Author: James Jessiman
@@ -25,22 +26,22 @@ function ldraw_lib__3586() = [
 // 
 // 
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\3585s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__3585s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__3585s01(realsolid)],
 // 1 16 100 0 60 0 0 -1 0 1 0 1 0 0 stug-2x1.dat
-  [1,16,100,0,60,0,0,-1,0,1,0,1,0,0, ldraw_lib__stug_2x1()],
+  [1,16,100,0,60,0,0,-1,0,1,0,1,0,0, ldraw_lib__stug_2x1(realsolid)],
 // 1 16 0 0 40 0 0 -1 0 1 0 1 0 0 stug-12x1.dat
-  [1,16,0,0,40,0,0,-1,0,1,0,1,0,0, ldraw_lib__stug_12x1()],
+  [1,16,0,0,40,0,0,-1,0,1,0,1,0,0, ldraw_lib__stug_12x1(realsolid)],
 // 1 16 -20 0 20 0 0 -1 0 1 0 1 0 0 stug-10x1.dat
-  [1,16,-20,0,20,0,0,-1,0,1,0,1,0,0, ldraw_lib__stug_10x1()],
+  [1,16,-20,0,20,0,0,-1,0,1,0,1,0,0, ldraw_lib__stug_10x1(realsolid)],
 // 1 16 -40 0 0 0 0 -1 0 1 0 1 0 0 stug-8x1.dat
-  [1,16,-40,0,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__stug_8x1()],
+  [1,16,-40,0,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__stug_8x1(realsolid)],
 // 1 16 -60 0 -20 0 0 -1 0 1 0 1 0 0 stug-6x1.dat
-  [1,16,-60,0,-20,0,0,-1,0,1,0,1,0,0, ldraw_lib__stug_6x1()],
+  [1,16,-60,0,-20,0,0,-1,0,1,0,1,0,0, ldraw_lib__stug_6x1(realsolid)],
 // 1 16 -80 0 -40 0 0 -1 0 1 0 1 0 0 stug-4x1.dat
-  [1,16,-80,0,-40,0,0,-1,0,1,0,1,0,0, ldraw_lib__stug_4x1()],
+  [1,16,-80,0,-40,0,0,-1,0,1,0,1,0,0, ldraw_lib__stug_4x1(realsolid)],
 // 1 16 -100 0 -60 0 0 -1 0 1 0 1 0 0 stug-2x1.dat
-  [1,16,-100,0,-60,0,0,-1,0,1,0,1,0,0, ldraw_lib__stug_2x1()],
+  [1,16,-100,0,-60,0,0,-1,0,1,0,1,0,0, ldraw_lib__stug_2x1(realsolid)],
 ];
 module ldraw_lib__3586(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3586(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3586(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3586(line=0.2);

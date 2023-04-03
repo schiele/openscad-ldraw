@@ -4,7 +4,8 @@ use <../p/4-4cylc.scad>
 use <../p/4-4cylo.scad>
 use <../p/4-4ring1.scad>
 use <s/37695s01.scad>
-function ldraw_lib__37695() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__37695(realsolid=false) = [
 // 0 Plant Stem with  3 Leaves with Bar and Pin Holes
 // 0 Name: 37695.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -19,25 +20,25 @@ function ldraw_lib__37695() = [
 // 
 // 
 // 1 16 0 -23.5 0 1 0 0 0 1 0 0 0 1 s\37695s01.dat
-  [1,16,0,-23.5,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__37695s01()],
+  [1,16,0,-23.5,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__37695s01(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -15 0 2 0 0 0 15 0 0 0 2 4-4cylc.dat
-  [1,16,0,-15,0,2,0,0,0,15,0,0,0,2, ldraw_lib__4_4cylc()],
+  [1,16,0,-15,0,2,0,0,0,15,0,0,0,2, ldraw_lib__4_4cylc(realsolid)],
 // 1 16 0 0 0 4 0 0 0 -30.5 0 0 0 4 4-4cylo.dat
-  [1,16,0,0,0,4,0,0,0,-30.5,0,0,0,4, ldraw_lib__4_4cylo()],
+  [1,16,0,0,0,4,0,0,0,-30.5,0,0,0,4, ldraw_lib__4_4cylo(realsolid)],
 // 1 16 0 0 0 2 0 0 0 -30.5 0 0 0 2 4-4ring1.dat
-  [1,16,0,0,0,2,0,0,0,-30.5,0,0,0,2, ldraw_lib__4_4ring1()],
+  [1,16,0,0,0,2,0,0,0,-30.5,0,0,0,2, ldraw_lib__4_4ring1(realsolid)],
 // 1 16 0 -30.5 0 2 0 0 0 -0.8 0 0 0 2 4-4con1.dat
-  [1,16,0,-30.5,0,2,0,0,0,-0.8,0,0,0,2, ldraw_lib__4_4con1()],
+  [1,16,0,-30.5,0,2,0,0,0,-0.8,0,0,0,2, ldraw_lib__4_4con1(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -24 0 2 0 0 0 -7.3 0 0 0 2 4-4cylc.dat
-  [1,16,0,-24,0,2,0,0,0,-7.3,0,0,0,2, ldraw_lib__4_4cylc()],
+  [1,16,0,-24,0,2,0,0,0,-7.3,0,0,0,2, ldraw_lib__4_4cylc(realsolid)],
 // 1 16 0 -23.5 0 -0.5 0 0.86603 0 1 0 -0.86603 0 -0.5 s\37695s01.dat
-  [1,16,0,-23.5,0,-0.5,0,0.86603,0,1,0,-0.86603,0,-0.5, ldraw_lib__s__37695s01()],
+  [1,16,0,-23.5,0,-0.5,0,0.86603,0,1,0,-0.86603,0,-0.5, ldraw_lib__s__37695s01(realsolid)],
 // 1 16 0 -23.5 0 -0.5 0 -0.86603 0 1 0 0.86603 0 -0.5 s\37695s01.dat
-  [1,16,0,-23.5,0,-0.5,0,-0.86603,0,1,0,0.86603,0,-0.5, ldraw_lib__s__37695s01()],
+  [1,16,0,-23.5,0,-0.5,0,-0.86603,0,1,0,0.86603,0,-0.5, ldraw_lib__s__37695s01(realsolid)],
 // 2 24 3.838 -28.2506 -0.8146 3.8354 -28.3139 -0.8278
   [2,24,3.838,-28.2506,-0.8146,3.8354,-28.3139,-0.8278],
 // 2 24 2.3722 -31.0952 0.7026 2.3992 -31.0936 0.5875
@@ -288,5 +289,5 @@ function ldraw_lib__37695() = [
   [2,24,-0.8525,-29.4934,3.8305,-0.924,-29.1665,3.8163],
 ];
 module ldraw_lib__37695(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__37695(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__37695(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__37695(line=0.2);

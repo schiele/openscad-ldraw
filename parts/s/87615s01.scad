@@ -2,7 +2,8 @@ use <../../lib.scad>
 use <../../p/4-4cyli.scad>
 use <../../p/4-4cylse.scad>
 use <../../p/stud3a.scad>
-function ldraw_lib__s__87615s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__87615s01(realsolid=false) = [
 // 0 ~Plane Top  6 x 10 x  1 - Half
 // 0 Name: s\87615s01.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -445,11 +446,11 @@ function ldraw_lib__s__87615s01() = [
 // 4 16 16.25 24 -136.25 16.25 24 -103.75 20 24 -100 20 24 -140
   [4,16,16.25,24,-136.25,16.25,24,-103.75,20,24,-100,20,24,-140],
 // 1 16 50 18.67 20 4 0 0 0 -3.78876 0 0 0 4 4-4cylse.dat
-  [1,16,50,18.67,20,4,0,0,0,-3.78876,0,0,0,4, ldraw_lib__4_4cylse()],
+  [1,16,50,18.67,20,4,0,0,0,-3.78876,0,0,0,4, ldraw_lib__4_4cylse(realsolid)],
 // 1 16 50 20 20 -4 0 0 0 -1.33294 0 0 0 4 4-4cyli.dat
-  [1,16,50,20,20,-4,0,0,0,-1.33294,0,0,0,4, ldraw_lib__4_4cyli()],
+  [1,16,50,20,20,-4,0,0,0,-1.33294,0,0,0,4, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 50 20 20 1 0 0 0 -1 0 0 0 1 stud3a.dat
-  [1,16,50,20,20,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud3a()],
+  [1,16,50,20,20,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud3a(realsolid)],
 // 0 // Added lines/Condlines
 // 2 24 0 24 -140 20 24 -140
   [2,24,0,24,-140,20,24,-140],
@@ -1071,5 +1072,5 @@ function ldraw_lib__s__87615s01() = [
   [5,24,6.9,19.2,-158.46,6.25,24,-158.72,16.66,24,-152.91,0,19.2,-160],
 ];
 module ldraw_lib__s__87615s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__87615s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__87615s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__87615s01(line=0.2);

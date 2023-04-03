@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/3822s01.scad>
 use <../p/stud.scad>
-function ldraw_lib__3822p03() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3822p03(realsolid=false) = [
 // 0 Door  1 x  3 x  1 Left with Yellow/Red Stripe Pattern
 // 0 Name: 3822p03.dat
 // 0 Author: Thomas Burger [grapeape]
@@ -23,9 +24,9 @@ function ldraw_lib__3822p03() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3822s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3822s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3822s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 stud.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud(realsolid)],
 // 4 4 10 6.25 48.5 10 2.75 49 10 2.75 21.25 10 6.25 29
   [4,4,10,6.25,48.5,10,2.75,49,10,2.75,21.25,10,6.25,29],
 // 4 4 10 6.75 27.75 10 6.25 29 10 2.75 21.25 10 3.5 19.5
@@ -86,5 +87,5 @@ function ldraw_lib__3822p03() = [
   [4,16,10,3.5,19.5,10,2.75,21.25,10,2,18.25,10,3.25,16.5],
 ];
 module ldraw_lib__3822p03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3822p03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3822p03(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3822p03(line=0.2);

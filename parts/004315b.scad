@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/1-4disc.scad>
 use <../p/1-4ndis.scad>
-function ldraw_lib__004315b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__004315b(realsolid=false) = [
 // 0 Sticker  1.2 x  1 with White "1" on Red
 // 0 Name: 004315b.dat
 // 0 Author: Michael Heidemann [mikeheide]
@@ -20,9 +21,9 @@ function ldraw_lib__004315b() = [
 // 4 15 -2.5 -0.25 -9.5 2.25 -0.25 -9.5 2.25 -0.25 8.5 -2.5 -0.25 0.75
   [4,15,-2.5,-0.25,-9.5,2.25,-0.25,-9.5,2.25,-0.25,8.5,-2.5,-0.25,0.75],
 // 1 4 -6.25 -0.25 8.5 0 0 4.5 0 4.5 0 -4.5 0 0 1-4disc.dat
-  [1,4,-6.25,-0.25,8.5,0,0,4.5,0,4.5,0,-4.5,0,0, ldraw_lib__1_4disc()],
+  [1,4,-6.25,-0.25,8.5,0,0,4.5,0,4.5,0,-4.5,0,0, ldraw_lib__1_4disc(realsolid)],
 // 1 15 -6.25 -0.25 8.5 0 0 4.5 0 4.5 0 -4.5 0 0 1-4ndis.dat
-  [1,15,-6.25,-0.25,8.5,0,0,4.5,0,4.5,0,-4.5,0,0, ldraw_lib__1_4ndis()],
+  [1,15,-6.25,-0.25,8.5,0,0,4.5,0,4.5,0,-4.5,0,0, ldraw_lib__1_4ndis(realsolid)],
 // 4 15 -2.5 -0.25 0.75 -1.75 -0.25 4 -6.25 -0.25 4 -6.25 -0.25 0.75
   [4,15,-2.5,-0.25,0.75,-1.75,-0.25,4,-6.25,-0.25,4,-6.25,-0.25,0.75],
 // 3 15 2.25 -0.25 8.5 -1.75 -0.25 4 -2.5 -0.25 0.75
@@ -55,5 +56,5 @@ function ldraw_lib__004315b() = [
 // 0 //
 ];
 module ldraw_lib__004315b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__004315b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__004315b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__004315b(line=0.2);

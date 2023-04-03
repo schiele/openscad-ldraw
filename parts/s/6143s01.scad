@@ -7,7 +7,8 @@ use <../../p/axl3hol9.scad>
 use <6143s02.scad>
 use <../../p/stud4a.scad>
 use <../../p/stug15-2x2.scad>
-function ldraw_lib__s__6143s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__6143s01(realsolid=false) = [
 // 0 ~Brick  2 x  2 Round Reinforced without Outer Surface
 // 0 Name: s\6143s01.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -23,35 +24,35 @@ function ldraw_lib__s__6143s01() = [
 // 
 // 
 // 1 16 0 18 0 1 0 0 0 -1.5 0 0 0 1 stud4a.dat
-  [1,16,0,18,0,1,0,0,0,-1.5,0,0,0,1, ldraw_lib__stud4a()],
+  [1,16,0,18,0,1,0,0,0,-1.5,0,0,0,1, ldraw_lib__stud4a(realsolid)],
 // 
 // 1 16 0 18 0 1 0 0 0 1 0 0 0 1 axl3hol3.dat
-  [1,16,0,18,0,1,0,0,0,1,0,0,0,1, ldraw_lib__axl3hol3()],
+  [1,16,0,18,0,1,0,0,0,1,0,0,0,1, ldraw_lib__axl3hol3(realsolid)],
 // 1 16 0 18 0 1 0 0 0 1 0 0 0 1 axl3hol9.dat
-  [1,16,0,18,0,1,0,0,0,1,0,0,0,1, ldraw_lib__axl3hol9()],
+  [1,16,0,18,0,1,0,0,0,1,0,0,0,1, ldraw_lib__axl3hol9(realsolid)],
 // 1 16 0 18 0 1 0 0 0 -1 0 0 0 1 axl3ho10.dat
-  [1,16,0,18,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__axl3ho10()],
+  [1,16,0,18,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__axl3ho10(realsolid)],
 // 1 16 0 0 0 1 0 0 0 18 0 0 0 1 axl3hol8.dat
-  [1,16,0,0,0,1,0,0,0,18,0,0,0,1, ldraw_lib__axl3hol8()],
+  [1,16,0,0,0,1,0,0,0,18,0,0,0,1, ldraw_lib__axl3hol8(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 axl3hol2.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__axl3hol2()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__axl3hol2(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 axl3hol9.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__axl3hol9()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__axl3hol9(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 axl3ho10.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__axl3ho10()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__axl3ho10(realsolid)],
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\6143s02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6143s02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6143s02(realsolid)],
 // 1 16 0 0 0 0 0 1 0 1 0 -1 0 0 s\6143s02.dat
-  [1,16,0,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__s__6143s02()],
+  [1,16,0,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__s__6143s02(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 -1 s\6143s02.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__6143s02()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__6143s02(realsolid)],
 // 1 16 0 0 0 0 0 -1 0 1 0 1 0 0 s\6143s02.dat
-  [1,16,0,0,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__s__6143s02()],
+  [1,16,0,0,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__s__6143s02(realsolid)],
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 stug15-2x2.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug15_2x2()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug15_2x2(realsolid)],
 ];
 module ldraw_lib__s__6143s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__6143s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__6143s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__6143s01(line=0.2);

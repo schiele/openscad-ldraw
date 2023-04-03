@@ -4,7 +4,8 @@ use <../p/4-4disc.scad>
 use <../p/4-4edge.scad>
 use <../p/4-4ndis.scad>
 use <../p/connect2.scad>
-function ldraw_lib__40386() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__40386(realsolid=false) = [
 // 0 Animal Dinosaur Flipper with Pin
 // 0 Name: 40386.dat
 // 0 Author: Andreas Weissenburg [grubaluk]
@@ -21,11 +22,11 @@ function ldraw_lib__40386() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 0 -1 0 1 0 connect2.dat
-  [1,16,0,0,0,1,0,0,0,0,-1,0,1,0, ldraw_lib__connect2()],
+  [1,16,0,0,0,1,0,0,0,0,-1,0,1,0, ldraw_lib__connect2(realsolid)],
 // 1 16 0 0 0 6 0 0 0 0 -6 0 1 0 4-4edge.dat
-  [1,16,0,0,0,6,0,0,0,0,-6,0,1,0, ldraw_lib__4_4edge()],
+  [1,16,0,0,0,6,0,0,0,0,-6,0,1,0, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 0 0 4 0 0 0 0 -4 0 1 0 4-4edge.dat
-  [1,16,0,0,0,4,0,0,0,0,-4,0,1,0, ldraw_lib__4_4edge()],
+  [1,16,0,0,0,4,0,0,0,0,-4,0,1,0, ldraw_lib__4_4edge(realsolid)],
 // 2 24 -5.04 -8.97 0 5.04 -8.97 0
   [2,24,-5.04,-8.97,0,5.04,-8.97,0],
 // 4 16 -5.04 -8.97 0 5.04 -8.97 0 5.04 8.97 0 -5.04 8.97 0
@@ -235,17 +236,17 @@ function ldraw_lib__40386() = [
   [2,24,5.04,10.56,11.58,5.04,10.16,8.56],
 // 0 // COMMENT S3 HOLE
 // 1 16 0 -7.05 10.07 -1.51 0 0 0 -1 0 0 0 1.51 4-4edge.dat
-  [1,16,0,-7.05,10.07,-1.51,0,0,0,-1,0,0,0,1.51, ldraw_lib__4_4edge()],
+  [1,16,0,-7.05,10.07,-1.51,0,0,0,-1,0,0,0,1.51, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 -7.05 10.07 -1.51 0 0 0 1 0 0 0 1.51 4-4ndis.dat
-  [1,16,0,-7.05,10.07,-1.51,0,0,0,1,0,0,0,1.51, ldraw_lib__4_4ndis()],
+  [1,16,0,-7.05,10.07,-1.51,0,0,0,1,0,0,0,1.51, ldraw_lib__4_4ndis(realsolid)],
 // 1 16 0 0 10.07 -1.51 0 0 0 -1 0 0 0 1.51 4-4edge.dat
-  [1,16,0,0,10.07,-1.51,0,0,0,-1,0,0,0,1.51, ldraw_lib__4_4edge()],
+  [1,16,0,0,10.07,-1.51,0,0,0,-1,0,0,0,1.51, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 0 10.07 -1.51 0 0 0 1 0 0 0 1.51 4-4disc.dat
-  [1,16,0,0,10.07,-1.51,0,0,0,1,0,0,0,1.51, ldraw_lib__4_4disc()],
+  [1,16,0,0,10.07,-1.51,0,0,0,1,0,0,0,1.51, ldraw_lib__4_4disc(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 10.07 -1.51 0 0 0 -7.05 0 0 0 1.51 4-4cyli.dat
-  [1,16,0,0,10.07,-1.51,0,0,0,-7.05,0,0,0,1.51, ldraw_lib__4_4cyli()],
+  [1,16,0,0,10.07,-1.51,0,0,0,-7.05,0,0,0,1.51, ldraw_lib__4_4cyli(realsolid)],
 // 0 // COMMENT S3 SYM.PART RIGHT
 // 3 16 1.51 -7.05 8.56 1.51 -7.05 11.58 6.4 -5.04 8.56
   [3,16,1.51,-7.05,8.56,1.51,-7.05,11.58,6.4,-5.04,8.56],
@@ -1829,5 +1830,5 @@ function ldraw_lib__40386() = [
 // 0 //
 ];
 module ldraw_lib__40386(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__40386(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__40386(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__40386(line=0.2);

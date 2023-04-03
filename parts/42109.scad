@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/4-4cylc.scad>
 use <s/42109s01.scad>
-function ldraw_lib__42109() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__42109(realsolid=false) = [
 // 0 Minifig Head Goblin
 // 0 Name: 42109.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -22,13 +23,13 @@ function ldraw_lib__42109() = [
 // 0 // Downsampled with Meshlab
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\42109s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__42109s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__42109s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\42109s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__42109s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__42109s01(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -26 0 0 0 -6 0 26 0 6 0 0 4-4cylc.dat
-  [1,16,0,-26,0,0,0,-6,0,26,0,6,0,0, ldraw_lib__4_4cylc()],
+  [1,16,0,-26,0,0,0,-6,0,26,0,6,0,0, ldraw_lib__4_4cylc(realsolid)],
 // 5 24 0 -7.505 10.917 0 -6.866 9.865 -1.115 -7.521 10.957 1.115 -7.521 10.957
   [5,24,0,-7.505,10.917,0,-6.866,9.865,-1.115,-7.521,10.957,1.115,-7.521,10.957],
 // 5 24 0 -9.165 12.399 0 -7.505 10.917 -1.115 -7.521 10.957 1.115 -7.521 10.957
@@ -165,5 +166,5 @@ function ldraw_lib__42109() = [
   [5,24,0,-7.986,-13.437,0,-8.336,-13.447,-1.203,-8.32,-13.459,1.203,-8.32,-13.459],
 ];
 module ldraw_lib__42109(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__42109(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__42109(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__42109(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <32532.scad>
-function ldraw_lib__40345() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__40345(realsolid=false) = [
 // 0 =Technic Brick  6 x  8 with Open Center  4 x  6
 // 0 Name: 40345.dat
 // 0 Author: Chris Dee [cwdee]
@@ -21,9 +22,9 @@ function ldraw_lib__40345() = [
 // 0 // Alias of 32532
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 32532.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__32532()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__32532(realsolid)],
 // 0
 ];
 module ldraw_lib__40345(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__40345(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__40345(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__40345(line=0.2);

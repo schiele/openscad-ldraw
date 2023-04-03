@@ -4,7 +4,8 @@ use <../../p/box5.scad>
 use <../../p/stug-1x4.scad>
 use <../../p/stug-4x1.scad>
 use <../../p/stug4-1x5.scad>
-function ldraw_lib__s__6180s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__6180s01(realsolid=false) = [
 // 0 ~Tile  4 x  6 with Studs on Edges without Top Face
 // 0 Name: s\6180s01.dat
 // 0 Author: Orion Pobursky [OrionP]
@@ -20,11 +21,11 @@ function ldraw_lib__s__6180s01() = [
 // 
 // 
 // 1 16 0 4 -40 0 0 -60 -4 0 0 0 80 0 box3u2p.dat
-  [1,16,0,4,-40,0,0,-60,-4,0,0,0,80,0, ldraw_lib__box3u2p()],
+  [1,16,0,4,-40,0,0,-60,-4,0,0,0,80,0, ldraw_lib__box3u2p(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 8 0 56 0 0 0 -4 0 0 0 36 box5.dat
-  [1,16,0,8,0,56,0,0,0,-4,0,0,0,36, ldraw_lib__box5()],
+  [1,16,0,8,0,56,0,0,0,-4,0,0,0,36, ldraw_lib__box5(realsolid)],
 // 4 16 60 8 40 56 8 36 -56 8 36 -60 8 40
   [4,16,60,8,40,56,8,36,-56,8,36,-60,8,40],
 // 4 16 -60 8 -40 -56 8 -36 56 8 -36 60 8 -40
@@ -56,18 +57,18 @@ function ldraw_lib__s__6180s01() = [
   [3,16,60,0,-40,44,0,-40,60,8,-40],
 // 
 // 1 16 0 4 20 1 0 0 0 -1 0 0 0 1 stug4-1x5.dat
-  [1,16,0,4,20,1,0,0,0,-1,0,0,0,1, ldraw_lib__stug4_1x5()],
+  [1,16,0,4,20,1,0,0,0,-1,0,0,0,1, ldraw_lib__stug4_1x5(realsolid)],
 // 1 16 0 4 0 1 0 0 0 -1 0 0 0 1 stug4-1x5.dat
-  [1,16,0,4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stug4_1x5()],
+  [1,16,0,4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stug4_1x5(realsolid)],
 // 1 16 0 4 -20 1 0 0 0 -1 0 0 0 1 stug4-1x5.dat
-  [1,16,0,4,-20,1,0,0,0,-1,0,0,0,1, ldraw_lib__stug4_1x5()],
+  [1,16,0,4,-20,1,0,0,0,-1,0,0,0,1, ldraw_lib__stug4_1x5(realsolid)],
 // 1 16 0 0 30 -1 0 0 0 1 0 0 0 -1 stug-1x4.dat
-  [1,16,0,0,30,-1,0,0,0,1,0,0,0,-1, ldraw_lib__stug_1x4()],
+  [1,16,0,0,30,-1,0,0,0,1,0,0,0,-1, ldraw_lib__stug_1x4(realsolid)],
 // 1 16 50 0 0 -1 0 0 0 1 0 0 0 -1 stug-4x1.dat
-  [1,16,50,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__stug_4x1()],
+  [1,16,50,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__stug_4x1(realsolid)],
 // 1 16 -50 0 0 -1 0 0 0 1 0 0 0 -1 stug-4x1.dat
-  [1,16,-50,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__stug_4x1()],
+  [1,16,-50,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__stug_4x1(realsolid)],
 ];
 module ldraw_lib__s__6180s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__6180s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__6180s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__6180s01(line=0.2);

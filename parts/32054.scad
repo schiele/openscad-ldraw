@@ -8,7 +8,8 @@ use <../p/4-4ring8.scad>
 use <../p/bush0.scad>
 use <../p/confric6.scad>
 use <../p/confric9.scad>
-function ldraw_lib__32054() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__32054(realsolid=false) = [
 // 0 Technic Pin Long with Stop Bush
 // 0 Name: 32054.dat
 // 0 Author: Guy Vivan [guyvivan]
@@ -23,39 +24,39 @@ function ldraw_lib__32054() = [
 // 
 // 
 // 1 16 -10 0 0 0 -1 0 0 0 1 -1 0 0 confric9.dat
-  [1,16,-10,0,0,0,-1,0,0,0,1,-1,0,0, ldraw_lib__confric9()],
+  [1,16,-10,0,0,0,-1,0,0,0,1,-1,0,0, ldraw_lib__confric9(realsolid)],
 // 1 16 10 0 0 0 -1 0 0 0 1 -1 0 0 confric6.dat
-  [1,16,10,0,0,0,-1,0,0,0,1,-1,0,0, ldraw_lib__confric6()],
+  [1,16,10,0,0,0,-1,0,0,0,1,-1,0,0, ldraw_lib__confric6(realsolid)],
 // 1 16 -20 0 0 0 0 1 1 0 0 0 1 0 bush0.dat
-  [1,16,-20,0,0,0,0,1,1,0,0,0,1,0, ldraw_lib__bush0()],
+  [1,16,-20,0,0,0,0,1,1,0,0,0,1,0, ldraw_lib__bush0(realsolid)],
 // 1 16 -30 0 0 0 1 0 0 0 9 9 0 0 4-4edge.dat
-  [1,16,-30,0,0,0,1,0,0,0,9,9,0,0, ldraw_lib__4_4edge()],
+  [1,16,-30,0,0,0,1,0,0,0,9,9,0,0, ldraw_lib__4_4edge(realsolid)],
 // 1 16 -27 0 0 0 1 0 0 0 9 9 0 0 4-4edge.dat
-  [1,16,-27,0,0,0,1,0,0,0,9,9,0,0, ldraw_lib__4_4edge()],
+  [1,16,-27,0,0,0,1,0,0,0,9,9,0,0, ldraw_lib__4_4edge(realsolid)],
 // 1 16 -30 0 0 0 3 0 0 0 9 9 0 0 4-4cyli.dat
-  [1,16,-30,0,0,0,3,0,0,0,9,9,0,0, ldraw_lib__4_4cyli()],
+  [1,16,-30,0,0,0,3,0,0,0,9,9,0,0, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 -30 0 0 0 1 0 0 0 1 1 0 0 4-4ring8.dat
-  [1,16,-30,0,0,0,1,0,0,0,1,1,0,0, ldraw_lib__4_4ring8()],
+  [1,16,-30,0,0,0,1,0,0,0,1,1,0,0, ldraw_lib__4_4ring8(realsolid)],
 // 1 16 -30 0 0 0 1 0 0 0 2 2 0 0 4-4ring3.dat
-  [1,16,-30,0,0,0,1,0,0,0,2,2,0,0, ldraw_lib__4_4ring3()],
+  [1,16,-30,0,0,0,1,0,0,0,2,2,0,0, ldraw_lib__4_4ring3(realsolid)],
 // 1 16 -27 0 0 0 0.5 0 0 0 1 1 0 0 4-4con8.dat
-  [1,16,-27,0,0,0,0.5,0,0,0,1,1,0,0, ldraw_lib__4_4con8()],
+  [1,16,-27,0,0,0,0.5,0,0,0,1,1,0,0, ldraw_lib__4_4con8(realsolid)],
 // 1 16 -26.5 0 0 0 0.5 0 0 0 1 1 0 0 4-4con7.dat
-  [1,16,-26.5,0,0,0,0.5,0,0,0,1,1,0,0, ldraw_lib__4_4con7()],
+  [1,16,-26.5,0,0,0,0.5,0,0,0,1,1,0,0, ldraw_lib__4_4con7(realsolid)],
 // 1 16 -10 0 0 0 1 0 0 0 8 -8 0 0 4-4edge.dat
-  [1,16,-10,0,0,0,1,0,0,0,8,-8,0,0, ldraw_lib__4_4edge()],
+  [1,16,-10,0,0,0,1,0,0,0,8,-8,0,0, ldraw_lib__4_4edge(realsolid)],
 // 1 16 -10 0 0 0 1 0 0 0 9 -9 0 0 4-4edge.dat
-  [1,16,-10,0,0,0,1,0,0,0,9,-9,0,0, ldraw_lib__4_4edge()],
+  [1,16,-10,0,0,0,1,0,0,0,9,-9,0,0, ldraw_lib__4_4edge(realsolid)],
 // 1 16 -13 0 0 0 1 0 0 0 9 -9 0 0 4-4edge.dat
-  [1,16,-13,0,0,0,1,0,0,0,9,-9,0,0, ldraw_lib__4_4edge()],
+  [1,16,-13,0,0,0,1,0,0,0,9,-9,0,0, ldraw_lib__4_4edge(realsolid)],
 // 1 16 -10 0 0 0 -3 0 0 0 9 -9 0 0 4-4cyli.dat
-  [1,16,-10,0,0,0,-3,0,0,0,9,-9,0,0, ldraw_lib__4_4cyli()],
+  [1,16,-10,0,0,0,-3,0,0,0,9,-9,0,0, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 -10 0 0 0 -1 0 0 0 1 1 0 0 4-4ring8.dat
-  [1,16,-10,0,0,0,-1,0,0,0,1,1,0,0, ldraw_lib__4_4ring8()],
+  [1,16,-10,0,0,0,-1,0,0,0,1,1,0,0, ldraw_lib__4_4ring8(realsolid)],
 // 1 16 -13 0 0 0 -0.5 0 0 0 1 -1 0 0 4-4con8.dat
-  [1,16,-13,0,0,0,-0.5,0,0,0,1,-1,0,0, ldraw_lib__4_4con8()],
+  [1,16,-13,0,0,0,-0.5,0,0,0,1,-1,0,0, ldraw_lib__4_4con8(realsolid)],
 // 1 16 -13.5 0 0 0 -0.5 0 0 0 1 -1 0 0 4-4con7.dat
-  [1,16,-13.5,0,0,0,-0.5,0,0,0,1,-1,0,0, ldraw_lib__4_4con7()],
+  [1,16,-13.5,0,0,0,-0.5,0,0,0,1,-1,0,0, ldraw_lib__4_4con7(realsolid)],
 // 4 16 -10 -5.602 2 -10 -5.801 1 -10 -3.801 1 -10 -3.602 2
   [4,16,-10,-5.602,2,-10,-5.801,1,-10,-3.801,1,-10,-3.602,2],
 // 4 16 -10 -5.801 -1 -10 -5.602 -2 -10 -3.602 -2 -10 -3.801 -1
@@ -91,5 +92,5 @@ function ldraw_lib__32054() = [
 // 0
 ];
 module ldraw_lib__32054(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__32054(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__32054(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__32054(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3622s01.scad>
-function ldraw_lib__3622p0a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3622p0a(realsolid=false) = [
 // 0 Brick  1 x  3 with Cat Face, Wide Round Eyes and Small Lopsided Grin Pattern
 // 0 Name: 3622p0a.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -19,7 +20,7 @@ function ldraw_lib__3622p0a() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3622s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3622s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3622s01(realsolid)],
 // 
 // 0 // White
 // 4 15 -23.55 16.6 -10 -22.7 16.1 -10 -22.3989 15.6989 -10 -23.0391 14.9688 -10
@@ -1292,5 +1293,5 @@ function ldraw_lib__3622p0a() = [
   [3,16,8.9744,6.3908,-10,7.9851,7.6318,-10,8.4639,7.7028,-10],
 ];
 module ldraw_lib__3622p0a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3622p0a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3622p0a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3622p0a(line=0.2);

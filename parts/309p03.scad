@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/48/1-4ring2.scad>
 use <s/309p03a.scad>
-function ldraw_lib__309p03() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__309p03(realsolid=false) = [
 // 0 Baseplate 32 x 32 Road 7-Stud Refuge with White Lines Pattern
 // 0 Name: 309p03.dat
 // 0 Author: Peter Watts [FrozenPea]
@@ -22,7 +23,7 @@ function ldraw_lib__309p03() = [
 // 
 // 
 // 1 16 0 0 0 0 0 1 0 1 0 -1 0 0 s\309p03a.dat
-  [1,16,0,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__s__309p03a()],
+  [1,16,0,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__s__309p03a(realsolid)],
 // 4 15 172 0 -38 162 0 -38 162 0 -42 172 0 -42
   [4,15,172,0,-38,162,0,-38,162,0,-42,172,0,-42],
 // 4 15 142 0 -8 -142 0 -8 -142 0 -18 142 0 -18
@@ -32,15 +33,15 @@ function ldraw_lib__309p03() = [
 // 4 15 -172 0 -42 -162 0 -42 -162 0 -38 -172 0 -38
   [4,15,-172,0,-42,-162,0,-42,-162,0,-38,-172,0,-38],
 // 1 15 142 0 -38 10 0 0 0 1 0 0 0 10 48\1-4ring2.dat
-  [1,15,142,0,-38,10,0,0,0,1,0,0,0,10, ldraw_lib__48__1_4ring2()],
+  [1,15,142,0,-38,10,0,0,0,1,0,0,0,10, ldraw_lib__48__1_4ring2(realsolid)],
 // 1 15 142 0 -42 0 0 10 0 1 0 -10 0 0 48\1-4ring2.dat
-  [1,15,142,0,-42,0,0,10,0,1,0,-10,0,0, ldraw_lib__48__1_4ring2()],
+  [1,15,142,0,-42,0,0,10,0,1,0,-10,0,0, ldraw_lib__48__1_4ring2(realsolid)],
 // 1 15 -142 0 -42 -10 0 0 0 1 0 0 0 -10 48\1-4ring2.dat
-  [1,15,-142,0,-42,-10,0,0,0,1,0,0,0,-10, ldraw_lib__48__1_4ring2()],
+  [1,15,-142,0,-42,-10,0,0,0,1,0,0,0,-10, ldraw_lib__48__1_4ring2(realsolid)],
 // 1 15 -142 0 -38 0 0 -10 0 1 0 10 0 0 48\1-4ring2.dat
-  [1,15,-142,0,-38,0,0,-10,0,1,0,10,0,0, ldraw_lib__48__1_4ring2()],
+  [1,15,-142,0,-38,0,0,-10,0,1,0,10,0,0, ldraw_lib__48__1_4ring2(realsolid)],
 // 0
 ];
 module ldraw_lib__309p03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__309p03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__309p03(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__309p03(line=0.2);

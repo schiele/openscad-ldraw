@@ -5,7 +5,8 @@ use <../p/4-4disc.scad>
 use <../p/4-4edge.scad>
 use <../p/4-4ring4.scad>
 use <../p/stud4.scad>
-function ldraw_lib__89918() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__89918(realsolid=false) = [
 // 0 Minifig Helmet Underwater Atlantis Portal Emperor
 // 0 Name: 89918.dat
 // 0 Author: Willy Tschager [Holly-Wood]
@@ -1100,21 +1101,21 @@ function ldraw_lib__89918() = [
 // 
 // 0 // Inside
 // 1 16 0 -4 0 -6 0 0 0 -1 0 0 0 6 4-4disc.dat
-  [1,16,0,-4,0,-6,0,0,0,-1,0,0,0,6, ldraw_lib__4_4disc()],
+  [1,16,0,-4,0,-6,0,0,0,-1,0,0,0,6, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 -4 0 1 0 0 0 -1 0 0 0 1 stud4.dat
-  [1,16,0,-4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4()],
+  [1,16,0,-4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4(realsolid)],
 // 1 16 0 -4 0 -2 0 0 0 -1 0 0 0 2 4-4ring4.dat
-  [1,16,0,-4,0,-2,0,0,0,-1,0,0,0,2, ldraw_lib__4_4ring4()],
+  [1,16,0,-4,0,-2,0,0,0,-1,0,0,0,2, ldraw_lib__4_4ring4(realsolid)],
 // 1 16 0 -4 0 10 0 0 0 1 0 0 0 10 4-4edge.dat
-  [1,16,0,-4,0,10,0,0,0,1,0,0,0,10, ldraw_lib__4_4edge()],
+  [1,16,0,-4,0,10,0,0,0,1,0,0,0,10, ldraw_lib__4_4edge(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -.5 0 -2 0 0 0 -3.5 0 0 0 2 4-4con5.dat
-  [1,16,0,-.5,0,-2,0,0,0,-3.5,0,0,0,2, ldraw_lib__4_4con5()],
+  [1,16,0,-.5,0,-2,0,0,0,-3.5,0,0,0,2, ldraw_lib__4_4con5(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 4 0 1 0 0 0 -4.5 0 0 0 1 4-4con12.dat
-  [1,16,0,4,0,1,0,0,0,-4.5,0,0,0,1, ldraw_lib__4_4con12()],
+  [1,16,0,4,0,1,0,0,0,-4.5,0,0,0,1, ldraw_lib__4_4con12(realsolid)],
 // 
 // 4 16 -12.011 4 4.975 -13 4 0 -13 21 0 -12.011 21.047 4.975
   [4,16,-12.011,4,4.975,-13,4,0,-13,21,0,-12.011,21.047,4.975],
@@ -6212,5 +6213,5 @@ function ldraw_lib__89918() = [
 // 
 ];
 module ldraw_lib__89918(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__89918(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__89918(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__89918(line=0.2);

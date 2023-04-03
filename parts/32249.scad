@@ -11,7 +11,8 @@ use <../p/npeghol4.scad>
 use <../p/npeghole.scad>
 use <../p/peghole.scad>
 use <../p/rect2p.scad>
-function ldraw_lib__32249() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__32249(realsolid=false) = [
 // 0 Technic Beam  3 x  3 x  0.5 Liftarm Bent 90 Quarter Circle
 // 0 Name: 32249.dat
 // 0 Author: Ishino Keiichiro
@@ -32,83 +33,83 @@ function ldraw_lib__32249() = [
 // 
 // 
 // 1 16 0 -5 0 -3 0 0 0 1 0 0 0 -3 2-4ring2.dat
-  [1,16,0,-5,0,-3,0,0,0,1,0,0,0,-3, ldraw_lib__2_4ring2()],
+  [1,16,0,-5,0,-3,0,0,0,1,0,0,0,-3, ldraw_lib__2_4ring2(realsolid)],
 // 1 16 0 5 0 3 0 0 0 -1 0 0 0 -3 2-4ring2.dat
-  [1,16,0,5,0,3,0,0,0,-1,0,0,0,-3, ldraw_lib__2_4ring2()],
+  [1,16,0,5,0,3,0,0,0,-1,0,0,0,-3, ldraw_lib__2_4ring2(realsolid)],
 // 1 16 0 -5 40 3 0 0 0 1 0 0 0 3 2-4ring2.dat
-  [1,16,0,-5,40,3,0,0,0,1,0,0,0,3, ldraw_lib__2_4ring2()],
+  [1,16,0,-5,40,3,0,0,0,1,0,0,0,3, ldraw_lib__2_4ring2(realsolid)],
 // 1 16 0 5 40 -3 0 0 0 -1 0 0 0 3 2-4ring2.dat
-  [1,16,0,5,40,-3,0,0,0,-1,0,0,0,3, ldraw_lib__2_4ring2()],
+  [1,16,0,5,40,-3,0,0,0,-1,0,0,0,3, ldraw_lib__2_4ring2(realsolid)],
 // 1 16 40 -5 0 0 0 3 0 1 0 -3 0 0 2-4ring2.dat
-  [1,16,40,-5,0,0,0,3,0,1,0,-3,0,0, ldraw_lib__2_4ring2()],
+  [1,16,40,-5,0,0,0,3,0,1,0,-3,0,0, ldraw_lib__2_4ring2(realsolid)],
 // 1 16 40 5 0 0 0 3 0 -1 0 3 0 0 2-4ring2.dat
-  [1,16,40,5,0,0,0,3,0,-1,0,3,0,0, ldraw_lib__2_4ring2()],
+  [1,16,40,5,0,0,0,3,0,-1,0,3,0,0, ldraw_lib__2_4ring2(realsolid)],
 // 1 16 10 -5 0 0 0 -1 0 3 0 1 0 0 npeghole.dat
-  [1,16,10,-5,0,0,0,-1,0,3,0,1,0,0, ldraw_lib__npeghole()],
+  [1,16,10,-5,0,0,0,-1,0,3,0,1,0,0, ldraw_lib__npeghole(realsolid)],
 // 1 16 10 5 0 0 0 -1 0 -3 0 1 0 0 npeghole.dat
-  [1,16,10,5,0,0,0,-1,0,-3,0,1,0,0, ldraw_lib__npeghole()],
+  [1,16,10,5,0,0,0,-1,0,-3,0,1,0,0, ldraw_lib__npeghole(realsolid)],
 // 1 16 0 -5 0 -9 0 0 0 1 0 0 0 -9 1-4edge.dat
-  [1,16,0,-5,0,-9,0,0,0,1,0,0,0,-9, ldraw_lib__1_4edge()],
+  [1,16,0,-5,0,-9,0,0,0,1,0,0,0,-9, ldraw_lib__1_4edge(realsolid)],
 // 1 16 0 5 0 -9 0 0 0 1 0 0 0 -9 1-4edge.dat
-  [1,16,0,5,0,-9,0,0,0,1,0,0,0,-9, ldraw_lib__1_4edge()],
+  [1,16,0,5,0,-9,0,0,0,1,0,0,0,-9, ldraw_lib__1_4edge(realsolid)],
 // 1 16 0 -5 0 -9 0 0 0 10 0 0 0 -9 1-4cyli.dat
-  [1,16,0,-5,0,-9,0,0,0,10,0,0,0,-9, ldraw_lib__1_4cyli()],
+  [1,16,0,-5,0,-9,0,0,0,10,0,0,0,-9, ldraw_lib__1_4cyli(realsolid)],
 // 1 16 0 -5 0 1 0 0 0 10 0 0 0 1 axlehol4.dat
-  [1,16,0,-5,0,1,0,0,0,10,0,0,0,1, ldraw_lib__axlehol4()],
+  [1,16,0,-5,0,1,0,0,0,10,0,0,0,1, ldraw_lib__axlehol4(realsolid)],
 // 1 16 0 -5 10 1 0 0 0 10 0 0 0 1 npeghol3.dat
-  [1,16,0,-5,10,1,0,0,0,10,0,0,0,1, ldraw_lib__npeghol3()],
+  [1,16,0,-5,10,1,0,0,0,10,0,0,0,1, ldraw_lib__npeghol3(realsolid)],
 // 1 16 0 -5 40 0 0 -9 0 1 0 9 0 0 1-4edge.dat
-  [1,16,0,-5,40,0,0,-9,0,1,0,9,0,0, ldraw_lib__1_4edge()],
+  [1,16,0,-5,40,0,0,-9,0,1,0,9,0,0, ldraw_lib__1_4edge(realsolid)],
 // 1 16 0 5 40 0 0 -9 0 1 0 9 0 0 1-4edge.dat
-  [1,16,0,5,40,0,0,-9,0,1,0,9,0,0, ldraw_lib__1_4edge()],
+  [1,16,0,5,40,0,0,-9,0,1,0,9,0,0, ldraw_lib__1_4edge(realsolid)],
 // 1 16 0 -5 40 0 0 -9 0 10 0 9 0 0 1-4cyli.dat
-  [1,16,0,-5,40,0,0,-9,0,10,0,9,0,0, ldraw_lib__1_4cyli()],
+  [1,16,0,-5,40,0,0,-9,0,10,0,9,0,0, ldraw_lib__1_4cyli(realsolid)],
 // 1 16 0 -5 40 1 0 0 0 10 0 0 0 -1 axlehol4.dat
-  [1,16,0,-5,40,1,0,0,0,10,0,0,0,-1, ldraw_lib__axlehol4()],
+  [1,16,0,-5,40,1,0,0,0,10,0,0,0,-1, ldraw_lib__axlehol4(realsolid)],
 // 1 16 0 -5 30 1 0 0 0 10 0 0 0 -1 npeghol4.dat
-  [1,16,0,-5,30,1,0,0,0,10,0,0,0,-1, ldraw_lib__npeghol4()],
+  [1,16,0,-5,30,1,0,0,0,10,0,0,0,-1, ldraw_lib__npeghol4(realsolid)],
 // 1 16 40 -5 0 9 0 0 0 1 0 0 0 -9 1-4edge.dat
-  [1,16,40,-5,0,9,0,0,0,1,0,0,0,-9, ldraw_lib__1_4edge()],
+  [1,16,40,-5,0,9,0,0,0,1,0,0,0,-9, ldraw_lib__1_4edge(realsolid)],
 // 1 16 40 5 0 9 0 0 0 1 0 0 0 -9 1-4edge.dat
-  [1,16,40,5,0,9,0,0,0,1,0,0,0,-9, ldraw_lib__1_4edge()],
+  [1,16,40,5,0,9,0,0,0,1,0,0,0,-9, ldraw_lib__1_4edge(realsolid)],
 // 1 16 40 -5 0 9 0 0 0 10 0 0 0 -9 1-4cyli.dat
-  [1,16,40,-5,0,9,0,0,0,10,0,0,0,-9, ldraw_lib__1_4cyli()],
+  [1,16,40,-5,0,9,0,0,0,10,0,0,0,-9, ldraw_lib__1_4cyli(realsolid)],
 // 1 16 40 -5 0 0 0 -1 0 10 0 1 0 0 axlehol4.dat
-  [1,16,40,-5,0,0,0,-1,0,10,0,1,0,0, ldraw_lib__axlehol4()],
+  [1,16,40,-5,0,0,0,-1,0,10,0,1,0,0, ldraw_lib__axlehol4(realsolid)],
 // 1 16 30 -5 0 0 0 -1 0 10 0 1 0 0 npeghol4.dat
-  [1,16,30,-5,0,0,0,-1,0,10,0,1,0,0, ldraw_lib__npeghol4()],
+  [1,16,30,-5,0,0,0,-1,0,10,0,1,0,0, ldraw_lib__npeghol4(realsolid)],
 // 1 16 20 0 -9 -20 0 0 0 0 5 0 1 0 rect2p.dat
-  [1,16,20,0,-9,-20,0,0,0,0,5,0,1,0, ldraw_lib__rect2p()],
+  [1,16,20,0,-9,-20,0,0,0,0,5,0,1,0, ldraw_lib__rect2p(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 24.5 0 24.5 0 0 -15.5 5 0 0 0 -15.5 0 box2-5.dat
-  [1,16,24.5,0,24.5,0,0,-15.5,5,0,0,0,-15.5,0, ldraw_lib__box2_5()],
+  [1,16,24.5,0,24.5,0,0,-15.5,5,0,0,0,-15.5,0, ldraw_lib__box2_5(realsolid)],
 // 1 16 -9 0 20 0 1 0 0 0 5 20 0 0 rect2p.dat
-  [1,16,-9,0,20,0,1,0,0,0,5,20,0,0, ldraw_lib__rect2p()],
+  [1,16,-9,0,20,0,1,0,0,0,5,20,0,0, ldraw_lib__rect2p(realsolid)],
 // 1 16 0 -5 20 1 0 0 0 1 0 0 0 1 peghole.dat
-  [1,16,0,-5,20,1,0,0,0,1,0,0,0,1, ldraw_lib__peghole()],
+  [1,16,0,-5,20,1,0,0,0,1,0,0,0,1, ldraw_lib__peghole(realsolid)],
 // 1 16 0 5 20 1 0 0 0 -1 0 0 0 1 peghole.dat
-  [1,16,0,5,20,1,0,0,0,-1,0,0,0,1, ldraw_lib__peghole()],
+  [1,16,0,5,20,1,0,0,0,-1,0,0,0,1, ldraw_lib__peghole(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -3 20 6 0 0 0 6 0 0 0 6 4-4cyli.dat
-  [1,16,0,-3,20,6,0,0,0,6,0,0,0,6, ldraw_lib__4_4cyli()],
+  [1,16,0,-3,20,6,0,0,0,6,0,0,0,6, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 -5 20 1 0 0 0 1 0 0 0 1 4-4ring8.dat
-  [1,16,0,-5,20,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4ring8()],
+  [1,16,0,-5,20,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4ring8(realsolid)],
 // 1 16 0 5 20 1 0 0 0 -1 0 0 0 1 4-4ring8.dat
-  [1,16,0,5,20,1,0,0,0,-1,0,0,0,1, ldraw_lib__4_4ring8()],
+  [1,16,0,5,20,1,0,0,0,-1,0,0,0,1, ldraw_lib__4_4ring8(realsolid)],
 // 1 16 20 -5 0 1 0 0 0 1 0 0 0 1 peghole.dat
-  [1,16,20,-5,0,1,0,0,0,1,0,0,0,1, ldraw_lib__peghole()],
+  [1,16,20,-5,0,1,0,0,0,1,0,0,0,1, ldraw_lib__peghole(realsolid)],
 // 1 16 20 5 0 1 0 0 0 -1 0 0 0 1 peghole.dat
-  [1,16,20,5,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__peghole()],
+  [1,16,20,5,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__peghole(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 20 -3 0 6 0 0 0 6 0 0 0 6 4-4cyli.dat
-  [1,16,20,-3,0,6,0,0,0,6,0,0,0,6, ldraw_lib__4_4cyli()],
+  [1,16,20,-3,0,6,0,0,0,6,0,0,0,6, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 20 -5 0 1 0 0 0 1 0 0 0 1 4-4ring8.dat
-  [1,16,20,-5,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4ring8()],
+  [1,16,20,-5,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4ring8(realsolid)],
 // 1 16 20 5 0 1 0 0 0 -1 0 0 0 1 4-4ring8.dat
-  [1,16,20,5,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__4_4ring8()],
+  [1,16,20,5,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__4_4ring8(realsolid)],
 // 4 16 9 -5 20 6.36 -5 13.64 6.36 -5 6.36 9 -5 9
   [4,16,9,-5,20,6.36,-5,13.64,6.36,-5,6.36,9,-5,9],
 // 4 16 -9 -5 0 -6.36 -5 6.36 -6.36 -5 13.64 -9 -5 20
@@ -1205,5 +1206,5 @@ function ldraw_lib__32249() = [
   [3,16,8.63,5,41.84,9.97,5,41.54,9,5,40],
 ];
 module ldraw_lib__32249(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__32249(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__32249(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__32249(line=0.2);

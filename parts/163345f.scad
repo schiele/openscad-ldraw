@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/box5-12.scad>
 use <../p/logo-nasa-bg.scad>
 use <../p/logo-nasa.scad>
-function ldraw_lib__163345f() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__163345f(realsolid=false) = [
 // 0 Sticker  0.7 x  1.7 with Red NASA Worm Logo
 // 0 Name: 163345f.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -20,15 +21,15 @@ function ldraw_lib__163345f() = [
 // 
 // 
 // 1 16 0 -0.25 0 17 0 0 0 0.25 0 0 0 7 box5-12.dat
-  [1,16,0,-0.25,0,17,0,0,0,0.25,0,0,0,7, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,17,0,0,0,0.25,0,0,0,7, ldraw_lib__box5_12(realsolid)],
 // 0 BFC NOCLIP
   [0,"BFC","NOCLIP"],
 // 1 4 0 -0.25 0 0.4 0 0 0 1 0 0 0 0.4 logo-nasa.dat
-  [1,4,0,-0.25,0,0.4,0,0,0,1,0,0,0,0.4, ldraw_lib__logo_nasa()],
+  [1,4,0,-0.25,0,0.4,0,0,0,1,0,0,0,0.4, ldraw_lib__logo_nasa(realsolid)],
 // 0 BFC CLIP
   [0,"BFC","CLIP"],
 // 1 16 0 -0.25 0 0.4 0 0 0 1 0 0 0 0.4 logo-nasa-bg.dat
-  [1,16,0,-0.25,0,0.4,0,0,0,1,0,0,0,0.4, ldraw_lib__logo_nasa_bg()],
+  [1,16,0,-0.25,0,0.4,0,0,0,1,0,0,0,0.4, ldraw_lib__logo_nasa_bg(realsolid)],
 // 4 16 17 -0.25 7 -17 -0.25 7 -16 -0.25 4.8 16 -0.25 4.8
   [4,16,17,-0.25,7,-17,-0.25,7,-16,-0.25,4.8,16,-0.25,4.8],
 // 4 16 17 -0.25 -7 17 -0.25 7 16 -0.25 4.8 16 -0.25 -4.8
@@ -39,5 +40,5 @@ function ldraw_lib__163345f() = [
   [4,16,-17,-0.25,7,-17,-0.25,-7,-16,-0.25,-4.8,-16,-0.25,4.8],
 ];
 module ldraw_lib__163345f(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__163345f(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__163345f(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__163345f(line=0.2);

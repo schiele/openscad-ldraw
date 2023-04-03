@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__973paws01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__973paws01(realsolid=false) = [
 // 0 ~Minifig Torso with Armour Vest, Silver Wolf Head and Blue Round Jewel Pattern Half
 // 0 Name: s\973paws01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -1448,5 +1449,5 @@ function ldraw_lib__s__973paws01() = [
   [3,16,19,29,10,15.9,15.7,10,14.345,2,10],
 ];
 module ldraw_lib__s__973paws01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__973paws01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__973paws01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__973paws01(line=0.2);

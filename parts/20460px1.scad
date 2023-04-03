@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/20460s01.scad>
 use <s/20460s03.scad>
-function ldraw_lib__20460px1() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__20460px1(realsolid=false) = [
 // 0 Minifig Leg Left with Dark Red Lower Leg and Triangular Notch on Side Pattern
 // 0 Name: 20460px1.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -20,9 +21,9 @@ function ldraw_lib__20460px1() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\20460s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__20460s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__20460s01(realsolid)],
 // 1 320 0 0 0 1 0 0 0 1 0 0 0 1 s\20460s03.dat
-  [1,320,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__20460s03()],
+  [1,320,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__20460s03(realsolid)],
 // 0 // Toes
 // 4 320 19.5 28 -10 19.23 20 -10 1.5 20 -10 1.5 28 -10
   [4,320,19.5,28,-10,19.23,20,-10,1.5,20,-10,1.5,28,-10],
@@ -44,5 +45,5 @@ function ldraw_lib__20460px1() = [
   [3,320,18.97034,12.4,4,19.059,15,1.75,18.9685,12.3998,9.3036],
 ];
 module ldraw_lib__20460px1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__20460px1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__20460px1(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__20460px1(line=0.2);

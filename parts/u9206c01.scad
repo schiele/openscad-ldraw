@@ -3,7 +3,8 @@ use <u9163.scad>
 use <u9167.scad>
 use <u9206.scad>
 use <u9207.scad>
-function ldraw_lib__u9206c01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__u9206c01(realsolid=false) = [
 // 0 Fabuland Tricycle, 2 Front Wheels, Grey Wheels, Black Handlebars
 // 0 Name: u9206c01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -20,16 +21,16 @@ function ldraw_lib__u9206c01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 u9206.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9206()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9206(realsolid)],
 // 1 7 0 -5 52 0 0 1 0 1 0 -1 0 0 u9163.dat
-  [1,7,0,-5,52,0,0,1,0,1,0,-1,0,0, ldraw_lib__u9163()],
+  [1,7,0,-5,52,0,0,1,0,1,0,-1,0,0, ldraw_lib__u9163(realsolid)],
 // 1 7 35 -5 -63 0 0 1 0 1 0 -1 0 0 u9167.dat
-  [1,7,35,-5,-63,0,0,1,0,1,0,-1,0,0, ldraw_lib__u9167()],
+  [1,7,35,-5,-63,0,0,1,0,1,0,-1,0,0, ldraw_lib__u9167(realsolid)],
 // 1 7 -35 -5 -63 0 0 1 0 1 0 -1 0 0 u9167.dat
-  [1,7,-35,-5,-63,0,0,1,0,1,0,-1,0,0, ldraw_lib__u9167()],
+  [1,7,-35,-5,-63,0,0,1,0,1,0,-1,0,0, ldraw_lib__u9167(realsolid)],
 // 1 0 0 -38 -33 1 0 0 0 1 0 0 0 1 u9207.dat
-  [1,0,0,-38,-33,1,0,0,0,1,0,0,0,1, ldraw_lib__u9207()],
+  [1,0,0,-38,-33,1,0,0,0,1,0,0,0,1, ldraw_lib__u9207(realsolid)],
 ];
 module ldraw_lib__u9206c01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__u9206c01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__u9206c01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__u9206c01(line=0.2);

@@ -2,7 +2,8 @@ use <../../lib.scad>
 use <../../p/2-4ering.scad>
 use <../../p/48/2-4chrd.scad>
 use <3004s60.scad>
-function ldraw_lib__s__u454p01s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__u454p01s01(realsolid=false) = [
 // 0 ~Signpost Slanted Cantilever with Suspended Sign with Shell Logo Pattern - Side
 // 0 Name: s\u454p01s01.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -17,15 +18,15 @@ function ldraw_lib__s__u454p01s01() = [
 // 
 // 
 // 1 16 0 -14 0 0 -1 0 0 0 -3 18 0 0 2-4ering.dat
-  [1,16,0,-14,0,0,-1,0,0,0,-3,18,0,0, ldraw_lib__2_4ering()],
+  [1,16,0,-14,0,0,-1,0,0,0,-3,18,0,0, ldraw_lib__2_4ering(realsolid)],
 // 1 16 0 14 0 0 -1 0 0 0 3 -18 0 0 2-4ering.dat
-  [1,16,0,14,0,0,-1,0,0,0,3,-18,0,0, ldraw_lib__2_4ering()],
+  [1,16,0,14,0,0,-1,0,0,0,3,-18,0,0, ldraw_lib__2_4ering(realsolid)],
 // 1 4 0 0 0 0 0 -1 0 1.3 0 1.3 0 0 s\3004s60.dat
-  [1,4,0,0,0,0,0,-1,0,1.3,0,1.3,0,0, ldraw_lib__s__3004s60()],
+  [1,4,0,0,0,0,0,-1,0,1.3,0,1.3,0,0, ldraw_lib__s__3004s60(realsolid)],
 // 1 4 0 -14 0 0 -1 0 0 0 -2 16 0 0 48\2-4chrd.dat
-  [1,4,0,-14,0,0,-1,0,0,0,-2,16,0,0, ldraw_lib__48__2_4chrd()],
+  [1,4,0,-14,0,0,-1,0,0,0,-2,16,0,0, ldraw_lib__48__2_4chrd(realsolid)],
 // 1 4 0 14 0 0 -1 0 0 0 2 -16 0 0 48\2-4chrd.dat
-  [1,4,0,14,0,0,-1,0,0,0,2,-16,0,0, ldraw_lib__48__2_4chrd()],
+  [1,4,0,14,0,0,-1,0,0,0,2,-16,0,0, ldraw_lib__48__2_4chrd(realsolid)],
 // 4 4 0 13.65 -14.95 0 -13.65 -14.95 0 -14 -16 0 14 -16
   [4,4,0,13.65,-14.95,0,-13.65,-14.95,0,-14,-16,0,14,-16],
 // 4 4 0 13.65 14.95 0 13.65 -14.95 0 14 -16 0 14 16
@@ -138,5 +139,5 @@ function ldraw_lib__s__u454p01s01() = [
   [3,16,0,-15.1481,-16.6302,0,-14,-16,0,-14.261,-15.8624],
 ];
 module ldraw_lib__s__u454p01s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__u454p01s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__u454p01s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__u454p01s01(line=0.2);

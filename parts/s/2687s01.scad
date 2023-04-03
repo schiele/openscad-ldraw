@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/box2-7.scad>
 use <../../p/rect3.scad>
-function ldraw_lib__s__2687s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__2687s01(realsolid=false) = [
 // 0 ~Monorail Base  4 x 20 Subpart
 // 0 Name: s\2687s01.dat
 // 0 Author: Bernd Broich [bbroich]
@@ -33,15 +34,15 @@ function ldraw_lib__s__2687s01() = [
 // 3 16 1.25 4 31.25 1.25 4 36 30 4 36
   [3,16,1.25,4,31.25,1.25,4,36,30,4,36],
 // 1 16 0.625 10.5 33.625 0 0 0.625 3.5 0 0 2.375 1 0 rect3.dat
-  [1,16,0.625,10.5,33.625,0,0,0.625,3.5,0,0,2.375,1,0, ldraw_lib__rect3()],
+  [1,16,0.625,10.5,33.625,0,0,0.625,3.5,0,0,2.375,1,0, ldraw_lib__rect3(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 15.625 5.5 18.6875 0 12.5625 -1.8125 -1.5 0 0 0 -12.5625 0 box2-7.dat
-  [1,16,15.625,5.5,18.6875,0,12.5625,-1.8125,-1.5,0,0,0,-12.5625,0, ldraw_lib__box2_7()],
+  [1,16,15.625,5.5,18.6875,0,12.5625,-1.8125,-1.5,0,0,0,-12.5625,0, ldraw_lib__box2_7(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 5.5 17.8125 0 11.6875 11.6875 -1.5 0 0 0 -11.6875 0 box2-7.dat
-  [1,16,0,5.5,17.8125,0,11.6875,11.6875,-1.5,0,0,0,-11.6875,0, ldraw_lib__box2_7()],
+  [1,16,0,5.5,17.8125,0,11.6875,11.6875,-1.5,0,0,0,-11.6875,0, ldraw_lib__box2_7(realsolid)],
 // 2 24 1.25 7 31.25 1.25 4 31.25
   [2,24,1.25,7,31.25,1.25,4,31.25],
 // 2 24 1.25 4 31.25 1.25 4 36
@@ -52,5 +53,5 @@ function ldraw_lib__s__2687s01() = [
   [2,24,1.25,4,36,30,4,36],
 ];
 module ldraw_lib__s__2687s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__2687s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__2687s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__2687s01(line=0.2);

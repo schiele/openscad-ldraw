@@ -6,7 +6,8 @@ use <2886.scad>
 use <2887.scad>
 use <2890.scad>
 use <2911.scad>
-function ldraw_lib__74781_f1() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__74781_f1(realsolid=false) = [
 // 0 Monorail Track Point Left (Straight)
 // 0 Name: 74781-f1.dat
 // 0 Author: Mikkel Bech Jensen [gaia]
@@ -33,40 +34,40 @@ function ldraw_lib__74781_f1() = [
 // 0 // Bottom
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 2886.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2886()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2886(realsolid)],
 // 
 // 0 // Points Inner Wheel
 // 1 47 -134 13 0 .68438 0 -.72973 0 -1 0 .72985 0 .68438 2884.dat
-  [1,47,-134,13,0,.68438,0,-.72973,0,-1,0,.72985,0,.68438, ldraw_lib__2884()],
+  [1,47,-134,13,0,.68438,0,-.72973,0,-1,0,.72985,0,.68438, ldraw_lib__2884(realsolid)],
 // 
 // 0 // Track Points Interior Shover Straight
 // 1 16 -89.802 13 -16.486 -.21303 0 -.97704 0 1 0 .97704 0 -.21303 2911.dat
-  [1,16,-89.802,13,-16.486,-.21303,0,-.97704,0,1,0,.97704,0,-.21303, ldraw_lib__2911()],
+  [1,16,-89.802,13,-16.486,-.21303,0,-.97704,0,1,0,.97704,0,-.21303, ldraw_lib__2911(realsolid)],
 // 
 // 0 // Points Shover Straight
 // 1 16 36.2 9 -35 1 0 0 0 1 0 0 0 1 2883.dat
-  [1,16,36.2,9,-35,1,0,0,0,1,0,0,0,1, ldraw_lib__2883()],
+  [1,16,36.2,9,-35,1,0,0,0,1,0,0,0,1, ldraw_lib__2883(realsolid)],
 // 
 // 0 // Points Rack Shover Straight
 // 1 16 106.15 8.107 0 .99444 -.11021 0 .11021 .99444 0 0 0 1 2890.dat
-  [1,16,106.15,8.107,0,.99444,-.11021,0,.11021,.99444,0,0,0,1, ldraw_lib__2890()],
+  [1,16,106.15,8.107,0,.99444,-.11021,0,.11021,.99444,0,0,0,1, ldraw_lib__2890(realsolid)],
 // 
 // 0 // Track Points Interior Shover Curve
 // 1 16 -76.144 13 68.105 .33216 0 .94322 0 1 0 -.94322 0 .33216 2911.dat
-  [1,16,-76.144,13,68.105,.33216,0,.94322,0,1,0,-.94322,0,.33216, ldraw_lib__2911()],
+  [1,16,-76.144,13,68.105,.33216,0,.94322,0,1,0,-.94322,0,.33216, ldraw_lib__2911(realsolid)],
 // 
 // 0 // Points Rack Shover Curve
 // 1 16 11.669 5 104.683 .80902 0 -.58779 0 1 0 .58779 0 .80902 2890.dat
-  [1,16,11.669,5,104.683,.80902,0,-.58779,0,1,0,.58779,0,.80902, ldraw_lib__2890()],
+  [1,16,11.669,5,104.683,.80902,0,-.58779,0,1,0,.58779,0,.80902, ldraw_lib__2890(realsolid)],
 // 
 // 0 // Switch Rack
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 2887.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2887()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2887(realsolid)],
 // 
 // 0 // Top
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 2885.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2885()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2885(realsolid)],
 ];
 module ldraw_lib__74781_f1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__74781_f1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__74781_f1(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__74781_f1(line=0.2);

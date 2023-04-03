@@ -2,7 +2,8 @@ use <../lib.scad>
 use <s/6009254gs01.scad>
 use <s/6009254gs02.scad>
 use <s/6009254gs03.scad>
-function ldraw_lib__6009254g() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6009254g(realsolid=false) = [
 // 0 Sticker  1.0 x  0.8 with Logo Scuderia Ferrari on Red Background
 // 0 Name: 6009254g.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -17,12 +18,12 @@ function ldraw_lib__6009254g() = [
 // 
 // 
 // 1 4 0 0 -0.0157 1 0 0 0 1 0 0 0 1 s\6009254gs01.dat
-  [1,4,0,0,-0.0157,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6009254gs01()],
+  [1,4,0,0,-0.0157,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6009254gs01(realsolid)],
 // 1 4 0 0 0.0157 1 0 0 0 1 0 0 0 1 s\6009254gs02.dat
-  [1,4,0,0,0.0157,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6009254gs02()],
+  [1,4,0,0,0.0157,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6009254gs02(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\6009254gs03.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6009254gs03()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6009254gs03(realsolid)],
 ];
 module ldraw_lib__6009254g(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6009254g(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6009254g(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6009254g(line=0.2);

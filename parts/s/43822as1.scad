@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__43822as1() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__43822as1(realsolid=false) = [
 // 0 ~Sticker Train Fan Segment
 // 0 Name: s\43822as1.dat
 // 0 Author: Tony Hafner [hafhead]
@@ -34,5 +35,5 @@ function ldraw_lib__s__43822as1() = [
 // 0
 ];
 module ldraw_lib__s__43822as1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__43822as1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__43822as1(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__43822as1(line=0.2);

@@ -2,7 +2,8 @@ use <../../lib.scad>
 use <../../p/4-4cylo.scad>
 use <../../p/stud4o.scad>
 use <../../p/t04o6250.scad>
-function ldraw_lib__s__18835s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__18835s01(realsolid=false) = [
 // 0 ~Minifig Hair Mid-Length Straight with Crown - Hair
 // 0 Name: s\18835s01.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -1681,25 +1682,25 @@ function ldraw_lib__s__18835s01() = [
 // 
 // 0 // inside
 // 1 16 0 -5 0 1 0 0 0 -1.25 0 0 0 1 stud4o.dat
-  [1,16,0,-5,0,1,0,0,0,-1.25,0,0,0,1, ldraw_lib__stud4o()],
+  [1,16,0,-5,0,1,0,0,0,-1.25,0,0,0,1, ldraw_lib__stud4o(realsolid)],
 // 1 16 0 -4 0 8 0 0 0 4 0 0 0 8 4-4cylo.dat
-  [1,16,0,-4,0,8,0,0,0,4,0,0,0,8, ldraw_lib__4_4cylo()],
+  [1,16,0,-4,0,8,0,0,0,4,0,0,0,8, ldraw_lib__4_4cylo(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 0 -8 0 0 0 -6.4 0 0 0 -8 t04o6250.dat
-  [1,16,0,0,0,-8,0,0,0,-6.4,0,0,0,-8, ldraw_lib__t04o6250()],
+  [1,16,0,0,0,-8,0,0,0,-6.4,0,0,0,-8, ldraw_lib__t04o6250(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 0 8 0 0 0 -6.4 0 0 0 -8 t04o6250.dat
-  [1,16,0,0,0,8,0,0,0,-6.4,0,0,0,-8, ldraw_lib__t04o6250()],
+  [1,16,0,0,0,8,0,0,0,-6.4,0,0,0,-8, ldraw_lib__t04o6250(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 0 0 0 8 0 -6.4 0 8 0 0 t04o6250.dat
-  [1,16,0,0,0,0,0,8,0,-6.4,0,8,0,0, ldraw_lib__t04o6250()],
+  [1,16,0,0,0,0,0,8,0,-6.4,0,8,0,0, ldraw_lib__t04o6250(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 0 -8 0 0 0 -6.4 0 0 0 8 t04o6250.dat
-  [1,16,0,0,0,-8,0,0,0,-6.4,0,0,0,8, ldraw_lib__t04o6250()],
+  [1,16,0,0,0,-8,0,0,0,-6.4,0,0,0,8, ldraw_lib__t04o6250(realsolid)],
 // 3 16 4.9752 0 -12.0104 9.192 0 -9.192 5.1746 4 -12.2106
   [3,16,4.9752,0,-12.0104,9.192,0,-9.192,5.1746,4,-12.2106],
 // 3 16 5.1746 4 -12.2106 .301 3.611 -13.095 0 0 -13
@@ -3424,5 +3425,5 @@ function ldraw_lib__s__18835s01() = [
   [5,24,8.229,-5.57,6.209,13.223,-1.431,6.318,12.618,-.914,6.851,8.94,-6.446,5.337],
 ];
 module ldraw_lib__s__18835s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__18835s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__18835s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__18835s01(line=0.2);

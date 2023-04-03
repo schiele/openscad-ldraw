@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__6299663ac01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6299663ac01(realsolid=false) = [
 // 0 Sticker  6.6 x  9.1 with Black Panel Lines on Dark Red Background (Formed)
 // 0 Name: 6299663ac01.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -2134,5 +2135,5 @@ function ldraw_lib__6299663ac01() = [
   [5,24,47.8024,45.75,-36.6802,47.8024,43.55,-36.6802,52.1765,45.75,-30.1249,42.6028,43.55,-42.6028],
 ];
 module ldraw_lib__6299663ac01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6299663ac01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6299663ac01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6299663ac01(line=0.2);

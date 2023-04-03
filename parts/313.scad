@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <3112.scad>
-function ldraw_lib__313() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__313(realsolid=false) = [
 // 0 ~Hinge Plate  2 x  5 Pivot
 // 0 Name: 313.dat
 // 0 Author: James Jessiman
@@ -21,9 +22,9 @@ function ldraw_lib__313() = [
 // 
 // 
 // 1 16 0 0 0 0 0 1 0 1 0 -1 0 0 3112.dat
-  [1,16,0,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__3112()],
+  [1,16,0,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__3112(realsolid)],
 // 0
 ];
 module ldraw_lib__313(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__313(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__313(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__313(line=0.2);

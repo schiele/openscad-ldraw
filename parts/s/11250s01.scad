@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/1-4con27.scad>
 use <../../p/1-4con40.scad>
-function ldraw_lib__s__11250s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__11250s01(realsolid=false) = [
 // 0 ~Minifig Tool Gavel Conditional Lines and Cone Segments - 1/8
 // 0 Name: s\11250s01.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -16,9 +17,9 @@ function ldraw_lib__s__11250s01() = [
 // 
 // 
 // 1 16 -11 0 0 0 1.25 0 .25 0 0 0 0 -.25 1-4con27.dat
-  [1,16,-11,0,0,0,1.25,0,.25,0,0,0,0,-.25, ldraw_lib__1_4con27()],
+  [1,16,-11,0,0,0,1.25,0,.25,0,0,0,0,-.25, ldraw_lib__1_4con27(realsolid)],
 // 1 16 -4 0 0 0 -.45 0 .15613 0 0 0 0 -.15613 1-4con40.dat
-  [1,16,-4,0,0,0,-.45,0,.15613,0,0,0,0,-.15613, ldraw_lib__1_4con40()],
+  [1,16,-4,0,0,0,-.45,0,.15613,0,0,0,0,-.15613, ldraw_lib__1_4con40(realsolid)],
 // 5 24 -9.75 2.5831 -6.236 -9.75 0 -6.75 -9.25 2.3844 -5.7563 -11 0 -7
   [5,24,-9.75,2.5831,-6.236,-9.75,0,-6.75,-9.25,2.3844,-5.7563,-11,0,-7],
 // 5 24 -9.75 6.236 -2.5831 -9.75 4.7726 -4.7726 -11 4.9497 -4.9497 -9.25 5.7563 -2.3844
@@ -53,5 +54,5 @@ function ldraw_lib__s__11250s01() = [
   [5,24,-11,2.6789,-6.4673,-11,0,-7,-12.1481,0,-6.4673,-9.75,0,-6.75],
 ];
 module ldraw_lib__s__11250s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__11250s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__11250s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__11250s01(line=0.2);

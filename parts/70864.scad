@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__70864() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__70864(realsolid=false) = [
 // 0 ~Spring for Brick  1 x  2 x  2.333 Shock Absorber
 // 0 Name: 70864.dat
 // 0 Author: Paul Easter [pneaster]
@@ -2788,5 +2789,5 @@ function ldraw_lib__70864() = [
   [4,16,4.324,0.36,-1.791,4.68,0.36,0,5,0.68,0,4.619,0.68,-1.913],
 ];
 module ldraw_lib__70864(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__70864(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__70864(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__70864(line=0.2);

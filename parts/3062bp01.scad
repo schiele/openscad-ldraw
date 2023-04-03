@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/1-8cyli.scad>
 use <../p/2-4cyli.scad>
 use <s/3062bs01.scad>
-function ldraw_lib__3062bp01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3062bp01(realsolid=false) = [
 // 0 Brick  1 x  1 Round with Paw Prints and Heart Pattern
 // 0 Name: 3062bp01.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -20,13 +21,13 @@ function ldraw_lib__3062bp01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3062bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3062bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3062bs01(realsolid)],
 // 1 16 0 0 0 10 0 0 0 19 0 0 0 10 2-4cyli.dat
-  [1,16,0,0,0,10,0,0,0,19,0,0,0,10, ldraw_lib__2_4cyli()],
+  [1,16,0,0,0,10,0,0,0,19,0,0,0,10, ldraw_lib__2_4cyli(realsolid)],
 // 1 16 0 0 0 10 0 0 0 19 0 0 0 -10 1-8cyli.dat
-  [1,16,0,0,0,10,0,0,0,19,0,0,0,-10, ldraw_lib__1_8cyli()],
+  [1,16,0,0,0,10,0,0,0,19,0,0,0,-10, ldraw_lib__1_8cyli(realsolid)],
 // 1 16 0 0 0 -10 0 0 0 19 0 0 0 -10 1-8cyli.dat
-  [1,16,0,0,0,-10,0,0,0,19,0,0,0,-10, ldraw_lib__1_8cyli()],
+  [1,16,0,0,0,-10,0,0,0,19,0,0,0,-10, ldraw_lib__1_8cyli(realsolid)],
 // 3 5 -3.827 3.16217 -9.239 -4.1 6.4 -9.05655 -3.827 6.5092 -9.239
   [3,5,-3.827,3.16217,-9.239,-4.1,6.4,-9.05655,-3.827,6.5092,-9.239],
 // 3 5 -3.827 3.16217 -9.239 -4.2 3.1 -8.98972 -4.1 6.4 -9.05655
@@ -885,5 +886,5 @@ function ldraw_lib__3062bp01() = [
   [5,24,7.071,19,-7.071,7.071,0,-7.071,3.827,19,-9.239,9.239,19,-3.827],
 ];
 module ldraw_lib__3062bp01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3062bp01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3062bp01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3062bp01(line=0.2);

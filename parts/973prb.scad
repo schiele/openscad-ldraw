@@ -4,7 +4,8 @@ use <s/973psbs01.scad>
 use <s/973psbs02.scad>
 use <s/973psbs03.scad>
 use <s/973s01.scad>
-function ldraw_lib__973prb() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__973prb(realsolid=false) = [
 // 0 Minifig Torso with SW Blast Armour (Green Plates) Bl.Grey Pattern
 // 0 Name: 973prb.dat
 // 0 Author: Daniel Goerner [TK-949]
@@ -23,17 +24,17 @@ function ldraw_lib__973prb() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01(realsolid)],
 // 1 0 0 -4 0 4.243 0 -4.243 0 -8 0 -4.243 0 -4.243 1-4cyli.dat
-  [1,0,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli()],
+  [1,0,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973psbs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973psbs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973psbs01(realsolid)],
 // 1 72 0 0 0 1 0 0 0 1 0 0 0 1 s\973psbs02.dat
-  [1,72,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973psbs02()],
+  [1,72,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973psbs02(realsolid)],
 // 1 2 0 0 0 1 0 0 0 1 0 0 0 1 s\973psbs03.dat
-  [1,2,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973psbs03()],
+  [1,2,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973psbs03(realsolid)],
 // 1 2 0 0 0 -1 0 0 0 1 0 0 0 1 s\973psbs03.dat
-  [1,2,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__973psbs03()],
+  [1,2,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__973psbs03(realsolid)],
 // 4 2 -8.3 25.6 -10 -10.7 25.6 -10 -10.7 27.8 -10 -8.3 27.8 -10
   [4,2,-8.3,25.6,-10,-10.7,25.6,-10,-10.7,27.8,-10,-8.3,27.8,-10],
 // 4 2 8.3 27.8 -10 10.7 27.8 -10 10.7 25.6 -10 8.3 25.6 -10
@@ -423,5 +424,5 @@ function ldraw_lib__973prb() = [
   [4,0,-9.25,11.98,-10,-9.29,11.28,-10,-9.82,11.13,-10,-9.64,11.92,-10],
 ];
 module ldraw_lib__973prb(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__973prb(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__973prb(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__973prb(line=0.2);

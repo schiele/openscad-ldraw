@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__48__4_4con54() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__48__4_4con54(realsolid=false) = [
 // 0 Hi-Res Cone 54 x 1.0
 // 0 Name: 48\4-4con54.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -209,5 +210,5 @@ function ldraw_lib__48__4_4con54() = [
 // 0 // Build by Primitive Generator 2
 ];
 module ldraw_lib__48__4_4con54(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__48__4_4con54(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__48__4_4con54(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__48__4_4con54(line=0.2);

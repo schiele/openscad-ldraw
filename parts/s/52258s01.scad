@@ -7,7 +7,8 @@ use <../../p/4-4edge.scad>
 use <../../p/4-4ndis.scad>
 use <../../p/stud3.scad>
 use <../../p/stud4a.scad>
-function ldraw_lib__s__52258s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__52258s01(realsolid=false) = [
 // 0 ~Animal Dragon Body 'Hungarian Horntail' - Half
 // 0 Name: s\52258s01.dat
 // 0 Author: Willy Tschager [Holly-Wood]
@@ -26,37 +27,37 @@ function ldraw_lib__s__52258s01() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 20 131.5 60 -2.2961 0 5.54328 0 12.5 0 -5.54328 0 -2.2961 2-4cylc.dat
-  [1,16,20,131.5,60,-2.2961,0,5.54328,0,12.5,0,-5.54328,0,-2.2961, ldraw_lib__2_4cylc()],
+  [1,16,20,131.5,60,-2.2961,0,5.54328,0,12.5,0,-5.54328,0,-2.2961, ldraw_lib__2_4cylc(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 40 131.5 60 -2.2961 0 -5.54328 0 12.5 0 5.54328 0 -2.2961 2-4cylc.dat
-  [1,16,40,131.5,60,-2.2961,0,-5.54328,0,12.5,0,5.54328,0,-2.2961, ldraw_lib__2_4cylc()],
+  [1,16,40,131.5,60,-2.2961,0,-5.54328,0,12.5,0,5.54328,0,-2.2961, ldraw_lib__2_4cylc(realsolid)],
 // 1 16 18.763 .1 -170 0 -1 0 1.85 0 0 0 0 1.85 4-4ndis.dat
-  [1,16,18.763,.1,-170,0,-1,0,1.85,0,0,0,0,1.85, ldraw_lib__4_4ndis()],
+  [1,16,18.763,.1,-170,0,-1,0,1.85,0,0,0,0,1.85, ldraw_lib__4_4ndis(realsolid)],
 // 1 16 18.763 .1 -170 0 -1 0 1.85 0 0 0 0 1.85 4-4edge.dat
-  [1,16,18.763,.1,-170,0,-1,0,1.85,0,0,0,0,1.85, ldraw_lib__4_4edge()],
+  [1,16,18.763,.1,-170,0,-1,0,1.85,0,0,0,0,1.85, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 32 -220 0 0 7.5 0 1 0 -7.5 0 0 2-4disc.dat
-  [1,16,0,32,-220,0,0,7.5,0,1,0,-7.5,0,0, ldraw_lib__2_4disc()],
+  [1,16,0,32,-220,0,0,7.5,0,1,0,-7.5,0,0, ldraw_lib__2_4disc(realsolid)],
 // 1 16 0 32 -220 0 0 7.5 0 1 0 -7.5 0 0 2-4edge.dat
-  [1,16,0,32,-220,0,0,7.5,0,1,0,-7.5,0,0, ldraw_lib__2_4edge()],
+  [1,16,0,32,-220,0,0,7.5,0,1,0,-7.5,0,0, ldraw_lib__2_4edge(realsolid)],
 // 
 // 0 // Inner stud in paw
 // 1 16 30 120.713 20 1 0 0 0 -5.821 0 0 0 1 stud3.dat
-  [1,16,30,120.713,20,1,0,0,0,-5.821,0,0,0,1, ldraw_lib__stud3()],
+  [1,16,30,120.713,20,1,0,0,0,-5.821,0,0,0,1, ldraw_lib__stud3(realsolid)],
 // 
 // 0 // Studs in paws
 // 1 16 20 130 40 1 0 0 0 -3.5 0 0 0 1 stud4a.dat
-  [1,16,20,130,40,1,0,0,0,-3.5,0,0,0,1, ldraw_lib__stud4a()],
+  [1,16,20,130,40,1,0,0,0,-3.5,0,0,0,1, ldraw_lib__stud4a(realsolid)],
 // 1 16 20 130 40 6 0 0 0 -1 0 0 0 6 4-4disc.dat
-  [1,16,20,130,40,6,0,0,0,-1,0,0,0,6, ldraw_lib__4_4disc()],
+  [1,16,20,130,40,6,0,0,0,-1,0,0,0,6, ldraw_lib__4_4disc(realsolid)],
 // 1 16 20 130 40 6 0 0 0 -1 0 0 0 6 4-4edge.dat
-  [1,16,20,130,40,6,0,0,0,-1,0,0,0,6, ldraw_lib__4_4edge()],
+  [1,16,20,130,40,6,0,0,0,-1,0,0,0,6, ldraw_lib__4_4edge(realsolid)],
 // 1 16 40 130 40 1 0 0 0 -3.5 0 0 0 1 stud4a.dat
-  [1,16,40,130,40,1,0,0,0,-3.5,0,0,0,1, ldraw_lib__stud4a()],
+  [1,16,40,130,40,1,0,0,0,-3.5,0,0,0,1, ldraw_lib__stud4a(realsolid)],
 // 1 16 40 130 40 6 0 0 0 -1 0 0 0 6 4-4disc.dat
-  [1,16,40,130,40,6,0,0,0,-1,0,0,0,6, ldraw_lib__4_4disc()],
+  [1,16,40,130,40,6,0,0,0,-1,0,0,0,6, ldraw_lib__4_4disc(realsolid)],
 // 1 16 40 130 40 6 0 0 0 -1 0 0 0 6 4-4edge.dat
-  [1,16,40,130,40,6,0,0,0,-1,0,0,0,6, ldraw_lib__4_4edge()],
+  [1,16,40,130,40,6,0,0,0,-1,0,0,0,6, ldraw_lib__4_4edge(realsolid)],
 // 
 // 2 24 1.211 8 138 0 8 138
   [2,24,1.211,8,138,0,8,138],
@@ -4964,5 +4965,5 @@ function ldraw_lib__s__52258s01() = [
   [5,24,41.331,86.165,97.098,42.722,71.097,83.58,39.116,85.031,99.144,45.051,71.788,80.787],
 ];
 module ldraw_lib__s__52258s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__52258s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__52258s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__52258s01(line=0.2);

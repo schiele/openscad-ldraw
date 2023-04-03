@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3040s01.scad>
-function ldraw_lib__3040p05() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3040p05(realsolid=false) = [
 // 0 Slope Brick 45  2 x  1 with Orange Microphone Pattern
 // 0 Name: 3040p05.dat
 // 0 Author: Damien Roux [Darats]
@@ -15,7 +16,7 @@ function ldraw_lib__3040p05() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3040s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3040s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3040s01(realsolid)],
 // 0 // Pattern
 // 4 16 -10 0 -10 -9 0.707 -10.707 9 0.707 -10.707 10 0 -10
   [4,16,-10,0,-10,-9,0.707,-10.707,9,0.707,-10.707,10,0,-10],
@@ -387,5 +388,5 @@ function ldraw_lib__3040p05() = [
   [4,25,-7.77,13.98,-23.98,-7.42,14.17,-24.17,-5.21,13.753,-23.753,-4.96,13.541,-23.541],
 ];
 module ldraw_lib__3040p05(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3040p05(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3040p05(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3040p05(line=0.2);

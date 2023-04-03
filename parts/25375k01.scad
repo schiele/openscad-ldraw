@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4con0.scad>
 use <../p/4-4cylc.scad>
 use <../p/stud2.scad>
-function ldraw_lib__25375k01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__25375k01(realsolid=false) = [
 // 0 ~Tassel Support
 // 0 Name: 25375k01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -21,11 +22,11 @@ function ldraw_lib__25375k01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 stud2.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2(realsolid)],
 // 1 16 0 0 0 8 0 0 0 5.2 0 0 0 8 4-4cylc.dat
-  [1,16,0,0,0,8,0,0,0,5.2,0,0,0,8, ldraw_lib__4_4cylc()],
+  [1,16,0,0,0,8,0,0,0,5.2,0,0,0,8, ldraw_lib__4_4cylc(realsolid)],
 // 1 16 0 5.2 0 8 0 0 0 1 0 0 0 8 4-4con0.dat
-  [1,16,0,5.2,0,8,0,0,0,1,0,0,0,8, ldraw_lib__4_4con0()],
+  [1,16,0,5.2,0,8,0,0,0,1,0,0,0,8, ldraw_lib__4_4con0(realsolid)],
 // 2 24 6.563 5.3796 0 6.5627 5.3575 0.8915
   [2,24,6.563,5.3796,0,6.5627,5.3575,0.8915],
 // 2 24 6.563 5.3796 0 6.5627 5.3575 -0.8915
@@ -340,5 +341,5 @@ function ldraw_lib__25375k01() = [
   [5,24,5.7613,5.4413,1.5493,6.653,12.539,0.66,4.662,12.392,1.692,6.5627,5.3575,0.8915],
 ];
 module ldraw_lib__25375k01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__25375k01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__25375k01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__25375k01(line=0.2);

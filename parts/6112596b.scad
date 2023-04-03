@@ -3,7 +3,8 @@ use <../p/1-8chrd.scad>
 use <../p/4-4cylc3.scad>
 use <s/logoferraris02a.scad>
 use <s/logoferraris02b.scad>
-function ldraw_lib__6112596b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6112596b(realsolid=false) = [
 // 0 Sticker  0.8 x  0.8 Round with Black Logo Ferrari Horse on Yellow Background
 // 0 Name: 6112596b.dat
 // 0 Author: Bjoern Sigve Storesund [Storesund]
@@ -21,27 +22,27 @@ function ldraw_lib__6112596b() = [
 // 
 // 
 // 1 16 0 0 0 8.25 0 0 0 -0.25 0 0 0 -8.25 4-4cylc3.dat
-  [1,16,0,0,0,8.25,0,0,0,-0.25,0,0,0,-8.25, ldraw_lib__4_4cylc3()],
+  [1,16,0,0,0,8.25,0,0,0,-0.25,0,0,0,-8.25, ldraw_lib__4_4cylc3(realsolid)],
 // 1 0 0 -.25 0 1.125 0 0 0 1 0 0 0 1.125 s\logoferraris02a.dat
-  [1,0,0,-.25,0,1.125,0,0,0,1,0,0,0,1.125, ldraw_lib__s__logoferraris02a()],
+  [1,0,0,-.25,0,1.125,0,0,0,1,0,0,0,1.125, ldraw_lib__s__logoferraris02a(realsolid)],
 // 1 14 0 -.25 0 1.125 0 0 0 1 0 0 0 1.125 s\logoferraris02b.dat
-  [1,14,0,-.25,0,1.125,0,0,0,1,0,0,0,1.125, ldraw_lib__s__logoferraris02b()],
+  [1,14,0,-.25,0,1.125,0,0,0,1,0,0,0,1.125, ldraw_lib__s__logoferraris02b(realsolid)],
 // 1 14 0 -.25 0 8.25 0 0 0 1 0 0 0 -8.25 1-8chrd.dat
-  [1,14,0,-.25,0,8.25,0,0,0,1,0,0,0,-8.25, ldraw_lib__1_8chrd()],
+  [1,14,0,-.25,0,8.25,0,0,0,1,0,0,0,-8.25, ldraw_lib__1_8chrd(realsolid)],
 // 1 14 0 -.25 0 8.25 0 0 0 1 0 0 0 8.25 1-8chrd.dat
-  [1,14,0,-.25,0,8.25,0,0,0,1,0,0,0,8.25, ldraw_lib__1_8chrd()],
+  [1,14,0,-.25,0,8.25,0,0,0,1,0,0,0,8.25, ldraw_lib__1_8chrd(realsolid)],
 // 1 14 0 -.25 0 -8.25 0 0 0 1 0 0 0 -8.25 1-8chrd.dat
-  [1,14,0,-.25,0,-8.25,0,0,0,1,0,0,0,-8.25, ldraw_lib__1_8chrd()],
+  [1,14,0,-.25,0,-8.25,0,0,0,1,0,0,0,-8.25, ldraw_lib__1_8chrd(realsolid)],
 // 1 14 0 -.25 0 -8.25 0 0 0 1 0 0 0 8.25 1-8chrd.dat
-  [1,14,0,-.25,0,-8.25,0,0,0,1,0,0,0,8.25, ldraw_lib__1_8chrd()],
+  [1,14,0,-.25,0,-8.25,0,0,0,1,0,0,0,8.25, ldraw_lib__1_8chrd(realsolid)],
 // 1 14 0 -.25 0 0 0 8.25 0 1 0 -8.25 0 0 1-8chrd.dat
-  [1,14,0,-.25,0,0,0,8.25,0,1,0,-8.25,0,0, ldraw_lib__1_8chrd()],
+  [1,14,0,-.25,0,0,0,8.25,0,1,0,-8.25,0,0, ldraw_lib__1_8chrd(realsolid)],
 // 1 14 0 -.25 0 0 0 8.25 0 1 0 8.25 0 0 1-8chrd.dat
-  [1,14,0,-.25,0,0,0,8.25,0,1,0,8.25,0,0, ldraw_lib__1_8chrd()],
+  [1,14,0,-.25,0,0,0,8.25,0,1,0,8.25,0,0, ldraw_lib__1_8chrd(realsolid)],
 // 1 14 0 -.25 0 0 0 -8.25 0 1 0 -8.25 0 0 1-8chrd.dat
-  [1,14,0,-.25,0,0,0,-8.25,0,1,0,-8.25,0,0, ldraw_lib__1_8chrd()],
+  [1,14,0,-.25,0,0,0,-8.25,0,1,0,-8.25,0,0, ldraw_lib__1_8chrd(realsolid)],
 // 1 14 0 -.25 0 0 0 -8.25 0 1 0 8.25 0 0 1-8chrd.dat
-  [1,14,0,-.25,0,0,0,-8.25,0,1,0,8.25,0,0, ldraw_lib__1_8chrd()],
+  [1,14,0,-.25,0,0,0,-8.25,0,1,0,8.25,0,0, ldraw_lib__1_8chrd(realsolid)],
 // 3 14 -5.833575 -.25 5.833575 -4.5 -.25 6.328125 0 -.25 8.25
   [3,14,-5.833575,-.25,5.833575,-4.5,-.25,6.328125,0,-.25,8.25],
 // 3 14 0 -.25 8.25 -4.5 -.25 6.328125 0 -.25 6.328125
@@ -84,5 +85,5 @@ function ldraw_lib__6112596b() = [
   [3,14,-5.833575,-.25,5.833575,-4.5,-.25,1.2375,-4.5,-.25,6.328125],
 ];
 module ldraw_lib__6112596b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6112596b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6112596b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6112596b(line=0.2);

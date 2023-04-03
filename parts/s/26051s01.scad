@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/2-4cylc.scad>
-function ldraw_lib__s__26051s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__26051s01(realsolid=false) = [
 // 0 ~Minifig Head Sonic the Hedgehog - Half
 // 0 Name: s\26051s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -19,7 +20,7 @@ function ldraw_lib__s__26051s01() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -37 0 0 0 6 0 37 0 -6 0 0 2-4cylc.dat
-  [1,16,0,-37,0,0,0,6,0,37,0,-6,0,0, ldraw_lib__2_4cylc()],
+  [1,16,0,-37,0,0,0,6,0,37,0,-6,0,0, ldraw_lib__2_4cylc(realsolid)],
 // 3 16 0 -15.433 -19.3 2.541 -16.827 -19.318 0 -16.589 -21.546
   [3,16,0,-15.433,-19.3,2.541,-16.827,-19.318,0,-16.589,-21.546],
 // 3 16 0 -16.589 -21.546 2.541 -16.827 -19.318 2.599 -18.84 -21.195
@@ -1328,5 +1329,5 @@ function ldraw_lib__s__26051s01() = [
   [2,24,0,-15.433,-19.3,2.541,-16.827,-19.318],
 ];
 module ldraw_lib__s__26051s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__26051s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__26051s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__26051s01(line=0.2);

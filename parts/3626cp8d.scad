@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/1-4cyli.scad>
 use <s/3626cs02.scad>
 use <../p/t04o6250.scad>
-function ldraw_lib__3626cp8d() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3626cp8d(realsolid=false) = [
 // 0 Minifig Head Female Black Eyebrows, Eyelashes, Freckles, Pink Lips, Lopsided Smile / Determined 2-Sided Pattern
 // 0 Name: 3626cp8d.dat
 // 0 Author: Christophe Mitillo [Christophe_Mitillo]
@@ -19,27 +20,27 @@ function ldraw_lib__3626cp8d() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3626cs02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626cs02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626cs02(realsolid)],
 // 1 16 0 4 0 0 0 8 0 -6.4 0 8 0 0 t04o6250.dat
-  [1,16,0,4,0,0,0,8,0,-6.4,0,8,0,0, ldraw_lib__t04o6250()],
+  [1,16,0,4,0,0,0,8,0,-6.4,0,8,0,0, ldraw_lib__t04o6250(realsolid)],
 // 1 16 0 4 0 -8 0 0 0 -6.4 0 0 0 8 t04o6250.dat
-  [1,16,0,4,0,-8,0,0,0,-6.4,0,0,0,8, ldraw_lib__t04o6250()],
+  [1,16,0,4,0,-8,0,0,0,-6.4,0,0,0,8, ldraw_lib__t04o6250(realsolid)],
 // 1 16 0 17 0 0 0 -8 0 6.4 0 8 0 0 t04o6250.dat
-  [1,16,0,17,0,0,0,-8,0,6.4,0,8,0,0, ldraw_lib__t04o6250()],
+  [1,16,0,17,0,0,0,-8,0,6.4,0,8,0,0, ldraw_lib__t04o6250(realsolid)],
 // 1 16 0 17 0 8 0 0 0 6.4 0 0 0 8 t04o6250.dat
-  [1,16,0,17,0,8,0,0,0,6.4,0,0,0,8, ldraw_lib__t04o6250()],
+  [1,16,0,17,0,8,0,0,0,6.4,0,0,0,8, ldraw_lib__t04o6250(realsolid)],
 // 1 16 0 4 0 0 0 -8 0 -6.4 0 -8 0 0 t04o6250.dat
-  [1,16,0,4,0,0,0,-8,0,-6.4,0,-8,0,0, ldraw_lib__t04o6250()],
+  [1,16,0,4,0,0,0,-8,0,-6.4,0,-8,0,0, ldraw_lib__t04o6250(realsolid)],
 // 1 16 0 4 0 8 0 0 0 -6.4 0 0 0 -8 t04o6250.dat
-  [1,16,0,4,0,8,0,0,0,-6.4,0,0,0,-8, ldraw_lib__t04o6250()],
+  [1,16,0,4,0,8,0,0,0,-6.4,0,0,0,-8, ldraw_lib__t04o6250(realsolid)],
 // 1 16 0 17 0 0 0 8 0 6.4 0 -8 0 0 t04o6250.dat
-  [1,16,0,17,0,0,0,8,0,6.4,0,-8,0,0, ldraw_lib__t04o6250()],
+  [1,16,0,17,0,0,0,8,0,6.4,0,-8,0,0, ldraw_lib__t04o6250(realsolid)],
 // 1 16 0 17 0 -8 0 0 0 6.4 0 0 0 -8 t04o6250.dat
-  [1,16,0,17,0,-8,0,0,0,6.4,0,0,0,-8, ldraw_lib__t04o6250()],
+  [1,16,0,17,0,-8,0,0,0,6.4,0,0,0,-8, ldraw_lib__t04o6250(realsolid)],
 // 1 16 0 4 0 9.19239 0 9.19239 0 13 0 -9.19239 0 9.19239 1-4cyli.dat
-  [1,16,0,4,0,9.19239,0,9.19239,0,13,0,-9.19239,0,9.19239, ldraw_lib__1_4cyli()],
+  [1,16,0,4,0,9.19239,0,9.19239,0,13,0,-9.19239,0,9.19239, ldraw_lib__1_4cyli(realsolid)],
 // 1 16 0 4 0 -9.19239 0 -9.19239 0 13 0 9.19239 0 -9.19239 1-4cyli.dat
-  [1,16,0,4,0,-9.19239,0,-9.19239,0,13,0,9.19239,0,-9.19239, ldraw_lib__1_4cyli()],
+  [1,16,0,4,0,-9.19239,0,-9.19239,0,13,0,9.19239,0,-9.19239, ldraw_lib__1_4cyli(realsolid)],
 // 
 // 0 // Face-A
 // 3 0 -6.6971 8.2319 -10.8599 -6.8 8.2 -10.7911 -6.7 8.3 -10.8579
@@ -1506,5 +1507,5 @@ function ldraw_lib__3626cp8d() = [
   [5,24,-9.1923,4,9.1923,-9.1923,17,9.1923,-4.9751,4,12.0107,-12.0107,4,4.9751],
 ];
 module ldraw_lib__3626cp8d(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3626cp8d(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3626cp8d(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3626cp8d(line=0.2);

@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <u9142s01.scad>
-function ldraw_lib__s__u9142s00() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__u9142s00(realsolid=false) = [
 // 0 ~Figure Fabuland Bulldog Half with Blank Patterned Areas
 // 0 Name: s\u9142s00.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -15,7 +16,7 @@ function ldraw_lib__s__u9142s00() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\u9142s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__u9142s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__u9142s01(realsolid)],
 // 0 // Nose area
 // 4 16 3.713 -21.461 -30.764 5.006 -23.02 -28.94 1.756 -23.787 -29.026 0 -22.688 -30.527
   [4,16,3.713,-21.461,-30.764,5.006,-23.02,-28.94,1.756,-23.787,-29.026,0,-22.688,-30.527],
@@ -289,5 +290,5 @@ function ldraw_lib__s__u9142s00() = [
   [5,24,4.485,-32.443,-20.002,2.03,-34.425,-19.448,1.687,-31.768,-20.747,5.272,-35.838,-17.968],
 ];
 module ldraw_lib__s__u9142s00(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__u9142s00(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__u9142s00(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__u9142s00(line=0.2);

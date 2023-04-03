@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box.scad>
-function ldraw_lib__6164() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6164(realsolid=false) = [
 // 0 ~Glass for Window  4 x  4 x  3 Roof with Centre Bar
 // 0 Name: 6164.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -17,8 +18,8 @@ function ldraw_lib__6164() = [
 // 
 // 
 // 1 16 0 34 -33 36 0 0 0 30 0 0 -26.5 2 box.dat
-  [1,16,0,34,-33,36,0,0,0,30,0,0,-26.5,2, ldraw_lib__box()],
+  [1,16,0,34,-33,36,0,0,0,30,0,0,-26.5,2, ldraw_lib__box(realsolid)],
 ];
 module ldraw_lib__6164(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6164(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6164(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6164(line=0.2);

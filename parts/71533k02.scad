@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4edge.scad>
 use <../p/4-4ring3.scad>
 use <../p/4-4ring4.scad>
-function ldraw_lib__71533k02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__71533k02(realsolid=false) = [
 // 0 ~Technic Pneumatic Tube End (Non-Bulged)
 // 0 Name: 71533k02.dat
 // 0 Author: Steffen [Steffen]
@@ -21,14 +22,14 @@ function ldraw_lib__71533k02() = [
 // 0 // with either bulged or non-bulged ends.
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 4-4ring3.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4ring3()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4ring3(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 4-4ring4.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4ring4()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4ring4(realsolid)],
 // 1 16 0 0 0 3 0 0 0 3 0 0 0 3 4-4edge.dat
-  [1,16,0,0,0,3,0,0,0,3,0,0,0,3, ldraw_lib__4_4edge()],
+  [1,16,0,0,0,3,0,0,0,3,0,0,0,3, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 0 0 5 0 0 0 5 0 0 0 5 4-4edge.dat
-  [1,16,0,0,0,5,0,0,0,5,0,0,0,5, ldraw_lib__4_4edge()],
+  [1,16,0,0,0,5,0,0,0,5,0,0,0,5, ldraw_lib__4_4edge(realsolid)],
 ];
 module ldraw_lib__71533k02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__71533k02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__71533k02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__71533k02(line=0.2);

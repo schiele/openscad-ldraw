@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3960s01.scad>
-function ldraw_lib__3960pa0() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3960pa0(realsolid=false) = [
 // 0 Dish  4 x  4 Inverted with Black Ghost Face Pattern
 // 0 Name: 3960pa0.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -19,7 +20,7 @@ function ldraw_lib__3960pa0() = [
 // 
 // 
 // 1 16 0 0 0 0 0 1 0 1 0 -1 0 0 s\3960s01.dat
-  [1,16,0,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__s__3960s01()],
+  [1,16,0,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__s__3960s01(realsolid)],
 // 
 // 0 // LEFT EYE
 // 3 16 -25.5466 4 14.7493 -22.1436 2.9521 12.7846 -23.4037 4 17.9582
@@ -3184,5 +3185,5 @@ function ldraw_lib__3960pa0() = [
   [3,16,4.2,1.3534,-17.6,4.8471,1.4547,-18.0897,2.588,0,-9.659],
 ];
 module ldraw_lib__3960pa0(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3960pa0(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3960pa0(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3960pa0(line=0.2);

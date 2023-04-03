@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <2761.scad>
 use <u9497.scad>
-function ldraw_lib__2761c01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2761c01(realsolid=false) = [
 // 0 Electric Brick  2 x  3 Sensor Touch 4.5V Body Assembly
 // 0 Name: 2761c01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -16,10 +17,10 @@ function ldraw_lib__2761c01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 u9497.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9497()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9497(realsolid)],
 // 1 16 0 24 0 1 0 0 0 1 0 0 0 1 2761.dat
-  [1,16,0,24,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2761()],
+  [1,16,0,24,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2761(realsolid)],
 ];
 module ldraw_lib__2761c01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2761c01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2761c01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2761c01(line=0.2);

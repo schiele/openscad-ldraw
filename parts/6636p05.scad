@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/6636s01.scad>
-function ldraw_lib__6636p05() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6636p05(realsolid=false) = [
 // 0 Tile  1 x  6 with "Museum" Pattern
 // 0 Name: 6636p05.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -22,7 +23,7 @@ function ldraw_lib__6636p05() = [
 // 0 // Font match is not perfect, but manually corrected with LD Pattern Creator
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\6636s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6636s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6636s01(realsolid)],
 // 0 //
 // 4 15 -51.906 0 3.317 -49.084 0 -5 -48.43 0 -3.592 -51.206 0 4.772
   [4,15,-51.906,0,3.317,-49.084,0,-5,-48.43,0,-3.592,-51.206,0,4.772],
@@ -453,5 +454,5 @@ function ldraw_lib__6636p05() = [
   [3,16,-43.829,0,4.772,-24.582,0,2.237,60,0,10],
 ];
 module ldraw_lib__6636p05(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6636p05(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6636p05(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6636p05(line=0.2);

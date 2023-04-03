@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/1-4cyli.scad>
 use <../p/2-4disc.scad>
 use <s/973s01.scad>
-function ldraw_lib__973p8g() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__973p8g(realsolid=false) = [
 // 0 Minifig Torso with Blue Shirt and Safety Stripes Pattern
 // 0 Name: 973p8g.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -19,10 +20,10 @@ function ldraw_lib__973p8g() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01(realsolid)],
 // 0 // neck mark
 // 1 0 0 -4 0 4.243 0 -4.243 0 -8 0 -4.243 0 -4.243 1-4cyli.dat
-  [1,0,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli()],
+  [1,0,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli(realsolid)],
 // 0 // plain back
 // 4 16 -19 32 10 -19 29 10 19 29 10 19 32 10
   [4,16,-19,32,10,-19,29,10,19,29,10,19,32,10],
@@ -136,7 +137,7 @@ function ldraw_lib__973p8g() = [
 // 4 0 -5.75 9.25 -10 -5.75 9.95 -10 -5.482 10.003 -10 -5.214 9.357 -10
   [4,0,-5.75,9.25,-10,-5.75,9.95,-10,-5.482,10.003,-10,-5.214,9.357,-10],
 // 1 0 -5.75 11 -10 0.4 0 0 0 0 -0.4 0 0.4 0 2-4disc.dat
-  [1,0,-5.75,11,-10,0.4,0,0,0,0,-0.4,0,0.4,0, ldraw_lib__2_4disc()],
+  [1,0,-5.75,11,-10,0.4,0,0,0,0,-0.4,0,0.4,0, ldraw_lib__2_4disc(realsolid)],
 // 4 0 -4.25 13 -10 -3.75 12.25 -10 -4.55 12.25 -10 -5.7 13 -10
   [4,0,-4.25,13,-10,-3.75,12.25,-10,-4.55,12.25,-10,-5.7,13,-10],
 // 4 0 -5.7 13 -10 -4.55 12.25 -10 -4.5 12 -10 -5.275 12.25 -10
@@ -894,5 +895,5 @@ function ldraw_lib__973p8g() = [
 // 0 //
 ];
 module ldraw_lib__973p8g(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__973p8g(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__973p8g(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__973p8g(line=0.2);

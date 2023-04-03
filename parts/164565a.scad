@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box4-12.scad>
-function ldraw_lib__164565a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__164565a(realsolid=false) = [
 // 0 Sticker  1.2 x  2.9 with 3 Stripes Red/White/Blue and Sloped End Left
 // 0 Name: 164565a.dat
 // 0 Author: Ulrich Röder [UR]
@@ -18,7 +19,7 @@ function ldraw_lib__164565a() = [
 // 
 // 0 // Main
 // 1 16 0 -.25 0 0 0 -20 0 .25 0 12 0 0 box4-12.dat
-  [1,16,0,-.25,0,0,0,-20,0,.25,0,12,0,0, ldraw_lib__box4_12()],
+  [1,16,0,-.25,0,0,0,-20,0,.25,0,12,0,0, ldraw_lib__box4_12(realsolid)],
 // 4 16 20 -.25 -12 20 0 -12 37.77778 0 -12 37.77778 -.25 -12
   [4,16,20,-.25,-12,20,0,-12,37.77778,0,-12,37.77778,-.25,-12],
 // 4 16 20 0 12 20 -.25 12 37.77778 -.25 -12 37.77778 0 -12
@@ -39,5 +40,5 @@ function ldraw_lib__164565a() = [
   [4,1,-20,-.25,-4,-20,-.25,-12,37.77778,-.25,-12,31.85185,-.25,-4],
 ];
 module ldraw_lib__164565a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__164565a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__164565a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__164565a(line=0.2);

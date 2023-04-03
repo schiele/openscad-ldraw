@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__92251s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__92251s01(realsolid=false) = [
 // 0 ~Figure Friends Cropped Trousers Half without Patternable Surface
 // 0 Name: s\92251s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -4761,5 +4762,5 @@ function ldraw_lib__s__92251s01() = [
   [5,24,8.96,-43.28,-4.45,8.06,-42.19,-4.89,8.7,-39.01,-4.26,8.18,-44.45,-4.87],
 ];
 module ldraw_lib__s__92251s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__92251s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__92251s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__92251s01(line=0.2);

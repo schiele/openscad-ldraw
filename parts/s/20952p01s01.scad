@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/48/4-4con6.scad>
 use <20952s01.scad>
-function ldraw_lib__s__20952p01s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__20952p01s01(realsolid=false) = [
 // 0 ~Brick Round  1.4 x  1.4 x  0.667 Dome Top with SW BB-8 Droid Head Common Pattern
 // 0 Name: s\20952p01s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -16,9 +17,9 @@ function ldraw_lib__s__20952p01s01() = [
 // 
 // 
 // 1 16 0 14 0 2 0 0 0 2 0 0 0 2 48\4-4con6.dat
-  [1,16,0,14,0,2,0,0,0,2,0,0,0,2, ldraw_lib__48__4_4con6()],
+  [1,16,0,14,0,2,0,0,0,2,0,0,0,2, ldraw_lib__48__4_4con6(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\20952s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__20952s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__20952s01(realsolid)],
 // 
 // 4 80 0 11.7485 13.763 0 10.2 13.6 1.7748 10.2 13.483 1.7964 11.7548 13.6453
   [4,80,0,11.7485,13.763,0,10.2,13.6,1.7748,10.2,13.483,1.7964,11.7548,13.6453],
@@ -1470,5 +1471,5 @@ function ldraw_lib__s__20952p01s01() = [
   [4,16,-8.7327,6.45,-8.7327,-9.7244,8.4339,-8.6034,-9.4182,8.4049,-8.9375,-9.181,8.3519,-9.181],
 ];
 module ldraw_lib__s__20952p01s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__20952p01s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__20952p01s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__20952p01s01(line=0.2);

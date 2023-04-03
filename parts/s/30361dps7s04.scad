@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__30361dps7s04() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__30361dps7s04(realsolid=false) = [
 // 0 ~Cylinder  2 x  2 x  2 Robot Body with SW Astromech - Pattern Centre Panel Border
 // 0 Name: s\30361dps7s04.dat
 // 0 Author: Willy Tschager [Holly-Wood]
@@ -37,5 +38,5 @@ function ldraw_lib__s__30361dps7s04() = [
   [4,16,-2.2,17.2,-19.561,-2.8,17.8,-19.44,0,17.8,-20,0,17.2,-20],
 ];
 module ldraw_lib__s__30361dps7s04(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__30361dps7s04(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__30361dps7s04(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__30361dps7s04(line=0.2);

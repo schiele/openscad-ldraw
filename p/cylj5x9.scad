@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__cylj5x9() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__cylj5x9(realsolid=false) = [
 // 0 Cylinder Joint  5 to  9
 // 0 Name: cylj5x9.dat
 // 0 Author: Kevin Roach [KROACH]
@@ -128,5 +129,5 @@ function ldraw_lib__cylj5x9() = [
   [2,24,5,-1.7246,0,4.6195,-1.4703,-1.9135],
 ];
 module ldraw_lib__cylj5x9(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__cylj5x9(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__cylj5x9(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__cylj5x9(line=0.2);

@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/t04o6250.scad>
-function ldraw_lib__s__55704s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__55704s01(realsolid=false) = [
 // 0 ~Minifig Headdress Batman Half
 // 0 Name: s\55704s01.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -405,11 +406,11 @@ function ldraw_lib__s__55704s01() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 0 0 0 8 0 -6.4 0 8 0 0 t04o6250.dat
-  [1,16,0,0,0,0,0,8,0,-6.4,0,8,0,0, ldraw_lib__t04o6250()],
+  [1,16,0,0,0,0,0,8,0,-6.4,0,8,0,0, ldraw_lib__t04o6250(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 0 8 0 0 0 -6.4 0 0 0 -8 t04o6250.dat
-  [1,16,0,0,0,8,0,0,0,-6.4,0,0,0,-8, ldraw_lib__t04o6250()],
+  [1,16,0,0,0,8,0,0,0,-6.4,0,0,0,-8, ldraw_lib__t04o6250(realsolid)],
 // 0 // Added edges
 // 2 24 8.61 4.53 -9.74 5.74 4.58 -11.67
   [2,24,8.61,4.53,-9.74,5.74,4.58,-11.67],
@@ -978,5 +979,5 @@ function ldraw_lib__s__55704s01() = [
   [5,24,12,20.58,11.69,15.11,3.79,7.23,14.68,21.55,8.06,12.14,-8.24,11.53],
 ];
 module ldraw_lib__s__55704s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__55704s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__55704s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__55704s01(line=0.2);

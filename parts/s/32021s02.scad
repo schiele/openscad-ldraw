@@ -2,7 +2,8 @@ use <../../lib.scad>
 use <../../p/box2-5.scad>
 use <../../p/box2-7.scad>
 use <../../p/recte4.scad>
-function ldraw_lib__s__32021s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__32021s02(realsolid=false) = [
 // 0 ~Electric Code Pilot Cover - Speaker Holes
 // 0 Name: s\32021s02.dat
 // 0 Author: Max Martin Richter [MMR1988]
@@ -19,20 +20,20 @@ function ldraw_lib__s__32021s02() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0.25 1.25 2 0 0 0 0.25 0 0 0 0.75 box2-7.dat
-  [1,16,0,0.25,1.25,2,0,0,0,0.25,0,0,0,0.75, ldraw_lib__box2_7()],
+  [1,16,0,0.25,1.25,2,0,0,0,0.25,0,0,0,0.75, ldraw_lib__box2_7(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0.25 -1.25 2 0 0 0 0.25 0 0 0 -0.75 box2-7.dat
-  [1,16,0,0.25,-1.25,2,0,0,0,0.25,0,0,0,-0.75, ldraw_lib__box2_7()],
+  [1,16,0,0.25,-1.25,2,0,0,0,0.25,0,0,0,-0.75, ldraw_lib__box2_7(realsolid)],
 // 
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 2.125 1.25 2 0 0 0 -0.875 0.75 0 0 0.75 box2-5.dat
-  [1,16,0,2.125,1.25,2,0,0,0,-0.875,0.75,0,0,0.75, ldraw_lib__box2_5()],
+  [1,16,0,2.125,1.25,2,0,0,0,-0.875,0.75,0,0,0.75, ldraw_lib__box2_5(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 2.125 -1.25 2 0 0 0 -0.875 0.75 0 0 -0.75 box2-5.dat
-  [1,16,0,2.125,-1.25,2,0,0,0,-0.875,0.75,0,0,-0.75, ldraw_lib__box2_5()],
+  [1,16,0,2.125,-1.25,2,0,0,0,-0.875,0.75,0,0,-0.75, ldraw_lib__box2_5(realsolid)],
 // 
 // 3 16 2 0.5 2 2 0.5 0.5 2 0 2
   [3,16,2,0.5,2,2,0.5,0.5,2,0,2],
@@ -63,7 +64,7 @@ function ldraw_lib__s__32021s02() = [
   [3,16,-2,3.75,-2,-2,0.5,-0.5,-2,2,-2],
 // 
 // 1 16 0 0 0 -2 0 0 0 1 0 0 0 -2 recte4.dat
-  [1,16,0,0,0,-2,0,0,0,1,0,0,0,-2, ldraw_lib__recte4()],
+  [1,16,0,0,0,-2,0,0,0,1,0,0,0,-2, ldraw_lib__recte4(realsolid)],
 // 
 // 2 24 2 3.75 -2 2 3.75 2
   [2,24,2,3.75,-2,2,3.75,2],
@@ -71,5 +72,5 @@ function ldraw_lib__s__32021s02() = [
   [2,24,-2,3.75,2,-2,3.75,-2],
 ];
 module ldraw_lib__s__32021s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__32021s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__32021s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__32021s02(line=0.2);

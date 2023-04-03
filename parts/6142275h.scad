@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/1-4chrd.scad>
 use <../p/1-4cyli.scad>
-function ldraw_lib__6142275h() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6142275h(realsolid=false) = [
 // 0 Sticker  1 x  0.8 with  5 Dark Grey Stripes on Black Background
 // 0 Name: 6142275h.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -19,29 +20,29 @@ function ldraw_lib__6142275h() = [
 // 
 // 0 // Primitives
 // 1 16 -6.5 0 8.5 -1.5 0 0 0 -1 0 0 0 1.5 1-4chrd.dat
-  [1,16,-6.5,0,8.5,-1.5,0,0,0,-1,0,0,0,1.5, ldraw_lib__1_4chrd()],
+  [1,16,-6.5,0,8.5,-1.5,0,0,0,-1,0,0,0,1.5, ldraw_lib__1_4chrd(realsolid)],
 // 1 16 6.5 0 8.5 1.5 0 0 0 -1 0 0 0 1.5 1-4chrd.dat
-  [1,16,6.5,0,8.5,1.5,0,0,0,-1,0,0,0,1.5, ldraw_lib__1_4chrd()],
+  [1,16,6.5,0,8.5,1.5,0,0,0,-1,0,0,0,1.5, ldraw_lib__1_4chrd(realsolid)],
 // 1 16 -6.5 0 -8.5 -1.5 0 0 0 -1 0 0 0 -1.5 1-4chrd.dat
-  [1,16,-6.5,0,-8.5,-1.5,0,0,0,-1,0,0,0,-1.5, ldraw_lib__1_4chrd()],
+  [1,16,-6.5,0,-8.5,-1.5,0,0,0,-1,0,0,0,-1.5, ldraw_lib__1_4chrd(realsolid)],
 // 1 16 6.5 0 -8.5 1.5 0 0 0 -1 0 0 0 -1.5 1-4chrd.dat
-  [1,16,6.5,0,-8.5,1.5,0,0,0,-1,0,0,0,-1.5, ldraw_lib__1_4chrd()],
+  [1,16,6.5,0,-8.5,1.5,0,0,0,-1,0,0,0,-1.5, ldraw_lib__1_4chrd(realsolid)],
 // 1 16 -6.5 0 8.5 -1.5 0 0 0 -.25 0 0 0 1.5 1-4cyli.dat
-  [1,16,-6.5,0,8.5,-1.5,0,0,0,-.25,0,0,0,1.5, ldraw_lib__1_4cyli()],
+  [1,16,-6.5,0,8.5,-1.5,0,0,0,-.25,0,0,0,1.5, ldraw_lib__1_4cyli(realsolid)],
 // 1 16 6.5 0 8.5 1.5 0 0 0 -.25 0 0 0 1.5 1-4cyli.dat
-  [1,16,6.5,0,8.5,1.5,0,0,0,-.25,0,0,0,1.5, ldraw_lib__1_4cyli()],
+  [1,16,6.5,0,8.5,1.5,0,0,0,-.25,0,0,0,1.5, ldraw_lib__1_4cyli(realsolid)],
 // 1 16 -6.5 0 -8.5 -1.5 0 0 0 -.25 0 0 0 -1.5 1-4cyli.dat
-  [1,16,-6.5,0,-8.5,-1.5,0,0,0,-.25,0,0,0,-1.5, ldraw_lib__1_4cyli()],
+  [1,16,-6.5,0,-8.5,-1.5,0,0,0,-.25,0,0,0,-1.5, ldraw_lib__1_4cyli(realsolid)],
 // 1 16 6.5 0 -8.5 1.5 0 0 0 -.25 0 0 0 -1.5 1-4cyli.dat
-  [1,16,6.5,0,-8.5,1.5,0,0,0,-.25,0,0,0,-1.5, ldraw_lib__1_4cyli()],
+  [1,16,6.5,0,-8.5,1.5,0,0,0,-.25,0,0,0,-1.5, ldraw_lib__1_4cyli(realsolid)],
 // 1 0 -6.5 -.25 8.5 -1.5 0 0 0 1 0 0 0 1.5 1-4chrd.dat
-  [1,0,-6.5,-.25,8.5,-1.5,0,0,0,1,0,0,0,1.5, ldraw_lib__1_4chrd()],
+  [1,0,-6.5,-.25,8.5,-1.5,0,0,0,1,0,0,0,1.5, ldraw_lib__1_4chrd(realsolid)],
 // 1 0 6.5 -.25 8.5 1.5 0 0 0 1 0 0 0 1.5 1-4chrd.dat
-  [1,0,6.5,-.25,8.5,1.5,0,0,0,1,0,0,0,1.5, ldraw_lib__1_4chrd()],
+  [1,0,6.5,-.25,8.5,1.5,0,0,0,1,0,0,0,1.5, ldraw_lib__1_4chrd(realsolid)],
 // 1 0 -6.5 -.25 -8.5 -1.5 0 0 0 1 0 0 0 -1.5 1-4chrd.dat
-  [1,0,-6.5,-.25,-8.5,-1.5,0,0,0,1,0,0,0,-1.5, ldraw_lib__1_4chrd()],
+  [1,0,-6.5,-.25,-8.5,-1.5,0,0,0,1,0,0,0,-1.5, ldraw_lib__1_4chrd(realsolid)],
 // 1 0 6.5 -.25 -8.5 1.5 0 0 0 1 0 0 0 -1.5 1-4chrd.dat
-  [1,0,6.5,-.25,-8.5,1.5,0,0,0,1,0,0,0,-1.5, ldraw_lib__1_4chrd()],
+  [1,0,6.5,-.25,-8.5,1.5,0,0,0,1,0,0,0,-1.5, ldraw_lib__1_4chrd(realsolid)],
 // 0 // Bottom faces
 // 4 16 6.5 0 10 8 0 8.5 -8 0 8.5 -6.5 0 10
   [4,16,6.5,0,10,8,0,8.5,-8,0,8.5,-6.5,0,10],
@@ -129,5 +130,5 @@ function ldraw_lib__6142275h() = [
   [4,72,-8,-.25,-7.2,-8,-.25,-8,8,-.25,-8,8,-.25,-7.2],
 ];
 module ldraw_lib__6142275h(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6142275h(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6142275h(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6142275h(line=0.2);

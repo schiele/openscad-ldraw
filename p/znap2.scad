@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <1-4cyli.scad>
 use <1-4edge.scad>
-function ldraw_lib__znap2() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__znap2(realsolid=false) = [
 // 0 Znap Between Pegholes 2 Half
 // 0 Name: znap2.dat
 // 0 Author: Thomas Woelk [t.woelk]
@@ -18,17 +19,17 @@ function ldraw_lib__znap2() = [
 // 
 // 
 // 1 16 0 -10 0 6.36 0 -6.36 0 1 0 -6.36 0 -6.36 1-4edge.dat
-  [1,16,0,-10,0,6.36,0,-6.36,0,1,0,-6.36,0,-6.36, ldraw_lib__1_4edge()],
+  [1,16,0,-10,0,6.36,0,-6.36,0,1,0,-6.36,0,-6.36, ldraw_lib__1_4edge(realsolid)],
 // 1 16 0 -2 0 6.36 0 -6.36 0 1 0 -6.36 0 -6.36 1-4edge.dat
-  [1,16,0,-2,0,6.36,0,-6.36,0,1,0,-6.36,0,-6.36, ldraw_lib__1_4edge()],
+  [1,16,0,-2,0,6.36,0,-6.36,0,1,0,-6.36,0,-6.36, ldraw_lib__1_4edge(realsolid)],
 // 1 16 0 2 0 6.36 0 -6.36 0 1 0 -6.36 0 -6.36 1-4edge.dat
-  [1,16,0,2,0,6.36,0,-6.36,0,1,0,-6.36,0,-6.36, ldraw_lib__1_4edge()],
+  [1,16,0,2,0,6.36,0,-6.36,0,1,0,-6.36,0,-6.36, ldraw_lib__1_4edge(realsolid)],
 // 1 16 0 10 0 6.36 0 -6.36 0 1 0 -6.36 0 -6.36 1-4edge.dat
-  [1,16,0,10,0,6.36,0,-6.36,0,1,0,-6.36,0,-6.36, ldraw_lib__1_4edge()],
+  [1,16,0,10,0,6.36,0,-6.36,0,1,0,-6.36,0,-6.36, ldraw_lib__1_4edge(realsolid)],
 // 1 16 0 2 0 6.36 0 -6.36 0 8 0 -6.36 0 -6.36 1-4cyli.dat
-  [1,16,0,2,0,6.36,0,-6.36,0,8,0,-6.36,0,-6.36, ldraw_lib__1_4cyli()],
+  [1,16,0,2,0,6.36,0,-6.36,0,8,0,-6.36,0,-6.36, ldraw_lib__1_4cyli(realsolid)],
 // 1 16 0 -10 0 6.36 0 -6.36 0 8 0 -6.36 0 -6.36 1-4cyli.dat
-  [1,16,0,-10,0,6.36,0,-6.36,0,8,0,-6.36,0,-6.36, ldraw_lib__1_4cyli()],
+  [1,16,0,-10,0,6.36,0,-6.36,0,8,0,-6.36,0,-6.36, ldraw_lib__1_4cyli(realsolid)],
 // 4 16 6.36 2 -6.36 6.36 10 -6.36 6.36 10 -20 6.36 2 -20
   [4,16,6.36,2,-6.36,6.36,10,-6.36,6.36,10,-20,6.36,2,-20],
 // 4 16 6.36 -10 -6.36 6.36 -2 -6.36 6.36 -2 -20 6.36 -10 -20
@@ -106,5 +107,5 @@ function ldraw_lib__znap2() = [
 // 0
 ];
 module ldraw_lib__znap2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__znap2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__znap2(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__znap2(line=0.2);

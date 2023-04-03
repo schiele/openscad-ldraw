@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__4650853j() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4650853j(realsolid=false) = [
 // 0 Sticker  1.9 x  1.9 with "OPEN", White Seaplane, Schedule Grid and Clock
 // 0 Name: 4650853j.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -17,7 +18,7 @@ function ldraw_lib__4650853j() = [
 // 
 // 
 // 1 16 0 -0.25 0 19 0 0 0 0.25 0 0 0 19 box5-12.dat
-  [1,16,0,-0.25,0,19,0,0,0,0.25,0,0,0,19, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,19,0,0,0,0.25,0,0,0,19, ldraw_lib__box5_12(realsolid)],
 // 4 14 -14.2 -0.25 15.9 -14.2 -0.25 16.7 -15 -0.25 16.6 -14.7 -0.25 15.7
   [4,14,-14.2,-0.25,15.9,-14.2,-0.25,16.7,-15,-0.25,16.6,-14.7,-0.25,15.7],
 // 4 14 -14.7 -0.25 15.7 -15 -0.25 16.6 -15.7 -0.25 16 -15.1 -0.25 15.2
@@ -1210,5 +1211,5 @@ function ldraw_lib__4650853j() = [
   [3,322,-14.8,-0.25,9.2,-15.8,-0.25,4.7,-15.2,-0.25,4.7],
 ];
 module ldraw_lib__4650853j(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4650853j(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4650853j(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4650853j(line=0.2);

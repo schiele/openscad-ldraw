@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <18675ps1s02.scad>
-function ldraw_lib__s__18675ps1s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__18675ps1s01(realsolid=false) = [
 // 0 ~Dish  6 x  6 Inverted - No Studs with Handle with Octagonal Cockpit Pattern - Spoke and Rim 1/16
 // 0 Name: s\18675ps1s01.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -16,7 +17,7 @@ function ldraw_lib__s__18675ps1s01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\18675ps1s02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__18675ps1s02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__18675ps1s02(realsolid)],
 // 
 // 4 72 0 -.1 54 -.707 .2735 54.5 -.4999 -.0774 54.0001 -.4311 -.1 53.9716
   [4,72,0,-.1,54,-.707,.2735,54.5,-.4999,-.0774,54.0001,-.4311,-.1,53.9716],
@@ -154,5 +155,5 @@ function ldraw_lib__s__18675ps1s01() = [
   [4,71,-6.7152,-1.555,51.0148,-6.5693,-2.1946,49.9066,-2,-2.146,50.2927,-1.15,-1.5138,51.4535],
 ];
 module ldraw_lib__s__18675ps1s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__18675ps1s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__18675ps1s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__18675ps1s01(line=0.2);

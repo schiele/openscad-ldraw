@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/2-4disc.scad>
 use <../p/4-4disc.scad>
 use <s/3069bs01.scad>
-function ldraw_lib__3069bpb1() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3069bpb1(realsolid=false) = [
 // 0 Tile  1 x  2 with Joker Pattern
 // 0 Name: 3069bpb1.dat
 // 0 Author: Michael Heidemann [mikeheide]
@@ -19,7 +20,7 @@ function ldraw_lib__3069bpb1() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3069bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3069bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3069bs01(realsolid)],
 // 4 4 -19 0 -5.75 -19 0 -8.25 -18.75 0 -8.25 -18.75 0 -5.75
   [4,4,-19,0,-5.75,-19,0,-8.25,-18.75,0,-8.25,-18.75,0,-5.75],
 // 4 4 -18.5 0 -7.75 -18.5 0 -6.25 -18.75 0 -5.75 -18.75 0 -8.25
@@ -1614,27 +1615,27 @@ function ldraw_lib__3069bpb1() = [
 // 0 // Pattern created wholly or in part by Quad2Dat
 // 0 // Thanks James
 // 1 14 13.5 0 0 -0.4 0 0 0 0.4 0 0 0 -0.4 2-4disc.dat
-  [1,14,13.5,0,0,-0.4,0,0,0,0.4,0,0,0,-0.4, ldraw_lib__2_4disc()],
+  [1,14,13.5,0,0,-0.4,0,0,0,0.4,0,0,0,-0.4, ldraw_lib__2_4disc(realsolid)],
 // 1 14 12.25 0 -6 -0.4 0 0 0 0.4 0 0 0 -0.4 4-4disc.dat
-  [1,14,12.25,0,-6,-0.4,0,0,0,0.4,0,0,0,-0.4, ldraw_lib__4_4disc()],
+  [1,14,12.25,0,-6,-0.4,0,0,0,0.4,0,0,0,-0.4, ldraw_lib__4_4disc(realsolid)],
 // 1 14 6.5 0 -7.75 -0.4 0 0 0 0.4 0 0 0 -0.4 4-4disc.dat
-  [1,14,6.5,0,-7.75,-0.4,0,0,0,0.4,0,0,0,-0.4, ldraw_lib__4_4disc()],
+  [1,14,6.5,0,-7.75,-0.4,0,0,0,0.4,0,0,0,-0.4, ldraw_lib__4_4disc(realsolid)],
 // 1 14 -4.5 0 -7.5 -0.4 0 0 0 0.4 0 0 0 -0.4 4-4disc.dat
-  [1,14,-4.5,0,-7.5,-0.4,0,0,0,0.4,0,0,0,-0.4, ldraw_lib__4_4disc()],
+  [1,14,-4.5,0,-7.5,-0.4,0,0,0,0.4,0,0,0,-0.4, ldraw_lib__4_4disc(realsolid)],
 // 1 14 -11 0 -6.5 -0.4 0 0 0 0.4 0 0 0 -0.4 4-4disc.dat
-  [1,14,-11,0,-6.5,-0.4,0,0,0,0.4,0,0,0,-0.4, ldraw_lib__4_4disc()],
+  [1,14,-11,0,-6.5,-0.4,0,0,0,0.4,0,0,0,-0.4, ldraw_lib__4_4disc(realsolid)],
 // 1 14 13.5 0 0 0.4 0 0 0 0.4 0 0 0 0.4 2-4disc.dat
-  [1,14,13.5,0,0,0.4,0,0,0,0.4,0,0,0,0.4, ldraw_lib__2_4disc()],
+  [1,14,13.5,0,0,0.4,0,0,0,0.4,0,0,0,0.4, ldraw_lib__2_4disc(realsolid)],
 // 1 14 12.25 0 6 -0.4 0 0 0 0.4 0 0 0 -0.4 4-4disc.dat
-  [1,14,12.25,0,6,-0.4,0,0,0,0.4,0,0,0,-0.4, ldraw_lib__4_4disc()],
+  [1,14,12.25,0,6,-0.4,0,0,0,0.4,0,0,0,-0.4, ldraw_lib__4_4disc(realsolid)],
 // 1 14 6.5 0 7.75 -0.4 0 0 0 0.4 0 0 0 -0.4 4-4disc.dat
-  [1,14,6.5,0,7.75,-0.4,0,0,0,0.4,0,0,0,-0.4, ldraw_lib__4_4disc()],
+  [1,14,6.5,0,7.75,-0.4,0,0,0,0.4,0,0,0,-0.4, ldraw_lib__4_4disc(realsolid)],
 // 1 14 -4.5 0 7.5 -0.4 0 0 0 0.4 0 0 0 -0.4 4-4disc.dat
-  [1,14,-4.5,0,7.5,-0.4,0,0,0,0.4,0,0,0,-0.4, ldraw_lib__4_4disc()],
+  [1,14,-4.5,0,7.5,-0.4,0,0,0,0.4,0,0,0,-0.4, ldraw_lib__4_4disc(realsolid)],
 // 1 14 -11 0 6.5 -0.4 0 0 0 0.4 0 0 0 -0.4 4-4disc.dat
-  [1,14,-11,0,6.5,-0.4,0,0,0,0.4,0,0,0,-0.4, ldraw_lib__4_4disc()],
+  [1,14,-11,0,6.5,-0.4,0,0,0,0.4,0,0,0,-0.4, ldraw_lib__4_4disc(realsolid)],
 // 0 //
 ];
 module ldraw_lib__3069bpb1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3069bpb1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3069bpb1(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3069bpb1(line=0.2);

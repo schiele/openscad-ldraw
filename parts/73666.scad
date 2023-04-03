@@ -2,7 +2,8 @@ use <../lib.scad>
 use <4767a.scad>
 use <4768.scad>
 use <4769.scad>
-function ldraw_lib__73666() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__73666(realsolid=false) = [
 // 0 Electric Light & Sound Brick  1 x  2 with Single Top Light
 // 0 Name: 73666.dat
 // 0 Author: Thomas Burger [grapeape]
@@ -22,12 +23,12 @@ function ldraw_lib__73666() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 4767a.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4767a()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4767a(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 4768.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4768()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4768(realsolid)],
 // 1 47 0 0 0 1 0 0 0 1 0 0 0 1 4769.dat
-  [1,47,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4769()],
+  [1,47,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4769(realsolid)],
 ];
 module ldraw_lib__73666(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__73666(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__73666(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__73666(line=0.2);

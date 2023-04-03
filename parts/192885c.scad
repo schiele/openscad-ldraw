@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4ndis.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__192885c() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__192885c(realsolid=false) = [
 // 0 Sticker  1.1 x  1.9 with 4 Black Spots over Black Rectangle
 // 0 Name: 192885c.dat
 // 0 Author: Bjoern Sigve Storesund [Storesund]
@@ -22,29 +23,29 @@ function ldraw_lib__192885c() = [
 // 
 // 
 // 1 16 0 -0.25 0 19 0 0 0 0.25 0 0 0 11 box5-12.dat
-  [1,16,0,-0.25,0,19,0,0,0,0.25,0,0,0,11, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,19,0,0,0,0.25,0,0,0,11, ldraw_lib__box5_12(realsolid)],
 // 0 BFC NOCLIP
   [0,"BFC","NOCLIP"],
 // 1 0 -12 -0.25 8 2.5 0 0 0 1 0 0 0 2.5 4-4disc.dat
-  [1,0,-12,-0.25,8,2.5,0,0,0,1,0,0,0,2.5, ldraw_lib__4_4disc()],
+  [1,0,-12,-0.25,8,2.5,0,0,0,1,0,0,0,2.5, ldraw_lib__4_4disc(realsolid)],
 // 1 0 -4 -0.25 8 2.5 0 0 0 1 0 0 0 2.5 4-4disc.dat
-  [1,0,-4,-0.25,8,2.5,0,0,0,1,0,0,0,2.5, ldraw_lib__4_4disc()],
+  [1,0,-4,-0.25,8,2.5,0,0,0,1,0,0,0,2.5, ldraw_lib__4_4disc(realsolid)],
 // 1 0 4 -0.25 8 2.5 0 0 0 1 0 0 0 2.5 4-4disc.dat
-  [1,0,4,-0.25,8,2.5,0,0,0,1,0,0,0,2.5, ldraw_lib__4_4disc()],
+  [1,0,4,-0.25,8,2.5,0,0,0,1,0,0,0,2.5, ldraw_lib__4_4disc(realsolid)],
 // 1 0 12 -0.25 8 2.5 0 0 0 1 0 0 0 2.5 4-4disc.dat
-  [1,0,12,-0.25,8,2.5,0,0,0,1,0,0,0,2.5, ldraw_lib__4_4disc()],
+  [1,0,12,-0.25,8,2.5,0,0,0,1,0,0,0,2.5, ldraw_lib__4_4disc(realsolid)],
 // 4 0 14.5 -.25 5 -14.5 -.25 5 -14.5 -.25 -11 14.5 -.25 -11
   [4,0,14.5,-.25,5,-14.5,-.25,5,-14.5,-.25,-11,14.5,-.25,-11],
 // 0 BFC CLIP
   [0,"BFC","CLIP"],
 // 1 16 4 -0.25 8 2.5 0 0 0 1 0 0 0 2.5 4-4ndis.dat
-  [1,16,4,-0.25,8,2.5,0,0,0,1,0,0,0,2.5, ldraw_lib__4_4ndis()],
+  [1,16,4,-0.25,8,2.5,0,0,0,1,0,0,0,2.5, ldraw_lib__4_4ndis(realsolid)],
 // 1 16 -4 -0.25 8 2.5 0 0 0 1 0 0 0 2.5 4-4ndis.dat
-  [1,16,-4,-0.25,8,2.5,0,0,0,1,0,0,0,2.5, ldraw_lib__4_4ndis()],
+  [1,16,-4,-0.25,8,2.5,0,0,0,1,0,0,0,2.5, ldraw_lib__4_4ndis(realsolid)],
 // 1 16 -12 -0.25 8 2.5 0 0 0 1 0 0 0 2.5 4-4ndis.dat
-  [1,16,-12,-0.25,8,2.5,0,0,0,1,0,0,0,2.5, ldraw_lib__4_4ndis()],
+  [1,16,-12,-0.25,8,2.5,0,0,0,1,0,0,0,2.5, ldraw_lib__4_4ndis(realsolid)],
 // 1 16 12 -0.25 8 2.5 0 0 0 1 0 0 0 2.5 4-4ndis.dat
-  [1,16,12,-0.25,8,2.5,0,0,0,1,0,0,0,2.5, ldraw_lib__4_4ndis()],
+  [1,16,12,-0.25,8,2.5,0,0,0,1,0,0,0,2.5, ldraw_lib__4_4ndis(realsolid)],
 // 4 16 19 -.25 -11 19 -.25 11 14.5 -.25 5 14.5 -.25 -11
   [4,16,19,-.25,-11,19,-.25,11,14.5,-.25,5,14.5,-.25,-11],
 // 4 16 -14.5 -.25 -11 -14.5 -.25 5 -19 -.25 11 -19 -.25 -11
@@ -133,5 +134,5 @@ function ldraw_lib__192885c() = [
   [3,16,-12,-.25,10.5,-19,-.25,11,-14.5,-.25,10.5],
 ];
 module ldraw_lib__192885c(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__192885c(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__192885c(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__192885c(line=0.2);

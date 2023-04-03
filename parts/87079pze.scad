@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/87079s01.scad>
-function ldraw_lib__87079pze() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__87079pze(realsolid=false) = [
 // 0 Tile  2 x  4 with Metallic Gold Wonder Woman Logo and Black Star Pattern
 // 0 Name: 87079pze.dat
 // 0 Author: Vincent Messenet [Cheenzo]
@@ -17,7 +18,7 @@ function ldraw_lib__87079pze() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\87079s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__87079s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__87079s01(realsolid)],
 // 
 // 4 0 -4.996 0 3.498 -.5 0 11.5 0 0 15.75 -1.75 0 12.25
   [4,0,-4.996,0,3.498,-.5,0,11.5,0,0,15.75,-1.75,0,12.25],
@@ -171,5 +172,5 @@ function ldraw_lib__87079pze() = [
   [3,16,0,0,-15.75,15.75,0,-15.5,13.25,0,-12.25],
 ];
 module ldraw_lib__87079pze(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__87079pze(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__87079pze(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__87079pze(line=0.2);

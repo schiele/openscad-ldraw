@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/4-4con3.scad>
 use <../p/4-4cylo.scad>
-function ldraw_lib__u9405() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__u9405(realsolid=false) = [
 // 0 ~Electric Powered Up Colour Sensor Lighting Ring
 // 0 Name: u9405.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -20,18 +21,18 @@ function ldraw_lib__u9405() = [
 // 
 // 
 // 1 16 0 0 -1.5 3.65625 0 0 0 0 3.65625 0 1.5 0 4-4con3.dat
-  [1,16,0,0,-1.5,3.65625,0,0,0,0,3.65625,0,1.5,0, ldraw_lib__4_4con3()],
+  [1,16,0,0,-1.5,3.65625,0,0,0,0,3.65625,0,1.5,0, ldraw_lib__4_4con3(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 -3.5 3.65625 0 0 0 0 3.65625 0 1.5 0 4-4con3.dat
-  [1,16,0,0,-3.5,3.65625,0,0,0,0,3.65625,0,1.5,0, ldraw_lib__4_4con3()],
+  [1,16,0,0,-3.5,3.65625,0,0,0,0,3.65625,0,1.5,0, ldraw_lib__4_4con3(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 0 10.96875 0 0 0 0 10.96875 0 -2 0 4-4cylo.dat
-  [1,16,0,0,0,10.96875,0,0,0,0,10.96875,0,-2,0, ldraw_lib__4_4cylo()],
+  [1,16,0,0,0,10.96875,0,0,0,0,10.96875,0,-2,0, ldraw_lib__4_4cylo(realsolid)],
 // 1 16 0 0 -1.5 14.625 0 0 0 0 14.625 0 -2 0 4-4cylo.dat
-  [1,16,0,0,-1.5,14.625,0,0,0,0,14.625,0,-2,0, ldraw_lib__4_4cylo()],
+  [1,16,0,0,-1.5,14.625,0,0,0,0,14.625,0,-2,0, ldraw_lib__4_4cylo(realsolid)],
 ];
 module ldraw_lib__u9405(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__u9405(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__u9405(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__u9405(line=0.2);

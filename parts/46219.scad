@@ -9,7 +9,8 @@ use <../p/48/4-4edge.scad>
 use <../p/axl5end.scad>
 use <../p/axlehol2.scad>
 use <../p/axlehole.scad>
-function ldraw_lib__46219() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__46219(realsolid=false) = [
 // 0 ~Technic Gear 12 Tooth Bevel with Single Axle Joiner
 // 0 Name: 46219.dat
 // 0 Author: Guy Vivan [guyvivan]
@@ -26,35 +27,35 @@ function ldraw_lib__46219() = [
 // 
 // 
 // 1 16 0 0 0 16 0 0 0 0 16 0 1 0 48\4-4edge.dat
-  [1,16,0,0,0,16,0,0,0,0,16,0,1,0, ldraw_lib__48__4_4edge()],
+  [1,16,0,0,0,16,0,0,0,0,16,0,1,0, ldraw_lib__48__4_4edge(realsolid)],
 // 1 16 0 0 0 16 0 0 0 0 16 0 0.5 0 48\4-4cyli.dat
-  [1,16,0,0,0,16,0,0,0,0,16,0,0.5,0, ldraw_lib__48__4_4cyli()],
+  [1,16,0,0,0,16,0,0,0,0,16,0,0.5,0, ldraw_lib__48__4_4cyli(realsolid)],
 // 1 16 0 0 0 16 0 0 0 0 16 0 1 0 48\4-4aring.dat
-  [1,16,0,0,0,16,0,0,0,0,16,0,1,0, ldraw_lib__48__4_4aring()],
+  [1,16,0,0,0,16,0,0,0,0,16,0,1,0, ldraw_lib__48__4_4aring(realsolid)],
 // 1 16 0 0 -21 3 0 0 0 0 3 0 1 0 4-4ring2.dat
-  [1,16,0,0,-21,3,0,0,0,0,3,0,1,0, ldraw_lib__4_4ring2()],
+  [1,16,0,0,-21,3,0,0,0,0,3,0,1,0, ldraw_lib__4_4ring2(realsolid)],
 // 1 16 0 0 -6 9 0 0 0 0 9 0 -15 0 4-4cylo.dat
-  [1,16,0,0,-6,9,0,0,0,0,9,0,-15,0, ldraw_lib__4_4cylo()],
+  [1,16,0,0,-6,9,0,0,0,0,9,0,-15,0, ldraw_lib__4_4cylo(realsolid)],
 // 1 16 0 0 0 9 0 0 0 0 9 0 -3 0 4-4cylo.dat
-  [1,16,0,0,0,9,0,0,0,0,9,0,-3,0, ldraw_lib__4_4cylo()],
+  [1,16,0,0,0,9,0,0,0,0,9,0,-3,0, ldraw_lib__4_4cylo(realsolid)],
 // 1 16 0 0 -6 10 0 0 0 0 10 0 3 0 4-4cylo.dat
-  [1,16,0,0,-6,10,0,0,0,0,10,0,3,0, ldraw_lib__4_4cylo()],
+  [1,16,0,0,-6,10,0,0,0,0,10,0,3,0, ldraw_lib__4_4cylo(realsolid)],
 // 1 16 0 0 -1 1 0 0 0 0 1 0 -20 0 axlehole.dat
-  [1,16,0,0,-1,1,0,0,0,0,1,0,-20,0, ldraw_lib__axlehole()],
+  [1,16,0,0,-1,1,0,0,0,0,1,0,-20,0, ldraw_lib__axlehole(realsolid)],
 // 1 16 0 0 0 3 0 0 0 0 3 0 1 0 4-4ring3.dat
-  [1,16,0,0,0,3,0,0,0,0,3,0,1,0, ldraw_lib__4_4ring3()],
+  [1,16,0,0,0,3,0,0,0,0,3,0,1,0, ldraw_lib__4_4ring3(realsolid)],
 // 1 16 0 0 0 4 0 0 0 0 4 0 1 0 4-4ring3.dat
-  [1,16,0,0,0,4,0,0,0,0,4,0,1,0, ldraw_lib__4_4ring3()],
+  [1,16,0,0,0,4,0,0,0,0,4,0,1,0, ldraw_lib__4_4ring3(realsolid)],
 // 1 16 0 0 -21 1 0 0 0 0 1 0 1 0 axlehol2.dat
-  [1,16,0,0,-21,1,0,0,0,0,1,0,1,0, ldraw_lib__axlehol2()],
+  [1,16,0,0,-21,1,0,0,0,0,1,0,1,0, ldraw_lib__axlehol2(realsolid)],
 // 1 16 0 0 -1 1 0 0 0 0 1 0 1 0 axlehol2.dat
-  [1,16,0,0,-1,1,0,0,0,0,1,0,1,0, ldraw_lib__axlehol2()],
+  [1,16,0,0,-1,1,0,0,0,0,1,0,1,0, ldraw_lib__axlehol2(realsolid)],
 // 1 16 0 0 -1 1 0 0 0 0 1 0 1 0 axl5end.dat
-  [1,16,0,0,-1,1,0,0,0,0,1,0,1,0, ldraw_lib__axl5end()],
+  [1,16,0,0,-1,1,0,0,0,0,1,0,1,0, ldraw_lib__axl5end(realsolid)],
 // 1 16 0 0 -3 -1 0 0 0 0 1 0 -1 0 4-4ring9.dat
-  [1,16,0,0,-3,-1,0,0,0,0,1,0,-1,0, ldraw_lib__4_4ring9()],
+  [1,16,0,0,-3,-1,0,0,0,0,1,0,-1,0, ldraw_lib__4_4ring9(realsolid)],
 // 1 16 0 0 -6 1 0 0 0 0 1 0 1 0 4-4ring9.dat
-  [1,16,0,0,-6,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4ring9()],
+  [1,16,0,0,-6,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4ring9(realsolid)],
 // 
 // 2 24 9.52 7.31 0.5 7.93 6.09 3
   [2,24,9.52,7.31,0.5,7.93,6.09,3],
@@ -902,5 +903,5 @@ function ldraw_lib__46219() = [
   [5,24,0,-16,.5,0,-16,5,2.088,-15.8624,.5,-2.088,-15.8624,.5],
 ];
 module ldraw_lib__46219(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__46219(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__46219(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__46219(line=0.2);

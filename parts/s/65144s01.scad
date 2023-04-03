@@ -3,7 +3,8 @@ use <../../p/1-8cyli.scad>
 use <../../p/8/1-4cyls.scad>
 use <../../p/8/1-4edge.scad>
 use <../../p/8/1-4ndis.scad>
-function ldraw_lib__s__65144s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__65144s01(realsolid=false) = [
 // 0 ~Technic Shock Absorber 11L Cap, Quarter
 // 0 Name: s\65144s01.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -18,21 +19,21 @@ function ldraw_lib__s__65144s01() = [
 // 
 // 
 // 1 16 7.75 26.5 2.48755 0 -1 0 0 0 1.5 -1.48755 0 0 8\1-4ndis.dat
-  [1,16,7.75,26.5,2.48755,0,-1,0,0,0,1.5,-1.48755,0,0, ldraw_lib__8__1_4ndis()],
+  [1,16,7.75,26.5,2.48755,0,-1,0,0,0,1.5,-1.48755,0,0, ldraw_lib__8__1_4ndis(realsolid)],
 // 1 16 0 28 0 0 0 6.5 0 -2 0 6.5 0 0 1-8cyli.dat
-  [1,16,0,28,0,0,0,6.5,0,-2,0,6.5,0,0, ldraw_lib__1_8cyli()],
+  [1,16,0,28,0,0,0,6.5,0,-2,0,6.5,0,0, ldraw_lib__1_8cyli(realsolid)],
 // 1 16 0 26 0 0 0 6.5 0 -13 0 6.5 0 0 1-8cyli.dat
-  [1,16,0,26,0,0,0,6.5,0,-13,0,6.5,0,0, ldraw_lib__1_8cyli()],
+  [1,16,0,26,0,0,0,6.5,0,-13,0,6.5,0,0, ldraw_lib__1_8cyli(realsolid)],
 // 1 16 6.00535 26 2.48755 -1.4092 -1 0 0 0 2 2.1086 0 0 8\1-4ndis.dat
-  [1,16,6.00535,26,2.48755,-1.4092,-1,0,0,0,2,2.1086,0,0, ldraw_lib__8__1_4ndis()],
+  [1,16,6.00535,26,2.48755,-1.4092,-1,0,0,0,2,2.1086,0,0, ldraw_lib__8__1_4ndis(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 4.59615 26 2.48755 0 1.4092 0 0 0 2 2.1086 0 0 8\1-4cyls.dat
-  [1,16,4.59615,26,2.48755,0,1.4092,0,0,0,2,2.1086,0,0, ldraw_lib__8__1_4cyls()],
+  [1,16,4.59615,26,2.48755,0,1.4092,0,0,0,2,2.1086,0,0, ldraw_lib__8__1_4cyls(realsolid)],
 // 2 24 6.00535 28 2.48755 7.75 28 2.48755
   [2,24,6.00535,28,2.48755,7.75,28,2.48755],
 // 1 16 6.00535 26 2.48755 -1.4092 1 0 0 0 2 2.1086 0 0 8\1-4edge.dat
-  [1,16,6.00535,26,2.48755,-1.4092,1,0,0,0,2,2.1086,0,0, ldraw_lib__8__1_4edge()],
+  [1,16,6.00535,26,2.48755,-1.4092,1,0,0,0,2,2.1086,0,0, ldraw_lib__8__1_4edge(realsolid)],
 // 
 // 3 16 2.75 7 5.5527 2.75 7 6.2527 0 7 6.7527
   [3,16,2.75,7,5.5527,2.75,7,6.2527,0,7,6.7527],
@@ -98,5 +99,5 @@ function ldraw_lib__s__65144s01() = [
   [5,24,2.75,10.5,8.65,2.75,14.30743,5.82993,2.75,13,5.82993,2.48746,15.18314,6.00538],
 ];
 module ldraw_lib__s__65144s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__65144s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__65144s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__65144s01(line=0.2);

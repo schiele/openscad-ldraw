@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/87079s01.scad>
-function ldraw_lib__87079pz2() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__87079pz2(realsolid=false) = [
 // 0 Tile  2 x  4 with Black Cracks Pattern
 // 0 Name: 87079pz2.dat
 // 0 Author: Damien Roux [Darats]
@@ -17,7 +18,7 @@ function ldraw_lib__87079pz2() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\87079s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__87079s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__87079s01(realsolid)],
 // 3 0 38.5 0 0.94 38.5 0 3.34 33.45 0 2.37
   [3,0,38.5,0,0.94,38.5,0,3.34,33.45,0,2.37],
 // 4 0 32.73 0 12.21 38.5 0 9.63 38.5 0 11.8 35.44 0 12.39
@@ -160,5 +161,5 @@ function ldraw_lib__87079pz2() = [
   [3,16,-40,0,-20,40,0,-20,-26.41,0,-14.7],
 ];
 module ldraw_lib__87079pz2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__87079pz2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__87079pz2(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__87079pz2(line=0.2);

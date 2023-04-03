@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__4106331e() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4106331e(realsolid=false) = [
 // 0 Sticker  1.6 x  3.5 with "$" Sign
 // 0 Name: 4106331e.dat
 // 0 Author: Willy Tschager [Holly-Wood]
@@ -20,7 +21,7 @@ function ldraw_lib__4106331e() = [
 // 0 // Box
 // 
 // 1 16 0 -.25 0 35 0 0 0 .25 0 0 0 15.5 box5-12.dat
-  [1,16,0,-.25,0,35,0,0,0,.25,0,0,0,15.5, ldraw_lib__box5_12()],
+  [1,16,0,-.25,0,35,0,0,0,.25,0,0,0,15.5, ldraw_lib__box5_12(realsolid)],
 // 
 // 0 // White
 // 4 15 -.688 -.25 10.239 -1.572 -.25 10.239 -1.572 -.25 7.309 -.688 -.25 7.35
@@ -1806,5 +1807,5 @@ function ldraw_lib__4106331e() = [
   [3,0,-23.15,-.25,9.85,-28.35,-.25,9.85,-28.35,-.25,5.15],
 ];
 module ldraw_lib__4106331e(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4106331e(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4106331e(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4106331e(line=0.2);

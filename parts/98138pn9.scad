@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/4-4ering.scad>
 use <s/98138s01.scad>
-function ldraw_lib__98138pn9() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__98138pn9(realsolid=false) = [
 // 0 Tile  1 x  1 Round with Blue Sad Face Pattern
 // 0 Name: 98138pn9.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -18,9 +19,9 @@ function ldraw_lib__98138pn9() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\98138s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01(realsolid)],
 // 1 16 0 0 0 9 0 0 0 1 0 0 0 9 4-4ering.dat
-  [1,16,0,0,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4ering()],
+  [1,16,0,0,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4ering(realsolid)],
 // 4 16 -3.62 0 1.45 -4.17433 0 1.67961 -4.22 0 1.45 -4.17433 0 1.22039
   [4,16,-3.62,0,1.45,-4.17433,0,1.67961,-4.22,0,1.45,-4.17433,0,1.22039],
 // 4 16 -3.62 0 1.45 -4.17433 0 1.22039 -4.04426 0 1.02574 -3.84961 0 0.89567
@@ -368,5 +369,5 @@ function ldraw_lib__98138pn9() = [
   [4,16,-3.66,0,-0.58,-4.23403,0,-0.46582,-3.86,0,-3.57,-2.8,0,-3.35],
 ];
 module ldraw_lib__98138pn9(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__98138pn9(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__98138pn9(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__98138pn9(line=0.2);

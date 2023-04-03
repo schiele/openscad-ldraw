@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__4201639s01a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__4201639s01a(realsolid=false) = [
 // 0 ~"CARGO" Background
 // 0 Name: s\4201639s01a.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -293,5 +294,5 @@ function ldraw_lib__s__4201639s01a() = [
   [3,16,45,0,17.3,26.7,0,17.2,42.6,0,16.6],
 ];
 module ldraw_lib__s__4201639s01a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__4201639s01a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__4201639s01a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__4201639s01a(line=0.2);

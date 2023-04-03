@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__30361ps1s03() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__30361ps1s03(realsolid=false) = [
 // 0 ~Cylinder  2 x  2 x  2 Robot Body with SW R2 Pattern Grid  1
 // 0 Name: s\30361ps1s03.dat
 // 0 Author: Daniel Goerner [TK-949]
@@ -223,5 +224,5 @@ function ldraw_lib__s__30361ps1s03() = [
   [4,16,14.14,19.03,-14.14,11.62,19.03,-15.824,12.14,19.66,-15.477,13.62,19.66,-14.487],
 ];
 module ldraw_lib__s__30361ps1s03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__30361ps1s03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__30361ps1s03(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__30361ps1s03(line=0.2);

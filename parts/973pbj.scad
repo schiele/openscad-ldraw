@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/1-4cyli.scad>
 use <s/973s01.scad>
-function ldraw_lib__973pbj() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__973pbj(realsolid=false) = [
 // 0 Minifig Torso Female with Jacket, 2 Pockets, Buttons, Gold Necklace Pattern
 // 0 Name: 973pbj.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -18,9 +19,9 @@ function ldraw_lib__973pbj() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01(realsolid)],
 // 1 0 0 -4 0 4.243 0 -4.243 0 -8 0 -4.243 0 -4.243 1-4cyli.dat
-  [1,0,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli()],
+  [1,0,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli(realsolid)],
 // 
 // 4 82 -4.574 1.248 -10 -5.084 0.636 -10 -5.9 0.636 -10 -5.033 1.656 -10
   [4,82,-4.574,1.248,-10,-5.084,0.636,-10,-5.9,0.636,-10,-5.033,1.656,-10],
@@ -1532,5 +1533,5 @@ function ldraw_lib__973pbj() = [
   [4,16,0,0.6,10,-9.361,0.873,10,-12,0,10,12,0,10],
 ];
 module ldraw_lib__973pbj(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__973pbj(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__973pbj(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__973pbj(line=0.2);

@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/2-4cyls.scad>
 use <s/2698s01.scad>
-function ldraw_lib__2698p06() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2698p06(realsolid=false) = [
 // 0 Technic Action Figure Torso with Blue Seatbelt and Red Buckle Pattern
 // 0 Name: 2698p06.dat
 // 0 Author: Max Martin Richter [MMR1988]
@@ -18,7 +19,7 @@ function ldraw_lib__2698p06() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2698s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2698s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2698s01(realsolid)],
 // 
 // 4 1 0.8 -11.4 -13.5041 0.8 -7.4 -13.6781 1.37405 -7.5522 -13.67148 1.86065 -7.9858 -13.65262
   [4,1,0.8,-11.4,-13.5041,0.8,-7.4,-13.6781,1.37405,-7.5522,-13.67148,1.86065,-7.9858,-13.65262],
@@ -706,9 +707,9 @@ function ldraw_lib__2698p06() = [
   [4,16,5.58519,-30.99365,-12.65178,6.89519,-38.41365,-12.32925,-6.89519,-38.41365,-12.32925,-5.58519,-30.99365,-12.65178],
 // 
 // 1 16 -19 -46 0 0 -3 0 12 0 0 0 0 -12 2-4cyls.dat
-  [1,16,-19,-46,0,0,-3,0,12,0,0,0,0,-12, ldraw_lib__2_4cyls()],
+  [1,16,-19,-46,0,0,-3,0,12,0,0,0,0,-12, ldraw_lib__2_4cyls(realsolid)],
 // 1 16 19 -46 0 0 3 0 12 0 0 0 0 -12 2-4cyls.dat
-  [1,16,19,-46,0,0,3,0,12,0,0,0,0,-12, ldraw_lib__2_4cyls()],
+  [1,16,19,-46,0,0,3,0,12,0,0,0,0,-12, ldraw_lib__2_4cyls(realsolid)],
 // 
 // 5 24 -19 -37.51472 -8.48528 -15 -37.51472 -8.48528 -19 -34.00012 -4.970677 -19 -41.40777 -11.08687
   [5,24,-19,-37.51472,-8.48528,-15,-37.51472,-8.48528,-19,-34.00012,-4.970677,-19,-41.40777,-11.08687],
@@ -754,5 +755,5 @@ function ldraw_lib__2698p06() = [
   [5,24,15,-54.486,-8.485,5,-54.486,-8.485,-1,-52.592,-9.75,9,-57.086,-4.592],
 ];
 module ldraw_lib__2698p06(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2698p06(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2698p06(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2698p06(line=0.2);

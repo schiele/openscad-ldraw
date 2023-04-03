@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <32181.scad>
 use <32182.scad>
-function ldraw_lib__32181c05() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__32181c05(realsolid=false) = [
 // 0 Technic Shock Absorber 10L Damped with Black Cap Body Assembly
 // 0 Name: 32181c05.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -16,10 +17,10 @@ function ldraw_lib__32181c05() = [
 // 
 // 
 // 1 0 0 90 0 1 0 0 0 1 0 0 0 1 32182.dat
-  [1,0,0,90,0,1,0,0,0,1,0,0,0,1, ldraw_lib__32182()],
+  [1,0,0,90,0,1,0,0,0,1,0,0,0,1, ldraw_lib__32182(realsolid)],
 // 1 16 0 90 0 1 0 0 0 1 0 0 0 1 32181.dat
-  [1,16,0,90,0,1,0,0,0,1,0,0,0,1, ldraw_lib__32181()],
+  [1,16,0,90,0,1,0,0,0,1,0,0,0,1, ldraw_lib__32181(realsolid)],
 ];
 module ldraw_lib__32181c05(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__32181c05(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__32181c05(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__32181c05(line=0.2);

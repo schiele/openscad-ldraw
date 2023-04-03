@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/2507pa1s01.scad>
 use <s/2507s01.scad>
-function ldraw_lib__2507pa1() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2507pa1(realsolid=false) = [
 // 0 Windscreen 10 x  4 x  2.333 Canopy with Blue Outlines and Red Square Pattern
 // 0 Name: 2507pa1.dat
 // 0 Author: Mikkel Bech Jensen [gaia]
@@ -18,11 +19,11 @@ function ldraw_lib__2507pa1() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2507s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2507s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2507s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2507pa1s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2507pa1s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2507pa1s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\2507pa1s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__2507pa1s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__2507pa1s01(realsolid)],
 // 
 // 4 16 20 52 -196 20 46 -196 -20 46 -196 -20 52 -196
   [4,16,20,52,-196,20,46,-196,-20,46,-196,-20,52,-196],
@@ -34,5 +35,5 @@ function ldraw_lib__2507pa1() = [
   [4,16,20,46,-196,20,-4,-76,-20,-4,-76,-20,46,-196],
 ];
 module ldraw_lib__2507pa1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2507pa1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2507pa1(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2507pa1(line=0.2);

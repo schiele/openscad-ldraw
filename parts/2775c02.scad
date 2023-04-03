@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <2775c01.scad>
 use <u9136.scad>
-function ldraw_lib__2775c02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2775c02(realsolid=false) = [
 // 0 Electric Plug (Type 4) Twin Extra-Wide with Cable End
 // 0 Name: 2775c02.dat
 // 0 Author: Steffen [Steffen]
@@ -18,10 +19,10 @@ function ldraw_lib__2775c02() = [
 // 
 // 
 // 1 375 0 0 25 0 0 1 1 0 0 0 1 0 u9136.dat
-  [1,375,0,0,25,0,0,1,1,0,0,0,1,0, ldraw_lib__u9136()],
+  [1,375,0,0,25,0,0,1,1,0,0,0,1,0, ldraw_lib__u9136(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 2775c01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2775c01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2775c01(realsolid)],
 ];
 module ldraw_lib__2775c02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2775c02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2775c02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2775c02(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__4114141e() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4114141e(realsolid=false) = [
 // 0 Sticker  1.7 x  1.7 with White/Red Dots Patch
 // 0 Name: 4114141e.dat
 // 0 Author: Merlijn Wissink [legolijntje]
@@ -17,7 +18,7 @@ function ldraw_lib__4114141e() = [
 // 
 // 
 // 1 16 0 -.25 0 17.5 0 0 0 .25 0 0 0 17.5 box5-12.dat
-  [1,16,0,-.25,0,17.5,0,0,0,.25,0,0,0,17.5, ldraw_lib__box5_12()],
+  [1,16,0,-.25,0,17.5,0,0,0,.25,0,0,0,17.5, ldraw_lib__box5_12(realsolid)],
 // 
 // 3 4 1.83357 -0.25 6.96643 1.309 -0.250 5.700 3.1 -0.25 5.7
   [3,4,1.83357,-0.25,6.96643,1.309,-0.250,5.700,3.1,-0.25,5.7],
@@ -2493,5 +2494,5 @@ function ldraw_lib__4114141e() = [
   [3,15,-3.3,-0.25,12.4,-4.2,-0.25,11.1,-3.0,-0.25,11.8],
 ];
 module ldraw_lib__4114141e(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4114141e(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4114141e(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4114141e(line=0.2);

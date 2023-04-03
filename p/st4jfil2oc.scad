@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__st4jfil2oc() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__st4jfil2oc(realsolid=false) = [
 // 0 Stud Tube Open to Fillet Narrow (2LDu) Joint Off Centre
 // 0 Name: st4jfil2oc.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -73,5 +74,5 @@ function ldraw_lib__st4jfil2oc() = [
   [5,24,8,0,0,8,-4,0,7.391,0,3.0615,7.391,0,-3.0615],
 ];
 module ldraw_lib__st4jfil2oc(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__st4jfil2oc(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__st4jfil2oc(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__st4jfil2oc(line=0.2);

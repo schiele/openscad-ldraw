@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__6296256e() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6296256e(realsolid=false) = [
 // 0 Sticker  1.9 x  1.8 with "nuova 500" Emblem
 // 0 Name: 6296256e.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -17,7 +18,7 @@ function ldraw_lib__6296256e() = [
 // 
 // 
 // 1 16 0 -.25 0 17.5 0 0 0 .25 0 0 0 18.75 box5-12.dat
-  [1,16,0,-.25,0,17.5,0,0,0,.25,0,0,0,18.75, ldraw_lib__box5_12()],
+  [1,16,0,-.25,0,17.5,0,0,0,.25,0,0,0,18.75, ldraw_lib__box5_12(realsolid)],
 // 4 0 2.07 -.25 2.41 4.26 -.25 3.95 4.31 -.25 4.85 1.68 -.25 3.01
   [4,0,2.07,-.25,2.41,4.26,-.25,3.95,4.31,-.25,4.85,1.68,-.25,3.01],
 // 4 0 13.11 -.25 8.45 12.87 -.25 8.98 12.39 -.25 9.41 11.67 -.25 8.69
@@ -574,5 +575,5 @@ function ldraw_lib__6296256e() = [
   [3,226,8.37,-.25,7.73,9.8,-.25,8.74,-17.5,-.25,18.75],
 ];
 module ldraw_lib__6296256e(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6296256e(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6296256e(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6296256e(line=0.2);

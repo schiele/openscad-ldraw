@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__98393f() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__98393f(realsolid=false) = [
 // 0 Figure Friends Medical Feeding Bottle
 // 0 Name: 98393f.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -1554,5 +1555,5 @@ function ldraw_lib__98393f() = [
   [5,24,-2.623,-21.775,4.976,-3.203,-20.5,4,0,-21.652,4.985,-4.555,-20.5,4],
 ];
 module ldraw_lib__98393f(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__98393f(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__98393f(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__98393f(line=0.2);

@@ -4,7 +4,8 @@ use <../p/box5.scad>
 use <../p/rect1.scad>
 use <../p/rect2p.scad>
 use <../p/rect3.scad>
-function ldraw_lib__t1047() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__t1047(realsolid=false) = [
 // 0 ~| Circuit Cubes Switch
 // 0 Name: t1047.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -21,11 +22,11 @@ function ldraw_lib__t1047() = [
 // 
 // 
 // 1 494 0 0 0 9 0 0 0 0 5.5 0 11 0 box5.dat
-  [1,494,0,0,0,9,0,0,0,0,5.5,0,11,0, ldraw_lib__box5()],
+  [1,494,0,0,0,9,0,0,0,0,5.5,0,11,0, ldraw_lib__box5(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 494 0 0 0 5 0 0 0 0 3 0 1 0 box4.dat
-  [1,494,0,0,0,5,0,0,0,0,3,0,1,0, ldraw_lib__box4()],
+  [1,494,0,0,0,5,0,0,0,0,3,0,1,0, ldraw_lib__box4(realsolid)],
 // 4 494 9 5.5 0 5 3 0 -5 3 0 -9 5.5 0
   [4,494,9,5.5,0,5,3,0,-5,3,0,-9,5.5,0],
 // 4 494 5 -3 0 5 3 0 9 5.5 0 9 -5.5 0
@@ -35,11 +36,11 @@ function ldraw_lib__t1047() = [
 // 4 494 -5 3 0 -5 -3 0 -9 -5.5 0 -9 5.5 0
   [4,494,-5,3,0,-5,-3,0,-9,-5.5,0,-9,5.5,0],
 // 1 16 2 0 1 -3 0 0 0 0 3 0 1 0 rect1.dat
-  [1,16,2,0,1,-3,0,0,0,0,3,0,1,0, ldraw_lib__rect1()],
+  [1,16,2,0,1,-3,0,0,0,0,3,0,1,0, ldraw_lib__rect1(realsolid)],
 // 1 16 -5 0 -1 0 1 0 3 0 0 0 0 -2 rect3.dat
-  [1,16,-5,0,-1,0,1,0,3,0,0,0,0,-2, ldraw_lib__rect3()],
+  [1,16,-5,0,-1,0,1,0,3,0,0,0,0,-2, ldraw_lib__rect3(realsolid)],
 // 1 16 -1 0 -1 0 -1 0 -3 0 0 0 0 -2 rect3.dat
-  [1,16,-1,0,-1,0,-1,0,-3,0,0,0,0,-2, ldraw_lib__rect3()],
+  [1,16,-1,0,-1,0,-1,0,-3,0,0,0,0,-2, ldraw_lib__rect3(realsolid)],
 // 4 16 -1 3 -3 -1.6 3 -4 -2.3 3 -3 -1 3 1
   [4,16,-1,3,-3,-1.6,3,-4,-2.3,3,-3,-1,3,1],
 // 3 16 -3 3 -4 -3.7 3 -3 -2.3 3 -3
@@ -57,18 +58,18 @@ function ldraw_lib__t1047() = [
 // 4 16 -1 -3 1 -5 -3 1 -3.7 -3 -3 -2.3 -3 -3
   [4,16,-1,-3,1,-5,-3,1,-3.7,-3,-3,-2.3,-3,-3],
 // 1 16 -1.3 0 -3.5 0 -1 -0.3 -3 0 0 0 0 -0.5 rect3.dat
-  [1,16,-1.3,0,-3.5,0,-1,-0.3,-3,0,0,0,0,-0.5, ldraw_lib__rect3()],
+  [1,16,-1.3,0,-3.5,0,-1,-0.3,-3,0,0,0,0,-0.5, ldraw_lib__rect3(realsolid)],
 // 1 16 -1.95 0 -3.5 0 1 -0.35 -3 0 0 0 0 0.5 rect3.dat
-  [1,16,-1.95,0,-3.5,0,1,-0.35,-3,0,0,0,0,0.5, ldraw_lib__rect3()],
+  [1,16,-1.95,0,-3.5,0,1,-0.35,-3,0,0,0,0,0.5, ldraw_lib__rect3(realsolid)],
 // 1 16 -2.65 0 -3.5 0 -1 -0.35 -3 0 0 0 0 -0.5 rect3.dat
-  [1,16,-2.65,0,-3.5,0,-1,-0.35,-3,0,0,0,0,-0.5, ldraw_lib__rect3()],
+  [1,16,-2.65,0,-3.5,0,-1,-0.35,-3,0,0,0,0,-0.5, ldraw_lib__rect3(realsolid)],
 // 1 16 -3.35 0 -3.5 0 1 -0.35 -3 0 0 0 0 0.5 rect3.dat
-  [1,16,-3.35,0,-3.5,0,1,-0.35,-3,0,0,0,0,0.5, ldraw_lib__rect3()],
+  [1,16,-3.35,0,-3.5,0,1,-0.35,-3,0,0,0,0,0.5, ldraw_lib__rect3(realsolid)],
 // 1 16 -4.05 0 -3.5 0 -1 -0.35 -3 0 0 0 0 -0.5 rect3.dat
-  [1,16,-4.05,0,-3.5,0,-1,-0.35,-3,0,0,0,0,-0.5, ldraw_lib__rect3()],
+  [1,16,-4.05,0,-3.5,0,-1,-0.35,-3,0,0,0,0,-0.5, ldraw_lib__rect3(realsolid)],
 // 1 16 -4.7 0 -3.5 0.3 1 0 0 0 -3 -0.5 0 0 rect2p.dat
-  [1,16,-4.7,0,-3.5,0.3,1,0,0,0,-3,-0.5,0,0, ldraw_lib__rect2p()],
+  [1,16,-4.7,0,-3.5,0.3,1,0,0,0,-3,-0.5,0,0, ldraw_lib__rect2p(realsolid)],
 ];
 module ldraw_lib__t1047(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__t1047(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__t1047(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__t1047(line=0.2);

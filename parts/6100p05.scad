@@ -2,7 +2,8 @@ use <../lib.scad>
 use <s/6100s02.scad>
 use <s/6100s06.scad>
 use <s/6100s07.scad>
-function ldraw_lib__6100p05() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6100p05(realsolid=false) = [
 // 0 Baseplate 32 x 32 Road 9-Stud 3-Lane w/ Centre & Left Numbered
 // 0 Name: 6100p05.dat
 // 0 Author: Alex Taylor [anathema]
@@ -17,7 +18,7 @@ function ldraw_lib__6100p05() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\6100s02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6100s02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6100s02(realsolid)],
 // 4 16 -124 0 40 -76 0 40 -76 0 320 -124 0 320
   [4,16,-124,0,40,-76,0,40,-76,0,320,-124,0,320],
 // 4 16 -264 0 -114 -136 0 -114 -136 0 320 -264 0 320
@@ -115,10 +116,10 @@ function ldraw_lib__6100p05() = [
 // 4 16 162 0 -119 177 0 -112 177 0 -99 162 0 -99
   [4,16,162,0,-119,177,0,-112,177,0,-99,162,0,-99],
 // 1 15 2 0 -124 1 0 0 0 1 0 0 0 1 s\6100s06.dat
-  [1,15,2,0,-124,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6100s06()],
+  [1,15,2,0,-124,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6100s06(realsolid)],
 // 1 15 172 0 -124 1 0 0 0 1 0 0 0 1 s\6100s07.dat
-  [1,15,172,0,-124,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6100s07()],
+  [1,15,172,0,-124,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6100s07(realsolid)],
 ];
 module ldraw_lib__6100p05(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6100p05(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6100p05(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6100p05(line=0.2);

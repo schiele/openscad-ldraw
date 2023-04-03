@@ -3,7 +3,8 @@ use <../p/4-4disc.scad>
 use <../p/4-4ndis.scad>
 use <../p/4-4ring4.scad>
 use <s/3024s01.scad>
-function ldraw_lib__3024pz1() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3024pz1(realsolid=false) = [
 // 0 Plate  1 x  1 with Belt Buckle Pattern
 // 0 Name: 3024pz1.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -20,14 +21,14 @@ function ldraw_lib__3024pz1() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3024s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3024s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3024s01(realsolid)],
 // 
 // 1 80 0 4 -10 2.5 0 0 0 0 -2.5 0 1 0 4-4ndis.dat
-  [1,80,0,4,-10,2.5,0,0,0,0,-2.5,0,1,0, ldraw_lib__4_4ndis()],
+  [1,80,0,4,-10,2.5,0,0,0,0,-2.5,0,1,0, ldraw_lib__4_4ndis(realsolid)],
 // 1 80 0 4 -10 2 0 0 0 0 -2 0 1 0 4-4disc.dat
-  [1,80,0,4,-10,2,0,0,0,0,-2,0,1,0, ldraw_lib__4_4disc()],
+  [1,80,0,4,-10,2,0,0,0,0,-2,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 72 0 4 -10 .5 0 0 0 0 -.5 0 1 0 4-4ring4.dat
-  [1,72,0,4,-10,.5,0,0,0,0,-.5,0,1,0, ldraw_lib__4_4ring4()],
+  [1,72,0,4,-10,.5,0,0,0,0,-.5,0,1,0, ldraw_lib__4_4ring4(realsolid)],
 // 3 16 -3.5 0 -10 -10 0 -10 -5.5 2 -10
   [3,16,-3.5,0,-10,-10,0,-10,-5.5,2,-10],
 // 3 16 10 0 -10 3.5 0 -10 5.5 2 -10
@@ -78,5 +79,5 @@ function ldraw_lib__3024pz1() = [
   [3,80,-2.64,.98,-10,-4.15,2.49,-10,-2.5,1.5,-10],
 ];
 module ldraw_lib__3024pz1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3024pz1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3024pz1(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3024pz1(line=0.2);

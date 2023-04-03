@@ -2,7 +2,8 @@ use <../lib.scad>
 use <4-4cyli.scad>
 use <4-4edge.scad>
 use <4-4ring3.scad>
-function ldraw_lib__stud4a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__stud4a(realsolid=false) = [
 // 0 Stud Tube Open without Base Edges
 // 0 Name: stud4a.dat
 // 0 Author: James Jessiman
@@ -23,19 +24,19 @@ function ldraw_lib__stud4a() = [
 // 
 // 
 // 1 16 0 -4 0 6 0 0 0 1 0 0 0 6 4-4edge.dat
-  [1,16,0,-4,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4edge()],
+  [1,16,0,-4,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 -4 0 8 0 0 0 1 0 0 0 8 4-4edge.dat
-  [1,16,0,-4,0,8,0,0,0,1,0,0,0,8, ldraw_lib__4_4edge()],
+  [1,16,0,-4,0,8,0,0,0,1,0,0,0,8, ldraw_lib__4_4edge(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -4 0 6 0 0 0 4 0 0 0 6 4-4cyli.dat
-  [1,16,0,-4,0,6,0,0,0,4,0,0,0,6, ldraw_lib__4_4cyli()],
+  [1,16,0,-4,0,6,0,0,0,4,0,0,0,6, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 -4 0 8 0 0 0 4 0 0 0 8 4-4cyli.dat
-  [1,16,0,-4,0,8,0,0,0,4,0,0,0,8, ldraw_lib__4_4cyli()],
+  [1,16,0,-4,0,8,0,0,0,4,0,0,0,8, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 -4 0 2 0 0 0 1 0 0 0 2 4-4ring3.dat
-  [1,16,0,-4,0,2,0,0,0,1,0,0,0,2, ldraw_lib__4_4ring3()],
+  [1,16,0,-4,0,2,0,0,0,1,0,0,0,2, ldraw_lib__4_4ring3(realsolid)],
 // 0
 ];
 module ldraw_lib__stud4a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__stud4a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__stud4a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__stud4a(line=0.2);

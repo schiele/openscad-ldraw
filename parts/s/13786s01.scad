@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <13786s05.scad>
-function ldraw_lib__s__13786s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__13786s01(realsolid=false) = [
 // 0 ~Animal Cat Standing Looking Forward without Patterned Surfaces
 // 0 Name: s\13786s01.dat
 // 0 Author: Willy Tschager [Holly-Wood]
@@ -17,7 +18,7 @@ function ldraw_lib__s__13786s01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\13786s05.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__13786s05()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__13786s05(realsolid)],
 // 
 // 3 16 4.042 -27.474 -8.42 5.259 -21.723 -8.946 8.755 -26.062 -3.889
   [3,16,4.042,-27.474,-8.42,5.259,-21.723,-8.946,8.755,-26.062,-3.889],
@@ -73,5 +74,5 @@ function ldraw_lib__s__13786s01() = [
   [3,16,-7.874,-43.714,-7.387,-4.418,-47.46,-7.079,-8.685,-45.502,-.917],
 ];
 module ldraw_lib__s__13786s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__13786s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__13786s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__13786s01(line=0.2);

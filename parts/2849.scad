@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/studel.scad>
-function ldraw_lib__2849() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2849(realsolid=false) = [
 // 0 Electric 9V Battery Box  4 x 14 x  4 Buttons (Needs Work)
 // 0 Name: 2849.dat
 // 0 Author: Marc Klein [marckl]
@@ -263,14 +264,14 @@ function ldraw_lib__2849() = [
 // 4 16 -34 -54 74 -34 -54 46 -6 -54 46 -6 -54 74
   [4,16,-34,-54,74,-34,-54,46,-6,-54,46,-6,-54,74],
 // 1 16 10 -48 110 -1 0 0 0 1 0 0 0 1 studel.dat
-  [1,16,10,-48,110,-1,0,0,0,1,0,0,0,1, ldraw_lib__studel()],
+  [1,16,10,-48,110,-1,0,0,0,1,0,0,0,1, ldraw_lib__studel(realsolid)],
 // 1 16 -10 -48 110 1 0 0 0 1 0 0 0 -1 studel.dat
-  [1,16,-10,-48,110,1,0,0,0,1,0,0,0,-1, ldraw_lib__studel()],
+  [1,16,-10,-48,110,1,0,0,0,1,0,0,0,-1, ldraw_lib__studel(realsolid)],
 // 1 16 10 -48 90 -1 0 0 0 1 0 0 0 1 studel.dat
-  [1,16,10,-48,90,-1,0,0,0,1,0,0,0,1, ldraw_lib__studel()],
+  [1,16,10,-48,90,-1,0,0,0,1,0,0,0,1, ldraw_lib__studel(realsolid)],
 // 1 16 -10 -48 90 1 0 0 0 1 0 0 0 -1 studel.dat
-  [1,16,-10,-48,90,1,0,0,0,1,0,0,0,-1, ldraw_lib__studel()],
+  [1,16,-10,-48,90,1,0,0,0,1,0,0,0,-1, ldraw_lib__studel(realsolid)],
 ];
 module ldraw_lib__2849(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2849(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2849(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2849(line=0.2);

@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__3070bate() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__3070bate(realsolid=false) = [
 // 0 ~Tile  1 x  1 with "E" Pattern
 // 0 Name: s\3070bate.dat
 // 0 Author: Chris Dee [cwdee]
@@ -28,5 +29,5 @@ function ldraw_lib__s__3070bate() = [
 // 0
 ];
 module ldraw_lib__s__3070bate(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__3070bate(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__3070bate(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__3070bate(line=0.2);

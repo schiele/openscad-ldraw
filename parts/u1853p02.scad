@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/2-4disc.scad>
 use <../p/2-4ndis.scad>
 use <s/u1853s01.scad>
-function ldraw_lib__u1853p02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__u1853p02(realsolid=false) = [
 // 0 Roadsign Square Small without Base with Parking Pattern
 // 0 Name: u1853p02.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -17,7 +18,7 @@ function ldraw_lib__u1853p02() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\u1853s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__u1853s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__u1853s01(realsolid)],
 // 0 //
 // 4 16 7.5307 -72.3976 -2.1 6 -72.9 -2.1 3 -68.8 -2.1 3.9184 -68.6173 -2.1
   [4,16,7.5307,-72.3976,-2.1,6,-72.9,-2.1,3,-68.8,-2.1,3.9184,-68.6173,-2.1],
@@ -47,9 +48,9 @@ function ldraw_lib__u1853p02() = [
   [3,16,-3,-64,-2.1,-3,-68.8,-2.1,-7.1,-72.9,-2.1],
 // 0 //
 // 1 1 3 -66.4 -2.1 0 0 2.4 2.4 0 0 0 2.4 0 2-4disc.dat
-  [1,1,3,-66.4,-2.1,0,0,2.4,2.4,0,0,0,2.4,0, ldraw_lib__2_4disc()],
+  [1,1,3,-66.4,-2.1,0,0,2.4,2.4,0,0,0,2.4,0, ldraw_lib__2_4disc(realsolid)],
 // 1 1 6 -66.3 -2.1 0 0 4 6.6 0 0 0 4 0 2-4ndis.dat
-  [1,1,6,-66.3,-2.1,0,0,4,6.6,0,0,0,4,0, ldraw_lib__2_4ndis()],
+  [1,1,6,-66.3,-2.1,0,0,4,6.6,0,0,0,4,0, ldraw_lib__2_4ndis(realsolid)],
 // 4 1 12 -74 -2.1 10 -72.9 -2.1 10 -59.7 -2.1 12 -50 -2.1
   [4,1,12,-74,-2.1,10,-72.9,-2.1,10,-59.7,-2.1,12,-50,-2.1],
 // 3 1 6 -72.9 -2.1 10 -72.9 -2.1 12 -74 -2.1
@@ -69,5 +70,5 @@ function ldraw_lib__u1853p02() = [
 // 0 //
 ];
 module ldraw_lib__u1853p02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__u1853p02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__u1853p02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__u1853p02(line=0.2);

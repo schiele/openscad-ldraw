@@ -5,7 +5,8 @@ use <../../p/3-4ndis.scad>
 use <../../p/4-4disc.scad>
 use <../../p/4-4ring3.scad>
 use <../../p/48/1-16ndis.scad>
-function ldraw_lib__s__3040p02s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__3040p02s01(realsolid=false) = [
 // 0 ~Slope Brick 45  2 x  1 with White Rotary Dial Pattern - Neutral Areas
 // 0 Name: s\3040p02s01.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -22,35 +23,35 @@ function ldraw_lib__s__3040p02s01() = [
 // 0 // Primitives
 // 
 // 1 16 0 0 17.856 .9 0 0 0 1 0 0 0 .9 4-4ring3.dat
-  [1,16,0,0,17.856,.9,0,0,0,1,0,0,0,.9, ldraw_lib__4_4ring3()],
+  [1,16,0,0,17.856,.9,0,0,0,1,0,0,0,.9, ldraw_lib__4_4ring3(realsolid)],
 // 1 16 0 0 17.856 9 0 0 0 1 0 0 0 9 3-4ndis.dat
-  [1,16,0,0,17.856,9,0,0,0,1,0,0,0,9, ldraw_lib__3_4ndis()],
+  [1,16,0,0,17.856,9,0,0,0,1,0,0,0,9, ldraw_lib__3_4ndis(realsolid)],
 // 1 16 0 0 17.856 0 0 9 0 1 0 -9 0 0 48\1-16ndis.dat
-  [1,16,0,0,17.856,0,0,9,0,1,0,-9,0,0, ldraw_lib__48__1_16ndis()],
+  [1,16,0,0,17.856,0,0,9,0,1,0,-9,0,0, ldraw_lib__48__1_16ndis(realsolid)],
 // 1 16 0 0 17.856 9 0 0 0 1 0 0 0 -9 1-8ndis.dat
-  [1,16,0,0,17.856,9,0,0,0,1,0,0,0,-9, ldraw_lib__1_8ndis()],
+  [1,16,0,0,17.856,9,0,0,0,1,0,0,0,-9, ldraw_lib__1_8ndis(realsolid)],
 // 1 16 6 0 17.856 .75 0 0 0 1 0 0 0 .75 4-4disc.dat
-  [1,16,6,0,17.856,.75,0,0,0,1,0,0,0,.75, ldraw_lib__4_4disc()],
+  [1,16,6,0,17.856,.75,0,0,0,1,0,0,0,.75, ldraw_lib__4_4disc(realsolid)],
 // 1 16 5.25 0 20.855 .75 0 0 0 1 0 0 0 .75 4-4disc.dat
-  [1,16,5.25,0,20.855,.75,0,0,0,1,0,0,0,.75, ldraw_lib__4_4disc()],
+  [1,16,5.25,0,20.855,.75,0,0,0,1,0,0,0,.75, ldraw_lib__4_4disc(realsolid)],
 // 1 16 3 0 23.105 .75 0 0 0 1 0 0 0 .75 4-4disc.dat
-  [1,16,3,0,23.105,.75,0,0,0,1,0,0,0,.75, ldraw_lib__4_4disc()],
+  [1,16,3,0,23.105,.75,0,0,0,1,0,0,0,.75, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 0 24.355 .75 0 0 0 1 0 0 0 .75 4-4disc.dat
-  [1,16,0,0,24.355,.75,0,0,0,1,0,0,0,.75, ldraw_lib__4_4disc()],
+  [1,16,0,0,24.355,.75,0,0,0,1,0,0,0,.75, ldraw_lib__4_4disc(realsolid)],
 // 1 16 -3 0 23.105 .75 0 0 0 1 0 0 0 .75 4-4disc.dat
-  [1,16,-3,0,23.105,.75,0,0,0,1,0,0,0,.75, ldraw_lib__4_4disc()],
+  [1,16,-3,0,23.105,.75,0,0,0,1,0,0,0,.75, ldraw_lib__4_4disc(realsolid)],
 // 1 16 -5.25 0 20.855 .75 0 0 0 1 0 0 0 .75 4-4disc.dat
-  [1,16,-5.25,0,20.855,.75,0,0,0,1,0,0,0,.75, ldraw_lib__4_4disc()],
+  [1,16,-5.25,0,20.855,.75,0,0,0,1,0,0,0,.75, ldraw_lib__4_4disc(realsolid)],
 // 1 16 -6 0 17.856 .75 0 0 0 1 0 0 0 .75 4-4disc.dat
-  [1,16,-6,0,17.856,.75,0,0,0,1,0,0,0,.75, ldraw_lib__4_4disc()],
+  [1,16,-6,0,17.856,.75,0,0,0,1,0,0,0,.75, ldraw_lib__4_4disc(realsolid)],
 // 1 16 -5.25 0 14.855 .75 0 0 0 1 0 0 0 .75 4-4disc.dat
-  [1,16,-5.25,0,14.855,.75,0,0,0,1,0,0,0,.75, ldraw_lib__4_4disc()],
+  [1,16,-5.25,0,14.855,.75,0,0,0,1,0,0,0,.75, ldraw_lib__4_4disc(realsolid)],
 // 1 16 -3 0 12.605 .75 0 0 0 1 0 0 0 .75 4-4disc.dat
-  [1,16,-3,0,12.605,.75,0,0,0,1,0,0,0,.75, ldraw_lib__4_4disc()],
+  [1,16,-3,0,12.605,.75,0,0,0,1,0,0,0,.75, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 0 11.455 .75 0 0 0 1 0 0 0 .75 4-4disc.dat
-  [1,16,0,0,11.455,.75,0,0,0,1,0,0,0,.75, ldraw_lib__4_4disc()],
+  [1,16,0,0,11.455,.75,0,0,0,1,0,0,0,.75, ldraw_lib__4_4disc(realsolid)],
 // 1 16 3.75 0 13.355 .61436 0 -.43018 0 1 0 .43018 0 .61436 2-4disc.dat
-  [1,16,3.75,0,13.355,.61436,0,-.43018,0,1,0,.43018,0,.61436, ldraw_lib__2_4disc()],
+  [1,16,3.75,0,13.355,.61436,0,-.43018,0,1,0,.43018,0,.61436, ldraw_lib__2_4disc(realsolid)],
 // 0 // Faces
 // 0 // Square buttons and outer border
 // 3 16 -10 0 28.2842 0 0 26.856 10 0 28.2842
@@ -102,5 +103,5 @@ function ldraw_lib__s__3040p02s01() = [
   [3,16,9,0,8.856,6.3639,0,11.4921,3.9722,0,9.8015],
 ];
 module ldraw_lib__s__3040p02s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__3040p02s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__3040p02s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__3040p02s01(line=0.2);

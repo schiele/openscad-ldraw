@@ -4,7 +4,8 @@ use <../p/stud.scad>
 use <../p/stud3.scad>
 use <../p/stud4.scad>
 use <../p/stug2.scad>
-function ldraw_lib__2662() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2662(realsolid=false) = [
 // 0 Door Frame  2 x 10 x 12
 // 0 Name: 2662.dat
 // 0 Author: Marek Idec [Maras]
@@ -25,27 +26,27 @@ function ldraw_lib__2662() = [
 // 0 // Studs
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 stug2.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug2()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug2(realsolid)],
 // 1 16 30 8 -10 1 0 0 0 1 0 0 0 1 stud.dat
-  [1,16,30,8,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__stud()],
+  [1,16,30,8,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__stud(realsolid)],
 // 1 16 30 8 10 1 0 0 0 1 0 0 0 1 stud.dat
-  [1,16,30,8,10,1,0,0,0,1,0,0,0,1, ldraw_lib__stud()],
+  [1,16,30,8,10,1,0,0,0,1,0,0,0,1, ldraw_lib__stud(realsolid)],
 // 0 // Underside studs
 // 1 16 -150 276 0 1 0 0 0 -1 0 0 0 1 stud3.dat
-  [1,16,-150,276,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud3()],
+  [1,16,-150,276,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud3(realsolid)],
 // 1 16 30 12 0 0 0 1 0 -1 0 -1 0 0 stud3.dat
-  [1,16,30,12,0,0,0,1,0,-1,0,-1,0,0, ldraw_lib__stud3()],
+  [1,16,30,12,0,0,0,1,0,-1,0,-1,0,0, ldraw_lib__stud3(realsolid)],
 // 1 16 0 4 0 -1 0 0 0 -3 0 0 0 -1 stud4.dat
-  [1,16,0,4,0,-1,0,0,0,-3,0,0,0,-1, ldraw_lib__stud4()],
+  [1,16,0,4,0,-1,0,0,0,-3,0,0,0,-1, ldraw_lib__stud4(realsolid)],
 // 0 // Hinges
 // 1 16 -150 172 -23 1 0 0 0 1 0 0 0 1 s\2662s01.dat
-  [1,16,-150,172,-23,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2662s01()],
+  [1,16,-150,172,-23,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2662s01(realsolid)],
 // 1 16 -150 236 -23 1 0 0 0 1 0 0 0 1 s\2662s01.dat
-  [1,16,-150,236,-23,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2662s01()],
+  [1,16,-150,236,-23,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2662s01(realsolid)],
 // 1 16 -150 172 23 -1 0 0 0 1 0 0 0 -1 s\2662s01.dat
-  [1,16,-150,172,23,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__2662s01()],
+  [1,16,-150,172,23,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__2662s01(realsolid)],
 // 1 16 -150 236 23 -1 0 0 0 1 0 0 0 -1 s\2662s01.dat
-  [1,16,-150,236,23,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__2662s01()],
+  [1,16,-150,236,23,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__2662s01(realsolid)],
 // 0 // Created with stl2dat conversion tool
 // 4 16 22 12 16 36 12 16 24 12 11.5 22 12 11.5
   [4,16,22,12,16,36,12,16,24,12,11.5,22,12,11.5],
@@ -1095,5 +1096,5 @@ function ldraw_lib__2662() = [
 // 0
 ];
 module ldraw_lib__2662(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2662(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2662(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2662(line=0.2);

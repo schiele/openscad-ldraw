@@ -4,7 +4,8 @@ use <../p/4-4cylo.scad>
 use <../p/4-4ndis.scad>
 use <s/98366s01.scad>
 use <../p/stud4.scad>
-function ldraw_lib__98366() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__98366(realsolid=false) = [
 // 0 Minifig Helmet Roman Soldier
 // 0 Name: 98366.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -26,25 +27,25 @@ function ldraw_lib__98366() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\98366s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98366s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98366s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\98366s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__98366s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__98366s01(realsolid)],
 // 1 16 0 -6 0 1 0 0 0 -1.5 0 0 0 -1 stud4.dat
-  [1,16,0,-6,0,1,0,0,0,-1.5,0,0,0,-1, ldraw_lib__stud4()],
+  [1,16,0,-6,0,1,0,0,0,-1.5,0,0,0,-1, ldraw_lib__stud4(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -6 2 2 0 0 0 -7.5 0 0 0 -2 4-4cylo.dat
-  [1,16,0,-6,2,2,0,0,0,-7.5,0,0,0,-2, ldraw_lib__4_4cylo()],
+  [1,16,0,-6,2,2,0,0,0,-7.5,0,0,0,-2, ldraw_lib__4_4cylo(realsolid)],
 // 1 16 0 -6 2 1.41421 0 1.41421 0 -1 0 1.41421 0 -1.41421 4-4ndis.dat
-  [1,16,0,-6,2,1.41421,0,1.41421,0,-1,0,1.41421,0,-1.41421, ldraw_lib__4_4ndis()],
+  [1,16,0,-6,2,1.41421,0,1.41421,0,-1,0,1.41421,0,-1.41421, ldraw_lib__4_4ndis(realsolid)],
 // 1 16 0 -6 0 6 0 0 0 -1 0 0 0 -6 1-4chrd.dat
-  [1,16,0,-6,0,6,0,0,0,-1,0,0,0,-6, ldraw_lib__1_4chrd()],
+  [1,16,0,-6,0,6,0,0,0,-1,0,0,0,-6, ldraw_lib__1_4chrd(realsolid)],
 // 1 16 0 -6 0 -6 0 0 0 -1 0 0 0 -6 1-4chrd.dat
-  [1,16,0,-6,0,-6,0,0,0,-1,0,0,0,-6, ldraw_lib__1_4chrd()],
+  [1,16,0,-6,0,-6,0,0,0,-1,0,0,0,-6, ldraw_lib__1_4chrd(realsolid)],
 // 1 16 0 -6 0 6 0 0 0 -1 0 0 0 6 1-4chrd.dat
-  [1,16,0,-6,0,6,0,0,0,-1,0,0,0,6, ldraw_lib__1_4chrd()],
+  [1,16,0,-6,0,6,0,0,0,-1,0,0,0,6, ldraw_lib__1_4chrd(realsolid)],
 // 1 16 0 -6 0 -6 0 0 0 -1 0 0 0 6 1-4chrd.dat
-  [1,16,0,-6,0,-6,0,0,0,-1,0,0,0,6, ldraw_lib__1_4chrd()],
+  [1,16,0,-6,0,-6,0,0,0,-1,0,0,0,6, ldraw_lib__1_4chrd(realsolid)],
 // 4 16 2.013 -2.81 17.027 -2.013 -2.81 17.027 -2.037 -5.666 15.487 2.037 -5.666 15.487
   [4,16,2.013,-2.81,17.027,-2.013,-2.81,17.027,-2.037,-5.666,15.487,2.037,-5.666,15.487],
 // 4 16 2.037 -5.666 15.487 -2.037 -5.666 15.487 -2.05 -8.095 13.41 2.05 -8.095 13.41
@@ -169,5 +170,5 @@ function ldraw_lib__98366() = [
   [3,16,2.015,7.561,16.664,0,9.975,16.846,-2.015,7.561,16.664],
 ];
 module ldraw_lib__98366(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__98366(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__98366(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__98366(line=0.2);

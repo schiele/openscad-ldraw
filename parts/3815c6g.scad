@@ -2,7 +2,8 @@ use <../lib.scad>
 use <3815p6g.scad>
 use <3816p6g.scad>
 use <3817.scad>
-function ldraw_lib__3815c6g() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3815c6g(realsolid=false) = [
 // 0 ~Minifig Hips and Legs with White and Gold Markings Pattern (Obsolete)
 // 0 Name: 3815c6g.dat
 // 0 Author: Chris Dee [cwdee]
@@ -19,12 +20,12 @@ function ldraw_lib__3815c6g() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 3815p6g.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3815p6g()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3815p6g(realsolid)],
 // 1 16 0 12 0 1 0 0 0 1 0 0 0 1 3816p6g.dat
-  [1,16,0,12,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3816p6g()],
+  [1,16,0,12,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3816p6g(realsolid)],
 // 1 16 0 12 0 1 0 0 0 1 0 0 0 1 3817.dat
-  [1,16,0,12,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3817()],
+  [1,16,0,12,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3817(realsolid)],
 ];
 module ldraw_lib__3815c6g(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3815c6g(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3815c6g(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3815c6g(line=0.2);

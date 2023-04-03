@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/4-4ering.scad>
 use <s/98138s01.scad>
-function ldraw_lib__98138pc2() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__98138pc2(realsolid=false) = [
 // 0 Tile  1 x  1 Round with Dark Blue Compass Pattern
 // 0 Name: 98138pc2.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -16,9 +17,9 @@ function ldraw_lib__98138pc2() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\98138s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01(realsolid)],
 // 1 16 0 0 0 9 0 0 0 1 0 0 0 9 4-4ering.dat
-  [1,16,0,0,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4ering()],
+  [1,16,0,0,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4ering(realsolid)],
 // 4 272 0 0 -0.674 0 0 -3.652 0.665 0 -2.0467 0.337 0 -0.5837
   [4,272,0,0,-0.674,0,0,-3.652,0.665,0,-2.0467,0.337,0,-0.5837],
 // 4 272 0.337 0 -0.5837 0.665 0 -2.0467 1.2649 0 -1.741 0.5837 0 -0.337
@@ -475,5 +476,5 @@ function ldraw_lib__98138pc2() = [
   [4,272,0.9,0,8,2.2513,0,8.4151,-0.0035,0,8.712,0.3,0,8],
 ];
 module ldraw_lib__98138pc2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__98138pc2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__98138pc2(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__98138pc2(line=0.2);

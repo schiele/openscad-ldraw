@@ -4,7 +4,8 @@ use <../p/1-4rin11.scad>
 use <../p/1-4ring1.scad>
 use <s/2586ps1a.scad>
 use <s/2586s01.scad>
-function ldraw_lib__2586ps1() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2586ps1(realsolid=false) = [
 // 0 Minifig Shield Ovoid with SW Gungan Patrol Shield Pattern
 // 0 Name: 2586ps1.dat
 // 0 Author: Bernd Broich [bbroich]
@@ -29,19 +30,19 @@ function ldraw_lib__2586ps1() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2586s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2586s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2586s01(realsolid)],
 // 
 // 1 16 0 0 -8 -1 0 0 0 1 0 0 0 1 s\2586ps1a.dat
-  [1,16,0,0,-8,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__2586ps1a()],
+  [1,16,0,0,-8,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__2586ps1a(realsolid)],
 // 1 16 0 0 -8 1 0 0 0 1 0 0 0 1 s\2586ps1a.dat
-  [1,16,0,0,-8,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2586ps1a()],
+  [1,16,0,0,-8,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2586ps1a(realsolid)],
 // 1 0 0 31.5 -8 -0.3536 0 0.3536 0.3536 0 0.3536 0 1 0 1-4rin11.dat
-  [1,0,0,31.5,-8,-0.3536,0,0.3536,0.3536,0,0.3536,0,1,0, ldraw_lib__1_4rin11()],
+  [1,0,0,31.5,-8,-0.3536,0,0.3536,0.3536,0,0.3536,0,1,0, ldraw_lib__1_4rin11(realsolid)],
 // 1 82 0 31.5 -8 -0.3536 0 0.3536 0.3536 0 0.3536 0 1 0 1-4rin10.dat
-  [1,82,0,31.5,-8,-0.3536,0,0.3536,0.3536,0,0.3536,0,1,0, ldraw_lib__1_4rin10()],
+  [1,82,0,31.5,-8,-0.3536,0,0.3536,0.3536,0,0.3536,0,1,0, ldraw_lib__1_4rin10(realsolid)],
 // 1 82 0 31.5 -8 -1.7678 0 1.7678 1.7678 0 1.7678 0 1 0 1-4ring1.dat
-  [1,82,0,31.5,-8,-1.7678,0,1.7678,1.7678,0,1.7678,0,1,0, ldraw_lib__1_4ring1()],
+  [1,82,0,31.5,-8,-1.7678,0,1.7678,1.7678,0,1.7678,0,1,0, ldraw_lib__1_4ring1(realsolid)],
 ];
 module ldraw_lib__2586ps1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2586ps1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2586ps1(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2586ps1(line=0.2);

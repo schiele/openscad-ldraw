@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/15680s01.scad>
 use <s/15680s02.scad>
-function ldraw_lib__15680p01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__15680p01(realsolid=false) = [
 // 0 Figure Friends Legs with Full Length Skirt with Bright Light Blue Sides and Middle Triangle with Silver Stars Pattern
 // 0 Name: 15680p01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -18,13 +19,13 @@ function ldraw_lib__15680p01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\15680s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__15680s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__15680s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\15680s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__15680s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__15680s01(realsolid)],
 // 1 212 0 0 0 1 0 0 0 1 0 0 0 1 s\15680s02.dat
-  [1,212,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__15680s02()],
+  [1,212,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__15680s02(realsolid)],
 // 1 212 0 0 0 -1 0 0 0 1 0 0 0 1 s\15680s02.dat
-  [1,212,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__15680s02()],
+  [1,212,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__15680s02(realsolid)],
 // 3 212 0 -37.7 -5.6741 0 -35.3333 -5.655 0.3999 -35.335 -5.6442
   [3,212,0,-37.7,-5.6741,0,-35.3333,-5.655,0.3999,-35.335,-5.6442],
 // 4 80 0.0995 -32.5794 -5.6147 0.1547 -33.0861 -5.6202 0.0316 -32.9665 -5.6219 0 -32.75 -5.6198
@@ -1865,5 +1866,5 @@ function ldraw_lib__15680p01() = [
   [5,24,-6.2006,-4.7556,-9.0976,0,0,-9.46,0,-4.6667,-8.978,-7.6,0,-9.46],
 ];
 module ldraw_lib__15680p01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__15680p01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__15680p01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__15680p01(line=0.2);

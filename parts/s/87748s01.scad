@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/4-4cylc.scad>
 use <../../p/4-4disc.scad>
-function ldraw_lib__s__87748s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__87748s01(realsolid=false) = [
 // 0 ~Minifig Ring with Triangle without Top Face - 1/3
 // 0 Name: s\87748s01.dat
 // 0 Author: Santeri Piippo [arezey]
@@ -16,13 +17,13 @@ function ldraw_lib__s__87748s01() = [
 // 
 // 
 // 1 16 -16.83 0 19.151 2 8.6602 0 0 0 -4 -3.4641 5 0 4-4cylc.dat
-  [1,16,-16.83,0,19.151,2,8.6602,0,0,0,-4,-3.4641,5,0, ldraw_lib__4_4cylc()],
+  [1,16,-16.83,0,19.151,2,8.6602,0,0,0,-4,-3.4641,5,0, ldraw_lib__4_4cylc(realsolid)],
 // 1 16 -8.17 0 24.151 -2 -0.866 0 0 0 4 3.4641 -0.5 0 4-4disc.dat
-  [1,16,-8.17,0,24.151,-2,-0.866,0,0,0,4,3.4641,-0.5,0, ldraw_lib__4_4disc()],
+  [1,16,-8.17,0,24.151,-2,-0.866,0,0,0,4,3.4641,-0.5,0, ldraw_lib__4_4disc(realsolid)],
 // 1 16 8.17 0 24.151 -2 8.6602 0 0 0 -4 -3.4641 -5 0 4-4cylc.dat
-  [1,16,8.17,0,24.151,-2,8.6602,0,0,0,-4,-3.4641,-5,0, ldraw_lib__4_4cylc()],
+  [1,16,8.17,0,24.151,-2,8.6602,0,0,0,-4,-3.4641,-5,0, ldraw_lib__4_4cylc(realsolid)],
 // 1 16 16.831 0 19.151 2 -0.866 0 0 0 4 3.4641 0.5 0 4-4disc.dat
-  [1,16,16.831,0,19.151,2,-0.866,0,0,0,4,3.4641,0.5,0, ldraw_lib__4_4disc()],
+  [1,16,16.831,0,19.151,2,-0.866,0,0,0,4,3.4641,0.5,0, ldraw_lib__4_4disc(realsolid)],
 // 2 24 1.722 -4 21.016 19.059 -4 -9.011
   [2,24,1.722,-4,21.016,19.059,-4,-9.011],
 // 2 24 -1.726 -4 21.011 -1.449 -4 21.414
@@ -196,5 +197,5 @@ function ldraw_lib__s__87748s01() = [
 // 0 //
 ];
 module ldraw_lib__s__87748s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__87748s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__87748s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__87748s01(line=0.2);

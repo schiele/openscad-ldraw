@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__90397p02s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__90397p02s01(realsolid=false) = [
 // 0 ~Minifig Surf Board  2 x  6.5 with Pink Flames Pattern - Half
 // 0 Name: s\90397p02s01.dat
 // 0 Author: Joerg Sommerer [Brickaneer]
@@ -793,5 +794,5 @@ function ldraw_lib__s__90397p02s01() = [
   [3,351,-4.762,0,-40.612,-4.117,0,-41.769,0,0,-44],
 ];
 module ldraw_lib__s__90397p02s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__90397p02s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__90397p02s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__90397p02s01(line=0.2);

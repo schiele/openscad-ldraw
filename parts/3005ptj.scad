@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3005s01.scad>
-function ldraw_lib__3005ptj() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3005ptj(realsolid=false) = [
 // 0 Brick  1 x  1 with Blue "J" Pattern
 // 0 Name: 3005ptj.dat
 // 0 Author: Tore Eriksson [Tore_Eriksson]
@@ -20,7 +21,7 @@ function ldraw_lib__3005ptj() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3005s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3005s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3005s01(realsolid)],
 // 
 // 4 1 5 5 -10 3 5 -10 3 13.5 -10 5 13.5 -10
   [4,1,5,5,-10,3,5,-10,3,13.5,-10,5,13.5,-10],
@@ -75,5 +76,5 @@ function ldraw_lib__3005ptj() = [
 // 0
 ];
 module ldraw_lib__3005ptj(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3005ptj(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3005ptj(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3005ptj(line=0.2);

@@ -4,7 +4,8 @@ use <../p/4-4edge.scad>
 use <../p/4-4rin12.scad>
 use <../p/4-4ring2.scad>
 use <../p/stud4.scad>
-function ldraw_lib__3624() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3624(realsolid=false) = [
 // 0 Minifig Police Hat
 // 0 Name: 3624.dat
 // 0 Author: James Jessiman
@@ -1164,15 +1165,15 @@ function ldraw_lib__3624() = [
 // 2 24 -12.01 4.63 4.975 -13 5.023 0
   [2,24,-12.01,4.63,4.975,-13,5.023,0],
 // 1 16 0 -4 0 13 0 0 0 1 0 0 0 13 4-4edge.dat
-  [1,16,0,-4,0,13,0,0,0,1,0,0,0,13, ldraw_lib__4_4edge()],
+  [1,16,0,-4,0,13,0,0,0,1,0,0,0,13, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 -4 0 1 0 0 0 -1 0 0 0 -1 stud4.dat
-  [1,16,0,-4,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__stud4()],
+  [1,16,0,-4,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__stud4(realsolid)],
 // 1 16 0 -4 0 6 0 0 0 -1 0 0 0 -6 4-4disc.dat
-  [1,16,0,-4,0,6,0,0,0,-1,0,0,0,-6, ldraw_lib__4_4disc()],
+  [1,16,0,-4,0,6,0,0,0,-1,0,0,0,-6, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 -4 0 4 0 0 0 -1 0 0 0 -4 4-4ring2.dat
-  [1,16,0,-4,0,4,0,0,0,-1,0,0,0,-4, ldraw_lib__4_4ring2()],
+  [1,16,0,-4,0,4,0,0,0,-1,0,0,0,-4, ldraw_lib__4_4ring2(realsolid)],
 // 1 16 0 -4 0 1 0 0 0 -1 0 0 0 -1 4-4rin12.dat
-  [1,16,0,-4,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__4_4rin12()],
+  [1,16,0,-4,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__4_4rin12(realsolid)],
 // 0 //
 // 0 // Added lines/Condlines
 // 2 24 7.531 -8.045 -15.26 12.27 -7.012 -11.72
@@ -2657,5 +2658,5 @@ function ldraw_lib__3624() = [
   [5,24,-4.975,5.94,-12.01,-4.975,-4,-12.01,0,6.097,-13,-9.192,5.56,-9.192],
 ];
 module ldraw_lib__3624(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3624(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3624(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3624(line=0.2);

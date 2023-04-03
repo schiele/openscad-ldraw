@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/4-4con1.scad>
 use <s/49309s01.scad>
-function ldraw_lib__49309() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__49309(realsolid=false) = [
 // 0 Cone  2 x  2 x  2 Inverted
 // 0 Name: 49309.dat
 // 0 Author: Chris Dee [cwdee]
@@ -16,10 +17,10 @@ function ldraw_lib__49309() = [
 // 
 // 
 // 1 16 0 4 0 10 0 0 0 39 0 0 0 10 4-4con1.dat
-  [1,16,0,4,0,10,0,0,0,39,0,0,0,10, ldraw_lib__4_4con1()],
+  [1,16,0,4,0,10,0,0,0,39,0,0,0,10, ldraw_lib__4_4con1(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\49309s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__49309s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__49309s01(realsolid)],
 ];
 module ldraw_lib__49309(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__49309(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__49309(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__49309(line=0.2);

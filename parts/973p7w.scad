@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/1-4cyli.scad>
 use <s/973s01.scad>
-function ldraw_lib__973p7w() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__973p7w(realsolid=false) = [
 // 0 Minifig Torso with V-Neck Shirt and Blue Overalls Pattern
 // 0 Name: 973p7w.dat
 // 0 Author: Howard Lande [HowardLande]
@@ -16,9 +17,9 @@ function ldraw_lib__973p7w() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01(realsolid)],
 // 1 0 0 -4 0 4.243 0 -4.243 0 -8 0 -4.243 0 -4.243 1-4cyli.dat
-  [1,0,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli()],
+  [1,0,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli(realsolid)],
 // 0 // Front Pattern
 // 4 0 17.3 29.15 -10 17.35 31 -10 18 31 -10 17.95 28.95 -10
   [4,0,17.3,29.15,-10,17.35,31,-10,18,31,-10,17.95,28.95,-10],
@@ -2231,5 +2232,5 @@ function ldraw_lib__973p7w() = [
   [4,16,0,0,10,2.317,12.192,10,1.585,12.791,10,0.76,13.247,10],
 ];
 module ldraw_lib__973p7w(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__973p7w(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__973p7w(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__973p7w(line=0.2);

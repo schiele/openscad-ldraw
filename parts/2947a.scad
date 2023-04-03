@@ -5,7 +5,8 @@ use <../p/4-4cyli.scad>
 use <../p/4-4edge.scad>
 use <../p/4-4ring2.scad>
 use <s/2947s01.scad>
-function ldraw_lib__2947a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2947a(realsolid=false) = [
 // 0 ~Technic Pneumatic Cylinder  1 x  5 with  2 Ports
 // 0 Name: 2947a.dat
 // 0 Author: Marc Klein [marckl]
@@ -24,38 +25,38 @@ function ldraw_lib__2947a() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2947s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2947s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2947s01(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -10 -11 2 0 0 0 0 2 0 -15 0 4-4cylc.dat
-  [1,16,0,-10,-11,2,0,0,0,0,2,0,-15,0, ldraw_lib__4_4cylc()],
+  [1,16,0,-10,-11,2,0,0,0,0,2,0,-15,0, ldraw_lib__4_4cylc(realsolid)],
 // 1 16 0 -10 -25 4 0 0 0 0 4 0 1 0 4-4edge.dat
-  [1,16,0,-10,-25,4,0,0,0,0,4,0,1,0, ldraw_lib__4_4edge()],
+  [1,16,0,-10,-25,4,0,0,0,0,4,0,1,0, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 -10 -25 4 0 0 0 0 4 0 16 0 4-4cyli.dat
-  [1,16,0,-10,-25,4,0,0,0,0,4,0,16,0, ldraw_lib__4_4cyli()],
+  [1,16,0,-10,-25,4,0,0,0,0,4,0,16,0, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 -10 -26 3 0 0 0 0 3 0 1 0 4-4edge.dat
-  [1,16,0,-10,-26,3,0,0,0,0,3,0,1,0, ldraw_lib__4_4edge()],
+  [1,16,0,-10,-26,3,0,0,0,0,3,0,1,0, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 -10 -26 1 0 0 0 0 1 0 1 0 4-4ring2.dat
-  [1,16,0,-10,-26,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4ring2()],
+  [1,16,0,-10,-26,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4ring2(realsolid)],
 // 1 16 0 -10 -25 -1 0 0 0 0 1 0 -1 0 4-4con3.dat
-  [1,16,0,-10,-25,-1,0,0,0,0,1,0,-1,0, ldraw_lib__4_4con3()],
+  [1,16,0,-10,-25,-1,0,0,0,0,1,0,-1,0, ldraw_lib__4_4con3(realsolid)],
 // 1 16 0 -60 -10 4 0 0 0 0 4 0 -15 0 4-4cyli.dat
-  [1,16,0,-60,-10,4,0,0,0,0,4,0,-15,0, ldraw_lib__4_4cyli()],
+  [1,16,0,-60,-10,4,0,0,0,0,4,0,-15,0, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 -60 -10 4 0 0 0 0 4 0 1 0 4-4edge.dat
-  [1,16,0,-60,-10,4,0,0,0,0,4,0,1,0, ldraw_lib__4_4edge()],
+  [1,16,0,-60,-10,4,0,0,0,0,4,0,1,0, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 -60 -25 4 0 0 0 0 4 0 1 0 4-4edge.dat
-  [1,16,0,-60,-25,4,0,0,0,0,4,0,1,0, ldraw_lib__4_4edge()],
+  [1,16,0,-60,-25,4,0,0,0,0,4,0,1,0, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 -60 -26 3 0 0 0 0 3 0 1 0 4-4edge.dat
-  [1,16,0,-60,-26,3,0,0,0,0,3,0,1,0, ldraw_lib__4_4edge()],
+  [1,16,0,-60,-26,3,0,0,0,0,3,0,1,0, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 -60 -26 1 0 0 0 0 1 0 1 0 4-4ring2.dat
-  [1,16,0,-60,-26,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4ring2()],
+  [1,16,0,-60,-26,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4ring2(realsolid)],
 // 1 16 0 -60 -25 -1 0 0 0 0 1 0 -1 0 4-4con3.dat
-  [1,16,0,-60,-25,-1,0,0,0,0,1,0,-1,0, ldraw_lib__4_4con3()],
+  [1,16,0,-60,-25,-1,0,0,0,0,1,0,-1,0, ldraw_lib__4_4con3(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -60 -10 2 0 0 0 0 2 0 -16 0 4-4cylc.dat
-  [1,16,0,-60,-10,2,0,0,0,0,2,0,-16,0, ldraw_lib__4_4cylc()],
+  [1,16,0,-60,-10,2,0,0,0,0,2,0,-16,0, ldraw_lib__4_4cylc(realsolid)],
 ];
 module ldraw_lib__2947a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2947a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2947a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2947a(line=0.2);

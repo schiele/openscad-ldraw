@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3039s01.scad>
-function ldraw_lib__3039pco() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3039pco(realsolid=false) = [
 // 0 Slope Brick 45  2 x  2 with Building on Blue Screen, Card Slot and Keypad Pattern
 // 0 Name: 3039pco.dat
 // 0 Author: Fredrik Hareide [fhareide]
@@ -17,7 +18,7 @@ function ldraw_lib__3039pco() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3039s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3039s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3039s01(realsolid)],
 // 
 // 0 // Black
 // 4 0 -13.4582 13.4726 -23.4726 -16.0813 12.7713 -22.7713 -16.7841 12.8741 -22.8741 -18.8119 13.3018 -23.3018
@@ -1852,5 +1853,5 @@ function ldraw_lib__3039pco() = [
   [4,322,-12.0486,6.7918,-16.7918,-12.8841,8.192,-18.192,-12.3396,7.5211,-17.5211,-12.0486,6.9995,-16.9995],
 ];
 module ldraw_lib__3039pco(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3039pco(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3039pco(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3039pco(line=0.2);

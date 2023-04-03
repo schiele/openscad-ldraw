@@ -2,7 +2,8 @@ use <../lib.scad>
 use <3815pc6a.scad>
 use <3816pc6a.scad>
 use <3817pc6a.scad>
-function ldraw_lib__3815cc6a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3815cc6a(realsolid=false) = [
 // 0 ~Minifig Hips and Legs with Red Roman Tunic and Belt Pattern (Obsolete)
 // 0 Name: 3815cc6a.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -22,12 +23,12 @@ function ldraw_lib__3815cc6a() = [
 // 
 // 
 // 1 4 0 0 0 1 0 0 0 1 0 0 0 1 3815pc6a.dat
-  [1,4,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3815pc6a()],
+  [1,4,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3815pc6a(realsolid)],
 // 1 16 0 12 0 1 0 0 0 1 0 0 0 1 3816pc6a.dat
-  [1,16,0,12,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3816pc6a()],
+  [1,16,0,12,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3816pc6a(realsolid)],
 // 1 16 0 12 0 1 0 0 0 1 0 0 0 1 3817pc6a.dat
-  [1,16,0,12,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3817pc6a()],
+  [1,16,0,12,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3817pc6a(realsolid)],
 ];
 module ldraw_lib__3815cc6a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3815cc6a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3815cc6a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3815cc6a(line=0.2);

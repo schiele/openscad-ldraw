@@ -4,7 +4,8 @@ use <../p/4-4edge.scad>
 use <s/35039s01.scad>
 use <../p/stud.scad>
 use <../p/stud4a.scad>
-function ldraw_lib__35039() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__35039(realsolid=false) = [
 // 0 Animal Spider Biomechanical Legs and Head
 // 0 Name: 35039.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -21,17 +22,17 @@ function ldraw_lib__35039() = [
 // 
 // 
 // 1 16 0 0 0 0 0 -1 0 1 0 1 0 0 stud.dat
-  [1,16,0,0,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__stud()],
+  [1,16,0,0,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__stud(realsolid)],
 // 1 16 0 2.75 0 1 0 0 0 -1.3125 0 0 0 1 stud4a.dat
-  [1,16,0,2.75,0,1,0,0,0,-1.3125,0,0,0,1, ldraw_lib__stud4a()],
+  [1,16,0,2.75,0,1,0,0,0,-1.3125,0,0,0,1, ldraw_lib__stud4a(realsolid)],
 // 1 16 0 2.75 0 6 0 0 0 -1 0 0 0 6 4-4disc.dat
-  [1,16,0,2.75,0,6,0,0,0,-1,0,0,0,6, ldraw_lib__4_4disc()],
+  [1,16,0,2.75,0,6,0,0,0,-1,0,0,0,6, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 2.75 0 6 0 0 0 -1 0 0 0 6 4-4edge.dat
-  [1,16,0,2.75,0,6,0,0,0,-1,0,0,0,6, ldraw_lib__4_4edge()],
+  [1,16,0,2.75,0,6,0,0,0,-1,0,0,0,6, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\35039s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__35039s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__35039s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\35039s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__35039s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__35039s01(realsolid)],
 // 5 24 0 -1.29 -15.877 0 -5.73 -15.877 -2.697 -5.15 -15.835 2.697 -5.15 -15.835
   [5,24,0,-1.29,-15.877,0,-5.73,-15.877,-2.697,-5.15,-15.835,2.697,-5.15,-15.835],
 // 5 24 0 0 -10.415 0 -5 -10.685 1.9 0 -10.275 -1.9 0 -10.275
@@ -64,5 +65,5 @@ function ldraw_lib__35039() = [
   [5,24,0,-14.122,-13.055,0,-14.122,-17.505,1.995,-13.8113,-17.505,-1.995,-13.8113,-17.505],
 ];
 module ldraw_lib__35039(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__35039(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__35039(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__35039(line=0.2);

@@ -7,7 +7,8 @@ use <../p/type-swiss721bt-bold-n5.scad>
 use <../p/type-swiss721bt-bold-n6.scad>
 use <../p/type-swiss721bt-bold-um.scad>
 use <../p/type-swiss721bt-bold-ut.scad>
-function ldraw_lib__4121723i() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4121723i(realsolid=false) = [
 // 0 Sticker  1.4 x  1.8 with Black "MT 5563" on White Background
 // 0 Name: 4121723i.dat
 // 0 Author: Ulrich Röder [UR]
@@ -26,23 +27,23 @@ function ldraw_lib__4121723i() = [
 // 0 // Body
 // 
 // 1 16 0 -.25 0 17 0 0 0 .25 0 0 0 14 box3u12.dat
-  [1,16,0,-.25,0,17,0,0,0,.25,0,0,0,14, ldraw_lib__box3u12()],
+  [1,16,0,-.25,0,17,0,0,0,.25,0,0,0,14, ldraw_lib__box3u12(realsolid)],
 // 1 16 17 0 -13 1 0 0 0 -1 0 0 0 -1 1-4chrd.dat
-  [1,16,17,0,-13,1,0,0,0,-1,0,0,0,-1, ldraw_lib__1_4chrd()],
+  [1,16,17,0,-13,1,0,0,0,-1,0,0,0,-1, ldraw_lib__1_4chrd(realsolid)],
 // 1 16 17 0 13 1 0 0 0 -1 0 0 0 1 1-4chrd.dat
-  [1,16,17,0,13,1,0,0,0,-1,0,0,0,1, ldraw_lib__1_4chrd()],
+  [1,16,17,0,13,1,0,0,0,-1,0,0,0,1, ldraw_lib__1_4chrd(realsolid)],
 // 1 16 -17 0 13 -1 0 0 0 -1 0 0 0 1 1-4chrd.dat
-  [1,16,-17,0,13,-1,0,0,0,-1,0,0,0,1, ldraw_lib__1_4chrd()],
+  [1,16,-17,0,13,-1,0,0,0,-1,0,0,0,1, ldraw_lib__1_4chrd(realsolid)],
 // 1 16 -17 0 -13 -1 0 0 0 -1 0 0 0 -1 1-4chrd.dat
-  [1,16,-17,0,-13,-1,0,0,0,-1,0,0,0,-1, ldraw_lib__1_4chrd()],
+  [1,16,-17,0,-13,-1,0,0,0,-1,0,0,0,-1, ldraw_lib__1_4chrd(realsolid)],
 // 1 16 17 -.25 -13 1 0 0 0 .25 0 0 0 -1 1-4cyli.dat
-  [1,16,17,-.25,-13,1,0,0,0,.25,0,0,0,-1, ldraw_lib__1_4cyli()],
+  [1,16,17,-.25,-13,1,0,0,0,.25,0,0,0,-1, ldraw_lib__1_4cyli(realsolid)],
 // 1 16 17 -.25 13 1 0 0 0 .25 0 0 0 1 1-4cyli.dat
-  [1,16,17,-.25,13,1,0,0,0,.25,0,0,0,1, ldraw_lib__1_4cyli()],
+  [1,16,17,-.25,13,1,0,0,0,.25,0,0,0,1, ldraw_lib__1_4cyli(realsolid)],
 // 1 16 -17 -.25 13 -1 0 0 0 .25 0 0 0 1 1-4cyli.dat
-  [1,16,-17,-.25,13,-1,0,0,0,.25,0,0,0,1, ldraw_lib__1_4cyli()],
+  [1,16,-17,-.25,13,-1,0,0,0,.25,0,0,0,1, ldraw_lib__1_4cyli(realsolid)],
 // 1 16 -17 -.25 -13 -1 0 0 0 .25 0 0 0 -1 1-4cyli.dat
-  [1,16,-17,-.25,-13,-1,0,0,0,.25,0,0,0,-1, ldraw_lib__1_4cyli()],
+  [1,16,-17,-.25,-13,-1,0,0,0,.25,0,0,0,-1, ldraw_lib__1_4cyli(realsolid)],
 // 4 16 17 0 14 18 0 13 18 0 -13 17 0 -14
   [4,16,17,0,14,18,0,13,18,0,-13,17,0,-14],
 // 4 16 -17 0 -14 -18 0 -13 -18 0 13 -17 0 14
@@ -55,27 +56,27 @@ function ldraw_lib__4121723i() = [
 // 0 // Frontface
 // 0 // Text
 // 1 15 -9.2 -.25 5.9 7.5 0 0 0 1 0 0 0 7.5 type-swiss721bt-bold-um.dat
-  [1,15,-9.2,-.25,5.9,7.5,0,0,0,1,0,0,0,7.5, ldraw_lib__type_swiss721bt_bold_um()],
+  [1,15,-9.2,-.25,5.9,7.5,0,0,0,1,0,0,0,7.5, ldraw_lib__type_swiss721bt_bold_um(realsolid)],
 // 1 15 -1.7 -.25 5.9 7.5 0 0 0 1 0 0 0 7.5 type-swiss721bt-bold-ut.dat
-  [1,15,-1.7,-.25,5.9,7.5,0,0,0,1,0,0,0,7.5, ldraw_lib__type_swiss721bt_bold_ut()],
+  [1,15,-1.7,-.25,5.9,7.5,0,0,0,1,0,0,0,7.5, ldraw_lib__type_swiss721bt_bold_ut(realsolid)],
 // 1 15 -10.8 -.25 -4.6 8.8 0 0 0 1 0 0 0 8.8 type-swiss721bt-bold-n5.dat
-  [1,15,-10.8,-.25,-4.6,8.8,0,0,0,1,0,0,0,8.8, ldraw_lib__type_swiss721bt_bold_n5()],
+  [1,15,-10.8,-.25,-4.6,8.8,0,0,0,1,0,0,0,8.8, ldraw_lib__type_swiss721bt_bold_n5(realsolid)],
 // 1 15 -3.8 -.25 -4.6 8.8 0 0 0 1 0 0 0 8.8 type-swiss721bt-bold-n5.dat
-  [1,15,-3.8,-.25,-4.6,8.8,0,0,0,1,0,0,0,8.8, ldraw_lib__type_swiss721bt_bold_n5()],
+  [1,15,-3.8,-.25,-4.6,8.8,0,0,0,1,0,0,0,8.8, ldraw_lib__type_swiss721bt_bold_n5(realsolid)],
 // 1 15 3.28 -.25 -4.6 8.8 0 0 0 1 0 0 0 8.8 type-swiss721bt-bold-n6.dat
-  [1,15,3.28,-.25,-4.6,8.8,0,0,0,1,0,0,0,8.8, ldraw_lib__type_swiss721bt_bold_n6()],
+  [1,15,3.28,-.25,-4.6,8.8,0,0,0,1,0,0,0,8.8, ldraw_lib__type_swiss721bt_bold_n6(realsolid)],
 // 1 15 10.5 -.25 -4.6 8.8 0 0 0 1 0 0 0 8.8 type-swiss721bt-bold-n3.dat
-  [1,15,10.5,-.25,-4.6,8.8,0,0,0,1,0,0,0,8.8, ldraw_lib__type_swiss721bt_bold_n3()],
+  [1,15,10.5,-.25,-4.6,8.8,0,0,0,1,0,0,0,8.8, ldraw_lib__type_swiss721bt_bold_n3(realsolid)],
 // 
 // 0 // Black
 // 1 0 17 -.25 -13 1 0 0 0 1 0 0 0 -1 1-4chrd.dat
-  [1,0,17,-.25,-13,1,0,0,0,1,0,0,0,-1, ldraw_lib__1_4chrd()],
+  [1,0,17,-.25,-13,1,0,0,0,1,0,0,0,-1, ldraw_lib__1_4chrd(realsolid)],
 // 1 0 17 -.25 13 1 0 0 0 1 0 0 0 1 1-4chrd.dat
-  [1,0,17,-.25,13,1,0,0,0,1,0,0,0,1, ldraw_lib__1_4chrd()],
+  [1,0,17,-.25,13,1,0,0,0,1,0,0,0,1, ldraw_lib__1_4chrd(realsolid)],
 // 1 0 -17 -.25 13 -1 0 0 0 1 0 0 0 1 1-4chrd.dat
-  [1,0,-17,-.25,13,-1,0,0,0,1,0,0,0,1, ldraw_lib__1_4chrd()],
+  [1,0,-17,-.25,13,-1,0,0,0,1,0,0,0,1, ldraw_lib__1_4chrd(realsolid)],
 // 1 0 -17 -.25 -13 -1 0 0 0 1 0 0 0 -1 1-4chrd.dat
-  [1,0,-17,-.25,-13,-1,0,0,0,1,0,0,0,-1, ldraw_lib__1_4chrd()],
+  [1,0,-17,-.25,-13,-1,0,0,0,1,0,0,0,-1, ldraw_lib__1_4chrd(realsolid)],
 // 4 0 -17 -.25 14 -15.5 -.25 11.5 15.5 -.25 11.5 17 -.25 14
   [4,0,-17,-.25,14,-15.5,-.25,11.5,15.5,-.25,11.5,17,-.25,14],
 // 4 0 15.5 -.25 -11.5 -15.5 -.25 -11.5 -17 -.25 -14 17 -.25 -14
@@ -186,5 +187,5 @@ function ldraw_lib__4121723i() = [
   [4,15,-15.5,-.25,11.5,-13.9504,-.25,-.2,-12.95,-.25,2.15,-12.95,-.25,9.65],
 ];
 module ldraw_lib__4121723i(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4121723i(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4121723i(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4121723i(line=0.2);

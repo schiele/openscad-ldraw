@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/30073s01.scad>
 use <../p/stud2.scad>
-function ldraw_lib__30073() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__30073(realsolid=false) = [
 // 0 Door  1 x  6 x  8 Left with Window
 // 0 Name: 30073.dat
 // 0 Author: Shimpei Ohsumi [Shimpei-Ohsumi]
@@ -19,9 +20,9 @@ function ldraw_lib__30073() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\30073s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30073s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30073s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 stud2.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2(realsolid)],
 // 4 16 10 8 102 10 8 3 10 0 0 10 0 110
   [4,16,10,8,102,10,8,3,10,0,0,10,0,110],
 // 3 16 10 8 3 10 8 0 10 0 0
@@ -46,5 +47,5 @@ function ldraw_lib__30073() = [
   [3,16,10,8,105,10,0,110,10,11,105],
 ];
 module ldraw_lib__30073(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__30073(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__30073(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__30073(line=0.2);

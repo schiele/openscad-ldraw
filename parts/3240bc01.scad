@@ -2,7 +2,8 @@ use <../lib.scad>
 use <3228b.scad>
 use <3240b.scad>
 use <767.scad>
-function ldraw_lib__3240bc01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3240bc01(realsolid=false) = [
 // 0 Train Track 12V Slotted Straight (Complete)
 // 0 Name: 3240bc01.dat
 // 0 Author: Steffen [Steffen]
@@ -19,16 +20,16 @@ function ldraw_lib__3240bc01() = [
 // 
 // 
 // 1 16 0 0 50 1 0 0 0 1 0 0 0 1 3228b.dat
-  [1,16,0,0,50,1,0,0,0,1,0,0,0,1, ldraw_lib__3228b()],
+  [1,16,0,0,50,1,0,0,0,1,0,0,0,1, ldraw_lib__3228b(realsolid)],
 // 1 16 0 0 -50 1 0 0 0 1 0 0 0 1 3228b.dat
-  [1,16,0,0,-50,1,0,0,0,1,0,0,0,1, ldraw_lib__3228b()],
+  [1,16,0,0,-50,1,0,0,0,1,0,0,0,1, ldraw_lib__3228b(realsolid)],
 // 1 8 0 16 0 0 0 1 0 1 0 -1 0 0 767.dat
-  [1,8,0,16,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__767()],
+  [1,8,0,16,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__767(realsolid)],
 // 1 8 -160 16 0 0 0 1 0 1 0 -1 0 0 767.dat
-  [1,8,-160,16,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__767()],
+  [1,8,-160,16,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__767(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 3240b.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3240b()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3240b(realsolid)],
 ];
 module ldraw_lib__3240bc01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3240bc01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3240bc01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3240bc01(line=0.2);

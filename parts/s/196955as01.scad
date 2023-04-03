@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__196955as01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__196955as01(realsolid=false) = [
 // 0 ~"7745" White
 // 0 Name: s\196955as01.dat
 // 0 Author: Steffen [Steffen]
@@ -319,5 +320,5 @@ function ldraw_lib__s__196955as01() = [
   [3,16,13.406,0,21.734,13.406,0,8.063,19.063,0,9.953],
 ];
 module ldraw_lib__s__196955as01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__196955as01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__196955as01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__196955as01(line=0.2);

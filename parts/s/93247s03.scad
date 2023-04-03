@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__93247s03() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__93247s03(realsolid=false) = [
 // 0 ~Minifig Sword Khopesh Grip Endsegment
 // 0 Name: s\93247s03.dat
 // 0 Author: Christian Neumann [Wesley]
@@ -43,5 +44,5 @@ function ldraw_lib__s__93247s03() = [
   [2,24,0,0.75,4,1.5308,0,3.6956],
 ];
 module ldraw_lib__s__93247s03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__93247s03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__93247s03(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__93247s03(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/31111s01.scad>
-function ldraw_lib__31111p0c() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__31111p0c(realsolid=false) = [
 // 0 Duplo Brick  2 x  4 x  2 with Flamingo Body Pattern
 // 0 Name: 31111p0c.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -18,7 +19,7 @@ function ldraw_lib__31111p0c() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\31111s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__31111s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__31111s01(realsolid)],
 // 4 16 80 0 -40 -80 0 -40 12.4 3.6 -40 14.8 3.6 -40
   [4,16,80,0,-40,-80,0,-40,12.4,3.6,-40,14.8,3.6,-40],
 // 4 16 -80 96 -40 80 96 -40 54.5 92.6 -40 -54 92.1 -40
@@ -705,5 +706,5 @@ function ldraw_lib__31111p0c() = [
   [3,16,-54,92.1,-40,-56.6,92.2,-40,-80,96,-40],
 ];
 module ldraw_lib__31111p0c(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__31111p0c(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__31111p0c(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__31111p0c(line=0.2);

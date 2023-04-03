@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/4-4ering.scad>
 use <s/4150s01.scad>
-function ldraw_lib__4150p06() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4150p06(realsolid=false) = [
 // 0 Tile  2 x  2 Round with Orange Dots and Red Ladybug Pattern
 // 0 Name: 4150p06.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -18,9 +19,9 @@ function ldraw_lib__4150p06() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4150s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4150s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4150s01(realsolid)],
 // 1 16 0 0 0 20 0 0 0 1 0 0 0 20 4-4ering.dat
-  [1,16,0,0,0,20,0,0,0,1,0,0,0,20, ldraw_lib__4_4ering()],
+  [1,16,0,0,0,20,0,0,0,1,0,0,0,20, ldraw_lib__4_4ering(realsolid)],
 // 
 // 4 0 -10.506 0 -.393 -11.668 0 -2.076 -9.887 0 -2.771 -8.898 0 -1.379
   [4,0,-10.506,0,-.393,-11.668,0,-2.076,-9.887,0,-2.771,-8.898,0,-1.379],
@@ -1212,5 +1213,5 @@ function ldraw_lib__4150p06() = [
   [3,16,10.5,0,-13.7,9.8,0,-13.9,7.654,0,-18.478],
 ];
 module ldraw_lib__4150p06(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4150p06(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4150p06(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4150p06(line=0.2);

@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/10178s01.scad>
 use <s/10178s02.scad>
-function ldraw_lib__10178p02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__10178p02(realsolid=false) = [
 // 0 Rock Stepped with Gold Egyptian Eye of Horus Pattern
 // 0 Name: 10178p02.dat
 // 0 Author: Christian Neumann [Wesley]
@@ -20,9 +21,9 @@ function ldraw_lib__10178p02() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\10178s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__10178s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__10178s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 -1 s\10178s02.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__10178s02()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__10178s02(realsolid)],
 // 0 // front pattern
 // 4 16 0.477 -43.018 -8.25 -0.477 -43.018 -8.25 -3.558 -36.972 -8.25 3.558 -36.972 -8.25
   [4,16,0.477,-43.018,-8.25,-0.477,-43.018,-8.25,-3.558,-36.972,-8.25,3.558,-36.972,-8.25],
@@ -406,5 +407,5 @@ function ldraw_lib__10178p02() = [
   [3,16,4.82,-18.19,-8.25,4.12,-18.09,-8.25,4.24,-16.97,-8.25],
 ];
 module ldraw_lib__10178p02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__10178p02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__10178p02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__10178p02(line=0.2);

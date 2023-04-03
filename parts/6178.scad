@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/6178s01.scad>
-function ldraw_lib__6178() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6178(realsolid=false) = [
 // 0 Plate  6 x 12 with 22 Studs on Three Edges
 // 0 Name: 6178.dat
 // 0 Author: James Jessiman
@@ -24,8 +25,8 @@ function ldraw_lib__6178() = [
 // 4 16 -120 0 60 -120 0 -60 120 0 -60 120 0 60
   [4,16,-120,0,60,-120,0,-60,120,0,-60,120,0,60],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\6178s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6178s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6178s01(realsolid)],
 ];
 module ldraw_lib__6178(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6178(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6178(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6178(line=0.2);

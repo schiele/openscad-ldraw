@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__72824s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__72824s01(realsolid=false) = [
 // 0 ~Minifig Soccer Ball Pentagonal Facet Surroundings
 // 0 Name: s\72824s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -216,5 +217,5 @@ function ldraw_lib__s__72824s01() = [
   [5,24,-8.91,-2.525,-14.974,-6.13,-1.622,-16.78,-10.403,3.38,-14.318,-5.801,-1.885,-16.688],
 ];
 module ldraw_lib__s__72824s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__72824s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__72824s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__72824s01(line=0.2);

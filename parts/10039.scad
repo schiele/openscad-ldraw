@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <10040c01.scad>
 use <10042.scad>
-function ldraw_lib__10039() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__10039(realsolid=false) = [
 // 0 Motor Pull Back  4 x  8 x  0.667 with White Axle
 // 0 Name: 10039.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -21,10 +22,10 @@ function ldraw_lib__10039() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 10040c01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__10040c01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__10040c01(realsolid)],
 // 1 79 0 5 60 1 0 0 0 1 0 0 0 1 10042.dat
-  [1,79,0,5,60,1,0,0,0,1,0,0,0,1, ldraw_lib__10042()],
+  [1,79,0,5,60,1,0,0,0,1,0,0,0,1, ldraw_lib__10042(realsolid)],
 ];
 module ldraw_lib__10039(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__10039(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__10039(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__10039(line=0.2);

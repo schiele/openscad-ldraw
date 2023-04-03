@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/30296s01.scad>
 use <s/30296s02.scad>
-function ldraw_lib__30296p01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__30296p01(realsolid=false) = [
 // 0 Arch  2 x 14 x  2.333 with Danger Stripes Pattern
 // 0 Name: 30296p01.dat
 // 0 Author: Joseph H. Cardana
@@ -916,17 +917,17 @@ function ldraw_lib__30296p01() = [
 // 
 // 0 // ~Subpart Arch 2 x 14 x 2 & 1/3 - Leg right
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\30296s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30296s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30296s01(realsolid)],
 // 
 // 0 // ~Subpart Arch 2 x 14 x 2 & 1/3 - Leg left
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\30296s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__30296s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__30296s01(realsolid)],
 // 
 // 0 // ~Subpart Arch 2 x 14 x 2 & 1/3 - Bridge
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\30296s02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30296s02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30296s02(realsolid)],
 // 0
 ];
 module ldraw_lib__30296p01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__30296p01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__30296p01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__30296p01(line=0.2);

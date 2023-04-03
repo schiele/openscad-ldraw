@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/7-16cylo.scad>
 use <s/20612s01.scad>
 use <../p/stud2.scad>
-function ldraw_lib__20612() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__20612(realsolid=false) = [
 // 0 Holder Ring with  3 Bars and  3 Bar Tubes
 // 0 Name: 20612.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -24,22 +25,22 @@ function ldraw_lib__20612() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\20612s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__20612s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__20612s01(realsolid)],
 // 1 16 0 0 0 -0.5 0 0.86603 0 1 0 -0.86603 0 -0.5 s\20612s01.dat
-  [1,16,0,0,0,-0.5,0,0.86603,0,1,0,-0.86603,0,-0.5, ldraw_lib__s__20612s01()],
+  [1,16,0,0,0,-0.5,0,0.86603,0,1,0,-0.86603,0,-0.5, ldraw_lib__s__20612s01(realsolid)],
 // 1 16 0 0 0 -0.5 0 -0.86603 0 1 0 0.86603 0 -0.5 s\20612s01.dat
-  [1,16,0,0,0,-0.5,0,-0.86603,0,1,0,0.86603,0,-0.5, ldraw_lib__s__20612s01()],
+  [1,16,0,0,0,-0.5,0,-0.86603,0,1,0,0.86603,0,-0.5, ldraw_lib__s__20612s01(realsolid)],
 // 3 16 6.695 4.49 0 -3.347 4.49 -5.798 -3.348 4.49 5.798
   [3,16,6.695,4.49,0,-3.347,4.49,-5.798,-3.348,4.49,5.798],
 // 3 16 6.695 0 0 -3.348 0 5.798 -3.347 0 -5.798
   [3,16,6.695,0,0,-3.348,0,5.798,-3.347,0,-5.798],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 stud2.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2(realsolid)],
 // 1 16 -15 2.675 6.25 -4 0 0 0 0 4 0 -12.5 0 7-16cylo.dat
-  [1,16,-15,2.675,6.25,-4,0,0,0,0,4,0,-12.5,0, ldraw_lib__7_16cylo()],
+  [1,16,-15,2.675,6.25,-4,0,0,0,0,4,0,-12.5,0, ldraw_lib__7_16cylo(realsolid)],
 // 1 16 -15 2.675 6.25 -4 0 0 0 0 -4 0 -12.5 0 7-16cylo.dat
-  [1,16,-15,2.675,6.25,-4,0,0,0,0,-4,0,-12.5,0, ldraw_lib__7_16cylo()],
+  [1,16,-15,2.675,6.25,-4,0,0,0,0,-4,0,-12.5,0, ldraw_lib__7_16cylo(realsolid)],
 ];
 module ldraw_lib__20612(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__20612(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__20612(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__20612(line=0.2);

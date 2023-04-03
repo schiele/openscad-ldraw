@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/004690as01.scad>
 use <s/004690as02.scad>
-function ldraw_lib__004690ac01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__004690ac01(realsolid=false) = [
 // 0 Sticker  2.6 x  6 with White/Red/Blue Stripes (Formed)
 // 0 Name: 004690ac01.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -21,9 +22,9 @@ function ldraw_lib__004690ac01() = [
 // 
 // 
 // 1 16 0 10 -30 1 0 0 0 0.894427 -0.447214 0 0.447214 0.894427 s\004690as01.dat
-  [1,16,0,10,-30,1,0,0,0,0.894427,-0.447214,0,0.447214,0.894427, ldraw_lib__s__004690as01()],
+  [1,16,0,10,-30,1,0,0,0,0.894427,-0.447214,0,0.447214,0.894427, ldraw_lib__s__004690as01(realsolid)],
 // 1 16 0 20 -50 1 0 0 0 0 -1 0 1 0 s\004690as02.dat
-  [1,16,0,20,-50,1,0,0,0,0,-1,0,1,0, ldraw_lib__s__004690as02()],
+  [1,16,0,20,-50,1,0,0,0,0,-1,0,1,0, ldraw_lib__s__004690as02(realsolid)],
 // 
 // 3 16 60 20 -50.25 60 19.776 -50.111 60 20 -50
   [3,16,60,20,-50.25,60,19.776,-50.111,60,20,-50],
@@ -71,5 +72,5 @@ function ldraw_lib__004690ac01() = [
   [5,24,60,20,-50,-60,20,-50,60,25,-50,60,0,-10],
 ];
 module ldraw_lib__004690ac01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__004690ac01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__004690ac01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__004690ac01(line=0.2);

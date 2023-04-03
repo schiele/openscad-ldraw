@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/2-4cylo.scad>
 use <../../p/2-4disc.scad>
-function ldraw_lib__s__43894s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__43894s01(realsolid=false) = [
 // 0 ~Minifig Russian Fur Cap Half
 // 0 Name: s\43894s01.dat
 // 0 Author: Stan Isachenko [angmarec]
@@ -6300,12 +6301,12 @@ function ldraw_lib__s__43894s01() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -15.5 0 0 0 1.75 0 6.25 0 -1.75 0 0 2-4cylo.dat
-  [1,16,0,-15.5,0,0,0,1.75,0,6.25,0,-1.75,0,0, ldraw_lib__2_4cylo()],
+  [1,16,0,-15.5,0,0,0,1.75,0,6.25,0,-1.75,0,0, ldraw_lib__2_4cylo(realsolid)],
 // 1 16 0 -9.25 0 0 0 1.75 0 1 0 -1.75 0 0 2-4disc.dat
-  [1,16,0,-9.25,0,0,0,1.75,0,1,0,-1.75,0,0, ldraw_lib__2_4disc()],
+  [1,16,0,-9.25,0,0,0,1.75,0,1,0,-1.75,0,0, ldraw_lib__2_4disc(realsolid)],
 // 5 24 5.718 -10.371 3.351 2.824 -11.339 2.828 4.888 -10.31 4.756 3.572 -11.32 2.063
   [5,24,5.718,-10.371,3.351,2.824,-11.339,2.828,4.888,-10.31,4.756,3.572,-11.32,2.063],
 ];
 module ldraw_lib__s__43894s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__43894s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__43894s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__43894s01(line=0.2);

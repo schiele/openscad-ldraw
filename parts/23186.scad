@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/stud4o.scad>
-function ldraw_lib__23186() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__23186(realsolid=false) = [
 // 0 Minifig Hair Swept Left Tousled
 // 0 Name: 23186.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -19,7 +20,7 @@ function ldraw_lib__23186() = [
 // 
 // 
 // 1 16 0 -5 0 1 0 0 0 -1.25 0 0 0 1 stud4o.dat
-  [1,16,0,-5,0,1,0,0,0,-1.25,0,0,0,1, ldraw_lib__stud4o()],
+  [1,16,0,-5,0,1,0,0,0,-1.25,0,0,0,1, ldraw_lib__stud4o(realsolid)],
 // 3 16 -8.316 17.835 10.182 -8.639 1.775 9.888 -10.423 16.178 8.042
   [3,16,-8.316,17.835,10.182,-8.639,1.775,9.888,-10.423,16.178,8.042],
 // 3 16 -8.639 1.775 9.888 -11.163 1.727 6.862 -10.423 16.178 8.042
@@ -5208,5 +5209,5 @@ function ldraw_lib__23186() = [
   [5,24,11.87,4.67,-9.234,9.6345,3.815,-8.626,10.17,5.318,-8.13,8.799,2.312,-9.122],
 ];
 module ldraw_lib__23186(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__23186(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__23186(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__23186(line=0.2);

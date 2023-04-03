@@ -3,7 +3,8 @@ use <s/18675pb1s01.scad>
 use <s/18675pb1s02.scad>
 use <s/18675s01.scad>
 use <s/18675s05.scad>
-function ldraw_lib__18675pb1() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__18675pb1(realsolid=false) = [
 // 0 Dish  6 x  6 Inverted - No Studs with Handle with Metallic Silver and Dark Bluish Grey Rim, Red/Orange Patch and Wires Pattern
 // 0 Name: 18675pb1.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -22,23 +23,23 @@ function ldraw_lib__18675pb1() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\18675s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__18675s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__18675s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\18675s05.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__18675s05()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__18675s05(realsolid)],
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\18675pb1s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__18675pb1s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__18675pb1s01(realsolid)],
 // 1 16 0 0 0 0 0 -1 0 1 0 -1 0 0 s\18675pb1s01.dat
-  [1,16,0,0,0,0,0,-1,0,1,0,-1,0,0, ldraw_lib__s__18675pb1s01()],
+  [1,16,0,0,0,0,0,-1,0,1,0,-1,0,0, ldraw_lib__s__18675pb1s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\18675pb1s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__18675pb1s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__18675pb1s01(realsolid)],
 // 1 16 0 0 0 0 0 1 0 1 0 -1 0 0 s\18675pb1s01.dat
-  [1,16,0,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__s__18675pb1s01()],
+  [1,16,0,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__s__18675pb1s01(realsolid)],
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\18675pb1s02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__18675pb1s02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__18675pb1s02(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\18675pb1s02.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__18675pb1s02()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__18675pb1s02(realsolid)],
 // 
 // 4 0 -31.4153 -5.5041 -31.4153 -30.4572 -5.25 -33.0155 -29.2031 -5.3516 -33.8129 -26.5183 -5.8907 -34.5592
   [4,0,-31.4153,-5.5041,-31.4153,-30.4572,-5.25,-33.0155,-29.2031,-5.3516,-33.8129,-26.5183,-5.8907,-34.5592],
@@ -1596,5 +1597,5 @@ function ldraw_lib__18675pb1() = [
   [3,72,38.183,-.1,-38.183,35.0174,-.1,-40.9629,41.5779,3.1804,-41.5779],
 ];
 module ldraw_lib__18675pb1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__18675pb1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__18675pb1(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__18675pb1(line=0.2);

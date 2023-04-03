@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <connect8.scad>
 use <fric.scad>
-function ldraw_lib__confric4() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__confric4(realsolid=false) = [
 // 0 Technic Friction Pin 1.0 with Base Collar and Blind Hole
 // 0 Name: confric4.dat
 // 0 Author: Owen Burgoyne [C3POwen]
@@ -16,24 +17,24 @@ function ldraw_lib__confric4() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 connect8.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__connect8()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__connect8(realsolid)],
 // 1 16 0 -2 0 0.707107 0 -0.707107 0 1 0 0.707107 0 0.707107 fric.dat
-  [1,16,0,-2,0,0.707107,0,-0.707107,0,1,0,0.707107,0,0.707107, ldraw_lib__fric()],
+  [1,16,0,-2,0,0.707107,0,-0.707107,0,1,0,0.707107,0,0.707107, ldraw_lib__fric(realsolid)],
 // 1 16 0 -2 0 0.707107 0 0.707107 0 1 0 -0.707107 0 0.707107 fric.dat
-  [1,16,0,-2,0,0.707107,0,0.707107,0,1,0,-0.707107,0,0.707107, ldraw_lib__fric()],
+  [1,16,0,-2,0,0.707107,0,0.707107,0,1,0,-0.707107,0,0.707107, ldraw_lib__fric(realsolid)],
 // 1 16 0 -2 0 -0.707107 0 0.707107 0 1 0 -0.707107 0 -0.707107 fric.dat
-  [1,16,0,-2,0,-0.707107,0,0.707107,0,1,0,-0.707107,0,-0.707107, ldraw_lib__fric()],
+  [1,16,0,-2,0,-0.707107,0,0.707107,0,1,0,-0.707107,0,-0.707107, ldraw_lib__fric(realsolid)],
 // 1 16 0 -2 0 -0.707107 0 -0.707107 0 1 0 0.707107 0 -0.707107 fric.dat
-  [1,16,0,-2,0,-0.707107,0,-0.707107,0,1,0,0.707107,0,-0.707107, ldraw_lib__fric()],
+  [1,16,0,-2,0,-0.707107,0,-0.707107,0,1,0,0.707107,0,-0.707107, ldraw_lib__fric(realsolid)],
 // 1 16 0 -18 0 0.707107 0 -0.707107 0 -1 0 0.707107 0 0.707107 fric.dat
-  [1,16,0,-18,0,0.707107,0,-0.707107,0,-1,0,0.707107,0,0.707107, ldraw_lib__fric()],
+  [1,16,0,-18,0,0.707107,0,-0.707107,0,-1,0,0.707107,0,0.707107, ldraw_lib__fric(realsolid)],
 // 1 16 0 -18 0 0.707107 0 0.707107 0 -1 0 -0.707107 0 0.707107 fric.dat
-  [1,16,0,-18,0,0.707107,0,0.707107,0,-1,0,-0.707107,0,0.707107, ldraw_lib__fric()],
+  [1,16,0,-18,0,0.707107,0,0.707107,0,-1,0,-0.707107,0,0.707107, ldraw_lib__fric(realsolid)],
 // 1 16 0 -18 0 -0.707107 0 0.707107 0 -1 0 -0.707107 0 -0.707107 fric.dat
-  [1,16,0,-18,0,-0.707107,0,0.707107,0,-1,0,-0.707107,0,-0.707107, ldraw_lib__fric()],
+  [1,16,0,-18,0,-0.707107,0,0.707107,0,-1,0,-0.707107,0,-0.707107, ldraw_lib__fric(realsolid)],
 // 1 16 0 -18 0 -0.707107 0 -0.707107 0 -1 0 0.707107 0 -0.707107 fric.dat
-  [1,16,0,-18,0,-0.707107,0,-0.707107,0,-1,0,0.707107,0,-0.707107, ldraw_lib__fric()],
+  [1,16,0,-18,0,-0.707107,0,-0.707107,0,-1,0,0.707107,0,-0.707107, ldraw_lib__fric(realsolid)],
 ];
 module ldraw_lib__confric4(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__confric4(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__confric4(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__confric4(line=0.2);

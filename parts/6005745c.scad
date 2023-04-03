@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__6005745c() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6005745c(realsolid=false) = [
 // 0 Sticker  1.1 x  3.9 with Black "B10226"
 // 0 Name: 6005745c.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -17,7 +18,7 @@ function ldraw_lib__6005745c() = [
 // 
 // 
 // 1 16 0 -0.25 0 39 0 0 0 0.25 0 0 0 11 box5-12.dat
-  [1,16,0,-0.25,0,39,0,0,0,0.25,0,0,0,11, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,39,0,0,0,0.25,0,0,0,11, ldraw_lib__box5_12(realsolid)],
 // 0 //
 // 4 0 -30.218 -0.25 -7 -28.474 -0.25 -5.436 -28.474 -0.25 -0.914 -30.218 -0.25 6.152
   [4,0,-30.218,-0.25,-7,-28.474,-0.25,-5.436,-28.474,-0.25,-0.914,-30.218,-0.25,6.152],
@@ -510,5 +511,5 @@ function ldraw_lib__6005745c() = [
   [3,15,0.326,-0.25,3.231,2.509,-0.25,-0.826,3.961,-0.25,0.291],
 ];
 module ldraw_lib__6005745c(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6005745c(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6005745c(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6005745c(line=0.2);

@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__3960pb5s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__3960pb5s01(realsolid=false) = [
 // 0 ~Dish  4 x  4 Inverted with Black Eight Pointed Star on Red Circle Pattern - 1 / 8
 // 0 Name: s\3960pb5s01.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -143,5 +144,5 @@ function ldraw_lib__s__3960pb5s01() = [
   [3,16,24.352,8,31.736,21.9154,6.3991,28.5607,28.2843,8.0002,28.2843],
 ];
 module ldraw_lib__s__3960pb5s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__3960pb5s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__3960pb5s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__3960pb5s01(line=0.2);

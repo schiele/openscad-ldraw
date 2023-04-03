@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/4-4cylc.scad>
-function ldraw_lib__96488() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__96488(realsolid=false) = [
 // 0 Figure Friends Hand Mirror with Heart on Reverse
 // 0 Name: 96488.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -19,7 +20,7 @@ function ldraw_lib__96488() = [
 // 
 // 
 // 1 16 0 0 0 4 0 0 0 -16.75 0 0 0 4 4-4cylc.dat
-  [1,16,0,0,0,4,0,0,0,-16.75,0,0,0,4, ldraw_lib__4_4cylc()],
+  [1,16,0,0,0,4,0,0,0,-16.75,0,0,0,4, ldraw_lib__4_4cylc(realsolid)],
 // 4 16 5.455 -55.147 -4.25 0 -54.879 -4.25 5.88 -52.645 -4.25 8.285 -52.745 -4.25
   [4,16,5.455,-55.147,-4.25,0,-54.879,-4.25,5.88,-52.645,-4.25,8.285,-52.745,-4.25],
 // 4 16 5.88 -52.645 -4.25 0 -54.879 -4.25 0 -54.879 -1.25 5.927 -52.605 -1.25
@@ -1696,5 +1697,5 @@ function ldraw_lib__96488() = [
   [5,24,1.5308,-16.75,3.6956,0,-17.006,4.503,2.251,-17.006,3.9,0,-16.75,4],
 ];
 module ldraw_lib__96488(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__96488(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__96488(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__96488(line=0.2);

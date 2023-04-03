@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__10057s03() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__10057s03(realsolid=false) = [
 // 0 ~Minifig Gollum Head Pattern Area - Half
 // 0 Name: s\10057s03.dat
 // 0 Author: Christian Neumann [Wesley]
@@ -432,5 +433,5 @@ function ldraw_lib__s__10057s03() = [
   [5,24,6.578,-54.027,-16.671,3.702,-51.051,-15.796,3.955,-55.356,-15.918,6.23,-49.924,-16.347],
 ];
 module ldraw_lib__s__10057s03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__10057s03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__10057s03(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__10057s03(line=0.2);

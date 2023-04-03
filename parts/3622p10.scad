@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/1-4chrd.scad>
 use <../p/1-4ndis.scad>
 use <s/3622s01.scad>
-function ldraw_lib__3622p10() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3622p10(realsolid=false) = [
 // 0 Brick  1 x  3 with Cat Face, Wide Sunglasses with White Stripes and Open Mouth with Tooth and Tongue Pattern
 // 0 Name: 3622p10.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -21,15 +22,15 @@ function ldraw_lib__3622p10() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3622s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3622s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3622s01(realsolid)],
 // 1 0 3.77 14.2 -10 .7 0 0 0 0 -.7 0 1 0 1-4ndis.dat
-  [1,0,3.77,14.2,-10,.7,0,0,0,0,-.7,0,1,0, ldraw_lib__1_4ndis()],
+  [1,0,3.77,14.2,-10,.7,0,0,0,0,-.7,0,1,0, ldraw_lib__1_4ndis(realsolid)],
 // 1 320 3.77 14.2 -10 .7 0 0 0 0 -.7 0 1 0 1-4chrd.dat
-  [1,320,3.77,14.2,-10,.7,0,0,0,0,-.7,0,1,0, ldraw_lib__1_4chrd()],
+  [1,320,3.77,14.2,-10,.7,0,0,0,0,-.7,0,1,0, ldraw_lib__1_4chrd(realsolid)],
 // 1 0 -3.77 14.2 -10 0 0 -.7 -.7 0 0 0 1 0 1-4ndis.dat
-  [1,0,-3.77,14.2,-10,0,0,-.7,-.7,0,0,0,1,0, ldraw_lib__1_4ndis()],
+  [1,0,-3.77,14.2,-10,0,0,-.7,-.7,0,0,0,1,0, ldraw_lib__1_4ndis(realsolid)],
 // 1 320 -3.77 14.2 -10 0 0 -.7 -.7 0 0 0 1 0 1-4chrd.dat
-  [1,320,-3.77,14.2,-10,0,0,-.7,-.7,0,0,0,1,0, ldraw_lib__1_4chrd()],
+  [1,320,-3.77,14.2,-10,0,0,-.7,-.7,0,0,0,1,0, ldraw_lib__1_4chrd(realsolid)],
 // 
 // 4 5 -28.39 20.4 -10 -28.23 21.2 -10 -27.78 21.88 -10 -28.23 19.6 -10
   [4,5,-28.39,20.4,-10,-28.23,21.2,-10,-27.78,21.88,-10,-28.23,19.6,-10],
@@ -460,5 +461,5 @@ function ldraw_lib__3622p10() = [
   [4,0,24.6,14.9,-10,24.76,14.6,-10,25.9,12.4,-10,20.45,2,-10],
 ];
 module ldraw_lib__3622p10(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3622p10(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3622p10(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3622p10(line=0.2);

@@ -5,7 +5,8 @@ use <../p/4-4disc.scad>
 use <../p/4-4ndis.scad>
 use <../p/4-4ring7.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__190775b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__190775b(realsolid=false) = [
 // 0 Sticker  0.9 x  5.9 with Black Car Grille and White Headlights
 // 0 Name: 190775b.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -22,25 +23,25 @@ function ldraw_lib__190775b() = [
 // 
 // 
 // 1 16 0 -0.25 0 59 0 0 0 0.25 0 0 0 9 box5-12.dat
-  [1,16,0,-0.25,0,59,0,0,0,0.25,0,0,0,9, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,59,0,0,0,0.25,0,0,0,9, ldraw_lib__box5_12(realsolid)],
 // 0 BFC NOCLIP
   [0,"BFC","NOCLIP"],
 // 1 15 -43 -0.25 0 7 0 0 0 1 0 0 0 7 4-4disc.dat
-  [1,15,-43,-0.25,0,7,0,0,0,1,0,0,0,7, ldraw_lib__4_4disc()],
+  [1,15,-43,-0.25,0,7,0,0,0,1,0,0,0,7, ldraw_lib__4_4disc(realsolid)],
 // 1 0 -43 -0.25 0 1 0 0 0 1 0 0 0 1 4-4ring7.dat
-  [1,0,-43,-0.25,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4ring7()],
+  [1,0,-43,-0.25,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4ring7(realsolid)],
 // 1 15 43 -0.25 0 7 0 0 0 1 0 0 0 7 4-4disc.dat
-  [1,15,43,-0.25,0,7,0,0,0,1,0,0,0,7, ldraw_lib__4_4disc()],
+  [1,15,43,-0.25,0,7,0,0,0,1,0,0,0,7, ldraw_lib__4_4disc(realsolid)],
 // 1 0 43 -0.25 0 1 0 0 0 1 0 0 0 1 4-4ring7.dat
-  [1,0,43,-0.25,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4ring7()],
+  [1,0,43,-0.25,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4ring7(realsolid)],
 // 1 0 -30 -0.25 5 0 0 -3 0 1 0 3 0 0 1-4chrd.dat
-  [1,0,-30,-0.25,5,0,0,-3,0,1,0,3,0,0, ldraw_lib__1_4chrd()],
+  [1,0,-30,-0.25,5,0,0,-3,0,1,0,3,0,0, ldraw_lib__1_4chrd(realsolid)],
 // 1 0 30 -0.25 5 3 0 0 0 1 0 0 0 3 1-4chrd.dat
-  [1,0,30,-0.25,5,3,0,0,0,1,0,0,0,3, ldraw_lib__1_4chrd()],
+  [1,0,30,-0.25,5,3,0,0,0,1,0,0,0,3, ldraw_lib__1_4chrd(realsolid)],
 // 1 0 30 -0.25 -5 0 0 3 0 1 0 -3 0 0 1-4chrd.dat
-  [1,0,30,-0.25,-5,0,0,3,0,1,0,-3,0,0, ldraw_lib__1_4chrd()],
+  [1,0,30,-0.25,-5,0,0,3,0,1,0,-3,0,0, ldraw_lib__1_4chrd(realsolid)],
 // 1 0 -30 -0.25 -5 -3 0 0 0 1 0 0 0 -3 1-4chrd.dat
-  [1,0,-30,-0.25,-5,-3,0,0,0,1,0,0,0,-3, ldraw_lib__1_4chrd()],
+  [1,0,-30,-0.25,-5,-3,0,0,0,1,0,0,0,-3, ldraw_lib__1_4chrd(realsolid)],
 // 4 0 30 -0.25 8 -30 -0.25 8 -33 -0.25 5 33 -0.25 5
   [4,0,30,-0.25,8,-30,-0.25,8,-33,-0.25,5,33,-0.25,5],
 // 4 0 33 -0.25 5 -33 -0.25 5 -33 -0.25 -5 33 -0.25 -5
@@ -50,17 +51,17 @@ function ldraw_lib__190775b() = [
 // 0 BFC CLIP
   [0,"BFC","CLIP"],
 // 1 16 30 -0.25 5 3 0 0 0 1 0 0 0 3 1-4ndis.dat
-  [1,16,30,-0.25,5,3,0,0,0,1,0,0,0,3, ldraw_lib__1_4ndis()],
+  [1,16,30,-0.25,5,3,0,0,0,1,0,0,0,3, ldraw_lib__1_4ndis(realsolid)],
 // 1 16 -30 -0.25 -5 -3 0 0 0 1 0 0 0 -3 1-4ndis.dat
-  [1,16,-30,-0.25,-5,-3,0,0,0,1,0,0,0,-3, ldraw_lib__1_4ndis()],
+  [1,16,-30,-0.25,-5,-3,0,0,0,1,0,0,0,-3, ldraw_lib__1_4ndis(realsolid)],
 // 1 16 -30 -0.25 5 0 0 -3 0 1 0 3 0 0 1-4ndis.dat
-  [1,16,-30,-0.25,5,0,0,-3,0,1,0,3,0,0, ldraw_lib__1_4ndis()],
+  [1,16,-30,-0.25,5,0,0,-3,0,1,0,3,0,0, ldraw_lib__1_4ndis(realsolid)],
 // 1 16 30 -0.25 -5 0 0 3 0 1 0 -3 0 0 1-4ndis.dat
-  [1,16,30,-0.25,-5,0,0,3,0,1,0,-3,0,0, ldraw_lib__1_4ndis()],
+  [1,16,30,-0.25,-5,0,0,3,0,1,0,-3,0,0, ldraw_lib__1_4ndis(realsolid)],
 // 1 16 -43 -0.25 0 8 0 0 0 1 0 0 0 8 4-4ndis.dat
-  [1,16,-43,-0.25,0,8,0,0,0,1,0,0,0,8, ldraw_lib__4_4ndis()],
+  [1,16,-43,-0.25,0,8,0,0,0,1,0,0,0,8, ldraw_lib__4_4ndis(realsolid)],
 // 1 16 43 -0.25 0 8 0 0 0 1 0 0 0 8 4-4ndis.dat
-  [1,16,43,-0.25,0,8,0,0,0,1,0,0,0,8, ldraw_lib__4_4ndis()],
+  [1,16,43,-0.25,0,8,0,0,0,1,0,0,0,8, ldraw_lib__4_4ndis(realsolid)],
 // 4 16 -59 -0.25 9 -33 -0.25 8 -30 -0.25 8 0 -0.25 9
   [4,16,-59,-0.25,9,-33,-0.25,8,-30,-0.25,8,0,-0.25,9],
 // 3 16 -59 -0.25 9 -35 -0.25 8 -33 -0.25 8
@@ -119,5 +120,5 @@ function ldraw_lib__190775b() = [
   [3,16,0,-0.25,9,-30,-0.25,8,30,-0.25,8],
 ];
 module ldraw_lib__190775b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__190775b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__190775b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__190775b(line=0.2);

@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__4620857gc01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4620857gc01(realsolid=false) = [
 // 0 Sticker  1.3 x  2.6 Rounded Rectangle with Bright Pink Window (Formed)
 // 0 Name: 4620857gc01.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -519,5 +520,5 @@ function ldraw_lib__4620857gc01() = [
   [5,24,52.1364,13,-30.1765,52.1364,-13,-30.1765,52.2712,-13,-29.9035,47.775,-13,-36.7017],
 ];
 module ldraw_lib__4620857gc01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4620857gc01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4620857gc01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4620857gc01(line=0.2);

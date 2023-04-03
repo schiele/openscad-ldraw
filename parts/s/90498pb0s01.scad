@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__90498pb0s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__90498pb0s01(realsolid=false) = [
 // 0 ~Helicarrier Runway Pattern Quarter
 // 0 Name: s\90498pb0s01.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -123,5 +124,5 @@ function ldraw_lib__s__90498pb0s01() = [
   [4,16,-159,0,56,-141.25,0,56,-141.25,0,64,-159,0,64],
 ];
 module ldraw_lib__s__90498pb0s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__90498pb0s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__90498pb0s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__90498pb0s01(line=0.2);

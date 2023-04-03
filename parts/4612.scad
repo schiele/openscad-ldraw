@@ -8,7 +8,8 @@ use <s/4612s01.scad>
 use <../p/stud.scad>
 use <../p/stud4.scad>
 use <../p/stug-2x2.scad>
-function ldraw_lib__4612() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4612(realsolid=false) = [
 // 0 Brick  2 x  4 x  2 with Tail
 // 0 Name: 4612.dat
 // 0 Author: Alex Taylor [anathema]
@@ -25,37 +26,37 @@ function ldraw_lib__4612() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4612s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4612s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4612s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\4612s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__4612s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__4612s01(realsolid)],
 // 1 16 0 4 0 1 0 0 0 -11 0 0 0 -1 stud4.dat
-  [1,16,0,4,0,1,0,0,0,-11,0,0,0,-1, ldraw_lib__stud4()],
+  [1,16,0,4,0,1,0,0,0,-11,0,0,0,-1, ldraw_lib__stud4(realsolid)],
 // 1 16 0 4 -8 0 0 -1 0 34 0 1 0 0 boxjcyl4.dat
-  [1,16,0,4,-8,0,0,-1,0,34,0,1,0,0, ldraw_lib__boxjcyl4()],
+  [1,16,0,4,-8,0,0,-1,0,34,0,1,0,0, ldraw_lib__boxjcyl4(realsolid)],
 // 1 16 0 4 8 0 0 1 0 34 0 -1 0 0 boxjcyl4.dat
-  [1,16,0,4,8,0,0,1,0,34,0,-1,0,0, ldraw_lib__boxjcyl4()],
+  [1,16,0,4,8,0,0,1,0,34,0,-1,0,0, ldraw_lib__boxjcyl4(realsolid)],
 // 1 16 0 4 12 0 0 1 0 34 0 -4 0 0 box3u5p.dat
-  [1,16,0,4,12,0,0,1,0,34,0,-4,0,0, ldraw_lib__box3u5p()],
+  [1,16,0,4,12,0,0,1,0,34,0,-4,0,0, ldraw_lib__box3u5p(realsolid)],
 // 1 16 0 4 -12 0 0 -1 0 34 0 4 0 0 box3u5p.dat
-  [1,16,0,4,-12,0,0,-1,0,34,0,4,0,0, ldraw_lib__box3u5p()],
+  [1,16,0,4,-12,0,0,-1,0,34,0,4,0,0, ldraw_lib__box3u5p(realsolid)],
 // 1 16 0 0 0 0 0 -1 0 1 0 1 0 0 stug-2x2.dat
-  [1,16,0,0,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__stug_2x2()],
+  [1,16,0,0,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__stug_2x2(realsolid)],
 // 1 16 40 16 80 0 0 -1 0 1 0 1 0 0 stug-2x2.dat
-  [1,16,40,16,80,0,0,-1,0,1,0,1,0,0, ldraw_lib__stug_2x2()],
+  [1,16,40,16,80,0,0,-1,0,1,0,1,0,0, ldraw_lib__stug_2x2(realsolid)],
 // 1 16 -40 16 80 0 0 -1 0 1 0 1 0 0 stug-2x2.dat
-  [1,16,-40,16,80,0,0,-1,0,1,0,1,0,0, ldraw_lib__stug_2x2()],
+  [1,16,-40,16,80,0,0,-1,0,1,0,1,0,0, ldraw_lib__stug_2x2(realsolid)],
 // 1 16 -10 0 28 0 0 -1 0 1 0 1 0 0 stud.dat
-  [1,16,-10,0,28,0,0,-1,0,1,0,1,0,0, ldraw_lib__stud()],
+  [1,16,-10,0,28,0,0,-1,0,1,0,1,0,0, ldraw_lib__stud(realsolid)],
 // 1 16 10 0 28 0 0 -1 0 1 0 1 0 0 stud.dat
-  [1,16,10,0,28,0,0,-1,0,1,0,1,0,0, ldraw_lib__stud()],
+  [1,16,10,0,28,0,0,-1,0,1,0,1,0,0, ldraw_lib__stud(realsolid)],
 // 1 16 -2.5 -14 88 0 5 0 0 0 -30 24 0 0 48\3-8cyli.dat
-  [1,16,-2.5,-14,88,0,5,0,0,0,-30,24,0,0, ldraw_lib__48__3_8cyli()],
+  [1,16,-2.5,-14,88,0,5,0,0,0,-30,24,0,0, ldraw_lib__48__3_8cyli(realsolid)],
 // 1 16 2.5 20 88 0 -5 0 0 0 34 24 0 0 48\7-24cyli.dat
-  [1,16,2.5,20,88,0,-5,0,0,0,34,24,0,0, ldraw_lib__48__7_24cyli()],
+  [1,16,2.5,20,88,0,-5,0,0,0,34,24,0,0, ldraw_lib__48__7_24cyli(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -2.5 -36 40 0 5 0 36 0 0 0 0 22 48\5-48cyli.dat
-  [1,16,-2.5,-36,40,0,5,0,36,0,0,0,0,22, ldraw_lib__48__5_48cyli()],
+  [1,16,-2.5,-36,40,0,5,0,36,0,0,0,0,22, ldraw_lib__48__5_48cyli(realsolid)],
 // 4 16 2.5 -7.43928 53.3927 2.5 -35.2132 71.0294 -2.5 -35.2132 71.0294 -2.5 -7.43928 53.3927
   [4,16,2.5,-7.43928,53.3927,2.5,-35.2132,71.0294,-2.5,-35.2132,71.0294,-2.5,-7.43928,53.3927],
 // 4 16 2.5 -14 112 2.5 20 112 -2.5 20 112 -2.5 -14 112
@@ -68,5 +69,5 @@ function ldraw_lib__4612() = [
   [4,16,2.5,36,40,2.5,36,20,-2.5,36,20,-2.5,36,40],
 ];
 module ldraw_lib__4612(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4612(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4612(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4612(line=0.2);

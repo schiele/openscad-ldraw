@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/39739s01.scad>
-function ldraw_lib__39739p01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__39739p01(realsolid=false) = [
 // 0 Tile  1 x  1 Heart Shape with White Clock Dial with Black and Metallic Gold Frame, Dials at 10:10 Pattern
 // 0 Name: 39739p01.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -18,7 +19,7 @@ function ldraw_lib__39739p01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\39739s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__39739s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__39739s01(realsolid)],
 // 
 // 4 0 -3.43 0 3.61 -1.87 0 2.06 -1.66 0 2.27 -3.22 0 3.83
   [4,0,-3.43,0,3.61,-1.87,0,2.06,-1.66,0,2.27,-3.22,0,3.83],
@@ -622,5 +623,5 @@ function ldraw_lib__39739p01() = [
   [3,16,6.26,0,-6.26,5.04,0,-7.25,10.1,0,-10.1],
 ];
 module ldraw_lib__39739p01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__39739p01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__39739p01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__39739p01(line=0.2);

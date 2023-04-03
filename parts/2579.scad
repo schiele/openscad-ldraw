@@ -4,7 +4,8 @@ use <../p/4-4ndis.scad>
 use <../p/4-4ring2.scad>
 use <../p/box4.scad>
 use <../p/stug-2x2.scad>
-function ldraw_lib__2579() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2579(realsolid=false) = [
 // 0 Support  2 x  2 x  5 Lattice Pillar Top
 // 0 Name: 2579.dat
 // 0 Author: Chris Dee [cwdee]
@@ -24,15 +25,15 @@ function ldraw_lib__2579() = [
 // 
 // 
 // 1 16 0 10 0 -3 0 0 0 -1 0 0 0 3 4-4ring2.dat
-  [1,16,0,10,0,-3,0,0,0,-1,0,0,0,3, ldraw_lib__4_4ring2()],
+  [1,16,0,10,0,-3,0,0,0,-1,0,0,0,3, ldraw_lib__4_4ring2(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 0 6 0 0 0 10 0 0 0 6 4-4cylo.dat
-  [1,16,0,0,0,6,0,0,0,10,0,0,0,6, ldraw_lib__4_4cylo()],
+  [1,16,0,0,0,6,0,0,0,10,0,0,0,6, ldraw_lib__4_4cylo(realsolid)],
 // 1 16 0 4 0 9 0 0 0 6 0 0 0 9 4-4cylo.dat
-  [1,16,0,4,0,9,0,0,0,6,0,0,0,9, ldraw_lib__4_4cylo()],
+  [1,16,0,4,0,9,0,0,0,6,0,0,0,9, ldraw_lib__4_4cylo(realsolid)],
 // 1 16 0 4 0 -9 0 0 0 -1 0 0 0 9 4-4ndis.dat
-  [1,16,0,4,0,-9,0,0,0,-1,0,0,0,9, ldraw_lib__4_4ndis()],
+  [1,16,0,4,0,-9,0,0,0,-1,0,0,0,9, ldraw_lib__4_4ndis(realsolid)],
 // 4 16 -9 4 9 -12 4 12 12 4 12 9 4 9
   [4,16,-9,4,9,-12,4,12,12,4,12,9,4,9],
 // 4 16 9 4 9 12 4 12 12 4 -12 9 4 -9
@@ -44,7 +45,7 @@ function ldraw_lib__2579() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 4 0 12 0 0 0 6 0 0 0 12 box4.dat
-  [1,16,0,4,0,12,0,0,0,6,0,0,0,12, ldraw_lib__box4()],
+  [1,16,0,4,0,12,0,0,0,6,0,0,0,12, ldraw_lib__box4(realsolid)],
 // 4 16 -12 10 12 -14 10 14 14 10 14 12 10 12
   [4,16,-12,10,12,-14,10,14,14,10,14,12,10,12],
 // 4 16 12 10 12 14 10 14 14 10 -14 12 10 -12
@@ -54,7 +55,7 @@ function ldraw_lib__2579() = [
 // 4 16 -12 10 -12 -14 10 -14 -14 10 14 -12 10 12
   [4,16,-12,10,-12,-14,10,-14,-14,10,14,-12,10,12],
 // 1 16 0 4 0 14 0 0 0 6 0 0 0 14 box4.dat
-  [1,16,0,4,0,14,0,0,0,6,0,0,0,14, ldraw_lib__box4()],
+  [1,16,0,4,0,14,0,0,0,6,0,0,0,14, ldraw_lib__box4(realsolid)],
 // 4 16 -14 4 14 -18 4 18 18 4 18 14 4 14
   [4,16,-14,4,14,-18,4,18,18,4,18,14,4,14],
 // 4 16 14 4 14 18 4 18 18 4 -18 14 4 -14
@@ -64,9 +65,9 @@ function ldraw_lib__2579() = [
 // 4 16 -14 4 -14 -18 4 -18 -18 4 18 -14 4 14
   [4,16,-14,4,-14,-18,4,-18,-18,4,18,-14,4,14],
 // 1 16 0 0 0 18 0 0 0 4 0 0 0 18 box4.dat
-  [1,16,0,0,0,18,0,0,0,4,0,0,0,18, ldraw_lib__box4()],
+  [1,16,0,0,0,18,0,0,0,4,0,0,0,18, ldraw_lib__box4(realsolid)],
 // 1 16 0 0 0 6 0 0 0 1 0 0 0 6 4-4ndis.dat
-  [1,16,0,0,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4ndis()],
+  [1,16,0,0,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4ndis(realsolid)],
 // 4 16 6 0 6 18 0 18 -18 0 18 -6 0 6
   [4,16,6,0,6,18,0,18,-18,0,18,-6,0,6],
 // 4 16 6 0 -6 18 0 -18 18 0 18 6 0 6
@@ -76,8 +77,8 @@ function ldraw_lib__2579() = [
 // 4 16 -6 0 6 -18 0 18 -18 0 -18 -6 0 -6
   [4,16,-6,0,6,-18,0,18,-18,0,-18,-6,0,-6],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 stug-2x2.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_2x2()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_2x2(realsolid)],
 ];
 module ldraw_lib__2579(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2579(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2579(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2579(line=0.2);

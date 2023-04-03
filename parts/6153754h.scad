@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__6153754h() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6153754h(realsolid=false) = [
 // 0 Sticker  0.8 x  2.8 with White "278B" on Black Background
 // 0 Name: 6153754h.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -17,7 +18,7 @@ function ldraw_lib__6153754h() = [
 // 
 // 
 // 1 16 0 -0.25 0 28 0 0 0 0.25 0 0 0 8 box5-12.dat
-  [1,16,0,-0.25,0,28,0,0,0,0.25,0,0,0,8, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,28,0,0,0,0.25,0,0,0,8, ldraw_lib__box5_12(realsolid)],
 // 4 15 -15.33 -0.25 -2.47 -16.35 -0.25 -3.26 -16.35 -0.25 -5.01 -13.34 -0.25 -3.09
   [4,15,-15.33,-0.25,-2.47,-16.35,-0.25,-3.26,-16.35,-0.25,-5.01,-13.34,-0.25,-3.09],
 // 4 15 -12.18 -0.25 -2.08 -13.54 -0.25 -0.72 -14.39 -0.25 -1.62 -13.34 -0.25 -3.09
@@ -282,5 +283,5 @@ function ldraw_lib__6153754h() = [
   [3,0,3.62,-0.25,-5.17,-28,-0.25,-8,28,-0.25,-8],
 ];
 module ldraw_lib__6153754h(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6153754h(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6153754h(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6153754h(line=0.2);

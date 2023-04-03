@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3069bs01.scad>
-function ldraw_lib__3069bpzd() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3069bpzd(realsolid=false) = [
 // 0 Tile  1 x  2 with Black Rectangle Outline and Line Pattern
 // 0 Name: 3069bpzd.dat
 // 0 Author: Vincent Messenet [Cheenzo]
@@ -17,7 +18,7 @@ function ldraw_lib__3069bpzd() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3069bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3069bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3069bs01(realsolid)],
 // 
 // 4 0 -19 0 -3 -18 0 -3.75 -7 0 -2.25 -18 0 -2.25
   [4,0,-19,0,-3,-18,0,-3.75,-7,0,-2.25,-18,0,-2.25],
@@ -60,5 +61,5 @@ function ldraw_lib__3069bpzd() = [
   [3,16,18,0,-3.75,20,0,-10,19,0,-3],
 ];
 module ldraw_lib__3069bpzd(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3069bpzd(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3069bpzd(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3069bpzd(line=0.2);

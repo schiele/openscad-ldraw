@@ -8,7 +8,8 @@ use <../p/box4-4a.scad>
 use <../p/clh4.scad>
 use <../p/rect1.scad>
 use <s/30407s01.scad>
-function ldraw_lib__30407() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__30407(realsolid=false) = [
 // 0 Hinge Plate  1 x  8 with Angled Side Extensions and Rounded Underside Frame
 // 0 Name: 30407.dat
 // 0 Author: Tim Gould [timgould]
@@ -28,31 +29,31 @@ function ldraw_lib__30407() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\30407s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30407s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30407s01(realsolid)],
 // 
 // 1 16 0 2 6 1 0 0 0 1 0 0 0 1 clh4.dat
-  [1,16,0,2,6,1,0,0,0,1,0,0,0,1, ldraw_lib__clh4()],
+  [1,16,0,2,6,1,0,0,0,1,0,0,0,1, ldraw_lib__clh4(realsolid)],
 // 1 16 0 2 6 -1 0 0 0 1 0 0 0 1 clh4.dat
-  [1,16,0,2,6,-1,0,0,0,1,0,0,0,1, ldraw_lib__clh4()],
+  [1,16,0,2,6,-1,0,0,0,1,0,0,0,1, ldraw_lib__clh4(realsolid)],
 // 
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 8 -57 6 0 0 0 -4 0 0 0 53 box4-4a.dat
-  [1,16,0,8,-57,6,0,0,0,-4,0,0,0,53, ldraw_lib__box4_4a()],
+  [1,16,0,8,-57,6,0,0,0,-4,0,0,0,53, ldraw_lib__box4_4a(realsolid)],
 // 1 16 0 4 -110 -6 0 0 0 -1 0 0 0 -6 2-4chrd.dat
-  [1,16,0,4,-110,-6,0,0,0,-1,0,0,0,-6, ldraw_lib__2_4chrd()],
+  [1,16,0,4,-110,-6,0,0,0,-1,0,0,0,-6, ldraw_lib__2_4chrd(realsolid)],
 // 1 16 0 2 -110 -10 0 0 0 6 0 0 0 -10 2-4cylo.dat
-  [1,16,0,2,-110,-10,0,0,0,6,0,0,0,-10, ldraw_lib__2_4cylo()],
+  [1,16,0,2,-110,-10,0,0,0,6,0,0,0,-10, ldraw_lib__2_4cylo(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 4 -110 -6 0 0 0 4 0 0 0 -6 2-4cylo.dat
-  [1,16,0,4,-110,-6,0,0,0,4,0,0,0,-6, ldraw_lib__2_4cylo()],
+  [1,16,0,4,-110,-6,0,0,0,4,0,0,0,-6, ldraw_lib__2_4cylo(realsolid)],
 // 1 16 0 8 -110 -2 0 0 0 -1 0 0 0 -2 2-4ring3.dat
-  [1,16,0,8,-110,-2,0,0,0,-1,0,0,0,-2, ldraw_lib__2_4ring3()],
+  [1,16,0,8,-110,-2,0,0,0,-1,0,0,0,-2, ldraw_lib__2_4ring3(realsolid)],
 // 1 16 0 8 -110 -2 0 0 0 -1 0 0 0 -2 2-4ring4.dat
-  [1,16,0,8,-110,-2,0,0,0,-1,0,0,0,-2, ldraw_lib__2_4ring4()],
+  [1,16,0,8,-110,-2,0,0,0,-1,0,0,0,-2, ldraw_lib__2_4ring4(realsolid)],
 // 1 16 0 2 -110 -10 0 0 0 -1 0 0 0 -10 2-4ndis.dat
-  [1,16,0,2,-110,-10,0,0,0,-1,0,0,0,-10, ldraw_lib__2_4ndis()],
+  [1,16,0,2,-110,-10,0,0,0,-1,0,0,0,-10, ldraw_lib__2_4ndis(realsolid)],
 // 
 // 4 16 -10 2 -160 -10 2 -120 0 2 -120 10 2 -160
   [4,16,-10,2,-160,-10,2,-120,0,2,-120,10,2,-160],
@@ -82,10 +83,10 @@ function ldraw_lib__30407() = [
   [3,16,10,8,0,10,8,-110,8,8,-110],
 // 
 // 1 16 10 6 -55 0 -1 0 2 0 0 0 0 55 rect1.dat
-  [1,16,10,6,-55,0,-1,0,2,0,0,0,0,55, ldraw_lib__rect1()],
+  [1,16,10,6,-55,0,-1,0,2,0,0,0,0,55, ldraw_lib__rect1(realsolid)],
 // 1 16 -10 6 -55 0 1 0 2 0 0 0 0 -55 rect1.dat
-  [1,16,-10,6,-55,0,1,0,2,0,0,0,0,-55, ldraw_lib__rect1()],
+  [1,16,-10,6,-55,0,1,0,2,0,0,0,0,-55, ldraw_lib__rect1(realsolid)],
 ];
 module ldraw_lib__30407(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__30407(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__30407(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__30407(line=0.2);

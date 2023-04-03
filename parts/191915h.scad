@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__191915h() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__191915h(realsolid=false) = [
 // 0 Sticker  1.2 x  1 with Green "2"
 // 0 Name: 191915h.dat
 // 0 Author: Steffen [Steffen]
@@ -17,7 +18,7 @@ function ldraw_lib__191915h() = [
 // 
 // 
 // 1 16 0 -0.25 0 10 0 0 0 0.25 0 0 0 -12 box5-12.dat
-  [1,16,0,-0.25,0,10,0,0,0,0.25,0,0,0,-12, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,10,0,0,0,0.25,0,0,0,-12, ldraw_lib__box5_12(realsolid)],
 // 3 2 -5.87 -0.25 -4.763 -2.341 -0.25 -5.828 -4.425 -0.25 -3.014
   [3,2,-5.87,-0.25,-4.763,-2.341,-0.25,-5.828,-4.425,-0.25,-3.014],
 // 3 2 -2.341 -0.25 -5.828 -5.87 -0.25 -4.763 -6.938 -0.25 -9
@@ -132,5 +133,5 @@ function ldraw_lib__191915h() = [
   [3,16,-0.006,-0.25,9.641,10,-0.25,12,-10,-0.25,12],
 ];
 module ldraw_lib__191915h(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__191915h(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__191915h(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__191915h(line=0.2);

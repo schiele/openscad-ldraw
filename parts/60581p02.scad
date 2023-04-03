@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/60581s01.scad>
-function ldraw_lib__60581p02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__60581p02(realsolid=false) = [
 // 0 Panel  1 x  4 x  3 with Black Sphinx Pattern
 // 0 Name: 60581p02.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -17,7 +18,7 @@ function ldraw_lib__60581p02() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\60581s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__60581s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__60581s01(realsolid)],
 // 4 16 -12.1 26.5 10 -9.3 24.7 10 -8.5 27 10 -12.6 28.9 10
   [4,16,-12.1,26.5,10,-9.3,24.7,10,-8.5,27,10,-12.6,28.9,10],
 // 4 16 -11.1 48.3 10 -10.5 47.7 10 -10.4 48.4 10 -11.1 49.4 10
@@ -1810,5 +1811,5 @@ function ldraw_lib__60581p02() = [
   [3,0,19.9,33.8,10,11.4,35.5,10,11.3,34.7,10],
 ];
 module ldraw_lib__60581p02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__60581p02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__60581p02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__60581p02(line=0.2);

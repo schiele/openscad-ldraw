@@ -5,7 +5,8 @@ use <../../p/1-4edge.scad>
 use <../../p/1-4edgh.scad>
 use <../../p/1-4ring6.scad>
 use <../../p/3-4ndis.scad>
-function ldraw_lib__s__4716s03() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__4716s03(realsolid=false) = [
 // 0 ~Technic Worm Gear End Surface
 // 0 Name: s\4716s03.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -20,11 +21,11 @@ function ldraw_lib__s__4716s03() = [
 // 
 // 
 // 1 16 0 0 0 0 0 -1 1 0 0 0 1 0 1-4ring6.dat
-  [1,16,0,0,0,0,0,-1,1,0,0,0,1,0, ldraw_lib__1_4ring6()],
+  [1,16,0,0,0,0,0,-1,1,0,0,0,1,0, ldraw_lib__1_4ring6(realsolid)],
 // 1 16 0 0 0 -6 0 0 0 0 -6 0 1 0 3-4ndis.dat
-  [1,16,0,0,0,-6,0,0,0,0,-6,0,1,0, ldraw_lib__3_4ndis()],
+  [1,16,0,0,0,-6,0,0,0,0,-6,0,1,0, ldraw_lib__3_4ndis(realsolid)],
 // 1 16 0 0 0 0 0 12.7 -12.7 0 0 0 1 0 1-4chrd.dat
-  [1,16,0,0,0,0,0,12.7,-12.7,0,0,0,1,0, ldraw_lib__1_4chrd()],
+  [1,16,0,0,0,0,0,12.7,-12.7,0,0,0,1,0, ldraw_lib__1_4chrd(realsolid)],
 // 4 16 10.4168 4.3148 0 12.7 0 0 6 0 0 6 6 0
   [4,16,10.4168,4.3148,0,12.7,0,0,6,0,0,6,6,0],
 // 4 16 3.2241 7.7837 0 6.9651 6.9651 0 10.4168 4.3148 0 6 6 0
@@ -111,11 +112,11 @@ function ldraw_lib__s__4716s03() = [
 // 2 24 3.2241 7.7837 0 6.9651 6.9651 0
   [2,24,3.2241,7.7837,0,6.9651,6.9651,0],
 // 1 16 0 0 0 0 0 -7 7 0 0 0 1 0 1-4edge.dat
-  [1,16,0,0,0,0,0,-7,7,0,0,0,1,0, ldraw_lib__1_4edge()],
+  [1,16,0,0,0,0,0,-7,7,0,0,0,1,0, ldraw_lib__1_4edge(realsolid)],
 // 1 16 0 0 0 0 0 -7 7 0 0 0 2 0 1-4cylh.dat
-  [1,16,0,0,0,0,0,-7,7,0,0,0,2,0, ldraw_lib__1_4cylh()],
+  [1,16,0,0,0,0,0,-7,7,0,0,0,2,0, ldraw_lib__1_4cylh(realsolid)],
 // 1 16 0 0 0 0 0 -7 7 0 0 0 2 0 1-4edgh.dat
-  [1,16,0,0,0,0,0,-7,7,0,0,0,2,0, ldraw_lib__1_4edgh()],
+  [1,16,0,0,0,0,0,-7,7,0,0,0,2,0, ldraw_lib__1_4edgh(realsolid)],
 // 2 24 -4.3148 -10.4168 0 0 -12.7 0
   [2,24,-4.3148,-10.4168,0,0,-12.7,0],
 // 2 24 -6.9651 -6.9651 0 -4.3148 -10.4168 0
@@ -125,12 +126,12 @@ function ldraw_lib__s__4716s03() = [
 // 2 24 -7 0 0 -7.7837 -3.2241 0
   [2,24,-7,0,0,-7.7837,-3.2241,0],
 // 1 16 0 0 0 0 0 12.7 -12.7 0 0 0 1 0 1-4edge.dat
-  [1,16,0,0,0,0,0,12.7,-12.7,0,0,0,1,0, ldraw_lib__1_4edge()],
+  [1,16,0,0,0,0,0,12.7,-12.7,0,0,0,1,0, ldraw_lib__1_4edge(realsolid)],
 // 1 16 0 0 0 0 0 12.7 -12.7 0 0 0 2 0 1-4cylh.dat
-  [1,16,0,0,0,0,0,12.7,-12.7,0,0,0,2,0, ldraw_lib__1_4cylh()],
+  [1,16,0,0,0,0,0,12.7,-12.7,0,0,0,2,0, ldraw_lib__1_4cylh(realsolid)],
 // 1 16 0 0 0 0 0 12.7 -12.7 0 0 0 2 0 1-4edgh.dat
-  [1,16,0,0,0,0,0,12.7,-12.7,0,0,0,2,0, ldraw_lib__1_4edgh()],
+  [1,16,0,0,0,0,0,12.7,-12.7,0,0,0,2,0, ldraw_lib__1_4edgh(realsolid)],
 ];
 module ldraw_lib__s__4716s03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__4716s03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__4716s03(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__4716s03(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <4-4cyli.scad>
-function ldraw_lib__4_4cyl1sph2() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4_4cyl1sph2(realsolid=false) = [
 // 0 Cylinder  1 LDU Truncated to Fit Sphere  2 LDU
 // 0 Name: 4-4cyl1sph2.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -17,7 +18,7 @@ function ldraw_lib__4_4cyl1sph2() = [
 // 0 // 1 47 0 0 0 2 0 0 0 2 0 0 0 2 8-8sphe.dat
 // 
 // 1 16 0 -2 0 1 0 0 0 0.3474 0 0 0 1 4-4cyli.dat
-  [1,16,0,-2,0,1,0,0,0,0.3474,0,0,0,1, ldraw_lib__4_4cyli()],
+  [1,16,0,-2,0,1,0,0,0,0.3474,0,0,0,1, ldraw_lib__4_4cyli(realsolid)],
 // 
 // 2 24 0.9239 -1.6526 0.3827 1 -1.691 0
   [2,24,0.9239,-1.6526,0.3827,1,-1.691,0],
@@ -73,5 +74,5 @@ function ldraw_lib__4_4cyl1sph2() = [
 // 
 ];
 module ldraw_lib__4_4cyl1sph2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4_4cyl1sph2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4_4cyl1sph2(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4_4cyl1sph2(line=0.2);

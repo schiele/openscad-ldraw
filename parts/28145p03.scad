@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/28145s01.scad>
 use <s/28145s02.scad>
-function ldraw_lib__28145p03() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__28145p03(realsolid=false) = [
 // 0 Minifig Hair Wavy Parted with Black Large Thick Glasses and Green Eyes Looking Up Pattern
 // 0 Name: 28145p03.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -19,9 +20,9 @@ function ldraw_lib__28145p03() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\28145s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__28145s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__28145s01(realsolid)],
 // 1 0 0 0 0 1 0 0 0 1 0 0 0 1 s\28145s02.dat
-  [1,0,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__28145s02()],
+  [1,0,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__28145s02(realsolid)],
 // 0 // left
 // 3 0 7.4178 3.9445 -14.8057 6.444 2.608 -14.915 7.033 3.9674 -14.8597
   [3,0,7.4178,3.9445,-14.8057,6.444,2.608,-14.915,7.033,3.9674,-14.8597],
@@ -575,5 +576,5 @@ function ldraw_lib__28145p03() = [
   [4,2,-5.8429,10.5339,-15.004,-4.7379,12.7792,-15.0122,-4.1348,12.4568,-15.0767,-5.3412,10.2862,-15.0569],
 ];
 module ldraw_lib__28145p03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__28145p03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__28145p03(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__28145p03(line=0.2);

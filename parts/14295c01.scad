@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/600880c01s01.scad>
-function ldraw_lib__14295c01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__14295c01(realsolid=false) = [
 // 0 Minifig Skirt  1.5L Fringed (Formed)
 // 0 Name: 14295c01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -20,7 +21,7 @@ function ldraw_lib__14295c01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\600880c01s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__600880c01s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__600880c01s01(realsolid)],
 // 3 16 18.75 0 -10 19.2769 20.8517 -6.8644 18.7763 24.5385 -8.665
   [3,16,18.75,0,-10,19.2769,20.8517,-6.8644,18.7763,24.5385,-8.665],
 // 3 16 18.75 0 -10 19.0724 19.101 -5.3342 19.2769 20.8517 -6.8644
@@ -979,5 +980,5 @@ function ldraw_lib__14295c01() = [
   [5,24,19,12.1836,9.8527,19.2496,12.1753,9.8492,19.1507,21.0919,7.7222,19,0,9.75],
 ];
 module ldraw_lib__14295c01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__14295c01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__14295c01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__14295c01(line=0.2);

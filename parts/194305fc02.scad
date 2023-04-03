@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__194305fc02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__194305fc02(realsolid=false) = [
 // 0 Sticker  1.1 x  2.9 with White "4025" on Transparent Background (Formed for Boat Stern Right Side)
 // 0 Name: 194305fc02.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -407,5 +408,5 @@ function ldraw_lib__194305fc02() = [
   [5,24,-76,11,-13.0658,-76,-11,-10.5677,-76,11,-49,-71.8499,10.9079,8.1893],
 ];
 module ldraw_lib__194305fc02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__194305fc02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__194305fc02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__194305fc02(line=0.2);

@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__2346() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2346(realsolid=false) = [
 // 0 Tyre 12/ 50 x 16 Offset Tread
 // 0 Name: 2346.dat
 // 0 Author: James Jessiman
@@ -1701,5 +1702,5 @@ function ldraw_lib__2346() = [
 // 0
 ];
 module ldraw_lib__2346(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2346(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2346(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2346(line=0.2);

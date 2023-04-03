@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__logoshells02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__logoshells02(realsolid=false) = [
 // 0 ~Logo Shell "V-Power" Text Red with Background
 // 0 Name: s\logoshells02.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -555,5 +556,5 @@ function ldraw_lib__s__logoshells02() = [
   [4,16,4.391,0,-0.77,3.991,0,-0.73,3.631,0,-0.73,2.911,0,-0.77],
 ];
 module ldraw_lib__s__logoshells02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__logoshells02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__logoshells02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__logoshells02(line=0.2);

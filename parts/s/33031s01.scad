@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/box3u2p.scad>
 use <../../p/box4-1.scad>
-function ldraw_lib__s__33031s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__33031s01(realsolid=false) = [
 // 0 ~Container Box  3.5 x  3.5 x  1.333 with Hinged Lid Bottom
 // 0 Name: s\33031s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -16,15 +17,15 @@ function ldraw_lib__s__33031s01() = [
 // 
 // 
 // 1 16 0 -23 0 -34 0 0 0 23 0 0 0 -34 box4-1.dat
-  [1,16,0,-23,0,-34,0,0,0,23,0,0,0,-34, ldraw_lib__box4_1()],
+  [1,16,0,-23,0,-34,0,0,0,23,0,0,0,-34, ldraw_lib__box4_1(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -26 0 -31 0 0 0 23 0 0 0 -31 box4-1.dat
-  [1,16,0,-26,0,-31,0,0,0,23,0,0,0,-31, ldraw_lib__box4_1()],
+  [1,16,0,-26,0,-31,0,0,0,23,0,0,0,-31, ldraw_lib__box4_1(realsolid)],
 // 1 16 0 -24.5 32 0 0 32 -1.5 0 0 0 -64 0 box3u2p.dat
-  [1,16,0,-24.5,32,0,0,32,-1.5,0,0,0,-64,0, ldraw_lib__box3u2p()],
+  [1,16,0,-24.5,32,0,0,32,-1.5,0,0,0,-64,0, ldraw_lib__box3u2p(realsolid)],
 // 1 16 0 -26 31.5 0 0 26 0 -1 0 0.5 0 0 box3u2p.dat
-  [1,16,0,-26,31.5,0,0,26,0,-1,0,0.5,0,0, ldraw_lib__box3u2p()],
+  [1,16,0,-26,31.5,0,0,26,0,-1,0,0.5,0,0, ldraw_lib__box3u2p(realsolid)],
 // 4 16 32 -23 -32 34 -23 -34 34 -23 34 32 -23 32
   [4,16,32,-23,-32,34,-23,-34,34,-23,34,32,-23,32],
 // 4 16 -32 -23 -32 -34 -23 -34 34 -23 -34 32 -23 -32
@@ -73,5 +74,5 @@ function ldraw_lib__s__33031s01() = [
   [4,16,-26,-26,31,-26,-26,32,-32,-26,32,-31,-26,31],
 ];
 module ldraw_lib__s__33031s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__33031s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__33031s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__33031s01(line=0.2);

@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__3068bp9na() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__3068bp9na(realsolid=false) = [
 // 0 ~Tile  2 x  2 with Compass Pointer Pattern Half
 // 0 Name: s\3068bp9na.dat
 // 0 Author: Joerg Sommerer [Brickaneer]
@@ -145,5 +146,5 @@ function ldraw_lib__s__3068bp9na() = [
   [4,0,0.2124,0,-5.2223,2.2527,0,-5.4191,2.5497,0,-5.0497,0,0,-4.8009],
 ];
 module ldraw_lib__s__3068bp9na(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__3068bp9na(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__3068bp9na(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__3068bp9na(line=0.2);

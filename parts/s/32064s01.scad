@@ -3,7 +3,8 @@ use <../../p/3-16ndis.scad>
 use <../../p/box3u2p.scad>
 use <../../p/rect.scad>
 use <../../p/stug2-1x2.scad>
-function ldraw_lib__s__32064s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__32064s01(realsolid=false) = [
 // 0 ~Technic Brick  1 x  2 with Axlehole
 // 0 Name: s\32064s01.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -19,9 +20,9 @@ function ldraw_lib__s__32064s01() = [
 // 
 // 0 // outside
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 stug2-1x2.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug2_1x2()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug2_1x2(realsolid)],
 // 1 16 0 24 0 0 0 -20 0 -24 0 10 0 0 box3u2p.dat
-  [1,16,0,24,0,0,0,-20,0,-24,0,10,0,0, ldraw_lib__box3u2p()],
+  [1,16,0,24,0,0,0,-20,0,-24,0,10,0,0, ldraw_lib__box3u2p(realsolid)],
 // 2 24 20 24 10 -20 24 10
   [2,24,20,24,10,-20,24,10],
 // 2 24 20 24 -10 -20 24 -10
@@ -44,21 +45,21 @@ function ldraw_lib__s__32064s01() = [
   [4,16,-20,24,-10,-6,16,-10,-6,4,-10,-20,0,-10],
 // 0 // axlehole
 // 1 16 0 10 -10 0 0 6 -6 0 0 0 1 0 3-16ndis.dat
-  [1,16,0,10,-10,0,0,6,-6,0,0,0,1,0, ldraw_lib__3_16ndis()],
+  [1,16,0,10,-10,0,0,6,-6,0,0,0,1,0, ldraw_lib__3_16ndis(realsolid)],
 // 1 16 0 10 -10 0 0 -6 -6 0 0 0 1 0 3-16ndis.dat
-  [1,16,0,10,-10,0,0,-6,-6,0,0,0,1,0, ldraw_lib__3_16ndis()],
+  [1,16,0,10,-10,0,0,-6,-6,0,0,0,1,0, ldraw_lib__3_16ndis(realsolid)],
 // 1 16 0 10 -10 0 0 6 6 0 0 0 1 0 3-16ndis.dat
-  [1,16,0,10,-10,0,0,6,6,0,0,0,1,0, ldraw_lib__3_16ndis()],
+  [1,16,0,10,-10,0,0,6,6,0,0,0,1,0, ldraw_lib__3_16ndis(realsolid)],
 // 1 16 0 10 -10 0 0 -6 6 0 0 0 1 0 3-16ndis.dat
-  [1,16,0,10,-10,0,0,-6,6,0,0,0,1,0, ldraw_lib__3_16ndis()],
+  [1,16,0,10,-10,0,0,-6,6,0,0,0,1,0, ldraw_lib__3_16ndis(realsolid)],
 // 1 16 0 10 10 0 0 6 -6 0 0 0 -1 0 3-16ndis.dat
-  [1,16,0,10,10,0,0,6,-6,0,0,0,-1,0, ldraw_lib__3_16ndis()],
+  [1,16,0,10,10,0,0,6,-6,0,0,0,-1,0, ldraw_lib__3_16ndis(realsolid)],
 // 1 16 0 10 10 0 0 -6 -6 0 0 0 -1 0 3-16ndis.dat
-  [1,16,0,10,10,0,0,-6,-6,0,0,0,-1,0, ldraw_lib__3_16ndis()],
+  [1,16,0,10,10,0,0,-6,-6,0,0,0,-1,0, ldraw_lib__3_16ndis(realsolid)],
 // 1 16 0 10 10 0 0 6 6 0 0 0 -1 0 3-16ndis.dat
-  [1,16,0,10,10,0,0,6,6,0,0,0,-1,0, ldraw_lib__3_16ndis()],
+  [1,16,0,10,10,0,0,6,6,0,0,0,-1,0, ldraw_lib__3_16ndis(realsolid)],
 // 1 16 0 10 10 0 0 -6 6 0 0 0 -1 0 3-16ndis.dat
-  [1,16,0,10,10,0,0,-6,6,0,0,0,-1,0, ldraw_lib__3_16ndis()],
+  [1,16,0,10,10,0,0,-6,6,0,0,0,-1,0, ldraw_lib__3_16ndis(realsolid)],
 // 0 // bottom
 // 4 16 20 24 10 16 24 6 -16 24 6 -20 24 10
   [4,16,20,24,10,16,24,6,-16,24,6,-20,24,10],
@@ -70,10 +71,10 @@ function ldraw_lib__s__32064s01() = [
   [4,16,-20,24,10,-16,24,6,-16,24,-6,-20,24,-10],
 // 0 // inside
 // 1 16 -16 14 0 0 -1 0 -10 0 0 0 0 -6 rect.dat
-  [1,16,-16,14,0,0,-1,0,-10,0,0,0,0,-6, ldraw_lib__rect()],
+  [1,16,-16,14,0,0,-1,0,-10,0,0,0,0,-6, ldraw_lib__rect(realsolid)],
 // 1 16 16 14 0 0 1 0 0 0 -10 -6 0 0 rect.dat
-  [1,16,16,14,0,0,1,0,0,0,-10,-6,0,0, ldraw_lib__rect()],
+  [1,16,16,14,0,0,1,0,0,0,-10,-6,0,0, ldraw_lib__rect(realsolid)],
 ];
 module ldraw_lib__s__32064s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__32064s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__32064s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__32064s01(line=0.2);

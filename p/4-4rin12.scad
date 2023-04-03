@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__4_4rin12() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4_4rin12(realsolid=false) = [
 // 0 Ring 12 x 1.0
 // 0 Name: 4-4rin12.dat
 // 0 Author: John Riley [jriley]
@@ -51,5 +52,5 @@ function ldraw_lib__4_4rin12() = [
 // 
 ];
 module ldraw_lib__4_4rin12(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4_4rin12(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4_4rin12(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4_4rin12(line=0.2);

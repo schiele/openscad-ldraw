@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/box4-1.scad>
 use <../p/box4-3p.scad>
 use <../p/box5-1.scad>
-function ldraw_lib__35463() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__35463(realsolid=false) = [
 // 0 Tile  1 x  1 with Curved Triangle
 // 0 Name: 35463.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -51,15 +52,15 @@ function ldraw_lib__35463() = [
 // 3 16 4.8 18 -15.5732 7.9 13.9 -15.24 4.9 5.6 -15.1634
   [3,16,4.8,18,-15.5732,7.9,13.9,-15.24,4.9,5.6,-15.1634],
 // 1 16 0 8 0 10 0 0 0 -8 0 0 0 10 box4-3p.dat
-  [1,16,0,8,0,10,0,0,0,-8,0,0,0,10, ldraw_lib__box4_3p()],
+  [1,16,0,8,0,10,0,0,0,-8,0,0,0,10, ldraw_lib__box4_3p(realsolid)],
 // 2 24 10 8 10 -10 8 10
   [2,24,10,8,10,-10,8,10],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 8 -2 6 0 0 0 -4 0 0 0 8 box5-1.dat
-  [1,16,0,8,-2,6,0,0,0,-4,0,0,0,8, ldraw_lib__box5_1()],
+  [1,16,0,8,-2,6,0,0,0,-4,0,0,0,8, ldraw_lib__box5_1(realsolid)],
 // 1 16 0 4 -8 1.5 0 0 0 4 0 0 0 2 box4-1.dat
-  [1,16,0,4,-8,1.5,0,0,0,4,0,0,0,2, ldraw_lib__box4_1()],
+  [1,16,0,4,-8,1.5,0,0,0,4,0,0,0,2, ldraw_lib__box4_1(realsolid)],
 // 4 16 -6 8 6 -6 8 -10 -10 8 -10 -10 8 10
   [4,16,-6,8,6,-6,8,-10,-10,8,-10,-10,8,10],
 // 4 16 6 8 6 -6 8 6 -10 8 10 10 8 10
@@ -392,5 +393,5 @@ function ldraw_lib__35463() = [
   [5,24,-1.7,6.8,-15.3514,-4.8,18,-15.5732,-1.9,21,-15.7457,-4.9,5.6,-15.3634],
 ];
 module ldraw_lib__35463(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__35463(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__35463(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__35463(line=0.2);

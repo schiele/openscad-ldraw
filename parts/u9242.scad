@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/t01q0702.scad>
-function ldraw_lib__u9242() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__u9242(realsolid=false) = [
 // 0 ~Rubber Ring for Train Wheel for RC Train with Technic Axle Hole
 // 0 Name: u9242.dat
 // 0 Author: Matthew J. Chiles [mchiles]
@@ -20,8 +21,8 @@ function ldraw_lib__u9242() = [
 // 
 // 
 // 1 16 0 0 0 21.375 0 0 0 0 21.375 0 21.375 0 t01q0702.dat
-  [1,16,0,0,0,21.375,0,0,0,0,21.375,0,21.375,0, ldraw_lib__t01q0702()],
+  [1,16,0,0,0,21.375,0,0,0,0,21.375,0,21.375,0, ldraw_lib__t01q0702(realsolid)],
 ];
 module ldraw_lib__u9242(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__u9242(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__u9242(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__u9242(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3069bs01.scad>
-function ldraw_lib__3069bpz2() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3069bpz2(realsolid=false) = [
 // 0 Tile  1 x  2 with  3 Dark Red Waves Pattern
 // 0 Name: 3069bpz2.dat
 // 0 Author: Damien Roux [Darats]
@@ -17,7 +18,7 @@ function ldraw_lib__3069bpz2() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3069bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3069bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3069bs01(realsolid)],
 // 4 320 -16.6 0 7.48 -19.5 0 7.09 -19.5 0 3.42 -15.97 0 3.99
   [4,320,-16.6,0,7.48,-19.5,0,7.09,-19.5,0,3.42,-15.97,0,3.99],
 // 3 320 -19.5 0 -0.07 -19.5 0 -6.68 -15.81 0 -5.48
@@ -218,5 +219,5 @@ function ldraw_lib__3069bpz2() = [
   [4,16,20,0,10,-20,0,10,14.52,0,9.5,17.9,0,9.5],
 ];
 module ldraw_lib__3069bpz2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3069bpz2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3069bpz2(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3069bpz2(line=0.2);

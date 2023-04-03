@@ -3,7 +3,8 @@ use <../../p/2-4chrd.scad>
 use <../../p/2-4ndis.scad>
 use <../../p/4-4disc.scad>
 use <../../p/4-4ndis.scad>
-function ldraw_lib__s__3070bp11s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__3070bp11s01(realsolid=false) = [
 // 0 ~Tile  1 x  1 with White Bunny Rabbit Face with Black Eyes and Dark Pink Ears and Nose Pattern - Half
 // 0 Name: s\3070bp11s01.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -18,13 +19,13 @@ function ldraw_lib__s__3070bp11s01() = [
 // 
 // 
 // 1 0 -3 0 -4 1.2 0 0 0 1 0 0 0 1.2 4-4disc.dat
-  [1,0,-3,0,-4,1.2,0,0,0,1,0,0,0,1.2, ldraw_lib__4_4disc()],
+  [1,0,-3,0,-4,1.2,0,0,0,1,0,0,0,1.2, ldraw_lib__4_4disc(realsolid)],
 // 1 15 -3 0 -4 1.2 0 0 0 1 0 0 0 1.2 4-4ndis.dat
-  [1,15,-3,0,-4,1.2,0,0,0,1,0,0,0,1.2, ldraw_lib__4_4ndis()],
+  [1,15,-3,0,-4,1.2,0,0,0,1,0,0,0,1.2, ldraw_lib__4_4ndis(realsolid)],
 // 1 5 -3 0 3.5 0 0 -3 0 1 0 3 0 0 2-4chrd.dat
-  [1,5,-3,0,3.5,0,0,-3,0,1,0,3,0,0, ldraw_lib__2_4chrd()],
+  [1,5,-3,0,3.5,0,0,-3,0,1,0,3,0,0, ldraw_lib__2_4chrd(realsolid)],
 // 1 15 -3 0 3.5 0 0 -3 0 1 0 3 0 0 2-4ndis.dat
-  [1,15,-3,0,3.5,0,0,-3,0,1,0,3,0,0, ldraw_lib__2_4ndis()],
+  [1,15,-3,0,3.5,0,0,-3,0,1,0,3,0,0, ldraw_lib__2_4ndis(realsolid)],
 // 4 15 -4.2 0 -2.8 -5.2 0 -1.8 -6.36 0 -2.64 -4.2 0 -4
   [4,15,-4.2,0,-2.8,-5.2,0,-1.8,-6.36,0,-2.64,-4.2,0,-4],
 // 4 15 -4.2 0 -4 -6.36 0 -2.64 -7.14 0 -3.52 -4.2 0 -5.2
@@ -121,5 +122,5 @@ function ldraw_lib__s__3070bp11s01() = [
   [3,16,-10,0,10,-2.28,0,8.95,-1.5,0,9],
 ];
 module ldraw_lib__s__3070bp11s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__3070bp11s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__3070bp11s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__3070bp11s01(line=0.2);

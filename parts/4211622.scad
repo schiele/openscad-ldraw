@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <3713.scad>
-function ldraw_lib__4211622() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4211622(realsolid=false) = [
 // 0 ~_Technic Bush Light Bluish Grey (Obsolete)
 // 0 Name: 4211622.dat
 // 0 Author: Michael Heidemann [mikeheide]
@@ -19,8 +20,8 @@ function ldraw_lib__4211622() = [
 // 
 // 
 // 1 71 0 0 0 1 0 0 0 1 0 0 0 1 3713.dat
-  [1,71,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3713()],
+  [1,71,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3713(realsolid)],
 ];
 module ldraw_lib__4211622(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4211622(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4211622(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4211622(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/6180s01.scad>
-function ldraw_lib__6180p02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6180p02(realsolid=false) = [
 // 0 Plate  4 x  6 with 12 Studs on Three Edges with Blackboard Pattern
 // 0 Name: 6180p02.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -19,7 +20,7 @@ function ldraw_lib__6180p02() = [
 // 
 // 0 // Subfile
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\6180s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6180s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6180s01(realsolid)],
 // 4 15 9.4 0 -36.5 8.8 0 -37.1 9.5 0 -37.4 11.1 0 -37.2
   [4,15,9.4,0,-36.5,8.8,0,-37.1,9.5,0,-37.4,11.1,0,-37.2],
 // 4 15 10.9 0 -36.3 9.4 0 -36.5 11.1 0 -37.2 12.3 0 -36.6
@@ -1626,5 +1627,5 @@ function ldraw_lib__6180p02() = [
   [4,16,-33.3,0,14.9,-23.3,0,15.5,-22.9,0,15.9,-34.9,0,16.9],
 ];
 module ldraw_lib__6180p02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6180p02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6180p02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6180p02(line=0.2);

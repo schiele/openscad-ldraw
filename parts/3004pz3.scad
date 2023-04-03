@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3004s01.scad>
-function ldraw_lib__3004pz3() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3004pz3(realsolid=false) = [
 // 0 Brick  1 x  2 with Bright Light Orange and Dark Red V-Neck Collar and Tie and White Undershirt Pattern
 // 0 Name: 3004pz3.dat
 // 0 Author: Ulrich Röder [UR]
@@ -18,7 +19,7 @@ function ldraw_lib__3004pz3() = [
 // 
 // 0 // Main
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3004s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3004s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3004s01(realsolid)],
 // 3 16 20 24 -10 20 4 -10 0 24 -10
   [3,16,20,24,-10,20,4,-10,0,24,-10],
 // 3 16 -1.85 0 -10 -15.5 0 -10 -8.675 6.825 -10
@@ -135,5 +136,5 @@ function ldraw_lib__3004pz3() = [
   [4,320,-1.222,14.278,-10,0,15.5,-10,4.552,10.955,-10,3.326,9.729,-10],
 ];
 module ldraw_lib__3004pz3(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3004pz3(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3004pz3(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3004pz3(line=0.2);

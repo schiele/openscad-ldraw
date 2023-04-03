@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__4542886b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4542886b(realsolid=false) = [
 // 0 Sticker  1.8 x  1.8 with Castle Soldier Portrait
 // 0 Name: 4542886b.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -17,7 +18,7 @@ function ldraw_lib__4542886b() = [
 // 
 // 
 // 1 16 0 -0.25 0 18.75 0 0 0 0.25 0 0 0 18.75 box5-12.dat
-  [1,16,0,-0.25,0,18.75,0,0,0,0.25,0,0,0,18.75, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,18.75,0,0,0,0.25,0,0,0,18.75, ldraw_lib__box5_12(realsolid)],
 // 4 70 -8.19598 -0.25 -13.5 -8.16584 -0.25 -13.3485 -8.46519 -0.25 -13.2245 -8.52 -0.25 -13.5
   [4,70,-8.19598,-0.25,-13.5,-8.16584,-0.25,-13.3485,-8.46519,-0.25,-13.2245,-8.52,-0.25,-13.5],
 // 4 70 -8.16584 -0.25 -13.6515 -8.19598 -0.25 -13.5 -8.52 -0.25 -13.5 -8.46519 -0.25 -13.7755
@@ -2124,5 +2125,5 @@ function ldraw_lib__4542886b() = [
   [4,18,5.3,-0.25,-7.2,4.6,-0.25,-5.1,1.7,-0.25,-5,0,-0.25,-7.2],
 ];
 module ldraw_lib__4542886b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4542886b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4542886b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4542886b(line=0.2);

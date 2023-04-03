@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <3626b.scad>
-function ldraw_lib__362626() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__362626(realsolid=false) = [
 // 0 ~_Minifig Head with Hollow Stud Black (Obsolete)
 // 0 Name: 362626.dat
 // 0 Author: Michael Heidemann [mikeheide]
@@ -20,8 +21,8 @@ function ldraw_lib__362626() = [
 // 0 // colouring of the part (Black).
 // 
 // 1 0 0 0 0 1 0 0 0 1 0 0 0 1 3626b.dat
-  [1,0,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3626b()],
+  [1,0,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3626b(realsolid)],
 ];
 module ldraw_lib__362626(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__362626(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__362626(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__362626(line=0.2);

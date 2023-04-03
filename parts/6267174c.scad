@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__6267174c() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6267174c(realsolid=false) = [
 // 0 Sticker  2.9 x  1.4 with Bookshelf and Headmaster
 // 0 Name: 6267174c.dat
 // 0 Author: Howard Lande [HowardLande]
@@ -17,7 +18,7 @@ function ldraw_lib__6267174c() = [
 // 
 // 
 // 1 16 0 -0.25 0 14 0 0 0 0.25 0 0 0 29 box5-12.dat
-  [1,16,0,-0.25,0,14,0,0,0,0.25,0,0,0,29, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,14,0,0,0,0.25,0,0,0,29, ldraw_lib__box5_12(realsolid)],
 // 
 // 4 70 0 -0.25 -21.5 0 -0.25 -24.4 9.74 -0.25 -24.4 9.65 -0.25 -21.5
   [4,70,0,-0.25,-21.5,0,-0.25,-24.4,9.74,-0.25,-24.4,9.65,-0.25,-21.5],
@@ -3323,5 +3324,5 @@ function ldraw_lib__6267174c() = [
   [3,19,-3.99,-0.25,-5.01,-4.925,-0.25,-4.609,-4.33,-0.25,-5.13],
 ];
 module ldraw_lib__6267174c(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6267174c(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6267174c(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6267174c(line=0.2);

@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <40940.scad>
 use <u9479c01.scad>
-function ldraw_lib__22169() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__22169(realsolid=false) = [
 // 0 Electric Control+ L Motor
 // 0 Name: 22169.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -16,10 +17,10 @@ function ldraw_lib__22169() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 u9479c01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9479c01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9479c01(realsolid)],
 // 1 4 0 0 -10 1 0 0 0 1 0 0 0 1 40940.dat
-  [1,4,0,0,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__40940()],
+  [1,4,0,0,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__40940(realsolid)],
 ];
 module ldraw_lib__22169(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__22169(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__22169(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__22169(line=0.2);

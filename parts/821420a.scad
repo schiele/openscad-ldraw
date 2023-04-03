@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4ndis.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__821420a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__821420a(realsolid=false) = [
 // 0 Sticker  0.8 x  1.85 with Black Oval
 // 0 Name: 821420a.dat
 // 0 Author: Max Martin Richter [MMR1988]
@@ -19,12 +20,12 @@ function ldraw_lib__821420a() = [
 // 
 // 
 // 1 16 0 -0.25 0 18.5 0 0 0 0.25 0 0 0 -8 box5-12.dat
-  [1,16,0,-0.25,0,18.5,0,0,0,0.25,0,0,0,-8, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,18.5,0,0,0,0.25,0,0,0,-8, ldraw_lib__box5_12(realsolid)],
 // 
 // 1 0 0 -0.25 0 15.1 0 0 0 1 0 0 0 5.6 4-4disc.dat
-  [1,0,0,-0.25,0,15.1,0,0,0,1,0,0,0,5.6, ldraw_lib__4_4disc()],
+  [1,0,0,-0.25,0,15.1,0,0,0,1,0,0,0,5.6, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 -0.25 0 15.1 0 0 0 1 0 0 0 5.6 4-4ndis.dat
-  [1,16,0,-0.25,0,15.1,0,0,0,1,0,0,0,5.6, ldraw_lib__4_4ndis()],
+  [1,16,0,-0.25,0,15.1,0,0,0,1,0,0,0,5.6, ldraw_lib__4_4ndis(realsolid)],
 // 
 // 3 16 18.5 -0.25 8 0 -0.25 5.6 15.1 -0.25 5.6
   [3,16,18.5,-0.25,8,0,-0.25,5.6,15.1,-0.25,5.6],
@@ -44,5 +45,5 @@ function ldraw_lib__821420a() = [
   [4,16,-15.1,-0.25,-5.6,-15.1,-0.25,0,-18.5,-0.25,8,-18.5,-0.25,-8],
 ];
 module ldraw_lib__821420a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__821420a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__821420a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__821420a(line=0.2);

@@ -4,7 +4,8 @@ use <../p/box4.scad>
 use <../p/box5-4a.scad>
 use <../p/rect.scad>
 use <../p/rect3.scad>
-function ldraw_lib__u8025() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__u8025(realsolid=false) = [
 // 0 Mursten Window  1 x  3 x  3
 // 0 Name: u8025.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -25,9 +26,9 @@ function ldraw_lib__u8025() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 35 -10 25 0 0 0 0 27 0 4 0 box4.dat
-  [1,16,0,35,-10,25,0,0,0,0,27,0,4,0, ldraw_lib__box4()],
+  [1,16,0,35,-10,25,0,0,0,0,27,0,4,0, ldraw_lib__box4(realsolid)],
 // 1 16 0 35 -10 27 0 0 0 0 29 0 3 0 box4.dat
-  [1,16,0,35,-10,27,0,0,0,0,29,0,3,0, ldraw_lib__box4()],
+  [1,16,0,35,-10,27,0,0,0,0,29,0,3,0, ldraw_lib__box4(realsolid)],
 // 4 16 -25 8 -10 25 8 -10 27 6 -10 -27 6 -10
   [4,16,-25,8,-10,25,8,-10,27,6,-10,-27,6,-10],
 // 4 16 -27 64 -10 27 64 -10 25 62 -10 -25 62 -10
@@ -38,7 +39,7 @@ function ldraw_lib__u8025() = [
   [4,16,-25,62,-10,-25,8,-10,-27,6,-10,-27,64,-10],
 // 
 // 1 16 0 1.5 -7 30 0 0 0 0 -1.5 0 -3 0 box5-4a.dat
-  [1,16,0,1.5,-7,30,0,0,0,0,-1.5,0,-3,0, ldraw_lib__box5_4a()],
+  [1,16,0,1.5,-7,30,0,0,0,0,-1.5,0,-3,0, ldraw_lib__box5_4a(realsolid)],
 // 
 // 2 24 30 3 -7 -30 3 -7
   [2,24,30,3,-7,-30,3,-7],
@@ -67,21 +68,21 @@ function ldraw_lib__u8025() = [
   [2,24,26,0,-6,-26,0,-6],
 // 
 // 1 16 -30 36 .5 0 1 0 -36 0 0 0 0 7.5 rect3.dat
-  [1,16,-30,36,.5,0,1,0,-36,0,0,0,0,7.5, ldraw_lib__rect3()],
+  [1,16,-30,36,.5,0,1,0,-36,0,0,0,0,7.5, ldraw_lib__rect3(realsolid)],
 // 1 16 30 36 .5 0 -1 0 36 0 0 0 0 7.5 rect3.dat
-  [1,16,30,36,.5,0,-1,0,36,0,0,0,0,7.5, ldraw_lib__rect3()],
+  [1,16,30,36,.5,0,-1,0,36,0,0,0,0,7.5, ldraw_lib__rect3(realsolid)],
 // 1 16 28 36 -6 0 0 -2 -36 0 0 0 18 0 box4-7a.dat
-  [1,16,28,36,-6,0,0,-2,-36,0,0,0,18,0, ldraw_lib__box4_7a()],
+  [1,16,28,36,-6,0,0,-2,-36,0,0,0,18,0, ldraw_lib__box4_7a(realsolid)],
 // 1 16 -28 36 -6 0 0 2 36 0 0 0 18 0 box4-7a.dat
-  [1,16,-28,36,-6,0,0,2,36,0,0,0,18,0, ldraw_lib__box4_7a()],
+  [1,16,-28,36,-6,0,0,2,36,0,0,0,18,0, ldraw_lib__box4_7a(realsolid)],
 // 
 // 1 16 -30 36 10 0 -4 0 -36 0 0 0 0 2 box5-4a.dat
-  [1,16,-30,36,10,0,-4,0,-36,0,0,0,0,2, ldraw_lib__box5_4a()],
+  [1,16,-30,36,10,0,-4,0,-36,0,0,0,0,2, ldraw_lib__box5_4a(realsolid)],
 // 1 16 30 36 10 0 4 0 -36 0 0 0 0 -2 box5-4a.dat
-  [1,16,30,36,10,0,4,0,-36,0,0,0,0,-2, ldraw_lib__box5_4a()],
+  [1,16,30,36,10,0,4,0,-36,0,0,0,0,-2, ldraw_lib__box5_4a(realsolid)],
 // 
 // 1 16 0 69 -9.75 -30 0 0 0 1 3 0 0 -2.75 rect.dat
-  [1,16,0,69,-9.75,-30,0,0,0,1,3,0,0,-2.75, ldraw_lib__rect()],
+  [1,16,0,69,-9.75,-30,0,0,0,1,3,0,0,-2.75, ldraw_lib__rect(realsolid)],
 // 
 // 3 16 -30 72 -7 -30 72 -12.5 -30 66 -7
   [3,16,-30,72,-7,-30,72,-12.5,-30,66,-7],
@@ -115,5 +116,5 @@ function ldraw_lib__u8025() = [
   [4,16,30,66,-7,27,64,-7,-27,64,-7,-30,66,-7],
 ];
 module ldraw_lib__u8025(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__u8025(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__u8025(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__u8025(line=0.2);

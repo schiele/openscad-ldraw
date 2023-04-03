@@ -2,7 +2,8 @@ use <../lib.scad>
 use <54092p02.scad>
 use <54760.scad>
 use <u9288.scad>
-function ldraw_lib__54092p02c01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__54092p02c01(realsolid=false) = [
 // 0 Plane Front  8 x 16 x  5 with Trans Black Windshield and Blue Airline Bird Pattern
 // 0 Name: 54092p02c01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -19,16 +20,16 @@ function ldraw_lib__54092p02c01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 54092p02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__54092p02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__54092p02(realsolid)],
 // 1 40 0 0 0 1 0 0 0 1 0 0 0 1 54760.dat
-  [1,40,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__54760()],
+  [1,40,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__54760(realsolid)],
 // 1 0 66.08 61.15 -53.54 -1 0 0 0 -1 0 0 0 1 u9288.dat
-  [1,0,66.08,61.15,-53.54,-1,0,0,0,-1,0,0,0,1, ldraw_lib__u9288()],
+  [1,0,66.08,61.15,-53.54,-1,0,0,0,-1,0,0,0,1, ldraw_lib__u9288(realsolid)],
 // 1 0 -66.08 61.15 -53.54 -1 0 0 0 -1 0 0 0 1 u9288.dat
-  [1,0,-66.08,61.15,-53.54,-1,0,0,0,-1,0,0,0,1, ldraw_lib__u9288()],
+  [1,0,-66.08,61.15,-53.54,-1,0,0,0,-1,0,0,0,1, ldraw_lib__u9288(realsolid)],
 // 1 0 0 89.9 -194.8 -1 0 0 0 -1 0 0 0 1 u9288.dat
-  [1,0,0,89.9,-194.8,-1,0,0,0,-1,0,0,0,1, ldraw_lib__u9288()],
+  [1,0,0,89.9,-194.8,-1,0,0,0,-1,0,0,0,1, ldraw_lib__u9288(realsolid)],
 ];
 module ldraw_lib__54092p02c01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__54092p02c01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__54092p02c01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__54092p02c01(line=0.2);

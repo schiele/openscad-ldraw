@@ -3,7 +3,8 @@ use <../../p/2-4chrd.scad>
 use <../../p/2-4cyli.scad>
 use <../../p/2-4edge.scad>
 use <../../p/2-4ndis.scad>
-function ldraw_lib__s__u9318s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__u9318s01(realsolid=false) = [
 // 0 ~Hinge for Door Arched  5 x  7.5 Fabuland
 // 0 Name: s\u9318s01.dat
 // 0 Author: Chris Dee [cwdee]
@@ -18,15 +19,15 @@ function ldraw_lib__s__u9318s01() = [
 // 
 // 
 // 1 16 0 -5 0 0 0 -2 0 10 0 2 0 0 2-4cyli.dat
-  [1,16,0,-5,0,0,0,-2,0,10,0,2,0,0, ldraw_lib__2_4cyli()],
+  [1,16,0,-5,0,0,0,-2,0,10,0,2,0,0, ldraw_lib__2_4cyli(realsolid)],
 // 1 16 0 -5 0 0 0 -2 0 1 0 2 0 0 2-4edge.dat
-  [1,16,0,-5,0,0,0,-2,0,1,0,2,0,0, ldraw_lib__2_4edge()],
+  [1,16,0,-5,0,0,0,-2,0,1,0,2,0,0, ldraw_lib__2_4edge(realsolid)],
 // 1 16 0 -5 0 0 0 -2 0 -1 0 2 0 0 2-4ndis.dat
-  [1,16,0,-5,0,0,0,-2,0,-1,0,2,0,0, ldraw_lib__2_4ndis()],
+  [1,16,0,-5,0,0,0,-2,0,-1,0,2,0,0, ldraw_lib__2_4ndis(realsolid)],
 // 1 16 0 5 0 0 0 -2 0 1 0 2 0 0 2-4edge.dat
-  [1,16,0,5,0,0,0,-2,0,1,0,2,0,0, ldraw_lib__2_4edge()],
+  [1,16,0,5,0,0,0,-2,0,1,0,2,0,0, ldraw_lib__2_4edge(realsolid)],
 // 1 16 0 5 0 0 0 -2 0 1 0 2 0 0 2-4ndis.dat
-  [1,16,0,5,0,0,0,-2,0,1,0,2,0,0, ldraw_lib__2_4ndis()],
+  [1,16,0,5,0,0,0,-2,0,1,0,2,0,0, ldraw_lib__2_4ndis(realsolid)],
 // 2 24 0 5 2 -7 5 2
   [2,24,0,5,2,-7,5,2],
 // 2 24 -7 5 2 -7 5 -2
@@ -56,15 +57,15 @@ function ldraw_lib__s__u9318s01() = [
 // 4 16 -7 -5 -2 -7 -5 2 -7 5 2 -7 5 -2
   [4,16,-7,-5,-2,-7,-5,2,-7,5,2,-7,5,-2],
 // 1 16 0 -9 0 0 0 2 0 18 0 2 0 0 2-4cyli.dat
-  [1,16,0,-9,0,0,0,2,0,18,0,2,0,0, ldraw_lib__2_4cyli()],
+  [1,16,0,-9,0,0,0,2,0,18,0,2,0,0, ldraw_lib__2_4cyli(realsolid)],
 // 1 16 0 -9 0 0 0 2 0 1 0 2 0 0 2-4edge.dat
-  [1,16,0,-9,0,0,0,2,0,1,0,2,0,0, ldraw_lib__2_4edge()],
+  [1,16,0,-9,0,0,0,2,0,1,0,2,0,0, ldraw_lib__2_4edge(realsolid)],
 // 1 16 0 -9 0 0 0 2 0 1 0 2 0 0 2-4chrd.dat
-  [1,16,0,-9,0,0,0,2,0,1,0,2,0,0, ldraw_lib__2_4chrd()],
+  [1,16,0,-9,0,0,0,2,0,1,0,2,0,0, ldraw_lib__2_4chrd(realsolid)],
 // 1 16 0 9 0 0 0 2 0 1 0 2 0 0 2-4edge.dat
-  [1,16,0,9,0,0,0,2,0,1,0,2,0,0, ldraw_lib__2_4edge()],
+  [1,16,0,9,0,0,0,2,0,1,0,2,0,0, ldraw_lib__2_4edge(realsolid)],
 // 1 16 0 9 0 0 0 2 0 -1 0 2 0 0 2-4chrd.dat
-  [1,16,0,9,0,0,0,2,0,-1,0,2,0,0, ldraw_lib__2_4chrd()],
+  [1,16,0,9,0,0,0,2,0,-1,0,2,0,0, ldraw_lib__2_4chrd(realsolid)],
 // 
 // 3 16 0 5 -2 0 9 -2 -2 5 -2
   [3,16,0,5,-2,0,9,-2,-2,5,-2],
@@ -156,5 +157,5 @@ function ldraw_lib__s__u9318s01() = [
   [4,16,-15,5,2,-15,-5,2,-8.5,-5,2,-8.5,5,2],
 ];
 module ldraw_lib__s__u9318s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__u9318s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__u9318s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__u9318s01(line=0.2);

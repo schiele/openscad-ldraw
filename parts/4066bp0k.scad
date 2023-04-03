@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/4066bs01.scad>
-function ldraw_lib__4066bp0k() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4066bp0k(realsolid=false) = [
 // 0 Duplo Brick  1 x  2 x  2 with Car Jack Pattern
 // 0 Name: 4066bp0k.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -18,7 +19,7 @@ function ldraw_lib__4066bp0k() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4066bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4066bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4066bs01(realsolid)],
 // 4 25 19 16.5 -20 -17 16.5 -20 -21 20.5 -20 22 20.5 -20
   [4,25,19,16.5,-20,-17,16.5,-20,-21,20.5,-20,22,20.5,-20],
 // 4 25 23 22 -20 -22 22 -20 -22 27.25 -20 23 27.25 -20
@@ -603,5 +604,5 @@ function ldraw_lib__4066bp0k() = [
   [3,16,40,0,-20,0,0,-20,19.5,15,-20],
 ];
 module ldraw_lib__4066bp0k(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4066bp0k(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4066bp0k(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4066bp0k(line=0.2);

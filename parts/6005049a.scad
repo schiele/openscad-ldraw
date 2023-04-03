@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__6005049a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6005049a(realsolid=false) = [
 // 0 Sticker  7.5 x 15.5 with UCS Executor Details
 // 0 Name: 6005049a.dat
 // 0 Author: Orion Pobursky [OrionP]
@@ -17,7 +18,7 @@ function ldraw_lib__6005049a() = [
 // 
 // 
 // 1 16 0 -0.25 0 0 0 -155 0 0.25 0 75 0 0 box5-12.dat
-  [1,16,0,-0.25,0,0,0,-155,0,0.25,0,75,0,0, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,0,0,-155,0,0.25,0,75,0,0, ldraw_lib__box5_12(realsolid)],
 // 0 !TEXMAP START PLANAR -155 -0.25 75 155 -0.25 75 -155 -0.25 -75 6005049a.png
 // 0 !: 4 0 -155 -0.25 75 -155 -0.25 -75 155 -0.25 -75 155 -0.25 75
 // 0 !TEXMAP FALLBACK
@@ -27,5 +28,5 @@ function ldraw_lib__6005049a() = [
 // 0 !TEXMAP END
 ];
 module ldraw_lib__6005049a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6005049a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6005049a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6005049a(line=0.2);

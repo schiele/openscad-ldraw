@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/rect2p.scad>
-function ldraw_lib__s__u9495s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__u9495s01(realsolid=false) = [
 // 0 ~Sheet Fabric 30 x 15 Trapezoidal Sail Surface Stripe 1
 // 0 Name: s\u9495s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -47,7 +48,7 @@ function ldraw_lib__s__u9495s01() = [
 // 3 16 -276 0 -153 -276.5 0 -276.5 -210.5 0 -260.5
   [3,16,-276,0,-153,-276.5,0,-276.5,-210.5,0,-260.5],
 // 1 16 -15 0 -117.25 -15 0 0 0 1 0 0 0 -124.75 rect2p.dat
-  [1,16,-15,0,-117.25,-15,0,0,0,1,0,0,0,-124.75, ldraw_lib__rect2p()],
+  [1,16,-15,0,-117.25,-15,0,0,0,1,0,0,0,-124.75, ldraw_lib__rect2p(realsolid)],
 // 2 24 -276.5 0 -276.5 -210.5 0 -260.5
   [2,24,-276.5,0,-276.5,-210.5,0,-260.5],
 // 2 24 -225.8214 0 -3.361 -226.722 0 0
@@ -100,5 +101,5 @@ function ldraw_lib__s__u9495s01() = [
   [2,24,-225.8214,0,3.361,-223.361,0,5.8214],
 ];
 module ldraw_lib__s__u9495s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__u9495s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__u9495s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__u9495s01(line=0.2);

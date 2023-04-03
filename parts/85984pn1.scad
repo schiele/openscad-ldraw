@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/85984s01.scad>
-function ldraw_lib__85984pn1() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__85984pn1(realsolid=false) = [
 // 0 Slope Brick 31  1 x  2 x  0.667 with Red Screen Console Pattern
 // 0 Name: 85984pn1.dat
 // 0 Author: Bertrand Lequy [Berth]
@@ -19,7 +20,7 @@ function ldraw_lib__85984pn1() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\85984s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__85984s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__85984s01(realsolid)],
 // 
 // 4 0 -13.7188 -5.8881 -6.8532 -14.0637 -5.8881 -6.8532 -14.0637 -4.84 -8.6 -13.7188 -4.84 -8.6
   [4,0,-13.7188,-5.8881,-6.8532,-14.0637,-5.8881,-6.8532,-14.0637,-4.84,-8.6,-13.7188,-4.84,-8.6],
@@ -971,5 +972,5 @@ function ldraw_lib__85984pn1() = [
   [4,16,-19.41,-15.01,8.35,-20,-13.6,6,-19.5882,-13.7778,6.2964,-18,-15.6,9.3333],
 ];
 module ldraw_lib__85984pn1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__85984pn1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__85984pn1(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__85984pn1(line=0.2);

@@ -2,7 +2,8 @@ use <../lib.scad>
 use <89662.scad>
 use <89663.scad>
 use <89664.scad>
-function ldraw_lib__89668() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__89668(realsolid=false) = [
 // 0 Electric Energy Battery Storage Unit
 // 0 Name: 89668.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -17,14 +18,14 @@ function ldraw_lib__89668() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 89663.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__89663()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__89663(realsolid)],
 // 1 16 0 80 0 1 0 0 0 1 0 0 0 1 89664.dat
-  [1,16,0,80,0,1,0,0,0,1,0,0,0,1, ldraw_lib__89664()],
+  [1,16,0,80,0,1,0,0,0,1,0,0,0,1, ldraw_lib__89664(realsolid)],
 // 1 494 -42 42 24 0 0 -1 0 1 0 1 0 0 89662.dat
-  [1,494,-42,42,24,0,0,-1,0,1,0,1,0,0, ldraw_lib__89662()],
+  [1,494,-42,42,24,0,0,-1,0,1,0,1,0,0, ldraw_lib__89662(realsolid)],
 // 1 494 42 42 24 0 0 1 0 1 0 1 0 0 89662.dat
-  [1,494,42,42,24,0,0,1,0,1,0,1,0,0, ldraw_lib__89662()],
+  [1,494,42,42,24,0,0,1,0,1,0,1,0,0, ldraw_lib__89662(realsolid)],
 ];
 module ldraw_lib__89668(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__89668(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__89668(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__89668(line=0.2);

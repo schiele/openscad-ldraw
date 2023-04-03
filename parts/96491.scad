@@ -3,7 +3,8 @@ use <../p/2-4edge.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4edge.scad>
-function ldraw_lib__96491() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__96491(realsolid=false) = [
 // 0 Minifig Crown Tiara Flat with Arched Bottom
 // 0 Name: 96491.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -23,15 +24,15 @@ function ldraw_lib__96491() = [
 // 
 // 
 // 1 16 0 5.5 0 2 0 0 0 -5.5 0 0 0 2 4-4cyli.dat
-  [1,16,0,5.5,0,2,0,0,0,-5.5,0,0,0,2, ldraw_lib__4_4cyli()],
+  [1,16,0,5.5,0,2,0,0,0,-5.5,0,0,0,2, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 5.5 0 2 0 0 0 -1 0 0 0 2 4-4edge.dat
-  [1,16,0,5.5,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__4_4edge()],
+  [1,16,0,5.5,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 5.5 0 2 0 0 0 -1 0 0 0 2 4-4disc.dat
-  [1,16,0,5.5,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__4_4disc()],
+  [1,16,0,5.5,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 0 0 0 0 2 0 -1 0.2052 -2 0 0 2-4edge.dat
-  [1,16,0,0,0,0,0,2,0,-1,0.2052,-2,0,0, ldraw_lib__2_4edge()],
+  [1,16,0,0,0,0,0,2,0,-1,0.2052,-2,0,0, ldraw_lib__2_4edge(realsolid)],
 // 1 16 0 0 0 0 0 -2 0 -1 0.2052 -2 0 0 2-4edge.dat
-  [1,16,0,0,0,0,0,-2,0,-1,0.2052,-2,0,0, ldraw_lib__2_4edge()],
+  [1,16,0,0,0,0,0,-2,0,-1,0.2052,-2,0,0, ldraw_lib__2_4edge(realsolid)],
 // 4 16 4.328 0.444 -2.598 0 0 -2.75 0 0 3 4.311 0.444 3
   [4,16,4.328,0.444,-2.598,0,0,-2.75,0,0,3,4.311,0.444,3],
 // 3 16 0 0 -2.75 4.328 0.444 -2.598 0 -1.579 -2.584
@@ -904,5 +905,5 @@ function ldraw_lib__96491() = [
   [5,24,-7.6,-13.884,3,-7.6,-13.884,-1.125,-7.607,-14.807,-1.082,-7.048,-13.139,3],
 ];
 module ldraw_lib__96491(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__96491(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__96491(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__96491(line=0.2);

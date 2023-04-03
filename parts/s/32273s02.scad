@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/rect2a.scad>
-function ldraw_lib__s__32273s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__32273s02(realsolid=false) = [
 // 0 ~Technic Turntable  5 x  5 Centre Pin
 // 0 Name: s\32273s02.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -65,7 +66,7 @@ function ldraw_lib__s__32273s02() = [
 // 4 16 1.106 6 -11.85 4.903 6 -26.02 0 6 -27 0 6 -12
   [4,16,1.106,6,-11.85,4.903,6,-26.02,0,6,-27,0,6,-12],
 // 1 16 1 0 -8.80125 1 0 0 0 1 0 0.1985 0 1 rect2a.dat
-  [1,16,1,0,-8.80125,1,0,0,0,1,0,0.1985,0,1, ldraw_lib__rect2a()],
+  [1,16,1,0,-8.80125,1,0,0,0,1,0,0.1985,0,1, ldraw_lib__rect2a(realsolid)],
 // 4 16 2 0 -7.602 2 -10 -7.602 3.061 -10 -7.391 3.061 10 -7.391
   [4,16,2,0,-7.602,2,-10,-7.602,3.061,-10,-7.391,3.061,10,-7.391],
 // 4 16 2 0 -7.602 3.061 10 -7.391 0 10 -8 0 0 -8
@@ -220,5 +221,5 @@ function ldraw_lib__s__32273s02() = [
   [5,24,0,6,-27,0,10,-27,10.33,10,-24.94,-10.33,10,-24.94],
 ];
 module ldraw_lib__s__32273s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__32273s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__32273s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__32273s02(line=0.2);

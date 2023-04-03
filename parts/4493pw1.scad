@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/4493s01.scad>
-function ldraw_lib__4493pw1() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4493pw1(realsolid=false) = [
 // 0 ~Animal Horse Body Left with Green Blanket and Red Hand Pattern
 // 0 Name: 4493pw1.dat
 // 0 Author: Willy Tschager [Holly-Wood]
@@ -15,7 +16,7 @@ function ldraw_lib__4493pw1() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4493s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4493s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4493s01(realsolid)],
 // 
 // 0 // Pattern
 // 0 // Dark Green
@@ -3714,5 +3715,5 @@ function ldraw_lib__4493pw1() = [
   [5,24,20,7.636,-42.407,20,6.5,-42.366,19.946,6.5,-42.366,20,7.391,-41.488],
 ];
 module ldraw_lib__4493pw1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4493pw1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4493pw1(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4493pw1(line=0.2);

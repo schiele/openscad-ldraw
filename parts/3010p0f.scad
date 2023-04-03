@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/3010p0fs01.scad>
 use <s/3010s01.scad>
-function ldraw_lib__3010p0f() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3010p0f(realsolid=false) = [
 // 0 Brick  1 x  4 with Yellow Flower and 2 Green Leaves Pattern
 // 0 Name: 3010p0f.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -18,12 +19,12 @@ function ldraw_lib__3010p0f() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3010s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3010s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3010s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3010p0fs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3010p0fs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3010p0fs01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\3010p0fs01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__3010p0fs01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__3010p0fs01(realsolid)],
 ];
 module ldraw_lib__3010p0f(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3010p0f(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3010p0f(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3010p0f(line=0.2);

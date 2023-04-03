@@ -2,7 +2,8 @@ use <../../lib.scad>
 use <../../p/4-4cyli.scad>
 use <../../p/4-4disc.scad>
 use <../../p/4-4edge.scad>
-function ldraw_lib__s__47198s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__47198s02(realsolid=false) = [
 // 0 ~Figure Duplo Arm Child Sleeve
 // 0 Name: s\47198s02.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -185,15 +186,15 @@ function ldraw_lib__s__47198s02() = [
 // 3 16 34.5043 16.1109 0 25.9712 9.7812 0 26.3354 9.0992 3.7894
   [3,16,34.5043,16.1109,0,25.9712,9.7812,0,26.3354,9.0992,3.7894],
 // 1 16 22 0 0 0 3 0 9.5 0 0 0 0 9.5 4-4cyli.dat
-  [1,16,22,0,0,0,3,0,9.5,0,0,0,0,9.5, ldraw_lib__4_4cyli()],
+  [1,16,22,0,0,0,3,0,9.5,0,0,0,0,9.5, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 22 0 0 0 1 0 9.5 0 0 0 0 9.5 4-4edge.dat
-  [1,16,22,0,0,0,1,0,9.5,0,0,0,0,9.5, ldraw_lib__4_4edge()],
+  [1,16,22,0,0,0,1,0,9.5,0,0,0,0,9.5, ldraw_lib__4_4edge(realsolid)],
 // 1 16 22 0 0 0 1 0 9.5 0 0 0 0 9.5 4-4disc.dat
-  [1,16,22,0,0,0,1,0,9.5,0,0,0,0,9.5, ldraw_lib__4_4disc()],
+  [1,16,22,0,0,0,1,0,9.5,0,0,0,0,9.5, ldraw_lib__4_4disc(realsolid)],
 // 1 16 39.8076 10.8076 0 -5.3033 0 0 5.3033 -1 0 0 0 -8 4-4edge.dat
-  [1,16,39.8076,10.8076,0,-5.3033,0,0,5.3033,-1,0,0,0,-8, ldraw_lib__4_4edge()],
+  [1,16,39.8076,10.8076,0,-5.3033,0,0,5.3033,-1,0,0,0,-8, ldraw_lib__4_4edge(realsolid)],
 // 1 16 39.8076 10.8076 0 -5.3033 0 0 5.3033 -1 0 0 0 -8 4-4disc.dat
-  [1,16,39.8076,10.8076,0,-5.3033,0,0,5.3033,-1,0,0,0,-8, ldraw_lib__4_4disc()],
+  [1,16,39.8076,10.8076,0,-5.3033,0,0,5.3033,-1,0,0,0,-8, ldraw_lib__4_4disc(realsolid)],
 // 0 // Added lines/Condlines
 // 5 24 25 -8.7771 -3.6357 30.1835 -8.139 -3.5206 30.3667 -8.7819 0 29.655 -6.1965 -6.633
   [5,24,25,-8.7771,-3.6357,30.1835,-8.139,-3.5206,30.3667,-8.7819,0,29.655,-6.1965,-6.633],
@@ -441,5 +442,5 @@ function ldraw_lib__s__47198s02() = [
   [5,24,34.5043,16.1109,0,26.3354,9.0992,3.7894,34.9079,15.7073,3.0616,25.9712,9.7812,0],
 ];
 module ldraw_lib__s__47198s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__47198s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__47198s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__47198s02(line=0.2);

@@ -4,7 +4,8 @@ use <../p/stud.scad>
 use <../p/stug2.scad>
 use <../p/stug3.scad>
 use <../p/stug8.scad>
-function ldraw_lib__729() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__729(realsolid=false) = [
 // 0 Container Storage  8 x 11 x  3
 // 0 Name: 729.dat
 // 0 Author: Tore Eriksson [Tore_Eriksson]
@@ -37,23 +38,23 @@ function ldraw_lib__729() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 72 0 106 0 0 0 -68 0 0 0 76 box5.dat
-  [1,16,0,72,0,106,0,0,0,-68,0,0,0,76, ldraw_lib__box5()],
+  [1,16,0,72,0,106,0,0,0,-68,0,0,0,76, ldraw_lib__box5(realsolid)],
 // 1 16 0 72 0 110 0 0 0 -72 0 0 0 80 box5.dat
-  [1,16,0,72,0,110,0,0,0,-72,0,0,0,80, ldraw_lib__box5()],
+  [1,16,0,72,0,110,0,0,0,-72,0,0,0,80, ldraw_lib__box5(realsolid)],
 // 1 16 -30 0 0 1 0 0 0 1 0 0 0 1 stug8.dat
-  [1,16,-30,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug8()],
+  [1,16,-30,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug8(realsolid)],
 // 1 16 80 0 -50 1 0 0 0 1 0 0 0 1 stug3.dat
-  [1,16,80,0,-50,1,0,0,0,1,0,0,0,1, ldraw_lib__stug3()],
+  [1,16,80,0,-50,1,0,0,0,1,0,0,0,1, ldraw_lib__stug3(realsolid)],
 // 1 16 80 0 10 1 0 0 0 1 0 0 0 1 stug3.dat
-  [1,16,80,0,10,1,0,0,0,1,0,0,0,1, ldraw_lib__stug3()],
+  [1,16,80,0,10,1,0,0,0,1,0,0,0,1, ldraw_lib__stug3(realsolid)],
 // 1 16 70 0 60 1 0 0 0 1 0 0 0 1 stug2.dat
-  [1,16,70,0,60,1,0,0,0,1,0,0,0,1, ldraw_lib__stug2()],
+  [1,16,70,0,60,1,0,0,0,1,0,0,0,1, ldraw_lib__stug2(realsolid)],
 // 1 16 100 0 70 1 0 0 0 1 0 0 0 1 stud.dat
-  [1,16,100,0,70,1,0,0,0,1,0,0,0,1, ldraw_lib__stud()],
+  [1,16,100,0,70,1,0,0,0,1,0,0,0,1, ldraw_lib__stud(realsolid)],
 // 1 16 100 0 50 1 0 0 0 1 0 0 0 1 stud.dat
-  [1,16,100,0,50,1,0,0,0,1,0,0,0,1, ldraw_lib__stud()],
+  [1,16,100,0,50,1,0,0,0,1,0,0,0,1, ldraw_lib__stud(realsolid)],
 // 0
 ];
 module ldraw_lib__729(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__729(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__729(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__729(line=0.2);

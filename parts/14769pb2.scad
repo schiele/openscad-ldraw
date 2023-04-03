@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/4-4ering.scad>
 use <s/14769s01.scad>
-function ldraw_lib__14769pb2() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__14769pb2(realsolid=false) = [
 // 0 Tile  2 x  2 Round with Round Underside Stud with White "BAM!" on Red and Medium Blue Burst Cloud Pattern
 // 0 Name: 14769pb2.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -18,9 +19,9 @@ function ldraw_lib__14769pb2() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\14769s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__14769s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__14769s01(realsolid)],
 // 1 16 0 0 0 20 0 0 0 1 0 0 0 20 4-4ering.dat
-  [1,16,0,0,0,20,0,0,0,1,0,0,0,20, ldraw_lib__4_4ering()],
+  [1,16,0,0,0,20,0,0,0,1,0,0,0,20, ldraw_lib__4_4ering(realsolid)],
 // 
 // 4 4 -4.5 0 -11 -3.6 0 -13.2 -1.1 0 -9.9 -4.2 0 -8.3
   [4,4,-4.5,0,-11,-3.6,0,-13.2,-1.1,0,-9.9,-4.2,0,-8.3],
@@ -418,5 +419,5 @@ function ldraw_lib__14769pb2() = [
   [3,16,-18.478,0,7.654,-20,0,0,-17.74,0,2.46],
 ];
 module ldraw_lib__14769pb2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__14769pb2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__14769pb2(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__14769pb2(line=0.2);

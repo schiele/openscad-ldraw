@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/1-4chrd.scad>
 use <../../p/1-4cyli.scad>
-function ldraw_lib__s__6142622as06() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__6142622as06(realsolid=false) = [
 // 0 ~Sticker  1.9 x  1.8 with Dark Grey Exhaust Pipes on Black Background and Black "CORVETTE" on Yellow Background - Underside Flat
 // 0 Name: s\6142622as06.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -18,21 +19,21 @@ function ldraw_lib__s__6142622as06() = [
 // 0 // Primitives
 // 
 // 1 16 -16.5 0 17.7711 -1.5 0 0 0 -1 0 0 0 1.5 1-4chrd.dat
-  [1,16,-16.5,0,17.7711,-1.5,0,0,0,-1,0,0,0,1.5, ldraw_lib__1_4chrd()],
+  [1,16,-16.5,0,17.7711,-1.5,0,0,0,-1,0,0,0,1.5, ldraw_lib__1_4chrd(realsolid)],
 // 1 16 16.5 0 17.7711 1.5 0 0 0 -1 0 0 0 1.5 1-4chrd.dat
-  [1,16,16.5,0,17.7711,1.5,0,0,0,-1,0,0,0,1.5, ldraw_lib__1_4chrd()],
+  [1,16,16.5,0,17.7711,1.5,0,0,0,-1,0,0,0,1.5, ldraw_lib__1_4chrd(realsolid)],
 // 1 16 -16.5 0 -17.7711 -1.5 0 0 0 -1 0 0 0 -1.5 1-4chrd.dat
-  [1,16,-16.5,0,-17.7711,-1.5,0,0,0,-1,0,0,0,-1.5, ldraw_lib__1_4chrd()],
+  [1,16,-16.5,0,-17.7711,-1.5,0,0,0,-1,0,0,0,-1.5, ldraw_lib__1_4chrd(realsolid)],
 // 1 16 16.5 0 -17.7711 1.5 0 0 0 -1 0 0 0 -1.5 1-4chrd.dat
-  [1,16,16.5,0,-17.7711,1.5,0,0,0,-1,0,0,0,-1.5, ldraw_lib__1_4chrd()],
+  [1,16,16.5,0,-17.7711,1.5,0,0,0,-1,0,0,0,-1.5, ldraw_lib__1_4chrd(realsolid)],
 // 1 16 -16.5 -0.25 17.7711 -1.5 0 0 0 0.25 0 0 0 1.5 1-4cyli.dat
-  [1,16,-16.5,-0.25,17.7711,-1.5,0,0,0,0.25,0,0,0,1.5, ldraw_lib__1_4cyli()],
+  [1,16,-16.5,-0.25,17.7711,-1.5,0,0,0,0.25,0,0,0,1.5, ldraw_lib__1_4cyli(realsolid)],
 // 1 16 16.5 -0.25 17.7711 1.5 0 0 0 0.25 0 0 0 1.5 1-4cyli.dat
-  [1,16,16.5,-0.25,17.7711,1.5,0,0,0,0.25,0,0,0,1.5, ldraw_lib__1_4cyli()],
+  [1,16,16.5,-0.25,17.7711,1.5,0,0,0,0.25,0,0,0,1.5, ldraw_lib__1_4cyli(realsolid)],
 // 1 16 -16.5 -0.25 -17.7711 -1.5 0 0 0 0.25 0 0 0 -1.5 1-4cyli.dat
-  [1,16,-16.5,-0.25,-17.7711,-1.5,0,0,0,0.25,0,0,0,-1.5, ldraw_lib__1_4cyli()],
+  [1,16,-16.5,-0.25,-17.7711,-1.5,0,0,0,0.25,0,0,0,-1.5, ldraw_lib__1_4cyli(realsolid)],
 // 1 16 16.5 -0.25 -17.7711 1.5 0 0 0 0.25 0 0 0 -1.5 1-4cyli.dat
-  [1,16,16.5,-0.25,-17.7711,1.5,0,0,0,0.25,0,0,0,-1.5, ldraw_lib__1_4cyli()],
+  [1,16,16.5,-0.25,-17.7711,1.5,0,0,0,0.25,0,0,0,-1.5, ldraw_lib__1_4cyli(realsolid)],
 // 0 // Bottom face
 // 4 16 16.5 0 19.2711 18 0 17.7711 -18 0 17.7711 -16.5 0 19.2711
   [4,16,16.5,0,19.2711,18,0,17.7711,-18,0,17.7711,-16.5,0,19.2711],
@@ -75,5 +76,5 @@ function ldraw_lib__s__6142622as06() = [
   [4,16,-16.5,0,-19.2711,16.5,0,-19.2711,16.5,-.25,-19.2711,-16.5,-.25,-19.2711],
 ];
 module ldraw_lib__s__6142622as06(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__6142622as06(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__6142622as06(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__6142622as06(line=0.2);

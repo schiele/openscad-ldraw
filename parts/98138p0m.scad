@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/4-4ering.scad>
 use <s/98138s01.scad>
-function ldraw_lib__98138p0m() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__98138p0m(realsolid=false) = [
 // 0 Tile  1 x  1 Round with Empire Biscuit Pattern
 // 0 Name: 98138p0m.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -18,9 +19,9 @@ function ldraw_lib__98138p0m() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\98138s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01(realsolid)],
 // 1 16 0 0 0 9 0 0 0 1 0 0 0 9 4-4ering.dat
-  [1,16,0,0,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4ering()],
+  [1,16,0,0,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4ering(realsolid)],
 // 
 // 4 320 -3 0 0.7 -3.1 0 0.1 0 0 0 -2.5 0 1.3
   [4,320,-3,0,0.7,-3.1,0,0.1,0,0,0,-2.5,0,1.3],
@@ -2208,5 +2209,5 @@ function ldraw_lib__98138p0m() = [
   [3,16,-1.17,0,4.55,-1.1056,0,4.7056,-2.0444,0,4.7944],
 ];
 module ldraw_lib__98138p0m(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__98138p0m(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__98138p0m(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__98138p0m(line=0.2);

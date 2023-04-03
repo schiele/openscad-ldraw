@@ -3,7 +3,8 @@ use <s/29685p01s01.scad>
 use <s/29685p01s02.scad>
 use <s/29685s01.scad>
 use <s/29685s02.scad>
-function ldraw_lib__29685p01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__29685p01(realsolid=false) = [
 // 0 Animal Bunny with Black Eyes and Pink Nose Pattern
 // 0 Name: 29685p01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -22,19 +23,19 @@ function ldraw_lib__29685p01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\29685s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__29685s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__29685s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\29685s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__29685s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__29685s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\29685s02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__29685s02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__29685s02(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\29685p01s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__29685p01s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__29685p01s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\29685p01s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__29685p01s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__29685p01s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\29685p01s02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__29685p01s02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__29685p01s02(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\29685p01s02.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__29685p01s02()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__29685p01s02(realsolid)],
 // 
 // 3 16 0 -6.106 22.699 1.973 -9.093 21.741 -1.973 -9.093 21.741
   [3,16,0,-6.106,22.699,1.973,-9.093,21.741,-1.973,-9.093,21.741],
@@ -58,5 +59,5 @@ function ldraw_lib__29685p01() = [
   [3,16,3.5355,-20.45,3.5355,0,-20.45,-5,-3.5355,-20.45,3.5355],
 ];
 module ldraw_lib__29685p01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__29685p01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__29685p01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__29685p01(line=0.2);

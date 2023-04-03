@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <1-16ring19.scad>
-function ldraw_lib__48__1_16ri19() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__48__1_16ri19(realsolid=false) = [
 // 0 ~Moved to 48\1-16ring19
 // 0 Name: 48\1-16ri19.dat
 // 0 Author: [PTadmin]
@@ -16,8 +17,8 @@ function ldraw_lib__48__1_16ri19() = [
 // 
 // 0 // Hi-Res Ring 19 x 0.0625
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 48\1-16ring19.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__48__1_16ring19()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__48__1_16ring19(realsolid)],
 ];
 module ldraw_lib__48__1_16ri19(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__48__1_16ri19(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__48__1_16ri19(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__48__1_16ri19(line=0.2);

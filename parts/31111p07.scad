@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/31111s01.scad>
-function ldraw_lib__31111p07() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__31111p07(realsolid=false) = [
 // 0 Duplo Brick  2 x  4 x  2 with Tiger Head Pattern
 // 0 Name: 31111p07.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -18,7 +19,7 @@ function ldraw_lib__31111p07() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\31111s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__31111s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__31111s01(realsolid)],
 // 
 // 4 0 -19.6 60.8 -40 -15.6 62.9 -40 -10.6 55.2 -40 -13.4 53 -40
   [4,0,-19.6,60.8,-40,-15.6,62.9,-40,-10.6,55.2,-40,-13.4,53,-40],
@@ -1074,5 +1075,5 @@ function ldraw_lib__31111p07() = [
   [3,15,67.2,47.8,-40,67.6,51.4,-40,68.4,51.4,-40],
 ];
 module ldraw_lib__31111p07(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__31111p07(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__31111p07(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__31111p07(line=0.2);

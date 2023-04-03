@@ -7,7 +7,8 @@ use <../p/4-4con4.scad>
 use <../p/4-4cylc.scad>
 use <../p/4-4edge.scad>
 use <../p/4-8sphe.scad>
-function ldraw_lib__90508() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__90508(realsolid=false) = [
 // 0 Minifig Maracas
 // 0 Name: 90508.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -24,23 +25,23 @@ function ldraw_lib__90508() = [
 // 
 // 
 // 1 16 0 -22 0 9 0 0 0 -9 0 0 0 -9 4-8sphe.dat
-  [1,16,0,-22,0,9,0,0,0,-9,0,0,0,-9, ldraw_lib__4_8sphe()],
+  [1,16,0,-22,0,9,0,0,0,-9,0,0,0,-9, ldraw_lib__4_8sphe(realsolid)],
 // 1 16 0 -22 0 0.75 0 0 0 4 0 0 0 0.75 4-4con11.dat
-  [1,16,0,-22,0,0.75,0,0,0,4,0,0,0,0.75, ldraw_lib__4_4con11()],
+  [1,16,0,-22,0,0.75,0,0,0,4,0,0,0,0.75, ldraw_lib__4_4con11(realsolid)],
 // 1 16 0 -18 0 0.25 0 0 0 0.7 0 0 0 0.25 4-4con32.dat
-  [1,16,0,-18,0,0.25,0,0,0,0.7,0,0,0,0.25, ldraw_lib__4_4con32()],
+  [1,16,0,-18,0,0.25,0,0,0,0.7,0,0,0,0.25, ldraw_lib__4_4con32(realsolid)],
 // 1 16 0 -17.3 0 2 0 0 0 5.4 0 0 0 2 4-4con3.dat
-  [1,16,0,-17.3,0,2,0,0,0,5.4,0,0,0,2, ldraw_lib__4_4con3()],
+  [1,16,0,-17.3,0,2,0,0,0,5.4,0,0,0,2, ldraw_lib__4_4con3(realsolid)],
 // 1 16 0 -11.9 0 0.5 0 0 0 4.15 0 0 0 0.5 4-4con11.dat
-  [1,16,0,-11.9,0,0.5,0,0,0,4.15,0,0,0,0.5, ldraw_lib__4_4con11()],
+  [1,16,0,-11.9,0,0.5,0,0,0,4.15,0,0,0,0.5, ldraw_lib__4_4con11(realsolid)],
 // 1 16 0 -7.75 0 5.5 0 0 0 1 0 0 0 5.5 4-4edge.dat
-  [1,16,0,-7.75,0,5.5,0,0,0,1,0,0,0,5.5, ldraw_lib__4_4edge()],
+  [1,16,0,-7.75,0,5.5,0,0,0,1,0,0,0,5.5, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 -7.75 0 0.5 0 0 0 0.4 0 0 0 0.5 4-4con10.dat
-  [1,16,0,-7.75,0,0.5,0,0,0,0.4,0,0,0,0.5, ldraw_lib__4_4con10()],
+  [1,16,0,-7.75,0,0.5,0,0,0,0.4,0,0,0,0.5, ldraw_lib__4_4con10(realsolid)],
 // 1 16 0 -7.35 0 1 0 0 0 0.35 0 0 0 1 4-4con4.dat
-  [1,16,0,-7.35,0,1,0,0,0,0.35,0,0,0,1, ldraw_lib__4_4con4()],
+  [1,16,0,-7.35,0,1,0,0,0,0.35,0,0,0,1, ldraw_lib__4_4con4(realsolid)],
 // 1 16 0 8 0 -4 0 0 0 -15 0 0 0 4 4-4cylc.dat
-  [1,16,0,8,0,-4,0,0,0,-15,0,0,0,4, ldraw_lib__4_4cylc()],
+  [1,16,0,8,0,-4,0,0,0,-15,0,0,0,4, ldraw_lib__4_4cylc(realsolid)],
 // 0 // Added lines/Condlines
 // 5 24 9 -22 0 8.3151 -22 3.4443 8.25 -18 0 8.3151 -25.4443 0
   [5,24,9,-22,0,8.3151,-22,3.4443,8.25,-18,0,8.3151,-25.4443,0],
@@ -207,5 +208,5 @@ function ldraw_lib__90508() = [
   [5,24,4.6195,-7.35,-1.9135,5,-7.35,0,5.5,-7.75,0,3.6956,-7,-1.5308],
 ];
 module ldraw_lib__90508(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__90508(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__90508(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__90508(line=0.2);

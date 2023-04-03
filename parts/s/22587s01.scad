@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/2-4disc.scad>
-function ldraw_lib__s__22587s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__22587s01(realsolid=false) = [
 // 0 ~"TINE" Logo
 // 0 Name: s\22587s01.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -242,7 +243,7 @@ function ldraw_lib__s__22587s01() = [
   [3,15,11.025,0,1.1375,3,0,1.1375,10.5,0,0.7],
 // 0 //
 // 1 15 0 0 5.25 0.96 0 0 0 1.8 0 0 0 0.63 2-4disc.dat
-  [1,15,0,0,5.25,0.96,0,0,0,1.8,0,0,0,0.63, ldraw_lib__2_4disc()],
+  [1,15,0,0,5.25,0.96,0,0,0,1.8,0,0,0,0.63, ldraw_lib__2_4disc(realsolid)],
 // 4 15 -3.825 0 4.9 -3.9 0 5.25 -4.2 0 5.425 -4.35 0 4.9
   [4,15,-3.825,0,4.9,-3.9,0,5.25,-4.2,0,5.425,-4.35,0,4.9],
 // 3 15 -3.375 0 5.425 -3 0 4.025 -3 0 4.9
@@ -416,5 +417,5 @@ function ldraw_lib__s__22587s01() = [
   [4,16,-11.7,0,-7.35,11.7,0,-7.35,8.625,0,-6.475,5.7,0,-6.125],
 ];
 module ldraw_lib__s__22587s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__22587s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__22587s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__22587s01(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/902s01.scad>
-function ldraw_lib__902() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__902(realsolid=false) = [
 // 0 Electric Light Reflector Round  2 x  2 x  0.667
 // 0 Name: 902.dat
 // 0 Author: Andy Westrate [westrate]
@@ -19,23 +20,23 @@ function ldraw_lib__902() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\902s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__902s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__902s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\902s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__902s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__902s01(realsolid)],
 // 1 16 0 0 0 0 0 -1 0 1 0 1 0 0 s\902s01.dat
-  [1,16,0,0,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__s__902s01()],
+  [1,16,0,0,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__s__902s01(realsolid)],
 // 1 16 0 0 0 0 0 -1 0 1 0 -1 0 0 s\902s01.dat
-  [1,16,0,0,0,0,0,-1,0,1,0,-1,0,0, ldraw_lib__s__902s01()],
+  [1,16,0,0,0,0,0,-1,0,1,0,-1,0,0, ldraw_lib__s__902s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 -1 s\902s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__902s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__902s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 -1 s\902s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__902s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__902s01(realsolid)],
 // 1 16 0 0 0 0 0 1 0 1 0 -1 0 0 s\902s01.dat
-  [1,16,0,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__s__902s01()],
+  [1,16,0,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__s__902s01(realsolid)],
 // 1 16 0 0 0 0 0 1 0 1 0 1 0 0 s\902s01.dat
-  [1,16,0,0,0,0,0,1,0,1,0,1,0,0, ldraw_lib__s__902s01()],
+  [1,16,0,0,0,0,0,1,0,1,0,1,0,0, ldraw_lib__s__902s01(realsolid)],
 // 0
 ];
 module ldraw_lib__902(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__902(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__902(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__902(line=0.2);

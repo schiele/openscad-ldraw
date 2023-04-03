@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/30366s01.scad>
-function ldraw_lib__30366() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__30366(realsolid=false) = [
 // 0 Windscreen  3 x  6 x  5 Canopy
 // 0 Name: 30366.dat
 // 0 Author: Guy Vivan [guyvivan]
@@ -15,7 +16,7 @@ function ldraw_lib__30366() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\30366s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30366s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30366s01(realsolid)],
 // 
 // 0 First border ext
 // 4 16 6.525 10.43 -26.6 7.83 0.516 -20 0 0 -20 0 10 -26.6
@@ -1421,5 +1422,5 @@ function ldraw_lib__30366() = [
 // 0
 ];
 module ldraw_lib__30366(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__30366(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__30366(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__30366(line=0.2);

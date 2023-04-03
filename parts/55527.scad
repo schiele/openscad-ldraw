@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <30376.scad>
-function ldraw_lib__55527() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__55527(realsolid=false) = [
 // 0 =Minifig Mechanical Legs
 // 0 Name: 55527.dat
 // 0 Author: Rolf Osterthun [Rolf]
@@ -17,8 +18,8 @@ function ldraw_lib__55527() = [
 // 0 // Alias of 30376
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 30376.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__30376()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__30376(realsolid)],
 ];
 module ldraw_lib__55527(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__55527(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__55527(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__55527(line=0.2);

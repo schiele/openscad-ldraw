@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <48245.scad>
-function ldraw_lib__70973() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__70973(realsolid=false) = [
 // 0 =Bucket  2 x  2
 // 0 Name: 70973.dat
 // 0 Author: Max Martin Richter [MMR1988]
@@ -26,8 +27,8 @@ function ldraw_lib__70973() = [
 // 0 // Alias of 48245
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 48245.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__48245()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__48245(realsolid)],
 ];
 module ldraw_lib__70973(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__70973(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__70973(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__70973(line=0.2);

@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4edge.scad>
 use <../p/4-4rin19.scad>
-function ldraw_lib__87695() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__87695(realsolid=false) = [
 // 0 Animal Cattlehorns
 // 0 Name: 87695.dat
 // 0 Author: Franklin W. Cain [fwcain]
@@ -26,19 +27,19 @@ function ldraw_lib__87695() = [
 // 
 // 
 // 1 16 7 0 0 0 -14 0 4 0 0 0 0 4 4-4cyli.dat
-  [1,16,7,0,0,0,-14,0,4,0,0,0,0,4, ldraw_lib__4_4cyli()],
+  [1,16,7,0,0,0,-14,0,4,0,0,0,0,4, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 7 0 0 0 -1 0 0.2 0 0 0 0 -0.2 4-4rin19.dat
-  [1,16,7,0,0,0,-1,0,0.2,0,0,0,0,-0.2, ldraw_lib__4_4rin19()],
+  [1,16,7,0,0,0,-1,0,0.2,0,0,0,0,-0.2, ldraw_lib__4_4rin19(realsolid)],
 // 1 16 -7 0 0 0 1 0 0.2 0 0 0 0 0.2 4-4rin19.dat
-  [1,16,-7,0,0,0,1,0,0.2,0,0,0,0,0.2, ldraw_lib__4_4rin19()],
+  [1,16,-7,0,0,0,1,0,0.2,0,0,0,0,0.2, ldraw_lib__4_4rin19(realsolid)],
 // 1 16 -7 0 0 0 1 0 4 0 0 0 0 4 4-4edge.dat
-  [1,16,-7,0,0,0,1,0,4,0,0,0,0,4, ldraw_lib__4_4edge()],
+  [1,16,-7,0,0,0,1,0,4,0,0,0,0,4, ldraw_lib__4_4edge(realsolid)],
 // 1 16 -7 0 0 0 1 0 3.8 0 0 0 0 3.8 4-4edge.dat
-  [1,16,-7,0,0,0,1,0,3.8,0,0,0,0,3.8, ldraw_lib__4_4edge()],
+  [1,16,-7,0,0,0,1,0,3.8,0,0,0,0,3.8, ldraw_lib__4_4edge(realsolid)],
 // 1 16 7 0 0 0 1 0 4 0 0 0 0 4 4-4edge.dat
-  [1,16,7,0,0,0,1,0,4,0,0,0,0,4, ldraw_lib__4_4edge()],
+  [1,16,7,0,0,0,1,0,4,0,0,0,0,4, ldraw_lib__4_4edge(realsolid)],
 // 1 16 7 0 0 0 1 0 3.8 0 0 0 0 3.8 4-4edge.dat
-  [1,16,7,0,0,0,1,0,3.8,0,0,0,0,3.8, ldraw_lib__4_4edge()],
+  [1,16,7,0,0,0,1,0,3.8,0,0,0,0,3.8, ldraw_lib__4_4edge(realsolid)],
 // 3 16 27.64 -20.95 0.63 28.1 -20.9 0 27.85 -20.8 0.68
   [3,16,27.64,-20.95,0.63,28.1,-20.9,0,27.85,-20.8,0.68],
 // 3 16 27.46 -21.08 0.48 28.1 -20.9 0 27.64 -20.95 0.63
@@ -1897,5 +1898,5 @@ function ldraw_lib__87695() = [
   [5,24,-11.39,1.05,3.54,-7,1.45,3.51,-11.55,2.29,2.71,-11.2,-0.4,3.83],
 ];
 module ldraw_lib__87695(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__87695(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__87695(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__87695(line=0.2);

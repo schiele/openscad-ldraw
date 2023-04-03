@@ -5,7 +5,8 @@ use <2-4edge.scad>
 use <box4o4a.scad>
 use <box5-4a.scad>
 use <recte4.scad>
-function ldraw_lib__rail12v() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__rail12v(realsolid=false) = [
 // 0 Train Track 12V Electric Connector
 // 0 Name: rail12v.dat
 // 0 Author: Steffen [Steffen]
@@ -20,13 +21,13 @@ function ldraw_lib__rail12v() = [
 // 
 // 
 // 1 16 0 1 -12 0 0 -8 0 7.5 0 3.75 0 0 2-4edge.dat
-  [1,16,0,1,-12,0,0,-8,0,7.5,0,3.75,0,0, ldraw_lib__2_4edge()],
+  [1,16,0,1,-12,0,0,-8,0,7.5,0,3.75,0,0, ldraw_lib__2_4edge(realsolid)],
 // 1 16 0 7.75 -12 0 0 -8 0 7.5 0 3.75 0 0 2-4edge.dat
-  [1,16,0,7.75,-12,0,0,-8,0,7.5,0,3.75,0,0, ldraw_lib__2_4edge()],
+  [1,16,0,7.75,-12,0,0,-8,0,7.5,0,3.75,0,0, ldraw_lib__2_4edge(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 4 12 0 4 0 0 0 -3.75 3.75 0 0 box4o4a.dat
-  [1,16,0,4,12,0,4,0,0,0,-3.75,3.75,0,0, ldraw_lib__box4o4a()],
+  [1,16,0,4,12,0,4,0,0,0,-3.75,3.75,0,0, ldraw_lib__box4o4a(realsolid)],
 // 4 16 0 0.25 15.75 0 0.25 8.25 0 0 8 0 0 16
   [4,16,0,0.25,15.75,0,0.25,8.25,0,0,8,0,0,16],
 // 4 16 0 7.75 15.75 0 0.25 15.75 0 0 16 0 8 16
@@ -36,23 +37,23 @@ function ldraw_lib__rail12v() = [
 // 4 16 0 0.25 8.25 0 7.75 8.25 0 8 8 0 0 8
   [4,16,0,0.25,8.25,0,7.75,8.25,0,8,8,0,0,8],
 // 1 16 0 4 12 0 4 0 0 0 -4 4 0 0 box4o4a.dat
-  [1,16,0,4,12,0,4,0,0,0,-4,4,0,0, ldraw_lib__box4o4a()],
+  [1,16,0,4,12,0,4,0,0,0,-4,4,0,0, ldraw_lib__box4o4a(realsolid)],
 // 1 16 4 4 -12 0 -4 0 0 0 -4 -4 0 0 box5-4a.dat
-  [1,16,4,4,-12,0,-4,0,0,0,-4,-4,0,0, ldraw_lib__box5_4a()],
+  [1,16,4,4,-12,0,-4,0,0,0,-4,-4,0,0, ldraw_lib__box5_4a(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 4 4 -12 0 -3.75 0 0 0 -3.75 -3.75 0 0 box5-4a.dat
-  [1,16,4,4,-12,0,-3.75,0,0,0,-3.75,-3.75,0,0, ldraw_lib__box5_4a()],
+  [1,16,4,4,-12,0,-3.75,0,0,0,-3.75,-3.75,0,0, ldraw_lib__box5_4a(realsolid)],
 // 1 16 0 1 -12 0 0 -8 0 7 0 3.75 0 0 2-4disc.dat
-  [1,16,0,1,-12,0,0,-8,0,7,0,3.75,0,0, ldraw_lib__2_4disc()],
+  [1,16,0,1,-12,0,0,-8,0,7,0,3.75,0,0, ldraw_lib__2_4disc(realsolid)],
 // 1 16 0 7.75 -12 0 0 -8 0 -1 0 3.75 0 0 2-4disc.dat
-  [1,16,0,7.75,-12,0,0,-8,0,-1,0,3.75,0,0, ldraw_lib__2_4disc()],
+  [1,16,0,7.75,-12,0,0,-8,0,-1,0,3.75,0,0, ldraw_lib__2_4disc(realsolid)],
 // 1 16 0 1 -12 0 0 -8 0 6.75 0 3.75 0 0 2-4cyli.dat
-  [1,16,0,1,-12,0,0,-8,0,6.75,0,3.75,0,0, ldraw_lib__2_4cyli()],
+  [1,16,0,1,-12,0,0,-8,0,6.75,0,3.75,0,0, ldraw_lib__2_4cyli(realsolid)],
 // 1 16 0 4.375 -12 0 3.75 0 0 0 3.375 3.75 0 0 recte4.dat
-  [1,16,0,4.375,-12,0,3.75,0,0,0,3.375,3.75,0,0, ldraw_lib__recte4()],
+  [1,16,0,4.375,-12,0,3.75,0,0,0,3.375,3.75,0,0, ldraw_lib__recte4(realsolid)],
 // 0
 ];
 module ldraw_lib__rail12v(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__rail12v(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__rail12v(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__rail12v(line=0.2);

@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__36036s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__36036s02(realsolid=false) = [
 // 0 ~Minifig Hips and Skirt Sloped Back
 // 0 Name: s\36036s02.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -43,5 +44,5 @@ function ldraw_lib__s__36036s02() = [
   [5,24,14.85,33.6401,28.2604,-14.85,33.6401,28.2604,14.7748,35.0076,30,-15.0938,29.2098,23.4553],
 ];
 module ldraw_lib__s__36036s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__36036s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__36036s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__36036s02(line=0.2);

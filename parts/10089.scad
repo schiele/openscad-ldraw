@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/box5.scad>
 use <../p/peghole.scad>
 use <s/10089s01.scad>
-function ldraw_lib__10089() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__10089(realsolid=false) = [
 // 0 ~Electric Power Functions Large Motor Case Back
 // 0 Name: 10089.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -19,33 +20,33 @@ function ldraw_lib__10089() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\10089s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__10089s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__10089s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\10089s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__10089s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__10089s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 -1 0 0 0 1 s\10089s01.dat
-  [1,16,0,0,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__s__10089s01()],
+  [1,16,0,0,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__s__10089s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 -1 0 0 0 1 s\10089s01.dat
-  [1,16,0,0,0,-1,0,0,0,-1,0,0,0,1, ldraw_lib__s__10089s01()],
+  [1,16,0,0,0,-1,0,0,0,-1,0,0,0,1, ldraw_lib__s__10089s01(realsolid)],
 // 1 16 20 0 10 1 0 0 0 0 1 0 -1 0 peghole.dat
-  [1,16,20,0,10,1,0,0,0,0,1,0,-1,0, ldraw_lib__peghole()],
+  [1,16,20,0,10,1,0,0,0,0,1,0,-1,0, ldraw_lib__peghole(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 29.5 0 -42 0 -0.5 0 13 0 0 0 0 13 box5.dat
-  [1,16,29.5,0,-42,0,-0.5,0,13,0,0,0,0,13, ldraw_lib__box5()],
+  [1,16,29.5,0,-42,0,-0.5,0,13,0,0,0,0,13, ldraw_lib__box5(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 29.5 0 -12 0 -0.5 0 13 0 0 0 0 3 box5.dat
-  [1,16,29.5,0,-12,0,-0.5,0,13,0,0,0,0,3, ldraw_lib__box5()],
+  [1,16,29.5,0,-12,0,-0.5,0,13,0,0,0,0,3, ldraw_lib__box5(realsolid)],
 // 1 16 -20 0 10 -1 0 0 0 0 1 0 -1 0 peghole.dat
-  [1,16,-20,0,10,-1,0,0,0,0,1,0,-1,0, ldraw_lib__peghole()],
+  [1,16,-20,0,10,-1,0,0,0,0,1,0,-1,0, ldraw_lib__peghole(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -29.5 0 -42 0 0.5 0 13 0 0 0 0 13 box5.dat
-  [1,16,-29.5,0,-42,0,0.5,0,13,0,0,0,0,13, ldraw_lib__box5()],
+  [1,16,-29.5,0,-42,0,0.5,0,13,0,0,0,0,13, ldraw_lib__box5(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -29.5 0 -12 0 0.5 0 13 0 0 0 0 3 box5.dat
-  [1,16,-29.5,0,-12,0,0.5,0,13,0,0,0,0,3, ldraw_lib__box5()],
+  [1,16,-29.5,0,-12,0,0.5,0,13,0,0,0,0,3, ldraw_lib__box5(realsolid)],
 // 5 24 0 39.5 -20.18 0 29.942 -11 3.907 29.685 -11 -3.907 29.685 -11
   [5,24,0,39.5,-20.18,0,29.942,-11,3.907,29.685,-11,-3.907,29.685,-11],
 // 5 24 0 37 -20 0 37 -70 4.5 36.703 -58 -4.829 36.682 -20
@@ -76,5 +77,5 @@ function ldraw_lib__10089() = [
   [5,24,0,-37,-20,0,-27.942,-12,3.907,-27.685,-12,-3.907,-27.685,-12],
 ];
 module ldraw_lib__10089(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__10089(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__10089(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__10089(line=0.2);

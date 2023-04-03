@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__48__tm16o5000() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__48__tm16o5000(realsolid=false) = [
 // 0 Mixed-Mode Torus Outer  1 x 0.5000 x 0.0625
 // 0 Name: 48\tm16o5000.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -111,5 +112,5 @@ function ldraw_lib__48__tm16o5000() = [
   [5,24,1.1007,0.4619,0.4559,0.9239,0.5,0.3827,1.1507,0.4619,0.3083,1.0406,0.4619,0.6008],
 ];
 module ldraw_lib__48__tm16o5000(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__48__tm16o5000(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__48__tm16o5000(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__48__tm16o5000(line=0.2);

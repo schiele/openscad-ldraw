@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/48/1-4disc.scad>
 use <../p/48/1-4ndis.scad>
 use <s/6309s01.scad>
-function ldraw_lib__6309p0y() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6309p0y(realsolid=false) = [
 // 0 Duplo Tile  2 x  2 with Red Disc Pattern
 // 0 Name: 6309p0y.dat
 // 0 Author: Chris Dee [cwdee]
@@ -19,7 +20,7 @@ function ldraw_lib__6309p0y() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\6309s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6309s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6309s01(realsolid)],
 // 0 undecorated border
 // 4 16 38 0 38 40 0 40 40 0 -40 38 0 -38
   [4,16,38,0,38,40,0,40,40,0,-40,38,0,-38],
@@ -31,23 +32,23 @@ function ldraw_lib__6309p0y() = [
   [4,16,-38,0,38,-40,0,40,40,0,40,38,0,38],
 // 0 pattern area
 // 1 4 0 0 0 38 0 0 0 1 0 0 0 38 48\1-4disc.dat
-  [1,4,0,0,0,38,0,0,0,1,0,0,0,38, ldraw_lib__48__1_4disc()],
+  [1,4,0,0,0,38,0,0,0,1,0,0,0,38, ldraw_lib__48__1_4disc(realsolid)],
 // 1 4 0 0 0 -38 0 0 0 1 0 0 0 38 48\1-4disc.dat
-  [1,4,0,0,0,-38,0,0,0,1,0,0,0,38, ldraw_lib__48__1_4disc()],
+  [1,4,0,0,0,-38,0,0,0,1,0,0,0,38, ldraw_lib__48__1_4disc(realsolid)],
 // 1 4 0 0 0 38 0 0 0 1 0 0 0 -38 48\1-4disc.dat
-  [1,4,0,0,0,38,0,0,0,1,0,0,0,-38, ldraw_lib__48__1_4disc()],
+  [1,4,0,0,0,38,0,0,0,1,0,0,0,-38, ldraw_lib__48__1_4disc(realsolid)],
 // 1 4 0 0 0 -38 0 0 0 1 0 0 0 -38 48\1-4disc.dat
-  [1,4,0,0,0,-38,0,0,0,1,0,0,0,-38, ldraw_lib__48__1_4disc()],
+  [1,4,0,0,0,-38,0,0,0,1,0,0,0,-38, ldraw_lib__48__1_4disc(realsolid)],
 // 1 16 0 0 0 38 0 0 0 1 0 0 0 38 48\1-4ndis.dat
-  [1,16,0,0,0,38,0,0,0,1,0,0,0,38, ldraw_lib__48__1_4ndis()],
+  [1,16,0,0,0,38,0,0,0,1,0,0,0,38, ldraw_lib__48__1_4ndis(realsolid)],
 // 1 16 0 0 0 -38 0 0 0 1 0 0 0 38 48\1-4ndis.dat
-  [1,16,0,0,0,-38,0,0,0,1,0,0,0,38, ldraw_lib__48__1_4ndis()],
+  [1,16,0,0,0,-38,0,0,0,1,0,0,0,38, ldraw_lib__48__1_4ndis(realsolid)],
 // 1 16 0 0 0 38 0 0 0 1 0 0 0 -38 48\1-4ndis.dat
-  [1,16,0,0,0,38,0,0,0,1,0,0,0,-38, ldraw_lib__48__1_4ndis()],
+  [1,16,0,0,0,38,0,0,0,1,0,0,0,-38, ldraw_lib__48__1_4ndis(realsolid)],
 // 1 16 0 0 0 -38 0 0 0 1 0 0 0 -38 48\1-4ndis.dat
-  [1,16,0,0,0,-38,0,0,0,1,0,0,0,-38, ldraw_lib__48__1_4ndis()],
+  [1,16,0,0,0,-38,0,0,0,1,0,0,0,-38, ldraw_lib__48__1_4ndis(realsolid)],
 // 0
 ];
 module ldraw_lib__6309p0y(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6309p0y(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6309p0y(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6309p0y(line=0.2);

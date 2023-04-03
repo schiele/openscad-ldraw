@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/4-8sphe.scad>
 use <s/32474s01.scad>
-function ldraw_lib__32474() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__32474(realsolid=false) = [
 // 0 Technic Ball Joint with Axlehole Blind
 // 0 Name: 32474.dat
 // 0 Author: Marc Schickele [samrotule]
@@ -28,10 +29,10 @@ function ldraw_lib__32474() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\32474s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__32474s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__32474s01(realsolid)],
 // 1 16 0 0 0 12.75 0 0 0 -12.75 0 0 0 -12.75 4-8sphe.dat
-  [1,16,0,0,0,12.75,0,0,0,-12.75,0,0,0,-12.75, ldraw_lib__4_8sphe()],
+  [1,16,0,0,0,12.75,0,0,0,-12.75,0,0,0,-12.75, ldraw_lib__4_8sphe(realsolid)],
 ];
 module ldraw_lib__32474(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__32474(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__32474(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__32474(line=0.2);

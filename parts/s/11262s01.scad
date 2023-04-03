@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__11262s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__11262s01(realsolid=false) = [
 // 0 ~Minifig Headdress Chicken Half without Patternable Areas
 // 0 Name: s\11262s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -823,5 +824,5 @@ function ldraw_lib__s__11262s01() = [
   [5,24,8.064,0.375,-11.734,8.316,-4.947,-9.262,10.732,-3.679,-7.859,4.628,-3.015,-12.831],
 ];
 module ldraw_lib__s__11262s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__11262s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__11262s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__11262s01(line=0.2);

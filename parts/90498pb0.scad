@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/90498pb0s01.scad>
 use <s/90498s01.scad>
-function ldraw_lib__90498pb0() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__90498pb0(realsolid=false) = [
 // 0 Tile  8 x 16 with Runway and SHIELD Logo Pattern
 // 0 Name: 90498pb0.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -16,15 +17,15 @@ function ldraw_lib__90498pb0() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\90498s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__90498s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__90498s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\90498pb0s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__90498pb0s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__90498pb0s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\90498pb0s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__90498pb0s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__90498pb0s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 -1 s\90498pb0s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__90498pb0s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__90498pb0s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 -1 s\90498pb0s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__90498pb0s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__90498pb0s01(realsolid)],
 // 3 16 160 0 -80 0 0 -66.5 -160 0 -80
   [3,16,160,0,-80,0,0,-66.5,-160,0,-80],
 // 3 16 -160 0 80 0 0 66.5 160 0 80
@@ -456,5 +457,5 @@ function ldraw_lib__90498pb0() = [
   [3,16,6.2,0,-47.094,0,0,-47.5,0,0,-53.5],
 ];
 module ldraw_lib__90498pb0(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__90498pb0(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__90498pb0(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__90498pb0(line=0.2);

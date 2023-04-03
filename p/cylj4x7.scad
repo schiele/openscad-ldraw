@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__cylj4x7() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__cylj4x7(realsolid=false) = [
 // 0 Cylinder Joint  4 to  7
 // 0 Name: cylj4x7.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -129,5 +130,5 @@ function ldraw_lib__cylj4x7() = [
   [5,24,3.6956,-1.2122,-1.5308,3.6956,0,-1.5308,2.8284,-.6326,-2.8284,4,-1.4156,0],
 ];
 module ldraw_lib__cylj4x7(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__cylj4x7(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__cylj4x7(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__cylj4x7(line=0.2);

@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__973p43c() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__973p43c(realsolid=false) = [
 // 0 ~Black Falcon Pattern - Border
 // 0 Name: s\973p43c.dat
 // 0 Author: Chris Dee [cwdee]
@@ -44,5 +45,5 @@ function ldraw_lib__s__973p43c() = [
   [4,16,-4,24.5,-10,-4.5,26.5,-10,0,29,-10,0,27,-10],
 ];
 module ldraw_lib__s__973p43c(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__973p43c(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__973p43c(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__973p43c(line=0.2);

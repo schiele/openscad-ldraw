@@ -5,7 +5,8 @@ use <../p/4-4edge.scad>
 use <s/52258s01.scad>
 use <../p/stud2a.scad>
 use <../p/stug2-2x1.scad>
-function ldraw_lib__51352() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__51352(realsolid=false) = [
 // 0 ~Animal Dragon Body (Hungarian Horntail) - Right Half
 // 0 Name: 51352.dat
 // 0 Author: Stan Isachenko [angmarec]
@@ -28,33 +29,33 @@ function ldraw_lib__51352() = [
 // 0 // Interior not fully modelled
 // 
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\52258s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__52258s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__52258s01(realsolid)],
 // 
 // 0 // studs on back
 // 1 16 -20 0 10 0 0 -1 0 1 0 1 0 0 stug2-2x1.dat
-  [1,16,-20,0,10,0,0,-1,0,1,0,1,0,0, ldraw_lib__stug2_2x1()],
+  [1,16,-20,0,10,0,0,-1,0,1,0,1,0,0, ldraw_lib__stug2_2x1(realsolid)],
 // 1 16 -20 0 -10 0 0 -1 0 1 0 1 0 0 stug2-2x1.dat
-  [1,16,-20,0,-10,0,0,-1,0,1,0,1,0,0, ldraw_lib__stug2_2x1()],
+  [1,16,-20,0,-10,0,0,-1,0,1,0,1,0,0, ldraw_lib__stug2_2x1(realsolid)],
 // 
 // 0 // stud in the jaws
 // 1 16 0 32 -220 -1 0 0 0 1 0 0 0 -1 stud2a.dat
-  [1,16,0,32,-220,-1,0,0,0,1,0,0,0,-1, ldraw_lib__stud2a()],
+  [1,16,0,32,-220,-1,0,0,0,1,0,0,0,-1, ldraw_lib__stud2a(realsolid)],
 // 1 16 0 32 -220 4 0 0 0 1 0 0 0 4 4-4edge.dat
-  [1,16,0,32,-220,4,0,0,0,1,0,0,0,4, ldraw_lib__4_4edge()],
+  [1,16,0,32,-220,4,0,0,0,1,0,0,0,4, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 32 -220 6 0 0 0 1 0 0 0 6 4-4edge.dat
-  [1,16,0,32,-220,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4edge()],
+  [1,16,0,32,-220,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4edge(realsolid)],
 // 
 // 0 // hole connector for the head
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -18.763 0.1 -170 0 37.526 0 1.85 0 0 0 0 1.85 4-4cyli.dat
-  [1,16,-18.763,0.1,-170,0,37.526,0,1.85,0,0,0,0,1.85, ldraw_lib__4_4cyli()],
+  [1,16,-18.763,0.1,-170,0,37.526,0,1.85,0,0,0,0,1.85, ldraw_lib__4_4cyli(realsolid)],
 // 
 // 0 // tail connector
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 16 122 0 0 -6 6 0 0 0 16 0 4-4cylo.dat
-  [1,16,0,16,122,0,0,-6,6,0,0,0,16,0, ldraw_lib__4_4cylo()],
+  [1,16,0,16,122,0,0,-6,6,0,0,0,16,0, ldraw_lib__4_4cylo(realsolid)],
 // 
 // 0 // floating quad
 // 4 16 15 31 110 -15 31 110 -15 1 110 15 1 110
@@ -165,5 +166,5 @@ function ldraw_lib__51352() = [
   [5,24,0,-12.298,-154.672,0,-14.244,-162.722,18.762,-11.089,-163.573,-18.762,-11.089,-163.573],
 ];
 module ldraw_lib__51352(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__51352(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__51352(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__51352(line=0.2);

@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/53988s01.scad>
 use <../p/stud2.scad>
-function ldraw_lib__53988() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__53988(realsolid=false) = [
 // 0 Minifig Mechanical Head and Torso
 // 0 Name: 53988.dat
 // 0 Author: Michael Heidemann [mikeheide]
@@ -18,13 +19,13 @@ function ldraw_lib__53988() = [
 // 
 // 
 // 1 16 0 50 0 1 0 0 0 1 0 0 0 1 s\53988s01.dat
-  [1,16,0,50,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__53988s01()],
+  [1,16,0,50,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__53988s01(realsolid)],
 // 1 16 0 50 0 -1 0 0 0 1 0 0 0 1 s\53988s01.dat
-  [1,16,0,50,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__53988s01()],
+  [1,16,0,50,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__53988s01(realsolid)],
 // 1 16 0 34 -10 -1 0 0 0 0 1 0 1 0 stud2.dat
-  [1,16,0,34,-10,-1,0,0,0,0,1,0,1,0, ldraw_lib__stud2()],
+  [1,16,0,34,-10,-1,0,0,0,0,1,0,1,0, ldraw_lib__stud2(realsolid)],
 // 0
 ];
 module ldraw_lib__53988(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__53988(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__53988(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__53988(line=0.2);

@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__5_16ring13() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__5_16ring13(realsolid=false) = [
 // 0 Ring 13 x 0.3125
 // 0 Name: 5-16ring13.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -26,5 +27,5 @@ function ldraw_lib__5_16ring13() = [
 // 0 // Build by LDPartEditor (PrimGen 2.X)
 ];
 module ldraw_lib__5_16ring13(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__5_16ring13(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__5_16ring13(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__5_16ring13(line=0.2);

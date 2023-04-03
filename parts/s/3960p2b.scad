@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__3960p2b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__3960p2b(realsolid=false) = [
 // 0 ~Dish  4 x  4 Inverted with Spiral Pattern - Spiral
 // 0 Name: s\3960p2b.dat
 // 0 Author: Franklin W. Cain [fwcain]
@@ -759,5 +760,5 @@ function ldraw_lib__s__3960p2b() = [
   [5,24,38.665,7.6,-5.089,38.334,7.467,-5.046,37.026,7.333,-9.921,39,7.6,0],
 ];
 module ldraw_lib__s__3960p2b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__3960p2b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__3960p2b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__3960p2b(line=0.2);

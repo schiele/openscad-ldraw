@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <3709b.scad>
-function ldraw_lib__370926() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__370926(realsolid=false) = [
 // 0 ~_Technic Plate  2 x  4 Black (Obsolete)
 // 0 Name: 370926.dat
 // 0 Author: Michael Heidemann [mikeheide]
@@ -20,8 +21,8 @@ function ldraw_lib__370926() = [
 // 0 // colouring of the part (Black).
 // 
 // 1 0 0 0 0 1 0 0 0 1 0 0 0 1 3709b.dat
-  [1,0,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3709b()],
+  [1,0,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3709b(realsolid)],
 ];
 module ldraw_lib__370926(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__370926(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__370926(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__370926(line=0.2);

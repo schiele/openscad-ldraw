@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/64779s01.scad>
-function ldraw_lib__64779p01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__64779p01(realsolid=false) = [
 // 0 ~Animal Cow Body Left with Black Spots Pattern
 // 0 Name: 64779p01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -17,7 +18,7 @@ function ldraw_lib__64779p01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\64779s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__64779s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__64779s01(realsolid)],
 // 2 24 20 -32 31.243 20 -26.254 36.167
   [2,24,20,-32,31.243,20,-26.254,36.167],
 // 2 24 20 -26.254 36.167 20 -15.931 39.435
@@ -638,5 +639,5 @@ function ldraw_lib__64779p01() = [
   [3,0,20,9.7099,-22.3353,20,13.329,-31.558,20,11.4,-22.7],
 ];
 module ldraw_lib__64779p01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__64779p01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__64779p01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__64779p01(line=0.2);

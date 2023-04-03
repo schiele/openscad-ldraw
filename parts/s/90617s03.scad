@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/rect.scad>
 use <90617s05.scad>
-function ldraw_lib__s__90617s03() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__90617s03(realsolid=false) = [
 // 0 ~Constraction Socket with Square Base
 // 0 Name: s\90617s03.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -16,13 +17,13 @@ function ldraw_lib__s__90617s03() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\90617s05.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__90617s05()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__90617s05(realsolid)],
 // 1 16 0 0 0 1 0 0 0 -1 0 0 0 1 s\90617s05.dat
-  [1,16,0,0,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__s__90617s05()],
+  [1,16,0,0,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__s__90617s05(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 -1 0 0 0 1 s\90617s05.dat
-  [1,16,0,0,0,-1,0,0,0,-1,0,0,0,1, ldraw_lib__s__90617s05()],
+  [1,16,0,0,0,-1,0,0,0,-1,0,0,0,1, ldraw_lib__s__90617s05(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\90617s05.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__90617s05()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__90617s05(realsolid)],
 // 2 24 10 -9.25 -27.25 10 -9.25 -30
   [2,24,10,-9.25,-27.25,10,-9.25,-30],
 // 2 24 10 9.25 -27.25 10 9.25 -30
@@ -76,12 +77,12 @@ function ldraw_lib__s__90617s03() = [
 // 3 16 -10 4.75 -27.25 -10 -9.25 -30 -10 -4.75 -27.25
   [3,16,-10,4.75,-27.25,-10,-9.25,-30,-10,-4.75,-27.25],
 // 1 16 6.125 0 -27.25 0 0 3.875 -4.75 0 0 0 -1 0 rect.dat
-  [1,16,6.125,0,-27.25,0,0,3.875,-4.75,0,0,0,-1,0, ldraw_lib__rect()],
+  [1,16,6.125,0,-27.25,0,0,3.875,-4.75,0,0,0,-1,0, ldraw_lib__rect(realsolid)],
 // 1 16 -6.125 0 -27.25 0 0 -3.875 4.75 0 0 0 -1 0 rect.dat
-  [1,16,-6.125,0,-27.25,0,0,-3.875,4.75,0,0,0,-1,0, ldraw_lib__rect()],
+  [1,16,-6.125,0,-27.25,0,0,-3.875,4.75,0,0,0,-1,0, ldraw_lib__rect(realsolid)],
 // 1 16 0 0 -30 10 0 0 0 0 -9.25 0 1 0 rect.dat
-  [1,16,0,0,-30,10,0,0,0,0,-9.25,0,1,0, ldraw_lib__rect()],
+  [1,16,0,0,-30,10,0,0,0,0,-9.25,0,1,0, ldraw_lib__rect(realsolid)],
 ];
 module ldraw_lib__s__90617s03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__90617s03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__90617s03(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__90617s03(line=0.2);

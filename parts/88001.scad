@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/4-4cylc.scad>
-function ldraw_lib__88001() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__88001(realsolid=false) = [
 // 0 Minifig Weapon Club with Spikes
 // 0 Name: 88001.dat
 // 0 Author: Stan Isachenko [angmarec]
@@ -20,7 +21,7 @@ function ldraw_lib__88001() = [
 // 
 // 
 // 1 16 0 10 0 -4 0 0 0 -20 0 0 0 -4 4-4cylc.dat
-  [1,16,0,10,0,-4,0,0,0,-20,0,0,0,-4, ldraw_lib__4_4cylc()],
+  [1,16,0,10,0,-4,0,0,0,-20,0,0,0,-4, ldraw_lib__4_4cylc(realsolid)],
 // 3 16 2.338 -60.259 -8.701 6.37 -64.228 -0.885 1.408 -63.722 -7.664
   [3,16,2.338,-60.259,-8.701,6.37,-64.228,-0.885,1.408,-63.722,-7.664],
 // 4 16 4.952 -27.386 -8.369 -2.476 -26.2 -9.668 -2.159 -20.251 -7.022 3.521 -21.121 -6.042
@@ -1289,5 +1290,5 @@ function ldraw_lib__88001() = [
   [5,24,-0.122,-39.872,-16.355,-1.601,-37.161,-16.355,-0.384,-37.22,-16.355,-1.479,-40.127,-16.355],
 ];
 module ldraw_lib__88001(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__88001(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__88001(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__88001(line=0.2);

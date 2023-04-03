@@ -2,7 +2,8 @@ use <../lib.scad>
 use <rect.scad>
 use <rect2p.scad>
 use <rect3.scad>
-function ldraw_lib__tooth40() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__tooth40(realsolid=false) = [
 // 0 Single Tooth for Technic Gear 40 Tooth
 // 0 Name: tooth40.dat
 // 0 Author: Donald Sutter [technog]
@@ -17,17 +18,17 @@ function ldraw_lib__tooth40() = [
 // 
 // 
 // 1 16 0 5.35 0 0.8 0 0 0 -1 0 0 0 4.75 rect.dat
-  [1,16,0,5.35,0,0.8,0,0,0,-1,0,0,0,4.75, ldraw_lib__rect()],
+  [1,16,0,5.35,0,0.8,0,0,0,-1,0,0,0,4.75, ldraw_lib__rect(realsolid)],
 // 1 16 1.4 3.675 0 -0.6 -1 0 1.675 0 0 0 0 -4.75 rect2p.dat
-  [1,16,1.4,3.675,0,-0.6,-1,0,1.675,0,0,0,0,-4.75, ldraw_lib__rect2p()],
+  [1,16,1.4,3.675,0,-0.6,-1,0,1.675,0,0,0,0,-4.75, ldraw_lib__rect2p(realsolid)],
 // 1 16 2.15 0.93 0 0 -1 0.15 0 0 -1.07 -4.75 0 0 rect3.dat
-  [1,16,2.15,0.93,0,0,-1,0.15,0,0,-1.07,-4.75,0,0, ldraw_lib__rect3()],
+  [1,16,2.15,0.93,0,0,-1,0.15,0,0,-1.07,-4.75,0,0, ldraw_lib__rect3(realsolid)],
 // 5 24 2 2 4.75 2 2 -4.75 0.8 5.35 0 2.25 -0.15 0
   [5,24,2,2,4.75,2,2,-4.75,0.8,5.35,0,2.25,-0.15,0],
 // 1 16 -1.4 3.675 0 0.6 1 0 1.675 0 0 0 0 -4.75 rect2p.dat
-  [1,16,-1.4,3.675,0,0.6,1,0,1.675,0,0,0,0,-4.75, ldraw_lib__rect2p()],
+  [1,16,-1.4,3.675,0,0.6,1,0,1.675,0,0,0,0,-4.75, ldraw_lib__rect2p(realsolid)],
 // 1 16 -2.15 0.93 0 0 1 -0.15 0 0 -1.07 -4.75 0 0 rect3.dat
-  [1,16,-2.15,0.93,0,0,1,-0.15,0,0,-1.07,-4.75,0,0, ldraw_lib__rect3()],
+  [1,16,-2.15,0.93,0,0,1,-0.15,0,0,-1.07,-4.75,0,0, ldraw_lib__rect3(realsolid)],
 // 5 24 -2 2 4.75 -2 2 -4.75 -0.8 5.35 0 -2.3 -0.15 0
   [5,24,-2,2,4.75,-2,2,-4.75,-0.8,5.35,0,-2.3,-0.15,0],
 // 4 16 2 2 4.75 -2 2 4.75 0 0 4.75 2.3 -0.15 4.75
@@ -45,5 +46,5 @@ function ldraw_lib__tooth40() = [
 // 0
 ];
 module ldraw_lib__tooth40(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__tooth40(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__tooth40(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__tooth40(line=0.2);

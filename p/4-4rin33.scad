@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__4_4rin33() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4_4rin33(realsolid=false) = [
 // 0 Ring 33 x 1.0
 // 0 Name: 4-4rin33.dat
 // 0 Author: Santeri Piippo [arezey]
@@ -48,5 +49,5 @@ function ldraw_lib__4_4rin33() = [
 // 0 //
 ];
 module ldraw_lib__4_4rin33(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4_4rin33(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4_4rin33(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4_4rin33(line=0.2);

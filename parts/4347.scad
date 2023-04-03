@@ -4,7 +4,8 @@ use <../p/box4.scad>
 use <../p/box5.scad>
 use <../p/stud.scad>
 use <../p/stud3.scad>
-function ldraw_lib__4347() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4347(realsolid=false) = [
 // 0 ~Window  1 x  4 x  5 with Fixed Glass - Frame
 // 0 Name: 4347.dat
 // 0 Author: Alex Taylor [anathema]
@@ -19,15 +20,15 @@ function ldraw_lib__4347() = [
 // 
 // 
 // 1 16 20 116 0 1 0 0 0 -1 0 0 0 1 stud3.dat
-  [1,16,20,116,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud3()],
+  [1,16,20,116,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud3(realsolid)],
 // 1 16 0 116 0 1 0 0 0 -1 0 0 0 1 stud3.dat
-  [1,16,0,116,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud3()],
+  [1,16,0,116,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud3(realsolid)],
 // 1 16 -20 116 0 1 0 0 0 -1 0 0 0 1 stud3.dat
-  [1,16,-20,116,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud3()],
+  [1,16,-20,116,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud3(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 120 0 36 0 0 0 -4 0 0 0 6 box5.dat
-  [1,16,0,120,0,36,0,0,0,-4,0,0,0,6, ldraw_lib__box5()],
+  [1,16,0,120,0,36,0,0,0,-4,0,0,0,6, ldraw_lib__box5(realsolid)],
 // 4 16 40 120 10 36 120 6 -36 120 6 -40 120 10
   [4,16,40,120,10,36,120,6,-36,120,6,-40,120,10],
 // 4 16 -40 120 10 -36 120 6 -36 120 -6 -40 120 -10
@@ -61,23 +62,23 @@ function ldraw_lib__4347() = [
 // 4 16 32 8 -10 32 108 -10 40 120 -10 40 0 -10
   [4,16,32,8,-10,32,108,-10,40,120,-10,40,0,-10],
 // 1 16 30 0 0 -1 0 0 0 1 0 0 0 -1 stud.dat
-  [1,16,30,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__stud()],
+  [1,16,30,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__stud(realsolid)],
 // 1 16 10 0 0 -1 0 0 0 1 0 0 0 -1 stud.dat
-  [1,16,10,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__stud()],
+  [1,16,10,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__stud(realsolid)],
 // 1 16 -10 0 0 -1 0 0 0 1 0 0 0 -1 stud.dat
-  [1,16,-10,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__stud()],
+  [1,16,-10,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__stud(realsolid)],
 // 1 16 -30 0 0 -1 0 0 0 1 0 0 0 -1 stud.dat
-  [1,16,-30,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__stud()],
+  [1,16,-30,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__stud(realsolid)],
 // 1 16 0 120 0 0 0 -40 0 -120 0 -10 0 0 box3u2p.dat
-  [1,16,0,120,0,0,0,-40,0,-120,0,-10,0,0, ldraw_lib__box3u2p()],
+  [1,16,0,120,0,0,0,-40,0,-120,0,-10,0,0, ldraw_lib__box3u2p(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 58 -6 0 0 -36 -54 0 0 0 16 0 box4.dat
-  [1,16,0,58,-6,0,0,-36,-54,0,0,0,16,0, ldraw_lib__box4()],
+  [1,16,0,58,-6,0,0,-36,-54,0,0,0,16,0, ldraw_lib__box4(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 58 -10 0 0 -32 -50 0 0 0 4 0 box4.dat
-  [1,16,0,58,-10,0,0,-32,-50,0,0,0,4,0, ldraw_lib__box4()],
+  [1,16,0,58,-10,0,0,-32,-50,0,0,0,4,0, ldraw_lib__box4(realsolid)],
 // 2 24 -40 120 -10 40 120 -10
   [2,24,-40,120,-10,40,120,-10],
 // 2 24 -40 120 10 40 120 10
@@ -85,5 +86,5 @@ function ldraw_lib__4347() = [
 // 0
 ];
 module ldraw_lib__4347(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4347(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4347(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4347(line=0.2);

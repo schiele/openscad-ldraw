@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__3626bs05() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__3626bs05(realsolid=false) = [
 // 0 ~Minifig Head - Half Front Face Optional Lines
 // 0 Name: s\3626bs05.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -346,5 +347,5 @@ function ldraw_lib__s__3626bs05() = [
   [5,24,8,21,0,7.3912,21,-3.0616,9.9136,20.6954,0,6,21,0],
 ];
 module ldraw_lib__s__3626bs05(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__3626bs05(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__3626bs05(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__3626bs05(line=0.2);

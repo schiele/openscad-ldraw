@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__163345d() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__163345d(realsolid=false) = [
 // 0 Sticker  1.1 x  2.5 with Black "United"
 // 0 Name: 163345d.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -18,7 +19,7 @@ function ldraw_lib__163345d() = [
 // 
 // 
 // 1 16 0 -0.25 0 25 0 0 0 0.25 0 0 0 11 box5-12.dat
-  [1,16,0,-0.25,0,25,0,0,0,0.25,0,0,0,11, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,25,0,0,0,0.25,0,0,0,11, ldraw_lib__box5_12(realsolid)],
 // 0 BFC NOCLIP
   [0,"BFC","NOCLIP"],
 // 0 // Font: Swiss 721 BT Bold
@@ -426,5 +427,5 @@ function ldraw_lib__163345d() = [
   [3,16,3.66,-0.25,4.61,7.26,-0.25,2.34,8.13,-0.25,2.7],
 ];
 module ldraw_lib__163345d(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__163345d(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__163345d(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__163345d(line=0.2);

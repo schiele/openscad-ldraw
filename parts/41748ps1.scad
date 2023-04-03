@@ -2,7 +2,8 @@ use <../lib.scad>
 use <s/41748ps1a.scad>
 use <s/41748s01.scad>
 use <../p/stud.scad>
-function ldraw_lib__41748ps1() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__41748ps1(realsolid=false) = [
 // 0 Wedge  2 x  6 Double Left with AT-TE Pattern
 // 0 Name: 41748ps1.dat
 // 0 Author: Damien Roux [Darats]
@@ -21,11 +22,11 @@ function ldraw_lib__41748ps1() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\41748s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__41748s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__41748s01(realsolid)],
 // 1 16 0 0 -10 0 0 1 0 1 0 -1 0 0 stud.dat
-  [1,16,0,0,-10,0,0,1,0,1,0,-1,0,0, ldraw_lib__stud()],
+  [1,16,0,0,-10,0,0,1,0,1,0,-1,0,0, ldraw_lib__stud(realsolid)],
 // 1 16 0 0 10 0 0 1 0 1 0 -1 0 0 stud.dat
-  [1,16,0,0,10,0,0,1,0,1,0,-1,0,0, ldraw_lib__stud()],
+  [1,16,0,0,10,0,0,1,0,1,0,-1,0,0, ldraw_lib__stud(realsolid)],
 // 5 24 10 0 -20 30 20 -20 30 20 20 25 20 -40
   [5,24,10,0,-20,30,20,-20,30,20,20,25,20,-40],
 // 5 24 10 0 -20 25 20 -40 30 20 -20 10 2 -40
@@ -50,8 +51,8 @@ function ldraw_lib__41748ps1() = [
   [5,24,-10,12,-80,10,12,-80,-10,6,-60,-10,20,-100],
 // 0 //
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\41748ps1a.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__41748ps1a()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__41748ps1a(realsolid)],
 ];
 module ldraw_lib__41748ps1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__41748ps1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__41748ps1(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__41748ps1(line=0.2);

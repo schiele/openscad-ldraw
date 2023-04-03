@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/1-8cyli.scad>
 use <../p/2-4cyli.scad>
 use <s/23221s01.scad>
-function ldraw_lib__23221k01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__23221k01(realsolid=false) = [
 // 0 ~Hose  3 x 32 x  2.333 - Segment
 // 0 Name: 23221k01.dat
 // 0 Author: Mikkel Bech Jensen [gaia]
@@ -17,29 +18,29 @@ function ldraw_lib__23221k01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\23221s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__23221s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__23221s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 -1 s\23221s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__23221s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__23221s01(realsolid)],
 // 
 // 0 // Perimeter overlap 1
 // 1 16 0 0 -2 -26 0 0 0 0 -26 0 -2 0 2-4cyli.dat
-  [1,16,0,0,-2,-26,0,0,0,0,-26,0,-2,0, ldraw_lib__2_4cyli()],
+  [1,16,0,0,-2,-26,0,0,0,0,-26,0,-2,0, ldraw_lib__2_4cyli(realsolid)],
 // 1 16 0 0 -2 -26 0 0 0 0 26 0 -2 0 1-8cyli.dat
-  [1,16,0,0,-2,-26,0,0,0,0,26,0,-2,0, ldraw_lib__1_8cyli()],
+  [1,16,0,0,-2,-26,0,0,0,0,26,0,-2,0, ldraw_lib__1_8cyli(realsolid)],
 // 1 16 0 0 -2 26 0 0 0 0 26 0 -2 0 1-8cyli.dat
-  [1,16,0,0,-2,26,0,0,0,0,26,0,-2,0, ldraw_lib__1_8cyli()],
+  [1,16,0,0,-2,26,0,0,0,0,26,0,-2,0, ldraw_lib__1_8cyli(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 -4.5 -24 0 0 0 0 -24 0 3 0 2-4cyli.dat
-  [1,16,0,0,-4.5,-24,0,0,0,0,-24,0,3,0, ldraw_lib__2_4cyli()],
+  [1,16,0,0,-4.5,-24,0,0,0,0,-24,0,3,0, ldraw_lib__2_4cyli(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 -4.5 -24 0 0 0 0 24 0 3 0 1-8cyli.dat
-  [1,16,0,0,-4.5,-24,0,0,0,0,24,0,3,0, ldraw_lib__1_8cyli()],
+  [1,16,0,0,-4.5,-24,0,0,0,0,24,0,3,0, ldraw_lib__1_8cyli(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 -4.5 24 0 0 0 0 24 0 3 0 1-8cyli.dat
-  [1,16,0,0,-4.5,24,0,0,0,0,24,0,3,0, ldraw_lib__1_8cyli()],
+  [1,16,0,0,-4.5,24,0,0,0,0,24,0,3,0, ldraw_lib__1_8cyli(realsolid)],
 // 4 16 -18.385 18.385 -4 -18.385 18.385 -2 -14.893 21.544 -2 -14.893 21.544 -4
   [4,16,-18.385,18.385,-4,-18.385,18.385,-2,-14.893,21.544,-2,-14.893,21.544,-4],
 // 4 16 -10 23.001 -4 -14.893 21.544 -4 -14.893 21.544 -2 -10 23.001 -2
@@ -134,23 +135,23 @@ function ldraw_lib__23221k01() = [
   [5,24,-12.648,19.622,-1.5,-12.648,19.622,-4.5,-10,20,-4.5,-16.97,16.97,-4.5],
 // 0 // Perimeter overlap 2
 // 1 16 0 0 2 26 0 0 0 0 -26 0 2 0 2-4cyli.dat
-  [1,16,0,0,2,26,0,0,0,0,-26,0,2,0, ldraw_lib__2_4cyli()],
+  [1,16,0,0,2,26,0,0,0,0,-26,0,2,0, ldraw_lib__2_4cyli(realsolid)],
 // 1 16 0 0 2 26 0 0 0 0 26 0 2 0 1-8cyli.dat
-  [1,16,0,0,2,26,0,0,0,0,26,0,2,0, ldraw_lib__1_8cyli()],
+  [1,16,0,0,2,26,0,0,0,0,26,0,2,0, ldraw_lib__1_8cyli(realsolid)],
 // 1 16 0 0 2 -26 0 0 0 0 26 0 2 0 1-8cyli.dat
-  [1,16,0,0,2,-26,0,0,0,0,26,0,2,0, ldraw_lib__1_8cyli()],
+  [1,16,0,0,2,-26,0,0,0,0,26,0,2,0, ldraw_lib__1_8cyli(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 4.5 24 0 0 0 0 -24 0 -3 0 2-4cyli.dat
-  [1,16,0,0,4.5,24,0,0,0,0,-24,0,-3,0, ldraw_lib__2_4cyli()],
+  [1,16,0,0,4.5,24,0,0,0,0,-24,0,-3,0, ldraw_lib__2_4cyli(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 4.5 24 0 0 0 0 24 0 -3 0 1-8cyli.dat
-  [1,16,0,0,4.5,24,0,0,0,0,24,0,-3,0, ldraw_lib__1_8cyli()],
+  [1,16,0,0,4.5,24,0,0,0,0,24,0,-3,0, ldraw_lib__1_8cyli(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 4.5 -24 0 0 0 0 24 0 -3 0 1-8cyli.dat
-  [1,16,0,0,4.5,-24,0,0,0,0,24,0,-3,0, ldraw_lib__1_8cyli()],
+  [1,16,0,0,4.5,-24,0,0,0,0,24,0,-3,0, ldraw_lib__1_8cyli(realsolid)],
 // 4 16 18.385 18.385 4 18.385 18.385 2 14.893 21.544 2 14.893 21.544 4
   [4,16,18.385,18.385,4,18.385,18.385,2,14.893,21.544,2,14.893,21.544,4],
 // 4 16 10 23.001 4 14.893 21.544 4 14.893 21.544 2 10 23.001 2
@@ -245,5 +246,5 @@ function ldraw_lib__23221k01() = [
   [5,24,12.648,19.622,1.5,12.648,19.622,4.5,10,20,4.5,16.97,16.97,4.5],
 ];
 module ldraw_lib__23221k01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__23221k01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__23221k01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__23221k01(line=0.2);

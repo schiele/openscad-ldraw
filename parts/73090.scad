@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <73090a.scad>
-function ldraw_lib__73090() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__73090(realsolid=false) = [
 // 0 ~Moved to 73090a
 // 0 Name: 73090.dat
 // 0 Author: [PTadmin]
@@ -17,8 +18,8 @@ function ldraw_lib__73090() = [
 // 0 // Brick 2 x 6 x 2 Weight with Split Bottom
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 73090a.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__73090a()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__73090a(realsolid)],
 ];
 module ldraw_lib__73090(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__73090(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__73090(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__73090(line=0.2);

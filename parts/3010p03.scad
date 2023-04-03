@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3010s01.scad>
-function ldraw_lib__3010p03() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3010p03(realsolid=false) = [
 // 0 Brick  1 x  4 with Garage Tools Pattern
 // 0 Name: 3010p03.dat
 // 0 Author: Chris Dee [cwdee]
@@ -19,7 +20,7 @@ function ldraw_lib__3010p03() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3010s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3010s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3010s01(realsolid)],
 // 4 0 -40 0 -10 -40 24 -10 -23.53 14.01 -10 -23.53 5.53 -10
   [4,0,-40,0,-10,-40,24,-10,-23.53,14.01,-10,-23.53,5.53,-10],
 // 4 0 -17.16 14.01 -10 -23.53 14.01 -10 -40 24 -10 -17.16 20.08 -10
@@ -108,5 +109,5 @@ function ldraw_lib__3010p03() = [
   [4,14,20.49,11.5,-10,23.96,12.71,-10,23.34,9.8,-10,21.78,7.41,-10],
 ];
 module ldraw_lib__3010p03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3010p03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3010p03(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3010p03(line=0.2);

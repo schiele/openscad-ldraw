@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3070bs01.scad>
-function ldraw_lib__3070bps5() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3070bps5(realsolid=false) = [
 // 0 Tile  1 x  1 with SW Snow Trooper Backpack Pattern
 // 0 Name: 3070bps5.dat
 // 0 Author: Bertrand Lequy [Berth]
@@ -17,7 +18,7 @@ function ldraw_lib__3070bps5() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3070bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3070bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3070bs01(realsolid)],
 // 
 // 4 0 4.41206 0 5.7 4.50249 0 6.1546 4.20217 0 6.279 4.087 0 5.7
   [4,0,4.41206,0,5.7,4.50249,0,6.1546,4.20217,0,6.279,4.087,0,5.7],
@@ -555,5 +556,5 @@ function ldraw_lib__3070bps5() = [
   [3,16,3.97945,0,3.42305,3.35187,0,-4.17766,4.2094,0,3.0195],
 ];
 module ldraw_lib__3070bps5(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3070bps5(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3070bps5(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3070bps5(line=0.2);

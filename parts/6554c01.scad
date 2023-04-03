@@ -2,7 +2,8 @@ use <../lib.scad>
 use <6554.scad>
 use <u9289.scad>
 use <u9301.scad>
-function ldraw_lib__6554c01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6554c01(realsolid=false) = [
 // 0 ~Electric Brick  2 x  2 x  0.667 with Side Clamps with Metal Parts
 // 0 Name: 6554c01.dat
 // 0 Author: Max Martin Richter [MMR1988]
@@ -17,12 +18,12 @@ function ldraw_lib__6554c01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 6554.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__6554()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__6554(realsolid)],
 // 1 494 0 1.75 0 1 0 0 0 1 0 0 0 1 u9289.dat
-  [1,494,0,1.75,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9289()],
+  [1,494,0,1.75,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9289(realsolid)],
 // 1 494 0 1.75 0 1 0 0 0 1 0 0 0 1 u9301.dat
-  [1,494,0,1.75,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9301()],
+  [1,494,0,1.75,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9301(realsolid)],
 ];
 module ldraw_lib__6554c01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6554c01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6554c01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6554c01(line=0.2);

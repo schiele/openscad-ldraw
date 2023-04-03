@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3817bs01.scad>
-function ldraw_lib__3817bp6v() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3817bp6v(realsolid=false) = [
 // 0 Minifig Leg Left with Silver Circuitry and Salmon Cable Pattern
 // 0 Name: 3817bp6v.dat
 // 0 Author: Chris Dee [cwdee]
@@ -19,7 +20,7 @@ function ldraw_lib__3817bp6v() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3817bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3817bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3817bs01(realsolid)],
 // 5 24 2 3.349 -8.084 18.659 3.349 -8.084 2 0 -8.75 2 6.187 -6.187
   [5,24,2,3.349,-8.084,18.659,3.349,-8.084,2,0,-8.75,2,6.187,-6.187],
 // 5 24 2 6.187 -6.187 18.755 6.187 -6.187 2 7.399 -4 2 3.349 -8.084
@@ -703,5 +704,5 @@ function ldraw_lib__3817bp6v() = [
   [3,16,2.52,6.187,-6.187,2,6.187,-6.187,2,7.399,-4],
 ];
 module ldraw_lib__3817bp6v(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3817bp6v(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3817bp6v(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3817bp6v(line=0.2);

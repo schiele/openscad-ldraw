@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__4162510d() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4162510d(realsolid=false) = [
 // 0 Sticker  1.2 x  1.0 with White "C" on Light Grey Background
 // 0 Name: 4162510d.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -18,7 +19,7 @@ function ldraw_lib__4162510d() = [
 // 
 // 0 // Primitives
 // 1 16 0 -.25 0 10 0 0 0 .25 0 0 0 12 box5-12.dat
-  [1,16,0,-.25,0,10,0,0,0,.25,0,0,0,12, ldraw_lib__box5_12()],
+  [1,16,0,-.25,0,10,0,0,0,.25,0,0,0,12, ldraw_lib__box5_12(realsolid)],
 // 0 // Top faces
 // 0 // Grey faces
 // 3 7 -10 -.25 -12 -8.96 -.25 -.1881 -10 -.25 12
@@ -290,5 +291,5 @@ function ldraw_lib__4162510d() = [
   [4,15,8.12,-.25,10.5,6.6494,-.25,4.3314,7,-.25,2.94,8.12,-.25,2.94],
 ];
 module ldraw_lib__4162510d(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4162510d(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4162510d(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4162510d(line=0.2);

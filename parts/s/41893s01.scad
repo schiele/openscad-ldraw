@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__41893s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__41893s01(realsolid=false) = [
 // 0 ~Tyre 36/ 36 x 43 H Off-Road - 1/30 Tread
 // 0 Name: s\41893s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -425,5 +426,5 @@ function ldraw_lib__s__41893s01() = [
   [2,24,-5.2337,-74.8198,-45,5.2317,-74.8173,-45],
 ];
 module ldraw_lib__s__41893s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__41893s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__41893s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__41893s01(line=0.2);

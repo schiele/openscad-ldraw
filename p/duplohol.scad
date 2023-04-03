@@ -4,7 +4,8 @@ use <2-4ndis.scad>
 use <2-4ring3.scad>
 use <rect.scad>
 use <rect3.scad>
-function ldraw_lib__duplohol() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__duplohol(realsolid=false) = [
 // 0 Duplo Train Track Connector Female
 // 0 Name: duplohol.dat
 // 0 Author: Michael Heidemann [mikeheide]
@@ -22,17 +23,17 @@ function ldraw_lib__duplohol() = [
 // 0 // hole
 // 
 // 1 16 0 4 0 16 0 0 0 20 0 0 0 16 2-4cylo.dat
-  [1,16,0,4,0,16,0,0,0,20,0,0,0,16, ldraw_lib__2_4cylo()],
+  [1,16,0,4,0,16,0,0,0,20,0,0,0,16, ldraw_lib__2_4cylo(realsolid)],
 // 1 16 0 4 0 -16 0 0 0 -20 0 0 0 16 2-4ndis.dat
-  [1,16,0,4,0,-16,0,0,0,-20,0,0,0,16, ldraw_lib__2_4ndis()],
+  [1,16,0,4,0,-16,0,0,0,-20,0,0,0,16, ldraw_lib__2_4ndis(realsolid)],
 // 1 16 0 0 0 12 0 0 0 24 0 0 0 12 2-4ndis.dat
-  [1,16,0,0,0,12,0,0,0,24,0,0,0,12, ldraw_lib__2_4ndis()],
+  [1,16,0,0,0,12,0,0,0,24,0,0,0,12, ldraw_lib__2_4ndis(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 0 12 0 0 0 24 0 0 0 12 2-4cylo.dat
-  [1,16,0,0,0,12,0,0,0,24,0,0,0,12, ldraw_lib__2_4cylo()],
+  [1,16,0,0,0,12,0,0,0,24,0,0,0,12, ldraw_lib__2_4cylo(realsolid)],
 // 1 16 0 24 0 -4 0 0 0 -1 0 0 0 4 2-4ring3.dat
-  [1,16,0,24,0,-4,0,0,0,-1,0,0,0,4, ldraw_lib__2_4ring3()],
+  [1,16,0,24,0,-4,0,0,0,-1,0,0,0,4, ldraw_lib__2_4ring3(realsolid)],
 // 4 16 -12 24 0 -12 0 0 -11.0868 1.826 -4.5924 -11.0868 22.174 -4.5924
   [4,16,-12,24,0,-12,0,0,-11.0868,1.826,-4.5924,-11.0868,22.174,-4.5924],
 // 2 24 -11.0868 22.174 -4.5924 -12 24 0
@@ -95,7 +96,7 @@ function ldraw_lib__duplohol() = [
 // 2 24 12 0 -20 12 0 0
   [2,24,12,0,-20,12,0,0],
 // 1 16 8 12 -14.4046 0 1 0 0 0 4 5.5954 0 0 rect.dat
-  [1,16,8,12,-14.4046,0,1,0,0,0,4,5.5954,0,0, ldraw_lib__rect()],
+  [1,16,8,12,-14.4046,0,1,0,0,0,4,5.5954,0,0, ldraw_lib__rect(realsolid)],
 // 2 24 12 24 -20 8 16 -20
   [2,24,12,24,-20,8,16,-20],
 // 4 16 8 16 -8.8092 8.4852 16.97 -8.4852 12 24 -20 8 16 -20
@@ -109,7 +110,7 @@ function ldraw_lib__duplohol() = [
 // 4 16 8 8 -20 8 16 -20 12 24 -20 12 0 -20
   [4,16,8,8,-20,8,16,-20,12,24,-20,12,0,-20],
 // 1 16 16 14 -8 0 -1 0 -10 0 0 0 0 -8 rect3.dat
-  [1,16,16,14,-8,0,-1,0,-10,0,0,0,0,-8, ldraw_lib__rect3()],
+  [1,16,16,14,-8,0,-1,0,-10,0,0,0,0,-8, ldraw_lib__rect3(realsolid)],
 // 4 16 12 24 0 16 24 0 16 24 -16 12 24 -20
   [4,16,12,24,0,16,24,0,16,24,-16,12,24,-20],
 // 
@@ -126,7 +127,7 @@ function ldraw_lib__duplohol() = [
 // 2 24 -12 0 -20 -12 0 0
   [2,24,-12,0,-20,-12,0,0],
 // 1 16 -8 12 -14.4046 0 -1 0 0 0 4 -5.5954 0 0 rect.dat
-  [1,16,-8,12,-14.4046,0,-1,0,0,0,4,-5.5954,0,0, ldraw_lib__rect()],
+  [1,16,-8,12,-14.4046,0,-1,0,0,0,4,-5.5954,0,0, ldraw_lib__rect(realsolid)],
 // 2 24 -12 24 -20 -8 16 -20
   [2,24,-12,24,-20,-8,16,-20],
 // 4 16 -8 16 -20 -12 24 -20 -8.4852 16.97 -8.4852 -8 16 -8.8092
@@ -140,10 +141,10 @@ function ldraw_lib__duplohol() = [
 // 4 16 -12 0 -20 -12 24 -20 -8 16 -20 -8 8 -20
   [4,16,-12,0,-20,-12,24,-20,-8,16,-20,-8,8,-20],
 // 1 16 -16 14 -8 0 1 0 10 0 0 0 0 -8 rect3.dat
-  [1,16,-16,14,-8,0,1,0,10,0,0,0,0,-8, ldraw_lib__rect3()],
+  [1,16,-16,14,-8,0,1,0,10,0,0,0,0,-8, ldraw_lib__rect3(realsolid)],
 // 4 16 -12 24 -20 -16 24 -16 -16 24 0 -12 24 0
   [4,16,-12,24,-20,-16,24,-16,-16,24,0,-12,24,0],
 ];
 module ldraw_lib__duplohol(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__duplohol(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__duplohol(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__duplohol(line=0.2);

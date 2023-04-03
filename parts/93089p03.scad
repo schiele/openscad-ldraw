@@ -2,7 +2,8 @@ use <../lib.scad>
 use <s/93089p01s02.scad>
 use <s/93089p01s03.scad>
 use <s/93089s01.scad>
-function ldraw_lib__93089p03() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__93089p03(realsolid=false) = [
 // 0 Animal Cat Standing Looking Left with Tan Eyes and Brown Stripes Pattern
 // 0 Name: 93089p03.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -21,7 +22,7 @@ function ldraw_lib__93089p03() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\93089s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__93089s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__93089s01(realsolid)],
 // 
 // 0 // Face
 // 4 15 10.499 -30.99 -15.292 10.638 -30.664 -15.205 10.738 -30.425 -14.966 10.77 -30.338 -14.64
@@ -743,9 +744,9 @@ function ldraw_lib__93089p03() = [
 // 
 // 0 // Tail and head stripes
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\93089p01s02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__93089p01s02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__93089p01s02(realsolid)],
 // 1 70 0 0 0 1 0 0 0 1 0 0 0 1 s\93089p01s03.dat
-  [1,70,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__93089p01s03()],
+  [1,70,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__93089p01s03(realsolid)],
 // 4 16 0.593 -47.408 17.574 1.175 -47.125 17.605 2.086 -46.694 17.768 2.481 -46.517 17.927
   [4,16,0.593,-47.408,17.574,1.175,-47.125,17.605,2.086,-46.694,17.768,2.481,-46.517,17.927],
 // 4 16 0.593 -47.408 17.574 2.481 -46.517 17.927 2.166 -46.772 18.8 0.591 -47.573 19.026
@@ -774,5 +775,5 @@ function ldraw_lib__93089p03() = [
   [3,16,-1.34,-47.004,18.929,0.1,-47.434,19.052,-0.975,-47.117,18.995],
 ];
 module ldraw_lib__93089p03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__93089p03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__93089p03(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__93089p03(line=0.2);

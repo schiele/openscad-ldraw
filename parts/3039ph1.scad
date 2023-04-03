@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3039s01.scad>
-function ldraw_lib__3039ph1() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3039ph1(realsolid=false) = [
 // 0 Slope Brick 45  2 x  2 with Sand Green Cash Register Pattern
 // 0 Name: 3039ph1.dat
 // 0 Author: Stan Isachenko [angmarec]
@@ -17,7 +18,7 @@ function ldraw_lib__3039ph1() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3039s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3039s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3039s01(realsolid)],
 // 3 0 -16.842 3.69817 -13.69817 -16.695 3.62534 -13.62534 -16.866 3.50654 -13.50654
   [3,0,-16.842,3.69817,-13.69817,-16.695,3.62534,-13.62534,-16.866,3.50654,-13.50654],
 // 4 0 -16.065 15.74161 -25.74161 -16.18 15.72959 -25.72959 -16.106 16.32568 -26.32568 -16.085 16.21467 -26.21467
@@ -3388,5 +3389,5 @@ function ldraw_lib__3039ph1() = [
   [3,16,15.918,1.76847,-11.76847,14.561,1.94525,-11.94525,14.841,2.02233,-12.02233],
 ];
 module ldraw_lib__3039ph1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3039ph1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3039ph1(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3039ph1(line=0.2);

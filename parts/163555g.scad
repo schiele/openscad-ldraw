@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__163555g() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__163555g(realsolid=false) = [
 // 0 Sticker  1.3 x  1.5 with White Suitcase
 // 0 Name: 163555g.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -18,7 +19,7 @@ function ldraw_lib__163555g() = [
 // 
 // 
 // 1 16 0 -0.25 0 15 0 0 0 0.25 0 0 0 13 box5-12.dat
-  [1,16,0,-0.25,0,15,0,0,0,0.25,0,0,0,13, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,15,0,0,0,0.25,0,0,0,13, ldraw_lib__box5_12(realsolid)],
 // 0 BFC NOCLIP
   [0,"BFC","NOCLIP"],
 // 4 0 -2.5 -0.25 8 2.5 -0.25 8 3 -0.25 9 -3 -0.25 9
@@ -111,5 +112,5 @@ function ldraw_lib__163555g() = [
   [4,16,6,-0.25,7,12,-0.25,7,15,-0.25,13,4,-0.25,11],
 ];
 module ldraw_lib__163555g(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__163555g(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__163555g(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__163555g(line=0.2);

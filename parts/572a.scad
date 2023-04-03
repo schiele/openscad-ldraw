@@ -5,7 +5,8 @@ use <../p/4-4edge.scad>
 use <../p/4-4ring3.scad>
 use <../p/stud.scad>
 use <../p/stud4a.scad>
-function ldraw_lib__572a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__572a(realsolid=false) = [
 // 0 ~String End Stud
 // 0 Name: 572a.dat
 // 0 Author: Steve Bliss [sbliss]
@@ -24,20 +25,20 @@ function ldraw_lib__572a() = [
 // 
 // 
 // 1 16 0 0 0 8 0 0 0 1 0 0 0 8 4-4edge.dat
-  [1,16,0,0,0,8,0,0,0,1,0,0,0,8, ldraw_lib__4_4edge()],
+  [1,16,0,0,0,8,0,0,0,1,0,0,0,8, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 4 0 6 0 0 0 1 0 0 0 6 4-4edge.dat
-  [1,16,0,4,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4edge()],
+  [1,16,0,4,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 4 0 -6 0 0 0 -1 0 0 0 6 4-4disc.dat
-  [1,16,0,4,0,-6,0,0,0,-1,0,0,0,6, ldraw_lib__4_4disc()],
+  [1,16,0,4,0,-6,0,0,0,-1,0,0,0,6, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 0 0 8 0 0 0 4 0 0 0 8 4-4cyli.dat
-  [1,16,0,0,0,8,0,0,0,4,0,0,0,8, ldraw_lib__4_4cyli()],
+  [1,16,0,0,0,8,0,0,0,4,0,0,0,8, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 0 0 2 0 0 0 1 0 0 0 2 4-4ring3.dat
-  [1,16,0,0,0,2,0,0,0,1,0,0,0,2, ldraw_lib__4_4ring3()],
+  [1,16,0,0,0,2,0,0,0,1,0,0,0,2, ldraw_lib__4_4ring3(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 stud.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud(realsolid)],
 // 1 16 0 4 0 -1 0 0 0 -1 0 0 0 1 stud4a.dat
-  [1,16,0,4,0,-1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4a()],
+  [1,16,0,4,0,-1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4a(realsolid)],
 ];
 module ldraw_lib__572a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__572a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__572a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__572a(line=0.2);

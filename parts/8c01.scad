@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <3464c01.scad>
 use <8.scad>
-function ldraw_lib__8c01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__8c01(realsolid=false) = [
 // 0 Plate  2 x  2 with 2 Wheel Clips Perpendicular with Wheel Red with Tyre 6/ 50 x  8 Offset Tread
 // 0 Name: 8c01.dat
 // 0 Author: Steffen [Steffen]
@@ -16,10 +17,10 @@ function ldraw_lib__8c01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 8.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__8()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__8(realsolid)],
 // 1 4 0 22 0 0 0 -1 0 1 0 1 0 0 3464c01.dat
-  [1,4,0,22,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__3464c01()],
+  [1,4,0,22,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__3464c01(realsolid)],
 ];
 module ldraw_lib__8c01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__8c01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__8c01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__8c01(line=0.2);

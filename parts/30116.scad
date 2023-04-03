@@ -2,7 +2,8 @@ use <../lib.scad>
 use <s/30116s01.scad>
 use <../p/stud.scad>
 use <../p/stug-2x2.scad>
-function ldraw_lib__30116() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__30116(realsolid=false) = [
 // 0 Panel 14 x 14 x  2.667 Quarter Saucer Top
 // 0 Name: 30116.dat
 // 0 Author: Matthew J. Chiles [mchiles]
@@ -23,26 +24,26 @@ function ldraw_lib__30116() = [
 // 0 // everything but the top face
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\30116s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30116s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30116s01(realsolid)],
 // 0 // studgroup and studs
 // 1 16 160 48 -160 1 0 0 0 1 0 0 0 1 stug-2x2.dat
-  [1,16,160,48,-160,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_2x2()],
+  [1,16,160,48,-160,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_2x2(realsolid)],
 // 1 16 90 8 -10 1 0 0 0 1 0 0 0 1 stud.dat
-  [1,16,90,8,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__stud()],
+  [1,16,90,8,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__stud(realsolid)],
 // 1 16 90 8 -30 1 0 0 0 1 0 0 0 1 stud.dat
-  [1,16,90,8,-30,1,0,0,0,1,0,0,0,1, ldraw_lib__stud()],
+  [1,16,90,8,-30,1,0,0,0,1,0,0,0,1, ldraw_lib__stud(realsolid)],
 // 1 16 70 8 -50 1 0 0 0 1 0 0 0 1 stud.dat
-  [1,16,70,8,-50,1,0,0,0,1,0,0,0,1, ldraw_lib__stud()],
+  [1,16,70,8,-50,1,0,0,0,1,0,0,0,1, ldraw_lib__stud(realsolid)],
 // 1 16 110 0 -10 1 0 0 0 1 0 0 0 1 stud.dat
-  [1,16,110,0,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__stud()],
+  [1,16,110,0,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__stud(realsolid)],
 // 1 16 10 8 -90 1 0 0 0 1 0 0 0 1 stud.dat
-  [1,16,10,8,-90,1,0,0,0,1,0,0,0,1, ldraw_lib__stud()],
+  [1,16,10,8,-90,1,0,0,0,1,0,0,0,1, ldraw_lib__stud(realsolid)],
 // 1 16 30 8 -90 1 0 0 0 1 0 0 0 1 stud.dat
-  [1,16,30,8,-90,1,0,0,0,1,0,0,0,1, ldraw_lib__stud()],
+  [1,16,30,8,-90,1,0,0,0,1,0,0,0,1, ldraw_lib__stud(realsolid)],
 // 1 16 50 8 -70 1 0 0 0 1 0 0 0 1 stud.dat
-  [1,16,50,8,-70,1,0,0,0,1,0,0,0,1, ldraw_lib__stud()],
+  [1,16,50,8,-70,1,0,0,0,1,0,0,0,1, ldraw_lib__stud(realsolid)],
 // 1 16 10 0 -110 1 0 0 0 1 0 0 0 1 stud.dat
-  [1,16,10,0,-110,1,0,0,0,1,0,0,0,1, ldraw_lib__stud()],
+  [1,16,10,0,-110,1,0,0,0,1,0,0,0,1, ldraw_lib__stud(realsolid)],
 // 0 // right side (complete 4 digit accuracy)
 // 0 // right bottom panels
 // 3 16 240 34.66667 -20 220 24 -20 220 24 -31.4286
@@ -204,5 +205,5 @@ function ldraw_lib__30116() = [
   [3,16,74.0043,0,-96.0064,85.0054,0,-85.0054,70,0,-70],
 ];
 module ldraw_lib__30116(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__30116(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__30116(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__30116(line=0.2);

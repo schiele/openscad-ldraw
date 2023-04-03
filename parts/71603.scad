@@ -2,7 +2,8 @@ use <../lib.scad>
 use <u9247.scad>
 use <u9248.scad>
 use <u9546.scad>
-function ldraw_lib__71603() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__71603(realsolid=false) = [
 // 0 Electric Light & Sound Insectoid Tail  4 x 20 x  4.333 with Battery Cover and Trans-Neon-Green Prisms
 // 0 Name: 71603.dat
 // 0 Author: Steffen [Steffen]
@@ -22,16 +23,16 @@ function ldraw_lib__71603() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 u9247.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9247()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9247(realsolid)],
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 u9546.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9546()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9546(realsolid)],
 // 
 // 1 42 -22.1 -4 116 0 1 0 -1 0 0 0 0 1 u9248.dat
-  [1,42,-22.1,-4,116,0,1,0,-1,0,0,0,0,1, ldraw_lib__u9248()],
+  [1,42,-22.1,-4,116,0,1,0,-1,0,0,0,0,1, ldraw_lib__u9248(realsolid)],
 // 1 42 22.1 -4 116 0 -1 0 1 0 0 0 0 1 u9248.dat
-  [1,42,22.1,-4,116,0,-1,0,1,0,0,0,0,1, ldraw_lib__u9248()],
+  [1,42,22.1,-4,116,0,-1,0,1,0,0,0,0,1, ldraw_lib__u9248(realsolid)],
 ];
 module ldraw_lib__71603(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__71603(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__71603(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__71603(line=0.2);

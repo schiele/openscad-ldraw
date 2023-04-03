@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/27165s01.scad>
-function ldraw_lib__27165() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__27165(realsolid=false) = [
 // 0 Windscreen 11 x  4 x  2.333 Pointed with Handle
 // 0 Name: 27165.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -15,7 +16,7 @@ function ldraw_lib__27165() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\27165s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__27165s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__27165s01(realsolid)],
 // 
 // 3 16 19.9397 50 -180.0905 28.7021 50 -166.9468 28.1893 49.5 -166.6049
   [3,16,19.9397,50,-180.0905,28.7021,50,-166.9468,28.1893,49.5,-166.6049],
@@ -252,5 +253,5 @@ function ldraw_lib__27165() = [
   [5,24,-3.5355,49.9401,-204.5355,-3.8367,49.5,-203.1338,-4.2075,50,-203.6887,0,48.5143,-206],
 ];
 module ldraw_lib__27165(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__27165(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__27165(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__27165(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box4-12.scad>
-function ldraw_lib__191888f() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__191888f(realsolid=false) = [
 // 0 Sticker  2.1 x  3.7 with Three White Round Gauges and Six White Circles
 // 0 Name: 191888f.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -18,7 +19,7 @@ function ldraw_lib__191888f() = [
 // 
 // 
 // 1 16 0 -.25 -10.5 -37 0 0 0 .25 0 0 0 -10.25 box4-12.dat
-  [1,16,0,-.25,-10.5,-37,0,0,0,.25,0,0,0,-10.25, ldraw_lib__box4_12()],
+  [1,16,0,-.25,-10.5,-37,0,0,0,.25,0,0,0,-10.25, ldraw_lib__box4_12(realsolid)],
 // 4 16 16 0 20.75 37 0 -.25 -37 0 -.25 -16 0 20.75
   [4,16,16,0,20.75,37,0,-.25,-37,0,-.25,-16,0,20.75],
 // 4 16 -37 0 -.25 -37 -.25 -.25 -16 -.25 20.75 -16 0 20.75
@@ -740,5 +741,5 @@ function ldraw_lib__191888f() = [
   [3,16,25.9498,-.25,-5.1998,26.1481,-.25,-11.4784,27.1213,-.25,-12.1287],
 ];
 module ldraw_lib__191888f(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__191888f(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__191888f(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__191888f(line=0.2);

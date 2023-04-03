@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__48__1_12disc() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__48__1_12disc(realsolid=false) = [
 // 0 Hi-Res Disc 0.0833
 // 0 Name: 48\1-12disc.dat
 // 0 Author: Alex Taylor [anathema]
@@ -24,5 +25,5 @@ function ldraw_lib__48__1_12disc() = [
 // 0
 ];
 module ldraw_lib__48__1_12disc(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__48__1_12disc(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__48__1_12disc(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__48__1_12disc(line=0.2);

@@ -6,7 +6,8 @@ use <s/93084s04.scad>
 use <s/93084s05.scad>
 use <s/93084s06.scad>
 use <s/93084s07.scad>
-function ldraw_lib__93084() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__93084(realsolid=false) = [
 // 0 ~Animal Horse Friends Left
 // 0 Name: 93084.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -23,20 +24,20 @@ function ldraw_lib__93084() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\93084s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__93084s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__93084s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\93084s02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__93084s02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__93084s02(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\93084s03.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__93084s03()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__93084s03(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\93084s04.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__93084s04()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__93084s04(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\93084s05.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__93084s05()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__93084s05(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\93084s06.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__93084s06()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__93084s06(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\93084s07.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__93084s07()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__93084s07(realsolid)],
 ];
 module ldraw_lib__93084(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__93084(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__93084(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__93084(line=0.2);

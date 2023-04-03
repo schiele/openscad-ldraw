@@ -2,7 +2,8 @@ use <../../lib.scad>
 use <../../p/4-4ndis.scad>
 use <777s07.scad>
 use <777s09.scad>
-function ldraw_lib__s__6179ps0s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__6179ps0s01(realsolid=false) = [
 // 0 ~Plate  4 x  4 with 4 Studs on One Edge with "20 YEARS LEGO STAR WARS 1999-2019" Pattern
 // 0 Name: s\6179ps0s01.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -17,11 +18,11 @@ function ldraw_lib__s__6179ps0s01() = [
 // 
 // 
 // 1 80 -21.25 0 -21.5 .075 0 0 0 1 0 0 0 .075 s\777s07.dat
-  [1,80,-21.25,0,-21.5,.075,0,0,0,1,0,0,0,.075, ldraw_lib__s__777s07()],
+  [1,80,-21.25,0,-21.5,.075,0,0,0,1,0,0,0,.075, ldraw_lib__s__777s07(realsolid)],
 // 1 16 -21.25 0 -21.5 .075 0 0 0 1 0 0 0 .075 s\777s09.dat
-  [1,16,-21.25,0,-21.5,.075,0,0,0,1,0,0,0,.075, ldraw_lib__s__777s09()],
+  [1,16,-21.25,0,-21.5,.075,0,0,0,1,0,0,0,.075, ldraw_lib__s__777s09(realsolid)],
 // 1 16 -21.25 0 -21.5 .525 0 0 0 1 0 0 0 .525 4-4ndis.dat
-  [1,16,-21.25,0,-21.5,.525,0,0,0,1,0,0,0,.525, ldraw_lib__4_4ndis()],
+  [1,16,-21.25,0,-21.5,.525,0,0,0,1,0,0,0,.525, ldraw_lib__4_4ndis(realsolid)],
 // 
 // 4 80 -1.6641 0 3.3268 -1.876 0 1.15 6.579 0 1.15 6.6255 0 2.3637
   [4,80,-1.6641,0,3.3268,-1.876,0,1.15,6.579,0,1.15,6.6255,0,2.3637],
@@ -2363,5 +2364,5 @@ function ldraw_lib__s__6179ps0s01() = [
   [3,16,-21.775,0,-20.975,-21.25,0,-20.975,-17.9,0,-19.174],
 ];
 module ldraw_lib__s__6179ps0s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__6179ps0s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__6179ps0s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__6179ps0s01(line=0.2);

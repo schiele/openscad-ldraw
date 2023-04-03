@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4edge.scad>
 use <../p/4-8sphe.scad>
-function ldraw_lib__87694() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__87694(realsolid=false) = [
 // 0 Minifig Plume Large
 // 0 Name: 87694.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -24,11 +25,11 @@ function ldraw_lib__87694() = [
 // 
 // 
 // 1 16 0 4 0 2 0 0 0 2 0 0 0 2 4-8sphe.dat
-  [1,16,0,4,0,2,0,0,0,2,0,0,0,2, ldraw_lib__4_8sphe()],
+  [1,16,0,4,0,2,0,0,0,2,0,0,0,2, ldraw_lib__4_8sphe(realsolid)],
 // 1 16 0 0 0 2 0 0 0 4 0 0 0 2 4-4cyli.dat
-  [1,16,0,0,0,2,0,0,0,4,0,0,0,2, ldraw_lib__4_4cyli()],
+  [1,16,0,0,0,2,0,0,0,4,0,0,0,2, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 0 0 -2 0 0 0 4 0 0 0 -2 4-4edge.dat
-  [1,16,0,0,0,-2,0,0,0,4,0,0,0,-2, ldraw_lib__4_4edge()],
+  [1,16,0,0,0,-2,0,0,0,4,0,0,0,-2, ldraw_lib__4_4edge(realsolid)],
 // 3 16 -1.7 -4.6 0.9 -1.7 -8.9 4.1 -3.3 -3.5 4.1
   [3,16,-1.7,-4.6,0.9,-1.7,-8.9,4.1,-3.3,-3.5,4.1],
 // 3 16 -3.3 -6.4 7.3 -3.3 -3.5 4.1 -1.7 -8.9 4.1
@@ -1443,5 +1444,5 @@ function ldraw_lib__87694() = [
   [2,24,-2.2,0,5.8,-2.2,0,-4.5],
 ];
 module ldraw_lib__87694(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__87694(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__87694(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__87694(line=0.2);

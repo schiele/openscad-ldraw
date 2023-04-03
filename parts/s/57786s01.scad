@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__57786s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__57786s01(realsolid=false) = [
 // 0 ~Boat Hull Floating 72 x 18 Deck - Half
 // 0 Name: s\57786s01.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -249,5 +250,5 @@ function ldraw_lib__s__57786s01() = [
   [5,24,-154,-20,-544,-169,4,-480,-165,-20,-540,-154,4,-484],
 ];
 module ldraw_lib__s__57786s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__57786s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__57786s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__57786s01(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <32027.scad>
-function ldraw_lib__878() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__878(realsolid=false) = [
 // 0 ~Moved to 32027
 // 0 Name: 878.dat
 // 0 Author: [PTadmin]
@@ -16,8 +17,8 @@ function ldraw_lib__878() = [
 // 
 // 0 // Electric Touch Sensor Brick 3 x 2 Sensor Peg
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 32027.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__32027()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__32027(realsolid)],
 ];
 module ldraw_lib__878(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__878(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__878(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__878(line=0.2);

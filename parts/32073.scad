@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/axle.scad>
-function ldraw_lib__32073() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__32073(realsolid=false) = [
 // 0 Technic Axle  5
 // 0 Name: 32073.dat
 // 0 Author: William Howard [WilliamH]
@@ -15,9 +16,9 @@ function ldraw_lib__32073() = [
 // 
 // 
 // 1 16 50 0 0 0 -100 0 1 0 0 0 0 1 axle.dat
-  [1,16,50,0,0,0,-100,0,1,0,0,0,0,1, ldraw_lib__axle()],
+  [1,16,50,0,0,0,-100,0,1,0,0,0,0,1, ldraw_lib__axle(realsolid)],
 // 0
 ];
 module ldraw_lib__32073(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__32073(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__32073(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__32073(line=0.2);

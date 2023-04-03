@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__820673p() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__820673p(realsolid=false) = [
 // 0 Sticker  1.1 x  0.9 with Black Bold "3" on White Background
 // 0 Name: 820673p.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -18,7 +19,7 @@ function ldraw_lib__820673p() = [
 // 
 // 
 // 1 16 0 -0.25 0 9 0 0 0 0.25 0 0 0 11 box5-12.dat
-  [1,16,0,-0.25,0,9,0,0,0,0.25,0,0,0,11, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,9,0,0,0,0.25,0,0,0,11, ldraw_lib__box5_12(realsolid)],
 // 4 0 -7.94 -0.25 -5.56 -6.86 -0.25 -8 -5.54 -0.25 -8.63 -0.81 -0.25 -4.58
   [4,0,-7.94,-0.25,-5.56,-6.86,-0.25,-8,-5.54,-0.25,-8.63,-0.81,-0.25,-4.58],
 // 3 0 -7.94 -0.25 -5.56 -7.67 -0.25 -6.97 -6.86 -0.25 -8
@@ -151,5 +152,5 @@ function ldraw_lib__820673p() = [
   [3,15,9,-0.25,11,7.51,-0.25,4.04,7.51,-0.25,-3.45],
 ];
 module ldraw_lib__820673p(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__820673p(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__820673p(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__820673p(line=0.2);

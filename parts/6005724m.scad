@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__6005724m() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6005724m(realsolid=false) = [
 // 0 Sticker  1.9 x  3.9 with Small Runes
 // 0 Name: 6005724m.dat
 // 0 Author: Christian Neumann [Wesley]
@@ -19,7 +20,7 @@ function ldraw_lib__6005724m() = [
 // 
 // 
 // 1 16 0 -0.25 0 39 0 0 0 0.25 0 0 0 19 box5-12.dat
-  [1,16,0,-0.25,0,39,0,0,0,0.25,0,0,0,19, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,39,0,0,0,0.25,0,0,0,19, ldraw_lib__box5_12(realsolid)],
 // 4 0 -35.1 -0.25 -0.5 -34.7 -0.25 -6.5 -33.6 -0.25 -4 -34.2 -0.25 1.9
   [4,0,-35.1,-0.25,-0.5,-34.7,-0.25,-6.5,-33.6,-0.25,-4,-34.2,-0.25,1.9],
 // 4 0 -35.3 -0.25 4.7 -35.1 -0.25 -0.5 -34.2 -0.25 1.9 -34.9 -0.25 7.4
@@ -1414,5 +1415,5 @@ function ldraw_lib__6005724m() = [
   [3,16,33.9,-0.25,4.7,30.2,-0.25,-1,30.8,-0.25,-1.6],
 ];
 module ldraw_lib__6005724m(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6005724m(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6005724m(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6005724m(line=0.2);

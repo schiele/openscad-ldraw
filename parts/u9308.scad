@@ -2,7 +2,8 @@ use <../lib.scad>
 use <u9302.scad>
 use <u9304.scad>
 use <u9305.scad>
-function ldraw_lib__u9308() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__u9308(realsolid=false) = [
 // 0 Boat Keel Weighted  2 x  8 x  4 with Bottom Tab
 // 0 Name: u9308.dat
 // 0 Author: Michael Heidemann [mikeheide]
@@ -20,14 +21,14 @@ function ldraw_lib__u9308() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 u9305.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9305()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9305(realsolid)],
 // 1 494 0 81 0 1 0 0 0 1 0 0 0 1 u9302.dat
-  [1,494,0,81,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9302()],
+  [1,494,0,81,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9302(realsolid)],
 // 1 16 0 81 0 -1 0 0 0 1 0 0 0 -1 u9304.dat
-  [1,16,0,81,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__u9304()],
+  [1,16,0,81,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__u9304(realsolid)],
 // 1 16 0 81 0 1 0 0 0 1 0 0 0 1 u9304.dat
-  [1,16,0,81,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9304()],
+  [1,16,0,81,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9304(realsolid)],
 ];
 module ldraw_lib__u9308(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__u9308(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__u9308(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__u9308(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box.scad>
-function ldraw_lib__u9264() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__u9264(realsolid=false) = [
 // 0 ~Magnet  1.875 x  0.25 x  0.875
 // 0 Name: u9264.dat
 // 0 Author: Max Martin Richter [MMR1988]
@@ -15,8 +16,8 @@ function ldraw_lib__u9264() = [
 // 
 // 
 // 1 16 0 2.5 0 18.75 0 0 0 2.5 0 0 0 8.75 box.dat
-  [1,16,0,2.5,0,18.75,0,0,0,2.5,0,0,0,8.75, ldraw_lib__box()],
+  [1,16,0,2.5,0,18.75,0,0,0,2.5,0,0,0,8.75, ldraw_lib__box(realsolid)],
 ];
 module ldraw_lib__u9264(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__u9264(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__u9264(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__u9264(line=0.2);

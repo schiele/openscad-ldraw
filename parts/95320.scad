@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/4-4cylc.scad>
-function ldraw_lib__95320() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__95320(realsolid=false) = [
 // 0 Minifig Boxing Glove Left
 // 0 Name: 95320.dat
 // 0 Author: Orion Pobursky [OrionP]
@@ -17,7 +18,7 @@ function ldraw_lib__95320() = [
 // 
 // 
 // 1 16 0 0 13 2.5 0 0 0 0 -2.5 0 -13 0 4-4cylc.dat
-  [1,16,0,0,13,2.5,0,0,0,0,-2.5,0,-13,0, ldraw_lib__4_4cylc()],
+  [1,16,0,0,13,2.5,0,0,0,0,-2.5,0,-13,0, ldraw_lib__4_4cylc(realsolid)],
 // 
 // 3 16 -0.024 -7.254 -4.1 -2.847 -7.072 -6.06 0.015 -7.468 -4.294
   [3,16,-0.024,-7.254,-4.1,-2.847,-7.072,-6.06,0.015,-7.468,-4.294],
@@ -1882,5 +1883,5 @@ function ldraw_lib__95320() = [
   [5,24,-2.919,-10.824,-15.674,-4.666,-9.849,-15.806,-3.09,-12.223,-15.228,-4.535,-8.719,-16.102],
 ];
 module ldraw_lib__95320(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__95320(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__95320(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__95320(line=0.2);

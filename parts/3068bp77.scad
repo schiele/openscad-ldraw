@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4ndis.scad>
 use <s/3068bs01.scad>
-function ldraw_lib__3068bp77() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3068bp77(realsolid=false) = [
 // 0 Tile  2 x  2 with "WANTED" Sign, Minifig Front and Side Mugshots Poster Pattern
 // 0 Name: 3068bp77.dat
 // 0 Author: Willy Tschager [Holly-Wood]
@@ -23,14 +24,14 @@ function ldraw_lib__3068bp77() = [
 // 0 // Subpart
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3068bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3068bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3068bs01(realsolid)],
 // 
 // 0 // Pattern
 // 0 // Black
 // 1 0 -11.2 0 0 .5 0 0 0 1 0 0 0 .5 4-4disc.dat
-  [1,0,-11.2,0,0,.5,0,0,0,1,0,0,0,.5, ldraw_lib__4_4disc()],
+  [1,0,-11.2,0,0,.5,0,0,0,1,0,0,0,.5, ldraw_lib__4_4disc(realsolid)],
 // 1 0 -8.85 0 0 .5 0 0 0 1 0 0 0 .5 4-4disc.dat
-  [1,0,-8.85,0,0,.5,0,0,0,1,0,0,0,.5, ldraw_lib__4_4disc()],
+  [1,0,-8.85,0,0,.5,0,0,0,1,0,0,0,.5, ldraw_lib__4_4disc(realsolid)],
 // 4 0 -10.005 0 -1.961 -10.005 0 -1.659 -10.224 0 -1.645 -10.264 0 -1.944
   [4,0,-10.005,0,-1.961,-10.005,0,-1.659,-10.224,0,-1.645,-10.264,0,-1.944],
 // 4 0 -10.264 0 -1.944 -10.224 0 -1.645 -10.44 0 -1.602 -10.518 0 -1.894
@@ -1634,9 +1635,9 @@ function ldraw_lib__3068bp77() = [
 // 
 // 0 // Main Color
 // 1 16 -8.85 0 0 .5 0 0 0 1 0 0 0 .5 4-4ndis.dat
-  [1,16,-8.85,0,0,.5,0,0,0,1,0,0,0,.5, ldraw_lib__4_4ndis()],
+  [1,16,-8.85,0,0,.5,0,0,0,1,0,0,0,.5, ldraw_lib__4_4ndis(realsolid)],
 // 1 16 -11.2 0 0 .5 0 0 0 1 0 0 0 .5 4-4ndis.dat
-  [1,16,-11.2,0,0,.5,0,0,0,1,0,0,0,.5, ldraw_lib__4_4ndis()],
+  [1,16,-11.2,0,0,.5,0,0,0,1,0,0,0,.5, ldraw_lib__4_4ndis(realsolid)],
 // 4 16 -10.005 0 -4.45 -10.005 0 -3.85 -10.91 0 -3.9 -11.71 0 -4
   [4,16,-10.005,0,-4.45,-10.005,0,-3.85,-10.91,0,-3.9,-11.71,0,-4],
 // 4 16 -12.2 0 -4.45 -10.005 0 -4.45 -11.71 0 -4 -12.4 0 -4.19
@@ -3671,5 +3672,5 @@ function ldraw_lib__3068bp77() = [
   [3,16,-13.71,0,2.05,-13.83,0,1.78,-13.407,0,1.601],
 ];
 module ldraw_lib__3068bp77(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3068bp77(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3068bp77(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3068bp77(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <4019.scad>
-function ldraw_lib__401926() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__401926(realsolid=false) = [
 // 0 ~_Technic Gear 16 Tooth Black (Obsolete)
 // 0 Name: 401926.dat
 // 0 Author: Michael Heidemann [mikeheide]
@@ -17,8 +18,8 @@ function ldraw_lib__401926() = [
 // 
 // 
 // 1 0 0 0 0 1 0 0 0 1 0 0 0 1 4019.dat
-  [1,0,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4019()],
+  [1,0,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4019(realsolid)],
 ];
 module ldraw_lib__401926(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__401926(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__401926(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__401926(line=0.2);

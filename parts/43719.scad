@@ -3,7 +3,8 @@ use <../p/rect.scad>
 use <../p/rect2p.scad>
 use <../p/stud4.scad>
 use <../p/stug2.scad>
-function ldraw_lib__43719() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__43719(realsolid=false) = [
 // 0 Wing  4 x  4 with  2 x  2 Cutout
 // 0 Name: 43719.dat
 // 0 Author: John Riley [jriley]
@@ -39,13 +40,13 @@ function ldraw_lib__43719() = [
 // 2 24 20 0 -20 40 0 58
   [2,24,20,0,-20,40,0,58],
 // 1 16 -30 4 60 10 0 0 0 0 4 0 -1 0 rect.dat
-  [1,16,-30,4,60,10,0,0,0,0,4,0,-1,0, ldraw_lib__rect()],
+  [1,16,-30,4,60,10,0,0,0,0,4,0,-1,0, ldraw_lib__rect(realsolid)],
 // 1 16 30 4 60 10 0 0 0 0 4 0 -1 0 rect.dat
-  [1,16,30,4,60,10,0,0,0,0,4,0,-1,0, ldraw_lib__rect()],
+  [1,16,30,4,60,10,0,0,0,0,4,0,-1,0, ldraw_lib__rect(realsolid)],
 // 1 16 0 4 20 20 0 0 0 0 4 0 -1 0 rect.dat
-  [1,16,0,4,20,20,0,0,0,0,4,0,-1,0, ldraw_lib__rect()],
+  [1,16,0,4,20,20,0,0,0,0,4,0,-1,0, ldraw_lib__rect(realsolid)],
 // 1 16 -20 4 40 0 -1 0 0 0 4 20 0 0 rect2p.dat
-  [1,16,-20,4,40,0,-1,0,0,0,4,20,0,0, ldraw_lib__rect2p()],
+  [1,16,-20,4,40,0,-1,0,0,0,4,20,0,0, ldraw_lib__rect2p(realsolid)],
 // 4 16 -24 8 20 -24 8 57 -20 8 60 -20 8 20
   [4,16,-24,8,20,-24,8,57,-20,8,60,-20,8,20],
 // 4 16 24 8 20 20 8 20 20 8 60 24 8 57
@@ -55,9 +56,9 @@ function ldraw_lib__43719() = [
 // 2 24 -24 8 20 -24 8 57
   [2,24,-24,8,20,-24,8,57],
 // 1 16 20 4 40 0 1 0 0 0 4 20 0 0 rect2p.dat
-  [1,16,20,4,40,0,1,0,0,0,4,20,0,0, ldraw_lib__rect2p()],
+  [1,16,20,4,40,0,1,0,0,0,4,20,0,0, ldraw_lib__rect2p(realsolid)],
 // 1 16 0 4 -20 20 0 0 0 0 4 0 1 0 rect.dat
-  [1,16,0,4,-20,20,0,0,0,0,4,0,1,0, ldraw_lib__rect()],
+  [1,16,0,4,-20,20,0,0,0,0,4,0,1,0, ldraw_lib__rect(realsolid)],
 // 4 16 -19 4 -16 -25 4 16 25 4 16 19 4 -16
   [4,16,-19,4,-16,-25,4,16,25,4,16,19,4,-16],
 // 3 16 -24 4 20 -20 4 -20 -40 4 58
@@ -469,11 +470,11 @@ function ldraw_lib__43719() = [
 // 2 24 36.5385 4 44.5 39.2308 4 55
   [2,24,36.5385,4,44.5,39.2308,4,55],
 // 1 16 0 4 0 0 0 -1 0 -1 0 -1 0 0 stud4.dat
-  [1,16,0,4,0,0,0,-1,0,-1,0,-1,0,0, ldraw_lib__stud4()],
+  [1,16,0,4,0,0,0,-1,0,-1,0,-1,0,0, ldraw_lib__stud4(realsolid)],
 // 1 16 0 0 0 0 0 -1 0 1 0 1 0 0 stug2.dat
-  [1,16,0,0,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__stug2()],
+  [1,16,0,0,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__stug2(realsolid)],
 // 0
 ];
 module ldraw_lib__43719(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__43719(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__43719(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__43719(line=0.2);

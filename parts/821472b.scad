@@ -3,7 +3,8 @@ use <../p/48/1-4ndis.scad>
 use <../p/box5-12.scad>
 use <s/821472as01.scad>
 use <s/821472as02.scad>
-function ldraw_lib__821472b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__821472b(realsolid=false) = [
 // 0 Sticker  1.2 x  1.5 with Red and Blue "28" on Transparent Background
 // 0 Name: 821472b.dat
 // 0 Author: Damien Roux [Darats]
@@ -20,18 +21,18 @@ function ldraw_lib__821472b() = [
 // 
 // 
 // 1 4 0 -0.25 0 0.25 0 0 0 1 0 0 0 0.25 s\821472as01.dat
-  [1,4,0,-0.25,0,0.25,0,0,0,1,0,0,0,0.25, ldraw_lib__s__821472as01()],
+  [1,4,0,-0.25,0,0.25,0,0,0,1,0,0,0,0.25, ldraw_lib__s__821472as01(realsolid)],
 // 1 16 0 -0.25 0 0.25 0 0 0 1 0 0 0 0.25 s\821472as02.dat
-  [1,16,0,-0.25,0,0.25,0,0,0,1,0,0,0,0.25, ldraw_lib__s__821472as02()],
+  [1,16,0,-0.25,0,0.25,0,0,0,1,0,0,0,0.25, ldraw_lib__s__821472as02(realsolid)],
 // 
 // 1 16 -8 -0.25 5 0 0 -6 0 1 0 6 0 0 48\1-4ndis.dat
-  [1,16,-8,-0.25,5,0,0,-6,0,1,0,6,0,0, ldraw_lib__48__1_4ndis()],
+  [1,16,-8,-0.25,5,0,0,-6,0,1,0,6,0,0, ldraw_lib__48__1_4ndis(realsolid)],
 // 1 16 8 -0.25 5 6 0 0 0 1 0 0 0 6 48\1-4ndis.dat
-  [1,16,8,-0.25,5,6,0,0,0,1,0,0,0,6, ldraw_lib__48__1_4ndis()],
+  [1,16,8,-0.25,5,6,0,0,0,1,0,0,0,6, ldraw_lib__48__1_4ndis(realsolid)],
 // 1 16 8 -0.25 -5 0 0 6 0 1 0 -6 0 0 48\1-4ndis.dat
-  [1,16,8,-0.25,-5,0,0,6,0,1,0,-6,0,0, ldraw_lib__48__1_4ndis()],
+  [1,16,8,-0.25,-5,0,0,6,0,1,0,-6,0,0, ldraw_lib__48__1_4ndis(realsolid)],
 // 1 16 -8 -0.25 -5 -6 0 0 0 1 0 0 0 -6 48\1-4ndis.dat
-  [1,16,-8,-0.25,-5,-6,0,0,0,1,0,0,0,-6, ldraw_lib__48__1_4ndis()],
+  [1,16,-8,-0.25,-5,-6,0,0,0,1,0,0,0,-6, ldraw_lib__48__1_4ndis(realsolid)],
 // 
 // 3 16 -14 -0.25 -5 -15 -0.25 -12 -14 -0.25 -11
   [3,16,-14,-0.25,-5,-15,-0.25,-12,-14,-0.25,-11],
@@ -59,8 +60,8 @@ function ldraw_lib__821472b() = [
   [3,16,15,-0.25,12,14,-0.25,11,14,-0.25,5],
 // 
 // 1 16 0 -0.25 0 15 0 0 0 0.25 0 0 0 12 box5-12.dat
-  [1,16,0,-0.25,0,15,0,0,0,0.25,0,0,0,12, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,15,0,0,0,0.25,0,0,0,12, ldraw_lib__box5_12(realsolid)],
 ];
 module ldraw_lib__821472b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__821472b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__821472b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__821472b(line=0.2);

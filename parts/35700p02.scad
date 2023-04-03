@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/box0.scad>
 use <s/35700s01.scad>
-function ldraw_lib__35700p02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__35700p02(realsolid=false) = [
 // 0 Container  2 x  2 x  1 Crate with Medium Blue Diagonal Stripes on Four Sides Pattern
 // 0 Name: 35700p02.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -18,10 +19,10 @@ function ldraw_lib__35700p02() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\35700s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__35700s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__35700s01(realsolid)],
 // 
 // 1 16 0 -4 0 20 0 0 0 -12 0 0 0 20 box0.dat
-  [1,16,0,-4,0,20,0,0,0,-12,0,0,0,20, ldraw_lib__box0()],
+  [1,16,0,-4,0,20,0,0,0,-12,0,0,0,20, ldraw_lib__box0(realsolid)],
 // 
 // 4 73 8.5 -15 -20 3 -15 -20 18.3 -.7 -20 18.3 -5.8 -20
   [4,73,8.5,-15,-20,3,-15,-20,18.3,-.7,-20,18.3,-5.8,-20],
@@ -316,5 +317,5 @@ function ldraw_lib__35700p02() = [
   [4,16,20,7,-8.55652,20,7,-3.78462,20,-6.58824,-18.3,20,-2.1,-18.3],
 ];
 module ldraw_lib__35700p02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__35700p02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__35700p02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__35700p02(line=0.2);

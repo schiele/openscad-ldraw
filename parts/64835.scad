@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/64835s01.scad>
-function ldraw_lib__64835() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__64835(realsolid=false) = [
 // 0 ~Animal Cow Head Left
 // 0 Name: 64835.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -17,7 +18,7 @@ function ldraw_lib__64835() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\64835s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__64835s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__64835s01(realsolid)],
 // 0 // Blaze
 // 3 16 0 -10.543 -55.754 5.433 -3.622 -58.575 9.169 -8.867 -55.838
   [3,16,0,-10.543,-55.754,5.433,-3.622,-58.575,9.169,-8.867,-55.838],
@@ -134,5 +135,5 @@ function ldraw_lib__64835() = [
   [5,24,0,13.311,-63.972,6.918,14.983,-58.959,0,15.345,-59.867,9.162,11.854,-61.547],
 ];
 module ldraw_lib__64835(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__64835(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__64835(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__64835(line=0.2);

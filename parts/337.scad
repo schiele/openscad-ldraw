@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/axle.scad>
 use <s/336s01.scad>
-function ldraw_lib__337() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__337(realsolid=false) = [
 // 0 ~Technic Pneumatic Cylinder 2 x 2 Piston Rod 4L
 // 0 Name: 337.dat
 // 0 Author: Marc Klein [marckl]
@@ -19,11 +20,11 @@ function ldraw_lib__337() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\336s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__336s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__336s01(realsolid)],
 // 1 16 0 12 0 1 0 0 0 94 0 0 0 1 axle.dat
-  [1,16,0,12,0,1,0,0,0,94,0,0,0,1, ldraw_lib__axle()],
+  [1,16,0,12,0,1,0,0,0,94,0,0,0,1, ldraw_lib__axle(realsolid)],
 // 0
 ];
 module ldraw_lib__337(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__337(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__337(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__337(line=0.2);

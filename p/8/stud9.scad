@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__8__stud9() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__8__stud9(realsolid=false) = [
 // 0 Stud Open with Small Hole (Fast-Draw)
 // 0 Name: 8\stud9.dat
 // 0 Author: Ildefonso Zanette [izanette]
@@ -154,5 +155,5 @@ function ldraw_lib__8__stud9() = [
 // 0
 ];
 module ldraw_lib__8__stud9(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__8__stud9(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__8__stud9(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__8__stud9(line=0.2);

@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4ndis.scad>
 use <s/3626bs01.scad>
-function ldraw_lib__3626bp31() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3626bp31(realsolid=false) = [
 // 0 ~Minifig Head with Messy Hair and Eye Patch Pattern (Obsolete)
 // 0 Name: 3626bp31.dat
 // 0 Author: Franklin W. Cain [fwcain]
@@ -29,7 +30,7 @@ function ldraw_lib__3626bp31() = [
 // 
 // 
 // 1 14 0 0 0 1 0 0 0 1 0 0 0 1 s\3626bs01.dat
-  [1,14,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626bs01()],
+  [1,14,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626bs01(realsolid)],
 // 
 // 0 // messy hair
 // 
@@ -195,9 +196,9 @@ function ldraw_lib__3626bp31() = [
   [4,0,7.5,9,-10.323,9.192,8.75,-9.192,9.192,7.75,-9.192,7.5,8,-10.323],
 // 
 // 1 0 -3.5 10 -12.304 1.25 -0.23705 0 0 0 -1.25 -0.244 0.9715 0 4-4disc.dat
-  [1,0,-3.5,10,-12.304,1.25,-0.23705,0,0,0,-1.25,-0.244,0.9715,0, ldraw_lib__4_4disc()],
+  [1,0,-3.5,10,-12.304,1.25,-0.23705,0,0,0,-1.25,-0.244,0.9715,0, ldraw_lib__4_4disc(realsolid)],
 // 1 14 -3.5 10 -12.304 1.25 -0.23705 0 0 0 -1.25 -0.244 0.9715 0 4-4ndis.dat
-  [1,14,-3.5,10,-12.304,1.25,-0.23705,0,0,0,-1.25,-0.244,0.9715,0, ldraw_lib__4_4ndis()],
+  [1,14,-3.5,10,-12.304,1.25,-0.23705,0,0,0,-1.25,-0.244,0.9715,0, ldraw_lib__4_4ndis(realsolid)],
 // 
 // 4 14 -2.25 8.75 -12.548 -2.25 11.25 -12.548 0 11.25 -13 0 8.75 -13
   [4,14,-2.25,8.75,-12.548,-2.25,11.25,-12.548,0,11.25,-13,0,8.75,-13],
@@ -340,5 +341,5 @@ function ldraw_lib__3626bp31() = [
   [5,8,12.01,17,-4.975,10.658,19.828,-4.415,9.192,17,-9.192,13,17,0],
 ];
 module ldraw_lib__3626bp31(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3626bp31(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3626bp31(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3626bp31(line=0.2);

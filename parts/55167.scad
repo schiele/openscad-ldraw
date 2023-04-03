@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <54701p01c01.scad>
-function ldraw_lib__55167() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__55167(realsolid=false) = [
 // 0 =Plane Aft Section  8 x 16 x  7 with Light Bluish Grey Bottom and Blue Stripes Pattern
 // 0 Name: 55167.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -17,8 +18,8 @@ function ldraw_lib__55167() = [
 // 0 // Alias of 54701p01c01
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 54701p01c01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__54701p01c01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__54701p01c01(realsolid)],
 ];
 module ldraw_lib__55167(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__55167(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__55167(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__55167(line=0.2);

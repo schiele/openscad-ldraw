@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <572a.scad>
 use <572b.scad>
-function ldraw_lib__76384() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__76384(realsolid=false) = [
 // 0 String Braided 11L with End Studs (Complete)
 // 0 Name: 76384.dat
 // 0 Author: Steve Bliss [sbliss]
@@ -20,29 +21,29 @@ function ldraw_lib__76384() = [
 // 
 // 
 // 1 16 -100 0 0 1 0 0 0 1 0 0 0 1 572a.dat
-  [1,16,-100,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__572a()],
+  [1,16,-100,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__572a(realsolid)],
 // 1 16 -81 1.5 0 1.2 0 0 0 1 0 0 0 1 572b.dat
-  [1,16,-81,1.5,0,1.2,0,0,0,1,0,0,0,1, ldraw_lib__572b()],
+  [1,16,-81,1.5,0,1.2,0,0,0,1,0,0,0,1, ldraw_lib__572b(realsolid)],
 // 1 16 -60 1.5 0 1 0 0 0 1 0 0 0 1 572b.dat
-  [1,16,-60,1.5,0,1,0,0,0,1,0,0,0,1, ldraw_lib__572b()],
+  [1,16,-60,1.5,0,1,0,0,0,1,0,0,0,1, ldraw_lib__572b(realsolid)],
 // 1 16 -40 1.5 0 1 0 0 0 1 0 0 0 1 572b.dat
-  [1,16,-40,1.5,0,1,0,0,0,1,0,0,0,1, ldraw_lib__572b()],
+  [1,16,-40,1.5,0,1,0,0,0,1,0,0,0,1, ldraw_lib__572b(realsolid)],
 // 1 16 -20 1.5 0 1 0 0 0 1 0 0 0 1 572b.dat
-  [1,16,-20,1.5,0,1,0,0,0,1,0,0,0,1, ldraw_lib__572b()],
+  [1,16,-20,1.5,0,1,0,0,0,1,0,0,0,1, ldraw_lib__572b(realsolid)],
 // 1 16 0 1.5 0 1 0 0 0 1 0 0 0 1 572b.dat
-  [1,16,0,1.5,0,1,0,0,0,1,0,0,0,1, ldraw_lib__572b()],
+  [1,16,0,1.5,0,1,0,0,0,1,0,0,0,1, ldraw_lib__572b(realsolid)],
 // 1 16 20 1.5 0 1 0 0 0 1 0 0 0 1 572b.dat
-  [1,16,20,1.5,0,1,0,0,0,1,0,0,0,1, ldraw_lib__572b()],
+  [1,16,20,1.5,0,1,0,0,0,1,0,0,0,1, ldraw_lib__572b(realsolid)],
 // 1 16 40 1.5 0 1 0 0 0 1 0 0 0 1 572b.dat
-  [1,16,40,1.5,0,1,0,0,0,1,0,0,0,1, ldraw_lib__572b()],
+  [1,16,40,1.5,0,1,0,0,0,1,0,0,0,1, ldraw_lib__572b(realsolid)],
 // 1 16 60 1.5 0 1 0 0 0 1 0 0 0 1 572b.dat
-  [1,16,60,1.5,0,1,0,0,0,1,0,0,0,1, ldraw_lib__572b()],
+  [1,16,60,1.5,0,1,0,0,0,1,0,0,0,1, ldraw_lib__572b(realsolid)],
 // 1 16 81 1.5 0 1.2 0 0 0 1 0 0 0 1 572b.dat
-  [1,16,81,1.5,0,1.2,0,0,0,1,0,0,0,1, ldraw_lib__572b()],
+  [1,16,81,1.5,0,1.2,0,0,0,1,0,0,0,1, ldraw_lib__572b(realsolid)],
 // 1 16 100 0 0 1 0 0 0 1 0 0 0 1 572a.dat
-  [1,16,100,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__572a()],
+  [1,16,100,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__572a(realsolid)],
 // 0
 ];
 module ldraw_lib__76384(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__76384(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__76384(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__76384(line=0.2);

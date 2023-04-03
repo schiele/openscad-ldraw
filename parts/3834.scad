@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3834s01.scad>
-function ldraw_lib__3834() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3834(realsolid=false) = [
 // 0 Minifig Fire Helmet
 // 0 Name: 3834.dat
 // 0 Author: Chris Dee [cwdee]
@@ -24,7 +25,7 @@ function ldraw_lib__3834() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3834s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3834s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3834s01(realsolid)],
 // 5 24 0 4 -15 0 -6 -13 5.74 4 -13.86 -5.74 4 -13.86
   [5,24,0,4,-15,0,-6,-13,5.74,4,-13.86,-5.74,4,-13.86],
 // 4 16 0 4 -15 5.74 4 -13.86 4.97 -6 -12.01 0 -6 -13
@@ -33,5 +34,5 @@ function ldraw_lib__3834() = [
   [4,16,0,-6,-13,-4.97,-6,-12.01,-5.74,4,-13.86,0,4,-15],
 ];
 module ldraw_lib__3834(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3834(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3834(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3834(line=0.2);

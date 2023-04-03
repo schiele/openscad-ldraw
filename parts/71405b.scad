@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <4106332b.scad>
-function ldraw_lib__71405b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__71405b(realsolid=false) = [
 // 0 ~Moved to 4106332b
 // 0 Name: 71405b.dat
 // 0 Author: [PTadmin]
@@ -16,8 +17,8 @@ function ldraw_lib__71405b() = [
 // 
 // 0 // Sticker System Fort Legoredo Sign
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 4106332b.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4106332b()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4106332b(realsolid)],
 ];
 module ldraw_lib__71405b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__71405b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__71405b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__71405b(line=0.2);

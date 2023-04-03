@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__rect3() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__rect3(realsolid=false) = [
 // 0 Rectangle with 3 Edges
 // 0 Name: rect3.dat
 // 0 Author: Mark Kennedy [mkennedy]
@@ -28,5 +29,5 @@ function ldraw_lib__rect3() = [
 // 0 //
 ];
 module ldraw_lib__rect3(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__rect3(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__rect3(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__rect3(line=0.2);

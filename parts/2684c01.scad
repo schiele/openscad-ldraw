@@ -2,7 +2,8 @@ use <../lib.scad>
 use <2682.scad>
 use <2683c01.scad>
 use <2685.scad>
-function ldraw_lib__2684c01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2684c01(realsolid=false) = [
 // 0 Monorail Motor with White Motor Unit (Complete)
 // 0 Name: 2684c01.dat
 // 0 Author: Bernd Broich [bbroich]
@@ -24,20 +25,20 @@ function ldraw_lib__2684c01() = [
 // 
 // 0 // Motor chassis
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 2683c01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2683c01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2683c01(realsolid)],
 // 
 // 0 // Switch
 // 0 // from -6 to +6 LDU at z-axis
 // 1 16 0 111.5 0 1 0 0 0 1 0 0 0 1 2682.dat
-  [1,16,0,111.5,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2682()],
+  [1,16,0,111.5,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2682(realsolid)],
 // 
 // 0 // Connectors
 // 0 // rotate from -8 to +8 degrees around z-axis
 // 1 16 -18 128.75 0 -1 0 0 0 1 0 0 0 -1 2685.dat
-  [1,16,-18,128.75,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__2685()],
+  [1,16,-18,128.75,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__2685(realsolid)],
 // 1 16 18 128.75 0 1 0 0 0 1 0 0 0 1 2685.dat
-  [1,16,18,128.75,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2685()],
+  [1,16,18,128.75,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2685(realsolid)],
 ];
 module ldraw_lib__2684c01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2684c01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2684c01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2684c01(line=0.2);

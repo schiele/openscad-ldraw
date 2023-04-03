@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4cylo.scad>
 use <../p/4-4ring1.scad>
 use <../p/4-4ring4.scad>
-function ldraw_lib__32040() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__32040(realsolid=false) = [
 // 0 ~Technic Shock Absorber 10L Damped, Gasket
 // 0 Name: 32040.dat
 // 0 Author: Marc Klein [marckl]
@@ -22,29 +23,29 @@ function ldraw_lib__32040() = [
 // 
 // 
 // 1 16 0 -71.5 0 -15 0 0 0 0.5 0 0 0 -15 4-4cylo.dat
-  [1,16,0,-71.5,0,-15,0,0,0,0.5,0,0,0,-15, ldraw_lib__4_4cylo()],
+  [1,16,0,-71.5,0,-15,0,0,0,0.5,0,0,0,-15, ldraw_lib__4_4cylo(realsolid)],
 // 1 16 0 -76.5 0 -12 0 0 0 5 0 0 0 -12 4-4cylo.dat
-  [1,16,0,-76.5,0,-12,0,0,0,5,0,0,0,-12, ldraw_lib__4_4cylo()],
+  [1,16,0,-76.5,0,-12,0,0,0,5,0,0,0,-12, ldraw_lib__4_4cylo(realsolid)],
 // 1 16 0 -77 0 -15 0 0 0 0.5 0 0 0 -15 4-4cylo.dat
-  [1,16,0,-77,0,-15,0,0,0,0.5,0,0,0,-15, ldraw_lib__4_4cylo()],
+  [1,16,0,-77,0,-15,0,0,0,0.5,0,0,0,-15, ldraw_lib__4_4cylo(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -71 0 -6 0 0 0 -6 0 0 0 6 4-4cylo.dat
-  [1,16,0,-71,0,-6,0,0,0,-6,0,0,0,6, ldraw_lib__4_4cylo()],
+  [1,16,0,-71,0,-6,0,0,0,-6,0,0,0,6, ldraw_lib__4_4cylo(realsolid)],
 // 1 16 0 -71 0 -6 0 0 0 -1 0 0 0 6 4-4ring1.dat
-  [1,16,0,-71,0,-6,0,0,0,-1,0,0,0,6, ldraw_lib__4_4ring1()],
+  [1,16,0,-71,0,-6,0,0,0,-1,0,0,0,6, ldraw_lib__4_4ring1(realsolid)],
 // 1 16 0 -71 0 -3 0 0 0 -1 0 0 0 3 4-4ring4.dat
-  [1,16,0,-71,0,-3,0,0,0,-1,0,0,0,3, ldraw_lib__4_4ring4()],
+  [1,16,0,-71,0,-3,0,0,0,-1,0,0,0,3, ldraw_lib__4_4ring4(realsolid)],
 // 1 16 0 -71.5 0 3 0 0 0 1 0 0 0 3 4-4ring4.dat
-  [1,16,0,-71.5,0,3,0,0,0,1,0,0,0,3, ldraw_lib__4_4ring4()],
+  [1,16,0,-71.5,0,3,0,0,0,1,0,0,0,3, ldraw_lib__4_4ring4(realsolid)],
 // 1 16 0 -76.5 0 -3 0 0 0 -1 0 0 0 3 4-4ring4.dat
-  [1,16,0,-76.5,0,-3,0,0,0,-1,0,0,0,3, ldraw_lib__4_4ring4()],
+  [1,16,0,-76.5,0,-3,0,0,0,-1,0,0,0,3, ldraw_lib__4_4ring4(realsolid)],
 // 1 16 0 -77 0 3 0 0 0 1 0 0 0 3 4-4ring4.dat
-  [1,16,0,-77,0,3,0,0,0,1,0,0,0,3, ldraw_lib__4_4ring4()],
+  [1,16,0,-77,0,3,0,0,0,1,0,0,0,3, ldraw_lib__4_4ring4(realsolid)],
 // 1 16 0 -77 0 6 0 0 0 1 0 0 0 6 4-4ring1.dat
-  [1,16,0,-77,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4ring1()],
+  [1,16,0,-77,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4ring1(realsolid)],
 // 
 ];
 module ldraw_lib__32040(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__32040(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__32040(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__32040(line=0.2);

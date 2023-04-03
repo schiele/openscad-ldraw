@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__rect2p() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__rect2p(realsolid=false) = [
 // 0 Rectangle with 2 Parallel Edges
 // 0 Name: rect2p.dat
 // 0 Author: Donald Sutter [technog]
@@ -26,5 +27,5 @@ function ldraw_lib__rect2p() = [
 // 0
 ];
 module ldraw_lib__rect2p(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__rect2p(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__rect2p(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__rect2p(line=0.2);

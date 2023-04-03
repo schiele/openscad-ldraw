@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__4613908e() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4613908e(realsolid=false) = [
 // 0 Sticker  5.4 x  3.7 with Wall and Anubis Painting
 // 0 Name: 4613908e.dat
 // 0 Author: Christian Neumann [Wesley]
@@ -21,7 +22,7 @@ function ldraw_lib__4613908e() = [
 // 
 // 
 // 1 16 0 -0.25 0 37.5 0 0 0 0.25 0 0 0 54 box5-12.dat
-  [1,16,0,-0.25,0,37.5,0,0,0,0.25,0,0,0,54, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,37.5,0,0,0,0.25,0,0,0,54, ldraw_lib__box5_12(realsolid)],
 // 4 72 -24.64 -0.25 34.54 -24.61 -0.25 33.56 -24.19 -0.25 34.02 -24.16 -0.25 34.62
   [4,72,-24.64,-0.25,34.54,-24.61,-0.25,33.56,-24.19,-0.25,34.02,-24.16,-0.25,34.62],
 // 4 72 -24.19 -0.25 35.37 -24.64 -0.25 34.54 -24.16 -0.25 34.62 -23.44 -0.25 35.29
@@ -3334,5 +3335,5 @@ function ldraw_lib__4613908e() = [
   [4,19,-17.65,-0.25,21.12,-19.57,-0.25,21.2,-17.25,-0.25,19.65,-17,-0.25,20.4],
 ];
 module ldraw_lib__4613908e(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4613908e(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4613908e(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4613908e(line=0.2);

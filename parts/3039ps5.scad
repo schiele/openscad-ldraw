@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3039s01.scad>
-function ldraw_lib__3039ps5() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3039ps5(realsolid=false) = [
 // 0 Slope Brick 45  2 x  2 with SW Droid Tri-Fighter Pattern
 // 0 Name: 3039ps5.dat
 // 0 Author: Stan Isachenko [angmarec]
@@ -17,7 +18,7 @@ function ldraw_lib__3039ps5() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3039s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3039s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3039s01(realsolid)],
 // 4 0 0.974 11.73444 -21.73444 0.999 11.6807 -21.6807 0.987 11.62837 -21.62837 0.917 11.78252 -21.78252
   [4,0,0.974,11.73444,-21.73444,0.999,11.6807,-21.6807,0.987,11.62837,-21.62837,0.917,11.78252,-21.78252],
 // 4 0 0.835 11.82 -21.82 0.917 11.78252 -21.78252 0.987 11.62837 -21.62837 0.819 11.36179 -21.36179
@@ -562,5 +563,5 @@ function ldraw_lib__3039ps5() = [
   [3,16,-16.7,13.10481,-23.10481,-16.95,17.80141,-27.80141,-16.846,17.43655,-27.43655],
 ];
 module ldraw_lib__3039ps5(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3039ps5(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3039ps5(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3039ps5(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3816s01.scad>
-function ldraw_lib__3816phb() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3816phb(realsolid=false) = [
 // 0 ~Minifig Leg Right with Purple Greatcoat Pattern (Obsolete)
 // 0 Name: 3816phb.dat
 // 0 Author: Andy Westrate [westrate]
@@ -26,7 +27,7 @@ function ldraw_lib__3816phb() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3816s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3816s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3816s01(realsolid)],
 // 4 22 -5.5 6.74 -6 -7 11 -6 -12 11.25 -6 -14 11 -6
   [4,22,-5.5,6.74,-6,-7,11,-6,-12,11.25,-6,-14,11,-6],
 // 4 22 -14 11 -6 -17 10 -6 -17 6.74 -6 -5.5 6.74 -6
@@ -141,5 +142,5 @@ function ldraw_lib__3816phb() = [
   [4,16,-18.5,3.42,-8.28,-18,5.35,-6.95,-18,6.74,-6,-18.64,6.74,-6],
 ];
 module ldraw_lib__3816phb(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3816phb(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3816phb(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3816phb(line=0.2);

@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__3009p17a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__3009p17a(realsolid=false) = [
 // 0 ~Black "POLICE" and Red Line Pattern
 // 0 Name: s\3009p17a.dat
 // 0 Author: Michael Heidemann [mikeheide]
@@ -304,5 +305,5 @@ function ldraw_lib__s__3009p17a() = [
 // 0
 ];
 module ldraw_lib__s__3009p17a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__3009p17a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__3009p17a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__3009p17a(line=0.2);

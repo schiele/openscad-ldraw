@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3815s01.scad>
-function ldraw_lib__3815pm0() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3815pm0(realsolid=false) = [
 // 0 ~Minifig Hips with LOTR Leather Armour Pattern (Obsolete)
 // 0 Name: 3815pm0.dat
 // 0 Author: Howard Lande [HowardLande]
@@ -21,7 +22,7 @@ function ldraw_lib__3815pm0() = [
 // 0 // Base
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3815s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3815s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3815s01(realsolid)],
 // 
 // 0 // Crotch Frame
 // 4 16 -2 5.636 -6.364 -1.98 5.7 -6.407 1.98 5.7 -6.407 2 5.636 -6.364
@@ -530,5 +531,5 @@ function ldraw_lib__3815pm0() = [
   [4,16,-1.98,19.7,-4.365,-1.98,20.12,-3.736,1.98,20.12,-3.736,1.98,19.7,-4.365],
 ];
 module ldraw_lib__3815pm0(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3815pm0(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3815pm0(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3815pm0(line=0.2);

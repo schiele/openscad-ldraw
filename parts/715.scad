@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <35b.scad>
 use <u9237.scad>
-function ldraw_lib__715() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__715(realsolid=false) = [
 // 0 Wheel Rim  8 x 35 with 12 Studs with Axle (Complete)
 // 0 Name: 715.dat
 // 0 Author: Tore Eriksson [Tore_Eriksson]
@@ -30,10 +31,10 @@ function ldraw_lib__715() = [
 // 
 // 
 // 1 16 0 0 -2 1 0 0 0 1 0 0 0 1 u9237.dat
-  [1,16,0,0,-2,1,0,0,0,1,0,0,0,1, ldraw_lib__u9237()],
+  [1,16,0,0,-2,1,0,0,0,1,0,0,0,1, ldraw_lib__u9237(realsolid)],
 // 1 494 0 0 12 1 0 0 0 1 0 0 0 1 35b.dat
-  [1,494,0,0,12,1,0,0,0,1,0,0,0,1, ldraw_lib__35b()],
+  [1,494,0,0,12,1,0,0,0,1,0,0,0,1, ldraw_lib__35b(realsolid)],
 ];
 module ldraw_lib__715(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__715(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__715(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__715(line=0.2);

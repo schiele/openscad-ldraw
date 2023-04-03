@@ -2,7 +2,8 @@ use <../../lib.scad>
 use <../../p/box5.scad>
 use <../../p/stug2-1x4.scad>
 use <../../p/tri3a1.scad>
-function ldraw_lib__s__30223s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__30223s01(realsolid=false) = [
 // 0 ~Door  1 x  5 x  7.5 - Stud Beam
 // 0 Name: s\30223s01.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -21,38 +22,38 @@ function ldraw_lib__s__30223s01() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -50 0 8 36 0 0 0 0 6 0 -12 0 box5.dat
-  [1,16,-50,0,8,36,0,0,0,0,6,0,-12,0, ldraw_lib__box5()],
+  [1,16,-50,0,8,36,0,0,0,0,6,0,-12,0, ldraw_lib__box5(realsolid)],
 // 1 16 -26 3 -4 0 0 4 3 0 3 0 11.7 0 tri3a1.dat
-  [1,16,-26,3,-4,0,0,4,3,0,3,0,11.7,0, ldraw_lib__tri3a1()],
+  [1,16,-26,3,-4,0,0,4,3,0,3,0,11.7,0, ldraw_lib__tri3a1(realsolid)],
 // 1 16 -26 -3 -4 0 0 4 -3 0 -3 0 11.7 0 tri3a1.dat
-  [1,16,-26,-3,-4,0,0,4,-3,0,-3,0,11.7,0, ldraw_lib__tri3a1()],
+  [1,16,-26,-3,-4,0,0,4,-3,0,-3,0,11.7,0, ldraw_lib__tri3a1(realsolid)],
 // 1 16 -34 3 -4 0 0 -4 3 0 3 0 11.7 0 tri3a1.dat
-  [1,16,-34,3,-4,0,0,-4,3,0,3,0,11.7,0, ldraw_lib__tri3a1()],
+  [1,16,-34,3,-4,0,0,-4,3,0,3,0,11.7,0, ldraw_lib__tri3a1(realsolid)],
 // 1 16 -34 -3 -4 0 0 -4 -3 0 -3 0 11.7 0 tri3a1.dat
-  [1,16,-34,-3,-4,0,0,-4,-3,0,-3,0,11.7,0, ldraw_lib__tri3a1()],
+  [1,16,-34,-3,-4,0,0,-4,-3,0,-3,0,11.7,0, ldraw_lib__tri3a1(realsolid)],
 // 1 16 -46 3 -4 0 0 4 3 0 3 0 11.7 0 tri3a1.dat
-  [1,16,-46,3,-4,0,0,4,3,0,3,0,11.7,0, ldraw_lib__tri3a1()],
+  [1,16,-46,3,-4,0,0,4,3,0,3,0,11.7,0, ldraw_lib__tri3a1(realsolid)],
 // 1 16 -46 -3 -4 0 0 4 -3 0 -3 0 11.7 0 tri3a1.dat
-  [1,16,-46,-3,-4,0,0,4,-3,0,-3,0,11.7,0, ldraw_lib__tri3a1()],
+  [1,16,-46,-3,-4,0,0,4,-3,0,-3,0,11.7,0, ldraw_lib__tri3a1(realsolid)],
 // 1 16 -54 3 -4 0 0 -4 3 0 3 0 11.7 0 tri3a1.dat
-  [1,16,-54,3,-4,0,0,-4,3,0,3,0,11.7,0, ldraw_lib__tri3a1()],
+  [1,16,-54,3,-4,0,0,-4,3,0,3,0,11.7,0, ldraw_lib__tri3a1(realsolid)],
 // 1 16 -54 -3 -4 0 0 -4 -3 0 -3 0 11.7 0 tri3a1.dat
-  [1,16,-54,-3,-4,0,0,-4,-3,0,-3,0,11.7,0, ldraw_lib__tri3a1()],
+  [1,16,-54,-3,-4,0,0,-4,-3,0,-3,0,11.7,0, ldraw_lib__tri3a1(realsolid)],
 // 1 16 -66 3 -4 0 0 4 3 0 3 0 11.7 0 tri3a1.dat
-  [1,16,-66,3,-4,0,0,4,3,0,3,0,11.7,0, ldraw_lib__tri3a1()],
+  [1,16,-66,3,-4,0,0,4,3,0,3,0,11.7,0, ldraw_lib__tri3a1(realsolid)],
 // 1 16 -66 -3 -4 0 0 4 -3 0 -3 0 11.7 0 tri3a1.dat
-  [1,16,-66,-3,-4,0,0,4,-3,0,-3,0,11.7,0, ldraw_lib__tri3a1()],
+  [1,16,-66,-3,-4,0,0,4,-3,0,-3,0,11.7,0, ldraw_lib__tri3a1(realsolid)],
 // 1 16 -74 3 -4 0 0 -4 3 0 3 0 11.7 0 tri3a1.dat
-  [1,16,-74,3,-4,0,0,-4,3,0,3,0,11.7,0, ldraw_lib__tri3a1()],
+  [1,16,-74,3,-4,0,0,-4,3,0,3,0,11.7,0, ldraw_lib__tri3a1(realsolid)],
 // 1 16 -74 -3 -4 0 0 -4 -3 0 -3 0 11.7 0 tri3a1.dat
-  [1,16,-74,-3,-4,0,0,-4,-3,0,-3,0,11.7,0, ldraw_lib__tri3a1()],
+  [1,16,-74,-3,-4,0,0,-4,-3,0,-3,0,11.7,0, ldraw_lib__tri3a1(realsolid)],
 // 4 16 -14 -10 8 -14 -6 8 -86 -6 8 -86 -10 8
   [4,16,-14,-10,8,-14,-6,8,-86,-6,8,-86,-10,8],
 // 4 16 -14 6 8 -14 10 8 -86 10 8 -86 6 8
   [4,16,-14,6,8,-14,10,8,-86,10,8,-86,6,8],
 // 1 16 -50 0 -8 -1 0 0 0 0 1 0 1 0 stug2-1x4.dat
-  [1,16,-50,0,-8,-1,0,0,0,0,1,0,1,0, ldraw_lib__stug2_1x4()],
+  [1,16,-50,0,-8,-1,0,0,0,0,1,0,1,0, ldraw_lib__stug2_1x4(realsolid)],
 ];
 module ldraw_lib__s__30223s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__30223s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__30223s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__30223s01(line=0.2);

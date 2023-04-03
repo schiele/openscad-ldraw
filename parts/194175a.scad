@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/1-4chrd.scad>
 use <../p/4-4ndis.scad>
 use <../p/4-4ring3.scad>
-function ldraw_lib__194175a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__194175a(realsolid=false) = [
 // 0 Sticker  3.1 x  7.7 Pentagon with White Stripes and Red "L" in White/Black/Orange Logo
 // 0 Name: 194175a.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -39,15 +40,15 @@ function ldraw_lib__194175a() = [
 // 0 BFC NOCLIP
   [0,"BFC","NOCLIP"],
 // 1 0 0 -0.25 0 18 0 0 0 1 0 0 0 18 1-4chrd.dat
-  [1,0,0,-0.25,0,18,0,0,0,1,0,0,0,18, ldraw_lib__1_4chrd()],
+  [1,0,0,-0.25,0,18,0,0,0,1,0,0,0,18, ldraw_lib__1_4chrd(realsolid)],
 // 1 0 0 -0.25 0 0 0 -18 0 1 0 18 0 0 1-4chrd.dat
-  [1,0,0,-0.25,0,0,0,-18,0,1,0,18,0,0, ldraw_lib__1_4chrd()],
+  [1,0,0,-0.25,0,0,0,-18,0,1,0,18,0,0, ldraw_lib__1_4chrd(realsolid)],
 // 1 0 0 -0.25 0 -18 0 0 0 1 0 0 0 -18 1-4chrd.dat
-  [1,0,0,-0.25,0,-18,0,0,0,1,0,0,0,-18, ldraw_lib__1_4chrd()],
+  [1,0,0,-0.25,0,-18,0,0,0,1,0,0,0,-18, ldraw_lib__1_4chrd(realsolid)],
 // 1 0 0 -0.25 0 0 0 18 0 1 0 -18 0 0 1-4chrd.dat
-  [1,0,0,-0.25,0,0,0,18,0,1,0,-18,0,0, ldraw_lib__1_4chrd()],
+  [1,0,0,-0.25,0,0,0,18,0,1,0,-18,0,0, ldraw_lib__1_4chrd(realsolid)],
 // 1 25 0 -0.25 0 6 0 0 0 1 0 0 0 6 4-4ring3.dat
-  [1,25,0,-0.25,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4ring3()],
+  [1,25,0,-0.25,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4ring3(realsolid)],
 // 4 4 2 -0.25 0 2 -0.25 7.5 -4 -0.25 7.5 -4 -0.25 -6
   [4,4,2,-0.25,0,2,-0.25,7.5,-4,-0.25,7.5,-4,-0.25,-6],
 // 4 4 2 -0.25 0 -4 -0.25 -6 7.5 -0.25 -6 7.5 -0.25 0
@@ -93,7 +94,7 @@ function ldraw_lib__194175a() = [
 // 0 BFC CLIP
   [0,"BFC","CLIP"],
 // 1 16 0 -0.25 0 24 0 0 0 1 0 0 0 24 4-4ndis.dat
-  [1,16,0,-0.25,0,24,0,0,0,1,0,0,0,24, ldraw_lib__4_4ndis()],
+  [1,16,0,-0.25,0,24,0,0,0,1,0,0,0,24, ldraw_lib__4_4ndis(realsolid)],
 // 4 16 63.8 -0.25 -0.2 26 -0.25 10.8 27 -0.25 5.6 61.6 -0.25 -4.4
   [4,16,63.8,-0.25,-0.2,26,-0.25,10.8,27,-0.25,5.6,61.6,-0.25,-4.4],
 // 4 16 59.4 -0.25 -8.6 28 -0.25 0.4 29 -0.25 -4.8 57.2 -0.25 -12.8
@@ -168,5 +169,5 @@ function ldraw_lib__194175a() = [
   [3,16,0,-.25,-24,-24,-.25,-24,-57,-.25,-31],
 ];
 module ldraw_lib__194175a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__194175a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__194175a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__194175a(line=0.2);

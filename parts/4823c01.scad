@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <4823.scad>
 use <4824.scad>
-function ldraw_lib__4823c01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4823c01(realsolid=false) = [
 // 0 Panel  2 x 10 x  7 with Bay Window Blue
 // 0 Name: 4823c01.dat
 // 0 Author: Donald Sutter [technog]
@@ -16,10 +17,10 @@ function ldraw_lib__4823c01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 4823.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4823()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4823(realsolid)],
 // 1 1 0 36 -20 1 0 0 0 1 0 0 0 1 4824.dat
-  [1,1,0,36,-20,1,0,0,0,1,0,0,0,1, ldraw_lib__4824()],
+  [1,1,0,36,-20,1,0,0,0,1,0,0,0,1, ldraw_lib__4824(realsolid)],
 ];
 module ldraw_lib__4823c01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4823c01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4823c01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4823c01(line=0.2);

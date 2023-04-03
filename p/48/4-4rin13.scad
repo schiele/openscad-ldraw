@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__48__4_4rin13() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__48__4_4rin13(realsolid=false) = [
 // 0 Hi-Res Ring 13 x 1.0
 // 0 Name: 48\4-4rin13.dat
 // 0 Author: Mark Kennedy [mkennedy]
@@ -113,5 +114,5 @@ function ldraw_lib__48__4_4rin13() = [
   [4,16,13.8796,0,-1.827,14,0,0,13,0,0,12.8882,0,-1.6965],
 ];
 module ldraw_lib__48__4_4rin13(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__48__4_4rin13(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__48__4_4rin13(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__48__4_4rin13(line=0.2);

@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__820673i() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__820673i(realsolid=false) = [
 // 0 Sticker  1.2 x  3 Left Parallelogram with Two White Lines
 // 0 Name: 820673i.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -56,5 +57,5 @@ function ldraw_lib__820673i() = [
   [4,16,-16,-.25,-12,-15,-.25,2,-16.5,-.25,8,-30,-.25,12],
 ];
 module ldraw_lib__820673i(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__820673i(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__820673i(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__820673i(line=0.2);

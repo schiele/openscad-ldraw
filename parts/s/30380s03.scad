@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__30380s03() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__30380s03(realsolid=false) = [
 // 0 ~Minifig Helmet SW Mandalorian with Rocket Pack Helmet Cheek
 // 0 Name: s\30380s03.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -87,5 +88,5 @@ function ldraw_lib__s__30380s03() = [
   [5,24,13.599,16.478,-6.585,15.483,13.185,-3.986,14.598,13.404,-6.755,14.61,19.527,-5.073],
 ];
 module ldraw_lib__s__30380s03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__30380s03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__30380s03(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__30380s03(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <3795.scad>
-function ldraw_lib__379523() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__379523(realsolid=false) = [
 // 0 ~_Plate  2 x  6 Blue (Obsolete)
 // 0 Name: 379523.dat
 // 0 Author: Michael Heidemann [mikeheide]
@@ -20,8 +21,8 @@ function ldraw_lib__379523() = [
 // 0 // colouring of the part (Blue).
 // 
 // 1 1 0 0 0 1 0 0 0 1 0 0 0 1 3795.dat
-  [1,1,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3795()],
+  [1,1,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3795(realsolid)],
 ];
 module ldraw_lib__379523(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__379523(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__379523(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__379523(line=0.2);

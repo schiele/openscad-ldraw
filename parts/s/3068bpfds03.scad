@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__3068bpfds03() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__3068bpfds03(realsolid=false) = [
 // 0 ~Tile  2 x  2 with Fabuland '5' Bottom Right Background
 // 0 Name: s\3068bpfds03.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -87,5 +88,5 @@ function ldraw_lib__s__3068bpfds03() = [
   [3,16,-0.1,0,-0.8,-5.1,0,-6,-3.5,0,-7.8],
 ];
 module ldraw_lib__s__3068bpfds03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__3068bpfds03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__3068bpfds03(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__3068bpfds03(line=0.2);

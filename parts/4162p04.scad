@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/4162s01.scad>
-function ldraw_lib__4162p04() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4162p04(realsolid=false) = [
 // 0 Tile  1 x  8 with "The White House" Pattern
 // 0 Name: 4162p04.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -21,7 +22,7 @@ function ldraw_lib__4162p04() = [
 // 0 // Font match is not perfect, but comes close.
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4162s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4162s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4162s01(realsolid)],
 // 0 // Char: 84
 // 4 15 -58.74 0 4.88 -55.33 0 3.67 -53.84 0 3.67 -50.42 0 4.88
   [4,15,-58.74,0,4.88,-55.33,0,3.67,-53.84,0,3.67,-50.42,0,4.88],
@@ -911,5 +912,5 @@ function ldraw_lib__4162p04() = [
   [4,16,80,0,10,64.8,0,8.77,64.8,0,-8.73,80,0,-10],
 ];
 module ldraw_lib__4162p04(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4162p04(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4162p04(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4162p04(line=0.2);

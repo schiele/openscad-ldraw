@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/box4o8a.scad>
-function ldraw_lib__s__864s04() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__864s04(realsolid=false) = [
 // 0 ~Train Track 12V Slotted Point: Conducting Rail
 // 0 Name: s\864s04.dat
 // 0 Author: Steffen [Steffen]
@@ -15,12 +16,12 @@ function ldraw_lib__s__864s04() = [
 // 
 // 
 // 1 16 5 4 0 0 -10 0 0 0 4 4 0 0 box4o8a.dat
-  [1,16,5,4,0,0,-10,0,0,0,4,4,0,0, ldraw_lib__box4o8a()],
+  [1,16,5,4,0,0,-10,0,0,0,4,4,0,0, ldraw_lib__box4o8a(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 5 4 0 0 -10 0 0 0 3.75 3.75 0 0 box4o8a.dat
-  [1,16,5,4,0,0,-10,0,0,0,3.75,3.75,0,0, ldraw_lib__box4o8a()],
+  [1,16,5,4,0,0,-10,0,0,0,3.75,3.75,0,0, ldraw_lib__box4o8a(realsolid)],
 ];
 module ldraw_lib__s__864s04(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__864s04(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__864s04(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__864s04(line=0.2);

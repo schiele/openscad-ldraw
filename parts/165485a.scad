@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__165485a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__165485a(realsolid=false) = [
 // 0 Sticker  1.1 x  1.9 with Blue V and Red Lines
 // 0 Name: 165485a.dat
 // 0 Author: David Manley [djm]
@@ -18,7 +19,7 @@ function ldraw_lib__165485a() = [
 // 
 // 0 // Sticker backside.
 // 1 16 0 -0.25 0 19 0 0 0 0.25 0 0 0 11 box5-12.dat
-  [1,16,0,-0.25,0,19,0,0,0,0.25,0,0,0,11, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,19,0,0,0,0.25,0,0,0,11, ldraw_lib__box5_12(realsolid)],
 // 0 // Blue.
 // 4 1 -16 -0.25 5.5 -9 -0.25 5.5 -6 -0.25 9.5 -16 -0.25 9.5
   [4,1,-16,-0.25,5.5,-9,-0.25,5.5,-6,-0.25,9.5,-16,-0.25,9.5],
@@ -87,5 +88,5 @@ function ldraw_lib__165485a() = [
   [3,16,2.25,-0.25,-9.5,-2.25,-0.25,-9.5,-19,-0.25,-11],
 ];
 module ldraw_lib__165485a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__165485a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__165485a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__165485a(line=0.2);

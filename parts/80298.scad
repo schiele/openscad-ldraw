@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <3846p46.scad>
-function ldraw_lib__80298() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__80298(realsolid=false) = [
 // 0 ~_Minifig Shield Triangular with Black Falcon Yellow Border Pattern [Light Grey] (Obsolete)
 // 0 Name: 80298.dat
 // 0 Author: [PTadmin]
@@ -21,8 +22,8 @@ function ldraw_lib__80298() = [
 // 
 // 
 // 1 7 0 0 0 1 0 0 0 1 0 0 0 1 3846p46.dat
-  [1,7,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3846p46()],
+  [1,7,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3846p46(realsolid)],
 ];
 module ldraw_lib__80298(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__80298(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__80298(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__80298(line=0.2);

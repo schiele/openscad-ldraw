@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <4105242a.scad>
-function ldraw_lib__4105242b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4105242b(realsolid=false) = [
 // 0 Sticker  2.9 x  4.0 with White Airplane, Yellow Disc and Sky Scene - Left
 // 0 Name: 4105242b.dat
 // 0 Author: Damien Roux [Darats]
@@ -17,8 +18,8 @@ function ldraw_lib__4105242b() = [
 // 
 // 
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 4105242a.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__4105242a()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__4105242a(realsolid)],
 ];
 module ldraw_lib__4105242b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4105242b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4105242b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4105242b(line=0.2);

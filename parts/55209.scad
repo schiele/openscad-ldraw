@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <54931.scad>
-function ldraw_lib__55209() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__55209(realsolid=false) = [
 // 0 Electric Sound Brick  2 x  4 x  2 Button with Axle Hole (Needs Work)
 // 0 Name: 55209.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -17,8 +18,8 @@ function ldraw_lib__55209() = [
 // 0 // Needs Work: Shape inside brick is not exact
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 54931.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__54931()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__54931(realsolid)],
 ];
 module ldraw_lib__55209(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__55209(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__55209(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__55209(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__168335s() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__168335s(realsolid=false) = [
 // 0 Sticker  0.6 x  2.9 with  3 White Stars with Black Outline
 // 0 Name: 168335s.dat
 // 0 Author: Ulrich Röder [UR]
@@ -18,7 +19,7 @@ function ldraw_lib__168335s() = [
 // 
 // 0 // Main
 // 1 16 0 -0.25 0 29 0 0 0 0.25 0 0 0 5.8 box5-12.dat
-  [1,16,0,-0.25,0,29,0,0,0,0.25,0,0,0,5.8, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,29,0,0,0,0.25,0,0,0,5.8, ldraw_lib__box5_12(realsolid)],
 // 
 // 0 // Black
 // 4 0 -19.462 -.25 -.441 -19.052 -.25 -.559 -16.419 -.25 1.667 -17.241 -.25 1.368
@@ -169,5 +170,5 @@ function ldraw_lib__168335s() = [
   [4,4,-2.904,-.25,-.693,-5.686,-.25,1.344,-21.17,-.25,4.872,-16.419,-.25,1.667],
 ];
 module ldraw_lib__168335s(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__168335s(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__168335s(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__168335s(line=0.2);

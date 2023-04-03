@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__logo_maersk_k() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__logo_maersk_k(realsolid=false) = [
 // 0 Logo Maersk White "K"
 // 0 Name: logo-maersk-k.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -34,5 +35,5 @@ function ldraw_lib__logo_maersk_k() = [
   [3,16,-1.45,0,-.2,-1.45,0,-2.7,1.05,0,-2.7],
 ];
 module ldraw_lib__logo_maersk_k(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__logo_maersk_k(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__logo_maersk_k(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__logo_maersk_k(line=0.2);

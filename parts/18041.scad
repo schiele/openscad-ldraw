@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/4-4cylc.scad>
 use <s/18041s01.scad>
-function ldraw_lib__18041() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__18041(realsolid=false) = [
 // 0 Minifig Harpoon with Smooth Bar
 // 0 Name: 18041.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -20,17 +21,17 @@ function ldraw_lib__18041() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\18041s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__18041s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__18041s01(realsolid)],
 // 1 16 0 0 0 0 0 -1 0 1 0 1 0 0 s\18041s01.dat
-  [1,16,0,0,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__s__18041s01()],
+  [1,16,0,0,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__s__18041s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 -1 s\18041s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__18041s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__18041s01(realsolid)],
 // 1 16 0 0 0 0 0 1 0 1 0 -1 0 0 s\18041s01.dat
-  [1,16,0,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__s__18041s01()],
+  [1,16,0,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__s__18041s01(realsolid)],
 // 
 // 1 16 0 0 0 4 0 0 0 -44.5 0 0 0 -4 4-4cylc.dat
-  [1,16,0,0,0,4,0,0,0,-44.5,0,0,0,-4, ldraw_lib__4_4cylc()],
+  [1,16,0,0,0,4,0,0,0,-44.5,0,0,0,-4, ldraw_lib__4_4cylc(realsolid)],
 ];
 module ldraw_lib__18041(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__18041(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__18041(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__18041(line=0.2);

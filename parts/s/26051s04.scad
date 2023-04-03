@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__26051s04() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__26051s04(realsolid=false) = [
 // 0 ~Minifig Head Sonic the Hedgehog Ear
 // 0 Name: s\26051s04.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -27,5 +28,5 @@ function ldraw_lib__s__26051s04() = [
   [5,24,15.385,-38.68,-10.324,13.702,-32.798,-9.108,16.0396,-38.725,-9.9251,11.052,-34.243,-10.979],
 ];
 module ldraw_lib__s__26051s04(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__26051s04(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__26051s04(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__26051s04(line=0.2);

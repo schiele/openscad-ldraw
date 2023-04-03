@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__5_16ring4() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__5_16ring4(realsolid=false) = [
 // 0 Ring  4 x 0.3125
 // 0 Name: 5-16ring4.dat
 // 0 Author: Tim Lampmann [L4mpi]
@@ -27,5 +28,5 @@ function ldraw_lib__5_16ring4() = [
   [4,16,0,0,4,0,0,5,-1.9135,0,4.6195,-1.5308,0,3.6956],
 ];
 module ldraw_lib__5_16ring4(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__5_16ring4(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__5_16ring4(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__5_16ring4(line=0.2);

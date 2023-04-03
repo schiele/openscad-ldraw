@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__195985d() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__195985d(realsolid=false) = [
 // 0 Sticker  1.1 x  1.3 with Yellow Wrench on Black Background
 // 0 Name: 195985d.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -19,7 +20,7 @@ function ldraw_lib__195985d() = [
 // 
 // 
 // 1 16 0 -0.25 0 13 0 0 0 0.25 0 0 0 11 box5-12.dat
-  [1,16,0,-0.25,0,13,0,0,0,0.25,0,0,0,11, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,13,0,0,0,0.25,0,0,0,11, ldraw_lib__box5_12(realsolid)],
 // 4 0 6.89 -0.25 0.5 2.49 -0.25 0.5 0.22 -0.25 -3.46 9.11 -0.25 -3.42
   [4,0,6.89,-0.25,0.5,2.49,-0.25,0.5,0.22,-0.25,-3.46,9.11,-0.25,-3.42],
 // 4 0 9.11 -0.25 -3.42 0.22 -0.25 -3.46 2.45 -0.25 -7.29 13 -0.25 -11
@@ -86,5 +87,5 @@ function ldraw_lib__195985d() = [
   [3,0,13,-0.25,11,2.87,-0.25,6.78,5.78,-0.25,6.15],
 ];
 module ldraw_lib__195985d(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__195985d(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__195985d(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__195985d(line=0.2);

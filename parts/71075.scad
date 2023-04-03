@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <71076a.scad>
-function ldraw_lib__71075() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__71075(realsolid=false) = [
 // 0 ~Moved to 71076a
 // 0 Name: 71075.dat
 // 0 Author: [PTadmin]
@@ -16,8 +17,8 @@ function ldraw_lib__71075() = [
 // 
 // 0 // Cylinder 2 x 2 Elbow
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 71076a.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__71076a()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__71076a(realsolid)],
 ];
 module ldraw_lib__71075(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__71075(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__71075(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__71075(line=0.2);

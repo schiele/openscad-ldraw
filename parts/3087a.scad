@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/box4.scad>
 use <../p/stud.scad>
-function ldraw_lib__3087a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3087a(realsolid=false) = [
 // 0 ~Window  1 x  1 x  1 Classic with Solid Studs
 // 0 Name: 3087a.dat
 // 0 Author: Tore Eriksson [Tore_Eriksson]
@@ -118,7 +119,7 @@ function ldraw_lib__3087a() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 10 -10 5 0 0 0 0 5 0 5 0 box4.dat
-  [1,16,0,10,-10,5,0,0,0,0,5,0,5,0, ldraw_lib__box4()],
+  [1,16,0,10,-10,5,0,0,0,0,5,0,5,0, ldraw_lib__box4(realsolid)],
 // 4 16 6 18 -5 5 15 -5 5 5 -5 6 3 -5
   [4,16,6,18,-5,5,15,-5,5,5,-5,6,3,-5],
 // 4 16 -6 18 -5 -6 3 -5 -5 5 -5 -5 15 -5
@@ -129,7 +130,7 @@ function ldraw_lib__3087a() = [
   [4,16,6,3,-5,5,5,-5,-5,5,-5,-6,3,-5],
 // 0 outer frame
 // 1 16 0 10 -10 -7 0 0 0 0 7 0 3 0 box4.dat
-  [1,16,0,10,-10,-7,0,0,0,0,7,0,3,0, ldraw_lib__box4()],
+  [1,16,0,10,-10,-7,0,0,0,0,7,0,3,0, ldraw_lib__box4(realsolid)],
 // 0 front frame
 // 4 16 7 17 -10 7 3 -10 5 5 -10 5 15 -10
   [4,16,7,17,-10,7,3,-10,5,5,-10,5,15,-10],
@@ -148,7 +149,7 @@ function ldraw_lib__3087a() = [
 // 4 16 10 0 -7 -10 0 -7 -7 3 -7 7 3 -7
   [4,16,10,0,-7,-10,0,-7,-7,3,-7,7,3,-7],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 stud.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud(realsolid)],
 // 4 16 10 0 10 6 3 10 -6 3 10 -10 0 10
   [4,16,10,0,10,6,3,10,-6,3,10,-10,0,10],
 // 
@@ -160,5 +161,5 @@ function ldraw_lib__3087a() = [
 // 
 ];
 module ldraw_lib__3087a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3087a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3087a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3087a(line=0.2);

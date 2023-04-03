@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3004s01.scad>
-function ldraw_lib__3004ps1() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3004ps1(realsolid=false) = [
 // 0 Brick  1 x  2 with Purple Snake Pattern
 // 0 Name: 3004ps1.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -17,7 +18,7 @@ function ldraw_lib__3004ps1() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3004s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3004s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3004s01(realsolid)],
 // 
 // 3 22 -13.8 17.75 -10 -14.5 16.9 -10 -15.4 18.1 -10
   [3,22,-13.8,17.75,-10,-14.5,16.9,-10,-15.4,18.1,-10],
@@ -281,5 +282,5 @@ function ldraw_lib__3004ps1() = [
   [3,16,12.55,12.15,-10,13.45,2.8,-10,11.85,11.35,-10],
 ];
 module ldraw_lib__3004ps1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3004ps1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3004ps1(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3004ps1(line=0.2);

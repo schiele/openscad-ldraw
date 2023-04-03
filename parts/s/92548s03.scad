@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__92548s03() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__92548s03(realsolid=false) = [
 // 0 ~Spinner Ninjago  6 x  6 x  1.333 Type 1 Top - Helical Groove
 // 0 Name: s\92548s03.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -318,5 +319,5 @@ function ldraw_lib__s__92548s03() = [
   [5,24,0,4.528,26.5,0,4.528,22.5,.7996,4.6464,22.341,-.9417,4.6464,26.3127],
 ];
 module ldraw_lib__s__92548s03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__92548s03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__92548s03(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__92548s03(line=0.2);

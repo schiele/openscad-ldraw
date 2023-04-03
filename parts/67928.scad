@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4cylc.scad>
 use <../p/4-4disc.scad>
 use <s/67928s01.scad>
-function ldraw_lib__67928() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__67928(realsolid=false) = [
 // 0 Animal Wing  2 x  2.5 Feathered with Five Rounded Feathers with 0.5L Bar
 // 0 Name: 67928.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -19,16 +20,16 @@ function ldraw_lib__67928() = [
 // 
 // 
 // 1 16 0 0 0 4 0 0 0 -10 0 0 0 4 4-4cylc.dat
-  [1,16,0,0,0,4,0,0,0,-10,0,0,0,4, ldraw_lib__4_4cylc()],
+  [1,16,0,0,0,4,0,0,0,-10,0,0,0,4, ldraw_lib__4_4cylc(realsolid)],
 // 1 16 0 -10 0 5.7 0 0 0 -3.7 0 0 0 5.7 4-4cylc.dat
-  [1,16,0,-10,0,5.7,0,0,0,-3.7,0,0,0,5.7, ldraw_lib__4_4cylc()],
+  [1,16,0,-10,0,5.7,0,0,0,-3.7,0,0,0,5.7, ldraw_lib__4_4cylc(realsolid)],
 // 1 16 0 -13.7 0 5.7 0 0 0 1 0 0 0 5.7 4-4disc.dat
-  [1,16,0,-13.7,0,5.7,0,0,0,1,0,0,0,5.7, ldraw_lib__4_4disc()],
+  [1,16,0,-13.7,0,5.7,0,0,0,1,0,0,0,5.7, ldraw_lib__4_4disc(realsolid)],
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\67928s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__67928s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__67928s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\67928s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__67928s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__67928s01(realsolid)],
 // 
 // 5 24 0 -21.09 27.16 0 -22.55 27.64 2.07 -21.115 26.975 -2.07 -21.115 26.975
   [5,24,0,-21.09,27.16,0,-22.55,27.64,2.07,-21.115,26.975,-2.07,-21.115,26.975],
@@ -96,5 +97,5 @@ function ldraw_lib__67928() = [
   [5,24,0,-18.96,-3.3,0,-13.7,-3.45,-2.04,-18.22,-2.63,2.04,-18.22,-2.63],
 ];
 module ldraw_lib__67928(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__67928(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__67928(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__67928(line=0.2);

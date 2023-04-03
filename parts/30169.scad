@@ -11,7 +11,8 @@ use <../p/rect.scad>
 use <s/30169s01.scad>
 use <../p/stud2.scad>
 use <../p/stud4.scad>
-function ldraw_lib__30169() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__30169(realsolid=false) = [
 // 0 Animal Scorpion
 // 0 Name: 30169.dat
 // 0 Author: Chris Dee [cwdee]
@@ -29,31 +30,31 @@ function ldraw_lib__30169() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\30169s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30169s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30169s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\30169s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__30169s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__30169s01(realsolid)],
 // 
 // 0 // topside stud
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 stud2.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2(realsolid)],
 // 1 16 0 0 0 4 0 0 0 1 0 0 0 4 4-4disc.dat
-  [1,16,0,0,0,4,0,0,0,1,0,0,0,4, ldraw_lib__4_4disc()],
+  [1,16,0,0,0,4,0,0,0,1,0,0,0,4, ldraw_lib__4_4disc(realsolid)],
 // 0 // underside stud
 // 1 16 0 10 0 1 0 0 0 -1.5 0 0 0 1 stud4.dat
-  [1,16,0,10,0,1,0,0,0,-1.5,0,0,0,1, ldraw_lib__stud4()],
+  [1,16,0,10,0,1,0,0,0,-1.5,0,0,0,1, ldraw_lib__stud4(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 4 0 4 0 0 0 7 0 0 0 4 4-4cylc.dat
-  [1,16,0,4,0,4,0,0,0,7,0,0,0,4, ldraw_lib__4_4cylc()],
+  [1,16,0,4,0,4,0,0,0,7,0,0,0,4, ldraw_lib__4_4cylc(realsolid)],
 // 1 16 0 11 0 6 0 0 0 1 0 0 0 6 4-4edge.dat
-  [1,16,0,11,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4edge()],
+  [1,16,0,11,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 11 0 2 0 0 0 -1 0 0 0 2 4-4ring2.dat
-  [1,16,0,11,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__4_4ring2()],
+  [1,16,0,11,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__4_4ring2(realsolid)],
 // 1 16 0 10 0 8 0 0 0 -1 0 0 0 -8 4-4ndis.dat
-  [1,16,0,10,0,8,0,0,0,-1,0,0,0,-8, ldraw_lib__4_4ndis()],
+  [1,16,0,10,0,8,0,0,0,-1,0,0,0,-8, ldraw_lib__4_4ndis(realsolid)],
 // 0 // top surface
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 -1 2-4ring6.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__2_4ring6()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__2_4ring6(realsolid)],
 // 2 24 5.5 0 8 -5.5 0 8
   [2,24,5.5,0,8,-5.5,0,8],
 // 5 24 0 2 -8 0 0 -7 -2.6789 0 -6.4673 2.6789 0 -6.4673
@@ -67,7 +68,7 @@ function ldraw_lib__30169() = [
   [5,24,0,10,-8,0,2,-8,1.5,10,-8.5,-1.5,10,-8.5],
 // 0 // thorax underside pit
 // 1 16 0 6.5 9 8 0 0 0 0 3.5 0 -1 0 rect.dat
-  [1,16,0,6.5,9,8,0,0,0,0,3.5,0,-1,0, ldraw_lib__rect()],
+  [1,16,0,6.5,9,8,0,0,0,0,3.5,0,-1,0, ldraw_lib__rect(realsolid)],
 // 3 16 -3.5 6 26 0 6.088 26.5 3.5 6 26
   [3,16,-3.5,6,26,0,6.088,26.5,3.5,6,26],
 // 4 16 8 3 9 -8 3 9 -3.5 6 26 3.5 6 26
@@ -153,9 +154,9 @@ function ldraw_lib__30169() = [
   [5,24,0,3,27.75,0,4,27,1.626,3,28.074,-1.626,3,28.074],
 // 0 // tail stem
 // 1 16 0 -10 32 4 0 0 0 12 0 0 0 4 4-4cyli.dat
-  [1,16,0,-10,32,4,0,0,0,12,0,0,0,4, ldraw_lib__4_4cyli()],
+  [1,16,0,-10,32,4,0,0,0,12,0,0,0,4, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 -10 32 0 0 -4 0 -1.5 0 -4 0 0 4-4cylse.dat
-  [1,16,0,-10,32,0,0,-4,0,-1.5,0,-4,0,0, ldraw_lib__4_4cylse()],
+  [1,16,0,-10,32,0,0,-4,0,-1.5,0,-4,0,0, ldraw_lib__4_4cylse(realsolid)],
 // 0 // tail sting
 // 3 16 1.667 -10.5 23.417 0 -12.857 25.381 0.98 -13.091 25.576
   [3,16,1.667,-10.5,23.417,0,-12.857,25.381,0.98,-13.091,25.576],
@@ -234,5 +235,5 @@ function ldraw_lib__30169() = [
   [5,24,0,-16.633,33.349,0,-17,32.333,1.379,-16.43,33.075,-1.163,-16.806,32.102],
 ];
 module ldraw_lib__30169(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__30169(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__30169(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__30169(line=0.2);

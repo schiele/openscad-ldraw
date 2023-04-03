@@ -2,7 +2,8 @@ use <../../lib.scad>
 use <../../p/1-4chrd.scad>
 use <../../p/1-8chrd.scad>
 use <../../p/4-4ndis.scad>
-function ldraw_lib__s__3068p68a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__3068p68a(realsolid=false) = [
 // 0 ~Pattern MTron Logo
 // 0 Name: s\3068p68a.dat
 // 0 Author: Steffen [Steffen]
@@ -23,17 +24,17 @@ function ldraw_lib__s__3068p68a() = [
 // 
 // 
 // 1 16 0 0 0 -18.5 0 0 0 1 0 0 0 18.5 4-4ndis.dat
-  [1,16,0,0,0,-18.5,0,0,0,1,0,0,0,18.5, ldraw_lib__4_4ndis()],
+  [1,16,0,0,0,-18.5,0,0,0,1,0,0,0,18.5, ldraw_lib__4_4ndis(realsolid)],
 // 1 0 0 0 0 -18.5 0 0 0 1 0 0 0 18.5 1-4chrd.dat
-  [1,0,0,0,0,-18.5,0,0,0,1,0,0,0,18.5, ldraw_lib__1_4chrd()],
+  [1,0,0,0,0,-18.5,0,0,0,1,0,0,0,18.5, ldraw_lib__1_4chrd(realsolid)],
 // 1 0 0 0 0 0 0 18.5 0 1 0 18.5 0 0 1-4chrd.dat
-  [1,0,0,0,0,0,0,18.5,0,1,0,18.5,0,0, ldraw_lib__1_4chrd()],
+  [1,0,0,0,0,0,0,18.5,0,1,0,18.5,0,0, ldraw_lib__1_4chrd(realsolid)],
 // 1 0 0 0 0 13.0815 0 -13.0815 0 1 0 -13.0815 0 -13.0815 1-4chrd.dat
-  [1,0,0,0,0,13.0815,0,-13.0815,0,1,0,-13.0815,0,-13.0815, ldraw_lib__1_4chrd()],
+  [1,0,0,0,0,13.0815,0,-13.0815,0,1,0,-13.0815,0,-13.0815, ldraw_lib__1_4chrd(realsolid)],
 // 1 0 0 0 0 18.5 0 0 0 1 0 0 0 -18.5 1-8chrd.dat
-  [1,0,0,0,0,18.5,0,0,0,1,0,0,0,-18.5, ldraw_lib__1_8chrd()],
+  [1,0,0,0,0,18.5,0,0,0,1,0,0,0,-18.5, ldraw_lib__1_8chrd(realsolid)],
 // 1 0 0 0 0 -13.0815 0 -13.0815 0 1 0 -13.0815 0 13.0815 1-8chrd.dat
-  [1,0,0,0,0,-13.0815,0,-13.0815,0,1,0,-13.0815,0,13.0815, ldraw_lib__1_8chrd()],
+  [1,0,0,0,0,-13.0815,0,-13.0815,0,1,0,-13.0815,0,13.0815, ldraw_lib__1_8chrd(realsolid)],
 // 
 // 3 0 -18.5 0 0 -13.0815 0 -13.0815 -14.85 0 -7.25
   [3,0,-18.5,0,0,-13.0815,0,-13.0815,-14.85,0,-7.25],
@@ -183,5 +184,5 @@ function ldraw_lib__s__3068p68a() = [
   [4,15,7.97,0,7.25,7.22,0,6.02,12.86,0,-6.02,14.85,0,-7.25],
 ];
 module ldraw_lib__s__3068p68a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__3068p68a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__3068p68a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__3068p68a(line=0.2);

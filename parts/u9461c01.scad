@@ -3,7 +3,8 @@ use <s/23816s01.scad>
 use <u9460.scad>
 use <u9461.scad>
 use <u9463.scad>
-function ldraw_lib__u9461c01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__u9461c01(realsolid=false) = [
 // 0 Electric Spike Prime Force Sensor Body
 // 0 Name: u9461c01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -18,15 +19,15 @@ function ldraw_lib__u9461c01() = [
 // 
 // 
 // 1 16 0 0 -40 1 0 0 0 1 0 0 0 1 u9461.dat
-  [1,16,0,0,-40,1,0,0,0,1,0,0,0,1, ldraw_lib__u9461()],
+  [1,16,0,0,-40,1,0,0,0,1,0,0,0,1, ldraw_lib__u9461(realsolid)],
 // 1 0 0 0 40 1 0 0 0 1 0 0 0 1 u9463.dat
-  [1,0,0,0,40,1,0,0,0,1,0,0,0,1, ldraw_lib__u9463()],
+  [1,0,0,0,40,1,0,0,0,1,0,0,0,1, ldraw_lib__u9463(realsolid)],
 // 1 0 0 0 40 1 0 0 0 1 0 0 0 1 u9460.dat
-  [1,0,0,0,40,1,0,0,0,1,0,0,0,1, ldraw_lib__u9460()],
+  [1,0,0,0,40,1,0,0,0,1,0,0,0,1, ldraw_lib__u9460(realsolid)],
 // 
 // 0 // Cable stub
 // 1 511 0 0 43 0 0 1 -1 0 0 0 -1 0 s\23816s01.dat
-  [1,511,0,0,43,0,0,1,-1,0,0,0,-1,0, ldraw_lib__s__23816s01()],
+  [1,511,0,0,43,0,0,1,-1,0,0,0,-1,0, ldraw_lib__s__23816s01(realsolid)],
 // 0 // See through blockers
 // 4 511 -10 2.5 42 -10 -2.5 42 10 -2.5 42 10 2.5 42
   [4,511,-10,2.5,42,-10,-2.5,42,10,-2.5,42,10,2.5,42],
@@ -44,5 +45,5 @@ function ldraw_lib__u9461c01() = [
   [4,0,-27,10,-11.5,-12,10,-11.5,-12,10,-27.5,-27,10,-27.5],
 ];
 module ldraw_lib__u9461c01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__u9461c01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__u9461c01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__u9461c01(line=0.2);

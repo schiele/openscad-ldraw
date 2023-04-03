@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <logosantanders01a.scad>
 use <logosantanders01b.scad>
-function ldraw_lib__s__logosantanders01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__logosantanders01(realsolid=false) = [
 // 0 ~Logo Santander Text White with Background
 // 0 Name: s\logosantanders01.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -18,10 +19,10 @@ function ldraw_lib__s__logosantanders01() = [
 // 
 // 
 // 1 15 0 0 0 1 0 0 0 1 0 0 0 1 s\logosantanders01a.dat
-  [1,15,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__logosantanders01a()],
+  [1,15,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__logosantanders01a(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\logosantanders01b.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__logosantanders01b()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__logosantanders01b(realsolid)],
 ];
 module ldraw_lib__s__logosantanders01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__logosantanders01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__logosantanders01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__logosantanders01(line=0.2);

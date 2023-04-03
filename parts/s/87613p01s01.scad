@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__87613p01s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__87613p01s01(realsolid=false) = [
 // 0 ~Plane Front  6 x 10 x  4 with Metallic Silver and Red Bird Airline Logo - Pattern
 // 0 Name: s\87613p01s01.dat
 // 0 Author: Bertrand Lequy [Berth]
@@ -381,5 +382,5 @@ function ldraw_lib__s__87613p01s01() = [
   [3,4,57.3755,90.3712,-63.6661,57.3109,90.1099,-64.3026,57.2769,95,-64.4997],
 ];
 module ldraw_lib__s__87613p01s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__87613p01s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__87613p01s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__87613p01s01(line=0.2);

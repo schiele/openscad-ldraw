@@ -6,7 +6,8 @@ use <../p/4-4edge.scad>
 use <../p/4-4ring3.scad>
 use <../p/8-8sphe.scad>
 use <../p/stud28.scad>
-function ldraw_lib__51708() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__51708(realsolid=false) = [
 // 0 Duplo Flagpole / Antenna  1 x  9
 // 0 Name: 51708.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -24,27 +25,27 @@ function ldraw_lib__51708() = [
 // 
 // 
 // 1 16 0 -8 0 6 0 0 0 -283 0 0 0 6 4-4cyli.dat
-  [1,16,0,-8,0,6,0,0,0,-283,0,0,0,6, ldraw_lib__4_4cyli()],
+  [1,16,0,-8,0,6,0,0,0,-283,0,0,0,6, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 -8 0 6 0 0 0 -1 0 0 0 6 4-4edge.dat
-  [1,16,0,-8,0,6,0,0,0,-1,0,0,0,6, ldraw_lib__4_4edge()],
+  [1,16,0,-8,0,6,0,0,0,-1,0,0,0,6, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 -8 0 2 0 0 0 1 0 0 0 2 4-4ring3.dat
-  [1,16,0,-8,0,2,0,0,0,1,0,0,0,2, ldraw_lib__4_4ring3()],
+  [1,16,0,-8,0,2,0,0,0,1,0,0,0,2, ldraw_lib__4_4ring3(realsolid)],
 // 1 16 0 -8 0 8 0 0 0 -1 0 0 0 8 4-4edge.dat
-  [1,16,0,-8,0,8,0,0,0,-1,0,0,0,8, ldraw_lib__4_4edge()],
+  [1,16,0,-8,0,8,0,0,0,-1,0,0,0,8, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 -4 0 0 0 1 stud28.dat
-  [1,16,0,0,0,-1,0,0,0,-4,0,0,0,1, ldraw_lib__stud28()],
+  [1,16,0,0,0,-1,0,0,0,-4,0,0,0,1, ldraw_lib__stud28(realsolid)],
 // 1 16 0 0 0 8 0 0 0 -8 0 0 0 8 4-4con1.dat
-  [1,16,0,0,0,8,0,0,0,-8,0,0,0,8, ldraw_lib__4_4con1()],
+  [1,16,0,0,0,8,0,0,0,-8,0,0,0,8, ldraw_lib__4_4con1(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 2 0 7 0 0 0 -6 0 0 0 7 4-4con1.dat
-  [1,16,0,2,0,7,0,0,0,-6,0,0,0,7, ldraw_lib__4_4con1()],
+  [1,16,0,2,0,7,0,0,0,-6,0,0,0,7, ldraw_lib__4_4con1(realsolid)],
 // 1 16 0 -4 0 7 0 0 0 -1 0 0 0 7 4-4edge.dat
-  [1,16,0,-4,0,7,0,0,0,-1,0,0,0,7, ldraw_lib__4_4edge()],
+  [1,16,0,-4,0,7,0,0,0,-1,0,0,0,7, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 -4 0 7 0 0 0 -1 0 0 0 7 4-4disc.dat
-  [1,16,0,-4,0,7,0,0,0,-1,0,0,0,7, ldraw_lib__4_4disc()],
+  [1,16,0,-4,0,7,0,0,0,-1,0,0,0,7, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 -301.6 0 13 0 0 0 13 0 0 0 13 8-8sphe.dat
-  [1,16,0,-301.6,0,13,0,0,0,13,0,0,0,13, ldraw_lib__8_8sphe()],
+  [1,16,0,-301.6,0,13,0,0,0,13,0,0,0,13, ldraw_lib__8_8sphe(realsolid)],
 // 2 24 5.5434 -290.5047 2.2962 6 -290.2743 0
   [2,24,5.5434,-290.5047,2.2962,6,-290.2743,0],
 // 2 24 5.315 -290.4318 2.638 5.5434 -290.5047 2.2962
@@ -143,5 +144,5 @@ function ldraw_lib__51708() = [
   [2,24,-12,1.13293,-4.97067,-12,1.99696,-6.75],
 ];
 module ldraw_lib__51708(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__51708(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__51708(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__51708(line=0.2);

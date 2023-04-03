@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/1-4ndis.scad>
-function ldraw_lib__s__32067s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__32067s01(realsolid=false) = [
 // 0 ~Technic Competition Cannon with Round Bottom Front Cover 1/4
 // 0 Name: s\32067s01.dat
 // 0 Author: Santeri Piippo [arezey]
@@ -119,7 +120,7 @@ function ldraw_lib__s__32067s01() = [
 // 2 24 14.6946 -12 10 7.1858 -12 10
   [2,24,14.6946,-12,10,7.1858,-12,10],
 // 1 16 0 -11 3 2 0 0 0 0 -2 0 -1 0 1-4ndis.dat
-  [1,16,0,-11,3,2,0,0,0,0,-2,0,-1,0, ldraw_lib__1_4ndis()],
+  [1,16,0,-11,3,2,0,0,0,0,-2,0,-1,0, ldraw_lib__1_4ndis(realsolid)],
 // 4 16 0 -18 10 0 -19 10 2.4795 -18.8366 10 2.349 -17.8452 10
   [4,16,0,-18,10,0,-19,10,2.4795,-18.8366,10,2.349,-17.8452,10],
 // 4 16 2.349 -17.8452 10 2.4795 -18.8366 10 4.9172 -18.3521 10 4.6584 -17.3862 10
@@ -329,5 +330,5 @@ function ldraw_lib__s__32067s01() = [
 // 0 //
 ];
 module ldraw_lib__s__32067s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__32067s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__32067s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__32067s01(line=0.2);

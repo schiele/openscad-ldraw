@@ -9,7 +9,8 @@ use <../p/4-4ring2.scad>
 use <../p/4-4ring4.scad>
 use <../p/4-4ring6.scad>
 use <../p/4-4ring8.scad>
-function ldraw_lib__2927() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2927(realsolid=false) = [
 // 0 Train Wheel Tiny
 // 0 Name: 2927.dat
 // 0 Author: James Jessiman
@@ -27,50 +28,50 @@ function ldraw_lib__2927() = [
 // 
 // 
 // 1 16 0 0 8 18 0 0 0 0 18 0 1 0 4-4edge.dat
-  [1,16,0,0,8,18,0,0,0,0,18,0,1,0, ldraw_lib__4_4edge()],
+  [1,16,0,0,8,18,0,0,0,0,18,0,1,0, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 0 8 16 0 0 0 0 16 0 1 0 4-4edge.dat
-  [1,16,0,0,8,16,0,0,0,0,16,0,1,0, ldraw_lib__4_4edge()],
+  [1,16,0,0,8,16,0,0,0,0,16,0,1,0, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 0 6 17 0 0 0 0 17 0 1 0 4-4edge.dat
-  [1,16,0,0,6,17,0,0,0,0,17,0,1,0, ldraw_lib__4_4edge()],
+  [1,16,0,0,6,17,0,0,0,0,17,0,1,0, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 0 8 1 0 0 0 0 -1 0 -2 0 4-4con17.dat
-  [1,16,0,0,8,1,0,0,0,0,-1,0,-2,0, ldraw_lib__4_4con17()],
+  [1,16,0,0,8,1,0,0,0,0,-1,0,-2,0, ldraw_lib__4_4con17(realsolid)],
 // 1 16 0 0 6 8.5 0 0 0 0 -8.5 0 -2.42857 0 4-4con1.dat
-  [1,16,0,0,6,8.5,0,0,0,0,-8.5,0,-2.42857,0, ldraw_lib__4_4con1()],
+  [1,16,0,0,6,8.5,0,0,0,0,-8.5,0,-2.42857,0, ldraw_lib__4_4con1(realsolid)],
 // 1 16 0 0 4 10 0 0 0 0 10 0 -8 0 4-4cylo.dat
-  [1,16,0,0,4,10,0,0,0,0,10,0,-8,0, ldraw_lib__4_4cylo()],
+  [1,16,0,0,4,10,0,0,0,0,10,0,-8,0, ldraw_lib__4_4cylo(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 8 4 0 0 0 0 4 0 -10 0 4-4cylo.dat
-  [1,16,0,0,8,4,0,0,0,0,4,0,-10,0, ldraw_lib__4_4cylo()],
+  [1,16,0,0,8,4,0,0,0,0,4,0,-10,0, ldraw_lib__4_4cylo(realsolid)],
 // 1 16 0 0 8 2 0 0 0 0 2 0 -1 0 4-4ring8.dat
-  [1,16,0,0,8,2,0,0,0,0,2,0,-1,0, ldraw_lib__4_4ring8()],
+  [1,16,0,0,8,2,0,0,0,0,2,0,-1,0, ldraw_lib__4_4ring8(realsolid)],
 // 1 16 0 0 8 2 0 0 0 0 2 0 -1 0 4-4ring2.dat
-  [1,16,0,0,8,2,0,0,0,0,2,0,-1,0, ldraw_lib__4_4ring2()],
+  [1,16,0,0,8,2,0,0,0,0,2,0,-1,0, ldraw_lib__4_4ring2(realsolid)],
 // 1 16 0 0 8 6 0 0 0 0 6 0 -2 0 4-4cylo.dat
-  [1,16,0,0,8,6,0,0,0,0,6,0,-2,0, ldraw_lib__4_4cylo()],
+  [1,16,0,0,8,6,0,0,0,0,6,0,-2,0, ldraw_lib__4_4cylo(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 7.2 6 0 0 0 0 -6 0 -1.2 0 4-4con1.dat
-  [1,16,0,0,7.2,6,0,0,0,0,-6,0,-1.2,0, ldraw_lib__4_4con1()],
+  [1,16,0,0,7.2,6,0,0,0,0,-6,0,-1.2,0, ldraw_lib__4_4con1(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 8 4 0 0 0 0 -4 0 -0.8 0 4-4con3.dat
-  [1,16,0,0,8,4,0,0,0,0,-4,0,-0.8,0, ldraw_lib__4_4con3()],
+  [1,16,0,0,8,4,0,0,0,0,-4,0,-0.8,0, ldraw_lib__4_4con3(realsolid)],
 // 1 16 0 0 -4 8 0 0 0 0 8 0 1 0 4-4edge.dat
-  [1,16,0,0,-4,8,0,0,0,0,8,0,1,0, ldraw_lib__4_4edge()],
+  [1,16,0,0,-4,8,0,0,0,0,8,0,1,0, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 0 -2 7 0 0 0 0 7 0 1 0 4-4edge.dat
-  [1,16,0,0,-2,7,0,0,0,0,7,0,1,0, ldraw_lib__4_4edge()],
+  [1,16,0,0,-2,7,0,0,0,0,7,0,1,0, ldraw_lib__4_4edge(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 -4 1 0 0 0 0 -1 0 2 0 4-4con7.dat
-  [1,16,0,0,-4,1,0,0,0,0,-1,0,2,0, ldraw_lib__4_4con7()],
+  [1,16,0,0,-4,1,0,0,0,0,-1,0,2,0, ldraw_lib__4_4con7(realsolid)],
 // 1 16 0 0 -2 2 0 0 0 0 2 0 1 0 4-4ring2.dat
-  [1,16,0,0,-2,2,0,0,0,0,2,0,1,0, ldraw_lib__4_4ring2()],
+  [1,16,0,0,-2,2,0,0,0,0,2,0,1,0, ldraw_lib__4_4ring2(realsolid)],
 // 1 16 0 0 -4 2 0 0 0 0 2 0 1 0 4-4ring4.dat
-  [1,16,0,0,-4,2,0,0,0,0,2,0,1,0, ldraw_lib__4_4ring4()],
+  [1,16,0,0,-4,2,0,0,0,0,2,0,1,0, ldraw_lib__4_4ring4(realsolid)],
 // 1 16 0 0 -2 1 0 0 0 0 1 0 1 0 4-4ring6.dat
-  [1,16,0,0,-2,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4ring6()],
+  [1,16,0,0,-2,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4ring6(realsolid)],
 ];
 module ldraw_lib__2927(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2927(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2927(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2927(line=0.2);

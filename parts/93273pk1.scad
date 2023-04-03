@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/93273s01.scad>
-function ldraw_lib__93273pk1() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__93273pk1(realsolid=false) = [
 // 0 Slope Brick Curved  4 x  1 Double with Smiling Mouth and Metallic Silver Bumper Pattern
 // 0 Name: 93273pk1.dat
 // 0 Author: Damien Roux [Darats]
@@ -17,7 +18,7 @@ function ldraw_lib__93273pk1() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\93273s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__93273s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__93273s01(realsolid)],
 // 
 // 4 0 -8.3 -14.619 -14.531 -8.36 -14.615 -14.563 -8.227 -14.61 -14.594 -8.257 -14.617 -14.545
   [4,0,-8.3,-14.619,-14.531,-8.36,-14.615,-14.563,-8.227,-14.61,-14.594,-8.257,-14.617,-14.545],
@@ -1213,5 +1214,5 @@ function ldraw_lib__93273pk1() = [
   [5,24,-10,-7.532,34.436,10,-7.532,34.436,-10,-10.51,28.284,-10,-4,40],
 ];
 module ldraw_lib__93273pk1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__93273pk1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__93273pk1(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__93273pk1(line=0.2);

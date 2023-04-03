@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__4533401f() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4533401f(realsolid=false) = [
 // 0 Sticker  2.5 x  3.6 with White Landing Arrow
 // 0 Name: 4533401f.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -17,7 +18,7 @@ function ldraw_lib__4533401f() = [
 // 
 // 
 // 1 16 0 -0.25 0 36.25 0 0 0 0.25 0 0 0 25 box5-12.dat
-  [1,16,0,-0.25,0,36.25,0,0,0,0.25,0,0,0,25, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,36.25,0,0,0,0.25,0,0,0,25, ldraw_lib__box5_12(realsolid)],
 // 4 15 0.1 -0.25 25 -34 -0.25 25 0.1 -0.25 0 34 -0.25 0
   [4,15,0.1,-0.25,25,-34,-0.25,25,0.1,-0.25,0,34,-0.25,0],
 // 4 15 0.1 -0.25 0 -34 -0.25 -25 0.1 -0.25 -25 34 -0.25 0
@@ -34,5 +35,5 @@ function ldraw_lib__4533401f() = [
   [3,16,34,-0.25,0,0.1,-0.25,-25,36.25,-0.25,-25],
 ];
 module ldraw_lib__4533401f(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4533401f(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4533401f(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4533401f(line=0.2);

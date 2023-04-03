@@ -12,7 +12,8 @@ use <../p/4-4ring8.scad>
 use <../p/stud4o.scad>
 use <../p/t04o1429.scad>
 use <../p/t04o5000.scad>
-function ldraw_lib__2343() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2343(realsolid=false) = [
 // 0 Minifig Goblet
 // 0 Name: 2343.dat
 // 0 Author: James Jessiman
@@ -40,68 +41,68 @@ function ldraw_lib__2343() = [
 // 
 // 
 // 1 16 0 36 0 1 0 0 0 -1 0 0 0 1 stud4o.dat
-  [1,16,0,36,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4o()],
+  [1,16,0,36,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4o(realsolid)],
 // 1 16 0 40 0 1 0 0 0 -1 0 0 0 1 4-4ring8.dat
-  [1,16,0,40,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__4_4ring8()],
+  [1,16,0,40,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__4_4ring8(realsolid)],
 // 1 16 0 40 0 9 0 0 0 1 0 0 0 9 4-4edge.dat
-  [1,16,0,40,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4edge()],
+  [1,16,0,40,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4edge(realsolid)],
 // 
 // 1 16 0 36 0 9 0 0 0 4 0 0 0 9 4-4cyli.dat
-  [1,16,0,36,0,9,0,0,0,4,0,0,0,9, ldraw_lib__4_4cyli()],
+  [1,16,0,36,0,9,0,0,0,4,0,0,0,9, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 36 0 6 0 0 0 -8 0 0 0 6 t04o5000.dat
-  [1,16,0,36,0,6,0,0,0,-8,0,0,0,6, ldraw_lib__t04o5000()],
+  [1,16,0,36,0,6,0,0,0,-8,0,0,0,6, ldraw_lib__t04o5000(realsolid)],
 // 1 16 0 36 0 0 0 6 0 -8 0 -6 0 0 t04o5000.dat
-  [1,16,0,36,0,0,0,6,0,-8,0,-6,0,0, ldraw_lib__t04o5000()],
+  [1,16,0,36,0,0,0,6,0,-8,0,-6,0,0, ldraw_lib__t04o5000(realsolid)],
 // 1 16 0 36 0 -6 0 0 0 -8 0 0 0 -6 t04o5000.dat
-  [1,16,0,36,0,-6,0,0,0,-8,0,0,0,-6, ldraw_lib__t04o5000()],
+  [1,16,0,36,0,-6,0,0,0,-8,0,0,0,-6, ldraw_lib__t04o5000(realsolid)],
 // 1 16 0 36 0 0 0 -6 0 -8 0 6 0 0 t04o5000.dat
-  [1,16,0,36,0,0,0,-6,0,-8,0,6,0,0, ldraw_lib__t04o5000()],
+  [1,16,0,36,0,0,0,-6,0,-8,0,6,0,0, ldraw_lib__t04o5000(realsolid)],
 // 1 16 0 32 0 2 0 0 0 1 0 0 0 2 4-4ring2.dat
-  [1,16,0,32,0,2,0,0,0,1,0,0,0,2, ldraw_lib__4_4ring2()],
+  [1,16,0,32,0,2,0,0,0,1,0,0,0,2, ldraw_lib__4_4ring2(realsolid)],
 // 
 // 1 16 0 18 0 4 0 0 0 14 0 0 0 4 4-4cylo.dat
-  [1,16,0,18,0,4,0,0,0,14,0,0,0,4, ldraw_lib__4_4cylo()],
+  [1,16,0,18,0,4,0,0,0,14,0,0,0,4, ldraw_lib__4_4cylo(realsolid)],
 // 
 // 1 16 0 18 0 2 0 0 0 -1 0 0 0 2 4-4ring2.dat
-  [1,16,0,18,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__4_4ring2()],
+  [1,16,0,18,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__4_4ring2(realsolid)],
 // 1 16 0 18 0 1 0 0 0 -1 0 0 0 1 4-4ring6.dat
-  [1,16,0,18,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__4_4ring6()],
+  [1,16,0,18,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__4_4ring6(realsolid)],
 // 1 16 0 17 0 7 0 0 0 7 0 0 0 7 t04o1429.dat
-  [1,16,0,17,0,7,0,0,0,7,0,0,0,7, ldraw_lib__t04o1429()],
+  [1,16,0,17,0,7,0,0,0,7,0,0,0,7, ldraw_lib__t04o1429(realsolid)],
 // 1 16 0 17 0 0 0 -7 0 7 0 7 0 0 t04o1429.dat
-  [1,16,0,17,0,0,0,-7,0,7,0,7,0,0, ldraw_lib__t04o1429()],
+  [1,16,0,17,0,0,0,-7,0,7,0,7,0,0, ldraw_lib__t04o1429(realsolid)],
 // 1 16 0 17 0 -7 0 0 0 7 0 0 0 -7 t04o1429.dat
-  [1,16,0,17,0,-7,0,0,0,7,0,0,0,-7, ldraw_lib__t04o1429()],
+  [1,16,0,17,0,-7,0,0,0,7,0,0,0,-7, ldraw_lib__t04o1429(realsolid)],
 // 1 16 0 17 0 0 0 7 0 7 0 -7 0 0 t04o1429.dat
-  [1,16,0,17,0,0,0,7,0,7,0,-7,0,0, ldraw_lib__t04o1429()],
+  [1,16,0,17,0,0,0,7,0,7,0,-7,0,0, ldraw_lib__t04o1429(realsolid)],
 // 1 16 0 0 0 2 0 0 0 17 0 0 0 2 4-4con4.dat
-  [1,16,0,0,0,2,0,0,0,17,0,0,0,2, ldraw_lib__4_4con4()],
+  [1,16,0,0,0,2,0,0,0,17,0,0,0,2, ldraw_lib__4_4con4(realsolid)],
 // 
 // 1 16 0 0 0 2 0 0 0 1 0 0 0 2 4-4ring4.dat
-  [1,16,0,0,0,2,0,0,0,1,0,0,0,2, ldraw_lib__4_4ring4()],
+  [1,16,0,0,0,2,0,0,0,1,0,0,0,2, ldraw_lib__4_4ring4(realsolid)],
 // 1 16 0 0 0 10 0 0 0 1 0 0 0 10 4-4edge.dat
-  [1,16,0,0,0,10,0,0,0,1,0,0,0,10, ldraw_lib__4_4edge()],
+  [1,16,0,0,0,10,0,0,0,1,0,0,0,10, ldraw_lib__4_4edge(realsolid)],
 // 
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 5 0 -8 0 0 0 -5 0 0 0 8 4-4cylo.dat
-  [1,16,0,5,0,-8,0,0,0,-5,0,0,0,8, ldraw_lib__4_4cylo()],
+  [1,16,0,5,0,-8,0,0,0,-5,0,0,0,8, ldraw_lib__4_4cylo(realsolid)],
 // 
 // 1 16 0 5 0 0.5 0 0 0 1 0 0 0 0.5 4-4rin15.dat
-  [1,16,0,5,0,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__4_4rin15()],
+  [1,16,0,5,0,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__4_4rin15(realsolid)],
 // 1 16 0 5 0 7.5 0 0 0 1 0 0 0 7.5 4-4edge.dat
-  [1,16,0,5,0,7.5,0,0,0,1,0,0,0,7.5, ldraw_lib__4_4edge()],
+  [1,16,0,5,0,7.5,0,0,0,1,0,0,0,7.5, ldraw_lib__4_4edge(realsolid)],
 // 
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 5 0 1.5 0 0 0 11 0 0 0 1.5 4-4con4.dat
-  [1,16,0,5,0,1.5,0,0,0,11,0,0,0,1.5, ldraw_lib__4_4con4()],
+  [1,16,0,5,0,1.5,0,0,0,11,0,0,0,1.5, ldraw_lib__4_4con4(realsolid)],
 // 
 // 1 16 0 16 0 6 0 0 0 1 0 0 0 6 4-4disc.dat
-  [1,16,0,16,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4disc()],
+  [1,16,0,16,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 16 0 6 0 0 0 1 0 0 0 6 4-4edge.dat
-  [1,16,0,16,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4edge()],
+  [1,16,0,16,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4edge(realsolid)],
 ];
 module ldraw_lib__2343(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2343(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2343(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2343(line=0.2);

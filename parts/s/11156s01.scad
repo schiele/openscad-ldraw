@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__11156s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__11156s01(realsolid=false) = [
 // 0 ~Minifig Weapon Blade  3.4 L with Bar  3.6 L - Blade
 // 0 Name: s\11156s01.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -679,5 +680,5 @@ function ldraw_lib__s__11156s01() = [
   [5,24,1.885,-136.632,15.571,1.5,-138.814,13.795,1.885,-130.421,11.049,1.885,-139.143,17.946],
 ];
 module ldraw_lib__s__11156s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__11156s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__11156s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__11156s01(line=0.2);

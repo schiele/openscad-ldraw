@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/2431s01.scad>
-function ldraw_lib__2431pt7() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2431pt7(realsolid=false) = [
 // 0 Tile  1 x  4 with White "POLICE" with Black Outline Pattern
 // 0 Name: 2431pt7.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -17,7 +18,7 @@ function ldraw_lib__2431pt7() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2431s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2431s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2431s01(realsolid)],
 // 4 15 4.2 0 4.9 4.2 0 -5.7 7 0 -5.7 7 0 4.9
   [4,15,4.2,0,4.9,4.2,0,-5.7,7,0,-5.7,7,0,4.9],
 // 4 0 3.7 0 5.4 4.2 0 4.9 7 0 4.9 7.5 0 5.4
@@ -592,5 +593,5 @@ function ldraw_lib__2431pt7() = [
   [3,16,20.6,0,-6.2,40,0,-10,28.9,0,-6.2],
 ];
 module ldraw_lib__2431pt7(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2431pt7(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2431pt7(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2431pt7(line=0.2);

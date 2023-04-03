@@ -5,7 +5,8 @@ use <../p/4-4ering.scad>
 use <../p/7-16chrd.scad>
 use <../p/7-16ndis.scad>
 use <s/98138s02.scad>
-function ldraw_lib__98138p2c() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__98138p2c(realsolid=false) = [
 // 0 Tile  1 x  1 Round with Abstract Black Eye and Lid Half Closed Pattern
 // 0 Name: 98138p2c.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -24,23 +25,23 @@ function ldraw_lib__98138p2c() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\98138s02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s02(realsolid)],
 // 1 16 0 0 0 10 0 0 0 1 0 0 0 10 4-4ering.dat
-  [1,16,0,0,0,10,0,0,0,1,0,0,0,10, ldraw_lib__4_4ering()],
+  [1,16,0,0,0,10,0,0,0,1,0,0,0,10, ldraw_lib__4_4ering(realsolid)],
 // 
 // 1 0 0 0 -2.4 4 0 0 0 1 0 0 0 -4 2-4chrd.dat
-  [1,0,0,0,-2.4,4,0,0,0,1,0,0,0,-4, ldraw_lib__2_4chrd()],
+  [1,0,0,0,-2.4,4,0,0,0,1,0,0,0,-4, ldraw_lib__2_4chrd(realsolid)],
 // 1 16 0 0 -2.4 4 0 0 0 1 0 0 0 -4 2-4ndis.dat
-  [1,16,0,0,-2.4,4,0,0,0,1,0,0,0,-4, ldraw_lib__2_4ndis()],
+  [1,16,0,0,-2.4,4,0,0,0,1,0,0,0,-4, ldraw_lib__2_4ndis(realsolid)],
 // 
 // 1 0 3.7 0 3.3 0 0 1.6 0 1 0 1.6 0 0 7-16chrd.dat
-  [1,0,3.7,0,3.3,0,0,1.6,0,1,0,1.6,0,0, ldraw_lib__7_16chrd()],
+  [1,0,3.7,0,3.3,0,0,1.6,0,1,0,1.6,0,0, ldraw_lib__7_16chrd(realsolid)],
 // 1 16 3.7 0 3.3 0 0 1.6 0 1 0 1.6 0 0 7-16ndis.dat
-  [1,16,3.7,0,3.3,0,0,1.6,0,1,0,1.6,0,0, ldraw_lib__7_16ndis()],
+  [1,16,3.7,0,3.3,0,0,1.6,0,1,0,1.6,0,0, ldraw_lib__7_16ndis(realsolid)],
 // 1 0 -3.7 0 3.3 0 0 -1.6 0 1 0 1.6 0 0 7-16chrd.dat
-  [1,0,-3.7,0,3.3,0,0,-1.6,0,1,0,1.6,0,0, ldraw_lib__7_16chrd()],
+  [1,0,-3.7,0,3.3,0,0,-1.6,0,1,0,1.6,0,0, ldraw_lib__7_16chrd(realsolid)],
 // 1 16 -3.7 0 3.3 0 0 -1.6 0 1 0 1.6 0 0 7-16ndis.dat
-  [1,16,-3.7,0,3.3,0,0,-1.6,0,1,0,1.6,0,0, ldraw_lib__7_16ndis()],
+  [1,16,-3.7,0,3.3,0,0,-1.6,0,1,0,1.6,0,0, ldraw_lib__7_16ndis(realsolid)],
 // 4 0 -4 0 1.7597 -4 0 -2.4 4 0 -2.4 4 0 1.7597
   [4,0,-4,0,1.7597,-4,0,-2.4,4,0,-2.4,4,0,1.7597],
 // 3 0 -4.31232 0 1.82176 -4 0 1.7597 -3.7 0 4.9
@@ -86,5 +87,5 @@ function ldraw_lib__98138p2c() = [
   [3,16,0,0,10,-3.827,0,9.239,3.827,0,9.239],
 ];
 module ldraw_lib__98138p2c(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__98138p2c(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__98138p2c(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__98138p2c(line=0.2);

@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__t04q7143() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__t04q7143(realsolid=false) = [
 // 0 Torus Tube  1 x 0.7143 x 0.25
 // 0 Name: t04q7143.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -448,5 +449,5 @@ function ldraw_lib__t04q7143() = [
 // 0 // Build by Primitive Generator 2
 ];
 module ldraw_lib__t04q7143(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__t04q7143(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__t04q7143(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__t04q7143(line=0.2);

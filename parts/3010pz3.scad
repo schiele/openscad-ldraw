@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3010s01.scad>
-function ldraw_lib__3010pz3() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3010pz3(realsolid=false) = [
 // 0 Brick  1 x  4 with Black Line, Light Orange Skull and Magenta Pockets Pattern
 // 0 Name: 3010pz3.dat
 // 0 Author: Damien Roux [Darats]
@@ -17,7 +18,7 @@ function ldraw_lib__3010pz3() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3010s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3010s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3010s01(realsolid)],
 // 4 0 -36.756 12.11 -10 -37.879 19.245 -10 -36.271 18.113 -10 -35.587 13.767 -10
   [4,0,-36.756,12.11,-10,-37.879,19.245,-10,-36.271,18.113,-10,-35.587,13.767,-10],
 // 3 0 -31.459 17 -10 -29.528 19.397 -10 -29.821 17.177 -10
@@ -579,5 +580,5 @@ function ldraw_lib__3010pz3() = [
 // 0
 ];
 module ldraw_lib__3010pz3(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3010pz3(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3010pz3(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3010pz3(line=0.2);

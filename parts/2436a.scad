@@ -5,7 +5,8 @@ use <../p/box5-1.scad>
 use <../p/stud3.scad>
 use <../p/stug-2x1.scad>
 use <../p/stug2-4x1.scad>
-function ldraw_lib__2436a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2436a(realsolid=false) = [
 // 0 Bracket  1 x  2 -  1 x  4 with Square Corners
 // 0 Name: 2436a.dat
 // 0 Author: James Jessiman
@@ -30,15 +31,15 @@ function ldraw_lib__2436a() = [
 // 
 // 
 // 1 16 0 4 0 1 0 0 0 -1 0 0 0 1 stud3.dat
-  [1,16,0,4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud3()],
+  [1,16,0,4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud3(realsolid)],
 // 2 24 -20 8 -10 -16 8 -10
   [2,24,-20,8,-10,-16,8,-10],
 // 2 24 16 8 -10 20 8 -10
   [2,24,16,8,-10,20,8,-10],
 // 1 16 10 4 -8 2 0 0 0 4 0 0 0 2 box4-1.dat
-  [1,16,10,4,-8,2,0,0,0,4,0,0,0,2, ldraw_lib__box4_1()],
+  [1,16,10,4,-8,2,0,0,0,4,0,0,0,2, ldraw_lib__box4_1(realsolid)],
 // 1 16 -10 4 -8 2 0 0 0 4 0 0 0 2 box4-1.dat
-  [1,16,-10,4,-8,2,0,0,0,4,0,0,0,2, ldraw_lib__box4_1()],
+  [1,16,-10,4,-8,2,0,0,0,4,0,0,0,2, ldraw_lib__box4_1(realsolid)],
 // 2 24 20 0 -10 20 8 -10
   [2,24,20,0,-10,20,8,-10],
 // 2 24 -20 0 -10 -20 8 -10
@@ -56,9 +57,9 @@ function ldraw_lib__2436a() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 8 -2 16 0 0 0 -4 0 0 0 8 box5-1.dat
-  [1,16,0,8,-2,16,0,0,0,-4,0,0,0,8, ldraw_lib__box5_1()],
+  [1,16,0,8,-2,16,0,0,0,-4,0,0,0,8, ldraw_lib__box5_1(realsolid)],
 // 1 16 0 8 0 20 0 0 0 -8 0 0 0 10 box4-4a.dat
-  [1,16,0,8,0,20,0,0,0,-8,0,0,0,10, ldraw_lib__box4_4a()],
+  [1,16,0,8,0,20,0,0,0,-8,0,0,0,10, ldraw_lib__box4_4a(realsolid)],
 // 4 16 -20 0 -10 -40 0 -14 40 0 -14 20 0 -10
   [4,16,-20,0,-10,-40,0,-14,40,0,-14,20,0,-10],
 // 3 16 -40 0 -10 -40 0 -14 -20 0 -10
@@ -76,12 +77,12 @@ function ldraw_lib__2436a() = [
 // 4 16 -40 20 -10 -40 0 -10 -20 0 -10 -20 8 -10
   [4,16,-40,20,-10,-40,0,-10,-20,0,-10,-20,8,-10],
 // 1 16 0 10 -10 -40 0 0 0 0 10 0 -4 0 box4-1.dat
-  [1,16,0,10,-10,-40,0,0,0,0,10,0,-4,0, ldraw_lib__box4_1()],
+  [1,16,0,10,-10,-40,0,0,0,0,10,0,-4,0, ldraw_lib__box4_1(realsolid)],
 // 1 16 0 0 0 0 0 1 0 1 0 -1 0 0 stug-2x1.dat
-  [1,16,0,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__stug_2x1()],
+  [1,16,0,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__stug_2x1(realsolid)],
 // 1 16 0 10 -14 0 0 1 1 0 0 0 1 0 stug2-4x1.dat
-  [1,16,0,10,-14,0,0,1,1,0,0,0,1,0, ldraw_lib__stug2_4x1()],
+  [1,16,0,10,-14,0,0,1,1,0,0,0,1,0, ldraw_lib__stug2_4x1(realsolid)],
 ];
 module ldraw_lib__2436a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2436a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2436a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2436a(line=0.2);

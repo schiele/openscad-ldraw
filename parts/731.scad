@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <4254.scad>
 use <70038.scad>
-function ldraw_lib__731() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__731(realsolid=false) = [
 // 0 ~Technic Shock Absorber  6.5L, Piston Rod with Spring (Obsolete)
 // 0 Name: 731.dat
 // 0 Author: Jeff Boen [onyx]
@@ -22,10 +23,10 @@ function ldraw_lib__731() = [
 // 
 // 
 // 1 16 0 55 0 1 0 0 0 1 0 0 0 1 4254.dat
-  [1,16,0,55,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4254()],
+  [1,16,0,55,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4254(realsolid)],
 // 1 494 0 1 0 1 0 0 0 1 0 0 0 1 70038.dat
-  [1,494,0,1,0,1,0,0,0,1,0,0,0,1, ldraw_lib__70038()],
+  [1,494,0,1,0,1,0,0,0,1,0,0,0,1, ldraw_lib__70038(realsolid)],
 ];
 module ldraw_lib__731(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__731(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__731(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__731(line=0.2);

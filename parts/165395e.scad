@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <165495c.scad>
-function ldraw_lib__165395e() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__165395e(realsolid=false) = [
 // 0 =Sticker  0.5 x  1.8 with Octan Logo without Border on Transparent Background
 // 0 Name: 165395e.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -20,8 +21,8 @@ function ldraw_lib__165395e() = [
 // 0 // Alias of 165495c, but used as a formed sticker applied on 3941 cylindrical face in actual set
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 165495c.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__165495c()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__165495c(realsolid)],
 ];
 module ldraw_lib__165395e(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__165395e(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__165395e(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__165395e(line=0.2);

@@ -3,7 +3,8 @@ use <../p/2-4ndis.scad>
 use <../p/4-4ndis.scad>
 use <s/u66s01.scad>
 use <s/u66s02.scad>
-function ldraw_lib__u66p01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__u66p01(realsolid=false) = [
 // 0 Sheet Plastic  6 x 12 Triangular with Blue and Red Triangles and Blue Lines Pattern
 // 0 Name: u66p01.dat
 // 0 Author: Damien Roux [Darats]
@@ -22,21 +23,21 @@ function ldraw_lib__u66p01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\u66s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__u66s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__u66s01(realsolid)],
 // 1 16 0 0.125 0 1 0 0 0 -1 0 0 0 1 s\u66s02.dat
-  [1,16,0,0.125,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__s__u66s02()],
+  [1,16,0,0.125,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__s__u66s02(realsolid)],
 // 
 // 0 // Pattern
 // 0 BFC NOCLIP
   [0,"BFC","NOCLIP"],
 // 1 15 88 -0.125 32 0 0 4 0 1 0 -4 0 0 2-4ndis.dat
-  [1,15,88,-0.125,32,0,0,4,0,1,0,-4,0,0, ldraw_lib__2_4ndis()],
+  [1,15,88,-0.125,32,0,0,4,0,1,0,-4,0,0, ldraw_lib__2_4ndis(realsolid)],
 // 1 15 74 -0.125 32 0 0 -4 0 1 0 -4 0 0 2-4ndis.dat
-  [1,15,74,-0.125,32,0,0,-4,0,1,0,-4,0,0, ldraw_lib__2_4ndis()],
+  [1,15,74,-0.125,32,0,0,-4,0,1,0,-4,0,0, ldraw_lib__2_4ndis(realsolid)],
 // 1 15 0 -0.125 198 -4 0 0 0 1 0 0 0 -4 2-4ndis.dat
-  [1,15,0,-0.125,198,-4,0,0,0,1,0,0,0,-4, ldraw_lib__2_4ndis()],
+  [1,15,0,-0.125,198,-4,0,0,0,1,0,0,0,-4, ldraw_lib__2_4ndis(realsolid)],
 // 1 15 0 -0.125 0 7 0 0 0 1 0 0 0 7 4-4ndis.dat
-  [1,15,0,-0.125,0,7,0,0,0,1,0,0,0,7, ldraw_lib__4_4ndis()],
+  [1,15,0,-0.125,0,7,0,0,0,1,0,0,0,7, ldraw_lib__4_4ndis(realsolid)],
 // 3 1 -16.383 -0.125 88.572 -26.54 -0.125 72.67 -16.307 -0.125 71.157
   [3,1,-16.383,-0.125,88.572,-26.54,-0.125,72.67,-16.307,-0.125,71.157],
 // 3 1 -16.266 -0.125 97.362 -26.54 -0.125 72.67 -16.383 -0.125 88.572
@@ -451,5 +452,5 @@ function ldraw_lib__u66p01() = [
   [4,16,83.571,-0.125,62.532,84.356,-0.125,64.397,84.075,-0.125,66.372,83.403,-0.125,68.984],
 ];
 module ldraw_lib__u66p01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__u66p01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__u66p01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__u66p01(line=0.2);

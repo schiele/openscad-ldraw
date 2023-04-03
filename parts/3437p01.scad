@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3437s01.scad>
-function ldraw_lib__3437p01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3437p01(realsolid=false) = [
 // 0 Duplo Brick  2 x  2 with Yellow "523" Antique Style Pattern
 // 0 Name: 3437p01.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -18,7 +19,7 @@ function ldraw_lib__3437p01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3437s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3437s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3437s01(realsolid)],
 // 4 16 40 0 40 40 48 40 -40 48 40 -40 0 40
   [4,16,40,0,40,40,48,40,-40,48,40,-40,0,40],
 // 
@@ -462,5 +463,5 @@ function ldraw_lib__3437p01() = [
   [3,16,-40,0,-40,-23,11,-40,-22,8,-40],
 ];
 module ldraw_lib__3437p01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3437p01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3437p01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3437p01(line=0.2);

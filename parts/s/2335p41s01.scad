@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__2335p41s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__2335p41s01(realsolid=false) = [
 // 0 ~Flag  2 x  2 with Red Square and Yellowed Winged Dragon Pattern
 // 0 Name: s\2335p41s01.dat
 // 0 Author: Alexandre Bourdais [x-or]
@@ -977,5 +978,5 @@ function ldraw_lib__s__2335p41s01() = [
   [4,16,0,27.5,-7.5,0,-7.5,-7.5,0,-10,-10,0,30,-10],
 ];
 module ldraw_lib__s__2335p41s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__2335p41s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__2335p41s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__2335p41s01(line=0.2);

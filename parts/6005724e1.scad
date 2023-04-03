@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__6005724e1() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6005724e1(realsolid=false) = [
 // 0 Sticker  1.9 x  1.9 with Wood Grain and Nails Type 1
 // 0 Name: 6005724e1.dat
 // 0 Author: Christian Neumann [Wesley]
@@ -17,7 +18,7 @@ function ldraw_lib__6005724e1() = [
 // 
 // 
 // 1 16 0 -0.25 0 19 0 0 0 0.25 0 0 0 19 box5-12.dat
-  [1,16,0,-0.25,0,19,0,0,0,0.25,0,0,0,19, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,19,0,0,0,0.25,0,0,0,19, ldraw_lib__box5_12(realsolid)],
 // 4 0 6.01 -0.25 -2.71 5.12 -0.25 -2.44 4.72 -0.25 -3.92 5.95 -0.25 -4.34
   [4,0,6.01,-0.25,-2.71,5.12,-0.25,-2.44,4.72,-0.25,-3.92,5.95,-0.25,-4.34],
 // 4 0 5.95 -0.25 -4.34 4.72 -0.25 -3.92 4.59 -0.25 -5.86 6.05 -0.25 -6
@@ -510,5 +511,5 @@ function ldraw_lib__6005724e1() = [
   [3,16,17,-0.25,-14.3,16.6,-0.25,-15.5,19,-0.25,-19],
 ];
 module ldraw_lib__6005724e1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6005724e1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6005724e1(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6005724e1(line=0.2);

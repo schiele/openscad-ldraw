@@ -2,7 +2,8 @@ use <../lib.scad>
 use <164c01.scad>
 use <194305fc01.scad>
 use <194305fc02.scad>
-function ldraw_lib__164c01d03() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__164c01d03(realsolid=false) = [
 // 0 Boat Section Stern  6 x  6 x  3.333 with Light Grey Deck with White "4025" Stickers on Both Sides
 // 0 Name: 164c01d03.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -19,12 +20,12 @@ function ldraw_lib__164c01d03() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 164c01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__164c01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__164c01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 194305fc01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__194305fc01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__194305fc01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 194305fc02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__194305fc02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__194305fc02(realsolid)],
 ];
 module ldraw_lib__164c01d03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__164c01d03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__164c01d03(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__164c01d03(line=0.2);

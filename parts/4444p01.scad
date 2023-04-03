@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/4444s01.scad>
-function ldraw_lib__4444p01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4444p01(realsolid=false) = [
 // 0 Panel  2 x  5 x  6 Wall with Dark Grey Stones Pattern
 // 0 Name: 4444p01.dat
 // 0 Author: Tore Eriksson [Tore_Eriksson]
@@ -24,7 +25,7 @@ function ldraw_lib__4444p01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4444s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4444s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4444s01(realsolid)],
 // 4 16 -10 72 -10 -10 70.8 -10 -11.2 71.8 -10 -11.1 73.2 -10
   [4,16,-10,72,-10,-10,70.8,-10,-11.2,71.8,-10,-11.1,73.2,-10],
 // 4 16 -12.8 73.7 -10 -11.1 73.2 -10 -11.2 71.8 -10 -14.8 72.6 -10
@@ -397,5 +398,5 @@ function ldraw_lib__4444p01() = [
   [4,16,-19.9,59.7,-10,-20.2,61.6,-10,-10,61.7,-10,-10,59.7,-10],
 ];
 module ldraw_lib__4444p01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4444p01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4444p01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4444p01(line=0.2);

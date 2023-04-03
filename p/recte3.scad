@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__recte3() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__recte3(realsolid=false) = [
 // 0 Rectangle Empty with 3 Edges
 // 0 Name: recte3.dat
 // 0 Author: Steffen [Steffen]
@@ -21,5 +22,5 @@ function ldraw_lib__recte3() = [
   [2,24,1,0,-1,1,0,1],
 ];
 module ldraw_lib__recte3(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__recte3(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__recte3(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__recte3(line=0.2);

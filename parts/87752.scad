@@ -7,7 +7,8 @@ use <../p/4-4cylo.scad>
 use <../p/box3u8p.scad>
 use <../p/rect2p.scad>
 use <s/87752s01.scad>
-function ldraw_lib__87752() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__87752(realsolid=false) = [
 // 0 Windscreen  6 x  4 x  2 Bubble Canopy with Handle (Needs Work)
 // 0 Name: 87752.dat
 // 0 Author: Tim Gould [timgould]
@@ -25,24 +26,24 @@ function ldraw_lib__87752() = [
 // 0 // It appears right to my eye but is a fairly crude guess
 // 
 // 1 16 0 10 -60 40 0 0 0 -44 0 0 0 -70 2-8sphe.dat
-  [1,16,0,10,-60,40,0,0,0,-44,0,0,0,-70, ldraw_lib__2_8sphe()],
+  [1,16,0,10,-60,40,0,0,0,-44,0,0,0,-70, ldraw_lib__2_8sphe(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 10 -60 37 0 0 0 -41 0 0 0 -67 2-8sphe.dat
-  [1,16,0,10,-60,37,0,0,0,-41,0,0,0,-67, ldraw_lib__2_8sphe()],
+  [1,16,0,10,-60,37,0,0,0,-41,0,0,0,-67, ldraw_lib__2_8sphe(realsolid)],
 // 
 // 0 // Handle
 // 1 16 16 0 0 0 -32 0 4 0 0 0 0 4 4-4cylo.dat
-  [1,16,16,0,0,0,-32,0,4,0,0,0,0,4, ldraw_lib__4_4cylo()],
+  [1,16,16,0,0,0,-32,0,4,0,0,0,0,4, ldraw_lib__4_4cylo(realsolid)],
 // 
 // 1 16 20 0 0 0 -4 0 6 0 0 0 0 6 2-4cylc.dat
-  [1,16,20,0,0,0,-4,0,6,0,0,0,0,6, ldraw_lib__2_4cylc()],
+  [1,16,20,0,0,0,-4,0,6,0,0,0,0,6, ldraw_lib__2_4cylc(realsolid)],
 // 1 16 16 0 0 0 1 0 -2 0 0 0 0 2 2-4ring2.dat
-  [1,16,16,0,0,0,1,0,-2,0,0,0,0,2, ldraw_lib__2_4ring2()],
+  [1,16,16,0,0,0,1,0,-2,0,0,0,0,2, ldraw_lib__2_4ring2(realsolid)],
 // 1 16 16 0 0 0 1 0 4 0 0 0 0 -4 2-4ndis.dat
-  [1,16,16,0,0,0,1,0,4,0,0,0,0,-4, ldraw_lib__2_4ndis()],
+  [1,16,16,0,0,0,1,0,4,0,0,0,0,-4, ldraw_lib__2_4ndis(realsolid)],
 // 1 16 16 0 -5 0 4 0 0 0 -6 -5 0 0 box3u8p.dat
-  [1,16,16,0,-5,0,4,0,0,0,-6,-5,0,0, ldraw_lib__box3u8p()],
+  [1,16,16,0,-5,0,4,0,0,0,-6,-5,0,0, ldraw_lib__box3u8p(realsolid)],
 // 4 16 16 -4 -4 16 4 -4 16 4 -10 16 -4 -10
   [4,16,16,-4,-4,16,4,-4,16,4,-10,16,-4,-10],
 // 4 16 16 -4 0 16 -4 -10 16 -6 -10 16 -6 0
@@ -51,13 +52,13 @@ function ldraw_lib__87752() = [
   [4,16,16,4,0,16,6,0,16,6,-10,16,4,-10],
 // 
 // 1 16 -20 0 0 0 4 0 -6 0 0 0 0 6 2-4cylc.dat
-  [1,16,-20,0,0,0,4,0,-6,0,0,0,0,6, ldraw_lib__2_4cylc()],
+  [1,16,-20,0,0,0,4,0,-6,0,0,0,0,6, ldraw_lib__2_4cylc(realsolid)],
 // 1 16 -16 0 0 0 -1 0 2 0 0 0 0 2 2-4ring2.dat
-  [1,16,-16,0,0,0,-1,0,2,0,0,0,0,2, ldraw_lib__2_4ring2()],
+  [1,16,-16,0,0,0,-1,0,2,0,0,0,0,2, ldraw_lib__2_4ring2(realsolid)],
 // 1 16 -16 0 0 0 -1 0 -4 0 0 0 0 -4 2-4ndis.dat
-  [1,16,-16,0,0,0,-1,0,-4,0,0,0,0,-4, ldraw_lib__2_4ndis()],
+  [1,16,-16,0,0,0,-1,0,-4,0,0,0,0,-4, ldraw_lib__2_4ndis(realsolid)],
 // 1 16 -16 0 -5 0 -4 0 0 0 6 -5 0 0 box3u8p.dat
-  [1,16,-16,0,-5,0,-4,0,0,0,6,-5,0,0, ldraw_lib__box3u8p()],
+  [1,16,-16,0,-5,0,-4,0,0,0,6,-5,0,0, ldraw_lib__box3u8p(realsolid)],
 // 4 16 -16 4 -4 -16 -4 -4 -16 -4 -10 -16 4 -10
   [4,16,-16,4,-4,-16,-4,-4,-16,-4,-10,-16,4,-10],
 // 4 16 -16 4 0 -16 4 -10 -16 6 -10 -16 6 0
@@ -67,12 +68,12 @@ function ldraw_lib__87752() = [
 // 
 // 0 // Dome and details
 // 1 16 0 10 -12 -18 0 0 0 -1 0 0 0 2 rect2p.dat
-  [1,16,0,10,-12,-18,0,0,0,-1,0,0,0,2, ldraw_lib__rect2p()],
+  [1,16,0,10,-12,-18,0,0,0,-1,0,0,0,2, ldraw_lib__rect2p(realsolid)],
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\87752s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__87752s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__87752s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\87752s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__87752s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__87752s01(realsolid)],
 // 
 // 0 // Extra type 5 lines
 // 5 24 0 14 -130 0 10 -130 4 10 -128.61 -4 10 -128.61
@@ -118,5 +119,5 @@ function ldraw_lib__87752() = [
   [5,24,-40,10,-60,-36.956,-6.839,-60,-33.636,-6.839,-86.789,-36.956,10,-37.038],
 ];
 module ldraw_lib__87752(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__87752(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__87752(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__87752(line=0.2);

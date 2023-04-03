@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__611p01a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__611p01a(realsolid=false) = [
 // 0 ~Baseplate 32 x 32 Road 8-Stud - Crosswalk Pattern
 // 0 Name: s\611p01a.dat
 // 0 Author: Alex Taylor [anathema]
@@ -54,5 +55,5 @@ function ldraw_lib__s__611p01a() = [
 // 0
 ];
 module ldraw_lib__s__611p01a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__611p01a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__611p01a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__611p01a(line=0.2);

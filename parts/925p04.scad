@@ -4,7 +4,8 @@ use <../p/1-4ndis.scad>
 use <../p/1-4ring1.scad>
 use <../p/1-4ring2.scad>
 use <s/925s01.scad>
-function ldraw_lib__925p04() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__925p04(realsolid=false) = [
 // 0 Brick  1 x  8 w/o Centre Studs, Red "ESSO WAGENPFLEGE" Pattern
 // 0 Name: 925p04.dat
 // 0 Author: Tore Eriksson [Tore_Eriksson]
@@ -21,7 +22,7 @@ function ldraw_lib__925p04() = [
 // 0 // Letter E by J.C. Tchang [tchang]
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\925s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__925s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__925s01(realsolid)],
 // 
 // 0 // E (by J.C. Tchang [tchang])
 // 3 4 -66.9024 21.5136 -10 -65.8492 21.012 -10 -67.1288 19.2448 -10
@@ -805,25 +806,25 @@ function ldraw_lib__925p04() = [
   [4,16,38.04,11,-10,35.54,11,-10,35.54,15.7,-10,38.04,15.7,-10],
 // 0 // P-F
 // 1 16 38.04 14.7 -10 1 0 0 0 0 1 0 1 0 1-4disc.dat
-  [1,16,38.04,14.7,-10,1,0,0,0,0,1,0,1,0, ldraw_lib__1_4disc()],
+  [1,16,38.04,14.7,-10,1,0,0,0,0,1,0,1,0, ldraw_lib__1_4disc(realsolid)],
 // 1 4 38.04 14.7 -10 1 0 0 0 0 1 0 1 0 1-4ring1.dat
-  [1,4,38.04,14.7,-10,1,0,0,0,0,1,0,1,0, ldraw_lib__1_4ring1()],
+  [1,4,38.04,14.7,-10,1,0,0,0,0,1,0,1,0, ldraw_lib__1_4ring1(realsolid)],
 // 1 4 38.04 14.7 -10 1 0 0 0 0 1 0 1 0 1-4ring2.dat
-  [1,4,38.04,14.7,-10,1,0,0,0,0,1,0,1,0, ldraw_lib__1_4ring2()],
+  [1,4,38.04,14.7,-10,1,0,0,0,0,1,0,1,0, ldraw_lib__1_4ring2(realsolid)],
 // 1 16 38.04 14.7 -10 3 0 0 0 0 3 0 1 0 1-4ndis.dat
-  [1,16,38.04,14.7,-10,3,0,0,0,0,3,0,1,0, ldraw_lib__1_4ndis()],
+  [1,16,38.04,14.7,-10,3,0,0,0,0,3,0,1,0, ldraw_lib__1_4ndis(realsolid)],
 // 1 4 38.04 12 -10 1 0 0 0 0 -1 0 1 0 1-4ring1.dat
-  [1,4,38.04,12,-10,1,0,0,0,0,-1,0,1,0, ldraw_lib__1_4ring1()],
+  [1,4,38.04,12,-10,1,0,0,0,0,-1,0,1,0, ldraw_lib__1_4ring1(realsolid)],
 // 1 4 38.04 12 -10 1 0 0 0 0 -1 0 1 0 1-4ring2.dat
-  [1,4,38.04,12,-10,1,0,0,0,0,-1,0,1,0, ldraw_lib__1_4ring2()],
+  [1,4,38.04,12,-10,1,0,0,0,0,-1,0,1,0, ldraw_lib__1_4ring2(realsolid)],
 // 1 16 38.04 12 -10 3 0 0 0 0 -3 0 1 0 1-4ndis.dat
-  [1,16,38.04,12,-10,3,0,0,0,0,-3,0,1,0, ldraw_lib__1_4ndis()],
+  [1,16,38.04,12,-10,3,0,0,0,0,-3,0,1,0, ldraw_lib__1_4ndis(realsolid)],
 // 4 16 38.04 12 -10 38.04 14.7 -10 39.04 14.7 -10 39.04 12 -10
   [4,16,38.04,12,-10,38.04,14.7,-10,39.04,14.7,-10,39.04,12,-10],
 // 4 4 39.04 14.7 -10 41.04 14.7 -10 41.04 12 -10 39.04 12 -10
   [4,4,39.04,14.7,-10,41.04,14.7,-10,41.04,12,-10,39.04,12,-10],
 // 1 16 38.04 12 -10 1 0 0 0 0 -1 0 1 0 1-4disc.dat
-  [1,16,38.04,12,-10,1,0,0,0,0,-1,0,1,0, ldraw_lib__1_4disc()],
+  [1,16,38.04,12,-10,1,0,0,0,0,-1,0,1,0, ldraw_lib__1_4disc(realsolid)],
 // 0 // F
 // 4 16 41.04 9 -10 41.04 22 -10 41.86 22 -10 41.86 9 -10
   [4,16,41.04,9,-10,41.04,22,-10,41.86,22,-10,41.86,9,-10],
@@ -1087,5 +1088,5 @@ function ldraw_lib__925p04() = [
 // 0
 ];
 module ldraw_lib__925p04(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__925p04(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__925p04(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__925p04(line=0.2);

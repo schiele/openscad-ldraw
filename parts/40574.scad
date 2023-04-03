@@ -7,7 +7,8 @@ use <../p/rect2p.scad>
 use <../p/rect3.scad>
 use <s/40574s01.scad>
 use <../p/stud4.scad>
-function ldraw_lib__40574() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__40574(realsolid=false) = [
 // 0 ~Electric Spybotic Brick Chassis (Needs Work)
 // 0 Name: 40574.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -26,33 +27,33 @@ function ldraw_lib__40574() = [
 // 0 // Needs Work: Touch sensor seating missing
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\40574s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__40574s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__40574s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\40574s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__40574s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__40574s01(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 80 0 0 0 -160 0 0 0 -9 9 0 0 4-4cyli.dat
-  [1,16,80,0,0,0,-160,0,0,0,-9,9,0,0, ldraw_lib__4_4cyli()],
+  [1,16,80,0,0,0,-160,0,0,0,-9,9,0,0, ldraw_lib__4_4cyli(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 22 -116 0 0 -55 0 -35 0 72 0 0 box5.dat
-  [1,16,0,22,-116,0,0,-55,0,-35,0,72,0,0, ldraw_lib__box5()],
+  [1,16,0,22,-116,0,0,-55,0,-35,0,72,0,0, ldraw_lib__box5(realsolid)],
 // 1 16 0 0 -116 0 0 -59 0 -17 0 76 0 0 box5.dat
-  [1,16,0,0,-116,0,0,-59,0,-17,0,76,0,0, ldraw_lib__box5()],
+  [1,16,0,0,-116,0,0,-59,0,-17,0,76,0,0, ldraw_lib__box5(realsolid)],
 // 1 16 0 26 20 1 0 0 0 -1 0 0 0 1 stud4.dat
-  [1,16,0,26,20,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4()],
+  [1,16,0,26,20,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4(realsolid)],
 // 1 16 0 26 0 1 0 0 0 -1 0 0 0 1 stud4.dat
-  [1,16,0,26,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4()],
+  [1,16,0,26,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4(realsolid)],
 // 1 16 0 26 -20 1 0 0 0 -1 0 0 0 1 stud4.dat
-  [1,16,0,26,-20,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4()],
+  [1,16,0,26,-20,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 30 0 56 0 0 0 -4 0 0 0 36 box5.dat
-  [1,16,0,30,0,56,0,0,0,-4,0,0,0,36, ldraw_lib__box5()],
+  [1,16,0,30,0,56,0,0,0,-4,0,0,0,36, ldraw_lib__box5(realsolid)],
 // 1 16 0 -10 -1.5 0 0 -76 0 1 0 31.5 0 0 rect2p.dat
-  [1,16,0,-10,-1.5,0,0,-76,0,1,0,31.5,0,0, ldraw_lib__rect2p()],
+  [1,16,0,-10,-1.5,0,0,-76,0,1,0,31.5,0,0, ldraw_lib__rect2p(realsolid)],
 // 1 16 0 -10 50 0 0 -80 0 1 0 20 0 0 rect2p.dat
-  [1,16,0,-10,50,0,0,-80,0,1,0,20,0,0, ldraw_lib__rect2p()],
+  [1,16,0,-10,50,0,0,-80,0,1,0,20,0,0, ldraw_lib__rect2p(realsolid)],
 // 4 16 60 30 40 56 30 36 -56 30 36 -60 30 40
   [4,16,60,30,40,56,30,36,-56,30,36,-60,30,40],
 // 4 16 -60 30 -40 -56 30 -36 56 30 -36 60 30 -40
@@ -62,7 +63,7 @@ function ldraw_lib__40574() = [
 // 4 16 55 22 -44 -55 22 -44 -64 22 -40 64 22 -40
   [4,16,55,22,-44,-55,22,-44,-64,22,-40,64,22,-40],
 // 1 16 0 26 -40 -60 0 0 0 0 4 0 1 0 rect.dat
-  [1,16,0,26,-40,-60,0,0,0,0,4,0,1,0, ldraw_lib__rect()],
+  [1,16,0,26,-40,-60,0,0,0,0,4,0,1,0, ldraw_lib__rect(realsolid)],
 // 2 24 59 -10 -40 -59 -10 -40
   [2,24,59,-10,-40,-59,-10,-40],
 // 2 24 80 30 -40 -80 30 -40
@@ -88,11 +89,11 @@ function ldraw_lib__40574() = [
 // 2 24 15 -21 -196 -15 -21 -196
   [2,24,15,-21,-196,-15,-21,-196],
 // 1 16 0 6 -200 -40 0 0 0 0 16 0 1 0 rect3.dat
-  [1,16,0,6,-200,-40,0,0,0,0,16,0,1,0, ldraw_lib__rect3()],
+  [1,16,0,6,-200,-40,0,0,0,0,16,0,1,0, ldraw_lib__rect3(realsolid)],
 // 1 16 0 14 60 20 0 0 0 -1 -8 0 0 20 rect.dat
-  [1,16,0,14,60,20,0,0,0,-1,-8,0,0,20, ldraw_lib__rect()],
+  [1,16,0,14,60,20,0,0,0,-1,-8,0,0,20, ldraw_lib__rect(realsolid)],
 // 1 16 0 26 40 0 0 20 4 0.4 0 0 -1 0 rect1.dat
-  [1,16,0,26,40,0,0,20,4,0.4,0,0,-1,0, ldraw_lib__rect1()],
+  [1,16,0,26,40,0,0,20,4,0.4,0,0,-1,0, ldraw_lib__rect1(realsolid)],
 // 4 16 -20 6 80 -41 -9 80 41 -9 80 20 6 80
   [4,16,-20,6,80,-41,-9,80,41,-9,80,20,6,80],
 // 2 24 60 -10 80 -60 -10 80
@@ -102,5 +103,5 @@ function ldraw_lib__40574() = [
 // 0
 ];
 module ldraw_lib__40574(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__40574(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__40574(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__40574(line=0.2);

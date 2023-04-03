@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/54200s01.scad>
-function ldraw_lib__54200() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__54200(realsolid=false) = [
 // 0 Slope Brick 31  1 x  1 x  0.667
 // 0 Name: 54200.dat
 // 0 Author: Orion Pobursky [OrionP]
@@ -28,7 +29,7 @@ function ldraw_lib__54200() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\54200s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__54200s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__54200s01(realsolid)],
 // 
 // 3 16 9.41 -15.01 8.35 8 -15.6 9.3333 10 -13.6 6
   [3,16,9.41,-15.01,8.35,8,-15.6,9.3333,10,-13.6,6],
@@ -40,5 +41,5 @@ function ldraw_lib__54200() = [
   [4,16,-10,-4,-10,10,-4,-10,10,-13.6,6,-10,-13.6,6],
 ];
 module ldraw_lib__54200(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__54200(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__54200(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__54200(line=0.2);

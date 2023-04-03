@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__6259759a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6259759a(realsolid=false) = [
 // 0 Sticker  0.8 x  1.7 with Dark Turquoise and Magenta Buttons and Slider
 // 0 Name: 6259759a.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -17,7 +18,7 @@ function ldraw_lib__6259759a() = [
 // 
 // 
 // 1 16 0 -0.25 0 17.5 0 0 0 0.25 0 0 0 8 box5-12.dat
-  [1,16,0,-0.25,0,17.5,0,0,0,0.25,0,0,0,8, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,17.5,0,0,0,0.25,0,0,0,8, ldraw_lib__box5_12(realsolid)],
 // 
 // 4 3 -12.5 -0.25 5.2 -14.7 -0.25 5.2 -14.7 -0.25 3 -12.5 -0.25 3
   [4,3,-12.5,-0.25,5.2,-14.7,-0.25,5.2,-14.7,-0.25,3,-12.5,-0.25,3],
@@ -323,5 +324,5 @@ function ldraw_lib__6259759a() = [
   [4,15,13.915,-0.25,-1.745,13.771,-0.25,-2.471,13.915,-0.25,-2.255,13.966,-0.25,-2],
 ];
 module ldraw_lib__6259759a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6259759a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6259759a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6259759a(line=0.2);

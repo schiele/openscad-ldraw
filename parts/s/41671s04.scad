@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__41671s04() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__41671s04(realsolid=false) = [
 // 0 ~Technic Windscreen  4 x  5 x  7 Rear Geometry Half
 // 0 Name: s\41671s04.dat
 // 0 Author: Santeri Piippo [arezey]
@@ -268,5 +269,5 @@ function ldraw_lib__s__41671s04() = [
   [5,24,10.925,-61.378,52.466,4.932,-61.756,52.338,4.5,-63.5,59.1,10.925,-57.484,43.321],
 ];
 module ldraw_lib__s__41671s04(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__41671s04(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__41671s04(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__41671s04(line=0.2);

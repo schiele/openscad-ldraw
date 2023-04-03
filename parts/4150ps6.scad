@@ -4,7 +4,8 @@ use <../p/4-4rin18.scad>
 use <../p/4-4rin38.scad>
 use <../p/4-4rin39.scad>
 use <s/4150s01.scad>
-function ldraw_lib__4150ps6() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4150ps6(realsolid=false) = [
 // 0 Tile  2 x  2 Round with SW Galactic Republic Pattern
 // 0 Name: 4150ps6.dat
 // 0 Author: Marc Schickele [samrotule]
@@ -27,7 +28,7 @@ function ldraw_lib__4150ps6() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4150s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4150s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4150s01(realsolid)],
 // 4 16 1 0 5.801 2.296 0 5.543 4.953 0 11.958 1 0 11.958
   [4,16,1,0,5.801,2.296,0,5.543,4.953,0,11.958,1,0,11.958],
 // 4 16 -1 0 11.958 -4.953 0 11.958 -2.296 0 5.543 -1 0 5.8
@@ -43,11 +44,11 @@ function ldraw_lib__4150ps6() = [
 // 4 16 0 0 18 -6.888 0 16.629 -6.367 0 15.371 0 0 16.638
   [4,16,0,0,18,-6.888,0,16.629,-6.367,0,15.371,0,0,16.638],
 // 1 16 0 0 0 0.5 0 0 0 1 0 0 0 0.5 4-4rin39.dat
-  [1,16,0,0,0,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__4_4rin39()],
+  [1,16,0,0,0,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__4_4rin39(realsolid)],
 // 1 0 0 0 0 0.5 0 0 0 1 0 0 0 0.5 4-4rin38.dat
-  [1,0,0,0,0,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__4_4rin38()],
+  [1,0,0,0,0,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__4_4rin38(realsolid)],
 // 1 0 0 0 0 1 0 0 0 1 0 0 0 1 4-4rin18.dat
-  [1,0,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4rin18()],
+  [1,0,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4rin18(realsolid)],
 // 4 16 -2 0 14.231 0 0 14.629 0 0 16.638 -2 0 16.24
   [4,16,-2,0,14.231,0,0,14.629,0,0,16.638,-2,0,16.24],
 // 4 0 -5.598 0 13.516 -2 0 14.231 -2 0 16.24 -6.367 0 15.371
@@ -211,9 +212,9 @@ function ldraw_lib__4150ps6() = [
 // 4 0 -8.649 0 11.477 -5.599 0 13.516 -6.367 0 15.371 -10.069 0 12.898
   [4,0,-8.649,0,11.477,-5.599,0,13.516,-6.367,0,15.371,-10.069,0,12.898],
 // 1 0 0 0 0 6 0 0 0 1 0 0 0 6 4-4disc.dat
-  [1,0,0,0,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4disc()],
+  [1,0,0,0,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4disc(realsolid)],
 // 0
 ];
 module ldraw_lib__4150ps6(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4150ps6(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4150ps6(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4150ps6(line=0.2);

@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/1-4ering.scad>
-function ldraw_lib__s__4150pf2s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__4150pf2s01(realsolid=false) = [
 // 0 ~Tile  2 x  2 Round with Scala Flower Pattern - Quarter
 // 0 Name: s\4150pf2s01.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -15,7 +16,7 @@ function ldraw_lib__s__4150pf2s01() = [
 // 
 // 
 // 1 16 0 0 0 20 0 0 0 1 0 0 0 20 1-4ering.dat
-  [1,16,0,0,0,20,0,0,0,1,0,0,0,20, ldraw_lib__1_4ering()],
+  [1,16,0,0,0,20,0,0,0,1,0,0,0,20, ldraw_lib__1_4ering(realsolid)],
 // 4 4 1 0 17.8 0.3 0 17.4 0.2 0 16.6 0.3 0 16
   [4,4,1,0,17.8,0.3,0,17.4,0.2,0,16.6,0.3,0,16],
 // 4 4 1 0 17.8 0.3 0 16 0.7 0 15.9 1.3 0 16
@@ -962,5 +963,5 @@ function ldraw_lib__s__4150pf2s01() = [
   [4,16,20,0,0,17.4,0,5.7,17.4,0,4.4,18.2,0,2.6],
 ];
 module ldraw_lib__s__4150pf2s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__4150pf2s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__4150pf2s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__4150pf2s01(line=0.2);

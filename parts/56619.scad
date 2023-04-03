@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <55707d.scad>
-function ldraw_lib__56619() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__56619(realsolid=false) = [
 // 0 =Minifig Shackles
 // 0 Name: 56619.dat
 // 0 Author: [PTadmin]
@@ -19,9 +20,9 @@ function ldraw_lib__56619() = [
 // 0 // Alias of 55707d
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 55707d.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__55707d()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__55707d(realsolid)],
 // 0
 ];
 module ldraw_lib__56619(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__56619(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__56619(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__56619(line=0.2);

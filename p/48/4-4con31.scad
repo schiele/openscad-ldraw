@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__48__4_4con31() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__48__4_4con31(realsolid=false) = [
 // 0 Hi-Res Cone 31 x 1.0
 // 0 Name: 48\4-4con31.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -213,5 +214,5 @@ function ldraw_lib__48__4_4con31() = [
 // 
 ];
 module ldraw_lib__48__4_4con31(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__48__4_4con31(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__48__4_4con31(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__48__4_4con31(line=0.2);

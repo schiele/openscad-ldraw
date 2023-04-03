@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/2431s01.scad>
-function ldraw_lib__2431pz0() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2431pz0(realsolid=false) = [
 // 0 Tile  1 x  4 with Black Utility Belt Pattern
 // 0 Name: 2431pz0.dat
 // 0 Author: Damien Roux [Darats]
@@ -17,7 +18,7 @@ function ldraw_lib__2431pz0() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2431s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2431s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2431s01(realsolid)],
 // 3 0 -37.411 0 -0.979 -38.471 0 -6.582 -37.411 0 -6.582
   [3,0,-37.411,0,-0.979,-38.471,0,-6.582,-37.411,0,-6.582],
 // 4 0 -37.411 0 0.255 -37.411 0 6.593 -38.471 0 6.593 -38.471 0 -6.582
@@ -1398,5 +1399,5 @@ function ldraw_lib__2431pz0() = [
   [4,16,15.056,0,8.948,23.759,0,8.948,40,0,10,-40,0,10],
 ];
 module ldraw_lib__2431pz0(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2431pz0(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2431pz0(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2431pz0(line=0.2);

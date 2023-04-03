@@ -2,7 +2,8 @@ use <../lib.scad>
 use <792.scad>
 use <793.scad>
 use <795.scad>
-function ldraw_lib__792c03() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__792c03(realsolid=false) = [
 // 0 Brick  2 x  2 Arm Holder with Hole and 2 Arms (Complete)
 // 0 Name: 792c03.dat
 // 0 Author: Chris Dee [cwdee]
@@ -23,14 +24,14 @@ function ldraw_lib__792c03() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 792.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__792()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__792(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 793.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__793()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__793(realsolid)],
 // 1 16 0 10 20 1 0 0 0 1 0 0 0 1 795.dat
-  [1,16,0,10,20,1,0,0,0,1,0,0,0,1, ldraw_lib__795()],
+  [1,16,0,10,20,1,0,0,0,1,0,0,0,1, ldraw_lib__795(realsolid)],
 // 1 16 0 10 -20 -1 0 0 0 1 0 0 0 -1 795.dat
-  [1,16,0,10,-20,-1,0,0,0,1,0,0,0,-1, ldraw_lib__795()],
+  [1,16,0,10,-20,-1,0,0,0,1,0,0,0,-1, ldraw_lib__795(realsolid)],
 ];
 module ldraw_lib__792c03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__792c03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__792c03(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__792c03(line=0.2);

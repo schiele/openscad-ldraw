@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__u9107s09() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__u9107s09(realsolid=false) = [
 // 0 ~Figure Fabuland Panda Nose and Whiskers
 // 0 Name: s\u9107s09.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -671,5 +672,5 @@ function ldraw_lib__s__u9107s09() = [
   [5,24,5.603,-10.335,-32.053,2.424,-11.505,-33.383,4.576,-9.155,-30.323,3.784,-12.513,-34.144],
 ];
 module ldraw_lib__s__u9107s09(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__u9107s09(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__u9107s09(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__u9107s09(line=0.2);

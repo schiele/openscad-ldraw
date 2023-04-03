@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/4162s01.scad>
-function ldraw_lib__4162p1g() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4162p1g(realsolid=false) = [
 // 0 Tile  1 x  8 with "Shanghai" Pattern
 // 0 Name: 4162p1g.dat
 // 0 Author: Vincent Messenet [Cheenzo]
@@ -19,7 +20,7 @@ function ldraw_lib__4162p1g() = [
 // 0 // Produced by txt2dat, Copyright 2005-2007, 2009 R. Crawford
 // 0 // Using font: "Arial" style: "Regular" size: 50pt
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4162s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4162s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4162s01(realsolid)],
 // 3 16 15.547 0 -3.852 17.416 0 -3.487 16.998 0 -2.909
   [3,16,15.547,0,-3.852,17.416,0,-3.487,16.998,0,-2.909],
 // 4 16 17.069 0 -1.344 17.042 0 .654 15.547 0 4.851 16.858 0 -2.19
@@ -592,5 +593,5 @@ function ldraw_lib__4162p1g() = [
   [3,16,24.035,0,-3.852,22.664,0,-3.852,80,0,-10],
 ];
 module ldraw_lib__4162p1g(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4162p1g(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4162p1g(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4162p1g(line=0.2);

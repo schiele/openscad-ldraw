@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__48__1_4con27() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__48__1_4con27(realsolid=false) = [
 // 0 Hi-Res Cone 27 x 0.25
 // 0 Name: 48\1-4con27.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -66,5 +67,5 @@ function ldraw_lib__48__1_4con27() = [
   [5,24,0,1,27,0,0,28,3.5235,1,26.7678,-3.5559,1,27],
 ];
 module ldraw_lib__48__1_4con27(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__48__1_4con27(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__48__1_4con27(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__48__1_4con27(line=0.2);

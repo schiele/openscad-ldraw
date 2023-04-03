@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/axlehol5.scad>
 use <s/35188s01.scad>
-function ldraw_lib__35188() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__35188(realsolid=false) = [
 // 0 Technic Changeover Rotary Catch
 // 0 Name: 35188.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -16,15 +17,15 @@ function ldraw_lib__35188() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\35188s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__35188s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__35188s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\35188s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__35188s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__35188s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 -1 0 0 0 -1 s\35188s01.dat
-  [1,16,0,0,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__s__35188s01()],
+  [1,16,0,0,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__s__35188s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 -1 0 0 0 -1 s\35188s01.dat
-  [1,16,0,0,0,-1,0,0,0,-1,0,0,0,-1, ldraw_lib__s__35188s01()],
+  [1,16,0,0,0,-1,0,0,0,-1,0,0,0,-1, ldraw_lib__s__35188s01(realsolid)],
 // 1 16 0 0 -10 1 0 0 0 0 -1 0 20 0 axlehol5.dat
-  [1,16,0,0,-10,1,0,0,0,0,-1,0,20,0, ldraw_lib__axlehol5()],
+  [1,16,0,0,-10,1,0,0,0,0,-1,0,20,0, ldraw_lib__axlehol5(realsolid)],
 // 5 24 0 -26.9964 -13.5206 0 -25.7687 -14.5467 -2.8415 -25.6431 -13.967 2.8415 -25.6431 -13.967
   [5,24,0,-26.9964,-13.5206,0,-25.7687,-14.5467,-2.8415,-25.6431,-13.967,2.8415,-25.6431,-13.967],
 // 5 24 0 26.9964 13.5206 0 25.7687 14.5467 -2.8415 25.6431 13.967 2.8415 25.6431 13.967
@@ -67,5 +68,5 @@ function ldraw_lib__35188() = [
   [5,24,-27.6,0,-1.5,-19.8333,0,-1.5,-14.0241,14.0241,3.5643,-18.6,-15.588,-5.397],
 ];
 module ldraw_lib__35188(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__35188(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__35188(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__35188(line=0.2);

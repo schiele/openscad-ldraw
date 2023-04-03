@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__4_4cyls() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4_4cyls(realsolid=false) = [
 // 0 Cylinder Sloped 1.0
 // 0 Name: 4-4cyls.dat
 // 0 Author: Donald Sutter [technog]
@@ -81,5 +82,5 @@ function ldraw_lib__4_4cyls() = [
   [3,16,0.9239,0,-0.3827,0.9239,0.0761,-0.3827,1,0,0],
 ];
 module ldraw_lib__4_4cyls(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4_4cyls(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4_4cyls(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4_4cyls(line=0.2);

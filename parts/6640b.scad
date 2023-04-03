@@ -4,7 +4,8 @@ use <../p/4-4cyli.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4edge.scad>
 use <../p/4-4ring4.scad>
-function ldraw_lib__6640b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6640b(realsolid=false) = [
 // 0 Electric Technic Fiber Optics Cable  5L
 // 0 Name: 6640b.dat
 // 0 Author: Michael Heidemann [mikeheide]
@@ -21,37 +22,37 @@ function ldraw_lib__6640b() = [
 // 
 // 
 // 1 16 0 0 -80 -2 0 0 0 0 2 0 1 0 4-4edge.dat
-  [1,16,0,0,-80,-2,0,0,0,0,2,0,1,0, ldraw_lib__4_4edge()],
+  [1,16,0,0,-80,-2,0,0,0,0,2,0,1,0, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 0 -8 -2 0 0 0 0 2 0 1 0 4-4edge.dat
-  [1,16,0,0,-8,-2,0,0,0,0,2,0,1,0, ldraw_lib__4_4edge()],
+  [1,16,0,0,-8,-2,0,0,0,0,2,0,1,0, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 0 -1 -4 0 0 0 0 4 0 1 0 4-4edge.dat
-  [1,16,0,0,-1,-4,0,0,0,0,4,0,1,0, ldraw_lib__4_4edge()],
+  [1,16,0,0,-1,-4,0,0,0,0,4,0,1,0, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 0 -1 -5 0 0 0 0 5 0 1 0 4-4edge.dat
-  [1,16,0,0,-1,-5,0,0,0,0,5,0,1,0, ldraw_lib__4_4edge()],
+  [1,16,0,0,-1,-5,0,0,0,0,5,0,1,0, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 0 0 -5 0 0 0 0 5 0 1 0 4-4edge.dat
-  [1,16,0,0,0,-5,0,0,0,0,5,0,1,0, ldraw_lib__4_4edge()],
+  [1,16,0,0,0,-5,0,0,0,0,5,0,1,0, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 0 0 -4 0 0 0 0 4 0 1 0 4-4edge.dat
-  [1,16,0,0,0,-4,0,0,0,0,4,0,1,0, ldraw_lib__4_4edge()],
+  [1,16,0,0,0,-4,0,0,0,0,4,0,1,0, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 0 20 -4 0 0 0 0 4 0 1 0 4-4edge.dat
-  [1,16,0,0,20,-4,0,0,0,0,4,0,1,0, ldraw_lib__4_4edge()],
+  [1,16,0,0,20,-4,0,0,0,0,4,0,1,0, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 0 -80 -2 0 0 0 0 2 0 1 0 4-4disc.dat
-  [1,16,0,0,-80,-2,0,0,0,0,2,0,1,0, ldraw_lib__4_4disc()],
+  [1,16,0,0,-80,-2,0,0,0,0,2,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 0 -80 -2 0 0 0 0 2 0 72 0 4-4cyli.dat
-  [1,16,0,0,-80,-2,0,0,0,0,2,0,72,0, ldraw_lib__4_4cyli()],
+  [1,16,0,0,-80,-2,0,0,0,0,2,0,72,0, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 0 -1 2 0 0 0 0 2 0 -7 0 4-4con1.dat
-  [1,16,0,0,-1,2,0,0,0,0,2,0,-7,0, ldraw_lib__4_4con1()],
+  [1,16,0,0,-1,2,0,0,0,0,2,0,-7,0, ldraw_lib__4_4con1(realsolid)],
 // 1 16 0 0 -1 -1 0 0 0 0 1 0 1 0 4-4ring4.dat
-  [1,16,0,0,-1,-1,0,0,0,0,1,0,1,0, ldraw_lib__4_4ring4()],
+  [1,16,0,0,-1,-1,0,0,0,0,1,0,1,0, ldraw_lib__4_4ring4(realsolid)],
 // 1 16 0 0 0 1 0 0 0 0 1 0 -1 0 4-4ring4.dat
-  [1,16,0,0,0,1,0,0,0,0,1,0,-1,0, ldraw_lib__4_4ring4()],
+  [1,16,0,0,0,1,0,0,0,0,1,0,-1,0, ldraw_lib__4_4ring4(realsolid)],
 // 1 16 0 0 -1 -5 0 0 0 0 5 0 1 0 4-4cyli.dat
-  [1,16,0,0,-1,-5,0,0,0,0,5,0,1,0, ldraw_lib__4_4cyli()],
+  [1,16,0,0,-1,-5,0,0,0,0,5,0,1,0, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 0 0 -4 0 0 0 0 4 0 20 0 4-4cyli.dat
-  [1,16,0,0,0,-4,0,0,0,0,4,0,20,0, ldraw_lib__4_4cyli()],
+  [1,16,0,0,0,-4,0,0,0,0,4,0,20,0, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 0 20 4 0 0 0 0 4 0 -1 0 4-4disc.dat
-  [1,16,0,0,20,4,0,0,0,0,4,0,-1,0, ldraw_lib__4_4disc()],
+  [1,16,0,0,20,4,0,0,0,0,4,0,-1,0, ldraw_lib__4_4disc(realsolid)],
 // 0
 ];
 module ldraw_lib__6640b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6640b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6640b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6640b(line=0.2);

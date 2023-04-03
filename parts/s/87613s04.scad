@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__87613s04() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__87613s04(realsolid=false) = [
 // 0 ~Plane Front  6 x 10 x  4 - Half Side Pattern Area
 // 0 Name: s\87613s04.dat
 // 0 Author: Bertrand Lequy [Berth]
@@ -37,5 +38,5 @@ function ldraw_lib__s__87613s04() = [
   [3,16,59.99,96,-22.5,60,93.5,-20,59.83,96,-29.3],
 ];
 module ldraw_lib__s__87613s04(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__87613s04(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__87613s04(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__87613s04(line=0.2);

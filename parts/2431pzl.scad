@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/2431s01.scad>
-function ldraw_lib__2431pzl() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2431pzl(realsolid=false) = [
 // 0 Tile  1 x  4 with The Flash Logo Pattern
 // 0 Name: 2431pzl.dat
 // 0 Author: Vincent Messenet [Cheenzo]
@@ -17,7 +18,7 @@ function ldraw_lib__2431pzl() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2431s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2431s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2431s01(realsolid)],
 // 
 // 3 0 -39.25 0 -.75 -39.25 0 -9.25 -24 0 -9.25
   [3,0,-39.25,0,-.75,-39.25,0,-9.25,-24,0,-9.25],
@@ -257,5 +258,5 @@ function ldraw_lib__2431pzl() = [
   [4,16,7.75,0,-9.25,24,0,-9.25,39.25,0,-.75,11,0,0],
 ];
 module ldraw_lib__2431pzl(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2431pzl(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2431pzl(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2431pzl(line=0.2);

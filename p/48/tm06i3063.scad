@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__48__tm06i3063() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__48__tm06i3063(realsolid=false) = [
 // 0 Mixed-Mode Torus Inner  1 x 0.3063 x 0.1667
 // 0 Name: 48\tm06i3063.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -241,5 +242,5 @@ function ldraw_lib__48__tm06i3063() = [
   [5,24,0.3585,0.1172,0.621,0.3469,0,0.6008,0.4365,0.1172,0.5689,0.2768,0.1172,0.6682],
 ];
 module ldraw_lib__48__tm06i3063(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__48__tm06i3063(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__48__tm06i3063(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__48__tm06i3063(line=0.2);

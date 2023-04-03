@@ -5,7 +5,8 @@ use <../../p/3-16rin9.scad>
 use <../../p/48/3-16aring.scad>
 use <../../p/48/3-16chrd.scad>
 use <../../p/48/3-16cylo.scad>
-function ldraw_lib__s__15515s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__15515s01(realsolid=false) = [
 // 0 ~Duplo Plant Flower  4 x  4 x  1 with  5 Round Petals and  4 Top Studs - Petal Half
 // 0 Name: s\15515s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -22,7 +23,7 @@ function ldraw_lib__s__15515s01() = [
 // 
 // 
 // 1 16 -41 0 0 -40 0 0 0 24 0 0 0 37 48\3-16cylo.dat
-  [1,16,-41,0,0,-40,0,0,0,24,0,0,0,37, ldraw_lib__48__3_16cylo()],
+  [1,16,-41,0,0,-40,0,0,0,24,0,0,0,37, ldraw_lib__48__3_16cylo(realsolid)],
 // 5 24 -53.308 0 35.7843 -53.308 24 35.7843 -56.308 0 34.1843 -51.5592 0 37.46
   [5,24,-53.308,0,35.7843,-53.308,24,35.7843,-56.308,0,34.1843,-51.5592,0,37.46],
 // 2 24 -56.308 0 34.1843 -53.308 0 35.7843
@@ -40,15 +41,15 @@ function ldraw_lib__s__15515s01() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -41 4 0 -36 0 0 0 20 0 0 0 33.3 3-16cylo.dat
-  [1,16,-41,4,0,-36,0,0,0,20,0,0,0,33.3, ldraw_lib__3_16cylo()],
+  [1,16,-41,4,0,-36,0,0,0,20,0,0,0,33.3, ldraw_lib__3_16cylo(realsolid)],
 // 1 16 -41 24 0 -4 0 0 0 -1 0 0 0 3.7 3-16rin9.dat
-  [1,16,-41,24,0,-4,0,0,0,-1,0,0,0,3.7, ldraw_lib__3_16rin9()],
+  [1,16,-41,24,0,-4,0,0,0,-1,0,0,0,3.7, ldraw_lib__3_16rin9(realsolid)],
 // 1 16 -41 24 0 -40 0 0 0 -1 0 0 0 37 48\3-16aring.dat
-  [1,16,-41,24,0,-40,0,0,0,-1,0,0,0,37, ldraw_lib__48__3_16aring()],
+  [1,16,-41,24,0,-40,0,0,0,-1,0,0,0,37, ldraw_lib__48__3_16aring(realsolid)],
 // 1 16 -41 4 0 -36 0 0 0 -1 0 0 0 33.3 3-16chrd.dat
-  [1,16,-41,4,0,-36,0,0,0,-1,0,0,0,33.3, ldraw_lib__3_16chrd()],
+  [1,16,-41,4,0,-36,0,0,0,-1,0,0,0,33.3, ldraw_lib__3_16chrd(realsolid)],
 // 1 16 -41 0 0 -40 0 0 0 1 0 0 0 37 48\3-16chrd.dat
-  [1,16,-41,0,0,-40,0,0,0,1,0,0,0,37, ldraw_lib__48__3_16chrd()],
+  [1,16,-41,0,0,-40,0,0,0,1,0,0,0,37, ldraw_lib__48__3_16chrd(realsolid)],
 // 5 24 -50.0232 24 33.6557 -50.0232 4 33.6557 -54.7772 4 30.7659 -48.4212 4 35.1801
   [5,24,-50.0232,24,33.6557,-50.0232,4,33.6557,-54.7772,4,30.7659,-48.4212,4,35.1801],
 // 4 16 -50.0232 4 33.6557 -54.7772 4 30.7659 -54.7772 24 30.7659 -50.0232 24 33.6557
@@ -82,5 +83,5 @@ function ldraw_lib__s__15515s01() = [
   [4,16,-54.7772,24,30.7659,-56.308,24,34.1843,-53.308,24,35.7843,-50.0232,24,33.6557],
 ];
 module ldraw_lib__s__15515s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__15515s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__15515s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__15515s01(line=0.2);

@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/1-4cyli.scad>
 use <s/973p4ys01.scad>
 use <s/973s01.scad>
-function ldraw_lib__973p4y() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__973p4y(realsolid=false) = [
 // 0 Minifig Torso with Dark Brown Collar, Patch, Rope Belt and Pouch with Back Pattern
 // 0 Name: 973p4y.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -20,12 +21,12 @@ function ldraw_lib__973p4y() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01(realsolid)],
 // 1 0 0 -4 0 4.243 0 -4.243 0 -8 0 -4.243 0 -4.243 1-4cyli.dat
-  [1,0,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli()],
+  [1,0,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli(realsolid)],
 // 
 // 1 16 0 0 -10 1 0 0 0 1 0 0 0 1 s\973p4ys01.dat
-  [1,16,0,0,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973p4ys01()],
+  [1,16,0,0,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973p4ys01(realsolid)],
 // 
 // 4 0 -.6 5.4 10 0 5.3 10 0 6 10 -.4 6.05 10
   [4,0,-.6,5.4,10,0,5.3,10,0,6,10,-.4,6.05,10],
@@ -1531,5 +1532,5 @@ function ldraw_lib__973p4y() = [
   [3,308,-10.75,2,10,-13.35,3.65,10,-12.55,1.75,10],
 ];
 module ldraw_lib__973p4y(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__973p4y(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__973p4y(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__973p4y(line=0.2);

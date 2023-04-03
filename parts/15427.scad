@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/15427s01.scad>
-function ldraw_lib__15427() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__15427(realsolid=false) = [
 // 0 Minifig Hair Ponytail Off-centre
 // 0 Name: 15427.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -19,7 +20,7 @@ function ldraw_lib__15427() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\15427s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__15427s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__15427s01(realsolid)],
 // 0 // Patterned surface
 // 3 16 -16.795 14.273 -3.464 -15.828 16.433 -4.003 -16.493 14.34 -4.14
   [3,16,-16.795,14.273,-3.464,-15.828,16.433,-4.003,-16.493,14.34,-4.14],
@@ -547,5 +548,5 @@ function ldraw_lib__15427() = [
   [5,24,-1.698,-0.946,-15.344,-1.009,0.182,-14.988,3.723,-1.607,-13.525,-6.877,3.029,-14.837],
 ];
 module ldraw_lib__15427(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__15427(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__15427(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__15427(line=0.2);

@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/3039s01.scad>
 use <s/4209s01.scad>
-function ldraw_lib__3039p09() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3039p09(realsolid=false) = [
 // 0 Slope Brick 45  2 x  2 with Fire Logo Pattern
 // 0 Name: 3039p09.dat
 // 0 Author: John Riley [jriley]
@@ -22,9 +23,9 @@ function ldraw_lib__3039p09() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3039s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3039s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3039s01(realsolid)],
 // 1 16 0 10 -20 0.1 0 0 0 0.707107 -0.0707107 0 0.707107 0.0707107 s\4209s01.dat
-  [1,16,0,10,-20,0.1,0,0,0,0.707107,-0.0707107,0,0.707107,0.0707107, ldraw_lib__s__4209s01()],
+  [1,16,0,10,-20,0.1,0,0,0,0.707107,-0.0707107,0,0.707107,0.0707107, ldraw_lib__s__4209s01(realsolid)],
 // 4 16 -12.3 18.6974 -28.6974 -12.3 1.30259 -11.3026 -20 0 -10 -20 20 -30
   [4,16,-12.3,18.6974,-28.6974,-12.3,1.30259,-11.3026,-20,0,-10,-20,20,-30],
 // 4 16 20 0 -10 -20 0 -10 -12.3 1.30259 -11.3026 12.3 1.30259 -11.3026
@@ -36,5 +37,5 @@ function ldraw_lib__3039p09() = [
 // 0
 ];
 module ldraw_lib__3039p09(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3039p09(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3039p09(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3039p09(line=0.2);

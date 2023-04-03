@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/92198s01.scad>
-function ldraw_lib__92198p11() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__92198p11(realsolid=false) = [
 // 0 Figure Friends Head with Green Eyes, Glasses, Orange Lips and Closed Mouth Pattern
 // 0 Name: 92198p11.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -15,7 +16,7 @@ function ldraw_lib__92198p11() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\92198s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__92198s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__92198s01(realsolid)],
 // 5 24 0 25.49 -12.39 3.39 23.09 -13.11 0 23.1 -13.86 2.87 25.46 -11.32
   [5,24,0,25.49,-12.39,3.39,23.09,-13.11,0,23.1,-13.86,2.87,25.46,-11.32],
 // 5 24 3.39 23.09 -13.11 0 23.1 -13.86 0 25.49 -12.39 4.08 20.01 -14.07
@@ -1354,5 +1355,5 @@ function ldraw_lib__92198p11() = [
   [4,16,4.84,10.51,-14.57,2.6559,10.3295,-15.0709,3.78,10.74,-14.7544,4.6483,10.67,-14.5815],
 ];
 module ldraw_lib__92198p11(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__92198p11(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__92198p11(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__92198p11(line=0.2);

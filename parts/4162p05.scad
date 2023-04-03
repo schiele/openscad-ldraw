@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/4162s01.scad>
-function ldraw_lib__4162p05() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4162p05(realsolid=false) = [
 // 0 Tile  1 x  8 with "Burj Khalifa" Pattern
 // 0 Name: 4162p05.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -21,7 +22,7 @@ function ldraw_lib__4162p05() = [
 // 0 // Font match is not perfect, but comes close.
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4162s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4162s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4162s01(realsolid)],
 // 0 // Char: 66
 // 4 15 -30.16 0 -3.67 -31.4 0 -4.57 -30.39 0 -4.65 -29.75 0 -3.71
   [4,15,-30.16,0,-3.67,-31.4,0,-4.57,-30.39,0,-4.65,-29.75,0,-3.71],
@@ -725,5 +726,5 @@ function ldraw_lib__4162p05() = [
   [4,16,80,0,10,36,0,7.4,36,0,-9.4,80,0,-10],
 ];
 module ldraw_lib__4162p05(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4162p05(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4162p05(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4162p05(line=0.2);

@@ -2,7 +2,8 @@ use <../lib.scad>
 use <3815bp4f.scad>
 use <3816bp4f.scad>
 use <3817bp4f.scad>
-function ldraw_lib__73200p4f() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__73200p4f(realsolid=false) = [
 // 0 Minifig Hips and Legs with Leather Armour Pattern
 // 0 Name: 73200p4f.dat
 // 0 Author: Chris Dee [cwdee]
@@ -22,13 +23,13 @@ function ldraw_lib__73200p4f() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 3815bp4f.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3815bp4f()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3815bp4f(realsolid)],
 // 1 16 0 12 0 1 0 0 0 1 0 0 0 1 3816bp4f.dat
-  [1,16,0,12,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3816bp4f()],
+  [1,16,0,12,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3816bp4f(realsolid)],
 // 1 16 0 12 0 1 0 0 0 1 0 0 0 1 3817bp4f.dat
-  [1,16,0,12,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3817bp4f()],
+  [1,16,0,12,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3817bp4f(realsolid)],
 // 
 ];
 module ldraw_lib__73200p4f(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__73200p4f(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__73200p4f(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__73200p4f(line=0.2);

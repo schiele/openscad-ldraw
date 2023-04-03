@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <3815c3j.scad>
-function ldraw_lib__81615() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__81615(realsolid=false) = [
 // 0 ~_Minifig Hips and Legs w/ Grass Skirt Pattern (Complete) Yellow (Obsolete)
 // 0 Name: 81615.dat
 // 0 Author: [PTadmin]
@@ -20,8 +21,8 @@ function ldraw_lib__81615() = [
 // 0 // colouring of the part (Yellow).
 // 
 // 1 14 0 0 0 1 0 0 0 1 0 0 0 1 3815c3j.dat
-  [1,14,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3815c3j()],
+  [1,14,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3815c3j(realsolid)],
 ];
 module ldraw_lib__81615(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__81615(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__81615(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__81615(line=0.2);

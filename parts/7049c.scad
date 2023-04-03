@@ -3,7 +3,8 @@ use <3109.scad>
 use <3110.scad>
 use <3111.scad>
 use <3112.scad>
-function ldraw_lib__7049c() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__7049c(realsolid=false) = [
 // 0 Brick  2 x  4 with 4 Black Axle Bushes and Trans-Clear Underside
 // 0 Name: 7049c.dat
 // 0 Author: Tore Eriksson [Tore_Eriksson]
@@ -20,16 +21,16 @@ function ldraw_lib__7049c() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 3109.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3109()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3109(realsolid)],
 // 1 47 0 0 0 1 0 0 0 1 0 0 0 1 3110.dat
-  [1,47,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3110()],
+  [1,47,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3110(realsolid)],
 // 1 0 0 10 0 1 0 0 0 1 0 0 0 1 3112.dat
-  [1,0,0,10,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3112()],
+  [1,0,0,10,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3112(realsolid)],
 // 1 0 22 10 0 1 0 0 0 1 0 0 0 1 3111.dat
-  [1,0,22,10,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3111()],
+  [1,0,22,10,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3111(realsolid)],
 // 1 0 -22 10 0 1 0 0 0 1 0 0 0 1 3111.dat
-  [1,0,-22,10,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3111()],
+  [1,0,-22,10,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3111(realsolid)],
 ];
 module ldraw_lib__7049c(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__7049c(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__7049c(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__7049c(line=0.2);

@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__6267174f() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6267174f(realsolid=false) = [
 // 0 Sticker  4.5 x  2.9 with Brick
 // 0 Name: 6267174f.dat
 // 0 Author: Howard Lande [HowardLande]
@@ -1325,5 +1326,5 @@ function ldraw_lib__6267174f() = [
   [4,19,-8.92,-0.25,-38.73,-10.56,-0.25,-30.09,-12,-0.25,-45,-8.86,-0.25,-39.37],
 ];
 module ldraw_lib__6267174f(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6267174f(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6267174f(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6267174f(line=0.2);

@@ -4,7 +4,8 @@ use <../../p/2-4disc.scad>
 use <../../p/2-4ndis.scad>
 use <../../p/4-4disc.scad>
 use <../../p/4-4ndis.scad>
-function ldraw_lib__s__003238s1() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__003238s1(realsolid=false) = [
 // 0 ~Crown Pattern - 1/2
 // 0 Name: s\003238s1.dat
 // 0 Author: Alex Taylor [anathema]
@@ -21,7 +22,7 @@ function ldraw_lib__s__003238s1() = [
 // 
 // 
 // 1 16 0 0 -5 0 0 -135 0 1 0 47 0 0 2-4disc.dat
-  [1,16,0,0,-5,0,0,-135,0,1,0,47,0,0, ldraw_lib__2_4disc()],
+  [1,16,0,0,-5,0,0,-135,0,1,0,47,0,0, ldraw_lib__2_4disc(realsolid)],
 // 4 14 -60 0 200 -81 0 145 -90 0 96 -73 0 82
   [4,14,-60,0,200,-81,0,145,-90,0,96,-73,0,82],
 // 4 14 0 0 42 0 0 54 -20 0 54 -73 0 42
@@ -37,15 +38,15 @@ function ldraw_lib__s__003238s1() = [
 // 3 14 -113 0 82 -90 0 96 -145 0 144
   [3,14,-113,0,82,-90,0,96,-145,0,144],
 // 1 14 0 0 -5 -135 0 0 0 1 0 0 0 47 1-4ndis.dat
-  [1,14,0,0,-5,-135,0,0,0,1,0,0,0,47, ldraw_lib__1_4ndis()],
+  [1,14,0,0,-5,-135,0,0,0,1,0,0,0,47, ldraw_lib__1_4ndis(realsolid)],
 // 1 16 0 0 74 0 0 -20 0 1 0 20 0 0 2-4disc.dat
-  [1,16,0,0,74,0,0,-20,0,1,0,20,0,0, ldraw_lib__2_4disc()],
+  [1,16,0,0,74,0,0,-20,0,1,0,20,0,0, ldraw_lib__2_4disc(realsolid)],
 // 1 14 0 0 74 0 0 -20 0 1 0 20 0 0 2-4ndis.dat
-  [1,14,0,0,74,0,0,-20,0,1,0,20,0,0, ldraw_lib__2_4ndis()],
+  [1,14,0,0,74,0,0,-20,0,1,0,20,0,0, ldraw_lib__2_4ndis(realsolid)],
 // 1 16 -93 0 62 20 0 0 0 1 0 0 0 20 4-4disc.dat
-  [1,16,-93,0,62,20,0,0,0,1,0,0,0,20, ldraw_lib__4_4disc()],
+  [1,16,-93,0,62,20,0,0,0,1,0,0,0,20, ldraw_lib__4_4disc(realsolid)],
 // 1 14 -93 0 62 20 0 0 0 1 0 0 0 20 4-4ndis.dat
-  [1,14,-93,0,62,20,0,0,0,1,0,0,0,20, ldraw_lib__4_4ndis()],
+  [1,14,-93,0,62,20,0,0,0,1,0,0,0,20, ldraw_lib__4_4ndis(realsolid)],
 // 3 14 -135 0 62 -113 0 42 -113 0 62
   [3,14,-135,0,62,-113,0,42,-113,0,62],
 // 3 14 -135 0 62 -113 0 62 -113 0 82
@@ -60,5 +61,5 @@ function ldraw_lib__s__003238s1() = [
   [4,14,-20,0,54,-20,0,74,-73,0,62,-73,0,42],
 ];
 module ldraw_lib__s__003238s1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__003238s1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__003238s1(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__003238s1(line=0.2);

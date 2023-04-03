@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/18826s01.scad>
-function ldraw_lib__18826p01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__18826p01(realsolid=false) = [
 // 0 Minifig Tool Rip Saw with Reddish Brown Grip Pattern
 // 0 Name: 18826p01.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -19,7 +20,7 @@ function ldraw_lib__18826p01() = [
 // 
 // 
 // 1 70 0 0 0 1 0 0 0 1 0 0 0 1 s\18826s01.dat
-  [1,70,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__18826s01()],
+  [1,70,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__18826s01(realsolid)],
 // 
 // 0 // Blade
 // 2 24 -2.00012 6.05 -17.8 -2.04214 9.33373 -14.3599
@@ -412,5 +413,5 @@ function ldraw_lib__18826p01() = [
   [3,16,-1.5315,-9.173,-56.157,-1.61934,2.888,-48.9675,-1.54811,2.225,-54.7975],
 ];
 module ldraw_lib__18826p01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__18826p01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__18826p01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__18826p01(line=0.2);

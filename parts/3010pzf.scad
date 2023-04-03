@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3010s01.scad>
-function ldraw_lib__3010pzf() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3010pzf(realsolid=false) = [
 // 0 Brick  1 x  4 with Metallic Gold Eye-Shaped Medallion Pattern
 // 0 Name: 3010pzf.dat
 // 0 Author: Damien Roux [Darats]
@@ -17,7 +18,7 @@ function ldraw_lib__3010pzf() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3010s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3010s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3010s01(realsolid)],
 // 4 0 -38.292 1 -10 -39 1 -10 -39 1.671 -10 -36.435 2.114 -10
   [4,0,-38.292,1,-10,-39,1,-10,-39,1.671,-10,-36.435,2.114,-10],
 // 4 0 -36.435 2.114 -10 -39 1.671 -10 -36.516 3.164 -10 -34.122 3.234 -10
@@ -1338,5 +1339,5 @@ function ldraw_lib__3010pzf() = [
   [4,87,14.249,12.435,-10,10.165,12.435,-10,10.148,12.785,-10,14.203,12.785,-10],
 ];
 module ldraw_lib__3010pzf(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3010pzf(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3010pzf(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3010pzf(line=0.2);

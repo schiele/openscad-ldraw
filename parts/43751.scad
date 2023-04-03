@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/stud4o.scad>
-function ldraw_lib__43751() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__43751(realsolid=false) = [
 // 0 Minifig Hair Wavy
 // 0 Name: 43751.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -19,7 +20,7 @@ function ldraw_lib__43751() = [
 // 
 // 
 // 1 16 0 -4 0 1 0 0 0 -1 0 0 0 -1 stud4o.dat
-  [1,16,0,-4,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__stud4o()],
+  [1,16,0,-4,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__stud4o(realsolid)],
 // 2 24 4.85 4.358 -12.16 6.919 4.223 -10.821
   [2,24,4.85,4.358,-12.16,6.919,4.223,-10.821],
 // 2 24 1.392 3.792 -13.008 4.85 4.358 -12.16
@@ -4001,5 +4002,5 @@ function ldraw_lib__43751() = [
   [5,24,-10.022,3.917,-14.729,-7.976,3.473,-16.524,-8.88,2.225,-17.048,-7.675,4.51,-16.204],
 ];
 module ldraw_lib__43751(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__43751(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__43751(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__43751(line=0.2);

@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__dtoothc() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__dtoothc(realsolid=false) = [
 // 0 Single Tooth for Duplo Crown Gear
 // 0 Name: dtoothc.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -131,5 +132,5 @@ function ldraw_lib__dtoothc() = [
   [5,24,-4.2,17.07,-8,-4.169,17.0833,3.3266,-2.6,21.27,6.8777,-4.9999,11.6705,-8],
 ];
 module ldraw_lib__dtoothc(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__dtoothc(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__dtoothc(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__dtoothc(line=0.2);

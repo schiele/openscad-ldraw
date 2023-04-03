@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3069bs01.scad>
-function ldraw_lib__3069bp86() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3069bp86(realsolid=false) = [
 // 0 Tile  1 x  2 with Envelope, Red Wax Seal and Dark Tan Shadows Pattern
 // 0 Name: 3069bp86.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -18,7 +19,7 @@ function ldraw_lib__3069bp86() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3069bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3069bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3069bs01(realsolid)],
 // 
 // 4 0 18.75 0 8.6 17.8 0 8.6 17.5 0 7.6 18.4 0 7.45
   [4,0,18.75,0,8.6,17.8,0,8.6,17.5,0,7.6,18.4,0,7.45],
@@ -514,5 +515,5 @@ function ldraw_lib__3069bp86() = [
   [4,16,15.95,0,-5.25,16.75,0,-5.75,15.75,0,3.95,14.55,0,3.05],
 ];
 module ldraw_lib__3069bp86(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3069bp86(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3069bp86(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3069bp86(line=0.2);

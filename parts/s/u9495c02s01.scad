@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/rect2p.scad>
-function ldraw_lib__s__u9495c02s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__u9495c02s01(realsolid=false) = [
 // 0 ~Sail 30 x 15 Trapezoidal Surface Stripe 1 (Formed Shape 2)
 // 0 Name: s\u9495c02s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -27,7 +28,7 @@ function ldraw_lib__s__u9495c02s01() = [
 // 4 16 -225.8214 -3.0631 1.3003 -233.5 -12.7594 5.4161 -238.5183 -6.4803 2.7508 -226.722 0 0
   [4,16,-225.8214,-3.0631,1.3003,-233.5,-12.7594,5.4161,-238.5183,-6.4803,2.7508,-226.722,0,0],
 // 1 16 -15 116.072 -49.2696 -15 0 0 0 0 122.9073 0 1 -52.1711 rect2p.dat
-  [1,16,-15,116.072,-49.2696,-15,0,0,0,0,122.9073,0,1,-52.1711, ldraw_lib__rect2p()],
+  [1,16,-15,116.072,-49.2696,-15,0,0,0,0,122.9073,0,1,-52.1711, ldraw_lib__rect2p(realsolid)],
 // 4 16 -151.5 -11.3923 4.8358 -152.3616 116.7203 -49.5448 -90.4804 205.2078 -87.1055 -89 -9.1139 3.8687
   [4,16,-151.5,-11.3923,4.8358,-152.3616,116.7203,-49.5448,-90.4804,205.2078,-87.1055,-89,-9.1139,3.8687],
 // 4 16 -90.4804 205.2078 -87.1055 -152.3616 116.7203 -49.5448 -150.6816 140.3543 -58.195 -88.4303 238.1136 -99.1224
@@ -178,5 +179,5 @@ function ldraw_lib__s__u9495c02s01() = [
   [2,24,-220,-6.1263,2.6005,-216.639,-5.3056,2.2521],
 ];
 module ldraw_lib__s__u9495c02s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__u9495c02s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__u9495c02s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__u9495c02s01(line=0.2);

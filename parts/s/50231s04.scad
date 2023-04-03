@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__50231s04() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__50231s04(realsolid=false) = [
 // 0 ~Minifig Cape Cloth (Formed) Outer Surface Half
 // 0 Name: s\50231s04.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -313,5 +314,5 @@ function ldraw_lib__s__50231s04() = [
   [3,16,20.93,1.33,10.91,27.85,1.76,3.43,30.4,5.82,6.04],
 ];
 module ldraw_lib__s__50231s04(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__50231s04(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__50231s04(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__50231s04(line=0.2);

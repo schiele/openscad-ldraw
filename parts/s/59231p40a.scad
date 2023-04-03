@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__59231p40a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__59231p40a(realsolid=false) = [
 // 0 ~Winged Helmet on Dark & Medium Blue Quarters Background Pattern
 // 0 Name: s\59231p40a.dat
 // 0 Author: Joerg Sommerer [Brickaneer]
@@ -519,5 +520,5 @@ function ldraw_lib__s__59231p40a() = [
   [3,272,0,-11.6672,0,-11.6672,-11.6672,0,-8.9379,-11.009,0],
 ];
 module ldraw_lib__s__59231p40a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__59231p40a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__59231p40a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__59231p40a(line=0.2);

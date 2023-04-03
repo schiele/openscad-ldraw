@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/1-16chrd.scad>
-function ldraw_lib__s__4740p04s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__4740p04s01(realsolid=false) = [
 // 0 ~Dish  2 x  2 Inverted With 32 Spokes Pattern -  1/16
 // 0 Name: s\4740p04s01.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -65,8 +66,8 @@ function ldraw_lib__s__4740p04s01() = [
 // 5 24 12 1.7 0 11.0868 1.7 4.5923 16 3.3 0 6 0 0
   [5,24,12,1.7,0,11.0868,1.7,4.5923,16,3.3,0,6,0,0],
 // 1 16 0 5.6 0 20 0 0 0 1 0 0 0 20 1-16chrd.dat
-  [1,16,0,5.6,0,20,0,0,0,1,0,0,0,20, ldraw_lib__1_16chrd()],
+  [1,16,0,5.6,0,20,0,0,0,1,0,0,0,20, ldraw_lib__1_16chrd(realsolid)],
 ];
 module ldraw_lib__s__4740p04s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__4740p04s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__4740p04s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__4740p04s01(line=0.2);

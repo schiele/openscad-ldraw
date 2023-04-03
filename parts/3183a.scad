@@ -4,7 +4,8 @@ use <../p/box5.scad>
 use <../p/rect.scad>
 use <../p/stug-1x4.scad>
 use <../p/stug3-1x3.scad>
-function ldraw_lib__3183a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3183a(realsolid=false) = [
 // 0 Plate  1 x  4 with Towball Socket Long with  2 Slots
 // 0 Name: 3183a.dat
 // 0 Author: Remco Braak [remco1974]
@@ -63,7 +64,7 @@ function ldraw_lib__3183a() = [
 // 4 16 -11.31 8 -27 -9.7 8 -29 -6.53 8 -30 -6.53 8 -27
   [4,16,-11.31,8,-27,-9.7,8,-29,-6.53,8,-30,-6.53,8,-27],
 // 1 16 -9.79 4 -18 0 0 2.04 2 0 0 0 1 0 rect.dat
-  [1,16,-9.79,4,-18,0,0,2.04,2,0,0,0,1,0, ldraw_lib__rect()],
+  [1,16,-9.79,4,-18,0,0,2.04,2,0,0,0,1,0, ldraw_lib__rect(realsolid)],
 // 2 24 -7.35 2 -26 -11.83 2 -26
   [2,24,-7.35,2,-26,-11.83,2,-26],
 // 2 24 -7.75 2 -22 -7.75 2 -18
@@ -315,7 +316,7 @@ function ldraw_lib__3183a() = [
 // 4 16 6.53 8 -30 9.7 8 -29 11.31 8 -27 6.53 8 -27
   [4,16,6.53,8,-30,9.7,8,-29,11.31,8,-27,6.53,8,-27],
 // 1 16 9.79 4 -18 0 0 2.04 2 0 0 0 1 0 rect.dat
-  [1,16,9.79,4,-18,0,0,2.04,2,0,0,0,1,0, ldraw_lib__rect()],
+  [1,16,9.79,4,-18,0,0,2.04,2,0,0,0,1,0, ldraw_lib__rect(realsolid)],
 // 2 24 11.83 2 -26 7.35 2 -26
   [2,24,11.83,2,-26,7.35,2,-26],
 // 2 24 11.83 2 -26 11.83 2 -18
@@ -563,11 +564,11 @@ function ldraw_lib__3183a() = [
 // 
 // 0 // 1x4 plate
 // 1 16 0 4 0 1 0 0 0 -1 0 0 0 1 stug3-1x3.dat
-  [1,16,0,4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stug3_1x3()],
+  [1,16,0,4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stug3_1x3(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 8 0 36 0 0 0 -4 0 0 0 6 box5.dat
-  [1,16,0,8,0,36,0,0,0,-4,0,0,0,6, ldraw_lib__box5()],
+  [1,16,0,8,0,36,0,0,0,-4,0,0,0,6, ldraw_lib__box5(realsolid)],
 // 2 24 -6.93 8 -10 -9.7 8 -11
   [2,24,-6.93,8,-10,-9.7,8,-11],
 // 2 24 -9.7 8 -11 -11.31 8 -14
@@ -657,9 +658,9 @@ function ldraw_lib__3183a() = [
 // 3 16 11.31 0 -14 13 0 -11 9.7 0 -11
   [3,16,11.31,0,-14,13,0,-11,9.7,0,-11],
 // 1 16 0 4 -10 -40 0 0 0 0 -4 0 20 0 box4-2p.dat
-  [1,16,0,4,-10,-40,0,0,0,0,-4,0,20,0, ldraw_lib__box4_2p()],
+  [1,16,0,4,-10,-40,0,0,0,0,-4,0,20,0, ldraw_lib__box4_2p(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 stug-1x4.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_1x4()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_1x4(realsolid)],
 // 
 // 2 24 7.35 6 -25 6.53 8 -25
   [2,24,7.35,6,-25,6.53,8,-25],
@@ -1165,5 +1166,5 @@ function ldraw_lib__3183a() = [
   [5,24,11.83,6,-14,13,8,-11,13,0,-11,11.31,8,-14],
 ];
 module ldraw_lib__3183a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3183a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3183a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3183a(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/41854s01.scad>
-function ldraw_lib__41854() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__41854(realsolid=false) = [
 // 0 Car Mudguard  2 x  4 Swept Back
 // 0 Name: 41854.dat
 // 0 Author: John Riley [jriley]
@@ -19,7 +20,7 @@ function ldraw_lib__41854() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\41854s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__41854s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__41854s01(realsolid)],
 // 4 16 40 -16 20 22 -16 20 22 -15.7108 13.3762 40 -15.7108 13.3762
   [4,16,40,-16,20,22,-16,20,22,-15.7108,13.3762,40,-15.7108,13.3762],
 // 4 16 40 -15.7108 13.3762 22 -15.7108 13.3762 22 -14.8454 6.8027 40 -14.8454 6.8027
@@ -70,5 +71,5 @@ function ldraw_lib__41854() = [
 // 
 ];
 module ldraw_lib__41854(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__41854(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__41854(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__41854(line=0.2);

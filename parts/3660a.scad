@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3660as01.scad>
-function ldraw_lib__3660a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3660a(realsolid=false) = [
 // 0 Slope Brick 45  2 x  2 Inverted without Inner Stopper Ring
 // 0 Name: 3660a.dat
 // 0 Author: James Jessiman
@@ -22,10 +23,10 @@ function ldraw_lib__3660a() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3660as01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3660as01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3660as01(realsolid)],
 // 4 16 20 24 -10 20 4 -30 -20 4 -30 -20 24 -10
   [4,16,20,24,-10,20,4,-30,-20,4,-30,-20,24,-10],
 ];
 module ldraw_lib__3660a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3660a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3660a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3660a(line=0.2);

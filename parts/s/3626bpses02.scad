@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__3626bpses02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__3626bpses02(realsolid=false) = [
 // 0 ~Minifig Head with SW Scout Trooper Black Visor Patt. Reflection
 // 0 Name: s\3626bpses02.dat
 // 0 Author: Daniel Goerner [TK-949]
@@ -67,5 +68,5 @@ function ldraw_lib__s__3626bpses02() = [
   [3,16,8.6,10.97,-9.588,9.192,12.05,-9.192,9.192,11.2,-9.192],
 ];
 module ldraw_lib__s__3626bpses02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__3626bpses02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__3626bpses02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__3626bpses02(line=0.2);

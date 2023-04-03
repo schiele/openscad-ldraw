@@ -3,7 +3,8 @@ use <../p/box5-12.scad>
 use <../p/logo-shell-e.scad>
 use <../p/logo-shell-h.scad>
 use <../p/logo-shell-s.scad>
-function ldraw_lib__190155g() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__190155g(realsolid=false) = [
 // 0 Sticker  1.9 x  7.9 with Red "Shell" on White Background
 // 0 Name: 190155g.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -21,13 +22,13 @@ function ldraw_lib__190155g() = [
 // 
 // 
 // 1 16 0 -0.25 0 79 0 0 0 0.25 0 0 0 19 box5-12.dat
-  [1,16,0,-0.25,0,79,0,0,0,0.25,0,0,0,19, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,79,0,0,0,0.25,0,0,0,19, ldraw_lib__box5_12(realsolid)],
 // 1 15 -54.4 -.25 0 1.5 0 0 0 1 0 0 0 1.5 logo-shell-s.dat
-  [1,15,-54.4,-.25,0,1.5,0,0,0,1,0,0,0,1.5, ldraw_lib__logo_shell_s()],
+  [1,15,-54.4,-.25,0,1.5,0,0,0,1,0,0,0,1.5, ldraw_lib__logo_shell_s(realsolid)],
 // 1 15 -14.2 -.25 0 1.5 0 0 0 1 0 0 0 1.5 logo-shell-h.dat
-  [1,15,-14.2,-.25,0,1.5,0,0,0,1,0,0,0,1.5, ldraw_lib__logo_shell_h()],
+  [1,15,-14.2,-.25,0,1.5,0,0,0,1,0,0,0,1.5, ldraw_lib__logo_shell_h(realsolid)],
 // 1 15 23 -.25 -4.08 1.5 0 0 0 1 0 0 0 1.5 logo-shell-e.dat
-  [1,15,23,-.25,-4.08,1.5,0,0,0,1,0,0,0,1.5, ldraw_lib__logo_shell_e()],
+  [1,15,23,-.25,-4.08,1.5,0,0,0,1,0,0,0,1.5, ldraw_lib__logo_shell_e(realsolid)],
 // 4 4 44.75 -.25 14.25 44.75 -.25 -14.25 55.25 -.25 -14.25 55.25 -.25 14.25
   [4,4,44.75,-.25,14.25,44.75,-.25,-14.25,55.25,-.25,-14.25,55.25,-.25,14.25],
 // 4 4 61.55 -.25 14.25 61.55 -.25 -14.25 72.05 -.25 -14.25 72.05 -.25 14.25
@@ -78,5 +79,5 @@ function ldraw_lib__190155g() = [
   [4,15,7.475,-.25,6.045,.8,-.25,14.25,.8,-.25,-14.25,7.475,-.25,-14.205],
 ];
 module ldraw_lib__190155g(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__190155g(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__190155g(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__190155g(line=0.2);

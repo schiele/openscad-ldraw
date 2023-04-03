@@ -3,7 +3,8 @@ use <../../p/1-8cyli.scad>
 use <../../p/1-8edge.scad>
 use <../../p/2-4cyli.scad>
 use <../../p/2-4edge.scad>
-function ldraw_lib__s__23221s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__23221s01(realsolid=false) = [
 // 0 ~Hose  3 x 32 x  2.333 - Half Segment
 // 0 Name: s\23221s01.dat
 // 0 Author: Mikkel Bech Jensen [gaia]
@@ -18,11 +19,11 @@ function ldraw_lib__s__23221s01() = [
 // 
 // 
 // 1 16 0 0 2 26 0 0 0 0 -26 0 1 0 2-4edge.dat
-  [1,16,0,0,2,26,0,0,0,0,-26,0,1,0, ldraw_lib__2_4edge()],
+  [1,16,0,0,2,26,0,0,0,0,-26,0,1,0, ldraw_lib__2_4edge(realsolid)],
 // 1 16 0 0 2 26 0 0 0 0 26 0 -1 0 1-8edge.dat
-  [1,16,0,0,2,26,0,0,0,0,26,0,-1,0, ldraw_lib__1_8edge()],
+  [1,16,0,0,2,26,0,0,0,0,26,0,-1,0, ldraw_lib__1_8edge(realsolid)],
 // 1 16 0 0 2 -26 0 0 0 0 26 0 -1 0 1-8edge.dat
-  [1,16,0,0,2,-26,0,0,0,0,26,0,-1,0, ldraw_lib__1_8edge()],
+  [1,16,0,0,2,-26,0,0,0,0,26,0,-1,0, ldraw_lib__1_8edge(realsolid)],
 // 2 24 -5.325 21.241 2 -2.53 19.458 2
   [2,24,-5.325,21.241,2,-2.53,19.458,2],
 // 2 24 10 23.001 2 14.893 21.544 2
@@ -159,21 +160,21 @@ function ldraw_lib__s__23221s01() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 0 28 0 0 0 0 -28 0 1 0 2-4cyli.dat
-  [1,16,0,0,0,28,0,0,0,0,-28,0,1,0, ldraw_lib__2_4cyli()],
+  [1,16,0,0,0,28,0,0,0,0,-28,0,1,0, ldraw_lib__2_4cyli(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 0 28 0 0 0 0 28 0 1 0 1-8cyli.dat
-  [1,16,0,0,0,28,0,0,0,0,28,0,1,0, ldraw_lib__1_8cyli()],
+  [1,16,0,0,0,28,0,0,0,0,28,0,1,0, ldraw_lib__1_8cyli(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 0 -28 0 0 0 0 28 0 1 0 1-8cyli.dat
-  [1,16,0,0,0,-28,0,0,0,0,28,0,1,0, ldraw_lib__1_8cyli()],
+  [1,16,0,0,0,-28,0,0,0,0,28,0,1,0, ldraw_lib__1_8cyli(realsolid)],
 // 1 16 0 0 1 28 0 0 0 0 -28 0 1 0 2-4edge.dat
-  [1,16,0,0,1,28,0,0,0,0,-28,0,1,0, ldraw_lib__2_4edge()],
+  [1,16,0,0,1,28,0,0,0,0,-28,0,1,0, ldraw_lib__2_4edge(realsolid)],
 // 1 16 0 0 1 28 0 0 0 0 28 0 1 0 1-8edge.dat
-  [1,16,0,0,1,28,0,0,0,0,28,0,1,0, ldraw_lib__1_8edge()],
+  [1,16,0,0,1,28,0,0,0,0,28,0,1,0, ldraw_lib__1_8edge(realsolid)],
 // 1 16 0 0 1 -28 0 0 0 0 28 0 1 0 1-8edge.dat
-  [1,16,0,0,1,-28,0,0,0,0,28,0,1,0, ldraw_lib__1_8edge()],
+  [1,16,0,0,1,-28,0,0,0,0,28,0,1,0, ldraw_lib__1_8edge(realsolid)],
 // 2 24 -16.97 16.97 1.5 -12.648 19.622 1.5
   [2,24,-16.97,16.97,1.5,-12.648,19.622,1.5],
 // 2 24 -12.648 19.622 1.5 -10 20 1.5
@@ -551,5 +552,5 @@ function ldraw_lib__s__23221s01() = [
   [5,134,.955,20.536,1,2.53,16.457,1.5,0,15.999,1.5,5.325,18.24,1.5],
 ];
 module ldraw_lib__s__23221s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__23221s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__23221s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__23221s01(line=0.2);

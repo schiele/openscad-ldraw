@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/4-4cylc.scad>
-function ldraw_lib__60659() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__60659(realsolid=false) = [
 // 0 Figure Club
 // 0 Name: 60659.dat
 // 0 Author: El'dar Ismagilov [Eldar]
@@ -20,7 +21,7 @@ function ldraw_lib__60659() = [
 // 
 // 
 // 1 16 0 13 0 4 0 0 0 -25.9 0 0 0 4 4-4cylc.dat
-  [1,16,0,13,0,4,0,0,0,-25.9,0,0,0,4, ldraw_lib__4_4cylc()],
+  [1,16,0,13,0,4,0,0,0,-25.9,0,0,0,4, ldraw_lib__4_4cylc(realsolid)],
 // 3 16 -11.7 -34.5 2.372 -7.048 -23.94 5.049 -9.344 -23.51 1.492
   [3,16,-11.7,-34.5,2.372,-7.048,-23.94,5.049,-9.344,-23.51,1.492],
 // 3 16 -8.575 -62.27 17.28 -4.558 -69.38 19.04 7.751 -62.49 16.07
@@ -1213,5 +1214,5 @@ function ldraw_lib__60659() = [
   [5,24,-3.464,-12.91,-2,-3.938,-14.67,-6.102,-4,-12.91,0,-2,-12.91,-3.464],
 ];
 module ldraw_lib__60659(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__60659(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__60659(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__60659(line=0.2);

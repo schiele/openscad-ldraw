@@ -6,7 +6,8 @@ use <../p/4-4cylo.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4edge.scad>
 use <../p/4-8sphe.scad>
-function ldraw_lib__98393j() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__98393j(realsolid=false) = [
 // 0 Figure Friends Medical Pen
 // 0 Name: 98393j.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -26,21 +27,21 @@ function ldraw_lib__98393j() = [
 // 
 // 
 // 1 16 0 0 0 4 0 0 0 -1 0 0 0 4 4-4disc.dat
-  [1,16,0,0,0,4,0,0,0,-1,0,0,0,4, ldraw_lib__4_4disc()],
+  [1,16,0,0,0,4,0,0,0,-1,0,0,0,4, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 0 0 4 0 0 0 -15.75 0 0 0 4 4-4cylo.dat
-  [1,16,0,0,0,4,0,0,0,-15.75,0,0,0,4, ldraw_lib__4_4cylo()],
+  [1,16,0,0,0,4,0,0,0,-15.75,0,0,0,4, ldraw_lib__4_4cylo(realsolid)],
 // 1 16 0 0 0 .75 0 0 0 5 0 0 0 .75 2-4con4.dat
-  [1,16,0,0,0,.75,0,0,0,5,0,0,0,.75, ldraw_lib__2_4con4()],
+  [1,16,0,0,0,.75,0,0,0,5,0,0,0,.75, ldraw_lib__2_4con4(realsolid)],
 // 1 16 0 5 0 2 0 0 0 2 0 0 0 2 4-8sphe.dat
-  [1,16,0,5,0,2,0,0,0,2,0,0,0,2, ldraw_lib__4_8sphe()],
+  [1,16,0,5,0,2,0,0,0,2,0,0,0,2, ldraw_lib__4_8sphe(realsolid)],
 // 1 16 0 5 0 2 0 0 0 1 0 0 0 2 4-4edge.dat
-  [1,16,0,5,0,2,0,0,0,1,0,0,0,2, ldraw_lib__4_4edge()],
+  [1,16,0,5,0,2,0,0,0,1,0,0,0,2, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 5 0 1 0 0 0 -1 0 0 0 1 2-4ring2.dat
-  [1,16,0,5,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__2_4ring2()],
+  [1,16,0,5,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__2_4ring2(realsolid)],
 // 1 16 0 5 0 3 0 0 0 1 0 0 0 3 2-4edge.dat
-  [1,16,0,5,0,3,0,0,0,1,0,0,0,3, ldraw_lib__2_4edge()],
+  [1,16,0,5,0,3,0,0,0,1,0,0,0,3, ldraw_lib__2_4edge(realsolid)],
 // 1 16 0 0 0 3.74 0 0 0 1 0 0 0 3.75 2-4edge.dat
-  [1,16,0,0,0,3.74,0,0,0,1,0,0,0,3.75, ldraw_lib__2_4edge()],
+  [1,16,0,0,0,3.74,0,0,0,1,0,0,0,3.75, ldraw_lib__2_4edge(realsolid)],
 // 4 16 3 5 0 3.75 0 0 3.464625 0 -1.435125 2.7717 5 -1.1481
   [4,16,3,5,0,3.75,0,0,3.464625,0,-1.435125,2.7717,5,-1.1481],
 // 4 16 -3 5 0 -2.7717 5 -1.1481 -3.464625 0 -1.435125 -3.75 0 0
@@ -807,5 +808,5 @@ function ldraw_lib__98393j() = [
   [5,24,-3.75,0,0,-3,5,0,-2.7717,5,-1.1481,-2.7717,5,1.1481],
 ];
 module ldraw_lib__98393j(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__98393j(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__98393j(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__98393j(line=0.2);

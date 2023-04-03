@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/2349s01.scad>
-function ldraw_lib__2349a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2349a(realsolid=false) = [
 // 0 Hinge Car Roof  4 x  4 Sunroof without Ledges
 // 0 Name: 2349a.dat
 // 0 Author: James Jessiman
@@ -25,7 +26,7 @@ function ldraw_lib__2349a() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2349s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2349s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2349s01(realsolid)],
 // 
 // 4 16 32 8 -24 30 8 -22 30 8 32 32 8 28
   [4,16,32,8,-24,30,8,-22,30,8,32,32,8,28],
@@ -47,5 +48,5 @@ function ldraw_lib__2349a() = [
   [2,24,-30,8,-22,-30,8,32],
 ];
 module ldraw_lib__2349a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2349a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2349a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2349a(line=0.2);

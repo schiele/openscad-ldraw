@@ -4,7 +4,8 @@ use <s/973pars02.scad>
 use <s/973pars03.scad>
 use <s/973pats01.scad>
 use <s/973s01.scad>
-function ldraw_lib__973pat() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__973pat(realsolid=false) = [
 // 0 Minifig Torso with Blue Vest, Pockets, Shirt and Drill Pattern
 // 0 Name: 973pat.dat
 // 0 Author: Joerg Sommerer [Brickaneer]
@@ -21,17 +22,17 @@ function ldraw_lib__973pat() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973pars03.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973pars03()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973pars03(realsolid)],
 // 1 125 0 0 10 -1 0 0 0 1 0 0 0 -1 s\973pats01.dat
-  [1,125,0,0,10,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__973pats01()],
+  [1,125,0,0,10,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__973pats01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01(realsolid)],
 // 1 0 0 -4 0 4.243 0 -4.243 0 -8 0 -4.243 0 -4.243 1-4cyli.dat
-  [1,0,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli()],
+  [1,0,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973pars02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973pars02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973pars02(realsolid)],
 // 1 72 0 2.6 -10 1 0 0 0 1 0 0 0 1 s\973pats01.dat
-  [1,72,0,2.6,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973pats01()],
+  [1,72,0,2.6,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973pats01(realsolid)],
 // 4 72 -2.9893 28.596 -10 -2.864 29.676 -10 2.864 29.676 -10 2.9893 28.596 -10
   [4,72,-2.9893,28.596,-10,-2.864,29.676,-10,2.864,29.676,-10,2.9893,28.596,-10],
 // 4 0 2.8253 30.01 -10 2.864 29.676 -10 -2.864 29.676 -10 -2.8253 30.01 -10
@@ -834,5 +835,5 @@ function ldraw_lib__973pat() = [
   [4,1,13.891,19.976,-10,13.749,19.138,-10,11.472,19.977,-10,12.953,20.446,-10],
 ];
 module ldraw_lib__973pat(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__973pat(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__973pat(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__973pat(line=0.2);

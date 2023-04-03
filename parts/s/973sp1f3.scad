@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/4-4disc.scad>
 use <../../p/4-4ndis.scad>
-function ldraw_lib__s__973sp1f3() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__973sp1f3(realsolid=false) = [
 // 0 ~Minifig Torso with Buttons and Police Badge Plain Pattern - Pocket
 // 0 Name: s\973sp1f3.dat
 // 0 Author: Miklos Hosszu [hmick]
@@ -18,9 +19,9 @@ function ldraw_lib__s__973sp1f3() = [
 // 
 // 
 // 1 15 0 0 0 1 0 0 0 0 1 0 1 0 4-4disc.dat
-  [1,15,0,0,0,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4disc()],
+  [1,15,0,0,0,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 0 0 1 0 0 0 0 1 0 1 0 4-4ndis.dat
-  [1,16,0,0,0,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4ndis()],
+  [1,16,0,0,0,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4ndis(realsolid)],
 // 4 15 5 -3 0 4.5 -2.5 0 -4.5 -2.5 0 -5 -3 0
   [4,15,5,-3,0,4.5,-2.5,0,-4.5,-2.5,0,-5,-3,0],
 // 4 15 -5 -3 0 -4.5 -2.5 0 -4.5 0.7 0 -5 1 0
@@ -53,5 +54,5 @@ function ldraw_lib__s__973sp1f3() = [
   [3,16,-1,0,0,-1,1,0,-4.5,0.7,0],
 ];
 module ldraw_lib__s__973sp1f3(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__973sp1f3(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__973sp1f3(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__973sp1f3(line=0.2);

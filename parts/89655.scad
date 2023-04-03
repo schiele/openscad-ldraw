@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box.scad>
-function ldraw_lib__89655() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__89655(realsolid=false) = [
 // 0 ~Electric Energy Display Screen
 // 0 Name: 89655.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -15,10 +16,10 @@ function ldraw_lib__89655() = [
 // 
 // 
 // 1 16 0 0 0 57 0 0 0 2 0 0 0 39 box.dat
-  [1,16,0,0,0,57,0,0,0,2,0,0,0,39, ldraw_lib__box()],
+  [1,16,0,0,0,57,0,0,0,2,0,0,0,39, ldraw_lib__box(realsolid)],
 // 1 120 0 0 0 56 0 0 0 1 0 0 0 38 box.dat
-  [1,120,0,0,0,56,0,0,0,1,0,0,0,38, ldraw_lib__box()],
+  [1,120,0,0,0,56,0,0,0,1,0,0,0,38, ldraw_lib__box(realsolid)],
 ];
 module ldraw_lib__89655(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__89655(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__89655(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__89655(line=0.2);

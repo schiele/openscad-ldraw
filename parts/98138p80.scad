@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/4-4ering.scad>
 use <s/98138s01.scad>
-function ldraw_lib__98138p80() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__98138p80(realsolid=false) = [
 // 0 Tile  1 x  1 Round with Pink Doughnut Pattern
 // 0 Name: 98138p80.dat
 // 0 Author: Damien Roux [Darats]
@@ -22,9 +23,9 @@ function ldraw_lib__98138p80() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\98138s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01(realsolid)],
 // 1 16 0 0 0 9 0 0 0 1 0 0 0 9 4-4ering.dat
-  [1,16,0,0,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4ering()],
+  [1,16,0,0,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4ering(realsolid)],
 // 4 0 -8.428 0 -1.769 -8.364 0 -2.05 -7.814 0 -1.5 -7.832 0 -1.067
   [4,0,-8.428,0,-1.769,-8.364,0,-2.05,-7.814,0,-1.5,-7.832,0,-1.067],
 // 4 0 -8.464 0 -1.487 -8.428 0 -1.769 -7.832 0 -1.067 -7.81 0 -0.631
@@ -2515,5 +2516,5 @@ function ldraw_lib__98138p80() = [
   [4,16,8.315,0,3.444,8.431,0,1.95,8.482,0,1.643,9,0,0],
 ];
 module ldraw_lib__98138p80(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__98138p80(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__98138p80(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__98138p80(line=0.2);

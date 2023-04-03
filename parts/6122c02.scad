@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <6029a.scad>
 use <6122.scad>
-function ldraw_lib__6122c02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6122c02(realsolid=false) = [
 // 0 Minifig Helmet Castle w/ Dragon Crown Top w/ Cattlehorn White
 // 0 Name: 6122c02.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -20,10 +21,10 @@ function ldraw_lib__6122c02() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 6122.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__6122()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__6122(realsolid)],
 // 1 15 0 -19.4 -12.6 1 0 0 0 1 0 0 0 1 6029a.dat
-  [1,15,0,-19.4,-12.6,1,0,0,0,1,0,0,0,1, ldraw_lib__6029a()],
+  [1,15,0,-19.4,-12.6,1,0,0,0,1,0,0,0,1, ldraw_lib__6029a(realsolid)],
 ];
 module ldraw_lib__6122c02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6122c02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6122c02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6122c02(line=0.2);

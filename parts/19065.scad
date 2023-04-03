@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/19065s01.scad>
-function ldraw_lib__19065() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__19065(realsolid=false) = [
 // 0 ~Electric Power Functions 2.0 Hub Bottom
 // 0 Name: 19065.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -17,9 +18,9 @@ function ldraw_lib__19065() = [
 // 
 // 
 // 1 16 0 -23 0 1 0 0 0 1 0 0 0 1 s\19065s01.dat
-  [1,16,0,-23,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__19065s01()],
+  [1,16,0,-23,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__19065s01(realsolid)],
 // 1 16 0 -23 0 -1 0 0 0 1 0 0 0 1 s\19065s01.dat
-  [1,16,0,-23,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__19065s01()],
+  [1,16,0,-23,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__19065s01(realsolid)],
 // 2 24 -35.5 0 -78 35.5 0 -78
   [2,24,-35.5,0,-78,35.5,0,-78],
 // 2 24 -38 1 -78 38 1 -78
@@ -86,5 +87,5 @@ function ldraw_lib__19065() = [
   [4,16,-40,8,80,-4.5,-4,80,4.5,-4,80,40,8,80],
 ];
 module ldraw_lib__19065(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__19065(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__19065(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__19065(line=0.2);

@@ -6,7 +6,8 @@ use <../../p/4-4edge.scad>
 use <../../p/4-4rin15.scad>
 use <92084s06.scad>
 use <../../p/stud4.scad>
-function ldraw_lib__s__92084s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__92084s01(realsolid=false) = [
 // 0 ~Animal Owl with Angular Feathers - Body
 // 0 Name: s\92084s01.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -21,26 +22,26 @@ function ldraw_lib__s__92084s01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\92084s06.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__92084s06()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__92084s06(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\92084s06.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__92084s06()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__92084s06(realsolid)],
 // 
 // 1 16 0 -5.25 0 1 0 0 0 -1.3125 0 0 0 1 stud4.dat
-  [1,16,0,-5.25,0,1,0,0,0,-1.3125,0,0,0,1, ldraw_lib__stud4()],
+  [1,16,0,-5.25,0,1,0,0,0,-1.3125,0,0,0,1, ldraw_lib__stud4(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -5.25 0 5.625 0 0 0 -38 0 0 0 5.625 4-4cyli.dat
-  [1,16,0,-5.25,0,5.625,0,0,0,-38,0,0,0,5.625, ldraw_lib__4_4cyli()],
+  [1,16,0,-5.25,0,5.625,0,0,0,-38,0,0,0,5.625, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 -5.25 0 .375 0 0 0 -1 0 0 0 .375 4-4rin15.dat
-  [1,16,0,-5.25,0,.375,0,0,0,-1,0,0,0,.375, ldraw_lib__4_4rin15()],
+  [1,16,0,-5.25,0,.375,0,0,0,-1,0,0,0,.375, ldraw_lib__4_4rin15(realsolid)],
 // 1 16 0 -5.25 0 5.625 0 0 0 1 0 0 0 5.625 4-4edge.dat
-  [1,16,0,-5.25,0,5.625,0,0,0,1,0,0,0,5.625, ldraw_lib__4_4edge()],
+  [1,16,0,-5.25,0,5.625,0,0,0,1,0,0,0,5.625, ldraw_lib__4_4edge(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -43.25 0 0 0 -5.625 0 -7 0 5.625 0 0 4-4cylse.dat
-  [1,16,0,-43.25,0,0,0,-5.625,0,-7,0,5.625,0,0, ldraw_lib__4_4cylse()],
+  [1,16,0,-43.25,0,0,0,-5.625,0,-7,0,5.625,0,0, ldraw_lib__4_4cylse(realsolid)],
 // 1 16 0 -50.25 0 0 0 -5.625 7 -1 0 5.625 0 0 4-4disc.dat
-  [1,16,0,-50.25,0,0,0,-5.625,7,-1,0,5.625,0,0, ldraw_lib__4_4disc()],
+  [1,16,0,-50.25,0,0,0,-5.625,7,-1,0,5.625,0,0, ldraw_lib__4_4disc(realsolid)],
 // 
 // 5 24 0 -57.026 -0.408 0 -58.963 -2.767 3.008 -58.823 -2.967 -3.008 -58.823 -2.967
   [5,24,0,-57.026,-0.408,0,-58.963,-2.767,3.008,-58.823,-2.967,-3.008,-58.823,-2.967],
@@ -96,5 +97,5 @@ function ldraw_lib__s__92084s01() = [
   [5,24,0,-11.796,-8.192,0,-10.248,-9.573,2.25,-11.708,-7.997,-2.25,-11.708,-7.997],
 ];
 module ldraw_lib__s__92084s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__92084s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__92084s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__92084s01(line=0.2);

@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__cylj4x10() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__cylj4x10(realsolid=false) = [
 // 0 Cylinder Joint  4 to 10
 // 0 Name: cylj4x10.dat
 // 0 Author: Max Martin Richter [MMR1988]
@@ -125,5 +126,5 @@ function ldraw_lib__cylj4x10() = [
   [5,24,-3.6956,-0.7349,-1.5308,-3.6956,0,-1.5308,-2.8284,0,-2.8284,-3.827,-0.761,-0.87],
 ];
 module ldraw_lib__cylj4x10(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__cylj4x10(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__cylj4x10(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__cylj4x10(line=0.2);

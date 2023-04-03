@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__820670a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__820670a(realsolid=false) = [
 // 0 Sticker  1.9 x  1.9 with Arrow White over White Line on Black Background
 // 0 Name: 820670a.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -19,7 +20,7 @@ function ldraw_lib__820670a() = [
 // 
 // 
 // 1 16 0 -0.25 0 19 0 0 0 0.25 0 0 0 19 box5-12.dat
-  [1,16,0,-0.25,0,19,0,0,0,0.25,0,0,0,19, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,19,0,0,0,0.25,0,0,0,19, ldraw_lib__box5_12(realsolid)],
 // 4 15 -8 -0.25 1 -19 -0.25 1 -19 -0.25 -1 -8 -0.25 -1
   [4,15,-8,-0.25,1,-19,-0.25,1,-19,-0.25,-1,-8,-0.25,-1],
 // 4 15 8 -0.25 1 -8 -0.25 1 -8 -0.25 -1 8 -0.25 -1
@@ -66,5 +67,5 @@ function ldraw_lib__820670a() = [
   [3,0,19,-0.25,19,1,-0.25,19,1,-0.25,17],
 ];
 module ldraw_lib__820670a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__820670a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__820670a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__820670a(line=0.2);

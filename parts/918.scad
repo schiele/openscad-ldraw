@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <59494.scad>
-function ldraw_lib__918() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__918(realsolid=false) = [
 // 0 ~Moved to 59494
 // 0 Name: 918.dat
 // 0 Author: [PTadmin]
@@ -16,8 +17,8 @@ function ldraw_lib__918() = [
 // 
 // 0 // ~Electric Power Functions 9V Battery Box Lid
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 59494.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__59494()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__59494(realsolid)],
 ];
 module ldraw_lib__918(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__918(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__918(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__918(line=0.2);

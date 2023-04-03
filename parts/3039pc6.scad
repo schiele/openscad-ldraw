@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/3039s01.scad>
 use <s/3068bp12a.scad>
-function ldraw_lib__3039pc6() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3039pc6(realsolid=false) = [
 // 0 Slope Brick 45  2 x  2 with Radar Screen Pattern
 // 0 Name: 3039pc6.dat
 // 0 Author: Damien Roux [Darats]
@@ -20,10 +21,10 @@ function ldraw_lib__3039pc6() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3039s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3039s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3039s01(realsolid)],
 // 0 // Pattern
 // 1 16 -5.55 9.818 -19.817 0 0 0.679349 0.480372 0.707107 0 -0.480372 0.707107 0 s\3068bp12a.dat
-  [1,16,-5.55,9.818,-19.817,0,0,0.679349,0.480372,0.707107,0,-0.480372,0.707107,0, ldraw_lib__s__3068bp12a()],
+  [1,16,-5.55,9.818,-19.817,0,0,0.679349,0.480372,0.707107,0,-0.480372,0.707107,0, ldraw_lib__s__3068bp12a(realsolid)],
 // 4 7 8.65 0.979 -10.979 8.65 2.575 -12.575 18.05 2.575 -12.575 18.05 0.979 -10.979
   [4,7,8.65,0.979,-10.979,8.65,2.575,-12.575,18.05,2.575,-12.575,18.05,0.979,-10.979],
 // 4 7 13.602 9.311 -19.311 12.898 9.311 -19.311 13.05 9.717 -19.717 13.45 9.717 -19.717
@@ -414,5 +415,5 @@ function ldraw_lib__3039pc6() = [
   [4,0,15.45,9.717,-19.717,16.864,8.967,-18.967,16.215,8.737,-18.737,15.45,8.657,-18.657],
 ];
 module ldraw_lib__3039pc6(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3039pc6(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3039pc6(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3039pc6(line=0.2);

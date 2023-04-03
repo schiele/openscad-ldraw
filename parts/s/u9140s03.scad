@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__u9140s03() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__u9140s03(realsolid=false) = [
 // 0 ~Figure Fabuland Lamb Blank Eye Area
 // 0 Name: s\u9140s03.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -311,5 +312,5 @@ function ldraw_lib__s__u9140s03() = [
   [5,24,10.27,-33.38,-19.1,12.58,-32.9,-18.1,11.41,-35.52,-17.84,11.59,-31.05,-19.14],
 ];
 module ldraw_lib__s__u9140s03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__u9140s03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__u9140s03(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__u9140s03(line=0.2);

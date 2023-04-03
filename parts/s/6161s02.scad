@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/stud4.scad>
-function ldraw_lib__s__6161s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__6161s02(realsolid=false) = [
 // 0 ~Brick 24 x 24 Corner with Cutout - Tube and Rib Segment 2
 // 0 Name: s\6161s02.dat
 // 0 Author: Steve Bliss [sbliss]
@@ -16,9 +17,9 @@ function ldraw_lib__s__6161s02() = [
 // 
 // 
 // 1 16 0 4 0 -1 0 0 0 -5 0 0 0 1 stud4.dat
-  [1,16,0,4,0,-1,0,0,0,-5,0,0,0,1, ldraw_lib__stud4()],
+  [1,16,0,4,0,-1,0,0,0,-5,0,0,0,1, ldraw_lib__stud4(realsolid)],
 // 1 16 -20 4 20 -1 0 0 0 -5 0 0 0 1 stud4.dat
-  [1,16,-20,4,20,-1,0,0,0,-5,0,0,0,1, ldraw_lib__stud4()],
+  [1,16,-20,4,20,-1,0,0,0,-5,0,0,0,1, ldraw_lib__stud4(realsolid)],
 // 0 // 1 16 0 4 22 0 0 -1 0 19 0 14 0 0 box3u2p.dat
 // 2 24 -1 23 36 -1 23 7.8011
   [2,24,-1,23,36,-1,23,7.8011],
@@ -82,5 +83,5 @@ function ldraw_lib__s__6161s02() = [
 // 0
 ];
 module ldraw_lib__s__6161s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__6161s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__6161s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__6161s02(line=0.2);

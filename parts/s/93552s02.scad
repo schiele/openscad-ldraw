@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__93552s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__93552s02(realsolid=false) = [
 // 0 ~Minifig Paint Brush Tip - Top
 // 0 Name: s\93552s02.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -313,5 +314,5 @@ function ldraw_lib__s__93552s02() = [
   [5,24,0.355,-49.357,-1.282,-0.899,-46.928,-2.83,0.935,-46.574,-2.5,-0.15,-49.523,-1.033],
 ];
 module ldraw_lib__s__93552s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__93552s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__93552s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__93552s02(line=0.2);

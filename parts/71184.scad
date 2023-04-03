@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4cylc.scad>
 use <../p/4-4cylo.scad>
 use <../p/4-4ring2.scad>
-function ldraw_lib__71184() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__71184(realsolid=false) = [
 // 0 Bar  4.5L Straight
 // 0 Name: 71184.dat
 // 0 Author: Thomas Burger [grapeape]
@@ -23,16 +24,16 @@ function ldraw_lib__71184() = [
 // 
 // 
 // 1 16 0 0 0 6 0 0 0 -4 0 0 0 6 4-4cylc.dat
-  [1,16,0,0,0,6,0,0,0,-4,0,0,0,6, ldraw_lib__4_4cylc()],
+  [1,16,0,0,0,6,0,0,0,-4,0,0,0,6, ldraw_lib__4_4cylc(realsolid)],
 // 1 16 0 -4 0 2 0 0 0 1 0 0 0 2 4-4ring2.dat
-  [1,16,0,-4,0,2,0,0,0,1,0,0,0,2, ldraw_lib__4_4ring2()],
+  [1,16,0,-4,0,2,0,0,0,1,0,0,0,2, ldraw_lib__4_4ring2(realsolid)],
 // 1 16 0 -92 0 4 0 0 0 88 0 0 0 4 4-4cylo.dat
-  [1,16,0,-92,0,4,0,0,0,88,0,0,0,4, ldraw_lib__4_4cylo()],
+  [1,16,0,-92,0,4,0,0,0,88,0,0,0,4, ldraw_lib__4_4cylo(realsolid)],
 // 1 16 0 -92 0 2 0 0 0 -1 0 0 0 2 4-4ring2.dat
-  [1,16,0,-92,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__4_4ring2()],
+  [1,16,0,-92,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__4_4ring2(realsolid)],
 // 1 16 0 -96 0 6 0 0 0 4 0 0 0 6 4-4cylc.dat
-  [1,16,0,-96,0,6,0,0,0,4,0,0,0,6, ldraw_lib__4_4cylc()],
+  [1,16,0,-96,0,6,0,0,0,4,0,0,0,6, ldraw_lib__4_4cylc(realsolid)],
 ];
 module ldraw_lib__71184(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__71184(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__71184(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__71184(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <44375b.scad>
-function ldraw_lib__35327() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__35327(realsolid=false) = [
 // 0 =Dish  6 x  6 Inverted With Solid Studs
 // 0 Name: 35327.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -17,8 +18,8 @@ function ldraw_lib__35327() = [
 // 0 // Alias of 44375b; used for parts moulded in trans colours
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 44375b.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__44375b()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__44375b(realsolid)],
 ];
 module ldraw_lib__35327(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__35327(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__35327(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__35327(line=0.2);

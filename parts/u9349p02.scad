@@ -4,7 +4,8 @@ use <../p/4-4disc.scad>
 use <../p/4-4edge.scad>
 use <../p/4-4ering.scad>
 use <s/u9349s01.scad>
-function ldraw_lib__u9349p02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__u9349p02(realsolid=false) = [
 // 0 ~Minifig Compass Dial with White and Yellow Pattern
 // 0 Name: u9349p02.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -24,16 +25,16 @@ function ldraw_lib__u9349p02() = [
 // 0 // It is unclear if it is an assembly or a printed part
 // 
 // 1 0 0 -10 0 1 0 0 0 -6 0 0 0 1 4-4con4.dat
-  [1,0,0,-10,0,1,0,0,0,-6,0,0,0,1, ldraw_lib__4_4con4()],
+  [1,0,0,-10,0,1,0,0,0,-6,0,0,0,1, ldraw_lib__4_4con4(realsolid)],
 // 1 0 0 -10 0 5 0 0 0 -1 0 0 0 5 4-4edge.dat
-  [1,0,0,-10,0,5,0,0,0,-1,0,0,0,5, ldraw_lib__4_4edge()],
+  [1,0,0,-10,0,5,0,0,0,-1,0,0,0,5, ldraw_lib__4_4edge(realsolid)],
 // 1 0 0 -16 0 4 0 0 0 -1 0 0 0 4 4-4edge.dat
-  [1,0,0,-16,0,4,0,0,0,-1,0,0,0,4, ldraw_lib__4_4edge()],
+  [1,0,0,-16,0,4,0,0,0,-1,0,0,0,4, ldraw_lib__4_4edge(realsolid)],
 // 1 0 0 -16 0 4 0 0 0 1 0 0 0 -4 4-4disc.dat
-  [1,0,0,-16,0,4,0,0,0,1,0,0,0,-4, ldraw_lib__4_4disc()],
+  [1,0,0,-16,0,4,0,0,0,1,0,0,0,-4, ldraw_lib__4_4disc(realsolid)],
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\u9349s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__u9349s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__u9349s01(realsolid)],
 // 0 // top surface
 // 4 14 -8.2513 -10 9.1669 -9.8645 -10 10.791 -10.791 -10 9.8645 -9.1669 -10 8.2513
   [4,14,-8.2513,-10,9.1669,-9.8645,-10,10.791,-10.791,-10,9.8645,-9.1669,-10,8.2513],
@@ -226,7 +227,7 @@ function ldraw_lib__u9349p02() = [
 // 4 15 1.9293 -10 10.9545 .7669 -10 11.0635 .7669 -10 9.81 1.7113 -10 9.7119
   [4,15,1.9293,-10,10.9545,.7669,-10,11.0635,.7669,-10,9.81,1.7113,-10,9.7119],
 // 1 16 0 -10 0 15 0 0 0 1 0 0 0 15 4-4ering.dat
-  [1,16,0,-10,0,15,0,0,0,1,0,0,0,15, ldraw_lib__4_4ering()],
+  [1,16,0,-10,0,15,0,0,0,1,0,0,0,15, ldraw_lib__4_4ering(realsolid)],
 // 4 16 -9.1669 -10 8.2513 -8.5783 -10 7.6518 -7.6518 -10 8.5783 -8.2513 -10 9.1669
   [4,16,-9.1669,-10,8.2513,-8.5783,-10,7.6518,-7.6518,-10,8.5783,-8.2513,-10,9.1669],
 // 4 16 -4.1965 -10 5.123 -4.6107 -10 5.5263 -5.5263 -10 4.6107 -5.123 -10 4.1965
@@ -579,5 +580,5 @@ function ldraw_lib__u9349p02() = [
   [4,16,4.6195,-10,-1.9135,5.45,-10,-.654,5.45,-10,.654,5,-10,0],
 ];
 module ldraw_lib__u9349p02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__u9349p02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__u9349p02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__u9349p02(line=0.2);

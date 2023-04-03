@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <997.scad>
 use <998.scad>
-function ldraw_lib__997c01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__997c01(realsolid=false) = [
 // 0 Boat Section Bow  6 x  8 x  3.333 with LtGray Deck
 // 0 Name: 997c01.dat
 // 0 Author: Michael Heidemann [mikeheide]
@@ -17,10 +18,10 @@ function ldraw_lib__997c01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 997.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__997()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__997(realsolid)],
 // 1 7 0 0 0 1 0 0 0 1 0 0 0 1 998.dat
-  [1,7,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__998()],
+  [1,7,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__998(realsolid)],
 ];
 module ldraw_lib__997c01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__997c01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__997c01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__997c01(line=0.2);

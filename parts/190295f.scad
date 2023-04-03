@@ -4,7 +4,8 @@ use <../p/48/2-4ndis.scad>
 use <../p/48/4-4disc.scad>
 use <../p/48/4-4ring8.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__190295f() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__190295f(realsolid=false) = [
 // 0 Sticker  1.1 x  3.9 with Black Car Grille and Yellow Headlights
 // 0 Name: 190295f.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -21,27 +22,27 @@ function ldraw_lib__190295f() = [
 // 
 // 
 // 1 16 0 -0.25 0 39 0 0 0 0.25 0 0 0 11 box5-12.dat
-  [1,16,0,-0.25,0,39,0,0,0,0.25,0,0,0,11, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,39,0,0,0,0.25,0,0,0,11, ldraw_lib__box5_12(realsolid)],
 // 1 14 -28 -0.25 0 8 0 0 0 1 0 0 0 8 48\4-4disc.dat
-  [1,14,-28,-0.25,0,8,0,0,0,1,0,0,0,8, ldraw_lib__48__4_4disc()],
+  [1,14,-28,-0.25,0,8,0,0,0,1,0,0,0,8, ldraw_lib__48__4_4disc(realsolid)],
 // 1 14 28 -0.25 0 8 0 0 0 1 0 0 0 8 48\4-4disc.dat
-  [1,14,28,-0.25,0,8,0,0,0,1,0,0,0,8, ldraw_lib__48__4_4disc()],
+  [1,14,28,-0.25,0,8,0,0,0,1,0,0,0,8, ldraw_lib__48__4_4disc(realsolid)],
 // 1 0 -28 -0.25 0 1 0 0 0 1 0 0 0 1 48\4-4ring8.dat
-  [1,0,-28,-0.25,0,1,0,0,0,1,0,0,0,1, ldraw_lib__48__4_4ring8()],
+  [1,0,-28,-0.25,0,1,0,0,0,1,0,0,0,1, ldraw_lib__48__4_4ring8(realsolid)],
 // 1 0 28 -0.25 0 1 0 0 0 1 0 0 0 1 48\4-4ring8.dat
-  [1,0,28,-0.25,0,1,0,0,0,1,0,0,0,1, ldraw_lib__48__4_4ring8()],
+  [1,0,28,-0.25,0,1,0,0,0,1,0,0,0,1, ldraw_lib__48__4_4ring8(realsolid)],
 // 1 0 -28 -0.25 0 0 0 9 0 1 0 9 0 0 48\1-12ndis.dat
-  [1,0,-28,-0.25,0,0,0,9,0,1,0,9,0,0, ldraw_lib__48__1_12ndis()],
+  [1,0,-28,-0.25,0,0,0,9,0,1,0,9,0,0, ldraw_lib__48__1_12ndis(realsolid)],
 // 1 0 -28 -0.25 0 0 0 9 0 1 0 -9 0 0 48\1-12ndis.dat
-  [1,0,-28,-0.25,0,0,0,9,0,1,0,-9,0,0, ldraw_lib__48__1_12ndis()],
+  [1,0,-28,-0.25,0,0,0,9,0,1,0,-9,0,0, ldraw_lib__48__1_12ndis(realsolid)],
 // 1 0 28 -0.25 0 0 0 -9 0 1 0 -9 0 0 48\1-12ndis.dat
-  [1,0,28,-0.25,0,0,0,-9,0,1,0,-9,0,0, ldraw_lib__48__1_12ndis()],
+  [1,0,28,-0.25,0,0,0,-9,0,1,0,-9,0,0, ldraw_lib__48__1_12ndis(realsolid)],
 // 1 0 28 -0.25 0 0 0 -9 0 1 0 9 0 0 48\1-12ndis.dat
-  [1,0,28,-0.25,0,0,0,-9,0,1,0,9,0,0, ldraw_lib__48__1_12ndis()],
+  [1,0,28,-0.25,0,0,0,-9,0,1,0,9,0,0, ldraw_lib__48__1_12ndis(realsolid)],
 // 1 4 -28 -0.25 0 0 0 -9 0 1 0 9 0 0 48\2-4ndis.dat
-  [1,4,-28,-0.25,0,0,0,-9,0,1,0,9,0,0, ldraw_lib__48__2_4ndis()],
+  [1,4,-28,-0.25,0,0,0,-9,0,1,0,9,0,0, ldraw_lib__48__2_4ndis(realsolid)],
 // 1 4 28 -0.25 0 0 0 9 0 1 0 9 0 0 48\2-4ndis.dat
-  [1,4,28,-0.25,0,0,0,9,0,1,0,9,0,0, ldraw_lib__48__2_4ndis()],
+  [1,4,28,-0.25,0,0,0,9,0,1,0,9,0,0, ldraw_lib__48__2_4ndis(realsolid)],
 // 4 0 19 -0.25 9 -19 -0.25 9 -23.5 -0.25 7.794 23.5 -0.25 7.794
   [4,0,19,-0.25,9,-19,-0.25,9,-23.5,-0.25,7.794,23.5,-0.25,7.794],
 // 4 0 23.5 -0.25 -7.794 -23.5 -0.25 -7.794 -19 -0.25 -9 19 -0.25 -9
@@ -134,5 +135,5 @@ function ldraw_lib__190295f() = [
   [3,4,28,-0.25,-9,19,-0.25,-9,0,-0.25,-11],
 ];
 module ldraw_lib__190295f(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__190295f(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__190295f(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__190295f(line=0.2);

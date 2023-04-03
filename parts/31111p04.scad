@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/31111s01.scad>
-function ldraw_lib__31111p04() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__31111p04(realsolid=false) = [
 // 0 Duplo Brick  2 x  4 x  2 with Giraffe Head Pattern
 // 0 Name: 31111p04.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -18,7 +19,7 @@ function ldraw_lib__31111p04() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\31111s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__31111s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__31111s01(realsolid)],
 // 
 // 4 0 3.2 12.2 -40 5.4 10 -40 3 8.6 -40 0.6 11.2 -40
   [4,0,3.2,12.2,-40,5.4,10,-40,3,8.6,-40,0.6,11.2,-40],
@@ -1052,5 +1053,5 @@ function ldraw_lib__31111p04() = [
   [3,484,-3.8,75.4,-40,-6.8,75.4,-40,-0.8,76.8,-40],
 ];
 module ldraw_lib__31111p04(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__31111p04(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__31111p04(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__31111p04(line=0.2);

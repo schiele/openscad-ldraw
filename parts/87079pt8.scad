@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/87079s01.scad>
-function ldraw_lib__87079pt8() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__87079pt8(realsolid=false) = [
 // 0 Tile  2 x  4 with "Andrea" and Music Notes Pattern
 // 0 Name: 87079pt8.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -17,7 +18,7 @@ function ldraw_lib__87079pt8() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\87079s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__87079s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__87079s01(realsolid)],
 // 4 16 -24.1 0 5.5 -24 0 10.4 -24.6 0 10.1 -25.1 0 9.2
   [4,16,-24.1,0,5.5,-24,0,10.4,-24.6,0,10.1,-25.1,0,9.2],
 // 4 16 -24.1 0 5.5 -25.1 0 9.2 -27 0 2.6 -26 0 0.2
@@ -1566,5 +1567,5 @@ function ldraw_lib__87079pt8() = [
   [4,16,9.26,0,15.72,0,0,20,7.07,0,13.4,8.17,0,12.58],
 ];
 module ldraw_lib__87079pt8(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__87079pt8(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__87079pt8(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__87079pt8(line=0.2);

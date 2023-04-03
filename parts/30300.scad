@@ -4,7 +4,8 @@ use <../p/stug-4x4.scad>
 use <../p/stug4-1x4.scad>
 use <../p/stug4-4x4.scad>
 use <../p/stug4-5x5.scad>
-function ldraw_lib__30300() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__30300(realsolid=false) = [
 // 0 Tipper Bucket  8 x 12 x  3.333
 // 0 Name: 30300.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -24,17 +25,17 @@ function ldraw_lib__30300() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\30300s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30300s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30300s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\30300s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__30300s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__30300s01(realsolid)],
 // 1 16 0 0 20 0 0 -1 0 1 0 1 0 0 stug-4x4.dat
-  [1,16,0,0,20,0,0,-1,0,1,0,1,0,0, ldraw_lib__stug_4x4()],
+  [1,16,0,0,20,0,0,-1,0,1,0,1,0,0, ldraw_lib__stug_4x4(realsolid)],
 // 1 16 0 2.75 60 1 0 0 0 -1.3125 0 0 0 1 stug4-5x5.dat
-  [1,16,0,2.75,60,1,0,0,0,-1.3125,0,0,0,1, ldraw_lib__stug4_5x5()],
+  [1,16,0,2.75,60,1,0,0,0,-1.3125,0,0,0,1, ldraw_lib__stug4_5x5(realsolid)],
 // 1 16 10 2.75 -30 1 0 0 0 -1.3125 0 0 0 1 stug4-4x4.dat
-  [1,16,10,2.75,-30,1,0,0,0,-1.3125,0,0,0,1, ldraw_lib__stug4_4x4()],
+  [1,16,10,2.75,-30,1,0,0,0,-1.3125,0,0,0,1, ldraw_lib__stug4_4x4(realsolid)],
 // 1 16 -40 2.75 -30 0 0 -1 0 -1.3125 0 1 0 0 stug4-1x4.dat
-  [1,16,-40,2.75,-30,0,0,-1,0,-1.3125,0,1,0,0, ldraw_lib__stug4_1x4()],
+  [1,16,-40,2.75,-30,0,0,-1,0,-1.3125,0,1,0,0, ldraw_lib__stug4_1x4(realsolid)],
 // 4 16 -60 -72 -80 60 -72 -80 58.447 -72 -76.25 -58.4 -72 -76.25
   [4,16,-60,-72,-80,60,-72,-80,58.447,-72,-76.25,-58.4,-72,-76.25],
 // 2 24 60 -72 -80 -60 -72 -80
@@ -115,5 +116,5 @@ function ldraw_lib__30300() = [
   [4,16,50.8,8,116.9,47.073,8,116.3,-47.07,8,116.3,-50.8,8,116.9],
 ];
 module ldraw_lib__30300(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__30300(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__30300(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__30300(line=0.2);

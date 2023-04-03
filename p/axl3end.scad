@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__axl3end() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__axl3end(realsolid=false) = [
 // 0 Technic Axle Hole Semi-Reduced End Surface
 // 0 Name: axl3end.dat
 // 0 Author: Max Martin Richter [MMR1988]
@@ -41,5 +42,5 @@ function ldraw_lib__axl3end() = [
   [4,16,-2.5,0,-2.5,2.5,0,-2.5,2.5,0,2.5,-2.5,0,2.5],
 ];
 module ldraw_lib__axl3end(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__axl3end(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__axl3end(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__axl3end(line=0.2);

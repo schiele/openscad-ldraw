@@ -2,7 +2,8 @@ use <../lib.scad>
 use <s/3960p0is01.scad>
 use <s/3960s01.scad>
 use <s/3960s05.scad>
-function ldraw_lib__3960p0i() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3960p0i(realsolid=false) = [
 // 0 Dish  4 x  4 Inverted with Orange Basket Ball Lines Pattern
 // 0 Name: 3960p0i.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -21,20 +22,20 @@ function ldraw_lib__3960p0i() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3960s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3960s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3960s01(realsolid)],
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3960p0is01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3960p0is01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3960p0is01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 -1 s\3960p0is01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__3960p0is01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__3960p0is01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\3960p0is01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__3960p0is01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__3960p0is01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 -1 s\3960p0is01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__3960p0is01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__3960p0is01(realsolid)],
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3960s05.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3960s05()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3960s05(realsolid)],
 ];
 module ldraw_lib__3960p0i(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3960p0i(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3960p0i(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3960p0i(line=0.2);

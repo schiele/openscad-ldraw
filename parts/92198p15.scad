@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/92198p15s01.scad>
 use <s/92198s01.scad>
-function ldraw_lib__92198p15() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__92198p15(realsolid=false) = [
 // 0 Figure Friends Head with Green Eyes, Nougat Lips, Freckles and Closed Mouth Pattern
 // 0 Name: 92198p15.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -20,11 +21,11 @@ function ldraw_lib__92198p15() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\92198s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__92198s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__92198s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\92198p15s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__92198p15s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__92198p15s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\92198p15s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__92198p15s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__92198p15s01(realsolid)],
 // 5 24 0 25.49 -12.39 3.39 23.09 -13.11 0 23.1 -13.86 2.87 25.46 -11.32
   [5,24,0,25.49,-12.39,3.39,23.09,-13.11,0,23.1,-13.86,2.87,25.46,-11.32],
 // 5 24 3.39 23.09 -13.11 0 23.1 -13.86 0 25.49 -12.39 4.08 20.01 -14.07
@@ -351,5 +352,5 @@ function ldraw_lib__92198p15() = [
   [3,16,-7.78,19.34,-11.69,-3.39,23.09,-13.11,-4.08,20.01,-14.07],
 ];
 module ldraw_lib__92198p15(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__92198p15(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__92198p15(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__92198p15(line=0.2);

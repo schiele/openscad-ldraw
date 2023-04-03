@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/t1053s01.scad>
-function ldraw_lib__t1053p05() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__t1053p05(realsolid=false) = [
 // 0 ~| Circuit Cubes Device PCB with Tilt Switch Tracks Pattern
 // 0 Name: t1053p05.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -17,7 +18,7 @@ function ldraw_lib__t1053p05() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\t1053s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__t1053s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__t1053s01(realsolid)],
 // 4 494 26.6 -4.5 23 21.1 -4.5 23 11.6 -4.5 12.5396 13.6 -4.5 9
   [4,494,26.6,-4.5,23,21.1,-4.5,23,11.6,-4.5,12.5396,13.6,-4.5,9],
 // 4 494 28 -4.5 -27 -28 -4.5 -27 -28 -4.5 -33 28 -4.5 -33
@@ -62,5 +63,5 @@ function ldraw_lib__t1053p05() = [
   [3,16,-19.3149,-4.5,15,-26.6,-4.5,23,-28,-4.5,-27],
 ];
 module ldraw_lib__t1053p05(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__t1053p05(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__t1053p05(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__t1053p05(line=0.2);

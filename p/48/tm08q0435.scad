@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__48__tm08q0435() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__48__tm08q0435(realsolid=false) = [
 // 0 Mixed-Mode Torus Tube  1 x 0.0435 x 0.1250
 // 0 Name: 48\tm08q0435.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -632,5 +633,5 @@ function ldraw_lib__48__tm08q0435() = [
   [5,24,0.7355,-0.0166,0.7355,0.7379,0,0.7379,0.8252,-0.0166,0.6332,0.6387,-0.0166,0.8323],
 ];
 module ldraw_lib__48__tm08q0435(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__48__tm08q0435(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__48__tm08q0435(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__48__tm08q0435(line=0.2);

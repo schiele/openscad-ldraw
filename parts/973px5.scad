@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/1-4cyli.scad>
 use <s/973s01.scad>
-function ldraw_lib__973px5() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__973px5(realsolid=false) = [
 // 0 Minifig Torso Female Outline with White Tank Top with "APERTURE" over Bright Light Blue Tank Top Pattern
 // 0 Name: 973px5.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -18,9 +19,9 @@ function ldraw_lib__973px5() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01(realsolid)],
 // 1 0 0 -4 0 4.243 0 -4.243 0 -8 0 -4.243 0 -4.243 1-4cyli.dat
-  [1,0,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli()],
+  [1,0,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli(realsolid)],
 // 0 // Front
 // 4 0 -16.9 31.1 -10 -17.6 30.85 -10 -18 31.5 -10 -17.15 31.5 -10
   [4,0,-16.9,31.1,-10,-17.6,30.85,-10,-18,31.5,-10,-17.15,31.5,-10],
@@ -1778,5 +1779,5 @@ function ldraw_lib__973px5() = [
   [4,0,-15.6,29.05,10,-16.3,30.1,10,-16.95,29.85,10,-16.35,28.95,10],
 ];
 module ldraw_lib__973px5(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__973px5(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__973px5(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__973px5(line=0.2);

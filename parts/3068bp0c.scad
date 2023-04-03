@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3068bs01.scad>
-function ldraw_lib__3068bp0c() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3068bp0c(realsolid=false) = [
 // 0 Tile  2 x  2 with Gold Star with Brick in Center Pattern
 // 0 Name: 3068bp0c.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -17,7 +18,7 @@ function ldraw_lib__3068bp0c() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3068bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3068bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3068bs01(realsolid)],
 // 
 // 4 82 0 0 5.2 -1.94 0 5.697 -2.1 0 5.2 -1.94 0 4.703
   [4,82,0,0,5.2,-1.94,0,5.697,-2.1,0,5.2,-1.94,0,4.703],
@@ -199,5 +200,5 @@ function ldraw_lib__3068bp0c() = [
   [3,16,-20,0,20,-20,0,-20,-17.128,0,5.565],
 ];
 module ldraw_lib__3068bp0c(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3068bp0c(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3068bp0c(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3068bp0c(line=0.2);

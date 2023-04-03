@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/4-4cylc.scad>
 use <s/28588s01.scad>
-function ldraw_lib__28588() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__28588(realsolid=false) = [
 // 0 Animal Snake Head with Open Mouth, Fangs and Curved Neck with Bar
 // 0 Name: 28588.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -18,11 +19,11 @@ function ldraw_lib__28588() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\28588s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__28588s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__28588s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\28588s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__28588s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__28588s01(realsolid)],
 // 1 16 0 0 8 4 0 0 0 0 4 0 -8 0 4-4cylc.dat
-  [1,16,0,0,8,4,0,0,0,0,4,0,-8,0, ldraw_lib__4_4cylc()],
+  [1,16,0,0,8,4,0,0,0,0,4,0,-8,0, ldraw_lib__4_4cylc(realsolid)],
 // 3 16 1.324 -32.485 -23.899 -1.324 -32.485 -23.899 0 -31.589 -24.126
   [3,16,1.324,-32.485,-23.899,-1.324,-32.485,-23.899,0,-31.589,-24.126],
 // 3 16 -1.417 -43.893 -13.211 1.417 -43.893 -13.211 0 -43.04 -12.866
@@ -147,5 +148,5 @@ function ldraw_lib__28588() = [
   [5,24,0,-39.78,-26.499,0,-39.807,-27.336,-2.296,-40.09,-27.159,2.296,-40.09,-27.159],
 ];
 module ldraw_lib__28588(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__28588(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__28588(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__28588(line=0.2);

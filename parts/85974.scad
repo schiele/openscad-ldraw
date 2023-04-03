@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/4-4ring3.scad>
 use <../p/stud4o.scad>
-function ldraw_lib__85974() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__85974(realsolid=false) = [
 // 0 Minifig Hair Long with One Front Lock
 // 0 Name: 85974.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -22,10 +23,10 @@ function ldraw_lib__85974() = [
 // 
 // 
 // 1 16 0 -4 0 0 0 -1 0 -1 0 1 0 0 stud4o.dat
-  [1,16,0,-4,0,0,0,-1,0,-1,0,1,0,0, ldraw_lib__stud4o()],
+  [1,16,0,-4,0,0,0,-1,0,-1,0,1,0,0, ldraw_lib__stud4o(realsolid)],
 // 0 // inside
 // 1 16 0 0 0 2.66667 0 0 0 -1 0 0 0 2.66667 4-4ring3.dat
-  [1,16,0,0,0,2.66667,0,0,0,-1,0,0,0,2.66667, ldraw_lib__4_4ring3()],
+  [1,16,0,0,0,2.66667,0,0,0,-1,0,0,0,2.66667, ldraw_lib__4_4ring3(realsolid)],
 // 3 16 7.414 2.49 -10.658 4.401 3.516 -12.978 6.636 1.698 -11.159
   [3,16,7.414,2.49,-10.658,4.401,3.516,-12.978,6.636,1.698,-11.159],
 // 3 16 4.401 3.516 -12.978 -0.029 1.698 -12.944 6.636 1.698 -11.159
@@ -4345,5 +4346,5 @@ function ldraw_lib__85974() = [
   [2,24,15.1,20.774,-3.114,13.103,15.716,-2.932],
 ];
 module ldraw_lib__85974(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__85974(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__85974(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__85974(line=0.2);

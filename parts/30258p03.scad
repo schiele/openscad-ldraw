@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/30258s01.scad>
-function ldraw_lib__30258p03() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__30258p03(realsolid=false) = [
 // 0 Roadsign Clip-on  2 x  2 Square with Pedestrian Crossing Pattern
 // 0 Name: 30258p03.dat
 // 0 Author: Chris Dee [cwdee]
@@ -236,9 +237,9 @@ function ldraw_lib__30258p03() = [
   [3,1,-17,15,-9,-19,-19,-9,0,-14.5,-9],
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\30258s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30258s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30258s01(realsolid)],
 // 0
 ];
 module ldraw_lib__30258p03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__30258p03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__30258p03(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__30258p03(line=0.2);

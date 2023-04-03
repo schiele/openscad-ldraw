@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/1-4ering.scad>
 use <s/25269s01.scad>
-function ldraw_lib__25269p05() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__25269p05(realsolid=false) = [
 // 0 Tile  1 x  1 Corner Round with Orange, Dark Turquoise, Bright Pink, Coral, and Bright Light Orange Feathers Pattern
 // 0 Name: 25269p05.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -18,9 +19,9 @@ function ldraw_lib__25269p05() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\25269s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__25269s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__25269s01(realsolid)],
 // 1 16 -10 0 10 0 0 20 0 1 0 -20 0 0 1-4ering.dat
-  [1,16,-10,0,10,0,0,20,0,1,0,-20,0,0, ldraw_lib__1_4ering()],
+  [1,16,-10,0,10,0,0,20,0,1,0,-20,0,0, ldraw_lib__1_4ering(realsolid)],
 // 4 191 5.7 0 7.8 9 0 9 -9 0 9 0.1 0 7.6
   [4,191,5.7,0,7.8,9,0,9,-9,0,9,0.1,0,7.6],
 // 4 191 0.1 0 7.6 -9 0 9 -7 0 7.8 -4.6 0 6.7
@@ -169,5 +170,5 @@ function ldraw_lib__25269p05() = [
   [3,16,-10,0,10,-9,0,4.2,-9,0,9],
 ];
 module ldraw_lib__25269p05(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__25269p05(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__25269p05(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__25269p05(line=0.2);

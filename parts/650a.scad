@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <650k01.scad>
-function ldraw_lib__650a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__650a(realsolid=false) = [
 // 0 ~Moved to 650k01
 // 0 Name: 650a.dat
 // 0 Author: [PTadmin]
@@ -16,8 +17,8 @@ function ldraw_lib__650a() = [
 // 
 // 0 // Hinge Plate 2 x 7 with 3L Bendable Coupling Nylon - End 1
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 650k01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__650k01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__650k01(realsolid)],
 ];
 module ldraw_lib__650a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__650a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__650a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__650a(line=0.2);

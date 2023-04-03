@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3068bs01.scad>
-function ldraw_lib__3068bp55() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3068bp55(realsolid=false) = [
 // 0 Tile  2 x  2 with Insectoids Logo in Triangle Pattern
 // 0 Name: 3068bp55.dat
 // 0 Author: Mikkel Bech Jensen [gaia]
@@ -17,7 +18,7 @@ function ldraw_lib__3068bp55() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3068bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3068bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3068bs01(realsolid)],
 // 3 8 -3.358 0 14.087 -6.769 0 8.358 -2.912 0 8.358
   [3,8,-3.358,0,14.087,-6.769,0,8.358,-2.912,0,8.358],
 // 4 8 -3.358 0 14.087 -2.912 0 8.358 -2.141 0 6.815 -.212 0 9.644
@@ -772,5 +773,5 @@ function ldraw_lib__3068bp55() = [
   [4,16,-.212,0,9.644,.441,0,4.03,1.103,0,4.472,1.46,0,6.815],
 ];
 module ldraw_lib__3068bp55(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3068bp55(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3068bp55(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3068bp55(line=0.2);

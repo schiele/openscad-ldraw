@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/6309s01.scad>
-function ldraw_lib__6309pul() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6309pul(realsolid=false) = [
 // 0 Duplo Tile  2 x  2 with Addition Pattern
 // 0 Name: 6309pul.dat
 // 0 Author: Tony Hafner [hafhead]
@@ -17,7 +18,7 @@ function ldraw_lib__6309pul() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\6309s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6309s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6309s01(realsolid)],
 // 
 // 0 Old solid face
 // 0 4 16 -40 0 -40 -40 0 40 40 0 40 40 0 -40
@@ -55,5 +56,5 @@ function ldraw_lib__6309pul() = [
 // 0
 ];
 module ldraw_lib__6309pul(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6309pul(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6309pul(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6309pul(line=0.2);

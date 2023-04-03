@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__30367ps1s07() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__30367ps1s07(realsolid=false) = [
 // 0 ~Cylinder  2 x  2 with Dome Top with SW R2 Pattern Panel  5
 // 0 Name: s\30367ps1s07.dat
 // 0 Author: Daniel Goerner [TK-949]
@@ -71,5 +72,5 @@ function ldraw_lib__s__30367ps1s07() = [
   [3,16,2.34,8.157,-17.76,2.3,8.421,-17.9,2.814,9.039,-18.106],
 ];
 module ldraw_lib__s__30367ps1s07(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__30367ps1s07(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__30367ps1s07(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__30367ps1s07(line=0.2);

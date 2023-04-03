@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box.scad>
-function ldraw_lib__u9253() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__u9253(realsolid=false) = [
 // 0 Cardboard  6 x  6 Thick with Sharp Corners
 // 0 Name: u9253.dat
 // 0 Author: Steffen [Steffen]
@@ -18,8 +19,8 @@ function ldraw_lib__u9253() = [
 // 
 // 
 // 1 16 0 1 0 60 0 0 0 1 0 0 0 60 box.dat
-  [1,16,0,1,0,60,0,0,0,1,0,0,0,60, ldraw_lib__box()],
+  [1,16,0,1,0,60,0,0,0,1,0,0,0,60, ldraw_lib__box(realsolid)],
 ];
 module ldraw_lib__u9253(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__u9253(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__u9253(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__u9253(line=0.2);

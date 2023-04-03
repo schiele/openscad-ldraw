@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/1-4rin18.scad>
 use <../p/1-4rin19.scad>
 use <s/4150s01.scad>
-function ldraw_lib__4150p01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4150p01(realsolid=false) = [
 // 0 Tile  2 x  2 Round with Grille Pattern
 // 0 Name: 4150p01.dat
 // 0 Author: Steve Bliss [sbliss]
@@ -21,7 +22,7 @@ function ldraw_lib__4150p01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4150s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4150s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4150s01(realsolid)],
 // 4 16 -11.25 0 13.75 -6.8886 0 16.6302 -5.8335 0 16.9 -5.8335 0 13.75
   [4,16,-11.25,0,13.75,-6.8886,0,16.6302,-5.8335,0,16.9,-5.8335,0,13.75],
 // 4 0 -5.8335 0 13.75 -5.8335 0 16.9 -2.9165 0 17.5 -2.9165 0 13.75
@@ -169,24 +170,24 @@ function ldraw_lib__4150p01() = [
 // 4 16 16.6302 0 -6.8886 13.75 0 -11.25 13.75 0 -5.8335 16.9 0 -5.8335
   [4,16,16.6302,0,-6.8886,13.75,0,-11.25,13.75,0,-5.8335,16.9,0,-5.8335],
 // 1 0 0 0 0 1 0 0 0 1 0 0 0 1 1-4rin18.dat
-  [1,0,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__1_4rin18()],
+  [1,0,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__1_4rin18(realsolid)],
 // 1 0 0 0 0 0 0 1 0 1 0 -1 0 0 1-4rin18.dat
-  [1,0,0,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__1_4rin18()],
+  [1,0,0,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__1_4rin18(realsolid)],
 // 1 0 0 0 0 -1 0 0 0 1 0 0 0 -1 1-4rin18.dat
-  [1,0,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__1_4rin18()],
+  [1,0,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__1_4rin18(realsolid)],
 // 1 0 0 0 0 0 0 -1 0 1 0 1 0 0 1-4rin18.dat
-  [1,0,0,0,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__1_4rin18()],
+  [1,0,0,0,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__1_4rin18(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 1-4rin19.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__1_4rin19()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__1_4rin19(realsolid)],
 // 1 16 0 0 0 0 0 1 0 1 0 -1 0 0 1-4rin19.dat
-  [1,16,0,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__1_4rin19()],
+  [1,16,0,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__1_4rin19(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 -1 1-4rin19.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__1_4rin19()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__1_4rin19(realsolid)],
 // 1 16 0 0 0 0 0 -1 0 1 0 1 0 0 1-4rin19.dat
-  [1,16,0,0,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__1_4rin19()],
+  [1,16,0,0,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__1_4rin19(realsolid)],
 // 0
 // 
 ];
 module ldraw_lib__4150p01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4150p01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4150p01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4150p01(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__197925a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__197925a(realsolid=false) = [
 // 0 Sticker  1.1 x  2.9 with Black "MC 5580" on White Background and Black Border
 // 0 Name: 197925a.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -18,7 +19,7 @@ function ldraw_lib__197925a() = [
 // 
 // 
 // 1 16 0 -0.25 0 29 0 0 0 0.25 0 0 0 11 box5-12.dat
-  [1,16,0,-0.25,0,29,0,0,0,0.25,0,0,0,11, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,29,0,0,0,0.25,0,0,0,11, ldraw_lib__box5_12(realsolid)],
 // 4 0 -24.27 -0.25 -3.8 -22.07 -0.25 -3.8 -22.07 -0.25 1.32 -24.27 -0.25 3.87
   [4,0,-24.27,-0.25,-3.8,-22.07,-0.25,-3.8,-22.07,-0.25,1.32,-24.27,-0.25,3.87],
 // 4 0 -22.07 -0.25 1.32 -20.8 -0.25 -3.8 -19.95 -0.25 -1.08 -21.27 -0.25 3.87
@@ -643,5 +644,5 @@ function ldraw_lib__197925a() = [
   [4,0,-29,-0.25,11,-29,-0.25,-11,-27,-0.25,-9,-27,-0.25,9],
 ];
 module ldraw_lib__197925a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__197925a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__197925a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__197925a(line=0.2);

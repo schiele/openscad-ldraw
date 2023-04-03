@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__973pars03() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__973pars03(realsolid=false) = [
 // 0 ~Minifig Torso Blue Vest Back
 // 0 Name: s\973pars03.dat
 // 0 Author: Joerg Sommerer [Brickaneer]
@@ -1041,5 +1042,5 @@ function ldraw_lib__s__973pars03() = [
   [3,125,3.098,20.549,10,4.006,19.538,10,5.593,20.168,10],
 ];
 module ldraw_lib__s__973pars03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__973pars03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__973pars03(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__973pars03(line=0.2);

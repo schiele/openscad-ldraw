@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <19-48edge.scad>
-function ldraw_lib__48__19_48edg() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__48__19_48edg(realsolid=false) = [
 // 0 ~Moved to 48\19-48edge
 // 0 Name: 48\19-48edg.dat
 // 0 Author: [PTadmin]
@@ -16,8 +17,8 @@ function ldraw_lib__48__19_48edg() = [
 // 
 // 0 // Hi-Res Circle 0.3958
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 48\19-48edge.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__48__19_48edge()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__48__19_48edge(realsolid)],
 ];
 module ldraw_lib__48__19_48edg(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__48__19_48edg(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__48__19_48edg(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__48__19_48edg(line=0.2);

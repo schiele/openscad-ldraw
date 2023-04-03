@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <3068b.scad>
-function ldraw_lib__63327() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__63327(realsolid=false) = [
 // 0 =Tile  2 x  2 with Groove
 // 0 Name: 63327.dat
 // 0 Author: Rolf Osterthun [Rolf]
@@ -18,8 +19,8 @@ function ldraw_lib__63327() = [
 // 0 // Part 63327 is the metallic lacquered counterpart of 3068b
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 3068b.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3068b()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3068b(realsolid)],
 ];
 module ldraw_lib__63327(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__63327(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__63327(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__63327(line=0.2);

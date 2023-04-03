@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/4-4ering.scad>
 use <s/98138s01.scad>
-function ldraw_lib__98138ps3() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__98138ps3(realsolid=false) = [
 // 0 Tile  1 x  1 Round with Electronic Eye Pattern
 // 0 Name: 98138ps3.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -18,9 +19,9 @@ function ldraw_lib__98138ps3() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\98138s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01(realsolid)],
 // 1 16 0 0 0 9 0 0 0 1 0 0 0 9 4-4ering.dat
-  [1,16,0,0,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4ering()],
+  [1,16,0,0,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4ering(realsolid)],
 // 
 // 4 80 -6.8 0 0.75 -6.825 0 0 -6 0 0 -6.75 0 0.9
   [4,80,-6.8,0,0.75,-6.825,0,0,-6,0,0,-6.75,0,0.9],
@@ -1230,5 +1231,5 @@ function ldraw_lib__98138ps3() = [
   [3,16,-1.25,0,2.35,-1.25,0,1.8,-0.7,0,1.8],
 ];
 module ldraw_lib__98138ps3(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__98138ps3(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__98138ps3(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__98138ps3(line=0.2);

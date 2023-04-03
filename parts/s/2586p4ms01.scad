@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__2586p4ms01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__2586p4ms01(realsolid=false) = [
 // 0 ~Minifig Shield Ovoid with Gold Lion Head on White and Blue Pattern - Half
 // 0 Name: s\2586p4ms01.dat
 // 0 Author: Yann Bouzon [Zaghor]
@@ -539,5 +540,5 @@ function ldraw_lib__s__2586p4ms01() = [
   [3,82,-17.6,-18.6,-8,-20,-14.5,-8,-17.8,-10.1,-8],
 ];
 module ldraw_lib__s__2586p4ms01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__2586p4ms01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__2586p4ms01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__2586p4ms01(line=0.2);

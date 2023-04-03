@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__20380s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__20380s02(realsolid=false) = [
 // 0 ~Figure Friends Asymmetric Layered Skirt Short Ruffle
 // 0 Name: s\20380s02.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -1540,5 +1541,5 @@ function ldraw_lib__s__20380s02() = [
   [3,16,-2.6034,-35.5697,-4.8169,-2.8415,-36.2601,-4.8552,-3.6813,-36.6793,-4.8192],
 ];
 module ldraw_lib__s__20380s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__20380s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__20380s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__20380s02(line=0.2);

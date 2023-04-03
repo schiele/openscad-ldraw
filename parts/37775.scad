@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/1-4chrd.scad>
 use <../p/4-4cylc.scad>
-function ldraw_lib__37775() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__37775(realsolid=false) = [
 // 0 Minifig Candle Flame
 // 0 Name: 37775.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -18,11 +19,11 @@ function ldraw_lib__37775() = [
 // 
 // 
 // 1 16 0 0 0 4 0 0 0 -5 0 0 0 4 4-4cylc.dat
-  [1,16,0,0,0,4,0,0,0,-5,0,0,0,4, ldraw_lib__4_4cylc()],
+  [1,16,0,0,0,4,0,0,0,-5,0,0,0,4, ldraw_lib__4_4cylc(realsolid)],
 // 1 16 0 -5 0 2.82843 0 2.82843 0 5 0 -2.82843 0 2.82843 1-4chrd.dat
-  [1,16,0,-5,0,2.82843,0,2.82843,0,5,0,-2.82843,0,2.82843, ldraw_lib__1_4chrd()],
+  [1,16,0,-5,0,2.82843,0,2.82843,0,5,0,-2.82843,0,2.82843, ldraw_lib__1_4chrd(realsolid)],
 // 1 16 0 5 0 2 0 0 0 -5 0 0 0 2 4-4cylc.dat
-  [1,16,0,5,0,2,0,0,0,-5,0,0,0,2, ldraw_lib__4_4cylc()],
+  [1,16,0,5,0,2,0,0,0,-5,0,0,0,2, ldraw_lib__4_4cylc(realsolid)],
 // 4 16 2.8284 -5 -4.5 2.8284 -6.1 -0.4 2.8284 -7 -0.7 2.8284 -5.4 -4.6
   [4,16,2.8284,-5,-4.5,2.8284,-6.1,-0.4,2.8284,-7,-0.7,2.8284,-5.4,-4.6],
 // 4 16 2.8284 -5.4 -4.6 2.8284 -7 -0.7 2.8284 -7.8 -1.4 2.8284 -7.6 -6.3
@@ -650,8 +651,8 @@ function ldraw_lib__37775() = [
 // 3 16 -1.5308 -5 -3.6956 -2.8284 -5 -4.5 -2.8284 -5 -2.8284
   [3,16,-1.5308,-5,-3.6956,-2.8284,-5,-4.5,-2.8284,-5,-2.8284],
 // 1 16 0 -5 0 -2.82843 0 -2.82843 0 5 0 -2.82843 0 2.82843 1-4chrd.dat
-  [1,16,0,-5,0,-2.82843,0,-2.82843,0,5,0,-2.82843,0,2.82843, ldraw_lib__1_4chrd()],
+  [1,16,0,-5,0,-2.82843,0,-2.82843,0,5,0,-2.82843,0,2.82843, ldraw_lib__1_4chrd(realsolid)],
 ];
 module ldraw_lib__37775(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__37775(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__37775(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__37775(line=0.2);

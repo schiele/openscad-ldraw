@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <30086.scad>
 use <30087.scad>
-function ldraw_lib__75977() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__75977(realsolid=false) = [
 // 0 Boat Inflatable 12 x  6 x  1.333 (Complete)
 // 0 Name: 75977.dat
 // 0 Author: Guy Vivan [guyvivan]
@@ -16,11 +17,11 @@ function ldraw_lib__75977() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 30086.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__30086()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__30086(realsolid)],
 // 1 16 0 -24 0 1 0 0 0 1 0 0 0 1 30087.dat
-  [1,16,0,-24,0,1,0,0,0,1,0,0,0,1, ldraw_lib__30087()],
+  [1,16,0,-24,0,1,0,0,0,1,0,0,0,1, ldraw_lib__30087(realsolid)],
 // 0
 ];
 module ldraw_lib__75977(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__75977(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__75977(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__75977(line=0.2);

@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/1-4cyli.scad>
-function ldraw_lib__s__973psys01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__973psys01(realsolid=false) = [
 // 0 ~Minifig Torso w/ SW Loose Dress with Folds Pattern Dress
 // 0 Name: s\973psys01.dat
 // 0 Author: Daniel Goerner [TK-949]
@@ -23,7 +24,7 @@ function ldraw_lib__s__973psys01() = [
   [4,16,-14.345,2,10,-12,0,10,12,0,10,14.345,2,10],
 // 0 // Neck mark
 // 1 0 0 -4 0 4.243 0 -4.243 0 -8 0 -4.243 0 -4.243 1-4cyli.dat
-  [1,0,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli()],
+  [1,0,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli(realsolid)],
 // 0 // Pattern
 // 4 0 -15.792 27.209 -10 -16.527 27.207 -10 -16.464 27.802 -10 -16.247 28.207 -10
   [4,0,-15.792,27.209,-10,-16.527,27.207,-10,-16.464,27.802,-10,-16.247,28.207,-10],
@@ -497,5 +498,5 @@ function ldraw_lib__s__973psys01() = [
   [4,80,-14.486,30.85,-10,14.571,30.85,-10,14.571,28.559,-10,-14.486,28.559,-10],
 ];
 module ldraw_lib__s__973psys01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__973psys01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__973psys01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__973psys01(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <4218b.scad>
-function ldraw_lib__30061() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__30061(realsolid=false) = [
 // 0 =Roller Door Normal
 // 0 Name: 30061.dat
 // 0 Author: Rolf Osterthun [Rolf]
@@ -20,8 +21,8 @@ function ldraw_lib__30061() = [
 // 0 // Part 30061 is the transparent counterpart of 4218b
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 4218b.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4218b()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4218b(realsolid)],
 ];
 module ldraw_lib__30061(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__30061(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__30061(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__30061(line=0.2);

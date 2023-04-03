@@ -4,7 +4,8 @@ use <../p/axlehol2.scad>
 use <../p/axlehole.scad>
 use <s/2418s01.scad>
 use <../p/stug-2x2.scad>
-function ldraw_lib__2418b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2418b(realsolid=false) = [
 // 0 Windscreen  6 x  6 Octagonal Canopy with Axlehole
 // 0 Name: 2418b.dat
 // 0 Author: James Jessiman
@@ -27,18 +28,18 @@ function ldraw_lib__2418b() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2418s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2418s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2418s01(realsolid)],
 // 
 // 1 16 0 0 0 1 0 0 0 4 0 0 0 1 axlehole.dat
-  [1,16,0,0,0,1,0,0,0,4,0,0,0,1, ldraw_lib__axlehole()],
+  [1,16,0,0,0,1,0,0,0,4,0,0,0,1, ldraw_lib__axlehole(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 axlehol2.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__axlehol2()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__axlehol2(realsolid)],
 // 1 16 0 4 0 1 0 0 0 1 0 0 0 1 axlehol2.dat
-  [1,16,0,4,0,1,0,0,0,1,0,0,0,1, ldraw_lib__axlehol2()],
+  [1,16,0,4,0,1,0,0,0,1,0,0,0,1, ldraw_lib__axlehol2(realsolid)],
 // 1 16 0 0 0 6 0 0 0 1 0 0 0 6 4-4ndis.dat
-  [1,16,0,0,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4ndis()],
+  [1,16,0,0,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4ndis(realsolid)],
 // 1 16 0 4 0 -6 0 0 0 -1 0 0 0 6 4-4ndis.dat
-  [1,16,0,4,0,-6,0,0,0,-1,0,0,0,6, ldraw_lib__4_4ndis()],
+  [1,16,0,4,0,-6,0,0,0,-1,0,0,0,6, ldraw_lib__4_4ndis(realsolid)],
 // 
 // 4 16 -6 0 6 -10 0 20 -20 0 10 -6 0 0
   [4,16,-6,0,6,-10,0,20,-20,0,10,-6,0,0],
@@ -75,7 +76,7 @@ function ldraw_lib__2418b() = [
   [4,16,0,4,6,-10,4,20,10,4,20,6,4,6],
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 stug-2x2.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_2x2()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_2x2(realsolid)],
 // 
 // 4 16 20 24 60 -20 24 60 -10 0 20 10 0 20
   [4,16,20,24,60,-20,24,60,-10,0,20,10,0,20],
@@ -95,5 +96,5 @@ function ldraw_lib__2418b() = [
   [4,16,60,24,20,20,24,60,10,0,20,20,0,10],
 ];
 module ldraw_lib__2418b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2418b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2418b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2418b(line=0.2);

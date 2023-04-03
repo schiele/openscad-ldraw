@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <box3u2p.scad>
 use <rect.scad>
-function ldraw_lib__ddoorhinge() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__ddoorhinge(realsolid=false) = [
 // 0 Duplo Door Hinge Socket
 // 0 Name: ddoorhinge.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -16,11 +17,11 @@ function ldraw_lib__ddoorhinge() = [
 // 
 // 
 // 1 16 2.5 0 -0.5 0 6 0 0 0 -6 0.5 0 0 box3u2p.dat
-  [1,16,2.5,0,-0.5,0,6,0,0,0,-6,0.5,0,0, ldraw_lib__box3u2p()],
+  [1,16,2.5,0,-0.5,0,6,0,0,0,-6,0.5,0,0, ldraw_lib__box3u2p(realsolid)],
 // 1 16 -4.5 0 -6 0 0 -2 -3 0 0 0 1 0 rect.dat
-  [1,16,-4.5,0,-6,0,0,-2,-3,0,0,0,1,0, ldraw_lib__rect()],
+  [1,16,-4.5,0,-6,0,0,-2,-3,0,0,0,1,0, ldraw_lib__rect(realsolid)],
 // 1 16 4.5 0 -6 0 0 -2 -3 0 0 0 1 0 rect.dat
-  [1,16,4.5,0,-6,0,0,-2,-3,0,0,0,1,0, ldraw_lib__rect()],
+  [1,16,4.5,0,-6,0,0,-2,-3,0,0,0,1,0, ldraw_lib__rect(realsolid)],
 // 4 16 8.5 6 -1 8.5 -6 -1 6.5 -3 -6 6.5 3 -6
   [4,16,8.5,6,-1,8.5,-6,-1,6.5,-3,-6,6.5,3,-6],
 // 4 16 -8.5 -6 -1 -8.5 6 -1 -6.5 3 -6 -6.5 -3 -6
@@ -34,7 +35,7 @@ function ldraw_lib__ddoorhinge() = [
 // 2 24 6.5 -3 -6 8.5 -6 -1
   [2,24,6.5,-3,-6,8.5,-6,-1],
 // 1 16 -2.5 0 -0.5 0 -6 0 0 0 -6 0.5 0 0 box3u2p.dat
-  [1,16,-2.5,0,-0.5,0,-6,0,0,0,-6,0.5,0,0, ldraw_lib__box3u2p()],
+  [1,16,-2.5,0,-0.5,0,-6,0,0,0,-6,0.5,0,0, ldraw_lib__box3u2p(realsolid)],
 // 4 16 2.5 6 -1 2.5 -6 -1 2.5 -6 0 2.5 6 0
   [4,16,2.5,6,-1,2.5,-6,-1,2.5,-6,0,2.5,6,0],
 // 4 16 -2.5 -6 -1 -2.5 6 -1 -2.5 6 0 -2.5 -6 0
@@ -133,5 +134,5 @@ function ldraw_lib__ddoorhinge() = [
   [5,24,2.039,3.5294,-5.1177,2.039,-3.5294,-5.1177,2.5,3,-6,1.953,4.0038,-4.327],
 ];
 module ldraw_lib__ddoorhinge(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__ddoorhinge(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__ddoorhinge(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__ddoorhinge(line=0.2);

@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__973pw1c() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__973pw1c(realsolid=false) = [
 // 0 ~Minifig Torso with Cavalry General Pattern - Gold
 // 0 Name: s\973pw1c.dat
 // 0 Author: Willy Tschager [Holly-Wood]
@@ -86,5 +87,5 @@ function ldraw_lib__s__973pw1c() = [
 // 0
 ];
 module ldraw_lib__s__973pw1c(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__973pw1c(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__973pw1c(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__973pw1c(line=0.2);

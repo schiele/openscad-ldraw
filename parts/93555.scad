@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/stud2.scad>
-function ldraw_lib__93555() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__93555(realsolid=false) = [
 // 0 Minifig Skate
 // 0 Name: 93555.dat
 // 0 Author: Stan Isachenko [angmarec]
@@ -19,7 +20,7 @@ function ldraw_lib__93555() = [
 // 
 // 
 // 1 16 0 0 0 0 0 -1 0 1 0 1 0 0 stud2.dat
-  [1,16,0,0,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__stud2()],
+  [1,16,0,0,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__stud2(realsolid)],
 // 4 16 -2.75 0 13.069 -2.75 0.911 14.647 -2.75 0.911 7.018 -2.75 0 7.018
   [4,16,-2.75,0,13.069,-2.75,0.911,14.647,-2.75,0.911,7.018,-2.75,0,7.018],
 // 4 16 -2.75 0.911 14.647 -2.294 3.5 19.132 -2.492 2.375 7.116 -2.75 0.911 7.018
@@ -653,5 +654,5 @@ function ldraw_lib__93555() = [
 // 0 // ////
 ];
 module ldraw_lib__93555(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__93555(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__93555(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__93555(line=0.2);

@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/box5.scad>
 use <../p/stud.scad>
 use <../p/stud4.scad>
-function ldraw_lib__3006() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3006(realsolid=false) = [
 // 0 Brick  2 x 10
 // 0 Name: 3006.dat
 // 0 Author: James Jessiman
@@ -21,28 +22,28 @@ function ldraw_lib__3006() = [
 // 
 // 
 // 1 16 80 4 0 1 0 0 0 -5 0 0 0 1 stud4.dat
-  [1,16,80,4,0,1,0,0,0,-5,0,0,0,1, ldraw_lib__stud4()],
+  [1,16,80,4,0,1,0,0,0,-5,0,0,0,1, ldraw_lib__stud4(realsolid)],
 // 1 16 60 4 0 1 0 0 0 -5 0 0 0 1 stud4.dat
-  [1,16,60,4,0,1,0,0,0,-5,0,0,0,1, ldraw_lib__stud4()],
+  [1,16,60,4,0,1,0,0,0,-5,0,0,0,1, ldraw_lib__stud4(realsolid)],
 // 1 16 40 4 0 1 0 0 0 -5 0 0 0 1 stud4.dat
-  [1,16,40,4,0,1,0,0,0,-5,0,0,0,1, ldraw_lib__stud4()],
+  [1,16,40,4,0,1,0,0,0,-5,0,0,0,1, ldraw_lib__stud4(realsolid)],
 // 1 16 20 4 0 1 0 0 0 -5 0 0 0 1 stud4.dat
-  [1,16,20,4,0,1,0,0,0,-5,0,0,0,1, ldraw_lib__stud4()],
+  [1,16,20,4,0,1,0,0,0,-5,0,0,0,1, ldraw_lib__stud4(realsolid)],
 // 1 16 0 4 0 1 0 0 0 -5 0 0 0 1 stud4.dat
-  [1,16,0,4,0,1,0,0,0,-5,0,0,0,1, ldraw_lib__stud4()],
+  [1,16,0,4,0,1,0,0,0,-5,0,0,0,1, ldraw_lib__stud4(realsolid)],
 // 1 16 -20 4 0 1 0 0 0 -5 0 0 0 1 stud4.dat
-  [1,16,-20,4,0,1,0,0,0,-5,0,0,0,1, ldraw_lib__stud4()],
+  [1,16,-20,4,0,1,0,0,0,-5,0,0,0,1, ldraw_lib__stud4(realsolid)],
 // 1 16 -40 4 0 1 0 0 0 -5 0 0 0 1 stud4.dat
-  [1,16,-40,4,0,1,0,0,0,-5,0,0,0,1, ldraw_lib__stud4()],
+  [1,16,-40,4,0,1,0,0,0,-5,0,0,0,1, ldraw_lib__stud4(realsolid)],
 // 1 16 -60 4 0 1 0 0 0 -5 0 0 0 1 stud4.dat
-  [1,16,-60,4,0,1,0,0,0,-5,0,0,0,1, ldraw_lib__stud4()],
+  [1,16,-60,4,0,1,0,0,0,-5,0,0,0,1, ldraw_lib__stud4(realsolid)],
 // 1 16 -80 4 0 1 0 0 0 -5 0 0 0 1 stud4.dat
-  [1,16,-80,4,0,1,0,0,0,-5,0,0,0,1, ldraw_lib__stud4()],
+  [1,16,-80,4,0,1,0,0,0,-5,0,0,0,1, ldraw_lib__stud4(realsolid)],
 // 
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 24 0 96 0 0 0 -20 0 0 0 16 box5.dat
-  [1,16,0,24,0,96,0,0,0,-20,0,0,0,16, ldraw_lib__box5()],
+  [1,16,0,24,0,96,0,0,0,-20,0,0,0,16, ldraw_lib__box5(realsolid)],
 // 
 // 4 16 100 24 20 96 24 16 -96 24 16 -100 24 20
   [4,16,100,24,20,96,24,16,-96,24,16,-100,24,20],
@@ -56,50 +57,50 @@ function ldraw_lib__3006() = [
   [4,16,-100,24,20,-96,24,16,-96,24,-16,-100,24,-20],
 // 
 // 1 16 0 24 0 100 0 0 0 -24 0 0 0 20 box5.dat
-  [1,16,0,24,0,100,0,0,0,-24,0,0,0,20, ldraw_lib__box5()],
+  [1,16,0,24,0,100,0,0,0,-24,0,0,0,20, ldraw_lib__box5(realsolid)],
 // 
 // 1 16 90 0 10 1 0 0 0 1 0 0 0 1 stud.dat
-  [1,16,90,0,10,1,0,0,0,1,0,0,0,1, ldraw_lib__stud()],
+  [1,16,90,0,10,1,0,0,0,1,0,0,0,1, ldraw_lib__stud(realsolid)],
 // 1 16 70 0 10 1 0 0 0 1 0 0 0 1 stud.dat
-  [1,16,70,0,10,1,0,0,0,1,0,0,0,1, ldraw_lib__stud()],
+  [1,16,70,0,10,1,0,0,0,1,0,0,0,1, ldraw_lib__stud(realsolid)],
 // 1 16 50 0 10 1 0 0 0 1 0 0 0 1 stud.dat
-  [1,16,50,0,10,1,0,0,0,1,0,0,0,1, ldraw_lib__stud()],
+  [1,16,50,0,10,1,0,0,0,1,0,0,0,1, ldraw_lib__stud(realsolid)],
 // 1 16 30 0 10 1 0 0 0 1 0 0 0 1 stud.dat
-  [1,16,30,0,10,1,0,0,0,1,0,0,0,1, ldraw_lib__stud()],
+  [1,16,30,0,10,1,0,0,0,1,0,0,0,1, ldraw_lib__stud(realsolid)],
 // 1 16 10 0 10 1 0 0 0 1 0 0 0 1 stud.dat
-  [1,16,10,0,10,1,0,0,0,1,0,0,0,1, ldraw_lib__stud()],
+  [1,16,10,0,10,1,0,0,0,1,0,0,0,1, ldraw_lib__stud(realsolid)],
 // 1 16 -10 0 10 1 0 0 0 1 0 0 0 1 stud.dat
-  [1,16,-10,0,10,1,0,0,0,1,0,0,0,1, ldraw_lib__stud()],
+  [1,16,-10,0,10,1,0,0,0,1,0,0,0,1, ldraw_lib__stud(realsolid)],
 // 1 16 -30 0 10 1 0 0 0 1 0 0 0 1 stud.dat
-  [1,16,-30,0,10,1,0,0,0,1,0,0,0,1, ldraw_lib__stud()],
+  [1,16,-30,0,10,1,0,0,0,1,0,0,0,1, ldraw_lib__stud(realsolid)],
 // 1 16 -50 0 10 1 0 0 0 1 0 0 0 1 stud.dat
-  [1,16,-50,0,10,1,0,0,0,1,0,0,0,1, ldraw_lib__stud()],
+  [1,16,-50,0,10,1,0,0,0,1,0,0,0,1, ldraw_lib__stud(realsolid)],
 // 1 16 -70 0 10 1 0 0 0 1 0 0 0 1 stud.dat
-  [1,16,-70,0,10,1,0,0,0,1,0,0,0,1, ldraw_lib__stud()],
+  [1,16,-70,0,10,1,0,0,0,1,0,0,0,1, ldraw_lib__stud(realsolid)],
 // 1 16 -90 0 10 1 0 0 0 1 0 0 0 1 stud.dat
-  [1,16,-90,0,10,1,0,0,0,1,0,0,0,1, ldraw_lib__stud()],
+  [1,16,-90,0,10,1,0,0,0,1,0,0,0,1, ldraw_lib__stud(realsolid)],
 // 1 16 90 0 -10 1 0 0 0 1 0 0 0 1 stud.dat
-  [1,16,90,0,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__stud()],
+  [1,16,90,0,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__stud(realsolid)],
 // 1 16 70 0 -10 1 0 0 0 1 0 0 0 1 stud.dat
-  [1,16,70,0,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__stud()],
+  [1,16,70,0,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__stud(realsolid)],
 // 1 16 50 0 -10 1 0 0 0 1 0 0 0 1 stud.dat
-  [1,16,50,0,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__stud()],
+  [1,16,50,0,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__stud(realsolid)],
 // 1 16 30 0 -10 1 0 0 0 1 0 0 0 1 stud.dat
-  [1,16,30,0,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__stud()],
+  [1,16,30,0,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__stud(realsolid)],
 // 1 16 10 0 -10 1 0 0 0 1 0 0 0 1 stud.dat
-  [1,16,10,0,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__stud()],
+  [1,16,10,0,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__stud(realsolid)],
 // 1 16 -10 0 -10 1 0 0 0 1 0 0 0 1 stud.dat
-  [1,16,-10,0,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__stud()],
+  [1,16,-10,0,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__stud(realsolid)],
 // 1 16 -30 0 -10 1 0 0 0 1 0 0 0 1 stud.dat
-  [1,16,-30,0,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__stud()],
+  [1,16,-30,0,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__stud(realsolid)],
 // 1 16 -50 0 -10 1 0 0 0 1 0 0 0 1 stud.dat
-  [1,16,-50,0,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__stud()],
+  [1,16,-50,0,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__stud(realsolid)],
 // 1 16 -70 0 -10 1 0 0 0 1 0 0 0 1 stud.dat
-  [1,16,-70,0,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__stud()],
+  [1,16,-70,0,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__stud(realsolid)],
 // 1 16 -90 0 -10 1 0 0 0 1 0 0 0 1 stud.dat
-  [1,16,-90,0,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__stud()],
+  [1,16,-90,0,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__stud(realsolid)],
 // 0
 ];
 module ldraw_lib__3006(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3006(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3006(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3006(line=0.2);

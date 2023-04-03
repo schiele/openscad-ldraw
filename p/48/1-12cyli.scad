@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__48__1_12cyli() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__48__1_12cyli(realsolid=false) = [
 // 0 Hi-Res Cylinder 0.0833
 // 0 Name: 48\1-12cyli.dat
 // 0 Author: Andy Westrate [westrate]
@@ -34,5 +35,5 @@ function ldraw_lib__48__1_12cyli() = [
 // 0
 ];
 module ldraw_lib__48__1_12cyli(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__48__1_12cyli(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__48__1_12cyli(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__48__1_12cyli(line=0.2);

@@ -3,7 +3,8 @@ use <../p/2-4chrd.scad>
 use <../p/2-4ndis.scad>
 use <../p/hipstud.scad>
 use <s/41879s01.scad>
-function ldraw_lib__41879ap01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__41879ap01(realsolid=false) = [
 // 0 Minifig Hips and Legs Short with Black Open Toe Shoes Pattern
 // 0 Name: 41879ap01.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -20,11 +21,11 @@ function ldraw_lib__41879ap01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\41879s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__41879s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__41879s01(realsolid)],
 // 1 16 10 0 0 1 0 0 0 1 0 0 0 1 hipstud.dat
-  [1,16,10,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__hipstud()],
+  [1,16,10,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__hipstud(realsolid)],
 // 1 16 -10 0 0 -1 0 0 0 1 0 0 0 -1 hipstud.dat
-  [1,16,-10,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__hipstud()],
+  [1,16,-10,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__hipstud(realsolid)],
 // 
 // 4 16 18.667 16 -10 18.667 16 -4 1 16 -4 1 16 -10
   [4,16,18.667,16,-10,18.667,16,-4,1,16,-4,1,16,-10],
@@ -49,9 +50,9 @@ function ldraw_lib__41879ap01() = [
   [4,16,-19,24,10,-18.667,16,10,-1,16,10,-1,24,10],
 // 
 // 1 16 10 17.3 -10 -6 0 0 0 0 5.2 0 1 0 2-4chrd.dat
-  [1,16,10,17.3,-10,-6,0,0,0,0,5.2,0,1,0, ldraw_lib__2_4chrd()],
+  [1,16,10,17.3,-10,-6,0,0,0,0,5.2,0,1,0, ldraw_lib__2_4chrd(realsolid)],
 // 1 0 10 17.3 -10 6 0 0 0 0 5.2 0 1 0 2-4ndis.dat
-  [1,0,10,17.3,-10,6,0,0,0,0,5.2,0,1,0, ldraw_lib__2_4ndis()],
+  [1,0,10,17.3,-10,6,0,0,0,0,5.2,0,1,0, ldraw_lib__2_4ndis(realsolid)],
 // 4 0 4 17.3 -10 2.1 17 -10 2.2 23.6 -10 4 22.5 -10
   [4,0,4,17.3,-10,2.1,17,-10,2.2,23.6,-10,4,22.5,-10],
 // 4 0 10 22.5 -10 4 22.5 -10 2.2 23.6 -10 17.9 23.6 -10
@@ -72,9 +73,9 @@ function ldraw_lib__41879ap01() = [
   [4,16,1,16,-10,2.1,17,-10,17.8,17,-10,18.667,16,-10],
 // 
 // 1 16 -10 17.3 -10 6 0 0 0 0 5.2 0 1 0 2-4chrd.dat
-  [1,16,-10,17.3,-10,6,0,0,0,0,5.2,0,1,0, ldraw_lib__2_4chrd()],
+  [1,16,-10,17.3,-10,6,0,0,0,0,5.2,0,1,0, ldraw_lib__2_4chrd(realsolid)],
 // 1 0 -10 17.3 -10 -6 0 0 0 0 5.2 0 1 0 2-4ndis.dat
-  [1,0,-10,17.3,-10,-6,0,0,0,0,5.2,0,1,0, ldraw_lib__2_4ndis()],
+  [1,0,-10,17.3,-10,-6,0,0,0,0,5.2,0,1,0, ldraw_lib__2_4ndis(realsolid)],
 // 4 0 -2.2 23.6 -10 -2.1 17 -10 -4 17.3 -10 -4 22.5 -10
   [4,0,-2.2,23.6,-10,-2.1,17,-10,-4,17.3,-10,-4,22.5,-10],
 // 4 0 -2.2 23.6 -10 -4 22.5 -10 -10 22.5 -10 -17.9 23.6 -10
@@ -95,5 +96,5 @@ function ldraw_lib__41879ap01() = [
   [4,16,-17.8,17,-10,-2.1,17,-10,-1,16,-10,-18.667,16,-10],
 ];
 module ldraw_lib__41879ap01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__41879ap01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__41879ap01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__41879ap01(line=0.2);

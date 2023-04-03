@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/87079s01.scad>
-function ldraw_lib__87079p50() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__87079p50(realsolid=false) = [
 // 0 Tile  2 x  4 with Classic Space Logo Pattern
 // 0 Name: 87079p50.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -17,7 +18,7 @@ function ldraw_lib__87079p50() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\87079s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__87079s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__87079s01(realsolid)],
 // 
 // 4 15 -22.54 0 1.61 -24.64 0 1.82 -24.73 0 0 -22.62 0 0
   [4,15,-22.54,0,1.61,-24.64,0,1.82,-24.73,0,0,-22.62,0,0],
@@ -1091,5 +1092,5 @@ function ldraw_lib__87079p50() = [
   [4,16,-24.73,0,0,-24.64,0,1.82,-27.3,0,-2.05,-25.5,0,-1.05],
 ];
 module ldraw_lib__87079p50(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__87079p50(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__87079p50(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__87079p50(line=0.2);

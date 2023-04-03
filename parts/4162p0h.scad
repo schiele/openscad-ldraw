@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/4162s01.scad>
-function ldraw_lib__4162p0h() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4162p0h(realsolid=false) = [
 // 0 Tile  1 x  8 with "LOM Moulding" Pattern
 // 0 Name: 4162p0h.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -21,7 +22,7 @@ function ldraw_lib__4162p0h() = [
 // 0 // Font match is not perfect, but manually corrected with LD Pattern Creator
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4162s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4162s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4162s01(realsolid)],
 // 0 //
 // 4 15 -41.573 0 5.365 -41.573 0 -4 -40.336 0 -2.893 -40.336 0 5.365
   [4,15,-41.573,0,5.365,-41.573,0,-4,-40.336,0,-2.893,-40.336,0,5.365],
@@ -758,5 +759,5 @@ function ldraw_lib__4162p0h() = [
   [3,16,80,0,10,-0.633,0,5.365,15.733,0,5.365],
 ];
 module ldraw_lib__4162p0h(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4162p0h(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4162p0h(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4162p0h(line=0.2);

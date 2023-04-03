@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__3846p4ka() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__3846p4ka(realsolid=false) = [
 // 0 ~Dark Green Dragon on Medium Nougat and Tan Quarters Pattern
 // 0 Name: s\3846p4ka.dat
 // 0 Author: Joerg Sommerer [Brickaneer]
@@ -1369,5 +1370,5 @@ function ldraw_lib__s__3846p4ka() = [
   [3,19,0,-16,0,-13,-11,0,-0.8686,-15.1747,0],
 ];
 module ldraw_lib__s__3846p4ka(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__3846p4ka(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__3846p4ka(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__3846p4ka(line=0.2);

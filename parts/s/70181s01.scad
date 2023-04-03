@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__70181s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__70181s01(realsolid=false) = [
 // 0 ~Spring Extension 18 x  3.5mm - End Piece
 // 0 Name: s\70181s01.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -741,5 +742,5 @@ function ldraw_lib__s__70181s01() = [
   [5,24,-3.52,0,0,-3.75,.24,0,-3.25,-.06,1.34,-3.26,.04,-1.35],
 ];
 module ldraw_lib__s__70181s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__70181s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__70181s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__70181s01(line=0.2);

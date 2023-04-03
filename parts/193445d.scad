@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__193445d() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__193445d(realsolid=false) = [
 // 0 Sticker  1.1 x  3.0 with Black "MT 5590" on White Panel
 // 0 Name: 193445d.dat
 // 0 Author: Ulrich Röder [UR]
@@ -18,7 +19,7 @@ function ldraw_lib__193445d() = [
 // 
 // 0 // Main
 // 1 16 0 -0.25 0 30 0 0 0 0.25 0 0 0 12 box5-12.dat
-  [1,16,0,-0.25,0,30,0,0,0,0.25,0,0,0,12, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,30,0,0,0,0.25,0,0,0,12, ldraw_lib__box5_12(realsolid)],
 // 
 // 0 // Black
 // 4 0 28 -.25 -10 28 -.25 10 30 -.25 12 30 -.25 -12
@@ -783,5 +784,5 @@ function ldraw_lib__193445d() = [
   [3,15,-15.78,-.25,3.872,-15.181,-.25,1.748,-15.78,-.25,-4.296],
 ];
 module ldraw_lib__193445d(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__193445d(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__193445d(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__193445d(line=0.2);

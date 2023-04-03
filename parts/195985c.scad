@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__195985c() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__195985c(realsolid=false) = [
 // 0 Sticker  1.1 x  1.3 with Yellow Hammer on Black Background
 // 0 Name: 195985c.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -19,7 +20,7 @@ function ldraw_lib__195985c() = [
 // 
 // 
 // 1 16 0 -0.25 0 13 0 0 0 0.25 0 0 0 11 box5-12.dat
-  [1,16,0,-0.25,0,13,0,0,0,0.25,0,0,0,11, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,13,0,0,0,0.25,0,0,0,11, ldraw_lib__box5_12(realsolid)],
 // 4 0 10.6 -0.25 1.8 2.3 -0.25 -2 2.3 -0.25 -8.1 13 -0.25 -11
   [4,0,10.6,-0.25,1.8,2.3,-0.25,-2,2.3,-0.25,-8.1,13,-0.25,-11],
 // 4 14 2 -0.25 6.5 -8.6 -0.25 6.5 -8.6 -0.25 -2 -2.3 -0.25 -2
@@ -42,5 +43,5 @@ function ldraw_lib__195985c() = [
   [3,0,13,-.25,11,2,-.25,6.5,10.6,-.25,1.8],
 ];
 module ldraw_lib__195985c(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__195985c(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__195985c(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__195985c(line=0.2);

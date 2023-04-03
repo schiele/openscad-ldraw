@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/68013s01.scad>
-function ldraw_lib__68013() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__68013(realsolid=false) = [
 // 0 Cylinder Half  1 x  2 with Cutout
 // 0 Name: 68013.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -15,7 +16,7 @@ function ldraw_lib__68013() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\68013s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__68013s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__68013s01(realsolid)],
 // 
 // 3 16 -18.478 24 -7.654 -17.1416 24 -9.6538 -17.1416 20 -9.6538
   [3,16,-18.478,24,-7.654,-17.1416,24,-9.6538,-17.1416,20,-9.6538],
@@ -52,5 +53,5 @@ function ldraw_lib__68013() = [
   [4,16,18.478,24,-7.654,20,24,0,20,0,0,18.478,0,-7.654],
 ];
 module ldraw_lib__68013(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__68013(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__68013(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__68013(line=0.2);

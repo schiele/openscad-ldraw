@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/1-4chrd.scad>
 use <../../p/1-4ndis.scad>
-function ldraw_lib__s__4209s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__4209s01(realsolid=false) = [
 // 0 ~Fire Logo Pattern
 // 0 Name: s\4209s01.dat
 // 0 Author: Niels Karsdorp [nielsk]
@@ -305,22 +306,22 @@ function ldraw_lib__s__4209s01() = [
 // 3 14 48 0 63 47 0 61 56 0 59
   [3,14,48,0,63,47,0,61,56,0,59],
 // 1 0 -93 0 93 0 0 -30 0 1 0 30 0 0 1-4chrd.dat
-  [1,0,-93,0,93,0,0,-30,0,1,0,30,0,0, ldraw_lib__1_4chrd()],
+  [1,0,-93,0,93,0,0,-30,0,1,0,30,0,0, ldraw_lib__1_4chrd(realsolid)],
 // 1 0 -93 0 -93 -30 0 0 0 1 0 0 0 -30 1-4chrd.dat
-  [1,0,-93,0,-93,-30,0,0,0,1,0,0,0,-30, ldraw_lib__1_4chrd()],
+  [1,0,-93,0,-93,-30,0,0,0,1,0,0,0,-30, ldraw_lib__1_4chrd(realsolid)],
 // 1 0 93 0 -93 0 0 30 0 1 0 -30 0 0 1-4chrd.dat
-  [1,0,93,0,-93,0,0,30,0,1,0,-30,0,0, ldraw_lib__1_4chrd()],
+  [1,0,93,0,-93,0,0,30,0,1,0,-30,0,0, ldraw_lib__1_4chrd(realsolid)],
 // 1 0 93 0 93 30 0 0 0 1 0 0 0 30 1-4chrd.dat
-  [1,0,93,0,93,30,0,0,0,1,0,0,0,30, ldraw_lib__1_4chrd()],
+  [1,0,93,0,93,30,0,0,0,1,0,0,0,30, ldraw_lib__1_4chrd(realsolid)],
 // 1 16 93 0 93 30 0 0 0 1 0 0 0 30 1-4ndis.dat
-  [1,16,93,0,93,30,0,0,0,1,0,0,0,30, ldraw_lib__1_4ndis()],
+  [1,16,93,0,93,30,0,0,0,1,0,0,0,30, ldraw_lib__1_4ndis(realsolid)],
 // 1 16 -93 0 93 0 0 -30 0 1 0 30 0 0 1-4ndis.dat
-  [1,16,-93,0,93,0,0,-30,0,1,0,30,0,0, ldraw_lib__1_4ndis()],
+  [1,16,-93,0,93,0,0,-30,0,1,0,30,0,0, ldraw_lib__1_4ndis(realsolid)],
 // 1 16 -93 0 -93 -30 0 0 0 1 0 0 0 -30 1-4ndis.dat
-  [1,16,-93,0,-93,-30,0,0,0,1,0,0,0,-30, ldraw_lib__1_4ndis()],
+  [1,16,-93,0,-93,-30,0,0,0,1,0,0,0,-30, ldraw_lib__1_4ndis(realsolid)],
 // 1 16 93 0 -93 0 0 30 0 1 0 -30 0 0 1-4ndis.dat
-  [1,16,93,0,-93,0,0,30,0,1,0,-30,0,0, ldraw_lib__1_4ndis()],
+  [1,16,93,0,-93,0,0,30,0,1,0,-30,0,0, ldraw_lib__1_4ndis(realsolid)],
 ];
 module ldraw_lib__s__4209s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__4209s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__4209s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__4209s01(line=0.2);

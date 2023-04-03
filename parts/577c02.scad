@@ -2,7 +2,8 @@ use <../lib.scad>
 use <30374.scad>
 use <577b.scad>
 use <light.scad>
-function ldraw_lib__577c02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__577c02(realsolid=false) = [
 // 0 ~Minifig Lightsaber Chrome Silver - 2 Sides On (Obsolete)
 // 0 Name: 577c02.dat
 // 0 Author: Paul Easter [pneaster]
@@ -24,18 +25,18 @@ function ldraw_lib__577c02() = [
 // 
 // 
 // 1 383 0 0 0 1 0 0 0 1 0 0 0 1 577b.dat
-  [1,383,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__577b()],
+  [1,383,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__577b(realsolid)],
 // 1 16 0 -77 0 1 0 0 0 1 0 0 0 1 30374.dat
-  [1,16,0,-77,0,1,0,0,0,1,0,0,0,1, ldraw_lib__30374()],
+  [1,16,0,-77,0,1,0,0,0,1,0,0,0,1, ldraw_lib__30374(realsolid)],
 // 1 16 0 29 0 1 0 0 0 1 0 0 0 1 30374.dat
-  [1,16,0,29,0,1,0,0,0,1,0,0,0,1, ldraw_lib__30374()],
+  [1,16,0,29,0,1,0,0,0,1,0,0,0,1, ldraw_lib__30374(realsolid)],
 // 
 // 0 // The saber 'blades' will glow when rendered in POV-Ray
 // 1 16 0 -2 0 1 0 0 0 1 0 0 0 1 light.dat
-  [1,16,0,-2,0,1,0,0,0,1,0,0,0,1, ldraw_lib__light()],
+  [1,16,0,-2,0,1,0,0,0,1,0,0,0,1, ldraw_lib__light(realsolid)],
 // 1 16 0 34 0 1 0 0 0 1 0 0 0 1 light.dat
-  [1,16,0,34,0,1,0,0,0,1,0,0,0,1, ldraw_lib__light()],
+  [1,16,0,34,0,1,0,0,0,1,0,0,0,1, ldraw_lib__light(realsolid)],
 ];
 module ldraw_lib__577c02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__577c02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__577c02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__577c02(line=0.2);

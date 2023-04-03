@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/6239s01.scad>
-function ldraw_lib__6239p02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6239p02(realsolid=false) = [
 // 0 Tail Shuttle  2 x  6 x  4 with Eagle and "POLICE" Pattern
 // 0 Name: 6239p02.dat
 // 0 Author: Johann Eisner [technicbasics]
@@ -17,7 +18,7 @@ function ldraw_lib__6239p02() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\6239s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6239s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6239s01(realsolid)],
 // 0 // left side
 // 4 1 2 -72.23 75.289 2 -77.39 76.989 2 -73.78 70.709 2 -68.8 73.989
   [4,1,2,-72.23,75.289,2,-77.39,76.989,2,-73.78,70.709,2,-68.8,73.989],
@@ -1624,5 +1625,5 @@ function ldraw_lib__6239p02() = [
   [3,16,-2,-38.09,17.72,-2,-36.59,17.92,-2,-37.44,17.68],
 ];
 module ldraw_lib__6239p02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6239p02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6239p02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6239p02(line=0.2);

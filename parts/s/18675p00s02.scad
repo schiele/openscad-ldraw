@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__18675p00s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__18675p00s02(realsolid=false) = [
 // 0 ~Dish  6 x  6 Inverted - No Studs with Handle with Black and Magenta Concentric Lines and Thin Magenta Grill Pattern - Outer Rim 1/8
 // 0 Name: s\18675p00s02.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -39,5 +40,5 @@ function ldraw_lib__s__18675p00s02() = [
   [4,0,45,-5.25,0,44.613,-5.25,-5.8725,53.5356,-0.1,-7.047,54,-0.1,0],
 ];
 module ldraw_lib__s__18675p00s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__18675p00s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__18675p00s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__18675p00s02(line=0.2);

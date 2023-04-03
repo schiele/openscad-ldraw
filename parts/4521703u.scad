@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__4521703u() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4521703u(realsolid=false) = [
 // 0 Sticker  3.5 x  3.9 with "LEGO TOWN" Map
 // 0 Name: 4521703u.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -848,5 +849,5 @@ function ldraw_lib__4521703u() = [
 // 0
 ];
 module ldraw_lib__4521703u(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4521703u(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4521703u(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4521703u(line=0.2);

@@ -3,7 +3,8 @@ use <1-4cylo.scad>
 use <1-4cyls2.scad>
 use <1-4rin12.scad>
 use <clip15.scad>
-function ldraw_lib__clip7() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__clip7(realsolid=false) = [
 // 0 Clip for Round Arm  4 LDU
 // 0 Name: clip7.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -20,24 +21,24 @@ function ldraw_lib__clip7() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 clip15.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__clip15()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__clip15(realsolid)],
 // 
 // 1 16 0 -4 0 .353553 0 -.353553 0 1 0 .353553 0 .353553 1-4rin12.dat
-  [1,16,0,-4,0,.353553,0,-.353553,0,1,0,.353553,0,.353553, ldraw_lib__1_4rin12()],
+  [1,16,0,-4,0,.353553,0,-.353553,0,1,0,.353553,0,.353553, ldraw_lib__1_4rin12(realsolid)],
 // 1 16 0 4 0 .353553 0 -.353553 0 -1 0 .353553 0 .353553 1-4rin12.dat
-  [1,16,0,4,0,.353553,0,-.353553,0,-1,0,.353553,0,.353553, ldraw_lib__1_4rin12()],
+  [1,16,0,4,0,.353553,0,-.353553,0,-1,0,.353553,0,.353553, ldraw_lib__1_4rin12(realsolid)],
 // 1 16 0 -4 0 4.596194 0 -4.596194 0 8 0 4.596194 0 4.596194 1-4cylo.dat
-  [1,16,0,-4,0,4.596194,0,-4.596194,0,8,0,4.596194,0,4.596194, ldraw_lib__1_4cylo()],
+  [1,16,0,-4,0,4.596194,0,-4.596194,0,8,0,4.596194,0,4.596194, ldraw_lib__1_4cylo(realsolid)],
 // 
 // 0 // Joint to Bar
 // 1 16 0 0 6.5 4 0 0 0 0 4 0 -1.5054 0 1-4cyls2.dat
-  [1,16,0,0,6.5,4,0,0,0,0,4,0,-1.5054,0, ldraw_lib__1_4cyls2()],
+  [1,16,0,0,6.5,4,0,0,0,0,4,0,-1.5054,0, ldraw_lib__1_4cyls2(realsolid)],
 // 1 16 0 0 6.5 -4 0 0 0 0 4 0 -1.5054 0 1-4cyls2.dat
-  [1,16,0,0,6.5,-4,0,0,0,0,4,0,-1.5054,0, ldraw_lib__1_4cyls2()],
+  [1,16,0,0,6.5,-4,0,0,0,0,4,0,-1.5054,0, ldraw_lib__1_4cyls2(realsolid)],
 // 1 16 0 0 6.5 4 0 0 0 0 -4 0 -1.5054 0 1-4cyls2.dat
-  [1,16,0,0,6.5,4,0,0,0,0,-4,0,-1.5054,0, ldraw_lib__1_4cyls2()],
+  [1,16,0,0,6.5,4,0,0,0,0,-4,0,-1.5054,0, ldraw_lib__1_4cyls2(realsolid)],
 // 1 16 0 0 6.5 -4 0 0 0 0 -4 0 -1.5054 0 1-4cyls2.dat
-  [1,16,0,0,6.5,-4,0,0,0,0,-4,0,-1.5054,0, ldraw_lib__1_4cyls2()],
+  [1,16,0,0,6.5,-4,0,0,0,0,-4,0,-1.5054,0, ldraw_lib__1_4cyls2(realsolid)],
 // 2 24 4 0 4.995 3.696 1.531 5.198
   [2,24,4,0,4.995,3.696,1.531,5.198],
 // 2 24 3.696 1.531 5.198 2.828 2.828 5.778
@@ -80,5 +81,5 @@ function ldraw_lib__clip7() = [
   [2,24,-2.828,-2.828,5.778,-2.488,-3.056,6.005],
 ];
 module ldraw_lib__clip7(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__clip7(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__clip7(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__clip7(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <87692.scad>
-function ldraw_lib__4502b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4502b(realsolid=false) = [
 // 0 ~Moved to 87692
 // 0 Name: 4502b.dat
 // 0 Author: [PTadmin]
@@ -16,8 +17,8 @@ function ldraw_lib__4502b() = [
 // 
 // 0 // Minifig Plume Triple
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 87692.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__87692()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__87692(realsolid)],
 ];
 module ldraw_lib__4502b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4502b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4502b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4502b(line=0.2);

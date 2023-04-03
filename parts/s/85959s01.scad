@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/4-4cylc.scad>
 use <../../p/rect2p.scad>
-function ldraw_lib__s__85959s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__85959s01(realsolid=false) = [
 // 0 ~Minifig Flame  7 L with Bar  0.8 Base
 // 0 Name: s\85959s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -18,7 +19,7 @@ function ldraw_lib__s__85959s01() = [
 // 
 // 
 // 1 16 0 16 0 4 0 0 0 -16 0 0 0 4 4-4cylc.dat
-  [1,16,0,16,0,4,0,0,0,-16,0,0,0,4, ldraw_lib__4_4cylc()],
+  [1,16,0,16,0,4,0,0,0,-16,0,0,0,4, ldraw_lib__4_4cylc(realsolid)],
 // 2 24 -3.657 -21.1 3.998 -6.645 -26.523 3.831
   [2,24,-3.657,-21.1,3.998,-6.645,-26.523,3.831],
 // 2 24 -6.645 -26.523 -3.856 -3.657 -21.1 -3.977
@@ -546,7 +547,7 @@ function ldraw_lib__s__85959s01() = [
 // 3 16 1.221 0 5.106 -1.221 0 5.106 0 -3.662 4.951
   [3,16,1.221,0,5.106,-1.221,0,5.106,0,-3.662,4.951],
 // 1 16 0 0 0 1.221 0 0 0 -1 0 0 0 -5.106 rect2p.dat
-  [1,16,0,0,0,1.221,0,0,0,-1,0,0,0,-5.106, ldraw_lib__rect2p()],
+  [1,16,0,0,0,1.221,0,0,0,-1,0,0,0,-5.106, ldraw_lib__rect2p(realsolid)],
 // 3 16 1.221 0 5.106 1.833 -3.645 4.688 3.402 0 3.999
   [3,16,1.221,0,5.106,1.833,-3.645,4.688,3.402,0,3.999],
 // 3 16 5.5 0 -3.91 3.402 0 -3.999 5.5 0 3.91
@@ -1025,5 +1026,5 @@ function ldraw_lib__s__85959s01() = [
   [5,24,1.311,-33.277,-2.941,-6.25,-33.534,-2.807,-7.374,-30.53,-2.75,3.598,-39.639,-2.904],
 ];
 module ldraw_lib__s__85959s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__85959s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__85959s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__85959s01(line=0.2);

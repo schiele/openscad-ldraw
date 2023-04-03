@@ -4,7 +4,8 @@ use <s/11262s01.scad>
 use <s/11262s02.scad>
 use <s/11262s03.scad>
 use <../p/stud4o.scad>
-function ldraw_lib__11262p01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__11262p01(realsolid=false) = [
 // 0 Minifig Headdress Chicken with Yellow Beak and Red Comb and Wattles Pattern
 // 0 Name: 11262p01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -24,21 +25,21 @@ function ldraw_lib__11262p01() = [
 // 
 // 
 // 1 16 0 -5 0 -1 0 0 0 -1.25 0 0 0 1 stud4o.dat
-  [1,16,0,-5,0,-1,0,0,0,-1.25,0,0,0,1, ldraw_lib__stud4o()],
+  [1,16,0,-5,0,-1,0,0,0,-1.25,0,0,0,1, ldraw_lib__stud4o(realsolid)],
 // 1 16 0 -3 0 8 0 0 0 3 0 0 0 8 4-4cylo.dat
-  [1,16,0,-3,0,8,0,0,0,3,0,0,0,8, ldraw_lib__4_4cylo()],
+  [1,16,0,-3,0,8,0,0,0,3,0,0,0,8, ldraw_lib__4_4cylo(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\11262s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__11262s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__11262s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\11262s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__11262s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__11262s01(realsolid)],
 // 1 14 0 0 0 1 0 0 0 1 0 0 0 1 s\11262s02.dat
-  [1,14,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__11262s02()],
+  [1,14,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__11262s02(realsolid)],
 // 1 14 0 0 0 -1 0 0 0 1 0 0 0 1 s\11262s02.dat
-  [1,14,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__11262s02()],
+  [1,14,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__11262s02(realsolid)],
 // 1 4 0 0 0 1 0 0 0 1 0 0 0 1 s\11262s03.dat
-  [1,4,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__11262s03()],
+  [1,4,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__11262s03(realsolid)],
 // 1 4 0 0 0 -1 0 0 0 1 0 0 0 1 s\11262s03.dat
-  [1,4,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__11262s03()],
+  [1,4,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__11262s03(realsolid)],
 // 0 // eyes
 // 4 15 4.87 -3.63 -12.2511 4.8738 -3.1437 -12.5932 6.1842 -3.8302 -11.325 5.79 -4.05 -11.4046
   [4,15,4.87,-3.63,-12.2511,4.8738,-3.1437,-12.5932,6.1842,-3.8302,-11.325,5.79,-4.05,-11.4046],
@@ -255,5 +256,5 @@ function ldraw_lib__11262p01() = [
   [5,24,-4.628,-3.015,-12.831,-8.064,0.375,-11.734,-4.534,2.407,-14.896,-8.316,-4.947,-9.262],
 ];
 module ldraw_lib__11262p01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__11262p01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__11262p01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__11262p01(line=0.2);

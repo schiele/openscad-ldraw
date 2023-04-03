@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/75902s01.scad>
-function ldraw_lib__75902ps1() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__75902ps1(realsolid=false) = [
 // 0 Minifig Shield Round Bowed with SW Dejarik Hologame Board Pattern
 // 0 Name: 75902ps1.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -18,7 +19,7 @@ function ldraw_lib__75902ps1() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\75902s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__75902s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__75902s01(realsolid)],
 // 
 // 0 // Pattern
 // 4 16 23.794 3.132 -6.2 24 0 -6.2 23.391 0 -6.322 23.191 3.053 -6.322
@@ -4220,5 +4221,5 @@ function ldraw_lib__75902ps1() = [
   [5,24,8.923,-1.175,-8.6,9,0,-8.6,18,0,-7.4,0,0,-9.2],
 ];
 module ldraw_lib__75902ps1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__75902ps1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__75902ps1(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__75902ps1(line=0.2);

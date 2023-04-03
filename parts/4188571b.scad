@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__4188571b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4188571b(realsolid=false) = [
 // 0 Sticker  1.0 x  9.9 with Black "SANTA FE"
 // 0 Name: 4188571b.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -19,7 +20,7 @@ function ldraw_lib__4188571b() = [
 // 0 // LDRAW Scaling: 1 0 0 0 1 0 0 0 0.33
 // 
 // 1 80 0 -0.25 0 99 0 0 0 0.25 0 0 0 10 box5-12.dat
-  [1,80,0,-0.25,0,99,0,0,0,0.25,0,0,0,10, ldraw_lib__box5_12()],
+  [1,80,0,-0.25,0,99,0,0,0,0.25,0,0,0,10, ldraw_lib__box5_12(realsolid)],
 // 
 // 4 0 -83.78 -0.25 -4.478 -83.137 -0.25 -4.478 -82.764 -0.25 -4.122 -82.608 -0.25 -2.544
   [4,0,-83.78,-0.25,-4.478,-83.137,-0.25,-4.478,-82.764,-0.25,-4.122,-82.608,-0.25,-2.544],
@@ -598,5 +599,5 @@ function ldraw_lib__4188571b() = [
 // 
 ];
 module ldraw_lib__4188571b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4188571b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4188571b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4188571b(line=0.2);

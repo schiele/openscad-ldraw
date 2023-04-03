@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/6636s01.scad>
-function ldraw_lib__6636p03() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6636p03(realsolid=false) = [
 // 0 Tile  1 x  6 with "Solomon" Pattern
 // 0 Name: 6636p03.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -22,7 +23,7 @@ function ldraw_lib__6636p03() = [
 // 0 // Font match is not perfect, but manually corrected with LD Pattern Creator
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\6636s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6636s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6636s01(realsolid)],
 // 0 //
 // 4 15 1.311 0 -2.958 0.222 0 -3.615 0.828 0 -4.294 2.292 0 -3.719
   [4,15,1.311,0,-2.958,0.222,0,-3.615,0.828,0,-4.294,2.292,0,-3.719],
@@ -637,5 +638,5 @@ function ldraw_lib__6636p03() = [
   [3,16,17.829,0,4.772,22.557,0,2.237,23.47,0,2.131],
 ];
 module ldraw_lib__6636p03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6636p03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6636p03(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6636p03(line=0.2);

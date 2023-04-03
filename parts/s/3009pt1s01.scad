@@ -2,7 +2,8 @@ use <../../lib.scad>
 use <../../p/logo-shell-e.scad>
 use <../../p/logo-shell-h.scad>
 use <../../p/logo-shell-s.scad>
-function ldraw_lib__s__3009pt1s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__3009pt1s01(realsolid=false) = [
 // 0 ~"Shell" Pattern Red
 // 0 Name: s\3009pt1s01.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -20,11 +21,11 @@ function ldraw_lib__s__3009pt1s01() = [
 // 
 // 0 // Shell sign
 // 1 16 -41 12.1 -10 .85 0 0 0 0 -.85 0 1 0 logo-shell-s.dat
-  [1,16,-41,12.1,-10,.85,0,0,0,0,-.85,0,1,0, ldraw_lib__logo_shell_s()],
+  [1,16,-41,12.1,-10,.85,0,0,0,0,-.85,0,1,0, ldraw_lib__logo_shell_s(realsolid)],
 // 1 16 -12.7 12.1 -10 .85 0 0 0 0 -.85 0 1 0 logo-shell-h.dat
-  [1,16,-12.7,12.1,-10,.85,0,0,0,0,-.85,0,1,0, ldraw_lib__logo_shell_h()],
+  [1,16,-12.7,12.1,-10,.85,0,0,0,0,-.85,0,1,0, ldraw_lib__logo_shell_h(realsolid)],
 // 1 16 14 14.4 -10 .85 0 0 0 0 -.85 0 1 0 logo-shell-e.dat
-  [1,16,14,14.4,-10,.85,0,0,0,0,-.85,0,1,0, ldraw_lib__logo_shell_e()],
+  [1,16,14,14.4,-10,.85,0,0,0,0,-.85,0,1,0, ldraw_lib__logo_shell_e(realsolid)],
 // 4 4 31.525 4.025 -10 31.525 20.175 -10 37.475 20.175 -10 37.475 4.025 -10
   [4,4,31.525,4.025,-10,31.525,20.175,-10,37.475,20.175,-10,37.475,4.025,-10],
 // 4 4 44.525 4.025 -10 44.525 20.175 -10 50.475 20.175 -10 50.475 4.025 -10
@@ -79,5 +80,5 @@ function ldraw_lib__s__3009pt1s01() = [
   [4,16,44.525,4.025,-10,37.475,4.025,-10,37.475,20.175,-10,44.525,20.175,-10],
 ];
 module ldraw_lib__s__3009pt1s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__3009pt1s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__3009pt1s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__3009pt1s01(line=0.2);

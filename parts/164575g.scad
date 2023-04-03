@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/box5-12.scad>
 use <s/4865p01b.scad>
 use <s/4865p01c.scad>
-function ldraw_lib__164575g() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__164575g(realsolid=false) = [
 // 0 Sticker  0.6 x  1.5 with White Train Logo
 // 0 Name: 164575g.dat
 // 0 Author: Max Martin Richter [MMR1988]
@@ -21,12 +22,12 @@ function ldraw_lib__164575g() = [
 // 
 // 
 // 1 16 0 -0.25 0 1.25 0 0 0 0 1 0 1.25 0 s\4865p01b.dat
-  [1,16,0,-0.25,0,1.25,0,0,0,0,1,0,1.25,0, ldraw_lib__s__4865p01b()],
+  [1,16,0,-0.25,0,1.25,0,0,0,0,1,0,1.25,0, ldraw_lib__s__4865p01b(realsolid)],
 // 1 15 0 -0.25 0 1.25 0 0 0 0 1 0 1.25 0 s\4865p01c.dat
-  [1,15,0,-0.25,0,1.25,0,0,0,0,1,0,1.25,0, ldraw_lib__s__4865p01c()],
+  [1,15,0,-0.25,0,1.25,0,0,0,0,1,0,1.25,0, ldraw_lib__s__4865p01c(realsolid)],
 // 
 // 1 16 0 -0.25 0 14.5 0 0 0 0.25 0 0 0 6.25 box5-12.dat
-  [1,16,0,-0.25,0,14.5,0,0,0,0.25,0,0,0,6.25, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,14.5,0,0,0,0.25,0,0,0,6.25, ldraw_lib__box5_12(realsolid)],
 // 
 // 4 16 -14.5 -0.25 6.25 -12.5 -0.25 5 12.5 -0.25 5 14.5 -0.25 6.25
   [4,16,-14.5,-0.25,6.25,-12.5,-0.25,5,12.5,-0.25,5,14.5,-0.25,6.25],
@@ -38,5 +39,5 @@ function ldraw_lib__164575g() = [
   [4,16,-14.5,-0.25,-6.25,-12.5,-0.25,-5,-12.5,-0.25,5,-14.5,-0.25,6.25],
 ];
 module ldraw_lib__164575g(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__164575g(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__164575g(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__164575g(line=0.2);

@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/box4-1.scad>
 use <../p/stug-1x8.scad>
 use <../p/stug-6x1.scad>
-function ldraw_lib__183() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__183(realsolid=false) = [
 // 0 ~Boat Section Middle 6 x 12 x 3.333 Deck
 // 0 Name: 183.dat
 // 0 Author: Michael Heidemann [mikeheide]
@@ -180,15 +181,15 @@ function ldraw_lib__183() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 8 -128 -56 0 0 0 -4 0 0 0 -8 box4-1.dat
-  [1,16,0,8,-128,-56,0,0,0,-4,0,0,0,-8, ldraw_lib__box4_1()],
+  [1,16,0,8,-128,-56,0,0,0,-4,0,0,0,-8, ldraw_lib__box4_1(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -64 8 -128 -4 0 0 0 -4 0 0 0 -8 box4-1.dat
-  [1,16,-64,8,-128,-4,0,0,0,-4,0,0,0,-8, ldraw_lib__box4_1()],
+  [1,16,-64,8,-128,-4,0,0,0,-4,0,0,0,-8, ldraw_lib__box4_1(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 64 8 -128 -4 0 0 0 -4 0 0 0 -8 box4-1.dat
-  [1,16,64,8,-128,-4,0,0,0,-4,0,0,0,-8, ldraw_lib__box4_1()],
+  [1,16,64,8,-128,-4,0,0,0,-4,0,0,0,-8, ldraw_lib__box4_1(realsolid)],
 // 4 16 56 4 -120 56 8 -120 -56 8 -120 -56 4 -120
   [4,16,56,4,-120,56,8,-120,-56,8,-120,-56,4,-120],
 // 4 16 68 4 -120 68 8 -120 60 8 -120 60 4 -120
@@ -246,20 +247,20 @@ function ldraw_lib__183() = [
 // 4 16 72 8 -140 -72 8 -140 -72 0 -140 72 0 -140
   [4,16,72,8,-140,-72,8,-140,-72,0,-140,72,0,-140],
 // 1 16 0 0 -130 0 0 -1 0 1 0 1 0 0 stug-6x1.dat
-  [1,16,0,0,-130,0,0,-1,0,1,0,1,0,0, ldraw_lib__stug_6x1()],
+  [1,16,0,0,-130,0,0,-1,0,1,0,1,0,0, ldraw_lib__stug_6x1(realsolid)],
 // 1 16 0 0 -110 0 0 -1 0 1 0 1 0 0 stug-6x1.dat
-  [1,16,0,0,-110,0,0,-1,0,1,0,1,0,0, ldraw_lib__stug_6x1()],
+  [1,16,0,0,-110,0,0,-1,0,1,0,1,0,0, ldraw_lib__stug_6x1(realsolid)],
 // 1 16 0 0 70 0 0 -1 0 1 0 1 0 0 stug-6x1.dat
-  [1,16,0,0,70,0,0,-1,0,1,0,1,0,0, ldraw_lib__stug_6x1()],
+  [1,16,0,0,70,0,0,-1,0,1,0,1,0,0, ldraw_lib__stug_6x1(realsolid)],
 // 1 16 0 0 90 0 0 -1 0 1 0 1 0 0 stug-6x1.dat
-  [1,16,0,0,90,0,0,-1,0,1,0,1,0,0, ldraw_lib__stug_6x1()],
+  [1,16,0,0,90,0,0,-1,0,1,0,1,0,0, ldraw_lib__stug_6x1(realsolid)],
 // 1 16 0 8 110 0 0 -1 0 1 0 1 0 0 stug-6x1.dat
-  [1,16,0,8,110,0,0,-1,0,1,0,1,0,0, ldraw_lib__stug_6x1()],
+  [1,16,0,8,110,0,0,-1,0,1,0,1,0,0, ldraw_lib__stug_6x1(realsolid)],
 // 1 16 50 0 -20 0 0 -1 0 1 0 1 0 0 stug-1x8.dat
-  [1,16,50,0,-20,0,0,-1,0,1,0,1,0,0, ldraw_lib__stug_1x8()],
+  [1,16,50,0,-20,0,0,-1,0,1,0,1,0,0, ldraw_lib__stug_1x8(realsolid)],
 // 1 16 -50 0 -20 0 0 -1 0 1 0 1 0 0 stug-1x8.dat
-  [1,16,-50,0,-20,0,0,-1,0,1,0,1,0,0, ldraw_lib__stug_1x8()],
+  [1,16,-50,0,-20,0,0,-1,0,1,0,1,0,0, ldraw_lib__stug_1x8(realsolid)],
 ];
 module ldraw_lib__183(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__183(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__183(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__183(line=0.2);

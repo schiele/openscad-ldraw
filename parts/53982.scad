@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4cylc.scad>
 use <../p/4-4ring2.scad>
 use <../p/t04o6250.scad>
-function ldraw_lib__53982() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__53982(realsolid=false) = [
 // 0 Minifig Hair Spiky Long
 // 0 Name: 53982.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -2141,25 +2142,25 @@ function ldraw_lib__53982() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 3 0 0 0 8 0 -4.8 0 8 0 0 t04o6250.dat
-  [1,16,0,3,0,0,0,8,0,-4.8,0,8,0,0, ldraw_lib__t04o6250()],
+  [1,16,0,3,0,0,0,8,0,-4.8,0,8,0,0, ldraw_lib__t04o6250(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 3 0 -8 0 0 0 -4.8 0 0 0 8 t04o6250.dat
-  [1,16,0,3,0,-8,0,0,0,-4.8,0,0,0,8, ldraw_lib__t04o6250()],
+  [1,16,0,3,0,-8,0,0,0,-4.8,0,0,0,8, ldraw_lib__t04o6250(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 3 0 0 0 -8 0 -4.8 0 -8 0 0 t04o6250.dat
-  [1,16,0,3,0,0,0,-8,0,-4.8,0,-8,0,0, ldraw_lib__t04o6250()],
+  [1,16,0,3,0,0,0,-8,0,-4.8,0,-8,0,0, ldraw_lib__t04o6250(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 3 0 8 0 0 0 -4.8 0 0 0 -8 t04o6250.dat
-  [1,16,0,3,0,8,0,0,0,-4.8,0,0,0,-8, ldraw_lib__t04o6250()],
+  [1,16,0,3,0,8,0,0,0,-4.8,0,0,0,-8, ldraw_lib__t04o6250(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -4 0 6 0 0 0 4 0 0 0 6 4-4cylc.dat
-  [1,16,0,-4,0,6,0,0,0,4,0,0,0,6, ldraw_lib__4_4cylc()],
+  [1,16,0,-4,0,6,0,0,0,4,0,0,0,6, ldraw_lib__4_4cylc(realsolid)],
 // 1 16 0 0 0 3 0 0 0 -1 0 0 0 3 4-4ring2.dat
-  [1,16,0,0,0,3,0,0,0,-1,0,0,0,3, ldraw_lib__4_4ring2()],
+  [1,16,0,0,0,3,0,0,0,-1,0,0,0,3, ldraw_lib__4_4ring2(realsolid)],
 // 2 24 8.031 -8.545 -9.121 12.71 -10.54 -8.491
   [2,24,8.031,-8.545,-9.121,12.71,-10.54,-8.491],
 // 2 24 10.053 -1.527 -17.121 7.747 1.388 -14.461
@@ -3462,5 +3463,5 @@ function ldraw_lib__53982() = [
   [5,24,-19.52,14.62,3.102,-21,11.85,7.185,-18.47,16.36,7.098,-21.57,11.347,4.856],
 ];
 module ldraw_lib__53982(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__53982(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__53982(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__53982(line=0.2);

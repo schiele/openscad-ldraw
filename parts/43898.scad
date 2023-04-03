@@ -3,7 +3,8 @@ use <../p/48/4-4con1.scad>
 use <../p/48/4-4con2.scad>
 use <../p/48/4-4con9.scad>
 use <s/43898s01.scad>
-function ldraw_lib__43898() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__43898(realsolid=false) = [
 // 0 Dish  3 x  3 Inverted
 // 0 Name: 43898.dat
 // 0 Author: John Riley [jriley]
@@ -26,15 +27,15 @@ function ldraw_lib__43898() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\43898s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__43898s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__43898s01(realsolid)],
 // 1 16 0 0.61 0 6 0 0 0 -0.61 0 0 0 6 48\4-4con1.dat
-  [1,16,0,0.61,0,6,0,0,0,-0.61,0,0,0,6, ldraw_lib__48__4_4con1()],
+  [1,16,0,0.61,0,6,0,0,0,-0.61,0,0,0,6, ldraw_lib__48__4_4con1(realsolid)],
 // 1 16 0 2.5 0 6 0 0 0 -1.89 0 0 0 6 48\4-4con2.dat
-  [1,16,0,2.5,0,6,0,0,0,-1.89,0,0,0,6, ldraw_lib__48__4_4con2()],
+  [1,16,0,2.5,0,6,0,0,0,-1.89,0,0,0,6, ldraw_lib__48__4_4con2(realsolid)],
 // 1 16 0 8.58 0 9 0 0 0 -6.08 0 0 0 9 48\4-4con2.dat
-  [1,16,0,8.58,0,9,0,0,0,-6.08,0,0,0,9, ldraw_lib__48__4_4con2()],
+  [1,16,0,8.58,0,9,0,0,0,-6.08,0,0,0,9, ldraw_lib__48__4_4con2(realsolid)],
 // 1 16 0 12 0 3 0 0 0 -3.42 0 0 0 3 48\4-4con9.dat
-  [1,16,0,12,0,3,0,0,0,-3.42,0,0,0,3, ldraw_lib__48__4_4con9()],
+  [1,16,0,12,0,3,0,0,0,-3.42,0,0,0,3, ldraw_lib__48__4_4con9(realsolid)],
 // 
 // 0 //Circular Cond-Lines
 // 5 24 12 .61 0 11.8968 .61 1.566 5.9484 0 .783 17.8452 2.5 2.349
@@ -330,5 +331,5 @@ function ldraw_lib__43898() = [
   [5,24,21.4218,8.58,-16.4376,19.0917,8.58,-19.0917,21.213,12,-21.213,12.7278,2.5,-12.7278],
 ];
 module ldraw_lib__43898(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__43898(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__43898(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__43898(line=0.2);

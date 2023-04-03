@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__4568123d() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4568123d(realsolid=false) = [
 // 0 Sticker  1.1 x  1.7 with Yellow and Blue Alien Text, Planet Outline
 // 0 Name: 4568123d.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -17,7 +18,7 @@ function ldraw_lib__4568123d() = [
 // 
 // 
 // 1 16 0 -0.25 0 17.5 0 0 0 0.25 0 0 0 11.25 box5-12.dat
-  [1,16,0,-0.25,0,17.5,0,0,0,0.25,0,0,0,11.25, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,17.5,0,0,0,0.25,0,0,0,11.25, ldraw_lib__box5_12(realsolid)],
 // 
 // 4 72 -14.45 -0.25 10 -14.2 -0.25 11.25 -17.5 -0.25 11.25 -17.5 -0.25 7
   [4,72,-14.45,-0.25,10,-14.2,-0.25,11.25,-17.5,-0.25,11.25,-17.5,-0.25,7],
@@ -787,5 +788,5 @@ function ldraw_lib__4568123d() = [
   [4,0,2.2,-0.25,5.15,2.3,-0.25,4.2,2.6,-0.25,4.4,2.6,-0.25,5.1],
 ];
 module ldraw_lib__4568123d(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4568123d(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4568123d(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4568123d(line=0.2);

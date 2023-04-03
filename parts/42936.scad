@@ -10,7 +10,8 @@ use <../p/stug-1x2.scad>
 use <../p/stug-1x4.scad>
 use <../p/stug-2x2.scad>
 use <../p/stug3-1x3.scad>
-function ldraw_lib__42936() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__42936(realsolid=false) = [
 // 0 Car Track 16 x  8 x  2 Straight
 // 0 Name: 42936.dat
 // 0 Author: Steve Bliss [sbliss]
@@ -32,54 +33,54 @@ function ldraw_lib__42936() = [
 // 
 // 0 // Subparts
 // 1 16 -160 0 0 1 0 0 0 1 0 0 0 1 s\42938s01.dat
-  [1,16,-160,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__42938s01()],
+  [1,16,-160,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__42938s01(realsolid)],
 // 1 16 160 0 0 -1 0 0 0 1 0 0 0 1 s\42938s01.dat
-  [1,16,160,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__42938s01()],
+  [1,16,160,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__42938s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\42936s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__42936s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__42936s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\42936s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__42936s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__42936s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\42938s02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__42938s02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__42938s02(realsolid)],
 // 0 // Primitives
 // 1 16 0 0 70 1 0 0 0 1 0 0 0 1 stug-1x4.dat
-  [1,16,0,0,70,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_1x4()],
+  [1,16,0,0,70,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_1x4(realsolid)],
 // 1 16 -140 0 70 1 0 0 0 1 0 0 0 1 stug-1x2.dat
-  [1,16,-140,0,70,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_1x2()],
+  [1,16,-140,0,70,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_1x2(realsolid)],
 // 1 16 -140 0 -70 1 0 0 0 1 0 0 0 1 stug-1x2.dat
-  [1,16,-140,0,-70,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_1x2()],
+  [1,16,-140,0,-70,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_1x2(realsolid)],
 // 1 16 140 0 -70 1 0 0 0 1 0 0 0 1 stug-1x2.dat
-  [1,16,140,0,-70,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_1x2()],
+  [1,16,140,0,-70,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_1x2(realsolid)],
 // 1 16 140 0 70 1 0 0 0 1 0 0 0 1 stug-1x2.dat
-  [1,16,140,0,70,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_1x2()],
+  [1,16,140,0,70,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_1x2(realsolid)],
 // 1 16 0 0 -70 1 0 0 0 1 0 0 0 1 stug-1x4.dat
-  [1,16,0,0,-70,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_1x4()],
+  [1,16,0,0,-70,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_1x4(realsolid)],
 // 1 16 0 32 0 1 0 0 0 1 0 0 0 1 stug-2x2.dat
-  [1,16,0,32,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_2x2()],
+  [1,16,0,32,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_2x2(realsolid)],
 // 1 16 0 4 70 1 0 0 0 -5 0 0 0 1 stug3-1x3.dat
-  [1,16,0,4,70,1,0,0,0,-5,0,0,0,1, ldraw_lib__stug3_1x3()],
+  [1,16,0,4,70,1,0,0,0,-5,0,0,0,1, ldraw_lib__stug3_1x3(realsolid)],
 // 1 16 0 4 -70 1 0 0 0 -5 0 0 0 1 stug3-1x3.dat
-  [1,16,0,4,-70,1,0,0,0,-5,0,0,0,1, ldraw_lib__stug3_1x3()],
+  [1,16,0,4,-70,1,0,0,0,-5,0,0,0,1, ldraw_lib__stug3_1x3(realsolid)],
 // 1 16 0 12 75 44 0 0 0 -12 0 0 0 5 box2-7.dat
-  [1,16,0,12,75,44,0,0,0,-12,0,0,0,5, ldraw_lib__box2_7()],
+  [1,16,0,12,75,44,0,0,0,-12,0,0,0,5, ldraw_lib__box2_7(realsolid)],
 // 1 16 0 0 65 0 0 44 0 1 0 -5 0 0 rect1.dat
-  [1,16,0,0,65,0,0,44,0,1,0,-5,0,0, ldraw_lib__rect1()],
+  [1,16,0,0,65,0,0,44,0,1,0,-5,0,0, ldraw_lib__rect1(realsolid)],
 // 1 16 0 0 -65 0 0 44 0 1 0 5 0 0 rect1.dat
-  [1,16,0,0,-65,0,0,44,0,1,0,5,0,0, ldraw_lib__rect1()],
+  [1,16,0,0,-65,0,0,44,0,1,0,5,0,0, ldraw_lib__rect1(realsolid)],
 // 1 16 0 12 -75 44 0 0 0 -12 0 0 0 -5 box2-7.dat
-  [1,16,0,12,-75,44,0,0,0,-12,0,0,0,-5, ldraw_lib__box2_7()],
+  [1,16,0,12,-75,44,0,0,0,-12,0,0,0,-5, ldraw_lib__box2_7(realsolid)],
 // 1 16 0 26 56 40 0 0 0 0 2 0 -1 0 rect.dat
-  [1,16,0,26,56,40,0,0,0,0,2,0,-1,0, ldraw_lib__rect()],
+  [1,16,0,26,56,40,0,0,0,0,2,0,-1,0, ldraw_lib__rect(realsolid)],
 // 1 16 0 26 -56 40 0 0 0 0 2 0 1 0 rect.dat
-  [1,16,0,26,-56,40,0,0,0,0,2,0,1,0, ldraw_lib__rect()],
+  [1,16,0,26,-56,40,0,0,0,0,2,0,1,0, ldraw_lib__rect(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 24 70 36 0 0 0 -20 0 0 0 6 box5.dat
-  [1,16,0,24,70,36,0,0,0,-20,0,0,0,6, ldraw_lib__box5()],
+  [1,16,0,24,70,36,0,0,0,-20,0,0,0,6, ldraw_lib__box5(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 24 -70 36 0 0 0 -20 0 0 0 6 box5.dat
-  [1,16,0,24,-70,36,0,0,0,-20,0,0,0,6, ldraw_lib__box5()],
+  [1,16,0,24,-70,36,0,0,0,-20,0,0,0,6, ldraw_lib__box5(realsolid)],
 // 0 // Central faces
 // 4 16 36 24 76 -36 24 76 -44 24 80 44 24 80
   [4,16,36,24,76,-36,24,76,-44,24,80,44,24,80],
@@ -145,5 +146,5 @@ function ldraw_lib__42936() = [
   [4,16,140,34,-12,140,28,-12,140,28,-8,140,34,-8],
 ];
 module ldraw_lib__42936(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__42936(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__42936(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__42936(line=0.2);

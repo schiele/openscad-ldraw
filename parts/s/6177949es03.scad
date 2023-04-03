@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__6177949es03() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__6177949es03(realsolid=false) = [
 // 0 ~Sticker  1.8 x  1.9 with Black Radiator Grille and Bugatti Logo on Transparent Background - Third Face
 // 0 Name: s\6177949es03.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -643,5 +644,5 @@ function ldraw_lib__s__6177949es03() = [
   [3,0,13.8306,-.25,-.0128,1.7,-.25,.1922,1.1,-.25,.1922],
 ];
 module ldraw_lib__s__6177949es03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__6177949es03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__6177949es03(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__6177949es03(line=0.2);

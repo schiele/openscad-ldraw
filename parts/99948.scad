@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/48/8-8sphe.scad>
-function ldraw_lib__99948() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__99948(realsolid=false) = [
 // 0 Technic Steel Ball 18mm for Ball Castor
 // 0 Name: 99948.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -15,8 +16,8 @@ function ldraw_lib__99948() = [
 // 
 // 
 // 1 16 0 0 0 22.5 0 0 0 22.5 0 0 0 22.5 48\8-8sphe.dat
-  [1,16,0,0,0,22.5,0,0,0,22.5,0,0,0,22.5, ldraw_lib__48__8_8sphe()],
+  [1,16,0,0,0,22.5,0,0,0,22.5,0,0,0,22.5, ldraw_lib__48__8_8sphe(realsolid)],
 ];
 module ldraw_lib__99948(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__99948(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__99948(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__99948(line=0.2);

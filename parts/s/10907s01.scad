@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/1-4cylo.scad>
-function ldraw_lib__s__10907s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__10907s01(realsolid=false) = [
 // 0 ~Minifig Helmet Iron Man - Half
 // 0 Name: s\10907s01.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -2617,7 +2618,7 @@ function ldraw_lib__s__10907s01() = [
 // 2 24 7.788 -5.5 1.064 12.464 -4.332 0.7
   [2,24,7.788,-5.5,1.064,12.464,-4.332,0.7],
 // 1 16 0 -5.5 0 8 0 0 0 5.5 0 0 0 8 1-4cylo.dat
-  [1,16,0,-5.5,0,8,0,0,0,5.5,0,0,0,8, ldraw_lib__1_4cylo()],
+  [1,16,0,-5.5,0,8,0,0,0,5.5,0,0,0,8, ldraw_lib__1_4cylo(realsolid)],
 // 2 24 7.391 0 -3.062 8 -3 0
   [2,24,7.391,0,-3.062,8,-3,0],
 // 2 24 7.391 0 -3.062 8 0 0
@@ -2648,5 +2649,5 @@ function ldraw_lib__s__10907s01() = [
   [5,24,8,0,0,8,-5.5,0,7.391,0,-3.062,7.391,0,3.062],
 ];
 module ldraw_lib__s__10907s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__10907s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__10907s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__10907s01(line=0.2);

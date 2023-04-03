@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__28614p01s03() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__28614p01s03(realsolid=false) = [
 // 0 ~Figure Elves Goblin Eye Buckle Pattern Half
 // 0 Name: s\28614p01s03.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -217,5 +218,5 @@ function ldraw_lib__s__28614p01s03() = [
   [3,0,7.42,-16.84,-8.5525,7.57,-17.87,-8.7204,6.62,-16.84,-8.7814],
 ];
 module ldraw_lib__s__28614p01s03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__28614p01s03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__28614p01s03(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__28614p01s03(line=0.2);

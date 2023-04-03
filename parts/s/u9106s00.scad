@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <u9106s01.scad>
-function ldraw_lib__s__u9106s00() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__u9106s00(realsolid=false) = [
 // 0 ~Figure Fabuland Bunny Head Half without Pattern
 // 0 Name: s\u9106s00.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -15,7 +16,7 @@ function ldraw_lib__s__u9106s00() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\u9106s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__u9106s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__u9106s01(realsolid)],
 // 0 // Nose area
 // 3 16 2.53 -15.351 -31.823 0 -14.928 -31.671 0 -14 -31.514
   [3,16,2.53,-15.351,-31.823,0,-14.928,-31.671,0,-14,-31.514],
@@ -493,5 +494,5 @@ function ldraw_lib__s__u9106s00() = [
   [5,24,7.28,-34.987,-18.147,8.704,-32.212,-19.847,9.903,-35.776,-15.652,6.009,-31.96,-21.937],
 ];
 module ldraw_lib__s__u9106s00(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__u9106s00(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__u9106s00(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__u9106s00(line=0.2);

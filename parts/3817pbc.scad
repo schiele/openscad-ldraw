@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <3816pbc.scad>
-function ldraw_lib__3817pbc() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3817pbc(realsolid=false) = [
 // 0 ~Minifig Leg Left with Iron Man Armoured Suit Mark VII Pattern (Obsolete)
 // 0 Name: 3817pbc.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -17,9 +18,9 @@ function ldraw_lib__3817pbc() = [
 // 
 // 
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 3816pbc.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__3816pbc()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__3816pbc(realsolid)],
 // 
 ];
 module ldraw_lib__3817pbc(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3817pbc(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3817pbc(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3817pbc(line=0.2);

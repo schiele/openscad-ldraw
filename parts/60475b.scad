@@ -3,7 +3,8 @@ use <../p/box4t.scad>
 use <../p/box5.scad>
 use <../p/clip5.scad>
 use <../p/stud2.scad>
-function ldraw_lib__60475b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__60475b(realsolid=false) = [
 // 0 Brick  1 x  1 with Clip Vertical (Thick C-Clip) and Hollow Stud
 // 0 Name: 60475b.dat
 // 0 Author: Owen Burgoyne [C3POwen]
@@ -28,9 +29,9 @@ function ldraw_lib__60475b() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 24 0 6 0 0 0 -20 0 0 0 6 box5.dat
-  [1,16,0,24,0,6,0,0,0,-20,0,0,0,6, ldraw_lib__box5()],
+  [1,16,0,24,0,6,0,0,0,-20,0,0,0,6, ldraw_lib__box5(realsolid)],
 // 1 16 0 24 0 10 0 0 0 -24 0 0 0 10 box4t.dat
-  [1,16,0,24,0,10,0,0,0,-24,0,0,0,10, ldraw_lib__box4t()],
+  [1,16,0,24,0,10,0,0,0,-24,0,0,0,10, ldraw_lib__box4t(realsolid)],
 // 4 16 10 24 -10 4.19094 16 -10 -4.19094 16 -10 -10 24 -10
   [4,16,10,24,-10,4.19094,16,-10,-4.19094,16,-10,-10,24,-10],
 // 4 16 -10 24 -10 -4.19094 16 -10 -4.19094 8 -10 -10 0 -10
@@ -48,10 +49,10 @@ function ldraw_lib__60475b() = [
 // 2 24 4.19094 16 -10 4.19094 8 -10
   [2,24,4.19094,16,-10,4.19094,8,-10],
 // 1 16 0 12 -20 1 0 0 0 1 0 0 0 1 clip5.dat
-  [1,16,0,12,-20,1,0,0,0,1,0,0,0,1, ldraw_lib__clip5()],
+  [1,16,0,12,-20,1,0,0,0,1,0,0,0,1, ldraw_lib__clip5(realsolid)],
 // 1 16 0 0 0 0 0 -1 0 1 0 1 0 0 stud2.dat
-  [1,16,0,0,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__stud2()],
+  [1,16,0,0,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__stud2(realsolid)],
 ];
 module ldraw_lib__60475b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__60475b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__60475b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__60475b(line=0.2);

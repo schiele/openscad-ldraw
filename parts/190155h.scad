@@ -3,7 +3,8 @@ use <../p/box5-12.scad>
 use <../p/logo-shell-e.scad>
 use <../p/logo-shell-h.scad>
 use <../p/logo-shell-s.scad>
-function ldraw_lib__190155h() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__190155h(realsolid=false) = [
 // 0 Sticker  0.5 x  2 with Red "Shell" on White Background
 // 0 Name: 190155h.dat
 // 0 Author: Vincent Messenet [Cheenzo]
@@ -21,13 +22,13 @@ function ldraw_lib__190155h() = [
 // 
 // 
 // 1 16 0 -.25 0 20 0 0 0 .25 0 0 0 5 box5-12.dat
-  [1,16,0,-.25,0,20,0,0,0,.25,0,0,0,5, ldraw_lib__box5_12()],
+  [1,16,0,-.25,0,20,0,0,0,.25,0,0,0,5, ldraw_lib__box5_12(realsolid)],
 // 1 15 -12.25 -.25 0 .35 0 0 0 1 0 0 0 .35 logo-shell-s.dat
-  [1,15,-12.25,-.25,0,.35,0,0,0,1,0,0,0,.35, ldraw_lib__logo_shell_s()],
+  [1,15,-12.25,-.25,0,.35,0,0,0,1,0,0,0,.35, ldraw_lib__logo_shell_s(realsolid)],
 // 1 15 -3.25 -.25 0 .35 0 0 0 1 0 0 0 .35 logo-shell-h.dat
-  [1,15,-3.25,-.25,0,.35,0,0,0,1,0,0,0,.35, ldraw_lib__logo_shell_h()],
+  [1,15,-3.25,-.25,0,.35,0,0,0,1,0,0,0,.35, ldraw_lib__logo_shell_h(realsolid)],
 // 1 15 5.25 -.25 -.83 .35 0 0 0 1 0 0 0 .35 logo-shell-e.dat
-  [1,15,5.25,-.25,-.83,.35,0,0,0,1,0,0,0,.35, ldraw_lib__logo_shell_e()],
+  [1,15,5.25,-.25,-.83,.35,0,0,0,1,0,0,0,.35, ldraw_lib__logo_shell_e(realsolid)],
 // 4 4 12.81 -.25 -3.33 12.81 -.25 3.33 10.25 -.25 3.33 10.25 -.25 -3.33
   [4,4,12.81,-.25,-3.33,12.81,-.25,3.33,10.25,-.25,3.33,10.25,-.25,-3.33],
 // 4 4 16.58 -.25 -3.33 16.58 -.25 3.33 14.03 -.25 3.33 14.03 -.25 -3.33
@@ -120,5 +121,5 @@ function ldraw_lib__190155h() = [
   [4,15,14.03,-.25,-3.33,14.03,-.25,3.33,12.81,-.25,3.33,12.81,-.25,-3.33],
 ];
 module ldraw_lib__190155h(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__190155h(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__190155h(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__190155h(line=0.2);

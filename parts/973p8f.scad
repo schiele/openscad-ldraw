@@ -3,7 +3,8 @@ use <../p/1-4cyli.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4ndis.scad>
 use <s/973s01.scad>
-function ldraw_lib__973p8f() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__973p8f(realsolid=false) = [
 // 0 Minifig Torso with Telephone Pattern
 // 0 Name: 973p8f.dat
 // 0 Author: Michael Heidemann [mikeheide]
@@ -18,10 +19,10 @@ function ldraw_lib__973p8f() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01(realsolid)],
 // 0 COMMENT neck mark
 // 1 0 0 -4 0 4.243 0 -4.243 0 -8 0 -4.243 0 -4.243 1-4cyli.dat
-  [1,0,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli()],
+  [1,0,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli(realsolid)],
 // 0 COMMENT plain back
 // 4 16 -19 32 10 -19 29 10 19 29 10 19 32 10
   [4,16,-19,32,10,-19,29,10,19,29,10,19,32,10],
@@ -31,21 +32,21 @@ function ldraw_lib__973p8f() = [
   [4,16,12,0,10,14.345,2,10,-14.345,2,10,-12,0,10],
 // 0 COMMENT front pattern
 // 1 1 -2.5 13.5 -10 1 0 0 0 0 -1 0 1 0 4-4disc.dat
-  [1,1,-2.5,13.5,-10,1,0,0,0,0,-1,0,1,0, ldraw_lib__4_4disc()],
+  [1,1,-2.5,13.5,-10,1,0,0,0,0,-1,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 1 -2.5 18.75 -10 1 0 0 0 0 -1 0 1 0 4-4disc.dat
-  [1,1,-2.5,18.75,-10,1,0,0,0,0,-1,0,1,0, ldraw_lib__4_4disc()],
+  [1,1,-2.5,18.75,-10,1,0,0,0,0,-1,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 1 -2.5 24 -10 1 0 0 0 0 -1 0 1 0 4-4disc.dat
-  [1,1,-2.5,24,-10,1,0,0,0,0,-1,0,1,0, ldraw_lib__4_4disc()],
+  [1,1,-2.5,24,-10,1,0,0,0,0,-1,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 1 -2.5 29.25 -10 1 0 0 0 0 -1 0 1 0 4-4disc.dat
-  [1,1,-2.5,29.25,-10,1,0,0,0,0,-1,0,1,0, ldraw_lib__4_4disc()],
+  [1,1,-2.5,29.25,-10,1,0,0,0,0,-1,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 16 -2.5 29.25 -10 1 0 0 0 0 -1 0 1 0 4-4ndis.dat
-  [1,16,-2.5,29.25,-10,1,0,0,0,0,-1,0,1,0, ldraw_lib__4_4ndis()],
+  [1,16,-2.5,29.25,-10,1,0,0,0,0,-1,0,1,0, ldraw_lib__4_4ndis(realsolid)],
 // 1 16 -2.5 24 -10 1 0 0 0 0 -1 0 1 0 4-4ndis.dat
-  [1,16,-2.5,24,-10,1,0,0,0,0,-1,0,1,0, ldraw_lib__4_4ndis()],
+  [1,16,-2.5,24,-10,1,0,0,0,0,-1,0,1,0, ldraw_lib__4_4ndis(realsolid)],
 // 1 16 -2.5 18.75 -10 1 0 0 0 0 -1 0 1 0 4-4ndis.dat
-  [1,16,-2.5,18.75,-10,1,0,0,0,0,-1,0,1,0, ldraw_lib__4_4ndis()],
+  [1,16,-2.5,18.75,-10,1,0,0,0,0,-1,0,1,0, ldraw_lib__4_4ndis(realsolid)],
 // 1 16 -2.5 13.5 -10 1 0 0 0 0 -1 0 1 0 4-4ndis.dat
-  [1,16,-2.5,13.5,-10,1,0,0,0,0,-1,0,1,0, ldraw_lib__4_4ndis()],
+  [1,16,-2.5,13.5,-10,1,0,0,0,0,-1,0,1,0, ldraw_lib__4_4ndis(realsolid)],
 // 4 0 0 10.25 -10 -1 10.25 -10 -1 32 -10 0 32 -10
   [4,0,0,10.25,-10,-1,10.25,-10,-1,32,-10,0,32,-10],
 // 3 0 0 10.25 -10 -.5 8 -10 -1 10.25 -10
@@ -532,5 +533,5 @@ function ldraw_lib__973p8f() = [
 // 0
 ];
 module ldraw_lib__973p8f(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__973p8f(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__973p8f(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__973p8f(line=0.2);

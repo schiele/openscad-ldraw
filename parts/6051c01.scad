@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <6050.scad>
 use <6051.scad>
-function ldraw_lib__6051c01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6051c01(realsolid=false) = [
 // 0 Boat Bow 12 x 12 x  5.333 with Brown Bottom
 // 0 Name: 6051c01.dat
 // 0 Author: Paul Easter [pneaster]
@@ -23,10 +24,10 @@ function ldraw_lib__6051c01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 6051.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__6051()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__6051(realsolid)],
 // 1 6 0 0 0 1 0 0 0 1 0 0 0 1 6050.dat
-  [1,6,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__6050()],
+  [1,6,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__6050(realsolid)],
 ];
 module ldraw_lib__6051c01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6051c01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6051c01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6051c01(line=0.2);

@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <logoferraris02.scad>
-function ldraw_lib__s__logoferraris05() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__logoferraris05(realsolid=false) = [
 // 0 ~Logo Ferrari "Scuderia Ferrari" and Badge with Background
 // 0 Name: s\logoferraris05.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -19,7 +20,7 @@ function ldraw_lib__s__logoferraris05() = [
 // 0 // Primitive
 // 
 // 1 4 -21.9515 0 11.414 1 0 0 0 1 0 0 0 1 s\logoferraris02.dat
-  [1,4,-21.9515,0,11.414,1,0,0,0,1,0,0,0,1, ldraw_lib__s__logoferraris02()],
+  [1,4,-21.9515,0,11.414,1,0,0,0,1,0,0,0,1, ldraw_lib__s__logoferraris02(realsolid)],
 // 0 // White box for text
 // 4 15 -16.8373 0 -2.4224 -16.0717 0 -2.9384 -15.849 0 -2.9224 -13 0 -2.4224
   [4,15,-16.8373,0,-2.4224,-16.0717,0,-2.9384,-15.849,0,-2.9224,-13,0,-2.4224],
@@ -875,5 +876,5 @@ function ldraw_lib__s__logoferraris05() = [
   [4,16,21.93,0,-12.44,31.4,0,-22,31.4,0,22,21.93,0,18.6304],
 ];
 module ldraw_lib__s__logoferraris05(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__logoferraris05(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__logoferraris05(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__logoferraris05(line=0.2);

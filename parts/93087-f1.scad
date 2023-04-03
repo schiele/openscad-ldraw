@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <93087k01.scad>
 use <93087k02.scad>
-function ldraw_lib__93087_f1() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__93087_f1(realsolid=false) = [
 // 0 Animal Horse Friends Bridle (Formed)
 // 0 Name: 93087-f1.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -20,10 +21,10 @@ function ldraw_lib__93087_f1() = [
 // 
 // 
 // 1 16 0 0.726 -0.852 1 0 0 0 0.928 0.375 0 -0.375 0.928 93087k01.dat
-  [1,16,0,0.726,-0.852,1,0,0,0,0.928,0.375,0,-0.375,0.928, ldraw_lib__93087k01()],
+  [1,16,0,0.726,-0.852,1,0,0,0,0.928,0.375,0,-0.375,0.928, ldraw_lib__93087k01(realsolid)],
 // 1 16 0 4.847 9.346 1 0 0 0 0.848 -0.53 0 0.53 0.848 93087k02.dat
-  [1,16,0,4.847,9.346,1,0,0,0,0.848,-0.53,0,0.53,0.848, ldraw_lib__93087k02()],
+  [1,16,0,4.847,9.346,1,0,0,0,0.848,-0.53,0,0.53,0.848, ldraw_lib__93087k02(realsolid)],
 ];
 module ldraw_lib__93087_f1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__93087_f1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__93087_f1(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__93087_f1(line=0.2);

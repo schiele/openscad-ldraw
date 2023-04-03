@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__190155k() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__190155k(realsolid=false) = [
 // 0 Sticker  1.1 x  2.9 with White "Shop" on Black Background
 // 0 Name: 190155k.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -18,7 +19,7 @@ function ldraw_lib__190155k() = [
 // 
 // 0 // Font: Arial Bold
 // 1 16 0 -0.25 0 29 0 0 0 0.25 0 0 0 11 box5-12.dat
-  [1,16,0,-0.25,0,29,0,0,0,0.25,0,0,0,11, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,29,0,0,0,0.25,0,0,0,11, ldraw_lib__box5_12(realsolid)],
 // 4 15 -26.94 -0.25 -2.22 -26.3 -0.25 -3.57 -23.75 -0.25 -1.64 -24.17 -0.25 -0.28
   [4,15,-26.94,-0.25,-2.22,-26.3,-0.25,-3.57,-23.75,-0.25,-1.64,-24.17,-0.25,-0.28],
 // 4 15 -23.03 -0.25 -2.59 -26.3 -0.25 -3.57 -25.37 -0.25 -4.64 -24.13 -0.25 -5.42
@@ -457,5 +458,5 @@ function ldraw_lib__190155k() = [
   [3,0,20.87,-0.25,-5.92,18.42,-0.25,-10.14,21.78,-0.25,-6.02],
 ];
 module ldraw_lib__190155k(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__190155k(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__190155k(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__190155k(line=0.2);

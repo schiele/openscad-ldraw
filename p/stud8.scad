@@ -2,7 +2,8 @@ use <../lib.scad>
 use <4-4cyli.scad>
 use <4-4edge.scad>
 use <4-4ring7.scad>
-function ldraw_lib__stud8() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__stud8(realsolid=false) = [
 // 0 Stud Duplo Tube
 // 0 Name: stud8.dat
 // 0 Author: Tony Hafner [hafhead]
@@ -21,24 +22,24 @@ function ldraw_lib__stud8() = [
 // 
 // 
 // 1 16 0 -4 0 14 0 0 0 1 0 0 0 14 4-4edge.dat
-  [1,16,0,-4,0,14,0,0,0,1,0,0,0,14, ldraw_lib__4_4edge()],
+  [1,16,0,-4,0,14,0,0,0,1,0,0,0,14, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 -4 0 16 0 0 0 1 0 0 0 16 4-4edge.dat
-  [1,16,0,-4,0,16,0,0,0,1,0,0,0,16, ldraw_lib__4_4edge()],
+  [1,16,0,-4,0,16,0,0,0,1,0,0,0,16, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 0 0 14 0 0 0 1 0 0 0 14 4-4edge.dat
-  [1,16,0,0,0,14,0,0,0,1,0,0,0,14, ldraw_lib__4_4edge()],
+  [1,16,0,0,0,14,0,0,0,1,0,0,0,14, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 0 0 16 0 0 0 1 0 0 0 16 4-4edge.dat
-  [1,16,0,0,0,16,0,0,0,1,0,0,0,16, ldraw_lib__4_4edge()],
+  [1,16,0,0,0,16,0,0,0,1,0,0,0,16, ldraw_lib__4_4edge(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -4 0 14 0 0 0 4 0 0 0 14 4-4cyli.dat
-  [1,16,0,-4,0,14,0,0,0,4,0,0,0,14, ldraw_lib__4_4cyli()],
+  [1,16,0,-4,0,14,0,0,0,4,0,0,0,14, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 -4 0 16 0 0 0 4 0 0 0 16 4-4cyli.dat
-  [1,16,0,-4,0,16,0,0,0,4,0,0,0,16, ldraw_lib__4_4cyli()],
+  [1,16,0,-4,0,16,0,0,0,4,0,0,0,16, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 -4 0 2 0 0 0 1 0 0 0 2 4-4ring7.dat
-  [1,16,0,-4,0,2,0,0,0,1,0,0,0,2, ldraw_lib__4_4ring7()],
+  [1,16,0,-4,0,2,0,0,0,1,0,0,0,2, ldraw_lib__4_4ring7(realsolid)],
 // 
 // 0
 ];
 module ldraw_lib__stud8(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__stud8(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__stud8(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__stud8(line=0.2);

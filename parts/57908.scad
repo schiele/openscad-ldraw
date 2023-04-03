@@ -5,7 +5,8 @@ use <../p/axlehol2.scad>
 use <../p/axlehol8.scad>
 use <../p/axlehol9.scad>
 use <../p/axlesphe.scad>
-function ldraw_lib__57908() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__57908(realsolid=false) = [
 // 0 Brick  2 x  2 with Two Ball Joints
 // 0 Name: 57908.dat
 // 0 Author: Michael Heidemann [mikeheide]
@@ -20,29 +21,29 @@ function ldraw_lib__57908() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 3003.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3003()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3003(realsolid)],
 // 1 16 -20 10 0 0 -7.2 0 1 0 0 0 0 1 axlehol8.dat
-  [1,16,-20,10,0,0,-7.2,0,1,0,0,0,0,1, ldraw_lib__axlehol8()],
+  [1,16,-20,10,0,0,-7.2,0,1,0,0,0,0,1, ldraw_lib__axlehol8(realsolid)],
 // 1 16 -20 10 0 0 -7.2 0 1 0 0 0 0 1 axlehol9.dat
-  [1,16,-20,10,0,0,-7.2,0,1,0,0,0,0,1, ldraw_lib__axlehol9()],
+  [1,16,-20,10,0,0,-7.2,0,1,0,0,0,0,1, ldraw_lib__axlehol9(realsolid)],
 // 1 16 -20 10 0 0 -7.2 0 1 0 0 0 0 1 axlehol2.dat
-  [1,16,-20,10,0,0,-7.2,0,1,0,0,0,0,1, ldraw_lib__axlehol2()],
+  [1,16,-20,10,0,0,-7.2,0,1,0,0,0,0,1, ldraw_lib__axlehol2(realsolid)],
 // 1 16 -40 10 0 0 -1 0 1 0 0 0 0 -1 axlesphe.dat
-  [1,16,-40,10,0,0,-1,0,1,0,0,0,0,-1, ldraw_lib__axlesphe()],
+  [1,16,-40,10,0,0,-1,0,1,0,0,0,0,-1, ldraw_lib__axlesphe(realsolid)],
 // 1 16 -40 10 0 12.81 0 0 0 12.81 0 0 0 12.81 8-8sphe.dat
-  [1,16,-40,10,0,12.81,0,0,0,12.81,0,0,0,12.81, ldraw_lib__8_8sphe()],
+  [1,16,-40,10,0,12.81,0,0,0,12.81,0,0,0,12.81, ldraw_lib__8_8sphe(realsolid)],
 // 1 16 20 10 0 0 7.2 0 1 0 0 0 0 -1 axlehol8.dat
-  [1,16,20,10,0,0,7.2,0,1,0,0,0,0,-1, ldraw_lib__axlehol8()],
+  [1,16,20,10,0,0,7.2,0,1,0,0,0,0,-1, ldraw_lib__axlehol8(realsolid)],
 // 1 16 20 10 0 0 7.2 0 1 0 0 0 0 -1 axlehol9.dat
-  [1,16,20,10,0,0,7.2,0,1,0,0,0,0,-1, ldraw_lib__axlehol9()],
+  [1,16,20,10,0,0,7.2,0,1,0,0,0,0,-1, ldraw_lib__axlehol9(realsolid)],
 // 1 16 20 10 0 0 7.2 0 1 0 0 0 0 -1 axlehol2.dat
-  [1,16,20,10,0,0,7.2,0,1,0,0,0,0,-1, ldraw_lib__axlehol2()],
+  [1,16,20,10,0,0,7.2,0,1,0,0,0,0,-1, ldraw_lib__axlehol2(realsolid)],
 // 1 16 40 10 0 0 1 0 1 0 0 0 0 1 axlesphe.dat
-  [1,16,40,10,0,0,1,0,1,0,0,0,0,1, ldraw_lib__axlesphe()],
+  [1,16,40,10,0,0,1,0,1,0,0,0,0,1, ldraw_lib__axlesphe(realsolid)],
 // 1 16 40 10 0 -12.81 0 0 0 12.81 0 0 0 -12.81 8-8sphe.dat
-  [1,16,40,10,0,-12.81,0,0,0,12.81,0,0,0,-12.81, ldraw_lib__8_8sphe()],
+  [1,16,40,10,0,-12.81,0,0,0,12.81,0,0,0,-12.81, ldraw_lib__8_8sphe(realsolid)],
 // 0
 ];
 module ldraw_lib__57908(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__57908(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__57908(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__57908(line=0.2);

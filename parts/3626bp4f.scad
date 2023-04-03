@@ -3,7 +3,8 @@ use <../p/1-16cyli.scad>
 use <s/3626bs02.scad>
 use <s/3626bs04.scad>
 use <../p/t16o6250.scad>
-function ldraw_lib__3626bp4f() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3626bp4f(realsolid=false) = [
 // 0 Minifig Head with Messy Black Hair,  1 Tooth in Mouth Pattern
 // 0 Name: 3626bp4f.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -21,21 +22,21 @@ function ldraw_lib__3626bp4f() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3626bs02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626bs02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626bs02(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3626bs04.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626bs04()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626bs04(realsolid)],
 // 1 16 0 4 0 13 0 0 0 13 0 0 0 -13 1-16cyli.dat
-  [1,16,0,4,0,13,0,0,0,13,0,0,0,-13, ldraw_lib__1_16cyli()],
+  [1,16,0,4,0,13,0,0,0,13,0,0,0,-13, ldraw_lib__1_16cyli(realsolid)],
 // 1 16 0 4 0 -13 0 0 0 13 0 0 0 -13 1-16cyli.dat
-  [1,16,0,4,0,-13,0,0,0,13,0,0,0,-13, ldraw_lib__1_16cyli()],
+  [1,16,0,4,0,-13,0,0,0,13,0,0,0,-13, ldraw_lib__1_16cyli(realsolid)],
 // 1 16 0 17 0 8 0 0 0 6.4 0 0 0 -8 t16o6250.dat
-  [1,16,0,17,0,8,0,0,0,6.4,0,0,0,-8, ldraw_lib__t16o6250()],
+  [1,16,0,17,0,8,0,0,0,6.4,0,0,0,-8, ldraw_lib__t16o6250(realsolid)],
 // 1 16 0 17 0 -8 0 0 0 6.4 0 0 0 -8 t16o6250.dat
-  [1,16,0,17,0,-8,0,0,0,6.4,0,0,0,-8, ldraw_lib__t16o6250()],
+  [1,16,0,17,0,-8,0,0,0,6.4,0,0,0,-8, ldraw_lib__t16o6250(realsolid)],
 // 1 16 0 4 0 -8 0 0 0 -6.4 0 0 0 -8 t16o6250.dat
-  [1,16,0,4,0,-8,0,0,0,-6.4,0,0,0,-8, ldraw_lib__t16o6250()],
+  [1,16,0,4,0,-8,0,0,0,-6.4,0,0,0,-8, ldraw_lib__t16o6250(realsolid)],
 // 1 16 0 4 0 8 0 0 0 -6.4 0 0 0 -8 t16o6250.dat
-  [1,16,0,4,0,8,0,0,0,-6.4,0,0,0,-8, ldraw_lib__t16o6250()],
+  [1,16,0,4,0,8,0,0,0,-6.4,0,0,0,-8, ldraw_lib__t16o6250(realsolid)],
 // 
 // 4 4 -3.6037 18.5309 -11.9029 -3.2 18.75 -11.8 -2.8 18.9 -11.7542 -2.3781 18.9422 -11.8028
   [4,4,-3.6037,18.5309,-11.9029,-3.2,18.75,-11.8,-2.8,18.9,-11.7542,-2.3781,18.9422,-11.8028],
@@ -1030,5 +1031,5 @@ function ldraw_lib__3626bp4f() = [
   [5,24,11.6592,18.5309,-4.8296,12.0107,17,-4.9751,8.9232,18.5309,-8.9232,12.6192,18.5309,0],
 ];
 module ldraw_lib__3626bp4f(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3626bp4f(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3626bp4f(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3626bp4f(line=0.2);

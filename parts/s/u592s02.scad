@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__u592s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__u592s02(realsolid=false) = [
 // 0 ~Figure Fabuland Horse Head Asymmetric Areas
 // 0 Name: s\u592s02.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -3969,5 +3970,5 @@ function ldraw_lib__s__u592s02() = [
   [5,24,0.3,-20,20.8,0,-19.733,20.867,0.1,-20.6,20.7,1.7,-18.2,21],
 ];
 module ldraw_lib__s__u592s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__u592s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__u592s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__u592s02(line=0.2);

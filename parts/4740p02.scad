@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/4740s01.scad>
-function ldraw_lib__4740p02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4740p02(realsolid=false) = [
 // 0 Dish  2 x  2 Inverted with Mushroom Tan Pattern
 // 0 Name: 4740p02.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -17,7 +18,7 @@ function ldraw_lib__4740p02() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4740s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4740s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4740s01(realsolid)],
 // 5 24 6 0 0 12 1.7 0 5.5434 0 -2.2962 5.5434 0 2.2962
   [5,24,6,0,0,12,1.7,0,5.5434,0,-2.2962,5.5434,0,2.2962],
 // 5 24 5.5434 0 2.2962 11.0868 1.7 4.5924 6 0 0 4.2426 0 4.2426
@@ -844,5 +845,5 @@ function ldraw_lib__4740p02() = [
   [4,16,11.6007,1.7,2.0082,11.2396,1.7,3.824,10.5,1.4485,3.08,10.54,1.4216,2.4],
 ];
 module ldraw_lib__4740p02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4740p02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4740p02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4740p02(line=0.2);

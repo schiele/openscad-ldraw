@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__003440a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__003440a(realsolid=false) = [
 // 0 Sticker  2.6 x  5.5 "International TRANSPORT"
 // 0 Name: 003440a.dat
 // 0 Author: Alex Taylor [anathema]
@@ -1226,8 +1227,8 @@ function ldraw_lib__003440a() = [
 // 3 0 30.4 -0.25 6.8 29.8 -0.25 6.6 29.6 -0.25 5.6
   [3,0,30.4,-0.25,6.8,29.8,-0.25,6.6,29.6,-0.25,5.6],
 // 1 16 0 -0.25 0 55 0 0 0 0.25 0 0 0 26 box5-12.dat
-  [1,16,0,-0.25,0,55,0,0,0,0.25,0,0,0,26, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,55,0,0,0,0.25,0,0,0,26, ldraw_lib__box5_12(realsolid)],
 ];
 module ldraw_lib__003440a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__003440a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__003440a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__003440a(line=0.2);

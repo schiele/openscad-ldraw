@@ -3,7 +3,8 @@ use <15466p01.scad>
 use <u9083.scad>
 use <u9084.scad>
 use <u9085.scad>
-function ldraw_lib__15466p01c01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__15466p01c01(realsolid=false) = [
 // 0 Electric Brick  2 x  4 with USB Flash Drive 16GB (Retracted)
 // 0 Name: 15466p01c01.dat
 // 0 Author: Santeri Piippo [arezey]
@@ -18,14 +19,14 @@ function ldraw_lib__15466p01c01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 u9083.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9083()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9083(realsolid)],
 // 1 16 0 8 0 1 0 0 0 1 0 0 0 1 u9085.dat
-  [1,16,0,8,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9085()],
+  [1,16,0,8,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9085(realsolid)],
 // 1 16 0 16 0 1 0 0 0 1 0 0 0 1 15466p01.dat
-  [1,16,0,16,0,1,0,0,0,1,0,0,0,1, ldraw_lib__15466p01()],
+  [1,16,0,16,0,1,0,0,0,1,0,0,0,1, ldraw_lib__15466p01(realsolid)],
 // 1 16 0 11 -2.5 1 0 0 0 1 0 0 0 1 u9084.dat
-  [1,16,0,11,-2.5,1,0,0,0,1,0,0,0,1, ldraw_lib__u9084()],
+  [1,16,0,11,-2.5,1,0,0,0,1,0,0,0,1, ldraw_lib__u9084(realsolid)],
 ];
 module ldraw_lib__15466p01c01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__15466p01c01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__15466p01c01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__15466p01c01(line=0.2);

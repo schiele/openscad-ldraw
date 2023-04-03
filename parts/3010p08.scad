@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3010s01.scad>
-function ldraw_lib__3010p08() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3010p08(realsolid=false) = [
 // 0 Brick  1 x  4 with Basic Car Headlights Pattern
 // 0 Name: 3010p08.dat
 // 0 Author: James Jessiman
@@ -22,7 +23,7 @@ function ldraw_lib__3010p08() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3010s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3010s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3010s01(realsolid)],
 // 
 // 4 80 -16 3 -10 -36 3 -10 -36 15 -10 -16 15 -10
   [4,80,-16,3,-10,-36,3,-10,-36,15,-10,-16,15,-10],
@@ -134,5 +135,5 @@ function ldraw_lib__3010p08() = [
   [3,16,0,0,-10,14,3,-10,16,3,-10],
 ];
 module ldraw_lib__3010p08(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3010p08(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3010p08(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3010p08(line=0.2);

@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__30219s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__30219s02(realsolid=false) = [
 // 0 ~Sphere 1.0 Truncated by Plane at 0.3827
 // 0 Name: s\30219s02.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -82,5 +83,5 @@ function ldraw_lib__s__30219s02() = [
   [5,24,.7836,.4393,.4393,.8017,.3827,.432,.4393,.4393,.7836,.9239,.3827,0],
 ];
 module ldraw_lib__s__30219s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__30219s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__30219s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__30219s02(line=0.2);

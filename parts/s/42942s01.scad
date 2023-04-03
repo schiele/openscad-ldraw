@@ -2,7 +2,8 @@ use <../../lib.scad>
 use <../../p/box3u5p.scad>
 use <../../p/box4-1.scad>
 use <../../p/box5.scad>
-function ldraw_lib__s__42942s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__42942s01(realsolid=false) = [
 // 0 ~Car Track 16 x  8 x  2 Ramp Height 4 - End Inside
 // 0 Name: s\42942s01.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -21,20 +22,20 @@ function ldraw_lib__s__42942s01() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 30 48 70 6 0 0 0 -20 0 0 0 6 box5.dat
-  [1,16,30,48,70,6,0,0,0,-20,0,0,0,6, ldraw_lib__box5()],
+  [1,16,30,48,70,6,0,0,0,-20,0,0,0,6, ldraw_lib__box5(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 30 48 -70 6 0 0 0 -20 0 0 0 6 box5.dat
-  [1,16,30,48,-70,6,0,0,0,-20,0,0,0,6, ldraw_lib__box5()],
+  [1,16,30,48,-70,6,0,0,0,-20,0,0,0,6, ldraw_lib__box5(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 10 0 0 10 0 0 0 24 0 0 0 60 box3u5p.dat
-  [1,16,10,0,0,10,0,0,0,24,0,0,0,60, ldraw_lib__box3u5p()],
+  [1,16,10,0,0,10,0,0,0,24,0,0,0,60, ldraw_lib__box3u5p(realsolid)],
 // 0 // Primitives
 // 1 16 18 12 70 0 0 -2 0 28 0 1.5 0 0 box4-1.dat
-  [1,16,18,12,70,0,0,-2,0,28,0,1.5,0,0, ldraw_lib__box4_1()],
+  [1,16,18,12,70,0,0,-2,0,28,0,1.5,0,0, ldraw_lib__box4_1(realsolid)],
 // 1 16 18 12 -70 0 0 -2 0 28 0 1.5 0 0 box4-1.dat
-  [1,16,18,12,-70,0,0,-2,0,28,0,1.5,0,0, ldraw_lib__box4_1()],
+  [1,16,18,12,-70,0,0,-2,0,28,0,1.5,0,0, ldraw_lib__box4_1(realsolid)],
 // 0 // Horizontal outer faces
 // 4 16 0 40 80 4 40 76 4 40 40 0 40 40
   [4,16,0,40,80,4,40,76,4,40,40,0,40,40],
@@ -317,5 +318,5 @@ function ldraw_lib__s__42942s01() = [
   [2,24,16,40,-64,16,28,-64],
 ];
 module ldraw_lib__s__42942s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__42942s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__42942s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__42942s01(line=0.2);

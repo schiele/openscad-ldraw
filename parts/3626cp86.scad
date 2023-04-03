@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/2-4cyli.scad>
 use <s/3626cp86s01.scad>
 use <s/3626cs02.scad>
-function ldraw_lib__3626cp86() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3626cp86(realsolid=false) = [
 // 0 Minifig Head with Dark Tan Eyebrows, Moustache, Dark Tan and Grey Sideburns and Stubble Pattern
 // 0 Name: 3626cp86.dat
 // 0 Author: Ulrich Röder [UR]
@@ -22,13 +23,13 @@ function ldraw_lib__3626cp86() = [
 // 0 // Main
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3626cp86s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626cp86s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626cp86s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\3626cp86s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626cp86s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626cp86s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3626cs02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626cs02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626cs02(realsolid)],
 // 1 16 0 4 0 13 0 0 0 13 0 0 0 13 2-4cyli.dat
-  [1,16,0,4,0,13,0,0,0,13,0,0,0,13, ldraw_lib__2_4cyli()],
+  [1,16,0,4,0,13,0,0,0,13,0,0,0,13, ldraw_lib__2_4cyli(realsolid)],
 // 3 16 -5.1754 14.7374 -11.8764 -5.9575 16.1676 -11.3539 -4.9749 14.624 -12.0104
   [3,16,-5.1754,14.7374,-11.8764,-5.9575,16.1676,-11.3539,-4.9749,14.624,-12.0104],
 // 3 16 4.9749 4 -12.0104 4.8294 6.2161 -12.0394 4.9749 6.2067 -12.0104
@@ -1078,5 +1079,5 @@ function ldraw_lib__3626cp86() = [
   [3,0,.54,14.4255,-12.8926,.8532,15.2445,-12.8303,.9337,14.3881,-12.8143],
 ];
 module ldraw_lib__3626cp86(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3626cp86(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3626cp86(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3626cp86(line=0.2);

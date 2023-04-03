@@ -4,7 +4,8 @@ use <../p/4-4cylc.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4edge.scad>
 use <../p/t01o2500.scad>
-function ldraw_lib__27328k01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__27328k01(realsolid=false) = [
 // 0 ~Hose Flexible 10L End Segment
 // 0 Name: 27328k01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -19,22 +20,22 @@ function ldraw_lib__27328k01() = [
 // 
 // 
 // 1 16 0 -.25 0 1 0 0 0 .25 0 0 0 1 4-4con4.dat
-  [1,16,0,-.25,0,1,0,0,0,.25,0,0,0,1, ldraw_lib__4_4con4()],
+  [1,16,0,-.25,0,1,0,0,0,.25,0,0,0,1, ldraw_lib__4_4con4(realsolid)],
 // 1 16 0 -1.5 0 5 0 0 0 5 0 0 0 5 t01o2500.dat
-  [1,16,0,-1.5,0,5,0,0,0,5,0,0,0,5, ldraw_lib__t01o2500()],
+  [1,16,0,-1.5,0,5,0,0,0,5,0,0,0,5, ldraw_lib__t01o2500(realsolid)],
 // 1 16 0 -6 0 5 0 0 0 -5 0 0 0 5 t01o2500.dat
-  [1,16,0,-6,0,5,0,0,0,-5,0,0,0,5, ldraw_lib__t01o2500()],
+  [1,16,0,-6,0,5,0,0,0,-5,0,0,0,5, ldraw_lib__t01o2500(realsolid)],
 // 1 16 0 -7.25 0 1 0 0 0 -.25 0 0 0 1 4-4con4.dat
-  [1,16,0,-7.25,0,1,0,0,0,-.25,0,0,0,1, ldraw_lib__4_4con4()],
+  [1,16,0,-7.25,0,1,0,0,0,-.25,0,0,0,1, ldraw_lib__4_4con4(realsolid)],
 // 1 16 0 -7.5 0 4 0 0 0 1 0 0 0 4 4-4edge.dat
-  [1,16,0,-7.5,0,4,0,0,0,1,0,0,0,4, ldraw_lib__4_4edge()],
+  [1,16,0,-7.5,0,4,0,0,0,1,0,0,0,4, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 20 0 4 0 0 0 -20 0 0 0 4 4-4cylc.dat
-  [1,16,0,20,0,4,0,0,0,-20,0,0,0,4, ldraw_lib__4_4cylc()],
+  [1,16,0,20,0,4,0,0,0,-20,0,0,0,4, ldraw_lib__4_4cylc(realsolid)],
 // 1 16 0 -7.5 0 4 0 0 0 -3.9 0 0 0 4 4-4cyli.dat
-  [1,16,0,-7.5,0,4,0,0,0,-3.9,0,0,0,4, ldraw_lib__4_4cyli()],
+  [1,16,0,-7.5,0,4,0,0,0,-3.9,0,0,0,4, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 -1.5 0 6.25 0 0 0 -4.5 0 0 0 6.25 4-4cyli.dat
-  [1,16,0,-1.5,0,6.25,0,0,0,-4.5,0,0,0,6.25, ldraw_lib__4_4cyli()],
+  [1,16,0,-1.5,0,6.25,0,0,0,-4.5,0,0,0,6.25, ldraw_lib__4_4cyli(realsolid)],
 ];
 module ldraw_lib__27328k01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__27328k01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__27328k01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__27328k01(line=0.2);

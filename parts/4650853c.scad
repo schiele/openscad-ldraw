@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <4650853b.scad>
-function ldraw_lib__4650853c() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4650853c(realsolid=false) = [
 // 0 Sticker  3.9 x  2.1 with Magenta Star on Butterfly Wing, Left
 // 0 Name: 4650853c.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -17,8 +18,8 @@ function ldraw_lib__4650853c() = [
 // 
 // 
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 4650853b.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__4650853b()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__4650853b(realsolid)],
 ];
 module ldraw_lib__4650853c(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4650853c(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4650853c(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4650853c(line=0.2);

@@ -4,7 +4,8 @@ use <../p/8-8sphe.scad>
 use <s/59s01.scad>
 use <s/59s02.scad>
 use <s/59s03.scad>
-function ldraw_lib__59() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__59(realsolid=false) = [
 // 0 Minifig Sword Greatsword
 // 0 Name: 59.dat
 // 0 Author: Franklin W. Cain [fwcain]
@@ -29,52 +30,52 @@ function ldraw_lib__59() = [
 // 
 // 
 // 1 16 0 -1 0 1 0 0 0 1 0 0 0 1 s\59s01.dat
-  [1,16,0,-1,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__59s01()],
+  [1,16,0,-1,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__59s01(realsolid)],
 // 1 16 0 1 0 1 0 0 0 1 0 0 0 1 s\59s01.dat
-  [1,16,0,1,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__59s01()],
+  [1,16,0,1,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__59s01(realsolid)],
 // 1 16 0 -3 0 1 0 0 0 1 0 0 0 1 s\59s01.dat
-  [1,16,0,-3,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__59s01()],
+  [1,16,0,-3,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__59s01(realsolid)],
 // 1 16 0 3 0 1 0 0 0 1 0 0 0 1 s\59s01.dat
-  [1,16,0,3,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__59s01()],
+  [1,16,0,3,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__59s01(realsolid)],
 // 1 16 0 -5 0 1 0 0 0 1 0 0 0 1 s\59s01.dat
-  [1,16,0,-5,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__59s01()],
+  [1,16,0,-5,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__59s01(realsolid)],
 // 1 16 0 5 0 1 0 0 0 1 0 0 0 1 s\59s01.dat
-  [1,16,0,5,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__59s01()],
+  [1,16,0,5,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__59s01(realsolid)],
 // 0
 // 1 16 0 -16 0 -1 0 0 0 1 0 0 0 -1 s\59s02.dat
-  [1,16,0,-16,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__59s02()],
+  [1,16,0,-16,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__59s02(realsolid)],
 // 1 16 0 -16 0 1 0 0 0 1 0 0 0 -1 s\59s02.dat
-  [1,16,0,-16,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__59s02()],
+  [1,16,0,-16,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__59s02(realsolid)],
 // 1 16 0 -16 0 -1 0 0 0 1 0 0 0 1 s\59s02.dat
-  [1,16,0,-16,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__59s02()],
+  [1,16,0,-16,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__59s02(realsolid)],
 // 1 16 0 -16 0 1 0 0 0 1 0 0 0 1 s\59s02.dat
-  [1,16,0,-16,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__59s02()],
+  [1,16,0,-16,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__59s02(realsolid)],
 // 0
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 -1 s\59s03.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__59s03()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__59s03(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 -1 s\59s03.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__59s03()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__59s03(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\59s03.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__59s03()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__59s03(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\59s03.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__59s03()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__59s03(realsolid)],
 // 0
 // 1 16 0 -14 -12 4 0 0 0 4 0 0 0 4 8-8sphe.dat
-  [1,16,0,-14,-12,4,0,0,0,4,0,0,0,4, ldraw_lib__8_8sphe()],
+  [1,16,0,-14,-12,4,0,0,0,4,0,0,0,4, ldraw_lib__8_8sphe(realsolid)],
 // 1 16 0 -14 12 4 0 0 0 4 0 0 0 4 8-8sphe.dat
-  [1,16,0,-14,12,4,0,0,0,4,0,0,0,4, ldraw_lib__8_8sphe()],
+  [1,16,0,-14,12,4,0,0,0,4,0,0,0,4, ldraw_lib__8_8sphe(realsolid)],
 // 0
 // 0
 // 0
 // 1 16 -2 14 0 0 1 0 4 0 0 0 0 4 4-4disc.dat
-  [1,16,-2,14,0,0,1,0,4,0,0,0,0,4, ldraw_lib__4_4disc()],
+  [1,16,-2,14,0,0,1,0,4,0,0,0,0,4, ldraw_lib__4_4disc(realsolid)],
 // 1 16 2 14 0 0 -1 0 4 0 0 0 0 4 4-4disc.dat
-  [1,16,2,14,0,0,-1,0,4,0,0,0,0,4, ldraw_lib__4_4disc()],
+  [1,16,2,14,0,0,-1,0,4,0,0,0,0,4, ldraw_lib__4_4disc(realsolid)],
 // 0
 // 0
 // 0
 // 0 end of file
 ];
 module ldraw_lib__59(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__59(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__59(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__59(line=0.2);

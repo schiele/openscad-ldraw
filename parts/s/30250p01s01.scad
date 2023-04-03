@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__30250p01s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__30250p01s01(realsolid=false) = [
 // 0 ~Bracket  4 x  7 x  3 with TV Logo and "P 745" Pattern - One Side
 // 0 Name: s\30250p01s01.dat
 // 0 Author: Marc Giraudet [Mad_Marc]
@@ -851,5 +852,5 @@ function ldraw_lib__s__30250p01s01() = [
   [4,16,-16,36,0,-15,27,0,-17,27,0,-20,28,0],
 ];
 module ldraw_lib__s__30250p01s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__30250p01s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__30250p01s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__30250p01s01(line=0.2);

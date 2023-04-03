@@ -3,7 +3,8 @@ use <../p/1-4cyli.scad>
 use <../p/2-4disc.scad>
 use <../p/2-4ndis.scad>
 use <s/973s01.scad>
-function ldraw_lib__973p70() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__973p70(realsolid=false) = [
 // 0 Minifig Torso with Bomber Jacket & Black Shirt Pattern
 // 0 Name: 973p70.dat
 // 0 Author: Franklin W. Cain [fwcain]
@@ -27,10 +28,10 @@ function ldraw_lib__973p70() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01(realsolid)],
 // 0 // neck mark
 // 1 15 0 -4 0 4.243 0 -4.243 0 -8 0 -4.243 0 -4.243 1-4cyli.dat
-  [1,15,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli()],
+  [1,15,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli(realsolid)],
 // 0 // back
 // 4 16 -12 0 10 12 0 10 14.345 2 10 -14.345 2 10
   [4,16,-12,0,10,12,0,10,14.345,2,10,-14.345,2,10],
@@ -41,9 +42,9 @@ function ldraw_lib__973p70() = [
 // 
 // 0 // T-shirt
 // 1 14 0 0 -10 4.1 0 0 0 0 2.5 0 1 0 2-4disc.dat
-  [1,14,0,0,-10,4.1,0,0,0,0,2.5,0,1,0, ldraw_lib__2_4disc()],
+  [1,14,0,0,-10,4.1,0,0,0,0,2.5,0,1,0, ldraw_lib__2_4disc(realsolid)],
 // 1 0 0 0 -10 4.1 0 0 0 0 2.5 0 1 0 2-4ndis.dat
-  [1,0,0,0,-10,4.1,0,0,0,0,2.5,0,1,0, ldraw_lib__2_4ndis()],
+  [1,0,0,0,-10,4.1,0,0,0,0,2.5,0,1,0, ldraw_lib__2_4ndis(realsolid)],
 // 4 0 -4.1 0 -10 -6.7 0 -10 -4.89 1.9934 -10 -4.1 2.5 -10
   [4,0,-4.1,0,-10,-6.7,0,-10,-4.89,1.9934,-10,-4.1,2.5,-10],
 // 4 0 0 2.5 -10 -3.2 4 -10 -1.5 6.8 -10 2.2 7 -10
@@ -214,5 +215,5 @@ function ldraw_lib__973p70() = [
   [4,16,-14.53,27.93,-10,-16.8,26.33,-10,-19,29,-10,-19,32,-10],
 ];
 module ldraw_lib__973p70(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__973p70(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__973p70(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__973p70(line=0.2);

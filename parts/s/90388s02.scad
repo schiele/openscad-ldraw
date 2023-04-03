@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/rect3.scad>
-function ldraw_lib__s__90388s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__90388s02(realsolid=false) = [
 // 0 ~Minifig Hat Sombrero without Printed Surfaces, Half
 // 0 Name: s\90388s02.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -92,7 +93,7 @@ function ldraw_lib__s__90388s02() = [
 // 3 16 10.702 0 -1.5 10.702 0 1.5 11 0 0
   [3,16,10.702,0,-1.5,10.702,0,1.5,11,0,0],
 // 1 16 8.351 0 0 0 0 -2.351 0 -1 0 -1.5 0 0 rect3.dat
-  [1,16,8.351,0,0,0,0,-2.351,0,-1,0,-1.5,0,0, ldraw_lib__rect3()],
+  [1,16,8.351,0,0,0,0,-2.351,0,-1,0,-1.5,0,0, ldraw_lib__rect3(realsolid)],
 // 4 16 6 -10.602 1.5 7.7 -7.2 1.5 10.702 0 1.5 6 0 1.5
   [4,16,6,-10.602,1.5,7.7,-7.2,1.5,10.702,0,1.5,6,0,1.5],
 // 4 16 6 0 1.5 6 0 -1.5 6 -8.786 -1.5 6 -9.831 -.437
@@ -2684,5 +2685,5 @@ function ldraw_lib__s__90388s02() = [
   [5,24,0,-13.48,-6.126,4.435,-12.319,-5.773,0,-11.138,-7.43,3.303,-13.666,-5.336],
 ];
 module ldraw_lib__s__90388s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__90388s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__90388s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__90388s02(line=0.2);

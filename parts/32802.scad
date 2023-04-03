@@ -6,7 +6,8 @@ use <../p/stud2a.scad>
 use <../p/stud2s2.scad>
 use <../p/stud2s2e.scad>
 use <../p/stud3.scad>
-function ldraw_lib__32802() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__32802(realsolid=false) = [
 // 0 Slope Brick 45  4 x  1 Double Inverted with Open Centre
 // 0 Name: 32802.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -104,11 +105,11 @@ function ldraw_lib__32802() = [
 // 4 16 -8 0 24 -8 0 36 -10 0 40 -10 0 20
   [4,16,-8,0,24,-8,0,36,-10,0,40,-10,0,20],
 // 1 16 0 1 30 -1 0 0 0 3 0 0 0 -1 stud2s2e.dat
-  [1,16,0,1,30,-1,0,0,0,3,0,0,0,-1, ldraw_lib__stud2s2e()],
+  [1,16,0,1,30,-1,0,0,0,3,0,0,0,-1, ldraw_lib__stud2s2e(realsolid)],
 // 1 16 0 4 30 0 0 -1 0 6 0 1 0 0 stud2s2.dat
-  [1,16,0,4,30,0,0,-1,0,6,0,1,0,0, ldraw_lib__stud2s2()],
+  [1,16,0,4,30,0,0,-1,0,6,0,1,0,0, ldraw_lib__stud2s2(realsolid)],
 // 1 16 0 1 30 0 0 -1 0 1.25 0 1 0 0 stud2a.dat
-  [1,16,0,1,30,0,0,-1,0,1.25,0,1,0,0, ldraw_lib__stud2a()],
+  [1,16,0,1,30,0,0,-1,0,1.25,0,1,0,0, ldraw_lib__stud2a(realsolid)],
 // 
 // 2 24 10 24 -20 -10 24 -20
   [2,24,10,24,-20,-10,24,-20],
@@ -193,18 +194,18 @@ function ldraw_lib__32802() = [
 // 4 16 8 0 -24 8 0 -36 10 0 -40 10 0 -20
   [4,16,8,0,-24,8,0,-36,10,0,-40,10,0,-20],
 // 1 16 0 1 -30 -1 0 0 0 3 0 0 0 -1 stud2s2e.dat
-  [1,16,0,1,-30,-1,0,0,0,3,0,0,0,-1, ldraw_lib__stud2s2e()],
+  [1,16,0,1,-30,-1,0,0,0,3,0,0,0,-1, ldraw_lib__stud2s2e(realsolid)],
 // 1 16 0 4 -30 0 0 -1 0 6 0 -1 0 0 stud2s2.dat
-  [1,16,0,4,-30,0,0,-1,0,6,0,-1,0,0, ldraw_lib__stud2s2()],
+  [1,16,0,4,-30,0,0,-1,0,6,0,-1,0,0, ldraw_lib__stud2s2(realsolid)],
 // 1 16 0 1 -30 0 0 -1 0 1.25 0 1 0 0 stud2a.dat
-  [1,16,0,1,-30,0,0,-1,0,1.25,0,1,0,0, ldraw_lib__stud2a()],
+  [1,16,0,1,-30,0,0,-1,0,1.25,0,1,0,0, ldraw_lib__stud2a(realsolid)],
 // 
 // 1 16 0 20 0 0 0 1 0 -1 0 -1 0 0 stud3.dat
-  [1,16,0,20,0,0,0,1,0,-1,0,-1,0,0, ldraw_lib__stud3()],
+  [1,16,0,20,0,0,0,1,0,-1,0,-1,0,0, ldraw_lib__stud3(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 24 0 0 0 6 0 -4 0 -16 0 0 box5.dat
-  [1,16,0,24,0,0,0,6,0,-4,0,-16,0,0, ldraw_lib__box5()],
+  [1,16,0,24,0,0,0,6,0,-4,0,-16,0,0, ldraw_lib__box5(realsolid)],
 // 4 16 10 24 -20 6 24 -16 6 24 16 10 24 20
   [4,16,10,24,-20,6,24,-16,6,24,16,10,24,20],
 // 4 16 10 24 20 6 24 16 -6 24 16 -10 24 20
@@ -214,12 +215,12 @@ function ldraw_lib__32802() = [
 // 4 16 -10 24 -20 -6 24 -16 6 24 -16 10 24 -20
   [4,16,-10,24,-20,-6,24,-16,6,24,-16,10,24,-20],
 // 1 16 0 24 0 0 0 10 0 -8 0 -20 0 0 box3u8p.dat
-  [1,16,0,24,0,0,0,10,0,-8,0,-20,0,0, ldraw_lib__box3u8p()],
+  [1,16,0,24,0,0,0,10,0,-8,0,-20,0,0, ldraw_lib__box3u8p(realsolid)],
 // 1 16 0 16 -10 0 0 1 0 1 0 -1 0 0 stud.dat
-  [1,16,0,16,-10,0,0,1,0,1,0,-1,0,0, ldraw_lib__stud()],
+  [1,16,0,16,-10,0,0,1,0,1,0,-1,0,0, ldraw_lib__stud(realsolid)],
 // 1 16 0 16 10 0 0 1 0 1 0 -1 0 0 stud.dat
-  [1,16,0,16,10,0,0,1,0,1,0,-1,0,0, ldraw_lib__stud()],
+  [1,16,0,16,10,0,0,1,0,1,0,-1,0,0, ldraw_lib__stud(realsolid)],
 ];
 module ldraw_lib__32802(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__32802(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__32802(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__32802(line=0.2);

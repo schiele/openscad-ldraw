@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <6091.scad>
-function ldraw_lib__32807() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__32807(realsolid=false) = [
 // 0 =Brick  2 x  1 x  1.333 with Curved Top
 // 0 Name: 32807.dat
 // 0 Author: [PTadmin]
@@ -17,8 +18,8 @@ function ldraw_lib__32807() = [
 // 0 // Alias of 6091
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 6091.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__6091()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__6091(realsolid)],
 ];
 module ldraw_lib__32807(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__32807(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__32807(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__32807(line=0.2);

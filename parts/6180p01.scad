@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/6180s01.scad>
-function ldraw_lib__6180p01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6180p01(realsolid=false) = [
 // 0 Plate  4 x  6 with 12 Studs on Three Edges with International Space Station Pattern
 // 0 Name: 6180p01.dat
 // 0 Author: Orion Pobursky [OrionP]
@@ -17,7 +18,7 @@ function ldraw_lib__6180p01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\6180s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6180s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6180s01(realsolid)],
 // 0 // Pattern
 // 
 // 4 80 -40 0 -4.014 -40 0 -4.942 -39.526 0 -4.626 -36.601 0 -2.324
@@ -2760,5 +2761,5 @@ function ldraw_lib__6180p01() = [
   [3,16,-14.7,0,-23,-26.513,0,-25,-25.741,0,-25],
 ];
 module ldraw_lib__6180p01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6180p01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6180p01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6180p01(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3068bs01.scad>
-function ldraw_lib__3068bpf3() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3068bpf3(realsolid=false) = [
 // 0 Tile  2 x  2 with "7" Inverse Brown Pattern
 // 0 Name: 3068bpf3.dat
 // 0 Author: Niels Karsdorp [nielsk]
@@ -21,7 +22,7 @@ function ldraw_lib__3068bpf3() = [
 // 0 // Tile
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3068bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3068bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3068bs01(realsolid)],
 // 0 Pattern 7
 // 4 16 -14.5 0 2.5 -10 0 14 -10 0 17 -14.5 0 17
   [4,16,-14.5,0,2.5,-10,0,14,-10,0,17,-14.5,0,17],
@@ -107,5 +108,5 @@ function ldraw_lib__3068bpf3() = [
 // 0
 ];
 module ldraw_lib__3068bpf3(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3068bpf3(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3068bpf3(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3068bpf3(line=0.2);

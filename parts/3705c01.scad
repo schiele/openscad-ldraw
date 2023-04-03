@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/73839a.scad>
 use <s/73839b.scad>
-function ldraw_lib__3705c01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3705c01(realsolid=false) = [
 // 0 Technic Axle  4 Threaded
 // 0 Name: 3705c01.dat
 // 0 Author: Adriano Aicardi
@@ -21,24 +22,24 @@ function ldraw_lib__3705c01() = [
 // 
 // 
 // 1 16 0 0 10 1 0 0 0 1 0 0 0 1 s\73839a.dat
-  [1,16,0,0,10,1,0,0,0,1,0,0,0,1, ldraw_lib__s__73839a()],
+  [1,16,0,0,10,1,0,0,0,1,0,0,0,1, ldraw_lib__s__73839a(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\73839a.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__73839a()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__73839a(realsolid)],
 // 1 16 0 0 20 1 0 0 0 1 0 0 0 1 s\73839a.dat
-  [1,16,0,0,20,1,0,0,0,1,0,0,0,1, ldraw_lib__s__73839a()],
+  [1,16,0,0,20,1,0,0,0,1,0,0,0,1, ldraw_lib__s__73839a(realsolid)],
 // 1 16 0 0 30 1 0 0 0 1 0 0 0 1 s\73839a.dat
-  [1,16,0,0,30,1,0,0,0,1,0,0,0,1, ldraw_lib__s__73839a()],
+  [1,16,0,0,30,1,0,0,0,1,0,0,0,1, ldraw_lib__s__73839a(realsolid)],
 // 1 16 0 0 40 -1 0 0 0 1 0 0 0 -1 s\73839b.dat
-  [1,16,0,0,40,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__73839b()],
+  [1,16,0,0,40,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__73839b(realsolid)],
 // 1 16 0 0 -10 1 0 0 0 1 0 0 0 1 s\73839a.dat
-  [1,16,0,0,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__s__73839a()],
+  [1,16,0,0,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__s__73839a(realsolid)],
 // 1 16 0 0 -20 1 0 0 0 1 0 0 0 1 s\73839a.dat
-  [1,16,0,0,-20,1,0,0,0,1,0,0,0,1, ldraw_lib__s__73839a()],
+  [1,16,0,0,-20,1,0,0,0,1,0,0,0,1, ldraw_lib__s__73839a(realsolid)],
 // 1 16 0 0 -30 1 0 0 0 1 0 0 0 1 s\73839a.dat
-  [1,16,0,0,-30,1,0,0,0,1,0,0,0,1, ldraw_lib__s__73839a()],
+  [1,16,0,0,-30,1,0,0,0,1,0,0,0,1, ldraw_lib__s__73839a(realsolid)],
 // 1 16 0 0 -40 1 0 0 0 1 0 0 0 1 s\73839b.dat
-  [1,16,0,0,-40,1,0,0,0,1,0,0,0,1, ldraw_lib__s__73839b()],
+  [1,16,0,0,-40,1,0,0,0,1,0,0,0,1, ldraw_lib__s__73839b(realsolid)],
 ];
 module ldraw_lib__3705c01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3705c01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3705c01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3705c01(line=0.2);

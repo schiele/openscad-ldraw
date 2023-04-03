@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__6024p02s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__6024p02s02(realsolid=false) = [
 // 0 ~Baseplate 32 x 32 Canyon with Island - Front
 // 0 Name: s\6024p02s02.dat
 // 0 Author: Mikkel Bech Jensen [gaia]
@@ -948,5 +949,5 @@ function ldraw_lib__s__6024p02s02() = [
   [4,2,-244.2,-71.2,180,-250.8,-66.7,180,-242.5,-71.2,180,-243.1,-71.5,180],
 ];
 module ldraw_lib__s__6024p02s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__6024p02s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__6024p02s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__6024p02s02(line=0.2);

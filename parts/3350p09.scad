@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3350s01.scad>
-function ldraw_lib__3350p09() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3350p09(realsolid=false) = [
 // 0 Roadsign Round with "BUS STOP" Pattern
 // 0 Name: 3350p09.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -15,7 +16,7 @@ function ldraw_lib__3350p09() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3350s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3350s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3350s01(realsolid)],
 // 0 //
 // 4 0 -8.988 -90.962 -2 -10.062 -90 -2 -6.957 -90 -2 -6.956 -90.962 -2
   [4,0,-8.988,-90.962,-2,-10.062,-90,-2,-6.957,-90,-2,-6.956,-90.962,-2],
@@ -743,5 +744,5 @@ function ldraw_lib__3350p09() = [
 // 0 //
 ];
 module ldraw_lib__3350p09(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3350p09(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3350p09(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3350p09(line=0.2);

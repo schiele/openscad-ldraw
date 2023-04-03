@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__64808s04() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__64808s04(realsolid=false) = [
 // 0 ~Minifig Head Mon Calamari Forehead Area Half without Conditional Lines
 // 0 Name: s\64808s04.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -162,5 +163,5 @@ function ldraw_lib__s__64808s04() = [
   [3,16,9.999,-28.054,-14.739,8.469,-31.249,-10.956,7.939,-28.951,-15.491],
 ];
 module ldraw_lib__s__64808s04(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__64808s04(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__64808s04(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__64808s04(line=0.2);

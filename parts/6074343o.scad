@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__6074343o() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6074343o(realsolid=false) = [
 // 0 Sticker  1.1 x  1.8 Irregular with Octan Space Logo
 // 0 Name: 6074343o.dat
 // 0 Author: Christophe Mitillo [Christophe_Mitillo]
@@ -583,5 +584,5 @@ function ldraw_lib__6074343o() = [
   [5,24,-10.607,0,7.778,-10.607,-0.25,7.778,-8.334,0,9.146,-12.472,0,6.261],
 ];
 module ldraw_lib__6074343o(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6074343o(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6074343o(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6074343o(line=0.2);

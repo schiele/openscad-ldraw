@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__820673n() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__820673n(realsolid=false) = [
 // 0 Sticker  0.9 x  1.6 with White "Y19" on Transparent Background
 // 0 Name: 820673n.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -17,7 +18,7 @@ function ldraw_lib__820673n() = [
 // 
 // 
 // 1 16 0 -0.25 0 16 0 0 0 0.25 0 0 0 8.5 box5-12.dat
-  [1,16,0,-0.25,0,16,0,0,0,0.25,0,0,0,8.5, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,16,0,0,0,0.25,0,0,0,8.5, ldraw_lib__box5_12(realsolid)],
 // 0 BFC NOCLIP
   [0,"BFC","NOCLIP"],
 // 4 15 -9.16 -0.25 -1.19 -9.16 -0.25 -5 -7.06 -0.25 -5 -7.06 -0.25 -1.19
@@ -222,5 +223,5 @@ function ldraw_lib__820673n() = [
   [3,16,9.68,-0.25,1.49,6.72,-0.25,0.8,9.58,-0.25,0.78],
 ];
 module ldraw_lib__820673n(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__820673n(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__820673n(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__820673n(line=0.2);

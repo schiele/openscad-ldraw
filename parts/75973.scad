@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <32026c01.scad>
 use <32027.scad>
-function ldraw_lib__75973() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__75973(realsolid=false) = [
 // 0 Electric Brick  2 x  3 Sensor Touch
 // 0 Name: 75973.dat
 // 0 Author: John Van Zwieten [jvan]
@@ -20,10 +21,10 @@ function ldraw_lib__75973() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 32026c01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__32026c01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__32026c01(realsolid)],
 // 1 14 27.50 10.50 0 1 0 0 0 1 0 0 0 1 32027.dat
-  [1,14,27.50,10.50,0,1,0,0,0,1,0,0,0,1, ldraw_lib__32027()],
+  [1,14,27.50,10.50,0,1,0,0,0,1,0,0,0,1, ldraw_lib__32027(realsolid)],
 ];
 module ldraw_lib__75973(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__75973(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__75973(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__75973(line=0.2);

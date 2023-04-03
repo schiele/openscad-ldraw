@@ -3,7 +3,8 @@ use <../p/4-4disc.scad>
 use <../p/4-4ndis.scad>
 use <../p/4-4ring2.scad>
 use <s/6636s01.scad>
-function ldraw_lib__6636p0c() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6636p0c(realsolid=false) = [
 // 0 Tile  1 x  6 with Friends Ruler Pattern
 // 0 Name: 6636p0c.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -21,13 +22,13 @@ function ldraw_lib__6636p0c() = [
 // 
 // 0 // Subfile
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\6636s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6636s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6636s01(realsolid)],
 // 1 16 -51 0 -0.5 2.4 0 0 0 1 0 0 0 2.4 4-4disc.dat
-  [1,16,-51,0,-0.5,2.4,0,0,0,1,0,0,0,2.4, ldraw_lib__4_4disc()],
+  [1,16,-51,0,-0.5,2.4,0,0,0,1,0,0,0,2.4, ldraw_lib__4_4disc(realsolid)],
 // 1 85 -51 0 -0.5 1.2 0 0 0 1 0 0 0 1.2 4-4ring2.dat
-  [1,85,-51,0,-0.5,1.2,0,0,0,1,0,0,0,1.2, ldraw_lib__4_4ring2()],
+  [1,85,-51,0,-0.5,1.2,0,0,0,1,0,0,0,1.2, ldraw_lib__4_4ring2(realsolid)],
 // 1 16 -51 0 -0.5 3.6 0 0 0 1 0 0 0 3.6 4-4ndis.dat
-  [1,16,-51,0,-0.5,3.6,0,0,0,1,0,0,0,3.6, ldraw_lib__4_4ndis()],
+  [1,16,-51,0,-0.5,3.6,0,0,0,1,0,0,0,3.6, ldraw_lib__4_4ndis(realsolid)],
 // 4 85 -39.5 0 9 -40.5 0 9 -40.5 0 1.5 -39.5 0 1.5
   [4,85,-39.5,0,9,-40.5,0,9,-40.5,0,1.5,-39.5,0,1.5],
 // 4 85 -35.6 0 9 -36.4 0 9 -36.4 0 5.5 -35.6 0 5.5
@@ -670,5 +671,5 @@ function ldraw_lib__6636p0c() = [
   [3,16,-41.6,0,-3.8,-47.4,0,-4.1,-41.3,0,-4.5],
 ];
 module ldraw_lib__6636p0c(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6636p0c(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6636p0c(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6636p0c(line=0.2);

@@ -2,7 +2,8 @@ use <../lib.scad>
 use <s/925p0us01.scad>
 use <s/925p0us02.scad>
 use <s/925s01.scad>
-function ldraw_lib__925p0u() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__925p0u(realsolid=false) = [
 // 0 Brick  1 x  8 without Centre Studs with Swine Head and Red "SLAGTER" Rounded Pattern
 // 0 Name: 925p0u.dat
 // 0 Author: N. W. Perry [Plastikean]
@@ -20,12 +21,12 @@ function ldraw_lib__925p0u() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\925s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__925s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__925s01(realsolid)],
 // 1 4 0 0 0 1 0 0 0 1 0 0 0 1 s\925p0us01.dat
-  [1,4,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__925p0us01()],
+  [1,4,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__925p0us01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\925p0us02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__925p0us02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__925p0us02(realsolid)],
 ];
 module ldraw_lib__925p0u(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__925p0u(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__925p0u(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__925p0u(line=0.2);

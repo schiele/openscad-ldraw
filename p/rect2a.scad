@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__rect2a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__rect2a(realsolid=false) = [
 // 0 Rectangle with 2 Adjacent Edges
 // 0 Name: rect2a.dat
 // 0 Author: Chris Dee [cwdee]
@@ -26,5 +27,5 @@ function ldraw_lib__rect2a() = [
 // 0
 ];
 module ldraw_lib__rect2a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__rect2a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__rect2a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__rect2a(line=0.2);

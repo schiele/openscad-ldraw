@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4ndis.scad>
 use <s/4066bs01.scad>
-function ldraw_lib__4066bp1q() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4066bp1q(realsolid=false) = [
 // 0 Duplo Brick  1 x  2 x  2 with Milk Carton and Glasses Pattern
 // 0 Name: 4066bp1q.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -21,15 +22,15 @@ function ldraw_lib__4066bp1q() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4066bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4066bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4066bs01(realsolid)],
 // 1 0 -18 49 -20 1.5 0 0 0 0 -1.5 0 1 0 4-4disc.dat
-  [1,0,-18,49,-20,1.5,0,0,0,0,-1.5,0,1,0, ldraw_lib__4_4disc()],
+  [1,0,-18,49,-20,1.5,0,0,0,0,-1.5,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 0 -12 49 -20 1.5 0 0 0 0 -1.5 0 1 0 4-4disc.dat
-  [1,0,-12,49,-20,1.5,0,0,0,0,-1.5,0,1,0, ldraw_lib__4_4disc()],
+  [1,0,-12,49,-20,1.5,0,0,0,0,-1.5,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 13 -18 49 -20 1.5 0 0 0 0 -1.5 0 1 0 4-4ndis.dat
-  [1,13,-18,49,-20,1.5,0,0,0,0,-1.5,0,1,0, ldraw_lib__4_4ndis()],
+  [1,13,-18,49,-20,1.5,0,0,0,0,-1.5,0,1,0, ldraw_lib__4_4ndis(realsolid)],
 // 1 13 -12 49 -20 1.5 0 0 0 0 -1.5 0 1 0 4-4ndis.dat
-  [1,13,-12,49,-20,1.5,0,0,0,0,-1.5,0,1,0, ldraw_lib__4_4ndis()],
+  [1,13,-12,49,-20,1.5,0,0,0,0,-1.5,0,1,0, ldraw_lib__4_4ndis(realsolid)],
 // 4 13 -16.5 47.5 -20 -15 41.75 -20 -17 42.25 -20 -18 47.5 -20
   [4,13,-16.5,47.5,-20,-15,41.75,-20,-17,42.25,-20,-18,47.5,-20],
 // 4 13 -18 47.5 -20 -17 42.25 -20 -18.75 43.5 -20 -19.5 47.5 -20
@@ -832,5 +833,5 @@ function ldraw_lib__4066bp1q() = [
   [4,16,-21,6.5,-20,3.5,6.5,-20,40,0,-20,-40,0,-20],
 ];
 module ldraw_lib__4066bp1q(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4066bp1q(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4066bp1q(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4066bp1q(line=0.2);

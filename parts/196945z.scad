@@ -4,7 +4,8 @@ use <../p/logo-shell-e.scad>
 use <../p/logo-shell-h.scad>
 use <../p/logo-shell-s.scad>
 use <s/3004s60.scad>
-function ldraw_lib__196945z() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__196945z(realsolid=false) = [
 // 0 Sticker  1.1 x  3.9 with "Shell" and Shell Logo - Logo Right
 // 0 Name: 196945z.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -21,15 +22,15 @@ function ldraw_lib__196945z() = [
 // 
 // 
 // 1 16 0 -0.25 0 39 0 0 0 0.25 0 0 0 11 box5-12.dat
-  [1,16,0,-0.25,0,39,0,0,0,0.25,0,0,0,11, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,39,0,0,0,0.25,0,0,0,11, ldraw_lib__box5_12(realsolid)],
 // 1 15 25.2 -.25 0 .6 0 0 0 0 1 0 -.6 0 s\3004s60.dat
-  [1,15,25.2,-.25,0,.6,0,0,0,0,1,0,-.6,0, ldraw_lib__s__3004s60()],
+  [1,15,25.2,-.25,0,.6,0,0,0,0,1,0,-.6,0, ldraw_lib__s__3004s60(realsolid)],
 // 1 15 -25.92 -.25 -.24 .51 0 0 0 1 0 0 0 .51 logo-shell-s.dat
-  [1,15,-25.92,-.25,-.24,.51,0,0,0,1,0,0,0,.51, ldraw_lib__logo_shell_s()],
+  [1,15,-25.92,-.25,-.24,.51,0,0,0,1,0,0,0,.51, ldraw_lib__logo_shell_s(realsolid)],
 // 1 15 -13.08 -.25 -.24 .51 0 0 0 1 0 0 0 .51 logo-shell-h.dat
-  [1,15,-13.08,-.25,-.24,.51,0,0,0,1,0,0,0,.51, ldraw_lib__logo_shell_h()],
+  [1,15,-13.08,-.25,-.24,.51,0,0,0,1,0,0,0,.51, ldraw_lib__logo_shell_h(realsolid)],
 // 1 15 -1.08 -.25 -1.62 .51 0 0 0 1 0 0 0 .51 logo-shell-e.dat
-  [1,15,-1.08,-.25,-1.62,.51,0,0,0,1,0,0,0,.51, ldraw_lib__logo_shell_e()],
+  [1,15,-1.08,-.25,-1.62,.51,0,0,0,1,0,0,0,.51, ldraw_lib__logo_shell_e(realsolid)],
 // 4 4 5.96 -.25 4.61 5.96 -.25 -5.09 9.53 -.25 -5.09 9.53 -.25 4.61
   [4,4,5.96,-.25,4.61,5.96,-.25,-5.09,9.53,-.25,-5.09,9.53,-.25,4.61],
 // 4 4 11.6 -.25 4.61 11.6 -.25 -5.09 15.17 -.25 -5.09 15.17 -.25 4.61
@@ -86,5 +87,5 @@ function ldraw_lib__196945z() = [
   [4,15,11.6,-.25,4.61,9.53,-.25,4.61,9.53,-.25,-5.09,11.6,-.25,-5.09],
 ];
 module ldraw_lib__196945z(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__196945z(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__196945z(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__196945z(line=0.2);

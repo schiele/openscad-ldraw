@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4ering.scad>
 use <s/98138ps4s01.scad>
 use <s/98138s01.scad>
-function ldraw_lib__98138ps4() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__98138ps4(realsolid=false) = [
 // 0 Tile  1 x  1 Round with Pink Circles and White Triangles Pattern
 // 0 Name: 98138ps4.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -19,21 +20,21 @@ function ldraw_lib__98138ps4() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\98138s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01(realsolid)],
 // 1 16 0 0 0 9 0 0 0 1 0 0 0 9 4-4ering.dat
-  [1,16,0,0,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4ering()],
+  [1,16,0,0,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4ering(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\98138ps4s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138ps4s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138ps4s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\98138ps4s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138ps4s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138ps4s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 -1 s\98138ps4s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__98138ps4s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__98138ps4s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 -1 s\98138ps4s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__98138ps4s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__98138ps4s01(realsolid)],
 // 1 16 0 0 0 0 0 -1 0 1 0 -1 0 0 s\98138ps4s01.dat
-  [1,16,0,0,0,0,0,-1,0,1,0,-1,0,0, ldraw_lib__s__98138ps4s01()],
+  [1,16,0,0,0,0,0,-1,0,1,0,-1,0,0, ldraw_lib__s__98138ps4s01(realsolid)],
 // 1 16 0 0 0 0 0 1 0 1 0 -1 0 0 s\98138ps4s01.dat
-  [1,16,0,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__s__98138ps4s01()],
+  [1,16,0,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__s__98138ps4s01(realsolid)],
 // 4 29 0 0 0 -1.0607 0 -1.0607 -0.75 0 -1.299 -0.3882 0 -1.4489
   [4,29,0,0,0,-1.0607,0,-1.0607,-0.75,0,-1.299,-0.3882,0,-1.4489],
 // 4 29 0 0 0 -0.3882 0 -1.4489 0 0 -1.5 0.3882 0 -1.4489
@@ -192,5 +193,5 @@ function ldraw_lib__98138ps4() = [
   [3,16,6.0104,0,-6.0104,5.1745,0,-6.7435,6.3639,0,-6.3639],
 ];
 module ldraw_lib__98138ps4(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__98138ps4(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__98138ps4(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__98138ps4(line=0.2);

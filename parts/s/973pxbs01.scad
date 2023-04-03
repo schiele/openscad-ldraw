@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__973pxbs01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__973pxbs01(realsolid=false) = [
 // 0 ~Minifig Torso with Dark Blue Overalls, Tank Top, Gold Chains and Pendant Pattern - Half Back
 // 0 Name: s\973pxbs01.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -235,5 +236,5 @@ function ldraw_lib__s__973pxbs01() = [
   [3,70,-1.7,3.6,10,0,1,10,0,3.7,10],
 ];
 module ldraw_lib__s__973pxbs01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__973pxbs01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__973pxbs01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__973pxbs01(line=0.2);

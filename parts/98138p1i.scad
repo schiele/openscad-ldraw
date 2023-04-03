@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/98138p1is01.scad>
 use <s/98138s01.scad>
-function ldraw_lib__98138p1i() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__98138p1i(realsolid=false) = [
 // 0 Tile  1 x  1 Round with Magenta "ugh" in Speech Bubble on Medium Azure Background Pattern
 // 0 Name: 98138p1i.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -18,9 +19,9 @@ function ldraw_lib__98138p1i() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\98138s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01(realsolid)],
 // 1 322 0 0 0 -1 0 0 0 1 0 0 0 1 s\98138p1is01.dat
-  [1,322,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138p1is01()],
+  [1,322,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138p1is01(realsolid)],
 // 
 // 4 26 -5.85 0 1.56 -5.86 0 .84 -4.71 0 1.61 -4.73 0 1.91
   [4,26,-5.85,0,1.56,-5.86,0,.84,-4.71,0,1.61,-4.73,0,1.91],
@@ -270,5 +271,5 @@ function ldraw_lib__98138p1i() = [
   [3,16,2.76,0,-5.01,0,0,-5.5,0.6,0,-6.02],
 ];
 module ldraw_lib__98138p1i(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__98138p1i(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__98138p1i(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__98138p1i(line=0.2);

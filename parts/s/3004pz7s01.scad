@@ -4,7 +4,8 @@ use <../../p/4-4ndis.scad>
 use <../../p/4-4rin10.scad>
 use <../../p/4-4ring1.scad>
 use <../../p/4-4ring4.scad>
-function ldraw_lib__s__3004pz7s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__3004pz7s01(realsolid=false) = [
 // 0 ~Brick  1 x  2 with Boombox Pattern
 // 0 Name: s\3004pz7s01.dat
 // 0 Author: Vincent Messenet [Cheenzo]
@@ -26,15 +27,15 @@ function ldraw_lib__s__3004pz7s01() = [
   [4,80,4,2.1,0,20,2.1,0,20,0,0,3,1.25,0],
 // 
 // 1 80 12 10.3 0 2 0 0 0 0 2 0 1 0 4-4disc.dat
-  [1,80,12,10.3,0,2,0,0,0,0,2,0,1,0, ldraw_lib__4_4disc()],
+  [1,80,12,10.3,0,2,0,0,0,0,2,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 0 12 10.3 0 2 0 0 0 0 2 0 1 0 4-4ring1.dat
-  [1,0,12,10.3,0,2,0,0,0,0,2,0,1,0, ldraw_lib__4_4ring1()],
+  [1,0,12,10.3,0,2,0,0,0,0,2,0,1,0, ldraw_lib__4_4ring1(realsolid)],
 // 1 0 12 10.3 0 1 0 0 0 0 1 0 1 0 4-4ring4.dat
-  [1,0,12,10.3,0,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4ring4()],
+  [1,0,12,10.3,0,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4ring4(realsolid)],
 // 1 0 12 10.3 0 .5 0 0 0 0 .5 0 1 0 4-4rin10.dat
-  [1,0,12,10.3,0,.5,0,0,0,0,.5,0,1,0, ldraw_lib__4_4rin10()],
+  [1,0,12,10.3,0,.5,0,0,0,0,.5,0,1,0, ldraw_lib__4_4rin10(realsolid)],
 // 1 80 12 10.3 0 5.5 0 0 0 0 5.5 0 1 0 4-4ndis.dat
-  [1,80,12,10.3,0,5.5,0,0,0,0,5.5,0,1,0, ldraw_lib__4_4ndis()],
+  [1,80,12,10.3,0,5.5,0,0,0,0,5.5,0,1,0, ldraw_lib__4_4ndis(realsolid)],
 // 
 // 3 0 18.8 5.2 0 20 2.1 0 17.1 3.5 0
   [3,0,18.8,5.2,0,20,2.1,0,17.1,3.5,0],
@@ -238,5 +239,5 @@ function ldraw_lib__s__3004pz7s01() = [
   [3,80,6.427,6.427,0,6.5,10.3,0,6.5,4.8,0],
 ];
 module ldraw_lib__s__3004pz7s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__3004pz7s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__3004pz7s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__3004pz7s01(line=0.2);

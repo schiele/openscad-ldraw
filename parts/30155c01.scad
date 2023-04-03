@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <2346.scad>
 use <30155.scad>
-function ldraw_lib__30155c01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__30155c01(realsolid=false) = [
 // 0 Wheel Rim  8 x 18 with 12 Spokes and Peghole with Tyre 12/50 x 16 Offset Tread
 // 0 Name: 30155c01.dat
 // 0 Author: Steffen [Steffen]
@@ -16,10 +17,10 @@ function ldraw_lib__30155c01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 30155.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__30155()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__30155(realsolid)],
 // 1 256 0 0 0 1 0 0 0 1 0 0 0 1 2346.dat
-  [1,256,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2346()],
+  [1,256,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2346(realsolid)],
 ];
 module ldraw_lib__30155c01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__30155c01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__30155c01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__30155c01(line=0.2);

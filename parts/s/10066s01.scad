@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/stud4o.scad>
-function ldraw_lib__s__10066s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__10066s01(realsolid=false) = [
 // 0 ~Minifig Hair Orc without Ears
 // 0 Name: s\10066s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -17,7 +18,7 @@ function ldraw_lib__s__10066s01() = [
 // 
 // 
 // 1 16 0 -4 0 1 0 0 0 -1 0 0 0 -1 stud4o.dat
-  [1,16,0,-4,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__stud4o()],
+  [1,16,0,-4,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__stud4o(realsolid)],
 // 3 16 8.535 0.009 0.931 8 0 0 7.508 -0.002 4.442
   [3,16,8.535,0.009,0.931,8,0,0,7.508,-0.002,4.442],
 // 4 16 7.3912 0 -3.0616 8 0 0 8.535 0.009 0.931 8.781 0.046 -2.08
@@ -4704,5 +4705,5 @@ function ldraw_lib__s__10066s01() = [
   [5,24,-0.244,1.114,-11.597,1.585,-0.457,-11.183,3.148,-0.48,-10.082,0.986,-0.397,-11.337],
 ];
 module ldraw_lib__s__10066s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__10066s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__10066s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__10066s01(line=0.2);

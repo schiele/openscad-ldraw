@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/1-4tang.scad>
 use <../p/4-4ering.scad>
 use <s/15535s01.scad>
-function ldraw_lib__15535p05() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__15535p05(realsolid=false) = [
 // 0 Tile  2 x  2 Round with Hole with Doughnut with Dark Brown Chocolate Icing and Sprinkles Pattern
 // 0 Name: 15535p05.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -19,17 +20,17 @@ function ldraw_lib__15535p05() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\15535s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__15535s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__15535s01(realsolid)],
 // 1 16 0 0 0 6 0 0 0 1 0 0 0 -6 1-4tang.dat
-  [1,16,0,0,0,6,0,0,0,1,0,0,0,-6, ldraw_lib__1_4tang()],
+  [1,16,0,0,0,6,0,0,0,1,0,0,0,-6, ldraw_lib__1_4tang(realsolid)],
 // 1 16 0 0 0 6 0 0 0 1 0 0 0 6 1-4tang.dat
-  [1,16,0,0,0,6,0,0,0,1,0,0,0,6, ldraw_lib__1_4tang()],
+  [1,16,0,0,0,6,0,0,0,1,0,0,0,6, ldraw_lib__1_4tang(realsolid)],
 // 1 16 0 0 0 -6 0 0 0 1 0 0 0 -6 1-4tang.dat
-  [1,16,0,0,0,-6,0,0,0,1,0,0,0,-6, ldraw_lib__1_4tang()],
+  [1,16,0,0,0,-6,0,0,0,1,0,0,0,-6, ldraw_lib__1_4tang(realsolid)],
 // 1 16 0 0 0 -6 0 0 0 1 0 0 0 6 1-4tang.dat
-  [1,16,0,0,0,-6,0,0,0,1,0,0,0,6, ldraw_lib__1_4tang()],
+  [1,16,0,0,0,-6,0,0,0,1,0,0,0,6, ldraw_lib__1_4tang(realsolid)],
 // 1 16 0 0 0 20 0 0 0 1 0 0 0 -20 4-4ering.dat
-  [1,16,0,0,0,20,0,0,0,1,0,0,0,-20, ldraw_lib__4_4ering()],
+  [1,16,0,0,0,20,0,0,0,1,0,0,0,-20, ldraw_lib__4_4ering(realsolid)],
 // 4 0 -7.8305 0 0 -7.5637 0 2.0267 -8.2571 0 2.3465 -8.566 0 0
   [4,0,-7.8305,0,0,-7.5637,0,2.0267,-8.2571,0,2.3465,-8.566,0,0],
 // 4 0 -7.5637 0 -2.0267 -7.8305 0 0 -8.566 0 0 -8.3571 0 -2.3465
@@ -998,5 +999,5 @@ function ldraw_lib__15535p05() = [
   [3,16,0,0,-18.38,0,0,-20,4.7847,0,-17.8435],
 ];
 module ldraw_lib__15535p05(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__15535p05(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__15535p05(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__15535p05(line=0.2);

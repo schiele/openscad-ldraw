@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <13710ic01.scad>
 use <64681.scad>
-function ldraw_lib__64681d02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__64681d02(realsolid=false) = [
 // 0 Technic Panel Fairing Smooth #5 (Long) with EV3 Sticker #9
 // 0 Name: 64681d02.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -16,10 +17,10 @@ function ldraw_lib__64681d02() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 64681.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__64681()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__64681(realsolid)],
 // 1 15 0 0 0 0 -1 0 1 0 0 0 0 1 13710ic01.dat
-  [1,15,0,0,0,0,-1,0,1,0,0,0,0,1, ldraw_lib__13710ic01()],
+  [1,15,0,0,0,0,-1,0,1,0,0,0,0,1, ldraw_lib__13710ic01(realsolid)],
 ];
 module ldraw_lib__64681d02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__64681d02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__64681d02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__64681d02(line=0.2);

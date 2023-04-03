@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4con1.scad>
 use <../p/4-4cylc.scad>
 use <../p/4-4edge.scad>
-function ldraw_lib__u9566() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__u9566(realsolid=false) = [
 // 0 ~Screw  22 x  6 Raised Countersunk Slotted
 // 0 Name: u9566.dat
 // 0 Author: Willy Tschager [Holly-Wood]
@@ -20,14 +21,14 @@ function ldraw_lib__u9566() = [
 // 0 // Nomenclature: Screw length_(LDu) x thread_diameter_(LDu) {head type} {slot type}
 // 
 // 1 16 0 2 0 6 0 0 0 -1 0 0 0 6 4-4edge.dat
-  [1,16,0,2,0,6,0,0,0,-1,0,0,0,6, ldraw_lib__4_4edge()],
+  [1,16,0,2,0,6,0,0,0,-1,0,0,0,6, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 5 0 3 0 0 0 -1 0 0 0 3 4-4edge.dat
-  [1,16,0,5,0,3,0,0,0,-1,0,0,0,3, ldraw_lib__4_4edge()],
+  [1,16,0,5,0,3,0,0,0,-1,0,0,0,3, ldraw_lib__4_4edge(realsolid)],
 // 
 // 1 16 0 2 0 3 0 0 0 3 0 0 0 3 4-4con1.dat
-  [1,16,0,2,0,3,0,0,0,3,0,0,0,3, ldraw_lib__4_4con1()],
+  [1,16,0,2,0,3,0,0,0,3,0,0,0,3, ldraw_lib__4_4con1(realsolid)],
 // 1 16 0 24 0 3 0 0 0 -19 0 0 0 3 4-4cylc.dat
-  [1,16,0,24,0,3,0,0,0,-19,0,0,0,3, ldraw_lib__4_4cylc()],
+  [1,16,0,24,0,3,0,0,0,-19,0,0,0,3, ldraw_lib__4_4cylc(realsolid)],
 // 
 // 2 24 -1 .527753 3.632994 -1 .258657 2.425041
   [2,24,-1,.527753,3.632994,-1,.258657,2.425041],
@@ -428,5 +429,5 @@ function ldraw_lib__u9566() = [
   [5,24,-4.2426,.5858,0,-4.7016,1.1214,2.6358,-2.6358,.4328,2.6358,-5.5434,1.2346,0],
 ];
 module ldraw_lib__u9566(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__u9566(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__u9566(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__u9566(line=0.2);

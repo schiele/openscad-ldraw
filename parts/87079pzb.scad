@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/87079s01.scad>
 use <s/logolegos02.scad>
-function ldraw_lib__87079pzb() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__87079pzb(realsolid=false) = [
 // 0 Tile  2 x  4 with Lego Logo, White Star Wars Logo and Metallic Silver "NEW YORK COMIC CON 2017" Pattern
 // 0 Name: 87079pzb.dat
 // 0 Author: Damien Roux [Darats]
@@ -18,9 +19,9 @@ function ldraw_lib__87079pzb() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\87079s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__87079s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__87079s01(realsolid)],
 // 1 16 -24.169 0 3.8 0.6 0 0 0 0 1 0 -0.6 0 s\logolegos02.dat
-  [1,16,-24.169,0,3.8,0.6,0,0,0,0,1,0,-0.6,0, ldraw_lib__s__logolegos02()],
+  [1,16,-24.169,0,3.8,0.6,0,0,0,0,1,0,-0.6,0, ldraw_lib__s__logolegos02(realsolid)],
 // 4 0 -37.419 0 -9.449 -36.169 0 -8.2 -36.169 0 15.8 -37.419 0 17.05
   [4,0,-37.419,0,-9.449,-36.169,0,-8.2,-36.169,0,15.8,-37.419,0,17.05],
 // 3 0 -37.419 0 -9.449 -27.268 0 -9.449 -36.169 0 -8.2
@@ -2045,5 +2046,5 @@ function ldraw_lib__87079pzb() = [
   [4,80,33.137,0,-10.78,33.137,0,-11.806,35.082,0,-11.806,36.128,0,-10.78],
 ];
 module ldraw_lib__87079pzb(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__87079pzb(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__87079pzb(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__87079pzb(line=0.2);

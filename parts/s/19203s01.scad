@@ -2,7 +2,8 @@ use <../../lib.scad>
 use <../../p/2-4cylo.scad>
 use <../../p/stud4o.scad>
 use <../../p/t04o6250.scad>
-function ldraw_lib__s__19203s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__19203s01(realsolid=false) = [
 // 0 ~Figure Elves Hair Short Spiked without Ears
 // 0 Name: s\19203s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -19,29 +20,29 @@ function ldraw_lib__s__19203s01() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 4 0 8 0 0 0 -6.4 0 0 0 -8 t04o6250.dat
-  [1,16,0,4,0,8,0,0,0,-6.4,0,0,0,-8, ldraw_lib__t04o6250()],
+  [1,16,0,4,0,8,0,0,0,-6.4,0,0,0,-8, ldraw_lib__t04o6250(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 4 0 0 0 8 0 -6.4 0 8 0 0 t04o6250.dat
-  [1,16,0,4,0,0,0,8,0,-6.4,0,8,0,0, ldraw_lib__t04o6250()],
+  [1,16,0,4,0,0,0,8,0,-6.4,0,8,0,0, ldraw_lib__t04o6250(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 4 0 -8 0 0 0 -6.4 0 0 0 -8 t04o6250.dat
-  [1,16,0,4,0,-8,0,0,0,-6.4,0,0,0,-8, ldraw_lib__t04o6250()],
+  [1,16,0,4,0,-8,0,0,0,-6.4,0,0,0,-8, ldraw_lib__t04o6250(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 4 0 0 0 -8 0 -6.4 0 8 0 0 t04o6250.dat
-  [1,16,0,4,0,0,0,-8,0,-6.4,0,8,0,0, ldraw_lib__t04o6250()],
+  [1,16,0,4,0,0,0,-8,0,-6.4,0,8,0,0, ldraw_lib__t04o6250(realsolid)],
 // 1 16 0 -4 0 0 0 1 0 -1 0 -1 0 0 stud4o.dat
-  [1,16,0,-4,0,0,0,1,0,-1,0,-1,0,0, ldraw_lib__stud4o()],
+  [1,16,0,-4,0,0,0,1,0,-1,0,-1,0,0, ldraw_lib__stud4o(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 9 13 0 0 2 2 0 0 0 6 -0.39 2-4cylo.dat
-  [1,16,0,9,13,0,0,2,2,0,0,0,6,-0.39, ldraw_lib__2_4cylo()],
+  [1,16,0,9,13,0,0,2,2,0,0,0,6,-0.39, ldraw_lib__2_4cylo(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 9 13 0 0 -2 2 0 0 0 6 -0.39 2-4cylo.dat
-  [1,16,0,9,13,0,0,-2,2,0,0,0,6,-0.39, ldraw_lib__2_4cylo()],
+  [1,16,0,9,13,0,0,-2,2,0,0,0,6,-0.39, ldraw_lib__2_4cylo(realsolid)],
 // 3 16 0.46 -1.11 -20.44 1.34 -1.99 -20.22 0.58 -2.34 -20.27
   [3,16,0.46,-1.11,-20.44,1.34,-1.99,-20.22,0.58,-2.34,-20.27],
 // 3 16 1.49 -0.86 -20.3 1.99 -0.85 -19.95 1.34 -1.99 -20.22
@@ -16165,5 +16166,5 @@ function ldraw_lib__s__19203s01() = [
   [5,24,1.41,6.58,19.77,1.4142,7.5858,18.7242,0.7654,7.1522,18.8507,1.86,7.17,19.77],
 ];
 module ldraw_lib__s__19203s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__19203s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__19203s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__19203s01(line=0.2);

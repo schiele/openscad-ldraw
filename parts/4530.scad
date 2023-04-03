@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/4-4cylc.scad>
 use <../p/4-4ndis.scad>
-function ldraw_lib__4530() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4530(realsolid=false) = [
 // 0 Minifig Hair Shoulder Length
 // 0 Name: 4530.dat
 // 0 Author: Andy Westrate [westrate]
@@ -5035,13 +5036,13 @@ function ldraw_lib__4530() = [
 // 5 24 -8.848 20.37 8.83 -11.34 20.59 8.486 -10.01 20.53 9.97 -10.66 20.63 6.728
   [5,24,-8.848,20.37,8.83,-11.34,20.59,8.486,-10.01,20.53,9.97,-10.66,20.63,6.728],
 // 1 16 0 0 0 6 0 0 0 -1 0 0 0 -6 4-4ndis.dat
-  [1,16,0,0,0,6,0,0,0,-1,0,0,0,-6, ldraw_lib__4_4ndis()],
+  [1,16,0,0,0,6,0,0,0,-1,0,0,0,-6, ldraw_lib__4_4ndis(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -4 0 6 0 0 0 4 0 0 0 6 4-4cylc.dat
-  [1,16,0,-4,0,6,0,0,0,4,0,0,0,6, ldraw_lib__4_4cylc()],
+  [1,16,0,-4,0,6,0,0,0,4,0,0,0,6, ldraw_lib__4_4cylc(realsolid)],
 // 0
 ];
 module ldraw_lib__4530(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4530(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4530(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4530(line=0.2);

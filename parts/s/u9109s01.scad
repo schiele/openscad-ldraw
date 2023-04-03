@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__u9109s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__u9109s01(realsolid=false) = [
 // 0 ~Figure Fabuland Hippo Half without Patterned Areas
 // 0 Name: s\u9109s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -10327,5 +10328,5 @@ function ldraw_lib__s__u9109s01() = [
   [5,24,-12.252,-42.019,-8.7,-13.818,-41.161,-8.66,-13.498,-39.799,-9.55,-13.957,-42.098,-7.682],
 ];
 module ldraw_lib__s__u9109s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__u9109s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__u9109s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__u9109s01(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3037s01.scad>
-function ldraw_lib__3037ps4() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3037ps4(realsolid=false) = [
 // 0 Slope Brick 45  2 x  4 with Red Stripe Pattern
 // 0 Name: 3037ps4.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -15,12 +16,12 @@ function ldraw_lib__3037ps4() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3037s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3037s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3037s01(realsolid)],
 // 4 16 40 10.25 -20.25 40 0 -10 -40 0 -10 -40 10.25 -20.25
   [4,16,40,10.25,-20.25,40,0,-10,-40,0,-10,-40,10.25,-20.25],
 // 4 4 40 20 -30 40 10.25 -20.25 -40 10.25 -20.25 -40 20 -30
   [4,4,40,20,-30,40,10.25,-20.25,-40,10.25,-20.25,-40,20,-30],
 ];
 module ldraw_lib__3037ps4(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3037ps4(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3037ps4(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3037ps4(line=0.2);

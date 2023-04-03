@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/rect.scad>
 use <../../p/rect3.scad>
-function ldraw_lib__s__89201s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__89201s01(realsolid=false) = [
 // 0 ~Tyre 14/ 26 x 18 Shallow Staggered Treads w. Middle Band  1/20
 // 0 Name: s\89201s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -52,9 +53,9 @@ function ldraw_lib__s__89201s01() = [
 // 4 16 2.225 -28.915 -16.5 2.291 -29.776 -16.636 2.302 -29.912 -1 2.225 -28.915 -1
   [4,16,2.225,-28.915,-16.5,2.291,-29.776,-16.636,2.302,-29.912,-1,2.225,-28.915,-1],
 // 1 16 4.5235 -28.5585 8.75 2.1975 0 0 0.3485 1 0 0 0 7.75 rect.dat
-  [1,16,4.5235,-28.5585,8.75,2.1975,0,0,0.3485,1,0,0,0,7.75, ldraw_lib__rect()],
+  [1,16,4.5235,-28.5585,8.75,2.1975,0,0,0.3485,1,0,0,0,7.75, ldraw_lib__rect(realsolid)],
 // 1 16 8.935 -27.4995 -8.75 0 0 -2.116 0 1 -0.6875 7.75 0 0 rect3.dat
-  [1,16,8.935,-27.4995,-8.75,0,0,-2.116,0,1,-0.6875,7.75,0,0, ldraw_lib__rect3()],
+  [1,16,8.935,-27.4995,-8.75,0,0,-2.116,0,1,-0.6875,7.75,0,0, ldraw_lib__rect3(realsolid)],
 // 4 16 2.326 -28.907 16.5 2.246 -27.91 17.5 2.326 -28.907 17.5 2.395 -29.767 16.636
   [4,16,2.326,-28.907,16.5,2.246,-27.91,17.5,2.326,-28.907,17.5,2.395,-29.767,16.636],
 // 4 16 2.326 -28.907 16.5 2.395 -29.767 16.636 2.406 -29.903 1 2.326 -28.907 1
@@ -139,5 +140,5 @@ function ldraw_lib__s__89201s01() = [
   [3,16,2.148,-27.917,-17.5,2.2225,-25.403,-17.5,6.584,-27.215,-17.5],
 ];
 module ldraw_lib__s__89201s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__89201s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__89201s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__89201s01(line=0.2);

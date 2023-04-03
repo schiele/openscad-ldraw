@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/2-4disc.scad>
 use <s/u9007s01.scad>
 use <s/u9007s02.scad>
-function ldraw_lib__u9007p06() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__u9007p06(realsolid=false) = [
 // 0 Roadsign Triangular with Round Base with Bends Pattern
 // 0 Name: u9007p06.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -17,9 +18,9 @@ function ldraw_lib__u9007p06() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\u9007s02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__u9007s02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__u9007s02(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\u9007s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__u9007s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__u9007s01(realsolid)],
 // 0 //
 // 4 4 -20 -52 -2.6 -13.9 -55.5 -2.6 0 -78.9 -2.6 0 -86 -2.6
   [4,4,-20,-52,-2.6,-13.9,-55.5,-2.6,0,-78.9,-2.6,0,-86,-2.6],
@@ -29,9 +30,9 @@ function ldraw_lib__u9007p06() = [
   [4,4,20,-52,-2.6,13.8,-55.5,-2.6,-13.9,-55.5,-2.6,-20,-52,-2.6],
 // 0 //
 // 1 0 -5.5 -64 -2.6 1.1 0 -1.9053 -1.9053 0 -1.1 0 2.2 0 2-4disc.dat
-  [1,0,-5.5,-64,-2.6,1.1,0,-1.9053,-1.9053,0,-1.1,0,2.2,0, ldraw_lib__2_4disc()],
+  [1,0,-5.5,-64,-2.6,1.1,0,-1.9053,-1.9053,0,-1.1,0,2.2,0, ldraw_lib__2_4disc(realsolid)],
 // 1 0 4.3 -65.6 -2.6 -0.7524 0 2.0673 2.0673 0 0.7524 0 2.2 0 2-4disc.dat
-  [1,0,4.3,-65.6,-2.6,-0.7524,0,2.0673,2.0673,0,0.7524,0,2.2,0, ldraw_lib__2_4disc()],
+  [1,0,4.3,-65.6,-2.6,-0.7524,0,2.0673,2.0673,0,0.7524,0,2.2,0, ldraw_lib__2_4disc(realsolid)],
 // 3 0 5.0524 -67.6673 -2.6 5.7863 -67.222 -2.6 5.1 -67.9 -2.6
   [3,0,5.0524,-67.6673,-2.6,5.7863,-67.222,-2.6,5.1,-67.9,-2.6],
 // 4 0 5.1 -67.9 -2.6 -1.6 -72.9 -2.6 -3.2 -70.7 -2.6 5.0524 -67.6673 -2.6
@@ -96,5 +97,5 @@ function ldraw_lib__u9007p06() = [
 // 0 //
 ];
 module ldraw_lib__u9007p06(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__u9007p06(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__u9007p06(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__u9007p06(line=0.2);

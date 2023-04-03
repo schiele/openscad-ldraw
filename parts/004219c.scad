@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__004219c() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__004219c(realsolid=false) = [
 // 0 Sticker  2.4 x  3 with Canada Flag
 // 0 Name: 004219c.dat
 // 0 Author: Willy Tschager [Holly-Wood]
@@ -164,9 +165,9 @@ function ldraw_lib__004219c() = [
   [4,15,0.619,-0.25,-13.657,0.321,-0.25,-7.619,0.757,-0.25,-7.018,1.375,-0.25,-7.046],
 // 
 // 1 15 0 -0.25 0 30 0 0 0 0.25 0 0 0 24 box5-12.dat
-  [1,15,0,-0.25,0,30,0,0,0,0.25,0,0,0,24, ldraw_lib__box5_12()],
+  [1,15,0,-0.25,0,30,0,0,0,0.25,0,0,0,24, ldraw_lib__box5_12(realsolid)],
 // 0
 ];
 module ldraw_lib__004219c(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__004219c(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__004219c(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__004219c(line=0.2);

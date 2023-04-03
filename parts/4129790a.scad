@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__4129790a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4129790a(realsolid=false) = [
 // 0 Sticker  1.2 x  4 with 7 Black Squares
 // 0 Name: 4129790a.dat
 // 0 Author: Michael Heidemann [mikeheide]
@@ -62,5 +63,5 @@ function ldraw_lib__4129790a() = [
 // 0
 ];
 module ldraw_lib__4129790a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4129790a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4129790a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4129790a(line=0.2);

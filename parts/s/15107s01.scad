@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__15107s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__15107s01(realsolid=false) = [
 // 0 ~Animal Leg Segmented with Axle and Bar 1L on Tip Half
 // 0 Name: s\15107s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -1295,5 +1296,5 @@ function ldraw_lib__s__15107s01() = [
   [5,24,6.823,-48.636,3.361,8.294,-26.203,5.329,8.256,-23.619,6.968,7.048,-50.057,1.896],
 ];
 module ldraw_lib__s__15107s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__15107s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__15107s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__15107s01(line=0.2);

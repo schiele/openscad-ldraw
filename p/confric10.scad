@@ -6,7 +6,8 @@ use <4-4ring3.scad>
 use <confricrib1.scad>
 use <connectcollar1.scad>
 use <rect2p.scad>
-function ldraw_lib__confric10() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__confric10(realsolid=false) = [
 // 0 Technic Friction Pin 1.0 with Base Collar and Rectangular Centre Hole
 // 0 Name: confric10.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -21,48 +22,48 @@ function ldraw_lib__confric10() = [
 // 
 // 
 // 1 16 0 -20 0 1 0 0 0 1 0 0 0 1 connectcollar1.dat
-  [1,16,0,-20,0,1,0,0,0,1,0,0,0,1, ldraw_lib__connectcollar1()],
+  [1,16,0,-20,0,1,0,0,0,1,0,0,0,1, ldraw_lib__connectcollar1(realsolid)],
 // 1 16 0 -20 0 1 0 0 0 1 0 0 0 -1 connectcollar1.dat
-  [1,16,0,-20,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__connectcollar1()],
+  [1,16,0,-20,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__connectcollar1(realsolid)],
 // 1 16 0 -18 0 1 0 0 0 -1 0 0 0 1 confricrib1.dat
-  [1,16,0,-18,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__confricrib1()],
+  [1,16,0,-18,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__confricrib1(realsolid)],
 // 1 16 0 -18 0 1 0 0 0 -1 0 0 0 -1 confricrib1.dat
-  [1,16,0,-18,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__confricrib1()],
+  [1,16,0,-18,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__confricrib1(realsolid)],
 // 1 16 0 -18 0 -1 0 0 0 -1 0 0 0 -1 confricrib1.dat
-  [1,16,0,-18,0,-1,0,0,0,-1,0,0,0,-1, ldraw_lib__confricrib1()],
+  [1,16,0,-18,0,-1,0,0,0,-1,0,0,0,-1, ldraw_lib__confricrib1(realsolid)],
 // 1 16 0 -18 0 -1 0 0 0 -1 0 0 0 1 confricrib1.dat
-  [1,16,0,-18,0,-1,0,0,0,-1,0,0,0,1, ldraw_lib__confricrib1()],
+  [1,16,0,-18,0,-1,0,0,0,-1,0,0,0,1, ldraw_lib__confricrib1(realsolid)],
 // 1 16 0 -2 0 1 0 0 0 1 0 0 0 1 confricrib1.dat
-  [1,16,0,-2,0,1,0,0,0,1,0,0,0,1, ldraw_lib__confricrib1()],
+  [1,16,0,-2,0,1,0,0,0,1,0,0,0,1, ldraw_lib__confricrib1(realsolid)],
 // 1 16 0 -2 0 1 0 0 0 1 0 0 0 -1 confricrib1.dat
-  [1,16,0,-2,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__confricrib1()],
+  [1,16,0,-2,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__confricrib1(realsolid)],
 // 1 16 0 -2 0 -1 0 0 0 1 0 0 0 -1 confricrib1.dat
-  [1,16,0,-2,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__confricrib1()],
+  [1,16,0,-2,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__confricrib1(realsolid)],
 // 1 16 0 -2 0 -1 0 0 0 1 0 0 0 1 confricrib1.dat
-  [1,16,0,-2,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__confricrib1()],
+  [1,16,0,-2,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__confricrib1(realsolid)],
 // 1 16 0 -13 0 6 0 0 0 11 0 0 0 6 4-4cyli.dat
-  [1,16,0,-13,0,6,0,0,0,11,0,0,0,6, ldraw_lib__4_4cyli()],
+  [1,16,0,-13,0,6,0,0,0,11,0,0,0,6, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 -2 0 8 0 0 0 1 0 0 0 8 4-4edge.dat
-  [1,16,0,-2,0,8,0,0,0,1,0,0,0,8, ldraw_lib__4_4edge()],
+  [1,16,0,-2,0,8,0,0,0,1,0,0,0,8, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 -2 0 8 0 0 0 2 0 0 0 8 4-4cyli.dat
-  [1,16,0,-2,0,8,0,0,0,2,0,0,0,8, ldraw_lib__4_4cyli()],
+  [1,16,0,-2,0,8,0,0,0,2,0,0,0,8, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 -2 0 6 0 0 0 1 0 0 0 6 4-4edge.dat
-  [1,16,0,-2,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4edge()],
+  [1,16,0,-2,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 -2 0 2 0 0 0 1 0 0 0 2 4-4ring3.dat
-  [1,16,0,-2,0,2,0,0,0,1,0,0,0,2, ldraw_lib__4_4ring3()],
+  [1,16,0,-2,0,2,0,0,0,1,0,0,0,2, ldraw_lib__4_4ring3(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -13 0 2.82843 0 -2.82843 0 13 0 2.82843 0 2.82843 1-4cyli.dat
-  [1,16,0,-13,0,2.82843,0,-2.82843,0,13,0,2.82843,0,2.82843, ldraw_lib__1_4cyli()],
+  [1,16,0,-13,0,2.82843,0,-2.82843,0,13,0,2.82843,0,2.82843, ldraw_lib__1_4cyli(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -13 0 2.82843 0 -2.82843 0 13 0 -2.82843 0 -2.82843 1-4cyli.dat
-  [1,16,0,-13,0,2.82843,0,-2.82843,0,13,0,-2.82843,0,-2.82843, ldraw_lib__1_4cyli()],
+  [1,16,0,-13,0,2.82843,0,-2.82843,0,13,0,-2.82843,0,-2.82843, ldraw_lib__1_4cyli(realsolid)],
 // 1 16 -2.82843 -6.5 0 0 -1 0 6.5 0 0 0 0 2.82843 rect2p.dat
-  [1,16,-2.82843,-6.5,0,0,-1,0,6.5,0,0,0,0,2.82843, ldraw_lib__rect2p()],
+  [1,16,-2.82843,-6.5,0,0,-1,0,6.5,0,0,0,0,2.82843, ldraw_lib__rect2p(realsolid)],
 // 1 16 2.82843 -6.5 0 0 1 0 6.5 0 0 0 0 2.82843 rect2p.dat
-  [1,16,2.82843,-6.5,0,0,1,0,6.5,0,0,0,0,2.82843, ldraw_lib__rect2p()],
+  [1,16,2.82843,-6.5,0,0,1,0,6.5,0,0,0,0,2.82843, ldraw_lib__rect2p(realsolid)],
 ];
 module ldraw_lib__confric10(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__confric10(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__confric10(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__confric10(line=0.2);

@@ -7,7 +7,8 @@ use <../p/axleconnect.scad>
 use <../p/beamhole.scad>
 use <../p/rect2p.scad>
 use <s/57528s01.scad>
-function ldraw_lib__57528() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__57528(realsolid=false) = [
 // 0 Technic Bionicle Weapon Pincer  8 x  7
 // 0 Name: 57528.dat
 // 0 Author: Santeri Piippo [arezey]
@@ -22,29 +23,29 @@ function ldraw_lib__57528() = [
 // 
 // 
 // 1 16 0 0 -20 0 -1 0 1 0 0 0 0 1 beamhole.dat
-  [1,16,0,0,-20,0,-1,0,1,0,0,0,0,1, ldraw_lib__beamhole()],
+  [1,16,0,0,-20,0,-1,0,1,0,0,0,0,1, ldraw_lib__beamhole(realsolid)],
 // 1 16 10 0 0 0 -20 0 1 0 0 0 0 1 axl3hole.dat
-  [1,16,10,0,0,0,-20,0,1,0,0,0,0,1, ldraw_lib__axl3hole()],
+  [1,16,10,0,0,0,-20,0,1,0,0,0,0,1, ldraw_lib__axl3hole(realsolid)],
 // 1 16 10 0 0 0 -1 0 -3 0 0 0 0 -3 4-4ring2.dat
-  [1,16,10,0,0,0,-1,0,-3,0,0,0,0,-3, ldraw_lib__4_4ring2()],
+  [1,16,10,0,0,0,-1,0,-3,0,0,0,0,-3, ldraw_lib__4_4ring2(realsolid)],
 // 1 16 -10 0 0 0 1 0 -3 0 0 0 0 -3 4-4ring2.dat
-  [1,16,-10,0,0,0,1,0,-3,0,0,0,0,-3, ldraw_lib__4_4ring2()],
+  [1,16,-10,0,0,0,1,0,-3,0,0,0,0,-3, ldraw_lib__4_4ring2(realsolid)],
 // 1 16 0 0 0 0 -1 0 -1 0 0 0 0 -1 axleconnect.dat
-  [1,16,0,0,0,0,-1,0,-1,0,0,0,0,-1, ldraw_lib__axleconnect()],
+  [1,16,0,0,0,0,-1,0,-1,0,0,0,0,-1, ldraw_lib__axleconnect(realsolid)],
 // 1 16 0 0 0 0 1 0 1 0 0 0 0 -1 axleconnect.dat
-  [1,16,0,0,0,0,1,0,1,0,0,0,0,-1, ldraw_lib__axleconnect()],
+  [1,16,0,0,0,0,1,0,1,0,0,0,0,-1, ldraw_lib__axleconnect(realsolid)],
 // 1 16 0 0 10 1 0 0 0 0 -1 0 20 0 axle.dat
-  [1,16,0,0,10,1,0,0,0,0,-1,0,20,0, ldraw_lib__axle()],
+  [1,16,0,0,10,1,0,0,0,0,-1,0,20,0, ldraw_lib__axle(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\57528s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__57528s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__57528s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\57528s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__57528s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__57528s01(realsolid)],
 // 1 16 10 0 -20 0 -20 0 -9 0 0 0 0 -9 2-4cylo.dat
-  [1,16,10,0,-20,0,-20,0,-9,0,0,0,0,-9, ldraw_lib__2_4cylo()],
+  [1,16,10,0,-20,0,-20,0,-9,0,0,0,0,-9, ldraw_lib__2_4cylo(realsolid)],
 // 1 16 0 -9 -10 0 0 10 0 1 0 -10 0 0 rect2p.dat
-  [1,16,0,-9,-10,0,0,10,0,1,0,-10,0,0, ldraw_lib__rect2p()],
+  [1,16,0,-9,-10,0,0,10,0,1,0,-10,0,0, ldraw_lib__rect2p(realsolid)],
 // 1 16 0 9 -10 0 0 10 0 -1 0 10 0 0 rect2p.dat
-  [1,16,0,9,-10,0,0,10,0,-1,0,10,0,0, ldraw_lib__rect2p()],
+  [1,16,0,9,-10,0,0,10,0,-1,0,10,0,0, ldraw_lib__rect2p(realsolid)],
 // 0 // laces
 // 4 16 8.5 9 -20 8.5 24.0648 -20.831 -8.5 24.0648 -20.831 -8.5 9 -20
   [4,16,8.5,9,-20,8.5,24.0648,-20.831,-8.5,24.0648,-20.831,-8.5,9,-20],
@@ -1002,5 +1003,5 @@ function ldraw_lib__57528() = [
   [2,24,1.8,-42.4209,3.9885,-1.8,-42.4209,3.9885],
 ];
 module ldraw_lib__57528(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__57528(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__57528(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__57528(line=0.2);

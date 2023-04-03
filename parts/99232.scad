@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <59.scad>
-function ldraw_lib__99232() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__99232(realsolid=false) = [
 // 0 =Minifig Sword Greatsword
 // 0 Name: 99232.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -20,8 +21,8 @@ function ldraw_lib__99232() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 59.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__59()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__59(realsolid)],
 ];
 module ldraw_lib__99232(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__99232(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__99232(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__99232(line=0.2);

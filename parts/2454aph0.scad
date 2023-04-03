@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/2454as01.scad>
-function ldraw_lib__2454aph0() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2454aph0(realsolid=false) = [
 // 0 Brick  1 x  2 x  5 with Stone Wall Pattern
 // 0 Name: 2454aph0.dat
 // 0 Author: Tim Lampmann [L4mpi]
@@ -19,7 +20,7 @@ function ldraw_lib__2454aph0() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2454as01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2454as01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2454as01(realsolid)],
 // 
 // 4 8 -19 2 -10 -19.5 4 -10 -17.5 3.5 -10 -15.25 2.5 -10
   [4,8,-19,2,-10,-19.5,4,-10,-17.5,3.5,-10,-15.25,2.5,-10],
@@ -1523,5 +1524,5 @@ function ldraw_lib__2454aph0() = [
   [4,71,15,115.75,-10,15.25,114.25,-10,13.5,114.75,-10,13.75,115.75,-10],
 ];
 module ldraw_lib__2454aph0(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2454aph0(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2454aph0(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2454aph0(line=0.2);

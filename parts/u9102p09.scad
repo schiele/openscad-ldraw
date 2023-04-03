@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/1-8cyli.scad>
 use <s/u9102s01.scad>
-function ldraw_lib__u9102p09() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__u9102p09(realsolid=false) = [
 // 0 Figure Fabuland Torso with Two Gold Buttons
 // 0 Name: u9102p09.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -16,11 +17,11 @@ function ldraw_lib__u9102p09() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\u9102s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__u9102s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__u9102s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\u9102s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__u9102s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__u9102s01(realsolid)],
 // 1 16 -16 -30 -9 0 32 0 -5 0 0 0 0 -4 1-8cyli.dat
-  [1,16,-16,-30,-9,0,32,0,-5,0,0,0,0,-4, ldraw_lib__1_8cyli()],
+  [1,16,-16,-30,-9,0,32,0,-5,0,0,0,0,-4, ldraw_lib__1_8cyli(realsolid)],
 // 4 16 -16 -31.913 -12.696 -3.7 -30.45 -12.928 3.7 -30.45 -12.928 16 -31.913 -12.696
   [4,16,-16,-31.913,-12.696,-3.7,-30.45,-12.928,3.7,-30.45,-12.928,16,-31.913,-12.696],
 // 4 16 3.7 -30.45 -12.928 3.7 -30 -13 16 -30 -13 16 -31.913 -12.696
@@ -351,5 +352,5 @@ function ldraw_lib__u9102p09() = [
   [5,24,-16,-31.913,-12.696,16,-31.913,-12.696,-16,-33.535,-11.828,-16,-30,-13],
 ];
 module ldraw_lib__u9102p09(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__u9102p09(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__u9102p09(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__u9102p09(line=0.2);

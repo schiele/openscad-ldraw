@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__type_swiss721bt_bold_uf() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__type_swiss721bt_bold_uf(realsolid=false) = [
 // 0 Type Swiss721BT Upper Case "F" Bold
 // 0 Name: type-swiss721bt-bold-uf.dat
 // 0 Author: Ulrich Röder [UR]
@@ -34,5 +35,5 @@ function ldraw_lib__type_swiss721bt_bold_uf() = [
   [3,0,-.348,0,-.5,-.145,0,-.5,-.145,0,-.074],
 ];
 module ldraw_lib__type_swiss721bt_bold_uf(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__type_swiss721bt_bold_uf(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__type_swiss721bt_bold_uf(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__type_swiss721bt_bold_uf(line=0.2);

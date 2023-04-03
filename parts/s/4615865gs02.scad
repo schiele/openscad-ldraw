@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/box3u12.scad>
-function ldraw_lib__s__4615865gs02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__4615865gs02(realsolid=false) = [
 // 0 ~Sticker  1.1 x  3.6 with Black/Red/Blue Badge and "POLICE" - Script
 // 0 Name: s\4615865gs02.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -16,7 +17,7 @@ function ldraw_lib__s__4615865gs02() = [
 // 
 // 0 // Box
 // 1 16 0 -0.25 0 27 0 0 0 0.25 0 0 0 10.8 box3u12.dat
-  [1,16,0,-0.25,0,27,0,0,0,0.25,0,0,0,10.8, ldraw_lib__box3u12()],
+  [1,16,0,-0.25,0,27,0,0,0,0.25,0,0,0,10.8, ldraw_lib__box3u12(realsolid)],
 // 0 // Script
 // 0 // White border
 // 4 15 27 -0.25 10.8 -27 -0.25 10.8 -9 -0.25 9.45 9 -0.25 9.45
@@ -669,5 +670,5 @@ function ldraw_lib__s__4615865gs02() = [
   [4,15,22.0838,-0.25,-2.07,22.0838,-0.25,-0.7368,16.3558,-0.25,-0.7368,16.0225,-0.25,-2.07],
 ];
 module ldraw_lib__s__4615865gs02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__4615865gs02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__4615865gs02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__4615865gs02(line=0.2);

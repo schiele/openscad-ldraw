@@ -2,7 +2,8 @@ use <../lib.scad>
 use <s/3709as02.scad>
 use <s/3709as03.scad>
 use <../p/stug2.scad>
-function ldraw_lib__3709c() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3709c(realsolid=false) = [
 // 0 Brick  2 x  4 with Top/Side/End Holes and Solid Studs
 // 0 Name: 3709c.dat
 // 0 Author: Niels Karsdorp [nielsk]
@@ -20,16 +21,16 @@ function ldraw_lib__3709c() = [
 // 0 // Hence the use of 3709c.dat for this part, even though it is not a variant of 3709b.
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3709as02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3709as02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3709as02(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3709as03.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3709as03()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3709as03(realsolid)],
 // 1 16 20 0 0 1 0 0 0 1 0 0 0 1 stug2.dat
-  [1,16,20,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug2()],
+  [1,16,20,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug2(realsolid)],
 // 1 16 -20 0 0 1 0 0 0 1 0 0 0 1 stug2.dat
-  [1,16,-20,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug2()],
+  [1,16,-20,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug2(realsolid)],
 // 0
 // 
 ];
 module ldraw_lib__3709c(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3709c(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3709c(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3709c(line=0.2);

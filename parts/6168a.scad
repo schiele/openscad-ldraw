@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <6167.scad>
 use <6168.scad>
-function ldraw_lib__6168a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6168a(realsolid=false) = [
 // 0 Support  2 x  2 x 11 Solid Pillar (Complete)
 // 0 Name: 6168a.dat
 // 0 Author: James Jessiman
@@ -20,10 +21,10 @@ function ldraw_lib__6168a() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 6168.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__6168()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__6168(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 6167.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__6167()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__6167(realsolid)],
 ];
 module ldraw_lib__6168a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6168a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6168a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6168a(line=0.2);

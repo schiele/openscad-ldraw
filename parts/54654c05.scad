@@ -3,7 +3,8 @@ use <54701.scad>
 use <54702.scad>
 use <54703.scad>
 use <u9288.scad>
-function ldraw_lib__54654c05() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__54654c05(realsolid=false) = [
 // 0 Plane Aft Section  8 x 16 x  7 with White Tip
 // 0 Name: 54654c05.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -20,18 +21,18 @@ function ldraw_lib__54654c05() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 54701.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__54701()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__54701(realsolid)],
 // 1 16 0 144 -10 1 0 0 0 1 0 0 0 1 54702.dat
-  [1,16,0,144,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__54702()],
+  [1,16,0,144,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__54702(realsolid)],
 // 1 15 0 0 0 1 0 0 0 1 0 0 0 1 54703.dat
-  [1,15,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__54703()],
+  [1,15,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__54703(realsolid)],
 // 1 0 51.473 86.494 22.75 -1 0 0 0 -1 0 0 0 1 u9288.dat
-  [1,0,51.473,86.494,22.75,-1,0,0,0,-1,0,0,0,1, ldraw_lib__u9288()],
+  [1,0,51.473,86.494,22.75,-1,0,0,0,-1,0,0,0,1, ldraw_lib__u9288(realsolid)],
 // 1 0 -51.473 86.494 22.75 -1 0 0 0 -1 0 0 0 1 u9288.dat
-  [1,0,-51.473,86.494,22.75,-1,0,0,0,-1,0,0,0,1, ldraw_lib__u9288()],
+  [1,0,-51.473,86.494,22.75,-1,0,0,0,-1,0,0,0,1, ldraw_lib__u9288(realsolid)],
 // 1 0 0 54.994 241.5 -1 0 0 0 -1 0 0 0 1 u9288.dat
-  [1,0,0,54.994,241.5,-1,0,0,0,-1,0,0,0,1, ldraw_lib__u9288()],
+  [1,0,0,54.994,241.5,-1,0,0,0,-1,0,0,0,1, ldraw_lib__u9288(realsolid)],
 ];
 module ldraw_lib__54654c05(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__54654c05(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__54654c05(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__54654c05(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/87079s01.scad>
-function ldraw_lib__87079p0c() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__87079p0c(realsolid=false) = [
 // 0 Tile  2 x  4 with  2 Black Stripes Pattern
 // 0 Name: 87079p0c.dat
 // 0 Author: Ulrich Röder [UR]
@@ -20,7 +21,7 @@ function ldraw_lib__87079p0c() = [
 // 
 // 0 // Main
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\87079s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__87079s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__87079s01(realsolid)],
 // 4 16 -40 0 20 -39.5 0 19.5 39.5 0 19.5 40 0 20
   [4,16,-40,0,20,-39.5,0,19.5,39.5,0,19.5,40,0,20],
 // 4 16 -39.5 0 2 -39.5 0 19.5 -40 0 20 -40 0 0
@@ -45,5 +46,5 @@ function ldraw_lib__87079p0c() = [
   [4,0,-39.5,0,-2,-39.5,0,-19.5,39.5,0,-19.5,39.5,0,-2],
 ];
 module ldraw_lib__87079p0c(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__87079p0c(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__87079p0c(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__87079p0c(line=0.2);

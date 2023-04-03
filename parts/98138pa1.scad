@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/4-4ering.scad>
 use <s/98138s01.scad>
-function ldraw_lib__98138pa1() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__98138pa1(realsolid=false) = [
 // 0 Tile  1 x  1 Round with Lime Ultra Agents Toxic Symbol Pattern
 // 0 Name: 98138pa1.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -18,9 +19,9 @@ function ldraw_lib__98138pa1() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\98138s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01(realsolid)],
 // 1 16 0 0 0 9 0 0 0 1 0 0 0 9 4-4ering.dat
-  [1,16,0,0,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4ering()],
+  [1,16,0,0,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4ering(realsolid)],
 // 4 27 -0.5167 0 -5.7972 -0.4372 0 -5.413 -0.8419 0 -5.3325 -1.3394 0 -5.6336
   [4,27,-0.5167,0,-5.7972,-0.4372,0,-5.413,-0.8419,0,-5.3325,-1.3394,0,-5.6336],
 // 4 27 -1.3394 0 -5.6336 -0.8419 0 -5.3325 -1.5556 0 -4.8556 -2.4749 0 -4.8749
@@ -315,5 +316,5 @@ function ldraw_lib__98138pa1() = [
   [3,16,0.5167,0,-5.7972,-0.5167,0,-5.7972,0,0,-9],
 ];
 module ldraw_lib__98138pa1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__98138pa1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__98138pa1(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__98138pa1(line=0.2);

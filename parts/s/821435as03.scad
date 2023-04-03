@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/1-4ndis.scad>
-function ldraw_lib__s__821435as03() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__821435as03(realsolid=false) = [
 // 0 ~Sticker Sloped Body for Racing Number
 // 0 Name: s\821435as03.dat
 // 0 Author: Ulrich Röder [UR]
@@ -16,7 +17,7 @@ function ldraw_lib__s__821435as03() = [
 // 
 // 0 // Main
 // 1 16 13.063 -.25 4.75 3 0 0 0 1 0 0 0 3 1-4ndis.dat
-  [1,16,13.063,-.25,4.75,3,0,0,0,1,0,0,0,3, ldraw_lib__1_4ndis()],
+  [1,16,13.063,-.25,4.75,3,0,0,0,1,0,0,0,3, ldraw_lib__1_4ndis(realsolid)],
 // 3 16 10 0 11 46 0 -7 -9 0 11
   [3,16,10,0,11,46,0,-7,-9,0,11],
 // 4 16 -9 0 -11 -9 0 11 46 0 -7 46 0 -11
@@ -67,5 +68,5 @@ function ldraw_lib__s__821435as03() = [
   [4,16,46,0,-11,46,-.25,-11,-9,-.25,-11,-9,0,-11],
 ];
 module ldraw_lib__s__821435as03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__821435as03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__821435as03(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__821435as03(line=0.2);

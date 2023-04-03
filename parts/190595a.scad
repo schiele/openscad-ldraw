@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <190145a.scad>
-function ldraw_lib__190595a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__190595a(realsolid=false) = [
 // 0 =Sticker  1.9 x  3.8 with Yellow Box and Arrows
 // 0 Name: 190595a.dat
 // 0 Author: Rafael Skibicki [Rola]
@@ -21,8 +22,8 @@ function ldraw_lib__190595a() = [
 // 0 // Alias of 190145a
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 190145a.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__190145a()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__190145a(realsolid)],
 ];
 module ldraw_lib__190595a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__190595a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__190595a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__190595a(line=0.2);

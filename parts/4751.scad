@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <4751a.scad>
-function ldraw_lib__4751() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4751(realsolid=false) = [
 // 0 ~Moved to 4751a
 // 0 Name: 4751.dat
 // 0 Author: [PTadmin]
@@ -16,8 +17,8 @@ function ldraw_lib__4751() = [
 // 
 // 0 // Propellor 4 Blade 13 Diameter
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 4751a.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4751a()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4751a(realsolid)],
 ];
 module ldraw_lib__4751(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4751(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4751(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4751(line=0.2);

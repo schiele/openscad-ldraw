@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__4542422c() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4542422c(realsolid=false) = [
 // 0 Sticker  1.8 x  1.8 with Roadsign Minifig Crosswalk
 // 0 Name: 4542422c.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -15,7 +16,7 @@ function ldraw_lib__4542422c() = [
 // 
 // 
 // 1 15 0 -0.25 0 17.5 0 0 0 0.25 0 0 0 17.5 box5-12.dat
-  [1,15,0,-0.25,0,17.5,0,0,0,0.25,0,0,0,17.5, ldraw_lib__box5_12()],
+  [1,15,0,-0.25,0,17.5,0,0,0,0.25,0,0,0,17.5, ldraw_lib__box5_12(realsolid)],
 // 0 //
 // 3 1 17.5 -0.25 17.5 -17.5 -0.25 17.5 0 -0.25 14.4
   [3,1,17.5,-0.25,17.5,-17.5,-0.25,17.5,0,-0.25,14.4],
@@ -208,5 +209,5 @@ function ldraw_lib__4542422c() = [
 // 0 //
 ];
 module ldraw_lib__4542422c(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4542422c(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4542422c(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4542422c(line=0.2);

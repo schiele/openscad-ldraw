@@ -5,7 +5,8 @@ use <../p/4-4ndis.scad>
 use <../p/box3u2p.scad>
 use <../p/stud.scad>
 use <../p/stud2a.scad>
-function ldraw_lib__47905() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__47905(realsolid=false) = [
 // 0 Brick  1 x  1 with Studs on Two Opposite Sides
 // 0 Name: 47905.dat
 // 0 Author: Sven Moritz Hein [smhltec]
@@ -42,27 +43,27 @@ function ldraw_lib__47905() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 10 10 0 0 4 4 0 0 0 -4 0 4-4cyli.dat
-  [1,16,0,10,10,0,0,4,4,0,0,0,-4,0, ldraw_lib__4_4cyli()],
+  [1,16,0,10,10,0,0,4,4,0,0,0,-4,0, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 10 6 0 0 4 4 0 0 0 1 0 4-4edge.dat
-  [1,16,0,10,6,0,0,4,4,0,0,0,1,0, ldraw_lib__4_4edge()],
+  [1,16,0,10,6,0,0,4,4,0,0,0,1,0, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 10 10 0 0 6 6 0 0 0 1 0 4-4edge.dat
-  [1,16,0,10,10,0,0,6,6,0,0,0,1,0, ldraw_lib__4_4edge()],
+  [1,16,0,10,10,0,0,6,6,0,0,0,1,0, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 10 6 0 0 4 4 0 0 0 1 0 4-4ndis.dat
-  [1,16,0,10,6,0,0,4,4,0,0,0,1,0, ldraw_lib__4_4ndis()],
+  [1,16,0,10,6,0,0,4,4,0,0,0,1,0, ldraw_lib__4_4ndis(realsolid)],
 // 1 16 0 10 10 0 0 6 6 0 0 0 -1 0 4-4ndis.dat
-  [1,16,0,10,10,0,0,6,6,0,0,0,-1,0, ldraw_lib__4_4ndis()],
+  [1,16,0,10,10,0,0,6,6,0,0,0,-1,0, ldraw_lib__4_4ndis(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 10 -10 0 0 4 4 0 0 0 4 0 4-4cyli.dat
-  [1,16,0,10,-10,0,0,4,4,0,0,0,4,0, ldraw_lib__4_4cyli()],
+  [1,16,0,10,-10,0,0,4,4,0,0,0,4,0, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 10 -6 0 0 4 4 0 0 0 1 0 4-4edge.dat
-  [1,16,0,10,-6,0,0,4,4,0,0,0,1,0, ldraw_lib__4_4edge()],
+  [1,16,0,10,-6,0,0,4,4,0,0,0,1,0, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 10 -10 0 0 6 6 0 0 0 1 0 4-4edge.dat
-  [1,16,0,10,-10,0,0,6,6,0,0,0,1,0, ldraw_lib__4_4edge()],
+  [1,16,0,10,-10,0,0,6,6,0,0,0,1,0, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 10 -6 0 0 4 4 0 0 0 -1 0 4-4ndis.dat
-  [1,16,0,10,-6,0,0,4,4,0,0,0,-1,0, ldraw_lib__4_4ndis()],
+  [1,16,0,10,-6,0,0,4,4,0,0,0,-1,0, ldraw_lib__4_4ndis(realsolid)],
 // 1 16 0 10 -10 0 0 6 6 0 0 0 1 0 4-4ndis.dat
-  [1,16,0,10,-10,0,0,6,6,0,0,0,1,0, ldraw_lib__4_4ndis()],
+  [1,16,0,10,-10,0,0,6,6,0,0,0,1,0, ldraw_lib__4_4ndis(realsolid)],
 // 0
 // 4 16 6 24 6 6 24 -6 10 24 -10 10 24 10
   [4,16,6,24,6,6,24,-6,10,24,-10,10,24,10],
@@ -111,18 +112,18 @@ function ldraw_lib__47905() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 24 0 0 0 6 0 -20 0 6 0 0 box3u2p.dat
-  [1,16,0,24,0,0,0,6,0,-20,0,6,0,0, ldraw_lib__box3u2p()],
+  [1,16,0,24,0,0,0,6,0,-20,0,6,0,0, ldraw_lib__box3u2p(realsolid)],
 // 1 16 0 24 0 0 0 10 0 -24 0 10 0 0 box3u2p.dat
-  [1,16,0,24,0,0,0,10,0,-24,0,10,0,0, ldraw_lib__box3u2p()],
+  [1,16,0,24,0,0,0,10,0,-24,0,10,0,0, ldraw_lib__box3u2p(realsolid)],
 // 0
 // 1 16 0 0 0 0 0 1 0 1 0 -1 0 0 stud.dat
-  [1,16,0,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__stud()],
+  [1,16,0,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__stud(realsolid)],
 // 1 16 0 10 -10 0 0 1 1 0 0 0 1 0 stud2a.dat
-  [1,16,0,10,-10,0,0,1,1,0,0,0,1,0, ldraw_lib__stud2a()],
+  [1,16,0,10,-10,0,0,1,1,0,0,0,1,0, ldraw_lib__stud2a(realsolid)],
 // 1 16 0 10 10 0 0 1 1 0 0 0 -1 0 stud2a.dat
-  [1,16,0,10,10,0,0,1,1,0,0,0,-1,0, ldraw_lib__stud2a()],
+  [1,16,0,10,10,0,0,1,1,0,0,0,-1,0, ldraw_lib__stud2a(realsolid)],
 // 0
 ];
 module ldraw_lib__47905(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__47905(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__47905(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__47905(line=0.2);

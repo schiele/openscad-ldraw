@@ -5,7 +5,8 @@ use <../p/box5-1.scad>
 use <../p/rect.scad>
 use <../p/rect1.scad>
 use <../p/rect3.scad>
-function ldraw_lib__t1067() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__t1067(realsolid=false) = [
 // 0 ~| Circuit Cubes NO/NC Switch Lid
 // 0 Name: t1067.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -36,37 +37,37 @@ function ldraw_lib__t1067() = [
 // 2 24 -25 -26 -6 -25 -19 -6
   [2,24,-25,-26,-6,-25,-19,-6],
 // 1 16 24 -13 -6 0 0 -1 6 0 0 0 14 0 box5-1.dat
-  [1,16,24,-13,-6,0,0,-1,6,0,0,0,14,0, ldraw_lib__box5_1()],
+  [1,16,24,-13,-6,0,0,-1,6,0,0,0,14,0, ldraw_lib__box5_1(realsolid)],
 // 1 16 -24 -13 -6 0 0 1 6 0 0 0 14 0 box5-1.dat
-  [1,16,-24,-13,-6,0,0,1,6,0,0,0,14,0, ldraw_lib__box5_1()],
+  [1,16,-24,-13,-6,0,0,1,6,0,0,0,14,0, ldraw_lib__box5_1(realsolid)],
 // 1 16 0 0 -7 -25 0 0 0 -1 0 0 0 1 rect.dat
-  [1,16,0,0,-7,-25,0,0,0,-1,0,0,0,1, ldraw_lib__rect()],
+  [1,16,0,0,-7,-25,0,0,0,-1,0,0,0,1, ldraw_lib__rect(realsolid)],
 // 1 16 12.5 -24 -7 0 0 12.5 0 1 0 -1 0 0 rect.dat
-  [1,16,12.5,-24,-7,0,0,12.5,0,1,0,-1,0,0, ldraw_lib__rect()],
+  [1,16,12.5,-24,-7,0,0,12.5,0,1,0,-1,0,0, ldraw_lib__rect(realsolid)],
 // 1 16 -0.5 -25 -7 0 -1 -0.5 0 0 -1 1 0 0 rect3.dat
-  [1,16,-0.5,-25,-7,0,-1,-0.5,0,0,-1,1,0,0, ldraw_lib__rect3()],
+  [1,16,-0.5,-25,-7,0,-1,-0.5,0,0,-1,1,0,0, ldraw_lib__rect3(realsolid)],
 // 1 16 -13 -26 -7 0 0 -12 0 1 0 1 0 0 rect3.dat
-  [1,16,-13,-26,-7,0,0,-12,0,1,0,1,0,0, ldraw_lib__rect3()],
+  [1,16,-13,-26,-7,0,0,-12,0,1,0,1,0,0, ldraw_lib__rect3(realsolid)],
 // 1 16 25 -12 -7 0 -1 0 0 0 12 -1 0 0 rect1.dat
-  [1,16,25,-12,-7,0,-1,0,0,0,12,-1,0,0, ldraw_lib__rect1()],
+  [1,16,25,-12,-7,0,-1,0,0,0,12,-1,0,0, ldraw_lib__rect1(realsolid)],
 // 1 16 -25 -13 -7 0 1 0 0 0 -13 -1 0 0 rect1.dat
-  [1,16,-25,-13,-7,0,1,0,0,0,-13,-1,0,0, ldraw_lib__rect1()],
+  [1,16,-25,-13,-7,0,1,0,0,0,-13,-1,0,0, ldraw_lib__rect1(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 12 -7 -8 4 0 0 0 0 -4 0 2 0 4-4cylo.dat
-  [1,16,12,-7,-8,4,0,0,0,0,-4,0,2,0, ldraw_lib__4_4cylo()],
+  [1,16,12,-7,-8,4,0,0,0,0,-4,0,2,0, ldraw_lib__4_4cylo(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -12 -7 -8 4 0 0 0 0 -4 0 2 0 4-4cylo.dat
-  [1,16,-12,-7,-8,4,0,0,0,0,-4,0,2,0, ldraw_lib__4_4cylo()],
+  [1,16,-12,-7,-8,4,0,0,0,0,-4,0,2,0, ldraw_lib__4_4cylo(realsolid)],
 // 1 16 12 -7 -8 4 0 0 0 0 -4 0 1 0 4-4ndis.dat
-  [1,16,12,-7,-8,4,0,0,0,0,-4,0,1,0, ldraw_lib__4_4ndis()],
+  [1,16,12,-7,-8,4,0,0,0,0,-4,0,1,0, ldraw_lib__4_4ndis(realsolid)],
 // 1 16 -12 -7 -8 4 0 0 0 0 -4 0 1 0 4-4ndis.dat
-  [1,16,-12,-7,-8,4,0,0,0,0,-4,0,1,0, ldraw_lib__4_4ndis()],
+  [1,16,-12,-7,-8,4,0,0,0,0,-4,0,1,0, ldraw_lib__4_4ndis(realsolid)],
 // 1 16 12 -7 -6 4 0 0 0 0 -4 0 -1 0 4-4ndis.dat
-  [1,16,12,-7,-6,4,0,0,0,0,-4,0,-1,0, ldraw_lib__4_4ndis()],
+  [1,16,12,-7,-6,4,0,0,0,0,-4,0,-1,0, ldraw_lib__4_4ndis(realsolid)],
 // 1 16 -12 -7 -6 4 0 0 0 0 -4 0 -1 0 4-4ndis.dat
-  [1,16,-12,-7,-6,4,0,0,0,0,-4,0,-1,0, ldraw_lib__4_4ndis()],
+  [1,16,-12,-7,-6,4,0,0,0,0,-4,0,-1,0, ldraw_lib__4_4ndis(realsolid)],
 // 4 16 16 -3 -8 -16 -3 -8 -25 0 -8 25 0 -8
   [4,16,16,-3,-8,-16,-3,-8,-25,0,-8,25,0,-8],
 // 4 16 16 -3 -8 25 0 -8 25 -24 -8 16 -11 -8
@@ -101,5 +102,5 @@ function ldraw_lib__t1067() = [
   [4,16,-8,-3,-6,-8,-11,-6,8,-11,-6,8,-3,-6],
 ];
 module ldraw_lib__t1067(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__t1067(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__t1067(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__t1067(line=0.2);

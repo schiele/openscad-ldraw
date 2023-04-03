@@ -5,7 +5,8 @@ use <s/10057s01.scad>
 use <s/10057s02.scad>
 use <s/10057s04.scad>
 use <../p/stud2.scad>
-function ldraw_lib__10057pm0() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__10057pm0(realsolid=false) = [
 // 0 Minifig Gollum with Wide Eyes and Open Mouth Pattern
 // 0 Name: 10057pm0.dat
 // 0 Author: Christian Neumann [Wesley]
@@ -30,23 +31,23 @@ function ldraw_lib__10057pm0() = [
 // 
 // 
 // 1 16 0 -48 0 1 0 0 0 1 0 0 0 1 stud2.dat
-  [1,16,0,-48,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2()],
+  [1,16,0,-48,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\10057s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__10057s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__10057s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\10057s02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__10057s02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__10057s02(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\10057s02.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__10057s02()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__10057s02(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\10057pm0s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__10057pm0s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__10057pm0s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\10057pm0s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__10057pm0s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__10057pm0s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\10057pm0s02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__10057pm0s02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__10057pm0s02(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\10057pm0s02.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__10057pm0s02()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__10057pm0s02(realsolid)],
 // 1 308 0 0 0 1 0 0 0 1 0 0 0 1 s\10057s04.dat
-  [1,308,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__10057s04()],
+  [1,308,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__10057s04(realsolid)],
 // 0 // conditional lines between subfiles
 // 5 24 0 -33.955 -34.82 0 -33.838 -26.707 2.733 -34.134 -34.8 -2.733 -34.134 -34.8
   [5,24,0,-33.955,-34.82,0,-33.838,-26.707,2.733,-34.134,-34.8,-2.733,-34.134,-34.8],
@@ -128,5 +129,5 @@ function ldraw_lib__10057pm0() = [
   [5,24,0,-53.65,-38.021,0,-49.617,-39.183,0.354,-53.227,-38.133,-0.354,-53.227,-38.133],
 ];
 module ldraw_lib__10057pm0(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__10057pm0(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__10057pm0(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__10057pm0(line=0.2);

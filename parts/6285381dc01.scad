@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__6285381dc01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6285381dc01(realsolid=false) = [
 // 0 Sticker  4.0 x  1.8 with Black Rounded Square Right Half (Formed)
 // 0 Name: 6285381dc01.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -119,5 +120,5 @@ function ldraw_lib__6285381dc01() = [
   [4,0,7,16.1423,-32.1589,8.67,16.0506,-31.9597,10.22,15.783,-31.3786,-18,11.11,-21.23],
 ];
 module ldraw_lib__6285381dc01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6285381dc01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6285381dc01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6285381dc01(line=0.2);

@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/axl2hole.scad>
 use <s/32197s01.scad>
-function ldraw_lib__32197() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__32197(realsolid=false) = [
 // 0 Wheel Rim 30 x 61 with 3 Spokes Swirled
 // 0 Name: 32197.dat
 // 0 Author: Marc Klein [marckl]
@@ -20,14 +21,14 @@ function ldraw_lib__32197() = [
 // 0 // Nomenclature: width_(mm) x rim_diameter_(mm) [optional qualifier]
 // 
 // 1 16 0 0 -37 0 0 -1 0 1 0 1 0 0 s\32197s01.dat
-  [1,16,0,0,-37,0,0,-1,0,1,0,1,0,0, ldraw_lib__s__32197s01()],
+  [1,16,0,0,-37,0,0,-1,0,1,0,1,0,0, ldraw_lib__s__32197s01(realsolid)],
 // 1 16 0 0 -37 0 0.866025 0.5 0 -0.5 0.866025 1 0 0 s\32197s01.dat
-  [1,16,0,0,-37,0,0.866025,0.5,0,-0.5,0.866025,1,0,0, ldraw_lib__s__32197s01()],
+  [1,16,0,0,-37,0,0.866025,0.5,0,-0.5,0.866025,1,0,0, ldraw_lib__s__32197s01(realsolid)],
 // 1 16 0 0 -37 0 -0.866025 0.5 0 -0.5 -0.866025 1 0 0 s\32197s01.dat
-  [1,16,0,0,-37,0,-0.866025,0.5,0,-0.5,-0.866025,1,0,0, ldraw_lib__s__32197s01()],
+  [1,16,0,0,-37,0,-0.866025,0.5,0,-0.5,-0.866025,1,0,0, ldraw_lib__s__32197s01(realsolid)],
 // 
 // 1 16 0 0 1 -1 0 0 0 0 -1 0 -20 0 axl2hole.dat
-  [1,16,0,0,1,-1,0,0,0,0,-1,0,-20,0, ldraw_lib__axl2hole()],
+  [1,16,0,0,1,-1,0,0,0,0,-1,0,-20,0, ldraw_lib__axl2hole(realsolid)],
 // 
 // 4 16 7.07 7.07 1 5 8.66 1 0 6 1 8.66 5 1
   [4,16,7.07,7.07,1,5,8.66,1,0,6,1,8.66,5,1],
@@ -321,5 +322,5 @@ function ldraw_lib__32197() = [
   [4,16,-2.59,9.66,1,-2.59,9.66,-19,-5,8.66,-19,-5,8.66,1],
 ];
 module ldraw_lib__32197(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__32197(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__32197(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__32197(line=0.2);

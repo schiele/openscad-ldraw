@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/4-4edge.scad>
 use <../../p/4-8sphe.scad>
-function ldraw_lib__s__48489s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__48489s01(realsolid=false) = [
 // 0 ~Visor with Pointy Sides and Eye Slit Half
 // 0 Name: s\48489s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -917,9 +918,9 @@ function ldraw_lib__s__48489s01() = [
 // 3 16 0 8.508 -17.775 1.067 8.505 -17.861 0 8.54 -16.854
   [3,16,0,8.508,-17.775,1.067,8.505,-17.861,0,8.54,-16.854],
 // 1 16 14.7 0 0 0 -1 0 1.5 0 0 0 0 1.5 4-8sphe.dat
-  [1,16,14.7,0,0,0,-1,0,1.5,0,0,0,0,1.5, ldraw_lib__4_8sphe()],
+  [1,16,14.7,0,0,0,-1,0,1.5,0,0,0,0,1.5, ldraw_lib__4_8sphe(realsolid)],
 // 1 16 14.7 0 0 0 -1 0 1.5 0 0 0 0 1.5 4-4edge.dat
-  [1,16,14.7,0,0,0,-1,0,1.5,0,0,0,0,1.5, ldraw_lib__4_4edge()],
+  [1,16,14.7,0,0,0,-1,0,1.5,0,0,0,0,1.5, ldraw_lib__4_4edge(realsolid)],
 // 3 16 19.8413 13.793 -1.768 19.8366 16.318 -2.2805 18.6126 13.476 -1.6195
   [3,16,19.8413,13.793,-1.768,19.8366,16.318,-2.2805,18.6126,13.476,-1.6195],
 // 4 16 18.9053 13.793 -5.94 19.8413 13.793 -1.768 18.6126 13.476 -1.6195 17.7413 13.443 -5.58
@@ -1908,5 +1909,5 @@ function ldraw_lib__s__48489s01() = [
   [5,24,15.168,12.221,-5.251,13.964,16.343,-6.46,14.413,12.793,-9.641,14.615,16.343,-2.274],
 ];
 module ldraw_lib__s__48489s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__48489s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__48489s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__48489s01(line=0.2);

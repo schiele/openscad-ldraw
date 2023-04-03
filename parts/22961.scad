@@ -6,7 +6,8 @@ use <../p/4-4disc.scad>
 use <../p/4-4edge.scad>
 use <../p/axle.scad>
 use <../p/connhole.scad>
-function ldraw_lib__22961() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__22961(realsolid=false) = [
 // 0 Technic Axle with Perpendicular Pin Hole
 // 0 Name: 22961.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -21,34 +22,34 @@ function ldraw_lib__22961() = [
 // 
 // 
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 -1 connhole.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__connhole()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__connhole(realsolid)],
 // 1 16 0 -10 0 -9 0 0 0 20 0 0 0 -9 4-4cyli.dat
-  [1,16,0,-10,0,-9,0,0,0,20,0,0,0,-9, ldraw_lib__4_4cyli()],
+  [1,16,0,-10,0,-9,0,0,0,20,0,0,0,-9, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 -10 0 -9 0 0 0 1 0 0 0 -9 4-4edge.dat
-  [1,16,0,-10,0,-9,0,0,0,1,0,0,0,-9, ldraw_lib__4_4edge()],
+  [1,16,0,-10,0,-9,0,0,0,1,0,0,0,-9, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 10 0 -9 0 0 0 1 0 0 0 -9 4-4edge.dat
-  [1,16,0,10,0,-9,0,0,0,1,0,0,0,-9, ldraw_lib__4_4edge()],
+  [1,16,0,10,0,-9,0,0,0,1,0,0,0,-9, ldraw_lib__4_4edge(realsolid)],
 // 1 16 10 0 0 0 -1 0 9 0 0 0 0 9 4-4cyli.dat
-  [1,16,10,0,0,0,-1,0,9,0,0,0,0,9, ldraw_lib__4_4cyli()],
+  [1,16,10,0,0,0,-1,0,9,0,0,0,0,9, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 10 0 0 0 -1 0 9 0 0 0 0 9 4-4edge.dat
-  [1,16,10,0,0,0,-1,0,9,0,0,0,0,9, ldraw_lib__4_4edge()],
+  [1,16,10,0,0,0,-1,0,9,0,0,0,0,9, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 0 0 0 -1 9 0 0 9 -9 0 0 2-4edge.dat
-  [1,16,0,0,0,0,-1,9,0,0,9,-9,0,0, ldraw_lib__2_4edge()],
+  [1,16,0,0,0,0,-1,9,0,0,9,-9,0,0, ldraw_lib__2_4edge(realsolid)],
 // 1 16 0 0 0 0 -1 9 0 0 -9 -9 0 0 2-4edge.dat
-  [1,16,0,0,0,0,-1,9,0,0,-9,-9,0,0, ldraw_lib__2_4edge()],
+  [1,16,0,0,0,0,-1,9,0,0,-9,-9,0,0, ldraw_lib__2_4edge(realsolid)],
 // 1 16 10 0 0 0 -1 0 9 0 0 0 0 9 4-4disc.dat
-  [1,16,10,0,0,0,-1,0,9,0,0,0,0,9, ldraw_lib__4_4disc()],
+  [1,16,10,0,0,0,-1,0,9,0,0,0,0,9, ldraw_lib__4_4disc(realsolid)],
 // 1 16 10 0 0 0 20 0 -1 0 0 0 0 -1 axle.dat
-  [1,16,10,0,0,0,20,0,-1,0,0,0,0,-1, ldraw_lib__axle()],
+  [1,16,10,0,0,0,20,0,-1,0,0,0,0,-1, ldraw_lib__axle(realsolid)],
 // 1 16 9 0 0 0 -9 0 9 0 0 0 0 -9 1-4cyls.dat
-  [1,16,9,0,0,0,-9,0,9,0,0,0,0,-9, ldraw_lib__1_4cyls()],
+  [1,16,9,0,0,0,-9,0,9,0,0,0,0,-9, ldraw_lib__1_4cyls(realsolid)],
 // 1 16 9 0 0 0 -9 0 9 0 0 0 0 9 1-4cyls.dat
-  [1,16,9,0,0,0,-9,0,9,0,0,0,0,9, ldraw_lib__1_4cyls()],
+  [1,16,9,0,0,0,-9,0,9,0,0,0,0,9, ldraw_lib__1_4cyls(realsolid)],
 // 1 16 9 0 0 0 -9 0 -9 0 0 0 0 -9 1-4cyls.dat
-  [1,16,9,0,0,0,-9,0,-9,0,0,0,0,-9, ldraw_lib__1_4cyls()],
+  [1,16,9,0,0,0,-9,0,-9,0,0,0,0,-9, ldraw_lib__1_4cyls(realsolid)],
 // 1 16 9 0 0 0 -9 0 -9 0 0 0 0 9 1-4cyls.dat
-  [1,16,9,0,0,0,-9,0,-9,0,0,0,0,9, ldraw_lib__1_4cyls()],
+  [1,16,9,0,0,0,-9,0,-9,0,0,0,0,9, ldraw_lib__1_4cyls(realsolid)],
 ];
 module ldraw_lib__22961(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__22961(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__22961(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__22961(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3068bs01.scad>
-function ldraw_lib__3068bpft() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3068bpft(realsolid=false) = [
 // 0 Tile  2 x  2 with Fabuland Crocodile Head and "13" Pattern
 // 0 Name: 3068bpft.dat
 // 0 Author: Steffen [Steffen]
@@ -19,7 +20,7 @@ function ldraw_lib__3068bpft() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3068bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3068bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3068bs01(realsolid)],
 // 
 // 4 0 -13.9 0 4.9 -15.3 0 4.6 -14.5 0 4.3 -12.9 0 4.3
   [4,0,-13.9,0,4.9,-15.3,0,4.6,-14.5,0,4.3,-12.9,0,4.3],
@@ -1412,5 +1413,5 @@ function ldraw_lib__3068bpft() = [
 // 
 ];
 module ldraw_lib__3068bpft(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3068bpft(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3068bpft(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3068bpft(line=0.2);

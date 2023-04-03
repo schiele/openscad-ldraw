@@ -7,7 +7,8 @@ use <../p/axlehole.scad>
 use <s/40001s01.scad>
 use <s/40001s02.scad>
 use <../p/stud2.scad>
-function ldraw_lib__18352() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__18352(realsolid=false) = [
 // 0 Technic Steering Wheel Yoke with Axle Hole and Hollow Stud
 // 0 Name: 18352.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -26,24 +27,24 @@ function ldraw_lib__18352() = [
 // 
 // 
 // 1 16 0 2 0 1 0 0 0 17 0 0 0 -1 axlehole.dat
-  [1,16,0,2,0,1,0,0,0,17,0,0,0,-1, ldraw_lib__axlehole()],
+  [1,16,0,2,0,1,0,0,0,17,0,0,0,-1, ldraw_lib__axlehole(realsolid)],
 // 1 16 0 2 0 1 0 0 0 -1 0 0 0 -1 axl5end.dat
-  [1,16,0,2,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__axl5end()],
+  [1,16,0,2,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__axl5end(realsolid)],
 // 1 16 0 2 0 1 0 0 0 1 0 0 0 -1 axlehol2.dat
-  [1,16,0,2,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__axlehol2()],
+  [1,16,0,2,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__axlehol2(realsolid)],
 // 1 16 0 19 0 1 0 0 0 1 0 0 0 -1 axlehol3.dat
-  [1,16,0,19,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__axlehol3()],
+  [1,16,0,19,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__axlehol3(realsolid)],
 // 1 16 0 0 0 4 0 0 0 1 0 0 0 4 4-4disc.dat
-  [1,16,0,0,0,4,0,0,0,1,0,0,0,4, ldraw_lib__4_4disc()],
+  [1,16,0,0,0,4,0,0,0,1,0,0,0,4, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 0 0 0 0 1 0 1 0 -1 0 0 stud2.dat
-  [1,16,0,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__stud2()],
+  [1,16,0,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__stud2(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\40001s02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__40001s02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__40001s02(realsolid)],
 // 1 16 0 24 0 -1 0 0 0 1 0 0 0 -1 s\40001s01.dat
-  [1,16,0,24,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__40001s01()],
+  [1,16,0,24,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__40001s01(realsolid)],
 // 1 16 0 24 0 1 0 0 0 1 0 0 0 -1 s\40001s01.dat
-  [1,16,0,24,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__40001s01()],
+  [1,16,0,24,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__40001s01(realsolid)],
 ];
 module ldraw_lib__18352(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__18352(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__18352(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__18352(line=0.2);

@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <48165.scad>
 use <6342851c.scad>
-function ldraw_lib__48165d01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__48165d01(realsolid=false) = [
 // 0 Wedge  3 x  3 Sloped Right with Discovery Sticker
 // 0 Name: 48165d01.dat
 // 0 Author: Orion Pobursky [OrionP]
@@ -18,10 +19,10 @@ function ldraw_lib__48165d01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 48165.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__48165()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__48165(realsolid)],
 // 1 15 -10 10 0 -.315 .687 -.652 0 .687 .725 .947 .229 -.218 6342851c.dat
-  [1,15,-10,10,0,-.315,.687,-.652,0,.687,.725,.947,.229,-.218, ldraw_lib__6342851c()],
+  [1,15,-10,10,0,-.315,.687,-.652,0,.687,.725,.947,.229,-.218, ldraw_lib__6342851c(realsolid)],
 ];
 module ldraw_lib__48165d01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__48165d01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__48165d01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__48165d01(line=0.2);

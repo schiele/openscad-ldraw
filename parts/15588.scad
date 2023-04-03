@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <48092.scad>
-function ldraw_lib__15588() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__15588(realsolid=false) = [
 // 0 =Brick  4 x  4 Corner Round
 // 0 Name: 15588.dat
 // 0 Author: [PTadmin]
@@ -20,9 +21,9 @@ function ldraw_lib__15588() = [
 // 0 // Part 15588 is the metallic ink counterpart of 48092
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 48092.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__48092()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__48092(realsolid)],
 // 0
 ];
 module ldraw_lib__15588(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__15588(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__15588(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__15588(line=0.2);

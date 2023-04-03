@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__163145a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__163145a(realsolid=false) = [
 // 0 Sticker  2.9 x  3.9 with White/Clear Stripes
 // 0 Name: 163145a.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -17,7 +18,7 @@ function ldraw_lib__163145a() = [
 // 
 // 
 // 1 16 0 -0.25 0 39 0 0 0 0.25 0 0 0 29 box5-12.dat
-  [1,16,0,-0.25,0,39,0,0,0,0.25,0,0,0,29, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,39,0,0,0,0.25,0,0,0,29, ldraw_lib__box5_12(realsolid)],
 // 0 BFC NOCLIP
   [0,"BFC","NOCLIP"],
 // 4 15 39 -.25 29 -39 -.25 29 -39 -.25 25.5 39 -.25 25.5
@@ -60,5 +61,5 @@ function ldraw_lib__163145a() = [
   [4,16,39,-.25,-26.5,-39,-.25,-26.5,-39,-.25,-29,39,-.25,-29],
 ];
 module ldraw_lib__163145a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__163145a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__163145a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__163145a(line=0.2);

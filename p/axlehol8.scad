@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <box2-9p.scad>
-function ldraw_lib__axlehol8() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__axlehol8(realsolid=false) = [
 // 0 Technic Axle Hole Perimeter
 // 0 Name: axlehol8.dat
 // 0 Author: Steve Bliss [sbliss]
@@ -24,19 +25,19 @@ function ldraw_lib__axlehol8() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 3.80115 .5 3.80115 0 -1.80115 0 .5 0 0 0 0 -1.80115 box2-9p.dat
-  [1,16,3.80115,.5,3.80115,0,-1.80115,0,.5,0,0,0,0,-1.80115, ldraw_lib__box2_9p()],
+  [1,16,3.80115,.5,3.80115,0,-1.80115,0,.5,0,0,0,0,-1.80115, ldraw_lib__box2_9p(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -3.80115 .5 3.80115 0 1.80115 0 .5 0 0 0 0 -1.80115 box2-9p.dat
-  [1,16,-3.80115,.5,3.80115,0,1.80115,0,.5,0,0,0,0,-1.80115, ldraw_lib__box2_9p()],
+  [1,16,-3.80115,.5,3.80115,0,1.80115,0,.5,0,0,0,0,-1.80115, ldraw_lib__box2_9p(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -3.80115 .5 -3.80115 0 1.80115 0 .5 0 0 0 0 1.80115 box2-9p.dat
-  [1,16,-3.80115,.5,-3.80115,0,1.80115,0,.5,0,0,0,0,1.80115, ldraw_lib__box2_9p()],
+  [1,16,-3.80115,.5,-3.80115,0,1.80115,0,.5,0,0,0,0,1.80115, ldraw_lib__box2_9p(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 3.80115 .5 -3.80115 0 -1.80115 0 .5 0 0 0 0 1.80115 box2-9p.dat
-  [1,16,3.80115,.5,-3.80115,0,-1.80115,0,.5,0,0,0,0,1.80115, ldraw_lib__box2_9p()],
+  [1,16,3.80115,.5,-3.80115,0,-1.80115,0,.5,0,0,0,0,1.80115, ldraw_lib__box2_9p(realsolid)],
 // 0 // Faces
 // 4 16 5.6023 1 2 5.6023 0 2 6 0 0 6 1 0
   [4,16,5.6023,1,2,5.6023,0,2,6,0,0,6,1,0],
@@ -65,5 +66,5 @@ function ldraw_lib__axlehol8() = [
   [5,24,6,0,0,6,1,0,5.6023,0,2,5.6023,0,-2],
 ];
 module ldraw_lib__axlehol8(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__axlehol8(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__axlehol8(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__axlehol8(line=0.2);

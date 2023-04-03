@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__1_4con19() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__1_4con19(realsolid=false) = [
 // 0 Cone 19 x 0.25
 // 0 Name: 1-4con19.dat
 // 0 Author: Orion Pobursky [OrionP]
@@ -36,5 +37,5 @@ function ldraw_lib__1_4con19() = [
 // 0 // Build by Primitive Generator 2
 ];
 module ldraw_lib__1_4con19(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__1_4con19(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__1_4con19(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__1_4con19(line=0.2);

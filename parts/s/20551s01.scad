@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__20551s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__20551s01(realsolid=false) = [
 // 0 ~Minifig Cape Cloth High Rounded Collar Surface - Half
 // 0 Name: s\20551s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -59,5 +60,5 @@ function ldraw_lib__s__20551s01() = [
   [3,16,38.2,0,-23.3,35.6,0,-27.2,38,0,-25.4],
 ];
 module ldraw_lib__s__20551s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__20551s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__20551s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__20551s01(line=0.2);

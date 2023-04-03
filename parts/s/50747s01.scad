@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/box4o8a.scad>
 use <../../p/clh10.scad>
-function ldraw_lib__s__50747s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__50747s01(realsolid=false) = [
 // 0 ~Windscreen  6 x  6 x  3 Dome Hinge Locking Bottom Half
 // 0 Name: s\50747s01.dat
 // 0 Author: Michael Heidemann [mikeheide]
@@ -1097,14 +1098,14 @@ function ldraw_lib__s__50747s01() = [
 // 5 24 -3.77 -84.06 -52.01 0 -84.56 -52.01 0 -77.34 -53.44 -5.58 -90.79 -49.64
   [5,24,-3.77,-84.06,-52.01,0,-84.56,-52.01,0,-77.34,-53.44,-5.58,-90.79,-49.64],
 // 1 16 -20 -4 0 -1 0 0 0 0 1 0 1 0 clh10.dat
-  [1,16,-20,-4,0,-1,0,0,0,0,1,0,1,0, ldraw_lib__clh10()],
+  [1,16,-20,-4,0,-1,0,0,0,0,1,0,1,0, ldraw_lib__clh10(realsolid)],
 // 1 16 -26.25 -4 0 -2.25 0 0 0 -6 0 0 0 6 box4o8a.dat
-  [1,16,-26.25,-4,0,-2.25,0,0,0,-6,0,0,0,6, ldraw_lib__box4o8a()],
+  [1,16,-26.25,-4,0,-2.25,0,0,0,-6,0,0,0,6, ldraw_lib__box4o8a(realsolid)],
 // 1 16 -20 -4 0 1 0 0 0 0 1 0 -1 0 clh10.dat
-  [1,16,-20,-4,0,1,0,0,0,0,1,0,-1,0, ldraw_lib__clh10()],
+  [1,16,-20,-4,0,1,0,0,0,0,1,0,-1,0, ldraw_lib__clh10(realsolid)],
 // 1 16 -13.75 -4 0 2.25 0 0 0 -6 0 0 0 -6 box4o8a.dat
-  [1,16,-13.75,-4,0,2.25,0,0,0,-6,0,0,0,-6, ldraw_lib__box4o8a()],
+  [1,16,-13.75,-4,0,2.25,0,0,0,-6,0,0,0,-6, ldraw_lib__box4o8a(realsolid)],
 ];
 module ldraw_lib__s__50747s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__50747s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__50747s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__50747s01(line=0.2);

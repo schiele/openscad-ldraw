@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__191915sgbb() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__191915sgbb(realsolid=false) = [
 // 0 ~British Rail Logo Background
 // 0 Name: s\191915sgbb.dat
 // 0 Author: Chris Dee [cwdee]
@@ -44,5 +45,5 @@ function ldraw_lib__s__191915sgbb() = [
 // 
 ];
 module ldraw_lib__s__191915sgbb(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__191915sgbb(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__191915sgbb(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__191915sgbb(line=0.2);

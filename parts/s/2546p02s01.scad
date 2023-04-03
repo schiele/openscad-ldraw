@@ -3,7 +3,8 @@ use <../../p/4-4cyli.scad>
 use <../../p/4-4disc.scad>
 use <../../p/4-4edge.scad>
 use <../../p/4-4ndis.scad>
-function ldraw_lib__s__2546p02s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__2546p02s01(realsolid=false) = [
 // 0 ~Animal Bird Parrot Head - Half
 // 0 Name: s\2546p02s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -20,17 +21,17 @@ function ldraw_lib__s__2546p02s01() = [
 // 
 // 
 // 1 16 4.3 -45.11 -1.7 0 0.85 0 -0.85 0 0 0 0 0.85 4-4edge.dat
-  [1,16,4.3,-45.11,-1.7,0,0.85,0,-0.85,0,0,0,0,0.85, ldraw_lib__4_4edge()],
+  [1,16,4.3,-45.11,-1.7,0,0.85,0,-0.85,0,0,0,0,0.85, ldraw_lib__4_4edge(realsolid)],
 // 1 16 4.3 -45.11 -1.7 0 -0.85 0 -0.85 0 0 0 0 0.85 4-4ndis.dat
-  [1,16,4.3,-45.11,-1.7,0,-0.85,0,-0.85,0,0,0,0,0.85, ldraw_lib__4_4ndis()],
+  [1,16,4.3,-45.11,-1.7,0,-0.85,0,-0.85,0,0,0,0,0.85, ldraw_lib__4_4ndis(realsolid)],
 // 1 16 1.3 -45.11 -1.7 0 0.85 0 -0.85 0 0 0 0 0.85 4-4edge.dat
-  [1,16,1.3,-45.11,-1.7,0,0.85,0,-0.85,0,0,0,0,0.85, ldraw_lib__4_4edge()],
+  [1,16,1.3,-45.11,-1.7,0,0.85,0,-0.85,0,0,0,0,0.85, ldraw_lib__4_4edge(realsolid)],
 // 1 16 1.3 -45.11 -1.7 0 -0.85 0 -0.85 0 0 0 0 0.85 4-4disc.dat
-  [1,16,1.3,-45.11,-1.7,0,-0.85,0,-0.85,0,0,0,0,0.85, ldraw_lib__4_4disc()],
+  [1,16,1.3,-45.11,-1.7,0,-0.85,0,-0.85,0,0,0,0,0.85, ldraw_lib__4_4disc(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 1.3 -45.11 -1.7 0 3 0 -0.85 0 0 0 0 0.85 4-4cyli.dat
-  [1,16,1.3,-45.11,-1.7,0,3,0,-0.85,0,0,0,0,0.85, ldraw_lib__4_4cyli()],
+  [1,16,1.3,-45.11,-1.7,0,3,0,-0.85,0,0,0,0,0.85, ldraw_lib__4_4cyli(realsolid)],
 // 2 24 0 -26.04 14.65 10 -26.04 14.65
   [2,24,0,-26.04,14.65,10,-26.04,14.65],
 // 2 24 10 -26.04 14.65 9.61 -20.7 14.56
@@ -423,5 +424,5 @@ function ldraw_lib__s__2546p02s01() = [
   [5,24,7.4,-20.86,0.07,7.5,-25.31,1.5,6.9,-26.64,-2.57,7.48,-21.04,0.65],
 ];
 module ldraw_lib__s__2546p02s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__2546p02s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__2546p02s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__2546p02s01(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/2336s01.scad>
-function ldraw_lib__2336p90() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2336p90(realsolid=false) = [
 // 0 Wedge  2 x  3 with Brick  2 x  4 with Classic Space Logo Pattern
 // 0 Name: 2336p90.dat
 // 0 Author: Chris Dee [cwdee]
@@ -21,7 +22,7 @@ function ldraw_lib__2336p90() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2336s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2336s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2336s01(realsolid)],
 // 
 // 3 16 20 -24 -4 14.742 -16.675 -21.092 15.256 -16.497 -21.507
   [3,16,20,-24,-4,14.742,-16.675,-21.092,15.256,-16.497,-21.507],
@@ -331,5 +332,5 @@ function ldraw_lib__2336p90() = [
   [3,16,-20,-24,-4,-10,0,-60,-13.519,-12.813,-30.103],
 ];
 module ldraw_lib__2336p90(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2336p90(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2336p90(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2336p90(line=0.2);

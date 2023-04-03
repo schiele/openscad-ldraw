@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__164365c() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__164365c(realsolid=false) = [
 // 0 Sticker  1.2 x  1 with Red Outline "5"
 // 0 Name: 164365c.dat
 // 0 Author: Michael Heidemann [mikeheide]
@@ -105,8 +106,8 @@ function ldraw_lib__164365c() = [
 // 0 // Pattern created wholly or in part by Quad2Dat
 // 0 // Thanks James
 // 1 16 0 -0.25 0 10 0 0 0 0.25 0 0 0 12 box5-12.dat
-  [1,16,0,-0.25,0,10,0,0,0,0.25,0,0,0,12, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,10,0,0,0,0.25,0,0,0,12, ldraw_lib__box5_12(realsolid)],
 ];
 module ldraw_lib__164365c(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__164365c(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__164365c(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__164365c(line=0.2);

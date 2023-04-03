@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3011s01.scad>
-function ldraw_lib__3011pt6() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3011pt6(realsolid=false) = [
 // 0 Duplo Brick  2 x  4 with Yellow "CAFE" Sign Pattern
 // 0 Name: 3011pt6.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -18,7 +19,7 @@ function ldraw_lib__3011pt6() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3011s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3011s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3011s01(realsolid)],
 // 4 16 80 0 40 80 48 40 -80 48 40 -80 0 40
   [4,16,80,0,40,80,48,40,-80,48,40,-80,0,40],
 // 
@@ -1086,5 +1087,5 @@ function ldraw_lib__3011pt6() = [
   [4,16,40.25,7,-40,42.75,9,-40,46.5,8,-40,47.25,6.75,-40],
 ];
 module ldraw_lib__3011pt6(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3011pt6(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3011pt6(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3011pt6(line=0.2);

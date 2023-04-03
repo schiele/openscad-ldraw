@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <32064c.scad>
-function ldraw_lib__31493() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__31493(realsolid=false) = [
 // 0 =Technic Brick  1 x  2 with Axlehole with Open Sides and Bottom Stud
 // 0 Name: 31493.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -15,8 +16,8 @@ function ldraw_lib__31493() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 32064c.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__32064c()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__32064c(realsolid)],
 ];
 module ldraw_lib__31493(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__31493(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__31493(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__31493(line=0.2);

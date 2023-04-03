@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/48/4-4disc.scad>
 use <../../p/48/4-4ring4.scad>
-function ldraw_lib__s__63864p01s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__63864p01s01(realsolid=false) = [
 // 0 ~Tile  1 x  3 with Wood Grain - Single Silver Nail
 // 0 Name: s\63864p01s01.dat
 // 0 Author: Ulrich Röder [UR]
@@ -18,11 +19,11 @@ function ldraw_lib__s__63864p01s01() = [
 // 0 // Metallic Silver
 // 
 // 1 80 0 0 -.2 1.7 0 0 0 1 0 0 0 1.7 48\4-4disc.dat
-  [1,80,0,0,-.2,1.7,0,0,0,1,0,0,0,1.7, ldraw_lib__48__4_4disc()],
+  [1,80,0,0,-.2,1.7,0,0,0,1,0,0,0,1.7, ldraw_lib__48__4_4disc(realsolid)],
 // 
 // 0 // Black
 // 1 0 0 0 0 .5 0 0 0 1 0 0 0 .5 48\4-4ring4.dat
-  [1,0,0,0,0,.5,0,0,0,1,0,0,0,.5, ldraw_lib__48__4_4ring4()],
+  [1,0,0,0,0,.5,0,0,0,1,0,0,0,.5, ldraw_lib__48__4_4ring4(realsolid)],
 // 4 0 -.22185 0 -1.88538 -.261 0 -1.9828 0 0 -2 0 0 -1.9
   [4,0,-.22185,0,-1.88538,-.261,0,-1.9828,0,0,-2,0,0,-1.9],
 // 4 0 0 0 1.5 .22185 0 1.48538 .261 0 1.9828 0 0 2
@@ -125,5 +126,5 @@ function ldraw_lib__s__63864p01s01() = [
   [4,0,1.4722,0,-1.05,1.732,0,-1,1.8478,0,-.7654,1.57063,0,-.85059],
 ];
 module ldraw_lib__s__63864p01s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__63864p01s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__63864p01s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__63864p01s01(line=0.2);

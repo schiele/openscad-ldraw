@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__4533401c() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4533401c(realsolid=false) = [
 // 0 Sticker  4.9 x  5.1 with SW Death Star Corridor
 // 0 Name: 4533401c.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -17,7 +18,7 @@ function ldraw_lib__4533401c() = [
 // 
 // 
 // 1 16 0 -0.25 0 51.25 0 0 0 0.25 0 0 0 49 box5-12.dat
-  [1,16,0,-0.25,0,51.25,0,0,0,0.25,0,0,0,49, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,51.25,0,0,0,0.25,0,0,0,49, ldraw_lib__box5_12(realsolid)],
 // 
 // 4 4 -9.7 -0.25 -38.7 -9.7 -0.25 -41.1 0 -0.25 -41.1 0 -0.25 -38.7
   [4,4,-9.7,-0.25,-38.7,-9.7,-0.25,-41.1,0,-0.25,-41.1,0,-0.25,-38.7],
@@ -533,5 +534,5 @@ function ldraw_lib__4533401c() = [
   [4,0,51.25,-0.25,49,0,-0.25,49,0,-0.25,44.3,25.3,-0.25,44.3],
 ];
 module ldraw_lib__4533401c(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4533401c(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4533401c(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4533401c(line=0.2);

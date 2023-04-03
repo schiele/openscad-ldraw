@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/4-4cylc.scad>
-function ldraw_lib__13564() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__13564(realsolid=false) = [
 // 0 Animal Cow Horn  2.25L
 // 0 Name: 13564.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -17,7 +18,7 @@ function ldraw_lib__13564() = [
 // 
 // 
 // 1 16 8 0 0 0 -8 0 -4 0 0 0 0 -4 4-4cylc.dat
-  [1,16,8,0,0,0,-8,0,-4,0,0,0,0,-4, ldraw_lib__4_4cylc()],
+  [1,16,8,0,0,0,-8,0,-4,0,0,0,0,-4, ldraw_lib__4_4cylc(realsolid)],
 // 4 16 -45.348 0 -13.765 -45.5 0 -13 -44.914 1.414 -13 -44.807 1.307 -13.765
   [4,16,-45.348,0,-13.765,-45.5,0,-13,-44.914,1.414,-13,-44.807,1.307,-13.765],
 // 4 16 -45.5 0 -13 -45.348 0 -12.236 -44.807 1.307 -12.236 -44.914 1.414 -13
@@ -934,5 +935,5 @@ function ldraw_lib__13564() = [
   [5,24,0,-3.069,-4.261,-5.5,0,-4.865,0,0,-5.25,-5.5,-2.598,-4.271],
 ];
 module ldraw_lib__13564(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__13564(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__13564(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__13564(line=0.2);

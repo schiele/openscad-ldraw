@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__194305f() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__194305f(realsolid=false) = [
 // 0 Sticker  1.1 x  2.9 with White "4025" on Transparent Background
 // 0 Name: 194305f.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -17,7 +18,7 @@ function ldraw_lib__194305f() = [
 // 
 // 
 // 1 16 0 -0.25 0 29 0 0 0 0.25 0 0 0 11 box5-12.dat
-  [1,16,0,-0.25,0,29,0,0,0,0.25,0,0,0,11, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,29,0,0,0,0.25,0,0,0,11, ldraw_lib__box5_12(realsolid)],
 // 0 BFC NOCLIP
   [0,"BFC","NOCLIP"],
 // 4 15 -18.37 -0.25 -7.5 -15.34 -0.25 -7.5 -15.34 -0.25 -4.16 -18.37 -0.25 -4.16
@@ -356,5 +357,5 @@ function ldraw_lib__194305f() = [
   [3,16,15.3,-0.25,7.5,8.825,-0.25,7.185,10.445,-0.25,6.225],
 ];
 module ldraw_lib__194305f(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__194305f(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__194305f(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__194305f(line=0.2);

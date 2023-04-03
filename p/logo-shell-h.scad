@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__logo_shell_h() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__logo_shell_h(realsolid=false) = [
 // 0 Logo Shell Red "h"
 // 0 Name: logo-shell-h.dat
 // 0 Author: Willy Tschager [Holly-Wood]
@@ -113,5 +114,5 @@ function ldraw_lib__logo_shell_h() = [
   [4,16,3.7,0,-.515,-2.7,0,-.4,-2.7,0,-9.5,3.7,0,-9.5],
 ];
 module ldraw_lib__logo_shell_h(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__logo_shell_h(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__logo_shell_h(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__logo_shell_h(line=0.2);

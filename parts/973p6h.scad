@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/1-4cyli.scad>
 use <s/973s01.scad>
-function ldraw_lib__973p6h() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__973p6h(realsolid=false) = [
 // 0 Minifig Torso with Business Suit and Tie, Breathing Apparatus and Octan Logo Pattern
 // 0 Name: 973p6h.dat
 // 0 Author: Christophe Mitillo [Christophe_Mitillo]
@@ -19,9 +20,9 @@ function ldraw_lib__973p6h() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01(realsolid)],
 // 1 0 0 -4 0 4.243 0 -4.243 0 -8 0 -4.243 0 -4.243 1-4cyli.dat
-  [1,0,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli()],
+  [1,0,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli(realsolid)],
 // 0 // Devant
 // 4 0 -4.5 8.5 -10 -4.883 8.424 -10 -5.074 8.886 -10 -4.5 9 -10
   [4,0,-4.5,8.5,-10,-4.883,8.424,-10,-5.074,8.886,-10,-4.5,9,-10],
@@ -3550,5 +3551,5 @@ function ldraw_lib__973p6h() = [
   [3,71,-13.507,21.407,10,-13.724,21.083,10,-13.183,21.624,10],
 ];
 module ldraw_lib__973p6h(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__973p6h(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__973p6h(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__973p6h(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__4107582a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4107582a(realsolid=false) = [
 // 0 Sticker  1.3 x  1.6 with Black "MT 5561" on White Background
 // 0 Name: 4107582a.dat
 // 0 Author: Damien Roux [Darats]
@@ -610,8 +611,8 @@ function ldraw_lib__4107582a() = [
   [3,15,2.902,-0.25,6.844,14,-0.25,11,2.902,-0.25,8.802],
 // 
 // 1 16 0 -0.25 0 16 0 0 0 0.25 0 0 0 13 box5-12.dat
-  [1,16,0,-0.25,0,16,0,0,0,0.25,0,0,0,13, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,16,0,0,0,0.25,0,0,0,13, ldraw_lib__box5_12(realsolid)],
 ];
 module ldraw_lib__4107582a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4107582a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4107582a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4107582a(line=0.2);

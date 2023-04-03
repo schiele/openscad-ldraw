@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <22119.scad>
-function ldraw_lib__23065() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__23065(realsolid=false) = [
 // 0 ~_Ball 52mm Diameter Dark Grey (Obsolete)
 // 0 Name: 23065.dat
 // 0 Author: [PTadmin]
@@ -24,9 +25,9 @@ function ldraw_lib__23065() = [
 // 0 // colouring of the part (Dark Gray).
 // 
 // 1 8 0 0 0 1 0 0 0 1 0 0 0 1 22119.dat
-  [1,8,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__22119()],
+  [1,8,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__22119(realsolid)],
 // 0
 ];
 module ldraw_lib__23065(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__23065(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__23065(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__23065(line=0.2);

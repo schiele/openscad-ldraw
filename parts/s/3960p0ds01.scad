@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__3960p0ds01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__3960p0ds01(realsolid=false) = [
 // 0 ~Dish  4 x  4 Inverted with Magenta, Bright Pink and Medium Azure Stripes Pattern Slice 120 degrees
 // 0 Name: s\3960p0ds01.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -682,5 +683,5 @@ function ldraw_lib__s__3960p0ds01() = [
   [5,24,9.659,0,-2.588,21.25,2,-5.694,20.325,2,-8.418,9.914,0,-1.305],
 ];
 module ldraw_lib__s__3960p0ds01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__3960p0ds01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__3960p0ds01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__3960p0ds01(line=0.2);

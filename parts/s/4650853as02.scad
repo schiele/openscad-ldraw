@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/4-4disc.scad>
 use <../../p/4-4ndis.scad>
-function ldraw_lib__s__4650853as02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__4650853as02(realsolid=false) = [
 // 0 ~Sticker  0.9 x  3.9 with "3063-JV" and Magenta Shooting Star - Geometry
 // 0 Name: s\4650853as02.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -16,13 +17,13 @@ function ldraw_lib__s__4650853as02() = [
 // 
 // 
 // 1 13 -37 0 0 0.8 0 0 0 1 0 0 0 0.8 4-4disc.dat
-  [1,13,-37,0,0,0.8,0,0,0,1,0,0,0,0.8, ldraw_lib__4_4disc()],
+  [1,13,-37,0,0,0.8,0,0,0,1,0,0,0,0.8, ldraw_lib__4_4disc(realsolid)],
 // 1 13 -13 0 0 0.8 0 0 0 1 0 0 0 0.8 4-4disc.dat
-  [1,13,-13,0,0,0.8,0,0,0,1,0,0,0,0.8, ldraw_lib__4_4disc()],
+  [1,13,-13,0,0,0.8,0,0,0,1,0,0,0,0.8, ldraw_lib__4_4disc(realsolid)],
 // 1 26 -37 0 0 0.8 0 0 0 1 0 0 0 0.8 4-4ndis.dat
-  [1,26,-37,0,0,0.8,0,0,0,1,0,0,0,0.8, ldraw_lib__4_4ndis()],
+  [1,26,-37,0,0,0.8,0,0,0,1,0,0,0,0.8, ldraw_lib__4_4ndis(realsolid)],
 // 1 26 -13 0 0 0.8 0 0 0 1 0 0 0 0.8 4-4ndis.dat
-  [1,26,-13,0,0,0.8,0,0,0,1,0,0,0,0.8, ldraw_lib__4_4ndis()],
+  [1,26,-13,0,0,0.8,0,0,0,1,0,0,0,0.8, ldraw_lib__4_4ndis(realsolid)],
 // 4 26 -39 0 6.4 -37.8 0 0.8 -35.5 0 3 -34 0 5.5
   [4,26,-39,0,6.4,-37.8,0,0.8,-35.5,0,3,-34,0,5.5],
 // 4 26 -37.8 0 0 -37.8 0 0.8 -39 0 6.4 -39 0 -5.9
@@ -371,5 +372,5 @@ function ldraw_lib__s__4650853as02() = [
   [3,26,-36.2,0,-0.8,-37,0,-0.8,-35.5,0,-3],
 ];
 module ldraw_lib__s__4650853as02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__4650853as02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__4650853as02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__4650853as02(line=0.2);

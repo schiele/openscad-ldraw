@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/3-4ndis.scad>
-function ldraw_lib__s__32578s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__32578s01(realsolid=false) = [
 // 0 ~Technic Bionicle Matoran Claw Arm Half
 // 0 Name: s\32578s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -19,7 +20,7 @@ function ldraw_lib__s__32578s01() = [
 // 4 16 5 4.5 -9 5 4.5 -18.8 5 9 -17.4 5 9 -9
   [4,16,5,4.5,-9,5,4.5,-18.8,5,9,-17.4,5,9,-9],
 // 1 16 10 0 0 0 -1 0 -9 0 0 0 0 9 3-4ndis.dat
-  [1,16,10,0,0,0,-1,0,-9,0,0,0,0,9, ldraw_lib__3_4ndis()],
+  [1,16,10,0,0,0,-1,0,-9,0,0,0,0,9, ldraw_lib__3_4ndis(realsolid)],
 // 2 24 5 9 -17.4 5 4.5 -18.8
   [2,24,5,9,-17.4,5,4.5,-18.8],
 // 2 24 5 9 -9 5 9 -17.4
@@ -684,5 +685,5 @@ function ldraw_lib__s__32578s01() = [
   [2,24,2,80.2726,-69.408,2,74.7,-54.4],
 ];
 module ldraw_lib__s__32578s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__32578s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__32578s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__32578s01(line=0.2);

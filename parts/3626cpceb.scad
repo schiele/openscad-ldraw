@@ -2,7 +2,8 @@ use <../lib.scad>
 use <s/3626cs02.scad>
 use <../p/t04o6250.scad>
 use <../p/t16o6250.scad>
-function ldraw_lib__3626cpceb() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3626cpceb(realsolid=false) = [
 // 0 Minifig Head with White Skull Mask, Yellow Eyes and White String Tied in Back Pattern
 // 0 Name: 3626cpceb.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -21,19 +22,19 @@ function ldraw_lib__3626cpceb() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3626cs02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626cs02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626cs02(realsolid)],
 // 1 16 0 4 0 -8 0 0 0 -6.4 0 0 0 8 t04o6250.dat
-  [1,16,0,4,0,-8,0,0,0,-6.4,0,0,0,8, ldraw_lib__t04o6250()],
+  [1,16,0,4,0,-8,0,0,0,-6.4,0,0,0,8, ldraw_lib__t04o6250(realsolid)],
 // 1 16 0 4 0 8 0 0 0 -6.4 0 0 0 8 t04o6250.dat
-  [1,16,0,4,0,8,0,0,0,-6.4,0,0,0,8, ldraw_lib__t04o6250()],
+  [1,16,0,4,0,8,0,0,0,-6.4,0,0,0,8, ldraw_lib__t04o6250(realsolid)],
 // 1 16 0 4 0 -8 0 0 0 -6.4 0 0 0 -8 t16o6250.dat
-  [1,16,0,4,0,-8,0,0,0,-6.4,0,0,0,-8, ldraw_lib__t16o6250()],
+  [1,16,0,4,0,-8,0,0,0,-6.4,0,0,0,-8, ldraw_lib__t16o6250(realsolid)],
 // 1 16 0 4 0 8 0 0 0 -6.4 0 0 0 -8 t16o6250.dat
-  [1,16,0,4,0,8,0,0,0,-6.4,0,0,0,-8, ldraw_lib__t16o6250()],
+  [1,16,0,4,0,8,0,0,0,-6.4,0,0,0,-8, ldraw_lib__t16o6250(realsolid)],
 // 1 16 0 17 0 -7.39104 0 -3.06147 0 6.4 0 -3.06147 0 7.39104 t04o6250.dat
-  [1,16,0,17,0,-7.39104,0,-3.06147,0,6.4,0,-3.06147,0,7.39104, ldraw_lib__t04o6250()],
+  [1,16,0,17,0,-7.39104,0,-3.06147,0,6.4,0,-3.06147,0,7.39104, ldraw_lib__t04o6250(realsolid)],
 // 1 16 0 17 0 7.39104 0 3.06147 0 6.4 0 -3.06147 0 7.39104 t04o6250.dat
-  [1,16,0,17,0,7.39104,0,3.06147,0,6.4,0,-3.06147,0,7.39104, ldraw_lib__t04o6250()],
+  [1,16,0,17,0,7.39104,0,3.06147,0,6.4,0,-3.06147,0,7.39104, ldraw_lib__t04o6250(realsolid)],
 // 
 // 4 16 -12.011 17 -4.975 -11 16.01 -6.487 -11 10.75 -6.487 -12.011 10.75 -4.975
   [4,16,-12.011,17,-4.975,-11,16.01,-6.487,-11,10.75,-6.487,-12.011,10.75,-4.975],
@@ -1898,5 +1899,5 @@ function ldraw_lib__3626cpceb() = [
   [5,24,-4.9752,17,12.0104,0,17,13,-4.9752,15.34304,12.0104,-4.8296,18.53088,11.6592],
 ];
 module ldraw_lib__3626cpceb(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3626cpceb(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3626cpceb(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3626cpceb(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3040s01.scad>
-function ldraw_lib__3040p33() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3040p33(realsolid=false) = [
 // 0 Slope Brick 45  2 x  1 with 9 + 3 White Buttons Pattern
 // 0 Name: 3040p33.dat
 // 0 Author: Tore Eriksson [Tore_Eriksson]
@@ -21,7 +22,7 @@ function ldraw_lib__3040p33() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3040s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3040s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3040s01(realsolid)],
 // 
 // 4 15 -8 2.8572 -12.8572 -8 5.7144 -15.7144 -4 5.7144 -15.7144 -4 2.8572 -12.8572
   [4,15,-8,2.8572,-12.8572,-8,5.7144,-15.7144,-4,5.7144,-15.7144,-4,2.8572,-12.8572],
@@ -68,5 +69,5 @@ function ldraw_lib__3040p33() = [
 // 0
 ];
 module ldraw_lib__3040p33(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3040p33(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3040p33(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3040p33(line=0.2);

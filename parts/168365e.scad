@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__168365e() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__168365e(realsolid=false) = [
 // 0 Sticker  0.9 x  2.0 with Black, Yellow and Light Grey Stripes on White Background with Reflection Areas with Black Border
 // 0 Name: 168365e.dat
 // 0 Author: Max Martin Richter [MMR1988]
@@ -17,7 +18,7 @@ function ldraw_lib__168365e() = [
 // 
 // 
 // 1 16 0 -0.25 0 19.6 0 0 0 0.25 0 0 0 8.8 box5-12.dat
-  [1,16,0,-0.25,0,19.6,0,0,0,0.25,0,0,0,8.8, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,19.6,0,0,0,0.25,0,0,0,8.8, ldraw_lib__box5_12(realsolid)],
 // 
 // 4 15 -18.25 -0.25 -6.68 -18.01 -0.25 -7.26 -17.42 -0.25 -7.5 -16.47 -0.25 -6.33
   [4,15,-18.25,-0.25,-6.68,-18.01,-0.25,-7.26,-17.42,-0.25,-7.5,-16.47,-0.25,-6.33],
@@ -605,5 +606,5 @@ function ldraw_lib__168365e() = [
   [4,15,14.14,-0.25,-5,13.22,-0.25,-4.79,13.22,-0.25,-6.6,14.14,-0.25,-6.6],
 ];
 module ldraw_lib__168365e(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__168365e(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__168365e(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__168365e(line=0.2);

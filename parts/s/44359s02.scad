@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__44359s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__44359s02(realsolid=false) = [
 // 0 ~Hemisphere  3 x  3 Ball Turret Conditional Edges - 1/4
 // 0 Name: s\44359s02.dat
 // 0 Author: Greg Teft [gregteft]
@@ -143,5 +144,5 @@ function ldraw_lib__s__44359s02() = [
   [5,24,13.3428,-23,13.3428,14.875,-21.0364,14.875,16.6893,-21.0364,12.8062,12.8062,-21.0364,16.6893],
 ];
 module ldraw_lib__s__44359s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__44359s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__44359s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__44359s02(line=0.2);

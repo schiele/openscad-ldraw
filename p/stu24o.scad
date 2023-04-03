@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <8/stud4o.scad>
-function ldraw_lib__stu24o() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__stu24o(realsolid=false) = [
 // 0 ~Moved to 8\stud4o
 // 0 Name: stu24o.dat
 // 0 Author: [PTadmin]
@@ -16,8 +17,8 @@ function ldraw_lib__stu24o() = [
 // 
 // 0 // Stud Tube Open without Outer Cylinder (Fast-Draw)
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 8\stud4o.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__8__stud4o()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__8__stud4o(realsolid)],
 ];
 module ldraw_lib__stu24o(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__stu24o(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__stu24o(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__stu24o(line=0.2);

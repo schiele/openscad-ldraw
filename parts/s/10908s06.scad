@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__10908s06() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__10908s06(realsolid=false) = [
 // 0 ~Minifig Helmet Visor Iron Man - Chin Pattern
 // 0 Name: s\10908s06.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -116,5 +117,5 @@ function ldraw_lib__s__10908s06() = [
 // 
 ];
 module ldraw_lib__s__10908s06(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__10908s06(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__10908s06(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__10908s06(line=0.2);

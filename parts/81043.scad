@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <425p01.scad>
-function ldraw_lib__81043() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__81043(realsolid=false) = [
 // 0 ~_Baseplate 32 x 32 Road 3 Lane with Race Track Pattern (6381) (Obsolete)
 // 0 Name: 81043.dat
 // 0 Author: [PTadmin]
@@ -19,8 +20,8 @@ function ldraw_lib__81043() = [
 // 
 // 
 // 1 7 0 0 0 1 0 0 0 1 0 0 0 1 425p01.dat
-  [1,7,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__425p01()],
+  [1,7,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__425p01(realsolid)],
 ];
 module ldraw_lib__81043(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__81043(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__81043(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__81043(line=0.2);

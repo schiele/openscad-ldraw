@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/2-4cyli.scad>
 use <../p/2-4disc.scad>
 use <../p/3-8disc.scad>
-function ldraw_lib__169595b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__169595b(realsolid=false) = [
 // 0 Sticker  0.9 x  7.9 with "315" and Red Stripe with Stars - Left
 // 0 Name: 169595b.dat
 // 0 Author: Tomas Kralicek [RabbiT_CZ]
@@ -687,7 +688,7 @@ function ldraw_lib__169595b() = [
 // 3 16 -77.44344 -.25 -.42544 -74.3076 -.25 2.4104 -72.918 -.25 4.1
   [3,16,-77.44344,-.25,-.42544,-74.3076,-.25,2.4104,-72.918,-.25,4.1],
 // 1 16 -72.918 -0.25 4.1 0 0 -6.4 0 1 0 6.4 0 0 3-8disc.dat
-  [1,16,-72.918,-0.25,4.1,0,0,-6.4,0,1,0,6.4,0,0, ldraw_lib__3_8disc()],
+  [1,16,-72.918,-0.25,4.1,0,0,-6.4,0,1,0,6.4,0,0, ldraw_lib__3_8disc(realsolid)],
 // 
 // 0 // back
 // 4 16 41.3195 0 10.5 79.1316 0 10.5 73.8416 0 -10.5 56.5995 0 -10.5
@@ -699,7 +700,7 @@ function ldraw_lib__169595b() = [
 // 3 16 34.2816 0 -10.5 41.3195 0 10.5 56.5995 0 -10.5
   [3,16,34.2816,0,-10.5,41.3195,0,10.5,56.5995,0,-10.5],
 // 1 16 -72.918 0 4.1 0 0 -6.4 0 -1 0 6.4 0 0 2-4disc.dat
-  [1,16,-72.918,0,4.1,0,0,-6.4,0,-1,0,6.4,0,0, ldraw_lib__2_4disc()],
+  [1,16,-72.918,0,4.1,0,0,-6.4,0,-1,0,6.4,0,0, ldraw_lib__2_4disc(realsolid)],
 // 
 // 0 // side
 // 4 16 41.3195 -0.25 10.5 79.1316 -0.25 10.5 79.1316 0 10.5 41.3195 0 10.5
@@ -715,8 +716,8 @@ function ldraw_lib__169595b() = [
 // 4 16 41.3195 0 10.5 -72.918 0 10.5 -72.918 -0.25 10.5 41.3195 -0.25 10.5
   [4,16,41.3195,0,10.5,-72.918,0,10.5,-72.918,-0.25,10.5,41.3195,-0.25,10.5],
 // 1 16 -72.918 0 4.1 0 0 -6.4 0 -0.25 0 6.4 0 0 2-4cyli.dat
-  [1,16,-72.918,0,4.1,0,0,-6.4,0,-0.25,0,6.4,0,0, ldraw_lib__2_4cyli()],
+  [1,16,-72.918,0,4.1,0,0,-6.4,0,-0.25,0,6.4,0,0, ldraw_lib__2_4cyli(realsolid)],
 ];
 module ldraw_lib__169595b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__169595b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__169595b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__169595b(line=0.2);

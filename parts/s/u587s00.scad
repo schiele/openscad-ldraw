@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <u587s01.scad>
 use <u587s02.scad>
-function ldraw_lib__s__u587s00() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__u587s00(realsolid=false) = [
 // 0 ~Figure Fabuland Dog Head Half with Blank Patterned Areas
 // 0 Name: s\u587s00.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -16,9 +17,9 @@ function ldraw_lib__s__u587s00() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\u587s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__u587s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__u587s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\u587s02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__u587s02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__u587s02(realsolid)],
 // 0 // Eye Area
 // 3 16 12.8 -32.5 -16.4 12.2 -34.5 -15.7 10.9 -33.9 -16.9
   [3,16,12.8,-32.5,-16.4,12.2,-34.5,-15.7,10.9,-33.9,-16.9],
@@ -124,5 +125,5 @@ function ldraw_lib__s__u587s00() = [
   [5,24,8.5,-35,-17.4,7.8,-37.4,-15.9,11,-36.4,-15.2,6.4,-34.7,-18.2],
 ];
 module ldraw_lib__s__u587s00(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__u587s00(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__u587s00(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__u587s00(line=0.2);

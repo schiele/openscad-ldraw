@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/4209s01.scad>
 use <s/4346s01.scad>
-function ldraw_lib__4346p01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4346p01(realsolid=false) = [
 // 0 Container Box  2 x  2 x  2 Door with Fire Logo Red/Orange/Yellow Pattern
 // 0 Name: 4346p01.dat
 // 0 Author: Ryan Dennett
@@ -27,7 +28,7 @@ function ldraw_lib__4346p01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4346s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4346s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4346s01(realsolid)],
 // 4 16 20 44 -30 20 40 -30 16 40 -30 16 44 -30
   [4,16,20,44,-30,20,40,-30,16,40,-30,16,44,-30],
 // 4 16 -20 40 -30 -20 44 -30 -16 44 -30 -16 40 -30
@@ -51,8 +52,8 @@ function ldraw_lib__4346p01() = [
 // 4 16 10 4 -30 20 0 -30 -20 0 -30 -10 4 -30
   [4,16,10,4,-30,20,0,-30,-20,0,-30,-10,4,-30],
 // 1 16 0 26 -30 0.085 0 0 0 0 -0.085 0 0.085 0 s\4209s01.dat
-  [1,16,0,26,-30,0.085,0,0,0,0,-0.085,0,0.085,0, ldraw_lib__s__4209s01()],
+  [1,16,0,26,-30,0.085,0,0,0,0,-0.085,0,0.085,0, ldraw_lib__s__4209s01(realsolid)],
 ];
 module ldraw_lib__4346p01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4346p01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4346p01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4346p01(line=0.2);

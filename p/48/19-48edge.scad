@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__48__19_48edge() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__48__19_48edge(realsolid=false) = [
 // 0 Hi-Res Circle 0.3958
 // 0 Name: 48\19-48edge.dat
 // 0 Author: Max Martin Richter [MMR1988]
@@ -54,5 +55,5 @@ function ldraw_lib__48__19_48edge() = [
   [2,24,-0.7071,0,0.7071,-0.7934,0,0.6088],
 ];
 module ldraw_lib__48__19_48edge(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__48__19_48edge(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__48__19_48edge(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__48__19_48edge(line=0.2);

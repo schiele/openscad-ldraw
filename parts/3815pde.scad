@@ -4,7 +4,8 @@ use <../p/4-4ndis.scad>
 use <../p/4-4ring4.scad>
 use <../p/5-16cyli.scad>
 use <s/3815s01.scad>
-function ldraw_lib__3815pde() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3815pde(realsolid=false) = [
 // 0 ~Minifig Hips with Laboratory Smock Pattern (Obsolete)
 // 0 Name: 3815pde.dat
 // 0 Author: Andy Westrate [westrate]
@@ -28,9 +29,9 @@ function ldraw_lib__3815pde() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3815s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3815s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3815s01(realsolid)],
 // 1 16 -2 12 0 0 4 0 -6.364 0 6.364 -6.364 0 -6.364 5-16cyli.dat
-  [1,16,-2,12,0,0,4,0,-6.364,0,6.364,-6.364,0,-6.364, ldraw_lib__5_16cyli()],
+  [1,16,-2,12,0,0,4,0,-6.364,0,6.364,-6.364,0,-6.364, ldraw_lib__5_16cyli(realsolid)],
 // 4 16 -14 0 -10 -14 6 -10 -18 6 -10 -18 0 -10
   [4,16,-14,0,-10,-14,6,-10,-18,6,-10,-18,0,-10],
 // 4 0 -14 6 -10 -14 0 -10 -13.4 0 -10 -13.4 6 -10
@@ -52,12 +53,12 @@ function ldraw_lib__3815pde() = [
 // 3 16 -13.4 6 -10 -11.5 4.5 -10 -10 4.5 -10
   [3,16,-13.4,6,-10,-11.5,4.5,-10,-10,4.5,-10],
 // 1 16 -10 3 -10 1.5 0 0 0 0 -1.5 0 1 0 4-4ndis.dat
-  [1,16,-10,3,-10,1.5,0,0,0,0,-1.5,0,1,0, ldraw_lib__4_4ndis()],
+  [1,16,-10,3,-10,1.5,0,0,0,0,-1.5,0,1,0, ldraw_lib__4_4ndis(realsolid)],
 // 1 0 -10 3 -10 0.3 0 0 0 0 -0.3 0 1 0 4-4ring4.dat
-  [1,0,-10,3,-10,0.3,0,0,0,0,-0.3,0,1,0, ldraw_lib__4_4ring4()],
+  [1,0,-10,3,-10,0.3,0,0,0,0,-0.3,0,1,0, ldraw_lib__4_4ring4(realsolid)],
 // 1 80 -10 3 -10 1.2 0 0 0 0 -1.2 0 1 0 4-4disc.dat
-  [1,80,-10,3,-10,1.2,0,0,0,0,-1.2,0,1,0, ldraw_lib__4_4disc()],
+  [1,80,-10,3,-10,1.2,0,0,0,0,-1.2,0,1,0, ldraw_lib__4_4disc(realsolid)],
 ];
 module ldraw_lib__3815pde(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3815pde(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3815pde(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3815pde(line=0.2);

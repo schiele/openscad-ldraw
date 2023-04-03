@@ -4,7 +4,8 @@ use <../../p/4-4disc.scad>
 use <../../p/4-4edge.scad>
 use <../../p/handle2.scad>
 use <../../p/stud2.scad>
-function ldraw_lib__s__98367s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__98367s01(realsolid=false) = [
 // 0 ~Minifig Shield Rectangular Curved with Stud without Decorated Surface
 // 0 Name: s\98367s01.dat
 // 0 Author: Rolf Osterthun [Rolf]
@@ -233,7 +234,7 @@ function ldraw_lib__s__98367s01() = [
   [2,24,-5.716,2.5,-13.945,-11.241,2.5,-12.713],
 // 
 // 1 16 0 0 -4 1 0 0 0 1 0 0 0 1 handle2.dat
-  [1,16,0,0,-4,1,0,0,0,1,0,0,0,1, ldraw_lib__handle2()],
+  [1,16,0,0,-4,1,0,0,0,1,0,0,0,1, ldraw_lib__handle2(realsolid)],
 // 2 24 7.5 2.5 -3.048 7.5 2.5 0
   [2,24,7.5,2.5,-3.048,7.5,2.5,0],
 // 2 24 7.5 -2.5 -3.048 7.5 -2.5 0
@@ -264,13 +265,13 @@ function ldraw_lib__s__98367s01() = [
   [4,16,-9.5,-2.5,-2,-7.5,-2.5,0,-7.5,2.5,0,-9.5,2.5,-2],
 // 
 // 1 16 0 0 -17.79 1 0 0 0 0 -1 0 1 0 stud2.dat
-  [1,16,0,0,-17.79,1,0,0,0,0,-1,0,1,0, ldraw_lib__stud2()],
+  [1,16,0,0,-17.79,1,0,0,0,0,-1,0,1,0, ldraw_lib__stud2(realsolid)],
 // 1 16 0 0 -17.79 9.8 0 0 0 0 -9.8 0 1 0 4-4disc.dat
-  [1,16,0,0,-17.79,9.8,0,0,0,0,-9.8,0,1,0, ldraw_lib__4_4disc()],
+  [1,16,0,0,-17.79,9.8,0,0,0,0,-9.8,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 0 -17.79 9.8 0 0 0 0 -9.8 0 1 0 4-4edge.dat
-  [1,16,0,0,-17.79,9.8,0,0,0,0,-9.8,0,1,0, ldraw_lib__4_4edge()],
+  [1,16,0,0,-17.79,9.8,0,0,0,0,-9.8,0,1,0, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 0 -17.79 9.8 0 0 0 0 -9.8 0 2 0 4-4cyli.dat
-  [1,16,0,0,-17.79,9.8,0,0,0,0,-9.8,0,2,0, ldraw_lib__4_4cyli()],
+  [1,16,0,0,-17.79,9.8,0,0,0,0,-9.8,0,2,0, ldraw_lib__4_4cyli(realsolid)],
 // 2 24 -9.054 -3.75 -16.079 -9.8 0 -15.91
   [2,24,-9.054,-3.75,-16.079,-9.8,0,-15.91],
 // 2 24 -6.93 -6.93 -16.554 -9.054 -3.75 -16.079
@@ -416,5 +417,5 @@ function ldraw_lib__s__98367s01() = [
   [5,24,18.322,27.775,-9.8,19.814,27.775,-12.167,19.488,28.864,-12.341,18.322,-27.775,-9.8],
 ];
 module ldraw_lib__s__98367s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__98367s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__98367s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__98367s01(line=0.2);

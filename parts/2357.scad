@@ -3,7 +3,8 @@ use <../p/box2-5.scad>
 use <../p/box3u2p.scad>
 use <../p/stud.scad>
 use <../p/stud3.scad>
-function ldraw_lib__2357() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2357(realsolid=false) = [
 // 0 Brick  2 x  2 Corner
 // 0 Name: 2357.dat
 // 0 Author: James Jessiman
@@ -24,9 +25,9 @@ function ldraw_lib__2357() = [
 // 
 // 
 // 1 16 0 4 10 1 0 0 0 -5 0 0 0 1 stud3.dat
-  [1,16,0,4,10,1,0,0,0,-5,0,0,0,1, ldraw_lib__stud3()],
+  [1,16,0,4,10,1,0,0,0,-5,0,0,0,1, ldraw_lib__stud3(realsolid)],
 // 1 16 10 4 0 1 0 0 0 -5 0 0 0 1 stud3.dat
-  [1,16,10,4,0,1,0,0,0,-5,0,0,0,1, ldraw_lib__stud3()],
+  [1,16,10,4,0,1,0,0,0,-5,0,0,0,1, ldraw_lib__stud3(realsolid)],
 // 4 16 10 24 30 6 24 26 -6 24 26 -10 24 30
   [4,16,10,24,30,6,24,26,-6,24,26,-10,24,30],
 // 4 16 -10 24 30 -6 24 26 -6 24 -6 -10 24 -10
@@ -49,12 +50,12 @@ function ldraw_lib__2357() = [
 // 4 16 -10 0 30 -10 0 -10 10 0 10 10 0 30
   [4,16,-10,0,30,-10,0,-10,10,0,10,10,0,30],
 // 1 16 20 12 0 0 10 0 12 0 0 0 0 10 box2-5.dat
-  [1,16,20,12,0,0,10,0,12,0,0,0,0,10, ldraw_lib__box2_5()],
+  [1,16,20,12,0,0,10,0,12,0,0,0,0,10, ldraw_lib__box2_5(realsolid)],
 // 1 16 0 12 20 0 10 0 12 0 0 0 0 10 box2-5.dat
-  [1,16,0,12,20,0,10,0,12,0,0,0,0,10, ldraw_lib__box2_5()],
+  [1,16,0,12,20,0,10,0,12,0,0,0,0,10, ldraw_lib__box2_5(realsolid)],
 // 
 // 1 16 6.7071 13.75 6.7071 0 -2.464479 .707107 -9.75 0 0 0 -2.464479 -.707107 box3u2p.dat
-  [1,16,6.7071,13.75,6.7071,0,-2.464479,.707107,-9.75,0,0,0,-2.464479,-.707107, ldraw_lib__box3u2p()],
+  [1,16,6.7071,13.75,6.7071,0,-2.464479,.707107,-9.75,0,0,0,-2.464479,-.707107, ldraw_lib__box3u2p(realsolid)],
 // 2 24 6 23.5 7.4142 6 23.5 6
   [2,24,6,23.5,7.4142,6,23.5,6],
 // 2 24 6 23.5 6 7.4142 23.5 6
@@ -67,27 +68,27 @@ function ldraw_lib__2357() = [
   [3,16,3.5355,23.5,4.9497,6,23.5,7.4142,6,23.5,6],
 // 
 // 1 16 10 12 10 0 -20 0 12 0 0 0 0 -20 box2-5.dat
-  [1,16,10,12,10,0,-20,0,12,0,0,0,0,-20, ldraw_lib__box2_5()],
+  [1,16,10,12,10,0,-20,0,12,0,0,0,0,-20, ldraw_lib__box2_5(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 stud.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud(realsolid)],
 // 1 16 20 0 0 1 0 0 0 1 0 0 0 1 stud.dat
-  [1,16,20,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud()],
+  [1,16,20,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud(realsolid)],
 // 1 16 0 0 20 1 0 0 0 1 0 0 0 1 stud.dat
-  [1,16,0,0,20,1,0,0,0,1,0,0,0,1, ldraw_lib__stud()],
+  [1,16,0,0,20,1,0,0,0,1,0,0,0,1, ldraw_lib__stud(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 14 16 0 6 0 10 0 0 0 0 10 box2-5.dat
-  [1,16,0,14,16,0,6,0,10,0,0,0,0,10, ldraw_lib__box2_5()],
+  [1,16,0,14,16,0,6,0,10,0,0,0,0,10, ldraw_lib__box2_5(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 16 14 0 0 10 0 10 0 0 0 0 6 box2-5.dat
-  [1,16,16,14,0,0,10,0,10,0,0,0,0,6, ldraw_lib__box2_5()],
+  [1,16,16,14,0,0,10,0,10,0,0,0,0,6, ldraw_lib__box2_5(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 10 14 10 0 -16 0 10 0 0 0 0 -16 box2-5.dat
-  [1,16,10,14,10,0,-16,0,10,0,0,0,0,-16, ldraw_lib__box2_5()],
+  [1,16,10,14,10,0,-16,0,10,0,0,0,0,-16, ldraw_lib__box2_5(realsolid)],
 // 0
 ];
 module ldraw_lib__2357(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2357(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2357(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2357(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/4-4cyli.scad>
-function ldraw_lib__92585() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__92585(realsolid=false) = [
 // 0 Minifig Tool Crowbar
 // 0 Name: 92585.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -561,7 +562,7 @@ function ldraw_lib__92585() = [
 // 2 24 -3.571 68.752 9.39 -3.82 68.348 9.3
   [2,24,-3.571,68.752,9.39,-3.82,68.348,9.3],
 // 1 16 0 9.2 0 4 0 0 0 37.4 0 0 0 4 4-4cyli.dat
-  [1,16,0,9.2,0,4,0,0,0,37.4,0,0,0,4, ldraw_lib__4_4cyli()],
+  [1,16,0,9.2,0,4,0,0,0,37.4,0,0,0,4, ldraw_lib__4_4cyli(realsolid)],
 // 3 16 3.307 47.486 2.037 4 46.6 0 3.912 47.985 -0.472
   [3,16,3.307,47.486,2.037,4,46.6,0,3.912,47.985,-0.472],
 // 3 16 3.912 47.985 -0.472 4 46.6 0 3.6956 46.6 -1.5308
@@ -1528,5 +1529,5 @@ function ldraw_lib__92585() = [
   [5,24,4.025,-8.077,-2.406,4,-3.7955,-1.0307,4,-4.0001,0,4.025,-9.04,-9.998],
 ];
 module ldraw_lib__92585(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__92585(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__92585(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__92585(line=0.2);

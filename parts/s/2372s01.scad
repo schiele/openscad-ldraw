@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__2372s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__2372s01(realsolid=false) = [
 // 0 ~Boat Hull Floating 25 x 10 Bottom Half
 // 0 Name: s\2372s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -1659,5 +1660,5 @@ function ldraw_lib__s__2372s01() = [
   [5,24,23.6847,-0.6323,-325.785,19.862,-5.7833,-334.248,24.016,-0.0903,-324.969,23.6506,-1.4433,-326.517],
 ];
 module ldraw_lib__s__2372s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__2372s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__2372s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__2372s01(line=0.2);

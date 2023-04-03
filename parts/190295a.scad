@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__190295a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__190295a(realsolid=false) = [
 // 0 Sticker  1.1 x  5.9 with Black "Bus Station" on White Background
 // 0 Name: 190295a.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -19,7 +20,7 @@ function ldraw_lib__190295a() = [
 // 0 // Font: Times New Roman
 // 
 // 1 16 0 -0.25 0 59 0 0 0 0.25 0 0 0 11 box5-12.dat
-  [1,16,0,-0.25,0,59,0,0,0,0.25,0,0,0,11, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,59,0,0,0,0.25,0,0,0,11, ldraw_lib__box5_12(realsolid)],
 // 4 0 -53.01 -.25 -6.63 -54.39 -.25 -6.82 -54.39 -.25 -7.22 -46.92 -.25 -7.22
   [4,0,-53.01,-.25,-6.63,-54.39,-.25,-6.82,-54.39,-.25,-7.22,-46.92,-.25,-7.22],
 // 4 0 -52.5 -.25 -6.14 -53.01 -.25 -6.63 -48.64 -.25 -6.12 -48.93 -.25 -5.23
@@ -1022,5 +1023,5 @@ function ldraw_lib__190295a() = [
   [3,15,0,-.25,11,-47.34,-.25,7.49,-45.18,-.25,7.38],
 ];
 module ldraw_lib__190295a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__190295a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__190295a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__190295a(line=0.2);

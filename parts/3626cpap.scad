@@ -3,7 +3,8 @@ use <../p/1-8cyli.scad>
 use <s/3626cpaps01.scad>
 use <s/3626cs02.scad>
 use <../p/t08o6250.scad>
-function ldraw_lib__3626cpap() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3626cpap(realsolid=false) = [
 // 0 Minifig Head Wolf with Yellow Eyes, Black Scars, Fangs, Closed / Open Mouth 2-Sided Pattern
 // 0 Name: 3626cpap.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -20,24 +21,24 @@ function ldraw_lib__3626cpap() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3626cs02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626cs02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626cs02(realsolid)],
 // 1 16 0 17 0 7.39104 0 3.06147 0 6.4 0 3.06147 0 -7.39104 t08o6250.dat
-  [1,16,0,17,0,7.39104,0,3.06147,0,6.4,0,3.06147,0,-7.39104, ldraw_lib__t08o6250()],
+  [1,16,0,17,0,7.39104,0,3.06147,0,6.4,0,3.06147,0,-7.39104, ldraw_lib__t08o6250(realsolid)],
 // 1 16 0 17 0 -7.39104 0 -3.06147 0 6.4 0 3.06147 0 -7.39104 t08o6250.dat
-  [1,16,0,17,0,-7.39104,0,-3.06147,0,6.4,0,3.06147,0,-7.39104, ldraw_lib__t08o6250()],
+  [1,16,0,17,0,-7.39104,0,-3.06147,0,6.4,0,3.06147,0,-7.39104, ldraw_lib__t08o6250(realsolid)],
 // 1 16 0 4 0 7.39104 0 3.06147 0 -6.4 0 3.06147 0 -7.39104 t08o6250.dat
-  [1,16,0,4,0,7.39104,0,3.06147,0,-6.4,0,3.06147,0,-7.39104, ldraw_lib__t08o6250()],
+  [1,16,0,4,0,7.39104,0,3.06147,0,-6.4,0,3.06147,0,-7.39104, ldraw_lib__t08o6250(realsolid)],
 // 1 16 0 4 0 -7.39104 0 -3.06147 0 -6.4 0 3.06147 0 -7.39104 t08o6250.dat
-  [1,16,0,4,0,-7.39104,0,-3.06147,0,-6.4,0,3.06147,0,-7.39104, ldraw_lib__t08o6250()],
+  [1,16,0,4,0,-7.39104,0,-3.06147,0,-6.4,0,3.06147,0,-7.39104, ldraw_lib__t08o6250(realsolid)],
 // 1 16 0 4 0 12.0104 0 4.97488 0 13 0 4.97488 0 -12.0104 1-8cyli.dat
-  [1,16,0,4,0,12.0104,0,4.97488,0,13,0,4.97488,0,-12.0104, ldraw_lib__1_8cyli()],
+  [1,16,0,4,0,12.0104,0,4.97488,0,13,0,4.97488,0,-12.0104, ldraw_lib__1_8cyli(realsolid)],
 // 1 16 0 4 0 -12.0104 0 -4.97488 0 13 0 4.97488 0 -12.0104 1-8cyli.dat
-  [1,16,0,4,0,-12.0104,0,-4.97488,0,13,0,4.97488,0,-12.0104, ldraw_lib__1_8cyli()],
+  [1,16,0,4,0,-12.0104,0,-4.97488,0,13,0,4.97488,0,-12.0104, ldraw_lib__1_8cyli(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3626cpaps01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626cpaps01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626cpaps01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\3626cpaps01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626cpaps01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626cpaps01(realsolid)],
 ];
 module ldraw_lib__3626cpap(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3626cpap(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3626cpap(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3626cpap(line=0.2);

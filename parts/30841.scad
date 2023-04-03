@@ -2,7 +2,8 @@ use <../lib.scad>
 use <s/30841s01.scad>
 use <s/30841s02.scad>
 use <s/30841s03.scad>
-function ldraw_lib__30841() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__30841(realsolid=false) = [
 // 0 Windscreen  2 x  4 x  1.333
 // 0 Name: 30841.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -21,14 +22,14 @@ function ldraw_lib__30841() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\30841s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30841s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30841s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\30841s02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30841s02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30841s02(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\30841s03.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30841s03()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30841s03(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\30841s03.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__30841s03()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__30841s03(realsolid)],
 ];
 module ldraw_lib__30841(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__30841(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__30841(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__30841(line=0.2);

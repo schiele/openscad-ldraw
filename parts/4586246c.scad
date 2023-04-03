@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__4586246c() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4586246c(realsolid=false) = [
 // 0 Sticker  0.8 x  3.8 White Dot Matrix Display on Black Background with "LEGO CITY"
 // 0 Name: 4586246c.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -19,7 +20,7 @@ function ldraw_lib__4586246c() = [
 // 
 // 
 // 1 16 0 -.25 0 38 0 0 0 .25 0 0 0 8 box5-12.dat
-  [1,16,0,-.25,0,38,0,0,0,.25,0,0,0,8, ldraw_lib__box5_12()],
+  [1,16,0,-.25,0,38,0,0,0,.25,0,0,0,8, ldraw_lib__box5_12(realsolid)],
 // 
 // 4 15 -26.5 -.25 -1 -26.5 -.25 -.2 -27.3 -.25 -.2 -27.3 -.25 -1
   [4,15,-26.5,-.25,-1,-26.5,-.25,-.2,-27.3,-.25,-.2,-27.3,-.25,-1],
@@ -2033,5 +2034,5 @@ function ldraw_lib__4586246c() = [
   [3,0,38,-.25,8,35.1,-.25,.4,35.1,-.25,-.2],
 ];
 module ldraw_lib__4586246c(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4586246c(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4586246c(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4586246c(line=0.2);

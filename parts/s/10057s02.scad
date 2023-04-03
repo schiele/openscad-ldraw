@@ -2,7 +2,8 @@ use <../../lib.scad>
 use <../../p/4-4cyli.scad>
 use <../../p/4-4disc.scad>
 use <../../p/4-4edge.scad>
-function ldraw_lib__s__10057s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__10057s02(realsolid=false) = [
 // 0 ~Minifig Gollum Body and Head without Patterned Areas - Half
 // 0 Name: s\10057s02.dat
 // 0 Author: Christian Neumann [Wesley]
@@ -19,11 +20,11 @@ function ldraw_lib__s__10057s02() = [
 // 
 // 
 // 1 16 18 -38.5 -6.75 0 -8.5 0 4 0 0 0 0 4 4-4cyli.dat
-  [1,16,18,-38.5,-6.75,0,-8.5,0,4,0,0,0,0,4, ldraw_lib__4_4cyli()],
+  [1,16,18,-38.5,-6.75,0,-8.5,0,4,0,0,0,0,4, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 18 -38.5 -6.75 0 -1 0 4 0 0 0 0 4 4-4disc.dat
-  [1,16,18,-38.5,-6.75,0,-1,0,4,0,0,0,0,4, ldraw_lib__4_4disc()],
+  [1,16,18,-38.5,-6.75,0,-1,0,4,0,0,0,0,4, ldraw_lib__4_4disc(realsolid)],
 // 1 16 18 -38.5 -6.75 0 1 0 4 0 0 0 0 4 4-4edge.dat
-  [1,16,18,-38.5,-6.75,0,1,0,4,0,0,0,0,4, ldraw_lib__4_4edge()],
+  [1,16,18,-38.5,-6.75,0,1,0,4,0,0,0,0,4, ldraw_lib__4_4edge(realsolid)],
 // 2 24 9.714 -34.5 -6.75 9.7 -34.804 -5.219
   [2,24,9.714,-34.5,-6.75,9.7,-34.804,-5.219],
 // 2 24 9.7 -34.804 -5.219 9.704 -35.113 -4.758
@@ -1394,5 +1395,5 @@ function ldraw_lib__s__10057s02() = [
   [5,24,10.42,-44.863,-34.47,6.596,-40.05,-35.5,10.783,-43.351,-32.572,6.829,-42.66,-36.514],
 ];
 module ldraw_lib__s__10057s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__10057s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__10057s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__10057s02(line=0.2);

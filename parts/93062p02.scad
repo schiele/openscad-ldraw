@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <93612.scad>
 use <93613.scad>
-function ldraw_lib__93062p02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__93062p02(realsolid=false) = [
 // 0 Minifig Skeleton Leg with Pearl Dark Grey Square Foot
 // 0 Name: 93062p02.dat
 // 0 Author: Antony Caparica [antonyc]
@@ -16,10 +17,10 @@ function ldraw_lib__93062p02() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 93612.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__93612()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__93612(realsolid)],
 // 1 148 0 0 0 1 0 0 0 1 0 0 0 1 93613.dat
-  [1,148,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__93613()],
+  [1,148,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__93613(realsolid)],
 ];
 module ldraw_lib__93062p02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__93062p02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__93062p02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__93062p02(line=0.2);

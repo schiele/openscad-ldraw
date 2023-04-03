@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__48__4_4ring5() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__48__4_4ring5(realsolid=false) = [
 // 0 Hi-Res Ring  5 x 1.0
 // 0 Name: 48\4-4ring5.dat
 // 0 Author: Guy Vivan [guyvivan]
@@ -114,5 +115,5 @@ function ldraw_lib__48__4_4ring5() = [
 // 
 ];
 module ldraw_lib__48__4_4ring5(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__48__4_4ring5(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__48__4_4ring5(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__48__4_4ring5(line=0.2);

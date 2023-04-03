@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <3005.scad>
-function ldraw_lib__30071() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__30071(realsolid=false) = [
 // 0 =Brick  1 x  1
 // 0 Name: 30071.dat
 // 0 Author: Michael Heidemann [mikeheide]
@@ -19,9 +20,9 @@ function ldraw_lib__30071() = [
 // 0 // Alias of 3005
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 3005.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3005()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3005(realsolid)],
 // 0
 ];
 module ldraw_lib__30071(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__30071(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__30071(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__30071(line=0.2);

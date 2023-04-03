@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3068bs01.scad>
-function ldraw_lib__3068bpz5() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3068bpz5(realsolid=false) = [
 // 0 Tile  2 x  2 with  4 Black Squares Pattern
 // 0 Name: 3068bpz5.dat
 // 0 Author: Vincent Messenet [Cheenzo]
@@ -18,7 +19,7 @@ function ldraw_lib__3068bpz5() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3068bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3068bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3068bs01(realsolid)],
 // 
 // 4 0 -9.25 0 -9.25 -18.5 0 -9.25 -18.5 0 -18.5 -9.25 0 -18.5
   [4,0,-9.25,0,-9.25,-18.5,0,-9.25,-18.5,0,-18.5,-9.25,0,-18.5],
@@ -55,5 +56,5 @@ function ldraw_lib__3068bpz5() = [
   [4,16,0,0,0,0,0,-9.25,9.25,0,-9.25,9.25,0,0],
 ];
 module ldraw_lib__3068bpz5(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3068bpz5(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3068bpz5(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3068bpz5(line=0.2);

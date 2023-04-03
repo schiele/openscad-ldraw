@@ -3,7 +3,8 @@ use <../../p/2-4cylo.scad>
 use <../../p/2-4ndis.scad>
 use <../../p/box4-1.scad>
 use <../../p/box4.scad>
-function ldraw_lib__s__15466s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__15466s01(realsolid=false) = [
 // 0 ~Electric Brick  2 x  4 with USB Flash Drive - Bottom Plate Subpart
 // 0 Name: s\15466s01.dat
 // 0 Author: Santeri Piippo [arezey]
@@ -18,7 +19,7 @@ function ldraw_lib__s__15466s01() = [
 // 
 // 
 // 1 16 0 0 0 -20 0 0 0 8 0 0 0 -40 box4.dat
-  [1,16,0,0,0,-20,0,0,0,8,0,0,0,-40, ldraw_lib__box4()],
+  [1,16,0,0,0,-20,0,0,0,8,0,0,0,-40, ldraw_lib__box4(realsolid)],
 // 4 16 20 8 40 20 8 -40 16 8 -36 16 8 36
   [4,16,20,8,40,20,8,-40,16,8,-36,16,8,36],
 // 4 16 20 8 40 16 8 36 -16 8 36 -20 8 40
@@ -38,23 +39,23 @@ function ldraw_lib__s__15466s01() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 8 0 -16 0 0 0 -4 0 0 0 -36 box4.dat
-  [1,16,0,8,0,-16,0,0,0,-4,0,0,0,-36, ldraw_lib__box4()],
+  [1,16,0,8,0,-16,0,0,0,-4,0,0,0,-36, ldraw_lib__box4(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 4 -23 -4 0 0 0 -4 0 0 0 -4 2-4cylo.dat
-  [1,16,0,4,-23,-4,0,0,0,-4,0,0,0,-4, ldraw_lib__2_4cylo()],
+  [1,16,0,4,-23,-4,0,0,0,-4,0,0,0,-4, ldraw_lib__2_4cylo(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 4 22 -4 0 0 0 -4 0 0 0 4 2-4cylo.dat
-  [1,16,0,4,22,-4,0,0,0,-4,0,0,0,4, ldraw_lib__2_4cylo()],
+  [1,16,0,4,22,-4,0,0,0,-4,0,0,0,4, ldraw_lib__2_4cylo(realsolid)],
 // 2 24 4 4 22 4 4 -23
   [2,24,4,4,22,4,4,-23],
 // 2 24 -4 4 22 -4 4 -23
   [2,24,-4,4,22,-4,4,-23],
 // 1 16 0 4 -23 -4 0 0 0 -1 0 0 0 -4 2-4ndis.dat
-  [1,16,0,4,-23,-4,0,0,0,-1,0,0,0,-4, ldraw_lib__2_4ndis()],
+  [1,16,0,4,-23,-4,0,0,0,-1,0,0,0,-4, ldraw_lib__2_4ndis(realsolid)],
 // 1 16 0 4 22 -4 0 0 0 -1 0 0 0 4 2-4ndis.dat
-  [1,16,0,4,22,-4,0,0,0,-1,0,0,0,4, ldraw_lib__2_4ndis()],
+  [1,16,0,4,22,-4,0,0,0,-1,0,0,0,4, ldraw_lib__2_4ndis(realsolid)],
 // 4 16 16 4 36 4 4 26 -4 4 26 -16 4 36
   [4,16,16,4,36,4,4,26,-4,4,26,-16,4,36],
 // 4 16 16 4 -36 -16 4 -36 -4 4 -27 4 4 -27
@@ -62,9 +63,9 @@ function ldraw_lib__s__15466s01() = [
 // 4 16 4 4 -27 4 4 26 16 4 36 16 4 -36
   [4,16,4,4,-27,4,4,26,16,4,36,16,4,-36],
 // 1 16 0 0 -23 -4 0 0 0 1 0 0 0 -4 2-4ndis.dat
-  [1,16,0,0,-23,-4,0,0,0,1,0,0,0,-4, ldraw_lib__2_4ndis()],
+  [1,16,0,0,-23,-4,0,0,0,1,0,0,0,-4, ldraw_lib__2_4ndis(realsolid)],
 // 1 16 0 0 22 -4 0 0 0 1 0 0 0 4 2-4ndis.dat
-  [1,16,0,0,22,-4,0,0,0,1,0,0,0,4, ldraw_lib__2_4ndis()],
+  [1,16,0,0,22,-4,0,0,0,1,0,0,0,4, ldraw_lib__2_4ndis(realsolid)],
 // 4 16 20 0 -40 4 0 -27 -4 0 -27 -20 0 -40
   [4,16,20,0,-40,4,0,-27,-4,0,-27,-20,0,-40],
 // 4 16 20 0 40 -20 0 40 -4 0 26 4 0 26
@@ -82,11 +83,11 @@ function ldraw_lib__s__15466s01() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -5.5 0 -21 0 0 -1.5 0 2 0 1.5 0 0 box4-1.dat
-  [1,16,-5.5,0,-21,0,0,-1.5,0,2,0,1.5,0,0, ldraw_lib__box4_1()],
+  [1,16,-5.5,0,-21,0,0,-1.5,0,2,0,1.5,0,0, ldraw_lib__box4_1(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -5.5 0 11.5 0 0 -1.5 0 2 0 1.5 0 0 box4-1.dat
-  [1,16,-5.5,0,11.5,0,0,-1.5,0,2,0,1.5,0,0, ldraw_lib__box4_1()],
+  [1,16,-5.5,0,11.5,0,0,-1.5,0,2,0,1.5,0,0, ldraw_lib__box4_1(realsolid)],
 // 3 16 -7 0 -22.5 -4 0 -23 -4 0 -22.5
   [3,16,-7,0,-22.5,-4,0,-23,-4,0,-22.5],
 // 4 16 -7 0 -22.5 -20 0 -40 -4 0 -27 -4 0 -23
@@ -126,11 +127,11 @@ function ldraw_lib__s__15466s01() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 5.5 0 -21 0 0 1.5 0 2 0 1.5 0 0 box4-1.dat
-  [1,16,5.5,0,-21,0,0,1.5,0,2,0,1.5,0,0, ldraw_lib__box4_1()],
+  [1,16,5.5,0,-21,0,0,1.5,0,2,0,1.5,0,0, ldraw_lib__box4_1(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 5.5 0 11.5 0 0 1.5 0 2 0 1.5 0 0 box4-1.dat
-  [1,16,5.5,0,11.5,0,0,1.5,0,2,0,1.5,0,0, ldraw_lib__box4_1()],
+  [1,16,5.5,0,11.5,0,0,1.5,0,2,0,1.5,0,0, ldraw_lib__box4_1(realsolid)],
 // 3 16 7 0 -22.5 4 0 -22.5 4 0 -23
   [3,16,7,0,-22.5,4,0,-22.5,4,0,-23],
 // 4 16 7 0 -22.5 4 0 -23 4 0 -27 20 0 -40
@@ -159,5 +160,5 @@ function ldraw_lib__s__15466s01() = [
   [2,24,4,0,13,4,0,22],
 ];
 module ldraw_lib__s__15466s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__15466s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__15466s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__15466s01(line=0.2);

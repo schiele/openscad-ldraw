@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4ndis.scad>
 use <s/004315s01.scad>
-function ldraw_lib__003497g() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__003497g(realsolid=false) = [
 // 0 Sticker Minifig Torso with Black Suit with Two Buttons and Red Tie
 // 0 Name: 003497g.dat
 // 0 Author: Chris Dee [cwdee]
@@ -19,7 +20,7 @@ function ldraw_lib__003497g() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\004315s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__004315s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__004315s01(realsolid)],
 // 
 // 4 4 2 -0.25 15 -2 -0.25 15 -1 -0.25 12 1 -0.25 12
   [4,4,2,-0.25,15,-2,-0.25,15,-1,-0.25,12,1,-0.25,12],
@@ -155,14 +156,14 @@ function ldraw_lib__003497g() = [
   [3,0,-1.5,-0.25,-9.5,-18,-0.25,-15,-1.5,-0.25,-11],
 // 
 // 1 15 0 -0.25 -6 1.5 0 0 0 1 0 0 0 1.5 4-4disc.dat
-  [1,15,0,-0.25,-6,1.5,0,0,0,1,0,0,0,1.5, ldraw_lib__4_4disc()],
+  [1,15,0,-0.25,-6,1.5,0,0,0,1,0,0,0,1.5, ldraw_lib__4_4disc(realsolid)],
 // 1 15 0 -0.25 -11 1.5 0 0 0 1 0 0 0 1.5 4-4disc.dat
-  [1,15,0,-0.25,-11,1.5,0,0,0,1,0,0,0,1.5, ldraw_lib__4_4disc()],
+  [1,15,0,-0.25,-11,1.5,0,0,0,1,0,0,0,1.5, ldraw_lib__4_4disc(realsolid)],
 // 1 0 0 -0.25 -6 1.5 0 0 0 1 0 0 0 1.5 4-4ndis.dat
-  [1,0,0,-0.25,-6,1.5,0,0,0,1,0,0,0,1.5, ldraw_lib__4_4ndis()],
+  [1,0,0,-0.25,-6,1.5,0,0,0,1,0,0,0,1.5, ldraw_lib__4_4ndis(realsolid)],
 // 1 0 0 -0.25 -11 1.5 0 0 0 1 0 0 0 1.5 4-4ndis.dat
-  [1,0,0,-0.25,-11,1.5,0,0,0,1,0,0,0,1.5, ldraw_lib__4_4ndis()],
+  [1,0,0,-0.25,-11,1.5,0,0,0,1,0,0,0,1.5, ldraw_lib__4_4ndis(realsolid)],
 ];
 module ldraw_lib__003497g(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__003497g(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__003497g(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__003497g(line=0.2);

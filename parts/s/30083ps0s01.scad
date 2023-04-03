@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/48/1-4cyli.scad>
 use <../../p/48/1-8cyli.scad>
-function ldraw_lib__s__30083ps0s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__30083ps0s01(realsolid=false) = [
 // 0 ~Windscreen  6 x  6 x  3 Dome with Hinge with SW Gunship Pattern - Half
 // 0 Name: s\30083ps0s01.dat
 // 0 Author: Daniel Goerner [TK-949]
@@ -16,9 +17,9 @@ function ldraw_lib__s__30083ps0s01() = [
 // 
 // 
 // 1 16 0 -56 4 0 0 60 -60 0 0 0 -8 0 48\1-4cyli.dat
-  [1,16,0,-56,4,0,0,60,-60,0,0,0,-8,0, ldraw_lib__48__1_4cyli()],
+  [1,16,0,-56,4,0,0,60,-60,0,0,0,-8,0, ldraw_lib__48__1_4cyli(realsolid)],
 // 1 16 0 -56 4 60 0 0 0 0 60 0 -8 0 48\1-8cyli.dat
-  [1,16,0,-56,4,60,0,0,0,0,60,0,-8,0, ldraw_lib__48__1_8cyli()],
+  [1,16,0,-56,4,60,0,0,0,0,60,0,-8,0, ldraw_lib__48__1_8cyli(realsolid)],
 // 3 25 16.392 -64.598 -61.072 12.7 -62.4 -62.045 12.59 -61.05 -62.178
   [3,25,16.392,-64.598,-61.072,12.7,-62.4,-62.045,12.59,-61.05,-62.178],
 // 4 25 12.458 -59.458 -62.335 15.528 -56 -61.954 16.392 -64.598 -61.072 12.59 -61.05 -62.178
@@ -3648,5 +3649,5 @@ function ldraw_lib__s__30083ps0s01() = [
   [5,24,0,-63.83,-63.484,7.83,-56,-63.484,0,-56,-64,8.226,-64.226,-62.86],
 ];
 module ldraw_lib__s__30083ps0s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__30083ps0s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__30083ps0s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__30083ps0s01(line=0.2);

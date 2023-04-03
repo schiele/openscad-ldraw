@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__4650853k() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4650853k(realsolid=false) = [
 // 0 Sticker  1.6 x  1.9 with Magenta Star on Butterfly Wings
 // 0 Name: 4650853k.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -17,7 +18,7 @@ function ldraw_lib__4650853k() = [
 // 
 // 
 // 1 16 0 -0.25 0 19 0 0 0 0.25 0 0 0 16 box5-12.dat
-  [1,16,0,-0.25,0,19,0,0,0,0.25,0,0,0,16, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,19,0,0,0,0.25,0,0,0,16, ldraw_lib__box5_12(realsolid)],
 // 4 26 0 -0.25 -6.4 0 -0.25 2.7 -1 -0.25 1.2 -1.6 -0.25 -0.5
   [4,26,0,-0.25,-6.4,0,-0.25,2.7,-1,-0.25,1.2,-1.6,-0.25,-0.5],
 // 4 26 -2.8 -0.25 -4.1 0 -0.25 -6.4 -1.6 -0.25 -0.5 -3.5 -0.25 -0.6
@@ -354,5 +355,5 @@ function ldraw_lib__4650853k() = [
   [3,322,6.3,-0.25,5.1,1.8,-0.25,4.6,3.4,-0.25,2],
 ];
 module ldraw_lib__4650853k(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4650853k(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4650853k(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4650853k(line=0.2);

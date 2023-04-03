@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/004315s01.scad>
-function ldraw_lib__004363a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__004363a(realsolid=false) = [
 // 0 Sticker Minifig Torso with Red Cross Logo
 // 0 Name: 004363a.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -18,7 +19,7 @@ function ldraw_lib__004363a() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\004315s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__004315s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__004315s01(realsolid)],
 // 4 15 -18 -.25 -15 -2.5 -.25 -7.5 -2.5 -.25 -2.5 -7.5 -.25 -2.5
   [4,15,-18,-.25,-15,-2.5,-.25,-7.5,-2.5,-.25,-2.5,-7.5,-.25,-2.5],
 // 4 15 -18 -.25 -15 18 -.25 -15 2.5 -.25 -7.5 -2.5 -.25 -7.5
@@ -57,5 +58,5 @@ function ldraw_lib__004363a() = [
   [4,15,-8.5,-.25,15,-11.5,-.25,14,10,-.25,14.75,8.5,-.25,15],
 ];
 module ldraw_lib__004363a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__004363a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__004363a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__004363a(line=0.2);

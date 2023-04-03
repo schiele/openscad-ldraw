@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/1-4chrd.scad>
 use <s/003238s6.scad>
 use <s/3238s02.scad>
-function ldraw_lib__003238p() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__003238p(realsolid=false) = [
 // 0 Sticker Minifig Vest with Shield with White Maltese Cross on Light Grey Background
 // 0 Name: 003238p.dat
 // 0 Author: Alex Taylor [anathema]
@@ -22,15 +23,15 @@ function ldraw_lib__003238p() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3238s02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3238s02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3238s02(realsolid)],
 // 1 16 0 -0.25 4 0.48 0 0 0 1 0 0 0 0.48 s\003238s6.dat
-  [1,16,0,-0.25,4,0.48,0,0,0,1,0,0,0,0.48, ldraw_lib__s__003238s6()],
+  [1,16,0,-0.25,4,0.48,0,0,0,1,0,0,0,0.48, ldraw_lib__s__003238s6(realsolid)],
 // 1 16 0 -0.25 4 -0.48 0 0 0 1 0 0 0 0.48 s\003238s6.dat
-  [1,16,0,-0.25,4,-0.48,0,0,0,1,0,0,0,0.48, ldraw_lib__s__003238s6()],
+  [1,16,0,-0.25,4,-0.48,0,0,0,1,0,0,0,0.48, ldraw_lib__s__003238s6(realsolid)],
 // 1 7 -11 -0.25 -16 -2 0 0 0 1 0 0 0 -2 1-4chrd.dat
-  [1,7,-11,-0.25,-16,-2,0,0,0,1,0,0,0,-2, ldraw_lib__1_4chrd()],
+  [1,7,-11,-0.25,-16,-2,0,0,0,1,0,0,0,-2, ldraw_lib__1_4chrd(realsolid)],
 // 1 7 11 -0.25 -16 0 0 2 0 1 0 -2 0 0 1-4chrd.dat
-  [1,7,11,-0.25,-16,0,0,2,0,1,0,-2,0,0, ldraw_lib__1_4chrd()],
+  [1,7,11,-0.25,-16,0,0,2,0,1,0,-2,0,0, ldraw_lib__1_4chrd(realsolid)],
 // 3 7 -13 -.25 -16 0 -.25 -11.5376 -4.2048 -.25 -7.7936
   [3,7,-13,-.25,-16,0,-.25,-11.5376,-4.2048,-.25,-7.7936],
 // 3 7 -13 -.25 -16 -4.2048 -.25 -7.7936 -7.1664 -.25 -3.5264
@@ -59,5 +60,5 @@ function ldraw_lib__003238p() = [
   [3,7,13,-0.25,17,0,-0.25,10.72,9.6,-0.25,10.72],
 ];
 module ldraw_lib__003238p(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__003238p(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__003238p(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__003238p(line=0.2);

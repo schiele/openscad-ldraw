@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__43746s04() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__43746s04(realsolid=false) = [
 // 0 ~Animal Serpent Basilisk Head - Patternable area
 // 0 Name: s\43746s04.dat
 // 0 Author: Willy Tschager [Holly-Wood]
@@ -299,5 +300,5 @@ function ldraw_lib__s__43746s04() = [
   [3,16,33.255,13.142,32.214,32.193,12.521,25.154,31.675,14.396,24.803],
 ];
 module ldraw_lib__s__43746s04(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__43746s04(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__43746s04(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__43746s04(line=0.2);

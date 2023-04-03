@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/4-4cylc.scad>
-function ldraw_lib__s__93083s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__93083s01(realsolid=false) = [
 // 0 ~Animal Horse Friends Mane
 // 0 Name: s\93083s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -19,11 +20,11 @@ function ldraw_lib__s__93083s01() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -11.7 -51 -58.3 0.3 -4.5 -0.2 0 0 -2 2 0 0 4-4cylc.dat
-  [1,16,-11.7,-51,-58.3,0.3,-4.5,-0.2,0,0,-2,2,0,0, ldraw_lib__4_4cylc()],
+  [1,16,-11.7,-51,-58.3,0.3,-4.5,-0.2,0,0,-2,2,0,0, ldraw_lib__4_4cylc(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -56.84 -81.98 0 0 2 -1.6383 -4.58861 0 1.14715 -6.55322 0 4-4cylc.dat
-  [1,16,0,-56.84,-81.98,0,0,2,-1.6383,-4.58861,0,1.14715,-6.55322,0, ldraw_lib__4_4cylc()],
+  [1,16,0,-56.84,-81.98,0,0,2,-1.6383,-4.58861,0,1.14715,-6.55322,0, ldraw_lib__4_4cylc(realsolid)],
 // 4 16 -14.295 -54.281 -63.703 -14.542 -54.458 -65.462 -15.071 -59.504 -64.947 -14.782 -59.486 -62.47
   [4,16,-14.295,-54.281,-63.703,-14.542,-54.458,-65.462,-15.071,-59.504,-64.947,-14.782,-59.486,-62.47],
 // 3 16 -11.815 -64.329 -64.979 -11.322 -63.209 -62.571 -14.782 -59.486 -62.47
@@ -2102,5 +2103,5 @@ function ldraw_lib__s__93083s01() = [
   [5,24,-14.553,-53.922,-67.243,-13.132,-56.213,-70.147,-13.15,-53.837,-69.071,-15.723,-58.591,-68.633],
 ];
 module ldraw_lib__s__93083s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__93083s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__93083s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__93083s01(line=0.2);

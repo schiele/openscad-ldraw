@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <3350p03.scad>
-function ldraw_lib__80045() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__80045(realsolid=false) = [
 // 0 ~_Roadsign Round with No Waiting Left Pattern White (Obsolete)
 // 0 Name: 80045.dat
 // 0 Author: Chris Dee [cwdee]
@@ -20,8 +21,8 @@ function ldraw_lib__80045() = [
 // 0 // colouring of the part (White).
 // 
 // 1 15 0 0 0 1 0 0 0 1 0 0 0 1 3350p03.dat
-  [1,15,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3350p03()],
+  [1,15,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3350p03(realsolid)],
 ];
 module ldraw_lib__80045(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__80045(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__80045(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__80045(line=0.2);

@@ -5,7 +5,8 @@ use <../../p/box5.scad>
 use <../../p/rect.scad>
 use <../../p/stud2.scad>
 use <../../p/stud3.scad>
-function ldraw_lib__s__4215bs01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__4215bs01(realsolid=false) = [
 // 0 ~Panel  1 x  4 x  3 with Hollow Studs without Front Face
 // 0 Name: s\4215bs01.dat
 // 0 Author: Andrew Ananjev [woozle]
@@ -21,15 +22,15 @@ function ldraw_lib__s__4215bs01() = [
 // 
 // 
 // 1 16 20 68 0 1 0 0 0 -1 0 0 0 1 stud3.dat
-  [1,16,20,68,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud3()],
+  [1,16,20,68,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud3(realsolid)],
 // 1 16 0 68 0 1 0 0 0 -1 0 0 0 1 stud3.dat
-  [1,16,0,68,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud3()],
+  [1,16,0,68,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud3(realsolid)],
 // 1 16 -20 68 0 1 0 0 0 -1 0 0 0 1 stud3.dat
-  [1,16,-20,68,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud3()],
+  [1,16,-20,68,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud3(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 72 0 36 0 0 0 -4 0 0 0 6 box5.dat
-  [1,16,0,72,0,36,0,0,0,-4,0,0,0,6, ldraw_lib__box5()],
+  [1,16,0,72,0,36,0,0,0,-4,0,0,0,6, ldraw_lib__box5(realsolid)],
 // 4 16 40 72 10 36 72 6 -36 72 6 -40 72 10
   [4,16,40,72,10,36,72,6,-36,72,6,-40,72,10],
 // 4 16 -40 72 10 -36 72 6 -36 72 -6 -40 72 -10
@@ -51,7 +52,7 @@ function ldraw_lib__s__4215bs01() = [
 // 4 16 -40 72 10 -40 72 -10 -40 64 -10 -40 64 6
   [4,16,-40,72,10,-40,72,-10,-40,64,-10,-40,64,6],
 // 1 16 0 68 -10 40 0 0 0 0 4 0 1 0 rect.dat
-  [1,16,0,68,-10,40,0,0,0,0,4,0,1,0, ldraw_lib__rect()],
+  [1,16,0,68,-10,40,0,0,0,0,4,0,1,0, ldraw_lib__rect(realsolid)],
 // 4 16 40 72 -10 40 72 10 40 64 6 40 64 -10
   [4,16,40,72,-10,40,72,10,40,64,6,40,64,-10],
 // 4 16 -40 72 10 -40 64 6 -40 4 6 -40 0 10
@@ -59,24 +60,24 @@ function ldraw_lib__s__4215bs01() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 34 -10 40 0 0 0 0 30 0 16 0 box3u4a.dat
-  [1,16,0,34,-10,40,0,0,0,0,30,0,16,0, ldraw_lib__box3u4a()],
+  [1,16,0,34,-10,40,0,0,0,0,30,0,16,0, ldraw_lib__box3u4a(realsolid)],
 // 4 16 40 64 6 40 72 10 40 0 10 40 4 6
   [4,16,40,64,6,40,72,10,40,0,10,40,4,6],
 // 4 16 -40 4 6 -40 4 -10 -40 0 -10 -40 0 10
   [4,16,-40,4,6,-40,4,-10,-40,0,-10,-40,0,10],
 // 1 16 0 2 0 -40 0 0 0 -2 0 0 0 -10 box2-5.dat
-  [1,16,0,2,0,-40,0,0,0,-2,0,0,0,-10, ldraw_lib__box2_5()],
+  [1,16,0,2,0,-40,0,0,0,-2,0,0,0,-10, ldraw_lib__box2_5(realsolid)],
 // 4 16 40 4 -10 40 4 6 40 0 10 40 0 -10
   [4,16,40,4,-10,40,4,6,40,0,10,40,0,-10],
 // 1 16 30 0 0 1 0 0 0 1 0 0 0 1 stud2.dat
-  [1,16,30,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2()],
+  [1,16,30,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2(realsolid)],
 // 1 16 10 0 0 1 0 0 0 1 0 0 0 1 stud2.dat
-  [1,16,10,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2()],
+  [1,16,10,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2(realsolid)],
 // 1 16 -10 0 0 1 0 0 0 1 0 0 0 1 stud2.dat
-  [1,16,-10,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2()],
+  [1,16,-10,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2(realsolid)],
 // 1 16 -30 0 0 1 0 0 0 1 0 0 0 1 stud2.dat
-  [1,16,-30,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2()],
+  [1,16,-30,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2(realsolid)],
 ];
 module ldraw_lib__s__4215bs01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__4215bs01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__4215bs01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__4215bs01(line=0.2);

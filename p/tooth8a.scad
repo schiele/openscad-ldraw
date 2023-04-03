@@ -2,7 +2,8 @@ use <../lib.scad>
 use <box4o8a.scad>
 use <rect.scad>
 use <rect2p.scad>
-function ldraw_lib__tooth8a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__tooth8a(realsolid=false) = [
 // 0 Single Tooth for Technic Gear  8 Tooth Reinforced
 // 0 Name: tooth8a.dat
 // 0 Author: Daniele Benedettelli [benedettelli]
@@ -17,9 +18,9 @@ function ldraw_lib__tooth8a() = [
 // 
 // 
 // 1 16 0 5.43 0 0.7 0 0 0 -1 0 0 0 4.75 rect.dat
-  [1,16,0,5.43,0,0.7,0,0,0,-1,0,0,0,4.75, ldraw_lib__rect()],
+  [1,16,0,5.43,0,0.7,0,0,0,-1,0,0,0,4.75, ldraw_lib__rect(realsolid)],
 // 1 16 1.1 4.415 0 -0.4 -1 0 1.015 0 0 0 0 4.75 rect2p.dat
-  [1,16,1.1,4.415,0,-0.4,-1,0,1.015,0,0,0,0,4.75, ldraw_lib__rect2p()],
+  [1,16,1.1,4.415,0,-0.4,-1,0,1.015,0,0,0,0,4.75, ldraw_lib__rect2p(realsolid)],
 // 2 24 1.35 0.232 9.8 1.35 0.232 -9.8
   [2,24,1.35,0.232,9.8,1.35,0.232,-9.8],
 // 2 24 1.35 0.232 9.8 1.5 2.1 9.8
@@ -29,7 +30,7 @@ function ldraw_lib__tooth8a() = [
 // 4 16 1.35 0.232 -9.8 1.5 2.1 -4.75 1.5 2.1 4.75 1.35 0.232 9.8
   [4,16,1.35,0.232,-9.8,1.5,2.1,-4.75,1.5,2.1,4.75,1.35,0.232,9.8],
 // 1 16 -1.1 4.415 0 0.4 1 0 1.015 0 0 0 0 4.75 rect2p.dat
-  [1,16,-1.1,4.415,0,0.4,1,0,1.015,0,0,0,0,4.75, ldraw_lib__rect2p()],
+  [1,16,-1.1,4.415,0,0.4,1,0,1.015,0,0,0,0,4.75, ldraw_lib__rect2p(realsolid)],
 // 2 24 -1.35 0.232 9.8 -1.35 0.232 -9.8
   [2,24,-1.35,0.232,9.8,-1.35,0.232,-9.8],
 // 2 24 -1.35 0.232 9.8 -1.5 2.1 9.8
@@ -47,11 +48,11 @@ function ldraw_lib__tooth8a() = [
 // 3 16 1.35 0.232 -9.8 1.5 2.1 -9.8 1.5 2.1 -4.75
   [3,16,1.35,0.232,-9.8,1.5,2.1,-9.8,1.5,2.1,-4.75],
 // 1 16 0 2.1 -7.275 -1.5 0 0 0 -1.01 0 0 0 2.525 rect.dat
-  [1,16,0,2.1,-7.275,-1.5,0,0,0,-1.01,0,0,0,2.525, ldraw_lib__rect()],
+  [1,16,0,2.1,-7.275,-1.5,0,0,0,-1.01,0,0,0,2.525, ldraw_lib__rect(realsolid)],
 // 1 16 0 2.1 7.275 -1.5 0 0 0 -1.01 0 0 0 2.525 rect.dat
-  [1,16,0,2.1,7.275,-1.5,0,0,0,-1.01,0,0,0,2.525, ldraw_lib__rect()],
+  [1,16,0,2.1,7.275,-1.5,0,0,0,-1.01,0,0,0,2.525, ldraw_lib__rect(realsolid)],
 // 1 16 0 2.1 0 0 0 1.5 0 1.3 0 4.75 0 0 box4o8a.dat
-  [1,16,0,2.1,0,0,0,1.5,0,1.3,0,4.75,0,0, ldraw_lib__box4o8a()],
+  [1,16,0,2.1,0,0,0,1.5,0,1.3,0,4.75,0,0, ldraw_lib__box4o8a(realsolid)],
 // 4 16 1.5 3.4 -4.75 -1.5 3.4 -4.75 -0.7 5.43 -4.75 0.7 5.43 -4.75
   [4,16,1.5,3.4,-4.75,-1.5,3.4,-4.75,-0.7,5.43,-4.75,0.7,5.43,-4.75],
 // 4 16 1.5 2.1 9.8 -1.5 2.1 9.8 0 0.5 9.8 1.35 0.232 9.8
@@ -82,5 +83,5 @@ function ldraw_lib__tooth8a() = [
   [2,24,0,0.5,9.8,1.35,0.232,9.8],
 ];
 module ldraw_lib__tooth8a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__tooth8a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__tooth8a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__tooth8a(line=0.2);

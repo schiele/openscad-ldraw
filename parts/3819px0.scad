@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3818s01.scad>
-function ldraw_lib__3819px0() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3819px0(realsolid=false) = [
 // 0 Minifig Arm Left with Elbow Pad and Pocket Pattern
 // 0 Name: 3819px0.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -25,7 +26,7 @@ function ldraw_lib__3819px0() = [
 // 
 // 
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\3818s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__3818s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__3818s01(realsolid)],
 // 
 // 3 16 1.666 0 6.5 0 -2.488 6.005 0.957 -2.2 6.005
   [3,16,1.666,0,6.5,0,-2.488,6.005,0.957,-2.2,6.005],
@@ -824,5 +825,5 @@ function ldraw_lib__3819px0() = [
   [5,24,6.9135,10.5627,4.9712,6.9135,22.1669,-6.6331,8.5355,10.1807,3.8199,5,10.6471,5.4249],
 ];
 module ldraw_lib__3819px0(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3819px0(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3819px0(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3819px0(line=0.2);

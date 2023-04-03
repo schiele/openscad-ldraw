@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <4079.scad>
-function ldraw_lib__407924() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__407924(realsolid=false) = [
 // 0 ~_Minifig Seat  2 x  2 Yellow (Obsolete)
 // 0 Name: 407924.dat
 // 0 Author: Michael Heidemann [mikeheide]
@@ -20,8 +21,8 @@ function ldraw_lib__407924() = [
 // 0 // colouring of the part (Yellow).
 // 
 // 1 14 0 0 0 1 0 0 0 1 0 0 0 1 4079.dat
-  [1,14,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4079()],
+  [1,14,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4079(realsolid)],
 ];
 module ldraw_lib__407924(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__407924(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__407924(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__407924(line=0.2);

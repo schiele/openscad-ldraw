@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/87079s01.scad>
-function ldraw_lib__87079px0() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__87079px0(realsolid=false) = [
 // 0 Tile  2 x  4 with "Multiphoton Optogalvanic Spectroscopy" and Mathematic Formula Pattern
 // 0 Name: 87079px0.dat
 // 0 Author: Vincent Messenet [Cheenzo]
@@ -17,7 +18,7 @@ function ldraw_lib__87079px0() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\87079s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__87079s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__87079s01(realsolid)],
 // 
 // 3 16 26.672 0 18.64 40 0 20 25.576 0 18.843
   [3,16,26.672,0,18.64,40,0,20,25.576,0,18.843],
@@ -4709,5 +4710,5 @@ function ldraw_lib__87079px0() = [
   [3,16,23.04,0,-14.558,20.368,0,-14.967,20.916,0,-14.967],
 ];
 module ldraw_lib__87079px0(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__87079px0(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__87079px0(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__87079px0(line=0.2);

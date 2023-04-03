@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/47753s01.scad>
-function ldraw_lib__47753() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__47753(realsolid=false) = [
 // 0 Wedge  4 x  4 Triple Curved without Studs
 // 0 Name: 47753.dat
 // 0 Author: Mark Chittenden [mdublade]
@@ -18,7 +19,7 @@ function ldraw_lib__47753() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\47753s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__47753s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__47753s01(realsolid)],
 // 0 // top surface
 // 4 16 20 0 40 -20 0 40 -20 2 20 20 2 20
   [4,16,20,0,40,-20,0,40,-20,2,20,20,2,20],
@@ -99,5 +100,5 @@ function ldraw_lib__47753() = [
 // 
 ];
 module ldraw_lib__47753(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__47753(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__47753(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__47753(line=0.2);

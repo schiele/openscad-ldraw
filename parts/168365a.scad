@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__168365a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__168365a(realsolid=false) = [
 // 0 Sticker  1.1 x  1.9 with Black Turtle on Red Background with Yellow Stripes, Sloped on Left Side
 // 0 Name: 168365a.dat
 // 0 Author: Max Martin Richter [MMR1988]
@@ -761,5 +762,5 @@ function ldraw_lib__168365a() = [
   [4,15,15,-0.25,0.05,15.2,-0.25,0.15,14.9,-0.25,0.95,14.5,-0.25,0.65],
 ];
 module ldraw_lib__168365a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__168365a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__168365a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__168365a(line=0.2);

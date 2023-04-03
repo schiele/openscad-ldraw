@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/u9492s01.scad>
-function ldraw_lib__u9492p01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__u9492p01(realsolid=false) = [
 // 0 Figure Duplo Bust Tall Head with Smile, Eyes Looking Left and Freckles on Nose Pattern
 // 0 Name: u9492p01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -15,7 +16,7 @@ function ldraw_lib__u9492p01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\u9492s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__u9492s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__u9492s01(realsolid)],
 // 5 24 -4.11075 -42 -31.2291 -4.11075 -6.3 -31.2291 -8.1522 -42 -30.42585 0 -42 -31.5
   [5,24,-4.11075,-42,-31.2291,-4.11075,-6.3,-31.2291,-8.1522,-42,-30.42585,0,-42,-31.5],
 // 5 24 -8.1522 -42 -30.42585 -8.1522 -6.3 -30.42585 -12.05505 -42 -29.10285 -4.11075 -42 -31.2291
@@ -868,5 +869,5 @@ function ldraw_lib__u9492p01() = [
   [3,16,-4.34,-18.44,-31.1835,-7.82,-16.2,-30.4919,-7.6,-15.58,-30.5356],
 ];
 module ldraw_lib__u9492p01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__u9492p01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__u9492p01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__u9492p01(line=0.2);

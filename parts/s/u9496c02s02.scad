@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__u9496c02s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__u9496c02s02(realsolid=false) = [
 // 0 ~Sheet Fabric 15 x 22 Triangular Sail Surface Stripe 2 (Formed Shape 2)
 // 0 Name: s\u9496c02s02.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -165,5 +166,5 @@ function ldraw_lib__s__u9496c02s02() = [
   [4,16,26.2574,392.1287,134.0787,26.2574,262.4897,159.7573,26.2574,259.1287,158.8567,26.2574,177.6287,134.0787],
 ];
 module ldraw_lib__s__u9496c02s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__u9496c02s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__u9496c02s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__u9496c02s02(line=0.2);

@@ -6,7 +6,8 @@ use <../p/4-4ring3.scad>
 use <../p/box5.scad>
 use <../p/stud.scad>
 use <../p/stud2a.scad>
-function ldraw_lib__4081a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4081a(realsolid=false) = [
 // 0 Plate  1 x  1 with Clip Light Type 1
 // 0 Name: 4081a.dat
 // 0 Author: Chris Dee [cwdee]
@@ -30,7 +31,7 @@ function ldraw_lib__4081a() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 8 0 6 0 0 0 -4 0 0 0 6 box5.dat
-  [1,16,0,8,0,6,0,0,0,-4,0,0,0,6, ldraw_lib__box5()],
+  [1,16,0,8,0,6,0,0,0,-4,0,0,0,6, ldraw_lib__box5(realsolid)],
 // 0
 // 2 24 10 8 10 10 8 -10
   [2,24,10,8,10,10,8,-10],
@@ -125,40 +126,40 @@ function ldraw_lib__4081a() = [
   [3,16,-2,8,-14.856,-2,7.657,-14.343,-2,8,-10],
 // 0
 // 1 16 2 2 -20 0 1 0 7.39104 0 3.06147 3.06147 0 -7.39104 3-4edge.dat
-  [1,16,2,2,-20,0,1,0,7.39104,0,3.06147,3.06147,0,-7.39104, ldraw_lib__3_4edge()],
+  [1,16,2,2,-20,0,1,0,7.39104,0,3.06147,3.06147,0,-7.39104, ldraw_lib__3_4edge(realsolid)],
 // 2 24 2 9.391 -16.9385 2 8 -14.856
   [2,24,2,9.391,-16.9385,2,8,-14.856],
 // 2 24 2 0 -12.398 2 -1.0614 -12.609
   [2,24,2,0,-12.398,2,-1.0614,-12.609],
 // 1 16 -2 2 -20 0 1 0 7.39104 0 3.06147 3.06147 0 -7.39104 3-4edge.dat
-  [1,16,-2,2,-20,0,1,0,7.39104,0,3.06147,3.06147,0,-7.39104, ldraw_lib__3_4edge()],
+  [1,16,-2,2,-20,0,1,0,7.39104,0,3.06147,3.06147,0,-7.39104, ldraw_lib__3_4edge(realsolid)],
 // 2 24 -2 9.391 -16.9385 -2 8 -14.856
   [2,24,-2,9.391,-16.9385,-2,8,-14.856],
 // 2 24 -2 0 -12.398 -2 -1.0614 -12.609
   [2,24,-2,0,-12.398,-2,-1.0614,-12.609],
 // 0
 // 1 16 2 2 -20 0 1 0 6 0 0 0 0 6 4-4edge.dat
-  [1,16,2,2,-20,0,1,0,6,0,0,0,0,6, ldraw_lib__4_4edge()],
+  [1,16,2,2,-20,0,1,0,6,0,0,0,0,6, ldraw_lib__4_4edge(realsolid)],
 // 1 16 -2 2 -20 0 1 0 6 0 0 0 0 6 4-4edge.dat
-  [1,16,-2,2,-20,0,1,0,6,0,0,0,0,6, ldraw_lib__4_4edge()],
+  [1,16,-2,2,-20,0,1,0,6,0,0,0,0,6, ldraw_lib__4_4edge(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 2 2 -20 0 -4 0 4 0 0 0 0 4 4-4cyli.dat
-  [1,16,2,2,-20,0,-4,0,4,0,0,0,0,4, ldraw_lib__4_4cyli()],
+  [1,16,2,2,-20,0,-4,0,4,0,0,0,0,4, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 2 2 -20 0 -1 0 2 0 0 0 0 2 4-4ring3.dat
-  [1,16,2,2,-20,0,-1,0,2,0,0,0,0,2, ldraw_lib__4_4ring3()],
+  [1,16,2,2,-20,0,-1,0,2,0,0,0,0,2, ldraw_lib__4_4ring3(realsolid)],
 // 1 16 -2 2 -20 0 1 0 2 0 0 0 0 2 4-4ring3.dat
-  [1,16,-2,2,-20,0,1,0,2,0,0,0,0,2, ldraw_lib__4_4ring3()],
+  [1,16,-2,2,-20,0,1,0,2,0,0,0,0,2, ldraw_lib__4_4ring3(realsolid)],
 // 1 16 2 2 -20 0 -1 0 1 0 0 0 0 1 stud2a.dat
-  [1,16,2,2,-20,0,-1,0,1,0,0,0,0,1, ldraw_lib__stud2a()],
+  [1,16,2,2,-20,0,-1,0,1,0,0,0,0,1, ldraw_lib__stud2a(realsolid)],
 // 1 16 -2 2 -20 0 1 0 1 0 0 0 0 1 stud2a.dat
-  [1,16,-2,2,-20,0,1,0,1,0,0,0,0,1, ldraw_lib__stud2a()],
+  [1,16,-2,2,-20,0,1,0,1,0,0,0,0,1, ldraw_lib__stud2a(realsolid)],
 // 1 16 2 2 -20 0 -4 0 8 0 0 0 0 8 4-4cyli.dat
-  [1,16,2,2,-20,0,-4,0,8,0,0,0,0,8, ldraw_lib__4_4cyli()],
+  [1,16,2,2,-20,0,-4,0,8,0,0,0,0,8, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 0 0 0 0 -1 0 1 0 1 0 0 stud.dat
-  [1,16,0,0,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__stud()],
+  [1,16,0,0,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__stud(realsolid)],
 // 0
 ];
 module ldraw_lib__4081a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4081a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4081a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4081a(line=0.2);

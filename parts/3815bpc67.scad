@@ -4,7 +4,8 @@ use <../p/2-4ndis.scad>
 use <../p/2-4ring2.scad>
 use <../p/5-16cyli.scad>
 use <s/3815bs01.scad>
-function ldraw_lib__3815bpc67() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3815bpc67(realsolid=false) = [
 // 0 Minifig Hips with Clockwork Robot Pattern
 // 0 Name: 3815bpc67.dat
 // 0 Author: Chris Dee [cwdee]
@@ -21,22 +22,22 @@ function ldraw_lib__3815bpc67() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3815bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3815bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3815bs01(realsolid)],
 // 1 16 -2 12 0 0 4 0 8.08395 0 -3.34848 -3.34848 0 -8.08395 5-16cyli.dat
-  [1,16,-2,12,0,0,4,0,8.08395,0,-3.34848,-3.34848,0,-8.08395, ldraw_lib__5_16cyli()],
+  [1,16,-2,12,0,0,4,0,8.08395,0,-3.34848,-3.34848,0,-8.08395, ldraw_lib__5_16cyli(realsolid)],
 // 0 //
 // 1 80 10 2 -10 0 0 1.33333 1.33333 0 0 0 1 0 2-4disc.dat
-  [1,80,10,2,-10,0,0,1.33333,1.33333,0,0,0,1,0, ldraw_lib__2_4disc()],
+  [1,80,10,2,-10,0,0,1.33333,1.33333,0,0,0,1,0, ldraw_lib__2_4disc(realsolid)],
 // 1 0 10 2 -10 0 0 0.66667 0.66667 0 0 0 1 0 2-4ring2.dat
-  [1,0,10,2,-10,0,0,0.66667,0.66667,0,0,0,1,0, ldraw_lib__2_4ring2()],
+  [1,0,10,2,-10,0,0,0.66667,0.66667,0,0,0,1,0, ldraw_lib__2_4ring2(realsolid)],
 // 1 16 10 2 -10 0 0 2 2 0 0 0 1 0 2-4ndis.dat
-  [1,16,10,2,-10,0,0,2,2,0,0,0,1,0, ldraw_lib__2_4ndis()],
+  [1,16,10,2,-10,0,0,2,2,0,0,0,1,0, ldraw_lib__2_4ndis(realsolid)],
 // 1 80 -10 2 -10 0 0 -1.33333 -1.33333 0 0 0 1 0 2-4disc.dat
-  [1,80,-10,2,-10,0,0,-1.33333,-1.33333,0,0,0,1,0, ldraw_lib__2_4disc()],
+  [1,80,-10,2,-10,0,0,-1.33333,-1.33333,0,0,0,1,0, ldraw_lib__2_4disc(realsolid)],
 // 1 0 -10 2 -10 0 0 -0.66667 -0.66667 0 0 0 1 0 2-4ring2.dat
-  [1,0,-10,2,-10,0,0,-0.66667,-0.66667,0,0,0,1,0, ldraw_lib__2_4ring2()],
+  [1,0,-10,2,-10,0,0,-0.66667,-0.66667,0,0,0,1,0, ldraw_lib__2_4ring2(realsolid)],
 // 1 16 -10 2 -10 0 0 -2 -2 0 0 0 1 0 2-4ndis.dat
-  [1,16,-10,2,-10,0,0,-2,-2,0,0,0,1,0, ldraw_lib__2_4ndis()],
+  [1,16,-10,2,-10,0,0,-2,-2,0,0,0,1,0, ldraw_lib__2_4ndis(realsolid)],
 // 4 80 10 2 -10 10 0.66667 -10 9.6 0.66667 -10 9.6 3.33333 -10
   [4,80,10,2,-10,10,0.66667,-10,9.6,0.66667,-10,9.6,3.33333,-10],
 // 3 80 10 2 -10 9.6 3.33333 -10 10 3.33333 -10
@@ -418,5 +419,5 @@ function ldraw_lib__3815bpc67() = [
 // 
 ];
 module ldraw_lib__3815bpc67(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3815bpc67(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3815bpc67(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3815bpc67(line=0.2);

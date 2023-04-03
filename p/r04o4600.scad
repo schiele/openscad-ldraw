@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__r04o4600() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__r04o4600(realsolid=false) = [
 // 0 Torus Outside  1 x 4.6000 x 0.25
 // 0 Name: r04o4600.dat
 // 0 Author: John Riley [jriley]
@@ -136,5 +137,5 @@ function ldraw_lib__r04o4600() = [
 // 
 ];
 module ldraw_lib__r04o4600(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__r04o4600(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__r04o4600(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__r04o4600(line=0.2);

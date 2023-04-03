@@ -3,7 +3,8 @@ use <../p/4-4disc.scad>
 use <../p/4-4ering.scad>
 use <../p/4-4ndis.scad>
 use <s/14769s01.scad>
-function ldraw_lib__14769p0i() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__14769p0i(realsolid=false) = [
 // 0 Tile  2 x  2 Round with Vinyl Record and Magenta Label Pattern
 // 0 Name: 14769p0i.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -20,14 +21,14 @@ function ldraw_lib__14769p0i() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\14769s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__14769s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__14769s01(realsolid)],
 // 
 // 1 16 0 0 0 20 0 0 0 1 0 0 0 20 4-4ering.dat
-  [1,16,0,0,0,20,0,0,0,1,0,0,0,20, ldraw_lib__4_4ering()],
+  [1,16,0,0,0,20,0,0,0,1,0,0,0,20, ldraw_lib__4_4ering(realsolid)],
 // 1 16 0 0 0 .8 0 0 0 1 0 0 0 .8 4-4disc.dat
-  [1,16,0,0,0,.8,0,0,0,1,0,0,0,.8, ldraw_lib__4_4disc()],
+  [1,16,0,0,0,.8,0,0,0,1,0,0,0,.8, ldraw_lib__4_4disc(realsolid)],
 // 1 31 0 0 0 .8 0 0 0 1 0 0 0 .8 4-4ndis.dat
-  [1,31,0,0,0,.8,0,0,0,1,0,0,0,.8, ldraw_lib__4_4ndis()],
+  [1,31,0,0,0,.8,0,0,0,1,0,0,0,.8, ldraw_lib__4_4ndis(realsolid)],
 // 4 26 8.1819 0 -3.389 -8.1819 0 -3.389 -7.3635 0 -4.9201 7.3635 0 -4.9201
   [4,26,8.1819,0,-3.389,-8.1819,0,-3.389,-7.3635,0,-4.9201,7.3635,0,-4.9201],
 // 4 26 -6.2621 0 -6.2621 6.2621 0 -6.2621 7.3635 0 -4.9201 -7.3635 0 -4.9201
@@ -934,5 +935,5 @@ function ldraw_lib__14769p0i() = [
   [4,16,0,0,-20,7.654,0,-18.478,3.389,0,-8.1819,1.7277,0,-8.6858],
 ];
 module ldraw_lib__14769p0i(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__14769p0i(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__14769p0i(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__14769p0i(line=0.2);

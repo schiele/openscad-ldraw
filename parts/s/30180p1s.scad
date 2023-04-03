@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__30180p1s() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__30180p1s(realsolid=false) = [
 // 0 ~Slope Brick 45 10 x  2 x  2 Double Black/Yellow Stripes Pattern
 // 0 Name: s\30180p1s.dat
 // 0 Author: Michael Heidemann [mikeheide]
@@ -95,5 +96,5 @@ function ldraw_lib__s__30180p1s() = [
 // 0
 ];
 module ldraw_lib__s__30180p1s(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__30180p1s(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__30180p1s(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__30180p1s(line=0.2);

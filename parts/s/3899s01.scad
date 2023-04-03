@@ -11,7 +11,8 @@ use <../../p/4-4edge.scad>
 use <../../p/4-4rin19.scad>
 use <../../p/4-4ring4.scad>
 use <../../p/stud4.scad>
-function ldraw_lib__s__3899s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__3899s01(realsolid=false) = [
 // 0 ~Minifig Cup without Patternable Areas
 // 0 Name: s\3899s01.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -26,44 +27,44 @@ function ldraw_lib__s__3899s01() = [
 // 
 // 
 // 1 16 0 18 0 1 0 0 0 -1.5 0 0 0 1 stud4.dat
-  [1,16,0,18,0,1,0,0,0,-1.5,0,0,0,1, ldraw_lib__stud4()],
+  [1,16,0,18,0,1,0,0,0,-1.5,0,0,0,1, ldraw_lib__stud4(realsolid)],
 // 0 // Primitives
 // 1 16 0 18 20 4 0 0 0 -1 0 0 0 4 4-4disc.dat
-  [1,16,0,18,20,4,0,0,0,-1,0,0,0,4, ldraw_lib__4_4disc()],
+  [1,16,0,18,20,4,0,0,0,-1,0,0,0,4, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 4 20 4 0 0 0 14 0 0 0 4 4-4cyli.dat
-  [1,16,0,4,20,4,0,0,0,14,0,0,0,4, ldraw_lib__4_4cyli()],
+  [1,16,0,4,20,4,0,0,0,14,0,0,0,4, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 4 20 4 0 0 0 -4 0 0 0 4 2-8sphe.dat
-  [1,16,0,4,20,4,0,0,0,-4,0,0,0,4, ldraw_lib__2_8sphe()],
+  [1,16,0,4,20,4,0,0,0,-4,0,0,0,4, ldraw_lib__2_8sphe(realsolid)],
 // 1 16 0 4 20 4 0 0 0 0 4 0 -10 0 4-4cyli.dat
-  [1,16,0,4,20,4,0,0,0,0,4,0,-10,0, ldraw_lib__4_4cyli()],
+  [1,16,0,4,20,4,0,0,0,0,4,0,-10,0, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 4 10 4 0 0 0 0 4 0 -1.5 0 2-4cyli.dat
-  [1,16,0,4,10,4,0,0,0,0,4,0,-1.5,0, ldraw_lib__2_4cyli()],
+  [1,16,0,4,10,4,0,0,0,0,4,0,-1.5,0, ldraw_lib__2_4cyli(realsolid)],
 // 1 16 0 4 10 4 0 0 0 0 -4 0 -1.5 0 1-4cyls2.dat
-  [1,16,0,4,10,4,0,0,0,0,-4,0,-1.5,0, ldraw_lib__1_4cyls2()],
+  [1,16,0,4,10,4,0,0,0,0,-4,0,-1.5,0, ldraw_lib__1_4cyls2(realsolid)],
 // 1 16 0 4 10 -4 0 0 0 0 -4 0 -1.5 0 1-4cyls2.dat
-  [1,16,0,4,10,-4,0,0,0,0,-4,0,-1.5,0, ldraw_lib__1_4cyls2()],
+  [1,16,0,4,10,-4,0,0,0,0,-4,0,-1.5,0, ldraw_lib__1_4cyls2(realsolid)],
 // 1 16 0 18 20 4 0 0 0 -1 0 0 0 4 4-4edge.dat
-  [1,16,0,18,20,4,0,0,0,-1,0,0,0,4, ldraw_lib__4_4edge()],
+  [1,16,0,18,20,4,0,0,0,-1,0,0,0,4, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 4 20 4 0 0 0 1 4 0 0 -4 2-4edge.dat
-  [1,16,0,4,20,4,0,0,0,1,4,0,0,-4, ldraw_lib__2_4edge()],
+  [1,16,0,4,20,4,0,0,0,1,4,0,0,-4, ldraw_lib__2_4edge(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 16 0 8 0 0 0 -16 0 0 0 8 4-4cylc.dat
-  [1,16,0,16,0,8,0,0,0,-16,0,0,0,8, ldraw_lib__4_4cylc()],
+  [1,16,0,16,0,8,0,0,0,-16,0,0,0,8, ldraw_lib__4_4cylc(realsolid)],
 // 1 16 0 0 0 2 0 0 0 1 0 0 0 2 4-4ring4.dat
-  [1,16,0,0,0,2,0,0,0,1,0,0,0,2, ldraw_lib__4_4ring4()],
+  [1,16,0,0,0,2,0,0,0,1,0,0,0,2, ldraw_lib__4_4ring4(realsolid)],
 // 1 16 0 0 0 10 0 0 0 4 0 0 0 10 4-4cylo.dat
-  [1,16,0,0,0,10,0,0,0,4,0,0,0,10, ldraw_lib__4_4cylo()],
+  [1,16,0,0,0,10,0,0,0,4,0,0,0,10, ldraw_lib__4_4cylo(realsolid)],
 // 1 16 0 4 0 .5 0 0 0 -1 0 0 0 .5 4-4rin19.dat
-  [1,16,0,4,0,.5,0,0,0,-1,0,0,0,.5, ldraw_lib__4_4rin19()],
+  [1,16,0,4,0,.5,0,0,0,-1,0,0,0,.5, ldraw_lib__4_4rin19(realsolid)],
 // 1 16 0 18 0 9.5 0 0 0 -1 0 0 0 9.5 4-4edge.dat
-  [1,16,0,18,0,9.5,0,0,0,-1,0,0,0,9.5, ldraw_lib__4_4edge()],
+  [1,16,0,18,0,9.5,0,0,0,-1,0,0,0,9.5, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 4 0 9.5 0 0 0 -1 0 0 0 9.5 4-4edge.dat
-  [1,16,0,4,0,9.5,0,0,0,-1,0,0,0,9.5, ldraw_lib__4_4edge()],
+  [1,16,0,4,0,9.5,0,0,0,-1,0,0,0,9.5, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 18 0 9.5 0 0 0 -1 0 0 0 9.5 4-4disc.dat
-  [1,16,0,18,0,9.5,0,0,0,-1,0,0,0,9.5, ldraw_lib__4_4disc()],
+  [1,16,0,18,0,9.5,0,0,0,-1,0,0,0,9.5, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 18 0 9.5 0 0 0 -14 0 0 0 9.5 2-4cyli.dat
-  [1,16,0,18,0,9.5,0,0,0,-14,0,0,0,9.5, ldraw_lib__2_4cyli()],
+  [1,16,0,18,0,9.5,0,0,0,-14,0,0,0,9.5, ldraw_lib__2_4cyli(realsolid)],
 // 
 // 0 // Edges of intersection
 // 2 24 0 0 10 -1.5308 .3044 9.6956
@@ -131,5 +132,5 @@ function ldraw_lib__s__3899s01() = [
   [5,24,9.5,4,0,9.5,18,0,8.77705,4,-3.63565,8.77705,4,3.63565],
 ];
 module ldraw_lib__s__3899s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__3899s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__3899s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__3899s01(line=0.2);

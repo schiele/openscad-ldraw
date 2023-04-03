@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/box3u10p.scad>
 use <../p/box3u2p.scad>
 use <s/4511s01.scad>
-function ldraw_lib__4511() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4511(realsolid=false) = [
 // 0 Door  6.5 x  5 Sliding with Corrugated Surface
 // 0 Name: 4511.dat
 // 0 Author: James Jessiman
@@ -27,49 +28,49 @@ function ldraw_lib__4511() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4511s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4511s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4511s01(realsolid)],
 // 
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -116.25 0 -2 4.5 0 0 0 0 58 0 .5 0 box3u10p.dat
-  [1,16,-116.25,0,-2,4.5,0,0,0,0,58,0,.5,0, ldraw_lib__box3u10p()],
+  [1,16,-116.25,0,-2,4.5,0,0,0,0,58,0,.5,0, ldraw_lib__box3u10p(realsolid)],
 // 1 16 -108.25 0 -1.5 0 0 3.5 -58 0 0 0 -.5 0 box3u2p.dat
-  [1,16,-108.25,0,-1.5,0,0,3.5,-58,0,0,0,-.5,0, ldraw_lib__box3u2p()],
+  [1,16,-108.25,0,-1.5,0,0,3.5,-58,0,0,0,-.5,0, ldraw_lib__box3u2p(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -100.25 0 -2 4.5 0 0 0 0 58 0 .5 0 box3u10p.dat
-  [1,16,-100.25,0,-2,4.5,0,0,0,0,58,0,.5,0, ldraw_lib__box3u10p()],
+  [1,16,-100.25,0,-2,4.5,0,0,0,0,58,0,.5,0, ldraw_lib__box3u10p(realsolid)],
 // 1 16 -92.25 0 -1.5 0 0 3.5 -58 0 0 0 -.5 0 box3u2p.dat
-  [1,16,-92.25,0,-1.5,0,0,3.5,-58,0,0,0,-.5,0, ldraw_lib__box3u2p()],
+  [1,16,-92.25,0,-1.5,0,0,3.5,-58,0,0,0,-.5,0, ldraw_lib__box3u2p(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -84.25 0 -2 4.5 0 0 0 0 58 0 .5 0 box3u10p.dat
-  [1,16,-84.25,0,-2,4.5,0,0,0,0,58,0,.5,0, ldraw_lib__box3u10p()],
+  [1,16,-84.25,0,-2,4.5,0,0,0,0,58,0,.5,0, ldraw_lib__box3u10p(realsolid)],
 // 1 16 -76.25 0 -1.5 0 0 3.5 -58 0 0 0 -.5 0 box3u2p.dat
-  [1,16,-76.25,0,-1.5,0,0,3.5,-58,0,0,0,-.5,0, ldraw_lib__box3u2p()],
+  [1,16,-76.25,0,-1.5,0,0,3.5,-58,0,0,0,-.5,0, ldraw_lib__box3u2p(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -68.25 0 -2 4.5 0 0 0 0 58 0 .5 0 box3u10p.dat
-  [1,16,-68.25,0,-2,4.5,0,0,0,0,58,0,.5,0, ldraw_lib__box3u10p()],
+  [1,16,-68.25,0,-2,4.5,0,0,0,0,58,0,.5,0, ldraw_lib__box3u10p(realsolid)],
 // 1 16 -60.25 0 -1.5 0 0 3.5 -58 0 0 0 -.5 0 box3u2p.dat
-  [1,16,-60.25,0,-1.5,0,0,3.5,-58,0,0,0,-.5,0, ldraw_lib__box3u2p()],
+  [1,16,-60.25,0,-1.5,0,0,3.5,-58,0,0,0,-.5,0, ldraw_lib__box3u2p(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -52.25 0 -2 4.5 0 0 0 0 58 0 .5 0 box3u10p.dat
-  [1,16,-52.25,0,-2,4.5,0,0,0,0,58,0,.5,0, ldraw_lib__box3u10p()],
+  [1,16,-52.25,0,-2,4.5,0,0,0,0,58,0,.5,0, ldraw_lib__box3u10p(realsolid)],
 // 1 16 -44.25 0 -1.5 0 0 3.5 -58 0 0 0 -.5 0 box3u2p.dat
-  [1,16,-44.25,0,-1.5,0,0,3.5,-58,0,0,0,-.5,0, ldraw_lib__box3u2p()],
+  [1,16,-44.25,0,-1.5,0,0,3.5,-58,0,0,0,-.5,0, ldraw_lib__box3u2p(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -36.25 0 -2 4.5 0 0 0 0 58 0 .5 0 box3u10p.dat
-  [1,16,-36.25,0,-2,4.5,0,0,0,0,58,0,.5,0, ldraw_lib__box3u10p()],
+  [1,16,-36.25,0,-2,4.5,0,0,0,0,58,0,.5,0, ldraw_lib__box3u10p(realsolid)],
 // 1 16 -28.25 0 -1.5 0 0 3.5 -58 0 0 0 -.5 0 box3u2p.dat
-  [1,16,-28.25,0,-1.5,0,0,3.5,-58,0,0,0,-.5,0, ldraw_lib__box3u2p()],
+  [1,16,-28.25,0,-1.5,0,0,3.5,-58,0,0,0,-.5,0, ldraw_lib__box3u2p(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -20.25 0 -2 4.5 0 0 0 0 58 0 .5 0 box3u10p.dat
-  [1,16,-20.25,0,-2,4.5,0,0,0,0,58,0,.5,0, ldraw_lib__box3u10p()],
+  [1,16,-20.25,0,-2,4.5,0,0,0,0,58,0,.5,0, ldraw_lib__box3u10p(realsolid)],
 ];
 module ldraw_lib__4511(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4511(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4511(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4511(line=0.2);

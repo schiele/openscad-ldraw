@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/67141s01.scad>
-function ldraw_lib__67141() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__67141(realsolid=false) = [
 // 0 Technic Panel 15 x  2 x  5  Mudguard Arched with Rounded Top
 // 0 Name: 67141.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -15,9 +16,9 @@ function ldraw_lib__67141() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\67141s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__67141s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__67141s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 -1 s\67141s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__67141s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__67141s01(realsolid)],
 // 5 24 5.25 -73.4115 0 9.5 -70.4138 0 5.0689 -72.7906 21.4308 5.0689 -72.7906 -21.4308
   [5,24,5.25,-73.4115,0,9.5,-70.4138,0,5.0689,-72.7906,21.4308,5.0689,-72.7906,-21.4308],
 // 5 24 1 -76.4092 0 5.25 -73.4115 0 5.0689 -72.7906 21.4308 5.0689 -72.7906 -21.4308
@@ -42,5 +43,5 @@ function ldraw_lib__67141() = [
   [5,24,7,-69.1539,0,-.3333,-74.2359,0,-.5269,-74.1143,20.4664,-.5269,-74.1143,-20.4664],
 ];
 module ldraw_lib__67141(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__67141(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__67141(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__67141(line=0.2);

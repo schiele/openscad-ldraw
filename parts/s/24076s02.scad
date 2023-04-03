@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__24076s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__24076s02(realsolid=false) = [
 // 0 ~Minifig Headdress Shark with Tail and Fin Eye Area
 // 0 Name: s\24076s02.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -63,5 +64,5 @@ function ldraw_lib__s__24076s02() = [
   [5,24,16.479,-3.134,-4.016,17.786,3.739,-2.657,16.023,1.809,-8.384,18.936,1.869,3.712],
 ];
 module ldraw_lib__s__24076s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__24076s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__24076s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__24076s02(line=0.2);

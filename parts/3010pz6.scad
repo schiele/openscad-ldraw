@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3010s01.scad>
-function ldraw_lib__3010pz6() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3010pz6(realsolid=false) = [
 // 0 Brick  1 x  4 with Black Pectoral Muscles Pattern
 // 0 Name: 3010pz6.dat
 // 0 Author: Damien Roux [Darats]
@@ -17,7 +18,7 @@ function ldraw_lib__3010pz6() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3010s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3010s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3010s01(realsolid)],
 // 4 0 -37.27 15.76 -10 -37.46 15.58 -10 -37.47 15.79 -10 -37.46 16.04 -10
   [4,0,-37.27,15.76,-10,-37.46,15.58,-10,-37.47,15.79,-10,-37.46,16.04,-10],
 // 4 0 -37.06 15.97 -10 -37.27 15.76 -10 -37.46 16.04 -10 -37.44 16.36 -10
@@ -154,5 +155,5 @@ function ldraw_lib__3010pz6() = [
   [3,16,37.46,16.04,-10,37.44,16.36,-10,40,24,-10],
 ];
 module ldraw_lib__3010pz6(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3010pz6(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3010pz6(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3010pz6(line=0.2);

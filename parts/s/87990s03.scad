@@ -3,7 +3,8 @@ use <../../p/stud4o.scad>
 use <../../p/t04o6250.scad>
 use <../../p/t08o6250.scad>
 use <../../p/t16o6250.scad>
-function ldraw_lib__s__87990s03() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__87990s03(realsolid=false) = [
 // 0 ~Minifig Hair with Ponytail and Swept Sideways Fringe without Patternable Areas
 // 0 Name: s\87990s03.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -20,27 +21,27 @@ function ldraw_lib__s__87990s03() = [
 // 
 // 
 // 1 16 0 -4 0 1 0 0 0 -1 0 0 0 1 stud4o.dat
-  [1,16,0,-4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4o()],
+  [1,16,0,-4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4o(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 4 0 0 0 8 0 -6.4 0 8 0 0 t04o6250.dat
-  [1,16,0,4,0,0,0,8,0,-6.4,0,8,0,0, ldraw_lib__t04o6250()],
+  [1,16,0,4,0,0,0,8,0,-6.4,0,8,0,0, ldraw_lib__t04o6250(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 4 0 -8 0 0 0 -6.4 0 0 0 8 t04o6250.dat
-  [1,16,0,4,0,-8,0,0,0,-6.4,0,0,0,8, ldraw_lib__t04o6250()],
+  [1,16,0,4,0,-8,0,0,0,-6.4,0,0,0,8, ldraw_lib__t04o6250(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 4 0 -8 0 0 0 -6.4 0 0 0 -8 t08o6250.dat
-  [1,16,0,4,0,-8,0,0,0,-6.4,0,0,0,-8, ldraw_lib__t08o6250()],
+  [1,16,0,4,0,-8,0,0,0,-6.4,0,0,0,-8, ldraw_lib__t08o6250(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 4 0 8 0 0 0 -6.4 0 0 0 -8 t08o6250.dat
-  [1,16,0,4,0,8,0,0,0,-6.4,0,0,0,-8, ldraw_lib__t08o6250()],
+  [1,16,0,4,0,8,0,0,0,-6.4,0,0,0,-8, ldraw_lib__t08o6250(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 4 0 -5.65685 0 5.65685 0 -6.4 0 -5.65685 0 -5.65685 t16o6250.dat
-  [1,16,0,4,0,-5.65685,0,5.65685,0,-6.4,0,-5.65685,0,-5.65685, ldraw_lib__t16o6250()],
+  [1,16,0,4,0,-5.65685,0,5.65685,0,-6.4,0,-5.65685,0,-5.65685, ldraw_lib__t16o6250(realsolid)],
 // 3 16 -4.9751 17 12.0107 -4.877 19.856 12.972 0 17 13
   [3,16,-4.9751,17,12.0107,-4.877,19.856,12.972,0,17,13],
 // 3 16 0 17 13 -4.877 19.856 12.972 -0.039 21.706 13.436
@@ -3983,5 +3984,5 @@ function ldraw_lib__s__87990s03() = [
   [5,24,-11.36,14.741,9.622,-10.642,15.164,9.585,-12.39,14.281,8.68,-10.084,11.914,12.517],
 ];
 module ldraw_lib__s__87990s03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__87990s03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__87990s03(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__87990s03(line=0.2);

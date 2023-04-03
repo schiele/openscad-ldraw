@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4disc.scad>
 use <s/15530s01.scad>
 use <../p/stud16.scad>
-function ldraw_lib__15530() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__15530(realsolid=false) = [
 // 0 Minifig Hat Police
 // 0 Name: 15530.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -21,9 +22,9 @@ function ldraw_lib__15530() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\15530s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__15530s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__15530s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\15530s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__15530s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__15530s01(realsolid)],
 // 0 // Badge area
 // 3 16 6.608 2.082 -14.294 6.251 -3.58 -13.577 0 1.756 -15.827
   [3,16,6.608,2.082,-14.294,6.251,-3.58,-13.577,0,1.756,-15.827],
@@ -51,9 +52,9 @@ function ldraw_lib__15530() = [
   [5,24,0,-10.959,-17.463,-6.251,-3.58,-13.577,-6.215,-9.984,-15.501,0,-3.863,-14.833],
 // 
 // 1 16 0 -5 0 1 0 0 0 -1.4 0 0 0 1 stud16.dat
-  [1,16,0,-5,0,1,0,0,0,-1.4,0,0,0,1, ldraw_lib__stud16()],
+  [1,16,0,-5,0,1,0,0,0,-1.4,0,0,0,1, ldraw_lib__stud16(realsolid)],
 // 1 16 0 -5 0 6 0 0 0 -1 0 0 0 6 4-4disc.dat
-  [1,16,0,-5,0,6,0,0,0,-1,0,0,0,6, ldraw_lib__4_4disc()],
+  [1,16,0,-5,0,6,0,0,0,-1,0,0,0,6, ldraw_lib__4_4disc(realsolid)],
 // 3 16 7.17 -4.31 20.25 0 -1.878 20.487 -7.17 -4.31 20.25
   [3,16,7.17,-4.31,20.25,0,-1.878,20.487,-7.17,-4.31,20.25],
 // 2 24 7.17 -4.31 20.25 -7.17 -4.31 20.25
@@ -132,5 +133,5 @@ function ldraw_lib__15530() = [
   [5,24,-7.702,-5,1.5,-13,-6.162,0,-12.0107,-4.662,4.9751,-7.702,-5,-1.5],
 ];
 module ldraw_lib__15530(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__15530(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__15530(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__15530(line=0.2);

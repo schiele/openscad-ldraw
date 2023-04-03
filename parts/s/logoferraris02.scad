@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <logoferraris02a.scad>
-function ldraw_lib__s__logoferraris02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__logoferraris02(realsolid=false) = [
 // 0 ~Logo Ferrari Badge Rounded (since 1990)
 // 0 Name: s\logoferraris02.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -19,7 +20,7 @@ function ldraw_lib__s__logoferraris02() = [
 // 0 // External horse definition
 // 
 // 1 0 0 0 0.3 1 0 0 0 1 0 0 0 1 s\logoferraris02a.dat
-  [1,0,0,0,0.3,1,0,0,0,1,0,0,0,1, ldraw_lib__s__logoferraris02a()],
+  [1,0,0,0,0.3,1,0,0,0,1,0,0,0,1, ldraw_lib__s__logoferraris02a(realsolid)],
 // 0 // Black frame
 // 4 0 -0.6745 0 6.0223 0 0 6.04 0 0 6.375 -0.692 0 6.3569
   [4,0,-0.6745,0,6.0223,0,0,6.04,0,0,6.375,-0.692,0,6.3569],
@@ -3867,5 +3868,5 @@ function ldraw_lib__s__logoferraris02() = [
   [3,16,5.46,0,-7.6,0.3033,0,-7.4316,0,0,-7.6],
 ];
 module ldraw_lib__s__logoferraris02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__logoferraris02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__logoferraris02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__logoferraris02(line=0.2);

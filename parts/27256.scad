@@ -4,7 +4,8 @@ use <../p/2-4disc.scad>
 use <../p/4-4cylc.scad>
 use <../p/4-4ring2.scad>
 use <../p/recte4.scad>
-function ldraw_lib__27256() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__27256(realsolid=false) = [
 // 0 Minifig Lightning Bolt with Rim
 // 0 Name: 27256.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -25,19 +26,19 @@ function ldraw_lib__27256() = [
 // 
 // 0 // Primitives
 // 1 16 0 0 0 4 0 0 0 -8 0 0 0 4 4-4cylc.dat
-  [1,16,0,0,0,4,0,0,0,-8,0,0,0,4, ldraw_lib__4_4cylc()],
+  [1,16,0,0,0,4,0,0,0,-8,0,0,0,4, ldraw_lib__4_4cylc(realsolid)],
 // 1 16 0 -12 0 6 0 0 0 4 0 0 0 6 4-4cylc.dat
-  [1,16,0,-12,0,6,0,0,0,4,0,0,0,6, ldraw_lib__4_4cylc()],
+  [1,16,0,-12,0,6,0,0,0,4,0,0,0,6, ldraw_lib__4_4cylc(realsolid)],
 // 1 16 0 -8 0 2 0 0 0 -1 0 0 0 2 4-4ring2.dat
-  [1,16,0,-8,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__4_4ring2()],
+  [1,16,0,-8,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__4_4ring2(realsolid)],
 // 1 16 0 -85 2 -1.99079 0 -0.191692 0.191692 0 -1.99079 0 -4 0 2-4cylo.dat
-  [1,16,0,-85,2,-1.99079,0,-0.191692,0.191692,0,-1.99079,0,-4,0, ldraw_lib__2_4cylo()],
+  [1,16,0,-85,2,-1.99079,0,-0.191692,0.191692,0,-1.99079,0,-4,0, ldraw_lib__2_4cylo(realsolid)],
 // 1 16 0 -85 2 -1.99079 0 -0.191692 0.191692 0 -1.99079 0 -1 0 2-4disc.dat
-  [1,16,0,-85,2,-1.99079,0,-0.191692,0.191692,0,-1.99079,0,-1,0, ldraw_lib__2_4disc()],
+  [1,16,0,-85,2,-1.99079,0,-0.191692,0.191692,0,-1.99079,0,-1,0, ldraw_lib__2_4disc(realsolid)],
 // 1 16 0 -85 -2 -1.99079 0 -0.191692 0.191692 0 -1.99079 0 1 0 2-4disc.dat
-  [1,16,0,-85,-2,-1.99079,0,-0.191692,0.191692,0,-1.99079,0,1,0, ldraw_lib__2_4disc()],
+  [1,16,0,-85,-2,-1.99079,0,-0.191692,0.191692,0,-1.99079,0,1,0, ldraw_lib__2_4disc(realsolid)],
 // 1 16 0 -12 0 3.82 0 0 0 1 0 0 0 2 recte4.dat
-  [1,16,0,-12,0,3.82,0,0,0,1,0,0,0,2, ldraw_lib__recte4()],
+  [1,16,0,-12,0,3.82,0,0,0,1,0,0,0,2, ldraw_lib__recte4(realsolid)],
 // 0 // Backside
 // 4 16 .7 -25.15 2 3.82 -12 2 -3.82 -12 2 -9.75 -37 2
   [4,16,.7,-25.15,2,3.82,-12,2,-3.82,-12,2,-9.75,-37,2],
@@ -149,5 +150,5 @@ function ldraw_lib__27256() = [
   [5,24,1.9908,-85.1917,-2,1.9908,-85.1917,2,1.7659,-85.939,-2,10.12,-45.125,-2],
 ];
 module ldraw_lib__27256(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__27256(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__27256(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__27256(line=0.2);

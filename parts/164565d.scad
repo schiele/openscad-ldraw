@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__164565d() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__164565d(realsolid=false) = [
 // 0 Sticker  1.1 x  1.9 with Blue Fork and Knife
 // 0 Name: 164565d.dat
 // 0 Author: Zoltan Keri [kzoltan82]
@@ -17,7 +18,7 @@ function ldraw_lib__164565d() = [
 // 
 // 
 // 1 16 0 -0.25 0 19 0 0 0 0.25 0 0 0 11 box5-12.dat
-  [1,16,0,-0.25,0,19,0,0,0,0.25,0,0,0,11, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,19,0,0,0,0.25,0,0,0,11, ldraw_lib__box5_12(realsolid)],
 // 3 16 2.979 -0.25 -8.199 19 -0.25 -11 3.257 -0.25 -8.012
   [3,16,2.979,-0.25,-8.199,19,-0.25,-11,3.257,-0.25,-8.012],
 // 4 16 -3.352 -0.25 1.441 -4.034 -0.25 2.425 -3.197 -0.25 -7.478 -3.197 -0.25 0.957
@@ -174,5 +175,5 @@ function ldraw_lib__164565d() = [
   [3,16,-19,-0.25,-11,2.347,-0.25,-8.268,2.006,-0.25,-8.199],
 ];
 module ldraw_lib__164565d(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__164565d(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__164565d(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__164565d(line=0.2);

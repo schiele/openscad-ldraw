@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/14769s01.scad>
-function ldraw_lib__14769p02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__14769p02(realsolid=false) = [
 // 0 Tile  2 x  2 Round with Round Underside Stud with Black Squinting Eyes Wide Grin and Sharp Teeth Pattern
 // 0 Name: 14769p02.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -17,7 +18,7 @@ function ldraw_lib__14769p02() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\14769s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__14769s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__14769s01(realsolid)],
 // 4 0 7.5 0 1.5 14.6 0 3.2 14.5 0 3.8 5.4 0 1.7
   [4,0,7.5,0,1.5,14.6,0,3.2,14.5,0,3.8,5.4,0,1.7],
 // 4 0 7.5 0 1.5 5.4 0 1.7 4.9 0 0.9 5.4 0 0.4
@@ -572,5 +573,5 @@ function ldraw_lib__14769p02() = [
   [3,16,-11.2,0,1.7,-11.3,0,0.6,-9.932,0,1.1],
 ];
 module ldraw_lib__14769p02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__14769p02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__14769p02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__14769p02(line=0.2);

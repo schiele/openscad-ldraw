@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/50986s01.scad>
-function ldraw_lib__50986() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__50986(realsolid=false) = [
 // 0 Windscreen  6 x 10 x  3 Ovoid
 // 0 Name: 50986.dat
 // 0 Author: El'dar Ismagilov [Eldar]
@@ -17,13 +18,13 @@ function ldraw_lib__50986() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\50986s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__50986s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__50986s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 -1 s\50986s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__50986s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__50986s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\50986s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__50986s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__50986s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 -1 s\50986s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__50986s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__50986s01(realsolid)],
 // 5 24 -25.62 -70.7347 0 -50.991 -66.9508 0 -25.62 -65.7938 -22.2979 -25.62 -65.7938 22.2979
   [5,24,-25.62,-70.7347,0,-50.991,-66.9508,0,-25.62,-65.7938,-22.2979,-25.62,-65.7938,22.2979],
 // 5 24 0 -48.187 -47.214 0 -66.9527 -22.7782 -25.62 -65.7938 -22.2979 25.62 -65.7938 -22.2979
@@ -90,5 +91,5 @@ function ldraw_lib__50986() = [
   [5,24,96.25,-20.25,0,100,-20.25,0,100,-19.4127,-3.125,96.25,-19.4127,3.125],
 ];
 module ldraw_lib__50986(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__50986(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__50986(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__50986(line=0.2);

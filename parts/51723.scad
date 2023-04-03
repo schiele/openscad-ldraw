@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <30031.scad>
-function ldraw_lib__51723() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__51723(realsolid=false) = [
 // 0 =Minifig Handlebars
 // 0 Name: 51723.dat
 // 0 Author: [PTadmin]
@@ -18,9 +19,9 @@ function ldraw_lib__51723() = [
 // 0 // Part 51723 is the lacquered counterpart of 30031
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 30031.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__30031()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__30031(realsolid)],
 // 0
 ];
 module ldraw_lib__51723(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__51723(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__51723(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__51723(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <820671a.scad>
-function ldraw_lib__s10() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s10(realsolid=false) = [
 // 0 ~Moved to 820671a
 // 0 Name: s10.dat
 // 0 Author: [PTadmin]
@@ -16,8 +17,8 @@ function ldraw_lib__s10() = [
 // 
 // 0 // Sticker 1.9 x 1.9 Round with Lifepreserver
 // 1 47 0 0 0 1 0 0 0 1 0 0 0 1 820671a.dat
-  [1,47,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__820671a()],
+  [1,47,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__820671a(realsolid)],
 ];
 module ldraw_lib__s10(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s10(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s10(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s10(line=0.2);

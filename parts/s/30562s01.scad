@@ -5,7 +5,8 @@ use <../../p/48/1-4rin18.scad>
 use <../../p/48/1-4ring3.scad>
 use <../../p/48/1-4ring5.scad>
 use <../../p/stud2.scad>
-function ldraw_lib__s__30562s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__30562s01(realsolid=false) = [
 // 0 ~Panel  4 x  4 x  6 Corner Round without Outer Face
 // 0 Name: s\30562s01.dat
 // 0 Author: Franklin W. Cain [fwcain]
@@ -30,11 +31,11 @@ function ldraw_lib__s__30562s01() = [
 // 0 // Needs work: the underside for blocks around the stud holes.
 // 
 // 1 16 70 0 -10 1 0 0 0 1 0 0 0 1 stud2.dat
-  [1,16,70,0,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2()],
+  [1,16,70,0,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2(realsolid)],
 // 1 16 50 0 -50 1 0 0 0 1 0 0 0 1 stud2.dat
-  [1,16,50,0,-50,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2()],
+  [1,16,50,0,-50,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2(realsolid)],
 // 1 16 10 0 -70 1 0 0 0 1 0 0 0 1 stud2.dat
-  [1,16,10,0,-70,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2()],
+  [1,16,10,0,-70,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2(realsolid)],
 // 
 // 4 16 0 0 -60 0 4 -60 0 4 -80 0 0 -80
   [4,16,0,0,-60,0,4,-60,0,4,-80,0,0,-80],
@@ -79,32 +80,32 @@ function ldraw_lib__s__30562s01() = [
   [2,24,80,144,0,80,136,0],
 // 
 // 1 16 0 0 0 20 0 0 0 1 0 0 0 -20 48\1-4ring3.dat
-  [1,16,0,0,0,20,0,0,0,1,0,0,0,-20, ldraw_lib__48__1_4ring3()],
+  [1,16,0,0,0,20,0,0,0,1,0,0,0,-20, ldraw_lib__48__1_4ring3(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 0 60 0 0 0 4 0 0 0 -60 48\1-4cyli.dat
-  [1,16,0,0,0,60,0,0,0,4,0,0,0,-60, ldraw_lib__48__1_4cyli()],
+  [1,16,0,0,0,60,0,0,0,4,0,0,0,-60, ldraw_lib__48__1_4cyli(realsolid)],
 // 
 // 1 16 0 4 0 12 0 0 0 -1 0 0 0 -12 48\1-4ring5.dat
-  [1,16,0,4,0,12,0,0,0,-1,0,0,0,-12, ldraw_lib__48__1_4ring5()],
+  [1,16,0,4,0,12,0,0,0,-1,0,0,0,-12, ldraw_lib__48__1_4ring5(realsolid)],
 // 1 16 0 4 0 4 0 0 0 -1 0 0 0 -4 48\1-4rin18.dat
-  [1,16,0,4,0,4,0,0,0,-1,0,0,0,-4, ldraw_lib__48__1_4rin18()],
+  [1,16,0,4,0,4,0,0,0,-1,0,0,0,-4, ldraw_lib__48__1_4rin18(realsolid)],
 // 
 // 1 16 0 0 0 60 0 0 0 1 0 0 0 -60 48\1-4edge.dat
-  [1,16,0,0,0,60,0,0,0,1,0,0,0,-60, ldraw_lib__48__1_4edge()],
+  [1,16,0,0,0,60,0,0,0,1,0,0,0,-60, ldraw_lib__48__1_4edge(realsolid)],
 // 1 16 0 0 0 80 0 0 0 1 0 0 0 -80 48\1-4edge.dat
-  [1,16,0,0,0,80,0,0,0,1,0,0,0,-80, ldraw_lib__48__1_4edge()],
+  [1,16,0,0,0,80,0,0,0,1,0,0,0,-80, ldraw_lib__48__1_4edge(realsolid)],
 // 
 // 1 16 0 4 0 76 0 0 0 132 0 0 0 -76 48\1-4edge.dat
-  [1,16,0,4,0,76,0,0,0,132,0,0,0,-76, ldraw_lib__48__1_4edge()],
+  [1,16,0,4,0,76,0,0,0,132,0,0,0,-76, ldraw_lib__48__1_4edge(realsolid)],
 // 
 // 1 16 0 136 0 12 0 0 0 1 0 0 0 -12 48\1-4ring5.dat
-  [1,16,0,136,0,12,0,0,0,1,0,0,0,-12, ldraw_lib__48__1_4ring5()],
+  [1,16,0,136,0,12,0,0,0,1,0,0,0,-12, ldraw_lib__48__1_4ring5(realsolid)],
 // 1 16 0 136 0 4 0 0 0 1 0 0 0 -4 48\1-4rin18.dat
-  [1,16,0,136,0,4,0,0,0,1,0,0,0,-4, ldraw_lib__48__1_4rin18()],
+  [1,16,0,136,0,4,0,0,0,1,0,0,0,-4, ldraw_lib__48__1_4rin18(realsolid)],
 // 
 // 1 16 0 136 0 60 0 0 0 1 0 0 0 -60 48\1-4edge.dat
-  [1,16,0,136,0,60,0,0,0,1,0,0,0,-60, ldraw_lib__48__1_4edge()],
+  [1,16,0,136,0,60,0,0,0,1,0,0,0,-60, ldraw_lib__48__1_4edge(realsolid)],
 // 
 // 0 notch level surface edges
 // 2 24 75.845 140 -4 75.35 140 -9.92
@@ -675,13 +676,13 @@ function ldraw_lib__s__30562s01() = [
   [4,16,38.963,140,-50.778,45.254,140,-45.254,53.74,140,-53.74,46.269,140,-60.298],
 // 
 // 1 16 0 4 0 60 0 0 0 1 0 0 0 -60 48\1-4edge.dat
-  [1,16,0,4,0,60,0,0,0,1,0,0,0,-60, ldraw_lib__48__1_4edge()],
+  [1,16,0,4,0,60,0,0,0,1,0,0,0,-60, ldraw_lib__48__1_4edge(realsolid)],
 // 
 // 0 Cylinder wall(s)
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 4 0 0 0 76 0 132 0 -76 0 0 48\1-4cyli.dat
-  [1,16,0,4,0,0,0,76,0,132,0,-76,0,0, ldraw_lib__48__1_4cyli()],
+  [1,16,0,4,0,0,0,76,0,132,0,-76,0,0, ldraw_lib__48__1_4cyli(realsolid)],
 // 
 // 2 24 76 136 0 76 4 0
   [2,24,76,136,0,76,4,0],
@@ -697,8 +698,8 @@ function ldraw_lib__s__30562s01() = [
   [4,16,0,136,-80,0,4,-80,0,4,-76,0,136,-76],
 // 
 // 1 16 0 136 0 0 0 76 0 132 0 -76 0 0 48\1-4edge.dat
-  [1,16,0,136,0,0,0,76,0,132,0,-76,0,0, ldraw_lib__48__1_4edge()],
+  [1,16,0,136,0,0,0,76,0,132,0,-76,0,0, ldraw_lib__48__1_4edge(realsolid)],
 ];
 module ldraw_lib__s__30562s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__30562s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__30562s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__30562s01(line=0.2);

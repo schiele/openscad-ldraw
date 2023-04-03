@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3039s01.scad>
-function ldraw_lib__3039p0a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3039p0a(realsolid=false) = [
 // 0 Slope Brick 45  2 x  2 with Silver Grille and Black Rivets Pattern
 // 0 Name: 3039p0a.dat
 // 0 Author: Fredrik Hareide [fhareide]
@@ -17,7 +18,7 @@ function ldraw_lib__3039p0a() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3039s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3039s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3039s01(realsolid)],
 // 
 // 0 // Black
 // 4 0 -9.1001 16.2482 -26.2482 -16.0465 16.1413 -26.1413 -16.0586 17.5335 -27.5335 -9.0279 17.7057 -27.7057
@@ -430,5 +431,5 @@ function ldraw_lib__3039p0a() = [
   [3,80,0,2.6996,-12.6996,0,4.4752,-14.4752,5.5583,4.4923,-14.4923],
 ];
 module ldraw_lib__3039p0a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3039p0a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3039p0a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3039p0a(line=0.2);

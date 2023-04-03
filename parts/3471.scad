@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/rect2p.scad>
 use <s/3471s01.scad>
-function ldraw_lib__3471() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3471(realsolid=false) = [
 // 0 Plant Tree Pyramidal  4 x  4 x  6.667 Type 1
 // 0 Name: 3471.dat
 // 0 Author: Tore Eriksson [Tore_Eriksson]
@@ -26,11 +27,11 @@ function ldraw_lib__3471() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3471s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3471s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3471s01(realsolid)],
 // 1 16 0 -58 31 0 0 6 0 -1 0 3 0 0 rect2p.dat
-  [1,16,0,-58,31,0,0,6,0,-1,0,3,0,0, ldraw_lib__rect2p()],
+  [1,16,0,-58,31,0,0,6,0,-1,0,3,0,0, ldraw_lib__rect2p(realsolid)],
 // 1 16 0 -64 30.735 0 0 -6 0 1 0 2.735 0 0 rect2p.dat
-  [1,16,0,-64,30.735,0,0,-6,0,1,0,2.735,0,0, ldraw_lib__rect2p()],
+  [1,16,0,-64,30.735,0,0,-6,0,1,0,2.735,0,0, ldraw_lib__rect2p(realsolid)],
 // 3 16 6 -64 33.47 0 -64 34 -6 -64 33.47
   [3,16,6,-64,33.47,0,-64,34,-6,-64,33.47],
 // 2 24 6 -58 34 11.83 -58 34
@@ -76,9 +77,9 @@ function ldraw_lib__3471() = [
 // 5 24 -6 -64 33.47 0 -58 36 -11.83 -58 34 0 -64 34
   [5,24,-6,-64,33.47,0,-58,36,-11.83,-58,34,0,-64,34],
 // 1 16 0 -58 -31 0 0 6 0 -1 0 -3 0 0 rect2p.dat
-  [1,16,0,-58,-31,0,0,6,0,-1,0,-3,0,0, ldraw_lib__rect2p()],
+  [1,16,0,-58,-31,0,0,6,0,-1,0,-3,0,0, ldraw_lib__rect2p(realsolid)],
 // 1 16 0 -64 -30.735 0 0 -6 0 1 0 -2.735 0 0 rect2p.dat
-  [1,16,0,-64,-30.735,0,0,-6,0,1,0,-2.735,0,0, ldraw_lib__rect2p()],
+  [1,16,0,-64,-30.735,0,0,-6,0,1,0,-2.735,0,0, ldraw_lib__rect2p(realsolid)],
 // 3 16 -6 -64 -33.47 0 -64 -34 6 -64 -33.47
   [3,16,-6,-64,-33.47,0,-64,-34,6,-64,-33.47],
 // 2 24 6 -58 -34 11.83 -58 -34
@@ -130,5 +131,5 @@ function ldraw_lib__3471() = [
 // 
 ];
 module ldraw_lib__3471(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3471(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3471(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3471(line=0.2);

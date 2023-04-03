@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <7049b.scad>
-function ldraw_lib__7049() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__7049(realsolid=false) = [
 // 0 ~Moved to 7049b
 // 0 Name: 7049.dat
 // 0 Author: [PTadmin]
@@ -17,8 +18,8 @@ function ldraw_lib__7049() = [
 // 0 // Brick 2 x 4 with Wheels Holder (Trans-Clear Bottom)
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 7049b.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__7049b()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__7049b(realsolid)],
 ];
 module ldraw_lib__7049(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__7049(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__7049(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__7049(line=0.2);

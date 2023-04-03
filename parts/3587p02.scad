@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/1-4ering.scad>
 use <../p/1-8ering.scad>
 use <s/3587s01.scad>
-function ldraw_lib__3587p02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3587p02(realsolid=false) = [
 // 0 Tail  2 x  5 x  3.667 Plane with 3 Red Arrows Pattern
 // 0 Name: 3587p02.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -19,12 +20,12 @@ function ldraw_lib__3587p02() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3587s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3587s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3587s01(realsolid)],
 // 0 // Left
 // 1 16 2 -70 64 0 -1 0 -10 0 0 0 0 10 1-4ering.dat
-  [1,16,2,-70,64,0,-1,0,-10,0,0,0,0,10, ldraw_lib__1_4ering()],
+  [1,16,2,-70,64,0,-1,0,-10,0,0,0,0,10, ldraw_lib__1_4ering(realsolid)],
 // 1 16 2 -50 64 0 -1 0 -30 0 0 0 0 -30 1-8ering.dat
-  [1,16,2,-50,64,0,-1,0,-30,0,0,0,0,-30, ldraw_lib__1_8ering()],
+  [1,16,2,-50,64,0,-1,0,-30,0,0,0,0,-30, ldraw_lib__1_8ering(realsolid)],
 // 4 4 -2 -54 61.7 -2 -54 68.9 -2 -39 54.3 -2 -39 47.2
   [4,4,-2,-54,61.7,-2,-54,68.9,-2,-39,54.3,-2,-39,47.2],
 // 4 4 -2 -24 60.1 -2 -39 47.2 -2 -39 54.3 -2 -24 67
@@ -81,9 +82,9 @@ function ldraw_lib__3587p02() = [
   [4,16,-2,-24,38.1,-2,-39,25.4,-2,-39,32.8,-2,-24,45.7],
 // 0 // Right
 // 1 16 -2 -70 64 0 1 0 -10 0 0 0 0 10 1-4ering.dat
-  [1,16,-2,-70,64,0,1,0,-10,0,0,0,0,10, ldraw_lib__1_4ering()],
+  [1,16,-2,-70,64,0,1,0,-10,0,0,0,0,10, ldraw_lib__1_4ering(realsolid)],
 // 1 16 -2 -50 64 0 1 0 -30 0 0 0 0 -30 1-8ering.dat
-  [1,16,-2,-50,64,0,1,0,-30,0,0,0,0,-30, ldraw_lib__1_8ering()],
+  [1,16,-2,-50,64,0,1,0,-30,0,0,0,0,-30, ldraw_lib__1_8ering(realsolid)],
 // 4 4 2 -39 54.3 2 -54 68.9 2 -54 61.7 2 -39 47.2
   [4,4,2,-39,54.3,2,-54,68.9,2,-54,61.7,2,-39,47.2],
 // 4 4 2 -39 54.3 2 -39 47.2 2 -24 60.1 2 -24 67
@@ -140,5 +141,5 @@ function ldraw_lib__3587p02() = [
   [4,16,2,-39,32.8,2,-39,25.4,2,-24,38.1,2,-24,45.7],
 ];
 module ldraw_lib__3587p02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3587p02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3587p02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3587p02(line=0.2);

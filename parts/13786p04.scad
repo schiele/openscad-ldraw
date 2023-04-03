@@ -2,7 +2,8 @@ use <../lib.scad>
 use <s/13786s01.scad>
 use <s/13786s02.scad>
 use <s/13786s03.scad>
-function ldraw_lib__13786p04() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__13786p04(realsolid=false) = [
 // 0 Animal Cat Standing Looking Forward with Black Eyes, Tan Chin, Nougat Nose and Reddish Brown Stripes on Forehead Pattern
 // 0 Name: 13786p04.dat
 // 0 Author: Willy Tschager [Holly-Wood]
@@ -23,15 +24,15 @@ function ldraw_lib__13786p04() = [
 // 0 // Subfile without Patterns
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\13786s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__13786s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__13786s01(realsolid)],
 // 
 // 0 // Filling Stripes Area
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\13786s02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__13786s02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__13786s02(realsolid)],
 // 
 // 0 // Chest
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\13786s03.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__13786s03()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__13786s03(realsolid)],
 // 
 // 0 // Head
 // 3 70 0 -48.049 -5.049 0 -48.13 -4.386 -.162 -48.114 -4.415
@@ -958,5 +959,5 @@ function ldraw_lib__13786p04() = [
   [3,16,1.391,-41.838,-14.753,1.47,-41.881,-14.733,1.516,-41.98,-14.707],
 ];
 module ldraw_lib__13786p04(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__13786p04(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__13786p04(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__13786p04(line=0.2);

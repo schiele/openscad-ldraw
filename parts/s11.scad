@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3069bs18.scad>
-function ldraw_lib__s11() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s11(realsolid=false) = [
 // 0 Sticker  1.2 x  6 with Thin Black "POLICE"
 // 0 Name: s11.dat
 // 0 Author: Steffen [Steffen]
@@ -17,7 +18,7 @@ function ldraw_lib__s11() = [
 // 
 // 
 // 1 15 0 -0.25 0 2.1 0 0 0 2.1 0 0 0 1.5 s\3069bs18.dat
-  [1,15,0,-0.25,0,2.1,0,0,0,2.1,0,0,0,1.5, ldraw_lib__s__3069bs18()],
+  [1,15,0,-0.25,0,2.1,0,0,0,2.1,0,0,0,1.5, ldraw_lib__s__3069bs18(realsolid)],
 // 4 15 -60 -0.25 12 -35.7 -0.25 12 -35.7 -0.25 -12 -60 -0.25 -12
   [4,15,-60,-0.25,12,-35.7,-0.25,12,-35.7,-0.25,-12,-60,-0.25,-12],
 // 4 15 -35.7 -0.25 12 35.7 -0.25 12 35.7 -0.25 7.5 -35.7 -0.25 7.5
@@ -39,5 +40,5 @@ function ldraw_lib__s11() = [
 // 0
 ];
 module ldraw_lib__s11(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s11(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s11(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s11(line=0.2);

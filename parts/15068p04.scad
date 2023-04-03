@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/15068s01.scad>
-function ldraw_lib__15068p04() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__15068p04(realsolid=false) = [
 // 0 Slope Brick Curved  2 x  2 x  0.667 with Ghostbusters Logo Pattern
 // 0 Name: 15068p04.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -15,7 +16,7 @@ function ldraw_lib__15068p04() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\15068s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__15068s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__15068s01(realsolid)],
 // 
 // 4 0 -0.762 -7.501 -14.485 -0.178 -7.501 -14.485 -0.01 -7.532 -14.436 -0.949 -7.532 -14.436
   [4,0,-0.762,-7.501,-14.485,-0.178,-7.501,-14.485,-0.01,-7.532,-14.436,-0.949,-7.532,-14.436],
@@ -1278,5 +1279,5 @@ function ldraw_lib__15068p04() = [
   [5,24,20,-15.652,12.616,-20,-15.652,12.616,20,-16,20,20,-14.604,5.36],
 ];
 module ldraw_lib__15068p04(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__15068p04(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__15068p04(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__15068p04(line=0.2);

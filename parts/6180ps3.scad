@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/6180ps1s01.scad>
 use <s/6180s01.scad>
-function ldraw_lib__6180ps3() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6180ps3(realsolid=false) = [
 // 0 Plate  4 x  6 with 12 Studs on Three Edges with Lego and Star Wars Logos and "TIE FIGHTER PILOT" Pattern
 // 0 Name: 6180ps3.dat
 // 0 Author: Vincent Messenet [Cheenzo]
@@ -18,9 +19,9 @@ function ldraw_lib__6180ps3() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\6180s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6180s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6180s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\6180ps1s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6180ps1s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6180ps1s01(realsolid)],
 // 
 // 0 // T
 // 3 15 25.6 0 1.321 27 0 0 27 0 1.321
@@ -707,5 +708,5 @@ function ldraw_lib__6180ps3() = [
   [4,16,-29,0,16,-17.5,0,11.25,-17,0,11.25,-11.05,0,15],
 ];
 module ldraw_lib__6180ps3(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6180ps3(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6180ps3(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6180ps3(line=0.2);

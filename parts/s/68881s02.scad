@@ -2,7 +2,8 @@ use <../../lib.scad>
 use <../../p/rect.scad>
 use <68881s03.scad>
 use <../../p/stud3.scad>
-function ldraw_lib__s__68881s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__68881s02(realsolid=false) = [
 // 0 ~Brick 10 x  5 x  2.667 Semi Circle with Curved Top, Main Colour - without Patternable Surface
 // 0 Name: s\68881s02.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -17,9 +18,9 @@ function ldraw_lib__s__68881s02() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\68881s03.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__68881s03()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__68881s03(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\68881s03.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__68881s03()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__68881s03(realsolid)],
 // 
 // 3 16 0 -35.5 16 -40 -24 16 40 -24 16
   [3,16,0,-35.5,16,-40,-24,16,40,-24,16],
@@ -31,12 +32,12 @@ function ldraw_lib__s__68881s02() = [
   [3,16,40,-24,0,0,-40,0,-40,-24,0],
 // 
 // 1 16 0 -24 2 40 0 0 0 -1 0 0 0 2 rect.dat
-  [1,16,0,-24,2,40,0,0,0,-1,0,0,0,2, ldraw_lib__rect()],
+  [1,16,0,-24,2,40,0,0,0,-1,0,0,0,2, ldraw_lib__rect(realsolid)],
 // 1 16 0 -24 18 40 0 0 0 -1 0 0 0 2 rect.dat
-  [1,16,0,-24,18,40,0,0,0,-1,0,0,0,2, ldraw_lib__rect()],
+  [1,16,0,-24,18,40,0,0,0,-1,0,0,0,2, ldraw_lib__rect(realsolid)],
 // 
 // 1 16 0 -36 10 1 0 0 0 -3 0 0 0 1 stud3.dat
-  [1,16,0,-36,10,1,0,0,0,-3,0,0,0,1, ldraw_lib__stud3()],
+  [1,16,0,-36,10,1,0,0,0,-3,0,0,0,1, ldraw_lib__stud3(realsolid)],
 // 
 // 5 24 0 -38.6754 20.21 0 -34.7241 40.0743 -5.2307 -34.7241 39.7314 5.2307 -34.7241 39.7314
   [5,24,0,-38.6754,20.21,0,-34.7241,40.0743,-5.2307,-34.7241,39.7314,5.2307,-34.7241,39.7314],
@@ -57,5 +58,5 @@ function ldraw_lib__s__68881s02() = [
   [5,24,0,-30.8027,39.4775,0,-34.677,20,2.6331,-34.6427,20,-2.6331,-34.6427,20],
 ];
 module ldraw_lib__s__68881s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__68881s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__68881s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__68881s02(line=0.2);

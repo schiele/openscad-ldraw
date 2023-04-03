@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__4603014e() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4603014e(realsolid=false) = [
 // 0 Sticker  2.3 x  2.9 with Two Cupcakes
 // 0 Name: 4603014e.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -17,7 +18,7 @@ function ldraw_lib__4603014e() = [
 // 
 // 
 // 1 16 0 -0.25 0 29 0 0 0 0.25 0 0 0 23 box5-12.dat
-  [1,16,0,-0.25,0,29,0,0,0,0.25,0,0,0,23, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,29,0,0,0,0.25,0,0,0,23, ldraw_lib__box5_12(realsolid)],
 // 3 9 -29 -0.25 23 -25 -0.25 18.1 -25 -0.25 19
   [3,9,-29,-0.25,23,-25,-0.25,18.1,-25,-0.25,19],
 // 4 9 -29 -0.25 23 -25 -0.25 19 -24.5 -0.25 19.5 -24.3 -0.25 23
@@ -1196,5 +1197,5 @@ function ldraw_lib__4603014e() = [
   [3,15,-21.8,-0.25,19.5,-24.5,-0.25,19.5,-15.9,-0.25,12.7],
 ];
 module ldraw_lib__4603014e(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4603014e(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4603014e(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4603014e(line=0.2);

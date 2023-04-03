@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4edge.scad>
 use <../p/4-4ndis.scad>
-function ldraw_lib__u1023d() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__u1023d(realsolid=false) = [
 // 0 Sheet Plastic 10 x 17 Trapezoidal
 // 0 Name: u1023d.dat
 // 0 Author: Marek Idec [Maras]
@@ -58,13 +59,13 @@ function ldraw_lib__u1023d() = [
   [2,24,-17.5,0,-17.5,-17.5,0,207.9],
 // 
 // 1 16 0 0 0 8 0 0 0 1 0 0 0 8 4-4edge.dat
-  [1,16,0,0,0,8,0,0,0,1,0,0,0,8, ldraw_lib__4_4edge()],
+  [1,16,0,0,0,8,0,0,0,1,0,0,0,8, ldraw_lib__4_4edge(realsolid)],
 // 1 16 160 0 240 8 0 0 0 1 0 0 0 8 4-4edge.dat
-  [1,16,160,0,240,8,0,0,0,1,0,0,0,8, ldraw_lib__4_4edge()],
+  [1,16,160,0,240,8,0,0,0,1,0,0,0,8, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 0 200 8 0 0 0 1 0 0 0 8 4-4edge.dat
-  [1,16,0,0,200,8,0,0,0,1,0,0,0,8, ldraw_lib__4_4edge()],
+  [1,16,0,0,200,8,0,0,0,1,0,0,0,8, ldraw_lib__4_4edge(realsolid)],
 // 1 16 160 0 0 8 0 0 0 1 0 0 0 8 4-4edge.dat
-  [1,16,160,0,0,8,0,0,0,1,0,0,0,8, ldraw_lib__4_4edge()],
+  [1,16,160,0,0,8,0,0,0,1,0,0,0,8, ldraw_lib__4_4edge(realsolid)],
 // 
 // 0 Bottom edges
 // 2 24 -17.5 1.5 -17.5 17.5 1.5 -17.5
@@ -103,13 +104,13 @@ function ldraw_lib__u1023d() = [
   [2,24,-17.5,1.5,207.9,-17.5,1.5,-17.5],
 // 
 // 1 16 0 1.5 0 8 0 0 0 1 0 0 0 8 4-4edge.dat
-  [1,16,0,1.5,0,8,0,0,0,1,0,0,0,8, ldraw_lib__4_4edge()],
+  [1,16,0,1.5,0,8,0,0,0,1,0,0,0,8, ldraw_lib__4_4edge(realsolid)],
 // 1 16 160 1.5 240 8 0 0 0 1 0 0 0 8 4-4edge.dat
-  [1,16,160,1.5,240,8,0,0,0,1,0,0,0,8, ldraw_lib__4_4edge()],
+  [1,16,160,1.5,240,8,0,0,0,1,0,0,0,8, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 1.5 200 8 0 0 0 1 0 0 0 8 4-4edge.dat
-  [1,16,0,1.5,200,8,0,0,0,1,0,0,0,8, ldraw_lib__4_4edge()],
+  [1,16,0,1.5,200,8,0,0,0,1,0,0,0,8, ldraw_lib__4_4edge(realsolid)],
 // 1 16 160 1.5 0 8 0 0 0 1 0 0 0 8 4-4edge.dat
-  [1,16,160,1.5,0,8,0,0,0,1,0,0,0,8, ldraw_lib__4_4edge()],
+  [1,16,160,1.5,0,8,0,0,0,1,0,0,0,8, ldraw_lib__4_4edge(realsolid)],
 // 
 // 0 Side edges
 // 2 24 -17.5 1.5 -17.5 -17.5 0 -17.5
@@ -198,13 +199,13 @@ function ldraw_lib__u1023d() = [
   [4,16,167.5,0,140,17.5,0,12.5,142.5,0,12.5,177.5,0,140],
 // 
 // 1 16 0 0 0 8 0 0 0 1 0 0 0 8 4-4ndis.dat
-  [1,16,0,0,0,8,0,0,0,1,0,0,0,8, ldraw_lib__4_4ndis()],
+  [1,16,0,0,0,8,0,0,0,1,0,0,0,8, ldraw_lib__4_4ndis(realsolid)],
 // 1 16 160 0 240 8 0 0 0 1 0 0 0 8 4-4ndis.dat
-  [1,16,160,0,240,8,0,0,0,1,0,0,0,8, ldraw_lib__4_4ndis()],
+  [1,16,160,0,240,8,0,0,0,1,0,0,0,8, ldraw_lib__4_4ndis(realsolid)],
 // 1 16 0 0 200 8 0 0 0 1 0 0 0 8 4-4ndis.dat
-  [1,16,0,0,200,8,0,0,0,1,0,0,0,8, ldraw_lib__4_4ndis()],
+  [1,16,0,0,200,8,0,0,0,1,0,0,0,8, ldraw_lib__4_4ndis(realsolid)],
 // 1 16 160 0 0 8 0 0 0 1 0 0 0 8 4-4ndis.dat
-  [1,16,160,0,0,8,0,0,0,1,0,0,0,8, ldraw_lib__4_4ndis()],
+  [1,16,160,0,0,8,0,0,0,1,0,0,0,8, ldraw_lib__4_4ndis(realsolid)],
 // 
 // 0 Bottom surface
 // 4 16 -17.5 1.5 207.9 -17.1593 1.5 210.5 -8 1.5 208 -8 1.5 192
@@ -257,13 +258,13 @@ function ldraw_lib__u1023d() = [
   [4,16,152,1.5,-8,142.5,1.5,-17.5,142.5,1.5,12.5,152,1.5,8],
 // 
 // 1 16 0 1.5 0 -8 0 0 0 -1 0 0 0 8 4-4ndis.dat
-  [1,16,0,1.5,0,-8,0,0,0,-1,0,0,0,8, ldraw_lib__4_4ndis()],
+  [1,16,0,1.5,0,-8,0,0,0,-1,0,0,0,8, ldraw_lib__4_4ndis(realsolid)],
 // 1 16 160 1.5 240 -8 0 0 0 -1 0 0 0 8 4-4ndis.dat
-  [1,16,160,1.5,240,-8,0,0,0,-1,0,0,0,8, ldraw_lib__4_4ndis()],
+  [1,16,160,1.5,240,-8,0,0,0,-1,0,0,0,8, ldraw_lib__4_4ndis(realsolid)],
 // 1 16 0 1.5 200 -8 0 0 0 -1 0 0 0 8 4-4ndis.dat
-  [1,16,0,1.5,200,-8,0,0,0,-1,0,0,0,8, ldraw_lib__4_4ndis()],
+  [1,16,0,1.5,200,-8,0,0,0,-1,0,0,0,8, ldraw_lib__4_4ndis(realsolid)],
 // 1 16 160 1.5 0 -8 0 0 0 -1 0 0 0 8 4-4ndis.dat
-  [1,16,160,1.5,0,-8,0,0,0,-1,0,0,0,8, ldraw_lib__4_4ndis()],
+  [1,16,160,1.5,0,-8,0,0,0,-1,0,0,0,8, ldraw_lib__4_4ndis(realsolid)],
 // 
 // 0 Side surfaces
 // 4 16 -17.5 1.5 -17.5 17.5 1.5 -17.5 17.5 0 -17.5 -17.5 0 -17.5
@@ -303,21 +304,21 @@ function ldraw_lib__u1023d() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 0 8 0 0 0 1.5 0 0 0 8 4-4cyli.dat
-  [1,16,0,0,0,8,0,0,0,1.5,0,0,0,8, ldraw_lib__4_4cyli()],
+  [1,16,0,0,0,8,0,0,0,1.5,0,0,0,8, ldraw_lib__4_4cyli(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 160 0 240 8 0 0 0 1.5 0 0 0 8 4-4cyli.dat
-  [1,16,160,0,240,8,0,0,0,1.5,0,0,0,8, ldraw_lib__4_4cyli()],
+  [1,16,160,0,240,8,0,0,0,1.5,0,0,0,8, ldraw_lib__4_4cyli(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 200 8 0 0 0 1.5 0 0 0 8 4-4cyli.dat
-  [1,16,0,0,200,8,0,0,0,1.5,0,0,0,8, ldraw_lib__4_4cyli()],
+  [1,16,0,0,200,8,0,0,0,1.5,0,0,0,8, ldraw_lib__4_4cyli(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 160 0 0 8 0 0 0 1.5 0 0 0 8 4-4cyli.dat
-  [1,16,160,0,0,8,0,0,0,1.5,0,0,0,8, ldraw_lib__4_4cyli()],
+  [1,16,160,0,0,8,0,0,0,1.5,0,0,0,8, ldraw_lib__4_4cyli(realsolid)],
 // 0
 ];
 module ldraw_lib__u1023d(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__u1023d(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__u1023d(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__u1023d(line=0.2);

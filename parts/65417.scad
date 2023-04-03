@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/box4.scad>
 use <s/65417s01.scad>
-function ldraw_lib__65417() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__65417(realsolid=false) = [
 // 0 Boat Hull Floating 36 x  7 x  7 Bottom
 // 0 Name: 65417.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -18,9 +19,9 @@ function ldraw_lib__65417() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\65417s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__65417s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__65417s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\65417s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__65417s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__65417s01(realsolid)],
 // 3 16 -12 130 240 0 123.5851 269.9472 12 130 240
   [3,16,-12,130,240,0,123.5851,269.9472,12,130,240],
 // 4 16 -10 130 50 -12 130 240 12 130 240 10 130 50
@@ -44,13 +45,13 @@ function ldraw_lib__65417() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 130 20 10 0 0 0 -100 0 0 0 30 box4.dat
-  [1,16,0,130,20,10,0,0,0,-100,0,0,0,30, ldraw_lib__box4()],
+  [1,16,0,130,20,10,0,0,0,-100,0,0,0,30, ldraw_lib__box4(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 30 20 12 0 0 0 -2 0 0 0 32 box4.dat
-  [1,16,0,30,20,12,0,0,0,-2,0,0,0,32, ldraw_lib__box4()],
+  [1,16,0,30,20,12,0,0,0,-2,0,0,0,32, ldraw_lib__box4(realsolid)],
 // 1 16 0 127 20 14 0 0 0 -99 0 0 0 34 box4.dat
-  [1,16,0,127,20,14,0,0,0,-99,0,0,0,34, ldraw_lib__box4()],
+  [1,16,0,127,20,14,0,0,0,-99,0,0,0,34, ldraw_lib__box4(realsolid)],
 // 4 16 12 28 52 14 28 54 -14 28 54 -12 28 52
   [4,16,12,28,52,14,28,54,-14,28,54,-12,28,52],
 // 4 16 -12 30 52 -10 30 50 10 30 50 12 30 52
@@ -237,5 +238,5 @@ function ldraw_lib__65417() = [
   [5,24,14,127,-14,14,127,-107.6492,-14,127,-14,49.3181,115.1477,-30.9994],
 ];
 module ldraw_lib__65417(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__65417(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__65417(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__65417(line=0.2);

@@ -2,7 +2,8 @@ use <../lib.scad>
 use <s/3822s01.scad>
 use <s/4209s01.scad>
 use <../p/stud.scad>
-function ldraw_lib__3822p09() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3822p09(realsolid=false) = [
 // 0 Door  1 x  3 x  1 Left with Fire Logo Pattern
 // 0 Name: 3822p09.dat
 // 0 Author: John Riley [jriley]
@@ -23,9 +24,9 @@ function ldraw_lib__3822p09() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3822s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3822s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3822s01(realsolid)],
 // 1 16 10 12 18 0 -1 0 0 0 -0.085 0.085 0 0 s\4209s01.dat
-  [1,16,10,12,18,0,-1,0,0,0,-0.085,0.085,0,0, ldraw_lib__s__4209s01()],
+  [1,16,10,12,18,0,-1,0,0,0,-0.085,0.085,0,0, ldraw_lib__s__4209s01(realsolid)],
 // 4 16 10 22.455 7.545 10 24 0 10 24 50 10 22.455 28.455
   [4,16,10,22.455,7.545,10,24,0,10,24,50,10,22.455,28.455],
 // 4 16 10 0 0 10 1.545 7.545 10 1.545 28.455 10 0 50
@@ -41,9 +42,9 @@ function ldraw_lib__3822p09() = [
 // 4 16 10 14 34 10 22.455 28.455 10 24 50 10 14 46
   [4,16,10,14,34,10,22.455,28.455,10,24,50,10,14,46],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 stud.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud(realsolid)],
 // 0
 ];
 module ldraw_lib__3822p09(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3822p09(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3822p09(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3822p09(line=0.2);

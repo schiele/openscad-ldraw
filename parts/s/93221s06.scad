@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/4-4disc.scad>
 use <../../p/4-4ndis.scad>
-function ldraw_lib__s__93221s06() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__93221s06(realsolid=false) = [
 // 0 ~Minifig Boombox  1 x  3 x  1 - Cassette Player and Buttons Background
 // 0 Name: s\93221s06.dat
 // 0 Author: Vincent Messenet [Cheenzo]
@@ -20,13 +21,13 @@ function ldraw_lib__s__93221s06() = [
 // 4 16 30 24 -10 8.5 23.25 -10 -8.5 23.25 -10 -30 24 -10
   [4,16,30,24,-10,8.5,23.25,-10,-8.5,23.25,-10,-30,24,-10],
 // 1 16 -3 11.25 -10 .625 0 0 0 0 .625 0 1 0 4-4disc.dat
-  [1,16,-3,11.25,-10,.625,0,0,0,0,.625,0,1,0, ldraw_lib__4_4disc()],
+  [1,16,-3,11.25,-10,.625,0,0,0,0,.625,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 16 -3 11.25 -10 1.25 0 0 0 0 1.25 0 1 0 4-4ndis.dat
-  [1,16,-3,11.25,-10,1.25,0,0,0,0,1.25,0,1,0, ldraw_lib__4_4ndis()],
+  [1,16,-3,11.25,-10,1.25,0,0,0,0,1.25,0,1,0, ldraw_lib__4_4ndis(realsolid)],
 // 1 16 3 11.25 -10 .625 0 0 0 0 .625 0 1 0 4-4disc.dat
-  [1,16,3,11.25,-10,.625,0,0,0,0,.625,0,1,0, ldraw_lib__4_4disc()],
+  [1,16,3,11.25,-10,.625,0,0,0,0,.625,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 16 3 11.25 -10 1.25 0 0 0 0 1.25 0 1.25 0 4-4ndis.dat
-  [1,16,3,11.25,-10,1.25,0,0,0,0,1.25,0,1.25,0, ldraw_lib__4_4ndis()],
+  [1,16,3,11.25,-10,1.25,0,0,0,0,1.25,0,1.25,0, ldraw_lib__4_4ndis(realsolid)],
 // 4 16 -8.5 3.25 -10 -7 7.25 -10 7 7.25 -10 8.5 3.25 -10
   [4,16,-8.5,3.25,-10,-7,7.25,-10,7,7.25,-10,8.5,3.25,-10],
 // 4 16 8.5 3.25 -10 7 7.25 -10 7 15.25 -10 8.5 13.25 -10
@@ -129,5 +130,5 @@ function ldraw_lib__s__93221s06() = [
   [4,16,1.75,11.25,-10,-1.75,11.25,-10,-1.75,12.5,-10,1.75,12.5,-10],
 ];
 module ldraw_lib__s__93221s06(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__93221s06(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__93221s06(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__93221s06(line=0.2);

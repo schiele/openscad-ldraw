@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__6296256f() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6296256f(realsolid=false) = [
 // 0 Sticker  1.9 x  1.8 with 9 Air Outlet Gills
 // 0 Name: 6296256f.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -17,7 +18,7 @@ function ldraw_lib__6296256f() = [
 // 
 // 
 // 1 16 0 -.25 0 17.5 0 0 0 .25 0 0 0 18.75 box5-12.dat
-  [1,16,0,-.25,0,17.5,0,0,0,.25,0,0,0,18.75, ldraw_lib__box5_12()],
+  [1,16,0,-.25,0,17.5,0,0,0,.25,0,0,0,18.75, ldraw_lib__box5_12(realsolid)],
 // 4 0 15.02 -.25 .59 14.04 -.25 .75 14.67 -.25 -.42 15.82 -.25 .37
   [4,0,15.02,-.25,.59,14.04,-.25,.75,14.67,-.25,-.42,15.82,-.25,.37],
 // 4 0 15.82 -.25 .37 14.67 -.25 -.42 16.05 -.25 -.16 16.22 -.25 -.05
@@ -278,5 +279,5 @@ function ldraw_lib__6296256f() = [
   [4,226,17.5,-.25,-18.75,14.67,-.25,-17.22,-14.67,-.25,-17.22,-17.5,-.25,-18.75],
 ];
 module ldraw_lib__6296256f(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6296256f(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6296256f(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6296256f(line=0.2);

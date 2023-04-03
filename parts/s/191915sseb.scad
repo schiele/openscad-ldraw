@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__191915sseb() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__191915sseb(realsolid=false) = [
 // 0 ~Swedish Railways Logo Background
 // 0 Name: s\191915sseb.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -125,5 +126,5 @@ function ldraw_lib__s__191915sseb() = [
   [4,16,-17.3,0,11.5,-17.8,0,9.7,-17.1,0,7.3,-15.7,0,13.1],
 ];
 module ldraw_lib__s__191915sseb(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__191915sseb(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__191915sseb(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__191915sseb(line=0.2);

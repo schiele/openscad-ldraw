@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <74741-f1.scad>
-function ldraw_lib__75348() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__75348(realsolid=false) = [
 // 0 ~Moved to 74741-f1
 // 0 Name: 75348.dat
 // 0 Author: [PTadmin]
@@ -17,8 +18,8 @@ function ldraw_lib__75348() = [
 // 0 // Technic Shock Absorber 9L Soft (Extended)
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 74741-f1.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__74741_f1()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__74741_f1(realsolid)],
 ];
 module ldraw_lib__75348(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__75348(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__75348(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__75348(line=0.2);

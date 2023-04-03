@@ -3,7 +3,8 @@ use <s/59228s01.scad>
 use <s/59228s02.scad>
 use <s/59228s03.scad>
 use <../p/stud2.scad>
-function ldraw_lib__59228() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__59228(realsolid=false) = [
 // 0 Animal Horse Skeletal
 // 0 Name: 59228.dat
 // 0 Author: Andy Westrate [westrate]
@@ -24,33 +25,33 @@ function ldraw_lib__59228() = [
 // 0 // hooves
 // 
 // 1 16 10 43 -60 1 0 0 0 1 0 0 0 1 s\59228s01.dat
-  [1,16,10,43,-60,1,0,0,0,1,0,0,0,1, ldraw_lib__s__59228s01()],
+  [1,16,10,43,-60,1,0,0,0,1,0,0,0,1, ldraw_lib__s__59228s01(realsolid)],
 // 1 16 -10 43 -20 1 0 0 0 1 0 0 0 1 s\59228s01.dat
-  [1,16,-10,43,-20,1,0,0,0,1,0,0,0,1, ldraw_lib__s__59228s01()],
+  [1,16,-10,43,-20,1,0,0,0,1,0,0,0,1, ldraw_lib__s__59228s01(realsolid)],
 // 1 16 -10 43 0 1 0 0 0 1 0 0 0 1 s\59228s01.dat
-  [1,16,-10,43,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__59228s01()],
+  [1,16,-10,43,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__59228s01(realsolid)],
 // 1 16 10 43 40 1 0 0 0 1 0 0 0 1 s\59228s01.dat
-  [1,16,10,43,40,1,0,0,0,1,0,0,0,1, ldraw_lib__s__59228s01()],
+  [1,16,10,43,40,1,0,0,0,1,0,0,0,1, ldraw_lib__s__59228s01(realsolid)],
 // 
 // 0 // mirrored parts
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\59228s02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__59228s02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__59228s02(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\59228s02.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__59228s02()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__59228s02(realsolid)],
 // 5 24 0 -24.22 -87.07 0 -38.78 -76.86 1.17 -39.13 -77.69 -1.17 -39.13 -77.69
   [5,24,0,-24.22,-87.07,0,-38.78,-76.86,1.17,-39.13,-77.69,-1.17,-39.13,-77.69],
 // 
 // 0 // non-mirrored parts
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\59228s03.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__59228s03()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__59228s03(realsolid)],
 // 
 // 0 // studs
 // 1 16 -10 0 0 1 0 0 0 1.1 0 0 0 1 stud2.dat
-  [1,16,-10,0,0,1,0,0,0,1.1,0,0,0,1, ldraw_lib__stud2()],
+  [1,16,-10,0,0,1,0,0,0,1.1,0,0,0,1, ldraw_lib__stud2(realsolid)],
 // 1 16 10 0 0 1 0 0 0 1.1 0 0 0 1 stud2.dat
-  [1,16,10,0,0,1,0,0,0,1.1,0,0,0,1, ldraw_lib__stud2()],
+  [1,16,10,0,0,1,0,0,0,1.1,0,0,0,1, ldraw_lib__stud2(realsolid)],
 // 0
 ];
 module ldraw_lib__59228(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__59228(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__59228(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__59228(line=0.2);

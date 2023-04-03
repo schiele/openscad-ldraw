@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__4_4con2() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4_4con2(realsolid=false) = [
 // 0 Cone  2 x 1.0
 // 0 Name: 4-4con2.dat
 // 0 Author: John Riley [jriley]
@@ -84,5 +85,5 @@ function ldraw_lib__4_4con2() = [
   [5,24,1.8478,1,-0.7654,2.7717,0,-1.1481,1.4142,1,-1.4142,2,1,0],
 ];
 module ldraw_lib__4_4con2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4_4con2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4_4con2(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4_4con2(line=0.2);

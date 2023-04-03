@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__48__2_3edge() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__48__2_3edge(realsolid=false) = [
 // 0 Hi-Res Circle 0.6667
 // 0 Name: 48\2-3edge.dat
 // 0 Author: Santeri Piippo [arezey]
@@ -80,5 +81,5 @@ function ldraw_lib__48__2_3edge() = [
 // 0 //
 ];
 module ldraw_lib__48__2_3edge(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__48__2_3edge(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__48__2_3edge(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__48__2_3edge(line=0.2);

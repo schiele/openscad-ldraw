@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/194325as01.scad>
 use <s/194325as02.scad>
-function ldraw_lib__194325ac01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__194325ac01(realsolid=false) = [
 // 0 Sticker  2.6 x 10 with White/Red/Blue Stripes (Formed)
 // 0 Name: 194325ac01.dat
 // 0 Author: Steffen [Steffen]
@@ -26,9 +27,9 @@ function ldraw_lib__194325ac01() = [
 // 
 // 
 // 1 16 0 10 -30 1 0 0 0 0.89443 -0.44721 0 0.44721 0.89443 s\194325as01.dat
-  [1,16,0,10,-30,1,0,0,0,0.89443,-0.44721,0,0.44721,0.89443, ldraw_lib__s__194325as01()],
+  [1,16,0,10,-30,1,0,0,0,0.89443,-0.44721,0,0.44721,0.89443, ldraw_lib__s__194325as01(realsolid)],
 // 1 16 0 20 -50 1 0 0 0 0 -1 0 1 0 s\194325as02.dat
-  [1,16,0,20,-50,1,0,0,0,0,-1,0,1,0, ldraw_lib__s__194325as02()],
+  [1,16,0,20,-50,1,0,0,0,0,-1,0,1,0, ldraw_lib__s__194325as02(realsolid)],
 // 
 // 4 16 -100 19.9996156 -49.9994548 100 19.9996156 -49.9994548 100 20 -50 -100 20 -50
   [4,16,-100,19.9996156,-49.9994548,100,19.9996156,-49.9994548,100,20,-50,-100,20,-50],
@@ -113,5 +114,5 @@ function ldraw_lib__194325ac01() = [
   [5,24,-100,19.7760081,-50.1112573,100,19.7760081,-50.1112573,-100,20,-50.25,-100,-.223,-10.112],
 ];
 module ldraw_lib__194325ac01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__194325ac01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__194325ac01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__194325ac01(line=0.2);

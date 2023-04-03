@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <4495a.scad>
-function ldraw_lib__4495() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4495(realsolid=false) = [
 // 0 ~Moved to 4495a
 // 0 Name: 4495.dat
 // 0 Author: [PTadmin]
@@ -16,8 +17,8 @@ function ldraw_lib__4495() = [
 // 
 // 0 // Flag 4 x 1 with First Wave Left
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 4495a.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4495a()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4495a(realsolid)],
 ];
 module ldraw_lib__4495(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4495(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4495(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4495(line=0.2);

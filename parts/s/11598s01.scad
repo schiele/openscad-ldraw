@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/1-4ndis.scad>
-function ldraw_lib__s__11598s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__11598s01(realsolid=false) = [
 // 0 ~Cocoon  4 x  4 x  3 Inside Quarter
 // 0 Name: s\11598s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -171,7 +172,7 @@ function ldraw_lib__s__11598s01() = [
 // 2 24 18.767 -2.204 2.372 19.13 -2.071 0
   [2,24,18.767,-2.204,2.372,19.13,-2.071,0],
 // 1 16 0 -5.25 0 8 0 0 0 -1 0 0 0 8 1-4ndis.dat
-  [1,16,0,-5.25,0,8,0,0,0,-1,0,0,0,8, ldraw_lib__1_4ndis()],
+  [1,16,0,-5.25,0,8,0,0,0,-1,0,0,0,8, ldraw_lib__1_4ndis(realsolid)],
 // 0 // Top surface
 // 4 16 5.622 -8 20.982 0 -8 21.722 0 -8 6 6 -8 6
   [4,16,5.622,-8,20.982,0,-8,21.722,0,-8,6,6,-8,6],
@@ -182,7 +183,7 @@ function ldraw_lib__s__11598s01() = [
 // 4 16 20.982 -8 5.622 6 -8 6 6 -8 0 21.722 -8 0
   [4,16,20.982,-8,5.622,6,-8,6,6,-8,0,21.722,-8,0],
 // 1 16 0 -8 0 6 0 0 0 1 0 0 0 6 1-4ndis.dat
-  [1,16,0,-8,0,6,0,0,0,1,0,0,0,6, ldraw_lib__1_4ndis()],
+  [1,16,0,-8,0,6,0,0,0,1,0,0,0,6, ldraw_lib__1_4ndis(realsolid)],
 // 2 24 5.622 -8 20.982 0 -8 21.722
   [2,24,5.622,-8,20.982,0,-8,21.722],
 // 2 24 10.861 -8 18.812 5.622 -8 20.982
@@ -357,5 +358,5 @@ function ldraw_lib__s__11598s01() = [
   [5,24,0,-2.312,10.354,0,-2.071,19.13,2.381,-2.204,18.864,-2.372,-2.204,18.767],
 ];
 module ldraw_lib__s__11598s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__11598s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__11598s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__11598s01(line=0.2);

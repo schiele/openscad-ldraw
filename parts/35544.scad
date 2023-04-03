@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/box5-2p.scad>
 use <../p/rect2p.scad>
 use <../p/rect3.scad>
-function ldraw_lib__35544() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__35544(realsolid=false) = [
 // 0 ~Electric Powered Up Remote Handset Stop Button
 // 0 Name: 35544.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -17,18 +18,18 @@ function ldraw_lib__35544() = [
 // 
 // 
 // 1 16 0 2 0 0 0 9.8994 0 20 0 10 0 0 box5-2p.dat
-  [1,16,0,2,0,0,0,9.8994,0,20,0,10,0,0, ldraw_lib__box5_2p()],
+  [1,16,0,2,0,0,0,9.8994,0,20,0,10,0,0, ldraw_lib__box5_2p(realsolid)],
 // 1 16 0 1 -9 9.8994 0 0 0 1 -1 0 0 1 rect3.dat
-  [1,16,0,1,-9,9.8994,0,0,0,1,-1,0,0,1, ldraw_lib__rect3()],
+  [1,16,0,1,-9,9.8994,0,0,0,1,-1,0,0,1, ldraw_lib__rect3(realsolid)],
 // 1 16 0 1 9 -9.8994 0 0 0 1 -1 0 0 -1 rect3.dat
-  [1,16,0,1,9,-9.8994,0,0,0,1,-1,0,0,-1, ldraw_lib__rect3()],
+  [1,16,0,1,9,-9.8994,0,0,0,1,-1,0,0,-1, ldraw_lib__rect3(realsolid)],
 // 1 16 0 0 0 0 0 -9.8994 0 1 0 8 0 0 rect2p.dat
-  [1,16,0,0,0,0,0,-9.8994,0,1,0,8,0,0, ldraw_lib__rect2p()],
+  [1,16,0,0,0,0,0,-9.8994,0,1,0,8,0,0, ldraw_lib__rect2p(realsolid)],
 // 4 16 -9.8994 2 -10 -9.8994 0 -8 -9.8994 0 8 -9.8994 2 10
   [4,16,-9.8994,2,-10,-9.8994,0,-8,-9.8994,0,8,-9.8994,2,10],
 // 4 16 9.8994 0 8 9.8994 0 -8 9.8994 2 -10 9.8994 2 10
   [4,16,9.8994,0,8,9.8994,0,-8,9.8994,2,-10,9.8994,2,10],
 ];
 module ldraw_lib__35544(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__35544(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__35544(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__35544(line=0.2);

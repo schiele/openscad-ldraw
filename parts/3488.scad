@@ -9,7 +9,8 @@ use <../p/4-8sphe.scad>
 use <../p/box3u8p.scad>
 use <../p/stud.scad>
 use <../p/stud3.scad>
-function ldraw_lib__3488() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3488(realsolid=false) = [
 // 0 Train Single Buffer
 // 0 Name: 3488.dat
 // 0 Author: Niels Karsdorp [nielsk]
@@ -89,9 +90,9 @@ function ldraw_lib__3488() = [
 // 
 // 0 Outer buffer lines
 // 1 16 0 16 -28 8 0 0 0 0 -8 0 1 0 2-4edge.dat
-  [1,16,0,16,-28,8,0,0,0,0,-8,0,1,0, ldraw_lib__2_4edge()],
+  [1,16,0,16,-28,8,0,0,0,0,-8,0,1,0, ldraw_lib__2_4edge(realsolid)],
 // 1 16 0 16 -36 8 0 0 0 0 -8 0 1 0 2-4edge.dat
-  [1,16,0,16,-36,8,0,0,0,0,-8,0,1,0, ldraw_lib__2_4edge()],
+  [1,16,0,16,-36,8,0,0,0,0,-8,0,1,0, ldraw_lib__2_4edge(realsolid)],
 // 2 24 -8 16 -28 -8 23 -28
   [2,24,-8,16,-28,-8,23,-28],
 // 2 24 -8 23 -28 -8 23 -36
@@ -106,9 +107,9 @@ function ldraw_lib__3488() = [
   [2,24,8,23,-36,8,16,-36],
 // 0 Inner buffer lines
 // 1 16 0 16 -24 4 0 0 0 0 -4 0 1 0 2-4edge.dat
-  [1,16,0,16,-24,4,0,0,0,0,-4,0,1,0, ldraw_lib__2_4edge()],
+  [1,16,0,16,-24,4,0,0,0,0,-4,0,1,0, ldraw_lib__2_4edge(realsolid)],
 // 1 16 0 16 -36 4 0 0 0 0 -4 0 1 0 2-4edge.dat
-  [1,16,0,16,-36,4,0,0,0,0,-4,0,1,0, ldraw_lib__2_4edge()],
+  [1,16,0,16,-36,4,0,0,0,0,-4,0,1,0, ldraw_lib__2_4edge(realsolid)],
 // 2 24 -4 16 -24 -4 23 -24
   [2,24,-4,16,-24,-4,23,-24],
 // 2 24 -4 23 -24 -4 23 -36
@@ -160,9 +161,9 @@ function ldraw_lib__3488() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 16 -24 4 0 0 0 0 -4 0 -12 0 2-4cyli.dat
-  [1,16,0,16,-24,4,0,0,0,0,-4,0,-12,0, ldraw_lib__2_4cyli()],
+  [1,16,0,16,-24,4,0,0,0,0,-4,0,-12,0, ldraw_lib__2_4cyli(realsolid)],
 // 1 16 0 16 -24 4 0 0 0 0 -4 0 -1 0 2-4ndis.dat
-  [1,16,0,16,-24,4,0,0,0,0,-4,0,-1,0, ldraw_lib__2_4ndis()],
+  [1,16,0,16,-24,4,0,0,0,0,-4,0,-1,0, ldraw_lib__2_4ndis(realsolid)],
 // 4 16 4 16 -36 4 16 -24 4 23 -24 4 23 -36
   [4,16,4,16,-36,4,16,-24,4,23,-24,4,23,-36],
 // 4 16 6 23 -24 6 4 -24 6 4 -20 6 23 -20
@@ -186,13 +187,13 @@ function ldraw_lib__3488() = [
 // 4 16 6 4 -24 4 12 -24 -4 12 -24 -6 4 -24
   [4,16,6,4,-24,4,12,-24,-4,12,-24,-6,4,-24],
 // 1 16 0 4 -18 6 0 0 0 4 0 0 0 2 box3u8p.dat
-  [1,16,0,4,-18,6,0,0,0,4,0,0,0,2, ldraw_lib__box3u8p()],
+  [1,16,0,4,-18,6,0,0,0,4,0,0,0,2, ldraw_lib__box3u8p(realsolid)],
 // 
 // 0 Topside faces
 // 1 16 0 16 -28 8 0 0 0 0 -8 0 -8 0 2-4cyli.dat
-  [1,16,0,16,-28,8,0,0,0,0,-8,0,-8,0, ldraw_lib__2_4cyli()],
+  [1,16,0,16,-28,8,0,0,0,0,-8,0,-8,0, ldraw_lib__2_4cyli(realsolid)],
 // 1 16 0 16 -28 8 0 0 0 0 -8 0 1 0 2-4ndis.dat
-  [1,16,0,16,-28,8,0,0,0,0,-8,0,1,0, ldraw_lib__2_4ndis()],
+  [1,16,0,16,-28,8,0,0,0,0,-8,0,1,0, ldraw_lib__2_4ndis(realsolid)],
 // 4 16 -8 23 -36 -8 16 -36 -8 16 -28 -8 23 -28
   [4,16,-8,23,-36,-8,16,-36,-8,16,-28,-8,23,-28],
 // 4 16 8 23 -28 8 16 -28 8 16 -36 8 23 -36
@@ -248,22 +249,22 @@ function ldraw_lib__3488() = [
 // 
 // 0 Studs
 // 1 16 0 4 0 1 0 0 0 -1 0 0 0 1 stud3.dat
-  [1,16,0,4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud3()],
+  [1,16,0,4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud3(realsolid)],
 // 1 16 0 0 -10 0 0 -1 0 1 0 1 0 0 stud.dat
-  [1,16,0,0,-10,0,0,-1,0,1,0,1,0,0, ldraw_lib__stud()],
+  [1,16,0,0,-10,0,0,-1,0,1,0,1,0,0, ldraw_lib__stud(realsolid)],
 // 1 16 0 0 10 0 0 -1 0 1 0 1 0 0 stud.dat
-  [1,16,0,0,10,0,0,-1,0,1,0,1,0,0, ldraw_lib__stud()],
+  [1,16,0,0,10,0,0,-1,0,1,0,1,0,0, ldraw_lib__stud(realsolid)],
 // 
 // 0 Buffer
 // 1 16 0 16 -36 15 0 0 0 0 15 0 -1 0 4-4disc.dat
-  [1,16,0,16,-36,15,0,0,0,0,15,0,-1,0, ldraw_lib__4_4disc()],
+  [1,16,0,16,-36,15,0,0,0,0,15,0,-1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 16 -36 15 0 0 0 0 15 0 1 0 4-4edge.dat
-  [1,16,0,16,-36,15,0,0,0,0,15,0,1,0, ldraw_lib__4_4edge()],
+  [1,16,0,16,-36,15,0,0,0,0,15,0,1,0, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 16 -36 0.5 0 0 0 0 0.5 0 -3 0 4-4con29.dat
-  [1,16,0,16,-36,0.5,0,0,0,0,0.5,0,-3,0, ldraw_lib__4_4con29()],
+  [1,16,0,16,-36,0.5,0,0,0,0,0.5,0,-3,0, ldraw_lib__4_4con29(realsolid)],
 // 1 16 0 16 -39 14.5 0 0 0 0 14.5 0 -3 0 4-8sphe.dat
-  [1,16,0,16,-39,14.5,0,0,0,0,14.5,0,-3,0, ldraw_lib__4_8sphe()],
+  [1,16,0,16,-39,14.5,0,0,0,0,14.5,0,-3,0, ldraw_lib__4_8sphe(realsolid)],
 ];
 module ldraw_lib__3488(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3488(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3488(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3488(line=0.2);

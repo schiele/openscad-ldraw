@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/4-4cylc.scad>
-function ldraw_lib__s__30483s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__30483s01(realsolid=false) = [
 // 0 ~Minifig Head Wookiee with Bandolier without Patterned Areas
 // 0 Name: s\30483s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -18,7 +19,7 @@ function ldraw_lib__s__30483s01() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -30 0 -6 0 0 0 30 0 0 0 -6 4-4cylc.dat
-  [1,16,0,-30,0,-6,0,0,0,30,0,0,0,-6, ldraw_lib__4_4cylc()],
+  [1,16,0,-30,0,-6,0,0,0,30,0,0,0,-6, ldraw_lib__4_4cylc(realsolid)],
 // 4 16 -20.7 0 -2.7 -20.7 0 -1.1 -6 0 0 -5.543 0 -2.296
   [4,16,-20.7,0,-2.7,-20.7,0,-1.1,-6,0,0,-5.543,0,-2.296],
 // 4 16 -5.543 0 2.296 -6 0 0 -20.7 0 -1.1 -21.2 0 1.1
@@ -37138,5 +37139,5 @@ function ldraw_lib__s__30483s01() = [
   [5,24,10.91,2.314,16.553,13.334,-1.043,15.296,13.622,-1.351,15.062,12.88,-0.431,15.547],
 ];
 module ldraw_lib__s__30483s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__30483s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__30483s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__30483s01(line=0.2);

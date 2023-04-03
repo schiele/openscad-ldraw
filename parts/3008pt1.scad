@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3008s01.scad>
-function ldraw_lib__3008pt1() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3008pt1(realsolid=false) = [
 // 0 Brick  1 x  8 with Black "P 431" and "L 30 TON" and "T  9 TON" Pattern
 // 0 Name: 3008pt1.dat
 // 0 Author: Ulrich Röder [UR]
@@ -23,7 +24,7 @@ function ldraw_lib__3008pt1() = [
 // 0 // Main
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3008s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3008s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3008s01(realsolid)],
 // 4 16 37.294 19.845 -10 36.006 20.077 -10 18 24 -10 36 24 -10
   [4,16,37.294,19.845,-10,36.006,20.077,-10,18,24,-10,36,24,-10],
 // 3 16 29.338 20 -10 29.338 14.951 -10 27.878 14.951 -10
@@ -878,5 +879,5 @@ function ldraw_lib__3008pt1() = [
   [3,0,-50,13.027,-10,-48.877,13,-10,-49.443,10.764,-10],
 ];
 module ldraw_lib__3008pt1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3008pt1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3008pt1(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3008pt1(line=0.2);

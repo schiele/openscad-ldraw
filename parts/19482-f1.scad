@@ -3,7 +3,8 @@ use <2941.scad>
 use <2943b.scad>
 use <2944c02.scad>
 use <99799.scad>
-function ldraw_lib__19482_f1() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__19482_f1(realsolid=false) = [
 // 0 Technic Pneumatic Pump  1 x  1 x  6 with Stepped Outlet (Retracted)
 // 0 Name: 19482-f1.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -18,14 +19,14 @@ function ldraw_lib__19482_f1() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 2943b.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2943b()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2943b(realsolid)],
 // 1 16 0 -88 0 1 0 0 0 1 0 0 0 1 99799.dat
-  [1,16,0,-88,0,1,0,0,0,1,0,0,0,1, ldraw_lib__99799()],
+  [1,16,0,-88,0,1,0,0,0,1,0,0,0,1, ldraw_lib__99799(realsolid)],
 // 1 0 0 -90 0 1 0 0 0 1 0 0 0 1 2941.dat
-  [1,0,0,-90,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2941()],
+  [1,0,0,-90,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2941(realsolid)],
 // 1 0 0 -100 0 1 0 0 0 1 0 0 0 1 2944c02.dat
-  [1,0,0,-100,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2944c02()],
+  [1,0,0,-100,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2944c02(realsolid)],
 ];
 module ldraw_lib__19482_f1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__19482_f1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__19482_f1(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__19482_f1(line=0.2);

@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <22969.scad>
 use <32298p01.scad>
-function ldraw_lib__22969c02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__22969c02(realsolid=false) = [
 // 0 ~Wheel 56 x 46 Technic Racing w Tyre 61/ 41 x 54 Power Puller (Obsolete)
 // 0 Name: 22969c02.dat
 // 0 Author: Steffen [Steffen]
@@ -20,11 +21,11 @@ function ldraw_lib__22969c02() = [
 // 
 // 
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 -1 22969.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__22969()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__22969(realsolid)],
 // 1 256 0 0 0 1 0 0 0 1 0 0 0 1 32298p01.dat
-  [1,256,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__32298p01()],
+  [1,256,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__32298p01(realsolid)],
 // 
 ];
 module ldraw_lib__22969c02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__22969c02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__22969c02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__22969c02(line=0.2);

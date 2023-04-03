@@ -3,7 +3,8 @@ use <../p/4-4disc.scad>
 use <../p/4-4ndis.scad>
 use <../p/4-4ring2.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__6153754k() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6153754k(realsolid=false) = [
 // 0 Sticker  0.8 x  2.8 with Black "WOB" on Transparent Background
 // 0 Name: 6153754k.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -20,19 +21,19 @@ function ldraw_lib__6153754k() = [
 // 
 // 
 // 1 16 0 -0.25 0 28 0 0 0 0.25 0 0 0 8 box5-12.dat
-  [1,16,0,-0.25,0,28,0,0,0,0.25,0,0,0,8, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,28,0,0,0,0.25,0,0,0,8, ldraw_lib__box5_12(realsolid)],
 // 1 14 18.9 -0.25 3.2 1.6 0 0 0 1 0 0 0 1.6 4-4disc.dat
-  [1,14,18.9,-0.25,3.2,1.6,0,0,0,1,0,0,0,1.6, ldraw_lib__4_4disc()],
+  [1,14,18.9,-0.25,3.2,1.6,0,0,0,1,0,0,0,1.6, ldraw_lib__4_4disc(realsolid)],
 // 1 0 18.9 -0.25 3.2 0.8 0 0 0 1 0 0 0 0.8 4-4ring2.dat
-  [1,0,18.9,-0.25,3.2,0.8,0,0,0,1,0,0,0,0.8, ldraw_lib__4_4ring2()],
+  [1,0,18.9,-0.25,3.2,0.8,0,0,0,1,0,0,0,0.8, ldraw_lib__4_4ring2(realsolid)],
 // 1 16 18.9 -0.25 3.2 2.4 0 0 0 1 0 0 0 2.4 4-4ndis.dat
-  [1,16,18.9,-0.25,3.2,2.4,0,0,0,1,0,0,0,2.4, ldraw_lib__4_4ndis()],
+  [1,16,18.9,-0.25,3.2,2.4,0,0,0,1,0,0,0,2.4, ldraw_lib__4_4ndis(realsolid)],
 // 1 15 -18.9 -0.25 -3.2 1.6 0 0 0 1 0 0 0 1.6 4-4disc.dat
-  [1,15,-18.9,-0.25,-3.2,1.6,0,0,0,1,0,0,0,1.6, ldraw_lib__4_4disc()],
+  [1,15,-18.9,-0.25,-3.2,1.6,0,0,0,1,0,0,0,1.6, ldraw_lib__4_4disc(realsolid)],
 // 1 0 -18.9 -0.25 -3.2 0.8 0 0 0 1 0 0 0 0.8 4-4ring2.dat
-  [1,0,-18.9,-0.25,-3.2,0.8,0,0,0,1,0,0,0,0.8, ldraw_lib__4_4ring2()],
+  [1,0,-18.9,-0.25,-3.2,0.8,0,0,0,1,0,0,0,0.8, ldraw_lib__4_4ring2(realsolid)],
 // 1 16 -18.9 -0.25 -3.2 2.4 0 0 0 1 0 0 0 2.4 4-4ndis.dat
-  [1,16,-18.9,-0.25,-3.2,2.4,0,0,0,1,0,0,0,2.4, ldraw_lib__4_4ndis()],
+  [1,16,-18.9,-0.25,-3.2,2.4,0,0,0,1,0,0,0,2.4, ldraw_lib__4_4ndis(realsolid)],
 // 4 0 -12.59 -0.25 -4.59 -10.31 -0.25 -4.59 -11.32 -0.25 -2.36 -14.99 -0.25 4.33
   [4,0,-12.59,-0.25,-4.59,-10.31,-0.25,-4.59,-11.32,-0.25,-2.36,-14.99,-0.25,4.33],
 // 4 0 -11.32 -0.25 -2.36 -10.31 -0.25 -4.59 -8.78 -0.25 1.05 -9.53 -0.25 4.2
@@ -281,5 +282,5 @@ function ldraw_lib__6153754k() = [
   [4,16,16.5,-0.25,5.6,18.9,-0.25,5.6,28,-0.25,8,-28,-0.25,8],
 ];
 module ldraw_lib__6153754k(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6153754k(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6153754k(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6153754k(line=0.2);

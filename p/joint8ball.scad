@@ -2,7 +2,8 @@ use <../lib.scad>
 use <4-4cyl1sph2.scad>
 use <4-4cyli.scad>
 use <8-8sphe.scad>
-function ldraw_lib__joint8ball() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__joint8ball(realsolid=false) = [
 // 0 Joint-8 Ball with Straight Bar
 // 0 Name: joint8ball.dat
 // 0 Author: Tim Gould [timgould]
@@ -17,12 +18,12 @@ function ldraw_lib__joint8ball() = [
 // 
 // 
 // 1 16 0 0 10 4 0 0 0 0 -4 0 -2 0 4-4cyli.dat
-  [1,16,0,0,10,4,0,0,0,0,-4,0,-2,0, ldraw_lib__4_4cyli()],
+  [1,16,0,0,10,4,0,0,0,0,-4,0,-2,0, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 0 0 4 0 0 0 0 4 0 -4 0 4-4cyl1sph2.dat
-  [1,16,0,0,0,4,0,0,0,0,4,0,-4,0, ldraw_lib__4_4cyl1sph2()],
+  [1,16,0,0,0,4,0,0,0,0,4,0,-4,0, ldraw_lib__4_4cyl1sph2(realsolid)],
 // 1 16 0 0 0 8 0 0 0 8 0 0 0 8 8-8sphe.dat
-  [1,16,0,0,0,8,0,0,0,8,0,0,0,8, ldraw_lib__8_8sphe()],
+  [1,16,0,0,0,8,0,0,0,8,0,0,0,8, ldraw_lib__8_8sphe(realsolid)],
 ];
 module ldraw_lib__joint8ball(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__joint8ball(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__joint8ball(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__joint8ball(line=0.2);

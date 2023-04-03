@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/2582s01.scad>
-function ldraw_lib__2582pa0() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2582pa0(realsolid=false) = [
 // 0 Hinge Panel  2 x  4 x  3.333 with Submarine Pattern
 // 0 Name: 2582pa0.dat
 // 0 Author: Mikkel Bech Jensen [gaia]
@@ -17,7 +18,7 @@ function ldraw_lib__2582pa0() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2582s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2582s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2582s01(realsolid)],
 // 0 // Front
 // 4 16 -.758 25.817 -30 -.758 31.583 -30 .758 31.583 -30 .758 25.817 -30
   [4,16,-.758,25.817,-30,-.758,31.583,-30,.758,31.583,-30,.758,25.817,-30],
@@ -1724,5 +1725,5 @@ function ldraw_lib__2582pa0() = [
   [4,0,-9.886,14.41,-24.41,-9.162,15.176,-25.176,-9.162,11.836,-21.836,-9.886,12.602,-22.602],
 ];
 module ldraw_lib__2582pa0(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2582pa0(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2582pa0(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2582pa0(line=0.2);

@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4disc.scad>
 use <s/u9007s01.scad>
 use <s/u9007s02.scad>
-function ldraw_lib__u9007p03() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__u9007p03(realsolid=false) = [
 // 0 Roadsign Triangular with Round Base with Roundabout Pattern
 // 0 Name: u9007p03.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -17,9 +18,9 @@ function ldraw_lib__u9007p03() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\u9007s02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__u9007s02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__u9007s02(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\u9007s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__u9007s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__u9007s01(realsolid)],
 // 0 //
 // 4 4 -20 -52 -2.6 -13.9 -55.5 -2.6 0 -78.9 -2.6 0 -86 -2.6
   [4,4,-20,-52,-2.6,-13.9,-55.5,-2.6,0,-78.9,-2.6,0,-86,-2.6],
@@ -29,7 +30,7 @@ function ldraw_lib__u9007p03() = [
   [4,4,20,-52,-2.6,13.8,-55.5,-2.6,-13.9,-55.5,-2.6,-20,-52,-2.6],
 // 0 //
 // 1 16 0 -63.5 -2.6 5.2 0 0 0 0 -5.2 0 1 0 4-4disc.dat
-  [1,16,0,-63.5,-2.6,5.2,0,0,0,0,-5.2,0,1,0, ldraw_lib__4_4disc()],
+  [1,16,0,-63.5,-2.6,5.2,0,0,0,0,-5.2,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 3 16 -0.8078 -70.5393 -2.6 -0.7308 -68.5546 -2.6 0 -68.7 -2.6
   [3,16,-0.8078,-70.5393,-2.6,-0.7308,-68.5546,-2.6,0,-68.7,-2.6],
 // 3 16 0.6346 -70.5738 -2.6 0 -68.7 -2.6 0.5958 -68.5814 -2.6
@@ -116,5 +117,5 @@ function ldraw_lib__u9007p03() = [
 // 0 //
 ];
 module ldraw_lib__u9007p03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__u9007p03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__u9007p03(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__u9007p03(line=0.2);

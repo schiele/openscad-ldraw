@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/90397p02s01.scad>
 use <s/90397s01.scad>
-function ldraw_lib__90397p02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__90397p02(realsolid=false) = [
 // 0 Minifig Surf Board  2 x  6.5 with Pink Flames Pattern
 // 0 Name: 90397p02.dat
 // 0 Author: Joerg Sommerer [Brickaneer]
@@ -18,14 +19,14 @@ function ldraw_lib__90397p02() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\90397s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__90397s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__90397s01(realsolid)],
 // 
 // 0 // UPPER SURFACE
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\90397p02s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__90397p02s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__90397p02s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\90397p02s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__90397p02s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__90397p02s01(realsolid)],
 // 4 351 0 0 -44 4.762 0 -40.612 4.613 0 -40.116 3.902 0 -40.529
   [4,351,0,0,-44,4.762,0,-40.612,4.613,0,-40.116,3.902,0,-40.529],
 // 3 351 3.902 0 -40.529 2.91 0 -40.81 0 0 -44
@@ -708,5 +709,5 @@ function ldraw_lib__90397p02() = [
   [3,26,-6.25,0,-33.122,-6.961,0,-32.13,-6.515,0,-33.866],
 ];
 module ldraw_lib__90397p02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__90397p02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__90397p02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__90397p02(line=0.2);

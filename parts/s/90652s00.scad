@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__90652s00() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__90652s00(realsolid=false) = [
 // 0 ~Constraction Shell  2.5 x  5 x  8 Chest Flat - Front Surface
 // 0 Name: s\90652s00.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -144,5 +145,5 @@ function ldraw_lib__s__90652s00() = [
   [5,24,-5.847,12.901,-27.135,-5.534,26.977,-25.909,-14.321,11.956,-24.876,0,28.879,-27.399],
 ];
 module ldraw_lib__s__90652s00(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__90652s00(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__90652s00(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__90652s00(line=0.2);

@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <92248.scad>
 use <92249p01.scad>
-function ldraw_lib__92249p01c01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__92249p01c01(realsolid=false) = [
 // 0 Figure Friends Hips and Legs with Long Skirt with Light Nougat Legs and Open Toe Shoes Pattern
 // 0 Name: 92249p01c01.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -18,10 +19,10 @@ function ldraw_lib__92249p01c01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 92249p01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__92249p01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__92249p01(realsolid)],
 // 1 16 0 -47.4 2.7 1 0 0 0 1 0 0 0 1 92248.dat
-  [1,16,0,-47.4,2.7,1,0,0,0,1,0,0,0,1, ldraw_lib__92248()],
+  [1,16,0,-47.4,2.7,1,0,0,0,1,0,0,0,1, ldraw_lib__92248(realsolid)],
 ];
 module ldraw_lib__92249p01c01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__92249p01c01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__92249p01c01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__92249p01c01(line=0.2);

@@ -4,7 +4,8 @@ use <../../p/rect1.scad>
 use <../../p/rect2a.scad>
 use <../../p/rect3.scad>
 use <64424s03.scad>
-function ldraw_lib__s__64424s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__64424s02(realsolid=false) = [
 // 0 ~Train Buffer Beam with Sealed Magnet, Single Buffer For Type  1 and Type  2 Buffer
 // 0 Name: s\64424s02.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -19,12 +20,12 @@ function ldraw_lib__s__64424s02() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\64424s03.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__64424s03()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__64424s03(realsolid)],
 // 
 // 1 16 -56 20 -39 0 -20 0 0 0 4 9 0 0 rect3.dat
-  [1,16,-56,20,-39,0,-20,0,0,0,4,9,0,0, ldraw_lib__rect3()],
+  [1,16,-56,20,-39,0,-20,0,0,0,4,9,0,0, ldraw_lib__rect3(realsolid)],
 // 1 16 -44 20 -39 0 20 0 0 0 4 -9 0 0 rect3.dat
-  [1,16,-44,20,-39,0,20,0,0,0,4,-9,0,0, ldraw_lib__rect3()],
+  [1,16,-44,20,-39,0,20,0,0,0,4,-9,0,0, ldraw_lib__rect3(realsolid)],
 // 
 // 4 16 -58 24 -34 -56 24 -30 -56 24 -48 -58 24 -48
   [4,16,-58,24,-34,-56,24,-30,-56,24,-48,-58,24,-48],
@@ -38,7 +39,7 @@ function ldraw_lib__s__64424s02() = [
   [4,16,-39,24,-30,-36,24,-34,-42,24,-34,-44,24,-30],
 // 
 // 1 16 -56.5 17 -30 0 0 -.5 7 0 0 0 -1 0 rect1.dat
-  [1,16,-56.5,17,-30,0,0,-.5,7,0,0,0,-1,0, ldraw_lib__rect1()],
+  [1,16,-56.5,17,-30,0,0,-.5,7,0,0,0,-1,0, ldraw_lib__rect1(realsolid)],
 // 4 16 -57 10 -20 -57 24 -20 -60 24 -20 -60 8 -20
   [4,16,-57,10,-20,-57,24,-20,-60,24,-20,-60,8,-20],
 // 
@@ -49,7 +50,7 @@ function ldraw_lib__s__64424s02() = [
 // 2 24 -60 24 -20 -57 24 -20
   [2,24,-60,24,-20,-57,24,-20],
 // 1 16 -41.5 17 -30 2.5 0 0 0 0 7 0 -1 0 rect2a.dat
-  [1,16,-41.5,17,-30,2.5,0,0,0,0,7,0,-1,0, ldraw_lib__rect2a()],
+  [1,16,-41.5,17,-30,2.5,0,0,0,0,7,0,-1,0, ldraw_lib__rect2a(realsolid)],
 // 4 16 -39 10 -20 -39 24 -24 -39 24 -30 -39 10 -30
   [4,16,-39,10,-20,-39,24,-24,-39,24,-30,-39,10,-30],
 // 4 16 -39 38 -20 -39 38 -24 -39 24 -24 -39 10 -20
@@ -64,8 +65,8 @@ function ldraw_lib__s__64424s02() = [
 // 2 24 -39 24 -30 -39 24 -24
   [2,24,-39,24,-30,-39,24,-24],
 // 1 16 -57 17 -25 0 -1 0 7 0 0 0 0 5 rect.dat
-  [1,16,-57,17,-25,0,-1,0,7,0,0,0,0,5, ldraw_lib__rect()],
+  [1,16,-57,17,-25,0,-1,0,7,0,0,0,0,5, ldraw_lib__rect(realsolid)],
 ];
 module ldraw_lib__s__64424s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__64424s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__64424s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__64424s02(line=0.2);

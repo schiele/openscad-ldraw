@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/4494s00.scad>
 use <s/4494s01.scad>
-function ldraw_lib__4494() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4494(realsolid=false) = [
 // 0 ~Animal Horse Body Right
 // 0 Name: 4494.dat
 // 0 Author: Sascha Broich
@@ -21,10 +22,10 @@ function ldraw_lib__4494() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4494s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4494s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4494s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4494s00.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4494s00()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4494s00(realsolid)],
 ];
 module ldraw_lib__4494(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4494(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4494(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4494(line=0.2);

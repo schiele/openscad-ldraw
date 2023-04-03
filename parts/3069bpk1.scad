@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3069bs01.scad>
-function ldraw_lib__3069bpk1() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3069bpk1(realsolid=false) = [
 // 0 Tile  1 x  2 with Black "mode" and Light Bluish Grey Wig Pattern
 // 0 Name: 3069bpk1.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -17,7 +18,7 @@ function ldraw_lib__3069bpk1() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3069bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3069bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3069bs01(realsolid)],
 // 4 0 -5.7 0 -.75 -5.51 0 .21 -6.34 0 .55 -6.6 0 -.75
   [4,0,-5.7,0,-.75,-5.51,0,.21,-6.34,0,.55,-6.6,0,-.75],
 // 4 0 -5.51 0 -1.71 -5.7 0 -.75 -6.6 0 -.75 -6.34 0 -2.05
@@ -524,5 +525,5 @@ function ldraw_lib__3069bpk1() = [
   [4,16,13.99,0,.22,11.1,0,.7,11.43,0,-.6,14.15,0,-.6],
 ];
 module ldraw_lib__3069bpk1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3069bpk1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3069bpk1(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3069bpk1(line=0.2);

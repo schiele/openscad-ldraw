@@ -5,7 +5,8 @@ use <../../p/2-4ring1.scad>
 use <../../p/4-4cylo.scad>
 use <../../p/4-4edge.scad>
 use <../../p/4-4ring1.scad>
-function ldraw_lib__s__92549s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__92549s01(realsolid=false) = [
 // 0 ~Spinner Ninjago  6 x  6 x  1.333 Type 1 Bottom - Half
 // 0 Name: s\92549s01.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -24,31 +25,31 @@ function ldraw_lib__s__92549s01() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 13 36 0 0 5 0 7 0 -5 0 0 2-4cylo.dat
-  [1,16,0,13,36,0,0,5,0,7,0,-5,0,0, ldraw_lib__2_4cylo()],
+  [1,16,0,13,36,0,0,5,0,7,0,-5,0,0, ldraw_lib__2_4cylo(realsolid)],
 // 1 16 0 20 36 0 0 2.5 0 1 0 -2.5 0 0 2-4ring1.dat
-  [1,16,0,20,36,0,0,2.5,0,1,0,-2.5,0,0, ldraw_lib__2_4ring1()],
+  [1,16,0,20,36,0,0,2.5,0,1,0,-2.5,0,0, ldraw_lib__2_4ring1(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 20 36 0 0 2.5 0 2 0 -2.5 0 0 2-4cylo.dat
-  [1,16,0,20,36,0,0,2.5,0,2,0,-2.5,0,0, ldraw_lib__2_4cylo()],
+  [1,16,0,20,36,0,0,2.5,0,2,0,-2.5,0,0, ldraw_lib__2_4cylo(realsolid)],
 // 1 16 0 22 36 0 0 2.5 0 -1 0 -2.5 0 0 2-4ring1.dat
-  [1,16,0,22,36,0,0,2.5,0,-1,0,-2.5,0,0, ldraw_lib__2_4ring1()],
+  [1,16,0,22,36,0,0,2.5,0,-1,0,-2.5,0,0, ldraw_lib__2_4ring1(realsolid)],
 // 1 16 0 22 36 0 0 5 0 1 0 -5 0 0 2-4edge.dat
-  [1,16,0,22,36,0,0,5,0,1,0,-5,0,0, ldraw_lib__2_4edge()],
+  [1,16,0,22,36,0,0,5,0,1,0,-5,0,0, ldraw_lib__2_4edge(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 31.177 13 -18 5 0 0 0 7 0 0 0 5 4-4cylo.dat
-  [1,16,31.177,13,-18,5,0,0,0,7,0,0,0,5, ldraw_lib__4_4cylo()],
+  [1,16,31.177,13,-18,5,0,0,0,7,0,0,0,5, ldraw_lib__4_4cylo(realsolid)],
 // 1 16 31.177 20 -18 2.5 0 0 0 1 0 0 0 2.5 4-4ring1.dat
-  [1,16,31.177,20,-18,2.5,0,0,0,1,0,0,0,2.5, ldraw_lib__4_4ring1()],
+  [1,16,31.177,20,-18,2.5,0,0,0,1,0,0,0,2.5, ldraw_lib__4_4ring1(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 31.177 20 -18 2.5 0 0 0 2 0 0 0 2.5 4-4cylo.dat
-  [1,16,31.177,20,-18,2.5,0,0,0,2,0,0,0,2.5, ldraw_lib__4_4cylo()],
+  [1,16,31.177,20,-18,2.5,0,0,0,2,0,0,0,2.5, ldraw_lib__4_4cylo(realsolid)],
 // 1 16 31.177 22 -18 2.5 0 0 0 -1 0 0 0 2.5 4-4ring1.dat
-  [1,16,31.177,22,-18,2.5,0,0,0,-1,0,0,0,2.5, ldraw_lib__4_4ring1()],
+  [1,16,31.177,22,-18,2.5,0,0,0,-1,0,0,0,2.5, ldraw_lib__4_4ring1(realsolid)],
 // 1 16 31.177 22 -18 5 0 0 0 1 0 0 0 5 4-4edge.dat
-  [1,16,31.177,22,-18,5,0,0,0,1,0,0,0,5, ldraw_lib__4_4edge()],
+  [1,16,31.177,22,-18,5,0,0,0,1,0,0,0,5, ldraw_lib__4_4edge(realsolid)],
 // 0 // Disc 1
 // 0 // Faces
 // 3 16 19.828 32 2.61 20 32 0 19.828 32 -2.61
@@ -3357,5 +3358,5 @@ function ldraw_lib__s__92549s01() = [
   [5,24,31.177,22,-13,31.177,30.14019,-13,33.0905,22,-13.3805,29.2635,22,-13.3805],
 ];
 module ldraw_lib__s__92549s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__92549s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__92549s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__92549s01(line=0.2);

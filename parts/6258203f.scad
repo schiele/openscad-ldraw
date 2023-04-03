@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/1-4chrd.scad>
 use <../p/1-4cyli.scad>
 use <../p/box3u12.scad>
-function ldraw_lib__6258203f() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6258203f(realsolid=false) = [
 // 0 Sticker  0.8 x  1.9 with Rounded Corners and Red Nitrous Oxide Injection Label "AFK N2O" on White Background
 // 0 Name: 6258203f.dat
 // 0 Author: Ulrich Röder [UR]
@@ -21,23 +22,23 @@ function ldraw_lib__6258203f() = [
 // 0 // Box Rounded Corners
 // 
 // 1 16 17.5 0 7 1 0 0 0 -1 0 0 0 1 1-4chrd.dat
-  [1,16,17.5,0,7,1,0,0,0,-1,0,0,0,1, ldraw_lib__1_4chrd()],
+  [1,16,17.5,0,7,1,0,0,0,-1,0,0,0,1, ldraw_lib__1_4chrd(realsolid)],
 // 1 16 17.5 0 7 1 0 0 0 -.25 0 0 0 1 1-4cyli.dat
-  [1,16,17.5,0,7,1,0,0,0,-.25,0,0,0,1, ldraw_lib__1_4cyli()],
+  [1,16,17.5,0,7,1,0,0,0,-.25,0,0,0,1, ldraw_lib__1_4cyli(realsolid)],
 // 1 16 17.5 0 -7 1 0 0 0 -1 0 0 0 -1 1-4chrd.dat
-  [1,16,17.5,0,-7,1,0,0,0,-1,0,0,0,-1, ldraw_lib__1_4chrd()],
+  [1,16,17.5,0,-7,1,0,0,0,-1,0,0,0,-1, ldraw_lib__1_4chrd(realsolid)],
 // 1 16 17.5 0 -7 1 0 0 0 -.25 0 0 0 -1 1-4cyli.dat
-  [1,16,17.5,0,-7,1,0,0,0,-.25,0,0,0,-1, ldraw_lib__1_4cyli()],
+  [1,16,17.5,0,-7,1,0,0,0,-.25,0,0,0,-1, ldraw_lib__1_4cyli(realsolid)],
 // 1 16 -17.5 0 -7 -1 0 0 0 -1 0 0 0 -1 1-4chrd.dat
-  [1,16,-17.5,0,-7,-1,0,0,0,-1,0,0,0,-1, ldraw_lib__1_4chrd()],
+  [1,16,-17.5,0,-7,-1,0,0,0,-1,0,0,0,-1, ldraw_lib__1_4chrd(realsolid)],
 // 1 16 -17.5 0 -7 -1 0 0 0 -.25 0 0 0 -1 1-4cyli.dat
-  [1,16,-17.5,0,-7,-1,0,0,0,-.25,0,0,0,-1, ldraw_lib__1_4cyli()],
+  [1,16,-17.5,0,-7,-1,0,0,0,-.25,0,0,0,-1, ldraw_lib__1_4cyli(realsolid)],
 // 1 16 -17.5 0 7 -1 0 0 0 -1 0 0 0 1 1-4chrd.dat
-  [1,16,-17.5,0,7,-1,0,0,0,-1,0,0,0,1, ldraw_lib__1_4chrd()],
+  [1,16,-17.5,0,7,-1,0,0,0,-1,0,0,0,1, ldraw_lib__1_4chrd(realsolid)],
 // 1 16 -17.5 0 7 -1 0 0 0 -.25 0 0 0 1 1-4cyli.dat
-  [1,16,-17.5,0,7,-1,0,0,0,-.25,0,0,0,1, ldraw_lib__1_4cyli()],
+  [1,16,-17.5,0,7,-1,0,0,0,-.25,0,0,0,1, ldraw_lib__1_4cyli(realsolid)],
 // 1 16 0 -.25 0 17.5 0 0 0 .25 0 0 0 8 box3u12.dat
-  [1,16,0,-.25,0,17.5,0,0,0,.25,0,0,0,8, ldraw_lib__box3u12()],
+  [1,16,0,-.25,0,17.5,0,0,0,.25,0,0,0,8, ldraw_lib__box3u12(realsolid)],
 // 4 16 -18.5 -.25 -7 -18.5 -.25 7 -18.5 0 7 -18.5 0 -7
   [4,16,-18.5,-.25,-7,-18.5,-.25,7,-18.5,0,7,-18.5,0,-7],
 // 4 16 18.5 0 7 18.5 -.25 7 18.5 -.25 -7 18.5 0 -7
@@ -50,13 +51,13 @@ function ldraw_lib__6258203f() = [
 // 0 // Surface
 // 0 // Black / Frame
 // 1 0 17.5 -.25 7 1 0 0 0 1 0 0 0 1 1-4chrd.dat
-  [1,0,17.5,-.25,7,1,0,0,0,1,0,0,0,1, ldraw_lib__1_4chrd()],
+  [1,0,17.5,-.25,7,1,0,0,0,1,0,0,0,1, ldraw_lib__1_4chrd(realsolid)],
 // 1 0 17.5 -.25 -7 1 0 0 0 1 0 0 0 -1 1-4chrd.dat
-  [1,0,17.5,-.25,-7,1,0,0,0,1,0,0,0,-1, ldraw_lib__1_4chrd()],
+  [1,0,17.5,-.25,-7,1,0,0,0,1,0,0,0,-1, ldraw_lib__1_4chrd(realsolid)],
 // 1 0 -17.5 -.25 -7 -1 0 0 0 1 0 0 0 -1 1-4chrd.dat
-  [1,0,-17.5,-.25,-7,-1,0,0,0,1,0,0,0,-1, ldraw_lib__1_4chrd()],
+  [1,0,-17.5,-.25,-7,-1,0,0,0,1,0,0,0,-1, ldraw_lib__1_4chrd(realsolid)],
 // 1 0 -17.5 -.25 7 -1 0 0 0 1 0 0 0 1 1-4chrd.dat
-  [1,0,-17.5,-.25,7,-1,0,0,0,1,0,0,0,1, ldraw_lib__1_4chrd()],
+  [1,0,-17.5,-.25,7,-1,0,0,0,1,0,0,0,1, ldraw_lib__1_4chrd(realsolid)],
 // 4 0 17.25 -.25 -6.8 18.5 -.25 -7 18.5 -.25 7 17.25 -.25 6.8
   [4,0,17.25,-.25,-6.8,18.5,-.25,-7,18.5,-.25,7,17.25,-.25,6.8],
 // 3 0 -18.5 -.25 7 -18.5 -.25 -7 -17.25 -.25 6.8
@@ -413,5 +414,5 @@ function ldraw_lib__6258203f() = [
   [4,15,-6.75,-.25,-.85,-6.5,-.25,-.85,-6,-.25,-.1,-6.25,-.25,-.1],
 ];
 module ldraw_lib__6258203f(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6258203f(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6258203f(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6258203f(line=0.2);

@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/box.scad>
 use <u9557.scad>
 use <u9558.scad>
-function ldraw_lib__66757() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__66757(realsolid=false) = [
 // 0 Electric Powered Up 2 Port Hub Rechargeable Battery
 // 0 Name: 66757.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -19,12 +20,12 @@ function ldraw_lib__66757() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 u9557.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9557()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9557(realsolid)],
 // 1 16 0 -52 0 1 0 0 0 1 0 0 0 1 u9558.dat
-  [1,16,0,-52,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9558()],
+  [1,16,0,-52,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9558(realsolid)],
 // 1 0 46 -52 0 0 0 4 0 1 0 -8 0 0 box.dat
-  [1,0,46,-52,0,0,0,4,0,1,0,-8,0,0, ldraw_lib__box()],
+  [1,0,46,-52,0,0,0,4,0,1,0,-8,0,0, ldraw_lib__box(realsolid)],
 ];
 module ldraw_lib__66757(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__66757(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__66757(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__66757(line=0.2);

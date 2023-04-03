@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <322c01.scad>
 use <323.scad>
-function ldraw_lib__322c02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__322c02(realsolid=false) = [
 // 0 Electric Lightbrick  2 x  4 with Lightbulb (Complete)
 // 0 Name: 322c02.dat
 // 0 Author: Niels Karsdorp [nielsk]
@@ -20,11 +21,11 @@ function ldraw_lib__322c02() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 322c01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__322c01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__322c01(realsolid)],
 // 1 494 0.25 12 0 1 0 0 0 1 0 0 0 1 323.dat
-  [1,494,0.25,12,0,1,0,0,0,1,0,0,0,1, ldraw_lib__323()],
+  [1,494,0.25,12,0,1,0,0,0,1,0,0,0,1, ldraw_lib__323(realsolid)],
 // 
 ];
 module ldraw_lib__322c02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__322c02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__322c02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__322c02(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3068bs01.scad>
-function ldraw_lib__3068bp8d() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3068bp8d(realsolid=false) = [
 // 0 Tile  2 x  2 with Black Chest X-Ray and Broken Rib Pattern
 // 0 Name: 3068bp8d.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -19,7 +20,7 @@ function ldraw_lib__3068bp8d() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3068bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3068bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3068bs01(realsolid)],
 // 4 0 -18 0 18 -18 0 12.8 -14.3 0 12.2 -11.6 0 18
   [4,0,-18,0,18,-18,0,12.8,-14.3,0,12.2,-11.6,0,18],
 // 4 0 -10.8 0 17.2 -11.6 0 18 -14.3 0 12.2 -12.1 0 12.7
@@ -1110,5 +1111,5 @@ function ldraw_lib__3068bp8d() = [
   [4,0,11.21,0,-4,11.77,0,-2.43,11.69,0,-2.33,10.83,0,-4],
 ];
 module ldraw_lib__3068bp8d(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3068bp8d(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3068bp8d(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3068bp8d(line=0.2);

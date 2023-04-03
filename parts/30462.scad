@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__30462() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__30462(realsolid=false) = [
 // 0 ~Animal Body Legs (Needs Work)
 // 0 Name: 30462.dat
 // 0 Author: Stan Isachenko [angmarec]
@@ -2095,5 +2096,5 @@ function ldraw_lib__30462() = [
   [2,24,-31.499,56.183,81.95,-36.288,56.183,81.95],
 ];
 module ldraw_lib__30462(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__30462(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__30462(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__30462(line=0.2);

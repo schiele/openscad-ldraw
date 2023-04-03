@@ -4,7 +4,8 @@ use <../p/4-4rin16.scad>
 use <../p/4-4rin17.scad>
 use <../p/4-4ring5.scad>
 use <s/14769s01.scad>
-function ldraw_lib__14769p0m() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__14769p0m(realsolid=false) = [
 // 0 Tile  2 x  2 Round with Round Underside Stud with Clock Pattern with Red Second Hand Pattern
 // 0 Name: 14769p0m.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -21,15 +22,15 @@ function ldraw_lib__14769p0m() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\14769s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__14769s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__14769s01(realsolid)],
 // 1 16 0 0 0 3.33333 0 0 0 1 0 0 0 3.33333 4-4ring5.dat
-  [1,16,0,0,0,3.33333,0,0,0,1,0,0,0,3.33333, ldraw_lib__4_4ring5()],
+  [1,16,0,0,0,3.33333,0,0,0,1,0,0,0,3.33333, ldraw_lib__4_4ring5(realsolid)],
 // 1 0 0 0 0 0.92593 0 0 0 1 0 0 0 0.92593 4-4rin17.dat
-  [1,0,0,0,0,0.92593,0,0,0,1,0,0,0,0.92593, ldraw_lib__4_4rin17()],
+  [1,0,0,0,0,0.92593,0,0,0,1,0,0,0,0.92593, ldraw_lib__4_4rin17(realsolid)],
 // 1 71 0 0 0 0.92593 0 0 0 1 0 0 0 0.92593 4-4rin16.dat
-  [1,71,0,0,0,0.92593,0,0,0,1,0,0,0,0.92593, ldraw_lib__4_4rin16()],
+  [1,71,0,0,0,0.92593,0,0,0,1,0,0,0,0.92593, ldraw_lib__4_4rin16(realsolid)],
 // 1 16 0 0 0 14.81481 0 0 0 1 0 0 0 14.81481 4-4ering.dat
-  [1,16,0,0,0,14.81481,0,0,0,1,0,0,0,14.81481, ldraw_lib__4_4ering()],
+  [1,16,0,0,0,14.81481,0,0,0,1,0,0,0,14.81481, ldraw_lib__4_4ering(realsolid)],
 // 
 // 4 0 12.4 0 0.5 12.4 0 -0.5 14 0 -0.5 14 0 0.5
   [4,0,12.4,0,0.5,12.4,0,-0.5,14,0,-0.5,14,0,0.5],
@@ -207,5 +208,5 @@ function ldraw_lib__14769p0m() = [
   [3,16,-0.5,0,12.4,0.65,0,8.3,12.4,0,0.5],
 ];
 module ldraw_lib__14769p0m(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__14769p0m(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__14769p0m(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__14769p0m(line=0.2);

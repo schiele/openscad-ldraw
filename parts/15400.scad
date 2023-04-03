@@ -2,7 +2,8 @@ use <../lib.scad>
 use <15301.scad>
 use <15302.scad>
 use <u9211.scad>
-function ldraw_lib__15400() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__15400(realsolid=false) = [
 // 0 Spring Shooter  1 x  4 x  1 with Dark Bluish Grey Bottom
 // 0 Name: 15400.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -21,12 +22,12 @@ function ldraw_lib__15400() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 15302.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__15302()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__15302(realsolid)],
 // 1 72 0 24 0 1 0 0 0 1 0 0 0 1 15301.dat
-  [1,72,0,24,0,1,0,0,0,1,0,0,0,1, ldraw_lib__15301()],
+  [1,72,0,24,0,1,0,0,0,1,0,0,0,1, ldraw_lib__15301(realsolid)],
 // 1 494 0 9 -25.5 0 0 -1 -1 0 0 0 1 0 u9211.dat
-  [1,494,0,9,-25.5,0,0,-1,-1,0,0,0,1,0, ldraw_lib__u9211()],
+  [1,494,0,9,-25.5,0,0,-1,-1,0,0,0,1,0, ldraw_lib__u9211(realsolid)],
 ];
 module ldraw_lib__15400(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__15400(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__15400(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__15400(line=0.2);

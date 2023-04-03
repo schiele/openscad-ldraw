@@ -3,7 +3,8 @@ use <../p/2-4ering.scad>
 use <../p/2-4ndis.scad>
 use <../p/2-4ring9.scad>
 use <s/24246s02.scad>
-function ldraw_lib__24246p04() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__24246p04(realsolid=false) = [
 // 0 Tile  1 x  1 with Rounded End with White Mercedes-Benz Logo Pattern
 // 0 Name: 24246p04.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -21,17 +22,17 @@ function ldraw_lib__24246p04() = [
 // 
 // 0 // Subpart
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\24246s02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__24246s02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__24246s02(realsolid)],
 // 0 // Upper face
 // 0 // Primitives
 // 1 15 0 0 0 8.25 0 0 0 1 0 0 0 8.25 2-4ering.dat
-  [1,15,0,0,0,8.25,0,0,0,1,0,0,0,8.25, ldraw_lib__2_4ering()],
+  [1,15,0,0,0,8.25,0,0,0,1,0,0,0,8.25, ldraw_lib__2_4ering(realsolid)],
 // 1 16 0 0 0 8.25 0 0 0 1 0 0 0 8.25 2-4ndis.dat
-  [1,16,0,0,0,8.25,0,0,0,1,0,0,0,8.25, ldraw_lib__2_4ndis()],
+  [1,16,0,0,0,8.25,0,0,0,1,0,0,0,8.25, ldraw_lib__2_4ndis(realsolid)],
 // 1 16 0 0 0 9 0 0 0 1 0 0 0 -9 2-4ering.dat
-  [1,16,0,0,0,9,0,0,0,1,0,0,0,-9, ldraw_lib__2_4ering()],
+  [1,16,0,0,0,9,0,0,0,1,0,0,0,-9, ldraw_lib__2_4ering(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 -1 2-4ring9.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__2_4ring9()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__2_4ring9(realsolid)],
 // 0 // Neutral faces
 // 3 16 -10 0 10 -10 0 0 -9 0 0
   [3,16,-10,0,10,-10,0,0,-9,0,0],
@@ -480,5 +481,5 @@ function ldraw_lib__24246p04() = [
   [4,16,6.5383,0,-3.775,6.5768,0,-3.4585,6.3686,0,-3.2171,6.361,0,-3.5325],
 ];
 module ldraw_lib__24246p04(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__24246p04(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__24246p04(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__24246p04(line=0.2);

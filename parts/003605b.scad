@@ -3,7 +3,8 @@ use <../p/box5-12.scad>
 use <../p/logo-shell-e.scad>
 use <../p/logo-shell-h.scad>
 use <../p/logo-shell-s.scad>
-function ldraw_lib__003605b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__003605b(realsolid=false) = [
 // 0 Sticker  1.2 x  5.3 with "Shell" sign on White Background
 // 0 Name: 003605b.dat
 // 0 Author: Willy Tschager [Holly-Wood]
@@ -21,15 +22,15 @@ function ldraw_lib__003605b() = [
 // 
 // 0 // Small box
 // 1 16 0 -.25 0 52.5 0 0 0 .25 0 0 0 11 box5-12.dat
-  [1,16,0,-.25,0,52.5,0,0,0,.25,0,0,0,11, ldraw_lib__box5_12()],
+  [1,16,0,-.25,0,52.5,0,0,0,.25,0,0,0,11, ldraw_lib__box5_12(realsolid)],
 // 
 // 0 // Shell sign
 // 1 15 -34.825 -.25 0 1 0 0 0 1 0 0 0 1 logo-shell-s.dat
-  [1,15,-34.825,-.25,0,1,0,0,0,1,0,0,0,1, ldraw_lib__logo_shell_s()],
+  [1,15,-34.825,-.25,0,1,0,0,0,1,0,0,0,1, ldraw_lib__logo_shell_s(realsolid)],
 // 1 15 -9.325 -.25 0 1 0 0 0 1 0 0 0 1 logo-shell-h.dat
-  [1,15,-9.325,-.25,0,1,0,0,0,1,0,0,0,1, ldraw_lib__logo_shell_h()],
+  [1,15,-9.325,-.25,0,1,0,0,0,1,0,0,0,1, ldraw_lib__logo_shell_h(realsolid)],
 // 1 15 14.425 -.25 -3 1 0 0 0 1 0 0 0 1 logo-shell-e.dat
-  [1,15,14.425,-.25,-3,1,0,0,0,1,0,0,0,1, ldraw_lib__logo_shell_e()],
+  [1,15,14.425,-.25,-3,1,0,0,0,1,0,0,0,1, ldraw_lib__logo_shell_e(realsolid)],
 // 4 4 29.175 -.25 9.5 29.175 -.25 -9.5 36.175 -.25 -9.5 36.175 -.25 9.5
   [4,4,29.175,-.25,9.5,29.175,-.25,-9.5,36.175,-.25,-9.5,36.175,-.25,9.5],
 // 4 4 40.175 -.25 9.5 40.175 -.25 -9.5 47.175 -.25 -9.5 47.175 -.25 9.5
@@ -110,5 +111,5 @@ function ldraw_lib__003605b() = [
   [4,15,40.175,-.25,9.5,36.175,-.25,9.5,36.175,-.25,-9.5,40.175,-.25,-9.5],
 ];
 module ldraw_lib__003605b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__003605b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__003605b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__003605b(line=0.2);

@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/rect1.scad>
-function ldraw_lib__s__u9105s06() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__u9105s06(realsolid=false) = [
 // 0 ~Figure Fabuland Mouse Teeth
 // 0 Name: s\u9105s06.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -29,7 +30,7 @@ function ldraw_lib__s__u9105s06() = [
 // 3 16 -0.2 -8.65 -27.412 -3.941 -8.65 -26.412 0 -8.65 -27.212
   [3,16,-0.2,-8.65,-27.412,-3.941,-8.65,-26.412,0,-8.65,-27.212],
 // 1 16 -0.1 -11.385 -27.694 0 -0.70368 0.1 2.735 -0.05053 0 0.382 0.36146 0.1 rect1.dat
-  [1,16,-0.1,-11.385,-27.694,0,-0.70368,0.1,2.735,-0.05053,0,0.382,0.36146,0.1, ldraw_lib__rect1()],
+  [1,16,-0.1,-11.385,-27.694,0,-0.70368,0.1,2.735,-0.05053,0,0.382,0.36146,0.1, ldraw_lib__rect1(realsolid)],
 // 3 16 -3.941 -8.65 -25.012 -3.941 -8.65 -26.412 -4.405 -12.92 -27.376
   [3,16,-3.941,-8.65,-25.012,-3.941,-8.65,-26.412,-4.405,-12.92,-27.376],
 // 2 24 -4.337 -12.291 -27.234 -3.941 -8.65 -26.412
@@ -78,5 +79,5 @@ function ldraw_lib__s__u9105s06() = [
   [2,24,-2.458,-12.676,-27.639,-0.74,-13.217,-27.973],
 ];
 module ldraw_lib__s__u9105s06(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__u9105s06(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__u9105s06(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__u9105s06(line=0.2);

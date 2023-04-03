@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__2335p31s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__2335p31s01(realsolid=false) = [
 // 0 ~Flag  2 x  2 Square with Crossed Cannons over Red Stripes, Black Outline Pattern
 // 0 Name: s\2335p31s01.dat
 // 0 Author: Stan Isachenko [angmarec]
@@ -1001,5 +1002,5 @@ function ldraw_lib__s__2335p31s01() = [
   [3,16,-2,26.7821,38.3467,-2,26.8245,38.4201,-2,29.8483,38.2618],
 ];
 module ldraw_lib__s__2335p31s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__2335p31s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__2335p31s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__2335p31s01(line=0.2);

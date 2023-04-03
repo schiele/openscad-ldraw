@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__56890s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__56890s01(realsolid=false) = [
 // 0 ~Tyre 12/ 61 x 11 Balloon - Tread Section
 // 0 Name: s\56890s01.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -95,5 +96,5 @@ function ldraw_lib__s__56890s01() = [
   [2,24,5.8527,-29.4236,-2,5.6576,-28.4428,-2],
 ];
 module ldraw_lib__s__56890s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__56890s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__56890s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__56890s01(line=0.2);

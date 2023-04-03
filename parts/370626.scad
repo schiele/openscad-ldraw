@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <3706.scad>
-function ldraw_lib__370626() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__370626(realsolid=false) = [
 // 0 ~_Technic Axle  6 Black (Obsolete)
 // 0 Name: 370626.dat
 // 0 Author: Michael Heidemann [mikeheide]
@@ -17,8 +18,8 @@ function ldraw_lib__370626() = [
 // 
 // 
 // 1 0 0 0 0 1 0 0 0 1 0 0 0 1 3706.dat
-  [1,0,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3706()],
+  [1,0,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3706(realsolid)],
 ];
 module ldraw_lib__370626(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__370626(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__370626(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__370626(line=0.2);

@@ -4,7 +4,8 @@ use <../p/4-4ring6.scad>
 use <../p/4-4ring7.scad>
 use <../p/axlehol2.scad>
 use <../p/axlehole.scad>
-function ldraw_lib__2978() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2978(realsolid=false) = [
 // 0 Electric Brick  2 x  4 x  1.667 Sensor Rotation - Rotation Element
 // 0 Name: 2978.dat
 // 0 Author: Jonathan P. Brown
@@ -25,26 +26,26 @@ function ldraw_lib__2978() = [
 // 
 // 
 // 1 16 0 0 -16 1 0 0 0 0 1 0 1 0 4-4ring7.dat
-  [1,16,0,0,-16,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4ring7()],
+  [1,16,0,0,-16,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4ring7(realsolid)],
 // 1 16 0 0 16 1 0 0 0 0 1 0 -1 0 4-4ring7.dat
-  [1,16,0,0,16,1,0,0,0,0,1,0,-1,0, ldraw_lib__4_4ring7()],
+  [1,16,0,0,16,1,0,0,0,0,1,0,-1,0, ldraw_lib__4_4ring7(realsolid)],
 // 1 16 0 0 -20 1 0 0 0 0 1 0 40 0 axlehole.dat
-  [1,16,0,0,-20,1,0,0,0,0,1,0,40,0, ldraw_lib__axlehole()],
+  [1,16,0,0,-20,1,0,0,0,0,1,0,40,0, ldraw_lib__axlehole(realsolid)],
 // 1 16 0 0 -20 1 0 0 0 0 1 0 1 0 axlehol2.dat
-  [1,16,0,0,-20,1,0,0,0,0,1,0,1,0, ldraw_lib__axlehol2()],
+  [1,16,0,0,-20,1,0,0,0,0,1,0,1,0, ldraw_lib__axlehol2(realsolid)],
 // 1 16 0 0 20 1 0 0 0 0 1 0 1 0 axlehol2.dat
-  [1,16,0,0,20,1,0,0,0,0,1,0,1,0, ldraw_lib__axlehol2()],
+  [1,16,0,0,20,1,0,0,0,0,1,0,1,0, ldraw_lib__axlehol2(realsolid)],
 // 1 16 0 0 -20 7 0 0 0 0 7 0 4 0 4-4cylo.dat
-  [1,16,0,0,-20,7,0,0,0,0,7,0,4,0, ldraw_lib__4_4cylo()],
+  [1,16,0,0,-20,7,0,0,0,0,7,0,4,0, ldraw_lib__4_4cylo(realsolid)],
 // 1 16 0 0 16 7 0 0 0 0 7 0 4 0 4-4cylo.dat
-  [1,16,0,0,16,7,0,0,0,0,7,0,4,0, ldraw_lib__4_4cylo()],
+  [1,16,0,0,16,7,0,0,0,0,7,0,4,0, ldraw_lib__4_4cylo(realsolid)],
 // 1 16 0 0 -16 8 0 0 0 0 8 0 32 0 4-4cylo.dat
-  [1,16,0,0,-16,8,0,0,0,0,8,0,32,0, ldraw_lib__4_4cylo()],
+  [1,16,0,0,-16,8,0,0,0,0,8,0,32,0, ldraw_lib__4_4cylo(realsolid)],
 // 1 16 0 0 -20 1 0 0 0 0 1 0 1 0 4-4ring6.dat
-  [1,16,0,0,-20,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4ring6()],
+  [1,16,0,0,-20,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4ring6(realsolid)],
 // 1 16 0 0 20 1 0 0 0 0 1 0 -1 0 4-4ring6.dat
-  [1,16,0,0,20,1,0,0,0,0,1,0,-1,0, ldraw_lib__4_4ring6()],
+  [1,16,0,0,20,1,0,0,0,0,1,0,-1,0, ldraw_lib__4_4ring6(realsolid)],
 ];
 module ldraw_lib__2978(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2978(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2978(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2978(line=0.2);

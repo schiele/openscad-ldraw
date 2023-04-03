@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <empty.scad>
-function ldraw_lib__1_16chrd() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__1_16chrd(realsolid=false) = [
 // 0 Chord 0.0625
 // 0 Name: 1-16chrd.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -22,8 +23,8 @@ function ldraw_lib__1_16chrd() = [
 // 0 // This file is based on an idea by Darats at http://forums.ldraw.org/read.php?19,14500,14500#msg-14500
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 empty.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__empty()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__empty(realsolid)],
 ];
 module ldraw_lib__1_16chrd(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__1_16chrd(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__1_16chrd(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__1_16chrd(line=0.2);

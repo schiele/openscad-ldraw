@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__92251p04s03() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__92251p04s03(realsolid=false) = [
 // 0 ~Figure Friends Foot with Low-Cut Shoe Type 2 Pattern
 // 0 Name: s\92251p04s03.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -341,5 +342,5 @@ function ldraw_lib__s__92251p04s03() = [
   [5,24,14.2072,-3.0632,9.7118,10.9741,-3.7179,11.9196,13.99,-6.55,10,14.1719,-1.6832,9.7473],
 ];
 module ldraw_lib__s__92251p04s03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__92251p04s03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__92251p04s03(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__92251p04s03(line=0.2);

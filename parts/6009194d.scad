@@ -8,7 +8,8 @@ use <s/6009194ds06.scad>
 use <s/6009194ds07.scad>
 use <s/6009194ds08.scad>
 use <s/6009194ds11.scad>
-function ldraw_lib__6009194d() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6009194d(realsolid=false) = [
 // 0 Sticker  3.3 x  1.8 with White Stripe on Black Background and Logo Ferrari Rectangular
 // 0 Name: 6009194d.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -25,24 +26,24 @@ function ldraw_lib__6009194d() = [
 // 
 // 
 // 1 16 0 0 14.3849 1 0 0 0 1 0 0 0 1 s\6009194ds01.dat
-  [1,16,0,0,14.3849,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6009194ds01()],
+  [1,16,0,0,14.3849,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6009194ds01(realsolid)],
 // 1 16 0 0 14.3849 1 0 0 0 1 0 0 0 1 s\6009194ds02.dat
-  [1,16,0,0,14.3849,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6009194ds02()],
+  [1,16,0,0,14.3849,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6009194ds02(realsolid)],
 // 1 16 0 0 14.3849 1 0 0 0 1 0 0 0 1 s\6009194ds03.dat
-  [1,16,0,0,14.3849,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6009194ds03()],
+  [1,16,0,0,14.3849,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6009194ds03(realsolid)],
 // 1 16 0 0 14.3849 1 0 0 0 1 0 0 0 1 s\6009194ds04.dat
-  [1,16,0,0,14.3849,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6009194ds04()],
+  [1,16,0,0,14.3849,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6009194ds04(realsolid)],
 // 1 16 0 0 14.3849 1 0 0 0 1 0 0 0 1 s\6009194ds05.dat
-  [1,16,0,0,14.3849,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6009194ds05()],
+  [1,16,0,0,14.3849,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6009194ds05(realsolid)],
 // 1 16 0 0 14.3849 1 0 0 0 1 0 0 0 1 s\6009194ds06.dat
-  [1,16,0,0,14.3849,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6009194ds06()],
+  [1,16,0,0,14.3849,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6009194ds06(realsolid)],
 // 1 16 0 0 14.3849 1 0 0 0 1 0 0 0 1 s\6009194ds07.dat
-  [1,16,0,0,14.3849,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6009194ds07()],
+  [1,16,0,0,14.3849,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6009194ds07(realsolid)],
 // 1 16 0 0 14.3849 1 0 0 0 1 0 0 0 1 s\6009194ds08.dat
-  [1,16,0,0,14.3849,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6009194ds08()],
+  [1,16,0,0,14.3849,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6009194ds08(realsolid)],
 // 1 16 0 0 14.3849 1 0 0 0 1 0 0 0 1 s\6009194ds11.dat
-  [1,16,0,0,14.3849,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6009194ds11()],
+  [1,16,0,0,14.3849,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6009194ds11(realsolid)],
 ];
 module ldraw_lib__6009194d(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6009194d(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6009194d(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6009194d(line=0.2);

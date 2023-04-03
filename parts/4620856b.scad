@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4ndis.scad>
-function ldraw_lib__4620856b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4620856b(realsolid=false) = [
 // 0 Sticker  3.0 x  1.4 Surfboard Front with Hearts and Flower
 // 0 Name: 4620856b.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -65,17 +66,17 @@ function ldraw_lib__4620856b() = [
 // 3 16 -4 0 26.2 1 0 32 4 0 26.2
   [3,16,-4,0,26.2,1,0,32,4,0,26.2],
 // 1 323 3 -.25 16 .7 0 0 0 1 0 0 0 .7 4-4disc.dat
-  [1,323,3,-.25,16,.7,0,0,0,1,0,0,0,.7, ldraw_lib__4_4disc()],
+  [1,323,3,-.25,16,.7,0,0,0,1,0,0,0,.7, ldraw_lib__4_4disc(realsolid)],
 // 1 322 3 -.25 16 .7 0 0 0 1 0 0 0 .7 4-4ndis.dat
-  [1,322,3,-.25,16,.7,0,0,0,1,0,0,0,.7, ldraw_lib__4_4ndis()],
+  [1,322,3,-.25,16,.7,0,0,0,1,0,0,0,.7, ldraw_lib__4_4ndis(realsolid)],
 // 1 323 .8 -.25 14.2 1 0 0 0 1 0 0 0 1 4-4disc.dat
-  [1,323,.8,-.25,14.2,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4disc()],
+  [1,323,.8,-.25,14.2,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4disc(realsolid)],
 // 1 322 .8 -.25 14.2 1 0 0 0 1 0 0 0 1 4-4ndis.dat
-  [1,322,.8,-.25,14.2,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4ndis()],
+  [1,322,.8,-.25,14.2,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4ndis(realsolid)],
 // 1 323 -1.2 -.25 11.4 1.4 0 0 0 1 0 0 0 1.4 4-4disc.dat
-  [1,323,-1.2,-.25,11.4,1.4,0,0,0,1,0,0,0,1.4, ldraw_lib__4_4disc()],
+  [1,323,-1.2,-.25,11.4,1.4,0,0,0,1,0,0,0,1.4, ldraw_lib__4_4disc(realsolid)],
 // 1 322 -1.2 -.25 11.4 1.4 0 0 0 1 0 0 0 1.4 4-4ndis.dat
-  [1,322,-1.2,-.25,11.4,1.4,0,0,0,1,0,0,0,1.4, ldraw_lib__4_4ndis()],
+  [1,322,-1.2,-.25,11.4,1.4,0,0,0,1,0,0,0,1.4, ldraw_lib__4_4ndis(realsolid)],
 // 4 323 7.4 -.25 -7.4 6.7 -.25 -6.3 6.2 -.25 -7.3 6.3 -.25 -9.5
   [4,323,7.4,-.25,-7.4,6.7,-.25,-6.3,6.2,-.25,-7.3,6.3,-.25,-9.5],
 // 4 323 6.3 -.25 -9.5 6.2 -.25 -7.3 5.3 -.25 -8 5.6 -.25 -9.8
@@ -750,5 +751,5 @@ function ldraw_lib__4620856b() = [
   [5,24,1,-.25,32,1,0,32,0,-.25,33,4,-.25,26.2],
 ];
 module ldraw_lib__4620856b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4620856b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4620856b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4620856b(line=0.2);

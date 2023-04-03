@@ -2,7 +2,8 @@ use <../../lib.scad>
 use <../../p/1-4chrd.scad>
 use <../../p/48/5-48chrd.scad>
 use <../../p/48/5-48ndis.scad>
-function ldraw_lib__s__6142622ps06() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__6142622ps06(realsolid=false) = [
 // 0 ~Sticker  0.8 x  1.9 with Red Stripe on Black and Yellow Background Left - Upper Section 6
 // 0 Name: s\6142622ps06.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -19,13 +20,13 @@ function ldraw_lib__s__6142622ps06() = [
 // 0 // Primitives
 // 
 // 1 14 2.375 -.25 2.4892 0 0 -3.5 0 1 0 -3.5 0 0 48\5-48ndis.dat
-  [1,14,2.375,-.25,2.4892,0,0,-3.5,0,1,0,-3.5,0,0, ldraw_lib__48__5_48ndis()],
+  [1,14,2.375,-.25,2.4892,0,0,-3.5,0,1,0,-3.5,0,0, ldraw_lib__48__5_48ndis(realsolid)],
 // 1 0 2.375 -.25 2.4892 0 0 -3.5 0 1 0 -3.5 0 0 48\5-48chrd.dat
-  [1,0,2.375,-.25,2.4892,0,0,-3.5,0,1,0,-3.5,0,0, ldraw_lib__48__5_48chrd()],
+  [1,0,2.375,-.25,2.4892,0,0,-3.5,0,1,0,-3.5,0,0, ldraw_lib__48__5_48chrd(realsolid)],
 // 1 14 -6.5 -.25 -3.0901 -1.5 0 0 0 1 0 0 0 -1.5 1-4chrd.dat
-  [1,14,-6.5,-.25,-3.0901,-1.5,0,0,0,1,0,0,0,-1.5, ldraw_lib__1_4chrd()],
+  [1,14,-6.5,-.25,-3.0901,-1.5,0,0,0,1,0,0,0,-1.5, ldraw_lib__1_4chrd(realsolid)],
 // 1 14 6.5 -.25 -3.0901 1.5 0 0 0 1 0 0 0 -1.5 1-4chrd.dat
-  [1,14,6.5,-.25,-3.0901,1.5,0,0,0,1,0,0,0,-1.5, ldraw_lib__1_4chrd()],
+  [1,14,6.5,-.25,-3.0901,1.5,0,0,0,1,0,0,0,-1.5, ldraw_lib__1_4chrd(realsolid)],
 // 0 // Black faces
 // 3 0 -.0999 -.25 .0144 .2442 -.25 -.2877 2.375 -.25 -1.0108
   [3,0,-.0999,-.25,.0144,.2442,-.25,-.2877,2.375,-.25,-1.0108],
@@ -44,5 +45,5 @@ function ldraw_lib__s__6142622ps06() = [
   [3,14,2.375,-.25,-1.0108,8,-.25,-3.0901,8,-.25,-1.0108],
 ];
 module ldraw_lib__s__6142622ps06(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__6142622ps06(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__6142622ps06(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__6142622ps06(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <2440p69.scad>
-function ldraw_lib__2440p68() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2440p68(realsolid=false) = [
 // 0 ~Hinge  6 x  3 Radar Panel with Green Pattern (Obsolete)
 // 0 Name: 2440p68.dat
 // 0 Author: Chris Dee [cwdee]
@@ -22,9 +23,9 @@ function ldraw_lib__2440p68() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 2440p69.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2440p69()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2440p69(realsolid)],
 // 0
 ];
 module ldraw_lib__2440p68(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2440p68(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2440p68(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2440p68(line=0.2);

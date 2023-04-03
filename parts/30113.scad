@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/stud4o.scad>
 use <../p/t04o6250.scad>
-function ldraw_lib__30113() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__30113(realsolid=false) = [
 // 0 Minifig Headdress Indian Buffalo Horned
 // 0 Name: 30113.dat
 // 0 Author: Willy Tschager [Holly-Wood]
@@ -86,23 +87,23 @@ function ldraw_lib__30113() = [
 // 2 24 0 19.726 13 -1.143 19.728 12.93
   [2,24,0,19.726,13,-1.143,19.728,12.93],
 // 1 16 0 -4 0 1 0 0 0 -1 0 0 0 1 stud4o.dat
-  [1,16,0,-4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4o()],
+  [1,16,0,-4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4o(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 4 0 0 0 -8 0 -6.4 0 -8 0 0 t04o6250.dat
-  [1,16,0,4,0,0,0,-8,0,-6.4,0,-8,0,0, ldraw_lib__t04o6250()],
+  [1,16,0,4,0,0,0,-8,0,-6.4,0,-8,0,0, ldraw_lib__t04o6250(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 4 0 8 0 0 0 -6.4 0 0 0 -8 t04o6250.dat
-  [1,16,0,4,0,8,0,0,0,-6.4,0,0,0,-8, ldraw_lib__t04o6250()],
+  [1,16,0,4,0,8,0,0,0,-6.4,0,0,0,-8, ldraw_lib__t04o6250(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 4 0 0 0 8 0 -6.4 0 8 0 0 t04o6250.dat
-  [1,16,0,4,0,0,0,8,0,-6.4,0,8,0,0, ldraw_lib__t04o6250()],
+  [1,16,0,4,0,0,0,8,0,-6.4,0,8,0,0, ldraw_lib__t04o6250(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 4 0 -8 0 0 0 -6.4 0 0 0 8 t04o6250.dat
-  [1,16,0,4,0,-8,0,0,0,-6.4,0,0,0,8, ldraw_lib__t04o6250()],
+  [1,16,0,4,0,-8,0,0,0,-6.4,0,0,0,8, ldraw_lib__t04o6250(realsolid)],
 // 3 16 0 19.726 13 1.143 19.728 12.93 0 4 13
   [3,16,0,19.726,13,1.143,19.728,12.93,0,4,13],
 // 5 24 0 4 13 0 19.726 13 1.143 19.728 12.93 -1.143 19.728 12.93
@@ -7678,5 +7679,5 @@ function ldraw_lib__30113() = [
   [5,24,-13,17.86,0,-13.047,14.99,-2.718,-13.548,14.962,-2.627,-12.698,15.024,-2.687],
 ];
 module ldraw_lib__30113(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__30113(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__30113(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__30113(line=0.2);

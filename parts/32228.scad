@@ -3,7 +3,8 @@ use <../p/4-4cyli.scad>
 use <../p/4-4edge.scad>
 use <../p/4-4rin13.scad>
 use <../p/zstud.scad>
-function ldraw_lib__32228() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__32228(realsolid=false) = [
 // 0 Znap Connector  3 x  3 - 4 Way Core Section
 // 0 Name: 32228.dat
 // 0 Author: Michael Heidemann [mikeheide]
@@ -146,9 +147,9 @@ function ldraw_lib__32228() = [
   [2,24,-10,-7,-15,-10,7,-15],
 // 0
 // 1 16 0 0 15 1 0 0 0 0 1 0 -1 0 zstud.dat
-  [1,16,0,0,15,1,0,0,0,0,1,0,-1,0, ldraw_lib__zstud()],
+  [1,16,0,0,15,1,0,0,0,0,1,0,-1,0, ldraw_lib__zstud(realsolid)],
 // 1 16 0 0 -15 1 0 0 0 0 1 0 1 0 zstud.dat
-  [1,16,0,0,-15,1,0,0,0,0,1,0,1,0, ldraw_lib__zstud()],
+  [1,16,0,0,-15,1,0,0,0,0,1,0,1,0, ldraw_lib__zstud(realsolid)],
 // 0
 // 4 16 7 -10 -15 2 -10 -13 2 -10 -10 7 -10 -10
   [4,16,7,-10,-15,2,-10,-13,2,-10,-10,7,-10,-10],
@@ -175,15 +176,15 @@ function ldraw_lib__32228() = [
 // 4 16 2 10 10 7 10 10 7 10 15 2 10 13
   [4,16,2,10,10,7,10,10,7,10,15,2,10,13],
 // 1 16 0 0 1 14 0 0 0 0 14 0 -2 0 4-4cyli.dat
-  [1,16,0,0,1,14,0,0,0,0,14,0,-2,0, ldraw_lib__4_4cyli()],
+  [1,16,0,0,1,14,0,0,0,0,14,0,-2,0, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 0 1 14 0 0 0 0 14 0 -2 0 4-4edge.dat
-  [1,16,0,0,1,14,0,0,0,0,14,0,-2,0, ldraw_lib__4_4edge()],
+  [1,16,0,0,1,14,0,0,0,0,14,0,-2,0, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 0 -1 14 0 0 0 0 14 0 -2 0 4-4edge.dat
-  [1,16,0,0,-1,14,0,0,0,0,14,0,-2,0, ldraw_lib__4_4edge()],
+  [1,16,0,0,-1,14,0,0,0,0,14,0,-2,0, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 0 -1 -1 0 0 0 0 1 0 1 0 4-4rin13.dat
-  [1,16,0,0,-1,-1,0,0,0,0,1,0,1,0, ldraw_lib__4_4rin13()],
+  [1,16,0,0,-1,-1,0,0,0,0,1,0,1,0, ldraw_lib__4_4rin13(realsolid)],
 // 1 16 0 0 1 1 0 0 0 0 1 0 -1 0 4-4rin13.dat
-  [1,16,0,0,1,1,0,0,0,0,1,0,-1,0, ldraw_lib__4_4rin13()],
+  [1,16,0,0,1,1,0,0,0,0,1,0,-1,0, ldraw_lib__4_4rin13(realsolid)],
 // 2 24 2 -10 13 -2 -10 13
   [2,24,2,-10,13,-2,-10,13],
 // 4 16 -2 -10 13 2 -10 13 2 10 13 -2 10 13
@@ -690,5 +691,5 @@ function ldraw_lib__32228() = [
 // 0
 ];
 module ldraw_lib__32228(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__32228(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__32228(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__32228(line=0.2);

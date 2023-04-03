@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <164575c.scad>
-function ldraw_lib__164585b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__164585b(realsolid=false) = [
 // 0 =Sticker Train Front  2 x  6 White Stripe Left
 // 0 Name: 164585b.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -17,8 +18,8 @@ function ldraw_lib__164585b() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 164575c.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__164575c()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__164575c(realsolid)],
 ];
 module ldraw_lib__164585b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__164585b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__164585b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__164585b(line=0.2);

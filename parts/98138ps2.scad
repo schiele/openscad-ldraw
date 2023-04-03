@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4ering.scad>
 use <../p/4-4rin12.scad>
 use <s/98138s01.scad>
-function ldraw_lib__98138ps2() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__98138ps2(realsolid=false) = [
 // 0 Tile  1 x  1 Round with  6 Spokes Republic Pattern
 // 0 Name: 98138ps2.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -17,11 +18,11 @@ function ldraw_lib__98138ps2() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\98138s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01(realsolid)],
 // 1 0 0 0 0 0.69231 0 0 0 0.70711 0 0 0.70711 0.69231 4-4rin12.dat
-  [1,0,0,0,0,0.69231,0,0,0,0.70711,0,0,0.70711,0.69231, ldraw_lib__4_4rin12()],
+  [1,0,0,0,0,0.69231,0,0,0,0.70711,0,0,0.70711,0.69231, ldraw_lib__4_4rin12(realsolid)],
 // 1 16 0 0 0 8.30769 0 0 0 1 0 0 0 8.30769 4-4ering.dat
-  [1,16,0,0,0,8.30769,0,0,0,1,0,0,0,8.30769, ldraw_lib__4_4ering()],
+  [1,16,0,0,0,8.30769,0,0,0,1,0,0,0,8.30769, ldraw_lib__4_4ering(realsolid)],
 // 4 0 0.8571 0 6.5448 2.522 0 6.1 2.82 0 6.82 0.959 0 7.3184
   [4,0,0.8571,0,6.5448,2.522,0,6.1,2.82,0,6.82,0.959,0,7.3184],
 // 4 16 -0.8668 0 6.5447 0.8571 0 6.5447 0.959 0 7.3184 -0.9686 0 7.3184
@@ -212,5 +213,5 @@ function ldraw_lib__98138ps2() = [
   [3,16,-5.86,0,-4.4924,-5.8744,0,-5.8744,-4.499,0,-5.904],
 ];
 module ldraw_lib__98138ps2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__98138ps2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__98138ps2(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__98138ps2(line=0.2);

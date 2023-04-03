@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4cyli.scad>
 use <../p/t02q1304.scad>
 use <../p/t02q1765.scad>
-function ldraw_lib__85543_f5() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__85543_f5(realsolid=false) = [
 // 0 Rubber Belt Round 15 /  1.6 (Formed for Technic Bush - Wheel Rim  8 x 11.2 with Centre Groove)
 // 0 Name: 85543-f5.dat
 // 0 Author: Ulrich Röder [UR]
@@ -26,14 +27,14 @@ function ldraw_lib__85543_f5() = [
 // 
 // 
 // 1 16 0 0 0 -2.5906 0 -8.0956 -8.0956 0 2.5906 0 -8.5 0 t02q1765.dat
-  [1,16,0,0,0,-2.5906,0,-8.0956,-8.0956,0,2.5906,0,-8.5,0, ldraw_lib__t02q1765()],
+  [1,16,0,0,0,-2.5906,0,-8.0956,-8.0956,0,2.5906,0,-8.5,0, ldraw_lib__t02q1765(realsolid)],
 // 1 16 46.4954 -26.953 0 -.4572 -49.086 0 -1.4286 18.8574 0 0 0 -1.5 4-4cyli.dat
-  [1,16,46.4954,-26.953,0,-.4572,-49.086,0,-1.4286,18.8574,0,0,0,-1.5, ldraw_lib__4_4cyli()],
+  [1,16,46.4954,-26.953,0,-.4572,-49.086,0,-1.4286,18.8574,0,0,0,-1.5, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 2.5906 8.0956 0 .4572 50.9147 0 1.4286 -13.1429 0 0 0 -1.5 4-4cyli.dat
-  [1,16,2.5906,8.0956,0,.4572,50.9147,0,1.4286,-13.1429,0,0,0,-1.5, ldraw_lib__4_4cyli()],
+  [1,16,2.5906,8.0956,0,.4572,50.9147,0,1.4286,-13.1429,0,0,0,-1.5, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 50.0003 -16.0002 0 3.5049 0 10.9529 10.9529 0 -3.5049 0 11.5 0 t02q1304.dat
-  [1,16,50.0003,-16.0002,0,3.5049,0,10.9529,10.9529,0,-3.5049,0,11.5,0, ldraw_lib__t02q1304()],
+  [1,16,50.0003,-16.0002,0,3.5049,0,10.9529,10.9529,0,-3.5049,0,11.5,0, ldraw_lib__t02q1304(realsolid)],
 ];
 module ldraw_lib__85543_f5(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__85543_f5(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__85543_f5(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__85543_f5(line=0.2);

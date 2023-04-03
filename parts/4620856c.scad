@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4ndis.scad>
-function ldraw_lib__4620856c() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4620856c(realsolid=false) = [
 // 0 Sticker  1.6 x  1.2 Surfboard Rear with Flowers
 // 0 Name: 4620856c.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -59,21 +60,21 @@ function ldraw_lib__4620856c() = [
 // 3 16 .89 0 -.07 -8.5 0 -16 -10.2 0 -1.5
   [3,16,.89,0,-.07,-8.5,0,-16,-10.2,0,-1.5],
 // 1 15 1.5 -.25 .8 .8 0 0 0 1 0 0 0 .8 4-4disc.dat
-  [1,15,1.5,-.25,.8,.8,0,0,0,1,0,0,0,.8, ldraw_lib__4_4disc()],
+  [1,15,1.5,-.25,.8,.8,0,0,0,1,0,0,0,.8, ldraw_lib__4_4disc(realsolid)],
 // 1 322 1.5 -.25 .8 .8 0 0 0 1 0 0 0 .8 4-4ndis.dat
-  [1,322,1.5,-.25,.8,.8,0,0,0,1,0,0,0,.8, ldraw_lib__4_4ndis()],
+  [1,322,1.5,-.25,.8,.8,0,0,0,1,0,0,0,.8, ldraw_lib__4_4ndis(realsolid)],
 // 1 15 3.3 -.25 .5 .6 0 0 0 1 0 0 0 .6 4-4disc.dat
-  [1,15,3.3,-.25,.5,.6,0,0,0,1,0,0,0,.6, ldraw_lib__4_4disc()],
+  [1,15,3.3,-.25,.5,.6,0,0,0,1,0,0,0,.6, ldraw_lib__4_4disc(realsolid)],
 // 1 322 3.3 -.25 .5 .6 0 0 0 1 0 0 0 .6 4-4ndis.dat
-  [1,322,3.3,-.25,.5,.6,0,0,0,1,0,0,0,.6, ldraw_lib__4_4ndis()],
+  [1,322,3.3,-.25,.5,.6,0,0,0,1,0,0,0,.6, ldraw_lib__4_4ndis(realsolid)],
 // 1 15 2 -.25 -1.3 .6 0 0 0 1 0 0 0 .6 4-4disc.dat
-  [1,15,2,-.25,-1.3,.6,0,0,0,1,0,0,0,.6, ldraw_lib__4_4disc()],
+  [1,15,2,-.25,-1.3,.6,0,0,0,1,0,0,0,.6, ldraw_lib__4_4disc(realsolid)],
 // 1 322 2 -.25 -1.3 .6 0 0 0 1 0 0 0 .6 4-4ndis.dat
-  [1,322,2,-.25,-1.3,.6,0,0,0,1,0,0,0,.6, ldraw_lib__4_4ndis()],
+  [1,322,2,-.25,-1.3,.6,0,0,0,1,0,0,0,.6, ldraw_lib__4_4ndis(realsolid)],
 // 1 15 4.6 -.25 0 .4 0 0 0 1 0 0 0 .4 4-4disc.dat
-  [1,15,4.6,-.25,0,.4,0,0,0,1,0,0,0,.4, ldraw_lib__4_4disc()],
+  [1,15,4.6,-.25,0,.4,0,0,0,1,0,0,0,.4, ldraw_lib__4_4disc(realsolid)],
 // 1 322 4.6 -.25 0 .4 0 0 0 1 0 0 0 .4 4-4ndis.dat
-  [1,322,4.6,-.25,0,.4,0,0,0,1,0,0,0,.4, ldraw_lib__4_4ndis()],
+  [1,322,4.6,-.25,0,.4,0,0,0,1,0,0,0,.4, ldraw_lib__4_4ndis(realsolid)],
 // 4 322 -3.2 -.25 -17.7 0 -.25 -18 3.2 -.25 -17.7 -6.5 -.25 -17
   [4,322,-3.2,-.25,-17.7,0,-.25,-18,3.2,-.25,-17.7,-6.5,-.25,-17],
 // 4 322 -6.5 -.25 -17 3.2 -.25 -17.7 6.5 -.25 -17 -8.5 -.25 -16
@@ -562,5 +563,5 @@ function ldraw_lib__4620856c() = [
   [5,24,0,-.25,-18,0,0,-18,3.2,-.25,-17.7,-3.2,-.25,-17.7],
 ];
 module ldraw_lib__4620856c(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4620856c(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4620856c(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4620856c(line=0.2);

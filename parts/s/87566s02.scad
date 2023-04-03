@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/4-4cyli.scad>
 use <../../p/4-4cylo.scad>
-function ldraw_lib__s__87566s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__87566s02(realsolid=false) = [
 // 0 ~Minifig Mechanical Torso Cyborg - Spine Half
 // 0 Name: s\87566s02.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -16,9 +17,9 @@ function ldraw_lib__s__87566s02() = [
 // 
 // 
 // 1 16 14 -32.35 -0.079 0 11.905 1.036 0 -2.416 3.863 4 0 0 4-4cyli.dat
-  [1,16,14,-32.35,-0.079,0,11.905,1.036,0,-2.416,3.863,4,0,0, ldraw_lib__4_4cyli()],
+  [1,16,14,-32.35,-0.079,0,11.905,1.036,0,-2.416,3.863,4,0,0, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 5.625 0 0 0 8.75 0 0 0 4 4 0 0 4-4cylo.dat
-  [1,16,5.625,0,0,0,8.75,0,0,0,4,4,0,0, ldraw_lib__4_4cylo()],
+  [1,16,5.625,0,0,0,8.75,0,0,0,4,4,0,0, ldraw_lib__4_4cylo(realsolid)],
 // 
 // 0 // arrow
 // 2 24 6.5397 -28.8901 -10.4762 5.625 -28.13 -10.831
@@ -1645,5 +1646,5 @@ function ldraw_lib__s__87566s02() = [
   [5,24,2.869,-17.405,-5.634,0.381,-21.358,-7.424,0.275,-16.188,-5.236,3.283,-18.576,-6],
 ];
 module ldraw_lib__s__87566s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__87566s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__87566s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__87566s02(line=0.2);

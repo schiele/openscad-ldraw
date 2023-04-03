@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__st4jfil4() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__st4jfil4(realsolid=false) = [
 // 0 Stud Tube Open to Fillet Wide (4LDu) Joint
 // 0 Name: st4jfil4.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -58,5 +59,5 @@ function ldraw_lib__st4jfil4() = [
 // 
 ];
 module ldraw_lib__st4jfil4(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__st4jfil4(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__st4jfil4(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__st4jfil4(line=0.2);

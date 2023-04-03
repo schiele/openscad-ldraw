@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/2431s01.scad>
-function ldraw_lib__2431pzg() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2431pzg(realsolid=false) = [
 // 0 Tile  1 x  4 with Reddish Brown Square and Nougat Zig-Zag Pattern
 // 0 Name: 2431pzg.dat
 // 0 Author: Vincent Messenet [Cheenzo]
@@ -19,7 +20,7 @@ function ldraw_lib__2431pzg() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2431s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2431s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2431s01(realsolid)],
 // 
 // 4 70 -19.5 0 4.75 -19.5 0 8 -22.75 0 8 -22.75 0 4.75
   [4,70,-19.5,0,4.75,-19.5,0,8,-22.75,0,8,-22.75,0,4.75],
@@ -51,5 +52,5 @@ function ldraw_lib__2431pzg() = [
   [3,16,-36.5,0,.25,-22.75,0,8,-32.25,0,8.5],
 ];
 module ldraw_lib__2431pzg(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2431pzg(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2431pzg(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2431pzg(line=0.2);

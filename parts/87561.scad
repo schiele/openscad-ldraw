@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/87561s01.scad>
-function ldraw_lib__87561() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__87561(realsolid=false) = [
 // 0 Block  6 x  4 x  1 with Handles and Minifig Pattern
 // 0 Name: 87561.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -19,7 +20,7 @@ function ldraw_lib__87561() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\87561s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__87561s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__87561s01(realsolid)],
 // 
 // 0 // Outside Panels
 // 4 16 38.231 -17.5 -51.25 38.843 -8.75 -51.556 38.843 -8.75 -30.944 38.231 -17.5 -31.25
@@ -274,5 +275,5 @@ function ldraw_lib__87561() = [
   [3,16,-9.012,-28.113,23.916,-7.159,-25.25,22.821,-5.351,-27.344,22.944],
 ];
 module ldraw_lib__87561(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__87561(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__87561(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__87561(line=0.2);

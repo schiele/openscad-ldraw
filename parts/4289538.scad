@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <48729.scad>
-function ldraw_lib__4289538() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4289538(realsolid=false) = [
 // 0 ~_Bar  1.5L with Clip Black (Obsolete)
 // 0 Name: 4289538.dat
 // 0 Author: Michael Heidemann [mikeheide]
@@ -20,8 +21,8 @@ function ldraw_lib__4289538() = [
 // 0 // colouring of the part (Black).
 // 
 // 1 0 0 0 0 1 0 0 0 1 0 0 0 1 48729.dat
-  [1,0,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__48729()],
+  [1,0,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__48729(realsolid)],
 ];
 module ldraw_lib__4289538(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4289538(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4289538(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4289538(line=0.2);

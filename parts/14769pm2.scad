@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/4-4ering.scad>
 use <s/14769s01.scad>
-function ldraw_lib__14769pm2() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__14769pm2(realsolid=false) = [
 // 0 Tile  2 x  2 Round with Round Underside Stud with Earth Element Pattern
 // 0 Name: 14769pm2.dat
 // 0 Author: Rolf Osterthun [Rolf]
@@ -18,9 +19,9 @@ function ldraw_lib__14769pm2() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\14769s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__14769s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__14769s01(realsolid)],
 // 1 16 0 0 0 20 0 0 0 1 0 0 0 20 4-4ering.dat
-  [1,16,0,0,0,20,0,0,0,1,0,0,0,20, ldraw_lib__4_4ering()],
+  [1,16,0,0,0,20,0,0,0,1,0,0,0,20, ldraw_lib__4_4ering(realsolid)],
 // 
 // 4 2 -13.679 0 13.289 -14.977 0 11.812 -14.264 0 10.328 -13.103 0 11.762
   [4,2,-13.679,0,13.289,-14.977,0,11.812,-14.264,0,10.328,-13.103,0,11.762],
@@ -816,5 +817,5 @@ function ldraw_lib__14769pm2() = [
   [4,288,10.692,0,-3.364,10.243,0,-4.86,10.617,0,-5.757,11.215,0,-4.262],
 ];
 module ldraw_lib__14769pm2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__14769pm2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__14769pm2(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__14769pm2(line=0.2);

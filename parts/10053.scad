@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/10053s01.scad>
-function ldraw_lib__10053() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__10053(realsolid=false) = [
 // 0 Minifig Sword Small with Curved Blade
 // 0 Name: 10053.dat
 // 0 Author: Christian Neumann [Wesley]
@@ -20,9 +21,9 @@ function ldraw_lib__10053() = [
 // 
 // 
 // 1 16 0 14.16 0 1 0 0 0 1 0 0 0 1 s\10053s01.dat
-  [1,16,0,14.16,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__10053s01()],
+  [1,16,0,14.16,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__10053s01(realsolid)],
 // 1 16 0 14.16 0 1 0 0 0 1 0 0 0 -1 s\10053s01.dat
-  [1,16,0,14.16,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__10053s01()],
+  [1,16,0,14.16,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__10053s01(realsolid)],
 // 2 24 1.76 -35.32 0 1.78 -28.15 0
   [2,24,1.76,-35.32,0,1.78,-28.15,0],
 // 2 24 1.55 -42.08 0 1.76 -35.32 0
@@ -83,5 +84,5 @@ function ldraw_lib__10053() = [
   [5,24,0,14.16,0,-1.45,13.99,0,-2.51,13.13,2.65,-2.51,13.13,-2.65],
 ];
 module ldraw_lib__10053(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__10053(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__10053(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__10053(line=0.2);

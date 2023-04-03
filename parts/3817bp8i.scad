@@ -2,7 +2,8 @@ use <../lib.scad>
 use <s/3817bp8is01.scad>
 use <s/3817bp8is02.scad>
 use <s/3817bs02.scad>
-function ldraw_lib__3817bp8i() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3817bp8i(realsolid=false) = [
 // 0 Minifig Leg Left with 'EMMET' Badge, Reflective Stripe and Silver Triangles on Foot Pattern
 // 0 Name: 3817bp8i.dat
 // 0 Author: Chris Dee [cwdee]
@@ -23,13 +24,13 @@ function ldraw_lib__3817bp8i() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3817bs02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3817bs02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3817bs02(realsolid)],
 // 0 // Foot Top
 // 4 16 1.5 20 -4 1.5 20 -10 19.23 20 -10 19.23 20 -4
   [4,16,1.5,20,-4,1.5,20,-10,19.23,20,-10,19.23,20,-4],
 // 0 // Curve and front pattern
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3817bp8is01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3817bp8is01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3817bp8is01(realsolid)],
 // 5 24 2 3.349 -8.084 18.659 3.349 -8.084 2 0 -8.75 2 6.187 -6.187
   [5,24,2,3.349,-8.084,18.659,3.349,-8.084,2,0,-8.75,2,6.187,-6.187],
 // 5 24 2 6.187 -6.187 18.755 6.187 -6.187 2 7.399 -4 2 3.349 -8.084
@@ -40,8 +41,8 @@ function ldraw_lib__3817bp8i() = [
   [5,24,2,-3.349,-8.084,18.433,-3.349,-8.084,2,0,-8.75,2,-6.187,-6.187],
 // 0 // Side and foot front
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3817bp8is02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3817bp8is02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3817bp8is02(realsolid)],
 ];
 module ldraw_lib__3817bp8i(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3817bp8i(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3817bp8i(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3817bp8i(line=0.2);

@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/4864s01.scad>
 use <../p/stug-1x2.scad>
-function ldraw_lib__4864apt5() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4864apt5(realsolid=false) = [
 // 0 Panel  1 x  2 x  2 with Solid Studs with Black "5" Speed Stripes Pattern
 // 0 Name: 4864apt5.dat
 // 0 Author: Max Martin Richter [MMR1988]
@@ -16,9 +17,9 @@ function ldraw_lib__4864apt5() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4864s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4864s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4864s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 stug-1x2.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_1x2()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_1x2(realsolid)],
 // 
 // 4 0 -12.36047 10.3 10 -19.2 10.3 10 -19.2 9.7 10 10.3 9.7 10
   [4,0,-12.36047,10.3,10,-19.2,10.3,10,-19.2,9.7,10,10.3,9.7,10],
@@ -272,5 +273,5 @@ function ldraw_lib__4864apt5() = [
   [3,16,14.55434,25.7,10,14.3948,25.1,10,20,0,10],
 ];
 module ldraw_lib__4864apt5(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4864apt5(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4864apt5(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4864apt5(line=0.2);

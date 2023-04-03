@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/87079s01.scad>
-function ldraw_lib__87079pzf() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__87079pzf(realsolid=false) = [
 // 0 Tile  2 x  4 with Medium Blue Stitches on Left Side Pattern
 // 0 Name: 87079pzf.dat
 // 0 Author: Vincent Messenet [Cheenzo]
@@ -17,7 +18,7 @@ function ldraw_lib__87079pzf() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\87079s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__87079s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__87079s01(realsolid)],
 // 
 // 3 73 -20.17 0 17.466 -21.213 0 16.944 -20.2 0 16.3
   [3,73,-20.17,0,17.466,-21.213,0,16.944,-20.2,0,16.3],
@@ -141,5 +142,5 @@ function ldraw_lib__87079pzf() = [
   [3,16,40,0,20,-40,0,20,-20.17,0,17.466],
 ];
 module ldraw_lib__87079pzf(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__87079pzf(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__87079pzf(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__87079pzf(line=0.2);

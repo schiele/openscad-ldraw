@@ -3,7 +3,8 @@ use <../../p/box4.scad>
 use <../../p/box5.scad>
 use <../../p/stug4-1x7.scad>
 use <../../p/stug4-7x7.scad>
-function ldraw_lib__s__90498s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__90498s01(realsolid=false) = [
 // 0 ~Tile  8 x 16 Type 2 without Top Face
 // 0 Name: s\90498s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -18,15 +19,15 @@ function ldraw_lib__s__90498s01() = [
 // 
 // 
 // 1 16 -80 4 0 1 0 0 0 -1 0 0 0 1 stug4-7x7.dat
-  [1,16,-80,4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stug4_7x7()],
+  [1,16,-80,4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stug4_7x7(realsolid)],
 // 1 16 60 4 0 1 0 0 0 -1 0 0 0 1 stug4-7x7.dat
-  [1,16,60,4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stug4_7x7()],
+  [1,16,60,4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stug4_7x7(realsolid)],
 // 1 16 140 4 0 0 0 -1 0 -1 0 1 0 0 stug4-1x7.dat
-  [1,16,140,4,0,0,0,-1,0,-1,0,1,0,0, ldraw_lib__stug4_1x7()],
+  [1,16,140,4,0,0,0,-1,0,-1,0,1,0,0, ldraw_lib__stug4_1x7(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 8 0 156 0 0 0 -4 0 0 0 76 box5.dat
-  [1,16,0,8,0,156,0,0,0,-4,0,0,0,76, ldraw_lib__box5()],
+  [1,16,0,8,0,156,0,0,0,-4,0,0,0,76, ldraw_lib__box5(realsolid)],
 // 4 16 160 7 80 159 7 79 -159 7 79 -160 7 80
   [4,16,160,7,80,159,7,79,-159,7,79,-160,7,80],
 // 4 16 160 7 -80 159 7 -79 159 7 79 160 7 80
@@ -44,10 +45,10 @@ function ldraw_lib__s__90498s01() = [
 // 4 16 -159 8 79 -156 8 76 -156 8 -76 -159 8 -79
   [4,16,-159,8,79,-156,8,76,-156,8,-76,-159,8,-79],
 // 1 16 0 0 0 160 0 0 0 7 0 0 0 80 box4.dat
-  [1,16,0,0,0,160,0,0,0,7,0,0,0,80, ldraw_lib__box4()],
+  [1,16,0,0,0,160,0,0,0,7,0,0,0,80, ldraw_lib__box4(realsolid)],
 // 1 16 0 7 0 159 0 0 0 1 0 0 0 79 box4.dat
-  [1,16,0,7,0,159,0,0,0,1,0,0,0,79, ldraw_lib__box4()],
+  [1,16,0,7,0,159,0,0,0,1,0,0,0,79, ldraw_lib__box4(realsolid)],
 ];
 module ldraw_lib__s__90498s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__90498s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__90498s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__90498s01(line=0.2);

@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/3960s01.scad>
 use <s/3960s05.scad>
-function ldraw_lib__3960pa1() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3960pa1(realsolid=false) = [
 // 0 Dish  4 x  4 Inverted with Crescent Moon on Black Sky and Silver Clouds Pattern
 // 0 Name: 3960pa1.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -18,10 +19,10 @@ function ldraw_lib__3960pa1() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3960s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3960s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3960s01(realsolid)],
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3960s05.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3960s05()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3960s05(realsolid)],
 // 
 // 4 16 -17.5 7.0748 33.3 -16.3 6.8259 33.2 -15.9 7.0784 34.1 -20 8 34.64
   [4,16,-17.5,7.0748,33.3,-16.3,6.8259,33.2,-15.9,7.0784,34.1,-20,8,34.64],
@@ -2643,5 +2644,5 @@ function ldraw_lib__3960pa1() = [
   [3,0,-31.08,7.1667,21.59,-31.56,7.2422,21.21,-30.31,6,17.5],
 ];
 module ldraw_lib__3960pa1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3960pa1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3960pa1(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3960pa1(line=0.2);

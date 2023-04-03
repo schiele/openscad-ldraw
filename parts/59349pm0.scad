@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/59349s01.scad>
-function ldraw_lib__59349pm0() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__59349pm0(realsolid=false) = [
 // 0 Panel  1 x  6 x  5 with Yellow, Orange and Magenta Foliage and Dark Grey Birch Tree Pattern
 // 0 Name: 59349pm0.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -17,7 +18,7 @@ function ldraw_lib__59349pm0() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\59349s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__59349s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__59349s01(realsolid)],
 // 
 // 4 26 37.51 107.72 -10 36.8 106.9 -10 36.7 107.8 -10 37.1 109 -10
   [4,26,37.51,107.72,-10,36.8,106.9,-10,36.7,107.8,-10,37.1,109,-10],
@@ -9241,5 +9242,5 @@ function ldraw_lib__59349pm0() = [
   [4,25,-15.5,88.82,-10,-13.85,87.14,-10,-14.5,87.46,-10,-15.1,88.01,-10],
 ];
 module ldraw_lib__59349pm0(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__59349pm0(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__59349pm0(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__59349pm0(line=0.2);

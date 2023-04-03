@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__7_8chrd() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__7_8chrd(realsolid=false) = [
 // 0 Chord 0.875
 // 0 Name: 7-8chrd.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -42,5 +43,5 @@ function ldraw_lib__7_8chrd() = [
 // 0 // Build by Primitive Generator 2
 ];
 module ldraw_lib__7_8chrd(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__7_8chrd(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__7_8chrd(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__7_8chrd(line=0.2);

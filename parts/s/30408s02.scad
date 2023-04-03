@@ -3,7 +3,8 @@ use <../../p/4-4cyli.scad>
 use <../../p/4-4disc.scad>
 use <30408s01.scad>
 use <../../p/stud4.scad>
-function ldraw_lib__s__30408s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__30408s02(realsolid=false) = [
 // 0 ~Minifig Helmet Stormtrooper without Patterned Areas
 // 0 Name: s\30408s02.dat
 // 0 Author: Alex Taylor [anathema]
@@ -20,17 +21,17 @@ function ldraw_lib__s__30408s02() = [
 // 
 // 
 // 1 16 0 -4 0 0 0 1 0 -1 0 -1 0 0 stud4.dat
-  [1,16,0,-4,0,0,0,1,0,-1,0,-1,0,0, ldraw_lib__stud4()],
+  [1,16,0,-4,0,0,0,1,0,-1,0,-1,0,0, ldraw_lib__stud4(realsolid)],
 // 1 16 0 -4 0 6 0 0 0 -1 0 0 0 -6 4-4disc.dat
-  [1,16,0,-4,0,6,0,0,0,-1,0,0,0,-6, ldraw_lib__4_4disc()],
+  [1,16,0,-4,0,6,0,0,0,-1,0,0,0,-6, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\30408s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30408s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30408s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\30408s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__30408s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__30408s01(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 4 0 0 0 13 0 15.874 0 -13 0 0 4-4cyli.dat
-  [1,16,0,4,0,0,0,13,0,15.874,0,-13,0,0, ldraw_lib__4_4cyli()],
+  [1,16,0,4,0,0,0,13,0,15.874,0,-13,0,0, ldraw_lib__4_4cyli(realsolid)],
 // 5 24 0 26.183 -18.119 0 26.522 -15.858 1.211 26.17 -17.953 -1.211 26.17 -17.953
   [5,24,0,26.183,-18.119,0,26.522,-15.858,1.211,26.17,-17.953,-1.211,26.17,-17.953],
 // 5 24 0 19.228 -23.345 0 19.614 -22.941 1.639 20.047 -22.391 -1.639 20.047 -22.391
@@ -112,5 +113,5 @@ function ldraw_lib__s__30408s02() = [
 // 0
 ];
 module ldraw_lib__s__30408s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__30408s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__30408s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__30408s02(line=0.2);

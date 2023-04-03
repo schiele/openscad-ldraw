@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3069bs01.scad>
-function ldraw_lib__3069bpz9() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3069bpz9(realsolid=false) = [
 // 0 Tile  1 x  2 with Black Spider Web Pattern
 // 0 Name: 3069bpz9.dat
 // 0 Author: Damien Roux [Darats]
@@ -17,7 +18,7 @@ function ldraw_lib__3069bpz9() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3069bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3069bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3069bs01(realsolid)],
 // 4 0 -18.93 0 0.22 -19.2 0 0.13 -19.2 0 -1.15 -18.56 0 -0.92
   [4,0,-18.93,0,0.22,-19.2,0,0.13,-19.2,0,-1.15,-18.56,0,-0.92],
 // 4 0 -17.64 0 0.61 -18.93 0 0.22 -18.56 0 -0.92 -17.33 0 -0.55
@@ -198,5 +199,5 @@ function ldraw_lib__3069bpz9() = [
   [3,16,20,0,10,13.78,0,1.38,15.06,0,1.19],
 ];
 module ldraw_lib__3069bpz9(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3069bpz9(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3069bpz9(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3069bpz9(line=0.2);

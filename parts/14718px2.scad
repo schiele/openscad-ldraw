@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/14718s01.scad>
-function ldraw_lib__14718px2() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__14718px2(realsolid=false) = [
 // 0 Panel  1 x  4 x  2 with Hollow Studs with Smiling Closed Mouth Pattern
 // 0 Name: 14718px2.dat
 // 0 Author: Vincent Messenet [Cheenzo]
@@ -17,7 +18,7 @@ function ldraw_lib__14718px2() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\14718s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__14718s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__14718s01(realsolid)],
 // 
 // 3 0 25.684 19.265 10 25.789 19.58 10 25.263 19.318 10
   [3,0,25.684,19.265,10,25.789,19.58,10,25.263,19.318,10],
@@ -119,5 +120,5 @@ function ldraw_lib__14718px2() = [
   [3,16,22.895,20.472,10,-26,25.302,10,25.263,19.318,10],
 ];
 module ldraw_lib__14718px2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__14718px2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__14718px2(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__14718px2(line=0.2);

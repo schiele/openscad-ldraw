@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4ering.scad>
-function ldraw_lib__6153754m() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6153754m(realsolid=false) = [
 // 0 Sticker  0.9 x  0.9 Round with Black Square "!" on Orange Background
 // 0 Name: 6153754m.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -19,11 +20,11 @@ function ldraw_lib__6153754m() = [
 // 
 // 
 // 1 16 0 0 0 -8.5 0 0 0 -1 0 0 0 8.5 4-4disc.dat
-  [1,16,0,0,0,-8.5,0,0,0,-1,0,0,0,8.5, ldraw_lib__4_4disc()],
+  [1,16,0,0,0,-8.5,0,0,0,-1,0,0,0,8.5, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 -0.25 0 8.5 0 0 0 0.25 0 0 0 8.5 4-4cyli.dat
-  [1,16,0,-0.25,0,8.5,0,0,0,0.25,0,0,0,8.5, ldraw_lib__4_4cyli()],
+  [1,16,0,-0.25,0,8.5,0,0,0,0.25,0,0,0,8.5, ldraw_lib__4_4cyli(realsolid)],
 // 1 25 0 -0.25 0 8.5 0 0 0 1 0 0 0 8.5 4-4ering.dat
-  [1,25,0,-0.25,0,8.5,0,0,0,1,0,0,0,8.5, ldraw_lib__4_4ering()],
+  [1,25,0,-0.25,0,8.5,0,0,0,1,0,0,0,8.5, ldraw_lib__4_4ering(realsolid)],
 // 4 25 -7.853 -0.25 3.253 -8.5 -0.25 0 -5.5 -0.25 0 -6.01 -0.25 6.01
   [4,25,-7.853,-0.25,3.253,-8.5,-0.25,0,-5.5,-0.25,0,-6.01,-0.25,6.01],
 // 4 25 -6.01 -0.25 6.01 -5.5 -0.25 0 0 -0.25 5.5 -3.253 -0.25 7.853
@@ -82,5 +83,5 @@ function ldraw_lib__6153754m() = [
   [4,0,0.5,-0.25,-0.5,0,-0.25,-0.75,0,-0.25,-1,0.75,-0.25,-1.25],
 ];
 module ldraw_lib__6153754m(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6153754m(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6153754m(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6153754m(line=0.2);

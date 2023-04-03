@@ -7,7 +7,8 @@ use <s/98389s01.scad>
 use <s/98389s02.scad>
 use <s/98389s03.scad>
 use <../p/stud4o.scad>
-function ldraw_lib__98389() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__98389(realsolid=false) = [
 // 0 Animal Hedgehog
 // 0 Name: 98389.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -28,37 +29,37 @@ function ldraw_lib__98389() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -29.644 -10 2 0 0 0 11.375 0 0 0 2 4-4cyli.dat
-  [1,16,0,-29.644,-10,2,0,0,0,11.375,0,0,0,2, ldraw_lib__4_4cyli()],
+  [1,16,0,-29.644,-10,2,0,0,0,11.375,0,0,0,2, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 -18.269 -10 2 0 0 0 1 0 0 0 2 4-4disc.dat
-  [1,16,0,-18.269,-10,2,0,0,0,1,0,0,0,2, ldraw_lib__4_4disc()],
+  [1,16,0,-18.269,-10,2,0,0,0,1,0,0,0,2, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 -18.269 -10 2 0 0 0 1 0 0 0 2 4-4edge.dat
-  [1,16,0,-18.269,-10,2,0,0,0,1,0,0,0,2, ldraw_lib__4_4edge()],
+  [1,16,0,-18.269,-10,2,0,0,0,1,0,0,0,2, ldraw_lib__4_4edge(realsolid)],
 // 
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -29.644 -10 0 0 -2 0 -.438 0 2 0 0 1-4cyls2.dat
-  [1,16,0,-29.644,-10,0,0,-2,0,-.438,0,2,0,0, ldraw_lib__1_4cyls2()],
+  [1,16,0,-29.644,-10,0,0,-2,0,-.438,0,2,0,0, ldraw_lib__1_4cyls2(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -29.644 -10 0 0 2 0 -.438 0 2 0 0 1-4cyls2.dat
-  [1,16,0,-29.644,-10,0,0,2,0,-.438,0,2,0,0, ldraw_lib__1_4cyls2()],
+  [1,16,0,-29.644,-10,0,0,2,0,-.438,0,2,0,0, ldraw_lib__1_4cyls2(realsolid)],
 // 
 // 1 16 0 -24 0 1 0 0 0 -6 0 0 0 1 stud4o.dat
-  [1,16,0,-24,0,1,0,0,0,-6,0,0,0,1, ldraw_lib__stud4o()],
+  [1,16,0,-24,0,1,0,0,0,-6,0,0,0,1, ldraw_lib__stud4o(realsolid)],
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\98389s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98389s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98389s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\98389s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__98389s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__98389s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\98389s03.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98389s03()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98389s03(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\98389s03.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__98389s03()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__98389s03(realsolid)],
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\98389s02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98389s02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98389s02(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\98389s02.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__98389s02()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__98389s02(realsolid)],
 // 
 // 0 // Condlines for merging
 // 5 24 0 -26.127 12.41 0 -24.3 14.584 2.473 -23.971 13.762 -2.473 -23.971 13.762
@@ -195,5 +196,5 @@ function ldraw_lib__98389() = [
   [5,24,0,-19.992,15.072,0,-17.133,16.682,2.176,-17.038,16.094,-2.176,-17.038,16.094],
 ];
 module ldraw_lib__98389(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__98389(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__98389(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__98389(line=0.2);

@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/u9007s01.scad>
 use <s/u9007s02.scad>
-function ldraw_lib__u9007p02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__u9007p02(realsolid=false) = [
 // 0 Roadsign Triangular with Round Base with Pedestrians Pattern
 // 0 Name: u9007p02.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -18,9 +19,9 @@ function ldraw_lib__u9007p02() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\u9007s02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__u9007s02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__u9007s02(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\u9007s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__u9007s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__u9007s01(realsolid)],
 // 
 // 4 4 -20 -52 -2.6 -13.9 -55.5 -2.6 0 -78.9 -2.6 0 -86 -2.6
   [4,4,-20,-52,-2.6,-13.9,-55.5,-2.6,0,-78.9,-2.6,0,-86,-2.6],
@@ -320,5 +321,5 @@ function ldraw_lib__u9007p02() = [
   [4,16,-7.7,-63.4,-2.6,-7.5,-64,-2.6,-7.5504,-66.1893,-2.6,-8.2,-62.3,-2.6],
 ];
 module ldraw_lib__u9007p02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__u9007p02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__u9007p02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__u9007p02(line=0.2);

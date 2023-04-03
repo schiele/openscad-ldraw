@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/26603s01.scad>
-function ldraw_lib__26603p05() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__26603p05(realsolid=false) = [
 // 0 Tile  2 x  3 with Framed Mirror Pattern
 // 0 Name: 26603p05.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -17,7 +18,7 @@ function ldraw_lib__26603p05() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\26603s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__26603s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__26603s01(realsolid)],
 // 4 272 28.8 0 18.6 29.5 0 19.5 28.5 0 18.9 26.8 0 17.2
   [4,272,28.8,0,18.6,29.5,0,19.5,28.5,0,18.9,26.8,0,17.2],
 // 4 272 27.1 0 16.9 28.8 0 18.6 26.8 0 17.2 26.4 0 16.5
@@ -178,5 +179,5 @@ function ldraw_lib__26603p05() = [
   [4,80,-23.35,0,14.5,-23.95,0,13.9,24.25,0,-14.5,24.85,0,-13.9],
 ];
 module ldraw_lib__26603p05(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__26603p05(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__26603p05(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__26603p05(line=0.2);

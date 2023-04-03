@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <814.scad>
 use <815c02.scad>
-function ldraw_lib__814c02_f1() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__814c02_f1(realsolid=false) = [
 // 0 Train Level Crossing Gate Type 1 - Base with White/Red Crossbar Right Closed (Complete)
 // 0 Name: 814c02-f1.dat
 // 0 Author: Steffen [Steffen]
@@ -18,10 +19,10 @@ function ldraw_lib__814c02_f1() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 814.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__814()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__814(realsolid)],
 // 1 15 0 -28 0 1 0 0 0 1 0 0 0 1 815c02.dat
-  [1,15,0,-28,0,1,0,0,0,1,0,0,0,1, ldraw_lib__815c02()],
+  [1,15,0,-28,0,1,0,0,0,1,0,0,0,1, ldraw_lib__815c02(realsolid)],
 ];
 module ldraw_lib__814c02_f1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__814c02_f1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__814c02_f1(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__814c02_f1(line=0.2);

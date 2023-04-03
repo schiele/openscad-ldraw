@@ -3,7 +3,8 @@ use <../p/4-4cylo.scad>
 use <../p/4-4ring2.scad>
 use <../p/box5.scad>
 use <../p/stug3-1x3.scad>
-function ldraw_lib__3187() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3187(realsolid=false) = [
 // 0 Gate  1 x  4 x  2 Base
 // 0 Name: 3187.dat
 // 0 Author: James Jessiman
@@ -25,12 +26,12 @@ function ldraw_lib__3187() = [
 // 
 // 
 // 1 16 0 44 30 0 0 1 0 -1 0 -1 0 0 stug3-1x3.dat
-  [1,16,0,44,30,0,0,1,0,-1,0,-1,0,0, ldraw_lib__stug3_1x3()],
+  [1,16,0,44,30,0,0,1,0,-1,0,-1,0,0, ldraw_lib__stug3_1x3(realsolid)],
 // 
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 48 30 6 0 0 0 -4 0 0 0 36 box5.dat
-  [1,16,0,48,30,6,0,0,0,-4,0,0,0,36, ldraw_lib__box5()],
+  [1,16,0,48,30,6,0,0,0,-4,0,0,0,36, ldraw_lib__box5(realsolid)],
 // 
 // 4 16 10 48 70 6 48 66 -6 48 66 -10 48 70
   [4,16,10,48,70,6,48,66,-6,48,66,-10,48,70],
@@ -42,17 +43,17 @@ function ldraw_lib__3187() = [
   [4,16,10,48,-10,6,48,-6,6,48,66,10,48,70],
 // 
 // 1 16 0 48 30 10 0 0 0 -8 0 0 0 40 box5.dat
-  [1,16,0,48,30,10,0,0,0,-8,0,0,0,40, ldraw_lib__box5()],
+  [1,16,0,48,30,10,0,0,0,-8,0,0,0,40, ldraw_lib__box5(realsolid)],
 // 
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 16 0 4 0 0 0 24 0 0 0 4 4-4cylo.dat
-  [1,16,0,16,0,4,0,0,0,24,0,0,0,4, ldraw_lib__4_4cylo()],
+  [1,16,0,16,0,4,0,0,0,24,0,0,0,4, ldraw_lib__4_4cylo(realsolid)],
 // 1 16 0 16 0 6 0 0 0 24 0 0 0 6 4-4cylo.dat
-  [1,16,0,16,0,6,0,0,0,24,0,0,0,6, ldraw_lib__4_4cylo()],
+  [1,16,0,16,0,6,0,0,0,24,0,0,0,6, ldraw_lib__4_4cylo(realsolid)],
 // 1 16 0 16 0 2 0 0 0 6 0 0 0 2 4-4ring2.dat
-  [1,16,0,16,0,2,0,0,0,6,0,0,0,2, ldraw_lib__4_4ring2()],
+  [1,16,0,16,0,2,0,0,0,6,0,0,0,2, ldraw_lib__4_4ring2(realsolid)],
 ];
 module ldraw_lib__3187(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3187(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3187(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3187(line=0.2);

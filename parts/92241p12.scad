@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/92241p12s01.scad>
 use <s/92241s01.scad>
-function ldraw_lib__92241p12() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__92241p12(realsolid=false) = [
 // 0 Figure Friends Girl Torso with Light Aqua Blouse Top with Open Collar and Button Pattern
 // 0 Name: 92241p12.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -16,9 +17,9 @@ function ldraw_lib__92241p12() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\92241s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__92241s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__92241s01(realsolid)],
 // 1 323 0 0 0 1 0 0 0 1 0 0 0 1 s\92241p12s01.dat
-  [1,323,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__92241p12s01()],
+  [1,323,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__92241p12s01(realsolid)],
 // 4 16 4.07 -6.83 -0.02 0 -7.25 -0.33 3.68 -6 -2.59 4.26 -6.4 -1.1948
   [4,16,4.07,-6.83,-0.02,0,-7.25,-0.33,3.68,-6,-2.59,4.26,-6.4,-1.1948],
 // 3 16 4.26 -6.4 -1.1948 3.68 -6 -2.59 4.3608 -5.9503 -2.4625
@@ -85,5 +86,5 @@ function ldraw_lib__92241p12() = [
   [3,16,0,2.06,-8.99,-0.4613,2.2975,-9.0153,0,2.88,-9.1808],
 ];
 module ldraw_lib__92241p12(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__92241p12(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__92241p12(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__92241p12(line=0.2);

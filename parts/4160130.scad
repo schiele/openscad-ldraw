@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <41748.scad>
-function ldraw_lib__4160130() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4160130(realsolid=false) = [
 // 0 ~_Wedge  2 x  6 Double Left Black (Obsolete)
 // 0 Name: 4160130.dat
 // 0 Author: [PTadmin]
@@ -20,8 +21,8 @@ function ldraw_lib__4160130() = [
 // 0 // colouring of the part (Black).
 // 
 // 1 0 0 0 0 1 0 0 0 1 0 0 0 1 41748.dat
-  [1,0,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__41748()],
+  [1,0,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__41748(realsolid)],
 ];
 module ldraw_lib__4160130(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4160130(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4160130(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4160130(line=0.2);

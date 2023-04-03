@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <4865a.scad>
-function ldraw_lib__30010() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__30010(realsolid=false) = [
 // 0 =Panel  1 x  2 x  1 with Square Corners
 // 0 Name: 30010.dat
 // 0 Author: Steve Bliss [sbliss]
@@ -23,9 +24,9 @@ function ldraw_lib__30010() = [
 // 0 // Alias of 4865a
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 4865a.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4865a()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4865a(realsolid)],
 // 0
 ];
 module ldraw_lib__30010(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__30010(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__30010(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__30010(line=0.2);

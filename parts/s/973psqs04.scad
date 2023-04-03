@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__973psqs04() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__973psqs04(realsolid=false) = [
 // 0 ~Minifig Torso with SW Imperial Officer Pattern Codecylinder
 // 0 Name: s\973psqs04.dat
 // 0 Author: Daniel Goerner [TK-949]
@@ -217,5 +218,5 @@ function ldraw_lib__s__973psqs04() = [
   [4,16,12.45,5.76,-10,12.455,5.913,-10,12.53,5.92,-10,12.46,5.63,-10],
 ];
 module ldraw_lib__s__973psqs04(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__973psqs04(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__973psqs04(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__973psqs04(line=0.2);

@@ -4,7 +4,8 @@ use <../p/3-8ring2.scad>
 use <../p/axl5end.scad>
 use <../p/clh3.scad>
 use <s/30552s01.scad>
-function ldraw_lib__30552() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__30552(realsolid=false) = [
 // 0 Hinge Arm Locking with Single Finger and Axlehole
 // 0 Name: 30552.dat
 // 0 Author: Franklin W. Cain [fwcain]
@@ -33,20 +34,20 @@ function ldraw_lib__30552() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 clh3.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__clh3()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__clh3(realsolid)],
 // 1 16 0 0 0 8.316 0 -3.444 -3.444 0 -8.315 0 1 0 3-8edge.dat
-  [1,16,0,0,0,8.316,0,-3.444,-3.444,0,-8.315,0,1,0, ldraw_lib__3_8edge()],
+  [1,16,0,0,0,8.316,0,-3.444,-3.444,0,-8.315,0,1,0, ldraw_lib__3_8edge(realsolid)],
 // 1 16 0 0 0 -8.316 0 3.444 3.444 0 8.315 0 1 0 3-8edge.dat
-  [1,16,0,0,0,-8.316,0,3.444,3.444,0,8.315,0,1,0, ldraw_lib__3_8edge()],
+  [1,16,0,0,0,-8.316,0,3.444,3.444,0,8.315,0,1,0, ldraw_lib__3_8edge(realsolid)],
 // 1 16 0 0 0 1 0 0 0 0 1 0 -1 0 axl5end.dat
-  [1,16,0,0,0,1,0,0,0,0,1,0,-1,0, ldraw_lib__axl5end()],
+  [1,16,0,0,0,1,0,0,0,0,1,0,-1,0, ldraw_lib__axl5end(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 -1 s\30552s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__30552s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__30552s01(realsolid)],
 // 1 16 0 0 0 2.77164 0 -1.14805 -1.14805 0 -2.77164 0 1 0 3-8ring2.dat
-  [1,16,0,0,0,2.77164,0,-1.14805,-1.14805,0,-2.77164,0,1,0, ldraw_lib__3_8ring2()],
+  [1,16,0,0,0,2.77164,0,-1.14805,-1.14805,0,-2.77164,0,1,0, ldraw_lib__3_8ring2(realsolid)],
 // 1 16 0 0 0 -2.77164 0 1.14805 1.14805 0 2.77164 0 1 0 3-8ring2.dat
-  [1,16,0,0,0,-2.77164,0,1.14805,1.14805,0,2.77164,0,1,0, ldraw_lib__3_8ring2()],
+  [1,16,0,0,0,-2.77164,0,1.14805,1.14805,0,2.77164,0,1,0, ldraw_lib__3_8ring2(realsolid)],
 ];
 module ldraw_lib__30552(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__30552(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__30552(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__30552(line=0.2);

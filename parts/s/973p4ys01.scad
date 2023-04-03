@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__973p4ys01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__973p4ys01(realsolid=false) = [
 // 0 ~Minifig Torso with Dark Brown Collar, Patch, Rope Belt and Pouch Pattern
 // 0 Name: s\973p4ys01.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -2221,5 +2222,5 @@ function ldraw_lib__s__973p4ys01() = [
   [4,16,8,10.2,0,9.559,11.34,0,9.5022,11.0966,0,8.55,10,0],
 ];
 module ldraw_lib__s__973p4ys01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__973p4ys01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__973p4ys01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__973p4ys01(line=0.2);

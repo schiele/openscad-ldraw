@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <48/1-4ring6.scad>
-function ldraw_lib__logo_octan_1() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__logo_octan_1(realsolid=false) = [
 // 0 Logo Octan - Single Drop Frame
 // 0 Name: logo-octan-1.dat
 // 0 Author: Ulrich Röder [UR]
@@ -15,7 +16,7 @@ function ldraw_lib__logo_octan_1() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 48\1-4ring6.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__48__1_4ring6()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__48__1_4ring6(realsolid)],
 // 4 16 -.78 0 5.92 0 0 6 0 0 7 -.91 0 6.91
   [4,16,-.78,0,5.92,0,0,6,0,0,7,-.91,0,6.91],
 // 4 16 -1.55 0 5.74 -.78 0 5.92 -.91 0 6.91 -1.81 0 6.72
@@ -130,5 +131,5 @@ function ldraw_lib__logo_octan_1() = [
   [4,16,11.33,0,-8.44,11.78,0,-7.44,11.26,0,-7.19,10.69,0,-8.09],
 ];
 module ldraw_lib__logo_octan_1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__logo_octan_1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__logo_octan_1(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__logo_octan_1(line=0.2);

@@ -3,7 +3,8 @@ use <../p/4-4con1.scad>
 use <../p/4-4cylc.scad>
 use <../p/4-4edge.scad>
 use <../p/4-4ering.scad>
-function ldraw_lib__u9576() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__u9576(realsolid=false) = [
 // 0 ~Screw 17.7 x  5 Countersunk Cruciform
 // 0 Name: u9576.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -22,13 +23,13 @@ function ldraw_lib__u9576() = [
 // 0 // Nomenclature: Screw length_(LDu) x thread_diameter_(LDu) {head type} {slot type}
 // 
 // 1 16 0 -.3 0 1 0 0 0 1 0 0 0 1 4-4ering.dat
-  [1,16,0,-.3,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4ering()],
+  [1,16,0,-.3,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4ering(realsolid)],
 // 1 16 0 0 0 2.25 0 0 0 2.7 0 0 0 2.25 4-4con1.dat
-  [1,16,0,0,0,2.25,0,0,0,2.7,0,0,0,2.25, ldraw_lib__4_4con1()],
+  [1,16,0,0,0,2.25,0,0,0,2.7,0,0,0,2.25, ldraw_lib__4_4con1(realsolid)],
 // 1 16 0 0 0 4.5 0 0 0 1 0 0 0 4.5 4-4edge.dat
-  [1,16,0,0,0,4.5,0,0,0,1,0,0,0,4.5, ldraw_lib__4_4edge()],
+  [1,16,0,0,0,4.5,0,0,0,1,0,0,0,4.5, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 17.7 0 2.5 0 0 0 -15.3 0 0 0 2.5 4-4cylc.dat
-  [1,16,0,17.7,0,2.5,0,0,0,-15.3,0,0,0,2.5, ldraw_lib__4_4cylc()],
+  [1,16,0,17.7,0,2.5,0,0,0,-15.3,0,0,0,2.5, ldraw_lib__4_4cylc(realsolid)],
 // 
 // 4 16 3.18195 0 3.18195 1.72215 0 4.15755 .9 0 3.3264 .9 0 .9
   [4,16,3.18195,0,3.18195,1.72215,0,4.15755,.9,0,3.3264,.9,0,.9],
@@ -137,5 +138,5 @@ function ldraw_lib__u9576() = [
   [2,24,0,2.7,0,.9,0,-.9],
 ];
 module ldraw_lib__u9576(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__u9576(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__u9576(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__u9576(line=0.2);

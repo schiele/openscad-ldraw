@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/87079s01.scad>
-function ldraw_lib__87079pzc() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__87079pzc(realsolid=false) = [
 // 0 Tile  2 x  4 with Black Zigzag Pattern
 // 0 Name: 87079pzc.dat
 // 0 Author: Vincent Messenet [Cheenzo]
@@ -17,7 +18,7 @@ function ldraw_lib__87079pzc() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\87079s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__87079s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__87079s01(realsolid)],
 // 
 // 4 0 0 0 -14.5 0 0 -18 6.25 0 -7 6.25 0 -3.5
   [4,0,0,0,-14.5,0,0,-18,6.25,0,-7,6.25,0,-3.5],
@@ -102,5 +103,5 @@ function ldraw_lib__87079pzc() = [
   [4,16,-40,0,20,-6.25,0,-3.5,6.25,0,-3.5,40,0,20],
 ];
 module ldraw_lib__87079pzc(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__87079pzc(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__87079pzc(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__87079pzc(line=0.2);

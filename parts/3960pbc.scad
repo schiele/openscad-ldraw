@@ -2,7 +2,8 @@ use <../lib.scad>
 use <s/3960pbcs01.scad>
 use <s/3960s01.scad>
 use <s/3960s05.scad>
-function ldraw_lib__3960pbc() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3960pbc(realsolid=false) = [
 // 0 Dish  4 x  4 Inverted with White Eyelids with Dark Bluish Grey Strips and Black Iris with Circuitry Pattern
 // 0 Name: 3960pbc.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -19,19 +20,19 @@ function ldraw_lib__3960pbc() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3960s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3960s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3960s01(realsolid)],
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3960pbcs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3960pbcs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3960pbcs01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\3960pbcs01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__3960pbcs01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__3960pbcs01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 -1 s\3960pbcs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__3960pbcs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__3960pbcs01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 -1 s\3960pbcs01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__3960pbcs01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__3960pbcs01(realsolid)],
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3960s05.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3960s05()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3960s05(realsolid)],
 // 
 // 4 16 -18.9196 1.4866 0 -19 1.5033 -.3 -18.866 1.4865 -.8 -18.5 1.4295 -1.166
   [4,16,-18.9196,1.4866,0,-19,1.5033,-.3,-18.866,1.4865,-.8,-18.5,1.4295,-1.166],
@@ -2327,5 +2328,5 @@ function ldraw_lib__3960pbc() = [
   [3,16,-17.3499,1.2501,-2.2841,-18.8682,1.5053,-2.4837,-17.134,1.2217,-2.5],
 ];
 module ldraw_lib__3960pbc(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3960pbc(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3960pbc(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3960pbc(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/30387s01.scad>
-function ldraw_lib__30387() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__30387(realsolid=false) = [
 // 0 Hinge Brick  1 x  4 Locking Double, Two Finger End with 9 Teeth
 // 0 Name: 30387.dat
 // 0 Author: John Van Zwieten [jvan]
@@ -24,7 +25,7 @@ function ldraw_lib__30387() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\30387s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30387s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30387s01(realsolid)],
 // 4 16 40 0 -10 36 24 -10 -36 24 -10 -40 0 -10
   [4,16,40,0,-10,36,24,-10,-36,24,-10,-40,0,-10],
 // 3 16 40 0 -10 40 20 -10 36 24 -10
@@ -40,5 +41,5 @@ function ldraw_lib__30387() = [
 // 0
 ];
 module ldraw_lib__30387(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__30387(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__30387(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__30387(line=0.2);

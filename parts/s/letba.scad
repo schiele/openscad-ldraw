@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__letba() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__letba(realsolid=false) = [
 // 0 ~Mindstorms RCX Letter "B"
 // 0 Name: s\letba.dat
 // 0 Author: John Van Zwieten [jvan]
@@ -55,5 +56,5 @@ function ldraw_lib__s__letba() = [
 // 0
 ];
 module ldraw_lib__s__letba(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__letba(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__letba(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__letba(line=0.2);

@@ -6,7 +6,8 @@ use <48/1-4ndis.scad>
 use <48/1-4ring7.scad>
 use <48/1-4ring8.scad>
 use <48/2-4chrd.scad>
-function ldraw_lib__logo_octan_3() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__logo_octan_3(realsolid=false) = [
 // 0 Logo Octan without Border
 // 0 Name: logo-octan-3.dat
 // 0 Author: Tim Lampmann [L4mpi]
@@ -21,41 +22,41 @@ function ldraw_lib__logo_octan_3() = [
 // 
 // 
 // 1 16 0 0 0 7.5 0 0 0 1 0 0 0 5.5 48\1-4ndis.dat
-  [1,16,0,0,0,7.5,0,0,0,1,0,0,0,5.5, ldraw_lib__48__1_4ndis()],
+  [1,16,0,0,0,7.5,0,0,0,1,0,0,0,5.5, ldraw_lib__48__1_4ndis(realsolid)],
 // 1 16 4 0 0 3.5 0 0 0 1 0 0 0 -3.5 48\1-4ndis.dat
-  [1,16,4,0,0,3.5,0,0,0,1,0,0,0,-3.5, ldraw_lib__48__1_4ndis()],
+  [1,16,4,0,0,3.5,0,0,0,1,0,0,0,-3.5, ldraw_lib__48__1_4ndis(realsolid)],
 // 1 16 4 0 0 -.5 0 0 0 1 0 0 0 -.5 48\1-4ring7.dat
-  [1,16,4,0,0,-.5,0,0,0,1,0,0,0,-.5, ldraw_lib__48__1_4ring7()],
+  [1,16,4,0,0,-.5,0,0,0,1,0,0,0,-.5, ldraw_lib__48__1_4ring7(realsolid)],
 // 1 16 4 0 0 -.5 0 0 0 1 0 0 0 -.5 48\1-4ring8.dat
-  [1,16,4,0,0,-.5,0,0,0,1,0,0,0,-.5, ldraw_lib__48__1_4ring8()],
+  [1,16,4,0,0,-.5,0,0,0,1,0,0,0,-.5, ldraw_lib__48__1_4ring8(realsolid)],
 // 1 16 -4 0 0 .5 0 0 0 1 0 0 0 .5 48\1-4ring8.dat
-  [1,16,-4,0,0,.5,0,0,0,1,0,0,0,.5, ldraw_lib__48__1_4ring8()],
+  [1,16,-4,0,0,.5,0,0,0,1,0,0,0,.5, ldraw_lib__48__1_4ring8(realsolid)],
 // 1 16 -4 0 0 .5 0 0 0 1 0 0 0 .5 48\1-4ring7.dat
-  [1,16,-4,0,0,.5,0,0,0,1,0,0,0,.5, ldraw_lib__48__1_4ring7()],
+  [1,16,-4,0,0,.5,0,0,0,1,0,0,0,.5, ldraw_lib__48__1_4ring7(realsolid)],
 // 1 16 0 0 0 -7.5 0 0 0 1 0 0 0 -5.5 48\1-4ndis.dat
-  [1,16,0,0,0,-7.5,0,0,0,1,0,0,0,-5.5, ldraw_lib__48__1_4ndis()],
+  [1,16,0,0,0,-7.5,0,0,0,1,0,0,0,-5.5, ldraw_lib__48__1_4ndis(realsolid)],
 // 1 16 -4 0 0 -3.5 0 0 0 1 0 0 0 3.5 48\1-4ndis.dat
-  [1,16,-4,0,0,-3.5,0,0,0,1,0,0,0,3.5, ldraw_lib__48__1_4ndis()],
+  [1,16,-4,0,0,-3.5,0,0,0,1,0,0,0,3.5, ldraw_lib__48__1_4ndis(realsolid)],
 // 1 16 0 0 0 0 0 -7.5 0 1 0 5.5 0 0 48\1-12ndis.dat
-  [1,16,0,0,0,0,0,-7.5,0,1,0,5.5,0,0, ldraw_lib__48__1_12ndis()],
+  [1,16,0,0,0,0,0,-7.5,0,1,0,5.5,0,0, ldraw_lib__48__1_12ndis(realsolid)],
 // 1 16 0 0 0 0 0 7.5 0 1 0 -5.5 0 0 48\1-12ndis.dat
-  [1,16,0,0,0,0,0,7.5,0,1,0,-5.5,0,0, ldraw_lib__48__1_12ndis()],
+  [1,16,0,0,0,0,0,7.5,0,1,0,-5.5,0,0, ldraw_lib__48__1_12ndis(realsolid)],
 // 1 4 4 0 0 3.5 0 0 0 1 0 0 0 -3.5 48\2-4chrd.dat
-  [1,4,4,0,0,3.5,0,0,0,1,0,0,0,-3.5, ldraw_lib__48__2_4chrd()],
+  [1,4,4,0,0,3.5,0,0,0,1,0,0,0,-3.5, ldraw_lib__48__2_4chrd(realsolid)],
 // 1 4 -4 0 0 4.5 0 0 0 1 0 0 0 4.5 48\1-4ndis.dat
-  [1,4,-4,0,0,4.5,0,0,0,1,0,0,0,4.5, ldraw_lib__48__1_4ndis()],
+  [1,4,-4,0,0,4.5,0,0,0,1,0,0,0,4.5, ldraw_lib__48__1_4ndis(realsolid)],
 // 1 4 0 0 0 7.5 0 0 0 1 0 0 0 5.5 48\1-4chrd.dat
-  [1,4,0,0,0,7.5,0,0,0,1,0,0,0,5.5, ldraw_lib__48__1_4chrd()],
+  [1,4,0,0,0,7.5,0,0,0,1,0,0,0,5.5, ldraw_lib__48__1_4chrd(realsolid)],
 // 1 4 0 0 0 0 0 -7.5 0 1 0 5.5 0 0 48\1-12chrd.dat
-  [1,4,0,0,0,0,0,-7.5,0,1,0,5.5,0,0, ldraw_lib__48__1_12chrd()],
+  [1,4,0,0,0,0,0,-7.5,0,1,0,5.5,0,0, ldraw_lib__48__1_12chrd(realsolid)],
 // 1 2 4 0 0 -4.5 0 0 0 1 0 0 0 -4.5 48\1-4ndis.dat
-  [1,2,4,0,0,-4.5,0,0,0,1,0,0,0,-4.5, ldraw_lib__48__1_4ndis()],
+  [1,2,4,0,0,-4.5,0,0,0,1,0,0,0,-4.5, ldraw_lib__48__1_4ndis(realsolid)],
 // 1 2 -4 0 0 -3.5 0 0 0 1 0 0 0 3.5 48\2-4chrd.dat
-  [1,2,-4,0,0,-3.5,0,0,0,1,0,0,0,3.5, ldraw_lib__48__2_4chrd()],
+  [1,2,-4,0,0,-3.5,0,0,0,1,0,0,0,3.5, ldraw_lib__48__2_4chrd(realsolid)],
 // 1 2 0 0 0 -7.5 0 0 0 1 0 0 0 -5.5 48\1-4chrd.dat
-  [1,2,0,0,0,-7.5,0,0,0,1,0,0,0,-5.5, ldraw_lib__48__1_4chrd()],
+  [1,2,0,0,0,-7.5,0,0,0,1,0,0,0,-5.5, ldraw_lib__48__1_4chrd(realsolid)],
 // 1 2 0 0 0 0 0 7.5 0 1 0 -5.5 0 0 48\1-12chrd.dat
-  [1,2,0,0,0,0,0,7.5,0,1,0,-5.5,0,0, ldraw_lib__48__1_12chrd()],
+  [1,2,0,0,0,0,0,7.5,0,1,0,-5.5,0,0, ldraw_lib__48__1_12chrd(realsolid)],
 // 4 16 -7.5 0 5.5 -7.5 0 3.5 -4.57 0 4.36 -3.75 0 4.763
   [4,16,-7.5,0,5.5,-7.5,0,3.5,-4.57,0,4.36,-3.75,0,4.763],
 // 4 16 -4 0 4 -4.57 0 4.36 -7.5 0 3.5 -4 0 3.5
@@ -86,5 +87,5 @@ function ldraw_lib__logo_octan_3() = [
   [3,2,-7.5,0,0,0,0,-5.5,-.5,0,-4.5],
 ];
 module ldraw_lib__logo_octan_3(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__logo_octan_3(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__logo_octan_3(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__logo_octan_3(line=0.2);

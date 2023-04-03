@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__191895o() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__191895o(realsolid=false) = [
 // 0 Sticker  1.2 x  3.8 with Double Diagonal Black/Yellow Stripes
 // 0 Name: 191895o.dat
 // 0 Author: Chris Dee [cwdee]
@@ -15,7 +16,7 @@ function ldraw_lib__191895o() = [
 // 
 // 
 // 1 16 0 -0.25 0 38 0 0 0 0.25 0 0 0 12 box5-12.dat
-  [1,16,0,-0.25,0,38,0,0,0,0.25,0,0,0,12, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,38,0,0,0,0.25,0,0,0,12, ldraw_lib__box5_12(realsolid)],
 // 3 0 5.5 -0.25 -12 0 -0.25 -6.5 -5.5 -0.25 -12
   [3,0,5.5,-0.25,-12,0,-0.25,-6.5,-5.5,-0.25,-12],
 // 4 14 -5.5 -0.25 -12 0 -0.25 -6.5 0 -0.25 -1 -11 -0.25 -12
@@ -73,5 +74,5 @@ function ldraw_lib__191895o() = [
   [3,14,38,-0.25,12,36.5,-0.25,12,38,-0.25,10.5],
 ];
 module ldraw_lib__191895o(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__191895o(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__191895o(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__191895o(line=0.2);

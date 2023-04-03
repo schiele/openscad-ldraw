@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__194295d() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__194295d(realsolid=false) = [
 // 0 Sticker  1.6 x  4.2 with White Globe and Arrow on Transparent Background
 // 0 Name: 194295d.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -17,7 +18,7 @@ function ldraw_lib__194295d() = [
 // 
 // 
 // 1 16 0 -0.25 0 42 0 0 0 0.25 0 0 0 16 box5-12.dat
-  [1,16,0,-0.25,0,42,0,0,0,0.25,0,0,0,16, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,42,0,0,0,0.25,0,0,0,16, ldraw_lib__box5_12(realsolid)],
 // 0 BFC NOCLIP
   [0,"BFC","NOCLIP"],
 // 4 15 -3.8 -0.25 12.1 -2.5 -0.25 13.8 -3.62 -0.25 13.52 -5.36 -0.25 12.93
@@ -374,5 +375,5 @@ function ldraw_lib__194295d() = [
   [4,16,7.9,-0.25,3.4,6.4,-0.25,3,6.6,-0.25,0.8,8.1,-0.25,0.8],
 ];
 module ldraw_lib__194295d(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__194295d(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__194295d(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__194295d(line=0.2);

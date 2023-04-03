@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__4629677b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4629677b(realsolid=false) = [
 // 0 Sticker  1.4 x  1.8 with Golden Post Horn
 // 0 Name: 4629677b.dat
 // 0 Author: Howard Lande [HowardLande]
@@ -17,7 +18,7 @@ function ldraw_lib__4629677b() = [
 // 
 // 
 // 1 16 0 -0.25 0 18 0 0 0 0.25 0 0 0 14 box5-12.dat
-  [1,16,0,-0.25,0,18,0,0,0,0.25,0,0,0,14, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,18,0,0,0,0.25,0,0,0,14, ldraw_lib__box5_12(realsolid)],
 // 4 16 -0.805 -0.25 3.337 -5.187 -0.25 2.953 -5.137 -0.25 2.573 -5.054 -0.25 2.198
   [4,16,-0.805,-0.25,3.337,-5.187,-0.25,2.953,-5.137,-0.25,2.573,-5.054,-0.25,2.198],
 // 4 16 -0.805 -0.25 3.337 -5.054 -0.25 2.198 -4.938 -0.25 1.832 -4.791 -0.25 1.478
@@ -2212,5 +2213,5 @@ function ldraw_lib__4629677b() = [
   [3,16,-1.763,-0.25,-9.704,-1.622,-0.25,-9.911,-1.639,-0.25,-9.572],
 ];
 module ldraw_lib__4629677b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4629677b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4629677b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4629677b(line=0.2);

@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/48/4-4cylo.scad>
 use <s/6581a.scad>
-function ldraw_lib__6581() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6581(realsolid=false) = [
 // 0 Tyre 20/ 40 x 33 Off Road
 // 0 Name: 6581.dat
 // 0 Author: Jeff Boen [onyx]
@@ -22,19 +23,19 @@ function ldraw_lib__6581() = [
 // 
 // 
 // 1 16 0 0 0 0 0 1 0 1 0 -1 0 0 s\6581a.dat
-  [1,16,0,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__s__6581a()],
+  [1,16,0,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__s__6581a(realsolid)],
 // 1 16 0 0 0 0 0 -1 0 -1 0 -1 0 0 s\6581a.dat
-  [1,16,0,0,0,0,0,-1,0,-1,0,-1,0,0, ldraw_lib__s__6581a()],
+  [1,16,0,0,0,0,0,-1,0,-1,0,-1,0,0, ldraw_lib__s__6581a(realsolid)],
 // 1 16 0 0 0 0 0 1 0 -1 0 1 0 0 s\6581a.dat
-  [1,16,0,0,0,0,0,1,0,-1,0,1,0,0, ldraw_lib__s__6581a()],
+  [1,16,0,0,0,0,0,1,0,-1,0,1,0,0, ldraw_lib__s__6581a(realsolid)],
 // 1 16 0 0 0 0 0 -1 0 1 0 1 0 0 s\6581a.dat
-  [1,16,0,0,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__s__6581a()],
+  [1,16,0,0,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__s__6581a(realsolid)],
 // 
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 15 0 0 52 52 0 0 0 -30 0 48\4-4cylo.dat
-  [1,16,0,0,15,0,0,52,52,0,0,0,-30,0, ldraw_lib__48__4_4cylo()],
+  [1,16,0,0,15,0,0,52,52,0,0,0,-30,0, ldraw_lib__48__4_4cylo(realsolid)],
 ];
 module ldraw_lib__6581(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6581(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6581(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6581(line=0.2);

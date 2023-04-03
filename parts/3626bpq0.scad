@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3626bs02.scad>
-function ldraw_lib__3626bpq0() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3626bpq0(realsolid=false) = [
 // 0 Minifig Head Mummy Face with 2 Eyes / 1 Eye 2-Sided Pattern
 // 0 Name: 3626bpq0.dat
 // 0 Author: Christian Neumann [Wesley]
@@ -19,7 +20,7 @@ function ldraw_lib__3626bpq0() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3626bs02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626bs02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626bs02(realsolid)],
 // 0 // -- head framework --
 // 0 // upper left torus front half
 // 4 16 7.3912 0 -3.0616 9.1592 0.30464 -3.7936 9.9136 0.30464 0 8 0 0
@@ -2684,5 +2685,5 @@ function ldraw_lib__3626bpq0() = [
   [3,16,9.192,7.442,9.19224,11.4,5.9,5.88862,9.85,8.28,8.20777],
 ];
 module ldraw_lib__3626bpq0(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3626bpq0(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3626bpq0(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3626bpq0(line=0.2);

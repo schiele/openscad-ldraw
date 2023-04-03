@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__163345ac01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__163345ac01(realsolid=false) = [
 // 0 Sticker  1.5 x  5.1 with Dark Grey NASA Worm Logo (Formed)
 // 0 Name: 163345ac01.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -756,5 +757,5 @@ function ldraw_lib__163345ac01() = [
   [5,24,36.7042,28.1656,15,36.7042,28.1656,-15,35.1082,23.4574,-15,36.9085,29.1934,15],
 ];
 module ldraw_lib__163345ac01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__163345ac01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__163345ac01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__163345ac01(line=0.2);

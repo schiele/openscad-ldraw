@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__3960p01b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__3960p01b(realsolid=false) = [
 // 0 ~Dish  4 x  4 Inverted with Petal Pattern - Petal
 // 0 Name: s\3960p01b.dat
 // 0 Author: Steve Bliss [sbliss]
@@ -68,5 +69,5 @@ function ldraw_lib__s__3960p01b() = [
   [5,24,10,0,0,9.936,0,0.979,22,2,0,-3,0,2],
 ];
 module ldraw_lib__s__3960p01b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__3960p01b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__3960p01b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__3960p01b(line=0.2);

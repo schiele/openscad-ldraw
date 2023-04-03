@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/95328s01.scad>
-function ldraw_lib__95328() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__95328(realsolid=false) = [
 // 0 Minifig Hair Mid-Length Smooth Wide Bob Cut
 // 0 Name: 95328.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -20,7 +21,7 @@ function ldraw_lib__95328() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\95328s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__95328s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__95328s01(realsolid)],
 // 
 // 0 // Patterned Area
 // 3 16 -3.799 -3.553 -14.631 -2.877 -7.308 -11.32 -9.257 -3.394 -9.17
@@ -102,5 +103,5 @@ function ldraw_lib__95328() = [
   [5,24,-2.877,-7.308,-11.32,-3.799,-3.553,-14.631,-9.257,-3.394,-9.17,-.261,-7.48,-11.69],
 ];
 module ldraw_lib__95328(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__95328(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__95328(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__95328(line=0.2);

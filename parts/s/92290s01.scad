@@ -2,7 +2,8 @@ use <../../lib.scad>
 use <../../p/3-8rin10.scad>
 use <../../p/3-8ring3.scad>
 use <../../p/3-8ring4.scad>
-function ldraw_lib__s__92290s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__92290s01(realsolid=false) = [
 // 0 ~Minifig Weapon Trident Quarter of Head
 // 0 Name: s\92290s01.dat
 // 0 Author: Joerg Sommerer [Brickaneer]
@@ -223,11 +224,11 @@ function ldraw_lib__s__92290s01() = [
 // 5 24 2.5 -75.5 0 4.5 -75.5 0 4.5 -75.0815 -2.1049 4.5 -75.0815 2.1049
   [5,24,2.5,-75.5,0,4.5,-75.5,0,4.5,-75.0815,-2.1049,4.5,-75.0815,2.1049],
 // 1 16 4.5 -70 0 0 -1 0 -1 0 0 0 0 -1 3-8ring3.dat
-  [1,16,4.5,-70,0,0,-1,0,-1,0,0,0,0,-1, ldraw_lib__3_8ring3()],
+  [1,16,4.5,-70,0,0,-1,0,-1,0,0,0,0,-1, ldraw_lib__3_8ring3(realsolid)],
 // 1 16 4.5 -70 0 0 -1 0 -1 0 0 0 0 -1 3-8ring4.dat
-  [1,16,4.5,-70,0,0,-1,0,-1,0,0,0,0,-1, ldraw_lib__3_8ring4()],
+  [1,16,4.5,-70,0,0,-1,0,-1,0,0,0,0,-1, ldraw_lib__3_8ring4(realsolid)],
 // 1 16 4.5 -70 0 0 -1 0 -0.5 0 0 0 0 -0.5 3-8rin10.dat
-  [1,16,4.5,-70,0,0,-1,0,-0.5,0,0,0,0,-0.5, ldraw_lib__3_8rin10()],
+  [1,16,4.5,-70,0,0,-1,0,-0.5,0,0,0,0,-0.5, ldraw_lib__3_8rin10(realsolid)],
 // 4 16 2.31 -75.31 -0.957 2.5 -75.5 0 2.5 -90.883 0 2.31 -91.299 -0.957
   [4,16,2.31,-75.31,-0.957,2.5,-75.5,0,2.5,-90.883,0,2.31,-91.299,-0.957],
 // 5 24 2.5 -75.5 0 2.5 -90.883 0 2.31 -75.31 -0.957 2.31 -75.31 0.957
@@ -390,5 +391,5 @@ function ldraw_lib__s__92290s01() = [
   [3,16,1.768,-105.791,-19.305,1.768,-92.335,-14.579,1.768,-95,-11.5],
 ];
 module ldraw_lib__s__92290s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__92290s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__92290s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__92290s01(line=0.2);

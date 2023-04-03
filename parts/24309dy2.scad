@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <24309.scad>
 use <6142617tc01.scad>
-function ldraw_lib__24309dy2() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__24309dy2(realsolid=false) = [
 // 0 Slope Brick Curved  3 x  2 with Black Stripe on White Background Sticker
 // 0 Name: 24309dy2.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -18,10 +19,10 @@ function ldraw_lib__24309dy2() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 24309.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__24309()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__24309(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 6142617tc01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__6142617tc01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__6142617tc01(realsolid)],
 ];
 module ldraw_lib__24309dy2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__24309dy2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__24309dy2(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__24309dy2(line=0.2);

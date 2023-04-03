@@ -2,7 +2,8 @@ use <../../lib.scad>
 use <2-4cyli.scad>
 use <2-4disc.scad>
 use <2-4edge.scad>
-function ldraw_lib__48__2_4cylc() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__48__2_4cylc(realsolid=false) = [
 // 0 Hi-Res Cylinder Closed 0.5
 // 0 Name: 48\2-4cylc.dat
 // 0 Author: Max Martin Richter [MMR1988]
@@ -17,14 +18,14 @@ function ldraw_lib__48__2_4cylc() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 48\2-4edge.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__48__2_4edge()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__48__2_4edge(realsolid)],
 // 1 16 0 1 0 1 0 0 0 1 0 0 0 1 48\2-4edge.dat
-  [1,16,0,1,0,1,0,0,0,1,0,0,0,1, ldraw_lib__48__2_4edge()],
+  [1,16,0,1,0,1,0,0,0,1,0,0,0,1, ldraw_lib__48__2_4edge(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 48\2-4disc.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__48__2_4disc()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__48__2_4disc(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 48\2-4cyli.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__48__2_4cyli()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__48__2_4cyli(realsolid)],
 ];
 module ldraw_lib__48__2_4cylc(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__48__2_4cylc(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__48__2_4cylc(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__48__2_4cylc(line=0.2);

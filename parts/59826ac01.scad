@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/48/2-4cyli.scad>
 use <../p/48/2-4ri240.scad>
-function ldraw_lib__59826ac01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__59826ac01(realsolid=false) = [
 // 0 Sticker  3 x  9.4 with Blue and White Diagonal Stripes (Formed)
 // 0 Name: 59826ac01.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -20,11 +21,11 @@ function ldraw_lib__59826ac01() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 15 0 0 -30 60 0 0 0 0 -60 0 60 0 48\2-4cyli.dat
-  [1,15,0,0,-30,60,0,0,0,0,-60,0,60,0, ldraw_lib__48__2_4cyli()],
+  [1,15,0,0,-30,60,0,0,0,0,-60,0,60,0, ldraw_lib__48__2_4cyli(realsolid)],
 // 1 15 0 0 -30 0.25 0 0 0 0 -0.25 0 1 0 48\2-4ri240.dat
-  [1,15,0,0,-30,0.25,0,0,0,0,-0.25,0,1,0, ldraw_lib__48__2_4ri240()],
+  [1,15,0,0,-30,0.25,0,0,0,0,-0.25,0,1,0, ldraw_lib__48__2_4ri240(realsolid)],
 // 1 15 0 0 30 0.25 0 0 0 0 -0.25 0 -1 0 48\2-4ri240.dat
-  [1,15,0,0,30,0.25,0,0,0,0,-0.25,0,-1,0, ldraw_lib__48__2_4ri240()],
+  [1,15,0,0,30,0.25,0,0,0,0,-0.25,0,-1,0, ldraw_lib__48__2_4ri240(realsolid)],
 // 4 15 -60 0 30 -60 0 -30 -60.25 0 -30 -60.25 0 30
   [4,15,-60,0,30,-60,0,-30,-60.25,0,-30,-60.25,0,30],
 // 4 15 60.25 0 30 60.25 0 -30 60 0 -30 60 0 30
@@ -208,5 +209,5 @@ function ldraw_lib__59826ac01() = [
 // 0 //
 ];
 module ldraw_lib__59826ac01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__59826ac01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__59826ac01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__59826ac01(line=0.2);

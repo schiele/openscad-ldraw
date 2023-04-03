@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/1-4cylo.scad>
 use <../../p/1-4ndis.scad>
-function ldraw_lib__s__20310s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__20310s01(realsolid=false) = [
 // 0 ~Brick  1 x  1 with Scroll with Open Stud - Half Scroll
 // 0 Name: s\20310s01.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -577,13 +578,13 @@ function ldraw_lib__s__20310s01() = [
 // 4 16 6.5 3.7743 -9.3656 6.5 10 -5.9069 6.5 10 0 6.5 0 -3.5
   [4,16,6.5,3.7743,-9.3656,6.5,10,-5.9069,6.5,10,0,6.5,0,-3.5],
 // 1 16 6.5 15.9069 -5.9069 0 -1 0 0 0 -5.90693 5.90693 0 0 1-4ndis.dat
-  [1,16,6.5,15.9069,-5.9069,0,-1,0,0,0,-5.90693,5.90693,0,0, ldraw_lib__1_4ndis()],
+  [1,16,6.5,15.9069,-5.9069,0,-1,0,0,0,-5.90693,5.90693,0,0, ldraw_lib__1_4ndis(realsolid)],
 // 1 16 3.5 15.9069 -5.9069 0 1 0 0 0 -5.90693 5.90693 0 0 1-4ndis.dat
-  [1,16,3.5,15.9069,-5.9069,0,1,0,0,0,-5.90693,5.90693,0,0, ldraw_lib__1_4ndis()],
+  [1,16,3.5,15.9069,-5.9069,0,1,0,0,0,-5.90693,5.90693,0,0, ldraw_lib__1_4ndis(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 6.5 15.9069 -5.9069 0 -3 0 0 0 -5.90693 5.90693 0 0 1-4cylo.dat
-  [1,16,6.5,15.9069,-5.9069,0,-3,0,0,0,-5.90693,5.90693,0,0, ldraw_lib__1_4cylo()],
+  [1,16,6.5,15.9069,-5.9069,0,-3,0,0,0,-5.90693,5.90693,0,0, ldraw_lib__1_4cylo(realsolid)],
 // 2 24 6.5 10 0 6.5 15.9069 0
   [2,24,6.5,10,0,6.5,15.9069,0],
 // 2 24 3.5 10 0 3.5 15.9069 0
@@ -777,5 +778,5 @@ function ldraw_lib__s__20310s01() = [
   [5,24,8.4,6.3783,-16.3618,8.6,7.253,-12.997,8.7,8.0315,-13.5174,8.3,4.7838,-15.2262],
 ];
 module ldraw_lib__s__20310s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__20310s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__20310s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__20310s01(line=0.2);

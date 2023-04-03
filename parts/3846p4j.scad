@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/3846p4ja.scad>
 use <s/3846s01.scad>
-function ldraw_lib__3846p4j() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3846p4j(realsolid=false) = [
 // 0 Minifig Shield Triangular w/ Crown on Dk/Med Blue Quart. Pattern
 // 0 Name: 3846p4j.dat
 // 0 Author: Joerg Sommerer [Brickaneer]
@@ -18,9 +19,9 @@ function ldraw_lib__3846p4j() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3846s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3846s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3846s01(realsolid)],
 // 1 272 0 4.2006 -10 1 0 0 0 1 0 0 0 1 s\3846p4ja.dat
-  [1,272,0,4.2006,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3846p4ja()],
+  [1,272,0,4.2006,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3846p4ja(realsolid)],
 // 0 //
 // 4 82 5.8375 24.2844 -10 0 29.5356 -10 0 32.37 -10 8.76 24.57 -10
   [4,82,5.8375,24.2844,-10,0,29.5356,-10,0,32.37,-10,8.76,24.57,-10],
@@ -121,5 +122,5 @@ function ldraw_lib__3846p4j() = [
   [3,73,-1.3,-4.7994,-10,0,-4.7994,-10,0,-10.4425,-10],
 ];
 module ldraw_lib__3846p4j(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3846p4j(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3846p4j(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3846p4j(line=0.2);

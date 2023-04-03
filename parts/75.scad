@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <76279.scad>
-function ldraw_lib__75() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__75(realsolid=false) = [
 // 0 ~Moved to 76279
 // 0 Name: 75.dat
 // 0 Author: [PTadmin]
@@ -17,8 +18,8 @@ function ldraw_lib__75() = [
 // 0 // Technic Flex-System Hose 6L (120LDU)
 // 
 // 1 16 60 1 0 0 -1 0 1 0 0 0 0 1 76279.dat
-  [1,16,60,1,0,0,-1,0,1,0,0,0,0,1, ldraw_lib__76279()],
+  [1,16,60,1,0,0,-1,0,1,0,0,0,0,1, ldraw_lib__76279(realsolid)],
 ];
 module ldraw_lib__75(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__75(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__75(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__75(line=0.2);

@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__12891s03() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__12891s03(realsolid=false) = [
 // 0 ~Animal Bird Seagull Eye Area
 // 0 Name: s\12891s03.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -23,5 +24,5 @@ function ldraw_lib__s__12891s03() = [
   [5,24,4.674,-39.49,-14.36,4.616,-43.81,-13.509,4.737,-38.33,-12.032,3.613,-41.941,-17.043],
 ];
 module ldraw_lib__s__12891s03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__12891s03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__12891s03(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__12891s03(line=0.2);

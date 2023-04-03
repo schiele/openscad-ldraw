@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/4-4ndis.scad>
-function ldraw_lib__s__36069ap01s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__36069ap01s01(realsolid=false) = [
 // 0 ~Sheet Plastic 15 x 28 Trapezoid Sail Surface with Technic Racing Yacht Pattern
 // 0 Name: s\36069ap01s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -17,29 +18,29 @@ function ldraw_lib__s__36069ap01s01() = [
 // 0 // Rough foldback pattern, part supposed to be used with texture mapping instead
 // 
 // 1 0 0 -13 0 0 -1 0 4 0 0 0 0 4 4-4ndis.dat
-  [1,0,0,-13,0,0,-1,0,4,0,0,0,0,4, ldraw_lib__4_4ndis()],
+  [1,0,0,-13,0,0,-1,0,4,0,0,0,0,4, ldraw_lib__4_4ndis(realsolid)],
 // 1 0 0 13 0 0 -1 0 4 0 0 0 0 4 4-4ndis.dat
-  [1,0,0,13,0,0,-1,0,4,0,0,0,0,4, ldraw_lib__4_4ndis()],
+  [1,0,0,13,0,0,-1,0,4,0,0,0,0,4, ldraw_lib__4_4ndis(realsolid)],
 // 1 0 0 0 0 0 -1 0 8 0 0 0 0 5 4-4ndis.dat
-  [1,0,0,0,0,0,-1,0,8,0,0,0,0,5, ldraw_lib__4_4ndis()],
+  [1,0,0,0,0,0,-1,0,8,0,0,0,0,5, ldraw_lib__4_4ndis(realsolid)],
 // 1 0 0 267 0 0 -1 0 4 0 0 0 0 4 4-4ndis.dat
-  [1,0,0,267,0,0,-1,0,4,0,0,0,0,4, ldraw_lib__4_4ndis()],
+  [1,0,0,267,0,0,-1,0,4,0,0,0,0,4, ldraw_lib__4_4ndis(realsolid)],
 // 1 0 0 293 0 0 -1 0 4 0 0 0 0 4 4-4ndis.dat
-  [1,0,0,293,0,0,-1,0,4,0,0,0,0,4, ldraw_lib__4_4ndis()],
+  [1,0,0,293,0,0,-1,0,4,0,0,0,0,4, ldraw_lib__4_4ndis(realsolid)],
 // 1 0 0 280 0 0 -1 0 8 0 0 0 0 5 4-4ndis.dat
-  [1,0,0,280,0,0,-1,0,8,0,0,0,0,5, ldraw_lib__4_4ndis()],
+  [1,0,0,280,0,0,-1,0,8,0,0,0,0,5, ldraw_lib__4_4ndis(realsolid)],
 // 1 0 0 487 0 0 -1 0 4 0 0 0 0 4 4-4ndis.dat
-  [1,0,0,487,0,0,-1,0,4,0,0,0,0,4, ldraw_lib__4_4ndis()],
+  [1,0,0,487,0,0,-1,0,4,0,0,0,0,4, ldraw_lib__4_4ndis(realsolid)],
 // 1 0 0 513 0 0 -1 0 4 0 0 0 0 4 4-4ndis.dat
-  [1,0,0,513,0,0,-1,0,4,0,0,0,0,4, ldraw_lib__4_4ndis()],
+  [1,0,0,513,0,0,-1,0,4,0,0,0,0,4, ldraw_lib__4_4ndis(realsolid)],
 // 1 0 0 500 0 0 -1 0 8 0 0 0 0 5 4-4ndis.dat
-  [1,0,0,500,0,0,-1,0,8,0,0,0,0,5, ldraw_lib__4_4ndis()],
+  [1,0,0,500,0,0,-1,0,8,0,0,0,0,5, ldraw_lib__4_4ndis(realsolid)],
 // 1 0 0 500 227 0 -1 0 0 0 -4 4 0 0 4-4ndis.dat
-  [1,0,0,500,227,0,-1,0,0,0,-4,4,0,0, ldraw_lib__4_4ndis()],
+  [1,0,0,500,227,0,-1,0,0,0,-4,4,0,0, ldraw_lib__4_4ndis(realsolid)],
 // 1 0 0 500 253 0 -1 0 0 0 -4 4 0 0 4-4ndis.dat
-  [1,0,0,500,253,0,-1,0,0,0,-4,4,0,0, ldraw_lib__4_4ndis()],
+  [1,0,0,500,253,0,-1,0,0,0,-4,4,0,0, ldraw_lib__4_4ndis(realsolid)],
 // 1 0 0 500 240 0 -1 0 0 0 -5 8 0 0 4-4ndis.dat
-  [1,0,0,500,240,0,-1,0,0,0,-5,8,0,0, ldraw_lib__4_4ndis()],
+  [1,0,0,500,240,0,-1,0,0,0,-5,8,0,0, ldraw_lib__4_4ndis(realsolid)],
 // 3 0 0 -22.8 -19.2 0 8 -5 0 -8 -5
   [3,0,0,-22.8,-19.2,0,8,-5,0,-8,-5],
 // 4 0 0 9 4 0 17 4 0 38.2 118.8 0 8 5
@@ -358,5 +359,5 @@ function ldraw_lib__s__36069ap01s01() = [
   [3,0,0,38.2,118.8,0,41.9,100.8,0,41.6591,120.4839],
 ];
 module ldraw_lib__s__36069ap01s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__36069ap01s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__36069ap01s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__36069ap01s01(line=0.2);

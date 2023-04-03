@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/4-4disc.scad>
 use <../../p/4-4ndis.scad>
-function ldraw_lib__s__973p8qs01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__973p8qs01(realsolid=false) = [
 // 0 ~Space Shuttle Logo Pattern
 // 0 Name: s\973p8qs01.dat
 // 0 Author: Tomas Kralicek [RabbiT_CZ]
@@ -16,13 +17,13 @@ function ldraw_lib__s__973p8qs01() = [
 // 
 // 
 // 1 15 3.98 -2.48 0 0.3 0 0 0 0 0.3 0 1 0 4-4disc.dat
-  [1,15,3.98,-2.48,0,0.3,0,0,0,0,0.3,0,1,0, ldraw_lib__4_4disc()],
+  [1,15,3.98,-2.48,0,0.3,0,0,0,0,0.3,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 0 3.98 -2.48 0 0.3 0 0 0 0 0.3 0 1 0 4-4ndis.dat
-  [1,0,3.98,-2.48,0,0.3,0,0,0,0,0.3,0,1,0, ldraw_lib__4_4ndis()],
+  [1,0,3.98,-2.48,0,0.3,0,0,0,0,0.3,0,1,0, ldraw_lib__4_4ndis(realsolid)],
 // 1 15 -2.4 -5.23 0 0.3 0 0 0 0 0.3 0 1 0 4-4disc.dat
-  [1,15,-2.4,-5.23,0,0.3,0,0,0,0,0.3,0,1,0, ldraw_lib__4_4disc()],
+  [1,15,-2.4,-5.23,0,0.3,0,0,0,0,0.3,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 0 -2.4 -5.23 0 0.3 0 0 0 0 0.3 0 1 0 4-4ndis.dat
-  [1,0,-2.4,-5.23,0,0.3,0,0,0,0,0.3,0,1,0, ldraw_lib__4_4ndis()],
+  [1,0,-2.4,-5.23,0,0.3,0,0,0,0,0.3,0,1,0, ldraw_lib__4_4ndis(realsolid)],
 // 
 // 4 0 -1.771 6.611 0 -1.904 7.104 0 0 7.355 0 0 6.844 0
   [4,0,-1.771,6.611,0,-1.904,7.104,0,0,7.355,0,0,6.844,0],
@@ -611,5 +612,5 @@ function ldraw_lib__s__973p8qs01() = [
   [3,0,3.68,-2.48,0,3.099,-1.441,0,3.68,-2.18,0],
 ];
 module ldraw_lib__s__973p8qs01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__973p8qs01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__973p8qs01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__973p8qs01(line=0.2);

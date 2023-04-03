@@ -2,7 +2,8 @@ use <../../lib.scad>
 use <../../p/1-4ring1.scad>
 use <../../p/1-4ring2.scad>
 use <../../p/1-4ring4.scad>
-function ldraw_lib__s__191915sata() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__191915sata(realsolid=false) = [
 // 0 ~Austrian Railways Logo Foreground
 // 0 Name: s\191915sata.dat
 // 0 Author: Chris Dee [cwdee]
@@ -17,11 +18,11 @@ function ldraw_lib__s__191915sata() = [
 // 
 // 
 // 1 16 -1 0 1 -8 0 0 0 1 0 0 0 8 1-4ring1.dat
-  [1,16,-1,0,1,-8,0,0,0,1,0,0,0,8, ldraw_lib__1_4ring1()],
+  [1,16,-1,0,1,-8,0,0,0,1,0,0,0,8, ldraw_lib__1_4ring1(realsolid)],
 // 1 16 -1 0 1 -8 0 0 0 1 0 0 0 8 1-4ring2.dat
-  [1,16,-1,0,1,-8,0,0,0,1,0,0,0,8, ldraw_lib__1_4ring2()],
+  [1,16,-1,0,1,-8,0,0,0,1,0,0,0,8, ldraw_lib__1_4ring2(realsolid)],
 // 1 16 -1 0 1 -6 0 0 0 1 0 0 0 6 1-4ring4.dat
-  [1,16,-1,0,1,-6,0,0,0,1,0,0,0,6, ldraw_lib__1_4ring4()],
+  [1,16,-1,0,1,-6,0,0,0,1,0,0,0,6, ldraw_lib__1_4ring4(realsolid)],
 // 4 16 -1 0 31 9 0 9 31 0 9 53 0 31
   [4,16,-1,0,31,9,0,9,31,0,9,53,0,31],
 // 3 16 -1 0 9 9 0 9 -1 0 17
@@ -38,11 +39,11 @@ function ldraw_lib__s__191915sata() = [
   [3,16,-25,0,1,-31,0,1,-31,0,-6],
 // 
 // 1 16 1 0 -1 8 0 0 0 1 0 0 0 -8 1-4ring1.dat
-  [1,16,1,0,-1,8,0,0,0,1,0,0,0,-8, ldraw_lib__1_4ring1()],
+  [1,16,1,0,-1,8,0,0,0,1,0,0,0,-8, ldraw_lib__1_4ring1(realsolid)],
 // 1 16 1 0 -1 8 0 0 0 1 0 0 0 -8 1-4ring2.dat
-  [1,16,1,0,-1,8,0,0,0,1,0,0,0,-8, ldraw_lib__1_4ring2()],
+  [1,16,1,0,-1,8,0,0,0,1,0,0,0,-8, ldraw_lib__1_4ring2(realsolid)],
 // 1 16 1 0 -1 6 0 0 0 1 0 0 0 -6 1-4ring4.dat
-  [1,16,1,0,-1,6,0,0,0,1,0,0,0,-6, ldraw_lib__1_4ring4()],
+  [1,16,1,0,-1,6,0,0,0,1,0,0,0,-6, ldraw_lib__1_4ring4(realsolid)],
 // 4 16 1 0 -31 -9 0 -9 -31 0 -9 -53 0 -31
   [4,16,1,0,-31,-9,0,-9,-31,0,-9,-53,0,-31],
 // 3 16 1 0 -9 -9 0 -9 1 0 -17
@@ -59,5 +60,5 @@ function ldraw_lib__s__191915sata() = [
   [3,16,25,0,-1,31,0,-1,31,0,6],
 ];
 module ldraw_lib__s__191915sata(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__191915sata(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__191915sata(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__191915sata(line=0.2);

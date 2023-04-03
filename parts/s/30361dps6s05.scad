@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__30361dps6s05() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__30361dps6s05(realsolid=false) = [
 // 0 ~Cylinder  2 x  2 x  2 Robot Body with SW Astromech Pattern - Bottom Panel Border
 // 0 Name: s\30361dps6s05.dat
 // 0 Author: John Troxler [Gargan]
@@ -33,5 +34,5 @@ function ldraw_lib__s__30361dps6s05() = [
   [3,16,-2.4,27.8,-19.52,-2.4,26.4,-19.52,-2.8,28.2,-19.44],
 ];
 module ldraw_lib__s__30361dps6s05(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__30361dps6s05(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__30361dps6s05(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__30361dps6s05(line=0.2);

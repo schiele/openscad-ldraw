@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/t04o6250.scad>
-function ldraw_lib__s__42443s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__42443s01(realsolid=false) = [
 // 0 ~Minifig Headdress Werewolf Half
 // 0 Name: s\42443s01.dat
 // 0 Author: Stan Isachenko [angmarec]
@@ -1678,11 +1679,11 @@ function ldraw_lib__s__42443s01() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 0 0 0 8 0 -6.4 0 8 0 0 t04o6250.dat
-  [1,16,0,0,0,0,0,8,0,-6.4,0,8,0,0, ldraw_lib__t04o6250()],
+  [1,16,0,0,0,0,0,8,0,-6.4,0,8,0,0, ldraw_lib__t04o6250(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 0 8 0 0 0 -6.4 0 0 0 -8 t04o6250.dat
-  [1,16,0,0,0,8,0,0,0,-6.4,0,0,0,-8, ldraw_lib__t04o6250()],
+  [1,16,0,0,0,8,0,0,0,-6.4,0,0,0,-8, ldraw_lib__t04o6250(realsolid)],
 // 0 // Added lines
 // 2 24 11.101 -4.3 -13.98 11.525 -3.318 -13.249
   [2,24,11.101,-4.3,-13.98,11.525,-3.318,-13.249],
@@ -4167,5 +4168,5 @@ function ldraw_lib__s__42443s01() = [
   [5,24,4.666,-4.492,10.283,5.024,-6.089,8.609,12.05,-8.377,8.701,0,-4.8,10.429],
 ];
 module ldraw_lib__s__42443s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__42443s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__42443s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__42443s01(line=0.2);

@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__92251p06s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__92251p06s02(realsolid=false) = [
 // 0 ~Figure Friends Foot Shoe with  2 Crossed Laces Negative Pattern
 // 0 Name: s\92251p06s02.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -468,5 +469,5 @@ function ldraw_lib__s__92251p06s02() = [
   [5,24,2.95,-23.57,2.33,3.15,-17.64,2.23,2.2,-17.27,4.05,5.12,-22.78,.57],
 ];
 module ldraw_lib__s__92251p06s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__92251p06s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__92251p06s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__92251p06s02(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <821410a.scad>
-function ldraw_lib__160605a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__160605a(realsolid=false) = [
 // 0 =Sticker  3.5 x  3.5 with White/Clear Stripes
 // 0 Name: 160605a.dat
 // 0 Author: [PTadmin]
@@ -21,9 +22,9 @@ function ldraw_lib__160605a() = [
 // 0 // Alias of 821410a
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 821410a.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__821410a()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__821410a(realsolid)],
 // 0
 ];
 module ldraw_lib__160605a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__160605a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__160605a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__160605a(line=0.2);

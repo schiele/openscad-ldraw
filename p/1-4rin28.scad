@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__1_4rin28() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__1_4rin28(realsolid=false) = [
 // 0 Ring 28 x 0.25
 // 0 Name: 1-4rin28.dat
 // 0 Author: Bernd Broich [bbroich]
@@ -27,5 +28,5 @@ function ldraw_lib__1_4rin28() = [
   [4,16,11.0983,0,26.7931,0,0,29,0,0,28,10.7156,0,25.8692],
 ];
 module ldraw_lib__1_4rin28(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__1_4rin28(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__1_4rin28(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__1_4rin28(line=0.2);

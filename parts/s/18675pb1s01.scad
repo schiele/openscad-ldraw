@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__18675pb1s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__18675pb1s01(realsolid=false) = [
 // 0 ~Dish  6 x  6 Inverted - No Studs with Handle with Metallic Silver and Dark Bluish Grey Rim - 1/8
 // 0 Name: s\18675pb1s01.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -310,5 +311,5 @@ function ldraw_lib__s__18675pb1s01() = [
   [3,16,-8.4852,-15.2,8.4852,-9.5208,-15.2,7.3056,0,-16,0],
 ];
 module ldraw_lib__s__18675pb1s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__18675pb1s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__18675pb1s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__18675pb1s01(line=0.2);

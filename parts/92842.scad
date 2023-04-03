@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4cylo.scad>
 use <../p/connhole.scad>
 use <s/92842s01.scad>
-function ldraw_lib__92842() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__92842(realsolid=false) = [
 // 0 Propeller  3 Blade  5.5 Diameter with Technic Peghole and Flat End Blades
 // 0 Name: 92842.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -21,15 +22,15 @@ function ldraw_lib__92842() = [
 // 
 // 
 // 1 16 0 0 10 9 0 0 0 0 9 0 -20 0 4-4cylo.dat
-  [1,16,0,0,10,9,0,0,0,0,9,0,-20,0, ldraw_lib__4_4cylo()],
+  [1,16,0,0,10,9,0,0,0,0,9,0,-20,0, ldraw_lib__4_4cylo(realsolid)],
 // 1 16 0 0 0 1 0 0 0 0 1 0 -1 0 connhole.dat
-  [1,16,0,0,0,1,0,0,0,0,1,0,-1,0, ldraw_lib__connhole()],
+  [1,16,0,0,0,1,0,0,0,0,1,0,-1,0, ldraw_lib__connhole(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\92842s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__92842s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__92842s01(realsolid)],
 // 1 16 0 0 0 -0.5 0.86603 0 -0.86603 -0.5 0 0 0 1 s\92842s01.dat
-  [1,16,0,0,0,-0.5,0.86603,0,-0.86603,-0.5,0,0,0,1, ldraw_lib__s__92842s01()],
+  [1,16,0,0,0,-0.5,0.86603,0,-0.86603,-0.5,0,0,0,1, ldraw_lib__s__92842s01(realsolid)],
 // 1 16 0 0 0 -0.5 -0.86603 0 0.86603 -0.5 0 0 0 1 s\92842s01.dat
-  [1,16,0,0,0,-0.5,-0.86603,0,0.86603,-0.5,0,0,0,1, ldraw_lib__s__92842s01()],
+  [1,16,0,0,0,-0.5,-0.86603,0,0.86603,-0.5,0,0,0,1, ldraw_lib__s__92842s01(realsolid)],
 // 2 24 8.9905 0.0476 -3.719 8.9855 0.073 -3.7047
   [2,24,8.9905,0.0476,-3.719,8.9855,0.073,-3.7047],
 // 2 24 8.9855 0.073 -3.7047 8.3151 3.4443 -2.2768
@@ -176,5 +177,5 @@ function ldraw_lib__92842() = [
   [2,24,0.0073,8.9985,-3.8633,0.0073,8.9985,1.0861],
 ];
 module ldraw_lib__92842(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__92842(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__92842(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__92842(line=0.2);

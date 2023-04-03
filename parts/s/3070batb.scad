@@ -2,7 +2,8 @@ use <../../lib.scad>
 use <../../p/1-4ring1.scad>
 use <../../p/1-4ring2.scad>
 use <../../p/1-4ring5.scad>
-function ldraw_lib__s__3070batb() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__3070batb(realsolid=false) = [
 // 0 ~Tile  1 x  1 with "B" Pattern
 // 0 Name: s\3070batb.dat
 // 0 Author: Chris Dee [cwdee]
@@ -25,11 +26,11 @@ function ldraw_lib__s__3070batb() = [
 // 4 16 -3.5 0 -5.5 0.5 0 -5.5 0.5 0 -7.5 -5.5 0 -7.5
   [4,16,-3.5,0,-5.5,0.5,0,-5.5,0.5,0,-7.5,-5.5,0,-7.5],
 // 1 16 0.5 0 3.5 2 0 0 0 1 0 0 0 2 1-4ring1.dat
-  [1,16,0.5,0,3.5,2,0,0,0,1,0,0,0,2, ldraw_lib__1_4ring1()],
+  [1,16,0.5,0,3.5,2,0,0,0,1,0,0,0,2, ldraw_lib__1_4ring1(realsolid)],
 // 1 16 0.5 0 -3 .5 0 0 0 1 0 0 0 -.5 1-4ring5.dat
-  [1,16,0.5,0,-3,.5,0,0,0,1,0,0,0,-.5, ldraw_lib__1_4ring5()],
+  [1,16,0.5,0,-3,.5,0,0,0,1,0,0,0,-.5, ldraw_lib__1_4ring5(realsolid)],
 // 1 16 0.5 0 -3 1.5 0 0 0 1 0 0 0 -1.5 1-4ring2.dat
-  [1,16,0.5,0,-3,1.5,0,0,0,1,0,0,0,-1.5, ldraw_lib__1_4ring2()],
+  [1,16,0.5,0,-3,1.5,0,0,0,1,0,0,0,-1.5, ldraw_lib__1_4ring2(realsolid)],
 // 4 16 .5 0 -.5 .5 0 1.5 1.2654 0 1.6522 1.457 0 -.69
   [4,16,.5,0,-.5,.5,0,1.5,1.2654,0,1.6522,1.457,0,-.69],
 // 3 16 1.457 0 -.69 1.265 0 1.652 3.139 0 .545
@@ -49,5 +50,5 @@ function ldraw_lib__s__3070batb() = [
 // 0
 ];
 module ldraw_lib__s__3070batb(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__3070batb(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__3070batb(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__3070batb(line=0.2);

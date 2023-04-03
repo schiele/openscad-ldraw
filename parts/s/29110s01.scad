@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/2-4cylc.scad>
-function ldraw_lib__s__29110s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__29110s01(realsolid=false) = [
 // 0 ~Boat Kayak  2 x 15 Half
 // 0 Name: s\29110s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -1200,11 +1201,11 @@ function ldraw_lib__s__29110s01() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -12 -125 0 0 3 0 -11.6 0.5 -3 0 0 2-4cylc.dat
-  [1,16,0,-12,-125,0,0,3,0,-11.6,0.5,-3,0,0, ldraw_lib__2_4cylc()],
+  [1,16,0,-12,-125,0,0,3,0,-11.6,0.5,-3,0,0, ldraw_lib__2_4cylc(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -12 125 0 0 3 0 -11.6 0.5 3 0 0 2-4cylc.dat
-  [1,16,0,-12,125,0,0,3,0,-11.6,0.5,3,0,0, ldraw_lib__2_4cylc()],
+  [1,16,0,-12,125,0,0,3,0,-11.6,0.5,3,0,0, ldraw_lib__2_4cylc(realsolid)],
 // 5 24 0 -23.095 -49.889 4.79 -23.546 -49.588 4.632 -21.375 -49.644 0 -23.927 -49.987
   [5,24,0,-23.095,-49.889,4.79,-23.546,-49.588,4.632,-21.375,-49.644,0,-23.927,-49.987],
 // 5 24 17.145 -19.007 -43.956 10.177 -19.097 -48.157 10.639 -22.015 -47.969 16.517 -15.826 -44.543
@@ -1999,5 +2000,5 @@ function ldraw_lib__s__29110s01() = [
   [5,24,20.4,2.144,-61.224,19.545,8,-61.388,23.768,3.138,-44.925,14.575,8,-80.91],
 ];
 module ldraw_lib__s__29110s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__29110s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__29110s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__29110s01(line=0.2);

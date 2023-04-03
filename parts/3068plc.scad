@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <3068bp16.scad>
-function ldraw_lib__3068plc() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3068plc(realsolid=false) = [
 // 0 ~Moved to 3068bp16
 // 0 Name: 3068plc.dat
 // 0 Author: [PTadmin]
@@ -18,8 +19,8 @@ function ldraw_lib__3068plc() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 3068bp16.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3068bp16()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3068bp16(realsolid)],
 ];
 module ldraw_lib__3068plc(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3068plc(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3068plc(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3068plc(line=0.2);

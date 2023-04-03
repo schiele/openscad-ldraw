@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4disc.scad>
 use <s/30172s01.scad>
 use <../p/stud2.scad>
-function ldraw_lib__30172() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__30172(realsolid=false) = [
 // 0 Minifig Hat Pith Helmet
 // 0 Name: 30172.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -21,13 +22,13 @@ function ldraw_lib__30172() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\30172s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30172s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30172s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\30172s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__30172s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__30172s01(realsolid)],
 // 1 16 0 -13.9 3.9 1 0 0 0 0.993 0.122 0 -0.122 0.993 stud2.dat
-  [1,16,0,-13.9,3.9,1,0,0,0,0.993,0.122,0,-0.122,0.993, ldraw_lib__stud2()],
+  [1,16,0,-13.9,3.9,1,0,0,0,0.993,0.122,0,-0.122,0.993, ldraw_lib__stud2(realsolid)],
 // 1 16 0 -13.9 3.9 4 0 0 0 3.97 0.487 0 -0.487 3.97 4-4disc.dat
-  [1,16,0,-13.9,3.9,4,0,0,0,3.97,0.487,0,-0.487,3.97, ldraw_lib__4_4disc()],
+  [1,16,0,-13.9,3.9,4,0,0,0,3.97,0.487,0,-0.487,3.97, ldraw_lib__4_4disc(realsolid)],
 // 0 // Middle condlines
 // 5 24 0 1.12 13.37 0 7.24 13.56 6.34 1.12 11.67 -6.34 1.12 11.67
   [5,24,0,1.12,13.37,0,7.24,13.56,6.34,1.12,11.67,-6.34,1.12,11.67],
@@ -86,5 +87,5 @@ function ldraw_lib__30172() = [
 // 0 //
 ];
 module ldraw_lib__30172(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__30172(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__30172(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__30172(line=0.2);

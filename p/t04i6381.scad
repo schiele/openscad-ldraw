@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__t04i6381() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__t04i6381(realsolid=false) = [
 // 0 Torus Inside  1 x 0.6381 x 0.25
 // 0 Name: t04i6381.dat
 // 0 Author: John Riley [jriley]
@@ -136,5 +137,5 @@ function ldraw_lib__t04i6381() = [
 // 0 // Build by Primitive Generator 2
 ];
 module ldraw_lib__t04i6381(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__t04i6381(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__t04i6381(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__t04i6381(line=0.2);

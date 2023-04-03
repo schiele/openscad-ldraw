@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3039s01.scad>
-function ldraw_lib__3039p04() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3039p04(realsolid=false) = [
 // 0 Slope Brick 45  2 x  2 with Worn Out Black and Yellow Danger Stripes Pattern
 // 0 Name: 3039p04.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -17,7 +18,7 @@ function ldraw_lib__3039p04() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3039s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3039s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3039s01(realsolid)],
 // 4 0 -18 0 -10 -20 1.4142 -11.4142 -20 5.3033 -15.3033 -13.5 0 -10
   [4,0,-18,0,-10,-20,1.4142,-11.4142,-20,5.3033,-15.3033,-13.5,0,-10],
 // 4 7 0.7184 16.346 -26.346 -1.3817 17.9724 -27.9724 0.9 17.607 -27.607 2.8 16.1928 -26.1928
@@ -308,5 +309,5 @@ function ldraw_lib__3039p04() = [
   [3,7,-2.1,0,-10,-8.5,0,-10,-5.9,1.1314,-11.1314],
 ];
 module ldraw_lib__3039p04(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3039p04(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3039p04(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3039p04(line=0.2);

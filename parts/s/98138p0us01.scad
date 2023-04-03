@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/1-8chrd.scad>
-function ldraw_lib__s__98138p0us01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__98138p0us01(realsolid=false) = [
 // 0 ~Tile  1 x  1 Round with Round Coral Strawberry Pattern Half
 // 0 Name: s\98138p0us01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -15,13 +16,13 @@ function ldraw_lib__s__98138p0us01() = [
 // 
 // 
 // 1 3 0 0 0 0 0 -9 0 1 0 9 0 0 1-8chrd.dat
-  [1,3,0,0,0,0,0,-9,0,1,0,9,0,0, ldraw_lib__1_8chrd()],
+  [1,3,0,0,0,0,0,-9,0,1,0,9,0,0, ldraw_lib__1_8chrd(realsolid)],
 // 1 353 0 0 0 -9 0 0 0 1 0 0 0 -9 1-8chrd.dat
-  [1,353,0,0,0,-9,0,0,0,1,0,0,0,-9, ldraw_lib__1_8chrd()],
+  [1,353,0,0,0,-9,0,0,0,1,0,0,0,-9, ldraw_lib__1_8chrd(realsolid)],
 // 1 353 0 0 0 -9 0 0 0 1 0 0 0 9 1-8chrd.dat
-  [1,353,0,0,0,-9,0,0,0,1,0,0,0,9, ldraw_lib__1_8chrd()],
+  [1,353,0,0,0,-9,0,0,0,1,0,0,0,9, ldraw_lib__1_8chrd(realsolid)],
 // 1 353 0 0 0 0 0 -9 0 1 0 -9 0 0 1-8chrd.dat
-  [1,353,0,0,0,0,0,-9,0,1,0,-9,0,0, ldraw_lib__1_8chrd()],
+  [1,353,0,0,0,0,0,-9,0,1,0,-9,0,0, ldraw_lib__1_8chrd(realsolid)],
 // 4 226 -4.8 0 0.7 -4.8 0 -0.7 -4.5475 0 -0.6062 -4.3627 0 -0.35
   [4,226,-4.8,0,0.7,-4.8,0,-0.7,-4.5475,0,-0.6062,-4.3627,0,-0.35],
 // 4 226 -4.8 0 0.7 -4.3627 0 -0.35 -4.295 0 0 -4.3627 0 0.35
@@ -334,5 +335,5 @@ function ldraw_lib__s__98138p0us01() = [
   [3,226,-1.9627,0,-7.55,-1.895,0,-7.2,-2.4,0,-6.5],
 ];
 module ldraw_lib__s__98138p0us01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__98138p0us01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__98138p0us01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__98138p0us01(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <87080.scad>
-function ldraw_lib__87086() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__87086(realsolid=false) = [
 // 0 Technic Panel Fairing Smooth #2 (Short)
 // 0 Name: 87086.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -15,8 +16,8 @@ function ldraw_lib__87086() = [
 // 
 // 
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 87080.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__87080()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__87080(realsolid)],
 ];
 module ldraw_lib__87086(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__87086(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__87086(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__87086(line=0.2);

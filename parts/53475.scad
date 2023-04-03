@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <77.scad>
 use <u9053.scad>
-function ldraw_lib__53475() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__53475(realsolid=false) = [
 // 0 Technic Flex-System Hose 26L (520LDU)
 // 0 Name: 53475.dat
 // 0 Author: Tim Gould [timgould]
@@ -18,12 +19,12 @@ function ldraw_lib__53475() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 u9053.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9053()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9053(realsolid)],
 // 1 16 0 1 0 1 0 0 0 518 0 0 0 1 77.dat
-  [1,16,0,1,0,1,0,0,0,518,0,0,0,1, ldraw_lib__77()],
+  [1,16,0,1,0,1,0,0,0,518,0,0,0,1, ldraw_lib__77(realsolid)],
 // 1 16 0 520 0 -1 0 0 0 -1 0 0 0 1 u9053.dat
-  [1,16,0,520,0,-1,0,0,0,-1,0,0,0,1, ldraw_lib__u9053()],
+  [1,16,0,520,0,-1,0,0,0,-1,0,0,0,1, ldraw_lib__u9053(realsolid)],
 ];
 module ldraw_lib__53475(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__53475(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__53475(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__53475(line=0.2);

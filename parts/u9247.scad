@@ -5,7 +5,8 @@ use <u9548.scad>
 use <u9549.scad>
 use <u9576.scad>
 use <u9577.scad>
-function ldraw_lib__u9247() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__u9247(realsolid=false) = [
 // 0 ~Electric Light & Sound Insectoid Tail 4 x 20 x 4.333 - Body without Battery Cover
 // 0 Name: u9247.dat
 // 0 Author: Paul Easter [pneaster]
@@ -24,26 +25,26 @@ function ldraw_lib__u9247() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 u9548.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9548()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9548(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 u9547.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9547()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9547(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 u9577.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9577()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9577(realsolid)],
 // 
 // 0 // Rubber Buttons
 // 1 256 0 0 0 1 0 0 0 1 0 0 0 1 u9249.dat
-  [1,256,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9249()],
+  [1,256,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9249(realsolid)],
 // 
 // 0 // Screws
 // 1 494 0 -22 -59.5 -1 0 0 0 -1 0 0 0 1 u9576.dat
-  [1,494,0,-22,-59.5,-1,0,0,0,-1,0,0,0,1, ldraw_lib__u9576()],
+  [1,494,0,-22,-59.5,-1,0,0,0,-1,0,0,0,1, ldraw_lib__u9576(realsolid)],
 // 1 494 0 4 120 -1 0 0 0 -1 0 0 0 1 u9549.dat
-  [1,494,0,4,120,-1,0,0,0,-1,0,0,0,1, ldraw_lib__u9549()],
+  [1,494,0,4,120,-1,0,0,0,-1,0,0,0,1, ldraw_lib__u9549(realsolid)],
 // 1 494 28.75 -22 -148 -1 0 0 0 -1 0 0 0 1 u9549.dat
-  [1,494,28.75,-22,-148,-1,0,0,0,-1,0,0,0,1, ldraw_lib__u9549()],
+  [1,494,28.75,-22,-148,-1,0,0,0,-1,0,0,0,1, ldraw_lib__u9549(realsolid)],
 // 1 494 -28.75 -22 -148 -1 0 0 0 -1 0 0 0 1 u9549.dat
-  [1,494,-28.75,-22,-148,-1,0,0,0,-1,0,0,0,1, ldraw_lib__u9549()],
+  [1,494,-28.75,-22,-148,-1,0,0,0,-1,0,0,0,1, ldraw_lib__u9549(realsolid)],
 ];
 module ldraw_lib__u9247(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__u9247(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__u9247(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__u9247(line=0.2);

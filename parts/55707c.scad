@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <98721.scad>
-function ldraw_lib__55707c() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__55707c(realsolid=false) = [
 // 0 =Minifig Bar with Bat Wings
 // 0 Name: 55707c.dat
 // 0 Author: Michael Heidemann [mikeheide]
@@ -21,8 +22,8 @@ function ldraw_lib__55707c() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 98721.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__98721()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__98721(realsolid)],
 ];
 module ldraw_lib__55707c(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__55707c(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__55707c(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__55707c(line=0.2);

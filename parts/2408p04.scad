@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/2408s01.scad>
-function ldraw_lib__2408p04() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2408p04(realsolid=false) = [
 // 0 Panel 10 x  6 x 11 with Futuron Stripes Pattern
 // 0 Name: 2408p04.dat
 // 0 Author: Damien Guichard [BrickCaster]
@@ -22,7 +23,7 @@ function ldraw_lib__2408p04() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2408s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2408s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2408s01(realsolid)],
 // 
 // 4 16 60 264 -170 60 144 -170 -60 144 -170 -60 264 -170
   [4,16,60,264,-170,60,144,-170,-60,144,-170,-60,264,-170],
@@ -82,5 +83,5 @@ function ldraw_lib__2408p04() = [
 // 
 ];
 module ldraw_lib__2408p04(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2408p04(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2408p04(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2408p04(line=0.2);

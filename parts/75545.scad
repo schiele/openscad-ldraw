@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <6229.scad>
 use <6230.scad>
-function ldraw_lib__75545() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__75545(realsolid=false) = [
 // 0 Plate  2 x  2 with Stub Axles with White Wheels with Integral Tyre
 // 0 Name: 75545.dat
 // 0 Author: Donald Sutter [technog]
@@ -18,12 +19,12 @@ function ldraw_lib__75545() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 6229.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__6229()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__6229(realsolid)],
 // 1 15 9 26 16 0 0 1 0 1 0 1 0 0 6230.dat
-  [1,15,9,26,16,0,0,1,0,1,0,1,0,0, ldraw_lib__6230()],
+  [1,15,9,26,16,0,0,1,0,1,0,1,0,0, ldraw_lib__6230(realsolid)],
 // 1 15 -9 26 16 0 0 1 0 1 0 1 0 0 6230.dat
-  [1,15,-9,26,16,0,0,1,0,1,0,1,0,0, ldraw_lib__6230()],
+  [1,15,-9,26,16,0,0,1,0,1,0,1,0,0, ldraw_lib__6230(realsolid)],
 ];
 module ldraw_lib__75545(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__75545(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__75545(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__75545(line=0.2);

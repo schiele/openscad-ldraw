@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <30213.scad>
 use <s13a.scad>
-function ldraw_lib__30213d01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__30213d01(realsolid=false) = [
 // 0 Rock  2 x  2 Crystal 3 Point with Magnetic Silver Copper Machine Sticker
 // 0 Name: 30213d01.dat
 // 0 Author: Mikkel Bech Jensen [gaia]
@@ -18,10 +19,10 @@ function ldraw_lib__30213d01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 30213.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__30213()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__30213(realsolid)],
 // 1 80 0 0 0 1 0 0 0 1 0 0 0 1 s13a.dat
-  [1,80,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s13a()],
+  [1,80,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s13a(realsolid)],
 ];
 module ldraw_lib__30213d01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__30213d01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__30213d01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__30213d01(line=0.2);

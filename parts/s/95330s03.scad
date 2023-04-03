@@ -2,7 +2,8 @@ use <../../lib.scad>
 use <../../p/4-4cyli.scad>
 use <../../p/4-4disc.scad>
 use <../../p/4-4edge.scad>
-function ldraw_lib__s__95330s03() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__95330s03(realsolid=false) = [
 // 0 ~Minifig Axe Handle
 // 0 Name: s\95330s03.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -19,11 +20,11 @@ function ldraw_lib__s__95330s03() = [
 // 
 // 
 // 1 16 0 10 0 4 0 0 0 -51 0 0 0 4 4-4cyli.dat
-  [1,16,0,10,0,4,0,0,0,-51,0,0,0,4, ldraw_lib__4_4cyli()],
+  [1,16,0,10,0,4,0,0,0,-51,0,0,0,4, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 10 0 4 0 0 0 -1 0 0 0 4 4-4edge.dat
-  [1,16,0,10,0,4,0,0,0,-1,0,0,0,4, ldraw_lib__4_4edge()],
+  [1,16,0,10,0,4,0,0,0,-1,0,0,0,4, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 10 0 4 0 0 0 -1 0 0 0 4 4-4disc.dat
-  [1,16,0,10,0,4,0,0,0,-1,0,0,0,4, ldraw_lib__4_4disc()],
+  [1,16,0,10,0,4,0,0,0,-1,0,0,0,4, ldraw_lib__4_4disc(realsolid)],
 // 3 16 -2.917 -51.264 5.643 -2.272 -51.292 6.177 -2.214 -46.477 4.361
   [3,16,-2.917,-51.264,5.643,-2.272,-51.292,6.177,-2.214,-46.477,4.361],
 // 3 16 -2.214 -46.477 4.361 -3.473 -46.736 3.033 -2.917 -51.264 5.643
@@ -378,5 +379,5 @@ function ldraw_lib__s__95330s03() = [
   [5,24,3.087,-49.878,-4.709,2.56,-45.168,-3.713,3.245,-48.598,-4.006,1.783,-49.708,-5.358],
 ];
 module ldraw_lib__s__95330s03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__95330s03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__95330s03(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__95330s03(line=0.2);

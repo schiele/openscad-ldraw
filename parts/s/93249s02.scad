@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__93249s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__93249s02(realsolid=false) = [
 // 0 ~Minifig Headdress Horus - Eye Area
 // 0 Name: s\93249s02.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -56,5 +57,5 @@ function ldraw_lib__s__93249s02() = [
   [5,24,9.1,-3.47,-11.675,9.89802,-5.0107,-9.773,6.90521,-6,-13.6,12.7071,-2.1923,-6.529],
 ];
 module ldraw_lib__s__93249s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__93249s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__93249s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__93249s02(line=0.2);

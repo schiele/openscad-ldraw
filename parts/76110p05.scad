@@ -2,7 +2,8 @@ use <../lib.scad>
 use <32080.scad>
 use <32133.scad>
 use <32134.scad>
-function ldraw_lib__76110p05() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__76110p05(realsolid=false) = [
 // 0 Technic Competition Arrow with Rubber Lime Tip
 // 0 Name: 76110p05.dat
 // 0 Author: Manfred Schaefer [Lego-Manfred]
@@ -20,13 +21,13 @@ function ldraw_lib__76110p05() = [
 // 
 // 
 // 1 16 0 0 0 0 1 0 1 0 0 0 0 -1 32133.dat
-  [1,16,0,0,0,0,1,0,1,0,0,0,0,-1, ldraw_lib__32133()],
+  [1,16,0,0,0,0,1,0,1,0,0,0,0,-1, ldraw_lib__32133(realsolid)],
 // 1 16 0 0 -65 0 1 0 1 0 0 0 0 -1 32080.dat
-  [1,16,0,0,-65,0,1,0,1,0,0,0,0,-1, ldraw_lib__32080()],
+  [1,16,0,0,-65,0,1,0,1,0,0,0,0,-1, ldraw_lib__32080(realsolid)],
 // 1 490 0 0 -61 0 1 0 1 0 0 0 0 -1 32134.dat
-  [1,490,0,0,-61,0,1,0,1,0,0,0,0,-1, ldraw_lib__32134()],
+  [1,490,0,0,-61,0,1,0,1,0,0,0,0,-1, ldraw_lib__32134(realsolid)],
 // 
 ];
 module ldraw_lib__76110p05(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__76110p05(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__76110p05(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__76110p05(line=0.2);

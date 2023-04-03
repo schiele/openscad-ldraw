@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/2338s01.scad>
-function ldraw_lib__2338() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2338(realsolid=false) = [
 // 0 Minifig Hat High Cone Shaped
 // 0 Name: 2338.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -20,9 +21,9 @@ function ldraw_lib__2338() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2338s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2338s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2338s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\2338s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__2338s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__2338s01(realsolid)],
 // 0 // Middle Condlines
 // 5 24 0 23.18 13 0 5 13 -4.97 5 12.01 4.97 23.18 12.01
   [5,24,0,23.18,13,0,5,13,-4.97,5,12.01,4.97,23.18,12.01],
@@ -70,5 +71,5 @@ function ldraw_lib__2338() = [
   [5,24,0,-25.32,9.33,0,-15.76,10.81,-1.71,-24.71,10.48,1.71,-24.71,10.48],
 ];
 module ldraw_lib__2338(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2338(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2338(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2338(line=0.2);

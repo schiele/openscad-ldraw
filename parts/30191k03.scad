@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/2-4cyli.scad>
 use <../p/4-4cylj1x1e.scad>
-function ldraw_lib__30191k03() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__30191k03(realsolid=false) = [
 // 0 ~Bar Flexible H-shaped with Holders Middle Junction
 // 0 Name: 30191k03.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -20,12 +21,12 @@ function ldraw_lib__30191k03() = [
 // 
 // 
 // 1 16 -4 0 0 0 4 0 -4 0 0 0 0 4 2-4cyli.dat
-  [1,16,-4,0,0,0,4,0,-4,0,0,0,0,4, ldraw_lib__2_4cyli()],
+  [1,16,-4,0,0,0,4,0,-4,0,0,0,0,4, ldraw_lib__2_4cyli(realsolid)],
 // 1 16 0 0 0 0 4 0 -4 0 0 0 0 4 2-4cyli.dat
-  [1,16,0,0,0,0,4,0,-4,0,0,0,0,4, ldraw_lib__2_4cyli()],
+  [1,16,0,0,0,0,4,0,-4,0,0,0,0,4, ldraw_lib__2_4cyli(realsolid)],
 // 1 16 0 0 0 4 0 0 0 0 -4 0 4 0 4-4cylj1x1e.dat
-  [1,16,0,0,0,4,0,0,0,0,-4,0,4,0, ldraw_lib__4_4cylj1x1e()],
+  [1,16,0,0,0,4,0,0,0,0,-4,0,4,0, ldraw_lib__4_4cylj1x1e(realsolid)],
 ];
 module ldraw_lib__30191k03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__30191k03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__30191k03(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__30191k03(line=0.2);

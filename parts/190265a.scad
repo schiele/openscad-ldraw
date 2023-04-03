@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__190265a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__190265a(realsolid=false) = [
 // 0 Sticker  1.1 x  3.7 Car Grille, Headlights and Bumper
 // 0 Name: 190265a.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -831,5 +832,5 @@ function ldraw_lib__190265a() = [
   [3,16,-20.6,0,11.7,20.6,0,11.7,30.95,0,-11.65],
 ];
 module ldraw_lib__190265a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__190265a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__190265a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__190265a(line=0.2);

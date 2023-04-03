@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/003432s1.scad>
 use <s/3596s01.scad>
-function ldraw_lib__3596p03() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3596p03(realsolid=false) = [
 // 0 Flag on Flagpole Type 5 with LEGO Logo Closed "O" Square Pattern
 // 0 Name: 3596p03.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -18,10 +19,10 @@ function ldraw_lib__3596p03() = [
 // 0 // Flag on Flagpole
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3596s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3596s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3596s01(realsolid)],
 // 0 //
 // 1 14 2 -132 27 0 0 -1 0 0.6 0 0.6 0 0 s\003432s1.dat
-  [1,14,2,-132,27,0,0,-1,0,0.6,0,0.6,0,0, ldraw_lib__s__003432s1()],
+  [1,14,2,-132,27,0,0,-1,0,0.6,0,0.6,0,0, ldraw_lib__s__003432s1(realsolid)],
 // 4 4 2 -147.6 11.4 2 -147.6 42.6 2 -139.5 42.6 2 -139.5 11.4
   [4,4,2,-147.6,11.4,2,-147.6,42.6,2,-139.5,42.6,2,-139.5,11.4],
 // 4 4 2 -124.5 42.6 2 -116.4 42.6 2 -116.4 11.4 2 -124.5 11.4
@@ -44,7 +45,7 @@ function ldraw_lib__3596p03() = [
   [4,16,2,-115.8,10.8,2,-115.8,43.2,2,-108,64,2,-108,4],
 // 0 //
 // 1 14 -2 -132 27 0 0 1 0 0.6 0 -0.6 0 0 s\003432s1.dat
-  [1,14,-2,-132,27,0,0,1,0,0.6,0,-0.6,0,0, ldraw_lib__s__003432s1()],
+  [1,14,-2,-132,27,0,0,1,0,0.6,0,-0.6,0,0, ldraw_lib__s__003432s1(realsolid)],
 // 4 4 -2 -139.5 11.4 -2 -139.5 42.6 -2 -147.6 42.6 -2 -147.6 11.4
   [4,4,-2,-139.5,11.4,-2,-139.5,42.6,-2,-147.6,42.6,-2,-147.6,11.4],
 // 4 4 -2 -124.5 11.4 -2 -116.4 11.4 -2 -116.4 42.6 -2 -124.5 42.6
@@ -68,5 +69,5 @@ function ldraw_lib__3596p03() = [
 // 0 //
 ];
 module ldraw_lib__3596p03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3596p03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3596p03(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3596p03(line=0.2);

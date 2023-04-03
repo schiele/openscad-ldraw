@@ -4,7 +4,8 @@ use <../p/4-4con3.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4ring8.scad>
 use <../p/stud4.scad>
-function ldraw_lib__40240() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__40240(realsolid=false) = [
 // 0 Minifig Hair Short Bowl Cut
 // 0 Name: 40240.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -24,19 +25,19 @@ function ldraw_lib__40240() = [
 // 
 // 
 // 1 16 0 -5 0 1 0 0 0 -1.25 0 0 0 1 stud4.dat
-  [1,16,0,-5,0,1,0,0,0,-1.25,0,0,0,1, ldraw_lib__stud4()],
+  [1,16,0,-5,0,1,0,0,0,-1.25,0,0,0,1, ldraw_lib__stud4(realsolid)],
 // 1 16 0 -5 0 6 0 0 0 -1 0 0 0 6 4-4disc.dat
-  [1,16,0,-5,0,6,0,0,0,-1,0,0,0,6, ldraw_lib__4_4disc()],
+  [1,16,0,-5,0,6,0,0,0,-1,0,0,0,6, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 -5 0 -1 0 0 0 -1 0 0 0 1 4-4ring8.dat
-  [1,16,0,-5,0,-1,0,0,0,-1,0,0,0,1, ldraw_lib__4_4ring8()],
+  [1,16,0,-5,0,-1,0,0,0,-1,0,0,0,1, ldraw_lib__4_4ring8(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -1 0 3 0 0 0 -4 0 0 0 3 4-4con3.dat
-  [1,16,0,-1,0,3,0,0,0,-4,0,0,0,3, ldraw_lib__4_4con3()],
+  [1,16,0,-1,0,3,0,0,0,-4,0,0,0,3, ldraw_lib__4_4con3(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 4 0 1 0 0 0 -5 0 0 0 1 4-4con12.dat
-  [1,16,0,4,0,1,0,0,0,-5,0,0,0,1, ldraw_lib__4_4con12()],
+  [1,16,0,4,0,1,0,0,0,-5,0,0,0,1, ldraw_lib__4_4con12(realsolid)],
 // 3 16 12.157 8.297 -4.235 14.565 9.153 -4.009 14.635 7.352 -4.693
   [3,16,12.157,8.297,-4.235,14.565,9.153,-4.009,14.635,7.352,-4.693],
 // 3 16 14.635 7.352 -4.693 12.0107 6.95 -4.9751 12.157 8.297 -4.235
@@ -3607,5 +3608,5 @@ function ldraw_lib__40240() = [
   [5,24,2.592,5.107,-14.051,6.307,4.96,-13.712,6.709,2.791,-13.954,3.854,5.691,-13.315],
 ];
 module ldraw_lib__40240(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__40240(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__40240(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__40240(line=0.2);

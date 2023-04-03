@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/1-4chrd.scad>
 use <logoshells01.scad>
-function ldraw_lib__s__6009254es01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__6009254es01(realsolid=false) = [
 // 0 ~Sticker  1.7 x  0.8 with Logos Shell and Santander on Red Background - Section 1
 // 0 Name: s\6009254es01.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -16,12 +17,12 @@ function ldraw_lib__s__6009254es01() = [
 // 
 // 
 // 1 4 0 -0.25 -6.3953 0 0 0.532 0 1 0 -0.532 0 0 s\logoshells01.dat
-  [1,4,0,-0.25,-6.3953,0,0,0.532,0,1,0,-0.532,0,0, ldraw_lib__s__logoshells01()],
+  [1,4,0,-0.25,-6.3953,0,0,0.532,0,1,0,-0.532,0,0, ldraw_lib__s__logoshells01(realsolid)],
 // 0 // Primitives
 // 1 16 -6 -0.25 -14.9847 -2 0 0 0 1 0 0 0 -2 1-4chrd.dat
-  [1,16,-6,-0.25,-14.9847,-2,0,0,0,1,0,0,0,-2, ldraw_lib__1_4chrd()],
+  [1,16,-6,-0.25,-14.9847,-2,0,0,0,1,0,0,0,-2, ldraw_lib__1_4chrd(realsolid)],
 // 1 16 6 -0.25 -14.9847 0 0 2 0 1 0 -2 0 0 1-4chrd.dat
-  [1,16,6,-0.25,-14.9847,0,0,2,0,1,0,-2,0,0, ldraw_lib__1_4chrd()],
+  [1,16,6,-0.25,-14.9847,0,0,2,0,1,0,-2,0,0, ldraw_lib__1_4chrd(realsolid)],
 // 0 // Neutral border
 // 3 16 -8 -0.25 0.0153 -5.9584 -0.25 -6.3953 -5.9584 -0.25 0.0153
   [3,16,-8,-0.25,0.0153,-5.9584,-0.25,-6.3953,-5.9584,-0.25,0.0153],
@@ -37,5 +38,5 @@ function ldraw_lib__s__6009254es01() = [
   [4,16,-6,-0.25,-16.9847,6,-0.25,-16.9847,8,-0.25,-14.9847,-8,-0.25,-14.9847],
 ];
 module ldraw_lib__s__6009254es01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__6009254es01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__6009254es01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__6009254es01(line=0.2);

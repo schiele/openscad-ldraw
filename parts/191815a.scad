@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4ndis.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__191815a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__191815a(realsolid=false) = [
 // 0 Sticker  1.1 x  4.5 with Black Car on Yellow Background
 // 0 Name: 191815a.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -19,15 +20,15 @@ function ldraw_lib__191815a() = [
 // 
 // 
 // 1 16 0 -0.25 0 45 0 0 0 0.25 0 0 0 11 box5-12.dat
-  [1,16,0,-0.25,0,45,0,0,0,0.25,0,0,0,11, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,45,0,0,0,0.25,0,0,0,11, ldraw_lib__box5_12(realsolid)],
 // 1 14 -9.3 -0.25 -6 1.8 0 0 0 1 0 0 0 1.8 4-4disc.dat
-  [1,14,-9.3,-0.25,-6,1.8,0,0,0,1,0,0,0,1.8, ldraw_lib__4_4disc()],
+  [1,14,-9.3,-0.25,-6,1.8,0,0,0,1,0,0,0,1.8, ldraw_lib__4_4disc(realsolid)],
 // 1 14 19 -0.25 -6 1.8 0 0 0 1 0 0 0 1.8 4-4disc.dat
-  [1,14,19,-0.25,-6,1.8,0,0,0,1,0,0,0,1.8, ldraw_lib__4_4disc()],
+  [1,14,19,-0.25,-6,1.8,0,0,0,1,0,0,0,1.8, ldraw_lib__4_4disc(realsolid)],
 // 1 0 -9.3 -0.25 -6 1.8 0 0 0 1 0 0 0 1.8 4-4ndis.dat
-  [1,0,-9.3,-0.25,-6,1.8,0,0,0,1,0,0,0,1.8, ldraw_lib__4_4ndis()],
+  [1,0,-9.3,-0.25,-6,1.8,0,0,0,1,0,0,0,1.8, ldraw_lib__4_4ndis(realsolid)],
 // 1 0 19 -0.25 -6 1.8 0 0 0 1 0 0 0 1.8 4-4ndis.dat
-  [1,0,19,-0.25,-6,1.8,0,0,0,1,0,0,0,1.8, ldraw_lib__4_4ndis()],
+  [1,0,19,-0.25,-6,1.8,0,0,0,1,0,0,0,1.8, ldraw_lib__4_4ndis(realsolid)],
 // 4 0 -14.9 -0.25 9 -17.7 -0.25 9 -17.7 -0.25 8 -14.9 -0.25 8
   [4,0,-14.9,-0.25,9,-17.7,-0.25,9,-17.7,-0.25,8,-14.9,-0.25,8],
 // 4 0 -10.3 -0.25 9 -13.1 -0.25 9 -13.1 -0.25 8 -10.3 -0.25 8
@@ -370,5 +371,5 @@ function ldraw_lib__191815a() = [
   [4,14,-13.1,-0.25,9,-14.9,-0.25,9,-14.9,-0.25,8,-13.1,-0.25,8],
 ];
 module ldraw_lib__191815a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__191815a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__191815a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__191815a(line=0.2);

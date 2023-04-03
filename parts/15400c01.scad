@@ -3,7 +3,8 @@ use <15301.scad>
 use <15302.scad>
 use <15303.scad>
 use <u9211c01.scad>
-function ldraw_lib__15400c01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__15400c01(realsolid=false) = [
 // 0 Spring Shooter  1 x  4 x  1 [71/72] with Loaded Arrow
 // 0 Name: 15400c01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -22,14 +23,14 @@ function ldraw_lib__15400c01() = [
 // 
 // 
 // 1 71 0 0 0 1 0 0 0 1 0 0 0 1 15302.dat
-  [1,71,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__15302()],
+  [1,71,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__15302(realsolid)],
 // 1 72 0 24 0 1 0 0 0 1 0 0 0 1 15301.dat
-  [1,72,0,24,0,1,0,0,0,1,0,0,0,1, ldraw_lib__15301()],
+  [1,72,0,24,0,1,0,0,0,1,0,0,0,1, ldraw_lib__15301(realsolid)],
 // 1 494 0 9.4 2.3 0 0 -1 -1 0 0 0 1 0 u9211c01.dat
-  [1,494,0,9.4,2.3,0,0,-1,-1,0,0,0,1,0, ldraw_lib__u9211c01()],
+  [1,494,0,9.4,2.3,0,0,-1,-1,0,0,0,1,0, ldraw_lib__u9211c01(realsolid)],
 // 1 16 0 8.9537 108.4823 1 0 0 0 0.99996 -0.00873 0 0.00873 0.99996 15303.dat
-  [1,16,0,8.9537,108.4823,1,0,0,0,0.99996,-0.00873,0,0.00873,0.99996, ldraw_lib__15303()],
+  [1,16,0,8.9537,108.4823,1,0,0,0,0.99996,-0.00873,0,0.00873,0.99996, ldraw_lib__15303(realsolid)],
 ];
 module ldraw_lib__15400c01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__15400c01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__15400c01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__15400c01(line=0.2);

@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/4-4edge.scad>
 use <../../p/rect3.scad>
-function ldraw_lib__s__2865s06() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__2865s06(realsolid=false) = [
 // 0 ~Train Track  9V Metal Rail Interlocking End
 // 0 Name: s\2865s06.dat
 // 0 Author: Ludo Soete [ludo]
@@ -25,14 +26,14 @@ function ldraw_lib__s__2865s06() = [
 // 4 16 10 -16 50.25 -7.5 -16 50.25 -7.5 -8.5 50.25 10 -8.5 50.25
   [4,16,10,-16,50.25,-7.5,-16,50.25,-7.5,-8.5,50.25,10,-8.5,50.25],
 // 1 16 1.25 -16 52 0 0 -8.75 0 1 0 1.75 0 0 rect3.dat
-  [1,16,1.25,-16,52,0,0,-8.75,0,1,0,1.75,0,0, ldraw_lib__rect3()],
+  [1,16,1.25,-16,52,0,0,-8.75,0,1,0,1.75,0,0, ldraw_lib__rect3(realsolid)],
 // 2 7 -7.5 -16 50.25 -3.5 -8.5 50.25
   [2,7,-7.5,-16,50.25,-3.5,-8.5,50.25],
 // 2 7 10 -16 50.25 6 -8.5 50.25
   [2,7,10,-16,50.25,6,-8.5,50.25],
 // 1 7 2.5 -10 50.25 0 0 -.75 -.75 0 0 0 1 0 4-4edge.dat
-  [1,7,2.5,-10,50.25,0,0,-.75,-.75,0,0,0,1,0, ldraw_lib__4_4edge()],
+  [1,7,2.5,-10,50.25,0,0,-.75,-.75,0,0,0,1,0, ldraw_lib__4_4edge(realsolid)],
 ];
 module ldraw_lib__s__2865s06(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__2865s06(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__2865s06(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__2865s06(line=0.2);

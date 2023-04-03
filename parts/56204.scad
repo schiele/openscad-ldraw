@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <45411.scad>
-function ldraw_lib__56204() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__56204(realsolid=false) = [
 // 0 Slope Brick Curved  6 x  8 x  2 Double
 // 0 Name: 56204.dat
 // 0 Author: Chris Dee [cwdee]
@@ -20,9 +21,9 @@ function ldraw_lib__56204() = [
 // 0 // 45411 is used for moulding opaque parts, 56204 for transparent parts.
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 45411.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__45411()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__45411(realsolid)],
 // 0
 ];
 module ldraw_lib__56204(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__56204(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__56204(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__56204(line=0.2);

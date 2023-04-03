@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4disc.scad>
 use <s/3625s01.scad>
 use <../p/stud4.scad>
-function ldraw_lib__3625() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3625(realsolid=false) = [
 // 0 Minifig Hair Female with Pigtails
 // 0 Name: 3625.dat
 // 0 Author: Donald Sutter [technog]
@@ -41,13 +42,13 @@ function ldraw_lib__3625() = [
 // 2 24 0 -5.863 7.432 0 -2.97 11.281
   [2,24,0,-5.863,7.432,0,-2.97,11.281],
 // 1 16 0 -4 0 1 0 0 0 -1 0 0 0 -1 stud4.dat
-  [1,16,0,-4,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__stud4()],
+  [1,16,0,-4,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__stud4(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3625s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3625s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3625s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\3625s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__3625s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__3625s01(realsolid)],
 // 1 16 0 -4 0 6 0 0 0 -1 0 0 0 -6 4-4disc.dat
-  [1,16,0,-4,0,6,0,0,0,-1,0,0,0,-6, ldraw_lib__4_4disc()],
+  [1,16,0,-4,0,6,0,0,0,-1,0,0,0,-6, ldraw_lib__4_4disc(realsolid)],
 // 5 24 0 -0.207 -15.24 0 2.948 -15.568 2.249 2.965 -15.483 -2.151 -0.148 -15.152
   [5,24,0,-0.207,-15.24,0,2.948,-15.568,2.249,2.965,-15.483,-2.151,-0.148,-15.152],
 // 5 24 0 13.909 14.486 0 13.564 14.557 1.045 13.346 14.709 -1.34 13.644 14.681
@@ -81,5 +82,5 @@ function ldraw_lib__3625() = [
 // 0
 ];
 module ldraw_lib__3625(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3625(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3625(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3625(line=0.2);

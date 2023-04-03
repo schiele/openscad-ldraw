@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <22119.scad>
-function ldraw_lib__51930() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__51930(realsolid=false) = [
 // 0 =Ball 52mm Diameter
 // 0 Name: 51930.dat
 // 0 Author: [PTadmin]
@@ -21,9 +22,9 @@ function ldraw_lib__51930() = [
 // 0 // Alias of 22119
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 22119.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__22119()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__22119(realsolid)],
 // 0
 ];
 module ldraw_lib__51930(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__51930(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__51930(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__51930(line=0.2);

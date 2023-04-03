@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3003s01.scad>
-function ldraw_lib__3003p20() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3003p20(realsolid=false) = [
 // 0 Brick  2 x  2 with Black "20" Pattern
 // 0 Name: 3003p20.dat
 // 0 Author: Howard Lande [HowardLande]
@@ -15,7 +16,7 @@ function ldraw_lib__3003p20() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3003s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3003s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3003s01(realsolid)],
 // 4 0 -1.7 19 -20 -1.7 16.7 -20 -8 16.7 -20 -10.8 19 -20
   [4,0,-1.7,19,-20,-1.7,16.7,-20,-8,16.7,-20,-10.8,19,-20],
 // 4 0 -10.8 17.3 -20 -10.8 19 -20 -8 16.7 -20 -10.65 16.27 -20
@@ -512,5 +513,5 @@ function ldraw_lib__3003p20() = [
   [4,16,-11,5,-20,-0.946,5,-20,20,0,-20,-20,0,-20],
 ];
 module ldraw_lib__3003p20(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3003p20(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3003p20(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3003p20(line=0.2);

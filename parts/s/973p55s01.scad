@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/48/4-4rin19.scad>
-function ldraw_lib__s__973p55s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__973p55s01(realsolid=false) = [
 // 0 ~Explorien Logo
 // 0 Name: s\973p55s01.dat
 // 0 Author: Steve Bliss [sbliss]
@@ -17,7 +18,7 @@ function ldraw_lib__s__973p55s01() = [
 // 
 // 
 // 1 0 0 0 0 1 0 0 0 1 0 0 0 1 48\4-4rin19.dat
-  [1,0,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__48__4_4rin19()],
+  [1,0,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__48__4_4rin19(realsolid)],
 // 4 14 0 0 17.304 -6.257 0 6.018 -4.872 0 2.675 0 0 6.018
   [4,14,0,0,17.304,-6.257,0,6.018,-4.872,0,2.675,0,0,6.018],
 // 4 14 -4.872 0 2.675 -3.343 0 0 -2.293 0 -1.262 0 0 6.018
@@ -918,5 +919,5 @@ function ldraw_lib__s__973p55s01() = [
   [4,80,9.457,0,-10.173,10.508,0,-7.547,9.553,0,-7.451,8.597,0,-10.126],
 ];
 module ldraw_lib__s__973p55s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__973p55s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__973p55s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__973p55s01(line=0.2);

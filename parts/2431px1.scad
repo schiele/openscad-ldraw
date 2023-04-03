@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/2431s01.scad>
-function ldraw_lib__2431px1() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2431px1(realsolid=false) = [
 // 0 Tile  1 x  4 with Yellow and Light Yellow "SERVICE" Pattern
 // 0 Name: 2431px1.dat
 // 0 Author: Vincent Messenet [Cheenzo]
@@ -17,7 +18,7 @@ function ldraw_lib__2431px1() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2431s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2431s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2431s01(realsolid)],
 // 
 // 3 16 -30.35 0 5.5 -29.8 0 5.47 -40 0 10
   [3,16,-30.35,0,5.5,-29.8,0,5.47,-40,0,10],
@@ -1427,5 +1428,5 @@ function ldraw_lib__2431px1() = [
   [4,14,-28.03,0,2.29,-28.18,0,2.5,-28.67,0,2.92,-29.32,0,1.76],
 ];
 module ldraw_lib__2431px1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2431px1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2431px1(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2431px1(line=0.2);

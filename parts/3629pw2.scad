@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3629s01.scad>
-function ldraw_lib__3629pw2() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3629pw2(realsolid=false) = [
 // 0 Minifig Hat Cowboy with Silver Star Pattern
 // 0 Name: 3629pw2.dat
 // 0 Author: Willy Tschager [Holly-Wood]
@@ -154,9 +155,9 @@ function ldraw_lib__3629pw2() = [
   [3,80,2.236,-6.745,-11.82,2.764,-3.613,-12.521,0.676,-4.73,-12.649],
 // 0 // Subpart Minifig Hat Cowboy without Front Face
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3629s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3629s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3629s01(realsolid)],
 // 
 ];
 module ldraw_lib__3629pw2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3629pw2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3629pw2(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3629pw2(line=0.2);

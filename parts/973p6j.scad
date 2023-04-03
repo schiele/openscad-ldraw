@@ -3,7 +3,8 @@ use <../p/1-4cyli.scad>
 use <s/3004p90a.scad>
 use <s/3004p90b.scad>
 use <s/973s01.scad>
-function ldraw_lib__973p6j() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__973p6j(realsolid=false) = [
 // 0 Minifig Torso with Jacket, Zippered Pockets and Classic Space Logo Pattern
 // 0 Name: 973p6j.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -18,7 +19,7 @@ function ldraw_lib__973p6j() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01(realsolid)],
 // 4 16 19 29 10 19 32 10 -19 32 10 -19 29 10
   [4,16,19,29,10,19,32,10,-19,32,10,-19,29,10],
 // 4 16 -14.345 2 10 14.345 2 10 19 29 10 -19 29 10
@@ -26,12 +27,12 @@ function ldraw_lib__973p6j() = [
 // 4 16 -14.345 2 10 -12 0 10 12 0 10 14.345 2 10
   [4,16,-14.345,2,10,-12,0,10,12,0,10,14.345,2,10],
 // 1 0 0 -4 0 4.243 0 -4.243 0 -8 0 -4.243 0 -4.243 1-4cyli.dat
-  [1,0,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli()],
+  [1,0,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli(realsolid)],
 // 
 // 1 0 8.4 6.9 -10 0.29 0 0 0 0.29 0 0 0 1 s\3004p90a.dat
-  [1,0,8.4,6.9,-10,0.29,0,0,0,0.29,0,0,0,1, ldraw_lib__s__3004p90a()],
+  [1,0,8.4,6.9,-10,0.29,0,0,0,0.29,0,0,0,1, ldraw_lib__s__3004p90a(realsolid)],
 // 1 82 8.4 6.9 -10 0.29 0 0 0 0.29 0 0 0 1 s\3004p90b.dat
-  [1,82,8.4,6.9,-10,0.29,0,0,0,0.29,0,0,0,1, ldraw_lib__s__3004p90b()],
+  [1,82,8.4,6.9,-10,0.29,0,0,0,0.29,0,0,0,1, ldraw_lib__s__3004p90b(realsolid)],
 // 4 71 6.6 22.6 -10 6.1 22.3 -10 5.4 22.2 -10 5.3 23.6 -10
   [4,71,6.6,22.6,-10,6.1,22.3,-10,5.4,22.2,-10,5.3,23.6,-10],
 // 3 71 6.6 22.6 -10 5.3 23.6 -10 5.6 23.8 -10
@@ -808,5 +809,5 @@ function ldraw_lib__973p6j() = [
   [3,0,-6.3,21.7,-10,-6.4,22.2,-10,-6.1,22.4,-10],
 ];
 module ldraw_lib__973p6j(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__973p6j(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__973p6j(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__973p6j(line=0.2);

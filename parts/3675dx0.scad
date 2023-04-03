@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <3675.scad>
 use <6124787c.scad>
-function ldraw_lib__3675dx0() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3675dx0(realsolid=false) = [
 // 0 Slope Brick 33  3 x  3 Double Convex with Medium Azure Schematic Circles and Lines - Left Angle Sticker
 // 0 Name: 3675dx0.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -18,10 +19,10 @@ function ldraw_lib__3675dx0() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 3675.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3675()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3675(realsolid)],
 // 1 272 30.119 10.059 -17.25 0 -0.447 -0.894 0 0.894 -0.447 1 0 0 6124787c.dat
-  [1,272,30.119,10.059,-17.25,0,-0.447,-0.894,0,0.894,-0.447,1,0,0, ldraw_lib__6124787c()],
+  [1,272,30.119,10.059,-17.25,0,-0.447,-0.894,0,0.894,-0.447,1,0,0, ldraw_lib__6124787c(realsolid)],
 ];
 module ldraw_lib__3675dx0(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3675dx0(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3675dx0(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3675dx0(line=0.2);

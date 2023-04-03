@@ -3,7 +3,8 @@ use <../../p/1-8chrd.scad>
 use <../../p/1-8rin39.scad>
 use <../../p/4-4disc.scad>
 use <../../p/4-4ndis.scad>
-function ldraw_lib__s__4150ps0a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__4150ps0a(realsolid=false) = [
 // 0 ~Tile  2 x  2 Round with Hexagonal Hatch Pattern - 1/4
 // 0 Name: s\4150ps0a.dat
 // 0 Author: Alex Taylor [anathema]
@@ -58,9 +59,9 @@ function ldraw_lib__s__4150ps0a() = [
 // 4 8 -21 0 23 -21 0 43 -26 0 44 -26 0 18
   [4,8,-21,0,23,-21,0,43,-26,0,44,-26,0,18],
 // 1 8 -12 0 32 5 0 0 0 1 0 0 0 5 4-4disc.dat
-  [1,8,-12,0,32,5,0,0,0,1,0,0,0,5, ldraw_lib__4_4disc()],
+  [1,8,-12,0,32,5,0,0,0,1,0,0,0,5, ldraw_lib__4_4disc(realsolid)],
 // 1 16 -12 0 32 5 0 0 0 1 0 0 0 5 4-4ndis.dat
-  [1,16,-12,0,32,5,0,0,0,1,0,0,0,5, ldraw_lib__4_4ndis()],
+  [1,16,-12,0,32,5,0,0,0,1,0,0,0,5, ldraw_lib__4_4ndis(realsolid)],
 // 4 8 -22 0 50 -26 0 44 -21 0 43 -19 0 46
   [4,8,-22,0,50,-26,0,44,-21,0,43,-19,0,46],
 // 4 8 -19 0 46 0 0 46 0 0 55 -22 0 50
@@ -280,11 +281,11 @@ function ldraw_lib__s__4150ps0a() = [
 // 4 16 -40 0 14 -40 0 2 -37 0 2 -37 0 14
   [4,16,-40,0,14,-40,0,2,-37,0,2,-37,0,14],
 // 1 16 0 0 0 -141.421 0 -141.421 0 1 0 141.421 0 -141.421 1-8chrd.dat
-  [1,16,0,0,0,-141.421,0,-141.421,0,1,0,141.421,0,-141.421, ldraw_lib__1_8chrd()],
+  [1,16,0,0,0,-141.421,0,-141.421,0,1,0,141.421,0,-141.421, ldraw_lib__1_8chrd(realsolid)],
 // 1 16 0 0 0 0 0 -5 0 1 0 5 0 0 1-8rin39.dat
-  [1,16,0,0,0,0,0,-5,0,1,0,5,0,0, ldraw_lib__1_8rin39()],
+  [1,16,0,0,0,0,0,-5,0,1,0,5,0,0, ldraw_lib__1_8rin39(realsolid)],
 // 0
 ];
 module ldraw_lib__s__4150ps0a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__4150ps0a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__4150ps0a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__4150ps0a(line=0.2);

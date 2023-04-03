@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/48/1-8con6.scad>
-function ldraw_lib__s__20952s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__20952s02(realsolid=false) = [
 // 0 ~Brick Round  1.4 x  1.4 x  0.667 Dome Top - 1/8 Patternable Faces
 // 0 Name: s\20952s02.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -17,7 +18,7 @@ function ldraw_lib__s__20952s02() = [
 // 0 // Primitives
 // 
 // 1 16 0 14 0 2 0 0 0 2 0 0 0 2 48\1-8con6.dat
-  [1,16,0,14,0,2,0,0,0,2,0,0,0,2, ldraw_lib__48__1_8con6()],
+  [1,16,0,14,0,2,0,0,0,2,0,0,0,2, ldraw_lib__48__1_8con6(realsolid)],
 // 0 // Outer faces
 // 4 16 10.0944 3 1.3288 6.7564 0 .8894 6.815 0 0 10.182 3 0
   [4,16,10.0944,3,1.3288,6.7564,0,.8894,6.815,0,0,10.182,3,0],
@@ -69,5 +70,5 @@ function ldraw_lib__s__20952s02() = [
   [4,16,11.1076,14,8.5232,10.7902,10.2,8.2797,11.7776,10.2,6.8,12.124,14,7],
 ];
 module ldraw_lib__s__20952s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__20952s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__20952s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__20952s02(line=0.2);

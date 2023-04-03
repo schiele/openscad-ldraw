@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <10305p01.scad>
-function ldraw_lib__11809() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__11809(realsolid=false) = [
 // 0 =Minifig Helmet with Front Prongs with Dark Purple Highlight Pattern
 // 0 Name: 11809.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -19,8 +20,8 @@ function ldraw_lib__11809() = [
 // 0 // Alias of 10305p01
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 10305p01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__10305p01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__10305p01(realsolid)],
 ];
 module ldraw_lib__11809(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__11809(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__11809(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__11809(line=0.2);

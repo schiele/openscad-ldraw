@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <4492p04.scad>
 use <4494c01.scad>
-function ldraw_lib__4493c04() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4493c04(realsolid=false) = [
 // 0 Animal Horse with Red Tack and Black Mane Pattern (Complete)
 // 0 Name: 4493c04.dat
 // 0 Author: Sascha Broich
@@ -22,10 +23,10 @@ function ldraw_lib__4493c04() = [
 // 
 // 
 // 1 16 0 -19.5 -33.5 1 0 0 0 0.984808 -0.173648 0 0.173648 0.984808 4492p04.dat
-  [1,16,0,-19.5,-33.5,1,0,0,0,0.984808,-0.173648,0,0.173648,0.984808, ldraw_lib__4492p04()],
+  [1,16,0,-19.5,-33.5,1,0,0,0,0.984808,-0.173648,0,0.173648,0.984808, ldraw_lib__4492p04(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 4494c01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4494c01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4494c01(realsolid)],
 ];
 module ldraw_lib__4493c04(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4493c04(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4493c04(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4493c04(line=0.2);

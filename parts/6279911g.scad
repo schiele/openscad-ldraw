@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__6279911g() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6279911g(realsolid=false) = [
 // 0 Sticker  2.9 x  1.9 with United States of America Flag, Black and Chrome Gold Rectangles
 // 0 Name: 6279911g.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -17,7 +18,7 @@ function ldraw_lib__6279911g() = [
 // 
 // 
 // 1 16 0 -0.25 0 19 0 0 0 0.25 0 0 0 29 box5-12.dat
-  [1,16,0,-0.25,0,19,0,0,0,0.25,0,0,0,29, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,19,0,0,0,0.25,0,0,0,29, ldraw_lib__box5_12(realsolid)],
 // 
 // 4 0 19 -.25 -10 -19 -.25 -10 -19 -.25 -29 19 -.25 -29
   [4,0,19,-.25,-10,-19,-.25,-10,-19,-.25,-29,19,-.25,-29],
@@ -1571,5 +1572,5 @@ function ldraw_lib__6279911g() = [
   [4,334,19,-.25,0,-19,-.25,0,-19,-.25,-10,19,-.25,-10],
 ];
 module ldraw_lib__6279911g(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6279911g(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6279911g(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6279911g(line=0.2);

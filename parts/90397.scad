@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/90397s01.scad>
-function ldraw_lib__90397() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__90397(realsolid=false) = [
 // 0 Minifig Surf Board  2 x  6.5
 // 0 Name: 90397.dat
 // 0 Author: Joerg Sommerer [Brickaneer]
@@ -17,7 +18,7 @@ function ldraw_lib__90397() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\90397s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__90397s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__90397s01(realsolid)],
 // 
 // 0 // UPPER SURFACE - to be removed with coloured subpart.
 // 
@@ -47,5 +48,5 @@ function ldraw_lib__90397() = [
   [4,16,-9.457,0,-55.68,-14.998,0,-15.035,-14.636,0,-29.689,-12.859,0,-43.209],
 ];
 module ldraw_lib__90397(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__90397(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__90397(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__90397(line=0.2);

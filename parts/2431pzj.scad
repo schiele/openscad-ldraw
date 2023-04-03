@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/2431s01.scad>
-function ldraw_lib__2431pzj() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2431pzj(realsolid=false) = [
 // 0 Tile  1 x  4 with Dark Bluish Grey Triangle and  3 Orange Stripes with Black Outlines Pattern
 // 0 Name: 2431pzj.dat
 // 0 Author: Vincent Messenet [Cheenzo]
@@ -17,7 +18,7 @@ function ldraw_lib__2431pzj() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2431s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2431s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2431s01(realsolid)],
 // 
 // 3 72 -39.25 0 0 -39.25 0 -7.5 15 0 0
   [3,72,-39.25,0,0,-39.25,0,-7.5,15,0,0],
@@ -97,5 +98,5 @@ function ldraw_lib__2431pzj() = [
   [4,16,20.5,0,0,-39.25,0,-8.75,-40,0,-10,20.5,0,-9.25],
 ];
 module ldraw_lib__2431pzj(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2431pzj(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2431pzj(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2431pzj(line=0.2);

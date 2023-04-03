@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__6058327c() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6058327c(realsolid=false) = [
 // 0 Sticker  2.8 x  1.7 with Olive Green Trapezoid with Cut Corners on Dark Bluish Grey Background
 // 0 Name: 6058327c.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -17,7 +18,7 @@ function ldraw_lib__6058327c() = [
 // 
 // 
 // 1 16 0 -0.25 0 17.5 0 0 0 0.25 0 0 0 28.75 box5-12.dat
-  [1,16,0,-0.25,0,17.5,0,0,0,0.25,0,0,0,28.75, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,17.5,0,0,0,0.25,0,0,0,28.75, ldraw_lib__box5_12(realsolid)],
 // 
 // 4 72 -17.5 -0.25 28.75 -15 -0.25 22.6 -13.4624 -0.25 22.8879 -12.1588 -0.25 23.7588
   [4,72,-17.5,-0.25,28.75,-15,-0.25,22.6,-13.4624,-0.25,22.8879,-12.1588,-0.25,23.7588],
@@ -47,5 +48,5 @@ function ldraw_lib__6058327c() = [
   [4,330,10.5,-0.25,-26,15,-0.25,22.6,13.4624,-0.25,22.8879,-13.4624,-0.25,22.8879],
 ];
 module ldraw_lib__6058327c(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6058327c(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6058327c(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6058327c(line=0.2);

@@ -2,7 +2,8 @@ use <../lib.scad>
 use <s/3010p24s01.scad>
 use <s/3010p24s02.scad>
 use <s/3010s01.scad>
-function ldraw_lib__3010p25() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3010p25(realsolid=false) = [
 // 0 Brick  1 x  4 with Mail Horn on Red Background Right-Aligned Pattern
 // 0 Name: 3010p25.dat
 // 0 Author: Ulrich Röder [UR]
@@ -23,9 +24,9 @@ function ldraw_lib__3010p25() = [
 // 0 // Main
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3010s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3010s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3010s01(realsolid)],
 // 1 16 11 12.5 -10 1 0 0 0 1 0 0 0 1 s\3010p24s01.dat
-  [1,16,11,12.5,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3010p24s01()],
+  [1,16,11,12.5,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3010p24s01(realsolid)],
 // 4 16 38 1 -10 38 24 -10 40 24 -10 40 0 -10
   [4,16,38,1,-10,38,24,-10,40,24,-10,40,0,-10],
 // 4 16 -40 0 -10 -40 24 -10 -16 24 -10 -16 1 -10
@@ -35,8 +36,8 @@ function ldraw_lib__3010p25() = [
 // 
 // 0 // Red
 // 1 4 11 12.5 -10 1 0 0 0 1 0 0 0 1 s\3010p24s02.dat
-  [1,4,11,12.5,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3010p24s02()],
+  [1,4,11,12.5,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3010p24s02(realsolid)],
 ];
 module ldraw_lib__3010p25(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3010p25(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3010p25(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3010p25(line=0.2);

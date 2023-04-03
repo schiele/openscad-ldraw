@@ -3,7 +3,8 @@ use <../../p/box4-7a.scad>
 use <../../p/rect.scad>
 use <../../p/rect2p.scad>
 use <../../p/rect3.scad>
-function ldraw_lib__s__2347s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__2347s01(realsolid=false) = [
 // 0 ~Excavator Bucket  6 x  3 - Tooth
 // 0 Name: s\2347s01.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -18,7 +19,7 @@ function ldraw_lib__s__2347s01() = [
 // 
 // 
 // 1 16 0 0 -6 0 0 -4.5 0 -1 0 -6 0 0 rect2p.dat
-  [1,16,0,0,-6,0,0,-4.5,0,-1,0,-6,0,0, ldraw_lib__rect2p()],
+  [1,16,0,0,-6,0,0,-4.5,0,-1,0,-6,0,0, ldraw_lib__rect2p(realsolid)],
 // 2 24 4.5 0 -12 3.5 0 -13
   [2,24,4.5,0,-12,3.5,0,-13],
 // 2 24 -4.5 0 -12 -3.5 0 -13
@@ -26,11 +27,11 @@ function ldraw_lib__s__2347s01() = [
 // 4 16 -3.5 0 -13 -4.5 0 -12 4.5 0 -12 3.5 0 -13
   [4,16,-3.5,0,-13,-4.5,0,-12,4.5,0,-12,3.5,0,-13],
 // 1 16 0 -1 -13 0 0 3.5 1 0 0 0 1 0 rect.dat
-  [1,16,0,-1,-13,0,0,3.5,1,0,0,0,1,0, ldraw_lib__rect()],
+  [1,16,0,-1,-13,0,0,3.5,1,0,0,0,1,0, ldraw_lib__rect(realsolid)],
 // 2 24 4.5 -4 12 -4.5 -4 12
   [2,24,4.5,-4,12,-4.5,-4,12],
 // 1 16 0 -4 6 -4.5 0 0 0 -1 0 0 -1 6 box4-7a.dat
-  [1,16,0,-4,6,-4.5,0,0,0,-1,0,0,-1,6, ldraw_lib__box4_7a()],
+  [1,16,0,-4,6,-4.5,0,0,0,-1,0,0,-1,6, ldraw_lib__box4_7a(realsolid)],
 // 3 16 4.5 -4 0 4.5 -5 -1 4.5 0 0
   [3,16,4.5,-4,0,4.5,-5,-1,4.5,0,0],
 // 3 16 -4.5 -4 0 -4.5 0 0 -4.5 -5 -1
@@ -54,8 +55,8 @@ function ldraw_lib__s__2347s01() = [
 // 4 16 -3.5 -2 -13 3.5 -2 -13 4.5 -2.25 -12 -4.5 -2.25 -12
   [4,16,-3.5,-2,-13,3.5,-2,-13,4.5,-2.25,-12,-4.5,-2.25,-12],
 // 1 16 0 -3.625 -6.5 4.5 0 0 0 1 -1.375 0 0 5.5 rect3.dat
-  [1,16,0,-3.625,-6.5,4.5,0,0,0,1,-1.375,0,0,5.5, ldraw_lib__rect3()],
+  [1,16,0,-3.625,-6.5,4.5,0,0,0,1,-1.375,0,0,5.5, ldraw_lib__rect3(realsolid)],
 ];
 module ldraw_lib__s__2347s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__2347s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__2347s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__2347s01(line=0.2);

@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/1-8edge.scad>
 use <2536b.scad>
 use <../p/axlehol6.scad>
-function ldraw_lib__6135b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6135b(realsolid=false) = [
 // 0 Plant Tree Palm Trunk with Axlehole with  2 Teeth
 // 0 Name: 6135b.dat
 // 0 Author: Marc Klein [marckl]
@@ -27,24 +28,24 @@ function ldraw_lib__6135b() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 2536b.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2536b()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2536b(realsolid)],
 // 1 16 0 -12 0 0 0 -1 0 14 0 1 0 0 axlehol6.dat
-  [1,16,0,-12,0,0,0,-1,0,14,0,1,0,0, ldraw_lib__axlehol6()],
+  [1,16,0,-12,0,0,0,-1,0,14,0,1,0,0, ldraw_lib__axlehol6(realsolid)],
 // 1 16 0 -12 0 0 0 1 0 14 0 -1 0 0 axlehol6.dat
-  [1,16,0,-12,0,0,0,1,0,14,0,-1,0,0, ldraw_lib__axlehol6()],
+  [1,16,0,-12,0,0,0,1,0,14,0,-1,0,0, ldraw_lib__axlehol6(realsolid)],
 // 1 16 0 2 0 2.2961 0 5.54328 0 1 0 -5.54328 0 2.2961 1-8edge.dat
-  [1,16,0,2,0,2.2961,0,5.54328,0,1,0,-5.54328,0,2.2961, ldraw_lib__1_8edge()],
+  [1,16,0,2,0,2.2961,0,5.54328,0,1,0,-5.54328,0,2.2961, ldraw_lib__1_8edge(realsolid)],
 // 2 24 2 2 -5.602 2.296 2 -5.543
   [2,24,2,2,-5.602,2.296,2,-5.543],
 // 2 24 5.543 2 -2.296 5.602 2 -2
   [2,24,5.543,2,-2.296,5.602,2,-2],
 // 1 16 0 2 0 -2.2961 0 -5.54328 0 1 0 5.54328 0 -2.2961 1-8edge.dat
-  [1,16,0,2,0,-2.2961,0,-5.54328,0,1,0,5.54328,0,-2.2961, ldraw_lib__1_8edge()],
+  [1,16,0,2,0,-2.2961,0,-5.54328,0,1,0,5.54328,0,-2.2961, ldraw_lib__1_8edge(realsolid)],
 // 2 24 -2 2 5.602 -2.296 2 5.543
   [2,24,-2,2,5.602,-2.296,2,5.543],
 // 2 24 -5.543 2 2.296 -5.602 2 2
   [2,24,-5.543,2,2.296,-5.602,2,2],
 ];
 module ldraw_lib__6135b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6135b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6135b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6135b(line=0.2);

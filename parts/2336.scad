@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/2336s01.scad>
-function ldraw_lib__2336() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2336(realsolid=false) = [
 // 0 Wedge  2 x  3 with Brick  2 x  4 Side Studs and Plate  2 x  2
 // 0 Name: 2336.dat
 // 0 Author: James Jessiman
@@ -18,11 +19,11 @@ function ldraw_lib__2336() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2336s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2336s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2336s01(realsolid)],
 // 4 16 -20 -24 -4 -10 0 -60 10 0 -60 20 -24 -4
   [4,16,-20,-24,-4,-10,0,-60,10,0,-60,20,-24,-4],
 // 0
 ];
 module ldraw_lib__2336(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2336(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2336(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2336(line=0.2);

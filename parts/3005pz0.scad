@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/3005pz0s01.scad>
 use <s/3005s01.scad>
-function ldraw_lib__3005pz0() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3005pz0(realsolid=false) = [
 // 0 Brick  1 x  1 with Gryffindor House Lion Crest Emblem Pattern
 // 0 Name: 3005pz0.dat
 // 0 Author: Vincent Messenet [Cheenzo]
@@ -18,11 +19,11 @@ function ldraw_lib__3005pz0() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3005s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3005s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3005s01(realsolid)],
 // 1 16 0 0 -10 1 0 0 0 1 0 0 0 1 s\3005pz0s01.dat
-  [1,16,0,0,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3005pz0s01()],
+  [1,16,0,0,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3005pz0s01(realsolid)],
 // 1 16 0 0 -10 -1 0 0 0 1 0 0 0 1 s\3005pz0s01.dat
-  [1,16,0,0,-10,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__3005pz0s01()],
+  [1,16,0,0,-10,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__3005pz0s01(realsolid)],
 // 
 // 0 // Dark Red Crest Inner Shape
 // 4 320 -1.24 5.64 -10 -.33 7.61 -10 0 6.98 -10 0 5.63 -10
@@ -417,5 +418,5 @@ function ldraw_lib__3005pz0() = [
   [3,16,0,23.1,-10,-10,24,-10,10,24,-10],
 ];
 module ldraw_lib__3005pz0(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3005pz0(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3005pz0(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3005pz0(line=0.2);

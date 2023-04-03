@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/48489s01.scad>
-function ldraw_lib__48489() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__48489(realsolid=false) = [
 // 0 Minifig Helmet Visor with Pointy Sides and Eye Slit
 // 0 Name: 48489.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -24,9 +25,9 @@ function ldraw_lib__48489() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\48489s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__48489s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__48489s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\48489s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__48489s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__48489s01(realsolid)],
 // 5 24 0 -0.26 -19.536 0 -0.166 -17.054 0.679 -0.278 -19.521 -0.679 -0.278 -19.521
   [5,24,0,-0.26,-19.536,0,-0.166,-17.054,0.679,-0.278,-19.521,-0.679,-0.278,-19.521],
 // 5 24 0 -19.046 -6.89 0 -16.117 -11.857 1.532 -16.267 -11.451 -1.532 -16.267 -11.451
@@ -79,5 +80,5 @@ function ldraw_lib__48489() = [
   [5,24,0,9.38,-20.323,0,12.669,-23.7,0.832,9.616,-20.236,-0.832,9.616,-20.236],
 ];
 module ldraw_lib__48489(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__48489(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__48489(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__48489(line=0.2);

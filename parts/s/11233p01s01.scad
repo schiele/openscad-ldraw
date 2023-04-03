@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__11233p01s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__11233p01s01(realsolid=false) = [
 // 0 ~Minifig Mask Wolf with Fangs, Scars and White Ears Pattern Half
 // 0 Name: s\11233p01s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -1331,5 +1332,5 @@ function ldraw_lib__s__11233p01s01() = [
   [3,16,14.366,-1.502,-6.082,17.025,0.2,2.335,15.379,-2.605,1.314],
 ];
 module ldraw_lib__s__11233p01s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__11233p01s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__11233p01s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__11233p01s01(line=0.2);

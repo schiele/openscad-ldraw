@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__4100418g() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4100418g(realsolid=false) = [
 // 0 Sticker  1.5 x  1.9 with "TIR"
 // 0 Name: 4100418g.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -17,7 +18,7 @@ function ldraw_lib__4100418g() = [
 // 
 // 
 // 1 16 0 -0.25 0 19 0 0 0 0.25 0 0 0 15 box5-12.dat
-  [1,16,0,-0.25,0,19,0,0,0,0.25,0,0,0,15, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,19,0,0,0,0.25,0,0,0,15, ldraw_lib__box5_12(realsolid)],
 // 0 //
 // 4 15 -12.619 -0.25 7.53 -4.915 -0.25 11.616 -16.894 -0.25 11.616 -16.894 -0.25 7.53
   [4,15,-12.619,-0.25,7.53,-4.915,-0.25,11.616,-16.894,-0.25,11.616,-16.894,-0.25,7.53],
@@ -154,5 +155,5 @@ function ldraw_lib__4100418g() = [
   [4,1,14.602,-0.25,-4.142,15,-0.25,-9.7,15.541,-0.25,-12,14.867,-0.25,2.57],
 ];
 module ldraw_lib__4100418g(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4100418g(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4100418g(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4100418g(line=0.2);

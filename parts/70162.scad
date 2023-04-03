@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <2815.scad>
-function ldraw_lib__70162() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__70162(realsolid=false) = [
 // 0 ~Moved to 2815
 // 0 Name: 70162.dat
 // 0 Author: [PTadmin]
@@ -16,8 +17,8 @@ function ldraw_lib__70162() = [
 // 
 // 0 // Technic Wedge Belt Wheel Tyre
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 2815.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2815()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2815(realsolid)],
 ];
 module ldraw_lib__70162(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__70162(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__70162(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__70162(line=0.2);

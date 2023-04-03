@@ -7,7 +7,8 @@ use <../p/rect2a.scad>
 use <../p/stud4f2w.scad>
 use <../p/stug-2x2.scad>
 use <../p/wpin2.scad>
-function ldraw_lib__4600() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4600(realsolid=false) = [
 // 0 Plate  2 x  2 with 2 Wheel Pins
 // 0 Name: 4600.dat
 // 0 Author: James Jessiman
@@ -32,25 +33,25 @@ function ldraw_lib__4600() = [
 // 
 // 
 // 1 16 0 4 0 1 0 0 0 -1 0 0 0 1 stud4f2w.dat
-  [1,16,0,4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4f2w()],
+  [1,16,0,4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4f2w(realsolid)],
 // 1 16 0 4 0 6 0 0 0 1 0 0 0 6 4-4edge.dat
-  [1,16,0,4,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4edge()],
+  [1,16,0,4,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4edge(realsolid)],
 // 1 16 -12 4 0 4 0 0 0 4 0 0 0 2 box3u8p.dat
-  [1,16,-12,4,0,4,0,0,0,4,0,0,0,2, ldraw_lib__box3u8p()],
+  [1,16,-12,4,0,4,0,0,0,4,0,0,0,2, ldraw_lib__box3u8p(realsolid)],
 // 1 16 12 4 0 -4 0 0 0 4 0 0 0 -2 box3u8p.dat
-  [1,16,12,4,0,-4,0,0,0,4,0,0,0,-2, ldraw_lib__box3u8p()],
+  [1,16,12,4,0,-4,0,0,0,4,0,0,0,-2, ldraw_lib__box3u8p(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 8 0 16 0 0 0 -4 0 0 0 16 box3u2p.dat
-  [1,16,0,8,0,16,0,0,0,-4,0,0,0,16, ldraw_lib__box3u2p()],
+  [1,16,0,8,0,16,0,0,0,-4,0,0,0,16, ldraw_lib__box3u2p(realsolid)],
 // 1 16 16 6 9 0 1 0 2 0 0 0 0 -7 rect2a.dat
-  [1,16,16,6,9,0,1,0,2,0,0,0,0,-7, ldraw_lib__rect2a()],
+  [1,16,16,6,9,0,1,0,2,0,0,0,0,-7, ldraw_lib__rect2a(realsolid)],
 // 1 16 16 6 -9 0 1 0 2 0 0 0 0 7 rect2a.dat
-  [1,16,16,6,-9,0,1,0,2,0,0,0,0,7, ldraw_lib__rect2a()],
+  [1,16,16,6,-9,0,1,0,2,0,0,0,0,7, ldraw_lib__rect2a(realsolid)],
 // 1 16 -16 6 -9 0 -1 0 2 0 0 0 0 7 rect2a.dat
-  [1,16,-16,6,-9,0,-1,0,2,0,0,0,0,7, ldraw_lib__rect2a()],
+  [1,16,-16,6,-9,0,-1,0,2,0,0,0,0,7, ldraw_lib__rect2a(realsolid)],
 // 1 16 -16 6 9 0 -1 0 2 0 0 0 0 -7 rect2a.dat
-  [1,16,-16,6,9,0,-1,0,2,0,0,0,0,-7, ldraw_lib__rect2a()],
+  [1,16,-16,6,9,0,-1,0,2,0,0,0,0,-7, ldraw_lib__rect2a(realsolid)],
 // 4 16 -20 8 20 -16 8 16 16 8 16 20 8 20
   [4,16,-20,8,20,-16,8,16,16,8,16,20,8,20],
 // 4 16 20 8 -20 16 8 -16 -16 8 -16 -20 8 -20
@@ -72,11 +73,11 @@ function ldraw_lib__4600() = [
 // 2 24 -20 8 -10 -20 8 -20
   [2,24,-20,8,-10,-20,8,-20],
 // 1 16 0 8 0 20 0 0 0 -8 0 0 0 20 box5-4a.dat
-  [1,16,0,8,0,20,0,0,0,-8,0,0,0,20, ldraw_lib__box5_4a()],
+  [1,16,0,8,0,20,0,0,0,-8,0,0,0,20, ldraw_lib__box5_4a(realsolid)],
 // 1 16 22 5 0 0 -1 0 1 0 0 0 0 1 wpin2.dat
-  [1,16,22,5,0,0,-1,0,1,0,0,0,0,1, ldraw_lib__wpin2()],
+  [1,16,22,5,0,0,-1,0,1,0,0,0,0,1, ldraw_lib__wpin2(realsolid)],
 // 1 16 -22 5 0 0 1 0 1 0 0 0 0 -1 wpin2.dat
-  [1,16,-22,5,0,0,1,0,1,0,0,0,0,-1, ldraw_lib__wpin2()],
+  [1,16,-22,5,0,0,1,0,1,0,0,0,0,-1, ldraw_lib__wpin2(realsolid)],
 // 2 24 20 2 -4 20 2 -10
   [2,24,20,2,-4,20,2,-10],
 // 2 24 20 2 4 20 2 10
@@ -86,9 +87,9 @@ function ldraw_lib__4600() = [
 // 2 24 -20 2 -4 -20 2 -10
   [2,24,-20,2,-4,-20,2,-10],
 // 1 16 0 0 0 0 0 1 0 1 0 -1 0 0 stug-2x2.dat
-  [1,16,0,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__stug_2x2()],
+  [1,16,0,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__stug_2x2(realsolid)],
 // 0
 ];
 module ldraw_lib__4600(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4600(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4600(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4600(line=0.2);

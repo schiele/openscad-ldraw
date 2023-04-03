@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4ndis.scad>
 use <s/87079s01.scad>
-function ldraw_lib__87079px1() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__87079px1(realsolid=false) = [
 // 0 Tile  2 x  4 with Stone Television News and MISSING Dino Pattern
 // 0 Name: 87079px1.dat
 // 0 Author: Vincent Messenet [Cheenzo]
@@ -19,16 +20,16 @@ function ldraw_lib__87079px1() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\87079s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__87079s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__87079s01(realsolid)],
 // 
 // 1 0 -11.95 0 8.55 .7 0 0 0 1 0 0 0 .7 4-4disc.dat
-  [1,0,-11.95,0,8.55,.7,0,0,0,1,0,0,0,.7, ldraw_lib__4_4disc()],
+  [1,0,-11.95,0,8.55,.7,0,0,0,1,0,0,0,.7, ldraw_lib__4_4disc(realsolid)],
 // 1 0 -9.15 0 8.55 .7 0 0 0 1 0 0 0 .7 4-4disc.dat
-  [1,0,-9.15,0,8.55,.7,0,0,0,1,0,0,0,.7, ldraw_lib__4_4disc()],
+  [1,0,-9.15,0,8.55,.7,0,0,0,1,0,0,0,.7, ldraw_lib__4_4disc(realsolid)],
 // 1 19 -11.95 0 8.55 .7 0 0 0 1 0 0 0 .7 4-4ndis.dat
-  [1,19,-11.95,0,8.55,.7,0,0,0,1,0,0,0,.7, ldraw_lib__4_4ndis()],
+  [1,19,-11.95,0,8.55,.7,0,0,0,1,0,0,0,.7, ldraw_lib__4_4ndis(realsolid)],
 // 1 19 -9.15 0 8.55 .7 0 0 0 1 0 0 0 .7 4-4ndis.dat
-  [1,19,-9.15,0,8.55,.7,0,0,0,1,0,0,0,.7, ldraw_lib__4_4ndis()],
+  [1,19,-9.15,0,8.55,.7,0,0,0,1,0,0,0,.7, ldraw_lib__4_4ndis(realsolid)],
 // 
 // 3 0 -.43 0 -5.03 -.64 0 -5.56 4.49 0 -5.75
   [3,0,-.43,0,-5.03,-.64,0,-5.56,4.49,0,-5.75],
@@ -2436,5 +2437,5 @@ function ldraw_lib__87079px1() = [
   [3,73,9.95,0,6.63,10.7,0,9.73,9.2,0,6.31],
 ];
 module ldraw_lib__87079px1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__87079px1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__87079px1(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__87079px1(line=0.2);

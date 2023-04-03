@@ -4,7 +4,8 @@ use <../p/logo-maersk-line-black.scad>
 use <../p/logo-maersk-star-bg.scad>
 use <../p/logo-maersk-star.scad>
 use <s/4616559ps2.scad>
-function ldraw_lib__191075d() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__191075d(realsolid=false) = [
 // 0 Sticker  1.9 x  1.3 with Maersk Line Logo
 // 0 Name: 191075d.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -21,15 +22,15 @@ function ldraw_lib__191075d() = [
 // 
 // 
 // 1 16 0 -0.25 0 13 0 0 0 0.25 0 0 0 19 box5-12.dat
-  [1,16,0,-0.25,0,13,0,0,0,0.25,0,0,0,19, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,13,0,0,0,0.25,0,0,0,19, ldraw_lib__box5_12(realsolid)],
 // 1 15 0 -0.25 5.5 0.9 0 0 0 1 0 0 0 0.9 logo-maersk-star.dat
-  [1,15,0,-0.25,5.5,0.9,0,0,0,1,0,0,0,0.9, ldraw_lib__logo_maersk_star()],
+  [1,15,0,-0.25,5.5,0.9,0,0,0,1,0,0,0,0.9, ldraw_lib__logo_maersk_star(realsolid)],
 // 1 313 0 -0.25 5.5 0.9 0 0 0 1 0 0 0 0.9 logo-maersk-star-bg.dat
-  [1,313,0,-0.25,5.5,0.9,0,0,0,1,0,0,0,0.9, ldraw_lib__logo_maersk_star_bg()],
+  [1,313,0,-0.25,5.5,0.9,0,0,0,1,0,0,0,0.9, ldraw_lib__logo_maersk_star_bg(realsolid)],
 // 1 15 -4.5 -0.25 -13.5 0.4 0 0 0 1 0 0 0 0.4 s\4616559ps2.dat
-  [1,15,-4.5,-0.25,-13.5,0.4,0,0,0,1,0,0,0,0.4, ldraw_lib__s__4616559ps2()],
+  [1,15,-4.5,-0.25,-13.5,0.4,0,0,0,1,0,0,0,0.4, ldraw_lib__s__4616559ps2(realsolid)],
 // 1 15 8.2 -0.25 -13.5 0.4 0 0 0 1 0 0 0 0.4 logo-maersk-line-black.dat
-  [1,15,8.2,-0.25,-13.5,0.4,0,0,0,1,0,0,0,0.4, ldraw_lib__logo_maersk_line_black()],
+  [1,15,8.2,-0.25,-13.5,0.4,0,0,0,1,0,0,0,0.4, ldraw_lib__logo_maersk_line_black(realsolid)],
 // 4 313 13 -0.25 19 -13 -0.25 19 -9.36 -0.25 14.5 9.36 -0.25 14.5
   [4,313,13,-0.25,19,-13,-0.25,19,-9.36,-0.25,14.5,9.36,-0.25,14.5],
 // 4 313 -9.36 -0.25 -3.5 -9.36 -0.25 14.5 -13 -0.25 19 -13 -0.25 -10
@@ -58,5 +59,5 @@ function ldraw_lib__191075d() = [
   [4,15,4.2,-0.25,-12.42,3.1,-0.25,-12.42,3.1,-0.25,-14.58,4.2,-0.25,-14.58],
 ];
 module ldraw_lib__191075d(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__191075d(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__191075d(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__191075d(line=0.2);

@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__6327015as03() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__6327015as03(realsolid=false) = [
 // 0 ~Sticker Pointed Rectangle Hollow Arrows
 // 0 Name: s\6327015as03.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -39,5 +40,5 @@ function ldraw_lib__s__6327015as03() = [
   [4,16,-44.6,-0.25,-5.9,-39.6,-0.25,-5.9,-41.4,-0.25,-4.8,-44.2,-0.25,-4.8],
 ];
 module ldraw_lib__s__6327015as03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__6327015as03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__6327015as03(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__6327015as03(line=0.2);

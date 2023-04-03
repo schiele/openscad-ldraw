@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <1-4chrd.scad>
 use <1-4ndis.scad>
-function ldraw_lib__logo_maersk_s() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__logo_maersk_s(realsolid=false) = [
 // 0 Logo Maersk White "S"
 // 0 Name: logo-maersk-s.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -17,29 +18,29 @@ function ldraw_lib__logo_maersk_s() = [
 // 
 // 
 // 1 15 1.85 0 2 .7 0 0 0 1 0 0 0 .7 1-4chrd.dat
-  [1,15,1.85,0,2,.7,0,0,0,1,0,0,0,.7, ldraw_lib__1_4chrd()],
+  [1,15,1.85,0,2,.7,0,0,0,1,0,0,0,.7, ldraw_lib__1_4chrd(realsolid)],
 // 1 15 1.85 0 -.1 .7 0 0 0 1 0 0 0 .7 1-4chrd.dat
-  [1,15,1.85,0,-.1,.7,0,0,0,1,0,0,0,.7, ldraw_lib__1_4chrd()],
+  [1,15,1.85,0,-.1,.7,0,0,0,1,0,0,0,.7, ldraw_lib__1_4chrd(realsolid)],
 // 1 15 1.85 0 -2 0 0 .7 0 1 0 -.7 0 0 1-4chrd.dat
-  [1,15,1.85,0,-2,0,0,.7,0,1,0,-.7,0,0, ldraw_lib__1_4chrd()],
+  [1,15,1.85,0,-2,0,0,.7,0,1,0,-.7,0,0, ldraw_lib__1_4chrd(realsolid)],
 // 1 15 -1.85 0 -2 -.7 0 0 0 1 0 0 0 -.7 1-4chrd.dat
-  [1,15,-1.85,0,-2,-.7,0,0,0,1,0,0,0,-.7, ldraw_lib__1_4chrd()],
+  [1,15,-1.85,0,-2,-.7,0,0,0,1,0,0,0,-.7, ldraw_lib__1_4chrd(realsolid)],
 // 1 15 -1.85 0 .2 -.7 0 0 0 1 0 0 0 -.7 1-4chrd.dat
-  [1,15,-1.85,0,.2,-.7,0,0,0,1,0,0,0,-.7, ldraw_lib__1_4chrd()],
+  [1,15,-1.85,0,.2,-.7,0,0,0,1,0,0,0,-.7, ldraw_lib__1_4chrd(realsolid)],
 // 1 15 -1.85 0 2 0 0 -.7 0 1 0 .7 0 0 1-4chrd.dat
-  [1,15,-1.85,0,2,0,0,-.7,0,1,0,.7,0,0, ldraw_lib__1_4chrd()],
+  [1,15,-1.85,0,2,0,0,-.7,0,1,0,.7,0,0, ldraw_lib__1_4chrd(realsolid)],
 // 1 16 1.85 0 2 .7 0 0 0 1 0 0 0 .7 1-4ndis.dat
-  [1,16,1.85,0,2,.7,0,0,0,1,0,0,0,.7, ldraw_lib__1_4ndis()],
+  [1,16,1.85,0,2,.7,0,0,0,1,0,0,0,.7, ldraw_lib__1_4ndis(realsolid)],
 // 1 16 1.85 0 -.1 .7 0 0 0 1 0 0 0 .7 1-4ndis.dat
-  [1,16,1.85,0,-.1,.7,0,0,0,1,0,0,0,.7, ldraw_lib__1_4ndis()],
+  [1,16,1.85,0,-.1,.7,0,0,0,1,0,0,0,.7, ldraw_lib__1_4ndis(realsolid)],
 // 1 16 1.85 0 -2 0 0 .7 0 1 0 -.7 0 0 1-4ndis.dat
-  [1,16,1.85,0,-2,0,0,.7,0,1,0,-.7,0,0, ldraw_lib__1_4ndis()],
+  [1,16,1.85,0,-2,0,0,.7,0,1,0,-.7,0,0, ldraw_lib__1_4ndis(realsolid)],
 // 1 16 -1.85 0 -2 -.7 0 0 0 1 0 0 0 -.7 1-4ndis.dat
-  [1,16,-1.85,0,-2,-.7,0,0,0,1,0,0,0,-.7, ldraw_lib__1_4ndis()],
+  [1,16,-1.85,0,-2,-.7,0,0,0,1,0,0,0,-.7, ldraw_lib__1_4ndis(realsolid)],
 // 1 16 -1.85 0 .2 -.7 0 0 0 1 0 0 0 -.7 1-4ndis.dat
-  [1,16,-1.85,0,.2,-.7,0,0,0,1,0,0,0,-.7, ldraw_lib__1_4ndis()],
+  [1,16,-1.85,0,.2,-.7,0,0,0,1,0,0,0,-.7, ldraw_lib__1_4ndis(realsolid)],
 // 1 16 -1.85 0 2 0 0 -.7 0 1 0 .7 0 0 1-4ndis.dat
-  [1,16,-1.85,0,2,0,0,-.7,0,1,0,.7,0,0, ldraw_lib__1_4ndis()],
+  [1,16,-1.85,0,2,0,0,-.7,0,1,0,.7,0,0, ldraw_lib__1_4ndis(realsolid)],
 // 4 15 1.85 0 2.7 -1.85 0 2.7 -1.25 0 1.7 1.35 0 1.7
   [4,15,1.85,0,2.7,-1.85,0,2.7,-1.25,0,1.7,1.35,0,1.7],
 // 4 15 1.85 0 2.7 1.35 0 1.7 1.35 0 1.2 2.55 0 2
@@ -78,5 +79,5 @@ function ldraw_lib__logo_maersk_s() = [
   [3,16,2.55,0,1.2,1.85,0,.6,2.55,0,.6],
 ];
 module ldraw_lib__logo_maersk_s(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__logo_maersk_s(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__logo_maersk_s(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__logo_maersk_s(line=0.2);

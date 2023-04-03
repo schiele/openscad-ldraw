@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4edge.scad>
 use <../p/4-4ring1.scad>
 use <../p/4-4ring4.scad>
-function ldraw_lib__32346() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__32346(realsolid=false) = [
 // 0 ~Technic Micro-Scout Axlehole Ring (Needs Work)
 // 0 Name: 32346.dat
 // 0 Author: Marc Klein [marckl]
@@ -19,14 +20,14 @@ function ldraw_lib__32346() = [
 // 0 // Only the visible section has been modelled.
 // 
 // 1 16 0 58 -110 8 0 0 0 0 8 0 1 0 4-4edge.dat
-  [1,16,0,58,-110,8,0,0,0,0,8,0,1,0, ldraw_lib__4_4edge()],
+  [1,16,0,58,-110,8,0,0,0,0,8,0,1,0, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 58 -110 20 0 0 0 0 20 0 1 0 4-4edge.dat
-  [1,16,0,58,-110,20,0,0,0,0,20,0,1,0, ldraw_lib__4_4edge()],
+  [1,16,0,58,-110,20,0,0,0,0,20,0,1,0, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 58 -110 8 0 0 0 0 8 0 1 0 4-4ring1.dat
-  [1,16,0,58,-110,8,0,0,0,0,8,0,1,0, ldraw_lib__4_4ring1()],
+  [1,16,0,58,-110,8,0,0,0,0,8,0,1,0, ldraw_lib__4_4ring1(realsolid)],
 // 1 16 0 58 -110 4 0 0 0 0 4 0 1 0 4-4ring4.dat
-  [1,16,0,58,-110,4,0,0,0,0,4,0,1,0, ldraw_lib__4_4ring4()],
+  [1,16,0,58,-110,4,0,0,0,0,4,0,1,0, ldraw_lib__4_4ring4(realsolid)],
 ];
 module ldraw_lib__32346(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__32346(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__32346(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__32346(line=0.2);

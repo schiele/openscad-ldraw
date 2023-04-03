@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/4-4cylc.scad>
 use <s/41880s01.scad>
-function ldraw_lib__41880() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__41880(realsolid=false) = [
 // 0 Minifig Head Yoda with Curved Ears
 // 0 Name: 41880.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -18,14 +19,14 @@ function ldraw_lib__41880() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\41880s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__41880s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__41880s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\41880s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__41880s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__41880s01(realsolid)],
 // 
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -22 0 6 0 0 0 22 0 0 0 6 4-4cylc.dat
-  [1,16,0,-22,0,6,0,0,0,22,0,0,0,6, ldraw_lib__4_4cylc()],
+  [1,16,0,-22,0,6,0,0,0,22,0,0,0,6, ldraw_lib__4_4cylc(realsolid)],
 // 5 24 0 -22.4 -13 0 -21.9 -13.3 0.7 -22.8 -12.6 -0.7 -22.8 -12.6
   [5,24,0,-22.4,-13,0,-21.9,-13.3,0.7,-22.8,-12.6,-0.7,-22.8,-12.6],
 // 5 24 0 -23.5 -10.8 0 -23.1 -12 1.4 -23.6 -10.7 -1.4 -23.6 -10.7
@@ -170,5 +171,5 @@ function ldraw_lib__41880() = [
   [5,24,0,-27.644,-3.769,-0.7,-27.6,-3.9,-0.6,-27.1,-4.8,0,-28.4,-2.1],
 ];
 module ldraw_lib__41880(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__41880(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__41880(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__41880(line=0.2);

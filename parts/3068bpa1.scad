@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3068bs01.scad>
-function ldraw_lib__3068bpa1() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3068bpa1(realsolid=false) = [
 // 0 Tile  2 x  2 with Silver and Orange Circular Pattern
 // 0 Name: 3068bpa1.dat
 // 0 Author: Mikkel Bech Jensen [gaia]
@@ -17,7 +18,7 @@ function ldraw_lib__3068bpa1() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3068bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3068bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3068bs01(realsolid)],
 // 4 134 -13.482 0 0 -12.455 0 5.159 -16.14 0 6.685 -17.47 0 0
   [4,134,-13.482,0,0,-12.455,0,5.159,-16.14,0,6.685,-17.47,0,0],
 // 4 134 -12.455 0 -5.159 -13.482 0 0 -17.47 0 0 -16.14 0 -6.685
@@ -446,5 +447,5 @@ function ldraw_lib__3068bpa1() = [
   [3,16,7.285,0,-17.588,0,0,-19.037,20,0,-20],
 ];
 module ldraw_lib__3068bpa1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3068bpa1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3068bpa1(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3068bpa1(line=0.2);

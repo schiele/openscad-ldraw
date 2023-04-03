@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__4613857d() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4613857d(realsolid=false) = [
 // 0 Sticker  0.6 x  1.6 Left with Spirit of Luis & Eagle on DkRed
 // 0 Name: 4613857d.dat
 // 0 Author: Christian Neumann [Wesley]
@@ -19,7 +20,7 @@ function ldraw_lib__4613857d() = [
 // 
 // 
 // 1 320 0 -0.25 0 17.8 0 0 0 0.25 0 0 0 9 box5-12.dat
-  [1,320,0,-0.25,0,17.8,0,0,0,0.25,0,0,0,9, ldraw_lib__box5_12()],
+  [1,320,0,-0.25,0,17.8,0,0,0,0.25,0,0,0,9, ldraw_lib__box5_12(realsolid)],
 // 0 // sticker
 // 4 15 -15.65 -0.25 2.74 -15.58 -0.25 2.9 -15.7 -0.25 3 -15.9 -0.25 3
   [4,15,-15.65,-0.25,2.74,-15.58,-0.25,2.9,-15.7,-0.25,3,-15.9,-0.25,3],
@@ -2207,5 +2208,5 @@ function ldraw_lib__4613857d() = [
   [3,320,17.8,-0.25,9,14.71512,-0.25,4.47,14.97511,-0.25,3.43],
 ];
 module ldraw_lib__4613857d(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4613857d(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4613857d(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4613857d(line=0.2);

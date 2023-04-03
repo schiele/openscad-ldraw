@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <13756.scad>
 use <13760.scad>
-function ldraw_lib__13760c02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__13760c02(realsolid=false) = [
 // 0 Windscreen  2 x  6 x  2 with TransClear Glass (Complete)
 // 0 Name: 13760c02.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -18,10 +19,10 @@ function ldraw_lib__13760c02() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 13760.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__13760()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__13760(realsolid)],
 // 1 47 0 0 0 1 0 0 0 1 0 0 0 1 13756.dat
-  [1,47,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__13756()],
+  [1,47,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__13756(realsolid)],
 ];
 module ldraw_lib__13760c02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__13760c02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__13760c02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__13760c02(line=0.2);

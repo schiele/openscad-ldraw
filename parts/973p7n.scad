@@ -4,7 +4,8 @@ use <s/3070bp70a.scad>
 use <s/973p7ma.scad>
 use <s/973p7na.scad>
 use <s/973s01.scad>
-function ldraw_lib__973p7n() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__973p7n(realsolid=false) = [
 // 0 Minifig Torso w/ Leather Jacket, Badge, "POLICE" Back Pattern
 // 0 Name: 973p7n.dat
 // 0 Author: Nils Schmidt [BlackBrick89]
@@ -19,15 +20,15 @@ function ldraw_lib__973p7n() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01(realsolid)],
 // 1 7 0 -4 0 4.243 0 -4.243 0 -8 0 -4.243 0 -4.243 1-4cyli.dat
-  [1,7,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli()],
+  [1,7,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973p7na.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973p7na()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973p7na(realsolid)],
 // 1 82 8.89 12.19 -10 0.64 0 0 0 0 -0.64 0 1 0 s\3070bp70a.dat
-  [1,82,8.89,12.19,-10,0.64,0,0,0,0,-0.64,0,1,0, ldraw_lib__s__3070bp70a()],
+  [1,82,8.89,12.19,-10,0.64,0,0,0,0,-0.64,0,1,0, ldraw_lib__s__3070bp70a(realsolid)],
 // 1 16 -0.85 14.6 10 -0.4731 0 0 0 0 -0.446 0 -1 0 s\973p7ma.dat
-  [1,16,-0.85,14.6,10,-0.4731,0,0,0,0,-0.446,0,-1,0, ldraw_lib__s__973p7ma()],
+  [1,16,-0.85,14.6,10,-0.4731,0,0,0,0,-0.446,0,-1,0, ldraw_lib__s__973p7ma(realsolid)],
 // 4 15 5.6857 2.8243 10 6.7871 1.9072 10 7.4166 2.34 10 6.1637 3.5661 10
   [4,15,5.6857,2.8243,10,6.7871,1.9072,10,7.4166,2.34,10,6.1637,3.5661,10],
 // 4 15 4.3516 3.4138 10 5.6857 2.8243 10 6.1637 3.5661 10 4.7175 4.2052 10
@@ -374,5 +375,5 @@ function ldraw_lib__973p7n() = [
   [3,16,-14.345,2,10,-17.6,23,10,-19,29,10],
 ];
 module ldraw_lib__973p7n(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__973p7n(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__973p7n(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__973p7n(line=0.2);

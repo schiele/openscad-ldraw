@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__4615865a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4615865a(realsolid=false) = [
 // 0 Sticker  1.8 x  1.8 with Black/Red/Blue Badge and "POLICE"
 // 0 Name: 4615865a.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -16,7 +17,7 @@ function ldraw_lib__4615865a() = [
 // 
 // 0 // Box
 // 1 16 0 -0.25 0 18 0 0 0 0.25 0 0 0 18 box5-12.dat
-  [1,16,0,-0.25,0,18,0,0,0,0.25,0,0,0,18, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,18,0,0,0,0.25,0,0,0,18, ldraw_lib__box5_12(realsolid)],
 // 0 // White border
 // 4 15 -14.4 -0.25 -9 -14.4 -0.25 18 -18 -0.25 18 -18 -0.25 -18
   [4,15,-14.4,-0.25,-9,-14.4,-0.25,18,-18,-0.25,18,-18,-0.25,-18],
@@ -507,5 +508,5 @@ function ldraw_lib__4615865a() = [
   [4,0,8.68041,-0.25,12.7844,8.79975,-0.25,12.735,8.79975,-0.25,12.9038,8.631,-0.25,12.9038],
 ];
 module ldraw_lib__4615865a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4615865a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4615865a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4615865a(line=0.2);

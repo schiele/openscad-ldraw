@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <42022.scad>
-function ldraw_lib__41762() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__41762(realsolid=false) = [
 // 0 =Slope Brick Curved  6 x  1
 // 0 Name: 41762.dat
 // 0 Author: Chris Dee [cwdee]
@@ -22,9 +23,9 @@ function ldraw_lib__41762() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 42022.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__42022()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__42022(realsolid)],
 // 0
 ];
 module ldraw_lib__41762(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__41762(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__41762(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__41762(line=0.2);

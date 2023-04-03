@@ -5,7 +5,8 @@ use <../../p/48/4-4ring3.scad>
 use <../../p/48/4-4ring4.scad>
 use <../../p/48/4-4ring8.scad>
 use <../../p/48/4-4ring9.scad>
-function ldraw_lib__s__4201639s02a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__4201639s02a(realsolid=false) = [
 // 0 ~Pattern Train Logo 2002-2004 - Background
 // 0 Name: s\4201639s02a.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -22,23 +23,23 @@ function ldraw_lib__s__4201639s02a() = [
 // 
 // 
 // 1 16 0 0 0 0.4 0 0 0 0 -0.4 0 1 0 48\4-4ring3.dat
-  [1,16,0,0,0,0.4,0,0,0,0,-0.4,0,1,0, ldraw_lib__48__4_4ring3()],
+  [1,16,0,0,0,0.4,0,0,0,0,-0.4,0,1,0, ldraw_lib__48__4_4ring3(realsolid)],
 // 1 16 0 0 0 0.4 0 0 0 0 -0.4 0 1 0 48\4-4ring4.dat
-  [1,16,0,0,0,0.4,0,0,0,0,-0.4,0,1,0, ldraw_lib__48__4_4ring4()],
+  [1,16,0,0,0,0.4,0,0,0,0,-0.4,0,1,0, ldraw_lib__48__4_4ring4(realsolid)],
 // 1 16 0 0 0 0.25 0 0 0 0 -0.25 0 1 0 48\4-4ring8.dat
-  [1,16,0,0,0,0.25,0,0,0,0,-0.25,0,1,0, ldraw_lib__48__4_4ring8()],
+  [1,16,0,0,0,0.25,0,0,0,0,-0.25,0,1,0, ldraw_lib__48__4_4ring8(realsolid)],
 // 1 16 0 0 0 0.25 0 0 0 0 -0.25 0 1 0 48\4-4ring9.dat
-  [1,16,0,0,0,0.25,0,0,0,0,-0.25,0,1,0, ldraw_lib__48__4_4ring9()],
+  [1,16,0,0,0,0.25,0,0,0,0,-0.25,0,1,0, ldraw_lib__48__4_4ring9(realsolid)],
 // 1 16 0 0 0 0.25 0 0 0 0 -0.25 0 1 0 48\4-4rin10.dat
-  [1,16,0,0,0,0.25,0,0,0,0,-0.25,0,1,0, ldraw_lib__48__4_4rin10()],
+  [1,16,0,0,0,0.25,0,0,0,0,-0.25,0,1,0, ldraw_lib__48__4_4rin10(realsolid)],
 // 1 16 0 0 0 0 0 -4 -4 0 0 0 1 0 48\3-16ndis.dat
-  [1,16,0,0,0,0,0,-4,-4,0,0,0,1,0, ldraw_lib__48__3_16ndis()],
+  [1,16,0,0,0,0,0,-4,-4,0,0,0,1,0, ldraw_lib__48__3_16ndis(realsolid)],
 // 1 16 0 0 0 0 0 -4 4 0 0 0 1 0 48\3-16ndis.dat
-  [1,16,0,0,0,0,0,-4,4,0,0,0,1,0, ldraw_lib__48__3_16ndis()],
+  [1,16,0,0,0,0,0,-4,4,0,0,0,1,0, ldraw_lib__48__3_16ndis(realsolid)],
 // 1 16 0 0 0 0 0 4 -4 0 0 0 1 0 48\3-16ndis.dat
-  [1,16,0,0,0,0,0,4,-4,0,0,0,1,0, ldraw_lib__48__3_16ndis()],
+  [1,16,0,0,0,0,0,4,-4,0,0,0,1,0, ldraw_lib__48__3_16ndis(realsolid)],
 // 1 16 0 0 0 0 0 4 4 0 0 0 1 0 48\3-16ndis.dat
-  [1,16,0,0,0,0,0,4,4,0,0,0,1,0, ldraw_lib__48__3_16ndis()],
+  [1,16,0,0,0,0,0,4,4,0,0,0,1,0, ldraw_lib__48__3_16ndis(realsolid)],
 // 4 16 3.6956 1.5308 0 4 4 0 4.9 3.2 0 3.864 1.035 0
   [4,16,3.6956,1.5308,0,4,4,0,4.9,3.2,0,3.864,1.035,0],
 // 4 16 4.9 3.2 0 7.3 0.8 0 3.9107 0.8 0 3.864 1.035 0
@@ -73,5 +74,5 @@ function ldraw_lib__s__4201639s02a() = [
   [3,16,-6.8,3.2,0,-10,0,0,-10,4,0],
 ];
 module ldraw_lib__s__4201639s02a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__4201639s02a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__4201639s02a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__4201639s02a(line=0.2);

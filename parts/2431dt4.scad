@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <2431.scad>
 use <6258203j.scad>
-function ldraw_lib__2431dt4() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2431dt4(realsolid=false) = [
 // 0 Tile  1 x  4 with White License Plate "PEKH-0280" Sticker
 // 0 Name: 2431dt4.dat
 // 0 Author: Ulrich Röder [UR]
@@ -18,10 +19,10 @@ function ldraw_lib__2431dt4() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 2431.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2431()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2431(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 6258203j.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__6258203j()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__6258203j(realsolid)],
 ];
 module ldraw_lib__2431dt4(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2431dt4(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2431dt4(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2431dt4(line=0.2);

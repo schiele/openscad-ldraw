@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__6279911n() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6279911n(realsolid=false) = [
 // 0 Sticker  1.9 x  2.9 with Black "UNITED STATES"
 // 0 Name: 6279911n.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -17,7 +18,7 @@ function ldraw_lib__6279911n() = [
 // 
 // 
 // 1 16 0 -0.25 0 29 0 0 0 0.25 0 0 0 19 box5-12.dat
-  [1,16,0,-0.25,0,29,0,0,0,0.25,0,0,0,19, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,29,0,0,0,0.25,0,0,0,19, ldraw_lib__box5_12(realsolid)],
 // 
 // 4 0 -25.696 -.25 4.622 -23.848 -.25 5.234 -24 -.25 6 -26 -.25 6
   [4,0,-25.696,-.25,4.622,-23.848,-.25,5.234,-24,-.25,6,-26,-.25,6],
@@ -687,5 +688,5 @@ function ldraw_lib__6279911n() = [
   [3,15,16.3,-.25,-2.2,18.772,-.25,-3.155,19.4,-.25,-2.7],
 ];
 module ldraw_lib__6279911n(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6279911n(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6279911n(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6279911n(line=0.2);

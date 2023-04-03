@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <11650.scad>
 use <6157.scad>
-function ldraw_lib__12622() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__12622(realsolid=false) = [
 // 0 Car Base  4 x 10 with Mudguards and Integral Plates with Wheel Pins
 // 0 Name: 12622.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -18,12 +19,12 @@ function ldraw_lib__12622() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 11650.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__11650()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__11650(realsolid)],
 // 1 16 0 24 60 1 0 0 0 1 0 0 0 1 6157.dat
-  [1,16,0,24,60,1,0,0,0,1,0,0,0,1, ldraw_lib__6157()],
+  [1,16,0,24,60,1,0,0,0,1,0,0,0,1, ldraw_lib__6157(realsolid)],
 // 1 16 0 24 -60 1 0 0 0 1 0 0 0 1 6157.dat
-  [1,16,0,24,-60,1,0,0,0,1,0,0,0,1, ldraw_lib__6157()],
+  [1,16,0,24,-60,1,0,0,0,1,0,0,0,1, ldraw_lib__6157(realsolid)],
 ];
 module ldraw_lib__12622(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__12622(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__12622(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__12622(line=0.2);

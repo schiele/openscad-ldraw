@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__48__11_48con48() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__48__11_48con48(realsolid=false) = [
 // 0 Hi-Res Cone 48 x 0.2292
 // 0 Name: 48\11-48con48.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -63,5 +64,5 @@ function ldraw_lib__48__11_48con48() = [
 // 0 // Build by LDPartEditor (PrimGen 2.X)
 ];
 module ldraw_lib__48__11_48con48(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__48__11_48con48(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__48__11_48con48(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__48__11_48con48(line=0.2);

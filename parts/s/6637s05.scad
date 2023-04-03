@@ -2,7 +2,8 @@ use <../../lib.scad>
 use <../../p/3-16cylo.scad>
 use <../../p/3-16ndis.scad>
 use <../../p/rect.scad>
-function ldraw_lib__s__6637s05() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__6637s05(realsolid=false) = [
 // 0 ~Electric Technic Fiber Optics Element Cylinder - Detail Quarter
 // 0 Name: s\6637s05.dat
 // 0 Author: Michael Heidemann [mikeheide]
@@ -89,7 +90,7 @@ function ldraw_lib__s__6637s05() = [
 // 4 16 -3.696 0 2.488 -4 0 0 -4 -1 0 -3.696 -1 2.488
   [4,16,-3.696,0,2.488,-4,0,0,-4,-1,0,-3.696,-1,2.488],
 // 1 16 -2.4211 -0.5 2.488 -1.2749 0 0 0 0 -0.5 0 -1 0 rect.dat
-  [1,16,-2.4211,-0.5,2.488,-1.2749,0,0,0,0,-0.5,0,-1,0, ldraw_lib__rect()],
+  [1,16,-2.4211,-0.5,2.488,-1.2749,0,0,0,0,-0.5,0,-1,0, ldraw_lib__rect(realsolid)],
 // 4 16 0 3 2 0 3 3.2 -0.268 3 2.956 -0.495 3 2.263
   [4,16,0,3,2,0,3,3.2,-0.268,3,2.956,-0.495,3,2.263],
 // 3 16 0 3 2 -0.495 3 2.263 -0.5495 3 1.8908
@@ -106,11 +107,11 @@ function ldraw_lib__s__6637s05() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 4 0 -2 0 0 0 -5 0 0 0 2 3-16cylo.dat
-  [1,16,0,4,0,-2,0,0,0,-5,0,0,0,2, ldraw_lib__3_16cylo()],
+  [1,16,0,4,0,-2,0,0,0,-5,0,0,0,2, ldraw_lib__3_16cylo(realsolid)],
 // 1 16 0 4 0 -2 0 0 0 -1 0 0 0 2 3-16ndis.dat
-  [1,16,0,4,0,-2,0,0,0,-1,0,0,0,2, ldraw_lib__3_16ndis()],
+  [1,16,0,4,0,-2,0,0,0,-1,0,0,0,2, ldraw_lib__3_16ndis(realsolid)],
 // 1 16 0 -1 0 -2 0 0 0 1 0 0 0 2 3-16ndis.dat
-  [1,16,0,-1,0,-2,0,0,0,1,0,0,0,2, ldraw_lib__3_16ndis()],
+  [1,16,0,-1,0,-2,0,0,0,1,0,0,0,2, ldraw_lib__3_16ndis(realsolid)],
 // 
 // 5 24 -0.268 -1 2.956 -0.268 3 2.956 0 3 3.2 -0.495 3 2.263
   [5,24,-0.268,-1,2.956,-0.268,3,2.956,0,3,3.2,-0.495,3,2.263],
@@ -120,5 +121,5 @@ function ldraw_lib__s__6637s05() = [
   [5,24,-0.765,-1,1.848,-0.7654,4,1.8478,-0.5495,3,1.8908,-1.4142,4,1.4142],
 ];
 module ldraw_lib__s__6637s05(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__6637s05(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__6637s05(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__6637s05(line=0.2);

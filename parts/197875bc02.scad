@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__197875bc02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__197875bc02(realsolid=false) = [
 // 0 Sticker  0.8 x  1.9 with White "4010" (Formed Right)
 // 0 Name: 197875bc02.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -512,5 +513,5 @@ function ldraw_lib__197875bc02() = [
   [3,16,19,1.795,-8,18.1325,1.6415,-7.858,17.9908,1.6385,-8],
 ];
 module ldraw_lib__197875bc02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__197875bc02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__197875bc02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__197875bc02(line=0.2);

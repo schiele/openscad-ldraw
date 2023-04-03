@@ -8,7 +8,8 @@ use <../p/4-4ring1.scad>
 use <../p/4-4ring4.scad>
 use <../p/4-8sphe.scad>
 use <../p/8-8sphe.scad>
-function ldraw_lib__93550() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__93550(realsolid=false) = [
 // 0 Minifig Sword Rapier
 // 0 Name: 93550.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -25,21 +26,21 @@ function ldraw_lib__93550() = [
 // 
 // 
 // 1 16 0 8 0 -4 0 0 0 -14 0 0 0 4 4-4cylc.dat
-  [1,16,0,8,0,-4,0,0,0,-14,0,0,0,4, ldraw_lib__4_4cylc()],
+  [1,16,0,8,0,-4,0,0,0,-14,0,0,0,4, ldraw_lib__4_4cylc(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -6 0 8 0 0 0 5 0 0 0 8 4-4cylo.dat
-  [1,16,0,-6,0,8,0,0,0,5,0,0,0,8, ldraw_lib__4_4cylo()],
+  [1,16,0,-6,0,8,0,0,0,5,0,0,0,8, ldraw_lib__4_4cylo(realsolid)],
 // 1 16 0 -6 0 -4 0 0 0 -1 0 0 0 4 4-4ring1.dat
-  [1,16,0,-6,0,-4,0,0,0,-1,0,0,0,4, ldraw_lib__4_4ring1()],
+  [1,16,0,-6,0,-4,0,0,0,-1,0,0,0,4, ldraw_lib__4_4ring1(realsolid)],
 // 1 16 0 -1 0 10 0 0 0 1 0 0 0 10 4-4edge.dat
-  [1,16,0,-1,0,10,0,0,0,1,0,0,0,10, ldraw_lib__4_4edge()],
+  [1,16,0,-1,0,10,0,0,0,1,0,0,0,10, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 -1 0 -2 0 0 0 -1 0 0 0 2 4-4ring4.dat
-  [1,16,0,-1,0,-2,0,0,0,-1,0,0,0,2, ldraw_lib__4_4ring4()],
+  [1,16,0,-1,0,-2,0,0,0,-1,0,0,0,2, ldraw_lib__4_4ring4(realsolid)],
 // 1 16 0 -3 0 10 0 0 0 2 0 0 0 10 4-4cyli.dat
-  [1,16,0,-3,0,10,0,0,0,2,0,0,0,10, ldraw_lib__4_4cyli()],
+  [1,16,0,-3,0,10,0,0,0,2,0,0,0,10, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 -3 0 -10 0 0 0 -8 0 0 0 10 4-8sphe.dat
-  [1,16,0,-3,0,-10,0,0,0,-8,0,0,0,10, ldraw_lib__4_8sphe()],
+  [1,16,0,-3,0,-10,0,0,0,-8,0,0,0,10, ldraw_lib__4_8sphe(realsolid)],
 // 2 24 -2.25 -10.64 0 -2.08 -10.53 0.86
   [2,24,-2.25,-10.64,0,-2.08,-10.53,0.86],
 // 2 24 -2.08 -10.53 0.86 -1.59 -10.49 1.59
@@ -73,7 +74,7 @@ function ldraw_lib__93550() = [
 // 2 24 0 -10.64 -2.25 0.86 -10.53 -2.08
   [2,24,0,-10.64,-2.25,0.86,-10.53,-2.08],
 // 1 16 0 -10.45 0 -1.125 0 0 0 -64 0 0 0 1.125 4-4con1.dat
-  [1,16,0,-10.45,0,-1.125,0,0,0,-64,0,0,0,1.125, ldraw_lib__4_4con1()],
+  [1,16,0,-10.45,0,-1.125,0,0,0,-64,0,0,0,1.125, ldraw_lib__4_4con1(realsolid)],
 // 2 24 1.05 -73.79 0.43 0.8 -73.71 0.8
   [2,24,1.05,-73.79,0.43,0.8,-73.71,0.8],
 // 2 24 1.14 -73.75 0 1.05 -73.79 0.43
@@ -107,8 +108,8 @@ function ldraw_lib__93550() = [
 // 2 24 1.05 -73.79 -0.43 0.8 -73.71 -0.8
   [2,24,1.05,-73.79,-0.43,0.8,-73.71,-0.8],
 // 1 16 0 -75.5 0 2.125 0 0 0 2.125 0 0 0 2.125 8-8sphe.dat
-  [1,16,0,-75.5,0,2.125,0,0,0,2.125,0,0,0,2.125, ldraw_lib__8_8sphe()],
+  [1,16,0,-75.5,0,2.125,0,0,0,2.125,0,0,0,2.125, ldraw_lib__8_8sphe(realsolid)],
 ];
 module ldraw_lib__93550(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__93550(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__93550(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__93550(line=0.2);

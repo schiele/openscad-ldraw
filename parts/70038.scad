@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__70038() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__70038(realsolid=false) = [
 // 0 ~Spring for Technic Shock Absorber  6.5L
 // 0 Name: 70038.dat
 // 0 Author: Steve Bliss [sbliss]
@@ -3778,5 +3779,5 @@ function ldraw_lib__70038() = [
 // 0
 ];
 module ldraw_lib__70038(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__70038(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__70038(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__70038(line=0.2);

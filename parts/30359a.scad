@@ -4,7 +4,8 @@ use <../p/4-4cylo.scad>
 use <../p/4-4ring1.scad>
 use <../p/4-4ring4.scad>
 use <s/30359s01.scad>
-function ldraw_lib__30359a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__30359a(realsolid=false) = [
 // 0 Bar  1 x  8 with Brick  1 x  2 Curved Top End
 // 0 Name: 30359a.dat
 // 0 Author: John Van Zwieten [jvan]
@@ -29,19 +30,19 @@ function ldraw_lib__30359a() = [
 // 
 // 0 // Subparts
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\30359s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30359s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30359s01(realsolid)],
 // 0 // Primitives
 // 1 16 0 10 -40 4 0 0 0 0 4 0 -80 0 4-4cylo.dat
-  [1,16,0,10,-40,4,0,0,0,0,4,0,-80,0, ldraw_lib__4_4cylo()],
+  [1,16,0,10,-40,4,0,0,0,0,4,0,-80,0, ldraw_lib__4_4cylo(realsolid)],
 // 1 16 0 10 -120 1 0 0 0 0 1 0 -1 0 4-4ring4.dat
-  [1,16,0,10,-120,1,0,0,0,0,1,0,-1,0, ldraw_lib__4_4ring4()],
+  [1,16,0,10,-120,1,0,0,0,0,1,0,-1,0, ldraw_lib__4_4ring4(realsolid)],
 // 1 16 0 10 -120 5 0 0 0 0 5 0 -1 0 4-4ring1.dat
-  [1,16,0,10,-120,5,0,0,0,0,5,0,-1,0, ldraw_lib__4_4ring1()],
+  [1,16,0,10,-120,5,0,0,0,0,5,0,-1,0, ldraw_lib__4_4ring1(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 10 -124 6 0 0 0 0 6 0 -16 0 4-4cylc.dat
-  [1,16,0,10,-124,6,0,0,0,0,6,0,-16,0, ldraw_lib__4_4cylc()],
+  [1,16,0,10,-124,6,0,0,0,0,6,0,-16,0, ldraw_lib__4_4cylc(realsolid)],
 ];
 module ldraw_lib__30359a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__30359a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__30359a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__30359a(line=0.2);

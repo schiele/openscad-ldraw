@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3070bs01.scad>
-function ldraw_lib__3070bpb2() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3070bpb2(realsolid=false) = [
 // 0 Tile  1 x  1 with Joker Pattern
 // 0 Name: 3070bpb2.dat
 // 0 Author: Vincent Messenet [Cheenzo]
@@ -17,7 +18,7 @@ function ldraw_lib__3070bpb2() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3070bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3070bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3070bs01(realsolid)],
 // 
 // 4 11 0 0 -7.5 -.5 0 -4.95 -1.1 0 -4.8 -.383 0 -7.576
   [4,11,0,0,-7.5,-.5,0,-4.95,-1.1,0,-4.8,-.383,0,-7.576],
@@ -1131,5 +1132,5 @@ function ldraw_lib__3070bpb2() = [
   [3,16,7.8,0,7.4,10,0,10,7.35,0,7.65],
 ];
 module ldraw_lib__3070bpb2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3070bpb2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3070bpb2(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3070bpb2(line=0.2);

@@ -3,7 +3,8 @@ use <../p/1-4cylo.scad>
 use <../p/rect1.scad>
 use <../p/rect2p.scad>
 use <s/u9368s01.scad>
-function ldraw_lib__u9368() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__u9368(realsolid=false) = [
 // 0 ~Electric Powered Up Large Angular Motor Front Bottom
 // 0 Name: u9368.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -22,11 +23,11 @@ function ldraw_lib__u9368() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\u9368s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__u9368s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__u9368s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\u9368s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__u9368s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__u9368s01(realsolid)],
 // 1 16 0 8 55 -34 0 0 0 0 -1 0 -1 0 rect2p.dat
-  [1,16,0,8,55,-34,0,0,0,0,-1,0,-1,0, ldraw_lib__rect2p()],
+  [1,16,0,8,55,-34,0,0,0,0,-1,0,-1,0, ldraw_lib__rect2p(realsolid)],
 // 4 16 -32 7 28 -9 7 9 9 7 9 32 7 28
   [4,16,-32,7,28,-9,7,9,9,7,9,32,7,28],
 // 2 24 -32 -9 -27 32 -9 -27
@@ -40,9 +41,9 @@ function ldraw_lib__u9368() = [
 // 4 16 34 9 55 10.8 9 10.8 -10.8 9 10.8 -34 9 55
   [4,16,34,9,55,10.8,9,10.8,-10.8,9,10.8,-34,9,55],
 // 1 16 0 -4.5 -29 0 0 -50 -4.5 0 0 0 1 0 rect1.dat
-  [1,16,0,-4.5,-29,0,0,-50,-4.5,0,0,0,1,0, ldraw_lib__rect1()],
+  [1,16,0,-4.5,-29,0,0,-50,-4.5,0,0,0,1,0, ldraw_lib__rect1(realsolid)],
 // 1 16 50 0 -20 0 -100 0 9 0 0 0 0 -9 1-4cylo.dat
-  [1,16,50,0,-20,0,-100,0,9,0,0,0,0,-9, ldraw_lib__1_4cylo()],
+  [1,16,50,0,-20,0,-100,0,9,0,0,0,0,-9, ldraw_lib__1_4cylo(realsolid)],
 // 4 16 50 9 -20 -50 9 -20 -50 9 -11 50 9 -11
   [4,16,50,9,-20,-50,9,-20,-50,9,-11,50,9,-11],
 // 2 24 15 -8 -25 -15 -8 -25
@@ -52,9 +53,9 @@ function ldraw_lib__u9368() = [
 // 4 16 -30 -8 -27 30 -8 -27 28 -8 -25 -28 -8 -25
   [4,16,-30,-8,-27,30,-8,-27,28,-8,-25,-28,-8,-25],
 // 1 16 0 -1 -25 0 0 -28 7 0 0 0 -1 0 rect1.dat
-  [1,16,0,-1,-25,0,0,-28,7,0,0,0,-1,0, ldraw_lib__rect1()],
+  [1,16,0,-1,-25,0,0,-28,7,0,0,0,-1,0, ldraw_lib__rect1(realsolid)],
 // 1 16 0 5.5 -25.5 0 0 -32 1.5 1 0 1.5 0 0 rect1.dat
-  [1,16,0,5.5,-25.5,0,0,-32,1.5,1,0,1.5,0,0, ldraw_lib__rect1()],
+  [1,16,0,5.5,-25.5,0,0,-32,1.5,1,0,1.5,0,0, ldraw_lib__rect1(realsolid)],
 // 4 16 32 7 -24 9 7 -9 -9 7 -9 -32 7 -24
   [4,16,32,7,-24,9,7,-9,-9,7,-9,-32,7,-24],
 // 4 16 30 -8 -27 -30 -8 -27 -32 -9 -27 32 -9 -27
@@ -63,5 +64,5 @@ function ldraw_lib__u9368() = [
   [4,16,49,9,-10.8,50,9,-11,-50,9,-11,-49,9,-10.8],
 ];
 module ldraw_lib__u9368(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__u9368(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__u9368(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__u9368(line=0.2);

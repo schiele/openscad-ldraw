@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/30119s01.scad>
-function ldraw_lib__30119p6u() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__30119p6u(realsolid=false) = [
 // 0 Wing  8 x  4 -  2 x  3.333 Down with UFO Pattern
 // 0 Name: 30119p6u.dat
 // 0 Author: Nils Schmidt [BlackBrick89]
@@ -15,7 +16,7 @@ function ldraw_lib__30119p6u() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\30119s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30119s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30119s01(realsolid)],
 // 4 16 20.5231 36.1622 -70.2253 20.207 36.5136 -70.7133 21.3866 36.7164 -70.995 21.0705 35.9593 -69.9435
   [4,16,20.5231,36.1622,-70.2253,20.207,36.5136,-70.7133,21.3866,36.7164,-70.995,21.0705,35.9593,-69.9435],
 // 4 16 21.7027 35.9593 -69.9435 21.0705 35.9593 -69.9435 21.3866 36.7164 -70.995 22.2502 36.1622 -70.2253
@@ -2388,5 +2389,5 @@ function ldraw_lib__30119p6u() = [
   [4,16,-0.4562,67.5316,-113.7939,-0.0516,67.5672,-113.8433,-0.13,67.4172,-113.635,-0.4581,67.4172,-113.635],
 ];
 module ldraw_lib__30119p6u(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__30119p6u(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__30119p6u(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__30119p6u(line=0.2);

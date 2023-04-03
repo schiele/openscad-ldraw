@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4cylc3.scad>
 use <../p/4-4ering.scad>
 use <../p/type-swiss721bt-bold-n6.scad>
-function ldraw_lib__190775a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__190775a(realsolid=false) = [
 // 0 Sticker  3.1 x  3.1 Round with Black "6" on White
 // 0 Name: 190775a.dat
 // 0 Author: Donald Sutter [technog]
@@ -32,11 +33,11 @@ function ldraw_lib__190775a() = [
 // 
 // 
 // 1 16 0 0 0 31 0 0 0 -0.25 0 0 0 31 4-4cylc3.dat
-  [1,16,0,0,0,31,0,0,0,-0.25,0,0,0,31, ldraw_lib__4_4cylc3()],
+  [1,16,0,0,0,31,0,0,0,-0.25,0,0,0,31, ldraw_lib__4_4cylc3(realsolid)],
 // 1 15 0 -0.25 0 31 0 0 0 1 0 0 0 31 4-4ering.dat
-  [1,15,0,-0.25,0,31,0,0,0,1,0,0,0,31, ldraw_lib__4_4ering()],
+  [1,15,0,-0.25,0,31,0,0,0,1,0,0,0,31, ldraw_lib__4_4ering(realsolid)],
 // 1 15 0 -.25 0 48 0 0 0 1 0 0 0 48 type-swiss721bt-bold-n6.dat
-  [1,15,0,-.25,0,48,0,0,0,1,0,0,0,48, ldraw_lib__type_swiss721bt_bold_n6()],
+  [1,15,0,-.25,0,48,0,0,0,1,0,0,0,48, ldraw_lib__type_swiss721bt_bold_n6(realsolid)],
 // 3 15 0 -.25 31 -11.8637 -.25 28.6409 11.8637 -.25 28.6409
   [3,15,0,-.25,31,-11.8637,-.25,28.6409,11.8637,-.25,28.6409],
 // 4 15 16.8 -.25 24 11.8637 -.25 28.6409 -11.8637 -.25 28.6409 -16.8 -.25 24
@@ -67,5 +68,5 @@ function ldraw_lib__190775a() = [
   [3,15,16.8,-.25,24,21.9201,-.25,21.9201,11.8637,-.25,28.6409],
 ];
 module ldraw_lib__190775a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__190775a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__190775a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__190775a(line=0.2);

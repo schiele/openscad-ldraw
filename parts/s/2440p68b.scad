@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__2440p68b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__2440p68b(realsolid=false) = [
 // 0 ~Hinge  6 x  3 Radar/Blade/Spoiler/Panel - 1/4 Radar Background
 // 0 Name: s\2440p68b.dat
 // 0 Author: Franklin W. Cain [fwcain]
@@ -169,5 +170,5 @@ function ldraw_lib__s__2440p68b() = [
 // 0
 ];
 module ldraw_lib__s__2440p68b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__2440p68b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__2440p68b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__2440p68b(line=0.2);

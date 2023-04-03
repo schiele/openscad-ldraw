@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/u9487s01.scad>
-function ldraw_lib__u9487() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__u9487(realsolid=false) = [
 // 0 ~Technic Linear Actuator 12 x  2 x  2 Body
 // 0 Name: u9487.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -17,13 +18,13 @@ function ldraw_lib__u9487() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\u9487s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__u9487s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__u9487s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\u9487s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__u9487s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__u9487s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 -1 0 0 0 1 s\u9487s01.dat
-  [1,16,0,0,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__s__u9487s01()],
+  [1,16,0,0,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__s__u9487s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 -1 0 0 0 1 s\u9487s01.dat
-  [1,16,0,0,0,-1,0,0,0,-1,0,0,0,1, ldraw_lib__s__u9487s01()],
+  [1,16,0,0,0,-1,0,0,0,-1,0,0,0,1, ldraw_lib__s__u9487s01(realsolid)],
 // 
 // 5 24 0 19 0 0 19 27 -7.271 17.554 27 7.271 17.554 27
   [5,24,0,19,0,0,19,27,-7.271,17.554,27,7.271,17.554,27],
@@ -59,5 +60,5 @@ function ldraw_lib__u9487() = [
   [5,24,0,-16,27,0,-16,0,-6.123,-14.782,0,6.123,-14.782,0],
 ];
 module ldraw_lib__u9487(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__u9487(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__u9487(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__u9487(line=0.2);

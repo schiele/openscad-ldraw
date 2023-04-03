@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <4740.scad>
-function ldraw_lib__71874() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__71874(realsolid=false) = [
 // 0 ~_Dish  2 x  2 Inverted Chrome (Obsolete)
 // 0 Name: 71874.dat
 // 0 Author: Franklin W. Cain [fwcain]
@@ -24,8 +25,8 @@ function ldraw_lib__71874() = [
 // 
 // 
 // 1 383 0 0 0 1 0 0 0 1 0 0 0 1 4740.dat
-  [1,383,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4740()],
+  [1,383,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4740(realsolid)],
 ];
 module ldraw_lib__71874(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__71874(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__71874(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__71874(line=0.2);

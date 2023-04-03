@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box.scad>
-function ldraw_lib__6202() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6202(realsolid=false) = [
 // 0 ~Glass for Window  1 x  4 x  6
 // 0 Name: 6202.dat
 // 0 Author: James Jessiman
@@ -20,8 +21,8 @@ function ldraw_lib__6202() = [
 // 
 // 
 // 1 16 0 70 -4 36 0 0 0 66 0 0 0 2 box.dat
-  [1,16,0,70,-4,36,0,0,0,66,0,0,0,2, ldraw_lib__box()],
+  [1,16,0,70,-4,36,0,0,0,66,0,0,0,2, ldraw_lib__box(realsolid)],
 ];
 module ldraw_lib__6202(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6202(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6202(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6202(line=0.2);

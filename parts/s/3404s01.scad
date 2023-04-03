@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/box2-7.scad>
 use <../../p/rect1.scad>
-function ldraw_lib__s__3404s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__3404s01(realsolid=false) = [
 // 0 ~Turntable  4 x  4 Top Underside Rib Half
 // 0 Name: s\3404s01.dat
 // 0 Author: Max Martin Richter [MMR1988]
@@ -21,19 +22,19 @@ function ldraw_lib__s__3404s01() = [
   [2,24,37.6764,9,1.875,37.8,9,0],
 // 
 // 1 16 17.8136 9 0.9375 -3 0 0.1864 0 -1 0 0 0 -0.9375 rect1.dat
-  [1,16,17.8136,9,0.9375,-3,0,0.1864,0,-1,0,0,0,-0.9375, ldraw_lib__rect1()],
+  [1,16,17.8136,9,0.9375,-3,0,0.1864,0,-1,0,0,0,-0.9375, ldraw_lib__rect1(realsolid)],
 // 
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 17.01455 6.5 4.95585 0 3 0.61265 -2.5 0 0 0 0 -3.08085 box2-7.dat
-  [1,16,17.01455,6.5,4.95585,0,3,0.61265,-2.5,0,0,0,0,-3.08085, ldraw_lib__box2_7()],
+  [1,16,17.01455,6.5,4.95585,0,3,0.61265,-2.5,0,0,0,0,-3.08085, ldraw_lib__box2_7(realsolid)],
 // 2 24 14.6272 4 1.875 14.6272 9 1.875
   [2,24,14.6272,4,1.875,14.6272,9,1.875],
 // 
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 30.2714 6.5 5.6734 0 0.7553 -6.6496 -2.5 0 0 0 -3.7984 0 box2-7.dat
-  [1,16,30.2714,6.5,5.6734,0,0.7553,-6.6496,-2.5,0,0,0,-3.7984,0, ldraw_lib__box2_7()],
+  [1,16,30.2714,6.5,5.6734,0,0.7553,-6.6496,-2.5,0,0,0,-3.7984,0, ldraw_lib__box2_7(realsolid)],
 // 2 24 37.6764 9 1.875 37.6764 4 1.875
   [2,24,37.6764,9,1.875,37.6764,4,1.875],
 // 
@@ -43,5 +44,5 @@ function ldraw_lib__s__3404s01() = [
   [5,24,19.4015,4,8.0364,19.4015,9,8.0364,14.8495,9,14.8498,20.6271,8.25,1.875],
 ];
 module ldraw_lib__s__3404s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__3404s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__3404s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__3404s01(line=0.2);

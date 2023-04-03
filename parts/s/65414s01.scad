@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__65414s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__65414s01(realsolid=false) = [
 // 0 ~Technic Differential Casing - Clutch Tooth
 // 0 Name: s\65414s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -67,5 +68,5 @@ function ldraw_lib__s__65414s01() = [
   [2,24,-0.5,13.718,-9.4,0.5,13.718,-9.4],
 ];
 module ldraw_lib__s__65414s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__65414s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__65414s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__65414s01(line=0.2);

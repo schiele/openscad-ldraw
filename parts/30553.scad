@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/1-4ring2.scad>
 use <s/30552s01.scad>
 use <s/480s02.scad>
-function ldraw_lib__30553() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__30553(realsolid=false) = [
 // 0 Hinge Arm Locking with Dual Finger and Axlehole
 // 0 Name: 30553.dat
 // 0 Author: Franklin W. Cain [fwcain]
@@ -27,13 +28,13 @@ function ldraw_lib__30553() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\480s02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__480s02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__480s02(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 -1 s\30552s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__30552s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__30552s01(realsolid)],
 // 1 16 0 0 0 2.12132 0 -2.12132 -2.12132 0 -2.12132 0 1 0 1-4ring2.dat
-  [1,16,0,0,0,2.12132,0,-2.12132,-2.12132,0,-2.12132,0,1,0, ldraw_lib__1_4ring2()],
+  [1,16,0,0,0,2.12132,0,-2.12132,-2.12132,0,-2.12132,0,1,0, ldraw_lib__1_4ring2(realsolid)],
 // 1 16 0 0 0 -2.12132 0 2.12132 2.12132 0 2.12132 0 1 0 1-4ring2.dat
-  [1,16,0,0,0,-2.12132,0,2.12132,2.12132,0,2.12132,0,1,0, ldraw_lib__1_4ring2()],
+  [1,16,0,0,0,-2.12132,0,2.12132,2.12132,0,2.12132,0,1,0, ldraw_lib__1_4ring2(realsolid)],
 // 3 16 6.364 -6.364 0 6.607 -6 0 6 -6 0
   [3,16,6.364,-6.364,0,6.607,-6,0,6,-6,0],
 // 3 16 -6 -6 0 -6.607 -6 0 -6.364 -6.364 0
@@ -44,5 +45,5 @@ function ldraw_lib__30553() = [
   [3,16,-6.364,6.364,0,-6.607,6,0,-6,6,0],
 ];
 module ldraw_lib__30553(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__30553(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__30553(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__30553(line=0.2);

@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/2-4cyls.scad>
 use <../p/3-8cyli.scad>
 use <s/2698s01.scad>
-function ldraw_lib__2698p02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2698p02(realsolid=false) = [
 // 0 Technic Action Figure Torso with Orca Pattern
 // 0 Name: 2698p02.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -20,15 +21,15 @@ function ldraw_lib__2698p02() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2698s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2698s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2698s01(realsolid)],
 // 1 16 -15 -46 0 0 -4 0 8.48528 0 -8.48528 -8.48528 0 -8.48528 3-8cyli.dat
-  [1,16,-15,-46,0,0,-4,0,8.48528,0,-8.48528,-8.48528,0,-8.48528, ldraw_lib__3_8cyli()],
+  [1,16,-15,-46,0,0,-4,0,8.48528,0,-8.48528,-8.48528,0,-8.48528, ldraw_lib__3_8cyli(realsolid)],
 // 1 16 -19 -46 0 0 -3 0 12 0 0 0 0 -12 2-4cyls.dat
-  [1,16,-19,-46,0,0,-3,0,12,0,0,0,0,-12, ldraw_lib__2_4cyls()],
+  [1,16,-19,-46,0,0,-3,0,12,0,0,0,0,-12, ldraw_lib__2_4cyls(realsolid)],
 // 1 16 15 -46 0 0 4 0 8.48528 0 -8.48528 -8.48528 0 -8.48528 3-8cyli.dat
-  [1,16,15,-46,0,0,4,0,8.48528,0,-8.48528,-8.48528,0,-8.48528, ldraw_lib__3_8cyli()],
+  [1,16,15,-46,0,0,4,0,8.48528,0,-8.48528,-8.48528,0,-8.48528, ldraw_lib__3_8cyli(realsolid)],
 // 1 16 19 -46 0 0 3 0 12 0 0 0 0 -12 2-4cyls.dat
-  [1,16,19,-46,0,0,3,0,12,0,0,0,0,-12, ldraw_lib__2_4cyls()],
+  [1,16,19,-46,0,0,3,0,12,0,0,0,0,-12, ldraw_lib__2_4cyls(realsolid)],
 // 4 8 -15 -4 -13.826 -20 -4 -13.826 -20 0 -14 -15 0 -14
   [4,8,-15,-4,-13.826,-20,-4,-13.826,-20,0,-14,-15,0,-14],
 // 4 1 -15 -11.333 -13.507 -20 -11.5 -13.5 -20 -9 -13.608 -15 -8.833 -13.616
@@ -647,5 +648,5 @@ function ldraw_lib__2698p02() = [
   [5,24,15,-54.486,-8.485,5,-54.486,-8.485,-1,-52.592,-9.75,9,-57.086,-4.592],
 ];
 module ldraw_lib__2698p02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2698p02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2698p02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2698p02(line=0.2);

@@ -6,7 +6,8 @@ use <../p/box4.scad>
 use <../p/box5.scad>
 use <s/2547s01.scad>
 use <../p/stud3a.scad>
-function ldraw_lib__2547b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2547b(realsolid=false) = [
 // 0 Animal Shark Body Type 2
 // 0 Name: 2547b.dat
 // 0 Author: Andy Westrate [westrate]
@@ -25,22 +26,22 @@ function ldraw_lib__2547b() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2547s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2547s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2547s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\2547s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__2547s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__2547s01(realsolid)],
 // 
 // 1 16 0 -4 0 1 0 0 0 -1 0 0 0 1 stud3a.dat
-  [1,16,0,-4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud3a()],
+  [1,16,0,-4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud3a(realsolid)],
 // 1 16 0 -5 0 4 0 0 0 1 0 0 0 4 4-4cyli.dat
-  [1,16,0,-5,0,4,0,0,0,1,0,0,0,4, ldraw_lib__4_4cyli()],
+  [1,16,0,-5,0,4,0,0,0,1,0,0,0,4, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 -5 0 4 0 0 0 1 0 0 0 4 4-4edge.dat
-  [1,16,0,-5,0,4,0,0,0,1,0,0,0,4, ldraw_lib__4_4edge()],
+  [1,16,0,-5,0,4,0,0,0,1,0,0,0,4, ldraw_lib__4_4edge(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 0 6 0 0 0 -5 0 0 0 16 box5.dat
-  [1,16,0,0,0,6,0,0,0,-5,0,0,0,16, ldraw_lib__box5()],
+  [1,16,0,0,0,6,0,0,0,-5,0,0,0,16, ldraw_lib__box5(realsolid)],
 // 1 16 0 0 0 10 0 0 0 -5.13 0 0 0 20 box4.dat
-  [1,16,0,0,0,10,0,0,0,-5.13,0,0,0,20, ldraw_lib__box4()],
+  [1,16,0,0,0,10,0,0,0,-5.13,0,0,0,20, ldraw_lib__box4(realsolid)],
 // 4 16 6 0 16 -6 0 16 -10 0 20 10 0 20
   [4,16,6,0,16,-6,0,16,-10,0,20,10,0,20],
 // 4 16 -6 0 -16 6 0 -16 10 0 -20.01 -10 0 -20
@@ -51,17 +52,17 @@ function ldraw_lib__2547b() = [
   [4,16,-6,0,16,-6,0,-16,-10,0,-20,-10,0,20],
 // 
 // 1 16 0 -5.25 30 2 0 0 0 -1 0 0 0 2 4-4ring2.dat
-  [1,16,0,-5.25,30,2,0,0,0,-1,0,0,0,2, ldraw_lib__4_4ring2()],
+  [1,16,0,-5.25,30,2,0,0,0,-1,0,0,0,2, ldraw_lib__4_4ring2(realsolid)],
 // 1 16 0 -5.25 30 4 0 0 0 1 0 0 0 4 4-4edge.dat
-  [1,16,0,-5.25,30,4,0,0,0,1,0,0,0,4, ldraw_lib__4_4edge()],
+  [1,16,0,-5.25,30,4,0,0,0,1,0,0,0,4, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 -5.25 30 6 0 0 0 1 0 0 0 6 4-4edge.dat
-  [1,16,0,-5.25,30,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4edge()],
+  [1,16,0,-5.25,30,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4edge(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -5.25 30 4 0 0 0 -19.47 0 0 0 4 4-4cyli.dat
-  [1,16,0,-5.25,30,4,0,0,0,-19.47,0,0,0,4, ldraw_lib__4_4cyli()],
+  [1,16,0,-5.25,30,4,0,0,0,-19.47,0,0,0,4, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 -5.25 30 6 0 0 0 -19.47 0 0 0 6 4-4cyli.dat
-  [1,16,0,-5.25,30,6,0,0,0,-19.47,0,0,0,6, ldraw_lib__4_4cyli()],
+  [1,16,0,-5.25,30,6,0,0,0,-19.47,0,0,0,6, ldraw_lib__4_4cyli(realsolid)],
 // 4 16 1.53 -24.72 33.69 2.83 -24.72 32.83 2.83 -25.11 32.83 1.53 -25 33.69
   [4,16,1.53,-24.72,33.69,2.83,-24.72,32.83,2.83,-25.11,32.83,1.53,-25,33.69],
 // 4 16 0 -24.72 34 1.53 -24.72 33.69 1.53 -25 33.69 0 -24.97 34
@@ -256,5 +257,5 @@ function ldraw_lib__2547b() = [
 // 0
 ];
 module ldraw_lib__2547b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2547b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2547b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2547b(line=0.2);

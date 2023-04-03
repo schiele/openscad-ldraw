@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <3684.scad>
-function ldraw_lib__30499() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__30499(realsolid=false) = [
 // 0 =Slope Brick 75  2 x  2 x  3
 // 0 Name: 30499.dat
 // 0 Author: Chris Dee [cwdee]
@@ -21,9 +22,9 @@ function ldraw_lib__30499() = [
 // 0 // Alias of 3684
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 3684.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3684()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3684(realsolid)],
 // 0
 ];
 module ldraw_lib__30499(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__30499(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__30499(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__30499(line=0.2);

@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4con2.scad>
 use <../p/4-4disc.scad>
 use <../p/stud4.scad>
-function ldraw_lib__87995() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__87995(realsolid=false) = [
 // 0 Minifig Hair Bubble Style (Afro)
 // 0 Name: 87995.dat
 // 0 Author: Stan Isachenko [angmarec]
@@ -23,13 +24,13 @@ function ldraw_lib__87995() = [
 // 
 // 
 // 1 16 0 -4 0 1 0 0 0 -1 0 0 0 -1 stud4.dat
-  [1,16,0,-4,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__stud4()],
+  [1,16,0,-4,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__stud4(realsolid)],
 // 1 16 0 -4 0 6 0 0 0 -1 0 0 0 6 4-4disc.dat
-  [1,16,0,-4,0,6,0,0,0,-1,0,0,0,6, ldraw_lib__4_4disc()],
+  [1,16,0,-4,0,6,0,0,0,-1,0,0,0,6, ldraw_lib__4_4disc(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 2 0 4 0 0 0 -6 0 0 0 4 4-4con2.dat
-  [1,16,0,2,0,4,0,0,0,-6,0,0,0,4, ldraw_lib__4_4con2()],
+  [1,16,0,2,0,4,0,0,0,-6,0,0,0,4, ldraw_lib__4_4con2(realsolid)],
 // 3 16 -13 4 0 -12 2 0 -11.24 4.273 -6.493
   [3,16,-13,4,0,-12,2,0,-11.24,4.273,-6.493],
 // 3 16 -11.0868 2 4.5924 -12 2 0 -13 4 0
@@ -21535,5 +21536,5 @@ function ldraw_lib__87995() = [
   [5,24,-9.87,-4.489,-14.47,-9.919,-5.65,-13.972,-10.843,-5.124,-13.928,-8.302,-5.769,-13.538],
 ];
 module ldraw_lib__87995(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__87995(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__87995(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__87995(line=0.2);

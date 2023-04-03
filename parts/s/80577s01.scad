@@ -5,7 +5,8 @@ use <../../p/4-4disc.scad>
 use <../../p/4-4edge.scad>
 use <../../p/5-16cyli.scad>
 use <../../p/stud4.scad>
-function ldraw_lib__s__80577s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__80577s01(realsolid=false) = [
 // 0 ~Minifig Hair Long Wavy with Knit Ski Cap - Hair
 // 0 Name: s\80577s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -20,27 +21,27 @@ function ldraw_lib__s__80577s01() = [
 // 
 // 
 // 1 16 0 -4 0 -1 0 0 0 -1 0 0 0 1 stud4.dat
-  [1,16,0,-4,0,-1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4()],
+  [1,16,0,-4,0,-1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 3 0 4.33333 0 0 0 -7 0 0 0 4.33333 4-4con2.dat
-  [1,16,0,3,0,4.33333,0,0,0,-7,0,0,0,4.33333, ldraw_lib__4_4con2()],
+  [1,16,0,3,0,4.33333,0,0,0,-7,0,0,0,4.33333, ldraw_lib__4_4con2(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 3 0 13 0 0 0 3 0 0 0 13 4-4cyli.dat
-  [1,16,0,3,0,13,0,0,0,3,0,0,0,13, ldraw_lib__4_4cyli()],
+  [1,16,0,3,0,13,0,0,0,3,0,0,0,13, ldraw_lib__4_4cyli(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 6 0 0 0 13 0 11 0 13 0 0 5-16cyli.dat
-  [1,16,0,6,0,0,0,13,0,11,0,13,0,0, ldraw_lib__5_16cyli()],
+  [1,16,0,6,0,0,0,13,0,11,0,13,0,0, ldraw_lib__5_16cyli(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 6 0 0 0 -13 0 11 0 13 0 0 5-16cyli.dat
-  [1,16,0,6,0,0,0,-13,0,11,0,13,0,0, ldraw_lib__5_16cyli()],
+  [1,16,0,6,0,0,0,-13,0,11,0,13,0,0, ldraw_lib__5_16cyli(realsolid)],
 // 1 16 0 -4 0 8.66667 0 0 0 -1 0 0 0 8.66667 4-4edge.dat
-  [1,16,0,-4,0,8.66667,0,0,0,-1,0,0,0,8.66667, ldraw_lib__4_4edge()],
+  [1,16,0,-4,0,8.66667,0,0,0,-1,0,0,0,8.66667, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 -4 0 8.66667 0 0 0 -1 0 0 0 8.66667 4-4disc.dat
-  [1,16,0,-4,0,8.66667,0,0,0,-1,0,0,0,8.66667, ldraw_lib__4_4disc()],
+  [1,16,0,-4,0,8.66667,0,0,0,-1,0,0,0,8.66667, ldraw_lib__4_4disc(realsolid)],
 // 3 16 5.45 28.95 12.02 2.04 30.085 13.01 4.37 30.73 12.47
   [3,16,5.45,28.95,12.02,2.04,30.085,13.01,4.37,30.73,12.47],
 // 3 16 5.45 28.95 12.02 2.125 26.835 12.96 2.04 30.085 13.01
@@ -22335,5 +22336,5 @@ function ldraw_lib__s__80577s01() = [
   [5,24,15.46,17.74,-7.77,16.25,17.88,-6.94,14.81,17.85,-8.51,16.16,16.5,-6.67],
 ];
 module ldraw_lib__s__80577s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__80577s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__80577s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__80577s01(line=0.2);

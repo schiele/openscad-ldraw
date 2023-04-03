@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <60641.scad>
-function ldraw_lib__60640() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__60640(realsolid=false) = [
 // 0 Figure Troll Hand Right
 // 0 Name: 60640.dat
 // 0 Author: Andy Westrate [westrate]
@@ -17,8 +18,8 @@ function ldraw_lib__60640() = [
 // 
 // 
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 60641.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__60641()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__60641(realsolid)],
 ];
 module ldraw_lib__60640(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__60640(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__60640(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__60640(line=0.2);

@@ -2,7 +2,8 @@ use <../lib.scad>
 use <3003.scad>
 use <../p/4-4edge.scad>
 use <../p/connect.scad>
-function ldraw_lib__4730() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4730(realsolid=false) = [
 // 0 Brick  2 x  2 with Pin
 // 0 Name: 4730.dat
 // 0 Author: James Jessiman
@@ -20,14 +21,14 @@ function ldraw_lib__4730() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 3003.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3003()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3003(realsolid)],
 // 1 16 20 10 0 0 1 0 8 0 0 0 0 8 4-4edge.dat
-  [1,16,20,10,0,0,1,0,8,0,0,0,0,8, ldraw_lib__4_4edge()],
+  [1,16,20,10,0,0,1,0,8,0,0,0,0,8, ldraw_lib__4_4edge(realsolid)],
 // 1 16 20 10 0 0 1 0 4 0 0 0 0 4 4-4edge.dat
-  [1,16,20,10,0,0,1,0,4,0,0,0,0,4, ldraw_lib__4_4edge()],
+  [1,16,20,10,0,0,1,0,4,0,0,0,0,4, ldraw_lib__4_4edge(realsolid)],
 // 1 16 20 10 0 0 -1 0 0 0 1 1 0 0 connect.dat
-  [1,16,20,10,0,0,-1,0,0,0,1,1,0,0, ldraw_lib__connect()],
+  [1,16,20,10,0,0,-1,0,0,0,1,1,0,0, ldraw_lib__connect(realsolid)],
 ];
 module ldraw_lib__4730(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4730(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4730(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4730(line=0.2);

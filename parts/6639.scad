@@ -8,7 +8,8 @@ use <../p/4-4ring6.scad>
 use <../p/axlehol2.scad>
 use <../p/axlehole.scad>
 use <../p/bump5000.scad>
-function ldraw_lib__6639() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6639(realsolid=false) = [
 // 0 Electric Technic Fiber Optics Element - Axis
 // 0 Name: 6639.dat
 // 0 Author: Remco Braak [remco1974]
@@ -30,39 +31,39 @@ function ldraw_lib__6639() = [
 // 
 // 
 // 1 16 0 0 -20 1 0 0 0 0 1 0 40 0 axlehole.dat
-  [1,16,0,0,-20,1,0,0,0,0,1,0,40,0, ldraw_lib__axlehole()],
+  [1,16,0,0,-20,1,0,0,0,0,1,0,40,0, ldraw_lib__axlehole(realsolid)],
 // 1 16 0 0 -20 1 0 0 0 0 1 0 1 0 axlehol2.dat
-  [1,16,0,0,-20,1,0,0,0,0,1,0,1,0, ldraw_lib__axlehol2()],
+  [1,16,0,0,-20,1,0,0,0,0,1,0,1,0, ldraw_lib__axlehol2(realsolid)],
 // 1 16 0 0 20 1 0 0 0 0 1 0 1 0 axlehol2.dat
-  [1,16,0,0,20,1,0,0,0,0,1,0,1,0, ldraw_lib__axlehol2()],
+  [1,16,0,0,20,1,0,0,0,0,1,0,1,0, ldraw_lib__axlehol2(realsolid)],
 // 1 16 0 0 -20 1 0 0 0 0 1 0 1 0 4-4ring6.dat
-  [1,16,0,0,-20,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4ring6()],
+  [1,16,0,0,-20,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4ring6(realsolid)],
 // 1 16 0 0 20 1 0 0 0 0 1 0 -1 0 4-4ring6.dat
-  [1,16,0,0,20,1,0,0,0,0,1,0,-1,0, ldraw_lib__4_4ring6()],
+  [1,16,0,0,20,1,0,0,0,0,1,0,-1,0, ldraw_lib__4_4ring6(realsolid)],
 // 1 16 0 0 -20 7 0 0 0 0 7 0 6 0 4-4cylo.dat
-  [1,16,0,0,-20,7,0,0,0,0,7,0,6,0, ldraw_lib__4_4cylo()],
+  [1,16,0,0,-20,7,0,0,0,0,7,0,6,0, ldraw_lib__4_4cylo(realsolid)],
 // 1 16 0 0 20 7 0 0 0 0 7 0 -32 0 4-4cylo.dat
-  [1,16,0,0,20,7,0,0,0,0,7,0,-32,0, ldraw_lib__4_4cylo()],
+  [1,16,0,0,20,7,0,0,0,0,7,0,-32,0, ldraw_lib__4_4cylo(realsolid)],
 // 1 16 0 0 -14 7 0 0 0 0 7 0 1 0 4-4ring1.dat
-  [1,16,0,0,-14,7,0,0,0,0,7,0,1,0, ldraw_lib__4_4ring1()],
+  [1,16,0,0,-14,7,0,0,0,0,7,0,1,0, ldraw_lib__4_4ring1(realsolid)],
 // 1 0 0 0 -14 0 0 7 7 0 0 0 1 0 4-4ring2.dat
-  [1,0,0,0,-14,0,0,7,7,0,0,0,1,0, ldraw_lib__4_4ring2()],
+  [1,0,0,0,-14,0,0,7,7,0,0,0,1,0, ldraw_lib__4_4ring2(realsolid)],
 // 1 0 0 0 -14 0 0 1 1 0 0 0 1 0 4-4rin21.dat
-  [1,0,0,0,-14,0,0,1,1,0,0,0,1,0, ldraw_lib__4_4rin21()],
+  [1,0,0,0,-14,0,0,1,1,0,0,0,1,0, ldraw_lib__4_4rin21(realsolid)],
 // 1 16 0 0 -14 0 0 22 22 0 0 0 2 0 4-4cylo.dat
-  [1,16,0,0,-14,0,0,22,22,0,0,0,2,0, ldraw_lib__4_4cylo()],
+  [1,16,0,0,-14,0,0,22,22,0,0,0,2,0, ldraw_lib__4_4cylo(realsolid)],
 // 1 16 0 0 -12 7 0 0 0 0 7 0 -1 0 4-4ring1.dat
-  [1,16,0,0,-12,7,0,0,0,0,7,0,-1,0, ldraw_lib__4_4ring1()],
+  [1,16,0,0,-12,7,0,0,0,0,7,0,-1,0, ldraw_lib__4_4ring1(realsolid)],
 // 1 16 0 0 -12 0 0 7 7 0 0 0 -1 0 4-4ring2.dat
-  [1,16,0,0,-12,0,0,7,7,0,0,0,-1,0, ldraw_lib__4_4ring2()],
+  [1,16,0,0,-12,0,0,7,7,0,0,0,-1,0, ldraw_lib__4_4ring2(realsolid)],
 // 1 16 0 0 -12 0 0 1 1 0 0 0 -1 0 4-4rin21.dat
-  [1,16,0,0,-12,0,0,1,1,0,0,0,-1,0, ldraw_lib__4_4rin21()],
+  [1,16,0,0,-12,0,0,1,1,0,0,0,-1,0, ldraw_lib__4_4rin21(realsolid)],
 // 0 // LED
 // 1 80 6.8883 -16.6298 -14.5 1.53073 0 -3.69552 -3.69552 0 -1.53073 0 0.5 0 4-4cylc.dat
-  [1,80,6.8883,-16.6298,-14.5,1.53073,0,-3.69552,-3.69552,0,-1.53073,0,0.5,0, ldraw_lib__4_4cylc()],
+  [1,80,6.8883,-16.6298,-14.5,1.53073,0,-3.69552,-3.69552,0,-1.53073,0,0.5,0, ldraw_lib__4_4cylc(realsolid)],
 // 1 47 6.8883 -16.6298 -14.5 1.53073 0 -3.69552 -3.69552 0 -1.53073 0 1 0 bump5000.dat
-  [1,47,6.8883,-16.6298,-14.5,1.53073,0,-3.69552,-3.69552,0,-1.53073,0,1,0, ldraw_lib__bump5000()],
+  [1,47,6.8883,-16.6298,-14.5,1.53073,0,-3.69552,-3.69552,0,-1.53073,0,1,0, ldraw_lib__bump5000(realsolid)],
 ];
 module ldraw_lib__6639(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6639(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6639(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6639(line=0.2);

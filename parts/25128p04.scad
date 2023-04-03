@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/25128s01.scad>
 use <s/25128s02.scad>
-function ldraw_lib__25128p04() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__25128p04(realsolid=false) = [
 // 0 Minifig Baby Body with Black Lines, Reddish Brown Fur Collar and Sand Green Hands Pattern
 // 0 Name: 25128p04.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -19,11 +20,11 @@ function ldraw_lib__25128p04() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\25128s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__25128s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__25128s01(realsolid)],
 // 1 378 0 0 0 1 0 0 0 1 0 0 0 1 s\25128s02.dat
-  [1,378,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__25128s02()],
+  [1,378,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__25128s02(realsolid)],
 // 1 378 0 0 0 -1 0 0 0 1 0 0 0 1 s\25128s02.dat
-  [1,378,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__25128s02()],
+  [1,378,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__25128s02(realsolid)],
 // 
 // 4 0 1.9 -22.5 -6.6569 2.8 -22.8 -6.6197 -0.65 -22.9 -6.6073 0.7 -22.35 -6.6755
   [4,0,1.9,-22.5,-6.6569,2.8,-22.8,-6.6197,-0.65,-22.9,-6.6073,0.7,-22.35,-6.6755],
@@ -639,5 +640,5 @@ function ldraw_lib__25128p04() = [
   [3,16,-2.8346,-22.2269,-6.6907,-3.35,-20.9,-6.8551,-2.6,-22.05,-6.7126],
 ];
 module ldraw_lib__25128p04(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__25128p04(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__25128p04(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__25128p04(line=0.2);

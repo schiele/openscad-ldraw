@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <3298.scad>
 use <6141875k.scad>
-function ldraw_lib__3298dy0() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3298dy0(realsolid=false) = [
 // 0 Slope Brick 33  3 x  2 with Headlamp on Blue Background Right Sticker
 // 0 Name: 3298dy0.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -18,10 +19,10 @@ function ldraw_lib__3298dy0() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 3298.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3298()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3298(realsolid)],
 // 1 16 0 10 -30 0 0 -1 -.447214 .894427 0 .894427 .447214 0 6141875k.dat
-  [1,16,0,10,-30,0,0,-1,-.447214,.894427,0,.894427,.447214,0, ldraw_lib__6141875k()],
+  [1,16,0,10,-30,0,0,-1,-.447214,.894427,0,.894427,.447214,0, ldraw_lib__6141875k(realsolid)],
 ];
 module ldraw_lib__3298dy0(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3298dy0(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3298dy0(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3298dy0(line=0.2);

@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/1-4cyli.scad>
 use <s/973s01.scad>
-function ldraw_lib__973pc6() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__973pc6(realsolid=false) = [
 // 0 Minifig Torso with Black and Blue Marks, Red X-Men Buckle Belt Pattern
 // 0 Name: 973pc6.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -18,9 +19,9 @@ function ldraw_lib__973pc6() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01(realsolid)],
 // 1 0 0 -4 0 4.243 0 -4.243 0 -8 0 -4.243 0 -4.243 1-4cyli.dat
-  [1,0,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli()],
+  [1,0,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli(realsolid)],
 // 
 // 0 // front
 // 4 0 11.2 20.75 -10 10.65 21.25 -10 11.05 21.8 -10 12.1 20.75 -10
@@ -2545,5 +2546,5 @@ function ldraw_lib__973pc6() = [
   [3,92,7.4467,1.8,10,8.3852,1.8575,10,8.6,2.275,10],
 ];
 module ldraw_lib__973pc6(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__973pc6(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__973pc6(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__973pc6(line=0.2);

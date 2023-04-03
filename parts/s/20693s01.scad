@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/1-8cyli.scad>
-function ldraw_lib__s__20693s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__20693s01(realsolid=false) = [
 // 0 ~Minifig Pumpkin Carved -  1/8 Solid
 // 0 Name: s\20693s01.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -17,7 +18,7 @@ function ldraw_lib__s__20693s01() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 4 0 13 0 0 0 20 0 0 0 -13 1-8cyli.dat
-  [1,16,0,4,0,13,0,0,0,20,0,0,0,-13, ldraw_lib__1_8cyli()],
+  [1,16,0,4,0,13,0,0,0,20,0,0,0,-13, ldraw_lib__1_8cyli(realsolid)],
 // 
 // 4 16 13.87 17.702 -13.87 17.288 17.814 -10.878 19.089 9.055 -11.944 15.269 8.96 -15.269
   [4,16,13.87,17.702,-13.87,17.288,17.814,-10.878,19.089,9.055,-11.944,15.269,8.96,-15.269],
@@ -195,5 +196,5 @@ function ldraw_lib__s__20693s01() = [
   [5,24,12.919,23.943,-8.104,12.0107,24,-4.9751,14.819,23.927,-3.58,9.1923,24,-9.1923],
 ];
 module ldraw_lib__s__20693s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__20693s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__20693s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__20693s01(line=0.2);

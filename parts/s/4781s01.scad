@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__4781s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__4781s01(realsolid=false) = [
 // 0 ~Fabuland Lamppost Pole 1/12
 // 0 Name: s\4781s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -413,5 +414,5 @@ function ldraw_lib__s__4781s01() = [
   [5,24,0,-70.8895,6,0,-67.6,6,-1.5528,-67.6,5.7954,0.7632,-71.1326,5.8994],
 ];
 module ldraw_lib__s__4781s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__4781s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__4781s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__4781s01(line=0.2);

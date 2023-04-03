@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/4-4cylc3.scad>
 use <../p/4-4ering.scad>
-function ldraw_lib__6055874b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6055874b(realsolid=false) = [
 // 0 Sticker  1.6 x  1.6 Round with Mini Cooper Logo
 // 0 Name: 6055874b.dat
 // 0 Author: Max Martin Richter [MMR1988]
@@ -21,7 +22,7 @@ function ldraw_lib__6055874b() = [
 // 
 // 
 // 1 16 0 0 0 16.375 0 0 0 -0.25 0 0 0 16.375 4-4cylc3.dat
-  [1,16,0,0,0,16.375,0,0,0,-0.25,0,0,0,16.375, ldraw_lib__4_4cylc3()],
+  [1,16,0,0,0,16.375,0,0,0,-0.25,0,0,0,16.375, ldraw_lib__4_4cylc3(realsolid)],
 // 
 // 4 15 2.286 -0.25 -7.838 2.395 -0.25 -7.511 2.068 -0.25 -7.566 2.068 -0.25 -8.11
   [4,15,2.286,-0.25,-7.838,2.395,-0.25,-7.511,2.068,-0.25,-7.566,2.068,-0.25,-8.11],
@@ -1710,8 +1711,8 @@ function ldraw_lib__6055874b() = [
 // 4 288 4.572 -0.25 -7.62 4.572 -0.25 -7.402 4.3 -0.25 -7.348 4.245 -0.25 -8.056
   [4,288,4.572,-0.25,-7.62,4.572,-0.25,-7.402,4.3,-0.25,-7.348,4.245,-0.25,-8.056],
 // 1 288 0 -.25 0 16.375 0 0 0 1 0 0 0 16.375 4-4ering.dat
-  [1,288,0,-.25,0,16.375,0,0,0,1,0,0,0,16.375, ldraw_lib__4_4ering()],
+  [1,288,0,-.25,0,16.375,0,0,0,1,0,0,0,16.375, ldraw_lib__4_4ering(realsolid)],
 ];
 module ldraw_lib__6055874b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6055874b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6055874b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6055874b(line=0.2);

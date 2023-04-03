@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__13710gs02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__13710gs02(realsolid=false) = [
 // 0 ~Sticker Top for Technic Panel Fairing Smooth (Long) Flat
 // 0 Name: s\13710gs02.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -76,5 +77,5 @@ function ldraw_lib__s__13710gs02() = [
   [4,16,-13.588,-0.25,100.6,-21.94,-0.25,95.424,-21.954,-0.25,-52.792,-13.588,-0.25,-54.5],
 ];
 module ldraw_lib__s__13710gs02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__13710gs02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__13710gs02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__13710gs02(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__6296256l() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6296256l(realsolid=false) = [
 // 0 Sticker  0.8 x  2.9 with "TOFO 1965" Licence Plate
 // 0 Name: 6296256l.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -17,7 +18,7 @@ function ldraw_lib__6296256l() = [
 // 
 // 
 // 1 16 0 -0.25 0 29 0 0 0 0.25 0 0 0 8 box5-12.dat
-  [1,16,0,-0.25,0,29,0,0,0,0.25,0,0,0,8, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,29,0,0,0,0.25,0,0,0,8, ldraw_lib__box5_12(realsolid)],
 // 4 0 -12.92 -.25 .64 -12.92 -.25 -.81 -11.46 -.25 -3.7 -11.46 -.25 3.55
   [4,0,-12.92,-.25,.64,-12.92,-.25,-.81,-11.46,-.25,-3.7,-11.46,-.25,3.55],
 // 3 0 -16.87 -.25 -3.15 -21.05 -.25 -3.7 -25.35 -.25 -5.9
@@ -632,5 +633,5 @@ function ldraw_lib__6296256l() = [
   [3,15,26.9,-.25,-4.35,26.9,-.25,-4.75,27.3,-.25,-4.7],
 ];
 module ldraw_lib__6296256l(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6296256l(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6296256l(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6296256l(line=0.2);

@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
 use <s/3004s60.scad>
-function ldraw_lib__004695a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__004695a(realsolid=false) = [
 // 0 Sticker  1.0 x  1.5 with Shell Logo
 // 0 Name: 004695a.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -18,9 +19,9 @@ function ldraw_lib__004695a() = [
 // 
 // 
 // 1 16 0 -0.25 0 15 0 0 0 0.25 0 0 0 10 box5-12.dat
-  [1,16,0,-0.25,0,15,0,0,0,0.25,0,0,0,10, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,15,0,0,0,0.25,0,0,0,10, ldraw_lib__box5_12(realsolid)],
 // 1 15 0 -0.25 0 0.64 0 0 0 0 1 0 -0.64 0 s\3004s60.dat
-  [1,15,0,-0.25,0,0.64,0,0,0,0,1,0,-0.64,0, ldraw_lib__s__3004s60()],
+  [1,15,0,-0.25,0,0.64,0,0,0,0,1,0,-0.64,0, ldraw_lib__s__3004s60(realsolid)],
 // 
 // 4 15 -7.36 -0.25 -1.53216 -7.36 -0.25 6.72 -15 -0.25 10 -15 -0.25 -10
   [4,15,-7.36,-0.25,-1.53216,-7.36,-0.25,6.72,-15,-0.25,10,-15,-0.25,-10],
@@ -40,5 +41,5 @@ function ldraw_lib__004695a() = [
   [3,15,-15,-0.25,10,-7.36,-0.25,6.72,0,-0.25,6.72],
 ];
 module ldraw_lib__004695a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__004695a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__004695a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__004695a(line=0.2);

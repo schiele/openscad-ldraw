@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/3626bs02.scad>
 use <s/3626p8bs01.scad>
-function ldraw_lib__3626bp8b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3626bp8b(realsolid=false) = [
 // 0 Minifig Head with Brown Eyebrows, Freckles, Open Smile Pattern (Hollow Stud)
 // 0 Name: 3626bp8b.dat
 // 0 Author: Howard Lande [HowardLande]
@@ -20,10 +21,10 @@ function ldraw_lib__3626bp8b() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3626bs02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626bs02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626bs02(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3626p8bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626p8bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626p8bs01(realsolid)],
 ];
 module ldraw_lib__3626bp8b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3626bp8b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3626bp8b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3626bp8b(line=0.2);

@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/2-4disc.scad>
-function ldraw_lib__s__973p65a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__973p65a(realsolid=false) = [
 // 0 ~Minifig Torso with Futuron Pattern - Gold
 // 0 Name: s\973p65a.dat
 // 0 Author: Chris Dee [cwdee]
@@ -18,7 +19,7 @@ function ldraw_lib__s__973p65a() = [
 // 
 // 
 // 1 16 -6 8 -10 3.811 0 -1.579 -1.579 0 -3.811 0 1 0 2-4disc.dat
-  [1,16,-6,8,-10,3.811,0,-1.579,-1.579,0,-3.811,0,1,0, ldraw_lib__2_4disc()],
+  [1,16,-6,8,-10,3.811,0,-1.579,-1.579,0,-3.811,0,1,0, ldraw_lib__2_4disc(realsolid)],
 // 3 16 -6 12.125 -10 -3.083 10.917 -10 -4.421 11.811 -10
   [3,16,-6,12.125,-10,-3.083,10.917,-10,-4.421,11.811,-10],
 // 4 16 -2.189 9.579 -10 -3.083 10.917 -10 -6 12.125 -10 -7.579 11.811 -10
@@ -152,5 +153,5 @@ function ldraw_lib__s__973p65a() = [
 // 0
 ];
 module ldraw_lib__s__973p65a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__973p65a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__973p65a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__973p65a(line=0.2);

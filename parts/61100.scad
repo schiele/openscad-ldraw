@@ -2,7 +2,8 @@ use <../lib.scad>
 use <61521c01.scad>
 use <61523.scad>
 use <61524.scad>
-function ldraw_lib__61100() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__61100(realsolid=false) = [
 // 0 Motor Windup  2 x  4 x  2.333 (Complete)
 // 0 Name: 61100.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -22,12 +23,12 @@ function ldraw_lib__61100() = [
 // 
 // 
 // 1 25 50 26 0 1 0 0 0 0 -1 0 1 0 61523.dat
-  [1,25,50,26,0,1,0,0,0,0,-1,0,1,0, ldraw_lib__61523()],
+  [1,25,50,26,0,1,0,0,0,0,-1,0,1,0, ldraw_lib__61523(realsolid)],
 // 1 25 -20 26 -20 1 0 0 0 1 0 0 0 1 61524.dat
-  [1,25,-20,26,-20,1,0,0,0,1,0,0,0,1, ldraw_lib__61524()],
+  [1,25,-20,26,-20,1,0,0,0,1,0,0,0,1, ldraw_lib__61524(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 61521c01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__61521c01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__61521c01(realsolid)],
 ];
 module ldraw_lib__61100(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__61100(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__61100(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__61100(line=0.2);

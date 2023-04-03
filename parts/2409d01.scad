@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <168295a.scad>
 use <2409.scad>
-function ldraw_lib__2409d01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2409d01(realsolid=false) = [
 // 0 Panel 10 x 10 x 12 Corner with Sticker with Holographic Stripes and Red Triangles
 // 0 Name: 2409d01.dat
 // 0 Author: Damien Roux [Darats]
@@ -18,10 +19,10 @@ function ldraw_lib__2409d01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 2409.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2409()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2409(realsolid)],
 // 1 0 88.572 96 -88.572 0.707107 -0.597924 -0.377474 0 0.533829 -0.845593 0.707107 0.597924 0.377474 168295a.dat
-  [1,0,88.572,96,-88.572,0.707107,-0.597924,-0.377474,0,0.533829,-0.845593,0.707107,0.597924,0.377474, ldraw_lib__168295a()],
+  [1,0,88.572,96,-88.572,0.707107,-0.597924,-0.377474,0,0.533829,-0.845593,0.707107,0.597924,0.377474, ldraw_lib__168295a(realsolid)],
 ];
 module ldraw_lib__2409d01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2409d01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2409d01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2409d01(line=0.2);

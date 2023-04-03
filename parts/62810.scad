@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4edge.scad>
 use <../p/stud4.scad>
-function ldraw_lib__62810() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__62810(realsolid=false) = [
 // 0 Minifig Hair Short, Tousled with Side Parting
 // 0 Name: 62810.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -21,11 +22,11 @@ function ldraw_lib__62810() = [
 // 
 // 
 // 1 16 0 -4 0 9 0 0 0 1 0 0 0 9 4-4edge.dat
-  [1,16,0,-4,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4edge()],
+  [1,16,0,-4,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 -4 0 9 0 0 0 -1 0 0 0 9 4-4disc.dat
-  [1,16,0,-4,0,9,0,0,0,-1,0,0,0,9, ldraw_lib__4_4disc()],
+  [1,16,0,-4,0,9,0,0,0,-1,0,0,0,9, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 -4 0 1 0 0 0 -1 0 0 0 -1 stud4.dat
-  [1,16,0,-4,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__stud4()],
+  [1,16,0,-4,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__stud4(realsolid)],
 // 3 16 -1.529 -8.515 -0.183 -3.625 -7.896 1.334 -2.397 -8.285 -1.05
   [3,16,-1.529,-8.515,-0.183,-3.625,-7.896,1.334,-2.397,-8.285,-1.05],
 // 3 16 -1.529 -8.515 -0.183 -2.397 -8.285 -1.05 -0.437 -8.663 -1.24
@@ -3632,5 +3633,5 @@ function ldraw_lib__62810() = [
   [5,24,12.155,2.283,2.21,8.315,-4,3.444,11.346,2.715,5.272,9,-4,0],
 ];
 module ldraw_lib__62810(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__62810(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__62810(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__62810(line=0.2);

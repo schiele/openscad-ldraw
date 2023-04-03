@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__4492pw1s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__4492pw1s01(realsolid=false) = [
 // 0 ~Animal Horse Head with Black Tack, Metallic Silver Fittings and Feather Pattern - Left Side
 // 0 Name: s\4492pw1s01.dat
 // 0 Author: Willy Tschager [Holly-Wood]
@@ -4664,5 +4665,5 @@ function ldraw_lib__s__4492pw1s01() = [
   [5,24,6.469,-48.937,-22.898,6.65,-50.095,-23.967,6.482,-48.965,-23.448,6.668,-50.535,-23.139],
 ];
 module ldraw_lib__s__4492pw1s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__4492pw1s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__4492pw1s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__4492pw1s01(line=0.2);

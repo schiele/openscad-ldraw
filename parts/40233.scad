@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4edge.scad>
 use <../p/stud16.scad>
-function ldraw_lib__40233() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__40233(realsolid=false) = [
 // 0 Minifig Hair Short Tousled
 // 0 Name: 40233.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -165,11 +166,11 @@ function ldraw_lib__40233() = [
 // 4 16 8.3151 -4 3.4443 6.3639 -4 6.3639 9.19 0 9.19 12.01 0 4.98
   [4,16,8.3151,-4,3.4443,6.3639,-4,6.3639,9.19,0,9.19,12.01,0,4.98],
 // 1 16 0 -4 0 1 0 0 0 -1 0 0 0 1 stud16.dat
-  [1,16,0,-4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud16()],
+  [1,16,0,-4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud16(realsolid)],
 // 1 16 0 -4 0 9 0 0 0 -1 0 0 0 9 4-4disc.dat
-  [1,16,0,-4,0,9,0,0,0,-1,0,0,0,9, ldraw_lib__4_4disc()],
+  [1,16,0,-4,0,9,0,0,0,-1,0,0,0,9, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 -4 0 9 0 0 0 -1 0 0 0 9 4-4edge.dat
-  [1,16,0,-4,0,9,0,0,0,-1,0,0,0,9, ldraw_lib__4_4edge()],
+  [1,16,0,-4,0,9,0,0,0,-1,0,0,0,9, ldraw_lib__4_4edge(realsolid)],
 // 5 24 -12.01 0 -4.98 -12.85 8.07 -1.98 -13 0 0 -12.48 7.42 -3.99
   [5,24,-12.01,0,-4.98,-12.85,8.07,-1.98,-13,0,0,-12.48,7.42,-3.99],
 // 5 24 12.83 7.84 -2.13 12.01 0 -4.98 13 0 0 12.6 7.25 -3.58
@@ -3376,5 +3377,5 @@ function ldraw_lib__40233() = [
   [5,24,12.01,0,4.98,8.3151,-4,3.4443,6.3639,-4,6.3639,9,-4,0],
 ];
 module ldraw_lib__40233(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__40233(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__40233(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__40233(line=0.2);

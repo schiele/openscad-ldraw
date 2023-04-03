@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/2431s01.scad>
-function ldraw_lib__2431pzp() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2431pzp(realsolid=false) = [
 // 0 Tile  1 x  4 with Skeleton Teeth Pattern
 // 0 Name: 2431pzp.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -17,7 +18,7 @@ function ldraw_lib__2431pzp() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2431s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2431s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2431s01(realsolid)],
 // 3 0 12 0 3 11.25 0 2 12.75 0 2
   [3,0,12,0,3,11.25,0,2,12.75,0,2],
 // 4 0 12.75 0 0.75 12.75 0 2 11.25 0 2 11.25 0 0.75
@@ -270,5 +271,5 @@ function ldraw_lib__2431pzp() = [
   [4,16,-35.25,0,-2,-36,0,-3,-28,0,-3,-28.75,0,-2],
 ];
 module ldraw_lib__2431pzp(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2431pzp(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2431pzp(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2431pzp(line=0.2);

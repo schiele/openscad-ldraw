@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/clh5.scad>
-function ldraw_lib__s__480s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__480s02(realsolid=false) = [
 // 0 ~Hinge Arm Locking - Dual Finger End
 // 0 Name: s\480s02.dat
 // 0 Author: Franklin W. Cain [fwcain]
@@ -18,9 +19,9 @@ function ldraw_lib__s__480s02() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 -1 0 0 0 -1 clh5.dat
-  [1,16,0,0,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__clh5()],
+  [1,16,0,0,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__clh5(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 -1 clh5.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__clh5()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__clh5(realsolid)],
 // 2 24 0 -9 0 -3.444 -8.315 0
   [2,24,0,-9,0,-3.444,-8.315,0],
 // 2 24 0 -9 0 3.444 -8.315 0
@@ -48,5 +49,5 @@ function ldraw_lib__s__480s02() = [
 // 0
 ];
 module ldraw_lib__s__480s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__480s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__480s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__480s02(line=0.2);

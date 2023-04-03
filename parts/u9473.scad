@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/4-4cylc.scad>
 use <../p/4-4ring1.scad>
-function ldraw_lib__u9473() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__u9473(realsolid=false) = [
 // 0 ~Electric Powered Up 6 Port Hub Rechargeable Battery Assembly Pin
 // 0 Name: u9473.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -22,12 +23,12 @@ function ldraw_lib__u9473() = [
 // 
 // 
 // 1 16 0 38 0 2 0 0 0 -38 0 0 0 2 4-4cylc.dat
-  [1,16,0,38,0,2,0,0,0,-38,0,0,0,2, ldraw_lib__4_4cylc()],
+  [1,16,0,38,0,2,0,0,0,-38,0,0,0,2, ldraw_lib__4_4cylc(realsolid)],
 // 1 16 0 -4 0 4 0 0 0 4 0 0 0 4 4-4cylc.dat
-  [1,16,0,-4,0,4,0,0,0,4,0,0,0,4, ldraw_lib__4_4cylc()],
+  [1,16,0,-4,0,4,0,0,0,4,0,0,0,4, ldraw_lib__4_4cylc(realsolid)],
 // 1 16 0 0 0 2 0 0 0 -1 0 0 0 2 4-4ring1.dat
-  [1,16,0,0,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__4_4ring1()],
+  [1,16,0,0,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__4_4ring1(realsolid)],
 ];
 module ldraw_lib__u9473(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__u9473(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__u9473(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__u9473(line=0.2);

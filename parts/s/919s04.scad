@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/1-16edge.scad>
 use <58124s01.scad>
-function ldraw_lib__s__919s04() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__919s04(realsolid=false) = [
 // 0 ~Electric Power Functions 9V Battery Box Connector
 // 0 Name: s\919s04.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -16,7 +17,7 @@ function ldraw_lib__s__919s04() = [
 // 
 // 
 // 1 16 -40 -70 0 0 0 1 0 1 0 -1 0 0 s\58124s01.dat
-  [1,16,-40,-70,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__s__58124s01()],
+  [1,16,-40,-70,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__s__58124s01(realsolid)],
 // 2 24 -30 -70 -20 -20 -70 -20
   [2,24,-30,-70,-20,-20,-70,-20],
 // 2 24 -60 -70 -20 -50 -70 -20
@@ -36,9 +37,9 @@ function ldraw_lib__s__919s04() = [
 // 2 24 -30 -74 -26 -30 -74 -20
   [2,24,-30,-74,-26,-30,-74,-20],
 // 1 16 -30 -50 -20 0 -20 0 -20 0 0 0 0 -20 1-16edge.dat
-  [1,16,-30,-50,-20,0,-20,0,-20,0,0,0,0,-20, ldraw_lib__1_16edge()],
+  [1,16,-30,-50,-20,0,-20,0,-20,0,0,0,0,-20, ldraw_lib__1_16edge(realsolid)],
 // 1 16 -50 -50 -20 0 -20 0 -20 0 0 0 0 -20 1-16edge.dat
-  [1,16,-50,-50,-20,0,-20,0,-20,0,0,0,0,-20, ldraw_lib__1_16edge()],
+  [1,16,-50,-50,-20,0,-20,0,-20,0,0,0,0,-20, ldraw_lib__1_16edge(realsolid)],
 // 4 16 -30 -74 -26 -30 -74 -20 -30 -70 -20 -30 -68.48 -27.65
   [4,16,-30,-74,-26,-30,-74,-20,-30,-70,-20,-30,-68.48,-27.65],
 // 4 16 -50 -68.48 -27.65 -50 -70 -20 -50 -74 -20 -50 -74 -26
@@ -54,5 +55,5 @@ function ldraw_lib__s__919s04() = [
 // 0
 ];
 module ldraw_lib__s__919s04(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__919s04(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__919s04(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__919s04(line=0.2);

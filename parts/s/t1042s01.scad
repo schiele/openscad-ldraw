@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/4-4cylc.scad>
-function ldraw_lib__s__t1042s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__t1042s01(realsolid=false) = [
 // 0 ~| Rotacaster 48mm Holonomic Wheel Frame  1/8
 // 0 Name: s\t1042s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -15,9 +16,9 @@ function ldraw_lib__s__t1042s01() = [
 // 
 // 
 // 1 16 -18.75 -44 17 0 -3 0 -5 0 0 0 0 5 4-4cylc.dat
-  [1,16,-18.75,-44,17,0,-3,0,-5,0,0,0,0,5, ldraw_lib__4_4cylc()],
+  [1,16,-18.75,-44,17,0,-3,0,-5,0,0,0,0,5, ldraw_lib__4_4cylc(realsolid)],
 // 1 16 -21.75 -43 17 0 -6 0 -7 0 0 0 0 7 4-4cylc.dat
-  [1,16,-21.75,-43,17,0,-6,0,-7,0,0,0,0,7, ldraw_lib__4_4cylc()],
+  [1,16,-21.75,-43,17,0,-6,0,-7,0,0,0,0,7, ldraw_lib__4_4cylc(realsolid)],
 // 4 16 -16.97 -16.97 31 -20.51 -20.51 31 -17.6533 -23.01 31 -14.61 -19.04 31
   [4,16,-16.97,-16.97,31,-20.51,-20.51,31,-17.6533,-23.01,31,-14.61,-19.04,31],
 // 4 16 -20.51 -20.51 31 -23.33 -23.33 30.03 -20.09 -26.18 30.03 -17.6533 -23.01 31
@@ -422,5 +423,5 @@ function ldraw_lib__s__t1042s01() = [
   [5,24,-21.42,-27.92,28.95,-21.42,-27.92,2.21,-21.75,-28,2.24,-18.56,-27.2,30.03],
 ];
 module ldraw_lib__s__t1042s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__t1042s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__t1042s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__t1042s01(line=0.2);

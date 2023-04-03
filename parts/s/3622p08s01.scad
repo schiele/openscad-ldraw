@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__3622p08s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__3622p08s01(realsolid=false) = [
 // 0 ~Brick  1 x  3 with Cat Face, Open Mouth with Tongue and Sunglasses with Silver Rim Pattern - Half
 // 0 Name: s\3622p08s01.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -423,5 +424,5 @@ function ldraw_lib__s__3622p08s01() = [
   [3,16,0,0,-10,-14.7,1.7,-10,-12.6,2.25,-10],
 ];
 module ldraw_lib__s__3622p08s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__3622p08s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__3622p08s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__3622p08s01(line=0.2);

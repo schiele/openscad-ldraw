@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/10312ps1s01.scad>
 use <s/10312s01.scad>
-function ldraw_lib__10312ps1() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__10312ps1(realsolid=false) = [
 // 0 Windscreen  6 x 10 x  3 with  1 x  2 x  1 Cutout - Ovoid with SW B-Wing Cockpit Pattern
 // 0 Name: 10312ps1.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -18,12 +19,12 @@ function ldraw_lib__10312ps1() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\10312s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__10312s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__10312s01(realsolid)],
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\10312ps1s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__10312ps1s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__10312ps1s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 -1 s\10312ps1s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__10312ps1s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__10312ps1s01(realsolid)],
 // 
 // 4 71 -90.85 -55.2237 -1.05 -90.7 -55.3205 -.4 -90.75 -55.3124 -.25 -92 -54.879 0
   [4,71,-90.85,-55.2237,-1.05,-90.7,-55.3205,-.4,-90.75,-55.3124,-.25,-92,-54.879,0],
@@ -411,5 +412,5 @@ function ldraw_lib__10312ps1() = [
   [4,71,-92,-53.4168,11.0971,-89,-54.4597,11.3765,-89,-53.5703,14,-92,-52.4328,14],
 ];
 module ldraw_lib__10312ps1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__10312ps1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__10312ps1(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__10312ps1(line=0.2);

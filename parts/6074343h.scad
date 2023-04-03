@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <6074343g.scad>
-function ldraw_lib__6074343h() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6074343h(realsolid=false) = [
 // 0 Sticker  1.9 x  3.9 with White Short Lines and Arrows Left
 // 0 Name: 6074343h.dat
 // 0 Author: Christophe Mitillo [Christophe_Mitillo]
@@ -18,8 +19,8 @@ function ldraw_lib__6074343h() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 -1 6074343g.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__6074343g()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__6074343g(realsolid)],
 ];
 module ldraw_lib__6074343h(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6074343h(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6074343h(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6074343h(line=0.2);

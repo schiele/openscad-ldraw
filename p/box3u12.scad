@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__box3u12() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__box3u12(realsolid=false) = [
 // 0 Box with 3 Parallel Faces without Any Edges
 // 0 Name: box3u12.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -21,5 +22,5 @@ function ldraw_lib__box3u12() = [
   [4,16,1,1,-1,1,0,-1,-1,0,-1,-1,1,-1],
 ];
 module ldraw_lib__box3u12(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__box3u12(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__box3u12(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__box3u12(line=0.2);

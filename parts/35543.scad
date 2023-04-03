@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/box4-2p.scad>
 use <../p/box4-4a.scad>
 use <s/35543s01.scad>
-function ldraw_lib__35543() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__35543(realsolid=false) = [
 // 0 ~Electric Powered Up Remote Handset "+" Control Button
 // 0 Name: 35543.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -17,23 +18,23 @@ function ldraw_lib__35543() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\35543s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__35543s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__35543s01(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 4 0 1 0 0 2.5 0 1 0 -1.5 0 0 box4-4a.dat
-  [1,16,4,0,1,0,0,2.5,0,1,0,-1.5,0,0, ldraw_lib__box4_4a()],
+  [1,16,4,0,1,0,0,2.5,0,1,0,-1.5,0,0, ldraw_lib__box4_4a(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 .5 2.5 -1.5 0 0 0 0 .5 0 5 0 box4-2p.dat
-  [1,16,0,.5,2.5,-1.5,0,0,0,0,.5,0,5,0, ldraw_lib__box4_2p()],
+  [1,16,0,.5,2.5,-1.5,0,0,0,0,.5,0,5,0, ldraw_lib__box4_2p(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -4 0 1 0 0 -2.5 0 1 0 1.5 0 0 box4-4a.dat
-  [1,16,-4,0,1,0,0,-2.5,0,1,0,1.5,0,0, ldraw_lib__box4_4a()],
+  [1,16,-4,0,1,0,0,-2.5,0,1,0,1.5,0,0, ldraw_lib__box4_4a(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 .5 -.5 1.5 0 0 0 0 .5 0 -5 0 box4-2p.dat
-  [1,16,0,.5,-.5,1.5,0,0,0,0,.5,0,-5,0, ldraw_lib__box4_2p()],
+  [1,16,0,.5,-.5,1.5,0,0,0,0,.5,0,-5,0, ldraw_lib__box4_2p(realsolid)],
 // 4 16 1.5 1 -.5 1.5 1 2.5 -1.5 1 2.5 -1.5 1 -.5
   [4,16,1.5,1,-.5,1.5,1,2.5,-1.5,1,2.5,-1.5,1,-.5],
 // 4 16 -1.5 0 -5.5 -1.5 0 -.5 -6.5 0 -.5 -9.8994 0 -8
@@ -60,5 +61,5 @@ function ldraw_lib__35543() = [
   [4,16,1.5,0,-5.5,-1.5,0,-5.5,-9.8994,0,-8,9.8994,0,-8],
 ];
 module ldraw_lib__35543(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__35543(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__35543(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__35543(line=0.2);

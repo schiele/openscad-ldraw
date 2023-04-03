@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <30350a.scad>
-function ldraw_lib__30350() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__30350(realsolid=false) = [
 // 0 ~Moved to 30350a
 // 0 Name: 30350.dat
 // 0 Author: [PTadmin]
@@ -16,8 +17,8 @@ function ldraw_lib__30350() = [
 // 
 // 0 // Tile 2 x 3 with Horizontal Clips
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 30350a.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__30350a()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__30350a(realsolid)],
 ];
 module ldraw_lib__30350(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__30350(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__30350(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__30350(line=0.2);

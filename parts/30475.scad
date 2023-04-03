@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/4-4ring8.scad>
 use <../p/stud4o.scad>
-function ldraw_lib__30475() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__30475(realsolid=false) = [
 // 0 Minifig Hair Long and Half Braided (Needs Work)
 // 0 Name: 30475.dat
 // 0 Author: Mark Chittenden [mdublade]
@@ -23,9 +24,9 @@ function ldraw_lib__30475() = [
 // 0 // Needs Work: LDD mesh is underdetailed.
 // 
 // 1 16 0 -4 0 1 0 0 0 -1 0 0 0 -1 stud4o.dat
-  [1,16,0,-4,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__stud4o()],
+  [1,16,0,-4,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__stud4o(realsolid)],
 // 1 16 0 0 0 1 0 0 0 -1 0 0 0 -1 4-4ring8.dat
-  [1,16,0,0,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__4_4ring8()],
+  [1,16,0,0,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__4_4ring8(realsolid)],
 // 3 16 12.946 10.828 3.081 13.279 8.628 0.48 12.244 2.123 2.273
   [3,16,12.946,10.828,3.081,13.279,8.628,0.48,12.244,2.123,2.273],
 // 3 16 13.279 8.628 0.48 12.798 7.684 -3.334 12.244 2.123 2.273
@@ -3836,5 +3837,5 @@ function ldraw_lib__30475() = [
   [5,24,6.359,1.705,10.732,1.3,17.092,13.408,6.74,19.209,11.603,2.174,2.097,12.802],
 ];
 module ldraw_lib__30475(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__30475(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__30475(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__30475(line=0.2);

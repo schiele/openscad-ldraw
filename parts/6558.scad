@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/confric5.scad>
 use <../p/confric6.scad>
 use <../p/confric8.scad>
-function ldraw_lib__6558() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6558(realsolid=false) = [
 // 0 Technic Pin Long with Friction and Slot
 // 0 Name: 6558.dat
 // 0 Author: James Jessiman
@@ -20,13 +21,13 @@ function ldraw_lib__6558() = [
 // 
 // 
 // 1 16 -10 0 0 0 1 0 0 0 1 1 0 0 confric5.dat
-  [1,16,-10,0,0,0,1,0,0,0,1,1,0,0, ldraw_lib__confric5()],
+  [1,16,-10,0,0,0,1,0,0,0,1,1,0,0, ldraw_lib__confric5(realsolid)],
 // 1 16 10 0 0 0 -1 0 0 0 1 1 0 0 confric6.dat
-  [1,16,10,0,0,0,-1,0,0,0,1,1,0,0, ldraw_lib__confric6()],
+  [1,16,10,0,0,0,-1,0,0,0,1,1,0,0, ldraw_lib__confric6(realsolid)],
 // 1 16 -10 0 0 0 -1 0 0 0 1 1 0 0 confric8.dat
-  [1,16,-10,0,0,0,-1,0,0,0,1,1,0,0, ldraw_lib__confric8()],
+  [1,16,-10,0,0,0,-1,0,0,0,1,1,0,0, ldraw_lib__confric8(realsolid)],
 // 0
 ];
 module ldraw_lib__6558(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6558(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6558(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6558(line=0.2);

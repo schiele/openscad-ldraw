@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/4-4ering.scad>
 use <s/98138s01.scad>
-function ldraw_lib__98138pb1() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__98138pb1(realsolid=false) = [
 // 0 Tile  1 x  1 Round with Red Bat Symbol Pattern
 // 0 Name: 98138pb1.dat
 // 0 Author: Heiko Jelnikar [KlotzKiste]
@@ -16,9 +17,9 @@ function ldraw_lib__98138pb1() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\98138s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01(realsolid)],
 // 1 16 0 0 0 9 0 0 0 1 0 0 0 9 4-4ering.dat
-  [1,16,0,0,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4ering()],
+  [1,16,0,0,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4ering(realsolid)],
 // 
 // 4 4 0.055 0 2.154 -0.615 0 2.214 -0.645 0 1.154 0.795 0 1.154
   [4,4,0.055,0,2.154,-0.615,0,2.214,-0.645,0,1.154,0.795,0,1.154],
@@ -322,5 +323,5 @@ function ldraw_lib__98138pb1() = [
   [4,16,4.602,0,-3.539,4.335,0,-3.239,3.4443,0,-8.3151,6.3639,0,-6.3639],
 ];
 module ldraw_lib__98138pb1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__98138pb1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__98138pb1(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__98138pb1(line=0.2);

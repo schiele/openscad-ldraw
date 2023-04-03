@@ -6,7 +6,8 @@ use <../../p/2-4rin20.scad>
 use <../../p/2-4ring4.scad>
 use <../../p/4-4cyli.scad>
 use <../../p/4-4edge.scad>
-function ldraw_lib__s__61189s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__61189s02(realsolid=false) = [
 // 0 ~Minifig Helmet SW Clone Trooper Phase I without Front Face - Half
 // 0 Name: s\61189s02.dat
 // 0 Author: Ulrich Röder [UR]
@@ -71,39 +72,39 @@ function ldraw_lib__s__61189s02() = [
 // 3 16 15.75 2.249 2.625 15.75 1.33 2.625 15.75 1.33 2.5
   [3,16,15.75,2.249,2.625,15.75,1.33,2.625,15.75,1.33,2.5],
 // 1 16 15.75 1.33 0 0 -1 0 2 0 0 0 0 2 4-4edge.dat
-  [1,16,15.75,1.33,0,0,-1,0,2,0,0,0,0,2, ldraw_lib__4_4edge()],
+  [1,16,15.75,1.33,0,0,-1,0,2,0,0,0,0,2, ldraw_lib__4_4edge(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 15.75 1.33 0 0 -2.75 0 2 0 0 0 0 2 4-4cyli.dat
-  [1,16,15.75,1.33,0,0,-2.75,0,2,0,0,0,0,2, ldraw_lib__4_4cyli()],
+  [1,16,15.75,1.33,0,0,-2.75,0,2,0,0,0,0,2, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 13 1.33 0 0 1 -.5 2 0 0 0 0 2 2-4edge.dat
-  [1,16,13,1.33,0,0,1,-.5,2,0,0,0,0,2, ldraw_lib__2_4edge()],
+  [1,16,13,1.33,0,0,1,-.5,2,0,0,0,0,2, ldraw_lib__2_4edge(realsolid)],
 // 1 16 13 1.33 0 0 1 -.5 2 0 0 0 0 -2 2-4edge.dat
-  [1,16,13,1.33,0,0,1,-.5,2,0,0,0,0,-2, ldraw_lib__2_4edge()],
+  [1,16,13,1.33,0,0,1,-.5,2,0,0,0,0,-2, ldraw_lib__2_4edge(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 13 1.33 0 0 -.5 0 0 0 2 -2 0 0 1-4cyls2.dat
-  [1,16,13,1.33,0,0,-.5,0,0,0,2,-2,0,0, ldraw_lib__1_4cyls2()],
+  [1,16,13,1.33,0,0,-.5,0,0,0,2,-2,0,0, ldraw_lib__1_4cyls2(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 13 1.33 0 0 -.5 0 0 0 -2 -2 0 0 1-4cyls2.dat
-  [1,16,13,1.33,0,0,-.5,0,0,0,-2,-2,0,0, ldraw_lib__1_4cyls2()],
+  [1,16,13,1.33,0,0,-.5,0,0,0,-2,-2,0,0, ldraw_lib__1_4cyls2(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 13 1.33 0 0 -.5 0 0 0 2 2 0 0 1-4cyls2.dat
-  [1,16,13,1.33,0,0,-.5,0,0,0,2,2,0,0, ldraw_lib__1_4cyls2()],
+  [1,16,13,1.33,0,0,-.5,0,0,0,2,2,0,0, ldraw_lib__1_4cyls2(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 13 1.33 0 0 -.5 0 0 0 -2 2 0 0 1-4cyls2.dat
-  [1,16,13,1.33,0,0,-.5,0,0,0,-2,2,0,0, ldraw_lib__1_4cyls2()],
+  [1,16,13,1.33,0,0,-.5,0,0,0,-2,2,0,0, ldraw_lib__1_4cyls2(realsolid)],
 // 1 16 15.75 1.33 0 0 -1 0 0 0 -.5 .5 0 0 2-4ring4.dat
-  [1,16,15.75,1.33,0,0,-1,0,0,0,-.5,.5,0,0, ldraw_lib__2_4ring4()],
+  [1,16,15.75,1.33,0,0,-1,0,0,0,-.5,.5,0,0, ldraw_lib__2_4ring4(realsolid)],
 // 1 16 15.75 1.33 0 0 -1 0 0 0 -.125 .125 0 0 2-4rin20.dat
-  [1,16,15.75,1.33,0,0,-1,0,0,0,-.125,.125,0,0, ldraw_lib__2_4rin20()],
+  [1,16,15.75,1.33,0,0,-1,0,0,0,-.125,.125,0,0, ldraw_lib__2_4rin20(realsolid)],
 // 1 16 15.75 1.33 0 0 -1 0 0 0 2 2 0 0 2-4ndis.dat
-  [1,16,15.75,1.33,0,0,-1,0,0,0,2,2,0,0, ldraw_lib__2_4ndis()],
+  [1,16,15.75,1.33,0,0,-1,0,0,0,2,2,0,0, ldraw_lib__2_4ndis(realsolid)],
 // 1 16 15.75 1.33 0 0 -1 0 0 0 -2.625 2.625 0 0 2-4edge.dat
-  [1,16,15.75,1.33,0,0,-1,0,0,0,-2.625,2.625,0,0, ldraw_lib__2_4edge()],
+  [1,16,15.75,1.33,0,0,-1,0,0,0,-2.625,2.625,0,0, ldraw_lib__2_4edge(realsolid)],
 // 3 16 14.733 -1.624 .746 15.75 -1.295 0 15.75 -1.095238 1.004588
   [3,16,14.733,-1.624,.746,15.75,-1.295,0,15.75,-1.095238,1.004588],
 // 3 16 15.75 -1.295 0 14.733 -1.624 .746 14.725 -1.72 .018
@@ -1718,5 +1719,5 @@ function ldraw_lib__s__61189s02() = [
   [2,24,4.779,0.186,-15.848,0,0.205,-16.861],
 ];
 module ldraw_lib__s__61189s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__61189s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__61189s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__61189s02(line=0.2);

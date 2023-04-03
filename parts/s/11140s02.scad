@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__11140s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__11140s02(realsolid=false) = [
 // 0 ~Wheel Rim 26 x 7 with Rip Cord Gear Axle - Gear Tooth 9 Half
 // 0 Name: s\11140s02.dat
 // 0 Author: Ingolf Weisheit [stahlwollschaf]
@@ -73,5 +74,5 @@ function ldraw_lib__s__11140s02() = [
 // 
 ];
 module ldraw_lib__s__11140s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__11140s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__11140s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__11140s02(line=0.2);

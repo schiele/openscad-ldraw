@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/1-4chrd.scad>
 use <../p/1-4cyli.scad>
-function ldraw_lib__6009312a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6009312a(realsolid=false) = [
 // 0 Sticker  1.8 x  1.8 with Metallic Silver Fifth Wheel on Grey Face
 // 0 Name: 6009312a.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -36,29 +37,29 @@ function ldraw_lib__6009312a() = [
   [4,16,18,0,-16,16,0,-18,-16,0,-18,-18,0,-16],
 // 0 // Primitives
 // 1 16 -16 0 16 0 0 -2 0 -1 0 2 0 0 1-4chrd.dat
-  [1,16,-16,0,16,0,0,-2,0,-1,0,2,0,0, ldraw_lib__1_4chrd()],
+  [1,16,-16,0,16,0,0,-2,0,-1,0,2,0,0, ldraw_lib__1_4chrd(realsolid)],
 // 1 16 16 0 16 2 0 0 0 -1 0 0 0 2 1-4chrd.dat
-  [1,16,16,0,16,2,0,0,0,-1,0,0,0,2, ldraw_lib__1_4chrd()],
+  [1,16,16,0,16,2,0,0,0,-1,0,0,0,2, ldraw_lib__1_4chrd(realsolid)],
 // 1 16 -16 0 -16 -2 0 0 0 -1 0 0 0 -2 1-4chrd.dat
-  [1,16,-16,0,-16,-2,0,0,0,-1,0,0,0,-2, ldraw_lib__1_4chrd()],
+  [1,16,-16,0,-16,-2,0,0,0,-1,0,0,0,-2, ldraw_lib__1_4chrd(realsolid)],
 // 1 16 16 0 -16 0 0 2 0 -1 0 -2 0 0 1-4chrd.dat
-  [1,16,16,0,-16,0,0,2,0,-1,0,-2,0,0, ldraw_lib__1_4chrd()],
+  [1,16,16,0,-16,0,0,2,0,-1,0,-2,0,0, ldraw_lib__1_4chrd(realsolid)],
 // 1 16 -16 -0.25 16 0 0 -2 0 0.25 0 2 0 0 1-4cyli.dat
-  [1,16,-16,-0.25,16,0,0,-2,0,0.25,0,2,0,0, ldraw_lib__1_4cyli()],
+  [1,16,-16,-0.25,16,0,0,-2,0,0.25,0,2,0,0, ldraw_lib__1_4cyli(realsolid)],
 // 1 16 16 -0.25 16 2 0 0 0 0.25 0 0 0 2 1-4cyli.dat
-  [1,16,16,-0.25,16,2,0,0,0,0.25,0,0,0,2, ldraw_lib__1_4cyli()],
+  [1,16,16,-0.25,16,2,0,0,0,0.25,0,0,0,2, ldraw_lib__1_4cyli(realsolid)],
 // 1 16 -16 -0.25 -16 -2 0 0 0 0.25 0 0 0 -2 1-4cyli.dat
-  [1,16,-16,-0.25,-16,-2,0,0,0,0.25,0,0,0,-2, ldraw_lib__1_4cyli()],
+  [1,16,-16,-0.25,-16,-2,0,0,0,0.25,0,0,0,-2, ldraw_lib__1_4cyli(realsolid)],
 // 1 16 16 -0.25 -16 0 0 2 0 0.25 0 -2 0 0 1-4cyli.dat
-  [1,16,16,-0.25,-16,0,0,2,0,0.25,0,-2,0,0, ldraw_lib__1_4cyli()],
+  [1,16,16,-0.25,-16,0,0,2,0,0.25,0,-2,0,0, ldraw_lib__1_4cyli(realsolid)],
 // 1 71 -16 -0.25 16 0 0 -2 0 1 0 2 0 0 1-4chrd.dat
-  [1,71,-16,-0.25,16,0,0,-2,0,1,0,2,0,0, ldraw_lib__1_4chrd()],
+  [1,71,-16,-0.25,16,0,0,-2,0,1,0,2,0,0, ldraw_lib__1_4chrd(realsolid)],
 // 1 71 16 -0.25 16 2 0 0 0 1 0 0 0 2 1-4chrd.dat
-  [1,71,16,-0.25,16,2,0,0,0,1,0,0,0,2, ldraw_lib__1_4chrd()],
+  [1,71,16,-0.25,16,2,0,0,0,1,0,0,0,2, ldraw_lib__1_4chrd(realsolid)],
 // 1 71 -16 -0.25 -16 -2 0 0 0 1 0 0 0 -2 1-4chrd.dat
-  [1,71,-16,-0.25,-16,-2,0,0,0,1,0,0,0,-2, ldraw_lib__1_4chrd()],
+  [1,71,-16,-0.25,-16,-2,0,0,0,1,0,0,0,-2, ldraw_lib__1_4chrd(realsolid)],
 // 1 71 16 -0.25 -16 0 0 2 0 1 0 -2 0 0 1-4chrd.dat
-  [1,71,16,-0.25,-16,0,0,2,0,1,0,-2,0,0, ldraw_lib__1_4chrd()],
+  [1,71,16,-0.25,-16,0,0,2,0,1,0,-2,0,0, ldraw_lib__1_4chrd(realsolid)],
 // 0 // Metallic silver central area
 // 3 80 -7.24845 -0.25 7.54825 -9.21818 -0.25 6.95074 -3.375 -0.25 -5.5
   [3,80,-7.24845,-0.25,7.54825,-9.21818,-0.25,6.95074,-3.375,-0.25,-5.5],
@@ -14317,5 +14318,5 @@ function ldraw_lib__6009312a() = [
   [4,71,-16,-0.25,-18,16,-0.25,-18,-5.2,-0.25,-14,-7.39477,-0.25,-13.7838],
 ];
 module ldraw_lib__6009312a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6009312a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6009312a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6009312a(line=0.2);

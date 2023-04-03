@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/24132s01.scad>
-function ldraw_lib__24132() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__24132(realsolid=false) = [
 // 0 Hemisphere  4 x  4 x  2.333 Top Ovoid with Faceted Inside
 // 0 Name: 24132.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -20,21 +21,21 @@ function ldraw_lib__24132() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\24132s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__24132s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__24132s01(realsolid)],
 // 1 16 0 0 0 0 0 1 0 1 0 -1 0 0 s\24132s01.dat
-  [1,16,0,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__s__24132s01()],
+  [1,16,0,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__s__24132s01(realsolid)],
 // 1 16 0 0 0 0 0 1 0 1 0 1 0 0 s\24132s01.dat
-  [1,16,0,0,0,0,0,1,0,1,0,1,0,0, ldraw_lib__s__24132s01()],
+  [1,16,0,0,0,0,0,1,0,1,0,1,0,0, ldraw_lib__s__24132s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 -1 s\24132s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__24132s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__24132s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 -1 s\24132s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__24132s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__24132s01(realsolid)],
 // 1 16 0 0 0 0 0 -1 0 1 0 1 0 0 s\24132s01.dat
-  [1,16,0,0,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__s__24132s01()],
+  [1,16,0,0,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__s__24132s01(realsolid)],
 // 1 16 0 0 0 0 0 -1 0 1 0 -1 0 0 s\24132s01.dat
-  [1,16,0,0,0,0,0,-1,0,1,0,-1,0,0, ldraw_lib__s__24132s01()],
+  [1,16,0,0,0,0,0,-1,0,1,0,-1,0,0, ldraw_lib__s__24132s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\24132s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__24132s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__24132s01(realsolid)],
 // 2 24 -10.547 -13.941 -32.713 6.402 -4 -34.631
   [2,24,-10.547,-13.941,-32.713,6.402,-4,-34.631],
 // 3 16 -3.342 -49.5806 -6.469 -6.453 -49.6162 -3.494 -3.356 -54.472 -5.813
@@ -1177,5 +1178,5 @@ function ldraw_lib__24132() = [
   [5,24,6.257,-51.895,-10.838,8.815,-51.895,-8.815,3.356,-54.472,-5.813,14.191,-45.917,-14.191],
 ];
 module ldraw_lib__24132(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__24132(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__24132(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__24132(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <4168.scad>
-function ldraw_lib__259() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__259(realsolid=false) = [
 // 0 ~Moved to 4168
 // 0 Name: 259.dat
 // 0 Author: [PTadmin]
@@ -17,8 +18,8 @@ function ldraw_lib__259() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 4168.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4168()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4168(realsolid)],
 ];
 module ldraw_lib__259(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__259(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__259(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__259(line=0.2);

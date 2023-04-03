@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__box5_2p() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__box5_2p(realsolid=false) = [
 // 0 Box with 5 Faces without 2 Parallel Edges
 // 0 Name: box5-2p.dat
 // 0 Author: Joerg Sommerer [Brickaneer]
@@ -45,5 +46,5 @@ function ldraw_lib__box5_2p() = [
   [4,16,1,1,1,1,0,1,1,0,-1,1,1,-1],
 ];
 module ldraw_lib__box5_2p(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__box5_2p(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__box5_2p(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__box5_2p(line=0.2);

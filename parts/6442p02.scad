@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/6442s01.scad>
-function ldraw_lib__6442p02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6442p02(realsolid=false) = [
 // 0 Duplo Train Track Point Lever with Single-Ended Arrow Pattern
 // 0 Name: 6442p02.dat
 // 0 Author: Michael Heidemann [mikeheide]
@@ -18,7 +19,7 @@ function ldraw_lib__6442p02() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\6442s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6442s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6442s01(realsolid)],
 // 
 // 3 16 -19 -72 17 -40 -72 20 -37 -72 0
   [3,16,-19,-72,17,-40,-72,20,-37,-72,0],
@@ -47,5 +48,5 @@ function ldraw_lib__6442p02() = [
   [3,4,-19,-72,17,-37,-72,0,-19,-72,7],
 ];
 module ldraw_lib__6442p02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6442p02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6442p02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6442p02(line=0.2);

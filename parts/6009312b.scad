@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <6009312c.scad>
-function ldraw_lib__6009312b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6009312b(realsolid=false) = [
 // 0 Sticker  1.8 x  1 with Right Black Deflectors on Red Face
 // 0 Name: 6009312b.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -17,8 +18,8 @@ function ldraw_lib__6009312b() = [
 // 
 // 
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 6009312c.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__6009312c()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__6009312c(realsolid)],
 ];
 module ldraw_lib__6009312b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6009312b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6009312b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6009312b(line=0.2);

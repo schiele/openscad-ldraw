@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/4-4edge.scad>
 use <s/95051s01.scad>
-function ldraw_lib__95051() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__95051(realsolid=false) = [
 // 0 Minifig Small Bow with Arrow
 // 0 Name: 95051.dat
 // 0 Author: Christian Neumann [Wesley]
@@ -21,15 +22,15 @@ function ldraw_lib__95051() = [
 // 
 // 
 // 1 16 0 0 11.25 1 0 0 0 1 0 0 0 1 s\95051s01.dat
-  [1,16,0,0,11.25,1,0,0,0,1,0,0,0,1, ldraw_lib__s__95051s01()],
+  [1,16,0,0,11.25,1,0,0,0,1,0,0,0,1, ldraw_lib__s__95051s01(realsolid)],
 // 1 16 0 0 11.25 -1 0 0 0 1 0 0 0 1 s\95051s01.dat
-  [1,16,0,0,11.25,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__95051s01()],
+  [1,16,0,0,11.25,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__95051s01(realsolid)],
 // 1 16 0 0 11.25 1 0 0 0 -1 0 0 0 1 s\95051s01.dat
-  [1,16,0,0,11.25,1,0,0,0,-1,0,0,0,1, ldraw_lib__s__95051s01()],
+  [1,16,0,0,11.25,1,0,0,0,-1,0,0,0,1, ldraw_lib__s__95051s01(realsolid)],
 // 1 16 0 0 11.25 -1 0 0 0 -1 0 0 0 1 s\95051s01.dat
-  [1,16,0,0,11.25,-1,0,0,0,-1,0,0,0,1, ldraw_lib__s__95051s01()],
+  [1,16,0,0,11.25,-1,0,0,0,-1,0,0,0,1, ldraw_lib__s__95051s01(realsolid)],
 // 1 16 0 0 0 0 0 3.75 0 1 0 -3.75 0 0 4-4edge.dat
-  [1,16,0,0,0,0,0,3.75,0,1,0,-3.75,0,0, ldraw_lib__4_4edge()],
+  [1,16,0,0,0,0,0,3.75,0,1,0,-3.75,0,0, ldraw_lib__4_4edge(realsolid)],
 // 5 24 0 9.5 -4 0 10.5 -2.75 1.5308 9.5 -3.6956 -1.5308 9.5 -3.6956
   [5,24,0,9.5,-4,0,10.5,-2.75,1.5308,9.5,-3.6956,-1.5308,9.5,-3.6956],
 // 5 24 0 10.5 2.75 0 9.5 4 1.5308 9.5 3.6956 -1.5308 9.5 3.6956
@@ -84,5 +85,5 @@ function ldraw_lib__95051() = [
   [5,24,0,-4.185,-8.625,0,-3.986,-9.257,0.376,-4.123,-8.722,-0.376,-4.123,-8.722],
 ];
 module ldraw_lib__95051(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__95051(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__95051(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__95051(line=0.2);

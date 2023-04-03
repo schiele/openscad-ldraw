@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <empty.scad>
-function ldraw_lib__box3#8p() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__box3#8p(realsolid=false) = [
 // 0 ~Obsolete file
 // 0 Name: box3#8p.dat
 // 0 Author: [PTadmin]
@@ -16,8 +17,8 @@ function ldraw_lib__box3#8p() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 empty.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__empty()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__empty(realsolid)],
 ];
 module ldraw_lib__box3#8p(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__box3#8p(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__box3#8p(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__box3#8p(line=0.2);

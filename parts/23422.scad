@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/23422s01.scad>
-function ldraw_lib__23422() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__23422(realsolid=false) = [
 // 0 Handle for Pole 32 with Shaft and Helical Groove
 // 0 Name: 23422.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -23,9 +24,9 @@ function ldraw_lib__23422() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\23422s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__23422s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__23422s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\23422s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__23422s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__23422s01(realsolid)],
 // 3 16 0 4.5 7 0.7 1.55 4.65 -0.7 1.55 4.65
   [3,16,0,4.5,7,0.7,1.55,4.65,-0.7,1.55,4.65],
 // 4 16 -.7 -1.55 4.65 -.7 1.55 4.65 .7 1.55 4.65 .7 -1.55 4.65
@@ -38,5 +39,5 @@ function ldraw_lib__23422() = [
   [5,24,-.7,1.55,4.65,.7,1.55,4.65,0,4.5,7,-.7,-1.55,4.65],
 ];
 module ldraw_lib__23422(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__23422(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__23422(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__23422(line=0.2);

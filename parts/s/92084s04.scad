@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__92084s04() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__92084s04(realsolid=false) = [
 // 0 ~Animal Owl with Angular Feathers - Beak
 // 0 Name: s\92084s04.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -155,5 +156,5 @@ function ldraw_lib__s__92084s04() = [
   [5,24,0,-43.278,-16.849,0,-41.728,-15.334,-0.876,-43.064,-16.702,0.876,-43.064,-16.702],
 ];
 module ldraw_lib__s__92084s04(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__92084s04(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__92084s04(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__92084s04(line=0.2);

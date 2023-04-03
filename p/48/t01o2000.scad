@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <t04o2000.scad>
-function ldraw_lib__48__t01o2000() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__48__t01o2000(realsolid=false) = [
 // 0 Hi-Res Torus Outside  1 x 0.2000 x 1
 // 0 Name: 48\t01o2000.dat
 // 0 Author: Alex Taylor [anathema]
@@ -15,14 +16,14 @@ function ldraw_lib__48__t01o2000() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 48\t04o2000.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__48__t04o2000()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__48__t04o2000(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 48\t04o2000.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__48__t04o2000()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__48__t04o2000(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 -1 48\t04o2000.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__48__t04o2000()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__48__t04o2000(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 -1 48\t04o2000.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__48__t04o2000()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__48__t04o2000(realsolid)],
 ];
 module ldraw_lib__48__t01o2000(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__48__t01o2000(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__48__t01o2000(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__48__t01o2000(line=0.2);

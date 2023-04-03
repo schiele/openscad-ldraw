@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <3240a.scad>
-function ldraw_lib__3240c() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3240c(realsolid=false) = [
 // 0 Train Track 12V Straight Insert with Decoupler Underside Cutout
 // 0 Name: 3240c.dat
 // 0 Author: Steffen [Steffen]
@@ -21,8 +22,8 @@ function ldraw_lib__3240c() = [
 // 0 // Its real file contents still needs to be modeled.
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 3240a.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3240a()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3240a(realsolid)],
 ];
 module ldraw_lib__3240c(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3240c(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3240c(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3240c(line=0.2);

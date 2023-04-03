@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/4198s01.scad>
-function ldraw_lib__4198p05() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4198p05(realsolid=false) = [
 // 0 Duplo Brick  2 x  4 x  2 with Rounded Ends with Freckle Face Pattern
 // 0 Name: 4198p05.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -18,7 +19,7 @@ function ldraw_lib__4198p05() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4198s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4198s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4198s01(realsolid)],
 // 4 0 -26.96 50.87 -40 -29.66 53.39 -40 -27.35 53.85 -40 -25 51 -40
   [4,0,-26.96,50.87,-40,-29.66,53.39,-40,-27.35,53.85,-40,-25,51,-40],
 // 4 0 -25 51 -40 -27.35 53.85 -40 -25 54 -40 -23.04 50.87 -40
@@ -1035,5 +1036,5 @@ function ldraw_lib__4198p05() = [
   [3,16,42.39,31.34,-40,42.85,33.65,-40,52.41,42.38,-40],
 ];
 module ldraw_lib__4198p05(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4198p05(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4198p05(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4198p05(line=0.2);

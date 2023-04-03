@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4edge.scad>
 use <../p/connect.scad>
 use <s/47994s01.scad>
-function ldraw_lib__47994() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__47994(realsolid=false) = [
 // 0 Technic Connector  3 x  1 x  3 with 2 Clips and 2 Pins with Round Inside
 // 0 Name: 47994.dat
 // 0 Author: Andy Westrate [westrate]
@@ -21,27 +22,27 @@ function ldraw_lib__47994() = [
 // 
 // 
 // 1 16 0 0 0 0 1 0 0 0 -1 -1 0 0 s\47994s01.dat
-  [1,16,0,0,0,0,1,0,0,0,-1,-1,0,0, ldraw_lib__s__47994s01()],
+  [1,16,0,0,0,0,1,0,0,0,-1,-1,0,0, ldraw_lib__s__47994s01(realsolid)],
 // 1 16 0 0 0 0 1 0 0 0 1 -1 0 0 s\47994s01.dat
-  [1,16,0,0,0,0,1,0,0,0,1,-1,0,0, ldraw_lib__s__47994s01()],
+  [1,16,0,0,0,0,1,0,0,0,1,-1,0,0, ldraw_lib__s__47994s01(realsolid)],
 // 1 16 0 0 0 0 1 0 0 0 -1 1 0 0 s\47994s01.dat
-  [1,16,0,0,0,0,1,0,0,0,-1,1,0,0, ldraw_lib__s__47994s01()],
+  [1,16,0,0,0,0,1,0,0,0,-1,1,0,0, ldraw_lib__s__47994s01(realsolid)],
 // 1 16 0 0 0 0 1 0 0 0 1 1 0 0 s\47994s01.dat
-  [1,16,0,0,0,0,1,0,0,0,1,1,0,0, ldraw_lib__s__47994s01()],
+  [1,16,0,0,0,0,1,0,0,0,1,1,0,0, ldraw_lib__s__47994s01(realsolid)],
 // 
 // 1 16 0 -20 0 0 -1 0 0 0 1 1 0 0 connect.dat
-  [1,16,0,-20,0,0,-1,0,0,0,1,1,0,0, ldraw_lib__connect()],
+  [1,16,0,-20,0,0,-1,0,0,0,1,1,0,0, ldraw_lib__connect(realsolid)],
 // 1 16 0 20 0 0 -1 0 0 0 1 1 0 0 connect.dat
-  [1,16,0,20,0,0,-1,0,0,0,1,1,0,0, ldraw_lib__connect()],
+  [1,16,0,20,0,0,-1,0,0,0,1,1,0,0, ldraw_lib__connect(realsolid)],
 // 1 16 0 -20 0 0 -1 0 0 0 8 8 0 0 4-4edge.dat
-  [1,16,0,-20,0,0,-1,0,0,0,8,8,0,0, ldraw_lib__4_4edge()],
+  [1,16,0,-20,0,0,-1,0,0,0,8,8,0,0, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 20 0 0 -1 0 0 0 8 8 0 0 4-4edge.dat
-  [1,16,0,20,0,0,-1,0,0,0,8,8,0,0, ldraw_lib__4_4edge()],
+  [1,16,0,20,0,0,-1,0,0,0,8,8,0,0, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 -20 0 0 -1 0 0 0 4 4 0 0 4-4edge.dat
-  [1,16,0,-20,0,0,-1,0,0,0,4,4,0,0, ldraw_lib__4_4edge()],
+  [1,16,0,-20,0,0,-1,0,0,0,4,4,0,0, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 20 0 0 -1 0 0 0 4 4 0 0 4-4edge.dat
-  [1,16,0,20,0,0,-1,0,0,0,4,4,0,0, ldraw_lib__4_4edge()],
+  [1,16,0,20,0,0,-1,0,0,0,4,4,0,0, ldraw_lib__4_4edge(realsolid)],
 ];
 module ldraw_lib__47994(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__47994(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__47994(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__47994(line=0.2);

@@ -2,7 +2,8 @@ use <../../lib.scad>
 use <../../p/4-4con2.scad>
 use <../../p/4-4con5.scad>
 use <../../p/4-4edge.scad>
-function ldraw_lib__s__4208s03() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__4208s03(realsolid=false) = [
 // 0 ~Hose Reel  2 x  4 x  2 Drum - String Hole
 // 0 Name: s\4208s03.dat
 // 0 Author: N. W. Perry [Plastikean]
@@ -17,17 +18,17 @@ function ldraw_lib__s__4208s03() = [
 // 
 // 
 // 1 16 0 -2.857 0 2.5 0 0 0 1 0 0 0 2.5 4-4edge.dat
-  [1,16,0,-2.857,0,2.5,0,0,0,1,0,0,0,2.5, ldraw_lib__4_4edge()],
+  [1,16,0,-2.857,0,2.5,0,0,0,1,0,0,0,2.5, ldraw_lib__4_4edge(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -3.482 0 1.25 0 0 0 0.625 0 0 0 1.25 4-4con2.dat
-  [1,16,0,-3.482,0,1.25,0,0,0,0.625,0,0,0,1.25, ldraw_lib__4_4con2()],
+  [1,16,0,-3.482,0,1.25,0,0,0,0.625,0,0,0,1.25, ldraw_lib__4_4con2(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -3.857 0 0.75 0 0 0 0.375 0 0 0 0.75 4-4con5.dat
-  [1,16,0,-3.857,0,0.75,0,0,0,0.375,0,0,0,0.75, ldraw_lib__4_4con5()],
+  [1,16,0,-3.857,0,0.75,0,0,0,0.375,0,0,0,0.75, ldraw_lib__4_4con5(realsolid)],
 // 1 16 0 -3.857 0 4.5 0 0 0 1 0 0 0 4.5 4-4edge.dat
-  [1,16,0,-3.857,0,4.5,0,0,0,1,0,0,0,4.5, ldraw_lib__4_4edge()],
+  [1,16,0,-3.857,0,4.5,0,0,0,1,0,0,0,4.5, ldraw_lib__4_4edge(realsolid)],
 // 
 // 4 16 -1.722 -3.857 4.158 0 -3.857 4.5 -1.294 -4.243 4.243 -1.722 -4.299 4.158
   [4,16,-1.722,-3.857,4.158,0,-3.857,4.5,-1.294,-4.243,4.243,-1.722,-4.299,4.158],
@@ -222,5 +223,5 @@ function ldraw_lib__s__4208s03() = [
   [5,24,4.5,-2.296,5.543,-4.5,-2.296,5.543,4.5,-4.243,4.243,4.5,0,6],
 ];
 module ldraw_lib__s__4208s03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__4208s03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__4208s03(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__4208s03(line=0.2);

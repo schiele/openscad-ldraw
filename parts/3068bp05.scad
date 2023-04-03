@@ -3,7 +3,8 @@ use <../p/1-4chrd.scad>
 use <../p/1-8chrd.scad>
 use <../p/4-4ndis.scad>
 use <s/3068bs01.scad>
-function ldraw_lib__3068bp05() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3068bp05(realsolid=false) = [
 // 0 Tile  2 x  2 with Diagonal Arrow on Blue Disc Pattern
 // 0 Name: 3068bp05.dat
 // 0 Author: Tore Eriksson [Tore_Eriksson]
@@ -25,21 +26,21 @@ function ldraw_lib__3068bp05() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3068bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3068bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3068bs01(realsolid)],
 // 1 16 0 0 0 18 0 0 0 1 0 0 0 18 4-4ndis.dat
-  [1,16,0,0,0,18,0,0,0,1,0,0,0,18, ldraw_lib__4_4ndis()],
+  [1,16,0,0,0,18,0,0,0,1,0,0,0,18, ldraw_lib__4_4ndis(realsolid)],
 // 1 1 0 0 0 0 0 -18 0 1 0 18 0 0 1-4chrd.dat
-  [1,1,0,0,0,0,0,-18,0,1,0,18,0,0, ldraw_lib__1_4chrd()],
+  [1,1,0,0,0,0,0,-18,0,1,0,18,0,0, ldraw_lib__1_4chrd(realsolid)],
 // 1 1 0 0 0 0 0 18 0 1 0 -18 0 0 1-4chrd.dat
-  [1,1,0,0,0,0,0,18,0,1,0,-18,0,0, ldraw_lib__1_4chrd()],
+  [1,1,0,0,0,0,0,18,0,1,0,-18,0,0, ldraw_lib__1_4chrd(realsolid)],
 // 1 1 0 0 0 -12.728 0 12.728 0 1 0 -12.728 0 -12.728 1-8chrd.dat
-  [1,1,0,0,0,-12.728,0,12.728,0,1,0,-12.728,0,-12.728, ldraw_lib__1_8chrd()],
+  [1,1,0,0,0,-12.728,0,12.728,0,1,0,-12.728,0,-12.728, ldraw_lib__1_8chrd(realsolid)],
 // 1 1 0 0 0 -18 0 0 0 1 0 0 0 -18 1-8chrd.dat
-  [1,1,0,0,0,-18,0,0,0,1,0,0,0,-18, ldraw_lib__1_8chrd()],
+  [1,1,0,0,0,-18,0,0,0,1,0,0,0,-18, ldraw_lib__1_8chrd(realsolid)],
 // 1 1 0 0 0 12.728 0 -12.728 0 1 0 12.728 0 12.728 1-8chrd.dat
-  [1,1,0,0,0,12.728,0,-12.728,0,1,0,12.728,0,12.728, ldraw_lib__1_8chrd()],
+  [1,1,0,0,0,12.728,0,-12.728,0,1,0,12.728,0,12.728, ldraw_lib__1_8chrd(realsolid)],
 // 1 1 0 0 0 18 0 0 0 1 0 0 0 18 1-8chrd.dat
-  [1,1,0,0,0,18,0,0,0,1,0,0,0,18, ldraw_lib__1_8chrd()],
+  [1,1,0,0,0,18,0,0,0,1,0,0,0,18, ldraw_lib__1_8chrd(realsolid)],
 // 4 16 18 0 18 20 0 20 -20 0 20 -18 0 18
   [4,16,18,0,18,20,0,20,-20,0,20,-18,0,18],
 // 4 16 -18 0 18 -20 0 20 -20 0 -20 -18 0 -18
@@ -79,5 +80,5 @@ function ldraw_lib__3068bp05() = [
 // 0
 ];
 module ldraw_lib__3068bp05(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3068bp05(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3068bp05(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3068bp05(line=0.2);

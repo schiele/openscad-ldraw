@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4cylc.scad>
 use <s/30371s01.scad>
 use <s/92743s01.scad>
-function ldraw_lib__30371() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__30371(realsolid=false) = [
 // 0 Minifig Head Gungan with Split Eyes (Needs Work)
 // 0 Name: 30371.dat
 // 0 Author: Stan Isachenko [angmarec]
@@ -21,18 +22,18 @@ function ldraw_lib__30371() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\92743s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__92743s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__92743s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\92743s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__92743s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__92743s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\30371s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30371s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30371s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\30371s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__30371s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__30371s01(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -20.737 0 6 0 0 0 20.737 0 0 0 6 4-4cylc.dat
-  [1,16,0,-20.737,0,6,0,0,0,20.737,0,0,0,6, ldraw_lib__4_4cylc()],
+  [1,16,0,-20.737,0,6,0,0,0,20.737,0,0,0,6, ldraw_lib__4_4cylc(realsolid)],
 ];
 module ldraw_lib__30371(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__30371(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__30371(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__30371(line=0.2);

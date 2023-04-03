@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__letaa() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__letaa(realsolid=false) = [
 // 0 ~Mindstorms RCX Letter "A"
 // 0 Name: s\letaa.dat
 // 0 Author: John Van Zwieten [jvan]
@@ -23,5 +24,5 @@ function ldraw_lib__s__letaa() = [
 // 0
 ];
 module ldraw_lib__s__letaa(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__letaa(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__letaa(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__letaa(line=0.2);

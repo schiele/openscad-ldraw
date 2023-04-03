@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/toothl.scad>
-function ldraw_lib__s__569s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__569s01(realsolid=false) = [
 // 0 ~Technic Gear  9 Large Tooth -  3 Teeth
 // 0 Name: s\569s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -15,11 +16,11 @@ function ldraw_lib__s__569s01() = [
 // 
 // 
 // 1 16 0 -22 0 0 -1 0 0 0 -1 1 0 0 toothl.dat
-  [1,16,0,-22,0,0,-1,0,0,0,-1,1,0,0, ldraw_lib__toothl()],
+  [1,16,0,-22,0,0,-1,0,0,0,-1,1,0,0, ldraw_lib__toothl(realsolid)],
 // 1 16 14.1413 -16.853 0 0 -0.76604 0.64279 0 -0.64279 -0.76604 1 0 0 toothl.dat
-  [1,16,14.1413,-16.853,0,0,-0.76604,0.64279,0,-0.64279,-0.76604,1,0,0, ldraw_lib__toothl()],
+  [1,16,14.1413,-16.853,0,0,-0.76604,0.64279,0,-0.64279,-0.76604,1,0,0, ldraw_lib__toothl(realsolid)],
 // 1 16 21.6658 -3.8203 0 0 -0.17365 0.98481 0 -0.98481 -0.17365 1 0 0 toothl.dat
-  [1,16,21.6658,-3.8203,0,0,-0.17365,0.98481,0,-0.98481,-0.17365,1,0,0, ldraw_lib__toothl()],
+  [1,16,21.6658,-3.8203,0,0,-0.17365,0.98481,0,-0.98481,-0.17365,1,0,0, ldraw_lib__toothl(realsolid)],
 // 2 24 21.8796 -1.8271 6 21.9971 -0.0439 3.3353
   [2,24,21.8796,-1.8271,6,21.9971,-0.0439,3.3353],
 // 2 24 16.8063 -14.1322 3.3144 15.6113 -15.4934 6
@@ -66,5 +67,5 @@ function ldraw_lib__s__569s01() = [
   [2,24,16.8063,-14.1322,-3.3144,16.8063,-14.1322,3.3144],
 ];
 module ldraw_lib__s__569s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__569s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__569s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__569s01(line=0.2);

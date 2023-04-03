@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <2408p01.scad>
-function ldraw_lib__81599() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__81599(realsolid=false) = [
 // 0 ~_Panel 10 x  6 x 11 with Blacktron II Logo Pattern (Obsolete)
 // 0 Name: 81599.dat
 // 0 Author: [PTadmin]
@@ -19,8 +20,8 @@ function ldraw_lib__81599() = [
 // 
 // 
 // 1 42 0 0 0 1 0 0 0 1 0 0 0 1 2408p01.dat
-  [1,42,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2408p01()],
+  [1,42,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2408p01(realsolid)],
 ];
 module ldraw_lib__81599(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__81599(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__81599(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__81599(line=0.2);

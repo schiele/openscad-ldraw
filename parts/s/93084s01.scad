@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/2-4cylc.scad>
-function ldraw_lib__s__93084s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__93084s01(realsolid=false) = [
 // 0 ~Animal Horse Friends Tail Left
 // 0 Name: s\93084s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -771,7 +772,7 @@ function ldraw_lib__s__93084s01() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -29.44 53.72 0 0 2 0 -8 0 2 0 0 2-4cylc.dat
-  [1,16,0,-29.44,53.72,0,0,2,0,-8,0,2,0,0, ldraw_lib__2_4cylc()],
+  [1,16,0,-29.44,53.72,0,0,2,0,-8,0,2,0,0, ldraw_lib__2_4cylc(realsolid)],
 // 2 24 0 -37.44 55.72 0 -29.44 55.72
   [2,24,0,-37.44,55.72,0,-29.44,55.72],
 // 2 24 0 -37.44 51.72 0 -29.44 51.72
@@ -780,5 +781,5 @@ function ldraw_lib__s__93084s01() = [
   [2,24,0,-29.44,51.72,0,-29.44,55.72],
 ];
 module ldraw_lib__s__93084s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__93084s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__93084s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__93084s01(line=0.2);

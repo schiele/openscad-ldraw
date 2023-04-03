@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/30249s01.scad>
-function ldraw_lib__30249ps0() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__30249ps0(realsolid=false) = [
 // 0 Slope Brick 55  1 x  6 x  5 with Red Quadrilateral and Dark Grey Lines and Symbols Pattern
 // 0 Name: 30249ps0.dat
 // 0 Author: Damien Roux [Darats]
@@ -19,7 +20,7 @@ function ldraw_lib__30249ps0() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\30249s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30249s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30249s01(realsolid)],
 // 0 // Pattern 1
 // 4 8 10 119 5 10 76 5 10 76 3 10 119 3
   [4,8,10,119,5,10,76,5,10,76,3,10,119,3],
@@ -688,5 +689,5 @@ function ldraw_lib__30249ps0() = [
   [4,8,-10,102.511,-47.167,-10,101.615,-49.33,-10,99.654,-48.939,-10,100.848,-46.055],
 ];
 module ldraw_lib__30249ps0(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__30249ps0(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__30249ps0(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__30249ps0(line=0.2);

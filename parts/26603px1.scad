@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/26603s01.scad>
-function ldraw_lib__26603px1() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__26603px1(realsolid=false) = [
 // 0 Tile  2 x  3 with Black Pixelated Arrow and Dark Brown Squares and Lines Pattern
 // 0 Name: 26603px1.dat
 // 0 Author: Vincent Messenet [Cheenzo]
@@ -17,7 +18,7 @@ function ldraw_lib__26603px1() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\26603s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__26603s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__26603s01(realsolid)],
 // 
 // 3 308 -29.25 0 19.25 -29.25 0 15.75 -26 0 15.75
   [3,308,-29.25,0,19.25,-29.25,0,15.75,-26,0,15.75],
@@ -153,5 +154,5 @@ function ldraw_lib__26603px1() = [
   [3,16,-29.25,0,15.75,-29.25,0,19.25,-30,0,20],
 ];
 module ldraw_lib__26603px1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__26603px1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__26603px1(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__26603px1(line=0.2);

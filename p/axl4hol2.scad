@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <1-4edge.scad>
-function ldraw_lib__axl4hol2() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__axl4hol2(realsolid=false) = [
 // 0 Technic Axle Hole Two-toothed Sliding Side Edges
 // 0 Name: axl4hol2.dat
 // 0 Author: Santeri Piippo [arezey]
@@ -23,10 +24,10 @@ function ldraw_lib__axl4hol2() = [
 // 2 24 -6 0 0 -5.602 0 2
   [2,24,-6,0,0,-5.602,0,2],
 // 1 16 0 0 0 6 0 0 0 1 0 0 0 6 1-4edge.dat
-  [1,16,0,0,0,6,0,0,0,1,0,0,0,6, ldraw_lib__1_4edge()],
+  [1,16,0,0,0,6,0,0,0,1,0,0,0,6, ldraw_lib__1_4edge(realsolid)],
 // 1 16 0 0 0 -6 0 0 0 1 0 0 0 -6 1-4edge.dat
-  [1,16,0,0,0,-6,0,0,0,1,0,0,0,-6, ldraw_lib__1_4edge()],
+  [1,16,0,0,0,-6,0,0,0,1,0,0,0,-6, ldraw_lib__1_4edge(realsolid)],
 ];
 module ldraw_lib__axl4hol2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__axl4hol2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__axl4hol2(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__axl4hol2(line=0.2);

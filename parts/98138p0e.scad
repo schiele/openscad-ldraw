@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4rin17.scad>
 use <s/98138s01.scad>
-function ldraw_lib__98138p0e() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__98138p0e(realsolid=false) = [
 // 0 Tile  1 x  1 Round with Silver Dot in Thin Black Circle Pattern
 // 0 Name: 98138p0e.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -19,12 +20,12 @@ function ldraw_lib__98138p0e() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\98138s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01(realsolid)],
 // 1 80 0 0 0 8.5 0 0 0 1 0 0 0 8.5 4-4disc.dat
-  [1,80,0,0,0,8.5,0,0,0,1,0,0,0,8.5, ldraw_lib__4_4disc()],
+  [1,80,0,0,0,8.5,0,0,0,1,0,0,0,8.5, ldraw_lib__4_4disc(realsolid)],
 // 1 0 0 0 0 0.5 0 0 0 1 0 0 0 0.5 4-4rin17.dat
-  [1,0,0,0,0,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__4_4rin17()],
+  [1,0,0,0,0,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__4_4rin17(realsolid)],
 ];
 module ldraw_lib__98138p0e(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__98138p0e(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__98138p0e(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__98138p0e(line=0.2);

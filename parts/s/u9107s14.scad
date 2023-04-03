@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__u9107s14() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__u9107s14(realsolid=false) = [
 // 0 ~Figure Fabuland Raccoon Eye  3
 // 0 Name: s\u9107s14.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -1599,5 +1600,5 @@ function ldraw_lib__s__u9107s14() = [
   [5,24,6.796,-39.571,-16.224,4.342,-41.106,-16.214,6.757,-37.58,-17.884,4.881,-41.529,-15.71],
 ];
 module ldraw_lib__s__u9107s14(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__u9107s14(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__u9107s14(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__u9107s14(line=0.2);

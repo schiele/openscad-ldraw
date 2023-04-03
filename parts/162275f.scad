@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__162275f() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__162275f(realsolid=false) = [
 // 0 Sticker  1.5 x  2.5 with Black Outlined Yellow "23" on Transparent Background
 // 0 Name: 162275f.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -18,7 +19,7 @@ function ldraw_lib__162275f() = [
 // 
 // 
 // 1 16 0 -0.25 0 25 0 0 0 0.25 0 0 0 15 box5-12.dat
-  [1,16,0,-0.25,0,25,0,0,0,0.25,0,0,0,15, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,25,0,0,0,0.25,0,0,0,15, ldraw_lib__box5_12(realsolid)],
 // 0 BFC NOCLIP
   [0,"BFC","NOCLIP"],
 // 4 14 -17.5 -0.25 7.5 -17.5 -0.25 5.5 -14.5 -0.25 5.5 -14.5 -0.25 7
@@ -215,5 +216,5 @@ function ldraw_lib__162275f() = [
   [3,16,-25,-0.25,15,-15,-0.25,13,-5.5,-0.25,13],
 ];
 module ldraw_lib__162275f(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__162275f(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__162275f(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__162275f(line=0.2);

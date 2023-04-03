@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/2528as01.scad>
 use <s/2528as03.scad>
-function ldraw_lib__2528ap3a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2528ap3a(realsolid=false) = [
 // 0 Minifig Hat Bicorne with Corrugated Metallic Silver Minifigure Skull and Crossed Spanners on Dark Bluish Grey Background Pattern
 // 0 Name: 2528ap3a.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -20,12 +21,12 @@ function ldraw_lib__2528ap3a() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2528as01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2528as01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2528as01(realsolid)],
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 -1 s\2528as03.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__2528as03()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__2528as03(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 -1 s\2528as03.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__2528as03()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__2528as03(realsolid)],
 // 
 // 4 72 -8.2196 2.6377 -12.7622 -9.38101 2.54229 -12.11663 -9.75 2.77 -11.94351 -8.3712 2.71773 -12.6894
   [4,72,-8.2196,2.6377,-12.7622,-9.38101,2.54229,-12.11663,-9.75,2.77,-11.94351,-8.3712,2.71773,-12.6894],
@@ -1121,5 +1122,5 @@ function ldraw_lib__2528ap3a() = [
   [3,16,5.19,-12.16,-8.68549,5.25033,-10.61127,-9.5526,6.4843,-10.2878,-9.5286],
 ];
 module ldraw_lib__2528ap3a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2528ap3a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2528ap3a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2528ap3a(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <42604.scad>
-function ldraw_lib__55539() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__55539(realsolid=false) = [
 // 0 =Panel  6 x  8 x  4 Fuselage
 // 0 Name: 55539.dat
 // 0 Author: Bernd Broich [bbroich]
@@ -19,9 +20,9 @@ function ldraw_lib__55539() = [
 // 0 // Transparent counterpart to 42604
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 42604.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__42604()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__42604(realsolid)],
 // 0
 ];
 module ldraw_lib__55539(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__55539(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__55539(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__55539(line=0.2);

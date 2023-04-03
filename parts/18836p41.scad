@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/18836s01.scad>
-function ldraw_lib__18836p41() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__18836p41(realsolid=false) = [
 // 0 Minifig Shield Triangular Long with Gold Rampant Lions and Crossed Keys Pattern
 // 0 Name: 18836p41.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -18,7 +19,7 @@ function ldraw_lib__18836p41() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\18836s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__18836s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__18836s01(realsolid)],
 // 
 // 4 82 -10.61 -27.31 -12 -10.61 -27.99 -12 -11.06 -27.76 -12 -10.91 -27 -12
   [4,82,-10.61,-27.31,-12,-10.61,-27.99,-12,-11.06,-27.76,-12,-10.91,-27,-12],
@@ -2858,5 +2859,5 @@ function ldraw_lib__18836p41() = [
   [4,16,19.56,-0.5,-12,19.06,-0.5,-12,17.76,5.41,-12,18.26,5.41,-12],
 ];
 module ldraw_lib__18836p41(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__18836p41(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__18836p41(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__18836p41(line=0.2);

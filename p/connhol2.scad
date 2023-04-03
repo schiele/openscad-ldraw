@@ -8,7 +8,8 @@ use <4-4ring3.scad>
 use <4-4ring8.scad>
 use <peghole.scad>
 use <rect2p.scad>
-function ldraw_lib__connhol2() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__connhol2(realsolid=false) = [
 // 0 Technic Connector Hole Long with Extended End
 // 0 Name: connhol2.dat
 // 0 Author: Santeri Piippo [arezey]
@@ -23,33 +24,33 @@ function ldraw_lib__connhol2() = [
 // 
 // 
 // 1 16 0 10 0 1 0 0 0 -1 0 0 0 1 peghole.dat
-  [1,16,0,10,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__peghole()],
+  [1,16,0,10,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__peghole(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -8 0 6 0 0 0 16 0 0 0 6 4-4cyli.dat
-  [1,16,0,-8,0,6,0,0,0,16,0,0,0,6, ldraw_lib__4_4cyli()],
+  [1,16,0,-8,0,6,0,0,0,16,0,0,0,6, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 10 0 1 0 0 0 -1 0 0 0 -1 4-4ring8.dat
-  [1,16,0,10,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__4_4ring8()],
+  [1,16,0,10,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__4_4ring8(realsolid)],
 // 1 16 0 -8 0 6 0 0 0 -1 0 0 0 -6 4-4edge.dat
-  [1,16,0,-8,0,6,0,0,0,-1,0,0,0,-6, ldraw_lib__4_4edge()],
+  [1,16,0,-8,0,6,0,0,0,-1,0,0,0,-6, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 -8 0 2 0 0 0 1 0 0 0 2 4-4ring3.dat
-  [1,16,0,-8,0,2,0,0,0,1,0,0,0,2, ldraw_lib__4_4ring3()],
+  [1,16,0,-8,0,2,0,0,0,1,0,0,0,2, ldraw_lib__4_4ring3(realsolid)],
 // 1 16 0 -8 0 8 0 0 0 1 0 0 0 8 2-4ndis.dat
-  [1,16,0,-8,0,8,0,0,0,1,0,0,0,8, ldraw_lib__2_4ndis()],
+  [1,16,0,-8,0,8,0,0,0,1,0,0,0,8, ldraw_lib__2_4ndis(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -8 0 -8 0 0 0 -2 0 0 0 -8 2-4cyli.dat
-  [1,16,0,-8,0,-8,0,0,0,-2,0,0,0,-8, ldraw_lib__2_4cyli()],
+  [1,16,0,-8,0,-8,0,0,0,-2,0,0,0,-8, ldraw_lib__2_4cyli(realsolid)],
 // 1 16 0 -8 0 -8 0 0 0 -1 0 0 0 -8 2-4edge.dat
-  [1,16,0,-8,0,-8,0,0,0,-1,0,0,0,-8, ldraw_lib__2_4edge()],
+  [1,16,0,-8,0,-8,0,0,0,-1,0,0,0,-8, ldraw_lib__2_4edge(realsolid)],
 // 1 16 0 -10 0 -8 0 0 0 -1 0 0 0 -8 2-4edge.dat
-  [1,16,0,-10,0,-8,0,0,0,-1,0,0,0,-8, ldraw_lib__2_4edge()],
+  [1,16,0,-10,0,-8,0,0,0,-1,0,0,0,-8, ldraw_lib__2_4edge(realsolid)],
 // 1 16 -8 -9 4 0 -1 0 0 0 1 -4 0 0 rect2p.dat
-  [1,16,-8,-9,4,0,-1,0,0,0,1,-4,0,0, ldraw_lib__rect2p()],
+  [1,16,-8,-9,4,0,-1,0,0,0,1,-4,0,0, ldraw_lib__rect2p(realsolid)],
 // 1 16 8 -9 4 0 1 0 0 0 1 -4 0 0 rect2p.dat
-  [1,16,8,-9,4,0,1,0,0,0,1,-4,0,0, ldraw_lib__rect2p()],
+  [1,16,8,-9,4,0,1,0,0,0,1,-4,0,0, ldraw_lib__rect2p(realsolid)],
 // 0 //
 ];
 module ldraw_lib__connhol2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__connhol2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__connhol2(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__connhol2(line=0.2);

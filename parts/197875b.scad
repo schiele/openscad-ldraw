@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__197875b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__197875b(realsolid=false) = [
 // 0 Sticker  0.8 x  1.9 with White "4010"
 // 0 Name: 197875b.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -17,7 +18,7 @@ function ldraw_lib__197875b() = [
 // 
 // 
 // 1 16 0 -0.25 0 19 0 0 0 0.25 0 0 0 8 box5-12.dat
-  [1,16,0,-0.25,0,19,0,0,0,0.25,0,0,0,8, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,19,0,0,0,0.25,0,0,0,8, ldraw_lib__box5_12(realsolid)],
 // 4 16 -2.9 -0.25 0 -5.1192 -0.25 1.2839 -5.302 -0.25 0 -5.1192 -0.25 -1.2839
   [4,16,-2.9,-0.25,0,-5.1192,-0.25,1.2839,-5.302,-0.25,0,-5.1192,-0.25,-1.2839],
 // 4 16 -2.9 -0.25 0 -5.1192 -0.25 -1.2839 -4.5985 -0.25 -2.3723 -3.8192 -0.25 -3.0996
@@ -232,5 +233,5 @@ function ldraw_lib__197875b() = [
   [3,16,-8.6,-0.25,4.6,-5.6033,-0.25,3.339,-4.363,-0.25,4.3626],
 ];
 module ldraw_lib__197875b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__197875b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__197875b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__197875b(line=0.2);

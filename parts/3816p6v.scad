@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3816s01.scad>
-function ldraw_lib__3816p6v() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3816p6v(realsolid=false) = [
 // 0 ~Minifig Leg Right with Salmon Cable Pattern (Obsolete)
 // 0 Name: 3816p6v.dat
 // 0 Author: Nils Schmidt [BlackBrick89]
@@ -19,7 +20,7 @@ function ldraw_lib__3816p6v() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3816s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3816s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3816s01(realsolid)],
 // 4 16 -19.18 20 -6 -19.18 20 -11 -1.5 20 -11 -1.5 20 -6
   [4,16,-19.18,20,-6,-19.18,20,-11,-1.5,20,-11,-1.5,20,-6],
 // 3 16 -18.9401 20 -11 -19.18 20 -11 -19.2089 20.7222 -11
@@ -962,5 +963,5 @@ function ldraw_lib__3816p6v() = [
   [4,16,-2,-6.3,-6.3,-2.2995,-6.3,-6.3,-2.31,-6.28,-6.3137,-2,-5.4627,-6.8756],
 ];
 module ldraw_lib__3816p6v(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3816p6v(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3816p6v(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3816p6v(line=0.2);

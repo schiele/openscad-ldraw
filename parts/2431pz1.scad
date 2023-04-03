@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/1-4chrd.scad>
 use <../p/1-4ndis.scad>
 use <s/2431s01.scad>
-function ldraw_lib__2431pz1() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2431pz1(realsolid=false) = [
 // 0 Tile  1 x  4 with Black and Light Yellow Triangle on Red Rectangle Pattern
 // 0 Name: 2431pz1.dat
 // 0 Author: Damien Roux [Darats]
@@ -19,23 +20,23 @@ function ldraw_lib__2431pz1() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2431s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2431s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2431s01(realsolid)],
 // 1 4 -35.5 0 -5.1 -1.5 0 0 0 1 0 0 0 -1.5 1-4chrd.dat
-  [1,4,-35.5,0,-5.1,-1.5,0,0,0,1,0,0,0,-1.5, ldraw_lib__1_4chrd()],
+  [1,4,-35.5,0,-5.1,-1.5,0,0,0,1,0,0,0,-1.5, ldraw_lib__1_4chrd(realsolid)],
 // 1 4 -35.5 0 4.3 0 0 -1.5 0 1 0 1.5 0 0 1-4chrd.dat
-  [1,4,-35.5,0,4.3,0,0,-1.5,0,1,0,1.5,0,0, ldraw_lib__1_4chrd()],
+  [1,4,-35.5,0,4.3,0,0,-1.5,0,1,0,1.5,0,0, ldraw_lib__1_4chrd(realsolid)],
 // 1 4 35.5 0 -5.1 0 0 1.5 0 1 0 -1.5 0 0 1-4chrd.dat
-  [1,4,35.5,0,-5.1,0,0,1.5,0,1,0,-1.5,0,0, ldraw_lib__1_4chrd()],
+  [1,4,35.5,0,-5.1,0,0,1.5,0,1,0,-1.5,0,0, ldraw_lib__1_4chrd(realsolid)],
 // 1 4 35.5 0 4.3 1.5 0 0 0 1 0 0 0 1.5 1-4chrd.dat
-  [1,4,35.5,0,4.3,1.5,0,0,0,1,0,0,0,1.5, ldraw_lib__1_4chrd()],
+  [1,4,35.5,0,4.3,1.5,0,0,0,1,0,0,0,1.5, ldraw_lib__1_4chrd(realsolid)],
 // 1 16 -35.5 0 -5.1 -1.5 0 0 0 1 0 0 0 -1.5 1-4ndis.dat
-  [1,16,-35.5,0,-5.1,-1.5,0,0,0,1,0,0,0,-1.5, ldraw_lib__1_4ndis()],
+  [1,16,-35.5,0,-5.1,-1.5,0,0,0,1,0,0,0,-1.5, ldraw_lib__1_4ndis(realsolid)],
 // 1 16 -35.5 0 4.3 0 0 -1.5 0 1 0 1.5 0 0 1-4ndis.dat
-  [1,16,-35.5,0,4.3,0,0,-1.5,0,1,0,1.5,0,0, ldraw_lib__1_4ndis()],
+  [1,16,-35.5,0,4.3,0,0,-1.5,0,1,0,1.5,0,0, ldraw_lib__1_4ndis(realsolid)],
 // 1 16 35.5 0 -5.1 0 0 1.5 0 1 0 -1.5 0 0 1-4ndis.dat
-  [1,16,35.5,0,-5.1,0,0,1.5,0,1,0,-1.5,0,0, ldraw_lib__1_4ndis()],
+  [1,16,35.5,0,-5.1,0,0,1.5,0,1,0,-1.5,0,0, ldraw_lib__1_4ndis(realsolid)],
 // 1 16 35.5 0 4.3 1.5 0 0 0 1 0 0 0 1.5 1-4ndis.dat
-  [1,16,35.5,0,4.3,1.5,0,0,0,1,0,0,0,1.5, ldraw_lib__1_4ndis()],
+  [1,16,35.5,0,4.3,1.5,0,0,0,1,0,0,0,1.5, ldraw_lib__1_4ndis(realsolid)],
 // 3 0 -31.285 0 1.057 -26.688 0 -6.6 -28.792 0 -0.355
   [3,0,-31.285,0,1.057,-26.688,0,-6.6,-28.792,0,-0.355],
 // 4 0 -25.512 0 -5.826 -28.792 0 -0.355 -26.688 0 -6.6 -25.512 0 -8.572
@@ -136,5 +137,5 @@ function ldraw_lib__2431pz1() = [
   [3,18,-22.232,0,-0.355,-28.792,0,-0.355,-25.512,0,-5.826],
 ];
 module ldraw_lib__2431pz1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2431pz1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2431pz1(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2431pz1(line=0.2);

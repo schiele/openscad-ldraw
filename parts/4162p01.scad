@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/4162s01.scad>
-function ldraw_lib__4162p01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4162p01(realsolid=false) = [
 // 0 Tile  1 x  8 with "Robie House" Pattern
 // 0 Name: 4162p01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -21,7 +22,7 @@ function ldraw_lib__4162p01() = [
 // 0 // Font match is not perfect, but comes close.
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4162s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4162s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4162s01(realsolid)],
 // 0 // Char: 82
 // 3 0 -37.26 0 -0.73 -38.5 0 -4.6 -37.26 0 -4.6
   [3,0,-37.26,0,-0.73,-38.5,0,-4.6,-37.26,0,-4.6],
@@ -944,5 +945,5 @@ function ldraw_lib__4162p01() = [
   [3,16,80,0,-10,38.8,0,-6.03,2.2,0,-6.03],
 ];
 module ldraw_lib__4162p01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4162p01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4162p01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4162p01(line=0.2);

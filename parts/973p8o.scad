@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/1-4cyli.scad>
 use <s/973s01.scad>
-function ldraw_lib__973p8o() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__973p8o(realsolid=false) = [
 // 0 Minifig Torso with Safety Vest with Reflective Stripes, Pocket and Train Logo Pattern
 // 0 Name: 973p8o.dat
 // 0 Author: Tim Lampmann [L4mpi]
@@ -18,9 +19,9 @@ function ldraw_lib__973p8o() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01(realsolid)],
 // 1 0 0 -4 0 4.243 0 -4.243 0 -8 0 -4.243 0 -4.243 1-4cyli.dat
-  [1,0,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli()],
+  [1,0,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli(realsolid)],
 // 
 // 0 // Back
 // 4 80 -15.933 20 10 -15.063 15 10 15.063 15 10 15.933 20 10
@@ -1305,5 +1306,5 @@ function ldraw_lib__973p8o() = [
   [4,15,8.586,10.275,-10,8.48,10.319,-10,8.814,10.275,-10,8.7,10.26,-10],
 ];
 module ldraw_lib__973p8o(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__973p8o(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__973p8o(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__973p8o(line=0.2);

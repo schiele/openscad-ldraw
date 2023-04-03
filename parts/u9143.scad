@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/u9143s01.scad>
-function ldraw_lib__u9143() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__u9143(realsolid=false) = [
 // 0 Fabuland Fireman's Helmet
 // 0 Name: u9143.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -17,9 +18,9 @@ function ldraw_lib__u9143() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\u9143s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__u9143s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__u9143s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\u9143s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__u9143s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__u9143s01(realsolid)],
 // 5 24 0 7.494 -22.898 0 7.323 -23.377 -1.04 7.03 -24.13 3.35 7.37 -23.03
   [5,24,0,7.494,-22.898,0,7.323,-23.377,-1.04,7.03,-24.13,3.35,7.37,-23.03],
 // 5 24 0 4.596 -25.974 0 4.276 -26.03 -2.38 3.77 -26.06 2.74 5.15 -25.81
@@ -248,5 +249,5 @@ function ldraw_lib__u9143() = [
   [5,24,0,-0.192,-20.63,0,-0.406,-20.188,-2.334,0.264,-21.472,2.334,0.264,-21.472],
 ];
 module ldraw_lib__u9143(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__u9143(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__u9143(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__u9143(line=0.2);

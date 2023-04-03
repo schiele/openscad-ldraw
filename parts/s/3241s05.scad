@@ -5,7 +5,8 @@ use <../../p/2-4edge.scad>
 use <../../p/2-4ndis.scad>
 use <../../p/box4-1.scad>
 use <3241s06.scad>
-function ldraw_lib__s__3241s05() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__3241s05(realsolid=false) = [
 // 0 ~Train Track 12V Insert: Plug Socket Sweep Half Segment
 // 0 Name: s\3241s05.dat
 // 0 Author: Steffen [Steffen]
@@ -20,7 +21,7 @@ function ldraw_lib__s__3241s05() = [
 // 
 // 
 // 1 494 0 0 0 1 0 0 0 1 0 0 0 1 s\3241s06.dat
-  [1,494,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3241s06()],
+  [1,494,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3241s06(realsolid)],
 // 2 24 -3.5 8 2.5 3.5 8 2.5
   [2,24,-3.5,8,2.5,3.5,8,2.5],
 // 2 24 -3.5 8 2.5 -3.5 9.5 2.5
@@ -38,27 +39,27 @@ function ldraw_lib__s__3241s05() = [
 // 4 16 -3.5 8 2.5 -3.5 9.5 2.5 3.5 9.5 2.5 3.5 8 2.5
   [4,16,-3.5,8,2.5,-3.5,9.5,2.5,3.5,9.5,2.5,3.5,8,2.5],
 // 1 16 0 9.5 2.5 -3.5 0 0 0 0 3.5 0 -1 0 2-4edge.dat
-  [1,16,0,9.5,2.5,-3.5,0,0,0,0,3.5,0,-1,0, ldraw_lib__2_4edge()],
+  [1,16,0,9.5,2.5,-3.5,0,0,0,0,3.5,0,-1,0, ldraw_lib__2_4edge(realsolid)],
 // 1 16 0 9.5 2.5 -3.5 0 0 0 0 3.5 0 -1 0 2-4disc.dat
-  [1,16,0,9.5,2.5,-3.5,0,0,0,0,3.5,0,-1,0, ldraw_lib__2_4disc()],
+  [1,16,0,9.5,2.5,-3.5,0,0,0,0,3.5,0,-1,0, ldraw_lib__2_4disc(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 9.5 16 -3.5 0 0 0 0 3.5 0 -13.5 0 2-4cyli.dat
-  [1,16,0,9.5,16,-3.5,0,0,0,0,3.5,0,-13.5,0, ldraw_lib__2_4cyli()],
+  [1,16,0,9.5,16,-3.5,0,0,0,0,3.5,0,-13.5,0, ldraw_lib__2_4cyli(realsolid)],
 // 1 16 0 9.5 16 -3.5 0 0 0 0 3.5 0 -1 0 2-4ndis.dat
-  [1,16,0,9.5,16,-3.5,0,0,0,0,3.5,0,-1,0, ldraw_lib__2_4ndis()],
+  [1,16,0,9.5,16,-3.5,0,0,0,0,3.5,0,-1,0, ldraw_lib__2_4ndis(realsolid)],
 // 1 16 0 9.5 16 -3.5 0 0 0 0 3.5 0 -1 0 2-4edge.dat
-  [1,16,0,9.5,16,-3.5,0,0,0,0,3.5,0,-1,0, ldraw_lib__2_4edge()],
+  [1,16,0,9.5,16,-3.5,0,0,0,0,3.5,0,-1,0, ldraw_lib__2_4edge(realsolid)],
 // 1 16 0 9.5 16 4 0 0 0 0 4 0 3 0 2-4edge.dat
-  [1,16,0,9.5,16,4,0,0,0,0,4,0,3,0, ldraw_lib__2_4edge()],
+  [1,16,0,9.5,16,4,0,0,0,0,4,0,3,0, ldraw_lib__2_4edge(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 9.5 16 4 0 0 0 0 4 0 4 0 2-4cyli.dat
-  [1,16,0,9.5,16,4,0,0,0,0,4,0,4,0, ldraw_lib__2_4cyli()],
+  [1,16,0,9.5,16,4,0,0,0,0,4,0,4,0, ldraw_lib__2_4cyli(realsolid)],
 // 1 16 0 9.5 20 -4 0 0 0 0 4 0 -3 0 2-4ndis.dat
-  [1,16,0,9.5,20,-4,0,0,0,0,4,0,-3,0, ldraw_lib__2_4ndis()],
+  [1,16,0,9.5,20,-4,0,0,0,0,4,0,-3,0, ldraw_lib__2_4ndis(realsolid)],
 // 1 16 0 9.5 20 4 0 0 0 0 4 0 3 0 2-4edge.dat
-  [1,16,0,9.5,20,4,0,0,0,0,4,0,3,0, ldraw_lib__2_4edge()],
+  [1,16,0,9.5,20,4,0,0,0,0,4,0,3,0, ldraw_lib__2_4edge(realsolid)],
 // 4 16 5 8 0 3.5 8 2.5 3.5 8 8 5 8 8
   [4,16,5,8,0,3.5,8,2.5,3.5,8,8,5,8,8],
 // 4 16 -5 8 8 -3.5 8 8 -3.5 8 2.5 -5 8 0
@@ -144,8 +145,8 @@ function ldraw_lib__s__3241s05() = [
 // 4 16 -5 12 0 -4 12 2 -4 12 16 -5 12 16
   [4,16,-5,12,0,-4,12,2,-4,12,16,-5,12,16],
 // 1 16 0 12 9 4 0 0 0 3.5 0 0 0 -7 box4-1.dat
-  [1,16,0,12,9,4,0,0,0,3.5,0,0,0,-7, ldraw_lib__box4_1()],
+  [1,16,0,12,9,4,0,0,0,3.5,0,0,0,-7, ldraw_lib__box4_1(realsolid)],
 ];
 module ldraw_lib__s__3241s05(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__3241s05(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__3241s05(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__3241s05(line=0.2);

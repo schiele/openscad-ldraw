@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/48170s03.scad>
 use <s/48170s04.scad>
-function ldraw_lib__48172() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__48172(realsolid=false) = [
 // 0 Technic Brick  2 x  2 with Hole and Two Rotation Joint Sockets
 // 0 Name: 48172.dat
 // 0 Author: Guy Vivan [guyvivan]
@@ -16,13 +17,13 @@ function ldraw_lib__48172() = [
 // 
 // 
 // 1 16 0 0 0 0 0 -1 0 1 0 1 0 0 s\48170s03.dat
-  [1,16,0,0,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__s__48170s03()],
+  [1,16,0,0,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__s__48170s03(realsolid)],
 // 1 16 0 0 0 0 0 -1 0 1 0 1 0 0 s\48170s04.dat
-  [1,16,0,0,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__s__48170s04()],
+  [1,16,0,0,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__s__48170s04(realsolid)],
 // 1 16 0 0 0 0 0 1 0 1 0 -1 0 0 s\48170s04.dat
-  [1,16,0,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__s__48170s04()],
+  [1,16,0,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__s__48170s04(realsolid)],
 // 0
 ];
 module ldraw_lib__48172(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__48172(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__48172(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__48172(line=0.2);

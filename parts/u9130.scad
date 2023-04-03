@@ -3,7 +3,8 @@ use <../p/4-4cyli.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4edge.scad>
 use <../p/4-8sphe.scad>
-function ldraw_lib__u9130() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__u9130(realsolid=false) = [
 // 0 ~Electric Train 12V Power Pickup
 // 0 Name: u9130.dat
 // 0 Author: Steffen [Steffen]
@@ -20,15 +21,15 @@ function ldraw_lib__u9130() = [
 // 
 // 
 // 1 16 0 0 0 9 0 0 0 1.5 0 0 0 9 4-4disc.dat
-  [1,16,0,0,0,9,0,0,0,1.5,0,0,0,9, ldraw_lib__4_4disc()],
+  [1,16,0,0,0,9,0,0,0,1.5,0,0,0,9, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 0 0 9 0 0 0 1.5 0 0 0 9 4-4edge.dat
-  [1,16,0,0,0,9,0,0,0,1.5,0,0,0,9, ldraw_lib__4_4edge()],
+  [1,16,0,0,0,9,0,0,0,1.5,0,0,0,9, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 0 0 9 0 0 0 10 0 0 0 9 4-4cyli.dat
-  [1,16,0,0,0,9,0,0,0,10,0,0,0,9, ldraw_lib__4_4cyli()],
+  [1,16,0,0,0,9,0,0,0,10,0,0,0,9, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 10 0 9 0 0 0 1.5 0 0 0 9 4-8sphe.dat
-  [1,16,0,10,0,9,0,0,0,1.5,0,0,0,9, ldraw_lib__4_8sphe()],
+  [1,16,0,10,0,9,0,0,0,1.5,0,0,0,9, ldraw_lib__4_8sphe(realsolid)],
 // 
 ];
 module ldraw_lib__u9130(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__u9130(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__u9130(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__u9130(line=0.2);

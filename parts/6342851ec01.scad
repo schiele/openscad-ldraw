@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__6342851ec01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6342851ec01(realsolid=false) = [
 // 0 Sticker  1 x  2.8 with Dark Bluish Grey NASA Worm Logo (Formed)
 // 0 Name: 6342851ec01.dat
 // 0 Author: Orion Pobursky [OrionP]
@@ -383,5 +384,5 @@ function ldraw_lib__6342851ec01() = [
   [3,15,-17.354,-12.465945,.83698,-15.254,-10.442095,.434411,-17.798,-14.094049,1.16083],
 ];
 module ldraw_lib__6342851ec01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6342851ec01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6342851ec01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6342851ec01(line=0.2);

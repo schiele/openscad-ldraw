@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <6642k01.scad>
 use <6644k02.scad>
-function ldraw_lib__6642_f1() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6642_f1(realsolid=false) = [
 // 0 Technic Flex-System Pin Connector Double (Open)
 // 0 Name: 6642-f1.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -16,12 +17,12 @@ function ldraw_lib__6642_f1() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 6642k01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__6642k01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__6642k01(realsolid)],
 // 1 16 16 -4 0 -1 0 0 0 -1 0 0 0 1 6644k02.dat
-  [1,16,16,-4,0,-1,0,0,0,-1,0,0,0,1, ldraw_lib__6644k02()],
+  [1,16,16,-4,0,-1,0,0,0,-1,0,0,0,1, ldraw_lib__6644k02(realsolid)],
 // 1 16 16 -4 0 -1 0 0 0 -1 0 0 0 -1 6644k02.dat
-  [1,16,16,-4,0,-1,0,0,0,-1,0,0,0,-1, ldraw_lib__6644k02()],
+  [1,16,16,-4,0,-1,0,0,0,-1,0,0,0,-1, ldraw_lib__6644k02(realsolid)],
 ];
 module ldraw_lib__6642_f1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6642_f1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6642_f1(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6642_f1(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/97781s01.scad>
-function ldraw_lib__97787() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__97787(realsolid=false) = [
 // 0 Figure Friends Spatula with  3 Holes
 // 0 Name: 97787.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -22,7 +23,7 @@ function ldraw_lib__97787() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\97781s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__97781s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__97781s01(realsolid)],
 // 3 16 -2.551 -8.75 3.081 -3.506 -8.75 2.38 -2.501 -18.068 3.31
   [3,16,-2.551,-8.75,3.081,-3.506,-8.75,2.38,-2.501,-18.068,3.31],
 // 3 16 -2.501 -18.068 3.31 -1.372 -17.643 3.735 -2.551 -8.75 3.081
@@ -741,5 +742,5 @@ function ldraw_lib__97787() = [
   [5,24,9.97,-34.715,6.875,3.817,-26.061,5.522,3.434,-25.693,6.875,4.054,-26.296,3.125],
 ];
 module ldraw_lib__97787(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__97787(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__97787(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__97787(line=0.2);

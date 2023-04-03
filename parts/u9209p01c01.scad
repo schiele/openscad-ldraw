@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/1-4con0.scad>
 use <s/u9209c01s01.scad>
-function ldraw_lib__u9209p01c01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__u9209p01c01(realsolid=false) = [
 // 0 Minifig Skirt  1.4L with Straight Bottom with White Apron with Lace Pattern (Formed)
 // 0 Name: u9209p01c01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -21,17 +22,17 @@ function ldraw_lib__u9209p01c01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\u9209c01s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__u9209c01s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__u9209c01s01(realsolid)],
 // 1 16 -14.5 28 5.75 0 -4.5 -6 0 -28 0 6 4.5 0 1-4con0.dat
-  [1,16,-14.5,28,5.75,0,-4.5,-6,0,-28,0,6,4.5,0, ldraw_lib__1_4con0()],
+  [1,16,-14.5,28,5.75,0,-4.5,-6,0,-28,0,6,4.5,0, ldraw_lib__1_4con0(realsolid)],
 // 4 16 -19 0 10.25 -20.5 28 5.75 -20.5 28 -5.75 -19 0 -10.25
   [4,16,-19,0,10.25,-20.5,28,5.75,-20.5,28,-5.75,-19,0,-10.25],
 // 1 16 -14.5 28 -5.75 0 -4.5 -6 0 -28 0 -6 -4.5 0 1-4con0.dat
-  [1,16,-14.5,28,-5.75,0,-4.5,-6,0,-28,0,-6,-4.5,0, ldraw_lib__1_4con0()],
+  [1,16,-14.5,28,-5.75,0,-4.5,-6,0,-28,0,-6,-4.5,0, ldraw_lib__1_4con0(realsolid)],
 // 4 16 19 0 10.25 19 28 11.75 -14.5 28 11.75 -19 0 10.25
   [4,16,19,0,10.25,19,28,11.75,-14.5,28,11.75,-19,0,10.25],
 // 1 16 14.5 28 -5.75 0 4.5 6 0 -28 0 -6 -4.5 0 1-4con0.dat
-  [1,16,14.5,28,-5.75,0,4.5,6,0,-28,0,-6,-4.5,0, ldraw_lib__1_4con0()],
+  [1,16,14.5,28,-5.75,0,4.5,6,0,-28,0,-6,-4.5,0, ldraw_lib__1_4con0(realsolid)],
 // 4 16 19 0 -10.25 20.5 28 -5.75 20.5 28 11.25 19 0 9.75
   [4,16,19,0,-10.25,20.5,28,-5.75,20.5,28,11.25,19,0,9.75],
 // 4 15 -1.1 20.7 -11.3589 0 20.8 -11.3643 0 17.3 -11.1768 -2.1 20.3 -11.3375
@@ -258,5 +259,5 @@ function ldraw_lib__u9209p01c01() = [
   [3,15,12.3,0,-10.25,-12.3,0,-10.25,0,16.7,-11.1446],
 ];
 module ldraw_lib__u9209p01c01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__u9209p01c01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__u9209p01c01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__u9209p01c01(line=0.2);

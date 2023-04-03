@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <3003.scad>
-function ldraw_lib__6223() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6223(realsolid=false) = [
 // 0 =Brick  2 x  2
 // 0 Name: 6223.dat
 // 0 Author: Rolf Osterthun [Rolf]
@@ -18,8 +19,8 @@ function ldraw_lib__6223() = [
 // 0 // Part 6223 is the transparent counterpart of 3003
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 3003.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3003()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3003(realsolid)],
 ];
 module ldraw_lib__6223(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6223(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6223(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6223(line=0.2);

@@ -4,7 +4,8 @@ use <../../p/2-4ndis.scad>
 use <../../p/axlehol4.scad>
 use <../../p/rect.scad>
 use <../../p/rect2p.scad>
-function ldraw_lib__s__985s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__985s02(realsolid=false) = [
 // 0 ~Technic Axle Joiner 3 x 2 with Axial Torsion Spring - Axlehole
 // 0 Name: s\985s02.dat
 // 0 Author: Santeri Piippo [arezey]
@@ -20,22 +21,22 @@ function ldraw_lib__s__985s02() = [
 // 
 // 
 // 1 16 0 0 0 0 0 1 0 1 0 -1 0 0 axlehol4.dat
-  [1,16,0,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__axlehol4()],
+  [1,16,0,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__axlehol4(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 9 0 0 0 0 1 0 1 0 -1 0 0 2-4cylo.dat
-  [1,16,9,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__2_4cylo()],
+  [1,16,9,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__2_4cylo(realsolid)],
 // 1 16 9 1 0 0 0 1 0 -1 0 -1 0 0 2-4ndis.dat
-  [1,16,9,1,0,0,0,1,0,-1,0,-1,0,0, ldraw_lib__2_4ndis()],
+  [1,16,9,1,0,0,0,1,0,-1,0,-1,0,0, ldraw_lib__2_4ndis(realsolid)],
 // 1 16 5.801 0.5 -1.5 0 1 0.199 -0.5 0 0 0 0 0.5 rect.dat
-  [1,16,5.801,0.5,-1.5,0,1,0.199,-0.5,0,0,0,0,0.5, ldraw_lib__rect()],
+  [1,16,5.801,0.5,-1.5,0,1,0.199,-0.5,0,0,0,0,0.5, ldraw_lib__rect(realsolid)],
 // 1 16 7.5 0.5 -1 1.5 0 0 0 0 0.5 0 -1 0 rect2p.dat
-  [1,16,7.5,0.5,-1,1.5,0,0,0,0,0.5,0,-1,0, ldraw_lib__rect2p()],
+  [1,16,7.5,0.5,-1,1.5,0,0,0,0,0.5,0,-1,0, ldraw_lib__rect2p(realsolid)],
 // 1 16 5.801 0.5 1.5 0.199 1 0 0 0 -0.5 -0.5 0 0 rect.dat
-  [1,16,5.801,0.5,1.5,0.199,1,0,0,0,-0.5,-0.5,0,0, ldraw_lib__rect()],
+  [1,16,5.801,0.5,1.5,0.199,1,0,0,0,-0.5,-0.5,0,0, ldraw_lib__rect(realsolid)],
 // 1 16 7.5 0.5 1 1.5 0 0 0 0 -0.5 0 1 0 rect2p.dat
-  [1,16,7.5,0.5,1,1.5,0,0,0,0,-0.5,0,1,0, ldraw_lib__rect2p()],
+  [1,16,7.5,0.5,1,1.5,0,0,0,0,-0.5,0,1,0, ldraw_lib__rect2p(realsolid)],
 ];
 module ldraw_lib__s__985s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__985s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__985s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__985s02(line=0.2);

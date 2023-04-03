@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__973psbs01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__973psbs01(realsolid=false) = [
 // 0 ~Minifig Torso with SW Blast Armour Pattern Base
 // 0 Name: s\973psbs01.dat
 // 0 Author: Daniel Goerner [TK-949]
@@ -1755,5 +1756,5 @@ function ldraw_lib__s__973psbs01() = [
   [3,16,-2.87,16.86,-10,-2.745,17.155,-10,-1.86,17.04,-10],
 ];
 module ldraw_lib__s__973psbs01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__973psbs01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__973psbs01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__973psbs01(line=0.2);

@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/1-4cyli.scad>
 use <s/973s01.scad>
-function ldraw_lib__973pq2() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__973pq2(realsolid=false) = [
 // 0 Minifig Torso with DarkBlue Muscles and Gold Necklace Pattern
 // 0 Name: 973pq2.dat
 // 0 Author: Christian Neumann [Wesley]
@@ -20,10 +21,10 @@ function ldraw_lib__973pq2() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01(realsolid)],
 // 0 // Neck mark
 // 1 15 0 -4 0 4.243 0 -4.243 0 -8 0 -4.243 0 -4.243 1-4cyli.dat
-  [1,15,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli()],
+  [1,15,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli(realsolid)],
 // 0 // front pattern
 // 4 272 0.85 11.2 -10 2 11.1 -10 1.45 8.9 -10 0.7 9 -10
   [4,272,0.85,11.2,-10,2,11.1,-10,1.45,8.9,-10,0.7,9,-10],
@@ -2714,5 +2715,5 @@ function ldraw_lib__973pq2() = [
   [4,16,0.43,31.16,10,0.63,30.33,10,15,24,10,19,29,10],
 ];
 module ldraw_lib__973pq2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__973pq2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__973pq2(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__973pq2(line=0.2);

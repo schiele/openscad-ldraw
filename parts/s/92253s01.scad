@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__92253s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__92253s01(realsolid=false) = [
 // 0 ~Figure Friends Legs with Trousers Half Upper
 // 0 Name: s\92253s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -3848,5 +3849,5 @@ function ldraw_lib__s__92253s01() = [
   [5,24,3.5837,-29.4437,8.8676,4.5299,-30.967,9.6471,5.5743,-29.9921,9.8137,2.8141,-31.4374,8.684],
 ];
 module ldraw_lib__s__92253s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__92253s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__92253s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__92253s01(line=0.2);

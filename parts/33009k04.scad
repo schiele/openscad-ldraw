@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/1-4cylo.scad>
 use <../p/1-4ring3.scad>
-function ldraw_lib__33009k04() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__33009k04(realsolid=false) = [
 // 0 ~Minifig Book Joint Curved
 // 0 Name: 33009k04.dat
 // 0 Author: Franklin W. Cain [fwcain]
@@ -21,20 +22,20 @@ function ldraw_lib__33009k04() = [
 // 
 // 
 // 1 16 -5 -27 1 -2 0 0 0 54 0 0 0 -2 1-4cylo.dat
-  [1,16,-5,-27,1,-2,0,0,0,54,0,0,0,-2, ldraw_lib__1_4cylo()],
+  [1,16,-5,-27,1,-2,0,0,0,54,0,0,0,-2, ldraw_lib__1_4cylo(realsolid)],
 // 1 16 -5 -27 1 -0.5 0 0 0 1 0 0 0 -0.5 1-4ring3.dat
-  [1,16,-5,-27,1,-0.5,0,0,0,1,0,0,0,-0.5, ldraw_lib__1_4ring3()],
+  [1,16,-5,-27,1,-0.5,0,0,0,1,0,0,0,-0.5, ldraw_lib__1_4ring3(realsolid)],
 // 1 16 -5 27 1 -0.5 0 0 0 -1 0 0 0 -0.5 1-4ring3.dat
-  [1,16,-5,27,1,-0.5,0,0,0,-1,0,0,0,-0.5, ldraw_lib__1_4ring3()],
+  [1,16,-5,27,1,-0.5,0,0,0,-1,0,0,0,-0.5, ldraw_lib__1_4ring3(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -5 -27 1 -1.5 0 0 0 54 0 0 0 -1.5 1-4cylo.dat
-  [1,16,-5,-27,1,-1.5,0,0,0,54,0,0,0,-1.5, ldraw_lib__1_4cylo()],
+  [1,16,-5,-27,1,-1.5,0,0,0,54,0,0,0,-1.5, ldraw_lib__1_4cylo(realsolid)],
 // 2 24 -6.5 -27 1 -6.5 27 1
   [2,24,-6.5,-27,1,-6.5,27,1],
 // 2 24 -5 -27 -0.5 -5 27 -0.5
   [2,24,-5,-27,-0.5,-5,27,-0.5],
 ];
 module ldraw_lib__33009k04(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__33009k04(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__33009k04(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__33009k04(line=0.2);

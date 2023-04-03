@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/2582s01.scad>
-function ldraw_lib__2582pa1() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2582pa1(realsolid=false) = [
 // 0 Hinge Panel  2 x  4 x  3.333 with Aquashark, Blue Outlines and Square Pattern
 // 0 Name: 2582pa1.dat
 // 0 Author: Mikkel Bech Jensen [gaia]
@@ -17,7 +18,7 @@ function ldraw_lib__2582pa1() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2582s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2582s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2582s01(realsolid)],
 // 4 16 -25.448 40.701 -30 -26.487 40.101 -30 -26.648 40.701 -30 -26.487 41.301 -30
   [4,16,-25.448,40.701,-30,-26.487,40.101,-30,-26.648,40.701,-30,-26.487,41.301,-30],
 // 4 16 -25.448 40.701 -30 -26.487 41.301 -30 -26.048 41.74 -30 -25.448 41.9 -30
@@ -1572,5 +1573,5 @@ function ldraw_lib__2582pa1() = [
   [4,0,-3.219,57.459,-30,-4.199,57.851,-30,4.204,57.851,-30,3.224,57.459,-30],
 ];
 module ldraw_lib__2582pa1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2582pa1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2582pa1(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2582pa1(line=0.2);

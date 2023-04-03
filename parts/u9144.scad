@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5.scad>
-function ldraw_lib__u9144() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__u9144(realsolid=false) = [
 // 0 ~Electric Technic Solar Panel Cell
 // 0 Name: u9144.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -16,7 +17,7 @@ function ldraw_lib__u9144() = [
 // 
 // 
 // 1 16 0 0 0 132 0 0 0 8 0 0 0 79 box5.dat
-  [1,16,0,0,0,132,0,0,0,8,0,0,0,79, ldraw_lib__box5()],
+  [1,16,0,0,0,132,0,0,0,8,0,0,0,79, ldraw_lib__box5(realsolid)],
 // 4 16 132 0 -79 132 0 79 124.2 0 77 124.2 0 -77
   [4,16,132,0,-79,132,0,79,124.2,0,77,124.2,0,-77],
 // 4 16 124.2 0 77 132 0 79 -132 0 79 -124.2 0 77
@@ -289,5 +290,5 @@ function ldraw_lib__u9144() = [
   [4,272,-124.2,0,77,-124.2,0,-77,-121.5,0,-77,-121.5,0,77],
 ];
 module ldraw_lib__u9144(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__u9144(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__u9144(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__u9144(line=0.2);

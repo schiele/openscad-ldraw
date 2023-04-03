@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/t04o6250.scad>
-function ldraw_lib__s__3625s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__3625s01(realsolid=false) = [
 // 0 ~Minifig Hair Female with Pigtails - Half
 // 0 Name: s\3625s01.dat
 // 0 Author: Alex Taylor [anathema]
@@ -2074,11 +2075,11 @@ function ldraw_lib__s__3625s01() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 4 0 8 0 0 0 -12.8 0 0 0 -8 t04o6250.dat
-  [1,16,0,4,0,8,0,0,0,-12.8,0,0,0,-8, ldraw_lib__t04o6250()],
+  [1,16,0,4,0,8,0,0,0,-12.8,0,0,0,-8, ldraw_lib__t04o6250(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 4 0 0 0 8 0 -12.8 0 8 0 0 t04o6250.dat
-  [1,16,0,4,0,0,0,8,0,-12.8,0,8,0,0, ldraw_lib__t04o6250()],
+  [1,16,0,4,0,0,0,8,0,-12.8,0,8,0,0, ldraw_lib__t04o6250(realsolid)],
 // 5 24 12.0104 4 -4.97488 12.0104 14.082 -4.97488 11.421 12.988 -5.857 12.585 4 -2.086
   [5,24,12.0104,4,-4.97488,12.0104,14.082,-4.97488,11.421,12.988,-5.857,12.585,4,-2.086],
 // 5 24 13 4 0 13 15.866 0 12.585 15.332 -2.086 12.746 4 1.277
@@ -2096,5 +2097,5 @@ function ldraw_lib__s__3625s01() = [
 // 0
 ];
 module ldraw_lib__s__3625s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__3625s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__3625s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__3625s01(line=0.2);

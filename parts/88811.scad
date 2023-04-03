@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/88811s01.scad>
 use <s/88811s03.scad>
-function ldraw_lib__88811() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__88811(realsolid=false) = [
 // 0 Minifig Weapon Bladed Claw
 // 0 Name: 88811.dat
 // 0 Author: Rolf Osterthun [Rolf]
@@ -22,13 +23,13 @@ function ldraw_lib__88811() = [
 // 
 // 0 // Minifig Weapon Base
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\88811s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__88811s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__88811s01(realsolid)],
 // 
 // 0 // Blades
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\88811s03.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__88811s03()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__88811s03(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\88811s03.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__88811s03()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__88811s03(realsolid)],
 // 
 // 5 24 0 -14.721 -24.446 0 -13.705 -25.48 1.361 -14.154 -24.219 -1.342 -14.175 -24.228
   [5,24,0,-14.721,-24.446,0,-13.705,-25.48,1.361,-14.154,-24.219,-1.342,-14.175,-24.228],
@@ -58,5 +59,5 @@ function ldraw_lib__88811() = [
   [4,16,-1.275,-12.25,-25.15,-1.75,-12.25,-24.125,1.75,-12.25,-24.125,1.275,-12.25,-25.15],
 ];
 module ldraw_lib__88811(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__88811(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__88811(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__88811(line=0.2);

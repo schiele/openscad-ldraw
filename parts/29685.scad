@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/29685s01.scad>
 use <s/29685s02.scad>
-function ldraw_lib__29685() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__29685(realsolid=false) = [
 // 0 Animal Bunny
 // 0 Name: 29685.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -20,11 +21,11 @@ function ldraw_lib__29685() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\29685s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__29685s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__29685s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\29685s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__29685s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__29685s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\29685s02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__29685s02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__29685s02(realsolid)],
 // 3 16 0 -6.106 22.699 1.973 -9.093 21.741 -1.973 -9.093 21.741
   [3,16,0,-6.106,22.699,1.973,-9.093,21.741,-1.973,-9.093,21.741],
 // 4 16 -2.575 -13.355 20.219 -1.973 -9.093 21.741 1.973 -9.093 21.741 2.575 -13.355 20.219
@@ -70,5 +71,5 @@ function ldraw_lib__29685() = [
   [5,24,0,-19.064,-15.808,-3.999,-23.316,-13.25,-4.525,-19.519,-14.232,0,-23.16,-14.495],
 ];
 module ldraw_lib__29685(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__29685(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__29685(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__29685(line=0.2);

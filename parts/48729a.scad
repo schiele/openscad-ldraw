@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-8sphe.scad>
-function ldraw_lib__48729a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__48729a(realsolid=false) = [
 // 0 Bar  1.5L with Clip without Hole in Shaft
 // 0 Name: 48729a.dat
 // 0 Author: Andreas Weissenburg [grubaluk]
@@ -21,9 +22,9 @@ function ldraw_lib__48729a() = [
 // 
 // 
 // 1 16 0 6.4 0 4 0 0 0 22.6 0 0 0 4 4-4cyli.dat
-  [1,16,0,6.4,0,4,0,0,0,22.6,0,0,0,4, ldraw_lib__4_4cyli()],
+  [1,16,0,6.4,0,4,0,0,0,22.6,0,0,0,4, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 29 0 4 0 0 0 2 0 0 0 4 4-8sphe.dat
-  [1,16,0,29,0,4,0,0,0,2,0,0,0,4, ldraw_lib__4_8sphe()],
+  [1,16,0,29,0,4,0,0,0,2,0,0,0,4, ldraw_lib__4_8sphe(realsolid)],
 // 0 // Claw
 // 0 // S1
 // 3 16 0 6.45 4 1 6.8 4 0 7 4
@@ -695,5 +696,5 @@ function ldraw_lib__48729a() = [
 // 0
 ];
 module ldraw_lib__48729a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__48729a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__48729a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__48729a(line=0.2);

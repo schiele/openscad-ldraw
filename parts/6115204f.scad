@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__6115204f() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6115204f(realsolid=false) = [
 // 0 Sticker  3.9 x  1.9 with partial Runway Centre Markings
 // 0 Name: 6115204f.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -17,7 +18,7 @@ function ldraw_lib__6115204f() = [
 // 
 // 
 // 1 16 0 -0.25 0 19 0 0 0 0.25 0 0 0 39 box5-12.dat
-  [1,16,0,-0.25,0,19,0,0,0,0.25,0,0,0,39, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,19,0,0,0,0.25,0,0,0,39, ldraw_lib__box5_12(realsolid)],
 // 
 // 4 15 -19 -0.25 1.25 -19 -0.25 -1.25 19 -0.25 -1.25 19 -0.25 1.25
   [4,15,-19,-0.25,1.25,-19,-0.25,-1.25,19,-0.25,-1.25,19,-0.25,1.25],
@@ -43,5 +44,5 @@ function ldraw_lib__6115204f() = [
   [4,0,-19,-0.25,-39,-7,-0.25,-30,-7,-0.25,-27,-19,-0.25,-1.25],
 ];
 module ldraw_lib__6115204f(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6115204f(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6115204f(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6115204f(line=0.2);

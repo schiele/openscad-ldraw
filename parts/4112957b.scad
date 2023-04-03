@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <4112957a.scad>
-function ldraw_lib__4112957b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4112957b(realsolid=false) = [
 // 0 Sticker  1.0 x 11.8 with Pipe, Three Connectors and Lever Oriented Left
 // 0 Name: 4112957b.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -17,8 +18,8 @@ function ldraw_lib__4112957b() = [
 // 
 // 
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 4112957a.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__4112957a()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__4112957a(realsolid)],
 ];
 module ldraw_lib__4112957b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4112957b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4112957b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4112957b(line=0.2);

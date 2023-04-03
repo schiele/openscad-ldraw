@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3897s01.scad>
-function ldraw_lib__676p01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__676p01(realsolid=false) = [
 // 0 ~Roadsign Wide Rectangle with Snack Bar White Pattern (Obsolete)
 // 0 Name: 676p01.dat
 // 0 Author: Arne Hackstein
@@ -24,7 +25,7 @@ function ldraw_lib__676p01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3897s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3897s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3897s01(realsolid)],
 // 
 // 4 0 -25.6437 -77.44 -2 -26.9403 -77.3717 -2 -27.244 -78.3215 -2 -26.1565 -78.3215 -2
   [4,0,-25.6437,-77.44,-2,-26.9403,-77.3717,-2,-27.244,-78.3215,-2,-26.1565,-78.3215,-2],
@@ -694,5 +695,5 @@ function ldraw_lib__676p01() = [
   [4,15,30,-76,-2,26.719,-74.6154,-2,23.3318,-76.4615,-2,24.4334,-76.4615,-2],
 ];
 module ldraw_lib__676p01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__676p01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__676p01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__676p01(line=0.2);

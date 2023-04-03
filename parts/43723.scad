@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/43722s01.scad>
 use <../p/stud.scad>
-function ldraw_lib__43723() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__43723(realsolid=false) = [
 // 0 Wing  2 x  3 Left
 // 0 Name: 43723.dat
 // 0 Author: Donald Sutter [technog]
@@ -20,15 +21,15 @@ function ldraw_lib__43723() = [
 // 
 // 
 // 1 16 -10 0 20 0 0 -1 0 1 0 1 0 0 stud.dat
-  [1,16,-10,0,20,0,0,-1,0,1,0,1,0,0, ldraw_lib__stud()],
+  [1,16,-10,0,20,0,0,-1,0,1,0,1,0,0, ldraw_lib__stud(realsolid)],
 // 1 16 -10 0 0 0 0 -1 0 1 0 1 0 0 stud.dat
-  [1,16,-10,0,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__stud()],
+  [1,16,-10,0,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__stud(realsolid)],
 // 1 16 -10 0 -20 0 0 -1 0 1 0 1 0 0 stud.dat
-  [1,16,-10,0,-20,0,0,-1,0,1,0,1,0,0, ldraw_lib__stud()],
+  [1,16,-10,0,-20,0,0,-1,0,1,0,1,0,0, ldraw_lib__stud(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\43722s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__43722s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__43722s01(realsolid)],
 // 0
 ];
 module ldraw_lib__43723(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__43723(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__43723(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__43723(line=0.2);

@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__2528s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__2528s02(realsolid=false) = [
 // 0 ~Minifig Hat Bicorne Front/Back Surface (Obsolete)
 // 0 Name: s\2528s02.dat
 // 0 Author: Andy Westrate [westrate]
@@ -289,5 +290,5 @@ function ldraw_lib__s__2528s02() = [
   [5,24,6,0,-15,11.259,7.109,-11.314,12,0,-11,6.093,6.6,-14.782],
 ];
 module ldraw_lib__s__2528s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__2528s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__2528s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__2528s02(line=0.2);

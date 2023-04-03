@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/4-4cylc.scad>
 use <s/43892s01.scad>
-function ldraw_lib__43892() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__43892(realsolid=false) = [
 // 0 Animal Tail
 // 0 Name: 43892.dat
 // 0 Author: Andy Westrate [westrate]
@@ -22,13 +23,13 @@ function ldraw_lib__43892() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\43892s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__43892s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__43892s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\43892s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__43892s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__43892s01(realsolid)],
 // 1 16 0 0 -10 4 0 0 0 0 4 0 10 0 4-4cylc.dat
-  [1,16,0,0,-10,4,0,0,0,0,4,0,10,0, ldraw_lib__4_4cylc()],
+  [1,16,0,0,-10,4,0,0,0,0,4,0,10,0, ldraw_lib__4_4cylc(realsolid)],
 // 0
 ];
 module ldraw_lib__43892(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__43892(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__43892(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__43892(line=0.2);

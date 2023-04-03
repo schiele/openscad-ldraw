@@ -11,7 +11,8 @@ use <../p/48/1-6disc.scad>
 use <../p/48/2-4aring.scad>
 use <../p/48/2-4ring10.scad>
 use <s/3068bs01.scad>
-function ldraw_lib__3068bps2() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3068bps2(realsolid=false) = [
 // 0 Tile  2 x  2 with SW Pod Racer Pattern
 // 0 Name: 3068bps2.dat
 // 0 Author: Ronald Scott Moody [rmoody]
@@ -34,36 +35,36 @@ function ldraw_lib__3068bps2() = [
 // 
 // 0 // Subparts
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3068bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3068bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3068bs01(realsolid)],
 // 0 // Primitives
 // 1 6 0 0 0 11 0 0 0 1 0 0 0 11 2-4disc.dat
-  [1,6,0,0,0,11,0,0,0,1,0,0,0,11, ldraw_lib__2_4disc()],
+  [1,6,0,0,0,11,0,0,0,1,0,0,0,11, ldraw_lib__2_4disc(realsolid)],
 // 1 6 0 0 0 -11 0 0 0 1 0 0 0 -11 48\1-6disc.dat
-  [1,6,0,0,0,-11,0,0,0,1,0,0,0,-11, ldraw_lib__48__1_6disc()],
+  [1,6,0,0,0,-11,0,0,0,1,0,0,0,-11, ldraw_lib__48__1_6disc(realsolid)],
 // 1 6 0 0 0 11 0 0 0 1 0 0 0 -11 48\1-6disc.dat
-  [1,6,0,0,0,11,0,0,0,1,0,0,0,-11, ldraw_lib__48__1_6disc()],
+  [1,6,0,0,0,11,0,0,0,1,0,0,0,-11, ldraw_lib__48__1_6disc(realsolid)],
 // 1 2 0 0 0 -5.5 0 9.52627 0 1 0 -9.52627 0 -5.5 48\1-6chrd.dat
-  [1,2,0,0,0,-5.5,0,9.52627,0,1,0,-9.52627,0,-5.5, ldraw_lib__48__1_6chrd()],
+  [1,2,0,0,0,-5.5,0,9.52627,0,1,0,-9.52627,0,-5.5, ldraw_lib__48__1_6chrd(realsolid)],
 // 1 16 0 0 0 12.1 0 0 0 1 0 0 0 12.1 1-4tang.dat
-  [1,16,0,0,0,12.1,0,0,0,1,0,0,0,12.1, ldraw_lib__1_4tang()],
+  [1,16,0,0,0,12.1,0,0,0,1,0,0,0,12.1, ldraw_lib__1_4tang(realsolid)],
 // 1 16 0 0 0 -12.1 0 0 0 1 0 0 0 12.1 1-4tang.dat
-  [1,16,0,0,0,-12.1,0,0,0,1,0,0,0,12.1, ldraw_lib__1_4tang()],
+  [1,16,0,0,0,-12.1,0,0,0,1,0,0,0,12.1, ldraw_lib__1_4tang(realsolid)],
 // 1 16 0 0 0 14.418 0 0 0 1 0 0 0 14.418 4-4ering.dat
-  [1,16,0,0,0,14.418,0,0,0,1,0,0,0,14.418, ldraw_lib__4_4ering()],
+  [1,16,0,0,0,14.418,0,0,0,1,0,0,0,14.418, ldraw_lib__4_4ering(realsolid)],
 // 1 16 0 0 0 1.602 0 0 0 1 0 0 0 1.602 4-4ring9.dat
-  [1,16,0,0,0,1.602,0,0,0,1,0,0,0,1.602, ldraw_lib__4_4ring9()],
+  [1,16,0,0,0,1.602,0,0,0,1,0,0,0,1.602, ldraw_lib__4_4ring9(realsolid)],
 // 1 16 0 0 0 16.02 0 0 0 1 0 0 0 16.02 48\2-4aring.dat
-  [1,16,0,0,0,16.02,0,0,0,1,0,0,0,16.02, ldraw_lib__48__2_4aring()],
+  [1,16,0,0,0,16.02,0,0,0,1,0,0,0,16.02, ldraw_lib__48__2_4aring(realsolid)],
 // 1 2 0 0 0 1.1 0 0 0 1 0 0 0 1.1 2-4rin10.dat
-  [1,2,0,0,0,1.1,0,0,0,1,0,0,0,1.1, ldraw_lib__2_4rin10()],
+  [1,2,0,0,0,1.1,0,0,0,1,0,0,0,1.1, ldraw_lib__2_4rin10(realsolid)],
 // 1 2 0 0 0 1.1 0 0 0 1 0 0 0 -1.1 48\2-4ring10.dat
-  [1,2,0,0,0,1.1,0,0,0,1,0,0,0,-1.1, ldraw_lib__48__2_4ring10()],
+  [1,2,0,0,0,1.1,0,0,0,1,0,0,0,-1.1, ldraw_lib__48__2_4ring10(realsolid)],
 // 1 2 0 0 0 -16.02 0 0 0 1 0 0 0 -16.02 2-4ndis.dat
-  [1,2,0,0,0,-16.02,0,0,0,1,0,0,0,-16.02, ldraw_lib__2_4ndis()],
+  [1,2,0,0,0,-16.02,0,0,0,1,0,0,0,-16.02, ldraw_lib__2_4ndis(realsolid)],
 // 1 2 0 0 0 .89 0 0 0 1 0 0 0 .89 48\1-4rin18.dat
-  [1,2,0,0,0,.89,0,0,0,1,0,0,0,.89, ldraw_lib__48__1_4rin18()],
+  [1,2,0,0,0,.89,0,0,0,1,0,0,0,.89, ldraw_lib__48__1_4rin18(realsolid)],
 // 1 2 0 0 0 0 0 -.89 0 1 0 .89 0 0 48\1-4rin18.dat
-  [1,2,0,0,0,0,0,-.89,0,1,0,.89,0,0, ldraw_lib__48__1_4rin18()],
+  [1,2,0,0,0,0,0,-.89,0,1,0,.89,0,0, ldraw_lib__48__1_4rin18(realsolid)],
 // 0 // Brown faces
 // 3 6 -13.4156 0 20 -13.4156 0 10.2942 -11.9572 0 11.9572
   [3,6,-13.4156,0,20,-13.4156,0,10.2942,-11.9572,0,11.9572],
@@ -209,5 +210,5 @@ function ldraw_lib__3068bps2() = [
   [3,16,14.418,0,0,12.1,0,0,11.9959,0,-1.5791],
 ];
 module ldraw_lib__3068bps2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3068bps2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3068bps2(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3068bps2(line=0.2);

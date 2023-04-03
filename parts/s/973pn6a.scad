@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/empty.scad>
-function ldraw_lib__s__973pn6a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__973pn6a(realsolid=false) = [
 // 0 ~Obsolete file
 // 0 Name: s\973pn6a.dat
 // 0 Author: Orion Pobursky [OrionP]
@@ -21,8 +22,8 @@ function ldraw_lib__s__973pn6a() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 empty.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__empty()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__empty(realsolid)],
 ];
 module ldraw_lib__s__973pn6a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__973pn6a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__973pn6a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__973pn6a(line=0.2);

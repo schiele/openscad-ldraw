@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/3684s01.scad>
 use <../p/stud2.scad>
-function ldraw_lib__3684ap22() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3684ap22(realsolid=false) = [
 // 0 Slope Brick 75  2 x  2 x  3 with Hollow Studs with 16 Black Squares Pattern
 // 0 Name: 3684ap22.dat
 // 0 Author: Lars C. Hassing [larschassing]
@@ -27,11 +28,11 @@ function ldraw_lib__3684ap22() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3684s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3684s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3684s01(realsolid)],
 // 1 16 10 0 0 1 0 0 0 1 0 0 0 1 stud2.dat
-  [1,16,10,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2()],
+  [1,16,10,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2(realsolid)],
 // 1 16 -10 0 0 1 0 0 0 1 0 0 0 1 stud2.dat
-  [1,16,-10,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2()],
+  [1,16,-10,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2(realsolid)],
 // 
 // 4 16 20 72 10 -20 72 10 -20 0 10 20 0 10
   [4,16,20,72,10,-20,72,10,-20,0,10,20,0,10],
@@ -179,5 +180,5 @@ function ldraw_lib__3684ap22() = [
   [3,16,17.56,2.76,-10.81,17.56,10.4398,-13.0705,20,0,-10],
 ];
 module ldraw_lib__3684ap22(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3684ap22(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3684ap22(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3684ap22(line=0.2);

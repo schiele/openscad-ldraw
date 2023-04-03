@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <20460px0.scad>
-function ldraw_lib__20461px0() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__20461px0(realsolid=false) = [
 // 0 Minifig Leg Right with Light Nougat Lower Leg and Black Shoes Pattern
 // 0 Name: 20461px0.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -19,8 +20,8 @@ function ldraw_lib__20461px0() = [
 // 
 // 
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 20460px0.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__20460px0()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__20460px0(realsolid)],
 ];
 module ldraw_lib__20461px0(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__20461px0(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__20461px0(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__20461px0(line=0.2);

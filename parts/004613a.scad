@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__004613a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__004613a(realsolid=false) = [
 // 0 Sticker  1.1 x  3.9 with White "RENAULT" on Black Background
 // 0 Name: 004613a.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -17,7 +18,7 @@ function ldraw_lib__004613a() = [
 // 
 // 
 // 1 16 0 -0.25 0 39 0 0 0 0.25 0 0 0 11 box5-12.dat
-  [1,16,0,-0.25,0,39,0,0,0,0.25,0,0,0,11, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,39,0,0,0,0.25,0,0,0,11, ldraw_lib__box5_12(realsolid)],
 // 4 0 -21 -0.25 6.2 -22.7 -0.25 6.2 -23 -0.25 5.9 -20.5 -0.25 5.8
   [4,0,-21,-0.25,6.2,-22.7,-0.25,6.2,-23,-0.25,5.9,-20.5,-0.25,5.8],
 // 4 0 -20.1 -0.25 4.9 -20.5 -0.25 5.8 -23 -0.25 5.9 -20.1 -0.25 2.9
@@ -458,5 +459,5 @@ function ldraw_lib__004613a() = [
   [3,0,-11.6,-0.25,-6.9,-12,-0.25,-7.5,-10,-0.25,-7.5],
 ];
 module ldraw_lib__004613a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__004613a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__004613a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__004613a(line=0.2);

@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__10128s03() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__10128s03(realsolid=false) = [
 // 0 ~Bigfig Hulk Body - Face without Pattern
 // 0 Name: s\10128s03.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -115,5 +116,5 @@ function ldraw_lib__s__10128s03() = [
   [5,24,-8.101,-149.598,-49.276,-13.791,-149.625,-44.632,-12.17,-140.759,-41.96,-13.545,-154.353,-44.876],
 ];
 module ldraw_lib__s__10128s03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__10128s03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__10128s03(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__10128s03(line=0.2);

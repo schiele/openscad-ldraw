@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__28981c01s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__28981c01s01(realsolid=false) = [
 // 0 ~Canvas Hammock Oval 10 x  5 Half (Formed)
 // 0 Name: s\28981c01s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -1537,5 +1538,5 @@ function ldraw_lib__s__28981c01s01() = [
   [5,24,72.6045,-1.5663,5.8176,74.6249,-2.662,4.641,72.7604,-1.3437,5.7018,74.4772,-2.9115,4.7098],
 ];
 module ldraw_lib__s__28981c01s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__28981c01s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__28981c01s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__28981c01s01(line=0.2);

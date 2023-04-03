@@ -6,7 +6,8 @@ use <../p/rect1.scad>
 use <s/6585s01.scad>
 use <../p/stud2.scad>
 use <../p/stud4a.scad>
-function ldraw_lib__6585() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6585(realsolid=false) = [
 // 0 Technic Gearbox  4 x  4 x  1.667
 // 0 Name: 6585.dat
 // 0 Author: Marc Klein [marckl]
@@ -27,9 +28,9 @@ function ldraw_lib__6585() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\6585s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6585s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6585s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 -1 s\6585s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__6585s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__6585s01(realsolid)],
 // 2 24 -16 38 -6 -16 38 6
   [2,24,-16,38,-6,-16,38,6],
 // 2 24 16 38 6 16 38 -6
@@ -43,15 +44,15 @@ function ldraw_lib__6585() = [
 // 2 24 16 40 -36 16 40 36
   [2,24,16,40,-36,16,40,36],
 // 1 16 -6 13 0 0 -1 0 -5 -0 0 0 -0 -10 rect1.dat
-  [1,16,-6,13,0,0,-1,0,-5,-0,0,0,-0,-10, ldraw_lib__rect1()],
+  [1,16,-6,13,0,0,-1,0,-5,-0,0,0,-0,-10, ldraw_lib__rect1(realsolid)],
 // 1 16 6 13 0 0 1 0 -5 0 0 0 -0 10 rect1.dat
-  [1,16,6,13,0,0,1,0,-5,0,0,0,-0,10, ldraw_lib__rect1()],
+  [1,16,6,13,0,0,1,0,-5,0,0,0,-0,10, ldraw_lib__rect1(realsolid)],
 // 1 16 -10 20 0 0 1 0 -12 0 0 0 -0 10 rect1.dat
-  [1,16,-10,20,0,0,1,0,-12,0,0,0,-0,10, ldraw_lib__rect1()],
+  [1,16,-10,20,0,0,1,0,-12,0,0,0,-0,10, ldraw_lib__rect1(realsolid)],
 // 3 16 -10 32 -5.385 -10 32 5.585 -10 33 0
   [3,16,-10,32,-5.385,-10,32,5.585,-10,33,0],
 // 1 16 10 20 0 0 -1 0 -12 -0 0 0 -0 -10 rect1.dat
-  [1,16,10,20,0,0,-1,0,-12,-0,0,0,-0,-10, ldraw_lib__rect1()],
+  [1,16,10,20,0,0,-1,0,-12,-0,0,0,-0,-10, ldraw_lib__rect1(realsolid)],
 // 3 16 10 32 5.385 10 32 -5.585 10 33 0
   [3,16,10,32,5.385,10,32,-5.585,10,33,0],
 // 4 16 -20 40 40 -16 40 36 -16 40 -36 -20 40 -40
@@ -93,31 +94,31 @@ function ldraw_lib__6585() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 24 0 6 0 0 0 12 0 0 0 6 4-4cyli.dat
-  [1,16,0,24,0,6,0,0,0,12,0,0,0,6, ldraw_lib__4_4cyli()],
+  [1,16,0,24,0,6,0,0,0,12,0,0,0,6, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 36 0 -8 0 0 0 -1 0 0 0 8 4-4ndis.dat
-  [1,16,0,36,0,-8,0,0,0,-1,0,0,0,8, ldraw_lib__4_4ndis()],
+  [1,16,0,36,0,-8,0,0,0,-1,0,0,0,8, ldraw_lib__4_4ndis(realsolid)],
 // 1 16 0 36 0 -1 0 0 0 -1 0 0 0 1 stud4a.dat
-  [1,16,0,36,0,-1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4a()],
+  [1,16,0,36,0,-1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4a(realsolid)],
 // 1 16 0 36 0 8 0 0 0 1 0 0 0 8 4-4edge.dat
-  [1,16,0,36,0,8,0,0,0,1,0,0,0,8, ldraw_lib__4_4edge()],
+  [1,16,0,36,0,8,0,0,0,1,0,0,0,8, ldraw_lib__4_4edge(realsolid)],
 // 1 16 30 0 30 1 0 0 0 1 0 0 0 1 stud2.dat
-  [1,16,30,0,30,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2()],
+  [1,16,30,0,30,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2(realsolid)],
 // 1 16 10 0 30 1 0 0 0 1 0 0 0 1 stud2.dat
-  [1,16,10,0,30,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2()],
+  [1,16,10,0,30,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2(realsolid)],
 // 1 16 -10 0 30 1 0 0 0 1 0 0 0 1 stud2.dat
-  [1,16,-10,0,30,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2()],
+  [1,16,-10,0,30,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2(realsolid)],
 // 1 16 -30 0 30 1 0 0 0 1 0 0 0 1 stud2.dat
-  [1,16,-30,0,30,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2()],
+  [1,16,-30,0,30,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2(realsolid)],
 // 1 16 30 0 -30 1 0 0 0 1 0 0 0 1 stud2.dat
-  [1,16,30,0,-30,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2()],
+  [1,16,30,0,-30,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2(realsolid)],
 // 1 16 10 0 -30 1 0 0 0 1 0 0 0 1 stud2.dat
-  [1,16,10,0,-30,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2()],
+  [1,16,10,0,-30,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2(realsolid)],
 // 1 16 -10 0 -30 1 0 0 0 1 0 0 0 1 stud2.dat
-  [1,16,-10,0,-30,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2()],
+  [1,16,-10,0,-30,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2(realsolid)],
 // 1 16 -30 0 -30 1 0 0 0 1 0 0 0 1 stud2.dat
-  [1,16,-30,0,-30,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2()],
+  [1,16,-30,0,-30,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2(realsolid)],
 // 0 //
 ];
 module ldraw_lib__6585(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6585(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6585(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6585(line=0.2);

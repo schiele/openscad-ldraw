@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3068bs01.scad>
-function ldraw_lib__3068bpfq() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3068bpfq(realsolid=false) = [
 // 0 Tile  2 x  2 with "6" or "9" Light Green Pattern
 // 0 Name: 3068bpfq.dat
 // 0 Author: Steffen [Steffen]
@@ -19,7 +20,7 @@ function ldraw_lib__3068bpfq() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3068bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3068bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3068bs01(realsolid)],
 // 
 // 4 10 4.7 0 -11.2 9.5 0 -14.2 11.8 0 -11.8 12.8 0 -10.3
   [4,10,4.7,0,-11.2,9.5,0,-14.2,11.8,0,-11.8,12.8,0,-10.3],
@@ -431,5 +432,5 @@ function ldraw_lib__3068bpfq() = [
   [3,16,20,0,-20,14,0,-9,13.5,0,-10.4],
 ];
 module ldraw_lib__3068bpfq(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3068bpfq(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3068bpfq(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3068bpfq(line=0.2);

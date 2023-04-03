@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/3070batt.scad>
 use <s/3070bs01.scad>
-function ldraw_lib__3070bptt() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3070bptt(realsolid=false) = [
 // 0 Tile  1 x  1 with Silver "T" Pattern
 // 0 Name: 3070bptt.dat
 // 0 Author: Chris Dee [cwdee]
@@ -18,9 +19,9 @@ function ldraw_lib__3070bptt() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3070bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3070bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3070bs01(realsolid)],
 // 1 80 0 0 0 1 0 0 0 1 0 0 0 1 s\3070batt.dat
-  [1,80,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3070batt()],
+  [1,80,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3070batt(realsolid)],
 // 4 16 -6.5 0 5.5 -10 0 -10 -10 0 10 -6.5 0 7.5
   [4,16,-6.5,0,5.5,-10,0,-10,-10,0,10,-6.5,0,7.5],
 // 4 16 -6.5 0 7.5 -10 0 10 10 0 10 6.5 0 7.5
@@ -36,5 +37,5 @@ function ldraw_lib__3070bptt() = [
 // 
 ];
 module ldraw_lib__3070bptt(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3070bptt(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3070bptt(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3070bptt(line=0.2);

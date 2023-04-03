@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__6007019a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6007019a(realsolid=false) = [
 // 0 Sticker  5.5 x  5.5 with S.H.I.E.L.D. Logo
 // 0 Name: 6007019a.dat
 // 0 Author: Reuben Pearse [ReubenPearse]
@@ -17,7 +18,7 @@ function ldraw_lib__6007019a() = [
 // 
 // 
 // 1 16 0 -0.25 0 0 0 55 0 0.25 0 -55 0 0 box5-12.dat
-  [1,16,0,-0.25,0,0,0,55,0,0.25,0,-55,0,0, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,0,0,55,0,0.25,0,-55,0,0, ldraw_lib__box5_12(realsolid)],
 // 
 // 4 272 0 -0.25 50.35 9.823 -0.25 49.383 10.213 -0.25 51.345 0 -0.25 52.35
   [4,272,0,-0.25,50.35,9.823,-0.25,49.383,10.213,-0.25,51.345,0,-0.25,52.35],
@@ -443,5 +444,5 @@ function ldraw_lib__6007019a() = [
   [3,16,29.086,-0.25,-43.529,55,-0.25,-55,37.017,-0.25,-37.017],
 ];
 module ldraw_lib__6007019a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6007019a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6007019a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6007019a(line=0.2);

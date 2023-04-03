@@ -3,7 +3,8 @@ use <../p/4-4con1.scad>
 use <../p/4-4con3.scad>
 use <../p/4-4cylo.scad>
 use <../p/4-4ring2.scad>
-function ldraw_lib__53993() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__53993(realsolid=false) = [
 // 0 Disc  1.6 x  1.6 with Bar Hole
 // 0 Name: 53993.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -21,27 +22,27 @@ function ldraw_lib__53993() = [
 // 
 // 
 // 1 16 0 -4 0 16 0 0 0 8 0 0 0 16 4-4cylo.dat
-  [1,16,0,-4,0,16,0,0,0,8,0,0,0,16, ldraw_lib__4_4cylo()],
+  [1,16,0,-4,0,16,0,0,0,8,0,0,0,16, ldraw_lib__4_4cylo(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -4 0 4 0 0 0 8 0 0 0 4 4-4cylo.dat
-  [1,16,0,-4,0,4,0,0,0,8,0,0,0,4, ldraw_lib__4_4cylo()],
+  [1,16,0,-4,0,4,0,0,0,8,0,0,0,4, ldraw_lib__4_4cylo(realsolid)],
 // 1 16 0 -3.5 0 4 0 0 0 -0.5 0 0 0 4 4-4con1.dat
-  [1,16,0,-3.5,0,4,0,0,0,-0.5,0,0,0,4, ldraw_lib__4_4con1()],
+  [1,16,0,-3.5,0,4,0,0,0,-0.5,0,0,0,4, ldraw_lib__4_4con1(realsolid)],
 // 1 16 0 -3.5 0 4 0 0 0 1 0 0 0 4 4-4ring2.dat
-  [1,16,0,-3.5,0,4,0,0,0,1,0,0,0,4, ldraw_lib__4_4ring2()],
+  [1,16,0,-3.5,0,4,0,0,0,1,0,0,0,4, ldraw_lib__4_4ring2(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -4 0 4 0 0 0 0.5 0 0 0 4 4-4con3.dat
-  [1,16,0,-4,0,4,0,0,0,0.5,0,0,0,4, ldraw_lib__4_4con3()],
+  [1,16,0,-4,0,4,0,0,0,0.5,0,0,0,4, ldraw_lib__4_4con3(realsolid)],
 // 1 16 0 3.5 0 4 0 0 0 0.5 0 0 0 4 4-4con1.dat
-  [1,16,0,3.5,0,4,0,0,0,0.5,0,0,0,4, ldraw_lib__4_4con1()],
+  [1,16,0,3.5,0,4,0,0,0,0.5,0,0,0,4, ldraw_lib__4_4con1(realsolid)],
 // 1 16 0 3.5 0 4 0 0 0 -1 0 0 0 4 4-4ring2.dat
-  [1,16,0,3.5,0,4,0,0,0,-1,0,0,0,4, ldraw_lib__4_4ring2()],
+  [1,16,0,3.5,0,4,0,0,0,-1,0,0,0,4, ldraw_lib__4_4ring2(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 4 0 4 0 0 0 -0.5 0 0 0 4 4-4con3.dat
-  [1,16,0,4,0,4,0,0,0,-0.5,0,0,0,4, ldraw_lib__4_4con3()],
+  [1,16,0,4,0,4,0,0,0,-0.5,0,0,0,4, ldraw_lib__4_4con3(realsolid)],
 // 5 24 -7.3912 -3.5 3.0616 -5.6568 -3.5 5.6568 -8.4852 -3.5 8.4852 -2.8284 -4 2.8284
   [5,24,-7.3912,-3.5,3.0616,-5.6568,-3.5,5.6568,-8.4852,-3.5,8.4852,-2.8284,-4,2.8284],
 // 5 24 -8 -3.5 0 -7.3912 -3.5 3.0616 -3.6956 -4 1.5308 -11.0868 -3.5 4.5924
@@ -172,5 +173,5 @@ function ldraw_lib__53993() = [
   [5,24,7.3912,3.5,3.0616,8,3.5,0,4,4,0,12,3.5,0],
 ];
 module ldraw_lib__53993(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__53993(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__53993(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__53993(line=0.2);

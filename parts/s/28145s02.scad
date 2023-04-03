@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/stud4o.scad>
-function ldraw_lib__s__28145s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__28145s02(realsolid=false) = [
 // 0 ~Minifig Hair Wavy Parted with Large Thick Glasses - Inside
 // 0 Name: s\28145s02.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -15,7 +16,7 @@ function ldraw_lib__s__28145s02() = [
 // 
 // 
 // 1 16 0 -6.25 0 1 0 0 0 -1.5625 0 0 0 1 stud4o.dat
-  [1,16,0,-6.25,0,1,0,0,0,-1.5625,0,0,0,1, ldraw_lib__stud4o()],
+  [1,16,0,-6.25,0,1,0,0,0,-1.5625,0,0,0,1, ldraw_lib__stud4o(realsolid)],
 // 3 16 -4.9631 2.8338 -15.1065 -3.565 3.389 -15.298 -5.146 2.605 -14.812
   [3,16,-4.9631,2.8338,-15.1065,-3.565,3.389,-15.298,-5.146,2.605,-14.812],
 // 3 16 -6.444 2.608 -14.915 -4.9631 2.8338 -15.1065 -5.146 2.605 -14.812
@@ -1515,5 +1516,5 @@ function ldraw_lib__s__28145s02() = [
   [5,24,-1.3582,11.4076,-15.329,-.686,8.435,-15.427,-.869,10.748,-15.389,-6.37,8.435,-15.04],
 ];
 module ldraw_lib__s__28145s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__28145s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__28145s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__28145s02(line=0.2);

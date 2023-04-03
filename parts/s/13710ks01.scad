@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <13710ks02.scad>
-function ldraw_lib__s__13710ks01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__13710ks01(realsolid=false) = [
 // 0 ~Sticker Bottom for Technic Beam  3 with Panel Fairing (Flat)
 // 0 Name: s\13710ks01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -16,7 +17,7 @@ function ldraw_lib__s__13710ks01() = [
 // 
 // 0 // Bottom surface
 // 1 16 0 -0.25 0 1 0 0 0 -1 0 0 0 1 s\13710ks02.dat
-  [1,16,0,-0.25,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__s__13710ks02()],
+  [1,16,0,-0.25,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__s__13710ks02(realsolid)],
 // 0 // Edge surface
 // 4 16 33.845 0 16.459 33.105 0 16.725 33.105 -0.25 16.725 33.845 -0.25 16.459
   [4,16,33.845,0,16.459,33.105,0,16.725,33.105,-0.25,16.725,33.845,-0.25,16.459],
@@ -82,5 +83,5 @@ function ldraw_lib__s__13710ks01() = [
   [5,24,33.94,0,15.604,33.94,-0.25,15.604,33.6,0,14.5,33.845,0,16.459],
 ];
 module ldraw_lib__s__13710ks01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__13710ks01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__13710ks01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__13710ks01(line=0.2);

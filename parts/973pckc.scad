@@ -5,7 +5,8 @@ use <../p/4-4ndis.scad>
 use <../p/4-4ring8.scad>
 use <../p/4-4ring9.scad>
 use <s/973s01.scad>
-function ldraw_lib__973pckc() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__973pckc(realsolid=false) = [
 // 0 Minifig Torso with Female Wetsuit, Coral and Dark Azure Trim and Turtle Logo Pattern
 // 0 Name: 973pckc.dat
 // 0 Author: Chris Dee [cwdee]
@@ -22,19 +23,19 @@ function ldraw_lib__973pckc() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01(realsolid)],
 // 1 16 0 -4 0 4.243 0 -4.243 0 -8 0 -4.243 0 -4.243 1-4cyli.dat
-  [1,16,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli()],
+  [1,16,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli(realsolid)],
 // 
 // 0 // Front
 // 1 16 0 13 -10 5 0 0 0 0 -5 0 1 0 4-4ndis.dat
-  [1,16,0,13,-10,5,0,0,0,0,-5,0,1,0, ldraw_lib__4_4ndis()],
+  [1,16,0,13,-10,5,0,0,0,0,-5,0,1,0, ldraw_lib__4_4ndis(realsolid)],
 // 1 353 0 13 -10 .5 0 0 0 0 -.5 0 1 0 4-4ring9.dat
-  [1,353,0,13,-10,.5,0,0,0,0,-.5,0,1,0, ldraw_lib__4_4ring9()],
+  [1,353,0,13,-10,.5,0,0,0,0,-.5,0,1,0, ldraw_lib__4_4ring9(realsolid)],
 // 1 16 0 13 -10 .5 0 0 0 0 -.5 0 1 0 4-4ring8.dat
-  [1,16,0,13,-10,.5,0,0,0,0,-.5,0,1,0, ldraw_lib__4_4ring8()],
+  [1,16,0,13,-10,.5,0,0,0,0,-.5,0,1,0, ldraw_lib__4_4ring8(realsolid)],
 // 1 16 0 13 -10 4 0 0 0 0 -4 0 1 0 4-4ering.dat
-  [1,16,0,13,-10,4,0,0,0,0,-4,0,1,0, ldraw_lib__4_4ering()],
+  [1,16,0,13,-10,4,0,0,0,0,-4,0,1,0, ldraw_lib__4_4ering(realsolid)],
 // 4 353 -9.586 4.428 -10 -5.099 2.16 -10 -6.371 1.595 -10 -10.954 3.748 -10
   [4,353,-9.586,4.428,-10,-5.099,2.16,-10,-6.371,1.595,-10,-10.954,3.748,-10],
 // 4 353 -11.376 5.222 -10 -9.586 4.428 -10 -10.954 3.748 -10 -12.64 4.882 -10
@@ -771,5 +772,5 @@ function ldraw_lib__973pckc() = [
   [3,16,6.151,14.321,10,8.911,15.978,10,.325,20.224,10],
 ];
 module ldraw_lib__973pckc(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__973pckc(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__973pckc(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__973pckc(line=0.2);

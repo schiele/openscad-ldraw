@@ -3,7 +3,8 @@ use <../p/48/4-4cylc3.scad>
 use <../p/48/4-4disc.scad>
 use <../p/48/4-4ring1.scad>
 use <../p/48/4-4ring2.scad>
-function ldraw_lib__4613857a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4613857a(realsolid=false) = [
 // 0 Sticker  1.6 x  1.6 Round with Red/White/DarkBlue Concentric Rings
 // 0 Name: 4613857a.dat
 // 0 Author: Christian Neumann [Wesley]
@@ -24,16 +25,16 @@ function ldraw_lib__4613857a() = [
 // 
 // 
 // 1 320 0 -0.25 0 4 0 0 0 1 0 0 0 4 48\4-4disc.dat
-  [1,320,0,-0.25,0,4,0,0,0,1,0,0,0,4, ldraw_lib__48__4_4disc()],
+  [1,320,0,-0.25,0,4,0,0,0,1,0,0,0,4, ldraw_lib__48__4_4disc(realsolid)],
 // 1 15 0 -0.25 0 4 0 0 0 1 0 0 0 4 48\4-4ring1.dat
-  [1,15,0,-0.25,0,4,0,0,0,1,0,0,0,4, ldraw_lib__48__4_4ring1()],
+  [1,15,0,-0.25,0,4,0,0,0,1,0,0,0,4, ldraw_lib__48__4_4ring1(realsolid)],
 // 1 15 0 -0.25 0 4 0 0 0 1 0 0 0 4 48\4-4ring2.dat
-  [1,15,0,-0.25,0,4,0,0,0,1,0,0,0,4, ldraw_lib__48__4_4ring2()],
+  [1,15,0,-0.25,0,4,0,0,0,1,0,0,0,4, ldraw_lib__48__4_4ring2(realsolid)],
 // 1 272 0 -0.25 0 6 0 0 0 1 0 0 0 6 48\4-4ring2.dat
-  [1,272,0,-0.25,0,6,0,0,0,1,0,0,0,6, ldraw_lib__48__4_4ring2()],
+  [1,272,0,-0.25,0,6,0,0,0,1,0,0,0,6, ldraw_lib__48__4_4ring2(realsolid)],
 // 1 272 0 0 0 18 0 0 0 -0.25 0 0 0 18 48\4-4cylc3.dat
-  [1,272,0,0,0,18,0,0,0,-0.25,0,0,0,18, ldraw_lib__48__4_4cylc3()],
+  [1,272,0,0,0,18,0,0,0,-0.25,0,0,0,18, ldraw_lib__48__4_4cylc3(realsolid)],
 ];
 module ldraw_lib__4613857a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4613857a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4613857a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4613857a(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__4544258o() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4544258o(realsolid=false) = [
 // 0 Sticker  1.1 x  1.8 with Gold "FIRST"
 // 0 Name: 4544258o.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -17,7 +18,7 @@ function ldraw_lib__4544258o() = [
 // 
 // 
 // 1 16 0 -0.25 0 18 0 0 0 0.25 0 0 0 11 box5-12.dat
-  [1,16,0,-0.25,0,18,0,0,0,0.25,0,0,0,11, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,18,0,0,0,0.25,0,0,0,11, ldraw_lib__box5_12(realsolid)],
 // 0 //
 // 4 82 -8.028 -0.25 0.264 -8.028 -0.25 -0.51 -5.641 -0.25 -0.51 -5.151 -0.25 0.264
   [4,82,-8.028,-0.25,0.264,-8.028,-0.25,-0.51,-5.641,-0.25,-0.51,-5.151,-0.25,0.264],
@@ -491,5 +492,5 @@ function ldraw_lib__4544258o() = [
   [3,16,5.142,-0.25,1.226,8.904,-0.25,1.226,18,-0.25,11],
 ];
 module ldraw_lib__4544258o(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4544258o(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4544258o(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4544258o(line=0.2);

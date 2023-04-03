@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/48/tm04o5000.scad>
 use <s/65617s01.scad>
-function ldraw_lib__65617() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__65617(realsolid=false) = [
 // 0 Brick  3 x  3 x  1 Corner Round with Curved Top
 // 0 Name: 65617.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -16,9 +17,9 @@ function ldraw_lib__65617() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\65617s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__65617s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__65617s01(realsolid)],
 // 1 16 0 0 0 0 0 -1 0 1 0 -1 0 0 s\65617s01.dat
-  [1,16,0,0,0,0,0,-1,0,1,0,-1,0,0, ldraw_lib__s__65617s01()],
+  [1,16,0,0,0,0,0,-1,0,1,0,-1,0,0, ldraw_lib__s__65617s01(realsolid)],
 // 5 24 42.426 20 -42.426 42.426 24 -42.426 36.528 24 -47.604 47.604 24 -36.528
   [5,24,42.426,20,-42.426,42.426,24,-42.426,36.528,24,-47.604,47.604,24,-36.528],
 // 5 24 39.9512 20 -39.9512 39.9512 24 -39.9512 35.5006 24 -43.8584 43.8584 24 -35.5006
@@ -33,8 +34,8 @@ function ldraw_lib__65617() = [
   [5,24,32.7953,4.6,-32.7953,31.1124,4,-31.1124,34.9096,4,-26.7872,26.7872,4,-34.9096],
 // 
 // 1 16 0 20 0 40 0 0 0 -40 0 0 0 -40 48\tm04o5000.dat
-  [1,16,0,20,0,40,0,0,0,-40,0,0,0,-40, ldraw_lib__48__tm04o5000()],
+  [1,16,0,20,0,40,0,0,0,-40,0,0,0,-40, ldraw_lib__48__tm04o5000(realsolid)],
 ];
 module ldraw_lib__65617(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__65617(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__65617(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__65617(line=0.2);

@@ -5,7 +5,8 @@ use <../p/box5.scad>
 use <../p/peghole.scad>
 use <../p/rect.scad>
 use <../p/stud2.scad>
-function ldraw_lib__6541() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6541(realsolid=false) = [
 // 0 Technic Brick  1 x  1 with Hole
 // 0 Name: 6541.dat
 // 0 Author: James Jessiman
@@ -26,7 +27,7 @@ function ldraw_lib__6541() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 24 0 6 0 0 0 -4 0 0 0 6 box5.dat
-  [1,16,0,24,0,6,0,0,0,-4,0,0,0,6, ldraw_lib__box5()],
+  [1,16,0,24,0,6,0,0,0,-4,0,0,0,6, ldraw_lib__box5(realsolid)],
 // 4 16 10 24 10 6 24 6 -6 24 6 -10 24 10
   [4,16,10,24,10,6,24,6,-6,24,6,-10,24,10],
 // 4 16 -10 24 10 -6 24 6 -6 24 -6 -10 24 -10
@@ -52,17 +53,17 @@ function ldraw_lib__6541() = [
 // 2 24 10 24 -10 10 0 -10
   [2,24,10,24,-10,10,0,-10],
 // 1 16 0 10 10 1 0 0 0 0 1 0 -1 0 peghole.dat
-  [1,16,0,10,10,1,0,0,0,0,1,0,-1,0, ldraw_lib__peghole()],
+  [1,16,0,10,10,1,0,0,0,0,1,0,-1,0, ldraw_lib__peghole(realsolid)],
 // 1 16 0 10 -10 1 0 0 0 0 1 0 1 0 peghole.dat
-  [1,16,0,10,-10,1,0,0,0,0,1,0,1,0, ldraw_lib__peghole()],
+  [1,16,0,10,-10,1,0,0,0,0,1,0,1,0, ldraw_lib__peghole(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 10 -8 6 0 0 0 0 6 0 16 0 4-4cyli.dat
-  [1,16,0,10,-8,6,0,0,0,0,6,0,16,0, ldraw_lib__4_4cyli()],
+  [1,16,0,10,-8,6,0,0,0,0,6,0,16,0, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 10 10 8 0 0 0 0 8 0 -1 0 4-4ndis.dat
-  [1,16,0,10,10,8,0,0,0,0,8,0,-1,0, ldraw_lib__4_4ndis()],
+  [1,16,0,10,10,8,0,0,0,0,8,0,-1,0, ldraw_lib__4_4ndis(realsolid)],
 // 1 16 0 10 -10 8 0 0 0 0 8 0 1 0 4-4ndis.dat
-  [1,16,0,10,-10,8,0,0,0,0,8,0,1,0, ldraw_lib__4_4ndis()],
+  [1,16,0,10,-10,8,0,0,0,0,8,0,1,0, ldraw_lib__4_4ndis(realsolid)],
 // 4 16 10 24 10 10 0 10 10 0 -10 10 24 -10
   [4,16,10,24,10,10,0,10,10,0,-10,10,24,-10],
 // 4 16 -10 24 10 -10 24 -10 -10 0 -10 -10 0 10
@@ -84,11 +85,11 @@ function ldraw_lib__6541() = [
 // 4 16 -10 24 -10 -8 18 -10 -8 2 -10 -10 0 -10
   [4,16,-10,24,-10,-8,18,-10,-8,2,-10,-10,0,-10],
 // 1 16 0 0 0 10 0 0 0 1 0 0 0 10 rect.dat
-  [1,16,0,0,0,10,0,0,0,1,0,0,0,10, ldraw_lib__rect()],
+  [1,16,0,0,0,10,0,0,0,1,0,0,0,10, ldraw_lib__rect(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 stud2.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2(realsolid)],
 // 0
 ];
 module ldraw_lib__6541(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6541(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6541(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6541(line=0.2);

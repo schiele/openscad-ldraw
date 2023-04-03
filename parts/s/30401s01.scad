@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/box3u8p.scad>
 use <../../p/box4-1.scad>
-function ldraw_lib__s__30401s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__30401s01(realsolid=false) = [
 // 0 ~Car Track 32 x 16 x  1 - Straight Section
 // 0 Name: s\30401s01.dat
 // 0 Author: Bernd Broich [bbroich]
@@ -16,13 +17,13 @@ function ldraw_lib__s__30401s01() = [
 // 
 // 
 // 1 16 144 13.5 38 0 4 0 0 0 9.5 -2 0 0 box4-1.dat
-  [1,16,144,13.5,38,0,4,0,0,0,9.5,-2,0,0, ldraw_lib__box4_1()],
+  [1,16,144,13.5,38,0,4,0,0,0,9.5,-2,0,0, ldraw_lib__box4_1(realsolid)],
 // 1 16 156 13.5 38 0 -4 0 0 0 9.5 2 0 0 box4-1.dat
-  [1,16,156,13.5,38,0,-4,0,0,0,9.5,2,0,0, ldraw_lib__box4_1()],
+  [1,16,156,13.5,38,0,-4,0,0,0,9.5,2,0,0, ldraw_lib__box4_1(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 150 24 140 0 0 6 0 -20 0 -140 0 0 box3u8p.dat
-  [1,16,150,24,140,0,0,6,0,-20,0,-140,0,0, ldraw_lib__box3u8p()],
+  [1,16,150,24,140,0,0,6,0,-20,0,-140,0,0, ldraw_lib__box3u8p(realsolid)],
 // 2 24 140 0 280 140 0 0
   [2,24,140,0,280,140,0,0],
 // 2 24 140 16 280 140 16 0
@@ -184,5 +185,5 @@ function ldraw_lib__s__30401s01() = [
 // 0
 ];
 module ldraw_lib__s__30401s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__30401s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__30401s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__30401s01(line=0.2);

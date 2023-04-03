@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__3_16chrd() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3_16chrd(realsolid=false) = [
 // 0 Chord 0.1875
 // 0 Name: 3-16chrd.dat
 // 0 Author: Niels Karsdorp [nielsk]
@@ -19,5 +20,5 @@ function ldraw_lib__3_16chrd() = [
 // 
 ];
 module ldraw_lib__3_16chrd(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3_16chrd(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3_16chrd(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3_16chrd(line=0.2);

@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/2-4cyli.scad>
 use <../p/2-4disc.scad>
 use <../p/2-4edge.scad>
-function ldraw_lib__u9066() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__u9066(realsolid=false) = [
 // 0 ~Electric Train  4.5V On/Off Switch Brick  2 x  4 (Pin)(Needs w)
 // 0 Name: u9066.dat
 // 0 Author: Michael Heidemann [mikeheide]
@@ -45,16 +46,16 @@ function ldraw_lib__u9066() = [
 // 4 16 4 4 -2 -4 4 -2 -4 4 2 4 4 2
   [4,16,4,4,-2,-4,4,-2,-4,4,2,4,4,2],
 // 1 16 0 0 -2 4 0 0 0 0 -4 0 2 0 2-4edge.dat
-  [1,16,0,0,-2,4,0,0,0,0,-4,0,2,0, ldraw_lib__2_4edge()],
+  [1,16,0,0,-2,4,0,0,0,0,-4,0,2,0, ldraw_lib__2_4edge(realsolid)],
 // 1 16 0 0 2 4 0 0 0 0 -4 0 2 0 2-4edge.dat
-  [1,16,0,0,2,4,0,0,0,0,-4,0,2,0, ldraw_lib__2_4edge()],
+  [1,16,0,0,2,4,0,0,0,0,-4,0,2,0, ldraw_lib__2_4edge(realsolid)],
 // 1 16 0 0 2 -4 0 0 0 0 -4 0 -4 0 2-4cyli.dat
-  [1,16,0,0,2,-4,0,0,0,0,-4,0,-4,0, ldraw_lib__2_4cyli()],
+  [1,16,0,0,2,-4,0,0,0,0,-4,0,-4,0, ldraw_lib__2_4cyli(realsolid)],
 // 1 16 0 0 2 -4 0 0 0 0 -4 0 -2 0 2-4disc.dat
-  [1,16,0,0,2,-4,0,0,0,0,-4,0,-2,0, ldraw_lib__2_4disc()],
+  [1,16,0,0,2,-4,0,0,0,0,-4,0,-2,0, ldraw_lib__2_4disc(realsolid)],
 // 1 16 0 0 -2 4 0 0 0 0 -4 0 2 0 2-4disc.dat
-  [1,16,0,0,-2,4,0,0,0,0,-4,0,2,0, ldraw_lib__2_4disc()],
+  [1,16,0,0,-2,4,0,0,0,0,-4,0,2,0, ldraw_lib__2_4disc(realsolid)],
 ];
 module ldraw_lib__u9066(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__u9066(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__u9066(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__u9066(line=0.2);

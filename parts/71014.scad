@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <59.scad>
-function ldraw_lib__71014() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__71014(realsolid=false) = [
 // 0 ~_Minifig Sword Greatsword Chrome Silver (Obsolete)
 // 0 Name: 71014.dat
 // 0 Author: [PTadmin]
@@ -21,8 +22,8 @@ function ldraw_lib__71014() = [
 // 
 // 
 // 1 383 0 0 0 1 0 0 0 1 0 0 0 1 59.dat
-  [1,383,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__59()],
+  [1,383,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__59(realsolid)],
 ];
 module ldraw_lib__71014(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__71014(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__71014(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__71014(line=0.2);

@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/1-4cyli.scad>
 use <s/973s01.scad>
-function ldraw_lib__973p74() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__973p74(realsolid=false) = [
 // 0 Minifig Torso with Vest, Patch Pockets and Police Badge Yellow Star Pattern
 // 0 Name: 973p74.dat
 // 0 Author: Chris Dee [cwdee]
@@ -26,7 +27,7 @@ function ldraw_lib__973p74() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01(realsolid)],
 // 4 16 19 29 10 19 32 10 -19 32 10 -19 29 10
   [4,16,19,29,10,19,32,10,-19,32,10,-19,29,10],
 // 4 16 19 29 10 -19 29 10 -14.345 2 10 14.345 2 10
@@ -34,7 +35,7 @@ function ldraw_lib__973p74() = [
 // 4 16 -14.345 2 10 -12 0 10 12 0 10 14.345 2 10
   [4,16,-14.345,2,10,-12,0,10,12,0,10,14.345,2,10],
 // 1 15 0 -4 0 4.243 0 -4.243 0 -8 0 -4.243 0 -4.243 1-4cyli.dat
-  [1,15,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli()],
+  [1,15,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli(realsolid)],
 // 
 // 4 15 0.5 32 -10 0.5 26 -10 -0.5 26 -10 -0.5 32 -10
   [4,15,0.5,32,-10,0.5,26,-10,-0.5,26,-10,-0.5,32,-10],
@@ -626,5 +627,5 @@ function ldraw_lib__973p74() = [
   [3,15,-8.25,11,-10,-8.75,12,-10,-8.25,12,-10],
 ];
 module ldraw_lib__973p74(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__973p74(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__973p74(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__973p74(line=0.2);

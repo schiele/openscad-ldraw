@@ -3,7 +3,8 @@ use <2-4cyli.scad>
 use <2-4edge.scad>
 use <2-4ndis.scad>
 use <box4o4a.scad>
-function ldraw_lib__clip1() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__clip1(realsolid=false) = [
 // 0 Vertical Clip for Flags
 // 0 Name: clip1.dat
 // 0 Author: Mark Kennedy [mkennedy]
@@ -22,23 +23,23 @@ function ldraw_lib__clip1() = [
 // 
 // 
 // 1 16 0 4 0 4 0 0 0 1 0 0 0 4 2-4edge.dat
-  [1,16,0,4,0,4,0,0,0,1,0,0,0,4, ldraw_lib__2_4edge()],
+  [1,16,0,4,0,4,0,0,0,1,0,0,0,4, ldraw_lib__2_4edge(realsolid)],
 // 1 16 0 -4 0 4 0 0 0 1 0 0 0 4 2-4edge.dat
-  [1,16,0,-4,0,4,0,0,0,1,0,0,0,4, ldraw_lib__2_4edge()],
+  [1,16,0,-4,0,4,0,0,0,1,0,0,0,4, ldraw_lib__2_4edge(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -4 0 4 0 0 0 8 0 0 0 4 2-4cyli.dat
-  [1,16,0,-4,0,4,0,0,0,8,0,0,0,4, ldraw_lib__2_4cyli()],
+  [1,16,0,-4,0,4,0,0,0,8,0,0,0,4, ldraw_lib__2_4cyli(realsolid)],
 // 
 // 1 16 0 4 0 4 0 0 0 -1 0 0 0 4 2-4ndis.dat
-  [1,16,0,4,0,4,0,0,0,-1,0,0,0,4, ldraw_lib__2_4ndis()],
+  [1,16,0,4,0,4,0,0,0,-1,0,0,0,4, ldraw_lib__2_4ndis(realsolid)],
 // 1 16 0 -4 0 4 0 0 0 1 0 0 0 4 2-4ndis.dat
-  [1,16,0,-4,0,4,0,0,0,1,0,0,0,4, ldraw_lib__2_4ndis()],
+  [1,16,0,-4,0,4,0,0,0,1,0,0,0,4, ldraw_lib__2_4ndis(realsolid)],
 // 
 // 1 16 4.5 0 -4 0 0.5 1 4 0 0 0 4 0 box4o4a.dat
-  [1,16,4.5,0,-4,0,0.5,1,4,0,0,0,4,0, ldraw_lib__box4o4a()],
+  [1,16,4.5,0,-4,0,0.5,1,4,0,0,0,4,0, ldraw_lib__box4o4a(realsolid)],
 // 1 16 -4.5 0 -4 0 -0.5 1 4 0 0 0 4 0 box4o4a.dat
-  [1,16,-4.5,0,-4,0,-0.5,1,4,0,0,0,4,0, ldraw_lib__box4o4a()],
+  [1,16,-4.5,0,-4,0,-0.5,1,4,0,0,0,4,0, ldraw_lib__box4o4a(realsolid)],
 // 
 // 2 24 6 4 0 5.52 4 2.28
   [2,24,6,4,0,5.52,4,2.28],
@@ -104,5 +105,5 @@ function ldraw_lib__clip1() = [
   [5,24,-6,4,0,-6,-4,0,-5.52,4,2.28,-5.5,4,-4],
 ];
 module ldraw_lib__clip1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__clip1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__clip1(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__clip1(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box3u12.scad>
-function ldraw_lib__197905c() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__197905c(realsolid=false) = [
 // 0 Sticker  4.6 x  1.2 with Black Diagonal Stripes (Right)
 // 0 Name: 197905c.dat
 // 0 Author: Damien Roux [Darats]
@@ -86,8 +87,8 @@ function ldraw_lib__197905c() = [
 // 3 16 14 -0.25 12 46 0 12 8.5 -0.25 12
   [3,16,14,-0.25,12,46,0,12,8.5,-0.25,12],
 // 1 16 0 -0.25 0 0 0 46 0 0.25 0 -12 0 0 box3u12.dat
-  [1,16,0,-0.25,0,0,0,46,0,0.25,0,-12,0,0, ldraw_lib__box3u12()],
+  [1,16,0,-0.25,0,0,0,46,0,0.25,0,-12,0,0, ldraw_lib__box3u12(realsolid)],
 ];
 module ldraw_lib__197905c(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__197905c(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__197905c(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__197905c(line=0.2);

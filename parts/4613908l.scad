@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__4613908l() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4613908l(realsolid=false) = [
 // 0 Sticker  2.1 x  1.8 with Anubis Head
 // 0 Name: 4613908l.dat
 // 0 Author: Christian Neumann [Wesley]
@@ -19,7 +20,7 @@ function ldraw_lib__4613908l() = [
 // 
 // 
 // 1 16 0 -0.25 0 18 0 0 0 0.25 0 0 0 21 box5-12.dat
-  [1,16,0,-0.25,0,18,0,0,0,0.25,0,0,0,21, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,18,0,0,0,0.25,0,0,0,21, ldraw_lib__box5_12(realsolid)],
 // 4 308 -14.2 -0.25 17.6 -15.1 -0.25 16.7 -14.45 -0.25 16.3 -13.55 -0.25 17.1
   [4,308,-14.2,-0.25,17.6,-15.1,-0.25,16.7,-14.45,-0.25,16.3,-13.55,-0.25,17.1],
 // 4 308 -12.1 -0.25 18.55 -14.2 -0.25 17.6 -13.55 -0.25 17.1 -11.5 -0.25 17.8
@@ -1464,5 +1465,5 @@ function ldraw_lib__4613908l() = [
   [4,484,-3.05,-0.25,-10.2,-2.8,-0.25,-9.25,-4.1,-0.25,-9.35,-4.1,-0.25,-10.2],
 ];
 module ldraw_lib__4613908l(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4613908l(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4613908l(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4613908l(line=0.2);

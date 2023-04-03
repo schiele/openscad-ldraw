@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/1-8chrd.scad>
 use <../../p/2-4ndis.scad>
-function ldraw_lib__s__3003pe1s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__3003pe1s02(realsolid=false) = [
 // 0 ~Brick  2 x  2 with Black Eye Pattern on Both Sides - Inner of the Eye
 // 0 Name: s\3003pe1s02.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -17,19 +18,19 @@ function ldraw_lib__s__3003pe1s02() = [
 // 
 // 0 // Primitives
 // 1 16 8 17 0 -5 0 0 0 0 -5 0 1 0 2-4ndis.dat
-  [1,16,8,17,0,-5,0,0,0,0,-5,0,1,0, ldraw_lib__2_4ndis()],
+  [1,16,8,17,0,-5,0,0,0,0,-5,0,1,0, ldraw_lib__2_4ndis(realsolid)],
 // 1 16 8 14 0 7 0 0 0 0 -7 0 1 0 1-8chrd.dat
-  [1,16,8,14,0,7,0,0,0,0,-7,0,1,0, ldraw_lib__1_8chrd()],
+  [1,16,8,14,0,7,0,0,0,0,-7,0,1,0, ldraw_lib__1_8chrd(realsolid)],
 // 1 16 8 14 0 0 0 7 -7 0 0 0 1 0 1-8chrd.dat
-  [1,16,8,14,0,0,0,7,-7,0,0,0,1,0, ldraw_lib__1_8chrd()],
+  [1,16,8,14,0,0,0,7,-7,0,0,0,1,0, ldraw_lib__1_8chrd(realsolid)],
 // 1 16 8 14 0 0 0 -7 -7 0 0 0 1 0 1-8chrd.dat
-  [1,16,8,14,0,0,0,-7,-7,0,0,0,1,0, ldraw_lib__1_8chrd()],
+  [1,16,8,14,0,0,0,-7,-7,0,0,0,1,0, ldraw_lib__1_8chrd(realsolid)],
 // 1 16 8 14 0 -7 0 0 0 0 -7 0 1 0 1-8chrd.dat
-  [1,16,8,14,0,-7,0,0,0,0,-7,0,1,0, ldraw_lib__1_8chrd()],
+  [1,16,8,14,0,-7,0,0,0,0,-7,0,1,0, ldraw_lib__1_8chrd(realsolid)],
 // 1 16 8 14 0 -7 0 0 0 0 7 0 1 0 1-8chrd.dat
-  [1,16,8,14,0,-7,0,0,0,0,7,0,1,0, ldraw_lib__1_8chrd()],
+  [1,16,8,14,0,-7,0,0,0,0,7,0,1,0, ldraw_lib__1_8chrd(realsolid)],
 // 1 16 8 14 0 7 0 0 0 0 7 0 1 0 1-8chrd.dat
-  [1,16,8,14,0,7,0,0,0,0,7,0,1,0, ldraw_lib__1_8chrd()],
+  [1,16,8,14,0,7,0,0,0,0,7,0,1,0, ldraw_lib__1_8chrd(realsolid)],
 // 0 // Inner faces
 // 3 16 12.9497 9.0503 0 15 14 0 13 12 0
   [3,16,12.9497,9.0503,0,15,14,0,13,12,0],
@@ -61,5 +62,5 @@ function ldraw_lib__s__3003pe1s02() = [
   [3,16,13,17,0,15,14,0,12.957,17.6525,0],
 ];
 module ldraw_lib__s__3003pe1s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__3003pe1s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__3003pe1s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__3003pe1s02(line=0.2);

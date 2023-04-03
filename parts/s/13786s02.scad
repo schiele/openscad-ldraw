@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__13786s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__13786s02(realsolid=false) = [
 // 0 ~Animal Cat Standing Looking Forward - Filling Stripes Area
 // 0 Name: s\13786s02.dat
 // 0 Author: Willy Tschager [Holly-Wood]
@@ -130,5 +131,5 @@ function ldraw_lib__s__13786s02() = [
   [3,16,-7.061,-32.343,-3.068,-8.225,-26.797,-4.097,-4.303,-31.06,-7.998],
 ];
 module ldraw_lib__s__13786s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__13786s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__13786s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__13786s02(line=0.2);

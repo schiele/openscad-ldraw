@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/4162s01.scad>
-function ldraw_lib__4162p1j() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4162p1j(realsolid=false) = [
 // 0 Tile  1 x  8 with "Dubai" Pattern
 // 0 Name: 4162p1j.dat
 // 0 Author: Orion Pobursky [OrionP]
@@ -20,7 +21,7 @@ function ldraw_lib__4162p1j() = [
 // 0 // Using font: "Helvetica" style: "Regular" size: 50pt
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4162s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4162s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4162s01(realsolid)],
 // 
 // 4 15 -11.459 0 -3.427 -13.539 0 -3.427 -14.71 0 -4.423 -11.236 0 -4.423
   [4,15,-11.459,0,-3.427,-13.539,0,-3.427,-14.71,0,-4.423,-11.236,0,-4.423],
@@ -426,5 +427,5 @@ function ldraw_lib__4162p1j() = [
   [3,16,-11.224,0,4.183,.354,0,4.212,-80,0,10],
 ];
 module ldraw_lib__4162p1j(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4162p1j(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4162p1j(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4162p1j(line=0.2);

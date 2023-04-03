@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__8__4_4ring6() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__8__4_4ring6(realsolid=false) = [
 // 0 Lo-Res Ring  6 x 1.0
 // 0 Name: 8\4-4ring6.dat
 // 0 Author: Tim Lampmann [L4mpi]
@@ -31,5 +32,5 @@ function ldraw_lib__8__4_4ring6() = [
   [4,16,4.9497,0,-4.9497,7,0,0,6,0,0,4.2426,0,-4.2426],
 ];
 module ldraw_lib__8__4_4ring6(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__8__4_4ring6(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__8__4_4ring6(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__8__4_4ring6(line=0.2);

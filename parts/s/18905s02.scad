@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/bump5000.scad>
-function ldraw_lib__s__18905s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__18905s02(realsolid=false) = [
 // 0 ~Animal Crocodile  4 x  9 Head - Half
 // 0 Name: s\18905s02.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -15,7 +16,7 @@ function ldraw_lib__s__18905s02() = [
 // 
 // 
 // 1 16 10.8 0 0 0 1.7 0 2.4 0 0 0 0 2.4 bump5000.dat
-  [1,16,10.8,0,0,0,1.7,0,2.4,0,0,0,0,2.4, ldraw_lib__bump5000()],
+  [1,16,10.8,0,0,0,1.7,0,2.4,0,0,0,0,2.4, ldraw_lib__bump5000(realsolid)],
 // 4 16 9.302 -4.933 -12.219 9.255 -3.308 -13.139 5.738 -3.063 -12.389 5.724 -4.916 -11.323
   [4,16,9.302,-4.933,-12.219,9.255,-3.308,-13.139,5.738,-3.063,-12.389,5.724,-4.916,-11.323],
 // 3 16 12.039 -4.587 -16.27 11.106 -4.585 -16.75 11.101 -4.683 -15.773
@@ -2274,5 +2275,5 @@ function ldraw_lib__s__18905s02() = [
   [5,24,10.524,-9.848,-21.247,10.642,-8.949,-18.431,9.509,-9.437,-18.407,12.386,-8.091,-21.203],
 ];
 module ldraw_lib__s__18905s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__18905s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__18905s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__18905s02(line=0.2);

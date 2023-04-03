@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <4586246c.scad>
 use <46413.scad>
-function ldraw_lib__46413d01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__46413d01(realsolid=false) = [
 // 0 Hinge Brick  4 x  8 x  2 Curved Locking with 2 Dual Fingers with "LEGO CITY" Sticker
 // 0 Name: 46413d01.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -18,10 +19,10 @@ function ldraw_lib__46413d01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 46413.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__46413()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__46413(realsolid)],
 // 1 0 0 38 -130 1 0 0 0 .85717 -.51504 0 .51504 .85717 4586246c.dat
-  [1,0,0,38,-130,1,0,0,0,.85717,-.51504,0,.51504,.85717, ldraw_lib__4586246c()],
+  [1,0,0,38,-130,1,0,0,0,.85717,-.51504,0,.51504,.85717, ldraw_lib__4586246c(realsolid)],
 ];
 module ldraw_lib__46413d01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__46413d01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__46413d01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__46413d01(line=0.2);

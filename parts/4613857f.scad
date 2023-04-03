@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__4613857f() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4613857f(realsolid=false) = [
 // 0 Sticker  5.8 x  1.8 with Hieroglyphs and Horus Head on Tan Background
 // 0 Name: 4613857f.dat
 // 0 Author: Christian Neumann [Wesley]
@@ -23,7 +24,7 @@ function ldraw_lib__4613857f() = [
 // 
 // 
 // 1 16 0 -0.25 0 18 0 0 0 0.25 0 0 0 58 box5-12.dat
-  [1,16,0,-0.25,0,18,0,0,0,0.25,0,0,0,58, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,18,0,0,0,0.25,0,0,0,58, ldraw_lib__box5_12(realsolid)],
 // 4 72 -1.19 -0.25 44.02 -1.04 -0.25 44.02 -1.05 -0.25 44.2 -1.25 -0.25 44.35
   [4,72,-1.19,-0.25,44.02,-1.04,-0.25,44.02,-1.05,-0.25,44.2,-1.25,-0.25,44.35],
 // 4 72 -1.4 -0.25 44.12 -1.19 -0.25 44.02 -1.25 -0.25 44.35 -1.6 -0.25 44.55
@@ -6662,5 +6663,5 @@ function ldraw_lib__4613857f() = [
   [3,19,3.11,-0.25,40.71,2.8,-0.25,40.46,3.78,-0.25,39.08],
 ];
 module ldraw_lib__4613857f(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4613857f(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4613857f(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4613857f(line=0.2);

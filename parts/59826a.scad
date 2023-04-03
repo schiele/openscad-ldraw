@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__59826a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__59826a(realsolid=false) = [
 // 0 Sticker  3 x  9.4 with Blue and White Diagonal Stripes
 // 0 Name: 59826a.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -32,9 +33,9 @@ function ldraw_lib__59826a() = [
   [3,15,94,-0.25,14.6,94,-0.25,30,78.6,-0.25,30],
 // 0 //
 // 1 15 0 -0.25 0 94 0 0 0 0.25 0 0 0 30 box5-12.dat
-  [1,15,0,-0.25,0,94,0,0,0,0.25,0,0,0,30, ldraw_lib__box5_12()],
+  [1,15,0,-0.25,0,94,0,0,0,0.25,0,0,0,30, ldraw_lib__box5_12(realsolid)],
 // 0 //
 ];
 module ldraw_lib__59826a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__59826a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__59826a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__59826a(line=0.2);

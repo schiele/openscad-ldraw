@@ -3,7 +3,8 @@ use <../../p/4-4cyli.scad>
 use <../../p/4-4disc.scad>
 use <../../p/4-4edge.scad>
 use <../../p/clip4.scad>
-function ldraw_lib__s__469s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__469s01(realsolid=false) = [
 // 0 ~Roadsign Clip-on  2 x  2 Round without Front Face
 // 0 Name: s\469s01.dat
 // 0 Author: Franklin W. Cain [fwcain]
@@ -22,16 +23,16 @@ function ldraw_lib__s__469s01() = [
 // 
 // 
 // 1 16 0 0 -6 20 0 0 0 0 20 0 -1 0 4-4disc.dat
-  [1,16,0,0,-6,20,0,0,0,0,20,0,-1,0, ldraw_lib__4_4disc()],
+  [1,16,0,0,-6,20,0,0,0,0,20,0,-1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 0 -6 20 0 0 0 0 20 0 -3 0 4-4cyli.dat
-  [1,16,0,0,-6,20,0,0,0,0,20,0,-3,0, ldraw_lib__4_4cyli()],
+  [1,16,0,0,-6,20,0,0,0,0,20,0,-3,0, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 0 -9 20 0 0 0 0 20 0 1 0 4-4edge.dat
-  [1,16,0,0,-9,20,0,0,0,0,20,0,1,0, ldraw_lib__4_4edge()],
+  [1,16,0,0,-9,20,0,0,0,0,20,0,1,0, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 0 -6 20 0 0 0 0 20 0 1 0 4-4edge.dat
-  [1,16,0,0,-6,20,0,0,0,0,20,0,1,0, ldraw_lib__4_4edge()],
+  [1,16,0,0,-6,20,0,0,0,0,20,0,1,0, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 clip4.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__clip4()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__clip4(realsolid)],
 ];
 module ldraw_lib__s__469s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__469s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__469s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__469s01(line=0.2);

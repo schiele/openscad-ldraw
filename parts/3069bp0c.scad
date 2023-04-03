@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3069bs01.scad>
-function ldraw_lib__3069bp0c() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3069bp0c(realsolid=false) = [
 // 0 Tile  1 x  2 with Letter and Seal Pattern
 // 0 Name: 3069bp0c.dat
 // 0 Author: Andy Westrate [westrate]
@@ -17,7 +18,7 @@ function ldraw_lib__3069bp0c() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3069bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3069bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3069bs01(realsolid)],
 // 
 // 4 0 -4.75 0 -2.25 -19.25 0 -7.25 -18.75 0 -8.25 -4.5 0 -3.25
   [4,0,-4.75,0,-2.25,-19.25,0,-7.25,-18.75,0,-8.25,-4.5,0,-3.25],
@@ -500,5 +501,5 @@ function ldraw_lib__3069bp0c() = [
 // 0
 ];
 module ldraw_lib__3069bp0c(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3069bp0c(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3069bp0c(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3069bp0c(line=0.2);

@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__973pt0a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__973pt0a(realsolid=false) = [
 // 0 ~Minifig Torso with MBA Pattern
 // 0 Name: s\973pt0a.dat
 // 0 Author: Howard Lande [HowardLande]
@@ -1738,5 +1739,5 @@ function ldraw_lib__s__973pt0a() = [
 // 0
 ];
 module ldraw_lib__s__973pt0a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__973pt0a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__973pt0a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__973pt0a(line=0.2);

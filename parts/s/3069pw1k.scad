@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/1-4ndis.scad>
-function ldraw_lib__s__3069pw1k() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__3069pw1k(realsolid=false) = [
 // 0 ~Tile  1 x  2 with Playing Cards Pattern - Letter K
 // 0 Name: s\3069pw1k.dat
 // 0 Author: Willy Tschager [Holly-Wood]
@@ -15,13 +16,13 @@ function ldraw_lib__s__3069pw1k() = [
 // 
 // 
 // 1 16 -1.16 0 0.7 0.28 0 0 0 1 0 0 0 0.25 1-4ndis.dat
-  [1,16,-1.16,0,0.7,0.28,0,0,0,1,0,0,0,0.25, ldraw_lib__1_4ndis()],
+  [1,16,-1.16,0,0.7,0.28,0,0,0,1,0,0,0,0.25, ldraw_lib__1_4ndis(realsolid)],
 // 1 16 -0.12 0 0.7 -0.28 0 0 0 1 0 0 0 0.25 1-4ndis.dat
-  [1,16,-0.12,0,0.7,-0.28,0,0,0,1,0,0,0,0.25, ldraw_lib__1_4ndis()],
+  [1,16,-0.12,0,0.7,-0.28,0,0,0,1,0,0,0,0.25, ldraw_lib__1_4ndis(realsolid)],
 // 1 16 -1.16 0 -0.7 0.28 0 0 0 1 0 0 0 -0.25 1-4ndis.dat
-  [1,16,-1.16,0,-0.7,0.28,0,0,0,1,0,0,0,-0.25, ldraw_lib__1_4ndis()],
+  [1,16,-1.16,0,-0.7,0.28,0,0,0,1,0,0,0,-0.25, ldraw_lib__1_4ndis(realsolid)],
 // 1 16 -0.12 0 -0.7 -0.28 0 0 0 1 0 0 0 -0.25 1-4ndis.dat
-  [1,16,-0.12,0,-0.7,-0.28,0,0,0,1,0,0,0,-0.25, ldraw_lib__1_4ndis()],
+  [1,16,-0.12,0,-0.7,-0.28,0,0,0,1,0,0,0,-0.25, ldraw_lib__1_4ndis(realsolid)],
 // 3 16 -1.16 0 0.95 -1.16 0 1.06 -0.88 0 0.95
   [3,16,-1.16,0,0.95,-1.16,0,1.06,-0.88,0,0.95],
 // 4 16 -0.4 0 0.95 -0.88 0 0.95 -1.16 0 1.06 -0.12 0 1.06
@@ -77,5 +78,5 @@ function ldraw_lib__s__3069pw1k() = [
 // 0
 ];
 module ldraw_lib__s__3069pw1k(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__3069pw1k(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__3069pw1k(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__3069pw1k(line=0.2);

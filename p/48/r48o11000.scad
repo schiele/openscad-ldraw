@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__48__r48o11000() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__48__r48o11000(realsolid=false) = [
 // 0 Hi-Res Torus Outside  1 x 11.0000 x 0.0208
 // 0 Name: 48\r48o11000.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -122,5 +123,5 @@ function ldraw_lib__48__r48o11000() = [
 // 0 // Build by Primitive Generator 2
 ];
 module ldraw_lib__48__r48o11000(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__48__r48o11000(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__48__r48o11000(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__48__r48o11000(line=0.2);

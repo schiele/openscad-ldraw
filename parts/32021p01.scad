@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/32021s01.scad>
-function ldraw_lib__32021p01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__32021p01(realsolid=false) = [
 // 0 ~Electric Code Pilot Cover with Code Pilot and Button Description Pattern
 // 0 Name: 32021p01.dat
 // 0 Author: Max Martin Richter [MMR1988]
@@ -15,7 +16,7 @@ function ldraw_lib__32021p01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\32021s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__32021s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__32021s01(realsolid)],
 // 
 // 3 16 8 0 8 -8 0 8 -8 0 2
   [3,16,8,0,8,-8,0,8,-8,0,2],
@@ -1505,5 +1506,5 @@ function ldraw_lib__32021p01() = [
   [4,16,-13.722475,0,-25.698575,-7.74,0,-26.48,-4,0,-24.5,-19.75,0,-24.5],
 ];
 module ldraw_lib__32021p01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__32021p01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__32021p01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__32021p01(line=0.2);

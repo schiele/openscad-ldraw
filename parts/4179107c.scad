@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__4179107c() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4179107c(realsolid=false) = [
 // 0 Sticker  6.0 x  6.0 with Black Iron Cross on White Background Right
 // 0 Name: 4179107c.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -158,5 +159,5 @@ function ldraw_lib__4179107c() = [
   [4,15,-60,-.25,60,-17.3103,-.25,34.9054,-19.4307,-.25,41.2518,-22,-.25,47.43],
 ];
 module ldraw_lib__4179107c(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4179107c(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4179107c(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4179107c(line=0.2);

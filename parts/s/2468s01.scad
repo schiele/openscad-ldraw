@@ -6,7 +6,8 @@ use <../../p/box5.scad>
 use <../../p/rect2p.scad>
 use <../../p/rect3.scad>
 use <../../p/stud2.scad>
-function ldraw_lib__s__2468s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__2468s01(realsolid=false) = [
 // 0 ~Panel  3 x  3 x  6 Corner Convex without Square Face
 // 0 Name: s\2468s01.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -21,13 +22,13 @@ function ldraw_lib__s__2468s01() = [
 // 
 // 
 // 1 16 0 132 -7 1 0 0 0 3.75 0 0 0 1 box4-1.dat
-  [1,16,0,132,-7,1,0,0,0,3.75,0,0,0,1, ldraw_lib__box4_1()],
+  [1,16,0,132,-7,1,0,0,0,3.75,0,0,0,1, ldraw_lib__box4_1(realsolid)],
 // 1 16 7 132 0 0 0 -1 0 3.75 0 1 0 0 box4-1.dat
-  [1,16,7,132,0,0,0,-1,0,3.75,0,1,0,0, ldraw_lib__box4_1()],
+  [1,16,7,132,0,0,0,-1,0,3.75,0,1,0,0, ldraw_lib__box4_1(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 1 136 -1 7 0 0 0 -4 0 0 0 7 box5.dat
-  [1,16,1,136,-1,7,0,0,0,-4,0,0,0,7, ldraw_lib__box5()],
+  [1,16,1,136,-1,7,0,0,0,-4,0,0,0,7, ldraw_lib__box5(realsolid)],
 // 2 24 10 136 10 -10 136 10
   [2,24,10,136,10,-10,136,10],
 // 2 24 -10 136 10 -10 136 -10
@@ -77,27 +78,27 @@ function ldraw_lib__s__2468s01() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -4 0 0 0 10 0 4 0 -10 0 0 box3-3.dat
-  [1,16,0,-4,0,0,0,10,0,4,0,-10,0,0, ldraw_lib__box3_3()],
+  [1,16,0,-4,0,0,0,10,0,4,0,-10,0,0, ldraw_lib__box3_3(realsolid)],
 // 
 // 0 // Inside face
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 29 82 0 0 17 0 0 -20 26 10 0 0 box2-5.dat
-  [1,16,29,82,0,0,17,0,0,-20,26,10,0,0, ldraw_lib__box2_5()],
+  [1,16,29,82,0,0,17,0,0,-20,26,10,0,0, ldraw_lib__box2_5(realsolid)],
 // 4 16 10 128 -12 10 88 -46 46 88 -10 12 128 -10
   [4,16,10,128,-12,10,88,-46,46,88,-10,12,128,-10],
 // 1 16 28 62 -28 18 1 0 0 0 26 18 0 0 rect2p.dat
-  [1,16,28,62,-28,18,1,0,0,0,26,18,0,0, ldraw_lib__rect2p()],
+  [1,16,28,62,-28,18,1,0,0,0,26,18,0,0, ldraw_lib__rect2p(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 82 -29 10 0 0 0 -20 26 0 -17 0 box2-5.dat
-  [1,16,0,82,-29,10,0,0,0,-20,26,0,-17,0, ldraw_lib__box2_5()],
+  [1,16,0,82,-29,10,0,0,0,-20,26,0,-17,0, ldraw_lib__box2_5(realsolid)],
 // 1 16 31 20 0 0 1 -15 0 0 -16 -10 0 0 rect3.dat
-  [1,16,31,20,0,0,1,-15,0,0,-16,-10,0,0, ldraw_lib__rect3()],
+  [1,16,31,20,0,0,1,-15,0,0,-16,-10,0,0, ldraw_lib__rect3(realsolid)],
 // 4 16 10 36 -46 10 4 -16 16 4 -10 46 36 -10
   [4,16,10,36,-46,10,4,-16,16,4,-10,46,36,-10],
 // 1 16 0 20 -31 -10 0 0 0 0 -16 0 -1 15 rect3.dat
-  [1,16,0,20,-31,-10,0,0,0,0,-16,0,-1,15, ldraw_lib__rect3()],
+  [1,16,0,20,-31,-10,0,0,0,0,-16,0,-1,15, ldraw_lib__rect3(realsolid)],
 // 
 // 0 // Right side
 // 4 16 10 136 10 12 128 10 46 88 10 50 90 10
@@ -125,23 +126,23 @@ function ldraw_lib__s__2468s01() = [
 // 2 24 50 34 -10 10 34 -50
   [2,24,50,34,-10,10,34,-50],
 // 1 16 30 85 0 0 20 0 0 -23 28 10 0 0 box2-5.dat
-  [1,16,30,85,0,0,20,0,0,-23,28,10,0,0, ldraw_lib__box2_5()],
+  [1,16,30,85,0,0,20,0,0,-23,28,10,0,0, ldraw_lib__box2_5(realsolid)],
 // 3 16 10 90 -50 10 136 -10 50 90 -10
   [3,16,10,90,-50,10,136,-10,50,90,-10],
 // 1 16 0 85 -30 10 0 0 0 -23 28 0 -20 0 box2-5.dat
-  [1,16,0,85,-30,10,0,0,0,-23,28,0,-20,0, ldraw_lib__box2_5()],
+  [1,16,0,85,-30,10,0,0,0,-23,28,0,-20,0, ldraw_lib__box2_5(realsolid)],
 // 0 // patterned area
 // 0 // 4 16 50 90 -10 50 34 -10 10 34 -50 10 90 -50
 // 1 16 30 13 0 -20 -1 0 -21 0 0 0 0 -10 rect2p.dat
-  [1,16,30,13,0,-20,-1,0,-21,0,0,0,0,-10, ldraw_lib__rect2p()],
+  [1,16,30,13,0,-20,-1,0,-21,0,0,0,0,-10, ldraw_lib__rect2p(realsolid)],
 // 3 16 50 34 -10 10 -8 -10 10 34 -50
   [3,16,50,34,-10,10,-8,-10,10,34,-50],
 // 1 16 0 13 -30 0 0 -10 -21 0 0 20 1 0 rect2p.dat
-  [1,16,0,13,-30,0,0,-10,-21,0,0,20,1,0, ldraw_lib__rect2p()],
+  [1,16,0,13,-30,0,0,-10,-21,0,0,20,1,0, ldraw_lib__rect2p(realsolid)],
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 stud2.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2(realsolid)],
 ];
 module ldraw_lib__s__2468s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__2468s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__2468s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__2468s01(line=0.2);

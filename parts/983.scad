@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <3820.scad>
-function ldraw_lib__983() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__983(realsolid=false) = [
 // 0 ~Moved to 3820
 // 0 Name: 983.dat
 // 0 Author: [PTadmin]
@@ -16,8 +17,8 @@ function ldraw_lib__983() = [
 // 
 // 0 // Minifig Hand
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 3820.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3820()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3820(realsolid)],
 ];
 module ldraw_lib__983(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__983(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__983(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__983(line=0.2);

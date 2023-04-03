@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <3069bp0ms01.scad>
-function ldraw_lib__s__3069bp0ms02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__3069bp0ms02(realsolid=false) = [
 // 0 ~Tile  1 x  2 with Carbon Fibre Pattern - Half Pattern
 // 0 Name: s\3069bp0ms02.dat
 // 0 Author: Jens Brühl [jb70]
@@ -15,13 +16,13 @@ function ldraw_lib__s__3069bp0ms02() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3069bp0ms01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3069bp0ms01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3069bp0ms01(realsolid)],
 // 1 16 5 0 0 1 0 0 0 1 0 0 0 1 s\3069bp0ms01.dat
-  [1,16,5,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3069bp0ms01()],
+  [1,16,5,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3069bp0ms01(realsolid)],
 // 1 16 10 0 0 1 0 0 0 1 0 0 0 1 s\3069bp0ms01.dat
-  [1,16,10,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3069bp0ms01()],
+  [1,16,10,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3069bp0ms01(realsolid)],
 // 1 16 15 0 0 1 0 0 0 1 0 0 0 1 s\3069bp0ms01.dat
-  [1,16,15,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3069bp0ms01()],
+  [1,16,15,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3069bp0ms01(realsolid)],
 // 3 16 14.16667 0 10 15.75 0 9.75 15.83333 0 10
   [3,16,14.16667,0,10,15.75,0,9.75,15.83333,0,10],
 // 4 16 15.75 0 9.75 14.16667 0 10 13.75 0 8.75 15.25 0 8.25
@@ -70,9 +71,9 @@ function ldraw_lib__s__3069bp0ms02() = [
   [3,16,19.75,0,6.75,20,0,6.66667,20,0,7.5],
 // 
 // 1 16 -5 0 0 1 0 0 0 1 0 0 0 1 s\3069bp0ms01.dat
-  [1,16,-5,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3069bp0ms01()],
+  [1,16,-5,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3069bp0ms01(realsolid)],
 // 1 16 -10 0 0 1 0 0 0 1 0 0 0 1 s\3069bp0ms01.dat
-  [1,16,-10,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3069bp0ms01()],
+  [1,16,-10,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3069bp0ms01(realsolid)],
 // 3 87 -10.75 0 .25 -12.25 0 .75 -14.25 0 -.25
   [3,87,-10.75,0,.25,-12.25,0,.75,-14.25,0,-.25],
 // 3 87 -14.25 0 -.25 -12.25 0 .75 -13.75 0 1.25
@@ -145,5 +146,5 @@ function ldraw_lib__s__3069bp0ms02() = [
   [3,16,-20,0,3.33333,-20,0,2.5,-19.75,0,3.25],
 ];
 module ldraw_lib__s__3069bp0ms02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__3069bp0ms02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__3069bp0ms02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__3069bp0ms02(line=0.2);

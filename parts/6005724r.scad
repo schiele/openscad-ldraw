@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__6005724r() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6005724r(realsolid=false) = [
 // 0 Sticker  2.8 x  3.5 with Diamond Bricks and Eyes
 // 0 Name: 6005724r.dat
 // 0 Author: Christian Neumann [Wesley]
@@ -19,7 +20,7 @@ function ldraw_lib__6005724r() = [
 // 
 // 
 // 1 16 0 -0.25 0 35 0 0 0 0.25 0 0 0 28 box5-12.dat
-  [1,16,0,-0.25,0,35,0,0,0,0.25,0,0,0,28, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,35,0,0,0,0.25,0,0,0,28, ldraw_lib__box5_12(realsolid)],
 // 4 0 -34.4 -0.25 13.4 -35 -0.25 13.4 -33 -0.25 11.2 -32.4 -0.25 12
   [4,0,-34.4,-0.25,13.4,-35,-0.25,13.4,-33,-0.25,11.2,-32.4,-0.25,12],
 // 4 0 -29.4 -0.25 11.1 -32.4 -0.25 12 -33 -0.25 11.2 -30.2 -0.25 9.8
@@ -1634,5 +1635,5 @@ function ldraw_lib__6005724r() = [
   [3,16,-31.4,-0.25,14,-34.4,-0.25,13.4,-30.6,-0.25,13.8],
 ];
 module ldraw_lib__6005724r(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6005724r(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6005724r(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6005724r(line=0.2);

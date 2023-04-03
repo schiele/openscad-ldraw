@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/4162s01.scad>
-function ldraw_lib__4162p0v() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4162p0v(realsolid=false) = [
 // 0 Tile  1 x  8 with "Trevi Fountain" Pattern
 // 0 Name: 4162p0v.dat
 // 0 Author: Owen Burgoyne [C3POwen]
@@ -15,7 +16,7 @@ function ldraw_lib__4162p0v() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4162s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4162s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4162s01(realsolid)],
 // 4 15 -40.078 0 4.487 -37.365 0 3.479 -36.306 0 3.479 -33.593 0 4.487
   [4,15,-40.078,0,4.487,-37.365,0,3.479,-36.306,0,3.479,-33.593,0,4.487],
 // 3 15 -40.078 0 4.487 -40.078 0 3.479 -37.365 0 3.479
@@ -958,5 +959,5 @@ function ldraw_lib__4162p0v() = [
   [3,16,24.615,0,1.448,24.086,0,1.398,24.643,0,-0.282],
 ];
 module ldraw_lib__4162p0v(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4162p0v(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4162p0v(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4162p0v(line=0.2);

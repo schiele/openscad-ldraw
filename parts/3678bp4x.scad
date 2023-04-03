@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3678bs01.scad>
-function ldraw_lib__3678bp4x() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3678bp4x(realsolid=false) = [
 // 0 Slope Brick 65  2 x  2 x  2 with Tube and DarkGreen Dress Patt.
 // 0 Name: 3678bp4x.dat
 // 0 Author: Lee Gaiteri [LummoxJR]
@@ -19,7 +20,7 @@ function ldraw_lib__3678bp4x() = [
 // 4 16 20 44 -30 20 0 -10 -20 0 -10 -20 44 -30
   [4,16,20,44,-30,20,0,-10,-20,0,-10,-20,44,-30],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3678bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3678bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3678bs01(realsolid)],
 // 
 // 0 // corset hem outline
 // 4 16 -4.85 0 10 -3.88 0 10 -4.89 1.41 10 -5.46 0.73 10
@@ -880,5 +881,5 @@ function ldraw_lib__3678bp4x() = [
   [3,288,-20,0,10,-16.24,4.13,10,-18.06,4.02,10],
 ];
 module ldraw_lib__3678bp4x(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3678bp4x(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3678bp4x(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3678bp4x(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__194535d() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__194535d(realsolid=false) = [
 // 0 Sticker  1.1 x  7.9 with Yellow "WEGENWACHT" on Transparent Background
 // 0 Name: 194535d.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -18,7 +19,7 @@ function ldraw_lib__194535d() = [
 // 
 // 
 // 1 16 0 -0.25 0 79 0 0 0 0.25 0 0 0 11 box5-12.dat
-  [1,16,0,-0.25,0,79,0,0,0,0.25,0,0,0,11, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,79,0,0,0,0.25,0,0,0,11, ldraw_lib__box5_12(realsolid)],
 // 0 BFC NOCLIP
   [0,"BFC","NOCLIP"],
 // 4 14 -68.75 -0.25 -7 -65.99 -0.25 -7 -67.38 -0.25 -2.86 -72.79 -0.25 7.07
@@ -519,5 +520,5 @@ function ldraw_lib__194535d() = [
   [3,16,-79,-0.25,11,-3.75,-0.25,7.07,-0.9,-0.25,7.07],
 ];
 module ldraw_lib__194535d(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__194535d(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__194535d(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__194535d(line=0.2);

@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__6009312ds05() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__6009312ds05(realsolid=false) = [
 // 0 ~Sticker  0.8 x  4 with Headlamps and "AW281EF" Licence Plate on Red Background - Upper Left/Right Section  3
 // 0 Name: s\6009312ds05.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -128,5 +129,5 @@ function ldraw_lib__s__6009312ds05() = [
   [4,4,-0.0128,-0.25,-8,7.061,-0.25,-8,7.061,-0.25,-6.25,4.1368,-0.25,-6.25],
 ];
 module ldraw_lib__s__6009312ds05(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__6009312ds05(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__6009312ds05(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__6009312ds05(line=0.2);

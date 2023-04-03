@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/34172s01.scad>
-function ldraw_lib__34172p01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__34172p01(realsolid=false) = [
 // 0 Minifig Rice Bowl with Metallic Gold Stripes Pattern
 // 0 Name: 34172p01.dat
 // 0 Author: Vincent Messenet [Cheenzo]
@@ -18,7 +19,7 @@ function ldraw_lib__34172p01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\34172s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__34172s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__34172s01(realsolid)],
 // 
 // 4 82 5.548907 -16 -13.396305 0 -16 -14.5 0 -13.576 -14.189 5.43 -13.576 -13.109
   [4,82,5.548907,-16,-13.396305,0,-16,-14.5,0,-13.576,-14.189,5.43,-13.576,-13.109],
@@ -508,5 +509,5 @@ function ldraw_lib__34172p01() = [
   [5,24,0,-8.059,-12.376,0,-5.624,-10.025,-4.736,-8.059,-11.435,3.837,-5.624,-9.262],
 ];
 module ldraw_lib__34172p01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__34172p01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__34172p01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__34172p01(line=0.2);

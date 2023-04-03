@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__4125165j() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4125165j(realsolid=false) = [
 // 0 Sticker  0.8 x  3.7 with "R 2 4" and Black Stripes White Background
 // 0 Name: 4125165j.dat
 // 0 Author: Max Martin Richter [MMR1988]
@@ -17,7 +18,7 @@ function ldraw_lib__4125165j() = [
 // 
 // 
 // 1 16 0 -.25 0 36.75 0 0 0 .25 0 0 0 8 box5-12.dat
-  [1,16,0,-.25,0,36.75,0,0,0,.25,0,0,0,8, ldraw_lib__box5_12()],
+  [1,16,0,-.25,0,36.75,0,0,0,.25,0,0,0,8, ldraw_lib__box5_12(realsolid)],
 // 
 // 4 4 -29.5227 -0.25 5.93 -32.088 -0.25 5.93 -30.613 -0.25 5.099 -29.668 -0.25 5.099
   [4,4,-29.5227,-0.25,5.93,-32.088,-0.25,5.93,-30.613,-0.25,5.099,-29.668,-0.25,5.099],
@@ -365,5 +366,5 @@ function ldraw_lib__4125165j() = [
   [4,15,28.3027,-0.25,2.419,30.096,-0.25,2.419,30.096,-0.25,4.4889,28.3027,-0.25,2.6055],
 ];
 module ldraw_lib__4125165j(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4125165j(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4125165j(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4125165j(line=0.2);

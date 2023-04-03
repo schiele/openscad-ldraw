@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/30529s01.scad>
-function ldraw_lib__30529p02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__30529p02(realsolid=false) = [
 // 0 Minifig Martian Head with Clip with Eyelashes Pattern
 // 0 Name: 30529p02.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -15,9 +16,9 @@ function ldraw_lib__30529p02() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\30529s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30529s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30529s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\30529s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__30529s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__30529s01(realsolid)],
 // 0 // Top front surface
 // 3 16 0 -29.71 7.7 0 -28.11 12.35 -5.47 -26.66 12.56
   [3,16,0,-29.71,7.7,0,-28.11,12.35,-5.47,-26.66,12.56],
@@ -1184,5 +1185,5 @@ function ldraw_lib__30529p02() = [
   [5,24,-10.57,-22.93,12.78,-12.37,-23.64,7.7,-5.47,-26.66,12.56,-14.52,-18.73,12.99],
 ];
 module ldraw_lib__30529p02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__30529p02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__30529p02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__30529p02(line=0.2);

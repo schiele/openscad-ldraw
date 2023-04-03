@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/30214s01.scad>
 use <../p/stud16.scad>
-function ldraw_lib__30214() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__30214(realsolid=false) = [
 // 0 Minifig Helmet Round Bubble
 // 0 Name: 30214.dat
 // 0 Author: Willy Tschager [Holly-Wood]
@@ -21,13 +22,13 @@ function ldraw_lib__30214() = [
 // 
 // 
 // 1 16 0 -4 0 1 0 0 0 -1 0 0 0 1 stud16.dat
-  [1,16,0,-4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud16()],
+  [1,16,0,-4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud16(realsolid)],
 // 
 // 0 // Subpart Minifig Helmet Round Bubble Half
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\30214s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30214s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30214s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\30214s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__30214s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__30214s01(realsolid)],
 // 
 // 2 24 2.674 26.56 -18.81 -2.674 26.56 -18.81
   [2,24,2.674,26.56,-18.81,-2.674,26.56,-18.81],
@@ -111,5 +112,5 @@ function ldraw_lib__30214() = [
   [5,24,-1.719,22.28,-22.01,1.719,22.28,-22.01,-3,23.1,-21.39,0,21.52,-22.59],
 ];
 module ldraw_lib__30214(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__30214(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__30214(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__30214(line=0.2);

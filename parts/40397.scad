@@ -2,7 +2,8 @@ use <../lib.scad>
 use <40380.scad>
 use <40381.scad>
 use <40882.scad>
-function ldraw_lib__40397() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__40397(realsolid=false) = [
 // 0 Animal Dinosaur Legs Short (Complete)
 // 0 Name: 40397.dat
 // 0 Author: Andy Westrate [westrate]
@@ -19,13 +20,13 @@ function ldraw_lib__40397() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 40882.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__40882()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__40882(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 40380.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__40380()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__40380(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 40381.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__40381()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__40381(realsolid)],
 // 
 ];
 module ldraw_lib__40397(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__40397(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__40397(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__40397(line=0.2);

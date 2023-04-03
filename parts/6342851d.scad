@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__6342851d() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6342851d(realsolid=false) = [
 // 0 Sticker  1.2 x  3.1 Parallelogram Left Slanted with Black "Discovery" on White Background
 // 0 Name: 6342851d.dat
 // 0 Author: Orion Pobursky [OrionP]
@@ -617,5 +618,5 @@ function ldraw_lib__6342851d() = [
   [3,15,-31.212,-0.25,12.368,-24.098,-0.25,3.75,-21.166,-0.25,3.75],
 ];
 module ldraw_lib__6342851d(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6342851d(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6342851d(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6342851d(line=0.2);

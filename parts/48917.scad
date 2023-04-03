@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4cylc.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4edge.scad>
-function ldraw_lib__48917() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__48917(realsolid=false) = [
 // 0 ~Technic Shock Absorber 11L/9L Piston
 // 0 Name: 48917.dat
 // 0 Author: Guy Vivan [guyvivan]
@@ -17,12 +18,12 @@ function ldraw_lib__48917() = [
 // 
 // 
 // 1 16 0 0 0 8 0 0 0 1 0 0 0 -8 4-4disc.dat
-  [1,16,0,0,0,8,0,0,0,1,0,0,0,-8, ldraw_lib__4_4disc()],
+  [1,16,0,0,0,8,0,0,0,1,0,0,0,-8, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 0 0 8 0 0 0 1 0 0 0 -8 4-4edge.dat
-  [1,16,0,0,0,8,0,0,0,1,0,0,0,-8, ldraw_lib__4_4edge()],
+  [1,16,0,0,0,8,0,0,0,1,0,0,0,-8, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 94 0 8 0 0 0 -94 0 0 0 -8 4-4cylc.dat
-  [1,16,0,94,0,8,0,0,0,-94,0,0,0,-8, ldraw_lib__4_4cylc()],
+  [1,16,0,94,0,8,0,0,0,-94,0,0,0,-8, ldraw_lib__4_4cylc(realsolid)],
 ];
 module ldraw_lib__48917(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__48917(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__48917(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__48917(line=0.2);

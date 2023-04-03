@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__50231() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__50231(realsolid=false) = [
 // 0 Minifig Cape Cloth
 // 0 Name: 50231.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -1052,5 +1053,5 @@ function ldraw_lib__50231() = [
   [5,24,-3.64,0,-14.7,-3.64,-0.3,-14.7,-3.15,0,-16.52,-3.15,0,-12.88],
 ];
 module ldraw_lib__50231(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__50231(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__50231(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__50231(line=0.2);

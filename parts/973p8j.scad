@@ -4,7 +4,8 @@ use <../p/4-4disc.scad>
 use <../p/4-4ndis.scad>
 use <../p/4-4ring1.scad>
 use <s/973s01.scad>
-function ldraw_lib__973p8j() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__973p8j(realsolid=false) = [
 // 0 Minifig Torso with Town Vest with Pockets and Striped Tie Pattern
 // 0 Name: 973p8j.dat
 // 0 Author: Willy Tschager [Holly-Wood]
@@ -31,11 +32,11 @@ function ldraw_lib__973p8j() = [
 // 
 // 0 // Blue
 // 1 1 1.1 18.7 -10 .55 0 0 0 0 -.55 0 1 0 4-4ring1.dat
-  [1,1,1.1,18.7,-10,.55,0,0,0,0,-.55,0,1,0, ldraw_lib__4_4ring1()],
+  [1,1,1.1,18.7,-10,.55,0,0,0,0,-.55,0,1,0, ldraw_lib__4_4ring1(realsolid)],
 // 1 1 .9 23.3 -10 .55 0 0 0 0 -.55 0 1 0 4-4ring1.dat
-  [1,1,.9,23.3,-10,.55,0,0,0,0,-.55,0,1,0, ldraw_lib__4_4ring1()],
+  [1,1,.9,23.3,-10,.55,0,0,0,0,-.55,0,1,0, ldraw_lib__4_4ring1(realsolid)],
 // 1 1 .8 28 -10 .55 0 0 0 0 -.55 0 1 0 4-4ring1.dat
-  [1,1,.8,28,-10,.55,0,0,0,0,-.55,0,1,0, ldraw_lib__4_4ring1()],
+  [1,1,.8,28,-10,.55,0,0,0,0,-.55,0,1,0, ldraw_lib__4_4ring1(realsolid)],
 // 4 1 4.67 2.57 -10 3.95 2.12 -10 3.97 2.51 -10 4.35 2.97 -10
   [4,1,4.67,2.57,-10,3.95,2.12,-10,3.97,2.51,-10,4.35,2.97,-10],
 // 4 1 5.12 3.16 -10 4.67 2.57 -10 4.35 2.97 -10 4.97 3.51 -10
@@ -374,17 +375,17 @@ function ldraw_lib__973p8j() = [
 // 
 // 0 // Main color
 // 1 16 1.1 18.7 -10 1.1 0 0 0 0 -1.1 0 1 0 4-4ndis.dat
-  [1,16,1.1,18.7,-10,1.1,0,0,0,0,-1.1,0,1,0, ldraw_lib__4_4ndis()],
+  [1,16,1.1,18.7,-10,1.1,0,0,0,0,-1.1,0,1,0, ldraw_lib__4_4ndis(realsolid)],
 // 1 16 1.1 18.7 -10 0.55 0 0 0 0 -0.55 0 1 0 4-4disc.dat
-  [1,16,1.1,18.7,-10,0.55,0,0,0,0,-0.55,0,1,0, ldraw_lib__4_4disc()],
+  [1,16,1.1,18.7,-10,0.55,0,0,0,0,-0.55,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0.9 23.3 -10 1.1 0 0 0 0 -1.1 0 1 0 4-4ndis.dat
-  [1,16,0.9,23.3,-10,1.1,0,0,0,0,-1.1,0,1,0, ldraw_lib__4_4ndis()],
+  [1,16,0.9,23.3,-10,1.1,0,0,0,0,-1.1,0,1,0, ldraw_lib__4_4ndis(realsolid)],
 // 1 16 0.9 23.3 -10 0.55 0 0 0 0 -0.55 0 1 0 4-4disc.dat
-  [1,16,0.9,23.3,-10,0.55,0,0,0,0,-0.55,0,1,0, ldraw_lib__4_4disc()],
+  [1,16,0.9,23.3,-10,0.55,0,0,0,0,-0.55,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0.8 28 -10 1.1 0 0 0 0 -1.1 0 1 0 4-4ndis.dat
-  [1,16,0.8,28,-10,1.1,0,0,0,0,-1.1,0,1,0, ldraw_lib__4_4ndis()],
+  [1,16,0.8,28,-10,1.1,0,0,0,0,-1.1,0,1,0, ldraw_lib__4_4ndis(realsolid)],
 // 1 16 0.8 28 -10 0.55 0 0 0 0 -0.55 0 1 0 4-4disc.dat
-  [1,16,0.8,28,-10,0.55,0,0,0,0,-0.55,0,1,0, ldraw_lib__4_4disc()],
+  [1,16,0.8,28,-10,0.55,0,0,0,0,-0.55,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 3 16 0 0 -10 -1.6 1 -10 2.76 1 -10
   [3,16,0,0,-10,-1.6,1,-10,2.76,1,-10],
 // 3 16 0 0 -10 2.76 1 -10 3.2 1 -10
@@ -536,7 +537,7 @@ function ldraw_lib__973p8j() = [
 // 
 // 0 // Subfile minifig torso
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01(realsolid)],
 // 
 // 0 // Back
 // 4 16 19 29 10 19 32 10 -19 32 10 -19 29 10
@@ -548,8 +549,8 @@ function ldraw_lib__973p8j() = [
 // 
 // 0 // Neck mark
 // 1 15 0 -4 0 4.243 0 -4.243 0 -8 0 -4.243 0 -4.243 1-4cyli.dat
-  [1,15,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli()],
+  [1,15,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli(realsolid)],
 ];
 module ldraw_lib__973p8j(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__973p8j(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__973p8j(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__973p8j(line=0.2);

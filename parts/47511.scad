@@ -6,7 +6,8 @@ use <47204.scad>
 use <47205.scad>
 use <47206.scad>
 use <47207.scad>
-function ldraw_lib__47511() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__47511(realsolid=false) = [
 // 0 Figure Duplo Child Boy with Cap
 // 0 Name: 47511.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -21,22 +22,22 @@ function ldraw_lib__47511() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 47205.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__47205()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__47205(realsolid)],
 // 1 16 0 -37 6 1 0 0 0 1 0 0 0 1 47207.dat
-  [1,16,0,-37,6,1,0,0,0,1,0,0,0,1, ldraw_lib__47207()],
+  [1,16,0,-37,6,1,0,0,0,1,0,0,0,1, ldraw_lib__47207(realsolid)],
 // 1 16 0 -37 6 1 0 0 0 1 0 0 0 1 47204.dat
-  [1,16,0,-37,6,1,0,0,0,1,0,0,0,1, ldraw_lib__47204()],
+  [1,16,0,-37,6,1,0,0,0,1,0,0,0,1, ldraw_lib__47204(realsolid)],
 // 1 16 0 -37 6 1 0 0 0 1 0 0 0 1 47203.dat
-  [1,16,0,-37,6,1,0,0,0,1,0,0,0,1, ldraw_lib__47203()],
+  [1,16,0,-37,6,1,0,0,0,1,0,0,0,1, ldraw_lib__47203(realsolid)],
 // 1 16 0 -64 6.5 1 0 0 0 1 0 0 0 1 47198.dat
-  [1,16,0,-64,6.5,1,0,0,0,1,0,0,0,1, ldraw_lib__47198()],
+  [1,16,0,-64,6.5,1,0,0,0,1,0,0,0,1, ldraw_lib__47198(realsolid)],
 // 1 16 0 -64 6.5 -1 0 0 0 1 0 0 0 -1 47198.dat
-  [1,16,0,-64,6.5,-1,0,0,0,1,0,0,0,-1, ldraw_lib__47198()],
+  [1,16,0,-64,6.5,-1,0,0,0,1,0,0,0,-1, ldraw_lib__47198(realsolid)],
 // 1 16 0 -79 8 1 0 0 0 1 0 0 0 1 47206.dat
-  [1,16,0,-79,8,1,0,0,0,1,0,0,0,1, ldraw_lib__47206()],
+  [1,16,0,-79,8,1,0,0,0,1,0,0,0,1, ldraw_lib__47206(realsolid)],
 // 1 16 0 -79 8 1 0 0 0 1 0 0 0 1 47199.dat
-  [1,16,0,-79,8,1,0,0,0,1,0,0,0,1, ldraw_lib__47199()],
+  [1,16,0,-79,8,1,0,0,0,1,0,0,0,1, ldraw_lib__47199(realsolid)],
 ];
 module ldraw_lib__47511(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__47511(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__47511(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__47511(line=0.2);

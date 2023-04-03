@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__194065c() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__194065c(realsolid=false) = [
 // 0 Sticker  3.6 x  6.5 with Washing Line, Pillar and Towel
 // 0 Name: 194065c.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -2107,5 +2108,5 @@ function ldraw_lib__194065c() = [
   [5,24,-50.56,0,13.28,-50.56,-.25,13.28,-51.28,0,16.4,-47.44,0,8.72],
 ];
 module ldraw_lib__194065c(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__194065c(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__194065c(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__194065c(line=0.2);

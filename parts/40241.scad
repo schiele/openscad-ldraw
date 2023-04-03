@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/40241s01.scad>
 use <s/40241s02.scad>
-function ldraw_lib__40241() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__40241(realsolid=false) = [
 // 0 Door  1 x  4 x  6 with Window
 // 0 Name: 40241.dat
 // 0 Author: Andy Westrate [westrate]
@@ -22,15 +23,15 @@ function ldraw_lib__40241() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\40241s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__40241s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__40241s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 -1 s\40241s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__40241s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__40241s01(realsolid)],
 // 1 16 49.94 -51.36 0 1 0 0 0 1 0 0 0 1 s\40241s02.dat
-  [1,16,49.94,-51.36,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__40241s02()],
+  [1,16,49.94,-51.36,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__40241s02(realsolid)],
 // 1 16 49.94 -51.36 0 -1 0 0 0 1 0 0 0 1 s\40241s02.dat
-  [1,16,49.94,-51.36,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__40241s02()],
+  [1,16,49.94,-51.36,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__40241s02(realsolid)],
 // 0
 ];
 module ldraw_lib__40241(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__40241(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__40241(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__40241(line=0.2);

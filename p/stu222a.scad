@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <8/stud22a.scad>
-function ldraw_lib__stu222a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__stu222a(realsolid=false) = [
 // 0 ~Moved to 8\stud22a
 // 0 Name: stu222a.dat
 // 0 Author: [PTadmin]
@@ -15,8 +16,8 @@ function ldraw_lib__stu222a() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 8\stud22a.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__8__stud22a()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__8__stud22a(realsolid)],
 ];
 module ldraw_lib__stu222a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__stu222a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__stu222a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__stu222a(line=0.2);

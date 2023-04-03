@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <243.scad>
 use <u9183.scad>
-function ldraw_lib__243c02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__243c02(realsolid=false) = [
 // 0 ~Train Wheels Spoked with Cylindrical Rim with Steel Axle 96 LDU
 // 0 Name: 243c02.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -18,12 +19,12 @@ function ldraw_lib__243c02() = [
 // 
 // 
 // 1 60 0 0 0 1 0 0 0 1 0 0 0 1 u9183.dat
-  [1,60,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9183()],
+  [1,60,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9183(realsolid)],
 // 1 16 50 0 0 0 0 -1 0 1 0 1 0 0 243.dat
-  [1,16,50,0,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__243()],
+  [1,16,50,0,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__243(realsolid)],
 // 1 16 -50 0 0 0 0 1 0 1 0 -1 0 0 243.dat
-  [1,16,-50,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__243()],
+  [1,16,-50,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__243(realsolid)],
 ];
 module ldraw_lib__243c02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__243c02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__243c02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__243c02(line=0.2);

@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/94531s01.scad>
 use <s/94531s02.scad>
-function ldraw_lib__94531() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__94531(realsolid=false) = [
 // 0 Windscreen 12 x  6 x  6 Curved without Pin Holes
 // 0 Name: 94531.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -19,12 +20,12 @@ function ldraw_lib__94531() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\94531s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__94531s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__94531s01(realsolid)],
 // 0 // Patternable area
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\94531s02.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__94531s02()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__94531s02(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\94531s02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__94531s02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__94531s02(realsolid)],
 // 4 16 -20 0 -20 -20 1.6244 -47.0214 20 1.6244 -47.0214 20 0 -20
   [4,16,-20,0,-20,-20,1.6244,-47.0214,20,1.6244,-47.0214,20,0,-20],
 // 4 16 -20 1.6244 -47.0214 -20 6.4409 -73.5873 20 6.4409 -73.5873 20 1.6244 -47.0214
@@ -47,5 +48,5 @@ function ldraw_lib__94531() = [
   [4,16,-20,116.597,-211.304,-20,140,-220,20,140,-220,20,116.597,-211.304],
 ];
 module ldraw_lib__94531(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__94531(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__94531(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__94531(line=0.2);

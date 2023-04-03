@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__192375d() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__192375d(realsolid=false) = [
 // 0 Sticker  1.1 x  1.5 with Red Rectangle
 // 0 Name: 192375d.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -17,11 +18,11 @@ function ldraw_lib__192375d() = [
 // 
 // 
 // 1 16 0 -0.25 0 15 0 0 0 0.25 0 0 0 11 box5-12.dat
-  [1,16,0,-0.25,0,15,0,0,0,0.25,0,0,0,11, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,15,0,0,0,0.25,0,0,0,11, ldraw_lib__box5_12(realsolid)],
 // 
 // 4 4 15 -0.25 11 -15 -0.25 11 -15 -0.25 -11 15 -0.25 -11
   [4,4,15,-0.25,11,-15,-0.25,11,-15,-0.25,-11,15,-0.25,-11],
 ];
 module ldraw_lib__192375d(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__192375d(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__192375d(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__192375d(line=0.2);

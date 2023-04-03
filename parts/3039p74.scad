@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3039s01.scad>
-function ldraw_lib__3039p74() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3039p74(realsolid=false) = [
 // 0 Slope Brick 45  2 x  2 with Black "4" over Red/Green Stripes Pattern
 // 0 Name: 3039p74.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -15,7 +16,7 @@ function ldraw_lib__3039p74() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3039s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3039s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3039s01(realsolid)],
 // 0 //
 // 4 0 7 2.051 -12.051 3 2.051 -12.051 3 6.859 -16.859 7 12.869 -22.869
   [4,0,7,2.051,-12.051,3,2.051,-12.051,3,6.859,-16.859,7,12.869,-22.869],
@@ -80,5 +81,5 @@ function ldraw_lib__3039p74() = [
   [4,16,-3.5,5.798,-15.798,3,2.051,-12.051,-20,0,-10,-20,5.798,-15.798],
 ];
 module ldraw_lib__3039p74(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3039p74(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3039p74(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3039p74(line=0.2);

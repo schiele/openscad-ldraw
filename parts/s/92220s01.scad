@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/rect.scad>
-function ldraw_lib__s__92220s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__92220s01(realsolid=false) = [
 // 0 ~Claw Hooked with Clip Half
 // 0 Name: s\92220s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -107,7 +108,7 @@ function ldraw_lib__s__92220s01() = [
 // 3 16 2.837 39.165 -50.795 2.837 42.702 -49.238 1.375 42.702 -49.238
   [3,16,2.837,39.165,-50.795,2.837,42.702,-49.238,1.375,42.702,-49.238],
 // 1 16 2.106 41.9245 -47.36155 0 0 0.731 0.7775 1 0 -1.87645 0 0 rect.dat
-  [1,16,2.106,41.9245,-47.36155,0,0,0.731,0.7775,1,0,-1.87645,0,0, ldraw_lib__rect()],
+  [1,16,2.106,41.9245,-47.36155,0,0,0.731,0.7775,1,0,-1.87645,0,0, ldraw_lib__rect(realsolid)],
 // 4 16 1.375 32.859 -47.633 1.375 32.313 -53.222 1.375 42.702 -49.238 1.375 41.147 -45.4851
   [4,16,1.375,32.859,-47.633,1.375,32.313,-53.222,1.375,42.702,-49.238,1.375,41.147,-45.4851],
 // 4 16 1.375 28.748 -47.893 1.375 25.816 -54.819 1.375 32.313 -53.222 1.375 32.859 -47.633
@@ -626,5 +627,5 @@ function ldraw_lib__s__92220s01() = [
   [5,24,1.875,-17.099,-23.497,1.805,-19.1673,-19.9274,-1.875,-17.099,-23.497,3.595,-16.9,-23.365],
 ];
 module ldraw_lib__s__92220s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__92220s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__92220s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__92220s01(line=0.2);

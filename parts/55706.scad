@@ -6,7 +6,8 @@ use <../p/4-8sphe.scad>
 use <../p/axle.scad>
 use <../p/rect2p.scad>
 use <s/55706s01.scad>
-function ldraw_lib__55706() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__55706(realsolid=false) = [
 // 0 Animal Wing  9 x  9 with Axle
 // 0 Name: 55706.dat
 // 0 Author: Michael Heidemann [mikeheide]
@@ -24,28 +25,28 @@ function ldraw_lib__55706() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\55706s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__55706s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__55706s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 -1 0 0 0 1 s\55706s01.dat
-  [1,16,0,0,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__s__55706s01()],
+  [1,16,0,0,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__s__55706s01(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -8 0 6 0 0 0 16 0 0 0 6 4-4cyli.dat
-  [1,16,0,-8,0,6,0,0,0,16,0,0,0,6, ldraw_lib__4_4cyli()],
+  [1,16,0,-8,0,6,0,0,0,16,0,0,0,6, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 0 -10 10 0 0 0 0 10 0 1 0 4-4disc.dat
-  [1,16,0,0,-10,10,0,0,0,0,10,0,1,0, ldraw_lib__4_4disc()],
+  [1,16,0,0,-10,10,0,0,0,0,10,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 0 -10 -10 0 0 0 0 10 0 -1 0 4-4edge.dat
-  [1,16,0,0,-10,-10,0,0,0,0,10,0,-1,0, ldraw_lib__4_4edge()],
+  [1,16,0,0,-10,-10,0,0,0,0,10,0,-1,0, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 0 -10 -1 0 0 0 0 1 0 -19 0 axle.dat
-  [1,16,0,0,-10,-1,0,0,0,0,1,0,-19,0, ldraw_lib__axle()],
+  [1,16,0,0,-10,-1,0,0,0,0,1,0,-19,0, ldraw_lib__axle(realsolid)],
 // 1 16 -184 0 122 0 -4 0 -4 0 0 0 0 -4 4-8sphe.dat
-  [1,16,-184,0,122,0,-4,0,-4,0,0,0,0,-4, ldraw_lib__4_8sphe()],
+  [1,16,-184,0,122,0,-4,0,-4,0,0,0,0,-4, ldraw_lib__4_8sphe(realsolid)],
 // 1 16 -124 0 68 0 -2.5 0 -2.5 0 0 0 0 -2.5 4-8sphe.dat
-  [1,16,-124,0,68,0,-2.5,0,-2.5,0,0,0,0,-2.5, ldraw_lib__4_8sphe()],
+  [1,16,-124,0,68,0,-2.5,0,-2.5,0,0,0,0,-2.5, ldraw_lib__4_8sphe(realsolid)],
 // 1 16 -97 0 28 0 -2.5 0 -2.5 0 0 0 0 -2.5 4-8sphe.dat
-  [1,16,-97,0,28,0,-2.5,0,-2.5,0,0,0,0,-2.5, ldraw_lib__4_8sphe()],
+  [1,16,-97,0,28,0,-2.5,0,-2.5,0,0,0,0,-2.5, ldraw_lib__4_8sphe(realsolid)],
 // 0 // border
 // 1 16 -10 0 -14.875 0 -1 0 1.5 0 0 0 0 14.875 rect2p.dat
-  [1,16,-10,0,-14.875,0,-1,0,1.5,0,0,0,0,14.875, ldraw_lib__rect2p()],
+  [1,16,-10,0,-14.875,0,-1,0,1.5,0,0,0,0,14.875, ldraw_lib__rect2p(realsolid)],
 // 4 16 -10 -1.5 -29.75 -60 -1.5 -29.75 -60 1.5 -29.75 -10 1.5 -29.75
   [4,16,-10,-1.5,-29.75,-60,-1.5,-29.75,-60,1.5,-29.75,-10,1.5,-29.75],
 // 4 16 -60 -1.5 -29.75 -61.913 -1.5 -29.369 -61.913 1.5 -29.369 -60 1.5 -29.75
@@ -217,5 +218,5 @@ function ldraw_lib__55706() = [
   [5,24,-8.339,0,24.182,-21.593,0,43.983,-21.852,-1.531,43.826,-21.852,1.531,43.826],
 ];
 module ldraw_lib__55706(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__55706(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__55706(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__55706(line=0.2);

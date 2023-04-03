@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3037s01.scad>
-function ldraw_lib__3037p10() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3037p10(realsolid=false) = [
 // 0 Slope Brick 45  2 x  4 with Red "Air Canada" Pattern
 // 0 Name: 3037p10.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -19,7 +20,7 @@ function ldraw_lib__3037p10() = [
 // 0 // font Arial Bold
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3037s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3037s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3037s01(realsolid)],
 // 3 4 -34.72 15.26 -25.26 -37.83 16.94 -26.94 -35.58 16.94 -26.94
   [3,4,-34.72,15.26,-25.26,-37.83,16.94,-26.94,-35.58,16.94,-26.94],
 // 4 4 -33.74 9.52 -19.52 -37.83 16.94 -26.94 -34.07 14.01 -24.01 -32.65 11.25 -21.25
@@ -792,5 +793,5 @@ function ldraw_lib__3037p10() = [
   [3,16,14.32,16.95,-26.95,0,20,-30,15.37,17.06,-27.06],
 ];
 module ldraw_lib__3037p10(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3037p10(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3037p10(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3037p10(line=0.2);

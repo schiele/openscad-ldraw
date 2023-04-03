@@ -5,7 +5,8 @@ use <../p/axl3hole.scad>
 use <../p/axlehol4.scad>
 use <../p/npeghol3.scad>
 use <s/33299s01.scad>
-function ldraw_lib__33299b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__33299b(realsolid=false) = [
 // 0 Technic Beam  3 x  0.5 Liftarm with Boss and Pin with Open Central Axle Hole
 // 0 Name: 33299b.dat
 // 0 Author: Santeri Piippo [arezey]
@@ -20,19 +21,19 @@ function ldraw_lib__33299b() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\33299s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__33299s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__33299s01(realsolid)],
 // 1 16 0 -10 0 1 0 0 0 20 0 0 0 1 axl3hole.dat
-  [1,16,0,-10,0,1,0,0,0,20,0,0,0,1, ldraw_lib__axl3hole()],
+  [1,16,0,-10,0,1,0,0,0,20,0,0,0,1, ldraw_lib__axl3hole(realsolid)],
 // 1 16 0 0 20 1 0 0 0 10 0 0 0 1 axlehol4.dat
-  [1,16,0,0,20,1,0,0,0,10,0,0,0,1, ldraw_lib__axlehol4()],
+  [1,16,0,0,20,1,0,0,0,10,0,0,0,1, ldraw_lib__axlehol4(realsolid)],
 // 1 16 0 0 30 1 0 0 0 10 0 0 0 1 npeghol3.dat
-  [1,16,0,0,30,1,0,0,0,10,0,0,0,1, ldraw_lib__npeghol3()],
+  [1,16,0,0,30,1,0,0,0,10,0,0,0,1, ldraw_lib__npeghol3(realsolid)],
 // 1 16 -0 0 20 -3 0 -0 0 1 0 0 0 -3 2-4ring2.dat
-  [1,16,-0,0,20,-3,0,-0,0,1,0,0,0,-3, ldraw_lib__2_4ring2()],
+  [1,16,-0,0,20,-3,0,-0,0,1,0,0,0,-3, ldraw_lib__2_4ring2(realsolid)],
 // 1 16 -0 10 20 -3 0 -0 0 -1 0 0 0 -3 2-4ring2.dat
-  [1,16,-0,10,20,-3,0,-0,0,-1,0,0,0,-3, ldraw_lib__2_4ring2()],
+  [1,16,-0,10,20,-3,0,-0,0,-1,0,0,0,-3, ldraw_lib__2_4ring2(realsolid)],
 // 1 16 0 10 20 9 0 0 0 -1 0 0 0 -9 2-4ndis.dat
-  [1,16,0,10,20,9,0,0,0,-1,0,0,0,-9, ldraw_lib__2_4ndis()],
+  [1,16,0,10,20,9,0,0,0,-1,0,0,0,-9, ldraw_lib__2_4ndis(realsolid)],
 // 4 16 -6.36 10 33.637 -6.36 10 26.36 -8.315 10 23.444 -8 10 32
   [4,16,-6.36,10,33.637,-6.36,10,26.36,-8.315,10,23.444,-8,10,32],
 // 4 16 -9 10 32 -8 10 32 -8.315 10 23.444 -9 10 20
@@ -63,5 +64,5 @@ function ldraw_lib__33299b() = [
   [4,16,3.444,10,31.685,-0,10,31,-0,10,32,3.062,10,32.609],
 ];
 module ldraw_lib__33299b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__33299b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__33299b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__33299b(line=0.2);

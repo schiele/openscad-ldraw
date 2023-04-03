@@ -4,7 +4,8 @@ use <87513.scad>
 use <87515.scad>
 use <87520.scad>
 use <u9013.scad>
-function ldraw_lib__64228() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__64228(realsolid=false) = [
 // 0 Electric Power Functions AAA Battery Box [72 Bottom] (Needs Work)
 // 0 Name: 64228.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -21,18 +22,18 @@ function ldraw_lib__64228() = [
 // 0 // Needs Work: Internal battery holder parts missing
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 87513.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__87513()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__87513(realsolid)],
 // 1 72 0 0 0 1 0 0 0 1 0 0 0 1 87515.dat
-  [1,72,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__87515()],
+  [1,72,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__87515(realsolid)],
 // 1 25 -14.5 1 0 1 0 0 0 1 0 0 0 1 87520.dat
-  [1,25,-14.5,1,0,1,0,0,0,1,0,0,0,1, ldraw_lib__87520()],
+  [1,25,-14.5,1,0,1,0,0,0,1,0,0,0,1, ldraw_lib__87520(realsolid)],
 // 1 2 -40 0 0 1 0 0 0 1 0 0 0 1 84724.dat
-  [1,2,-40,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__84724()],
+  [1,2,-40,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__84724(realsolid)],
 // 1 0 -40 88 0 1 0 0 0 -1 0 0 0 -1 u9013.dat
-  [1,0,-40,88,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__u9013()],
+  [1,0,-40,88,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__u9013(realsolid)],
 // 1 0 40 88 0 1 0 0 0 -1 0 0 0 -1 u9013.dat
-  [1,0,40,88,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__u9013()],
+  [1,0,40,88,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__u9013(realsolid)],
 ];
 module ldraw_lib__64228(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__64228(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__64228(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__64228(line=0.2);

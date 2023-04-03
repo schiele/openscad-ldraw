@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__48__1_3chrd() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__48__1_3chrd(realsolid=false) = [
 // 0 Hi-Res Chord 0.3333
 // 0 Name: 48\1-3chrd.dat
 // 0 Author: Mark Kennedy [mkennedy]
@@ -34,5 +35,5 @@ function ldraw_lib__48__1_3chrd() = [
   [3,16,0.3827,0,0.9239,0.6088,0,0.7934,0.5,0,0.866],
 ];
 module ldraw_lib__48__1_3chrd(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__48__1_3chrd(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__48__1_3chrd(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__48__1_3chrd(line=0.2);

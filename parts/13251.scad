@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4cylo.scad>
 use <../p/5-8ring2.scad>
 use <../p/stud4o.scad>
-function ldraw_lib__13251() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__13251(realsolid=false) = [
 // 0 Minifig Hair Female with Elaborate Knot Bun
 // 0 Name: 13251.dat
 // 0 Author: Willy Tschager [Holly-Wood]
@@ -617,11 +618,11 @@ function ldraw_lib__13251() = [
   [2,24,.797,-7.598,1.966,2.027,-6.848,4.758],
 // 
 // 1 16 0 -4 0 1 0 0 0 -1 0 0 0 1 stud4o.dat
-  [1,16,0,-4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4o()],
+  [1,16,0,-4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4o(realsolid)],
 // 1 16 0 -2 0 8 0 0 0 2 0 0 0 8 4-4cylo.dat
-  [1,16,0,-2,0,8,0,0,0,2,0,0,0,8, ldraw_lib__4_4cylo()],
+  [1,16,0,-2,0,8,0,0,0,2,0,0,0,8, ldraw_lib__4_4cylo(realsolid)],
 // 1 16 0 -2 0 3.69552 0 1.53073 0 -1 0 -1.53073 0 3.69552 5-8ring2.dat
-  [1,16,0,-2,0,3.69552,0,1.53073,0,-1,0,-1.53073,0,3.69552, ldraw_lib__5_8ring2()],
+  [1,16,0,-2,0,3.69552,0,1.53073,0,-1,0,-1.53073,0,3.69552, ldraw_lib__5_8ring2(realsolid)],
 // 
 // 4 16 7.391 -2 -3.062 11.087 -2 -4.592 8.485 -2 -7.714 5.657 -2 -5.657
   [4,16,7.391,-2,-3.062,11.087,-2,-4.592,8.485,-2,-7.714,5.657,-2,-5.657],
@@ -4644,5 +4645,5 @@ function ldraw_lib__13251() = [
   [5,24,-1.668,-7.416,-3.795,-6.178,-6.367,-4.06,-5.672,-6.266,-5.283,-5.077,-7.28,-2.341],
 ];
 module ldraw_lib__13251(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__13251(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__13251(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__13251(line=0.2);

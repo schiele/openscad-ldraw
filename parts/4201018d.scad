@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__4201018d() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4201018d(realsolid=false) = [
 // 0 Sticker  2.6 x  3.8 Timetable with "ARRIVALS"
 // 0 Name: 4201018d.dat
 // 0 Author: Tim Lampmann [L4mpi]
@@ -17,7 +18,7 @@ function ldraw_lib__4201018d() = [
 // 
 // 
 // 1 16 0 -.25 0 38 0 0 0 .25 0 0 0 26 box5-12.dat
-  [1,16,0,-.25,0,38,0,0,0,.25,0,0,0,26, ldraw_lib__box5_12()],
+  [1,16,0,-.25,0,38,0,0,0,.25,0,0,0,26, ldraw_lib__box5_12(realsolid)],
 // 4 15 -2.122 -.25 18.879 -2.772 -.25 19.852 -3.696 -.25 19.469 -2.828 -.25 18.172
   [4,15,-2.122,-.25,18.879,-2.772,-.25,19.852,-3.696,-.25,19.469,-2.828,-.25,18.172],
 // 4 15 -1.148 -.25 18.228 -2.122 -.25 18.879 -2.828 -.25 18.172 -1.531 -.25 17.304
@@ -6860,5 +6861,5 @@ function ldraw_lib__4201018d() = [
   [4,15,3.9,-.25,21.5,3,-.25,21,3.9,-.25,20.5,7.5,-.25,21.5],
 ];
 module ldraw_lib__4201018d(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4201018d(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4201018d(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4201018d(line=0.2);

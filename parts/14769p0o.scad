@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/4-4ering.scad>
 use <s/14769s01.scad>
-function ldraw_lib__14769p0o() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__14769p0o(realsolid=false) = [
 // 0 Tile  2 x  2 Round with Round Underside Stud with "TC" Pattern
 // 0 Name: 14769p0o.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -18,9 +19,9 @@ function ldraw_lib__14769p0o() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\14769s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__14769s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__14769s01(realsolid)],
 // 1 16 0 0 0 20 0 0 0 1 0 0 0 20 4-4ering.dat
-  [1,16,0,0,0,20,0,0,0,1,0,0,0,20, ldraw_lib__4_4ering()],
+  [1,16,0,0,0,20,0,0,0,1,0,0,0,20, ldraw_lib__4_4ering(realsolid)],
 // 
 // 4 25 1.45 0 17.9 3.35 0 17.45 4.9 0 17.65 3.2 0 17.85
   [4,25,1.45,0,17.9,3.35,0,17.45,4.9,0,17.65,3.2,0,17.85],
@@ -990,5 +991,5 @@ function ldraw_lib__14769p0o() = [
   [4,16,-8.55,0,0,-7.55,0,-.05,-6.35,0,.1,-5.3,0,.8],
 ];
 module ldraw_lib__14769p0o(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__14769p0o(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__14769p0o(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__14769p0o(line=0.2);

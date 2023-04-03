@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/783s01.scad>
-function ldraw_lib__783() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__783(realsolid=false) = [
 // 0 Flag on Flagpole Type 3
 // 0 Name: 783.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -15,7 +16,7 @@ function ldraw_lib__783() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\783s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__783s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__783s01(realsolid)],
 // 0 //
 // 4 16 21.5 -98 1.5 21.5 -146 1.5 1.5 -154 1.5 1.5 -106 1.5
   [4,16,21.5,-98,1.5,21.5,-146,1.5,1.5,-154,1.5,1.5,-106,1.5],
@@ -49,5 +50,5 @@ function ldraw_lib__783() = [
 // 0 //
 ];
 module ldraw_lib__783(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__783(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__783(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__783(line=0.2);

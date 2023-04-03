@@ -6,7 +6,8 @@ use <../../p/4-4cyli.scad>
 use <../../p/4-8sphe.scad>
 use <../../p/rect.scad>
 use <../../p/rect2p.scad>
-function ldraw_lib__s__u1854s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__u1854s01(realsolid=false) = [
 // 0 ~Roadsign Triangular Inverted without Base w/o Decorated Surface
 // 0 Name: s\u1854s01.dat
 // 0 Author: Tore Eriksson [Tore_Eriksson]
@@ -22,30 +23,30 @@ function ldraw_lib__s__u1854s01() = [
 // 
 // 
 // 1 16 0 -74 -1.05 0 0 -15 0 1 0 1.05 0 0 rect.dat
-  [1,16,0,-74,-1.05,0,0,-15,0,1,0,1.05,0,0, ldraw_lib__rect()],
+  [1,16,0,-74,-1.05,0,0,-15,0,1,0,1.05,0,0, ldraw_lib__rect(realsolid)],
 // 1 16 7.5 -59 -1.05 7.5 -63 0 -15 -31.5 0 0 0 -1.05 rect2p.dat
-  [1,16,7.5,-59,-1.05,7.5,-63,0,-15,-31.5,0,0,0,-1.05, ldraw_lib__rect2p()],
+  [1,16,7.5,-59,-1.05,7.5,-63,0,-15,-31.5,0,0,0,-1.05, ldraw_lib__rect2p(realsolid)],
 // 1 16 -7.5 -59 -1.05 7.5 63 0 15 -31.5 0 0 0 -1.05 rect2p.dat
-  [1,16,-7.5,-59,-1.05,7.5,63,0,15,-31.5,0,0,0,-1.05, ldraw_lib__rect2p()],
+  [1,16,-7.5,-59,-1.05,7.5,63,0,15,-31.5,0,0,0,-1.05, ldraw_lib__rect2p(realsolid)],
 // 3 16 15 -74 0 0 -44 0 -15 -74 0
   [3,16,15,-74,0,0,-44,0,-15,-74,0],
 // 0 //
 // 1 16 0 -48 0 2 0 0 0 0 -2 0 1 0 2-4edge.dat
-  [1,16,0,-48,0,2,0,0,0,0,-2,0,1,0, ldraw_lib__2_4edge()],
+  [1,16,0,-48,0,2,0,0,0,0,-2,0,1,0, ldraw_lib__2_4edge(realsolid)],
 // 1 16 0 -44 0 -2 0 0 -4 1 0 0 0 -2 1-4edge.dat
-  [1,16,0,-44,0,-2,0,0,-4,1,0,0,0,-2, ldraw_lib__1_4edge()],
+  [1,16,0,-44,0,-2,0,0,-4,1,0,0,0,-2, ldraw_lib__1_4edge(realsolid)],
 // 1 16 0 -44 0 2 0 0 -4 1 0 0 0 -2 1-4edge.dat
-  [1,16,0,-44,0,2,0,0,-4,1,0,0,0,-2, ldraw_lib__1_4edge()],
+  [1,16,0,-44,0,2,0,0,-4,1,0,0,0,-2, ldraw_lib__1_4edge(realsolid)],
 // 2 24 0 -44 -2.1 0 -44 -2
   [2,24,0,-44,-2.1,0,-44,-2],
 // 1 16 0 -48 0 2 0 0 0 -2 0 0 0 2 2-8sphe.dat
-  [1,16,0,-48,0,2,0,0,0,-2,0,0,0,2, ldraw_lib__2_8sphe()],
+  [1,16,0,-48,0,2,0,0,0,-2,0,0,0,2, ldraw_lib__2_8sphe(realsolid)],
 // 1 16 0 -48 0 2 0 0 0 40 0 0 0 2 4-4cyli.dat
-  [1,16,0,-48,0,2,0,0,0,40,0,0,0,2, ldraw_lib__4_4cyli()],
+  [1,16,0,-48,0,2,0,0,0,40,0,0,0,2, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 -8 0 2 0 0 0 2 0 0 0 2 4-8sphe.dat
-  [1,16,0,-8,0,2,0,0,0,2,0,0,0,2, ldraw_lib__4_8sphe()],
+  [1,16,0,-8,0,2,0,0,0,2,0,0,0,2, ldraw_lib__4_8sphe(realsolid)],
 // 0 //
 ];
 module ldraw_lib__s__u1854s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__u1854s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__u1854s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__u1854s01(line=0.2);

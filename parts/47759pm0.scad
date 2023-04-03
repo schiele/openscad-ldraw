@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/47759pm0s01.scad>
 use <s/47759s01.scad>
-function ldraw_lib__47759pm0() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__47759pm0(realsolid=false) = [
 // 0 Wedge  2 x  4 Triple with Spider Eyes Pattern
 // 0 Name: 47759pm0.dat
 // 0 Author: Christian Neumann [Wesley]
@@ -20,7 +21,7 @@ function ldraw_lib__47759pm0() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\47759s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__47759s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__47759s01(realsolid)],
 // 2 24 20 0 -10 20 12 -30
   [2,24,20,0,-10,20,12,-30],
 // 2 24 -20 0 -10 -20 12 -30
@@ -39,9 +40,9 @@ function ldraw_lib__47759pm0() = [
   [2,24,-20,0,-10,-20,0,10],
 // 0 // pattern
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\47759pm0s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__47759pm0s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__47759pm0s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\47759pm0s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__47759pm0s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__47759pm0s01(realsolid)],
 // 4 8 -11.05 11.346 -28.91 -10.76 11.454 -29.09 -9.91 11.25 -28.75 -9.9 10.326 -27.21
   [4,8,-11.05,11.346,-28.91,-10.76,11.454,-29.09,-9.91,11.25,-28.75,-9.9,10.326,-27.21],
 // 4 8 -9.9 10.326 -27.21 -9.91 11.25 -28.75 -9.36 10.752 -27.92 -9.08 9.912 -26.52
@@ -702,5 +703,5 @@ function ldraw_lib__47759pm0() = [
   [4,15,-9.978,6.4572,-20.762,-9.803,6.204,-20.34,-10.822,6.4572,-20.762,-10.4,6.5622,-20.937],
 ];
 module ldraw_lib__47759pm0(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__47759pm0(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__47759pm0(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__47759pm0(line=0.2);

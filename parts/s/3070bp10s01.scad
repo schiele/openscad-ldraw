@@ -7,7 +7,8 @@ use <../../p/1-8tang.scad>
 use <../../p/2-4chrd.scad>
 use <../../p/2-4ndis.scad>
 use <../../p/4-4ndis.scad>
-function ldraw_lib__s__3070bp10s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__3070bp10s01(realsolid=false) = [
 // 0 ~Tile  1 x  1 with Black Cat Face with White Eyes and Dark Pink Ears and Nose Pattern - Half
 // 0 Name: s\3070bp10s01.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -22,39 +23,39 @@ function ldraw_lib__s__3070bp10s01() = [
 // 
 // 
 // 1 5 -8.4 0 2.2 3 0 0 0 1 0 0 0 3 1-4disc.dat
-  [1,5,-8.4,0,2.2,3,0,0,0,1,0,0,0,3, ldraw_lib__1_4disc()],
+  [1,5,-8.4,0,2.2,3,0,0,0,1,0,0,0,3, ldraw_lib__1_4disc(realsolid)],
 // 1 16 -9 0 2 4.5 0 0 0 1 0 0 0 5 1-4ndis.dat
-  [1,16,-9,0,2,4.5,0,0,0,1,0,0,0,5, ldraw_lib__1_4ndis()],
+  [1,16,-9,0,2,4.5,0,0,0,1,0,0,0,5, ldraw_lib__1_4ndis(realsolid)],
 // 1 0 -4.2 0 -1.1 0.6 0 0 0 1 0 0 0 0.6 2-4chrd.dat
-  [1,0,-4.2,0,-1.1,0.6,0,0,0,1,0,0,0,0.6, ldraw_lib__2_4chrd()],
+  [1,0,-4.2,0,-1.1,0.6,0,0,0,1,0,0,0,0.6, ldraw_lib__2_4chrd(realsolid)],
 // 1 0 -4.2 0 -4 -0.6 0 0 0 1 0 0 0 -0.6 2-4chrd.dat
-  [1,0,-4.2,0,-4,-0.6,0,0,0,1,0,0,0,-0.6, ldraw_lib__2_4chrd()],
+  [1,0,-4.2,0,-4,-0.6,0,0,0,1,0,0,0,-0.6, ldraw_lib__2_4chrd(realsolid)],
 // 1 0 -4.7 0 -2.6 3.2 0 0 0 1 0 0 0 2.8 4-4ndis.dat
-  [1,0,-4.7,0,-2.6,3.2,0,0,0,1,0,0,0,2.8, ldraw_lib__4_4ndis()],
+  [1,0,-4.7,0,-2.6,3.2,0,0,0,1,0,0,0,2.8, ldraw_lib__4_4ndis(realsolid)],
 // 1 15 -4.2 0 -1.1 0.6 0 0 0 1 0 0 0 0.6 2-4ndis.dat
-  [1,15,-4.2,0,-1.1,0.6,0,0,0,1,0,0,0,0.6, ldraw_lib__2_4ndis()],
+  [1,15,-4.2,0,-1.1,0.6,0,0,0,1,0,0,0,0.6, ldraw_lib__2_4ndis(realsolid)],
 // 1 15 -4.2 0 -4 -0.6 0 0 0 1 0 0 0 -0.6 2-4ndis.dat
-  [1,15,-4.2,0,-4,-0.6,0,0,0,1,0,0,0,-0.6, ldraw_lib__2_4ndis()],
+  [1,15,-4.2,0,-4,-0.6,0,0,0,1,0,0,0,-0.6, ldraw_lib__2_4ndis(realsolid)],
 // 1 0 -8.4 0 2.2 3 0 0 0 1 0 0 0 3 1-8tang.dat
-  [1,0,-8.4,0,2.2,3,0,0,0,1,0,0,0,3, ldraw_lib__1_8tang()],
+  [1,0,-8.4,0,2.2,3,0,0,0,1,0,0,0,3, ldraw_lib__1_8tang(realsolid)],
 // 1 0 -8.4 0 2.2 0 0 3 0 1 0 3 0 0 1-8tang.dat
-  [1,0,-8.4,0,2.2,0,0,3,0,1,0,3,0,0, ldraw_lib__1_8tang()],
+  [1,0,-8.4,0,2.2,0,0,3,0,1,0,3,0,0, ldraw_lib__1_8tang(realsolid)],
 // 1 0 -9 0 2 4.5 0 0 0 1 0 0 0 5 1-8chrd.dat
-  [1,0,-9,0,2,4.5,0,0,0,1,0,0,0,5, ldraw_lib__1_8chrd()],
+  [1,0,-9,0,2,4.5,0,0,0,1,0,0,0,5, ldraw_lib__1_8chrd(realsolid)],
 // 1 0 -9 0 2 0 0 4.5 0 1 0 5 0 0 1-8chrd.dat
-  [1,0,-9,0,2,0,0,4.5,0,1,0,5,0,0, ldraw_lib__1_8chrd()],
+  [1,0,-9,0,2,0,0,4.5,0,1,0,5,0,0, ldraw_lib__1_8chrd(realsolid)],
 // 1 15 -4.7 0 -2.6 -3.2 0 0 0 1 0 0 0 2.8 1-4chrd.dat
-  [1,15,-4.7,0,-2.6,-3.2,0,0,0,1,0,0,0,2.8, ldraw_lib__1_4chrd()],
+  [1,15,-4.7,0,-2.6,-3.2,0,0,0,1,0,0,0,2.8, ldraw_lib__1_4chrd(realsolid)],
 // 1 15 -4.7 0 -2.6 -3.2 0 0 0 1 0 0 0 -2.8 1-4chrd.dat
-  [1,15,-4.7,0,-2.6,-3.2,0,0,0,1,0,0,0,-2.8, ldraw_lib__1_4chrd()],
+  [1,15,-4.7,0,-2.6,-3.2,0,0,0,1,0,0,0,-2.8, ldraw_lib__1_4chrd(realsolid)],
 // 1 15 -4.7 0 -2.6 3.2 0 0 0 1 0 0 0 2.8 1-8chrd.dat
-  [1,15,-4.7,0,-2.6,3.2,0,0,0,1,0,0,0,2.8, ldraw_lib__1_8chrd()],
+  [1,15,-4.7,0,-2.6,3.2,0,0,0,1,0,0,0,2.8, ldraw_lib__1_8chrd(realsolid)],
 // 1 15 -4.7 0 -2.6 3.2 0 0 0 1 0 0 0 -2.8 1-8chrd.dat
-  [1,15,-4.7,0,-2.6,3.2,0,0,0,1,0,0,0,-2.8, ldraw_lib__1_8chrd()],
+  [1,15,-4.7,0,-2.6,3.2,0,0,0,1,0,0,0,-2.8, ldraw_lib__1_8chrd(realsolid)],
 // 1 15 -4.7 0 -2.6 0 0 3.2 0 1 0 2.8 0 0 1-8chrd.dat
-  [1,15,-4.7,0,-2.6,0,0,3.2,0,1,0,2.8,0,0, ldraw_lib__1_8chrd()],
+  [1,15,-4.7,0,-2.6,0,0,3.2,0,1,0,2.8,0,0, ldraw_lib__1_8chrd(realsolid)],
 // 1 15 -4.7 0 -2.6 0 0 3.2 0 1 0 -2.8 0 0 1-8chrd.dat
-  [1,15,-4.7,0,-2.6,0,0,3.2,0,1,0,-2.8,0,0, ldraw_lib__1_8chrd()],
+  [1,15,-4.7,0,-2.6,0,0,3.2,0,1,0,-2.8,0,0, ldraw_lib__1_8chrd(realsolid)],
 // 4 0 -7.9 0 0.2 -8.4 0 2.2 -9 0 -9 -7.9 0 -2.6
   [4,0,-7.9,0,0.2,-8.4,0,2.2,-9,0,-9,-7.9,0,-2.6],
 // 3 0 -7.9 0 -2.6 -9 0 -9 -7.9 0 -5.4
@@ -125,5 +126,5 @@ function ldraw_lib__s__3070bp10s01() = [
   [3,16,-10,0,10,-9,0,7,-4.5,0,7],
 ];
 module ldraw_lib__s__3070bp10s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__3070bp10s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__3070bp10s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__3070bp10s01(line=0.2);

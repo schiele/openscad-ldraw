@@ -2,7 +2,8 @@ use <../lib.scad>
 use <2-4cyli.scad>
 use <2-4edge.scad>
 use <2-4ring3.scad>
-function ldraw_lib__2_4stud4() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2_4stud4(realsolid=false) = [
 // 0 Stud Tube Open 0.5
 // 0 Name: 2-4stud4.dat
 // 0 Author: Joerg Sommerer [Brickaneer]
@@ -21,22 +22,22 @@ function ldraw_lib__2_4stud4() = [
 // 
 // 
 // 1 16 0 -4 0 6 0 0 0 1 0 0 0 6 2-4edge.dat
-  [1,16,0,-4,0,6,0,0,0,1,0,0,0,6, ldraw_lib__2_4edge()],
+  [1,16,0,-4,0,6,0,0,0,1,0,0,0,6, ldraw_lib__2_4edge(realsolid)],
 // 1 16 0 -4 0 8 0 0 0 1 0 0 0 8 2-4edge.dat
-  [1,16,0,-4,0,8,0,0,0,1,0,0,0,8, ldraw_lib__2_4edge()],
+  [1,16,0,-4,0,8,0,0,0,1,0,0,0,8, ldraw_lib__2_4edge(realsolid)],
 // 1 16 0 0 0 6 0 0 0 1 0 0 0 6 2-4edge.dat
-  [1,16,0,0,0,6,0,0,0,1,0,0,0,6, ldraw_lib__2_4edge()],
+  [1,16,0,0,0,6,0,0,0,1,0,0,0,6, ldraw_lib__2_4edge(realsolid)],
 // 1 16 0 0 0 8 0 0 0 1 0 0 0 8 2-4edge.dat
-  [1,16,0,0,0,8,0,0,0,1,0,0,0,8, ldraw_lib__2_4edge()],
+  [1,16,0,0,0,8,0,0,0,1,0,0,0,8, ldraw_lib__2_4edge(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -4 0 6 0 0 0 4 0 0 0 6 2-4cyli.dat
-  [1,16,0,-4,0,6,0,0,0,4,0,0,0,6, ldraw_lib__2_4cyli()],
+  [1,16,0,-4,0,6,0,0,0,4,0,0,0,6, ldraw_lib__2_4cyli(realsolid)],
 // 1 16 0 -4 0 8 0 0 0 4 0 0 0 8 2-4cyli.dat
-  [1,16,0,-4,0,8,0,0,0,4,0,0,0,8, ldraw_lib__2_4cyli()],
+  [1,16,0,-4,0,8,0,0,0,4,0,0,0,8, ldraw_lib__2_4cyli(realsolid)],
 // 1 16 0 -4 0 2 0 0 0 1 0 0 0 2 2-4ring3.dat
-  [1,16,0,-4,0,2,0,0,0,1,0,0,0,2, ldraw_lib__2_4ring3()],
+  [1,16,0,-4,0,2,0,0,0,1,0,0,0,2, ldraw_lib__2_4ring3(realsolid)],
 ];
 module ldraw_lib__2_4stud4(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2_4stud4(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2_4stud4(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2_4stud4(line=0.2);

@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__163555bc01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__163555bc01(realsolid=false) = [
 // 0 Sticker  3.5 x  3.5 with Flight Schedule (Formed for Panel  6 x  6 x  9 with Curved Top)
 // 0 Name: 163555bc01.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -4526,5 +4527,5 @@ function ldraw_lib__163555bc01() = [
   [5,24,-35,-.6536,25.918,35,-.6536,25.918,35,-2.4199,34.8047,35,0,16],
 ];
 module ldraw_lib__163555bc01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__163555bc01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__163555bc01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__163555bc01(line=0.2);

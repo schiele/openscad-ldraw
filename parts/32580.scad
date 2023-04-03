@@ -6,7 +6,8 @@ use <s/faxle3.scad>
 use <s/faxle4.scad>
 use <s/faxle5.scad>
 use <../p/stud3a.scad>
-function ldraw_lib__32580() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__32580(realsolid=false) = [
 // 0 Technic Axle Flexible  7
 // 0 Name: 32580.dat
 // 0 Author: Chris Dee [cwdee]
@@ -33,7 +34,7 @@ function ldraw_lib__32580() = [
 // 
 // 0 // Skinny tip
 // 1 16 -50 0 0 0 5 0 -1 0 0 0 0 1 stud3a.dat
-  [1,16,-50,0,0,0,5,0,-1,0,0,0,0,1, ldraw_lib__stud3a()],
+  [1,16,-50,0,0,0,5,0,-1,0,0,0,0,1, ldraw_lib__stud3a(realsolid)],
 // 0 // To flex the 'skinny tip', replace the above line with:
 // 0 // 1 16 -66 0 0 0 1 0 -1 0 0 0 0 1 stud3a.dat
 // 0 // 1 16 -62 0 0 0 -4 0 4 0 0 0 0 4 4-4cyli.dat
@@ -43,64 +44,64 @@ function ldraw_lib__32580() = [
 // 
 // 0 // Mixed Cylinder & Cross-axle end section
 // 1 16 -46 0 0 -1 0 0 0 1 0 0 0 -1 s\faxle1.dat
-  [1,16,-46,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__faxle1()],
+  [1,16,-46,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__faxle1(realsolid)],
 // 1 16 -42 0 0 -1 0 0 0 1 0 0 0 -1 s\faxle2.dat
-  [1,16,-42,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__faxle2()],
+  [1,16,-42,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__faxle2(realsolid)],
 // 1 16 -38 0 0 -1 0 0 0 1 0 0 0 -1 s\faxle3.dat
-  [1,16,-38,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__faxle3()],
+  [1,16,-38,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__faxle3(realsolid)],
 // 1 16 -34 0 0 -1 0 0 0 1 0 0 0 -1 s\faxle4.dat
-  [1,16,-34,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__faxle4()],
+  [1,16,-34,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__faxle4(realsolid)],
 // 1 16 -30 0 0 -1 0 0 0 1 0 0 0 -1 s\faxle5.dat
-  [1,16,-30,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__faxle5()],
+  [1,16,-30,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__faxle5(realsolid)],
 // 
 // 0 // Cross axle main section
 // 1 16 -30 0 0 0 4 0 -1 0 0 0 0 1 axlehol8.dat
-  [1,16,-30,0,0,0,4,0,-1,0,0,0,0,1, ldraw_lib__axlehol8()],
+  [1,16,-30,0,0,0,4,0,-1,0,0,0,0,1, ldraw_lib__axlehol8(realsolid)],
 // 1 16 -26 0 0 0 4 0 -1 0 0 0 0 1 axlehol8.dat
-  [1,16,-26,0,0,0,4,0,-1,0,0,0,0,1, ldraw_lib__axlehol8()],
+  [1,16,-26,0,0,0,4,0,-1,0,0,0,0,1, ldraw_lib__axlehol8(realsolid)],
 // 1 16 -22 0 0 0 4 0 -1 0 0 0 0 1 axlehol8.dat
-  [1,16,-22,0,0,0,4,0,-1,0,0,0,0,1, ldraw_lib__axlehol8()],
+  [1,16,-22,0,0,0,4,0,-1,0,0,0,0,1, ldraw_lib__axlehol8(realsolid)],
 // 1 16 -18 0 0 0 4 0 -1 0 0 0 0 1 axlehol8.dat
-  [1,16,-18,0,0,0,4,0,-1,0,0,0,0,1, ldraw_lib__axlehol8()],
+  [1,16,-18,0,0,0,4,0,-1,0,0,0,0,1, ldraw_lib__axlehol8(realsolid)],
 // 1 16 -14 0 0 0 4 0 -1 0 0 0 0 1 axlehol8.dat
-  [1,16,-14,0,0,0,4,0,-1,0,0,0,0,1, ldraw_lib__axlehol8()],
+  [1,16,-14,0,0,0,4,0,-1,0,0,0,0,1, ldraw_lib__axlehol8(realsolid)],
 // 1 16 -10 0 0 0 4 0 -1 0 0 0 0 1 axlehol8.dat
-  [1,16,-10,0,0,0,4,0,-1,0,0,0,0,1, ldraw_lib__axlehol8()],
+  [1,16,-10,0,0,0,4,0,-1,0,0,0,0,1, ldraw_lib__axlehol8(realsolid)],
 // 1 16 -6 0 0 0 4 0 -1 0 0 0 0 1 axlehol8.dat
-  [1,16,-6,0,0,0,4,0,-1,0,0,0,0,1, ldraw_lib__axlehol8()],
+  [1,16,-6,0,0,0,4,0,-1,0,0,0,0,1, ldraw_lib__axlehol8(realsolid)],
 // 1 16 -2 0 0 0 4 0 -1 0 0 0 0 1 axlehol8.dat
-  [1,16,-2,0,0,0,4,0,-1,0,0,0,0,1, ldraw_lib__axlehol8()],
+  [1,16,-2,0,0,0,4,0,-1,0,0,0,0,1, ldraw_lib__axlehol8(realsolid)],
 // 1 16 2 0 0 0 4 0 -1 0 0 0 0 1 axlehol8.dat
-  [1,16,2,0,0,0,4,0,-1,0,0,0,0,1, ldraw_lib__axlehol8()],
+  [1,16,2,0,0,0,4,0,-1,0,0,0,0,1, ldraw_lib__axlehol8(realsolid)],
 // 1 16 6 0 0 0 4 0 -1 0 0 0 0 1 axlehol8.dat
-  [1,16,6,0,0,0,4,0,-1,0,0,0,0,1, ldraw_lib__axlehol8()],
+  [1,16,6,0,0,0,4,0,-1,0,0,0,0,1, ldraw_lib__axlehol8(realsolid)],
 // 1 16 10 0 0 0 4 0 -1 0 0 0 0 1 axlehol8.dat
-  [1,16,10,0,0,0,4,0,-1,0,0,0,0,1, ldraw_lib__axlehol8()],
+  [1,16,10,0,0,0,4,0,-1,0,0,0,0,1, ldraw_lib__axlehol8(realsolid)],
 // 1 16 14 0 0 0 4 0 -1 0 0 0 0 1 axlehol8.dat
-  [1,16,14,0,0,0,4,0,-1,0,0,0,0,1, ldraw_lib__axlehol8()],
+  [1,16,14,0,0,0,4,0,-1,0,0,0,0,1, ldraw_lib__axlehol8(realsolid)],
 // 1 16 18 0 0 0 4 0 -1 0 0 0 0 1 axlehol8.dat
-  [1,16,18,0,0,0,4,0,-1,0,0,0,0,1, ldraw_lib__axlehol8()],
+  [1,16,18,0,0,0,4,0,-1,0,0,0,0,1, ldraw_lib__axlehol8(realsolid)],
 // 1 16 22 0 0 0 4 0 -1 0 0 0 0 1 axlehol8.dat
-  [1,16,22,0,0,0,4,0,-1,0,0,0,0,1, ldraw_lib__axlehol8()],
+  [1,16,22,0,0,0,4,0,-1,0,0,0,0,1, ldraw_lib__axlehol8(realsolid)],
 // 1 16 26 0 0 0 4 0 -1 0 0 0 0 1 axlehol8.dat
-  [1,16,26,0,0,0,4,0,-1,0,0,0,0,1, ldraw_lib__axlehol8()],
+  [1,16,26,0,0,0,4,0,-1,0,0,0,0,1, ldraw_lib__axlehol8(realsolid)],
 // 
 // 0 // Mixed Cylinder & Cross-axle section
 // 1 16 30 0 0 1 0 0 0 -1 0 0 0 -1 s\faxle5.dat
-  [1,16,30,0,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__s__faxle5()],
+  [1,16,30,0,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__s__faxle5(realsolid)],
 // 1 16 34 0 0 1 0 0 0 -1 0 0 0 -1 s\faxle4.dat
-  [1,16,34,0,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__s__faxle4()],
+  [1,16,34,0,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__s__faxle4(realsolid)],
 // 1 16 38 0 0 1 0 0 0 -1 0 0 0 -1 s\faxle3.dat
-  [1,16,38,0,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__s__faxle3()],
+  [1,16,38,0,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__s__faxle3(realsolid)],
 // 1 16 42 0 0 1 0 0 0 -1 0 0 0 -1 s\faxle2.dat
-  [1,16,42,0,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__s__faxle2()],
+  [1,16,42,0,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__s__faxle2(realsolid)],
 // 1 16 46 0 0 1 0 0 0 -1 0 0 0 -1 s\faxle1.dat
-  [1,16,46,0,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__s__faxle1()],
+  [1,16,46,0,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__s__faxle1(realsolid)],
 // 
 // 0 // Skinny tip
 // 1 16 50 0 0 0 -5 0 1 0 0 0 0 1 stud3a.dat
-  [1,16,50,0,0,0,-5,0,1,0,0,0,0,1, ldraw_lib__stud3a()],
+  [1,16,50,0,0,0,-5,0,1,0,0,0,0,1, ldraw_lib__stud3a(realsolid)],
 ];
 module ldraw_lib__32580(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__32580(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__32580(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__32580(line=0.2);

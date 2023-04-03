@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/2-4cyli.scad>
 use <../../p/2-8sphe.scad>
-function ldraw_lib__s__30176s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__30176s01(realsolid=false) = [
 // 0 ~Bamboo Leaf
 // 0 Name: s\30176s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -18,9 +19,9 @@ function ldraw_lib__s__30176s01() = [
 // 
 // 
 // 1 16 19.5 0 0 0 -10 0 1.9 0 0 0 0 1.9 2-4cyli.dat
-  [1,16,19.5,0,0,0,-10,0,1.9,0,0,0,0,1.9, ldraw_lib__2_4cyli()],
+  [1,16,19.5,0,0,0,-10,0,1.9,0,0,0,0,1.9, ldraw_lib__2_4cyli(realsolid)],
 // 1 16 19.5 0 0 0 1.9 0 1.9 0 0 0 0 1.9 2-8sphe.dat
-  [1,16,19.5,0,0,0,1.9,0,1.9,0,0,0,0,1.9, ldraw_lib__2_8sphe()],
+  [1,16,19.5,0,0,0,1.9,0,1.9,0,0,0,0,1.9, ldraw_lib__2_8sphe(realsolid)],
 // 4 16 45.4 4.27 1.858 45.5 3.65 2.998 47.28 4.78 1.888 47.54 5.93 0
   [4,16,45.4,4.27,1.858,45.5,3.65,2.998,47.28,4.78,1.888,47.54,5.93,0],
 // 4 16 20.05 -1.25 5.59 20.05 -1.74 5.59 25.36 -1.61 5.603 25.35 -1.13 5.603
@@ -1121,5 +1122,5 @@ function ldraw_lib__s__30176s01() = [
   [5,24,18.89,-1.47,0.749,18.97,-2.19,1.926,18.24,-2.07,1.762,19.8,-1.47,0.738],
 ];
 module ldraw_lib__s__30176s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__30176s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__30176s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__30176s01(line=0.2);

@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/4-4ering.scad>
 use <s/98138s01.scad>
-function ldraw_lib__98138p0g() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__98138p0g(realsolid=false) = [
 // 0 Tile  1 x  1 Round with White Star Pattern
 // 0 Name: 98138p0g.dat
 // 0 Author: Heiko Jelnikar [KlotzKiste]
@@ -16,9 +17,9 @@ function ldraw_lib__98138p0g() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\98138s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01(realsolid)],
 // 1 16 0 0 0 9 0 0 0 1 0 0 0 9 4-4ering.dat
-  [1,16,0,0,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4ering()],
+  [1,16,0,0,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4ering(realsolid)],
 // 
 // 4 0 -0.181 0 7.149 0.34641 0 7.4535 0.1235 0 7.67641 -0.181 0 7.758
   [4,0,-0.181,0,7.149,0.34641,0,7.4535,0.1235,0,7.67641,-0.181,0,7.758],
@@ -198,5 +199,5 @@ function ldraw_lib__98138p0g() = [
   [3,16,0,0,9,-0.4855,0,7.67641,-0.181,0,7.758],
 ];
 module ldraw_lib__98138p0g(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__98138p0g(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__98138p0g(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__98138p0g(line=0.2);

@@ -2,7 +2,8 @@ use <../lib.scad>
 use <3815phb.scad>
 use <3816phb.scad>
 use <3817phb.scad>
-function ldraw_lib__3815chb() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3815chb(realsolid=false) = [
 // 0 ~Minifig Hips and Legs with Purple Greatcoat Pattern (Obsolete)
 // 0 Name: 3815chb.dat
 // 0 Author: Andy Westrate [westrate]
@@ -29,13 +30,13 @@ function ldraw_lib__3815chb() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 3815phb.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3815phb()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3815phb(realsolid)],
 // 1 16 0 12 0 1 0 0 0 1 0 0 0 1 3816phb.dat
-  [1,16,0,12,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3816phb()],
+  [1,16,0,12,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3816phb(realsolid)],
 // 1 16 0 12 0 1 0 0 0 1 0 0 0 1 3817phb.dat
-  [1,16,0,12,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3817phb()],
+  [1,16,0,12,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3817phb(realsolid)],
 // 0
 ];
 module ldraw_lib__3815chb(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3815chb(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3815chb(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3815chb(line=0.2);

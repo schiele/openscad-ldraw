@@ -3,7 +3,8 @@ use <../p/4-4con4.scad>
 use <../p/4-4cylo.scad>
 use <../p/4-4ring4.scad>
 use <../p/4-4ring8.scad>
-function ldraw_lib__u9404() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__u9404(realsolid=false) = [
 // 0 ~Electric Powered Up Colour Sensor Inner Ring
 // 0 Name: u9404.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -24,24 +25,24 @@ function ldraw_lib__u9404() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 0 7.8 0 0 0 0 7.8 0 -6 0 4-4cylo.dat
-  [1,16,0,0,0,7.8,0,0,0,0,7.8,0,-6,0, ldraw_lib__4_4cylo()],
+  [1,16,0,0,0,7.8,0,0,0,0,7.8,0,-6,0, ldraw_lib__4_4cylo(realsolid)],
 // 1 16 0 0 -6 0.975 0 0 0 0 0.975 0 6 0 4-4ring8.dat
-  [1,16,0,0,-6,0.975,0,0,0,0,0.975,0,6,0, ldraw_lib__4_4ring8()],
+  [1,16,0,0,-6,0.975,0,0,0,0,0.975,0,6,0, ldraw_lib__4_4ring8(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 -8 2.19375 0 0 0 0 2.19375 0 1 0 4-4con4.dat
-  [1,16,0,0,-8,2.19375,0,0,0,0,2.19375,0,1,0, ldraw_lib__4_4con4()],
+  [1,16,0,0,-8,2.19375,0,0,0,0,2.19375,0,1,0, ldraw_lib__4_4con4(realsolid)],
 // 1 16 0 0 0 10.96875 0 0 0 0 10.96875 0 -8 0 4-4cylo.dat
-  [1,16,0,0,0,10.96875,0,0,0,0,10.96875,0,-8,0, ldraw_lib__4_4cylo()],
+  [1,16,0,0,0,10.96875,0,0,0,0,10.96875,0,-8,0, ldraw_lib__4_4cylo(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 -7 8.775 0 0 0 0 8.775 0 1 0 4-4cylo.dat
-  [1,16,0,0,-7,8.775,0,0,0,0,8.775,0,1,0, ldraw_lib__4_4cylo()],
+  [1,16,0,0,-7,8.775,0,0,0,0,8.775,0,1,0, ldraw_lib__4_4cylo(realsolid)],
 // 1 16 0 0 0 0.975 0 0 0 0 0.975 0 -6 0 4-4ring8.dat
-  [1,16,0,0,0,0.975,0,0,0,0,0.975,0,-6,0, ldraw_lib__4_4ring8()],
+  [1,16,0,0,0,0.975,0,0,0,0,0.975,0,-6,0, ldraw_lib__4_4ring8(realsolid)],
 // 1 16 0 0 0 2.19375 0 0 0 0 2.19375 0 -1 0 4-4ring4.dat
-  [1,16,0,0,0,2.19375,0,0,0,0,2.19375,0,-1,0, ldraw_lib__4_4ring4()],
+  [1,16,0,0,0,2.19375,0,0,0,0,2.19375,0,-1,0, ldraw_lib__4_4ring4(realsolid)],
 ];
 module ldraw_lib__u9404(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__u9404(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__u9404(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__u9404(line=0.2);

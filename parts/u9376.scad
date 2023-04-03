@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/u9373s01.scad>
-function ldraw_lib__u9376() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__u9376(realsolid=false) = [
 // 0 ~Electric Technic Motor Back
 // 0 Name: u9376.dat
 // 0 Author: Jens Bauer [rockford]
@@ -15,7 +16,7 @@ function ldraw_lib__u9376() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\u9373s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__u9373s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__u9373s01(realsolid)],
 // 4 16 4 16 40 4 16 56 -4 16 56 -4 16 40
   [4,16,4,16,40,4,16,56,-4,16,56,-4,16,40],
 // 2 24 -4 16 40 4 16 40
@@ -31,5 +32,5 @@ function ldraw_lib__u9376() = [
 // 0
 ];
 module ldraw_lib__u9376(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__u9376(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__u9376(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__u9376(line=0.2);

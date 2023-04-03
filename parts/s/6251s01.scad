@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/2-4chrd.scad>
 use <../../p/2-4edge.scad>
-function ldraw_lib__s__6251s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__6251s01(realsolid=false) = [
 // 0 ~Animal Cat Crouching - Half without Patternable Area
 // 0 Name: s\6251s01.dat
 // 0 Author: Willy Tschager [Holly-Wood]
@@ -16,9 +17,9 @@ function ldraw_lib__s__6251s01() = [
 // 
 // 
 // 1 16 0 -4 0 0 0 6 0 1 0 -6 0 0 2-4edge.dat
-  [1,16,0,-4,0,0,0,6,0,1,0,-6,0,0, ldraw_lib__2_4edge()],
+  [1,16,0,-4,0,0,0,6,0,1,0,-6,0,0, ldraw_lib__2_4edge(realsolid)],
 // 1 16 0 -4 0 0 0 6 0 -1 0 -6 0 0 2-4chrd.dat
-  [1,16,0,-4,0,0,0,6,0,-1,0,-6,0,0, ldraw_lib__2_4chrd()],
+  [1,16,0,-4,0,0,0,6,0,-1,0,-6,0,0, ldraw_lib__2_4chrd(realsolid)],
 // 
 // 2 24 12.58 0 -13.61 11.85 0 -17.83
   [2,24,12.58,0,-13.61,11.85,0,-17.83],
@@ -2341,5 +2342,5 @@ function ldraw_lib__s__6251s01() = [
   [5,24,0,-20.29,2.194,0,-18.23,-1.123,3.823,-17.93,-1.123,-3.823,-17.93,-1.123],
 ];
 module ldraw_lib__s__6251s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__6251s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__6251s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__6251s01(line=0.2);

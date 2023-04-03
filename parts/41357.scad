@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <40249.scad>
-function ldraw_lib__41357() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__41357(realsolid=false) = [
 // 0 =Door  2 x  8 x  6 Revolving with Shelf Supports
 // 0 Name: 41357.dat
 // 0 Author: William Howard [WilliamH]
@@ -20,9 +21,9 @@ function ldraw_lib__41357() = [
 // 0 // This is a shortcut for those looking for the part via this number
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 40249.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__40249()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__40249(realsolid)],
 // 0
 ];
 module ldraw_lib__41357(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__41357(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__41357(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__41357(line=0.2);

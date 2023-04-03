@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__168335i() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__168335i(realsolid=false) = [
 // 0 Sticker  4.0 x  1.0 Diagonal Stripe Up Left
 // 0 Name: 168335i.dat
 // 0 Author: Ulrich Röder [UR]
@@ -35,5 +36,5 @@ function ldraw_lib__168335i() = [
   [4,16,20,0,-40,0,0,-40,-20,0,32.237,0,0,40],
 ];
 module ldraw_lib__168335i(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__168335i(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__168335i(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__168335i(line=0.2);

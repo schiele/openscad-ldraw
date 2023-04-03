@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/3068bs01.scad>
 use <s/logolambt02.scad>
-function ldraw_lib__3068bpta() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3068bpta(realsolid=false) = [
 // 0 Tile  2 x  2 with Black "Lamborghini" Pattern
 // 0 Name: 3068bpta.dat
 // 0 Author: Jens Brühl [jb70]
@@ -18,12 +19,12 @@ function ldraw_lib__3068bpta() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3068bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3068bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3068bs01(realsolid)],
 // 1 16 0 0 -14.666 1.33333 0 0 0 1 0 0 0 1.33333 s\logolambt02.dat
-  [1,16,0,0,-14.666,1.33333,0,0,0,1,0,0,0,1.33333, ldraw_lib__s__logolambt02()],
+  [1,16,0,0,-14.666,1.33333,0,0,0,1,0,0,0,1.33333, ldraw_lib__s__logolambt02(realsolid)],
 // 4 16 -20 0 -9.334 20 0 -9.334 20 0 20 -20 0 20
   [4,16,-20,0,-9.334,20,0,-9.334,20,0,20,-20,0,20],
 ];
 module ldraw_lib__3068bpta(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3068bpta(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3068bpta(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3068bpta(line=0.2);

@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4cylc.scad>
 use <../p/stud16.scad>
 use <../p/t01o3333.scad>
-function ldraw_lib__40251() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__40251(realsolid=false) = [
 // 0 Minifig Hair Long Wavy
 // 0 Name: 40251.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -2079,15 +2080,15 @@ function ldraw_lib__40251() = [
 // 3 16 -9.082 8.387 -9.125 -9.192 0 -9.192 -8.62 6.767 -9.562
   [3,16,-9.082,8.387,-9.125,-9.192,0,-9.192,-8.62,6.767,-9.562],
 // 1 16 0 -4 0 1 0 0 0 -1 0 0 0 -1 stud16.dat
-  [1,16,0,-4,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__stud16()],
+  [1,16,0,-4,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__stud16(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -4 0 9.75 0 0 0 2 0 0 0 9.75 4-4cylc.dat
-  [1,16,0,-4,0,9.75,0,0,0,2,0,0,0,9.75, ldraw_lib__4_4cylc()],
+  [1,16,0,-4,0,9.75,0,0,0,2,0,0,0,9.75, ldraw_lib__4_4cylc(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 0 9.75 0 0 0 -6 0 0 0 9.75 t01o3333.dat
-  [1,16,0,0,0,9.75,0,0,0,-6,0,0,0,9.75, ldraw_lib__t01o3333()],
+  [1,16,0,0,0,9.75,0,0,0,-6,0,0,0,9.75, ldraw_lib__t01o3333(realsolid)],
 // 2 24 14.21 23.81 -9.47 14.408 24.9 -5.795
   [2,24,14.21,23.81,-9.47,14.408,24.9,-5.795],
 // 3 16 -15.594 7.133 -3.305 -17.013 11.239 -4.446 -16.284 11.404 -5.59
@@ -4657,5 +4658,5 @@ function ldraw_lib__40251() = [
   [5,24,-16.284,11.404,-5.59,-15.594,7.133,-3.305,-17.013,11.239,-4.446,-14.544,10.777,-4.857],
 ];
 module ldraw_lib__40251(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__40251(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__40251(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__40251(line=0.2);

@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/box3u2p.scad>
 use <../p/rect3.scad>
 use <u9370.scad>
-function ldraw_lib__u9484() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__u9484(realsolid=false) = [
 // 0 Door  2 x  6 x  5 Frame with Lip
 // 0 Name: u9484.dat
 // 0 Author: Alex Taylor [anathema]
@@ -19,7 +20,7 @@ function ldraw_lib__u9484() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 u9370.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9370()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9370(realsolid)],
 // 2 24 -26 4 -16 -26 6 -16
   [2,24,-26,4,-16,-26,6,-16],
 // 2 24 -26 4 -16 -26 6 -14
@@ -61,17 +62,17 @@ function ldraw_lib__u9484() = [
 // 4 16 -22 10 -16 50 10 -16 53 7 -16 -25 7 -16
   [4,16,-22,10,-16,50,10,-16,53,7,-16,-25,7,-16],
 // 1 16 -24 100 -15 0 1 -2 0 1 2 1 0 0 rect3.dat
-  [1,16,-24,100,-15,0,1,-2,0,1,2,1,0,0, ldraw_lib__rect3()],
+  [1,16,-24,100,-15,0,1,-2,0,1,2,1,0,0, ldraw_lib__rect3(realsolid)],
 // 1 16 -24 8 -15 0 1 -2 0 -1 -2 -1 0 0 rect3.dat
-  [1,16,-24,8,-15,0,1,-2,0,-1,-2,-1,0,0, ldraw_lib__rect3()],
+  [1,16,-24,8,-15,0,1,-2,0,-1,-2,-1,0,0, ldraw_lib__rect3(realsolid)],
 // 4 16 54 102 -14 -26 102 -14 -22 98 -14 50 98 -14
   [4,16,54,102,-14,-26,102,-14,-22,98,-14,50,98,-14],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -22 54 -15 0 72 0 0 0 44 1 0 0 box3u2p.dat
-  [1,16,-22,54,-15,0,72,0,0,0,44,1,0,0, ldraw_lib__box3u2p()],
+  [1,16,-22,54,-15,0,72,0,0,0,44,1,0,0, ldraw_lib__box3u2p(realsolid)],
 // 0
 ];
 module ldraw_lib__u9484(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__u9484(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__u9484(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__u9484(line=0.2);

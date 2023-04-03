@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/98138s01.scad>
-function ldraw_lib__98138pb0() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__98138pb0(realsolid=false) = [
 // 0 Tile  1 x  1 Round with H Pattern
 // 0 Name: 98138pb0.dat
 // 0 Author: Merlijn Wissink [legolijntje]
@@ -15,7 +16,7 @@ function ldraw_lib__98138pb0() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\98138s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01(realsolid)],
 // 4 0 -7.14107 0 0 -6.59749 0 2.73277 -6.99284 0 2.89653 -7.569 0 0
   [4,0,-7.14107,0,0,-6.59749,0,2.73277,-6.99284,0,2.89653,-7.569,0,0],
 // 4 0 -6.59749 0 -2.73277 -7.14107 0 0 -7.569 0 0 -6.99284 0 -2.89653
@@ -196,5 +197,5 @@ function ldraw_lib__98138pb0() = [
   [4,16,0.9,0,5.1,0.9,0,5.8,0,0,7.14107,0,0,5.1],
 ];
 module ldraw_lib__98138pb0(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__98138pb0(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__98138pb0(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__98138pb0(line=0.2);

@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__47759pm0s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__47759pm0s01(realsolid=false) = [
 // 0 ~Wedge  2 x  4 Triple with Spider Eyes Pattern - Side
 // 0 Name: s\47759pm0s01.dat
 // 0 Author: Christian Neumann [Wesley]
@@ -605,5 +606,5 @@ function ldraw_lib__s__47759pm0s01() = [
   [4,16,28.18,8.492,-10.52,28.53,9.034,-10.84,40,20,-10,27.96,7.96,-10],
 ];
 module ldraw_lib__s__47759pm0s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__47759pm0s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__47759pm0s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__47759pm0s01(line=0.2);

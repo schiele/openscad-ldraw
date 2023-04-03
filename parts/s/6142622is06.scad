@@ -4,7 +4,8 @@ use <../../p/1-8chrd.scad>
 use <../../p/1-8ndis.scad>
 use <../../p/5-16chrd.scad>
 use <../../p/5-16ndis.scad>
-function ldraw_lib__s__6142622is06() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__6142622is06(realsolid=false) = [
 // 0 ~Sticker  0.8 x  1.9 with Red and White Taillamp on Yellow Background Right - Upper Section 6
 // 0 Name: s\6142622is06.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -21,17 +22,17 @@ function ldraw_lib__s__6142622is06() = [
 // 0 // Primitives
 // 
 // 1 14 -4.25 -.25 -1.2356 -1.25 0 0 0 1 0 0 0 1.25 1-8ndis.dat
-  [1,14,-4.25,-.25,-1.2356,-1.25,0,0,0,1,0,0,0,1.25, ldraw_lib__1_8ndis()],
+  [1,14,-4.25,-.25,-1.2356,-1.25,0,0,0,1,0,0,0,1.25, ldraw_lib__1_8ndis(realsolid)],
 // 1 0 -4.25 -.25 -1.2356 -1.25 0 0 0 1 0 0 0 1.25 1-8chrd.dat
-  [1,0,-4.25,-.25,-1.2356,-1.25,0,0,0,1,0,0,0,1.25, ldraw_lib__1_8chrd()],
+  [1,0,-4.25,-.25,-1.2356,-1.25,0,0,0,1,0,0,0,1.25, ldraw_lib__1_8chrd(realsolid)],
 // 1 0 -4.25 -.25 -1.2356 -1.25 0 0 0 1 0 0 0 -1.25 5-16chrd.dat
-  [1,0,-4.25,-.25,-1.2356,-1.25,0,0,0,1,0,0,0,-1.25, ldraw_lib__5_16chrd()],
+  [1,0,-4.25,-.25,-1.2356,-1.25,0,0,0,1,0,0,0,-1.25, ldraw_lib__5_16chrd(realsolid)],
 // 1 14 -4.25 -.25 -1.2356 -1.25 0 0 0 1 0 0 0 -1.25 5-16ndis.dat
-  [1,14,-4.25,-.25,-1.2356,-1.25,0,0,0,1,0,0,0,-1.25, ldraw_lib__5_16ndis()],
+  [1,14,-4.25,-.25,-1.2356,-1.25,0,0,0,1,0,0,0,-1.25, ldraw_lib__5_16ndis(realsolid)],
 // 1 14 -6.5 -.25 -3.0901 -1.5 0 0 0 1 0 0 0 -1.5 1-4chrd.dat
-  [1,14,-6.5,-.25,-3.0901,-1.5,0,0,0,1,0,0,0,-1.5, ldraw_lib__1_4chrd()],
+  [1,14,-6.5,-.25,-3.0901,-1.5,0,0,0,1,0,0,0,-1.5, ldraw_lib__1_4chrd(realsolid)],
 // 1 14 6.5 -.25 -3.0901 1.5 0 0 0 1 0 0 0 -1.5 1-4chrd.dat
-  [1,14,6.5,-.25,-3.0901,1.5,0,0,0,1,0,0,0,-1.5, ldraw_lib__1_4chrd()],
+  [1,14,6.5,-.25,-3.0901,1.5,0,0,0,1,0,0,0,-1.5, ldraw_lib__1_4chrd(realsolid)],
 // 0 // Dark grey faces
 // 4 72 -3.41 -.25 .0144 -3.98 -.25 .0144 -3.98 -.25 -1.7333 -3.41 -.25 -1.7333
   [4,72,-3.41,-.25,.0144,-3.98,-.25,.0144,-3.98,-.25,-1.7333,-3.41,-.25,-1.7333],
@@ -81,5 +82,5 @@ function ldraw_lib__s__6142622is06() = [
   [4,14,6.5,-.25,-4.5901,-3,-.25,-2.4856,-4.25,-.25,-2.4856,-6.5,-.25,-4.5901],
 ];
 module ldraw_lib__s__6142622is06(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__6142622is06(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__6142622is06(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__6142622is06(line=0.2);

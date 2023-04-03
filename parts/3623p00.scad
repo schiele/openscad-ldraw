@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3623s01.scad>
-function ldraw_lib__3623p00() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3623p00(realsolid=false) = [
 // 0 Plate  1 x  3 with Symmetric, Middle Set Black Rounded Eyebrows Pattern
 // 0 Name: 3623p00.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -17,7 +18,7 @@ function ldraw_lib__3623p00() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3623s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3623s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3623s01(realsolid)],
 // 
 // 4 0 -19.9 5.3 -10 -19.625 5.375 -10 -19.65 4.65 -10 -19.875 4.975 -10
   [4,0,-19.9,5.3,-10,-19.625,5.375,-10,-19.65,4.65,-10,-19.875,4.975,-10],
@@ -149,5 +150,5 @@ function ldraw_lib__3623p00() = [
   [4,16,16.65,2.75,-10,30,0,-10,0,0,-10,15.65,2.6,-10],
 ];
 module ldraw_lib__3623p00(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3623p00(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3623p00(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3623p00(line=0.2);

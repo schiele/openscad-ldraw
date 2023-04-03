@@ -6,7 +6,8 @@ use <../p/2-4ring5.scad>
 use <../p/box4o8a.scad>
 use <../p/dconnhole.scad>
 use <../p/dnpeghole.scad>
-function ldraw_lib__6525() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6525(realsolid=false) = [
 // 0 Duplo Beam 11
 // 0 Name: 6525.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -24,67 +25,67 @@ function ldraw_lib__6525() = [
 // 
 // 
 // 1 16 0 -20 200 24 0 0 0 40 0 0 0 24 2-4cylo.dat
-  [1,16,0,-20,200,24,0,0,0,40,0,0,0,24, ldraw_lib__2_4cylo()],
+  [1,16,0,-20,200,24,0,0,0,40,0,0,0,24, ldraw_lib__2_4cylo(realsolid)],
 // 1 16 0 -20 -200 24 0 0 0 40 0 0 0 -24 2-4cylo.dat
-  [1,16,0,-20,-200,24,0,0,0,40,0,0,0,-24, ldraw_lib__2_4cylo()],
+  [1,16,0,-20,-200,24,0,0,0,40,0,0,0,-24, ldraw_lib__2_4cylo(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -20 200 20 0 0 0 40 0 0 0 20 2-4cylo.dat
-  [1,16,0,-20,200,20,0,0,0,40,0,0,0,20, ldraw_lib__2_4cylo()],
+  [1,16,0,-20,200,20,0,0,0,40,0,0,0,20, ldraw_lib__2_4cylo(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -20 -200 20 0 0 0 40 0 0 0 -20 2-4cylo.dat
-  [1,16,0,-20,-200,20,0,0,0,40,0,0,0,-20, ldraw_lib__2_4cylo()],
+  [1,16,0,-20,-200,20,0,0,0,40,0,0,0,-20, ldraw_lib__2_4cylo(realsolid)],
 // 1 16 0 -20 200 4 0 0 0 1 0 0 0 4 2-4ring5.dat
-  [1,16,0,-20,200,4,0,0,0,1,0,0,0,4, ldraw_lib__2_4ring5()],
+  [1,16,0,-20,200,4,0,0,0,1,0,0,0,4, ldraw_lib__2_4ring5(realsolid)],
 // 1 16 0 20 200 4 0 0 0 -1 0 0 0 4 2-4ring5.dat
-  [1,16,0,20,200,4,0,0,0,-1,0,0,0,4, ldraw_lib__2_4ring5()],
+  [1,16,0,20,200,4,0,0,0,-1,0,0,0,4, ldraw_lib__2_4ring5(realsolid)],
 // 1 16 0 -20 -200 4 0 0 0 1 0 0 0 -4 2-4ring5.dat
-  [1,16,0,-20,-200,4,0,0,0,1,0,0,0,-4, ldraw_lib__2_4ring5()],
+  [1,16,0,-20,-200,4,0,0,0,1,0,0,0,-4, ldraw_lib__2_4ring5(realsolid)],
 // 1 16 0 20 -200 4 0 0 0 -1 0 0 0 -4 2-4ring5.dat
-  [1,16,0,20,-200,4,0,0,0,-1,0,0,0,-4, ldraw_lib__2_4ring5()],
+  [1,16,0,20,-200,4,0,0,0,-1,0,0,0,-4, ldraw_lib__2_4ring5(realsolid)],
 // 1 16 0 -2 200 5 0 0 0 1 0 0 0 5 2-4ring3.dat
-  [1,16,0,-2,200,5,0,0,0,1,0,0,0,5, ldraw_lib__2_4ring3()],
+  [1,16,0,-2,200,5,0,0,0,1,0,0,0,5, ldraw_lib__2_4ring3(realsolid)],
 // 1 16 0 -2 200 20 0 0 0 1 0 0 0 20 2-4edge.dat
-  [1,16,0,-2,200,20,0,0,0,1,0,0,0,20, ldraw_lib__2_4edge()],
+  [1,16,0,-2,200,20,0,0,0,1,0,0,0,20, ldraw_lib__2_4edge(realsolid)],
 // 1 16 0 -2 200 15 0 0 0 1 0 0 0 15 2-4edge.dat
-  [1,16,0,-2,200,15,0,0,0,1,0,0,0,15, ldraw_lib__2_4edge()],
+  [1,16,0,-2,200,15,0,0,0,1,0,0,0,15, ldraw_lib__2_4edge(realsolid)],
 // 1 16 0 2 200 5 0 0 0 -1 0 0 0 5 2-4ring3.dat
-  [1,16,0,2,200,5,0,0,0,-1,0,0,0,5, ldraw_lib__2_4ring3()],
+  [1,16,0,2,200,5,0,0,0,-1,0,0,0,5, ldraw_lib__2_4ring3(realsolid)],
 // 1 16 0 2 200 20 0 0 0 1 0 0 0 20 2-4edge.dat
-  [1,16,0,2,200,20,0,0,0,1,0,0,0,20, ldraw_lib__2_4edge()],
+  [1,16,0,2,200,20,0,0,0,1,0,0,0,20, ldraw_lib__2_4edge(realsolid)],
 // 1 16 0 2 200 15 0 0 0 1 0 0 0 15 2-4edge.dat
-  [1,16,0,2,200,15,0,0,0,1,0,0,0,15, ldraw_lib__2_4edge()],
+  [1,16,0,2,200,15,0,0,0,1,0,0,0,15, ldraw_lib__2_4edge(realsolid)],
 // 1 16 0 -2 -200 5 0 0 0 1 0 0 0 -5 2-4ring3.dat
-  [1,16,0,-2,-200,5,0,0,0,1,0,0,0,-5, ldraw_lib__2_4ring3()],
+  [1,16,0,-2,-200,5,0,0,0,1,0,0,0,-5, ldraw_lib__2_4ring3(realsolid)],
 // 1 16 0 -2 -200 20 0 0 0 1 0 0 0 -20 2-4edge.dat
-  [1,16,0,-2,-200,20,0,0,0,1,0,0,0,-20, ldraw_lib__2_4edge()],
+  [1,16,0,-2,-200,20,0,0,0,1,0,0,0,-20, ldraw_lib__2_4edge(realsolid)],
 // 1 16 0 -2 -200 15 0 0 0 1 0 0 0 -15 2-4edge.dat
-  [1,16,0,-2,-200,15,0,0,0,1,0,0,0,-15, ldraw_lib__2_4edge()],
+  [1,16,0,-2,-200,15,0,0,0,1,0,0,0,-15, ldraw_lib__2_4edge(realsolid)],
 // 1 16 0 2 -200 5 0 0 0 -1 0 0 0 -5 2-4ring3.dat
-  [1,16,0,2,-200,5,0,0,0,-1,0,0,0,-5, ldraw_lib__2_4ring3()],
+  [1,16,0,2,-200,5,0,0,0,-1,0,0,0,-5, ldraw_lib__2_4ring3(realsolid)],
 // 1 16 0 2 -200 20 0 0 0 1 0 0 0 -20 2-4edge.dat
-  [1,16,0,2,-200,20,0,0,0,1,0,0,0,-20, ldraw_lib__2_4edge()],
+  [1,16,0,2,-200,20,0,0,0,1,0,0,0,-20, ldraw_lib__2_4edge(realsolid)],
 // 1 16 0 2 -200 15 0 0 0 1 0 0 0 -15 2-4edge.dat
-  [1,16,0,2,-200,15,0,0,0,1,0,0,0,-15, ldraw_lib__2_4edge()],
+  [1,16,0,2,-200,15,0,0,0,1,0,0,0,-15, ldraw_lib__2_4edge(realsolid)],
 // 1 16 -22 0 -200 2 0 0 0 0 20 0 400 0 box4o8a.dat
-  [1,16,-22,0,-200,2,0,0,0,0,20,0,400,0, ldraw_lib__box4o8a()],
+  [1,16,-22,0,-200,2,0,0,0,0,20,0,400,0, ldraw_lib__box4o8a(realsolid)],
 // 1 16 22 0 -200 2 0 0 0 0 20 0 400 0 box4o8a.dat
-  [1,16,22,0,-200,2,0,0,0,0,20,0,400,0, ldraw_lib__box4o8a()],
+  [1,16,22,0,-200,2,0,0,0,0,20,0,400,0, ldraw_lib__box4o8a(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 dconnhole.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__dconnhole()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__dconnhole(realsolid)],
 // 1 16 0 0 40 1 0 0 0 1 0 0 0 1 dconnhole.dat
-  [1,16,0,0,40,1,0,0,0,1,0,0,0,1, ldraw_lib__dconnhole()],
+  [1,16,0,0,40,1,0,0,0,1,0,0,0,1, ldraw_lib__dconnhole(realsolid)],
 // 1 16 0 0 80 1 0 0 0 1 0 0 0 1 dconnhole.dat
-  [1,16,0,0,80,1,0,0,0,1,0,0,0,1, ldraw_lib__dconnhole()],
+  [1,16,0,0,80,1,0,0,0,1,0,0,0,1, ldraw_lib__dconnhole(realsolid)],
 // 1 16 0 0 120 1 0 0 0 1 0 0 0 1 dconnhole.dat
-  [1,16,0,0,120,1,0,0,0,1,0,0,0,1, ldraw_lib__dconnhole()],
+  [1,16,0,0,120,1,0,0,0,1,0,0,0,1, ldraw_lib__dconnhole(realsolid)],
 // 1 16 0 0 -120 1 0 0 0 1 0 0 0 1 dconnhole.dat
-  [1,16,0,0,-120,1,0,0,0,1,0,0,0,1, ldraw_lib__dconnhole()],
+  [1,16,0,0,-120,1,0,0,0,1,0,0,0,1, ldraw_lib__dconnhole(realsolid)],
 // 1 16 0 0 -80 1 0 0 0 1 0 0 0 1 dconnhole.dat
-  [1,16,0,0,-80,1,0,0,0,1,0,0,0,1, ldraw_lib__dconnhole()],
+  [1,16,0,0,-80,1,0,0,0,1,0,0,0,1, ldraw_lib__dconnhole(realsolid)],
 // 1 16 0 0 -40 1 0 0 0 1 0 0 0 1 dconnhole.dat
-  [1,16,0,0,-40,1,0,0,0,1,0,0,0,1, ldraw_lib__dconnhole()],
+  [1,16,0,0,-40,1,0,0,0,1,0,0,0,1, ldraw_lib__dconnhole(realsolid)],
 // 2 24 -19.702 -18 201.5 -20 -18 200
   [2,24,-19.702,-18,201.5,-20,-18,200],
 // 2 24 -19.702 -18 201.5 -19.702 -2 201.5
@@ -100,33 +101,33 @@ function ldraw_lib__6525() = [
 // 2 24 19.702 18 201.5 20 18 200
   [2,24,19.702,18,201.5,20,18,200],
 // 1 16 0 0 20 1 0 0 0 1 0 0 0 1 dnpeghole.dat
-  [1,16,0,0,20,1,0,0,0,1,0,0,0,1, ldraw_lib__dnpeghole()],
+  [1,16,0,0,20,1,0,0,0,1,0,0,0,1, ldraw_lib__dnpeghole(realsolid)],
 // 1 16 0 0 60 1 0 0 0 1 0 0 0 1 dnpeghole.dat
-  [1,16,0,0,60,1,0,0,0,1,0,0,0,1, ldraw_lib__dnpeghole()],
+  [1,16,0,0,60,1,0,0,0,1,0,0,0,1, ldraw_lib__dnpeghole(realsolid)],
 // 1 16 0 0 100 1 0 0 0 1 0 0 0 1 dnpeghole.dat
-  [1,16,0,0,100,1,0,0,0,1,0,0,0,1, ldraw_lib__dnpeghole()],
+  [1,16,0,0,100,1,0,0,0,1,0,0,0,1, ldraw_lib__dnpeghole(realsolid)],
 // 1 16 0 0 -20 1 0 0 0 1 0 0 0 -1 dnpeghole.dat
-  [1,16,0,0,-20,1,0,0,0,1,0,0,0,-1, ldraw_lib__dnpeghole()],
+  [1,16,0,0,-20,1,0,0,0,1,0,0,0,-1, ldraw_lib__dnpeghole(realsolid)],
 // 1 16 0 0 -60 1 0 0 0 1 0 0 0 -1 dnpeghole.dat
-  [1,16,0,0,-60,1,0,0,0,1,0,0,0,-1, ldraw_lib__dnpeghole()],
+  [1,16,0,0,-60,1,0,0,0,1,0,0,0,-1, ldraw_lib__dnpeghole(realsolid)],
 // 1 16 0 0 -100 1 0 0 0 1 0 0 0 -1 dnpeghole.dat
-  [1,16,0,0,-100,1,0,0,0,1,0,0,0,-1, ldraw_lib__dnpeghole()],
+  [1,16,0,0,-100,1,0,0,0,1,0,0,0,-1, ldraw_lib__dnpeghole(realsolid)],
 // 1 16 0 0 -200 1 0 0 0 1 0 0 0 1 dconnhole.dat
-  [1,16,0,0,-200,1,0,0,0,1,0,0,0,1, ldraw_lib__dconnhole()],
+  [1,16,0,0,-200,1,0,0,0,1,0,0,0,1, ldraw_lib__dconnhole(realsolid)],
 // 1 16 0 0 -160 1 0 0 0 1 0 0 0 1 dconnhole.dat
-  [1,16,0,0,-160,1,0,0,0,1,0,0,0,1, ldraw_lib__dconnhole()],
+  [1,16,0,0,-160,1,0,0,0,1,0,0,0,1, ldraw_lib__dconnhole(realsolid)],
 // 1 16 0 0 -140 1 0 0 0 1 0 0 0 -1 dnpeghole.dat
-  [1,16,0,0,-140,1,0,0,0,1,0,0,0,-1, ldraw_lib__dnpeghole()],
+  [1,16,0,0,-140,1,0,0,0,1,0,0,0,-1, ldraw_lib__dnpeghole(realsolid)],
 // 1 16 0 0 -180 1 0 0 0 1 0 0 0 -1 dnpeghole.dat
-  [1,16,0,0,-180,1,0,0,0,1,0,0,0,-1, ldraw_lib__dnpeghole()],
+  [1,16,0,0,-180,1,0,0,0,1,0,0,0,-1, ldraw_lib__dnpeghole(realsolid)],
 // 1 16 0 0 160 1 0 0 0 1 0 0 0 1 dconnhole.dat
-  [1,16,0,0,160,1,0,0,0,1,0,0,0,1, ldraw_lib__dconnhole()],
+  [1,16,0,0,160,1,0,0,0,1,0,0,0,1, ldraw_lib__dconnhole(realsolid)],
 // 1 16 0 0 200 1 0 0 0 1 0 0 0 1 dconnhole.dat
-  [1,16,0,0,200,1,0,0,0,1,0,0,0,1, ldraw_lib__dconnhole()],
+  [1,16,0,0,200,1,0,0,0,1,0,0,0,1, ldraw_lib__dconnhole(realsolid)],
 // 1 16 0 0 140 1 0 0 0 1 0 0 0 1 dnpeghole.dat
-  [1,16,0,0,140,1,0,0,0,1,0,0,0,1, ldraw_lib__dnpeghole()],
+  [1,16,0,0,140,1,0,0,0,1,0,0,0,1, ldraw_lib__dnpeghole(realsolid)],
 // 1 16 0 0 180 1 0 0 0 1 0 0 0 1 dnpeghole.dat
-  [1,16,0,0,180,1,0,0,0,1,0,0,0,1, ldraw_lib__dnpeghole()],
+  [1,16,0,0,180,1,0,0,0,1,0,0,0,1, ldraw_lib__dnpeghole(realsolid)],
 // 2 24 -19.702 -18 -201.5 -19.702 -2 -201.5
   [2,24,-19.702,-18,-201.5,-19.702,-2,-201.5],
 // 2 24 -19.702 -18 -201.5 -20 -18 -200
@@ -145,5 +146,5 @@ function ldraw_lib__6525() = [
   [2,24,-19.702,2,-201.5,-19.702,18,-201.5],
 ];
 module ldraw_lib__6525(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6525(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6525(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6525(line=0.2);

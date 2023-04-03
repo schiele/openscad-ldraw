@@ -6,7 +6,8 @@ use <s/30361dps7s03.scad>
 use <s/30361dps7s04.scad>
 use <s/30361ds01.scad>
 use <s/30361ps1s06.scad>
-function ldraw_lib__30361dpsl() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__30361dpsl(realsolid=false) = [
 // 0 Cylinder  2 x  2 x  2 Robot Body with White Lines and Black and Silver Pattern (R2-Q2)
 // 0 Name: 30361dpsl.dat
 // 0 Author: Willy Tschager [Holly-Wood]
@@ -25,7 +26,7 @@ function ldraw_lib__30361dpsl() = [
 // 
 // 0 // Body without front face
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\30361ds01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30361ds01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30361ds01(realsolid)],
 // 
 // 0 // Background
 // 3 16 -10.5 2.5 -16.572 -10.8 2.6 -16.372 -10.5 2.8 -16.572
@@ -458,7 +459,7 @@ function ldraw_lib__30361dpsl() = [
   [4,0,9.5,-9.7,-17.241,9.167,-9,-17.463,9.167,-8.5,-17.463,9.5,-7.8,-17.241],
 // 
 // 1 0 0 -.685 0 1 0 0 0 1 0 0 0 1 s\30361ps1s06.dat
-  [1,0,0,-.685,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30361ps1s06()],
+  [1,0,0,-.685,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30361ps1s06(realsolid)],
 // 
 // 3 15 -7.653 -6.145 -18.475 -7.14 -6.285 -18.577 -7.652 -7.8 -18.475
   [3,15,-7.653,-6.145,-18.475,-7.14,-6.285,-18.577,-7.652,-7.8,-18.475],
@@ -696,9 +697,9 @@ function ldraw_lib__30361dpsl() = [
 // 
 // 0 // Bottom Panel Border
 // 1 0 0 0 0 1 0 0 0 1 0 0 0 1 s\30361dps6s05.dat
-  [1,0,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30361dps6s05()],
+  [1,0,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30361dps6s05(realsolid)],
 // 1 0 0 0 0 -1 0 0 0 1 0 0 0 1 s\30361dps6s05.dat
-  [1,0,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__30361dps6s05()],
+  [1,0,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__30361dps6s05(realsolid)],
 // 
 // 3 0 -1 23 -19.798 -2.4 23 -19.52 -1.838 23.562 -19.631
   [3,0,-1,23,-19.798,-2.4,23,-19.52,-1.838,23.562,-19.631],
@@ -781,24 +782,24 @@ function ldraw_lib__30361dpsl() = [
 // 
 // 0 // Center Vent Panel
 // 1 80 0 0 0 1 0 0 0 1 0 0 0 1 s\30361dps7s01.dat
-  [1,80,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30361dps7s01()],
+  [1,80,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30361dps7s01(realsolid)],
 // 1 80 0 0 0 -1 0 0 0 1 0 0 0 1 s\30361dps7s01.dat
-  [1,80,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__30361dps7s01()],
+  [1,80,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__30361dps7s01(realsolid)],
 // 
 // 1 87 0 0 0 1 0 0 0 1 0 0 0 1 s\30361dps7s02.dat
-  [1,87,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30361dps7s02()],
+  [1,87,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30361dps7s02(realsolid)],
 // 1 87 0 0 0 -1 0 0 0 1 0 0 0 1 s\30361dps7s02.dat
-  [1,87,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__30361dps7s02()],
+  [1,87,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__30361dps7s02(realsolid)],
 // 
 // 1 0 0 0 0 1 0 0 0 1 0 0 0 1 s\30361dps7s03.dat
-  [1,0,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30361dps7s03()],
+  [1,0,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30361dps7s03(realsolid)],
 // 1 0 0 0 0 -1 0 0 0 1 0 0 0 1 s\30361dps7s03.dat
-  [1,0,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__30361dps7s03()],
+  [1,0,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__30361dps7s03(realsolid)],
 // 
 // 1 0 0 0 0 1 0 0 0 1 0 0 0 1 s\30361dps7s04.dat
-  [1,0,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30361dps7s04()],
+  [1,0,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30361dps7s04(realsolid)],
 // 1 0 0 0 0 -1 0 0 0 1 0 0 0 1 s\30361dps7s04.dat
-  [1,0,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__30361dps7s04()],
+  [1,0,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__30361dps7s04(realsolid)],
 // 
 // 0 // Center Panel Left
 // 4 0 3.3 2.8 -19.341 3.3 17.8 -19.341 3.8 17.3 -19.241 3.8 3.3 -19.241
@@ -1137,5 +1138,5 @@ function ldraw_lib__30361dpsl() = [
   [4,0,-6.769,27.8,-18.651,-6.966,27.6,-18.612,-7.652,27.6,-18.475,-7.652,27.8,-18.475],
 ];
 module ldraw_lib__30361dpsl(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__30361dpsl(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__30361dpsl(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__30361dpsl(line=0.2);

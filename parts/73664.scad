@@ -2,7 +2,8 @@ use <../lib.scad>
 use <4769.scad>
 use <4771a.scad>
 use <4772.scad>
-function ldraw_lib__73664() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__73664(realsolid=false) = [
 // 0 Electric Light & Sound Brick  1 x  4 with Twin Top Lights
 // 0 Name: 73664.dat
 // 0 Author: Thomas Burger [grapeape]
@@ -22,14 +23,14 @@ function ldraw_lib__73664() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 4771a.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4771a()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4771a(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 4772.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4772()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4772(realsolid)],
 // 1 47 30 0 0 1 0 0 0 1 0 0 0 1 4769.dat
-  [1,47,30,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4769()],
+  [1,47,30,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4769(realsolid)],
 // 1 47 -30 0 0 1 0 0 0 1 0 0 0 1 4769.dat
-  [1,47,-30,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4769()],
+  [1,47,-30,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4769(realsolid)],
 ];
 module ldraw_lib__73664(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__73664(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__73664(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__73664(line=0.2);

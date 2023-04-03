@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <98585.scad>
-function ldraw_lib__31520() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__31520(realsolid=false) = [
 // 0 =Technic Connector Circular with  2 Pin Holes and  3 Axle Holes
 // 0 Name: 31520.dat
 // 0 Author: [PTadmin]
@@ -18,8 +19,8 @@ function ldraw_lib__31520() = [
 // 0 // 31520 is used for molding transparent parts
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 98585.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__98585()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__98585(realsolid)],
 ];
 module ldraw_lib__31520(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__31520(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__31520(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__31520(line=0.2);

@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/3960p0ds01.scad>
 use <s/3960s01.scad>
-function ldraw_lib__3960p0d() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3960p0d(realsolid=false) = [
 // 0 Dish  4 x  4 Inverted with Magenta, Bright Pink and Medium Azure Stripes Pattern
 // 0 Name: 3960p0d.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -16,14 +17,14 @@ function ldraw_lib__3960p0d() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3960s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3960s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3960s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3960p0ds01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3960p0ds01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3960p0ds01(realsolid)],
 // 1 16 0 0 0 -0.5 0 0.866025 0 1 0 -0.866025 0 -0.5 s\3960p0ds01.dat
-  [1,16,0,0,0,-0.5,0,0.866025,0,1,0,-0.866025,0,-0.5, ldraw_lib__s__3960p0ds01()],
+  [1,16,0,0,0,-0.5,0,0.866025,0,1,0,-0.866025,0,-0.5, ldraw_lib__s__3960p0ds01(realsolid)],
 // 1 16 0 0 0 -0.5 0 -0.866025 0 1 0 0.866025 0 -0.5 s\3960p0ds01.dat
-  [1,16,0,0,0,-0.5,0,-0.866025,0,1,0,0.866025,0,-0.5, ldraw_lib__s__3960p0ds01()],
+  [1,16,0,0,0,-0.5,0,-0.866025,0,1,0,0.866025,0,-0.5, ldraw_lib__s__3960p0ds01(realsolid)],
 ];
 module ldraw_lib__3960p0d(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3960p0d(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3960p0d(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3960p0d(line=0.2);

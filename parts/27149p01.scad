@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/27149s01.scad>
 use <s/27149s03.scad>
-function ldraw_lib__27149p01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__27149p01(realsolid=false) = [
 // 0 Minifig Hat Cylinder Tapered with Hatband with Half Side Dark Turquoise and Medium Lilac Flower Pattern
 // 0 Name: 27149p01.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -19,14 +20,14 @@ function ldraw_lib__27149p01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\27149s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__27149s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__27149s01(realsolid)],
 // 
 // 1 3 0 0 0 1 0 0 0 1 0 0 0 1 s\27149s03.dat
-  [1,3,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__27149s03()],
+  [1,3,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__27149s03(realsolid)],
 // 1 3 0 0 0 1 0 0 0 1 0 0 0 -1 s\27149s03.dat
-  [1,3,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__27149s03()],
+  [1,3,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__27149s03(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\27149s03.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__27149s03()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__27149s03(realsolid)],
 // 
 // 0 // Flower
 // 4 16 15.3095 -15.91 4.1408 13.6192 -4.662 3.5714 12.2106 -4.255 6.9 13.7261 -16.075 8
@@ -497,5 +498,5 @@ function ldraw_lib__27149p01() = [
   [4,16,12.27,-18.42,10.85474,12.26,-19.14,11.17736,15.8478,-25.7,9.37,13.7261,-16.075,8],
 ];
 module ldraw_lib__27149p01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__27149p01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__27149p01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__27149p01(line=0.2);

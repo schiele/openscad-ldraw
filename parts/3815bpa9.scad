@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3815bs01.scad>
-function ldraw_lib__3815bpa9() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3815bpa9(realsolid=false) = [
 // 0 Minifig Hips with Holster and Belt Pattern
 // 0 Name: 3815bpa9.dat
 // 0 Author: Chris Dee [cwdee]
@@ -20,7 +21,7 @@ function ldraw_lib__3815bpa9() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3815bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3815bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3815bs01(realsolid)],
 // 0 // Crotch pattern
 // 3 0 -2 9.2206 -8.1972 2 8.65 -8.08 -2 8.65 -8.08
   [3,0,-2,9.2206,-8.1972,2,8.65,-8.08,-2,8.65,-8.08],
@@ -236,5 +237,5 @@ function ldraw_lib__3815bpa9() = [
   [3,86,-9.1,1.6,-10,-1.1,2.8,-10,-1,1.6,-10],
 ];
 module ldraw_lib__3815bpa9(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3815bpa9(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3815bpa9(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3815bpa9(line=0.2);

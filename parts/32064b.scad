@@ -12,7 +12,8 @@ use <../p/rect2p.scad>
 use <../p/rect3.scad>
 use <s/32064s01.scad>
 use <../p/stud3a.scad>
-function ldraw_lib__32064b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__32064b(realsolid=false) = [
 // 0 Technic Brick  1 x  2 with Reduced Axlehole
 // 0 Name: 32064b.dat
 // 0 Author: Andy Westrate [westrate]
@@ -29,62 +30,62 @@ function ldraw_lib__32064b() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\32064s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__32064s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__32064s01(realsolid)],
 // 0 // axlehole
 // 1 16 0 10 10 1 0 0 0 0 1 0 -1 0 axl2hol2.dat
-  [1,16,0,10,10,1,0,0,0,0,1,0,-1,0, ldraw_lib__axl2hol2()],
+  [1,16,0,10,10,1,0,0,0,0,1,0,-1,0, ldraw_lib__axl2hol2(realsolid)],
 // 1 16 0 10 -10 1 0 0 0 0 1 0 -1 0 axl2hol2.dat
-  [1,16,0,10,-10,1,0,0,0,0,1,0,-1,0, ldraw_lib__axl2hol2()],
+  [1,16,0,10,-10,1,0,0,0,0,1,0,-1,0, ldraw_lib__axl2hol2(realsolid)],
 // 1 16 0 10 10 1 0 0 0 0 1 0 -1 0 axl2hol9.dat
-  [1,16,0,10,10,1,0,0,0,0,1,0,-1,0, ldraw_lib__axl2hol9()],
+  [1,16,0,10,10,1,0,0,0,0,1,0,-1,0, ldraw_lib__axl2hol9(realsolid)],
 // 1 16 0 10 -10 1 0 0 0 0 1 0 -1 0 axl2hol9.dat
-  [1,16,0,10,-10,1,0,0,0,0,1,0,-1,0, ldraw_lib__axl2hol9()],
+  [1,16,0,10,-10,1,0,0,0,0,1,0,-1,0, ldraw_lib__axl2hol9(realsolid)],
 // 1 16 0 10 10 1 0 0 0 0 1 0 -20 0 axl2hol8.dat
-  [1,16,0,10,10,1,0,0,0,0,1,0,-20,0, ldraw_lib__axl2hol8()],
+  [1,16,0,10,10,1,0,0,0,0,1,0,-20,0, ldraw_lib__axl2hol8(realsolid)],
 // 1 16 0 10 10 1 0 0 0 0 1 0 -1 0 axl2ho10.dat
-  [1,16,0,10,10,1,0,0,0,0,1,0,-1,0, ldraw_lib__axl2ho10()],
+  [1,16,0,10,10,1,0,0,0,0,1,0,-1,0, ldraw_lib__axl2ho10(realsolid)],
 // 1 16 0 10 -10 0 0 1 1 0 0 0 1 0 axl2ho10.dat
-  [1,16,0,10,-10,0,0,1,1,0,0,0,1,0, ldraw_lib__axl2ho10()],
+  [1,16,0,10,-10,0,0,1,1,0,0,0,1,0, ldraw_lib__axl2ho10(realsolid)],
 // 1 16 0 10 10 0 0 6 -6 0 0 0 -1 0 4-4ering.dat
-  [1,16,0,10,10,0,0,6,-6,0,0,0,-1,0, ldraw_lib__4_4ering()],
+  [1,16,0,10,10,0,0,6,-6,0,0,0,-1,0, ldraw_lib__4_4ering(realsolid)],
 // 1 16 0 10 -10 0 0 6 6 0 0 0 1 0 4-4ering.dat
-  [1,16,0,10,-10,0,0,6,6,0,0,0,1,0, ldraw_lib__4_4ering()],
+  [1,16,0,10,-10,0,0,6,6,0,0,0,1,0, ldraw_lib__4_4ering(realsolid)],
 // 1 16 0 10 10 6 0 0 0 0 6 0 -1 0 1-16ndis.dat
-  [1,16,0,10,10,6,0,0,0,0,6,0,-1,0, ldraw_lib__1_16ndis()],
+  [1,16,0,10,10,6,0,0,0,0,6,0,-1,0, ldraw_lib__1_16ndis(realsolid)],
 // 1 16 0 10 10 6 0 0 0 0 -6 0 -1 0 1-16ndis.dat
-  [1,16,0,10,10,6,0,0,0,0,-6,0,-1,0, ldraw_lib__1_16ndis()],
+  [1,16,0,10,10,6,0,0,0,0,-6,0,-1,0, ldraw_lib__1_16ndis(realsolid)],
 // 1 16 0 10 10 -6 0 0 0 0 6 0 -1 0 1-16ndis.dat
-  [1,16,0,10,10,-6,0,0,0,0,6,0,-1,0, ldraw_lib__1_16ndis()],
+  [1,16,0,10,10,-6,0,0,0,0,6,0,-1,0, ldraw_lib__1_16ndis(realsolid)],
 // 1 16 0 10 10 -6 0 0 0 0 -6 0 -1 0 1-16ndis.dat
-  [1,16,0,10,10,-6,0,0,0,0,-6,0,-1,0, ldraw_lib__1_16ndis()],
+  [1,16,0,10,10,-6,0,0,0,0,-6,0,-1,0, ldraw_lib__1_16ndis(realsolid)],
 // 1 16 0 10 -10 -6 0 0 0 0 6 0 1 0 1-16ndis.dat
-  [1,16,0,10,-10,-6,0,0,0,0,6,0,1,0, ldraw_lib__1_16ndis()],
+  [1,16,0,10,-10,-6,0,0,0,0,6,0,1,0, ldraw_lib__1_16ndis(realsolid)],
 // 1 16 0 10 -10 -6 0 0 0 0 -6 0 1 0 1-16ndis.dat
-  [1,16,0,10,-10,-6,0,0,0,0,-6,0,1,0, ldraw_lib__1_16ndis()],
+  [1,16,0,10,-10,-6,0,0,0,0,-6,0,1,0, ldraw_lib__1_16ndis(realsolid)],
 // 1 16 0 10 -10 6 0 0 0 0 6 0 1 0 1-16ndis.dat
-  [1,16,0,10,-10,6,0,0,0,0,6,0,1,0, ldraw_lib__1_16ndis()],
+  [1,16,0,10,-10,6,0,0,0,0,6,0,1,0, ldraw_lib__1_16ndis(realsolid)],
 // 1 16 0 10 -10 6 0 0 0 0 -6 0 1 0 1-16ndis.dat
-  [1,16,0,10,-10,6,0,0,0,0,-6,0,1,0, ldraw_lib__1_16ndis()],
+  [1,16,0,10,-10,6,0,0,0,0,-6,0,1,0, ldraw_lib__1_16ndis(realsolid)],
 // 0 // inside cylinder
 // 1 16 0 10 6 8 0 0 0 0 8 0 1 0 2-4ndis.dat
-  [1,16,0,10,6,8,0,0,0,0,8,0,1,0, ldraw_lib__2_4ndis()],
+  [1,16,0,10,6,8,0,0,0,0,8,0,1,0, ldraw_lib__2_4ndis(realsolid)],
 // 1 16 0 10 -6 8 0 0 0 0 8 0 -1 0 2-4ndis.dat
-  [1,16,0,10,-6,8,0,0,0,0,8,0,-1,0, ldraw_lib__2_4ndis()],
+  [1,16,0,10,-6,8,0,0,0,0,8,0,-1,0, ldraw_lib__2_4ndis(realsolid)],
 // 1 16 0 10 6 8 0 0 0 0 8 0 -12 0 2-4cylo.dat
-  [1,16,0,10,6,8,0,0,0,0,8,0,-12,0, ldraw_lib__2_4cylo()],
+  [1,16,0,10,6,8,0,0,0,0,8,0,-12,0, ldraw_lib__2_4cylo(realsolid)],
 // 1 16 8 7 0 0 -1 0 -3 0 0 0 0 -6 rect2p.dat
-  [1,16,8,7,0,0,-1,0,-3,0,0,0,0,-6, ldraw_lib__rect2p()],
+  [1,16,8,7,0,0,-1,0,-3,0,0,0,0,-6, ldraw_lib__rect2p(realsolid)],
 // 1 16 -8 7 0 0 1 0 -3 0 0 0 0 6 rect2p.dat
-  [1,16,-8,7,0,0,1,0,-3,0,0,0,0,6, ldraw_lib__rect2p()],
+  [1,16,-8,7,0,0,1,0,-3,0,0,0,0,6, ldraw_lib__rect2p(realsolid)],
 // 0 // inside walls
 // 2 24 16 24 6 -16 24 6
   [2,24,16,24,6,-16,24,6],
 // 2 24 16 24 -6 -16 24 -6
   [2,24,16,24,-6,-16,24,-6],
 // 1 16 12 4 0 0 0 -4 0 -1 0 -6 0 0 rect3.dat
-  [1,16,12,4,0,0,0,-4,0,-1,0,-6,0,0, ldraw_lib__rect3()],
+  [1,16,12,4,0,0,0,-4,0,-1,0,-6,0,0, ldraw_lib__rect3(realsolid)],
 // 1 16 -12 4 0 0 0 4 0 -1 0 6 0 0 rect3.dat
-  [1,16,-12,4,0,0,0,4,0,-1,0,6,0,0, ldraw_lib__rect3()],
+  [1,16,-12,4,0,0,0,4,0,-1,0,6,0,0, ldraw_lib__rect3(realsolid)],
 // 4 16 16 24 6 16 4 6 8 4 6 8 18 6
   [4,16,16,24,6,16,4,6,8,4,6,8,18,6],
 // 4 16 16 24 -6 8 18 -6 8 4 -6 16 4 -6
@@ -99,10 +100,10 @@ function ldraw_lib__32064b() = [
   [4,16,16,24,-6,-16,24,-6,-8,18,-6,8,18,-6],
 // 0 // bottom stud
 // 1 16 0 18 0 1 0 0 0 1 0 0 0 1 cylj4x8.dat
-  [1,16,0,18,0,1,0,0,0,1,0,0,0,1, ldraw_lib__cylj4x8()],
+  [1,16,0,18,0,1,0,0,0,1,0,0,0,1, ldraw_lib__cylj4x8(realsolid)],
 // 1 16 0 18 0 1 0 0 0 -1.5 0 0 0 1 stud3a.dat
-  [1,16,0,18,0,1,0,0,0,-1.5,0,0,0,1, ldraw_lib__stud3a()],
+  [1,16,0,18,0,1,0,0,0,-1.5,0,0,0,1, ldraw_lib__stud3a(realsolid)],
 ];
 module ldraw_lib__32064b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__32064b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__32064b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__32064b(line=0.2);

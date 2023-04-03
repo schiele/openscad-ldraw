@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/box2-7.scad>
 use <../p/recte3.scad>
 use <s/2727s01.scad>
-function ldraw_lib__2727a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2727a(realsolid=false) = [
 // 0 ~Electric Brick  2 x  2 x  0.667 Underside with Bottom Square Hole with Straight Sides
 // 0 Name: 2727a.dat
 // 0 Author: Max Martin Richter [MMR1988]
@@ -17,7 +18,7 @@ function ldraw_lib__2727a() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2727s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2727s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2727s01(realsolid)],
 // 
 // 3 16 17 -5 16 1.5 -5 16 17 -10 16
   [3,16,17,-5,16,1.5,-5,16,17,-10,16],
@@ -26,7 +27,7 @@ function ldraw_lib__2727a() = [
 // 3 16 -17 -10 16 -1.5 -5 16 -17 -5 16
   [3,16,-17,-10,16,-1.5,-5,16,-17,-5,16],
 // 1 16 0 -7.5 16 17 0 0 0 0 -2.5 0 1 0 recte3.dat
-  [1,16,0,-7.5,16,17,0,0,0,0,-2.5,0,1,0, ldraw_lib__recte3()],
+  [1,16,0,-7.5,16,17,0,0,0,0,-2.5,0,1,0, ldraw_lib__recte3(realsolid)],
 // 2 24 17 -5 16 1.5 -5 16
   [2,24,17,-5,16,1.5,-5,16],
 // 2 24 -17 -5 16 -1.5 -5 16
@@ -39,7 +40,7 @@ function ldraw_lib__2727a() = [
 // 3 16 -17 -5 -16 -1.5 -5 -16 -17 -10 -16
   [3,16,-17,-5,-16,-1.5,-5,-16,-17,-10,-16],
 // 1 16 0 -7.5 -16 17 0 0 0 0 -2.5 0 1 0 recte3.dat
-  [1,16,0,-7.5,-16,17,0,0,0,0,-2.5,0,1,0, ldraw_lib__recte3()],
+  [1,16,0,-7.5,-16,17,0,0,0,0,-2.5,0,1,0, ldraw_lib__recte3(realsolid)],
 // 2 24 17 -5 -16 1.5 -5 -16
   [2,24,17,-5,-16,1.5,-5,-16],
 // 2 24 -17 -5 -16 -1.5 -5 -16
@@ -66,12 +67,12 @@ function ldraw_lib__2727a() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -11.5 11.375 -17 0 0 0 1.5 0 0 0 -4.625 box2-7.dat
-  [1,16,0,-11.5,11.375,-17,0,0,0,1.5,0,0,0,-4.625, ldraw_lib__box2_7()],
+  [1,16,0,-11.5,11.375,-17,0,0,0,1.5,0,0,0,-4.625, ldraw_lib__box2_7(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -11.5 -11.375 -17 0 0 0 1.5 0 0 0 4.625 box2-7.dat
-  [1,16,0,-11.5,-11.375,-17,0,0,0,1.5,0,0,0,4.625, ldraw_lib__box2_7()],
+  [1,16,0,-11.5,-11.375,-17,0,0,0,1.5,0,0,0,4.625, ldraw_lib__box2_7(realsolid)],
 ];
 module ldraw_lib__2727a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2727a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2727a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2727a(line=0.2);

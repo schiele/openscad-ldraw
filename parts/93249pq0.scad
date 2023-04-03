@@ -2,7 +2,8 @@ use <../lib.scad>
 use <s/93249s01.scad>
 use <s/93249s03.scad>
 use <../p/stud4o.scad>
-function ldraw_lib__93249pq0() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__93249pq0(realsolid=false) = [
 // 0 Minifig Headdress Horus with Eye Pattern
 // 0 Name: 93249pq0.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -24,15 +25,15 @@ function ldraw_lib__93249pq0() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\93249s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__93249s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__93249s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\93249s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__93249s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__93249s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\93249s03.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__93249s03()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__93249s03(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\93249s03.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__93249s03()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__93249s03(realsolid)],
 // 1 16 0 -4 0 1 0 0 0 -1 0 0 0 1 stud4o.dat
-  [1,16,0,-4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4o()],
+  [1,16,0,-4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4o(realsolid)],
 // 0 //
 // 2 24 0 8.155 -15 0 8.105 -13.05
   [2,24,0,8.155,-15,0,8.105,-13.05],
@@ -107,5 +108,5 @@ function ldraw_lib__93249pq0() = [
   [5,24,-9.898,-5.011,-9.773,-6.95,-6.595,-13.35,-8,-7.07,-10.525,-6.905,-6,-13.6],
 ];
 module ldraw_lib__93249pq0(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__93249pq0(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__93249pq0(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__93249pq0(line=0.2);

@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__3626pm0() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__3626pm0(realsolid=false) = [
 // 0 ~Minifig Uruk-Hai Scowl and White Hand Pattern
 // 0 Name: s\3626pm0.dat
 // 0 Author: Howard Lande [HowardLande]
@@ -6241,5 +6242,5 @@ function ldraw_lib__s__3626pm0() = [
   [5,24,0,18.531,12.619,0,17,13,5.227,18.531,12.619,-4.83,18.531,11.659],
 ];
 module ldraw_lib__s__3626pm0(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__3626pm0(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__3626pm0(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__3626pm0(line=0.2);

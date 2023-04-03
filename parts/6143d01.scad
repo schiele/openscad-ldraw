@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <4624296dc01.scad>
 use <6143.scad>
-function ldraw_lib__6143d01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6143d01(realsolid=false) = [
 // 0 Brick  2 x  2 Round Reinforced with "POWERED BY allinol" on Black Background Sticker
 // 0 Name: 6143d01.dat
 // 0 Author: Steffen [Steffen]
@@ -20,10 +21,10 @@ function ldraw_lib__6143d01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 6143.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__6143()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__6143(realsolid)],
 // 1 16 0 10 -20 1 0 0 0 1 0 0 0 1 4624296dc01.dat
-  [1,16,0,10,-20,1,0,0,0,1,0,0,0,1, ldraw_lib__4624296dc01()],
+  [1,16,0,10,-20,1,0,0,0,1,0,0,0,1, ldraw_lib__4624296dc01(realsolid)],
 ];
 module ldraw_lib__6143d01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6143d01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6143d01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6143d01(line=0.2);

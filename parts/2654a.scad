@@ -7,7 +7,8 @@ use <../p/4-4disc.scad>
 use <../p/4-4edge.scad>
 use <../p/bump5000.scad>
 use <s/2654as01.scad>
-function ldraw_lib__2654a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2654a(realsolid=false) = [
 // 0 Dish  2 x  2 with Rim
 // 0 Name: 2654a.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -34,36 +35,36 @@ function ldraw_lib__2654a() = [
 // 
 // 
 // 1 16 0 2.25 0 20 0 0 0 -11.5 0 0 0 -20 bump5000.dat
-  [1,16,0,2.25,0,20,0,0,0,-11.5,0,0,0,-20, ldraw_lib__bump5000()],
+  [1,16,0,2.25,0,20,0,0,0,-11.5,0,0,0,-20, ldraw_lib__bump5000(realsolid)],
 // 1 16 0 1.125 0 20 0 0 0 1.125 0 0 0 20 4-4cyli.dat
-  [1,16,0,1.125,0,20,0,0,0,1.125,0,0,0,20, ldraw_lib__4_4cyli()],
+  [1,16,0,1.125,0,20,0,0,0,1.125,0,0,0,20, ldraw_lib__4_4cyli(realsolid)],
 // 
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 1.125 0 3.25 0 0 0 1.95 0 0 0 3.25 4-4con4.dat
-  [1,16,0,1.125,0,3.25,0,0,0,1.95,0,0,0,3.25, ldraw_lib__4_4con4()],
+  [1,16,0,1.125,0,3.25,0,0,0,1.95,0,0,0,3.25, ldraw_lib__4_4con4(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 3.075 0 1 0 0 0 0.625 0 0 0 1 4-4con12.dat
-  [1,16,0,3.075,0,1,0,0,0,0.625,0,0,0,1, ldraw_lib__4_4con12()],
+  [1,16,0,3.075,0,1,0,0,0,0.625,0,0,0,1, ldraw_lib__4_4con12(realsolid)],
 // 
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 3.7 0 -6 0 0 0 1 0 0 0 -6 4-4con1.dat
-  [1,16,0,3.7,0,-6,0,0,0,1,0,0,0,-6, ldraw_lib__4_4con1()],
+  [1,16,0,3.7,0,-6,0,0,0,1,0,0,0,-6, ldraw_lib__4_4con1(realsolid)],
 // 1 16 0 4.7 0 6 0 0 0 1 0 0 0 6 4-4disc.dat
-  [1,16,0,4.7,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4disc()],
+  [1,16,0,4.7,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 4.7 0 6 0 0 0 1 0 0 0 6 4-4edge.dat
-  [1,16,0,4.7,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4edge()],
+  [1,16,0,4.7,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4edge(realsolid)],
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2654as01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2654as01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2654as01(realsolid)],
 // 1 16 0 0 0 0 0 1 0 1 0 -1 0 0 s\2654as01.dat
-  [1,16,0,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__s__2654as01()],
+  [1,16,0,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__s__2654as01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 -1 s\2654as01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__2654as01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__2654as01(realsolid)],
 // 1 16 0 0 0 0 0 -1 0 1 0 1 0 0 s\2654as01.dat
-  [1,16,0,0,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__s__2654as01()],
+  [1,16,0,0,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__s__2654as01(realsolid)],
 // 
 // 5 24 -4.5924 3.7 11.0868 -8.4853 3.7 8.4853 -9.1923 3.075 9.1923 -2.2962 4.7 5.5434
   [5,24,-4.5924,3.7,11.0868,-8.4853,3.7,8.4853,-9.1923,3.075,9.1923,-2.2962,4.7,5.5434],
@@ -131,5 +132,5 @@ function ldraw_lib__2654a() = [
   [5,24,4.5922,3.7,11.0866,0,3.7,12,0,3.075,13,2.2962,4.7,5.5434],
 ];
 module ldraw_lib__2654a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2654a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2654a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2654a(line=0.2);

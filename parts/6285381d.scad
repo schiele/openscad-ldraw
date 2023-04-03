@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__6285381d() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6285381d(realsolid=false) = [
 // 0 Sticker  4.0 x  1.8 with Black Rounded Square Right Half
 // 0 Name: 6285381d.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -17,7 +18,7 @@ function ldraw_lib__6285381d() = [
 // 
 // 
 // 1 16 0 -.25 0 18 0 0 0 .25 0 0 0 40 box5-12.dat
-  [1,16,0,-.25,0,18,0,0,0,.25,0,0,0,40, ldraw_lib__box5_12()],
+  [1,16,0,-.25,0,18,0,0,0,.25,0,0,0,40, ldraw_lib__box5_12(realsolid)],
 // 4 16 7 -.25 -33.243 -18 -.25 -33.4 -18 -.25 -40 18 -.25 -40
   [4,16,7,-.25,-33.243,-18,-.25,-33.4,-18,-.25,-40,18,-.25,-40],
 // 3 16 18 -.25 -40 8.668 -.25 -33.023 7 -.25 -33.243
@@ -70,5 +71,5 @@ function ldraw_lib__6285381d() = [
   [3,0,9.6,-.25,10.968,-18,-.25,11.4,-18,-.25,-11],
 ];
 module ldraw_lib__6285381d(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6285381d(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6285381d(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6285381d(line=0.2);

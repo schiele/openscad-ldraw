@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__4638848j() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4638848j(realsolid=false) = [
 // 0 Sticker  1.0 x  3.7 with Red and White Diagonal Stripes, Top Left to Bottom Right
 // 0 Name: 4638848j.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -17,7 +18,7 @@ function ldraw_lib__4638848j() = [
 // 
 // 
 // 1 16 0 -.25 0 37 0 0 0 .25 0 0 0 10 box5-12.dat
-  [1,16,0,-.25,0,37,0,0,0,.25,0,0,0,10, ldraw_lib__box5_12()],
+  [1,16,0,-.25,0,37,0,0,0,.25,0,0,0,10, ldraw_lib__box5_12(realsolid)],
 // 
 // 3 15 37 -.25 10 26.2 -.25 10 37 -.25 -.8
   [3,15,37,-.25,10,26.2,-.25,10,37,-.25,-.8],
@@ -39,5 +40,5 @@ function ldraw_lib__4638848j() = [
   [4,15,-3.2,-.25,10,16.8,-.25,-10,31.5,-.25,-10,11.5,-.25,10],
 ];
 module ldraw_lib__4638848j(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4638848j(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4638848j(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4638848j(line=0.2);

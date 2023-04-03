@@ -8,7 +8,8 @@ use <../../p/rect3.scad>
 use <58381s02.scad>
 use <58381s03.scad>
 use <58381s04.scad>
-function ldraw_lib__s__92262ph1s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__92262ph1s01(realsolid=false) = [
 // 0 ~Door  1 x  3 x  2 Left with Hollow Hinge with Horizontal White Line Pattern - Main Part
 // 0 Name: s\92262ph1s01.dat
 // 0 Author: Philip van Heemstra [BrickBaron]
@@ -25,13 +26,13 @@ function ldraw_lib__s__92262ph1s01() = [
 // 0 // ~Door Left with Hollow Hinge - Bottom
 // 
 // 1 16 0 48 0 1 0 0 0 1 0 0 0 1 s\58381s02.dat
-  [1,16,0,48,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__58381s02()],
+  [1,16,0,48,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__58381s02(realsolid)],
 // 0 // ~Door Left with Hollow Hinge - Top
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\58381s03.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__58381s03()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__58381s03(realsolid)],
 // 0 // ~Door Left Handle
 // 1 16 0 24 40 1 0 0 0 1 0 0 0 1 s\58381s04.dat
-  [1,16,0,24,40,1,0,0,0,1,0,0,0,1, ldraw_lib__s__58381s04()],
+  [1,16,0,24,40,1,0,0,0,1,0,0,0,1, ldraw_lib__s__58381s04(realsolid)],
 // 
 // 4 16 6 48 10 6 29 38 6 29 40 6 48 50
   [4,16,6,48,10,6,29,38,6,29,40,6,48,50],
@@ -46,17 +47,17 @@ function ldraw_lib__s__92262ph1s01() = [
 // 3 16 6 29 38 6 48 10 6 40 10
   [3,16,6,29,38,6,48,10,6,40,10],
 // 1 16 8 24 50 -2 0 0 0 0 -24 0 -1 0 rect3.dat
-  [1,16,8,24,50,-2,0,0,0,0,-24,0,-1,0, ldraw_lib__rect3()],
+  [1,16,8,24,50,-2,0,0,0,0,-24,0,-1,0, ldraw_lib__rect3(realsolid)],
 // 1 16 -1.33 22 -4.4135 -7.33 0.0798 0 0 0 -18 -0.5865 -1 0 rect.dat
-  [1,16,-1.33,22,-4.4135,-7.33,0.0798,0,0,0,-18,-0.5865,-1,0, ldraw_lib__rect()],
+  [1,16,-1.33,22,-4.4135,-7.33,0.0798,0,0,0,-18,-0.5865,-1,0, ldraw_lib__rect(realsolid)],
 // 1 16 6 22 3.0865 0 1 0 0 0 18 6.9135 0 0 rect2p.dat
-  [1,16,6,22,3.0865,0,1,0,0,0,18,6.9135,0,0, ldraw_lib__rect2p()],
+  [1,16,6,22,3.0865,0,1,0,0,0,18,6.9135,0,0, ldraw_lib__rect2p(realsolid)],
 // 4 16 10 48 50 10 29 42 10 29 38 10 48 0
   [4,16,10,48,50,10,29,42,10,29,38,10,48,0],
 // 3 16 10 40 0 10 48 0 10 29 38
   [3,16,10,40,0,10,48,0,10,29,38],
 // 1 16 0 4 0 -8.6603 0 5 0 36 0 -5 0 -8.6603 48\1-6cyli.dat
-  [1,16,0,4,0,-8.6603,0,5,0,36,0,-5,0,-8.6603, ldraw_lib__48__1_6cyli()],
+  [1,16,0,4,0,-8.6603,0,5,0,36,0,-5,0,-8.6603, ldraw_lib__48__1_6cyli(realsolid)],
 // 
 // 0 // Adjusted from plain part
 // 4 16 10 0 0 10 8 0 10 8 50 10 0 50
@@ -68,20 +69,20 @@ function ldraw_lib__s__92262ph1s01() = [
 // 4 16 10 40 0 10 29 38 10 19 38 10 16 0
   [4,16,10,40,0,10,29,38,10,19,38,10,16,0],
 // 1 16 0 4 0 0 0 10 0 4 0 -10 0 0 48\1-4cyli.dat
-  [1,16,0,4,0,0,0,10,0,4,0,-10,0,0, ldraw_lib__48__1_4cyli()],
+  [1,16,0,4,0,0,0,10,0,4,0,-10,0,0, ldraw_lib__48__1_4cyli(realsolid)],
 // 1 16 0 8 0 0 0 10 0 8 0 -10 0 0 48\1-8cyli.dat
-  [1,16,0,8,0,0,0,10,0,8,0,-10,0,0, ldraw_lib__48__1_8cyli()],
+  [1,16,0,8,0,0,0,10,0,8,0,-10,0,0, ldraw_lib__48__1_8cyli(realsolid)],
 // 1 16 0 16 0 0 0 10 0 24 0 -10 0 0 48\1-4cyli.dat
-  [1,16,0,16,0,0,0,10,0,24,0,-10,0,0, ldraw_lib__48__1_4cyli()],
+  [1,16,0,16,0,0,0,10,0,24,0,-10,0,0, ldraw_lib__48__1_4cyli(realsolid)],
 // 4 16 10 8 35 10 16 35 10 16 50 10 8 50
   [4,16,10,8,35,10,16,35,10,16,50,10,8,50],
 // 
 // 0 // White stripe pattern
 // 1 15 0 8 0 10 0 0 0 8 0 0 0 -10 48\1-8cyli.dat
-  [1,15,0,8,0,10,0,0,0,8,0,0,0,-10, ldraw_lib__48__1_8cyli()],
+  [1,15,0,8,0,10,0,0,0,8,0,0,0,-10, ldraw_lib__48__1_8cyli(realsolid)],
 // 4 15 10 8 0 10 16 0 10 16 35 10 8 35
   [4,15,10,8,0,10,16,0,10,16,35,10,8,35],
 ];
 module ldraw_lib__s__92262ph1s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__92262ph1s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__92262ph1s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__92262ph1s01(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/973s01.scad>
-function ldraw_lib__9326_4t() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__9326_4t(realsolid=false) = [
 // 0 ~Moved to s\973s01
 // 0 Name: 9326-4t.dat
 // 0 Author: [PTadmin]
@@ -18,10 +19,10 @@ function ldraw_lib__9326_4t() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01(realsolid)],
 // 0
 // 0 1999-04-16 SEB Moved to s\973s01.dat
 ];
 module ldraw_lib__9326_4t(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__9326_4t(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__9326_4t(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__9326_4t(line=0.2);

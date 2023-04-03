@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__15525s05() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__15525s05(realsolid=false) = [
 // 0 ~Minifig Head Simpsons Maggie Simpson Dummy
 // 0 Name: s\15525s05.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -409,5 +410,5 @@ function ldraw_lib__s__15525s05() = [
   [5,24,0,-4.2706,-21.4685,0,-5.4707,-21.3407,.6551,-4.71765,-21.26375,-.6551,-4.71765,-21.26375],
 ];
 module ldraw_lib__s__15525s05(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__15525s05(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__15525s05(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__15525s05(line=0.2);

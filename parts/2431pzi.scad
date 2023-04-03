@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/2431s01.scad>
-function ldraw_lib__2431pzi() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2431pzi(realsolid=false) = [
 // 0 Tile  1 x  4 with 7 Medium Lilac Pointed Lines Pattern
 // 0 Name: 2431pzi.dat
 // 0 Author: Vincent Messenet [Cheenzo]
@@ -18,7 +19,7 @@ function ldraw_lib__2431pzi() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2431s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2431s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2431s01(realsolid)],
 // 
 // 3 85 -30.375 0 0 -31 0 -1.5 -29.75 0 -1.5
   [3,85,-30.375,0,0,-31,0,-1.5,-29.75,0,-1.5],
@@ -96,5 +97,5 @@ function ldraw_lib__2431pzi() = [
   [4,16,-20.875,0,-1.5,-29.75,0,-1.5,-29.75,0,-10,-20.875,0,-10],
 ];
 module ldraw_lib__2431pzi(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2431pzi(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2431pzi(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2431pzi(line=0.2);

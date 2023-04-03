@@ -6,7 +6,8 @@ use <../../p/1-8ring2.scad>
 use <../../p/1-8ring3.scad>
 use <../../p/1-8ring4.scad>
 use <../../p/1-8ring9.scad>
-function ldraw_lib__s__2593s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__2593s02(realsolid=false) = [
 // 0 ~Wheel 30 x 35 with Tread on Sidewall - 1/8 Hub Segment
 // 0 Name: s\2593s02.dat
 // 0 Author: Steve Bliss [sbliss]
@@ -64,43 +65,43 @@ function ldraw_lib__s__2593s02() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 -18 6 0 0 0 0 -6 0 16 0 1-8cylo.dat
-  [1,16,0,0,-18,6,0,0,0,0,-6,0,16,0, ldraw_lib__1_8cylo()],
+  [1,16,0,0,-18,6,0,0,0,0,-6,0,16,0, ldraw_lib__1_8cylo(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 -22.5 8 0 0 0 0 -8 0 4.5 0 1-8cylo.dat
-  [1,16,0,0,-22.5,8,0,0,0,0,-8,0,4.5,0, ldraw_lib__1_8cylo()],
+  [1,16,0,0,-22.5,8,0,0,0,0,-8,0,4.5,0, ldraw_lib__1_8cylo(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 -38 11 0 0 0 0 -11 0 11 0 1-8cylo.dat
-  [1,16,0,0,-38,11,0,0,0,0,-11,0,11,0, ldraw_lib__1_8cylo()],
+  [1,16,0,0,-38,11,0,0,0,0,-11,0,11,0, ldraw_lib__1_8cylo(realsolid)],
 // 1 16 0 0 -38 1.1 0 0 0 0 -1.1 0 1 0 1-8rin10.dat
-  [1,16,0,0,-38,1.1,0,0,0,0,-1.1,0,1,0, ldraw_lib__1_8rin10()],
+  [1,16,0,0,-38,1.1,0,0,0,0,-1.1,0,1,0, ldraw_lib__1_8rin10(realsolid)],
 // 
 // 0 // Outside hub
 // 1 16 0 0 -13 11 0 0 0 0 -11 0 11 0 1-8cylo.dat
-  [1,16,0,0,-13,11,0,0,0,0,-11,0,11,0, ldraw_lib__1_8cylo()],
+  [1,16,0,0,-13,11,0,0,0,0,-11,0,11,0, ldraw_lib__1_8cylo(realsolid)],
 // 1 16 0 0 -23 14 0 0 0 0 -14 0 10 0 1-8cylo.dat
-  [1,16,0,0,-23,14,0,0,0,0,-14,0,10,0, ldraw_lib__1_8cylo()],
+  [1,16,0,0,-23,14,0,0,0,0,-14,0,10,0, ldraw_lib__1_8cylo(realsolid)],
 // 1 16 0 0 -30 19 0 0 0 0 -19 0 7 0 1-8cylo.dat
-  [1,16,0,0,-30,19,0,0,0,0,-19,0,7,0, ldraw_lib__1_8cylo()],
+  [1,16,0,0,-30,19,0,0,0,0,-19,0,7,0, ldraw_lib__1_8cylo(realsolid)],
 // 
 // 0 // Outer hub
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 -30 20 0 0 0 0 -20 0 28 0 1-8cylo.dat
-  [1,16,0,0,-30,20,0,0,0,0,-20,0,28,0, ldraw_lib__1_8cylo()],
+  [1,16,0,0,-30,20,0,0,0,0,-20,0,28,0, ldraw_lib__1_8cylo(realsolid)],
 // 1 16 0 0 -22 25 0 0 0 0 -25 0 20 0 1-8cylo.dat
-  [1,16,0,0,-22,25,0,0,0,0,-25,0,20,0, ldraw_lib__1_8cylo()],
+  [1,16,0,0,-22,25,0,0,0,0,-25,0,20,0, ldraw_lib__1_8cylo(realsolid)],
 // 1 16 0 0 -30 27 0 0 0 0 -27 0 8 0 1-8cylo.dat
-  [1,16,0,0,-30,27,0,0,0,0,-27,0,8,0, ldraw_lib__1_8cylo()],
+  [1,16,0,0,-30,27,0,0,0,0,-27,0,8,0, ldraw_lib__1_8cylo(realsolid)],
 // 
 // 0 // Toroidal surfaces
 // 1 16 0 0 -2 3 0 0 0 0 -3 0 -1 0 1-8ring2.dat
-  [1,16,0,0,-2,3,0,0,0,0,-3,0,-1,0, ldraw_lib__1_8ring2()],
+  [1,16,0,0,-2,3,0,0,0,0,-3,0,-1,0, ldraw_lib__1_8ring2(realsolid)],
 // 1 16 0 0 -2 1 0 0 0 0 -1 0 -1 0 1-8ring9.dat
-  [1,16,0,0,-2,1,0,0,0,0,-1,0,-1,0, ldraw_lib__1_8ring9()],
+  [1,16,0,0,-2,1,0,0,0,0,-1,0,-1,0, ldraw_lib__1_8ring9(realsolid)],
 // 1 16 0 0 -2 1 0 0 0 0 -1 0 -1 0 1-8rin10.dat
-  [1,16,0,0,-2,1,0,0,0,0,-1,0,-1,0, ldraw_lib__1_8rin10()],
+  [1,16,0,0,-2,1,0,0,0,0,-1,0,-1,0, ldraw_lib__1_8rin10(realsolid)],
 // 
 // 0 // Inner
 // 4 16 6.36396 -6.36396 -22.5 5.65685 -5.65685 -22.5 7.39124021 -3.06148722 -22.5 8.3085 -3.44361 -22.5
@@ -119,17 +120,17 @@ function ldraw_lib__s__2593s02() = [
   [4,16,8.14587,0,-27,11.0026,0,-27,10.162956922,-4.209545604,-27,8.57013,-2.13546,-27],
 // 
 // 1 16 0 0 -18 2 0 0 0 0 -2 0 1 0 1-8ring3.dat
-  [1,16,0,0,-18,2,0,0,0,0,-2,0,1,0, ldraw_lib__1_8ring3()],
+  [1,16,0,0,-18,2,0,0,0,0,-2,0,1,0, ldraw_lib__1_8ring3(realsolid)],
 // 1 16 0 0 -13 3.5 0 0 0 0 -3.5 0 -1 0 1-8ring3.dat
-  [1,16,0,0,-13,3.5,0,0,0,0,-3.5,0,-1,0, ldraw_lib__1_8ring3()],
+  [1,16,0,0,-13,3.5,0,0,0,0,-3.5,0,-1,0, ldraw_lib__1_8ring3(realsolid)],
 // 1 16 0 0 -23 6.3333 0 0 0 0 -6.3333 0 -1 0 1-8ring2.dat
-  [1,16,0,0,-23,6.3333,0,0,0,0,-6.3333,0,-1,0, ldraw_lib__1_8ring2()],
+  [1,16,0,0,-23,6.3333,0,0,0,0,-6.3333,0,-1,0, ldraw_lib__1_8ring2(realsolid)],
 // 1 16 0 0 -30 1 0 0 0 0 -1 0 -1 0 1-8rin19.dat
-  [1,16,0,0,-30,1,0,0,0,0,-1,0,-1,0, ldraw_lib__1_8rin19()],
+  [1,16,0,0,-30,1,0,0,0,0,-1,0,-1,0, ldraw_lib__1_8rin19(realsolid)],
 // 1 16 0 0 -2 5 0 0 0 0 -5 0 -1 0 1-8ring4.dat
-  [1,16,0,0,-2,5,0,0,0,0,-5,0,-1,0, ldraw_lib__1_8ring4()],
+  [1,16,0,0,-2,5,0,0,0,0,-5,0,-1,0, ldraw_lib__1_8ring4(realsolid)],
 // 1 16 0 0 -22 2.45454 0 0 0 0 -2.454545 0 -1 0 1-8rin10.dat
-  [1,16,0,0,-22,2.45454,0,0,0,0,-2.454545,0,-1,0, ldraw_lib__1_8rin10()],
+  [1,16,0,0,-22,2.45454,0,0,0,0,-2.454545,0,-1,0, ldraw_lib__1_8rin10(realsolid)],
 // 
 // 3 16 34.699 -4.5675 -30 35 0 -30 27 0 -30
   [3,16,34.699,-4.5675,-30,35,0,-30,27,0,-30],
@@ -144,5 +145,5 @@ function ldraw_lib__s__2593s02() = [
 // 
 ];
 module ldraw_lib__s__2593s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__2593s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__2593s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__2593s02(line=0.2);

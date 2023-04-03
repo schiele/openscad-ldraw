@@ -5,7 +5,8 @@ use <../p/4-4edge.scad>
 use <../p/4-4ring1.scad>
 use <../p/8-8sphe.scad>
 use <../p/confric4.scad>
-function ldraw_lib__6628() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6628(realsolid=false) = [
 // 0 Technic Pin Towball with Friction
 // 0 Name: 6628.dat
 // 0 Author: William Howard [WilliamH]
@@ -31,20 +32,20 @@ function ldraw_lib__6628() = [
 // 
 // 
 // 1 16 -10 0 0 8 0 0 0 8 0 0 0 8 8-8sphe.dat
-  [1,16,-10,0,0,8,0,0,0,8,0,0,0,8, ldraw_lib__8_8sphe()],
+  [1,16,-10,0,0,8,0,0,0,8,0,0,0,8, ldraw_lib__8_8sphe(realsolid)],
 // 1 16 -10 0 0 0 -4 0 4 0 0 0 0 -4 4-4cyl1sph2.dat
-  [1,16,-10,0,0,0,-4,0,4,0,0,0,0,-4, ldraw_lib__4_4cyl1sph2()],
+  [1,16,-10,0,0,0,-4,0,4,0,0,0,0,-4, ldraw_lib__4_4cyl1sph2(realsolid)],
 // 1 16 0 0 0 0 -2 0 4 0 0 0 0 -4 4-4cyli.dat
-  [1,16,0,0,0,0,-2,0,4,0,0,0,0,-4, ldraw_lib__4_4cyli()],
+  [1,16,0,0,0,0,-2,0,4,0,0,0,0,-4, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 0 0 0 1 0 4 0 0 0 0 4 4-4edge.dat
-  [1,16,0,0,0,0,1,0,4,0,0,0,0,4, ldraw_lib__4_4edge()],
+  [1,16,0,0,0,0,1,0,4,0,0,0,0,4, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 0 0 0 1 0 4 0 0 0 0 4 4-4ring1.dat
-  [1,16,0,0,0,0,1,0,4,0,0,0,0,4, ldraw_lib__4_4ring1()],
+  [1,16,0,0,0,0,1,0,4,0,0,0,0,4, ldraw_lib__4_4ring1(realsolid)],
 // 1 16 0 0 0 0 1 0 8 0 0 0 0 8 4-4edge.dat
-  [1,16,0,0,0,0,1,0,8,0,0,0,0,8, ldraw_lib__4_4edge()],
+  [1,16,0,0,0,0,1,0,8,0,0,0,0,8, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 0 0 0 -1 0 1 0 0 0 0 1 confric4.dat
-  [1,16,0,0,0,0,-1,0,1,0,0,0,0,1, ldraw_lib__confric4()],
+  [1,16,0,0,0,0,-1,0,1,0,0,0,0,1, ldraw_lib__confric4(realsolid)],
 ];
 module ldraw_lib__6628(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6628(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6628(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6628(line=0.2);

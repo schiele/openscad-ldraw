@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4disc.scad>
 use <s/60748s01.scad>
 use <../p/stud4.scad>
-function ldraw_lib__60748() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__60748(realsolid=false) = [
 // 0 Minifig Helmet Cap
 // 0 Name: 60748.dat
 // 0 Author: Andy Westrate [westrate]
@@ -23,13 +24,13 @@ function ldraw_lib__60748() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\60748s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__60748s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__60748s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\60748s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__60748s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__60748s01(realsolid)],
 // 1 16 0 -4 0 1 0 0 0 -1 0 0 0 1 stud4.dat
-  [1,16,0,-4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4()],
+  [1,16,0,-4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4(realsolid)],
 // 1 16 0 -4 0 6 0 0 0 -1 0 0 0 -6 4-4disc.dat
-  [1,16,0,-4,0,6,0,0,0,-1,0,0,0,-6, ldraw_lib__4_4disc()],
+  [1,16,0,-4,0,6,0,0,0,-1,0,0,0,-6, ldraw_lib__4_4disc(realsolid)],
 // 0 //
 // 2 24 0 5.95 -16.57 0 5.95 -17.86
   [2,24,0,5.95,-16.57,0,5.95,-17.86],
@@ -67,5 +68,5 @@ function ldraw_lib__60748() = [
   [5,24,-9.39,-1.08,-15.03,-9.41,-1.07,-11.64,-9.95,-0.77,-11.31,-8.64,-1.08,-15.6],
 ];
 module ldraw_lib__60748(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__60748(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__60748(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__60748(line=0.2);

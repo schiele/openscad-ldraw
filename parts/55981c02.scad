@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <35578.scad>
 use <55981.scad>
-function ldraw_lib__55981c02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__55981c02(realsolid=false) = [
 // 0 Wheel Rim 14 x 18 with Holes on Both Sides with Tyre 14/ 70 x 17
 // 0 Name: 55981c02.dat
 // 0 Author: Steffen [Steffen]
@@ -16,10 +17,10 @@ function ldraw_lib__55981c02() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 55981.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__55981()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__55981(realsolid)],
 // 1 256 0 0 0 1 0 0 0 1 0 0 0 1 35578.dat
-  [1,256,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__35578()],
+  [1,256,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__35578(realsolid)],
 ];
 module ldraw_lib__55981c02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__55981c02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__55981c02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__55981c02(line=0.2);

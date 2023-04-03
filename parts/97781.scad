@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/97781s01.scad>
-function ldraw_lib__97781() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__97781(realsolid=false) = [
 // 0 Figure Friends Cutlery Fork
 // 0 Name: 97781.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -22,7 +23,7 @@ function ldraw_lib__97781() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\97781s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__97781s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__97781s01(realsolid)],
 // 3 16 -3.12 -12.269 2.063 -2.625 -8.75 1.675 -3.045 -12.106 -2.636
   [3,16,-3.12,-12.269,2.063,-2.625,-8.75,1.675,-3.045,-12.106,-2.636],
 // 3 16 -3.045 -12.106 -2.636 -2.625 -8.75 1.675 -2.625 -8.75 -2.825
@@ -635,5 +636,5 @@ function ldraw_lib__97781() = [
   [5,24,1.249,-20.71,3.575,-1.249,-20.71,3.575,-1.25,-24.809,3.227,1.25,-18.73,3.494],
 ];
 module ldraw_lib__97781(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__97781(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__97781(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__97781(line=0.2);

@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__99243p01s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__99243p01s01(realsolid=false) = [
 // 0 ~Minifig Headdress Aztec Bird with Eyes and Cheeks Pattern - Half
 // 0 Name: s\99243p01s01.dat
 // 0 Author: Christian Neumann [Wesley]
@@ -720,5 +721,5 @@ function ldraw_lib__s__99243p01s01() = [
   [5,24,19.771,17.376,11.61,20.488,20.776,8.21,20.027,19.615,10.176,19.353,13.746,12.192],
 ];
 module ldraw_lib__s__99243p01s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__99243p01s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__99243p01s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__99243p01s01(line=0.2);

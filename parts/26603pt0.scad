@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/26603s01.scad>
-function ldraw_lib__26603pt0() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__26603pt0(realsolid=false) = [
 // 0 Tile  2 x  3 with "TITANIC" Pattern
 // 0 Name: 26603pt0.dat
 // 0 Author: Jens Brühl [jb70]
@@ -17,7 +18,7 @@ function ldraw_lib__26603pt0() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\26603s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__26603s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__26603s01(realsolid)],
 // 0 // "T"
 // 3 82 -28 0 18 -28 0 16 -25 0 16
   [3,82,-28,0,18,-28,0,16,-25,0,16],
@@ -224,5 +225,5 @@ function ldraw_lib__26603pt0() = [
   [4,16,21.879,0,10.879,22.852,0,10.228,24,0,10,25.148,0,10.228],
 ];
 module ldraw_lib__26603pt0(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__26603pt0(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__26603pt0(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__26603pt0(line=0.2);

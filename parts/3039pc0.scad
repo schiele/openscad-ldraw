@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3039s01.scad>
-function ldraw_lib__3039pc0() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3039pc0(realsolid=false) = [
 // 0 Slope Brick 45  2 x  2 with Red Square and Circuitry Pattern
 // 0 Name: 3039pc0.dat
 // 0 Author: Daniel Goerner [TK-949]
@@ -15,7 +16,7 @@ function ldraw_lib__3039pc0() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3039s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3039s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3039s01(realsolid)],
 // 4 4 6.22 7.187 -17.187 6.52 5.646 -15.645 6.14 5.391 -15.391 5.44 5.653 -15.653
   [4,4,6.22,7.187,-17.187,6.52,5.646,-15.645,6.14,5.391,-15.391,5.44,5.653,-15.653],
 // 4 4 6.79 5.532 -15.532 6.52 5.646 -15.645 6.22 7.187 -17.187 6.69 7.046 -17.046
@@ -2486,5 +2487,5 @@ function ldraw_lib__3039pc0() = [
   [3,16,-19.74,12.632,-22.632,-19.74,8.594,-18.594,-20,20,-30],
 ];
 module ldraw_lib__3039pc0(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3039pc0(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3039pc0(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3039pc0(line=0.2);

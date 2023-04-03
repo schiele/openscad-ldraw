@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__2552p01s09() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__2552p01s09(realsolid=false) = [
 // 0 ~Baseplate 32 x 32 Raised with Ramp and Pit with Ice Pattern - Pit Back
 // 0 Name: s\2552p01s09.dat
 // 0 Author: Mikkel Bech Jensen [gaia]
@@ -293,5 +294,5 @@ function ldraw_lib__s__2552p01s09() = [
   [4,1,-170,-136,0,-150.362,-69.229,0,-140.9,-64.9,0,-141.7,-100.5,0],
 ];
 module ldraw_lib__s__2552p01s09(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__2552p01s09(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__2552p01s09(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__2552p01s09(line=0.2);

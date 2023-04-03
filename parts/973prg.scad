@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/1-4cyli.scad>
 use <s/973s01.scad>
-function ldraw_lib__973prg() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__973prg(realsolid=false) = [
 // 0 Minifig Torso SW Belt Pockets and Necklace Blissl Flute Pattern
 // 0 Name: 973prg.dat
 // 0 Author: Stan Isachenko [angmarec]
@@ -18,9 +19,9 @@ function ldraw_lib__973prg() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01(realsolid)],
 // 1 16 0 -4 0 4.243 0 -4.243 0 -8 0 -4.243 0 -4.243 1-4cyli.dat
-  [1,16,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli()],
+  [1,16,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli(realsolid)],
 // 0 // front
 // 4 28 -11.625 9.719 -10 -11.64 7.724 -10 -11.68 6.196 -10 -11.85 3.23 -10
   [4,28,-11.625,9.719,-10,-11.64,7.724,-10,-11.68,6.196,-10,-11.85,3.23,-10],
@@ -2306,5 +2307,5 @@ function ldraw_lib__973prg() = [
   [3,16,-15.586,25.595,10,-19,29,10,-15.568,25.319,10],
 ];
 module ldraw_lib__973prg(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__973prg(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__973prg(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__973prg(line=0.2);

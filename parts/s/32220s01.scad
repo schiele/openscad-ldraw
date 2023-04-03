@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__32220s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__32220s01(realsolid=false) = [
 // 0 ~Wheel 16 x 68 Znap Propeller Blade
 // 0 Name: s\32220s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -547,5 +548,5 @@ function ldraw_lib__s__32220s01() = [
   [2,24,17.622,-5.146,59.351,18.017,-4.287,59.217],
 ];
 module ldraw_lib__s__32220s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__32220s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__32220s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__32220s01(line=0.2);

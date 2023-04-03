@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <88112.scad>
-function ldraw_lib__u9149() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__u9149(realsolid=false) = [
 // 0 ~Moved to 88112
 // 0 Name: u9149.dat
 // 0 Author: [PTadmin]
@@ -16,8 +17,8 @@ function ldraw_lib__u9149() = [
 // 
 // 0 // ~Electric Power Functions E-Motor Back Case
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 88112.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__88112()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__88112(realsolid)],
 ];
 module ldraw_lib__u9149(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__u9149(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__u9149(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__u9149(line=0.2);

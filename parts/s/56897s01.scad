@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__56897s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__56897s01(realsolid=false) = [
 // 0 ~Tyre 11/ 65 x 18 Offset - Adapter Ring Quarter
 // 0 Name: s\56897s01.dat
 // 0 Author: Joerg Sommerer [Brickaneer]
@@ -29,5 +30,5 @@ function ldraw_lib__s__56897s01() = [
   [4,16,24.9453,-10.3329,0,27,0,0,32.9987,0.288,0,32.5474,-5.4466,0],
 ];
 module ldraw_lib__s__56897s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__56897s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__56897s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__56897s01(line=0.2);

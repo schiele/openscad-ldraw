@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/31111s01.scad>
-function ldraw_lib__31111() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__31111(realsolid=false) = [
 // 0 Duplo Brick  2 x  4 x  2
 // 0 Name: 31111.dat
 // 0 Author: Tony Hafner [hafhead]
@@ -23,10 +24,10 @@ function ldraw_lib__31111() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\31111s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__31111s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__31111s01(realsolid)],
 // 4 16 80 0 -40 -80 0 -40 -80 96 -40 80 96 -40
   [4,16,80,0,-40,-80,0,-40,-80,96,-40,80,96,-40],
 ];
 module ldraw_lib__31111(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__31111(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__31111(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__31111(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/48/4-4cylc3.scad>
-function ldraw_lib__6259759f() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6259759f(realsolid=false) = [
 // 0 Sticker  1.8 x  1.8 Round with Magenta Star
 // 0 Name: 6259759f.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -17,7 +18,7 @@ function ldraw_lib__6259759f() = [
 // 
 // 
 // 1 16 0 0 0 18 0 0 0 -0.25 0 0 0 18 48\4-4cylc3.dat
-  [1,16,0,0,0,18,0,0,0,-0.25,0,0,0,18, ldraw_lib__48__4_4cylc3()],
+  [1,16,0,0,0,18,0,0,0,-0.25,0,0,0,18, ldraw_lib__48__4_4cylc3(realsolid)],
 // 
 // 4 353 -8.56 -.25 10.3 -7.96 -.25 10.95 -10.9584 -.25 14.2812 -12.7278 -.25 12.7278
   [4,353,-8.56,-.25,10.3,-7.96,-.25,10.95,-10.9584,-.25,14.2812,-12.7278,-.25,12.7278],
@@ -179,5 +180,5 @@ function ldraw_lib__6259759f() = [
   [4,26,.81,-.25,7.9,.16,-.25,7.66,-7.24,-.25,2.52,7.24,-.25,2.52],
 ];
 module ldraw_lib__6259759f(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6259759f(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6259759f(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6259759f(line=0.2);

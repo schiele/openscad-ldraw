@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/2-4cyli.scad>
-function ldraw_lib__s__11216s04() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__11216s04(realsolid=false) = [
 // 0 ~Bar Grille 13 x 17 with Studs and Tips - Edge Tip
 // 0 Name: s\11216s04.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -16,7 +17,7 @@ function ldraw_lib__s__11216s04() = [
 // 
 // 0 // Primitives
 // 1 16 0 0 0 0 0 -4 4 0 0 0 -9.4648 0 2-4cyli.dat
-  [1,16,0,0,0,0,0,-4,4,0,0,0,-9.4648,0, ldraw_lib__2_4cyli()],
+  [1,16,0,0,0,0,0,-4,4,0,0,0,-9.4648,0, ldraw_lib__2_4cyli(realsolid)],
 // 0 // Faces
 // 3 16 0 4 0 3 4 0 0 4 -9.4648
   [3,16,0,4,0,3,4,0,0,4,-9.4648],
@@ -418,5 +419,5 @@ function ldraw_lib__s__11216s04() = [
   [5,24,-.1532,3.6467,-11.5505,-1.7572,3.1344,-11.7572,-1.5308,3.6956,-10,0,3.47,-11.8683],
 ];
 module ldraw_lib__s__11216s04(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__11216s04(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__11216s04(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__11216s04(line=0.2);

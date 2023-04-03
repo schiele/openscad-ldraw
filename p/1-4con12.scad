@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__1_4con12() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__1_4con12(realsolid=false) = [
 // 0 Cone 12 x 0.25
 // 0 Name: 1-4con12.dat
 // 0 Author: Franklin W. Cain [fwcain]
@@ -36,5 +37,5 @@ function ldraw_lib__1_4con12() = [
 // 
 ];
 module ldraw_lib__1_4con12(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__1_4con12(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__1_4con12(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__1_4con12(line=0.2);

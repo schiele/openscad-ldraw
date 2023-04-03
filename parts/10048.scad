@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/stud16.scad>
-function ldraw_lib__10048() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__10048(realsolid=false) = [
 // 0 Minifig Hair Tousled
 // 0 Name: 10048.dat
 // 0 Author: Stan Isachenko [angmarec]
@@ -21,7 +22,7 @@ function ldraw_lib__10048() = [
 // 
 // 
 // 1 16 0 -5 0 1 0 0 0 -1.25 0 0 0 1 stud16.dat
-  [1,16,0,-5,0,1,0,0,0,-1.25,0,0,0,1, ldraw_lib__stud16()],
+  [1,16,0,-5,0,1,0,0,0,-1.25,0,0,0,1, ldraw_lib__stud16(realsolid)],
 // 4 16 7.36 -5 5.131 8.615 -2.653 6.009 10.153 -2.653 2.712 8.673 -5 2.315
   [4,16,7.36,-5,5.131,8.615,-2.653,6.009,10.153,-2.653,2.712,8.673,-5,2.315],
 // 4 16 5.164 -5 7.327 6.042 -2.653 8.582 8.615 -2.653 6.009 7.36 -5 5.131
@@ -7808,5 +7809,5 @@ function ldraw_lib__10048() = [
   [2,24,-8.758,5.432,-9.566,-9.544,7.335,-8.91],
 ];
 module ldraw_lib__10048(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__10048(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__10048(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__10048(line=0.2);

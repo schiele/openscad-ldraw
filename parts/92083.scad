@@ -6,7 +6,8 @@ use <../p/2-4cyli.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4edge.scad>
 use <../p/stud4.scad>
-function ldraw_lib__92083() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__92083(realsolid=false) = [
 // 0 Minifig Hair Female Long Straight with Left Side Parting
 // 0 Name: 92083.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -26,27 +27,27 @@ function ldraw_lib__92083() = [
 // 
 // 
 // 1 16 0 -5 0 1 0 0 0 -1.25 0 0 0 1 stud4.dat
-  [1,16,0,-5,0,1,0,0,0,-1.25,0,0,0,1, ldraw_lib__stud4()],
+  [1,16,0,-5,0,1,0,0,0,-1.25,0,0,0,1, ldraw_lib__stud4(realsolid)],
 // 1 16 0 -5 0 8.66667 0 0 0 -1 0 0 0 8.66667 4-4disc.dat
-  [1,16,0,-5,0,8.66667,0,0,0,-1,0,0,0,8.66667, ldraw_lib__4_4disc()],
+  [1,16,0,-5,0,8.66667,0,0,0,-1,0,0,0,8.66667, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 -5 0 8.66667 0 0 0 -1 0 0 0 8.66667 4-4edge.dat
-  [1,16,0,-5,0,8.66667,0,0,0,-1,0,0,0,8.66667, ldraw_lib__4_4edge()],
+  [1,16,0,-5,0,8.66667,0,0,0,-1,0,0,0,8.66667, ldraw_lib__4_4edge(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 3 0 4.00348 0 -1.65829 0 -8 0 1.65829 0 4.00348 2-4con2.dat
-  [1,16,0,3,0,4.00348,0,-1.65829,0,-8,0,1.65829,0,4.00348, ldraw_lib__2_4con2()],
+  [1,16,0,3,0,4.00348,0,-1.65829,0,-8,0,1.65829,0,4.00348, ldraw_lib__2_4con2(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 3 0 4.00348 0 1.65829 0 -8 0 1.65829 0 -4.00348 1-8con2.dat
-  [1,16,0,3,0,4.00348,0,1.65829,0,-8,0,1.65829,0,-4.00348, ldraw_lib__1_8con2()],
+  [1,16,0,3,0,4.00348,0,1.65829,0,-8,0,1.65829,0,-4.00348, ldraw_lib__1_8con2(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 3 0 12.01043 0 -4.97488 0 19.5 0 4.97488 0 12.01043 2-4cyli.dat
-  [1,16,0,3,0,12.01043,0,-4.97488,0,19.5,0,4.97488,0,12.01043, ldraw_lib__2_4cyli()],
+  [1,16,0,3,0,12.01043,0,-4.97488,0,19.5,0,4.97488,0,12.01043, ldraw_lib__2_4cyli(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 3 0 12.01043 0 4.97488 0 19.5 0 4.97488 0 -12.01043 1-8cyli.dat
-  [1,16,0,3,0,12.01043,0,4.97488,0,19.5,0,4.97488,0,-12.01043, ldraw_lib__1_8cyli()],
+  [1,16,0,3,0,12.01043,0,4.97488,0,19.5,0,4.97488,0,-12.01043, ldraw_lib__1_8cyli(realsolid)],
 // 
 // 3 16 -7.816 23 10.511 -8.844 28.067 11.32 -4.653 28.206 13.093
   [3,16,-7.816,23,10.511,-8.844,28.067,11.32,-4.653,28.206,13.093],
@@ -6879,5 +6880,5 @@ function ldraw_lib__92083() = [
   [5,24,-9.1927,3,9.1925,-4.9749,3,12.0104,-3.3166,-5,8.007,-4.9749,22.5,12.0104],
 ];
 module ldraw_lib__92083(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__92083(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__92083(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__92083(line=0.2);

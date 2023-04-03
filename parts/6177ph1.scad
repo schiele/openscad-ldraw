@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/6177s01.scad>
 use <../p/stug-2x2.scad>
-function ldraw_lib__6177ph1() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6177ph1(realsolid=false) = [
 // 0 Plate  8 x  8 Round with  2 x  2 Centre Studs with HP Hogwarts Houses Pattern
 // 0 Name: 6177ph1.dat
 // 0 Author: Howard Lande [HowardLande]
@@ -18,10 +19,10 @@ function ldraw_lib__6177ph1() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\6177s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6177s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6177s01(realsolid)],
 // 0 // top
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 stug-2x2.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_2x2()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_2x2(realsolid)],
 // 4 0 -6.5 0 27.1 -6.7288 0 25.1134 -3.393 0 25.7764 -5 0 28.6
   [4,0,-6.5,0,27.1,-6.7288,0,25.1134,-3.393,0,25.7764,-5,0,28.6],
 // 4 0 -3 0 29.8 -5 0 28.6 -3.393 0 25.7764 0 0 26
@@ -5908,5 +5909,5 @@ function ldraw_lib__6177ph1() = [
   [3,1,-9.918,0,71.3,-19.042,0,70.857,-7.6,0,63.2],
 ];
 module ldraw_lib__6177ph1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6177ph1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6177ph1(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6177ph1(line=0.2);

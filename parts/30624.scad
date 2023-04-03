@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4edge.scad>
 use <../p/clh12.scad>
 use <../p/connect6.scad>
-function ldraw_lib__30624() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__30624(realsolid=false) = [
 // 0 Technic Connector  3 x  1 x  4 with Two Pins and Click Hinge
 // 0 Name: 30624.dat
 // 0 Author: Michael Heidemann [mikeheide]
@@ -19,15 +20,15 @@ function ldraw_lib__30624() = [
 // 4 16 0 40 -10 0 40 10 0 -40 10 0 -40 -10
   [4,16,0,40,-10,0,40,10,0,-40,10,0,-40,-10],
 // 1 16 -24 0 0 0 1 0 1 0 0 0 0 -1 clh12.dat
-  [1,16,-24,0,0,0,1,0,1,0,0,0,0,-1, ldraw_lib__clh12()],
+  [1,16,-24,0,0,0,1,0,1,0,0,0,0,-1, ldraw_lib__clh12(realsolid)],
 // 1 16 0 -20 0 0 -1 0 0 0 -1 1 0 0 connect6.dat
-  [1,16,0,-20,0,0,-1,0,0,0,-1,1,0,0, ldraw_lib__connect6()],
+  [1,16,0,-20,0,0,-1,0,0,0,-1,1,0,0, ldraw_lib__connect6(realsolid)],
 // 1 16 0 20 0 0 -1 0 0 0 -1 1 0 0 connect6.dat
-  [1,16,0,20,0,0,-1,0,0,0,-1,1,0,0, ldraw_lib__connect6()],
+  [1,16,0,20,0,0,-1,0,0,0,-1,1,0,0, ldraw_lib__connect6(realsolid)],
 // 1 16 0 20 0 0 -1 0 0 0 -8 8 0 0 4-4edge.dat
-  [1,16,0,20,0,0,-1,0,0,0,-8,8,0,0, ldraw_lib__4_4edge()],
+  [1,16,0,20,0,0,-1,0,0,0,-8,8,0,0, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 -20 0 0 -1 0 0 0 -8 8 0 0 4-4edge.dat
-  [1,16,0,-20,0,0,-1,0,0,0,-8,8,0,0, ldraw_lib__4_4edge()],
+  [1,16,0,-20,0,0,-1,0,0,0,-8,8,0,0, ldraw_lib__4_4edge(realsolid)],
 // 2 24 0 40 -10 0 -40 -10
   [2,24,0,40,-10,0,-40,-10],
 // 2 24 0 40 10 0 -40 10
@@ -225,5 +226,5 @@ function ldraw_lib__30624() = [
 // 0 //
 ];
 module ldraw_lib__30624(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__30624(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__30624(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__30624(line=0.2);

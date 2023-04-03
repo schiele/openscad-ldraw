@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__197915e() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__197915e(realsolid=false) = [
 // 0 Sticker  2.2 x  1.6 with White Number "1"
 // 0 Name: 197915e.dat
 // 0 Author: N. W. Perry [Plastikean]
@@ -17,7 +18,7 @@ function ldraw_lib__197915e() = [
 // 
 // 
 // 1 16 0 -0.25 0 16 0 0 0 0.25 0 0 0 22.371 box5-12.dat
-  [1,16,0,-0.25,0,16,0,0,0,0.25,0,0,0,22.371, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,16,0,0,0,0.25,0,0,0,22.371, ldraw_lib__box5_12(realsolid)],
 // 
 // 4 15 -2.248 -0.25 2.912 -5.935 -0.25 12.274 -7.008 -0.25 12.047 -11.503 -0.25 2.912
   [4,15,-2.248,-0.25,2.912,-5.935,-0.25,12.274,-7.008,-0.25,12.047,-11.503,-0.25,2.912],
@@ -71,5 +72,5 @@ function ldraw_lib__197915e() = [
   [3,16,-16,-0.25,22.371,-11.503,-0.25,11.782,0.397,-0.25,20.122],
 ];
 module ldraw_lib__197915e(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__197915e(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__197915e(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__197915e(line=0.2);

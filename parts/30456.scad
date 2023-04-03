@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4edge.scad>
 use <../p/4-8sphe.scad>
-function ldraw_lib__30456() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__30456(realsolid=false) = [
 // 0 Animal Dinosaur Tail
 // 0 Name: 30456.dat
 // 0 Author: Stan Isachenko [angmarec]
@@ -21,17 +22,17 @@ function ldraw_lib__30456() = [
 // 
 // 
 // 1 16 0 0 0 3.5 0 0 0 -0.625 0 0 0 3.5 4-8sphe.dat
-  [1,16,0,0,0,3.5,0,0,0,-0.625,0,0,0,3.5, ldraw_lib__4_8sphe()],
+  [1,16,0,0,0,3.5,0,0,0,-0.625,0,0,0,3.5, ldraw_lib__4_8sphe(realsolid)],
 // 1 16 0 0 0 3.5 0 0 0 1 0 0 0 3.5 4-4edge.dat
-  [1,16,0,0,0,3.5,0,0,0,1,0,0,0,3.5, ldraw_lib__4_4edge()],
+  [1,16,0,0,0,3.5,0,0,0,1,0,0,0,3.5, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 3.75 0 3.5 0 0 0 1 0 0 0 3.5 4-4edge.dat
-  [1,16,0,3.75,0,3.5,0,0,0,1,0,0,0,3.5, ldraw_lib__4_4edge()],
+  [1,16,0,3.75,0,3.5,0,0,0,1,0,0,0,3.5, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 3.75 0 3.5 0 0 0 20 0 0 0 3.5 4-4cyli.dat
-  [1,16,0,3.75,0,3.5,0,0,0,20,0,0,0,3.5, ldraw_lib__4_4cyli()],
+  [1,16,0,3.75,0,3.5,0,0,0,20,0,0,0,3.5, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 23.75 0 3.5 0 0 0 0.625 0 0 0 3.5 4-8sphe.dat
-  [1,16,0,23.75,0,3.5,0,0,0,0.625,0,0,0,3.5, ldraw_lib__4_8sphe()],
+  [1,16,0,23.75,0,3.5,0,0,0,0.625,0,0,0,3.5, ldraw_lib__4_8sphe(realsolid)],
 // 1 16 0 23.75 0 3.5 0 0 0 1 0 0 0 3.5 4-4edge.dat
-  [1,16,0,23.75,0,3.5,0,0,0,1,0,0,0,3.5, ldraw_lib__4_4edge()],
+  [1,16,0,23.75,0,3.5,0,0,0,1,0,0,0,3.5, ldraw_lib__4_4edge(realsolid)],
 // 3 16 -1 3.75 10 -1 15.25 3.305 -1 3.75 3.305
   [3,16,-1,3.75,10,-1,15.25,3.305,-1,3.75,3.305],
 // 3 16 -10 3.75 -1 -3.305 15.25 -1 -3.305 3.75 -1
@@ -2063,5 +2064,5 @@ function ldraw_lib__30456() = [
   [5,24,3.851,1.003,-13.012,-3.85,1.003,-13.012,-0.003,1.338,-13.593,7.424,0,-11.275],
 ];
 module ldraw_lib__30456(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__30456(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__30456(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__30456(line=0.2);

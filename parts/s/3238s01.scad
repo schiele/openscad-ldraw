@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__3238s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__3238s01(realsolid=false) = [
 // 0 ~Sticker Box Shield Triangular without Top Surface
 // 0 Name: s\3238s01.dat
 // 0 Author: Mark Chittenden [mdublade]
@@ -68,5 +69,5 @@ function ldraw_lib__s__3238s01() = [
   [5,24,8.76,0,-24.57,8.76,-.25,-24.57,14.93,0,-15.68,0,0,-32.37],
 ];
 module ldraw_lib__s__3238s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__3238s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__3238s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__3238s01(line=0.2);

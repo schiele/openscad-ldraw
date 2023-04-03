@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/4-4disc.scad>
-function ldraw_lib__s__2586p4bs01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__2586p4bs01(realsolid=false) = [
 // 0 ~Minifig Shield Ovoid with Dragon Pattern - Dragon Background and Border
 // 0 Name: s\2586p4bs01.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -264,7 +265,7 @@ function ldraw_lib__s__2586p4bs01() = [
 // 
 // 0 // background
 // 1 14 -3 -20.8 0 1.3 0 0 0 0 1.3 0 1 0 4-4disc.dat
-  [1,14,-3,-20.8,0,1.3,0,0,0,0,1.3,0,1,0, ldraw_lib__4_4disc()],
+  [1,14,-3,-20.8,0,1.3,0,0,0,0,1.3,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 3 14 6.3 -10 0 4.3 -8.8 0 4.17 -8 0
   [3,14,6.3,-10,0,4.3,-8.8,0,4.17,-8,0],
 // 3 14 -0.974 -1.397 0 -0.368 -0.574 0 -0.093 -1.309 0
@@ -647,5 +648,5 @@ function ldraw_lib__s__2586p4bs01() = [
   [4,16,20,-14.5,0,18.478,-22.154,0,16.558,-20.767,0,17.922,-13.592,0],
 ];
 module ldraw_lib__s__2586p4bs01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__2586p4bs01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__2586p4bs01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__2586p4bs01(line=0.2);

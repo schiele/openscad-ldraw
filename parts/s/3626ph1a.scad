@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/t04o6250.scad>
-function ldraw_lib__s__3626ph1a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__3626ph1a(realsolid=false) = [
 // 0 ~Minifig Head with Harry Potter Pattern - Face
 // 0 Name: s\3626ph1a.dat
 // 0 Author: Andy Westrate [westrate]
@@ -16,11 +17,11 @@ function ldraw_lib__s__3626ph1a() = [
 // 
 // 
 // 1 16 0 4 0 8 0 0 0 -6.4 0 0 0 -8 t04o6250.dat
-  [1,16,0,4,0,8,0,0,0,-6.4,0,0,0,-8, ldraw_lib__t04o6250()],
+  [1,16,0,4,0,8,0,0,0,-6.4,0,0,0,-8, ldraw_lib__t04o6250(realsolid)],
 // 1 16 0 17 0 0 0 8 0 6.4 0 -8 0 0 t04o6250.dat
-  [1,16,0,17,0,0,0,8,0,6.4,0,-8,0,0, ldraw_lib__t04o6250()],
+  [1,16,0,17,0,0,0,8,0,6.4,0,-8,0,0, ldraw_lib__t04o6250(realsolid)],
 // 1 16 0 17 0 -8 0 0 0 6.4 0 0 0 -8 t04o6250.dat
-  [1,16,0,17,0,-8,0,0,0,6.4,0,0,0,-8, ldraw_lib__t04o6250()],
+  [1,16,0,17,0,-8,0,0,0,6.4,0,0,0,-8, ldraw_lib__t04o6250(realsolid)],
 // 4 16 -3.7936 0.3046 -9.1592 0 0.3046 -9.9136 0 0 -8 -3.0616 0 -7.3912
   [4,16,-3.7936,0.3046,-9.1592,0,0.3046,-9.9136,0,0,-8,-3.0616,0,-7.3912],
 // 4 16 -4.4144 1.1718 -10.6576 0 1.1718 -11.5352 0 0.3046 -9.9136 -3.7936 0.3046 -9.1592
@@ -557,5 +558,5 @@ function ldraw_lib__s__3626ph1a() = [
   [5,24,-12.6192,2.4691,0,-13,4,0,-12.6192,2.4691,5.2272,-11.6592,2.4691,-4.8296],
 ];
 module ldraw_lib__s__3626ph1a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__3626ph1a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__3626ph1a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__3626ph1a(line=0.2);

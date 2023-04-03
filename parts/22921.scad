@@ -9,7 +9,8 @@ use <../p/4-4ring1.scad>
 use <../p/4-4ring2.scad>
 use <../p/box4o8a.scad>
 use <../p/cylj4x6.scad>
-function ldraw_lib__22921() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__22921(realsolid=false) = [
 // 0 Minifig Tool Hose Nozzle with Handle at Bottom and Top
 // 0 Name: 22921.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -26,49 +27,49 @@ function ldraw_lib__22921() = [
 // 
 // 
 // 1 16 0 -14 -26 -6 0 0 0 0 6 0 -4 0 4-4cylo.dat
-  [1,16,0,-14,-26,-6,0,0,0,0,6,0,-4,0, ldraw_lib__4_4cylo()],
+  [1,16,0,-14,-26,-6,0,0,0,0,6,0,-4,0, ldraw_lib__4_4cylo(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -14 -30 -1 0 0 0 0 1 0 40 0 4-4cylo.dat
-  [1,16,0,-14,-30,-1,0,0,0,0,1,0,40,0, ldraw_lib__4_4cylo()],
+  [1,16,0,-14,-30,-1,0,0,0,0,1,0,40,0, ldraw_lib__4_4cylo(realsolid)],
 // 1 16 0 -14 -30 -1 0 0 0 0 1 0 1 0 4-4ring1.dat
-  [1,16,0,-14,-30,-1,0,0,0,0,1,0,1,0, ldraw_lib__4_4ring1()],
+  [1,16,0,-14,-30,-1,0,0,0,0,1,0,1,0, ldraw_lib__4_4ring1(realsolid)],
 // 1 16 0 -14 -30 -2 0 0 0 0 2 0 1 0 4-4ring1.dat
-  [1,16,0,-14,-30,-2,0,0,0,0,2,0,1,0, ldraw_lib__4_4ring1()],
+  [1,16,0,-14,-30,-2,0,0,0,0,2,0,1,0, ldraw_lib__4_4ring1(realsolid)],
 // 1 16 0 -14 -30 -2 0 0 0 0 2 0 1 0 4-4ring2.dat
-  [1,16,0,-14,-30,-2,0,0,0,0,2,0,1,0, ldraw_lib__4_4ring2()],
+  [1,16,0,-14,-30,-2,0,0,0,0,2,0,1,0, ldraw_lib__4_4ring2(realsolid)],
 // 1 16 0 -14 10 -1 0 0 0 0 1 0 -1 0 4-4ring1.dat
-  [1,16,0,-14,10,-1,0,0,0,0,1,0,-1,0, ldraw_lib__4_4ring1()],
+  [1,16,0,-14,10,-1,0,0,0,0,1,0,-1,0, ldraw_lib__4_4ring1(realsolid)],
 // 1 16 0 -14 10 -2 0 0 0 0 2 0 -1 0 4-4ring1.dat
-  [1,16,0,-14,10,-2,0,0,0,0,2,0,-1,0, ldraw_lib__4_4ring1()],
+  [1,16,0,-14,10,-2,0,0,0,0,2,0,-1,0, ldraw_lib__4_4ring1(realsolid)],
 // 1 16 0 -14 10 -2 0 0 0 0 2 0 -1 0 4-4ring2.dat
-  [1,16,0,-14,10,-2,0,0,0,0,2,0,-1,0, ldraw_lib__4_4ring2()],
+  [1,16,0,-14,10,-2,0,0,0,0,2,0,-1,0, ldraw_lib__4_4ring2(realsolid)],
 // 1 16 0 -14 -10 -6 0 0 0 0 6 0 20 0 4-4cylo.dat
-  [1,16,0,-14,-10,-6,0,0,0,0,6,0,20,0, ldraw_lib__4_4cylo()],
+  [1,16,0,-14,-10,-6,0,0,0,0,6,0,20,0, ldraw_lib__4_4cylo(realsolid)],
 // 1 16 0 -14 -10 -2 0 0 0 0 2 0 -16 0 4-4con2.dat
-  [1,16,0,-14,-10,-2,0,0,0,0,2,0,-16,0, ldraw_lib__4_4con2()],
+  [1,16,0,-14,-10,-2,0,0,0,0,2,0,-16,0, ldraw_lib__4_4con2(realsolid)],
 // 1 16 0 -14 -26 -2 0 0 0 0 2 0 -1 0 4-4ring2.dat
-  [1,16,0,-14,-26,-2,0,0,0,0,2,0,-1,0, ldraw_lib__4_4ring2()],
+  [1,16,0,-14,-26,-2,0,0,0,0,2,0,-1,0, ldraw_lib__4_4ring2(realsolid)],
 // 1 16 0 -14 -26 -4 0 0 0 0 4 0 -1 0 4-4edge.dat
-  [1,16,0,-14,-26,-4,0,0,0,0,4,0,-1,0, ldraw_lib__4_4edge()],
+  [1,16,0,-14,-26,-4,0,0,0,0,4,0,-1,0, ldraw_lib__4_4edge(realsolid)],
 // 
 // 0 // Bottom Grip
 // 1 16 0 8 0 -4 0 0 0 -16 0 0 0 4 4-4cyli.dat
-  [1,16,0,8,0,-4,0,0,0,-16,0,0,0,4, ldraw_lib__4_4cyli()],
+  [1,16,0,8,0,-4,0,0,0,-16,0,0,0,4, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 8 0 -4 0 0 0 1 0 0 0 4 4-4edge.dat
-  [1,16,0,8,0,-4,0,0,0,1,0,0,0,4, ldraw_lib__4_4edge()],
+  [1,16,0,8,0,-4,0,0,0,1,0,0,0,4, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 8 0 -4 0 0 0 -1 0 0 0 4 4-4disc.dat
-  [1,16,0,8,0,-4,0,0,0,-1,0,0,0,4, ldraw_lib__4_4disc()],
+  [1,16,0,8,0,-4,0,0,0,-1,0,0,0,4, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 -8 0 -1 0 0 0 1 0 0 0 1 cylj4x6.dat
-  [1,16,0,-8,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__cylj4x6()],
+  [1,16,0,-8,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__cylj4x6(realsolid)],
 // 
 // 0 // Top Grip
 // 1 16 -10 -30 0 0 20 0 -4 0 0 0 0 4 4-4cylc.dat
-  [1,16,-10,-30,0,0,20,0,-4,0,0,0,0,4, ldraw_lib__4_4cylc()],
+  [1,16,-10,-30,0,0,20,0,-4,0,0,0,0,4, ldraw_lib__4_4cylc(realsolid)],
 // 1 16 10 -30 0 0 -1 0 -4 0 0 0 0 4 4-4disc.dat
-  [1,16,10,-30,0,0,-1,0,-4,0,0,0,0,4, ldraw_lib__4_4disc()],
+  [1,16,10,-30,0,0,-1,0,-4,0,0,0,0,4, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 -28.0171 -.2611 -4 0 0 0 11.89734 .26105 0 -1.56631 1.98289 box4o8a.dat
-  [1,16,0,-28.0171,-.2611,-4,0,0,0,11.89734,.26105,0,-1.56631,1.98289, ldraw_lib__box4o8a()],
+  [1,16,0,-28.0171,-.2611,-4,0,0,0,11.89734,.26105,0,-1.56631,1.98289, ldraw_lib__box4o8a(realsolid)],
 // 2 24 0 -20 .7007 2.2962 -19.5434 .6406
   [2,24,0,-20,.7007,2.2962,-19.5434,.6406],
 // 2 24 2.2962 -19.5434 -3.3939 0 -20 -3.3338
@@ -107,5 +108,5 @@ function ldraw_lib__22921() = [
   [2,24,-4,-26.3044,-1.5308,-4,-26.9021,-2.4251],
 ];
 module ldraw_lib__22921(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__22921(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__22921(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__22921(line=0.2);

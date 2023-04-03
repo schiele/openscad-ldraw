@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3623s01.scad>
-function ldraw_lib__3623pt1() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3623pt1(realsolid=false) = [
 // 0 Plate  1 x  3 with "PORSCHE" First Half Pattern
 // 0 Name: 3623pt1.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -19,7 +20,7 @@ function ldraw_lib__3623pt1() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3623s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3623s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3623s01(realsolid)],
 // 0 // Letter "P"
 // 3 16 -19.252 4.874 -10 -19.252 3.126 -10 -21 0 -10
   [3,16,-19.252,4.874,-10,-19.252,3.126,-10,-21,0,-10],
@@ -242,5 +243,5 @@ function ldraw_lib__3623pt1() = [
   [3,4,19.8397,0,-10,24.6054,0.1331,-10,25.3692,0,-10],
 ];
 module ldraw_lib__3623pt1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3623pt1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3623pt1(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3623pt1(line=0.2);

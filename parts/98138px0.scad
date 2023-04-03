@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/4-4ering.scad>
 use <s/98138s01.scad>
-function ldraw_lib__98138px0() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__98138px0(realsolid=false) = [
 // 0 Tile  1 x  1 Round with Groove with Two Orange Circles and Orange Disc Pattern
 // 0 Name: 98138px0.dat
 // 0 Author: Bertrand Lequy [Berth]
@@ -18,9 +19,9 @@ function ldraw_lib__98138px0() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\98138s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01(realsolid)],
 // 1 16 0 0 0 9 0 0 0 1 0 0 0 9 4-4ering.dat
-  [1,16,0,0,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4ering()],
+  [1,16,0,0,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4ering(realsolid)],
 // 
 // 4 25 -6.96571 0 0 -6.83186 0 1.35894 -7.66091 0 1.52385 -7.811 0 0
   [4,25,-6.96571,0,0,-6.83186,0,1.35894,-7.66091,0,1.52385,-7.811,0,0],
@@ -376,5 +377,5 @@ function ldraw_lib__98138px0() = [
   [4,16,1.97156,0,0.81665,2.093,0,0.41632,4.73119,0,0.94109,4.45669,0,1.84602],
 ];
 module ldraw_lib__98138px0(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__98138px0(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__98138px0(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__98138px0(line=0.2);

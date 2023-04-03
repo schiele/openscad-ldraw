@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box.scad>
-function ldraw_lib__430() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__430(realsolid=false) = [
 // 0 ~Train Brick  2 x  4 Holder Bottom Solid
 // 0 Name: 430.dat
 // 0 Author: Niels Karsdorp [nielsk]
@@ -17,9 +18,9 @@ function ldraw_lib__430() = [
 // 
 // 
 // 1 16 0 2 0 38 0 0 0 -2 0 0 0 18 box.dat
-  [1,16,0,2,0,38,0,0,0,-2,0,0,0,18, ldraw_lib__box()],
+  [1,16,0,2,0,38,0,0,0,-2,0,0,0,18, ldraw_lib__box(realsolid)],
 // 0 //
 ];
 module ldraw_lib__430(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__430(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__430(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__430(line=0.2);

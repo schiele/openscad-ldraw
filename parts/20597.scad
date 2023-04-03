@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/stud4o.scad>
-function ldraw_lib__20597() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__20597(realsolid=false) = [
 // 0 Minifig Hair Short Tousled with Side Part and Lock Sticking Up
 // 0 Name: 20597.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -19,7 +20,7 @@ function ldraw_lib__20597() = [
 // 
 // 
 // 1 16 0 -5 0 1 0 0 0 -1.25 0 0 0 1 stud4o.dat
-  [1,16,0,-5,0,1,0,0,0,-1.25,0,0,0,1, ldraw_lib__stud4o()],
+  [1,16,0,-5,0,1,0,0,0,-1.25,0,0,0,1, ldraw_lib__stud4o(realsolid)],
 // 0 // 1 47 0 0 0 1 0 0 0 1 0 0 0 1 3626c.dat
 // 0 // 1 16 0 2.6 0 13.1 0 0 0 1 0 0 0 13.1 4-4edge.dat
 // 0 // Outside
@@ -3665,5 +3666,5 @@ function ldraw_lib__20597() = [
   [5,24,-8.056,-12.283,-3.306,-5.097,-12.615,-1.362,-4.895,-12.133,-4.193,-9.346,-11.975,-0.156],
 ];
 module ldraw_lib__20597(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__20597(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__20597(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__20597(line=0.2);

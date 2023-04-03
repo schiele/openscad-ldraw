@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/24309s01.scad>
-function ldraw_lib__24309ps1() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__24309ps1(realsolid=false) = [
 // 0 Slope Brick Curved  3 x  2 with SW R2-D2 Dark Blue Stripes Pattern
 // 0 Name: 24309ps1.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -15,7 +16,7 @@ function ldraw_lib__24309ps1() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\24309s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__24309s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__24309s01(realsolid)],
 // 
 // 4 272 2 14.1072 -21.6589 2 18.5871 -28 16 18.5871 -28 16 14.1072 -21.6589
   [4,272,2,14.1072,-21.6589,2,18.5871,-28,16,18.5871,-28,16,14.1072,-21.6589],
@@ -121,5 +122,5 @@ function ldraw_lib__24309ps1() = [
   [5,24,-20,14.1072,-21.6589,20,14.1072,-21.6589,-20,20,-30,-20,9.1499,-12.4268],
 ];
 module ldraw_lib__24309ps1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__24309ps1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__24309ps1(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__24309ps1(line=0.2);

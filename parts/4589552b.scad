@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__4589552b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4589552b(realsolid=false) = [
 // 0 Sticker  0.9 x  2.8 with "CITY" on Blue Gradient Background
 // 0 Name: 4589552b.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -17,7 +18,7 @@ function ldraw_lib__4589552b() = [
 // 
 // 
 // 1 16 0 -0.25 0 28 0 0 0 0.25 0 0 0 9 box5-12.dat
-  [1,16,0,-0.25,0,28,0,0,0,0.25,0,0,0,9, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,28,0,0,0,0.25,0,0,0,9, ldraw_lib__box5_12(realsolid)],
 // 
 // 4 72 0.3 -0.25 -5.9 3.7 -0.25 -5.9 3.3 -0.25 -5.5 0.7 -0.25 -5.5
   [4,72,0.3,-0.25,-5.9,3.7,-0.25,-5.9,3.3,-0.25,-5.5,0.7,-0.25,-5.5],
@@ -1247,5 +1248,5 @@ function ldraw_lib__4589552b() = [
   [4,0,12.35,-0.25,6.8,11.975,-0.25,7.292,11.85,-0.25,7.25,11.7,-0.25,7.15],
 ];
 module ldraw_lib__4589552b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4589552b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4589552b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4589552b(line=0.2);

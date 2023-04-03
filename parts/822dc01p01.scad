@@ -2,7 +2,8 @@ use <../lib.scad>
 use <822d.scad>
 use <u9187c.scad>
 use <u9187d.scad>
-function ldraw_lib__822dc01p01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__822dc01p01(realsolid=false) = [
 // 0 Garage Door with Hinge Pins with Trans Clear Counterweights
 // 0 Name: 822dc01p01.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -17,12 +18,12 @@ function ldraw_lib__822dc01p01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 822d.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__822d()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__822d(realsolid)],
 // 1 47 0 0 50 1 0 0 0 1 0 0 0 1 u9187c.dat
-  [1,47,0,0,50,1,0,0,0,1,0,0,0,1, ldraw_lib__u9187c()],
+  [1,47,0,0,50,1,0,0,0,1,0,0,0,1, ldraw_lib__u9187c(realsolid)],
 // 1 47 0 0 -50 1 0 0 0 1 0 0 0 1 u9187d.dat
-  [1,47,0,0,-50,1,0,0,0,1,0,0,0,1, ldraw_lib__u9187d()],
+  [1,47,0,0,-50,1,0,0,0,1,0,0,0,1, ldraw_lib__u9187d(realsolid)],
 ];
 module ldraw_lib__822dc01p01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__822dc01p01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__822dc01p01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__822dc01p01(line=0.2);

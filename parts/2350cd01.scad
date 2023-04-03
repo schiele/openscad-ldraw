@@ -2,7 +2,8 @@ use <../lib.scad>
 use <169685c.scad>
 use <169685d.scad>
 use <2350c.scad>
-function ldraw_lib__2350cd01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2350cd01(realsolid=false) = [
 // 0 Crane Arm Outside Wide with White Diagonal Stripes Sticker
 // 0 Name: 2350cd01.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -19,12 +20,12 @@ function ldraw_lib__2350cd01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 2350c.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2350c()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2350c(realsolid)],
 // 1 16 14 12 -142 0 -1 0 0 0 1 -1 0 0 169685c.dat
-  [1,16,14,12,-142,0,-1,0,0,0,1,-1,0,0, ldraw_lib__169685c()],
+  [1,16,14,12,-142,0,-1,0,0,0,1,-1,0,0, ldraw_lib__169685c(realsolid)],
 // 1 16 -14 12 -142 0 1 0 0 0 -1 -1 0 0 169685d.dat
-  [1,16,-14,12,-142,0,1,0,0,0,-1,-1,0,0, ldraw_lib__169685d()],
+  [1,16,-14,12,-142,0,1,0,0,0,-1,-1,0,0, ldraw_lib__169685d(realsolid)],
 ];
 module ldraw_lib__2350cd01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2350cd01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2350cd01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2350cd01(line=0.2);

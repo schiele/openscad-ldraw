@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__004511c() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__004511c(realsolid=false) = [
 // 0 Sticker  1 x  6 with White "Hospital" on Red
 // 0 Name: 004511c.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -15,7 +16,7 @@ function ldraw_lib__004511c() = [
 // 
 // 
 // 1 16 0 -0.25 0 60 0 0 0 0.25 0 0 0 12 box5-12.dat
-  [1,16,0,-0.25,0,60,0,0,0,0.25,0,0,0,12, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,60,0,0,0,0.25,0,0,0,12, ldraw_lib__box5_12(realsolid)],
 // 0 //
 // 3 15 -35.7719 -0.25 -6 -35.0764 -0.25 -5.231 -35.7719 -0.25 -5.2915
   [3,15,-35.7719,-0.25,-6,-35.0764,-0.25,-5.231,-35.7719,-0.25,-5.2915],
@@ -779,5 +780,5 @@ function ldraw_lib__004511c() = [
 // 0 //
 ];
 module ldraw_lib__004511c(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__004511c(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__004511c(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__004511c(line=0.2);

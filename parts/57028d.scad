@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/57028s01.scad>
 use <s/57028s02.scad>
-function ldraw_lib__57028d() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__57028d(realsolid=false) = [
 // 0 ~Technic Competition Arrow with Hollow Rubber Yellow Tip (Obsolete)
 // 0 Name: 57028d.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -18,16 +19,16 @@ function ldraw_lib__57028d() = [
 // 
 // 
 // 1 16 0 0 0 0 -1 0 1 0 0 0 0 -1 s\57028s01.dat
-  [1,16,0,0,0,0,-1,0,1,0,0,0,0,-1, ldraw_lib__s__57028s01()],
+  [1,16,0,0,0,0,-1,0,1,0,0,0,0,-1, ldraw_lib__s__57028s01(realsolid)],
 // 1 65 0 0 0 0 -1 0 1 0 0 0 0 -1 s\57028s02.dat
-  [1,65,0,0,0,0,-1,0,1,0,0,0,0,-1, ldraw_lib__s__57028s02()],
+  [1,65,0,0,0,0,-1,0,1,0,0,0,0,-1, ldraw_lib__s__57028s02(realsolid)],
 // 1 65 0 0 0 0 -1 0 -1 0 0 0 0 -1 s\57028s02.dat
-  [1,65,0,0,0,0,-1,0,-1,0,0,0,0,-1, ldraw_lib__s__57028s02()],
+  [1,65,0,0,0,0,-1,0,-1,0,0,0,0,-1, ldraw_lib__s__57028s02(realsolid)],
 // 1 65 0 0 0 0 1 0 -1 0 0 0 0 -1 s\57028s02.dat
-  [1,65,0,0,0,0,1,0,-1,0,0,0,0,-1, ldraw_lib__s__57028s02()],
+  [1,65,0,0,0,0,1,0,-1,0,0,0,0,-1, ldraw_lib__s__57028s02(realsolid)],
 // 1 65 0 0 0 0 1 0 1 0 0 0 0 -1 s\57028s02.dat
-  [1,65,0,0,0,0,1,0,1,0,0,0,0,-1, ldraw_lib__s__57028s02()],
+  [1,65,0,0,0,0,1,0,1,0,0,0,0,-1, ldraw_lib__s__57028s02(realsolid)],
 ];
 module ldraw_lib__57028d(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__57028d(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__57028d(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__57028d(line=0.2);

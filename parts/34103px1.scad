@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/34103s01.scad>
-function ldraw_lib__34103px1() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__34103px1(realsolid=false) = [
 // 0 Plate  1 x  3 with  2 Studs Offset with  2 White Rectangles Pattern
 // 0 Name: 34103px1.dat
 // 0 Author: Vincent Messenet [Cheenzo]
@@ -17,7 +18,7 @@ function ldraw_lib__34103px1() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\34103s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__34103s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__34103s01(realsolid)],
 // 
 // 4 15 -14.25 0 -10 -14.25 5.5 -10 -5.75 5.5 -10 -5.75 0 -10
   [4,15,-14.25,0,-10,-14.25,5.5,-10,-5.75,5.5,-10,-5.75,0,-10],
@@ -37,5 +38,5 @@ function ldraw_lib__34103px1() = [
   [3,16,30,7,-10,14.25,5.5,-10,5.75,5.5,-10],
 ];
 module ldraw_lib__34103px1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__34103px1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__34103px1(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__34103px1(line=0.2);

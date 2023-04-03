@@ -4,7 +4,8 @@ use <../../p/4-4ndis.scad>
 use <../../p/rect.scad>
 use <../../p/rect2p.scad>
 use <../../p/recte4.scad>
-function ldraw_lib__s__20460s03() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__20460s03(realsolid=false) = [
 // 0 ~Minifig Leg Left Dual Mould Lower Half without Front and Side
 // 0 Name: s\20460s03.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -22,19 +23,19 @@ function ldraw_lib__s__20460s03() = [
 // 
 // 
 // 1 16 10 18 6 0 0 6 6 0 0 0 1 0 4-4ndis.dat
-  [1,16,10,18,6,0,0,6,6,0,0,0,1,0, ldraw_lib__4_4ndis()],
+  [1,16,10,18,6,0,0,6,6,0,0,0,1,0, ldraw_lib__4_4ndis(realsolid)],
 // 1 16 10 18 6 0 0 6 6 0 0 0 1 0 4-4edge.dat
-  [1,16,10,18,6,0,0,6,6,0,0,0,1,0, ldraw_lib__4_4edge()],
+  [1,16,10,18,6,0,0,6,6,0,0,0,1,0, ldraw_lib__4_4edge(realsolid)],
 // 1 16 10.365 20 -7 8.865 0 0 0 1 0 0 0 3 recte4.dat
-  [1,16,10.365,20,-7,8.865,0,0,0,1,0,0,0,3, ldraw_lib__recte4()],
+  [1,16,10.365,20,-7,8.865,0,0,0,1,0,0,0,3, ldraw_lib__recte4(realsolid)],
 // 1 16 10.5 28 0 9 0 0 0 1 0 0 0 10 recte4.dat
-  [1,16,10.5,28,0,9,0,0,0,1,0,0,0,10, ldraw_lib__recte4()],
+  [1,16,10.5,28,0,9,0,0,0,1,0,0,0,10, ldraw_lib__recte4(realsolid)],
 // 1 16 10 28 0 6 0 0 0 1 0 0 0 6 recte4.dat
-  [1,16,10,28,0,6,0,0,0,1,0,0,0,6, ldraw_lib__recte4()],
+  [1,16,10,28,0,6,0,0,0,1,0,0,0,6, ldraw_lib__recte4(realsolid)],
 // 1 16 10 22.5 -4 6 0 0 0 1 0 0 0 2 recte4.dat
-  [1,16,10,22.5,-4,6,0,0,0,1,0,0,0,2, ldraw_lib__recte4()],
+  [1,16,10,22.5,-4,6,0,0,0,1,0,0,0,2, ldraw_lib__recte4(realsolid)],
 // 1 16 10 25.25 -6 0 0 6 -2.75 0 0 0 -1 0 rect2p.dat
-  [1,16,10,25.25,-6,0,0,6,-2.75,0,0,0,-1,0, ldraw_lib__rect2p()],
+  [1,16,10,25.25,-6,0,0,6,-2.75,0,0,0,-1,0, ldraw_lib__rect2p(realsolid)],
 // 4 16 16 22.5 -2 16 22.5 -6 4 22.5 -6 4 22.5 -2
   [4,16,16,22.5,-2,16,22.5,-6,4,22.5,-6,4,22.5,-2],
 // 4 16 4 28 -6 4 28 6 4 22.5 -2 4 22.5 -6
@@ -194,19 +195,19 @@ function ldraw_lib__s__20460s03() = [
 // 4 16 16 28 -6 16 22.5 -6 16 22.5 -2 16 28 6
   [4,16,16,28,-6,16,22.5,-6,16,22.5,-2,16,28,6],
 // 1 16 10 26 6 0 0 6 2 0 0 0 1 0 rect2p.dat
-  [1,16,10,26,6,0,0,6,2,0,0,0,1,0, ldraw_lib__rect2p()],
+  [1,16,10,26,6,0,0,6,2,0,0,0,1,0, ldraw_lib__rect2p(realsolid)],
 // 2 24 8 12 -.1 8 12 6
   [2,24,8,12,-.1,8,12,6],
 // 4 16 8 12 -.1 5 14 -2 5 14 6 8 12 6
   [4,16,8,12,-.1,5,14,-2,5,14,6,8,12,6],
 // 1 16 4.5 14 2 0 0 .5 0 -1 0 4 0 0 rect.dat
-  [1,16,4.5,14,2,0,0,.5,0,-1,0,4,0,0, ldraw_lib__rect()],
+  [1,16,4.5,14,2,0,0,.5,0,-1,0,4,0,0, ldraw_lib__rect(realsolid)],
 // 2 24 12 12 6 12 12 -.1
   [2,24,12,12,6,12,12,-.1],
 // 4 16 12 12 6 15 14 6 15 14 -2 12 12 -.1
   [4,16,12,12,6,15,14,6,15,14,-2,12,12,-.1],
 // 1 16 15.5 14 2 0 0 -.5 0 -1 0 -4 0 0 rect.dat
-  [1,16,15.5,14,2,0,0,-.5,0,-1,0,-4,0,0, ldraw_lib__rect()],
+  [1,16,15.5,14,2,0,0,-.5,0,-1,0,-4,0,0, ldraw_lib__rect(realsolid)],
 // 4 16 8 12 -.1 8 12 6 12 12 6 12 12 -.1
   [4,16,8,12,-.1,8,12,6,12,12,6,12,12,-.1],
 // 4 16 8 12 -.1 12 12 -.1 15 14 -2 5 14 -2
@@ -245,5 +246,5 @@ function ldraw_lib__s__20460s03() = [
   [2,24,4,22.5,-2,4,14,-2],
 ];
 module ldraw_lib__s__20460s03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__20460s03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__20460s03(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__20460s03(line=0.2);

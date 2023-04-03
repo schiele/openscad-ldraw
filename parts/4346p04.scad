@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/4346s01.scad>
-function ldraw_lib__4346p04() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4346p04(realsolid=false) = [
 // 0 Container Box  2 x  2 x  2 Door with Blue Globe, Yellow Box and Curved Arrows Pattern
 // 0 Name: 4346p04.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -17,7 +18,7 @@ function ldraw_lib__4346p04() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4346s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4346s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4346s01(realsolid)],
 // 
 // 0 // Inlined Subfile s\169675as01.dat
 // 4 16 12.43 35.84 -30 13.36 33.67 -30 12.51 34 -30 12.41 34.22 -30
@@ -1568,5 +1569,5 @@ function ldraw_lib__4346p04() = [
   [4,16,-16,40,-30,-17.68,31.33,-30,-17.83,31.2,-30,-20,44,-30],
 ];
 module ldraw_lib__4346p04(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4346p04(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4346p04(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4346p04(line=0.2);

@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/4-4ering.scad>
 use <s/98138s01.scad>
-function ldraw_lib__98138p87() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__98138p87(realsolid=false) = [
 // 0 Tile  1 x  1 Round with White Animal Paw on Dark Brown Background Pattern
 // 0 Name: 98138p87.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -18,9 +19,9 @@ function ldraw_lib__98138p87() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\98138s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01(realsolid)],
 // 1 16 0 0 0 9 0 0 0 1 0 0 0 9 4-4ering.dat
-  [1,16,0,0,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4ering()],
+  [1,16,0,0,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4ering(realsolid)],
 // 4 15 -1.6 0 2.1 -2.9086 0 2.6371 -2.8743 0 1.8753 -2.646 0 1.1477
   [4,15,-1.6,0,2.1,-2.9086,0,2.6371,-2.8743,0,1.8753,-2.646,0,1.1477],
 // 4 15 -1.6 0 2.1 -2.646 0 1.1477 -2.2585 0 0.5651 -1.7707 0 0.2162
@@ -893,5 +894,5 @@ function ldraw_lib__98138p87() = [
   [3,308,-1.1667,0,8.2667,-1.537,0,7.728,0.33,0,6.97],
 ];
 module ldraw_lib__98138p87(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__98138p87(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__98138p87(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__98138p87(line=0.2);

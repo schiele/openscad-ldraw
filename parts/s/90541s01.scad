@@ -3,7 +3,8 @@ use <../../p/4-4con3.scad>
 use <../../p/4-4disc.scad>
 use <../../p/4-4edge.scad>
 use <../../p/stud4.scad>
-function ldraw_lib__s__90541s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__90541s01(realsolid=false) = [
 // 0 ~Minifig Hat Beanie without Front
 // 0 Name: s\90541s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -18,15 +19,15 @@ function ldraw_lib__s__90541s01() = [
 // 
 // 
 // 1 16 0 -4 0 -1 0 0 0 -1 0 0 0 1 stud4.dat
-  [1,16,0,-4,0,-1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4()],
+  [1,16,0,-4,0,-1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4(realsolid)],
 // 1 16 0 -4 0 9.75 0 0 0 -1 0 0 0 9.75 4-4disc.dat
-  [1,16,0,-4,0,9.75,0,0,0,-1,0,0,0,9.75, ldraw_lib__4_4disc()],
+  [1,16,0,-4,0,9.75,0,0,0,-1,0,0,0,9.75, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 -4 0 9.75 0 0 0 -1 0 0 0 9.75 4-4edge.dat
-  [1,16,0,-4,0,9.75,0,0,0,-1,0,0,0,9.75, ldraw_lib__4_4edge()],
+  [1,16,0,-4,0,9.75,0,0,0,-1,0,0,0,9.75, ldraw_lib__4_4edge(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 2 0 3.25 0 0 0 -6 0 0 0 3.25 4-4con3.dat
-  [1,16,0,2,0,3.25,0,0,0,-6,0,0,0,3.25, ldraw_lib__4_4con3()],
+  [1,16,0,2,0,3.25,0,0,0,-6,0,0,0,3.25, ldraw_lib__4_4con3(realsolid)],
 // 4 16 -4.86 0.74 -15.1515 -4.1245 4.1048 -15.3338 1.8173 3.8598 -15.7523 1.89 0.62 -15.6815
   [4,16,-4.86,0.74,-15.1515,-4.1245,4.1048,-15.3338,1.8173,3.8598,-15.7523,1.89,0.62,-15.6815],
 // 2 24 -4.1245 4.1048 -15.3338 1.8173 3.8598 -15.7523
@@ -1971,5 +1972,5 @@ function ldraw_lib__s__90541s01() = [
   [5,24,-10.97,-7.46,-.1415,-10.763,-7.324,1.8915,-12.882,-3.45,4.1945,-9.21,-9.28,1.2485],
 ];
 module ldraw_lib__s__90541s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__90541s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__90541s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__90541s01(line=0.2);

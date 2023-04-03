@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <75349.scad>
-function ldraw_lib__95490() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__95490(realsolid=false) = [
 // 0 =Duplo Brick  2 x  4 with Holes
 // 0 Name: 95490.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -17,8 +18,8 @@ function ldraw_lib__95490() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 75349.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__75349()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__75349(realsolid)],
 ];
 module ldraw_lib__95490(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__95490(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__95490(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__95490(line=0.2);

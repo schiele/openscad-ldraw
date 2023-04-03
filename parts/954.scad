@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box.scad>
-function ldraw_lib__954() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__954(realsolid=false) = [
 // 0 ~Glass for Window  1 x  4 x  5 with Fixed Glass
 // 0 Name: 954.dat
 // 0 Author: Alex Taylor [anathema]
@@ -15,9 +16,9 @@ function ldraw_lib__954() = [
 // 
 // 
 // 1 16 0 0 0 36 0 0 0 54 0 0 0 1 box.dat
-  [1,16,0,0,0,36,0,0,0,54,0,0,0,1, ldraw_lib__box()],
+  [1,16,0,0,0,36,0,0,0,54,0,0,0,1, ldraw_lib__box(realsolid)],
 // 0
 ];
 module ldraw_lib__954(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__954(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__954(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__954(line=0.2);

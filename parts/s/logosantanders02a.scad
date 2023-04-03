@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__logosantanders02a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__logosantanders02a(realsolid=false) = [
 // 0 ~Logo Santander Emblem
 // 0 Name: s\logosantanders02a.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -125,5 +126,5 @@ function ldraw_lib__s__logosantanders02a() = [
   [4,16,0,0,-2.54,0.0765,0,-1.5339,-0.0533,0,-1.72,-0.2821,0,-2.5329],
 ];
 module ldraw_lib__s__logosantanders02a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__logosantanders02a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__logosantanders02a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__logosantanders02a(line=0.2);

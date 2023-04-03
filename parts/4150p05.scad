@@ -3,7 +3,8 @@ use <../p/4-4ring5.scad>
 use <../p/48/4-4disc.scad>
 use <../p/48/4-4rin24.scad>
 use <s/4150s01.scad>
-function ldraw_lib__4150p05() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4150p05(realsolid=false) = [
 // 0 Tile  2 x  2 Round with Black Exhaust Port Pattern
 // 0 Name: 4150p05.dat
 // 0 Author: Alex Taylor [anathema]
@@ -18,13 +19,13 @@ function ldraw_lib__4150p05() = [
 // 
 // 
 // 1 0 0 0 0 12.4 0 0 0 1 0 0 0 12.4 48\4-4disc.dat
-  [1,0,0,0,0,12.4,0,0,0,1,0,0,0,12.4, ldraw_lib__48__4_4disc()],
+  [1,0,0,0,0,12.4,0,0,0,1,0,0,0,12.4, ldraw_lib__48__4_4disc(realsolid)],
 // 1 16 0 0 0 3.33333 0 0 0 1 0 0 0 3.33333 4-4ring5.dat
-  [1,16,0,0,0,3.33333,0,0,0,1,0,0,0,3.33333, ldraw_lib__4_4ring5()],
+  [1,16,0,0,0,3.33333,0,0,0,1,0,0,0,3.33333, ldraw_lib__4_4ring5(realsolid)],
 // 1 16 0 0 0 0.66666 0 0 0 1 0 0 0 0.66666 48\4-4rin24.dat
-  [1,16,0,0,0,0.66666,0,0,0,1,0,0,0,0.66666, ldraw_lib__48__4_4rin24()],
+  [1,16,0,0,0,0.66666,0,0,0,1,0,0,0,0.66666, ldraw_lib__48__4_4rin24(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4150s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4150s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4150s01(realsolid)],
 // 0 // gradation pattern
 // 4 0 0 0 13.346 -1.757 0 13.346 -1.75 0 13.294 0 0 13.294
   [4,0,0,0,13.346,-1.757,0,13.346,-1.75,0,13.294,0,0,13.294],
@@ -856,5 +857,5 @@ function ldraw_lib__4150p05() = [
   [4,16,0,0,14.734,0,0,14.066,1.852,0,14.066,1.94,0,14.734],
 ];
 module ldraw_lib__4150p05(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4150p05(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4150p05(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4150p05(line=0.2);

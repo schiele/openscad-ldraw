@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <2546p01.scad>
-function ldraw_lib__81379() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__81379(realsolid=false) = [
 // 0 ~_Animal Bird Parrot with Yellow/Green Wings Pattern Red (Obsolete)
 // 0 Name: 81379.dat
 // 0 Author: Dennis Osborn
@@ -21,8 +22,8 @@ function ldraw_lib__81379() = [
 // 
 // 
 // 1 4 0 0 0 1 0 0 0 1 0 0 0 1 2546p01.dat
-  [1,4,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2546p01()],
+  [1,4,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2546p01(realsolid)],
 ];
 module ldraw_lib__81379(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__81379(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__81379(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__81379(line=0.2);

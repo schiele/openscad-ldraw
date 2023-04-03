@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <11435.scad>
 use <98085.scad>
-function ldraw_lib__11467() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__11467(realsolid=false) = [
 // 0 Animal Eagle Body (Complete)
 // 0 Name: 11467.dat
 // 0 Author: Christian Neumann [Wesley]
@@ -27,10 +28,10 @@ function ldraw_lib__11467() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 11435.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__11435()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__11435(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 98085.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__98085()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__98085(realsolid)],
 ];
 module ldraw_lib__11467(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__11467(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__11467(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__11467(line=0.2);

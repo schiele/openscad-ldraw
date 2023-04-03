@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/2454as01.scad>
-function ldraw_lib__2454apa0() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2454apa0(realsolid=false) = [
 // 0 Brick  1 x  2 x  5 with Hieroglyphs, Arm on Top Pattern
 // 0 Name: 2454apa0.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -22,7 +23,7 @@ function ldraw_lib__2454apa0() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2454as01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2454as01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2454as01(realsolid)],
 // 4 0 -16 13.5 -10 -16 101 -10 -14.5 101 -10 -14.5 13.5 -10
   [4,0,-16,13.5,-10,-16,101,-10,-14.5,101,-10,-14.5,13.5,-10],
 // 4 16 -20 0 -10 -20 120 -10 -16 101 -10 -16 13.5 -10
@@ -1461,5 +1462,5 @@ function ldraw_lib__2454apa0() = [
   [3,484,-9.5,101.25,-10,-7.1,72.2,-10,-9.3,34.5,-10],
 ];
 module ldraw_lib__2454apa0(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2454apa0(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2454apa0(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2454apa0(line=0.2);

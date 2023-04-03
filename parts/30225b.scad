@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/1-4disc.scad>
 use <s/30225bs1.scad>
-function ldraw_lib__30225b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__30225b(realsolid=false) = [
 // 0 Baseplate 32 x 32 Road 8-Stud Dual
 // 0 Name: 30225b.dat
 // 0 Author: Alex Forencich [aforencich]
@@ -17,21 +18,21 @@ function ldraw_lib__30225b() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\30225bs1.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30225bs1()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30225bs1(realsolid)],
 // 1 16 316 0 316 4 0 0 0 1 0 0 0 4 1-4disc.dat
-  [1,16,316,0,316,4,0,0,0,1,0,0,0,4, ldraw_lib__1_4disc()],
+  [1,16,316,0,316,4,0,0,0,1,0,0,0,4, ldraw_lib__1_4disc(realsolid)],
 // 4 16 320 0 -316 320 0 316 316 0 316 316 0 -316
   [4,16,320,0,-316,320,0,316,316,0,316,316,0,-316],
 // 1 16 316 0 -316 4 0 0 0 1 0 0 0 -4 1-4disc.dat
-  [1,16,316,0,-316,4,0,0,0,1,0,0,0,-4, ldraw_lib__1_4disc()],
+  [1,16,316,0,-316,4,0,0,0,1,0,0,0,-4, ldraw_lib__1_4disc(realsolid)],
 // 4 16 -316 0 -320 316 0 -320 316 0 -316 -316 0 -316
   [4,16,-316,0,-320,316,0,-320,316,0,-316,-316,0,-316],
 // 1 16 -316 0 -316 -4 0 0 0 1 0 0 0 -4 1-4disc.dat
-  [1,16,-316,0,-316,-4,0,0,0,1,0,0,0,-4, ldraw_lib__1_4disc()],
+  [1,16,-316,0,-316,-4,0,0,0,1,0,0,0,-4, ldraw_lib__1_4disc(realsolid)],
 // 4 16 -320 0 316 -320 0 -316 -316 0 -316 -316 0 316
   [4,16,-320,0,316,-320,0,-316,-316,0,-316,-316,0,316],
 // 1 16 -316 0 316 -4 0 0 0 1 0 0 0 4 1-4disc.dat
-  [1,16,-316,0,316,-4,0,0,0,1,0,0,0,4, ldraw_lib__1_4disc()],
+  [1,16,-316,0,316,-4,0,0,0,1,0,0,0,4, ldraw_lib__1_4disc(realsolid)],
 // 4 16 316 0 320 -316 0 320 -316 0 316 316 0 316
   [4,16,316,0,320,-316,0,320,-316,0,316,316,0,316],
 // 4 16 -316 0 -316 316 0 -316 316 0 316 -316 0 316
@@ -39,5 +40,5 @@ function ldraw_lib__30225b() = [
 // 0 //
 ];
 module ldraw_lib__30225b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__30225b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__30225b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__30225b(line=0.2);

@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__194065d() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__194065d(realsolid=false) = [
 // 0 Sticker  4.1 x  2 with Number 78
 // 0 Name: 194065d.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -1195,5 +1196,5 @@ function ldraw_lib__194065d() = [
   [5,24,-15.708,0,-23.868,-15.708,-.25,-23.868,-15.64,0,22.304,-15.096,0,-26.044],
 ];
 module ldraw_lib__194065d(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__194065d(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__194065d(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__194065d(line=0.2);

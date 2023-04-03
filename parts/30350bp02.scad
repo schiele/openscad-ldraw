@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/30350bs01.scad>
-function ldraw_lib__30350bp02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__30350bp02(realsolid=false) = [
 // 0 Tile  2 x  3 with Clips Horizontal (Thick C-Clips) with "Joses Inn", Goblets and Grapes Pattern
 // 0 Name: 30350bp02.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -17,7 +18,7 @@ function ldraw_lib__30350bp02() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\30350bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30350bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30350bs01(realsolid)],
 // 
 // 4 82 -16.2 0 22.75 -17.15 0 23 -17.6 0 22.2 -17.1 0 22.05
   [4,82,-16.2,0,22.75,-17.15,0,23,-17.6,0,22.2,-17.1,0,22.05],
@@ -4675,5 +4676,5 @@ function ldraw_lib__30350bp02() = [
   [4,80,5.85,0,-6.65,6.058,0,-7.053,6.356,0,-6.292,6.465,0,-5.807],
 ];
 module ldraw_lib__30350bp02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__30350bp02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__30350bp02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__30350bp02(line=0.2);

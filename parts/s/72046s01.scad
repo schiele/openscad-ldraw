@@ -5,7 +5,8 @@ use <../../p/1-4ndis.scad>
 use <../../p/4-4cylo.scad>
 use <../../p/4-4ering.scad>
 use <../../p/4-4ring9.scad>
-function ldraw_lib__s__72046s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__72046s01(realsolid=false) = [
 // 0 ~Tile  1 x  1 x  0.5 Round with Raised Star Gem - Base
 // 0 Name: s\72046s01.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -20,54 +21,54 @@ function ldraw_lib__s__72046s01() = [
 // 
 // 
 // 1 16 0 8 0 -9 0 0 0 -1 0 0 0 9 4-4ering.dat
-  [1,16,0,8,0,-9,0,0,0,-1,0,0,0,9, ldraw_lib__4_4ering()],
+  [1,16,0,8,0,-9,0,0,0,-1,0,0,0,9, ldraw_lib__4_4ering(realsolid)],
 // 1 16 0 7 0 9 0 0 0 1 0 0 0 9 4-4cylo.dat
-  [1,16,0,7,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4cylo()],
+  [1,16,0,7,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4cylo(realsolid)],
 // 1 16 0 7 0 -1 0 0 0 -1 0 0 0 1 4-4ring9.dat
-  [1,16,0,7,0,-1,0,0,0,-1,0,0,0,1, ldraw_lib__4_4ring9()],
+  [1,16,0,7,0,-1,0,0,0,-1,0,0,0,1, ldraw_lib__4_4ring9(realsolid)],
 // 1 16 0 0 0 10 0 0 0 7 0 0 0 10 4-4cylo.dat
-  [1,16,0,0,0,10,0,0,0,7,0,0,0,10, ldraw_lib__4_4cylo()],
+  [1,16,0,0,0,10,0,0,0,7,0,0,0,10, ldraw_lib__4_4cylo(realsolid)],
 // 
 // 1 16 0 0 0 10 0 0 0 1 0 0 0 10 1-4chrd.dat
-  [1,16,0,0,0,10,0,0,0,1,0,0,0,10, ldraw_lib__1_4chrd()],
+  [1,16,0,0,0,10,0,0,0,1,0,0,0,10, ldraw_lib__1_4chrd(realsolid)],
 // 1 16 0 0 0 0 0 -10 0 1 0 10 0 0 1-4chrd.dat
-  [1,16,0,0,0,0,0,-10,0,1,0,10,0,0, ldraw_lib__1_4chrd()],
+  [1,16,0,0,0,0,0,-10,0,1,0,10,0,0, ldraw_lib__1_4chrd(realsolid)],
 // 1 16 0 0 0 -10 0 0 0 1 0 0 0 -10 1-4chrd.dat
-  [1,16,0,0,0,-10,0,0,0,1,0,0,0,-10, ldraw_lib__1_4chrd()],
+  [1,16,0,0,0,-10,0,0,0,1,0,0,0,-10, ldraw_lib__1_4chrd(realsolid)],
 // 1 16 0 0 0 0 0 10 0 1 0 -10 0 0 1-4chrd.dat
-  [1,16,0,0,0,0,0,10,0,1,0,-10,0,0, ldraw_lib__1_4chrd()],
+  [1,16,0,0,0,0,0,10,0,1,0,-10,0,0, ldraw_lib__1_4chrd(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 4 8 4 2 0 0 0 -4 0 0 0 2 1-4cylo.dat
-  [1,16,4,8,4,2,0,0,0,-4,0,0,0,2, ldraw_lib__1_4cylo()],
+  [1,16,4,8,4,2,0,0,0,-4,0,0,0,2, ldraw_lib__1_4cylo(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -4 8 4 -2 0 0 0 -4 0 0 0 2 1-4cylo.dat
-  [1,16,-4,8,4,-2,0,0,0,-4,0,0,0,2, ldraw_lib__1_4cylo()],
+  [1,16,-4,8,4,-2,0,0,0,-4,0,0,0,2, ldraw_lib__1_4cylo(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 4 8 -4 2 0 0 0 -4 0 0 0 -2 1-4cylo.dat
-  [1,16,4,8,-4,2,0,0,0,-4,0,0,0,-2, ldraw_lib__1_4cylo()],
+  [1,16,4,8,-4,2,0,0,0,-4,0,0,0,-2, ldraw_lib__1_4cylo(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -4 8 -4 -2 0 0 0 -4 0 0 0 -2 1-4cylo.dat
-  [1,16,-4,8,-4,-2,0,0,0,-4,0,0,0,-2, ldraw_lib__1_4cylo()],
+  [1,16,-4,8,-4,-2,0,0,0,-4,0,0,0,-2, ldraw_lib__1_4cylo(realsolid)],
 // 1 16 4 8 4 2 0 0 0 -1 0 0 0 2 1-4ndis.dat
-  [1,16,4,8,4,2,0,0,0,-1,0,0,0,2, ldraw_lib__1_4ndis()],
+  [1,16,4,8,4,2,0,0,0,-1,0,0,0,2, ldraw_lib__1_4ndis(realsolid)],
 // 1 16 -4 8 4 -2 0 0 0 -1 0 0 0 2 1-4ndis.dat
-  [1,16,-4,8,4,-2,0,0,0,-1,0,0,0,2, ldraw_lib__1_4ndis()],
+  [1,16,-4,8,4,-2,0,0,0,-1,0,0,0,2, ldraw_lib__1_4ndis(realsolid)],
 // 1 16 4 8 -4 2 0 0 0 -1 0 0 0 -2 1-4ndis.dat
-  [1,16,4,8,-4,2,0,0,0,-1,0,0,0,-2, ldraw_lib__1_4ndis()],
+  [1,16,4,8,-4,2,0,0,0,-1,0,0,0,-2, ldraw_lib__1_4ndis(realsolid)],
 // 1 16 -4 8 -4 -2 0 0 0 -1 0 0 0 -2 1-4ndis.dat
-  [1,16,-4,8,-4,-2,0,0,0,-1,0,0,0,-2, ldraw_lib__1_4ndis()],
+  [1,16,-4,8,-4,-2,0,0,0,-1,0,0,0,-2, ldraw_lib__1_4ndis(realsolid)],
 // 1 16 4 4 4 2 0 0 0 -1 0 0 0 2 1-4chrd.dat
-  [1,16,4,4,4,2,0,0,0,-1,0,0,0,2, ldraw_lib__1_4chrd()],
+  [1,16,4,4,4,2,0,0,0,-1,0,0,0,2, ldraw_lib__1_4chrd(realsolid)],
 // 1 16 -4 4 4 -2 0 0 0 -1 0 0 0 2 1-4chrd.dat
-  [1,16,-4,4,4,-2,0,0,0,-1,0,0,0,2, ldraw_lib__1_4chrd()],
+  [1,16,-4,4,4,-2,0,0,0,-1,0,0,0,2, ldraw_lib__1_4chrd(realsolid)],
 // 1 16 4 4 -4 2 0 0 0 -1 0 0 0 -2 1-4chrd.dat
-  [1,16,4,4,-4,2,0,0,0,-1,0,0,0,-2, ldraw_lib__1_4chrd()],
+  [1,16,4,4,-4,2,0,0,0,-1,0,0,0,-2, ldraw_lib__1_4chrd(realsolid)],
 // 1 16 -4 4 -4 -2 0 0 0 -1 0 0 0 -2 1-4chrd.dat
-  [1,16,-4,4,-4,-2,0,0,0,-1,0,0,0,-2, ldraw_lib__1_4chrd()],
+  [1,16,-4,4,-4,-2,0,0,0,-1,0,0,0,-2, ldraw_lib__1_4chrd(realsolid)],
 // 3 16 10 0 0 2.42706 0 1.76337 2.42706 0 -1.76337
   [3,16,10,0,0,2.42706,0,1.76337,2.42706,0,-1.76337],
 // 4 16 -.92706 0 2.85318 2.42706 0 1.76337 10 0 0 0 0 10
@@ -190,5 +191,5 @@ function ldraw_lib__s__72046s01() = [
   [3,16,2.42706,4,-1.76337,6,4,-4,4,4,-6],
 ];
 module ldraw_lib__s__72046s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__72046s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__72046s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__72046s01(line=0.2);

@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/98138p1is01.scad>
 use <s/98138s01.scad>
-function ldraw_lib__98138p1j() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__98138p1j(realsolid=false) = [
 // 0 Tile  1 x  1 Round with Bright Light Orange "YAS!" in Speech Bubble on Dark Turquoise Background Pattern
 // 0 Name: 98138p1j.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -18,9 +19,9 @@ function ldraw_lib__98138p1j() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\98138s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01(realsolid)],
 // 1 3 0 0 0 -1 0 0 0 1 0 0 0 1 s\98138p1is01.dat
-  [1,3,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138p1is01()],
+  [1,3,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138p1is01(realsolid)],
 // 
 // 4 191 -5.66 0 2.03 -4.98 0 .98 -4.81 0 2.58 -5.05 0 2.84
   [4,191,-5.66,0,2.03,-4.98,0,.98,-4.81,0,2.58,-5.05,0,2.84],
@@ -308,5 +309,5 @@ function ldraw_lib__98138p1j() = [
   [4,16,-1.4,0,7.38,-1.36,0,2.78,-1.08,0,2.65,0,0,7.5],
 ];
 module ldraw_lib__98138p1j(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__98138p1j(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__98138p1j(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__98138p1j(line=0.2);

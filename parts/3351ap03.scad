@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3351as01.scad>
-function ldraw_lib__3351ap03() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3351ap03(realsolid=false) = [
 // 0 Roadsign Triangular Type 1 with Road Works, 1 Dirt Pile Pattern
 // 0 Name: 3351ap03.dat
 // 0 Author: Jaco van der Molen [Jaco]
@@ -54,7 +55,7 @@ function ldraw_lib__3351ap03() = [
   [3,4,0,-108.1,-2,1.73,-109.1,-2,1,-109.83,-2],
 // 0 // Triangle 3 1 -16.8 -73 -2 16.8 -73 -2 0 -102.1 -2
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3351as01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3351as01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3351as01(realsolid)],
 // 0 // Man
 // 3 0 -1.0625 -89.6875 -2 -1 -88.125 -2 -0.2031 -90.6875 -2
   [3,0,-1.0625,-89.6875,-2,-1,-88.125,-2,-0.2031,-90.6875,-2],
@@ -228,5 +229,5 @@ function ldraw_lib__3351ap03() = [
 // 0
 ];
 module ldraw_lib__3351ap03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3351ap03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3351ap03(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3351ap03(line=0.2);

@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__confricrib1() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__confricrib1(realsolid=false) = [
 // 0 Technic Friction Pin Rib
 // 0 Name: confricrib1.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -67,5 +68,5 @@ function ldraw_lib__confricrib1() = [
   [5,24,4.773,-3.7,4.0659,4.773,0,4.0659,4.698,-3.7,3.5666,4.0659,0,4.773],
 ];
 module ldraw_lib__confricrib1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__confricrib1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__confricrib1(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__confricrib1(line=0.2);

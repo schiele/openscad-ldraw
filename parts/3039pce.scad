@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3039s01.scad>
-function ldraw_lib__3039pce() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3039pce(realsolid=false) = [
 // 0 Slope Brick 45  2 x  2 with Radar and Disk Slot Black Pattern
 // 0 Name: 3039pce.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -15,7 +16,7 @@ function ldraw_lib__3039pce() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3039s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3039s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3039s01(realsolid)],
 // 
 // 4 15 2.8738 6.5153 -16.5153 3.6981 5.641 -15.641 3.2685 5.4373 -15.4373 3.0726 5.6404 -15.6404
   [4,15,2.8738,6.5153,-16.5153,3.6981,5.641,-15.641,3.2685,5.4373,-15.4373,3.0726,5.6404,-15.6404],
@@ -1699,5 +1700,5 @@ function ldraw_lib__3039pce() = [
   [3,0,-18.2,13.4146,-23.4146,-18.2,13.6472,-23.6472,-17.85,13.5913,-23.5913],
 ];
 module ldraw_lib__3039pce(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3039pce(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3039pce(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3039pce(line=0.2);

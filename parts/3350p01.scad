@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/1-4rin19.scad>
 use <s/3350s01.scad>
-function ldraw_lib__3350p01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3350p01(realsolid=false) = [
 // 0 Roadsign Round with No Entry Pattern
 // 0 Name: 3350p01.dat
 // 0 Author: Manfred Moolhuysen
@@ -33,13 +34,13 @@ function ldraw_lib__3350p01() = [
 // 4 4 17.96 -88 -2 20 -88 -2 18.4 -95.6 -2 17.22 -91.5 -2
   [4,4,17.96,-88,-2,20,-88,-2,18.4,-95.6,-2,17.22,-91.5,-2],
 // 1 4 0 -88 -2 -1 0 0 0 0 1 0 1 0 1-4rin19.dat
-  [1,4,0,-88,-2,-1,0,0,0,0,1,0,1,0, ldraw_lib__1_4rin19()],
+  [1,4,0,-88,-2,-1,0,0,0,0,1,0,1,0, ldraw_lib__1_4rin19(realsolid)],
 // 1 4 0 -88 -2 0 0 -1 -1 0 0 0 1 0 1-4rin19.dat
-  [1,4,0,-88,-2,0,0,-1,-1,0,0,0,1,0, ldraw_lib__1_4rin19()],
+  [1,4,0,-88,-2,0,0,-1,-1,0,0,0,1,0, ldraw_lib__1_4rin19(realsolid)],
 // 1 4 0 -88 -2 1 0 0 0 0 -1 0 1 0 1-4rin19.dat
-  [1,4,0,-88,-2,1,0,0,0,0,-1,0,1,0, ldraw_lib__1_4rin19()],
+  [1,4,0,-88,-2,1,0,0,0,0,-1,0,1,0, ldraw_lib__1_4rin19(realsolid)],
 // 1 4 0 -88 -2 0 0 1 1 0 0 0 1 0 1-4rin19.dat
-  [1,4,0,-88,-2,0,0,1,1,0,0,0,1,0, ldraw_lib__1_4rin19()],
+  [1,4,0,-88,-2,0,0,1,1,0,0,0,1,0, ldraw_lib__1_4rin19(realsolid)],
 // 4 4 17.22 -91.5 -2 18.4 -95.6 -2 14 -102 -2 0 -91.5 -2
   [4,4,17.22,-91.5,-2,18.4,-95.6,-2,14,-102,-2,0,-91.5,-2],
 // 4 4 0 -91.5 -2 14 -102 -2 7.6 -106.4 -2 0 -108 -2
@@ -55,9 +56,9 @@ function ldraw_lib__3350p01() = [
 // 4 16 -17.96 -88 -2 17.96 -88 -2 17.22 -91.5 -2 -17.22 -91.5 -2
   [4,16,-17.96,-88,-2,17.96,-88,-2,17.22,-91.5,-2,-17.22,-91.5,-2],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3350s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3350s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3350s01(realsolid)],
 // 0
 ];
 module ldraw_lib__3350p01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3350p01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3350p01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3350p01(line=0.2);

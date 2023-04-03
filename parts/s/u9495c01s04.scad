@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__u9495c01s04() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__u9495c01s04(realsolid=false) = [
 // 0 ~Sail 30 x 15 Trapezoidal Edge Stripe 2 (Formed Shape 1)
 // 0 Name: s\u9495c01s04.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -149,5 +150,5 @@ function ldraw_lib__s__u9495c01s04() = [
   [5,24,-138.3741,231.1764,-68.2729,-138.3741,231.1764,-68.5229,-146.2263,233.3857,-62.5956,-128.9225,229.0396,-75.3833],
 ];
 module ldraw_lib__s__u9495c01s04(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__u9495c01s04(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__u9495c01s04(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__u9495c01s04(line=0.2);

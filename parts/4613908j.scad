@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__4613908j() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4613908j(realsolid=false) = [
 // 0 Sticker  3.2 x  1.8 with Hieroglyphs Type 4 (Eye on Top)
 // 0 Name: 4613908j.dat
 // 0 Author: Christian Neumann [Wesley]
@@ -21,7 +22,7 @@ function ldraw_lib__4613908j() = [
 // 
 // 
 // 1 16 0 -0.25 0 18 0 0 0 0.25 0 0 0 32.5 box5-12.dat
-  [1,16,0,-0.25,0,18,0,0,0,0.25,0,0,0,32.5, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,18,0,0,0,0.25,0,0,0,32.5, ldraw_lib__box5_12(realsolid)],
 // 4 484 -14.15 -0.25 29.68 -10.75 -0.25 29.68 -10.89 -0.25 30.33 -14.01 -0.25 30.33
   [4,484,-14.15,-0.25,29.68,-10.75,-0.25,29.68,-10.89,-0.25,30.33,-14.01,-0.25,30.33],
 // 4 484 -14.01 -0.25 30.33 -10.89 -0.25 30.33 -11.25 -0.25 30.88 -13.65 -0.25 30.88
@@ -1910,5 +1911,5 @@ function ldraw_lib__4613908j() = [
   [3,28,4.85,-0.25,27.6,4.65,-0.25,23.92,5.55,-0.25,26.7],
 ];
 module ldraw_lib__4613908j(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4613908j(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4613908j(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4613908j(line=0.2);

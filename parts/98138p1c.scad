@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/4-4ering.scad>
 use <s/98138s01.scad>
-function ldraw_lib__98138p1c() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__98138p1c(realsolid=false) = [
 // 0 Tile  1 x  1 Round with Medium Lavender Skull Outline and Hearts as Eyes on Medium Azure Background Pattern
 // 0 Name: 98138p1c.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -18,9 +19,9 @@ function ldraw_lib__98138p1c() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\98138s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01(realsolid)],
 // 1 322 0 0 0 9 0 0 0 1 0 0 0 9 4-4ering.dat
-  [1,322,0,0,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4ering()],
+  [1,322,0,0,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4ering(realsolid)],
 // 4 30 -6 0 .9 -5.95 0 1.68 -6.74 0 1.79 -6.8 0 .9
   [4,30,-6,0,.9,-5.95,0,1.68,-6.74,0,1.79,-6.8,0,.9],
 // 4 30 -5.95 0 .12 -6 0 .9 -6.8 0 .9 -6.74 0 .01
@@ -487,5 +488,5 @@ function ldraw_lib__98138p1c() = [
   [3,322,4.81,0,-3.91,4.14,0,-4.49,4.14,0,-4.85],
 ];
 module ldraw_lib__98138p1c(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__98138p1c(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__98138p1c(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__98138p1c(line=0.2);

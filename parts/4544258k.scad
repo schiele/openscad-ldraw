@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__4544258k() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4544258k(realsolid=false) = [
 // 0 Sticker  1.1 x  3.9 with "T S"
 // 0 Name: 4544258k.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -17,7 +18,7 @@ function ldraw_lib__4544258k() = [
 // 
 // 
 // 1 16 0 -0.25 0 39 0 0 0 0.25 0 0 0 11 box5-12.dat
-  [1,16,0,-0.25,0,39,0,0,0,0.25,0,0,0,11, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,39,0,0,0,0.25,0,0,0,11, ldraw_lib__box5_12(realsolid)],
 // 0 //
 // 4 82 -21.1 -0.25 3.8 -24.2 -0.25 3.8 -24.2 -0.25 -4.3 -21.1 -0.25 2.2
   [4,82,-21.1,-0.25,3.8,-24.2,-0.25,3.8,-24.2,-0.25,-4.3,-21.1,-0.25,2.2],
@@ -296,5 +297,5 @@ function ldraw_lib__4544258k() = [
   [3,16,-21.1,-0.25,-4.3,-22.2,-0.25,-5.7,0,-0.25,-11],
 ];
 module ldraw_lib__4544258k(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4544258k(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4544258k(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4544258k(line=0.2);

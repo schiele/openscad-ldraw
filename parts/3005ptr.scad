@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/2-4disc.scad>
 use <../p/2-4ndis.scad>
 use <s/3005s01.scad>
-function ldraw_lib__3005ptr() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3005ptr(realsolid=false) = [
 // 0 Brick  1 x  1 with Blue "R" Pattern
 // 0 Name: 3005ptr.dat
 // 0 Author: Tore Eriksson [Tore_Eriksson]
@@ -24,7 +25,7 @@ function ldraw_lib__3005ptr() = [
 // 0 // Pattern
 // 
 // 1 1 2 9 -10 0 0 2 2 0 0 0 1 0 2-4ndis.dat
-  [1,1,2,9,-10,0,0,2,2,0,0,0,1,0, ldraw_lib__2_4ndis()],
+  [1,1,2,9,-10,0,0,2,2,0,0,0,1,0, ldraw_lib__2_4ndis(realsolid)],
 // 3 1 -4 13 -10 -6 19 -10 -4 19 -10
   [3,1,-4,13,-10,-6,19,-10,-4,19,-10],
 // 4 1 -4 13 -10 -4 11 -10 -6 5 -10 -6 19 -10
@@ -51,7 +52,7 @@ function ldraw_lib__3005ptr() = [
   [4,1,6,19,-10,2,13,-10,0,13,-10,4,19,-10],
 // 
 // 1 16 2 9 -10 0 0 2 2 0 0 0 1 0 2-4disc.dat
-  [1,16,2,9,-10,0,0,2,2,0,0,0,1,0, ldraw_lib__2_4disc()],
+  [1,16,2,9,-10,0,0,2,2,0,0,0,1,0, ldraw_lib__2_4disc(realsolid)],
 // 4 16 -6 19 -10 -6 5 -10 -10 0 -10 -10 24 -10
   [4,16,-6,19,-10,-6,5,-10,-10,0,-10,-10,24,-10],
 // 4 16 -6 5 -10 2 5 -10 10 0 -10 -10 0 -10
@@ -87,8 +88,8 @@ function ldraw_lib__3005ptr() = [
 // 
 // 0 // Subfile
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3005s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3005s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3005s01(realsolid)],
 ];
 module ldraw_lib__3005ptr(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3005ptr(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3005ptr(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3005ptr(line=0.2);

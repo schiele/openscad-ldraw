@@ -4,7 +4,8 @@ use <../p/1-4con4.scad>
 use <../p/4-4cylo.scad>
 use <../p/4-4ring4.scad>
 use <../p/stud4o.scad>
-function ldraw_lib__29633() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__29633(realsolid=false) = [
 // 0 Minifig Hair Bob Cut Parted in Middle
 // 0 Name: 29633.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -26,35 +27,35 @@ function ldraw_lib__29633() = [
 // 0 // Anti-Stud and Inside
 // 
 // 1 16 0 -6 0 1 0 0 0 -1.5 0 0 0 1 stud4o.dat
-  [1,16,0,-6,0,1,0,0,0,-1.5,0,0,0,1, ldraw_lib__stud4o()],
+  [1,16,0,-6,0,1,0,0,0,-1.5,0,0,0,1, ldraw_lib__stud4o(realsolid)],
 // 1 16 0 0 0 8 0 0 0 -3 0 0 0 8 4-4cylo.dat
-  [1,16,0,0,0,8,0,0,0,-3,0,0,0,8, ldraw_lib__4_4cylo()],
+  [1,16,0,0,0,8,0,0,0,-3,0,0,0,8, ldraw_lib__4_4cylo(realsolid)],
 // 1 16 0 -3 0 2 0 0 0 -1 0 0 0 2 4-4ring4.dat
-  [1,16,0,-3,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__4_4ring4()],
+  [1,16,0,-3,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__4_4ring4(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 4 0 -.35355 0 .35355 0 -4 0 .35355 0 .35355 1-4con25.dat
-  [1,16,0,4,0,-.35355,0,.35355,0,-4,0,.35355,0,.35355, ldraw_lib__1_4con25()],
+  [1,16,0,4,0,-.35355,0,.35355,0,-4,0,.35355,0,.35355, ldraw_lib__1_4con25(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 4 0 -.35355 0 -.35355 0 -4 0 .35355 0 -.35355 1-4con25.dat
-  [1,16,0,4,0,-.35355,0,-.35355,0,-4,0,.35355,0,-.35355, ldraw_lib__1_4con25()],
+  [1,16,0,4,0,-.35355,0,-.35355,0,-4,0,.35355,0,-.35355, ldraw_lib__1_4con25(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 4 0 .35355 0 .35355 0 -4 0 -.35355 0 .35355 1-4con25.dat
-  [1,16,0,4,0,.35355,0,.35355,0,-4,0,-.35355,0,.35355, ldraw_lib__1_4con25()],
+  [1,16,0,4,0,.35355,0,.35355,0,-4,0,-.35355,0,.35355, ldraw_lib__1_4con25(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 0 -1.76777 0 1.76777 0 -3 0 1.76777 0 1.76777 1-4con4.dat
-  [1,16,0,0,0,-1.76777,0,1.76777,0,-3,0,1.76777,0,1.76777, ldraw_lib__1_4con4()],
+  [1,16,0,0,0,-1.76777,0,1.76777,0,-3,0,1.76777,0,1.76777, ldraw_lib__1_4con4(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 0 -1.76777 0 -1.76777 0 -3 0 1.76777 0 -1.76777 1-4con4.dat
-  [1,16,0,0,0,-1.76777,0,-1.76777,0,-3,0,1.76777,0,-1.76777, ldraw_lib__1_4con4()],
+  [1,16,0,0,0,-1.76777,0,-1.76777,0,-3,0,1.76777,0,-1.76777, ldraw_lib__1_4con4(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 0 1.76777 0 1.76777 0 -3 0 -1.76777 0 1.76777 1-4con4.dat
-  [1,16,0,0,0,1.76777,0,1.76777,0,-3,0,-1.76777,0,1.76777, ldraw_lib__1_4con4()],
+  [1,16,0,0,0,1.76777,0,1.76777,0,-3,0,-1.76777,0,1.76777, ldraw_lib__1_4con4(realsolid)],
 // 
 // 0 // Adaptation to Face Opening
 // 3 16 3.827 -3 -9.239 7.071 -3 -7.071 8.83875 0 -8.83875
@@ -3502,5 +3503,5 @@ function ldraw_lib__29633() = [
   [5,24,-14.2,24,5.4375,-18.091,22.5102,-1.717,-18.42,21.387,-0.433,-14.46,25.924,-2.38],
 ];
 module ldraw_lib__29633(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__29633(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__29633(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__29633(line=0.2);

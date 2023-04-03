@@ -2,7 +2,8 @@ use <../lib.scad>
 use <45907.scad>
 use <5292.scad>
 use <991.scad>
-function ldraw_lib__42908() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__42908(realsolid=false) = [
 // 0 Electric RC Race Buggy Motor (Complete)
 // 0 Name: 42908.dat
 // 0 Author: Guy Vivan [guyvivan]
@@ -17,15 +18,15 @@ function ldraw_lib__42908() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 5292.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__5292()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__5292(realsolid)],
 // 1 4 0 0 40 1 0 0 0 1 0 0 0 1 991.dat
-  [1,4,0,0,40,1,0,0,0,1,0,0,0,1, ldraw_lib__991()],
+  [1,4,0,0,40,1,0,0,0,1,0,0,0,1, ldraw_lib__991(realsolid)],
 // 1 4 -40 0 40 1 0 0 0 1 0 0 0 1 991.dat
-  [1,4,-40,0,40,1,0,0,0,1,0,0,0,1, ldraw_lib__991()],
+  [1,4,-40,0,40,1,0,0,0,1,0,0,0,1, ldraw_lib__991(realsolid)],
 // 1 4 144 0 0 0 -1 0 0 0 1 -1 0 0 45907.dat
-  [1,4,144,0,0,0,-1,0,0,0,1,-1,0,0, ldraw_lib__45907()],
+  [1,4,144,0,0,0,-1,0,0,0,1,-1,0,0, ldraw_lib__45907(realsolid)],
 // 0
 ];
 module ldraw_lib__42908(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__42908(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__42908(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__42908(line=0.2);

@@ -7,7 +7,8 @@ use <../p/4-4con3.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4edge.scad>
 use <../p/4-4ring2.scad>
-function ldraw_lib__71533k01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__71533k01(realsolid=false) = [
 // 0 ~Technic Pneumatic Tube End (Bulged)
 // 0 Name: 71533k01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -25,21 +26,21 @@ function ldraw_lib__71533k01() = [
 // 
 // 
 // 1 16 0 1 0 -0.25 0 0 0 -1 0 0 0 0.25 4-4con20.dat
-  [1,16,0,1,0,-0.25,0,0,0,-1,0,0,0,0.25, ldraw_lib__4_4con20()],
+  [1,16,0,1,0,-0.25,0,0,0,-1,0,0,0,0.25, ldraw_lib__4_4con20(realsolid)],
 // 1 16 0 1.5 0 -0.25 0 0 0 -0.5 0 0 0 0.25 4-4con21.dat
-  [1,16,0,1.5,0,-0.25,0,0,0,-0.5,0,0,0,0.25, ldraw_lib__4_4con21()],
+  [1,16,0,1.5,0,-0.25,0,0,0,-0.5,0,0,0,0.25, ldraw_lib__4_4con21(realsolid)],
 // 1 16 0 2 0 -0.25 0 0 0 -0.5 0 0 0 0.25 4-4con22.dat
-  [1,16,0,2,0,-0.25,0,0,0,-0.5,0,0,0,0.25, ldraw_lib__4_4con22()],
+  [1,16,0,2,0,-0.25,0,0,0,-0.5,0,0,0,0.25, ldraw_lib__4_4con22(realsolid)],
 // 1 16 0 3 0 -0.25 0 0 0 -1 0 0 0 0.25 1-4con23.dat
-  [1,16,0,3,0,-0.25,0,0,0,-1,0,0,0,0.25, ldraw_lib__1_4con23()],
+  [1,16,0,3,0,-0.25,0,0,0,-1,0,0,0,0.25, ldraw_lib__1_4con23(realsolid)],
 // 1 16 0 3 0 0 0 0.25 0 -1 0 0.25 0 0 1-4con23.dat
-  [1,16,0,3,0,0,0,0.25,0,-1,0,0.25,0,0, ldraw_lib__1_4con23()],
+  [1,16,0,3,0,0,0,0.25,0,-1,0,0.25,0,0, ldraw_lib__1_4con23(realsolid)],
 // 1 16 0 3 0 0.25 0 0 0 -1 0 0 0 -0.25 1-4con23.dat
-  [1,16,0,3,0,0.25,0,0,0,-1,0,0,0,-0.25, ldraw_lib__1_4con23()],
+  [1,16,0,3,0,0.25,0,0,0,-1,0,0,0,-0.25, ldraw_lib__1_4con23(realsolid)],
 // 1 16 0 3 0 0 0 -0.25 0 -1 0 -0.25 0 0 1-4con23.dat
-  [1,16,0,3,0,0,0,-0.25,0,-1,0,-0.25,0,0, ldraw_lib__1_4con23()],
+  [1,16,0,3,0,0,0,-0.25,0,-1,0,-0.25,0,0, ldraw_lib__1_4con23(realsolid)],
 // 1 16 0 3 0 6 0 0 0 17 0 0 0 6 4-4cyli.dat
-  [1,16,0,3,0,6,0,0,0,17,0,0,0,6, ldraw_lib__4_4cyli()],
+  [1,16,0,3,0,6,0,0,0,17,0,0,0,6, ldraw_lib__4_4cyli(realsolid)],
 // 5 24 5 0 0 4.6195 0 1.9135 4.6195 -18 1.9135 5.25 1 0
   [5,24,5,0,0,4.6195,0,1.9135,4.6195,-18,1.9135,5.25,1,0],
 // 5 24 4.6195 0 1.9135 3.5355 0 3.5355 3.5355 -18 3.5355 4.8505 1 2.0092
@@ -171,18 +172,18 @@ function ldraw_lib__71533k01() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 2 0 1 0 0 0 -2 0 0 0 1 4-4con3.dat
-  [1,16,0,2,0,1,0,0,0,-2,0,0,0,1, ldraw_lib__4_4con3()],
+  [1,16,0,2,0,1,0,0,0,-2,0,0,0,1, ldraw_lib__4_4con3(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 2 0 4 0 0 0 18 0 0 0 4 4-4cyli.dat
-  [1,16,0,2,0,4,0,0,0,18,0,0,0,4, ldraw_lib__4_4cyli()],
+  [1,16,0,2,0,4,0,0,0,18,0,0,0,4, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 20 0 6 0 0 0 1 0 0 0 6 4-4edge.dat
-  [1,16,0,20,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4edge()],
+  [1,16,0,20,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 20 0 4 0 0 0 1 0 0 0 4 4-4edge.dat
-  [1,16,0,20,0,4,0,0,0,1,0,0,0,4, ldraw_lib__4_4edge()],
+  [1,16,0,20,0,4,0,0,0,1,0,0,0,4, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 20 0 -2 0 0 0 -1 0 0 0 2 4-4ring2.dat
-  [1,16,0,20,0,-2,0,0,0,-1,0,0,0,2, ldraw_lib__4_4ring2()],
+  [1,16,0,20,0,-2,0,0,0,-1,0,0,0,2, ldraw_lib__4_4ring2(realsolid)],
 ];
 module ldraw_lib__71533k01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__71533k01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__71533k01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__71533k01(line=0.2);

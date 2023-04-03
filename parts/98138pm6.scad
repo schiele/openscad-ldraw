@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/4-4ering.scad>
 use <s/98138s01.scad>
-function ldraw_lib__98138pm6() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__98138pm6(realsolid=false) = [
 // 0 Tile  1 x  1 Round with Medium Blue Cross on Magenta Background Pattern
 // 0 Name: 98138pm6.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -18,9 +19,9 @@ function ldraw_lib__98138pm6() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\98138s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01(realsolid)],
 // 1 85 0 0 0 9 0 0 0 1 0 0 0 9 4-4ering.dat
-  [1,85,0,0,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4ering()],
+  [1,85,0,0,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4ering(realsolid)],
 // 4 73 -4.4 0 -1.4 -5 0 -1.4 -4.9543 0 -1.6296 -4.8243 0 -1.8243
   [4,73,-4.4,0,-1.4,-5,0,-1.4,-4.9543,0,-1.6296,-4.8243,0,-1.8243],
 // 4 73 -4.4 0 -1.4 -4.8243 0 -1.8243 -4.6296 0 -1.9543 -4.4 0 -2
@@ -465,5 +466,5 @@ function ldraw_lib__98138pm6() = [
   [3,73,2,0,2,-2,0,-2,2,0,-2],
 ];
 module ldraw_lib__98138pm6(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__98138pm6(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__98138pm6(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__98138pm6(line=0.2);

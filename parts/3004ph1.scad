@@ -2,7 +2,8 @@ use <../lib.scad>
 use <s/3004ph1a.scad>
 use <s/3004ph1b.scad>
 use <s/3004s01.scad>
-function ldraw_lib__3004ph1() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3004ph1(realsolid=false) = [
 // 0 Brick  1 x  2 with Black Lion on Red/Gold Shield Pattern
 // 0 Name: 3004ph1.dat
 // 0 Author: Andy Westrate [westrate]
@@ -22,11 +23,11 @@ function ldraw_lib__3004ph1() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3004s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3004s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3004s01(realsolid)],
 // 1 320 0 0 0 1 0 0 0 1 0 0 0 1 s\3004ph1a.dat
-  [1,320,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3004ph1a()],
+  [1,320,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3004ph1a(realsolid)],
 // 1 334 0 0 0 1 0 0 0 1 0 0 0 1 s\3004ph1b.dat
-  [1,334,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3004ph1b()],
+  [1,334,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3004ph1b(realsolid)],
 // 
 // 4 0 0 15.8 -10 0 17.1 -10 1.8 15 -10 .8 14.9 -10
   [4,0,0,15.8,-10,0,17.1,-10,1.8,15,-10,.8,14.9,-10],
@@ -219,5 +220,5 @@ function ldraw_lib__3004ph1() = [
 // 0
 ];
 module ldraw_lib__3004ph1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3004ph1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3004ph1(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3004ph1(line=0.2);

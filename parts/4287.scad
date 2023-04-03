@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <4287a.scad>
-function ldraw_lib__4287() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4287(realsolid=false) = [
 // 0 ~Moved to 4287a
 // 0 Name: 4287.dat
 // 0 Author: [PTadmin]
@@ -17,8 +18,8 @@ function ldraw_lib__4287() = [
 // 0 // Slope Brick 33 3 x 1 Inverted with Notch and Thick Front
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 4287a.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4287a()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4287a(realsolid)],
 ];
 module ldraw_lib__4287(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4287(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4287(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4287(line=0.2);

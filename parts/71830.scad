@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__71830() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__71830(realsolid=false) = [
 // 0 ~Spring for Technic Competition Cannon
 // 0 Name: 71830.dat
 // 0 Author: Santeri Piippo [arezey]
@@ -3217,5 +3218,5 @@ function ldraw_lib__71830() = [
   [4,16,10.6246,0.5,-4.4009,11.5,0.5,0,12,1,0,11.0866,1,-4.5922],
 ];
 module ldraw_lib__71830(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__71830(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__71830(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__71830(line=0.2);

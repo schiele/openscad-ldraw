@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <6095.scad>
-function ldraw_lib__888() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__888(realsolid=false) = [
 // 0 ~Moved to 6095
 // 0 Name: 888.dat
 // 0 Author: [PTadmin]
@@ -18,8 +19,8 @@ function ldraw_lib__888() = [
 // 
 // 0 // Minifig Compass Cover
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 6095.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__6095()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__6095(realsolid)],
 ];
 module ldraw_lib__888(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__888(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__888(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__888(line=0.2);

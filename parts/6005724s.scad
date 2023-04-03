@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__6005724s() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6005724s(realsolid=false) = [
 // 0 Sticker  3.4 x  3.9 with Diamond Bricks, Cobweb and Arrows
 // 0 Name: 6005724s.dat
 // 0 Author: Christian Neumann [Wesley]
@@ -19,7 +20,7 @@ function ldraw_lib__6005724s() = [
 // 
 // 
 // 1 16 0 -0.25 0 39 0 0 0 0.25 0 0 0 34 box5-12.dat
-  [1,16,0,-0.25,0,39,0,0,0,0.25,0,0,0,34, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,39,0,0,0,0.25,0,0,0,34, ldraw_lib__box5_12(realsolid)],
 // 4 0 -29.2 -0.25 7.2 -30.1 -0.25 7.9 -31.1 -0.25 6.8 -29.9 -0.25 5.6
   [4,0,-29.2,-0.25,7.2,-30.1,-0.25,7.9,-31.1,-0.25,6.8,-29.9,-0.25,5.6],
 // 4 0 -29.2 -0.25 7.2 -29.9 -0.25 5.6 -28.5 -0.25 5.5 -27.7 -0.25 6.1
@@ -2412,5 +2413,5 @@ function ldraw_lib__6005724s() = [
   [4,16,28.5,-0.25,-12.9,32,-0.25,-20.7,34.2,-0.25,-17.9,35.9,-0.25,-14.9],
 ];
 module ldraw_lib__6005724s(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6005724s(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6005724s(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6005724s(line=0.2);

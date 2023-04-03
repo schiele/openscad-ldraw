@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/1-4cyli.scad>
 use <s/973s01.scad>
-function ldraw_lib__973pbq() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__973pbq(realsolid=false) = [
 // 0 Minifig Torso with Iron Fist Pattern
 // 0 Name: 973pbq.dat
 // 0 Author: Rolf Osterthun [Rolf]
@@ -16,9 +17,9 @@ function ldraw_lib__973pbq() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01(realsolid)],
 // 1 0 0 -4 0 4.243 0 -4.243 0 -8 0 -4.243 0 -4.243 1-4cyli.dat
-  [1,0,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli()],
+  [1,0,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli(realsolid)],
 // 
 // 0 // Back
 // 4 16 -8.816 2.122 10 -9.224 2.286 10 -14.345 2 10 -12 0 10
@@ -1165,5 +1166,5 @@ function ldraw_lib__973pbq() = [
   [4,16,-1.143,3.755,-10,0.163,4.082,-10,-0.082,3.184,-10,-0.816,2.776,-10],
 ];
 module ldraw_lib__973pbq(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__973pbq(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__973pbq(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__973pbq(line=0.2);

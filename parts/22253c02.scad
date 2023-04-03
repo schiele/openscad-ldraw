@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <22253.scad>
 use <6594.scad>
-function ldraw_lib__22253c02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__22253c02(realsolid=false) = [
 // 0 Wheel 25 x 28 VR with 35mm Diameter Rear Rim and Complete Cross Axle Hole with Tyre 28/ 38 x 28 VR
 // 0 Name: 22253c02.dat
 // 0 Author: Steffen [Steffen]
@@ -16,10 +17,10 @@ function ldraw_lib__22253c02() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 22253.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__22253()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__22253(realsolid)],
 // 1 256 0 0 0 1 0 0 0 1 0 0 0 1 6594.dat
-  [1,256,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__6594()],
+  [1,256,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__6594(realsolid)],
 ];
 module ldraw_lib__22253c02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__22253c02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__22253c02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__22253c02(line=0.2);

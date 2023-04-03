@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/600880c01s01.scad>
-function ldraw_lib__18200c01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__18200c01(realsolid=false) = [
 // 0 Minifig Skirt  1.5L Fringed with Stepped Edge (Formed)
 // 0 Name: 18200c01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -20,7 +21,7 @@ function ldraw_lib__18200c01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\600880c01s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__600880c01s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__600880c01s01(realsolid)],
 // 3 16 19 0 -10.25 19.2117 6.291 4.1078 19 0 9.75
   [3,16,19,0,-10.25,19.2117,6.291,4.1078,19,0,9.75],
 // 3 16 19 0 -10.25 19.2821 7.3102 2.9917 19.2117 6.291 4.1078
@@ -763,5 +764,5 @@ function ldraw_lib__18200c01() = [
   [5,24,19.7735,18.1751,-8.7803,18.0955,19.1807,-9.9531,19.5658,18.1769,-8.6796,18.1615,19.1822,-10.1857],
 ];
 module ldraw_lib__18200c01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__18200c01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__18200c01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__18200c01(line=0.2);

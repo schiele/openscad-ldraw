@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/92241s01.scad>
-function ldraw_lib__92241p20() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__92241p20(realsolid=false) = [
 // 0 Figure Friends Girl Torso with Magenta and Bright Light Orange Strapless Top with Belt Pattern
 // 0 Name: 92241p20.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -15,7 +16,7 @@ function ldraw_lib__92241p20() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\92241s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__92241s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__92241s01(realsolid)],
 // 
 // 4 191 0.3303 18 -8.7496 1.016 18 -8.6656 1.5254 17.2289 -8.6232 0.9693 16.9985 -8.6972
   [4,191,0.3303,18,-8.7496,1.016,18,-8.6656,1.5254,17.2289,-8.6232,0.9693,16.9985,-8.6972],
@@ -2668,5 +2669,5 @@ function ldraw_lib__92241p20() = [
   [3,26,10.3,12.89,1.05,10.4348,17.5799,0.8853,10.45,18,0.92],
 ];
 module ldraw_lib__92241p20(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__92241p20(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__92241p20(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__92241p20(line=0.2);

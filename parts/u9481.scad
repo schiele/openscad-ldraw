@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__u9481() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__u9481(realsolid=false) = [
 // 0 ~Sticker for Electric Motor 12V
 // 0 Name: u9481.dat
 // 0 Author: Alex Taylor [anathema]
@@ -15,7 +16,7 @@ function ldraw_lib__u9481() = [
 // 
 // 
 // 1 16 0 -0.25 0 17 0 0 0 0.25 0 0 0 35 box5-12.dat
-  [1,16,0,-0.25,0,17,0,0,0,0.25,0,0,0,35, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,17,0,0,0,0.25,0,0,0,35, ldraw_lib__box5_12(realsolid)],
 // 0 !TEXMAP START PLANAR -17 -0.25 35 17 -0.25 35 -17 -0.25 -35 u9481.png
 // 0 !: 4 16 -17 -0.25 -35 17 -0.25 -35 17 -0.25 35 -17 -0.25 35
 // 0 !TEXMAP FALLBACK
@@ -25,5 +26,5 @@ function ldraw_lib__u9481() = [
 // 0
 ];
 module ldraw_lib__u9481(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__u9481(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__u9481(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__u9481(line=0.2);

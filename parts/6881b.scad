@@ -3,7 +3,8 @@ use <6881a.scad>
 use <../p/box4-1.scad>
 use <../p/box4o4a.scad>
 use <../p/stud4.scad>
-function ldraw_lib__6881b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6881b(realsolid=false) = [
 // 0 Tile  6 x  6 with Underside Details
 // 0 Name: 6881b.dat
 // 0 Author: Tore Eriksson [Tore_Eriksson]
@@ -20,13 +21,13 @@ function ldraw_lib__6881b() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 6881a.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__6881a()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__6881a(realsolid)],
 // 1 16 0 4 0 20 0 0 0 4 0 0 0 20 box4o4a.dat
-  [1,16,0,4,0,20,0,0,0,4,0,0,0,20, ldraw_lib__box4o4a()],
+  [1,16,0,4,0,20,0,0,0,4,0,0,0,20, ldraw_lib__box4o4a(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 4 0 18 0 0 0 4 0 0 0 18 box4o4a.dat
-  [1,16,0,4,0,18,0,0,0,4,0,0,0,18, ldraw_lib__box4o4a()],
+  [1,16,0,4,0,18,0,0,0,4,0,0,0,18, ldraw_lib__box4o4a(realsolid)],
 // 2 24 -20 8 -20 -20 8 20
   [2,24,-20,8,-20,-20,8,20],
 // 2 24 -20 8 20 20 8 20
@@ -52,25 +53,25 @@ function ldraw_lib__6881b() = [
 // 4 16 -20 8 20 20 8 20 18 8 18 -18 8 18
   [4,16,-20,8,20,20,8,20,18,8,18,-18,8,18],
 // 1 16 0 4 0 1 0 0 0 -1 0 0 0 1 stud4.dat
-  [1,16,0,4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4()],
+  [1,16,0,4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4(realsolid)],
 // 1 16 10 4 -17 1 0 0 0 3.5 0 0 0 1 box4-1.dat
-  [1,16,10,4,-17,1,0,0,0,3.5,0,0,0,1, ldraw_lib__box4_1()],
+  [1,16,10,4,-17,1,0,0,0,3.5,0,0,0,1, ldraw_lib__box4_1(realsolid)],
 // 1 16 -10 4 -17 1 0 0 0 3.5 0 0 0 1 box4-1.dat
-  [1,16,-10,4,-17,1,0,0,0,3.5,0,0,0,1, ldraw_lib__box4_1()],
+  [1,16,-10,4,-17,1,0,0,0,3.5,0,0,0,1, ldraw_lib__box4_1(realsolid)],
 // 1 16 10 4 17 -1 0 0 0 3.5 0 0 0 -1 box4-1.dat
-  [1,16,10,4,17,-1,0,0,0,3.5,0,0,0,-1, ldraw_lib__box4_1()],
+  [1,16,10,4,17,-1,0,0,0,3.5,0,0,0,-1, ldraw_lib__box4_1(realsolid)],
 // 1 16 -10 4 17 -1 0 0 0 3.5 0 0 0 -1 box4-1.dat
-  [1,16,-10,4,17,-1,0,0,0,3.5,0,0,0,-1, ldraw_lib__box4_1()],
+  [1,16,-10,4,17,-1,0,0,0,3.5,0,0,0,-1, ldraw_lib__box4_1(realsolid)],
 // 1 16 17 4 -10 0 0 -1 0 3.5 0 1 0 0 box4-1.dat
-  [1,16,17,4,-10,0,0,-1,0,3.5,0,1,0,0, ldraw_lib__box4_1()],
+  [1,16,17,4,-10,0,0,-1,0,3.5,0,1,0,0, ldraw_lib__box4_1(realsolid)],
 // 1 16 17 4 10 0 0 -1 0 3.5 0 1 0 0 box4-1.dat
-  [1,16,17,4,10,0,0,-1,0,3.5,0,1,0,0, ldraw_lib__box4_1()],
+  [1,16,17,4,10,0,0,-1,0,3.5,0,1,0,0, ldraw_lib__box4_1(realsolid)],
 // 1 16 -17 4 -10 0 0 1 0 3.5 0 -1 0 0 box4-1.dat
-  [1,16,-17,4,-10,0,0,1,0,3.5,0,-1,0,0, ldraw_lib__box4_1()],
+  [1,16,-17,4,-10,0,0,1,0,3.5,0,-1,0,0, ldraw_lib__box4_1(realsolid)],
 // 1 16 -17 4 10 0 0 1 0 3.5 0 -1 0 0 box4-1.dat
-  [1,16,-17,4,10,0,0,1,0,3.5,0,-1,0,0, ldraw_lib__box4_1()],
+  [1,16,-17,4,10,0,0,1,0,3.5,0,-1,0,0, ldraw_lib__box4_1(realsolid)],
 // 0
 ];
 module ldraw_lib__6881b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6881b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6881b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6881b(line=0.2);

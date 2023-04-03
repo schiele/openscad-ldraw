@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/4-4disc.scad>
 use <../../p/ring1.scad>
-function ldraw_lib__s__973p05a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__973p05a(realsolid=false) = [
 // 0 ~Minifig Torso with Six Button Suit and Anchor Pattern - Gold
 // 0 Name: s\973p05a.dat
 // 0 Author: Chris Dee [cwdee]
@@ -19,22 +20,22 @@ function ldraw_lib__s__973p05a() = [
 // 
 // 0 // Buttons
 // 1 16 5.75 17.5 -10 0.75 0 0 0 0 0.75 0 1 0 4-4disc.dat
-  [1,16,5.75,17.5,-10,0.75,0,0,0,0,0.75,0,1,0, ldraw_lib__4_4disc()],
+  [1,16,5.75,17.5,-10,0.75,0,0,0,0,0.75,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 16 -5.75 17.5 -10 0.75 0 0 0 0 0.75 0 1 0 4-4disc.dat
-  [1,16,-5.75,17.5,-10,0.75,0,0,0,0,0.75,0,1,0, ldraw_lib__4_4disc()],
+  [1,16,-5.75,17.5,-10,0.75,0,0,0,0,0.75,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 16 3 23 -10 0.75 0 0 0 0 0.75 0 1 0 4-4disc.dat
-  [1,16,3,23,-10,0.75,0,0,0,0,0.75,0,1,0, ldraw_lib__4_4disc()],
+  [1,16,3,23,-10,0.75,0,0,0,0,0.75,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 16 -3 23 -10 0.75 0 0 0 0 0.75 0 1 0 4-4disc.dat
-  [1,16,-3,23,-10,0.75,0,0,0,0,0.75,0,1,0, ldraw_lib__4_4disc()],
+  [1,16,-3,23,-10,0.75,0,0,0,0,0.75,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 16 3 28.5 -10 0.75 0 0 0 0 0.75 0 1 0 4-4disc.dat
-  [1,16,3,28.5,-10,0.75,0,0,0,0,0.75,0,1,0, ldraw_lib__4_4disc()],
+  [1,16,3,28.5,-10,0.75,0,0,0,0,0.75,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 16 -3 28.5 -10 0.75 0 0 0 0 0.75 0 1 0 4-4disc.dat
-  [1,16,-3,28.5,-10,0.75,0,0,0,0,0.75,0,1,0, ldraw_lib__4_4disc()],
+  [1,16,-3,28.5,-10,0.75,0,0,0,0,0.75,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 0 Anchor logo
 // 1 16 9.5 10.5 -10 0.5 0 0 0 0 0.5 0 1 0 ring1.dat
-  [1,16,9.5,10.5,-10,0.5,0,0,0,0,0.5,0,1,0, ldraw_lib__ring1()],
+  [1,16,9.5,10.5,-10,0.5,0,0,0,0,0.5,0,1,0, ldraw_lib__ring1(realsolid)],
 // 1 16 9.5 10.5 -10 0.25 0 0 0 0 0.25 0 1 0 ring1.dat
-  [1,16,9.5,10.5,-10,0.25,0,0,0,0,0.25,0,1,0, ldraw_lib__ring1()],
+  [1,16,9.5,10.5,-10,0.25,0,0,0,0,0.25,0,1,0, ldraw_lib__ring1(realsolid)],
 // 2 16 10.125 10.5 -10 10.0774 10.7392 -10
   [2,16,10.125,10.5,-10,10.0774,10.7392,-10],
 // 2 16 10.0774 10.7392 -10 9.9419 10.9419 -10
@@ -96,5 +97,5 @@ function ldraw_lib__s__973p05a() = [
 // 0
 ];
 module ldraw_lib__s__973p05a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__973p05a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__973p05a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__973p05a(line=0.2);

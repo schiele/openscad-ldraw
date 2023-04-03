@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/1-4cyli.scad>
 use <s/973s01.scad>
-function ldraw_lib__973p1o() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__973p1o(realsolid=false) = [
 // 0 Minifig Torso with Flight Suit Jacket, Name Tag, Badge and Zipped Pockets Pattern
 // 0 Name: 973p1o.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -20,9 +21,9 @@ function ldraw_lib__973p1o() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01(realsolid)],
 // 1 15 0 -4 0 4.243 0 -4.243 0 -8 0 -4.243 0 -4.243 1-4cyli.dat
-  [1,15,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli()],
+  [1,15,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli(realsolid)],
 // 
 // 0 // Front
 // 3 15 -5.2 1.9 -10 -3.95 2.85 -10 -3.8 2.3 -10
@@ -2494,5 +2495,5 @@ function ldraw_lib__973p1o() = [
   [4,16,-14.45,31.5,10,-13.5083,31.5,10,0,32,10,-19,32,10],
 ];
 module ldraw_lib__973p1o(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__973p1o(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__973p1o(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__973p1o(line=0.2);

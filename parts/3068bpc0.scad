@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3068bs01.scad>
-function ldraw_lib__3068bpc0() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3068bpc0(realsolid=false) = [
 // 0 Tile  2 x  2 with Red Heart and Chart Line and Black "Dawes" and "SI" Pattern on Clipboard Pattern
 // 0 Name: 3068bpc0.dat
 // 0 Author: Vincent Messenet [Cheenzo]
@@ -17,7 +18,7 @@ function ldraw_lib__3068bpc0() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3068bs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3068bs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3068bs01(realsolid)],
 // 
 // 4 0 2.5 0 15.8 3.2 0 15.8 2.956 0 17.025 2.31 0 16.757
   [4,0,2.5,0,15.8,3.2,0,15.8,2.956,0,17.025,2.31,0,16.757],
@@ -1217,5 +1218,5 @@ function ldraw_lib__3068bpc0() = [
   [3,16,20,0,20,11.258,0,12.571,17.03,0,12.86],
 ];
 module ldraw_lib__3068bpc0(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3068bpc0(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3068bpc0(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3068bpc0(line=0.2);

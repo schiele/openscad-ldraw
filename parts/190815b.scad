@@ -6,7 +6,8 @@ use <../p/type-swiss721bt-bold-ui.scad>
 use <../p/type-swiss721bt-bold-ul.scad>
 use <../p/type-swiss721bt-bold-uo.scad>
 use <../p/type-swiss721bt-bold-up.scad>
-function ldraw_lib__190815b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__190815b(realsolid=false) = [
 // 0 Sticker  0.7 x  2.9 with Black "POLICE" on White Background
 // 0 Name: 190815b.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -23,19 +24,19 @@ function ldraw_lib__190815b() = [
 // 
 // 
 // 1 16 0 -0.25 0 29 0 0 0 0.25 0 0 0 7 box5-12.dat
-  [1,16,0,-0.25,0,29,0,0,0,0.25,0,0,0,7, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,29,0,0,0,0.25,0,0,0,7, ldraw_lib__box5_12(realsolid)],
 // 1 15 -19.5 -.25 0 10 0 0 0 1 0 0 0 10 type-swiss721bt-bold-up.dat
-  [1,15,-19.5,-.25,0,10,0,0,0,1,0,0,0,10, ldraw_lib__type_swiss721bt_bold_up()],
+  [1,15,-19.5,-.25,0,10,0,0,0,1,0,0,0,10, ldraw_lib__type_swiss721bt_bold_up(realsolid)],
 // 1 15 -10.5 -.25 0 10 0 0 0 1 0 0 0 10 type-swiss721bt-bold-uo.dat
-  [1,15,-10.5,-.25,0,10,0,0,0,1,0,0,0,10, ldraw_lib__type_swiss721bt_bold_uo()],
+  [1,15,-10.5,-.25,0,10,0,0,0,1,0,0,0,10, ldraw_lib__type_swiss721bt_bold_uo(realsolid)],
 // 1 15 -1.5 -.25 0 10 0 0 0 1 0 0 0 10 type-swiss721bt-bold-ul.dat
-  [1,15,-1.5,-.25,0,10,0,0,0,1,0,0,0,10, ldraw_lib__type_swiss721bt_bold_ul()],
+  [1,15,-1.5,-.25,0,10,0,0,0,1,0,0,0,10, ldraw_lib__type_swiss721bt_bold_ul(realsolid)],
 // 1 15 3.5 -.25 0 10 0 0 0 1 0 0 0 10 type-swiss721bt-bold-ui.dat
-  [1,15,3.5,-.25,0,10,0,0,0,1,0,0,0,10, ldraw_lib__type_swiss721bt_bold_ui()],
+  [1,15,3.5,-.25,0,10,0,0,0,1,0,0,0,10, ldraw_lib__type_swiss721bt_bold_ui(realsolid)],
 // 1 15 10 -.25 0 10 0 0 0 1 0 0 0 10 type-swiss721bt-bold-uc.dat
-  [1,15,10,-.25,0,10,0,0,0,1,0,0,0,10, ldraw_lib__type_swiss721bt_bold_uc()],
+  [1,15,10,-.25,0,10,0,0,0,1,0,0,0,10, ldraw_lib__type_swiss721bt_bold_uc(realsolid)],
 // 1 15 19 -.25 0 10 0 0 0 1 0 0 0 10 type-swiss721bt-bold-ue.dat
-  [1,15,19,-.25,0,10,0,0,0,1,0,0,0,10, ldraw_lib__type_swiss721bt_bold_ue()],
+  [1,15,19,-.25,0,10,0,0,0,1,0,0,0,10, ldraw_lib__type_swiss721bt_bold_ue(realsolid)],
 // 4 15 1.97 -.25 5 29 -.25 7 -29 -.25 7 -4.97 -.25 5
   [4,15,1.97,-.25,5,29,-.25,7,-29,-.25,7,-4.97,-.25,5],
 // 3 15 -29 -.25 7 -5.86 -.25 5 -4.97 -.25 5
@@ -96,5 +97,5 @@ function ldraw_lib__190815b() = [
   [4,15,2.48,-.25,5,1.97,-.25,5,1.97,-.25,-5,2.48,-.25,-5],
 ];
 module ldraw_lib__190815b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__190815b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__190815b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__190815b(line=0.2);

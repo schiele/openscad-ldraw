@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/1-4tang.scad>
-function ldraw_lib__s__2528as02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__2528as02(realsolid=false) = [
 // 0 ~Minifig Hat Bicorne - Quarter
 // 0 Name: s\2528as02.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -15,7 +16,7 @@ function ldraw_lib__s__2528as02() = [
 // 
 // 
 // 1 16 0 5 0 0 0 13 0 -1 1.15 -13 0 0 1-4tang.dat
-  [1,16,0,5,0,0,0,13,0,-1,1.15,-13,0,0, ldraw_lib__1_4tang()],
+  [1,16,0,5,0,0,0,13,0,-1,1.15,-13,0,0, ldraw_lib__1_4tang(realsolid)],
 // 2 24 0 5 -14.895 3.421 5.174 -14.646
   [2,24,0,5,-14.895,3.421,5.174,-14.646],
 // 2 24 3.421 5.174 -14.646 7.212 5.56 -13.391
@@ -516,5 +517,5 @@ function ldraw_lib__s__2528as02() = [
   [5,24,18.9456,1.5342,-1.5308,14.974,-1.3355,-.842,19.25,2.4964,0,15.31,-1.991,-1.684],
 ];
 module ldraw_lib__s__2528as02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__2528as02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__2528as02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__2528as02(line=0.2);

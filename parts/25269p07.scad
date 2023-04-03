@@ -4,7 +4,8 @@ use <../p/1-4rin39.scad>
 use <s/25269p06s01.scad>
 use <s/25269p06s02.scad>
 use <s/25269s01.scad>
-function ldraw_lib__25269p07() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__25269p07(realsolid=false) = [
 // 0 Tile  1 x  1 Corner Round with Dark Pink Watermelon Pattern
 // 0 Name: 25269p07.dat
 // 0 Author: Bertrand Lequy [Berth]
@@ -22,16 +23,16 @@ function ldraw_lib__25269p07() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\25269s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__25269s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__25269s01(realsolid)],
 // 1 16 -10 0 10 0 0 .5 0 1 0 -.5 0 0 1-4rin39.dat
-  [1,16,-10,0,10,0,0,.5,0,1,0,-.5,0,0, ldraw_lib__1_4rin39()],
+  [1,16,-10,0,10,0,0,.5,0,1,0,-.5,0,0, ldraw_lib__1_4rin39(realsolid)],
 // 1 15 -10 0 10 0 0 1.5 0 1 0 -1.5 0 0 1-4rin12.dat
-  [1,15,-10,0,10,0,0,1.5,0,1,0,-1.5,0,0, ldraw_lib__1_4rin12()],
+  [1,15,-10,0,10,0,0,1.5,0,1,0,-1.5,0,0, ldraw_lib__1_4rin12(realsolid)],
 // 1 5 0 0 0 1 0 0 0 1 0 0 0 1 s\25269p06s01.dat
-  [1,5,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__25269p06s01()],
+  [1,5,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__25269p06s01(realsolid)],
 // 1 6 0 0 0 1 0 0 0 1 0 0 0 1 s\25269p06s02.dat
-  [1,6,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__25269p06s02()],
+  [1,6,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__25269p06s02(realsolid)],
 ];
 module ldraw_lib__25269p07(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__25269p07(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__25269p07(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__25269p07(line=0.2);

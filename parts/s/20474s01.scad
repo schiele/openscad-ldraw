@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/2-8sphe.scad>
 use <90617s04.scad>
-function ldraw_lib__s__20474s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__20474s01(realsolid=false) = [
 // 0 ~Constraction Limb  5 with Split Leg - Quarter
 // 0 Name: s\20474s01.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -201,7 +202,7 @@ function ldraw_lib__s__20474s01() = [
   [2,24,4.9936,-5.5458,-29.7596,4.2013,-2.3133,-28.621],
 // 
 // 1 16 0 0 40 1 0 0 0 1 0 0 0 1 s\90617s04.dat
-  [1,16,0,0,40,1,0,0,0,1,0,0,0,1, ldraw_lib__s__90617s04()],
+  [1,16,0,0,40,1,0,0,0,1,0,0,0,1, ldraw_lib__s__90617s04(realsolid)],
 // 
 // 2 24 2.25 -4.75 20 2.25 -4.736 18.73
   [2,24,2.25,-4.75,20,2.25,-4.736,18.73],
@@ -221,7 +222,7 @@ function ldraw_lib__s__20474s01() = [
   [3,16,15.658,-4.787,21.756,2.25,-4.75,20,17.5,-4.75,24],
 // 
 // 1 16 0 0 -40 0 12.81 0 0 0 -12.81 -12.81 0 0 2-8sphe.dat
-  [1,16,0,0,-40,0,12.81,0,0,0,-12.81,-12.81,0,0, ldraw_lib__2_8sphe()],
+  [1,16,0,0,-40,0,12.81,0,0,0,-12.81,-12.81,0,0, ldraw_lib__2_8sphe(realsolid)],
 // 
 // 2 24 2.6818 -2.2206 -28.1648 4.2013 -2.3133 -28.621
   [2,24,2.6818,-2.2206,-28.1648,4.2013,-2.3133,-28.621],
@@ -365,5 +366,5 @@ function ldraw_lib__s__20474s01() = [
   [5,24,6.664,-5.648,-27.137,4.2013,-2.3133,-28.621,5.812,-3.023,-26.659,4.9936,-5.5458,-29.7596],
 ];
 module ldraw_lib__s__20474s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__20474s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__20474s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__20474s01(line=0.2);

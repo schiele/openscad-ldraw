@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <3-16cyli.scad>
 use <3-16edge.scad>
-function ldraw_lib__3_16cylo() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3_16cylo(realsolid=false) = [
 // 0 Cylinder Open 0.1875
 // 0 Name: 3-16cylo.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -16,12 +17,12 @@ function ldraw_lib__3_16cylo() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 3-16edge.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3_16edge()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3_16edge(realsolid)],
 // 1 16 0 1 0 1 0 0 0 1 0 0 0 1 3-16edge.dat
-  [1,16,0,1,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3_16edge()],
+  [1,16,0,1,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3_16edge(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 3-16cyli.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3_16cyli()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3_16cyli(realsolid)],
 ];
 module ldraw_lib__3_16cylo(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3_16cylo(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3_16cylo(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3_16cylo(line=0.2);

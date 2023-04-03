@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__93055s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__93055s01(realsolid=false) = [
 // 0 ~Minifig Sword Katana (Dragon Guard) Blade Half
 // 0 Name: s\93055s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -3454,5 +3455,5 @@ function ldraw_lib__s__93055s01() = [
   [5,24,1.993,-20.098,10.814,1.58,-26.4,10.128,2.328,-26.525,7.529,1.268,-20.456,11.635],
 ];
 module ldraw_lib__s__93055s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__93055s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__93055s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__93055s01(line=0.2);

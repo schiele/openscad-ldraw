@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <59826b.scad>
-function ldraw_lib__59826c() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__59826c(realsolid=false) = [
 // 0 Sticker  0.8 x  1.8 with Red/Yellow Stripes Right Down
 // 0 Name: 59826c.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -15,8 +16,8 @@ function ldraw_lib__59826c() = [
 // 
 // 
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 59826b.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__59826b()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__59826b(realsolid)],
 ];
 module ldraw_lib__59826c(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__59826c(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__59826c(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__59826c(line=0.2);

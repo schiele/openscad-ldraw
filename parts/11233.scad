@@ -2,7 +2,8 @@ use <../lib.scad>
 use <s/11233s01.scad>
 use <s/11233s02.scad>
 use <../p/stud16.scad>
-function ldraw_lib__11233() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__11233(realsolid=false) = [
 // 0 Minifig Mask Wolf
 // 0 Name: 11233.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -21,16 +22,16 @@ function ldraw_lib__11233() = [
 // 
 // 
 // 1 16 0 -4 0 1 0 0 0 -1 0 0 0 -1 stud16.dat
-  [1,16,0,-4,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__stud16()],
+  [1,16,0,-4,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__stud16(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\11233s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__11233s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__11233s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\11233s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__11233s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__11233s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\11233s02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__11233s02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__11233s02(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\11233s02.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__11233s02()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__11233s02(realsolid)],
 ];
 module ldraw_lib__11233(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__11233(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__11233(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__11233(line=0.2);

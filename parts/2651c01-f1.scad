@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <2650.scad>
 use <2651.scad>
-function ldraw_lib__2651c01_f1() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2651c01_f1(realsolid=false) = [
 // 0 Hinge Hook Retracted (Shortcut)
 // 0 Name: 2651c01-f1.dat
 // 0 Author: Bernd Broich [bbroich]
@@ -23,10 +24,10 @@ function ldraw_lib__2651c01_f1() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 2650.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2650()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2650(realsolid)],
 // 1 16 -76 0 0 1 0 0 0 1 0 0 0 1 2651.dat
-  [1,16,-76,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2651()],
+  [1,16,-76,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2651(realsolid)],
 ];
 module ldraw_lib__2651c01_f1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2651c01_f1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2651c01_f1(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2651c01_f1(line=0.2);

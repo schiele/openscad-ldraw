@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/6180ps1s01.scad>
 use <s/6180s01.scad>
-function ldraw_lib__6180ps1() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6180ps1(realsolid=false) = [
 // 0 Plate  4 x  6 with 12 Studs on Three Edges with Lego and Star Wars Logos and "BOBA FETT" Pattern
 // 0 Name: 6180ps1.dat
 // 0 Author: Vincent Messenet [Cheenzo]
@@ -18,9 +19,9 @@ function ldraw_lib__6180ps1() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\6180s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6180s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6180s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\6180ps1s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6180ps1s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6180ps1s01(realsolid)],
 // 
 // 0 // Boba Fett
 // 3 15 -26 0 .5 -25.25 0 0 -25.25 0 .5
@@ -469,5 +470,5 @@ function ldraw_lib__6180ps1() = [
   [3,16,-40,0,-4,-28.75,0,0,-29.25,0,0],
 ];
 module ldraw_lib__6180ps1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6180ps1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6180ps1(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6180ps1(line=0.2);

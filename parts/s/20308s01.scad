@@ -3,7 +3,8 @@ use <../../p/box3u2p.scad>
 use <../../p/box4-1.scad>
 use <../../p/box5.scad>
 use <../../p/stud3.scad>
-function ldraw_lib__s__20308s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__20308s01(realsolid=false) = [
 // 0 ~Animal Head Cuboid without Decorated Surfaces
 // 0 Name: s\20308s01.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -20,29 +21,29 @@ function ldraw_lib__s__20308s01() = [
 // 
 // 
 // 1 16 0 0 0 20 0 0 0 -16 0 0 0 10 box5.dat
-  [1,16,0,0,0,20,0,0,0,-16,0,0,0,10, ldraw_lib__box5()],
+  [1,16,0,0,0,20,0,0,0,-16,0,0,0,10, ldraw_lib__box5(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 0 16 0 0 0 -12 0 0 0 6 box5.dat
-  [1,16,0,0,0,16,0,0,0,-12,0,0,0,6, ldraw_lib__box5()],
+  [1,16,0,0,0,16,0,0,0,-12,0,0,0,6, ldraw_lib__box5(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 20 -29.5 3.5 0 0 0 -11 0 0 0 -7.5 box4-1.dat
-  [1,16,0,20,-29.5,3.5,0,0,0,-11,0,0,0,-7.5, ldraw_lib__box4_1()],
+  [1,16,0,20,-29.5,3.5,0,0,0,-11,0,0,0,-7.5, ldraw_lib__box4_1(realsolid)],
 // 1 16 0 20 -18 0 0 16 0 -32.5 0 8 0 0 box3u2p.dat
-  [1,16,0,20,-18,0,0,16,0,-32.5,0,8,0,0, ldraw_lib__box3u2p()],
+  [1,16,0,20,-18,0,0,16,0,-32.5,0,8,0,0, ldraw_lib__box3u2p(realsolid)],
 // 1 16 0 20 -33.5 0 0 7.5 0 -14.5 0 7.5 0 0 box3u2p.dat
-  [1,16,0,20,-33.5,0,0,7.5,0,-14.5,0,7.5,0,0, ldraw_lib__box3u2p()],
+  [1,16,0,20,-33.5,0,0,7.5,0,-14.5,0,7.5,0,0, ldraw_lib__box3u2p(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 20 -16 0 0 12 0 -28 0 6 0 0 box3u2p.dat
-  [1,16,0,20,-16,0,0,12,0,-28,0,6,0,0, ldraw_lib__box3u2p()],
+  [1,16,0,20,-16,0,0,12,0,-28,0,6,0,0, ldraw_lib__box3u2p(realsolid)],
 // 1 16 11 -12.5 -12 3.7 0 0 0 -7.5 0 0 0 2 box5.dat
-  [1,16,11,-12.5,-12,3.7,0,0,0,-7.5,0,0,0,2, ldraw_lib__box5()],
+  [1,16,11,-12.5,-12,3.7,0,0,0,-7.5,0,0,0,2, ldraw_lib__box5(realsolid)],
 // 1 16 -11 -12.5 -12 3.7 0 0 0 -7.5 0 0 0 2 box5.dat
-  [1,16,-11,-12.5,-12,3.7,0,0,0,-7.5,0,0,0,2, ldraw_lib__box5()],
+  [1,16,-11,-12.5,-12,3.7,0,0,0,-7.5,0,0,0,2, ldraw_lib__box5(realsolid)],
 // 1 16 0 -12 0 1 0 0 0 -3 0 0 0 1 stud3.dat
-  [1,16,0,-12,0,1,0,0,0,-3,0,0,0,1, ldraw_lib__stud3()],
+  [1,16,0,-12,0,1,0,0,0,-3,0,0,0,1, ldraw_lib__stud3(realsolid)],
 // 4 16 12 20 -10 12 -8 -10 16 -12.5 -10 16 20 -10
   [4,16,12,20,-10,12,-8,-10,16,-12.5,-10,16,20,-10],
 // 4 16 -16 20 -10 -16 -12.5 -10 -12 -8 -10 -12 20 -10
@@ -91,5 +92,5 @@ function ldraw_lib__s__20308s01() = [
   [2,24,7.5,20,-41,-7.5,20,-41],
 ];
 module ldraw_lib__s__20308s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__20308s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__20308s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__20308s01(line=0.2);

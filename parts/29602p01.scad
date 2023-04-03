@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/29602s01.scad>
-function ldraw_lib__29602p01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__29602p01(realsolid=false) = [
 // 0 Animal Dog French Bulldog with White Spot on Forehead and Black Face Pattern
 // 0 Name: 29602p01.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -20,9 +21,9 @@ function ldraw_lib__29602p01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\29602s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__29602s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__29602s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\29602s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__29602s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__29602s01(realsolid)],
 // 
 // 3 16 0 -20.592 -7.42 -.803 -34.978 -6.781 .803 -34.978 -6.781
   [3,16,0,-20.592,-7.42,-.803,-34.978,-6.781,.803,-34.978,-6.781],
@@ -983,5 +984,5 @@ function ldraw_lib__29602p01() = [
   [4,0,5.7298,-29.5318,-24.4457,6.5492,-29.4665,-23.8988,5.05,-31.524,-24.844,4.7003,-30.9712,-25.0952],
 ];
 module ldraw_lib__29602p01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__29602p01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__29602p01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__29602p01(line=0.2);

@@ -2,7 +2,8 @@ use <../lib.scad>
 use <s/4345s01.scad>
 use <s/4346p03a.scad>
 use <../p/stug-2x2.scad>
-function ldraw_lib__4345ap03() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4345ap03(realsolid=false) = [
 // 0 Container Box  2 x  2 x  2 Solid Studs with Mailbox Pattern
 // 0 Name: 4345ap03.dat
 // 0 Author: Steffen [Steffen]
@@ -20,11 +21,11 @@ function ldraw_lib__4345ap03() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4345s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4345s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4345s01(realsolid)],
 // 1 16 0 26.5 20 -1 0 0 0 0 -1 0 -1 0 s\4346p03a.dat
-  [1,16,0,26.5,20,-1,0,0,0,0,-1,0,-1,0, ldraw_lib__s__4346p03a()],
+  [1,16,0,26.5,20,-1,0,0,0,0,-1,0,-1,0, ldraw_lib__s__4346p03a(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 stug-2x2.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_2x2()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_2x2(realsolid)],
 // 4 16 15.74 38.22 20 20 48 20 -20 48 20 -15.74 38.22 20
   [4,16,15.74,38.22,20,20,48,20,-20,48,20,-15.74,38.22,20],
 // 3 16 -17.74 38.22 20 -15.74 38.22 20 -20 48 20
@@ -58,5 +59,5 @@ function ldraw_lib__4345ap03() = [
 // 
 ];
 module ldraw_lib__4345ap03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4345ap03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4345ap03(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4345ap03(line=0.2);

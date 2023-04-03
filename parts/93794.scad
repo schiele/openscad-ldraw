@@ -4,7 +4,8 @@ use <../p/box5.scad>
 use <../p/clip8.scad>
 use <../p/rect1.scad>
 use <../p/rect2p.scad>
-function ldraw_lib__93794() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__93794(realsolid=false) = [
 // 0 Tile  1 x  1 with Clip with Centre Notch
 // 0 Name: 93794.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -19,11 +20,11 @@ function ldraw_lib__93794() = [
 // 
 // 
 // 1 16 0 8 0 10 0 0 0 -8 0 0 0 10 box4.dat
-  [1,16,0,8,0,10,0,0,0,-8,0,0,0,10, ldraw_lib__box4()],
+  [1,16,0,8,0,10,0,0,0,-8,0,0,0,10, ldraw_lib__box4(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 8 0 6 0 0 0 -4 0 0 0 6 box5.dat
-  [1,16,0,8,0,6,0,0,0,-4,0,0,0,6, ldraw_lib__box5()],
+  [1,16,0,8,0,6,0,0,0,-4,0,0,0,6, ldraw_lib__box5(realsolid)],
 // 4 16 10 8 10 6 8 6 -6 8 6 -10 8 10
   [4,16,10,8,10,6,8,6,-6,8,6,-10,8,10],
 // 4 16 -10 8 10 -6 8 6 -6 8 -6 -10 8 -10
@@ -33,12 +34,12 @@ function ldraw_lib__93794() = [
 // 4 16 10 8 -10 6 8 -6 6 8 6 10 8 10
   [4,16,10,8,-10,6,8,-6,6,8,6,10,8,10],
 // 1 16 0 0 -7 0 0 -10 0 1 0 3 0 0 rect1.dat
-  [1,16,0,0,-7,0,0,-10,0,1,0,3,0,0, ldraw_lib__rect1()],
+  [1,16,0,0,-7,0,0,-10,0,1,0,3,0,0, ldraw_lib__rect1(realsolid)],
 // 1 16 0 0 7 0 0 10 0 1 0 -3 0 0 rect1.dat
-  [1,16,0,0,7,0,0,10,0,1,0,-3,0,0, ldraw_lib__rect1()],
+  [1,16,0,0,7,0,0,10,0,1,0,-3,0,0, ldraw_lib__rect1(realsolid)],
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 clip8.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__clip8()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__clip8(realsolid)],
 // 3 16 -8 0 4 -10 0 4 -7.8478 -8.1481 4
   [3,16,-8,0,4,-10,0,4,-7.8478,-8.1481,4],
 // 3 16 7.8478 -8.1481 4 10 0 4 8 0 4
@@ -48,11 +49,11 @@ function ldraw_lib__93794() = [
 // 3 16 8 0 -4 10 0 -4 7.8478 -8.1481 -4
   [3,16,8,0,-4,10,0,-4,7.8478,-8.1481,-4],
 // 1 16 -8.9239 -4.07405 0 1.0761 1 0 -4.07405 0 0 0 0 4 rect2p.dat
-  [1,16,-8.9239,-4.07405,0,1.0761,1,0,-4.07405,0,0,0,0,4, ldraw_lib__rect2p()],
+  [1,16,-8.9239,-4.07405,0,1.0761,1,0,-4.07405,0,0,0,0,4, ldraw_lib__rect2p(realsolid)],
 // 1 16 8.9239 -4.07405 0 -1.0761 -1 0 -4.07405 0 0 0 0 -4 rect2p.dat
-  [1,16,8.9239,-4.07405,0,-1.0761,-1,0,-4.07405,0,0,0,0,-4, ldraw_lib__rect2p()],
+  [1,16,8.9239,-4.07405,0,-1.0761,-1,0,-4.07405,0,0,0,0,-4, ldraw_lib__rect2p(realsolid)],
 // 
 ];
 module ldraw_lib__93794(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__93794(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__93794(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__93794(line=0.2);

@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4cylc3.scad>
 use <../p/4-4ering.scad>
 use <../p/48/4-4disc.scad>
-function ldraw_lib__820671a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__820671a(realsolid=false) = [
 // 0 Sticker  1.9 x  1.9 Round with Lifepreserver
 // 0 Name: 820671a.dat
 // 0 Author: Thomas Burger [grapeape]
@@ -28,9 +29,9 @@ function ldraw_lib__820671a() = [
 // 
 // 
 // 1 16 0 0 0 19 0 0 0 -0.25 0 0 0 19 4-4cylc3.dat
-  [1,16,0,0,0,19,0,0,0,-0.25,0,0,0,19, ldraw_lib__4_4cylc3()],
+  [1,16,0,0,0,19,0,0,0,-0.25,0,0,0,19, ldraw_lib__4_4cylc3(realsolid)],
 // 1 16 0 -0.25 0 0 0 -7.9 0 1 0 7.9 0 0 48\4-4disc.dat
-  [1,16,0,-0.25,0,0,0,-7.9,0,1,0,7.9,0,0, ldraw_lib__48__4_4disc()],
+  [1,16,0,-0.25,0,0,0,-7.9,0,1,0,7.9,0,0, ldraw_lib__48__4_4disc(realsolid)],
 // 3 16 16.2 -0.25 0 19 -0.25 0 16.06 -0.25 2.12
   [3,16,16.2,-0.25,0,19,-0.25,0,16.06,-0.25,2.12],
 // 4 16 17.5541 -0.25 7.2713 15.65 -0.25 4.19 16.06 -0.25 2.12 19 -0.25 0
@@ -128,7 +129,7 @@ function ldraw_lib__820671a() = [
 // 3 16 12.85 -0.25 9.86 13.4349 -0.25 13.4349 11.46 -0.25 11.46
   [3,16,12.85,-0.25,9.86,13.4349,-0.25,13.4349,11.46,-0.25,11.46],
 // 1 16 0 -0.25 0 19 0 0 0 1 0 0 0 19 4-4ering.dat
-  [1,16,0,-0.25,0,19,0,0,0,1,0,0,0,19, ldraw_lib__4_4ering()],
+  [1,16,0,-0.25,0,19,0,0,0,1,0,0,0,19, ldraw_lib__4_4ering(realsolid)],
 // 
 // 0 BFC NOCLIP
   [0,"BFC","NOCLIP"],
@@ -440,5 +441,5 @@ function ldraw_lib__820671a() = [
   [4,0,-5.58609,-.25,5.58609,-4.80952,-.25,6.26786,-5.48,-.25,7.14,-6.36,-.25,6.36],
 ];
 module ldraw_lib__820671a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__820671a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__820671a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__820671a(line=0.2);

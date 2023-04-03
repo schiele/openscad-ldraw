@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/4-4cylc.scad>
-function ldraw_lib__96485() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__96485(realsolid=false) = [
 // 0 Figure Friends Hair Decoration, Heart with Pin
 // 0 Name: 96485.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -19,7 +20,7 @@ function ldraw_lib__96485() = [
 // 
 // 
 // 1 16 0 5.5 0 2 0 0 0 -5.5 0 0 0 2 4-4cylc.dat
-  [1,16,0,5.5,0,2,0,0,0,-5.5,0,0,0,2, ldraw_lib__4_4cylc()],
+  [1,16,0,5.5,0,2,0,0,0,-5.5,0,0,0,2, ldraw_lib__4_4cylc(realsolid)],
 // 4 16 -1.589 0 7.116 -3.858 0 8.264 -3.854 -4.733 8.264 -1.589 -4.81 7.116
   [4,16,-1.589,0,7.116,-3.858,0,8.264,-3.854,-4.733,8.264,-1.589,-4.81,7.116],
 // 4 16 -3.858 0 8.264 -1.589 0 7.116 -2.064 0 -9.859 -5.339 0 -7.846
@@ -463,5 +464,5 @@ function ldraw_lib__96485() = [
   [5,24,1.765,-4.807,-7.255,1.765,-2.875,-7.255,0,-4.826,-7.694,4.723,-4.686,-5.111],
 ];
 module ldraw_lib__96485(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__96485(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__96485(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__96485(line=0.2);

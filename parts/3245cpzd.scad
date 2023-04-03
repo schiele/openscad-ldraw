@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3245cs01.scad>
-function ldraw_lib__3245cpzd() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3245cpzd(realsolid=false) = [
 // 0 Brick  1 x  2 x  2 with Jedi Robe and Reddish Brown Undershirt Pattern
 // 0 Name: 3245cpzd.dat
 // 0 Author: Vincent Messenet [Cheenzo]
@@ -17,7 +18,7 @@ function ldraw_lib__3245cpzd() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3245cs01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3245cs01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3245cs01(realsolid)],
 // 
 // 3 70 8.7 14.55 -10 9.95 11.6 -10 7.6 11.3 -10
   [3,70,8.7,14.55,-10,9.95,11.6,-10,7.6,11.3,-10],
@@ -189,5 +190,5 @@ function ldraw_lib__3245cpzd() = [
   [3,16,-20,48,-10,-.45,4.95,-10,-20,0,-10],
 ];
 module ldraw_lib__3245cpzd(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3245cpzd(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3245cpzd(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3245cpzd(line=0.2);

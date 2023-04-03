@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__6153754f() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__6153754f(realsolid=false) = [
 // 0 Sticker  0.8 x  2.8 with White "CAD-156" on Black Background
 // 0 Name: 6153754f.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -17,7 +18,7 @@ function ldraw_lib__6153754f() = [
 // 
 // 
 // 1 16 0 -0.25 0 28 0 0 0 0.25 0 0 0 8 box5-12.dat
-  [1,16,0,-0.25,0,28,0,0,0,0.25,0,0,0,8, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,28,0,0,0,0.25,0,0,0,8, ldraw_lib__box5_12(realsolid)],
 // 4 15 -23.42 -0.25 -2.59 -25.08 -0.25 -2.35 -24.85 -0.25 -3.16 -24.49 -0.25 -3.88
   [4,15,-23.42,-0.25,-2.59,-25.08,-0.25,-2.35,-24.85,-0.25,-3.16,-24.49,-0.25,-3.88],
 // 4 15 -23.61 -0.25 -1.49 -25.15 -0.25 -1.49 -25.08 -0.25 -2.35 -23.42 -0.25 -2.59
@@ -626,5 +627,5 @@ function ldraw_lib__6153754f() = [
   [3,0,-2.22,-0.25,4.52,-5.81,-0.25,2.55,-4.28,-0.25,2.27],
 ];
 module ldraw_lib__6153754f(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__6153754f(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__6153754f(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__6153754f(line=0.2);

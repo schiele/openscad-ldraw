@@ -6,7 +6,8 @@ use <../p/4-4ring2.scad>
 use <s/98388p04s01.scad>
 use <s/98388s01.scad>
 use <../p/stud4a.scad>
-function ldraw_lib__98388p04() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__98388p04(realsolid=false) = [
 // 0 Animal Friends Bird with Eyes, Feathers and Magenta Beak Pattern
 // 0 Name: 98388p04.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -25,31 +26,31 @@ function ldraw_lib__98388p04() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\98388s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98388s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98388s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\98388s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__98388s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__98388s01(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\98388p04s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98388p04s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98388p04s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\98388p04s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__98388p04s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__98388p04s01(realsolid)],
 // 1 16 0 -4 0 1 0 0 0 -1 0 0 0 -1 stud4a.dat
-  [1,16,0,-4,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__stud4a()],
+  [1,16,0,-4,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__stud4a(realsolid)],
 // 1 16 0 -7 0 8 0 0 0 3 0 0 0 8 4-4cyli.dat
-  [1,16,0,-7,0,8,0,0,0,3,0,0,0,8, ldraw_lib__4_4cyli()],
+  [1,16,0,-7,0,8,0,0,0,3,0,0,0,8, ldraw_lib__4_4cyli(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -4 0 4 0 0 0 -16 0 0 0 4 4-4cyli.dat
-  [1,16,0,-4,0,4,0,0,0,-16,0,0,0,4, ldraw_lib__4_4cyli()],
+  [1,16,0,-4,0,4,0,0,0,-16,0,0,0,4, ldraw_lib__4_4cyli(realsolid)],
 // 1 16 0 -20 0 4 0 0 0 -1 0 0 0 4 4-4edge.dat
-  [1,16,0,-20,0,4,0,0,0,-1,0,0,0,4, ldraw_lib__4_4edge()],
+  [1,16,0,-20,0,4,0,0,0,-1,0,0,0,4, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 -4 0 4 0 0 0 -1 0 0 0 4 4-4edge.dat
-  [1,16,0,-4,0,4,0,0,0,-1,0,0,0,4, ldraw_lib__4_4edge()],
+  [1,16,0,-4,0,4,0,0,0,-1,0,0,0,4, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 -4 0 2 0 0 0 -1 0 0 0 2 4-4ring2.dat
-  [1,16,0,-4,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__4_4ring2()],
+  [1,16,0,-4,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__4_4ring2(realsolid)],
 // 1 16 0 -4 0 6 0 0 0 -1 0 0 0 6 4-4edge.dat
-  [1,16,0,-4,0,6,0,0,0,-1,0,0,0,6, ldraw_lib__4_4edge()],
+  [1,16,0,-4,0,6,0,0,0,-1,0,0,0,6, ldraw_lib__4_4edge(realsolid)],
 // 1 16 0 -20 0 4 0 0 0 -1 0 0 0 4 4-4disc.dat
-  [1,16,0,-20,0,4,0,0,0,-1,0,0,0,4, ldraw_lib__4_4disc()],
+  [1,16,0,-20,0,4,0,0,0,-1,0,0,0,4, ldraw_lib__4_4disc(realsolid)],
 // 3 0 -0.113 -22.086 -12.374 -0.12 -21.954 -12.306 0 -21.953 -12.338
   [3,0,-0.113,-22.086,-12.374,-0.12,-21.954,-12.306,0,-21.953,-12.338],
 // 3 0 -0.78 -22.24 -12.272 -1.39 -21.962 -11.972 -0.99 -21.96 -12.078
@@ -332,5 +333,5 @@ function ldraw_lib__98388p04() = [
   [3,0,-4.45,-21.24,-10.492,-4.24,-21.56,-10.629,-4.35,-22.084,-10.509],
 ];
 module ldraw_lib__98388p04(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__98388p04(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__98388p04(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__98388p04(line=0.2);

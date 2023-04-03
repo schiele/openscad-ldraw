@@ -2,7 +2,8 @@ use <../lib.scad>
 use <773.scad>
 use <970.scad>
 use <971.scad>
-function ldraw_lib__74330() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__74330(realsolid=false) = [
 // 0 ~_Minifig Hips and Leg / Leg Wooden Black/Brown (Obsolete)
 // 0 Name: 74330.dat
 // 0 Author: [PTadmin]
@@ -21,12 +22,12 @@ function ldraw_lib__74330() = [
 // 
 // 
 // 1 0 0 0 0 1 0 0 0 1 0 0 0 1 970.dat
-  [1,0,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__970()],
+  [1,0,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__970(realsolid)],
 // 1 0 0 12 0 1 0 0 0 1 0 0 0 1 971.dat
-  [1,0,0,12,0,1,0,0,0,1,0,0,0,1, ldraw_lib__971()],
+  [1,0,0,12,0,1,0,0,0,1,0,0,0,1, ldraw_lib__971(realsolid)],
 // 1 6 0 12 0 -1 0 0 0 1 0 0 0 -1 773.dat
-  [1,6,0,12,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__773()],
+  [1,6,0,12,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__773(realsolid)],
 ];
 module ldraw_lib__74330(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__74330(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__74330(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__74330(line=0.2);

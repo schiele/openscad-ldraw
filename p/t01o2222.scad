@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__t01o2222() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__t01o2222(realsolid=false) = [
 // 0 Torus Outside  1 x 0.2222 x 1
 // 0 Name: t01o2222.dat
 // 0 Author: Alex Taylor [anathema]
@@ -448,5 +449,5 @@ function ldraw_lib__t01o2222() = [
 // 0 // Build by Primitive Generator 2
 ];
 module ldraw_lib__t01o2222(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__t01o2222(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__t01o2222(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__t01o2222(line=0.2);

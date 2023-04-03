@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__3846p44a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__3846p44a(realsolid=false) = [
 // 0 ~Wolfpack Pattern - Wolf Head
 // 0 Name: s\3846p44a.dat
 // 0 Author: Chris Dee [cwdee]
@@ -90,5 +91,5 @@ function ldraw_lib__s__3846p44a() = [
 // 0
 ];
 module ldraw_lib__s__3846p44a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__3846p44a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__3846p44a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__3846p44a(line=0.2);

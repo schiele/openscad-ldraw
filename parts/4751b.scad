@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <4751c.scad>
 use <../p/stug-2x2.scad>
-function ldraw_lib__4751b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4751b(realsolid=false) = [
 // 0 Propeller  4 Blade 13 Diameter with Pin Hole and 4 Studs
 // 0 Name: 4751b.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -20,10 +21,10 @@ function ldraw_lib__4751b() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 4751c.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4751c()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4751c(realsolid)],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 stug-2x2.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_2x2()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_2x2(realsolid)],
 ];
 module ldraw_lib__4751b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4751b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4751b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4751b(line=0.2);

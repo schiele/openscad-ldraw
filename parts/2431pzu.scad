@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/2431s01.scad>
-function ldraw_lib__2431pzu() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2431pzu(realsolid=false) = [
 // 0 Tile  1 x  4 with White SW Togruta Cheeks Ornaments Pattern
 // 0 Name: 2431pzu.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -17,7 +18,7 @@ function ldraw_lib__2431pzu() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2431s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2431s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2431s01(realsolid)],
 // 
 // 4 15 -38.4 0 4.75 -37.15 0 6.65 -38.15 0 8.35 -38.4 0 6.5
   [4,15,-38.4,0,4.75,-37.15,0,6.65,-38.15,0,8.35,-38.4,0,6.5],
@@ -203,5 +204,5 @@ function ldraw_lib__2431pzu() = [
   [4,16,20,0,-10,20,0,10,-20,0,10,-20,0,-10],
 ];
 module ldraw_lib__2431pzu(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2431pzu(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2431pzu(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2431pzu(line=0.2);

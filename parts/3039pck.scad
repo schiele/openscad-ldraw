@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3039s01.scad>
-function ldraw_lib__3039pck() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3039pck(realsolid=false) = [
 // 0 Slope Brick 45  2 x  2 with Cash Register with "9.99", Card Slot and Contactless Payment Pattern
 // 0 Name: 3039pck.dat
 // 0 Author: Fredrik Hareide [fhareide]
@@ -17,7 +18,7 @@ function ldraw_lib__3039pck() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3039s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3039s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3039s01(realsolid)],
 // 
 // 4 322 16.6297 .6203 -10.6203 16.2952 1.2585 -11.2585 16.4691 1.3095 -11.3096 17.1076 .7606 -10.7606
   [4,322,16.6297,.6203,-10.6203,16.2952,1.2585,-11.2585,16.4691,1.3095,-11.3096,17.1076,.7606,-10.7606],
@@ -1712,5 +1713,5 @@ function ldraw_lib__3039pck() = [
   [3,272,-4.7362,12.9375,-22.9375,-4.6155,12.9022,-22.9022,-4.857,12.9022,-22.9022],
 ];
 module ldraw_lib__3039pck(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3039pck(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3039pck(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3039pck(line=0.2);

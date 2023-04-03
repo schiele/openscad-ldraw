@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__logosantanders03b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__logosantanders03b(realsolid=false) = [
 // 0 ~Logo Santander Emblem Background with Black Shadow
 // 0 Name: s\logosantanders03b.dat
 // 0 Author: Massimo Maso [Sirio]
@@ -274,5 +275,5 @@ function ldraw_lib__s__logosantanders03b() = [
   [3,16,2.95,0,-2.59,1.5446,0,-2.404,1.2709,0,-2.4729],
 ];
 module ldraw_lib__s__logosantanders03b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__logosantanders03b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__logosantanders03b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__logosantanders03b(line=0.2);

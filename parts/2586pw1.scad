@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/2586s01.scad>
-function ldraw_lib__2586pw1() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2586pw1(realsolid=false) = [
 // 0 Minifig Shield Ovoid with American Indian Pattern
 // 0 Name: 2586pw1.dat
 // 0 Author: Orion Pobursky [OrionP]
@@ -25,7 +26,7 @@ function ldraw_lib__2586pw1() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2586s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2586s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2586s01(realsolid)],
 // 4 4 -6.1 -27.6 -8 -6.4 -24.1 -8 -5.7 -23.1 -8 -5.3 -27.6 -8
   [4,4,-6.1,-27.6,-8,-6.4,-24.1,-8,-5.7,-23.1,-8,-5.3,-27.6,-8],
 // 4 4 -6.4 -24.1 -8 -11.1 -25 -8 -9.7 -23.8 -8 -5.7 -23.1 -8
@@ -1925,5 +1926,5 @@ function ldraw_lib__2586pw1() = [
 // 0 // Pattern adjusted in LPC
 ];
 module ldraw_lib__2586pw1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2586pw1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2586pw1(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2586pw1(line=0.2);

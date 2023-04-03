@@ -2,7 +2,8 @@ use <../lib.scad>
 use <2977.scad>
 use <2978.scad>
 use <886.scad>
-function ldraw_lib__2977c01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2977c01(realsolid=false) = [
 // 0 ~Electric Rotation Sensor with Cable Stub (Complete) (Obsolete)
 // 0 Name: 2977c01.dat
 // 0 Author: Jonathan P. Brown
@@ -24,12 +25,12 @@ function ldraw_lib__2977c01() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 886.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__886()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__886(realsolid)],
 // 1 8 0 40 0 1 0 0 0 1 0 0 0 1 2977.dat
-  [1,8,0,40,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2977()],
+  [1,8,0,40,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2977(realsolid)],
 // 1 7 20 18 0 1 0 0 0 1 0 0 0 1 2978.dat
-  [1,7,20,18,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2978()],
+  [1,7,20,18,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2978(realsolid)],
 ];
 module ldraw_lib__2977c01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2977c01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2977c01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2977c01(line=0.2);

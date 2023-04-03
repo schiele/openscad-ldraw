@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <2466.scad>
-function ldraw_lib__30226() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__30226(realsolid=false) = [
 // 0 =Panel  3 x  2 x  6
 // 0 Name: 30226.dat
 // 0 Author: Rolf Osterthun [Rolf]
@@ -18,8 +19,8 @@ function ldraw_lib__30226() = [
 // 0 // Part 30226 is the transparent counterpart of 2466
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 2466.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2466()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2466(realsolid)],
 ];
 module ldraw_lib__30226(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__30226(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__30226(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__30226(line=0.2);

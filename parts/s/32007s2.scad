@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__32007s2() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__32007s2(realsolid=false) = [
 // 0 ~Technic Tread Hub Subpart
 // 0 Name: s\32007s2.dat
 // 0 Author: Marc Klein [marckl]
@@ -134,5 +135,5 @@ function ldraw_lib__s__32007s2() = [
   [2,24,9.5675,23.0975,-12,3.6547,24.2733,-12],
 ];
 module ldraw_lib__s__32007s2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__32007s2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__32007s2(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__32007s2(line=0.2);

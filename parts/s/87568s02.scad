@@ -1,7 +1,8 @@
 use <../../lib.scad>
 use <../../p/2-4ndis.scad>
 use <../../p/3-16cyli.scad>
-function ldraw_lib__s__87568s02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__87568s02(realsolid=false) = [
 // 0 ~Minifig Mechanical Arm Bent with Clips at 90 Degrees - Pattern
 // 0 Name: s\87568s02.dat
 // 0 Author: Willy Tschager [Holly-Wood]
@@ -42,11 +43,11 @@ function ldraw_lib__s__87568s02() = [
 // 4 16 7.8 18.7 -40 6.712 18.7 -43.875 6.712 22.2 -43.875 7.8 22.2 -40
   [4,16,7.8,18.7,-40,6.712,18.7,-43.875,6.712,22.2,-43.875,7.8,22.2,-40],
 // 1 16 0 22.2 -40 2.98493 0 7.20626 0 -3.5 0 7.20626 0 -2.98493 3-16cyli.dat
-  [1,16,0,22.2,-40,2.98493,0,7.20626,0,-3.5,0,7.20626,0,-2.98493, ldraw_lib__3_16cyli()],
+  [1,16,0,22.2,-40,2.98493,0,7.20626,0,-3.5,0,7.20626,0,-2.98493, ldraw_lib__3_16cyli(realsolid)],
 // 1 16 0 17.7 -40 2.98493 0 7.20626 0 -3.5 0 7.20626 0 -2.98493 3-16cyli.dat
-  [1,16,0,17.7,-40,2.98493,0,7.20626,0,-3.5,0,7.20626,0,-2.98493, ldraw_lib__3_16cyli()],
+  [1,16,0,17.7,-40,2.98493,0,7.20626,0,-3.5,0,7.20626,0,-2.98493, ldraw_lib__3_16cyli(realsolid)],
 // 1 16 2.5 18.2 -27 0 -1 0 .625 0 0 0 0 -.625 2-4ndis.dat
-  [1,16,2.5,18.2,-27,0,-1,0,.625,0,0,0,0,-.625, ldraw_lib__2_4ndis()],
+  [1,16,2.5,18.2,-27,0,-1,0,.625,0,0,0,0,-.625, ldraw_lib__2_4ndis(realsolid)],
 // 3 16 2.5 17.575 -27 2.5 17.575 -19.373 2.5 15.584 -28.58
   [3,16,2.5,17.575,-27,2.5,17.575,-19.373,2.5,15.584,-28.58],
 // 3 16 2.5 17.575 -27 2.5 15.584 -28.58 2.5 17.575 -27.625
@@ -76,5 +77,5 @@ function ldraw_lib__s__87568s02() = [
   [5,24,2.98493,17.7,-32.79374,2.98493,14.2,-32.79374,5.515612529,17.7,-34.484469097,2.5,17.7,-32.697],
 ];
 module ldraw_lib__s__87568s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__87568s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__87568s02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__87568s02(line=0.2);

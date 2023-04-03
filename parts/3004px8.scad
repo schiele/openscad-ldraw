@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3004s01.scad>
-function ldraw_lib__3004px8() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3004px8(realsolid=false) = [
 // 0 Brick  1 x  2 with  3 Black Squares Vertical Pattern
 // 0 Name: 3004px8.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -17,7 +18,7 @@ function ldraw_lib__3004px8() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3004s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3004s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3004s01(realsolid)],
 // 
 // 4 0 1.5 4.5 -10 -1.5 4.5 -10 -1.5 7.5 -10 1.5 7.5 -10
   [4,0,1.5,4.5,-10,-1.5,4.5,-10,-1.5,7.5,-10,1.5,7.5,-10],
@@ -55,5 +56,5 @@ function ldraw_lib__3004px8() = [
   [4,16,-20,24,-10,-1.5,7.5,-10,-1.5,4.5,-10,-20,0,-10],
 ];
 module ldraw_lib__3004px8(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3004px8(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3004px8(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3004px8(line=0.2);

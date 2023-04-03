@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/3351as01.scad>
 use <s/3351p15a.scad>
-function ldraw_lib__3351ap15() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3351ap15(realsolid=false) = [
 // 0 Roadsign Triangular Type 1 with Dangerous Intersection Pattern
 // 0 Name: 3351ap15.dat
 // 0 Author: Chris Dee [cwdee]
@@ -16,7 +17,7 @@ function ldraw_lib__3351ap15() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3351as01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3351as01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3351as01(realsolid)],
 // 0
 // 4 4 -22 -70 -2 -22 -68 -2 22 -68 -2 22 -70 -2
   [4,4,-22,-70,-2,-22,-68,-2,22,-68,-2,22,-70,-2],
@@ -44,9 +45,9 @@ function ldraw_lib__3351ap15() = [
   [4,4,1,-109.83,-2,0,-110.1,-2,0,-108.1,-2,1.73,-109.1,-2],
 // 0
 // 1 16 0 -73 -2 1 0 0 0 1 0 0 0 1 s\3351p15a.dat
-  [1,16,0,-73,-2,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3351p15a()],
+  [1,16,0,-73,-2,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3351p15a(realsolid)],
 // 0
 ];
 module ldraw_lib__3351ap15(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3351ap15(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3351ap15(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3351ap15(line=0.2);

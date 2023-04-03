@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__168335b() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__168335b(realsolid=false) = [
 // 0 Sticker  4.6 x  2.9 Tail Left with White "Mach II" and Stripes
 // 0 Name: 168335b.dat
 // 0 Author: Ulrich Röder [UR]
@@ -1348,5 +1349,5 @@ function ldraw_lib__168335b() = [
   [4,0,36.84,-0.25,12.547,36.542,-0.25,12.892,35.074,-0.25,12.681,34.995,-0.25,12.288],
 ];
 module ldraw_lib__168335b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__168335b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__168335b(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__168335b(line=0.2);

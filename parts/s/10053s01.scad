@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/2-4cyli.scad>
-function ldraw_lib__s__10053s01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__10053s01(realsolid=false) = [
 // 0 ~Minifig Sword Small with Curved Blade - Half
 // 0 Name: s\10053s01.dat
 // 0 Author: Christian Neumann [Wesley]
@@ -478,7 +479,7 @@ function ldraw_lib__s__10053s01() = [
 // 5 24 3.03451 -20.59 2.52 3.8 -20.59 2.52 3.6956 -20.959 1.5308 3.37 -20.48 4
   [5,24,3.03451,-20.59,2.52,3.8,-20.59,2.52,3.6956,-20.959,1.5308,3.37,-20.48,4],
 // 1 16 0 -21.53 0 4 0 0 0 18.47 0 0 0 4 2-4cyli.dat
-  [1,16,0,-21.53,0,4,0,0,0,18.47,0,0,0,4, ldraw_lib__2_4cyli()],
+  [1,16,0,-21.53,0,4,0,0,0,18.47,0,0,0,4, ldraw_lib__2_4cyli(realsolid)],
 // 3 16 0 -7.85 4 1.5308 -7.72987 3.6956 2.32 -5.75 4.34
   [3,16,0,-7.85,4,1.5308,-7.72987,3.6956,2.32,-5.75,4.34],
 // 3 16 1.5308 -7.72987 3.6956 2.8284 -5.30099 2.8284 2.32 -5.75 4.34
@@ -641,5 +642,5 @@ function ldraw_lib__s__10053s01() = [
   [5,24,-2.51,-1.03,2.65,-1.45,-0.17,0,-4.5,-1.63,0,0,0,0],
 ];
 module ldraw_lib__s__10053s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__10053s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__10053s01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__10053s01(line=0.2);

@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__3960pv4a() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__3960pv4a(realsolid=false) = [
 // 0 ~Viking Blue White Shield Pattern
 // 0 Name: s\3960pv4a.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -1024,5 +1025,5 @@ function ldraw_lib__s__3960pv4a() = [
 // 
 ];
 module ldraw_lib__s__3960pv4a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__3960pv4a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__3960pv4a(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__3960pv4a(line=0.2);

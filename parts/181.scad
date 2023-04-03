@@ -6,7 +6,8 @@ use <../p/box4-1.scad>
 use <../p/stug-1x5.scad>
 use <../p/stug-4x1.scad>
 use <../p/stug-5x5.scad>
-function ldraw_lib__181() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__181(realsolid=false) = [
 // 0 ~Deck for Boat Section Stern  6 x  8 x  3.333
 // 0 Name: 181.dat
 // 0 Author: Michael Heidemann [mikeheide]
@@ -59,11 +60,11 @@ function ldraw_lib__181() = [
 // 2 24 72 8 -60 68 8 -60
   [2,24,72,8,-60,68,8,-60],
 // 1 16 0 0 -10 72 0 0 0 -1 0 0 0 72 2-4edge.dat
-  [1,16,0,0,-10,72,0,0,0,-1,0,0,0,72, ldraw_lib__2_4edge()],
+  [1,16,0,0,-10,72,0,0,0,-1,0,0,0,72, ldraw_lib__2_4edge(realsolid)],
 // 1 16 0 12 -10 72 0 0 0 -1 0 0 0 72 2-4edge.dat
-  [1,16,0,12,-10,72,0,0,0,-1,0,0,0,72, ldraw_lib__2_4edge()],
+  [1,16,0,12,-10,72,0,0,0,-1,0,0,0,72, ldraw_lib__2_4edge(realsolid)],
 // 1 16 0 12 -10 72 0 0 0 -12 0 0 0 72 2-4cyli.dat
-  [1,16,0,12,-10,72,0,0,0,-12,0,0,0,72, ldraw_lib__2_4cyli()],
+  [1,16,0,12,-10,72,0,0,0,-12,0,0,0,72, ldraw_lib__2_4cyli(realsolid)],
 // 4 16 72 8 -60 -72 8 -60 -72 12 -60 72 12 -60
   [4,16,72,8,-60,-72,8,-60,-72,12,-60,72,12,-60],
 // 4 16 -60 8 -60 -56 8 -60 -56 8 -76 -60 8 -76
@@ -79,15 +80,15 @@ function ldraw_lib__181() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 8 -68 -56 0 0 0 -4 0 0 0 -8 box4-1.dat
-  [1,16,0,8,-68,-56,0,0,0,-4,0,0,0,-8, ldraw_lib__box4_1()],
+  [1,16,0,8,-68,-56,0,0,0,-4,0,0,0,-8, ldraw_lib__box4_1(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -64 8 -68 -4 0 0 0 -4 0 0 0 -8 box4-1.dat
-  [1,16,-64,8,-68,-4,0,0,0,-4,0,0,0,-8, ldraw_lib__box4_1()],
+  [1,16,-64,8,-68,-4,0,0,0,-4,0,0,0,-8, ldraw_lib__box4_1(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 64 8 -68 -4 0 0 0 -4 0 0 0 -8 box4-1.dat
-  [1,16,64,8,-68,-4,0,0,0,-4,0,0,0,-8, ldraw_lib__box4_1()],
+  [1,16,64,8,-68,-4,0,0,0,-4,0,0,0,-8, ldraw_lib__box4_1(realsolid)],
 // 4 16 -56 4 -60 -56 8 -60 56 8 -60 56 4 -60
   [4,16,-56,4,-60,-56,8,-60,56,8,-60,56,4,-60],
 // 4 16 60 4 -60 60 8 -60 68 8 -60 68 4 -60
@@ -107,18 +108,18 @@ function ldraw_lib__181() = [
 // 4 16 72 12 -60 -72 12 -60 -72 12 -10 72 12 -10
   [4,16,72,12,-60,-72,12,-60,-72,12,-10,72,12,-10],
 // 1 16 0 0 -10 -72 0 0 0 1 0 0 0 72 2-4disc.dat
-  [1,16,0,0,-10,-72,0,0,0,1,0,0,0,72, ldraw_lib__2_4disc()],
+  [1,16,0,0,-10,-72,0,0,0,1,0,0,0,72, ldraw_lib__2_4disc(realsolid)],
 // 1 16 0 12 -10 72 0 0 0 -1 0 0 0 72 2-4disc.dat
-  [1,16,0,12,-10,72,0,0,0,-1,0,0,0,72, ldraw_lib__2_4disc()],
+  [1,16,0,12,-10,72,0,0,0,-1,0,0,0,72, ldraw_lib__2_4disc(realsolid)],
 // 4 16 72 0 -80 -72 0 -80 -72 8 -80 72 8 -80
   [4,16,72,0,-80,-72,0,-80,-72,8,-80,72,8,-80],
 // 1 16 50 0 -30 0 0 -1 0 1 0 1 0 0 stug-1x5.dat
-  [1,16,50,0,-30,0,0,-1,0,1,0,1,0,0, ldraw_lib__stug_1x5()],
+  [1,16,50,0,-30,0,0,-1,0,1,0,1,0,0, ldraw_lib__stug_1x5(realsolid)],
 // 1 16 -10 0 -30 0 0 -1 0 1 0 1 0 0 stug-5x5.dat
-  [1,16,-10,0,-30,0,0,-1,0,1,0,1,0,0, ldraw_lib__stug_5x5()],
+  [1,16,-10,0,-30,0,0,-1,0,1,0,1,0,0, ldraw_lib__stug_5x5(realsolid)],
 // 1 16 0 0 30 0 0 -1 0 1 0 1 0 0 stug-4x1.dat
-  [1,16,0,0,30,0,0,-1,0,1,0,1,0,0, ldraw_lib__stug_4x1()],
+  [1,16,0,0,30,0,0,-1,0,1,0,1,0,0, ldraw_lib__stug_4x1(realsolid)],
 ];
 module ldraw_lib__181(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__181(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__181(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__181(line=0.2);

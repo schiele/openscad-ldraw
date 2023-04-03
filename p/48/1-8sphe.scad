@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__48__1_8sphe() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__48__1_8sphe(realsolid=false) = [
 // 0 Hi-Res Sphere 0.125
 // 0 Name: 48\1-8sphe.dat
 // 0 Author: Travis Cobbs [tcobbs]
@@ -780,5 +781,5 @@ function ldraw_lib__48__1_8sphe() = [
   [5,24,0.1305,0.9914,0,0,0.9914,0.1305,0,1,0,0.1371,0.981,0.1371],
 ];
 module ldraw_lib__48__1_8sphe(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__48__1_8sphe(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__48__1_8sphe(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__48__1_8sphe(line=0.2);

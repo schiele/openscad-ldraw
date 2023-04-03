@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/93606s01.scad>
-function ldraw_lib__93606p02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__93606p02(realsolid=false) = [
 // 0 Slope Brick Curved  4 x  2 with Light Bluish Grey Rectangle Pattern
 // 0 Name: 93606p02.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -17,7 +18,7 @@ function ldraw_lib__93606p02() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\93606s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__93606s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__93606s01(realsolid)],
 // 
 // 0 // Inlined Top Surface
 // 4 71 -20 11.3582 -21.232 -20 19.9999 -40 20 19.9999 -40 20 11.3582 -21.232
@@ -43,5 +44,5 @@ function ldraw_lib__93606p02() = [
   [5,24,-20,19.9999,-40,20,19.9999,-40,-20,11.3582,-21.232,-20,29.8207,-58.256],
 ];
 module ldraw_lib__93606p02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__93606p02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__93606p02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__93606p02(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3298s01.scad>
-function ldraw_lib__3298p02() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3298p02(realsolid=false) = [
 // 0 Slope Brick 33  3 x  2 with Eyes, Nose, and Whiskers Pattern
 // 0 Name: 3298p02.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -18,7 +19,7 @@ function ldraw_lib__3298p02() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3298s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3298s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3298s01(realsolid)],
 // 4 15 -7.5 10.0623 -30.1246 -6.6 9.7045 -29.4091 -6.5 9.3915 -28.783 -8.2 9.5257 -29.0513
   [4,15,-7.5,10.0623,-30.1246,-6.6,9.7045,-29.4091,-6.5,9.3915,-28.783,-8.2,9.5257,-29.0513],
 // 4 15 -8.2 9.5257 -29.0513 -6.5 9.3915 -28.783 -7.2 9.0337 -28.0674 -9.3 8.4523 -26.9047
@@ -511,5 +512,5 @@ function ldraw_lib__3298p02() = [
   [3,16,4.2,16.9494,-43.8988,4.1,17.4413,-44.8827,6.6,17.2624,-44.5249],
 ];
 module ldraw_lib__3298p02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3298p02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3298p02(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3298p02(line=0.2);

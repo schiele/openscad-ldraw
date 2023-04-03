@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__4288_15() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__4288_15(realsolid=false) = [
 // 0 ~Wheel 13 x 20 Solid Rubber with Axle Hole Tread Section
 // 0 Name: s\4288-15.dat
 // 0 Author: John Van Zwieten [jvan]
@@ -144,5 +145,5 @@ function ldraw_lib__s__4288_15() = [
   [5,24,15.6191,4.0103,15.8695,14.7316,6.5589,15.8695,16.7897,4.3109,14.7855,13.7032,6.101,16.25],
 ];
 module ldraw_lib__s__4288_15(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__4288_15(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__4288_15(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__4288_15(line=0.2);

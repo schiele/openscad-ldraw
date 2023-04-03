@@ -2,7 +2,8 @@ use <../lib.scad>
 use <48083c02.scad>
 use <54655.scad>
 use <54809.scad>
-function ldraw_lib__54824() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__54824(realsolid=false) = [
 // 0 Electric Motor Boat with Light Bluish Grey  2 Blades Propeller and Rudder
 // 0 Name: 54824.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -19,12 +20,12 @@ function ldraw_lib__54824() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 48083c02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__48083c02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__48083c02(realsolid)],
 // 1 71 0 55.6 138 1 0 0 0 1 0 0 0 1 54655.dat
-  [1,71,0,55.6,138,1,0,0,0,1,0,0,0,1, ldraw_lib__54655()],
+  [1,71,0,55.6,138,1,0,0,0,1,0,0,0,1, ldraw_lib__54655(realsolid)],
 // 1 71 0 55.5 117.5 1 0 0 0 1 0 0 0 1 54809.dat
-  [1,71,0,55.5,117.5,1,0,0,0,1,0,0,0,1, ldraw_lib__54809()],
+  [1,71,0,55.5,117.5,1,0,0,0,1,0,0,0,1, ldraw_lib__54809(realsolid)],
 ];
 module ldraw_lib__54824(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__54824(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__54824(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__54824(line=0.2);

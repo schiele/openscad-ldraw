@@ -2,7 +2,8 @@ use <../lib.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4ndis.scad>
 use <s/4198s01.scad>
-function ldraw_lib__4198p0c() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4198p0c(realsolid=false) = [
 // 0 Duplo Brick  2 x  4 x  2 with Rounded Ends with Bird Face Pattern
 // 0 Name: 4198p0c.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
@@ -22,15 +23,15 @@ function ldraw_lib__4198p0c() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4198s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4198s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4198s01(realsolid)],
 // 1 15 -36.5 30.5 -40 3.5 0 0 0 0 -3.5 0 1 0 4-4disc.dat
-  [1,15,-36.5,30.5,-40,3.5,0,0,0,0,-3.5,0,1,0, ldraw_lib__4_4disc()],
+  [1,15,-36.5,30.5,-40,3.5,0,0,0,0,-3.5,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 0 -36.5 30.5 -40 3.5 0 0 0 0 -3.5 0 1 0 4-4ndis.dat
-  [1,0,-36.5,30.5,-40,3.5,0,0,0,0,-3.5,0,1,0, ldraw_lib__4_4ndis()],
+  [1,0,-36.5,30.5,-40,3.5,0,0,0,0,-3.5,0,1,0, ldraw_lib__4_4ndis(realsolid)],
 // 1 15 22.5 30.5 -40 3.5 0 0 0 0 -3.5 0 1 0 4-4disc.dat
-  [1,15,22.5,30.5,-40,3.5,0,0,0,0,-3.5,0,1,0, ldraw_lib__4_4disc()],
+  [1,15,22.5,30.5,-40,3.5,0,0,0,0,-3.5,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 0 22.5 30.5 -40 3.5 0 0 0 0 -3.5 0 1 0 4-4ndis.dat
-  [1,0,22.5,30.5,-40,3.5,0,0,0,0,-3.5,0,1,0, ldraw_lib__4_4ndis()],
+  [1,0,22.5,30.5,-40,3.5,0,0,0,0,-3.5,0,1,0, ldraw_lib__4_4ndis(realsolid)],
 // 4 0 -33.38 47.49 -40 -36.2 49.17 -40 -34.03 49.9 -40 -31.46 47.87 -40
   [4,0,-33.38,47.49,-40,-36.2,49.17,-40,-34.03,49.9,-40,-31.46,47.87,-40],
 // 4 0 -31.46 47.87 -40 -34.03 49.9 -40 -31.78 50.35 -40 -29.5 48 -40
@@ -681,5 +682,5 @@ function ldraw_lib__4198p0c() = [
   [4,16,29.5,50.5,-40,27.22,50.35,-40,24.5,57,-40,25.5,59.5,-40],
 ];
 module ldraw_lib__4198p0c(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4198p0c(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4198p0c(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4198p0c(line=0.2);

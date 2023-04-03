@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/2918s01.scad>
-function ldraw_lib__2918() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__2918(realsolid=false) = [
 // 0 Glass for Train Front Sloping Top
 // 0 Name: 2918.dat
 // 0 Author: Luis E. Fernandez [lfernand]
@@ -22,11 +23,11 @@ function ldraw_lib__2918() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2918s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2918s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2918s01(realsolid)],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\2918s01.dat
-  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__2918s01()],
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__2918s01(realsolid)],
 // 0
 ];
 module ldraw_lib__2918(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__2918(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__2918(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__2918(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/4-4cylc.scad>
-function ldraw_lib__35032e() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__35032e(realsolid=false) = [
 // 0 Power Burst Shield  3.5 x  3.5 with Bar
 // 0 Name: 35032e.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -20,7 +21,7 @@ function ldraw_lib__35032e() = [
 // 
 // 
 // 1 16 0 0 0 4 0 0 0 -19.3 0 0 0 4 4-4cylc.dat
-  [1,16,0,0,0,4,0,0,0,-19.3,0,0,0,4, ldraw_lib__4_4cylc()],
+  [1,16,0,0,0,4,0,0,0,-19.3,0,0,0,4, ldraw_lib__4_4cylc(realsolid)],
 // 
 // 3 16 23.018 -14.945 -9.139 18.562 -14.898 -9.849 18.657 -14.927 -7.308
   [3,16,23.018,-14.945,-9.139,18.562,-14.898,-9.849,18.657,-14.927,-7.308],
@@ -5894,5 +5895,5 @@ function ldraw_lib__35032e() = [
   [5,24,20.061,-11.511,29.52,17.054,-12.958,29.027,17.171,-12.717,28.106,19.764,-11.626,30.434],
 ];
 module ldraw_lib__35032e(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__35032e(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__35032e(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__35032e(line=0.2);

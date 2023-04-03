@@ -1,5 +1,6 @@
 use <../lib.scad>
-function ldraw_lib__axlebeam() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__axlebeam(realsolid=false) = [
 // 0 Technic Axle Truncated to Fit Technic Beam End Surface
 // 0 Name: axlebeam.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -135,5 +136,5 @@ function ldraw_lib__axlebeam() = [
   [4,16,6,-10,0,5.602,-10,-2,5.602,-6.8731,-2,6,-6.6071,0],
 ];
 module ldraw_lib__axlebeam(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__axlebeam(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__axlebeam(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__axlebeam(line=0.2);

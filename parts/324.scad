@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <2458.scad>
-function ldraw_lib__324() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__324(realsolid=false) = [
 // 0 ~Moved to 2458
 // 0 Name: 324.dat
 // 0 Author: [PTadmin]
@@ -17,8 +18,8 @@ function ldraw_lib__324() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 2458.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2458()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2458(realsolid)],
 ];
 module ldraw_lib__324(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__324(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__324(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__324(line=0.2);

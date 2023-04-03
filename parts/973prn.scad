@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/1-4cyli.scad>
 use <s/973s01.scad>
-function ldraw_lib__973prn() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__973prn(realsolid=false) = [
 // 0 Minifig Torso with SW Shirt with Open Collar and Light Bluish Grey Wrinkles Pattern
 // 0 Name: 973prn.dat
 // 0 Author: Evert-Jan Boer [ejboer]
@@ -19,7 +20,7 @@ function ldraw_lib__973prn() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01(realsolid)],
 // 4 16 19 29 10 19 32 10 -19 32 10 -19 29 10
   [4,16,19,29,10,19,32,10,-19,32,10,-19,29,10],
 // 4 16 -14.345 2 10 14.345 2 10 19 29 10 -19 29 10
@@ -27,7 +28,7 @@ function ldraw_lib__973prn() = [
 // 4 16 -14.345 2 10 -12 0 10 12 0 10 14.345 2 10
   [4,16,-14.345,2,10,-12,0,10,12,0,10,14.345,2,10],
 // 1 0 0 -4 0 4.243 0 -4.243 0 -8 0 -4.243 0 -4.243 1-4cyli.dat
-  [1,0,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli()],
+  [1,0,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli(realsolid)],
 // 
 // 4 70 -3.5 2.2 -10 -3.55 2.4 -10 -2.55 2.7 -10 -2.45 2.55 -10
   [4,70,-3.5,2.2,-10,-3.55,2.4,-10,-2.55,2.7,-10,-2.45,2.55,-10],
@@ -1117,5 +1118,5 @@ function ldraw_lib__973prn() = [
   [3,16,1.85,7.3,-10,1.1,8.1,-10,2.55,8.1,-10],
 ];
 module ldraw_lib__973prn(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__973prn(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__973prn(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__973prn(line=0.2);

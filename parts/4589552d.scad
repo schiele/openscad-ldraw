@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
-function ldraw_lib__4589552d() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__4589552d(realsolid=false) = [
 // 0 Sticker  0.9 x  2.8 with Black Skyline on Blue Gradient Background
 // 0 Name: 4589552d.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -17,7 +18,7 @@ function ldraw_lib__4589552d() = [
 // 
 // 
 // 1 16 0 -0.25 0 28 0 0 0 0.25 0 0 0 9 box5-12.dat
-  [1,16,0,-0.25,0,28,0,0,0,0.25,0,0,0,9, ldraw_lib__box5_12()],
+  [1,16,0,-0.25,0,28,0,0,0,0.25,0,0,0,9, ldraw_lib__box5_12(realsolid)],
 // 
 // 4 73 12 -0.25 9 11 -0.25 9 7.07 -0.25 1.854 7.476 -0.25 1.46
   [4,73,12,-0.25,9,11,-0.25,9,7.07,-0.25,1.854,7.476,-0.25,1.46],
@@ -793,5 +794,5 @@ function ldraw_lib__4589552d() = [
   [3,0,-8.02,-0.25,2.3,-8.685,-0.25,2.3,-18.3,-0.25,-4.833],
 ];
 module ldraw_lib__4589552d(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__4589552d(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__4589552d(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__4589552d(line=0.2);

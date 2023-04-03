@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <4589.scad>
-function ldraw_lib__55525() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__55525(realsolid=false) = [
 // 0 =Cone  1 x  1
 // 0 Name: 55525.dat
 // 0 Author: Rolf Osterthun [Rolf]
@@ -18,8 +19,8 @@ function ldraw_lib__55525() = [
 // 0 // Part 55525 is the metallic lacquered counterpart of 4589
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 4589.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4589()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4589(realsolid)],
 ];
 module ldraw_lib__55525(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__55525(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__55525(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__55525(line=0.2);

@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3010s01.scad>
-function ldraw_lib__3010pt1() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3010pt1(realsolid=false) = [
 // 0 Brick  1 x  4 with Black "L 17.5 TON" and "T 10.6 TON" Pattern
 // 0 Name: 3010pt1.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -15,7 +16,7 @@ function ldraw_lib__3010pt1() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3010s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3010s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3010s01(realsolid)],
 // 4 0 -14.944 15.983 -10 -11.379 14.73 -10 -17.072 14.73 -10 -17.072 15.983 -10
   [4,0,-14.944,15.983,-10,-11.379,14.73,-10,-17.072,14.73,-10,-17.072,15.983,-10],
 // 4 0 -14.944 15.983 -10 -14.944 22.137 -10 -13.501 22.137 -10 -13.501 15.983 -10
@@ -704,5 +705,5 @@ function ldraw_lib__3010pt1() = [
   [3,16,-18.599,12.826,-10,-40,24,-10,-18.599,24,-10],
 ];
 module ldraw_lib__3010pt1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3010pt1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3010pt1(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3010pt1(line=0.2);

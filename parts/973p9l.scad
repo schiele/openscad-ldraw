@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <../p/1-4cyli.scad>
 use <s/973s01.scad>
-function ldraw_lib__973p9l() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__973p9l(realsolid=false) = [
 // 0 Minifig Torso with Jacket and Medium Nougat Collar over Light Bluish Grey Shirt Pattern
 // 0 Name: 973p9l.dat
 // 0 Author: Ulrich Röder [UR]
@@ -24,11 +25,11 @@ function ldraw_lib__973p9l() = [
 // 0 // Light Bluish Gray Neck
 // 
 // 1 71 0 -4 0 4.243 0 -4.243 0 -8 0 -4.243 0 -4.243 1-4cyli.dat
-  [1,71,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli()],
+  [1,71,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli(realsolid)],
 // 
 // 0 // Main
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01(realsolid)],
 // 
 // 0 // Main Front
 // 4 16 6.063 31.579 -10 5.386 31.583 -10 4.45 31.62 -10 6.635 31.7 -10
@@ -3441,5 +3442,5 @@ function ldraw_lib__973p9l() = [
   [3,84,-18.59,29.97,10,-18.65,29.8,10,-18.53,29.63,10],
 ];
 module ldraw_lib__973p9l(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__973p9l(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__973p9l(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__973p9l(line=0.2);

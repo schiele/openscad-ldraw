@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <s/18675s00.scad>
 use <s/18675s01.scad>
-function ldraw_lib__18675() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__18675(realsolid=false) = [
 // 0 Dish  6 x  6 Inverted - No Studs with Handle
 // 0 Name: 18675.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
@@ -18,11 +19,11 @@ function ldraw_lib__18675() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\18675s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__18675s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__18675s01(realsolid)],
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\18675s00.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__18675s00()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__18675s00(realsolid)],
 ];
 module ldraw_lib__18675(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__18675(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__18675(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__18675(line=0.2);

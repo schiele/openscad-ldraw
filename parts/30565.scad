@@ -3,7 +3,8 @@ use <../p/box2-5.scad>
 use <../p/stud.scad>
 use <../p/stud4.scad>
 use <../p/stug3.scad>
-function ldraw_lib__30565() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__30565(realsolid=false) = [
 // 0 Plate  4 x  4 Corner Round
 // 0 Name: 30565.dat
 // 0 Author: Mark Chittenden [mdublade]
@@ -25,11 +26,11 @@ function ldraw_lib__30565() = [
 // 0 // Top Studs
 // 
 // 1 16 -10 0 10 1 0 0 0 1 0 0 0 1 stug3.dat
-  [1,16,-10,0,10,1,0,0,0,1,0,0,0,1, ldraw_lib__stug3()],
+  [1,16,-10,0,10,1,0,0,0,1,0,0,0,1, ldraw_lib__stug3(realsolid)],
 // 1 16 30 0 30 1 0 0 0 1 0 0 0 1 stud.dat
-  [1,16,30,0,30,1,0,0,0,1,0,0,0,1, ldraw_lib__stud()],
+  [1,16,30,0,30,1,0,0,0,1,0,0,0,1, ldraw_lib__stud(realsolid)],
 // 1 16 -30 0 -30 1 0 0 0 1 0 0 0 1 stud.dat
-  [1,16,-30,0,-30,1,0,0,0,1,0,0,0,1, ldraw_lib__stud()],
+  [1,16,-30,0,-30,1,0,0,0,1,0,0,0,1, ldraw_lib__stud(realsolid)],
 // 0 Top Surface
 // 4 16 38.46 0 24.39 40 0 40 -40 0 40 33.91 0 9.39
   [4,16,38.46,0,24.39,40,0,40,-40,0,40,33.91,0,9.39],
@@ -70,7 +71,7 @@ function ldraw_lib__30565() = [
   [4,16,40,0,40,38.46,0,24.39,38.46,8,24.39,40,8,40],
 // 0 Side Surface
 // 1 16 0 4 0 0 0 -40 -4 0 0 0 40 0 box2-5.dat
-  [1,16,0,4,0,0,0,-40,-4,0,0,0,40,0, ldraw_lib__box2_5()],
+  [1,16,0,4,0,0,0,-40,-4,0,0,0,40,0, ldraw_lib__box2_5(realsolid)],
 // 0 Bottom Inside surface
 // 4 16 -10.92 4 -30.21 -25.17 4 -34.54 -36 4 -35.61 -36 4 36
   [4,16,-10.92,4,-30.21,-25.17,4,-34.54,-36,4,-35.61,-36,4,36],
@@ -105,17 +106,17 @@ function ldraw_lib__30565() = [
   [4,16,-36,8,36,35.61,8,36,35.61,4,36,-36,4,36],
 // 0 Bottom Studs
 // 1 16 -20 4 20 1 0 0 0 -1 0 0 0 1 stud4.dat
-  [1,16,-20,4,20,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4()],
+  [1,16,-20,4,20,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4(realsolid)],
 // 1 16 0 4 20 1 0 0 0 -1 0 0 0 1 stud4.dat
-  [1,16,0,4,20,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4()],
+  [1,16,0,4,20,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4(realsolid)],
 // 1 16 20 4 20 1 0 0 0 -1 0 0 0 1 stud4.dat
-  [1,16,20,4,20,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4()],
+  [1,16,20,4,20,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4(realsolid)],
 // 1 16 -20 4 0 1 0 0 0 -1 0 0 0 1 stud4.dat
-  [1,16,-20,4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4()],
+  [1,16,-20,4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4(realsolid)],
 // 1 16 0 4 0 1 0 0 0 -1 0 0 0 1 stud4.dat
-  [1,16,0,4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4()],
+  [1,16,0,4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4(realsolid)],
 // 1 16 -20 4 -20 1 0 0 0 -1 0 0 0 1 stud4.dat
-  [1,16,-20,4,-20,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4()],
+  [1,16,-20,4,-20,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4(realsolid)],
 // 0 Bottom Edge Surface
 // 4 16 -40 8 40 40 8 40 35.61 8 36 -36 8 36
   [4,16,-40,8,40,40,8,40,35.61,8,36,-36,8,36],
@@ -298,5 +299,5 @@ function ldraw_lib__30565() = [
 // 0
 ];
 module ldraw_lib__30565(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__30565(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__30565(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__30565(line=0.2);

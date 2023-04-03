@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3004s01.scad>
-function ldraw_lib__3004p20() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3004p20(realsolid=false) = [
 // 0 Brick  1 x  2 with White Down Arrow Pattern
 // 0 Name: 3004p20.dat
 // 0 Author: Tore Eriksson [Tore_Eriksson]
@@ -19,7 +20,7 @@ function ldraw_lib__3004p20() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3004s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3004s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3004s01(realsolid)],
 // 4 15 0 21 -10 9 12 -10 9 6 -10 3 12 -10
   [4,15,0,21,-10,9,12,-10,9,6,-10,3,12,-10],
 // 4 15 0 21 -10 -3 12 -10 -9 6 -10 -9 12 -10
@@ -49,5 +50,5 @@ function ldraw_lib__3004p20() = [
 // 0
 ];
 module ldraw_lib__3004p20(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3004p20(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3004p20(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3004p20(line=0.2);

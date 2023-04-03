@@ -2,7 +2,8 @@ use <../lib.scad>
 use <3815pba.scad>
 use <3816pba.scad>
 use <3817pba.scad>
-function ldraw_lib__3815cba() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3815cba(realsolid=false) = [
 // 0 ~Minifig Hips and Legs with Harlequin Red/Black Pattern (Obsolete)
 // 0 Name: 3815cba.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -25,12 +26,12 @@ function ldraw_lib__3815cba() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 3815pba.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3815pba()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3815pba(realsolid)],
 // 1 16 0 12 0 1 0 0 0 1 0 0 0 1 3816pba.dat
-  [1,16,0,12,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3816pba()],
+  [1,16,0,12,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3816pba(realsolid)],
 // 1 0 0 12 0 1 0 0 0 1 0 0 0 1 3817pba.dat
-  [1,0,0,12,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3817pba()],
+  [1,0,0,12,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3817pba(realsolid)],
 ];
 module ldraw_lib__3815cba(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3815cba(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3815cba(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3815cba(line=0.2);

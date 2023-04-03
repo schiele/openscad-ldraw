@@ -1,7 +1,8 @@
 use <../lib.scad>
 use <logo-octan-1.scad>
 use <logo-octan-2.scad>
-function ldraw_lib__logo_octan() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__logo_octan(realsolid=false) = [
 // 0 Logo Octan
 // 0 Name: logo-octan.dat
 // 0 Author: Ulrich Röder [UR]
@@ -16,13 +17,13 @@ function ldraw_lib__logo_octan() = [
 // 
 // 
 // 1 0 -8 0 -.1 1 0 0 0 1 0 0 0 1 logo-octan-1.dat
-  [1,0,-8,0,-.1,1,0,0,0,1,0,0,0,1, ldraw_lib__logo_octan_1()],
+  [1,0,-8,0,-.1,1,0,0,0,1,0,0,0,1, ldraw_lib__logo_octan_1(realsolid)],
 // 1 0 8 0 0 -1 0 0 0 1 0 0 0 -1 logo-octan-1.dat
-  [1,0,8,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__logo_octan_1()],
+  [1,0,8,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__logo_octan_1(realsolid)],
 // 1 2 -8 0 -.1 1 0 0 0 1 0 0 0 1 logo-octan-2.dat
-  [1,2,-8,0,-.1,1,0,0,0,1,0,0,0,1, ldraw_lib__logo_octan_2()],
+  [1,2,-8,0,-.1,1,0,0,0,1,0,0,0,1, ldraw_lib__logo_octan_2(realsolid)],
 // 1 4 8 0 0 -1 0 0 0 1 0 0 0 -1 logo-octan-2.dat
-  [1,4,8,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__logo_octan_2()],
+  [1,4,8,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__logo_octan_2(realsolid)],
 // 
 // 4 16 -8.84 0 8.28 -9.16 0 8.25 -8.91 0 6.81 -8 0 6.9
   [4,16,-8.84,0,8.28,-9.16,0,8.25,-8.91,0,6.81,-8,0,6.9],
@@ -258,5 +259,5 @@ function ldraw_lib__logo_octan() = [
   [4,16,0,0,-11.5,-4.04,0,-10.31,-5.31,0,-10.07,-16,0,-11.5],
 ];
 module ldraw_lib__logo_octan(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__logo_octan(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__logo_octan(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__logo_octan(line=0.2);

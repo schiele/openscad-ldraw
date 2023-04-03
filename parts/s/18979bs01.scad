@@ -1,5 +1,6 @@
 use <../../lib.scad>
-function ldraw_lib__s__18979bs01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__18979bs01(realsolid=false) = [
 // 0 ~Wheel Rim 11 x 18 Front with 10 Spokes - 1/4
 // 0 Name: s\18979bs01.dat
 // 0 Author: Magnus Forsberg [MagFors]
@@ -1087,5 +1088,5 @@ function ldraw_lib__s__18979bs01() = [
   [2,24,11.1426,0,9.3313,3.257,0,3.6022],
 ];
 module ldraw_lib__s__18979bs01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__18979bs01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__18979bs01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__18979bs01(line=0.2);

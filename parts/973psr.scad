@@ -9,7 +9,8 @@ use <../p/4-4ring5.scad>
 use <../p/4-4ring6.scad>
 use <../p/4-4ring7.scad>
 use <s/973s01.scad>
-function ldraw_lib__973psr() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__973psr(realsolid=false) = [
 // 0 Minifig Torso with SW Protocol Droid Pattern
 // 0 Name: 973psr.dat
 // 0 Author: Donald Sutter [technog]
@@ -31,9 +32,9 @@ function ldraw_lib__973psr() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01(realsolid)],
 // 1 0 0 -4 0 4.243 0 -4.243 0 -8 0 -4.243 0 -4.243 1-4cyli.dat
-  [1,0,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli()],
+  [1,0,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli(realsolid)],
 // 0 // front
 // 0 // darker shadow effect, made of black dots
 // 4 0x24C4C45 0 31 -10 2.2 30.71 -10 2.5 29.15 -10 0 29.5 -10
@@ -107,13 +108,13 @@ function ldraw_lib__973psr() = [
   [4,41903692,-4,2,-10,-4,8.25,-10,-2.25,8.075,-10,-2.25,2.75,-10],
 // 
 // 1 16 0 20 -10 1 0 0 0 0 1 0 1 0 4-4disc.dat
-  [1,16,0,20,-10,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4disc()],
+  [1,16,0,20,-10,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4disc(realsolid)],
 // 1 16 0 20 -10 1 0 0 0 0 1 0 1 0 4-4ring2.dat
-  [1,16,0,20,-10,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4ring2()],
+  [1,16,0,20,-10,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4ring2(realsolid)],
 // 1 16 0 20 -10 1 0 0 0 0 1 0 1 0 4-4ring4.dat
-  [1,16,0,20,-10,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4ring4()],
+  [1,16,0,20,-10,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4ring4(realsolid)],
 // 1 16 0 20 -10 1 0 0 0 0 1 0 1 0 4-4ring6.dat
-  [1,16,0,20,-10,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4ring6()],
+  [1,16,0,20,-10,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4ring6(realsolid)],
 // 4 16 0 11.5 -10 0 12 -10 3.061 12.609 -10 2.2 11.79 -10
   [4,16,0,11.5,-10,0,12,-10,3.061,12.609,-10,2.2,11.79,-10],
 // 4 16 -2.2 11.79 -10 -3.061 12.609 -10 0 12 -10 0 11.5 -10
@@ -272,13 +273,13 @@ function ldraw_lib__973psr() = [
   [3,16,17.431,22.8,-10,17.638,24,-10,19,29,-10],
 // 
 // 1 0 0 20 -10 1 0 0 0 0 1 0 1 0 4-4ring1.dat
-  [1,0,0,20,-10,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4ring1()],
+  [1,0,0,20,-10,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4ring1(realsolid)],
 // 1 0 0 20 -10 1 0 0 0 0 1 0 1 0 4-4ring3.dat
-  [1,0,0,20,-10,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4ring3()],
+  [1,0,0,20,-10,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4ring3(realsolid)],
 // 1 0 0 20 -10 1 0 0 0 0 1 0 1 0 4-4ring5.dat
-  [1,0,0,20,-10,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4ring5()],
+  [1,0,0,20,-10,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4ring5(realsolid)],
 // 1 0 0 20 -10 1 0 0 0 0 1 0 1 0 4-4ring7.dat
-  [1,0,0,20,-10,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4ring7()],
+  [1,0,0,20,-10,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4ring7(realsolid)],
 // 4 0 2.2 11.79 -10 2.5 10.85 -10 0 10.5 -10 0 11.5 -10
   [4,0,2.2,11.79,-10,2.5,10.85,-10,0,10.5,-10,0,11.5,-10],
 // 4 0 4.75 12.65 -10 5.25 11.75 -10 2.5 10.85 -10 2.2 11.79 -10
@@ -897,5 +898,5 @@ function ldraw_lib__973psr() = [
   [3,0,-7.82,14,10,-7.26,14,10,-9,15,10],
 ];
 module ldraw_lib__973psr(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__973psr(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__973psr(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__973psr(line=0.2);

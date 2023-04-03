@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/t04o6250.scad>
-function ldraw_lib__s__90462as01() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__s__90462as01(realsolid=false) = [
 // 0 ~Minifig Headdress Nemes Type 2 Half without Front Surface (Obsolete)
 // 0 Name: s\90462as01.dat
 // 0 Author: Stan Isachenko [angmarec]
@@ -920,11 +921,11 @@ function ldraw_lib__s__90462as01() = [
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 0 0 0 7.3 0 -6.6 0 7.3 0 0 t04o6250.dat
-  [1,16,0,0,0,0,0,7.3,0,-6.6,0,7.3,0,0, ldraw_lib__t04o6250()],
+  [1,16,0,0,0,0,0,7.3,0,-6.6,0,7.3,0,0, ldraw_lib__t04o6250(realsolid)],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 0 7.3 0 0 0 -6.6 0 0 0 -7.3 t04o6250.dat
-  [1,16,0,0,0,7.3,0,0,0,-6.6,0,0,0,-7.3, ldraw_lib__t04o6250()],
+  [1,16,0,0,0,7.3,0,0,0,-6.6,0,0,0,-7.3, ldraw_lib__t04o6250(realsolid)],
 // 0 //
 // 3 16 1.992 -7.226 -8.345 0 -7.757 -7.328 0 -7.672 -15.841
   [3,16,1.992,-7.226,-8.345,0,-7.757,-7.328,0,-7.672,-15.841],
@@ -2375,5 +2376,5 @@ function ldraw_lib__s__90462as01() = [
   [5,24,0,43.444,14.392,2.127,42.448,14.207,2.253,42.657,12.999,0,42.909,16.368],
 ];
 module ldraw_lib__s__90462as01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__s__90462as01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__s__90462as01(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__s__90462as01(line=0.2);

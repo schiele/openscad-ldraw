@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <../p/stud4.scad>
-function ldraw_lib__50687() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__50687(realsolid=false) = [
 // 0 Animal Rat Standing
 // 0 Name: 50687.dat
 // 0 Author: Philippe Hurbain [Philo]
@@ -19,7 +20,7 @@ function ldraw_lib__50687() = [
 // 
 // 
 // 1 16 0 0 0 -1 0 0 0 -1 0 0 0 1 stud4.dat
-  [1,16,0,0,0,-1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4()],
+  [1,16,0,0,0,-1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4(realsolid)],
 // 3 16 9.665 -37.152 -2.636 10.772 -34.438 -3.15 10.667 -35.197 0.567
   [3,16,9.665,-37.152,-2.636,10.772,-34.438,-3.15,10.667,-35.197,0.567],
 // 3 16 10.667 -35.197 0.567 10.772 -34.438 -3.15 11.808 -31.654 -0.513
@@ -4590,5 +4591,5 @@ function ldraw_lib__50687() = [
   [5,24,-10.158,-32.629,-4.578,-10.772,-34.438,-3.15,-10.914,-31.945,-3.344,-9.934,-34.223,-4.347],
 ];
 module ldraw_lib__50687(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__50687(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__50687(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__50687(line=0.2);

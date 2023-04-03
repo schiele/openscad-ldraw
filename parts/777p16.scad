@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/777s02.scad>
-function ldraw_lib__777p16() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__777p16(realsolid=false) = [
 // 0 Flag on Flagpole Type 2 with Faroe Islands Pattern
 // 0 Name: 777p16.dat
 // 0 Author: Chris Dee [cwdee]
@@ -17,7 +18,7 @@ function ldraw_lib__777p16() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\777s02.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__777s02()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__777s02(realsolid)],
 // 
 // 0 // Decorated surfaces
 // 4 15 1.5 -154 -1.5 19 -147 -1.5 19 -129.5 -1.5 1.5 -136.5 -1.5
@@ -194,5 +195,5 @@ function ldraw_lib__777p16() = [
   [4,15,56.5,-106.5,1.5,56.5,-89,1.5,61.5,-86,1.5,61.5,-103.5,1.5],
 ];
 module ldraw_lib__777p16(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__777p16(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__777p16(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__777p16(line=0.2);

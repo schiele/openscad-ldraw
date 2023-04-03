@@ -1,6 +1,7 @@
 use <../lib.scad>
 use <s/3298s01.scad>
-function ldraw_lib__3298p57() = [
+$fa=1; $fs=0.2;
+function ldraw_lib__3298p57(realsolid=false) = [
 // 0 Slope Brick 33  3 x  2 with Yellow "4" and Stripes Pattern
 // 0 Name: 3298p57.dat
 // 0 Author: J.C. Tchang [tchang]
@@ -15,7 +16,7 @@ function ldraw_lib__3298p57() = [
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3298s01.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3298s01()],
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3298s01(realsolid)],
 // 0 //
 // 4 14 -11 19.677 -49.355 -11 0 -10 -15 0 -10 -15 19.677 -49.355
   [4,14,-11,19.677,-49.355,-11,0,-10,-15,0,-10,-15,19.677,-49.355],
@@ -118,5 +119,5 @@ function ldraw_lib__3298p57() = [
   [3,16,0.6,9.302,-28.604,0.6,8.586,-27.173,-0.6,9.302,-28.604],
 ];
 module ldraw_lib__3298p57(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
-    makepoly(ldraw_lib__3298p57(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+    makepoly(ldraw_lib__3298p57(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
 ldraw_lib__3298p57(line=0.2);
