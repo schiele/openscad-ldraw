@@ -1749,4 +1749,6 @@ function ldraw_lib__s__u9393s02() = [
 // 1 16 58.592 -8.85 41.5548 0 1 0 -0.15 0 0 0 0 0.7497 rect.dat
   [1,16,58.592,-8.85,41.5548,0,1,0,-0.15,0,0,0,0,0.7497, ldraw_lib__rect()],
 ];
-makepoly(ldraw_lib__s__u9393s02(), line=0.2);
+module ldraw_lib__s__u9393s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__u9393s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__u9393s02(line=0.2);

@@ -143,4 +143,6 @@ function ldraw_lib__wpinhole() = [
 // 5 24 -5 0 0 -5 -1 0 -4.696 0 -1.53 -4.696 0 1.53
   [5,24,-5,0,0,-5,-1,0,-4.696,0,-1.53,-4.696,0,1.53],
 ];
-makepoly(ldraw_lib__wpinhole(), line=0.2);
+module ldraw_lib__wpinhole(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__wpinhole(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__wpinhole(line=0.2);

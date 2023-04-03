@@ -523,4 +523,6 @@ function ldraw_lib__973par() = [
 // 3 1 12.741 27.519 -10 3.312 31.09 -10 12.788 28.006 -10
   [3,1,12.741,27.519,-10,3.312,31.09,-10,12.788,28.006,-10],
 ];
-makepoly(ldraw_lib__973par(), line=0.2);
+module ldraw_lib__973par(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973par(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973par(line=0.2);

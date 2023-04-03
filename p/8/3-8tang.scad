@@ -20,4 +20,6 @@ function ldraw_lib__8__3_8tang() = [
 // 3 16 0 0 1 -.3827 0 .9239 -.7071 0 .7071
   [3,16,0,0,1,-.3827,0,.9239,-.7071,0,.7071],
 ];
-makepoly(ldraw_lib__8__3_8tang(), line=0.2);
+module ldraw_lib__8__3_8tang(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__8__3_8tang(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__8__3_8tang(line=0.2);

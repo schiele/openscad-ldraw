@@ -306,4 +306,6 @@ function ldraw_lib__6478() = [
 // 1 16 20 12.5 -20 0 0 16 0 1 0 -16 0 0 1-16edge.dat
   [1,16,20,12.5,-20,0,0,16,0,1,0,-16,0,0, ldraw_lib__1_16edge()],
 ];
-makepoly(ldraw_lib__6478(), line=0.2);
+module ldraw_lib__6478(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__6478(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__6478(line=0.2);

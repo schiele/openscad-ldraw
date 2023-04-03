@@ -1480,4 +1480,6 @@ function ldraw_lib__4066bp1g() = [
 // 3 16 -2.5 16.25 -20 0 19 -20 2 17 -20
   [3,16,-2.5,16.25,-20,0,19,-20,2,17,-20],
 ];
-makepoly(ldraw_lib__4066bp1g(), line=0.2);
+module ldraw_lib__4066bp1g(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__4066bp1g(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__4066bp1g(line=0.2);

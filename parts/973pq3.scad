@@ -5204,4 +5204,6 @@ function ldraw_lib__973pq3() = [
 // 4 16 -10.29 23.28 10 -10.46 24.39 10 -11.26 24.31 10 -11.58 24.05 10
   [4,16,-10.29,23.28,10,-10.46,24.39,10,-11.26,24.31,10,-11.58,24.05,10],
 ];
-makepoly(ldraw_lib__973pq3(), line=0.2);
+module ldraw_lib__973pq3(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973pq3(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973pq3(line=0.2);

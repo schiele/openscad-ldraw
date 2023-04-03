@@ -69,4 +69,6 @@ function ldraw_lib__logo() = [
 // 2 24 1.5 0 4 -1.5 0 4.75
   [2,24,1.5,0,4,-1.5,0,4.75],
 ];
-makepoly(ldraw_lib__logo(), line=0.2);
+module ldraw_lib__logo(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__logo(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__logo(line=0.2);

@@ -969,4 +969,6 @@ function ldraw_lib__973pba() = [
 // 3 15 7.17349 8.12683 -10 7.40606 8.59609 -10 7.69108 8.97109 -10
   [3,15,7.17349,8.12683,-10,7.40606,8.59609,-10,7.69108,8.97109,-10],
 ];
-makepoly(ldraw_lib__973pba(), line=0.2);
+module ldraw_lib__973pba(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973pba(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973pba(line=0.2);

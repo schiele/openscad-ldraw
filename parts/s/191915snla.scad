@@ -40,4 +40,6 @@ function ldraw_lib__s__191915snla() = [
   [4,16,4.4,0,-22,7.7,0,-13.2,-9.9,0,4.4,-13.2,0,-4.4],
 // 0
 ];
-makepoly(ldraw_lib__s__191915snla(), line=0.2);
+module ldraw_lib__s__191915snla(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__191915snla(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__191915snla(line=0.2);

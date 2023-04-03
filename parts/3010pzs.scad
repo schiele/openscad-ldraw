@@ -185,4 +185,6 @@ function ldraw_lib__3010pzs() = [
 // 4 321 -40 13 -10 -30.5 13 -10 -30.5 12 -10 -40 12 -10
   [4,321,-40,13,-10,-30.5,13,-10,-30.5,12,-10,-40,12,-10],
 ];
-makepoly(ldraw_lib__3010pzs(), line=0.2);
+module ldraw_lib__3010pzs(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3010pzs(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3010pzs(line=0.2);

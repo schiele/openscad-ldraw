@@ -23,4 +23,6 @@ function ldraw_lib__48__1_6disc() = [
   [4,16,0,0,0,0.7071,0,0.7071,0.6088,0,0.7934,0.5000,0,0.8660],
 // 0
 ];
-makepoly(ldraw_lib__48__1_6disc(), line=0.2);
+module ldraw_lib__48__1_6disc(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__48__1_6disc(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__48__1_6disc(line=0.2);

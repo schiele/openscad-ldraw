@@ -41,4 +41,6 @@ function ldraw_lib__3003pe5() = [
 // 4 16 -11 23 -20 -20 24 -20 20 24 -20 0 23 -20
   [4,16,-11,23,-20,-20,24,-20,20,24,-20,0,23,-20],
 ];
-makepoly(ldraw_lib__3003pe5(), line=0.2);
+module ldraw_lib__3003pe5(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3003pe5(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3003pe5(line=0.2);

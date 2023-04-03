@@ -51,4 +51,6 @@ function ldraw_lib__s__972phba() = [
   [3,16,17.75,6.74,-6,17.5,10,-6,6,6.74,-6],
 // 0
 ];
-makepoly(ldraw_lib__s__972phba(), line=0.2);
+module ldraw_lib__s__972phba(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__972phba(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__972phba(line=0.2);

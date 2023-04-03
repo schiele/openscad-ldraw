@@ -31,4 +31,6 @@ function ldraw_lib__2_4ring37() = [
   [4,16,-35.1082,0,14.5426,-38,0,0,-37,0,0,-34.1843,0,14.1599],
 // 
 ];
-makepoly(ldraw_lib__2_4ring37(), line=0.2);
+module ldraw_lib__2_4ring37(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__2_4ring37(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__2_4ring37(line=0.2);

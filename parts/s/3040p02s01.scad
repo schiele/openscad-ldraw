@@ -101,4 +101,6 @@ function ldraw_lib__s__3040p02s01() = [
 // 3 16 9 0 8.856 6.3639 0 11.4921 3.9722 0 9.8015
   [3,16,9,0,8.856,6.3639,0,11.4921,3.9722,0,9.8015],
 ];
-makepoly(ldraw_lib__s__3040p02s01(), line=0.2);
+module ldraw_lib__s__3040p02s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__3040p02s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__3040p02s01(line=0.2);

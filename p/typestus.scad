@@ -280,4 +280,6 @@ function ldraw_lib__typestus() = [
 // 3 16 -2.752 0 -.272 -3.13 0 -1.26 -2.73 0 -1.26
   [3,16,-2.752,0,-.272,-3.13,0,-1.26,-2.73,0,-1.26],
 ];
-makepoly(ldraw_lib__typestus(), line=0.2);
+module ldraw_lib__typestus(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__typestus(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__typestus(line=0.2);

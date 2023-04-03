@@ -508,4 +508,6 @@ function ldraw_lib__93273pz3() = [
 // 5 24 10 -14.60362 -14.64 -10 -14.60362 -14.64 10 -15.6525 -7.384 10 -12.88268 -21.648
   [5,24,10,-14.60362,-14.64,-10,-14.60362,-14.64,10,-15.6525,-7.384,10,-12.88268,-21.648],
 ];
-makepoly(ldraw_lib__93273pz3(), line=0.2);
+module ldraw_lib__93273pz3(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__93273pz3(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__93273pz3(line=0.2);

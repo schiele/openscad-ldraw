@@ -106,4 +106,6 @@ function ldraw_lib__973p2e() = [
   [4,74,-19,30,-10,19,30,-10,19,31,-10,-19,31,-10],
 // 0
 ];
-makepoly(ldraw_lib__973p2e(), line=0.2);
+module ldraw_lib__973p2e(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973p2e(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973p2e(line=0.2);

@@ -214,4 +214,6 @@ function ldraw_lib__3817bpm2() = [
 // 4 16 18.755 6.187 -6.187 18.659 3.349 -8.084 17.973 3.349 -8.084 18.089 6.187 -6.187
   [4,16,18.755,6.187,-6.187,18.659,3.349,-8.084,17.973,3.349,-8.084,18.089,6.187,-6.187],
 ];
-makepoly(ldraw_lib__3817bpm2(), line=0.2);
+module ldraw_lib__3817bpm2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3817bpm2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3817bpm2(line=0.2);

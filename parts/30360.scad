@@ -230,4 +230,6 @@ function ldraw_lib__30360() = [
 // 1 16 0 0 -36 19.828897 0 -2.610524 2.610524 0 19.828897 0 1 0 48\1-16edge.dat
   [1,16,0,0,-36,19.828897,0,-2.610524,2.610524,0,19.828897,0,1,0, ldraw_lib__48__1_16edge()],
 ];
-makepoly(ldraw_lib__30360(), line=0.2);
+module ldraw_lib__30360(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__30360(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__30360(line=0.2);

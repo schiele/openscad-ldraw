@@ -101,4 +101,6 @@ function ldraw_lib__3009ptj() = [
   [4,16,-60,24,-10,-26,18.667,-10,26.333,18.667,-10,60,24,-10],
 // 0
 ];
-makepoly(ldraw_lib__3009ptj(), line=0.2);
+module ldraw_lib__3009ptj(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3009ptj(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3009ptj(line=0.2);

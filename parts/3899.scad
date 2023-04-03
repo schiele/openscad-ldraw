@@ -36,4 +36,6 @@ function ldraw_lib__3899() = [
 // 1 16 0 18 0 9.5 0 0 0 -14 0 0 0 -9.5 2-4cyli.dat
   [1,16,0,18,0,9.5,0,0,0,-14,0,0,0,-9.5, ldraw_lib__2_4cyli()],
 ];
-makepoly(ldraw_lib__3899(), line=0.2);
+module ldraw_lib__3899(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3899(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3899(line=0.2);

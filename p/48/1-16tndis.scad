@@ -20,4 +20,6 @@ function ldraw_lib__48__1_16tndis() = [
 // 3 16 1 0 .3827 .9239 0 .3827 .9659 0 .2588
   [3,16,1,0,.3827,.9239,0,.3827,.9659,0,.2588],
 ];
-makepoly(ldraw_lib__48__1_16tndis(), line=0.2);
+module ldraw_lib__48__1_16tndis(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__48__1_16tndis(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__48__1_16tndis(line=0.2);

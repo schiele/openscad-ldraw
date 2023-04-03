@@ -179,4 +179,6 @@ function ldraw_lib__171() = [
 // 5 24 29.3 20 16 29.3 20 20 28.3 16 16 29.9 24 16
   [5,24,29.3,20,16,29.3,20,20,28.3,16,16,29.9,24,16],
 ];
-makepoly(ldraw_lib__171(), line=0.2);
+module ldraw_lib__171(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__171(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__171(line=0.2);

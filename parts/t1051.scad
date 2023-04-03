@@ -106,4 +106,6 @@ function ldraw_lib__t1051() = [
 // 1 16 0 -2.25 -34.8 -31.8 0 0 0 0 2.25 0 1 0 rect2p.dat
   [1,16,0,-2.25,-34.8,-31.8,0,0,0,0,2.25,0,1,0, ldraw_lib__rect2p()],
 ];
-makepoly(ldraw_lib__t1051(), line=0.2);
+module ldraw_lib__t1051(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__t1051(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__t1051(line=0.2);

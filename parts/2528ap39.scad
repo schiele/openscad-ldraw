@@ -974,4 +974,6 @@ function ldraw_lib__2528ap39() = [
 // 3 16 5.72236 .3257 -13.17428 6.71 1.08 -12.97432 7.07 .88 -12.79168
   [3,16,5.72236,.3257,-13.17428,6.71,1.08,-12.97432,7.07,.88,-12.79168],
 ];
-makepoly(ldraw_lib__2528ap39(), line=0.2);
+module ldraw_lib__2528ap39(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__2528ap39(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__2528ap39(line=0.2);

@@ -614,4 +614,6 @@ function ldraw_lib__3626cpccg() = [
 // 5 24 4.9752 17 -12.0104 0 17 -13 4.9752 15.343 -12.0104 4.8296 18.5309 -11.6592
   [5,24,4.9752,17,-12.0104,0,17,-13,4.9752,15.343,-12.0104,4.8296,18.5309,-11.6592],
 ];
-makepoly(ldraw_lib__3626cpccg(), line=0.2);
+module ldraw_lib__3626cpccg(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3626cpccg(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3626cpccg(line=0.2);

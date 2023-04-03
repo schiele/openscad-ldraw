@@ -45,4 +45,6 @@ function ldraw_lib__973p72() = [
 // 1 14 0 0 -10 7.5 0 0 0 0 9 0 10 0 2-4disc.dat
   [1,14,0,0,-10,7.5,0,0,0,0,9,0,10,0, ldraw_lib__2_4disc()],
 ];
-makepoly(ldraw_lib__973p72(), line=0.2);
+module ldraw_lib__973p72(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973p72(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973p72(line=0.2);

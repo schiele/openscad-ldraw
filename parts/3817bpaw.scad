@@ -874,4 +874,6 @@ function ldraw_lib__3817bpaw() = [
 // 3 16 18.755 6.187 -6.187 13.8 5.5 -6.6462 10.9539 6.187 -6.187
   [3,16,18.755,6.187,-6.187,13.8,5.5,-6.6462,10.9539,6.187,-6.187],
 ];
-makepoly(ldraw_lib__3817bpaw(), line=0.2);
+module ldraw_lib__3817bpaw(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3817bpaw(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3817bpaw(line=0.2);

@@ -129,4 +129,6 @@ function ldraw_lib__30367aps1() = [
 // 4 80 -5.482 5.346 -15.73 -5.65 6.377 -16.212 -3.631 6.377 -16.614 -3.523 5.346 -16.119
   [4,80,-5.482,5.346,-15.73,-5.65,6.377,-16.212,-3.631,6.377,-16.614,-3.523,5.346,-16.119],
 ];
-makepoly(ldraw_lib__30367aps1(), line=0.2);
+module ldraw_lib__30367aps1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__30367aps1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__30367aps1(line=0.2);

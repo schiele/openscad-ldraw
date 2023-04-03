@@ -555,4 +555,6 @@ function ldraw_lib__s__54093s01() = [
   [1,16,-38,16,130,0,0,-38,0,-12,0,-26,0,0, ldraw_lib__box4_4a()],
 // 0
 ];
-makepoly(ldraw_lib__s__54093s01(), line=0.2);
+module ldraw_lib__s__54093s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__54093s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__54093s01(line=0.2);

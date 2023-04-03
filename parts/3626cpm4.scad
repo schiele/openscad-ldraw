@@ -1702,4 +1702,6 @@ function ldraw_lib__3626cpm4() = [
 // 4 16 4.829253 18.53088 11.65933 3.53 17.23 12.24031 3.7 17 12.26416 4.974634 17 12.01062
   [4,16,4.829253,18.53088,11.65933,3.53,17.23,12.24031,3.7,17,12.26416,4.974634,17,12.01062],
 ];
-makepoly(ldraw_lib__3626cpm4(), line=0.2);
+module ldraw_lib__3626cpm4(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3626cpm4(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3626cpm4(line=0.2);

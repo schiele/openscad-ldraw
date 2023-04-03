@@ -20,4 +20,6 @@ function ldraw_lib__6074343h() = [
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 -1 6074343g.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__6074343g()],
 ];
-makepoly(ldraw_lib__6074343h(), line=0.2);
+module ldraw_lib__6074343h(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__6074343h(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__6074343h(line=0.2);

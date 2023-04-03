@@ -464,4 +464,6 @@ function ldraw_lib__s__2525p40s01() = [
 // 3 16 0 1.22 6.56 0 -0.3 8.9 0 0.1 6.22
   [3,16,0,1.22,6.56,0,-0.3,8.9,0,0.1,6.22],
 ];
-makepoly(ldraw_lib__s__2525p40s01(), line=0.2);
+module ldraw_lib__s__2525p40s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__2525p40s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__2525p40s01(line=0.2);

@@ -868,4 +868,6 @@ function ldraw_lib__33080() = [
 // 1 16 220 0 0 1 0 0 0 1 0 0 0 1 stug19-1x11.dat
   [1,16,220,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug19_1x11()],
 ];
-makepoly(ldraw_lib__33080(), line=0.2);
+module ldraw_lib__33080(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__33080(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__33080(line=0.2);

@@ -483,4 +483,6 @@ function ldraw_lib__3011pt5() = [
 // 4 16 -38 16.5 -40 -42.5 16.5 -40 -43 21.5 -40 -38.5 21.5 -40
   [4,16,-38,16.5,-40,-42.5,16.5,-40,-43,21.5,-40,-38.5,21.5,-40],
 ];
-makepoly(ldraw_lib__3011pt5(), line=0.2);
+module ldraw_lib__3011pt5(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3011pt5(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3011pt5(line=0.2);

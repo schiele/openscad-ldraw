@@ -169,4 +169,6 @@ function ldraw_lib__3815bp8i() = [
 // 4 16 -3.3 5.2 -10 -18 6 -10 18 6 -10 3.3 5.2 -10
   [4,16,-3.3,5.2,-10,-18,6,-10,18,6,-10,3.3,5.2,-10],
 ];
-makepoly(ldraw_lib__3815bp8i(), line=0.2);
+module ldraw_lib__3815bp8i(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3815bp8i(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3815bp8i(line=0.2);

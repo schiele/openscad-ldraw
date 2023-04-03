@@ -1748,4 +1748,6 @@ function ldraw_lib__973pwe() = [
 // 1 0 0 -4 0 4.243 0 -4.243 0 -8 0 -4.243 0 -4.243 1-4cyli.dat
   [1,0,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli()],
 ];
-makepoly(ldraw_lib__973pwe(), line=0.2);
+module ldraw_lib__973pwe(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973pwe(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973pwe(line=0.2);

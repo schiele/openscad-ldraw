@@ -1257,4 +1257,6 @@ function ldraw_lib__4719() = [
 // 1 16 -4 4 -18 0 8 0 2.2768 0 -3.2888 -3.2888 0 -2.2768 3-8cyli.dat
   [1,16,-4,4,-18,0,8,0,2.2768,0,-3.2888,-3.2888,0,-2.2768, ldraw_lib__3_8cyli()],
 ];
-makepoly(ldraw_lib__4719(), line=0.2);
+module ldraw_lib__4719(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__4719(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__4719(line=0.2);

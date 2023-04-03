@@ -73,4 +73,6 @@ function ldraw_lib__stud10() = [
 // 4 16 1.9387 0 5.6145 0 0 6 0 -4 6 1.9397 -4 5.6145
   [4,16,1.9387,0,5.6145,0,0,6,0,-4,6,1.9397,-4,5.6145],
 ];
-makepoly(ldraw_lib__stud10(), line=0.2);
+module ldraw_lib__stud10(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__stud10(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__stud10(line=0.2);

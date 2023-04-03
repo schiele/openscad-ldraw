@@ -285,4 +285,6 @@ function ldraw_lib__50018c() = [
 // 1 16 0 7.5 0 0 0 1 1 0 0 0 -1 0 s\50018as01.dat
   [1,16,0,7.5,0,0,0,1,1,0,0,0,-1,0, ldraw_lib__s__50018as01()],
 ];
-makepoly(ldraw_lib__50018c(), line=0.2);
+module ldraw_lib__50018c(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__50018c(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__50018c(line=0.2);

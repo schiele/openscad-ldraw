@@ -323,4 +323,6 @@ function ldraw_lib__973p2d() = [
   [3,16,14.345,2,-10,8,8.3,-10,8.2,9,-10],
 // 0 //
 ];
-makepoly(ldraw_lib__973p2d(), line=0.2);
+module ldraw_lib__973p2d(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973p2d(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973p2d(line=0.2);

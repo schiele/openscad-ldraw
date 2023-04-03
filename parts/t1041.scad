@@ -260,4 +260,6 @@ function ldraw_lib__t1041() = [
 // 5 24 19 12.923 0 19 11.94 -4.946 13 14.769 0 24 11.077 0
   [5,24,19,12.923,0,19,11.94,-4.946,13,14.769,0,24,11.077,0],
 ];
-makepoly(ldraw_lib__t1041(), line=0.2);
+module ldraw_lib__t1041(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__t1041(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__t1041(line=0.2);

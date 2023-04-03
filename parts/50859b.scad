@@ -32,4 +32,6 @@ function ldraw_lib__50859b() = [
 // 1 16 -20 -10.93 17.36 0 10 0 -4 0 0 0 0 -4 4-4cylc.dat
   [1,16,-20,-10.93,17.36,0,10,0,-4,0,0,0,0,-4, ldraw_lib__4_4cylc()],
 ];
-makepoly(ldraw_lib__50859b(), line=0.2);
+module ldraw_lib__50859b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__50859b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__50859b(line=0.2);

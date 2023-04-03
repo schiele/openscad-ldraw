@@ -1191,4 +1191,6 @@ function ldraw_lib__3039pcd() = [
 // 3 16 -12.2 14.14214 -24.14214 -12.1 14.5664 -24.5664 -9.2 15.28836 -25.28836
   [3,16,-12.2,14.14214,-24.14214,-12.1,14.5664,-24.5664,-9.2,15.28836,-25.28836],
 ];
-makepoly(ldraw_lib__3039pcd(), line=0.2);
+module ldraw_lib__3039pcd(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3039pcd(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3039pcd(line=0.2);

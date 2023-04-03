@@ -46,4 +46,6 @@ function ldraw_lib__axlehol7() = [
 // 4 16 0 0 -6 0 1 -6 -2 1 -5.602 -2 0 -5.602
   [4,16,0,0,-6,0,1,-6,-2,1,-5.602,-2,0,-5.602],
 ];
-makepoly(ldraw_lib__axlehol7(), line=0.2);
+module ldraw_lib__axlehol7(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__axlehol7(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__axlehol7(line=0.2);

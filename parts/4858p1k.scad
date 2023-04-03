@@ -40,4 +40,6 @@ function ldraw_lib__4858p1k() = [
   [1,16,0,10.529,-41.587,1.031,0,0,0,0.948683,-0.326031,0,0.316228,0.978092, ldraw_lib__s__71472s01()],
 // 0
 ];
-makepoly(ldraw_lib__4858p1k(), line=0.2);
+module ldraw_lib__4858p1k(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__4858p1k(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__4858p1k(line=0.2);

@@ -737,4 +737,6 @@ function ldraw_lib__24116() = [
 // 1 16 1.5 -4.126 -9 0 -3 0 0.12568 0 2 -1 0 0 tri3u1.dat
   [1,16,1.5,-4.126,-9,0,-3,0,0.12568,0,2,-1,0,0, ldraw_lib__tri3u1()],
 ];
-makepoly(ldraw_lib__24116(), line=0.2);
+module ldraw_lib__24116(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__24116(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__24116(line=0.2);

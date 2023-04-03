@@ -183,4 +183,6 @@ function ldraw_lib__6580b() = [
 // 4 16 8.8988 3.1626 21 5.5432 2.2961 21 6 0 21 9.5911 0.0001 21
   [4,16,8.8988,3.1626,21,5.5432,2.2961,21,6,0,21,9.5911,0.0001,21],
 ];
-makepoly(ldraw_lib__6580b(), line=0.2);
+module ldraw_lib__6580b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__6580b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__6580b(line=0.2);

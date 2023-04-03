@@ -232,4 +232,6 @@ function ldraw_lib__s__3626bs02() = [
 // 2 24 4 4 0 3.79 4 -1.04
   [2,24,4,4,0,3.79,4,-1.04],
 ];
-makepoly(ldraw_lib__s__3626bs02(), line=0.2);
+module ldraw_lib__s__3626bs02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__3626bs02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__3626bs02(line=0.2);

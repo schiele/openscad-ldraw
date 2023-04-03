@@ -638,4 +638,6 @@ function ldraw_lib__s__2865s04() = [
 // 1 16 10 8 -70 -10 0 0 0 -8 0 0 0 -10 box4-4a.dat
   [1,16,10,8,-70,-10,0,0,0,-8,0,0,0,-10, ldraw_lib__box4_4a()],
 ];
-makepoly(ldraw_lib__s__2865s04(), line=0.2);
+module ldraw_lib__s__2865s04(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__2865s04(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__2865s04(line=0.2);

@@ -550,4 +550,6 @@ function ldraw_lib__87079pt3() = [
 // 3 16 -10.6 0 -8.05 -19.22 0 -12.6 -7 0 -20
   [3,16,-10.6,0,-8.05,-19.22,0,-12.6,-7,0,-20],
 ];
-makepoly(ldraw_lib__87079pt3(), line=0.2);
+module ldraw_lib__87079pt3(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__87079pt3(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__87079pt3(line=0.2);

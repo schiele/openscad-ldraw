@@ -455,4 +455,6 @@ function ldraw_lib__59231p4h() = [
 // 3 80 -1.3 -18.65 -3 1.3 -18.65 -3 0 -20 -3
   [3,80,-1.3,-18.65,-3,1.3,-18.65,-3,0,-20,-3],
 ];
-makepoly(ldraw_lib__59231p4h(), line=0.2);
+module ldraw_lib__59231p4h(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__59231p4h(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__59231p4h(line=0.2);

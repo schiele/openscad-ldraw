@@ -72,4 +72,6 @@ function ldraw_lib__72824p01() = [
 // 1 0 0 0 0 0.809017 -0.262865 0.525731 -0.587785 -0.361803 0.723607 0 -0.894428 -0.447213 s\72824s02.dat
   [1,0,0,0,0,0.809017,-0.262865,0.525731,-0.587785,-0.361803,0.723607,0,-0.894428,-0.447213, ldraw_lib__s__72824s02()],
 ];
-makepoly(ldraw_lib__72824p01(), line=0.2);
+module ldraw_lib__72824p01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__72824p01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__72824p01(line=0.2);

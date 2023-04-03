@@ -3207,4 +3207,6 @@ function ldraw_lib__973phd() = [
 // 3 16 -17.2 21.8 10 -14.24 24.33 10 -14.36 25.07 10
   [3,16,-17.2,21.8,10,-14.24,24.33,10,-14.36,25.07,10],
 ];
-makepoly(ldraw_lib__973phd(), line=0.2);
+module ldraw_lib__973phd(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973phd(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973phd(line=0.2);

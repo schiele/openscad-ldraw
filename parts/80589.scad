@@ -22,4 +22,6 @@ function ldraw_lib__80589() = [
 // 1 0 0 0 0 1 0 0 0 1 0 0 0 1 2335p40.dat
   [1,0,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2335p40()],
 ];
-makepoly(ldraw_lib__80589(), line=0.2);
+module ldraw_lib__80589(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__80589(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__80589(line=0.2);

@@ -28,4 +28,6 @@ function ldraw_lib__15068p06() = [
 // 1 272 4 24.972 20 0 -8 0 -28.9719 0 -28.9719 -40 0 40 48\1-8cyli.dat
   [1,272,4,24.972,20,0,-8,0,-28.9719,0,-28.9719,-40,0,40, ldraw_lib__48__1_8cyli()],
 ];
-makepoly(ldraw_lib__15068p06(), line=0.2);
+module ldraw_lib__15068p06(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__15068p06(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__15068p06(line=0.2);

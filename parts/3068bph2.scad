@@ -1700,4 +1700,6 @@ function ldraw_lib__3068bph2() = [
 // 3 0 6.16 0 5.7 6.85 0 5.45 7.05 0 5.42
   [3,0,6.16,0,5.7,6.85,0,5.45,7.05,0,5.42],
 ];
-makepoly(ldraw_lib__3068bph2(), line=0.2);
+module ldraw_lib__3068bph2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3068bph2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3068bph2(line=0.2);

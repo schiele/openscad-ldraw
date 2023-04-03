@@ -30,4 +30,6 @@ function ldraw_lib__3_16con9() = [
   [5,24,3.4443,1,8.3151,3.827,0,9.239,6.364,1,6.364,0,1,9.7415],
 // 0 // Build by Primitive Generator 2
 ];
-makepoly(ldraw_lib__3_16con9(), line=0.2);
+module ldraw_lib__3_16con9(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3_16con9(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3_16con9(line=0.2);

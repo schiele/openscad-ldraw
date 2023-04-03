@@ -40,4 +40,6 @@ function ldraw_lib__3939p91() = [
 // 1 16 0 10 -30 1 0 0 0 0.894 -0.447 0 0.447 0.894 s\3939p91b.dat
   [1,16,0,10,-30,1,0,0,0,0.894,-0.447,0,0.447,0.894, ldraw_lib__s__3939p91b()],
 ];
-makepoly(ldraw_lib__3939p91(), line=0.2);
+module ldraw_lib__3939p91(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3939p91(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3939p91(line=0.2);

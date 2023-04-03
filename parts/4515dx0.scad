@@ -22,4 +22,6 @@ function ldraw_lib__4515dx0() = [
 // 1 16 0 9.543 -0.249 -1 0 0 0 0.987688 0.156434 0 0.156434 -0.987688 6277168n.dat
   [1,16,0,9.543,-0.249,-1,0,0,0,0.987688,0.156434,0,0.156434,-0.987688, ldraw_lib__6277168n()],
 ];
-makepoly(ldraw_lib__4515dx0(), line=0.2);
+module ldraw_lib__4515dx0(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__4515dx0(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__4515dx0(line=0.2);

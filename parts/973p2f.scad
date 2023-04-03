@@ -384,4 +384,6 @@ function ldraw_lib__973p2f() = [
   [4,16,-15.25,31.75,-10,0,31.75,-10,0,32,-10,-15.25,32,-10],
 // 0
 ];
-makepoly(ldraw_lib__973p2f(), line=0.2);
+module ldraw_lib__973p2f(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973p2f(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973p2f(line=0.2);

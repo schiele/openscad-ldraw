@@ -531,4 +531,6 @@ function ldraw_lib__973p8f() = [
 // 0 Thanks James
 // 0
 ];
-makepoly(ldraw_lib__973p8f(), line=0.2);
+module ldraw_lib__973p8f(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973p8f(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973p8f(line=0.2);

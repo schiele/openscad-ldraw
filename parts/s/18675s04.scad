@@ -129,4 +129,6 @@ function ldraw_lib__s__18675s04() = [
   [2,24,55.434,8,22.962,56.438,8,20],
 // 
 ];
-makepoly(ldraw_lib__s__18675s04(), line=0.2);
+module ldraw_lib__s__18675s04(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__18675s04(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__18675s04(line=0.2);

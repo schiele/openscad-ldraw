@@ -425,4 +425,6 @@ function ldraw_lib__4247ap02() = [
 // 3 16 -117.5 9 -2.5 -119.99 21.25 -2.5 -118.29 21.02 -2.5
   [3,16,-117.5,9,-2.5,-119.99,21.25,-2.5,-118.29,21.02,-2.5],
 ];
-makepoly(ldraw_lib__4247ap02(), line=0.2);
+module ldraw_lib__4247ap02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__4247ap02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__4247ap02(line=0.2);

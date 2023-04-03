@@ -16,4 +16,6 @@ function ldraw_lib__1_16tang() = [
 // 3 16 1 0 0 1 0 .1989 .9239 0 .3827
   [3,16,1,0,0,1,0,.1989,.9239,0,.3827],
 ];
-makepoly(ldraw_lib__1_16tang(), line=0.2);
+module ldraw_lib__1_16tang(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__1_16tang(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__1_16tang(line=0.2);

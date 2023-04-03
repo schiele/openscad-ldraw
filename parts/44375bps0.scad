@@ -409,4 +409,6 @@ function ldraw_lib__44375bps0() = [
 // 5 24 24.352 3 -31.736 26.5057 3 -29.8452 23.1986 2.2949 -26.5063 33.5406 6 -36.9479
   [5,24,24.352,3,-31.736,26.5057,3,-29.8452,23.1986,2.2949,-26.5063,33.5406,6,-36.9479],
 ];
-makepoly(ldraw_lib__44375bps0(), line=0.2);
+module ldraw_lib__44375bps0(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__44375bps0(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__44375bps0(line=0.2);

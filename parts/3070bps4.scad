@@ -426,4 +426,6 @@ function ldraw_lib__3070bps4() = [
 // 4 16 -10 0 -10 -1.72 0 -7.38067 -2.17 0 -7.43067 -6.49 0 -7.94
   [4,16,-10,0,-10,-1.72,0,-7.38067,-2.17,0,-7.43067,-6.49,0,-7.94],
 ];
-makepoly(ldraw_lib__3070bps4(), line=0.2);
+module ldraw_lib__3070bps4(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3070bps4(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3070bps4(line=0.2);

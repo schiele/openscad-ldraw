@@ -25,4 +25,6 @@ function ldraw_lib__stug8_1x5() = [
 // 1 16 80 0 0 1 0 0 0 1 0 0 0 1 stud8.dat
   [1,16,80,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud8()],
 ];
-makepoly(ldraw_lib__stug8_1x5(), line=0.2);
+module ldraw_lib__stug8_1x5(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__stug8_1x5(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__stug8_1x5(line=0.2);

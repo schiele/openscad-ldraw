@@ -368,4 +368,6 @@ function ldraw_lib__18942() = [
 // 1 16 -118.2485 -22.5 0 0 0 -3.2485 0 1 0 10 0 0 rect3.dat
   [1,16,-118.2485,-22.5,0,0,0,-3.2485,0,1,0,10,0,0, ldraw_lib__rect3()],
 ];
-makepoly(ldraw_lib__18942(), line=0.2);
+module ldraw_lib__18942(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__18942(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__18942(line=0.2);

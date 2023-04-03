@@ -22,4 +22,6 @@ function ldraw_lib__48__5_24cylo() = [
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 48\5-24cyli.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__48__5_24cyli()],
 ];
-makepoly(ldraw_lib__48__5_24cylo(), line=0.2);
+module ldraw_lib__48__5_24cylo(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__48__5_24cylo(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__48__5_24cylo(line=0.2);

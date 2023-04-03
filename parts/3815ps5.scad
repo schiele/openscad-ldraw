@@ -308,4 +308,6 @@ function ldraw_lib__3815ps5() = [
 // 4 80 13.93 2.91 -10 14.286 3.768 -10 14.587 3.567 -10 14.788 3.266 -10
   [4,80,13.93,2.91,-10,14.286,3.768,-10,14.587,3.567,-10,14.788,3.266,-10],
 ];
-makepoly(ldraw_lib__3815ps5(), line=0.2);
+module ldraw_lib__3815ps5(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3815ps5(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3815ps5(line=0.2);

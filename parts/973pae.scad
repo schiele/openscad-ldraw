@@ -1204,4 +1204,6 @@ function ldraw_lib__973pae() = [
 // 4 15 5.1 27.6 -10 5.3 27.5 -10 3.1 27.6 -10 3.2 27.9 -10
   [4,15,5.1,27.6,-10,5.3,27.5,-10,3.1,27.6,-10,3.2,27.9,-10],
 ];
-makepoly(ldraw_lib__973pae(), line=0.2);
+module ldraw_lib__973pae(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973pae(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973pae(line=0.2);

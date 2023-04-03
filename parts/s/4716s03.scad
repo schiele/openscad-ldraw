@@ -131,4 +131,6 @@ function ldraw_lib__s__4716s03() = [
 // 1 16 0 0 0 0 0 12.7 -12.7 0 0 0 2 0 1-4edgh.dat
   [1,16,0,0,0,0,0,12.7,-12.7,0,0,0,2,0, ldraw_lib__1_4edgh()],
 ];
-makepoly(ldraw_lib__s__4716s03(), line=0.2);
+module ldraw_lib__s__4716s03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__4716s03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__4716s03(line=0.2);

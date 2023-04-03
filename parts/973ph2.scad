@@ -327,4 +327,6 @@ function ldraw_lib__973ph2() = [
 // 3 16 -1.25 27 -10 -4.5 28 -10 10.25 28.5 -10
   [3,16,-1.25,27,-10,-4.5,28,-10,10.25,28.5,-10],
 ];
-makepoly(ldraw_lib__973ph2(), line=0.2);
+module ldraw_lib__973ph2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973ph2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973ph2(line=0.2);

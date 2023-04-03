@@ -185,4 +185,6 @@ function ldraw_lib__axlesphe() = [
 // 5 24 0 -12.81 -6 0 -11.1016 -6 2 -12.81 -5.602 -2 -12.81 -5.602
   [5,24,0,-12.81,-6,0,-11.1016,-6,2,-12.81,-5.602,-2,-12.81,-5.602],
 ];
-makepoly(ldraw_lib__axlesphe(), line=0.2);
+module ldraw_lib__axlesphe(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__axlesphe(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__axlesphe(line=0.2);

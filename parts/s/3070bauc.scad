@@ -37,4 +37,6 @@ function ldraw_lib__s__3070bauc() = [
   [4,16,-2.21,0,-3.75,-1.587,0,-2.25,1.587,0,-2.25,2.21,0,-3.75],
 // 0
 ];
-makepoly(ldraw_lib__s__3070bauc(), line=0.2);
+module ldraw_lib__s__3070bauc(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__3070bauc(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__3070bauc(line=0.2);

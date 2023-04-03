@@ -989,4 +989,6 @@ function ldraw_lib__973paq() = [
 // 3 14 5.5 3 -10 4.2 3 -10 4.2 3.7 -10
   [3,14,5.5,3,-10,4.2,3,-10,4.2,3.7,-10],
 ];
-makepoly(ldraw_lib__973paq(), line=0.2);
+module ldraw_lib__973paq(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973paq(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973paq(line=0.2);

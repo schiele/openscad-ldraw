@@ -481,4 +481,6 @@ function ldraw_lib__3626bpn1() = [
   [4,16,-13,17,0,-12.01,17,-4.975,-12.01,4,-4.975,-13,4,0],
 // 0
 ];
-makepoly(ldraw_lib__3626bpn1(), line=0.2);
+module ldraw_lib__3626bpn1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3626bpn1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3626bpn1(line=0.2);

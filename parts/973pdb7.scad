@@ -190,4 +190,6 @@ function ldraw_lib__973pdb7() = [
 // 3 19 -9.86 1 -10 0.91 2.39 -10 1.25 2.19 -10
   [3,19,-9.86,1,-10,0.91,2.39,-10,1.25,2.19,-10],
 ];
-makepoly(ldraw_lib__973pdb7(), line=0.2);
+module ldraw_lib__973pdb7(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973pdb7(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973pdb7(line=0.2);

@@ -48,4 +48,6 @@ function ldraw_lib__2350b() = [
   [4,16,-12,24,-160,-12,0,-160,-12,0,120,-12,24,120],
 // 
 ];
-makepoly(ldraw_lib__2350b(), line=0.2);
+module ldraw_lib__2350b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__2350b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__2350b(line=0.2);

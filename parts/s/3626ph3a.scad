@@ -387,4 +387,6 @@ function ldraw_lib__s__3626ph3a() = [
   [4,16,-11.6592,18.5309,-4.8296,-12.0104,17,-4.9752,-13,17,0,-12.6192,18.5309,0],
 // 0
 ];
-makepoly(ldraw_lib__s__3626ph3a(), line=0.2);
+module ldraw_lib__s__3626ph3a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__3626ph3a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__3626ph3a(line=0.2);

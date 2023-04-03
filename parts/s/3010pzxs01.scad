@@ -794,4 +794,6 @@ function ldraw_lib__s__3010pzxs01() = [
 // 4 16 -5.875 21.625 -10 -3.625 21.625 -10 -2.5 20.625 -10 -6.875 20.625 -10
   [4,16,-5.875,21.625,-10,-3.625,21.625,-10,-2.5,20.625,-10,-6.875,20.625,-10],
 ];
-makepoly(ldraw_lib__s__3010pzxs01(), line=0.2);
+module ldraw_lib__s__3010pzxs01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__3010pzxs01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__3010pzxs01(line=0.2);

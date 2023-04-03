@@ -25,4 +25,6 @@ function ldraw_lib__66645b() = [
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\66645bs02.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__66645bs02()],
 ];
-makepoly(ldraw_lib__66645b(), line=0.2);
+module ldraw_lib__66645b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__66645b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__66645b(line=0.2);

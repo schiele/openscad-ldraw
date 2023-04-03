@@ -17,4 +17,6 @@ function ldraw_lib__48__1_24chrd() = [
   [3,16,1,0,0,0.9914,0,0.1305,0.9659,0,0.2588],
 // 0
 ];
-makepoly(ldraw_lib__48__1_24chrd(), line=0.2);
+module ldraw_lib__48__1_24chrd(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__48__1_24chrd(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__48__1_24chrd(line=0.2);

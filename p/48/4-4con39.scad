@@ -207,4 +207,6 @@ function ldraw_lib__48__4_4con39() = [
   [5,24,38.6646,1,-5.0895,39.656,0,-5.22,37.6701,1,-10.0932,39,1,0],
 // 0 //
 ];
-makepoly(ldraw_lib__48__4_4con39(), line=0.2);
+module ldraw_lib__48__4_4con39(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__48__4_4con39(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__48__4_4con39(line=0.2);

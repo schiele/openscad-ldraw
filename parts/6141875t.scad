@@ -20,4 +20,6 @@ function ldraw_lib__6141875t() = [
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 6141875o.dat
   [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__6141875o()],
 ];
-makepoly(ldraw_lib__6141875t(), line=0.2);
+module ldraw_lib__6141875t(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__6141875t(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__6141875t(line=0.2);

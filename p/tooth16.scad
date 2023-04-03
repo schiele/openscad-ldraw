@@ -44,4 +44,6 @@ function ldraw_lib__tooth16() = [
   [4,16,-1,4.6192,-4.75,1,4.6192,-4.75,1.875,2,-4.75,-1.875,2,-4.75],
 // 0
 ];
-makepoly(ldraw_lib__tooth16(), line=0.2);
+module ldraw_lib__tooth16(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__tooth16(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__tooth16(line=0.2);

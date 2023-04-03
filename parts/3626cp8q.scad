@@ -1333,4 +1333,6 @@ function ldraw_lib__3626cp8q() = [
 // 1 16 0 17 0 -8 0 0 0 6.4 0 0 0 8 t08o6250.dat
   [1,16,0,17,0,-8,0,0,0,6.4,0,0,0,8, ldraw_lib__t08o6250()],
 ];
-makepoly(ldraw_lib__3626cp8q(), line=0.2);
+module ldraw_lib__3626cp8q(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3626cp8q(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3626cp8q(line=0.2);

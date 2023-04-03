@@ -18,4 +18,6 @@ function ldraw_lib__6246e() = [
 // 1 16 0 36 0 1 0 0 0 1 0 0 0 1 55299.dat
   [1,16,0,36,0,1,0,0,0,1,0,0,0,1, ldraw_lib__55299()],
 ];
-makepoly(ldraw_lib__6246e(), line=0.2);
+module ldraw_lib__6246e(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__6246e(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__6246e(line=0.2);

@@ -553,4 +553,6 @@ function ldraw_lib__clh13() = [
 // 5 24 3 -9.772 -1.148 3 -9.1213 -2.1213 2.25 -8.590975 -1.590975 3.752 -10.45 -1.446
   [5,24,3,-9.772,-1.148,3,-9.1213,-2.1213,2.25,-8.590975,-1.590975,3.752,-10.45,-1.446],
 ];
-makepoly(ldraw_lib__clh13(), line=0.2);
+module ldraw_lib__clh13(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__clh13(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__clh13(line=0.2);

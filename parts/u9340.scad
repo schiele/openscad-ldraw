@@ -94,4 +94,6 @@ function ldraw_lib__u9340() = [
 // 5 24 -31 0 76 31 0 76 40 0 80 31 4 -74
   [5,24,-31,0,76,31,0,76,40,0,80,31,4,-74],
 ];
-makepoly(ldraw_lib__u9340(), line=0.2);
+module ldraw_lib__u9340(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__u9340(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__u9340(line=0.2);

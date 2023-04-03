@@ -43,4 +43,6 @@ function ldraw_lib__s__191915sgbb() = [
   [4,16,57,0,39,52.8,0,15.95,52.8,0,-15.95,57,0,-39],
 // 
 ];
-makepoly(ldraw_lib__s__191915sgbb(), line=0.2);
+module ldraw_lib__s__191915sgbb(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__191915sgbb(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__191915sgbb(line=0.2);

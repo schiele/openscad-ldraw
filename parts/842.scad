@@ -21,4 +21,6 @@ function ldraw_lib__842() = [
 // 1 16 0 28.5 1 35.75 0 0 0 1.5 0 0 0 35 box.dat
   [1,16,0,28.5,1,35.75,0,0,0,1.5,0,0,0,35, ldraw_lib__box()],
 ];
-makepoly(ldraw_lib__842(), line=0.2);
+module ldraw_lib__842(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__842(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__842(line=0.2);

@@ -24,4 +24,6 @@ function ldraw_lib__54200dy3() = [
 // 1 16 0 -10 0 1 0 0 0 0.857493 -0.514496 0 0.514496 0.857493 6142622l.dat
   [1,16,0,-10,0,1,0,0,0,0.857493,-0.514496,0,0.514496,0.857493, ldraw_lib__6142622l()],
 ];
-makepoly(ldraw_lib__54200dy3(), line=0.2);
+module ldraw_lib__54200dy3(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__54200dy3(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__54200dy3(line=0.2);

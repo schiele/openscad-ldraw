@@ -112,4 +112,6 @@ function ldraw_lib__logo_shell_h() = [
 // 4 16 3.7 0 -.515 -2.7 0 -.4 -2.7 0 -9.5 3.7 0 -9.5
   [4,16,3.7,0,-.515,-2.7,0,-.4,-2.7,0,-9.5,3.7,0,-9.5],
 ];
-makepoly(ldraw_lib__logo_shell_h(), line=0.2);
+module ldraw_lib__logo_shell_h(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__logo_shell_h(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__logo_shell_h(line=0.2);

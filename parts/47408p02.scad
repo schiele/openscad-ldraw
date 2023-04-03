@@ -39,4 +39,6 @@ function ldraw_lib__47408p02() = [
 // 1 16 0 72.0369 0 5.14403 0 0 0 -23.14813 0 0 0 5.14403 48\4-4con6.dat
   [1,16,0,72.0369,0,5.14403,0,0,0,-23.14813,0,0,0,5.14403, ldraw_lib__48__4_4con6()],
 ];
-makepoly(ldraw_lib__47408p02(), line=0.2);
+module ldraw_lib__47408p02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__47408p02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__47408p02(line=0.2);

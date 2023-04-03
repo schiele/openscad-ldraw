@@ -39,4 +39,6 @@ function ldraw_lib__3_4ring9() = [
 // 4 16 -3.4443 0 -8.3151 -3.827 0 -9.239 0 0 -10 0 0 -9
   [4,16,-3.4443,0,-8.3151,-3.827,0,-9.239,0,0,-10,0,0,-9],
 ];
-makepoly(ldraw_lib__3_4ring9(), line=0.2);
+module ldraw_lib__3_4ring9(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3_4ring9(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3_4ring9(line=0.2);

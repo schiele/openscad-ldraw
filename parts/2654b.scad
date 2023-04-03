@@ -26,4 +26,6 @@ function ldraw_lib__2654b() = [
 // 1 16 0 2.25 0 20 0 0 0 -11.5 0 0 0 -20 bump5000.dat
   [1,16,0,2.25,0,20,0,0,0,-11.5,0,0,0,-20, ldraw_lib__bump5000()],
 ];
-makepoly(ldraw_lib__2654b(), line=0.2);
+module ldraw_lib__2654b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__2654b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__2654b(line=0.2);

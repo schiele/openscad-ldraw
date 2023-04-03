@@ -1630,4 +1630,6 @@ function ldraw_lib__32272ps2() = [
 // 3 0 28.862 -96.84 -89.56 25.568 -104.752 -82.917 24.477 -105.055 -82.726
   [3,0,28.862,-96.84,-89.56,25.568,-104.752,-82.917,24.477,-105.055,-82.726],
 ];
-makepoly(ldraw_lib__32272ps2(), line=0.2);
+module ldraw_lib__32272ps2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__32272ps2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__32272ps2(line=0.2);

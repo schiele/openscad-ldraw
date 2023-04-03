@@ -321,4 +321,6 @@ function ldraw_lib__4864apt3() = [
 // 4 16 13.6 37.9 10 12.9 38.5 10 -19.2 38.5 10 -6.1 37.9 10
   [4,16,13.6,37.9,10,12.9,38.5,10,-19.2,38.5,10,-6.1,37.9,10],
 ];
-makepoly(ldraw_lib__4864apt3(), line=0.2);
+module ldraw_lib__4864apt3(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__4864apt3(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__4864apt3(line=0.2);

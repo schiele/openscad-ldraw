@@ -355,4 +355,6 @@ function ldraw_lib__3010pzg() = [
 // 3 16 20.851 18.085 -10 10.788 24 -10 40 24 -10
   [3,16,20.851,18.085,-10,10.788,24,-10,40,24,-10],
 ];
-makepoly(ldraw_lib__3010pzg(), line=0.2);
+module ldraw_lib__3010pzg(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3010pzg(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3010pzg(line=0.2);

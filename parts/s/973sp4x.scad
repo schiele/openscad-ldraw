@@ -373,4 +373,6 @@ function ldraw_lib__s__973sp4x() = [
 // 3 16 -2.66 12.63 0 -4.45 12.78 0 -3.09 12.11 0
   [3,16,-2.66,12.63,0,-4.45,12.78,0,-3.09,12.11,0],
 ];
-makepoly(ldraw_lib__s__973sp4x(), line=0.2);
+module ldraw_lib__s__973sp4x(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__973sp4x(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__973sp4x(line=0.2);

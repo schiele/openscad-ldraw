@@ -95,4 +95,6 @@ function ldraw_lib__tootb28s() = [
   [4,16,-1.616,-28.754,-4,-2.573,-30.943,-4,-4.379,-30.739,-4,-4.824,-28.392,-4],
 // 0
 ];
-makepoly(ldraw_lib__tootb28s(), line=0.2);
+module ldraw_lib__tootb28s(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__tootb28s(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__tootb28s(line=0.2);

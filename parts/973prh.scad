@@ -1623,4 +1623,6 @@ function ldraw_lib__973prh() = [
 // 3 71 -0.207 21.917 -10 -0.207 23.268 -10 -0.625 22.253 -10
   [3,71,-0.207,21.917,-10,-0.207,23.268,-10,-0.625,22.253,-10],
 ];
-makepoly(ldraw_lib__973prh(), line=0.2);
+module ldraw_lib__973prh(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973prh(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973prh(line=0.2);

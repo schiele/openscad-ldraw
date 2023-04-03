@@ -4851,4 +4851,6 @@ function ldraw_lib__973pri() = [
 // 4 308 -0.227 12.335 10 2.379 15.358 10 1.107 16.574 10 -1.763 13.638 10
   [4,308,-0.227,12.335,10,2.379,15.358,10,1.107,16.574,10,-1.763,13.638,10],
 ];
-makepoly(ldraw_lib__973pri(), line=0.2);
+module ldraw_lib__973pri(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973pri(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973pri(line=0.2);

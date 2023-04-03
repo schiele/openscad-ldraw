@@ -184,4 +184,6 @@ function ldraw_lib__typestub() = [
 // 3 16 1.745 0 -4.955 0.988 0 -5 4.45 0 -5
   [3,16,1.745,0,-4.955,0.988,0,-5,4.45,0,-5],
 ];
-makepoly(ldraw_lib__typestub(), line=0.2);
+module ldraw_lib__typestub(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__typestub(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__typestub(line=0.2);

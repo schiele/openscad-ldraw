@@ -528,4 +528,6 @@ function ldraw_lib__3069bp28() = [
   [3,16,1.27151,0,-3,17.2,0,-3,13.8,0,-1.8],
 // 
 ];
-makepoly(ldraw_lib__3069bp28(), line=0.2);
+module ldraw_lib__3069bp28(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3069bp28(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3069bp28(line=0.2);

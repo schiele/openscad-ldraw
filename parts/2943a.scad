@@ -46,4 +46,6 @@ function ldraw_lib__2943a() = [
 // 1 16 0 -10 -25 -1 0 0 0 0 1 0 -1 0 4-4con3.dat
   [1,16,0,-10,-25,-1,0,0,0,0,1,0,-1,0, ldraw_lib__4_4con3()],
 ];
-makepoly(ldraw_lib__2943a(), line=0.2);
+module ldraw_lib__2943a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__2943a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__2943a(line=0.2);

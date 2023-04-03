@@ -826,4 +826,6 @@ function ldraw_lib__s__59231p4ha() = [
 // 4 320 5.4 -12 0 -5.4 -12 0 -0.5599 -11.7739 0 1.5045 -11.7887 0
   [4,320,5.4,-12,0,-5.4,-12,0,-0.5599,-11.7739,0,1.5045,-11.7887,0],
 ];
-makepoly(ldraw_lib__s__59231p4ha(), line=0.2);
+module ldraw_lib__s__59231p4ha(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__59231p4ha(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__59231p4ha(line=0.2);

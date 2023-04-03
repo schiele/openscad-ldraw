@@ -658,4 +658,6 @@ function ldraw_lib__25111() = [
 // 1 16 0 23.9385 -1.9821 1 0 0 0 -1.23461 0.15643 0 0.19554 0.98769 stud3.dat
   [1,16,0,23.9385,-1.9821,1,0,0,0,-1.23461,0.15643,0,0.19554,0.98769, ldraw_lib__stud3()],
 ];
-makepoly(ldraw_lib__25111(), line=0.2);
+module ldraw_lib__25111(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__25111(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__25111(line=0.2);

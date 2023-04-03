@@ -348,4 +348,6 @@ function ldraw_lib__3009ptb() = [
 // 3 15 -1.284 12.005 -10 -1.131 13.711 -10 -0.449 12.367 -10
   [3,15,-1.284,12.005,-10,-1.131,13.711,-10,-0.449,12.367,-10],
 ];
-makepoly(ldraw_lib__3009ptb(), line=0.2);
+module ldraw_lib__3009ptb(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3009ptb(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3009ptb(line=0.2);

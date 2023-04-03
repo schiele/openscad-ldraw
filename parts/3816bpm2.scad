@@ -248,4 +248,6 @@ function ldraw_lib__3816bpm2() = [
 // 3 308 -15.49 6.187 -6.187 -12.131 6.187 -6.187 -15.18 5.279 -6.794
   [3,308,-15.49,6.187,-6.187,-12.131,6.187,-6.187,-15.18,5.279,-6.794],
 ];
-makepoly(ldraw_lib__3816bpm2(), line=0.2);
+module ldraw_lib__3816bpm2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3816bpm2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3816bpm2(line=0.2);

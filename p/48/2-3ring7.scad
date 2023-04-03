@@ -79,4 +79,6 @@ function ldraw_lib__48__2_3ring7() = [
   [4,16,-4.2616,0,-5.5538,-4.8704,0,-6.3472,-4,0,-6.928,-3.5,0,-6.062],
 // 0
 ];
-makepoly(ldraw_lib__48__2_3ring7(), line=0.2);
+module ldraw_lib__48__2_3ring7(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__48__2_3ring7(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__48__2_3ring7(line=0.2);

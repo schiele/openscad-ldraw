@@ -351,4 +351,6 @@ function ldraw_lib__973psx() = [
 // 3 320 9.23 17.39 -10 8.112 21.014 -10 9.203 19.263 -10
   [3,320,9.23,17.39,-10,8.112,21.014,-10,9.203,19.263,-10],
 ];
-makepoly(ldraw_lib__973psx(), line=0.2);
+module ldraw_lib__973psx(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973psx(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973psx(line=0.2);

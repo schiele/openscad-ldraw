@@ -126,4 +126,6 @@ function ldraw_lib__3245bp01() = [
 // 4 15 20 39.7471 -7.3563 20 39.7471 7.3563 20 8.2529 7.3563 20 8.2529 -7.3563
   [4,15,20,39.7471,-7.3563,20,39.7471,7.3563,20,8.2529,7.3563,20,8.2529,-7.3563],
 ];
-makepoly(ldraw_lib__3245bp01(), line=0.2);
+module ldraw_lib__3245bp01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3245bp01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3245bp01(line=0.2);

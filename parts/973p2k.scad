@@ -1312,4 +1312,6 @@ function ldraw_lib__973p2k() = [
 // 4 16 -9.5 21.5 -10 -9.1 21.5 -10 -9.7 20.9 -10 -9.9 21.3 -10
   [4,16,-9.5,21.5,-10,-9.1,21.5,-10,-9.7,20.9,-10,-9.9,21.3,-10],
 ];
-makepoly(ldraw_lib__973p2k(), line=0.2);
+module ldraw_lib__973p2k(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973p2k(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973p2k(line=0.2);

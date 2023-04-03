@@ -610,4 +610,6 @@ function ldraw_lib__arm1() = [
 // 2 24 -3.25 -5.75 -10 -3.25 -5.75 -16.97674
   [2,24,-3.25,-5.75,-10,-3.25,-5.75,-16.97674],
 ];
-makepoly(ldraw_lib__arm1(), line=0.2);
+module ldraw_lib__arm1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__arm1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__arm1(line=0.2);

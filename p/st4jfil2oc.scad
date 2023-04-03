@@ -72,4 +72,6 @@ function ldraw_lib__st4jfil2oc() = [
 // 5 24 8 0 0 8 -4 0 7.391 0 3.0615 7.391 0 -3.0615
   [5,24,8,0,0,8,-4,0,7.391,0,3.0615,7.391,0,-3.0615],
 ];
-makepoly(ldraw_lib__st4jfil2oc(), line=0.2);
+module ldraw_lib__st4jfil2oc(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__st4jfil2oc(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__st4jfil2oc(line=0.2);

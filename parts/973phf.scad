@@ -73,4 +73,6 @@ function ldraw_lib__973phf() = [
 // 4 16 -19 29 -10 -15 21 -10 -14 18 -10 -14 13 -10
   [4,16,-19,29,-10,-15,21,-10,-14,18,-10,-14,13,-10],
 ];
-makepoly(ldraw_lib__973phf(), line=0.2);
+module ldraw_lib__973phf(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973phf(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973phf(line=0.2);

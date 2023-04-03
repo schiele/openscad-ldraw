@@ -37,4 +37,6 @@ function ldraw_lib__s__letra() = [
   [3,16,4,7,-10,2,5,-10,3.531,5.304,-10],
 // 0
 ];
-makepoly(ldraw_lib__s__letra(), line=0.2);
+module ldraw_lib__s__letra(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__letra(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__letra(line=0.2);

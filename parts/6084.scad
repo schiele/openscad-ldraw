@@ -476,4 +476,6 @@ function ldraw_lib__6084() = [
 // 5 24 38.23 24 -26 56.715 -29.307 16.417 25.721 -29.307 -14.577 76 24 15.546
   [5,24,38.23,24,-26,56.715,-29.307,16.417,25.721,-29.307,-14.577,76,24,15.546],
 ];
-makepoly(ldraw_lib__6084(), line=0.2);
+module ldraw_lib__6084(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__6084(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__6084(line=0.2);

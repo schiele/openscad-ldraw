@@ -61,4 +61,6 @@ function ldraw_lib__s__191915satb() = [
 // 4 16 0 0 -39 0 0 -31 -53 0 -31 -57 0 -39
   [4,16,0,0,-39,0,0,-31,-53,0,-31,-57,0,-39],
 ];
-makepoly(ldraw_lib__s__191915satb(), line=0.2);
+module ldraw_lib__s__191915satb(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__191915satb(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__191915satb(line=0.2);

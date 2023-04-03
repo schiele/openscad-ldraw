@@ -347,4 +347,6 @@ function ldraw_lib__973psc() = [
 // 4 0 -16.37 13.77 -10 -16.379 17.4 -10 -15.63 17 -10 -15.63 13.77 -10
   [4,0,-16.37,13.77,-10,-16.379,17.4,-10,-15.63,17,-10,-15.63,13.77,-10],
 ];
-makepoly(ldraw_lib__973psc(), line=0.2);
+module ldraw_lib__973psc(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973psc(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973psc(line=0.2);

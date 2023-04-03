@@ -1861,4 +1861,6 @@ function ldraw_lib__973pc2() = [
 // 3 16 11.955 15.227 10 10.722 15.028 10 12.558 14.678 10
   [3,16,11.955,15.227,10,10.722,15.028,10,12.558,14.678,10],
 ];
-makepoly(ldraw_lib__973pc2(), line=0.2);
+module ldraw_lib__973pc2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973pc2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973pc2(line=0.2);

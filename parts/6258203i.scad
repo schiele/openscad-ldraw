@@ -111,4 +111,6 @@ function ldraw_lib__6258203i() = [
 // 1 2 -19.967 -.25 3 .216506 0 -.125 0 1 0 .125 0 .216506 48\1-16ring6.dat
   [1,2,-19.967,-.25,3,.216506,0,-.125,0,1,0,.125,0,.216506, ldraw_lib__48__1_16ring6()],
 ];
-makepoly(ldraw_lib__6258203i(), line=0.2);
+module ldraw_lib__6258203i(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__6258203i(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__6258203i(line=0.2);

@@ -34,4 +34,6 @@ function ldraw_lib__715() = [
 // 1 494 0 0 12 1 0 0 0 1 0 0 0 1 35b.dat
   [1,494,0,0,12,1,0,0,0,1,0,0,0,1, ldraw_lib__35b()],
 ];
-makepoly(ldraw_lib__715(), line=0.2);
+module ldraw_lib__715(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__715(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__715(line=0.2);

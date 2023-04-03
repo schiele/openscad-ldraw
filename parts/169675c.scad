@@ -23,4 +23,6 @@ function ldraw_lib__169675c() = [
 // 1 16 0 -.25 0 32.5 0 0 0 .25 0 0 0 -25 box5-12.dat
   [1,16,0,-.25,0,32.5,0,0,0,.25,0,0,0,-25, ldraw_lib__box5_12()],
 ];
-makepoly(ldraw_lib__169675c(), line=0.2);
+module ldraw_lib__169675c(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__169675c(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__169675c(line=0.2);

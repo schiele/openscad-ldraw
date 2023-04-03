@@ -33,4 +33,6 @@ function ldraw_lib__s__6069ps2b() = [
   [2,24,20,19.333,-68,20,5.333,-26],
 // 0
 ];
-makepoly(ldraw_lib__s__6069ps2b(), line=0.2);
+module ldraw_lib__s__6069ps2b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__6069ps2b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__6069ps2b(line=0.2);

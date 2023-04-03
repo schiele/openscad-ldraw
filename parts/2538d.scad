@@ -38,4 +38,6 @@ function ldraw_lib__2538d() = [
 // 1 16 13.945 -6 0 .02 -1 -.4 2 0 0 0 0 2 2-4edge.dat
   [1,16,13.945,-6,0,.02,-1,-.4,2,0,0,0,0,2, ldraw_lib__2_4edge()],
 ];
-makepoly(ldraw_lib__2538d(), line=0.2);
+module ldraw_lib__2538d(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__2538d(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__2538d(line=0.2);

@@ -1212,4 +1212,6 @@ function ldraw_lib__973puf() = [
 // 4 16 17.95 29.5 10 17.9 30.1 10 15.45 30.9 10 15.8 29.85 10
   [4,16,17.95,29.5,10,17.9,30.1,10,15.45,30.9,10,15.8,29.85,10],
 ];
-makepoly(ldraw_lib__973puf(), line=0.2);
+module ldraw_lib__973puf(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973puf(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973puf(line=0.2);

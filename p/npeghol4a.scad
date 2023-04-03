@@ -58,4 +58,6 @@ function ldraw_lib__npeghol4a() = [
 // 4 16 9 1 -1 6.3639 1 -1.53212 6.3639 1 1.53212 9 1 1
   [4,16,9,1,-1,6.3639,1,-1.53212,6.3639,1,1.53212,9,1,1],
 ];
-makepoly(ldraw_lib__npeghol4a(), line=0.2);
+module ldraw_lib__npeghol4a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__npeghol4a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__npeghol4a(line=0.2);

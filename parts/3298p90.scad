@@ -36,4 +36,6 @@ function ldraw_lib__3298p90() = [
 // 1 82 0 4.5 -19 1 0 0 0 0.4473 0.8948 0 -0.8948 0.4473 s\3004p90b.dat
   [1,82,0,4.5,-19,1,0,0,0,0.4473,0.8948,0,-0.8948,0.4473, ldraw_lib__s__3004p90b()],
 ];
-makepoly(ldraw_lib__3298p90(), line=0.2);
+module ldraw_lib__3298p90(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3298p90(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3298p90(line=0.2);

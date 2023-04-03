@@ -103,4 +103,6 @@ function ldraw_lib__10a() = [
 // 1 16 310 0 -210 1 0 0 0 1 0 0 0 1 stud.dat
   [1,16,310,0,-210,1,0,0,0,1,0,0,0,1, ldraw_lib__stud()],
 ];
-makepoly(ldraw_lib__10a(), line=0.2);
+module ldraw_lib__10a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__10a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__10a(line=0.2);

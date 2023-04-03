@@ -941,4 +941,6 @@ function ldraw_lib__98138pt2() = [
 // 3 16 -.2 0 8.07 0 0 10 -.65 0 8.06
   [3,16,-.2,0,8.07,0,0,10,-.65,0,8.06],
 ];
-makepoly(ldraw_lib__98138pt2(), line=0.2);
+module ldraw_lib__98138pt2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__98138pt2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__98138pt2(line=0.2);

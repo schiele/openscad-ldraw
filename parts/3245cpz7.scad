@@ -64,4 +64,6 @@ function ldraw_lib__3245cpz7() = [
 // 4 16 9 39.25 -10 7.25 40 -10 .5 45 -10 9.75 41.5 -10
   [4,16,9,39.25,-10,7.25,40,-10,.5,45,-10,9.75,41.5,-10],
 ];
-makepoly(ldraw_lib__3245cpz7(), line=0.2);
+module ldraw_lib__3245cpz7(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3245cpz7(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3245cpz7(line=0.2);

@@ -31,4 +31,6 @@ function ldraw_lib__3070bpuf() = [
 // 4 16 -10 0 -10 -1 0 -7.5 -1 0 -5.5 -10 0 10
   [4,16,-10,0,-10,-1,0,-7.5,-1,0,-5.5,-10,0,10],
 ];
-makepoly(ldraw_lib__3070bpuf(), line=0.2);
+module ldraw_lib__3070bpuf(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3070bpuf(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3070bpuf(line=0.2);

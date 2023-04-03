@@ -282,4 +282,6 @@ function ldraw_lib__logo_technic_2() = [
 // 3 16 6.05 0 -4.4 4.15 0 -4.4 0 0 -6
   [3,16,6.05,0,-4.4,4.15,0,-4.4,0,0,-6],
 ];
-makepoly(ldraw_lib__logo_technic_2(), line=0.2);
+module ldraw_lib__logo_technic_2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__logo_technic_2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__logo_technic_2(line=0.2);

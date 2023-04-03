@@ -220,4 +220,6 @@ function ldraw_lib__s__u588s03() = [
 // 5 24 11.5 -8.4 -28.9 11.9 -8.3 -28.5 11.7 -10 -28.8 11.2 -6.9 -27.7
   [5,24,11.5,-8.4,-28.9,11.9,-8.3,-28.5,11.7,-10,-28.8,11.2,-6.9,-27.7],
 ];
-makepoly(ldraw_lib__s__u588s03(), line=0.2);
+module ldraw_lib__s__u588s03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__u588s03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__u588s03(line=0.2);

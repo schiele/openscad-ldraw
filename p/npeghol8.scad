@@ -130,4 +130,6 @@ function ldraw_lib__npeghol8() = [
 // 5 24 -7.07107 9 .58966 -7.07107 0 .58966 -6.89383 9 1.25825 -7.07304 9 -1.11148
   [5,24,-7.07107,9,.58966,-7.07107,0,.58966,-6.89383,9,1.25825,-7.07304,9,-1.11148],
 ];
-makepoly(ldraw_lib__npeghol8(), line=0.2);
+module ldraw_lib__npeghol8(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__npeghol8(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__npeghol8(line=0.2);

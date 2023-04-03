@@ -99,4 +99,6 @@ function ldraw_lib__973pgc() = [
 // 4 0 -1.4338 6.3 10 -2.54 5.5 10 1.9878 5.5 10 1.4092 6.3 10
   [4,0,-1.4338,6.3,10,-2.54,5.5,10,1.9878,5.5,10,1.4092,6.3,10],
 ];
-makepoly(ldraw_lib__973pgc(), line=0.2);
+module ldraw_lib__973pgc(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973pgc(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973pgc(line=0.2);

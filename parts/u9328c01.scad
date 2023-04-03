@@ -803,4 +803,6 @@ function ldraw_lib__u9328c01() = [
 // 3 16 94.3086 -118.214 0 109.536 -40.3981 -8.37 109.879 -39.7809 0
   [3,16,94.3086,-118.214,0,109.536,-40.3981,-8.37,109.879,-39.7809,0],
 ];
-makepoly(ldraw_lib__u9328c01(), line=0.2);
+module ldraw_lib__u9328c01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__u9328c01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__u9328c01(line=0.2);

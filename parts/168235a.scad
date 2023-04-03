@@ -188,4 +188,6 @@ function ldraw_lib__168235a() = [
 // 1 16 -137.674 -0.25 -4.136 -1.21752 0 -1.58671 0 0.25 0 1.58671 0 -1.21752 48\1-4cyli.dat
   [1,16,-137.674,-0.25,-4.136,-1.21752,0,-1.58671,0,0.25,0,1.58671,0,-1.21752, ldraw_lib__48__1_4cyli()],
 ];
-makepoly(ldraw_lib__168235a(), line=0.2);
+module ldraw_lib__168235a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__168235a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__168235a(line=0.2);

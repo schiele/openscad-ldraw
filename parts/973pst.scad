@@ -729,4 +729,6 @@ function ldraw_lib__973pst() = [
 // 4 320 -0.8 29.5 -10 -0.8 31.8 -10 -0.6 31.8 -10 -0.6 29.5 -10
   [4,320,-0.8,29.5,-10,-0.8,31.8,-10,-0.6,31.8,-10,-0.6,29.5,-10],
 ];
-makepoly(ldraw_lib__973pst(), line=0.2);
+module ldraw_lib__973pst(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973pst(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973pst(line=0.2);

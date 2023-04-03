@@ -67,4 +67,6 @@ function ldraw_lib__stud4f4n() = [
 // 1 16 0 0 0 0 0 -1 0 1 0 1 0 0 st4jfil2.dat
   [1,16,0,0,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__st4jfil2()],
 ];
-makepoly(ldraw_lib__stud4f4n(), line=0.2);
+module ldraw_lib__stud4f4n(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__stud4f4n(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__stud4f4n(line=0.2);

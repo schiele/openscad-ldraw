@@ -205,4 +205,6 @@ function ldraw_lib__14769pb3() = [
 // 3 14 7.071 0 7.071 7.8833 0 2.2961 10 0 0
   [3,14,7.071,0,7.071,7.8833,0,2.2961,10,0,0],
 ];
-makepoly(ldraw_lib__14769pb3(), line=0.2);
+module ldraw_lib__14769pb3(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__14769pb3(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__14769pb3(line=0.2);

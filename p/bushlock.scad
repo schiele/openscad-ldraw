@@ -297,4 +297,6 @@ function ldraw_lib__bushlock() = [
   [2,24,9.62,0,-1.913,9.239,0,-3.827],
 // 0 //
 ];
-makepoly(ldraw_lib__bushlock(), line=0.2);
+module ldraw_lib__bushlock(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__bushlock(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__bushlock(line=0.2);

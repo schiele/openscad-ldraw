@@ -33,4 +33,6 @@ function ldraw_lib__1_4con17() = [
 // 5 24 0 1 17 0 0 18 6.5059 1 15.7063 -7.0414 1 17
   [5,24,0,1,17,0,0,18,6.5059,1,15.7063,-7.0414,1,17],
 ];
-makepoly(ldraw_lib__1_4con17(), line=0.2);
+module ldraw_lib__1_4con17(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__1_4con17(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__1_4con17(line=0.2);

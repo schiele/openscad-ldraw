@@ -280,4 +280,6 @@ function ldraw_lib__s__973pdb7s02() = [
 // 3 16 2.6 31.47 10 19 32 10 -19 32 10
   [3,16,2.6,31.47,10,19,32,10,-19,32,10],
 ];
-makepoly(ldraw_lib__s__973pdb7s02(), line=0.2);
+module ldraw_lib__s__973pdb7s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__973pdb7s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__973pdb7s02(line=0.2);

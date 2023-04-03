@@ -100,4 +100,6 @@ function ldraw_lib__2586p4f() = [
 // 1 80 0 31.5 -8 2.1213 0 -2.1213 2.1213 0 2.1213 0 1 0 1-4disc.dat
   [1,80,0,31.5,-8,2.1213,0,-2.1213,2.1213,0,2.1213,0,1,0, ldraw_lib__1_4disc()],
 ];
-makepoly(ldraw_lib__2586p4f(), line=0.2);
+module ldraw_lib__2586p4f(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__2586p4f(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__2586p4f(line=0.2);

@@ -633,4 +633,6 @@ function ldraw_lib__s__65421s00() = [
 // 1 16 0 -1 174 62 -1 0 0 0 -62 -30 0 0 48\1-4ndis.dat
   [1,16,0,-1,174,62,-1,0,0,0,-62,-30,0,0, ldraw_lib__48__1_4ndis()],
 ];
-makepoly(ldraw_lib__s__65421s00(), line=0.2);
+module ldraw_lib__s__65421s00(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__65421s00(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__65421s00(line=0.2);

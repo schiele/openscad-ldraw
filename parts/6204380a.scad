@@ -24,4 +24,6 @@ function ldraw_lib__6204380a() = [
   [4,0,-100,-0.25,50,-100,-0.25,-50,100,-0.25,-50,100,-0.25,50],
 // 0 !TEXMAP END
 ];
-makepoly(ldraw_lib__6204380a(), line=0.2);
+module ldraw_lib__6204380a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__6204380a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__6204380a(line=0.2);

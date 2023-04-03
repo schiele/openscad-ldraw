@@ -544,4 +544,6 @@ function ldraw_lib__3443b() = [
 // 1 494 -10 -1 -116 1 0 0 0 1 0 0 0 1 s\3443as03.dat
   [1,494,-10,-1,-116,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3443as03()],
 ];
-makepoly(ldraw_lib__3443b(), line=0.2);
+module ldraw_lib__3443b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3443b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3443b(line=0.2);

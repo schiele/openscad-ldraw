@@ -54,4 +54,6 @@ function ldraw_lib__s__letba() = [
   [4,16,2,7,-10,2,5,-10,-6,5,-10,-4,7,-10],
 // 0
 ];
-makepoly(ldraw_lib__s__letba(), line=0.2);
+module ldraw_lib__s__letba(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__letba(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__letba(line=0.2);

@@ -26,4 +26,6 @@ function ldraw_lib__3_8rin24() = [
 // 4 16 -9.1848 0 22.1736 -9.5675 0 23.0975 -17.6775 0 17.6775 -16.9704 0 16.9704
   [4,16,-9.1848,0,22.1736,-9.5675,0,23.0975,-17.6775,0,17.6775,-16.9704,0,16.9704],
 ];
-makepoly(ldraw_lib__3_8rin24(), line=0.2);
+module ldraw_lib__3_8rin24(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3_8rin24(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3_8rin24(line=0.2);

@@ -121,4 +121,6 @@ function ldraw_lib__s__4616559ps3() = [
 // 1 16 8 0 -7.7 0 0 5 0 1 0 -5 0 0 1-4ndis.dat
   [1,16,8,0,-7.7,0,0,5,0,1,0,-5,0,0, ldraw_lib__1_4ndis()],
 ];
-makepoly(ldraw_lib__s__4616559ps3(), line=0.2);
+module ldraw_lib__s__4616559ps3(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__4616559ps3(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__4616559ps3(line=0.2);

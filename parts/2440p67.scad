@@ -910,4 +910,6 @@ function ldraw_lib__2440p67() = [
 // 4 16 -34.2 -5.173 20.5 -55.4 -5.173 20.5 -54.9 -6.25 26.1 -34.2 -6.25 26.1
   [4,16,-34.2,-5.173,20.5,-55.4,-5.173,20.5,-54.9,-6.25,26.1,-34.2,-6.25,26.1],
 ];
-makepoly(ldraw_lib__2440p67(), line=0.2);
+module ldraw_lib__2440p67(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__2440p67(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__2440p67(line=0.2);

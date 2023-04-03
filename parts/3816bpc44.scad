@@ -647,4 +647,6 @@ function ldraw_lib__3816bpc44() = [
 // 3 16 -2 3.349 -8.084 -6.813 4.163 -7.5399 -6.98 4.501 -7.314
   [3,16,-2,3.349,-8.084,-6.813,4.163,-7.5399,-6.98,4.501,-7.314],
 ];
-makepoly(ldraw_lib__3816bpc44(), line=0.2);
+module ldraw_lib__3816bpc44(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3816bpc44(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3816bpc44(line=0.2);

@@ -480,4 +480,6 @@ function ldraw_lib__3039p50() = [
 // 3 16 -20 0 -10 -20 20 -30 -18.965 9.20794 -19.2079
   [3,16,-20,0,-10,-20,20,-30,-18.965,9.20794,-19.2079],
 ];
-makepoly(ldraw_lib__3039p50(), line=0.2);
+module ldraw_lib__3039p50(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3039p50(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3039p50(line=0.2);

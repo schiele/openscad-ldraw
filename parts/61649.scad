@@ -187,4 +187,6 @@ function ldraw_lib__61649() = [
 // 1 16 65.5 103 -36 0 0 2.5 6 0 0 0 -4 0 box4o4a.dat
   [1,16,65.5,103,-36,0,0,2.5,6,0,0,0,-4,0, ldraw_lib__box4o4a()],
 ];
-makepoly(ldraw_lib__61649(), line=0.2);
+module ldraw_lib__61649(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__61649(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__61649(line=0.2);

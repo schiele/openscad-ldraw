@@ -2683,4 +2683,6 @@ function ldraw_lib__3626bpq0() = [
 // 3 16 9.192 7.442 9.19224 11.4 5.9 5.88862 9.85 8.28 8.20777
   [3,16,9.192,7.442,9.19224,11.4,5.9,5.88862,9.85,8.28,8.20777],
 ];
-makepoly(ldraw_lib__3626bpq0(), line=0.2);
+module ldraw_lib__3626bpq0(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3626bpq0(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3626bpq0(line=0.2);

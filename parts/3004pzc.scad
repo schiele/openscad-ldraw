@@ -200,4 +200,6 @@ function ldraw_lib__3004pzc() = [
 // 3 71 8 15 -10 7.1 18.09 -10 8.7 17 -10
   [3,71,8,15,-10,7.1,18.09,-10,8.7,17,-10],
 ];
-makepoly(ldraw_lib__3004pzc(), line=0.2);
+module ldraw_lib__3004pzc(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3004pzc(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3004pzc(line=0.2);

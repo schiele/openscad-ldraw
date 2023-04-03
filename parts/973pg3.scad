@@ -307,4 +307,6 @@ function ldraw_lib__973pg3() = [
 // 4 0 0 6.3 10 -1.7679 6.5981 10 -2.0741 5.8584 10 0 5.5 10
   [4,0,0,6.3,10,-1.7679,6.5981,10,-2.0741,5.8584,10,0,5.5,10],
 ];
-makepoly(ldraw_lib__973pg3(), line=0.2);
+module ldraw_lib__973pg3(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973pg3(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973pg3(line=0.2);

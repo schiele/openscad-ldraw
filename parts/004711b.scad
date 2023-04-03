@@ -28,4 +28,6 @@ function ldraw_lib__004711b() = [
 // 1 0 0 9.75 -12 1 0 0 0 0 1 0 1 0 s\3010a20.dat
   [1,0,0,9.75,-12,1,0,0,0,0,1,0,1,0, ldraw_lib__s__3010a20()],
 ];
-makepoly(ldraw_lib__004711b(), line=0.2);
+module ldraw_lib__004711b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__004711b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__004711b(line=0.2);

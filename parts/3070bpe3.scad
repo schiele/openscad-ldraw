@@ -612,4 +612,6 @@ function ldraw_lib__3070bpe3() = [
 // 4 16 3.82 0 -7.82 3.79 0 -7 3.74 0 -7.27 3.74 0 -7.55
   [4,16,3.82,0,-7.82,3.79,0,-7,3.74,0,-7.27,3.74,0,-7.55],
 ];
-makepoly(ldraw_lib__3070bpe3(), line=0.2);
+module ldraw_lib__3070bpe3(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3070bpe3(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3070bpe3(line=0.2);

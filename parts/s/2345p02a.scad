@@ -288,4 +288,6 @@ function ldraw_lib__s__2345p02a() = [
   [4,16,30,120,10,30,118,10,30,118,20,30,120,30],
 // 0
 ];
-makepoly(ldraw_lib__s__2345p02a(), line=0.2);
+module ldraw_lib__s__2345p02a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__2345p02a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__2345p02a(line=0.2);

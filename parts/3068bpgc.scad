@@ -547,4 +547,6 @@ function ldraw_lib__3068bpgc() = [
 // 3 16 -7.7 0 -3.2 -7.8 0 -4.2 -6.9 0 -3.4
   [3,16,-7.7,0,-3.2,-7.8,0,-4.2,-6.9,0,-3.4],
 ];
-makepoly(ldraw_lib__3068bpgc(), line=0.2);
+module ldraw_lib__3068bpgc(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3068bpgc(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3068bpgc(line=0.2);

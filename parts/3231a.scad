@@ -56,4 +56,6 @@ function ldraw_lib__3231a() = [
   [1,16,-50,0,-150,0,0,-1,0,1,0,1,0,0, ldraw_lib__s__3231as01()],
 // 0
 ];
-makepoly(ldraw_lib__3231a(), line=0.2);
+module ldraw_lib__3231a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3231a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3231a(line=0.2);

@@ -419,4 +419,6 @@ function ldraw_lib__3039p70() = [
 // 3 4 -0.875 3.1819 -13.1819 -1.25 2.9168 -12.9168 -1.25 3.4471 -13.4471
   [3,4,-0.875,3.1819,-13.1819,-1.25,2.9168,-12.9168,-1.25,3.4471,-13.4471],
 ];
-makepoly(ldraw_lib__3039p70(), line=0.2);
+module ldraw_lib__3039p70(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3039p70(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3039p70(line=0.2);

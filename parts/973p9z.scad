@@ -1698,4 +1698,6 @@ function ldraw_lib__973p9z() = [
 // 3 16 16.1405 15.8174 10 16.0288 15.1667 10 19 29 10
   [3,16,16.1405,15.8174,10,16.0288,15.1667,10,19,29,10],
 ];
-makepoly(ldraw_lib__973p9z(), line=0.2);
+module ldraw_lib__973p9z(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973p9z(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973p9z(line=0.2);

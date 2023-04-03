@@ -96,4 +96,6 @@ function ldraw_lib__2431pzj() = [
 // 4 16 20.5 0 0 -39.25 0 -8.75 -40 0 -10 20.5 0 -9.25
   [4,16,20.5,0,0,-39.25,0,-8.75,-40,0,-10,20.5,0,-9.25],
 ];
-makepoly(ldraw_lib__2431pzj(), line=0.2);
+module ldraw_lib__2431pzj(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__2431pzj(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__2431pzj(line=0.2);

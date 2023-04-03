@@ -34,4 +34,6 @@ function ldraw_lib__44852() = [
 // 1 494 21.2 3 -4.6 0.6 0 0 0 0.6 0 0 0 0.6 u9013.dat
   [1,494,21.2,3,-4.6,0.6,0,0,0,0.6,0,0,0,0.6, ldraw_lib__u9013()],
 ];
-makepoly(ldraw_lib__44852(), line=0.2);
+module ldraw_lib__44852(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__44852(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__44852(line=0.2);

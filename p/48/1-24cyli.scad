@@ -25,4 +25,6 @@ function ldraw_lib__48__1_24cyli() = [
   [5,24,.9659,1,.2588,.9659,0,.2588,.9914,1,.1305,.9319,1,.386],
 // 0
 ];
-makepoly(ldraw_lib__48__1_24cyli(), line=0.2);
+module ldraw_lib__48__1_24cyli(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__48__1_24cyli(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__48__1_24cyli(line=0.2);

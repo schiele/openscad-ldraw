@@ -64,4 +64,6 @@ function ldraw_lib__cylj4x9() = [
 // 1 16 0 0 0 -4 0 0 0 -1.0563 0 0 0 -4 1-4cyls2.dat
   [1,16,0,0,0,-4,0,0,0,-1.0563,0,0,0,-4, ldraw_lib__1_4cyls2()],
 ];
-makepoly(ldraw_lib__cylj4x9(), line=0.2);
+module ldraw_lib__cylj4x9(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__cylj4x9(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__cylj4x9(line=0.2);

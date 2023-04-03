@@ -871,4 +871,6 @@ function ldraw_lib__2586p4h() = [
 // 3 80 0 -34.5 -8 1.3 -32.35 -8 7.654 -32.978 -8
   [3,80,0,-34.5,-8,1.3,-32.35,-8,7.654,-32.978,-8],
 ];
-makepoly(ldraw_lib__2586p4h(), line=0.2);
+module ldraw_lib__2586p4h(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__2586p4h(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__2586p4h(line=0.2);

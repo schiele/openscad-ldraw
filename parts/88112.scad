@@ -400,4 +400,6 @@ function ldraw_lib__88112() = [
 // 1 16 0 64 -39 36 0 0 0 6 0 0 0 1 box4-7a.dat
   [1,16,0,64,-39,36,0,0,0,6,0,0,0,1, ldraw_lib__box4_7a()],
 ];
-makepoly(ldraw_lib__88112(), line=0.2);
+module ldraw_lib__88112(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__88112(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__88112(line=0.2);

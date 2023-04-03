@@ -31,4 +31,6 @@ function ldraw_lib__6391() = [
 // 1 16 -160 0 160 1 0 0 0 3 0 0 0 1 stug7-2x2.dat
   [1,16,-160,0,160,1,0,0,0,3,0,0,0,1, ldraw_lib__stug7_2x2()],
 ];
-makepoly(ldraw_lib__6391(), line=0.2);
+module ldraw_lib__6391(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__6391(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__6391(line=0.2);

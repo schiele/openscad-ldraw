@@ -20,4 +20,6 @@ function ldraw_lib__1_8chrd() = [
 // 
 // 0
 ];
-makepoly(ldraw_lib__1_8chrd(), line=0.2);
+module ldraw_lib__1_8chrd(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__1_8chrd(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__1_8chrd(line=0.2);

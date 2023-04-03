@@ -2007,4 +2007,6 @@ function ldraw_lib__47753pq2() = [
 // 3 16 20 20 -40 21.08911 12.87129 -17.82178 20.82949 12.66359 -18.34101
   [3,16,20,20,-40,21.08911,12.87129,-17.82178,20.82949,12.66359,-18.34101],
 ];
-makepoly(ldraw_lib__47753pq2(), line=0.2);
+module ldraw_lib__47753pq2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__47753pq2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__47753pq2(line=0.2);

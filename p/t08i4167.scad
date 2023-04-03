@@ -82,4 +82,6 @@ function ldraw_lib__t08i4167() = [
   [5,24,0.5943,0.385,0.5943,0.7071,0.4167,0.7071,0.3482,0.385,0.8405,0.7766,0.385,0.3217],
 // 0 // Build by LDPartEditor (PrimGen 2.X)
 ];
-makepoly(ldraw_lib__t08i4167(), line=0.2);
+module ldraw_lib__t08i4167(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__t08i4167(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__t08i4167(line=0.2);

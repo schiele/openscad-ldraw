@@ -1215,4 +1215,6 @@ function ldraw_lib__s__4478p03a() = [
   [3,16,243,0,320,270,0,315,272,0,320],
 // 0
 ];
-makepoly(ldraw_lib__s__4478p03a(), line=0.2);
+module ldraw_lib__s__4478p03a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__4478p03a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__4478p03a(line=0.2);

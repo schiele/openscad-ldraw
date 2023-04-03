@@ -95,4 +95,6 @@ function ldraw_lib__6199() = [
 // 1 16 0 184 0 60 0 0 0 -8 0 0 0 20 box5.dat
   [1,16,0,184,0,60,0,0,0,-8,0,0,0,20, ldraw_lib__box5()],
 ];
-makepoly(ldraw_lib__6199(), line=0.2);
+module ldraw_lib__6199(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__6199(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__6199(line=0.2);

@@ -18,4 +18,6 @@ function ldraw_lib__48__11_24r13() = [
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 48\11-24ring13.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__48__11_24ring13()],
 ];
-makepoly(ldraw_lib__48__11_24r13(), line=0.2);
+module ldraw_lib__48__11_24r13(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__48__11_24r13(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__48__11_24r13(line=0.2);

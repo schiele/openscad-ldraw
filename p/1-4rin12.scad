@@ -29,4 +29,6 @@ function ldraw_lib__1_4rin12() = [
   [4,16,4.9751,0,12.0107,0,0,13,0,0,12,4.5924,0,11.0868],
 // 0 // Build by LDPartEditor (PrimGen 2.X)
 ];
-makepoly(ldraw_lib__1_4rin12(), line=0.2);
+module ldraw_lib__1_4rin12(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__1_4rin12(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__1_4rin12(line=0.2);

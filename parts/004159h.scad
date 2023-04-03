@@ -25,4 +25,6 @@ function ldraw_lib__004159h() = [
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 004159e.dat
   [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__004159e()],
 ];
-makepoly(ldraw_lib__004159h(), line=0.2);
+module ldraw_lib__004159h(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__004159h(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__004159h(line=0.2);

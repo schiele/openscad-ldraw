@@ -2105,4 +2105,6 @@ function ldraw_lib__u9040() = [
 // 2 24 -45.603 61 88 -45.603 60 88
   [2,24,-45.603,61,88,-45.603,60,88],
 ];
-makepoly(ldraw_lib__u9040(), line=0.2);
+module ldraw_lib__u9040(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__u9040(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__u9040(line=0.2);

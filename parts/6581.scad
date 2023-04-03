@@ -35,4 +35,6 @@ function ldraw_lib__6581() = [
 // 1 16 0 0 15 0 0 52 52 0 0 0 -30 0 48\4-4cylo.dat
   [1,16,0,0,15,0,0,52,52,0,0,0,-30,0, ldraw_lib__48__4_4cylo()],
 ];
-makepoly(ldraw_lib__6581(), line=0.2);
+module ldraw_lib__6581(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__6581(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__6581(line=0.2);

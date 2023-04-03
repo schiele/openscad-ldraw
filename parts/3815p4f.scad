@@ -312,4 +312,6 @@ function ldraw_lib__3815p4f() = [
   [4,6,17.5,0.5,-10,17.5,5.5,-10,17.25,5.5,-10,17.25,0.5,-10],
 // 
 ];
-makepoly(ldraw_lib__3815p4f(), line=0.2);
+module ldraw_lib__3815p4f(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3815p4f(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3815p4f(line=0.2);

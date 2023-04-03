@@ -30,4 +30,6 @@ function ldraw_lib__3010p75() = [
 // 4 16 39.6 1.2 -10 39.6 22.8 -10 40 24 -10 40 0 -10
   [4,16,39.6,1.2,-10,39.6,22.8,-10,40,24,-10,40,0,-10],
 ];
-makepoly(ldraw_lib__3010p75(), line=0.2);
+module ldraw_lib__3010p75(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3010p75(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3010p75(line=0.2);

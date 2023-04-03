@@ -242,4 +242,6 @@ function ldraw_lib__r08q1000() = [
   [5,24,.0538,.3827,.0538,0,0,0,.0315,.3827,.0761,.0703,.3827,.0291],
 // 0 // Build by LDPartEditor (PrimGen 2.X)
 ];
-makepoly(ldraw_lib__r08q1000(), line=0.2);
+module ldraw_lib__r08q1000(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__r08q1000(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__r08q1000(line=0.2);

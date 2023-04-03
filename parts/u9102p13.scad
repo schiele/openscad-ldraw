@@ -218,4 +218,6 @@ function ldraw_lib__u9102p13() = [
 // 4 16 -2.25 -18.75 -13 -4.4 -21.4 -13 -5.4 -21.2 -13 -5.872 -20.601 -13
   [4,16,-2.25,-18.75,-13,-4.4,-21.4,-13,-5.4,-21.2,-13,-5.872,-20.601,-13],
 ];
-makepoly(ldraw_lib__u9102p13(), line=0.2);
+module ldraw_lib__u9102p13(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__u9102p13(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__u9102p13(line=0.2);

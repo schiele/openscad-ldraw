@@ -192,4 +192,6 @@ function ldraw_lib__20460pd87() = [
 // 3 15 3.46 23.39 -10 3.29 23.33 -10 1.5 28 -10
   [3,15,3.46,23.39,-10,3.29,23.33,-10,1.5,28,-10],
 ];
-makepoly(ldraw_lib__20460pd87(), line=0.2);
+module ldraw_lib__20460pd87(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__20460pd87(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__20460pd87(line=0.2);

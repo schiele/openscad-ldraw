@@ -97,4 +97,6 @@ function ldraw_lib__clip5() = [
 // 4 16 -6.3254 -4 -4.0298 -4 -4 0 -4 -4 4 -4.1909 -4 6.5785
   [4,16,-6.3254,-4,-4.0298,-4,-4,0,-4,-4,4,-4.1909,-4,6.5785],
 ];
-makepoly(ldraw_lib__clip5(), line=0.2);
+module ldraw_lib__clip5(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__clip5(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__clip5(line=0.2);

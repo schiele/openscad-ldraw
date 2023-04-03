@@ -438,4 +438,6 @@ function ldraw_lib__t1052() = [
 // 3 16 40 42 -25 37.6 42 -24 37.6 42 -16
   [3,16,40,42,-25,37.6,42,-24,37.6,42,-16],
 ];
-makepoly(ldraw_lib__t1052(), line=0.2);
+module ldraw_lib__t1052(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__t1052(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__t1052(line=0.2);

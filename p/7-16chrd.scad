@@ -23,4 +23,6 @@ function ldraw_lib__7_16chrd() = [
   [3,16,-0.7071,0,0.7071,-0.9239,0,0.3827,1,0,0],
 // 0
 ];
-makepoly(ldraw_lib__7_16chrd(), line=0.2);
+module ldraw_lib__7_16chrd(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__7_16chrd(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__7_16chrd(line=0.2);

@@ -185,4 +185,6 @@ function ldraw_lib__s__3739a() = [
 // 4 16 25 18 0 23 18 4 34 18 8 34 18 0
   [4,16,25,18,0,23,18,4,34,18,8,34,18,0],
 ];
-makepoly(ldraw_lib__s__3739a(), line=0.2);
+module ldraw_lib__s__3739a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__3739a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__3739a(line=0.2);

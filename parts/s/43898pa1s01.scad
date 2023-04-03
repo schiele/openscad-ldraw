@@ -398,4 +398,6 @@ function ldraw_lib__s__43898pa1s01() = [
 // 4 272 -27 8.58 0 -26.7678 8.58 3.5235 -27.0664 8.92349 3.5634 -27.3 8.922 0
   [4,272,-27,8.58,0,-26.7678,8.58,3.5235,-27.0664,8.92349,3.5634,-27.3,8.922,0],
 ];
-makepoly(ldraw_lib__s__43898pa1s01(), line=0.2);
+module ldraw_lib__s__43898pa1s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__43898pa1s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__43898pa1s01(line=0.2);

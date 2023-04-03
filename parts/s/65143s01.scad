@@ -147,4 +147,6 @@ function ldraw_lib__s__65143s01() = [
 // 1 16 0 8 0 10 0 0 0 9 0 0 0 10 3-16cyli.dat
   [1,16,0,8,0,10,0,0,0,9,0,0,0,10, ldraw_lib__3_16cyli()],
 ];
-makepoly(ldraw_lib__s__65143s01(), line=0.2);
+module ldraw_lib__s__65143s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__65143s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__65143s01(line=0.2);

@@ -183,4 +183,6 @@ function ldraw_lib__3010pzn() = [
 // 3 0 -3 11 -10 -.5 13.5 -10 0 12.25 -10
   [3,0,-3,11,-10,-.5,13.5,-10,0,12.25,-10],
 ];
-makepoly(ldraw_lib__3010pzn(), line=0.2);
+module ldraw_lib__3010pzn(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3010pzn(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3010pzn(line=0.2);

@@ -1304,4 +1304,6 @@ function ldraw_lib__973p8o() = [
 // 4 15 8.586 10.275 -10 8.48 10.319 -10 8.814 10.275 -10 8.7 10.26 -10
   [4,15,8.586,10.275,-10,8.48,10.319,-10,8.814,10.275,-10,8.7,10.26,-10],
 ];
-makepoly(ldraw_lib__973p8o(), line=0.2);
+module ldraw_lib__973p8o(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973p8o(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973p8o(line=0.2);

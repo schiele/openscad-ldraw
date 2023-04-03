@@ -1408,4 +1408,6 @@ function ldraw_lib__973pss() = [
   [1,6,-6.73,24.232,-10,0.985,0,0.1727,0.1727,0,-0.985,0,1,0, ldraw_lib__4_4ndis()],
 // 0
 ];
-makepoly(ldraw_lib__973pss(), line=0.2);
+module ldraw_lib__973pss(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973pss(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973pss(line=0.2);

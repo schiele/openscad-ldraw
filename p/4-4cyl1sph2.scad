@@ -72,4 +72,6 @@ function ldraw_lib__4_4cyl1sph2() = [
   [2,24,1,-1.691,0,0.9239,-1.6526,-0.3827],
 // 
 ];
-makepoly(ldraw_lib__4_4cyl1sph2(), line=0.2);
+module ldraw_lib__4_4cyl1sph2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__4_4cyl1sph2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__4_4cyl1sph2(line=0.2);

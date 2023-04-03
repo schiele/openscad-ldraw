@@ -239,4 +239,6 @@ function ldraw_lib__t02o1176() = [
   [5,24,-1.1087,0.045,0,-1.1176,0,0,-1.1087,0.045,-0.4592,-1.0243,0.045,0.4243],
 // 0 // Build by Primitive Generator 2
 ];
-makepoly(ldraw_lib__t02o1176(), line=0.2);
+module ldraw_lib__t02o1176(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__t02o1176(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__t02o1176(line=0.2);

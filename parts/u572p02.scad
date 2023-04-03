@@ -2443,4 +2443,6 @@ function ldraw_lib__u572p02() = [
 // 4 7 349 0 -125 127 0 151 127 0 -297 349 0 -297
   [4,7,349,0,-125,127,0,151,127,0,-297,349,0,-297],
 ];
-makepoly(ldraw_lib__u572p02(), line=0.2);
+module ldraw_lib__u572p02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__u572p02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__u572p02(line=0.2);

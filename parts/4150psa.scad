@@ -253,4 +253,6 @@ function ldraw_lib__4150psa() = [
 // 3 16 17.8452 0 2.349 18 0 0 20 0 0
   [3,16,17.8452,0,2.349,18,0,0,20,0,0],
 ];
-makepoly(ldraw_lib__4150psa(), line=0.2);
+module ldraw_lib__4150psa(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__4150psa(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__4150psa(line=0.2);

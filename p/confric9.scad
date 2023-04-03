@@ -557,4 +557,6 @@ function ldraw_lib__confric9() = [
   [5,24,-4.95,-18.9,3.537,-5.728,-18.9,2.373,-4.242,-18,4.242,-5.774,-20,2.393],
 // 0
 ];
-makepoly(ldraw_lib__confric9(), line=0.2);
+module ldraw_lib__confric9(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__confric9(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__confric9(line=0.2);

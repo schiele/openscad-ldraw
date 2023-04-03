@@ -1437,4 +1437,6 @@ function ldraw_lib__s__2048s01() = [
 // 3 16 116 67.79703 -49.58666 106 67.797 -49.5867 116 46.88119 -38.23029
   [3,16,116,67.79703,-49.58666,106,67.797,-49.5867,116,46.88119,-38.23029],
 ];
-makepoly(ldraw_lib__s__2048s01(), line=0.2);
+module ldraw_lib__s__2048s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__2048s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__2048s01(line=0.2);

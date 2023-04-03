@@ -1067,4 +1067,6 @@ function ldraw_lib__3068bpfs() = [
 // 4 450 5.16 0 2.14 0 0 0 5.16 0 -2.14 5.59 0 0
   [4,450,5.16,0,2.14,0,0,0,5.16,0,-2.14,5.59,0,0],
 ];
-makepoly(ldraw_lib__3068bpfs(), line=0.2);
+module ldraw_lib__3068bpfs(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3068bpfs(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3068bpfs(line=0.2);

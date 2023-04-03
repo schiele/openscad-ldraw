@@ -316,4 +316,6 @@ function ldraw_lib__u9062() = [
   [4,16,2,14,-134.398,2,14,-132.398,3.062,14,-132.609,2.296,14,-134.457],
 // 0
 ];
-makepoly(ldraw_lib__u9062(), line=0.2);
+module ldraw_lib__u9062(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__u9062(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__u9062(line=0.2);

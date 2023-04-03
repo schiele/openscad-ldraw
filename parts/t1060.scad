@@ -2559,4 +2559,6 @@ function ldraw_lib__t1060() = [
 // 4 16 -30 42 36 -37.6 42 36 -37.071 42 37.071 -30 42 40
   [4,16,-30,42,36,-37.6,42,36,-37.071,42,37.071,-30,42,40],
 ];
-makepoly(ldraw_lib__t1060(), line=0.2);
+module ldraw_lib__t1060(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__t1060(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__t1060(line=0.2);

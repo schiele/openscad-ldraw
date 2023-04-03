@@ -181,4 +181,6 @@ function ldraw_lib__daxlehole() = [
 // 5 24 4.5922 0 -11.0864 4.5922 1 -11.0864 6.4853 0 -9.9853 0.0001 0 -12.0003
   [5,24,4.5922,0,-11.0864,4.5922,1,-11.0864,6.4853,0,-9.9853,0.0001,0,-12.0003],
 ];
-makepoly(ldraw_lib__daxlehole(), line=0.2);
+module ldraw_lib__daxlehole(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__daxlehole(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__daxlehole(line=0.2);

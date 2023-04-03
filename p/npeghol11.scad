@@ -184,4 +184,6 @@ function ldraw_lib__npeghol11() = [
 // 5 24 -3.827 9 .761 -3.827 3.4443 .761 -5.66983 3.4443 1.528337 0 3.44415 0
   [5,24,-3.827,9,.761,-3.827,3.4443,.761,-5.66983,3.4443,1.528337,0,3.44415,0],
 ];
-makepoly(ldraw_lib__npeghol11(), line=0.2);
+module ldraw_lib__npeghol11(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__npeghol11(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__npeghol11(line=0.2);

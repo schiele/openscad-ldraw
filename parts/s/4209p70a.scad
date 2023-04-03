@@ -126,4 +126,6 @@ function ldraw_lib__s__4209p70a() = [
 // 3 16 -5 7 0 -7 7 0 -11.25 8.75 0
   [3,16,-5,7,0,-7,7,0,-11.25,8.75,0],
 ];
-makepoly(ldraw_lib__s__4209p70a(), line=0.2);
+module ldraw_lib__s__4209p70a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__4209p70a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__4209p70a(line=0.2);

@@ -134,4 +134,6 @@ function ldraw_lib__t04o0909() = [
   [5,24,0,0.0348,1.084,0,0,1.0909,-0.449,0.0348,1.084,0.4148,0.0348,1.0015],
 // 0 // Build by LDPartEditor (PrimGen 2.X)
 ];
-makepoly(ldraw_lib__t04o0909(), line=0.2);
+module ldraw_lib__t04o0909(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__t04o0909(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__t04o0909(line=0.2);

@@ -25,4 +25,6 @@ function ldraw_lib__3846p4n() = [
 // 1 4 0 0 0 -1 0 0 0 1 0 0 0 1 s\3846p4ns01.dat
   [1,4,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__3846p4ns01()],
 ];
-makepoly(ldraw_lib__3846p4n(), line=0.2);
+module ldraw_lib__3846p4n(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3846p4n(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3846p4n(line=0.2);

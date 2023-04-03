@@ -23,4 +23,6 @@ function ldraw_lib__3817bpbf() = [
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 3816bpbf.dat
   [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__3816bpbf()],
 ];
-makepoly(ldraw_lib__3817bpbf(), line=0.2);
+module ldraw_lib__3817bpbf(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3817bpbf(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3817bpbf(line=0.2);

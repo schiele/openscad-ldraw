@@ -1067,4 +1067,6 @@ function ldraw_lib__2528ap3b() = [
 // 3 15 3.03 -3.05 -12.97701 .47253 -1.90698 -13.53341 3.46637 -2.77337 -13.011
   [3,15,3.03,-3.05,-12.97701,.47253,-1.90698,-13.53341,3.46637,-2.77337,-13.011],
 ];
-makepoly(ldraw_lib__2528ap3b(), line=0.2);
+module ldraw_lib__2528ap3b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__2528ap3b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__2528ap3b(line=0.2);

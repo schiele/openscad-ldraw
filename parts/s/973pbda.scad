@@ -780,4 +780,6 @@ function ldraw_lib__s__973pbda() = [
 // 4 80 13.567 18.4 -10 14.026 18.604 -10 13.924 17.992 -10 13.567 17.635 -10
   [4,80,13.567,18.4,-10,14.026,18.604,-10,13.924,17.992,-10,13.567,17.635,-10],
 ];
-makepoly(ldraw_lib__s__973pbda(), line=0.2);
+module ldraw_lib__s__973pbda(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__973pbda(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__973pbda(line=0.2);

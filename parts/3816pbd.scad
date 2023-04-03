@@ -131,4 +131,6 @@ function ldraw_lib__3816pbd() = [
 // 4 87 -12.9 22.1 -11 -12.596 22.543 -11 -8.004 22.543 -11 -7.7 22.1 -11
   [4,87,-12.9,22.1,-11,-12.596,22.543,-11,-8.004,22.543,-11,-7.7,22.1,-11],
 ];
-makepoly(ldraw_lib__3816pbd(), line=0.2);
+module ldraw_lib__3816pbd(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3816pbd(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3816pbd(line=0.2);

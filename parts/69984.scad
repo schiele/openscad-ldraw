@@ -40,4 +40,6 @@ function ldraw_lib__69984() = [
 // 1 16 -34.641 0 -20 0 0 1 0 1 0 -1 0 0 stud.dat
   [1,16,-34.641,0,-20,0,0,1,0,1,0,-1,0,0, ldraw_lib__stud()],
 ];
-makepoly(ldraw_lib__69984(), line=0.2);
+module ldraw_lib__69984(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__69984(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__69984(line=0.2);

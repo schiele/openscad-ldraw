@@ -92,4 +92,6 @@ function ldraw_lib__t1043() = [
 // 1 16 0 0 -31 0 0 16.5 16.5 0 0 0 -16.5 0 t04o0909.dat
   [1,16,0,0,-31,0,0,16.5,16.5,0,0,0,-16.5,0, ldraw_lib__t04o0909()],
 ];
-makepoly(ldraw_lib__t1043(), line=0.2);
+module ldraw_lib__t1043(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__t1043(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__t1043(line=0.2);

@@ -66,4 +66,6 @@ function ldraw_lib__3626cpcbe() = [
 // 3 16 9.74 12.16 -8.3728 9.57 13.17 -8.6271 9.78 12.27 -8.3129
   [3,16,9.74,12.16,-8.3728,9.57,13.17,-8.6271,9.78,12.27,-8.3129],
 ];
-makepoly(ldraw_lib__3626cpcbe(), line=0.2);
+module ldraw_lib__3626cpcbe(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3626cpcbe(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3626cpcbe(line=0.2);

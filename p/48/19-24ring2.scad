@@ -91,4 +91,6 @@ function ldraw_lib__48__19_24ring2() = [
   [4,16,0.3915,0,-2.9742,0.7764,0,-2.8977,0.5176,0,-1.9318,0.261,0,-1.9828],
 // 0 // Build by Primitive Generator 2
 ];
-makepoly(ldraw_lib__48__19_24ring2(), line=0.2);
+module ldraw_lib__48__19_24ring2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__48__19_24ring2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__48__19_24ring2(line=0.2);

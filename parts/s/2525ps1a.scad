@@ -49,4 +49,6 @@ function ldraw_lib__s__2525ps1a() = [
   [4,16,-2,92,16,-2,92,40,-2,29,40,-2,28,16],
 // 0
 ];
-makepoly(ldraw_lib__s__2525ps1a(), line=0.2);
+module ldraw_lib__s__2525ps1a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__2525ps1a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__2525ps1a(line=0.2);

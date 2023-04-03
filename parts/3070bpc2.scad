@@ -220,4 +220,6 @@ function ldraw_lib__3070bpc2() = [
   [3,16,6,0,5.293,2.772,0,1.689,6,0,3.026],
 // 0
 ];
-makepoly(ldraw_lib__3070bpc2(), line=0.2);
+module ldraw_lib__3070bpc2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3070bpc2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3070bpc2(line=0.2);

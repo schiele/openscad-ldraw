@@ -741,4 +741,6 @@ function ldraw_lib__3039pcm() = [
 // 4 322 -17.3153 14.1819 -24.1819 -17.3153 15.8804 -25.8804 -13.6367 15.8804 -25.8804 -13.6367 14.1819 -24.1819
   [4,322,-17.3153,14.1819,-24.1819,-17.3153,15.8804,-25.8804,-13.6367,15.8804,-25.8804,-13.6367,14.1819,-24.1819],
 ];
-makepoly(ldraw_lib__3039pcm(), line=0.2);
+module ldraw_lib__3039pcm(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3039pcm(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3039pcm(line=0.2);

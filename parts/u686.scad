@@ -137,4 +137,6 @@ function ldraw_lib__u686() = [
 // 5 24 0 -20 -5.0186 0 -12 -8.0186 6.7664 -12 -7.4582 -6.7664 -12 -7.4582
   [5,24,0,-20,-5.0186,0,-12,-8.0186,6.7664,-12,-7.4582,-6.7664,-12,-7.4582],
 ];
-makepoly(ldraw_lib__u686(), line=0.2);
+module ldraw_lib__u686(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__u686(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__u686(line=0.2);

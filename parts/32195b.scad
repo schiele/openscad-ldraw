@@ -57,4 +57,6 @@ function ldraw_lib__32195b() = [
 // 1 16 0 3 -60 0 0 -10 0 4 0 -10 0 0 1-4cyls.dat
   [1,16,0,3,-60,0,0,-10,0,4,0,-10,0,0, ldraw_lib__1_4cyls()],
 ];
-makepoly(ldraw_lib__32195b(), line=0.2);
+module ldraw_lib__32195b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__32195b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__32195b(line=0.2);

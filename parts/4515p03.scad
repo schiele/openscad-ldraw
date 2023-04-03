@@ -1900,4 +1900,6 @@ function ldraw_lib__4515p03() = [
 // 3 15 -80 4.3794 32.3405 -78.38 3.1493 40.1098 -80 2.6775 43.0896
   [3,15,-80,4.3794,32.3405,-78.38,3.1493,40.1098,-80,2.6775,43.0896],
 ];
-makepoly(ldraw_lib__4515p03(), line=0.2);
+module ldraw_lib__4515p03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__4515p03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__4515p03(line=0.2);

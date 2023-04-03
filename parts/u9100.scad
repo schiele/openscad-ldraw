@@ -263,4 +263,6 @@ function ldraw_lib__u9100() = [
 // 1 16 0 -2 -3.0865 6 0 0 0 0 -5 0 -6.9135 0 box2-5.dat
   [1,16,0,-2,-3.0865,6,0,0,0,0,-5,0,-6.9135,0, ldraw_lib__box2_5()],
 ];
-makepoly(ldraw_lib__u9100(), line=0.2);
+module ldraw_lib__u9100(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__u9100(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__u9100(line=0.2);

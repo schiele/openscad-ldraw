@@ -1721,4 +1721,6 @@ function ldraw_lib__973pau() = [
 // 4 1 13.749 19.138 -10 12.407 19.315 -10 12.901 19.961 -10 13.891 19.976 -10
   [4,1,13.749,19.138,-10,12.407,19.315,-10,12.901,19.961,-10,13.891,19.976,-10],
 ];
-makepoly(ldraw_lib__973pau(), line=0.2);
+module ldraw_lib__973pau(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973pau(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973pau(line=0.2);

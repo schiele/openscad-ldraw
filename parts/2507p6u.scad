@@ -29,4 +29,6 @@ function ldraw_lib__2507p6u() = [
 // 4 16 20 52 -196 20 46 -196 -20 46 -196 -20 52 -196
   [4,16,20,52,-196,20,46,-196,-20,46,-196,-20,52,-196],
 ];
-makepoly(ldraw_lib__2507p6u(), line=0.2);
+module ldraw_lib__2507p6u(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__2507p6u(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__2507p6u(line=0.2);

@@ -174,4 +174,6 @@ function ldraw_lib__u9102p14() = [
 // 5 24 -16 -31.9135 -12.6956 16 -31.9135 -12.6956 -16 -33.5355 -11.8284 -16 -30 -13
   [5,24,-16,-31.9135,-12.6956,16,-31.9135,-12.6956,-16,-33.5355,-11.8284,-16,-30,-13],
 ];
-makepoly(ldraw_lib__u9102p14(), line=0.2);
+module ldraw_lib__u9102p14(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__u9102p14(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__u9102p14(line=0.2);

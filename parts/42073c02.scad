@@ -28,4 +28,6 @@ function ldraw_lib__42073c02() = [
 // 1 79 25 26 -40 1 0 0 0 1 0 0 0 1 u9421.dat
   [1,79,25,26,-40,1,0,0,0,1,0,0,0,1, ldraw_lib__u9421()],
 ];
-makepoly(ldraw_lib__42073c02(), line=0.2);
+module ldraw_lib__42073c02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__42073c02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__42073c02(line=0.2);

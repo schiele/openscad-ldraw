@@ -20,4 +20,6 @@ function ldraw_lib__3_16cyli2() = [
 // 4 16 0.3827 0 0.9239 0.7071 0 0.7071 0.7071 1 0.7071 0.3827 1 0.9239
   [4,16,0.3827,0,0.9239,0.7071,0,0.7071,0.7071,1,0.7071,0.3827,1,0.9239],
 ];
-makepoly(ldraw_lib__3_16cyli2(), line=0.2);
+module ldraw_lib__3_16cyli2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3_16cyli2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3_16cyli2(line=0.2);

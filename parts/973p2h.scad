@@ -50,4 +50,6 @@ function ldraw_lib__973p2h() = [
 // 3 16 -12 0 -10 -14.345 2 -10 -3 6 -10
   [3,16,-12,0,-10,-14.345,2,-10,-3,6,-10],
 ];
-makepoly(ldraw_lib__973p2h(), line=0.2);
+module ldraw_lib__973p2h(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973p2h(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973p2h(line=0.2);

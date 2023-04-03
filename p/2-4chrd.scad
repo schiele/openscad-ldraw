@@ -22,4 +22,6 @@ function ldraw_lib__2_4chrd() = [
 // 3 16 0 0 1 -0.3827 0 0.9239 0.3827 0 0.9239
   [3,16,0,0,1,-0.3827,0,0.9239,0.3827,0,0.9239],
 ];
-makepoly(ldraw_lib__2_4chrd(), line=0.2);
+module ldraw_lib__2_4chrd(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__2_4chrd(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__2_4chrd(line=0.2);

@@ -600,4 +600,6 @@ function ldraw_lib__2528ap34() = [
 // 3 16 -12.418 4.854 -10.746 -11.777 6.025 -11.08 -7.212 5.56 -13.391
   [3,16,-12.418,4.854,-10.746,-11.777,6.025,-11.08,-7.212,5.56,-13.391],
 ];
-makepoly(ldraw_lib__2528ap34(), line=0.2);
+module ldraw_lib__2528ap34(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__2528ap34(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__2528ap34(line=0.2);

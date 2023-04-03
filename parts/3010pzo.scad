@@ -105,4 +105,6 @@ function ldraw_lib__3010pzo() = [
 // 3 16 -11.7 23.7 -10 -40 0 -10 -40 24 -10
   [3,16,-11.7,23.7,-10,-40,0,-10,-40,24,-10],
 ];
-makepoly(ldraw_lib__3010pzo(), line=0.2);
+module ldraw_lib__3010pzo(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3010pzo(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3010pzo(line=0.2);

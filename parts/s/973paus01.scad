@@ -130,4 +130,6 @@ function ldraw_lib__s__973paus01() = [
 // 4 72 0.222 16.619 0 0.012 16.989 0 1.024 16.405 0 0.592 16.405 0
   [4,72,0.222,16.619,0,0.012,16.989,0,1.024,16.405,0,0.592,16.405,0],
 ];
-makepoly(ldraw_lib__s__973paus01(), line=0.2);
+module ldraw_lib__s__973paus01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__973paus01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__973paus01(line=0.2);

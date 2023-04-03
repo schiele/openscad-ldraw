@@ -278,4 +278,6 @@ function ldraw_lib__s__4700s02() = [
   [5,24,4,86.8541,-31.2815,-4,86.8541,-31.2815,-4,87.984,-29.9433,4,77.9634,-39.6504],
 // 0
 ];
-makepoly(ldraw_lib__s__4700s02(), line=0.2);
+module ldraw_lib__s__4700s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__4700s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__4700s02(line=0.2);

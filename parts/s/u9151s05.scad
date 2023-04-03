@@ -418,4 +418,6 @@ function ldraw_lib__s__u9151s05() = [
 // 5 24 5.1 -43.1 -12.1 6.2 -39.9 -17.7 8.1 -43.3 -9.4 3.8 -41.4 -16.1
   [5,24,5.1,-43.1,-12.1,6.2,-39.9,-17.7,8.1,-43.3,-9.4,3.8,-41.4,-16.1],
 ];
-makepoly(ldraw_lib__s__u9151s05(), line=0.2);
+module ldraw_lib__s__u9151s05(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__u9151s05(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__u9151s05(line=0.2);

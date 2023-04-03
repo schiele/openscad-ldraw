@@ -130,4 +130,6 @@ function ldraw_lib__8__r04q1000() = [
   [5,24,0,.7071,.2929,0,0,0,-.2929,.7071,.2929,.2071,.7071,.2071],
 // 0 // Build by LDPartEditor (PrimGen 2.X)
 ];
-makepoly(ldraw_lib__8__r04q1000(), line=0.2);
+module ldraw_lib__8__r04q1000(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__8__r04q1000(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__8__r04q1000(line=0.2);

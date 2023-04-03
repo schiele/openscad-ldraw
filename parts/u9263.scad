@@ -546,4 +546,6 @@ function ldraw_lib__u9263() = [
 // 1 16 0 24 -30 -1 0 0 0 1 0 0 0 -1 stug-1x2.dat
   [1,16,0,24,-30,-1,0,0,0,1,0,0,0,-1, ldraw_lib__stug_1x2()],
 ];
-makepoly(ldraw_lib__u9263(), line=0.2);
+module ldraw_lib__u9263(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__u9263(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__u9263(line=0.2);

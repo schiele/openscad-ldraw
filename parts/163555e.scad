@@ -2020,4 +2020,6 @@ function ldraw_lib__163555e() = [
 // 3 16 79 -0.25 19 0 -0.25 16 2.09 -0.25 15.86
   [3,16,79,-0.25,19,0,-0.25,16,2.09,-0.25,15.86],
 ];
-makepoly(ldraw_lib__163555e(), line=0.2);
+module ldraw_lib__163555e(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__163555e(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__163555e(line=0.2);

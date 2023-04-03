@@ -26,4 +26,6 @@ function ldraw_lib__3_16cys2() = [
 // 5 24 -0.9239 0 0.3827 -0.9239 0.9239 0.3827 -1 0 0 -0.7071 0 0.7071
   [5,24,-0.9239,0,0.3827,-0.9239,0.9239,0.3827,-1,0,0,-0.7071,0,0.7071],
 ];
-makepoly(ldraw_lib__3_16cys2(), line=0.2);
+module ldraw_lib__3_16cys2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3_16cys2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3_16cys2(line=0.2);

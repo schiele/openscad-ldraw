@@ -43,4 +43,6 @@ function ldraw_lib__3068bps8() = [
 // 4 16 2.75 0 -19.25 2.75 0 19.25 -8.25 0 19.25 -8.25 0 -19.25
   [4,16,2.75,0,-19.25,2.75,0,19.25,-8.25,0,19.25,-8.25,0,-19.25],
 ];
-makepoly(ldraw_lib__3068bps8(), line=0.2);
+module ldraw_lib__3068bps8(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3068bps8(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3068bps8(line=0.2);

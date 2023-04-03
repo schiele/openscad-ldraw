@@ -47,4 +47,6 @@ function ldraw_lib__4_4rin85() = [
   [4,16,79.4554,0,-32.9122,86,0,0,85,0,0,78.5315,0,-32.5295],
 // 0 // Build by Primitive Generator 2
 ];
-makepoly(ldraw_lib__4_4rin85(), line=0.2);
+module ldraw_lib__4_4rin85(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__4_4rin85(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__4_4rin85(line=0.2);

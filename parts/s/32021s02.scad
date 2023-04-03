@@ -70,4 +70,6 @@ function ldraw_lib__s__32021s02() = [
 // 2 24 -2 3.75 2 -2 3.75 -2
   [2,24,-2,3.75,2,-2,3.75,-2],
 ];
-makepoly(ldraw_lib__s__32021s02(), line=0.2);
+module ldraw_lib__s__32021s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__32021s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__32021s02(line=0.2);

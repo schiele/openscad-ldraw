@@ -910,4 +910,6 @@ function ldraw_lib__6479() = [
 // 2 24 10 6 -10 10 6 10
   [2,24,10,6,-10,10,6,10],
 ];
-makepoly(ldraw_lib__6479(), line=0.2);
+module ldraw_lib__6479(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__6479(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__6479(line=0.2);

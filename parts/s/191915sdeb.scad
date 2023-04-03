@@ -254,4 +254,6 @@ function ldraw_lib__s__191915sdeb() = [
 // 4 16 36.019 0 7.752 37.814 0 -7.479 42.7781 0 24.7781 36.266 0 9.719
   [4,16,36.019,0,7.752,37.814,0,-7.479,42.7781,0,24.7781,36.266,0,9.719],
 ];
-makepoly(ldraw_lib__s__191915sdeb(), line=0.2);
+module ldraw_lib__s__191915sdeb(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__191915sdeb(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__191915sdeb(line=0.2);

@@ -88,4 +88,6 @@ function ldraw_lib__clip12() = [
 // 1 16 0 -4 0.098 4.2265 0 6.3254 0 1 0 6.13371 0 -4.09842 1-4chrd.dat
   [1,16,0,-4,0.098,4.2265,0,6.3254,0,1,0,6.13371,0,-4.09842, ldraw_lib__1_4chrd()],
 ];
-makepoly(ldraw_lib__clip12(), line=0.2);
+module ldraw_lib__clip12(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__clip12(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__clip12(line=0.2);

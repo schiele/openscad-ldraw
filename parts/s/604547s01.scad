@@ -50,4 +50,6 @@ function ldraw_lib__s__604547s01() = [
 // 1 16 0 -4.5 0 0.25 0 0 0 0.5 0 0 0 0.25 4-4con15.dat
   [1,16,0,-4.5,0,0.25,0,0,0,0.5,0,0,0,0.25, ldraw_lib__4_4con15()],
 ];
-makepoly(ldraw_lib__s__604547s01(), line=0.2);
+module ldraw_lib__s__604547s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__604547s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__604547s01(line=0.2);

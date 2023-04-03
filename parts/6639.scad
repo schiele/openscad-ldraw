@@ -63,4 +63,6 @@ function ldraw_lib__6639() = [
 // 1 47 6.8883 -16.6298 -14.5 1.53073 0 -3.69552 -3.69552 0 -1.53073 0 1 0 bump5000.dat
   [1,47,6.8883,-16.6298,-14.5,1.53073,0,-3.69552,-3.69552,0,-1.53073,0,1,0, ldraw_lib__bump5000()],
 ];
-makepoly(ldraw_lib__6639(), line=0.2);
+module ldraw_lib__6639(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__6639(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__6639(line=0.2);

@@ -24,4 +24,6 @@ function ldraw_lib__u9396() = [
 // 1 16 0 2 0 17.25 0 0 0 -2 0 0 0 17.25 48\4-4disc.dat
   [1,16,0,2,0,17.25,0,0,0,-2,0,0,0,17.25, ldraw_lib__48__4_4disc()],
 ];
-makepoly(ldraw_lib__u9396(), line=0.2);
+module ldraw_lib__u9396(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__u9396(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__u9396(line=0.2);

@@ -511,4 +511,6 @@ function ldraw_lib__4150ps3() = [
 // 4 16 8.75 0 -15.155 6.6973 0 -16.1683 7.5125 0 -16.3647 8.4093 0 -15.9225
   [4,16,8.75,0,-15.155,6.6973,0,-16.1683,7.5125,0,-16.3647,8.4093,0,-15.9225],
 ];
-makepoly(ldraw_lib__4150ps3(), line=0.2);
+module ldraw_lib__4150ps3(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__4150ps3(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__4150ps3(line=0.2);

@@ -1900,4 +1900,6 @@ function ldraw_lib__191915l() = [
 // 3 15 1.638 -0.25 -6.088 1.638 -0.25 -3.54 1.187 -0.25 -4.815
   [3,15,1.638,-0.25,-6.088,1.638,-0.25,-3.54,1.187,-0.25,-4.815],
 ];
-makepoly(ldraw_lib__191915l(), line=0.2);
+module ldraw_lib__191915l(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__191915l(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__191915l(line=0.2);

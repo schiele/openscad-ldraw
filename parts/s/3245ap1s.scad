@@ -126,4 +126,6 @@ function ldraw_lib__s__3245ap1s() = [
   [3,0,-8.11522,33.4805,-10,-9.78006,38.8054,-10,-5.52901,35.1923,-10],
 // 0
 ];
-makepoly(ldraw_lib__s__3245ap1s(), line=0.2);
+module ldraw_lib__s__3245ap1s(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__3245ap1s(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__3245ap1s(line=0.2);

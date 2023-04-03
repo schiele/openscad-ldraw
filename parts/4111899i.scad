@@ -22,4 +22,6 @@ function ldraw_lib__4111899i() = [
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4111899hs02.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4111899hs02()],
 ];
-makepoly(ldraw_lib__4111899i(), line=0.2);
+module ldraw_lib__4111899i(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__4111899i(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__4111899i(line=0.2);

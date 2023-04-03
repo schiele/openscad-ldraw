@@ -774,4 +774,6 @@ function ldraw_lib__3010pyb() = [
 // 3 16 -20 24 -10 -8.6 23.38 -10 -10.01 23.1 -10
   [3,16,-20,24,-10,-8.6,23.38,-10,-10.01,23.1,-10],
 ];
-makepoly(ldraw_lib__3010pyb(), line=0.2);
+module ldraw_lib__3010pyb(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3010pyb(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3010pyb(line=0.2);

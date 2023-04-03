@@ -69,4 +69,6 @@ function ldraw_lib__2586p4g() = [
 // 3 0 0 36.5 -8 -2 36 -8 0 37.5 -8
   [3,0,0,36.5,-8,-2,36,-8,0,37.5,-8],
 ];
-makepoly(ldraw_lib__2586p4g(), line=0.2);
+module ldraw_lib__2586p4g(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__2586p4g(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__2586p4g(line=0.2);

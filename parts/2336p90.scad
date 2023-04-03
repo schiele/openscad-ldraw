@@ -330,4 +330,6 @@ function ldraw_lib__2336p90() = [
 // 3 16 -20 -24 -4 -10 0 -60 -13.519 -12.813 -30.103
   [3,16,-20,-24,-4,-10,0,-60,-13.519,-12.813,-30.103],
 ];
-makepoly(ldraw_lib__2336p90(), line=0.2);
+module ldraw_lib__2336p90(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__2336p90(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__2336p90(line=0.2);

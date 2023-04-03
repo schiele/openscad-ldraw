@@ -1900,4 +1900,6 @@ function ldraw_lib__973p3j() = [
 // 4 2 16.64 28.36 -10 15.49205 27.88 -10 15.76 28.88 -10 17.23 28.96 -10
   [4,2,16.64,28.36,-10,15.49205,27.88,-10,15.76,28.88,-10,17.23,28.96,-10],
 ];
-makepoly(ldraw_lib__973p3j(), line=0.2);
+module ldraw_lib__973p3j(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973p3j(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973p3j(line=0.2);

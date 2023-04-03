@@ -478,4 +478,6 @@ function ldraw_lib__plug34() = [
   [5,24,-0.5,-0.5,-14,-0.5,-0.5,-13,-1.4,-0.5,-13,-0.5,-1.4,-14],
 // 0
 ];
-makepoly(ldraw_lib__plug34(), line=0.2);
+module ldraw_lib__plug34(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__plug34(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__plug34(line=0.2);

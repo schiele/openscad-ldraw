@@ -664,4 +664,6 @@ function ldraw_lib__973p8a() = [
 // 4 14 9.239 15.574 10 10 15 10 12 15 10 11.087 15.689 10
   [4,14,9.239,15.574,10,10,15,10,12,15,10,11.087,15.689,10],
 ];
-makepoly(ldraw_lib__973p8a(), line=0.2);
+module ldraw_lib__973p8a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973p8a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973p8a(line=0.2);

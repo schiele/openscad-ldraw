@@ -451,4 +451,6 @@ function ldraw_lib__3010pt8() = [
 // 3 16 20.87 17.92 -10 18.42 22.14 -10 21.78 18.02 -10
   [3,16,20.87,17.92,-10,18.42,22.14,-10,21.78,18.02,-10],
 ];
-makepoly(ldraw_lib__3010pt8(), line=0.2);
+module ldraw_lib__3010pt8(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3010pt8(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3010pt8(line=0.2);

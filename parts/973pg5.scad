@@ -75,4 +75,6 @@ function ldraw_lib__973pg5() = [
 // 4 0 5.0646 6.3 10 5.8646 5.5 10 5.8646 11.4 10 5.0646 10.6 10
   [4,0,5.0646,6.3,10,5.8646,5.5,10,5.8646,11.4,10,5.0646,10.6,10],
 ];
-makepoly(ldraw_lib__973pg5(), line=0.2);
+module ldraw_lib__973pg5(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973pg5(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973pg5(line=0.2);

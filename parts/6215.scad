@@ -251,4 +251,6 @@ function ldraw_lib__6215() = [
 // 1 16 20 6.472 0 1 0 0 0 -4.382 0 0 0 1 stud4a.dat
   [1,16,20,6.472,0,1,0,0,0,-4.382,0,0,0,1, ldraw_lib__stud4a()],
 ];
-makepoly(ldraw_lib__6215(), line=0.2);
+module ldraw_lib__6215(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__6215(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__6215(line=0.2);

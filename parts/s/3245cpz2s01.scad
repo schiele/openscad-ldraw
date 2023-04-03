@@ -388,4 +388,6 @@ function ldraw_lib__s__3245cpz2s01() = [
 // 3 16 -8.01 40.94 0 -8.138 40.948 0 -0.619 48.029 0
   [3,16,-8.01,40.94,0,-8.138,40.948,0,-0.619,48.029,0],
 ];
-makepoly(ldraw_lib__s__3245cpz2s01(), line=0.2);
+module ldraw_lib__s__3245cpz2s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__3245cpz2s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__3245cpz2s01(line=0.2);

@@ -263,4 +263,6 @@ function ldraw_lib__3816pa9() = [
 // 4 16 -2 7.7 -6 -2.6 7.7 -6 -2.4 11.6 -6 -1.5 20 -6
   [4,16,-2,7.7,-6,-2.6,7.7,-6,-2.4,11.6,-6,-1.5,20,-6],
 ];
-makepoly(ldraw_lib__3816pa9(), line=0.2);
+module ldraw_lib__3816pa9(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3816pa9(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3816pa9(line=0.2);

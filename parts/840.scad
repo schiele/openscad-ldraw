@@ -314,4 +314,6 @@ function ldraw_lib__840() = [
 // 4 16 -31 10 -24 -26 10 -29 26 10 -29 31 10 -24
   [4,16,-31,10,-24,-26,10,-29,26,10,-29,31,10,-24],
 ];
-makepoly(ldraw_lib__840(), line=0.2);
+module ldraw_lib__840(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__840(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__840(line=0.2);

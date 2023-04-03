@@ -44,4 +44,6 @@ function ldraw_lib__axl4hole() = [
 // 4 16 -2 1 5.602 0 1 6 0 0 6 -2 0 5.602
   [4,16,-2,1,5.602,0,1,6,0,0,6,-2,0,5.602],
 ];
-makepoly(ldraw_lib__axl4hole(), line=0.2);
+module ldraw_lib__axl4hole(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__axl4hole(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__axl4hole(line=0.2);

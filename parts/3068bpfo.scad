@@ -115,4 +115,6 @@ function ldraw_lib__3068bpfo() = [
 // 3 15 -2.7 0 -11 -5.3 0 -9 -8.8 0 -7
   [3,15,-2.7,0,-11,-5.3,0,-9,-8.8,0,-7],
 ];
-makepoly(ldraw_lib__3068bpfo(), line=0.2);
+module ldraw_lib__3068bpfo(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3068bpfo(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3068bpfo(line=0.2);

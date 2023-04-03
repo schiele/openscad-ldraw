@@ -223,4 +223,6 @@ function ldraw_lib__4080() = [
 // 4 16 -6 -36 -90 6 -36 -90 6 -36 -94 -6 -36 -94
   [4,16,-6,-36,-90,6,-36,-90,6,-36,-94,-6,-36,-94],
 ];
-makepoly(ldraw_lib__4080(), line=0.2);
+module ldraw_lib__4080(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__4080(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__4080(line=0.2);

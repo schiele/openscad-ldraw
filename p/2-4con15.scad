@@ -50,4 +50,6 @@ function ldraw_lib__2_4con15() = [
   [5,24,-15,1,0,-16,0,0,-13.8582,1,5.7403,-15,1,-6.2132],
 // 0 // Build by Primitive Generator 2
 ];
-makepoly(ldraw_lib__2_4con15(), line=0.2);
+module ldraw_lib__2_4con15(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__2_4con15(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__2_4con15(line=0.2);

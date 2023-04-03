@@ -37,4 +37,6 @@ function ldraw_lib__48__11_48ring21() = [
   [4,16,5.6936,0,21.2498,2.871,0,21.8108,2.7405,0,20.8194,5.4348,0,20.2839],
 // 0 // Build by LDPartEditor (PrimGen 2.X)
 ];
-makepoly(ldraw_lib__48__11_48ring21(), line=0.2);
+module ldraw_lib__48__11_48ring21(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__48__11_48ring21(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__48__11_48ring21(line=0.2);

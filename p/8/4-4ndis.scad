@@ -31,4 +31,6 @@ function ldraw_lib__8__4_4ndis() = [
   [3,16,1,0,-1,1,0,0,0.7071,0,-0.7071],
 // 0 // Build by Primitive Generator 2
 ];
-makepoly(ldraw_lib__8__4_4ndis(), line=0.2);
+module ldraw_lib__8__4_4ndis(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__8__4_4ndis(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__8__4_4ndis(line=0.2);

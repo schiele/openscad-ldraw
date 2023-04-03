@@ -90,4 +90,6 @@ function ldraw_lib__typestui() = [
 // 4 16 1.915 0 3.67 1.915 0 -3.67 2.376 0 -4.16 2.376 0 4.16
   [4,16,1.915,0,3.67,1.915,0,-3.67,2.376,0,-4.16,2.376,0,4.16],
 ];
-makepoly(ldraw_lib__typestui(), line=0.2);
+module ldraw_lib__typestui(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__typestui(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__typestui(line=0.2);

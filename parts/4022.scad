@@ -788,4 +788,6 @@ function ldraw_lib__4022() = [
   [1,16,-50,16,-50,14.5,0,0,0,0,14.5,0,-4,0, ldraw_lib__4_8sphe()],
 // 0
 ];
-makepoly(ldraw_lib__4022(), line=0.2);
+module ldraw_lib__4022(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__4022(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__4022(line=0.2);

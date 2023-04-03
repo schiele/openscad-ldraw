@@ -104,4 +104,6 @@ function ldraw_lib__3822ps1() = [
 // 4 80 10 16 14.05 10 16.4 16.45 10 15.6 18.15 10 6 14.05
   [4,80,10,16,14.05,10,16.4,16.45,10,15.6,18.15,10,6,14.05],
 ];
-makepoly(ldraw_lib__3822ps1(), line=0.2);
+module ldraw_lib__3822ps1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3822ps1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3822ps1(line=0.2);

@@ -43,4 +43,6 @@ function ldraw_lib__3005pvf() = [
   [4,16,-10,0,-10,10,0,-10,4,6,-10,-4,6,-10],
 // 0
 ];
-makepoly(ldraw_lib__3005pvf(), line=0.2);
+module ldraw_lib__3005pvf(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3005pvf(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3005pvf(line=0.2);

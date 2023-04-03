@@ -46,4 +46,6 @@ function ldraw_lib__u9001p03() = [
 // 4 15 9.0477 -31 -50.0171 -0.5045 -31 -37.7244 -17.8179 -31 -51.1879 -17.8179 -31 -71.0903
   [4,15,9.0477,-31,-50.0171,-0.5045,-31,-37.7244,-17.8179,-31,-51.1879,-17.8179,-31,-71.0903],
 ];
-makepoly(ldraw_lib__u9001p03(), line=0.2);
+module ldraw_lib__u9001p03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__u9001p03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__u9001p03(line=0.2);

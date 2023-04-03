@@ -277,4 +277,6 @@ function ldraw_lib__s__6002s2() = [
   [1,16,45.22,214,93.7,0.82,0,0,0,0,2,1.76,1,0, ldraw_lib__rect()],
 // 0
 ];
-makepoly(ldraw_lib__s__6002s2(), line=0.2);
+module ldraw_lib__s__6002s2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__6002s2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__6002s2(line=0.2);

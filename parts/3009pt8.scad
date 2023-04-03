@@ -33,4 +33,6 @@ function ldraw_lib__3009pt8() = [
 // 1 16 0 -1.6 0 1.1 0 0 0 1.1 0 0 0 1 s\3009pt7b.dat
   [1,16,0,-1.6,0,1.1,0,0,0,1.1,0,0,0,1, ldraw_lib__s__3009pt7b()],
 ];
-makepoly(ldraw_lib__3009pt8(), line=0.2);
+module ldraw_lib__3009pt8(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3009pt8(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3009pt8(line=0.2);

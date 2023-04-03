@@ -109,4 +109,6 @@ function ldraw_lib__4747() = [
 // 1 16 0 10 -40 0 0 1 0 1 0 1 0 0 connect4.dat
   [1,16,0,10,-40,0,0,1,0,1,0,1,0,0, ldraw_lib__connect4()],
 ];
-makepoly(ldraw_lib__4747(), line=0.2);
+module ldraw_lib__4747(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__4747(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__4747(line=0.2);

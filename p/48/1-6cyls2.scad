@@ -46,4 +46,6 @@ function ldraw_lib__48__1_6cyls2() = [
 // 5 24 -.866 0 .5 -.866 .866 .5 -.7934 0 .6088 -.9319 0 .386
   [5,24,-.866,0,.5,-.866,.866,.5,-.7934,0,.6088,-.9319,0,.386],
 ];
-makepoly(ldraw_lib__48__1_6cyls2(), line=0.2);
+module ldraw_lib__48__1_6cyls2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__48__1_6cyls2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__48__1_6cyls2(line=0.2);

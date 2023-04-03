@@ -615,4 +615,6 @@ function ldraw_lib__t1113() = [
 // 4 16 -76 4 20 -76 4 36 -60 4 36 -65.6568 4 25.6568
   [4,16,-76,4,20,-76,4,36,-60,4,36,-65.6568,4,25.6568],
 ];
-makepoly(ldraw_lib__t1113(), line=0.2);
+module ldraw_lib__t1113(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__t1113(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__t1113(line=0.2);

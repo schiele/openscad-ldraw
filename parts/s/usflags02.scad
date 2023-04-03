@@ -550,4 +550,6 @@ function ldraw_lib__s__usflags02() = [
 // 3 1 72.5954 0 -15.2021 71.4767 0 -18.6455 72.5954 0 -25.9713
   [3,1,72.5954,0,-15.2021,71.4767,0,-18.6455,72.5954,0,-25.9713],
 ];
-makepoly(ldraw_lib__s__usflags02(), line=0.2);
+module ldraw_lib__s__usflags02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__usflags02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__usflags02(line=0.2);

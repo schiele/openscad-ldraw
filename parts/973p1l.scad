@@ -1511,4 +1511,6 @@ function ldraw_lib__973p1l() = [
 // 3 15 5.0581 12.308 10 4.9552 11.8005 10 6.0732 11.4106 10
   [3,15,5.0581,12.308,10,4.9552,11.8005,10,6.0732,11.4106,10],
 ];
-makepoly(ldraw_lib__973p1l(), line=0.2);
+module ldraw_lib__973p1l(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973p1l(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973p1l(line=0.2);

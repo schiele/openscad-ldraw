@@ -53,4 +53,6 @@ function ldraw_lib__rail12v() = [
   [1,16,0,4.375,-12,0,3.75,0,0,0,3.375,3.75,0,0, ldraw_lib__recte4()],
 // 0
 ];
-makepoly(ldraw_lib__rail12v(), line=0.2);
+module ldraw_lib__rail12v(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__rail12v(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__rail12v(line=0.2);

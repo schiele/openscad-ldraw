@@ -112,4 +112,6 @@ function ldraw_lib__3829a() = [
   [1,16,0,-17.92,-5.04,0,0,6,0,-4.8,0,3.6,0,0, ldraw_lib__1_4cyls()],
 // 0
 ];
-makepoly(ldraw_lib__3829a(), line=0.2);
+module ldraw_lib__3829a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3829a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3829a(line=0.2);

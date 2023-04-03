@@ -1858,4 +1858,6 @@ function ldraw_lib__3626cpbn() = [
 // 5 24 -12.01054 17 4.97494 -9.192 17 9.192 -12.0104 15.34304 4.9752 -11.65872 18.53088 4.82921
   [5,24,-12.01054,17,4.97494,-9.192,17,9.192,-12.0104,15.34304,4.9752,-11.65872,18.53088,4.82921],
 ];
-makepoly(ldraw_lib__3626cpbn(), line=0.2);
+module ldraw_lib__3626cpbn(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3626cpbn(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3626cpbn(line=0.2);

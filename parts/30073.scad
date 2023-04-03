@@ -45,4 +45,6 @@ function ldraw_lib__30073() = [
 // 3 16 10 8 105 10 0 110 10 11 105
   [3,16,10,8,105,10,0,110,10,11,105],
 ];
-makepoly(ldraw_lib__30073(), line=0.2);
+module ldraw_lib__30073(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__30073(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__30073(line=0.2);

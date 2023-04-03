@@ -1995,4 +1995,6 @@ function ldraw_lib__logo5() = [
 // 5 24 -1.563 -0.0749 4.5009 -1.5627 -0.05 4.3545 1.3213 -0.0749 3.9039 -1.7712 -0.05 4.313
   [5,24,-1.563,-0.0749,4.5009,-1.5627,-0.05,4.3545,1.3213,-0.0749,3.9039,-1.7712,-0.05,4.313],
 ];
-makepoly(ldraw_lib__logo5(), line=0.2);
+module ldraw_lib__logo5(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__logo5(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__logo5(line=0.2);

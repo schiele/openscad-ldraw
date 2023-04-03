@@ -208,4 +208,6 @@ function ldraw_lib__14720() = [
 // 1 16 0 9 0 0 0 -10 0 -1 0 20 0 0 rect2p.dat
   [1,16,0,9,0,0,0,-10,0,-1,0,20,0,0, ldraw_lib__rect2p()],
 ];
-makepoly(ldraw_lib__14720(), line=0.2);
+module ldraw_lib__14720(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__14720(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__14720(line=0.2);

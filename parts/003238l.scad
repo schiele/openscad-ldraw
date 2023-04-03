@@ -28,4 +28,6 @@ function ldraw_lib__003238l() = [
 // 1 7 0 -0.25 0 -1 0 0 0 1 0 0 0 1 s\003238s5.dat
   [1,7,0,-0.25,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__003238s5()],
 ];
-makepoly(ldraw_lib__003238l(), line=0.2);
+module ldraw_lib__003238l(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__003238l(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__003238l(line=0.2);

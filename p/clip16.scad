@@ -226,4 +226,6 @@ function ldraw_lib__clip16() = [
 // 5 24 -4 4 0 -4 -4 0 -3.804 -4 -1.236 -3.6956 -4 1.5308
   [5,24,-4,4,0,-4,-4,0,-3.804,-4,-1.236,-3.6956,-4,1.5308],
 ];
-makepoly(ldraw_lib__clip16(), line=0.2);
+module ldraw_lib__clip16(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__clip16(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__clip16(line=0.2);

@@ -80,4 +80,6 @@ function ldraw_lib__4_4cyls() = [
 // 3 16 0.9239 0 -0.3827 0.9239 0.0761 -0.3827 1 0 0
   [3,16,0.9239,0,-0.3827,0.9239,0.0761,-0.3827,1,0,0],
 ];
-makepoly(ldraw_lib__4_4cyls(), line=0.2);
+module ldraw_lib__4_4cyls(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__4_4cyls(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__4_4cyls(line=0.2);

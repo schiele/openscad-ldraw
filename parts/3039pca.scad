@@ -1338,4 +1338,6 @@ function ldraw_lib__3039pca() = [
 // 3 72 11.274 1.705 -11.705 9.058 1.975 -11.976 11.432 1.975 -11.976
   [3,72,11.274,1.705,-11.705,9.058,1.975,-11.976,11.432,1.975,-11.976],
 ];
-makepoly(ldraw_lib__3039pca(), line=0.2);
+module ldraw_lib__3039pca(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3039pca(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3039pca(line=0.2);

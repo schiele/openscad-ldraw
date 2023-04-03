@@ -1856,4 +1856,6 @@ function ldraw_lib__973pbu() = [
 // 3 82 10.189 19.279 -10 5.487 16.214 -10 8.076 19.185 -10
   [3,82,10.189,19.279,-10,5.487,16.214,-10,8.076,19.185,-10],
 ];
-makepoly(ldraw_lib__973pbu(), line=0.2);
+module ldraw_lib__973pbu(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973pbu(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973pbu(line=0.2);

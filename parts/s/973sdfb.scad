@@ -379,4 +379,6 @@ function ldraw_lib__s__973sdfb() = [
   [4,16,16.05,30.45,-10,15.7,30.25,-10,15.9,30.1,-10,16.1,30.25,-10],
 // 0 COMMENT end of file
 ];
-makepoly(ldraw_lib__s__973sdfb(), line=0.2);
+module ldraw_lib__s__973sdfb(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__973sdfb(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__973sdfb(line=0.2);

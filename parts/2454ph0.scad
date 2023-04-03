@@ -18,4 +18,6 @@ function ldraw_lib__2454ph0() = [
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 2454aph0.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2454aph0()],
 ];
-makepoly(ldraw_lib__2454ph0(), line=0.2);
+module ldraw_lib__2454ph0(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__2454ph0(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__2454ph0(line=0.2);

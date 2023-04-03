@@ -3052,4 +3052,6 @@ function ldraw_lib__973psw() = [
 // 4 0 2.953 20.833 -10 2.642 20.638 -10 2.188 20.624 -10 2.737 21.104 -10
   [4,0,2.953,20.833,-10,2.642,20.638,-10,2.188,20.624,-10,2.737,21.104,-10],
 ];
-makepoly(ldraw_lib__973psw(), line=0.2);
+module ldraw_lib__973psw(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973psw(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973psw(line=0.2);

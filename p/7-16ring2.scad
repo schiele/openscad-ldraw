@@ -29,4 +29,6 @@ function ldraw_lib__7_16ring2() = [
   [4,16,-2.1213,0,2.1213,-2.7717,0,1.1481,-1.8478,0,0.7654,-1.4142,0,1.4142],
 // 0 // Build by Primitive Generator 2
 ];
-makepoly(ldraw_lib__7_16ring2(), line=0.2);
+module ldraw_lib__7_16ring2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__7_16ring2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__7_16ring2(line=0.2);

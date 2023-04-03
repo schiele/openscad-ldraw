@@ -2056,4 +2056,6 @@ function ldraw_lib__973pbf() = [
 // 4 0 -0.5 24.5 10 0.5 24.5 10 0.5 25.1 10 -0.5 25.1 10
   [4,0,-0.5,24.5,10,0.5,24.5,10,0.5,25.1,10,-0.5,25.1,10],
 ];
-makepoly(ldraw_lib__973pbf(), line=0.2);
+module ldraw_lib__973pbf(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973pbf(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973pbf(line=0.2);

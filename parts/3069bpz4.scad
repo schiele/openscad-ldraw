@@ -95,4 +95,6 @@ function ldraw_lib__3069bpz4() = [
 // 3 82 -19 0 9 -17.5 0 7.5 -7.5 0 7.5
   [3,82,-19,0,9,-17.5,0,7.5,-7.5,0,7.5],
 ];
-makepoly(ldraw_lib__3069bpz4(), line=0.2);
+module ldraw_lib__3069bpz4(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3069bpz4(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3069bpz4(line=0.2);

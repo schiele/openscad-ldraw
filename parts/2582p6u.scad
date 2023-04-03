@@ -4422,4 +4422,6 @@ function ldraw_lib__2582p6u() = [
   [3,0,-19.6015,44.8174,-30,-27.2148,41.0417,-30,-19.9644,44.8986,-30],
 // 0
 ];
-makepoly(ldraw_lib__2582p6u(), line=0.2);
+module ldraw_lib__2582p6u(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__2582p6u(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__2582p6u(line=0.2);

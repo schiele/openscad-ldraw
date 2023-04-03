@@ -20,4 +20,6 @@ function ldraw_lib__u595p01c02() = [
 // 1 15 -4.8 -50.1 2.1 -0.692627 0.190681 -0.695635 0.220169 0.974288 0.0478457 0.686872 -0.120018 -0.7168 4791.dat
   [1,15,-4.8,-50.1,2.1,-0.692627,0.190681,-0.695635,0.220169,0.974288,0.0478457,0.686872,-0.120018,-0.7168, ldraw_lib__4791()],
 ];
-makepoly(ldraw_lib__u595p01c02(), line=0.2);
+module ldraw_lib__u595p01c02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__u595p01c02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__u595p01c02(line=0.2);

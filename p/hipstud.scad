@@ -93,4 +93,6 @@ function ldraw_lib__hipstud() = [
 // 5 24 4.48 -11 4.48 4.48 0 4.48 3.46 -11 6 6 -4 3.46
   [5,24,4.48,-11,4.48,4.48,0,4.48,3.46,-11,6,6,-4,3.46],
 ];
-makepoly(ldraw_lib__hipstud(), line=0.2);
+module ldraw_lib__hipstud(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__hipstud(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__hipstud(line=0.2);

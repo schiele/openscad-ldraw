@@ -653,4 +653,6 @@ function ldraw_lib__confric6() = [
   [5,24,-4.95,-1.1,-3.537,-5.728,-1.1,-2.373,-4.242,-2,-4.242,-5.774,0,-2.393],
 // 0
 ];
-makepoly(ldraw_lib__confric6(), line=0.2);
+module ldraw_lib__confric6(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__confric6(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__confric6(line=0.2);

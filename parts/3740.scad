@@ -134,4 +134,6 @@ function ldraw_lib__3740() = [
 // 1 16 0 0 0 0.993712 -0.111964 0 0.111964 0.993712 0 0 0 -1 s\3740a.dat
   [1,16,0,0,0,0.993712,-0.111964,0,0.111964,0.993712,0,0,0,-1, ldraw_lib__s__3740a()],
 ];
-makepoly(ldraw_lib__3740(), line=0.2);
+module ldraw_lib__3740(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3740(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3740(line=0.2);

@@ -30,4 +30,6 @@ function ldraw_lib__4297014a() = [
 // 1 0 0 -.25 0 36.5 0 0 0 1 0 0 0 21.5 4-4ering.dat
   [1,0,0,-.25,0,36.5,0,0,0,1,0,0,0,21.5, ldraw_lib__4_4ering()],
 ];
-makepoly(ldraw_lib__4297014a(), line=0.2);
+module ldraw_lib__4297014a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__4297014a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__4297014a(line=0.2);

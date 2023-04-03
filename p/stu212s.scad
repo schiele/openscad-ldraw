@@ -17,4 +17,6 @@ function ldraw_lib__stu212s() = [
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 8\stud12s.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__8__stud12s()],
 ];
-makepoly(ldraw_lib__stu212s(), line=0.2);
+module ldraw_lib__stu212s(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__stu212s(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__stu212s(line=0.2);

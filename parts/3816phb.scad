@@ -140,4 +140,6 @@ function ldraw_lib__3816phb() = [
 // 4 16 -18.5 3.42 -8.28 -18 5.35 -6.95 -18 6.74 -6 -18.64 6.74 -6
   [4,16,-18.5,3.42,-8.28,-18,5.35,-6.95,-18,6.74,-6,-18.64,6.74,-6],
 ];
-makepoly(ldraw_lib__3816phb(), line=0.2);
+module ldraw_lib__3816phb(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3816phb(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3816phb(line=0.2);

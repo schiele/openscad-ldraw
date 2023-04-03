@@ -1027,4 +1027,6 @@ function ldraw_lib__u9483() = [
 // 2 24 -24 76 -13.2358 -24 78.1546 -13.2358
   [2,24,-24,76,-13.2358,-24,78.1546,-13.2358],
 ];
-makepoly(ldraw_lib__u9483(), line=0.2);
+module ldraw_lib__u9483(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__u9483(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__u9483(line=0.2);

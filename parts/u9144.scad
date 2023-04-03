@@ -288,4 +288,6 @@ function ldraw_lib__u9144() = [
 // 4 272 -124.2 0 77 -124.2 0 -77 -121.5 0 -77 -121.5 0 77
   [4,272,-124.2,0,77,-124.2,0,-77,-121.5,0,-77,-121.5,0,77],
 ];
-makepoly(ldraw_lib__u9144(), line=0.2);
+module ldraw_lib__u9144(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__u9144(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__u9144(line=0.2);

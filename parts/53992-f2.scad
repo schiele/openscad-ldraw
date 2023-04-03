@@ -114,4 +114,6 @@ function ldraw_lib__53992_f2() = [
 // 1 16 32.829 21.24 0 -0.7034 0.9951 0 -0.7108 -0.9848 0 0 0 25 box4o8a.dat
   [1,16,32.829,21.24,0,-0.7034,0.9951,0,-0.7108,-0.9848,0,0,0,25, ldraw_lib__box4o8a()],
 ];
-makepoly(ldraw_lib__53992_f2(), line=0.2);
+module ldraw_lib__53992_f2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__53992_f2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__53992_f2(line=0.2);

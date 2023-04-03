@@ -114,4 +114,6 @@ function ldraw_lib__typestul() = [
 // 4 16 0.87 0 -4.16 1.21 0 -4.1 1.51 0 -3.99 0.87 0 -2.1
   [4,16,0.87,0,-4.16,1.21,0,-4.1,1.51,0,-3.99,0.87,0,-2.1],
 ];
-makepoly(ldraw_lib__typestul(), line=0.2);
+module ldraw_lib__typestul(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__typestul(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__typestul(line=0.2);

@@ -3449,4 +3449,6 @@ function ldraw_lib__973pbv() = [
 // 4 16 17.25 26.1 10 17.25 25.5 10 19 29 10 17.566 28.091 10
   [4,16,17.25,26.1,10,17.25,25.5,10,19,29,10,17.566,28.091,10],
 ];
-makepoly(ldraw_lib__973pbv(), line=0.2);
+module ldraw_lib__973pbv(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973pbv(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973pbv(line=0.2);

@@ -714,4 +714,6 @@ function ldraw_lib__3069bpcd() = [
 // 3 0 9.1 0 8.15 19.35 0 9.5 6.8 0 8.15
   [3,0,9.1,0,8.15,19.35,0,9.5,6.8,0,8.15],
 ];
-makepoly(ldraw_lib__3069bpcd(), line=0.2);
+module ldraw_lib__3069bpcd(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3069bpcd(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3069bpcd(line=0.2);

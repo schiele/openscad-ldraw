@@ -197,4 +197,6 @@ function ldraw_lib__2586p4d() = [
 // 4 16 -9.25 8.5 -8 -11.375 18.9 -8 -6.5 9.5 -8 -8 6.5 -8
   [4,16,-9.25,8.5,-8,-11.375,18.9,-8,-6.5,9.5,-8,-8,6.5,-8],
 ];
-makepoly(ldraw_lib__2586p4d(), line=0.2);
+module ldraw_lib__2586p4d(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__2586p4d(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__2586p4d(line=0.2);

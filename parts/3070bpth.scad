@@ -43,4 +43,6 @@ function ldraw_lib__3070bpth() = [
   [4,16,-4,0,-7.5,-4,0,-0.5,4,0,-0.5,4,0,-7.5],
 // 
 ];
-makepoly(ldraw_lib__3070bpth(), line=0.2);
+module ldraw_lib__3070bpth(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3070bpth(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3070bpth(line=0.2);

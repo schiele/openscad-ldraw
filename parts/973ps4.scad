@@ -359,4 +359,6 @@ function ldraw_lib__973ps4() = [
 // 3 16 12 0 -10 0 0 -10 5.95 0.45 -10
   [3,16,12,0,-10,0,0,-10,5.95,0.45,-10],
 ];
-makepoly(ldraw_lib__973ps4(), line=0.2);
+module ldraw_lib__973ps4(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973ps4(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973ps4(line=0.2);

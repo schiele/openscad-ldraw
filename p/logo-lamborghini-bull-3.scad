@@ -497,4 +497,6 @@ function ldraw_lib__logo_lamborghini_bull_3() = [
 // 3 16 0.7186 0 0.901 0.73 0 0.9078 0.6812 0 1.0532
   [3,16,0.7186,0,0.901,0.73,0,0.9078,0.6812,0,1.0532],
 ];
-makepoly(ldraw_lib__logo_lamborghini_bull_3(), line=0.2);
+module ldraw_lib__logo_lamborghini_bull_3(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__logo_lamborghini_bull_3(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__logo_lamborghini_bull_3(line=0.2);

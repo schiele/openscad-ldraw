@@ -126,4 +126,6 @@ function ldraw_lib__s__2454as02() = [
 // 2 24 -13.6956 0 -1.5308 -13.6956 4 -1.5308
   [2,24,-13.6956,0,-1.5308,-13.6956,4,-1.5308],
 ];
-makepoly(ldraw_lib__s__2454as02(), line=0.2);
+module ldraw_lib__s__2454as02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__2454as02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__2454as02(line=0.2);

@@ -33,4 +33,6 @@ function ldraw_lib__2623d02() = [
 // 1 16 -36 -3.5 -52 .66422 .64718 -.37414 .00034 -.50023 -.86589 -.74754 .57527 -.33204 820673h.dat
   [1,16,-36,-3.5,-52,.66422,.64718,-.37414,.00034,-.50023,-.86589,-.74754,.57527,-.33204, ldraw_lib__820673h()],
 ];
-makepoly(ldraw_lib__2623d02(), line=0.2);
+module ldraw_lib__2623d02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__2623d02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__2623d02(line=0.2);

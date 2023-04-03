@@ -33,4 +33,6 @@ function ldraw_lib__s__90398s02() = [
 // 1 16 0 -31.8486 .3 2.45234 0 0 0 1.96187 0 0 0 2.45234 t04o6250.dat
   [1,16,0,-31.8486,.3,2.45234,0,0,0,1.96187,0,0,0,2.45234, ldraw_lib__t04o6250()],
 ];
-makepoly(ldraw_lib__s__90398s02(), line=0.2);
+module ldraw_lib__s__90398s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__90398s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__90398s02(line=0.2);

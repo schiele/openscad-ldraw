@@ -821,4 +821,6 @@ function ldraw_lib__3070bpm0() = [
 // 3 25 -1 0 3.83 -1.76 0 2.57 -1.14 0 2.9
   [3,25,-1,0,3.83,-1.76,0,2.57,-1.14,0,2.9],
 ];
-makepoly(ldraw_lib__3070bpm0(), line=0.2);
+module ldraw_lib__3070bpm0(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3070bpm0(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3070bpm0(line=0.2);

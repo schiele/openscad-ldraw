@@ -1103,4 +1103,6 @@ function ldraw_lib__s__4186p01e() = [
 // 4 16 408 -4 -108 405.8 -4 -105.8 404.48 -4 -107.72 404.42 -4 -108
   [4,16,408,-4,-108,405.8,-4,-105.8,404.48,-4,-107.72,404.42,-4,-108],
 ];
-makepoly(ldraw_lib__s__4186p01e(), line=0.2);
+module ldraw_lib__s__4186p01e(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__4186p01e(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__4186p01e(line=0.2);

@@ -56,4 +56,6 @@ function ldraw_lib__3961p20() = [
 // 1 71 0 0 0 -0.9659 0 -0.2588 0 1 0 0.2588 0 -0.9659 s\3961s20a.dat
   [1,71,0,0,0,-0.9659,0,-0.2588,0,1,0,0.2588,0,-0.9659, ldraw_lib__s__3961s20a()],
 ];
-makepoly(ldraw_lib__3961p20(), line=0.2);
+module ldraw_lib__3961p20(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3961p20(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3961p20(line=0.2);

@@ -236,4 +236,6 @@ function ldraw_lib__typestur() = [
 // 3 16 1.277 0 -4.61 -.07 0 -4.58 -.07 0 -5
   [3,16,1.277,0,-4.61,-.07,0,-4.58,-.07,0,-5],
 ];
-makepoly(ldraw_lib__typestur(), line=0.2);
+module ldraw_lib__typestur(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__typestur(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__typestur(line=0.2);

@@ -30,4 +30,6 @@ function ldraw_lib__45417() = [
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 3063b.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3063b()],
 ];
-makepoly(ldraw_lib__45417(), line=0.2);
+module ldraw_lib__45417(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__45417(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__45417(line=0.2);

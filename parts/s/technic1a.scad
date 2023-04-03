@@ -250,4 +250,6 @@ function ldraw_lib__s__technic1a() = [
 // 3 16 10.99 0 -3.89 11.58 0 -1.4 9.65 0 3.18
   [3,16,10.99,0,-3.89,11.58,0,-1.4,9.65,0,3.18],
 ];
-makepoly(ldraw_lib__s__technic1a(), line=0.2);
+module ldraw_lib__s__technic1a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__technic1a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__technic1a(line=0.2);

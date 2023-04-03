@@ -381,4 +381,6 @@ function ldraw_lib__3003p10() = [
 // 3 16 -1.996 20 -20 -8 20 -20 -20 24 -20
   [3,16,-1.996,20,-20,-8,20,-20,-20,24,-20],
 ];
-makepoly(ldraw_lib__3003p10(), line=0.2);
+module ldraw_lib__3003p10(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3003p10(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3003p10(line=0.2);

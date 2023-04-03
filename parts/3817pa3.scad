@@ -190,4 +190,6 @@ function ldraw_lib__3817pa3() = [
   [3,16,6.2,0,-9,6.2,-2.2,-8.537,8,-2,-8.579],
 // 0
 ];
-makepoly(ldraw_lib__3817pa3(), line=0.2);
+module ldraw_lib__3817pa3(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3817pa3(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3817pa3(line=0.2);

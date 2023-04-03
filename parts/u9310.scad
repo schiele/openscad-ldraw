@@ -805,4 +805,6 @@ function ldraw_lib__u9310() = [
 // 4 16 -196 12 62 196 12 62 196 12 64 -196 12 64
   [4,16,-196,12,62,196,12,62,196,12,64,-196,12,64],
 ];
-makepoly(ldraw_lib__u9310(), line=0.2);
+module ldraw_lib__u9310(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__u9310(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__u9310(line=0.2);

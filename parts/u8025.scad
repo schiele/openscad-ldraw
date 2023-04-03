@@ -114,4 +114,6 @@ function ldraw_lib__u8025() = [
 // 4 16 30 66 -7 27 64 -7 -27 64 -7 -30 66 -7
   [4,16,30,66,-7,27,64,-7,-27,64,-7,-30,66,-7],
 ];
-makepoly(ldraw_lib__u8025(), line=0.2);
+module ldraw_lib__u8025(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__u8025(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__u8025(line=0.2);

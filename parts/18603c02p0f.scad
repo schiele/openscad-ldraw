@@ -26,4 +26,6 @@ function ldraw_lib__18603c02p0f() = [
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 18605p0f.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__18605p0f()],
 ];
-makepoly(ldraw_lib__18603c02p0f(), line=0.2);
+module ldraw_lib__18603c02p0f(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__18603c02p0f(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__18603c02p0f(line=0.2);

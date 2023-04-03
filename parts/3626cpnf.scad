@@ -1093,4 +1093,6 @@ function ldraw_lib__3626cpnf() = [
 // 5 24 -9.192 4 9.192 -9.192 17 9.192 -12.011 4 4.975 -4.975 4 12.011
   [5,24,-9.192,4,9.192,-9.192,17,9.192,-12.011,4,4.975,-4.975,4,12.011],
 ];
-makepoly(ldraw_lib__3626cpnf(), line=0.2);
+module ldraw_lib__3626cpnf(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3626cpnf(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3626cpnf(line=0.2);

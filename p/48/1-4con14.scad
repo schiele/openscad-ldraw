@@ -68,4 +68,6 @@ function ldraw_lib__48__1_4con14() = [
   [5,24,0.0000,1,14.0000,0.0000,0,15.0000,1.9575,0,14.8710,-1.9575,0,14.8710],
 // 0
 ];
-makepoly(ldraw_lib__48__1_4con14(), line=0.2);
+module ldraw_lib__48__1_4con14(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__48__1_4con14(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__48__1_4con14(line=0.2);

@@ -48,4 +48,6 @@ function ldraw_lib__s__3070batb() = [
   [4,16,2.81,0,-2.043,4.658,0,-1.278,5,0,-3,3,0,-3],
 // 0
 ];
-makepoly(ldraw_lib__s__3070batb(), line=0.2);
+module ldraw_lib__s__3070batb(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__3070batb(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__3070batb(line=0.2);

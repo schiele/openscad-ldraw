@@ -1718,4 +1718,6 @@ function ldraw_lib__u9060() = [
 // 2 24 16.9812 0.5 -19.8397 13.0543 0.5 -31.7083
   [2,24,16.9812,0.5,-19.8397,13.0543,0.5,-31.7083],
 ];
-makepoly(ldraw_lib__u9060(), line=0.2);
+module ldraw_lib__u9060(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__u9060(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__u9060(line=0.2);

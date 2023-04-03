@@ -150,4 +150,6 @@ function ldraw_lib__typestuy() = [
 // 3 16 2.306 0 -4.16 2.306 0 -4.58 4.42 0 -5
   [3,16,2.306,0,-4.16,2.306,0,-4.58,4.42,0,-5],
 ];
-makepoly(ldraw_lib__typestuy(), line=0.2);
+module ldraw_lib__typestuy(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__typestuy(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__typestuy(line=0.2);

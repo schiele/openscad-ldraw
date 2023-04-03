@@ -128,4 +128,6 @@ function ldraw_lib__24201() = [
 // 1 16 0 8 20 1 0 0 0 2.70589 0 0 0 1 stud2s2e.dat
   [1,16,0,8,20,1,0,0,0,2.70589,0,0,0,1, ldraw_lib__stud2s2e()],
 ];
-makepoly(ldraw_lib__24201(), line=0.2);
+module ldraw_lib__24201(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__24201(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__24201(line=0.2);

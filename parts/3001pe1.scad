@@ -141,4 +141,6 @@ function ldraw_lib__3001pe1() = [
   [3,16,0,15,-20,4.5924,14.0868,-20,-4.5924,14.0868,-20],
 // 0
 ];
-makepoly(ldraw_lib__3001pe1(), line=0.2);
+module ldraw_lib__3001pe1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3001pe1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3001pe1(line=0.2);

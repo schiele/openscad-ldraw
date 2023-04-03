@@ -82,4 +82,6 @@ function ldraw_lib__u9412() = [
 // 4 16 -7.2 -44 3 -7.2 -44 -3 7.1999 -44.0002 -3 7.1999 -44.0002 3
   [4,16,-7.2,-44,3,-7.2,-44,-3,7.1999,-44.0002,-3,7.1999,-44.0002,3],
 ];
-makepoly(ldraw_lib__u9412(), line=0.2);
+module ldraw_lib__u9412(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__u9412(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__u9412(line=0.2);

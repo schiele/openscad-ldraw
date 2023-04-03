@@ -2000,4 +2000,6 @@ function ldraw_lib__3626cp7e() = [
 // 3 71 -9.192 16.616 -9.192 -9.1922 16.1838 -9.1922 -9.3322 16.706 -8.9829
   [3,71,-9.192,16.616,-9.192,-9.1922,16.1838,-9.1922,-9.3322,16.706,-8.9829],
 ];
-makepoly(ldraw_lib__3626cp7e(), line=0.2);
+module ldraw_lib__3626cp7e(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3626cp7e(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3626cp7e(line=0.2);

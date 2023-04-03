@@ -110,4 +110,6 @@ function ldraw_lib__48__tm16i1914() = [
 // 5 24 0.7605 0.0732 0.315 0.747 0 0.3094 0.7951 0.0732 0.2131 0.719 0.0732 0.4151
   [5,24,0.7605,0.0732,0.315,0.747,0,0.3094,0.7951,0.0732,0.2131,0.719,0.0732,0.4151],
 ];
-makepoly(ldraw_lib__48__tm16i1914(), line=0.2);
+module ldraw_lib__48__tm16i1914(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__48__tm16i1914(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__48__tm16i1914(line=0.2);

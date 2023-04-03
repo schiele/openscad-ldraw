@@ -50,4 +50,6 @@ function ldraw_lib__3005ptd() = [
   [4,16,6,5,-10,6,19,-10,10,24,-10,10,0,-10],
 // 0
 ];
-makepoly(ldraw_lib__3005ptd(), line=0.2);
+module ldraw_lib__3005ptd(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3005ptd(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3005ptd(line=0.2);

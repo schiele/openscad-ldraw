@@ -118,4 +118,6 @@ function ldraw_lib__2959() = [
 // 1 16 -15 0 0 0 .4 0 -2 0 0 0 0 -2 1-4cyls2.dat
   [1,16,-15,0,0,0,.4,0,-2,0,0,0,0,-2, ldraw_lib__1_4cyls2()],
 ];
-makepoly(ldraw_lib__2959(), line=0.2);
+module ldraw_lib__2959(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__2959(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__2959(line=0.2);

@@ -21,4 +21,6 @@ function ldraw_lib__3817bpbb() = [
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 3816bpbb.dat
   [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__3816bpbb()],
 ];
-makepoly(ldraw_lib__3817bpbb(), line=0.2);
+module ldraw_lib__3817bpbb(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3817bpbb(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3817bpbb(line=0.2);

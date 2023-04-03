@@ -748,4 +748,6 @@ function ldraw_lib__3818pda2() = [
 // 3 16 -10.0232 15.4104 -6.502 -10.0218 15.6205 -6.7066 -10.0053 15.5 -6.8
   [3,16,-10.0232,15.4104,-6.502,-10.0218,15.6205,-6.7066,-10.0053,15.5,-6.8],
 ];
-makepoly(ldraw_lib__3818pda2(), line=0.2);
+module ldraw_lib__3818pda2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3818pda2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3818pda2(line=0.2);

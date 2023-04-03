@@ -175,4 +175,6 @@ function ldraw_lib__2586p4j() = [
 // 4 272 0 33.8805 -8 0 -3.046 -8 -1.7783 33.1202 -8 -0.9114 33.6993 -8
   [4,272,0,33.8805,-8,0,-3.046,-8,-1.7783,33.1202,-8,-0.9114,33.6993,-8],
 ];
-makepoly(ldraw_lib__2586p4j(), line=0.2);
+module ldraw_lib__2586p4j(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__2586p4j(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__2586p4j(line=0.2);

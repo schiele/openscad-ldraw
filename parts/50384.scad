@@ -132,4 +132,6 @@ function ldraw_lib__50384() = [
 // 1 16 -140 0 -220 1 0 0 0 1 0 0 0 1 stug20-1x7.dat
   [1,16,-140,0,-220,1,0,0,0,1,0,0,0,1, ldraw_lib__stug20_1x7()],
 ];
-makepoly(ldraw_lib__50384(), line=0.2);
+module ldraw_lib__50384(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__50384(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__50384(line=0.2);

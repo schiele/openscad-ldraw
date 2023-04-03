@@ -709,4 +709,6 @@ function ldraw_lib__973pas() = [
 // 3 1 12.379 18.656 -10 11.848 21.51 -10 12.331 21.623 -10
   [3,1,12.379,18.656,-10,11.848,21.51,-10,12.331,21.623,-10],
 ];
-makepoly(ldraw_lib__973pas(), line=0.2);
+module ldraw_lib__973pas(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973pas(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973pas(line=0.2);

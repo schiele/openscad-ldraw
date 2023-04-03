@@ -28,4 +28,6 @@ function ldraw_lib__1_4rin10() = [
 // 4 16 4.2097 0 10.1629 0 0 11 0 0 10 3.827 0 9.239
   [4,16,4.2097,0,10.1629,0,0,11,0,0,10,3.827,0,9.239],
 ];
-makepoly(ldraw_lib__1_4rin10(), line=0.2);
+module ldraw_lib__1_4rin10(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__1_4rin10(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__1_4rin10(line=0.2);

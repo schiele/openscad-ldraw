@@ -26,4 +26,6 @@ function ldraw_lib__s__3626bs04() = [
 // 1 16 0 17 0 8 0 0 0 6.4 0 0 0 8 t04o6250.dat
   [1,16,0,17,0,8,0,0,0,6.4,0,0,0,8, ldraw_lib__t04o6250()],
 ];
-makepoly(ldraw_lib__s__3626bs04(), line=0.2);
+module ldraw_lib__s__3626bs04(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__3626bs04(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__3626bs04(line=0.2);

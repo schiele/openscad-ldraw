@@ -66,4 +66,6 @@ function ldraw_lib__786pt3() = [
 // 3 4 45.775 -108.227 2 59 -90 2 49 -94 2
   [3,4,45.775,-108.227,2,59,-90,2,49,-94,2],
 ];
-makepoly(ldraw_lib__786pt3(), line=0.2);
+module ldraw_lib__786pt3(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__786pt3(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__786pt3(line=0.2);

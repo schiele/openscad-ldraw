@@ -830,4 +830,6 @@ function ldraw_lib__s__t1078s01() = [
 // 5 24 52.75 0 -19.6 54 0 -6 53.885 3.5325 -6 52.6375 -3.45 -19.6
   [5,24,52.75,0,-19.6,54,0,-6,53.885,3.5325,-6,52.6375,-3.45,-19.6],
 ];
-makepoly(ldraw_lib__s__t1078s01(), line=0.2);
+module ldraw_lib__s__t1078s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__t1078s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__t1078s01(line=0.2);

@@ -1711,4 +1711,6 @@ function ldraw_lib__logo_lamborghini_badge() = [
 // 3 16 2.6735 0 1.2387 2.6155 0 0.8111 2.72 0 -3.1
   [3,16,2.6735,0,1.2387,2.6155,0,0.8111,2.72,0,-3.1],
 ];
-makepoly(ldraw_lib__logo_lamborghini_badge(), line=0.2);
+module ldraw_lib__logo_lamborghini_badge(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__logo_lamborghini_badge(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__logo_lamborghini_badge(line=0.2);

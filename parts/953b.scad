@@ -37,4 +37,6 @@ function ldraw_lib__953b() = [
 // 1 16 75.89 0 13.625 -0.882948 0 -0.469472 0 1 0 0.469472 0 -0.882948 stud.dat
   [1,16,75.89,0,13.625,-0.882948,0,-0.469472,0,1,0,0.469472,0,-0.882948, ldraw_lib__stud()],
 ];
-makepoly(ldraw_lib__953b(), line=0.2);
+module ldraw_lib__953b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__953b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__953b(line=0.2);

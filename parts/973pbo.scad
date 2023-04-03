@@ -1950,4 +1950,6 @@ function ldraw_lib__973pbo() = [
 // 4 16 6 22.12 10 5.55 3.19 10 7.01 2.51 10 8.18 22.28 10
   [4,16,6,22.12,10,5.55,3.19,10,7.01,2.51,10,8.18,22.28,10],
 ];
-makepoly(ldraw_lib__973pbo(), line=0.2);
+module ldraw_lib__973pbo(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973pbo(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973pbo(line=0.2);

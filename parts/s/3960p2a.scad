@@ -1137,4 +1137,6 @@ function ldraw_lib__s__3960p2a() = [
 // 5 24 -3.827 0 9.239 -2.588 0 9.659 -4.592 .333 11.087 0 0 0
   [5,24,-3.827,0,9.239,-2.588,0,9.659,-4.592,.333,11.087,0,0,0],
 ];
-makepoly(ldraw_lib__s__3960p2a(), line=0.2);
+module ldraw_lib__s__3960p2a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__3960p2a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__3960p2a(line=0.2);

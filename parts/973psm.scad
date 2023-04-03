@@ -20332,4 +20332,6 @@ function ldraw_lib__973psm() = [
 // 3 15 -2.65 20.35 -10 -2.509 20.209 -10 -2.536 20.197 -10
   [3,15,-2.65,20.35,-10,-2.509,20.209,-10,-2.536,20.197,-10],
 ];
-makepoly(ldraw_lib__973psm(), line=0.2);
+module ldraw_lib__973psm(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973psm(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973psm(line=0.2);

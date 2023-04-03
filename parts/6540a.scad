@@ -428,4 +428,6 @@ function ldraw_lib__6540a() = [
 // 1 16 70 -4 20 0 0 -9 0 -1 0 9 0 0 1-16edge.dat
   [1,16,70,-4,20,0,0,-9,0,-1,0,9,0,0, ldraw_lib__1_16edge()],
 ];
-makepoly(ldraw_lib__6540a(), line=0.2);
+module ldraw_lib__6540a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__6540a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__6540a(line=0.2);

@@ -232,4 +232,6 @@ function ldraw_lib__3069bpx4() = [
 // 4 16 -18.6 0 8.6 -18.36 0 8.34 18.02 0 8.14 18.34 0 8.47
   [4,16,-18.6,0,8.6,-18.36,0,8.34,18.02,0,8.14,18.34,0,8.47],
 ];
-makepoly(ldraw_lib__3069bpx4(), line=0.2);
+module ldraw_lib__3069bpx4(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3069bpx4(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3069bpx4(line=0.2);

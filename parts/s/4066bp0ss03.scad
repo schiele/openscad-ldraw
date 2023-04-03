@@ -546,4 +546,6 @@ function ldraw_lib__s__4066bp0ss03() = [
 // 3 16 0 0 -20 -9 10 -20 -5.5 10.25 -20
   [3,16,0,0,-20,-9,10,-20,-5.5,10.25,-20],
 ];
-makepoly(ldraw_lib__s__4066bp0ss03(), line=0.2);
+module ldraw_lib__s__4066bp0ss03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__4066bp0ss03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__4066bp0ss03(line=0.2);

@@ -1887,4 +1887,6 @@ function ldraw_lib__973pq4() = [
 // 4 14 14 10.1 -10 13.9 10.3 -10 14.2 12 -10 15 13.4 -10
   [4,14,14,10.1,-10,13.9,10.3,-10,14.2,12,-10,15,13.4,-10],
 ];
-makepoly(ldraw_lib__973pq4(), line=0.2);
+module ldraw_lib__973pq4(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973pq4(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973pq4(line=0.2);

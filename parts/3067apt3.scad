@@ -298,4 +298,6 @@ function ldraw_lib__3067apt3() = [
 // 3 16 20.6 8 -10 25.45 17 -10 20.6 11.6 -10
   [3,16,20.6,8,-10,25.45,17,-10,20.6,11.6,-10],
 ];
-makepoly(ldraw_lib__3067apt3(), line=0.2);
+module ldraw_lib__3067apt3(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3067apt3(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3067apt3(line=0.2);

@@ -58,4 +58,6 @@ function ldraw_lib__2995() = [
 // 1 16 0 0 0 0 -0.34202 0.939693 0 0.939693 0.34202 -1 0 0 s\2995s.dat
   [1,16,0,0,0,0,-0.34202,0.939693,0,0.939693,0.34202,-1,0,0, ldraw_lib__s__2995s()],
 ];
-makepoly(ldraw_lib__2995(), line=0.2);
+module ldraw_lib__2995(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__2995(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__2995(line=0.2);

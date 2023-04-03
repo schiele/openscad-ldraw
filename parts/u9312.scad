@@ -439,4 +439,6 @@ function ldraw_lib__u9312() = [
 // 1 16 -87.5 72 -8 1 0 0 0 1 0 0 0 1 s\u9312s01.dat
   [1,16,-87.5,72,-8,1,0,0,0,1,0,0,0,1, ldraw_lib__s__u9312s01()],
 ];
-makepoly(ldraw_lib__u9312(), line=0.2);
+module ldraw_lib__u9312(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__u9312(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__u9312(line=0.2);

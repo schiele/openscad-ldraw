@@ -130,4 +130,6 @@ function ldraw_lib__s__3960ps5s02() = [
 // 4 16 -16.18441 1.73313 -12.41873 -17.66692 1.73341 -10.2 -18.53294 1.90008 -10.7 -16.97776 1.89978 -13.02749
   [4,16,-16.18441,1.73313,-12.41873,-17.66692,1.73341,-10.2,-18.53294,1.90008,-10.7,-16.97776,1.89978,-13.02749],
 ];
-makepoly(ldraw_lib__s__3960ps5s02(), line=0.2);
+module ldraw_lib__s__3960ps5s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__3960ps5s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__3960ps5s02(line=0.2);

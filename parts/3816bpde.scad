@@ -105,4 +105,6 @@ function ldraw_lib__3816bpde() = [
 // 3 16 -19.23 20 -4 -14 7.7 -4 -18.814 7.6955 -4
   [3,16,-19.23,20,-4,-14,7.7,-4,-18.814,7.6955,-4],
 ];
-makepoly(ldraw_lib__3816bpde(), line=0.2);
+module ldraw_lib__3816bpde(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3816bpde(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3816bpde(line=0.2);

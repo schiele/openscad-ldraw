@@ -172,4 +172,6 @@ function ldraw_lib__93589p01() = [
 // 1 16 12 15.999 -43.161 0.87429 -0.48501 0.0197 0 -0.04058 -0.99918 0.48541 0.87357 -0.03548 1-4ndis.dat
   [1,16,12,15.999,-43.161,0.87429,-0.48501,0.0197,0,-0.04058,-0.99918,0.48541,0.87357,-0.03548, ldraw_lib__1_4ndis()],
 ];
-makepoly(ldraw_lib__93589p01(), line=0.2);
+module ldraw_lib__93589p01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__93589p01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__93589p01(line=0.2);

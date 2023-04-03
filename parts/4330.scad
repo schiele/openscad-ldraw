@@ -53,4 +53,6 @@ function ldraw_lib__4330() = [
 // 1 16 0 104.704 -8.531 1 0 0 0 0.5 -0.86603 0 0.86603 0.5 s\4330s02.dat
   [1,16,0,104.704,-8.531,1,0,0,0,0.5,-0.86603,0,0.86603,0.5, ldraw_lib__s__4330s02()],
 ];
-makepoly(ldraw_lib__4330(), line=0.2);
+module ldraw_lib__4330(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__4330(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__4330(line=0.2);

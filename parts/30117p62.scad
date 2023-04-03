@@ -31,4 +31,6 @@ function ldraw_lib__30117p62() = [
 // 0 BFC CLIP
   [0,"BFC","CLIP"],
 ];
-makepoly(ldraw_lib__30117p62(), line=0.2);
+module ldraw_lib__30117p62(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__30117p62(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__30117p62(line=0.2);

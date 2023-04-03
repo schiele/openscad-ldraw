@@ -42,4 +42,6 @@ function ldraw_lib__2943b() = [
 // 1 16 0 -10 -11 2 0 0 0 0 2 0 -15 0 4-4cylc.dat
   [1,16,0,-10,-11,2,0,0,0,0,2,0,-15,0, ldraw_lib__4_4cylc()],
 ];
-makepoly(ldraw_lib__2943b(), line=0.2);
+module ldraw_lib__2943b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__2943b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__2943b(line=0.2);

@@ -250,4 +250,6 @@ function ldraw_lib__knob1() = [
 // 5 24 7 3.696 -1.5309 2 3.6956 -1.5307 2 4.6194 -1.9134 7 2 0
   [5,24,7,3.696,-1.5309,2,3.6956,-1.5307,2,4.6194,-1.9134,7,2,0],
 ];
-makepoly(ldraw_lib__knob1(), line=0.2);
+module ldraw_lib__knob1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__knob1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__knob1(line=0.2);

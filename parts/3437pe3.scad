@@ -133,4 +133,6 @@ function ldraw_lib__3437pe3() = [
 // 3 16 40 0 -40 -15 4 -40 -8.109 5.37 -40
   [3,16,40,0,-40,-15,4,-40,-8.109,5.37,-40],
 ];
-makepoly(ldraw_lib__3437pe3(), line=0.2);
+module ldraw_lib__3437pe3(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3437pe3(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3437pe3(line=0.2);

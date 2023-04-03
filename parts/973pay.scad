@@ -705,4 +705,6 @@ function ldraw_lib__973pay() = [
 // 4 16 -14.7 27.1 -10 -15.9 27.1 -10 -9.8 31.5 -10 -9.3 30.9 -10
   [4,16,-14.7,27.1,-10,-15.9,27.1,-10,-9.8,31.5,-10,-9.3,30.9,-10],
 ];
-makepoly(ldraw_lib__973pay(), line=0.2);
+module ldraw_lib__973pay(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973pay(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973pay(line=0.2);

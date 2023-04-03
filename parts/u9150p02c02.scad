@@ -22,4 +22,6 @@ function ldraw_lib__u9150p02c02() = [
 // 1 15 -2.7 -48.5 2 1 0.07 0 -0.07 0.99 -0.085 -0.002 0.08 1 u9152.dat
   [1,15,-2.7,-48.5,2,1,0.07,0,-0.07,0.99,-0.085,-0.002,0.08,1, ldraw_lib__u9152()],
 ];
-makepoly(ldraw_lib__u9150p02c02(), line=0.2);
+module ldraw_lib__u9150p02c02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__u9150p02c02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__u9150p02c02(line=0.2);

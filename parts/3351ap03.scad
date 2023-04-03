@@ -227,4 +227,6 @@ function ldraw_lib__3351ap03() = [
   [3,16,12.9531,-73.6563,-2,16.8,-73,-2,0,-102.1,-2],
 // 0
 ];
-makepoly(ldraw_lib__3351ap03(), line=0.2);
+module ldraw_lib__3351ap03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3351ap03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3351ap03(line=0.2);

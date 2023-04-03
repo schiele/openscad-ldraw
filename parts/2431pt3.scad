@@ -155,4 +155,6 @@ function ldraw_lib__2431pt3() = [
 // 3 0 -33.8 0 -0.5 -33.8 0 -4.6 -30.8 0 -4.6
   [3,0,-33.8,0,-0.5,-33.8,0,-4.6,-30.8,0,-4.6],
 ];
-makepoly(ldraw_lib__2431pt3(), line=0.2);
+module ldraw_lib__2431pt3(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__2431pt3(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__2431pt3(line=0.2);

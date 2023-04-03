@@ -99,4 +99,6 @@ function ldraw_lib__48__7_8ring2() = [
   [4,16,1.8264,0,-2.3802,2.1213,0,-2.1213,1.4142,0,-1.4142,1.2176,0,-1.5868],
 // 0 // Build by Primitive Generator 2
 ];
-makepoly(ldraw_lib__48__7_8ring2(), line=0.2);
+module ldraw_lib__48__7_8ring2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__48__7_8ring2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__48__7_8ring2(line=0.2);

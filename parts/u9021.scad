@@ -84,4 +84,6 @@ function ldraw_lib__u9021() = [
 // 3 16 0.781509 -1 3.92386 0 -1 0 0.780361 -1 -3.92314
   [3,16,0.781509,-1,3.92386,0,-1,0,0.780361,-1,-3.92314],
 ];
-makepoly(ldraw_lib__u9021(), line=0.2);
+module ldraw_lib__u9021(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__u9021(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__u9021(line=0.2);

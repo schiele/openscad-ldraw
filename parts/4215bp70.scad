@@ -82,4 +82,6 @@ function ldraw_lib__4215bp70() = [
 // 4 16 40 72 10 -40 72 10 -24.5 67.5 10 35.5 67.5 10
   [4,16,40,72,10,-40,72,10,-24.5,67.5,10,35.5,67.5,10],
 ];
-makepoly(ldraw_lib__4215bp70(), line=0.2);
+module ldraw_lib__4215bp70(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__4215bp70(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__4215bp70(line=0.2);

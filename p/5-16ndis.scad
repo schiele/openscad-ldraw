@@ -25,4 +25,6 @@ function ldraw_lib__5_16ndis() = [
   [3,16,-1,0,1,-0.3827,0,0.9239,0,0,1],
 // 0 // Build by Primitive Generator 2
 ];
-makepoly(ldraw_lib__5_16ndis(), line=0.2);
+module ldraw_lib__5_16ndis(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__5_16ndis(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__5_16ndis(line=0.2);

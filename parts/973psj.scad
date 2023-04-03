@@ -73,4 +73,6 @@ function ldraw_lib__973psj() = [
 // 4 0 9.55 8.72 -10 5.1 8.72 -10 5.1 9.4 -10 9.55 9.4 -10
   [4,0,9.55,8.72,-10,5.1,8.72,-10,5.1,9.4,-10,9.55,9.4,-10],
 ];
-makepoly(ldraw_lib__973psj(), line=0.2);
+module ldraw_lib__973psj(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973psj(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973psj(line=0.2);

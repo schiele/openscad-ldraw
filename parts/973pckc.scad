@@ -770,4 +770,6 @@ function ldraw_lib__973pckc() = [
 // 3 16 6.151 14.321 10 8.911 15.978 10 .325 20.224 10
   [3,16,6.151,14.321,10,8.911,15.978,10,.325,20.224,10],
 ];
-makepoly(ldraw_lib__973pckc(), line=0.2);
+module ldraw_lib__973pckc(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973pckc(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973pckc(line=0.2);

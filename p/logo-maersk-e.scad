@@ -33,4 +33,6 @@ function ldraw_lib__logo_maersk_e() = [
 // 4 16 1.95 0 .5 1.95 0 -.5 2.55 0 -1.6 2.55 0 1.7
   [4,16,1.95,0,.5,1.95,0,-.5,2.55,0,-1.6,2.55,0,1.7],
 ];
-makepoly(ldraw_lib__logo_maersk_e(), line=0.2);
+module ldraw_lib__logo_maersk_e(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__logo_maersk_e(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__logo_maersk_e(line=0.2);

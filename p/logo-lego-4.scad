@@ -3699,4 +3699,6 @@ function ldraw_lib__logo_lego_4() = [
 // 3 16 33.164 0 1.061 32.75 0 .901 32.953 0 .925
   [3,16,33.164,0,1.061,32.75,0,.901,32.953,0,.925],
 ];
-makepoly(ldraw_lib__logo_lego_4(), line=0.2);
+module ldraw_lib__logo_lego_4(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__logo_lego_4(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__logo_lego_4(line=0.2);

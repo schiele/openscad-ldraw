@@ -235,4 +235,6 @@ function ldraw_lib__3815bpa9() = [
 // 3 86 -9.1 1.6 -10 -1.1 2.8 -10 -1 1.6 -10
   [3,86,-9.1,1.6,-10,-1.1,2.8,-10,-1,1.6,-10],
 ];
-makepoly(ldraw_lib__3815bpa9(), line=0.2);
+module ldraw_lib__3815bpa9(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3815bpa9(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3815bpa9(line=0.2);

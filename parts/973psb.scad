@@ -433,4 +433,6 @@ function ldraw_lib__973psb() = [
 // 4 0 -9.25 11.98 -10 -9.29 11.28 -10 -9.82 11.13 -10 -9.64 11.92 -10
   [4,0,-9.25,11.98,-10,-9.29,11.28,-10,-9.82,11.13,-10,-9.64,11.92,-10],
 ];
-makepoly(ldraw_lib__973psb(), line=0.2);
+module ldraw_lib__973psb(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973psb(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973psb(line=0.2);

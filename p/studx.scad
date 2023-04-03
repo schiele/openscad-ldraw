@@ -130,4 +130,6 @@ function ldraw_lib__studx() = [
 // 4 16 -4 0 -1.5 -4 -4 -1.5 -4 -4 1.5 -4 0 1.5
   [4,16,-4,0,-1.5,-4,-4,-1.5,-4,-4,1.5,-4,0,1.5],
 ];
-makepoly(ldraw_lib__studx(), line=0.2);
+module ldraw_lib__studx(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__studx(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__studx(line=0.2);

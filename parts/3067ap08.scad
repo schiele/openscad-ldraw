@@ -373,4 +373,6 @@ function ldraw_lib__3067ap08() = [
 // 0 BFC CLIP
   [0,"BFC","CLIP"],
 ];
-makepoly(ldraw_lib__3067ap08(), line=0.2);
+module ldraw_lib__3067ap08(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3067ap08(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3067ap08(line=0.2);

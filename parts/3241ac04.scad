@@ -32,4 +32,6 @@ function ldraw_lib__3241ac04() = [
 // 1 8 739.104 16 -493.853 -0.92388 0 0.382683 0 1 0 -0.382683 0 -0.92388 767.dat
   [1,8,739.104,16,-493.853,-0.92388,0,0.382683,0,1,0,-0.382683,0,-0.92388, ldraw_lib__767()],
 ];
-makepoly(ldraw_lib__3241ac04(), line=0.2);
+module ldraw_lib__3241ac04(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3241ac04(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3241ac04(line=0.2);

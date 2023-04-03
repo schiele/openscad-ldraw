@@ -1952,4 +1952,6 @@ function ldraw_lib__3626cp8t() = [
 // 4 16 -8.9232 2.4691 8.9232 -4.8704 2.8981 11.7577 -4.9752 4 12.0106 -9.1924 4 9.1924
   [4,16,-8.9232,2.4691,8.9232,-4.8704,2.8981,11.7577,-4.9752,4,12.0106,-9.1924,4,9.1924],
 ];
-makepoly(ldraw_lib__3626cp8t(), line=0.2);
+module ldraw_lib__3626cp8t(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3626cp8t(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3626cp8t(line=0.2);

@@ -308,4 +308,6 @@ function ldraw_lib__s__71375s03() = [
 // 1 16 6.75 25.25 -40.25 -1.75 1 0 1.75 0 0 0 0 -12 rect1.dat
   [1,16,6.75,25.25,-40.25,-1.75,1,0,1.75,0,0,0,0,-12, ldraw_lib__rect1()],
 ];
-makepoly(ldraw_lib__s__71375s03(), line=0.2);
+module ldraw_lib__s__71375s03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__71375s03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__71375s03(line=0.2);

@@ -1531,4 +1531,6 @@ function ldraw_lib__973pbj() = [
 // 4 16 0 0.6 10 -9.361 0.873 10 -12 0 10 12 0 10
   [4,16,0,0.6,10,-9.361,0.873,10,-12,0,10,12,0,10],
 ];
-makepoly(ldraw_lib__973pbj(), line=0.2);
+module ldraw_lib__973pbj(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973pbj(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973pbj(line=0.2);

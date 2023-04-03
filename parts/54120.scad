@@ -174,4 +174,6 @@ function ldraw_lib__54120() = [
   [1,16,0,0,55,5.92448,0,0,0,0,-5.92448,0,-9,0, ldraw_lib__48__4_4con12()],
 // 0 //
 ];
-makepoly(ldraw_lib__54120(), line=0.2);
+module ldraw_lib__54120(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__54120(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__54120(line=0.2);

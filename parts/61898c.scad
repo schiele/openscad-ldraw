@@ -172,4 +172,6 @@ function ldraw_lib__61898c() = [
 // 1 16 106 0.5 -81.35435 73.6775 0 0 0 0 0.5 -73.67685 -1 0 rect2p.dat
   [1,16,106,0.5,-81.35435,73.6775,0,0,0,0,0.5,-73.67685,-1,0, ldraw_lib__rect2p()],
 ];
-makepoly(ldraw_lib__61898c(), line=0.2);
+module ldraw_lib__61898c(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__61898c(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__61898c(line=0.2);

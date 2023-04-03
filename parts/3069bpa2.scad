@@ -475,4 +475,6 @@ function ldraw_lib__3069bpa2() = [
   [1,0,16.4,0,-7.3,0,0,0.6,0,1,0,-0.6,0,0, ldraw_lib__4_4ring1()],
 // 0
 ];
-makepoly(ldraw_lib__3069bpa2(), line=0.2);
+module ldraw_lib__3069bpa2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3069bpa2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3069bpa2(line=0.2);

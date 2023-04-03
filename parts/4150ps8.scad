@@ -4003,4 +4003,6 @@ function ldraw_lib__4150ps8() = [
 // 3 16 -8.03 0 -0.841 -8.219 0 -0.841 -8.219 0 -1.515
   [3,16,-8.03,0,-0.841,-8.219,0,-0.841,-8.219,0,-1.515],
 ];
-makepoly(ldraw_lib__4150ps8(), line=0.2);
+module ldraw_lib__4150ps8(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__4150ps8(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__4150ps8(line=0.2);

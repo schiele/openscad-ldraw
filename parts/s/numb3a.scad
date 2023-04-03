@@ -58,4 +58,6 @@ function ldraw_lib__s__numb3a() = [
   [4,16,-4.4,18.2,-10,-6,18,-10,-4.8,15.65,-10,-3.8,16.7,-10],
 // 0
 ];
-makepoly(ldraw_lib__s__numb3a(), line=0.2);
+module ldraw_lib__s__numb3a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__numb3a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__numb3a(line=0.2);

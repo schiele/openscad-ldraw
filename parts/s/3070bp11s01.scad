@@ -120,4 +120,6 @@ function ldraw_lib__s__3070bp11s01() = [
 // 3 16 -10 0 10 -2.28 0 8.95 -1.5 0 9
   [3,16,-10,0,10,-2.28,0,8.95,-1.5,0,9],
 ];
-makepoly(ldraw_lib__s__3070bp11s01(), line=0.2);
+module ldraw_lib__s__3070bp11s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__3070bp11s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__3070bp11s01(line=0.2);

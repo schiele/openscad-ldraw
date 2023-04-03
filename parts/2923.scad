@@ -107,4 +107,6 @@ function ldraw_lib__2923() = [
 // 1 16 0 0 -20 0 0 1 1 0 0 0 -1 0 h2.dat
   [1,16,0,0,-20,0,0,1,1,0,0,0,-1,0, ldraw_lib__h2()],
 ];
-makepoly(ldraw_lib__2923(), line=0.2);
+module ldraw_lib__2923(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__2923(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__2923(line=0.2);

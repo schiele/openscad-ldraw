@@ -74,4 +74,6 @@ function ldraw_lib__s__2541s02() = [
 // 1 16 0 4 0 -0.148032 0 3.99726 0 -4 0 3.99726 0 0.148032 4-4disc.dat
   [1,16,0,4,0,-0.148032,0,3.99726,0,-4,0,3.99726,0,0.148032, ldraw_lib__4_4disc()],
 ];
-makepoly(ldraw_lib__s__2541s02(), line=0.2);
+module ldraw_lib__s__2541s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__2541s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__2541s02(line=0.2);

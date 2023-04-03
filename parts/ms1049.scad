@@ -331,4 +331,6 @@ function ldraw_lib__ms1049() = [
 // 5 24 -19.46 8 -12.23 -19.46 12 -12.23 -16.75 8 -10.75 -20.0467 8 -12.7425
   [5,24,-19.46,8,-12.23,-19.46,12,-12.23,-16.75,8,-10.75,-20.0467,8,-12.7425],
 ];
-makepoly(ldraw_lib__ms1049(), line=0.2);
+module ldraw_lib__ms1049(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__ms1049(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__ms1049(line=0.2);

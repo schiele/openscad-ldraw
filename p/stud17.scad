@@ -37,4 +37,6 @@ function ldraw_lib__stud17() = [
 // 2 24 5.2202 0 2.7798 5.5434 0 2.2962
   [2,24,5.2202,0,2.7798,5.5434,0,2.2962],
 ];
-makepoly(ldraw_lib__stud17(), line=0.2);
+module ldraw_lib__stud17(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__stud17(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__stud17(line=0.2);

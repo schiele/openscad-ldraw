@@ -321,4 +321,6 @@ function ldraw_lib__4023() = [
   [4,16,-20,12,-40,-20,7,-38,-20,7,-30,-20,8,-20],
 // 0
 ];
-makepoly(ldraw_lib__4023(), line=0.2);
+module ldraw_lib__4023(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__4023(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__4023(line=0.2);

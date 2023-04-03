@@ -25,4 +25,6 @@ function ldraw_lib__s__3070batf() = [
   [4,16,-3.5,0,1.5,4.5,0,1.5,4.5,0,-0.5,-3.5,0,-0.5],
 // 0
 ];
-makepoly(ldraw_lib__s__3070batf(), line=0.2);
+module ldraw_lib__s__3070batf(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__3070batf(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__3070batf(line=0.2);

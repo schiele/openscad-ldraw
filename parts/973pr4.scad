@@ -265,4 +265,6 @@ function ldraw_lib__973pr4() = [
 // 4 0x2995220 -6.9 10 -10 -7.359 9.81 -10 -7.397 10 -10 -7.359 10.19 -10
   [4,43602464,-6.9,10,-10,-7.359,9.81,-10,-7.397,10,-10,-7.359,10.19,-10],
 ];
-makepoly(ldraw_lib__973pr4(), line=0.2);
+module ldraw_lib__973pr4(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973pr4(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973pr4(line=0.2);

@@ -162,4 +162,6 @@ function ldraw_lib__3010pzl() = [
 // 4 16 -31 9.5 -10 -36.5 9.5 -10 -36.5 24 -10 -31 24 -10
   [4,16,-31,9.5,-10,-36.5,9.5,-10,-36.5,24,-10,-31,24,-10],
 ];
-makepoly(ldraw_lib__3010pzl(), line=0.2);
+module ldraw_lib__3010pzl(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3010pzl(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3010pzl(line=0.2);

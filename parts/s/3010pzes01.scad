@@ -490,4 +490,6 @@ function ldraw_lib__s__3010pzes01() = [
 // 4 80 -3.25 6.3 0 -0.201 17.909 0 0 18 0 0 4.292 0
   [4,80,-3.25,6.3,0,-0.201,17.909,0,0,18,0,0,4.292,0],
 ];
-makepoly(ldraw_lib__s__3010pzes01(), line=0.2);
+module ldraw_lib__s__3010pzes01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__3010pzes01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__3010pzes01(line=0.2);

@@ -291,4 +291,6 @@ function ldraw_lib__u9420() = [
 // 4 16 1 24 -53 1 24 -48.4853 1 32.4853 -40 1 37 -40
   [4,16,1,24,-53,1,24,-48.4853,1,32.4853,-40,1,37,-40],
 ];
-makepoly(ldraw_lib__u9420(), line=0.2);
+module ldraw_lib__u9420(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__u9420(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__u9420(line=0.2);

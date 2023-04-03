@@ -3283,4 +3283,6 @@ function ldraw_lib__3039ps2() = [
 // 3 82 3.954 2.973 -12.973 4.061 3.156 -13.156 4.099 3.166 -13.166
   [3,82,3.954,2.973,-12.973,4.061,3.156,-13.156,4.099,3.166,-13.166],
 ];
-makepoly(ldraw_lib__3039ps2(), line=0.2);
+module ldraw_lib__3039ps2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3039ps2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3039ps2(line=0.2);

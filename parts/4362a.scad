@@ -653,4 +653,6 @@ function ldraw_lib__4362a() = [
 // 5 24 -8 10 -134 -12 10 -134 -12 12 -120 -8 10 -138
   [5,24,-8,10,-134,-12,10,-134,-12,12,-120,-8,10,-138],
 ];
-makepoly(ldraw_lib__4362a(), line=0.2);
+module ldraw_lib__4362a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__4362a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__4362a(line=0.2);

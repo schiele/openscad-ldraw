@@ -372,4 +372,6 @@ function ldraw_lib__2362ap53() = [
 // 3 16 8.95 36 10 8.95 62.7 10 6.507 46.3 10
   [3,16,8.95,36,10,8.95,62.7,10,6.507,46.3,10],
 ];
-makepoly(ldraw_lib__2362ap53(), line=0.2);
+module ldraw_lib__2362ap53(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__2362ap53(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__2362ap53(line=0.2);

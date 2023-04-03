@@ -2020,4 +2020,6 @@ function ldraw_lib__2488() = [
 // 5 24 2.882 -118.152 -93.043 2.296 -118 -94.457 0 -118 -88 5.325 -118.152 -94.675
   [5,24,2.882,-118.152,-93.043,2.296,-118,-94.457,0,-118,-88,5.325,-118.152,-94.675],
 ];
-makepoly(ldraw_lib__2488(), line=0.2);
+module ldraw_lib__2488(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__2488(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__2488(line=0.2);

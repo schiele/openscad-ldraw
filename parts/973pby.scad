@@ -1814,4 +1814,6 @@ function ldraw_lib__973pby() = [
 // 4 0 9.306 5.488 -10 8.937 4.898 -10 8.574 4.986 -10 8.889 5.726 -10
   [4,0,9.306,5.488,-10,8.937,4.898,-10,8.574,4.986,-10,8.889,5.726,-10],
 ];
-makepoly(ldraw_lib__973pby(), line=0.2);
+module ldraw_lib__973pby(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973pby(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973pby(line=0.2);

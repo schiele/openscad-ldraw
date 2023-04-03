@@ -370,4 +370,6 @@ function ldraw_lib__s__3010pzas01() = [
 // 4 16 -40 24 0 0 24 0 -6.437 23.062 0 -6.632 23.047 0
   [4,16,-40,24,0,0,24,0,-6.437,23.062,0,-6.632,23.047,0],
 ];
-makepoly(ldraw_lib__s__3010pzas01(), line=0.2);
+module ldraw_lib__s__3010pzas01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__3010pzas01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__3010pzas01(line=0.2);

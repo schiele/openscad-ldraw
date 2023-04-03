@@ -150,4 +150,6 @@ function ldraw_lib__s__3846p4lb() = [
 // 4 16 -3.9771 2.4793 0 -3.9061 3.0216 0 -3.4348 2.5568 0 -3.2798 2.0661 0
   [4,16,-3.9771,2.4793,0,-3.9061,3.0216,0,-3.4348,2.5568,0,-3.2798,2.0661,0],
 ];
-makepoly(ldraw_lib__s__3846p4lb(), line=0.2);
+module ldraw_lib__s__3846p4lb(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__3846p4lb(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__3846p4lb(line=0.2);

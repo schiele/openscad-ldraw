@@ -103,4 +103,6 @@ function ldraw_lib__toothl() = [
 // 5 24 -3 -4 10 3 -4 10 -4.5 -3 5 6 -2 16
   [5,24,-3,-4,10,3,-4,10,-4.5,-3,5,6,-2,16],
 ];
-makepoly(ldraw_lib__toothl(), line=0.2);
+module ldraw_lib__toothl(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__toothl(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__toothl(line=0.2);

@@ -1397,4 +1397,6 @@ function ldraw_lib__30361aps4() = [
 // 4 0 -10.831 26 -16.351 -10.329 26 -16.686 -10.329 23.6 -16.686 -10.831 23.6 -16.351
   [4,0,-10.831,26,-16.351,-10.329,26,-16.686,-10.329,23.6,-16.686,-10.831,23.6,-16.351],
 ];
-makepoly(ldraw_lib__30361aps4(), line=0.2);
+module ldraw_lib__30361aps4(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__30361aps4(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__30361aps4(line=0.2);

@@ -471,4 +471,6 @@ function ldraw_lib__s__553ps2a() = [
   [5,24,17.4937,9.698,-7.2461,18.935,9.698,0,14.689,4.356,-6.084,18.4776,16,-7.6537],
 // 0
 ];
-makepoly(ldraw_lib__s__553ps2a(), line=0.2);
+module ldraw_lib__s__553ps2a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__553ps2a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__553ps2a(line=0.2);

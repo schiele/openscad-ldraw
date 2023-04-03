@@ -188,4 +188,6 @@ function ldraw_lib__48__tm08o2000() = [
 // 5 24 0.7612 0.1848 0.7612 0.7071 0.2 0.7071 0.8541 0.1848 0.6554 0.661 0.1848 0.8614
   [5,24,0.7612,0.1848,0.7612,0.7071,0.2,0.7071,0.8541,0.1848,0.6554,0.661,0.1848,0.8614],
 ];
-makepoly(ldraw_lib__48__tm08o2000(), line=0.2);
+module ldraw_lib__48__tm08o2000(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__48__tm08o2000(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__48__tm08o2000(line=0.2);

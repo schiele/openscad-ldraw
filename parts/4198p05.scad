@@ -1034,4 +1034,6 @@ function ldraw_lib__4198p05() = [
 // 3 16 42.39 31.34 -40 42.85 33.65 -40 52.41 42.38 -40
   [3,16,42.39,31.34,-40,42.85,33.65,-40,52.41,42.38,-40],
 ];
-makepoly(ldraw_lib__4198p05(), line=0.2);
+module ldraw_lib__4198p05(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__4198p05(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__4198p05(line=0.2);

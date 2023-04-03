@@ -52,4 +52,6 @@ function ldraw_lib__98223() = [
 // 1 16 -32 48 40 -48 0 0 0 0 -48.8 0 -1 0 48\5-24chrd.dat
   [1,16,-32,48,40,-48,0,0,0,0,-48.8,0,-1,0, ldraw_lib__48__5_24chrd()],
 ];
-makepoly(ldraw_lib__98223(), line=0.2);
+module ldraw_lib__98223(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__98223(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__98223(line=0.2);

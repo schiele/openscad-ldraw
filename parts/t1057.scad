@@ -96,4 +96,6 @@ function ldraw_lib__t1057() = [
 // 1 494 -9 0 38 0.5 0 0 0 0 2 0 3 0 box5.dat
   [1,494,-9,0,38,0.5,0,0,0,0,2,0,3,0, ldraw_lib__box5()],
 ];
-makepoly(ldraw_lib__t1057(), line=0.2);
+module ldraw_lib__t1057(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__t1057(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__t1057(line=0.2);

@@ -48,4 +48,6 @@ function ldraw_lib__3005ptp() = [
   [4,16,10,0,-10,5,5,-10,-5,5,-10,-10,0,-10],
 // 0
 ];
-makepoly(ldraw_lib__3005ptp(), line=0.2);
+module ldraw_lib__3005ptp(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3005ptp(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3005ptp(line=0.2);

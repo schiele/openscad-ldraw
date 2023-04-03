@@ -176,4 +176,6 @@ function ldraw_lib__866() = [
 // 1 494 113.779 12 -57.888 0.938191 0 0.346117 0 1 0 -0.346117 0 0.938191 s\3241s08.dat
   [1,494,113.779,12,-57.888,0.938191,0,0.346117,0,1,0,-0.346117,0,0.938191, ldraw_lib__s__3241s08()],
 ];
-makepoly(ldraw_lib__866(), line=0.2);
+module ldraw_lib__866(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__866(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__866(line=0.2);

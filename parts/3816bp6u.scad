@@ -610,4 +610,6 @@ function ldraw_lib__3816bp6u() = [
 // 3 0 -9.87 -2.891 -8.175 -10.29 -2.89 -8.175 -10.29 -2.471 -8.259
   [3,0,-9.87,-2.891,-8.175,-10.29,-2.89,-8.175,-10.29,-2.471,-8.259],
 ];
-makepoly(ldraw_lib__3816bp6u(), line=0.2);
+module ldraw_lib__3816bp6u(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3816bp6u(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3816bp6u(line=0.2);

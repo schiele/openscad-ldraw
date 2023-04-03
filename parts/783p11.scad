@@ -237,4 +237,6 @@ function ldraw_lib__783p11() = [
   [4,15,6.516,-103.993,-1.5,28,-112.7,-1.5,28,-110.7,-1.5,9,-103,-1.5],
 // 0 // end of file
 ];
-makepoly(ldraw_lib__783p11(), line=0.2);
+module ldraw_lib__783p11(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__783p11(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__783p11(line=0.2);

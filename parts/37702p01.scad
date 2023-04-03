@@ -27,4 +27,6 @@ function ldraw_lib__37702p01() = [
 // 1 82 -18 8 0 4 0 0 0 -2 0 0 0 -2.5 box5.dat
   [1,82,-18,8,0,4,0,0,0,-2,0,0,0,-2.5, ldraw_lib__box5()],
 ];
-makepoly(ldraw_lib__37702p01(), line=0.2);
+module ldraw_lib__37702p01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__37702p01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__37702p01(line=0.2);

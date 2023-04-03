@@ -41,4 +41,6 @@ function ldraw_lib__3070bptp() = [
   [4,16,-3.5,0,5.5,1,0,5.5,1,0,0.5,-3.5,0,0.5],
 // 
 ];
-makepoly(ldraw_lib__3070bptp(), line=0.2);
+module ldraw_lib__3070bptp(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3070bptp(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3070bptp(line=0.2);

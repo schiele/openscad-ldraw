@@ -146,4 +146,6 @@ function ldraw_lib__s__3245cpz7s01() = [
 // 3 16 6.75 30.5 -10 5.5 18 -10 3.675 17.5 -10
   [3,16,6.75,30.5,-10,5.5,18,-10,3.675,17.5,-10],
 ];
-makepoly(ldraw_lib__s__3245cpz7s01(), line=0.2);
+module ldraw_lib__s__3245cpz7s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__3245cpz7s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__3245cpz7s01(line=0.2);

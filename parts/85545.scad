@@ -27,4 +27,6 @@ function ldraw_lib__85545() = [
 // 1 16 0 0 0 0 0 -32.5 32.5 0 0 0 -32.5 0 t04q0625.dat
   [1,16,0,0,0,0,0,-32.5,32.5,0,0,0,-32.5,0, ldraw_lib__t04q0625()],
 ];
-makepoly(ldraw_lib__85545(), line=0.2);
+module ldraw_lib__85545(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__85545(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__85545(line=0.2);

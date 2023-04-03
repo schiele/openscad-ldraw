@@ -105,4 +105,6 @@ function ldraw_lib__s__3817p8is02() = [
 // 3 16 18 22 -11 12.5 22 -11 15.4 26 -11
   [3,16,18,22,-11,12.5,22,-11,15.4,26,-11],
 ];
-makepoly(ldraw_lib__s__3817p8is02(), line=0.2);
+module ldraw_lib__s__3817p8is02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__3817p8is02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__3817p8is02(line=0.2);

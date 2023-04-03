@@ -2019,4 +2019,6 @@ function ldraw_lib__4613908i() = [
 // 3 28 -0.61 -0.25 -15.19 -1.92 -0.25 -18.23 0.77 -0.25 -15.26
   [3,28,-0.61,-0.25,-15.19,-1.92,-0.25,-18.23,0.77,-0.25,-15.26],
 ];
-makepoly(ldraw_lib__4613908i(), line=0.2);
+module ldraw_lib__4613908i(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__4613908i(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__4613908i(line=0.2);

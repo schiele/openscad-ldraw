@@ -1501,4 +1501,6 @@ function ldraw_lib__87079pz4() = [
 // 4 15 33.5 0 13.5 32 0 11.2 32.5 0 11.2 34 0 13
   [4,15,33.5,0,13.5,32,0,11.2,32.5,0,11.2,34,0,13],
 ];
-makepoly(ldraw_lib__87079pz4(), line=0.2);
+module ldraw_lib__87079pz4(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__87079pz4(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__87079pz4(line=0.2);

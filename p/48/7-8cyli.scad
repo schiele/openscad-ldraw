@@ -185,4 +185,6 @@ function ldraw_lib__48__7_8cyli() = [
   [5,24,0.7071,1,-0.7071,0.7071,0,-0.7071,0.6088,1,-0.7934,0.7934,1,-0.6088],
 // 0
 ];
-makepoly(ldraw_lib__48__7_8cyli(), line=0.2);
+module ldraw_lib__48__7_8cyli(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__48__7_8cyli(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__48__7_8cyli(line=0.2);

@@ -164,4 +164,6 @@ function ldraw_lib__typestum() = [
 // 4 16 4.84 0 3.67 4.84 0 -3.67 5.3 0 -4.16 5.3 0 4.16
   [4,16,4.84,0,3.67,4.84,0,-3.67,5.3,0,-4.16,5.3,0,4.16],
 ];
-makepoly(ldraw_lib__typestum(), line=0.2);
+module ldraw_lib__typestum(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__typestum(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__typestum(line=0.2);

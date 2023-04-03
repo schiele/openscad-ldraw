@@ -1337,4 +1337,6 @@ function ldraw_lib__3010pzf() = [
 // 4 87 14.249 12.435 -10 10.165 12.435 -10 10.148 12.785 -10 14.203 12.785 -10
   [4,87,14.249,12.435,-10,10.165,12.435,-10,10.148,12.785,-10,14.203,12.785,-10],
 ];
-makepoly(ldraw_lib__3010pzf(), line=0.2);
+module ldraw_lib__3010pzf(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3010pzf(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3010pzf(line=0.2);

@@ -450,4 +450,6 @@ function ldraw_lib__u66p01() = [
 // 4 16 83.571 -0.125 62.532 84.356 -0.125 64.397 84.075 -0.125 66.372 83.403 -0.125 68.984
   [4,16,83.571,-0.125,62.532,84.356,-0.125,64.397,84.075,-0.125,66.372,83.403,-0.125,68.984],
 ];
-makepoly(ldraw_lib__u66p01(), line=0.2);
+module ldraw_lib__u66p01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__u66p01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__u66p01(line=0.2);

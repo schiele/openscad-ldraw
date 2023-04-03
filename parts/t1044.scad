@@ -123,4 +123,6 @@ function ldraw_lib__t1044() = [
 // 5 24 3.0615 -5 7.391 3.0615 0 7.391 1 0 8 5.657 0 5.657
   [5,24,3.0615,-5,7.391,3.0615,0,7.391,1,0,8,5.657,0,5.657],
 ];
-makepoly(ldraw_lib__t1044(), line=0.2);
+module ldraw_lib__t1044(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__t1044(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__t1044(line=0.2);

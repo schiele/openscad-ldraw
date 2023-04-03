@@ -503,4 +503,6 @@ function ldraw_lib__973p7r() = [
 // 3 16 4.5 13.7 -10 4.3 14 -10 4.5 15.4 -10
   [3,16,4.5,13.7,-10,4.3,14,-10,4.5,15.4,-10],
 ];
-makepoly(ldraw_lib__973p7r(), line=0.2);
+module ldraw_lib__973p7r(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973p7r(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973p7r(line=0.2);

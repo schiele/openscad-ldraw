@@ -491,4 +491,6 @@ function ldraw_lib__48__t08o0625() = [
   [5,24,0.7509,0.0082,0.7509,0.7513,0,0.7513,0.652,0.0082,0.8498,0.8426,0.0082,0.6465],
 // 0 // Build by Primitive Generator 2
 ];
-makepoly(ldraw_lib__48__t08o0625(), line=0.2);
+module ldraw_lib__48__t08o0625(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__48__t08o0625(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__48__t08o0625(line=0.2);

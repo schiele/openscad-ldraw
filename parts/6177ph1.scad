@@ -5907,4 +5907,6 @@ function ldraw_lib__6177ph1() = [
 // 3 1 -9.918 0 71.3 -19.042 0 70.857 -7.6 0 63.2
   [3,1,-9.918,0,71.3,-19.042,0,70.857,-7.6,0,63.2],
 ];
-makepoly(ldraw_lib__6177ph1(), line=0.2);
+module ldraw_lib__6177ph1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__6177ph1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__6177ph1(line=0.2);

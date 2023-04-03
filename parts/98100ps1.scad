@@ -978,4 +978,6 @@ function ldraw_lib__98100ps1() = [
 // 5 24 13.397 0 -5.549 18.478 16 -7.654 10.253 0 -10.253 14.5 0 0
   [5,24,13.397,0,-5.549,18.478,16,-7.654,10.253,0,-10.253,14.5,0,0],
 ];
-makepoly(ldraw_lib__98100ps1(), line=0.2);
+module ldraw_lib__98100ps1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__98100ps1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__98100ps1(line=0.2);

@@ -36,4 +36,6 @@ function ldraw_lib__87079pxf() = [
   [4,0,38.5,0,-18.5,38.5,0,18.5,-38.5,0,18.5,-38.5,0,-18.5],
 // 0 !TEXMAP END
 ];
-makepoly(ldraw_lib__87079pxf(), line=0.2);
+module ldraw_lib__87079pxf(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__87079pxf(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__87079pxf(line=0.2);

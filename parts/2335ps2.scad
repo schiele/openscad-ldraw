@@ -150,4 +150,6 @@ function ldraw_lib__2335ps2() = [
   [4,0,2,33.571,48.5,2,34.071,48.5,2,36.927,29,2,36.427,28.769],
 // 0
 ];
-makepoly(ldraw_lib__2335ps2(), line=0.2);
+module ldraw_lib__2335ps2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__2335ps2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__2335ps2(line=0.2);

@@ -920,4 +920,6 @@ function ldraw_lib__973pd13() = [
 // 3 10 16.35 25.7 10 15.1 24.25 10 14.9 12.6 10
   [3,10,16.35,25.7,10,15.1,24.25,10,14.9,12.6,10],
 ];
-makepoly(ldraw_lib__973pd13(), line=0.2);
+module ldraw_lib__973pd13(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973pd13(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973pd13(line=0.2);

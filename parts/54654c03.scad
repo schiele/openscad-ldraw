@@ -32,4 +32,6 @@ function ldraw_lib__54654c03() = [
 // 1 0 0 54.994 241.5 -1 0 0 0 -1 0 0 0 1 u9288.dat
   [1,0,0,54.994,241.5,-1,0,0,0,-1,0,0,0,1, ldraw_lib__u9288()],
 ];
-makepoly(ldraw_lib__54654c03(), line=0.2);
+module ldraw_lib__54654c03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__54654c03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__54654c03(line=0.2);

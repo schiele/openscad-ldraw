@@ -47,4 +47,6 @@ function ldraw_lib__30552() = [
 // 1 16 0 0 0 -2.77164 0 1.14805 1.14805 0 2.77164 0 1 0 3-8ring2.dat
   [1,16,0,0,0,-2.77164,0,1.14805,1.14805,0,2.77164,0,1,0, ldraw_lib__3_8ring2()],
 ];
-makepoly(ldraw_lib__30552(), line=0.2);
+module ldraw_lib__30552(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__30552(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__30552(line=0.2);

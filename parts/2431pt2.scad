@@ -38,4 +38,6 @@ function ldraw_lib__2431pt2() = [
   [4,16,35,0,10,35,0,-10,40,0,-10,40,0,10],
 // 0
 ];
-makepoly(ldraw_lib__2431pt2(), line=0.2);
+module ldraw_lib__2431pt2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__2431pt2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__2431pt2(line=0.2);

@@ -186,4 +186,6 @@ function ldraw_lib__8__stud4f2s() = [
 // 4 16 7.357 -4 1.5 7.357 -4 -1.5 8 -4 -1.5 8 -4 1.5
   [4,16,7.357,-4,1.5,7.357,-4,-1.5,8,-4,-1.5,8,-4,1.5],
 ];
-makepoly(ldraw_lib__8__stud4f2s(), line=0.2);
+module ldraw_lib__8__stud4f2s(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__8__stud4f2s(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__8__stud4f2s(line=0.2);

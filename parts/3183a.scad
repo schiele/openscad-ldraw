@@ -1164,4 +1164,6 @@ function ldraw_lib__3183a() = [
 // 5 24 11.83 6 -14 13 8 -11 13 0 -11 11.31 8 -14
   [5,24,11.83,6,-14,13,8,-11,13,0,-11,11.31,8,-14],
 ];
-makepoly(ldraw_lib__3183a(), line=0.2);
+module ldraw_lib__3183a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3183a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3183a(line=0.2);

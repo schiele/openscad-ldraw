@@ -482,4 +482,6 @@ function ldraw_lib__973p8i() = [
 // 3 80 12.2532 25.8796 10 17.5575 25.8758 10 18.4124 30.0073 10
   [3,80,12.2532,25.8796,10,17.5575,25.8758,10,18.4124,30.0073,10],
 ];
-makepoly(ldraw_lib__973p8i(), line=0.2);
+module ldraw_lib__973p8i(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973p8i(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973p8i(line=0.2);

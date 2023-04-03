@@ -111,4 +111,6 @@ function ldraw_lib__6596() = [
 // 1 16 0 0 6 6.96144 0 0 0 0 6.96144 0 8 0 48\4-4con13.dat
   [1,16,0,0,6,6.96144,0,0,0,0,6.96144,0,8,0, ldraw_lib__48__4_4con13()],
 ];
-makepoly(ldraw_lib__6596(), line=0.2);
+module ldraw_lib__6596(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__6596(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__6596(line=0.2);

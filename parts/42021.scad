@@ -126,4 +126,6 @@ function ldraw_lib__42021() = [
   [5,24,28,44,100,60,28,100,28,44,140,26.316,44,83.158],
 // 
 ];
-makepoly(ldraw_lib__42021(), line=0.2);
+module ldraw_lib__42021(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__42021(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__42021(line=0.2);

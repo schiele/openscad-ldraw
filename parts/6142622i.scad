@@ -37,4 +37,6 @@ function ldraw_lib__6142622i() = [
 // 1 16 0 0 0 0 0 -1 0 1 0 1 0 0 s\6142622is07.dat
   [1,16,0,0,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__s__6142622is07()],
 ];
-makepoly(ldraw_lib__6142622i(), line=0.2);
+module ldraw_lib__6142622i(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__6142622i(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__6142622i(line=0.2);

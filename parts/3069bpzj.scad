@@ -441,4 +441,6 @@ function ldraw_lib__3069bpzj() = [
 // 4 16 15 0 -9 13.66 0 -8.7 6.84 0 -8.7 5.5 0 -9
   [4,16,15,0,-9,13.66,0,-8.7,6.84,0,-8.7,5.5,0,-9],
 ];
-makepoly(ldraw_lib__3069bpzj(), line=0.2);
+module ldraw_lib__3069bpzj(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3069bpzj(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3069bpzj(line=0.2);

@@ -897,4 +897,6 @@ function ldraw_lib__3039pci() = [
 // 3 15 13.675 14.241 -24.241 14.136 14.239 -24.239 13.634 14.103 -24.103
   [3,15,13.675,14.241,-24.241,14.136,14.239,-24.239,13.634,14.103,-24.103],
 ];
-makepoly(ldraw_lib__3039pci(), line=0.2);
+module ldraw_lib__3039pci(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3039pci(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3039pci(line=0.2);

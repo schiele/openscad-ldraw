@@ -32,4 +32,6 @@ function ldraw_lib__48__1_16con19() = [
   [5,24,17.5541,1,7.2713,18.478,0,7.654,18.3526,1,4.9176,16.5965,1,9.582],
 // 0 // Build by Primitive Generator 2
 ];
-makepoly(ldraw_lib__48__1_16con19(), line=0.2);
+module ldraw_lib__48__1_16con19(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__48__1_16con19(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__48__1_16con19(line=0.2);

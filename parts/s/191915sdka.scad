@@ -144,4 +144,6 @@ function ldraw_lib__s__191915sdka() = [
 // 4 16 40.1 0 10.8 40 0 17.6 29.5 0 17.6 29.5 0 10.8
   [4,16,40.1,0,10.8,40,0,17.6,29.5,0,17.6,29.5,0,10.8],
 ];
-makepoly(ldraw_lib__s__191915sdka(), line=0.2);
+module ldraw_lib__s__191915sdka(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__191915sdka(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__191915sdka(line=0.2);

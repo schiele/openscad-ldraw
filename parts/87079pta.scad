@@ -2083,4 +2083,6 @@ function ldraw_lib__87079pta() = [
 // 3 272 15.3 0 -10.4 15 0 -10.7 15.2 0 -11.4
   [3,272,15.3,0,-10.4,15,0,-10.7,15.2,0,-11.4],
 ];
-makepoly(ldraw_lib__87079pta(), line=0.2);
+module ldraw_lib__87079pta(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__87079pta(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__87079pta(line=0.2);

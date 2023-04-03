@@ -30,4 +30,6 @@ function ldraw_lib__1_4ring3() = [
 // 4 16 1.5308 0 3.6956 0 0 4 0 0 3 1.1481 0 2.7717
   [4,16,1.5308,0,3.6956,0,0,4,0,0,3,1.1481,0,2.7717],
 ];
-makepoly(ldraw_lib__1_4ring3(), line=0.2);
+module ldraw_lib__1_4ring3(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__1_4ring3(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__1_4ring3(line=0.2);

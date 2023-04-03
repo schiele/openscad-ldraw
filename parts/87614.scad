@@ -218,4 +218,6 @@ function ldraw_lib__87614() = [
 // 1 16 0 -3.289 -68.205 0 0 -4 3.29024 3.29036 0 2.27471 -4.75934 0 4-4cylse.dat
   [1,16,0,-3.289,-68.205,0,0,-4,3.29024,3.29036,0,2.27471,-4.75934,0, ldraw_lib__4_4cylse()],
 ];
-makepoly(ldraw_lib__87614(), line=0.2);
+module ldraw_lib__87614(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__87614(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__87614(line=0.2);

@@ -755,4 +755,6 @@ function ldraw_lib__31925() = [
 // 1 16 0 -139 0 0 0 -8 0 1 0 8 0 0 4-4edge.dat
   [1,16,0,-139,0,0,0,-8,0,1,0,8,0,0, ldraw_lib__4_4edge()],
 ];
-makepoly(ldraw_lib__31925(), line=0.2);
+module ldraw_lib__31925(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__31925(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__31925(line=0.2);

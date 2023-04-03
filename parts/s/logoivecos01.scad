@@ -1162,4 +1162,6 @@ function ldraw_lib__s__logoivecos01() = [
 // 3 16 -7 0 -2.05 -7.6017 0 -1.9405 -7.6475 0 -1.945
   [3,16,-7,0,-2.05,-7.6017,0,-1.9405,-7.6475,0,-1.945],
 ];
-makepoly(ldraw_lib__s__logoivecos01(), line=0.2);
+module ldraw_lib__s__logoivecos01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__logoivecos01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__logoivecos01(line=0.2);

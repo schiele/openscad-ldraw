@@ -1351,4 +1351,6 @@ function ldraw_lib__973pug() = [
 // 3 16 1.0439 8.8705 -10 1.0926 9.052 -10 1.2 8.85 -10
   [3,16,1.0439,8.8705,-10,1.0926,9.052,-10,1.2,8.85,-10],
 ];
-makepoly(ldraw_lib__973pug(), line=0.2);
+module ldraw_lib__973pug(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973pug(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973pug(line=0.2);

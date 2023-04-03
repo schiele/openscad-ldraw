@@ -641,4 +641,6 @@ function ldraw_lib__973ph3() = [
 // 4 288 11.852 21.103 -10 12.109 13.294 -10 11.153 21.978 -10 11.489 23.73 -10
   [4,288,11.852,21.103,-10,12.109,13.294,-10,11.153,21.978,-10,11.489,23.73,-10],
 ];
-makepoly(ldraw_lib__973ph3(), line=0.2);
+module ldraw_lib__973ph3(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973ph3(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973ph3(line=0.2);

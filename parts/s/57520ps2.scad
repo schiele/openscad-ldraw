@@ -149,4 +149,6 @@ function ldraw_lib__s__57520ps2() = [
   [4,0,-20.653,-8.0259,0,-21.036,-7.9237,0,-20.8551,-7.924,-2.7452,-20.4754,-8.0261,-2.6952],
 // 0 //
 ];
-makepoly(ldraw_lib__s__57520ps2(), line=0.2);
+module ldraw_lib__s__57520ps2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__57520ps2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__57520ps2(line=0.2);

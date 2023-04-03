@@ -240,4 +240,6 @@ function ldraw_lib__typestuo() = [
 // 4 16 0.29 0 -4.22 -0.29 0 -4.22 -0.29 0 -5 0.29 0 -5
   [4,16,0.29,0,-4.22,-0.29,0,-4.22,-0.29,0,-5,0.29,0,-5],
 ];
-makepoly(ldraw_lib__typestuo(), line=0.2);
+module ldraw_lib__typestuo(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__typestuo(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__typestuo(line=0.2);

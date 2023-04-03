@@ -25,4 +25,6 @@ function ldraw_lib__1_4edge() = [
 // 2 24 0.3827 0 0.9239 0 0 1
   [2,24,0.3827,0,0.9239,0,0,1],
 ];
-makepoly(ldraw_lib__1_4edge(), line=0.2);
+module ldraw_lib__1_4edge(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__1_4edge(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__1_4edge(line=0.2);

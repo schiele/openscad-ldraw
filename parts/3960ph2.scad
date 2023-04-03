@@ -537,4 +537,6 @@ function ldraw_lib__3960ph2() = [
 // 4 16 -14.75 4 -25.547 -17.9596 4 -23.4053 -21.308 6 -27.769 -17.5 6 -30.31
   [4,16,-14.75,4,-25.547,-17.9596,4,-23.4053,-21.308,6,-27.769,-17.5,6,-30.31],
 ];
-makepoly(ldraw_lib__3960ph2(), line=0.2);
+module ldraw_lib__3960ph2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3960ph2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3960ph2(line=0.2);

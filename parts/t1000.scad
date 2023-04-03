@@ -1109,4 +1109,6 @@ function ldraw_lib__t1000() = [
 // 3 16 34.2426 -2 -65.7574 32 -2 -60 34.2426 -2 -54.2426
   [3,16,34.2426,-2,-65.7574,32,-2,-60,34.2426,-2,-54.2426],
 ];
-makepoly(ldraw_lib__t1000(), line=0.2);
+module ldraw_lib__t1000(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__t1000(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__t1000(line=0.2);

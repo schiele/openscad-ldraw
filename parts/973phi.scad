@@ -1998,4 +1998,6 @@ function ldraw_lib__973phi() = [
 // 3 16 -11.75 11.6 10 -7.95 20.1 10 -8.3 20.3 10
   [3,16,-11.75,11.6,10,-7.95,20.1,10,-8.3,20.3,10],
 ];
-makepoly(ldraw_lib__973phi(), line=0.2);
+module ldraw_lib__973phi(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973phi(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973phi(line=0.2);

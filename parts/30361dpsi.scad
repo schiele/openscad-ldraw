@@ -1328,4 +1328,6 @@ function ldraw_lib__30361dpsi() = [
   [4,0,-9,27.6,-17.575,-8.667,27.2,-17.797,-8.667,24.8,-17.797,-9,24.4,-17.575],
 // 
 ];
-makepoly(ldraw_lib__30361dpsi(), line=0.2);
+module ldraw_lib__30361dpsi(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__30361dpsi(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__30361dpsi(line=0.2);

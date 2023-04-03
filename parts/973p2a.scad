@@ -330,4 +330,6 @@ function ldraw_lib__973p2a() = [
 // 1 16 -5 27.5 -10 0.5 0 0 0 0 0.5 0 1 0 4-4ndis.dat
   [1,16,-5,27.5,-10,0.5,0,0,0,0,0.5,0,1,0, ldraw_lib__4_4ndis()],
 ];
-makepoly(ldraw_lib__973p2a(), line=0.2);
+module ldraw_lib__973p2a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973p2a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973p2a(line=0.2);

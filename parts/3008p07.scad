@@ -2023,4 +2023,6 @@ function ldraw_lib__3008p07() = [
   [3,16,51.3283,6.5175,-10,80,0,-10,2,0,-10],
 // 0
 ];
-makepoly(ldraw_lib__3008p07(), line=0.2);
+module ldraw_lib__3008p07(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3008p07(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3008p07(line=0.2);

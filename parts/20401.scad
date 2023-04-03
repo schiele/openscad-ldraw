@@ -51,4 +51,6 @@ function ldraw_lib__20401() = [
 // 1 16 0 -11 0 14.091 0 0 0 -14.091 0 0 0 -14.091 4-8sphe.dat
   [1,16,0,-11,0,14.091,0,0,0,-14.091,0,0,0,-14.091, ldraw_lib__4_8sphe()],
 ];
-makepoly(ldraw_lib__20401(), line=0.2);
+module ldraw_lib__20401(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__20401(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__20401(line=0.2);

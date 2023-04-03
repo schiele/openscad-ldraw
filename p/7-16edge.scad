@@ -30,4 +30,6 @@ function ldraw_lib__7_16edge() = [
 // 2 24 -.7071 0 .7071 -.9239 0 .3827
   [2,24,-.7071,0,.7071,-.9239,0,.3827],
 ];
-makepoly(ldraw_lib__7_16edge(), line=0.2);
+module ldraw_lib__7_16edge(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__7_16edge(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__7_16edge(line=0.2);

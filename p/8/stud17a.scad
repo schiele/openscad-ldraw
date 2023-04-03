@@ -135,4 +135,6 @@ function ldraw_lib__8__stud17a() = [
 // 5 24 -4.2 -4 -4.2 -4.2 0 -4.2 -6 -4 0 0 -4 -6
   [5,24,-4.2,-4,-4.2,-4.2,0,-4.2,-6,-4,0,0,-4,-6],
 ];
-makepoly(ldraw_lib__8__stud17a(), line=0.2);
+module ldraw_lib__8__stud17a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__8__stud17a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__8__stud17a(line=0.2);

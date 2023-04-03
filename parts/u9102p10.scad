@@ -500,4 +500,6 @@ function ldraw_lib__u9102p10() = [
 // 5 24 -16 -33.535 -11.828 16 -33.535 -11.828 -16 -34.62 -10.531 -16 -31.913 -12.696
   [5,24,-16,-33.535,-11.828,16,-33.535,-11.828,-16,-34.62,-10.531,-16,-31.913,-12.696],
 ];
-makepoly(ldraw_lib__u9102p10(), line=0.2);
+module ldraw_lib__u9102p10(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__u9102p10(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__u9102p10(line=0.2);

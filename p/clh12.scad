@@ -479,4 +479,6 @@ function ldraw_lib__clh12() = [
 // 5 24 -3.752 -10.45 -1.446 -3 -9.772 -1.148 -3 -10 0 -4 -9.828 -2.828
   [5,24,-3.752,-10.45,-1.446,-3,-9.772,-1.148,-3,-10,0,-4,-9.828,-2.828],
 ];
-makepoly(ldraw_lib__clh12(), line=0.2);
+module ldraw_lib__clh12(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__clh12(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__clh12(line=0.2);

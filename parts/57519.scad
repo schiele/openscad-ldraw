@@ -100,4 +100,6 @@ function ldraw_lib__57519() = [
 // 1 16 0 0 0 -0.809 0.588 0 0.588 0.809 0 0 0 1 s\57519s01.dat
   [1,16,0,0,0,-0.809,0.588,0,0.588,0.809,0,0,0,1, ldraw_lib__s__57519s01()],
 ];
-makepoly(ldraw_lib__57519(), line=0.2);
+module ldraw_lib__57519(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__57519(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__57519(line=0.2);

@@ -26,4 +26,6 @@ function ldraw_lib__studxa() = [
 // 4 16 -1.5 -4 1.5 -1.5 -4 -1.5 1.5 -4 -1.5 1.5 -4 1.5
   [4,16,-1.5,-4,1.5,-1.5,-4,-1.5,1.5,-4,-1.5,1.5,-4,1.5],
 ];
-makepoly(ldraw_lib__studxa(), line=0.2);
+module ldraw_lib__studxa(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__studxa(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__studxa(line=0.2);

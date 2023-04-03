@@ -915,4 +915,6 @@ function ldraw_lib__s__15265s02() = [
 // 5 24 32 89 0 50 89 0 50 87 -41.5 32 88.3151 3.4443
   [5,24,32,89,0,50,89,0,50,87,-41.5,32,88.3151,3.4443],
 ];
-makepoly(ldraw_lib__s__15265s02(), line=0.2);
+module ldraw_lib__s__15265s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__15265s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__15265s02(line=0.2);

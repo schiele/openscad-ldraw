@@ -29,4 +29,6 @@ function ldraw_lib__3960p0b() = [
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3960p2a()],
 // 0 !TEXMAP END
 ];
-makepoly(ldraw_lib__3960p0b(), line=0.2);
+module ldraw_lib__3960p0b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3960p0b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3960p0b(line=0.2);

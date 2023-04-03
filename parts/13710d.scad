@@ -29,4 +29,6 @@ function ldraw_lib__13710d() = [
   [1,15,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__13710as02()],
 // 0 !TEXMAP END
 ];
-makepoly(ldraw_lib__13710d(), line=0.2);
+module ldraw_lib__13710d(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__13710d(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__13710d(line=0.2);

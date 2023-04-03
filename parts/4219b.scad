@@ -398,4 +398,6 @@ function ldraw_lib__4219b() = [
 // 1 16 5.5 10.5 -6.25 0 0 0.5 -2.5 0 0 0 5 0 2-4cylc.dat
   [1,16,5.5,10.5,-6.25,0,0,0.5,-2.5,0,0,0,5,0, ldraw_lib__2_4cylc()],
 ];
-makepoly(ldraw_lib__4219b(), line=0.2);
+module ldraw_lib__4219b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__4219b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__4219b(line=0.2);

@@ -32,4 +32,6 @@ function ldraw_lib__821472g() = [
   [4,16,-65,-0.25,12,-63.297827,-0.25,10.5,51.702173,-0.25,10.5,65,-0.25,12],
 // 
 ];
-makepoly(ldraw_lib__821472g(), line=0.2);
+module ldraw_lib__821472g(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__821472g(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__821472g(line=0.2);

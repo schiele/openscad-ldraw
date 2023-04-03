@@ -41,4 +41,6 @@ function ldraw_lib__973p1j() = [
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973p11b()],
 // 0
 ];
-makepoly(ldraw_lib__973p1j(), line=0.2);
+module ldraw_lib__973p1j(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973p1j(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973p1j(line=0.2);

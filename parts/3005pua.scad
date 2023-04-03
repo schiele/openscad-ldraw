@@ -62,4 +62,6 @@ function ldraw_lib__3005pua() = [
 // 4 16 -3 14.3 -10 -1.25 9.75 -10 0 9.75 -10 0 14.3 -10
   [4,16,-3,14.3,-10,-1.25,9.75,-10,0,9.75,-10,0,14.3,-10],
 ];
-makepoly(ldraw_lib__3005pua(), line=0.2);
+module ldraw_lib__3005pua(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3005pua(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3005pua(line=0.2);

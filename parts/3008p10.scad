@@ -1076,4 +1076,6 @@ function ldraw_lib__3008p10() = [
 // 3 16 47.025 19.476 -10 46.09 19.476 -10 80 24 -10
   [3,16,47.025,19.476,-10,46.09,19.476,-10,80,24,-10],
 ];
-makepoly(ldraw_lib__3008p10(), line=0.2);
+module ldraw_lib__3008p10(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3008p10(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3008p10(line=0.2);

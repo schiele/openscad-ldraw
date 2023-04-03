@@ -513,4 +513,6 @@ function ldraw_lib__clh9() = [
   [1,16,-4,-7,0,0,1,0,6.46716,0,2.67878,-2.67878,0,6.46716, ldraw_lib__1_8chrd()],
 // 0
 ];
-makepoly(ldraw_lib__clh9(), line=0.2);
+module ldraw_lib__clh9(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__clh9(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__clh9(line=0.2);

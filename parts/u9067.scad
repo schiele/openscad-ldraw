@@ -117,4 +117,6 @@ function ldraw_lib__u9067() = [
 // 5 24 -3 -26.5 0 -2.7717 -26.5 -1.1481 -2.30975 -27 -0.95675 -4 -24 0
   [5,24,-3,-26.5,0,-2.7717,-26.5,-1.1481,-2.30975,-27,-0.95675,-4,-24,0],
 ];
-makepoly(ldraw_lib__u9067(), line=0.2);
+module ldraw_lib__u9067(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__u9067(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__u9067(line=0.2);

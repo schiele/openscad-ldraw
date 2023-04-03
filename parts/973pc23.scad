@@ -925,4 +925,6 @@ function ldraw_lib__973pc23() = [
 // 4 15 6.357 3.328 -10 6.206 0 -10 5.252 1.555 -10 5.689 4.139 -10
   [4,15,6.357,3.328,-10,6.206,0,-10,5.252,1.555,-10,5.689,4.139,-10],
 ];
-makepoly(ldraw_lib__973pc23(), line=0.2);
+module ldraw_lib__973pc23(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973pc23(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973pc23(line=0.2);

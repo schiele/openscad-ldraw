@@ -837,4 +837,6 @@ function ldraw_lib__s__973pbdf() = [
 // 4 80 12.573 17.236 -10 12.623 16.933 -10 12.472 16.882 -10 12.371 16.882 -10
   [4,80,12.573,17.236,-10,12.623,16.933,-10,12.472,16.882,-10,12.371,16.882,-10],
 ];
-makepoly(ldraw_lib__s__973pbdf(), line=0.2);
+module ldraw_lib__s__973pbdf(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__973pbdf(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__973pbdf(line=0.2);

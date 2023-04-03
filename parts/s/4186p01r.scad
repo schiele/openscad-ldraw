@@ -67,4 +67,6 @@ function ldraw_lib__s__4186p01r() = [
 // 1 16 0 -4 210 6 0 0 0 1 0 0 0 6 4-4disc.dat
   [1,16,0,-4,210,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4disc()],
 ];
-makepoly(ldraw_lib__s__4186p01r(), line=0.2);
+module ldraw_lib__s__4186p01r(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__4186p01r(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__4186p01r(line=0.2);

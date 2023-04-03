@@ -347,4 +347,6 @@ function ldraw_lib__u9507() = [
 // 4 16 -38 40 -32 38 40 -32 28 40 -36 -28 40 -36
   [4,16,-38,40,-32,38,40,-32,28,40,-36,-28,40,-36],
 ];
-makepoly(ldraw_lib__u9507(), line=0.2);
+module ldraw_lib__u9507(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__u9507(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__u9507(line=0.2);

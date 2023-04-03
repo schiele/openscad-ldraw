@@ -292,4 +292,6 @@ function ldraw_lib__31622() = [
 // 1 16 -40.5689 -10.8704 -8 -0.25882 -0.96593 0 0.96593 -0.25882 0 0 0 1 dtoothc.dat
   [1,16,-40.5689,-10.8704,-8,-0.25882,-0.96593,0,0.96593,-0.25882,0,0,0,1, ldraw_lib__dtoothc()],
 ];
-makepoly(ldraw_lib__31622(), line=0.2);
+module ldraw_lib__31622(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__31622(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__31622(line=0.2);

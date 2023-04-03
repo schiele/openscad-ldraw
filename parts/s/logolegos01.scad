@@ -1092,4 +1092,6 @@ function ldraw_lib__s__logolegos01() = [
 // 3 4 -27.8 -.25 10 -24 -.25 .7 -22.92 -.25 2.69
   [3,4,-27.8,-.25,10,-24,-.25,.7,-22.92,-.25,2.69],
 ];
-makepoly(ldraw_lib__s__logolegos01(), line=0.2);
+module ldraw_lib__s__logolegos01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__logolegos01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__logolegos01(line=0.2);

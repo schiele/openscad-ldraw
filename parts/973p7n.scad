@@ -373,4 +373,6 @@ function ldraw_lib__973p7n() = [
 // 3 16 -14.345 2 10 -17.6 23 10 -19 29 10
   [3,16,-14.345,2,10,-17.6,23,10,-19,29,10],
 ];
-makepoly(ldraw_lib__973p7n(), line=0.2);
+module ldraw_lib__973p7n(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973p7n(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973p7n(line=0.2);

@@ -81,4 +81,6 @@ function ldraw_lib__u8006c() = [
   [1,16,90,0,-10,0,0,-1,0,1,0,1,0,0, ldraw_lib__stud()],
 // 0
 ];
-makepoly(ldraw_lib__u8006c(), line=0.2);
+module ldraw_lib__u8006c(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__u8006c(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__u8006c(line=0.2);

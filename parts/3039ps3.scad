@@ -494,4 +494,6 @@ function ldraw_lib__3039ps3() = [
 // 3 4 10.095 6.416 -16.416 9.846 6.452 -16.452 9.886 6.955 -16.955
   [3,4,10.095,6.416,-16.416,9.846,6.452,-16.452,9.886,6.955,-16.955],
 ];
-makepoly(ldraw_lib__3039ps3(), line=0.2);
+module ldraw_lib__3039ps3(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3039ps3(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3039ps3(line=0.2);

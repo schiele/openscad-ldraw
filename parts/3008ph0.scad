@@ -1556,4 +1556,6 @@ function ldraw_lib__3008ph0() = [
 // 3 82 77.5 21 -10 0 21 -10 78.5 22 -10
   [3,82,77.5,21,-10,0,21,-10,78.5,22,-10],
 ];
-makepoly(ldraw_lib__3008ph0(), line=0.2);
+module ldraw_lib__3008ph0(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3008ph0(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3008ph0(line=0.2);

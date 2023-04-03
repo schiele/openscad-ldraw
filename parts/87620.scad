@@ -143,4 +143,6 @@ function ldraw_lib__87620() = [
 // 1 16 10 0 10 0 0 -1 0 1 0 1 0 0 stud.dat
   [1,16,10,0,10,0,0,-1,0,1,0,1,0,0, ldraw_lib__stud()],
 ];
-makepoly(ldraw_lib__87620(), line=0.2);
+module ldraw_lib__87620(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__87620(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__87620(line=0.2);

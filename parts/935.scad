@@ -89,4 +89,6 @@ function ldraw_lib__935() = [
 // 1 494 3 9 15 -1.5 0 0 0 -0.25 0 0 0 -9 box4-1.dat
   [1,494,3,9,15,-1.5,0,0,0,-0.25,0,0,0,-9, ldraw_lib__box4_1()],
 ];
-makepoly(ldraw_lib__935(), line=0.2);
+module ldraw_lib__935(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__935(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__935(line=0.2);

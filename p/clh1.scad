@@ -158,4 +158,6 @@ function ldraw_lib__clh1() = [
 // 5 24 -4 -2.016 -4.535 -9 -2.016 -4.535 -4 -3.444 -.001 -4 -1.6746386 -4.8999315
   [5,24,-4,-2.016,-4.535,-9,-2.016,-4.535,-4,-3.444,-.001,-4,-1.6746386,-4.8999315],
 ];
-makepoly(ldraw_lib__clh1(), line=0.2);
+module ldraw_lib__clh1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__clh1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__clh1(line=0.2);

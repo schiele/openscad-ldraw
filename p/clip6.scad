@@ -115,4 +115,6 @@ function ldraw_lib__clip6() = [
 // 4 16 -4 8.3254 -4.0298 -4 6 0 -4 6 4 -4 8.2928 4.5356
   [4,16,-4,8.3254,-4.0298,-4,6,0,-4,6,4,-4,8.2928,4.5356],
 ];
-makepoly(ldraw_lib__clip6(), line=0.2);
+module ldraw_lib__clip6(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__clip6(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__clip6(line=0.2);

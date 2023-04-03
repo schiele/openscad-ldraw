@@ -376,4 +376,6 @@ function ldraw_lib__s__2586p4fa() = [
   [3,80,0,25,-8,-1,17,-8,-6,17,-8],
 // 
 ];
-makepoly(ldraw_lib__s__2586p4fa(), line=0.2);
+module ldraw_lib__s__2586p4fa(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__2586p4fa(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__2586p4fa(line=0.2);

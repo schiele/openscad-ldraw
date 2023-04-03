@@ -153,4 +153,6 @@ function ldraw_lib__t16q7500() = [
   [5,24,0.6587,0.6929,0.2729,0.9239,0.75,0.3827,0.5457,0.6929,0.5457,0.713,0.6929,0],
 // 0 // Build by Primitive Generator 2
 ];
-makepoly(ldraw_lib__t16q7500(), line=0.2);
+module ldraw_lib__t16q7500(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__t16q7500(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__t16q7500(line=0.2);

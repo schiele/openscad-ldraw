@@ -731,4 +731,6 @@ function ldraw_lib__973psv() = [
   [3,16,12,0,-10,10.623,1.392,-10,14.345,2,-10],
 // 0
 ];
-makepoly(ldraw_lib__973psv(), line=0.2);
+module ldraw_lib__973psv(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973psv(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973psv(line=0.2);

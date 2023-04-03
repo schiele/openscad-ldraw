@@ -2243,4 +2243,6 @@ function ldraw_lib__973p8s() = [
 // 3 80 -8.72 26.45 -10 -9.95 25.7 -10 -9.95 26.45 -10
   [3,80,-8.72,26.45,-10,-9.95,25.7,-10,-9.95,26.45,-10],
 ];
-makepoly(ldraw_lib__973p8s(), line=0.2);
+module ldraw_lib__973p8s(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973p8s(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973p8s(line=0.2);

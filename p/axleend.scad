@@ -35,4 +35,6 @@ function ldraw_lib__axleend() = [
   [4,16,0,0,-6,0,0,0,-2,0,-2,-2,0,-5.602],
 // 0
 ];
-makepoly(ldraw_lib__axleend(), line=0.2);
+module ldraw_lib__axleend(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__axleend(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__axleend(line=0.2);

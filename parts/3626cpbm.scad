@@ -2257,4 +2257,6 @@ function ldraw_lib__3626cpbm() = [
 // 5 24 -4.9752 4 12.0104 0 4 13 -4.9752 5.65696 12.0104 -4.8296 2.46912 11.6592
   [5,24,-4.9752,4,12.0104,0,4,13,-4.9752,5.65696,12.0104,-4.8296,2.46912,11.6592],
 ];
-makepoly(ldraw_lib__3626cpbm(), line=0.2);
+module ldraw_lib__3626cpbm(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3626cpbm(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3626cpbm(line=0.2);

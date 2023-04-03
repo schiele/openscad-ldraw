@@ -193,4 +193,6 @@ function ldraw_lib__8() = [
   [1,16,8,22,0,0,4,0,0.77,0,-1.85,1.85,0,0.77, ldraw_lib__5_8cyli()],
 // 0
 ];
-makepoly(ldraw_lib__8(), line=0.2);
+module ldraw_lib__8(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__8(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__8(line=0.2);

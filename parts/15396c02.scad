@@ -67,4 +67,6 @@ function ldraw_lib__15396c02() = [
 // 1 14 0 -119.873 -15.849 0.997 0 0.071 -0.004 0.998 0.061 -0.071 -0.061 0.996 3626bp05.dat
   [1,14,0,-119.873,-15.849,0.997,0,0.071,-0.004,0.998,0.061,-0.071,-0.061,0.996, ldraw_lib__3626bp05()],
 ];
-makepoly(ldraw_lib__15396c02(), line=0.2);
+module ldraw_lib__15396c02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__15396c02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__15396c02(line=0.2);

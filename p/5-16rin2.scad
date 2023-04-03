@@ -25,4 +25,6 @@ function ldraw_lib__5_16rin2() = [
   [4,16,0,0,2,0,0,3,-1.1481,0,2.7717,-0.7654,0,1.8478],
 // 0
 ];
-makepoly(ldraw_lib__5_16rin2(), line=0.2);
+module ldraw_lib__5_16rin2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__5_16rin2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__5_16rin2(line=0.2);

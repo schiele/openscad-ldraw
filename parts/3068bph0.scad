@@ -2009,4 +2009,6 @@ function ldraw_lib__3068bph0() = [
 // 4 16 2.28 0 1.1 3.29 0 .65 2.41 0 1.78 2.28 0 1.41
   [4,16,2.28,0,1.1,3.29,0,.65,2.41,0,1.78,2.28,0,1.41],
 ];
-makepoly(ldraw_lib__3068bph0(), line=0.2);
+module ldraw_lib__3068bph0(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3068bph0(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3068bph0(line=0.2);

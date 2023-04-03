@@ -2205,4 +2205,6 @@ function ldraw_lib__t1046() = [
 // 1 16 -30 42 30 -9.2388 0 3.82683 0 -1 0 3.82683 0 9.2388 1-16chrd.dat
   [1,16,-30,42,30,-9.2388,0,3.82683,0,-1,0,3.82683,0,9.2388, ldraw_lib__1_16chrd()],
 ];
-makepoly(ldraw_lib__t1046(), line=0.2);
+module ldraw_lib__t1046(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__t1046(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__t1046(line=0.2);

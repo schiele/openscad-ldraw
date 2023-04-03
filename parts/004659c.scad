@@ -24,4 +24,6 @@ function ldraw_lib__004659c() = [
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\004659cs01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__004659cs01()],
 ];
-makepoly(ldraw_lib__004659c(), line=0.2);
+module ldraw_lib__004659c(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__004659c(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__004659c(line=0.2);

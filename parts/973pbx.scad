@@ -3030,4 +3030,6 @@ function ldraw_lib__973pbx() = [
 // 3 26 13.914 29.61 -10 14.252 29.558 -10 14.448 29.279 -10
   [3,26,13.914,29.61,-10,14.252,29.558,-10,14.448,29.279,-10],
 ];
-makepoly(ldraw_lib__973pbx(), line=0.2);
+module ldraw_lib__973pbx(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973pbx(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973pbx(line=0.2);

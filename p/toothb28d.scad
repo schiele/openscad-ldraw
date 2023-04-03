@@ -209,4 +209,6 @@ function ldraw_lib__toothb28d() = [
   [2,24,1.028,-10,29.95,5.6621,-10,29.4279],
 // 
 ];
-makepoly(ldraw_lib__toothb28d(), line=0.2);
+module ldraw_lib__toothb28d(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__toothb28d(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__toothb28d(line=0.2);

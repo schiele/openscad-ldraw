@@ -114,4 +114,6 @@ function ldraw_lib__973pre() = [
 // 3 72 -16.69 30.2 -10 -16.73 30.3 -10 -15.46 30.36 -10
   [3,72,-16.69,30.2,-10,-16.73,30.3,-10,-15.46,30.36,-10],
 ];
-makepoly(ldraw_lib__973pre(), line=0.2);
+module ldraw_lib__973pre(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973pre(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973pre(line=0.2);

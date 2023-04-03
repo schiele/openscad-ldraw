@@ -44,4 +44,6 @@ function ldraw_lib__u9002p02() = [
 // 1 0 -4.675 -31 -31 14.3284 0 0 0 1 0 0 0 -14.3284 4-4ndis.dat
   [1,0,-4.675,-31,-31,14.3284,0,0,0,1,0,0,0,-14.3284, ldraw_lib__4_4ndis()],
 ];
-makepoly(ldraw_lib__u9002p02(), line=0.2);
+module ldraw_lib__u9002p02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__u9002p02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__u9002p02(line=0.2);

@@ -21,4 +21,6 @@ function ldraw_lib__s__2431ps3a() = [
   [3,16,12,0,-8.25,12,0,-6.25,16,0,-6.25],
 // 0
 ];
-makepoly(ldraw_lib__s__2431ps3a(), line=0.2);
+module ldraw_lib__s__2431ps3a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__2431ps3a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__2431ps3a(line=0.2);

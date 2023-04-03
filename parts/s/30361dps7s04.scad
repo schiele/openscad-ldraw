@@ -36,4 +36,6 @@ function ldraw_lib__s__30361dps7s04() = [
 // 4 16 -2.2 17.2 -19.561 -2.8 17.8 -19.44 0 17.8 -20 0 17.2 -20
   [4,16,-2.2,17.2,-19.561,-2.8,17.8,-19.44,0,17.8,-20,0,17.2,-20],
 ];
-makepoly(ldraw_lib__s__30361dps7s04(), line=0.2);
+module ldraw_lib__s__30361dps7s04(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__30361dps7s04(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__30361dps7s04(line=0.2);

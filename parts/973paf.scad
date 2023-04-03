@@ -723,4 +723,6 @@ function ldraw_lib__973paf() = [
 // 4 7 -4 5.1 -10 -5.6 4.4 -10 -5.8 5.6 -10 -3.9 6.3 -10
   [4,7,-4,5.1,-10,-5.6,4.4,-10,-5.8,5.6,-10,-3.9,6.3,-10],
 ];
-makepoly(ldraw_lib__973paf(), line=0.2);
+module ldraw_lib__973paf(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973paf(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973paf(line=0.2);

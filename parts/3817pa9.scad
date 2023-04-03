@@ -309,4 +309,6 @@ function ldraw_lib__3817pa9() = [
 // 3 16 13 2.2 -8.537 12.2 0 -9 2 3.42 -8.28
   [3,16,13,2.2,-8.537,12.2,0,-9,2,3.42,-8.28],
 ];
-makepoly(ldraw_lib__3817pa9(), line=0.2);
+module ldraw_lib__3817pa9(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3817pa9(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3817pa9(line=0.2);

@@ -260,4 +260,6 @@ function ldraw_lib__s__3960pses01() = [
 // 4 80 -3.4589 3.2003 26.2733 -2.871 2 21.8108 0 2 22 0 3.2 26.5
   [4,80,-3.4589,3.2003,26.2733,-2.871,2,21.8108,0,2,22,0,3.2,26.5],
 ];
-makepoly(ldraw_lib__s__3960pses01(), line=0.2);
+module ldraw_lib__s__3960pses01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__3960pses01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__3960pses01(line=0.2);

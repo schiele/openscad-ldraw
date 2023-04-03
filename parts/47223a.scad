@@ -19,4 +19,6 @@ function ldraw_lib__47223a() = [
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 47223a-f1.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__47223a_f1()],
 ];
-makepoly(ldraw_lib__47223a(), line=0.2);
+module ldraw_lib__47223a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__47223a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__47223a(line=0.2);

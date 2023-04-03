@@ -135,4 +135,6 @@ function ldraw_lib__r04o2250() = [
   [5,24,0,0.8611,3.0788,0,0,3.25,-1.2752,0.8611,3.0788,1.1782,0.8611,2.8445],
 // 0 // Build by Primitive Generator 2
 ];
-makepoly(ldraw_lib__r04o2250(), line=0.2);
+module ldraw_lib__r04o2250(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__r04o2250(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__r04o2250(line=0.2);

@@ -92,4 +92,6 @@ function ldraw_lib__2586p4k() = [
 // 1 16 0 -7.75 -8 1.3 0 0 0 1.3 0 0 0 1 s\3846p4ka.dat
   [1,16,0,-7.75,-8,1.3,0,0,0,1.3,0,0,0,1, ldraw_lib__s__3846p4ka()],
 ];
-makepoly(ldraw_lib__2586p4k(), line=0.2);
+module ldraw_lib__2586p4k(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__2586p4k(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__2586p4k(line=0.2);

@@ -28,4 +28,6 @@ function ldraw_lib__2527c01() = [
 // 1 8 0 -28 -30 1 0 0 0 0.965926 0.258819 0 -0.258819 0.965926 518.dat
   [1,8,0,-28,-30,1,0,0,0,0.965926,0.258819,0,-0.258819,0.965926, ldraw_lib__518()],
 ];
-makepoly(ldraw_lib__2527c01(), line=0.2);
+module ldraw_lib__2527c01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__2527c01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__2527c01(line=0.2);

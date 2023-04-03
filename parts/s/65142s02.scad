@@ -82,4 +82,6 @@ function ldraw_lib__s__65142s02() = [
 // 1 16 -6.00535 .5 0 0 -1.74465 0 .5 0 0 0 0 2.48755 box3u5p.dat
   [1,16,-6.00535,.5,0,0,-1.74465,0,.5,0,0,0,0,2.48755, ldraw_lib__box3u5p()],
 ];
-makepoly(ldraw_lib__s__65142s02(), line=0.2);
+module ldraw_lib__s__65142s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__65142s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__65142s02(line=0.2);

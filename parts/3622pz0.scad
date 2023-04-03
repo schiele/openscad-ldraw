@@ -439,4 +439,6 @@ function ldraw_lib__3622pz0() = [
 // 4 320 30 22.47 -10 29.77 21.33 -10 27.57 22.34 -10 27.95 24 -10
   [4,320,30,22.47,-10,29.77,21.33,-10,27.57,22.34,-10,27.95,24,-10],
 ];
-makepoly(ldraw_lib__3622pz0(), line=0.2);
+module ldraw_lib__3622pz0(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3622pz0(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3622pz0(line=0.2);

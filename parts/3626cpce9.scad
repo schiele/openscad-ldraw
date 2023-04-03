@@ -1010,4 +1010,6 @@ function ldraw_lib__3626cpce9() = [
 // 5 24 8.9232 18.53088 -8.9232 9.192 17 -9.192 4.8296 18.53088 -11.6592 11.6592 18.53088 -4.8296
   [5,24,8.9232,18.53088,-8.9232,9.192,17,-9.192,4.8296,18.53088,-11.6592,11.6592,18.53088,-4.8296],
 ];
-makepoly(ldraw_lib__3626cpce9(), line=0.2);
+module ldraw_lib__3626cpce9(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3626cpce9(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3626cpce9(line=0.2);

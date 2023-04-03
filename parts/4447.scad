@@ -210,4 +210,6 @@ function ldraw_lib__4447() = [
   [1,16,36,34,-33.735,0,4,0,0,0,-2,-2,0,0, ldraw_lib__4_4cyli()],
 // 0
 ];
-makepoly(ldraw_lib__4447(), line=0.2);
+module ldraw_lib__4447(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__4447(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__4447(line=0.2);

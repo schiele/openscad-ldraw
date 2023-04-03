@@ -95,4 +95,6 @@ function ldraw_lib__4497614c() = [
 // 1 6 0 -0.25 0 -1 0 0 0 0 1 0 -1 0 s\2586p4ga.dat
   [1,6,0,-0.25,0,-1,0,0,0,0,1,0,-1,0, ldraw_lib__s__2586p4ga()],
 ];
-makepoly(ldraw_lib__4497614c(), line=0.2);
+module ldraw_lib__4497614c(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__4497614c(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__4497614c(line=0.2);

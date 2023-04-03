@@ -52,4 +52,6 @@ function ldraw_lib__4740p04() = [
 // 1 16 0 0 0 0.92388 0 -0.38268 0 1 0 0.38268 0 0.92388 s\4740p04s01.dat
   [1,16,0,0,0,0.92388,0,-0.38268,0,1,0,0.38268,0,0.92388, ldraw_lib__s__4740p04s01()],
 ];
-makepoly(ldraw_lib__4740p04(), line=0.2);
+module ldraw_lib__4740p04(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__4740p04(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__4740p04(line=0.2);

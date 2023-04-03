@@ -39,4 +39,6 @@ function ldraw_lib__s__191915scha() = [
   [4,16,28.6,0,-6.6,28.6,0,6.6,6.6,0,6.6,6.6,0,-6.6],
 // 0
 ];
-makepoly(ldraw_lib__s__191915scha(), line=0.2);
+module ldraw_lib__s__191915scha(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__191915scha(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__191915scha(line=0.2);

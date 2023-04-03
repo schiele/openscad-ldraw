@@ -95,4 +95,6 @@ function ldraw_lib__53992_f4() = [
 // 1 16 -11.1135 -63.0277 0 0.98481 0.17365 0 -0.17365 0.98481 0 0 0 1 53992k01.dat
   [1,16,-11.1135,-63.0277,0,0.98481,0.17365,0,-0.17365,0.98481,0,0,0,1, ldraw_lib__53992k01()],
 ];
-makepoly(ldraw_lib__53992_f4(), line=0.2);
+module ldraw_lib__53992_f4(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__53992_f4(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__53992_f4(line=0.2);

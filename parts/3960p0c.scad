@@ -3940,4 +3940,6 @@ function ldraw_lib__3960p0c() = [
 // 5 24 9.2384 0 -3.8265 20.3249 2 -8.4187 19.0525 2 -10.9989 9.6593 0 -2.5882
   [5,24,9.2384,0,-3.8265,20.3249,2,-8.4187,19.0525,2,-10.9989,9.6593,0,-2.5882],
 ];
-makepoly(ldraw_lib__3960p0c(), line=0.2);
+module ldraw_lib__3960p0c(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3960p0c(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3960p0c(line=0.2);

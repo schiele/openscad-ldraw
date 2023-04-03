@@ -132,4 +132,6 @@ function ldraw_lib__3005pto() = [
 // 3 1 5 12.95472 -10 7 12 -10 5 12 -10
   [3,1,5,12.95472,-10,7,12,-10,5,12,-10],
 ];
-makepoly(ldraw_lib__3005pto(), line=0.2);
+module ldraw_lib__3005pto(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3005pto(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3005pto(line=0.2);

@@ -320,4 +320,6 @@ function ldraw_lib__973pbg() = [
 // 4 320 -1.615 28.295 10 0 28.295 10 0 29.962 10 -1.413 29.962 10
   [4,320,-1.615,28.295,10,0,28.295,10,0,29.962,10,-1.413,29.962,10],
 ];
-makepoly(ldraw_lib__973pbg(), line=0.2);
+module ldraw_lib__973pbg(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973pbg(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973pbg(line=0.2);

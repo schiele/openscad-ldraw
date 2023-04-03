@@ -102,4 +102,6 @@ function ldraw_lib__s__2431pzms01() = [
 // 4 16 10.25 0 3.25 4 0 -9.5 29.5 0 -9.5 35.5 0 -7
   [4,16,10.25,0,3.25,4,0,-9.5,29.5,0,-9.5,35.5,0,-7],
 ];
-makepoly(ldraw_lib__s__2431pzms01(), line=0.2);
+module ldraw_lib__s__2431pzms01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__2431pzms01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__2431pzms01(line=0.2);

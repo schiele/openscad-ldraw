@@ -32,4 +32,6 @@ function ldraw_lib__34172() = [
 // 1 16 0 -16 0 -7.25 0 0 0 11.231 0 0 0 -7.25 r04o1000.dat
   [1,16,0,-16,0,-7.25,0,0,0,11.231,0,0,0,-7.25, ldraw_lib__r04o1000()],
 ];
-makepoly(ldraw_lib__34172(), line=0.2);
+module ldraw_lib__34172(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__34172(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__34172(line=0.2);

@@ -39,4 +39,6 @@ function ldraw_lib__axl3hol3() = [
   [2,24,4.2426,0,-4.2426,5.2127,0,-2.791],
 // 0
 ];
-makepoly(ldraw_lib__axl3hol3(), line=0.2);
+module ldraw_lib__axl3hol3(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__axl3hol3(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__axl3hol3(line=0.2);

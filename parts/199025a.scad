@@ -94,4 +94,6 @@ function ldraw_lib__199025a() = [
 // 1 16 -11 0 -14.5 -1.5 0 0 0 -.25 0 0 0 -1.5 1-4cyli.dat
   [1,16,-11,0,-14.5,-1.5,0,0,0,-.25,0,0,0,-1.5, ldraw_lib__1_4cyli()],
 ];
-makepoly(ldraw_lib__199025a(), line=0.2);
+module ldraw_lib__199025a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__199025a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__199025a(line=0.2);

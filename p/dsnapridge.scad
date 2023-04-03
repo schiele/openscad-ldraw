@@ -230,4 +230,6 @@ function ldraw_lib__dsnapridge() = [
 // 1 16 0 -10.5 0 -2.14599 0 -10.78864 0 -1 0 10.78864 0 -2.14599 3-16tang.dat
   [1,16,0,-10.5,0,-2.14599,0,-10.78864,0,-1,0,10.78864,0,-2.14599, ldraw_lib__3_16tang()],
 ];
-makepoly(ldraw_lib__dsnapridge(), line=0.2);
+module ldraw_lib__dsnapridge(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__dsnapridge(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__dsnapridge(line=0.2);

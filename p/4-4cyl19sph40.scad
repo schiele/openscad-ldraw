@@ -71,4 +71,6 @@ function ldraw_lib__4_4cyl19sph40() = [
 // 2 24 -0.76 -1.3795 0 -0.7022 -1.3504 0.2909
   [2,24,-0.76,-1.3795,0,-0.7022,-1.3504,0.2909],
 ];
-makepoly(ldraw_lib__4_4cyl19sph40(), line=0.2);
+module ldraw_lib__4_4cyl19sph40(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__4_4cyl19sph40(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__4_4cyl19sph40(line=0.2);

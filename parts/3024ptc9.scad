@@ -67,4 +67,6 @@ function ldraw_lib__3024ptc9() = [
 // 3 16 5.85 5.75 -10 9.75 4.5 -10 1.95 4.5 -10
   [3,16,5.85,5.75,-10,9.75,4.5,-10,1.95,4.5,-10],
 ];
-makepoly(ldraw_lib__3024ptc9(), line=0.2);
+module ldraw_lib__3024ptc9(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3024ptc9(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3024ptc9(line=0.2);

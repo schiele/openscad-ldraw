@@ -1190,4 +1190,6 @@ function ldraw_lib__973p3g() = [
 // 4 16 -4.85 2.75 10 -2.75 3.1 10 -7.55 6.9 10 -14.345 2 10
   [4,16,-4.85,2.75,10,-2.75,3.1,10,-7.55,6.9,10,-14.345,2,10],
 ];
-makepoly(ldraw_lib__973p3g(), line=0.2);
+module ldraw_lib__973p3g(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973p3g(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973p3g(line=0.2);

@@ -34,4 +34,6 @@ function ldraw_lib__ribt45() = [
   [4,16,-5.74,4,-5.74,-3.82,4,1.82,-1.82,4,3.82,5.74,4,5.74],
 // 0
 ];
-makepoly(ldraw_lib__ribt45(), line=0.2);
+module ldraw_lib__ribt45(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__ribt45(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__ribt45(line=0.2);

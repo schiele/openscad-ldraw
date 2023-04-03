@@ -3745,4 +3745,6 @@ function ldraw_lib__973pq7() = [
 // 4 16 -4.80497 10.47945 10 -2.84257 11.07026 10 -5.55146 11.02158 10 -5.37757 10.3367 10
   [4,16,-4.80497,10.47945,10,-2.84257,11.07026,10,-5.55146,11.02158,10,-5.37757,10.3367,10],
 ];
-makepoly(ldraw_lib__973pq7(), line=0.2);
+module ldraw_lib__973pq7(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973pq7(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973pq7(line=0.2);

@@ -370,4 +370,6 @@ function ldraw_lib__3622px2() = [
 // 3 16 10.4 6.3 -10 4.5 12.75 -10 6.05 12.35 -10
   [3,16,10.4,6.3,-10,4.5,12.75,-10,6.05,12.35,-10],
 ];
-makepoly(ldraw_lib__3622px2(), line=0.2);
+module ldraw_lib__3622px2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3622px2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3622px2(line=0.2);

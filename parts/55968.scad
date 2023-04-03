@@ -282,4 +282,6 @@ function ldraw_lib__55968() = [
 // 1 16 17.885 18 0 0 5.115 0 0 0 4 -1.75 0 0 box2-7.dat
   [1,16,17.885,18,0,0,5.115,0,0,0,4,-1.75,0,0, ldraw_lib__box2_7()],
 ];
-makepoly(ldraw_lib__55968(), line=0.2);
+module ldraw_lib__55968(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__55968(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__55968(line=0.2);

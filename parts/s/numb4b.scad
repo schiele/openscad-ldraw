@@ -34,4 +34,6 @@ function ldraw_lib__s__numb4b() = [
   [3,16,-3.5,14,-10,2,14,-10,2,7.5,-10],
 // 0
 ];
-makepoly(ldraw_lib__s__numb4b(), line=0.2);
+module ldraw_lib__s__numb4b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__numb4b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__numb4b(line=0.2);

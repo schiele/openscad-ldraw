@@ -2302,4 +2302,6 @@ function ldraw_lib__973pbs() = [
 // 4 0 3.51 14.327 -10 3.102 14.531 -10 2.694 15.347 -10 3.592 14.857 -10
   [4,0,3.51,14.327,-10,3.102,14.531,-10,2.694,15.347,-10,3.592,14.857,-10],
 ];
-makepoly(ldraw_lib__973pbs(), line=0.2);
+module ldraw_lib__973pbs(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973pbs(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973pbs(line=0.2);

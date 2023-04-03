@@ -47,4 +47,6 @@ function ldraw_lib__s__letrb() = [
   [4,16,-4,19,-10,4,19,-10,0,13,-10,-4,13,-10],
 // 0
 ];
-makepoly(ldraw_lib__s__letrb(), line=0.2);
+module ldraw_lib__s__letrb(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__letrb(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__letrb(line=0.2);

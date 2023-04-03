@@ -33,4 +33,6 @@ function ldraw_lib__3005pwm() = [
   [4,16,-10,0,-10,10,0,-10,3,11,-10,-3,11,-10],
 // 0
 ];
-makepoly(ldraw_lib__3005pwm(), line=0.2);
+module ldraw_lib__3005pwm(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3005pwm(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3005pwm(line=0.2);

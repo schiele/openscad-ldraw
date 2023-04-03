@@ -3866,4 +3866,6 @@ function ldraw_lib__s__logoferraris02() = [
 // 3 16 5.46 0 -7.6 0.3033 0 -7.4316 0 0 -7.6
   [3,16,5.46,0,-7.6,0.3033,0,-7.4316,0,0,-7.6],
 ];
-makepoly(ldraw_lib__s__logoferraris02(), line=0.2);
+module ldraw_lib__s__logoferraris02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__logoferraris02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__logoferraris02(line=0.2);

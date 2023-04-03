@@ -1771,4 +1771,6 @@ function ldraw_lib__3039p13() = [
 // 4 16 9.875 8.485 -18.485 10.375 8.132 -18.132 10.375 7.071 -17.071 9.875 6.717 -16.717
   [4,16,9.875,8.485,-18.485,10.375,8.132,-18.132,10.375,7.071,-17.071,9.875,6.717,-16.717],
 ];
-makepoly(ldraw_lib__3039p13(), line=0.2);
+module ldraw_lib__3039p13(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3039p13(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3039p13(line=0.2);

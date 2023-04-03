@@ -285,4 +285,6 @@ function ldraw_lib__4215ap18() = [
   [4,0,-28,59,10,-28,61,10,-30,64,10,-30,56,10],
 // 0
 ];
-makepoly(ldraw_lib__4215ap18(), line=0.2);
+module ldraw_lib__4215ap18(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__4215ap18(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__4215ap18(line=0.2);

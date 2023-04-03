@@ -1246,4 +1246,6 @@ function ldraw_lib__973pud() = [
 // 4 16 -17.6 31.5 10 17.6 31.5 10 19 32 10 -19 32 10
   [4,16,-17.6,31.5,10,17.6,31.5,10,19,32,10,-19,32,10],
 ];
-makepoly(ldraw_lib__973pud(), line=0.2);
+module ldraw_lib__973pud(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973pud(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973pud(line=0.2);

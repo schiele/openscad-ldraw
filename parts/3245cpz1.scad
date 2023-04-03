@@ -1543,4 +1543,6 @@ function ldraw_lib__3245cpz1() = [
 // 3 72 14.768 36.947 -10 14.768 37.447 -10 20 37.447 -10
   [3,72,14.768,36.947,-10,14.768,37.447,-10,20,37.447,-10],
 ];
-makepoly(ldraw_lib__3245cpz1(), line=0.2);
+module ldraw_lib__3245cpz1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3245cpz1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3245cpz1(line=0.2);

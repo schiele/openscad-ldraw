@@ -220,4 +220,6 @@ function ldraw_lib__s__191915sbeb() = [
 // 3 16 57 0 39 0 0 34.2 10.2 0 33.5
   [3,16,57,0,39,0,0,34.2,10.2,0,33.5],
 ];
-makepoly(ldraw_lib__s__191915sbeb(), line=0.2);
+module ldraw_lib__s__191915sbeb(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__191915sbeb(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__191915sbeb(line=0.2);

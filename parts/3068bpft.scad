@@ -1411,4 +1411,6 @@ function ldraw_lib__3068bpft() = [
   [3,0,8.8,0,-10.7,8.4,0,-11.4,10.8,0,-12.1],
 // 
 ];
-makepoly(ldraw_lib__3068bpft(), line=0.2);
+module ldraw_lib__3068bpft(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3068bpft(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3068bpft(line=0.2);

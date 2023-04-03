@@ -46,4 +46,6 @@ function ldraw_lib__16981() = [
 // 1 16 -268 0 0 1 0 0 0 1 0 0 0 1 16981k02.dat
   [1,16,-268,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__16981k02()],
 ];
-makepoly(ldraw_lib__16981(), line=0.2);
+module ldraw_lib__16981(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__16981(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__16981(line=0.2);

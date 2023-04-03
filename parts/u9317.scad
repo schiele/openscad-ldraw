@@ -801,4 +801,6 @@ function ldraw_lib__u9317() = [
 // 2 24 -46 149 0 -46 149 2
   [2,24,-46,149,0,-46,149,2],
 ];
-makepoly(ldraw_lib__u9317(), line=0.2);
+module ldraw_lib__u9317(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__u9317(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__u9317(line=0.2);

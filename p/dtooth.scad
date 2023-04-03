@@ -92,4 +92,6 @@ function ldraw_lib__dtooth() = [
 // 5 24 -4.2 5.4 13.5 -4.2 5.4 -13.5 -2.6 9.6 -11 -5 0 -13.5
   [5,24,-4.2,5.4,13.5,-4.2,5.4,-13.5,-2.6,9.6,-11,-5,0,-13.5],
 ];
-makepoly(ldraw_lib__dtooth(), line=0.2);
+module ldraw_lib__dtooth(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__dtooth(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__dtooth(line=0.2);

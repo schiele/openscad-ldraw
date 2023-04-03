@@ -3192,4 +3192,6 @@ function ldraw_lib__973pha() = [
 // 4 16 -8.4 2.7 10 -7.38 3.38 10 -10.98 7.04 10 -11.24 6.18 10
   [4,16,-8.4,2.7,10,-7.38,3.38,10,-10.98,7.04,10,-11.24,6.18,10],
 ];
-makepoly(ldraw_lib__973pha(), line=0.2);
+module ldraw_lib__973pha(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973pha(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973pha(line=0.2);

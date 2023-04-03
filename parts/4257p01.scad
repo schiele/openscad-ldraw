@@ -109,4 +109,6 @@ function ldraw_lib__4257p01() = [
 // 1 0 8 0 -8 0 0 17 -17 0 0 0 -3 0 bump5000.dat
   [1,0,8,0,-8,0,0,17,-17,0,0,0,-3,0, ldraw_lib__bump5000()],
 ];
-makepoly(ldraw_lib__4257p01(), line=0.2);
+module ldraw_lib__4257p01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__4257p01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__4257p01(line=0.2);

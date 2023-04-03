@@ -77,4 +77,6 @@ function ldraw_lib__u9373() = [
 // 1 494 -13.75 25 42 0 0 -0.25 -5.5 0 0 0 14 0 box5.dat
   [1,494,-13.75,25,42,0,0,-0.25,-5.5,0,0,0,14,0, ldraw_lib__box5()],
 ];
-makepoly(ldraw_lib__u9373(), line=0.2);
+module ldraw_lib__u9373(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__u9373(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__u9373(line=0.2);

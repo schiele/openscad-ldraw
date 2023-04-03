@@ -78,4 +78,6 @@ function ldraw_lib__stxjcyl9() = [
 // 2 24 3.062 .609 1.5 1.5 .298 1.5
   [2,24,3.062,.609,1.5,1.5,.298,1.5],
 ];
-makepoly(ldraw_lib__stxjcyl9(), line=0.2);
+module ldraw_lib__stxjcyl9(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__stxjcyl9(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__stxjcyl9(line=0.2);

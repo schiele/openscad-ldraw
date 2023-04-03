@@ -24,4 +24,6 @@ function ldraw_lib__61678() = [
 // 1 16 10 149.253 40 0 -20 0 -149.253 0 0 0 0 -160 48\1-12cyli.dat
   [1,16,10,149.253,40,0,-20,0,-149.253,0,0,0,0,-160, ldraw_lib__48__1_12cyli()],
 ];
-makepoly(ldraw_lib__61678(), line=0.2);
+module ldraw_lib__61678(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__61678(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__61678(line=0.2);

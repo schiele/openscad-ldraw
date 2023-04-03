@@ -250,4 +250,6 @@ function ldraw_lib__3626cp8e() = [
 // 5 24 9.192 4 -9.192 9.192 17 -9.192 4.9752 4 -12.0104 18.3848 4 0
   [5,24,9.192,4,-9.192,9.192,17,-9.192,4.9752,4,-12.0104,18.3848,4,0],
 ];
-makepoly(ldraw_lib__3626cp8e(), line=0.2);
+module ldraw_lib__3626cp8e(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3626cp8e(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3626cp8e(line=0.2);

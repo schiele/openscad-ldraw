@@ -343,4 +343,6 @@ function ldraw_lib__925p0q() = [
   [4,16,-80,24,-10,-35,18.667,-10,33.667,18.667,-10,80,24,-10],
 // 0
 ];
-makepoly(ldraw_lib__925p0q(), line=0.2);
+module ldraw_lib__925p0q(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__925p0q(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__925p0q(line=0.2);

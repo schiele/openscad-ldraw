@@ -96,4 +96,6 @@ function ldraw_lib__004219b() = [
   [1,15,0,-0.25,0,30,0,0,0,0.25,0,0,0,24, ldraw_lib__box5_12()],
 // 0
 ];
-makepoly(ldraw_lib__004219b(), line=0.2);
+module ldraw_lib__004219b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__004219b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__004219b(line=0.2);

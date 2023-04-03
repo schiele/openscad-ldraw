@@ -824,4 +824,6 @@ function ldraw_lib__4162p08() = [
 // 3 16 0.249 0 4.265 -9.337 0 1.699 -8.345 0 1.836
   [3,16,0.249,0,4.265,-9.337,0,1.699,-8.345,0,1.836],
 ];
-makepoly(ldraw_lib__4162p08(), line=0.2);
+module ldraw_lib__4162p08(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__4162p08(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__4162p08(line=0.2);

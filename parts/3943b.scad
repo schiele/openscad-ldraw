@@ -103,4 +103,6 @@ function ldraw_lib__3943b() = [
 // 1 16 0 44 0 0 0 -20 0 -44 0 20 0 0 48\1-4con1.dat
   [1,16,0,44,0,0,0,-20,0,-44,0,20,0,0, ldraw_lib__48__1_4con1()],
 ];
-makepoly(ldraw_lib__3943b(), line=0.2);
+module ldraw_lib__3943b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3943b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3943b(line=0.2);

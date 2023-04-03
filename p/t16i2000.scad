@@ -57,4 +57,6 @@ function ldraw_lib__t16i2000() = [
   [5,24,0.8532,0.1848,0.3534,0.9239,0.2,0.3827,0.7068,0.1848,0.7068,0.9235,0.1848,0],
 // 0 // Build by Primitive Generator 2
 ];
-makepoly(ldraw_lib__t16i2000(), line=0.2);
+module ldraw_lib__t16i2000(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__t16i2000(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__t16i2000(line=0.2);

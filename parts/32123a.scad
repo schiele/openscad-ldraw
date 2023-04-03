@@ -73,4 +73,6 @@ function ldraw_lib__32123a() = [
 // 1 16 0 0 0 0 0 -9 9 0 0 0 -10 0 t04i2500.dat
   [1,16,0,0,0,0,0,-9,9,0,0,0,-10,0, ldraw_lib__t04i2500()],
 ];
-makepoly(ldraw_lib__32123a(), line=0.2);
+module ldraw_lib__32123a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__32123a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__32123a(line=0.2);

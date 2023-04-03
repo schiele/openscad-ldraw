@@ -161,4 +161,6 @@ function ldraw_lib__type_swiss721bt_bold_lg() = [
 // 4 0 .116 0 -.292 .069 0 -.332 .122 0 -.446 .155 0 -.402
   [4,0,.116,0,-.292,.069,0,-.332,.122,0,-.446,.155,0,-.402],
 ];
-makepoly(ldraw_lib__type_swiss721bt_bold_lg(), line=0.2);
+module ldraw_lib__type_swiss721bt_bold_lg(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__type_swiss721bt_bold_lg(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__type_swiss721bt_bold_lg(line=0.2);

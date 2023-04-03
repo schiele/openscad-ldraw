@@ -490,4 +490,6 @@ function ldraw_lib__48__r08o3000() = [
   [5,24,2.8102,0.3915,2.8102,2.8284,0,2.8284,2.4402,0.3915,3.1802,3.1531,0.3915,2.4195],
 // 0 // Build by LDPartEditor (PrimGen 2.X)
 ];
-makepoly(ldraw_lib__48__r08o3000(), line=0.2);
+module ldraw_lib__48__r08o3000(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__48__r08o3000(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__48__r08o3000(line=0.2);

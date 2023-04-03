@@ -3432,4 +3432,6 @@ function ldraw_lib__973pm2() = [
 // 4 16 4.558 24.507 10 4.132 24.492 10 4.84 23.6 10 4.88 24.415 10
   [4,16,4.558,24.507,10,4.132,24.492,10,4.84,23.6,10,4.88,24.415,10],
 ];
-makepoly(ldraw_lib__973pm2(), line=0.2);
+module ldraw_lib__973pm2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973pm2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973pm2(line=0.2);

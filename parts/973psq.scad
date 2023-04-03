@@ -270,4 +270,6 @@ function ldraw_lib__973psq() = [
 // 3 80 5.02 10.41 -10 6.906 11.01 -10 7.428 11.01 -10
   [3,80,5.02,10.41,-10,6.906,11.01,-10,7.428,11.01,-10],
 ];
-makepoly(ldraw_lib__973psq(), line=0.2);
+module ldraw_lib__973psq(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973psq(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973psq(line=0.2);

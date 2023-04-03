@@ -62,4 +62,6 @@ function ldraw_lib__3815phb() = [
 // 4 16 -15.25 0.25 -10 -18 0 -10 18 0 -10 15.75 0.25 -10
   [4,16,-15.25,0.25,-10,-18,0,-10,18,0,-10,15.75,0.25,-10],
 ];
-makepoly(ldraw_lib__3815phb(), line=0.2);
+module ldraw_lib__3815phb(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3815phb(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3815phb(line=0.2);

@@ -106,4 +106,6 @@ function ldraw_lib__typestuv() = [
 // 3 16 0.82 0 -5 4.36 0 -5 1.5 0 -2.53
   [3,16,0.82,0,-5,4.36,0,-5,1.5,0,-2.53],
 ];
-makepoly(ldraw_lib__typestuv(), line=0.2);
+module ldraw_lib__typestuv(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__typestuv(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__typestuv(line=0.2);

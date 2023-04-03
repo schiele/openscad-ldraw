@@ -30,4 +30,6 @@ function ldraw_lib__3068bpfd() = [
 // 1 2 0 0 0 1 0 0 0 1 0 0 0 1 s\3068bpfds03.dat
   [1,2,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3068bpfds03()],
 ];
-makepoly(ldraw_lib__3068bpfd(), line=0.2);
+module ldraw_lib__3068bpfd(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3068bpfd(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3068bpfd(line=0.2);

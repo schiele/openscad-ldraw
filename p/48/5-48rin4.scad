@@ -25,4 +25,6 @@ function ldraw_lib__48__5_48rin4() = [
   [4,16,4.33,0,2.5,3.967,0,3.044,3.1736,0,2.4352,3.464,0,2],
 // 0 // Build by Primitive Generator 2
 ];
-makepoly(ldraw_lib__48__5_48rin4(), line=0.2);
+module ldraw_lib__48__5_48rin4(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__48__5_48rin4(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__48__5_48rin4(line=0.2);

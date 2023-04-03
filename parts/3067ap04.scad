@@ -98,4 +98,6 @@ function ldraw_lib__3067ap04() = [
 // 4 16 -60 24 -10 -26 18.667 -10 26.333 18.667 -10 60 24 -10
   [4,16,-60,24,-10,-26,18.667,-10,26.333,18.667,-10,60,24,-10],
 ];
-makepoly(ldraw_lib__3067ap04(), line=0.2);
+module ldraw_lib__3067ap04(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3067ap04(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3067ap04(line=0.2);

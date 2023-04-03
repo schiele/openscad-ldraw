@@ -191,4 +191,6 @@ function ldraw_lib__2335p45() = [
 // 3 16 -2 32.4 30 -2 31.3 32.3 -2 40 50
   [3,16,-2,32.4,30,-2,31.3,32.3,-2,40,50],
 ];
-makepoly(ldraw_lib__2335p45(), line=0.2);
+module ldraw_lib__2335p45(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__2335p45(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__2335p45(line=0.2);

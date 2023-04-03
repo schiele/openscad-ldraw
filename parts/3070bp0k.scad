@@ -90,4 +90,6 @@ function ldraw_lib__3070bp0k() = [
 // 4 16 -9.25 0 9.25 -10 0 10 -10 0 -10 -9.25 0 -9.25
   [4,16,-9.25,0,9.25,-10,0,10,-10,0,-10,-9.25,0,-9.25],
 ];
-makepoly(ldraw_lib__3070bp0k(), line=0.2);
+module ldraw_lib__3070bp0k(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3070bp0k(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3070bp0k(line=0.2);

@@ -56,4 +56,6 @@ function ldraw_lib__8__stud20() = [
 // 5 24 8.4 -11 8.4 8.4 0 8.4 12 -11 0 0 -11 12
   [5,24,8.4,-11,8.4,8.4,0,8.4,12,-11,0,0,-11,12],
 ];
-makepoly(ldraw_lib__8__stud20(), line=0.2);
+module ldraw_lib__8__stud20(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__8__stud20(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__8__stud20(line=0.2);

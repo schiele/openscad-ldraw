@@ -24,4 +24,6 @@ function ldraw_lib__51560_f1() = [
 // 1 4 -58 0 237.1 0.99255 0 0.12187 0 1 0 -0.12187 0 0.99255 51944.dat
   [1,4,-58,0,237.1,0.99255,0,0.12187,0,1,0,-0.12187,0,0.99255, ldraw_lib__51944()],
 ];
-makepoly(ldraw_lib__51560_f1(), line=0.2);
+module ldraw_lib__51560_f1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__51560_f1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__51560_f1(line=0.2);

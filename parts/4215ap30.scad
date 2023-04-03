@@ -605,4 +605,6 @@ function ldraw_lib__4215ap30() = [
 // 4 16 9.75 23 10 9.75 26 10 2.25 26 10 2.25 23 10
   [4,16,9.75,23,10,9.75,26,10,2.25,26,10,2.25,23,10],
 ];
-makepoly(ldraw_lib__4215ap30(), line=0.2);
+module ldraw_lib__4215ap30(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__4215ap30(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__4215ap30(line=0.2);

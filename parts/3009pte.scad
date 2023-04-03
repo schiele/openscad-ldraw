@@ -349,4 +349,6 @@ function ldraw_lib__3009pte() = [
 // 3 16 30.811 8.916 -10 30.811 17.5 -10 34.793 8.916 -10
   [3,16,30.811,8.916,-10,30.811,17.5,-10,34.793,8.916,-10],
 ];
-makepoly(ldraw_lib__3009pte(), line=0.2);
+module ldraw_lib__3009pte(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3009pte(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3009pte(line=0.2);

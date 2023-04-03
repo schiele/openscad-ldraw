@@ -24,4 +24,6 @@ function ldraw_lib__98138p1f() = [
 // 1 5 0 0 0 1 0 0 0 1 0 0 0 1 s\98138p1ds02.dat
   [1,5,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138p1ds02()],
 ];
-makepoly(ldraw_lib__98138p1f(), line=0.2);
+module ldraw_lib__98138p1f(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__98138p1f(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__98138p1f(line=0.2);

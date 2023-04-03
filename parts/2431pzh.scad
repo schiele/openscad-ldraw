@@ -42,4 +42,6 @@ function ldraw_lib__2431pzh() = [
 // 4 16 40 0 10 -40 0 10 -39.5 0 6.3 39.5 0 6.3
   [4,16,40,0,10,-40,0,10,-39.5,0,6.3,39.5,0,6.3],
 ];
-makepoly(ldraw_lib__2431pzh(), line=0.2);
+module ldraw_lib__2431pzh(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__2431pzh(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__2431pzh(line=0.2);

@@ -2255,4 +2255,6 @@ function ldraw_lib__3039pcc() = [
 // 3 16 -14.8 0.85 -10.85 -14.8 2.26 -12.26 -14.3 1.56 -11.56
   [3,16,-14.8,0.85,-10.85,-14.8,2.26,-12.26,-14.3,1.56,-11.56],
 ];
-makepoly(ldraw_lib__3039pcc(), line=0.2);
+module ldraw_lib__3039pcc(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3039pcc(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3039pcc(line=0.2);

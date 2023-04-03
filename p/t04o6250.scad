@@ -136,4 +136,6 @@ function ldraw_lib__t04o6250() = [
 // 5 24 0 0.2392 1.5774 0 0 1.625 -0.6534 0.2392 1.5774 0.6037 0.2392 1.4574
   [5,24,0,0.2392,1.5774,0,0,1.625,-0.6534,0.2392,1.5774,0.6037,0.2392,1.4574],
 ];
-makepoly(ldraw_lib__t04o6250(), line=0.2);
+module ldraw_lib__t04o6250(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__t04o6250(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__t04o6250(line=0.2);

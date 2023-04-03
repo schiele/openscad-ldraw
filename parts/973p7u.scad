@@ -32,4 +32,6 @@ function ldraw_lib__973p7u() = [
 // 1 82 8.89 12.19 -10 0.64 0 0 0 0 -0.64 0 1 0 s\3070bp70a.dat
   [1,82,8.89,12.19,-10,0.64,0,0,0,0,-0.64,0,1,0, ldraw_lib__s__3070bp70a()],
 ];
-makepoly(ldraw_lib__973p7u(), line=0.2);
+module ldraw_lib__973p7u(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973p7u(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973p7u(line=0.2);

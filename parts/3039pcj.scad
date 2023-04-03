@@ -1791,4 +1791,6 @@ function ldraw_lib__3039pcj() = [
 // 3 14 -11.7 14.0714 -24.0714 -8 13.93 -23.93 -9 13.2229 -23.2229
   [3,14,-11.7,14.0714,-24.0714,-8,13.93,-23.93,-9,13.2229,-23.2229],
 ];
-makepoly(ldraw_lib__3039pcj(), line=0.2);
+module ldraw_lib__3039pcj(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3039pcj(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3039pcj(line=0.2);

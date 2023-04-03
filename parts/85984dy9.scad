@@ -22,4 +22,6 @@ function ldraw_lib__85984dy9() = [
 // 1 16 0 -9.8 -.3334 -1 0 0 0 .85749 .5145 0 .5145 -.85749 6141875j.dat
   [1,16,0,-9.8,-.3334,-1,0,0,0,.85749,.5145,0,.5145,-.85749, ldraw_lib__6141875j()],
 ];
-makepoly(ldraw_lib__85984dy9(), line=0.2);
+module ldraw_lib__85984dy9(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__85984dy9(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__85984dy9(line=0.2);

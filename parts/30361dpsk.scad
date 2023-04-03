@@ -1305,4 +1305,6 @@ function ldraw_lib__30361dpsk() = [
 // 4 0 -6.769 27.8 -18.651 -6.966 27.6 -18.612 -7.652 27.6 -18.475 -7.652 27.8 -18.475
   [4,0,-6.769,27.8,-18.651,-6.966,27.6,-18.612,-7.652,27.6,-18.475,-7.652,27.8,-18.475],
 ];
-makepoly(ldraw_lib__30361dpsk(), line=0.2);
+module ldraw_lib__30361dpsk(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__30361dpsk(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__30361dpsk(line=0.2);

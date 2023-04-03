@@ -278,4 +278,6 @@ function ldraw_lib__wpin4() = [
 // 5 24 -5 -7 0 -5 -6.4 0 -4.94923 -6.95434 -0.25513 -4.94923 -6.95434 0.25513
   [5,24,-5,-7,0,-5,-6.4,0,-4.94923,-6.95434,-0.25513,-4.94923,-6.95434,0.25513],
 ];
-makepoly(ldraw_lib__wpin4(), line=0.2);
+module ldraw_lib__wpin4(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__wpin4(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__wpin4(line=0.2);

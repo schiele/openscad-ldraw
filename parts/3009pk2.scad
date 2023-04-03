@@ -3943,4 +3943,6 @@ function ldraw_lib__3009pk2() = [
 // 3 16 4.5 0 -10 8.901 19.572 -10 8.898 15.834 -10
   [3,16,4.5,0,-10,8.901,19.572,-10,8.898,15.834,-10],
 ];
-makepoly(ldraw_lib__3009pk2(), line=0.2);
+module ldraw_lib__3009pk2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3009pk2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3009pk2(line=0.2);

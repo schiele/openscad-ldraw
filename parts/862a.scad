@@ -162,4 +162,6 @@ function ldraw_lib__862a() = [
 // 1 16 0 16 0 2 0 0 0 -4 0 0 0 16 box3u8p.dat
   [1,16,0,16,0,2,0,0,0,-4,0,0,0,16, ldraw_lib__box3u8p()],
 ];
-makepoly(ldraw_lib__862a(), line=0.2);
+module ldraw_lib__862a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__862a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__862a(line=0.2);

@@ -85,4 +85,6 @@ function ldraw_lib__3010pzq() = [
 // 4 16 28.56 21.81 -10 -28.56 21.81 -10 -40 24 -10 40 24 -10
   [4,16,28.56,21.81,-10,-28.56,21.81,-10,-40,24,-10,40,24,-10],
 ];
-makepoly(ldraw_lib__3010pzq(), line=0.2);
+module ldraw_lib__3010pzq(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3010pzq(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3010pzq(line=0.2);

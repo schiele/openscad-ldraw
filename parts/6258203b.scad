@@ -2334,4 +2334,6 @@ function ldraw_lib__6258203b() = [
 // 1 0 -34.75 -.25 -14.5 1.2 0 0 0 1 0 0 0 1.2 4-4disc.dat
   [1,0,-34.75,-.25,-14.5,1.2,0,0,0,1,0,0,0,1.2, ldraw_lib__4_4disc()],
 ];
-makepoly(ldraw_lib__6258203b(), line=0.2);
+module ldraw_lib__6258203b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__6258203b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__6258203b(line=0.2);

@@ -108,4 +108,6 @@ function ldraw_lib__3815pw1() = [
 // 1 16 -2 12 0 0 4 0 -6.364 0 6.364 -6.364 0 -6.364 5-16cyli.dat
   [1,16,-2,12,0,0,4,0,-6.364,0,6.364,-6.364,0,-6.364, ldraw_lib__5_16cyli()],
 ];
-makepoly(ldraw_lib__3815pw1(), line=0.2);
+module ldraw_lib__3815pw1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3815pw1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3815pw1(line=0.2);

@@ -162,4 +162,6 @@ function ldraw_lib__3005pe5() = [
 // 4 0 -5 14.966 -10 -6.154 15.235 -10 -5.004 18.086 -10 -4.6 17.986 -10
   [4,0,-5,14.966,-10,-6.154,15.235,-10,-5.004,18.086,-10,-4.6,17.986,-10],
 ];
-makepoly(ldraw_lib__3005pe5(), line=0.2);
+module ldraw_lib__3005pe5(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3005pe5(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3005pe5(line=0.2);

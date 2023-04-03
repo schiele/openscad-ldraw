@@ -347,4 +347,6 @@ function ldraw_lib__32305() = [
 // 1 16 10 -20 60 0 -20 0 9 0 0 0 0 9 3-8cylo.dat
   [1,16,10,-20,60,0,-20,0,9,0,0,0,0,9, ldraw_lib__3_8cylo()],
 ];
-makepoly(ldraw_lib__32305(), line=0.2);
+module ldraw_lib__32305(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__32305(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__32305(line=0.2);

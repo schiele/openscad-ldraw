@@ -34,4 +34,6 @@ function ldraw_lib__s__87610s06() = [
 // 1 16 16 1.5 0 0 -1 -.07865 0 0 -1 1 0 0 2-4ring2.dat
   [1,16,16,1.5,0,0,-1,-.07865,0,0,-1,1,0,0, ldraw_lib__2_4ring2()],
 ];
-makepoly(ldraw_lib__s__87610s06(), line=0.2);
+module ldraw_lib__s__87610s06(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__87610s06(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__87610s06(line=0.2);

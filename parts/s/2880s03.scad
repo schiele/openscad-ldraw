@@ -22,4 +22,6 @@ function ldraw_lib__s__2880s03() = [
 // 4 16 4.035 0 4.465 5.525 0 7.449 6.025 0 7.433 7.43 0 4.387
   [4,16,4.035,0,4.465,5.525,0,7.449,6.025,0,7.433,7.43,0,4.387],
 ];
-makepoly(ldraw_lib__s__2880s03(), line=0.2);
+module ldraw_lib__s__2880s03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__2880s03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__2880s03(line=0.2);

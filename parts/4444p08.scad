@@ -701,4 +701,6 @@ function ldraw_lib__4444p08() = [
 // 4 16 30 144 -10 30 120 -10 -30 120 -10 -30 144 -10
   [4,16,30,144,-10,30,120,-10,-30,120,-10,-30,144,-10],
 ];
-makepoly(ldraw_lib__4444p08(), line=0.2);
+module ldraw_lib__4444p08(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__4444p08(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__4444p08(line=0.2);

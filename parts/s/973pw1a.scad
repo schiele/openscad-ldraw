@@ -79,4 +79,6 @@ function ldraw_lib__s__973pw1a() = [
   [3,16,1.755,1.21,0,-0.082,1.118,0,-0.545,1.21,0],
 // 0
 ];
-makepoly(ldraw_lib__s__973pw1a(), line=0.2);
+module ldraw_lib__s__973pw1a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__973pw1a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__973pw1a(line=0.2);

@@ -90,4 +90,6 @@ function ldraw_lib__99146() = [
 // 1 16 -8.7 0 8.7 0 0 -1 0 0.3 0 1 0 0 1-4chrd.dat
   [1,16,-8.7,0,8.7,0,0,-1,0,0.3,0,1,0,0, ldraw_lib__1_4chrd()],
 ];
-makepoly(ldraw_lib__99146(), line=0.2);
+module ldraw_lib__99146(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__99146(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__99146(line=0.2);

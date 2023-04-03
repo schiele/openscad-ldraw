@@ -896,4 +896,6 @@ function ldraw_lib__973psr() = [
 // 3 0 -7.82 14 10 -7.26 14 10 -9 15 10
   [3,0,-7.82,14,10,-7.26,14,10,-9,15,10],
 ];
-makepoly(ldraw_lib__973psr(), line=0.2);
+module ldraw_lib__973psr(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973psr(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973psr(line=0.2);

@@ -125,4 +125,6 @@ function ldraw_lib__s__3815pbda() = [
   [4,16,14.897,3.757,-10,14.796,3.908,-10,17.168,5.221,-10,17.269,1.03,-10],
 // 
 ];
-makepoly(ldraw_lib__s__3815pbda(), line=0.2);
+module ldraw_lib__s__3815pbda(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__3815pbda(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__3815pbda(line=0.2);

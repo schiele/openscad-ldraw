@@ -1240,4 +1240,6 @@ function ldraw_lib__3626cp8r() = [
 // 1 16 0 4 0 -9.19239 0 -9.19239 0 13 0 9.19239 0 -9.19239 1-4cyli.dat
   [1,16,0,4,0,-9.19239,0,-9.19239,0,13,0,9.19239,0,-9.19239, ldraw_lib__1_4cyli()],
 ];
-makepoly(ldraw_lib__3626cp8r(), line=0.2);
+module ldraw_lib__3626cp8r(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3626cp8r(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3626cp8r(line=0.2);

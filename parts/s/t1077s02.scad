@@ -474,4 +474,6 @@ function ldraw_lib__s__t1077s02() = [
 // 5 24 3.14 47.8975 -17.5 3.14 47.8975 -8 2.22 47.66 -8.48 6.265 47.59 -17.5
   [5,24,3.14,47.8975,-17.5,3.14,47.8975,-8,2.22,47.66,-8.48,6.265,47.59,-17.5],
 ];
-makepoly(ldraw_lib__s__t1077s02(), line=0.2);
+module ldraw_lib__s__t1077s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__t1077s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__t1077s02(line=0.2);

@@ -188,4 +188,6 @@ function ldraw_lib__axlecaph() = [
 // 2 24 1 1 -2 2 0 -2
   [2,24,1,1,-2,2,0,-2],
 ];
-makepoly(ldraw_lib__axlecaph(), line=0.2);
+module ldraw_lib__axlecaph(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__axlecaph(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__axlecaph(line=0.2);

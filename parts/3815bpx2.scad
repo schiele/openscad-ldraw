@@ -360,4 +360,6 @@ function ldraw_lib__3815bpx2() = [
 // 4 16 18 6 -10 7.9 5.5 -10 7.3 5.5 -10 0 6 -10
   [4,16,18,6,-10,7.9,5.5,-10,7.3,5.5,-10,0,6,-10],
 ];
-makepoly(ldraw_lib__3815bpx2(), line=0.2);
+module ldraw_lib__3815bpx2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3815bpx2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3815bpx2(line=0.2);

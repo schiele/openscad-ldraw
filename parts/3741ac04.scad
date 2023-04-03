@@ -26,4 +26,6 @@ function ldraw_lib__3741ac04() = [
 // 1 16 14.761 -25.356 -8.522 -0.5 -0.22414 0.83652 0 0.96593 0.25882 -0.86603 0.12941 -0.48296 95829.dat
   [1,16,14.761,-25.356,-8.522,-0.5,-0.22414,0.83652,0,0.96593,0.25882,-0.86603,0.12941,-0.48296, ldraw_lib__95829()],
 ];
-makepoly(ldraw_lib__3741ac04(), line=0.2);
+module ldraw_lib__3741ac04(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3741ac04(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3741ac04(line=0.2);

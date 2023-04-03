@@ -298,4 +298,6 @@ function ldraw_lib__zstud() = [
   [4,16,-2.75,-10,5.5,2.75,-10,5.5,2,-8,5.654,-2,-8,5.654],
 // 0
 ];
-makepoly(ldraw_lib__zstud(), line=0.2);
+module ldraw_lib__zstud(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__zstud(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__zstud(line=0.2);

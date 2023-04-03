@@ -95,4 +95,6 @@ function ldraw_lib__4599a() = [
 // 1 16 0 4 17 2 0 0 0 0 -2 0 3 0 4-4cylc.dat
   [1,16,0,4,17,2,0,0,0,0,-2,0,3,0, ldraw_lib__4_4cylc()],
 ];
-makepoly(ldraw_lib__4599a(), line=0.2);
+module ldraw_lib__4599a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__4599a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__4599a(line=0.2);

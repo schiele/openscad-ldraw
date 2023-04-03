@@ -202,4 +202,6 @@ function ldraw_lib__4865bp02() = [
 // 4 72 7.845 14.893 10 13.955 16.507 10 16.867 17.637 10 19 19.222 10
   [4,72,7.845,14.893,10,13.955,16.507,10,16.867,17.637,10,19,19.222,10],
 ];
-makepoly(ldraw_lib__4865bp02(), line=0.2);
+module ldraw_lib__4865bp02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__4865bp02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__4865bp02(line=0.2);

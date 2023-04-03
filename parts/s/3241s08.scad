@@ -44,4 +44,6 @@ function ldraw_lib__s__3241s08() = [
 // 2 24 3 0 1 -3 0 1
   [2,24,3,0,1,-3,0,1],
 ];
-makepoly(ldraw_lib__s__3241s08(), line=0.2);
+module ldraw_lib__s__3241s08(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__3241s08(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__3241s08(line=0.2);

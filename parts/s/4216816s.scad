@@ -21,4 +21,6 @@ function ldraw_lib__s__4216816s() = [
   [4,16,0.73,0,0.45,0.73,0,-0.45,0.45,0,-0.55,0.45,0,0.55],
 // 0
 ];
-makepoly(ldraw_lib__s__4216816s(), line=0.2);
+module ldraw_lib__s__4216816s(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__4216816s(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__4216816s(line=0.2);

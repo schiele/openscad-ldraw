@@ -60,4 +60,6 @@ function ldraw_lib__stud4f3s() = [
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 -1 st4jfil3.dat
   [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__st4jfil3()],
 ];
-makepoly(ldraw_lib__stud4f3s(), line=0.2);
+module ldraw_lib__stud4f3s(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__stud4f3s(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__stud4f3s(line=0.2);

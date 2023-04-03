@@ -42,4 +42,6 @@ function ldraw_lib__6309p0z() = [
   [4,4,-38,0,-38,-38,0,0,38,0,0,38,0,-38],
 // 0
 ];
-makepoly(ldraw_lib__6309p0z(), line=0.2);
+module ldraw_lib__6309p0z(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__6309p0z(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__6309p0z(line=0.2);

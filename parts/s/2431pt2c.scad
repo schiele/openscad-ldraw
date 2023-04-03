@@ -284,4 +284,6 @@ function ldraw_lib__s__2431pt2c() = [
 // 4 16 38 0 -44 47.5675 0 -42.478 45.80708 0 -35.0868 42.05756 0 -36
   [4,16,38,0,-44,47.5675,0,-42.478,45.80708,0,-35.0868,42.05756,0,-36],
 ];
-makepoly(ldraw_lib__s__2431pt2c(), line=0.2);
+module ldraw_lib__s__2431pt2c(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__2431pt2c(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__2431pt2c(line=0.2);

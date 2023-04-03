@@ -164,4 +164,6 @@ function ldraw_lib__typestuf() = [
 // 4 16 1.66 0 -1.91 1.66 0 -1.33 1.61 0 -1.12 0.774 0 -1.91
   [4,16,1.66,0,-1.91,1.66,0,-1.33,1.61,0,-1.12,0.774,0,-1.91],
 ];
-makepoly(ldraw_lib__typestuf(), line=0.2);
+module ldraw_lib__typestuf(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__typestuf(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__typestuf(line=0.2);

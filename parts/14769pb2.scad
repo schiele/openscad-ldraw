@@ -417,4 +417,6 @@ function ldraw_lib__14769pb2() = [
 // 3 16 -18.478 0 7.654 -20 0 0 -17.74 0 2.46
   [3,16,-18.478,0,7.654,-20,0,0,-17.74,0,2.46],
 ];
-makepoly(ldraw_lib__14769pb2(), line=0.2);
+module ldraw_lib__14769pb2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__14769pb2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__14769pb2(line=0.2);

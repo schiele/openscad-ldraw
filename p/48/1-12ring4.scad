@@ -23,4 +23,6 @@ function ldraw_lib__48__1_12ring4() = [
   [4,16,4.6195,0,1.9135,4.33,0,2.5,3.464,0,2,3.6956,0,1.5308],
 // 0 // Build by Primitive Generator 2
 ];
-makepoly(ldraw_lib__48__1_12ring4(), line=0.2);
+module ldraw_lib__48__1_12ring4(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__48__1_12ring4(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__48__1_12ring4(line=0.2);

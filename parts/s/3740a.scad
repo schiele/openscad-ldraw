@@ -44,4 +44,6 @@ function ldraw_lib__s__3740a() = [
 // 5 24 53.8036 3.0215 -30 53.8036 3.0215 30 53.8036 -3.0215 30 53.1269 9.0266 -30
   [5,24,53.8036,3.0215,-30,53.8036,3.0215,30,53.8036,-3.0215,30,53.1269,9.0266,-30],
 ];
-makepoly(ldraw_lib__s__3740a(), line=0.2);
+module ldraw_lib__s__3740a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__3740a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__3740a(line=0.2);

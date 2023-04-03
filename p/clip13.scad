@@ -76,4 +76,6 @@ function ldraw_lib__clip13() = [
 // 3 16 0 -4 4.0001 4 -4 4 6.3256 -4 4.1965
   [3,16,0,-4,4.0001,4,-4,4,6.3256,-4,4.1965],
 ];
-makepoly(ldraw_lib__clip13(), line=0.2);
+module ldraw_lib__clip13(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__clip13(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__clip13(line=0.2);

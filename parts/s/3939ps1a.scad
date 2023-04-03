@@ -473,4 +473,6 @@ function ldraw_lib__s__3939ps1a() = [
   [3,0,37.1097,13.0548,-36.1105,36.5246,13.9384,-37.8776,36.9167,13.0548,-36.1105],
 // 0
 ];
-makepoly(ldraw_lib__s__3939ps1a(), line=0.2);
+module ldraw_lib__s__3939ps1a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__3939ps1a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__3939ps1a(line=0.2);

@@ -42,4 +42,6 @@ function ldraw_lib__s__letca() = [
   [4,16,5.45,16.95,-10,4.036,15.535,-10,5.12,13.913,-10,6.967,14.679,-10],
 // 0
 ];
-makepoly(ldraw_lib__s__letca(), line=0.2);
+module ldraw_lib__s__letca(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__letca(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__letca(line=0.2);

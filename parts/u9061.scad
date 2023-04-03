@@ -131,4 +131,6 @@ function ldraw_lib__u9061() = [
 // 1 16 -17.5 0 -12 -3.5 0 0 0 0 3.5 0 12 0 4-4cylc.dat
   [1,16,-17.5,0,-12,-3.5,0,0,0,0,3.5,0,12,0, ldraw_lib__4_4cylc()],
 ];
-makepoly(ldraw_lib__u9061(), line=0.2);
+module ldraw_lib__u9061(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__u9061(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__u9061(line=0.2);

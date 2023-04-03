@@ -131,4 +131,6 @@ function ldraw_lib__stud22a() = [
 // 5 24 -7.391 -4 -3.062 -7.391 0 -3.062 -5.657 -4 -5.657 -7.6023 -4 -2
   [5,24,-7.391,-4,-3.062,-7.391,0,-3.062,-5.657,-4,-5.657,-7.6023,-4,-2],
 ];
-makepoly(ldraw_lib__stud22a(), line=0.2);
+module ldraw_lib__stud22a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__stud22a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__stud22a(line=0.2);

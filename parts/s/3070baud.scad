@@ -28,4 +28,6 @@ function ldraw_lib__s__3070baud() = [
   [4,16,-.5,0,6,-2,0,6,-2,0,7.5,-.5,0,7.5],
 // 0
 ];
-makepoly(ldraw_lib__s__3070baud(), line=0.2);
+module ldraw_lib__s__3070baud(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__3070baud(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__3070baud(line=0.2);

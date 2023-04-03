@@ -73,4 +73,6 @@ function ldraw_lib__4867p10() = [
 // 4 0 -2 -57 88.5 -2 -57 107.5 -2 8.1666 67 -2 0.5 44
   [4,0,-2,-57,88.5,-2,-57,107.5,-2,8.1666,67,-2,0.5,44],
 ];
-makepoly(ldraw_lib__4867p10(), line=0.2);
+module ldraw_lib__4867p10(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__4867p10(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__4867p10(line=0.2);

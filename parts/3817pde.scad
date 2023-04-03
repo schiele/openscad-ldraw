@@ -48,4 +48,6 @@ function ldraw_lib__3817pde() = [
 // 5 24 2 3.42 -8.28 18.5 3.42 -8.28 2 6.74 -6 2 0 -9
   [5,24,2,3.42,-8.28,18.5,3.42,-8.28,2,6.74,-6,2,0,-9],
 ];
-makepoly(ldraw_lib__3817pde(), line=0.2);
+module ldraw_lib__3817pde(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3817pde(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3817pde(line=0.2);

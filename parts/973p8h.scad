@@ -770,4 +770,6 @@ function ldraw_lib__973p8h() = [
 // 3 16 4.8 23.4 -10 2.4 23.7 -10 2.4 25.1 -10
   [3,16,4.8,23.4,-10,2.4,23.7,-10,2.4,25.1,-10],
 ];
-makepoly(ldraw_lib__973p8h(), line=0.2);
+module ldraw_lib__973p8h(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973p8h(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973p8h(line=0.2);

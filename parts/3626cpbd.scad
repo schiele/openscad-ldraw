@@ -1860,4 +1860,6 @@ function ldraw_lib__3626cpbd() = [
   [3,16,-7.631,13.556,10.236,-4.975,7.473,12.011,-7.43,13.824,10.37],
 // 
 ];
-makepoly(ldraw_lib__3626cpbd(), line=0.2);
+module ldraw_lib__3626cpbd(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3626cpbd(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3626cpbd(line=0.2);

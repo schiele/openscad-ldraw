@@ -25,4 +25,6 @@ function ldraw_lib__48__2_4cylc() = [
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 48\2-4cyli.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__48__2_4cyli()],
 ];
-makepoly(ldraw_lib__48__2_4cylc(), line=0.2);
+module ldraw_lib__48__2_4cylc(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__48__2_4cylc(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__48__2_4cylc(line=0.2);

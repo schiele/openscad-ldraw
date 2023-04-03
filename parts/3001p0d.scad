@@ -86,4 +86,6 @@ function ldraw_lib__3001p0d() = [
 // 3 4 40 19 -20 33 19 -20 40 23 -20
   [3,4,40,19,-20,33,19,-20,40,23,-20],
 ];
-makepoly(ldraw_lib__3001p0d(), line=0.2);
+module ldraw_lib__3001p0d(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3001p0d(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3001p0d(line=0.2);

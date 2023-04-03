@@ -43,4 +43,6 @@ function ldraw_lib__973p4a() = [
 // 1 15 0 0 0 1 0 0 0 1 0 0 0 1 s\973p4ab.dat
   [1,15,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973p4ab()],
 ];
-makepoly(ldraw_lib__973p4a(), line=0.2);
+module ldraw_lib__973p4a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973p4a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973p4a(line=0.2);

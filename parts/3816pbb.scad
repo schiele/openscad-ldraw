@@ -353,4 +353,6 @@ function ldraw_lib__3816pbb() = [
   [3,16,-16.171,7.7,-6,-16.106,6.74,-6,-18.64,6.74,-6],
 // 
 ];
-makepoly(ldraw_lib__3816pbb(), line=0.2);
+module ldraw_lib__3816pbb(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3816pbb(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3816pbb(line=0.2);

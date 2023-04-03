@@ -5832,4 +5832,6 @@ function ldraw_lib__3001pk1() = [
 // 4 378 26.24 21.51 -20 26.195 21.563 -20 26.267 21.645 -20 26.338 21.542 -20
   [4,378,26.24,21.51,-20,26.195,21.563,-20,26.267,21.645,-20,26.338,21.542,-20],
 ];
-makepoly(ldraw_lib__3001pk1(), line=0.2);
+module ldraw_lib__3001pk1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3001pk1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3001pk1(line=0.2);

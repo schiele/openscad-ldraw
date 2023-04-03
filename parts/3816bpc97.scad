@@ -17,4 +17,6 @@ function ldraw_lib__3816bpc97() = [
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 3817bpc97.dat
   [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__3817bpc97()],
 ];
-makepoly(ldraw_lib__3816bpc97(), line=0.2);
+module ldraw_lib__3816bpc97(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3816bpc97(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3816bpc97(line=0.2);

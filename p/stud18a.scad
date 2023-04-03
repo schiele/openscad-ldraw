@@ -954,4 +954,6 @@ function ldraw_lib__stud18a() = [
   [5,24,6.681,-3.924,-1.606,6.606,-4,-1.981,5.606,-4,-1.981,6.981,-3.924,-2.056],
 // 
 ];
-makepoly(ldraw_lib__stud18a(), line=0.2);
+module ldraw_lib__stud18a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__stud18a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__stud18a(line=0.2);

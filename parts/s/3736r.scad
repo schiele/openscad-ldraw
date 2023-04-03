@@ -223,4 +223,6 @@ function ldraw_lib__s__3736r() = [
   [5,24,10.39,-1,-36.37,10.39,0,-36.37,14.54,-1,-35.11,8.732,0,-35.68],
 // 0
 ];
-makepoly(ldraw_lib__s__3736r(), line=0.2);
+module ldraw_lib__s__3736r(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__3736r(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__3736r(line=0.2);

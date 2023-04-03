@@ -258,4 +258,6 @@ function ldraw_lib__3622px3() = [
 // 3 16 -13.45 11.45 -10 -30 24 -10 -13.45 14.7 -10
   [3,16,-13.45,11.45,-10,-30,24,-10,-13.45,14.7,-10],
 ];
-makepoly(ldraw_lib__3622px3(), line=0.2);
+module ldraw_lib__3622px3(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3622px3(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3622px3(line=0.2);

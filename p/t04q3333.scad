@@ -30,4 +30,6 @@ function ldraw_lib__t04q3333() = [
 // 1 16 0 0 0 1 0 0 0 -1 0 0 0 1 t04o3333.dat
   [1,16,0,0,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__t04o3333()],
 ];
-makepoly(ldraw_lib__t04q3333(), line=0.2);
+module ldraw_lib__t04q3333(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__t04q3333(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__t04q3333(line=0.2);

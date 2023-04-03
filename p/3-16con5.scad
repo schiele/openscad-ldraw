@@ -30,4 +30,6 @@ function ldraw_lib__3_16con5() = [
   [5,24,1.9135,1,4.6195,2.2962,0,5.5434,3.5355,1,3.5355,0,1,5.412],
 // 0 // Build by LDPartEditor (PrimGen 2.X)
 ];
-makepoly(ldraw_lib__3_16con5(), line=0.2);
+module ldraw_lib__3_16con5(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3_16con5(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3_16con5(line=0.2);

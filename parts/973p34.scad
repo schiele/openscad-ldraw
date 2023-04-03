@@ -314,4 +314,6 @@ function ldraw_lib__973p34() = [
 // 4 16 -4.5 25 -10 -5.833 23 -10 -7.833 23 -10 -18.31 25 -10
   [4,16,-4.5,25,-10,-5.833,23,-10,-7.833,23,-10,-18.31,25,-10],
 ];
-makepoly(ldraw_lib__973p34(), line=0.2);
+module ldraw_lib__973p34(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973p34(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973p34(line=0.2);

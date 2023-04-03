@@ -22,4 +22,6 @@ function ldraw_lib__1_8ring8() = [
 // 4 16 8.3151 0 3.4443 6.3639 0 6.3639 5.6568 0 5.6568 7.3912 0 3.0616
   [4,16,8.3151,0,3.4443,6.3639,0,6.3639,5.6568,0,5.6568,7.3912,0,3.0616],
 ];
-makepoly(ldraw_lib__1_8ring8(), line=0.2);
+module ldraw_lib__1_8ring8(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__1_8ring8(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__1_8ring8(line=0.2);

@@ -70,4 +70,6 @@ function ldraw_lib__3070bpts() = [
   [3,16,-5.5,0,3,-5.081,0,1.778,-6,0,-2.5],
 // 
 ];
-makepoly(ldraw_lib__3070bpts(), line=0.2);
+module ldraw_lib__3070bpts(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3070bpts(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3070bpts(line=0.2);

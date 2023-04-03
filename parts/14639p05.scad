@@ -29,4 +29,6 @@ function ldraw_lib__14639p05() = [
 // 1 15 40 38 80 0 0 -1 0 1 0 1 0 0 2313b.dat
   [1,15,40,38,80,0,0,-1,0,1,0,1,0,0, ldraw_lib__2313b()],
 ];
-makepoly(ldraw_lib__14639p05(), line=0.2);
+module ldraw_lib__14639p05(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__14639p05(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__14639p05(line=0.2);

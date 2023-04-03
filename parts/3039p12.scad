@@ -123,4 +123,6 @@ function ldraw_lib__3039p12() = [
   [4,16,-10,0,-10,-10,1.41421,-11.4142,-5,1.41421,-11.4142,-5,0,-10],
 // 0
 ];
-makepoly(ldraw_lib__3039p12(), line=0.2);
+module ldraw_lib__3039p12(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3039p12(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3039p12(line=0.2);

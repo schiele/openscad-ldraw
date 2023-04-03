@@ -504,4 +504,6 @@ function ldraw_lib__973psi() = [
 // 3 16 8.1 24.4 -10 4.8 25.3 -10 8.1 26 -10
   [3,16,8.1,24.4,-10,4.8,25.3,-10,8.1,26,-10],
 ];
-makepoly(ldraw_lib__973psi(), line=0.2);
+module ldraw_lib__973psi(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973psi(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973psi(line=0.2);

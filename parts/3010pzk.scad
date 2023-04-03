@@ -943,4 +943,6 @@ function ldraw_lib__3010pzk() = [
 // 4 320 12.91 6.94 -10 8.623 11.221 -10 5.965 14.041 -10 0 21.56 -10
   [4,320,12.91,6.94,-10,8.623,11.221,-10,5.965,14.041,-10,0,21.56,-10],
 ];
-makepoly(ldraw_lib__3010pzk(), line=0.2);
+module ldraw_lib__3010pzk(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3010pzk(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3010pzk(line=0.2);

@@ -1221,4 +1221,6 @@ function ldraw_lib__3039pcl() = [
 // 4 322 17.1873 13.5996 -23.5996 17.1873 12.0326 -22.0326 13.4253 12.0326 -22.0326 13.4253 13.5996 -23.5996
   [4,322,17.1873,13.5996,-23.5996,17.1873,12.0326,-22.0326,13.4253,12.0326,-22.0326,13.4253,13.5996,-23.5996],
 ];
-makepoly(ldraw_lib__3039pcl(), line=0.2);
+module ldraw_lib__3039pcl(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3039pcl(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3039pcl(line=0.2);

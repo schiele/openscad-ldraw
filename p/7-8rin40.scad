@@ -43,4 +43,6 @@ function ldraw_lib__7_8rin40() = [
   [4,16,15.308,0,-36.956,15.6907,0,-37.8799,28.9911,0,-28.9911,28.284,0,-28.284],
 // 0
 ];
-makepoly(ldraw_lib__7_8rin40(), line=0.2);
+module ldraw_lib__7_8rin40(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__7_8rin40(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__7_8rin40(line=0.2);

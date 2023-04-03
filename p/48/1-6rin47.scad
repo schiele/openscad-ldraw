@@ -31,4 +31,6 @@ function ldraw_lib__48__1_6rin47() = [
   [4,16,29.2224,0,38.0832,24,0,41.568,23.5,0,40.702,28.6136,0,37.2898],
 // 0 // Built by Primitive Generator 2
 ];
-makepoly(ldraw_lib__48__1_6rin47(), line=0.2);
+module ldraw_lib__48__1_6rin47(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__48__1_6rin47(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__48__1_6rin47(line=0.2);

@@ -53,4 +53,6 @@ function ldraw_lib__s__611p01a() = [
   [4,15,33.5,0,-31,33.5,0,31,18.5,0,31,18.5,0,-31],
 // 0
 ];
-makepoly(ldraw_lib__s__611p01a(), line=0.2);
+module ldraw_lib__s__611p01a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__611p01a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__611p01a(line=0.2);

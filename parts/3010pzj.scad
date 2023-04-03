@@ -113,4 +113,6 @@ function ldraw_lib__3010pzj() = [
 // 3 16 35.95586 13.305 -10 32.73086 18.89086 -10 40 24 -10
   [3,16,35.95586,13.305,-10,32.73086,18.89086,-10,40,24,-10],
 ];
-makepoly(ldraw_lib__3010pzj(), line=0.2);
+module ldraw_lib__3010pzj(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3010pzj(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3010pzj(line=0.2);

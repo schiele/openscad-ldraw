@@ -95,4 +95,6 @@ function ldraw_lib__u9406() = [
 // 1 16 0 19.5 1 -10.5 0 0 0 -1 0 0 0 1 rect2p.dat
   [1,16,0,19.5,1,-10.5,0,0,0,-1,0,0,0,1, ldraw_lib__rect2p()],
 ];
-makepoly(ldraw_lib__u9406(), line=0.2);
+module ldraw_lib__u9406(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__u9406(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__u9406(line=0.2);

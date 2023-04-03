@@ -62,4 +62,6 @@ function ldraw_lib__48__11_48con28() = [
   [5,24,3.654,1,27.7592,3.7845,0,28.7506,7.2464,1,27.0452,0,1,28.2408],
 // 0 // Build by LDPartEditor (PrimGen 2.X)
 ];
-makepoly(ldraw_lib__48__11_48con28(), line=0.2);
+module ldraw_lib__48__11_48con28(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__48__11_48con28(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__48__11_48con28(line=0.2);

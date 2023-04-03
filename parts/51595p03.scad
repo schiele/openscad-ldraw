@@ -553,4 +553,6 @@ function ldraw_lib__51595p03() = [
 // 4 15 -104 0 80 -104 0 40 -98 0 -17 -98 0 137
   [4,15,-104,0,80,-104,0,40,-98,0,-17,-98,0,137],
 ];
-makepoly(ldraw_lib__51595p03(), line=0.2);
+module ldraw_lib__51595p03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__51595p03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__51595p03(line=0.2);

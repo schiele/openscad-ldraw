@@ -75,4 +75,6 @@ function ldraw_lib__2048() = [
 // 4 16 41.5 125 -90 -41.5 125 -90 -59 147.7979 -90 59 147.7979 -90
   [4,16,41.5,125,-90,-41.5,125,-90,-59,147.7979,-90,59,147.7979,-90],
 ];
-makepoly(ldraw_lib__2048(), line=0.2);
+module ldraw_lib__2048(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__2048(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__2048(line=0.2);

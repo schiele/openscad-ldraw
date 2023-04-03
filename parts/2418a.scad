@@ -62,4 +62,6 @@ function ldraw_lib__2418a() = [
 // 4 16 60 24 20 20 24 60 10 0 20 20 0 10
   [4,16,60,24,20,20,24,60,10,0,20,20,0,10],
 ];
-makepoly(ldraw_lib__2418a(), line=0.2);
+module ldraw_lib__2418a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__2418a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__2418a(line=0.2);

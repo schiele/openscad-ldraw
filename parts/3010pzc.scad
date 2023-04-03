@@ -29,4 +29,6 @@ function ldraw_lib__3010pzc() = [
 // 4 4 -10.9 0 -10 -10.9 24 -10 10.9 24 -10 10.9 0 -10
   [4,4,-10.9,0,-10,-10.9,24,-10,10.9,24,-10,10.9,0,-10],
 ];
-makepoly(ldraw_lib__3010pzc(), line=0.2);
+module ldraw_lib__3010pzc(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3010pzc(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3010pzc(line=0.2);

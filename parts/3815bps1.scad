@@ -672,4 +672,6 @@ function ldraw_lib__3815bps1() = [
 // 3 16 1.783 0.7385 -10 7.313 1.2301 -10 8.577 1.2301 -10
   [3,16,1.783,0.7385,-10,7.313,1.2301,-10,8.577,1.2301,-10],
 ];
-makepoly(ldraw_lib__3815bps1(), line=0.2);
+module ldraw_lib__3815bps1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3815bps1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3815bps1(line=0.2);

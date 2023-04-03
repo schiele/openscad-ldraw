@@ -1063,4 +1063,6 @@ function ldraw_lib__s__3626bpads01() = [
 // 3 16 -4.83 18.531 -11.659 -4.8 17.7 -11.8705 -4.975 17 -12.01
   [3,16,-4.83,18.531,-11.659,-4.8,17.7,-11.8705,-4.975,17,-12.01],
 ];
-makepoly(ldraw_lib__s__3626bpads01(), line=0.2);
+module ldraw_lib__s__3626bpads01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__3626bpads01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__3626bpads01(line=0.2);

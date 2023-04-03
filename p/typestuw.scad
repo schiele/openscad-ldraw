@@ -118,4 +118,6 @@ function ldraw_lib__typestuw() = [
 // 3 16 5.96 0 4.16 5.5 0 4.16 5.96 0 2.89
   [3,16,5.96,0,4.16,5.5,0,4.16,5.96,0,2.89],
 ];
-makepoly(ldraw_lib__typestuw(), line=0.2);
+module ldraw_lib__typestuw(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__typestuw(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__typestuw(line=0.2);

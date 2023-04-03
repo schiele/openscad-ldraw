@@ -777,4 +777,6 @@ function ldraw_lib__973pd6e() = [
 // 4 15 -1.48 25.44 -10 -0.97 27.7 -10 0.97 27.7 -10 1.48 25.44 -10
   [4,15,-1.48,25.44,-10,-0.97,27.7,-10,0.97,27.7,-10,1.48,25.44,-10],
 ];
-makepoly(ldraw_lib__973pd6e(), line=0.2);
+module ldraw_lib__973pd6e(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973pd6e(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973pd6e(line=0.2);

@@ -146,4 +146,6 @@ function ldraw_lib__s__3241s05() = [
 // 1 16 0 12 9 4 0 0 0 3.5 0 0 0 -7 box4-1.dat
   [1,16,0,12,9,4,0,0,0,3.5,0,0,0,-7, ldraw_lib__box4_1()],
 ];
-makepoly(ldraw_lib__s__3241s05(), line=0.2);
+module ldraw_lib__s__3241s05(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__3241s05(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__3241s05(line=0.2);

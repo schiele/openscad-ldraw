@@ -703,4 +703,6 @@ function ldraw_lib__973pbd() = [
 // 4 87 -1.615 28.295 10 0 28.295 10 0 29.962 10 -1.413 29.962 10
   [4,87,-1.615,28.295,10,0,28.295,10,0,29.962,10,-1.413,29.962,10],
 ];
-makepoly(ldraw_lib__973pbd(), line=0.2);
+module ldraw_lib__973pbd(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973pbd(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973pbd(line=0.2);

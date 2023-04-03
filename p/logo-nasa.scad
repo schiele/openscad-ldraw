@@ -123,4 +123,6 @@ function ldraw_lib__logo_nasa() = [
 // 3 16 32.299 0 7.8 28.7 0 5 32.8 0 6.5
   [3,16,32.299,0,7.8,28.7,0,5,32.8,0,6.5],
 ];
-makepoly(ldraw_lib__logo_nasa(), line=0.2);
+module ldraw_lib__logo_nasa(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__logo_nasa(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__logo_nasa(line=0.2);

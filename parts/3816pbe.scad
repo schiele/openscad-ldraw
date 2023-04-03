@@ -460,4 +460,6 @@ function ldraw_lib__3816pbe() = [
 // 3 82 -15.8 21.6 -11 -16.9 23.4 -11 -15.7 23.1 -11
   [3,82,-15.8,21.6,-11,-16.9,23.4,-11,-15.7,23.1,-11],
 ];
-makepoly(ldraw_lib__3816pbe(), line=0.2);
+module ldraw_lib__3816pbe(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3816pbe(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3816pbe(line=0.2);

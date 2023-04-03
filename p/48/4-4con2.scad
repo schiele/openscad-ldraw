@@ -212,4 +212,6 @@ function ldraw_lib__48__4_4con2() = [
 // 5 24 1.9828 1 -0.261 2.9742 0 -0.3915 1.9318 1 -0.5176 2 1 0
   [5,24,1.9828,1,-0.261,2.9742,0,-0.3915,1.9318,1,-0.5176,2,1,0],
 ];
-makepoly(ldraw_lib__48__4_4con2(), line=0.2);
+module ldraw_lib__48__4_4con2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__48__4_4con2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__48__4_4con2(line=0.2);

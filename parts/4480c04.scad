@@ -42,4 +42,6 @@ function ldraw_lib__4480c04() = [
 // 1 47 0 -11.06 -76.24 1 0 0 0 0.924 0.383 0 -0.383 0.924 4483.dat
   [1,47,0,-11.06,-76.24,1,0,0,0,0.924,0.383,0,-0.383,0.924, ldraw_lib__4483()],
 ];
-makepoly(ldraw_lib__4480c04(), line=0.2);
+module ldraw_lib__4480c04(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__4480c04(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__4480c04(line=0.2);

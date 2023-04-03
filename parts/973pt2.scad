@@ -77,4 +77,6 @@ function ldraw_lib__973pt2() = [
 // 3 16 -12.03 22.3 -10 -12.5625 21.2125 -10 0 21.2125 -10
   [3,16,-12.03,22.3,-10,-12.5625,21.2125,-10,0,21.2125,-10],
 ];
-makepoly(ldraw_lib__973pt2(), line=0.2);
+module ldraw_lib__973pt2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973pt2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973pt2(line=0.2);

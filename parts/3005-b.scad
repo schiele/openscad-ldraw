@@ -20,4 +20,6 @@ function ldraw_lib__3005_b() = [
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 3005ptb.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3005ptb()],
 ];
-makepoly(ldraw_lib__3005_b(), line=0.2);
+module ldraw_lib__3005_b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3005_b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3005_b(line=0.2);

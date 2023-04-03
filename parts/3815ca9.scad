@@ -27,4 +27,6 @@ function ldraw_lib__3815ca9() = [
 // 1 16 0 12 0 1 0 0 0 1 0 0 0 1 3817pa9.dat
   [1,16,0,12,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3817pa9()],
 ];
-makepoly(ldraw_lib__3815ca9(), line=0.2);
+module ldraw_lib__3815ca9(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3815ca9(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3815ca9(line=0.2);

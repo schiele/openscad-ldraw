@@ -1047,4 +1047,6 @@ function ldraw_lib__973ps3() = [
 // 4 16 -12.04 15.18 -10 -12.02 16.15 -10 -11.02 14.83 -10 -11.1 13.99 -10
   [4,16,-12.04,15.18,-10,-12.02,16.15,-10,-11.02,14.83,-10,-11.1,13.99,-10],
 ];
-makepoly(ldraw_lib__973ps3(), line=0.2);
+module ldraw_lib__973ps3(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973ps3(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973ps3(line=0.2);

@@ -360,4 +360,6 @@ function ldraw_lib__37178k01() = [
 // 1 16 25.4 .45 0 -.4 0 0 0 1 0 0 0 -9.5 rect1.dat
   [1,16,25.4,.45,0,-.4,0,0,0,1,0,0,0,-9.5, ldraw_lib__rect1()],
 ];
-makepoly(ldraw_lib__37178k01(), line=0.2);
+module ldraw_lib__37178k01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__37178k01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__37178k01(line=0.2);

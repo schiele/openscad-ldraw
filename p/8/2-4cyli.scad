@@ -34,4 +34,6 @@ function ldraw_lib__8__2_4cyli() = [
   [5,24,-1,1,0,-1,0,0,-0.7071,1,0.7071,-1,1,-1],
 // 0 // Build by Primitive Generator 2
 ];
-makepoly(ldraw_lib__8__2_4cyli(), line=0.2);
+module ldraw_lib__8__2_4cyli(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__8__2_4cyli(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__8__2_4cyli(line=0.2);

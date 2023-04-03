@@ -550,4 +550,6 @@ function ldraw_lib__973pue() = [
 // 4 16 19 29 10 7.1 22.15 10 7.1 21.85 10 14.345 2 10
   [4,16,19,29,10,7.1,22.15,10,7.1,21.85,10,14.345,2,10],
 ];
-makepoly(ldraw_lib__973pue(), line=0.2);
+module ldraw_lib__973pue(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973pue(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973pue(line=0.2);

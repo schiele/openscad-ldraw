@@ -277,4 +277,6 @@ function ldraw_lib__973p3a() = [
 // 3 80 5 30 -10 5 31 -10 6 32 -10
   [3,80,5,30,-10,5,31,-10,6,32,-10],
 ];
-makepoly(ldraw_lib__973p3a(), line=0.2);
+module ldraw_lib__973p3a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973p3a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973p3a(line=0.2);

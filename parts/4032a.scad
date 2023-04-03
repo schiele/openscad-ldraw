@@ -64,4 +64,6 @@ function ldraw_lib__4032a() = [
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 stug10-2x2.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug10_2x2()],
 ];
-makepoly(ldraw_lib__4032a(), line=0.2);
+module ldraw_lib__4032a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__4032a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__4032a(line=0.2);

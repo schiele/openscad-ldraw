@@ -1164,4 +1164,6 @@ function ldraw_lib__973pbq() = [
 // 4 16 -1.143 3.755 -10 0.163 4.082 -10 -0.082 3.184 -10 -0.816 2.776 -10
   [4,16,-1.143,3.755,-10,0.163,4.082,-10,-0.082,3.184,-10,-0.816,2.776,-10],
 ];
-makepoly(ldraw_lib__973pbq(), line=0.2);
+module ldraw_lib__973pbq(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973pbq(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973pbq(line=0.2);

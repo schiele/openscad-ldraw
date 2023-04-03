@@ -39,4 +39,6 @@ function ldraw_lib__48__1_4tang() = [
   [3,16,1,0,.1989,.9914,0,.1305,1,0,0],
 // 0
 ];
-makepoly(ldraw_lib__48__1_4tang(), line=0.2);
+module ldraw_lib__48__1_4tang(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__48__1_4tang(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__48__1_4tang(line=0.2);

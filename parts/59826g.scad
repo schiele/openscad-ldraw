@@ -170,4 +170,6 @@ function ldraw_lib__59826g() = [
 // 1 7 0 -.25 0 17.5 0 0 0 1 0 0 0 17.5 4-4ering.dat
   [1,7,0,-.25,0,17.5,0,0,0,1,0,0,0,17.5, ldraw_lib__4_4ering()],
 ];
-makepoly(ldraw_lib__59826g(), line=0.2);
+module ldraw_lib__59826g(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__59826g(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__59826g(line=0.2);

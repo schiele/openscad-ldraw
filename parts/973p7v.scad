@@ -1319,4 +1319,6 @@ function ldraw_lib__973p7v() = [
 // 4 16 -11.62 20.52 -10 -11.56 25.45 -10 -8.46 25.51 -10 -9.23 20.45 -10
   [4,16,-11.62,20.52,-10,-11.56,25.45,-10,-8.46,25.51,-10,-9.23,20.45,-10],
 ];
-makepoly(ldraw_lib__973p7v(), line=0.2);
+module ldraw_lib__973p7v(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973p7v(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973p7v(line=0.2);

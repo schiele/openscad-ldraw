@@ -494,4 +494,6 @@ function ldraw_lib__18646() = [
 // 3 16 -22 8 -24 -24 8 -22 -20 8 -20
   [3,16,-22,8,-24,-24,8,-22,-20,8,-20],
 ];
-makepoly(ldraw_lib__18646(), line=0.2);
+module ldraw_lib__18646(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__18646(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__18646(line=0.2);

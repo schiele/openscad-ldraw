@@ -427,4 +427,6 @@ function ldraw_lib__3626bpsc() = [
 // 5 24 12.0104 4 4.9752 12.0104 17 4.9752 9.192 17 9.192 13 17 0
   [5,24,12.0104,4,4.9752,12.0104,17,4.9752,9.192,17,9.192,13,17,0],
 ];
-makepoly(ldraw_lib__3626bpsc(), line=0.2);
+module ldraw_lib__3626bpsc(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3626bpsc(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3626bpsc(line=0.2);

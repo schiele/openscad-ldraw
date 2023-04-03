@@ -2328,4 +2328,6 @@ function ldraw_lib__u9210p01() = [
 // 5 24 -9.59 -3.98 -3.46 -11 -3.7 -1.53 -11 -2.83 -2.83 -9.59 -5.08 -1.98
   [5,24,-9.59,-3.98,-3.46,-11,-3.7,-1.53,-11,-2.83,-2.83,-9.59,-5.08,-1.98],
 ];
-makepoly(ldraw_lib__u9210p01(), line=0.2);
+module ldraw_lib__u9210p01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__u9210p01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__u9210p01(line=0.2);

@@ -64,4 +64,6 @@ function ldraw_lib__4082() = [
 // 1 16 -50 24 0 1 0 0 0 1 0 0 0 1 stug-4x1.dat
   [1,16,-50,24,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_4x1()],
 ];
-makepoly(ldraw_lib__4082(), line=0.2);
+module ldraw_lib__4082(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__4082(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__4082(line=0.2);

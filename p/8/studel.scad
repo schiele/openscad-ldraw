@@ -108,4 +108,6 @@ function ldraw_lib__8__studel() = [
 // 5 24 4.2 -4 4.2 4.2 0 4.2 6 -4 0 0 -4 6
   [5,24,4.2,-4,4.2,4.2,0,4.2,6,-4,0,0,-4,6],
 ];
-makepoly(ldraw_lib__8__studel(), line=0.2);
+module ldraw_lib__8__studel(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__8__studel(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__8__studel(line=0.2);

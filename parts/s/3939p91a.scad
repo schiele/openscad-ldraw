@@ -178,4 +178,6 @@ function ldraw_lib__s__3939p91a() = [
   [3,16,-8.554,0,-13.344,-7.861,0,-14.096,-8.64,0,-14.309],
 // 0
 ];
-makepoly(ldraw_lib__s__3939p91a(), line=0.2);
+module ldraw_lib__s__3939p91a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__3939p91a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__3939p91a(line=0.2);

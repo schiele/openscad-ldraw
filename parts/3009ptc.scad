@@ -473,4 +473,6 @@ function ldraw_lib__3009ptc() = [
 // 4 16 43.5 21.75 -10 -43.5 21.75 -10 -60 24 -10 60 24 -10
   [4,16,43.5,21.75,-10,-43.5,21.75,-10,-60,24,-10,60,24,-10],
 ];
-makepoly(ldraw_lib__3009ptc(), line=0.2);
+module ldraw_lib__3009ptc(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3009ptc(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3009ptc(line=0.2);

@@ -1101,4 +1101,6 @@ function ldraw_lib__973p9k() = [
 // 3 16 -15.35 12.45 -10 -15.1 11.15 -10 -15 10.15 -10
   [3,16,-15.35,12.45,-10,-15.1,11.15,-10,-15,10.15,-10],
 ];
-makepoly(ldraw_lib__973p9k(), line=0.2);
+module ldraw_lib__973p9k(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973p9k(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973p9k(line=0.2);

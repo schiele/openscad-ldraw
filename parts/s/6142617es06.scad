@@ -33,4 +33,6 @@ function ldraw_lib__s__6142617es06() = [
 // 3 15 9.25 -.25 .0145 38 -.25 -3.0797 38 -.25 .0145
   [3,15,9.25,-.25,.0145,38,-.25,-3.0797,38,-.25,.0145],
 ];
-makepoly(ldraw_lib__s__6142617es06(), line=0.2);
+module ldraw_lib__s__6142617es06(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__6142617es06(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__6142617es06(line=0.2);

@@ -180,4 +180,6 @@ function ldraw_lib__87079p0d() = [
 // 4 0 -14.75 0 2 -14.75 0 -2 -14.5 0 -2 -14.5 0 2
   [4,0,-14.75,0,2,-14.75,0,-2,-14.5,0,-2,-14.5,0,2],
 ];
-makepoly(ldraw_lib__87079p0d(), line=0.2);
+module ldraw_lib__87079p0d(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__87079p0d(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__87079p0d(line=0.2);

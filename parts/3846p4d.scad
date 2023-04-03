@@ -180,4 +180,6 @@ function ldraw_lib__3846p4d() = [
 // 4 16 -7.665 22 -10 -7.4 18.4 -10 -8.2 17.2 -10 -13.064 14.22 -10
   [4,16,-7.665,22,-10,-7.4,18.4,-10,-8.2,17.2,-10,-13.064,14.22,-10],
 ];
-makepoly(ldraw_lib__3846p4d(), line=0.2);
+module ldraw_lib__3846p4d(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3846p4d(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3846p4d(line=0.2);

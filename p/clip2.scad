@@ -138,4 +138,6 @@ function ldraw_lib__clip2() = [
   [4,16,-4.75,4,-3,4.75,4,-3,4,4,-6,-4,4,-6],
 // 0 //
 ];
-makepoly(ldraw_lib__clip2(), line=0.2);
+module ldraw_lib__clip2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__clip2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__clip2(line=0.2);

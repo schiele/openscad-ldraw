@@ -640,4 +640,6 @@ function ldraw_lib__s__logochevl02() = [
 // 4 16 -3.086 0 -2.076 -0.024 0 -2.06 -0.556 0 -0.983 -1.807 0 -0.233
   [4,16,-3.086,0,-2.076,-0.024,0,-2.06,-0.556,0,-0.983,-1.807,0,-0.233],
 ];
-makepoly(ldraw_lib__s__logochevl02(), line=0.2);
+module ldraw_lib__s__logochevl02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__logochevl02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__logochevl02(line=0.2);

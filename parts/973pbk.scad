@@ -2245,4 +2245,6 @@ function ldraw_lib__973pbk() = [
 // 3 16 12.975 5.631 -10 13.46 9.31 -10 13.6 9.8 -10
   [3,16,12.975,5.631,-10,13.46,9.31,-10,13.6,9.8,-10],
 ];
-makepoly(ldraw_lib__973pbk(), line=0.2);
+module ldraw_lib__973pbk(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973pbk(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973pbk(line=0.2);

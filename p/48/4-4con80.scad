@@ -208,4 +208,6 @@ function ldraw_lib__48__4_4con80() = [
   [5,24,79.312,1,-10.44,80.3034,0,-10.5705,77.272,1,-20.704,80,1,0],
 // 0 // Build by LDPartEditor (PrimGen 2.X)
 ];
-makepoly(ldraw_lib__48__4_4con80(), line=0.2);
+module ldraw_lib__48__4_4con80(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__48__4_4con80(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__48__4_4con80(line=0.2);

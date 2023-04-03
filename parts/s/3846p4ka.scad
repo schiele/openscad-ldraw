@@ -1368,4 +1368,6 @@ function ldraw_lib__s__3846p4ka() = [
 // 3 19 0 -16 0 -13 -11 0 -0.8686 -15.1747 0
   [3,19,0,-16,0,-13,-11,0,-0.8686,-15.1747,0],
 ];
-makepoly(ldraw_lib__s__3846p4ka(), line=0.2);
+module ldraw_lib__s__3846p4ka(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__3846p4ka(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__3846p4ka(line=0.2);

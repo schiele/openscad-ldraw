@@ -1113,4 +1113,6 @@ function ldraw_lib__joint8socket1() = [
   [5,24,-10,4,10,-10,-4,10,-9.817,4,9.68305,-10,4,15],
 // 
 ];
-makepoly(ldraw_lib__joint8socket1(), line=0.2);
+module ldraw_lib__joint8socket1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__joint8socket1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__joint8socket1(line=0.2);

@@ -42,4 +42,6 @@ function ldraw_lib__2586ps1() = [
 // 1 82 0 31.5 -8 -1.7678 0 1.7678 1.7678 0 1.7678 0 1 0 1-4ring1.dat
   [1,82,0,31.5,-8,-1.7678,0,1.7678,1.7678,0,1.7678,0,1,0, ldraw_lib__1_4ring1()],
 ];
-makepoly(ldraw_lib__2586ps1(), line=0.2);
+module ldraw_lib__2586ps1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__2586ps1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__2586ps1(line=0.2);

@@ -28,4 +28,6 @@ function ldraw_lib__3815c6u() = [
   [1,7,0,12,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3817p6u()],
 // 0
 ];
-makepoly(ldraw_lib__3815c6u(), line=0.2);
+module ldraw_lib__3815c6u(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3815c6u(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3815c6u(line=0.2);

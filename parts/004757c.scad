@@ -32,4 +32,6 @@ function ldraw_lib__004757c() = [
 // 4 4 10.83 -0.25 -7.41 13 -0.25 -13 13 -0.25 13 10.83 -0.25 7.41
   [4,4,10.83,-0.25,-7.41,13,-0.25,-13,13,-0.25,13,10.83,-0.25,7.41],
 ];
-makepoly(ldraw_lib__004757c(), line=0.2);
+module ldraw_lib__004757c(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__004757c(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__004757c(line=0.2);

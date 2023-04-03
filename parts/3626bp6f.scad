@@ -380,4 +380,6 @@ function ldraw_lib__3626bp6f() = [
 // 0
 // 0
 ];
-makepoly(ldraw_lib__3626bp6f(), line=0.2);
+module ldraw_lib__3626bp6f(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3626bp6f(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3626bp6f(line=0.2);

@@ -20,4 +20,6 @@ function ldraw_lib__770p4b() = [
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 2586p4b.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2586p4b()],
 ];
-makepoly(ldraw_lib__770p4b(), line=0.2);
+module ldraw_lib__770p4b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__770p4b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__770p4b(line=0.2);

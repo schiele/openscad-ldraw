@@ -1226,4 +1226,6 @@ function ldraw_lib__3626cpbl() = [
 // 4 16 9.192 4 9.192 6.6 4 10.924 6.4 2.469 10.61 8.923 2.469 8.924
   [4,16,9.192,4,9.192,6.6,4,10.924,6.4,2.469,10.61,8.923,2.469,8.924],
 ];
-makepoly(ldraw_lib__3626cpbl(), line=0.2);
+module ldraw_lib__3626cpbl(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3626cpbl(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3626cpbl(line=0.2);

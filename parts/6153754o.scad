@@ -1026,4 +1026,6 @@ function ldraw_lib__6153754o() = [
 // 4 15 15.862 -0.25 -1.305 15.916 -0.25 -0.8 7.259 -0.25 -2.23 7.546 -0.25 -2.484
   [4,15,15.862,-0.25,-1.305,15.916,-0.25,-0.8,7.259,-0.25,-2.23,7.546,-0.25,-2.484],
 ];
-makepoly(ldraw_lib__6153754o(), line=0.2);
+module ldraw_lib__6153754o(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__6153754o(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__6153754o(line=0.2);

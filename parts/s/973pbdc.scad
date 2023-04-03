@@ -548,4 +548,6 @@ function ldraw_lib__s__973pbdc() = [
 // 3 16 -13.099 12.719 -10 -13.131 12.984 -10 -12.917 12.746 -10
   [3,16,-13.099,12.719,-10,-13.131,12.984,-10,-12.917,12.746,-10],
 ];
-makepoly(ldraw_lib__s__973pbdc(), line=0.2);
+module ldraw_lib__s__973pbdc(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__973pbdc(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__973pbdc(line=0.2);

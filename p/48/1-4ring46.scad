@@ -39,4 +39,6 @@ function ldraw_lib__48__1_4ring46() = [
   [4,16,6.1335,0,46.5958,0,0,47,0,0,46,6.003,0,45.6044],
 // 0 // Build by LDPartEditor (PrimGen 2.X)
 ];
-makepoly(ldraw_lib__48__1_4ring46(), line=0.2);
+module ldraw_lib__48__1_4ring46(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__48__1_4ring46(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__48__1_4ring46(line=0.2);

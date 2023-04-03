@@ -779,4 +779,6 @@ function ldraw_lib__48__1_8sphe() = [
 // 5 24 0.1305 0.9914 0 0 0.9914 0.1305 0 1 0 0.1371 0.981 0.1371
   [5,24,0.1305,0.9914,0,0,0.9914,0.1305,0,1,0,0.1371,0.981,0.1371],
 ];
-makepoly(ldraw_lib__48__1_8sphe(), line=0.2);
+module ldraw_lib__48__1_8sphe(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__48__1_8sphe(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__48__1_8sphe(line=0.2);

@@ -45,4 +45,6 @@ function ldraw_lib__35860() = [
 // 1 16 0 -20 0 -.725 0 0 0 1 0 0 0 -.725 s\35860s05.dat
   [1,16,0,-20,0,-.725,0,0,0,1,0,0,0,-.725, ldraw_lib__s__35860s05()],
 ];
-makepoly(ldraw_lib__35860(), line=0.2);
+module ldraw_lib__35860(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__35860(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__35860(line=0.2);

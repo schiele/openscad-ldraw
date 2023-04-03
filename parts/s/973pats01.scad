@@ -121,4 +121,6 @@ function ldraw_lib__s__973pats01() = [
   [4,0,-0.237,16.405,0,0.177,15.659,0,-0.253,15.465,0,-0.671,16.208,0],
 // 
 ];
-makepoly(ldraw_lib__s__973pats01(), line=0.2);
+module ldraw_lib__s__973pats01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__973pats01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__973pats01(line=0.2);

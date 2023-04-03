@@ -98,4 +98,6 @@ function ldraw_lib__clh3q() = [
 // 1 16 4 -1.133 -4.359 0 -1 0 -.883 0 .117 -.176 0 -.589 8\2-4edge.dat
   [1,16,4,-1.133,-4.359,0,-1,0,-.883,0,.117,-.176,0,-.589, ldraw_lib__8__2_4edge()],
 ];
-makepoly(ldraw_lib__clh3q(), line=0.2);
+module ldraw_lib__clh3q(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__clh3q(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__clh3q(line=0.2);

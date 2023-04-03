@@ -511,4 +511,6 @@ function ldraw_lib__3070bp05() = [
   [3,16,-4.077,0,6.442,-0.271,0,10,-5.116,0,6.508],
 // 0
 ];
-makepoly(ldraw_lib__3070bp05(), line=0.2);
+module ldraw_lib__3070bp05(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3070bp05(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3070bp05(line=0.2);

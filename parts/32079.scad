@@ -865,4 +865,6 @@ function ldraw_lib__32079() = [
   [1,16,0,-5.5,84.5,2,0,0,0,0.707107,1.9997,0,-0.707107,1.9997, ldraw_lib__1_8edge()],
 // 0
 ];
-makepoly(ldraw_lib__32079(), line=0.2);
+module ldraw_lib__32079(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__32079(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__32079(line=0.2);

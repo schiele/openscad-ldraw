@@ -18,4 +18,6 @@ function ldraw_lib__48__19_48edg() = [
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 48\19-48edge.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__48__19_48edge()],
 ];
-makepoly(ldraw_lib__48__19_48edg(), line=0.2);
+module ldraw_lib__48__19_48edg(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__48__19_48edg(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__48__19_48edg(line=0.2);

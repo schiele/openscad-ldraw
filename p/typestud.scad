@@ -128,4 +128,6 @@ function ldraw_lib__typestud() = [
 // 3 16 1.155 0 -4.89 0.152 0 -5 4.45 0 -5
   [3,16,1.155,0,-4.89,0.152,0,-5,4.45,0,-5],
 ];
-makepoly(ldraw_lib__typestud(), line=0.2);
+module ldraw_lib__typestud(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__typestud(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__typestud(line=0.2);

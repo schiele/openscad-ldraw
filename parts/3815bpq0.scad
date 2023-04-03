@@ -345,4 +345,6 @@ function ldraw_lib__3815bpq0() = [
 // 5 24 2 5.8126 -6.1873 -2 5.8126 -6.1873 2 8.6515 -8.084 2 3.2496 -3.6245
   [5,24,2,5.8126,-6.1873,-2,5.8126,-6.1873,2,8.6515,-8.084,2,3.2496,-3.6245],
 ];
-makepoly(ldraw_lib__3815bpq0(), line=0.2);
+module ldraw_lib__3815bpq0(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3815bpq0(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3815bpq0(line=0.2);

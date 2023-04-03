@@ -1186,4 +1186,6 @@ function ldraw_lib__6064() = [
 // 1 16 -27.551 -109 5.479 .585 -.588 2.943 0 -3 0 2.943 .117 -.585 8\2-8sphe.dat
   [1,16,-27.551,-109,5.479,.585,-.588,2.943,0,-3,0,2.943,.117,-.585, ldraw_lib__8__2_8sphe()],
 ];
-makepoly(ldraw_lib__6064(), line=0.2);
+module ldraw_lib__6064(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__6064(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__6064(line=0.2);

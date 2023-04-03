@@ -531,4 +531,6 @@ function ldraw_lib__3228b() = [
   [1,16,148.75,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3228s01()],
 // 
 ];
-makepoly(ldraw_lib__3228b(), line=0.2);
+module ldraw_lib__3228b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3228b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3228b(line=0.2);

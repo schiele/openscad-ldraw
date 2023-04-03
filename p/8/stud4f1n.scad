@@ -169,4 +169,6 @@ function ldraw_lib__8__stud4f1n() = [
 // 4 16 7.57 -4 1 7.57 -4 -1 8 -4 -1 8 -4 1
   [4,16,7.57,-4,1,7.57,-4,-1,8,-4,-1,8,-4,1],
 ];
-makepoly(ldraw_lib__8__stud4f1n(), line=0.2);
+module ldraw_lib__8__stud4f1n(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__8__stud4f1n(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__8__stud4f1n(line=0.2);

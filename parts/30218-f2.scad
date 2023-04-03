@@ -28,4 +28,6 @@ function ldraw_lib__30218_f2() = [
 // 1 16 32.5 -12 0 .70711 -.70711 0 .70711 .70711 0 0 0 1 30218k02.dat
   [1,16,32.5,-12,0,.70711,-.70711,0,.70711,.70711,0,0,0,1, ldraw_lib__30218k02()],
 ];
-makepoly(ldraw_lib__30218_f2(), line=0.2);
+module ldraw_lib__30218_f2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__30218_f2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__30218_f2(line=0.2);

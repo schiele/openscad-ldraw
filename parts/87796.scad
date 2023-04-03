@@ -2011,4 +2011,6 @@ function ldraw_lib__87796() = [
 // 5 24 6.25 12.222 -.833 1.875 12.222 -.833 6.25 14.932 .779 6.25 9 -1.14
   [5,24,6.25,12.222,-.833,1.875,12.222,-.833,6.25,14.932,.779,6.25,9,-1.14],
 ];
-makepoly(ldraw_lib__87796(), line=0.2);
+module ldraw_lib__87796(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__87796(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__87796(line=0.2);

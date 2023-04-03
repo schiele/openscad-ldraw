@@ -27,4 +27,6 @@ function ldraw_lib__4066a() = [
   [4,16,40,96,-20,-40,96,-20,-40,0,-20,40,0,-20],
 // 0
 ];
-makepoly(ldraw_lib__4066a(), line=0.2);
+module ldraw_lib__4066a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__4066a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__4066a(line=0.2);

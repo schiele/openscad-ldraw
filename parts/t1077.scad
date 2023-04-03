@@ -1689,4 +1689,6 @@ function ldraw_lib__t1077() = [
 // 2 24 8.6939 -22.3295 -14 8.9228 -21.1748 -14
   [2,24,8.6939,-22.3295,-14,8.9228,-21.1748,-14],
 ];
-makepoly(ldraw_lib__t1077(), line=0.2);
+module ldraw_lib__t1077(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__t1077(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__t1077(line=0.2);

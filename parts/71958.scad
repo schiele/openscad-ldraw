@@ -19,4 +19,6 @@ function ldraw_lib__71958() = [
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\71958s01.dat
   [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__71958s01()],
 ];
-makepoly(ldraw_lib__71958(), line=0.2);
+module ldraw_lib__71958(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__71958(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__71958(line=0.2);

@@ -366,4 +366,6 @@ function ldraw_lib__4336() = [
 // 1 16 -10 -8 -60 2 0 0 0 0 8 0 4 0 box4-2p.dat
   [1,16,-10,-8,-60,2,0,0,0,0,8,0,4,0, ldraw_lib__box4_2p()],
 ];
-makepoly(ldraw_lib__4336(), line=0.2);
+module ldraw_lib__4336(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__4336(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__4336(line=0.2);

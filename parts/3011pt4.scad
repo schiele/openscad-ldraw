@@ -871,4 +871,6 @@ function ldraw_lib__3011pt4() = [
 // 4 16 57 10 -40 67.5 10 -40 80 0 -40 40 0 -40
   [4,16,57,10,-40,67.5,10,-40,80,0,-40,40,0,-40],
 ];
-makepoly(ldraw_lib__3011pt4(), line=0.2);
+module ldraw_lib__3011pt4(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3011pt4(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3011pt4(line=0.2);

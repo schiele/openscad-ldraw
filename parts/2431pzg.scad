@@ -50,4 +50,6 @@ function ldraw_lib__2431pzg() = [
 // 3 16 -36.5 0 .25 -22.75 0 8 -32.25 0 8.5
   [3,16,-36.5,0,.25,-22.75,0,8,-32.25,0,8.5],
 ];
-makepoly(ldraw_lib__2431pzg(), line=0.2);
+module ldraw_lib__2431pzg(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__2431pzg(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__2431pzg(line=0.2);

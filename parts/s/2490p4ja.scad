@@ -1751,4 +1751,6 @@ function ldraw_lib__s__2490p4ja() = [
 // 5 24 20.4188 -32.0166 -34.6997 18.53 -34.76 -38.08 20.997 -30.381 -35.1302 19.5859 -34.7263 -33.9866
   [5,24,20.4188,-32.0166,-34.6997,18.53,-34.76,-38.08,20.997,-30.381,-35.1302,19.5859,-34.7263,-33.9866],
 ];
-makepoly(ldraw_lib__s__2490p4ja(), line=0.2);
+module ldraw_lib__s__2490p4ja(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__2490p4ja(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__2490p4ja(line=0.2);

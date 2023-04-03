@@ -29,4 +29,6 @@ function ldraw_lib__s__3070batw() = [
   [4,16,6.271,0,7.5,8.5,0,7.5,4.807,0,-7.5,3.693,0,-2.973],
 // 0
 ];
-makepoly(ldraw_lib__s__3070batw(), line=0.2);
+module ldraw_lib__s__3070batw(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__3070batw(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__3070batw(line=0.2);

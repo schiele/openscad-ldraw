@@ -220,4 +220,6 @@ function ldraw_lib__s__973p11a() = [
 // 3 16 6.9 16 -10 9.6 13.6 -10 8.6 13.6 -10
   [3,16,6.9,16,-10,9.6,13.6,-10,8.6,13.6,-10],
 ];
-makepoly(ldraw_lib__s__973p11a(), line=0.2);
+module ldraw_lib__s__973p11a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__973p11a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__973p11a(line=0.2);

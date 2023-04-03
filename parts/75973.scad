@@ -24,4 +24,6 @@ function ldraw_lib__75973() = [
 // 1 14 27.50 10.50 0 1 0 0 0 1 0 0 0 1 32027.dat
   [1,14,27.50,10.50,0,1,0,0,0,1,0,0,0,1, ldraw_lib__32027()],
 ];
-makepoly(ldraw_lib__75973(), line=0.2);
+module ldraw_lib__75973(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__75973(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__75973(line=0.2);

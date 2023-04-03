@@ -573,4 +573,6 @@ function ldraw_lib__973pso() = [
 // 3 0 14.05 28.8 -10 12.45 28.975 -10 18.5 31.5 -10
   [3,0,14.05,28.8,-10,12.45,28.975,-10,18.5,31.5,-10],
 ];
-makepoly(ldraw_lib__973pso(), line=0.2);
+module ldraw_lib__973pso(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973pso(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973pso(line=0.2);

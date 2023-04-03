@@ -52,4 +52,6 @@ function ldraw_lib__3010py4() = [
 // 4 16 -22.25 .5 -10 -22.25 16.25 -10 22.25 16.25 -10 22.25 .5 -10
   [4,16,-22.25,.5,-10,-22.25,16.25,-10,22.25,16.25,-10,22.25,.5,-10],
 ];
-makepoly(ldraw_lib__3010py4(), line=0.2);
+module ldraw_lib__3010py4(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3010py4(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3010py4(line=0.2);

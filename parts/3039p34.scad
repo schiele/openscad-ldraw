@@ -337,4 +337,6 @@ function ldraw_lib__3039p34() = [
 // 3 15 9 18.2146 -28.2146 7 18.2146 -28.2146 1 19.2861 -29.2861
   [3,15,9,18.2146,-28.2146,7,18.2146,-28.2146,1,19.2861,-29.2861],
 ];
-makepoly(ldraw_lib__3039p34(), line=0.2);
+module ldraw_lib__3039p34(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3039p34(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3039p34(line=0.2);

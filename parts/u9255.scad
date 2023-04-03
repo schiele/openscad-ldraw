@@ -87,4 +87,6 @@ function ldraw_lib__u9255() = [
 // 1 16 41 -5 0 0 14 0 13 0 0 0 0 13 4-4cyli.dat
   [1,16,41,-5,0,0,14,0,13,0,0,0,0,13, ldraw_lib__4_4cyli()],
 ];
-makepoly(ldraw_lib__u9255(), line=0.2);
+module ldraw_lib__u9255(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__u9255(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__u9255(line=0.2);

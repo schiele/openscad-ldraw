@@ -2523,4 +2523,6 @@ function ldraw_lib__973pbb() = [
   [3,16,0,20.45,10,-0.54978,23.54764,10,-1.05,23.5,10],
 // 
 ];
-makepoly(ldraw_lib__973pbb(), line=0.2);
+module ldraw_lib__973pbb(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973pbb(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973pbb(line=0.2);

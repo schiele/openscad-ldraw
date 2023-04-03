@@ -29,4 +29,6 @@ function ldraw_lib__73200paw() = [
 // 1 16 0 12 0 1 0 0 0 1 0 0 0 1 3817bpaw.dat
   [1,16,0,12,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3817bpaw()],
 ];
-makepoly(ldraw_lib__73200paw(), line=0.2);
+module ldraw_lib__73200paw(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__73200paw(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__73200paw(line=0.2);

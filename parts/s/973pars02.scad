@@ -606,4 +606,6 @@ function ldraw_lib__s__973pars02() = [
 // 3 16 5.663 1.378 -10 6.262 1.382 -10 12 0 -10
   [3,16,5.663,1.378,-10,6.262,1.382,-10,12,0,-10],
 ];
-makepoly(ldraw_lib__s__973pars02(), line=0.2);
+module ldraw_lib__s__973pars02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__973pars02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__973pars02(line=0.2);

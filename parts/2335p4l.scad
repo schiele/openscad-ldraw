@@ -121,4 +121,6 @@ function ldraw_lib__2335p4l() = [
 // 4 4 2 8.435 40.08 2 0.8 49.2 2 0.8 30 2 8.435 30
   [4,4,2,8.435,40.08,2,0.8,49.2,2,0.8,30,2,8.435,30],
 ];
-makepoly(ldraw_lib__2335p4l(), line=0.2);
+module ldraw_lib__2335p4l(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__2335p4l(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__2335p4l(line=0.2);

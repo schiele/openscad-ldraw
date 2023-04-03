@@ -132,4 +132,6 @@ function ldraw_lib__ddoorhinge() = [
 // 5 24 2.039 3.5294 -5.1177 2.039 -3.5294 -5.1177 2.5 3 -6 1.953 4.0038 -4.327
   [5,24,2.039,3.5294,-5.1177,2.039,-3.5294,-5.1177,2.5,3,-6,1.953,4.0038,-4.327],
 ];
-makepoly(ldraw_lib__ddoorhinge(), line=0.2);
+module ldraw_lib__ddoorhinge(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__ddoorhinge(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__ddoorhinge(line=0.2);

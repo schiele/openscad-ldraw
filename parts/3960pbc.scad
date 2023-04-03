@@ -2326,4 +2326,6 @@ function ldraw_lib__3960pbc() = [
 // 3 16 -17.3499 1.2501 -2.2841 -18.8682 1.5053 -2.4837 -17.134 1.2217 -2.5
   [3,16,-17.3499,1.2501,-2.2841,-18.8682,1.5053,-2.4837,-17.134,1.2217,-2.5],
 ];
-makepoly(ldraw_lib__3960pbc(), line=0.2);
+module ldraw_lib__3960pbc(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3960pbc(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3960pbc(line=0.2);

@@ -25,4 +25,6 @@ function ldraw_lib__5_16ring13() = [
   [4,16,0,0,14,-5.3578,0,12.9346,-4.9751,0,12.0107,0,0,13],
 // 0 // Build by LDPartEditor (PrimGen 2.X)
 ];
-makepoly(ldraw_lib__5_16ring13(), line=0.2);
+module ldraw_lib__5_16ring13(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__5_16ring13(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__5_16ring13(line=0.2);

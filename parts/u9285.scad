@@ -279,4 +279,6 @@ function ldraw_lib__u9285() = [
 // 1 16 8.375 -4.375 0 -3.375 0 0 0 0 -0.375 0 -1 0 rect3.dat
   [1,16,8.375,-4.375,0,-3.375,0,0,0,0,-0.375,0,-1,0, ldraw_lib__rect3()],
 ];
-makepoly(ldraw_lib__u9285(), line=0.2);
+module ldraw_lib__u9285(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__u9285(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__u9285(line=0.2);

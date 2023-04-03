@@ -50,4 +50,6 @@ function ldraw_lib__u8002d() = [
   [2,24,16,4,-16,16,24,-16],
 // 0
 ];
-makepoly(ldraw_lib__u8002d(), line=0.2);
+module ldraw_lib__u8002d(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__u8002d(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__u8002d(line=0.2);

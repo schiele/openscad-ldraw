@@ -74,4 +74,6 @@ function ldraw_lib__27195() = [
 // 1 16 17.51325 -3.6907 19.75 1.73945 1 0 5.6907 0 0 0 0 -0.25 rect2p.dat
   [1,16,17.51325,-3.6907,19.75,1.73945,1,0,5.6907,0,0,0,0,-0.25, ldraw_lib__rect2p()],
 ];
-makepoly(ldraw_lib__27195(), line=0.2);
+module ldraw_lib__27195(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__27195(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__27195(line=0.2);

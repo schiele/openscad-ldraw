@@ -61,4 +61,6 @@ function ldraw_lib__t1053p05() = [
 // 3 16 -19.3149 -4.5 15 -26.6 -4.5 23 -28 -4.5 -27
   [3,16,-19.3149,-4.5,15,-26.6,-4.5,23,-28,-4.5,-27],
 ];
-makepoly(ldraw_lib__t1053p05(), line=0.2);
+module ldraw_lib__t1053p05(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__t1053p05(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__t1053p05(line=0.2);

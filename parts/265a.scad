@@ -270,4 +270,6 @@ function ldraw_lib__265a() = [
   [2,24,-2,4,12,-2,17.5,12],
 // 0
 ];
-makepoly(ldraw_lib__265a(), line=0.2);
+module ldraw_lib__265a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__265a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__265a(line=0.2);

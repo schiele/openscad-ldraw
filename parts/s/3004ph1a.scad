@@ -73,4 +73,6 @@ function ldraw_lib__s__3004ph1a() = [
   [3,16,-4.8,5.1,-10,-4.2,4.7,-10,-5,2,-10],
 // 0
 ];
-makepoly(ldraw_lib__s__3004ph1a(), line=0.2);
+module ldraw_lib__s__3004ph1a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__3004ph1a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__3004ph1a(line=0.2);

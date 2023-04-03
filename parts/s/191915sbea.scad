@@ -190,4 +190,6 @@ function ldraw_lib__s__191915sbea() = [
 // 3 16 8.5 0 -15.4 7.2 0 -16.6 15.9 0 -20
   [3,16,8.5,0,-15.4,7.2,0,-16.6,15.9,0,-20],
 ];
-makepoly(ldraw_lib__s__191915sbea(), line=0.2);
+module ldraw_lib__s__191915sbea(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__191915sbea(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__191915sbea(line=0.2);

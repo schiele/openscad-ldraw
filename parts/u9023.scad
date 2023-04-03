@@ -515,4 +515,6 @@ function ldraw_lib__u9023() = [
 // 2 24 66 44 -57 66 26 -57
   [2,24,66,44,-57,66,26,-57],
 ];
-makepoly(ldraw_lib__u9023(), line=0.2);
+module ldraw_lib__u9023(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__u9023(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__u9023(line=0.2);

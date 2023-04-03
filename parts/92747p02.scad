@@ -1038,4 +1038,6 @@ function ldraw_lib__92747p02() = [
 // 3 16 -12.32 -14.129 -8 -11.2 -14.239 -8 -15.685 -21.1 -8
   [3,16,-12.32,-14.129,-8,-11.2,-14.239,-8,-15.685,-21.1,-8],
 ];
-makepoly(ldraw_lib__92747p02(), line=0.2);
+module ldraw_lib__92747p02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__92747p02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__92747p02(line=0.2);

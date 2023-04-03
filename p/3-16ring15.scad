@@ -21,4 +21,6 @@ function ldraw_lib__3_16ring15() = [
   [4,16,10.6065,0,10.6065,11.3136,0,11.3136,6.1232,0,14.7824,5.7405,0,13.8585],
 // 0
 ];
-makepoly(ldraw_lib__3_16ring15(), line=0.2);
+module ldraw_lib__3_16ring15(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3_16ring15(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3_16ring15(line=0.2);

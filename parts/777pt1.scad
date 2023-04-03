@@ -65,4 +65,6 @@ function ldraw_lib__777pt1() = [
 // 3 4 52.586 -102.265 1.5 56.5 -89 1.5 46.5 -93 1.5
   [3,4,52.586,-102.265,1.5,56.5,-89,1.5,46.5,-93,1.5],
 ];
-makepoly(ldraw_lib__777pt1(), line=0.2);
+module ldraw_lib__777pt1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__777pt1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__777pt1(line=0.2);

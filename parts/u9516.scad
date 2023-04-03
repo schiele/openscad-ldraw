@@ -48,4 +48,6 @@ function ldraw_lib__u9516() = [
 // 1 16 0 -4.75 -26 1.5 0 0 0 0 4.75 0 -2.5 0 box4-1.dat
   [1,16,0,-4.75,-26,1.5,0,0,0,0,4.75,0,-2.5,0, ldraw_lib__box4_1()],
 ];
-makepoly(ldraw_lib__u9516(), line=0.2);
+module ldraw_lib__u9516(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__u9516(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__u9516(line=0.2);

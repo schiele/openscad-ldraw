@@ -35,4 +35,6 @@ function ldraw_lib__4616559o() = [
 // 4 16 -10 -0.25 -8 -9.5 -0.25 -2.5 -9.5 -0.25 2.5 -10 -0.25 8
   [4,16,-10,-0.25,-8,-9.5,-0.25,-2.5,-9.5,-0.25,2.5,-10,-0.25,8],
 ];
-makepoly(ldraw_lib__4616559o(), line=0.2);
+module ldraw_lib__4616559o(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__4616559o(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__4616559o(line=0.2);

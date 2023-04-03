@@ -153,4 +153,6 @@ function ldraw_lib__s__2454ps5a() = [
   [4,16,-3.25,51.25,-10,-3.5,44.25,-10,-1.5,44.25,-10,-1.5,51.25,-10],
 // 0
 ];
-makepoly(ldraw_lib__s__2454ps5a(), line=0.2);
+module ldraw_lib__s__2454ps5a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__2454ps5a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__2454ps5a(line=0.2);

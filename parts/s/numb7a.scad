@@ -20,4 +20,6 @@ function ldraw_lib__s__numb7a() = [
   [4,16,-6,5,-10,5,5,-10,2,7,-10,-6,7,-10],
 // 0
 ];
-makepoly(ldraw_lib__s__numb7a(), line=0.2);
+module ldraw_lib__s__numb7a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__numb7a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__numb7a(line=0.2);

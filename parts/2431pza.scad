@@ -51,4 +51,6 @@ function ldraw_lib__2431pza() = [
 // 4 320 39.5 0 9.5 -39.5 0 9.5 -39.5 0 6.3 39.5 0 6.3
   [4,320,39.5,0,9.5,-39.5,0,9.5,-39.5,0,6.3,39.5,0,6.3],
 ];
-makepoly(ldraw_lib__2431pza(), line=0.2);
+module ldraw_lib__2431pza(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__2431pza(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__2431pza(line=0.2);

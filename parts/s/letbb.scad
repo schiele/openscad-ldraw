@@ -66,4 +66,6 @@ function ldraw_lib__s__letbb() = [
   [4,16,2,15,-10,3.414,13.586,-10,2.765,13.152,-10,2,13,-10],
 // 0
 ];
-makepoly(ldraw_lib__s__letbb(), line=0.2);
+module ldraw_lib__s__letbb(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__letbb(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__letbb(line=0.2);

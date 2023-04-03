@@ -114,4 +114,6 @@ function ldraw_lib__48__4_4rin11() = [
 // 4 16 11.8968 0 -1.566 12 0 0 11 0 0 10.9054 0 -1.4355
   [4,16,11.8968,0,-1.566,12,0,0,11,0,0,10.9054,0,-1.4355],
 ];
-makepoly(ldraw_lib__48__4_4rin11(), line=0.2);
+module ldraw_lib__48__4_4rin11(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__48__4_4rin11(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__48__4_4rin11(line=0.2);

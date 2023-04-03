@@ -1754,4 +1754,6 @@ function ldraw_lib__s__973psbs01() = [
 // 3 16 -2.87 16.86 -10 -2.745 17.155 -10 -1.86 17.04 -10
   [3,16,-2.87,16.86,-10,-2.745,17.155,-10,-1.86,17.04,-10],
 ];
-makepoly(ldraw_lib__s__973psbs01(), line=0.2);
+module ldraw_lib__s__973psbs01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__973psbs01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__973psbs01(line=0.2);

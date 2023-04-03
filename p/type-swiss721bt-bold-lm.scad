@@ -119,4 +119,6 @@ function ldraw_lib__type_swiss721bt_bold_lm() = [
 // 4 0 .1515 0 .173 .1015 0 .347 .0515 0 .414 -.1415 0 .22
   [4,0,.1515,0,.173,.1015,0,.347,.0515,0,.414,-.1415,0,.22],
 ];
-makepoly(ldraw_lib__type_swiss721bt_bold_lm(), line=0.2);
+module ldraw_lib__type_swiss721bt_bold_lm(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__type_swiss721bt_bold_lm(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__type_swiss721bt_bold_lm(line=0.2);

@@ -24,4 +24,6 @@ function ldraw_lib__s12a() = [
 // 1 288 0 0 0 -1 0 0 0 1 0 0 0 1 s\s12s02.dat
   [1,288,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__s12s02()],
 ];
-makepoly(ldraw_lib__s12a(), line=0.2);
+module ldraw_lib__s12a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s12a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s12a(line=0.2);

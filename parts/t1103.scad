@@ -19,4 +19,6 @@ function ldraw_lib__t1103() = [
 // 1 16 0 -1.25 0 0 0 31.75 0 1.25 0 13 0 0 box.dat
   [1,16,0,-1.25,0,0,0,31.75,0,1.25,0,13,0,0, ldraw_lib__box()],
 ];
-makepoly(ldraw_lib__t1103(), line=0.2);
+module ldraw_lib__t1103(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__t1103(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__t1103(line=0.2);

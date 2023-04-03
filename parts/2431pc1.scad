@@ -913,4 +913,6 @@ function ldraw_lib__2431pc1() = [
   [4,4,17.6,0,-3,17.3,0,-3.3,17.2863,0,-4.1437,17.5,0,-3.5],
 // 0
 ];
-makepoly(ldraw_lib__2431pc1(), line=0.2);
+module ldraw_lib__2431pc1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__2431pc1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__2431pc1(line=0.2);

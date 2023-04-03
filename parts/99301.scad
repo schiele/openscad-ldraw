@@ -284,4 +284,6 @@ function ldraw_lib__99301() = [
 // 1 16 20 14 -20 0 0 -26 10 0 0 0 26 0 box2-5.dat
   [1,16,20,14,-20,0,0,-26,10,0,0,0,26,0, ldraw_lib__box2_5()],
 ];
-makepoly(ldraw_lib__99301(), line=0.2);
+module ldraw_lib__99301(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__99301(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__99301(line=0.2);

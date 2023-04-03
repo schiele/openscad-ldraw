@@ -33,4 +33,6 @@ function ldraw_lib__logo_maersk_m() = [
 // 3 16 2 0 .4 .7 0 -2.7 2 0 -2.7
   [3,16,2,0,.4,.7,0,-2.7,2,0,-2.7],
 ];
-makepoly(ldraw_lib__logo_maersk_m(), line=0.2);
+module ldraw_lib__logo_maersk_m(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__logo_maersk_m(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__logo_maersk_m(line=0.2);

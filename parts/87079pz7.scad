@@ -307,4 +307,6 @@ function ldraw_lib__87079pz7() = [
 // 4 80 37.732 0 -6.653 14.91 0 -13.145 14.08 0 -14.94 38.143 0 -8.097
   [4,80,37.732,0,-6.653,14.91,0,-13.145,14.08,0,-14.94,38.143,0,-8.097],
 ];
-makepoly(ldraw_lib__87079pz7(), line=0.2);
+module ldraw_lib__87079pz7(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__87079pz7(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__87079pz7(line=0.2);

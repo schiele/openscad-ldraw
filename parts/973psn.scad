@@ -410,4 +410,6 @@ function ldraw_lib__973psn() = [
 // 4 8 11.338 5.615 -10 11 5.62 -10 11.21 5.93 -10 11.326 5.916 -10
   [4,8,11.338,5.615,-10,11,5.62,-10,11.21,5.93,-10,11.326,5.916,-10],
 ];
-makepoly(ldraw_lib__973psn(), line=0.2);
+module ldraw_lib__973psn(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973psn(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973psn(line=0.2);

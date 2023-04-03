@@ -25,4 +25,6 @@ function ldraw_lib__99141p01() = [
 // 1 16 63 -9 -115 1 0 0 0 1 0 0 0 1 s\99141s02.dat
   [1,16,63,-9,-115,1,0,0,0,1,0,0,0,1, ldraw_lib__s__99141s02()],
 ];
-makepoly(ldraw_lib__99141p01(), line=0.2);
+module ldraw_lib__99141p01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__99141p01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__99141p01(line=0.2);

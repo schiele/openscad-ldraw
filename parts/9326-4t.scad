@@ -22,4 +22,6 @@ function ldraw_lib__9326_4t() = [
 // 0
 // 0 1999-04-16 SEB Moved to s\973s01.dat
 ];
-makepoly(ldraw_lib__9326_4t(), line=0.2);
+module ldraw_lib__9326_4t(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__9326_4t(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__9326_4t(line=0.2);

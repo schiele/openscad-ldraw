@@ -318,4 +318,6 @@ function ldraw_lib__3817bpa9() = [
 // 4 82 13.2 1.7 -8.4119 15.4 1.3 -8.4915 15.2 0.5 -8.6506 13.1 0.8 -8.5909
   [4,82,13.2,1.7,-8.4119,15.4,1.3,-8.4915,15.2,0.5,-8.6506,13.1,0.8,-8.5909],
 ];
-makepoly(ldraw_lib__3817bpa9(), line=0.2);
+module ldraw_lib__3817bpa9(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3817bpa9(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3817bpa9(line=0.2);

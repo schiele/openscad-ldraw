@@ -1225,4 +1225,6 @@ function ldraw_lib__3678bp4w() = [
 // 3 16 15.14 37.55 10 16.22 37.86 10 10 48 10
   [3,16,15.14,37.55,10,16.22,37.86,10,10,48,10],
 ];
-makepoly(ldraw_lib__3678bp4w(), line=0.2);
+module ldraw_lib__3678bp4w(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3678bp4w(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3678bp4w(line=0.2);

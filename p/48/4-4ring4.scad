@@ -114,4 +114,6 @@ function ldraw_lib__48__4_4ring4() = [
 // 4 16 4.957 0 -0.6525 5 0 0 4 0 0 3.9656 0 -0.522
   [4,16,4.957,0,-0.6525,5,0,0,4,0,0,3.9656,0,-0.522],
 ];
-makepoly(ldraw_lib__48__4_4ring4(), line=0.2);
+module ldraw_lib__48__4_4ring4(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__48__4_4ring4(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__48__4_4ring4(line=0.2);

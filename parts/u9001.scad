@@ -33,4 +33,6 @@ function ldraw_lib__u9001() = [
 // 4 16 30.75 -31 -6.7 -21.4 -31 -6.7 -21.4 -31 -83.15 30.75 -31 -83.15
   [4,16,30.75,-31,-6.7,-21.4,-31,-6.7,-21.4,-31,-83.15,30.75,-31,-83.15],
 ];
-makepoly(ldraw_lib__u9001(), line=0.2);
+module ldraw_lib__u9001(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__u9001(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__u9001(line=0.2);

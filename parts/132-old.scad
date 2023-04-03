@@ -19,4 +19,6 @@ function ldraw_lib__132_old() = [
 // 1 16 0 0 0 0 0 -1 0 1 0 1 0 0 u9131.dat
   [1,16,0,0,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__u9131()],
 ];
-makepoly(ldraw_lib__132_old(), line=0.2);
+module ldraw_lib__132_old(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__132_old(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__132_old(line=0.2);

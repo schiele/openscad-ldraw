@@ -27,4 +27,6 @@ function ldraw_lib__3_8ring17() = [
   [4,16,-6.8886,0,16.6302,-12.7278,0,12.7278,-12.0207,0,12.0207,-6.5059,0,15.7063],
 // 0 // Build by LDPartEditor (PrimGen 2.X)
 ];
-makepoly(ldraw_lib__3_8ring17(), line=0.2);
+module ldraw_lib__3_8ring17(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3_8ring17(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3_8ring17(line=0.2);

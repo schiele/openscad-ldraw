@@ -274,4 +274,6 @@ function ldraw_lib__u9030() = [
   [4,16,-3.4442,-11.6851,4,-3.4443,-8.3151,4,-6.3639,-6.3639,4,-6.364,-13.636,4],
 // 0
 ];
-makepoly(ldraw_lib__u9030(), line=0.2);
+module ldraw_lib__u9030(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__u9030(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__u9030(line=0.2);

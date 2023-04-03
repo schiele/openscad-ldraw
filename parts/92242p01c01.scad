@@ -23,4 +23,6 @@ function ldraw_lib__92242p01c01() = [
 // 1 16 -12.5 -11.3 3.9 1 0 0 0 1 0 0 0 1 92247p01.dat
   [1,16,-12.5,-11.3,3.9,1,0,0,0,1,0,0,0,1, ldraw_lib__92247p01()],
 ];
-makepoly(ldraw_lib__92242p01c01(), line=0.2);
+module ldraw_lib__92242p01c01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__92242p01c01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__92242p01c01(line=0.2);

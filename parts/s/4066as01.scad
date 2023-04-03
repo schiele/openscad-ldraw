@@ -71,4 +71,6 @@ function ldraw_lib__s__4066as01() = [
   [1,16,0,4,8.75,1,0,0,0,90,0,0,0,-7.25, ldraw_lib__box4_1()],
 // 0
 ];
-makepoly(ldraw_lib__s__4066as01(), line=0.2);
+module ldraw_lib__s__4066as01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__4066as01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__4066as01(line=0.2);

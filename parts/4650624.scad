@@ -19,4 +19,6 @@ function ldraw_lib__4650624() = [
 // 1 0 0 0 0 1 0 0 0 1 0 0 0 1 61406p05.dat
   [1,0,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__61406p05()],
 ];
-makepoly(ldraw_lib__4650624(), line=0.2);
+module ldraw_lib__4650624(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__4650624(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__4650624(line=0.2);

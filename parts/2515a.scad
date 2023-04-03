@@ -132,4 +132,6 @@ function ldraw_lib__2515a() = [
 // 1 16 0 0 0 0.9659 -0.2588 0 0.2588 0.9659 0 0 0 1 s\2515s01.dat
   [1,16,0,0,0,0.9659,-0.2588,0,0.2588,0.9659,0,0,0,1, ldraw_lib__s__2515s01()],
 ];
-makepoly(ldraw_lib__2515a(), line=0.2);
+module ldraw_lib__2515a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__2515a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__2515a(line=0.2);

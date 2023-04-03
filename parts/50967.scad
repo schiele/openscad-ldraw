@@ -614,4 +614,6 @@ function ldraw_lib__50967() = [
   [4,16,6,8,-4,6,32,-4,6,32,-6,6,30.781,-6.685],
 // 0
 ];
-makepoly(ldraw_lib__50967(), line=0.2);
+module ldraw_lib__50967(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__50967(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__50967(line=0.2);

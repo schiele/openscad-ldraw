@@ -222,4 +222,6 @@ function ldraw_lib__3817bpsk() = [
 // 4 16 8.7226 6.187 -6.187 7.2992 6.187 -6.187 6.6 6.74 -5.1891 8.188 6.74 -5.1891
   [4,16,8.7226,6.187,-6.187,7.2992,6.187,-6.187,6.6,6.74,-5.1891,8.188,6.74,-5.1891],
 ];
-makepoly(ldraw_lib__3817bpsk(), line=0.2);
+module ldraw_lib__3817bpsk(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3817bpsk(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3817bpsk(line=0.2);

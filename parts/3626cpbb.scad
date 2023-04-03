@@ -2098,4 +2098,6 @@ function ldraw_lib__3626cpbb() = [
   [4,92,-7.204,13.488,10.521,-6.949,14.055,10.692,-7.73,14.012,10.17,-7.86,13.795,10.083],
 // 
 ];
-makepoly(ldraw_lib__3626cpbb(), line=0.2);
+module ldraw_lib__3626cpbb(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3626cpbb(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3626cpbb(line=0.2);

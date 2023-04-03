@@ -72,4 +72,6 @@ function ldraw_lib__54732b() = [
 // 1 16 -12.6 -34 36 -2.4 0 0 0 0 -2.4 0 -1 0 1-4chrd.dat
   [1,16,-12.6,-34,36,-2.4,0,0,0,0,-2.4,0,-1,0, ldraw_lib__1_4chrd()],
 ];
-makepoly(ldraw_lib__54732b(), line=0.2);
+module ldraw_lib__54732b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__54732b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__54732b(line=0.2);

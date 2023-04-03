@@ -120,4 +120,6 @@ function ldraw_lib__2440p03() = [
 // 3 16 -59 -4.692 18 -59 -5.75 23.5 -60 -4.5 17
   [3,16,-59,-4.692,18,-59,-5.75,23.5,-60,-4.5,17],
 ];
-makepoly(ldraw_lib__2440p03(), line=0.2);
+module ldraw_lib__2440p03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__2440p03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__2440p03(line=0.2);

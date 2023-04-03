@@ -112,4 +112,6 @@ function ldraw_lib__ms1048() = [
 // 1 494 0 -43 -38.5 6 0 0 0 0 -6 0 8 0 4-4edge.dat
   [1,494,0,-43,-38.5,6,0,0,0,0,-6,0,8,0, ldraw_lib__4_4edge()],
 ];
-makepoly(ldraw_lib__ms1048(), line=0.2);
+module ldraw_lib__ms1048(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__ms1048(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__ms1048(line=0.2);

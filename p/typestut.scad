@@ -168,4 +168,6 @@ function ldraw_lib__typestut() = [
 // 3 16 2.52 0 -4.58 2.52 0 -5 4.14 0 -5
   [3,16,2.52,0,-4.58,2.52,0,-5,4.14,0,-5],
 ];
-makepoly(ldraw_lib__typestut(), line=0.2);
+module ldraw_lib__typestut(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__typestut(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__typestut(line=0.2);

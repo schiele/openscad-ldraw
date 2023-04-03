@@ -137,4 +137,6 @@ function ldraw_lib__13571() = [
 // 1 179 0 0 0 1 0 0 0 1 0 0 0 1 s\13571s01.dat
   [1,179,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__13571s01()],
 ];
-makepoly(ldraw_lib__13571(), line=0.2);
+module ldraw_lib__13571(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__13571(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__13571(line=0.2);

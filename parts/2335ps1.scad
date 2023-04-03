@@ -37,4 +37,6 @@ function ldraw_lib__2335ps1() = [
 // 1 16 -2 10 30 0 0 -1 0 1 0 1 0 0 s\2335ps1s01.dat
   [1,16,-2,10,30,0,0,-1,0,1,0,1,0,0, ldraw_lib__s__2335ps1s01()],
 ];
-makepoly(ldraw_lib__2335ps1(), line=0.2);
+module ldraw_lib__2335ps1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__2335ps1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__2335ps1(line=0.2);

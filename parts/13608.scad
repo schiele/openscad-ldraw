@@ -117,4 +117,6 @@ function ldraw_lib__13608() = [
 // 1 16 0 -19.3659 -14.9175 0 0 7.475 7.10915 2.16312 0 -2.3099 6.6574 0 t01o1429.dat
   [1,16,0,-19.3659,-14.9175,0,0,7.475,7.10915,2.16312,0,-2.3099,6.6574,0, ldraw_lib__t01o1429()],
 ];
-makepoly(ldraw_lib__13608(), line=0.2);
+module ldraw_lib__13608(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__13608(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__13608(line=0.2);

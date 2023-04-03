@@ -83,4 +83,6 @@ function ldraw_lib__4_4con16() = [
 // 5 24 14.7824 1 -6.1232 15.7063 0 -6.5059 16 1 0 11.3136 1 -11.3136
   [5,24,14.7824,1,-6.1232,15.7063,0,-6.5059,16,1,0,11.3136,1,-11.3136],
 ];
-makepoly(ldraw_lib__4_4con16(), line=0.2);
+module ldraw_lib__4_4con16(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__4_4con16(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__4_4con16(line=0.2);

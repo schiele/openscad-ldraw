@@ -277,4 +277,6 @@ function ldraw_lib__3817bpc97() = [
 // 5 24 2 -3.349 -8.084 18.433 -3.349 -8.084 18.546 0 -8.75 2 -6.187 -6.187
   [5,24,2,-3.349,-8.084,18.433,-3.349,-8.084,18.546,0,-8.75,2,-6.187,-6.187],
 ];
-makepoly(ldraw_lib__3817bpc97(), line=0.2);
+module ldraw_lib__3817bpc97(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3817bpc97(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3817bpc97(line=0.2);

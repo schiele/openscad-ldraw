@@ -3121,4 +3121,6 @@ function ldraw_lib__3626cpm5() = [
 // 3 84 4.73 18.41 11.7089 4.82985 18.53098 11.65898 4.6448 18.531 11.6958
   [3,84,4.73,18.41,11.7089,4.82985,18.53098,11.65898,4.6448,18.531,11.6958],
 ];
-makepoly(ldraw_lib__3626cpm5(), line=0.2);
+module ldraw_lib__3626cpm5(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3626cpm5(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3626cpm5(line=0.2);

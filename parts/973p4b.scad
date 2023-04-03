@@ -370,4 +370,6 @@ function ldraw_lib__973p4b() = [
 // 1 0 0 29.5 -10 4 0 0 0 0 2.5 0 1 0 2-4ndis.dat
   [1,0,0,29.5,-10,4,0,0,0,0,2.5,0,1,0, ldraw_lib__2_4ndis()],
 ];
-makepoly(ldraw_lib__973p4b(), line=0.2);
+module ldraw_lib__973p4b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973p4b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973p4b(line=0.2);

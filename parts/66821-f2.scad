@@ -110,4 +110,6 @@ function ldraw_lib__66821_f2() = [
 // 1 16 0 68.0062 7.9199 -1 0 0 0 -0.99705 -0.80638 0 -0.07681 10.46729 66821k02.dat
   [1,16,0,68.0062,7.9199,-1,0,0,0,-0.99705,-0.80638,0,-0.07681,10.46729, ldraw_lib__66821k02()],
 ];
-makepoly(ldraw_lib__66821_f2(), line=0.2);
+module ldraw_lib__66821_f2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__66821_f2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__66821_f2(line=0.2);

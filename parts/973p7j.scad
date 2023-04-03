@@ -1359,4 +1359,6 @@ function ldraw_lib__973p7j() = [
 // 0 // Pattern created wholly or in part by Quad2Dat
 // 0 // Thanks James
 ];
-makepoly(ldraw_lib__973p7j(), line=0.2);
+module ldraw_lib__973p7j(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973p7j(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973p7j(line=0.2);

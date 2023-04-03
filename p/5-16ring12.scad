@@ -27,4 +27,6 @@ function ldraw_lib__5_16ring12() = [
   [4,16,0,0,13,-4.9751,0,12.0107,-4.5924,0,11.0868,0,0,12],
 // 0 // Build by Primitive Generator 2
 ];
-makepoly(ldraw_lib__5_16ring12(), line=0.2);
+module ldraw_lib__5_16ring12(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__5_16ring12(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__5_16ring12(line=0.2);

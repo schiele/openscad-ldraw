@@ -133,4 +133,6 @@ function ldraw_lib__s__2586ph2a() = [
   [3,16,-12.5,2,-8,-12.25,2.5,-8,-12,0,-8],
 // 0
 ];
-makepoly(ldraw_lib__s__2586ph2a(), line=0.2);
+module ldraw_lib__s__2586ph2a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__2586ph2a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__2586ph2a(line=0.2);

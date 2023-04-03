@@ -1567,4 +1567,6 @@ function ldraw_lib__973prk() = [
 // 4 16 15.19 14.4 10 15.06 12.59 10 14.35 2 10 19 29 10
   [4,16,15.19,14.4,10,15.06,12.59,10,14.35,2,10,19,29,10],
 ];
-makepoly(ldraw_lib__973prk(), line=0.2);
+module ldraw_lib__973prk(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973prk(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973prk(line=0.2);

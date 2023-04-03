@@ -290,4 +290,6 @@ function ldraw_lib__35787pt01() = [
 // 4 82 -18.14 0 -3.08 -15.16 0 -4.21 -5.68 0 .02 -7.54 0 1.88
   [4,82,-18.14,0,-3.08,-15.16,0,-4.21,-5.68,0,.02,-7.54,0,1.88],
 ];
-makepoly(ldraw_lib__35787pt01(), line=0.2);
+module ldraw_lib__35787pt01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__35787pt01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__35787pt01(line=0.2);

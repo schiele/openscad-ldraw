@@ -344,4 +344,6 @@ function ldraw_lib__48__tm04o1750() = [
 // 5 24 0 0.1617 1.067 0 0.175 1 0.1393 0.1617 1.0578 -0.1405 0.1617 1.067
   [5,24,0,0.1617,1.067,0,0.175,1,0.1393,0.1617,1.0578,-0.1405,0.1617,1.067],
 ];
-makepoly(ldraw_lib__48__tm04o1750(), line=0.2);
+module ldraw_lib__48__tm04o1750(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__48__tm04o1750(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__48__tm04o1750(line=0.2);

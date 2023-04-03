@@ -95,4 +95,6 @@ function ldraw_lib__32531a() = [
 // 1 16 20 18 -30 1 0 0 0 -1 0 0 0 1 stxjcyl9.dat
   [1,16,20,18,-30,1,0,0,0,-1,0,0,0,1, ldraw_lib__stxjcyl9()],
 ];
-makepoly(ldraw_lib__32531a(), line=0.2);
+module ldraw_lib__32531a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__32531a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__32531a(line=0.2);

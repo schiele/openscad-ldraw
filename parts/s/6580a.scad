@@ -1519,4 +1519,6 @@ function ldraw_lib__s__6580a() = [
 // 5 24 7 0 -13.45 -7 0 -20 6.8 -0.8049 -13.4055 6.8 0.8049 -13.4055
   [5,24,7,0,-13.45,-7,0,-20,6.8,-0.8049,-13.4055,6.8,0.8049,-13.4055],
 ];
-makepoly(ldraw_lib__s__6580a(), line=0.2);
+module ldraw_lib__s__6580a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__6580a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__6580a(line=0.2);

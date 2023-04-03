@@ -12105,4 +12105,6 @@ function ldraw_lib__s__u600s01() = [
   [5,24,0,-23.88,-19.58,0,-22.53,-20.62,1.86,-22.65,-20.47,-1.86,-22.65,-20.47],
 // 
 ];
-makepoly(ldraw_lib__s__u600s01(), line=0.2);
+module ldraw_lib__s__u600s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__u600s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__u600s01(line=0.2);

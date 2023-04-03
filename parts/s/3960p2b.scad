@@ -758,4 +758,6 @@ function ldraw_lib__s__3960p2b() = [
 // 5 24 38.665 7.6 -5.089 38.334 7.467 -5.046 37.026 7.333 -9.921 39 7.6 0
   [5,24,38.665,7.6,-5.089,38.334,7.467,-5.046,37.026,7.333,-9.921,39,7.6,0],
 ];
-makepoly(ldraw_lib__s__3960p2b(), line=0.2);
+module ldraw_lib__s__3960p2b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__3960p2b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__3960p2b(line=0.2);

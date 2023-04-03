@@ -115,4 +115,6 @@ function ldraw_lib__confricrib4() = [
 // 2 24 6.0748 1.1 0.6294 6.1475 0 0.5757
   [2,24,6.0748,1.1,0.6294,6.1475,0,0.5757],
 ];
-makepoly(ldraw_lib__confricrib4(), line=0.2);
+module ldraw_lib__confricrib4(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__confricrib4(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__confricrib4(line=0.2);

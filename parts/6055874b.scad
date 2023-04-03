@@ -1712,4 +1712,6 @@ function ldraw_lib__6055874b() = [
 // 1 288 0 -.25 0 16.375 0 0 0 1 0 0 0 16.375 4-4ering.dat
   [1,288,0,-.25,0,16.375,0,0,0,1,0,0,0,16.375, ldraw_lib__4_4ering()],
 ];
-makepoly(ldraw_lib__6055874b(), line=0.2);
+module ldraw_lib__6055874b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__6055874b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__6055874b(line=0.2);

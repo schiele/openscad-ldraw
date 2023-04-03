@@ -85,4 +85,6 @@ function ldraw_lib__98138p2c() = [
 // 3 16 0 0 10 -3.827 0 9.239 3.827 0 9.239
   [3,16,0,0,10,-3.827,0,9.239,3.827,0,9.239],
 ];
-makepoly(ldraw_lib__98138p2c(), line=0.2);
+module ldraw_lib__98138p2c(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__98138p2c(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__98138p2c(line=0.2);

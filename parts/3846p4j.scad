@@ -120,4 +120,6 @@ function ldraw_lib__3846p4j() = [
 // 3 73 -1.3 -4.7994 -10 0 -4.7994 -10 0 -10.4425 -10
   [3,73,-1.3,-4.7994,-10,0,-4.7994,-10,0,-10.4425,-10],
 ];
-makepoly(ldraw_lib__3846p4j(), line=0.2);
+module ldraw_lib__3846p4j(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3846p4j(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3846p4j(line=0.2);

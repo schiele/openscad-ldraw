@@ -26,4 +26,6 @@ function ldraw_lib__4493pw2c00() = [
 // 1 16 0 -19.5 -33.5 1 0 0 0 0.9848 -0.1736 0 0.1736 0.9848 4492pw2.dat
   [1,16,0,-19.5,-33.5,1,0,0,0,0.9848,-0.1736,0,0.1736,0.9848, ldraw_lib__4492pw2()],
 ];
-makepoly(ldraw_lib__4493pw2c00(), line=0.2);
+module ldraw_lib__4493pw2c00(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__4493pw2c00(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__4493pw2c00(line=0.2);

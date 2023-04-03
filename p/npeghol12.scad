@@ -50,4 +50,6 @@ function ldraw_lib__npeghol12() = [
   [4,16,-9,0,10,-9,0,-10,-8.31,0,-6.558,-8.31,0,6.558],
 // 0
 ];
-makepoly(ldraw_lib__npeghol12(), line=0.2);
+module ldraw_lib__npeghol12(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__npeghol12(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__npeghol12(line=0.2);

@@ -95,4 +95,6 @@ function ldraw_lib__3817bpba() = [
 // 3 16 2 6.187 -6.187 11.6353 6.187 -6.187 2 3.349 -8.084
   [3,16,2,6.187,-6.187,11.6353,6.187,-6.187,2,3.349,-8.084],
 ];
-makepoly(ldraw_lib__3817bpba(), line=0.2);
+module ldraw_lib__3817bpba(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3817bpba(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3817bpba(line=0.2);

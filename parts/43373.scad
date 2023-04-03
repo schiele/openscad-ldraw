@@ -84,4 +84,6 @@ function ldraw_lib__43373() = [
 // 1 16 0 9 -50 -26.0939 0 34.0063 0 -3 0 -34.0063 0 -26.0939 48\5-24cyli.dat
   [1,16,0,9,-50,-26.0939,0,34.0063,0,-3,0,-34.0063,0,-26.0939, ldraw_lib__48__5_24cyli()],
 ];
-makepoly(ldraw_lib__43373(), line=0.2);
+module ldraw_lib__43373(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__43373(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__43373(line=0.2);

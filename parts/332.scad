@@ -35,4 +35,6 @@ function ldraw_lib__332() = [
 // 1 16 0 58 -90 1 0 0 0 0 1 0 1 0 axl5end.dat
   [1,16,0,58,-90,1,0,0,0,0,1,0,1,0, ldraw_lib__axl5end()],
 ];
-makepoly(ldraw_lib__332(), line=0.2);
+module ldraw_lib__332(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__332(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__332(line=0.2);

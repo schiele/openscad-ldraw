@@ -420,4 +420,6 @@ function ldraw_lib__s__u9496s03() = [
 // 5 24 258 0 -402.5 258 -.25 -402.5 262.5 0 -396.5 253 -.25 -406
   [5,24,258,0,-402.5,258,-.25,-402.5,262.5,0,-396.5,253,-.25,-406],
 ];
-makepoly(ldraw_lib__s__u9496s03(), line=0.2);
+module ldraw_lib__s__u9496s03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__u9496s03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__u9496s03(line=0.2);

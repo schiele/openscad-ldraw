@@ -672,4 +672,6 @@ function ldraw_lib__3817pw2() = [
 // 4 16 1.5 20 -11 1.5 28 -11 19.5 28 -11 19.18 20 -11
   [4,16,1.5,20,-11,1.5,28,-11,19.5,28,-11,19.18,20,-11],
 ];
-makepoly(ldraw_lib__3817pw2(), line=0.2);
+module ldraw_lib__3817pw2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3817pw2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3817pw2(line=0.2);

@@ -237,4 +237,6 @@ function ldraw_lib__3069bpza() = [
 // 3 80 18.5 0 8.5 4 0 6.87 5.44 0 6.87
   [3,80,18.5,0,8.5,4,0,6.87,5.44,0,6.87],
 ];
-makepoly(ldraw_lib__3069bpza(), line=0.2);
+module ldraw_lib__3069bpza(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3069bpza(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3069bpza(line=0.2);

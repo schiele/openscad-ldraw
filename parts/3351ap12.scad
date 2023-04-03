@@ -227,4 +227,6 @@ function ldraw_lib__3351ap12() = [
   [4,16,-5,-77.2,-2,-4.9,-77.7,-2,-5.7,-78.2,-2,-5.3,-76.3,-2],
 // 0 //
 ];
-makepoly(ldraw_lib__3351ap12(), line=0.2);
+module ldraw_lib__3351ap12(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3351ap12(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3351ap12(line=0.2);

@@ -91,4 +91,6 @@ function ldraw_lib__stud9() = [
 // 5 24 4.24264 0 -4.24264 4.24264 -4 -4.24264 3.511413 0 -4.73126 5.543433424 0 -2.296116768
   [5,24,4.24264,0,-4.24264,4.24264,-4,-4.24264,3.511413,0,-4.73126,5.543433424,0,-2.296116768],
 ];
-makepoly(ldraw_lib__stud9(), line=0.2);
+module ldraw_lib__stud9(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__stud9(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__stud9(line=0.2);

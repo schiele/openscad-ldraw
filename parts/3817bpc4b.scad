@@ -440,4 +440,6 @@ function ldraw_lib__3817bpc4b() = [
 // 3 82 12.928 6.095 -6.249 12.927 6.094 -6.249 12.247 6.187 -6.187
   [3,82,12.928,6.095,-6.249,12.927,6.094,-6.249,12.247,6.187,-6.187],
 ];
-makepoly(ldraw_lib__3817bpc4b(), line=0.2);
+module ldraw_lib__3817bpc4b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3817bpc4b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3817bpc4b(line=0.2);

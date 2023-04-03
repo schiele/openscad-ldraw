@@ -189,4 +189,6 @@ function ldraw_lib__22168() = [
 // 1 47 -26.5 -14.5 -116 1 0 0 0 1 0 0 0 1 62498c03.dat
   [1,47,-26.5,-14.5,-116,1,0,0,0,1,0,0,0,1, ldraw_lib__62498c03()],
 ];
-makepoly(ldraw_lib__22168(), line=0.2);
+module ldraw_lib__22168(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__22168(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__22168(line=0.2);

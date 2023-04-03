@@ -1249,4 +1249,6 @@ function ldraw_lib__3039pcf() = [
 // 3 4 13.8 6.0811 -16.0811 5.9 6.8589 -16.8589 8.5 6.8589 -16.8589
   [3,4,13.8,6.0811,-16.0811,5.9,6.8589,-16.8589,8.5,6.8589,-16.8589],
 ];
-makepoly(ldraw_lib__3039pcf(), line=0.2);
+module ldraw_lib__3039pcf(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3039pcf(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3039pcf(line=0.2);

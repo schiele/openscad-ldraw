@@ -70,4 +70,6 @@ function ldraw_lib__4511() = [
 // 1 16 -20.25 0 -2 4.5 0 0 0 0 58 0 .5 0 box3u10p.dat
   [1,16,-20.25,0,-2,4.5,0,0,0,0,58,0,.5,0, ldraw_lib__box3u10p()],
 ];
-makepoly(ldraw_lib__4511(), line=0.2);
+module ldraw_lib__4511(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__4511(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__4511(line=0.2);

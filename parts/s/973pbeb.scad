@@ -726,4 +726,6 @@ function ldraw_lib__s__973pbeb() = [
 // 3 16 0 32 0 19 32 0 0 30.9 0
   [3,16,0,32,0,19,32,0,0,30.9,0],
 ];
-makepoly(ldraw_lib__s__973pbeb(), line=0.2);
+module ldraw_lib__s__973pbeb(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__973pbeb(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__973pbeb(line=0.2);

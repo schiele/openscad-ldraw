@@ -102,4 +102,6 @@ function ldraw_lib__2525ps1() = [
 // 4 7 -2 4 106 -2 4 94 -2 39 94 -2 46 106
   [4,7,-2,4,106,-2,4,94,-2,39,94,-2,46,106],
 ];
-makepoly(ldraw_lib__2525ps1(), line=0.2);
+module ldraw_lib__2525ps1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__2525ps1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__2525ps1(line=0.2);

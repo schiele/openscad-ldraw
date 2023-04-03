@@ -74,4 +74,6 @@ function ldraw_lib__973p4s() = [
   [1,334,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973p4sa()],
 // 0
 ];
-makepoly(ldraw_lib__973p4s(), line=0.2);
+module ldraw_lib__973p4s(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973p4s(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973p4s(line=0.2);

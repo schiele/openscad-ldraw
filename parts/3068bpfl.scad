@@ -31,4 +31,6 @@ function ldraw_lib__3068bpfl() = [
 // 4 16 -20 0 20 -20 0 -20 -19 0 -19 -19 0 19
   [4,16,-20,0,20,-20,0,-20,-19,0,-19,-19,0,19],
 ];
-makepoly(ldraw_lib__3068bpfl(), line=0.2);
+module ldraw_lib__3068bpfl(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3068bpfl(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3068bpfl(line=0.2);

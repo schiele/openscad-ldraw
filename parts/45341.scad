@@ -52,4 +52,6 @@ function ldraw_lib__45341() = [
 // 1 0 -126 92 10 0 0 6 0 4 0 -4 0 0 box5.dat
   [1,0,-126,92,10,0,0,6,0,4,0,-4,0,0, ldraw_lib__box5()],
 ];
-makepoly(ldraw_lib__45341(), line=0.2);
+module ldraw_lib__45341(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__45341(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__45341(line=0.2);

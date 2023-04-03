@@ -224,4 +224,6 @@ function ldraw_lib__s__4088s02() = [
 // 4 16 -21 47.5 -1.5 -21 29.5 -1.5 -24 29.5 -1.5 -24 47.5 -1.5
   [4,16,-21,47.5,-1.5,-21,29.5,-1.5,-24,29.5,-1.5,-24,47.5,-1.5],
 ];
-makepoly(ldraw_lib__s__4088s02(), line=0.2);
+module ldraw_lib__s__4088s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__4088s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__4088s02(line=0.2);

@@ -339,4 +339,6 @@ function ldraw_lib__s__191915sdea() = [
 // 3 16 22.047 0 -2.031 24.195 0 -3.324 26.234 0 0.469
   [3,16,22.047,0,-2.031,24.195,0,-3.324,26.234,0,0.469],
 ];
-makepoly(ldraw_lib__s__191915sdea(), line=0.2);
+module ldraw_lib__s__191915sdea(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__191915sdea(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__191915sdea(line=0.2);

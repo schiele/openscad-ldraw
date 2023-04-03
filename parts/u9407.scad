@@ -307,4 +307,6 @@ function ldraw_lib__u9407() = [
 // 1 16 25 -20 9 0 -1 0 -7 0 0 0 0 -7 1-8edge.dat
   [1,16,25,-20,9,0,-1,0,-7,0,0,0,0,-7, ldraw_lib__1_8edge()],
 ];
-makepoly(ldraw_lib__u9407(), line=0.2);
+module ldraw_lib__u9407(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__u9407(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__u9407(line=0.2);

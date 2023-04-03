@@ -140,4 +140,6 @@ function ldraw_lib__88930pz4() = [
 // 5 24 -40 -3.992816 -20.007718 40 -3.992816 -20.007718 -40 .033552 -24.890572 -40 -7.527664 -14.445904
   [5,24,-40,-3.992816,-20.007718,40,-3.992816,-20.007718,-40,.033552,-24.890572,-40,-7.527664,-14.445904],
 ];
-makepoly(ldraw_lib__88930pz4(), line=0.2);
+module ldraw_lib__88930pz4(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__88930pz4(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__88930pz4(line=0.2);

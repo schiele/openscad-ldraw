@@ -523,4 +523,6 @@ function ldraw_lib__s__30366p2c() = [
   [5,24,16.073,38.804,-30.5488,19.135,46.195,-26.6,24.75,42.867,-26.8468,12.811,47.812,-26.8468],
 // 0
 ];
-makepoly(ldraw_lib__s__30366p2c(), line=0.2);
+module ldraw_lib__s__30366p2c(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__30366p2c(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__30366p2c(line=0.2);

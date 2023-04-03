@@ -58,4 +58,6 @@ function ldraw_lib__3815pde() = [
 // 1 80 -10 3 -10 1.2 0 0 0 0 -1.2 0 1 0 4-4disc.dat
   [1,80,-10,3,-10,1.2,0,0,0,0,-1.2,0,1,0, ldraw_lib__4_4disc()],
 ];
-makepoly(ldraw_lib__3815pde(), line=0.2);
+module ldraw_lib__3815pde(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3815pde(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3815pde(line=0.2);

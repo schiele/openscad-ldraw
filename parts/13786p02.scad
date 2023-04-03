@@ -1997,4 +1997,6 @@ function ldraw_lib__13786p02() = [
 // 3 16 8.685 -45.502 -.917 4.922 -47.862 -3.738 4.418 -47.46 -7.079
   [3,16,8.685,-45.502,-.917,4.922,-47.862,-3.738,4.418,-47.46,-7.079],
 ];
-makepoly(ldraw_lib__13786p02(), line=0.2);
+module ldraw_lib__13786p02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__13786p02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__13786p02(line=0.2);

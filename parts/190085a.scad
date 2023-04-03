@@ -27,4 +27,6 @@ function ldraw_lib__190085a() = [
 // 1 4 0 -.25 0 7 0 0 0 1 0 0 0 6 48\4-4ring5.dat
   [1,4,0,-.25,0,7,0,0,0,1,0,0,0,6, ldraw_lib__48__4_4ring5()],
 ];
-makepoly(ldraw_lib__190085a(), line=0.2);
+module ldraw_lib__190085a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__190085a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__190085a(line=0.2);

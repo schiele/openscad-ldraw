@@ -1353,4 +1353,6 @@ function ldraw_lib__30361dpsj() = [
 // 4 80 -9.5 28.2 -17.241 -9 27.6 -17.575 -9 24.4 -17.575 -9.5 23.8 -17.241
   [4,80,-9.5,28.2,-17.241,-9,27.6,-17.575,-9,24.4,-17.575,-9.5,23.8,-17.241],
 ];
-makepoly(ldraw_lib__30361dpsj(), line=0.2);
+module ldraw_lib__30361dpsj(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__30361dpsj(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__30361dpsj(line=0.2);

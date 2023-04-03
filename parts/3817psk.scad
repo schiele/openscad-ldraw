@@ -190,4 +190,6 @@ function ldraw_lib__3817psk() = [
 // 4 16 10.95 -6.3 -6.3 10.95 -3.42 -8.28 18.23 -3.42 -8.28 18.11 -6.3 -6.3
   [4,16,10.95,-6.3,-6.3,10.95,-3.42,-8.28,18.23,-3.42,-8.28,18.11,-6.3,-6.3],
 ];
-makepoly(ldraw_lib__3817psk(), line=0.2);
+module ldraw_lib__3817psk(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3817psk(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3817psk(line=0.2);

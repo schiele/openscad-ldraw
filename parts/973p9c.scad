@@ -236,4 +236,6 @@ function ldraw_lib__973p9c() = [
 // 3 16 -6.1 1.8 -10 -7.3 4.6 -10 -6.4 5.4 -10
   [3,16,-6.1,1.8,-10,-7.3,4.6,-10,-6.4,5.4,-10],
 ];
-makepoly(ldraw_lib__973p9c(), line=0.2);
+module ldraw_lib__973p9c(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973p9c(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973p9c(line=0.2);

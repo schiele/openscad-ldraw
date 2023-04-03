@@ -194,4 +194,6 @@ function ldraw_lib__clh6c() = [
 // 3 16 -3.67 0 -13.66 -3 -2.26 -15.35 -3.752 -1.446 -13.45
   [3,16,-3.67,0,-13.66,-3,-2.26,-15.35,-3.752,-1.446,-13.45],
 ];
-makepoly(ldraw_lib__clh6c(), line=0.2);
+module ldraw_lib__clh6c(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__clh6c(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__clh6c(line=0.2);

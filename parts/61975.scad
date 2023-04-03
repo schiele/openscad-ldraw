@@ -241,4 +241,6 @@ function ldraw_lib__61975() = [
 // 1 16 0 15.9 0 -1.33933 0 -3.234 0 -1 0 3.234 0 -1.33933 3-8edge.dat
   [1,16,0,15.9,0,-1.33933,0,-3.234,0,-1,0,3.234,0,-1.33933, ldraw_lib__3_8edge()],
 ];
-makepoly(ldraw_lib__61975(), line=0.2);
+module ldraw_lib__61975(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__61975(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__61975(line=0.2);

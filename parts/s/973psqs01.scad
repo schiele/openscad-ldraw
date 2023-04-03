@@ -308,4 +308,6 @@ function ldraw_lib__s__973psqs01() = [
 // 4 80 0 31.273 -10 3.7 31.273 -10 2.138 30.828 -10 0 30.828 -10
   [4,80,0,31.273,-10,3.7,31.273,-10,2.138,30.828,-10,0,30.828,-10],
 ];
-makepoly(ldraw_lib__s__973psqs01(), line=0.2);
+module ldraw_lib__s__973psqs01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__973psqs01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__973psqs01(line=0.2);

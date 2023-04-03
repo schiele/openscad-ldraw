@@ -818,4 +818,6 @@ function ldraw_lib__3846p4c() = [
 // 4 4 8.875 -6.5 -10 13.25 -8.25 -10 16 -9.75 -10 0 -9.75 -10
   [4,4,8.875,-6.5,-10,13.25,-8.25,-10,16,-9.75,-10,0,-9.75,-10],
 ];
-makepoly(ldraw_lib__3846p4c(), line=0.2);
+module ldraw_lib__3846p4c(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3846p4c(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3846p4c(line=0.2);

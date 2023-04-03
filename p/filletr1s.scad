@@ -46,4 +46,6 @@ function ldraw_lib__filletr1s() = [
 // 1 16 34.875 10 36.5 -3.625 0 0 0 0 -10 0 1 0 rect2p.dat
   [1,16,34.875,10,36.5,-3.625,0,0,0,0,-10,0,1,0, ldraw_lib__rect2p()],
 ];
-makepoly(ldraw_lib__filletr1s(), line=0.2);
+module ldraw_lib__filletr1s(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__filletr1s(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__filletr1s(line=0.2);

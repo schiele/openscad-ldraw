@@ -138,4 +138,6 @@ function ldraw_lib__s__191915ssea() = [
 // 3 16 37.5 0 37.2 33.6 0 0 37.5 0 -37.2
   [3,16,37.5,0,37.2,33.6,0,0,37.5,0,-37.2],
 ];
-makepoly(ldraw_lib__s__191915ssea(), line=0.2);
+module ldraw_lib__s__191915ssea(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__191915ssea(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__191915ssea(line=0.2);

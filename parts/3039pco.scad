@@ -1851,4 +1851,6 @@ function ldraw_lib__3039pco() = [
 // 4 322 -12.0486 6.7918 -16.7918 -12.8841 8.192 -18.192 -12.3396 7.5211 -17.5211 -12.0486 6.9995 -16.9995
   [4,322,-12.0486,6.7918,-16.7918,-12.8841,8.192,-18.192,-12.3396,7.5211,-17.5211,-12.0486,6.9995,-16.9995],
 ];
-makepoly(ldraw_lib__3039pco(), line=0.2);
+module ldraw_lib__3039pco(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3039pco(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3039pco(line=0.2);

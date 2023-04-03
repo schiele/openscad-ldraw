@@ -33,4 +33,6 @@ function ldraw_lib__3010pzr() = [
 // 3 16 -10.75 1.5 -10 0 2.5 -10 10.75 1.5 -10
   [3,16,-10.75,1.5,-10,0,2.5,-10,10.75,1.5,-10],
 ];
-makepoly(ldraw_lib__3010pzr(), line=0.2);
+module ldraw_lib__3010pzr(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3010pzr(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3010pzr(line=0.2);

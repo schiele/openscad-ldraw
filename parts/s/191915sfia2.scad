@@ -55,4 +55,6 @@ function ldraw_lib__s__191915sfia2() = [
 // 3 16 10.8 0 0.3 7.6 0 -5.3 10.8 0 -5.3
   [3,16,10.8,0,0.3,7.6,0,-5.3,10.8,0,-5.3],
 ];
-makepoly(ldraw_lib__s__191915sfia2(), line=0.2);
+module ldraw_lib__s__191915sfia2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__191915sfia2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__191915sfia2(line=0.2);

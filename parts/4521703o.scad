@@ -172,4 +172,6 @@ function ldraw_lib__4521703o() = [
   [4,320,7.4,-0.25,4.5,11.2,-0.25,6.7,10.155,-0.25,8.191,6.3,-0.25,5.8],
 // 0 //
 ];
-makepoly(ldraw_lib__4521703o(), line=0.2);
+module ldraw_lib__4521703o(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__4521703o(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__4521703o(line=0.2);

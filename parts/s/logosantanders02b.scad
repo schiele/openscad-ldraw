@@ -168,4 +168,6 @@ function ldraw_lib__s__logosantanders02b() = [
 // 3 16 -2.8 0 -2.54 0 0 -2.54 -0.2821 0 -2.5329
   [3,16,-2.8,0,-2.54,0,0,-2.54,-0.2821,0,-2.5329],
 ];
-makepoly(ldraw_lib__s__logosantanders02b(), line=0.2);
+module ldraw_lib__s__logosantanders02b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__logosantanders02b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__logosantanders02b(line=0.2);

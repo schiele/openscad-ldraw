@@ -24,4 +24,6 @@ function ldraw_lib__2623d01() = [
 // 1 16 -90 -3.5 40 .31601 .91473 -.25181 .00085 -.26514 -.9642 -.94876 .30491 -.083 820672f.dat
   [1,16,-90,-3.5,40,.31601,.91473,-.25181,.00085,-.26514,-.9642,-.94876,.30491,-.083, ldraw_lib__820672f()],
 ];
-makepoly(ldraw_lib__2623d01(), line=0.2);
+module ldraw_lib__2623d01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__2623d01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__2623d01(line=0.2);

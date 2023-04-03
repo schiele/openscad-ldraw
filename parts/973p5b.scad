@@ -4532,4 +4532,6 @@ function ldraw_lib__973p5b() = [
 // 3 72 10.78 28.94 -10 10.3 29.43 -10 10.78 29.22 -10
   [3,72,10.78,28.94,-10,10.3,29.43,-10,10.78,29.22,-10],
 ];
-makepoly(ldraw_lib__973p5b(), line=0.2);
+module ldraw_lib__973p5b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973p5b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973p5b(line=0.2);

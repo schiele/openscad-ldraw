@@ -149,4 +149,6 @@ function ldraw_lib__u9330() = [
 // 1 16 0 4 0 -18.4776 0 7.65367 0 10 0 -7.65367 0 -18.4776 3-8cyli.dat
   [1,16,0,4,0,-18.4776,0,7.65367,0,10,0,-7.65367,0,-18.4776, ldraw_lib__3_8cyli()],
 ];
-makepoly(ldraw_lib__u9330(), line=0.2);
+module ldraw_lib__u9330(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__u9330(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__u9330(line=0.2);

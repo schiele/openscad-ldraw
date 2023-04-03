@@ -2656,4 +2656,6 @@ function ldraw_lib__973p7y() = [
 // 3 16 14.4 25 10 15 25.65 10 12.7 25.75 10
   [3,16,14.4,25,10,15,25.65,10,12.7,25.75,10],
 ];
-makepoly(ldraw_lib__973p7y(), line=0.2);
+module ldraw_lib__973p7y(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973p7y(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973p7y(line=0.2);

@@ -280,4 +280,6 @@ function ldraw_lib__3001pt2() = [
 // 4 16 17.502 16.982 -20 12.5 15.803 -20 13.986 16.982 -20 15.744 17.4 -20
   [4,16,17.502,16.982,-20,12.5,15.803,-20,13.986,16.982,-20,15.744,17.4,-20],
 ];
-makepoly(ldraw_lib__3001pt2(), line=0.2);
+module ldraw_lib__3001pt2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3001pt2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3001pt2(line=0.2);

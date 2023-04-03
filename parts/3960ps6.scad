@@ -191,4 +191,6 @@ function ldraw_lib__3960ps6() = [
 // 4 15 -24.7485 6 -24.7485 -28.284 8 -28.284 -24.352 8 -31.736 -21.308 6 -27.769
   [4,15,-24.7485,6,-24.7485,-28.284,8,-28.284,-24.352,8,-31.736,-21.308,6,-27.769],
 ];
-makepoly(ldraw_lib__3960ps6(), line=0.2);
+module ldraw_lib__3960ps6(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3960ps6(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3960ps6(line=0.2);

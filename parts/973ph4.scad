@@ -1980,4 +1980,6 @@ function ldraw_lib__973ph4() = [
 // 4 16 12.574 30.32 -10 11.724 30.466 -10 19 32 -10 13.425 30.198 -10
   [4,16,12.574,30.32,-10,11.724,30.466,-10,19,32,-10,13.425,30.198,-10],
 ];
-makepoly(ldraw_lib__973ph4(), line=0.2);
+module ldraw_lib__973ph4(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973ph4(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973ph4(line=0.2);

@@ -18,4 +18,6 @@ function ldraw_lib__31570() = [
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 20482.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__20482()],
 ];
-makepoly(ldraw_lib__31570(), line=0.2);
+module ldraw_lib__31570(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__31570(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__31570(line=0.2);

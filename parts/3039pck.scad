@@ -1711,4 +1711,6 @@ function ldraw_lib__3039pck() = [
 // 3 272 -4.7362 12.9375 -22.9375 -4.6155 12.9022 -22.9022 -4.857 12.9022 -22.9022
   [3,272,-4.7362,12.9375,-22.9375,-4.6155,12.9022,-22.9022,-4.857,12.9022,-22.9022],
 ];
-makepoly(ldraw_lib__3039pck(), line=0.2);
+module ldraw_lib__3039pck(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3039pck(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3039pck(line=0.2);

@@ -30,4 +30,6 @@ function ldraw_lib__s__609p01s1() = [
   [4,16,318.755,0,63.4044,323.659,0,64.3798,327.177,0,43.0736,322.22,0,42.421],
 // 0
 ];
-makepoly(ldraw_lib__s__609p01s1(), line=0.2);
+module ldraw_lib__s__609p01s1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__609p01s1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__609p01s1(line=0.2);

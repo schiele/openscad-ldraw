@@ -21,4 +21,6 @@ function ldraw_lib__4109600() = [
 // 1 2 0 0 0 1 0 0 0 1 0 0 0 1 612p01.dat
   [1,2,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__612p01()],
 ];
-makepoly(ldraw_lib__4109600(), line=0.2);
+module ldraw_lib__4109600(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__4109600(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__4109600(line=0.2);

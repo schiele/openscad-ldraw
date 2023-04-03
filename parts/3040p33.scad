@@ -67,4 +67,6 @@ function ldraw_lib__3040p33() = [
   [4,16,2,2.8572,-12.8572,2,17.8575,-27.8575,4,17.8575,-27.8575,4,2.8572,-12.8572],
 // 0
 ];
-makepoly(ldraw_lib__3040p33(), line=0.2);
+module ldraw_lib__3040p33(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3040p33(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3040p33(line=0.2);

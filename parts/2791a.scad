@@ -410,4 +410,6 @@ function ldraw_lib__2791a() = [
 // 1 16 16 -2.4876 -12.5054 0 -32 0 0.98079 0 -0.39018 -0.19509 0 -1.96157 2-4cylo.dat
   [1,16,16,-2.4876,-12.5054,0,-32,0,0.98079,0,-0.39018,-0.19509,0,-1.96157, ldraw_lib__2_4cylo()],
 ];
-makepoly(ldraw_lib__2791a(), line=0.2);
+module ldraw_lib__2791a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__2791a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__2791a(line=0.2);

@@ -770,4 +770,6 @@ function ldraw_lib__925p0j() = [
 // 4 16 63.5 1.5 -10 63.5 22.5 -10 80 24 -10 80 0 -10
   [4,16,63.5,1.5,-10,63.5,22.5,-10,80,24,-10,80,0,-10],
 ];
-makepoly(ldraw_lib__925p0j(), line=0.2);
+module ldraw_lib__925p0j(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__925p0j(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__925p0j(line=0.2);

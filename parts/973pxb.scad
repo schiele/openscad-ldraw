@@ -4885,4 +4885,6 @@ function ldraw_lib__973pxb() = [
 // 4 0 -.387 17.769 -10 -.311 17.949 -10 .1 17.95 -10 -.05 17.65 -10
   [4,0,-.387,17.769,-10,-.311,17.949,-10,.1,17.95,-10,-.05,17.65,-10],
 ];
-makepoly(ldraw_lib__973pxb(), line=0.2);
+module ldraw_lib__973pxb(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973pxb(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973pxb(line=0.2);

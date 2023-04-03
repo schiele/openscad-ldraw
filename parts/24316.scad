@@ -23,4 +23,6 @@ function ldraw_lib__24316() = [
 // 1 16 30 0 0 0 -2 0 8 0 0 0 0 8 4-4cylc.dat
   [1,16,30,0,0,0,-2,0,8,0,0,0,0,8, ldraw_lib__4_4cylc()],
 ];
-makepoly(ldraw_lib__24316(), line=0.2);
+module ldraw_lib__24316(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__24316(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__24316(line=0.2);

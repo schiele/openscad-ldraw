@@ -42,4 +42,6 @@ function ldraw_lib__s__usflags03() = [
 // 4 4 1 0 -100 1 0 -92.3077 0 0 -92.3077 0 0 -100
   [4,4,1,0,-100,1,0,-92.3077,0,0,-92.3077,0,0,-100],
 ];
-makepoly(ldraw_lib__s__usflags03(), line=0.2);
+module ldraw_lib__s__usflags03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__usflags03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__usflags03(line=0.2);

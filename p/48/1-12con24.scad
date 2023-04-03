@@ -33,4 +33,6 @@ function ldraw_lib__48__1_12con24() = [
 // 5 24 20.784 1 12 21.65 0 12.5 22.1736 1 9.1848 19.0416 1 14.6112
   [5,24,20.784,1,12,21.65,0,12.5,22.1736,1,9.1848,19.0416,1,14.6112],
 ];
-makepoly(ldraw_lib__48__1_12con24(), line=0.2);
+module ldraw_lib__48__1_12con24(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__48__1_12con24(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__48__1_12con24(line=0.2);

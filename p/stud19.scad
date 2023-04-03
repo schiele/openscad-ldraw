@@ -248,4 +248,6 @@ function ldraw_lib__stud19() = [
 // 1 16 0 -2 -20 5.757362 0 -5.757362 0 1 0 5.757362 0 5.757362 1-4ndis.dat
   [1,16,0,-2,-20,5.757362,0,-5.757362,0,1,0,5.757362,0,5.757362, ldraw_lib__1_4ndis()],
 ];
-makepoly(ldraw_lib__stud19(), line=0.2);
+module ldraw_lib__stud19(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__stud19(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__stud19(line=0.2);

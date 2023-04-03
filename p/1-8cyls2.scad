@@ -27,4 +27,6 @@ function ldraw_lib__1_8cyls2() = [
 // 5 24 -0.7071 0 0.7071 -0.7071 0.7071 0.7071 -0.9239 0 0.3827 -0.3827 0 0.9239
   [5,24,-0.7071,0,0.7071,-0.7071,0.7071,0.7071,-0.9239,0,0.3827,-0.3827,0,0.9239],
 ];
-makepoly(ldraw_lib__1_8cyls2(), line=0.2);
+module ldraw_lib__1_8cyls2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__1_8cyls2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__1_8cyls2(line=0.2);

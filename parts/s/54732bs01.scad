@@ -173,4 +173,6 @@ function ldraw_lib__s__54732bs01() = [
 // 1 334 6.25 -11.34 31.87 -0.667 0 0 0 -5.176 0.644 0 19.318 0.173 4-4edge.dat
   [1,334,6.25,-11.34,31.87,-0.667,0,0,0,-5.176,0.644,0,19.318,0.173, ldraw_lib__4_4edge()],
 ];
-makepoly(ldraw_lib__s__54732bs01(), line=0.2);
+module ldraw_lib__s__54732bs01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__54732bs01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__54732bs01(line=0.2);

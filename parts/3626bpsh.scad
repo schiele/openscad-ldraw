@@ -1009,4 +1009,6 @@ function ldraw_lib__3626bpsh() = [
 // 4 16 11.6592 18.5309 -4.8296 12.6192 18.5309 0 13 17 0 12.0107 17 -4.9751
   [4,16,11.6592,18.5309,-4.8296,12.6192,18.5309,0,13,17,0,12.0107,17,-4.9751],
 ];
-makepoly(ldraw_lib__3626bpsh(), line=0.2);
+module ldraw_lib__3626bpsh(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3626bpsh(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3626bpsh(line=0.2);

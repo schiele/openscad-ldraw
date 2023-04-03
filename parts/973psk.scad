@@ -1598,4 +1598,6 @@ function ldraw_lib__973psk() = [
 // 3 16 10.3 18 10 13.36 9.48 10 14.6 12.6 10
   [3,16,10.3,18,10,13.36,9.48,10,14.6,12.6,10],
 ];
-makepoly(ldraw_lib__973psk(), line=0.2);
+module ldraw_lib__973psk(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973psk(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973psk(line=0.2);

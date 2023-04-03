@@ -333,4 +333,6 @@ function ldraw_lib__3039pt3() = [
 // 3 16 7.3 8.13 -18.13 8.8 11.53 -21.53 9.1 12.02 -22.02
   [3,16,7.3,8.13,-18.13,8.8,11.53,-21.53,9.1,12.02,-22.02],
 ];
-makepoly(ldraw_lib__3039pt3(), line=0.2);
+module ldraw_lib__3039pt3(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3039pt3(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3039pt3(line=0.2);

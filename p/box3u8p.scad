@@ -33,4 +33,6 @@ function ldraw_lib__box3u8p() = [
 // 4 16 1 1 -1 1 0 -1 -1 0 -1 -1 1 -1
   [4,16,1,1,-1,1,0,-1,-1,0,-1,-1,1,-1],
 ];
-makepoly(ldraw_lib__box3u8p(), line=0.2);
+module ldraw_lib__box3u8p(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__box3u8p(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__box3u8p(line=0.2);

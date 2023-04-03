@@ -1679,4 +1679,6 @@ function ldraw_lib__973pbw() = [
 // 4 16 -2 19.417 -10 -1.673 20.417 -10 -.531 21.25 -10 -.041 20.75 -10
   [4,16,-2,19.417,-10,-1.673,20.417,-10,-.531,21.25,-10,-.041,20.75,-10],
 ];
-makepoly(ldraw_lib__973pbw(), line=0.2);
+module ldraw_lib__973pbw(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973pbw(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973pbw(line=0.2);

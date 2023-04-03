@@ -238,4 +238,6 @@ function ldraw_lib__53993p01() = [
 // 1 14 0 4 0 6.12293 0 -14.78207 0 -8 0 -14.78207 0 -6.12293 3-16cylo.dat
   [1,14,0,4,0,6.12293,0,-14.78207,0,-8,0,-14.78207,0,-6.12293, ldraw_lib__3_16cylo()],
 ];
-makepoly(ldraw_lib__53993p01(), line=0.2);
+module ldraw_lib__53993p01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__53993p01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__53993p01(line=0.2);

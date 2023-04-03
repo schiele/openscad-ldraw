@@ -170,4 +170,6 @@ function ldraw_lib__4143() = [
   [1,16,0,0,0,0.90097,-0.433882,0,0.433882,0.90097,0,0,0,1, ldraw_lib__toothb14()],
 // 0 //
 ];
-makepoly(ldraw_lib__4143(), line=0.2);
+module ldraw_lib__4143(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__4143(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__4143(line=0.2);

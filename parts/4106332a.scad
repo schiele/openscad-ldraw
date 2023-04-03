@@ -1113,4 +1113,6 @@ function ldraw_lib__4106332a() = [
 // 1 15 0 -0.25 0 30 0 0 0 0.25 0 0 0 24 box5-12.dat
   [1,15,0,-0.25,0,30,0,0,0,0.25,0,0,0,24, ldraw_lib__box5_12()],
 ];
-makepoly(ldraw_lib__4106332a(), line=0.2);
+module ldraw_lib__4106332a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__4106332a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__4106332a(line=0.2);

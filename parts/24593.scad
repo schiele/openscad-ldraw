@@ -26,4 +26,6 @@ function ldraw_lib__24593() = [
 // 1 16 0 44 0 -24.3504 0 31.7342 0 4 0 -31.7342 0 -24.3504 48\5-24cyli.dat
   [1,16,0,44,0,-24.3504,0,31.7342,0,4,0,-31.7342,0,-24.3504, ldraw_lib__48__5_24cyli()],
 ];
-makepoly(ldraw_lib__24593(), line=0.2);
+module ldraw_lib__24593(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__24593(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__24593(line=0.2);

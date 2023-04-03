@@ -2136,4 +2136,6 @@ function ldraw_lib__3626cpbj() = [
 // 3 0 -4.5487 7.8098 12.0955 -4.769 8.6573 12.0517 -4.8112 8.4925 12.0433
   [3,0,-4.5487,7.8098,12.0955,-4.769,8.6573,12.0517,-4.8112,8.4925,12.0433],
 ];
-makepoly(ldraw_lib__3626cpbj(), line=0.2);
+module ldraw_lib__3626cpbj(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3626cpbj(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3626cpbj(line=0.2);

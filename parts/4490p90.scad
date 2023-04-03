@@ -351,4 +351,6 @@ function ldraw_lib__4490p90() = [
 // 3 16 -23.245 12.585 -10 -25.366 12.967 -10 -21.303 13.894 -10
   [3,16,-23.245,12.585,-10,-25.366,12.967,-10,-21.303,13.894,-10],
 ];
-makepoly(ldraw_lib__4490p90(), line=0.2);
+module ldraw_lib__4490p90(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__4490p90(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__4490p90(line=0.2);

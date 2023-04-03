@@ -700,4 +700,6 @@ function ldraw_lib__3960pf2() = [
 // 4 5 17.9596 4 -23.4053 20.8595 4 -20.8595 13.6966 2.0809 -17.5915 13.5933 2.0875 -17.7151
   [4,5,17.9596,4,-23.4053,20.8595,4,-20.8595,13.6966,2.0809,-17.5915,13.5933,2.0875,-17.7151],
 ];
-makepoly(ldraw_lib__3960pf2(), line=0.2);
+module ldraw_lib__3960pf2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3960pf2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3960pf2(line=0.2);

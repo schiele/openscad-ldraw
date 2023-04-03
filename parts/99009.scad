@@ -311,4 +311,6 @@ function ldraw_lib__99009() = [
 // 1 16 0 10 0 19.0918 0 -19.0919 0 -3 0 19.0919 0 19.0918 48\1-4chrd.dat
   [1,16,0,10,0,19.0918,0,-19.0919,0,-3,0,19.0919,0,19.0918, ldraw_lib__48__1_4chrd()],
 ];
-makepoly(ldraw_lib__99009(), line=0.2);
+module ldraw_lib__99009(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__99009(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__99009(line=0.2);

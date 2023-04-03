@@ -578,4 +578,6 @@ function ldraw_lib__3010pz3() = [
   [4,125,8.02,12.296,-10,7.971,12.475,-10,9.534,12.19,-10,9.58,11.756,-10],
 // 0
 ];
-makepoly(ldraw_lib__3010pz3(), line=0.2);
+module ldraw_lib__3010pz3(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3010pz3(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3010pz3(line=0.2);

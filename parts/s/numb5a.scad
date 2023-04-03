@@ -44,4 +44,6 @@ function ldraw_lib__s__numb5a() = [
   [4,16,-3.4,15,-10,-4.2,14.35,-10,-5.35,15.9,-10,-3.5,16.55,-10],
 // 0
 ];
-makepoly(ldraw_lib__s__numb5a(), line=0.2);
+module ldraw_lib__s__numb5a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__numb5a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__numb5a(line=0.2);

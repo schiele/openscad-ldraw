@@ -2562,4 +2562,6 @@ function ldraw_lib__s__4478p03b() = [
   [4,16,276,0,176,263,0,170,264,0,167,274,0,170],
 // 0
 ];
-makepoly(ldraw_lib__s__4478p03b(), line=0.2);
+module ldraw_lib__s__4478p03b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__4478p03b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__4478p03b(line=0.2);

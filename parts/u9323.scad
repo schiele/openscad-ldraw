@@ -52,4 +52,6 @@ function ldraw_lib__u9323() = [
 // 1 16 -38 12 15 0 -1 0 4 0 0 0 0 3 rect3.dat
   [1,16,-38,12,15,0,-1,0,4,0,0,0,0,3, ldraw_lib__rect3()],
 ];
-makepoly(ldraw_lib__u9323(), line=0.2);
+module ldraw_lib__u9323(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__u9323(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__u9323(line=0.2);

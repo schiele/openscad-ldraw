@@ -1000,4 +1000,6 @@ function ldraw_lib__s__2335p31s01() = [
 // 3 16 -2 26.7821 38.3467 -2 26.8245 38.4201 -2 29.8483 38.2618
   [3,16,-2,26.7821,38.3467,-2,26.8245,38.4201,-2,29.8483,38.2618],
 ];
-makepoly(ldraw_lib__s__2335p31s01(), line=0.2);
+module ldraw_lib__s__2335p31s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__2335p31s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__2335p31s01(line=0.2);

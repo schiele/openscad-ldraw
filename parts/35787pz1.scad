@@ -59,4 +59,6 @@ function ldraw_lib__35787pz1() = [
 // 4 16 -17 0 17 -20 0 17 -17.21 0 11.41 -17 0 15.75
   [4,16,-17,0,17,-20,0,17,-17.21,0,11.41,-17,0,15.75],
 ];
-makepoly(ldraw_lib__35787pz1(), line=0.2);
+module ldraw_lib__35787pz1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__35787pz1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__35787pz1(line=0.2);

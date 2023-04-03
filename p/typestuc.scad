@@ -238,4 +238,6 @@ function ldraw_lib__typestuc() = [
 // 3 16 3.2 0 -2.4 3.1 0 -2.874 3.2 0 -5
   [3,16,3.2,0,-2.4,3.1,0,-2.874,3.2,0,-5],
 ];
-makepoly(ldraw_lib__typestuc(), line=0.2);
+module ldraw_lib__typestuc(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__typestuc(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__typestuc(line=0.2);

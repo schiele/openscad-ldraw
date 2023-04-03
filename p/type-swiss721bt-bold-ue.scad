@@ -37,4 +37,6 @@ function ldraw_lib__type_swiss721bt_bold_ue() = [
 // 4 0 -.172 0 .113 -.172 0 -.059 .306 0 -.059 .306 0 .113
   [4,0,-.172,0,.113,-.172,0,-.059,.306,0,-.059,.306,0,.113],
 ];
-makepoly(ldraw_lib__type_swiss721bt_bold_ue(), line=0.2);
+module ldraw_lib__type_swiss721bt_bold_ue(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__type_swiss721bt_bold_ue(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__type_swiss721bt_bold_ue(line=0.2);

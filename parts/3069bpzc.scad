@@ -240,4 +240,6 @@ function ldraw_lib__3069bpzc() = [
 // 4 16 -13.5 0 -2.75 -13.5 0 -4.25 -13.25 0 -4.25 -13.25 0 -2.75
   [4,16,-13.5,0,-2.75,-13.5,0,-4.25,-13.25,0,-4.25,-13.25,0,-2.75],
 ];
-makepoly(ldraw_lib__3069bpzc(), line=0.2);
+module ldraw_lib__3069bpzc(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3069bpzc(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3069bpzc(line=0.2);

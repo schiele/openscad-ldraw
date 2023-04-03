@@ -336,4 +336,6 @@ function ldraw_lib__32932() = [
 // 1 16 40 44 0 0 -1 0 0 0 4 -10 0 0 rect2a.dat
   [1,16,40,44,0,0,-1,0,0,0,4,-10,0,0, ldraw_lib__rect2a()],
 ];
-makepoly(ldraw_lib__32932(), line=0.2);
+module ldraw_lib__32932(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__32932(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__32932(line=0.2);

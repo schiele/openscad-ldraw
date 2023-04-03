@@ -27,4 +27,6 @@ function ldraw_lib__s__3070bate() = [
   [4,16,-3.5,0,-5.5,5.5,0,-5.5,5.5,0,-7.5,-5.5,0,-7.5],
 // 0
 ];
-makepoly(ldraw_lib__s__3070bate(), line=0.2);
+module ldraw_lib__s__3070bate(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__3070bate(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__3070bate(line=0.2);

@@ -19,4 +19,6 @@ function ldraw_lib__4629down() = [
 // 1 16 5 0 0 1 0 0 0 1 0 0 0 1 4629c01.dat
   [1,16,5,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4629c01()],
 ];
-makepoly(ldraw_lib__4629down(), line=0.2);
+module ldraw_lib__4629down(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__4629down(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__4629down(line=0.2);

@@ -49,4 +49,6 @@ function ldraw_lib__connectslit1() = [
 // 5 24 5.5433 9 2.2961 5.5434 -9 2.2962 4.2426 -9 4.2426 5.801 -9 1
   [5,24,5.5433,9,2.2961,5.5434,-9,2.2962,4.2426,-9,4.2426,5.801,-9,1],
 ];
-makepoly(ldraw_lib__connectslit1(), line=0.2);
+module ldraw_lib__connectslit1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__connectslit1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__connectslit1(line=0.2);

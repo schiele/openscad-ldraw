@@ -40,4 +40,6 @@ function ldraw_lib__2723() = [
 // 1 16 0 3 0 15 0 0 0 1 0 0 0 15 4-4ring1.dat
   [1,16,0,3,0,15,0,0,0,1,0,0,0,15, ldraw_lib__4_4ring1()],
 ];
-makepoly(ldraw_lib__2723(), line=0.2);
+module ldraw_lib__2723(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__2723(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__2723(line=0.2);

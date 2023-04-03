@@ -153,4 +153,6 @@ function ldraw_lib__clikitshole() = [
 // 5 24 0 3 6.5 0 0 6.5 -0.75 0 6.351 2.488 3 6.005
   [5,24,0,3,6.5,0,0,6.5,-0.75,0,6.351,2.488,3,6.005],
 ];
-makepoly(ldraw_lib__clikitshole(), line=0.2);
+module ldraw_lib__clikitshole(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__clikitshole(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__clikitshole(line=0.2);

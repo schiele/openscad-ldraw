@@ -350,4 +350,6 @@ function ldraw_lib__u9102p11() = [
 // 4 0 -0.8 -22.9 -13 -0.8 -23.8 -13 -1.44 -24.09 -13 -1.5 -23 -13
   [4,0,-0.8,-22.9,-13,-0.8,-23.8,-13,-1.44,-24.09,-13,-1.5,-23,-13],
 ];
-makepoly(ldraw_lib__u9102p11(), line=0.2);
+module ldraw_lib__u9102p11(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__u9102p11(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__u9102p11(line=0.2);

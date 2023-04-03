@@ -1554,4 +1554,6 @@ function ldraw_lib__973pbt() = [
 // 4 16 7.299 31.755 -10 -7.299 31.796 -10 -19 32 -10 19 32 -10
   [4,16,7.299,31.755,-10,-7.299,31.796,-10,-19,32,-10,19,32,-10],
 ];
-makepoly(ldraw_lib__973pbt(), line=0.2);
+module ldraw_lib__973pbt(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973pbt(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973pbt(line=0.2);

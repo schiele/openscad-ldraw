@@ -18,4 +18,6 @@ function ldraw_lib__48__1_24rin5() = [
 // 4 16 4.957 0 0.6525 5.9484 0 0.783 5.7954 0 1.5528 4.8295 0 1.294
   [4,16,4.957,0,0.6525,5.9484,0,0.783,5.7954,0,1.5528,4.8295,0,1.294],
 ];
-makepoly(ldraw_lib__48__1_24rin5(), line=0.2);
+module ldraw_lib__48__1_24rin5(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__48__1_24rin5(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__48__1_24rin5(line=0.2);

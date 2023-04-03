@@ -4818,4 +4818,6 @@ function ldraw_lib__87079ptc() = [
 // 3 80 25.095 0 -10.5 25.0555 0 -11.091 26.15 0 -12.825
   [3,80,25.095,0,-10.5,25.0555,0,-11.091,26.15,0,-12.825],
 ];
-makepoly(ldraw_lib__87079ptc(), line=0.2);
+module ldraw_lib__87079ptc(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__87079ptc(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__87079ptc(line=0.2);

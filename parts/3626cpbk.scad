@@ -1422,4 +1422,6 @@ function ldraw_lib__3626cpbk() = [
 // 4 16 -8.923 18.531 -8.924 -8.157 19.828 -8.156 -4.414 19.828 -10.658 -4.83 18.531 -11.659
   [4,16,-8.923,18.531,-8.924,-8.157,19.828,-8.156,-4.414,19.828,-10.658,-4.83,18.531,-11.659],
 ];
-makepoly(ldraw_lib__3626cpbk(), line=0.2);
+module ldraw_lib__3626cpbk(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3626cpbk(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3626cpbk(line=0.2);

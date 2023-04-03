@@ -53,4 +53,6 @@ function ldraw_lib__3070bpuc() = [
 // 4 16 -3.7681 0 -7.5 -2.21 0 -3.75 2.21 0 -3.75 3.7681 0 -7.5
   [4,16,-3.7681,0,-7.5,-2.21,0,-3.75,2.21,0,-3.75,3.7681,0,-7.5],
 ];
-makepoly(ldraw_lib__3070bpuc(), line=0.2);
+module ldraw_lib__3070bpuc(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3070bpuc(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3070bpuc(line=0.2);

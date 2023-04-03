@@ -202,4 +202,6 @@ function ldraw_lib__s__2559s01() = [
 // 1 16 62 30 129 0 0 -2 20 -0.447214 -2 -10 -0.894427 1 rect2p.dat
   [1,16,62,30,129,0,0,-2,20,-0.447214,-2,-10,-0.894427,1, ldraw_lib__rect2p()],
 ];
-makepoly(ldraw_lib__s__2559s01(), line=0.2);
+module ldraw_lib__s__2559s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__2559s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__2559s01(line=0.2);

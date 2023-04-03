@@ -21,4 +21,6 @@ function ldraw_lib__1_8rin19() = [
 // 4 16 18.478 0 7.654 14.142 0 14.142 13.4349 0 13.4349 17.5541 0 7.2713
   [4,16,18.478,0,7.654,14.142,0,14.142,13.4349,0,13.4349,17.5541,0,7.2713],
 ];
-makepoly(ldraw_lib__1_8rin19(), line=0.2);
+module ldraw_lib__1_8rin19(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__1_8rin19(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__1_8rin19(line=0.2);

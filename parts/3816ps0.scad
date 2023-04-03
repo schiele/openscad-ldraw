@@ -537,4 +537,6 @@ function ldraw_lib__3816ps0() = [
 // 3 15 -15.46 -1.84 -8.613 -16.52 0 -9 -2.57 0 -9
   [3,15,-15.46,-1.84,-8.613,-16.52,0,-9,-2.57,0,-9],
 ];
-makepoly(ldraw_lib__3816ps0(), line=0.2);
+module ldraw_lib__3816ps0(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3816ps0(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3816ps0(line=0.2);

@@ -324,4 +324,6 @@ function ldraw_lib__3068bpf9() = [
 // 4 16 -5.6 0 3.7 -3.9 0 4.8 -6.2 0 10.2 -6.2 0 3.7
   [4,16,-5.6,0,3.7,-3.9,0,4.8,-6.2,0,10.2,-6.2,0,3.7],
 ];
-makepoly(ldraw_lib__3068bpf9(), line=0.2);
+module ldraw_lib__3068bpf9(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3068bpf9(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3068bpf9(line=0.2);

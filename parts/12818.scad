@@ -528,4 +528,6 @@ function ldraw_lib__12818() = [
 // 1 16 4 4 -4 16 0 0 0 -1 0 0 0 -16 1-4chrd.dat
   [1,16,4,4,-4,16,0,0,0,-1,0,0,0,-16, ldraw_lib__1_4chrd()],
 ];
-makepoly(ldraw_lib__12818(), line=0.2);
+module ldraw_lib__12818(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__12818(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__12818(line=0.2);

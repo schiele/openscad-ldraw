@@ -2500,4 +2500,6 @@ function ldraw_lib__973pbc() = [
 // 3 16 -11.666 21.708 10 -10.908 23.776 10 -11.065 23.93 10
   [3,16,-11.666,21.708,10,-10.908,23.776,10,-11.065,23.93,10],
 ];
-makepoly(ldraw_lib__973pbc(), line=0.2);
+module ldraw_lib__973pbc(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973pbc(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973pbc(line=0.2);

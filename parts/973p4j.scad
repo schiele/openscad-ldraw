@@ -1663,4 +1663,6 @@ function ldraw_lib__973p4j() = [
 // 4 16 -0.0033 20.4756 -10 -6.7506 20.4756 -10 -8.5 21.5 -10 0 21.5 -10
   [4,16,-0.0033,20.4756,-10,-6.7506,20.4756,-10,-8.5,21.5,-10,0,21.5,-10],
 ];
-makepoly(ldraw_lib__973p4j(), line=0.2);
+module ldraw_lib__973p4j(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973p4j(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973p4j(line=0.2);

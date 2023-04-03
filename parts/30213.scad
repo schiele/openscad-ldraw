@@ -371,4 +371,6 @@ function ldraw_lib__30213() = [
 // 1 16 18.2203 5.7412 10.5195 -2.25 3.76432 1.00865 0 -1.16469 4.34667 3.89711 2.17333 0.58234 4-8sphe.dat
   [1,16,18.2203,5.7412,10.5195,-2.25,3.76432,1.00865,0,-1.16469,4.34667,3.89711,2.17333,0.58234, ldraw_lib__4_8sphe()],
 ];
-makepoly(ldraw_lib__30213(), line=0.2);
+module ldraw_lib__30213(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__30213(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__30213(line=0.2);

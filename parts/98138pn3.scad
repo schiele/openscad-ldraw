@@ -523,4 +523,6 @@ function ldraw_lib__98138pn3() = [
 // 4 15 -2.6789 0 -6.4673 -2.96 0 -5.63 -3.26 0 -5.4 -4.9497 0 -4.9497
   [4,15,-2.6789,0,-6.4673,-2.96,0,-5.63,-3.26,0,-5.4,-4.9497,0,-4.9497],
 ];
-makepoly(ldraw_lib__98138pn3(), line=0.2);
+module ldraw_lib__98138pn3(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__98138pn3(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__98138pn3(line=0.2);

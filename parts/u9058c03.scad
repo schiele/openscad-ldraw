@@ -26,4 +26,6 @@ function ldraw_lib__u9058c03() = [
 // 1 16 -70 128 100 1 0 0 0 1 0 0 0 1 u9061.dat
   [1,16,-70,128,100,1,0,0,0,1,0,0,0,1, ldraw_lib__u9061()],
 ];
-makepoly(ldraw_lib__u9058c03(), line=0.2);
+module ldraw_lib__u9058c03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__u9058c03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__u9058c03(line=0.2);

@@ -517,4 +517,6 @@ function ldraw_lib__973pav() = [
 // 3 0 -10.982 10.965 -10 -11.365 11.137 -10 -10.728 11.135 -10
   [3,0,-10.982,10.965,-10,-11.365,11.137,-10,-10.728,11.135,-10],
 ];
-makepoly(ldraw_lib__973pav(), line=0.2);
+module ldraw_lib__973pav(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973pav(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973pav(line=0.2);

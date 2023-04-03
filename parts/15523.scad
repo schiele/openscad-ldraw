@@ -29,4 +29,6 @@ function ldraw_lib__15523() = [
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\15523s03.dat
   [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__15523s03()],
 ];
-makepoly(ldraw_lib__15523(), line=0.2);
+module ldraw_lib__15523(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__15523(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__15523(line=0.2);

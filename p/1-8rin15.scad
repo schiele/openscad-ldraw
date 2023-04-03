@@ -19,4 +19,6 @@ function ldraw_lib__1_8rin15() = [
   [4,16,13.8585,0,5.7405,14.7824,0,6.1232,11.3136,0,11.3136,10.6065,0,10.6065],
 // 0
 ];
-makepoly(ldraw_lib__1_8rin15(), line=0.2);
+module ldraw_lib__1_8rin15(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__1_8rin15(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__1_8rin15(line=0.2);

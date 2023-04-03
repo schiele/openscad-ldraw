@@ -3249,4 +3249,6 @@ function ldraw_lib__22020_f2() = [
 // 4 16 -9.24 2 -3.83 -10 2 0 -9 1 0 -8.31 1 -3.44
   [4,16,-9.24,2,-3.83,-10,2,0,-9,1,0,-8.31,1,-3.44],
 ];
-makepoly(ldraw_lib__22020_f2(), line=0.2);
+module ldraw_lib__22020_f2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__22020_f2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__22020_f2(line=0.2);

@@ -345,4 +345,6 @@ function ldraw_lib__3004pt4() = [
 // 4 82 -18 6 -10 -18.5 6 -10 -18.5 17.25 -10 -18 17.25 -10
   [4,82,-18,6,-10,-18.5,6,-10,-18.5,17.25,-10,-18,17.25,-10],
 ];
-makepoly(ldraw_lib__3004pt4(), line=0.2);
+module ldraw_lib__3004pt4(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3004pt4(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3004pt4(line=0.2);

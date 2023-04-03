@@ -1984,4 +1984,6 @@ function ldraw_lib__2335pw1() = [
   [3,1,-2,4.539,32.85,-2,7.516,31.169,-2,4.389,30.645],
 // 0
 ];
-makepoly(ldraw_lib__2335pw1(), line=0.2);
+module ldraw_lib__2335pw1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__2335pw1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__2335pw1(line=0.2);

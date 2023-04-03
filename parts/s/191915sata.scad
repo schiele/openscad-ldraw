@@ -58,4 +58,6 @@ function ldraw_lib__s__191915sata() = [
 // 3 16 25 0 -1 31 0 -1 31 0 6
   [3,16,25,0,-1,31,0,-1,31,0,6],
 ];
-makepoly(ldraw_lib__s__191915sata(), line=0.2);
+module ldraw_lib__s__191915sata(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__191915sata(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__191915sata(line=0.2);

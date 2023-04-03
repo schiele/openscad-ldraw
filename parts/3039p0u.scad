@@ -91,4 +91,6 @@ function ldraw_lib__3039p0u() = [
   [1,16,10,11.314,-21.314,0,0,1.25,1.06066,0.707107,0,-1.06066,0.707107,0, ldraw_lib__1_4ring3()],
 // 0
 ];
-makepoly(ldraw_lib__3039p0u(), line=0.2);
+module ldraw_lib__3039p0u(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3039p0u(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3039p0u(line=0.2);

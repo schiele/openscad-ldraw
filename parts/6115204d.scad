@@ -28,4 +28,6 @@ function ldraw_lib__6115204d() = [
 // 1 73 0 -0.25 0 1 0 0 0 1 0 0 0 1 s\6115204ds02.dat
   [1,73,0,-0.25,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6115204ds02()],
 ];
-makepoly(ldraw_lib__6115204d(), line=0.2);
+module ldraw_lib__6115204d(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__6115204d(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__6115204d(line=0.2);

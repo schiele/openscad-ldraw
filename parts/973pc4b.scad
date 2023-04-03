@@ -2302,4 +2302,6 @@ function ldraw_lib__973pc4b() = [
 // 4 16 1.51 22.07 -10 1.78 21.93 -10 3.27 18.51 -10 2.92 19 -10
   [4,16,1.51,22.07,-10,1.78,21.93,-10,3.27,18.51,-10,2.92,19,-10],
 ];
-makepoly(ldraw_lib__973pc4b(), line=0.2);
+module ldraw_lib__973pc4b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973pc4b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973pc4b(line=0.2);

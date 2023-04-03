@@ -78,4 +78,6 @@ function ldraw_lib__s__3069ps6a() = [
   [3,16,-0.15,0,-4.65,-2.338,0,-5.85,-2.66,0,-4.65],
 // 0
 ];
-makepoly(ldraw_lib__s__3069ps6a(), line=0.2);
+module ldraw_lib__s__3069ps6a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__3069ps6a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__3069ps6a(line=0.2);

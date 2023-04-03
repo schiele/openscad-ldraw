@@ -494,4 +494,6 @@ function ldraw_lib__s__973p7ma() = [
 // 4 16 12.3935 0 8.50325 12.608 0 8.252001 18.083 0 7.911 18.317 0 7.932
   [4,16,12.3935,0,8.50325,12.608,0,8.252001,18.083,0,7.911,18.317,0,7.932],
 ];
-makepoly(ldraw_lib__s__973p7ma(), line=0.2);
+module ldraw_lib__s__973p7ma(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__973p7ma(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__973p7ma(line=0.2);

@@ -26,4 +26,6 @@ function ldraw_lib__47223a_f2() = [
   [1,0,0,0,-39,1,0,0,0,0.866,-0.5,0,0.5,0.866, ldraw_lib__4695()],
 // 
 ];
-makepoly(ldraw_lib__47223a_f2(), line=0.2);
+module ldraw_lib__47223a_f2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__47223a_f2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__47223a_f2(line=0.2);

@@ -519,4 +519,6 @@ function ldraw_lib__3622pf1() = [
 // 3 14 0 10.4 -10 -1.2945 10.6521 -10 -1.6 11.7 -10
   [3,14,0,10.4,-10,-1.2945,10.6521,-10,-1.6,11.7,-10],
 ];
-makepoly(ldraw_lib__3622pf1(), line=0.2);
+module ldraw_lib__3622pf1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3622pf1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3622pf1(line=0.2);

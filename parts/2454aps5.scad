@@ -4476,4 +4476,6 @@ function ldraw_lib__2454aps5() = [
   [4,80,13.698,45.0608,-10,12.92,44.84,-10,15.4503,44.8512,-10,14.55,45.09,-10],
 // 
 ];
-makepoly(ldraw_lib__2454aps5(), line=0.2);
+module ldraw_lib__2454aps5(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__2454aps5(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__2454aps5(line=0.2);

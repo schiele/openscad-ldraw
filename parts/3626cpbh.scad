@@ -2337,4 +2337,6 @@ function ldraw_lib__3626cpbh() = [
 // 4 92 8.728 10.105 9.502 8.989 10.322 9.328 9.032 10.886 9.299 8.685 10.713 9.531
   [4,92,8.728,10.105,9.502,8.989,10.322,9.328,9.032,10.886,9.299,8.685,10.713,9.531],
 ];
-makepoly(ldraw_lib__3626cpbh(), line=0.2);
+module ldraw_lib__3626cpbh(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3626cpbh(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3626cpbh(line=0.2);

@@ -82,4 +82,6 @@ function ldraw_lib__s__90617s03() = [
 // 1 16 0 0 -30 10 0 0 0 0 -9.25 0 1 0 rect.dat
   [1,16,0,0,-30,10,0,0,0,0,-9.25,0,1,0, ldraw_lib__rect()],
 ];
-makepoly(ldraw_lib__s__90617s03(), line=0.2);
+module ldraw_lib__s__90617s03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__90617s03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__90617s03(line=0.2);

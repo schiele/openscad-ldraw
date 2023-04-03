@@ -194,4 +194,6 @@ function ldraw_lib__s__u9467s01() = [
 // 4 16 65 25 51 24 25 44 24 25 40 65 25 9
   [4,16,65,25,51,24,25,44,24,25,40,65,25,9],
 ];
-makepoly(ldraw_lib__s__u9467s01(), line=0.2);
+module ldraw_lib__s__u9467s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__u9467s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__u9467s01(line=0.2);

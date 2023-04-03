@@ -833,4 +833,6 @@ function ldraw_lib__973pat() = [
 // 4 1 13.891 19.976 -10 13.749 19.138 -10 11.472 19.977 -10 12.953 20.446 -10
   [4,1,13.891,19.976,-10,13.749,19.138,-10,11.472,19.977,-10,12.953,20.446,-10],
 ];
-makepoly(ldraw_lib__973pat(), line=0.2);
+module ldraw_lib__973pat(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973pat(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973pat(line=0.2);

@@ -484,4 +484,6 @@ function ldraw_lib__3754p03() = [
 // 3 16 -43.3 92 -10 -43.3 113 -10 -32 108 -10
   [3,16,-43.3,92,-10,-43.3,113,-10,-32,108,-10],
 ];
-makepoly(ldraw_lib__3754p03(), line=0.2);
+module ldraw_lib__3754p03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3754p03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3754p03(line=0.2);

@@ -308,4 +308,6 @@ function ldraw_lib__911() = [
   [4,16,480,4,24,480,0,24,480,0,216,480,4,216],
 // 0
 ];
-makepoly(ldraw_lib__911(), line=0.2);
+module ldraw_lib__911(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__911(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__911(line=0.2);

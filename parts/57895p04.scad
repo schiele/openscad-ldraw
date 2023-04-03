@@ -780,4 +780,6 @@ function ldraw_lib__57895p04() = [
 // 4 378 2.88 12.59 -2 1.97 9.1 -2 0.8 8.95 -2 1.27 11.59 -2
   [4,378,2.88,12.59,-2,1.97,9.1,-2,0.8,8.95,-2,1.27,11.59,-2],
 ];
-makepoly(ldraw_lib__57895p04(), line=0.2);
+module ldraw_lib__57895p04(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__57895p04(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__57895p04(line=0.2);

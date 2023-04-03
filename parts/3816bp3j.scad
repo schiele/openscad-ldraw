@@ -167,4 +167,6 @@ function ldraw_lib__3816bp3j() = [
 // 5 24 -2 3.349 -8.084 -15.465 3.349 -8.084 -14.64 .7 -8.611 -8.48 4.8 -7.114
   [5,24,-2,3.349,-8.084,-15.465,3.349,-8.084,-14.64,.7,-8.611,-8.48,4.8,-7.114],
 ];
-makepoly(ldraw_lib__3816bp3j(), line=0.2);
+module ldraw_lib__3816bp3j(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3816bp3j(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3816bp3j(line=0.2);

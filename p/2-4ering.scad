@@ -36,4 +36,6 @@ function ldraw_lib__2_4ering() = [
 // 1 16 0 0 0 -0.38268 0 -0.92388 0 1 0 0.92388 0 -0.38268 1-16chrd.dat
   [1,16,0,0,0,-0.38268,0,-0.92388,0,1,0,0.92388,0,-0.38268, ldraw_lib__1_16chrd()],
 ];
-makepoly(ldraw_lib__2_4ering(), line=0.2);
+module ldraw_lib__2_4ering(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__2_4ering(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__2_4ering(line=0.2);

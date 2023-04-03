@@ -843,4 +843,6 @@ function ldraw_lib__4740p02() = [
 // 4 16 11.6007 1.7 2.0082 11.2396 1.7 3.824 10.5 1.4485 3.08 10.54 1.4216 2.4
   [4,16,11.6007,1.7,2.0082,11.2396,1.7,3.824,10.5,1.4485,3.08,10.54,1.4216,2.4],
 ];
-makepoly(ldraw_lib__4740p02(), line=0.2);
+module ldraw_lib__4740p02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__4740p02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__4740p02(line=0.2);

@@ -610,4 +610,6 @@ function ldraw_lib__3626bp40() = [
   [5,24,11.6592,2.4691,-4.8296,12.0104,4,-4.9752,12.6192,2.4691,0,8.9232,2.4691,-8.9232],
 // 0 // Build by LDPartEditor (PrimGen 2.X)
 ];
-makepoly(ldraw_lib__3626bp40(), line=0.2);
+module ldraw_lib__3626bp40(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3626bp40(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3626bp40(line=0.2);

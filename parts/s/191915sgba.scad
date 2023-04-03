@@ -33,4 +33,6 @@ function ldraw_lib__s__191915sgba() = [
   [4,16,1.1,0,-15.95,-20.9,0,-15.95,4.301,0,-31.35,26.301,0,-31.35],
 // 0
 ];
-makepoly(ldraw_lib__s__191915sgba(), line=0.2);
+module ldraw_lib__s__191915sgba(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__191915sgba(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__191915sgba(line=0.2);

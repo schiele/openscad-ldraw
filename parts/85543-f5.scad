@@ -34,4 +34,6 @@ function ldraw_lib__85543_f5() = [
 // 1 16 50.0003 -16.0002 0 3.5049 0 10.9529 10.9529 0 -3.5049 0 11.5 0 t02q1304.dat
   [1,16,50.0003,-16.0002,0,3.5049,0,10.9529,10.9529,0,-3.5049,0,11.5,0, ldraw_lib__t02q1304()],
 ];
-makepoly(ldraw_lib__85543_f5(), line=0.2);
+module ldraw_lib__85543_f5(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__85543_f5(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__85543_f5(line=0.2);

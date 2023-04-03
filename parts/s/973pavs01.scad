@@ -754,4 +754,6 @@ function ldraw_lib__s__973pavs01() = [
 // 4 80 10.91 3.761 -10 10.709 3.465 -10 10.16 4.262 -10 10.581 4.886 -10
   [4,80,10.91,3.761,-10,10.709,3.465,-10,10.16,4.262,-10,10.581,4.886,-10],
 ];
-makepoly(ldraw_lib__s__973pavs01(), line=0.2);
+module ldraw_lib__s__973pavs01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__973pavs01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__973pavs01(line=0.2);

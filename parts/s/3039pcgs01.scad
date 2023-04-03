@@ -383,4 +383,6 @@ function ldraw_lib__s__3039pcgs01() = [
   [3,16,-7.253,14.249,-24.249,-8.75,14.312,-24.312,-7.213,14.312,-24.312],
 // 0
 ];
-makepoly(ldraw_lib__s__3039pcgs01(), line=0.2);
+module ldraw_lib__s__3039pcgs01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__3039pcgs01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__3039pcgs01(line=0.2);

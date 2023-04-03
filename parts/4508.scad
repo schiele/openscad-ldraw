@@ -44,4 +44,6 @@ function ldraw_lib__4508() = [
 // 1 16 0 4 -20 0 0 20 4 0 0 0 40 0 box3u2p.dat
   [1,16,0,4,-20,0,0,20,4,0,0,0,40,0, ldraw_lib__box3u2p()],
 ];
-makepoly(ldraw_lib__4508(), line=0.2);
+module ldraw_lib__4508(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__4508(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__4508(line=0.2);

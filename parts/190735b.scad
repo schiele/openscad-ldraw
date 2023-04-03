@@ -39,4 +39,6 @@ function ldraw_lib__190735b() = [
 // 1 16 0 0 0 31.875 0 0 0 -0.25 0 0 0 31.875 48\4-4cyli.dat
   [1,16,0,0,0,31.875,0,0,0,-0.25,0,0,0,31.875, ldraw_lib__48__4_4cyli()],
 ];
-makepoly(ldraw_lib__190735b(), line=0.2);
+module ldraw_lib__190735b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__190735b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__190735b(line=0.2);

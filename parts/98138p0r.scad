@@ -1033,4 +1033,6 @@ function ldraw_lib__98138p0r() = [
 // 4 16 .433 0 -5.87 -.433 0 -5.87 -.651 0 -6.148 .651 0 -6.148
   [4,16,.433,0,-5.87,-.433,0,-5.87,-.651,0,-6.148,.651,0,-6.148],
 ];
-makepoly(ldraw_lib__98138p0r(), line=0.2);
+module ldraw_lib__98138p0r(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__98138p0r(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__98138p0r(line=0.2);

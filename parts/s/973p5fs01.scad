@@ -2920,4 +2920,6 @@ function ldraw_lib__s__973p5fs01() = [
 // 3 71 5.09 7.93 0 5.02 8.29 0 5.38 7.64 0
   [3,71,5.09,7.93,0,5.02,8.29,0,5.38,7.64,0],
 ];
-makepoly(ldraw_lib__s__973p5fs01(), line=0.2);
+module ldraw_lib__s__973p5fs01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__973p5fs01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__973p5fs01(line=0.2);

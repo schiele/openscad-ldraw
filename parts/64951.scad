@@ -76,4 +76,6 @@ function ldraw_lib__64951() = [
 // 1 16 0 -5 0 7 0 0 0 -1 0 0 0 7 48\4-4aring.dat
   [1,16,0,-5,0,7,0,0,0,-1,0,0,0,7, ldraw_lib__48__4_4aring()],
 ];
-makepoly(ldraw_lib__64951(), line=0.2);
+module ldraw_lib__64951(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__64951(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__64951(line=0.2);

@@ -31,4 +31,6 @@ function ldraw_lib__48__1_6ring6() = [
   [4,16,4.2616,0,5.5538,3.5,0,6.062,3,0,5.196,3.6528,0,4.7604],
 // 0 // Build by Primitive Generator 2
 ];
-makepoly(ldraw_lib__48__1_6ring6(), line=0.2);
+module ldraw_lib__48__1_6ring6(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__48__1_6ring6(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__48__1_6ring6(line=0.2);

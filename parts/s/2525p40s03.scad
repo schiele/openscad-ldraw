@@ -318,4 +318,6 @@ function ldraw_lib__s__2525p40s03() = [
 // 3 16 0 23.3 19.2 0 78.9 18.6 0 28.9 20.3
   [3,16,0,23.3,19.2,0,78.9,18.6,0,28.9,20.3],
 ];
-makepoly(ldraw_lib__s__2525p40s03(), line=0.2);
+module ldraw_lib__s__2525p40s03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__2525p40s03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__2525p40s03(line=0.2);

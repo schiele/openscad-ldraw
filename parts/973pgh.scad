@@ -353,4 +353,6 @@ function ldraw_lib__973pgh() = [
 // 4 0 -4.1023 9.8 10 -4.5312 9.8432 10 -4.8368 9.0983 10 -4.1023 9 10
   [4,0,-4.1023,9.8,10,-4.5312,9.8432,10,-4.8368,9.0983,10,-4.1023,9,10],
 ];
-makepoly(ldraw_lib__973pgh(), line=0.2);
+module ldraw_lib__973pgh(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973pgh(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973pgh(line=0.2);

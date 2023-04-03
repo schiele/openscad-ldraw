@@ -40,4 +40,6 @@ function ldraw_lib__824c01() = [
 // 1 0 -22 10 -40 1 0 0 0 1 0 0 0 1 3111.dat
   [1,0,-22,10,-40,1,0,0,0,1,0,0,0,1, ldraw_lib__3111()],
 ];
-makepoly(ldraw_lib__824c01(), line=0.2);
+module ldraw_lib__824c01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__824c01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__824c01(line=0.2);

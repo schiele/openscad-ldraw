@@ -936,4 +936,6 @@ function ldraw_lib__973pag() = [
 // 4 82 5.652 7.848 -10 5 8.9 -10 6.6 8.9 -10 6.348 7.848 -10
   [4,82,5.652,7.848,-10,5,8.9,-10,6.6,8.9,-10,6.348,7.848,-10],
 ];
-makepoly(ldraw_lib__973pag(), line=0.2);
+module ldraw_lib__973pag(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973pag(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973pag(line=0.2);

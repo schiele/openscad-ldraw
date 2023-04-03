@@ -122,4 +122,6 @@ function ldraw_lib__27956() = [
 // 5 24 0 -27.026 -27.485 0 -25.793 -27.352 -2.552 -26.792 -27.436 2.552 -26.792 -27.436
   [5,24,0,-27.026,-27.485,0,-25.793,-27.352,-2.552,-26.792,-27.436,2.552,-26.792,-27.436],
 ];
-makepoly(ldraw_lib__27956(), line=0.2);
+module ldraw_lib__27956(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__27956(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__27956(line=0.2);

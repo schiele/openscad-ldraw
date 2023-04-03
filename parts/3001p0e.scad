@@ -603,4 +603,6 @@ function ldraw_lib__3001p0e() = [
 // 4 16 -40 24 20 -40 0 20 40 0 20 40 24 20
   [4,16,-40,24,20,-40,0,20,40,0,20,40,24,20],
 ];
-makepoly(ldraw_lib__3001p0e(), line=0.2);
+module ldraw_lib__3001p0e(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3001p0e(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3001p0e(line=0.2);

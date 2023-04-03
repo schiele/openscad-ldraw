@@ -793,4 +793,6 @@ function ldraw_lib__s__swh4() = [
 // 4 16 5.25 4.75 0 4.8757 4.9848 -1.8817 -4.8757 4.9848 -1.8817 -5.25 4.75 0
   [4,16,5.25,4.75,0,4.8757,4.9848,-1.8817,-4.8757,4.9848,-1.8817,-5.25,4.75,0],
 ];
-makepoly(ldraw_lib__s__swh4(), line=0.2);
+module ldraw_lib__s__swh4(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__swh4(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__swh4(line=0.2);

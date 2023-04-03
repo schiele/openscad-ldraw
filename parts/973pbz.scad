@@ -2466,4 +2466,6 @@ function ldraw_lib__973pbz() = [
 // 3 16 -2.216 28.377 10 .041 28.412 10 -1.373 29.099 10
   [3,16,-2.216,28.377,10,.041,28.412,10,-1.373,29.099,10],
 ];
-makepoly(ldraw_lib__973pbz(), line=0.2);
+module ldraw_lib__973pbz(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973pbz(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973pbz(line=0.2);

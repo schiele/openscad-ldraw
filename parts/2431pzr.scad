@@ -441,4 +441,6 @@ function ldraw_lib__2431pzr() = [
 // 3 16 34 0 -6.4 33.2 0 -6.4 38 0 -8
   [3,16,34,0,-6.4,33.2,0,-6.4,38,0,-8],
 ];
-makepoly(ldraw_lib__2431pzr(), line=0.2);
+module ldraw_lib__2431pzr(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__2431pzr(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__2431pzr(line=0.2);

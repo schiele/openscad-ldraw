@@ -48,4 +48,6 @@ function ldraw_lib__3070bp1k() = [
 // 0
 // 
 ];
-makepoly(ldraw_lib__3070bp1k(), line=0.2);
+module ldraw_lib__3070bp1k(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3070bp1k(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3070bp1k(line=0.2);

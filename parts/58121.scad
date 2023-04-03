@@ -26,4 +26,6 @@ function ldraw_lib__58121() = [
 // 1 0 0 -42 108 0 0 1 -0.707 2.121 0 -0.707 -2.121 0 s\58124s03.dat
   [1,0,0,-42,108,0,0,1,-0.707,2.121,0,-0.707,-2.121,0, ldraw_lib__s__58124s03()],
 ];
-makepoly(ldraw_lib__58121(), line=0.2);
+module ldraw_lib__58121(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__58121(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__58121(line=0.2);

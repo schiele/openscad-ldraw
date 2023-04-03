@@ -137,4 +137,6 @@ function ldraw_lib__15068pz1() = [
 // 5 24 20 -10.509886 -8.284 -20 -10.509886 -8.284 20 -12.882685 -1.648 20 -7.531575 -14.436
   [5,24,20,-10.509886,-8.284,-20,-10.509886,-8.284,20,-12.882685,-1.648,20,-7.531575,-14.436],
 ];
-makepoly(ldraw_lib__15068pz1(), line=0.2);
+module ldraw_lib__15068pz1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__15068pz1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__15068pz1(line=0.2);

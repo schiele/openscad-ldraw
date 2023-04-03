@@ -719,4 +719,6 @@ function ldraw_lib__22385p120() = [
 // 4 288 -1.144 0 13.353 -.98 0 12.53 -.69 0 12.45 -.15 0 12.72
   [4,288,-1.144,0,13.353,-.98,0,12.53,-.69,0,12.45,-.15,0,12.72],
 ];
-makepoly(ldraw_lib__22385p120(), line=0.2);
+module ldraw_lib__22385p120(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__22385p120(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__22385p120(line=0.2);

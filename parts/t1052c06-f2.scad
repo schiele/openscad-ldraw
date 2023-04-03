@@ -78,4 +78,6 @@ function ldraw_lib__t1052c06_f2() = [
 // 1 494 -19.5 13.5 0 -0.25882 0.96593 0 -0.96593 -0.25882 0 0 0 1 t1099.dat
   [1,494,-19.5,13.5,0,-0.25882,0.96593,0,-0.96593,-0.25882,0,0,0,1, ldraw_lib__t1099()],
 ];
-makepoly(ldraw_lib__t1052c06_f2(), line=0.2);
+module ldraw_lib__t1052c06_f2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__t1052c06_f2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__t1052c06_f2(line=0.2);

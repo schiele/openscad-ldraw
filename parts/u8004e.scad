@@ -62,4 +62,6 @@ function ldraw_lib__u8004e() = [
 // 1 16 -20 0 0 -1 0 0 0 1 0 0 0 1 slotm.dat
   [1,16,-20,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__slotm()],
 ];
-makepoly(ldraw_lib__u8004e(), line=0.2);
+module ldraw_lib__u8004e(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__u8004e(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__u8004e(line=0.2);

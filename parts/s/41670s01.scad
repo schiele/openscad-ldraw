@@ -116,4 +116,6 @@ function ldraw_lib__s__41670s01() = [
 // 1 16 -16.579 -6 -10.508 23.78306 -2.29813 0 0 0 -12.0001 28.34356 1.92836 0 48\1-12cylo.dat
   [1,16,-16.579,-6,-10.508,23.78306,-2.29813,0,0,0,-12.0001,28.34356,1.92836,0, ldraw_lib__48__1_12cylo()],
 ];
-makepoly(ldraw_lib__s__41670s01(), line=0.2);
+module ldraw_lib__s__41670s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__41670s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__41670s01(line=0.2);

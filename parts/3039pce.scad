@@ -1698,4 +1698,6 @@ function ldraw_lib__3039pce() = [
 // 3 0 -18.2 13.4146 -23.4146 -18.2 13.6472 -23.6472 -17.85 13.5913 -23.5913
   [3,0,-18.2,13.4146,-23.4146,-18.2,13.6472,-23.6472,-17.85,13.5913,-23.5913],
 ];
-makepoly(ldraw_lib__3039pce(), line=0.2);
+module ldraw_lib__3039pce(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3039pce(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3039pce(line=0.2);

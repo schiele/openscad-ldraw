@@ -2797,4 +2797,6 @@ function ldraw_lib__47753pq3() = [
 // 3 16 20.87 16.228 -27.09 21.11 16.268 -26.23 20.5 14.724 -24.81
   [3,16,20.87,16.228,-27.09,21.11,16.268,-26.23,20.5,14.724,-24.81],
 ];
-makepoly(ldraw_lib__47753pq3(), line=0.2);
+module ldraw_lib__47753pq3(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__47753pq3(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__47753pq3(line=0.2);

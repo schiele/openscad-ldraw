@@ -29,4 +29,6 @@ function ldraw_lib__92410() = [
 // 1 16 0 0 -10 1 0 0 0 1 0 0 0 1 stug2-1x3.dat
   [1,16,0,0,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__stug2_1x3()],
 ];
-makepoly(ldraw_lib__92410(), line=0.2);
+module ldraw_lib__92410(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__92410(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__92410(line=0.2);

@@ -134,4 +134,6 @@ function ldraw_lib__t04i3077() = [
   [5,24,0,0.2843,0.8822,0,0.3077,1,-0.3654,0.2843,0.8822,0.3376,0.2843,0.8151],
 // 0 // Build by LDPartEditor (PrimGen 2.X)
 ];
-makepoly(ldraw_lib__t04i3077(), line=0.2);
+module ldraw_lib__t04i3077(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__t04i3077(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__t04i3077(line=0.2);

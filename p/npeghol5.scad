@@ -182,4 +182,6 @@ function ldraw_lib__npeghol5() = [
 // 5 24 3.44417 1 -1.68484 3.44417 0 -1.68484 2 0 -1.39703 5.09817 0 -2.37024
   [5,24,3.44417,1,-1.68484,3.44417,0,-1.68484,2,0,-1.39703,5.09817,0,-2.37024],
 ];
-makepoly(ldraw_lib__npeghol5(), line=0.2);
+module ldraw_lib__npeghol5(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__npeghol5(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__npeghol5(line=0.2);

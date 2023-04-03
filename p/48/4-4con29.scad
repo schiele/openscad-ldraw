@@ -208,4 +208,6 @@ function ldraw_lib__48__4_4con29() = [
   [5,24,28.7506,1,-3.7845,29.742,0,-3.915,28.0111,1,-7.5052,29,1,0],
 // 0 // Build by Primitive Generator 2
 ];
-makepoly(ldraw_lib__48__4_4con29(), line=0.2);
+module ldraw_lib__48__4_4con29(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__48__4_4con29(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__48__4_4con29(line=0.2);

@@ -73,4 +73,6 @@ function ldraw_lib__4468() = [
 // 5 24 -30 -74 20 30 -74 20 18 -66 18.9124 -30 -77.827 19.239
   [5,24,-30,-74,20,30,-74,20,18,-66,18.9124,-30,-77.827,19.239],
 ];
-makepoly(ldraw_lib__4468(), line=0.2);
+module ldraw_lib__4468(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__4468(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__4468(line=0.2);

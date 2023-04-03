@@ -90,4 +90,6 @@ function ldraw_lib__clip9() = [
 // 1 16 3.8136 -4 -9.3806 1.30644 0 2.43543 0 8 0 -4.6194 0 1.91341 3-8cylo.dat
   [1,16,3.8136,-4,-9.3806,1.30644,0,2.43543,0,8,0,-4.6194,0,1.91341, ldraw_lib__3_8cylo()],
 ];
-makepoly(ldraw_lib__clip9(), line=0.2);
+module ldraw_lib__clip9(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__clip9(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__clip9(line=0.2);

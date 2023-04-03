@@ -26,4 +26,6 @@ function ldraw_lib__1_8con27() = [
   [5,24,19.0917,1,19.0917,19.7988,0,19.7988,24.9453,1,10.3329,11.1834,1,27],
 // 0 // Build by LDPartEditor (PrimGen 2.X)
 ];
-makepoly(ldraw_lib__1_8con27(), line=0.2);
+module ldraw_lib__1_8con27(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__1_8con27(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__1_8con27(line=0.2);

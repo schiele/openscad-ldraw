@@ -64,4 +64,6 @@ function ldraw_lib__s__34172s01() = [
 // 1 16 0 -16 0 -6.041666 0 0 0 9 0 0 0 -6.041666 r04o1000.dat
   [1,16,0,-16,0,-6.041666,0,0,0,9,0,0,0,-6.041666, ldraw_lib__r04o1000()],
 ];
-makepoly(ldraw_lib__s__34172s01(), line=0.2);
+module ldraw_lib__s__34172s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__34172s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__34172s01(line=0.2);

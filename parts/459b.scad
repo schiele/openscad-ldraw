@@ -103,4 +103,6 @@ function ldraw_lib__459b() = [
 // 1 16 76 17 10 0 4 0 0 0 3.5 -3.5 0 0 4-4cyli.dat
   [1,16,76,17,10,0,4,0,0,0,3.5,-3.5,0,0, ldraw_lib__4_4cyli()],
 ];
-makepoly(ldraw_lib__459b(), line=0.2);
+module ldraw_lib__459b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__459b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__459b(line=0.2);

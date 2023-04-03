@@ -51,4 +51,6 @@ function ldraw_lib__u9001p05() = [
 // 4 16 -32 -31 -8 -40 -31 0 -40 -31 -160 -32 -31 -72
   [4,16,-32,-31,-8,-40,-31,0,-40,-31,-160,-32,-31,-72],
 ];
-makepoly(ldraw_lib__u9001p05(), line=0.2);
+module ldraw_lib__u9001p05(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__u9001p05(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__u9001p05(line=0.2);

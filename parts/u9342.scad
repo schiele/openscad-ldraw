@@ -349,4 +349,6 @@ function ldraw_lib__u9342() = [
 // 1 16 -31.5 5.071 -14 0 0 5 0 -10 0 .5 0 0 box5.dat
   [1,16,-31.5,5.071,-14,0,0,5,0,-10,0,.5,0,0, ldraw_lib__box5()],
 ];
-makepoly(ldraw_lib__u9342(), line=0.2);
+module ldraw_lib__u9342(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__u9342(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__u9342(line=0.2);

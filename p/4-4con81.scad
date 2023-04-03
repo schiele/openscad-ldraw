@@ -80,4 +80,6 @@ function ldraw_lib__4_4con81() = [
   [5,24,74.8359,1,-30.9987,75.7598,0,-31.3814,57.2756,1,-57.2756,81,1,0],
 // 0 // Build by Primitive Generator 2
 ];
-makepoly(ldraw_lib__4_4con81(), line=0.2);
+module ldraw_lib__4_4con81(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__4_4con81(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__4_4con81(line=0.2);

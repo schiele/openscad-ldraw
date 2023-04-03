@@ -1565,4 +1565,6 @@ function ldraw_lib__87079pt8() = [
 // 4 16 9.26 0 15.72 0 0 20 7.07 0 13.4 8.17 0 12.58
   [4,16,9.26,0,15.72,0,0,20,7.07,0,13.4,8.17,0,12.58],
 ];
-makepoly(ldraw_lib__87079pt8(), line=0.2);
+module ldraw_lib__87079pt8(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__87079pt8(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__87079pt8(line=0.2);

@@ -794,4 +794,6 @@ function ldraw_lib__s__19203s02() = [
 // 5 24 17.57 9.98 3.44 18.84 9.53 2.22 17.48 11.5 3.43 18.03 7.77 2.75
   [5,24,17.57,9.98,3.44,18.84,9.53,2.22,17.48,11.5,3.43,18.03,7.77,2.75],
 ];
-makepoly(ldraw_lib__s__19203s02(), line=0.2);
+module ldraw_lib__s__19203s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__19203s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__19203s02(line=0.2);

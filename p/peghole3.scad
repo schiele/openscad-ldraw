@@ -64,4 +64,6 @@ function ldraw_lib__peghole3() = [
 // 2 24 8 0 -14 8 2 -14
   [2,24,8,0,-14,8,2,-14],
 ];
-makepoly(ldraw_lib__peghole3(), line=0.2);
+module ldraw_lib__peghole3(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__peghole3(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__peghole3(line=0.2);

@@ -25,4 +25,6 @@ function ldraw_lib__s__3070batn() = [
   [4,16,4,0,7.5,6,0,7.5,6,0,-7.5,4,0,-3.999],
 // 0
 ];
-makepoly(ldraw_lib__s__3070batn(), line=0.2);
+module ldraw_lib__s__3070batn(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__3070batn(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__3070batn(line=0.2);

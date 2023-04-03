@@ -127,4 +127,6 @@ function ldraw_lib__cylj5x9() = [
 // 2 24 5 -1.7246 0 4.6195 -1.4703 -1.9135
   [2,24,5,-1.7246,0,4.6195,-1.4703,-1.9135],
 ];
-makepoly(ldraw_lib__cylj5x9(), line=0.2);
+module ldraw_lib__cylj5x9(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__cylj5x9(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__cylj5x9(line=0.2);

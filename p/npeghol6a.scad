@@ -30,4 +30,6 @@ function ldraw_lib__npeghol6a() = [
 // 1 16 0 0 0 9 0 0 0 1 0 0 0 9 1-8ndis.dat
   [1,16,0,0,0,9,0,0,0,1,0,0,0,9, ldraw_lib__1_8ndis()],
 ];
-makepoly(ldraw_lib__npeghol6a(), line=0.2);
+module ldraw_lib__npeghol6a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__npeghol6a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__npeghol6a(line=0.2);

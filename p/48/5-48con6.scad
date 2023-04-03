@@ -38,4 +38,6 @@ function ldraw_lib__48__5_48con6() = [
   [5,24,4.7604,1,3.6528,5.5538,0,4.2616,5.1962,1,3,4.2793,1,4.2793],
 // 0 // Build by Primitive Generator 2
 ];
-makepoly(ldraw_lib__48__5_48con6(), line=0.2);
+module ldraw_lib__48__5_48con6(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__48__5_48con6(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__48__5_48con6(line=0.2);

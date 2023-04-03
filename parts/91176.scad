@@ -588,4 +588,6 @@ function ldraw_lib__91176() = [
 // 4 16 20 0 -20 9 121 -20 9 179 -20 20 312 -20
   [4,16,20,0,-20,9,121,-20,9,179,-20,20,312,-20],
 ];
-makepoly(ldraw_lib__91176(), line=0.2);
+module ldraw_lib__91176(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__91176(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__91176(line=0.2);

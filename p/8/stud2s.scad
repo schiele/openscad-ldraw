@@ -35,4 +35,6 @@ function ldraw_lib__8__stud2s() = [
 // 1 16 0 1 0 6 0 0 -1 1 0 0 0 6 8\4-4edge.dat
   [1,16,0,1,0,6,0,0,-1,1,0,0,0,6, ldraw_lib__8__4_4edge()],
 ];
-makepoly(ldraw_lib__8__stud2s(), line=0.2);
+module ldraw_lib__8__stud2s(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__8__stud2s(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__8__stud2s(line=0.2);

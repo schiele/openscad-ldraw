@@ -31,4 +31,6 @@ function ldraw_lib__u9470c01() = [
 // 4 511 10 11.5 2 10 16.4998 2 -10 16.4998 2 -10 11.5 2
   [4,511,10,11.5,2,10,16.4998,2,-10,16.4998,2,-10,11.5,2],
 ];
-makepoly(ldraw_lib__u9470c01(), line=0.2);
+module ldraw_lib__u9470c01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__u9470c01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__u9470c01(line=0.2);

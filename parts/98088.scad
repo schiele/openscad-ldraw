@@ -24,4 +24,6 @@ function ldraw_lib__98088() = [
 // 1 16 0 0 0 0.98902 0.14781 0 -0.14781 0.98902 0 0 0 1 s\98088s02.dat
   [1,16,0,0,0,0.98902,0.14781,0,-0.14781,0.98902,0,0,0,1, ldraw_lib__s__98088s02()],
 ];
-makepoly(ldraw_lib__98088(), line=0.2);
+module ldraw_lib__98088(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__98088(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__98088(line=0.2);

@@ -3608,4 +3608,6 @@ function ldraw_lib__973pma() = [
 // 3 16 5.2 30.65 10 5.4 30.75 10 -0.15 31.55 10
   [3,16,5.2,30.65,10,5.4,30.75,10,-0.15,31.55,10],
 ];
-makepoly(ldraw_lib__973pma(), line=0.2);
+module ldraw_lib__973pma(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973pma(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973pma(line=0.2);

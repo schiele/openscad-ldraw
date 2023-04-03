@@ -259,4 +259,6 @@ function ldraw_lib__s__170876s3() = [
   [4,16,-6.75,0,6.25,-7.36,0,6.22,-7.86,0,7.16,-7.46,0,7.22],
 // 0 end of negativ
 ];
-makepoly(ldraw_lib__s__170876s3(), line=0.2);
+module ldraw_lib__s__170876s3(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__170876s3(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__170876s3(line=0.2);

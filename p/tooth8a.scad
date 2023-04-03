@@ -81,4 +81,6 @@ function ldraw_lib__tooth8a() = [
 // 2 24 0 0.5 9.8 1.35 0.232 9.8
   [2,24,0,0.5,9.8,1.35,0.232,9.8],
 ];
-makepoly(ldraw_lib__tooth8a(), line=0.2);
+module ldraw_lib__tooth8a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__tooth8a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__tooth8a(line=0.2);

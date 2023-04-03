@@ -64,4 +64,6 @@ function ldraw_lib__s__numb0b() = [
   [4,16,0,12,-10,3.435,15.535,-10,4.47,13.913,-10,4.8,12,-10],
 // 0
 ];
-makepoly(ldraw_lib__s__numb0b(), line=0.2);
+module ldraw_lib__s__numb0b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__numb0b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__numb0b(line=0.2);

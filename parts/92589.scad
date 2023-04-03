@@ -47,4 +47,6 @@ function ldraw_lib__92589() = [
 // 1 16 7 133.5 0 0 50 0 0 0 -2 -3.6956 0 0 box4o8a.dat
   [1,16,7,133.5,0,0,50,0,0,0,-2,-3.6956,0,0, ldraw_lib__box4o8a()],
 ];
-makepoly(ldraw_lib__92589(), line=0.2);
+module ldraw_lib__92589(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__92589(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__92589(line=0.2);

@@ -99,4 +99,6 @@ function ldraw_lib__s__30102p1b() = [
 // 0
 // 0 end of file
 ];
-makepoly(ldraw_lib__s__30102p1b(), line=0.2);
+module ldraw_lib__s__30102p1b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__30102p1b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__30102p1b(line=0.2);

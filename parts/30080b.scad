@@ -311,4 +311,6 @@ function ldraw_lib__30080b() = [
 // 1 16 0 16.93 -34.573 2 0 0 0 0.689657 -1.44827 0 0.724136 1.37931 4-4rin10.dat
   [1,16,0,16.93,-34.573,2,0,0,0,0.689657,-1.44827,0,0.724136,1.37931, ldraw_lib__4_4rin10()],
 ];
-makepoly(ldraw_lib__30080b(), line=0.2);
+module ldraw_lib__30080b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__30080b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__30080b(line=0.2);

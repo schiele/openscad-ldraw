@@ -233,4 +233,6 @@ function ldraw_lib__4180a() = [
 // 4 16 38 24 -18 38 16 -18 -38 16 -18 -38 24 -18
   [4,16,38,24,-18,38,16,-18,-38,16,-18,-38,24,-18],
 ];
-makepoly(ldraw_lib__4180a(), line=0.2);
+module ldraw_lib__4180a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__4180a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__4180a(line=0.2);

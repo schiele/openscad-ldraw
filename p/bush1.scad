@@ -97,4 +97,6 @@ function ldraw_lib__bush1() = [
 // 5 24 6.47 2.68 -4 8.31 3.44 -3 7 0 -4 4.95 4.95 -4
   [5,24,6.47,2.68,-4,8.31,3.44,-3,7,0,-4,4.95,4.95,-4],
 ];
-makepoly(ldraw_lib__bush1(), line=0.2);
+module ldraw_lib__bush1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__bush1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__bush1(line=0.2);

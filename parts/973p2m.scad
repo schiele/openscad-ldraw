@@ -838,4 +838,6 @@ function ldraw_lib__973p2m() = [
 // 3 7 -4 4.8 -10 -3.5 5.35 -10 -3.2 5.1 -10
   [3,7,-4,4.8,-10,-3.5,5.35,-10,-3.2,5.1,-10],
 ];
-makepoly(ldraw_lib__973p2m(), line=0.2);
+module ldraw_lib__973p2m(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973p2m(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973p2m(line=0.2);

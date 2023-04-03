@@ -222,4 +222,6 @@ function ldraw_lib__2041() = [
 // 2 24 -40 10.0771 -28 -40 10.2 -28
   [2,24,-40,10.0771,-28,-40,10.2,-28],
 ];
-makepoly(ldraw_lib__2041(), line=0.2);
+module ldraw_lib__2041(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__2041(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__2041(line=0.2);

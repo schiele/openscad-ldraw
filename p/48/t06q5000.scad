@@ -2425,4 +2425,6 @@ function ldraw_lib__48__t06q5000() = [
   [5,24,0.4674,0.4957,0.8095,0.5,0.5,0.866,0.3608,0.4957,0.8711,0.5691,0.4957,0.7416],
 // 0 // Build by Primitive Generator 2
 ];
-makepoly(ldraw_lib__48__t06q5000(), line=0.2);
+module ldraw_lib__48__t06q5000(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__48__t06q5000(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__48__t06q5000(line=0.2);

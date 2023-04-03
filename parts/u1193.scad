@@ -91,4 +91,6 @@ function ldraw_lib__u1193() = [
 // 4 16 240 4 236 240 0 236 240 0 -236 240 4 -236
   [4,16,240,4,236,240,0,236,240,0,-236,240,4,-236],
 ];
-makepoly(ldraw_lib__u1193(), line=0.2);
+module ldraw_lib__u1193(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__u1193(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__u1193(line=0.2);

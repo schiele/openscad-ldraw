@@ -184,4 +184,6 @@ function ldraw_lib__s__29632s03() = [
 // 4 16 -91.76775 -14.5 1.76775 -93.75 -14.5 1.5 -93.75 -14.5 0 -93.53554 -14.5 0
   [4,16,-91.76775,-14.5,1.76775,-93.75,-14.5,1.5,-93.75,-14.5,0,-93.53554,-14.5,0],
 ];
-makepoly(ldraw_lib__s__29632s03(), line=0.2);
+module ldraw_lib__s__29632s03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__29632s03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__29632s03(line=0.2);

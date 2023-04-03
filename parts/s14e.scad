@@ -67,4 +67,6 @@ function ldraw_lib__s14e() = [
 // 1 16 0 -.25 0 13 0 0 0 .25 0 0 0 16.5 box5-12.dat
   [1,16,0,-.25,0,13,0,0,0,.25,0,0,0,16.5, ldraw_lib__box5_12()],
 ];
-makepoly(ldraw_lib__s14e(), line=0.2);
+module ldraw_lib__s14e(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s14e(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s14e(line=0.2);

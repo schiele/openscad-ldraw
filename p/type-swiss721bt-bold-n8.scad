@@ -171,4 +171,6 @@ function ldraw_lib__type_swiss721bt_bold_n8() = [
 // 3 0 .098 0 .312 .133 0 .482 .055 0 .336
   [3,0,.098,0,.312,.133,0,.482,.055,0,.336],
 ];
-makepoly(ldraw_lib__type_swiss721bt_bold_n8(), line=0.2);
+module ldraw_lib__type_swiss721bt_bold_n8(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__type_swiss721bt_bold_n8(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__type_swiss721bt_bold_n8(line=0.2);

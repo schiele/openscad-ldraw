@@ -268,4 +268,6 @@ function ldraw_lib__s__336s01() = [
   [1,16,0,12,0,9,0,0,0,1,0,0,0,9, ldraw_lib__4_4edge()],
 // 0
 ];
-makepoly(ldraw_lib__s__336s01(), line=0.2);
+module ldraw_lib__s__336s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__336s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__336s01(line=0.2);

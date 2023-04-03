@@ -2539,4 +2539,6 @@ function ldraw_lib__3009ptk() = [
 // 3 16 38.51 18.84 -10 38.2 18.93 -10 39.25 18.88 -10
   [3,16,38.51,18.84,-10,38.2,18.93,-10,39.25,18.88,-10],
 ];
-makepoly(ldraw_lib__3009ptk(), line=0.2);
+module ldraw_lib__3009ptk(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3009ptk(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3009ptk(line=0.2);

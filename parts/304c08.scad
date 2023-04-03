@@ -24,4 +24,6 @@ function ldraw_lib__304c08() = [
 // 1 16 0 0 -50 1 0 0 0 1 0 0 0 1 3228a.dat
   [1,16,0,0,-50,1,0,0,0,1,0,0,0,1, ldraw_lib__3228a()],
 ];
-makepoly(ldraw_lib__304c08(), line=0.2);
+module ldraw_lib__304c08(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__304c08(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__304c08(line=0.2);

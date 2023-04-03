@@ -124,4 +124,6 @@ function ldraw_lib__30601() = [
 // 1 16 29.516 -0.24 -9.444 -0.863 0.868 0 -0.773 -0.834 -0.449 -0.312 -0.336 1.113 4-4con2.dat
   [1,16,29.516,-0.24,-9.444,-0.863,0.868,0,-0.773,-0.834,-0.449,-0.312,-0.336,1.113, ldraw_lib__4_4con2()],
 ];
-makepoly(ldraw_lib__30601(), line=0.2);
+module ldraw_lib__30601(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__30601(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__30601(line=0.2);

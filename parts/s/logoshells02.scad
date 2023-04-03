@@ -554,4 +554,6 @@ function ldraw_lib__s__logoshells02() = [
 // 4 16 4.391 0 -0.77 3.991 0 -0.73 3.631 0 -0.73 2.911 0 -0.77
   [4,16,4.391,0,-0.77,3.991,0,-0.73,3.631,0,-0.73,2.911,0,-0.77],
 ];
-makepoly(ldraw_lib__s__logoshells02(), line=0.2);
+module ldraw_lib__s__logoshells02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__logoshells02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__logoshells02(line=0.2);

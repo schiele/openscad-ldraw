@@ -57,4 +57,6 @@ function ldraw_lib__s__191915schb() = [
   [3,16,-57,0,-39,-28.6,0,-24.2,-52.8,0,0],
 // 0
 ];
-makepoly(ldraw_lib__s__191915schb(), line=0.2);
+module ldraw_lib__s__191915schb(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__191915schb(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__191915schb(line=0.2);

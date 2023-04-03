@@ -33,4 +33,6 @@ function ldraw_lib__ms1038() = [
 // 1 47 0 -42 -75 1.5 0 0 0 1.5 0 0 0 1.5 55973.dat
   [1,47,0,-42,-75,1.5,0,0,0,1.5,0,0,0,1.5, ldraw_lib__55973()],
 ];
-makepoly(ldraw_lib__ms1038(), line=0.2);
+module ldraw_lib__ms1038(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__ms1038(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__ms1038(line=0.2);

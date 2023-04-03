@@ -243,4 +243,6 @@ function ldraw_lib__98138p0v() = [
 // 1 322 0 0 0 0 0 9 0 1 0 -9 0 0 1-8chrd.dat
   [1,322,0,0,0,0,0,9,0,1,0,-9,0,0, ldraw_lib__1_8chrd()],
 ];
-makepoly(ldraw_lib__98138p0v(), line=0.2);
+module ldraw_lib__98138p0v(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__98138p0v(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__98138p0v(line=0.2);

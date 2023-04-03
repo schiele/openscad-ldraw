@@ -33,4 +33,6 @@ function ldraw_lib__4521664a() = [
 // 1 16 0 -0.25 0 0.5 0 -0.866025 0 1 0 0.866025 0 0.5 s\4521664as01.dat
   [1,16,0,-0.25,0,0.5,0,-0.866025,0,1,0,0.866025,0,0.5, ldraw_lib__s__4521664as01()],
 ];
-makepoly(ldraw_lib__4521664a(), line=0.2);
+module ldraw_lib__4521664a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__4521664a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__4521664a(line=0.2);

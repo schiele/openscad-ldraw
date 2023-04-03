@@ -139,4 +139,6 @@ function ldraw_lib__3815bpbe() = [
 // 3 16 12 0.9 -10 11.3 2.8 -10 12.2 5 -10
   [3,16,12,0.9,-10,11.3,2.8,-10,12.2,5,-10],
 ];
-makepoly(ldraw_lib__3815bpbe(), line=0.2);
+module ldraw_lib__3815bpbe(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3815bpbe(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3815bpbe(line=0.2);

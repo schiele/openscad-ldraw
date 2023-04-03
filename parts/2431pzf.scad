@@ -198,4 +198,6 @@ function ldraw_lib__2431pzf() = [
 // 4 16 7 0 -4.25 5.75 0 -3 -5.75 0 -3 -7 0 -4.25
   [4,16,7,0,-4.25,5.75,0,-3,-5.75,0,-3,-7,0,-4.25],
 ];
-makepoly(ldraw_lib__2431pzf(), line=0.2);
+module ldraw_lib__2431pzf(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__2431pzf(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__2431pzf(line=0.2);

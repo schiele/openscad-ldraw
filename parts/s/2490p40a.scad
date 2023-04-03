@@ -6205,4 +6205,6 @@ function ldraw_lib__s__2490p40a() = [
 // 5 24 23.2824 37.8217 63.0116 23.2946 37.5501 64.2261 23.2828 38.38 63.5 23.2875 37.62 63.5
   [5,24,23.2824,37.8217,63.0116,23.2946,37.5501,64.2261,23.2828,38.38,63.5,23.2875,37.62,63.5],
 ];
-makepoly(ldraw_lib__s__2490p40a(), line=0.2);
+module ldraw_lib__s__2490p40a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__2490p40a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__2490p40a(line=0.2);

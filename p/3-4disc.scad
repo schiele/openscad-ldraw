@@ -42,4 +42,6 @@ function ldraw_lib__3_4disc() = [
   [3,16,0,0,0,-0.3827,0,-0.9239,0,0,-1],
 // 0
 ];
-makepoly(ldraw_lib__3_4disc(), line=0.2);
+module ldraw_lib__3_4disc(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3_4disc(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3_4disc(line=0.2);

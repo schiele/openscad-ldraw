@@ -32,4 +32,6 @@ function ldraw_lib__s__3241s07() = [
 // 1 494 -5 4 -12 0 10 0 -3.75 0 0 0 0 -3.75 box4o8a.dat
   [1,494,-5,4,-12,0,10,0,-3.75,0,0,0,0,-3.75, ldraw_lib__box4o8a()],
 ];
-makepoly(ldraw_lib__s__3241s07(), line=0.2);
+module ldraw_lib__s__3241s07(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__3241s07(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__3241s07(line=0.2);

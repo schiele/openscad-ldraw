@@ -59,4 +59,6 @@ function ldraw_lib__s__970p4f1() = [
   [4,16,1.978,4.424,-10,2.361,5.348,-10,1.5,5.5,-10,1.5,4.5,-10],
 // 0
 ];
-makepoly(ldraw_lib__s__970p4f1(), line=0.2);
+module ldraw_lib__s__970p4f1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__970p4f1(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__970p4f1(line=0.2);

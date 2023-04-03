@@ -35,4 +35,6 @@ function ldraw_lib__s__801s02() = [
 // 1 16 0 24 0 10 0 0 0 48 0 0 0 -10 3-4cyli.dat
   [1,16,0,24,0,10,0,0,0,48,0,0,0,-10, ldraw_lib__3_4cyli()],
 ];
-makepoly(ldraw_lib__s__801s02(), line=0.2);
+module ldraw_lib__s__801s02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__801s02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__801s02(line=0.2);

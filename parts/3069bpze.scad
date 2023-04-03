@@ -116,4 +116,6 @@ function ldraw_lib__3069bpze() = [
 // 4 16 0 0 -6 0 0 -2.5 -3.25 0 2.75 -4.25 0 1
   [4,16,0,0,-6,0,0,-2.5,-3.25,0,2.75,-4.25,0,1],
 ];
-makepoly(ldraw_lib__3069bpze(), line=0.2);
+module ldraw_lib__3069bpze(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3069bpze(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3069bpze(line=0.2);

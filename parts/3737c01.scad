@@ -63,4 +63,6 @@ function ldraw_lib__3737c01() = [
 // 1 16 0 0 -90 -1 0 0 0 1 0 0 0 -1 s\73839a.dat
   [1,16,0,0,-90,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__73839a()],
 ];
-makepoly(ldraw_lib__3737c01(), line=0.2);
+module ldraw_lib__3737c01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3737c01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3737c01(line=0.2);

@@ -2839,4 +2839,6 @@ function ldraw_lib__973p4c() = [
 // 4 16 12.5 1.25 -10 13.2353 2.80357 -10 14.345 2 -10 12 0 -10
   [4,16,12.5,1.25,-10,13.2353,2.80357,-10,14.345,2,-10,12,0,-10],
 ];
-makepoly(ldraw_lib__973p4c(), line=0.2);
+module ldraw_lib__973p4c(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973p4c(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973p4c(line=0.2);

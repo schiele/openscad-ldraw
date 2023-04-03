@@ -194,4 +194,6 @@ function ldraw_lib__s__4700s01() = [
   [1,16,-3.75,22.5,-78.125,0,7.5,0,62.6997,0,25,25,0,-62.6997, ldraw_lib__48__1_4cyli()],
 // 0
 ];
-makepoly(ldraw_lib__s__4700s01(), line=0.2);
+module ldraw_lib__s__4700s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__4700s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__4700s01(line=0.2);

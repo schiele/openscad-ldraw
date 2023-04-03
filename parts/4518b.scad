@@ -83,4 +83,6 @@ function ldraw_lib__4518b() = [
 // 1 16 0 -2 -24 1 0 0 0 1 0 0 0 1 s\4518s01.dat
   [1,16,0,-2,-24,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4518s01()],
 ];
-makepoly(ldraw_lib__4518b(), line=0.2);
+module ldraw_lib__4518b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__4518b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__4518b(line=0.2);

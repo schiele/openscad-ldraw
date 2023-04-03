@@ -92,4 +92,6 @@ function ldraw_lib__3005ptc() = [
   [4,16,4.0355,15.5355,-10,2.4135,16.6195,-10,0.5,12,-10,4.0355,8.4645,-10],
 // 0
 ];
-makepoly(ldraw_lib__3005ptc(), line=0.2);
+module ldraw_lib__3005ptc(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3005ptc(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3005ptc(line=0.2);

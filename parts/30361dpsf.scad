@@ -957,4 +957,6 @@ function ldraw_lib__30361dpsf() = [
 // 4 16 -7.26 27.8 -18.553 -3.692 27.8 -19.263 -3.692 24.2 -19.263 -7.26 24.2 -18.553
   [4,16,-7.26,27.8,-18.553,-3.692,27.8,-19.263,-3.692,24.2,-19.263,-7.26,24.2,-18.553],
 ];
-makepoly(ldraw_lib__30361dpsf(), line=0.2);
+module ldraw_lib__30361dpsf(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__30361dpsf(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__30361dpsf(line=0.2);

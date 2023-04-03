@@ -157,4 +157,6 @@ function ldraw_lib__23405() = [
   [1,16,52.5,58,-4,0,-1.5,2,-54,0,0,0,0,-2, ldraw_lib__box2_5()],
 // 
 ];
-makepoly(ldraw_lib__23405(), line=0.2);
+module ldraw_lib__23405(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__23405(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__23405(line=0.2);

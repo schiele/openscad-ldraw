@@ -582,4 +582,6 @@ function ldraw_lib__3626bpha() = [
   [4,16,4.4144,19.8282,-10.6576,4.8296,18.5309,-11.6592,0,18.5309,-12.6192,0,19.8282,-11.5352],
 // 0
 ];
-makepoly(ldraw_lib__3626bpha(), line=0.2);
+module ldraw_lib__3626bpha(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3626bpha(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3626bpha(line=0.2);

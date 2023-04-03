@@ -1161,4 +1161,6 @@ function ldraw_lib__3068bptc() = [
 // 4 320 -5.4 0 2.84 -4.62 0 1.92 -4.68 0 4.72 -5.6 0 3.14
   [4,320,-5.4,0,2.84,-4.62,0,1.92,-4.68,0,4.72,-5.6,0,3.14],
 ];
-makepoly(ldraw_lib__3068bptc(), line=0.2);
+module ldraw_lib__3068bptc(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3068bptc(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3068bptc(line=0.2);

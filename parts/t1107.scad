@@ -56,4 +56,6 @@ function ldraw_lib__t1107() = [
 // 4 16 11 -30 -27 -11 -30 -27 -8 -30 -18 8 -30 -18
   [4,16,11,-30,-27,-11,-30,-27,-8,-30,-18,8,-30,-18],
 ];
-makepoly(ldraw_lib__t1107(), line=0.2);
+module ldraw_lib__t1107(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__t1107(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__t1107(line=0.2);

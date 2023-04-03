@@ -1455,4 +1455,6 @@ function ldraw_lib__logo_lamborghini_text_bkgd() = [
 // 3 16 -.6331 0 -1.454 -.6028 0 -1.476 -.09 0 -.9
   [3,16,-.6331,0,-1.454,-.6028,0,-1.476,-.09,0,-.9],
 ];
-makepoly(ldraw_lib__logo_lamborghini_text_bkgd(), line=0.2);
+module ldraw_lib__logo_lamborghini_text_bkgd(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__logo_lamborghini_text_bkgd(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__logo_lamborghini_text_bkgd(line=0.2);

@@ -560,4 +560,6 @@ function ldraw_lib__973p4l() = [
 // 3 4 0 4.6204 10 0 15 10 -2.9353 4.3308 10
   [3,4,0,4.6204,10,0,15,10,-2.9353,4.3308,10],
 ];
-makepoly(ldraw_lib__973p4l(), line=0.2);
+module ldraw_lib__973p4l(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973p4l(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973p4l(line=0.2);

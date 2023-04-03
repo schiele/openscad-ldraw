@@ -3295,4 +3295,6 @@ function ldraw_lib__88930py0() = [
 // 3 16 26.1382 -6.6656 20 24.9 -7.425 20 25.3438 -7.6972 20
   [3,16,26.1382,-6.6656,20,24.9,-7.425,20,25.3438,-7.6972,20],
 ];
-makepoly(ldraw_lib__88930py0(), line=0.2);
+module ldraw_lib__88930py0(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__88930py0(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__88930py0(line=0.2);

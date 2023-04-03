@@ -394,4 +394,6 @@ function ldraw_lib__973p3f() = [
 // 3 6 -8.5 28.5 -10 -11.5 28.5 -10 -11.5 29 -10
   [3,6,-8.5,28.5,-10,-11.5,28.5,-10,-11.5,29,-10],
 ];
-makepoly(ldraw_lib__973p3f(), line=0.2);
+module ldraw_lib__973p3f(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973p3f(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973p3f(line=0.2);

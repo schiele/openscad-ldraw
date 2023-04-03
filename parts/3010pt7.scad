@@ -373,4 +373,6 @@ function ldraw_lib__3010pt7() = [
 // 3 16 -11.45 16.1 -10 -16.2 16.1 -10 -16.5 16.65 -10
   [3,16,-11.45,16.1,-10,-16.2,16.1,-10,-16.5,16.65,-10],
 ];
-makepoly(ldraw_lib__3010pt7(), line=0.2);
+module ldraw_lib__3010pt7(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3010pt7(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3010pt7(line=0.2);

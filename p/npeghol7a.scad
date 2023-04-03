@@ -34,4 +34,6 @@ function ldraw_lib__npeghol7a() = [
 // 4 16 -9 0 1 -9 0 0 -6.3639 0 0 -6.3639 0 1.5321
   [4,16,-9,0,1,-9,0,0,-6.3639,0,0,-6.3639,0,1.5321],
 ];
-makepoly(ldraw_lib__npeghol7a(), line=0.2);
+module ldraw_lib__npeghol7a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__npeghol7a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__npeghol7a(line=0.2);

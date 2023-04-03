@@ -32,4 +32,6 @@ function ldraw_lib__logo_maersk_star_bg() = [
 // 3 16 0 0 -4.3 -4.7 0 -10 4.7 0 -10
   [3,16,0,0,-4.3,-4.7,0,-10,4.7,0,-10],
 ];
-makepoly(ldraw_lib__logo_maersk_star_bg(), line=0.2);
+module ldraw_lib__logo_maersk_star_bg(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__logo_maersk_star_bg(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__logo_maersk_star_bg(line=0.2);

@@ -18,4 +18,6 @@ function ldraw_lib__48__1_8aring() = [
 // 4 16 .7071 0 .7071 .9239 0 .3827 .866 0 .5 .7934 0 .6088
   [4,16,.7071,0,.7071,.9239,0,.3827,.866,0,.5,.7934,0,.6088],
 ];
-makepoly(ldraw_lib__48__1_8aring(), line=0.2);
+module ldraw_lib__48__1_8aring(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__48__1_8aring(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__48__1_8aring(line=0.2);

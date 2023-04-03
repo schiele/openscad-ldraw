@@ -79,4 +79,6 @@ function ldraw_lib__s__2335ps4a() = [
 // 4 16 0 29.0498 29.446 0 27.5238 31.0995 0 28.3368 31.709 0 29.6516 29.8484
   [4,16,0,29.0498,29.446,0,27.5238,31.0995,0,28.3368,31.709,0,29.6516,29.8484],
 ];
-makepoly(ldraw_lib__s__2335ps4a(), line=0.2);
+module ldraw_lib__s__2335ps4a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__2335ps4a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__2335ps4a(line=0.2);

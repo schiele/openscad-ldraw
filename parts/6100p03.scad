@@ -107,4 +107,6 @@ function ldraw_lib__6100p03() = [
 // 4 15 124 0 -284 -124 0 -284 -124 0 -296 124 0 -296
   [4,15,124,0,-284,-124,0,-284,-124,0,-296,124,0,-296],
 ];
-makepoly(ldraw_lib__6100p03(), line=0.2);
+module ldraw_lib__6100p03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__6100p03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__6100p03(line=0.2);

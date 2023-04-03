@@ -387,4 +387,6 @@ function ldraw_lib__193445a() = [
 // 3 0 57 -0.25 -16 40.512 -0.25 -14.108 40.414 -0.25 -14.288
   [3,0,57,-0.25,-16,40.512,-0.25,-14.108,40.414,-0.25,-14.288],
 ];
-makepoly(ldraw_lib__193445a(), line=0.2);
+module ldraw_lib__193445a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__193445a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__193445a(line=0.2);

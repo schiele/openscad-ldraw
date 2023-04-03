@@ -144,4 +144,6 @@ function ldraw_lib__duplohol() = [
 // 4 16 -12 24 -20 -16 24 -16 -16 24 0 -12 24 0
   [4,16,-12,24,-20,-16,24,-16,-16,24,0,-12,24,0],
 ];
-makepoly(ldraw_lib__duplohol(), line=0.2);
+module ldraw_lib__duplohol(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__duplohol(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__duplohol(line=0.2);

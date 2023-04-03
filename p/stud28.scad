@@ -69,4 +69,6 @@ function ldraw_lib__stud28() = [
 // 4 16 -12 -4 -6.75 -12 -4 6.75 -14.7821 -4 6.1229 -14.7824 -4 -6.1232
   [4,16,-12,-4,-6.75,-12,-4,6.75,-14.7821,-4,6.1229,-14.7824,-4,-6.1232],
 ];
-makepoly(ldraw_lib__stud28(), line=0.2);
+module ldraw_lib__stud28(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__stud28(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__stud28(line=0.2);

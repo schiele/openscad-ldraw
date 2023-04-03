@@ -41,4 +41,6 @@ function ldraw_lib__3404e() = [
 // 1 16 0 0 0 0 0 1 0 1 0 1 0 0 s\3404s02.dat
   [1,16,0,0,0,0,0,1,0,1,0,1,0,0, ldraw_lib__s__3404s02()],
 ];
-makepoly(ldraw_lib__3404e(), line=0.2);
+module ldraw_lib__3404e(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3404e(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3404e(line=0.2);

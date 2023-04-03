@@ -350,4 +350,6 @@ function ldraw_lib__973p90() = [
 // 3 16 5.303 9.299 -10 2.8666 10.472 -10 2.527 9.729 -10
   [3,16,5.303,9.299,-10,2.8666,10.472,-10,2.527,9.729,-10],
 ];
-makepoly(ldraw_lib__973p90(), line=0.2);
+module ldraw_lib__973p90(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__973p90(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__973p90(line=0.2);

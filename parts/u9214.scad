@@ -18,4 +18,6 @@ function ldraw_lib__u9214() = [
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 4430.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4430()],
 ];
-makepoly(ldraw_lib__u9214(), line=0.2);
+module ldraw_lib__u9214(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__u9214(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__u9214(line=0.2);

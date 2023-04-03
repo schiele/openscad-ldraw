@@ -76,4 +76,6 @@ function ldraw_lib__3070bp70() = [
 // 3 0 10 0 10 5.6628 0 2 6 0 0
   [3,0,10,0,10,5.6628,0,2,6,0,0],
 ];
-makepoly(ldraw_lib__3070bp70(), line=0.2);
+module ldraw_lib__3070bp70(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__3070bp70(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__3070bp70(line=0.2);

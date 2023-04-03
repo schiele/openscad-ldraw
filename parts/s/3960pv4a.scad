@@ -1023,4 +1023,6 @@ function ldraw_lib__s__3960pv4a() = [
   [4,1,-2.87,1.999,21.81,-1.78,0.605,13.51,0,0.605,13.63,-0.001,2,21.998],
 // 
 ];
-makepoly(ldraw_lib__s__3960pv4a(), line=0.2);
+module ldraw_lib__s__3960pv4a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__s__3960pv4a(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__s__3960pv4a(line=0.2);
