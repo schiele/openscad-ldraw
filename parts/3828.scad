@@ -6,7 +6,14 @@ use <../p/48/4-4edge.scad>
 use <../p/48/4-4ring2.scad>
 use <../p/48/4-4ring6.scad>
 $fa=1; $fs=0.2;
-function ldraw_lib__3828(realsolid=false) = [
+function ldraw_lib__3828(realsolid=false) = realsolid ? [
+    openscad([
+        translate([0,0,-6], o=linear_extrude(6,
+            o=difference(o=[for(i=[6,4]) circle(r=i)]))),
+        translate([0,0,-2], o=linear_extrude(4,
+            o=difference(o=[for(i=[14,12]) circle(r=i)])))],
+            2),
+    ldraw_lin([[-6,0],[-12,0],[-12,2],[-6,5.9]],[-1.56,1.56])] : [
 // 0 ~Car Steering Wheel
 // 0 Name: 3828.dat
 // 0 Author: James Jessiman
@@ -174,4 +181,5 @@ function ldraw_lib__3828(realsolid=false) = [
 ];
 module ldraw_lib__3828(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
     makepoly(ldraw_lib__3828(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
-ldraw_lib__3828(line=0.2);
+%ldraw_lib__3828(line=0.2);
+ldraw_lib__3828(solid=true);

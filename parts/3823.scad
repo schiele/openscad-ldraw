@@ -7,30 +7,30 @@ use <../p/stud2.scad>
 use <../p/stud3.scad>
 $fa=1; $fs=0.2;
 function ldraw_lib__3823(realsolid=false) = realsolid ? [
-    for(i=[-30,30])
-        [1,16,i,44,-10,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud3(realsolid)],
-    for(i=[-20:20:20])
-        [1,16,i,44,-20,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud3(realsolid)],
-    for(i=[-30,30])
-        [1,16,i,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2(realsolid)],
+    for(i=[-30,30]) [1,16,i,44,-10,1,0,0,0,-1,0,0,0,1,
+        ldraw_lib__stud3(realsolid)],
+    for(i=[-20:20:20]) [1,16,i,44,-20,1,0,0,0,-1,0,0,0,1,
+        ldraw_lib__stud3(realsolid)],
+    for(i=[-30,30]) [1,16,i,0,0,1,0,0,0,1,0,0,0,1,
+        ldraw_lib__stud2(realsolid)],
     openscad([
-        for(j=[-48, -44])
-        translate([0, 0, j], o=linear_extrude(4+eps(), o=difference([
+        for(j=[-48, -44]) translate([0, 0, j],
+            o=linear_extrude(4+eps(), o=difference([
                 hull([
                     for(i=[-30,30]) translate([20,i], o=circle(d=20)),
                     square([20,80], center=true)]),
                 square([20, 40], center=true),
                 for(i=[-20,20]) translate([-10,i], o=circle(d=20)),
                 if(j==-48) [
-                    hull([for(i=[-30,30]) translate([20,i], o=circle(d=12))]),
-                    for(i=[-30,30]) translate([7,i], o=square([26,12], center=true)),
-                    for(i=[-20,20]) translate([-10,i], o=square(20, center=true)),
-                ],
-            ]))),
+                    hull([for(i=[-30,30])
+                        translate([20,i], o=circle(d=12))]),
+                    for(i=[-30,30]) translate([7,i],
+                        o=square([26,12], center=true)),
+                    for(i=[-20,20]) translate([-10,i],
+                        o=square(20, center=true))]]))),
         translate([0, 0, -40], o=multmatrix(
-            [[1, 0, -0.5, 0],
-             [0, 1, 0, 0],
-             [0, 0, 1, 0]], o=linear_extrude(40, o=difference([
+            [[1, 0, -0.5, 0], [0, 1, 0, 0], [0, 0, 1, 0]],
+            o=linear_extrude(40, o=difference([
                 hull([
                     for(i=[-1,1]) translate([20,i*30], o=circle(d=20)),
                     for(i=[-1,1]) translate([15,i*35], square(10, center=true))]),
@@ -42,9 +42,9 @@ function ldraw_lib__3823(realsolid=false) = realsolid ? [
             for(i=[-1, 1]) hull([
                 translate([0,30*i], o=circle(d=20)),
                 for(j=[-5, 5]) translate([j,(30-j)*i],
-                    square(10, center=true))])])),
-    ], 2),
-    for(i=[-40, 36]) ldraw_lin([[0,-10],[40+eps(),10+eps()],[40+eps(),-10]], [i,i+4], 0)] : [
+                    square(10, center=true))])]))], 2),
+    for(i=[-40, 36]) ldraw_lin([[0, -10], [40+eps(), 10+eps()],
+        [40+eps(), -10]], [i, i+4], 0)] : [
 // 0 Windscreen  2 x  4 x  2
 // 0 Name: 3823.dat
 // 0 Author: James Jessiman
@@ -539,5 +539,4 @@ function ldraw_lib__3823(realsolid=false) = realsolid ? [
 ];
 module ldraw_lib__3823(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
     makepoly(ldraw_lib__3823(solid), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
-%ldraw_lib__3823(line=0.2);
-ldraw_lib__3823(solid=true);
+ldraw_lib__3823(line=0.2);
