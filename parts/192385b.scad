@@ -5,7 +5,7 @@ function ldraw_lib__192385b() = [
 // 0 Name: 192385b.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
 // 0 !LDRAW_ORG Part UPDATE 2022-05
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],

@@ -5,7 +5,7 @@ function ldraw_lib__42918p03() = [
 // 0 Name: 42918p03.dat
 // 0 Author: Orion Pobursky [OrionP]
 // 0 !LDRAW_ORG Part UPDATE 2020-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],

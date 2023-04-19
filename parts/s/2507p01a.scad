@@ -4,7 +4,7 @@ function ldraw_lib__s__2507p01a() = [
 // 0 Name: s\2507p01a.dat
 // 0 Author: Steve Bliss [sbliss]
 // 0 !LDRAW_ORG Subpart UPDATE 2003-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CW
   [0,"BFC","CERTIFY"],

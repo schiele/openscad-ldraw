@@ -14,7 +14,7 @@ function ldraw_lib__4228() = [
 // 0 Name: 4228.dat
 // 0 Author: James Jessiman
 // 0 !LDRAW_ORG Part UPDATE 2003-02
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],

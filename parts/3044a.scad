@@ -4,7 +4,7 @@ function ldraw_lib__3044a() = [
 // 0 Name: 3044a.dat
 // 0 Author: James Mastros [theorbtwo]
 // 0 !LDRAW_ORG Part UPDATE 2009-02
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],

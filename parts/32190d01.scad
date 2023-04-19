@@ -6,7 +6,7 @@ function ldraw_lib__32190d01() = [
 // 0 Name: 32190d01.dat
 // 0 Author: Philippe Hurbain [Philo]
 // 0 !LDRAW_ORG Shortcut UPDATE 2019-03
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],

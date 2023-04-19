@@ -10,7 +10,7 @@ function ldraw_lib__57878() = [
 // 0 Name: 57878.dat
 // 0 Author: Max Martin Richter [MMR1988]
 // 0 !LDRAW_ORG Part UPDATE 2013-02
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],

@@ -4,7 +4,7 @@ function ldraw_lib__s__6009194ds10() = [
 // 0 Name: s\6009194ds10.dat
 // 0 Author: Massimo Maso [Sirio]
 // 0 !LDRAW_ORG Subpart UPDATE 2020-02
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 !HELP Whole logo cutted at Z = 1.32 and moved cutting edge to Z = 0
 // 

@@ -6,7 +6,7 @@ function ldraw_lib__u9153p01c01() = [
 // 0 Name: u9153p01c01.dat
 // 0 Author: Michael Heidemann [mikeheide]
 // 0 !LDRAW_ORG Shortcut UPDATE 2011-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],

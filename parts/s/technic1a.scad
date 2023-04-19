@@ -4,7 +4,7 @@ function ldraw_lib__s__technic1a() = [
 // 0 Name: s\technic1a.dat
 // 0 Author: Michael Heidemann [mikeheide]
 // 0 !LDRAW_ORG Subpart UPDATE 2011-02
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 !HELP to be used with technic1b.dat
 // 

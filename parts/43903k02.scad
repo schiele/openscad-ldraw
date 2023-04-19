@@ -8,7 +8,7 @@ function ldraw_lib__43903k02() = [
 // 0 Name: 43903k02.dat
 // 0 Author: Philippe Hurbain [Philo]
 // 0 !LDRAW_ORG Part Flexible_Section UPDATE 2019-02
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],

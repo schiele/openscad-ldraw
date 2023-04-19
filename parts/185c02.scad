@@ -6,7 +6,7 @@ function ldraw_lib__185c02() = [
 // 0 Name: 185c02.dat
 // 0 Author: Michael Heidemann [mikeheide]
 // 0 !LDRAW_ORG Shortcut UPDATE 2012-02
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],

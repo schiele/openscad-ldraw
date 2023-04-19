@@ -5,7 +5,7 @@ function ldraw_lib__3009p0a() = [
 // 0 Name: 3009p0a.dat
 // 0 Author: Steffen [Steffen]
 // 0 !LDRAW_ORG Part UPDATE 2018-02
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],

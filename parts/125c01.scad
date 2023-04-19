@@ -6,7 +6,7 @@ function ldraw_lib__125c01() = [
 // 0 Name: 125c01.dat
 // 0 Author: Michael Heidemann [mikeheide]
 // 0 !LDRAW_ORG Shortcut UPDATE 2014-02
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 !HELP Angle to rotate to base Z-axes 1,63325 degree at point (-151/80/0)
 // 

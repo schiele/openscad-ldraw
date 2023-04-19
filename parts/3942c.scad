@@ -12,7 +12,7 @@ function ldraw_lib__3942c() = [
 // 0 Name: 3942c.dat
 // 0 Author: Michael Heidemann [mikeheide]
 // 0 !LDRAW_ORG Part UPDATE 2010-02
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CW
   [0,"BFC","CERTIFY"],

@@ -18,7 +18,7 @@ function ldraw_lib__88284() = [
 // 0 Name: 88284.dat
 // 0 Author: Philippe Hurbain [Philo]
 // 0 !LDRAW_ORG Part UPDATE 2012-03
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 !HELP Uncomment next line for Plume
 // 0 !HELP 1 15 0 -22.348 3.17 1 0 0 0 0.99357 0.1132 0 -0.1132 0.99357 64647.dat

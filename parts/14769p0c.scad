@@ -6,7 +6,7 @@ function ldraw_lib__14769p0c() = [
 // 0 Name: 14769p0c.dat
 // 0 Author: Ulrich Röder [UR]
 // 0 !LDRAW_ORG Part UPDATE 2019-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],

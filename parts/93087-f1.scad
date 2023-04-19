@@ -6,7 +6,7 @@ function ldraw_lib__93087_f1() = [
 // 0 Name: 93087-f1.dat
 // 0 Author: Philippe Hurbain [Philo]
 // 0 !LDRAW_ORG Part UPDATE 2022-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 !HELP Place on Friends horse at y=-30, z=-80
 // 

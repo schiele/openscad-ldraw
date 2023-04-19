@@ -6,7 +6,7 @@ function ldraw_lib__973p1h() = [
 // 0 Name: 973p1h.dat
 // 0 Author: Chris Dee [cwdee]
 // 0 !LDRAW_ORG Part UPDATE 2004-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CW
   [0,"BFC","CERTIFY"],

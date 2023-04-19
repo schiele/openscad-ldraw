@@ -6,7 +6,7 @@ function ldraw_lib__26603dx0() = [
 // 0 Name: 26603dx0.dat
 // 0 Author: Vincent Messenet [Cheenzo]
 // 0 !LDRAW_ORG Shortcut UPDATE 2020-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],

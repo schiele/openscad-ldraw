@@ -14,7 +14,7 @@ function ldraw_lib__23443() = [
 // 0 Name: 23443.dat
 // 0 Author: Magnus Forsberg [MagFors]
 // 0 !LDRAW_ORG Part UPDATE 2016-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 !HELP Bar Tube with Clip in 60 degree position
 // 0 !HELP 1 46 0 0 0 -0.5 0.866 0 -0.866 -0.5 0 0 0 1 11090.dat

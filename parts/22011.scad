@@ -7,7 +7,7 @@ function ldraw_lib__22011() = [
 // 0 Name: 22011.dat
 // 0 Author: Philippe Hurbain [Philo]
 // 0 !LDRAW_ORG Shortcut UPDATE 2022-05
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CW
   [0,"BFC","CERTIFY"],

@@ -4,7 +4,7 @@ function ldraw_lib__s__logochevt04() = [
 // 0 Name: s\logochevt04.dat
 // 0 Author: Massimo Maso [Sirio]
 // 0 !LDRAW_ORG Subpart UPDATE 2022-03
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 !HELP Exact dimensions X = 11.0616; Z = .575
 // 

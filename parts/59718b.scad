@@ -4,7 +4,7 @@ function ldraw_lib__59718b() = [
 // 0 Name: 59718b.dat
 // 0 Author: J.C. Tchang [tchang]
 // 0 !LDRAW_ORG Part UPDATE 2011-02
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CW
   [0,"BFC","CERTIFY"],

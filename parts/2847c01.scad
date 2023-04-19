@@ -7,7 +7,7 @@ function ldraw_lib__2847c01() = [
 // 0 Name: 2847c01.dat
 // 0 Author: Marc Klein [marckl]
 // 0 !LDRAW_ORG Shortcut UPDATE 2000-02
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC NOCERTIFY
   [0,"BFC","NOCERTIFY"],

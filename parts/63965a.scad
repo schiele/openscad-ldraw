@@ -8,7 +8,7 @@ function ldraw_lib__63965a() = [
 // 0 Name: 63965a.dat
 // 0 Author: N. W. Perry [Plastikean]
 // 0 !LDRAW_ORG Part UPDATE 2020-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CW
   [0,"BFC","CERTIFY"],

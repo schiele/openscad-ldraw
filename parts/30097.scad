@@ -5,7 +5,7 @@ function ldraw_lib__30097() = [
 // 0 Name: 30097.dat
 // 0 Author: Steve Bliss [sbliss]
 // 0 !LDRAW_ORG Part Alias UPDATE 2013-02
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CW
   [0,"BFC","CERTIFY"],

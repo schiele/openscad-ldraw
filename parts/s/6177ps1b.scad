@@ -5,7 +5,7 @@ function ldraw_lib__s__6177ps1b() = [
 // 0 Name: s\6177ps1b.dat
 // 0 Author: Steve Bliss [sbliss]
 // 0 !LDRAW_ORG Subpart UPDATE 2016-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],

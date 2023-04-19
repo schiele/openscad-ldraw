@@ -14,7 +14,7 @@ function ldraw_lib__374p01() = [
 // 0 Name: 374p01.dat
 // 0 Author: Lars C. Hassing [larschassing]
 // 0 !LDRAW_ORG Part UPDATE 2009-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],

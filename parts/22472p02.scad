@@ -11,7 +11,7 @@ function ldraw_lib__22472p02() = [
 // 0 Name: 22472p02.dat
 // 0 Author: Philippe Hurbain [Philo]
 // 0 !LDRAW_ORG Part UPDATE 2018-02
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 !HELP Tail hole: Y = -23, Z = 20
 // 0 !HELP Arm holes: Y= -30, X = +/-17

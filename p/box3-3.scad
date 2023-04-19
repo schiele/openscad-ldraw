@@ -4,7 +4,7 @@ function ldraw_lib__box3_3() = [
 // 0 Name: box3-3.dat
 // 0 Author: Mark Kennedy [mkennedy]
 // 0 !LDRAW_ORG Primitive UPDATE 2004-03
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],

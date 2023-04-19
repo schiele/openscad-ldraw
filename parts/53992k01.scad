@@ -8,7 +8,7 @@ function ldraw_lib__53992k01() = [
 // 0 Name: 53992k01.dat
 // 0 Author: Philippe Hurbain [Philo]
 // 0 !LDRAW_ORG Part Flexible_Section UPDATE 2019-02
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 !HELP See 53992-fx for usage
 // 

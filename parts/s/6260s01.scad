@@ -4,7 +4,7 @@ function ldraw_lib__s__6260s01() = [
 // 0 Name: s\6260s01.dat
 // 0 Author: Massimo Maso [Sirio]
 // 0 !LDRAW_ORG Subpart UPDATE 2022-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 !HELP Regular outer torus t01o4000 scaled for 3.25 and
 // 0 !HELP intersected with cylinder diameter 3.6

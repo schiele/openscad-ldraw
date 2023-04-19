@@ -5,7 +5,7 @@ function ldraw_lib__4294998() = [
 // 0 Name: 4294998.dat
 // 0 Author: Michael Heidemann [mikeheide]
 // 0 !LDRAW_ORG Part Physical_Colour UPDATE 2019-02
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],

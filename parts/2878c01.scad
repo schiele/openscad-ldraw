@@ -6,7 +6,7 @@ function ldraw_lib__2878c01() = [
 // 0 Name: 2878c01.dat
 // 0 Author: Chris Dee [cwdee]
 // 0 !LDRAW_ORG Shortcut UPDATE 2013-02
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CW
   [0,"BFC","CERTIFY"],

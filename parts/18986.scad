@@ -22,7 +22,7 @@ function ldraw_lib__18986() = [
 // 0 Name: 18986.dat
 // 0 Author: Philippe Hurbain [Philo]
 // 0 !LDRAW_ORG Part UPDATE 2016-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 !HELP Head offset Y = -3
 // 

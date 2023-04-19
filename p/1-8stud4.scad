@@ -6,7 +6,7 @@ function ldraw_lib__1_8stud4() = [
 // 0 Name: 1-8stud4.dat
 // 0 Author: Massimo Maso [Sirio]
 // 0 !LDRAW_ORG Primitive UPDATE 2019-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],

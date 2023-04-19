@@ -6,7 +6,7 @@ function ldraw_lib__24849c01() = [
 // 0 Name: 24849c01.dat
 // 0 Author: Philippe Hurbain [Philo]
 // 0 !LDRAW_ORG Shortcut UPDATE 2022-03
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],

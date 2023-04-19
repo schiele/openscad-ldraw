@@ -6,7 +6,7 @@ function ldraw_lib__4858p1k() = [
 // 0 Name: 4858p1k.dat
 // 0 Author: Willy Tschager [Holly-Wood]
 // 0 !LDRAW_ORG Part UPDATE 2004-04
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CW
   [0,"BFC","CERTIFY"],

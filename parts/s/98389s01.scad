@@ -5,7 +5,7 @@ function ldraw_lib__s__98389s01() = [
 // 0 Name: s\98389s01.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
 // 0 !LDRAW_ORG Subpart UPDATE 2022-04
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],

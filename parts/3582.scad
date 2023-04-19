@@ -9,7 +9,7 @@ function ldraw_lib__3582() = [
 // 0 Name: 3582.dat
 // 0 Author: Willy Tschager [Holly-Wood]
 // 0 !LDRAW_ORG Part UPDATE 2003-03
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],

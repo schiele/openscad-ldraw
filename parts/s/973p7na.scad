@@ -4,7 +4,7 @@ function ldraw_lib__s__973p7na() = [
 // 0 Name: s\973p7na.dat
 // 0 Author: Nils Schmidt [BlackBrick89]
 // 0 !LDRAW_ORG Subpart UPDATE 2012-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],

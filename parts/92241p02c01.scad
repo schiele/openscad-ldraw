@@ -7,7 +7,7 @@ function ldraw_lib__92241p02c01() = [
 // 0 Name: 92241p02c01.dat
 // 0 Author: Magnus Forsberg [MagFors]
 // 0 !LDRAW_ORG Shortcut UPDATE 2014-02
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],

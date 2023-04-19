@@ -5,7 +5,7 @@ function ldraw_lib__61190d() = [
 // 0 Name: 61190d.dat
 // 0 Author: Magnus Forsberg [MagFors]
 // 0 !LDRAW_ORG Part Alias UPDATE 2019-02
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],

@@ -6,7 +6,7 @@ function ldraw_lib__48245c01() = [
 // 0 Name: 48245c01.dat
 // 0 Author: Max Martin Richter [MMR1988]
 // 0 !LDRAW_ORG Shortcut UPDATE 2012-03
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 !HELP Grip is at y = 0
 // 0 !HELP Part is designed for using it in hands or hooks

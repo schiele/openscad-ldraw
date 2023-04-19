@@ -9,7 +9,7 @@ function ldraw_lib__10199() = [
 // 0 Name: 10199.dat
 // 0 Author: Rolf Osterthun [Rolf]
 // 0 !LDRAW_ORG Part UPDATE 2017-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],

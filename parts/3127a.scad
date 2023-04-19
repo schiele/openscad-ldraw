@@ -17,7 +17,7 @@ function ldraw_lib__3127a() = [
 // 0 Name: 3127a.dat
 // 0 Author: Steve Bliss [sbliss]
 // 0 !LDRAW_ORG Part UPDATE 2010-03
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CW
   [0,"BFC","CERTIFY"],

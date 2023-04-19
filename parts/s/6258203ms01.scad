@@ -4,7 +4,7 @@ function ldraw_lib__s__6258203ms01() = [
 // 0 Name: s\6258203ms01.dat
 // 0 Author: Ulrich Röder [UR]
 // 0 !LDRAW_ORG Subpart UPDATE 2019-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],

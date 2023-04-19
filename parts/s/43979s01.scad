@@ -43,7 +43,7 @@ function ldraw_lib__s__43979s01() = [
 // 0 Name: s\43979s01.dat
 // 0 Author: Max Martin Richter [MMR1988]
 // 0 !LDRAW_ORG Subpart UPDATE 2019-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],

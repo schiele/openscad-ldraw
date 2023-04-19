@@ -40,7 +40,7 @@ function ldraw_lib__s__2880s09() = [
 // 0 Name: s\2880s09.dat
 // 0 Author: Mikkel Bech Jensen [gaia]
 // 0 !LDRAW_ORG Subpart UPDATE 2020-02
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CW
   [0,"BFC","CERTIFY"],

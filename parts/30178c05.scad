@@ -6,7 +6,7 @@ function ldraw_lib__30178c05() = [
 // 0 Name: 30178c05.dat
 // 0 Author: Marc Giraudet [Mad_Marc]
 // 0 !LDRAW_ORG Shortcut UPDATE 2020-02
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CW
   [0,"BFC","CERTIFY"],

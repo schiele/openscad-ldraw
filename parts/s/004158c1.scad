@@ -4,7 +4,7 @@ function ldraw_lib__s__004158c1() = [
 // 0 Name: s\004158c1.dat
 // 0 Author: Willy Tschager [Holly-Wood]
 // 0 !LDRAW_ORG Subpart UPDATE 2009-03
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CW
   [0,"BFC","CERTIFY"],

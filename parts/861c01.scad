@@ -7,7 +7,7 @@ function ldraw_lib__861c01() = [
 // 0 Name: 861c01.dat
 // 0 Author: Steffen [Steffen]
 // 0 !LDRAW_ORG Shortcut UPDATE 2012-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CW
   [0,"BFC","CERTIFY"],

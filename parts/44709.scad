@@ -14,7 +14,7 @@ function ldraw_lib__44709() = [
 // 0 Name: 44709.dat
 // 0 Author: Philippe Hurbain [Philo]
 // 0 !LDRAW_ORG Part UPDATE 2019-02
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 !HELP Barrel angle: 18 degrees
 // 

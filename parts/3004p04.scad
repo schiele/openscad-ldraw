@@ -5,7 +5,7 @@ function ldraw_lib__3004p04() = [
 // 0 Name: 3004p04.dat
 // 0 Author: Chris Dee [cwdee]
 // 0 !LDRAW_ORG Part UPDATE 2013-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 !HELP Part with yellow up arrow does not exist. Redirected
 // 0 !HELP to down arrow equivalent for backward compatibility

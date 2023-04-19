@@ -8,7 +8,7 @@ function ldraw_lib__11103() = [
 // 0 Name: 11103.dat
 // 0 Author: Philippe Hurbain [Philo]
 // 0 !LDRAW_ORG Part UPDATE 2020-02
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 !HELP Bar: 1 43 0 -40 0 -1 0 0 0 -1 0 0 0 1 30374.dat
 // 

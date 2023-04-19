@@ -20,7 +20,7 @@ function ldraw_lib__3493() = [
 // 0 Name: 3493.dat
 // 0 Author: Paul Easter [pneaster]
 // 0 !LDRAW_ORG Part UPDATE 2002-05
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CW
   [0,"BFC","CERTIFY"],

@@ -8,7 +8,7 @@ function ldraw_lib__3626bp3r() = [
 // 0 Name: 3626bp3r.dat
 // 0 Author: J.C. Tchang [tchang]
 // 0 !LDRAW_ORG Part UPDATE 2014-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],

@@ -9,7 +9,7 @@ function ldraw_lib__2350bp01() = [
 // 0 Name: 2350bp01.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
 // 0 !LDRAW_ORG Part UPDATE 2015-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],

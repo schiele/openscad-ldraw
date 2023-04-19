@@ -5,7 +5,7 @@ function ldraw_lib__24505() = [
 // 0 Name: 24505.dat
 // 0 Author: Philippe Hurbain [Philo]
 // 0 !LDRAW_ORG Part Alias UPDATE 2018-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CW
   [0,"BFC","CERTIFY"],

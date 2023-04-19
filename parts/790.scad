@@ -13,7 +13,7 @@ function ldraw_lib__790() = [
 // 0 Name: 790.dat
 // 0 Author: Chris Dee [cwdee]
 // 0 !LDRAW_ORG Part UPDATE 2010-03
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 !HELP Origin is 0 -24 20 relative to Fabuland Roof Slope
 // 

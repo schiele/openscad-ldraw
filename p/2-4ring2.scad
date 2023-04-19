@@ -4,7 +4,7 @@ function ldraw_lib__2_4ring2() = [
 // 0 Name: 2-4ring2.dat
 // 0 Author: Chris Dee [cwdee]
 // 0 !LDRAW_ORG Primitive UPDATE 2012-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],

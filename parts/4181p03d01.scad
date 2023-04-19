@@ -7,7 +7,7 @@ function ldraw_lib__4181p03d01() = [
 // 0 Name: 4181p03d01.dat
 // 0 Author: Steffen [Steffen]
 // 0 !LDRAW_ORG Shortcut UPDATE 2012-02
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CW
   [0,"BFC","CERTIFY"],

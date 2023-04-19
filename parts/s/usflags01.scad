@@ -6,7 +6,7 @@ function ldraw_lib__s__usflags01() = [
 // 0 Name: s\usflags01.dat
 // 0 Author: Orion Pobursky [OrionP]
 // 0 !LDRAW_ORG Subpart UPDATE 2022-02
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 !HELP For use in areas where a properly scaled US Flag is not possible.
 // 0 !HELP How to use:

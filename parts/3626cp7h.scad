@@ -7,7 +7,7 @@ function ldraw_lib__3626cp7h() = [
 // 0 Name: 3626cp7h.dat
 // 0 Author: Vincent Messenet [Cheenzo]
 // 0 !LDRAW_ORG Part UPDATE 2022-06
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CW
   [0,"BFC","CERTIFY"],

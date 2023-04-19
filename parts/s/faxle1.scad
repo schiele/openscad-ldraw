@@ -11,7 +11,7 @@ function ldraw_lib__s__faxle1() = [
 // 0 Name: s\faxle1.dat
 // 0 Author: Steve Bliss [sbliss]
 // 0 !LDRAW_ORG Subpart UPDATE 2022-02
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 !HELP See flexible axle parts for usage information
 // 

@@ -4,7 +4,7 @@ function ldraw_lib__48__7_24cyli() = [
 // 0 Name: 48\7-24cyli.dat
 // 0 Author: Santeri Piippo [arezey]
 // 0 !LDRAW_ORG 48_Primitive UPDATE 2012-03
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],

@@ -4,7 +4,7 @@ function ldraw_lib__s__6205p01s01() = [
 // 0 Name: s\6205p01s01.dat
 // 0 Author: Massimo Maso [Sirio]
 // 0 !LDRAW_ORG Subpart UPDATE 2020-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 !HELP Exact dimensions of text X = 280; Z = 53
 // 0 !HELP Overall dimensions with frame X = 285.6; Z = 58.6

@@ -4,7 +4,7 @@ function ldraw_lib__48__4_4ring1() = [
 // 0 Name: 48\4-4ring1.dat
 // 0 Author: Mark Kennedy [mkennedy]
 // 0 !LDRAW_ORG 48_Primitive UPDATE 2012-02
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],

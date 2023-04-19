@@ -6,7 +6,7 @@ function ldraw_lib__3039p08() = [
 // 0 Name: 3039p08.dat
 // 0 Author: Michael Heidemann [mikeheide]
 // 0 !LDRAW_ORG Part UPDATE 2019-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],

@@ -7,7 +7,7 @@ function ldraw_lib__47223d_f3() = [
 // 0 Name: 47223d-f3.dat
 // 0 Author: Philippe Hurbain [Philo]
 // 0 !LDRAW_ORG Shortcut UPDATE 2018-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],

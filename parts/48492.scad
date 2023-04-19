@@ -9,7 +9,7 @@ function ldraw_lib__48492() = [
 // 0 Name: 48492.dat
 // 0 Author: Willy Tschager [Holly-Wood]
 // 0 !LDRAW_ORG Part UPDATE 2022-02
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 !HELP Position on 4492 horse head: Y = -55.2, Z = 2.5
 // 0 !HELP Position of top clip: Z = -51.834, Y = -0.75

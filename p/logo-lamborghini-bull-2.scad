@@ -4,7 +4,7 @@ function ldraw_lib__logo_lamborghini_bull_2() = [
 // 0 Name: logo-lamborghini-bull-2.dat
 // 0 Author: Massimo Maso [Sirio]
 // 0 !LDRAW_ORG Primitive UPDATE 2022-04
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 !HELP Exact dimensions X = 2.78; Z = 3.44
 // 

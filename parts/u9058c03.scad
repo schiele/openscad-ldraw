@@ -8,7 +8,7 @@ function ldraw_lib__u9058c03() = [
 // 0 Name: u9058c03.dat
 // 0 Author: Steffen [Steffen]
 // 0 !LDRAW_ORG Shortcut UPDATE 2017-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],

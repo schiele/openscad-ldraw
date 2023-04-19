@@ -4,7 +4,7 @@ function ldraw_lib__48__5_48ring2() = [
 // 0 Name: 48\5-48ring2.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
 // 0 !LDRAW_ORG 48_Primitive UPDATE 2020-02
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],

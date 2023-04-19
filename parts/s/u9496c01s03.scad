@@ -4,7 +4,7 @@ function ldraw_lib__s__u9496c01s03() = [
 // 0 Name: s\u9496c01s03.dat
 // 0 Author: Philippe Hurbain [Philo]
 // 0 !LDRAW_ORG Subpart UPDATE 2022-03
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],

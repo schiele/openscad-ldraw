@@ -6,7 +6,7 @@ function ldraw_lib__93668p01c01() = [
 // 0 Name: 93668p01c01.dat
 // 0 Author: Christian Neumann [Wesley]
 // 0 !LDRAW_ORG Part UPDATE 2019-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 !HELP upper hole center at 0 0 0
 // 0 !HELP lower hole center at 0 101.25 -131.2

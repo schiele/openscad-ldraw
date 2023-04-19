@@ -6,7 +6,7 @@ function ldraw_lib__s__logosantanders05() = [
 // 0 Name: s\logosantanders05.dat
 // 0 Author: Massimo Maso [Sirio]
 // 0 !LDRAW_ORG Subpart UPDATE 2020-03
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 !HELP Exact dimensions X = 5.618; Z = 5.08
 // 

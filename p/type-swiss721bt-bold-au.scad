@@ -4,7 +4,7 @@ function ldraw_lib__type_swiss721bt_bold_au() = [
 // 0 Name: type-swiss721bt-bold-au.dat
 // 0 Author: Ulrich Röder [UR]
 // 0 !LDRAW_ORG Primitive UPDATE 2019-03
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],

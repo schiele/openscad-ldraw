@@ -4,7 +4,7 @@ function ldraw_lib__st4jfil2() = [
 // 0 Name: st4jfil2.dat
 // 0 Author: Magnus Forsberg [MagFors]
 // 0 !LDRAW_ORG Primitive UPDATE 2012-02
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],

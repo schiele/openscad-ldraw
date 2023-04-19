@@ -4,7 +4,7 @@ function ldraw_lib__s__54092p01s02() = [
 // 0 Name: s\54092p01s02.dat
 // 0 Author: Philippe Hurbain [Philo]
 // 0 !LDRAW_ORG Subpart UPDATE 2016-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],

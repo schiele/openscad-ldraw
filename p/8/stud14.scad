@@ -5,7 +5,7 @@ function ldraw_lib__8__stud14() = [
 // 0 Name: 8\stud14.dat
 // 0 Author: Steffen [Steffen]
 // 0 !LDRAW_ORG 8_Primitive UPDATE 2014-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],

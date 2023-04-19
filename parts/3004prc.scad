@@ -5,7 +5,7 @@ function ldraw_lib__3004prc() = [
 // 0 Name: 3004prc.dat
 // 0 Author: Tore Eriksson [Tore_Eriksson]
 // 0 !LDRAW_ORG Part UPDATE 2014-02
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],

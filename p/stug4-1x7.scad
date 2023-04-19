@@ -5,7 +5,7 @@ function ldraw_lib__stug4_1x7() = [
 // 0 Name: stug4-1x7.dat
 // 0 Author: Steffen [Steffen]
 // 0 !LDRAW_ORG Primitive UPDATE 2011-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],

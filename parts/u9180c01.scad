@@ -6,7 +6,7 @@ function ldraw_lib__u9180c01() = [
 // 0 Name: u9180c01.dat
 // 0 Author: Chris Dee [cwdee]
 // 0 !LDRAW_ORG Part UPDATE 2012-02
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],

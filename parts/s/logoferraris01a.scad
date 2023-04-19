@@ -4,7 +4,7 @@ function ldraw_lib__s__logoferraris01a() = [
 // 0 Name: s\logoferraris01a.dat
 // 0 Author: Massimo Maso [Sirio]
 // 0 !LDRAW_ORG Subpart UPDATE 2020-03
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 !HELP Exact dimensions X = 9; Z = 2.2
 // 

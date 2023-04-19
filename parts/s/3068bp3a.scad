@@ -5,7 +5,7 @@ function ldraw_lib__s__3068bp3a() = [
 // 0 Name: s\3068bp3a.dat
 // 0 Author: Orion Pobursky [OrionP]
 // 0 !LDRAW_ORG Subpart UPDATE 2019-03
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],

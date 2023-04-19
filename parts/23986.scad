@@ -11,7 +11,7 @@ function ldraw_lib__23986() = [
 // 0 Name: 23986.dat
 // 0 Author: Magnus Forsberg [MagFors]
 // 0 !LDRAW_ORG Part UPDATE 2020-02
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 !HELP Handle at: 1 4 -20 3.575 0 -4 0 0 0 9.85 0 0 0 4 4-4cyli.dat
 // 

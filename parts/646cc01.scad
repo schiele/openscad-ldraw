@@ -6,7 +6,7 @@ function ldraw_lib__646cc01() = [
 // 0 Name: 646cc01.dat
 // 0 Author: Tore Eriksson [Tore_Eriksson]
 // 0 !LDRAW_ORG Shortcut UPDATE 2009-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CW
   [0,"BFC","CERTIFY"],

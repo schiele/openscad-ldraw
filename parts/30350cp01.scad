@@ -6,7 +6,7 @@ function ldraw_lib__30350cp01() = [
 // 0 Name: 30350cp01.dat
 // 0 Author: Orion Pobursky [OrionP]
 // 0 !LDRAW_ORG Part UPDATE 2020-02
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],

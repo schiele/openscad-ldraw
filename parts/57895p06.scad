@@ -6,7 +6,7 @@ function ldraw_lib__57895p06() = [
 // 0 Name: 57895p06.dat
 // 0 Author: Vincent Messenet [Cheenzo]
 // 0 !LDRAW_ORG Part UPDATE 2022-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 !HELP Position in 60596 frame: Y=4.5, Z=5
 // 

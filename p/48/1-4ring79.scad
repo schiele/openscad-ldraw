@@ -4,7 +4,7 @@ function ldraw_lib__48__1_4ring79() = [
 // 0 Name: 48\1-4ring79.dat
 // 0 Author: Massimo Maso [Sirio]
 // 0 !LDRAW_ORG 48_Primitive UPDATE 2020-02
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
