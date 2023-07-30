@@ -3,10 +3,10 @@ use <3815b.scad>
 use <3816bpw2.scad>
 use <3817bpw2.scad>
 function ldraw_lib__73200pw2() = [
-// 0 Minifig Hips and Legs with Blue/White Triangles, Fringe Pattern
+// 0 ~Minifig Hips and Legs with Blue/White Triangles, Fringe Pattern (Obsolete)
 // 0 Name: 73200pw2.dat
 // 0 Author: Magnus Forsberg [MagFors]
-// 0 !LDRAW_ORG Shortcut UPDATE 2020-03
+// 0 !LDRAW_ORG Shortcut UPDATE 2023-03
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -19,6 +19,8 @@ function ldraw_lib__73200pw2() = [
 // 0 !CMDLINE -c19
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
+// 0 !HISTORY 2023-02-03 [Holly-Wood] Obsoleted for bad geometry of the legs. Use 73200bpw2 instead.
+// 0 !HISTORY 2023-06-24 [OrionP] Official Update 2023-03
 // 
 // 
 // 1 1 0 0 0 1 0 0 0 1 0 0 0 1 3815b.dat

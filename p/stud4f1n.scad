@@ -10,7 +10,7 @@ function ldraw_lib__stud4f1n() = [
 // 0 Name: stud4f1n.dat
 // 0 Author: Tim Lampmann [L4mpi]
 // 0 !LDRAW_ORG Primitive UPDATE 2020-02
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],

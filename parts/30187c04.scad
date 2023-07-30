@@ -6,7 +6,7 @@ function ldraw_lib__30187c04() = [
 // 0 Name: 30187c04.dat
 // 0 Author: Steve Bliss [sbliss]
 // 0 !LDRAW_ORG Shortcut UPDATE 2022-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CW
   [0,"BFC","CERTIFY"],

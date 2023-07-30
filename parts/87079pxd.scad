@@ -6,7 +6,7 @@ function ldraw_lib__87079pxd() = [
 // 0 Name: 87079pxd.dat
 // 0 Author: Evert-Jan Boer [ejboer]
 // 0 !LDRAW_ORG Part UPDATE 2022-04
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],

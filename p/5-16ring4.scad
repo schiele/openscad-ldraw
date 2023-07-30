@@ -4,7 +4,7 @@ function ldraw_lib__5_16ring4() = [
 // 0 Name: 5-16ring4.dat
 // 0 Author: Tim Lampmann [L4mpi]
 // 0 !LDRAW_ORG Primitive UPDATE 2022-03
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],

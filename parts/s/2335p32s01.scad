@@ -4,7 +4,7 @@ function ldraw_lib__s__2335p32s01() = [
 // 0 Name: s\2335p32s01.dat
 // 0 Author: Evert-Jan Boer [ejboer]
 // 0 !LDRAW_ORG Subpart UPDATE 2020-03
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],

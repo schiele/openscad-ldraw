@@ -23,7 +23,7 @@ function ldraw_lib__3298p73() = [
 // 0 Name: 3298p73.dat
 // 0 Author: Chris Dee [cwdee]
 // 0 !LDRAW_ORG Part UPDATE 2010-03
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CW
   [0,"BFC","CERTIFY"],

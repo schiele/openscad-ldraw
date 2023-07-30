@@ -1,5 +1,6 @@
 use <../lib.scad>
 use <../p/4-4cylo.scad>
+use <../p/4-4disc.scad>
 use <../p/4-4ring3.scad>
 use <../p/48/4-4aring.scad>
 use <../p/48/4-4con2.scad>
@@ -13,7 +14,7 @@ function ldraw_lib__3475a() = [
 // 0 Plate  1 x  2 with Jet Engine and Smooth Hole
 // 0 Name: 3475a.dat
 // 0 Author: Michael Heidemann [mikeheide]
-// 0 !LDRAW_ORG Part UPDATE 2022-02
+// 0 !LDRAW_ORG Part UPDATE 2023-03
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -27,6 +28,8 @@ function ldraw_lib__3475a() = [
 // 0 !HISTORY 2021-03-08 [Philo] Corrected cylinder/support intersection
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
 // 0 !HISTORY 2022-03-06 [PTadmin] Official Update 2022-02
+// 0 !HISTORY 2023-04-23 [nielsk] Corrected inside
+// 0 !HISTORY 2023-06-24 [OrionP] Official Update 2023-03
 // 
 // 
 // 1 16 0 4 0 1 0 0 0 -1 0 0 0 1 stud3.dat
@@ -67,8 +70,16 @@ function ldraw_lib__3475a() = [
   [1,16,-16,4,30,0,-24,0,4,0,0,0,0,-4, ldraw_lib__48__4_4con2()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
-// 1 16 -40 4 30 0 80 0 6 0 0 0 0 6 4-4cylo.dat
-  [1,16,-40,4,30,0,80,0,6,0,0,0,0,6, ldraw_lib__4_4cylo()],
+// 1 16 -40 4 30 0 38 0 6 0 0 0 0 6 4-4cylo.dat
+  [1,16,-40,4,30,0,38,0,6,0,0,0,0,6, ldraw_lib__4_4cylo()],
+// 0 BFC INVERTNEXT
+  [0,"BFC","INVERTNEXT"],
+// 1 16 40 4 30 0 -38 0 6 0 0 0 0 6 4-4cylo.dat
+  [1,16,40,4,30,0,-38,0,6,0,0,0,0,6, ldraw_lib__4_4cylo()],
+// 1 16 -2 4 30 0 38 0 6 0 0 0 0 6 4-4disc.dat
+  [1,16,-2,4,30,0,38,0,6,0,0,0,0,6, ldraw_lib__4_4disc()],
+// 1 16 2 4 30 0 -38 0 6 0 0 0 0 -6 4-4disc.dat
+  [1,16,2,4,30,0,-38,0,6,0,0,0,0,-6, ldraw_lib__4_4disc()],
 // 1 16 16 4 30 0 -32 0 12 0 0 0 0 12 48\4-4cylo.dat
   [1,16,16,4,30,0,-32,0,12,0,0,0,0,12, ldraw_lib__48__4_4cylo()],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 stug-1x2.dat

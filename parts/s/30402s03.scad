@@ -7,7 +7,7 @@ function ldraw_lib__s__30402s03() = [
 // 0 Name: s\30402s03.dat
 // 0 Author: Tim Lampmann [L4mpi]
 // 0 !LDRAW_ORG Subpart UPDATE 2023-02
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],

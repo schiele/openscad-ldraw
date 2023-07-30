@@ -17,7 +17,7 @@ function ldraw_lib__4479() = [
 // 0 Name: 4479.dat
 // 0 Author: Tore Eriksson [Tore_Eriksson]
 // 0 !LDRAW_ORG Part UPDATE 2016-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],

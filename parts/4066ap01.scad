@@ -12,7 +12,7 @@ function ldraw_lib__4066ap01() = [
 // 0 Name: 4066ap01.dat
 // 0 Author: Tim Lampmann [L4mpi]
 // 0 !LDRAW_ORG Part UPDATE 2020-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],

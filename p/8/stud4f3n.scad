@@ -4,7 +4,7 @@ function ldraw_lib__8__stud4f3n() = [
 // 0 Name: 8\stud4f3n.dat
 // 0 Author: Evert-Jan Boer [ejboer]
 // 0 !LDRAW_ORG 8_Primitive UPDATE 2018-02
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],

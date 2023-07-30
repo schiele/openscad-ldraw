@@ -4,7 +4,7 @@ function ldraw_lib__box3u8p() = [
 // 0 Name: box3u8p.dat
 // 0 Author: James Jessiman
 // 0 !LDRAW_ORG Primitive UPDATE 2012-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],

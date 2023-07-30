@@ -4,10 +4,10 @@ use <s/3817bpw1s02.scad>
 use <s/3817bpw1s03.scad>
 use <s/3817bs01.scad>
 function ldraw_lib__3817bpw1() = [
-// 0 Minifig Leg Left with Red/White Triangles Pattern
+// 0 ~Minifig Leg Left with Red/White Triangles Pattern (Obsolete)
 // 0 Name: 3817bpw1.dat
 // 0 Author: Willy Tschager [Holly-Wood]
-// 0 !LDRAW_ORG Part UPDATE 2020-01
+// 0 !LDRAW_ORG Part UPDATE 2023-03
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 !HELP Move down 12 units to align with hips
@@ -22,6 +22,8 @@ function ldraw_lib__3817bpw1() = [
 // 0 !CMDLINE -c17
 // 
 // 0 !HISTORY 2020-06-28 [PTadmin] Official Update 2020-01
+// 0 !HISTORY 2023-02-03 [Holly-Wood] Obsoleted for bad geometry. Use 3817cpw1 instead.
+// 0 !HISTORY 2023-06-24 [OrionP] Official Update 2023-03
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3817bs01.dat

@@ -17,7 +17,7 @@ function ldraw_lib__s__3996s01() = [
 // 0 Name: s\3996s01.dat
 // 0 Author: Tore Eriksson [Tore_Eriksson]
 // 0 !LDRAW_ORG Subpart UPDATE 2017-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],

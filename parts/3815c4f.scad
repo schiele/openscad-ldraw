@@ -7,7 +7,7 @@ function ldraw_lib__3815c4f() = [
 // 0 Name: 3815c4f.dat
 // 0 Author: Franklin W. Cain [fwcain]
 // 0 !LDRAW_ORG Shortcut UPDATE 2022-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],

@@ -4,7 +4,7 @@ function ldraw_lib__4_4con7() = [
 // 0 Name: 4-4con7.dat
 // 0 Author: Niels Karsdorp [nielsk]
 // 0 !LDRAW_ORG Primitive UPDATE 2004-04
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],

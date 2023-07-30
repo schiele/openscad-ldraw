@@ -1,10 +1,10 @@
 use <../lib.scad>
 use <s/3817bs01.scad>
 function ldraw_lib__3817bpq1() = [
-// 0 Minifig Leg Left with DarkBlue and Gold Loincloth Pattern
+// 0 ~Minifig Leg Left with DarkBlue and Gold Loincloth Pattern (Obsolete)
 // 0 Name: 3817bpq1.dat
 // 0 Author: Magnus Forsberg [MagFors]
-// 0 !LDRAW_ORG Part UPDATE 2020-03
+// 0 !LDRAW_ORG Part UPDATE 2023-03
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 !HELP Move down 12 LDU to align with hips
@@ -14,11 +14,13 @@ function ldraw_lib__3817bpq1() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS Amset-Ra, Anubis Guard, Bricklink 970c00pb0081
-// 0 !KEYWORDS Bricklink 970c00pb0082, Pharaoh's Quest
+// 0 !KEYWORDS Bricklink 970c00pb0082, Pharaoh's Quest, Set 7327
 // 
 // 0 !HISTORY 2011-12-29 [Wesley] Original pattern design
 // 0 !HISTORY 2020-06-06 [MagFors] Adapted to corrected geometry
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
+// 0 !HISTORY 2023-05-25 [MagFors] Obsoleted due to bad geometry
+// 0 !HISTORY 2023-06-24 [OrionP] Official Update 2023-03
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3817bs01.dat

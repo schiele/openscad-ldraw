@@ -4,7 +4,7 @@ function ldraw_lib__1_16rin1() = [
 // 0 Name: 1-16rin1.dat
 // 0 Author: Niels Karsdorp [nielsk]
 // 0 !LDRAW_ORG Primitive UPDATE 2009-03
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],

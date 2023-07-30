@@ -6,10 +6,10 @@ use <../../p/rect.scad>
 use <../../p/rect2p.scad>
 use <../../p/recte4.scad>
 function ldraw_lib__s__3817bs02() = [
-// 0 ~Minifig Leg Left without Front and Side Surfaces
+// 0 ~Minifig Leg Left without Front and Side Surfaces (Obsolete)
 // 0 Name: s\3817bs02.dat
 // 0 Author: Nils Schmidt [BlackBrick89]
-// 0 !LDRAW_ORG Subpart UPDATE 2019-01
+// 0 !LDRAW_ORG Subpart UPDATE 2023-03
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -17,6 +17,8 @@ function ldraw_lib__s__3817bs02() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
+// 0 !HISTORY 2023-05-21 [OrionP] Obsolete due to bad geometry
+// 0 !HISTORY 2023-06-24 [OrionP] Official Update 2023-03
 // 
 // 
 // 0 BFC INVERTNEXT

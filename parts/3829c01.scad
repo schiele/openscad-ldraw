@@ -6,7 +6,7 @@ function ldraw_lib__3829c01() = [
 // 0 Name: 3829c01.dat
 // 0 Author: James Jessiman
 // 0 !LDRAW_ORG Shortcut UPDATE 2009-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],

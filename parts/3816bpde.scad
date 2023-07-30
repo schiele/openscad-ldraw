@@ -4,11 +4,11 @@ use <../p/4-4ndis.scad>
 use <../p/4-4ring4.scad>
 use <s/3817bs01.scad>
 function ldraw_lib__3816bpde() = [
-// 0 Minifig Leg Right with Laboratory Smock Pattern
+// 0 ~Minifig Leg Right with Laboratory Smock Pattern (Obsolete)
 // 0 Name: 3816bpde.dat
 // 0 Author: Magnus Forsberg [MagFors]
-// 0 !LDRAW_ORG Part UPDATE 2020-03
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LDRAW_ORG Part UPDATE 2023-03
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
@@ -19,6 +19,8 @@ function ldraw_lib__3816bpde() = [
 // 0 !HISTORY 2009-12-29 [westrate] Original design as 3816pde
 // 0 !HISTORY 2020-06-27 [MagFors] Adapted to corrected geometry
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
+// 0 !HISTORY 2023-05-28 [MagFors] Obsoleted due to bad geometry
+// 0 !HISTORY 2023-06-24 [OrionP] Official Update 2023-03
 // 
 // 
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\3817bs01.dat

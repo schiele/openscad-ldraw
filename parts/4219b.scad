@@ -22,7 +22,7 @@ function ldraw_lib__4219b() = [
 // 0 Name: 4219b.dat
 // 0 Author: Jaco van der Molen [Jaco]
 // 0 !LDRAW_ORG Part UPDATE 2013-02
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],

@@ -12,7 +12,7 @@ function ldraw_lib__51643() = [
 // 0 Name: 51643.dat
 // 0 Author: Michael Heidemann [mikeheide]
 // 0 !LDRAW_ORG Part UPDATE 2023-02
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],

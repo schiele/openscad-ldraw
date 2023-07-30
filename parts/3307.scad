@@ -11,7 +11,7 @@ function ldraw_lib__3307() = [
 // 0 Name: 3307.dat
 // 0 Author: James Jessiman
 // 0 !LDRAW_ORG Part UPDATE 2013-02
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 !HELP Bad geometry in this file in 2003-03 and 2008-01 versions can be
 // 0 !HELP simulated by using part 12939

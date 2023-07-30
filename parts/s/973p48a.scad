@@ -4,7 +4,7 @@ function ldraw_lib__s__973p48a() = [
 // 0 Name: s\973p48a.dat
 // 0 Author: Chris Dee [cwdee]
 // 0 !LDRAW_ORG Subpart UPDATE 2009-03
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],

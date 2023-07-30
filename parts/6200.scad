@@ -24,7 +24,7 @@ function ldraw_lib__6200() = [
 // 0 Name: 6200.dat
 // 0 Author: Tore Eriksson [Tore_Eriksson]
 // 0 !LDRAW_ORG Part UPDATE 2016-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 !HELP Example of use
 // 0 !HELP 1 5 0 0 0 1 0 0 0 1 0 0 0 1 6200.dat

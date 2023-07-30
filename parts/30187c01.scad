@@ -8,7 +8,7 @@ function ldraw_lib__30187c01() = [
 // 0 Name: 30187c01.dat
 // 0 Author: Paul Easter [pneaster]
 // 0 !LDRAW_ORG Shortcut UPDATE 2016-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CW
   [0,"BFC","CERTIFY"],

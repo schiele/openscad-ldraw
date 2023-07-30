@@ -4,7 +4,7 @@ function ldraw_lib__1_4con12() = [
 // 0 Name: 1-4con12.dat
 // 0 Author: Franklin W. Cain [fwcain]
 // 0 !LDRAW_ORG Primitive UPDATE 2010-03
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],

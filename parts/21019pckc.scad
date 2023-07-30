@@ -3,10 +3,10 @@ use <20460pckc.scad>
 use <20461pckc.scad>
 use <3815bpckc.scad>
 function ldraw_lib__21019pckc() = [
-// 0 Minifig Hips and Legs with Wetsuit, Coral and Dark Azure Trim Pattern
+// 0 ~Minifig Hips and Legs with Wetsuit, Coral and Dark Azure Trim Pattern (Obsolete)
 // 0 Name: 21019pckc.dat
 // 0 Author: Chris Dee [cwdee]
-// 0 !LDRAW_ORG Shortcut UPDATE 2022-05
+// 0 !LDRAW_ORG Shortcut UPDATE 2023-03
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -18,6 +18,8 @@ function ldraw_lib__21019pckc() = [
 // 0 !CMDLINE -c0
 // 
 // 0 !HISTORY 2022-09-15 [PTadmin] Official Update 2022-05
+// 0 !HISTORY 2023-06-06 [MagFors] Obsoleted due to bad geometry
+// 0 !HISTORY 2023-06-24 [OrionP] Official Update 2023-03
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 3815bpckc.dat

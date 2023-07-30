@@ -5,7 +5,7 @@ function ldraw_lib__3819px0() = [
 // 0 Name: 3819px0.dat
 // 0 Author: Evert-Jan Boer [ejboer]
 // 0 !LDRAW_ORG Part UPDATE 2022-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 !HELP Place at 15.552 9 0 relative to torso
 // 0 !HELP Then rotate about x axis to give require elevation of arm

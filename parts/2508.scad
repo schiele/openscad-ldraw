@@ -14,7 +14,7 @@ function ldraw_lib__2508() = [
 // 0 Name: 2508.dat
 // 0 Author: James Jessiman
 // 0 !LDRAW_ORG Part UPDATE 2014-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],

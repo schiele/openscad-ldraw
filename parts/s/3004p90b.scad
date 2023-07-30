@@ -4,7 +4,7 @@ function ldraw_lib__s__3004p90b() = [
 // 0 Name: s\3004p90b.dat
 // 0 Author: Chris Dee [cwdee]
 // 0 !LDRAW_ORG Subpart UPDATE 2010-03
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CW
   [0,"BFC","CERTIFY"],

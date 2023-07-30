@@ -7,7 +7,7 @@ function ldraw_lib__s__59s02() = [
 // 0 Name: s\59s02.dat
 // 0 Author: Franklin W. Cain [fwcain]
 // 0 !LDRAW_ORG Subpart UPDATE 2004-02
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CW
   [0,"BFC","CERTIFY"],

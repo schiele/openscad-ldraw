@@ -4,7 +4,7 @@ function ldraw_lib__s__609p01s1() = [
 // 0 Name: s\609p01s1.dat
 // 0 Author: Steffen [Steffen]
 // 0 !LDRAW_ORG Subpart UPDATE 2010-03
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CW
   [0,"BFC","CERTIFY"],

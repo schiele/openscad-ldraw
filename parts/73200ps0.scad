@@ -3,10 +3,10 @@ use <3815b.scad>
 use <3816bps0.scad>
 use <3817bps0.scad>
 function ldraw_lib__73200ps0() = [
-// 0 Minifig Hips and Legs with SW White Leggings Pattern
+// 0 ~Minifig Hips and Legs with SW White Leggings Pattern (Obsolete)
 // 0 Name: 73200ps0.dat
 // 0 Author: Magnus Forsberg [MagFors]
-// 0 !LDRAW_ORG Shortcut UPDATE 2020-03
+// 0 !LDRAW_ORG Shortcut UPDATE 2023-03
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -19,6 +19,8 @@ function ldraw_lib__73200ps0() = [
 // 0 !CMDLINE -c19
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
+// 0 !HISTORY 2023-05-21 [MagFors] Obsoleted due to bad geomatery
+// 0 !HISTORY 2023-06-24 [OrionP] Official Update 2023-03
 // 
 // 
 // 1 15 0 0 0 1 0 0 0 1 0 0 0 1 3815b.dat

@@ -3,11 +3,11 @@ use <20460px1.scad>
 use <20461px1.scad>
 use <3815b.scad>
 function ldraw_lib__21019px1() = [
-// 0 Minifig Hips and Legs with Dark Red Lower Leg and Triangular Notch on Sides Pattern
+// 0 ~Minifig Hips and Legs with Dark Red Lower Leg and Triangular Notch on Sides Pattern (Obsolete)
 // 0 Name: 21019px1.dat
 // 0 Author: Evert-Jan Boer [ejboer]
-// 0 !LDRAW_ORG Shortcut UPDATE 2022-05
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LDRAW_ORG Shortcut UPDATE 2023-03
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
@@ -16,6 +16,8 @@ function ldraw_lib__21019px1() = [
 // 0 !KEYWORDS Bricklink 970c00pb0645, Set 71285
 // 
 // 0 !HISTORY 2022-09-15 [PTadmin] Official Update 2022-05
+// 0 !HISTORY 2023-06-06 [MagFors] Obsoleted due to bad geometry
+// 0 !HISTORY 2023-06-24 [OrionP] Official Update 2023-03
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 3815b.dat

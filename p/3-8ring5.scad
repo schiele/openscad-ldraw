@@ -4,7 +4,7 @@ function ldraw_lib__3_8ring5() = [
 // 0 Name: 3-8ring5.dat
 // 0 Author: Niels Karsdorp [nielsk]
 // 0 !LDRAW_ORG Primitive UPDATE 2009-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
