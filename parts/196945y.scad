@@ -1,29 +1,35 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
+use <../p/logo-shell-1971-outerbox.scad>
+use <../p/logo-shell-1971.scad>
 use <../p/logo-shell-e.scad>
 use <../p/logo-shell-h.scad>
 use <../p/logo-shell-s.scad>
-use <s/3004s60.scad>
 function ldraw_lib__196945y() = [
-// 0 Sticker  1.1 x  3.9 with "Shell" and Shell Logo - Logo Left
+// 0 Sticker  1.1 x  3.9 with "Shell" and Shell Logo 1971 - Logo Left
 // 0 Name: 196945y.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
-// 0 !LDRAW_ORG Part UPDATE 2022-05
+// 0 !LDRAW_ORG Part UPDATE 2023-04
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Freight train, Set 7735
+// 0 !KEYWORDS Bricklink 7735stk01, Brickowl 938798, Freight train
+// 0 !KEYWORDS Rebrickable 196945, Set 7735
 // 
 // 0 !HISTORY 2022-09-15 [PTadmin] Official Update 2022-05
+// 0 !HISTORY 2023-06-30 [Cheenzo] Made use of logo prims, added keyword, updated description
+// 0 !HISTORY 2023-08-25 [OrionP] Official Update 2023-04
 // 
 // 
 // 1 16 0 -0.25 0 39 0 0 0 0.25 0 0 0 11 box5-12.dat
   [1,16,0,-0.25,0,39,0,0,0,0.25,0,0,0,11, ldraw_lib__box5_12()],
-// 1 15 -25.2 -.25 0 .6 0 0 0 0 1 0 -.6 0 s\3004s60.dat
-  [1,15,-25.2,-.25,0,.6,0,0,0,0,1,0,-.6,0, ldraw_lib__s__3004s60()],
+// 1 16 -25.2 -.25 0 .6 0 0 0 1 0 0 0 .6 logo-shell-1971.dat
+  [1,16,-25.2,-.25,0,.6,0,0,0,1,0,0,0,.6, ldraw_lib__logo_shell_1971()],
+// 1 15 -25.2 -.25 0 .6 0 0 0 1 0 0 0 .6 logo-shell-1971-outerbox.dat
+  [1,15,-25.2,-.25,0,.6,0,0,0,1,0,0,0,.6, ldraw_lib__logo_shell_1971_outerbox()],
 // 1 15 -9.72 -.25 -.24 .51 0 0 0 1 0 0 0 .51 logo-shell-s.dat
   [1,15,-9.72,-.25,-.24,.51,0,0,0,1,0,0,0,.51, ldraw_lib__logo_shell_s()],
 // 1 15 3.12 -.25 -.24 .51 0 0 0 1 0 0 0 .51 logo-shell-h.dat

@@ -1,31 +1,39 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
+use <../p/logo-shell-1971-outerbox.scad>
+use <../p/logo-shell-1971.scad>
 use <../p/logo-shell-e.scad>
 use <../p/logo-shell-h.scad>
 use <../p/logo-shell-s.scad>
-use <s/3004s60.scad>
 function ldraw_lib__004462d() = [
-// 0 Sticker  2.1 x  9.9 with "Shell" and Shell Logos
+// 0 Sticker  2.1 x  9.9 with "Shell" and Shell Logos 1971
 // 0 Name: 004462d.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
-// 0 !LDRAW_ORG Part UPDATE 2022-05
+// 0 !LDRAW_ORG Part UPDATE 2023-04
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Formula 1, Racer, Set 392-1
+// 0 !KEYWORDS Bricklink 392.1stk01, Brickowl 792264, Formula 1, Racer
+// 0 !KEYWORDS Rebrickable 004462, Set 392-1
 // 
 // 0 !HISTORY 2022-09-15 [PTadmin] Official Update 2022-05
+// 0 !HISTORY 2023-06-30 [Cheenzo] Made use of logo prims, added keyword, updated description
+// 0 !HISTORY 2023-08-25 [OrionP] Official Update 2023-04
 // 
 // 
 // 1 16 0 -.25 0 99 0 0 0 .25 0 0 0 21 box5-12.dat
   [1,16,0,-.25,0,99,0,0,0,.25,0,0,0,21, ldraw_lib__box5_12()],
-// 1 15 -70 -.25 0 1.5 0 0 0 0 1 0 -1.5 0 s\3004s60.dat
-  [1,15,-70,-.25,0,1.5,0,0,0,0,1,0,-1.5,0, ldraw_lib__s__3004s60()],
-// 1 15 70 -.25 0 1.5 0 0 0 0 1 0 -1.5 0 s\3004s60.dat
-  [1,15,70,-.25,0,1.5,0,0,0,0,1,0,-1.5,0, ldraw_lib__s__3004s60()],
+// 1 16 -70 -.25 0 1.5 0 0 0 1 0 0 0 1.5 logo-shell-1971.dat
+  [1,16,-70,-.25,0,1.5,0,0,0,1,0,0,0,1.5, ldraw_lib__logo_shell_1971()],
+// 1 15 -70 -.25 0 1.5 0 0 0 1 0 0 0 1.5 logo-shell-1971-outerbox.dat
+  [1,15,-70,-.25,0,1.5,0,0,0,1,0,0,0,1.5, ldraw_lib__logo_shell_1971_outerbox()],
+// 1 16 70 -.25 0 1.5 0 0 0 1 0 0 0 1.5 logo-shell-1971.dat
+  [1,16,70,-.25,0,1.5,0,0,0,1,0,0,0,1.5, ldraw_lib__logo_shell_1971()],
+// 1 15 70 -.25 0 1.5 0 0 0 1 0 0 0 1.5 logo-shell-1971-outerbox.dat
+  [1,15,70,-.25,0,1.5,0,0,0,1,0,0,0,1.5, ldraw_lib__logo_shell_1971_outerbox()],
 // 1 15 -35.53 -.25 -.47 1 0 0 0 1 0 0 0 1 logo-shell-s.dat
   [1,15,-35.53,-.25,-.47,1,0,0,0,1,0,0,0,1, ldraw_lib__logo_shell_s()],
 // 1 15 -10.35 -.25 -.47 1 0 0 0 1 0 0 0 1 logo-shell-h.dat
@@ -36,7 +44,6 @@ function ldraw_lib__004462d() = [
   [4,4,26.97,-.25,9.03,26.97,-.25,-9.97,33.97,-.25,-9.97,33.97,-.25,9.03],
 // 4 4 38.03 -.25 9.03 38.03 -.25 -9.97 45.03 -.25 -9.97 45.03 -.25 9.03
   [4,4,38.03,-.25,9.03,38.03,-.25,-9.97,45.03,-.25,-9.97,45.03,-.25,9.03],
-// 
 // 4 15 -87.25 -.25 -15.75 -87.25 -.25 15.75 -99 -.25 21 -99 -.25 -21
   [4,15,-87.25,-.25,-15.75,-87.25,-.25,15.75,-99,-.25,21,-99,-.25,-21],
 // 3 15 -99 -.25 21 -87.25 -.25 15.75 -52.75 -.25 15.75

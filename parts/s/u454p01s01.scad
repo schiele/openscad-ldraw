@@ -1,12 +1,13 @@
 use <../../lib.scad>
 use <../../p/2-4ering.scad>
 use <../../p/48/2-4chrd.scad>
-use <3004s60.scad>
+use <../../p/logo-shell-1971-outerbox.scad>
+use <../../p/logo-shell-1971.scad>
 function ldraw_lib__s__u454p01s01() = [
-// 0 ~Signpost Slanted Cantilever with Suspended Sign with Shell Logo Pattern - Side
+// 0 ~Signpost Slanted Cantilever with Suspended Sign with Shell Logo 1971 Pattern - Side
 // 0 Name: s\u454p01s01.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
-// 0 !LDRAW_ORG Subpart UPDATE 2022-01
+// 0 !LDRAW_ORG Subpart UPDATE 2023-04
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -14,14 +15,18 @@ function ldraw_lib__s__u454p01s01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
+// 0 !HISTORY 2023-06-30 [Cheenzo] Made use of logo prims,updated description
+// 0 !HISTORY 2023-08-25 [OrionP] Official Update 2023-04
 // 
 // 
 // 1 16 0 -14 0 0 -1 0 0 0 -3 18 0 0 2-4ering.dat
   [1,16,0,-14,0,0,-1,0,0,0,-3,18,0,0, ldraw_lib__2_4ering()],
 // 1 16 0 14 0 0 -1 0 0 0 3 -18 0 0 2-4ering.dat
   [1,16,0,14,0,0,-1,0,0,0,3,-18,0,0, ldraw_lib__2_4ering()],
-// 1 4 0 0 0 0 0 -1 0 1.3 0 1.3 0 0 s\3004s60.dat
-  [1,4,0,0,0,0,0,-1,0,1.3,0,1.3,0,0, ldraw_lib__s__3004s60()],
+// 1 4 0 0 0 0 -1 0 0 0 -1.3 1.3 0 0 logo-shell-1971.dat
+  [1,4,0,0,0,0,-1,0,0,0,-1.3,1.3,0,0, ldraw_lib__logo_shell_1971()],
+// 1 4 0 0 0 0 -1 0 0 0 -1.3 1.3 0 0 logo-shell-1971-outerbox.dat
+  [1,4,0,0,0,0,-1,0,0,0,-1.3,1.3,0,0, ldraw_lib__logo_shell_1971_outerbox()],
 // 1 4 0 -14 0 0 -1 0 0 0 -2 16 0 0 48\2-4chrd.dat
   [1,4,0,-14,0,0,-1,0,0,0,-2,16,0,0, ldraw_lib__48__2_4chrd()],
 // 1 4 0 14 0 0 -1 0 0 0 2 -16 0 0 48\2-4chrd.dat

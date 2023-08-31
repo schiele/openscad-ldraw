@@ -1,29 +1,35 @@
 use <../lib.scad>
 use <../p/box5-12.scad>
+use <../p/logo-shell-1971-outerbox.scad>
+use <../p/logo-shell-1971.scad>
 use <../p/logo-shell-e.scad>
 use <../p/logo-shell-h.scad>
 use <../p/logo-shell-s.scad>
-use <s/3004s60.scad>
 function ldraw_lib__004416b() = [
-// 0 Sticker  1.3 x  5.9 with "Shell" and Shell Logo - Logo Right
+// 0 Sticker  1.3 x  5.9 with "Shell" and Shell Logo 1971 - Logo Right
 // 0 Name: 004416b.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
-// 0 !LDRAW_ORG Part UPDATE 2022-01
+// 0 !LDRAW_ORG Part UPDATE 2023-04
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Set 671-1, tanker
+// 0 !KEYWORDS Bricklink 671stk01, Brickowl 766532, Rebrickable 4416, Set 671-1
+// 0 !KEYWORDS tanker
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
+// 0 !HISTORY 2023-06-30 [Cheenzo] Made use of logo prims, added keyword, updated description
+// 0 !HISTORY 2023-08-25 [OrionP] Official Update 2023-04
 // 
 // 
 // 1 16 0 -0.25 0 59 0 0 0 0.25 0 0 0 13 box5-12.dat
   [1,16,0,-0.25,0,59,0,0,0,0.25,0,0,0,13, ldraw_lib__box5_12()],
-// 1 15 42 -.25 0 1 0 0 0 0 1 0 -1 0 s\3004s60.dat
-  [1,15,42,-.25,0,1,0,0,0,0,1,0,-1,0, ldraw_lib__s__3004s60()],
+// 1 16 42 -.25 0 1 0 0 0 1 0 0 0 1 logo-shell-1971.dat
+  [1,16,42,-.25,0,1,0,0,0,1,0,0,0,1, ldraw_lib__logo_shell_1971()],
+// 1 15 42 -.25 0 1 0 0 0 1 0 0 0 1 logo-shell-1971-outerbox.dat
+  [1,15,42,-.25,0,1,0,0,0,1,0,0,0,1, ldraw_lib__logo_shell_1971_outerbox()],
 // 1 15 -43.2 -.25 -.4 .85 0 0 0 1 0 0 0 .85 logo-shell-s.dat
   [1,15,-43.2,-.25,-.4,.85,0,0,0,1,0,0,0,.85, ldraw_lib__logo_shell_s()],
 // 1 15 -21.8 -.25 -.4 .85 0 0 0 1 0 0 0 .85 logo-shell-h.dat
@@ -34,7 +40,6 @@ function ldraw_lib__004416b() = [
   [4,4,9.925,-.25,7.675,9.925,-.25,-8.475,15.875,-.25,-8.475,15.875,-.25,7.675],
 // 4 4 19.325 -.25 7.675 19.325 -.25 -8.475 25.275 -.25 -8.475 25.275 -.25 7.675
   [4,4,19.325,-.25,7.675,19.325,-.25,-8.475,25.275,-.25,-8.475,25.275,-.25,7.675],
-// 
 // 4 15 53.5 -.25 10.5 59 -.25 13 -59 -.25 13 30.5 -.25 10.5
   [4,15,53.5,-.25,10.5,59,-.25,13,-59,-.25,13,30.5,-.25,10.5],
 // 4 15 30.5 -.25 -10.5 -59 -.25 -13 59 -.25 -13 53.5 -.25 -10.5

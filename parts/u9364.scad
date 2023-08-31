@@ -3,6 +3,7 @@ use <../p/4-4cylo.scad>
 use <../p/4-4ndis.scad>
 use <../p/48/4-4cylo.scad>
 use <../p/48/4-4rin28.scad>
+use <../p/rect.scad>
 use <../p/rect1.scad>
 use <../p/rect2p.scad>
 use <s/u9364s01.scad>
@@ -10,7 +11,7 @@ function ldraw_lib__u9364() = [
 // 0 ~Electric Powered Up Medium Angular Motor Front Top
 // 0 Name: u9364.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2020-03
+// 0 !LDRAW_ORG Part UPDATE 2023-04
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -22,6 +23,8 @@ function ldraw_lib__u9364() = [
 // 0 !HISTORY 2020-06-28 [PTadmin] Official Update 2020-01
 // 0 !HISTORY 2020-12-27 [PTadmin] Update description
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
+// 0 !HISTORY 2021-08-30 [Philo] Adapted for variant
+// 0 !HISTORY 2023-08-25 [OrionP] Official Update 2023-04
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\u9364s01.dat
@@ -44,16 +47,16 @@ function ldraw_lib__u9364() = [
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -10 0 9 0 0 0 3 0 0 0 9 4-4cylo.dat
   [1,16,0,-10,0,9,0,0,0,3,0,0,0,9, ldraw_lib__4_4cylo()],
-// 1 16 0 -8 55 14 0 0 0 0 1 0 -1 0 rect2p.dat
-  [1,16,0,-8,55,14,0,0,0,0,1,0,-1,0, ldraw_lib__rect2p()],
+// 1 16 0 -8 55 14 0 0 0 0 1 0 -1 0 rect.dat
+  [1,16,0,-8,55,14,0,0,0,0,1,0,-1,0, ldraw_lib__rect()],
 // 1 16 0 -7 0 9 0 0 0 -1 0 0 0 9 4-4ndis.dat
   [1,16,0,-7,0,9,0,0,0,-1,0,0,0,9, ldraw_lib__4_4ndis()],
 // 4 16 9 -7 9 -9 -7 9 -12 -7 28 12 -7 28
   [4,16,9,-7,9,-9,-7,9,-12,-7,28,12,-7,28],
 // 4 16 14 -7 55 12 -7 28 -12 -7 28 -14 -7 55
   [4,16,14,-7,55,12,-7,28,-12,-7,28,-14,-7,55],
-// 3 16 0 -9 29 14 -9 55 -14 -9 55
-  [3,16,0,-9,29,14,-9,55,-14,-9,55],
+// 4 16 14 -9 55 -14 -9 55 0 -9 29 19 -9 50
+  [4,16,14,-9,55,-14,-9,55,0,-9,29,19,-9,50],
 // 1 16 0 19.5 -27 0 0 -27 11.5 0 0 0 -1 0 rect1.dat
   [1,16,0,19.5,-27,0,0,-27,11.5,0,0,0,-1,0, ldraw_lib__rect1()],
 // 1 16 0 1 -26.5 -12 0 0 0 0 -7 0 -1 0.5 rect2p.dat
@@ -72,6 +75,16 @@ function ldraw_lib__u9364() = [
   [5,24,0,-14.5,-29,0,-13.625,-29,1.0024,-13.4252,-28.9343,-1.0024,-13.4252,-28.9343],
 // 5 24 0 -15.5 -29 0 -14.5 -29 3.7845 -15.5 -28.7506 -3.7855 -15.5 -28.751
   [5,24,0,-15.5,-29,0,-14.5,-29,3.7845,-15.5,-28.7506,-3.7855,-15.5,-28.751],
+// 1 16 16.5 -8 52.5 2.5 -1 0 0 0 1 -2.5 0 0 rect2p.dat
+  [1,16,16.5,-8,52.5,2.5,-1,0,0,0,1,-2.5,0,0, ldraw_lib__rect2p()],
+// 3 16 14 -7 55 19 -7 50 12 -7 28
+  [3,16,14,-7,55,19,-7,50,12,-7,28],
+// 1 16 -16.5 -8 52.5 2.5 1 0 0 0 1 2.5 0 0 rect2p.dat
+  [1,16,-16.5,-8,52.5,2.5,1,0,0,0,1,2.5,0,0, ldraw_lib__rect2p()],
+// 3 16 -19 -9 50 0 -9 29 -14 -9 55
+  [3,16,-19,-9,50,0,-9,29,-14,-9,55],
+// 3 16 -19 -7 50 -14 -7 55 -12 -7 28
+  [3,16,-19,-7,50,-14,-7,55,-12,-7,28],
 ];
 module ldraw_lib__u9364(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
     makepoly(ldraw_lib__u9364(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
