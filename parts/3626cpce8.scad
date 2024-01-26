@@ -4,22 +4,24 @@ use <s/3626cs02.scad>
 use <../p/t04o6250.scad>
 use <../p/t08o6250.scad>
 function ldraw_lib__3626cpce8() = [
-// 0 Minifig Head Alien Female with Red Eyes and Dark Bluish Grey Lips and Wrinkles, Open Smile with Missing Tooth Pattern
+// 0 Minifig Head Female with Red Eyes and Dark Bluish Grey Lips and Wrinkles, Open Smile with Missing Tooth Pattern
 // 0 Name: 3626cpce8.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
-// 0 !LDRAW_ORG Part UPDATE 2019-02
+// 0 !LDRAW_ORG Part UPDATE 2023-06
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626cpb1409, Series 14, Zombie Cheerleader
+// 0 !KEYWORDS Bricklink 3626cpb1409, monsters, Series 14, set 71010
+// 0 !KEYWORDS Zombie Cheerleader
 // 
 // 0 !CMDLINE -c71
 // 
 // 0 !HISTORY 2019-09-09 [PTadmin] Official Update 2019-02
-// 
+// 0 !HISTORY 2023-11-07 [MagFors] Update description, added keywords
+// 0 !HISTORY 2023-11-19 [OrionP] Official Update 2023-06
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3626cs02.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626cs02()],
@@ -1127,6 +1129,7 @@ function ldraw_lib__3626cpce8() = [
 // 4 16 -1.58 19.8282 -11.2211 -1.88 19.98 -10.8775 0 20.6954 -9.9136 0 19.8282 -11.5352
   [4,16,-1.58,19.8282,-11.2211,-1.88,19.98,-10.8775,0,20.6954,-9.9136,0,19.8282,-11.5352],
 // 
+// 0 // CONDLINES
 // 0 // FACE Front Lines 3-8
 // 5 24 -12.0107 4 -4.9751 -12.0107 17 -4.9751 -9.1923 4 -9.1923 -13 4 0
   [5,24,-12.0107,4,-4.9751,-12.0107,17,-4.9751,-9.1923,4,-9.1923,-13,4,0],

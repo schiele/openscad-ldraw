@@ -6,7 +6,7 @@ function ldraw_lib__950a() = [
 // 0 Name: 950a.dat
 // 0 Author: Alex Taylor [anathema]
 // 0 !LDRAW_ORG Part UPDATE 2010-03
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],

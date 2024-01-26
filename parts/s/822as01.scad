@@ -1,6 +1,7 @@
 use <../../lib.scad>
 use <../../p/box2-5.scad>
 use <../../p/box5.scad>
+use <../../p/logo-lego-6.scad>
 use <../../p/rect.scad>
 use <../../p/rect2p.scad>
 use <../../p/rect3.scad>
@@ -8,7 +9,7 @@ function ldraw_lib__s__822as01() = [
 // 0 ~Garage Door Base without Front and Hinge Pins
 // 0 Name: s\822as01.dat
 // 0 Author: J.C. Tchang [tchang]
-// 0 !LDRAW_ORG Subpart UPDATE 2020-01
+// 0 !LDRAW_ORG Subpart UPDATE 2023-07
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -18,7 +19,8 @@ function ldraw_lib__s__822as01() = [
 // 0 !HISTORY 2011-05-14 [Steffen] restructured files 822.dat, 823.dat
 // 0 !HISTORY 2017-12-20 [MagFors] Restructured
 // 0 !HISTORY 2020-06-28 [PTadmin] Official Update 2020-01
-// 
+// 0 !HISTORY 2023-10-03 [Plastikean] Corrected logo
+// 0 !HISTORY 2023-12-31 [OrionP] Official Update 2023-07
 // 
 // 2 24 20.5 -21.5 52 2.5 -21.5 52
   [2,24,20.5,-21.5,52,2.5,-21.5,52],
@@ -153,9 +155,8 @@ function ldraw_lib__s__822as01() = [
   [0,"BFC","INVERTNEXT"],
 // 1 16 20.5 -2.5 32 0 -2 0 0 0 9 14 0 0 box5.dat
   [1,16,20.5,-2.5,32,0,-2,0,0,0,9,14,0,0, ldraw_lib__box5()],
-// 
-// 0 // There should be a logo here, but this one is not correct in shape
-// 0 // 1 16 18.5 41.5 0 0 -1 0 1 0 0 0 0 1.5 logo3.dat
+// 1 16 18.5 41.5 0 0 -.4 0 0 0 -.5 .4 0 0 logo-lego-6.dat
+  [1,16,18.5,41.5,0,0,-.4,0,0,0,-.5,.4,0,0, ldraw_lib__logo_lego_6()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 20.5 41.5 0 0 -2 0 0 0 9 14 0 0 box5.dat

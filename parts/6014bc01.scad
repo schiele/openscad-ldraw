@@ -6,7 +6,7 @@ function ldraw_lib__6014bc01() = [
 // 0 Name: 6014bc01.dat
 // 0 Author: Alex Taylor [anathema]
 // 0 !LDRAW_ORG Shortcut UPDATE 2023-04
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],

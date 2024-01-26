@@ -8,7 +8,7 @@ function ldraw_lib__2431pt2() = [
 // 0 Name: 2431pt2.dat
 // 0 Author: Thomas Burger [grapeape]
 // 0 !LDRAW_ORG Part UPDATE 2010-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],

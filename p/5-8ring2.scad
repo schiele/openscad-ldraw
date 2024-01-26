@@ -4,7 +4,7 @@ function ldraw_lib__5_8ring2() = [
 // 0 Name: 5-8ring2.dat
 // 0 Author: Alex Taylor [anathema]
 // 0 !LDRAW_ORG Primitive UPDATE 2010-02
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],

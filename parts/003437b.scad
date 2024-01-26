@@ -5,7 +5,7 @@ function ldraw_lib__003437b() = [
 // 0 Name: 003437b.dat
 // 0 Author: Alex Taylor [anathema]
 // 0 !LDRAW_ORG Part Alias UPDATE 2020-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],

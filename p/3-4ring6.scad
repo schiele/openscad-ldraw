@@ -4,7 +4,7 @@ function ldraw_lib__3_4ring6() = [
 // 0 Name: 3-4ring6.dat
 // 0 Author: Alex Taylor [anathema]
 // 0 !LDRAW_ORG Primitive UPDATE 2011-02
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],

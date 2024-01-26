@@ -6,7 +6,7 @@ function ldraw_lib__606p33() = [
 // 0 Name: 606p33.dat
 // 0 Author: Alex Taylor [anathema]
 // 0 !LDRAW_ORG Part UPDATE 2010-02
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],

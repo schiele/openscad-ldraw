@@ -13,7 +13,7 @@ function ldraw_lib__s__952as01() = [
 // 0 Name: s\952as01.dat
 // 0 Author: Alex Taylor [anathema]
 // 0 !LDRAW_ORG Subpart UPDATE 2010-02
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],

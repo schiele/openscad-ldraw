@@ -5,14 +5,15 @@ use <2842.scad>
 use <2843.scad>
 use <2844.scad>
 use <2845.scad>
-use <5306.scad>
+use <6625c01.scad>
 use <71122.scad>
+use <993.scad>
 use <u9202.scad>
 function ldraw_lib__2842c02() = [
-// 0 Technic Control Centre with Red/Grey Buttons (Complete)
+// 0 Technic Control Centre II with Red/Grey Buttons (Complete)
 // 0 Name: 2842c02.dat
 // 0 Author: Michael Heidemann [mikeheide]
-// 0 !LDRAW_ORG Shortcut UPDATE 2012-01
+// 0 !LDRAW_ORG Shortcut UPDATE 2023-06
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -20,8 +21,13 @@ function ldraw_lib__2842c02() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Electric
+// 0 !KEYWORDS set 8485, set 9752
+// 
+// 0 !CMDLINE -c0
 // 
 // 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01
+// 0 !HISTORY 2022-04-23 [MagFors] Updated contacts
+// 0 !HISTORY 2023-11-19 [OrionP] Official Update 2023-06
 // 
 // 
 // 1 7 0 120 -73 1 0 0 0 1 0 0 0 1 2845.dat
@@ -44,14 +50,21 @@ function ldraw_lib__2842c02() = [
   [1,7,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2840()],
 // 1 7 0 0 0 1 0 0 0 1 0 0 0 1 2841.dat
   [1,7,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2841()],
-// 1 14 0 0 20 0 0 1 0 1 0 -1 0 0 5306.dat
-  [1,14,0,0,20,0,0,1,0,1,0,-1,0,0, ldraw_lib__5306()],
-// 1 14 60 0 20 0 0 1 0 1 0 -1 0 0 5306.dat
-  [1,14,60,0,20,0,0,1,0,1,0,-1,0,0, ldraw_lib__5306()],
-// 1 4 -60 0 20 0 0 1 0 1 0 -1 0 0 5306.dat
-  [1,4,-60,0,20,0,0,1,0,1,0,-1,0,0, ldraw_lib__5306()],
 // 1 0 -180 11.249 3.614 1 0 0 0 0.89493 -0.4462 0 0.4462 0.89493 u9202.dat
   [1,0,-180,11.249,3.614,1,0,0,0,0.89493,-0.4462,0,0.4462,0.89493, ldraw_lib__u9202()],
+// 
+// 1 14 0 0 20 0 0 1 0 1 0 -1 0 0 6625c01.dat
+  [1,14,0,0,20,0,0,1,0,1,0,-1,0,0, ldraw_lib__6625c01()],
+// 1 256 0 4.5 3 0 0 1 1 0 0 0 -10 0 993.dat
+  [1,256,0,4.5,3,0,0,1,1,0,0,0,-10,0, ldraw_lib__993()],
+// 1 14 60 0 20 0 0 1 0 1 0 -1 0 0 6625c01.dat
+  [1,14,60,0,20,0,0,1,0,1,0,-1,0,0, ldraw_lib__6625c01()],
+// 1 256 60 4.5 3 0 0 1 1 0 0 0 -10 0 993.dat
+  [1,256,60,4.5,3,0,0,1,1,0,0,0,-10,0, ldraw_lib__993()],
+// 1 4 -60 0 20 0 0 1 0 1 0 -1 0 0 6625c01.dat
+  [1,4,-60,0,20,0,0,1,0,1,0,-1,0,0, ldraw_lib__6625c01()],
+// 1 256 -60 4.5 3 0 0 1 1 0 0 0 -10 0 993.dat
+  [1,256,-60,4.5,3,0,0,1,1,0,0,0,-10,0, ldraw_lib__993()],
 ];
 module ldraw_lib__2842c02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
     makepoly(ldraw_lib__2842c02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);

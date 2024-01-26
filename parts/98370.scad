@@ -5,10 +5,10 @@ use <../p/4-4ring2.scad>
 use <../p/4-8sphe.scad>
 use <s/98370s01.scad>
 function ldraw_lib__98370() = [
-// 0 Minifig Sword Longsword
+// 0 Minifig Sword Longsword with Thin Guard
 // 0 Name: 98370.dat
 // 0 Author: Christian Neumann [Wesley]
-// 0 !LDRAW_ORG Part UPDATE 2013-01
+// 0 !LDRAW_ORG Part UPDATE 2023-07
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -19,7 +19,8 @@ function ldraw_lib__98370() = [
 // 0 !KEYWORDS Weapon
 // 
 // 0 !HISTORY 2013-07-21 [PTadmin] Official Update 2013-01
-// 
+// 0 !HISTORY 2023-12-07 [OrionP] Update description
+// 0 !HISTORY 2023-12-31 [OrionP] Official Update 2023-07
 // 
 // 1 16 0 0 0 4 0 0 0 16 0 0 0 4 4-4cylo.dat
   [1,16,0,0,0,4,0,0,0,16,0,0,0,4, ldraw_lib__4_4cylo()],

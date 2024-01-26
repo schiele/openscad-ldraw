@@ -5,10 +5,10 @@ use <48/1-24cylo.scad>
 use <rect.scad>
 use <rect3.scad>
 function ldraw_lib__npeghol17() = [
-// 0 Technic Peg Hole Negative with Cut Corners
+// 0 ~Technic Peg Hole Negative with Cut Corners (Obsolete)
 // 0 Name: npeghol17.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Primitive UPDATE 2020-01
+// 0 !LDRAW_ORG Primitive UPDATE 2023-05
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -16,7 +16,8 @@ function ldraw_lib__npeghol17() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2020-06-28 [PTadmin] Official Update 2020-01
-// 
+// 0 !HISTORY 2023-07-29 [MagFors] Obsoleted, use npeghole.dat instead
+// 0 !HISTORY 2023-10-31 [OrionP] Official Update 2023-05
 // 
 // 1 16 0 0 -10 3.44415 0 -8.31492 0 1 0 8.31492 0 3.44415 1-8cylo.dat
   [1,16,0,0,-10,3.44415,0,-8.31492,0,1,0,8.31492,0,3.44415, ldraw_lib__1_8cylo()],

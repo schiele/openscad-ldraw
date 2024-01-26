@@ -3,10 +3,10 @@ use <../p/1-8cyli.scad>
 use <s/3626cs02.scad>
 use <../p/t04o6250.scad>
 function ldraw_lib__3626cp85() = [
-// 0 Minifig Head with Reddish Brown Eyebrows, Medium Nougat Freckles and Lips, Small Smirk / Left Eye Squinted 2-Sided Pattern
+// 0 Minifig Head Female with Reddish Brown Eyebrows, Medium Nougat Freckles and Lips, Small Smirk / Left Eye Squinted 2-Sided Pattern
 // 0 Name: 3626cp85.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2022-01
+// 0 !LDRAW_ORG Part UPDATE 2023-06
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -16,7 +16,8 @@ function ldraw_lib__3626cp85() = [
 // 0 !KEYWORDS Bricklink 3626cpb2145, Set 10278, Set 40345
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
-// 
+// 0 !HISTORY 2023-11-07 [MagFors] Update description
+// 0 !HISTORY 2023-11-19 [OrionP] Official Update 2023-06
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3626cs02.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626cs02()],

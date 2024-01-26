@@ -3,7 +3,7 @@ function ldraw_lib__logo_shell_s() = [
 // 0 Logo Shell Red "S"
 // 0 Name: logo-shell-s.dat
 // 0 Author: Willy Tschager [Holly-Wood]
-// 0 !LDRAW_ORG Primitive UPDATE 2022-01
+// 0 !LDRAW_ORG Primitive UPDATE 2023-07
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -11,10 +11,10 @@ function ldraw_lib__logo_shell_s() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
-// 
+// 0 !HISTORY 2023-11-13 [Holly-Wood] Fixed overlap
+// 0 !HISTORY 2023-12-31 [OrionP] Official Update 2023-07
 // 
 // 0 // Red
-// 
 // 4 4 4.634 0 4.69 4.691 0 4.2 12.05 0 4.2 12.026 0 5.284
   [4,4,4.634,0,4.69,4.691,0,4.2,12.05,0,4.2,12.026,0,5.284],
 // 4 4 4.513 0 5.369 4.634 0 4.69 12.026 0 5.284 11.949 0 6.15
@@ -301,8 +301,6 @@ function ldraw_lib__logo_shell_s() = [
   [4,16,3.812,0,-5.832,4.209,0,-5.377,2.668,0,-6.3,3.287,0,-6.177],
 // 3 16 12.35 0 1.8 12.334 0 -2.763 12.35 0 -3.4
   [3,16,12.35,0,1.8,12.334,0,-2.763,12.35,0,-3.4],
-// 3 16 12.35 0 9.5 12.334 0 -2.763 12.35 0 1.8
-  [3,16,12.35,0,9.5,12.334,0,-2.763,12.35,0,1.8],
 // 3 16 12.35 0 1.8 12.257 0 -2.117 12.334 0 -2.763
   [3,16,12.35,0,1.8,12.257,0,-2.117,12.334,0,-2.763],
 // 3 16 12.35 0 1.8 12.124 0 -1.42 12.257 0 -2.117
