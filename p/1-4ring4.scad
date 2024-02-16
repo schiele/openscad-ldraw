@@ -2,9 +2,9 @@ use <../lib.scad>
 function ldraw_lib__1_4ring4() = [
 // 0 Ring  4 x 0.25
 // 0 Name: 1-4ring4.dat
-// 0 Author: Bernd Broich [bbroich]
-// 0 !LDRAW_ORG Primitive UPDATE 2012-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 Author: Willy Tschager [Holly-Wood]
+// 0 !LDRAW_ORG Primitive UPDATE 2024-01
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
@@ -16,7 +16,8 @@ function ldraw_lib__1_4ring4() = [
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
 // 0 !HISTORY 2012-02-16 [Philo] Changed to CCW
 // 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01
-// 
+// 0 !HISTORY 2024-01-06 [Holly-Wood] Complete regeneration, original by bbroich
+// 0 !HISTORY 2024-01-29 [OrionP] Official Update 2024-01
 // 
 // 4 16 5 0 0 4.6195 0 1.9135 3.6956 0 1.5308 4 0 0
   [4,16,5,0,0,4.6195,0,1.9135,3.6956,0,1.5308,4,0,0],
@@ -26,6 +27,7 @@ function ldraw_lib__1_4ring4() = [
   [4,16,3.5355,0,3.5355,1.9135,0,4.6195,1.5308,0,3.6956,2.8284,0,2.8284],
 // 4 16 1.9135 0 4.6195 0 0 5 0 0 4 1.5308 0 3.6956
   [4,16,1.9135,0,4.6195,0,0,5,0,0,4,1.5308,0,3.6956],
+// 0 // Build by LDPartEditor (PrimGen 2.X)
 ];
 module ldraw_lib__1_4ring4(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
     makepoly(ldraw_lib__1_4ring4(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);

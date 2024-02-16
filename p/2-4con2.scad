@@ -2,16 +2,17 @@ use <../lib.scad>
 function ldraw_lib__2_4con2() = [
 // 0 Cone  2 x 0.5
 // 0 Name: 2-4con2.dat
-// 0 Author: Guy Vivan [guyvivan]
-// 0 !LDRAW_ORG Primitive UPDATE 2009-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 Author: Willy Tschager [Holly-Wood]
+// 0 !LDRAW_ORG Primitive UPDATE 2024-01
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2009-05-02 [PTadmin] Official Update 2009-01
-// 
+// 0 !HISTORY 2024-01-19 [Holly-Wood] Complete regeneration, original by guyvivan
+// 0 !HISTORY 2024-01-29 [OrionP] Official Update 2024-01
 // 
 // 4 16 2 1 0 1.8478 1 0.7654 2.7717 0 1.1481 3 0 0
   [4,16,2,1,0,1.8478,1,0.7654,2.7717,0,1.1481,3,0,0],
@@ -29,10 +30,9 @@ function ldraw_lib__2_4con2() = [
   [4,16,-1.4142,1,1.4142,-1.8478,1,0.7654,-2.7717,0,1.1481,-2.1213,0,2.1213],
 // 4 16 -1.8478 1 0.7654 -2 1 0 -3 0 0 -2.7717 0 1.1481
   [4,16,-1.8478,1,0.7654,-2,1,0,-3,0,0,-2.7717,0,1.1481],
-// 
-// 0 conditional lines
-// 5 24 2 1 0 3 0 0 1.8478 1 -0.7654 1.8478 1 0.7654
-  [5,24,2,1,0,3,0,0,1.8478,1,-0.7654,1.8478,1,0.7654],
+// 0 // conditional lines
+// 5 24 2 1 0 3 0 0 2 1 -0.8284 1.8478 1 0.7654
+  [5,24,2,1,0,3,0,0,2,1,-0.8284,1.8478,1,0.7654],
 // 5 24 1.8478 1 0.7654 2.7717 0 1.1481 2 1 0 1.4142 1 1.4142
   [5,24,1.8478,1,0.7654,2.7717,0,1.1481,2,1,0,1.4142,1,1.4142],
 // 5 24 1.4142 1 1.4142 2.1213 0 2.1213 1.8478 1 0.7654 0.7654 1 1.8478
@@ -47,11 +47,9 @@ function ldraw_lib__2_4con2() = [
   [5,24,-1.4142,1,1.4142,-2.1213,0,2.1213,-0.7654,1,1.8478,-1.8478,1,0.7654],
 // 5 24 -1.8478 1 0.7654 -2.7717 0 1.1481 -1.4142 1 1.4142 -2 1 0
   [5,24,-1.8478,1,0.7654,-2.7717,0,1.1481,-1.4142,1,1.4142,-2,1,0],
-// 5 24 -2 1 0 -3 0 0 -1.8478 1 0.7654 -1.8478 1 -0.7654
-  [5,24,-2,1,0,-3,0,0,-1.8478,1,0.7654,-1.8478,1,-0.7654],
-// 
-// 0 end of file
-// 
+// 5 24 -2 1 0 -3 0 0 -1.8478 1 0.7654 -2 1 -0.8284
+  [5,24,-2,1,0,-3,0,0,-1.8478,1,0.7654,-2,1,-0.8284],
+// 0 // Build by LDPartEditor (PrimGen 2.X)
 ];
 module ldraw_lib__2_4con2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
     makepoly(ldraw_lib__2_4con2(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);

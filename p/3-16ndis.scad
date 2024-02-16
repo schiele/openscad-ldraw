@@ -2,16 +2,17 @@ use <../lib.scad>
 function ldraw_lib__3_16ndis() = [
 // 0 Disc Negative 0.1875
 // 0 Name: 3-16ndis.dat
-// 0 Author: Guy Vivan [guyvivan]
-// 0 !LDRAW_ORG Primitive UPDATE 2009-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 Author: Magnus Forsberg [MagFors]
+// 0 !LDRAW_ORG Primitive UPDATE 2024-01
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2009-05-02 [PTadmin] Official Update 2009-01
-// 
+// 0 !HISTORY 2024-01-03 [MagFors] Complete regeneration, original by guyvivan
+// 0 !HISTORY 2024-01-29 [OrionP] Official Update 2024-01
 // 
 // 3 16 1 0 1 0.9239 0 0.3827 1 0 0
   [3,16,1,0,1,0.9239,0,0.3827,1,0,0],
@@ -19,9 +20,7 @@ function ldraw_lib__3_16ndis() = [
   [3,16,1,0,1,0.7071,0,0.7071,0.9239,0,0.3827],
 // 3 16 1 0 1 0.3827 0 0.9239 0.7071 0 0.7071
   [3,16,1,0,1,0.3827,0,0.9239,0.7071,0,0.7071],
-// 
-// 0 end of file
-// 
+// 0 // Build by LDPartEditor (PrimGen 2.X)
 ];
 module ldraw_lib__3_16ndis(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
     makepoly(ldraw_lib__3_16ndis(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);

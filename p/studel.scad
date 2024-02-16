@@ -1,16 +1,18 @@
 use <../lib.scad>
+use <1-4cylc.scad>
 use <1-4cyli.scad>
 use <1-4edge.scad>
-use <3-4cyli.scad>
-use <4-4cyli.scad>
-use <4-4disc.scad>
-use <4-4edge.scad>
+use <3-4cylc.scad>
 function ldraw_lib__studel() = [
 // 0 Stud with Electric Contact
 // 0 Name: studel.dat
-// 0 Author: Remco Braak [remco1974]
-// 0 !LDRAW_ORG Primitive UPDATE 2013-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 Author: Willy Tschager [Holly-Wood]
+// 0 !LDRAW_ORG Primitive UPDATE 2024-01
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+// 
+// 0 !HELP The logo is always oriented towards the contact face. Two different sizes.
+// 0 !HELP 1 16 0 -4 0 0 0 -.6 0 1 0 .6 0 0 logo.dat
+// 0 !HELP 1 16 0 -4 0 0 0 -1 0 1 0 1 0 0 logo.dat
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
@@ -27,26 +29,27 @@ function ldraw_lib__studel() = [
 // 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01
 // 0 !HISTORY 2013-04-01 [MagFors] Removed t-junction
 // 0 !HISTORY 2013-07-21 [PTadmin] Official Update 2013-01
+// 0 !HISTORY 2024-01-19 [Holly-Wood] Complete re-write, original by remco1974
+// 0 !HISTORY 2024-01-29 [OrionP] Official Update 2024-01
 // 
-// 
-// 1 16 0 0 0 6 0 0 0 1 0 0 0 6 4-4edge.dat
-  [1,16,0,0,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4edge()],
-// 1 16 0 -4 0 6 0 0 0 1 0 0 0 6 4-4edge.dat
-  [1,16,0,-4,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4edge()],
-// 1 16 0 0 0 0 0 6 0 -3 0 -6 0 0 3-4cyli.dat
-  [1,16,0,0,0,0,0,6,0,-3,0,-6,0,0, ldraw_lib__3_4cyli()],
-// 1 16 0 -3 0 0 0 6 0 -1 0 -6 0 0 4-4cyli.dat
-  [1,16,0,-3,0,0,0,6,0,-1,0,-6,0,0, ldraw_lib__4_4cyli()],
-// 1 494 0 0 0 -6 0 0 0 -3 0 0 0 -6 1-4cyli.dat
-  [1,494,0,0,0,-6,0,0,0,-3,0,0,0,-6, ldraw_lib__1_4cyli()],
-// 1 16 0 -3 0 -6 0 0 0 1 0 0 0 -6 1-4edge.dat
-  [1,16,0,-3,0,-6,0,0,0,1,0,0,0,-6, ldraw_lib__1_4edge()],
+// 0 // Edges
+// 1 16 0 0 0 -6 0 0 0 1 0 0 0 -6 1-4edge.dat
+  [1,16,0,0,0,-6,0,0,0,1,0,0,0,-6, ldraw_lib__1_4edge()],
 // 2 24 -6 0 0 -6 -3 0
   [2,24,-6,0,0,-6,-3,0],
 // 2 24 0 0 -6 0 -3 -6
   [2,24,0,0,-6,0,-3,-6],
-// 1 16 0 -4 0 6 0 0 0 1 0 0 0 6 4-4disc.dat
-  [1,16,0,-4,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4disc()],
+// 
+// 0 // Body
+// 1 16 0 -4 0 0 0 6 0 4 0 -6 0 0 3-4cylc.dat
+  [1,16,0,-4,0,0,0,6,0,4,0,-6,0,0, ldraw_lib__3_4cylc()],
+// 1 16 0 -4 0 -6 0 0 0 1 0 0 0 -6 1-4cylc.dat
+  [1,16,0,-4,0,-6,0,0,0,1,0,0,0,-6, ldraw_lib__1_4cylc()],
+// 
+// 0 // Electrical contact
+// 1 494 0 0 0 -6 0 0 0 -3 0 0 0 -6 1-4cyli.dat
+  [1,494,0,0,0,-6,0,0,0,-3,0,0,0,-6, ldraw_lib__1_4cyli()],
+// 
 ];
 module ldraw_lib__studel(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
     makepoly(ldraw_lib__studel(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);

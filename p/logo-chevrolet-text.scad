@@ -1,9 +1,9 @@
 use <../lib.scad>
 function ldraw_lib__logo_chevrolet_text() = [
-// 0 ~Logo Chevrolet Text
+// 0 Logo Chevrolet Text
 // 0 Name: logo-chevrolet-text.dat
 // 0 Author: Massimo Maso [Sirio]
-// 0 !LDRAW_ORG Primitive UPDATE 2023-05
+// 0 !LDRAW_ORG Primitive UPDATE 2024-01
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 !HELP Exact dimensions X = 58; Z = 5.25
@@ -13,7 +13,8 @@ function ldraw_lib__logo_chevrolet_text() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2023-10-31 [OrionP] Official Update 2023-05
-// 
+// 0 !HISTORY 2024-01-25 [MagFors] Update description
+// 0 !HISTORY 2024-01-29 [OrionP] Official Update 2024-01
 // 
 // 0 // Letter "C"
 // 4 16 -27.9 0 2.625 -28.321 0 2.5413 -27.1265 0 1.7348 -27.05 0 1.75

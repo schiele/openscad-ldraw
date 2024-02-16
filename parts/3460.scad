@@ -1,12 +1,10 @@
 use <../lib.scad>
-use <../p/box5.scad>
-use <../p/stud.scad>
-use <../p/stud3.scad>
+use <s/3460s01.scad>
 function ldraw_lib__3460() = [
 // 0 Plate  1 x  8
 // 0 Name: 3460.dat
 // 0 Author: James Jessiman
-// 0 !LDRAW_ORG Part UPDATE 2004-04
+// 0 !LDRAW_ORG Part UPDATE 2024-01
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -17,54 +15,14 @@ function ldraw_lib__3460() = [
 // 0 !HISTORY 2004-11-06 [PTadmin] Official Update 2004-04
 // 0 !HISTORY 2007-06-25 [PTadmin] Header formatted for Contributor Agreement
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
+// 0 !HISTORY 2023-03-28 [Sirio] Introduced use of subpart
+// 0 !HISTORY 2024-01-29 [OrionP] Official Update 2024-01
 // 
 // 
-// 1 16 60 4 0 1 0 0 0 -1 0 0 0 1 stud3.dat
-  [1,16,60,4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud3()],
-// 1 16 40 4 0 1 0 0 0 -1 0 0 0 1 stud3.dat
-  [1,16,40,4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud3()],
-// 1 16 20 4 0 1 0 0 0 -1 0 0 0 1 stud3.dat
-  [1,16,20,4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud3()],
-// 1 16 0 4 0 1 0 0 0 -1 0 0 0 1 stud3.dat
-  [1,16,0,4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud3()],
-// 1 16 -20 4 0 1 0 0 0 -1 0 0 0 1 stud3.dat
-  [1,16,-20,4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud3()],
-// 1 16 -40 4 0 1 0 0 0 -1 0 0 0 1 stud3.dat
-  [1,16,-40,4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud3()],
-// 1 16 -60 4 0 1 0 0 0 -1 0 0 0 1 stud3.dat
-  [1,16,-60,4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud3()],
-// 0 BFC INVERTNEXT
-  [0,"BFC","INVERTNEXT"],
-// 1 16 0 8 0 76 0 0 0 -4 0 0 0 6 box5.dat
-  [1,16,0,8,0,76,0,0,0,-4,0,0,0,6, ldraw_lib__box5()],
-// 4 16 80 8 10 76 8 6 -76 8 6 -80 8 10
-  [4,16,80,8,10,76,8,6,-76,8,6,-80,8,10],
-// 4 16 -80 8 10 -76 8 6 -76 8 -6 -80 8 -10
-  [4,16,-80,8,10,-76,8,6,-76,8,-6,-80,8,-10],
-// 4 16 -80 8 -10 -76 8 -6 76 8 -6 80 8 -10
-  [4,16,-80,8,-10,-76,8,-6,76,8,-6,80,8,-10],
-// 4 16 80 8 -10 76 8 -6 76 8 6 80 8 10
-  [4,16,80,8,-10,76,8,-6,76,8,6,80,8,10],
-// 1 16 0 8 0 80 0 0 0 -8 0 0 0 10 box5.dat
-  [1,16,0,8,0,80,0,0,0,-8,0,0,0,10, ldraw_lib__box5()],
-// 1 16 70 0 0 1 0 0 0 1 0 0 0 1 stud.dat
-  [1,16,70,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud()],
-// 1 16 50 0 0 1 0 0 0 1 0 0 0 1 stud.dat
-  [1,16,50,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud()],
-// 1 16 30 0 0 1 0 0 0 1 0 0 0 1 stud.dat
-  [1,16,30,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud()],
-// 1 16 10 0 0 1 0 0 0 1 0 0 0 1 stud.dat
-  [1,16,10,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud()],
-// 1 16 -10 0 0 1 0 0 0 1 0 0 0 1 stud.dat
-  [1,16,-10,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud()],
-// 1 16 -30 0 0 1 0 0 0 1 0 0 0 1 stud.dat
-  [1,16,-30,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud()],
-// 1 16 -50 0 0 1 0 0 0 1 0 0 0 1 stud.dat
-  [1,16,-50,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud()],
-// 1 16 -70 0 0 1 0 0 0 1 0 0 0 1 stud.dat
-  [1,16,-70,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud()],
-// 0
-// 
+// 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3460s01.dat
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3460s01()],
+// 4 16 -80 0 -10 -80 8 -10 80 8 -10 80 0 -10
+  [4,16,-80,0,-10,-80,8,-10,80,8,-10,80,0,-10],
 ];
 module ldraw_lib__3460(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
     makepoly(ldraw_lib__3460(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);

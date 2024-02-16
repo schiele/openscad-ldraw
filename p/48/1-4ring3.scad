@@ -2,9 +2,9 @@ use <../../lib.scad>
 function ldraw_lib__48__1_4ring3() = [
 // 0 Hi-Res Ring  3 x 0.25
 // 0 Name: 48\1-4ring3.dat
-// 0 Author: Bernd Broich [bbroich]
-// 0 !LDRAW_ORG 48_Primitive UPDATE 2012-02
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 Author: Willy Tschager [Holly-Wood]
+// 0 !LDRAW_ORG 48_Primitive UPDATE 2024-01
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
@@ -16,7 +16,8 @@ function ldraw_lib__48__1_4ring3() = [
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
 // 0 !HISTORY 2012-02-27 [Philo] Changed to CCW
 // 0 !HISTORY 2012-08-09 [PTadmin] Official Update 2012-02
-// 
+// 0 !HISTORY 2024-01-06 [Holly-Wood] Complete regeneration, original by bbroich
+// 0 !HISTORY 2024-01-29 [OrionP] Official Update 2024-01
 // 
 // 4 16 4 0 0 3.9656 0 0.522 2.9742 0 0.3915 3 0 0
   [4,16,4,0,0,3.9656,0,0.522,2.9742,0,0.3915,3,0,0],
@@ -42,6 +43,7 @@ function ldraw_lib__48__1_4ring3() = [
   [4,16,1.0352,0,3.8636,0.522,0,3.9656,0.3915,0,2.9742,0.7764,0,2.8977],
 // 4 16 0.522 0 3.9656 0 0 4 0 0 3 0.3915 0 2.9742
   [4,16,0.522,0,3.9656,0,0,4,0,0,3,0.3915,0,2.9742],
+// 0 // Build by LDPartEditor (PrimGen 2.X)
 ];
 module ldraw_lib__48__1_4ring3(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
     makepoly(ldraw_lib__48__1_4ring3(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);

@@ -2,16 +2,17 @@ use <../lib.scad>
 function ldraw_lib__11_16edge() = [
 // 0 Circle 0.6875
 // 0 Name: 11-16edge.dat
-// 0 Author: Kevin Roach [KROACH]
-// 0 !LDRAW_ORG Primitive UPDATE 2015-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 Author: Willy Tschager [Holly-Wood]
+// 0 !LDRAW_ORG Primitive UPDATE 2024-01
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2015-10-11 [PTadmin] Official Update 2015-01
-// 
+// 0 !HISTORY 2024-01-25 [Holly-Wood] Complete regeneration, original by KROACH
+// 0 !HISTORY 2024-01-29 [OrionP] Official Update 2024-01
 // 
 // 2 24 1 0 0 0.9239 0 0.3827
   [2,24,1,0,0,0.9239,0,0.3827],
@@ -35,7 +36,7 @@ function ldraw_lib__11_16edge() = [
   [2,24,-0.9239,0,-0.3827,-0.7071,0,-0.7071],
 // 2 24 -0.7071 0 -0.7071 -0.3827 0 -0.9239
   [2,24,-0.7071,0,-0.7071,-0.3827,0,-0.9239],
-// 0 // Build by Primitive Generator 2
+// 0 // Build by LDPartEditor (PrimGen 2.X)
 ];
 module ldraw_lib__11_16edge(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
     makepoly(ldraw_lib__11_16edge(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);

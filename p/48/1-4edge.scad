@@ -2,9 +2,9 @@ use <../../lib.scad>
 function ldraw_lib__48__1_4edge() = [
 // 0 Hi-Res Circle 0.25
 // 0 Name: 48\1-4edge.dat
-// 0 Author: Manfred Moolhuysen
-// 0 !LDRAW_ORG 48_Primitive UPDATE 2010-02
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 Author: Magnus Forsberg [MagFors]
+// 0 !LDRAW_ORG 48_Primitive UPDATE 2024-01
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
@@ -16,7 +16,8 @@ function ldraw_lib__48__1_4edge() = [
 // 0 !HISTORY 2010-03-17 [MagFors] Updated description
 // 0 !HISTORY 2010-05-21 [mikeheide] BFC'ed and compacted numbers (saved 10% filesize)
 // 0 !HISTORY 2010-07-05 [PTadmin] Official Update 2010-02
-// 
+// 0 !HISTORY 2024-01-02 [MagFors] Complete regeneration, original by Manfred Moolhuysen
+// 0 !HISTORY 2024-01-29 [OrionP] Official Update 2024-01
 // 
 // 2 24 1 0 0 0.9914 0 0.1305
   [2,24,1,0,0,0.9914,0,0.1305],
@@ -42,7 +43,7 @@ function ldraw_lib__48__1_4edge() = [
   [2,24,0.2588,0,0.9659,0.1305,0,0.9914],
 // 2 24 0.1305 0 0.9914 0 0 1
   [2,24,0.1305,0,0.9914,0,0,1],
-// 0 //
+// 0 // Build by LDPartEditor (PrimGen 2.X)
 ];
 module ldraw_lib__48__1_4edge(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
     makepoly(ldraw_lib__48__1_4edge(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
