@@ -1,0 +1,46 @@
+name: Build Models
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+  release:
+    types: [created]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Install OpenSCAD
+      run: sudo apt-get install -y openscad
+    - uses: actions/checkout@v4
+    - name: Cache STL Files
+      id: cache-stl
+      uses: actions/cache@v4
+      with:
+        path: cache
+        key: stlcache-${{ runner.os }}-${{ github.run_id }}
+        restore-keys: |
+          stlcache-${{ runner.os }}
+    - name: read cache
+      run: .github/workflows/getcache
+    - name: build
+      run: make -j $(nproc)
+    - name: create cache
+      run: .github/workflows/mkcache
+    - name: Publish STL files
+      uses: actions/upload-artifact@v4
+      with:
+        name: stl-files
+        path: stl
+    - name: Zip STL files
+      if: github.event_name == 'release'
+      run: |
+        zip -r stl-files.zip stl
+    - name: Upload ZIP Artifact to Release
+      if: github.event_name == 'release'
+      run: |
+        upload_url="${{ github.event.release.upload_url }}"
+        upload_url="${upload_url/\{?name,label\}/?name=stl-files.zip}"
+        curl -s -X POST -H "Authorization: Bearer ${{ secrets.MY_SECRET }}" -H "Content-Type: application/octet-stream" --data-binary "@stl-files.zip" "$upload_url"

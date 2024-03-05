@@ -1,0 +1,13 @@
+#!/bin/bash
+mkdir -p cache
+for f in $(ls dep | sed -e 's,\.dep$,,'); do
+	cp stl/$f.stl cache/
+	sha1sum $(
+		cat dep/$f.dep |
+		tr '\n' '\r' |
+		sed -e 's/\\\r//g' |
+		tr '\r' '\n' |
+		sed -e 's/.*://' |
+		sed -e "s|$PWD/||g") > cache/$f.stl.sha1sum
+done
+
