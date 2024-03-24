@@ -2,11 +2,7 @@ name: Build Models
 
 on:
   push:
-    branches: [ "main" ]
   pull_request:
-    branches: [ "main" ]
-  release:
-    types: [created]
 
 jobs:
   build:
@@ -34,14 +30,20 @@ jobs:
       with:
         name: stl-files
         path: stl
+    - name: Extract Tag Name
+      if: startsWith(github.ref, 'refs/tags/v')
+      id: tagname
+      run: echo "tagname=${GITHUB_REF#refs/tags/v}" >> $GITHUB_OUTPUT
+      shell: bash
     - name: Zip STL files
-      if: github.event_name == 'release'
+      if: startsWith(github.ref, 'refs/tags/v')
       run: |
-        mv stl stl-LDraw-${{ github.event.release.tag_name }}
-        zip -r stl-LDraw-${{ github.event.release.tag_name }}.zip stl-LDraw-${{ github.event.release.tag_name }}
-    - name: Upload ZIP Artifact to Release
-      if: github.event_name == 'release'
-      run: |
-        upload_url="${{ github.event.release.upload_url }}"
-        upload_url="${upload_url/\{?name,label\}/?name=stl-LDraw-${{ github.event.release.tag_name }}.zip}"
-        curl -s -X POST -H "Authorization: Bearer ${{ secrets.MY_SECRET }}" -H "Content-Type: application/octet-stream" --data-binary "@stl-LDraw-${{ github.event.release.tag_name }}.zip" "$upload_url"
+        mv stl stl-LDraw-${{ steps.tagname.outputs.tagname }}
+        zip -r stl-LDraw-${{ steps.tagname.outputs.tagname }}.zip stl-LDraw-${{ steps.tagname.outputs.tagname }}
+    - name: release
+      if: startsWith(github.ref, 'refs/tags/v')
+      uses: softprops/action-gh-release@v2
+      with:
+        files: |
+          stl-LDraw-${{ steps.tagname.outputs.tagname }}.zip
+        token: ${{ secrets.MY_SECRET }}
