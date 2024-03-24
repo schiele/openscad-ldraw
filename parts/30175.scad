@@ -7,7 +7,7 @@ use <../p/1-4cyls2.scad>
 use <../p/1-4disc.scad>
 use <../p/1-4edge.scad>
 use <../p/1-4ndis.scad>
-use <../p/1-4rin10.scad>
+use <../p/1-4ring10.scad>
 use <../p/1-4ring4.scad>
 use <../p/1-4ring5.scad>
 use <../p/1-4ring8.scad>
@@ -29,7 +29,7 @@ function ldraw_lib__30175() = [
 // 0 Minifig Helmet Samurai
 // 0 Name: 30175.dat
 // 0 Author: Paul Easter [pneaster]
-// 0 !LDRAW_ORG Part UPDATE 2012-03
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 !HELP ref point for horn
@@ -51,7 +51,8 @@ function ldraw_lib__30175() = [
 // 0 !HISTORY 2012-10-02 [Steffen] BFC rationalisation
 // 0 !HISTORY 2012-11-03 [MagFors] Added some missing cond-lines
 // 0 !HISTORY 2012-12-28 [PTadmin] Official Update 2012-03
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // inner stud
 // 1 16 0 -4 0 6 0 0 0 -1 0 0 0 6 4-4disc.dat
@@ -201,12 +202,12 @@ function ldraw_lib__30175() = [
 // 0 // "skirt" around bottom
 // 1 16 0 22 0 4 0 0 0 -1 0 0 0 4 1-4ring4.dat
   [1,16,0,22,0,4,0,0,0,-1,0,0,0,4, ldraw_lib__1_4ring4()],
-// 1 16 0 22 0 2 0 0 0 -1 0 0 0 2 1-4rin10.dat
-  [1,16,0,22,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__1_4rin10()],
+// 1 16 0 22 0 2 0 0 0 -1 0 0 0 2 1-4ring10.dat
+  [1,16,0,22,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__1_4ring10()],
 // 1 16 0 12 0 1.1 0 0 0 -4 0 0 0 1.1 1-4con15.dat
   [1,16,0,12,0,1.1,0,0,0,-4,0,0,0,1.1, ldraw_lib__1_4con15()],
-// 1 16 0 12 0 1.6 0 0 0 -1 0 0 0 1.6 1-4rin10.dat
-  [1,16,0,12,0,1.6,0,0,0,-1,0,0,0,1.6, ldraw_lib__1_4rin10()],
+// 1 16 0 12 0 1.6 0 0 0 -1 0 0 0 1.6 1-4ring10.dat
+  [1,16,0,12,0,1.6,0,0,0,-1,0,0,0,1.6, ldraw_lib__1_4ring10()],
 // 1 16 0 17 0 3.375 0 0 0 -5 0 0 0 3.375 1-4con5.dat
   [1,16,0,17,0,3.375,0,0,0,-5,0,0,0,3.375, ldraw_lib__1_4con5()],
 // 1 16 0 17 0 2.25 0 0 0 -1 0 0 0 2.25 1-4ring8.dat
@@ -1027,12 +1028,12 @@ function ldraw_lib__30175() = [
 // 0 // "skirt" around bottom
 // 1 16 0 22 0 -4 0 0 0 -1 0 0 0 4 1-4ring4.dat
   [1,16,0,22,0,-4,0,0,0,-1,0,0,0,4, ldraw_lib__1_4ring4()],
-// 1 16 0 22 0 -2 0 0 0 -1 0 0 0 2 1-4rin10.dat
-  [1,16,0,22,0,-2,0,0,0,-1,0,0,0,2, ldraw_lib__1_4rin10()],
+// 1 16 0 22 0 -2 0 0 0 -1 0 0 0 2 1-4ring10.dat
+  [1,16,0,22,0,-2,0,0,0,-1,0,0,0,2, ldraw_lib__1_4ring10()],
 // 1 16 0 12 0 -1.1 0 0 0 -4 0 0 0 1.1 1-4con15.dat
   [1,16,0,12,0,-1.1,0,0,0,-4,0,0,0,1.1, ldraw_lib__1_4con15()],
-// 1 16 0 12 0 -1.6 0 0 0 -1 0 0 0 1.6 1-4rin10.dat
-  [1,16,0,12,0,-1.6,0,0,0,-1,0,0,0,1.6, ldraw_lib__1_4rin10()],
+// 1 16 0 12 0 -1.6 0 0 0 -1 0 0 0 1.6 1-4ring10.dat
+  [1,16,0,12,0,-1.6,0,0,0,-1,0,0,0,1.6, ldraw_lib__1_4ring10()],
 // 1 16 0 17 0 -3.375 0 0 0 -5 0 0 0 3.375 1-4con5.dat
   [1,16,0,17,0,-3.375,0,0,0,-5,0,0,0,3.375, ldraw_lib__1_4con5()],
 // 1 16 0 17 0 -2.25 0 0 0 -1 0 0 0 2.25 1-4ring8.dat

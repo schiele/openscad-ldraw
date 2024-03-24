@@ -3,14 +3,14 @@ use <../p/1-4disc.scad>
 use <../p/1-4ndis.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4ndis.scad>
-use <../p/4-4rin12.scad>
+use <../p/4-4ring12.scad>
 use <../p/4-4ring3.scad>
 use <../p/box5-12.scad>
 function ldraw_lib__4100418h() = [
 // 0 Sticker  1.9 x  1.9 with Video Screen
 // 0 Name: 4100418h.dat
 // 0 Author: J.C. Tchang [tchang]
-// 0 !LDRAW_ORG Part UPDATE 2013-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -20,7 +20,8 @@ function ldraw_lib__4100418h() = [
 // 0 !KEYWORDS Set 5571
 // 
 // 0 !HISTORY 2013-07-21 [PTadmin] Official Update 2013-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Original Blue screen is made with Blue/White points
 // 
@@ -37,8 +38,8 @@ function ldraw_lib__4100418h() = [
   [1,0,16,-0.25,-7,0,0,1,0,1,0,-1,0,0, ldraw_lib__1_4disc()],
 // 1 0 15.3 -0.25 -13.2 0.6 0 0 0 1 0 0 0 0.6 4-4ring3.dat
   [1,0,15.3,-0.25,-13.2,0.6,0,0,0,1,0,0,0,0.6, ldraw_lib__4_4ring3()],
-// 1 0 15.3 -0.25 -13.2 0.2 0 0 0 1 0 0 0 0.2 4-4rin12.dat
-  [1,0,15.3,-0.25,-13.2,0.2,0,0,0,1,0,0,0,0.2, ldraw_lib__4_4rin12()],
+// 1 0 15.3 -0.25 -13.2 0.2 0 0 0 1 0 0 0 0.2 4-4ring12.dat
+  [1,0,15.3,-0.25,-13.2,0.2,0,0,0,1,0,0,0,0.2, ldraw_lib__4_4ring12()],
 // 4 0 16 -0.25 17 -16 -0.25 17 -16 -0.25 16 16 -0.25 16
   [4,0,16,-0.25,17,-16,-0.25,17,-16,-0.25,16,16,-0.25,16],
 // 4 0 17 -0.25 -7 17 -0.25 16 16 -0.25 16 16 -0.25 -7

@@ -1,12 +1,12 @@
 use <../lib.scad>
 use <../p/48/4-4cylc3.scad>
-use <../p/48/4-4rin17.scad>
-use <../p/48/4-4rin18.scad>
+use <../p/48/4-4ring17.scad>
+use <../p/48/4-4ring18.scad>
 function ldraw_lib__4125165a() = [
 // 0 Sticker  1.9 x  1.9 Round Speedometer
 // 0 Name: 4125165a.dat
 // 0 Author: Johann Eisner [technicbasics]
-// 0 !LDRAW_ORG Part UPDATE 2017-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -16,14 +16,15 @@ function ldraw_lib__4125165a() = [
 // 0 !KEYWORDS Set 8448
 // 
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 0 0 19 0 -0.25 0 19 0 0 48\4-4cylc3.dat
   [1,16,0,0,0,0,0,19,0,-0.25,0,19,0,0, ldraw_lib__48__4_4cylc3()],
-// 1 0 0 -0.25 0 1 0 0 0 1 0 0 0 1 48\4-4rin18.dat
-  [1,0,0,-0.25,0,1,0,0,0,1,0,0,0,1, ldraw_lib__48__4_4rin18()],
-// 1 0 0 -0.25 0 1 0 0 0 1 0 0 0 1 48\4-4rin17.dat
-  [1,0,0,-0.25,0,1,0,0,0,1,0,0,0,1, ldraw_lib__48__4_4rin17()],
+// 1 0 0 -0.25 0 1 0 0 0 1 0 0 0 1 48\4-4ring18.dat
+  [1,0,0,-0.25,0,1,0,0,0,1,0,0,0,1, ldraw_lib__48__4_4ring18()],
+// 1 0 0 -0.25 0 1 0 0 0 1 0 0 0 1 48\4-4ring17.dat
+  [1,0,0,-0.25,0,1,0,0,0,1,0,0,0,1, ldraw_lib__48__4_4ring17()],
 // 4 71 5 -0.25 -12 5 -0.25 -9.5 -5 -0.25 -9.5 -5 -0.25 -12
   [4,71,5,-0.25,-12,5,-0.25,-9.5,-5,-0.25,-9.5,-5,-0.25,-12],
 // 4 0 5 -0.25 -9.5 8 -0.25 -9 -8 -0.25 -9 -5 -0.25 -9.5

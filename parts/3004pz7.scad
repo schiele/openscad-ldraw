@@ -1,5 +1,5 @@
 use <../lib.scad>
-use <../p/1-4rin14.scad>
+use <../p/1-4ring14.scad>
 use <../p/1-4ring3.scad>
 use <../p/2-4chrd.scad>
 use <../p/2-4ndis.scad>
@@ -11,18 +11,19 @@ function ldraw_lib__3004pz7() = [
 // 0 Brick  1 x  2 with Boombox Pattern
 // 0 Name: 3004pz7.dat
 // 0 Author: Vincent Messenet [Cheenzo]
-// 0 !LDRAW_ORG Part UPDATE 2019-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Back To The Future, Brickheadz, BrickLink 3004pb165, Doc Brown
+// 0 !KEYWORDS Back To The Future, BrickLink 3004pb165, Brickheadz, Doc Brown
 // 0 !KEYWORDS Ghettoblaster, Set 41611
 // 
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3004s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3004s01()],
@@ -34,12 +35,12 @@ function ldraw_lib__3004pz7() = [
 // 0 // Center
 // 1 0 0 4.25 -10 1.75 0 0 0 0 -1.75 0 1 0 2-4chrd.dat
   [1,0,0,4.25,-10,1.75,0,0,0,0,-1.75,0,1,0, ldraw_lib__2_4chrd()],
-// 1 15 0 4.25 -10 .125 0 0 0 0 -.125 0 1 0 1-4rin14.dat
-  [1,15,0,4.25,-10,.125,0,0,0,0,-.125,0,1,0, ldraw_lib__1_4rin14()],
+// 1 15 0 4.25 -10 .125 0 0 0 0 -.125 0 1 0 1-4ring14.dat
+  [1,15,0,4.25,-10,.125,0,0,0,0,-.125,0,1,0, ldraw_lib__1_4ring14()],
 // 1 15 0 4.25 -10 .625 0 0 0 0 -.625 0 1 0 1-4ring3.dat
   [1,15,0,4.25,-10,.625,0,0,0,0,-.625,0,1,0, ldraw_lib__1_4ring3()],
-// 1 4 0 4.25 -10 -.125 0 0 0 0 -.125 0 1 0 1-4rin14.dat
-  [1,4,0,4.25,-10,-.125,0,0,0,0,-.125,0,1,0, ldraw_lib__1_4rin14()],
+// 1 4 0 4.25 -10 -.125 0 0 0 0 -.125 0 1 0 1-4ring14.dat
+  [1,4,0,4.25,-10,-.125,0,0,0,0,-.125,0,1,0, ldraw_lib__1_4ring14()],
 // 1 4 0 4.25 -10 -.625 0 0 0 0 -.625 0 1 0 1-4ring3.dat
   [1,4,0,4.25,-10,-.625,0,0,0,0,-.625,0,1,0, ldraw_lib__1_4ring3()],
 // 1 0 0 4.25 -10 2.5 0 0 0 0 -2.5 0 1 0 2-4ndis.dat

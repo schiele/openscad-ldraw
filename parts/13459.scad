@@ -7,14 +7,14 @@ use <../p/4-4edge.scad>
 use <../p/4-4ring1.scad>
 use <../p/48/4-4cylc.scad>
 use <../p/48/4-4cylo.scad>
-use <../p/48/4-4rin16.scad>
+use <../p/48/4-4ring16.scad>
 use <../p/stud2.scad>
 use <../p/stud4a.scad>
 function ldraw_lib__13459() = [
 // 0 Signpost Ornamented Type 2
 // 0 Name: 13459.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2014-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -26,7 +26,8 @@ function ldraw_lib__13459() = [
 // 0 !HISTORY 2014-02-25 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2014-02-25 [Philo] File preparation for LDraw Parts Tracker
 // 0 !HISTORY 2014-06-21 [PTadmin] Official Update 2014-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // pole
 // 
@@ -59,14 +60,14 @@ function ldraw_lib__13459() = [
   [0,"BFC","INVERTNEXT"],
 // 1 16 54 33.6 -2.3 31 0 0 0 0 31 0 -0.7 0 48\4-4cylc.dat
   [1,16,54,33.6,-2.3,31,0,0,0,0,31,0,-0.7,0, ldraw_lib__48__4_4cylc()],
-// 1 16 54 33.6 -3 1.9375 0 0 0 0 1.9375 0 1 0 48\4-4rin16.dat
-  [1,16,54,33.6,-3,1.9375,0,0,0,0,1.9375,0,1,0, ldraw_lib__48__4_4rin16()],
+// 1 16 54 33.6 -3 1.9375 0 0 0 0 1.9375 0 1 0 48\4-4ring16.dat
+  [1,16,54,33.6,-3,1.9375,0,0,0,0,1.9375,0,1,0, ldraw_lib__48__4_4ring16()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 54 33.6 2.3 31 0 0 0 0 -31 0 0.7 0 48\4-4cylc.dat
   [1,16,54,33.6,2.3,31,0,0,0,0,-31,0,0.7,0, ldraw_lib__48__4_4cylc()],
-// 1 16 54 33.6 3 1.9375 0 0 0 0 -1.9375 0 -1 0 48\4-4rin16.dat
-  [1,16,54,33.6,3,1.9375,0,0,0,0,-1.9375,0,-1,0, ldraw_lib__48__4_4rin16()],
+// 1 16 54 33.6 3 1.9375 0 0 0 0 -1.9375 0 -1 0 48\4-4ring16.dat
+  [1,16,54,33.6,3,1.9375,0,0,0,0,-1.9375,0,-1,0, ldraw_lib__48__4_4ring16()],
 // 1 16 54 33.6 3 32.9375 0 0 0 0 32.9375 0 -6 0 48\4-4cylo.dat
   [1,16,54,33.6,3,32.9375,0,0,0,0,32.9375,0,-6,0, ldraw_lib__48__4_4cylo()],
 // 2 24 3.731 53.8439 1.3526 3.6956 53.8384 1.5308

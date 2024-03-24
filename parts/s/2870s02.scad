@@ -1,6 +1,6 @@
 use <../../lib.scad>
 use <../../p/3-8cylo.scad>
-use <../../p/3-8rin13.scad>
+use <../../p/3-8ring13.scad>
 use <../../p/4-4con1.scad>
 use <../../p/4-4cyli.scad>
 use <../../p/4-4cylo.scad>
@@ -13,7 +13,7 @@ function ldraw_lib__s__2870s02() = [
 // 0 ~Train Speed Regulator  9V - Dial Small Inside Holes
 // 0 Name: s\2870s02.dat
 // 0 Author: Max Martin Richter [MMR1988]
-// 0 !LDRAW_ORG Subpart UPDATE 2013-02
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -21,12 +21,13 @@ function ldraw_lib__s__2870s02() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2013-12-23 [PTadmin] Official Update 2013-02
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
-// 
-// 1 16 0 -2 0 0.191342 0 0.46194 0 1 0 -0.46194 0 0.191342 3-8rin13.dat
-  [1,16,0,-2,0,0.191342,0,0.46194,0,1,0,-0.46194,0,0.191342, ldraw_lib__3_8rin13()],
-// 1 16 0 -2 0 -0.191342 0 -0.46194 0 1 0 -0.46194 0 0.191342 3-8rin13.dat
-  [1,16,0,-2,0,-0.191342,0,-0.46194,0,1,0,-0.46194,0,0.191342, ldraw_lib__3_8rin13()],
+// 1 16 0 -2 0 0.191342 0 0.46194 0 1 0 -0.46194 0 0.191342 3-8ring13.dat
+  [1,16,0,-2,0,0.191342,0,0.46194,0,1,0,-0.46194,0,0.191342, ldraw_lib__3_8ring13()],
+// 1 16 0 -2 0 -0.191342 0 -0.46194 0 1 0 -0.46194 0 0.191342 3-8ring13.dat
+  [1,16,0,-2,0,-0.191342,0,-0.46194,0,1,0,-0.46194,0,0.191342, ldraw_lib__3_8ring13()],
 // 1 16 0 -2 0 1.75 0 0 0 1 0 0 0 1.75 4-4ring4.dat
   [1,16,0,-2,0,1.75,0,0,0,1,0,0,0,1.75, ldraw_lib__4_4ring4()],
 // 1 16 0 2 0 6.5 0 0 0 1 0 0 0 6.5 4-4disc.dat

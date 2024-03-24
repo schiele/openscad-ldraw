@@ -2,14 +2,14 @@ use <../../lib.scad>
 use <../../p/3-16chrd.scad>
 use <../../p/3-16cylo.scad>
 use <../../p/3-16ndis.scad>
-use <../../p/3-16rin2.scad>
-use <../../p/3-16rin4.scad>
+use <../../p/3-16ring2.scad>
+use <../../p/3-16ring4.scad>
 use <../../p/rect.scad>
 function ldraw_lib__s__46834s02() = [
 // 0 ~Technic Clutch with Axle Connector Inner Side Casing  1/4
 // 0 Name: s\46834s02.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Subpart UPDATE 2024-01
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -17,7 +17,8 @@ function ldraw_lib__s__46834s02() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2024-01-29 [OrionP] Official Update 2024-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
@@ -33,14 +34,14 @@ function ldraw_lib__s__46834s02() = [
   [1,16,0,0,-10,13,0,0,0,0,13,0,6,0, ldraw_lib__3_16cylo()],
 // 1 16 0 0 -10 13 0 0 0 0 13 0 1 0 3-16ndis.dat
   [1,16,0,0,-10,13,0,0,0,0,13,0,1,0, ldraw_lib__3_16ndis()],
-// 1 16 0 0 -4 2.6 0 0 0 0 2.6 0 1 0 3-16rin4.dat
-  [1,16,0,0,-4,2.6,0,0,0,0,2.6,0,1,0, ldraw_lib__3_16rin4()],
+// 1 16 0 0 -4 2.6 0 0 0 0 2.6 0 1 0 3-16ring4.dat
+  [1,16,0,0,-4,2.6,0,0,0,0,2.6,0,1,0, ldraw_lib__3_16ring4()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 -4 10.4 0 0 0 0 10.4 0 3 0 3-16cylo.dat
   [1,16,0,0,-4,10.4,0,0,0,0,10.4,0,3,0, ldraw_lib__3_16cylo()],
-// 1 16 0 0 -1 5.2 0 0 0 0 5.2 0 -1 0 3-16rin2.dat
-  [1,16,0,0,-1,5.2,0,0,0,0,5.2,0,-1,0, ldraw_lib__3_16rin2()],
+// 1 16 0 0 -1 5.2 0 0 0 0 5.2 0 -1 0 3-16ring2.dat
+  [1,16,0,0,-1,5.2,0,0,0,0,5.2,0,-1,0, ldraw_lib__3_16ring2()],
 // 1 16 0 0 -7 15.6 0 0 0 0 15.6 0 6 0 3-16cylo.dat
   [1,16,0,0,-7,15.6,0,0,0,0,15.6,0,6,0, ldraw_lib__3_16cylo()],
 // 4 16 6.18 4.404 -30 8.5 3.444 -30 5.543 2.296 -30 4.243 4.243 -30

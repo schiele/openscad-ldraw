@@ -1,11 +1,11 @@
 use <../lib.scad>
 use <../p/4-4cylo.scad>
 use <../p/4-4disc.scad>
-use <../p/4-4rin10.scad>
-use <../p/4-4rin11.scad>
-use <../p/4-4rin12.scad>
-use <../p/4-4rin13.scad>
-use <../p/4-4rin14.scad>
+use <../p/4-4ring10.scad>
+use <../p/4-4ring11.scad>
+use <../p/4-4ring12.scad>
+use <../p/4-4ring13.scad>
+use <../p/4-4ring14.scad>
 use <../p/48/1-24chrd.scad>
 use <../p/48/1-24cylo.scad>
 use <../p/48/4-4aring.scad>
@@ -17,7 +17,7 @@ function ldraw_lib__18588() = [
 // 0 Constraction Weapon Launcher Barrel
 // 0 Name: 18588.dat
 // 0 Author: Massimo Maso [Sirio]
-// 0 !LDRAW_ORG Part UPDATE 2023-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -29,7 +29,8 @@ function ldraw_lib__18588() = [
 // 0 !HISTORY 2016-03-18 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2017-12-16 [Sirio] File preparation for LDraw Parts Tracker
 // 0 !HISTORY 2023-04-17 [OrionP] Official Update 2023-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Subpart
 // 1 16 0 0 0 -1 0 0 0 -1 0 0 0 1 s\18588s01.dat
@@ -81,18 +82,18 @@ function ldraw_lib__18588() = [
   [1,16,0,0,5,25.7776,0,3.39368,-3.39368,0,25.7776,0,1,0, ldraw_lib__48__1_24chrd()],
 // 1 16 0 -20 -2.5 6 0 0 0 0 -6 0 -1 0 4-4disc.dat
   [1,16,0,-20,-2.5,6,0,0,0,0,-6,0,-1,0, ldraw_lib__4_4disc()],
-// 1 16 0 0 -10 1 0 0 0 0 -1 0 1 0 4-4rin10.dat
-  [1,16,0,0,-10,1,0,0,0,0,-1,0,1,0, ldraw_lib__4_4rin10()],
-// 1 16 0 0 -10 1 0 0 0 0 -1 0 1 0 4-4rin11.dat
-  [1,16,0,0,-10,1,0,0,0,0,-1,0,1,0, ldraw_lib__4_4rin11()],
-// 1 16 0 0 -10 1 0 0 0 0 -1 0 1 0 4-4rin12.dat
-  [1,16,0,0,-10,1,0,0,0,0,-1,0,1,0, ldraw_lib__4_4rin12()],
+// 1 16 0 0 -10 1 0 0 0 0 -1 0 1 0 4-4ring10.dat
+  [1,16,0,0,-10,1,0,0,0,0,-1,0,1,0, ldraw_lib__4_4ring10()],
+// 1 16 0 0 -10 1 0 0 0 0 -1 0 1 0 4-4ring11.dat
+  [1,16,0,0,-10,1,0,0,0,0,-1,0,1,0, ldraw_lib__4_4ring11()],
+// 1 16 0 0 -10 1 0 0 0 0 -1 0 1 0 4-4ring12.dat
+  [1,16,0,0,-10,1,0,0,0,0,-1,0,1,0, ldraw_lib__4_4ring12()],
 // 1 16 0 0 -10 13 0 0 0 0 -13 0 4.5 0 4-4cylo.dat
   [1,16,0,0,-10,13,0,0,0,0,-13,0,4.5,0, ldraw_lib__4_4cylo()],
-// 1 16 0 0 -5.5 1 0 0 0 0 -1 0 1 0 4-4rin13.dat
-  [1,16,0,0,-5.5,1,0,0,0,0,-1,0,1,0, ldraw_lib__4_4rin13()],
-// 1 16 0 0 -5.5 1 0 0 0 0 -1 0 1 0 4-4rin14.dat
-  [1,16,0,0,-5.5,1,0,0,0,0,-1,0,1,0, ldraw_lib__4_4rin14()],
+// 1 16 0 0 -5.5 1 0 0 0 0 -1 0 1 0 4-4ring13.dat
+  [1,16,0,0,-5.5,1,0,0,0,0,-1,0,1,0, ldraw_lib__4_4ring13()],
+// 1 16 0 0 -5.5 1 0 0 0 0 -1 0 1 0 4-4ring14.dat
+  [1,16,0,0,-5.5,1,0,0,0,0,-1,0,1,0, ldraw_lib__4_4ring14()],
 // 1 16 0 0 -5.5 15 0 0 0 0 -15 0 1 0 48\4-4aring.dat
   [1,16,0,0,-5.5,15,0,0,0,0,-15,0,1,0, ldraw_lib__48__4_4aring()],
 // 0 // Faces

@@ -6,7 +6,7 @@ use <../p/1-8ndis.scad>
 use <../p/2-4cylo.scad>
 use <../p/2-4ring4.scad>
 use <../p/3-16cylo.scad>
-use <../p/3-16rin4.scad>
+use <../p/3-16ring4.scad>
 use <../p/4-4cylo.scad>
 use <../p/rect2p.scad>
 use <s/12787s01.scad>
@@ -14,7 +14,7 @@ function ldraw_lib__u9466() = [
 // 0 ~Electric Powered Up Distance Sensor Frame
 // 0 Name: u9466.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2020-03
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -26,7 +26,8 @@ function ldraw_lib__u9466() = [
 // 0 !HISTORY 2019-12-27 [PTadmin] Official Update 2019-03
 // 0 !HISTORY 2020-12-27 [PTadmin] Update description
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
@@ -36,8 +37,8 @@ function ldraw_lib__u9466() = [
   [1,16,40,0,0,0,0,20,-20,0,0,0,4,0, ldraw_lib__2_4cylo()],
 // 1 16 40 0 0 0 0 4 -4 0 0 0 1 0 2-4ring4.dat
   [1,16,40,0,0,0,0,4,-4,0,0,0,1,0, ldraw_lib__2_4ring4()],
-// 1 16 40 0 0 0 0 -4 4 0 0 0 1 0 3-16rin4.dat
-  [1,16,40,0,0,0,0,-4,4,0,0,0,1,0, ldraw_lib__3_16rin4()],
+// 1 16 40 0 0 0 0 -4 4 0 0 0 1 0 3-16ring4.dat
+  [1,16,40,0,0,0,0,-4,4,0,0,0,1,0, ldraw_lib__3_16ring4()],
 // 1 16 40 0 0 0 0 -20 20 0 0 0 4 0 3-16cylo.dat
   [1,16,40,0,0,0,0,-20,20,0,0,0,4,0, ldraw_lib__3_16cylo()],
 // 0 BFC INVERTNEXT
@@ -72,8 +73,8 @@ function ldraw_lib__u9466() = [
   [4,16,21.522,7.654,4,21.3355,7.4645,4,22.8,6,4,25.2176,6.1232,4],
 // 1 16 40 0 4 0 0 4 -4 0 0 0 -1 0 2-4ring4.dat
   [1,16,40,0,4,0,0,4,-4,0,0,0,-1,0, ldraw_lib__2_4ring4()],
-// 1 16 40 0 4 0 0 -4 4 0 0 0 -1 0 3-16rin4.dat
-  [1,16,40,0,4,0,0,-4,4,0,0,0,-1,0, ldraw_lib__3_16rin4()],
+// 1 16 40 0 4 0 0 -4 4 0 0 0 -1 0 3-16ring4.dat
+  [1,16,40,0,4,0,0,-4,4,0,0,0,-1,0, ldraw_lib__3_16ring4()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -40 0 0 0 0 -16 16 0 0 0 4 0 4-4cylo.dat
@@ -82,8 +83,8 @@ function ldraw_lib__u9466() = [
   [1,16,-40,0,0,0,0,-20,-20,0,0,0,4,0, ldraw_lib__2_4cylo()],
 // 1 16 -40 0 0 0 0 -4 -4 0 0 0 1 0 2-4ring4.dat
   [1,16,-40,0,0,0,0,-4,-4,0,0,0,1,0, ldraw_lib__2_4ring4()],
-// 1 16 -40 0 0 0 0 4 4 0 0 0 1 0 3-16rin4.dat
-  [1,16,-40,0,0,0,0,4,4,0,0,0,1,0, ldraw_lib__3_16rin4()],
+// 1 16 -40 0 0 0 0 4 4 0 0 0 1 0 3-16ring4.dat
+  [1,16,-40,0,0,0,0,4,4,0,0,0,1,0, ldraw_lib__3_16ring4()],
 // 1 16 -40 0 0 0 0 20 20 0 0 0 4 0 3-16cylo.dat
   [1,16,-40,0,0,0,0,20,20,0,0,0,4,0, ldraw_lib__3_16cylo()],
 // 0 BFC INVERTNEXT
@@ -118,8 +119,8 @@ function ldraw_lib__u9466() = [
   [4,16,-22.8,6,4,-21.3355,7.4645,4,-21.522,7.654,4,-25.2176,6.1232,4],
 // 1 16 -40 0 4 0 0 -4 -4 0 0 0 -1 0 2-4ring4.dat
   [1,16,-40,0,4,0,0,-4,-4,0,0,0,-1,0, ldraw_lib__2_4ring4()],
-// 1 16 -40 0 4 0 0 4 4 0 0 0 -1 0 3-16rin4.dat
-  [1,16,-40,0,4,0,0,4,4,0,0,0,-1,0, ldraw_lib__3_16rin4()],
+// 1 16 -40 0 4 0 0 4 4 0 0 0 -1 0 3-16ring4.dat
+  [1,16,-40,0,4,0,0,4,4,0,0,0,-1,0, ldraw_lib__3_16ring4()],
 // 1 16 0 -20 2 40 0 0 0 1 0 0 0 2 rect2p.dat
   [1,16,0,-20,2,40,0,0,0,1,0,0,0,2, ldraw_lib__rect2p()],
 // 4 16 40 -20 4 24 -16 4 -24 -16 4 -40 -20 4

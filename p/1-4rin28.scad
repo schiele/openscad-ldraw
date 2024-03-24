@@ -1,10 +1,10 @@
 use <../lib.scad>
 function ldraw_lib__1_4rin28() = [
-// 0 Ring 28 x 0.25
+// 0 ~Ring 28 x 0.25 (Obsolete)
 // 0 Name: 1-4rin28.dat
-// 0 Author: Bernd Broich [bbroich]
-// 0 !LDRAW_ORG Primitive UPDATE 2012-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 Author: Willy Tschager [Holly-Wood]
+// 0 !LDRAW_ORG Primitive UPDATE 2024-02
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
@@ -15,7 +15,8 @@ function ldraw_lib__1_4rin28() = [
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
 // 0 !HISTORY 2012-02-16 [Philo] Changed to CCW
 // 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01
-// 
+// 0 !HISTORY 2024-02-09 [Holly-Wood] Complete regeneration, original by bbroich
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 4 16 29 0 0 26.7931 0 11.0983 25.8692 0 10.7156 28 0 0
   [4,16,29,0,0,26.7931,0,11.0983,25.8692,0,10.7156,28,0,0],
@@ -25,6 +26,7 @@ function ldraw_lib__1_4rin28() = [
   [4,16,20.5059,0,20.5059,11.0983,0,26.7931,10.7156,0,25.8692,19.7988,0,19.7988],
 // 4 16 11.0983 0 26.7931 0 0 29 0 0 28 10.7156 0 25.8692
   [4,16,11.0983,0,26.7931,0,0,29,0,0,28,10.7156,0,25.8692],
+// 0 // Build by LDPartEditor (PrimGen 2.X)
 ];
 module ldraw_lib__1_4rin28(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
     makepoly(ldraw_lib__1_4rin28(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);

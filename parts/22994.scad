@@ -3,12 +3,12 @@ use <../p/1-4chrd.scad>
 use <../p/1-4cylo.scad>
 use <../p/1-4ndis.scad>
 use <../p/3-16cylo.scad>
-use <../p/3-16rin9.scad>
+use <../p/3-16ring9.scad>
 function ldraw_lib__22994() = [
 // 0 ~Electric Power Functions 2.0 Hub Diffusing Glass
 // 0 Name: 22994.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2016-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -18,7 +18,8 @@ function ldraw_lib__22994() = [
 // 0 !KEYWORDS WeDo 2.0
 // 
 // 0 !HISTORY 2016-12-31 [PTadmin] Official Update 2016-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 11 20 -22 0 -22 0 -20 0 0 0 0 -18 3-16cylo.dat
   [1,16,11,20,-22,0,-22,0,-20,0,0,0,0,-18, ldraw_lib__3_16cylo()],
@@ -26,10 +27,10 @@ function ldraw_lib__22994() = [
   [0,"BFC","INVERTNEXT"],
 // 1 16 11 20 -22 0 -22 0 -18 0 0 0 0 -16.2 3-16cylo.dat
   [1,16,11,20,-22,0,-22,0,-18,0,0,0,0,-16.2, ldraw_lib__3_16cylo()],
-// 1 16 11 20 -22 0 -1 0 -2 0 0 0 0 -1.8 3-16rin9.dat
-  [1,16,11,20,-22,0,-1,0,-2,0,0,0,0,-1.8, ldraw_lib__3_16rin9()],
-// 1 16 -11 20 -22 0 1 0 -2 0 0 0 0 -1.8 3-16rin9.dat
-  [1,16,-11,20,-22,0,1,0,-2,0,0,0,0,-1.8, ldraw_lib__3_16rin9()],
+// 1 16 11 20 -22 0 -1 0 -2 0 0 0 0 -1.8 3-16ring9.dat
+  [1,16,11,20,-22,0,-1,0,-2,0,0,0,0,-1.8, ldraw_lib__3_16ring9()],
+// 1 16 -11 20 -22 0 1 0 -2 0 0 0 0 -1.8 3-16ring9.dat
+  [1,16,-11,20,-22,0,1,0,-2,0,0,0,0,-1.8, ldraw_lib__3_16ring9()],
 // 1 16 9 0 10 2 0 0 0 2 0 0 0 2 1-4cylo.dat
   [1,16,9,0,10,2,0,0,0,2,0,0,0,2, ldraw_lib__1_4cylo()],
 // 1 16 9 0 10 2 0 0 0 1 0 0 0 2 1-4chrd.dat

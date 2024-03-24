@@ -8,8 +8,8 @@ use <../../p/4-4ndis.scad>
 use <../../p/4-4ring1.scad>
 use <../../p/4-4ring3.scad>
 use <../../p/4-4ring4.scad>
-use <../../p/48/1-4rin39.scad>
-use <../../p/48/1-4rin51.scad>
+use <../../p/48/1-4ring39.scad>
+use <../../p/48/1-4ring51.scad>
 use <../../p/48/4-4aring.scad>
 use <../../p/48/4-4con16.scad>
 use <../../p/48/4-4con2.scad>
@@ -25,7 +25,7 @@ function ldraw_lib__s__3961s01() = [
 // 0 ~Dish  8 x  8 Inverted without Top Surface
 // 0 Name: s\3961s01.dat
 // 0 Author: Orion Pobursky [OrionP]
-// 0 !LDRAW_ORG Subpart UPDATE 2020-02
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -39,7 +39,8 @@ function ldraw_lib__s__3961s01() = [
 // 0 !HISTORY 2010-07-05 [PTadmin] Official Update 2010-02
 // 0 !HISTORY 2020-07-07 [ejboer] Moved studs to main file, added condlines, closed gaps, removed overlaps
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Uncomment for top surface
 // 0 // 1 16 0 3 0 20 0 0 0 -3 0 0 0 20 48\4-4con1.dat
@@ -132,22 +133,22 @@ function ldraw_lib__s__3961s01() = [
   [1,16,0,24,0,76.5,0,0,0,-4,0,0,0,76.5, ldraw_lib__48__4_4cyli()],
 // 1 16 0 24 0 80 0 0 0 -8 0 0 0 80 48\4-4cyli.dat
   [1,16,0,24,0,80,0,0,0,-8,0,0,0,80, ldraw_lib__48__4_4cyli()],
-// 1 16 0 24 0 1.5 0 0 0 -1 0 0 0 1.5 48\1-4rin51.dat
-  [1,16,0,24,0,1.5,0,0,0,-1,0,0,0,1.5, ldraw_lib__48__1_4rin51()],
-// 1 16 0 24 0 2 0 0 0 -1 0 0 0 2 48\1-4rin39.dat
-  [1,16,0,24,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__48__1_4rin39()],
-// 1 16 0 24 0 0 0 -1.5 0 -1 0 1.5 0 0 48\1-4rin51.dat
-  [1,16,0,24,0,0,0,-1.5,0,-1,0,1.5,0,0, ldraw_lib__48__1_4rin51()],
-// 1 16 0 24 0 0 0 -2 0 -1 0 2 0 0 48\1-4rin39.dat
-  [1,16,0,24,0,0,0,-2,0,-1,0,2,0,0, ldraw_lib__48__1_4rin39()],
-// 1 16 0 24 0 -1.5 0 0 0 -1 0 0 0 -1.5 48\1-4rin51.dat
-  [1,16,0,24,0,-1.5,0,0,0,-1,0,0,0,-1.5, ldraw_lib__48__1_4rin51()],
-// 1 16 0 24 0 -2 0 0 0 -1 0 0 0 -2 48\1-4rin39.dat
-  [1,16,0,24,0,-2,0,0,0,-1,0,0,0,-2, ldraw_lib__48__1_4rin39()],
-// 1 16 0 24 0 0 0 1.5 0 -1 0 -1.5 0 0 48\1-4rin51.dat
-  [1,16,0,24,0,0,0,1.5,0,-1,0,-1.5,0,0, ldraw_lib__48__1_4rin51()],
-// 1 16 0 24 0 0 0 2 0 -1 0 -2 0 0 48\1-4rin39.dat
-  [1,16,0,24,0,0,0,2,0,-1,0,-2,0,0, ldraw_lib__48__1_4rin39()],
+// 1 16 0 24 0 1.5 0 0 0 -1 0 0 0 1.5 48\1-4ring51.dat
+  [1,16,0,24,0,1.5,0,0,0,-1,0,0,0,1.5, ldraw_lib__48__1_4ring51()],
+// 1 16 0 24 0 2 0 0 0 -1 0 0 0 2 48\1-4ring39.dat
+  [1,16,0,24,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__48__1_4ring39()],
+// 1 16 0 24 0 0 0 -1.5 0 -1 0 1.5 0 0 48\1-4ring51.dat
+  [1,16,0,24,0,0,0,-1.5,0,-1,0,1.5,0,0, ldraw_lib__48__1_4ring51()],
+// 1 16 0 24 0 0 0 -2 0 -1 0 2 0 0 48\1-4ring39.dat
+  [1,16,0,24,0,0,0,-2,0,-1,0,2,0,0, ldraw_lib__48__1_4ring39()],
+// 1 16 0 24 0 -1.5 0 0 0 -1 0 0 0 -1.5 48\1-4ring51.dat
+  [1,16,0,24,0,-1.5,0,0,0,-1,0,0,0,-1.5, ldraw_lib__48__1_4ring51()],
+// 1 16 0 24 0 -2 0 0 0 -1 0 0 0 -2 48\1-4ring39.dat
+  [1,16,0,24,0,-2,0,0,0,-1,0,0,0,-2, ldraw_lib__48__1_4ring39()],
+// 1 16 0 24 0 0 0 1.5 0 -1 0 -1.5 0 0 48\1-4ring51.dat
+  [1,16,0,24,0,0,0,1.5,0,-1,0,-1.5,0,0, ldraw_lib__48__1_4ring51()],
+// 1 16 0 24 0 0 0 2 0 -1 0 -2 0 0 48\1-4ring39.dat
+  [1,16,0,24,0,0,0,2,0,-1,0,-2,0,0, ldraw_lib__48__1_4ring39()],
 // 1 16 0 4 0 23 0 0 0 4 0 0 0 23 48\4-4cyli.dat
   [1,16,0,4,0,23,0,0,0,4,0,0,0,23, ldraw_lib__48__4_4cyli()],
 // 0 BFC INVERTNEXT

@@ -1,11 +1,11 @@
 use <../lib.scad>
-use <../p/4-4rin19.scad>
+use <../p/4-4ring19.scad>
 use <s/469s01.scad>
 function ldraw_lib__30261p03() = [
 // 0 Roadsign Clip-on  2 x  2 Round with Arrow on Blue Pattern
 // 0 Name: 30261p03.dat
 // 0 Author: J.C. Tchang [tchang]
-// 0 !LDRAW_ORG Part UPDATE 2010-03
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -13,12 +13,13 @@ function ldraw_lib__30261p03() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2010-12-31 [PTadmin] Official Update 2010-03
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\469s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__469s01()],
-// 1 16 0 0 -9 1 0 0 0 0 1 0 1 0 4-4rin19.dat
-  [1,16,0,0,-9,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4rin19()],
+// 1 16 0 0 -9 1 0 0 0 0 1 0 1 0 4-4ring19.dat
+  [1,16,0,0,-9,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4ring19()],
 // 0 //
 // 4 16 -10.5359 -14.2128 -9 -14.2128 -10.5359 -9 2.82843 6.50538 -9 6.50538 2.82843 -9
   [4,16,-10.5359,-14.2128,-9,-14.2128,-10.5359,-9,2.82843,6.50538,-9,6.50538,2.82843,-9],

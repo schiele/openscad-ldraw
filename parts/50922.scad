@@ -29,8 +29,8 @@ use <../p/3-16cyli.scad>
 use <../p/3-16cylo.scad>
 use <../p/3-16edge.scad>
 use <../p/3-16ndis.scad>
-use <../p/3-16rin3.scad>
 use <../p/3-16ring24.scad>
+use <../p/3-16ring3.scad>
 use <../p/3-16tang.scad>
 use <../p/3-8chrd.scad>
 use <../p/3-8cylo.scad>
@@ -41,8 +41,8 @@ use <../p/4-4disc.scad>
 use <../p/4-4edge.scad>
 use <../p/4-4ndis.scad>
 use <../p/5-16cylo.scad>
-use <../p/5-16rin3.scad>
-use <../p/5-16rin5.scad>
+use <../p/5-16ring3.scad>
+use <../p/5-16ring5.scad>
 use <../p/5-8cylo.scad>
 use <../p/7-16cyli.scad>
 use <../p/7-16disc.scad>
@@ -66,19 +66,20 @@ function ldraw_lib__50922() = [
 // 0 Constraction Limb  5 x  6 with Ball Joint and 7 Pinholes
 // 0 Name: 50922.dat
 // 0 Author: Kevin Roach [KROACH]
-// 0 !LDRAW_ORG Part UPDATE 2022-04
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS bionicle, Hordika, Technic, Toa
+// 0 !KEYWORDS Hordika, Technic, Toa, bionicle
 // 
 // 0 !HISTORY 2016-01-01 [arezey] Fixed edges and rects
 // 0 !HISTORY 2021-03-31 [Sirio] Fixed sphere joint and corrected intermediate rotation of circular primitives
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 -60 -40 0 1 0 -1 0 0 0 0 1 connhole.dat
   [1,16,0,-60,-40,0,1,0,-1,0,0,0,0,1, ldraw_lib__connhole()],
@@ -564,14 +565,14 @@ function ldraw_lib__50922() = [
   [4,16,2,-27.4202,-52,2,-31.3978,-61.2031,2,-28.5,-61.2031,2,-25.259,-56.3526],
 // 3 16 2 -27.4202 -52 2 -31.3978 -52 2 -31.3978 -61.2031
   [3,16,2,-27.4202,-52,2,-31.3978,-52,2,-31.3978,-61.2031],
-// 1 16 -5 -26 -54 0 1 0 0 0 0.5 0.5 0 0 5-16rin5.dat
-  [1,16,-5,-26,-54,0,1,0,0,0,0.5,0.5,0,0, ldraw_lib__5_16rin5()],
-// 1 16 -5 -26 -54 0 1 0 0 0 1 1 0 0 5-16rin3.dat
-  [1,16,-5,-26,-54,0,1,0,0,0,1,1,0,0, ldraw_lib__5_16rin3()],
-// 1 16 5 -26 -54 0 -1 0 0 0 0.5 0.5 0 0 5-16rin5.dat
-  [1,16,5,-26,-54,0,-1,0,0,0,0.5,0.5,0,0, ldraw_lib__5_16rin5()],
-// 1 16 5 -26 -54 0 -1 0 0 0 1 1 0 0 5-16rin3.dat
-  [1,16,5,-26,-54,0,-1,0,0,0,1,1,0,0, ldraw_lib__5_16rin3()],
+// 1 16 -5 -26 -54 0 1 0 0 0 0.5 0.5 0 0 5-16ring5.dat
+  [1,16,-5,-26,-54,0,1,0,0,0,0.5,0.5,0,0, ldraw_lib__5_16ring5()],
+// 1 16 -5 -26 -54 0 1 0 0 0 1 1 0 0 5-16ring3.dat
+  [1,16,-5,-26,-54,0,1,0,0,0,1,1,0,0, ldraw_lib__5_16ring3()],
+// 1 16 5 -26 -54 0 -1 0 0 0 0.5 0.5 0 0 5-16ring5.dat
+  [1,16,5,-26,-54,0,-1,0,0,0,0.5,0.5,0,0, ldraw_lib__5_16ring5()],
+// 1 16 5 -26 -54 0 -1 0 0 0 1 1 0 0 5-16ring3.dat
+  [1,16,5,-26,-54,0,-1,0,0,0,1,1,0,0, ldraw_lib__5_16ring3()],
 // 3 16 -3.4442 -31.6851 -63.2031 -5 -31 -63.2031 0 -31 -63.2031
   [3,16,-3.4442,-31.6851,-63.2031,-5,-31,-63.2031,0,-31,-63.2031],
 // 3 16 -5 -32.7247 -63.2031 -5 -31 -63.2031 -3.4442 -31.6851 -63.2031
@@ -1876,10 +1877,10 @@ function ldraw_lib__50922() = [
   [4,16,-9,-27,10,9,-27,10,5,-18.0966,-10,-5,-18.0966,-10],
 // 0 // Cone
 // 0 // Primitives
-// 1 16 0 -40 -70 0 0 3 -3 0 0 0 1 0 3-16rin3.dat
-  [1,16,0,-40,-70,0,0,3,-3,0,0,0,1,0, ldraw_lib__3_16rin3()],
-// 1 16 0 -40 -70 0 0 -3 -3 0 0 0 1 0 3-16rin3.dat
-  [1,16,0,-40,-70,0,0,-3,-3,0,0,0,1,0, ldraw_lib__3_16rin3()],
+// 1 16 0 -40 -70 0 0 3 -3 0 0 0 1 0 3-16ring3.dat
+  [1,16,0,-40,-70,0,0,3,-3,0,0,0,1,0, ldraw_lib__3_16ring3()],
+// 1 16 0 -40 -70 0 0 -3 -3 0 0 0 1 0 3-16ring3.dat
+  [1,16,0,-40,-70,0,0,-3,-3,0,0,0,1,0, ldraw_lib__3_16ring3()],
 // 1 16 0 -40 -70 0 0 .5 -.5 0 0 0 1 0 3-16ring24.dat
   [1,16,0,-40,-70,0,0,.5,-.5,0,0,0,1,0, ldraw_lib__3_16ring24()],
 // 1 16 0 -40 -70 0 0 -.5 -.5 0 0 0 1 0 3-16ring24.dat

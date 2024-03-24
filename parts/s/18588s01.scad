@@ -1,7 +1,7 @@
 use <../../lib.scad>
 use <../../p/1-4con9.scad>
 use <../../p/1-4cylo.scad>
-use <../../p/1-4rin10.scad>
+use <../../p/1-4ring10.scad>
 use <../../p/1-4ring7.scad>
 use <../../p/1-4ring9.scad>
 use <../../p/1-8chrd.scad>
@@ -38,17 +38,16 @@ function ldraw_lib__s__18588s01() = [
 // 0 ~Constraction Weapon Launcher Barrel - 1/4 Back
 // 0 Name: s\18588s01.dat
 // 0 Author: Massimo Maso [Sirio]
-// 0 !LDRAW_ORG Subpart UPDATE 2023-02
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !CATEGORY Technic
-// 
 // 0 !HISTORY 2023-04-17 [OrionP] Official Update 2023-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Inner tube
 // 0 // Primitives
@@ -146,8 +145,8 @@ function ldraw_lib__s__18588s01() = [
   [1,16,0,-20,20,7.14018,0,-5.47885,-5.47885,0,-7.14018,0,-1,0, ldraw_lib__48__7_48chrd()],
 // 1 16 0 -20 20 0.5 0 0.866026 0.866026 0 -0.5 0 -1 0 48\1-6ring8.dat
   [1,16,0,-20,20,0.5,0,0.866026,0.866026,0,-0.5,0,-1,0, ldraw_lib__48__1_6ring8()],
-// 1 16 0 0 20 1 0 0 0 0 -1 0 -1 0 1-4rin10.dat
-  [1,16,0,0,20,1,0,0,0,0,-1,0,-1,0, ldraw_lib__1_4rin10()],
+// 1 16 0 0 20 1 0 0 0 0 -1 0 -1 0 1-4ring10.dat
+  [1,16,0,0,20,1,0,0,0,0,-1,0,-1,0, ldraw_lib__1_4ring10()],
 // 1 16 0 0 20 12.0104 0 -4.97488 -4.97488 0 -12.0104 0 -1 0 1-8chrd.dat
   [1,16,0,0,20,12.0104,0,-4.97488,-4.97488,0,-12.0104,0,-1,0, ldraw_lib__1_8chrd()],
 // 1 16 0 0 20 15.8278 0 -20.6272 -20.6272 0 -15.8278 0 -1 0 48\1-24chrd.dat

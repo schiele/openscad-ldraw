@@ -2,13 +2,13 @@ use <../lib.scad>
 use <../p/48/1-4chrd.scad>
 use <../p/48/1-8tndis.scad>
 use <../p/48/2-4ndis.scad>
-use <../p/48/4-4rin12.scad>
+use <../p/48/4-4ring12.scad>
 use <s/4346s01.scad>
 function ldraw_lib__4346p05() = [
 // 0 Container Box  2 x  2 x  2 Door with Black Dollar Sign on Yellow Circle Pattern
 // 0 Name: 4346p05.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
-// 0 !LDRAW_ORG Part UPDATE 2023-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -18,7 +18,8 @@ function ldraw_lib__4346p05() = [
 // 0 !KEYWORDS Bricklink 4346px3, Set 4559
 // 
 // 0 !HISTORY 2023-03-05 [OrionP] Official Update 2023-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4346s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4346s01()],
@@ -34,8 +35,8 @@ function ldraw_lib__4346p05() = [
 // 1 16 0 28.5 -30 0 0 13.65 13.65 0 0 0 1 0 48\1-8tndis.dat
   [1,16,0,28.5,-30,0,0,13.65,13.65,0,0,0,1,0, ldraw_lib__48__1_8tndis()],
 // 
-// 1 0 0 28.5 -30 -1.05 0 0 0 0 -1.05 0 1 0 48\4-4rin12.dat
-  [1,0,0,28.5,-30,-1.05,0,0,0,0,-1.05,0,1,0, ldraw_lib__48__4_4rin12()],
+// 1 0 0 28.5 -30 -1.05 0 0 0 0 -1.05 0 1 0 48\4-4ring12.dat
+  [1,0,0,28.5,-30,-1.05,0,0,0,0,-1.05,0,1,0, ldraw_lib__48__4_4ring12()],
 // 1 14 0 28.5 -30 -12.6 0 0 0 0 -12.6 0 1 0 48\1-4chrd.dat
   [1,14,0,28.5,-30,-12.6,0,0,0,0,-12.6,0,1,0, ldraw_lib__48__1_4chrd()],
 // 1 14 0 28.5 -30 -12.6 0 0 0 0 12.6 0 1 0 48\1-4chrd.dat

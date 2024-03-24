@@ -5,8 +5,8 @@ use <../p/4-4cyli.scad>
 use <../p/4-4cylo.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4edge.scad>
-use <../p/4-4rin14.scad>
 use <../p/4-4ring1.scad>
+use <../p/4-4ring14.scad>
 use <../p/4-4ring9.scad>
 use <../p/bump5000.scad>
 use <s/18978as01.scad>
@@ -15,7 +15,7 @@ function ldraw_lib__18978a() = [
 // 0 Wheel Rim 11 x 18 Front with  5 Spokes
 // 0 Name: 18978a.dat
 // 0 Author: Magnus Forsberg [MagFors]
-// 0 !LDRAW_ORG Part UPDATE 2017-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -25,7 +25,8 @@ function ldraw_lib__18978a() = [
 // 0 !HISTORY 2015-12-30 [PTadmin] Official Update 2015-02
 // 0 !HISTORY 2016-07-09 [MagFors] Corrected description
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 -3.25 1.95 0 0 0 0 -1.95 0 0.5 0 bump5000.dat
   [1,16,0,0,-3.25,1.95,0,0,0,0,-1.95,0,0.5,0, ldraw_lib__bump5000()],
@@ -57,14 +58,14 @@ function ldraw_lib__18978a() = [
   [1,16,0,0,-1,15.75,0,0,0,0,-15.75,0,4,0, ldraw_lib__4_4cylo()],
 // 1 16 0 0 3 -1.75 0 0 0 0 -1.75 0 -1 0 4-4ring9.dat
   [1,16,0,0,3,-1.75,0,0,0,0,-1.75,0,-1,0, ldraw_lib__4_4ring9()],
-// 1 16 0 0 3 -1.25 0 0 0 0 -1.25 0 -1 0 4-4rin14.dat
-  [1,16,0,0,3,-1.25,0,0,0,0,-1.25,0,-1,0, ldraw_lib__4_4rin14()],
+// 1 16 0 0 3 -1.25 0 0 0 0 -1.25 0 -1 0 4-4ring14.dat
+  [1,16,0,0,3,-1.25,0,0,0,0,-1.25,0,-1,0, ldraw_lib__4_4ring14()],
 // 1 16 0 0 -1 18.75 0 0 0 0 -18.75 0 4 0 4-4cylo.dat
   [1,16,0,0,-1,18.75,0,0,0,0,-18.75,0,4,0, ldraw_lib__4_4cylo()],
 // 1 16 0 0 -1 1.75 0 0 0 0 -1.75 0 1 0 4-4ring9.dat
   [1,16,0,0,-1,1.75,0,0,0,0,-1.75,0,1,0, ldraw_lib__4_4ring9()],
-// 1 16 0 0 -1 1.25 0 0 0 0 -1.25 0 1 0 4-4rin14.dat
-  [1,16,0,0,-1,1.25,0,0,0,0,-1.25,0,1,0, ldraw_lib__4_4rin14()],
+// 1 16 0 0 -1 1.25 0 0 0 0 -1.25 0 1 0 4-4ring14.dat
+  [1,16,0,0,-1,1.25,0,0,0,0,-1.25,0,1,0, ldraw_lib__4_4ring14()],
 // 
 // 1 16 0 0 0 1 0 0 0 0 -1 0 1 0 s\18978as01.dat
   [1,16,0,0,0,1,0,0,0,0,-1,0,1,0, ldraw_lib__s__18978as01()],

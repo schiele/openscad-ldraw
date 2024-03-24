@@ -4,8 +4,8 @@ use <../p/1-8edge.scad>
 use <../p/1-8ndis.scad>
 use <../p/4-4cylo.scad>
 use <../p/4-4ndis.scad>
-use <../p/4-4rin10.scad>
-use <../p/4-4rin19.scad>
+use <../p/4-4ring10.scad>
+use <../p/4-4ring19.scad>
 use <../p/box2-5.scad>
 use <../p/box2-7.scad>
 use <../p/box4-7a.scad>
@@ -20,7 +20,7 @@ function ldraw_lib__30080b() = [
 // 0 ~Panel  4 x  3 x  3 with Porthole
 // 0 Name: 30080b.dat
 // 0 Author: Magnus Forsberg [MagFors]
-// 0 !LDRAW_ORG Part UPDATE 2011-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -28,7 +28,8 @@ function ldraw_lib__30080b() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // True number is 30080, but this was incorrectly used for the composite with glass
 // 
@@ -306,10 +307,10 @@ function ldraw_lib__30080b() = [
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 16.93 -34.573 19 0 0 0 3.17242 -13.7586 0 3.33102 13.1035 4-4cylo.dat
   [1,16,0,16.93,-34.573,19,0,0,0,3.17242,-13.7586,0,3.33102,13.1035, ldraw_lib__4_4cylo()],
-// 1 16 0 16.93 -34.573 1 0 0 0 0.689657 -0.724136 0 0.724136 0.689657 4-4rin19.dat
-  [1,16,0,16.93,-34.573,1,0,0,0,0.689657,-0.724136,0,0.724136,0.689657, ldraw_lib__4_4rin19()],
-// 1 16 0 16.93 -34.573 2 0 0 0 0.689657 -1.44827 0 0.724136 1.37931 4-4rin10.dat
-  [1,16,0,16.93,-34.573,2,0,0,0,0.689657,-1.44827,0,0.724136,1.37931, ldraw_lib__4_4rin10()],
+// 1 16 0 16.93 -34.573 1 0 0 0 0.689657 -0.724136 0 0.724136 0.689657 4-4ring19.dat
+  [1,16,0,16.93,-34.573,1,0,0,0,0.689657,-0.724136,0,0.724136,0.689657, ldraw_lib__4_4ring19()],
+// 1 16 0 16.93 -34.573 2 0 0 0 0.689657 -1.44827 0 0.724136 1.37931 4-4ring10.dat
+  [1,16,0,16.93,-34.573,2,0,0,0,0.689657,-1.44827,0,0.724136,1.37931, ldraw_lib__4_4ring10()],
 ];
 module ldraw_lib__30080b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
     makepoly(ldraw_lib__30080b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);

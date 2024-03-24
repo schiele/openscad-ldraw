@@ -2,7 +2,7 @@ use <../../lib.scad>
 use <../../p/1-16cyli.scad>
 use <../../p/1-16cylo.scad>
 use <../../p/1-16edge.scad>
-use <../../p/1-16rin4.scad>
+use <../../p/1-16ring4.scad>
 use <../../p/1-4chrd.scad>
 use <../../p/1-4cylo.scad>
 use <../../p/1-8cylo.scad>
@@ -14,7 +14,7 @@ function ldraw_lib__s__35473s01() = [
 // 0 ~Plant Flower  4 x  4 with  4 Rounded Petals  1/8
 // 0 Name: s\35473s01.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Subpart UPDATE 2019-02
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -22,7 +22,8 @@ function ldraw_lib__s__35473s01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2019-09-09 [PTadmin] Official Update 2019-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 23.5 0 0 13.5 0 0 0 1 0 0 0 13.5 1-4chrd.dat
   [1,16,23.5,0,0,13.5,0,0,0,1,0,0,0,13.5, ldraw_lib__1_4chrd()],
@@ -78,8 +79,8 @@ function ldraw_lib__s__35473s01() = [
   [3,16,13.5,0,13.5,6,0,6,16,0,13.5],
 // 3 16 16 0 13.5 6 0 6 23.5 0 13.5
   [3,16,16,0,13.5,6,0,6,23.5,0,13.5],
-// 1 16 0 16 0 4 0 0 0 -1 0 0 0 4 1-16rin4.dat
-  [1,16,0,16,0,4,0,0,0,-1,0,0,0,4, ldraw_lib__1_16rin4()],
+// 1 16 0 16 0 4 0 0 0 -1 0 0 0 4 1-16ring4.dat
+  [1,16,0,16,0,4,0,0,0,-1,0,0,0,4, ldraw_lib__1_16ring4()],
 // 2 24 18.4776 16 7.6536 16.7582 16 10.227
   [2,24,18.4776,16,7.6536,16.7582,16,10.227],
 // 3 16 16.7582 16 10.227 18.4776 16 7.6536 14.7824 16 6.1232

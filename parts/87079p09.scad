@@ -8,17 +8,17 @@ use <../p/3-16chrd.scad>
 use <../p/3-16ndis.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4ndis.scad>
-use <../p/4-4rin14.scad>
-use <../p/4-4rin15.scad>
-use <../p/4-4rin16.scad>
-use <../p/4-4rin17.scad>
+use <../p/4-4ring14.scad>
+use <../p/4-4ring15.scad>
+use <../p/4-4ring16.scad>
+use <../p/4-4ring17.scad>
 use <s/87079s01.scad>
 function ldraw_lib__87079p09() = [
 // 0 Tile  2 x  4 with Warning Triangle and Minifigure Head with Construction Helmet Pattern
 // 0 Name: 87079p09.dat
 // 0 Author: Bjoern Sigve Storesund [Storesund]
-// 0 !LDRAW_ORG Part UPDATE 2019-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LDRAW_ORG Part UPDATE 2024-02
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
@@ -27,7 +27,8 @@ function ldraw_lib__87079p09() = [
 // 0 !KEYWORDS BrickLink 87079pb404, Road Worker, Set 10734, Set 30357
 // 
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 0 -11 0 0 1.5 0 0 0 1 0 0 0 2.5 4-4disc.dat
   [1,0,-11,0,0,1.5,0,0,0,1,0,0,0,2.5, ldraw_lib__4_4disc()],
@@ -37,12 +38,12 @@ function ldraw_lib__87079p09() = [
   [1,1,21.6,0,-2.5,1.16,0,0,0,1,0,0,0,1.16, ldraw_lib__4_4ndis()],
 // 1 1 21.6 0 2.5 1.16 0 0 0 1 0 0 0 1.16 4-4ndis.dat
   [1,1,21.6,0,2.5,1.16,0,0,0,1,0,0,0,1.16, ldraw_lib__4_4ndis()],
-// 1 1 18.9 0 0 1.05 0 0 0 1 0 0 0 1.05 4-4rin14.dat
-  [1,1,18.9,0,0,1.05,0,0,0,1,0,0,0,1.05, ldraw_lib__4_4rin14()],
-// 1 1 18.9 0 0 1.05 0 0 0 1 0 0 0 1.05 4-4rin16.dat
-  [1,1,18.9,0,0,1.05,0,0,0,1,0,0,0,1.05, ldraw_lib__4_4rin16()],
-// 1 1 18.9 0 0 1.05 0 0 0 1 0 0 0 1.05 4-4rin17.dat
-  [1,1,18.9,0,0,1.05,0,0,0,1,0,0,0,1.05, ldraw_lib__4_4rin17()],
+// 1 1 18.9 0 0 1.05 0 0 0 1 0 0 0 1.05 4-4ring14.dat
+  [1,1,18.9,0,0,1.05,0,0,0,1,0,0,0,1.05, ldraw_lib__4_4ring14()],
+// 1 1 18.9 0 0 1.05 0 0 0 1 0 0 0 1.05 4-4ring16.dat
+  [1,1,18.9,0,0,1.05,0,0,0,1,0,0,0,1.05, ldraw_lib__4_4ring16()],
+// 1 1 18.9 0 0 1.05 0 0 0 1 0 0 0 1.05 4-4ring17.dat
+  [1,1,18.9,0,0,1.05,0,0,0,1,0,0,0,1.05, ldraw_lib__4_4ring17()],
 // 1 1 18.9 0 0 -14.7 0 0 0 1 0 0 0 14.7 1-8chrd.dat
   [1,1,18.9,0,0,-14.7,0,0,0,1,0,0,0,14.7, ldraw_lib__1_8chrd()],
 // 1 1 18.9 0 0 -14.7 0 0 0 1 0 0 0 -14.7 1-8chrd.dat
@@ -83,8 +84,8 @@ function ldraw_lib__87079p09() = [
   [1,16,21.6,0,2.5,1.16,0,0,0,1,0,0,0,1.16, ldraw_lib__4_4disc()],
 // 1 16 18.9 0 0 18.9 0 0 0 1 0 0 0 18.9 4-4ndis.dat
   [1,16,18.9,0,0,18.9,0,0,0,1,0,0,0,18.9, ldraw_lib__4_4ndis()],
-// 1 16 18.9 0 0 1.05 0 0 0 1 0 0 0 1.05 4-4rin15.dat
-  [1,16,18.9,0,0,1.05,0,0,0,1,0,0,0,1.05, ldraw_lib__4_4rin15()],
+// 1 16 18.9 0 0 1.05 0 0 0 1 0 0 0 1.05 4-4ring15.dat
+  [1,16,18.9,0,0,1.05,0,0,0,1,0,0,0,1.05, ldraw_lib__4_4ring15()],
 // 1 16 -7 0 16.8 2.2 0 0 0 1 0 0 0 2 1-4ndis.dat
   [1,16,-7,0,16.8,2.2,0,0,0,1,0,0,0,2, ldraw_lib__1_4ndis()],
 // 3 1 19.8 0 5 20.44 0 3.66 21.6 0 3.66

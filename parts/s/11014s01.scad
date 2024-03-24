@@ -8,14 +8,14 @@ use <../../p/3-4cylo.scad>
 use <../../p/3-4disc.scad>
 use <../../p/3-4edge.scad>
 use <../../p/4-4cylc.scad>
-use <../../p/4-4rin16.scad>
+use <../../p/4-4ring16.scad>
 use <../../p/4-4ring3.scad>
 use <../../p/rect3.scad>
 function ldraw_lib__s__11014s01() = [
 // 0 ~Electric Mindstorms EV3 Colour Sensor Opto Support without Edge
 // 0 Name: s\11014s01.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Subpart UPDATE 2018-02
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -27,7 +27,8 @@ function ldraw_lib__s__11014s01() = [
 // 0 !HISTORY 2013-12-23 [PTadmin] Official Update 2013-02
 // 0 !HISTORY 2018-03-25 [cwdee] Correct description spelling
 // 0 !HISTORY 2018-12-08 [PTadmin] Official Update 2018-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
@@ -45,8 +46,8 @@ function ldraw_lib__s__11014s01() = [
   [1,16,0,0,0,6.01041,0,-6.01041,6.01041,0,6.01041,0,2.5,0, ldraw_lib__1_4edge()],
 // 1 16 0 0 0 2 0 0 0 0 2 0 1 0 4-4ring3.dat
   [1,16,0,0,0,2,0,0,0,0,2,0,1,0, ldraw_lib__4_4ring3()],
-// 1 16 0 0 0 0.5 0 0 0 0 0.5 0 1 0 4-4rin16.dat
-  [1,16,0,0,0,0.5,0,0,0,0,0.5,0,1,0, ldraw_lib__4_4rin16()],
+// 1 16 0 0 0 0.5 0 0 0 0 0.5 0 1 0 4-4ring16.dat
+  [1,16,0,0,0,0.5,0,0,0,0,0.5,0,1,0, ldraw_lib__4_4ring16()],
 // 1 16 0 0 0 -10.6066 0 -10.6066 10.6066 0 -10.6066 0 23 0 3-4cylo.dat
   [1,16,0,0,0,-10.6066,0,-10.6066,10.6066,0,-10.6066,0,23,0, ldraw_lib__3_4cylo()],
 // 1 16 0 0 23 -10.6066 0 -10.6066 10.6066 0 -10.6066 0 -1 0 3-4disc.dat

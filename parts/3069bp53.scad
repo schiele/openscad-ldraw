@@ -6,13 +6,13 @@ use <../p/2-4ring1.scad>
 use <../p/3-4ndis.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4ndis.scad>
-use <../p/4-4rin10.scad>
+use <../p/4-4ring10.scad>
 use <s/3069bs01.scad>
 function ldraw_lib__3069bp53() = [
 // 0 Tile  1 x  2 with Mars Orbit Display Pattern
 // 0 Name: 3069bp53.dat
 // 0 Author: Alex Taylor [anathema]
-// 0 !LDRAW_ORG Part UPDATE 2013-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -22,12 +22,13 @@ function ldraw_lib__3069bp53() = [
 // 0 !HISTORY 2010-07-05 [PTadmin] Official Update 2010-02
 // 0 !HISTORY 2013-02-17 [MagFors] Changed colour 179 to 80 (printed silver)
 // 0 !HISTORY 2013-07-21 [PTadmin] Official Update 2013-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3069bs01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3069bs01()],
-// 1 80 12.8 0 1.5 0.4 0 0 0 1 0 0 0 0.4 4-4rin10.dat
-  [1,80,12.8,0,1.5,0.4,0,0,0,1,0,0,0,0.4, ldraw_lib__4_4rin10()],
+// 1 80 12.8 0 1.5 0.4 0 0 0 1 0 0 0 0.4 4-4ring10.dat
+  [1,80,12.8,0,1.5,0.4,0,0,0,1,0,0,0,0.4, ldraw_lib__4_4ring10()],
 // 1 80 12.8 0 1.5 1.3 0 0 0 1 0 0 0 1.3 4-4disc.dat
   [1,80,12.8,0,1.5,1.3,0,0,0,1,0,0,0,1.3, ldraw_lib__4_4disc()],
 // 4 80 6.3 0 1.1 11.58 0 1.1 11.58 0 1.9 6.3 0 1.9

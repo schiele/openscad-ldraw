@@ -2,7 +2,7 @@ use <../lib.scad>
 use <../p/48/4-4con12.scad>
 use <../p/48/4-4cyli.scad>
 use <../p/48/4-4cylo.scad>
-use <../p/48/4-4rin12.scad>
+use <../p/48/4-4ring12.scad>
 use <../p/48/4-4ring6.scad>
 use <../p/48/4-4ring71.scad>
 use <s/80542s01.scad>
@@ -10,7 +10,7 @@ function ldraw_lib__80542() = [
 // 0 Tyre 20 / 33 x 62 Motorcycle
 // 0 Name: 80542.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2023-04
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -20,7 +20,8 @@ function ldraw_lib__80542() = [
 // 0 !KEYWORDS 75.1
 // 
 // 0 !HISTORY 2023-08-25 [OrionP] Official Update 2023-04
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\80542s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__80542s01()],
@@ -77,8 +78,8 @@ function ldraw_lib__80542() = [
   [1,16,0,0,-25,78,0,0,0,0,78,0,3,0, ldraw_lib__48__4_4cylo()],
 // 1 16 0 0 -25 1.09859 0 0 0 0 1.09859 0 3 0 48\4-4ring71.dat
   [1,16,0,0,-25,1.09859,0,0,0,0,1.09859,0,3,0, ldraw_lib__48__4_4ring71()],
-// 1 16 0 0 -22 6 0 0 0 0 6 0 1 0 48\4-4rin12.dat
-  [1,16,0,0,-22,6,0,0,0,0,6,0,1,0, ldraw_lib__48__4_4rin12()],
+// 1 16 0 0 -22 6 0 0 0 0 6 0 1 0 48\4-4ring12.dat
+  [1,16,0,0,-22,6,0,0,0,0,6,0,1,0, ldraw_lib__48__4_4ring12()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 -22 72 0 0 0 0 72 0 4 0 48\4-4cylo.dat
@@ -95,8 +96,8 @@ function ldraw_lib__80542() = [
   [1,16,0,0,25,78,0,0,0,0,78,0,-3,0, ldraw_lib__48__4_4cylo()],
 // 1 16 0 0 25 1.09859 0 0 0 0 1.09859 0 -3 0 48\4-4ring71.dat
   [1,16,0,0,25,1.09859,0,0,0,0,1.09859,0,-3,0, ldraw_lib__48__4_4ring71()],
-// 1 16 0 0 22 6 0 0 0 0 6 0 -1 0 48\4-4rin12.dat
-  [1,16,0,0,22,6,0,0,0,0,6,0,-1,0, ldraw_lib__48__4_4rin12()],
+// 1 16 0 0 22 6 0 0 0 0 6 0 -1 0 48\4-4ring12.dat
+  [1,16,0,0,22,6,0,0,0,0,6,0,-1,0, ldraw_lib__48__4_4ring12()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 22 72 0 0 0 0 72 0 -4 0 48\4-4cylo.dat

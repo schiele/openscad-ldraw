@@ -3,7 +3,7 @@ use <../p/1-4cylo.scad>
 use <../p/4-4cylc.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4edge.scad>
-use <../p/4-4rin20.scad>
+use <../p/4-4ring20.scad>
 use <../p/4-4ring3.scad>
 use <../p/4-4ring4.scad>
 use <s/37776s01.scad>
@@ -12,7 +12,7 @@ function ldraw_lib__37776() = [
 // 0 Minifig Lantern
 // 0 Name: 37776.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
-// 0 !LDRAW_ORG Part UPDATE 2019-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -22,7 +22,8 @@ function ldraw_lib__37776() = [
 // 0 !CATEGORY Minifig Accessory
 // 
 // 0 !HISTORY 2019-09-09 [PTadmin] Official Update 2019-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 22 0 0 0 -1 0 1 0 1 0 0 s\37776s01.dat
   [1,16,0,22,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__s__37776s01()],
@@ -34,8 +35,8 @@ function ldraw_lib__37776() = [
   [1,16,0,22,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__s__37776s01()],
 // 
 // 0 // Bottom
-// 1 16 0 46 0 0 0 -.5 0 -1 0 .5 0 0 4-4rin20.dat
-  [1,16,0,46,0,0,0,-.5,0,-1,0,.5,0,0, ldraw_lib__4_4rin20()],
+// 1 16 0 46 0 0 0 -.5 0 -1 0 .5 0 0 4-4ring20.dat
+  [1,16,0,46,0,0,0,-.5,0,-1,0,.5,0,0, ldraw_lib__4_4ring20()],
 // 1 16 0 46 0 0 0 -3.5 0 -1 0 3.5 0 0 4-4ring3.dat
   [1,16,0,46,0,0,0,-3.5,0,-1,0,3.5,0,0, ldraw_lib__4_4ring3()],
 // 1 16 0 46 0 0 0 -10 0 1 0 10 0 0 4-4edge.dat

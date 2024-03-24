@@ -10,8 +10,8 @@ use <../p/2-4cyli.scad>
 use <../p/2-4cylo.scad>
 use <../p/2-4edge.scad>
 use <../p/2-4ndis.scad>
-use <../p/2-4rin13.scad>
 use <../p/2-4ring1.scad>
+use <../p/2-4ring13.scad>
 use <../p/2-4ring4.scad>
 use <../p/2-4ring7.scad>
 use <../p/48/2-4aring.scad>
@@ -27,7 +27,7 @@ function ldraw_lib__78168() = [
 // 0 Plate  2 x  6 with Centred  2 x  2 Rounded Holder
 // 0 Name: 78168.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
-// 0 !LDRAW_ORG Part UPDATE 2022-05
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -37,7 +37,8 @@ function ldraw_lib__78168() = [
 // 0 !KEYWORDS Dots, Hanger, picture frame
 // 
 // 0 !HISTORY 2022-09-15 [PTadmin] Official Update 2022-05
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 4 0 1 0 0 0 -1 0 0 0 1 stug4-1x5.dat
   [1,16,0,4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stug4_1x5()],
@@ -82,8 +83,8 @@ function ldraw_lib__78168() = [
 // 1 16 0 8 40 20 0 0 0 -1 0 0 0 20 48\2-4aring.dat
   [1,16,0,8,40,20,0,0,0,-1,0,0,0,20, ldraw_lib__48__2_4aring()],
 // 
-// 1 16 0 4 40 1 0 0 0 -1 0 0 0 1 2-4rin13.dat
-  [1,16,0,4,40,1,0,0,0,-1,0,0,0,1, ldraw_lib__2_4rin13()],
+// 1 16 0 4 40 1 0 0 0 -1 0 0 0 1 2-4ring13.dat
+  [1,16,0,4,40,1,0,0,0,-1,0,0,0,1, ldraw_lib__2_4ring13()],
 // 1 16 0 4 40 2 0 0 0 -1 0 0 0 2 2-4ring7.dat
   [1,16,0,4,40,2,0,0,0,-1,0,0,0,2, ldraw_lib__2_4ring7()],
 // 4 16 13 4 30 13 4 40 16 4 40 16 4 20

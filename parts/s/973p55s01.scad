@@ -1,10 +1,10 @@
 use <../../lib.scad>
-use <../../p/48/4-4rin19.scad>
+use <../../p/48/4-4ring19.scad>
 function ldraw_lib__s__973p55s01() = [
 // 0 ~Explorien Logo
 // 0 Name: s\973p55s01.dat
 // 0 Author: Steve Bliss [sbliss]
-// 0 !LDRAW_ORG Subpart UPDATE 2014-02
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -14,10 +14,11 @@ function ldraw_lib__s__973p55s01() = [
 // 0 !HISTORY 2014-09-27 [Steffen] merged s\973p55a and s\973p55b into this file
 // 0 !HISTORY 2014-10-11 [MagFors] Removed t-juntions, gaps and overlapping quads
 // 0 !HISTORY 2014-12-23 [PTadmin] Official Update 2014-02
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
-// 
-// 1 0 0 0 0 1 0 0 0 1 0 0 0 1 48\4-4rin19.dat
-  [1,0,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__48__4_4rin19()],
+// 1 0 0 0 0 1 0 0 0 1 0 0 0 1 48\4-4ring19.dat
+  [1,0,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__48__4_4ring19()],
 // 4 14 0 0 17.304 -6.257 0 6.018 -4.872 0 2.675 0 0 6.018
   [4,14,0,0,17.304,-6.257,0,6.018,-4.872,0,2.675,0,0,6.018],
 // 4 14 -4.872 0 2.675 -3.343 0 0 -2.293 0 -1.262 0 0 6.018

@@ -6,7 +6,7 @@ use <../p/1-4edge.scad>
 use <../p/2-4cyli.scad>
 use <../p/2-4disc.scad>
 use <../p/2-4edge.scad>
-use <../p/2-4rin18.scad>
+use <../p/2-4ring18.scad>
 use <../p/4-4con0.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4edge.scad>
@@ -18,7 +18,7 @@ function ldraw_lib__164() = [
 // 0 ~Boat Section Stern  6 x  8 x  3.333 (Needs Work)
 // 0 Name: 164.dat
 // 0 Author: Michael Heidemann [mikeheide]
-// 0 !LDRAW_ORG Part UPDATE 2013-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -27,7 +27,8 @@ function ldraw_lib__164() = [
 // 
 // 0 !HISTORY 2007-11-10 [Jaco] Secondary author
 // 0 !HISTORY 2013-07-21 [PTadmin] Official Update 2013-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // bottom of hull (back) can be improved
 // 
@@ -185,8 +186,8 @@ function ldraw_lib__164() = [
   [1,16,0,12,-10,72,0,0,0,-1,0,0,0,72, ldraw_lib__2_4edge()],
 // 1 16 0 12 -10 -72 0 0 0 1 0 0 0 72 2-4disc.dat
   [1,16,0,12,-10,-72,0,0,0,1,0,0,0,72, ldraw_lib__2_4disc()],
-// 1 16 0 -16 -10 4 0 0 0 1 0 0 0 4 2-4rin18.dat
-  [1,16,0,-16,-10,4,0,0,0,1,0,0,0,4, ldraw_lib__2_4rin18()],
+// 1 16 0 -16 -10 4 0 0 0 1 0 0 0 4 2-4ring18.dat
+  [1,16,0,-16,-10,4,0,0,0,1,0,0,0,4, ldraw_lib__2_4ring18()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -16 -10 72 0 0 0 28 0 0 0 72 2-4cyli.dat

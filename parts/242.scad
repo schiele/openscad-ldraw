@@ -1,5 +1,5 @@
 use <../lib.scad>
-use <../p/1-4rin19.scad>
+use <../p/1-4ring19.scad>
 use <../p/4-4con10.scad>
 use <../p/4-4con18.scad>
 use <../p/4-4con19.scad>
@@ -7,8 +7,8 @@ use <../p/4-4con8.scad>
 use <../p/4-4cylc.scad>
 use <../p/4-4cylo.scad>
 use <../p/4-4edge.scad>
-use <../p/4-4rin10.scad>
 use <../p/4-4ring1.scad>
+use <../p/4-4ring10.scad>
 use <../p/4-4ring4.scad>
 use <../p/box3u2p.scad>
 use <../p/stud.scad>
@@ -16,7 +16,7 @@ function ldraw_lib__242() = [
 // 0 ~Wheel Spoked with Stud
 // 0 Name: 242.dat
 // 0 Author: Niels Karsdorp [nielsk]
-// 0 !LDRAW_ORG Part UPDATE 2020-03
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CW
@@ -26,7 +26,8 @@ function ldraw_lib__242() = [
 // 0 !HISTORY 2009-12-29 [PTadmin] Official Update 2009-03
 // 0 !HISTORY 2020-06-04 [Sirio] Updated the use of primitives: removed ringr.dat or ringrr.dat, introduced 4-4cylo.dat
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Axle connector
 // 0 BFC INVERTNEXT
@@ -42,8 +43,8 @@ function ldraw_lib__242() = [
   [1,16,0,0,8,-2,0,0,0,0,2,0,-1,0, ldraw_lib__4_4ring4()],
 // 1 16 0 0 8 -10 0 0 0 0 10 0 -1 0 4-4ring1.dat
   [1,16,0,0,8,-10,0,0,0,0,10,0,-1,0, ldraw_lib__4_4ring1()],
-// 1 16 0 0 8 -2 0 0 0 0 2 0 -1 0 4-4rin10.dat
-  [1,16,0,0,8,-2,0,0,0,0,2,0,-1,0, ldraw_lib__4_4rin10()],
+// 1 16 0 0 8 -2 0 0 0 0 2 0 -1 0 4-4ring10.dat
+  [1,16,0,0,8,-2,0,0,0,0,2,0,-1,0, ldraw_lib__4_4ring10()],
 // 0 // Wheel edge
 // 1 16 0 0 8 22 0 0 0 0 22 0 -3 0 4-4cylo.dat
   [1,16,0,0,8,22,0,0,0,0,22,0,-3,0, ldraw_lib__4_4cylo()],
@@ -60,16 +61,16 @@ function ldraw_lib__242() = [
 // 1 16 0 0 -9 22 0 0 0 0 22 0 -3 0 4-4cylo.dat
   [1,16,0,0,-9,22,0,0,0,0,22,0,-3,0, ldraw_lib__4_4cylo()],
 // 0 // Wheel front
-// 1 16 0 0 -12 2 0 0 0 0 2 0 1 0 4-4rin10.dat
-  [1,16,0,0,-12,2,0,0,0,0,2,0,1,0, ldraw_lib__4_4rin10()],
-// 1 16 0 0 -12 1 0 0 0 0 1 0 1 0 1-4rin19.dat
-  [1,16,0,0,-12,1,0,0,0,0,1,0,1,0, ldraw_lib__1_4rin19()],
-// 1 16 0 0 -12 0 0 1 -1 0 0 0 1 0 1-4rin19.dat
-  [1,16,0,0,-12,0,0,1,-1,0,0,0,1,0, ldraw_lib__1_4rin19()],
-// 1 16 0 0 -12 -1 0 0 0 0 -1 0 1 0 1-4rin19.dat
-  [1,16,0,0,-12,-1,0,0,0,0,-1,0,1,0, ldraw_lib__1_4rin19()],
-// 1 16 0 0 -12 0 0 -1 1 0 0 0 1 0 1-4rin19.dat
-  [1,16,0,0,-12,0,0,-1,1,0,0,0,1,0, ldraw_lib__1_4rin19()],
+// 1 16 0 0 -12 2 0 0 0 0 2 0 1 0 4-4ring10.dat
+  [1,16,0,0,-12,2,0,0,0,0,2,0,1,0, ldraw_lib__4_4ring10()],
+// 1 16 0 0 -12 1 0 0 0 0 1 0 1 0 1-4ring19.dat
+  [1,16,0,0,-12,1,0,0,0,0,1,0,1,0, ldraw_lib__1_4ring19()],
+// 1 16 0 0 -12 0 0 1 -1 0 0 0 1 0 1-4ring19.dat
+  [1,16,0,0,-12,0,0,1,-1,0,0,0,1,0, ldraw_lib__1_4ring19()],
+// 1 16 0 0 -12 -1 0 0 0 0 -1 0 1 0 1-4ring19.dat
+  [1,16,0,0,-12,-1,0,0,0,0,-1,0,1,0, ldraw_lib__1_4ring19()],
+// 1 16 0 0 -12 0 0 -1 1 0 0 0 1 0 1-4ring19.dat
+  [1,16,0,0,-12,0,0,-1,1,0,0,0,1,0, ldraw_lib__1_4ring19()],
 // 1 16 0 0 -12 19 0 0 0 0 19 0 1 0 4-4edge.dat
   [1,16,0,0,-12,19,0,0,0,0,19,0,1,0, ldraw_lib__4_4edge()],
 // 0 BFC INVERTNEXT

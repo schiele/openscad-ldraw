@@ -8,7 +8,7 @@ use <../p/48/4-4con11.scad>
 use <../p/48/4-4con5.scad>
 use <../p/48/4-4cylo.scad>
 use <../p/48/4-4edge.scad>
-use <../p/48/4-4rin12.scad>
+use <../p/48/4-4ring12.scad>
 use <../p/box4.scad>
 use <../p/stud27a.scad>
 use <../p/stud8.scad>
@@ -16,7 +16,7 @@ function ldraw_lib__4378a() = [
 // 0 Duplo Cone  2 x  2 x  1
 // 0 Name: 4378a.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2022-05
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -26,7 +26,8 @@ function ldraw_lib__4378a() = [
 // 0 !CATEGORY Cone
 // 
 // 0 !HISTORY 2022-09-15 [PTadmin] Official Update 2022-05
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 4 0 1 0 0 0 -10 0 0 0 1 stud8.dat
   [1,16,0,4,0,1,0,0,0,-10,0,0,0,1, ldraw_lib__stud8()],
@@ -34,8 +35,8 @@ function ldraw_lib__4378a() = [
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 48 0 40.3 0 0 0 -14 0 0 0 40.3 48\4-4cylo.dat
   [1,16,0,48,0,40.3,0,0,0,-14,0,0,0,40.3, ldraw_lib__48__4_4cylo()],
-// 1 16 0 48 0 3.35833 0 0 0 -1 0 0 0 3.35833 48\4-4rin12.dat
-  [1,16,0,48,0,3.35833,0,0,0,-1,0,0,0,3.35833, ldraw_lib__48__4_4rin12()],
+// 1 16 0 48 0 3.35833 0 0 0 -1 0 0 0 3.35833 48\4-4ring12.dat
+  [1,16,0,48,0,3.35833,0,0,0,-1,0,0,0,3.35833, ldraw_lib__48__4_4ring12()],
 // 1 16 0 48 0 43.65833 0 0 0 -16 0 0 0 43.65833 48\4-4cylo.dat
   [1,16,0,48,0,43.65833,0,0,0,-16,0,0,0,43.65833, ldraw_lib__48__4_4cylo()],
 // 1 16 0 32 0 3.6382 0 0 0 -4.923 0 0 0 3.6382 48\4-4con11.dat

@@ -1,13 +1,13 @@
 use <../lib.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4edge.scad>
-use <../p/4-4rin10.scad>
+use <../p/4-4ring10.scad>
 use <../p/4-4ring9.scad>
 function ldraw_lib__48915() = [
 // 0 ~Technic Shock Absorber 11L/9L Setting Ring
 // 0 Name: 48915.dat
 // 0 Author: Guy Vivan [guyvivan]
-// 0 !LDRAW_ORG Part UPDATE 2012-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -15,7 +15,8 @@ function ldraw_lib__48915() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2012-08-09 [PTadmin] Official Update 2012-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 60 0 22 0 0 0 8 0 0 0 22 4-4cyli.dat
   [1,16,0,60,0,22,0,0,0,8,0,0,0,22, ldraw_lib__4_4cyli()],
@@ -23,8 +24,8 @@ function ldraw_lib__48915() = [
   [1,16,0,68,0,22,0,0,0,1,0,0,0,22, ldraw_lib__4_4edge()],
 // 1 16 0 68 0 2 0 0 0 -1 0 0 0 2 4-4ring9.dat
   [1,16,0,68,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__4_4ring9()],
-// 1 16 0 68 0 2 0 0 0 -1 0 0 0 2 4-4rin10.dat
-  [1,16,0,68,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__4_4rin10()],
+// 1 16 0 68 0 2 0 0 0 -1 0 0 0 2 4-4ring10.dat
+  [1,16,0,68,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__4_4ring10()],
 // 1 16 0 68 0 18 0 0 0 1 0 0 0 18 4-4edge.dat
   [1,16,0,68,0,18,0,0,0,1,0,0,0,18, ldraw_lib__4_4edge()],
 // 0 BFC INVERTNEXT

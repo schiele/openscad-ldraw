@@ -3,8 +3,8 @@ use <../p/4-4con8.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4cylo.scad>
 use <../p/4-4edge.scad>
-use <../p/4-4rin10.scad>
 use <../p/4-4ring1.scad>
+use <../p/4-4ring10.scad>
 use <../p/4-4ring2.scad>
 use <../p/4-4ring3.scad>
 use <../p/4-4ring4.scad>
@@ -13,14 +13,14 @@ function ldraw_lib__33008() = [
 // 0 Scala Flower Pot
 // 0 Name: 33008.dat
 // 0 Author: Marc Schickele [samrotule]
-// 0 !LDRAW_ORG Part UPDATE 2023-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS 3 x 3, Cylinder, exhaust, lamp base, outlet, Round, UCS X-Wing
+// 0 !KEYWORDS 3 x 3, Cylinder, Round, UCS X-Wing, exhaust, lamp base, outlet
 // 
 // 0 !HISTORY 2002-07-27 {unknown} Revised
 // 0 !HISTORY 2002-11-30 [PTadmin] Official Update 2002-05
@@ -30,7 +30,8 @@ function ldraw_lib__33008() = [
 // 0 !HISTORY 2009-09-03 [PTadmin] Official Update 2009-02
 // 0 !HISTORY 2020-06-04 [Sirio] Updated the use of primitives: removed ringr.dat or ringrr.dat, introduced use of 4-4cylo.dat, merged some triangles to quads
 // 0 !HISTORY 2023-03-05 [OrionP] Official Update 2023-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Primitives
 // 1 16 0 5.25 0 24.75 0 0 0 1 0 0 0 24.75 4-4edge.dat
@@ -77,10 +78,10 @@ function ldraw_lib__33008() = [
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 53 0 20 0 0 0 -37.5 0 0 0 -20 4-4cylo.dat
   [1,16,0,53,0,20,0,0,0,-37.5,0,0,0,-20, ldraw_lib__4_4cylo()],
-// 1 16 0 53 0 2 0 0 0 -1 0 0 0 2 4-4rin10.dat
-  [1,16,0,53,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__4_4rin10()],
-// 1 16 0 53 0 2.2 0 0 0 -1 0 0 0 2.2 4-4rin10.dat
-  [1,16,0,53,0,2.2,0,0,0,-1,0,0,0,2.2, ldraw_lib__4_4rin10()],
+// 1 16 0 53 0 2 0 0 0 -1 0 0 0 2 4-4ring10.dat
+  [1,16,0,53,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__4_4ring10()],
+// 1 16 0 53 0 2.2 0 0 0 -1 0 0 0 2.2 4-4ring10.dat
+  [1,16,0,53,0,2.2,0,0,0,-1,0,0,0,2.2, ldraw_lib__4_4ring10()],
 // 1 16 0 53 0 24.2 0 0 0 -1 0 0 0 24.2 4-4edge.dat
   [1,16,0,53,0,24.2,0,0,0,-1,0,0,0,24.2, ldraw_lib__4_4edge()],
 // 0 // Faces

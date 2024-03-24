@@ -6,7 +6,7 @@ use <../p/1-4ring1.scad>
 use <../p/1-4ring5.scad>
 use <../p/1-8cyli.scad>
 use <../p/1-8edge.scad>
-use <../p/1-8rin18.scad>
+use <../p/1-8ring18.scad>
 use <../p/1-8ring3.scad>
 use <../p/1-8ring4.scad>
 use <../p/2-4ring3.scad>
@@ -25,7 +25,7 @@ function ldraw_lib__61904() = [
 // 0 Technic Linear Actuator  2 x  2 Bracket Hinged Mount
 // 0 Name: 61904.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2019-03
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -37,7 +37,8 @@ function ldraw_lib__61904() = [
 // 0 !HISTORY 2010-07-05 [PTadmin] Official Update 2010-02
 // 0 !HISTORY 2019-11-13 [cwdee] Update description
 // 0 !HISTORY 2019-12-27 [PTadmin] Official Update 2019-03
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\61904s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__61904s01()],
@@ -73,8 +74,8 @@ function ldraw_lib__61904() = [
   [1,16,0,0,20,2.121,0,-2.121,-2.121,0,-2.121,0,-1,0, ldraw_lib__2_4ring5()],
 // 1 16 0 0 20 2.121 0 2.121 2.121 0 -2.121 0 -1 0 1-4ring5.dat
   [1,16,0,0,20,2.121,0,2.121,2.121,0,-2.121,0,-1,0, ldraw_lib__1_4ring5()],
-// 1 16 0 0 20 0.383 0 -0.924 -0.924 0 -0.383 0 -1 0 1-8rin18.dat
-  [1,16,0,0,20,0.383,0,-0.924,-0.924,0,-0.383,0,-1,0, ldraw_lib__1_8rin18()],
+// 1 16 0 0 20 0.383 0 -0.924 -0.924 0 -0.383 0 -1 0 1-8ring18.dat
+  [1,16,0,0,20,0.383,0,-0.924,-0.924,0,-0.383,0,-1,0, ldraw_lib__1_8ring18()],
 // 1 16 0 0 20 7.271 0 -17.554 -17.554 0 -7.271 0 -10 0 1-8cyli.dat
   [1,16,0,0,20,7.271,0,-17.554,-17.554,0,-7.271,0,-10,0, ldraw_lib__1_8cyli()],
 // 1 16 0 0 20 7.271 0 -17.554 -17.554 0 -7.271 0 -1 0 1-8edge.dat

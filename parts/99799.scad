@@ -6,13 +6,13 @@ use <../p/2-4ndis.scad>
 use <../p/4-4cylo.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4ndis.scad>
-use <../p/4-4rin16.scad>
+use <../p/4-4ring16.scad>
 use <../p/4-4ring4.scad>
 function ldraw_lib__99799() = [
 // 0 ~Technic Pneumatic Cylinder 1 x 1 for Pump 6L
 // 0 Name: 99799.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2013-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -21,7 +21,8 @@ function ldraw_lib__99799() = [
 // 
 // 0 !HISTORY 2012-06-30 [cwdee] Adjust origin
 // 0 !HISTORY 2013-07-21 [PTadmin] Official Update 2013-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 68 0 10 0 0 0 -56 0 0 0 10 4-4cylo.dat
   [1,16,0,68,0,10,0,0,0,-56,0,0,0,10, ldraw_lib__4_4cylo()],
@@ -133,8 +134,8 @@ function ldraw_lib__99799() = [
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 68 0 8 0 0 0 -68 0 0 0 8 4-4cylo.dat
   [1,16,0,68,0,8,0,0,0,-68,0,0,0,8, ldraw_lib__4_4cylo()],
-// 1 16 0 0 0 0.5 0 0 0 1 0 0 0 0.5 4-4rin16.dat
-  [1,16,0,0,0,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__4_4rin16()],
+// 1 16 0 0 0 0.5 0 0 0 1 0 0 0 0.5 4-4ring16.dat
+  [1,16,0,0,0,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__4_4ring16()],
 // 1 16 0 0 0 8.5 0 0 0 1 0 0 0 8.5 4-4ndis.dat
   [1,16,0,0,0,8.5,0,0,0,1,0,0,0,8.5, ldraw_lib__4_4ndis()],
 // 1 16 0 12 0 9.2388 0 3.82683 0 1 0 -3.82683 0 9.2388 1-8chrd.dat

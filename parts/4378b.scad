@@ -13,8 +13,8 @@ use <../p/48/4-4con88.scad>
 use <../p/48/4-4con9.scad>
 use <../p/48/4-4cylo.scad>
 use <../p/48/4-4edge.scad>
-use <../p/48/4-4rin21.scad>
-use <../p/48/4-4rin41.scad>
+use <../p/48/4-4ring21.scad>
+use <../p/48/4-4ring41.scad>
 use <../p/48/4-4ring81.scad>
 use <../p/48/4-4ring88.scad>
 use <../p/box4.scad>
@@ -24,7 +24,7 @@ function ldraw_lib__4378b() = [
 // 0 Duplo Cone  2 x  2 x  1.5
 // 0 Name: 4378b.dat
 // 0 Author: Tim Lampmann [L4mpi]
-// 0 !LDRAW_ORG Part UPDATE 2022-03
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -34,7 +34,8 @@ function ldraw_lib__4378b() = [
 // 0 !CATEGORY Cone
 // 
 // 0 !HISTORY 2022-05-07 [PTadmin] Official Update 2022-03
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
@@ -46,10 +47,10 @@ function ldraw_lib__4378b() = [
   [1,16,0,72,0,0.5,0,0,0,-1,0,0,0,0.5, ldraw_lib__48__4_4ring81()],
 // 1 16 0 72 0 0.5 0 0 0 -1 0 0 0 0.5 48\4-4ring88.dat
   [1,16,0,72,0,0.5,0,0,0,-1,0,0,0,0.5, ldraw_lib__48__4_4ring88()],
-// 1 16 0 72 0 1 0 0 0 -1 0 0 0 1 48\4-4rin41.dat
-  [1,16,0,72,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__48__4_4rin41()],
-// 1 16 0 72 0 2 0 0 0 -1 0 0 0 2 48\4-4rin21.dat
-  [1,16,0,72,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__48__4_4rin21()],
+// 1 16 0 72 0 1 0 0 0 -1 0 0 0 1 48\4-4ring41.dat
+  [1,16,0,72,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__48__4_4ring41()],
+// 1 16 0 72 0 2 0 0 0 -1 0 0 0 2 48\4-4ring21.dat
+  [1,16,0,72,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__48__4_4ring21()],
 // 
 // 1 16 0 -11 0 2 0 0 0 1 0 0 0 2 4-4ring6.dat
   [1,16,0,-11,0,2,0,0,0,1,0,0,0,2, ldraw_lib__4_4ring6()],

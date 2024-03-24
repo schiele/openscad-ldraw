@@ -4,7 +4,7 @@ use <../../p/1-4cyli.scad>
 use <../../p/1-8edge.scad>
 use <../../p/4-4cylo.scad>
 use <../../p/4-4edge.scad>
-use <../../p/4-4rin15.scad>
+use <../../p/4-4ring15.scad>
 use <../../p/4-4ring3.scad>
 use <../../p/4-4ring9.scad>
 use <../../p/rect.scad>
@@ -15,7 +15,7 @@ function ldraw_lib__s__30361as01() = [
 // 0 ~Cylinder  2 x  2 x  2 Robot Body without Front Face
 // 0 Name: s\30361as01.dat
 // 0 Author: Franklin W. Cain [fwcain]
-// 0 !LDRAW_ORG Subpart UPDATE 2012-03
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -32,7 +32,8 @@ function ldraw_lib__s__30361as01() = [
 // 0 !HISTORY 2012-05-14 [TK-949] Widened Front Face
 // 0 !HISTORY 2012-05-15 [PTadmin] Renamed from s\30361s01
 // 0 !HISTORY 2012-12-28 [PTadmin] Official Update 2012-03
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 -18 0 0 0 1 0 2 0 0 0 0 2 4-4ring3.dat
   [1,16,-18,0,0,0,1,0,2,0,0,0,0,2, ldraw_lib__4_4ring3()],
@@ -44,8 +45,8 @@ function ldraw_lib__s__30361as01() = [
   [1,16,-2,0,0,0,-16,0,6,0,0,0,0,6, ldraw_lib__4_4cylo()],
 // 1 16 0 30 0 0 0 2 0 -1 0 2 0 0 4-4ring9.dat
   [1,16,0,30,0,0,0,2,0,-1,0,2,0,0, ldraw_lib__4_4ring9()],
-// 1 16 0 30 0 0 0 1.129 0 -1 0 1.129 0 0 4-4rin15.dat
-  [1,16,0,30,0,0,0,1.129,0,-1,0,1.129,0,0, ldraw_lib__4_4rin15()],
+// 1 16 0 30 0 0 0 1.129 0 -1 0 1.129 0 0 4-4ring15.dat
+  [1,16,0,30,0,0,0,1.129,0,-1,0,1.129,0,0, ldraw_lib__4_4ring15()],
 // 1 16 0 30 0 14.14 0 -14.14 0 -40 0 14.14 0 14.14 1-4cyli.dat
   [1,16,0,30,0,14.14,0,-14.14,0,-40,0,14.14,0,14.14, ldraw_lib__1_4cyli()],
 // 1 16 0 -10 0 14.14 0 -14.14 0 1 0 14.14 0 14.14 1-4chrd.dat

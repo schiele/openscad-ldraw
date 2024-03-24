@@ -1,12 +1,12 @@
 use <../../lib.scad>
 use <../../p/3-16cylo.scad>
-use <../../p/3-16rin3.scad>
+use <../../p/3-16ring3.scad>
 use <../../p/48/1-12cylo.scad>
 function ldraw_lib__s__72024s02() = [
 // 0 ~Container  8 x  8 x  3 Cupcake - Understuds - 1 / 8
 // 0 Name: s\72024s02.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
-// 0 !LDRAW_ORG Subpart UPDATE 2023-05
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -14,7 +14,8 @@ function ldraw_lib__s__72024s02() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2023-10-31 [OrionP] Official Update 2023-05
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Rounded Halfstud
 // 1 16 20 16 20 -5.65685 0 5.65685 0 -4 0 -5.65685 0 -5.65685 3-16cylo.dat
@@ -23,8 +24,8 @@ function ldraw_lib__s__72024s02() = [
   [0,"BFC","INVERTNEXT"],
 // 1 16 20 16 20 -4.24264 0 4.24264 0 -4 0 -4.24264 0 -4.24264 3-16cylo.dat
   [1,16,20,16,20,-4.24264,0,4.24264,0,-4,0,-4.24264,0,-4.24264, ldraw_lib__3_16cylo()],
-// 1 16 20 16 20 -1.41421 0 1.41421 0 -1 0 -1.41421 0 -1.41421 3-16rin3.dat
-  [1,16,20,16,20,-1.41421,0,1.41421,0,-1,0,-1.41421,0,-1.41421, ldraw_lib__3_16rin3()],
+// 1 16 20 16 20 -1.41421 0 1.41421 0 -1 0 -1.41421 0 -1.41421 3-16ring3.dat
+  [1,16,20,16,20,-1.41421,0,1.41421,0,-1,0,-1.41421,0,-1.41421, ldraw_lib__3_16ring3()],
 // 4 16 22.2961 12 14.4566 23.1035 12 14.9961 23.1035 16 14.9961 22.2961 16 14.4566
   [4,16,22.2961,12,14.4566,23.1035,12,14.9961,23.1035,16,14.9961,22.2961,16,14.4566],
 // 4 16 22.2961 16 14.4566 23.1035 16 14.9961 25.6569 16 14.3431 23.0615 16 12.6088

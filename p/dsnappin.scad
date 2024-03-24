@@ -4,7 +4,7 @@ use <1-8edge.scad>
 use <4-4con16.scad>
 use <4-4cylo.scad>
 use <4-4edge.scad>
-use <4-4rin10.scad>
+use <4-4ring10.scad>
 use <4-4ring3.scad>
 use <4-4ring4.scad>
 use <rect.scad>
@@ -13,7 +13,7 @@ function ldraw_lib__dsnappin() = [
 // 0 Duplo Snapping Pin for Turntables
 // 0 Name: dsnappin.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Primitive UPDATE 2023-01
+// 0 !LDRAW_ORG Primitive UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -21,7 +21,8 @@ function ldraw_lib__dsnappin() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2023-03-05 [OrionP] Official Update 2023-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Fits dsnapridge primitive
 // 0 // (ridges inside Duplo tubes R14 internal)
@@ -32,8 +33,8 @@ function ldraw_lib__dsnappin() = [
   [1,16,0,-10.5,0,10.5,0,0,0,-3,0,0,0,10.5, ldraw_lib__4_4cylo()],
 // 1 16 0 -10.5 0 3.5 0 0 0 1 0 0 0 3.5 4-4ring3.dat
   [1,16,0,-10.5,0,3.5,0,0,0,1,0,0,0,3.5, ldraw_lib__4_4ring3()],
-// 1 16 0 -13.5 0 1.05 0 0 0 -1 0 0 0 1.05 4-4rin10.dat
-  [1,16,0,-13.5,0,1.05,0,0,0,-1,0,0,0,1.05, ldraw_lib__4_4rin10()],
+// 1 16 0 -13.5 0 1.05 0 0 0 -1 0 0 0 1.05 4-4ring10.dat
+  [1,16,0,-13.5,0,1.05,0,0,0,-1,0,0,0,1.05, ldraw_lib__4_4ring10()],
 // 1 16 0 -13.5 0 11.55 0 0 0 -1 0 0 0 11.55 4-4edge.dat
   [1,16,0,-13.5,0,11.55,0,0,0,-1,0,0,0,11.55, ldraw_lib__4_4edge()],
 // 1 16 0 -13.5 0 0.67941 0 0 0 -6.5 0 0 0 0.67941 4-4con16.dat

@@ -6,8 +6,8 @@ use <../p/4-4con3.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4edge.scad>
-use <../p/4-4rin11.scad>
-use <../p/4-4rin12.scad>
+use <../p/4-4ring11.scad>
+use <../p/4-4ring12.scad>
 use <../p/4-4ring8.scad>
 use <../p/4-8sphe.scad>
 use <../p/beamhole.scad>
@@ -18,7 +18,7 @@ function ldraw_lib__50900() = [
 // 0 Technic Bionicle Rhotuka Spinner Ripcord 12L with Hand Grip
 // 0 Name: 50900.dat
 // 0 Author: Michael Heidemann [mikeheide]
-// 0 !LDRAW_ORG Part UPDATE 2013-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -26,7 +26,8 @@ function ldraw_lib__50900() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2013-07-21 [PTadmin] Official Update 2013-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Details of the grip are missing.
 // 
@@ -585,14 +586,14 @@ function ldraw_lib__50900() = [
   [1,16,-40,1.5,0,0,0,26,0,26,0,26,0,0, ldraw_lib__t01o1154()],
 // 1 16 -40 -1.5 0 0 0 26 0 -26 0 -26 0 0 t01o1154.dat
   [1,16,-40,-1.5,0,0,0,26,0,-26,0,-26,0,0, ldraw_lib__t01o1154()],
-// 1 16 -40 -4.5 0 0 0 2 0 1 0 2 0 0 4-4rin11.dat
-  [1,16,-40,-4.5,0,0,0,2,0,1,0,2,0,0, ldraw_lib__4_4rin11()],
-// 1 16 -40 -4.5 0 0 0 2 0 1 0 2 0 0 4-4rin12.dat
-  [1,16,-40,-4.5,0,0,0,2,0,1,0,2,0,0, ldraw_lib__4_4rin12()],
-// 1 16 -40 4.5 0 0 0 2 0 -1 0 -2 0 0 4-4rin11.dat
-  [1,16,-40,4.5,0,0,0,2,0,-1,0,-2,0,0, ldraw_lib__4_4rin11()],
-// 1 16 -40 4.5 0 0 0 2 0 -1 0 -2 0 0 4-4rin12.dat
-  [1,16,-40,4.5,0,0,0,2,0,-1,0,-2,0,0, ldraw_lib__4_4rin12()],
+// 1 16 -40 -4.5 0 0 0 2 0 1 0 2 0 0 4-4ring11.dat
+  [1,16,-40,-4.5,0,0,0,2,0,1,0,2,0,0, ldraw_lib__4_4ring11()],
+// 1 16 -40 -4.5 0 0 0 2 0 1 0 2 0 0 4-4ring12.dat
+  [1,16,-40,-4.5,0,0,0,2,0,1,0,2,0,0, ldraw_lib__4_4ring12()],
+// 1 16 -40 4.5 0 0 0 2 0 -1 0 -2 0 0 4-4ring11.dat
+  [1,16,-40,4.5,0,0,0,2,0,-1,0,-2,0,0, ldraw_lib__4_4ring11()],
+// 1 16 -40 4.5 0 0 0 2 0 -1 0 -2 0 0 4-4ring12.dat
+  [1,16,-40,4.5,0,0,0,2,0,-1,0,-2,0,0, ldraw_lib__4_4ring12()],
 // 1 16 -40 4.5 0 0 0 22 0 -1 0 22 0 0 4-4edge.dat
   [1,16,-40,4.5,0,0,0,22,0,-1,0,22,0,0, ldraw_lib__4_4edge()],
 // 1 16 -40 -4.5 0 0 0 22 0 -1 0 22 0 0 4-4edge.dat

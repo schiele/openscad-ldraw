@@ -11,13 +11,13 @@ use <../p/4-4cyli.scad>
 use <../p/4-4cylo.scad>
 use <../p/4-4edge.scad>
 use <../p/4-4ring2.scad>
-use <../p/7-8rin12.scad>
+use <../p/7-8ring12.scad>
 use <../p/stud4o.scad>
 function ldraw_lib__4506() = [
 // 0 Minifig Forestman Cap
 // 0 Name: 4506.dat
 // 0 Author: Chris Dee [cwdee]
-// 0 !LDRAW_ORG Part UPDATE 2014-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CW
@@ -25,7 +25,7 @@ function ldraw_lib__4506() = [
   [0,"BFC","CW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Castle, forestmen, hat, hunt, hunter, hunting, Robin Hood
+// 0 !KEYWORDS Castle, Robin Hood, forestmen, hat, hunt, hunter, hunting
 // 
 // 0 !HISTORY 2004-09-15 [PTadmin] Official Update 2004-03
 // 0 !HISTORY 2007-07-22 [PTadmin] Header formatted for Contributor Agreement
@@ -33,14 +33,15 @@ function ldraw_lib__4506() = [
 // 0 !HISTORY 2010-07-18 [PTadmin] Renamed from 775
 // 0 !HISTORY 2013-07-31 [MMR1988] Reworked a bit
 // 0 !HISTORY 2014-12-23 [PTadmin] Official Update 2014-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 -4 0 1 0 0 0 -1 0 0 0 -1 stud4o.dat
   [1,16,0,-4,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__stud4o()],
 // 1 16 0 0 0 -4 0 0 0 -1 0 0 0 -4 3-4ring2.dat
   [1,16,0,0,0,-4,0,0,0,-1,0,0,0,-4, ldraw_lib__3_4ring2()],
-// 1 16 0 0 0 -1 0 0 0 -1 0 0 0 -1 7-8rin12.dat
-  [1,16,0,0,0,-1,0,0,0,-1,0,0,0,-1, ldraw_lib__7_8rin12()],
+// 1 16 0 0 0 -1 0 0 0 -1 0 0 0 -1 7-8ring12.dat
+  [1,16,0,0,0,-1,0,0,0,-1,0,0,0,-1, ldraw_lib__7_8ring12()],
 // 1 16 0 0 0 0 0 -12 0 -1 0 12 0 0 1-8chrd.dat
   [1,16,0,0,0,0,0,-12,0,-1,0,12,0,0, ldraw_lib__1_8chrd()],
 // 1 16 0 0 0 0 0 -8 0 -1 0 8 0 0 1-4ndis.dat

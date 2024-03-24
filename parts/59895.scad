@@ -1,26 +1,26 @@
 use <../lib.scad>
 use <../p/3-8cyli.scad>
 use <../p/3-8edge.scad>
-use <../p/3-8rin12.scad>
+use <../p/3-8ring12.scad>
 use <../p/4-4con35.scad>
 use <../p/4-4con4.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4cylo.scad>
 use <../p/4-4edge.scad>
-use <../p/4-4rin12.scad>
-use <../p/4-4rin15.scad>
+use <../p/4-4ring12.scad>
+use <../p/4-4ring15.scad>
 use <../p/4-4ring2.scad>
 use <../p/4-4ring6.scad>
 use <../p/4-4ring8.scad>
 use <../p/5-16cyli.scad>
 use <../p/5-16edge.scad>
-use <../p/5-16ri12.scad>
+use <../p/5-16ring12.scad>
 use <../p/rect.scad>
 function ldraw_lib__59895() = [
 // 0 Tyre  4/ 80 x  8 Single Smooth Type 2
 // 0 Name: 59895.dat
 // 0 Author: J.C. Tchang [tchang]
-// 0 !LDRAW_ORG Part UPDATE 2011-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -31,7 +31,8 @@ function ldraw_lib__59895() = [
 // 0 !HISTORY 2011-06-02 [MagFors] Added details on one side, renamed to standardized nomenclature
 // 0 !HISTORY 2011-06-02 [MagFors] Optimized and rearranged primitives
 // 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Nomenclature: width_(mm)/profile_as_%age_of_width x rim_diameter_(mm)
 // 
@@ -77,16 +78,16 @@ function ldraw_lib__59895() = [
   [1,16,0,0,5,0,0,15,15,0,0,0,0.5,0, ldraw_lib__4_4cylo()],
 // 1 16 0 0 5 0 0 16 16 0 0 0 0.5 0 4-4cylo.dat
   [1,16,0,0,5,0,0,16,16,0,0,0,0.5,0, ldraw_lib__4_4cylo()],
-// 1 16 0 0 5.5 0 0 1 1 0 0 0 -1 0 4-4rin15.dat
-  [1,16,0,0,5.5,0,0,1,1,0,0,0,-1,0, ldraw_lib__4_4rin15()],
+// 1 16 0 0 5.5 0 0 1 1 0 0 0 -1 0 4-4ring15.dat
+  [1,16,0,0,5.5,0,0,1,1,0,0,0,-1,0, ldraw_lib__4_4ring15()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 5 0 0 12 12 0 0 0 0.5 0 4-4cylo.dat
   [1,16,0,0,5,0,0,12,12,0,0,0,0.5,0, ldraw_lib__4_4cylo()],
 // 1 16 0 0 5 0 0 13 13 0 0 0 0.5 0 4-4cylo.dat
   [1,16,0,0,5,0,0,13,13,0,0,0,0.5,0, ldraw_lib__4_4cylo()],
-// 1 16 0 0 5.5 0 0 1 1 0 0 0 -1 0 4-4rin12.dat
-  [1,16,0,0,5.5,0,0,1,1,0,0,0,-1,0, ldraw_lib__4_4rin12()],
+// 1 16 0 0 5.5 0 0 1 1 0 0 0 -1 0 4-4ring12.dat
+  [1,16,0,0,5.5,0,0,1,1,0,0,0,-1,0, ldraw_lib__4_4ring12()],
 // 1 16 0 0 5 0 0 -5 5 0 0 0 -1 0 4-4ring2.dat
   [1,16,0,0,5,0,0,-5,5,0,0,0,-1,0, ldraw_lib__4_4ring2()],
 // 1 16 0 0 5 0 0 -2.5 2.5 0 0 0 -1 0 4-4ring6.dat
@@ -171,8 +172,8 @@ function ldraw_lib__59895() = [
   [1,16,0,0,-5,0,0,15,15,0,0,0,-0.5,0, ldraw_lib__4_4cylo()],
 // 1 16 0 0 -5 0 0 16 16 0 0 0 -0.5 0 4-4cylo.dat
   [1,16,0,0,-5,0,0,16,16,0,0,0,-0.5,0, ldraw_lib__4_4cylo()],
-// 1 16 0 0 -5.5 0 0 1 1 0 0 0 1 0 4-4rin15.dat
-  [1,16,0,0,-5.5,0,0,1,1,0,0,0,1,0, ldraw_lib__4_4rin15()],
+// 1 16 0 0 -5.5 0 0 1 1 0 0 0 1 0 4-4ring15.dat
+  [1,16,0,0,-5.5,0,0,1,1,0,0,0,1,0, ldraw_lib__4_4ring15()],
 // 0 //
 // 1 16 0 0 -5 0 0 12 12 0 0 0 -1 0 5-16edge.dat
   [1,16,0,0,-5,0,0,12,12,0,0,0,-1,0, ldraw_lib__5_16edge()],
@@ -192,8 +193,8 @@ function ldraw_lib__59895() = [
   [1,16,0,0,-5,0,0,12,12,0,0,0,-0.5,0, ldraw_lib__5_16cyli()],
 // 1 16 0 0 -5 0 0 13 13 0 0 0 -0.5 0 5-16cyli.dat
   [1,16,0,0,-5,0,0,13,13,0,0,0,-0.5,0, ldraw_lib__5_16cyli()],
-// 1 16 0 0 -5.5 0 0 1 1 0 0 0 1 0 5-16ri12.dat
-  [1,16,0,0,-5.5,0,0,1,1,0,0,0,1,0, ldraw_lib__5_16ri12()],
+// 1 16 0 0 -5.5 0 0 1 1 0 0 0 1 0 5-16ring12.dat
+  [1,16,0,0,-5.5,0,0,1,1,0,0,0,1,0, ldraw_lib__5_16ring12()],
 // 1 16 0 0 -5 0 0 -12 -12 0 0 0 -1 0 3-8edge.dat
   [1,16,0,0,-5,0,0,-12,-12,0,0,0,-1,0, ldraw_lib__3_8edge()],
 // 1 16 0 0 -5 0 0 -13 -13 0 0 0 -1 0 3-8edge.dat
@@ -212,8 +213,8 @@ function ldraw_lib__59895() = [
   [1,16,0,0,-5,0,0,-12,-12,0,0,0,-0.5,0, ldraw_lib__3_8cyli()],
 // 1 16 0 0 -5 0 0 -13 -13 0 0 0 -0.5 0 3-8cyli.dat
   [1,16,0,0,-5,0,0,-13,-13,0,0,0,-0.5,0, ldraw_lib__3_8cyli()],
-// 1 16 0 0 -5.5 0 0 -1 -1 0 0 0 1 0 3-8rin12.dat
-  [1,16,0,0,-5.5,0,0,-1,-1,0,0,0,1,0, ldraw_lib__3_8rin12()],
+// 1 16 0 0 -5.5 0 0 -1 -1 0 0 0 1 0 3-8ring12.dat
+  [1,16,0,0,-5.5,0,0,-1,-1,0,0,0,1,0, ldraw_lib__3_8ring12()],
 // 
 ];
 module ldraw_lib__59895(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)

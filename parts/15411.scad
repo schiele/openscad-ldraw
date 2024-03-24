@@ -4,8 +4,8 @@ use <../p/4-4cyli.scad>
 use <../p/4-4edge.scad>
 use <../p/4-4ndis.scad>
 use <../p/7-16cylo.scad>
-use <../p/7-16rin4.scad>
 use <../p/7-16ring11.scad>
+use <../p/7-16ring4.scad>
 use <../p/7-16ring6.scad>
 use <../p/box3u6.scad>
 use <../p/box4t.scad>
@@ -15,7 +15,7 @@ function ldraw_lib__15411() = [
 // 0 Brick  1 x  1 with Conductive Element and Stud on Opposite Sides
 // 0 Name: 15411.dat
 // 0 Author: Owen Burgoyne [C3POwen]
-// 0 !LDRAW_ORG Part UPDATE 2019-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -23,7 +23,8 @@ function ldraw_lib__15411() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 4 16 -10 24 -10 -10 24 10 -6 24 6 -6 24 -6
   [4,16,-10,24,-10,-10,24,10,-6,24,6,-6,24,-6],
@@ -88,10 +89,10 @@ function ldraw_lib__15411() = [
   [1,16,0,12,-14.5,0,0,-0.5,0.5,0,0,0,1,0, ldraw_lib__7_16ring11()],
 // 1 16 0 12 -14.5 0 0 0.5 0.5 0 0 0 1 0 7-16ring11.dat
   [1,16,0,12,-14.5,0,0,0.5,0.5,0,0,0,1,0, ldraw_lib__7_16ring11()],
-// 1 16 0 12 -14.5 0 0 -1.5 1.5 0 0 0 1 0 7-16rin4.dat
-  [1,16,0,12,-14.5,0,0,-1.5,1.5,0,0,0,1,0, ldraw_lib__7_16rin4()],
-// 1 16 0 12 -14.5 0 0 1.5 1.5 0 0 0 1 0 7-16rin4.dat
-  [1,16,0,12,-14.5,0,0,1.5,1.5,0,0,0,1,0, ldraw_lib__7_16rin4()],
+// 1 16 0 12 -14.5 0 0 -1.5 1.5 0 0 0 1 0 7-16ring4.dat
+  [1,16,0,12,-14.5,0,0,-1.5,1.5,0,0,0,1,0, ldraw_lib__7_16ring4()],
+// 1 16 0 12 -14.5 0 0 1.5 1.5 0 0 0 1 0 7-16ring4.dat
+  [1,16,0,12,-14.5,0,0,1.5,1.5,0,0,0,1,0, ldraw_lib__7_16ring4()],
 // 1 16 0 12 -14.5 0 0 -1.25 1.25 0 0 0 1 0 7-16ring6.dat
   [1,16,0,12,-14.5,0,0,-1.25,1.25,0,0,0,1,0, ldraw_lib__7_16ring6()],
 // 1 16 0 12 -14.5 0 0 1.25 1.25 0 0 0 1 0 7-16ring6.dat

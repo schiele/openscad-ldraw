@@ -4,10 +4,10 @@ use <4-4ndis.scad>
 use <axlehol2.scad>
 use <axlehol9.scad>
 function ldraw_lib__axlecaph() = [
-// 0 Axle Endcap with Hole 4D
+// 0 Technic Axle Endcap with Hole 4D
 // 0 Name: axlecaph.dat
 // 0 Author: Jens Bauer [rockford]
-// 0 !LDRAW_ORG Primitive UPDATE 2019-01
+// 0 !LDRAW_ORG Primitive UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -16,7 +16,8 @@ function ldraw_lib__axlecaph() = [
 // 
 // 0 !HISTORY 2018-12-02 [MagFors] used a ndis primitive
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
-// 
+// 0 !HISTORY 2024-02-07 [Holly-Wood] Added 'Technic' to the description
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 1 0 2 0 0 0 1 0 0 0 2 4-4edge.dat
   [1,16,0,1,0,2,0,0,0,1,0,0,0,2, ldraw_lib__4_4edge()],

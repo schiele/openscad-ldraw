@@ -4,7 +4,7 @@ use <../../p/2-4cylo.scad>
 use <../../p/2-4disc.scad>
 use <../../p/2-4edge.scad>
 use <../../p/2-4ndis.scad>
-use <../../p/2-4rin15.scad>
+use <../../p/2-4ring15.scad>
 use <../../p/2-4ring6.scad>
 use <../../p/2-4ring7.scad>
 use <../../p/3-16chrd.scad>
@@ -20,7 +20,7 @@ function ldraw_lib__s__6088s01() = [
 // 0 ~Minifig Helmet with Underwater Antenna and Clips - Half
 // 0 Name: s\6088s01.dat
 // 0 Author: Nils Schmidt [BlackBrick89]
-// 0 !LDRAW_ORG Subpart UPDATE 2022-04
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -31,7 +31,8 @@ function ldraw_lib__s__6088s01() = [
 // 0 !HISTORY 2018-07-16 [MagFors] File preparation for LDraw Parts Tracker
 // 0 !HISTORY 2021-04-06 [Holly-Wood] Fixed rounding error
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
@@ -125,8 +126,8 @@ function ldraw_lib__s__6088s01() = [
   [1,16,23.1,40.45,16.92,0,0,-4.59,0,-1,0,3.16,0,0, ldraw_lib__3_16chrd()],
 // 
 // 0 // new propellor
-// 1 16 0 37.8 16.8 0 0 1 -1 0 0 0 -1 0 2-4rin15.dat
-  [1,16,0,37.8,16.8,0,0,1,-1,0,0,0,-1,0, ldraw_lib__2_4rin15()],
+// 1 16 0 37.8 16.8 0 0 1 -1 0 0 0 -1 0 2-4ring15.dat
+  [1,16,0,37.8,16.8,0,0,1,-1,0,0,0,-1,0, ldraw_lib__2_4ring15()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 37.8 16.3 0 0 15 -15 0 0 0 0.5 0 2-4cylo.dat

@@ -10,7 +10,7 @@ use <../../p/2-4ring2.scad>
 use <../../p/2-4ring9.scad>
 use <../../p/3-16cyli.scad>
 use <../../p/3-16edge.scad>
-use <../../p/3-16rin3.scad>
+use <../../p/3-16ring3.scad>
 use <../../p/3-4ring2.scad>
 use <../../p/3-4ring9.scad>
 use <../../p/4-4cylc.scad>
@@ -32,7 +32,7 @@ function ldraw_lib__s__47715s00() = [
 // 0 ~Motor Pull Back  4 x  9 x  2.667 Half
 // 0 Name: s\47715s00.dat
 // 0 Author: Joerg Sommerer [Brickaneer]
-// 0 !LDRAW_ORG Subpart UPDATE 2023-06
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -42,6 +42,8 @@ function ldraw_lib__s__47715s00() = [
 // 0 !HISTORY 2013-12-23 [PTadmin] Official Update 2013-02
 // 0 !HISTORY 2023-07-26 [MagFors] Adapted to rounded npeg corners
 // 0 !HISTORY 2023-11-19 [OrionP] Official Update 2023-06
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 2 24 20 64 70 20 64 -90
   [2,24,20,64,70,20,64,-90],
@@ -75,8 +77,8 @@ function ldraw_lib__s__47715s00() = [
   [1,16,12,64,48,-4,0,0,0,-1,0,0,0,2, ldraw_lib__rect2p()],
 // 4 16 8 64 50 8 64 46 4 64 46 6 64 50
   [4,16,8,64,50,8,64,46,4,64,46,6,64,50],
-// 1 16 0 64 50 .7654 0 1.8478 0 -1 0 1.8478 0 -.7654 3-16rin3.dat
-  [1,16,0,64,50,.7654,0,1.8478,0,-1,0,1.8478,0,-.7654, ldraw_lib__3_16rin3()],
+// 1 16 0 64 50 .7654 0 1.8478 0 -1 0 1.8478 0 -.7654 3-16ring3.dat
+  [1,16,0,64,50,.7654,0,1.8478,0,-1,0,1.8478,0,-.7654, ldraw_lib__3_16ring3()],
 // 4 16 2 64 57.6023 3.0616 64 57.3912 2.2962 64 55.5434 2 64 55.6023
   [4,16,2,64,57.6023,3.0616,64,57.3912,2.2962,64,55.5434,2,64,55.6023],
 // 2 24 6 64 50 6 60 50

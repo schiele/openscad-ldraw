@@ -4,7 +4,7 @@ use <../p/4-4edge.scad>
 use <../p/4-4ring8.scad>
 use <../p/48/4-4cyli.scad>
 use <../p/48/4-4edge.scad>
-use <../p/48/4-4rin42.scad>
+use <../p/48/4-4ring42.scad>
 use <../p/48/4-4ring5.scad>
 use <../p/peghole.scad>
 use <s/59521s01.scad>
@@ -13,7 +13,7 @@ function ldraw_lib__59521() = [
 // 0 Wheel 28 x 158 with 3 Spokes
 // 0 Name: 59521.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2012-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CW
@@ -24,7 +24,8 @@ function ldraw_lib__59521() = [
 // 0 !KEYWORDS Exo-Force, Mobile Devastator, set 8108
 // 
 // 0 !HISTORY 2012-08-09 [PTadmin] Official Update 2012-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Nomenclature: width_(mm) x rim_diameter_(mm) [optional qualifier]
 // 
@@ -66,10 +67,10 @@ function ldraw_lib__59521() = [
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 -25 142.8 0 0 0 0 -142.8 0 50 0 48\4-4cyli.dat
   [1,16,0,0,-25,142.8,0,0,0,0,-142.8,0,50,0, ldraw_lib__48__4_4cyli()],
-// 1 16 0 0 -25 3.4 0 0 0 0 -3.4 0 1 0 48\4-4rin42.dat
-  [1,16,0,0,-25,3.4,0,0,0,0,-3.4,0,1,0, ldraw_lib__48__4_4rin42()],
-// 1 16 0 0 25 -3.4 0 0 0 0 -3.4 0 -1 0 48\4-4rin42.dat
-  [1,16,0,0,25,-3.4,0,0,0,0,-3.4,0,-1,0, ldraw_lib__48__4_4rin42()],
+// 1 16 0 0 -25 3.4 0 0 0 0 -3.4 0 1 0 48\4-4ring42.dat
+  [1,16,0,0,-25,3.4,0,0,0,0,-3.4,0,1,0, ldraw_lib__48__4_4ring42()],
+// 1 16 0 0 25 -3.4 0 0 0 0 -3.4 0 -1 0 48\4-4ring42.dat
+  [1,16,0,0,25,-3.4,0,0,0,0,-3.4,0,-1,0, ldraw_lib__48__4_4ring42()],
 // 1 16 0 0 25 146.2 0 0 0 0 -146.2 0 1 0 48\4-4edge.dat
   [1,16,0,0,25,146.2,0,0,0,0,-146.2,0,1,0, ldraw_lib__48__4_4edge()],
 // 1 16 0 0 -25 146.2 0 0 0 0 -146.2 0 1 0 48\4-4edge.dat

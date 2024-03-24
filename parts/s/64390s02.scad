@@ -6,7 +6,7 @@ use <../../p/1-8cylo.scad>
 use <../../p/3-8cyli.scad>
 use <../../p/3-8cylo.scad>
 use <../../p/3-8edge.scad>
-use <../../p/3-8rin24.scad>
+use <../../p/3-8ring24.scad>
 use <../../p/3-8ring29.scad>
 use <../../p/3-8ring3.scad>
 use <../../p/3-8ring5.scad>
@@ -14,7 +14,7 @@ function ldraw_lib__s__64390s02() = [
 // 0 ~Door  1 x  4 x  6 with Window and Reinforced Edge - Quarter Keyhole
 // 0 Name: s\64390s02.dat
 // 0 Author: Vincent Messenet [Cheenzo]
-// 0 !LDRAW_ORG Subpart UPDATE 2020-03
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -22,7 +22,8 @@ function ldraw_lib__s__64390s02() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
@@ -36,8 +37,8 @@ function ldraw_lib__s__64390s02() = [
   [1,16,0,0,-5.125,-.12,0,-.12,.12,0,-.12,0,1,0, ldraw_lib__3_8ring29()],
 // 1 16 0 0 -5.125 -3.6 0 -3.6 3.6 0 -3.6 0 4.5 0 3-8cylo.dat
   [1,16,0,0,-5.125,-3.6,0,-3.6,3.6,0,-3.6,0,4.5,0, ldraw_lib__3_8cylo()],
-// 1 16 0 0 -.625 -.15 0 -.15 .15 0 -.15 0 1 0 3-8rin24.dat
-  [1,16,0,0,-.625,-.15,0,-.15,.15,0,-.15,0,1,0, ldraw_lib__3_8rin24()],
+// 1 16 0 0 -.625 -.15 0 -.15 .15 0 -.15 0 1 0 3-8ring24.dat
+  [1,16,0,0,-.625,-.15,0,-.15,.15,0,-.15,0,1,0, ldraw_lib__3_8ring24()],
 // 1 16 0 0 -.625 -1.25 0 -1.25 1.25 0 -1.25 0 1 0 3-8ring3.dat
   [1,16,0,0,-.625,-1.25,0,-1.25,1.25,0,-1.25,0,1,0, ldraw_lib__3_8ring3()],
 // 1 16 0 0 -.625 -5 0 5 -5 0 -5 0 .625 0 1-8cylo.dat

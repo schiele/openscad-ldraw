@@ -3,16 +3,16 @@ use <../p/48/4-4crh2.scad>
 use <../p/48/4-4cyli.scad>
 use <../p/48/4-4edge.scad>
 use <../p/48/4-4ndis.scad>
-use <../p/48/4-4rin12.scad>
-use <../p/48/4-4rin13.scad>
-use <../p/48/4-4rin14.scad>
+use <../p/48/4-4ring12.scad>
+use <../p/48/4-4ring13.scad>
+use <../p/48/4-4ring14.scad>
 use <../p/48/4-4ring3.scad>
 use <../p/box4.scad>
 function ldraw_lib__47156() = [
 // 0 ~Electric Technic Motor 9V Geared (480 RPM) Shaft
 // 0 Name: 47156.dat
 // 0 Author: Guy Vivan [guyvivan]
-// 0 !LDRAW_ORG Part UPDATE 2010-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -20,7 +20,8 @@ function ldraw_lib__47156() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2010-07-05 [PTadmin] Official Update 2010-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 58 -40 -15 0 0 0 0 -15 0 4 0 48\4-4edge.dat
   [1,16,0,58,-40,-15,0,0,0,0,-15,0,4,0, ldraw_lib__48__4_4edge()],
@@ -30,10 +31,10 @@ function ldraw_lib__47156() = [
   [1,16,0,58,-40,-15,0,0,0,0,-15,0,4,0, ldraw_lib__48__4_4cyli()],
 // 1 16 0 58 -32 -13 0 0 0 0 -13 0 4 0 48\4-4edge.dat
   [1,16,0,58,-32,-13,0,0,0,0,-13,0,4,0, ldraw_lib__48__4_4edge()],
-// 1 16 0 58 -40 1 0 0 0 0 1 0 1 0 48\4-4rin14.dat
-  [1,16,0,58,-40,1,0,0,0,0,1,0,1,0, ldraw_lib__48__4_4rin14()],
-// 1 16 0 58 -40 1 0 0 0 0 1 0 1 0 48\4-4rin13.dat
-  [1,16,0,58,-40,1,0,0,0,0,1,0,1,0, ldraw_lib__48__4_4rin13()],
+// 1 16 0 58 -40 1 0 0 0 0 1 0 1 0 48\4-4ring14.dat
+  [1,16,0,58,-40,1,0,0,0,0,1,0,1,0, ldraw_lib__48__4_4ring14()],
+// 1 16 0 58 -40 1 0 0 0 0 1 0 1 0 48\4-4ring13.dat
+  [1,16,0,58,-40,1,0,0,0,0,1,0,1,0, ldraw_lib__48__4_4ring13()],
 // 1 16 0 58 -36 15 0 0 0 0 15 0 4 0 48\4-4ndis.dat
   [1,16,0,58,-36,15,0,0,0,0,15,0,4,0, ldraw_lib__48__4_4ndis()],
 // 1 16 0 58 -32 13 0 0 0 0 13 0 -1 0 48\4-4ndis.dat
@@ -56,8 +57,8 @@ function ldraw_lib__47156() = [
   [1,15,0,58,-32,-13,0,0,0,0,-13,0,2,0, ldraw_lib__48__4_4cyli()],
 // 1 15 0 58 -30 3 0 0 0 0 3 0 1 0 48\4-4ring3.dat
   [1,15,0,58,-30,3,0,0,0,0,3,0,1,0, ldraw_lib__48__4_4ring3()],
-// 1 15 0 58 -30 1 0 0 0 0 1 0 1 0 48\4-4rin12.dat
-  [1,15,0,58,-30,1,0,0,0,0,1,0,1,0, ldraw_lib__48__4_4rin12()],
+// 1 15 0 58 -30 1 0 0 0 0 1 0 1 0 48\4-4ring12.dat
+  [1,15,0,58,-30,1,0,0,0,0,1,0,1,0, ldraw_lib__48__4_4ring12()],
 // 1 15 0 58 -30 -9 0 0 0 0 -9 0 4 0 48\4-4edge.dat
   [1,15,0,58,-30,-9,0,0,0,0,-9,0,4,0, ldraw_lib__48__4_4edge()],
 // 1 15 0 58 -30 -13 0 0 0 0 -13 0 4 0 48\4-4edge.dat

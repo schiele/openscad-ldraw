@@ -1,13 +1,13 @@
 use <../../lib.scad>
 use <../../p/2-4con2.scad>
 use <../../p/2-4cylo.scad>
-use <../../p/2-4rin12.scad>
+use <../../p/2-4ring12.scad>
 use <../../p/5-16cyli.scad>
 function ldraw_lib__s__25971s01() = [
 // 0 ~Minifig Headdress Bird Half without Patternable Areas
 // 0 Name: s\25971s01.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Subpart UPDATE 2020-01
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -17,7 +17,8 @@ function ldraw_lib__s__25971s01() = [
 // 0 !HISTORY 2016-10-05 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2019-05-19 [Philo] File preparation for LDraw Parts Tracker
 // 0 !HISTORY 2020-06-28 [PTadmin] Official Update 2020-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 -3 0 0 0 8 0 3 0 -8 0 0 2-4cylo.dat
   [1,16,0,-3,0,0,0,8,0,3,0,-8,0,0, ldraw_lib__2_4cylo()],
@@ -29,8 +30,8 @@ function ldraw_lib__s__25971s01() = [
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 3 0 0 0 4.33333 0 -6 0 4.33333 0 0 2-4con2.dat
   [1,16,0,3,0,0,0,4.33333,0,-6,0,4.33333,0,0, ldraw_lib__2_4con2()],
-// 1 16 0 -3 0 0 0 0.66667 0 -3 0 -0.66667 0 0 2-4rin12.dat
-  [1,16,0,-3,0,0,0,0.66667,0,-3,0,-0.66667,0,0, ldraw_lib__2_4rin12()],
+// 1 16 0 -3 0 0 0 0.66667 0 -3 0 -0.66667 0 0 2-4ring12.dat
+  [1,16,0,-3,0,0,0,0.66667,0,-3,0,-0.66667,0,0, ldraw_lib__2_4ring12()],
 // 
 // 3 16 0 26.501 -13.186 0 18.594 -13.125 3.556 18.513 -12.633
   [3,16,0,26.501,-13.186,0,18.594,-13.125,3.556,18.513,-12.633],

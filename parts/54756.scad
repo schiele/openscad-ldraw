@@ -1,9 +1,9 @@
 use <../lib.scad>
 use <../p/4-4cylo.scad>
 use <../p/4-4ndis.scad>
-use <../p/4-4rin10.scad>
-use <../p/4-4rin15.scad>
 use <../p/4-4ring1.scad>
+use <../p/4-4ring10.scad>
+use <../p/4-4ring15.scad>
 use <../p/4-4ring2.scad>
 use <s/54756s01.scad>
 use <../p/stud3.scad>
@@ -11,7 +11,7 @@ function ldraw_lib__54756() = [
 // 0 ~Electric Power Functions Train Motor - Bottom
 // 0 Name: 54756.dat
 // 0 Author: Santeri Piippo [arezey]
-// 0 !LDRAW_ORG Part UPDATE 2023-05
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -20,7 +20,8 @@ function ldraw_lib__54756() = [
 // 
 // 0 !HISTORY 2022-01-02 [MMR1988] Fixed 3D scaled 2D prims
 // 0 !HISTORY 2023-10-31 [OrionP] Official Update 2023-05
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Needs Work: Interior details missing
 // 
@@ -76,8 +77,8 @@ function ldraw_lib__54756() = [
   [4,16,33.5,55,-45.5,33.5,55,-40,28,55,-34.5,28,55,-45.5],
 // 3 16 33.5 55 -34.5 28 55 -34.5 33.5 55 -40
   [3,16,33.5,55,-34.5,28,55,-34.5,33.5,55,-40],
-// 1 16 28 43 40 0.5 0 0 0 1 0 0 0 0.5 4-4rin10.dat
-  [1,16,28,43,40,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__4_4rin10()],
+// 1 16 28 43 40 0.5 0 0 0 1 0 0 0 0.5 4-4ring10.dat
+  [1,16,28,43,40,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__4_4ring10()],
 // 1 16 28 43 40 5 0 0 0 -9 0 0 0 5 4-4cylo.dat
   [1,16,28,43,40,5,0,0,0,-9,0,0,0,5, ldraw_lib__4_4cylo()],
 // 0 BFC INVERTNEXT
@@ -98,18 +99,18 @@ function ldraw_lib__54756() = [
   [1,16,-28,46,-40,2.5,0,0,0,-12,0,0,0,-2.5, ldraw_lib__4_4cylo()],
 // 1 16 -28 34 -40 2.5 0 0 0 1 0 0 0 2.5 4-4ring1.dat
   [1,16,-28,34,-40,2.5,0,0,0,1,0,0,0,2.5, ldraw_lib__4_4ring1()],
-// 1 16 -28 43 -40 0.5 0 0 0 1 0 0 0 0.5 4-4rin10.dat
-  [1,16,-28,43,-40,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__4_4rin10()],
+// 1 16 -28 43 -40 0.5 0 0 0 1 0 0 0 0.5 4-4ring10.dat
+  [1,16,-28,43,-40,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__4_4ring10()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 28 59 40 4 0 0 0 -13 0 0 0 -4 4-4cylo.dat
   [1,16,28,59,40,4,0,0,0,-13,0,0,0,-4, ldraw_lib__4_4cylo()],
 // 1 16 28 46 40 1.25 0 0 0 -1 0 0 0 -1.25 4-4ring2.dat
   [1,16,28,46,40,1.25,0,0,0,-1,0,0,0,-1.25, ldraw_lib__4_4ring2()],
-// 1 16 28 46 40 0.25 0 0 0 -1 0 0 0 -0.25 4-4rin15.dat
-  [1,16,28,46,40,0.25,0,0,0,-1,0,0,0,-0.25, ldraw_lib__4_4rin15()],
-// 1 16 -28 46 -40 0.25 0 0 0 -1 0 0 0 -0.25 4-4rin15.dat
-  [1,16,-28,46,-40,0.25,0,0,0,-1,0,0,0,-0.25, ldraw_lib__4_4rin15()],
+// 1 16 28 46 40 0.25 0 0 0 -1 0 0 0 -0.25 4-4ring15.dat
+  [1,16,28,46,40,0.25,0,0,0,-1,0,0,0,-0.25, ldraw_lib__4_4ring15()],
+// 1 16 -28 46 -40 0.25 0 0 0 -1 0 0 0 -0.25 4-4ring15.dat
+  [1,16,-28,46,-40,0.25,0,0,0,-1,0,0,0,-0.25, ldraw_lib__4_4ring15()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -28 59 -40 4 0 0 0 -13 0 0 0 -4 4-4cylo.dat

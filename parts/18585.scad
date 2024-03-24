@@ -6,7 +6,7 @@ use <../p/1-4cyls.scad>
 use <../p/1-4disc.scad>
 use <../p/1-4edge.scad>
 use <../p/1-4ndis.scad>
-use <../p/1-4rin11.scad>
+use <../p/1-4ring11.scad>
 use <../p/1-4ring6.scad>
 use <../p/1-8chrd.scad>
 use <../p/1-8cylo.scad>
@@ -29,7 +29,7 @@ function ldraw_lib__18585() = [
 // 0 Technic Brick  2 x  4 with Holes and Launcher
 // 0 Name: 18585.dat
 // 0 Author: Massimo Maso [Sirio]
-// 0 !LDRAW_ORG Part UPDATE 2023-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -41,7 +41,8 @@ function ldraw_lib__18585() = [
 // 0 !HISTORY 2018-01-28 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2020-04-18 [Sirio] File preparation for LDraw Parts Tracker
 // 0 !HISTORY 2023-04-17 [OrionP] Official Update 2023-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Subparts
 // 1 16 -20 0 0 1 0 0 0 1 0 0 0 1 s\18585s01.dat
@@ -87,12 +88,12 @@ function ldraw_lib__18585() = [
   [1,16,32.5,4,0,3.5,0,0,0,-1,0,0,0,16, ldraw_lib__rect2p()],
 // 1 16 36 14 0 0 1 0 0 0 -10 16 0 0 rect3.dat
   [1,16,36,14,0,0,1,0,0,0,-10,16,0,0, ldraw_lib__rect3()],
-// 1 16 60 10 20 0 0 1 1 0 0 0 -1 0 1-4rin11.dat
-  [1,16,60,10,20,0,0,1,1,0,0,0,-1,0, ldraw_lib__1_4rin11()],
+// 1 16 60 10 20 0 0 1 1 0 0 0 -1 0 1-4ring11.dat
+  [1,16,60,10,20,0,0,1,1,0,0,0,-1,0, ldraw_lib__1_4ring11()],
 // 1 16 60 10 20 0 0 2 2 0 0 0 -1 0 1-4ring6.dat
   [1,16,60,10,20,0,0,2,2,0,0,0,-1,0, ldraw_lib__1_4ring6()],
-// 1 16 60 10 -20 0 0 1 1 0 0 0 1 0 1-4rin11.dat
-  [1,16,60,10,-20,0,0,1,1,0,0,0,1,0, ldraw_lib__1_4rin11()],
+// 1 16 60 10 -20 0 0 1 1 0 0 0 1 0 1-4ring11.dat
+  [1,16,60,10,-20,0,0,1,1,0,0,0,1,0, ldraw_lib__1_4ring11()],
 // 1 16 60 10 -20 0 0 2 2 0 0 0 1 0 1-4ring6.dat
   [1,16,60,10,-20,0,0,2,2,0,0,0,1,0, ldraw_lib__1_4ring6()],
 // 1 16 60 10 20 0 0 11 11 0 0 0 1 0 1-4edge.dat

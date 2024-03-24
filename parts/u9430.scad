@@ -6,13 +6,13 @@ use <../p/4-4cylc.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4cylo.scad>
 use <../p/4-4edge.scad>
-use <../p/4-4rin20.scad>
+use <../p/4-4ring20.scad>
 use <../p/4-4ring9.scad>
 function ldraw_lib__u9430() = [
 // 0 Battery Button Cell CR927
 // 0 Name: u9430.dat
 // 0 Author: Santeri Piippo [arezey]
-// 0 !LDRAW_ORG Part UPDATE 2022-03
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -27,7 +27,8 @@ function ldraw_lib__u9430() = [
 // 0 !HISTORY 2020-05-18 [Cheenzo] Changed orientation
 // 0 !HISTORY 2020-05-21 [MagFors] Used cone primitives, adjusted the pattern
 // 0 !HISTORY 2022-05-07 [PTadmin] Official Update 2022-03
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 -6 0 11.5 0 0 0 1 0 0 0 11.5 4-4edge.dat
   [1,16,0,-6,0,11.5,0,0,0,1,0,0,0,11.5, ldraw_lib__4_4edge()],
@@ -45,8 +46,8 @@ function ldraw_lib__u9430() = [
   [1,16,0,-1,0,10,0,0,0,-1,0,0,0,-10, ldraw_lib__4_4cylo()],
 // 1 16 0 -2 0 1 0 0 0 -1 0 0 0 -1 4-4ring9.dat
   [1,16,0,-2,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__4_4ring9()],
-// 1 16 0 -1 0 .5 0 0 0 -1 0 0 0 -.5 4-4rin20.dat
-  [1,16,0,-1,0,.5,0,0,0,-1,0,0,0,-.5, ldraw_lib__4_4rin20()],
+// 1 16 0 -1 0 .5 0 0 0 -1 0 0 0 -.5 4-4ring20.dat
+  [1,16,0,-1,0,.5,0,0,0,-1,0,0,0,-.5, ldraw_lib__4_4ring20()],
 // 1 16 0 -1.5 0 .5 0 0 0 .5 0 0 0 .5 4-4con21.dat
   [1,16,0,-1.5,0,.5,0,0,0,.5,0,0,0,.5, ldraw_lib__4_4con21()],
 // 1 16 0 -2 0 .5 0 0 0 .5 0 0 0 .5 4-4con22.dat

@@ -14,8 +14,8 @@ use <../p/4-4cylo.scad>
 use <../p/4-4cyls.scad>
 use <../p/4-4cylse.scad>
 use <../p/4-4edge.scad>
-use <../p/4-4rin14.scad>
 use <../p/4-4ring1.scad>
+use <../p/4-4ring14.scad>
 use <../p/4-4ring2.scad>
 use <../p/4-4ring6.scad>
 use <../p/4-4ring7.scad>
@@ -24,7 +24,7 @@ use <../p/48/1-12edge.scad>
 use <../p/48/1-4cyli.scad>
 use <../p/48/1-4disc.scad>
 use <../p/48/1-4edge.scad>
-use <../p/48/1-4rin14.scad>
+use <../p/48/1-4ring14.scad>
 use <../p/48/1-4ring6.scad>
 use <../p/box3u5p.scad>
 use <../p/box3u8p.scad>
@@ -36,7 +36,7 @@ function ldraw_lib__30194() = [
 // 0 Minifig Circular Blade Saw
 // 0 Name: 30194.dat
 // 0 Author: Magnus Forsberg [MagFors]
-// 0 !LDRAW_ORG Part UPDATE 2010-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 !HELP Rear handle at 0 -19.5 -16.81, turned 65 degrees, MLCad.ini:
@@ -52,7 +52,8 @@ function ldraw_lib__30194() = [
 // 0 !HISTORY 2009-10-13 {LEGO Universe Team} Original part shape
 // 0 !HISTORY 2010-03-19 [MagFors] File preparation for LDraw Parts Tracker
 // 0 !HISTORY 2010-07-05 [PTadmin] Official Update 2010-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 4 0 0 0 -1 0 0 0 -4 2-4ndis.dat
   [1,16,0,0,0,4,0,0,0,-1,0,0,0,-4, ldraw_lib__2_4ndis()],
@@ -225,8 +226,8 @@ function ldraw_lib__30194() = [
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -24.4 -14.9 0 3.255 0 8.9223 0 12.0579 12.0579 0 -8.9223 48\1-4cyli.dat
   [1,16,0,-24.4,-14.9,0,3.255,0,8.9223,0,12.0579,12.0579,0,-8.9223, ldraw_lib__48__1_4cyli()],
-// 1 16 0 -24.4 -14.9 0 -3.255 0 0.8039 0 0.5948 -0.5948 0 0.8039 48\1-4rin14.dat
-  [1,16,0,-24.4,-14.9,0,-3.255,0,0.8039,0,0.5948,-0.5948,0,0.8039, ldraw_lib__48__1_4rin14()],
+// 1 16 0 -24.4 -14.9 0 -3.255 0 0.8039 0 0.5948 -0.5948 0 0.8039 48\1-4ring14.dat
+  [1,16,0,-24.4,-14.9,0,-3.255,0,0.8039,0,0.5948,-0.5948,0,0.8039, ldraw_lib__48__1_4ring14()],
 // 2 24 -2.5 -13.99 -0.83 -2.5 -19.85 -8.75
   [2,24,-2.5,-13.99,-0.83,-2.5,-19.85,-8.75],
 // 2 24 0 -19.85 -8.75 0 -15.48 -2.84
@@ -506,12 +507,12 @@ function ldraw_lib__30194() = [
   [1,16,0,-24.4,-14.875,0,1,0,0,0,-6.125,-6.125,0,0, ldraw_lib__4_4ring1()],
 // 1 16 0 -24.4 -14.875 0 1 0 0 0 -1.75 -1.75 0 0 4-4ring7.dat
   [1,16,0,-24.4,-14.875,0,1,0,0,0,-1.75,-1.75,0,0, ldraw_lib__4_4ring7()],
-// 1 16 0.75 -24.4 -14.875 0 1 0 0 0 -1 -1 0 0 4-4rin14.dat
-  [1,16,0.75,-24.4,-14.875,0,1,0,0,0,-1,-1,0,0, ldraw_lib__4_4rin14()],
+// 1 16 0.75 -24.4 -14.875 0 1 0 0 0 -1 -1 0 0 4-4ring14.dat
+  [1,16,0.75,-24.4,-14.875,0,1,0,0,0,-1,-1,0,0, ldraw_lib__4_4ring14()],
 // 1 16 0.75 -24.4 -14.875 0 1 0 0 0 -15 -15 0 0 4-4cylo.dat
   [1,16,0.75,-24.4,-14.875,0,1,0,0,0,-15,-15,0,0, ldraw_lib__4_4cylo()],
-// 1 16 1.75 -24.4 -14.875 0 -1 0 0 0 -1 1 0 0 4-4rin14.dat
-  [1,16,1.75,-24.4,-14.875,0,-1,0,0,0,-1,1,0,0, ldraw_lib__4_4rin14()],
+// 1 16 1.75 -24.4 -14.875 0 -1 0 0 0 -1 1 0 0 4-4ring14.dat
+  [1,16,1.75,-24.4,-14.875,0,-1,0,0,0,-1,1,0,0, ldraw_lib__4_4ring14()],
 // 1 16 2.5 -24.4 -14.875 0 -1 0 0 0 -2 2 0 0 4-4ring6.dat
   [1,16,2.5,-24.4,-14.875,0,-1,0,0,0,-2,2,0,0, ldraw_lib__4_4ring6()],
 // 1 16 2.5 -24.4 -14.875 0 -1 0 0 0 -4 4 0 0 4-4ring2.dat

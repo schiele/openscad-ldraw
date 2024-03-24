@@ -8,15 +8,15 @@ use <../p/1-4tang.scad>
 use <../p/1-8chrd.scad>
 use <../p/2-4disc.scad>
 use <../p/2-4ndis.scad>
-use <../p/4-4rin19.scad>
+use <../p/4-4ring19.scad>
 use <../p/5-16chrd.scad>
-use <../p/5-16rin5.scad>
+use <../p/5-16ring5.scad>
 use <s/98138s02.scad>
 function ldraw_lib__98138p8f() = [
 // 0 Tile  1 x  1 Round with Black Eye with White Pupil and Semi Circle  Pattern
 // 0 Name: 98138p8f.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
-// 0 !LDRAW_ORG Part UPDATE 2022-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -26,12 +26,13 @@ function ldraw_lib__98138p8f() = [
 // 0 !KEYWORDS Bricklink 98138pb098, Dragon Dance, set 80102
 // 
 // 0 !HISTORY 2022-03-06 [PTadmin] Official Update 2022-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\98138s02.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s02()],
-// 1 16 0 0 0 0.5 0 0 0 1 0 0 0 .5 4-4rin19.dat
-  [1,16,0,0,0,0.5,0,0,0,1,0,0,0,.5, ldraw_lib__4_4rin19()],
+// 1 16 0 0 0 0.5 0 0 0 1 0 0 0 .5 4-4ring19.dat
+  [1,16,0,0,0,0.5,0,0,0,1,0,0,0,.5, ldraw_lib__4_4ring19()],
 // 
 // 1 16 0 0 0 2.5 0 0 0 1 0 0 0 -2.5 2-4disc.dat
   [1,16,0,0,0,2.5,0,0,0,1,0,0,0,-2.5, ldraw_lib__2_4disc()],
@@ -43,8 +44,8 @@ function ldraw_lib__98138p8f() = [
   [1,0,0,0,0,-2.5,0,0,0,1,0,0,0,2.5, ldraw_lib__1_16ndis()],
 // 1 16 0 0 0 1.3 0 0 0 1 0 0 0 -1.3 1-4ring5.dat
   [1,16,0,0,0,1.3,0,0,0,1,0,0,0,-1.3, ldraw_lib__1_4ring5()],
-// 1 16 0 0 0 0 0 -1.3 0 1 0 -1.3 0 0 5-16rin5.dat
-  [1,16,0,0,0,0,0,-1.3,0,1,0,-1.3,0,0, ldraw_lib__5_16rin5()],
+// 1 16 0 0 0 0 0 -1.3 0 1 0 -1.3 0 0 5-16ring5.dat
+  [1,16,0,0,0,0,0,-1.3,0,1,0,-1.3,0,0, ldraw_lib__5_16ring5()],
 // 1 0 0 0 0 6.5 0 0 0 1 0 0 0 -6.5 1-4chrd.dat
   [1,0,0,0,0,6.5,0,0,0,1,0,0,0,-6.5, ldraw_lib__1_4chrd()],
 // 1 0 0 0 0 0 0 -6.5 0 1 0 -6.5 0 0 5-16chrd.dat

@@ -2,16 +2,17 @@ use <../../lib.scad>
 function ldraw_lib__48__1_4con24() = [
 // 0 Hi-Res Cone 24 x 0.25
 // 0 Name: 48\1-4con24.dat
-// 0 Author: Guy Vivan [guyvivan]
-// 0 !LDRAW_ORG 48_Primitive UPDATE 2013-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 Author: Willy Tschager [Holly-Wood]
+// 0 !LDRAW_ORG 48_Primitive UPDATE 2024-02
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2013-07-21 [PTadmin] Official Update 2013-01
-// 
+// 0 !HISTORY 2024-02-17 [Holly-Wood] Complete re-write, original by guyvivan
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 4 16 24 1 0 23.7936 1 3.132 24.785 0 3.2625 25 0 0
   [4,16,24,1,0,23.7936,1,3.132,24.785,0,3.2625,25,0,0],
@@ -37,10 +38,9 @@ function ldraw_lib__48__1_4con24() = [
   [4,16,6.2112,1,23.1816,3.132,1,23.7936,3.2625,0,24.785,6.47,0,24.1475],
 // 4 16 3.132 1 23.7936 0 1 24 0 0 25 3.2625 0 24.785
   [4,16,3.132,1,23.7936,0,1,24,0,0,25,3.2625,0,24.785],
-// 
-// 0 conditional lines
-// 5 24 24 1 0 25 0 0 23.7936 1 -3.132 23.7936 1 3.132
-  [5,24,24,1,0,25,0,0,23.7936,1,-3.132,23.7936,1,3.132],
+// 0 // conditional lines
+// 5 24 24 1 0 25 0 0 24 1 -3.1608 23.7936 1 3.132
+  [5,24,24,1,0,25,0,0,24,1,-3.1608,23.7936,1,3.132],
 // 5 24 23.7936 1 3.132 24.785 0 3.2625 24 1 0 23.1816 1 6.2112
   [5,24,23.7936,1,3.132,24.785,0,3.2625,24,1,0,23.1816,1,6.2112],
 // 5 24 23.1816 1 6.2112 24.1475 0 6.47 23.7936 1 3.132 22.1736 1 9.1848
@@ -63,11 +63,9 @@ function ldraw_lib__48__1_4con24() = [
   [5,24,6.2112,1,23.1816,6.47,0,24.1475,9.1848,1,22.1736,3.132,1,23.7936],
 // 5 24 3.132 1 23.7936 3.2625 0 24.785 6.2112 1 23.1816 0 1 24
   [5,24,3.132,1,23.7936,3.2625,0,24.785,6.2112,1,23.1816,0,1,24],
-// 5 24 0 1 24 0 0 25 3.132 1 23.7936 -3.132 1 23.7936
-  [5,24,0,1,24,0,0,25,3.132,1,23.7936,-3.132,1,23.7936],
-// 
-// 0 end of file
-// 
+// 5 24 0 1 24 0 0 25 3.132 1 23.7936 -3.1608 1 24
+  [5,24,0,1,24,0,0,25,3.132,1,23.7936,-3.1608,1,24],
+// 0 // Build by LDPartEditor (PrimGen 2.X)
 ];
 module ldraw_lib__48__1_4con24(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
     makepoly(ldraw_lib__48__1_4con24(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);

@@ -2,14 +2,14 @@ use <../lib.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4edge.scad>
-use <../p/4-4rin11.scad>
-use <../p/4-4rin12.scad>
+use <../p/4-4ring11.scad>
+use <../p/4-4ring12.scad>
 use <../p/4-8sphe.scad>
 function ldraw_lib__32134() = [
 // 0 ~Technic Competition Arrow Rubber Tip
 // 0 Name: 32134.dat
 // 0 Author: Marc Klein [marckl]
-// 0 !LDRAW_ORG Part UPDATE 2013-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -25,7 +25,8 @@ function ldraw_lib__32134() = [
 // 0 !HISTORY 2009-06-08 [PTadmin] Renamed from 155
 // 0 !HISTORY 2010-11-14 [Steffen] adjusted origin
 // 0 !HISTORY 2013-07-21 [PTadmin] Official Update 2013-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Created with stl2dat conversion tool
 // 
@@ -45,10 +46,10 @@ function ldraw_lib__32134() = [
   [1,16,0,0,16,26,0,0,0,0,26,0,26,0, ldraw_lib__4_8sphe()],
 // 1 16 0 0 14 22 0 0 0 0 22 0 1 0 4-4disc.dat
   [1,16,0,0,14,22,0,0,0,0,22,0,1,0, ldraw_lib__4_4disc()],
-// 1 16 0 0 0 2 0 0 0 0 2 0 1 0 4-4rin11.dat
-  [1,16,0,0,0,2,0,0,0,0,2,0,1,0, ldraw_lib__4_4rin11()],
-// 1 16 0 0 0 2 0 0 0 0 2 0 1 0 4-4rin12.dat
-  [1,16,0,0,0,2,0,0,0,0,2,0,1,0, ldraw_lib__4_4rin12()],
+// 1 16 0 0 0 2 0 0 0 0 2 0 1 0 4-4ring11.dat
+  [1,16,0,0,0,2,0,0,0,0,2,0,1,0, ldraw_lib__4_4ring11()],
+// 1 16 0 0 0 2 0 0 0 0 2 0 1 0 4-4ring12.dat
+  [1,16,0,0,0,2,0,0,0,0,2,0,1,0, ldraw_lib__4_4ring12()],
 // 
 ];
 module ldraw_lib__32134(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)

@@ -3,14 +3,14 @@ use <../p/1-4disc.scad>
 use <../p/1-4ndis.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4ndis.scad>
-use <../p/4-4rin10.scad>
+use <../p/4-4ring10.scad>
 use <../p/4-4ring2.scad>
 use <../p/box5-12.scad>
 function ldraw_lib__6279911d() = [
 // 0 Sticker  1.9 x  1.9 with Black and White Machine Pattern  1
 // 0 Name: 6279911d.dat
 // 0 Author: Evert-Jan Boer [ejboer]
-// 0 !LDRAW_ORG Part UPDATE 2022-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -20,7 +20,8 @@ function ldraw_lib__6279911d() = [
 // 0 !KEYWORDS Apollo 11, Lunar Lander, NASA, set 10266
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 -0.25 0 19 0 0 0 0.25 0 0 0 19 box5-12.dat
   [1,16,0,-0.25,0,19,0,0,0,0.25,0,0,0,19, ldraw_lib__box5_12()],
@@ -227,10 +228,10 @@ function ldraw_lib__6279911d() = [
   [1,15,16.3,-.25,-12.5,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4disc()],
 // 1 0 16.3 -.25 -7.6 .5 0 0 0 1 0 0 0 .5 4-4ring2.dat
   [1,0,16.3,-.25,-7.6,.5,0,0,0,1,0,0,0,.5, ldraw_lib__4_4ring2()],
-// 1 0 16.3 -.25 -7.6 .15 0 0 0 1 0 0 0 .15 4-4rin10.dat
-  [1,0,16.3,-.25,-7.6,.15,0,0,0,1,0,0,0,.15, ldraw_lib__4_4rin10()],
-// 1 0 16.3 -.25 -12.5 .15 0 0 0 1 0 0 0 .15 4-4rin10.dat
-  [1,0,16.3,-.25,-12.5,.15,0,0,0,1,0,0,0,.15, ldraw_lib__4_4rin10()],
+// 1 0 16.3 -.25 -7.6 .15 0 0 0 1 0 0 0 .15 4-4ring10.dat
+  [1,0,16.3,-.25,-7.6,.15,0,0,0,1,0,0,0,.15, ldraw_lib__4_4ring10()],
+// 1 0 16.3 -.25 -12.5 .15 0 0 0 1 0 0 0 .15 4-4ring10.dat
+  [1,0,16.3,-.25,-12.5,.15,0,0,0,1,0,0,0,.15, ldraw_lib__4_4ring10()],
 // 1 0 16.3 -.25 -12.5 .5 0 0 0 1 0 0 0 .5 4-4ring2.dat
   [1,0,16.3,-.25,-12.5,.5,0,0,0,1,0,0,0,.5, ldraw_lib__4_4ring2()],
 // 4 15 -13.8 -.25 16.7 -13.8 -.25 15.9 -1.7 -.25 15.9 -1.7 -.25 16.7

@@ -1,5 +1,5 @@
 use <../../lib.scad>
-use <../../p/1-16rin3.scad>
+use <../../p/1-16ring3.scad>
 use <../../p/1-4cylo.scad>
 use <../../p/1-4ndis.scad>
 use <../../p/2-4ring3.scad>
@@ -17,7 +17,7 @@ function ldraw_lib__s__22483s02() = [
 // 0 ~Windscreen  6 x  4 x  1.333 Pointed - Half
 // 0 Name: s\22483s02.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
-// 0 !LDRAW_ORG Subpart UPDATE 2018-01
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -25,7 +25,8 @@ function ldraw_lib__s__22483s02() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2018-01-30 [PTadmin] Official Update 2018-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Studs Support Back
 // 
@@ -84,8 +85,8 @@ function ldraw_lib__s__22483s02() = [
   [1,16,20,31.6,-20,5.65685,0,-5.65685,0,-3.6,0,5.65685,0,5.65685, ldraw_lib__1_4cylo()],
 // 1 16 20 31.6 -20 0.76537 0 -1.84776 0 -1 0 1.84776 0 0.76537 2-4ring3.dat
   [1,16,20,31.6,-20,0.76537,0,-1.84776,0,-1,0,1.84776,0,0.76537, ldraw_lib__2_4ring3()],
-// 1 16 20 31.6 -20 1.41421 0 -1.41421 0 -1 0 1.41421 0 1.41421 1-16rin3.dat
-  [1,16,20,31.6,-20,1.41421,0,-1.41421,0,-1,0,1.41421,0,1.41421, ldraw_lib__1_16rin3()],
+// 1 16 20 31.6 -20 1.41421 0 -1.41421 0 -1 0 1.41421 0 1.41421 1-16ring3.dat
+  [1,16,20,31.6,-20,1.41421,0,-1.41421,0,-1,0,1.41421,0,1.41421, ldraw_lib__1_16ring3()],
 // 4 16 18.8229 31.6 -25.7659 17.6456 31.6 -27.5318 16.9385 31.6 -27.3912 17.7039 31.6 -25.5434
   [4,16,18.8229,31.6,-25.7659,17.6456,31.6,-27.5318,16.9385,31.6,-27.3912,17.7039,31.6,-25.5434],
 // 4 16 24.2426 31.6 -15.7574 25.6568 31.6 -14.3432 26.0479 31.6 -14.9284 24.8697 31.6 -16.6957

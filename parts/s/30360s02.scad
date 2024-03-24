@@ -2,8 +2,8 @@ use <../../lib.scad>
 use <../../p/4-4ndis.scad>
 use <../../p/48/1-6cyli.scad>
 use <../../p/48/1-6edge.scad>
-use <../../p/48/1-6rin13.scad>
-use <../../p/48/1-6rin14.scad>
+use <../../p/48/1-6ring13.scad>
+use <../../p/48/1-6ring14.scad>
 use <../../p/48/1-8chrd.scad>
 use <../../p/box3u8p.scad>
 use <../../p/boxjcyl4.scad>
@@ -12,7 +12,7 @@ function ldraw_lib__s__30360s02() = [
 // 0 ~Cylinder  3 x  6 x  2.667 Horizontal Common Geometry - 1/4
 // 0 Name: s\30360s02.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
-// 0 !LDRAW_ORG Subpart UPDATE 2020-03
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -20,12 +20,13 @@ function ldraw_lib__s__30360s02() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
-// 
-// 1 16 0 0 60 1 0 -1.73205 1.73205 0 1 0 -1 0 48\1-6rin13.dat
-  [1,16,0,0,60,1,0,-1.73205,1.73205,0,1,0,-1,0, ldraw_lib__48__1_6rin13()],
-// 1 16 0 0 60 1 0 -1.73205 1.73205 0 1 0 -1 0 48\1-6rin14.dat
-  [1,16,0,0,60,1,0,-1.73205,1.73205,0,1,0,-1,0, ldraw_lib__48__1_6rin14()],
+// 1 16 0 0 60 1 0 -1.73205 1.73205 0 1 0 -1 0 48\1-6ring13.dat
+  [1,16,0,0,60,1,0,-1.73205,1.73205,0,1,0,-1,0, ldraw_lib__48__1_6ring13()],
+// 1 16 0 0 60 1 0 -1.73205 1.73205 0 1 0 -1 0 48\1-6ring14.dat
+  [1,16,0,0,60,1,0,-1.73205,1.73205,0,1,0,-1,0, ldraw_lib__48__1_6ring14()],
 // 
 // 4 16 -15 25.98 60 -16.496 24.982 60 -13.618 22.103 60 -13 22.516 60
   [4,16,-15,25.98,60,-16.496,24.982,60,-13.618,22.103,60,-13,22.516,60],

@@ -12,8 +12,8 @@ use <../p/2-4cyli.scad>
 use <../p/2-4disc.scad>
 use <../p/2-4edge.scad>
 use <../p/2-4ndis.scad>
-use <../p/2-4rin13.scad>
-use <../p/2-4rin14.scad>
+use <../p/2-4ring13.scad>
+use <../p/2-4ring14.scad>
 use <../p/3-8cyli.scad>
 use <../p/3-8edge.scad>
 use <../p/4-4cyli.scad>
@@ -26,7 +26,7 @@ function ldraw_lib__43463() = [
 // 0 ~Electric RC Race Buggy Steering Unit (Level)
 // 0 Name: 43463.dat
 // 0 Author: Guy Vivan [guyvivan]
-// 0 !LDRAW_ORG Part UPDATE 2020-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -34,7 +34,8 @@ function ldraw_lib__43463() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 15 0 0 0 1 0 0 0 15 4-4edge.dat
   [1,16,0,0,0,15,0,0,0,1,0,0,0,15, ldraw_lib__4_4edge()],
@@ -46,14 +47,14 @@ function ldraw_lib__43463() = [
   [1,16,0,-3,0,15,0,0,0,1,0,0,0,15, ldraw_lib__4_4edge()],
 // 1 16 0 -3 0 4.97488 0 12.0104 0 1 0 -12.0104 0 4.97488 3-8edge.dat
   [1,16,0,-3,0,4.97488,0,12.0104,0,1,0,-12.0104,0,4.97488, ldraw_lib__3_8edge()],
-// 1 16 0 -3 0 0 0 1 0 1 0 -1 0 0 2-4rin13.dat
-  [1,16,0,-3,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__2_4rin13()],
-// 1 16 0 -3 0 0 0 1 0 1 0 -1 0 0 2-4rin14.dat
-  [1,16,0,-3,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__2_4rin14()],
-// 1 16 0 0 0 0 0 1 0 -1 0 -1 0 0 2-4rin13.dat
-  [1,16,0,0,0,0,0,1,0,-1,0,-1,0,0, ldraw_lib__2_4rin13()],
-// 1 16 0 0 0 0 0 1 0 -1 0 -1 0 0 2-4rin14.dat
-  [1,16,0,0,0,0,0,1,0,-1,0,-1,0,0, ldraw_lib__2_4rin14()],
+// 1 16 0 -3 0 0 0 1 0 1 0 -1 0 0 2-4ring13.dat
+  [1,16,0,-3,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__2_4ring13()],
+// 1 16 0 -3 0 0 0 1 0 1 0 -1 0 0 2-4ring14.dat
+  [1,16,0,-3,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__2_4ring14()],
+// 1 16 0 0 0 0 0 1 0 -1 0 -1 0 0 2-4ring13.dat
+  [1,16,0,0,0,0,0,1,0,-1,0,-1,0,0, ldraw_lib__2_4ring13()],
+// 1 16 0 0 0 0 0 1 0 -1 0 -1 0 0 2-4ring14.dat
+  [1,16,0,0,0,0,0,1,0,-1,0,-1,0,0, ldraw_lib__2_4ring14()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -3 0 4.97488 0 12.0104 0 3 0 -12.0104 0 4.97488 3-8cyli.dat

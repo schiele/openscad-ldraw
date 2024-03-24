@@ -1,6 +1,6 @@
 use <../../lib.scad>
 use <../../p/1-4cylo.scad>
-use <../../p/1-4rin20.scad>
+use <../../p/1-4ring20.scad>
 use <../../p/1-4tang.scad>
 use <../../p/48/1-12chrd.scad>
 use <../../p/48/1-12cylo.scad>
@@ -13,7 +13,7 @@ function ldraw_lib__s__27925s01() = [
 // 0 ~Tile  2 x  2 Corner Round without Top Surface
 // 0 Name: s\27925s01.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
-// 0 !LDRAW_ORG Subpart UPDATE 2020-02
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -21,7 +21,8 @@ function ldraw_lib__s__27925s01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
@@ -33,8 +34,8 @@ function ldraw_lib__s__27925s01() = [
   [1,16,-8.8202,7,8.8202,19.53,0,-.20248,0,1,0,.20248,0,-19.53, ldraw_lib__1_4cylo()],
 // 1 16 -8.8202 8 8.8202 19.53 0 -.20248 0 -1 0 .20248 0 -19.53 1-4tang.dat
   [1,16,-8.8202,8,8.8202,19.53,0,-.20248,0,-1,0,.20248,0,-19.53, ldraw_lib__1_4tang()],
-// 1 16 -10 7 10 1 0 0 0 -1 0 0 0 -1 1-4rin20.dat
-  [1,16,-10,7,10,1,0,0,0,-1,0,0,0,-1, ldraw_lib__1_4rin20()],
+// 1 16 -10 7 10 1 0 0 0 -1 0 0 0 -1 1-4ring20.dat
+  [1,16,-10,7,10,1,0,0,0,-1,0,0,0,-1, ldraw_lib__1_4ring20()],
 // 1 16 -10 0 10 40 0 0 0 7 0 0 0 -40 48\1-12cylo.dat
   [1,16,-10,0,10,40,0,0,0,7,0,0,0,-40, ldraw_lib__48__1_12cylo()],
 // 1 16 -11.95 7 9 40.95 0 0 0 1 0 0 0 -38 48\1-12cylo.dat

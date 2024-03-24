@@ -9,8 +9,8 @@ use <../../p/4-4cylse.scad>
 use <../../p/4-4disc.scad>
 use <../../p/4-4edge.scad>
 use <../../p/4-4ndis.scad>
-use <../../p/4-4rin10.scad>
-use <../../p/4-4rin22.scad>
+use <../../p/4-4ring10.scad>
+use <../../p/4-4ring22.scad>
 use <../../p/4-4ring3.scad>
 use <../../p/4-8sphe.scad>
 use <../../p/box4.scad>
@@ -18,7 +18,7 @@ function ldraw_lib__s__6936s02() = [
 // 0 ~Tap  1 x  2 with Two Valves Body
 // 0 Name: s\6936s02.dat
 // 0 Author: J.C. Tchang [tchang]
-// 0 !LDRAW_ORG Subpart UPDATE 2019-02
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CW
@@ -27,7 +27,8 @@ function ldraw_lib__s__6936s02() = [
 // 
 // 0 !HISTORY 2018-01-29 [Philo] Subparted from J.C. Tchang 6936
 // 0 !HISTORY 2019-09-09 [PTadmin] Official Update 2019-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 4 16 -20 8 10 -16 8 6 16 8 6 20 8 10
   [4,16,-20,8,10,-16,8,6,16,8,6,20,8,10],
@@ -98,10 +99,10 @@ function ldraw_lib__s__6936s02() = [
   [1,16,0,0,0,9.2,0,0,0,-1.2,0,0,0,9.2, ldraw_lib__4_4cylo()],
 // 1 16 0 -1.2 0 8 0 0 0 1 0 0 0 8 4-4edge.dat
   [1,16,0,-1.2,0,8,0,0,0,1,0,0,0,8, ldraw_lib__4_4edge()],
-// 1 16 0 -1.2 0 0.8 0 0 0 1 0 0 0 0.8 4-4rin10.dat
-  [1,16,0,-1.2,0,0.8,0,0,0,1,0,0,0,0.8, ldraw_lib__4_4rin10()],
-// 1 16 0 -1.2 0 0.4 0 0 0 1 0 0 0 0.4 4-4rin22.dat
-  [1,16,0,-1.2,0,0.4,0,0,0,1,0,0,0,0.4, ldraw_lib__4_4rin22()],
+// 1 16 0 -1.2 0 0.8 0 0 0 1 0 0 0 0.8 4-4ring10.dat
+  [1,16,0,-1.2,0,0.8,0,0,0,1,0,0,0,0.8, ldraw_lib__4_4ring10()],
+// 1 16 0 -1.2 0 0.4 0 0 0 1 0 0 0 0.4 4-4ring22.dat
+  [1,16,0,-1.2,0,0.4,0,0,0,1,0,0,0,0.4, ldraw_lib__4_4ring22()],
 // 1 16 0 -1.2 0 0.4 0 0 0 -14.2 0 0 0 0.4 4-4con19.dat
   [1,16,0,-1.2,0,0.4,0,0,0,-14.2,0,0,0,0.4, ldraw_lib__4_4con19()],
 // 1 16 0 -15.4 0 7.6 0 0 0 -6.4 0 0 0 7.6 4-8sphe.dat

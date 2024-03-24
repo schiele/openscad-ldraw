@@ -5,12 +5,12 @@ use <../../p/48/1-16ring14.scad>
 use <../../p/48/1-16tang.scad>
 use <../../p/48/1-8chrd.scad>
 use <../../p/48/1-8ndis.scad>
-use <../../p/48/1-8rin14.scad>
+use <../../p/48/1-8ring14.scad>
 function ldraw_lib__s__2723p05s01() = [
 // 0 ~Technic Disc  3 x  3 with Axlehole with 4 Black Sections on One Side and 8 on Reverse Pattern - Quarter
 // 0 Name: s\2723p05s01.dat
 // 0 Author: Rene Rechthaler [Blechtaler]
-// 0 !LDRAW_ORG Subpart UPDATE 2023-03
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -19,7 +19,8 @@ function ldraw_lib__s__2723p05s01() = [
 // 
 // 0 !HISTORY 2023-01-01 [MagFors] Reworked pattern using primitives
 // 0 !HISTORY 2023-06-24 [OrionP] Official Update 2023-03
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // top, four areas
 // 
@@ -33,8 +34,8 @@ function ldraw_lib__s__2723p05s01() = [
   [1,16,0,3,0,7,0,0,0,1,0,0,0,7, ldraw_lib__1_4ndis()],
 // 1 16 0 3 0 0 0 10 0 1 0 10 0 0 48\1-8chrd.dat
   [1,16,0,3,0,0,0,10,0,1,0,10,0,0, ldraw_lib__48__1_8chrd()],
-// 1 16 0 3 0 0 0 2 0 1 0 2 0 0 48\1-8rin14.dat
-  [1,16,0,3,0,0,0,2,0,1,0,2,0,0, ldraw_lib__48__1_8rin14()],
+// 1 16 0 3 0 0 0 2 0 1 0 2 0 0 48\1-8ring14.dat
+  [1,16,0,3,0,0,0,2,0,1,0,2,0,0, ldraw_lib__48__1_8ring14()],
 // 1 16 0 3 0 30 0 0 0 1 0 0 0 30 48\1-8chrd.dat
   [1,16,0,3,0,30,0,0,0,1,0,0,0,30, ldraw_lib__48__1_8chrd()],
 // 4 16 7 3 7 7 3 0 10 3 0 7.071 3 7.071

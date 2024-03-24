@@ -16,7 +16,7 @@ use <../p/4-4con8.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4cylo.scad>
 use <../p/4-4edge.scad>
-use <../p/4-4rin17.scad>
+use <../p/4-4ring17.scad>
 use <../p/4-4ring2.scad>
 use <../p/4-4ring4.scad>
 use <../p/4-4ring7.scad>
@@ -31,7 +31,7 @@ function ldraw_lib__65143() = [
 // 0 ~Technic Shock Absorber 11L Body
 // 0 Name: 65143.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
-// 0 !LDRAW_ORG Part UPDATE 2022-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -41,7 +41,8 @@ function ldraw_lib__65143() = [
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
 // 0 !HISTORY 2021-12-31 [MagFors] Reshaped axlehole
 // 0 !HISTORY 2022-03-06 [PTadmin] Official Update 2022-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Bottom Bush
 // 1 16 0 0 0 -8.5 0 0 0 1 0 0 0 8.5 4-4edge.dat
@@ -60,8 +61,8 @@ function ldraw_lib__65143() = [
   [4,16,-11,0,-9,-20,0,-9,-20,0,-10,-10,0,-10],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 4-4ring9.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4ring9()],
-// 1 16 0 0 0 .5 0 0 0 1 0 0 0 .5 4-4rin17.dat
-  [1,16,0,0,0,.5,0,0,0,1,0,0,0,.5, ldraw_lib__4_4rin17()],
+// 1 16 0 0 0 .5 0 0 0 1 0 0 0 .5 4-4ring17.dat
+  [1,16,0,0,0,.5,0,0,0,1,0,0,0,.5, ldraw_lib__4_4ring17()],
 // 1 16 0 0 0 0 0 -10 0 1 0 10 0 0 2-4ndis.dat
   [1,16,0,0,0,0,0,-10,0,1,0,10,0,0, ldraw_lib__2_4ndis()],
 // 1 16 0 0 0 0 0 10 0 1 0 10 0 0 2-4edge.dat

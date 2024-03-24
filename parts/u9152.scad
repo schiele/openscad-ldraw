@@ -15,7 +15,7 @@ use <../p/48/4-4con8.scad>
 use <../p/48/4-4con9.scad>
 use <../p/48/4-4cylo.scad>
 use <../p/48/4-4edge.scad>
-use <../p/48/4-4rin26.scad>
+use <../p/48/4-4ring26.scad>
 use <../p/rect.scad>
 use <../p/rect2a.scad>
 use <../p/rect2p.scad>
@@ -24,7 +24,7 @@ function ldraw_lib__u9152() = [
 // 0 Fabuland Boater
 // 0 Name: u9152.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2011-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 !HELP Position over Lion's head u9150p02c01.dat:
@@ -37,7 +37,8 @@ function ldraw_lib__u9152() = [
 // 0 !CATEGORY Figure Accessory
 // 
 // 0 !HISTORY 2011-07-25 [PTadmin] Official Update 2011-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 35 0 0 0 -3 0 0 0 35 48\4-4cylo.dat
   [1,16,0,0,0,35,0,0,0,-3,0,0,0,35, ldraw_lib__48__4_4cylo()],
@@ -105,8 +106,8 @@ function ldraw_lib__u9152() = [
   [1,16,0,-18,0,26,0,0,0,9,0,0,0,26, ldraw_lib__48__4_4cylo()],
 // 1 16 0 -9 0 27 0 0 0 5.62857 0 0 0 27 48\4-4cylo.dat
   [1,16,0,-9,0,27,0,0,0,5.62857,0,0,0,27, ldraw_lib__48__4_4cylo()],
-// 1 16 0 -9 0 1 0 0 0 1 0 0 0 1 48\4-4rin26.dat
-  [1,16,0,-9,0,1,0,0,0,1,0,0,0,1, ldraw_lib__48__4_4rin26()],
+// 1 16 0 -9 0 1 0 0 0 1 0 0 0 1 48\4-4ring26.dat
+  [1,16,0,-9,0,1,0,0,0,1,0,0,0,1, ldraw_lib__48__4_4ring26()],
 // 1 16 0 -3 0 2.91667 0 0 0 -0.5 0 0 0 2.91667 48\4-4con9.dat
   [1,16,0,-3,0,2.91667,0,0,0,-0.5,0,0,0,2.91667, ldraw_lib__48__4_4con9()],
 // 1 16 0 -3 0 29.1667 0 0 0 1 0 0 0 29.1667 48\4-4edge.dat

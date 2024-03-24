@@ -5,8 +5,8 @@ use <../../p/1-4con8.scad>
 use <../../p/1-4cyli.scad>
 use <../../p/1-4cylo.scad>
 use <../../p/1-4edge.scad>
-use <../../p/1-4rin12.scad>
-use <../../p/1-4rin14.scad>
+use <../../p/1-4ring12.scad>
+use <../../p/1-4ring14.scad>
 use <../../p/1-4ring3.scad>
 use <../../p/1-8chrd.scad>
 use <../../p/1-8cyli.scad>
@@ -22,7 +22,7 @@ function ldraw_lib__s__16375s01() = [
 // 0 ~Duplo Roof Spire  3 x  3 x  3 Quarter
 // 0 Name: s\16375s01.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Subpart UPDATE 2023-04
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -32,7 +32,8 @@ function ldraw_lib__s__16375s01() = [
 // 0 !HISTORY 2020-12-12 {LEGO/Unity Microgame} Original part shape
 // 0 !HISTORY 2021-05-28 [Philo] File preparation for LDraw Parts Tracker
 // 0 !HISTORY 2023-08-25 [OrionP] Official Update 2023-04
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 4 16 56 131 0 55.5184 131 7.308 55.5184 119.5 7.308 56 119.5 0
   [4,16,56,131,0,55.5184,131,7.308,55.5184,119.5,7.308,56,119.5,0],
@@ -330,16 +331,16 @@ function ldraw_lib__s__16375s01() = [
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 131 0 51.69231 0 0 0 -11 0 0 0 51.69231 1-4cylo.dat
   [1,16,0,131,0,51.69231,0,0,0,-11,0,0,0,51.69231, ldraw_lib__1_4cylo()],
-// 1 16 0 131 0 4.30769 0 0 0 -1 0 0 0 4.30769 1-4rin12.dat
-  [1,16,0,131,0,4.30769,0,0,0,-1,0,0,0,4.30769, ldraw_lib__1_4rin12()],
+// 1 16 0 131 0 4.30769 0 0 0 -1 0 0 0 4.30769 1-4ring12.dat
+  [1,16,0,131,0,4.30769,0,0,0,-1,0,0,0,4.30769, ldraw_lib__1_4ring12()],
 // 1 16 0 131 0 56 0 0 0 -1 0 0 0 56 48\1-4aring.dat
   [1,16,0,131,0,56,0,0,0,-1,0,0,0,56, ldraw_lib__48__1_4aring()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 120 0 5.74359 0 0 0 -9 0 0 0 5.74359 1-4con8.dat
   [1,16,0,120,0,5.74359,0,0,0,-9,0,0,0,5.74359, ldraw_lib__1_4con8()],
-// 1 16 0 111 0 3.06325 0 0 0 -1 0 0 0 3.06325 1-4rin14.dat
-  [1,16,0,111,0,3.06325,0,0,0,-1,0,0,0,3.06325, ldraw_lib__1_4rin14()],
+// 1 16 0 111 0 3.06325 0 0 0 -1 0 0 0 3.06325 1-4ring14.dat
+  [1,16,0,111,0,3.06325,0,0,0,-1,0,0,0,3.06325, ldraw_lib__1_4ring14()],
 // 1 16 0 111 0 45.94872 0 0 0 -1 0 0 0 45.94872 1-4edge.dat
   [1,16,0,111,0,45.94872,0,0,0,-1,0,0,0,45.94872, ldraw_lib__1_4edge()],
 // 1 16 0 111 0 43.6 0 0 0 33 0 0 0 43.6 48\1-4cylo.dat
@@ -348,8 +349,8 @@ function ldraw_lib__s__16375s01() = [
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 97 0 40.3 0 0 0 47 0 0 0 40.3 1-4cylo.dat
   [1,16,0,97,0,40.3,0,0,0,47,0,0,0,40.3, ldraw_lib__1_4cylo()],
-// 1 16 0 144 0 3.35833 0 0 0 -1 0 0 0 3.35833 1-4rin12.dat
-  [1,16,0,144,0,3.35833,0,0,0,-1,0,0,0,3.35833, ldraw_lib__1_4rin12()],
+// 1 16 0 144 0 3.35833 0 0 0 -1 0 0 0 3.35833 1-4ring12.dat
+  [1,16,0,144,0,3.35833,0,0,0,-1,0,0,0,3.35833, ldraw_lib__1_4ring12()],
 // 1 16 0 144 0 43.65833 0 0 0 -1 0 0 0 43.65833 48\1-4aring.dat
   [1,16,0,144,0,43.65833,0,0,0,-1,0,0,0,43.65833, ldraw_lib__48__1_4aring()],
 // 0 BFC INVERTNEXT

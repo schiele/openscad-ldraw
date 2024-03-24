@@ -1,11 +1,11 @@
 use <../lib.scad>
-use <../p/1-4rin19.scad>
+use <../p/1-4ring19.scad>
 use <s/3350s01.scad>
 function ldraw_lib__3350p01() = [
 // 0 Roadsign Round with No Entry Pattern
 // 0 Name: 3350p01.dat
 // 0 Author: Manfred Moolhuysen
-// 0 !LDRAW_ORG Part UPDATE 2010-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -16,7 +16,8 @@ function ldraw_lib__3350p01() = [
 // 0 !HISTORY 2003-10-26 [Steffen] changed description
 // 0 !HISTORY 2010-04-22 [cwdee] Change white to main colour
 // 0 !HISTORY 2010-07-05 [PTadmin] Official Update 2010-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 4 4 -17.96 -88 -2 -20 -88 -2 -18.4 -80.4 -2 -17.22 -84.5 -2
   [4,4,-17.96,-88,-2,-20,-88,-2,-18.4,-80.4,-2,-17.22,-84.5,-2],
@@ -32,14 +33,14 @@ function ldraw_lib__3350p01() = [
   [4,4,17.22,-84.5,-2,18.4,-80.4,-2,20,-88,-2,17.96,-88,-2],
 // 4 4 17.96 -88 -2 20 -88 -2 18.4 -95.6 -2 17.22 -91.5 -2
   [4,4,17.96,-88,-2,20,-88,-2,18.4,-95.6,-2,17.22,-91.5,-2],
-// 1 4 0 -88 -2 -1 0 0 0 0 1 0 1 0 1-4rin19.dat
-  [1,4,0,-88,-2,-1,0,0,0,0,1,0,1,0, ldraw_lib__1_4rin19()],
-// 1 4 0 -88 -2 0 0 -1 -1 0 0 0 1 0 1-4rin19.dat
-  [1,4,0,-88,-2,0,0,-1,-1,0,0,0,1,0, ldraw_lib__1_4rin19()],
-// 1 4 0 -88 -2 1 0 0 0 0 -1 0 1 0 1-4rin19.dat
-  [1,4,0,-88,-2,1,0,0,0,0,-1,0,1,0, ldraw_lib__1_4rin19()],
-// 1 4 0 -88 -2 0 0 1 1 0 0 0 1 0 1-4rin19.dat
-  [1,4,0,-88,-2,0,0,1,1,0,0,0,1,0, ldraw_lib__1_4rin19()],
+// 1 4 0 -88 -2 -1 0 0 0 0 1 0 1 0 1-4ring19.dat
+  [1,4,0,-88,-2,-1,0,0,0,0,1,0,1,0, ldraw_lib__1_4ring19()],
+// 1 4 0 -88 -2 0 0 -1 -1 0 0 0 1 0 1-4ring19.dat
+  [1,4,0,-88,-2,0,0,-1,-1,0,0,0,1,0, ldraw_lib__1_4ring19()],
+// 1 4 0 -88 -2 1 0 0 0 0 -1 0 1 0 1-4ring19.dat
+  [1,4,0,-88,-2,1,0,0,0,0,-1,0,1,0, ldraw_lib__1_4ring19()],
+// 1 4 0 -88 -2 0 0 1 1 0 0 0 1 0 1-4ring19.dat
+  [1,4,0,-88,-2,0,0,1,1,0,0,0,1,0, ldraw_lib__1_4ring19()],
 // 4 4 17.22 -91.5 -2 18.4 -95.6 -2 14 -102 -2 0 -91.5 -2
   [4,4,17.22,-91.5,-2,18.4,-95.6,-2,14,-102,-2,0,-91.5,-2],
 // 4 4 0 -91.5 -2 14 -102 -2 7.6 -106.4 -2 0 -108 -2

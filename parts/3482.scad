@@ -9,14 +9,14 @@ use <../p/4-4con10.scad>
 use <../p/4-4con19.scad>
 use <../p/4-4cylo.scad>
 use <../p/4-4edge.scad>
-use <../p/4-4rin10.scad>
+use <../p/4-4ring10.scad>
 use <../p/4-4ring3.scad>
 use <../p/axlehol5.scad>
 function ldraw_lib__3482() = [
 // 0 Wheel Rim  8 x 17.5 with Axlehole
 // 0 Name: 3482.dat
 // 0 Author: James Jessiman
-// 0 !LDRAW_ORG Part UPDATE 2014-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -31,7 +31,8 @@ function ldraw_lib__3482() = [
 // 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01
 // 0 !HISTORY 2014-03-08 [cwdee] Description change
 // 0 !HISTORY 2014-06-21 [PTadmin] Official Update 2014-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Nomenclature: width_(mm) x rim_diameter_(mm) [optional qualifier]
 // 
@@ -177,10 +178,10 @@ function ldraw_lib__3482() = [
   [1,16,0,0,9,0,0,-5,5,0,0,0,-1,0, ldraw_lib__4_4ring3()],
 // 1 16 0 0 -9 0 0 -5 5 0 0 0 1 0 4-4ring3.dat
   [1,16,0,0,-9,0,0,-5,5,0,0,0,1,0, ldraw_lib__4_4ring3()],
-// 1 16 0 0 -9 0 0 -2 2 0 0 0 1 0 4-4rin10.dat
-  [1,16,0,0,-9,0,0,-2,2,0,0,0,1,0, ldraw_lib__4_4rin10()],
-// 1 16 0 0 9 0 0 -2 2 0 0 0 -1 0 4-4rin10.dat
-  [1,16,0,0,9,0,0,-2,2,0,0,0,-1,0, ldraw_lib__4_4rin10()],
+// 1 16 0 0 -9 0 0 -2 2 0 0 0 1 0 4-4ring10.dat
+  [1,16,0,0,-9,0,0,-2,2,0,0,0,1,0, ldraw_lib__4_4ring10()],
+// 1 16 0 0 9 0 0 -2 2 0 0 0 -1 0 4-4ring10.dat
+  [1,16,0,0,9,0,0,-2,2,0,0,0,-1,0, ldraw_lib__4_4ring10()],
 // 4 16 5.543 2.296 10 5.602 2 10 8.58 2 10 8.315 3.444 10
   [4,16,5.543,2.296,10,5.602,2,10,8.58,2,10,8.315,3.444,10],
 // 4 16 5.602 -2 10 5.543 -2.296 10 8.315 -3.444 10 8.58 -2 10

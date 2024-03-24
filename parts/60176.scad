@@ -2,7 +2,7 @@ use <../lib.scad>
 use <../p/2-4cyli.scad>
 use <../p/2-4edge.scad>
 use <../p/2-4ndis.scad>
-use <../p/2-4rin17.scad>
+use <../p/2-4ring17.scad>
 use <../p/2-4ring9.scad>
 use <../p/3-8cylo.scad>
 use <../p/4-4cyli.scad>
@@ -26,7 +26,7 @@ function ldraw_lib__60176() = [
 // 0 Constraction Connector  3 x  2 with Single Angled Ball Socket
 // 0 Name: 60176.dat
 // 0 Author: Santeri Piippo [arezey]
-// 0 !LDRAW_ORG Part UPDATE 2022-04
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -35,7 +35,8 @@ function ldraw_lib__60176() = [
 // 
 // 0 !HISTORY 2018-02-13 [MagFors] Reworked due to changes in ballsocket primitive
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\60176s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__60176s01()],
@@ -176,12 +177,12 @@ function ldraw_lib__60176() = [
   [5,24,7.853,8,23.253,7.853,-8,23.253,8.5,6.36,20,6.506,8,26.506],
 // 1 16 0 -6.36 20 1 0 0 0 -1 0 0 0 1 2-4ring9.dat
   [1,16,0,-6.36,20,1,0,0,0,-1,0,0,0,1, ldraw_lib__2_4ring9()],
-// 1 16 0 -6.36 20 0.5 0 0 0 -1 0 0 0 0.5 2-4rin17.dat
-  [1,16,0,-6.36,20,0.5,0,0,0,-1,0,0,0,0.5, ldraw_lib__2_4rin17()],
+// 1 16 0 -6.36 20 0.5 0 0 0 -1 0 0 0 0.5 2-4ring17.dat
+  [1,16,0,-6.36,20,0.5,0,0,0,-1,0,0,0,0.5, ldraw_lib__2_4ring17()],
 // 1 16 0 6.36 20 1 0 0 0 1 0 0 0 1 2-4ring9.dat
   [1,16,0,6.36,20,1,0,0,0,1,0,0,0,1, ldraw_lib__2_4ring9()],
-// 1 16 0 6.36 20 0.5 0 0 0 1 0 0 0 0.5 2-4rin17.dat
-  [1,16,0,6.36,20,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__2_4rin17()],
+// 1 16 0 6.36 20 0.5 0 0 0 1 0 0 0 0.5 2-4ring17.dat
+  [1,16,0,6.36,20,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__2_4ring17()],
 // 1 16 8.027 0 22.376 0 -1 .1745 -6.36 0 0 0 0 -.8765 rect3.dat
   [1,16,8.027,0,22.376,0,-1,.1745,-6.36,0,0,0,0,-.8765, ldraw_lib__rect3()],
 // 1 16 8.5 0 16.75 0 -1 0 6.36 0 0 0 0 1.75 rect3.dat

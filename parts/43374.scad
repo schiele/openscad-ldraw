@@ -3,15 +3,15 @@ use <../p/48/4-4con13.scad>
 use <../p/48/4-4con21.scad>
 use <../p/48/4-4cyli.scad>
 use <../p/48/4-4edge.scad>
-use <../p/48/4-4rin10.scad>
-use <../p/48/4-4rin14.scad>
+use <../p/48/4-4ring10.scad>
+use <../p/48/4-4ring14.scad>
 use <../p/48/4-4ring5.scad>
 use <s/43374s01.scad>
 function ldraw_lib__43374() = [
 // 0 Minifig Basketball Net for Hoop
 // 0 Name: 43374.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2012-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -21,7 +21,8 @@ function ldraw_lib__43374() = [
 // 0 !CATEGORY Minifig Accessory
 // 
 // 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 47 0 0 0 1 0 0 0 47 48\4-4edge.dat
   [1,16,0,0,0,47,0,0,0,1,0,0,0,47, ldraw_lib__48__4_4edge()],
@@ -29,10 +30,10 @@ function ldraw_lib__43374() = [
   [1,16,0,0,0,47,0,0,0,3,0,0,0,47, ldraw_lib__48__4_4cyli()],
 // 1 16 0 3 0 47 0 0 0 1 0 0 0 47 48\4-4edge.dat
   [1,16,0,3,0,47,0,0,0,1,0,0,0,47, ldraw_lib__48__4_4edge()],
-// 1 16 0 3 0 3.13333 0 0 0 -1 0 0 0 3.13333 48\4-4rin14.dat
-  [1,16,0,3,0,3.13333,0,0,0,-1,0,0,0,3.13333, ldraw_lib__48__4_4rin14()],
-// 1 16 0 0 0 3.13333 0 0 0 1 0 0 0 3.13333 48\4-4rin14.dat
-  [1,16,0,0,0,3.13333,0,0,0,1,0,0,0,3.13333, ldraw_lib__48__4_4rin14()],
+// 1 16 0 3 0 3.13333 0 0 0 -1 0 0 0 3.13333 48\4-4ring14.dat
+  [1,16,0,3,0,3.13333,0,0,0,-1,0,0,0,3.13333, ldraw_lib__48__4_4ring14()],
+// 1 16 0 0 0 3.13333 0 0 0 1 0 0 0 3.13333 48\4-4ring14.dat
+  [1,16,0,0,0,3.13333,0,0,0,1,0,0,0,3.13333, ldraw_lib__48__4_4ring14()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 0 1.99394 0 0 0 1.5 0 0 0 1.99394 48\4-4con21.dat
@@ -45,8 +46,8 @@ function ldraw_lib__43374() = [
   [1,16,0,3,0,42.77,0,0,0,1,0,0,0,42.77, ldraw_lib__48__4_4edge()],
 // 1 16 0 3 0 42.77 0 0 0 3 0 0 0 42.77 48\4-4cyli.dat
   [1,16,0,3,0,42.77,0,0,0,3,0,0,0,42.77, ldraw_lib__48__4_4cyli()],
-// 1 16 0 3 0 4.27273 0 0 0 -1 0 0 0 4.27273 48\4-4rin10.dat
-  [1,16,0,3,0,4.27273,0,0,0,-1,0,0,0,4.27273, ldraw_lib__48__4_4rin10()],
+// 1 16 0 3 0 4.27273 0 0 0 -1 0 0 0 4.27273 48\4-4ring10.dat
+  [1,16,0,3,0,4.27273,0,0,0,-1,0,0,0,4.27273, ldraw_lib__48__4_4ring10()],
 // 1 16 0 70 0 23 0 0 0 1 0 0 0 23 48\4-4edge.dat
   [1,16,0,70,0,23,0,0,0,1,0,0,0,23, ldraw_lib__48__4_4edge()],
 // 1 16 0 66 0 23 0 0 0 4 0 0 0 23 48\4-4cyli.dat

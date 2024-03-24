@@ -1,9 +1,9 @@
 use <../../lib.scad>
 function ldraw_lib__48__4_4rin12() = [
-// 0 Hi-Res Ring 12 x 1.0
+// 0 ~Hi-Res Ring 12 x 1.0 (Obsolete)
 // 0 Name: 48\4-4rin12.dat
 // 0 Author: Mark Kennedy [mkennedy]
-// 0 !LDRAW_ORG 48_Primitive UPDATE 2012-02
+// 0 !LDRAW_ORG 48_Primitive UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -15,7 +15,8 @@ function ldraw_lib__48__4_4rin12() = [
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
 // 0 !HISTORY 2012-02-27 [Philo] Changed to CCW
 // 0 !HISTORY 2012-08-09 [PTadmin] Official Update 2012-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Obsolete, use 48\4-4ring12.dat
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 4 16 13 0 0 12.8882 0 1.6965 11.8968 0 1.566 12 0 0
   [4,16,13,0,0,12.8882,0,1.6965,11.8968,0,1.566,12,0,0],

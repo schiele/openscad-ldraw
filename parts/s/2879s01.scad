@@ -7,8 +7,8 @@ use <../../p/4-4con41.scad>
 use <../../p/4-4con5.scad>
 use <../../p/4-4cylo.scad>
 use <../../p/4-4edge.scad>
-use <../../p/4-4rin40.scad>
 use <../../p/4-4ring1.scad>
+use <../../p/4-4ring40.scad>
 use <../../p/4-4ring5.scad>
 use <../../p/4-4ring6.scad>
 use <../../p/4-4ring9.scad>
@@ -16,7 +16,7 @@ function ldraw_lib__s__2879s01() = [
 // 0 ~Train Wheel without Centre Area for Wheel Bogie
 // 0 Name: s\2879s01.dat
 // 0 Author: Max Martin Richter [MMR1988]
-// 0 !LDRAW_ORG Subpart UPDATE 2013-02
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -24,7 +24,8 @@ function ldraw_lib__s__2879s01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2013-12-23 [PTadmin] Official Update 2013-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 5.6875 0 0 7 7 0 0 0 -2.1875 0 4-4con3.dat
   [1,16,0,0,5.6875,0,0,7,7,0,0,0,-2.1875,0, ldraw_lib__4_4con3()],
@@ -38,8 +39,8 @@ function ldraw_lib__s__2879s01() = [
   [1,16,0,0,-2,20.5,0,0,0,0,20.5,0,1,0, ldraw_lib__4_4edge()],
 // 1 16 0 0 -2 0 0 2 2 0 0 0 1 0 4-4ring9.dat
   [1,16,0,0,-2,0,0,2,2,0,0,0,1,0, ldraw_lib__4_4ring9()],
-// 1 16 0 0 -2 0 0 0.5 0.5 0 0 0 1 0 4-4rin40.dat
-  [1,16,0,0,-2,0,0,0.5,0.5,0,0,0,1,0, ldraw_lib__4_4rin40()],
+// 1 16 0 0 -2 0 0 0.5 0.5 0 0 0 1 0 4-4ring40.dat
+  [1,16,0,0,-2,0,0,0.5,0.5,0,0,0,1,0, ldraw_lib__4_4ring40()],
 // 1 16 0 0 -2 18 0 0 0 0 18 0 1 0 4-4edge.dat
   [1,16,0,0,-2,18,0,0,0,0,18,0,1,0, ldraw_lib__4_4edge()],
 // 1 16 0 0 6 29 0 0 0 0 29 0 2 0 4-4cylo.dat

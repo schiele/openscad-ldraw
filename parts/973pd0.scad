@@ -1,5 +1,5 @@
 use <../lib.scad>
-use <../p/1-16rin1.scad>
+use <../p/1-16ring1.scad>
 use <../p/1-4cyli.scad>
 use <../p/1-4ndis.scad>
 use <../p/1-4ring1.scad>
@@ -16,7 +16,7 @@ function ldraw_lib__973pd0() = [
 // 0 Minifig Torso with Studios Director Pattern
 // 0 Name: 973pd0.dat
 // 0 Author: Chris Dee [cwdee]
-// 0 !LDRAW_ORG Part UPDATE 2012-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -25,7 +25,8 @@ function ldraw_lib__973pd0() = [
 // 
 // 0 !HISTORY 2012-03-31 [BlackBrick89] Removed triangle overlaps
 // 0 !HISTORY 2012-08-09 [PTadmin] Official Update 2012-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],
@@ -57,8 +58,8 @@ function ldraw_lib__973pd0() = [
   [1,16,0.5,14,-10,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4ndis()],
 // 1 16 0.6 24.5 -10 -0.1913 0 -0.4619 -0.4619 0 0.1913 0 1 0 7-16chrd.dat
   [1,16,0.6,24.5,-10,-0.1913,0,-0.4619,-0.4619,0,0.1913,0,1,0, ldraw_lib__7_16chrd()],
-// 1 0 0.6 24.5 -10 -0.3536 0 0.3536 -0.3536 0 -0.3536 0 1 0 1-16rin1.dat
-  [1,0,0.6,24.5,-10,-0.3536,0,0.3536,-0.3536,0,-0.3536,0,1,0, ldraw_lib__1_16rin1()],
+// 1 0 0.6 24.5 -10 -0.3536 0 0.3536 -0.3536 0 -0.3536 0 1 0 1-16ring1.dat
+  [1,0,0.6,24.5,-10,-0.3536,0,0.3536,-0.3536,0,-0.3536,0,1,0, ldraw_lib__1_16ring1()],
 // 1 0 0.6 24.5 -10 -0.5 0 0 0 0 -0.5 0 1 0 1-8ring1.dat
   [1,0,0.6,24.5,-10,-0.5,0,0,0,0,-0.5,0,1,0, ldraw_lib__1_8ring1()],
 // 1 0 0.6 24.5 -10 -0.5 0 0 0 0 0.5 0 1 0 1-4ring1.dat

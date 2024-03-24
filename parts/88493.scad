@@ -8,8 +8,8 @@ use <../p/2-4cyli.scad>
 use <../p/2-4disc.scad>
 use <../p/2-4edge.scad>
 use <../p/2-4ndis.scad>
-use <../p/2-4rin18.scad>
 use <../p/2-4ring1.scad>
+use <../p/2-4ring18.scad>
 use <../p/3-4cyli.scad>
 use <../p/3-4edge.scad>
 use <../p/3-8cyli.scad>
@@ -24,7 +24,7 @@ use <../p/4-4ring3.scad>
 use <../p/4-4ring4.scad>
 use <../p/4-4ring6.scad>
 use <../p/4-4ring8.scad>
-use <../p/48/1-12rin2.scad>
+use <../p/48/1-12ring2.scad>
 use <../p/48/1-3ring2.scad>
 use <../p/48/1-48edge.scad>
 use <../p/48/1-4con16.scad>
@@ -58,7 +58,7 @@ function ldraw_lib__88493() = [
 // 0 Train Track Flexible Segment Male Half
 // 0 Name: 88493.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2011-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -66,7 +66,8 @@ function ldraw_lib__88493() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2011-07-25 [PTadmin] Official Update 2011-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 30 0 -10 0 0 -1 0 1 0 1 0 0 stud.dat
   [1,16,30,0,-10,0,0,-1,0,1,0,1,0,0, ldraw_lib__stud()],
@@ -622,8 +623,8 @@ function ldraw_lib__88493() = [
   [1,16,0,0,0,0,0,3,0,1,0,-3,0,0, ldraw_lib__4_4ring2()],
 // 1 16 0 0 0 0 0 -9 0 1 0 9 0 0 2-4ring1.dat
   [1,16,0,0,0,0,0,-9,0,1,0,9,0,0, ldraw_lib__2_4ring1()],
-// 1 16 0 0 0 0 0 -1 0 1 0 1 0 0 2-4rin18.dat
-  [1,16,0,0,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__2_4rin18()],
+// 1 16 0 0 0 0 0 -1 0 1 0 1 0 0 2-4ring18.dat
+  [1,16,0,0,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__2_4ring18()],
 // 1 16 0 0 0 0 0 -19 0 1 0 19 0 0 48\2-4aring.dat
   [1,16,0,0,0,0,0,-19,0,1,0,19,0,0, ldraw_lib__48__2_4aring()],
 // 0 BFC INVERTNEXT
@@ -712,8 +713,8 @@ function ldraw_lib__88493() = [
   [1,16,1.892,6,16.876,0,0.99977,-0.065,2,0,0,0,-0.99982,-2.9955, ldraw_lib__rect3()],
 // 1 16 0 8 0 1.81173 0 6.76148 0 -1 0 -6.76148 0 1.81173 48\1-3ring2.dat
   [1,16,0,8,0,1.81173,0,6.76148,0,-1,0,-6.76148,0,1.81173, ldraw_lib__48__1_3ring2()],
-// 1 16 0 8 0 1.81173 0 6.76148 0 -1 0 6.76148 0 -1.81173 48\1-12rin2.dat
-  [1,16,0,8,0,1.81173,0,6.76148,0,-1,0,6.76148,0,-1.81173, ldraw_lib__48__1_12rin2()],
+// 1 16 0 8 0 1.81173 0 6.76148 0 -1 0 6.76148 0 -1.81173 48\1-12ring2.dat
+  [1,16,0,8,0,1.81173,0,6.76148,0,-1,0,6.76148,0,-1.81173, ldraw_lib__48__1_12ring2()],
 // 1 16 0 8 0 0.77646 0 2.89778 0 -1 0 -2.89778 0 0.77646 48\1-8ring7.dat
   [1,16,0,8,0,0.77646,0,2.89778,0,-1,0,-2.89778,0,0.77646, ldraw_lib__48__1_8ring7()],
 // 1 16 0 8 0 2.59808 0 1.5 0 -1 0 -1.5 0 2.59808 48\1-6ring7.dat

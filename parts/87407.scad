@@ -2,11 +2,11 @@ use <../lib.scad>
 use <../p/4-4con7.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4edge.scad>
-use <../p/4-4rin21.scad>
-use <../p/4-4rin33.scad>
-use <../p/4-4rin34.scad>
 use <../p/4-4ring1.scad>
 use <../p/4-4ring2.scad>
+use <../p/4-4ring21.scad>
+use <../p/4-4ring33.scad>
+use <../p/4-4ring34.scad>
 use <../p/4-4ring6.scad>
 use <../p/connhole.scad>
 use <../p/toothb20.scad>
@@ -14,7 +14,7 @@ function ldraw_lib__87407() = [
 // 0 Technic Gear 20 Tooth Bevel with Peghole
 // 0 Name: 87407.dat
 // 0 Author: Santeri Piippo [arezey]
-// 0 !LDRAW_ORG Part UPDATE 2012-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -22,7 +22,8 @@ function ldraw_lib__87407() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 -10 1 0 0 0 0 1 0 -1 0 connhole.dat
   [1,16,0,0,-10,1,0,0,0,0,1,0,-1,0, ldraw_lib__connhole()],
@@ -194,18 +195,18 @@ function ldraw_lib__87407() = [
   [1,16,0,0,0,11,0,0,0,0,11,0,20,0, ldraw_lib__4_4edge()],
 // 1 16 0 0 0 1.5 0 0 0 0 1.5 0 -1 0 4-4ring6.dat
   [1,16,0,0,0,1.5,0,0,0,0,1.5,0,-1,0, ldraw_lib__4_4ring6()],
-// 1 16 0 0 0 0.5 0 0 0 0 0.5 0 -1 0 4-4rin21.dat
-  [1,16,0,0,0,0.5,0,0,0,0,0.5,0,-1,0, ldraw_lib__4_4rin21()],
+// 1 16 0 0 0 0.5 0 0 0 0 0.5 0 -1 0 4-4ring21.dat
+  [1,16,0,0,0,0.5,0,0,0,0,0.5,0,-1,0, ldraw_lib__4_4ring21()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 -3 2.5 0 0 0 0 2.5 0 -1.5 0 4-4con7.dat
   [1,16,0,0,-3,2.5,0,0,0,0,2.5,0,-1.5,0, ldraw_lib__4_4con7()],
 // 1 16 0 0 -4.5 5.5 0 0 0 0 5.5 0 -1 0 4-4ring2.dat
   [1,16,0,0,-4.5,5.5,0,0,0,0,5.5,0,-1,0, ldraw_lib__4_4ring2()],
-// 1 16 0 0 -4.5 0.5 0 0 0 0 0.5 0 -1 0 4-4rin33.dat
-  [1,16,0,0,-4.5,0.5,0,0,0,0,0.5,0,-1,0, ldraw_lib__4_4rin33()],
-// 1 16 0 0 -4.5 0.5 0 0 0 0 0.5 0 -1 0 4-4rin34.dat
-  [1,16,0,0,-4.5,0.5,0,0,0,0,0.5,0,-1,0, ldraw_lib__4_4rin34()],
+// 1 16 0 0 -4.5 0.5 0 0 0 0 0.5 0 -1 0 4-4ring33.dat
+  [1,16,0,0,-4.5,0.5,0,0,0,0,0.5,0,-1,0, ldraw_lib__4_4ring33()],
+// 1 16 0 0 -4.5 0.5 0 0 0 0 0.5 0 -1 0 4-4ring34.dat
+  [1,16,0,0,-4.5,0.5,0,0,0,0,0.5,0,-1,0, ldraw_lib__4_4ring34()],
 // 1 16 0 0 -4.5 11 0 0 0 0 11 0 1 0 4-4edge.dat
   [1,16,0,0,-4.5,11,0,0,0,0,11,0,1,0, ldraw_lib__4_4edge()],
 // 1 16 0 0 0 11 0 0 0 0 11 0 -4.5 0 4-4cyli.dat

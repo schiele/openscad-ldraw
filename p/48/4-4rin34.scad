@@ -1,9 +1,9 @@
 use <../../lib.scad>
 function ldraw_lib__48__4_4rin34() = [
-// 0 Hi-Res Ring 34 x 1.0
+// 0 ~Hi-Res Ring 34 x 1.0 (Obsolete)
 // 0 Name: 48\4-4rin34.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG 48_Primitive UPDATE 2012-02
+// 0 !LDRAW_ORG 48_Primitive UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -11,7 +11,8 @@ function ldraw_lib__48__4_4rin34() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2012-08-09 [PTadmin] Official Update 2012-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Obsolete, use 48\4-4ring34.dat
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 4 16 34 0 0 35 0 0 34.699 0 4.5675 33.7076 0 4.437
   [4,16,34,0,0,35,0,0,34.699,0,4.5675,33.7076,0,4.437],

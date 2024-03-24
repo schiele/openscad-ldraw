@@ -3,16 +3,16 @@ use <../p/2-4cyli.scad>
 use <../p/2-4disc.scad>
 use <../p/2-4edge.scad>
 use <../p/2-4ndis.scad>
-use <../p/2-4rin14.scad>
+use <../p/2-4ring14.scad>
 use <../p/3-8cyli.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4edge.scad>
-use <../p/4-4rin13.scad>
-use <../p/4-4rin14.scad>
+use <../p/4-4ring13.scad>
+use <../p/4-4ring14.scad>
 use <../p/48/2-4ndis.scad>
 use <../p/48/2-4ring6.scad>
 use <../p/48/4-4crh2.scad>
-use <../p/48/4-4rin12.scad>
+use <../p/48/4-4ring12.scad>
 use <../p/box3u2p.scad>
 use <../p/box3u8p.scad>
 use <../p/box4-1.scad>
@@ -27,7 +27,7 @@ function ldraw_lib__45361() = [
 // 0 ~Technic Gearbox  3 x  3 x  1.667 Corner Top
 // 0 Name: 45361.dat
 // 0 Author: Guy Vivan [guyvivan]
-// 0 !LDRAW_ORG Part UPDATE 2010-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -36,7 +36,8 @@ function ldraw_lib__45361() = [
 // 
 // 0 !HISTORY 2010-04-05 [Philo] Added missing edgelines, rectified, corrected stud2 orientation
 // 0 !HISTORY 2010-07-05 [PTadmin] Official Update 2010-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 18 -40 1 0 0 0 0 1 0 -8 0 48\4-4crh2.dat
   [1,16,0,18,-40,1,0,0,0,0,1,0,-8,0, ldraw_lib__48__4_4crh2()],
@@ -524,34 +525,34 @@ function ldraw_lib__45361() = [
   [1,16,0,18,-40,14,0,0,0,0,14,0,1,0, ldraw_lib__4_4cyli()],
 // 1 16 0 18 -39 14 0 0 0 0 14 0 2 0 4-4edge.dat
   [1,16,0,18,-39,14,0,0,0,0,14,0,2,0, ldraw_lib__4_4edge()],
-// 1 16 0 18 -40 1 0 0 0 0 1 0 1 0 48\4-4rin12.dat
-  [1,16,0,18,-40,1,0,0,0,0,1,0,1,0, ldraw_lib__48__4_4rin12()],
-// 1 16 0 18 -40 1 0 0 0 0 1 0 1 0 4-4rin13.dat
-  [1,16,0,18,-40,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4rin13()],
-// 1 16 40 18 0 0 -1 0 0 0 1 1 0 0 48\4-4rin12.dat
-  [1,16,40,18,0,0,-1,0,0,0,1,1,0,0, ldraw_lib__48__4_4rin12()],
-// 1 16 40 18 0 0 -1 0 0 0 1 1 0 0 4-4rin13.dat
-  [1,16,40,18,0,0,-1,0,0,0,1,1,0,0, ldraw_lib__4_4rin13()],
+// 1 16 0 18 -40 1 0 0 0 0 1 0 1 0 48\4-4ring12.dat
+  [1,16,0,18,-40,1,0,0,0,0,1,0,1,0, ldraw_lib__48__4_4ring12()],
+// 1 16 0 18 -40 1 0 0 0 0 1 0 1 0 4-4ring13.dat
+  [1,16,0,18,-40,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4ring13()],
+// 1 16 40 18 0 0 -1 0 0 0 1 1 0 0 48\4-4ring12.dat
+  [1,16,40,18,0,0,-1,0,0,0,1,1,0,0, ldraw_lib__48__4_4ring12()],
+// 1 16 40 18 0 0 -1 0 0 0 1 1 0 0 4-4ring13.dat
+  [1,16,40,18,0,0,-1,0,0,0,1,1,0,0, ldraw_lib__4_4ring13()],
 // 1 16 0 18 -32 12 0 0 0 0 -12 0 -1 0 48\2-4ndis.dat
   [1,16,0,18,-32,12,0,0,0,0,-12,0,-1,0, ldraw_lib__48__2_4ndis()],
 // 1 16 0 18 -32 2 0 0 0 0 2 0 -1 0 48\2-4ring6.dat
   [1,16,0,18,-32,2,0,0,0,0,2,0,-1,0, ldraw_lib__48__2_4ring6()],
-// 1 16 0 18 -32 1 0 0 0 0 1 0 -1 0 2-4rin14.dat
-  [1,16,0,18,-32,1,0,0,0,0,1,0,-1,0, ldraw_lib__2_4rin14()],
+// 1 16 0 18 -32 1 0 0 0 0 1 0 -1 0 2-4ring14.dat
+  [1,16,0,18,-32,1,0,0,0,0,1,0,-1,0, ldraw_lib__2_4ring14()],
 // 1 16 32 18 0 0 1 0 0 0 2 2 0 0 48\2-4ring6.dat
   [1,16,32,18,0,0,1,0,0,0,2,2,0,0, ldraw_lib__48__2_4ring6()],
-// 1 16 32 18 0 0 1 0 0 0 1 1 0 0 2-4rin14.dat
-  [1,16,32,18,0,0,1,0,0,0,1,1,0,0, ldraw_lib__2_4rin14()],
+// 1 16 32 18 0 0 1 0 0 0 1 1 0 0 2-4ring14.dat
+  [1,16,32,18,0,0,1,0,0,0,1,1,0,0, ldraw_lib__2_4ring14()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 18 -39 15 0 0 0 0 -15 0 -1 0 2-4cyli.dat
   [1,16,0,18,-39,15,0,0,0,0,-15,0,-1,0, ldraw_lib__2_4cyli()],
 // 1 16 0 18 -40 15 0 0 0 0 -15 0 -1 0 2-4edge.dat
   [1,16,0,18,-40,15,0,0,0,0,-15,0,-1,0, ldraw_lib__2_4edge()],
-// 1 16 0 18 -39 1 0 0 0 0 1 0 1 0 4-4rin14.dat
-  [1,16,0,18,-39,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4rin14()],
-// 1 16 39 18 0 0 -1 0 0 0 1 1 0 0 4-4rin14.dat
-  [1,16,39,18,0,0,-1,0,0,0,1,1,0,0, ldraw_lib__4_4rin14()],
+// 1 16 0 18 -39 1 0 0 0 0 1 0 1 0 4-4ring14.dat
+  [1,16,0,18,-39,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4ring14()],
+// 1 16 39 18 0 0 -1 0 0 0 1 1 0 0 4-4ring14.dat
+  [1,16,39,18,0,0,-1,0,0,0,1,1,0,0, ldraw_lib__4_4ring14()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 39 18 0 0 1 0 0 0 -15 15 0 0 2-4cyli.dat

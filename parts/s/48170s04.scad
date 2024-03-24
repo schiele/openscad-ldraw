@@ -13,7 +13,7 @@ use <../../p/48/4-4crh1.scad>
 use <../../p/48/4-4cyli.scad>
 use <../../p/48/4-4edge.scad>
 use <../../p/48/4-4ndis.scad>
-use <../../p/48/4-4rin10.scad>
+use <../../p/48/4-4ring10.scad>
 use <../../p/48/4-4ring2.scad>
 use <../../p/48/4-4ring3.scad>
 use <../../p/48/4-4ring6.scad>
@@ -22,7 +22,7 @@ function ldraw_lib__s__48170s04() = [
 // 0 ~Technic Brick Click Rotation Ring Joint - Socket
 // 0 Name: s\48170s04.dat
 // 0 Author: Guy Vivan [guyvivan]
-// 0 !LDRAW_ORG Subpart UPDATE 2010-02
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -31,7 +31,8 @@ function ldraw_lib__s__48170s04() = [
 // 
 // 0 !HISTORY 2006-03-15 [guyvivan] Adjust size of rotation joint (27 to 24 LDU)
 // 0 !HISTORY 2010-07-05 [PTadmin] Official Update 2010-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 10 -30 1 0 0 0 0 -1 0 14 0 48\4-4crh1.dat
   [1,16,0,10,-30,1,0,0,0,0,-1,0,14,0, ldraw_lib__48__4_4crh1()],
@@ -105,8 +106,8 @@ function ldraw_lib__s__48170s04() = [
   [1,16,0,10,-30,0,0,9,-9,0,0,0,1,0, ldraw_lib__48__4_4edge()],
 // 1 16 0 10 -30 0 0 1 -1 0 0 0 1 0 48\4-4ring9.dat
   [1,16,0,10,-30,0,0,1,-1,0,0,0,1,0, ldraw_lib__48__4_4ring9()],
-// 1 16 0 10 -30 0 0 1 -1 0 0 0 1 0 48\4-4rin10.dat
-  [1,16,0,10,-30,0,0,1,-1,0,0,0,1,0, ldraw_lib__48__4_4rin10()],
+// 1 16 0 10 -30 0 0 1 -1 0 0 0 1 0 48\4-4ring10.dat
+  [1,16,0,10,-30,0,0,1,-1,0,0,0,1,0, ldraw_lib__48__4_4ring10()],
 // 1 16 0 10 -38 0 0 9 -9 0 0 0 8 0 48\4-4cyli.dat
   [1,16,0,10,-38,0,0,9,-9,0,0,0,8,0, ldraw_lib__48__4_4cyli()],
 // 1 16 0 10 -44 0 0 2 -2 0 0 0 1 0 48\4-4ring6.dat

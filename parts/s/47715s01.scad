@@ -3,14 +3,14 @@ use <../../p/1-8cyli.scad>
 use <../../p/1-8edge.scad>
 use <../../p/3-16cyli.scad>
 use <../../p/3-16edge.scad>
-use <../../p/3-16rin5.scad>
+use <../../p/3-16ring5.scad>
 use <../../p/rect1.scad>
 use <../../p/rect3.scad>
 function ldraw_lib__s__47715s01() = [
 // 0 ~Motor Pull Back  4 x  9 x  2.667 Spring Suspension Half
 // 0 Name: s\47715s01.dat
 // 0 Author: Joerg Sommerer [Brickaneer]
-// 0 !LDRAW_ORG Subpart UPDATE 2013-02
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -18,7 +18,8 @@ function ldraw_lib__s__47715s01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2013-12-23 [PTadmin] Official Update 2013-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 26 31.5 30 12 0 0 0 -1 0 0 0 -12 3-16edge.dat
   [1,16,26,31.5,30,12,0,0,0,-1,0,0,0,-12, ldraw_lib__3_16edge()],
@@ -88,8 +89,8 @@ function ldraw_lib__s__47715s01() = [
   [1,16,26,31.5,30,10,0,0,0,-1,0,0,0,-10, ldraw_lib__3_16edge()],
 // 2 24 29 31.5 18.5966 29 31.5 20.5966
   [2,24,29,31.5,18.5966,29,31.5,20.5966],
-// 1 16 26 31.5 30 0.7654 0 1.8478 0 1 0 -1.8478 0 0.7654 3-16rin5.dat
-  [1,16,26,31.5,30,0.7654,0,1.8478,0,1,0,-1.8478,0,0.7654, ldraw_lib__3_16rin5()],
+// 1 16 26 31.5 30 0.7654 0 1.8478 0 1 0 -1.8478 0 0.7654 3-16ring5.dat
+  [1,16,26,31.5,30,0.7654,0,1.8478,0,1,0,-1.8478,0,0.7654, ldraw_lib__3_16ring5()],
 // 4 16 29 31.5 18.5966 30.5924 31.5 18.9132 29.827 31.5 20.761 29 31.5 20.5966
   [4,16,29,31.5,18.5966,30.5924,31.5,18.9132,29.827,31.5,20.761,29,31.5,20.5966],
 // 2 24 29 29 18.7954 29 29 20.5966

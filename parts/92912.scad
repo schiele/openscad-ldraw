@@ -4,14 +4,14 @@ use <../p/48/4-4con17.scad>
 use <../p/48/4-4con3.scad>
 use <../p/48/4-4cylo.scad>
 use <../p/48/4-4edge.scad>
-use <../p/48/4-4rin13.scad>
+use <../p/48/4-4ring13.scad>
 use <../p/48/4-4ring6.scad>
 use <s/92912s01.scad>
 function ldraw_lib__92912() = [
 // 0 Tyre 38/ 76 x 56
 // 0 Name: 92912.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2012-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 !HELP Position on 44772 wheel at Z = -3
@@ -20,10 +20,11 @@ function ldraw_lib__92912() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS 94.3 x 38 R, set 8110, Unimog
+// 0 !KEYWORDS 94.3 x 38 R, Unimog, set 8110
 // 
 // 0 !HISTORY 2012-08-09 [PTadmin] Official Update 2012-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Nomenclature: width_(mm)/profile_as_percentage_of_width x rim_diameter_(mm)
 // 
@@ -75,8 +76,8 @@ function ldraw_lib__92912() = [
   [1,16,0,0,0,0.5,0.866025,0,0.866025,-0.5,0,0,0,-1, ldraw_lib__s__92912s01()],
 // 1 16 0 0 0 -0.5 0.866025 0 -0.866025 -0.5 0 0 0 -1 s\92912s01.dat
   [1,16,0,0,0,-0.5,0.866025,0,-0.866025,-0.5,0,0,0,-1, ldraw_lib__s__92912s01()],
-// 1 16 0 0 38 5 0 0 0 0 5 0 -1 0 48\4-4rin13.dat
-  [1,16,0,0,38,5,0,0,0,0,5,0,-1,0, ldraw_lib__48__4_4rin13()],
+// 1 16 0 0 38 5 0 0 0 0 5 0 -1 0 48\4-4ring13.dat
+  [1,16,0,0,38,5,0,0,0,0,5,0,-1,0, ldraw_lib__48__4_4ring13()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 38 70 0 0 0 0 70 0 4 0 48\4-4cylo.dat
@@ -103,8 +104,8 @@ function ldraw_lib__92912() = [
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 34 9.19192 0 0 0 0 9.19192 0 9 0 48\4-4con11.dat
   [1,16,0,0,34,9.19192,0,0,0,0,9.19192,0,9,0, ldraw_lib__48__4_4con11()],
-// 1 16 0 0 -38 5 0 0 0 0 5 0 1 0 48\4-4rin13.dat
-  [1,16,0,0,-38,5,0,0,0,0,5,0,1,0, ldraw_lib__48__4_4rin13()],
+// 1 16 0 0 -38 5 0 0 0 0 5 0 1 0 48\4-4ring13.dat
+  [1,16,0,0,-38,5,0,0,0,0,5,0,1,0, ldraw_lib__48__4_4ring13()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 -38 70 0 0 0 0 70 0 -4 0 48\4-4cylo.dat

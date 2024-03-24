@@ -6,7 +6,7 @@ use <../../p/1-4ndis.scad>
 use <../../p/1-4ring8.scad>
 use <../../p/1-8cyli.scad>
 use <../../p/1-8edge.scad>
-use <../../p/1-8rin18.scad>
+use <../../p/1-8ring18.scad>
 use <../../p/1-8ring3.scad>
 use <../../p/1-8ring8.scad>
 use <../../p/2-4cyli.scad>
@@ -31,7 +31,7 @@ function ldraw_lib__s__61905s01() = [
 // 0 ~Technic Linear Actuator  2  x  2 Motor Mount Quarter
 // 0 Name: s\61905s01.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Subpart UPDATE 2019-03
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -41,7 +41,8 @@ function ldraw_lib__s__61905s01() = [
 // 0 !HISTORY 2010-07-05 [PTadmin] Official Update 2010-02
 // 0 !HISTORY 2019-11-13 [cwdee] Update description
 // 0 !HISTORY 2019-12-27 [PTadmin] Official Update 2019-03
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
@@ -191,14 +192,14 @@ function ldraw_lib__s__61905s01() = [
   [1,16,0,0,20,-15,0,0,0,0,15,0,-18,0, ldraw_lib__1_8edge()],
 // 1 16 0 0 0 -15 0 0 0 0 15 0 -18 0 1-8edge.dat
   [1,16,0,0,0,-15,0,0,0,0,15,0,-18,0, ldraw_lib__1_8edge()],
-// 1 16 0 0 20 -1 0 0 0 0 1 0 -1 0 1-8rin18.dat
-  [1,16,0,0,20,-1,0,0,0,0,1,0,-1,0, ldraw_lib__1_8rin18()],
+// 1 16 0 0 20 -1 0 0 0 0 1 0 -1 0 1-8ring18.dat
+  [1,16,0,0,20,-1,0,0,0,0,1,0,-1,0, ldraw_lib__1_8ring18()],
 // 4 16 -13.858 5.74 20 -16.63 6.889 20 -18 0 20 -15 0 20
   [4,16,-13.858,5.74,20,-16.63,6.889,20,-18,0,20,-15,0,20],
 // 4 16 -10.606 10.606 20 -12.728 12.728 20 -16.63 6.889 20 -13.858 5.74 20
   [4,16,-10.606,10.606,20,-12.728,12.728,20,-16.63,6.889,20,-13.858,5.74,20],
-// 1 16 0 0 0 -1 0 0 0 0 1 0 1 0 1-8rin18.dat
-  [1,16,0,0,0,-1,0,0,0,0,1,0,1,0, ldraw_lib__1_8rin18()],
+// 1 16 0 0 0 -1 0 0 0 0 1 0 1 0 1-8ring18.dat
+  [1,16,0,0,0,-1,0,0,0,0,1,0,1,0, ldraw_lib__1_8ring18()],
 // 4 16 -15 0 0 -18 0 0 -16.63 6.889 0 -13.858 5.74 0
   [4,16,-15,0,0,-18,0,0,-16.63,6.889,0,-13.858,5.74,0],
 // 4 16 -13.858 5.74 0 -16.63 6.889 0 -12.728 12.728 0 -10.606 10.606 0

@@ -3,14 +3,14 @@ use <../p/4-4cyli.scad>
 use <../p/4-4cyls.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4edge.scad>
-use <../p/4-4rin13.scad>
+use <../p/4-4ring13.scad>
 use <s/3898s01.scad>
 use <../p/stud4a.scad>
 function ldraw_lib__3898() = [
 // 0 Minifig Cook's Hat
 // 0 Name: 3898.dat
 // 0 Author: Lee Gaiteri [LummoxJR]
-// 0 !LDRAW_ORG Part UPDATE 2012-03
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CW
@@ -23,7 +23,8 @@ function ldraw_lib__3898() = [
 // 0 !HISTORY 2010-04-05 [PTadmin] Official Update 2010-01
 // 0 !HISTORY 2012-12-24 [cwdee] Update category
 // 0 !HISTORY 2012-12-28 [PTadmin] Official Update 2012-03
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // top button
 // 
@@ -40,8 +41,8 @@ function ldraw_lib__3898() = [
   [1,16,0,7.4,0,13,0,0,0,1,1.3,0,0,13, ldraw_lib__4_4edge()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
-// 1 16 0 7.4 0 1 0 0 0 1 0.1 0 0 1 4-4rin13.dat
-  [1,16,0,7.4,0,1,0,0,0,1,0.1,0,0,1, ldraw_lib__4_4rin13()],
+// 1 16 0 7.4 0 1 0 0 0 1 0.1 0 0 1 4-4ring13.dat
+  [1,16,0,7.4,0,1,0,0,0,1,0.1,0,0,1, ldraw_lib__4_4ring13()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 6.1 0 0 0 13 0 1.3 0 -13 0 0 4-4cyls.dat

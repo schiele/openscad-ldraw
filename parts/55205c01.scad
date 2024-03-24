@@ -2,10 +2,10 @@ use <../lib.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4edge.scad>
-use <../p/4-4rin11.scad>
-use <../p/4-4rin34.scad>
+use <../p/4-4ring11.scad>
 use <../p/4-4ring2.scad>
 use <../p/4-4ring3.scad>
+use <../p/4-4ring34.scad>
 use <../p/4-4ring8.scad>
 use <55205.scad>
 use <55206.scad>
@@ -20,7 +20,7 @@ function ldraw_lib__55205c01() = [
 // 0 Electric Sound Brick  2 x  4 x  2 Body
 // 0 Name: 55205c01.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Shortcut UPDATE 2016-01
+// 0 !LDRAW_ORG Shortcut UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -28,7 +28,8 @@ function ldraw_lib__55205c01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2016-12-31 [PTadmin] Official Update 2016-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Bottom
 // 
@@ -72,8 +73,8 @@ function ldraw_lib__55205c01() = [
   [0,"BFC","INVERTNEXT"],
 // 1 494 -17 21 -16 0 0 -17.48 -17.48 0 0 0 1.5 0 4-4cyli.dat
   [1,494,-17,21,-16,0,0,-17.48,-17.48,0,0,0,1.5,0, ldraw_lib__4_4cyli()],
-// 1 494 -17 21 -16 0 0 -0.514 -0.514 0 0 0 1 0 4-4rin34.dat
-  [1,494,-17,21,-16,0,0,-0.514,-0.514,0,0,0,1,0, ldraw_lib__4_4rin34()],
+// 1 494 -17 21 -16 0 0 -0.514 -0.514 0 0 0 1 0 4-4ring34.dat
+  [1,494,-17,21,-16,0,0,-0.514,-0.514,0,0,0,1,0, ldraw_lib__4_4ring34()],
 // 1 494 -17 21 -16 0 0 -18 -18 0 0 0 2 0 4-4cyli.dat
   [1,494,-17,21,-16,0,0,-18,-18,0,0,0,2,0, ldraw_lib__4_4cyli()],
 // 1 494 -17 21 -14 0 0 -16 -16 0 0 0 2 0 4-4cyli.dat
@@ -90,8 +91,8 @@ function ldraw_lib__55205c01() = [
   [1,494,-17,21,-12,0,0,-16,-16,0,0,0,1,0, ldraw_lib__4_4edge()],
 // 1 494 -17 21 -12 0 0 -11 -11 0 0 0 1 0 4-4edge.dat
   [1,494,-17,21,-12,0,0,-11,-11,0,0,0,1,0, ldraw_lib__4_4edge()],
-// 1 494 -17 21 -12 0 0 -1 -1 0 0 0 -1 0 4-4rin11.dat
-  [1,494,-17,21,-12,0,0,-1,-1,0,0,0,-1,0, ldraw_lib__4_4rin11()],
+// 1 494 -17 21 -12 0 0 -1 -1 0 0 0 -1 0 4-4ring11.dat
+  [1,494,-17,21,-12,0,0,-1,-1,0,0,0,-1,0, ldraw_lib__4_4ring11()],
 // 1 494 -17 21 -12 0 0 -4 -4 0 0 0 -1 0 4-4ring3.dat
   [1,494,-17,21,-12,0,0,-4,-4,0,0,0,-1,0, ldraw_lib__4_4ring3()],
 // 1 494 -17 21 -12.5 0 0 -5.184 -5.184 0 0 0 1 0 4-4ring2.dat

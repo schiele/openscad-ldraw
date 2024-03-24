@@ -22,7 +22,7 @@ use <../../p/3-16cyls.scad>
 use <../../p/3-16cyls2.scad>
 use <../../p/3-16edge.scad>
 use <../../p/3-16ndis.scad>
-use <../../p/3-16rin3.scad>
+use <../../p/3-16ring3.scad>
 use <../../p/3-8cyli.scad>
 use <../../p/3-8cyls.scad>
 use <../../p/7-16edge.scad>
@@ -33,7 +33,7 @@ function ldraw_lib__s__80177s01() = [
 // 0 ~Slope Brick Curved  3 x  2 with Cutout Left without Top
 // 0 Name: s\80177s01.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Subpart UPDATE 2023-06
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -41,7 +41,8 @@ function ldraw_lib__s__80177s01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2023-11-19 [OrionP] Official Update 2023-06
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
@@ -257,8 +258,8 @@ function ldraw_lib__s__80177s01() = [
   [4,16,0,24,-10,0,16,6,0,16,10,0,24,10],
 // 1 16 0 24 -10 8 0 0 0 -1 0 0 0 8 3-16edge.dat
   [1,16,0,24,-10,8,0,0,0,-1,0,0,0,8, ldraw_lib__3_16edge()],
-// 1 16 0 24 -10 2 0 0 0 -1 0 0 0 2 3-16rin3.dat
-  [1,16,0,24,-10,2,0,0,0,-1,0,0,0,2, ldraw_lib__3_16rin3()],
+// 1 16 0 24 -10 2 0 0 0 -1 0 0 0 2 3-16ring3.dat
+  [1,16,0,24,-10,2,0,0,0,-1,0,0,0,2, ldraw_lib__3_16ring3()],
 // 2 24 0 16 -2 0 10 -2
   [2,24,0,16,-2,0,10,-2],
 // 2 24 0 16 -4 0 16 -2

@@ -5,7 +5,7 @@ use <../p/1-8chrd.scad>
 use <../p/2-4ndis.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4ndis.scad>
-use <../p/4-4rin10.scad>
+use <../p/4-4ring10.scad>
 use <../p/48/1-4chrd.scad>
 use <../p/48/5-24chrd.scad>
 use <s/4198s01.scad>
@@ -13,7 +13,7 @@ function ldraw_lib__4198p01() = [
 // 0 Duplo Brick  2 x  4 x  2 with Rounded Ends with  2 Eyes Pattern
 // 0 Name: 4198p01.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2018-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -23,7 +23,8 @@ function ldraw_lib__4198p01() = [
 // 0 !CATEGORY Brick
 // 
 // 0 !HISTORY 2018-01-30 [PTadmin] Official Update 2018-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4198s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4198s01()],
@@ -33,8 +34,8 @@ function ldraw_lib__4198p01() = [
   [1,16,-40,48,-40,0,0,-40,48,0,0,0,1,0, ldraw_lib__48__1_4chrd()],
 // 1 0 -25.7 51 -40 0 0 15.6 15.6 0 0 0 1 0 4-4disc.dat
   [1,0,-25.7,51,-40,0,0,15.6,15.6,0,0,0,1,0, ldraw_lib__4_4disc()],
-// 1 0 -29 47.6 -40 0 0 2.25 2.25 0 0 0 1 0 4-4rin10.dat
-  [1,0,-29,47.6,-40,0,0,2.25,2.25,0,0,0,1,0, ldraw_lib__4_4rin10()],
+// 1 0 -29 47.6 -40 0 0 2.25 2.25 0 0 0 1 0 4-4ring10.dat
+  [1,0,-29,47.6,-40,0,0,2.25,2.25,0,0,0,1,0, ldraw_lib__4_4ring10()],
 // 1 15 -25.7 51 -40 11.03087 0 -11.03087 -11.03087 0 -11.03087 0 1 0 2-4ndis.dat
   [1,15,-25.7,51,-40,11.03087,0,-11.03087,-11.03087,0,-11.03087,0,1,0, ldraw_lib__2_4ndis()],
 // 1 15 -25.7 51 -40 11.03087 0 11.03087 11.03087 0 -11.03087 0 1 0 1-4tang.dat
@@ -115,8 +116,8 @@ function ldraw_lib__4198p01() = [
   [3,16,-29,72.35,-40,-40,96,-40,-4.25,72.35,-40],
 // 1 0 25.7 51 -40 0 0 -15.6 15.6 0 0 0 1 0 4-4disc.dat
   [1,0,25.7,51,-40,0,0,-15.6,15.6,0,0,0,1,0, ldraw_lib__4_4disc()],
-// 1 0 29 47.6 -40 0 0 -2.25 2.25 0 0 0 1 0 4-4rin10.dat
-  [1,0,29,47.6,-40,0,0,-2.25,2.25,0,0,0,1,0, ldraw_lib__4_4rin10()],
+// 1 0 29 47.6 -40 0 0 -2.25 2.25 0 0 0 1 0 4-4ring10.dat
+  [1,0,29,47.6,-40,0,0,-2.25,2.25,0,0,0,1,0, ldraw_lib__4_4ring10()],
 // 1 15 25.7 51 -40 -11.03087 0 11.03087 -11.03087 0 -11.03087 0 1 0 2-4ndis.dat
   [1,15,25.7,51,-40,-11.03087,0,11.03087,-11.03087,0,-11.03087,0,1,0, ldraw_lib__2_4ndis()],
 // 1 15 25.7 51 -40 -11.03087 0 -11.03087 11.03087 0 -11.03087 0 1 0 1-4tang.dat

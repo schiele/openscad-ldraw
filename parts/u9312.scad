@@ -2,7 +2,7 @@ use <../lib.scad>
 use <../p/48/1-4cyli.scad>
 use <../p/48/1-4edge.scad>
 use <../p/48/1-4ndis.scad>
-use <../p/48/1-4rin10.scad>
+use <../p/48/1-4ring10.scad>
 use <../p/5-8cyli.scad>
 use <../p/5-8disc.scad>
 use <../p/5-8edge.scad>
@@ -14,7 +14,7 @@ function ldraw_lib__u9312() = [
 // 0 ~Fabuland House Block End Panel Arched
 // 0 Name: u9312.dat
 // 0 Author: Chris Dee [cwdee]
-// 0 !LDRAW_ORG Part UPDATE 2014-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CW
@@ -24,7 +24,8 @@ function ldraw_lib__u9312() = [
 // 0 !CATEGORY Brick
 // 
 // 0 !HISTORY 2014-12-23 [PTadmin] Official Update 2014-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Connection structure guessed from assembled part
 // 
@@ -307,8 +308,8 @@ function ldraw_lib__u9312() = [
   [1,16,40,56,2,44,0,0,0,0,-44,0,-6,0, ldraw_lib__48__1_4cyli()],
 // 1 16 40 56 -4 44 0 0 0 0 -44 0 1 0 48\1-4edge.dat
   [1,16,40,56,-4,44,0,0,0,0,-44,0,1,0, ldraw_lib__48__1_4edge()],
-// 1 16 40 56 2 4 0 0 0 0 -4 0 -1 0 48\1-4rin10.dat
-  [1,16,40,56,2,4,0,0,0,0,-4,0,-1,0, ldraw_lib__48__1_4rin10()],
+// 1 16 40 56 2 4 0 0 0 0 -4 0 -1 0 48\1-4ring10.dat
+  [1,16,40,56,2,4,0,0,0,0,-4,0,-1,0, ldraw_lib__48__1_4ring10()],
 // 2 24 84 56 2 84 200 2
   [2,24,84,56,2,84,200,2],
 // 2 24 84 200 2 80 200 2
@@ -326,8 +327,8 @@ function ldraw_lib__u9312() = [
   [1,16,-40,56,2,-44,0,0,0,0,-44,0,-6,0, ldraw_lib__48__1_4cyli()],
 // 1 16 -40 56 -4 -44 0 0 0 0 -44 0 1 0 48\1-4edge.dat
   [1,16,-40,56,-4,-44,0,0,0,0,-44,0,1,0, ldraw_lib__48__1_4edge()],
-// 1 16 -40 56 2 -4 0 0 0 0 -4 0 -1 0 48\1-4rin10.dat
-  [1,16,-40,56,2,-4,0,0,0,0,-4,0,-1,0, ldraw_lib__48__1_4rin10()],
+// 1 16 -40 56 2 -4 0 0 0 0 -4 0 -1 0 48\1-4ring10.dat
+  [1,16,-40,56,2,-4,0,0,0,0,-4,0,-1,0, ldraw_lib__48__1_4ring10()],
 // 2 24 -84 56 2 -84 200 2
   [2,24,-84,56,2,-84,200,2],
 // 2 24 -84 200 2 -80 200 2

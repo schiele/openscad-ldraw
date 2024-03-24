@@ -2,7 +2,7 @@ use <../lib.scad>
 use <../p/1-4cylc.scad>
 use <../p/1-4disc.scad>
 use <../p/1-8cylo.scad>
-use <../p/1-8rin10.scad>
+use <../p/1-8ring10.scad>
 use <../p/1-8ring9.scad>
 use <../p/2-4cylc.scad>
 use <../p/2-4disc.scad>
@@ -21,7 +21,7 @@ function ldraw_lib__2476b() = [
 // 0 Plate  2 x  2 with Pin Type 2
 // 0 Name: 2476b.dat
 // 0 Author: Chris Dee [cwdee]
-// 0 !LDRAW_ORG Part UPDATE 2020-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -33,7 +33,8 @@ function ldraw_lib__2476b() = [
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
 // 0 !HISTORY 2020-06-04 [Sirio] Updated the use of primitives: removed ringr.dat or ringrr.dat, introduced 4-4cylo.dat, merged some triangles to quads
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Primitives
 // 
@@ -173,8 +174,8 @@ function ldraw_lib__2476b() = [
 // 0 // Rachet mechanism primitives
 // 1 16 0 7.5 0 .9239 0 -.3827 0 -1 0 .3827 0 .9239 1-8ring9.dat
   [1,16,0,7.5,0,.9239,0,-.3827,0,-1,0,.3827,0,.9239, ldraw_lib__1_8ring9()],
-// 1 16 0 7.5 0 .9239 0 -.3827 0 -1 0 .3827 0 .9239 1-8rin10.dat
-  [1,16,0,7.5,0,.9239,0,-.3827,0,-1,0,.3827,0,.9239, ldraw_lib__1_8rin10()],
+// 1 16 0 7.5 0 .9239 0 -.3827 0 -1 0 .3827 0 .9239 1-8ring10.dat
+  [1,16,0,7.5,0,.9239,0,-.3827,0,-1,0,.3827,0,.9239, ldraw_lib__1_8ring10()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 4 0 8.3149 0 -3.4442 0 3.5 0 3.4442 0 8.3149 1-8cylo.dat
@@ -183,8 +184,8 @@ function ldraw_lib__2476b() = [
   [1,16,0,4,0,10.1627,0,-4.2095,0,3.5,0,4.2095,0,10.1627, ldraw_lib__1_8cylo()],
 // 1 16 0 7.5 0 .3827 0 .9239 0 -1 0 -.9239 0 .3827 1-8ring9.dat
   [1,16,0,7.5,0,.3827,0,.9239,0,-1,0,-.9239,0,.3827, ldraw_lib__1_8ring9()],
-// 1 16 0 7.5 0 .3827 0 .9239 0 -1 0 -.9239 0 .3827 1-8rin10.dat
-  [1,16,0,7.5,0,.3827,0,.9239,0,-1,0,-.9239,0,.3827, ldraw_lib__1_8rin10()],
+// 1 16 0 7.5 0 .3827 0 .9239 0 -1 0 -.9239 0 .3827 1-8ring10.dat
+  [1,16,0,7.5,0,.3827,0,.9239,0,-1,0,-.9239,0,.3827, ldraw_lib__1_8ring10()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 4 0 3.4442 0 8.3149 0 3.5 0 -8.3149 0 3.4442 1-8cylo.dat
@@ -193,8 +194,8 @@ function ldraw_lib__2476b() = [
   [1,16,0,4,0,4.2095,0,10.1627,0,3.5,0,-10.1627,0,4.2095, ldraw_lib__1_8cylo()],
 // 1 16 0 7.5 0 -.9239 0 .3827 0 -1 0 -.3827 0 -.9239 1-8ring9.dat
   [1,16,0,7.5,0,-.9239,0,.3827,0,-1,0,-.3827,0,-.9239, ldraw_lib__1_8ring9()],
-// 1 16 0 7.5 0 -.9239 0 .3827 0 -1 0 -.3827 0 -.9239 1-8rin10.dat
-  [1,16,0,7.5,0,-.9239,0,.3827,0,-1,0,-.3827,0,-.9239, ldraw_lib__1_8rin10()],
+// 1 16 0 7.5 0 -.9239 0 .3827 0 -1 0 -.3827 0 -.9239 1-8ring10.dat
+  [1,16,0,7.5,0,-.9239,0,.3827,0,-1,0,-.3827,0,-.9239, ldraw_lib__1_8ring10()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 4 0 -8.3149 0 3.4442 0 3.5 0 -3.4442 0 -8.3149 1-8cylo.dat
@@ -203,8 +204,8 @@ function ldraw_lib__2476b() = [
   [1,16,0,4,0,-10.1627,0,4.2095,0,3.5,0,-4.2095,0,-10.1627, ldraw_lib__1_8cylo()],
 // 1 16 0 7.5 0 -.3827 0 -.9239 0 -1 0 .9239 0 -.3827 1-8ring9.dat
   [1,16,0,7.5,0,-.3827,0,-.9239,0,-1,0,.9239,0,-.3827, ldraw_lib__1_8ring9()],
-// 1 16 0 7.5 0 -.3827 0 -.9239 0 -1 0 .9239 0 -.3827 1-8rin10.dat
-  [1,16,0,7.5,0,-.3827,0,-.9239,0,-1,0,.9239,0,-.3827, ldraw_lib__1_8rin10()],
+// 1 16 0 7.5 0 -.3827 0 -.9239 0 -1 0 .9239 0 -.3827 1-8ring10.dat
+  [1,16,0,7.5,0,-.3827,0,-.9239,0,-1,0,.9239,0,-.3827, ldraw_lib__1_8ring10()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 4 0 -3.4442 0 -8.3149 0 3.5 0 8.3149 0 -3.4442 1-8cylo.dat

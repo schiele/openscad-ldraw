@@ -3,7 +3,7 @@ use <../../p/2-4cylc.scad>
 use <../../p/4-4cyli.scad>
 use <../../p/4-4edge.scad>
 use <../../p/4-4ndis.scad>
-use <../../p/48/4-4rin14.scad>
+use <../../p/48/4-4ring14.scad>
 use <../../p/48/4-4ring5.scad>
 use <../../p/box4.scad>
 use <../../p/box4o4a.scad>
@@ -15,7 +15,7 @@ function ldraw_lib__s__35860s02() = [
 // 0 ~Minifig Food Cake Double Layer, Base
 // 0 Name: s\35860s02.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
-// 0 !LDRAW_ORG Subpart UPDATE 2020-03
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -23,7 +23,8 @@ function ldraw_lib__s__35860s02() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Bottom Plate
 // 4 16 20 8 10 16 8 6 -16 8 6 -20 8 10
@@ -142,8 +143,8 @@ function ldraw_lib__s__35860s02() = [
 // 0 // Lower Layer
 // 1 16 0 -20 0 6 0 0 0 1 0 0 0 6 48\4-4ring5.dat
   [1,16,0,-20,0,6,0,0,0,1,0,0,0,6, ldraw_lib__48__4_4ring5()],
-// 1 16 0 -20 0 2 0 0 0 1 0 0 0 2 48\4-4rin14.dat
-  [1,16,0,-20,0,2,0,0,0,1,0,0,0,2, ldraw_lib__48__4_4rin14()],
+// 1 16 0 -20 0 2 0 0 0 1 0 0 0 2 48\4-4ring14.dat
+  [1,16,0,-20,0,2,0,0,0,1,0,0,0,2, ldraw_lib__48__4_4ring14()],
 // 
 // 0 // Top Layer
 // 3 16 0 -40 -26.1 19 -40 -11 -19 -40 -11

@@ -8,14 +8,14 @@ use <../p/48/1-6disc.scad>
 use <../p/48/1-6ring1.scad>
 use <../p/48/1-6ring8.scad>
 use <../p/48/1-8chrd.scad>
-use <../p/48/4-4rin15.scad>
+use <../p/48/4-4ring15.scad>
 use <../p/48/5-24chrd.scad>
 use <s/4150s01.scad>
 function ldraw_lib__4150p00() = [
 // 0 Tile  2 x  2 Round with Film/Tape Reel Pattern
 // 0 Name: 4150p00.dat
 // 0 Author: Alex Taylor [anathema]
-// 0 !LDRAW_ORG Part UPDATE 2009-03
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -23,7 +23,8 @@ function ldraw_lib__4150p00() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2009-12-29 [PTadmin] Official Update 2009-03
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4150s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4150s01()],
@@ -37,8 +38,8 @@ function ldraw_lib__4150p00() = [
   [1,16,0,0,0,1.958,0,14.872,0,1,0,-14.872,0,1.958, ldraw_lib__48__1_8chrd()],
 // 1 16 0 0 0 4 0 0 0 1 0 0 0 4 4-4ring4.dat
   [1,16,0,0,0,4,0,0,0,1,0,0,0,4, ldraw_lib__4_4ring4()],
-// 1 16 0 0 0 1 0 0 0 1 0 0 0 1 48\4-4rin15.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__48__4_4rin15()],
+// 1 16 0 0 0 1 0 0 0 1 0 0 0 1 48\4-4ring15.dat
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__48__4_4ring15()],
 // 1 0 -11.858 0 5.74 -2 0 0 0 1 0 0 0 -3.24 1-4disc.dat
   [1,0,-11.858,0,5.74,-2,0,0,0,1,0,0,0,-3.24, ldraw_lib__1_4disc()],
 // 1 16 -11.858 0 5.74 -2 0 0 0 1 0 0 0 -3.24 1-4ndis.dat

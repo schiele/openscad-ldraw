@@ -6,9 +6,9 @@ use <../p/1-4ndis.scad>
 use <../p/1-8chrd.scad>
 use <../p/1-8ndis.scad>
 use <../p/2-4ndis.scad>
-use <../p/2-4rin25.scad>
-use <../p/2-4rin52.scad>
 use <../p/2-4ring2.scad>
+use <../p/2-4ring25.scad>
+use <../p/2-4ring52.scad>
 use <../p/2-4ring9.scad>
 use <../p/3-16ndis.scad>
 use <../p/4-4disc.scad>
@@ -20,7 +20,7 @@ function ldraw_lib__3068bp02() = [
 // 0 Tile  2 x  2 with Car Wash and Water Drops Pattern
 // 0 Name: 3068bp02.dat
 // 0 Author: Alex Taylor [anathema]
-// 0 !LDRAW_ORG Part UPDATE 2009-03
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -28,7 +28,8 @@ function ldraw_lib__3068bp02() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2009-12-29 [PTadmin] Official Update 2009-03
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3068bs01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3068bs01()],
@@ -804,10 +805,10 @@ function ldraw_lib__3068bp02() = [
   [4,0,-17.7,0,-14.5,-15.1,0,-15.1,-15.1,0,-12.9,-17.7,0,14.5],
 // 1 0 -7.4 0 -9.8 -0.5 0 0 0 1 0 0 0 -0.5 2-4ring9.dat
   [1,0,-7.4,0,-9.8,-0.5,0,0,0,1,0,0,0,-0.5, ldraw_lib__2_4ring9()],
-// 1 0 -7.4 0 -9.8 -0.2 0 0 0 1 0 0 0 -0.2 2-4rin25.dat
-  [1,0,-7.4,0,-9.8,-0.2,0,0,0,1,0,0,0,-0.2, ldraw_lib__2_4rin25()],
-// 1 0 -7.4 0 -9.8 -0.1 0 0 0 1 0 0 0 -0.1 2-4rin52.dat
-  [1,0,-7.4,0,-9.8,-0.1,0,0,0,1,0,0,0,-0.1, ldraw_lib__2_4rin52()],
+// 1 0 -7.4 0 -9.8 -0.2 0 0 0 1 0 0 0 -0.2 2-4ring25.dat
+  [1,0,-7.4,0,-9.8,-0.2,0,0,0,1,0,0,0,-0.2, ldraw_lib__2_4ring25()],
+// 1 0 -7.4 0 -9.8 -0.1 0 0 0 1 0 0 0 -0.1 2-4ring52.dat
+  [1,0,-7.4,0,-9.8,-0.1,0,0,0,1,0,0,0,-0.1, ldraw_lib__2_4ring52()],
 // 1 16 -7.4 0 -9.8 2.494 0 1.033 0 1 0 -1.033 0 2.494 1-8chrd.dat
   [1,16,-7.4,0,-9.8,2.494,0,1.033,0,1,0,-1.033,0,2.494, ldraw_lib__1_8chrd()],
 // 1 0 -12.9 0 12.9 0 0 -2.2 0 1 0 2.2 0 0 1-4ndis.dat

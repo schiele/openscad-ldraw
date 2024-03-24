@@ -1,6 +1,6 @@
 use <../../lib.scad>
 use <../../p/1-16cylo.scad>
-use <../../p/1-16rin3.scad>
+use <../../p/1-16ring3.scad>
 use <../../p/1-16ring8.scad>
 use <../../p/1-8cylo.scad>
 use <../../p/2-4cylo.scad>
@@ -21,7 +21,7 @@ function ldraw_lib__s__71711s02() = [
 // 0 ~Technic Brake Disc  9 x  9 Hub Half
 // 0 Name: s\71711s02.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Subpart UPDATE 2023-05
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -29,7 +29,8 @@ function ldraw_lib__s__71711s02() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2023-10-31 [OrionP] Official Update 2023-05
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 20 0 0 1 0 0 0 0 1 0 1 0 connhole.dat
   [1,16,20,0,0,1,0,0,0,0,1,0,1,0, ldraw_lib__connhole()],
@@ -181,8 +182,8 @@ function ldraw_lib__s__71711s02() = [
   [0,"BFC","INVERTNEXT"],
 // 1 16 10 17.3205 -10 -4.87009 0 6.34683 6.34683 0 4.87009 0 2 0 3-4cylo.dat
   [1,16,10,17.3205,-10,-4.87009,0,6.34683,6.34683,0,4.87009,0,2,0, ldraw_lib__3_4cylo()],
-// 1 16 10 17.3205 -8 -1.21752 0 -1.58671 1.58671 0 -1.21752 0 1 0 1-16rin3.dat
-  [1,16,10,17.3205,-8,-1.21752,0,-1.58671,1.58671,0,-1.21752,0,1,0, ldraw_lib__1_16rin3()],
+// 1 16 10 17.3205 -8 -1.21752 0 -1.58671 1.58671 0 -1.21752 0 1 0 1-16ring3.dat
+  [1,16,10,17.3205,-8,-1.21752,0,-1.58671,1.58671,0,-1.21752,0,1,0, ldraw_lib__1_16ring3()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 10 17.3205 -10 -4.87009 0 -6.34683 6.34683 0 -4.87009 0 2 0 1-16cylo.dat

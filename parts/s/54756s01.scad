@@ -7,9 +7,9 @@ use <../../p/2-4cylo.scad>
 use <../../p/2-4ndis.scad>
 use <../../p/4-4cylo.scad>
 use <../../p/4-4ndis.scad>
-use <../../p/4-4rin10.scad>
-use <../../p/4-4rin15.scad>
 use <../../p/4-4ring1.scad>
+use <../../p/4-4ring10.scad>
+use <../../p/4-4ring15.scad>
 use <../../p/4-4ring2.scad>
 use <../../p/8/2-4chrd.scad>
 use <../../p/8/2-4cylo.scad>
@@ -23,7 +23,7 @@ function ldraw_lib__s__54756s01() = [
 // 0 ~Electric Power Functions Train Motor - Bottom  1/4
 // 0 Name: s\54756s01.dat
 // 0 Author: Santeri Piippo [arezey]
-// 0 !LDRAW_ORG Subpart UPDATE 2023-05
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -32,7 +32,8 @@ function ldraw_lib__s__54756s01() = [
 // 
 // 0 !HISTORY 2019-08-10 [Philo] Corrected end hook geometry to be able to fit a plate/brick
 // 0 !HISTORY 2023-10-31 [OrionP] Official Update 2023-05
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Needs Work: Interior details missing
 // 
@@ -194,12 +195,12 @@ function ldraw_lib__s__54756s01() = [
   [1,16,30,43,90,5,0,0,0,-9,0,0,0,5, ldraw_lib__4_4cylo()],
 // 1 16 30 48 90 5.5 0 0 0 -5 0 0 0 5.5 4-4cylo.dat
   [1,16,30,48,90,5.5,0,0,0,-5,0,0,0,5.5, ldraw_lib__4_4cylo()],
-// 1 16 30 43 90 0.5 0 0 0 1 0 0 0 0.5 4-4rin10.dat
-  [1,16,30,43,90,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__4_4rin10()],
+// 1 16 30 43 90 0.5 0 0 0 1 0 0 0 0.5 4-4ring10.dat
+  [1,16,30,43,90,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__4_4ring10()],
 // 1 16 30 46 90 1.25 0 0 0 -1 0 0 0 -1.25 4-4ring2.dat
   [1,16,30,46,90,1.25,0,0,0,-1,0,0,0,-1.25, ldraw_lib__4_4ring2()],
-// 1 16 30 46 90 0.25 0 0 0 -1 0 0 0 -0.25 4-4rin15.dat
-  [1,16,30,46,90,0.25,0,0,0,-1,0,0,0,-0.25, ldraw_lib__4_4rin15()],
+// 1 16 30 46 90 0.25 0 0 0 -1 0 0 0 -0.25 4-4ring15.dat
+  [1,16,30,46,90,0.25,0,0,0,-1,0,0,0,-0.25, ldraw_lib__4_4ring15()],
 // 1 16 30 34 90 2.5 0 0 0 1 0 0 0 2.5 4-4ring1.dat
   [1,16,30,34,90,2.5,0,0,0,1,0,0,0,2.5, ldraw_lib__4_4ring1()],
 // 4 16 36 52 10 36 52 44.5 36 42 46 36 42 9

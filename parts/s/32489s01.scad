@@ -1,7 +1,7 @@
 use <../../lib.scad>
 use <../../p/1-16cylo.scad>
-use <../../p/1-16rin1.scad>
-use <../../p/1-16rin3.scad>
+use <../../p/1-16ring1.scad>
+use <../../p/1-16ring3.scad>
 use <../../p/1-16tang.scad>
 use <../../p/1-4chrd.scad>
 use <../../p/1-4cyli.scad>
@@ -41,7 +41,7 @@ use <../../p/48/1-24cylo.scad>
 use <../../p/48/1-24edge.scad>
 use <../../p/48/1-6chrd.scad>
 use <../../p/48/1-6cylo.scad>
-use <../../p/48/1-6rin12.scad>
+use <../../p/48/1-6ring12.scad>
 use <../../p/48/1-8chrd.scad>
 use <../../p/48/1-8cyli.scad>
 use <../../p/48/1-8cylo.scad>
@@ -50,7 +50,7 @@ use <../../p/48/1-8ring12.scad>
 use <../../p/5-16ring8.scad>
 use <../../p/7-16cylo.scad>
 use <../../p/7-16ndis.scad>
-use <../../p/7-16rin1.scad>
+use <../../p/7-16ring1.scad>
 use <../../p/axlehol4.scad>
 use <../../p/box2-5.scad>
 use <../../p/box2-7.scad>
@@ -69,7 +69,7 @@ function ldraw_lib__s__32489s01() = [
 // 0 ~Technic Connector Block  4 x  5 x  7.667 - Half
 // 0 Name: s\32489s01.dat
 // 0 Author: Massimo Maso [Sirio]
-// 0 !LDRAW_ORG Subpart UPDATE 2023-06
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -79,6 +79,8 @@ function ldraw_lib__s__32489s01() = [
 // 0 !HISTORY 2022-03-06 [PTadmin] Official Update 2022-02
 // 0 !HISTORY 2023-07-18 [MagFors] Adapted to rounded npeg corners
 // 0 !HISTORY 2023-11-19 [OrionP] Official Update 2023-06
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Axle and pin holes
 // 1 16 30 60 20 0 -1 0 1 0 0 0 0 1 peghole.dat
@@ -104,8 +106,8 @@ function ldraw_lib__s__32489s01() = [
   [1,16,12,60,20,0,16,0,6,0,0,0,0,6, ldraw_lib__4_4cyli()],
 // 1 16 12 60 20 0 1 0 -2 0 0 0 0 -2 3-4ring3.dat
   [1,16,12,60,20,0,1,0,-2,0,0,0,0,-2, ldraw_lib__3_4ring3()],
-// 1 16 12 60 20 0 1 0 0 0 -2 2 0 0 1-16rin3.dat
-  [1,16,12,60,20,0,1,0,0,0,-2,2,0,0, ldraw_lib__1_16rin3()],
+// 1 16 12 60 20 0 1 0 0 0 -2 2 0 0 1-16ring3.dat
+  [1,16,12,60,20,0,1,0,0,0,-2,2,0,0, ldraw_lib__1_16ring3()],
 // 1 16 12 60 20 0 1 0 -6 0 0 0 0 6 3-16ndis.dat
   [1,16,12,60,20,0,1,0,-6,0,0,0,0,6, ldraw_lib__3_16ndis()],
 // 1 16 12 60 20 0 1 0 1 0 0 0 0 1 5-16ring8.dat
@@ -128,8 +130,8 @@ function ldraw_lib__s__32489s01() = [
   [1,16,12,60,-20,0,16,0,6,0,0,0,0,-6, ldraw_lib__4_4cyli()],
 // 1 16 12 60 -20 0 1 0 -2 0 0 0 0 2 3-4ring3.dat
   [1,16,12,60,-20,0,1,0,-2,0,0,0,0,2, ldraw_lib__3_4ring3()],
-// 1 16 12 60 -20 0 1 0 0 0 -2 -2 0 0 1-16rin3.dat
-  [1,16,12,60,-20,0,1,0,0,0,-2,-2,0,0, ldraw_lib__1_16rin3()],
+// 1 16 12 60 -20 0 1 0 0 0 -2 -2 0 0 1-16ring3.dat
+  [1,16,12,60,-20,0,1,0,0,0,-2,-2,0,0, ldraw_lib__1_16ring3()],
 // 1 16 12 60 -20 0 1 0 -6 0 0 0 0 -6 3-16ndis.dat
   [1,16,12,60,-20,0,1,0,-6,0,0,0,0,-6, ldraw_lib__3_16ndis()],
 // 1 16 12 60 -20 0 1 0 1 0 0 0 0 -1 5-16ring8.dat
@@ -215,10 +217,10 @@ function ldraw_lib__s__32489s01() = [
 // 1 16 50 -40 -20 0 -1 0 1 0 0 0 0 -1 2-4ring8.dat
   [1,16,50,-40,-20,0,-1,0,1,0,0,0,0,-1, ldraw_lib__2_4ring8()],
 // 0 // Gear 24 Teeth
-// 1 16 4.75 60 0 0 -1 0 2.08 0 0 0 0 2.08 48\1-6rin12.dat
-  [1,16,4.75,60,0,0,-1,0,2.08,0,0,0,0,2.08, ldraw_lib__48__1_6rin12()],
-// 1 16 4.75 60 0 0 -1 0 2.08 0 0 0 0 -2.08 48\1-6rin12.dat
-  [1,16,4.75,60,0,0,-1,0,2.08,0,0,0,0,-2.08, ldraw_lib__48__1_6rin12()],
+// 1 16 4.75 60 0 0 -1 0 2.08 0 0 0 0 2.08 48\1-6ring12.dat
+  [1,16,4.75,60,0,0,-1,0,2.08,0,0,0,0,2.08, ldraw_lib__48__1_6ring12()],
+// 1 16 4.75 60 0 0 -1 0 2.08 0 0 0 0 -2.08 48\1-6ring12.dat
+  [1,16,4.75,60,0,0,-1,0,2.08,0,0,0,0,-2.08, ldraw_lib__48__1_6ring12()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 1.75 60 0 0 3 0 24.96 0 0 0 0 24.96 48\1-6cylo.dat
@@ -257,14 +259,14 @@ function ldraw_lib__s__32489s01() = [
   [0,"BFC","INVERTNEXT"],
 // 1 16 16 43 -1 1.5 0 0 0 0 1.5 0 -2 0 4-4cylc.dat
   [1,16,16,43,-1,1.5,0,0,0,0,1.5,0,-2,0, ldraw_lib__4_4cylc()],
-// 1 16 16 43 3 1.5 0 0 0 0 -1.5 0 -1 0 7-16rin1.dat
-  [1,16,16,43,3,1.5,0,0,0,0,-1.5,0,-1,0, ldraw_lib__7_16rin1()],
-// 1 16 16 43 -3 1.5 0 0 0 0 -1.5 0 1 0 7-16rin1.dat
-  [1,16,16,43,-3,1.5,0,0,0,0,-1.5,0,1,0, ldraw_lib__7_16rin1()],
-// 1 16 16 43 3 1.5 0 0 0 0 1.5 0 -1 0 1-16rin1.dat
-  [1,16,16,43,3,1.5,0,0,0,0,1.5,0,-1,0, ldraw_lib__1_16rin1()],
-// 1 16 16 43 -3 1.5 0 0 0 0 1.5 0 1 0 1-16rin1.dat
-  [1,16,16,43,-3,1.5,0,0,0,0,1.5,0,1,0, ldraw_lib__1_16rin1()],
+// 1 16 16 43 3 1.5 0 0 0 0 -1.5 0 -1 0 7-16ring1.dat
+  [1,16,16,43,3,1.5,0,0,0,0,-1.5,0,-1,0, ldraw_lib__7_16ring1()],
+// 1 16 16 43 -3 1.5 0 0 0 0 -1.5 0 1 0 7-16ring1.dat
+  [1,16,16,43,-3,1.5,0,0,0,0,-1.5,0,1,0, ldraw_lib__7_16ring1()],
+// 1 16 16 43 3 1.5 0 0 0 0 1.5 0 -1 0 1-16ring1.dat
+  [1,16,16,43,3,1.5,0,0,0,0,1.5,0,-1,0, ldraw_lib__1_16ring1()],
+// 1 16 16 43 -3 1.5 0 0 0 0 1.5 0 1 0 1-16ring1.dat
+  [1,16,16,43,-3,1.5,0,0,0,0,1.5,0,1,0, ldraw_lib__1_16ring1()],
 // 1 16 16 43 -3 3 0 0 0 0 -3 0 6 0 7-16cylo.dat
   [1,16,16,43,-3,3,0,0,0,0,-3,0,6,0, ldraw_lib__7_16cylo()],
 // 1 16 16 43 -3 3 0 0 0 0 3 0 6 0 1-16cylo.dat

@@ -4,7 +4,7 @@ use <../../p/4-4cylc.scad>
 use <../../p/4-4cylo.scad>
 use <../../p/4-4disc.scad>
 use <../../p/4-4edge.scad>
-use <../../p/4-4rin15.scad>
+use <../../p/4-4ring15.scad>
 use <../../p/4-4ring2.scad>
 use <../../p/4-4ring7.scad>
 use <../../p/r04o1000.scad>
@@ -13,7 +13,7 @@ function ldraw_lib__s__11459s01() = [
 // 0 ~Minifig Plunger - Rubber Cup
 // 0 Name: s\11459s01.dat
 // 0 Author: Stan Isachenko [angmarec]
-// 0 !LDRAW_ORG Subpart UPDATE 2015-01
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -22,12 +22,13 @@ function ldraw_lib__s__11459s01() = [
 // 
 // 0 !HISTORY 2014-01-19 [MagFors] Added missing cond-lines, primitive substitution
 // 0 !HISTORY 2015-10-11 [PTadmin] Official Update 2015-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 20.5 0 15 0 0 0 1 0 0 0 -15 4-4edge.dat
   [1,16,0,20.5,0,15,0,0,0,1,0,0,0,-15, ldraw_lib__4_4edge()],
-// 1 16 0 20.5 0 -1 0 0 0 -1 0 0 0 1 4-4rin15.dat
-  [1,16,0,20.5,0,-1,0,0,0,-1,0,0,0,1, ldraw_lib__4_4rin15()],
+// 1 16 0 20.5 0 -1 0 0 0 -1 0 0 0 1 4-4ring15.dat
+  [1,16,0,20.5,0,-1,0,0,0,-1,0,0,0,1, ldraw_lib__4_4ring15()],
 // 1 16 0 20.5 0 16 0 0 0 -3.5 0 0 0 -16 4-4cylo.dat
   [1,16,0,20.5,0,16,0,0,0,-3.5,0,0,0,-16, ldraw_lib__4_4cylo()],
 // 1 16 0 17 0 14 0 0 0 1 0 0 0 -14 4-4edge.dat

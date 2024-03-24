@@ -5,7 +5,7 @@ use <../p/2-4edge.scad>
 use <../p/2-4ndis.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4edge.scad>
-use <../p/4-4rin13.scad>
+use <../p/4-4ring13.scad>
 use <../p/4-8sphe.scad>
 use <../p/rect2p.scad>
 use <../p/stud4a.scad>
@@ -13,7 +13,7 @@ function ldraw_lib__4485() = [
 // 0 Minifig Cap with Long Flat Peak
 // 0 Name: 4485.dat
 // 0 Author: Thomas Burger [grapeape]
-// 0 !LDRAW_ORG Part UPDATE 2014-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CW
@@ -21,7 +21,7 @@ function ldraw_lib__4485() = [
   [0,"BFC","CW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS ballcap, baseball, hat, Sports
+// 0 !KEYWORDS Sports, ballcap, baseball, hat
 // 
 // 0 !HISTORY 1998-05-21 [PTadmin] Official Update 1998-05
 // 0 !HISTORY 2003-09-24 [westrate] Fixed gaps and inner radius; Replaced quads with primitives; BFC'd
@@ -33,12 +33,13 @@ function ldraw_lib__4485() = [
 // 0 !HISTORY 2012-12-28 [PTadmin] Official Update 2012-03
 // 0 !HISTORY 2014-01-22 [cwdee] Description change
 // 0 !HISTORY 2014-06-21 [PTadmin] Official Update 2014-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // brim
 // 
-// 1 16 0 8 0 1 0 0 0 -1 0.071 0 0 1 4-4rin13.dat
-  [1,16,0,8,0,1,0,0,0,-1,0.071,0,0,1, ldraw_lib__4_4rin13()],
+// 1 16 0 8 0 1 0 0 0 -1 0.071 0 0 1 4-4ring13.dat
+  [1,16,0,8,0,1,0,0,0,-1,0.071,0,0,1, ldraw_lib__4_4ring13()],
 // 1 16 0 8 0 14 0 0 0 -1 -1 0 0 -14 2-4ndis.dat
   [1,16,0,8,0,14,0,0,0,-1,-1,0,0,-14, ldraw_lib__2_4ndis()],
 // 1 16 0 5 0 -14 0 0 0 1 -1 0 0 -14 2-4ndis.dat

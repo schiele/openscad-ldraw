@@ -1,8 +1,8 @@
 use <../lib.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4edge.scad>
-use <../p/4-4rin10.scad>
 use <../p/4-4ring1.scad>
+use <../p/4-4ring10.scad>
 use <../p/4-4ring2.scad>
 use <../p/4-4ring4.scad>
 use <../p/stud2a.scad>
@@ -11,14 +11,14 @@ function ldraw_lib__6942() = [
 // 0 Dish  5 x  5
 // 0 Name: 6942.dat
 // 0 Author: Steve Bliss [sbliss]
-// 0 !LDRAW_ORG Part UPDATE 2010-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS bowl, cone, lampshade, lightshade, Round, Scala Cone 5 x 5, tile
+// 0 !KEYWORDS Round, Scala Cone 5 x 5, bowl, cone, lampshade, lightshade, tile
 // 
 // 0 !HISTORY 1999-03-26 [PTadmin] Official Update 1999-02
 // 0 !HISTORY 2007-07-18 [PTadmin] Header formatted for Contributor Agreement
@@ -27,7 +27,8 @@ function ldraw_lib__6942() = [
 // 0 !HISTORY 2009-09-03 [PTadmin] Official Update 2009-02
 // 0 !HISTORY 2010-05-09 [cwdee] Remove CATEGORY Round
 // 0 !HISTORY 2010-07-05 [PTadmin] Official Update 2010-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 6 0 0 0 1 0 0 0 6 4-4edge.dat
   [1,16,0,0,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4edge()],
@@ -55,8 +56,8 @@ function ldraw_lib__6942() = [
   [1,16,0,0,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4ring1()],
 // 1 16 0 0 0 10 0 0 0 1 0 0 0 10 4-4ring1.dat
   [1,16,0,0,0,10,0,0,0,1,0,0,0,10, ldraw_lib__4_4ring1()],
-// 1 16 0 0 0 2 0 0 0 1 0 0 0 2 4-4rin10.dat
-  [1,16,0,0,0,2,0,0,0,1,0,0,0,2, ldraw_lib__4_4rin10()],
+// 1 16 0 0 0 2 0 0 0 1 0 0 0 2 4-4ring10.dat
+  [1,16,0,0,0,2,0,0,0,1,0,0,0,2, ldraw_lib__4_4ring10()],
 // 1 16 0 0 0 22 0 0 0 1.316 0 0 0 22 4-4cyli.dat
   [1,16,0,0,0,22,0,0,0,1.316,0,0,0,22, ldraw_lib__4_4cyli()],
 // 1 16 0 4 0 -8 0 0 0 -1 0 0 0 8 4-4ring1.dat

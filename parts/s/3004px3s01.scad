@@ -2,14 +2,14 @@ use <../../lib.scad>
 use <../../p/1-4disc.scad>
 use <../../p/1-4ndis.scad>
 use <../../p/1-8chrd.scad>
-use <../../p/4-4rin10.scad>
+use <../../p/4-4ring10.scad>
 use <../../p/4-4ring5.scad>
 use <../../p/4-4ring9.scad>
 function ldraw_lib__s__3004px3s01() = [
 // 0 ~Brick  1 x  2 with Token Pattern - Token
 // 0 Name: s\3004px3s01.dat
 // 0 Author: Vincent Messenet [Cheenzo]
-// 0 !LDRAW_ORG Subpart UPDATE 2022-01
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -17,7 +17,8 @@ function ldraw_lib__s__3004px3s01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 0 -1.25 7.25 -10 -.75 0 0 0 0 -.75 0 1 0 1-4disc.dat
   [1,0,-1.25,7.25,-10,-.75,0,0,0,0,-.75,0,1,0, ldraw_lib__1_4disc()],
@@ -55,8 +56,8 @@ function ldraw_lib__s__3004px3s01() = [
   [1,0,0,12.25,-10,.77778,0,0,0,0,.77778,0,1,0, ldraw_lib__4_4ring9()],
 // 1 16 0 12.25 -10 1.55556 0 0 0 0 1.55556 0 1 0 4-4ring5.dat
   [1,16,0,12.25,-10,1.55556,0,0,0,0,1.55556,0,1,0, ldraw_lib__4_4ring5()],
-// 1 0 0 12.25 -10 .93333 0 0 0 0 .93333 0 1 0 4-4rin10.dat
-  [1,0,0,12.25,-10,.93333,0,0,0,0,.93333,0,1,0, ldraw_lib__4_4rin10()],
+// 1 0 0 12.25 -10 .93333 0 0 0 0 .93333 0 1 0 4-4ring10.dat
+  [1,0,0,12.25,-10,.93333,0,0,0,0,.93333,0,1,0, ldraw_lib__4_4ring10()],
 // 4 16 1.25 17.25 -10 1.25 7.25 -10 -1.25 7.25 -10 -1.25 17.25 -10
   [4,16,1.25,17.25,-10,1.25,7.25,-10,-1.25,7.25,-10,-1.25,17.25,-10],
 // 4 0 -1.25 6.5 -10 -1.25 7.25 -10 1.25 7.25 -10 1.25 6.5 -10

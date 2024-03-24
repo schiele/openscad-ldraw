@@ -5,7 +5,7 @@ use <../p/1-4edge.scad>
 use <../p/2-4chrd.scad>
 use <../p/2-4cyli.scad>
 use <../p/2-4edge.scad>
-use <../p/2-4rin17.scad>
+use <../p/2-4ring17.scad>
 use <../p/2-4ring3.scad>
 use <../p/2-4ring9.scad>
 use <../p/4-4cyli.scad>
@@ -17,7 +17,7 @@ function ldraw_lib__4523() = [
 // 0 Minifig Container D-Basket
 // 0 Name: 4523.dat
 // 0 Author: Steve Bliss [sbliss]
-// 0 !LDRAW_ORG Part UPDATE 2015-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -25,7 +25,7 @@ function ldraw_lib__4523() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Neckwear
-// 0 !KEYWORDS backback, Bin, Bucket, manger, trough
+// 0 !KEYWORDS Bin, Bucket, backback, manger, trough
 // 
 // 0 !HISTORY 1999-12-31 [PTadmin] Official Update 1999-06
 // 0 !HISTORY 2000-05-07 [PTadmin] Official Update 2000-01
@@ -38,7 +38,8 @@ function ldraw_lib__4523() = [
 // 0 !HISTORY 2015-01-22 [Steffen] BFCed
 // 0 !HISTORY 2015-01-24 [MagFors] Fixed dimensional issues
 // 0 !HISTORY 2015-10-11 [PTadmin] Official Update 2015-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 2 24 -13 28 10 13 28 10
   [2,24,-13,28,10,13,28,10],
@@ -352,8 +353,8 @@ function ldraw_lib__4523() = [
   [3,16,-20,1,10,-20,1,20,-18.889,1,20],
 // 1 16 0 1 20 1.8889 0 0 0 -1 0 0 0 1.8889 2-4ring9.dat
   [1,16,0,1,20,1.8889,0,0,0,-1,0,0,0,1.8889, ldraw_lib__2_4ring9()],
-// 1 16 0 1 20 1.1111 0 0 0 -1 0 0 0 1.1111 2-4rin17.dat
-  [1,16,0,1,20,1.1111,0,0,0,-1,0,0,0,1.1111, ldraw_lib__2_4rin17()],
+// 1 16 0 1 20 1.1111 0 0 0 -1 0 0 0 1.1111 2-4ring17.dat
+  [1,16,0,1,20,1.1111,0,0,0,-1,0,0,0,1.1111, ldraw_lib__2_4ring17()],
 // 3 16 18.889 1 20 20 1 20 20 1 10
   [3,16,18.889,1,20,20,1,20,20,1,10],
 // 4 16 17 1 20 18.889 1 20 20 1 10 17 1 10

@@ -1,6 +1,6 @@
 use <../lib.scad>
-use <../p/4-4rin24.scad>
-use <../p/48/4-4rin11.scad>
+use <../p/4-4ring24.scad>
+use <../p/48/4-4ring11.scad>
 use <../p/48/4-4ring9.scad>
 use <s/4150ps5s01.scad>
 use <s/4150s01.scad>
@@ -8,14 +8,14 @@ function ldraw_lib__4150ps5() = [
 // 0 Tile  2 x  2 Round with SW Imperial Pattern
 // 0 Name: 4150ps5.dat
 // 0 Author: Franklin W. Cain [fwcain]
-// 0 !LDRAW_ORG Part UPDATE 2012-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Darth Vader, Empire, Episode Four, hexagonal, Star Wars, TIE Fighter
+// 0 !KEYWORDS Darth Vader, Empire, Episode Four, Star Wars, TIE Fighter, hexagonal
 // 
 // 0 !HISTORY 2002-04-25 [PTadmin] Official Update 2002-02
 // 0 !HISTORY 2002-09-01 {unknown} Fixed vertex sequence
@@ -27,16 +27,17 @@ function ldraw_lib__4150ps5() = [
 // 0 !HISTORY 2010-07-05 [PTadmin] Official Update 2010-02
 // 0 !HISTORY 2012-05-30 [TK-949] Complete Rewrite
 // 0 !HISTORY 2012-08-09 [PTadmin] Official Update 2012-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4150s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4150s01()],
 // 1 16 0 0 0 1.76 0 0 0 1 0 0 0 1.76 48\4-4ring9.dat
   [1,16,0,0,0,1.76,0,0,0,1,0,0,0,1.76, ldraw_lib__48__4_4ring9()],
-// 1 16 0 0 0 1.6 0 0 0 1 0 0 0 1.6 48\4-4rin11.dat
-  [1,16,0,0,0,1.6,0,0,0,1,0,0,0,1.6, ldraw_lib__48__4_4rin11()],
-// 1 16 0 0 0 0.8 0 0 0 1 0 0 0 0.8 4-4rin24.dat
-  [1,16,0,0,0,0.8,0,0,0,1,0,0,0,0.8, ldraw_lib__4_4rin24()],
+// 1 16 0 0 0 1.6 0 0 0 1 0 0 0 1.6 48\4-4ring11.dat
+  [1,16,0,0,0,1.6,0,0,0,1,0,0,0,1.6, ldraw_lib__48__4_4ring11()],
+// 1 16 0 0 0 0.8 0 0 0 1 0 0 0 0.8 4-4ring24.dat
+  [1,16,0,0,0,0.8,0,0,0,1,0,0,0,0.8, ldraw_lib__4_4ring24()],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4150ps5s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4150ps5s01()],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\4150ps5s01.dat

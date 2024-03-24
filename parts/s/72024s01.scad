@@ -3,12 +3,12 @@ use <../../p/3-16chrd.scad>
 use <../../p/3-16con2.scad>
 use <../../p/3-16con3.scad>
 use <../../p/3-16edge.scad>
-use <../../p/3-16rin3.scad>
+use <../../p/3-16ring3.scad>
 function ldraw_lib__s__72024s01() = [
 // 0 ~Container  8 x  8 x  3 Cupcake - Section 1 / 20
 // 0 Name: s\72024s01.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
-// 0 !LDRAW_ORG Subpart UPDATE 2023-05
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -16,7 +16,8 @@ function ldraw_lib__s__72024s01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2023-10-31 [OrionP] Official Update 2023-05
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 2 24 51.4976 64 10.0042 52.2464 64 10.9541
   [2,24,51.4976,64,10.0042,52.2464,64,10.9541],
@@ -43,10 +44,10 @@ function ldraw_lib__s__72024s01() = [
 // 1 16 67.6 0 0 3.1 -16.9 0 0 68 0 0 0 -3.1 3-16con3.dat
   [1,16,67.6,0,0,3.1,-16.9,0,0,68,0,0,0,-3.1, ldraw_lib__3_16con3()],
 // 
-// 1 16 67.6 0 0 3.1 0 0 0 1 0 0 0 -3.1 3-16rin3.dat
-  [1,16,67.6,0,0,3.1,0,0,0,1,0,0,0,-3.1, ldraw_lib__3_16rin3()],
-// 1 16 67.6 0 0 3.1 0 0 0 1 0 0 0 3.1 3-16rin3.dat
-  [1,16,67.6,0,0,3.1,0,0,0,1,0,0,0,3.1, ldraw_lib__3_16rin3()],
+// 1 16 67.6 0 0 3.1 0 0 0 1 0 0 0 -3.1 3-16ring3.dat
+  [1,16,67.6,0,0,3.1,0,0,0,1,0,0,0,-3.1, ldraw_lib__3_16ring3()],
+// 1 16 67.6 0 0 3.1 0 0 0 1 0 0 0 3.1 3-16ring3.dat
+  [1,16,67.6,0,0,3.1,0,0,0,1,0,0,0,3.1, ldraw_lib__3_16ring3()],
 // 
 // 1 16 67.6 0 0 12.4 0 0 0 1 0 0 0 12.4 3-16edge.dat
   [1,16,67.6,0,0,12.4,0,0,0,1,0,0,0,12.4, ldraw_lib__3_16edge()],

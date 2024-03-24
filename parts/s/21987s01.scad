@@ -9,8 +9,8 @@ use <../../p/4-4con5.scad>
 use <../../p/4-4cyli.scad>
 use <../../p/4-4disc.scad>
 use <../../p/4-4edge.scad>
-use <../../p/4-4rin31.scad>
 use <../../p/4-4ring2.scad>
+use <../../p/4-4ring31.scad>
 use <../../p/4-4ring8.scad>
 use <../../p/axl5end.scad>
 use <../../p/axl5ho10.scad>
@@ -21,7 +21,7 @@ function ldraw_lib__s__21987s01() = [
 // 0 ~Constraction Bar 15L with Axle Bush End, Solid Parts
 // 0 Name: s\21987s01.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
-// 0 !LDRAW_ORG Subpart UPDATE 2022-02
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -31,7 +31,8 @@ function ldraw_lib__s__21987s01() = [
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 0 !HISTORY 2021-12-30 [MagFors] Reshaped axlehole
 // 0 !HISTORY 2022-03-06 [PTadmin] Official Update 2022-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Axlehole, w/o Slits, depth 20 ldu
 // 1 16 0 0 -10 0 0 -1 -1 0 0 0 1 0 axl5ho10.dat
@@ -142,8 +143,8 @@ function ldraw_lib__s__21987s01() = [
   [1,16,0,0,-6.5,0,0,9,9,0,0,0,1,0, ldraw_lib__4_4edge()],
 // 1 16 0 0 -10 0 0 9 9 0 0 0 3.5 0 4-4cyli.dat
   [1,16,0,0,-10,0,0,9,9,0,0,0,3.5,0, ldraw_lib__4_4cyli()],
-// 1 16 0 0 -6.5 .25 0 0 0 0 -.25 0 -1 0 4-4rin31.dat
-  [1,16,0,0,-6.5,.25,0,0,0,0,-.25,0,-1,0, ldraw_lib__4_4rin31()],
+// 1 16 0 0 -6.5 .25 0 0 0 0 -.25 0 -1 0 4-4ring31.dat
+  [1,16,0,0,-6.5,.25,0,0,0,0,-.25,0,-1,0, ldraw_lib__4_4ring31()],
 // 1 16 0 0 -6.5 1 0 0 0 0 -1 0 -1 0 4-4ring8.dat
   [1,16,0,0,-6.5,1,0,0,0,0,-1,0,-1,0, ldraw_lib__4_4ring8()],
 // 

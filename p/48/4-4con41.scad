@@ -2,16 +2,17 @@ use <../../lib.scad>
 function ldraw_lib__48__4_4con41() = [
 // 0 Hi-Res Cone 41 x 1.0
 // 0 Name: 48\4-4con41.dat
-// 0 Author: Guy Vivan [guyvivan]
-// 0 !LDRAW_ORG 48_Primitive UPDATE 2009-03
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 Author: Willy Tschager [Holly-Wood]
+// 0 !LDRAW_ORG 48_Primitive UPDATE 2024-02
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2009-12-29 [PTadmin] Official Update 2009-03
-// 
+// 0 !HISTORY 2024-02-05 [Holly-Wood] Complete regeneration, original by guyvivan
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 4 16 41 1 0 40.6474 1 5.3505 41.6388 0 5.481 42 0 0
   [4,16,41,1,0,40.6474,1,5.3505,41.6388,0,5.481,42,0,0],
@@ -109,8 +110,7 @@ function ldraw_lib__48__4_4con41() = [
   [4,16,39.6019,1,-10.6108,40.6474,1,-5.3505,41.6388,0,-5.481,40.5678,0,-10.8696],
 // 4 16 40.6474 1 -5.3505 41 1 0 42 0 0 41.6388 0 -5.481
   [4,16,40.6474,1,-5.3505,41,1,0,42,0,0,41.6388,0,-5.481],
-// 
-// 0 conditional lines
+// 0 // conditional lines
 // 5 24 41 1 0 42 0 0 40.6474 1 -5.3505 40.6474 1 5.3505
   [5,24,41,1,0,42,0,0,40.6474,1,-5.3505,40.6474,1,5.3505],
 // 5 24 40.6474 1 5.3505 41.6388 0 5.481 41 1 0 39.6019 1 10.6108
@@ -207,9 +207,7 @@ function ldraw_lib__48__4_4con41() = [
   [5,24,39.6019,1,-10.6108,40.5678,0,-10.8696,37.8799,1,-15.6907,40.6474,1,-5.3505],
 // 5 24 40.6474 1 -5.3505 41.6388 0 -5.481 39.6019 1 -10.6108 41 1 0
   [5,24,40.6474,1,-5.3505,41.6388,0,-5.481,39.6019,1,-10.6108,41,1,0],
-// 
-// 0 end of file
-// 
+// 0 // Build by LDPartEditor (PrimGen 2.X)
 ];
 module ldraw_lib__48__4_4con41(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
     makepoly(ldraw_lib__48__4_4con41(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);

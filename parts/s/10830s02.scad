@@ -6,7 +6,7 @@ use <../../p/4-4cyli.scad>
 use <../../p/4-4cylo.scad>
 use <../../p/4-4disc.scad>
 use <../../p/4-4edge.scad>
-use <../../p/4-4rin18.scad>
+use <../../p/4-4ring18.scad>
 use <../../p/4-4ring7.scad>
 use <../../p/4-4ring8.scad>
 use <../../p/7-8cylo.scad>
@@ -15,7 +15,7 @@ function ldraw_lib__s__10830s02() = [
 // 0 ~Minifig Tool Magnifying Glass Holder with Thick Frame
 // 0 Name: s\10830s02.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
-// 0 !LDRAW_ORG Subpart UPDATE 2020-01
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -23,7 +23,8 @@ function ldraw_lib__s__10830s02() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2020-06-28 [PTadmin] Official Update 2020-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Grip
 // 1 16 0 10 0 4 0 0 0 -1 0 0 0 4 4-4disc.dat
@@ -84,8 +85,8 @@ function ldraw_lib__s__10830s02() = [
   [1,16,0,-29.5,4,2,0,0,0,0,2,0,-2.5,0, ldraw_lib__4_4ring7()],
 // 1 16 0 -29.5 4 2 0 0 0 0 2 0 -2.5 0 4-4ring8.dat
   [1,16,0,-29.5,4,2,0,0,0,0,2,0,-2.5,0, ldraw_lib__4_4ring8()],
-// 1 16 0 -29.5 4 1 0 0 0 0 1 0 -2.5 0 4-4rin18.dat
-  [1,16,0,-29.5,4,1,0,0,0,0,1,0,-2.5,0, ldraw_lib__4_4rin18()],
+// 1 16 0 -29.5 4 1 0 0 0 0 1 0 -2.5 0 4-4ring18.dat
+  [1,16,0,-29.5,4,1,0,0,0,0,1,0,-2.5,0, ldraw_lib__4_4ring18()],
 // 1 16 0 -29.5 4 14 0 0 0 0 -14 0 1 0 4-4edge.dat
   [1,16,0,-29.5,4,14,0,0,0,0,-14,0,1,0, ldraw_lib__4_4edge()],
 // 0 BFC INVERTNEXT

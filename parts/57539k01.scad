@@ -3,8 +3,8 @@ use <../p/1-8edge.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4edge.scad>
-use <../p/4-4rin10.scad>
-use <../p/4-4rin21.scad>
+use <../p/4-4ring10.scad>
+use <../p/4-4ring21.scad>
 use <../p/4-4ring4.scad>
 use <../p/4-4ring6.scad>
 use <../p/4-4ring8.scad>
@@ -13,7 +13,7 @@ function ldraw_lib__57539k01() = [
 // 0 ~Hose Flexible 19L End Segment
 // 0 Name: 57539k01.dat
 // 0 Author: J.C. Tchang [tchang]
-// 0 !LDRAW_ORG Part Flexible_Section UPDATE 2019-01
+// 0 !LDRAW_ORG Part Flexible_Section UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -23,7 +23,8 @@ function ldraw_lib__57539k01() = [
 // 0 !HISTORY 2018-12-08 [PTadmin] Official Update 2018-02
 // 0 !HISTORY 2019-04-26 [cwdee] Adjust description
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 20 0 4 0 0 0 -1 0 0 0 4 4-4disc.dat
   [1,16,0,20,0,4,0,0,0,-1,0,0,0,4, ldraw_lib__4_4disc()],
@@ -36,8 +37,8 @@ function ldraw_lib__57539k01() = [
 // 
 // 1 16 0 0 0 1 0 0 0 -1 0 0 0 1 4-4ring4.dat
   [1,16,0,0,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__4_4ring4()],
-// 1 16 0 0 0 0.5 0 0 0 -1 0 0 0 0.5 4-4rin10.dat
-  [1,16,0,0,0,0.5,0,0,0,-1,0,0,0,0.5, ldraw_lib__4_4rin10()],
+// 1 16 0 0 0 0.5 0 0 0 -1 0 0 0 0.5 4-4ring10.dat
+  [1,16,0,0,0,0.5,0,0,0,-1,0,0,0,0.5, ldraw_lib__4_4ring10()],
 // 1 16 0 0 0 5.08134 0 -2.10476 0 1 0 2.10476 0 5.08134 1-8edge.dat
   [1,16,0,0,0,5.08134,0,-2.10476,0,1,0,2.10476,0,5.08134, ldraw_lib__1_8edge()],
 // 1 16 0 0 0 -2.10476 0 -5.08134 0 1 0 5.08134 0 -2.10476 1-8edge.dat
@@ -67,8 +68,8 @@ function ldraw_lib__57539k01() = [
 // 
 // 1 16 0 -2 0 5.5 0 0 0 1 0 0 0 5.5 4-4edge.dat
   [1,16,0,-2,0,5.5,0,0,0,1,0,0,0,5.5, ldraw_lib__4_4edge()],
-// 1 16 0 -2 0 0.25 0 0 0 1 0 0 0 0.25 4-4rin21.dat
-  [1,16,0,-2,0,0.25,0,0,0,1,0,0,0,0.25, ldraw_lib__4_4rin21()],
+// 1 16 0 -2 0 0.25 0 0 0 1 0 0 0 0.25 4-4ring21.dat
+  [1,16,0,-2,0,0.25,0,0,0,1,0,0,0,0.25, ldraw_lib__4_4ring21()],
 // 1 16 0 -2 0 0.75 0 0 0 1 0 0 0 0.75 4-4ring6.dat
   [1,16,0,-2,0,0.75,0,0,0,1,0,0,0,0.75, ldraw_lib__4_4ring6()],
 // 1 16 0 -2 0 4.5 0 0 0 1 0 0 0 4.5 4-4edge.dat

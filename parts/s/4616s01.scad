@@ -23,7 +23,7 @@ use <../../p/48/1-8chrd.scad>
 use <../../p/48/2-4cyli.scad>
 use <../../p/48/2-4disc.scad>
 use <../../p/48/2-4edge.scad>
-use <../../p/48/2-4rin19.scad>
+use <../../p/48/2-4ring19.scad>
 use <../../p/48/5-24edge.scad>
 use <../../p/48/t04o2000.scad>
 use <../../p/box2-5.scad>
@@ -37,7 +37,7 @@ function ldraw_lib__s__4616s01() = [
 // 0 ~Brick  2 x  4 x  2 with Engine Cowling - Half
 // 0 Name: s\4616s01.dat
 // 0 Author: Alex Taylor [anathema]
-// 0 !LDRAW_ORG Subpart UPDATE 2012-03
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -46,7 +46,8 @@ function ldraw_lib__s__4616s01() = [
 // 
 // 0 !HISTORY 2011-05-29 [StevieC] Reworked hole for use with 4616b.dat
 // 0 !HISTORY 2012-12-28 [PTadmin] Official Update 2012-03
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
@@ -62,8 +63,8 @@ function ldraw_lib__s__4616s01() = [
   [3,16,40,18,-2,40,48,-10,40,18,2],
 // 1 16 12 24 -20 0 0 19 19 0 0 0 1 0 48\2-4edge.dat
   [1,16,12,24,-20,0,0,19,19,0,0,0,1,0, ldraw_lib__48__2_4edge()],
-// 1 16 12 24 -40 0 0 1 1 0 0 0 1 0 48\2-4rin19.dat
-  [1,16,12,24,-40,0,0,1,1,0,0,0,1,0, ldraw_lib__48__2_4rin19()],
+// 1 16 12 24 -40 0 0 1 1 0 0 0 1 0 48\2-4ring19.dat
+  [1,16,12,24,-40,0,0,1,1,0,0,0,1,0, ldraw_lib__48__2_4ring19()],
 // 1 16 12 24 -20 0 0 19 19 0 0 0 1 0 48\2-4disc.dat
   [1,16,12,24,-20,0,0,19,19,0,0,0,1,0, ldraw_lib__48__2_4disc()],
 // 1 16 6 5 -30 6 0 0 0 -1 0 0 0 -10 rect2p.dat

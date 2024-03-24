@@ -3,14 +3,14 @@ use <../p/1-4cylo.scad>
 use <../p/1-4ring1.scad>
 use <../p/3-16cyli.scad>
 use <../p/3-16edge.scad>
-use <../p/3-16rin1.scad>
+use <../p/3-16ring1.scad>
 use <../p/box5.scad>
 use <../p/rect2p.scad>
 function ldraw_lib__11033() = [
 // 0 ~Electric Mindstorms EV3 Mini-USB Socket
 // 0 Name: 11033.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2013-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -20,7 +20,8 @@ function ldraw_lib__11033() = [
 // 0 !HISTORY 2012-05-20 {LEGO MINDSTORMS Team} Original part shape
 // 0 !HISTORY 2012-12-09 [Philo] Complete rebuild for LDraw Parts Tracker
 // 0 !HISTORY 2013-12-23 [PTadmin] Official Update 2013-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 -5 6 10 0 0 0 0 -5 0 18 0 box5.dat
   [1,16,0,-5,6,10,0,0,0,0,-5,0,18,0, ldraw_lib__box5()],
@@ -62,8 +63,8 @@ function ldraw_lib__11033() = [
   [0,"BFC","INVERTNEXT"],
 // 1 494 8 -6 15 1 0 0 0 0 1 0 -15 0 3-16cyli.dat
   [1,494,8,-6,15,1,0,0,0,0,1,0,-15,0, ldraw_lib__3_16cyli()],
-// 1 494 8 -6 0 1 0 0 0 0 1 0 1 0 3-16rin1.dat
-  [1,494,8,-6,0,1,0,0,0,0,1,0,1,0, ldraw_lib__3_16rin1()],
+// 1 494 8 -6 0 1 0 0 0 0 1 0 1 0 3-16ring1.dat
+  [1,494,8,-6,0,1,0,0,0,0,1,0,1,0, ldraw_lib__3_16ring1()],
 // 1 494 8 -6 0 1 0 0 0 0 1 0 1 0 3-16edge.dat
   [1,494,8,-6,0,1,0,0,0,0,1,0,1,0, ldraw_lib__3_16edge()],
 // 1 494 8 -6 15 1 0 0 0 0 1 0 1 0 3-16edge.dat
@@ -78,8 +79,8 @@ function ldraw_lib__11033() = [
   [0,"BFC","INVERTNEXT"],
 // 1 494 9.148 -3.228 0 -1 0 0 0 0 -1 0 6 0 3-16cyli.dat
   [1,494,9.148,-3.228,0,-1,0,0,0,0,-1,0,6,0, ldraw_lib__3_16cyli()],
-// 1 494 9.148 -3.228 0 -1 0 0 0 0 -1 0 1 0 3-16rin1.dat
-  [1,494,9.148,-3.228,0,-1,0,0,0,0,-1,0,1,0, ldraw_lib__3_16rin1()],
+// 1 494 9.148 -3.228 0 -1 0 0 0 0 -1 0 1 0 3-16ring1.dat
+  [1,494,9.148,-3.228,0,-1,0,0,0,0,-1,0,1,0, ldraw_lib__3_16ring1()],
 // 1 494 9.148 -3.228 0 -1 0 0 0 0 -1 0 1 0 3-16edge.dat
   [1,494,9.148,-3.228,0,-1,0,0,0,0,-1,0,1,0, ldraw_lib__3_16edge()],
 // 1 494 9.148 -3.228 6 -1 0 0 0 0 -1 0 1 0 3-16edge.dat
@@ -128,8 +129,8 @@ function ldraw_lib__11033() = [
   [0,"BFC","INVERTNEXT"],
 // 1 494 -8 -6 15 -1 0 0 0 0 1 0 -15 0 3-16cyli.dat
   [1,494,-8,-6,15,-1,0,0,0,0,1,0,-15,0, ldraw_lib__3_16cyli()],
-// 1 494 -8 -6 0 -1 0 0 0 0 1 0 1 0 3-16rin1.dat
-  [1,494,-8,-6,0,-1,0,0,0,0,1,0,1,0, ldraw_lib__3_16rin1()],
+// 1 494 -8 -6 0 -1 0 0 0 0 1 0 1 0 3-16ring1.dat
+  [1,494,-8,-6,0,-1,0,0,0,0,1,0,1,0, ldraw_lib__3_16ring1()],
 // 1 494 -8 -6 0 -1 0 0 0 0 1 0 1 0 3-16edge.dat
   [1,494,-8,-6,0,-1,0,0,0,0,1,0,1,0, ldraw_lib__3_16edge()],
 // 1 494 -8 -6 15 -1 0 0 0 0 1 0 1 0 3-16edge.dat
@@ -144,8 +145,8 @@ function ldraw_lib__11033() = [
   [0,"BFC","INVERTNEXT"],
 // 1 494 -9.148 -3.228 0 1 0 0 0 0 -1 0 6 0 3-16cyli.dat
   [1,494,-9.148,-3.228,0,1,0,0,0,0,-1,0,6,0, ldraw_lib__3_16cyli()],
-// 1 494 -9.148 -3.228 0 1 0 0 0 0 -1 0 1 0 3-16rin1.dat
-  [1,494,-9.148,-3.228,0,1,0,0,0,0,-1,0,1,0, ldraw_lib__3_16rin1()],
+// 1 494 -9.148 -3.228 0 1 0 0 0 0 -1 0 1 0 3-16ring1.dat
+  [1,494,-9.148,-3.228,0,1,0,0,0,0,-1,0,1,0, ldraw_lib__3_16ring1()],
 // 1 494 -9.148 -3.228 0 1 0 0 0 0 -1 0 1 0 3-16edge.dat
   [1,494,-9.148,-3.228,0,1,0,0,0,0,-1,0,1,0, ldraw_lib__3_16edge()],
 // 1 494 -9.148 -3.228 6 1 0 0 0 0 -1 0 1 0 3-16edge.dat

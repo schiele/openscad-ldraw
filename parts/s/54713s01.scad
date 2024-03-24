@@ -2,7 +2,7 @@ use <../../lib.scad>
 use <../../p/1-4cyli.scad>
 use <../../p/1-4disc.scad>
 use <../../p/1-4edge.scad>
-use <../../p/1-4rin12.scad>
+use <../../p/1-4ring12.scad>
 use <../../p/1-4ring5.scad>
 use <../../p/rect1.scad>
 use <../../p/rect2p.scad>
@@ -11,7 +11,7 @@ function ldraw_lib__s__54713s01() = [
 // 0 ~Electric Mindstorms NXT Sockets Cover Subpart
 // 0 Name: s\54713s01.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Subpart UPDATE 2015-02
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -22,7 +22,8 @@ function ldraw_lib__s__54713s01() = [
 // 0 !HISTORY 2014-11-21 [roland] Auto-corrected with libfix version of LDCad 1.4
 // 0 !HISTORY 2015-02-23 [Philo] Minor mismatches fixed
 // 0 !HISTORY 2015-12-30 [PTadmin] Official Update 2015-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 72 -82 -139 13 0 0 0 0 -13 0 22 0 1-4cyli.dat
   [1,16,72,-82,-139,13,0,0,0,0,-13,0,22,0, ldraw_lib__1_4cyli()],
@@ -32,8 +33,8 @@ function ldraw_lib__s__54713s01() = [
   [1,16,72,-82,-139,13,0,0,0,0,-13,0,1,0, ldraw_lib__1_4disc()],
 // 1 16 72 -82 -117 2 0 0 0 0 -2 0 -1 0 1-4ring5.dat
   [1,16,72,-82,-117,2,0,0,0,0,-2,0,-1,0, ldraw_lib__1_4ring5()],
-// 1 16 72 -82 -117 1 0 0 0 0 -1 0 -1 0 1-4rin12.dat
-  [1,16,72,-82,-117,1,0,0,0,0,-1,0,-1,0, ldraw_lib__1_4rin12()],
+// 1 16 72 -82 -117 1 0 0 0 0 -1 0 -1 0 1-4ring12.dat
+  [1,16,72,-82,-117,1,0,0,0,0,-1,0,-1,0, ldraw_lib__1_4ring12()],
 // 1 16 72 -82 -117 13 0 0 0 0 -13 0 1 0 1-4edge.dat
   [1,16,72,-82,-117,13,0,0,0,0,-13,0,1,0, ldraw_lib__1_4edge()],
 // 0 BFC INVERTNEXT

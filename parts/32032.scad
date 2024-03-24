@@ -4,7 +4,7 @@ use <../p/1-8chrd.scad>
 use <../p/3-8cyli.scad>
 use <../p/3-8cylo.scad>
 use <../p/3-8edge.scad>
-use <../p/3-8rin10.scad>
+use <../p/3-8ring10.scad>
 use <../p/4-4con3.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4disc.scad>
@@ -22,7 +22,7 @@ function ldraw_lib__32032() = [
 // 0 ~Technic Pneumatic Airtank End
 // 0 Name: 32032.dat
 // 0 Author: Guy Vivan [guyvivan]
-// 0 !LDRAW_ORG Part UPDATE 2022-03
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CW
@@ -34,7 +34,8 @@ function ldraw_lib__32032() = [
 // 0 !HISTORY 2018-12-08 [PTadmin] Official Update 2018-02
 // 0 !HISTORY 2021-12-30 [MagFors] Corrected axlehole, primitive substitution, corrected condlines
 // 0 !HISTORY 2022-05-07 [PTadmin] Official Update 2022-03
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 80 0 0 0 1 0 6 0 0 0 0 6 4-4edge.dat
   [1,16,80,0,0,0,1,0,6,0,0,0,0,6, ldraw_lib__4_4edge()],
@@ -130,10 +131,10 @@ function ldraw_lib__32032() = [
   [1,16,54,0,0,0,1,0,-40,0,0,0,0,-40, ldraw_lib__3_8edge()],
 // 1 16 54 0 0 0 6 0 -40 0 0 0 0 -40 3-8cyli.dat
   [1,16,54,0,0,0,6,0,-40,0,0,0,0,-40, ldraw_lib__3_8cyli()],
-// 1 16 54 0 0 0 1 0 -3.63636 0 0 0 0 -3.63636 3-8rin10.dat
-  [1,16,54,0,0,0,1,0,-3.63636,0,0,0,0,-3.63636, ldraw_lib__3_8rin10()],
-// 1 16 54 0 0 0 1 0 -3.63636 0 0 0 0 3.63636 3-8rin10.dat
-  [1,16,54,0,0,0,1,0,-3.63636,0,0,0,0,3.63636, ldraw_lib__3_8rin10()],
+// 1 16 54 0 0 0 1 0 -3.63636 0 0 0 0 -3.63636 3-8ring10.dat
+  [1,16,54,0,0,0,1,0,-3.63636,0,0,0,0,-3.63636, ldraw_lib__3_8ring10()],
+// 1 16 54 0 0 0 1 0 -3.63636 0 0 0 0 3.63636 3-8ring10.dat
+  [1,16,54,0,0,0,1,0,-3.63636,0,0,0,0,3.63636, ldraw_lib__3_8ring10()],
 // 4 16 54 36.956 15.308 60 36.96 15.31 60 28.284 28.284 54 28.284 28.284
   [4,16,54,36.956,15.308,60,36.96,15.31,60,28.284,28.284,54,28.284,28.284],
 // 4 16 54 36.956 -15.308 54 28.284 -28.284 60 28.284 -28.284 60 36.96 -15.31

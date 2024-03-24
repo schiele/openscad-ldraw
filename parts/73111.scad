@@ -10,8 +10,8 @@ use <../p/48/1-4chrd.scad>
 use <../p/48/4-4cyli.scad>
 use <../p/48/4-4cylo.scad>
 use <../p/48/4-4edge.scad>
-use <../p/48/4-4rin13.scad>
-use <../p/48/4-4rin14.scad>
+use <../p/48/4-4ring13.scad>
+use <../p/48/4-4ring14.scad>
 use <../p/axlehol2.scad>
 use <../p/axlehole.scad>
 use <../p/rect3.scad>
@@ -21,7 +21,7 @@ function ldraw_lib__73111() = [
 // 0 Brick  3 x  3 x  2 Round with Recessed Centre
 // 0 Name: 73111.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
-// 0 !LDRAW_ORG Part UPDATE 2022-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -29,7 +29,8 @@ function ldraw_lib__73111() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2022-03-06 [PTadmin] Official Update 2022-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Bottom
 // 
@@ -316,10 +317,10 @@ function ldraw_lib__73111() = [
 // 
 // 1 16 0 44 0 30 0 0 0 -44 0 0 0 30 48\4-4cyli.dat
   [1,16,0,44,0,30,0,0,0,-44,0,0,0,30, ldraw_lib__48__4_4cyli()],
-// 1 16 0 0 0 2 0 0 0 1 0 0 0 2 48\4-4rin13.dat
-  [1,16,0,0,0,2,0,0,0,1,0,0,0,2, ldraw_lib__48__4_4rin13()],
-// 1 16 0 0 0 2 0 0 0 1 0 0 0 2 48\4-4rin14.dat
-  [1,16,0,0,0,2,0,0,0,1,0,0,0,2, ldraw_lib__48__4_4rin14()],
+// 1 16 0 0 0 2 0 0 0 1 0 0 0 2 48\4-4ring13.dat
+  [1,16,0,0,0,2,0,0,0,1,0,0,0,2, ldraw_lib__48__4_4ring13()],
+// 1 16 0 0 0 2 0 0 0 1 0 0 0 2 48\4-4ring14.dat
+  [1,16,0,0,0,2,0,0,0,1,0,0,0,2, ldraw_lib__48__4_4ring14()],
 // 1 16 0 0 0 30 0 0 0 1 0 0 0 30 48\4-4edge.dat
   [1,16,0,0,0,30,0,0,0,1,0,0,0,30, ldraw_lib__48__4_4edge()],
 // 0 BFC INVERTNEXT

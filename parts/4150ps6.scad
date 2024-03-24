@@ -1,15 +1,15 @@
 use <../lib.scad>
 use <../p/4-4disc.scad>
-use <../p/4-4rin18.scad>
-use <../p/4-4rin38.scad>
-use <../p/4-4rin39.scad>
+use <../p/4-4ring18.scad>
+use <../p/4-4ring38.scad>
+use <../p/4-4ring39.scad>
 use <s/4150s01.scad>
 function ldraw_lib__4150ps6() = [
 // 0 Tile  2 x  2 Round with SW Galactic Republic Pattern
 // 0 Name: 4150ps6.dat
 // 0 Author: Marc Schickele [samrotule]
-// 0 !LDRAW_ORG Part UPDATE 2009-03
-// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+// 0 !LDRAW_ORG Part UPDATE 2024-02
+// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
@@ -24,7 +24,8 @@ function ldraw_lib__4150ps6() = [
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
 // 0 !HISTORY 2009-10-06 [anathema] BFC'd; optimised a bit
 // 0 !HISTORY 2009-12-29 [PTadmin] Official Update 2009-03
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4150s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4150s01()],
@@ -42,12 +43,12 @@ function ldraw_lib__4150ps6() = [
   [4,16,6.888,0,16.629,0,0,18,0,0,16.638,6.367,0,15.371],
 // 4 16 0 0 18 -6.888 0 16.629 -6.367 0 15.371 0 0 16.638
   [4,16,0,0,18,-6.888,0,16.629,-6.367,0,15.371,0,0,16.638],
-// 1 16 0 0 0 0.5 0 0 0 1 0 0 0 0.5 4-4rin39.dat
-  [1,16,0,0,0,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__4_4rin39()],
-// 1 0 0 0 0 0.5 0 0 0 1 0 0 0 0.5 4-4rin38.dat
-  [1,0,0,0,0,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__4_4rin38()],
-// 1 0 0 0 0 1 0 0 0 1 0 0 0 1 4-4rin18.dat
-  [1,0,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4rin18()],
+// 1 16 0 0 0 0.5 0 0 0 1 0 0 0 0.5 4-4ring39.dat
+  [1,16,0,0,0,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__4_4ring39()],
+// 1 0 0 0 0 0.5 0 0 0 1 0 0 0 0.5 4-4ring38.dat
+  [1,0,0,0,0,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__4_4ring38()],
+// 1 0 0 0 0 1 0 0 0 1 0 0 0 1 4-4ring18.dat
+  [1,0,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4ring18()],
 // 4 16 -2 0 14.231 0 0 14.629 0 0 16.638 -2 0 16.24
   [4,16,-2,0,14.231,0,0,14.629,0,0,16.638,-2,0,16.24],
 // 4 0 -5.598 0 13.516 -2 0 14.231 -2 0 16.24 -6.367 0 15.371

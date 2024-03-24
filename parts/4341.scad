@@ -14,14 +14,14 @@ use <../p/4-4cyli.scad>
 use <../p/4-4cylo.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4edge.scad>
-use <../p/4-4rin10.scad>
-use <../p/4-4rin29.scad>
+use <../p/4-4ring10.scad>
+use <../p/4-4ring29.scad>
 use <../p/4-4ring5.scad>
 function ldraw_lib__4341() = [
 // 0 Minifig Cauldron
 // 0 Name: 4341.dat
 // 0 Author: Franklin W. Cain [fwcain]
-// 0 !LDRAW_ORG Part UPDATE 2020-03
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -29,15 +29,16 @@ function ldraw_lib__4341() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS Belville, Castle, container, Fabuland, Harry Potter, kettle, pot
-// 0 !KEYWORDS potion, Witch
+// 0 !KEYWORDS Belville, Castle, Fabuland, Harry Potter, Witch, container, kettle
+// 0 !KEYWORDS pot, potion
 // 
 // 0 !HISTORY 2002-04-25 [PTadmin] Official Update 2002-02
 // 0 !HISTORY 2007-07-04 [PTadmin] Header formatted for Contributor Agreement
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
 // 0 !HISTORY 2017-09-04 [MagFors] bfc'd, added cond-lines, used more primitives
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 42 0 24 0 0 0 -6 0 0 0 24 4-4cylo.dat
   [1,16,0,42,0,24,0,0,0,-6,0,0,0,24, ldraw_lib__4_4cylo()],
@@ -120,10 +121,10 @@ function ldraw_lib__4341() = [
 // 
 // 1 16 0 30 0 33 0 0 0 -30 0 0 0 33 4-4cyli.dat
   [1,16,0,30,0,33,0,0,0,-30,0,0,0,33, ldraw_lib__4_4cyli()],
-// 1 16 0 0 0 1 0 0 0 1 0 0 0 1 4-4rin29.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4rin29()],
-// 1 16 0 0 0 3 0 0 0 1 0 0 0 3 4-4rin10.dat
-  [1,16,0,0,0,3,0,0,0,1,0,0,0,3, ldraw_lib__4_4rin10()],
+// 1 16 0 0 0 1 0 0 0 1 0 0 0 1 4-4ring29.dat
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4ring29()],
+// 1 16 0 0 0 3 0 0 0 1 0 0 0 3 4-4ring10.dat
+  [1,16,0,0,0,3,0,0,0,1,0,0,0,3, ldraw_lib__4_4ring10()],
 // 1 16 0 0 0 29 0 0 0 1 0 0 0 29 4-4edge.dat
   [1,16,0,0,0,29,0,0,0,1,0,0,0,29, ldraw_lib__4_4edge()],
 // 1 16 0 0 0 33 0 0 0 1 0 0 0 33 4-4edge.dat

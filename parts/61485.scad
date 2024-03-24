@@ -2,18 +2,18 @@ use <../lib.scad>
 use <../p/2-4cylc.scad>
 use <../p/4-4cylo.scad>
 use <../p/4-4ndis.scad>
-use <../p/4-4rin15.scad>
+use <../p/4-4ring15.scad>
 use <../p/4-4ring4.scad>
 use <../p/48/4-4cyli.scad>
 use <../p/48/4-4edge.scad>
-use <../p/48/4-4rin22.scad>
+use <../p/48/4-4ring22.scad>
 use <../p/box4.scad>
 use <../p/stud4.scad>
 function ldraw_lib__61485() = [
 // 0 Turntable Flat Base  4 x  4
 // 0 Name: 61485.dat
 // 0 Author: Santeri Piippo [arezey]
-// 0 !LDRAW_ORG Part UPDATE 2010-03
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -22,7 +22,8 @@ function ldraw_lib__61485() = [
 // 
 // 0 !HISTORY 2010-11-01 [MagFors] Reduced hight on clic-ring.
 // 0 !HISTORY 2010-12-31 [PTadmin] Official Update 2010-03
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 20 4 20 1 0 0 0 -1 0 0 0 1 stud4.dat
   [1,16,20,4,20,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4()],
@@ -68,14 +69,14 @@ function ldraw_lib__61485() = [
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 4 0 8 0 0 0 -6 0 0 0 8 4-4cylo.dat
   [1,16,0,4,0,8,0,0,0,-6,0,0,0,8, ldraw_lib__4_4cylo()],
-// 1 16 0 -2 0 0.5 0 0 0 -1 0 0 0 -0.5 4-4rin15.dat
-  [1,16,0,-2,0,0.5,0,0,0,-1,0,0,0,-0.5, ldraw_lib__4_4rin15()],
+// 1 16 0 -2 0 0.5 0 0 0 -1 0 0 0 -0.5 4-4ring15.dat
+  [1,16,0,-2,0,0.5,0,0,0,-1,0,0,0,-0.5, ldraw_lib__4_4ring15()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -4 0 7.5 0 0 0 2 0 0 0 7.5 4-4cylo.dat
   [1,16,0,-4,0,7.5,0,0,0,2,0,0,0,7.5, ldraw_lib__4_4cylo()],
-// 1 16 0 -4 0 0.5 0 0 0 1 0 0 0 0.5 4-4rin15.dat
-  [1,16,0,-4,0,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__4_4rin15()],
+// 1 16 0 -4 0 0.5 0 0 0 1 0 0 0 0.5 4-4ring15.dat
+  [1,16,0,-4,0,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__4_4ring15()],
 // 1 16 0 -4 0 2 0 0 0 1 0 0 0 2 4-4ring4.dat
   [1,16,0,-4,0,2,0,0,0,1,0,0,0,2, ldraw_lib__4_4ring4()],
 // 1 16 0 -4 0 10 0 0 0 4 0 0 0 10 4-4cylo.dat
@@ -290,8 +291,8 @@ function ldraw_lib__61485() = [
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -4 0 33 0 0 0 4 0 0 0 33 48\4-4cyli.dat
   [1,16,0,-4,0,33,0,0,0,4,0,0,0,33, ldraw_lib__48__4_4cyli()],
-// 1 16 0 -4 0 1.5 0 0 0 1 0 0 0 1.5 48\4-4rin22.dat
-  [1,16,0,-4,0,1.5,0,0,0,1,0,0,0,1.5, ldraw_lib__48__4_4rin22()],
+// 1 16 0 -4 0 1.5 0 0 0 1 0 0 0 1.5 48\4-4ring22.dat
+  [1,16,0,-4,0,1.5,0,0,0,1,0,0,0,1.5, ldraw_lib__48__4_4ring22()],
 // 
 ];
 module ldraw_lib__61485(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)

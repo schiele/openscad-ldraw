@@ -2,13 +2,13 @@ use <../lib.scad>
 use <../p/1-4disc.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4ndis.scad>
-use <../p/4-4rin10.scad>
+use <../p/4-4ring10.scad>
 use <s/4744s01.scad>
 function ldraw_lib__4744p05() = [
 // 0 Brick  2 x  4 x  2 with Curved Top with 3 Yellow Dots Pattern
 // 0 Name: 4744p05.dat
 // 0 Author: Tore Eriksson [Tore_Eriksson]
-// 0 !LDRAW_ORG Part UPDATE 2009-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CW
@@ -16,7 +16,8 @@ function ldraw_lib__4744p05() = [
   [0,"BFC","CW"],
 // 
 // 0 !HISTORY 2009-09-03 [PTadmin] Official Update 2009-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4744s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4744s01()],
@@ -58,20 +59,20 @@ function ldraw_lib__4744p05() = [
 // 
 // 1 14 0 8.5 -20 5 0 0 0 0 5 0 1 0 4-4disc.dat
   [1,14,0,8.5,-20,5,0,0,0,0,5,0,1,0, ldraw_lib__4_4disc()],
-// 1 0 0 8.5 -20 0.5 0 0 0 0 0.5 0 1 0 4-4rin10.dat
-  [1,0,0,8.5,-20,0.5,0,0,0,0,0.5,0,1,0, ldraw_lib__4_4rin10()],
+// 1 0 0 8.5 -20 0.5 0 0 0 0 0.5 0 1 0 4-4ring10.dat
+  [1,0,0,8.5,-20,0.5,0,0,0,0,0.5,0,1,0, ldraw_lib__4_4ring10()],
 // 1 16 0 8.5 -20 5.5 0 0 0 0 5.5 0 1 0 4-4ndis.dat
   [1,16,0,8.5,-20,5.5,0,0,0,0,5.5,0,1,0, ldraw_lib__4_4ndis()],
 // 1 14 0 24 -20 5 0 0 0 0 5 0 1 0 4-4disc.dat
   [1,14,0,24,-20,5,0,0,0,0,5,0,1,0, ldraw_lib__4_4disc()],
-// 1 0 0 24 -20 0.5 0 0 0 0 0.5 0 1 0 4-4rin10.dat
-  [1,0,0,24,-20,0.5,0,0,0,0,0.5,0,1,0, ldraw_lib__4_4rin10()],
+// 1 0 0 24 -20 0.5 0 0 0 0 0.5 0 1 0 4-4ring10.dat
+  [1,0,0,24,-20,0.5,0,0,0,0,0.5,0,1,0, ldraw_lib__4_4ring10()],
 // 1 16 0 24 -20 5.5 0 0 0 0 5.5 0 1 0 4-4ndis.dat
   [1,16,0,24,-20,5.5,0,0,0,0,5.5,0,1,0, ldraw_lib__4_4ndis()],
 // 1 14 0 39.5 -20 5 0 0 0 0 5 0 1 0 4-4disc.dat
   [1,14,0,39.5,-20,5,0,0,0,0,5,0,1,0, ldraw_lib__4_4disc()],
-// 1 0 0 39.5 -20 0.5 0 0 0 0 0.5 0 1 0 4-4rin10.dat
-  [1,0,0,39.5,-20,0.5,0,0,0,0,0.5,0,1,0, ldraw_lib__4_4rin10()],
+// 1 0 0 39.5 -20 0.5 0 0 0 0 0.5 0 1 0 4-4ring10.dat
+  [1,0,0,39.5,-20,0.5,0,0,0,0,0.5,0,1,0, ldraw_lib__4_4ring10()],
 // 1 16 0 39.5 -20 5.5 0 0 0 0 5.5 0 1 0 4-4ndis.dat
   [1,16,0,39.5,-20,5.5,0,0,0,0,5.5,0,1,0, ldraw_lib__4_4ndis()],
 // 0

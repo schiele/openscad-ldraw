@@ -1,7 +1,7 @@
 use <../../lib.scad>
 use <../../p/48/4-4cylc.scad>
 use <../../p/48/4-4cylo.scad>
-use <../../p/48/4-4rin18.scad>
+use <../../p/48/4-4ring18.scad>
 use <../../p/48/4-4ring38.scad>
 use <../../p/48/4-4ring39.scad>
 use <../../p/box3u5p.scad>
@@ -12,7 +12,7 @@ function ldraw_lib__s__32627s01() = [
 // 0 ~Plate  4 x  4 Round with Groove with Two Open Centre Studs without Top Surface
 // 0 Name: s\32627s01.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
-// 0 !LDRAW_ORG Subpart UPDATE 2022-01
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -22,7 +22,8 @@ function ldraw_lib__s__32627s01() = [
 // 0 !HISTORY 2019-12-27 [PTadmin] Official Update 2019-03
 // 0 !HISTORY 2021-01-03 [cwdee] Update description
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 stug2-1x2.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug2_1x2()],
@@ -38,8 +39,8 @@ function ldraw_lib__s__32627s01() = [
   [1,16,0,4,0,36,0,0,0,4,0,0,0,36, ldraw_lib__48__4_4cylc()],
 // 1 16 0 8 0 1 0 0 0 -1 0 0 0 1 48\4-4ring38.dat
   [1,16,0,8,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__48__4_4ring38()],
-// 1 16 0 8 0 2 0 0 0 -1 0 0 0 2 48\4-4rin18.dat
-  [1,16,0,8,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__48__4_4rin18()],
+// 1 16 0 8 0 2 0 0 0 -1 0 0 0 2 48\4-4ring18.dat
+  [1,16,0,8,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__48__4_4ring18()],
 // 1 16 0 4 0 1 0 0 0 -1 0 0 0 1 stud4.dat
   [1,16,0,4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4()],
 // 1 16 -11.90388 4 0 4.09613 0 0 0 3 0 0 0 1 box3u5p.dat

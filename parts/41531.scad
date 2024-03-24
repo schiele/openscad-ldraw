@@ -15,7 +15,7 @@ use <../p/48/1-12edge.scad>
 use <../p/48/3-16cyli.scad>
 use <../p/48/4-4con24.scad>
 use <../p/48/4-4edge.scad>
-use <../p/48/4-4rin15.scad>
+use <../p/48/4-4ring15.scad>
 use <../p/peghole.scad>
 use <../p/rect1.scad>
 use <../p/rect3.scad>
@@ -23,7 +23,7 @@ function ldraw_lib__41531() = [
 // 0 Technic Cylinder  4 x  4 x  2 with 3 Pin Holes and Center Bar
 // 0 Name: 41531.dat
 // 0 Author: Marc Schickele [samrotule]
-// 0 !LDRAW_ORG Part UPDATE 2009-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CW
@@ -36,7 +36,8 @@ function ldraw_lib__41531() = [
 // 0 !HISTORY 2005-12-26 [mkennedy] Used cone for outer ring, more primitves, 1-12 primitves around indent
 // 0 !HISTORY 2006-01-09 [mchiles] Fixed final 4 edge lines
 // 0 !HISTORY 2009-09-03 [PTadmin] Official Update 2009-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // edge, outer hole rim top - neg
 // 
@@ -601,10 +602,10 @@ function ldraw_lib__41531() = [
   [1,16,0,0,-20,0,0,38.4,38.4,0,0,0,-1,0, ldraw_lib__48__4_4edge()],
 // 1 16 0 0 -20 0 0 36 36 0 0 0 -1 0 48\4-4edge.dat
   [1,16,0,0,-20,0,0,36,36,0,0,0,-1,0, ldraw_lib__48__4_4edge()],
-// 1 16 0 0 -20 2.4 0 0 0 0 2.4 0 1 0 48\4-4rin15.dat
-  [1,16,0,0,-20,2.4,0,0,0,0,2.4,0,1,0, ldraw_lib__48__4_4rin15()],
-// 1 16 0 0 20 2.4 0 0 0 0 2.4 0 -1 0 48\4-4rin15.dat
-  [1,16,0,0,20,2.4,0,0,0,0,2.4,0,-1,0, ldraw_lib__48__4_4rin15()],
+// 1 16 0 0 -20 2.4 0 0 0 0 2.4 0 1 0 48\4-4ring15.dat
+  [1,16,0,0,-20,2.4,0,0,0,0,2.4,0,1,0, ldraw_lib__48__4_4ring15()],
+// 1 16 0 0 20 2.4 0 0 0 0 2.4 0 -1 0 48\4-4ring15.dat
+  [1,16,0,0,20,2.4,0,0,0,0,2.4,0,-1,0, ldraw_lib__48__4_4ring15()],
 // 1 16 0 0 -10 1.6 0 0 0 0 1.6 0 -10 0 48\4-4con24.dat
   [1,16,0,0,-10,1.6,0,0,0,0,1.6,0,-10,0, ldraw_lib__48__4_4con24()],
 // 1 16 0 0 10 1.6 0 0 0 0 1.6 0 10 0 48\4-4con24.dat

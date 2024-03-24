@@ -15,15 +15,15 @@ use <../p/4-4con9.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4cylo.scad>
 use <../p/4-4edge.scad>
-use <../p/4-4rin11.scad>
 use <../p/4-4ring1.scad>
+use <../p/4-4ring11.scad>
 use <../p/4-4ring4.scad>
 use <../p/4-4ring6.scad>
 function ldraw_lib__24946() = [
 // 0 Animal Egg  1.2 x  1.2 x  1.333 with Hole on Top
 // 0 Name: 24946.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
-// 0 !LDRAW_ORG Part UPDATE 2019-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -33,7 +33,8 @@ function ldraw_lib__24946() = [
 // 0 !KEYWORDS Angry Birds
 // 
 // 0 !HISTORY 2019-09-09 [PTadmin] Official Update 2019-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
@@ -47,8 +48,8 @@ function ldraw_lib__24946() = [
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -32 0 2 0 0 0 4 0 0 0 2 4-4cylo.dat
   [1,16,0,-32,0,2,0,0,0,4,0,0,0,2, ldraw_lib__4_4cylo()],
-// 1 16 0 -5.5 0 0.5 0 0 0 -1 0 0 0 0.5 4-4rin11.dat
-  [1,16,0,-5.5,0,0.5,0,0,0,-1,0,0,0,0.5, ldraw_lib__4_4rin11()],
+// 1 16 0 -5.5 0 0.5 0 0 0 -1 0 0 0 0.5 4-4ring11.dat
+  [1,16,0,-5.5,0,0.5,0,0,0,-1,0,0,0,0.5, ldraw_lib__4_4ring11()],
 // 1 16 0 -5.5 0 5.5 0 0 0 1 0 0 0 5.5 4-4edge.dat
   [1,16,0,-5.5,0,5.5,0,0,0,1,0,0,0,5.5, ldraw_lib__4_4edge()],
 // 0 BFC INVERTNEXT

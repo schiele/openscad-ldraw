@@ -6,14 +6,14 @@ use <../../p/1-4con6.scad>
 use <../../p/1-4cyli.scad>
 use <../../p/1-4edge.scad>
 use <../../p/1-4ndis.scad>
-use <../../p/1-4rin10.scad>
+use <../../p/1-4ring10.scad>
 use <../../p/1-4ring9.scad>
 use <../../p/2-4con11.scad>
 use <../../p/2-4con4.scad>
 use <../../p/2-4cyli.scad>
 use <../../p/2-4edge.scad>
 use <../../p/2-4ndis.scad>
-use <../../p/2-4rin10.scad>
+use <../../p/2-4ring10.scad>
 use <../../p/2-4ring9.scad>
 use <../../p/4-4cyli.scad>
 use <../../p/4-4edge.scad>
@@ -30,7 +30,7 @@ function ldraw_lib__s__45803s01() = [
 // 0 ~Technic Beam  3 x  7 x  3 Bent 90 Double Chamfered - Half
 // 0 Name: s\45803s01.dat
 // 0 Author: Santeri Piippo [arezey]
-// 0 !LDRAW_ORG Subpart UPDATE 2012-03
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -38,7 +38,8 @@ function ldraw_lib__s__45803s01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2012-12-28 [PTadmin] Official Update 2012-03
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 40 -10 120 0 0 1 0 1 0 -1 0 0 peghole.dat
   [1,16,40,-10,120,0,0,1,0,1,0,-1,0,0, ldraw_lib__peghole()],
@@ -130,16 +131,16 @@ function ldraw_lib__s__45803s01() = [
   [1,16,20,-10,130,0,0,-20,0,1,0,1,-0,0, ldraw_lib__rect1()],
 // 1 16 40 -10 120 0 0 1 0 1 0 1 0 0 2-4ring9.dat
   [1,16,40,-10,120,0,0,1,0,1,0,1,0,0, ldraw_lib__2_4ring9()],
-// 1 16 40 -10 120 0 0 1 0 1 0 1 0 0 2-4rin10.dat
-  [1,16,40,-10,120,0,0,1,0,1,0,1,0,0, ldraw_lib__2_4rin10()],
+// 1 16 40 -10 120 0 0 1 0 1 0 1 0 0 2-4ring10.dat
+  [1,16,40,-10,120,0,0,1,0,1,0,1,0,0, ldraw_lib__2_4ring10()],
 // 1 16 0 -10 0 1 0 0 0 1 0 0 0 -1 2-4ring9.dat
   [1,16,0,-10,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__2_4ring9()],
-// 1 16 0 -10 0 1 0 0 0 1 0 0 0 -1 2-4rin10.dat
-  [1,16,0,-10,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__2_4rin10()],
+// 1 16 0 -10 0 1 0 0 0 1 0 0 0 -1 2-4ring10.dat
+  [1,16,0,-10,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__2_4ring10()],
 // 1 16 0 -10 120 -1 0 0 0 1 0 0 0 1 1-4ring9.dat
   [1,16,0,-10,120,-1,0,0,0,1,0,0,0,1, ldraw_lib__1_4ring9()],
-// 1 16 0 -10 120 -1 0 0 0 1 0 0 0 1 1-4rin10.dat
-  [1,16,0,-10,120,-1,0,0,0,1,0,0,0,1, ldraw_lib__1_4rin10()],
+// 1 16 0 -10 120 -1 0 0 0 1 0 0 0 1 1-4ring10.dat
+  [1,16,0,-10,120,-1,0,0,0,1,0,0,0,1, ldraw_lib__1_4ring10()],
 // 1 16 20 -3.75 129 15.815 -0 0 0 0 -6.25 0 1 0 rect2p.dat
   [1,16,20,-3.75,129,15.815,-0,0,0,0,-6.25,0,1,0, ldraw_lib__rect2p()],
 // 1 16 22.4075 -3.75 111 0 0 -13.4075 6.25 0 0 0 -1.00056 0 rect3.dat

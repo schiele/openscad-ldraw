@@ -3,7 +3,7 @@ use <../p/1-4edge.scad>
 use <../p/2-4cyli.scad>
 use <../p/3-16cyli.scad>
 use <../p/3-16edge.scad>
-use <../p/3-16rin7.scad>
+use <../p/3-16ring7.scad>
 use <../p/3-8chrd.scad>
 use <../p/3-8cyli.scad>
 use <../p/3-8edge.scad>
@@ -14,7 +14,7 @@ function ldraw_lib__u9304() = [
 // 0 ~Boat Keel Weight Half Bottom with Tab
 // 0 Name: u9304.dat
 // 0 Author: Max Martin Richter [MMR1988]
-// 0 !LDRAW_ORG Part UPDATE 2023-06
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -24,7 +24,8 @@ function ldraw_lib__u9304() = [
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 0 !HISTORY 2023-03-24 [Philo] Corrected size of bottom tab cylinder
 // 0 !HISTORY 2023-11-19 [OrionP] Official Update 2023-06
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\u9303s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__u9303s01()],
@@ -65,14 +66,14 @@ function ldraw_lib__u9304() = [
 // 5 24 0 20 -62.5 0 20 -30 7.654 18.478 0 -7.654 18.478 0
   [5,24,0,20,-62.5,0,20,-30,7.654,18.478,0,-7.654,18.478,0],
 // 
-// 1 16 0 0 0 2.5 0 0 0 0 -2.5 0 -1 0 3-16rin7.dat
-  [1,16,0,0,0,2.5,0,0,0,0,-2.5,0,-1,0, ldraw_lib__3_16rin7()],
-// 1 16 0 0 0 -2.5 0 0 0 0 -2.5 0 -1 0 3-16rin7.dat
-  [1,16,0,0,0,-2.5,0,0,0,0,-2.5,0,-1,0, ldraw_lib__3_16rin7()],
-// 1 16 0 0 0 2.5 0 0 0 0 2.5 0 -1 0 3-16rin7.dat
-  [1,16,0,0,0,2.5,0,0,0,0,2.5,0,-1,0, ldraw_lib__3_16rin7()],
-// 1 16 0 0 0 -2.5 0 0 0 0 2.5 0 -1 0 3-16rin7.dat
-  [1,16,0,0,0,-2.5,0,0,0,0,2.5,0,-1,0, ldraw_lib__3_16rin7()],
+// 1 16 0 0 0 2.5 0 0 0 0 -2.5 0 -1 0 3-16ring7.dat
+  [1,16,0,0,0,2.5,0,0,0,0,-2.5,0,-1,0, ldraw_lib__3_16ring7()],
+// 1 16 0 0 0 -2.5 0 0 0 0 -2.5 0 -1 0 3-16ring7.dat
+  [1,16,0,0,0,-2.5,0,0,0,0,-2.5,0,-1,0, ldraw_lib__3_16ring7()],
+// 1 16 0 0 0 2.5 0 0 0 0 2.5 0 -1 0 3-16ring7.dat
+  [1,16,0,0,0,2.5,0,0,0,0,2.5,0,-1,0, ldraw_lib__3_16ring7()],
+// 1 16 0 0 0 -2.5 0 0 0 0 2.5 0 -1 0 3-16ring7.dat
+  [1,16,0,0,0,-2.5,0,0,0,0,2.5,0,-1,0, ldraw_lib__3_16ring7()],
 // 
 // 4 16 -2.5 19.5029 0 -7.654 18.478 0 -6.6973 16.1683 0 0 17.5 0
   [4,16,-2.5,19.5029,0,-7.654,18.478,0,-6.6973,16.1683,0,0,17.5,0],

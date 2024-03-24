@@ -11,13 +11,13 @@ use <../p/48/1-8ndis.scad>
 use <../p/48/2-4cyli.scad>
 use <../p/48/2-4edge.scad>
 use <../p/48/2-4ndis.scad>
-use <../p/48/2-4rin11.scad>
+use <../p/48/2-4ring11.scad>
 use <../p/48/3-16edge.scad>
 use <../p/48/3-16ndis.scad>
 use <../p/48/3-16ring11.scad>
 use <../p/48/4-4cyli.scad>
 use <../p/48/4-4cylo.scad>
-use <../p/48/4-4rin11.scad>
+use <../p/48/4-4ring11.scad>
 use <../p/48/5-24ndis.scad>
 use <../p/48/7-48edge.scad>
 use <../p/48/7-8cyli.scad>
@@ -33,7 +33,7 @@ function ldraw_lib__941() = [
 // 0 ~Train Body for Train Battery Box Car
 // 0 Name: 941.dat
 // 0 Author: Alex Taylor [anathema]
-// 0 !LDRAW_ORG Part UPDATE 2022-03
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -44,7 +44,8 @@ function ldraw_lib__941() = [
 // 0 !HISTORY 2019-08-04 [anathema] Corrected various errors
 // 0 !HISTORY 2021-04-11 [Holly-Wood] Eliminated overlap and t-junk where possible, closed gaps, fixed edges and rounding errors
 // 0 !HISTORY 2022-05-07 [PTadmin] Official Update 2022-03
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 2 24 -56 32 -116 -25.465 32 -116
   [2,24,-56,32,-116,-25.465,32,-116],
@@ -65,16 +66,16 @@ function ldraw_lib__941() = [
 // 
 // 1 16 0 32 69 -33 0 0 0 1 0 0 0 -33 48\2-4ndis.dat
   [1,16,0,32,69,-33,0,0,0,1,0,0,0,-33, ldraw_lib__48__2_4ndis()],
-// 1 16 0 32 69 3 0 0 0 1 0 0 0 3 48\2-4rin11.dat
-  [1,16,0,32,69,3,0,0,0,1,0,0,0,3, ldraw_lib__48__2_4rin11()],
+// 1 16 0 32 69 3 0 0 0 1 0 0 0 3 48\2-4ring11.dat
+  [1,16,0,32,69,3,0,0,0,1,0,0,0,3, ldraw_lib__48__2_4ring11()],
 // 1 16 0 32 0 0 0 33 0 1 0 -33 0 0 48\2-4ndis.dat
   [1,16,0,32,0,0,0,33,0,1,0,-33,0,0, ldraw_lib__48__2_4ndis()],
 // 1 16 0 32 0 0 0 -33 0 1 0 -33 0 0 48\3-16ndis.dat
   [1,16,0,32,0,0,0,-33,0,1,0,-33,0,0, ldraw_lib__48__3_16ndis()],
 // 1 16 0 32 0 0 0 -33 0 1 0 33 0 0 48\3-16ndis.dat
   [1,16,0,32,0,0,0,-33,0,1,0,33,0,0, ldraw_lib__48__3_16ndis()],
-// 1 16 0 32 -69 -3 0 0 0 1 0 0 0 -3 48\2-4rin11.dat
-  [1,16,0,32,-69,-3,0,0,0,1,0,0,0,-3, ldraw_lib__48__2_4rin11()],
+// 1 16 0 32 -69 -3 0 0 0 1 0 0 0 -3 48\2-4ring11.dat
+  [1,16,0,32,-69,-3,0,0,0,1,0,0,0,-3, ldraw_lib__48__2_4ring11()],
 // 1 16 0 32 -69 33 0 0 0 1 0 0 0 33 48\2-4ndis.dat
   [1,16,0,32,-69,33,0,0,0,1,0,0,0,33, ldraw_lib__48__2_4ndis()],
 // 
@@ -386,12 +387,12 @@ function ldraw_lib__941() = [
   [1,16,0,72,0,0,0,-33,0,1,0,-33,0,0, ldraw_lib__48__3_16edge()],
 // 1 16 0 72 0 0 0 33 0 1 0 33 0 0 48\2-4edge.dat
   [1,16,0,72,0,0,0,33,0,1,0,33,0,0, ldraw_lib__48__2_4edge()],
-// 1 16 0 72 0 0 0 3 0 -1 0 3 0 0 48\2-4rin11.dat
-  [1,16,0,72,0,0,0,3,0,-1,0,3,0,0, ldraw_lib__48__2_4rin11()],
-// 1 16 0 72 69 -3 0 0 0 -1 0 0 0 3 48\4-4rin11.dat
-  [1,16,0,72,69,-3,0,0,0,-1,0,0,0,3, ldraw_lib__48__4_4rin11()],
-// 1 16 0 72 -69 3 0 0 0 -1 0 0 0 -3 48\4-4rin11.dat
-  [1,16,0,72,-69,3,0,0,0,-1,0,0,0,-3, ldraw_lib__48__4_4rin11()],
+// 1 16 0 72 0 0 0 3 0 -1 0 3 0 0 48\2-4ring11.dat
+  [1,16,0,72,0,0,0,3,0,-1,0,3,0,0, ldraw_lib__48__2_4ring11()],
+// 1 16 0 72 69 -3 0 0 0 -1 0 0 0 3 48\4-4ring11.dat
+  [1,16,0,72,69,-3,0,0,0,-1,0,0,0,3, ldraw_lib__48__4_4ring11()],
+// 1 16 0 72 -69 3 0 0 0 -1 0 0 0 -3 48\4-4ring11.dat
+  [1,16,0,72,-69,3,0,0,0,-1,0,0,0,-3, ldraw_lib__48__4_4ring11()],
 // 1 16 0 72 0 0 0 -3 0 -1 0 3 0 0 48\3-16ring11.dat
   [1,16,0,72,0,0,0,-3,0,-1,0,3,0,0, ldraw_lib__48__3_16ring11()],
 // 1 16 0 72 0 0 0 -3 0 -1 0 -3 0 0 48\3-16ring11.dat

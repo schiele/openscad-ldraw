@@ -1,8 +1,8 @@
 use <../lib.scad>
 use <../p/2-4disc.scad>
 use <../p/2-4ndis.scad>
-use <../p/2-4rin20.scad>
 use <../p/2-4ring19.scad>
+use <../p/2-4ring20.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4ndis.scad>
 use <s/004315s01.scad>
@@ -10,7 +10,7 @@ function ldraw_lib__003497h() = [
 // 0 Sticker Minifig Torso with Red Shirt with Four Buttons and Patch Pockets
 // 0 Name: 003497h.dat
 // 0 Author: Chris Dee [cwdee]
-// 0 !LDRAW_ORG Part UPDATE 2020-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -20,7 +20,8 @@ function ldraw_lib__003497h() = [
 // 0 !KEYWORDS Set 1589
 // 
 // 0 !HISTORY 2020-06-28 [PTadmin] Official Update 2020-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\004315s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__004315s01()],
@@ -94,8 +95,8 @@ function ldraw_lib__003497h() = [
   [3,15,10,-0.25,-2,10.15,-0.25,-2,10.15,-0.25,1.128],
 // 1 15 7 -0.25 -2 0.15 0 0 0 1 0 0 0 -0.15 2-4ring19.dat
   [1,15,7,-0.25,-2,0.15,0,0,0,1,0,0,0,-0.15, ldraw_lib__2_4ring19()],
-// 1 15 7 -0.25 -2 0.15 0 0 0 1 0 0 0 -0.15 2-4rin20.dat
-  [1,15,7,-0.25,-2,0.15,0,0,0,1,0,0,0,-0.15, ldraw_lib__2_4rin20()],
+// 1 15 7 -0.25 -2 0.15 0 0 0 1 0 0 0 -0.15 2-4ring20.dat
+  [1,15,7,-0.25,-2,0.15,0,0,0,1,0,0,0,-0.15, ldraw_lib__2_4ring20()],
 // 1 4 7 -0.25 -2 2.85 0 0 0 1 0 0 0 -2.85 2-4disc.dat
   [1,4,7,-0.25,-2,2.85,0,0,0,1,0,0,0,-2.85, ldraw_lib__2_4disc()],
 // 1 4 7 -0.25 -2 3.15 0 0 0 1 0 0 0 -3.15 2-4ndis.dat
@@ -219,8 +220,8 @@ function ldraw_lib__003497h() = [
   [3,15,-10.15,-0.25,1.128,-10.15,-0.25,-2,-10,-0.25,-2],
 // 1 15 -7 -0.25 -2 0.15 0 0 0 1 0 0 0 -0.15 2-4ring19.dat
   [1,15,-7,-0.25,-2,0.15,0,0,0,1,0,0,0,-0.15, ldraw_lib__2_4ring19()],
-// 1 15 -7 -0.25 -2 0.15 0 0 0 1 0 0 0 -0.15 2-4rin20.dat
-  [1,15,-7,-0.25,-2,0.15,0,0,0,1,0,0,0,-0.15, ldraw_lib__2_4rin20()],
+// 1 15 -7 -0.25 -2 0.15 0 0 0 1 0 0 0 -0.15 2-4ring20.dat
+  [1,15,-7,-0.25,-2,0.15,0,0,0,1,0,0,0,-0.15, ldraw_lib__2_4ring20()],
 // 1 4 -7 -0.25 -2 -2.85 0 0 0 1 0 0 0 -2.85 2-4disc.dat
   [1,4,-7,-0.25,-2,-2.85,0,0,0,1,0,0,0,-2.85, ldraw_lib__2_4disc()],
 // 1 4 -7 -0.25 -2 -3.15 0 0 0 1 0 0 0 -3.15 2-4ndis.dat

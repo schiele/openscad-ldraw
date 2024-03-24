@@ -3,14 +3,14 @@ use <../p/4-4cylc.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4edge.scad>
-use <../p/4-4rin17.scad>
+use <../p/4-4ring17.scad>
 use <../p/4-4ring8.scad>
 use <../p/box4o8a.scad>
 function ldraw_lib__50862() = [
 // 0 Wheel  6 x 14 Spoked with Stub Axles
 // 0 Name: 50862.dat
 // 0 Author: Tim Gould [timgould]
-// 0 !LDRAW_ORG Part UPDATE 2011-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -19,7 +19,8 @@ function ldraw_lib__50862() = [
 // 
 // 0 !HISTORY 2009-02-11 [Philo] Reworked spokes
 // 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
@@ -55,10 +56,10 @@ function ldraw_lib__50862() = [
   [1,16,0,0,2.5,0,0,16,16,0,0,0,5,0, ldraw_lib__4_4cyli()],
 // 1 16 0 0 -2.5 0 0 17 17 0 0 0 5 0 4-4cyli.dat
   [1,16,0,0,-2.5,0,0,17,17,0,0,0,5,0, ldraw_lib__4_4cyli()],
-// 1 16 0 0 -2.5 0 0 1 1 0 0 0 -1 0 4-4rin17.dat
-  [1,16,0,0,-2.5,0,0,1,1,0,0,0,-1,0, ldraw_lib__4_4rin17()],
-// 1 16 0 0 2.5 0 0 -1 1 0 0 0 1 0 4-4rin17.dat
-  [1,16,0,0,2.5,0,0,-1,1,0,0,0,1,0, ldraw_lib__4_4rin17()],
+// 1 16 0 0 -2.5 0 0 1 1 0 0 0 -1 0 4-4ring17.dat
+  [1,16,0,0,-2.5,0,0,1,1,0,0,0,-1,0, ldraw_lib__4_4ring17()],
+// 1 16 0 0 2.5 0 0 -1 1 0 0 0 1 0 4-4ring17.dat
+  [1,16,0,0,2.5,0,0,-1,1,0,0,0,1,0, ldraw_lib__4_4ring17()],
 // 1 16 0 0 -2.5 0 0 17 17 0 0 0 5 0 4-4edge.dat
   [1,16,0,0,-2.5,0,0,17,17,0,0,0,5,0, ldraw_lib__4_4edge()],
 // 1 16 0 0 2.5 0 0 17 17 0 0 0 5 0 4-4edge.dat

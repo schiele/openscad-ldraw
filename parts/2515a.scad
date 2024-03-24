@@ -1,18 +1,18 @@
 use <../lib.scad>
 use <../p/4-4cylo.scad>
-use <../p/4-4rin10.scad>
-use <../p/4-4rin18.scad>
-use <../p/4-4rin19.scad>
-use <../p/4-4rin22.scad>
-use <../p/4-4rin23.scad>
 use <../p/4-4ring1.scad>
+use <../p/4-4ring10.scad>
+use <../p/4-4ring18.scad>
+use <../p/4-4ring19.scad>
+use <../p/4-4ring22.scad>
+use <../p/4-4ring23.scad>
 use <../p/4-4ring3.scad>
 use <../p/4-4ring4.scad>
 use <../p/4-4ring8.scad>
 use <../p/48/4-4aring.scad>
 use <../p/48/4-4cylo.scad>
-use <../p/48/4-4rin30.scad>
 use <../p/48/4-4ring1.scad>
+use <../p/48/4-4ring30.scad>
 use <../p/48/4-4ring4.scad>
 use <s/2515s01.scad>
 use <../p/stud10.scad>
@@ -20,7 +20,7 @@ function ldraw_lib__2515a() = [
 // 0 Wheel 32 x 56 Hard-Plastic without Inner Supports
 // 0 Name: 2515a.dat
 // 0 Author: John Boozer [jediknight219]
-// 0 !LDRAW_ORG Part UPDATE 2014-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -31,7 +31,8 @@ function ldraw_lib__2515a() = [
 // 
 // 0 !HISTORY 2014-01-05 [theJudeAbides] Complete rebuild
 // 0 !HISTORY 2014-06-21 [PTadmin] Official Update 2014-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Pin Hole
 // 
@@ -55,33 +56,33 @@ function ldraw_lib__2515a() = [
   [1,16,0,0,-18,0,0,8,8,0,0,0,-1,0, ldraw_lib__4_4ring1()],
 // 1 16 0 0 -18 0 0 2 2 0 0 0 -1 0 4-4ring8.dat
   [1,16,0,0,-18,0,0,2,2,0,0,0,-1,0, ldraw_lib__4_4ring8()],
-// 1 16 0 0 -18 0 0 1 1 0 0 0 -1 0 4-4rin18.dat
-  [1,16,0,0,-18,0,0,1,1,0,0,0,-1,0, ldraw_lib__4_4rin18()],
+// 1 16 0 0 -18 0 0 1 1 0 0 0 -1 0 4-4ring18.dat
+  [1,16,0,0,-18,0,0,1,1,0,0,0,-1,0, ldraw_lib__4_4ring18()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 0 0 0 19 19 0 0 0 -18 0 4-4cylo.dat
   [1,16,0,0,0,0,0,19,19,0,0,0,-18,0, ldraw_lib__4_4cylo()],
-// 1 16 0 0 0 0 0 1 1 0 0 0 -1 0 4-4rin19.dat
-  [1,16,0,0,0,0,0,1,1,0,0,0,-1,0, ldraw_lib__4_4rin19()],
-// 1 16 0 0 0 0 0 2 2 0 0 0 -1 0 4-4rin10.dat
-  [1,16,0,0,0,0,0,2,2,0,0,0,-1,0, ldraw_lib__4_4rin10()],
+// 1 16 0 0 0 0 0 1 1 0 0 0 -1 0 4-4ring19.dat
+  [1,16,0,0,0,0,0,1,1,0,0,0,-1,0, ldraw_lib__4_4ring19()],
+// 1 16 0 0 0 0 0 2 2 0 0 0 -1 0 4-4ring10.dat
+  [1,16,0,0,0,0,0,2,2,0,0,0,-1,0, ldraw_lib__4_4ring10()],
 // 1 16 0 0 0 0 0 22 22 0 0 0 -18 0 4-4cylo.dat
   [1,16,0,0,0,0,0,22,22,0,0,0,-18,0, ldraw_lib__4_4cylo()],
-// 1 16 0 0 -18 0 0 1 1 0 0 0 -1 0 4-4rin22.dat
-  [1,16,0,0,-18,0,0,1,1,0,0,0,-1,0, ldraw_lib__4_4rin22()],
+// 1 16 0 0 -18 0 0 1 1 0 0 0 -1 0 4-4ring22.dat
+  [1,16,0,0,-18,0,0,1,1,0,0,0,-1,0, ldraw_lib__4_4ring22()],
 // 1 16 0 0 -18 0 0 23 23 0 0 0 -14 0 4-4cylo.dat
   [1,16,0,0,-18,0,0,23,23,0,0,0,-14,0, ldraw_lib__4_4cylo()],
 // 
-// 1 16 0 0 -32 0 0 1 1 0 0 0 -1 0 4-4rin23.dat
-  [1,16,0,0,-32,0,0,1,1,0,0,0,-1,0, ldraw_lib__4_4rin23()],
+// 1 16 0 0 -32 0 0 1 1 0 0 0 -1 0 4-4ring23.dat
+  [1,16,0,0,-32,0,0,1,1,0,0,0,-1,0, ldraw_lib__4_4ring23()],
 // 1 16 0 0 -32 0 0 24 24 0 0 0 -1 0 48\4-4aring.dat
   [1,16,0,0,-32,0,0,24,24,0,0,0,-1,0, ldraw_lib__48__4_4aring()],
 // 1 16 0 0 -32 0 0 24 24 0 0 0 -1 0 48\4-4ring1.dat
   [1,16,0,0,-32,0,0,24,24,0,0,0,-1,0, ldraw_lib__48__4_4ring1()],
 // 1 16 0 0 -32 0 0 12 12 0 0 0 -1 0 48\4-4ring4.dat
   [1,16,0,0,-32,0,0,12,12,0,0,0,-1,0, ldraw_lib__48__4_4ring4()],
-// 1 16 0 0 -32 0 0 2 2 0 0 0 -1 0 48\4-4rin30.dat
-  [1,16,0,0,-32,0,0,2,2,0,0,0,-1,0, ldraw_lib__48__4_4rin30()],
+// 1 16 0 0 -32 0 0 2 2 0 0 0 -1 0 48\4-4ring30.dat
+  [1,16,0,0,-32,0,0,2,2,0,0,0,-1,0, ldraw_lib__48__4_4ring30()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 40 0 0 62 62 0 0 0 -72 0 48\4-4cylo.dat

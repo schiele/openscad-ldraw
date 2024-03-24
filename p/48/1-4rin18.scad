@@ -1,10 +1,10 @@
 use <../../lib.scad>
 function ldraw_lib__48__1_4rin18() = [
-// 0 Hi-Res Ring 18 x 0.25
+// 0 ~Hi-Res Ring 18 x 0.25 (Obsolete)
 // 0 Name: 48\1-4rin18.dat
-// 0 Author: Don Heyse [dheyse]
-// 0 !LDRAW_ORG 48_Primitive UPDATE 2022-03
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 Author: Willy Tschager [Holly-Wood]
+// 0 !LDRAW_ORG 48_Primitive UPDATE 2024-02
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
@@ -15,7 +15,8 @@ function ldraw_lib__48__1_4rin18() = [
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
 // 0 !HISTORY 2022-04-21 [MagFors] Recreated
 // 0 !HISTORY 2022-05-07 [PTadmin] Official Update 2022-03
-// 
+// 0 !HISTORY 2024-01-30 [Holly-Wood] Complete regeneration, original by dheyse
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 4 16 19 0 0 18.8366 0 2.4795 17.8452 0 2.349 18 0 0
   [4,16,19,0,0,18.8366,0,2.4795,17.8452,0,2.349,18,0,0],
@@ -41,8 +42,7 @@ function ldraw_lib__48__1_4rin18() = [
   [4,16,4.9172,0,18.3521,2.4795,0,18.8366,2.349,0,17.8452,4.6584,0,17.3862],
 // 4 16 2.4795 0 18.8366 0 0 19 0 0 18 2.349 0 17.8452
   [4,16,2.4795,0,18.8366,0,0,19,0,0,18,2.349,0,17.8452],
-// 0 // Build by Primitive Generator 2
-// 
+// 0 // Build by LDPartEditor (PrimGen 2.X)
 ];
 module ldraw_lib__48__1_4rin18(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
     makepoly(ldraw_lib__48__1_4rin18(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);

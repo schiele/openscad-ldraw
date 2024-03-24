@@ -3,10 +3,10 @@ use <../p/4-4con2.scad>
 use <../p/4-4con6.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4edge.scad>
-use <../p/4-4rin18.scad>
-use <../p/4-4rin19.scad>
-use <../p/4-4rin20.scad>
+use <../p/4-4ring18.scad>
+use <../p/4-4ring19.scad>
 use <../p/4-4ring2.scad>
+use <../p/4-4ring20.scad>
 use <../p/4-4ring3.scad>
 use <../p/4-4ring4.scad>
 use <../p/4-4ring5.scad>
@@ -19,7 +19,7 @@ function ldraw_lib__55982() = [
 // 0 Wheel Rim 14 x 18 with Axlehole
 // 0 Name: 55982.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2012-03
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CW
@@ -27,7 +27,8 @@ function ldraw_lib__55982() = [
   [0,"BFC","CW"],
 // 
 // 0 !HISTORY 2012-12-28 [PTadmin] Official Update 2012-03
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Nomenclature: width_(mm) x rim_diameter_(mm) [optional qualifier]
 // 
@@ -83,14 +84,14 @@ function ldraw_lib__55982() = [
   [1,16,0,0,15,19,0,0,0,0,-19,0,1,0, ldraw_lib__4_4edge()],
 // 1 16 0 0 17 19 0 0 0 0 -19 0 1 0 4-4edge.dat
   [1,16,0,0,17,19,0,0,0,0,-19,0,1,0, ldraw_lib__4_4edge()],
-// 1 16 0 0 -17 1 0 0 0 0 -1 0 1 0 4-4rin20.dat
-  [1,16,0,0,-17,1,0,0,0,0,-1,0,1,0, ldraw_lib__4_4rin20()],
-// 1 16 0 0 -17 1 0 0 0 0 -1 0 1 0 4-4rin19.dat
-  [1,16,0,0,-17,1,0,0,0,0,-1,0,1,0, ldraw_lib__4_4rin19()],
-// 1 16 0 0 17 1 0 0 0 0 1 0 -1 0 4-4rin20.dat
-  [1,16,0,0,17,1,0,0,0,0,1,0,-1,0, ldraw_lib__4_4rin20()],
-// 1 16 0 0 17 1 0 0 0 0 1 0 -1 0 4-4rin19.dat
-  [1,16,0,0,17,1,0,0,0,0,1,0,-1,0, ldraw_lib__4_4rin19()],
+// 1 16 0 0 -17 1 0 0 0 0 -1 0 1 0 4-4ring20.dat
+  [1,16,0,0,-17,1,0,0,0,0,-1,0,1,0, ldraw_lib__4_4ring20()],
+// 1 16 0 0 -17 1 0 0 0 0 -1 0 1 0 4-4ring19.dat
+  [1,16,0,0,-17,1,0,0,0,0,-1,0,1,0, ldraw_lib__4_4ring19()],
+// 1 16 0 0 17 1 0 0 0 0 1 0 -1 0 4-4ring20.dat
+  [1,16,0,0,17,1,0,0,0,0,1,0,-1,0, ldraw_lib__4_4ring20()],
+// 1 16 0 0 17 1 0 0 0 0 1 0 -1 0 4-4ring19.dat
+  [1,16,0,0,17,1,0,0,0,0,1,0,-1,0, ldraw_lib__4_4ring19()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 -17 19 0 0 0 0 -19 0 10 0 4-4cyli.dat
@@ -107,8 +108,8 @@ function ldraw_lib__55982() = [
   [1,16,0,0,15,5,0,0,0,0,5,0,-1,0, ldraw_lib__4_4ring2()],
 // 1 16 0 0 15 3 0 0 0 0 3 0 -1 0 4-4ring5.dat
   [1,16,0,0,15,3,0,0,0,0,3,0,-1,0, ldraw_lib__4_4ring5()],
-// 1 16 0 0 15 1 0 0 0 0 1 0 -1 0 4-4rin18.dat
-  [1,16,0,0,15,1,0,0,0,0,1,0,-1,0, ldraw_lib__4_4rin18()],
+// 1 16 0 0 15 1 0 0 0 0 1 0 -1 0 4-4ring18.dat
+  [1,16,0,0,15,1,0,0,0,0,1,0,-1,0, ldraw_lib__4_4ring18()],
 // 1 16 0 0 0 10 0 0 0 0 -10 0 1 0 4-4edge.dat
   [1,16,0,0,0,10,0,0,0,0,-10,0,1,0, ldraw_lib__4_4edge()],
 // 0 BFC INVERTNEXT

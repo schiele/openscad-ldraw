@@ -3,7 +3,7 @@ use <../../p/1-4chrd.scad>
 use <../../p/1-4ndis.scad>
 use <../../p/1-8chrd.scad>
 use <../../p/1-8ndis.scad>
-use <../../p/1-8rin10.scad>
+use <../../p/1-8ring10.scad>
 use <../../p/1-8tndis.scad>
 use <../../p/3-16chrd.scad>
 use <../../p/3-16ndis.scad>
@@ -14,7 +14,7 @@ function ldraw_lib__s__4142921as02() = [
 // 0 ~Sticker  3.8 x  5.5 with Lego Logo and White and Red SPYRUNNER on Black Background Left - Common Part
 // 0 Name: s\4142921as02.dat
 // 0 Author: Massimo Maso [Sirio]
-// 0 !LDRAW_ORG Subpart UPDATE 2023-04
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -22,7 +22,8 @@ function ldraw_lib__s__4142921as02() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2023-08-25 [OrionP] Official Update 2023-04
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Subparts
 // 1 16 -22 -.25 35.4 1 0 0 0 1 0 0 0 1 s\4142921as03.dat
@@ -92,8 +93,8 @@ function ldraw_lib__s__4142921as02() = [
   [1,0,-4,-.25,-31.4,-1,0,0,0,1,0,0,0,1, ldraw_lib__1_4ndis()],
 // 1 0 -4 -.25 -31.4 0 0 1 0 1 0 1 0 0 1-8tndis.dat
   [1,0,-4,-.25,-31.4,0,0,1,0,1,0,1,0,0, ldraw_lib__1_8tndis()],
-// 1 0 -4 -.25 -31.4 .1 0 0 0 1 0 0 0 .1 1-8rin10.dat
-  [1,0,-4,-.25,-31.4,.1,0,0,0,1,0,0,0,.1, ldraw_lib__1_8rin10()],
+// 1 0 -4 -.25 -31.4 .1 0 0 0 1 0 0 0 .1 1-8ring10.dat
+  [1,0,-4,-.25,-31.4,.1,0,0,0,1,0,0,0,.1, ldraw_lib__1_8ring10()],
 // 1 0 -4 -.25 -31.4 1 0 0 0 1 0 0 0 -1 1-4ndis.dat
   [1,0,-4,-.25,-31.4,1,0,0,0,1,0,0,0,-1, ldraw_lib__1_4ndis()],
 // 1 15 -4 -.25 -31.4 -1 0 0 0 1 0 0 0 1 1-8chrd.dat

@@ -8,15 +8,15 @@ use <../../p/48/4-4con12.scad>
 use <../../p/48/4-4con2.scad>
 use <../../p/48/4-4cyli.scad>
 use <../../p/48/4-4edge.scad>
-use <../../p/48/4-4rin13.scad>
-use <../../p/48/4-4rin14.scad>
+use <../../p/48/4-4ring13.scad>
+use <../../p/48/4-4ring14.scad>
 use <../../p/stud2a.scad>
 use <../../p/stud4.scad>
 function ldraw_lib__s__43898s01() = [
 // 0 ~Dish  3 x  3 without Top Face
 // 0 Name: s\43898s01.dat
 // 0 Author: John Riley [jriley]
-// 0 !LDRAW_ORG Subpart UPDATE 2019-02
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -29,7 +29,8 @@ function ldraw_lib__s__43898s01() = [
 // 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01
 // 0 !HISTORY 2019-05-30 [GeraldLasser] Changed to 48-Segment Primitives
 // 0 !HISTORY 2019-09-09 [PTadmin] Official Update 2019-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 stud2a.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2a()],
@@ -43,10 +44,10 @@ function ldraw_lib__s__43898s01() = [
   [1,16,0,12,0,30,0,0,0,1,0,0,0,30, ldraw_lib__48__4_4edge()],
 // 1 16 0 16 0 30 0 0 0 1 0 0 0 30 48\4-4edge.dat
   [1,16,0,16,0,30,0,0,0,1,0,0,0,30, ldraw_lib__48__4_4edge()],
-// 1 16 0 16 0 2 0 0 0 -1 0 0 0 2 48\4-4rin13.dat
-  [1,16,0,16,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__48__4_4rin13()],
-// 1 16 0 16 0 2 0 0 0 -1 0 0 0 2 48\4-4rin14.dat
-  [1,16,0,16,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__48__4_4rin14()],
+// 1 16 0 16 0 2 0 0 0 -1 0 0 0 2 48\4-4ring13.dat
+  [1,16,0,16,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__48__4_4ring13()],
+// 1 16 0 16 0 2 0 0 0 -1 0 0 0 2 48\4-4ring14.dat
+  [1,16,0,16,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__48__4_4ring14()],
 // 1 16 0 16 0 26 0 0 0 1 0 0 0 26 48\4-4edge.dat
   [1,16,0,16,0,26,0,0,0,1,0,0,0,26, ldraw_lib__48__4_4edge()],
 // 1 16 0 12 0 26 0 0 0 1 0 0 0 26 48\4-4edge.dat

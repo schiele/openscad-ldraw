@@ -1,16 +1,16 @@
 use <../lib.scad>
 use <../p/4-4con25.scad>
 use <../p/4-4cylo.scad>
-use <../p/4-4rin13.scad>
-use <../p/4-4rin14.scad>
-use <../p/4-4rin15.scad>
+use <../p/4-4ring13.scad>
+use <../p/4-4ring14.scad>
+use <../p/4-4ring15.scad>
 use <../p/4-4ring4.scad>
 use <s/56890s01.scad>
 function ldraw_lib__56890() = [
 // 0 Tyre 12/ 61 x 11 Balloon
 // 0 Name: 56890.dat
 // 0 Author: Magnus Forsberg [MagFors]
-// 0 !LDRAW_ORG Part UPDATE 2022-04
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -26,7 +26,8 @@ function ldraw_lib__56890() = [
 // 0 !HISTORY 2020-03-07 [MagFors] Corrected description
 // 0 !HISTORY 2020-03-07 [MagFors] Replaced bad LDD shape with good from Arezey
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Nomenclature: width_(mm)/profile_as_%age_of_width x rim_diameter_(mm) [optional qualifier]
 // 
@@ -106,20 +107,20 @@ function ldraw_lib__56890() = [
   [1,16,0,0,0,-0.707107,-0.707107,0,-0.707107,0.707107,0,0,0,-1, ldraw_lib__s__56890s01()],
 // 1 16 0 0 0 -0.92388 -0.382683 0 -0.382683 0.92388 0 0 0 -1 s\56890s01.dat
   [1,16,0,0,0,-0.92388,-0.382683,0,-0.382683,0.92388,0,0,0,-1, ldraw_lib__s__56890s01()],
-// 1 16 0 0 -14 -1 0 0 0 0 -1 0 1 0 4-4rin13.dat
-  [1,16,0,0,-14,-1,0,0,0,0,-1,0,1,0, ldraw_lib__4_4rin13()],
-// 1 16 0 0 -14 -1 0 0 0 0 -1 0 1 0 4-4rin14.dat
-  [1,16,0,0,-14,-1,0,0,0,0,-1,0,1,0, ldraw_lib__4_4rin14()],
-// 1 16 0 0 -14 -1 0 0 0 0 -1 0 1 0 4-4rin15.dat
-  [1,16,0,0,-14,-1,0,0,0,0,-1,0,1,0, ldraw_lib__4_4rin15()],
+// 1 16 0 0 -14 -1 0 0 0 0 -1 0 1 0 4-4ring13.dat
+  [1,16,0,0,-14,-1,0,0,0,0,-1,0,1,0, ldraw_lib__4_4ring13()],
+// 1 16 0 0 -14 -1 0 0 0 0 -1 0 1 0 4-4ring14.dat
+  [1,16,0,0,-14,-1,0,0,0,0,-1,0,1,0, ldraw_lib__4_4ring14()],
+// 1 16 0 0 -14 -1 0 0 0 0 -1 0 1 0 4-4ring15.dat
+  [1,16,0,0,-14,-1,0,0,0,0,-1,0,1,0, ldraw_lib__4_4ring15()],
 // 1 16 0 0 -14 -4 0 0 0 0 -4 0 1 0 4-4ring4.dat
   [1,16,0,0,-14,-4,0,0,0,0,-4,0,1,0, ldraw_lib__4_4ring4()],
-// 1 16 0 0 14 -1 0 0 0 0 1 0 -1 0 4-4rin13.dat
-  [1,16,0,0,14,-1,0,0,0,0,1,0,-1,0, ldraw_lib__4_4rin13()],
-// 1 16 0 0 14 -1 0 0 0 0 1 0 -1 0 4-4rin14.dat
-  [1,16,0,0,14,-1,0,0,0,0,1,0,-1,0, ldraw_lib__4_4rin14()],
-// 1 16 0 0 14 -1 0 0 0 0 1 0 -1 0 4-4rin15.dat
-  [1,16,0,0,14,-1,0,0,0,0,1,0,-1,0, ldraw_lib__4_4rin15()],
+// 1 16 0 0 14 -1 0 0 0 0 1 0 -1 0 4-4ring13.dat
+  [1,16,0,0,14,-1,0,0,0,0,1,0,-1,0, ldraw_lib__4_4ring13()],
+// 1 16 0 0 14 -1 0 0 0 0 1 0 -1 0 4-4ring14.dat
+  [1,16,0,0,14,-1,0,0,0,0,1,0,-1,0, ldraw_lib__4_4ring14()],
+// 1 16 0 0 14 -1 0 0 0 0 1 0 -1 0 4-4ring15.dat
+  [1,16,0,0,14,-1,0,0,0,0,1,0,-1,0, ldraw_lib__4_4ring15()],
 // 1 16 0 0 14 -4 0 0 0 0 4 0 -1 0 4-4ring4.dat
   [1,16,0,0,14,-4,0,0,0,0,4,0,-1,0, ldraw_lib__4_4ring4()],
 // 1 16 0 0 14 -5 0 0 0 0 5 0 -1 0 4-4ring4.dat

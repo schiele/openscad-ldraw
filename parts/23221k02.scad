@@ -4,13 +4,13 @@ use <../p/1-8edge.scad>
 use <../p/1-8ring12.scad>
 use <../p/2-4cyli.scad>
 use <../p/2-4edge.scad>
-use <../p/2-4rin12.scad>
+use <../p/2-4ring12.scad>
 use <s/23221s01.scad>
 function ldraw_lib__23221k02() = [
 // 0 ~Hose  3 x 32 x  2.333 - Segment End
 // 0 Name: 23221k02.dat
 // 0 Author: Mikkel Bech Jensen [gaia]
-// 0 !LDRAW_ORG Part Flexible_Section UPDATE 2018-02
+// 0 !LDRAW_ORG Part Flexible_Section UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -18,15 +18,16 @@ function ldraw_lib__23221k02() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2018-12-08 [PTadmin] Official Update 2018-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\23221s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__23221s01()],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 -1 s\23221s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__23221s01()],
 // 0 // end ring
-// 1 16 0 0 3 2 0 0 0 0 -2 0 -1 0 2-4rin12.dat
-  [1,16,0,0,3,2,0,0,0,0,-2,0,-1,0, ldraw_lib__2_4rin12()],
+// 1 16 0 0 3 2 0 0 0 0 -2 0 -1 0 2-4ring12.dat
+  [1,16,0,0,3,2,0,0,0,0,-2,0,-1,0, ldraw_lib__2_4ring12()],
 // 1 16 0 0 3 2 0 0 0 0 2 0 -1 0 1-8ring12.dat
   [1,16,0,0,3,2,0,0,0,0,2,0,-1,0, ldraw_lib__1_8ring12()],
 // 1 16 0 0 3 -2 0 0 0 0 2 0 -1 0 1-8ring12.dat

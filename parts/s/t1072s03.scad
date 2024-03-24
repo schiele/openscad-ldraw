@@ -3,7 +3,7 @@ use <../../p/3-16chrd.scad>
 use <../../p/3-16cylo.scad>
 use <../../p/3-16ndis.scad>
 use <../../p/48/1-12edge.scad>
-use <../../p/48/1-12rin2.scad>
+use <../../p/48/1-12ring2.scad>
 use <../../p/48/1-24cyli.scad>
 use <../../p/48/1-24edge.scad>
 use <../../p/48/1-6chrd.scad>
@@ -24,7 +24,7 @@ function ldraw_lib__s__t1072s03() = [
 // 0 ~| BBB Train Wheel Flanged Driver 30.4 mm - Spoke/Peghole Unit - Half
 // 0 Name: s\t1072s03.dat
 // 0 Author: Ulrich Röder [UR]
-// 0 !LDRAW_ORG Subpart UPDATE 2022-02
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -32,7 +32,8 @@ function ldraw_lib__s__t1072s03() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2022-03-06 [PTadmin] Official Update 2022-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Spokes With Cutout
 // 
@@ -583,8 +584,8 @@ function ldraw_lib__s__t1072s03() = [
   [1,16,0,-20,-4,0,0,8,-8,0,0,0,2,0, ldraw_lib__48__2_4cyli()],
 // 1 16 0 -20 -2 0 0 9 -9 0 0 0 -15 0 48\11-24cyli.dat
   [1,16,0,-20,-2,0,0,9,-9,0,0,0,-15,0, ldraw_lib__48__11_24cyli()],
-// 1 16 0 -20 -17 0 0 3 -3 0 0 0 1 0 48\1-12rin2.dat
-  [1,16,0,-20,-17,0,0,3,-3,0,0,0,1,0, ldraw_lib__48__1_12rin2()],
+// 1 16 0 -20 -17 0 0 3 -3 0 0 0 1 0 48\1-12ring2.dat
+  [1,16,0,-20,-17,0,0,3,-3,0,0,0,1,0, ldraw_lib__48__1_12ring2()],
 // 1 16 0 -20 -17 0 0 6 -6 0 0 0 1 0 48\1-8edge.dat
   [1,16,0,-20,-17,0,0,6,-6,0,0,0,1,0, ldraw_lib__48__1_8edge()],
 // 1 16 0 -20 -17 0 0 9 -9 0 0 0 1 0 48\1-12edge.dat

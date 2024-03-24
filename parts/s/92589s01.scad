@@ -5,8 +5,8 @@ use <../../p/2-4ndis.scad>
 use <../../p/3-8cyli.scad>
 use <../../p/3-8edge.scad>
 use <../../p/4-4cyli.scad>
-use <../../p/4-4rin40.scad>
 use <../../p/4-4ring2.scad>
+use <../../p/4-4ring40.scad>
 use <../../p/4-4ring5.scad>
 use <../../p/box4o8a.scad>
 use <../../p/bump5000.scad>
@@ -15,7 +15,7 @@ function ldraw_lib__s__92589s01() = [
 // 0 ~Door  1 x  4 x  6 Lattice Corner
 // 0 Name: s\92589s01.dat
 // 0 Author: Magnus Forsberg [MagFors]
-// 0 !LDRAW_ORG Subpart UPDATE 2014-01
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CW
@@ -23,7 +23,8 @@ function ldraw_lib__s__92589s01() = [
   [0,"BFC","CW"],
 // 
 // 0 !HISTORY 2014-06-21 [PTadmin] Official Update 2014-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 13 0 0 0 -3.69 0 -9 0 -3.69 0 0 2-4cylc.dat
   [1,16,0,13,0,0,0,-3.69,0,-9,0,-3.69,0,0, ldraw_lib__2_4cylc()],
@@ -32,8 +33,8 @@ function ldraw_lib__s__92589s01() = [
   [1,16,0,4,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__4_4ring2()],
 // 1 16 0 4 0 0 0 -0.6 0 1 0 0.6 0 0 4-4ring5.dat
   [1,16,0,4,0,0,0,-0.6,0,1,0,0.6,0,0, ldraw_lib__4_4ring5()],
-// 1 16 0 4 0 0 0 -0.09 0 1 0 0.09 0 0 4-4rin40.dat
-  [1,16,0,4,0,0,0,-0.09,0,1,0,0.09,0,0, ldraw_lib__4_4rin40()],
+// 1 16 0 4 0 0 0 -0.09 0 1 0 0.09 0 0 4-4ring40.dat
+  [1,16,0,4,0,0,0,-0.09,0,1,0,0.09,0,0, ldraw_lib__4_4ring40()],
 // 1 16 0 4 0 2 0 0 0 2 0 0 0 -2 bump5000.dat
   [1,16,0,4,0,2,0,0,0,2,0,0,0,-2, ldraw_lib__bump5000()],
 // 

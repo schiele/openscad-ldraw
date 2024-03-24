@@ -19,8 +19,8 @@ use <../../p/48/1-6cyli.scad>
 use <../../p/48/1-6edge.scad>
 use <../../p/48/4-4cylo.scad>
 use <../../p/48/4-4edge.scad>
-use <../../p/48/4-4rin28.scad>
 use <../../p/48/4-4ring1.scad>
+use <../../p/48/4-4ring28.scad>
 use <../../p/48/5-8cyli.scad>
 use <../../p/48/5-8edge.scad>
 use <../../p/box3u5p.scad>
@@ -34,7 +34,7 @@ function ldraw_lib__s__99550s02() = [
 // 0 ~Electric Mindstorms EV3 Large Motor Casing Structure
 // 0 Name: s\99550s02.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Subpart UPDATE 2013-02
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -45,7 +45,8 @@ function ldraw_lib__s__99550s02() = [
 // 0 !HISTORY 2012-08-01 [Philo] File preparation for LDraw Parts Tracker
 // 0 !HISTORY 2013-08-01 [MMR1988] Fixed one edge
 // 0 !HISTORY 2013-12-23 [PTadmin] Official Update 2013-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 20 0 -160 -1 0 0 0 1 0 0 0 -1 s\99550s01.dat
   [1,16,20,0,-160,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__99550s01()],
@@ -393,8 +394,8 @@ function ldraw_lib__s__99550s02() = [
   [1,16,7,0,0,0,1,0,14,0,0,0,0,14, ldraw_lib__48__4_4ring1()],
 // 1 16 7 0 0 0 1 0 -4 0 0 0 0 -4 48\1-4ring7.dat
   [1,16,7,0,0,0,1,0,-4,0,0,0,0,-4, ldraw_lib__48__1_4ring7()],
-// 1 16 15 0 0 0 -1 0 1 0 0 0 0 1 48\4-4rin28.dat
-  [1,16,15,0,0,0,-1,0,1,0,0,0,0,1, ldraw_lib__48__4_4rin28()],
+// 1 16 15 0 0 0 -1 0 1 0 0 0 0 1 48\4-4ring28.dat
+  [1,16,15,0,0,0,-1,0,1,0,0,0,0,1, ldraw_lib__48__4_4ring28()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 10 0 0 0 5 0 28 0 0 0 0 28 48\4-4cylo.dat

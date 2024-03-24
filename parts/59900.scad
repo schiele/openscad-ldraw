@@ -5,7 +5,7 @@ use <../p/4-4con7.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4cylo.scad>
 use <../p/4-4edge.scad>
-use <../p/4-4rin12.scad>
+use <../p/4-4ring12.scad>
 use <../p/4-4ring2.scad>
 use <../p/4-4ring3.scad>
 use <../p/4-4ring4.scad>
@@ -19,19 +19,20 @@ function ldraw_lib__59900() = [
 // 0 Cone  1 x  1 with Stop
 // 0 Name: 59900.dat
 // 0 Author: Michael Heidemann [mikeheide]
-// 0 !LDRAW_ORG Part UPDATE 2014-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS pylon, Round
+// 0 !KEYWORDS Round, pylon
 // 
 // 0 !HISTORY 2011-07-25 [PTadmin] Official Update 2011-01
 // 0 !HISTORY 2014-07-10 [C3POwen] Fixed depth of axle hole
 // 0 !HISTORY 2014-12-23 [PTadmin] Official Update 2014-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 24 0 2 0 0 0 -2.5 0 0 0 2 4-4ring3.dat
   [1,16,0,24,0,2,0,0,0,-2.5,0,0,0,2, ldraw_lib__4_4ring3()],
@@ -73,8 +74,8 @@ function ldraw_lib__59900() = [
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2a()],
 // 1 16 0 0 0 6 0 0 0 1 0 0 0 6 4-4edge.dat
   [1,16,0,0,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4edge()],
-// 1 16 0 0 0 0.5 0 0 0 1 0 0 0 0.5 4-4rin12.dat
-  [1,16,0,0,0,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__4_4rin12()],
+// 1 16 0 0 0 0.5 0 0 0 1 0 0 0 0.5 4-4ring12.dat
+  [1,16,0,0,0,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__4_4ring12()],
 // 1 16 0 0 0 6.5 0 0 0 1 0 0 0 6.5 4-4edge.dat
   [1,16,0,0,0,6.5,0,0,0,1,0,0,0,6.5, ldraw_lib__4_4edge()],
 // 1 16 0 19 0 -2 0 0 0 -1 0 0 0 2 4-4ring4.dat

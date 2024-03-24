@@ -1,13 +1,13 @@
 use <../lib.scad>
-use <../p/4-4rin23.scad>
-use <../p/4-4rin24.scad>
-use <../p/4-4rin45.scad>
+use <../p/4-4ring23.scad>
+use <../p/4-4ring24.scad>
+use <../p/4-4ring45.scad>
 use <s/3350s01.scad>
 function ldraw_lib__3350p07() = [
 // 0 Roadsign Round with End of Speed Limit "40" Pattern
 // 0 Name: 3350p07.dat
 // 0 Author: J.C. Tchang [tchang]
-// 0 !LDRAW_ORG Part UPDATE 2012-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -15,17 +15,18 @@ function ldraw_lib__3350p07() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3350s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3350s01()],
 // 0 //
-// 1 8 0 -88 -2 0.4 0 0 0 0 -0.4 0 1 0 4-4rin45.dat
-  [1,8,0,-88,-2,0.4,0,0,0,0,-0.4,0,1,0, ldraw_lib__4_4rin45()],
-// 1 16 0 -88 -2 0.8 0 0 0 0 -0.8 0 1 0 4-4rin23.dat
-  [1,16,0,-88,-2,0.8,0,0,0,0,-0.8,0,1,0, ldraw_lib__4_4rin23()],
-// 1 16 0 -88 -2 0.8 0 0 0 0 -0.8 0 1 0 4-4rin24.dat
-  [1,16,0,-88,-2,0.8,0,0,0,0,-0.8,0,1,0, ldraw_lib__4_4rin24()],
+// 1 8 0 -88 -2 0.4 0 0 0 0 -0.4 0 1 0 4-4ring45.dat
+  [1,8,0,-88,-2,0.4,0,0,0,0,-0.4,0,1,0, ldraw_lib__4_4ring45()],
+// 1 16 0 -88 -2 0.8 0 0 0 0 -0.8 0 1 0 4-4ring23.dat
+  [1,16,0,-88,-2,0.8,0,0,0,0,-0.8,0,1,0, ldraw_lib__4_4ring23()],
+// 1 16 0 -88 -2 0.8 0 0 0 0 -0.8 0 1 0 4-4ring24.dat
+  [1,16,0,-88,-2,0.8,0,0,0,0,-0.8,0,1,0, ldraw_lib__4_4ring24()],
 // 0 //
 // 4 8 -15.22 -85.32 -2 -12.22 -85.32 -2 -6.46 -92.16 -2 -6.46 -96.3 -2
   [4,8,-15.22,-85.32,-2,-12.22,-85.32,-2,-6.46,-92.16,-2,-6.46,-96.3,-2],

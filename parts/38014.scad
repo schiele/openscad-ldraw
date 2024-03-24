@@ -5,8 +5,8 @@ use <../p/4-4cylc.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4edge.scad>
-use <../p/4-4rin44.scad>
 use <../p/4-4ring4.scad>
+use <../p/4-4ring44.scad>
 use <../p/7-8cylo.scad>
 use <../p/rect2p.scad>
 use <../p/rect3.scad>
@@ -16,7 +16,7 @@ function ldraw_lib__38014() = [
 // 0 Minifig Cup with Bar Handle
 // 0 Name: 38014.dat
 // 0 Author: Magnus Forsberg [MagFors]
-// 0 !LDRAW_ORG Part UPDATE 2019-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -27,7 +27,8 @@ function ldraw_lib__38014() = [
 // 0 !KEYWORDS Coffee, tea
 // 
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 -5 0 1 0 0 0 -1.25 0 0 0 1 stud4.dat
   [1,16,0,-5,0,1,0,0,0,-1.25,0,0,0,1, ldraw_lib__stud4()],
@@ -47,8 +48,8 @@ function ldraw_lib__38014() = [
   [1,16,0,-10.5,0,11,0,0,0,-3.5,0,0,0,11, ldraw_lib__4_4cyli()],
 // 1 16 0 -14 0 11 0 0 0 1 0 0 0 11 4-4edge.dat
   [1,16,0,-14,0,11,0,0,0,1,0,0,0,11, ldraw_lib__4_4edge()],
-// 1 16 0 -14 0 .25 0 0 0 -1 0 0 0 .25 4-4rin44.dat
-  [1,16,0,-14,0,.25,0,0,0,-1,0,0,0,.25, ldraw_lib__4_4rin44()],
+// 1 16 0 -14 0 .25 0 0 0 -1 0 0 0 .25 4-4ring44.dat
+  [1,16,0,-14,0,.25,0,0,0,-1,0,0,0,.25, ldraw_lib__4_4ring44()],
 // 
 // 1 16 0 -16 16 2.828427 0 2.828427 0 10.5821 0 -2.828427 0 2.828427 3-4cylo.dat
   [1,16,0,-16,16,2.828427,0,2.828427,0,10.5821,0,-2.828427,0,2.828427, ldraw_lib__3_4cylo()],

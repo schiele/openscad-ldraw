@@ -6,9 +6,9 @@ use <../p/48/4-4con12.scad>
 use <../p/48/4-4cyli.scad>
 use <../p/48/4-4edge.scad>
 use <../p/48/4-4ndis.scad>
-use <../p/48/4-4rin12.scad>
-use <../p/48/4-4rin14.scad>
 use <../p/48/4-4ring1.scad>
+use <../p/48/4-4ring12.scad>
+use <../p/48/4-4ring14.scad>
 use <../p/48/4-4ring3.scad>
 use <../p/48/4-4ring4.scad>
 use <../p/48/4-4ring5.scad>
@@ -19,7 +19,7 @@ function ldraw_lib__4141() = [
 // 0 ~Technic Differential Casing
 // 0 Name: 4141.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2011-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -28,7 +28,8 @@ function ldraw_lib__4141() = [
 // 
 // 0 !HISTORY 2007-10-26 [Philo] Split from 73071
 // 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 -26 10 0 0 0 0 10 0 1 0 48\4-4edge.dat
   [1,16,0,0,-26,10,0,0,0,0,10,0,1,0, ldraw_lib__48__4_4edge()],
@@ -148,8 +149,8 @@ function ldraw_lib__4141() = [
   [1,16,0,0,26,2,0,0,0,0,2,0,-1,0, ldraw_lib__48__4_4ring5()],
 // 1 16 0 0 26 2 0 0 0 0 2 0 -1 0 48\4-4ring6.dat
   [1,16,0,0,26,2,0,0,0,0,2,0,-1,0, ldraw_lib__48__4_4ring6()],
-// 1 16 0 0 25 1 0 0 0 0 1 0 -1 0 48\4-4rin14.dat
-  [1,16,0,0,25,1,0,0,0,0,1,0,-1,0, ldraw_lib__48__4_4rin14()],
+// 1 16 0 0 25 1 0 0 0 0 1 0 -1 0 48\4-4ring14.dat
+  [1,16,0,0,25,1,0,0,0,0,1,0,-1,0, ldraw_lib__48__4_4ring14()],
 // 1 16 0 0 25 5 0 0 0 0 5 0 -1 0 48\4-4ring3.dat
   [1,16,0,0,25,5,0,0,0,0,5,0,-1,0, ldraw_lib__48__4_4ring3()],
 // 1 16 0 0 40 2 0 0 0 0 2 0 -1 0 48\4-4ring4.dat
@@ -184,8 +185,8 @@ function ldraw_lib__4141() = [
   [1,16,0,0,26,20,0,0,0,0,20,0,-1,0, ldraw_lib__48__4_4cyli()],
 // 1 16 0 0 25 20 0 0 0 0 20 0 1 0 48\4-4edge.dat
   [1,16,0,0,25,20,0,0,0,0,20,0,1,0, ldraw_lib__48__4_4edge()],
-// 1 16 0 0 20 2 0 0 0 0 2 0 1 0 48\4-4rin12.dat
-  [1,16,0,0,20,2,0,0,0,0,2,0,1,0, ldraw_lib__48__4_4rin12()],
+// 1 16 0 0 20 2 0 0 0 0 2 0 1 0 48\4-4ring12.dat
+  [1,16,0,0,20,2,0,0,0,0,2,0,1,0, ldraw_lib__48__4_4ring12()],
 // 1 16 0 0 26 24 0 0 0 0 24 0 -1 0 48\4-4cyli.dat
   [1,16,0,0,26,24,0,0,0,0,24,0,-1,0, ldraw_lib__48__4_4cyli()],
 // 1 16 0 0 26 24 0 0 0 0 24 0 1 0 48\4-4edge.dat

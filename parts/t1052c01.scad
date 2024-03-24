@@ -1,6 +1,6 @@
 use <../lib.scad>
-use <../p/1-8rin10.scad>
-use <../p/3-4rin10.scad>
+use <../p/1-8ring10.scad>
+use <../p/3-4ring10.scad>
 use <../p/4-4cylc.scad>
 use <../p/4-4cylo.scad>
 use <../p/4-4disc.scad>
@@ -20,7 +20,7 @@ function ldraw_lib__t1052c01() = [
 // 0 | Circuit Cubes LED
 // 0 Name: t1052c01.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Shortcut UPDATE 2022-05
+// 0 !LDRAW_ORG Shortcut UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -30,7 +30,8 @@ function ldraw_lib__t1052c01() = [
 // 0 !CATEGORY Electric
 // 
 // 0 !HISTORY 2022-09-15 [PTadmin] Official Update 2022-05
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Cover
 // 
@@ -81,10 +82,10 @@ function ldraw_lib__t1052c01() = [
 // 0 // LED
 // 1 47 0 29.5 0 -10.16267 0 4.20952 0 -2 0 -4.20952 0 -10.16267 7-8cylo.dat
   [1,47,0,29.5,0,-10.16267,0,4.20952,0,-2,0,-4.20952,0,-10.16267, ldraw_lib__7_8cylo()],
-// 1 47 0 27.5 0 -0.38268 0 0.92388 0 1 0 -0.92388 0 -0.38268 3-4rin10.dat
-  [1,47,0,27.5,0,-0.38268,0,0.92388,0,1,0,-0.92388,0,-0.38268, ldraw_lib__3_4rin10()],
-// 1 47 0 27.5 0 -0.38268 0 -0.92388 0 1 0 -0.92388 0 0.38268 1-8rin10.dat
-  [1,47,0,27.5,0,-0.38268,0,-0.92388,0,1,0,-0.92388,0,0.38268, ldraw_lib__1_8rin10()],
+// 1 47 0 27.5 0 -0.38268 0 0.92388 0 1 0 -0.92388 0 -0.38268 3-4ring10.dat
+  [1,47,0,27.5,0,-0.38268,0,0.92388,0,1,0,-0.92388,0,-0.38268, ldraw_lib__3_4ring10()],
+// 1 47 0 27.5 0 -0.38268 0 -0.92388 0 1 0 -0.92388 0 0.38268 1-8ring10.dat
+  [1,47,0,27.5,0,-0.38268,0,-0.92388,0,1,0,-0.92388,0,0.38268, ldraw_lib__1_8ring10()],
 // 1 47 0 27.5 0 10 0 0 0 -10 0 0 0 10 4-4cylo.dat
   [1,47,0,27.5,0,10,0,0,0,-10,0,0,0,10, ldraw_lib__4_4cylo()],
 // 1 47 0 17.5 0 10 0 0 0 5 0 0 0 10 bump5000.dat

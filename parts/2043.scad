@@ -13,7 +13,7 @@ use <../p/3-16ndis.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4edge.scad>
-use <../p/4-4rin10.scad>
+use <../p/4-4ring10.scad>
 use <../p/4-4ring4.scad>
 use <../p/4-8sphe.scad>
 use <../p/box3u2p.scad>
@@ -26,7 +26,7 @@ function ldraw_lib__2043() = [
 // 0 Container Cupboard  2 x  6 x  7 Door
 // 0 Name: 2043.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2019-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -37,7 +37,8 @@ function ldraw_lib__2043() = [
 // 
 // 0 !HISTORY 2018-12-30 [cwdee] Model back surface, update knob
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Hinge
 // 1 16 0 -25 0 3.5 0 0 0 4 0 0 0 3.5 2-4cylo.dat
@@ -113,8 +114,8 @@ function ldraw_lib__2043() = [
 // 
 // 1 16 45 0 -9.5 0 0 1 1 0 0 0 1 0 4-4ring4.dat
   [1,16,45,0,-9.5,0,0,1,1,0,0,0,1,0, ldraw_lib__4_4ring4()],
-// 1 16 45 0 -9.5 0 0 0.5 0.5 0 0 0 1 0 4-4rin10.dat
-  [1,16,45,0,-9.5,0,0,0.5,0.5,0,0,0,1,0, ldraw_lib__4_4rin10()],
+// 1 16 45 0 -9.5 0 0 0.5 0.5 0 0 0 1 0 4-4ring10.dat
+  [1,16,45,0,-9.5,0,0,0.5,0.5,0,0,0,1,0, ldraw_lib__4_4ring10()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 45 0 -9.5 0 0 4 4 0 0 0 1 0 4-8sphe.dat

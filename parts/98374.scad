@@ -4,8 +4,8 @@ use <../p/2-8sphe.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4edge.scad>
-use <../p/4-4rin11.scad>
-use <../p/4-4rin12.scad>
+use <../p/4-4ring11.scad>
+use <../p/4-4ring12.scad>
 use <../p/stud4.scad>
 use <../p/t04o3077.scad>
 use <../p/t04o3750.scad>
@@ -14,7 +14,7 @@ function ldraw_lib__98374() = [
 // 0 Minifig Pot Small with Handle Holders
 // 0 Name: 98374.dat
 // 0 Author: Stan Isachenko [angmarec]
-// 0 !LDRAW_ORG Part UPDATE 2014-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -28,7 +28,8 @@ function ldraw_lib__98374() = [
 // 0 !HISTORY 2014-06-21 [PTadmin] Official Update 2014-01
 // 0 !HISTORY 2014-06-22 [cwdee] Add missing CATEGORY
 // 0 !HISTORY 2014-12-23 [PTadmin] Official Update 2014-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 1 0 0 0 -1 0 0 0 1 stud4.dat
   [1,16,0,0,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4()],
@@ -38,10 +39,10 @@ function ldraw_lib__98374() = [
   [1,16,0,-26.5,0,13,0,0,0,-1,0,0,0,13, ldraw_lib__4_4edge()],
 // 1 16 0 -26.5 0 11 0 0 0 -1 0 0 0 11 4-4edge.dat
   [1,16,0,-26.5,0,11,0,0,0,-1,0,0,0,11, ldraw_lib__4_4edge()],
-// 1 16 0 -26.5 0 1 0 0 0 1 0 0 0 1 4-4rin11.dat
-  [1,16,0,-26.5,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4rin11()],
-// 1 16 0 -26.5 0 1 0 0 0 1 0 0 0 1 4-4rin12.dat
-  [1,16,0,-26.5,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4rin12()],
+// 1 16 0 -26.5 0 1 0 0 0 1 0 0 0 1 4-4ring11.dat
+  [1,16,0,-26.5,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4ring11()],
+// 1 16 0 -26.5 0 1 0 0 0 1 0 0 0 1 4-4ring12.dat
+  [1,16,0,-26.5,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4ring12()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -26.5 0 11 0 0 0 21.5 0 0 0 11 4-4cyli.dat

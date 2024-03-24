@@ -1,12 +1,12 @@
 use <../lib.scad>
 use <../p/4-4ering.scad>
-use <../p/4-4rin19.scad>
+use <../p/4-4ring19.scad>
 use <s/14769s01.scad>
 function ldraw_lib__14769p0h() = [
 // 0 Tile  2 x  2 Round with Blue Bird with Raised Wings and Flag with Red, White and Blue Stars and Stripes Pattern
 // 0 Name: 14769p0h.dat
 // 0 Author: Evert-Jan Boer [ejboer]
-// 0 !LDRAW_ORG Part UPDATE 2020-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -16,13 +16,14 @@ function ldraw_lib__14769p0h() = [
 // 0 !KEYWORDS Bricklink 14769pb158, Dimensions, Fantastic Beasts, Set 71253
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\14769s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__14769s01()],
 // 
-// 1 16 0 0 0 1 0 0 0 1 0 0 0 1 4-4rin19.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4rin19()],
+// 1 16 0 0 0 1 0 0 0 1 0 0 0 1 4-4ring19.dat
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4ring19()],
 // 1 16 0 0 0 19 0 0 0 1 0 0 0 19 4-4ering.dat
   [1,16,0,0,0,19,0,0,0,1,0,0,0,19, ldraw_lib__4_4ering()],
 // 4 272 -17.818 0 0 -17.666 0 2.326 -18.118 0 2.385 -18.274 0 0

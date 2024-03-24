@@ -1,7 +1,7 @@
 use <../lib.scad>
 use <../p/1-16cyli.scad>
 use <../p/1-16edge.scad>
-use <../p/1-16rin4.scad>
+use <../p/1-16ring4.scad>
 use <../p/1-4cylc.scad>
 use <../p/1-4cyli.scad>
 use <../p/1-4disc.scad>
@@ -13,7 +13,7 @@ use <../p/2-4edge.scad>
 use <../p/2-4ndis.scad>
 use <../p/3-16cyli.scad>
 use <../p/3-16edge.scad>
-use <../p/3-16rin4.scad>
+use <../p/3-16ring4.scad>
 use <../p/4-4cylo.scad>
 use <../p/4-4ndis.scad>
 use <../p/5-8cyli.scad>
@@ -29,7 +29,7 @@ function ldraw_lib__u9148() = [
 // 0 ~Electric Power Functions E-Motor Front Case
 // 0 Name: u9148.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2012-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -37,7 +37,8 @@ function ldraw_lib__u9148() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Note: inside modeling is pure guesswork!
 // 
@@ -121,8 +122,8 @@ function ldraw_lib__u9148() = [
   [1,16,20,20,2,0,0,20,-20,0,0,0,18,0, ldraw_lib__1_16edge()],
 // 1 16 20 20 2 0 0 16 -16 0 0 0 18 0 1-16edge.dat
   [1,16,20,20,2,0,0,16,-16,0,0,0,18,0, ldraw_lib__1_16edge()],
-// 1 16 20 20 2 0 0 4 -4 0 0 0 -1 0 1-16rin4.dat
-  [1,16,20,20,2,0,0,4,-4,0,0,0,-1,0, ldraw_lib__1_16rin4()],
+// 1 16 20 20 2 0 0 4 -4 0 0 0 -1 0 1-16ring4.dat
+  [1,16,20,20,2,0,0,4,-4,0,0,0,-1,0, ldraw_lib__1_16ring4()],
 // 2 24 27.654 1.522 2 27.654 1.522 20
   [2,24,27.654,1.522,2,27.654,1.522,20],
 // 2 24 26.123 5.218 2 26.123 5.218 20
@@ -137,8 +138,8 @@ function ldraw_lib__u9148() = [
   [1,16,20,20,20,16,0,0,0,0,-16,0,1,0, ldraw_lib__3_16edge()],
 // 1 16 20 20 8 16 0 0 0 0 -16 0 1 0 1-4edge.dat
   [1,16,20,20,8,16,0,0,0,0,-16,0,1,0, ldraw_lib__1_4edge()],
-// 1 16 20 20 20 4 0 0 0 0 -4 0 -1 0 3-16rin4.dat
-  [1,16,20,20,20,4,0,0,0,0,-4,0,-1,0, ldraw_lib__3_16rin4()],
+// 1 16 20 20 20 4 0 0 0 0 -4 0 -1 0 3-16ring4.dat
+  [1,16,20,20,20,4,0,0,0,0,-4,0,-1,0, ldraw_lib__3_16ring4()],
 // 1 16 20 20 20 20 0 0 0 0 -20 0 1 0 3-16edge.dat
   [1,16,20,20,20,20,0,0,0,0,-20,0,1,0, ldraw_lib__3_16edge()],
 // 1 16 20 20 2 20 0 0 0 0 -20 0 18 0 3-16cyli.dat
@@ -259,8 +260,8 @@ function ldraw_lib__u9148() = [
   [1,16,-20,20,2,0,0,-20,-20,0,0,0,18,0, ldraw_lib__1_16edge()],
 // 1 16 -20 20 2 0 0 -16 -16 0 0 0 18 0 1-16edge.dat
   [1,16,-20,20,2,0,0,-16,-16,0,0,0,18,0, ldraw_lib__1_16edge()],
-// 1 16 -20 20 2 0 0 -4 -4 0 0 0 -1 0 1-16rin4.dat
-  [1,16,-20,20,2,0,0,-4,-4,0,0,0,-1,0, ldraw_lib__1_16rin4()],
+// 1 16 -20 20 2 0 0 -4 -4 0 0 0 -1 0 1-16ring4.dat
+  [1,16,-20,20,2,0,0,-4,-4,0,0,0,-1,0, ldraw_lib__1_16ring4()],
 // 2 24 -27.654 1.522 2 -27.654 1.522 20
   [2,24,-27.654,1.522,2,-27.654,1.522,20],
 // 2 24 -26.123 5.218 2 -26.123 5.218 20
@@ -275,8 +276,8 @@ function ldraw_lib__u9148() = [
   [1,16,-20,20,20,-16,0,0,0,0,-16,0,1,0, ldraw_lib__3_16edge()],
 // 1 16 -20 20 8 -16 0 0 0 0 -16 0 1 0 1-4edge.dat
   [1,16,-20,20,8,-16,0,0,0,0,-16,0,1,0, ldraw_lib__1_4edge()],
-// 1 16 -20 20 20 -4 0 0 0 0 -4 0 -1 0 3-16rin4.dat
-  [1,16,-20,20,20,-4,0,0,0,0,-4,0,-1,0, ldraw_lib__3_16rin4()],
+// 1 16 -20 20 20 -4 0 0 0 0 -4 0 -1 0 3-16ring4.dat
+  [1,16,-20,20,20,-4,0,0,0,0,-4,0,-1,0, ldraw_lib__3_16ring4()],
 // 1 16 -20 20 20 -20 0 0 0 0 -20 0 1 0 3-16edge.dat
   [1,16,-20,20,20,-20,0,0,0,0,-20,0,1,0, ldraw_lib__3_16edge()],
 // 1 16 -20 20 2 -20 0 0 0 0 -20 0 18 0 3-16cyli.dat

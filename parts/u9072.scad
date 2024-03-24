@@ -1,7 +1,7 @@
 use <../lib.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4edge.scad>
-use <../p/4-4rin57.scad>
+use <../p/4-4ring57.scad>
 use <../p/4-4ring8.scad>
 use <../p/t04i1333.scad>
 use <../p/t04o1333.scad>
@@ -9,7 +9,7 @@ function ldraw_lib__u9072() = [
 // 0 ~Electric Lightbrick  2 x  4 Metal Socket
 // 0 Name: u9072.dat
 // 0 Author: Niels Karsdorp [nielsk]
-// 0 !LDRAW_ORG Part UPDATE 2013-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CW
@@ -19,7 +19,8 @@ function ldraw_lib__u9072() = [
 // 0 !HISTORY 2009-12-29 [PTadmin] Official Update 2009-03
 // 0 !HISTORY 2013-03-29 [PTadmin] Renamed from s/322s01
 // 0 !HISTORY 2013-07-21 [PTadmin] Official Update 2013-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
@@ -46,8 +47,8 @@ function ldraw_lib__u9072() = [
   [1,16,0,0,0,0,0,-4.039,0,4,0,4.039,0,0, ldraw_lib__t04i1333()],
 // 1 16 0 0 0 0.5 0 0 0 1 0 0 0 0.5 4-4ring8.dat
   [1,16,0,0,0,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__4_4ring8()],
-// 1 16 0 0 0 0.07893 0 0 0 1 0 0 0 0.07893 4-4rin57.dat
-  [1,16,0,0,0,0.07893,0,0,0,1,0,0,0,0.07893, ldraw_lib__4_4rin57()],
+// 1 16 0 0 0 0.07893 0 0 0 1 0 0 0 0.07893 4-4ring57.dat
+  [1,16,0,0,0,0.07893,0,0,0,1,0,0,0,0.07893, ldraw_lib__4_4ring57()],
 // 1 16 0 0 0 4 0 0 0 1 0 0 0 4 4-4edge.dat
   [1,16,0,0,0,4,0,0,0,1,0,0,0,4, ldraw_lib__4_4edge()],
 // 1 16 0 0 0 4.578 0 0 0 1 0 0 0 4.578 4-4edge.dat
@@ -71,8 +72,8 @@ function ldraw_lib__u9072() = [
   [1,16,0,-5,0,0,0,-4.039,0,-4,0,4.039,0,0, ldraw_lib__t04i1333()],
 // 1 16 0 -5 0 0.5 0 0 0 -1 0 0 0 0.5 4-4ring8.dat
   [1,16,0,-5,0,0.5,0,0,0,-1,0,0,0,0.5, ldraw_lib__4_4ring8()],
-// 1 16 0 -5 0 0.07893 0 0 0 -1 0 0 0 0.07893 4-4rin57.dat
-  [1,16,0,-5,0,0.07893,0,0,0,-1,0,0,0,0.07893, ldraw_lib__4_4rin57()],
+// 1 16 0 -5 0 0.07893 0 0 0 -1 0 0 0 0.07893 4-4ring57.dat
+  [1,16,0,-5,0,0.07893,0,0,0,-1,0,0,0,0.07893, ldraw_lib__4_4ring57()],
 // 1 16 0 -5 0 4 0 0 0 1 0 0 0 4 4-4edge.dat
   [1,16,0,-5,0,4,0,0,0,1,0,0,0,4, ldraw_lib__4_4edge()],
 // 1 16 0 -5 0 4.578 0 0 0 1 0 0 0 4.578 4-4edge.dat

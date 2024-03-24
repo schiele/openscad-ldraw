@@ -13,7 +13,7 @@ use <../../p/3-8edge.scad>
 use <../../p/4-4cyli.scad>
 use <../../p/4-4edge.scad>
 use <../../p/4-4ndis.scad>
-use <../../p/4-4rin12.scad>
+use <../../p/4-4ring12.scad>
 use <../../p/4-4ring5.scad>
 use <../../p/4-4ring8.scad>
 use <../../p/4-8sphe.scad>
@@ -28,7 +28,7 @@ function ldraw_lib__s__57518s01() = [
 // 0 ~Technic Chain Tread 5 Wide
 // 0 Name: s\57518s01.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Subpart UPDATE 2022-04
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -40,7 +40,8 @@ function ldraw_lib__s__57518s01() = [
 // 0 !HISTORY 2021-10-30 [PTadmin] Update description
 // 0 !HISTORY 2022-03-13 [MagFors] used new subfile
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\57518s02.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__57518s02()],
@@ -182,10 +183,10 @@ function ldraw_lib__s__57518s01() = [
   [1,16,20,-6,-17,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4edge()],
 // 1 16 -20 -6 -17 6 0 0 0 1 0 0 0 6 4-4edge.dat
   [1,16,-20,-6,-17,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4edge()],
-// 1 16 20 -6 -17 0 0 -0.5 0 -1 0 0.5 0 0 4-4rin12.dat
-  [1,16,20,-6,-17,0,0,-0.5,0,-1,0,0.5,0,0, ldraw_lib__4_4rin12()],
-// 1 16 -20 -6 -17 0 0 0.5 0 -1 0 0.5 0 0 4-4rin12.dat
-  [1,16,-20,-6,-17,0,0,0.5,0,-1,0,0.5,0,0, ldraw_lib__4_4rin12()],
+// 1 16 20 -6 -17 0 0 -0.5 0 -1 0 0.5 0 0 4-4ring12.dat
+  [1,16,20,-6,-17,0,0,-0.5,0,-1,0,0.5,0,0, ldraw_lib__4_4ring12()],
+// 1 16 -20 -6 -17 0 0 0.5 0 -1 0 0.5 0 0 4-4ring12.dat
+  [1,16,-20,-6,-17,0,0,0.5,0,-1,0,0.5,0,0, ldraw_lib__4_4ring12()],
 // 2 24 14 -10 -37 -14 -10 -37
   [2,24,14,-10,-37,-14,-10,-37],
 // 2 24 48 -10 -28 48 -10 -31

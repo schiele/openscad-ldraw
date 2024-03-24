@@ -2,14 +2,14 @@ use <../lib.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4cylo.scad>
 use <../p/4-4edge.scad>
-use <../p/4-4rin29.scad>
+use <../p/4-4ring29.scad>
 use <../p/rect3.scad>
 use <s/64567s01.scad>
 function ldraw_lib__64567a() = [
 // 0 Minifig Lightsaber Hilt with Slight Sloping Fingers with Bottom Ring
 // 0 Name: 64567a.dat
 // 0 Author: Steve Bliss [sbliss]
-// 0 !LDRAW_ORG Part UPDATE 2023-04
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 !HELP Holes for 'blade' at y=3 and y=29 with depth of 7
@@ -20,7 +20,7 @@ function ldraw_lib__64567a() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS bar, base, rod, sabre, Star Wars, sword
+// 0 !KEYWORDS Star Wars, bar, base, rod, sabre, sword
 // 
 // 0 !HISTORY 1999-05-24 [PTadmin] Official Update 1999-04
 // 0 !HISTORY 1999-07-05 [PTadmin] Official Update 1999-05
@@ -31,7 +31,8 @@ function ldraw_lib__64567a() = [
 // 0 !HISTORY 2013-12-23 [PTadmin] Official Update 2013-02
 // 0 !HISTORY 2021-03-10 [cwdee] Renamed from 577b
 // 0 !HISTORY 2023-08-25 [OrionP] Official Update 2023-04
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\64567s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__64567s01()],
@@ -40,12 +41,12 @@ function ldraw_lib__64567a() = [
   [1,16,0,30.5,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4edge()],
 // 1 16 0 28 0 6 0 0 0 2.5 0 0 0 6 4-4cyli.dat
   [1,16,0,28,0,6,0,0,0,2.5,0,0,0,6, ldraw_lib__4_4cyli()],
-// 1 16 0 30.5 0 .2 0 0 0 -1 0 0 0 -.2 4-4rin29.dat
-  [1,16,0,30.5,0,.2,0,0,0,-1,0,0,0,-.2, ldraw_lib__4_4rin29()],
+// 1 16 0 30.5 0 .2 0 0 0 -1 0 0 0 -.2 4-4ring29.dat
+  [1,16,0,30.5,0,.2,0,0,0,-1,0,0,0,-.2, ldraw_lib__4_4ring29()],
 // 1 16 0 30.5 0 5.8 0 0 0 .5 0 0 0 5.8 4-4cylo.dat
   [1,16,0,30.5,0,5.8,0,0,0,.5,0,0,0,5.8, ldraw_lib__4_4cylo()],
-// 1 16 0 31 0 .2 0 0 0 1 0 0 0 .2 4-4rin29.dat
-  [1,16,0,31,0,.2,0,0,0,1,0,0,0,.2, ldraw_lib__4_4rin29()],
+// 1 16 0 31 0 .2 0 0 0 1 0 0 0 .2 4-4ring29.dat
+  [1,16,0,31,0,.2,0,0,0,1,0,0,0,.2, ldraw_lib__4_4ring29()],
 // 1 16 0 31 0 6 0 0 0 1 0 0 0 6 4-4edge.dat
   [1,16,0,31,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4edge()],
 // 0 // detail at pommel...

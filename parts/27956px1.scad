@@ -1,15 +1,15 @@
 use <../lib.scad>
 use <../p/4-4cylc.scad>
 use <../p/4-4edge.scad>
-use <../p/4-4rin32.scad>
 use <../p/4-4ring3.scad>
+use <../p/4-4ring32.scad>
 use <s/27956px1s02.scad>
 use <s/27956s01.scad>
 function ldraw_lib__27956px1() = [
 // 0 Minifig Head Alien E. T. with Blue Eyes and Grin Pattern
 // 0 Name: 27956px1.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
-// 0 !LDRAW_ORG Part UPDATE 2022-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -21,12 +21,13 @@ function ldraw_lib__27956px1() = [
 // 0 !HISTORY 2018-01-28 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2018-01-28 [GeraldLasser] File preparation for LDraw Parts Tracker
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 2 0 0 0 -1 0 0 0 2 4-4ring3.dat
   [1,16,0,0,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__4_4ring3()],
-// 1 16 0 0 0 0.25 0 0 0 -1 0 0 0 0.25 4-4rin32.dat
-  [1,16,0,0,0,0.25,0,0,0,-1,0,0,0,0.25, ldraw_lib__4_4rin32()],
+// 1 16 0 0 0 0.25 0 0 0 -1 0 0 0 0.25 4-4ring32.dat
+  [1,16,0,0,0,0.25,0,0,0,-1,0,0,0,0.25, ldraw_lib__4_4ring32()],
 // 1 16 0 0 0 8.25 0 0 0 -1 0 0 0 8.25 4-4edge.dat
   [1,16,0,0,0,8.25,0,0,0,-1,0,0,0,8.25, ldraw_lib__4_4edge()],
 // 0 BFC INVERTNEXT

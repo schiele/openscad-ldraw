@@ -13,7 +13,7 @@ use <../p/48/3-16con19.scad>
 use <../p/48/3-16cyli.scad>
 use <../p/48/3-16edge.scad>
 use <../p/48/4-4edge.scad>
-use <../p/48/4-4rin18.scad>
+use <../p/48/4-4ring18.scad>
 use <../p/48/5-24cyli.scad>
 use <../p/axl5ho10.scad>
 use <../p/axl5hol8.scad>
@@ -25,7 +25,7 @@ function ldraw_lib__2745() = [
 // 0 Technic Cylinder  4 x  4 x  1.667 with Axleholes
 // 0 Name: 2745.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2022-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -38,7 +38,8 @@ function ldraw_lib__2745() = [
 // 0 !HISTORY 2021-12-01 [cwdee] Update keywords
 // 0 !HISTORY 2021-12-24 [MagFors] Reshaped axleholes, removed T-junctions, added missing condlines
 // 0 !HISTORY 2022-03-06 [PTadmin] Official Update 2022-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
@@ -74,12 +75,12 @@ function ldraw_lib__2745() = [
   [1,16,0,-13,0,13.7766,0,-33.2596,0,-7,0,-33.2596,0,-13.7766, ldraw_lib__48__1_8cyli()],
 // 1 16 0 -20 0 36 0 0 0 1 0 0 0 36 48\4-4edge.dat
   [1,16,0,-20,0,36,0,0,0,1,0,0,0,36, ldraw_lib__48__4_4edge()],
-// 1 16 0 -20 0 2 0 0 0 1 0 0 0 2 48\4-4rin18.dat
-  [1,16,0,-20,0,2,0,0,0,1,0,0,0,2, ldraw_lib__48__4_4rin18()],
+// 1 16 0 -20 0 2 0 0 0 1 0 0 0 2 48\4-4ring18.dat
+  [1,16,0,-20,0,2,0,0,0,1,0,0,0,2, ldraw_lib__48__4_4ring18()],
 // 1 16 0 -20 0 38 0 0 0 1 0 0 0 38 48\4-4edge.dat
   [1,16,0,-20,0,38,0,0,0,1,0,0,0,38, ldraw_lib__48__4_4edge()],
-// 1 16 0 20 0 -2 0 0 0 -1 0 0 0 2 48\4-4rin18.dat
-  [1,16,0,20,0,-2,0,0,0,-1,0,0,0,2, ldraw_lib__48__4_4rin18()],
+// 1 16 0 20 0 -2 0 0 0 -1 0 0 0 2 48\4-4ring18.dat
+  [1,16,0,20,0,-2,0,0,0,-1,0,0,0,2, ldraw_lib__48__4_4ring18()],
 // 1 16 0 20 0 -38 0 0 0 -1 0 0 0 38 48\4-4edge.dat
   [1,16,0,20,0,-38,0,0,0,-1,0,0,0,38, ldraw_lib__48__4_4edge()],
 // 1 16 0 20 0 -36 0 0 0 -1 0 0 0 36 48\4-4edge.dat

@@ -2,7 +2,7 @@ use <../../lib.scad>
 use <../../p/48/2-4con25.scad>
 use <../../p/48/2-4cylo.scad>
 use <../../p/48/2-4edge.scad>
-use <../../p/48/2-4rin19.scad>
+use <../../p/48/2-4ring19.scad>
 use <../../p/48/2-4ring37.scad>
 use <../../p/48/2-4ring4.scad>
 use <../../p/48/2-4ring40.scad>
@@ -11,7 +11,7 @@ function ldraw_lib__s__6581a() = [
 // 0 ~Tyre 20/ 40 x 33 Off Road - 1/4
 // 0 Name: s\6581a.dat
 // 0 Author: Jeff Boen [onyx]
-// 0 !LDRAW_ORG Subpart UPDATE 2017-01
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -23,7 +23,8 @@ function ldraw_lib__s__6581a() = [
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
 // 0 !HISTORY 2014-12-28 [MMR1988] Completely Reworked
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\6581b.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6581b()],
@@ -84,8 +85,8 @@ function ldraw_lib__s__6581a() = [
 // 
 // 1 16 -22 0 0 0 1 0 1 0 0 0 0 1 48\2-4ring37.dat
   [1,16,-22,0,0,0,1,0,1,0,0,0,0,1, ldraw_lib__48__2_4ring37()],
-// 1 16 -22 0 0 0 1 0 2 0 0 0 0 2 48\2-4rin19.dat
-  [1,16,-22,0,0,0,1,0,2,0,0,0,0,2, ldraw_lib__48__2_4rin19()],
+// 1 16 -22 0 0 0 1 0 2 0 0 0 0 2 48\2-4ring19.dat
+  [1,16,-22,0,0,0,1,0,2,0,0,0,0,2, ldraw_lib__48__2_4ring19()],
 // 1 16 -22 0 0 0 1 0 1 0 0 0 0 1 48\2-4ring40.dat
   [1,16,-22,0,0,0,1,0,1,0,0,0,0,1, ldraw_lib__48__2_4ring40()],
 // 
@@ -96,8 +97,8 @@ function ldraw_lib__s__6581a() = [
 // 
 // 1 16 -17 0 0 0 -1 0 1 0 0 0 0 1 48\2-4ring37.dat
   [1,16,-17,0,0,0,-1,0,1,0,0,0,0,1, ldraw_lib__48__2_4ring37()],
-// 1 16 -17 0 0 0 -1 0 2 0 0 0 0 2 48\2-4rin19.dat
-  [1,16,-17,0,0,0,-1,0,2,0,0,0,0,2, ldraw_lib__48__2_4rin19()],
+// 1 16 -17 0 0 0 -1 0 2 0 0 0 0 2 48\2-4ring19.dat
+  [1,16,-17,0,0,0,-1,0,2,0,0,0,0,2, ldraw_lib__48__2_4ring19()],
 // 1 16 -17 0 0 0 -1 0 10 0 0 0 0 10 48\2-4ring4.dat
   [1,16,-17,0,0,0,-1,0,10,0,0,0,0,10, ldraw_lib__48__2_4ring4()],
 // 

@@ -3,7 +3,7 @@ use <../p/48/1-24chrd.scad>
 use <../p/48/2-4cylo.scad>
 use <../p/48/5-12cyli.scad>
 use <../p/48/5-12edge.scad>
-use <../p/48/5-24rin7.scad>
+use <../p/48/5-24ring7.scad>
 use <../p/box4o4a.scad>
 use <../p/box5.scad>
 use <../p/rect.scad>
@@ -15,7 +15,7 @@ function ldraw_lib__20309() = [
 // 0 Window  1 x  4 x  1.667 Half Round with 3 Radial Dividers
 // 0 Name: 20309.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2015-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -23,7 +23,8 @@ function ldraw_lib__20309() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2015-10-11 [PTadmin] Official Update 2015-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 8 -10 40 0 0 0 0 -40 0 20 0 48\2-4cylo.dat
   [1,16,0,8,-10,40,0,0,0,0,-40,0,20,0, ldraw_lib__48__2_4cylo()],
@@ -43,14 +44,14 @@ function ldraw_lib__20309() = [
   [1,16,0,8,-10,33.8074,0,-9.05867,-9.05867,0,-33.8074,0,1,0, ldraw_lib__48__5_12edge()],
 // 1 16 0 8 10 33.8074 0 -9.05867 -9.05867 0 -33.8074 0 1 0 48\5-12edge.dat
   [1,16,0,8,10,33.8074,0,-9.05867,-9.05867,0,-33.8074,0,1,0, ldraw_lib__48__5_12edge()],
-// 1 16 0 8 -10 0 0 -5 -5 0 0 0 1 0 48\5-24rin7.dat
-  [1,16,0,8,-10,0,0,-5,-5,0,0,0,1,0, ldraw_lib__48__5_24rin7()],
-// 1 16 0 8 -10 0 0 5 -5 0 0 0 1 0 48\5-24rin7.dat
-  [1,16,0,8,-10,0,0,5,-5,0,0,0,1,0, ldraw_lib__48__5_24rin7()],
-// 1 16 0 8 10 0 0 5 -5 0 0 0 -1 0 48\5-24rin7.dat
-  [1,16,0,8,10,0,0,5,-5,0,0,0,-1,0, ldraw_lib__48__5_24rin7()],
-// 1 16 0 8 10 0 0 -5 -5 0 0 0 -1 0 48\5-24rin7.dat
-  [1,16,0,8,10,0,0,-5,-5,0,0,0,-1,0, ldraw_lib__48__5_24rin7()],
+// 1 16 0 8 -10 0 0 -5 -5 0 0 0 1 0 48\5-24ring7.dat
+  [1,16,0,8,-10,0,0,-5,-5,0,0,0,1,0, ldraw_lib__48__5_24ring7()],
+// 1 16 0 8 -10 0 0 5 -5 0 0 0 1 0 48\5-24ring7.dat
+  [1,16,0,8,-10,0,0,5,-5,0,0,0,1,0, ldraw_lib__48__5_24ring7()],
+// 1 16 0 8 10 0 0 5 -5 0 0 0 -1 0 48\5-24ring7.dat
+  [1,16,0,8,10,0,0,5,-5,0,0,0,-1,0, ldraw_lib__48__5_24ring7()],
+// 1 16 0 8 10 0 0 -5 -5 0 0 0 -1 0 48\5-24ring7.dat
+  [1,16,0,8,10,0,0,-5,-5,0,0,0,-1,0, ldraw_lib__48__5_24ring7()],
 // 1 16 0 0 0 34 0 0 0 1 0 0 0 10 rect.dat
   [1,16,0,0,0,34,0,0,0,1,0,0,0,10, ldraw_lib__rect()],
 // 4 16 -40 8 -10 40 8 -10 34 0 -10 -34 0 -10

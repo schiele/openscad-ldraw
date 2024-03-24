@@ -14,13 +14,13 @@ use <../p/4-4cyli.scad>
 use <../p/4-4cylj1x1e.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4edge.scad>
-use <../p/4-4rin15.scad>
 use <../p/4-4ring1.scad>
+use <../p/4-4ring15.scad>
 function ldraw_lib__63585() = [
 // 0 Minifig Helmet Floodlight for SW Clone Trooper Helmet
 // 0 Name: 63585.dat
 // 0 Author: Magnus Forsberg [MagFors]
-// 0 !LDRAW_ORG Part UPDATE 2022-03
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -32,7 +32,8 @@ function ldraw_lib__63585() = [
 // 0 !HISTORY 2013-08-14 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2018-12-23 [MagFors] File preparation for LDraw Parts Tracker
 // 0 !HISTORY 2022-05-07 [PTadmin] Official Update 2022-03
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 -3.5 0 0 0 3.5 0 2 0 0 0 0 2 4-4cylc.dat
   [1,16,-3.5,0,0,0,3.5,0,2,0,0,0,0,2, ldraw_lib__4_4cylc()],
@@ -60,8 +61,8 @@ function ldraw_lib__63585() = [
   [1,16,4,4,0,4,0,0,0,1,0,0,0,4, ldraw_lib__4_4edge()],
 // 1 16 4 4 0 3.75 0 0 0 1 0 0 0 3.75 4-4edge.dat
   [1,16,4,4,0,3.75,0,0,0,1,0,0,0,3.75, ldraw_lib__4_4edge()],
-// 1 16 4 4 0 .25 0 0 0 -1 0 0 0 .25 4-4rin15.dat
-  [1,16,4,4,0,.25,0,0,0,-1,0,0,0,.25, ldraw_lib__4_4rin15()],
+// 1 16 4 4 0 .25 0 0 0 -1 0 0 0 .25 4-4ring15.dat
+  [1,16,4,4,0,.25,0,0,0,-1,0,0,0,.25, ldraw_lib__4_4ring15()],
 // 1 16 4 4.8 0 0 0 -3.75 0 -.8 0 3.75 0 0 4-4cyli.dat
   [1,16,4,4.8,0,0,0,-3.75,0,-.8,0,3.75,0,0, ldraw_lib__4_4cyli()],
 // 1 16 4 13.25 0 3.125 0 0 0 -1 0 0 0 3.125 4-4edge.dat

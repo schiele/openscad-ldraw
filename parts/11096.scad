@@ -9,8 +9,8 @@ use <../p/4-4cylo.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4edge.scad>
 use <../p/4-4ndis.scad>
-use <../p/4-4rin24.scad>
 use <../p/4-4ring2.scad>
+use <../p/4-4ring24.scad>
 use <../p/4-4ring7.scad>
 use <s/11096s01.scad>
 use <../p/stud2.scad>
@@ -19,7 +19,7 @@ function ldraw_lib__11096() = [
 // 0 Minifig Axe Head Twin-bladed with Hole
 // 0 Name: 11096.dat
 // 0 Author: Massimo Maso [Sirio]
-// 0 !LDRAW_ORG Part UPDATE 2020-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -31,7 +31,8 @@ function ldraw_lib__11096() = [
 // 0 !HISTORY 2013-08-14 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2019-02-14 [Sirio] File preparation for LDraw Parts Tracker
 // 0 !HISTORY 2020-06-28 [PTadmin] Official Update 2020-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Subparts
 // 
@@ -58,8 +59,8 @@ function ldraw_lib__11096() = [
   [1,16,0,15,0,4,0,0,0,10,0,0,0,4, ldraw_lib__4_4cylo()],
 // 1 16 0 25 0 2 0 0 0 -1 0 0 0 2 4-4ring2.dat
   [1,16,0,25,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__4_4ring2()],
-// 1 16 0 25 0 0.25 0 0 0 -1 0 0 0 0.25 4-4rin24.dat
-  [1,16,0,25,0,0.25,0,0,0,-1,0,0,0,0.25, ldraw_lib__4_4rin24()],
+// 1 16 0 25 0 0.25 0 0 0 -1 0 0 0 0.25 4-4ring24.dat
+  [1,16,0,25,0,0.25,0,0,0,-1,0,0,0,0.25, ldraw_lib__4_4ring24()],
 // 1 16 0 22 0 0.25 0 0 0 3 0 0 0 0.25 4-4con25.dat
   [1,16,0,22,0,0.25,0,0,0,3,0,0,0,0.25, ldraw_lib__4_4con25()],
 // 1 16 0 16 0 0.5 0 0 0 6 0 0 0 0.5 4-4con13.dat

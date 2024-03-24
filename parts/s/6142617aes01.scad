@@ -1,16 +1,16 @@
 use <../../lib.scad>
 use <../../p/1-4chrd.scad>
-use <../../p/1-4rin10.scad>
+use <../../p/1-4ring10.scad>
 use <../../p/1-4ring33.scad>
 use <../../p/1-8chrd.scad>
 use <../../p/4-4ndis.scad>
-use <../../p/4-4rin34.scad>
+use <../../p/4-4ring34.scad>
 use <../../p/4-4ring7.scad>
 function ldraw_lib__s__6142617aes01() = [
 // 0 ~Sticker  3.0 x  4.0 with Yellow "Start" and 5 Orange Lights on Black Background - One Light
 // 0 Name: s\6142617aes01.dat
 // 0 Author: Massimo Maso [Sirio]
-// 0 !LDRAW_ORG Subpart UPDATE 2023-06
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -18,7 +18,8 @@ function ldraw_lib__s__6142617aes01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2023-11-19 [OrionP] Official Update 2023-06
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Primitives
 // 
@@ -26,8 +27,8 @@ function ldraw_lib__s__6142617aes01() = [
   [1,16,0,0,0,5,0,0,0,1,0,0,0,5, ldraw_lib__4_4ndis()],
 // 1 80 0 0 0 .625 0 0 0 1 0 0 0 .625 4-4ring7.dat
   [1,80,0,0,0,.625,0,0,0,1,0,0,0,.625, ldraw_lib__4_4ring7()],
-// 1 80 0 0 0 .125 0 0 0 1 0 0 0 .125 4-4rin34.dat
-  [1,80,0,0,0,.125,0,0,0,1,0,0,0,.125, ldraw_lib__4_4rin34()],
+// 1 80 0 0 0 .125 0 0 0 1 0 0 0 .125 4-4ring34.dat
+  [1,80,0,0,0,.125,0,0,0,1,0,0,0,.125, ldraw_lib__4_4ring34()],
 // 1 0 0 0 0 4.25 0 0 0 1 0 0 0 4.25 1-8chrd.dat
   [1,0,0,0,0,4.25,0,0,0,1,0,0,0,4.25, ldraw_lib__1_8chrd()],
 // 1 0 0 0 0 0 0 4.25 0 1 0 4.25 0 0 1-8chrd.dat
@@ -40,8 +41,8 @@ function ldraw_lib__s__6142617aes01() = [
   [1,0,0,0,0,-4.25,0,0,0,1,0,0,0,-4.25, ldraw_lib__1_8chrd()],
 // 1 0 0 0 0 0 0 -4.25 0 1 0 -4.25 0 0 1-8chrd.dat
   [1,0,0,0,0,0,0,-4.25,0,1,0,-4.25,0,0, ldraw_lib__1_8chrd()],
-// 1 0 0 0 0 .375 0 0 0 1 0 0 0 -.375 1-4rin10.dat
-  [1,0,0,0,0,.375,0,0,0,1,0,0,0,-.375, ldraw_lib__1_4rin10()],
+// 1 0 0 0 0 .375 0 0 0 1 0 0 0 -.375 1-4ring10.dat
+  [1,0,0,0,0,.375,0,0,0,1,0,0,0,-.375, ldraw_lib__1_4ring10()],
 // 1 0 0 0 0 .125 0 0 0 1 0 0 0 -.125 1-4ring33.dat
   [1,0,0,0,0,.125,0,0,0,1,0,0,0,-.125, ldraw_lib__1_4ring33()],
 // 1 4 0 0 0 3.75 0 0 0 1 0 0 0 -3.75 1-4chrd.dat

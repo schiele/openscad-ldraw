@@ -8,8 +8,8 @@ use <../p/4-4cyli.scad>
 use <../p/4-4cylo.scad>
 use <../p/4-4cylse.scad>
 use <../p/4-4ndis.scad>
-use <../p/4-4rin11.scad>
-use <../p/4-4rin12.scad>
+use <../p/4-4ring11.scad>
+use <../p/4-4ring12.scad>
 use <../p/5-8cyli.scad>
 use <../p/box3u8p.scad>
 use <../p/rect.scad>
@@ -19,7 +19,7 @@ function ldraw_lib__2791a() = [
 // 0 Technic Steering Gear Holder
 // 0 Name: 2791a.dat
 // 0 Author: James Jessiman
-// 0 !LDRAW_ORG Part UPDATE 2017-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -33,7 +33,8 @@ function ldraw_lib__2791a() = [
 // 0 !HISTORY 2014-11-21 [roland] Auto-corrected with libfix version of LDCad 1.4
 // 0 !HISTORY 2017-01-03 [MagFors] Made BFC, removed overlapping surfaces, added missing edges
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 15 -18 0 1 0 0 0 1 0 0 0 10 rect.dat
   [1,16,15,-18,0,1,0,0,0,1,0,0,0,10, ldraw_lib__rect()],
@@ -81,10 +82,10 @@ function ldraw_lib__2791a() = [
   [0,"BFC","INVERTNEXT"],
 // 1 16 16.3 0 0 0 1.7 0 11 0 0 0 0 11 4-4cylse.dat
   [1,16,16.3,0,0,0,1.7,0,11,0,0,0,0,11, ldraw_lib__4_4cylse()],
-// 1 16 18 0 0 -0.154 -1 0 1 0 0 0 0 1 4-4rin12.dat
-  [1,16,18,0,0,-0.154,-1,0,1,0,0,0,0,1, ldraw_lib__4_4rin12()],
-// 1 16 18 0 0 -0.154 -1 0 1 0 0 0 0 1 4-4rin11.dat
-  [1,16,18,0,0,-0.154,-1,0,1,0,0,0,0,1, ldraw_lib__4_4rin11()],
+// 1 16 18 0 0 -0.154 -1 0 1 0 0 0 0 1 4-4ring12.dat
+  [1,16,18,0,0,-0.154,-1,0,1,0,0,0,0,1, ldraw_lib__4_4ring12()],
+// 1 16 18 0 0 -0.154 -1 0 1 0 0 0 0 1 4-4ring11.dat
+  [1,16,18,0,0,-0.154,-1,0,1,0,0,0,0,1, ldraw_lib__4_4ring11()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 14 0 0 0 2.3 0 11 0 0 0 0 11 4-4cyli.dat
@@ -96,10 +97,10 @@ function ldraw_lib__2791a() = [
   [0,"BFC","INVERTNEXT"],
 // 1 16 -16.3 0 0 0 -1.7 0 11 0 0 0 0 -11 4-4cylse.dat
   [1,16,-16.3,0,0,0,-1.7,0,11,0,0,0,0,-11, ldraw_lib__4_4cylse()],
-// 1 16 -18 0 0 0.154 1 0 1 0 0 0 0 -1 4-4rin12.dat
-  [1,16,-18,0,0,0.154,1,0,1,0,0,0,0,-1, ldraw_lib__4_4rin12()],
-// 1 16 -18 0 0 0.154 1 0 1 0 0 0 0 -1 4-4rin11.dat
-  [1,16,-18,0,0,0.154,1,0,1,0,0,0,0,-1, ldraw_lib__4_4rin11()],
+// 1 16 -18 0 0 0.154 1 0 1 0 0 0 0 -1 4-4ring12.dat
+  [1,16,-18,0,0,0.154,1,0,1,0,0,0,0,-1, ldraw_lib__4_4ring12()],
+// 1 16 -18 0 0 0.154 1 0 1 0 0 0 0 -1 4-4ring11.dat
+  [1,16,-18,0,0,0.154,1,0,1,0,0,0,0,-1, ldraw_lib__4_4ring11()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -14 0 0 0 -2.3 0 11 0 0 0 0 -11 4-4cyli.dat

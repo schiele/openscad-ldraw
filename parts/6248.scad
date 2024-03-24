@@ -5,8 +5,8 @@ use <../p/4-4con19.scad>
 use <../p/4-4con8.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4edge.scad>
-use <../p/4-4rin10.scad>
 use <../p/4-4ring1.scad>
+use <../p/4-4ring10.scad>
 use <../p/4-4ring4.scad>
 use <../p/peghole.scad>
 use <../p/stug-2x2.scad>
@@ -14,7 +14,7 @@ function ldraw_lib__6248() = [
 // 0 Wheel Rim 10 x 17.4 with 4 Studs and Technic Peghole
 // 0 Name: 6248.dat
 // 0 Author: James Jessiman
-// 0 !LDRAW_ORG Part UPDATE 2012-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CW
@@ -27,7 +27,8 @@ function ldraw_lib__6248() = [
 // 0 !HISTORY 2011-07-25 [PTadmin] Official Update 2011-01
 // 0 !HISTORY 2012-06-24 [cwdee] Update description
 // 0 !HISTORY 2012-08-09 [PTadmin] Official Update 2012-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Nomenclature: width_(mm) x rim_diameter_(mm) [optional qualifier]
 // 
@@ -81,10 +82,10 @@ function ldraw_lib__6248() = [
   [1,16,0,0,-9,11,0,0,0,0,11,0,11,0, ldraw_lib__4_4ring1()],
 // 1 16 0 0 -7 8 0 0 0 0 8 0 -8 0 4-4ring1.dat
   [1,16,0,0,-7,8,0,0,0,0,8,0,-8,0, ldraw_lib__4_4ring1()],
-// 1 16 0 0 9 1.9 0 0 0 0 1.9 0 -1.9 0 4-4rin10.dat
-  [1,16,0,0,9,1.9,0,0,0,0,1.9,0,-1.9,0, ldraw_lib__4_4rin10()],
-// 1 16 0 0 9 2 0 0 0 0 2 0 -2 0 4-4rin10.dat
-  [1,16,0,0,9,2,0,0,0,0,2,0,-2,0, ldraw_lib__4_4rin10()],
+// 1 16 0 0 9 1.9 0 0 0 0 1.9 0 -1.9 0 4-4ring10.dat
+  [1,16,0,0,9,1.9,0,0,0,0,1.9,0,-1.9,0, ldraw_lib__4_4ring10()],
+// 1 16 0 0 9 2 0 0 0 0 2 0 -2 0 4-4ring10.dat
+  [1,16,0,0,9,2,0,0,0,0,2,0,-2,0, ldraw_lib__4_4ring10()],
 // 1 16 0 0 -9 1 0 0 0 0 -1 0 1 0 stug-2x2.dat
   [1,16,0,0,-9,1,0,0,0,0,-1,0,1,0, ldraw_lib__stug_2x2()],
 // 0 BFC INVERTNEXT

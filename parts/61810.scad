@@ -3,11 +3,11 @@ use <../p/4-4con13.scad>
 use <../p/4-4con28.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4edge.scad>
-use <../p/4-4rin10.scad>
-use <../p/4-4rin11.scad>
-use <../p/4-4rin12.scad>
-use <../p/4-4rin21.scad>
-use <../p/4-4rin29.scad>
+use <../p/4-4ring10.scad>
+use <../p/4-4ring11.scad>
+use <../p/4-4ring12.scad>
+use <../p/4-4ring21.scad>
+use <../p/4-4ring29.scad>
 use <../p/4-4ring8.scad>
 use <../p/48/4-4aring.scad>
 use <../p/48/4-4con11.scad>
@@ -18,13 +18,13 @@ use <../p/48/4-4con5.scad>
 use <../p/48/4-4cyli.scad>
 use <../p/48/4-4disc.scad>
 use <../p/48/4-4edge.scad>
-use <../p/48/4-4rin21.scad>
 use <../p/48/4-4ring2.scad>
+use <../p/48/4-4ring21.scad>
 function ldraw_lib__61810() = [
 // 0 Technic Bionicle Weapon Nynrah Ghost Blaster Pump
 // 0 Name: 61810.dat
 // 0 Author: Santeri Piippo [arezey]
-// 0 !LDRAW_ORG Part UPDATE 2013-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -32,7 +32,8 @@ function ldraw_lib__61810() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2013-07-21 [PTadmin] Official Update 2013-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 19 0 0 14 14 0 0 0 16 0 4-4cyli.dat
   [1,16,0,0,19,0,0,14,14,0,0,0,16,0, ldraw_lib__4_4cyli()],
@@ -54,24 +55,24 @@ function ldraw_lib__61810() = [
   [1,16,0,0,0,0,0,13,-13,0,0,0,-1,0, ldraw_lib__4_4edge()],
 // 1 16 0 0 0 0 0 -11 -11 0 0 0 1 0 4-4edge.dat
   [1,16,0,0,0,0,0,-11,-11,0,0,0,1,0, ldraw_lib__4_4edge()],
-// 1 16 0 0 0 0 0 -1 -1 0 0 0 1 0 4-4rin11.dat
-  [1,16,0,0,0,0,0,-1,-1,0,0,0,1,0, ldraw_lib__4_4rin11()],
-// 1 16 0 0 0 0 0 -1 -1 0 0 0 1 0 4-4rin12.dat
-  [1,16,0,0,0,0,0,-1,-1,0,0,0,1,0, ldraw_lib__4_4rin12()],
+// 1 16 0 0 0 0 0 -1 -1 0 0 0 1 0 4-4ring11.dat
+  [1,16,0,0,0,0,0,-1,-1,0,0,0,1,0, ldraw_lib__4_4ring11()],
+// 1 16 0 0 0 0 0 -1 -1 0 0 0 1 0 4-4ring12.dat
+  [1,16,0,0,0,0,0,-1,-1,0,0,0,1,0, ldraw_lib__4_4ring12()],
 // 1 16 0 0 19 0 0 16.5 -16.5 0 0 0 -4 0 4-4cyli.dat
   [1,16,0,0,19,0,0,16.5,-16.5,0,0,0,-4,0, ldraw_lib__4_4cyli()],
 // 1 16 0 0 19 0 0 16.5 -16.5 0 0 0 -1 0 4-4edge.dat
   [1,16,0,0,19,0,0,16.5,-16.5,0,0,0,-1,0, ldraw_lib__4_4edge()],
 // 1 16 0 0 15 0 0 -16.5 -16.5 0 0 0 1 0 4-4edge.dat
   [1,16,0,0,15,0,0,-16.5,-16.5,0,0,0,1,0, ldraw_lib__4_4edge()],
-// 1 16 0 0 15 0 0 -1.45 -1.45 0 0 0 1 0 4-4rin10.dat
-  [1,16,0,0,15,0,0,-1.45,-1.45,0,0,0,1,0, ldraw_lib__4_4rin10()],
-// 1 16 0 0 15 0 0 -0.55 -0.55 0 0 0 1 0 4-4rin29.dat
-  [1,16,0,0,15,0,0,-0.55,-0.55,0,0,0,1,0, ldraw_lib__4_4rin29()],
+// 1 16 0 0 15 0 0 -1.45 -1.45 0 0 0 1 0 4-4ring10.dat
+  [1,16,0,0,15,0,0,-1.45,-1.45,0,0,0,1,0, ldraw_lib__4_4ring10()],
+// 1 16 0 0 15 0 0 -0.55 -0.55 0 0 0 1 0 4-4ring29.dat
+  [1,16,0,0,15,0,0,-0.55,-0.55,0,0,0,1,0, ldraw_lib__4_4ring29()],
 // 1 16 0 0 19 0 0 1.75 -1.75 0 0 0 -1 0 4-4ring8.dat
   [1,16,0,0,19,0,0,1.75,-1.75,0,0,0,-1,0, ldraw_lib__4_4ring8()],
-// 1 16 0 0 19 0 0 0.75 -0.75 0 0 0 -1 0 4-4rin21.dat
-  [1,16,0,0,19,0,0,0.75,-0.75,0,0,0,-1,0, ldraw_lib__4_4rin21()],
+// 1 16 0 0 19 0 0 0.75 -0.75 0 0 0 -1 0 4-4ring21.dat
+  [1,16,0,0,19,0,0,0.75,-0.75,0,0,0,-1,0, ldraw_lib__4_4ring21()],
 // 1 16 0 0 15 0 0 14.5 -14.5 0 0 0 -1 0 4-4edge.dat
   [1,16,0,0,15,0,0,14.5,-14.5,0,0,0,-1,0, ldraw_lib__4_4edge()],
 // 1 16 0 0 19 0 0 14 -14 0 0 0 -1 0 4-4edge.dat
@@ -117,8 +118,8 @@ function ldraw_lib__61810() = [
   [1,16,0,0,36.5,0,0,11,-11,0,0,0,-1,0, ldraw_lib__48__4_4aring()],
 // 1 16 0 0 35 0 0 -7 -7 0 0 0 1 0 48\4-4ring2.dat
   [1,16,0,0,35,0,0,-7,-7,0,0,0,1,0, ldraw_lib__48__4_4ring2()],
-// 1 16 0 0 35 0 0 -1 -1 0 0 0 1 0 48\4-4rin21.dat
-  [1,16,0,0,35,0,0,-1,-1,0,0,0,1,0, ldraw_lib__48__4_4rin21()],
+// 1 16 0 0 35 0 0 -1 -1 0 0 0 1 0 48\4-4ring21.dat
+  [1,16,0,0,35,0,0,-1,-1,0,0,0,1,0, ldraw_lib__48__4_4ring21()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 36.5 0 0 -5.5 -5.5 0 0 0 1 0 48\4-4ring2.dat

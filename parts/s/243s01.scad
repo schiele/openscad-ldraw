@@ -1,5 +1,5 @@
 use <../../lib.scad>
-use <../../p/1-4rin19.scad>
+use <../../p/1-4ring19.scad>
 use <../../p/4-4con18.scad>
 use <../../p/4-4con5.scad>
 use <../../p/4-4con6.scad>
@@ -17,7 +17,7 @@ function ldraw_lib__s__243s01() = [
 // 0 ~Train Wheel Spoked with Cylindrical Rim without Axle Hole
 // 0 Name: s\243s01.dat
 // 0 Author: Willy Tschager [Holly-Wood]
-// 0 !LDRAW_ORG Subpart UPDATE 2022-03
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -25,7 +25,8 @@ function ldraw_lib__s__243s01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2022-05-07 [PTadmin] Official Update 2022-03
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Wheel 'flens' rear
 // 1 16 0 0 10 8 0 0 0 0 8 0 -2 0 4-4cylo.dat
@@ -52,14 +53,14 @@ function ldraw_lib__s__243s01() = [
   [1,16,0,0,3,20,0,0,0,0,20,0,-15,0, ldraw_lib__4_4cylo()],
 // 
 // 0 // Wheel front
-// 1 16 0 0 -12 0 0 1 -1 0 0 0 1 0 1-4rin19.dat
-  [1,16,0,0,-12,0,0,1,-1,0,0,0,1,0, ldraw_lib__1_4rin19()],
-// 1 16 0 0 -12 -1 0 0 0 0 -1 0 1 0 1-4rin19.dat
-  [1,16,0,0,-12,-1,0,0,0,0,-1,0,1,0, ldraw_lib__1_4rin19()],
-// 1 16 0 0 -12 0 0 -1 1 0 0 0 1 0 1-4rin19.dat
-  [1,16,0,0,-12,0,0,-1,1,0,0,0,1,0, ldraw_lib__1_4rin19()],
-// 1 16 0 0 -12 1 0 0 0 0 1 0 1 0 1-4rin19.dat
-  [1,16,0,0,-12,1,0,0,0,0,1,0,1,0, ldraw_lib__1_4rin19()],
+// 1 16 0 0 -12 0 0 1 -1 0 0 0 1 0 1-4ring19.dat
+  [1,16,0,0,-12,0,0,1,-1,0,0,0,1,0, ldraw_lib__1_4ring19()],
+// 1 16 0 0 -12 -1 0 0 0 0 -1 0 1 0 1-4ring19.dat
+  [1,16,0,0,-12,-1,0,0,0,0,-1,0,1,0, ldraw_lib__1_4ring19()],
+// 1 16 0 0 -12 0 0 -1 1 0 0 0 1 0 1-4ring19.dat
+  [1,16,0,0,-12,0,0,-1,1,0,0,0,1,0, ldraw_lib__1_4ring19()],
+// 1 16 0 0 -12 1 0 0 0 0 1 0 1 0 1-4ring19.dat
+  [1,16,0,0,-12,1,0,0,0,0,1,0,1,0, ldraw_lib__1_4ring19()],
 // 1 16 0 0 -12 19 0 0 0 0 19 0 1 0 4-4edge.dat
   [1,16,0,0,-12,19,0,0,0,0,19,0,1,0, ldraw_lib__4_4edge()],
 // 

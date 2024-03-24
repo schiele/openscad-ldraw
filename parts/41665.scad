@@ -22,8 +22,8 @@ use <../p/4-4ring8.scad>
 use <../p/48/2-4cylo.scad>
 use <../p/48/2-4disc.scad>
 use <../p/48/5-24cylo.scad>
-use <../p/48/5-24rin7.scad>
 use <../p/48/5-24ring13.scad>
+use <../p/48/5-24ring7.scad>
 use <../p/48/t08o0625.scad>
 use <../p/48/t12o0625.scad>
 use <../p/5-8cylo.scad>
@@ -46,7 +46,7 @@ function ldraw_lib__41665() = [
 // 0 Technic Beam  1 x  4 x  7 with  5 Axleholes and  2 Holes and  1 Slot
 // 0 Name: 41665.dat
 // 0 Author: Kevin Roach [KROACH]
-// 0 !LDRAW_ORG Part UPDATE 2016-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -54,7 +54,8 @@ function ldraw_lib__41665() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2016-12-31 [PTadmin] Official Update 2016-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 10 0 -60 0 -20 0 1 0 0 0 0 1 axlehol4.dat
   [1,16,10,0,-60,0,-20,0,1,0,0,0,0,1, ldraw_lib__axlehol4()],
@@ -464,12 +465,12 @@ function ldraw_lib__41665() = [
   [1,16,0,0,0,0,40,0,-38.9607,0,-50.7746,-50.7746,0,38.9607, ldraw_lib__48__t08o0625()],
 // 1 16 -2 0 0 0 1 0 -3.96578 0 0.522105 -0.522105 0 -3.96578 48\5-24ring13.dat
   [1,16,-2,0,0,0,1,0,-3.96578,0,0.522105,-0.522105,0,-3.96578, ldraw_lib__48__5_24ring13()],
-// 1 16 -2 0 0 0 1 0 -7.93156 0 1.04421 -1.04421 0 -7.93156 48\5-24rin7.dat
-  [1,16,-2,0,0,0,1,0,-7.93156,0,1.04421,-1.04421,0,-7.93156, ldraw_lib__48__5_24rin7()],
+// 1 16 -2 0 0 0 1 0 -7.93156 0 1.04421 -1.04421 0 -7.93156 48\5-24ring7.dat
+  [1,16,-2,0,0,0,1,0,-7.93156,0,1.04421,-1.04421,0,-7.93156, ldraw_lib__48__5_24ring7()],
 // 1 16 2 0 0 0 -1 0 -3.96578 0 0.522105 -0.522105 0 -3.96578 48\5-24ring13.dat
   [1,16,2,0,0,0,-1,0,-3.96578,0,0.522105,-0.522105,0,-3.96578, ldraw_lib__48__5_24ring13()],
-// 1 16 2 0 0 0 -1 0 -7.93156 0 1.04421 -1.04421 0 -7.93156 48\5-24rin7.dat
-  [1,16,2,0,0,0,-1,0,-7.93156,0,1.04421,-1.04421,0,-7.93156, ldraw_lib__48__5_24rin7()],
+// 1 16 2 0 0 0 -1 0 -7.93156 0 1.04421 -1.04421 0 -7.93156 48\5-24ring7.dat
+  [1,16,2,0,0,0,-1,0,-7.93156,0,1.04421,-1.04421,0,-7.93156, ldraw_lib__48__5_24ring7()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -2 0 0 0 -0.5 0 -63.4525 0 8.35368 -8.35368 0 -63.4525 48\5-24cylo.dat

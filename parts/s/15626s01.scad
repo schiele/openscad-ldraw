@@ -21,7 +21,7 @@ use <../../p/4-4cyli.scad>
 use <../../p/4-4edge.scad>
 use <../../p/48/1-6cylo.scad>
 use <../../p/48/1-6ndis.scad>
-use <../../p/48/1-8rin20.scad>
+use <../../p/48/1-8ring20.scad>
 use <../../p/5-16edge.scad>
 use <../../p/box2-5.scad>
 use <../../p/box2-7.scad>
@@ -42,7 +42,7 @@ function ldraw_lib__s__15626s01() = [
 // 0 ~Panel  4 x 16 x 10 with Gate - One Half without Patternable Areas
 // 0 Name: s\15626s01.dat
 // 0 Author: Massimo Maso [Sirio]
-// 0 !LDRAW_ORG Subpart UPDATE 2023-02
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -50,7 +50,8 @@ function ldraw_lib__s__15626s01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2023-04-17 [OrionP] Official Update 2023-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Lower door hinge
 // 0 // Primitives
@@ -365,8 +366,8 @@ function ldraw_lib__s__15626s01() = [
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 120 -20 0 0 -80 -80 0 0 0 7.5 0 48\1-6cylo.dat
   [1,16,0,120,-20,0,0,-80,-80,0,0,0,7.5,0, ldraw_lib__48__1_6cylo()],
-// 1 16 0 120 -12.5 0 0 -4 -4 0 0 0 -1 0 48\1-8rin20.dat
-  [1,16,0,120,-12.5,0,0,-4,-4,0,0,0,-1,0, ldraw_lib__48__1_8rin20()],
+// 1 16 0 120 -12.5 0 0 -4 -4 0 0 0 -1 0 48\1-8ring20.dat
+  [1,16,0,120,-12.5,0,0,-4,-4,0,0,0,-1,0, ldraw_lib__48__1_8ring20()],
 // 1 16 0 120 -16 0 0 -84 -84 0 0 0 3.5 0 48\1-6cylo.dat
   [1,16,0,120,-16,0,0,-84,-84,0,0,0,3.5,0, ldraw_lib__48__1_6cylo()],
 // 0 // Faces

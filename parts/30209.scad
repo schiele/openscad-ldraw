@@ -5,8 +5,8 @@ use <../p/3-8edge.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4edge.scad>
 use <../p/48/1-4disc.scad>
-use <../p/48/1-4rin38.scad>
-use <../p/48/1-4rin39.scad>
+use <../p/48/1-4ring38.scad>
+use <../p/48/1-4ring39.scad>
 use <../p/48/4-4cyli.scad>
 use <../p/48/4-4edge.scad>
 use <../p/axlehol5.scad>
@@ -20,20 +20,21 @@ function ldraw_lib__30209() = [
 // 0 Bracket  1 x  2 - Dish  4 x  4
 // 0 Name: 30209.dat
 // 0 Author: Paul Easter [pneaster]
-// 0 !LDRAW_ORG Part UPDATE 2004-03
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !KEYWORDS disc, dish, disk, Insectoids, Plate 1 x 2, Space, Star Wars
+// 0 !KEYWORDS Insectoids, Plate 1 x 2, Space, Star Wars, disc, dish, disk
 // 
 // 0 !HISTORY 2003-06-28 [Steffen] 48ed part, fixed CATEGORY, KEYWORDS syntax
 // 0 !HISTORY 2004-09-15 [PTadmin] Official Update 2004-03
 // 0 !HISTORY 2007-06-07 [PTadmin] Header formatted for Contributor Agreement
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // 1 x 2 plate
 // 1 16 0 4 0 1 0 0 0 -1 0 0 0 1 stud3.dat
@@ -354,22 +355,22 @@ function ldraw_lib__30209() = [
   [1,16,0,4,30,39,0,0,0,0,39,0,1,0, ldraw_lib__48__4_4edge()],
 // 1 16 0 4 30 38 0 0 0 0 38 0 1 0 48\4-4edge.dat
   [1,16,0,4,30,38,0,0,0,0,38,0,1,0, ldraw_lib__48__4_4edge()],
-// 1 16 0 4 30 1 0 0 0 0 1 0 -4 0 48\1-4rin38.dat
-  [1,16,0,4,30,1,0,0,0,0,1,0,-4,0, ldraw_lib__48__1_4rin38()],
-// 1 16 0 4 30 0 0 -1 1 0 0 0 -4 0 48\1-4rin38.dat
-  [1,16,0,4,30,0,0,-1,1,0,0,0,-4,0, ldraw_lib__48__1_4rin38()],
-// 1 16 0 4 30 -1 0 0 0 0 -1 0 -4 0 48\1-4rin38.dat
-  [1,16,0,4,30,-1,0,0,0,0,-1,0,-4,0, ldraw_lib__48__1_4rin38()],
-// 1 16 0 4 30 0 0 1 -1 0 0 0 -4 0 48\1-4rin38.dat
-  [1,16,0,4,30,0,0,1,-1,0,0,0,-4,0, ldraw_lib__48__1_4rin38()],
-// 1 16 0 4 29 1 0 0 0 0 1 0 -4 0 48\1-4rin39.dat
-  [1,16,0,4,29,1,0,0,0,0,1,0,-4,0, ldraw_lib__48__1_4rin39()],
-// 1 16 0 4 29 0 0 -1 1 0 0 0 -4 0 48\1-4rin39.dat
-  [1,16,0,4,29,0,0,-1,1,0,0,0,-4,0, ldraw_lib__48__1_4rin39()],
-// 1 16 0 4 29 -1 0 0 0 0 -1 0 -4 0 48\1-4rin39.dat
-  [1,16,0,4,29,-1,0,0,0,0,-1,0,-4,0, ldraw_lib__48__1_4rin39()],
-// 1 16 0 4 29 0 0 1 -1 0 0 0 -4 0 48\1-4rin39.dat
-  [1,16,0,4,29,0,0,1,-1,0,0,0,-4,0, ldraw_lib__48__1_4rin39()],
+// 1 16 0 4 30 1 0 0 0 0 1 0 -4 0 48\1-4ring38.dat
+  [1,16,0,4,30,1,0,0,0,0,1,0,-4,0, ldraw_lib__48__1_4ring38()],
+// 1 16 0 4 30 0 0 -1 1 0 0 0 -4 0 48\1-4ring38.dat
+  [1,16,0,4,30,0,0,-1,1,0,0,0,-4,0, ldraw_lib__48__1_4ring38()],
+// 1 16 0 4 30 -1 0 0 0 0 -1 0 -4 0 48\1-4ring38.dat
+  [1,16,0,4,30,-1,0,0,0,0,-1,0,-4,0, ldraw_lib__48__1_4ring38()],
+// 1 16 0 4 30 0 0 1 -1 0 0 0 -4 0 48\1-4ring38.dat
+  [1,16,0,4,30,0,0,1,-1,0,0,0,-4,0, ldraw_lib__48__1_4ring38()],
+// 1 16 0 4 29 1 0 0 0 0 1 0 -4 0 48\1-4ring39.dat
+  [1,16,0,4,29,1,0,0,0,0,1,0,-4,0, ldraw_lib__48__1_4ring39()],
+// 1 16 0 4 29 0 0 -1 1 0 0 0 -4 0 48\1-4ring39.dat
+  [1,16,0,4,29,0,0,-1,1,0,0,0,-4,0, ldraw_lib__48__1_4ring39()],
+// 1 16 0 4 29 -1 0 0 0 0 -1 0 -4 0 48\1-4ring39.dat
+  [1,16,0,4,29,-1,0,0,0,0,-1,0,-4,0, ldraw_lib__48__1_4ring39()],
+// 1 16 0 4 29 0 0 1 -1 0 0 0 -4 0 48\1-4ring39.dat
+  [1,16,0,4,29,0,0,1,-1,0,0,0,-4,0, ldraw_lib__48__1_4ring39()],
 // 1 16 10 14 30 1 0 0 0 0 1 0 -1 0 stud2a.dat
   [1,16,10,14,30,1,0,0,0,0,1,0,-1,0, ldraw_lib__stud2a()],
 // 0 BFC INVERTNEXT

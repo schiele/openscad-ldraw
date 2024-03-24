@@ -3,13 +3,13 @@ use <../p/4-4con9.scad>
 use <../p/4-4cylo.scad>
 use <../p/48/4-4cyli.scad>
 use <../p/48/4-4edge.scad>
-use <../p/48/4-4rin37.scad>
+use <../p/48/4-4ring37.scad>
 use <s/6578s02.scad>
 function ldraw_lib__58090() = [
 // 0 Tyre 14/ 54 x 15 VR
 // 0 Name: 58090.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2011-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CW
@@ -19,7 +19,8 @@ function ldraw_lib__58090() = [
 // 0 !KEYWORDS 30.4 x 14
 // 
 // 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Nomenclature: width_(mm)/profile_as_%age_of_width x rim_diameter_(mm)
 // 
@@ -76,10 +77,10 @@ function ldraw_lib__58090() = [
   [1,16,0,0,-5.829,38,0,0,0,0,-38,0,4.85714,0, ldraw_lib__48__4_4cyli()],
 // 1 16 0 0 -0.971 37 0 0 0 0 -37 0 1.94286 0 48\4-4cyli.dat
   [1,16,0,0,-0.971,37,0,0,0,0,-37,0,1.94286,0, ldraw_lib__48__4_4cyli()],
-// 1 16 0 0 -0.971 1 0 0 0 0 -1 0 -0.97143 0 48\4-4rin37.dat
-  [1,16,0,0,-0.971,1,0,0,0,0,-1,0,-0.97143,0, ldraw_lib__48__4_4rin37()],
-// 1 16 0 0 0.971 1 0 0 0 0 -1 0 0.97143 0 48\4-4rin37.dat
-  [1,16,0,0,0.971,1,0,0,0,0,-1,0,0.97143,0, ldraw_lib__48__4_4rin37()],
+// 1 16 0 0 -0.971 1 0 0 0 0 -1 0 -0.97143 0 48\4-4ring37.dat
+  [1,16,0,0,-0.971,1,0,0,0,0,-1,0,-0.97143,0, ldraw_lib__48__4_4ring37()],
+// 1 16 0 0 0.971 1 0 0 0 0 -1 0 0.97143 0 48\4-4ring37.dat
+  [1,16,0,0,0.971,1,0,0,0,0,-1,0,0.97143,0, ldraw_lib__48__4_4ring37()],
 // 0 // Sides
 // 4 16 33.793 -9.048 -17 34.984 0.006 -17 21 0 -17 19.402 -8.037 -17
   [4,16,33.793,-9.048,-17,34.984,0.006,-17,21,0,-17,19.402,-8.037,-17],

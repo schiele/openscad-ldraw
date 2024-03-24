@@ -6,8 +6,8 @@ use <../p/3-16ndis.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4edge.scad>
 use <../p/4-4ndis.scad>
-use <../p/4-4rin12.scad>
 use <../p/4-4ring1.scad>
+use <../p/4-4ring12.scad>
 use <../p/4-4ring3.scad>
 use <../p/4-4ring4.scad>
 use <../p/48/1-8chrd.scad>
@@ -15,8 +15,8 @@ use <../p/48/1-8con5.scad>
 use <../p/48/1-8edge.scad>
 use <../p/48/4-4cyli.scad>
 use <../p/48/4-4edge.scad>
-use <../p/48/4-4rin27.scad>
-use <../p/48/4-4rin28.scad>
+use <../p/48/4-4ring27.scad>
+use <../p/48/4-4ring28.scad>
 use <../p/7-16cyli.scad>
 use <../p/7-16edge.scad>
 use <../p/axl2hol2.scad>
@@ -28,7 +28,7 @@ function ldraw_lib__54725() = [
 // 0 ~Electric Mindstorms NXT Motor Drive Wheel
 // 0 Name: 54725.dat
 // 0 Author: Kevin Clague [kclague]
-// 0 !LDRAW_ORG Part UPDATE 2012-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -39,7 +39,8 @@ function ldraw_lib__54725() = [
 // 0 !HISTORY 2007-12-02 [Philo] Rewrite from scratch
 // 0 !HISTORY 2011-06-06 [MagFors] Closed some gaps with Unificator
 // 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 0 30 0 1 0 0 0 0 1 axl2hole.dat
   [1,16,0,0,0,0,30,0,1,0,0,0,0,1, ldraw_lib__axl2hole()],
@@ -85,12 +86,12 @@ function ldraw_lib__54725() = [
   [1,16,24.5,0,0,0,2,0,29,0,0,0,0,29, ldraw_lib__48__4_4edge()],
 // 1 16 10 0 0 0 5.5 0 28 0 0 0 0 28 48\4-4cyli.dat
   [1,16,10,0,0,0,5.5,0,28,0,0,0,0,28, ldraw_lib__48__4_4cyli()],
-// 1 16 15.5 0 0 0 5.5 0 1 0 0 0 0 1 48\4-4rin28.dat
-  [1,16,15.5,0,0,0,5.5,0,1,0,0,0,0,1, ldraw_lib__48__4_4rin28()],
-// 1 16 10 0 0 0 5.5 0 1 0 0 0 0 1 48\4-4rin27.dat
-  [1,16,10,0,0,0,5.5,0,1,0,0,0,0,1, ldraw_lib__48__4_4rin27()],
-// 1 16 10 0 0 0 5.5 0 1 0 0 0 0 1 4-4rin12.dat
-  [1,16,10,0,0,0,5.5,0,1,0,0,0,0,1, ldraw_lib__4_4rin12()],
+// 1 16 15.5 0 0 0 5.5 0 1 0 0 0 0 1 48\4-4ring28.dat
+  [1,16,15.5,0,0,0,5.5,0,1,0,0,0,0,1, ldraw_lib__48__4_4ring28()],
+// 1 16 10 0 0 0 5.5 0 1 0 0 0 0 1 48\4-4ring27.dat
+  [1,16,10,0,0,0,5.5,0,1,0,0,0,0,1, ldraw_lib__48__4_4ring27()],
+// 1 16 10 0 0 0 5.5 0 1 0 0 0 0 1 4-4ring12.dat
+  [1,16,10,0,0,0,5.5,0,1,0,0,0,0,1, ldraw_lib__4_4ring12()],
 // 1 16 24.5 0 0 0 5 0 -1.85 0 -4.465 4.465 0 -1.85 48\1-8con5.dat
   [1,16,24.5,0,0,0,5,0,-1.85,0,-4.465,4.465,0,-1.85, ldraw_lib__48__1_8con5()],
 // 1 16 24.5 0 0 0 5 0 4.465 0 -1.85 1.85 0 4.465 48\1-8con5.dat

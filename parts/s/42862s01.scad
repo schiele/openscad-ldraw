@@ -11,7 +11,7 @@ use <../../p/4-4edge.scad>
 use <../../p/4-4ring3.scad>
 use <../../p/5-16cyli.scad>
 use <../../p/5-16edge.scad>
-use <../../p/5-16rin3.scad>
+use <../../p/5-16ring3.scad>
 use <../../p/9-16edge.scad>
 use <../../p/box3u4p.scad>
 use <../../p/box3u5p.scad>
@@ -25,7 +25,7 @@ function ldraw_lib__s__42862s01() = [
 // 0 ~Wedge  3 x  3 Sloped Left without Studs and Front
 // 0 Name: s\42862s01.dat
 // 0 Author: Magnus Forsberg [MagFors]
-// 0 !LDRAW_ORG Subpart UPDATE 2019-02
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -33,7 +33,8 @@ function ldraw_lib__s__42862s01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2019-09-09 [PTadmin] Official Update 2019-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 2 24 10 0 30 -10 0 -30
   [2,24,10,0,30,-10,0,-30],
@@ -73,8 +74,8 @@ function ldraw_lib__s__42862s01() = [
   [1,16,10,24,-10,0,0,-8,0,1,0,-8,0,0, ldraw_lib__9_16edge()],
 // 1 16 10 24 -10 0 0 -2 0 -1 0 -2 0 0 1-4ring3.dat
   [1,16,10,24,-10,0,0,-2,0,-1,0,-2,0,0, ldraw_lib__1_4ring3()],
-// 1 16 10 24 -10 -2 0 0 0 -1 0 0 0 2 5-16rin3.dat
-  [1,16,10,24,-10,-2,0,0,0,-1,0,0,0,2, ldraw_lib__5_16rin3()],
+// 1 16 10 24 -10 -2 0 0 0 -1 0 0 0 2 5-16ring3.dat
+  [1,16,10,24,-10,-2,0,0,0,-1,0,0,0,2, ldraw_lib__5_16ring3()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 10 20 -10 -6 0 0 0 4 0 0 0 -6 1-4cyli.dat

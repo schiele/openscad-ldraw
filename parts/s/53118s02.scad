@@ -14,7 +14,7 @@ use <../../p/3-16cyli.scad>
 use <../../p/3-16cylo.scad>
 use <../../p/3-16edge.scad>
 use <../../p/3-16ndis.scad>
-use <../../p/3-16rin4.scad>
+use <../../p/3-16ring4.scad>
 use <../../p/3-8chrd.scad>
 use <../../p/3-8cylo.scad>
 use <../../p/3-8ring2.scad>
@@ -27,7 +27,7 @@ function ldraw_lib__s__53118s02() = [
 // 0 ~Minifig Video Game Controller without Patternable Surfaces - Half
 // 0 Name: s\53118s02.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
-// 0 !LDRAW_ORG Subpart UPDATE 2023-04
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -35,7 +35,8 @@ function ldraw_lib__s__53118s02() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2023-08-25 [OrionP] Official Update 2023-04
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Bottom
 // 3 16 0 8 -8 -4 8 -8 -4 8 -7
@@ -143,8 +144,8 @@ function ldraw_lib__s__53118s02() = [
   [1,16,-10,0,4,0,0,-5.5,0,1,0,5.5,0,0, ldraw_lib__3_16cyli()],
 // 1 16 -10 1 4 0 0 -5.5 0 5.5 0 5.5 0 0 3-16cyli.dat
   [1,16,-10,1,4,0,0,-5.5,0,5.5,0,5.5,0,0, ldraw_lib__3_16cyli()],
-// 1 16 -10 6.5 4 0 0 -1.1 0 -1 0 1.1 0 0 3-16rin4.dat
-  [1,16,-10,6.5,4,0,0,-1.1,0,-1,0,1.1,0,0, ldraw_lib__3_16rin4()],
+// 1 16 -10 6.5 4 0 0 -1.1 0 -1 0 1.1 0 0 3-16ring4.dat
+  [1,16,-10,6.5,4,0,0,-1.1,0,-1,0,1.1,0,0, ldraw_lib__3_16ring4()],
 // 1 16 -10 6.5 4 0 0 -4.5 0 1.5 0 4.5 0 0 3-16cylo.dat
   [1,16,-10,6.5,4,0,0,-4.5,0,1.5,0,4.5,0,0, ldraw_lib__3_16cylo()],
 // 1 16 -10 8 4 0 0 -4.5 0 -1 0 4.5 0 0 3-16chrd.dat

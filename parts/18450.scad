@@ -6,14 +6,14 @@ use <../p/48/4-4con5.scad>
 use <../p/48/4-4con7.scad>
 use <../p/48/4-4cylo.scad>
 use <../p/48/4-4edge.scad>
-use <../p/48/4-4rin12.scad>
+use <../p/48/4-4ring12.scad>
 use <../p/48/4-4ring6.scad>
 use <s/18450s01.scad>
 function ldraw_lib__18450() = [
 // 0 Tyre 44/ 91 x 43 R
 // 0 Name: 18450.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2014-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -25,7 +25,8 @@ function ldraw_lib__18450() = [
 // 0 !HISTORY 2014-10-16 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2014-10-17 [Philo] File preparation for LDraw Parts Tracker
 // 0 !HISTORY 2014-12-23 [PTadmin] Official Update 2014-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
@@ -59,8 +60,8 @@ function ldraw_lib__18450() = [
   [1,16,0,0,41,0,0,93.0462,93.0462,0,0,0,-82,0, ldraw_lib__48__4_4cylo()],
 // 1 16 0 0 37 0 0 56.5715 56.5715 0 0 0 1 0 48\4-4edge.dat
   [1,16,0,0,37,0,0,56.5715,56.5715,0,0,0,1,0, ldraw_lib__48__4_4edge()],
-// 1 16 0 0 29 0 0 4.15385 4.15385 0 0 0 -1 0 48\4-4rin12.dat
-  [1,16,0,0,29,0,0,4.15385,4.15385,0,0,0,-1,0, ldraw_lib__48__4_4rin12()],
+// 1 16 0 0 29 0 0 4.15385 4.15385 0 0 0 -1 0 48\4-4ring12.dat
+  [1,16,0,0,29,0,0,4.15385,4.15385,0,0,0,-1,0, ldraw_lib__48__4_4ring12()],
 // 1 16 0 0 24 0 0 8.3077 8.3077 0 0 0 1 0 48\4-4ring6.dat
   [1,16,0,0,24,0,0,8.3077,8.3077,0,0,0,1,0, ldraw_lib__48__4_4ring6()],
 // 0 BFC INVERTNEXT
@@ -97,8 +98,8 @@ function ldraw_lib__18450() = [
   [1,16,0,0,-48,0,0,77.5385,77.5385,0,0,0,-1,0, ldraw_lib__48__4_4edge()],
 // 1 16 0 0 -37 0 0 56.5715 56.5715 0 0 0 -1 0 48\4-4edge.dat
   [1,16,0,0,-37,0,0,56.5715,56.5715,0,0,0,-1,0, ldraw_lib__48__4_4edge()],
-// 1 16 0 0 -29 0 0 4.15385 4.15385 0 0 0 1 0 48\4-4rin12.dat
-  [1,16,0,0,-29,0,0,4.15385,4.15385,0,0,0,1,0, ldraw_lib__48__4_4rin12()],
+// 1 16 0 0 -29 0 0 4.15385 4.15385 0 0 0 1 0 48\4-4ring12.dat
+  [1,16,0,0,-29,0,0,4.15385,4.15385,0,0,0,1,0, ldraw_lib__48__4_4ring12()],
 // 1 16 0 0 -24 0 0 8.3077 8.3077 0 0 0 -1 0 48\4-4ring6.dat
   [1,16,0,0,-24,0,0,8.3077,8.3077,0,0,0,-1,0, ldraw_lib__48__4_4ring6()],
 // 0 BFC INVERTNEXT

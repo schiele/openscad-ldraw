@@ -2,15 +2,15 @@ use <../../lib.scad>
 use <../../p/1-4chrd.scad>
 use <../../p/1-4cylc.scad>
 use <../../p/1-4cylo.scad>
-use <../../p/1-4rin12.scad>
+use <../../p/1-4ring12.scad>
 use <../../p/1-8chrd.scad>
 use <../../p/1-8cylo.scad>
-use <../../p/1-8rin10.scad>
+use <../../p/1-8ring10.scad>
 use <../../p/1-8stud4.scad>
 use <../../p/2-4stud4.scad>
 use <../../p/3-8chrd.scad>
 use <../../p/3-8cylo.scad>
-use <../../p/3-8rin12.scad>
+use <../../p/3-8ring12.scad>
 use <../../p/rect1.scad>
 use <../../p/rect2p.scad>
 use <../../p/rect3.scad>
@@ -19,7 +19,7 @@ function ldraw_lib__s__35470s01() = [
 // 0 ~Plate  3 x  5 Cloud Shape with  3 Studs Quarter
 // 0 Name: s\35470s01.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Subpart UPDATE 2019-03
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -27,7 +27,8 @@ function ldraw_lib__s__35470s01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2019-12-27 [PTadmin] Official Update 2019-03
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 37 0 0 13 0 0 0 7 0 0 0 13 1-4cylo.dat
   [1,16,37,0,0,13,0,0,0,7,0,0,0,13, ldraw_lib__1_4cylo()],
@@ -47,12 +48,12 @@ function ldraw_lib__s__35470s01() = [
   [1,16,20,7,15.5,12,0,0,0,1,0,0,0,12, ldraw_lib__3_8cylo()],
 // 1 16 0 7 19 0 0 10 0 1 0 10 0 0 1-8cylo.dat
   [1,16,0,7,19,0,0,10,0,1,0,10,0,0, ldraw_lib__1_8cylo()],
-// 1 16 37 7 0 1 0 0 0 -1 0 0 0 1 1-4rin12.dat
-  [1,16,37,7,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__1_4rin12()],
-// 1 16 20 7 15.5 1 0 0 0 -1 0 0 0 1 3-8rin12.dat
-  [1,16,20,7,15.5,1,0,0,0,-1,0,0,0,1, ldraw_lib__3_8rin12()],
-// 1 16 0 7 19 0 0 1 0 -1 0 1 0 0 1-8rin10.dat
-  [1,16,0,7,19,0,0,1,0,-1,0,1,0,0, ldraw_lib__1_8rin10()],
+// 1 16 37 7 0 1 0 0 0 -1 0 0 0 1 1-4ring12.dat
+  [1,16,37,7,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__1_4ring12()],
+// 1 16 20 7 15.5 1 0 0 0 -1 0 0 0 1 3-8ring12.dat
+  [1,16,20,7,15.5,1,0,0,0,-1,0,0,0,1, ldraw_lib__3_8ring12()],
+// 1 16 0 7 19 0 0 1 0 -1 0 1 0 0 1-8ring10.dat
+  [1,16,0,7,19,0,0,1,0,-1,0,1,0,0, ldraw_lib__1_8ring10()],
 // 1 16 33 3.5 14.25 0 -1 0 -3.5 0 0 0 0 -1.25 rect3.dat
   [1,16,33,3.5,14.25,0,-1,0,-3.5,0,0,0,0,-1.25, ldraw_lib__rect3()],
 // 1 16 35 3.5 13 -2 0 0 0 0 -3.5 0 -1 0 rect2p.dat

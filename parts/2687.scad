@@ -4,7 +4,7 @@ use <../p/4-4cyli.scad>
 use <../p/4-4cylo.scad>
 use <../p/4-4edge.scad>
 use <../p/4-4ndis.scad>
-use <../p/4-4rin15.scad>
+use <../p/4-4ring15.scad>
 use <../p/4-4ring9.scad>
 use <../p/48/1-4cyls.scad>
 use <../p/48/1-4disc.scad>
@@ -32,7 +32,7 @@ function ldraw_lib__2687() = [
 // 0 Monorail Base  4 x 20
 // 0 Name: 2687.dat
 // 0 Author: Bernd Broich [bbroich]
-// 0 !LDRAW_ORG Part UPDATE 2014-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -44,7 +44,8 @@ function ldraw_lib__2687() = [
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
 // 0 !HISTORY 2014-11-29 [MagFors] Modified with WINDZ for BFC compliance
 // 0 !HISTORY 2014-12-23 [PTadmin] Official Update 2014-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Top Section
 // 1 16 -120 -8 0 20 0 0 0 8 0 0 0 20 box4.dat
@@ -107,8 +108,8 @@ function ldraw_lib__2687() = [
 // 0 // Ring
 // 1 16 -120 8 0 -0.75 0 0 0 -1 0 0 0 0.75 4-4ring9.dat
   [1,16,-120,8,0,-0.75,0,0,0,-1,0,0,0,0.75, ldraw_lib__4_4ring9()],
-// 1 16 -120 8 0 -0.5 0 0 0 -1 0 0 0 0.5 4-4rin15.dat
-  [1,16,-120,8,0,-0.5,0,0,0,-1,0,0,0,0.5, ldraw_lib__4_4rin15()],
+// 1 16 -120 8 0 -0.5 0 0 0 -1 0 0 0 0.5 4-4ring15.dat
+  [1,16,-120,8,0,-0.5,0,0,0,-1,0,0,0,0.5, ldraw_lib__4_4ring15()],
 // 1 16 -120 8 0 8 0 0 0 -1 0 0 0 8 4-4cyli.dat
   [1,16,-120,8,0,8,0,0,0,-1,0,0,0,8, ldraw_lib__4_4cyli()],
 // 1 16 -120 8 0 8 0 0 0 1 0 0 0 8 4-4edge.dat

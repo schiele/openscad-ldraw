@@ -1,6 +1,6 @@
 use <../../lib.scad>
 use <../../p/48/3-16ndis.scad>
-use <../../p/48/4-4rin10.scad>
+use <../../p/48/4-4ring10.scad>
 use <../../p/48/4-4ring3.scad>
 use <../../p/48/4-4ring4.scad>
 use <../../p/48/4-4ring8.scad>
@@ -9,7 +9,7 @@ function ldraw_lib__s__4201639s02a() = [
 // 0 ~Pattern Train Logo 2002-2004 - Background
 // 0 Name: s\4201639s02a.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
-// 0 !LDRAW_ORG Subpart UPDATE 2015-02
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 !HELP This Logo was in use from 2002 till 2004
@@ -19,7 +19,8 @@ function ldraw_lib__s__4201639s02a() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2015-12-30 [PTadmin] Official Update 2015-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 0.4 0 0 0 0 -0.4 0 1 0 48\4-4ring3.dat
   [1,16,0,0,0,0.4,0,0,0,0,-0.4,0,1,0, ldraw_lib__48__4_4ring3()],
@@ -29,8 +30,8 @@ function ldraw_lib__s__4201639s02a() = [
   [1,16,0,0,0,0.25,0,0,0,0,-0.25,0,1,0, ldraw_lib__48__4_4ring8()],
 // 1 16 0 0 0 0.25 0 0 0 0 -0.25 0 1 0 48\4-4ring9.dat
   [1,16,0,0,0,0.25,0,0,0,0,-0.25,0,1,0, ldraw_lib__48__4_4ring9()],
-// 1 16 0 0 0 0.25 0 0 0 0 -0.25 0 1 0 48\4-4rin10.dat
-  [1,16,0,0,0,0.25,0,0,0,0,-0.25,0,1,0, ldraw_lib__48__4_4rin10()],
+// 1 16 0 0 0 0.25 0 0 0 0 -0.25 0 1 0 48\4-4ring10.dat
+  [1,16,0,0,0,0.25,0,0,0,0,-0.25,0,1,0, ldraw_lib__48__4_4ring10()],
 // 1 16 0 0 0 0 0 -4 -4 0 0 0 1 0 48\3-16ndis.dat
   [1,16,0,0,0,0,0,-4,-4,0,0,0,1,0, ldraw_lib__48__3_16ndis()],
 // 1 16 0 0 0 0 0 -4 4 0 0 0 1 0 48\3-16ndis.dat

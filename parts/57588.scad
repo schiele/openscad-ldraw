@@ -6,7 +6,7 @@ use <../p/4-4con3.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4edge.scad>
-use <../p/4-4rin12.scad>
+use <../p/4-4ring12.scad>
 use <../p/4-4ring2.scad>
 use <../p/4-4ring4.scad>
 use <../p/box4o8a.scad>
@@ -15,7 +15,7 @@ function ldraw_lib__57588() = [
 // 0 Minifig Arm Bionicle Barraki
 // 0 Name: 57588.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2010-03
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -25,7 +25,8 @@ function ldraw_lib__57588() = [
 // 0 !HISTORY 2007-08-25 {LEGO Universe Team} Original part shape
 // 0 !HISTORY 2008-04-17 [Philo] Rewrite from scratch for LDraw Parts Tracker
 // 0 !HISTORY 2010-12-31 [PTadmin] Official Update 2010-03
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
@@ -39,8 +40,8 @@ function ldraw_lib__57588() = [
   [1,16,0,16,-8.5,0,0,6.5,6.5,0,0,0,1,0, ldraw_lib__4_4edge()],
 // 1 16 0 16 -30 0 0 2 2 0 0 0 1 0 4-4ring2.dat
   [1,16,0,16,-30,0,0,2,2,0,0,0,1,0, ldraw_lib__4_4ring2()],
-// 1 16 0 16 -30 0 0 0.5 0.5 0 0 0 1 0 4-4rin12.dat
-  [1,16,0,16,-30,0,0,0.5,0.5,0,0,0,1,0, ldraw_lib__4_4rin12()],
+// 1 16 0 16 -30 0 0 0.5 0.5 0 0 0 1 0 4-4ring12.dat
+  [1,16,0,16,-30,0,0,0.5,0.5,0,0,0,1,0, ldraw_lib__4_4ring12()],
 // 1 16 0 16 -10 0 0 4 4 0 0 0 1 0 4-4edge.dat
   [1,16,0,16,-10,0,0,4,4,0,0,0,1,0, ldraw_lib__4_4edge()],
 // 1 16 0 16 -10 0 0 4 4 0 0 0 1 0 4-4disc.dat

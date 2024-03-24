@@ -5,34 +5,35 @@ use <../p/1-8ndis.scad>
 use <../p/1-8ring5.scad>
 use <../p/1-8ring9.scad>
 use <../p/2-4ering.scad>
-use <../p/2-4rin11.scad>
-use <../p/2-4rin16.scad>
-use <../p/2-4rin17.scad>
-use <../p/2-4rin20.scad>
+use <../p/2-4ring11.scad>
+use <../p/2-4ring16.scad>
+use <../p/2-4ring17.scad>
+use <../p/2-4ring20.scad>
 use <../p/2-4ring5.scad>
 use <../p/2-4ring6.scad>
 use <../p/2-4ring7.scad>
 use <../p/2-4ring9.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4ndis.scad>
-use <../p/4-4rin10.scad>
+use <../p/4-4ring10.scad>
 use <../p/4-4ring4.scad>
 use <s/14769s01.scad>
 function ldraw_lib__14769px2() = [
 // 0 Tile  2 x  2 Round with Round Underside Stud with Metallic Silver Mechanical Pattern
 // 0 Name: 14769px2.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
-// 0 !LDRAW_ORG Part UPDATE 2020-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 14769pb226, set 21311, set 21321, set 70423, Voltron
+// 0 !KEYWORDS Bricklink 14769pb226, Voltron, set 21311, set 21321, set 70423
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\14769s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__14769s01()],
@@ -64,10 +65,10 @@ function ldraw_lib__14769px2() = [
   [1,16,13,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4ndis()],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 4-4ring4.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4ring4()],
-// 1 16 0 0 0 0.5 0 0 0 1 0 0 0 0.5 4-4rin10.dat
-  [1,16,0,0,0,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__4_4rin10()],
-// 1 80 0 0 0 0.5 0 0 0 1 0 0 0 0.5 2-4rin11.dat
-  [1,80,0,0,0,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__2_4rin11()],
+// 1 16 0 0 0 0.5 0 0 0 1 0 0 0 0.5 4-4ring10.dat
+  [1,16,0,0,0,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__4_4ring10()],
+// 1 80 0 0 0 0.5 0 0 0 1 0 0 0 0.5 2-4ring11.dat
+  [1,80,0,0,0,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__2_4ring11()],
 // 1 80 0 0 0 1 0 0 0 1 0 0 0 1 2-4ring6.dat
   [1,80,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2_4ring6()],
 // 1 80 0 0 0 3 0 0 0 1 0 0 0 3 2-4ring5.dat
@@ -82,12 +83,12 @@ function ldraw_lib__14769px2() = [
   [1,16,0,0,0,-2,0,0,0,1,0,0,0,-2, ldraw_lib__1_8ring9()],
 // 1 16 0 0 0 2 0 0 0 1 0 0 0 -2 1-8ring9.dat
   [1,16,0,0,0,2,0,0,0,1,0,0,0,-2, ldraw_lib__1_8ring9()],
-// 1 80 0 0 0 0.5 0 0 0 1 0 0 0 0.5 2-4rin20.dat
-  [1,80,0,0,0,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__2_4rin20()],
-// 1 80 0 0 0 0.5 0 0 0 1 0 0 0 0.5 2-4rin17.dat
-  [1,80,0,0,0,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__2_4rin17()],
-// 1 16 0 0 0 0.5 0 0 0 1 0 0 0 0.5 2-4rin16.dat
-  [1,16,0,0,0,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__2_4rin16()],
+// 1 80 0 0 0 0.5 0 0 0 1 0 0 0 0.5 2-4ring20.dat
+  [1,80,0,0,0,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__2_4ring20()],
+// 1 80 0 0 0 0.5 0 0 0 1 0 0 0 0.5 2-4ring17.dat
+  [1,80,0,0,0,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__2_4ring17()],
+// 1 16 0 0 0 0.5 0 0 0 1 0 0 0 0.5 2-4ring16.dat
+  [1,16,0,0,0,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__2_4ring16()],
 // 1 80 0 0 0 1 0 0 0 1 0 0 0 1 2-4ring9.dat
   [1,80,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__2_4ring9()],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 2-4ring7.dat

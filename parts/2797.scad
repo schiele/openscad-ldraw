@@ -11,8 +11,8 @@ use <../p/4-4con3.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4edge.scad>
 use <../p/4-4ndis.scad>
-use <../p/4-4rin18.scad>
-use <../p/4-4rin19.scad>
+use <../p/4-4ring18.scad>
+use <../p/4-4ring19.scad>
 use <../p/4-4ring2.scad>
 use <../p/4-4ring5.scad>
 use <../p/box2-5.scad>
@@ -22,7 +22,7 @@ function ldraw_lib__2797() = [
 // 0 ~Technic Pneumatic Cylinder 2 x 2 Base Type 2
 // 0 Name: 2797.dat
 // 0 Author: Marc Klein [marckl]
-// 0 !LDRAW_ORG Part UPDATE 2010-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -32,7 +32,8 @@ function ldraw_lib__2797() = [
 // 0 !HISTORY 2008-08-12 [guyvivan] Rework part and use more primitives
 // 0 !HISTORY 2009-12-22 [Philo] Split cylinder and base, changed origin
 // 0 !HISTORY 2010-04-05 [PTadmin] Official Update 2010-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Created with stl2dat conversion tool
 // 
@@ -50,8 +51,8 @@ function ldraw_lib__2797() = [
   [1,16,0,2,0,15,0,0,0,1,0,0,0,15, ldraw_lib__4_4edge()],
 // 1 16 0 2 0 3 0 0 0 1 0 0 0 3 4-4ring5.dat
   [1,16,0,2,0,3,0,0,0,1,0,0,0,3, ldraw_lib__4_4ring5()],
-// 1 16 0 2 0 1 0 0 0 1 0 0 0 1 4-4rin18.dat
-  [1,16,0,2,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4rin18()],
+// 1 16 0 2 0 1 0 0 0 1 0 0 0 1 4-4ring18.dat
+  [1,16,0,2,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4ring18()],
 // 1 16 0 0 0 15 0 0 0 2 0 0 0 15 4-4cyli.dat
   [1,16,0,0,0,15,0,0,0,2,0,0,0,15, ldraw_lib__4_4cyli()],
 // 1 16 0 0 0 13.8582 0 5.7403 0 1 0 -5.7403 0 13.8582 3-4disc.dat
@@ -60,8 +61,8 @@ function ldraw_lib__2797() = [
   [1,16,0,0,0,5.7403,0,13.8582,0,1,0,-13.8582,0,5.7403, ldraw_lib__1_8disc()],
 // 1 16 0 0 0 -5.7403 0 13.8582 0 1 0 -13.8582 0 -5.7403 1-8chrd.dat
   [1,16,0,0,0,-5.7403,0,13.8582,0,1,0,-13.8582,0,-5.7403, ldraw_lib__1_8chrd()],
-// 1 16 0 0 0 1 0 0 0 1 0 0 0 1 4-4rin19.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4rin19()],
+// 1 16 0 0 0 1 0 0 0 1 0 0 0 1 4-4ring19.dat
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4ring19()],
 // 1 16 0 0 0 20 0 0 0 1 0 0 0 20 4-4ndis.dat
   [1,16,0,0,0,20,0,0,0,1,0,0,0,20, ldraw_lib__4_4ndis()],
 // 0 BFC INVERTNEXT

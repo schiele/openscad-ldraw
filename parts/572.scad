@@ -10,7 +10,7 @@ use <../p/4-4ring9.scad>
 use <../p/48/4-4con30.scad>
 use <../p/48/4-4cylo.scad>
 use <../p/48/4-4edge.scad>
-use <../p/48/4-4rin29.scad>
+use <../p/48/4-4ring29.scad>
 use <../p/axlehol2.scad>
 use <../p/axlehole.scad>
 use <s/570s03.scad>
@@ -21,7 +21,7 @@ function ldraw_lib__572() = [
 // 0 Technic Gear 21 Large Tooth
 // 0 Name: 572.dat
 // 0 Author: Guy Vivan [guyvivan]
-// 0 !LDRAW_ORG Part UPDATE 2022-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -32,7 +32,8 @@ function ldraw_lib__572() = [
 // 0 !HISTORY 2020-06-04 [Sirio] Updated the use of primitives: removed ringr.dat or ringrr.dat, introduced 4-4cylo.dat
 // 0 !HISTORY 2022-02-22 [Philo] Improved teeth base edge
 // 0 !HISTORY 2022-03-06 [PTadmin] Official Update 2022-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 20 0 0 1 0 0 0 1 0 0 0 1 s\570s03.dat
   [1,16,20,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__570s03()],
@@ -102,10 +103,10 @@ function ldraw_lib__572() = [
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 8 -58 0 0 0 0 -58 0 -17 0 48\4-4cylo.dat
   [1,16,0,0,8,-58,0,0,0,0,-58,0,-17,0, ldraw_lib__48__4_4cylo()],
-// 1 16 0 0 -9 -2 0 0 0 0 -2 0 1 0 48\4-4rin29.dat
-  [1,16,0,0,-9,-2,0,0,0,0,-2,0,1,0, ldraw_lib__48__4_4rin29()],
-// 1 16 0 0 8 -2 0 0 0 0 -2 0 -1 0 48\4-4rin29.dat
-  [1,16,0,0,8,-2,0,0,0,0,-2,0,-1,0, ldraw_lib__48__4_4rin29()],
+// 1 16 0 0 -9 -2 0 0 0 0 -2 0 1 0 48\4-4ring29.dat
+  [1,16,0,0,-9,-2,0,0,0,0,-2,0,1,0, ldraw_lib__48__4_4ring29()],
+// 1 16 0 0 8 -2 0 0 0 0 -2 0 -1 0 48\4-4ring29.dat
+  [1,16,0,0,8,-2,0,0,0,0,-2,0,-1,0, ldraw_lib__48__4_4ring29()],
 // 1 16 0 0 6 2 0 0 0 0 -2 0 2 0 48\4-4con30.dat
   [1,16,0,0,6,2,0,0,0,0,-2,0,2,0, ldraw_lib__48__4_4con30()],
 // 1 16 0 0 -6 -2 0 0 0 0 -2 0 -3 0 48\4-4con30.dat

@@ -3,7 +3,7 @@ use <../p/4-4con25.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4cylo.scad>
 use <../p/4-4edge.scad>
-use <../p/4-4rin10.scad>
+use <../p/4-4ring10.scad>
 use <../p/4-4ring3.scad>
 use <../p/4-4ring6.scad>
 use <../p/t04o6250.scad>
@@ -11,7 +11,7 @@ function ldraw_lib__92761() = [
 // 0 Minifig Headdress SW Zabrak Horns
 // 0 Name: 92761.dat
 // 0 Author: Magnus Forsberg [MagFors]
-// 0 !LDRAW_ORG Part UPDATE 2012-03
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -26,7 +26,8 @@ function ldraw_lib__92761() = [
 // 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02
 // 0 !HISTORY 2012-12-24 [cwdee] Update category
 // 0 !HISTORY 2012-12-28 [PTadmin] Official Update 2012-03
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 2.15 0 12.5 0 0 0 1 0 0 0 12.5 4-4edge.dat
   [1,16,0,2.15,0,12.5,0,0,0,1,0,0,0,12.5, ldraw_lib__4_4edge()],
@@ -50,8 +51,8 @@ function ldraw_lib__92761() = [
   [1,16,0,2.15,0,0,0,-7.6923,0,-3.44,0,-7.6923,0,0, ldraw_lib__t04o6250()],
 // 1 16 0 0 0 -1 0 0 0 -1 0 0 0 1 4-4ring6.dat
   [1,16,0,0,0,-1,0,0,0,-1,0,0,0,1, ldraw_lib__4_4ring6()],
-// 1 16 0 0 0 -0.7 0 0 0 -1 0 0 0 0.7 4-4rin10.dat
-  [1,16,0,0,0,-0.7,0,0,0,-1,0,0,0,0.7, ldraw_lib__4_4rin10()],
+// 1 16 0 0 0 -0.7 0 0 0 -1 0 0 0 0.7 4-4ring10.dat
+  [1,16,0,0,0,-0.7,0,0,0,-1,0,0,0,0.7, ldraw_lib__4_4ring10()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -5 0 6 0 0 0 5 0 0 0 6 4-4cylo.dat

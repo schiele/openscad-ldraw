@@ -3,7 +3,7 @@ use <../../p/1-4cyli.scad>
 use <../../p/1-4cyls2.scad>
 use <../../p/1-4edge.scad>
 use <../../p/1-4ndis.scad>
-use <../../p/1-4rin10.scad>
+use <../../p/1-4ring10.scad>
 use <../../p/1-4ring6.scad>
 use <../../p/1-4ring9.scad>
 use <../../p/7-16cylo.scad>
@@ -11,7 +11,7 @@ function ldraw_lib__s__22969s01() = [
 // 0 ~Wheel 56 x 46 Technic Racing - 1/6
 // 0 Name: s\22969s01.dat
 // 0 Author: Marc Klein [marckl]
-// 0 !LDRAW_ORG Subpart UPDATE 2022-03
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -26,7 +26,8 @@ function ldraw_lib__s__22969s01() = [
 // 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02
 // 0 !HISTORY 2022-04-15 [MagFors] Closed gaps, adapted for connhole
 // 0 !HISTORY 2022-05-07 [PTadmin] Official Update 2022-03
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 2 20 0 0 13 0 -9 0 0 0 0 9 7-16cylo.dat
   [1,16,2,20,0,0,13,0,-9,0,0,0,0,9, ldraw_lib__7_16cylo()],
@@ -99,8 +100,8 @@ function ldraw_lib__s__22969s01() = [
   [1,16,15,20,0,0,1,0,0,0,-9,9,0,0, ldraw_lib__1_4ndis()],
 // 1 16 15 20 0 0 1 0 1.5 0 0 0 0 1.5 1-4ring6.dat
   [1,16,15,20,0,0,1,0,1.5,0,0,0,0,1.5, ldraw_lib__1_4ring6()],
-// 1 16 15 20 0 0 1 0 1.0455 0 0 0 0 1.0455 1-4rin10.dat
-  [1,16,15,20,0,0,1,0,1.0455,0,0,0,0,1.0455, ldraw_lib__1_4rin10()],
+// 1 16 15 20 0 0 1 0 1.0455 0 0 0 0 1.0455 1-4ring10.dat
+  [1,16,15,20,0,0,1,0,1.0455,0,0,0,0,1.0455, ldraw_lib__1_4ring10()],
 // 2 24 15 13.216 18.8901 15 16.617 16.617
   [2,24,15,13.216,18.8901,15,16.617,16.617],
 // 2 24 15 16.617 16.617 15 20 11.5

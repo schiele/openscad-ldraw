@@ -4,7 +4,7 @@ use <../p/4-4cylc.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4edge.scad>
-use <../p/4-4rin16.scad>
+use <../p/4-4ring16.scad>
 use <../p/4-4ring2.scad>
 use <../p/4-4ring9.scad>
 use <s/77108s01.scad>
@@ -13,7 +13,7 @@ function ldraw_lib__77108() = [
 // 0 Minifig Top Hat with Pin Attachment and Anti-Stud
 // 0 Name: 77108.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
-// 0 !LDRAW_ORG Part UPDATE 2023-04
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -24,12 +24,13 @@ function ldraw_lib__77108() = [
 // 0 !KEYWORDS Friends
 // 
 // 0 !HISTORY 2023-08-25 [OrionP] Official Update 2023-04
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 -11 0 0 0 1 0 1.5 0 -1 0 0 stud4od.dat
   [1,16,0,-11,0,0,0,1,0,1.5,0,-1,0,0, ldraw_lib__stud4od()],
-// 1 16 0 -17 0 0 0 .5 0 1 0 -.5 0 0 4-4rin16.dat
-  [1,16,0,-17,0,0,0,.5,0,1,0,-.5,0,0, ldraw_lib__4_4rin16()],
+// 1 16 0 -17 0 0 0 .5 0 1 0 -.5 0 0 4-4ring16.dat
+  [1,16,0,-17,0,0,0,.5,0,1,0,-.5,0,0, ldraw_lib__4_4ring16()],
 // 1 16 0 -17 0 0 0 8.5 0 -1 0 -8.5 0 0 4-4edge.dat
   [1,16,0,-17,0,0,0,8.5,0,-1,0,-8.5,0,0, ldraw_lib__4_4edge()],
 // 1 16 0 -11 0 0 0 2 0 1 0 -2 0 0 4-4ring2.dat

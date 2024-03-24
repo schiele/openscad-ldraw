@@ -2,7 +2,7 @@ use <../../lib.scad>
 use <../../p/1-4chrd.scad>
 use <../../p/48/1-4aring.scad>
 use <../../p/48/1-4cylo.scad>
-use <../../p/48/1-4rin14.scad>
+use <../../p/48/1-4ring14.scad>
 use <../../p/box2-7.scad>
 use <../../p/stug4-1x2.scad>
 use <../../p/stug4-3x3.scad>
@@ -10,7 +10,7 @@ function ldraw_lib__s__712as01() = [
 // 0 ~Plate  4 x  8 Curved Left - without Curved Side
 // 0 Name: s\712as01.dat
 // 0 Author: Michael Heidemann [mikeheide]
-// 0 !LDRAW_ORG Subpart UPDATE 2018-02
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -21,7 +21,8 @@ function ldraw_lib__s__712as01() = [
 // 0 !HISTORY 2015-12-08 [MMR1988] Used more prims, removed doubled edges
 // 0 !HISTORY 2015-12-13 [MagFors] Removed curved side
 // 0 !HISTORY 2018-12-08 [PTadmin] Official Update 2018-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 4 16 76 4 -36 -76 4 -36 -20 4 36 76 4 36
   [4,16,76,4,-36,-76,4,-36,-20,4,36,76,4,36],
@@ -46,8 +47,8 @@ function ldraw_lib__s__712as01() = [
 // 2 24 76 8 -36 76 4 -36
   [2,24,76,8,-36,76,4,-36],
 // 0 // Face Bottom
-// 1 16 -20 8 -20 -4 0 0 0 -1 0 0 0 4 48\1-4rin14.dat
-  [1,16,-20,8,-20,-4,0,0,0,-1,0,0,0,4, ldraw_lib__48__1_4rin14()],
+// 1 16 -20 8 -20 -4 0 0 0 -1 0 0 0 4 48\1-4ring14.dat
+  [1,16,-20,8,-20,-4,0,0,0,-1,0,0,0,4, ldraw_lib__48__1_4ring14()],
 // 4 16 -80 8 -20 -76 8 -20 -76 8 -36 -80 8 -40
   [4,16,-80,8,-20,-76,8,-20,-76,8,-36,-80,8,-40],
 // 4 16 -80 8 -40 -76 8 -36 76 8 -36 80 8 -40

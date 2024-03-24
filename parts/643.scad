@@ -9,7 +9,7 @@ use <../p/48/1-8chrd.scad>
 use <../p/48/4-4con22.scad>
 use <../p/48/4-4cyli.scad>
 use <../p/48/4-4edge.scad>
-use <../p/48/4-4rin21.scad>
+use <../p/48/4-4ring21.scad>
 use <../p/stud2a.scad>
 use <../p/stud4.scad>
 use <../p/toothl.scad>
@@ -17,14 +17,14 @@ function ldraw_lib__643() = [
 // 0 Technic Gear 35 Large Tooth
 // 0 Name: 643.dat
 // 0 Author: Tore Eriksson [Tore_Eriksson]
-// 0 !LDRAW_ORG Part UPDATE 2009-03
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS gear, pre-technic, Samsonite
+// 0 !KEYWORDS Samsonite, gear, pre-technic
 // 
 // 0 !CMDLINE -c1
 // 
@@ -34,7 +34,8 @@ function ldraw_lib__643() = [
 // 0 !HISTORY 2008-07-07 [guyvivan] Made BFC compliant and use more primitives (2005-01-03)
 // 0 !HISTORY 2008-07-08 [cwdee] Moved from 743.dat and rotated about Y (2005-01-04)
 // 0 !HISTORY 2009-12-29 [PTadmin] Official Update 2009-03
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 6 0 0 92 -92 0 0 0 -12 0 48\4-4cyli.dat
   [1,16,0,0,6,0,0,92,-92,0,0,0,-12,0, ldraw_lib__48__4_4cyli()],
@@ -58,8 +59,8 @@ function ldraw_lib__643() = [
   [1,16,0,0,-6,0,0,4,-4,0,0,0,-3,0, ldraw_lib__48__4_4con22()],
 // 1 16 0 0 6 0 0 -4 -4 0 0 0 3 0 48\4-4con22.dat
   [1,16,0,0,6,0,0,-4,-4,0,0,0,3,0, ldraw_lib__48__4_4con22()],
-// 1 16 0 0 9 0 0 4 -4 0 0 0 -1 0 48\4-4rin21.dat
-  [1,16,0,0,9,0,0,4,-4,0,0,0,-1,0, ldraw_lib__48__4_4rin21()],
+// 1 16 0 0 9 0 0 4 -4 0 0 0 -1 0 48\4-4ring21.dat
+  [1,16,0,0,9,0,0,4,-4,0,0,0,-1,0, ldraw_lib__48__4_4ring21()],
 // 2 24 6.765 4 -6 6.765 4 -2
   [2,24,6.765,4,-6,6.765,4,-2],
 // 2 24 4 -6.765 -6 4 -6.765 -2

@@ -1,4 +1,5 @@
 use <../lib.scad>
+use <54696p02.scad>
 use <u9218c01.scad>
 function ldraw_lib__54696p02c01() = [
 // 0 Electric Powered Up Medium Angular Motor with Light Bluish Grey Back and Hub with Coiled Cable
@@ -16,7 +17,8 @@ function ldraw_lib__54696p02c01() = [
 // 0 !HISTORY 2023-06-24 [OrionP] Official Update 2023-03
 // 
 // 
-// 0 1 16 0 0 0 1 0 0 0 1 0 0 0 1 54696p02.dat
+// 1 16 0 0 0 1 0 0 0 1 0 0 0 1 54696p02.dat
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__54696p02()],
 // 1 511 0 0 142 1 0 0 0 1 0 0 0 1 u9218c01.dat
   [1,511,0,0,142,1,0,0,0,1,0,0,0,1, ldraw_lib__u9218c01()],
 ];

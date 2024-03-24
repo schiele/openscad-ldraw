@@ -1,9 +1,9 @@
 use <../../lib.scad>
 function ldraw_lib__48__1_16rin3() = [
-// 0 Hi-Res Ring  3 x 0.0625
+// 0 ~Hi-Res Ring  3 x 0.0625 (Obsolete)
 // 0 Name: 48\1-16rin3.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG 48_Primitive UPDATE 2013-02
+// 0 !LDRAW_ORG 48_Primitive UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -11,7 +11,8 @@ function ldraw_lib__48__1_16rin3() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2013-12-23 [PTadmin] Official Update 2013-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Obsolete, use 48\1-16ring3.dat
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 4 16 4 0 0 3.9656 0 0.522 2.9742 0 0.3915 3 0 0
   [4,16,4,0,0,3.9656,0,0.522,2.9742,0,0.3915,3,0,0],

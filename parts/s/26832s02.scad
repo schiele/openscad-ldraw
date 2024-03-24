@@ -9,7 +9,7 @@ use <../../p/3-16con5.scad>
 use <../../p/3-16cyli.scad>
 use <../../p/3-16edge.scad>
 use <../../p/3-16ndis.scad>
-use <../../p/3-16rin3.scad>
+use <../../p/3-16ring3.scad>
 use <../../p/rect1.scad>
 use <../../p/t08i4643.scad>
 use <../../p/t16i4643.scad>
@@ -17,7 +17,7 @@ function ldraw_lib__s__26832s02() = [
 // 0 ~Duplo Brick Gear Tooth
 // 0 Name: s\26832s02.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Subpart UPDATE 2023-04
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -27,7 +27,8 @@ function ldraw_lib__s__26832s02() = [
 // 0 !HISTORY 2020-12-12 {LEGO/Unity Microgame} Original part shape
 // 0 !HISTORY 2021-01-13 [Philo] File preparation for LDraw Parts Tracker
 // 0 !HISTORY 2023-08-25 [OrionP] Official Update 2023-04
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 35 81 13 0 0 0 -25 0 0 0 13 2-4cyli.dat
   [1,16,0,35,81,13,0,0,0,-25,0,0,0,13, ldraw_lib__2_4cyli()],
@@ -79,8 +80,8 @@ function ldraw_lib__s__26832s02() = [
   [1,16,0,8,81,4.33333,0,0,0,-4,0,0,0,4.33333, ldraw_lib__2_4con1()],
 // 1 16 0 4 81 4.33333 0 0 0 -1 0 0 0 4.33333 2-4chrd.dat
   [1,16,0,4,81,4.33333,0,0,0,-1,0,0,0,4.33333, ldraw_lib__2_4chrd()],
-// 1 16 -28 35 71 5 0 0 0 -1 0 0 0 -4.83333 3-16rin3.dat
-  [1,16,-28,35,71,5,0,0,0,-1,0,0,0,-4.83333, ldraw_lib__3_16rin3()],
+// 1 16 -28 35 71 5 0 0 0 -1 0 0 0 -4.83333 3-16ring3.dat
+  [1,16,-28,35,71,5,0,0,0,-1,0,0,0,-4.83333, ldraw_lib__3_16ring3()],
 // 1 16 -28 35 71 20 0 0 0 -1 0 0 0 -19.33333 3-16edge.dat
   [1,16,-28,35,71,20,0,0,0,-1,0,0,0,-19.33333, ldraw_lib__3_16edge()],
 // 2 24 -8 35 71 -8.6667 35 81
@@ -99,8 +100,8 @@ function ldraw_lib__s__26832s02() = [
   [3,16,-4.3333,4,81,-8,8,71,-8.6667,8,81],
 // 1 16 -28 4 71 24 0 0 0 -1 0 0 0 -23.2 3-16ndis.dat
   [1,16,-28,4,71,24,0,0,0,-1,0,0,0,-23.2, ldraw_lib__3_16ndis()],
-// 1 16 28 35 71 -5 0 0 0 -1 0 0 0 -4.83333 3-16rin3.dat
-  [1,16,28,35,71,-5,0,0,0,-1,0,0,0,-4.83333, ldraw_lib__3_16rin3()],
+// 1 16 28 35 71 -5 0 0 0 -1 0 0 0 -4.83333 3-16ring3.dat
+  [1,16,28,35,71,-5,0,0,0,-1,0,0,0,-4.83333, ldraw_lib__3_16ring3()],
 // 1 16 28 35 71 -20 0 0 0 -1 0 0 0 -19.33333 3-16edge.dat
   [1,16,28,35,71,-20,0,0,0,-1,0,0,0,-19.33333, ldraw_lib__3_16edge()],
 // 2 24 8 35 71 8.6667 35 81

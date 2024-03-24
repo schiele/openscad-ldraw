@@ -7,7 +7,7 @@ use <../../p/4-4cyli.scad>
 use <../../p/4-4cylo.scad>
 use <../../p/4-4edge.scad>
 use <../../p/4-4ndis.scad>
-use <../../p/4-4rin11.scad>
+use <../../p/4-4ring11.scad>
 use <../../p/4-4ring2.scad>
 use <../../p/4-4ring5.scad>
 use <../../p/48/1-4chrd.scad>
@@ -19,7 +19,7 @@ function ldraw_lib__s__u9492s01() = [
 // 0 ~Figure Duplo Bust Tall Head without Face
 // 0 Name: s\u9492s01.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Subpart UPDATE 2022-01
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -27,7 +27,8 @@ function ldraw_lib__s__u9492s01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
@@ -51,8 +52,8 @@ function ldraw_lib__s__u9492s01() = [
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -42 0 28.875 0 0 0 37 0 0 0 28.875 4-4cylo.dat
   [1,16,0,-42,0,28.875,0,0,0,37,0,0,0,28.875, ldraw_lib__4_4cylo()],
-// 1 16 0 -42 0 2.625 0 0 0 1 0 0 0 2.625 4-4rin11.dat
-  [1,16,0,-42,0,2.625,0,0,0,1,0,0,0,2.625, ldraw_lib__4_4rin11()],
+// 1 16 0 -42 0 2.625 0 0 0 1 0 0 0 2.625 4-4ring11.dat
+  [1,16,0,-42,0,2.625,0,0,0,1,0,0,0,2.625, ldraw_lib__4_4ring11()],
 // 1 16 0 -42 0 31.5 0 0 0 1 0 0 0 31.5 48\4-4aring.dat
   [1,16,0,-42,0,31.5,0,0,0,1,0,0,0,31.5, ldraw_lib__48__4_4aring()],
 // 1 16 0 -42 0 31.5 0 0 0 1 0 0 0 31.5 48\4-4edge.dat

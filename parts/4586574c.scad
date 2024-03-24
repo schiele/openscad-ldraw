@@ -1,7 +1,7 @@
 use <../lib.scad>
 use <../p/1-4chrd.scad>
-use <../p/1-4rin12.scad>
-use <../p/1-4rin16.scad>
+use <../p/1-4ring12.scad>
+use <../p/1-4ring16.scad>
 use <../p/1-4tang.scad>
 use <../p/1-8chrd.scad>
 use <../p/3-8chrd.scad>
@@ -10,20 +10,21 @@ function ldraw_lib__4586574c() = [
 // 0 Sticker  1.8 x  1.8 Round with White Curved Double Arrow with Black Outline on Yellow Background
 // 0 Name: 4586574c.dat
 // 0 Author: David Manley [djm]
-// 0 !LDRAW_ORG Part UPDATE 2020-03
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS railway, set 7939, Train
+// 0 !KEYWORDS Train, railway, set 7939
 // 
 // 0 !HISTORY 2019-07-03 [Holly-Wood] Added primitives, polished pattern
 // 0 !HISTORY 2020-06-29 [Cheenzo] Added 1-4ering primitives
 // 0 !HISTORY 2020-07-20 [MagFors] removed ering, used chrd and tang primitives
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 17.5 0 0 0 -.25 0 0 0 17.5 4-4cylc3.dat
   [1,16,0,0,0,17.5,0,0,0,-.25,0,0,0,17.5, ldraw_lib__4_4cylc3()],
@@ -42,8 +43,8 @@ function ldraw_lib__4586574c() = [
 // 4 0 -5.98 -.25 11.6 -4.65 -.25 11.6 -.8 -.25 14.5 0 -.25 16.1
   [4,0,-5.98,-.25,11.6,-4.65,-.25,11.6,-.8,-.25,14.5,0,-.25,16.1],
 // 0 // Inside outline
-// 1 0 0 -.25 0 .8 0 0 0 1 0 0 0 .8 1-4rin12.dat
-  [1,0,0,-.25,0,.8,0,0,0,1,0,0,0,.8, ldraw_lib__1_4rin12()],
+// 1 0 0 -.25 0 .8 0 0 0 1 0 0 0 .8 1-4ring12.dat
+  [1,0,0,-.25,0,.8,0,0,0,1,0,0,0,.8, ldraw_lib__1_4ring12()],
 // 4 0 14.5 -.25 -.8 16.1 -.25 0 13.6 -.25 0 12.8 -.25 -.8
   [4,0,14.5,-.25,-.8,16.1,-.25,0,13.6,-.25,0,12.8,-.25,-.8],
 // 3 0 12.8 -.25 -.8 13.6 -.25 0 12.8 -.25 0
@@ -57,8 +58,8 @@ function ldraw_lib__4586574c() = [
 // 4 0 11.6 -.25 -5.98 11.6 -.25 -4.65 8.7 -.25 -.8 7.1 -.25 0
   [4,0,11.6,-.25,-5.98,11.6,-.25,-4.65,8.7,-.25,-.8,7.1,-.25,0],
 // 0 // Outside outline
-// 1 0 0 -.25 0 .8 0 0 0 1 0 0 0 .8 1-4rin16.dat
-  [1,0,0,-.25,0,.8,0,0,0,1,0,0,0,.8, ldraw_lib__1_4rin16()],
+// 1 0 0 -.25 0 .8 0 0 0 1 0 0 0 .8 1-4ring16.dat
+  [1,0,0,-.25,0,.8,0,0,0,1,0,0,0,.8, ldraw_lib__1_4ring16()],
 // 
 // 0 // One arrow head
 // 3 15 -.8 -.25 10.4 -.8 -.25 12.8 -4.65 -.25 11.6

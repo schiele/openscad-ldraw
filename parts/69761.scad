@@ -12,7 +12,7 @@ use <../p/48/1-4tang.scad>
 use <../p/48/4-4con8.scad>
 use <../p/48/4-4cyli.scad>
 use <../p/48/4-4edge.scad>
-use <../p/48/4-4rin10.scad>
+use <../p/48/4-4ring10.scad>
 use <../p/peghole.scad>
 use <s/69761s01.scad>
 use <s/69761s02.scad>
@@ -20,7 +20,7 @@ function ldraw_lib__69761() = [
 // 0 Technic Gear 22 Tooth Bevel with Peghole
 // 0 Name: 69761.dat
 // 0 Author: Jens Brühl [jb70]
-// 0 !LDRAW_ORG Part UPDATE 2023-04
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -28,7 +28,8 @@ function ldraw_lib__69761() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2023-08-25 [OrionP] Official Update 2023-04
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\69761s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__69761s01()],
@@ -40,8 +41,8 @@ function ldraw_lib__69761() = [
   [1,16,0,0,10,32.8,0,0,0,0,32.8,0,-1,0, ldraw_lib__48__4_4edge()],
 // 1 16 0 0 8 29.15 0 0 0 0 29.15 0 -1 0 48\4-4edge.dat
   [1,16,0,0,8,29.15,0,0,0,0,29.15,0,-1,0, ldraw_lib__48__4_4edge()],
-// 1 16 0 0 8 2.65 0 0 0 0 2.65 0 -1 0 48\4-4rin10.dat
-  [1,16,0,0,8,2.65,0,0,0,0,2.65,0,-1,0, ldraw_lib__48__4_4rin10()],
+// 1 16 0 0 8 2.65 0 0 0 0 2.65 0 -1 0 48\4-4ring10.dat
+  [1,16,0,0,8,2.65,0,0,0,0,2.65,0,-1,0, ldraw_lib__48__4_4ring10()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 10 3.64375 0 0 0 0 3.64375 0 -2 0 48\4-4con8.dat

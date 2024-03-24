@@ -2,16 +2,17 @@ use <../../lib.scad>
 function ldraw_lib__48__3_8edge() = [
 // 0 Hi-Res Circle 0.375
 // 0 Name: 48\3-8edge.dat
-// 0 Author: Guy Vivan [guyvivan]
-// 0 !LDRAW_ORG 48_Primitive UPDATE 2009-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 Author: Willy Tschager [Holly-Wood]
+// 0 !LDRAW_ORG 48_Primitive UPDATE 2024-02
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2009-05-02 [PTadmin] Official Update 2009-01
-// 
+// 0 !HISTORY 2024-01-29 [Holly-Wood] Complete regeneration, original by guyvivan
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 2 24 1 0 0 0.9914 0 0.1305
   [2,24,1,0,0,0.9914,0,0.1305],
@@ -49,9 +50,7 @@ function ldraw_lib__48__3_8edge() = [
   [2,24,-0.5,0,0.866,-0.6088,0,0.7934],
 // 2 24 -0.6088 0 0.7934 -0.7071 0 0.7071
   [2,24,-0.6088,0,0.7934,-0.7071,0,0.7071],
-// 
-// 0 end of file
-// 
+// 0 // Build by LDPartEditor (PrimGen 2.X)
 ];
 module ldraw_lib__48__3_8edge(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
     makepoly(ldraw_lib__48__3_8edge(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);

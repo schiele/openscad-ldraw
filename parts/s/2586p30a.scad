@@ -1,5 +1,5 @@
 use <../../lib.scad>
-use <../../p/1-4rin17.scad>
+use <../../p/1-4ring17.scad>
 use <../../p/1-4ring9.scad>
 use <../../p/4-4disc.scad>
 use <../../p/4-4ndis.scad>
@@ -7,7 +7,7 @@ function ldraw_lib__s__2586p30a() = [
 // 0 ~Minifig Shield Ovoid with Indigo Islanders Pattern - Half
 // 0 Name: s\2586p30a.dat
 // 0 Author: Chris Dee [cwdee]
-// 0 !LDRAW_ORG Subpart UPDATE 2011-02
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CW
@@ -15,7 +15,8 @@ function ldraw_lib__s__2586p30a() = [
   [0,"BFC","CW"],
 // 
 // 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 4 4 17 -14.5 -8 20 -14.5 -8 19 -2.5 -8 16 -9 -8
   [4,4,17,-14.5,-8,20,-14.5,-8,19,-2.5,-8,16,-9,-8],
@@ -233,8 +234,8 @@ function ldraw_lib__s__2586p30a() = [
 // 3 1 3.696 -1.469 -8 3.5 -3 -8 5.344 -3.102 -8
   [3,1,3.696,-1.469,-8,3.5,-3,-8,5.344,-3.102,-8],
 // 
-// 1 4 0 -14.5 -8 1 0 0 0 0 -1 0 1 0 1-4rin17.dat
-  [1,4,0,-14.5,-8,1,0,0,0,0,-1,0,1,0, ldraw_lib__1_4rin17()],
+// 1 4 0 -14.5 -8 1 0 0 0 0 -1 0 1 0 1-4ring17.dat
+  [1,4,0,-14.5,-8,1,0,0,0,0,-1,0,1,0, ldraw_lib__1_4ring17()],
 // 1 4 0 -14.5 -8 2 0 0 0 0 -2 0 1 0 1-4ring9.dat
   [1,4,0,-14.5,-8,2,0,0,0,0,-2,0,1,0, ldraw_lib__1_4ring9()],
 // 

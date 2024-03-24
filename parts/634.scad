@@ -1,6 +1,6 @@
 use <../lib.scad>
 use <../p/2-4cylo.scad>
-use <../p/2-4rin11.scad>
+use <../p/2-4ring11.scad>
 use <../p/2-4ring4.scad>
 use <../p/3-16cylo.scad>
 use <../p/box2-5.scad>
@@ -12,7 +12,7 @@ function ldraw_lib__634() = [
 // 0 Conveyor Belt Rubber Cleated
 // 0 Name: 634.dat
 // 0 Author: Arne Hackstein
-// 0 !LDRAW_ORG Part UPDATE 2015-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -26,7 +26,8 @@ function ldraw_lib__634() = [
 // 0 !HISTORY 2014-12-28 [cwdee] BFCed, more primitives, corrected cyli length
 // 0 !HISTORY 2015-01-04 [MagFors] Used box primitives
 // 0 !HISTORY 2015-10-11 [PTadmin] Official Update 2015-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 -15 0 0 0 -27.5 0 4 0 140 0 0 box3u10p.dat
   [1,16,0,-15,0,0,0,-27.5,0,4,0,140,0,0, ldraw_lib__box3u10p()],
@@ -40,20 +41,20 @@ function ldraw_lib__634() = [
   [0,"BFC","INVERTNEXT"],
 // 1 16 27.5 0 -140 0 -55 0 11 0 0 0 0 -11 2-4cylo.dat
   [1,16,27.5,0,-140,0,-55,0,11,0,0,0,0,-11, ldraw_lib__2_4cylo()],
-// 1 16 27.5 0 140 0 -1 0 1 0 0 0 0 1 2-4rin11.dat
-  [1,16,27.5,0,140,0,-1,0,1,0,0,0,0,1, ldraw_lib__2_4rin11()],
+// 1 16 27.5 0 140 0 -1 0 1 0 0 0 0 1 2-4ring11.dat
+  [1,16,27.5,0,140,0,-1,0,1,0,0,0,0,1, ldraw_lib__2_4ring11()],
 // 1 16 27.5 0 140 0 -1 0 3 0 0 0 0 3 2-4ring4.dat
   [1,16,27.5,0,140,0,-1,0,3,0,0,0,0,3, ldraw_lib__2_4ring4()],
-// 1 16 -27.5 0 140 0 1 0 1 0 0 0 0 1 2-4rin11.dat
-  [1,16,-27.5,0,140,0,1,0,1,0,0,0,0,1, ldraw_lib__2_4rin11()],
+// 1 16 -27.5 0 140 0 1 0 1 0 0 0 0 1 2-4ring11.dat
+  [1,16,-27.5,0,140,0,1,0,1,0,0,0,0,1, ldraw_lib__2_4ring11()],
 // 1 16 -27.5 0 140 0 1 0 3 0 0 0 0 3 2-4ring4.dat
   [1,16,-27.5,0,140,0,1,0,3,0,0,0,0,3, ldraw_lib__2_4ring4()],
-// 1 16 27.5 0 -140 0 -1 0 1 0 0 0 0 -1 2-4rin11.dat
-  [1,16,27.5,0,-140,0,-1,0,1,0,0,0,0,-1, ldraw_lib__2_4rin11()],
+// 1 16 27.5 0 -140 0 -1 0 1 0 0 0 0 -1 2-4ring11.dat
+  [1,16,27.5,0,-140,0,-1,0,1,0,0,0,0,-1, ldraw_lib__2_4ring11()],
 // 1 16 27.5 0 -140 0 -1 0 3 0 0 0 0 -3 2-4ring4.dat
   [1,16,27.5,0,-140,0,-1,0,3,0,0,0,0,-3, ldraw_lib__2_4ring4()],
-// 1 16 -27.5 0 -140 0 1 0 1 0 0 0 0 -1 2-4rin11.dat
-  [1,16,-27.5,0,-140,0,1,0,1,0,0,0,0,-1, ldraw_lib__2_4rin11()],
+// 1 16 -27.5 0 -140 0 1 0 1 0 0 0 0 -1 2-4ring11.dat
+  [1,16,-27.5,0,-140,0,1,0,1,0,0,0,0,-1, ldraw_lib__2_4ring11()],
 // 1 16 -27.5 0 -140 0 1 0 3 0 0 0 0 -3 2-4ring4.dat
   [1,16,-27.5,0,-140,0,1,0,3,0,0,0,0,-3, ldraw_lib__2_4ring4()],
 // 

@@ -1,14 +1,14 @@
 use <../lib.scad>
 use <../p/48/2-4ndis.scad>
-use <../p/48/4-4rin10.scad>
-use <../p/48/4-4rin11.scad>
+use <../p/48/4-4ring10.scad>
+use <../p/48/4-4ring11.scad>
 use <../p/48/4-4ring6.scad>
 use <s/4066bs01.scad>
 function ldraw_lib__4066bp18() = [
 // 0 Duplo Brick  1 x  2 x  2 with Road Sign Speed Limit 50 Pattern
 // 0 Name: 4066bp18.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
-// 0 !LDRAW_ORG Part UPDATE 2020-03
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -16,17 +16,18 @@ function ldraw_lib__4066bp18() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Brick
-// 0 !KEYWORDS bricklink 4066pb072, police, Set 2451, Set 2672, Set 9165, Traffic
+// 0 !KEYWORDS Set 2451, Set 2672, Set 9165, Traffic, bricklink 4066pb072, police
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4066bs01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4066bs01()],
-// 1 0 0 37 -20 2 0 0 0 0 -2 0 1 0 48\4-4rin10.dat
-  [1,0,0,37,-20,2,0,0,0,0,-2,0,1,0, ldraw_lib__48__4_4rin10()],
-// 1 4 0 37 -20 2 0 0 0 0 -2 0 1 0 48\4-4rin11.dat
-  [1,4,0,37,-20,2,0,0,0,0,-2,0,1,0, ldraw_lib__48__4_4rin11()],
+// 1 0 0 37 -20 2 0 0 0 0 -2 0 1 0 48\4-4ring10.dat
+  [1,0,0,37,-20,2,0,0,0,0,-2,0,1,0, ldraw_lib__48__4_4ring10()],
+// 1 4 0 37 -20 2 0 0 0 0 -2 0 1 0 48\4-4ring11.dat
+  [1,4,0,37,-20,2,0,0,0,0,-2,0,1,0, ldraw_lib__48__4_4ring11()],
 // 1 4 0 37 -20 4 0 0 0 0 -4 0 1 0 48\4-4ring6.dat
   [1,4,0,37,-20,4,0,0,0,0,-4,0,1,0, ldraw_lib__48__4_4ring6()],
 // 1 16 0 37 -20 30 0 0 0 0 -30 0 1 0 48\2-4ndis.dat

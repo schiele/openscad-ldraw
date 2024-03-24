@@ -1,12 +1,12 @@
 use <../lib.scad>
 use <../p/48/4-4cylc3.scad>
-use <../p/48/4-4rin14.scad>
+use <../p/48/4-4ring14.scad>
 use <../p/48/4-4ring9.scad>
 function ldraw_lib__6337749d() = [
 // 0 Sticker  1.8 x  1.8 Round with Two Bees on Medium Lavender Background
 // 0 Name: 6337749d.dat
 // 0 Author: Evert-Jan Boer [ejboer]
-// 0 !LDRAW_ORG Part UPDATE 2022-03
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -16,15 +16,16 @@ function ldraw_lib__6337749d() = [
 // 0 !KEYWORDS Set 21326, Winnie the Pooh
 // 
 // 0 !HISTORY 2022-05-07 [PTadmin] Official Update 2022-03
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 17.5 0 0 0 -.25 0 0 0 17.5 48\4-4cylc3.dat
   [1,16,0,0,0,17.5,0,0,0,-.25,0,0,0,17.5, ldraw_lib__48__4_4cylc3()],
 // 
 // 1 70 0 -.25 0 1.75 0 0 0 1 0 0 0 1.75 48\4-4ring9.dat
   [1,70,0,-.25,0,1.75,0,0,0,1,0,0,0,1.75, ldraw_lib__48__4_4ring9()],
-// 1 0 0 -.25 0 1.05 0 0 0 1 0 0 0 1.05 48\4-4rin14.dat
-  [1,0,0,-.25,0,1.05,0,0,0,1,0,0,0,1.05, ldraw_lib__48__4_4rin14()],
+// 1 0 0 -.25 0 1.05 0 0 0 1 0 0 0 1.05 48\4-4ring14.dat
+  [1,0,0,-.25,0,1.05,0,0,0,1,0,0,0,1.05, ldraw_lib__48__4_4ring14()],
 // 4 15 3.7455 -.25 -.8187 4.0004 -.25 -.1134 .7418 -.25 2.0797 .1063 -.25 1.3364
   [4,15,3.7455,-.25,-.8187,4.0004,-.25,-.1134,.7418,-.25,2.0797,.1063,-.25,1.3364],
 // 4 15 .7418 -.25 2.0797 4.0004 -.25 -.1134 4.2187 -.25 .7115 1.5001 -.25 2.6776

@@ -1,12 +1,12 @@
 use <../../lib.scad>
 use <../../p/48/1-4disc.scad>
-use <../../p/48/1-4rin39.scad>
+use <../../p/48/1-4ring39.scad>
 use <../../p/48/1-4ring9.scad>
 function ldraw_lib__s__92747p01s01() = [
 // 0 ~Minifig Shield Oval with SW Gungan Patrol Shield Pattern - Quarter
 // 0 Name: s\92747p01s01.dat
 // 0 Author: Evert-Jan Boer [ejboer]
-// 0 !LDRAW_ORG Subpart UPDATE 2017-01
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -14,10 +14,11 @@ function ldraw_lib__s__92747p01s01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
-// 
-// 1 16 0 0 0 -0.5 0 0 0 0 -0.965 0 1 0 48\1-4rin39.dat
-  [1,16,0,0,0,-0.5,0,0,0,0,-0.965,0,1,0, ldraw_lib__48__1_4rin39()],
+// 1 16 0 0 0 -0.5 0 0 0 0 -0.965 0 1 0 48\1-4ring39.dat
+  [1,16,0,0,0,-0.5,0,0,0,0,-0.965,0,1,0, ldraw_lib__48__1_4ring39()],
 // 1 16 0 0 0 -4.5 0 0 0 0 -7.2 0 1 0 48\1-4disc.dat
   [1,16,0,0,0,-4.5,0,0,0,0,-7.2,0,1,0, ldraw_lib__48__1_4disc()],
 // 1 0 0 0 0 -0.5 0 0 0 0 -0.8 0 1 0 48\1-4ring9.dat

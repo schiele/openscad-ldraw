@@ -4,15 +4,15 @@ use <../p/4-4con4.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4cylo.scad>
 use <../p/4-4edge.scad>
-use <../p/4-4rin12.scad>
-use <../p/4-4rin15.scad>
+use <../p/4-4ring12.scad>
+use <../p/4-4ring15.scad>
 use <../p/4-4ring2.scad>
 use <../p/4-4ring6.scad>
 function ldraw_lib__3139() = [
 // 0 Tyre  4/ 80 x  8 Single Smooth Type 1
 // 0 Name: 3139.dat
 // 0 Author: James Jessiman
-// 0 !LDRAW_ORG Part UPDATE 2022-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -32,7 +32,8 @@ function ldraw_lib__3139() = [
 // 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01
 // 0 !HISTORY 2020-02-29 [MagFors] Corrected inner dimension, should fit both rim 20 and 4624
 // 0 !HISTORY 2022-03-06 [PTadmin] Official Update 2022-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Nomenclature: width_(mm)/profile_as_%age_of_width x rim_diameter_(mm)
 // 
@@ -150,32 +151,32 @@ function ldraw_lib__3139() = [
   [1,16,5,0,0,0,.5,0,15,0,0,0,0,15, ldraw_lib__4_4cylo()],
 // 1 16 5 0 0 0 .5 0 16 0 0 0 0 16 4-4cylo.dat
   [1,16,5,0,0,0,.5,0,16,0,0,0,0,16, ldraw_lib__4_4cylo()],
-// 1 16 5.5 0 0 0 -1 0 1 0 0 0 0 1 4-4rin15.dat
-  [1,16,5.5,0,0,0,-1,0,1,0,0,0,0,1, ldraw_lib__4_4rin15()],
+// 1 16 5.5 0 0 0 -1 0 1 0 0 0 0 1 4-4ring15.dat
+  [1,16,5.5,0,0,0,-1,0,1,0,0,0,0,1, ldraw_lib__4_4ring15()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 5 0 0 0 .5 0 12 0 0 0 0 12 4-4cylo.dat
   [1,16,5,0,0,0,.5,0,12,0,0,0,0,12, ldraw_lib__4_4cylo()],
 // 1 16 5 0 0 0 .5 0 13 0 0 0 0 13 4-4cylo.dat
   [1,16,5,0,0,0,.5,0,13,0,0,0,0,13, ldraw_lib__4_4cylo()],
-// 1 16 5.5 0 0 0 -1 0 1 0 0 0 0 1 4-4rin12.dat
-  [1,16,5.5,0,0,0,-1,0,1,0,0,0,0,1, ldraw_lib__4_4rin12()],
+// 1 16 5.5 0 0 0 -1 0 1 0 0 0 0 1 4-4ring12.dat
+  [1,16,5.5,0,0,0,-1,0,1,0,0,0,0,1, ldraw_lib__4_4ring12()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -5 0 0 0 -.5 0 15 0 0 0 0 15 4-4cylo.dat
   [1,16,-5,0,0,0,-.5,0,15,0,0,0,0,15, ldraw_lib__4_4cylo()],
 // 1 16 -5 0 0 0 -.5 0 16 0 0 0 0 16 4-4cylo.dat
   [1,16,-5,0,0,0,-.5,0,16,0,0,0,0,16, ldraw_lib__4_4cylo()],
-// 1 16 -5.5 0 0 0 1 0 1 0 0 0 0 1 4-4rin15.dat
-  [1,16,-5.5,0,0,0,1,0,1,0,0,0,0,1, ldraw_lib__4_4rin15()],
+// 1 16 -5.5 0 0 0 1 0 1 0 0 0 0 1 4-4ring15.dat
+  [1,16,-5.5,0,0,0,1,0,1,0,0,0,0,1, ldraw_lib__4_4ring15()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -5 0 0 0 -.5 0 12 0 0 0 0 12 4-4cylo.dat
   [1,16,-5,0,0,0,-.5,0,12,0,0,0,0,12, ldraw_lib__4_4cylo()],
 // 1 16 -5 0 0 0 -.5 0 13 0 0 0 0 13 4-4cylo.dat
   [1,16,-5,0,0,0,-.5,0,13,0,0,0,0,13, ldraw_lib__4_4cylo()],
-// 1 16 -5.5 0 0 0 1 0 1 0 0 0 0 1 4-4rin12.dat
-  [1,16,-5.5,0,0,0,1,0,1,0,0,0,0,1, ldraw_lib__4_4rin12()],
+// 1 16 -5.5 0 0 0 1 0 1 0 0 0 0 1 4-4ring12.dat
+  [1,16,-5.5,0,0,0,1,0,1,0,0,0,0,1, ldraw_lib__4_4ring12()],
 ];
 module ldraw_lib__3139(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
     makepoly(ldraw_lib__3139(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);

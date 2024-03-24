@@ -12,21 +12,21 @@ use <../p/1-8ring2.scad>
 use <../p/1-8ring9.scad>
 use <../p/2-4disc.scad>
 use <../p/2-4ndis.scad>
-use <../p/2-4rin16.scad>
 use <../p/2-4ring1.scad>
+use <../p/2-4ring16.scad>
 use <../p/2-4ring2.scad>
 use <../p/2-4ring7.scad>
 use <../p/3-16chrd.scad>
 use <../p/3-16ndis.scad>
 use <../p/3-4chrd.scad>
-use <../p/3-8rin16.scad>
+use <../p/3-8ring16.scad>
 use <../p/3-8ring7.scad>
 use <s/973s01.scad>
 function ldraw_lib__973p69() = [
 // 0 Minifig Torso with Space Police II and Radio Pattern
 // 0 Name: 973p69.dat
 // 0 Author: Thomas Burger [grapeape]
-// 0 !LDRAW_ORG Part UPDATE 2018-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -43,7 +43,8 @@ function ldraw_lib__973p69() = [
 // 0 !HISTORY 2017-10-04 [MagFors] Modified with WINDZ for BFC compliance
 // 0 !HISTORY 2017-10-07 [MagFors] Reworked text "SPACE POLICE"
 // 0 !HISTORY 2018-01-30 [PTadmin] Official Update 2018-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],
@@ -600,8 +601,8 @@ function ldraw_lib__973p69() = [
   [1,4,-7.542,11.244,-10,.574,0,0,0,0,-.504,0,1,0, ldraw_lib__2_4ring1()],
 // 1 4 -7.542 11.244 -10 .164 0 0 0 0 -.144 0 1 0 2-4ring7.dat
   [1,4,-7.542,11.244,-10,.164,0,0,0,0,-.144,0,1,0, ldraw_lib__2_4ring7()],
-// 1 4 -7.542 11.244 -10 .082 0 0 0 0 -.072 0 1 0 2-4rin16.dat
-  [1,4,-7.542,11.244,-10,.082,0,0,0,0,-.072,0,1,0, ldraw_lib__2_4rin16()],
+// 1 4 -7.542 11.244 -10 .082 0 0 0 0 -.072 0 1 0 2-4ring16.dat
+  [1,4,-7.542,11.244,-10,.082,0,0,0,0,-.072,0,1,0, ldraw_lib__2_4ring16()],
 // 1 2 -7.542 11.244 -10 1.394 0 0 0 0 -1.224 0 1 0 2-4ndis.dat
   [1,2,-7.542,11.244,-10,1.394,0,0,0,0,-1.224,0,1,0, ldraw_lib__2_4ndis()],
 // 1 2 -7.542 12.18 -10 -.40586 0 .40586 .35636 0 .35636 0 1 0 1-4chrd.dat
@@ -610,8 +611,8 @@ function ldraw_lib__973p69() = [
   [1,4,-7.542,12.18,-10,-.40586,0,.40586,.35636,0,.35636,0,1,0, ldraw_lib__1_4ring1()],
 // 1 4 -7.542 12.18 -10 -.15154 0 .06277 .05512 0 .13306 0 1 0 3-8ring7.dat
   [1,4,-7.542,12.18,-10,-.15154,0,.06277,.05512,0,.13306,0,1,0, ldraw_lib__3_8ring7()],
-// 1 4 -7.542 12.18 -10 -.07577 0 .03137 .02754 0 .06653 0 1 0 3-8rin16.dat
-  [1,4,-7.542,12.18,-10,-.07577,0,.03137,.02754,0,.06653,0,1,0, ldraw_lib__3_8rin16()],
+// 1 4 -7.542 12.18 -10 -.07577 0 .03137 .02754 0 .06653 0 1 0 3-8ring16.dat
+  [1,4,-7.542,12.18,-10,-.07577,0,.03137,.02754,0,.06653,0,1,0, ldraw_lib__3_8ring16()],
 // 1 2 -7.542 12.18 -10 0 0 1.394 1.224 0 0 0 1 0 3-16ndis.dat
   [1,2,-7.542,12.18,-10,0,0,1.394,1.224,0,0,0,1,0, ldraw_lib__3_16ndis()],
 // 1 2 -7.542 12.18 -10 0 0 -1.394 1.224 0 0 0 1 0 3-16ndis.dat

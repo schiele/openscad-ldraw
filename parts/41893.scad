@@ -5,15 +5,15 @@ use <../p/48/4-4con27.scad>
 use <../p/48/4-4con9.scad>
 use <../p/48/4-4cyli.scad>
 use <../p/48/4-4edge.scad>
-use <../p/48/4-4rin25.scad>
-use <../p/48/4-4rin26.scad>
+use <../p/48/4-4ring25.scad>
+use <../p/48/4-4ring26.scad>
 use <../p/48/4-4ring6.scad>
 use <s/41893s01.scad>
 function ldraw_lib__41893() = [
 // 0 Tyre 36/ 36 x 43 H Off-Road
 // 0 Name: 41893.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2013-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -21,7 +21,8 @@ function ldraw_lib__41893() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2013-07-21 [PTadmin] Official Update 2013-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\41893s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__41893s01()],
@@ -99,10 +100,10 @@ function ldraw_lib__41893() = [
   [1,16,0,0,-29,0,0,50,-50,0,0,0,5,0, ldraw_lib__48__4_4cyli()],
 // 1 16 0 0 -29 0 0 54 -54 0 0 0 1 0 48\4-4edge.dat
   [1,16,0,0,-29,0,0,54,-54,0,0,0,1,0, ldraw_lib__48__4_4edge()],
-// 1 16 0 0 -29 0 0 2 -2 0 0 0 1 0 48\4-4rin25.dat
-  [1,16,0,0,-29,0,0,2,-2,0,0,0,1,0, ldraw_lib__48__4_4rin25()],
-// 1 16 0 0 -29 0 0 2 -2 0 0 0 1 0 48\4-4rin26.dat
-  [1,16,0,0,-29,0,0,2,-2,0,0,0,1,0, ldraw_lib__48__4_4rin26()],
+// 1 16 0 0 -29 0 0 2 -2 0 0 0 1 0 48\4-4ring25.dat
+  [1,16,0,0,-29,0,0,2,-2,0,0,0,1,0, ldraw_lib__48__4_4ring25()],
+// 1 16 0 0 -29 0 0 2 -2 0 0 0 1 0 48\4-4ring26.dat
+  [1,16,0,0,-29,0,0,2,-2,0,0,0,1,0, ldraw_lib__48__4_4ring26()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 -39 0 0 2 -2 0 0 0 6 0 48\4-4con27.dat
@@ -247,10 +248,10 @@ function ldraw_lib__41893() = [
   [1,16,0,0,29,0,0,-50,-50,0,0,0,-5,0, ldraw_lib__48__4_4cyli()],
 // 1 16 0 0 29 0 0 -54 -54 0 0 0 -1 0 48\4-4edge.dat
   [1,16,0,0,29,0,0,-54,-54,0,0,0,-1,0, ldraw_lib__48__4_4edge()],
-// 1 16 0 0 29 0 0 -2 -2 0 0 0 -1 0 48\4-4rin25.dat
-  [1,16,0,0,29,0,0,-2,-2,0,0,0,-1,0, ldraw_lib__48__4_4rin25()],
-// 1 16 0 0 29 0 0 -2 -2 0 0 0 -1 0 48\4-4rin26.dat
-  [1,16,0,0,29,0,0,-2,-2,0,0,0,-1,0, ldraw_lib__48__4_4rin26()],
+// 1 16 0 0 29 0 0 -2 -2 0 0 0 -1 0 48\4-4ring25.dat
+  [1,16,0,0,29,0,0,-2,-2,0,0,0,-1,0, ldraw_lib__48__4_4ring25()],
+// 1 16 0 0 29 0 0 -2 -2 0 0 0 -1 0 48\4-4ring26.dat
+  [1,16,0,0,29,0,0,-2,-2,0,0,0,-1,0, ldraw_lib__48__4_4ring26()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 39 0 0 -2 -2 0 0 0 -6 0 48\4-4con27.dat

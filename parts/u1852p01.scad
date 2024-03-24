@@ -1,11 +1,11 @@
 use <../lib.scad>
-use <../p/4-4rin14.scad>
+use <../p/4-4ring14.scad>
 use <s/u1852s01.scad>
 function ldraw_lib__u1852p01() = [
 // 0 Roadsign Round Small without Base with No Entry Wide Pattern
 // 0 Name: u1852p01.dat
 // 0 Author: J.C. Tchang [tchang]
-// 0 !LDRAW_ORG Part UPDATE 2010-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -13,13 +13,14 @@ function ldraw_lib__u1852p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2010-07-05 [PTadmin] Official Update 2010-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\u1852s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__u1852s01()],
 // 0 //
-// 1 16 0 -59 -2.1 1 0 0 0 0 -1 0 1 0 4-4rin14.dat
-  [1,16,0,-59,-2.1,1,0,0,0,0,-1,0,1,0, ldraw_lib__4_4rin14()],
+// 1 16 0 -59 -2.1 1 0 0 0 0 -1 0 1 0 4-4ring14.dat
+  [1,16,0,-59,-2.1,1,0,0,0,0,-1,0,1,0, ldraw_lib__4_4ring14()],
 // 4 16 12.7 -57 -2.1 12.7 -61 -2.1 -12.7 -61 -2.1 -12.7 -57 -2.1
   [4,16,12.7,-57,-2.1,12.7,-61,-2.1,-12.7,-61,-2.1,-12.7,-57,-2.1],
 // 4 4 -14 -59 -2.1 -12.7 -57 -2.1 -12.7 -61 -2.1 -12.9346 -64.3578 -2.1

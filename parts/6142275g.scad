@@ -3,9 +3,9 @@ use <../p/1-4chrd.scad>
 use <../p/1-4cyli.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4ndis.scad>
-use <../p/4-4rin10.scad>
-use <../p/4-4rin11.scad>
-use <../p/4-4rin12.scad>
+use <../p/4-4ring10.scad>
+use <../p/4-4ring11.scad>
+use <../p/4-4ring12.scad>
 use <../p/4-4ring3.scad>
 use <../p/4-4ring4.scad>
 use <../p/box3u12.scad>
@@ -16,17 +16,18 @@ function ldraw_lib__6142275g() = [
 // 0 Sticker  1.2 x  1.8 with Lights and Levers on Dark Bluish Grey Background
 // 0 Name: 6142275g.dat
 // 0 Author: Massimo Maso [Sirio]
-// 0 !LDRAW_ORG Part UPDATE 2024-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Audi, e-tron, quattro, R18, Set 75872, Speed Champions
+// 0 !KEYWORDS Audi, R18, Set 75872, Speed Champions, e-tron, quattro
 // 
 // 0 !HISTORY 2024-01-29 [OrionP] Official Update 2024-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Subparts
 // 
@@ -87,18 +88,18 @@ function ldraw_lib__6142275g() = [
   [1,72,16.5,-.25,-10.6422,1.5,0,0,0,1,0,0,0,-1.5, ldraw_lib__1_4chrd()],
 // 1 71 -11.5 -.25 5.825 1.375 0 0 0 1 0 0 0 1.375 4-4disc.dat
   [1,71,-11.5,-.25,5.825,1.375,0,0,0,1,0,0,0,1.375, ldraw_lib__4_4disc()],
-// 1 0 -11.5 -.25 5.825 .125 0 0 0 1 0 0 0 .125 4-4rin11.dat
-  [1,0,-11.5,-.25,5.825,.125,0,0,0,1,0,0,0,.125, ldraw_lib__4_4rin11()],
+// 1 0 -11.5 -.25 5.825 .125 0 0 0 1 0 0 0 .125 4-4ring11.dat
+  [1,0,-11.5,-.25,5.825,.125,0,0,0,1,0,0,0,.125, ldraw_lib__4_4ring11()],
 // 1 0 -11.5 -.25 5.825 .375 0 0 0 1 0 0 0 .375 4-4ring4.dat
   [1,0,-11.5,-.25,5.825,.375,0,0,0,1,0,0,0,.375, ldraw_lib__4_4ring4()],
 // 1 4 -11.5 -.25 5.825 .625 0 0 0 1 0 0 0 .625 4-4ring3.dat
   [1,4,-11.5,-.25,5.825,.625,0,0,0,1,0,0,0,.625, ldraw_lib__4_4ring3()],
-// 1 4 -11.5 -.25 5.825 .25 0 0 0 1 0 0 0 .25 4-4rin10.dat
-  [1,4,-11.5,-.25,5.825,.25,0,0,0,1,0,0,0,.25, ldraw_lib__4_4rin10()],
-// 1 0 -11.5 -.25 5.825 .25 0 0 0 1 0 0 0 .25 4-4rin11.dat
-  [1,0,-11.5,-.25,5.825,.25,0,0,0,1,0,0,0,.25, ldraw_lib__4_4rin11()],
-// 1 0 -11.5 -.25 5.825 .25 0 0 0 1 0 0 0 .25 4-4rin12.dat
-  [1,0,-11.5,-.25,5.825,.25,0,0,0,1,0,0,0,.25, ldraw_lib__4_4rin12()],
+// 1 4 -11.5 -.25 5.825 .25 0 0 0 1 0 0 0 .25 4-4ring10.dat
+  [1,4,-11.5,-.25,5.825,.25,0,0,0,1,0,0,0,.25, ldraw_lib__4_4ring10()],
+// 1 0 -11.5 -.25 5.825 .25 0 0 0 1 0 0 0 .25 4-4ring11.dat
+  [1,0,-11.5,-.25,5.825,.25,0,0,0,1,0,0,0,.25, ldraw_lib__4_4ring11()],
+// 1 0 -11.5 -.25 5.825 .25 0 0 0 1 0 0 0 .25 4-4ring12.dat
+  [1,0,-11.5,-.25,5.825,.25,0,0,0,1,0,0,0,.25, ldraw_lib__4_4ring12()],
 // 1 72 -11.5 -.25 5.825 3.25 0 0 0 1 0 0 0 3.25 4-4ndis.dat
   [1,72,-11.5,-.25,5.825,3.25,0,0,0,1,0,0,0,3.25, ldraw_lib__4_4ndis()],
 // 1 4 -4.5 -.25 6.675 1.5 0 0 0 1 0 0 0 1.5 4-4disc.dat

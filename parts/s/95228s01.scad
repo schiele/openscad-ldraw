@@ -7,7 +7,7 @@ use <../../p/4-4cyli.scad>
 use <../../p/4-4cylo.scad>
 use <../../p/4-4disc.scad>
 use <../../p/4-4edge.scad>
-use <../../p/4-4rin10.scad>
+use <../../p/4-4ring10.scad>
 use <../../p/4-4ring4.scad>
 use <../../p/4-4ring5.scad>
 use <../../p/4-4ring6.scad>
@@ -20,7 +20,7 @@ function ldraw_lib__s__95228s01() = [
 // 0 ~Minifig Bottle  1 x  1 x  2 Cylindrical without Patterned Area
 // 0 Name: s\95228s01.dat
 // 0 Author: Magnus Forsberg [MagFors]
-// 0 !LDRAW_ORG Subpart UPDATE 2011-01
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -28,7 +28,8 @@ function ldraw_lib__s__95228s01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2011-07-25 [PTadmin] Official Update 2011-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 43 0 5 0 0 0 1 0 0 0 5 4-4edge.dat
   [1,16,0,43,0,5,0,0,0,1,0,0,0,5, ldraw_lib__4_4edge()],
@@ -106,8 +107,8 @@ function ldraw_lib__s__95228s01() = [
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 3.454794 0 0 0 -5.454794 0 -5.454794 0 -5.454794 0 0 t04i2667.dat
   [1,16,0,3.454794,0,0,0,-5.454794,0,-5.454794,0,-5.454794,0,0, ldraw_lib__t04i2667()],
-// 1 16 0 2 0 0.545479 0 0 0 -1 0 0 0 -0.545479 4-4rin10.dat
-  [1,16,0,2,0,0.545479,0,0,0,-1,0,0,0,-0.545479, ldraw_lib__4_4rin10()],
+// 1 16 0 2 0 0.545479 0 0 0 -1 0 0 0 -0.545479 4-4ring10.dat
+  [1,16,0,2,0,0.545479,0,0,0,-1,0,0,0,-0.545479, ldraw_lib__4_4ring10()],
 // 1 16 0 2 0 1 0 0 0 -1 0 0 0 -1 4-4ring6.dat
   [1,16,0,2,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__4_4ring6()],
 // 1 16 0 0 0 7 0 0 0 2 0 0 0 7 4-4cylo.dat

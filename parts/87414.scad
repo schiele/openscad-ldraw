@@ -1,13 +1,13 @@
 use <../lib.scad>
 use <../p/4-4con7.scad>
 use <../p/4-4cylo.scad>
-use <../p/4-4rin16.scad>
+use <../p/4-4ring16.scad>
 use <s/87414s01.scad>
 function ldraw_lib__87414() = [
 // 0 Tyre  6/ 50 x  8 Offset Tread with Centre Band
 // 0 Name: 87414.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2014-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -17,7 +17,8 @@ function ldraw_lib__87414() = [
 // 0 !HISTORY 2013-08-14 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2014-10-30 [Philo] File preparation for LDraw Parts Tracker
 // 0 !HISTORY 2014-12-23 [PTadmin] Official Update 2014-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Nomenclature: width_(mm)/profile_as_percentage_of_width x rim_diameter_(mm)
 // 
@@ -81,10 +82,10 @@ function ldraw_lib__87414() = [
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 3 8.75 0 0 0 0 8.75 0 -2.5 0 4-4cylo.dat
   [1,16,0,0,3,8.75,0,0,0,0,8.75,0,-2.5,0, ldraw_lib__4_4cylo()],
-// 1 16 0 0 0.5 0.54688 0 0 0 0 0.54688 0 1 0 4-4rin16.dat
-  [1,16,0,0,0.5,0.54688,0,0,0,0,0.54688,0,1,0, ldraw_lib__4_4rin16()],
-// 1 16 0 0 -0.5 0.54688 0 0 0 0 0.54688 0 -1 0 4-4rin16.dat
-  [1,16,0,0,-0.5,0.54688,0,0,0,0,0.54688,0,-1,0, ldraw_lib__4_4rin16()],
+// 1 16 0 0 0.5 0.54688 0 0 0 0 0.54688 0 1 0 4-4ring16.dat
+  [1,16,0,0,0.5,0.54688,0,0,0,0,0.54688,0,1,0, ldraw_lib__4_4ring16()],
+// 1 16 0 0 -0.5 0.54688 0 0 0 0 0.54688 0 -1 0 4-4ring16.dat
+  [1,16,0,0,-0.5,0.54688,0,0,0,0,0.54688,0,-1,0, ldraw_lib__4_4ring16()],
 ];
 module ldraw_lib__87414(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
     makepoly(ldraw_lib__87414(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);

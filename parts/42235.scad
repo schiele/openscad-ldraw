@@ -7,8 +7,8 @@ use <../p/4-4con5.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4edge.scad>
-use <../p/4-4rin17.scad>
-use <../p/4-4rin39.scad>
+use <../p/4-4ring17.scad>
+use <../p/4-4ring39.scad>
 use <../p/axle.scad>
 use <../p/stud8.scad>
 use <../p/t01i3333.scad>
@@ -20,7 +20,7 @@ function ldraw_lib__42235() = [
 // 0 Duplo Vehicle Cement Mixer Bucket
 // 0 Name: 42235.dat
 // 0 Author: Michael Heidemann [mikeheide]
-// 0 !LDRAW_ORG Part UPDATE 2014-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -30,7 +30,8 @@ function ldraw_lib__42235() = [
 // 0 !CATEGORY Vehicle
 // 
 // 0 !HISTORY 2014-06-21 [PTadmin] Official Update 2014-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 65 0 1 0 0 0 -3 0 0 0 -1 stud8.dat
   [1,16,0,65,0,1,0,0,0,-3,0,0,0,-1, ldraw_lib__stud8()],
@@ -56,10 +57,10 @@ function ldraw_lib__42235() = [
   [1,16,0,5,0,39,0,0,0,5,0,0,0,39, ldraw_lib__4_4cyli()],
 // 1 16 0 -9 0 39 0 0 0 5 0 0 0 39 4-4cyli.dat
   [1,16,0,-9,0,39,0,0,0,5,0,0,0,39, ldraw_lib__4_4cyli()],
-// 1 16 0 -4 0 1 0 0 0 1 0 0 0 1 4-4rin39.dat
-  [1,16,0,-4,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4rin39()],
-// 1 16 0 5 0 1 0 0 0 -1 0 0 0 -1 4-4rin39.dat
-  [1,16,0,5,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__4_4rin39()],
+// 1 16 0 -4 0 1 0 0 0 1 0 0 0 1 4-4ring39.dat
+  [1,16,0,-4,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4ring39()],
+// 1 16 0 5 0 1 0 0 0 -1 0 0 0 -1 4-4ring39.dat
+  [1,16,0,5,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__4_4ring39()],
 // 1 16 0 5 0 39 0 0 0 5 0 0 0 39 4-4edge.dat
   [1,16,0,5,0,39,0,0,0,5,0,0,0,39, ldraw_lib__4_4edge()],
 // 1 16 0 -4 0 39 0 0 0 5 0 0 0 39 4-4edge.dat
@@ -80,8 +81,8 @@ function ldraw_lib__42235() = [
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 5 0 2 0 0 0 -33 0 0 0 -2 4-4con17.dat
   [1,16,0,5,0,2,0,0,0,-33,0,0,0,-2, ldraw_lib__4_4con17()],
-// 1 16 0 -28 0 2 0 0 0 1 0 0 0 2 4-4rin17.dat
-  [1,16,0,-28,0,2,0,0,0,1,0,0,0,2, ldraw_lib__4_4rin17()],
+// 1 16 0 -28 0 2 0 0 0 1 0 0 0 2 4-4ring17.dat
+  [1,16,0,-28,0,2,0,0,0,1,0,0,0,2, ldraw_lib__4_4ring17()],
 // 1 16 0 5 0 40 0 0 0 5 0 0 0 40 4-4edge.dat
   [1,16,0,5,0,40,0,0,0,5,0,0,0,40, ldraw_lib__4_4edge()],
 // 1 16 0 -4 0 40 0 0 0 5 0 0 0 40 4-4edge.dat

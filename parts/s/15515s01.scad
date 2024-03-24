@@ -1,7 +1,7 @@
 use <../../lib.scad>
 use <../../p/3-16chrd.scad>
 use <../../p/3-16cylo.scad>
-use <../../p/3-16rin9.scad>
+use <../../p/3-16ring9.scad>
 use <../../p/48/3-16aring.scad>
 use <../../p/48/3-16chrd.scad>
 use <../../p/48/3-16cylo.scad>
@@ -9,7 +9,7 @@ function ldraw_lib__s__15515s01() = [
 // 0 ~Duplo Plant Flower  4 x  4 x  1 with  5 Round Petals and  4 Top Studs - Petal Half
 // 0 Name: s\15515s01.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Subpart UPDATE 2022-03
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -19,7 +19,8 @@ function ldraw_lib__s__15515s01() = [
 // 0 !HISTORY 2020-12-12 {LEGO/Unity Microgame} Original part shape
 // 0 !HISTORY 2021-01-22 [Philo] File preparation for LDraw Parts Tracker
 // 0 !HISTORY 2022-05-07 [PTadmin] Official Update 2022-03
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 -41 0 0 -40 0 0 0 24 0 0 0 37 48\3-16cylo.dat
   [1,16,-41,0,0,-40,0,0,0,24,0,0,0,37, ldraw_lib__48__3_16cylo()],
@@ -41,8 +42,8 @@ function ldraw_lib__s__15515s01() = [
   [0,"BFC","INVERTNEXT"],
 // 1 16 -41 4 0 -36 0 0 0 20 0 0 0 33.3 3-16cylo.dat
   [1,16,-41,4,0,-36,0,0,0,20,0,0,0,33.3, ldraw_lib__3_16cylo()],
-// 1 16 -41 24 0 -4 0 0 0 -1 0 0 0 3.7 3-16rin9.dat
-  [1,16,-41,24,0,-4,0,0,0,-1,0,0,0,3.7, ldraw_lib__3_16rin9()],
+// 1 16 -41 24 0 -4 0 0 0 -1 0 0 0 3.7 3-16ring9.dat
+  [1,16,-41,24,0,-4,0,0,0,-1,0,0,0,3.7, ldraw_lib__3_16ring9()],
 // 1 16 -41 24 0 -40 0 0 0 -1 0 0 0 37 48\3-16aring.dat
   [1,16,-41,24,0,-40,0,0,0,-1,0,0,0,37, ldraw_lib__48__3_16aring()],
 // 1 16 -41 4 0 -36 0 0 0 -1 0 0 0 33.3 3-16chrd.dat

@@ -3,7 +3,7 @@ use <../p/48/1-24chrd.scad>
 use <../p/48/3-16chrd.scad>
 use <../p/48/4-4cyli.scad>
 use <../p/48/4-4disc.scad>
-use <../p/48/4-4rin12.scad>
+use <../p/48/4-4ring12.scad>
 use <../p/48/4-4ring35.scad>
 use <../p/48/4-4ring4.scad>
 use <../p/type-swiss721bt-bold-lm.scad>
@@ -13,7 +13,7 @@ function ldraw_lib__169675d() = [
 // 0 Sticker  1.9 x  1.9 Round with "10 m" Height Restriction Sign
 // 0 Name: 169675d.dat
 // 0 Author: Ulrich Röder [UR]
-// 0 !LDRAW_ORG Part UPDATE 2019-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -23,15 +23,16 @@ function ldraw_lib__169675d() = [
 // 0 !KEYWORDS Set 4555, Station, Train, Transport
 // 
 // 0 !HISTORY 2019-09-09 [PTadmin] Official Update 2019-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Main
 // 1 16 0 -.25 0 19.5 0 0 0 .25 0 0 0 19.5 48\4-4cyli.dat
   [1,16,0,-.25,0,19.5,0,0,0,.25,0,0,0,19.5, ldraw_lib__48__4_4cyli()],
 // 1 16 0 0 0 19.5 0 0 0 -1 0 0 0 19.5 48\4-4disc.dat
   [1,16,0,0,0,19.5,0,0,0,-1,0,0,0,19.5, ldraw_lib__48__4_4disc()],
-// 1 16 0 -.25 0 1.5 0 0 0 1 0 0 0 -1.5 48\4-4rin12.dat
-  [1,16,0,-.25,0,1.5,0,0,0,1,0,0,0,-1.5, ldraw_lib__48__4_4rin12()],
+// 1 16 0 -.25 0 1.5 0 0 0 1 0 0 0 -1.5 48\4-4ring12.dat
+  [1,16,0,-.25,0,1.5,0,0,0,1,0,0,0,-1.5, ldraw_lib__48__4_4ring12()],
 // 
 // 0 // Red
 // 1 4 0 -.25 0 3.5 0 0 0 1 0 0 0 -3.5 48\4-4ring4.dat

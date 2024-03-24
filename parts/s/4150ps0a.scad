@@ -1,13 +1,13 @@
 use <../../lib.scad>
 use <../../p/1-8chrd.scad>
-use <../../p/1-8rin39.scad>
+use <../../p/1-8ring39.scad>
 use <../../p/4-4disc.scad>
 use <../../p/4-4ndis.scad>
 function ldraw_lib__s__4150ps0a() = [
 // 0 ~Tile  2 x  2 Round with Hexagonal Hatch Pattern - 1/4
 // 0 Name: s\4150ps0a.dat
 // 0 Author: Alex Taylor [anathema]
-// 0 !LDRAW_ORG Subpart UPDATE 2011-01
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -15,7 +15,8 @@ function ldraw_lib__s__4150ps0a() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2011-07-25 [PTadmin] Official Update 2011-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 4 16 -30 0 6 -9 0 6 -9 0 10 -30 0 10
   [4,16,-30,0,6,-9,0,6,-9,0,10,-30,0,10],
@@ -281,8 +282,8 @@ function ldraw_lib__s__4150ps0a() = [
   [4,16,-40,0,14,-40,0,2,-37,0,2,-37,0,14],
 // 1 16 0 0 0 -141.421 0 -141.421 0 1 0 141.421 0 -141.421 1-8chrd.dat
   [1,16,0,0,0,-141.421,0,-141.421,0,1,0,141.421,0,-141.421, ldraw_lib__1_8chrd()],
-// 1 16 0 0 0 0 0 -5 0 1 0 5 0 0 1-8rin39.dat
-  [1,16,0,0,0,0,0,-5,0,1,0,5,0,0, ldraw_lib__1_8rin39()],
+// 1 16 0 0 0 0 0 -5 0 1 0 5 0 0 1-8ring39.dat
+  [1,16,0,0,0,0,0,-5,0,1,0,5,0,0, ldraw_lib__1_8ring39()],
 // 0
 ];
 module ldraw_lib__s__4150ps0a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)

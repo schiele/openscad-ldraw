@@ -11,8 +11,8 @@ use <../p/48/4-4con75.scad>
 use <../p/48/4-4cyli.scad>
 use <../p/48/4-4cylo.scad>
 use <../p/48/4-4edge.scad>
-use <../p/48/4-4rin10.scad>
-use <../p/48/4-4rin11.scad>
+use <../p/48/4-4ring10.scad>
+use <../p/48/4-4ring11.scad>
 use <../p/48/4-4ring4.scad>
 use <../p/axlehol2.scad>
 use <../p/axlehole.scad>
@@ -22,7 +22,7 @@ function ldraw_lib__t1071() = [
 // 0 | BBB Train Wheel Medium Flanged Driver 24.0 mm
 // 0 Name: t1071.dat
 // 0 Author: Ulrich Röder [UR]
-// 0 !LDRAW_ORG Part UPDATE 2022-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -33,7 +33,8 @@ function ldraw_lib__t1071() = [
 // 0 !KEYWORDS Big Ben Bricks, Third Party
 // 
 // 0 !HISTORY 2022-03-06 [PTadmin] Official Update 2022-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Rim I
 // 
@@ -47,14 +48,14 @@ function ldraw_lib__t1071() = [
   [1,16,0,0,-3,0,0,.474349,.474349,0,0,0,-.5,0, ldraw_lib__48__4_4con75()],
 // 1 16 0 0 -2 0 0 .237174 .237174 0 0 0 -1 0 48\4-4con152.dat
   [1,16,0,0,-2,0,0,.237174,.237174,0,0,0,-1,0, ldraw_lib__48__4_4con152()],
-// 1 16 0 0 -19.75 0 0 2.41 2.41 0 0 0 1 0 48\4-4rin11.dat
-  [1,16,0,0,-19.75,0,0,2.41,2.41,0,0,0,1,0, ldraw_lib__48__4_4rin11()],
+// 1 16 0 0 -19.75 0 0 2.41 2.41 0 0 0 1 0 48\4-4ring11.dat
+  [1,16,0,0,-19.75,0,0,2.41,2.41,0,0,0,1,0, ldraw_lib__48__4_4ring11()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 -19.75 0 0 26.51 26.51 0 0 0 2 0 48\4-4cylo.dat
   [1,16,0,0,-19.75,0,0,26.51,26.51,0,0,0,2,0, ldraw_lib__48__4_4cylo()],
-// 1 16 0 0 -17.75 0 0 2.41 2.41 0 0 0 1 0 48\4-4rin10.dat
-  [1,16,0,0,-17.75,0,0,2.41,2.41,0,0,0,1,0, ldraw_lib__48__4_4rin10()],
+// 1 16 0 0 -17.75 0 0 2.41 2.41 0 0 0 1 0 48\4-4ring10.dat
+  [1,16,0,0,-17.75,0,0,2.41,2.41,0,0,0,1,0, ldraw_lib__48__4_4ring10()],
 // 1 16 0 0 -2 0 0 7.257525 7.257525 0 0 0 -1 0 48\4-4ring4.dat
   [1,16,0,0,-2,0,0,7.257525,7.257525,0,0,0,-1,0, ldraw_lib__48__4_4ring4()],
 // 1 16 0 0 -2 0 0 29.0301 29.0301 0 0 0 1.75 0 48\4-4cylo.dat

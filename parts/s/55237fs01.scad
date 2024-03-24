@@ -1,6 +1,6 @@
 use <../../lib.scad>
-use <../../p/4-4rin16.scad>
 use <../../p/4-4ring1.scad>
+use <../../p/4-4ring16.scad>
 use <../../p/4-4ring5.scad>
 use <../../p/4-4ring6.scad>
 use <../../p/rect.scad>
@@ -10,7 +10,7 @@ function ldraw_lib__s__55237fs01() = [
 // 0 ~Bar  4.2L with Asymmetric Bow - One Half
 // 0 Name: s\55237fs01.dat
 // 0 Author: Massimo Maso [Sirio]
-// 0 !LDRAW_ORG Subpart UPDATE 2023-04
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -18,13 +18,14 @@ function ldraw_lib__s__55237fs01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2023-08-25 [OrionP] Official Update 2023-04
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Primitives
 // 1 16 5 -26 -15.75 0 -1 0 2 0 0 0 0 2 4-4ring1.dat
   [1,16,5,-26,-15.75,0,-1,0,2,0,0,0,0,2, ldraw_lib__4_4ring1()],
-// 1 16 5 -26 -15.75 0 -1 0 .25 0 0 0 0 .25 4-4rin16.dat
-  [1,16,5,-26,-15.75,0,-1,0,.25,0,0,0,0,.25, ldraw_lib__4_4rin16()],
+// 1 16 5 -26 -15.75 0 -1 0 .25 0 0 0 0 .25 4-4ring16.dat
+  [1,16,5,-26,-15.75,0,-1,0,.25,0,0,0,0,.25, ldraw_lib__4_4ring16()],
 // 1 16 2.875 -27 7.83955 1.375 0 0 0 1 0 0 0 1.96455 rect.dat
   [1,16,2.875,-27,7.83955,1.375,0,0,0,1,0,0,0,1.96455, ldraw_lib__rect()],
 // 1 16 2.875 -27 -7.83955 1.375 0 0 0 1 0 0 0 1.96455 rect.dat

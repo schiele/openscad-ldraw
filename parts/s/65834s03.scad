@@ -14,7 +14,7 @@ use <../../p/4-4cylo.scad>
 use <../../p/4-4ering.scad>
 use <../../p/4-4ring2.scad>
 use <../../p/48/1-4con29.scad>
-use <../../p/48/1-4rin21.scad>
+use <../../p/48/1-4ring21.scad>
 use <../../p/48/11-48con29.scad>
 use <../../p/48/11-48edge.scad>
 use <../../p/48/11-48ring21.scad>
@@ -22,7 +22,7 @@ use <../../p/48/2-4edge.scad>
 use <../../p/48/4-4con29.scad>
 use <../../p/48/4-4con54.scad>
 use <../../p/48/4-4edge.scad>
-use <../../p/48/4-4rin21.scad>
+use <../../p/48/4-4ring21.scad>
 use <../../p/axl3hole.scad>
 use <../../p/connhol3.scad>
 use <../../p/connhole.scad>
@@ -34,7 +34,7 @@ function ldraw_lib__s__65834s03() = [
 // 0 ~Wheel 14 x 35 with  4 Spokes with Integral Tyre - Rim
 // 0 Name: s\65834s03.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Subpart UPDATE 2023-06
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -45,6 +45,8 @@ function ldraw_lib__s__65834s03() = [
 // 0 !HISTORY 2023-07-21 [MagFors] Adapted to rounded npeg corners
 // 0 !HISTORY 2023-11-05 [MagFors] Subfiled spoke
 // 0 !HISTORY 2023-11-19 [OrionP] Official Update 2023-06
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 20 0 1 0 0 0 0 1 0 -1 0 connhole.dat
   [1,16,0,20,0,1,0,0,0,0,1,0,-1,0, ldraw_lib__connhole()],
@@ -127,8 +129,8 @@ function ldraw_lib__s__65834s03() = [
 // 
 // 1 16 0 0 -17.5 44.10855 0 0 0 0 44.10855 0 1 0 48\4-4edge.dat
   [1,16,0,0,-17.5,44.10855,0,0,0,0,44.10855,0,1,0, ldraw_lib__48__4_4edge()],
-// 1 16 0 0 -17.5 2.00493 0 0 0 0 2.00493 0 1 0 48\4-4rin21.dat
-  [1,16,0,0,-17.5,2.00493,0,0,0,0,2.00493,0,1,0, ldraw_lib__48__4_4rin21()],
+// 1 16 0 0 -17.5 2.00493 0 0 0 0 2.00493 0 1 0 48\4-4ring21.dat
+  [1,16,0,0,-17.5,2.00493,0,0,0,0,2.00493,0,1,0, ldraw_lib__48__4_4ring21()],
 // 1 16 0 0 -17.5 42.10362 0 0 0 0 42.10362 0 1 0 48\4-4edge.dat
   [1,16,0,0,-17.5,42.10362,0,0,0,0,42.10362,0,1,0, ldraw_lib__48__4_4edge()],
 // 0 BFC INVERTNEXT
@@ -159,10 +161,10 @@ function ldraw_lib__s__65834s03() = [
   [1,16,0,-46.7,17.5,0,0,7,7,0,0,0,-1,0, ldraw_lib__1_8edge()],
 // 1 16 0 -46.7 17.5 0 0 -7 7 0 0 0 -1 0 1-8edge.dat
   [1,16,0,-46.7,17.5,0,0,-7,7,0,0,0,-1,0, ldraw_lib__1_8edge()],
-// 1 16 0 0 17.5 2.00493 0 0 0 0 2.00493 0 -1 0 48\1-4rin21.dat
-  [1,16,0,0,17.5,2.00493,0,0,0,0,2.00493,0,-1,0, ldraw_lib__48__1_4rin21()],
-// 1 16 0 0 17.5 -2.00493 0 0 0 0 2.00493 0 -1 0 48\1-4rin21.dat
-  [1,16,0,0,17.5,-2.00493,0,0,0,0,2.00493,0,-1,0, ldraw_lib__48__1_4rin21()],
+// 1 16 0 0 17.5 2.00493 0 0 0 0 2.00493 0 -1 0 48\1-4ring21.dat
+  [1,16,0,0,17.5,2.00493,0,0,0,0,2.00493,0,-1,0, ldraw_lib__48__1_4ring21()],
+// 1 16 0 0 17.5 -2.00493 0 0 0 0 2.00493 0 -1 0 48\1-4ring21.dat
+  [1,16,0,0,17.5,-2.00493,0,0,0,0,2.00493,0,-1,0, ldraw_lib__48__1_4ring21()],
 // 1 16 0 0 17.5 2.00493 0 0 0 0 -2.00493 0 -1 0 48\11-48ring21.dat
   [1,16,0,0,17.5,2.00493,0,0,0,0,-2.00493,0,-1,0, ldraw_lib__48__11_48ring21()],
 // 1 16 0 0 17.5 -2.00493 0 0 0 0 -2.00493 0 -1 0 48\11-48ring21.dat

@@ -7,7 +7,7 @@ use <../../p/1-4cyls.scad>
 use <../../p/1-4cyls2.scad>
 use <../../p/1-4edge.scad>
 use <../../p/1-4ndis.scad>
-use <../../p/1-4rin12.scad>
+use <../../p/1-4ring12.scad>
 use <../../p/1-4ring3.scad>
 use <../../p/1-4ring5.scad>
 use <../../p/1-4ring6.scad>
@@ -27,9 +27,9 @@ use <../../p/4-4con10.scad>
 use <../../p/4-4cyli.scad>
 use <../../p/4-4edge.scad>
 use <../../p/4-4ndis.scad>
-use <../../p/4-4rin11.scad>
-use <../../p/4-4rin12.scad>
 use <../../p/4-4ring1.scad>
+use <../../p/4-4ring11.scad>
+use <../../p/4-4ring12.scad>
 use <../../p/4-4ring2.scad>
 use <../../p/4-4ring3.scad>
 use <../../p/4-4ring4.scad>
@@ -55,7 +55,7 @@ function ldraw_lib__s__43447s02() = [
 // 0 ~Electric RC Race Buggy Battery - Half Base
 // 0 Name: s\43447s02.dat
 // 0 Author: Guy Vivan [guyvivan]
-// 0 !LDRAW_ORG Subpart UPDATE 2010-02
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -63,7 +63,8 @@ function ldraw_lib__s__43447s02() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2010-07-05 [PTadmin] Official Update 2010-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 110 40 -30 1 0 0 0 0 -1 0 1 0 peghole.dat
   [1,16,110,40,-30,1,0,0,0,0,-1,0,1,0, ldraw_lib__peghole()],
@@ -113,10 +114,10 @@ function ldraw_lib__s__43447s02() = [
   [1,16,110,0,-70,0,0,1,-1,0,0,0,1,0, ldraw_lib__4_4con10()],
 // 1 16 110 0 -70 0 0 11 -11 0 0 0 1 0 4-4edge.dat
   [1,16,110,0,-70,0,0,11,-11,0,0,0,1,0, ldraw_lib__4_4edge()],
-// 1 16 110 0 -70 0 0 1 -1 0 0 0 1 0 4-4rin11.dat
-  [1,16,110,0,-70,0,0,1,-1,0,0,0,1,0, ldraw_lib__4_4rin11()],
-// 1 16 110 0 -70 0 0 1 -1 0 0 0 1 0 4-4rin12.dat
-  [1,16,110,0,-70,0,0,1,-1,0,0,0,1,0, ldraw_lib__4_4rin12()],
+// 1 16 110 0 -70 0 0 1 -1 0 0 0 1 0 4-4ring11.dat
+  [1,16,110,0,-70,0,0,1,-1,0,0,0,1,0, ldraw_lib__4_4ring11()],
+// 1 16 110 0 -70 0 0 1 -1 0 0 0 1 0 4-4ring12.dat
+  [1,16,110,0,-70,0,0,1,-1,0,0,0,1,0, ldraw_lib__4_4ring12()],
 // 1 16 110 0 -70 0 0 1.35 -1.35 0 0 0 1 0 4-4ring9.dat
   [1,16,110,0,-70,0,0,1.35,-1.35,0,0,0,1,0, ldraw_lib__4_4ring9()],
 // 1 16 110 0 -70 9.54594 0 9.54594 -9.54594 0 9.54594 0 1 0 1-4edge.dat
@@ -1503,8 +1504,8 @@ function ldraw_lib__s__43447s02() = [
   [1,16,-130,0,-12,9,0,0,0,0,9,0,-1,0, ldraw_lib__2_4ndis()],
 // 1 16 -150 20 0 0 1 0 0 0 12 -12 0 0 1-4edge.dat
   [1,16,-150,20,0,0,1,0,0,0,12,-12,0,0, ldraw_lib__1_4edge()],
-// 1 16 -150 20 0 0 1 0 0 0 1 -1 0 0 1-4rin12.dat
-  [1,16,-150,20,0,0,1,0,0,0,1,-1,0,0, ldraw_lib__1_4rin12()],
+// 1 16 -150 20 0 0 1 0 0 0 1 -1 0 0 1-4ring12.dat
+  [1,16,-150,20,0,0,1,0,0,0,1,-1,0,0, ldraw_lib__1_4ring12()],
 // 1 16 -121 20 0 0 1 0 0 0 12 -12 0 0 1-8edge.dat
   [1,16,-121,20,0,0,1,0,0,0,12,-12,0,0, ldraw_lib__1_8edge()],
 // 1 16 -121 20 0 0 -1 0 0 0 12 -12 0 0 1-8ndis.dat

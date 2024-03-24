@@ -1,10 +1,10 @@
 use <../lib.scad>
-use <../p/1-4rin16.scad>
+use <../p/1-4ring16.scad>
 use <../p/4-4con5.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4edge.scad>
 use <../p/4-4ndis.scad>
-use <../p/4-4rin17.scad>
+use <../p/4-4ring17.scad>
 use <../p/4-4ring5.scad>
 use <../p/4-4ring6.scad>
 use <../p/4-4ring9.scad>
@@ -21,7 +21,7 @@ function ldraw_lib__30516() = [
 // 0 ~Turntable  4 x  4 Locking Grooved Base
 // 0 Name: 30516.dat
 // 0 Author: Guy Vivan [guyvivan]
-// 0 !LDRAW_ORG Part UPDATE 2013-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -29,7 +29,8 @@ function ldraw_lib__30516() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2013-07-21 [PTadmin] Official Update 2013-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\30516s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30516s01()],
@@ -139,12 +140,12 @@ function ldraw_lib__30516() = [
   [1,16,0,0,0,40,0,0,0,1,0,0,0,40, ldraw_lib__4_4ndis()],
 // 1 16 0 0 0 4 0 0 0 1 0 0 0 4 4-4ring9.dat
   [1,16,0,0,0,4,0,0,0,1,0,0,0,4, ldraw_lib__4_4ring9()],
-// 1 16 0 0 0 2 0 0 0 1 0 0 0 2 4-4rin17.dat
-  [1,16,0,0,0,2,0,0,0,1,0,0,0,2, ldraw_lib__4_4rin17()],
-// 1 16 0 0 0 1.41421 0 1.41421 0 1 0 -1.41421 0 1.41421 1-4rin16.dat
-  [1,16,0,0,0,1.41421,0,1.41421,0,1,0,-1.41421,0,1.41421, ldraw_lib__1_4rin16()],
-// 1 16 0 0 0 -1.41421 0 -1.41421 0 1 0 1.41421 0 -1.41421 1-4rin16.dat
-  [1,16,0,0,0,-1.41421,0,-1.41421,0,1,0,1.41421,0,-1.41421, ldraw_lib__1_4rin16()],
+// 1 16 0 0 0 2 0 0 0 1 0 0 0 2 4-4ring17.dat
+  [1,16,0,0,0,2,0,0,0,1,0,0,0,2, ldraw_lib__4_4ring17()],
+// 1 16 0 0 0 1.41421 0 1.41421 0 1 0 -1.41421 0 1.41421 1-4ring16.dat
+  [1,16,0,0,0,1.41421,0,1.41421,0,1,0,-1.41421,0,1.41421, ldraw_lib__1_4ring16()],
+// 1 16 0 0 0 -1.41421 0 -1.41421 0 1 0 1.41421 0 -1.41421 1-4ring16.dat
+  [1,16,0,0,0,-1.41421,0,-1.41421,0,1,0,1.41421,0,-1.41421, ldraw_lib__1_4ring16()],
 // 1 16 0 -13 0 14 0 0 0 1 0 0 0 14 4-4edge.dat
   [1,16,0,-13,0,14,0,0,0,1,0,0,0,14, ldraw_lib__4_4edge()],
 // 1 16 0 -13 0 14 0 0 0 13 0 0 0 14 4-4cyli.dat

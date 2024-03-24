@@ -15,8 +15,8 @@ use <../../p/3-16cylo.scad>
 use <../../p/3-16disc.scad>
 use <../../p/3-16edge.scad>
 use <../../p/3-16ndis.scad>
-use <../../p/3-16rin3.scad>
-use <../../p/3-16rin7.scad>
+use <../../p/3-16ring3.scad>
+use <../../p/3-16ring7.scad>
 use <../../p/3-4cyli.scad>
 use <../../p/3-4edge.scad>
 use <../../p/3-8edge.scad>
@@ -46,7 +46,7 @@ function ldraw_lib__s__4481s01() = [
 // 0 ~Bike  2 Wheel Motorcycle Frame  3 x  6 x  3 - Left/Right
 // 0 Name: s\4481s01.dat
 // 0 Author: Magnus Forsberg [MagFors]
-// 0 !LDRAW_ORG Subpart UPDATE 2019-02
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -54,7 +54,8 @@ function ldraw_lib__s__4481s01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2019-09-09 [PTadmin] Official Update 2019-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 10.5 21.697 -8.723 -1.5 0 0 0 0 6.0071 0 1 3.18015 rect.dat
   [1,16,10.5,21.697,-8.723,-1.5,0,0,0,0,6.0071,0,1,3.18015, ldraw_lib__rect()],
@@ -1681,10 +1682,10 @@ function ldraw_lib__s__4481s01() = [
   [4,16,0,40,-46,0,40,-51,0,38,-51,0,37.25,-49.4685],
 // 3 16 0 37.25 -50.9995 0 37.25 -49.4685 0 38 -51
   [3,16,0,37.25,-50.9995,0,37.25,-49.4685,0,38,-51],
-// 1 16 0 32 -51 0 1 0 0.75 0 0 0 0 -0.75 3-16rin7.dat
-  [1,16,0,32,-51,0,1,0,0.75,0,0,0,0,-0.75, ldraw_lib__3_16rin7()],
-// 1 16 0 32 -51 0 1 0 2 0 0 0 0 -2 3-16rin3.dat
-  [1,16,0,32,-51,0,1,0,2,0,0,0,0,-2, ldraw_lib__3_16rin3()],
+// 1 16 0 32 -51 0 1 0 0.75 0 0 0 0 -0.75 3-16ring7.dat
+  [1,16,0,32,-51,0,1,0,0.75,0,0,0,0,-0.75, ldraw_lib__3_16ring7()],
+// 1 16 0 32 -51 0 1 0 2 0 0 0 0 -2 3-16ring3.dat
+  [1,16,0,32,-51,0,1,0,2,0,0,0,0,-2, ldraw_lib__3_16ring3()],
 // 3 16 0 34.2962 -56.5434 0 19.8624 -63.3918 0 34.0096 -55.8502
   [3,16,0,34.2962,-56.5434,0,19.8624,-63.3918,0,34.0096,-55.8502],
 // 4 16 0 19.8624 -63.3918 0 34.2962 -56.5434 0 35.0616 -58.3912 0 19.862 -66.392

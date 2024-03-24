@@ -1,7 +1,7 @@
 use <../lib.scad>
 use <../p/4-4ering.scad>
-use <../p/4-4rin16.scad>
-use <../p/4-4rin23.scad>
+use <../p/4-4ring16.scad>
+use <../p/4-4ring23.scad>
 use <../p/4-4ring68.scad>
 use <../p/4-4ring9.scad>
 use <s/14769py0s01.scad>
@@ -11,18 +11,19 @@ function ldraw_lib__14769py0() = [
 // 0 Tile  2 x  2 Round with Four Dark Grey Rings inside Black Disc Pattern
 // 0 Name: 14769py0.dat
 // 0 Author: Massimo Maso [Sirio]
-// 0 !LDRAW_ORG Part UPDATE 2023-03
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 14769pb594, Pagani, Set 76915, Speed Champions, Utopia
-// 0 !KEYWORDS Exhaust Pipes
+// 0 !KEYWORDS Bricklink 14769pb594, Exhaust Pipes, Pagani, Set 76915
+// 0 !KEYWORDS Speed Champions, Utopia
 // 
 // 0 !HISTORY 2023-06-24 [OrionP] Official Update 2023-03
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Subparts
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\14769s01.dat
@@ -42,12 +43,12 @@ function ldraw_lib__14769py0() = [
 // 0 // Primitives
 // 1 16 0 0 0 2 0 0 0 1 0 0 0 2 4-4ring9.dat
   [1,16,0,0,0,2,0,0,0,1,0,0,0,2, ldraw_lib__4_4ring9()],
-// 1 16 0 0 0 .75 0 0 0 1 0 0 0 .75 4-4rin23.dat
-  [1,16,0,0,0,.75,0,0,0,1,0,0,0,.75, ldraw_lib__4_4rin23()],
+// 1 16 0 0 0 .75 0 0 0 1 0 0 0 .75 4-4ring23.dat
+  [1,16,0,0,0,.75,0,0,0,1,0,0,0,.75, ldraw_lib__4_4ring23()],
 // 1 0 0 0 0 .25 0 0 0 1 0 0 0 .25 4-4ring68.dat
   [1,0,0,0,0,.25,0,0,0,1,0,0,0,.25, ldraw_lib__4_4ring68()],
-// 1 16 0 0 0 1 0 0 0 1 0 0 0 1 4-4rin16.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4rin16()],
+// 1 16 0 0 0 1 0 0 0 1 0 0 0 1 4-4ring16.dat
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4ring16()],
 // 1 0 0 0 0 16 0 0 0 1 0 0 0 16 4-4ering.dat
   [1,0,0,0,0,16,0,0,0,1,0,0,0,16, ldraw_lib__4_4ering()],
 // 0 // Complementary faces

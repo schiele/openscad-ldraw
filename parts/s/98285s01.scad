@@ -6,7 +6,7 @@ use <../../p/2-4cylo.scad>
 use <../../p/2-4ring9.scad>
 use <../../p/3-16cyli.scad>
 use <../../p/3-16edge.scad>
-use <../../p/3-16rin9.scad>
+use <../../p/3-16ring9.scad>
 use <../../p/3-4ring9.scad>
 use <../../p/4-4ndis.scad>
 use <../../p/box4.scad>
@@ -20,7 +20,7 @@ function ldraw_lib__s__98285s01() = [
 // 0 ~Hinge Plate  2 x  4.5 Base with Technic Pin Hole
 // 0 Name: s\98285s01.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Subpart UPDATE 2023-04
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -29,7 +29,8 @@ function ldraw_lib__s__98285s01() = [
 // 
 // 0 !HISTORY 2019-12-21 [Philo] Subparted from 98285
 // 0 !HISTORY 2023-08-25 [OrionP] Official Update 2023-04
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 4 0 0 0 -1 0 -1 0 1 0 0 stud4h.dat
   [1,16,0,4,0,0,0,-1,0,-1,0,1,0,0, ldraw_lib__stud4h()],
@@ -117,8 +118,8 @@ function ldraw_lib__s__98285s01() = [
   [1,16,-20,-6,40,0,-1,0,-10,0,0,0,0,-10, ldraw_lib__3_16edge()],
 // 1 16 -20 -6 40 0 1 0 -1 0 0 0 0 1 2-4ring9.dat
   [1,16,-20,-6,40,0,1,0,-1,0,0,0,0,1, ldraw_lib__2_4ring9()],
-// 1 16 -20 -6 40 0 1 0 -1 0 0 0 0 -1 3-16rin9.dat
-  [1,16,-20,-6,40,0,1,0,-1,0,0,0,0,-1, ldraw_lib__3_16rin9()],
+// 1 16 -20 -6 40 0 1 0 -1 0 0 0 0 -1 3-16ring9.dat
+  [1,16,-20,-6,40,0,1,0,-1,0,0,0,0,-1, ldraw_lib__3_16ring9()],
 // 1 16 -20 -6 40 0 1 0 9 0 0 0 0 -9 1-4ndis.dat
   [1,16,-20,-6,40,0,1,0,9,0,0,0,0,-9, ldraw_lib__1_4ndis()],
 // 3 16 0 0 30 0 -2.173 30.761 0 -6 30
@@ -173,8 +174,8 @@ function ldraw_lib__s__98285s01() = [
   [3,16,-20,-8,30.4,-20,-6,31,-20,-8,20],
 // 1 16 0 -6 40 0 -1 0 -1 0 0 0 0 1 3-4ring9.dat
   [1,16,0,-6,40,0,-1,0,-1,0,0,0,0,1, ldraw_lib__3_4ring9()],
-// 1 16 0 -6 40 0 -1 0 -1 0 0 0 0 -1 3-16rin9.dat
-  [1,16,0,-6,40,0,-1,0,-1,0,0,0,0,-1, ldraw_lib__3_16rin9()],
+// 1 16 0 -6 40 0 -1 0 -1 0 0 0 0 -1 3-16ring9.dat
+  [1,16,0,-6,40,0,-1,0,-1,0,0,0,0,-1, ldraw_lib__3_16ring9()],
 // 4 16 0 -9.827 30.761 0 -6 30 0 -6 31 0 -9.4443 31.6849
   [4,16,0,-9.827,30.761,0,-6,30,0,-6,31,0,-9.4443,31.6849],
 // 5 24 -16 -6 30 0 -6 30 0 -9.827 30.761 0 0 30

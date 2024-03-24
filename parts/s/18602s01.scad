@@ -1,17 +1,17 @@
 use <../../lib.scad>
 use <../../p/48/1-12cylo.scad>
 use <../../p/48/1-4con36.scad>
-use <../../p/48/1-4rin39.scad>
+use <../../p/48/1-4ring39.scad>
 use <../../p/48/1-8cylo.scad>
 use <../../p/48/4-4cylo.scad>
 use <../../p/48/4-4disc.scad>
-use <../../p/48/4-4rin37.scad>
+use <../../p/48/4-4ring37.scad>
 use <../../p/48/4-4ring38.scad>
 function ldraw_lib__s__18602s01() = [
 // 0 ~Electric Brick  4 x  4 x  0.667 Round - Top, Common Parts
 // 0 Name: s\18602s01.dat
 // 0 Author: Evert-Jan Boer [ejboer]
-// 0 !LDRAW_ORG Subpart UPDATE 2020-02
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -19,20 +19,21 @@ function ldraw_lib__s__18602s01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
-// 
-// 1 16 0 16 0 1 0 0 0 -1 0 0 0 -1 48\4-4rin37.dat
-  [1,16,0,16,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__48__4_4rin37()],
+// 1 16 0 16 0 1 0 0 0 -1 0 0 0 -1 48\4-4ring37.dat
+  [1,16,0,16,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__48__4_4ring37()],
 // 1 16 0 16 0 1 0 0 0 -1 0 0 0 -1 48\4-4ring38.dat
   [1,16,0,16,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__48__4_4ring38()],
-// 1 16 0 16 0 0 0 1 0 -1 0 1 0 0 48\1-4rin39.dat
-  [1,16,0,16,0,0,0,1,0,-1,0,1,0,0, ldraw_lib__48__1_4rin39()],
-// 1 16 0 16 0 1 0 0 0 -1 0 0 0 -1 48\1-4rin39.dat
-  [1,16,0,16,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__48__1_4rin39()],
-// 1 16 0 16 0 0 0 -1 0 -1 0 -1 0 0 48\1-4rin39.dat
-  [1,16,0,16,0,0,0,-1,0,-1,0,-1,0,0, ldraw_lib__48__1_4rin39()],
-// 1 16 0 16 0 -1 0 0 0 -1 0 0 0 1 48\1-4rin39.dat
-  [1,16,0,16,0,-1,0,0,0,-1,0,0,0,1, ldraw_lib__48__1_4rin39()],
+// 1 16 0 16 0 0 0 1 0 -1 0 1 0 0 48\1-4ring39.dat
+  [1,16,0,16,0,0,0,1,0,-1,0,1,0,0, ldraw_lib__48__1_4ring39()],
+// 1 16 0 16 0 1 0 0 0 -1 0 0 0 -1 48\1-4ring39.dat
+  [1,16,0,16,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__48__1_4ring39()],
+// 1 16 0 16 0 0 0 -1 0 -1 0 -1 0 0 48\1-4ring39.dat
+  [1,16,0,16,0,0,0,-1,0,-1,0,-1,0,0, ldraw_lib__48__1_4ring39()],
+// 1 16 0 16 0 -1 0 0 0 -1 0 0 0 1 48\1-4ring39.dat
+  [1,16,0,16,0,-1,0,0,0,-1,0,0,0,1, ldraw_lib__48__1_4ring39()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 13.5 0 37 0 0 0 2.5 0 0 0 37 48\4-4cylo.dat

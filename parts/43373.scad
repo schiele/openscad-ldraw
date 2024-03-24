@@ -1,10 +1,10 @@
 use <../lib.scad>
-use <../p/48/1-4rin19.scad>
+use <../p/48/1-4ring19.scad>
 use <../p/48/2-4cyli.scad>
 use <../p/48/2-4edge.scad>
 use <../p/48/5-24cyli.scad>
 use <../p/48/5-24edge.scad>
-use <../p/48/5-24ri24.scad>
+use <../p/48/5-24ring24.scad>
 use <../p/axle.scad>
 use <../p/box2-5.scad>
 use <../p/rect.scad>
@@ -15,17 +15,18 @@ function ldraw_lib__43373() = [
 // 0 Brick  1 x  2 with Hoop and Axle
 // 0 Name: 43373.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2013-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS basketball, Harry Potter, quidditch, Ring
+// 0 !KEYWORDS Harry Potter, Ring, basketball, quidditch
 // 
 // 0 !HISTORY 2013-07-21 [PTadmin] Official Update 2013-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 -50 1 0 0 0 1 0 0 0 1 s\43373s01.dat
   [1,16,0,0,-50,1,0,0,0,1,0,0,0,1, ldraw_lib__s__43373s01()],
@@ -65,12 +66,12 @@ function ldraw_lib__43373() = [
   [1,16,10,0,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__stud()],
 // 1 16 0 6 -50 -47 0 0 0 1 0 0 0 -47 48\2-4edge.dat
   [1,16,0,6,-50,-47,0,0,0,1,0,0,0,-47, ldraw_lib__48__2_4edge()],
-// 1 16 0 6 -50 0 0 -2.35 0 1 0 -2.35 0 0 48\1-4rin19.dat
-  [1,16,0,6,-50,0,0,-2.35,0,1,0,-2.35,0,0, ldraw_lib__48__1_4rin19()],
+// 1 16 0 6 -50 0 0 -2.35 0 1 0 -2.35 0 0 48\1-4ring19.dat
+  [1,16,0,6,-50,0,0,-2.35,0,1,0,-2.35,0,0, ldraw_lib__48__1_4ring19()],
 // 1 16 0 9 -50 -26.0939 0 34.0063 0 1 0 -34.0063 0 -26.0939 48\5-24edge.dat
   [1,16,0,9,-50,-26.0939,0,34.0063,0,1,0,-34.0063,0,-26.0939, ldraw_lib__48__5_24edge()],
-// 1 16 0 6 -50 -1.08725 0 1.41693 0 3 0 -1.41693 0 -1.08725 48\5-24ri24.dat
-  [1,16,0,6,-50,-1.08725,0,1.41693,0,3,0,-1.41693,0,-1.08725, ldraw_lib__48__5_24ri24()],
+// 1 16 0 6 -50 -1.08725 0 1.41693 0 3 0 -1.41693 0 -1.08725 48\5-24ring24.dat
+  [1,16,0,6,-50,-1.08725,0,1.41693,0,3,0,-1.41693,0,-1.08725, ldraw_lib__48__5_24ring24()],
 // 1 16 0 3 -50 -47 0 0 0 1 0 0 0 -47 48\2-4edge.dat
   [1,16,0,3,-50,-47,0,0,0,1,0,0,0,-47, ldraw_lib__48__2_4edge()],
 // 0 BFC INVERTNEXT

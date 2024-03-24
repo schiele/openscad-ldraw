@@ -6,7 +6,7 @@ use <../p/1-4ndis.scad>
 use <../p/1-4ring1.scad>
 use <../p/1-4ring4.scad>
 use <../p/3-16edge.scad>
-use <../p/3-16rin4.scad>
+use <../p/3-16ring4.scad>
 use <../p/3-4ndis.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4edge.scad>
@@ -22,7 +22,7 @@ function ldraw_lib__u9100() = [
 // 0 Figure Fabuland Leg
 // 0 Name: u9100.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2010-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -30,7 +30,8 @@ function ldraw_lib__u9100() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2010-07-05 [PTadmin] Official Update 2010-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 33 10 0 0 10 -4 0 0 0 -34 0 box3u2p.dat
   [1,16,0,33,10,0,0,10,-4,0,0,0,-34,0, ldraw_lib__box3u2p()],
@@ -180,8 +181,8 @@ function ldraw_lib__u9100() = [
   [1,16,6,0,0,0,4,0,-4,0,0,0,0,4, ldraw_lib__4_4cyli()],
 // 1 16 6 0 0 0 1 0 0 0 -4 4 0 0 1-4ring1.dat
   [1,16,6,0,0,0,1,0,0,0,-4,4,0,0, ldraw_lib__1_4ring1()],
-// 1 16 6 0 0 0 1 0 0 0 -2 2 0 0 3-16rin4.dat
-  [1,16,6,0,0,0,1,0,0,0,-2,2,0,0, ldraw_lib__3_16rin4()],
+// 1 16 6 0 0 0 1 0 0 0 -2 2 0 0 3-16ring4.dat
+  [1,16,6,0,0,0,1,0,0,0,-2,2,0,0, ldraw_lib__3_16ring4()],
 // 1 16 6 0 0 0 1 0 0 0 4 4 0 0 3-4ndis.dat
   [1,16,6,0,0,0,1,0,0,0,4,4,0,0, ldraw_lib__3_4ndis()],
 // 4 16 6 4 4 6 0 4 6 0 10 6 37 10
@@ -214,8 +215,8 @@ function ldraw_lib__u9100() = [
   [1,16,-6,0,0,0,-4,0,-4,0,0,0,0,4, ldraw_lib__4_4cyli()],
 // 1 16 -6 0 0 0 -1 0 0 0 -4 4 0 0 1-4ring1.dat
   [1,16,-6,0,0,0,-1,0,0,0,-4,4,0,0, ldraw_lib__1_4ring1()],
-// 1 16 -6 0 0 0 -1 0 0 0 -2 2 0 0 3-16rin4.dat
-  [1,16,-6,0,0,0,-1,0,0,0,-2,2,0,0, ldraw_lib__3_16rin4()],
+// 1 16 -6 0 0 0 -1 0 0 0 -2 2 0 0 3-16ring4.dat
+  [1,16,-6,0,0,0,-1,0,0,0,-2,2,0,0, ldraw_lib__3_16ring4()],
 // 1 16 -6 0 0 0 -1 0 0 0 4 4 0 0 3-4ndis.dat
   [1,16,-6,0,0,0,-1,0,0,0,4,4,0,0, ldraw_lib__3_4ndis()],
 // 4 16 -6 37 10 -6 0 10 -6 0 4 -6 4 4

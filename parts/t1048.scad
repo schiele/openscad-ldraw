@@ -1,6 +1,6 @@
 use <../lib.scad>
 use <../p/1-4cylo.scad>
-use <../p/1-4rin19.scad>
+use <../p/1-4ring19.scad>
 use <../p/1-4ring6.scad>
 use <../p/rect.scad>
 use <../p/rect2a.scad>
@@ -10,7 +10,7 @@ function ldraw_lib__t1048() = [
 // 0 ~| Circuit Cubes Corner Contact
 // 0 Name: t1048.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2022-05
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -20,7 +20,8 @@ function ldraw_lib__t1048() = [
 // 0 !CATEGORY Electric
 // 
 // 0 !HISTORY 2022-09-15 [PTadmin] Official Update 2022-05
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 10 0 0 0 8 0 0 0 10 1-4cylo.dat
   [1,16,0,0,0,10,0,0,0,8,0,0,0,10, ldraw_lib__1_4cylo()],
@@ -140,10 +141,10 @@ function ldraw_lib__t1048() = [
   [1,16,1.5,0.25,-6,0,0,-2.5,0.25,0,0,0,-1,0, ldraw_lib__rect2p()],
 // 1 16 4 0.25 -9 0 -1 0 -0.25 0 0 0 0 -3 rect2a.dat
   [1,16,4,0.25,-9,0,-1,0,-0.25,0,0,0,0,-3, ldraw_lib__rect2a()],
-// 1 16 0 0 0 0.5 0 0 0 1 0 0 0 0.5 1-4rin19.dat
-  [1,16,0,0,0,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__1_4rin19()],
-// 1 16 0 8 0 0.5 0 0 0 -1 0 0 0 0.5 1-4rin19.dat
-  [1,16,0,8,0,0.5,0,0,0,-1,0,0,0,0.5, ldraw_lib__1_4rin19()],
+// 1 16 0 0 0 0.5 0 0 0 1 0 0 0 0.5 1-4ring19.dat
+  [1,16,0,0,0,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__1_4ring19()],
+// 1 16 0 8 0 0.5 0 0 0 -1 0 0 0 0.5 1-4ring19.dat
+  [1,16,0,8,0,0.5,0,0,0,-1,0,0,0,0.5, ldraw_lib__1_4ring19()],
 ];
 module ldraw_lib__t1048(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
     makepoly(ldraw_lib__t1048(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);

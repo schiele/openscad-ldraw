@@ -8,8 +8,8 @@ use <../p/4-4con2.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4edge.scad>
-use <../p/4-4rin10.scad>
-use <../p/4-4rin12.scad>
+use <../p/4-4ring10.scad>
+use <../p/4-4ring12.scad>
 use <../p/48/4-4edge.scad>
 use <../p/48/4-4ring7.scad>
 use <../p/48/4-8sphe.scad>
@@ -18,7 +18,7 @@ function ldraw_lib__41334() = [
 // 0 Minifig Hat Knit Cap
 // 0 Name: 41334.dat
 // 0 Author: Paul Easter [pneaster]
-// 0 !LDRAW_ORG Part UPDATE 2012-03
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CW
@@ -32,7 +32,8 @@ function ldraw_lib__41334() = [
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
 // 0 !HISTORY 2012-12-24 [cwdee] Update category
 // 0 !HISTORY 2012-12-28 [PTadmin] Official Update 2012-03
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 2 0 15.5 0 0 0 -9.9178 1.9998 0 1.2796 15.4995 48\4-8sphe.dat
   [1,16,0,2,0,15.5,0,0,0,-9.9178,1.9998,0,1.2796,15.4995, ldraw_lib__48__4_8sphe()],
@@ -44,8 +45,8 @@ function ldraw_lib__41334() = [
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 .25 0 4.33333 0 0 0 -4.25 0 0 0 4.33333 4-4con2.dat
   [1,16,0,.25,0,4.33333,0,0,0,-4.25,0,0,0,4.33333, ldraw_lib__4_4con2()],
-// 1 16 0 -4 0 .66666 0 0 0 -1 0 0 0 .66666 4-4rin12.dat
-  [1,16,0,-4,0,.66666,0,0,0,-1,0,0,0,.66666, ldraw_lib__4_4rin12()],
+// 1 16 0 -4 0 .66666 0 0 0 -1 0 0 0 .66666 4-4ring12.dat
+  [1,16,0,-4,0,.66666,0,0,0,-1,0,0,0,.66666, ldraw_lib__4_4ring12()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 .25 0 0 0 13 0 4.15 0 -13 0 0 4-4cyli.dat
@@ -67,8 +68,8 @@ function ldraw_lib__41334() = [
   [1,16,0,6,0,13,0,0,0,-8,1.625,0,0,13, ldraw_lib__4_4edge()],
 // 1 16 0 2 0 2 0 0 0 1 .25 0 0 2 48\4-4ring7.dat
   [1,16,0,2,0,2,0,0,0,1,.25,0,0,2, ldraw_lib__48__4_4ring7()],
-// 1 16 0 6 0 1.3 0 0 0 -1 .1625 0 0 1.3 4-4rin10.dat
-  [1,16,0,6,0,1.3,0,0,0,-1,.1625,0,0,1.3, ldraw_lib__4_4rin10()],
+// 1 16 0 6 0 1.3 0 0 0 -1 .1625 0 0 1.3 4-4ring10.dat
+  [1,16,0,6,0,1.3,0,0,0,-1,.1625,0,0,1.3, ldraw_lib__4_4ring10()],
 // 1 16 0 6 0 2 0 0 0 -1 .25 0 0 2 48\4-4ring7.dat
   [1,16,0,6,0,2,0,0,0,-1,.25,0,0,2, ldraw_lib__48__4_4ring7()],
 // 0

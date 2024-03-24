@@ -1,7 +1,7 @@
 use <../lib.scad>
 use <../p/4-4cylc.scad>
 use <../p/4-4disc.scad>
-use <../p/4-4rin12.scad>
+use <../p/4-4ring12.scad>
 use <../p/4-4ring2.scad>
 use <../p/48/1-4con28.scad>
 use <../p/48/4-4aring.scad>
@@ -16,7 +16,7 @@ function ldraw_lib__38340() = [
 // 0 Train Wheel with Pin for Wheel Bogie
 // 0 Name: 38340.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
-// 0 !LDRAW_ORG Part UPDATE 2023-04
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -24,7 +24,8 @@ function ldraw_lib__38340() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2023-08-25 [OrionP] Official Update 2023-04
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\38340s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__38340s01()],
@@ -83,8 +84,8 @@ function ldraw_lib__38340() = [
 // 
 // 1 16 0 0 7 8 0 0 0 0 8 0 -1 0 4-4ring2.dat
   [1,16,0,0,7,8,0,0,0,0,8,0,-1,0, ldraw_lib__4_4ring2()],
-// 1 16 0 0 7 2 0 0 0 0 2 0 -1 0 4-4rin12.dat
-  [1,16,0,0,7,2,0,0,0,0,2,0,-1,0, ldraw_lib__4_4rin12()],
+// 1 16 0 0 7 2 0 0 0 0 2 0 -1 0 4-4ring12.dat
+  [1,16,0,0,7,2,0,0,0,0,2,0,-1,0, ldraw_lib__4_4ring12()],
 // 
 // 2 24 2.6516 2.6516 1.5 3.4646 1.4351 1.5
   [2,24,2.6516,2.6516,1.5,3.4646,1.4351,1.5],

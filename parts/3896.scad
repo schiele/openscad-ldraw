@@ -7,8 +7,8 @@ use <../p/4-4con2.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4edge.scad>
-use <../p/4-4rin13.scad>
-use <../p/4-4rin14.scad>
+use <../p/4-4ring13.scad>
+use <../p/4-4ring14.scad>
 use <../p/5-16cyli.scad>
 use <../p/5-16edge.scad>
 use <../p/rect2p.scad>
@@ -17,7 +17,7 @@ function ldraw_lib__3896() = [
 // 0 Minifig Helmet Castle with Chin-Guard
 // 0 Name: 3896.dat
 // 0 Author: Chris Dee [cwdee]
-// 0 !LDRAW_ORG Part UPDATE 2020-03
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -36,7 +36,8 @@ function ldraw_lib__3896() = [
 // 0 !HISTORY 2016-12-31 [PTadmin] Official Update 2016-01
 // 0 !HISTORY 2020-10-23 [cwdee] Update description
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 -9 0 -1 0 0 0 -2.25 0 0 0 1 stud4.dat
   [1,16,0,-9,0,-1,0,0,0,-2.25,0,0,0,1, ldraw_lib__stud4()],
@@ -846,10 +847,10 @@ function ldraw_lib__3896() = [
   [1,16,0,19,0,15,0,0,0,5,0,0,0,15, ldraw_lib__4_4cyli()],
 // 1 16 0 24 0 15 0 0 0 1 0 0 0 15 4-4edge.dat
   [1,16,0,24,0,15,0,0,0,1,0,0,0,15, ldraw_lib__4_4edge()],
-// 1 16 0 24 0 1 0 0 0 -1 0 0 0 1 4-4rin14.dat
-  [1,16,0,24,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__4_4rin14()],
-// 1 16 0 24 0 1 0 0 0 -1 0 0 0 1 4-4rin13.dat
-  [1,16,0,24,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__4_4rin13()],
+// 1 16 0 24 0 1 0 0 0 -1 0 0 0 1 4-4ring14.dat
+  [1,16,0,24,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__4_4ring14()],
+// 1 16 0 24 0 1 0 0 0 -1 0 0 0 1 4-4ring13.dat
+  [1,16,0,24,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__4_4ring13()],
 // 3 16 4.9751 19 -12.0107 7.105 18.417 -10.593 9.192 19 -9.192
   [3,16,4.9751,19,-12.0107,7.105,18.417,-10.593,9.192,19,-9.192],
 // 3 16 9.192 19 -9.192 7.105 18.417 -10.593 8.021 17 -10

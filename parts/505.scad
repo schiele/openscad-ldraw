@@ -10,13 +10,13 @@ use <../p/2-4ring4.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4edge.scad>
-use <../p/4-4rin26.scad>
+use <../p/4-4ring26.scad>
 use <../p/4-4ring3.scad>
 function ldraw_lib__505() = [
 // 0 Train Steam Drive Rod
 // 0 Name: 505.dat
 // 0 Author: Niels Karsdorp [nielsk]
-// 0 !LDRAW_ORG Part UPDATE 2011-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CW
@@ -28,7 +28,8 @@ function ldraw_lib__505() = [
 // 0 !HISTORY 2009-01-28 [mikeheide] rotated 90 degree
 // 0 !HISTORY 2009-02-01 [mikeheide] replaced 2-4edge.dat with 1-4edge.dat
 // 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 //--Outer Edges
 // 2 24 -3.25 -9 0 -3.25 -9 -140
@@ -306,10 +307,10 @@ function ldraw_lib__505() = [
 // 1 16 3.25 0 0 0 -2.25 0 6.75 0 0 0 0 -6.75 4-4cyli.dat
   [1,16,3.25,0,0,0,-2.25,0,6.75,0,0,0,0,-6.75, ldraw_lib__4_4cyli()],
 // 0 // --Ridge in ring faces
-// 1 16 -1 0 0 0 1 0 0.25 0 0 0 0 -0.25 4-4rin26.dat
-  [1,16,-1,0,0,0,1,0,0.25,0,0,0,0,-0.25, ldraw_lib__4_4rin26()],
-// 1 16 1 0 0 0 -1 0 0.25 0 0 0 0 -0.25 4-4rin26.dat
-  [1,16,1,0,0,0,-1,0,0.25,0,0,0,0,-0.25, ldraw_lib__4_4rin26()],
+// 1 16 -1 0 0 0 1 0 0.25 0 0 0 0 -0.25 4-4ring26.dat
+  [1,16,-1,0,0,0,1,0,0.25,0,0,0,0,-0.25, ldraw_lib__4_4ring26()],
+// 1 16 1 0 0 0 -1 0 0.25 0 0 0 0 -0.25 4-4ring26.dat
+  [1,16,1,0,0,0,-1,0,0.25,0,0,0,0,-0.25, ldraw_lib__4_4ring26()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 1 0 0 0 -2 0 6.5 0 0 0 0 -6.5 4-4cyli.dat

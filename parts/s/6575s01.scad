@@ -12,7 +12,7 @@ use <../../p/3-16ndis.scad>
 use <../../p/48/1-12chrd.scad>
 use <../../p/48/1-6cyli.scad>
 use <../../p/48/1-6edge.scad>
-use <../../p/48/1-6rin18.scad>
+use <../../p/48/1-6ring18.scad>
 use <../../p/48/1-6ring8.scad>
 use <../../p/48/2-4cylo.scad>
 use <../../p/axlehol4.scad>
@@ -23,7 +23,7 @@ function ldraw_lib__s__6575s01() = [
 // 0 ~Technic Cam - Body
 // 0 Name: s\6575s01.dat
 // 0 Author: Magnus Forsberg [MagFors]
-// 0 !LDRAW_ORG Subpart UPDATE 2022-02
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -31,7 +31,8 @@ function ldraw_lib__s__6575s01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2022-03-06 [PTadmin] Official Update 2022-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 -20 5 -6 0 0 0 0 -6 0 -1 0 2-4ndis.dat
   [1,16,0,-20,5,-6,0,0,0,0,-6,0,-1,0, ldraw_lib__2_4ndis()],
@@ -457,18 +458,18 @@ function ldraw_lib__s__6575s01() = [
   [1,16,0,-10,-1,16,0,0,0,0,-16,0,-1,0, ldraw_lib__48__1_6edge()],
 // 1 16 0 -10 -5 16 0 0 0 0 -16 0 -1 0 48\1-6edge.dat
   [1,16,0,-10,-5,16,0,0,0,0,-16,0,-1,0, ldraw_lib__48__1_6edge()],
-// 1 16 0 -10 5 -1 0 0 0 0 -1 0 -1 0 48\1-6rin18.dat
-  [1,16,0,-10,5,-1,0,0,0,0,-1,0,-1,0, ldraw_lib__48__1_6rin18()],
-// 1 16 0 -10 5 1 0 0 0 0 -1 0 -1 0 48\1-6rin18.dat
-  [1,16,0,-10,5,1,0,0,0,0,-1,0,-1,0, ldraw_lib__48__1_6rin18()],
+// 1 16 0 -10 5 -1 0 0 0 0 -1 0 -1 0 48\1-6ring18.dat
+  [1,16,0,-10,5,-1,0,0,0,0,-1,0,-1,0, ldraw_lib__48__1_6ring18()],
+// 1 16 0 -10 5 1 0 0 0 0 -1 0 -1 0 48\1-6ring18.dat
+  [1,16,0,-10,5,1,0,0,0,0,-1,0,-1,0, ldraw_lib__48__1_6ring18()],
 // 1 16 0 -10 5 2 0 0 0 0 -2 0 -1 0 48\1-6ring8.dat
   [1,16,0,-10,5,2,0,0,0,0,-2,0,-1,0, ldraw_lib__48__1_6ring8()],
 // 1 16 0 -10 5 -2 0 0 0 0 -2 0 -1 0 48\1-6ring8.dat
   [1,16,0,-10,5,-2,0,0,0,0,-2,0,-1,0, ldraw_lib__48__1_6ring8()],
-// 1 16 0 -10 -5 -1 0 0 0 0 -1 0 1 0 48\1-6rin18.dat
-  [1,16,0,-10,-5,-1,0,0,0,0,-1,0,1,0, ldraw_lib__48__1_6rin18()],
-// 1 16 0 -10 -5 1 0 0 0 0 -1 0 1 0 48\1-6rin18.dat
-  [1,16,0,-10,-5,1,0,0,0,0,-1,0,1,0, ldraw_lib__48__1_6rin18()],
+// 1 16 0 -10 -5 -1 0 0 0 0 -1 0 1 0 48\1-6ring18.dat
+  [1,16,0,-10,-5,-1,0,0,0,0,-1,0,1,0, ldraw_lib__48__1_6ring18()],
+// 1 16 0 -10 -5 1 0 0 0 0 -1 0 1 0 48\1-6ring18.dat
+  [1,16,0,-10,-5,1,0,0,0,0,-1,0,1,0, ldraw_lib__48__1_6ring18()],
 // 1 16 0 -10 -5 2 0 0 0 0 -2 0 1 0 48\1-6ring8.dat
   [1,16,0,-10,-5,2,0,0,0,0,-2,0,1,0, ldraw_lib__48__1_6ring8()],
 // 1 16 0 -10 -5 -2 0 0 0 0 -2 0 1 0 48\1-6ring8.dat

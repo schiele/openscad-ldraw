@@ -7,7 +7,7 @@ function ldraw_lib__3846p4r() = [
 // 0 Name: 3846p4r.dat
 // 0 Author: Yann Bouzon [Zaghor]
 // 0 !LDRAW_ORG Part UPDATE 2023-04
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],

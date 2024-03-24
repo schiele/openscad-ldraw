@@ -2,7 +2,7 @@ use <../lib.scad>
 use <../p/4-4cylc.scad>
 use <../p/4-4disc.scad>
 use <../p/48/4-4cylo.scad>
-use <../p/48/4-4rin19.scad>
+use <../p/48/4-4ring19.scad>
 use <87685.scad>
 use <87686.scad>
 use <87687.scad>
@@ -14,7 +14,7 @@ function ldraw_lib__6080() = [
 // 0 Minifig Plume Dragon and Wings on Sprue
 // 0 Name: 6080.dat
 // 0 Author: Magnus Forsberg [MagFors]
-// 0 !LDRAW_ORG Part UPDATE 2022-06
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -24,7 +24,8 @@ function ldraw_lib__6080() = [
 // 0 !CATEGORY Minifig Accessory
 // 
 // 0 !HISTORY 2022-12-20 [PTadmin] Official Update 2022-06
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // parts
 // 
@@ -42,10 +43,10 @@ function ldraw_lib__6080() = [
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -6 0 57 0 0 0 12 0 0 0 57 48\4-4cylo.dat
   [1,16,0,-6,0,57,0,0,0,12,0,0,0,57, ldraw_lib__48__4_4cylo()],
-// 1 16 0 -6 0 3 0 0 0 1 0 0 0 3 48\4-4rin19.dat
-  [1,16,0,-6,0,3,0,0,0,1,0,0,0,3, ldraw_lib__48__4_4rin19()],
-// 1 16 0 6 0 3 0 0 0 -1 0 0 0 3 48\4-4rin19.dat
-  [1,16,0,6,0,3,0,0,0,-1,0,0,0,3, ldraw_lib__48__4_4rin19()],
+// 1 16 0 -6 0 3 0 0 0 1 0 0 0 3 48\4-4ring19.dat
+  [1,16,0,-6,0,3,0,0,0,1,0,0,0,3, ldraw_lib__48__4_4ring19()],
+// 1 16 0 6 0 3 0 0 0 -1 0 0 0 3 48\4-4ring19.dat
+  [1,16,0,6,0,3,0,0,0,-1,0,0,0,3, ldraw_lib__48__4_4ring19()],
 // 1 16 0 -6 0 5.5 0 0 0 12 0 0 0 5.5 4-4cylc.dat
   [1,16,0,-6,0,5.5,0,0,0,12,0,0,0,5.5, ldraw_lib__4_4cylc()],
 // 1 16 0 6 0 5.5 0 0 0 -1 0 0 0 5.5 4-4disc.dat

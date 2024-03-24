@@ -10,7 +10,7 @@ use <../../p/48/1-12chrd.scad>
 use <../../p/48/1-12cyli.scad>
 use <../../p/48/1-12edge.scad>
 use <../../p/48/1-24edge.scad>
-use <../../p/48/1-24rin9.scad>
+use <../../p/48/1-24ring9.scad>
 use <../../p/48/1-6cyli.scad>
 use <../../p/48/1-6edge.scad>
 use <../../p/48/1-8cylo.scad>
@@ -29,7 +29,7 @@ function ldraw_lib__s__18973s01() = [
 // 0 ~Windscreen  6 x  4 x  1.333 Curved - Base
 // 0 Name: s\18973s01.dat
 // 0 Author: Magnus Forsberg [MagFors]
-// 0 !LDRAW_ORG Subpart UPDATE 2020-02
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -39,7 +39,8 @@ function ldraw_lib__s__18973s01() = [
 // 0 !HISTORY 2015-10-11 [PTadmin] Official Update 2015-01
 // 0 !HISTORY 2020-01-07 [Sirio] Moved conditional lines in subpart
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Round border with stud cutouts
 // 0 // Faces
@@ -63,12 +64,12 @@ function ldraw_lib__s__18973s01() = [
   [1,16,0,28,-70,20,0,-34.641017,0,4,0,-34.641017,0,-20, ldraw_lib__48__1_6cyli()],
 // 1 16 0 28 -70 -40 0 0 0 4 0 0 0 -40 48\1-12cyli.dat
   [1,16,0,28,-70,-40,0,0,0,4,0,0,0,-40, ldraw_lib__48__1_12cyli()],
-// 1 16 0 28 -70 -2.43505 0 -3.17342 0 -1 0 -3.17342 0 2.43505 48\1-24rin9.dat
-  [1,16,0,28,-70,-2.43505,0,-3.17342,0,-1,0,-3.17342,0,2.43505, ldraw_lib__48__1_24rin9()],
+// 1 16 0 28 -70 -2.43505 0 -3.17342 0 -1 0 -3.17342 0 2.43505 48\1-24ring9.dat
+  [1,16,0,28,-70,-2.43505,0,-3.17342,0,-1,0,-3.17342,0,2.43505, ldraw_lib__48__1_24ring9()],
 // 1 16 0 28 -70 40 0 0 0 4 0 0 0 -40 48\1-12cyli.dat
   [1,16,0,28,-70,40,0,0,0,4,0,0,0,-40, ldraw_lib__48__1_12cyli()],
-// 1 16 0 28 -70 3.17342 0 -2.43505 0 -1 0 -2.43505 0 -3.17342 48\1-24rin9.dat
-  [1,16,0,28,-70,3.17342,0,-2.43505,0,-1,0,-2.43505,0,-3.17342, ldraw_lib__48__1_24rin9()],
+// 1 16 0 28 -70 3.17342 0 -2.43505 0 -1 0 -2.43505 0 -3.17342 48\1-24ring9.dat
+  [1,16,0,28,-70,3.17342,0,-2.43505,0,-1,0,-2.43505,0,-3.17342, ldraw_lib__48__1_24ring9()],
 // 0 // Edges
 // 1 16 0 24 -70 -40 0 0 0 1 0 0 0 -40 48\2-4edge.dat
   [1,16,0,24,-70,-40,0,0,0,1,0,0,0,-40, ldraw_lib__48__2_4edge()],

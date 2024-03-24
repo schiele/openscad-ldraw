@@ -3,30 +3,31 @@ use <../p/1-4chrd.scad>
 use <../p/1-4ndis.scad>
 use <../p/48/1-4chrd.scad>
 use <../p/48/2-4ndis.scad>
-use <../p/48/2-4rin17.scad>
+use <../p/48/2-4ring17.scad>
 use <../p/box5-12.scad>
 function ldraw_lib__003439a() = [
 // 0 Sticker  1.6 x  2.7 with White "171" on Black
 // 0 Name: 003439a.dat
 // 0 Author: Alex Taylor [anathema]
-// 0 !LDRAW_ORG Part UPDATE 2019-03
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS set 171, Train
+// 0 !KEYWORDS Train, set 171
 // 
 // 0 !HISTORY 2010-07-05 [PTadmin] Official Update 2010-02
 // 0 !HISTORY 2016-07-01 [cwdee] Updated description
 // 0 !HISTORY 2016-12-31 [PTadmin] Official Update 2016-01
 // 0 !HISTORY 2019-08-10 [anathema] Corrected colour of backing box and replaced with box5-12 primitive
 // 0 !HISTORY 2019-12-27 [PTadmin] Official Update 2019-03
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
-// 
-// 1 15 -11 -0.25 0 0 0 -0.6 0 1 0 0.6 0 0 48\2-4rin17.dat
-  [1,15,-11,-0.25,0,0,0,-0.6,0,1,0,0.6,0,0, ldraw_lib__48__2_4rin17()],
+// 1 15 -11 -0.25 0 0 0 -0.6 0 1 0 0.6 0 0 48\2-4ring17.dat
+  [1,15,-11,-0.25,0,0,0,-0.6,0,1,0,0.6,0,0, ldraw_lib__48__2_4ring17()],
 // 1 0 -11 -0.25 0 0 0 -10.2 0 1 0 10.2 0 0 48\1-4chrd.dat
   [1,0,-11,-0.25,0,0,0,-10.2,0,1,0,10.2,0,0, ldraw_lib__48__1_4chrd()],
 // 1 0 -11 -0.25 0 -10.2 0 0 0 1 0 0 0 -10.2 48\1-4chrd.dat
@@ -39,8 +40,8 @@ function ldraw_lib__003439a() = [
   [1,0,-11,-0.25,0,0,0,-10.8,0,1,0,10.8,0,0, ldraw_lib__48__2_4ndis()],
 // 1 0 11 -0.25 0 0 0 10.8 0 1 0 -10.8 0 0 48\2-4ndis.dat
   [1,0,11,-0.25,0,0,0,10.8,0,1,0,-10.8,0,0, ldraw_lib__48__2_4ndis()],
-// 1 15 11 -0.25 0 0 0 0.6 0 1 0 -0.6 0 0 48\2-4rin17.dat
-  [1,15,11,-0.25,0,0,0,0.6,0,1,0,-0.6,0,0, ldraw_lib__48__2_4rin17()],
+// 1 15 11 -0.25 0 0 0 0.6 0 1 0 -0.6 0 0 48\2-4ring17.dat
+  [1,15,11,-0.25,0,0,0,0.6,0,1,0,-0.6,0,0, ldraw_lib__48__2_4ring17()],
 // 4 15 -11 -0.25 10.2 11 -0.25 10.2 11 -0.25 10.8 -11 -0.25 10.8
   [4,15,-11,-0.25,10.2,11,-0.25,10.2,11,-0.25,10.8,-11,-0.25,10.8],
 // 4 0 -5.8 -0.25 7.9 5.4 -0.25 7.9 11 -0.25 10.2 -11 -0.25 10.2

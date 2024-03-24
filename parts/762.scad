@@ -6,14 +6,14 @@ use <../p/1-4ring4.scad>
 use <../p/1-4ring5.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4edge.scad>
-use <../p/4-4rin12.scad>
+use <../p/4-4ring12.scad>
 use <../p/4-4ring2.scad>
 use <../p/ring1.scad>
 function ldraw_lib__762() = [
 // 0 ~Winding Drum  1 x  2
 // 0 Name: 762.dat
 // 0 Author: Michael Heidemann [mikeheide]
-// 0 !LDRAW_ORG Part UPDATE 2010-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -23,7 +23,8 @@ function ldraw_lib__762() = [
 // 0 !CATEGORY Winch
 // 
 // 0 !HISTORY 2010-04-05 [PTadmin] Official Update 2010-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 16 0 0 0 -2 0 13 0 0 0 0 13 4-4cyli.dat
   [1,16,16,0,0,0,-2,0,13,0,0,0,0,13, ldraw_lib__4_4cyli()],
@@ -40,25 +41,25 @@ function ldraw_lib__762() = [
   [1,16,16,0,0,0,-1,0,-4,0,0,0,0,-4, ldraw_lib__ring1()],
 // 1 16 16 0 0 0 -1 0 -4 0 0 0 0 -4 4-4ring2.dat
   [1,16,16,0,0,0,-1,0,-4,0,0,0,0,-4, ldraw_lib__4_4ring2()],
-// 1 16 16 0 0 0 -1 0 -1 0 0 0 0 -1 4-4rin12.dat
-  [1,16,16,0,0,0,-1,0,-1,0,0,0,0,-1, ldraw_lib__4_4rin12()],
+// 1 16 16 0 0 0 -1 0 -1 0 0 0 0 -1 4-4ring12.dat
+  [1,16,16,0,0,0,-1,0,-1,0,0,0,0,-1, ldraw_lib__4_4ring12()],
 // 0
 // 1 16 -16 0 0 0 1 0 0 0 4 4 0 0 ring1.dat
   [1,16,-16,0,0,0,1,0,0,0,4,4,0,0, ldraw_lib__ring1()],
 // 1 16 -16 0 0 0 1 0 0 0 4 4 0 0 4-4ring2.dat
   [1,16,-16,0,0,0,1,0,0,0,4,4,0,0, ldraw_lib__4_4ring2()],
-// 1 16 -16 0 0 0 1 0 -1 0 0 0 0 1 4-4rin12.dat
-  [1,16,-16,0,0,0,1,0,-1,0,0,0,0,1, ldraw_lib__4_4rin12()],
+// 1 16 -16 0 0 0 1 0 -1 0 0 0 0 1 4-4ring12.dat
+  [1,16,-16,0,0,0,1,0,-1,0,0,0,0,1, ldraw_lib__4_4ring12()],
 // 0
 // 1 16 -14 0 0 0 -1 0 0 0 6 -6 0 0 ring1.dat
   [1,16,-14,0,0,0,-1,0,0,0,6,-6,0,0, ldraw_lib__ring1()],
-// 1 16 -14 0 0 0 -1 0 -1 0 0 0 0 -1 4-4rin12.dat
-  [1,16,-14,0,0,0,-1,0,-1,0,0,0,0,-1, ldraw_lib__4_4rin12()],
+// 1 16 -14 0 0 0 -1 0 -1 0 0 0 0 -1 4-4ring12.dat
+  [1,16,-14,0,0,0,-1,0,-1,0,0,0,0,-1, ldraw_lib__4_4ring12()],
 // 0
 // 1 16 14 0 0 0 1 0 0 0 6 6 0 0 ring1.dat
   [1,16,14,0,0,0,1,0,0,0,6,6,0,0, ldraw_lib__ring1()],
-// 1 16 14 0 0 0 1 0 -1 0 0 0 0 1 4-4rin12.dat
-  [1,16,14,0,0,0,1,0,-1,0,0,0,0,1, ldraw_lib__4_4rin12()],
+// 1 16 14 0 0 0 1 0 -1 0 0 0 0 1 4-4ring12.dat
+  [1,16,14,0,0,0,1,0,-1,0,0,0,0,1, ldraw_lib__4_4ring12()],
 // 0
 // 1 16 16 0 0 0 -4 0 0 0 -4 4 0 0 4-4edge.dat
   [1,16,16,0,0,0,-4,0,0,0,-4,4,0,0, ldraw_lib__4_4edge()],

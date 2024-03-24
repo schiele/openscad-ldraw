@@ -1,12 +1,12 @@
 use <../lib.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4edge.scad>
-use <../p/4-4rin19.scad>
+use <../p/4-4ring19.scad>
 function ldraw_lib__87695() = [
 // 0 Animal Cattlehorns
 // 0 Name: 87695.dat
 // 0 Author: Franklin W. Cain [fwcain]
-// 0 !LDRAW_ORG Part UPDATE 2015-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -23,14 +23,15 @@ function ldraw_lib__87695() = [
 // 0 !HISTORY 2012-08-09 [PTadmin] Official Update 2012-02
 // 0 !HISTORY 2015-10-22 [PTadmin] Renamed from 6029a
 // 0 !HISTORY 2015-12-30 [PTadmin] Official Update 2015-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 7 0 0 0 -14 0 4 0 0 0 0 4 4-4cyli.dat
   [1,16,7,0,0,0,-14,0,4,0,0,0,0,4, ldraw_lib__4_4cyli()],
-// 1 16 7 0 0 0 -1 0 0.2 0 0 0 0 -0.2 4-4rin19.dat
-  [1,16,7,0,0,0,-1,0,0.2,0,0,0,0,-0.2, ldraw_lib__4_4rin19()],
-// 1 16 -7 0 0 0 1 0 0.2 0 0 0 0 0.2 4-4rin19.dat
-  [1,16,-7,0,0,0,1,0,0.2,0,0,0,0,0.2, ldraw_lib__4_4rin19()],
+// 1 16 7 0 0 0 -1 0 0.2 0 0 0 0 -0.2 4-4ring19.dat
+  [1,16,7,0,0,0,-1,0,0.2,0,0,0,0,-0.2, ldraw_lib__4_4ring19()],
+// 1 16 -7 0 0 0 1 0 0.2 0 0 0 0 0.2 4-4ring19.dat
+  [1,16,-7,0,0,0,1,0,0.2,0,0,0,0,0.2, ldraw_lib__4_4ring19()],
 // 1 16 -7 0 0 0 1 0 4 0 0 0 0 4 4-4edge.dat
   [1,16,-7,0,0,0,1,0,4,0,0,0,0,4, ldraw_lib__4_4edge()],
 // 1 16 -7 0 0 0 1 0 3.8 0 0 0 0 3.8 4-4edge.dat

@@ -4,7 +4,7 @@ use <../p/4-4con11.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4edge.scad>
-use <../p/4-4rin15.scad>
+use <../p/4-4ring15.scad>
 use <../p/4-4ring2.scad>
 use <../p/4-4ring3.scad>
 use <../p/4-4ring4.scad>
@@ -13,7 +13,7 @@ function ldraw_lib__33061() = [
 // 0 Minifig Wine Glass
 // 0 Name: 33061.dat
 // 0 Author: Andy Westrate [westrate]
-// 0 !LDRAW_ORG Part UPDATE 2018-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -25,7 +25,8 @@ function ldraw_lib__33061() = [
 // 0 !HISTORY 2009-12-29 [PTadmin] Official Update 2009-03
 // 0 !HISTORY 2018-03-26 [cwdee] Replace t04ounit with identical r04o1000
 // 0 !HISTORY 2018-12-08 [PTadmin] Official Update 2018-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // top
 // 
@@ -45,8 +46,8 @@ function ldraw_lib__33061() = [
   [1,16,0,0,0,8,0,0,0,4,0,0,0,8, ldraw_lib__4_4cyli()],
 // 1 16 0 4 0 7.5 0 0 0 1 0 0 0 7.5 4-4edge.dat
   [1,16,0,4,0,7.5,0,0,0,1,0,0,0,7.5, ldraw_lib__4_4edge()],
-// 1 16 0 4 0 0.5 0 0 0 1 0 0 0 0.5 4-4rin15.dat
-  [1,16,0,4,0,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__4_4rin15()],
+// 1 16 0 4 0 0.5 0 0 0 1 0 0 0 0.5 4-4ring15.dat
+  [1,16,0,4,0,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__4_4ring15()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 4 0 7.5 0 0 0 14 0 0 0 7.5 4-4cyli.dat

@@ -3,7 +3,7 @@ use <../p/4-4edge.scad>
 use <../p/4-4ndis.scad>
 use <../p/48/1-4con4.scad>
 use <../p/48/1-4edge.scad>
-use <../p/48/1-4rin15.scad>
+use <../p/48/1-4ring15.scad>
 use <../p/axlehol2.scad>
 use <../p/axlehol3.scad>
 use <../p/axlehole.scad>
@@ -18,7 +18,7 @@ function ldraw_lib__58846() = [
 // 0 Brick 10 x 10 Corner Round with Tapered Edge and Cutout
 // 0 Name: 58846.dat
 // 0 Author: Alex Taylor [anathema]
-// 0 !LDRAW_ORG Part UPDATE 2011-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -26,7 +26,8 @@ function ldraw_lib__58846() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 16 0 1 0 0 0 1 0 0 0 1 axlehol3.dat
   [1,16,0,16,0,1,0,0,0,1,0,0,0,1, ldraw_lib__axlehol3()],
@@ -116,8 +117,8 @@ function ldraw_lib__58846() = [
   [1,16,0,4,0,8,0,0,0,-1,0,0,0,-8, ldraw_lib__4_4ndis()],
 // 1 16 80 20 80 -40 0 0 0 -20 0 0 0 -40 48\1-4con4.dat
   [1,16,80,20,80,-40,0,0,0,-20,0,0,0,-40, ldraw_lib__48__1_4con4()],
-// 1 16 80 0 80 -10 0 0 0 1 0 0 0 -10 48\1-4rin15.dat
-  [1,16,80,0,80,-10,0,0,0,1,0,0,0,-10, ldraw_lib__48__1_4rin15()],
+// 1 16 80 0 80 -10 0 0 0 1 0 0 0 -10 48\1-4ring15.dat
+  [1,16,80,0,80,-10,0,0,0,1,0,0,0,-10, ldraw_lib__48__1_4ring15()],
 // 1 16 80 0 80 -160 0 0 0 1 0 0 0 -160 48\1-4edge.dat
   [1,16,80,0,80,-160,0,0,0,1,0,0,0,-160, ldraw_lib__48__1_4edge()],
 // 1 16 80 4 80 -160 0 0 0 1 0 0 0 -160 48\1-4edge.dat

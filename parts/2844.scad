@@ -7,7 +7,7 @@ use <../p/48/1-4con8.scad>
 use <../p/48/4-4cyli.scad>
 use <../p/48/4-4disc.scad>
 use <../p/48/4-4edge.scad>
-use <../p/48/4-4rin12.scad>
+use <../p/48/4-4ring12.scad>
 use <../p/48/4-4ring3.scad>
 use <../p/48/4-4ring4.scad>
 use <../p/box2-5.scad>
@@ -18,7 +18,7 @@ function ldraw_lib__2844() = [
 // 0 ~Technic Control Centre II - Large Round Button
 // 0 Name: 2844.dat
 // 0 Author: Michael Heidemann [mikeheide]
-// 0 !LDRAW_ORG Part UPDATE 2012-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -28,7 +28,8 @@ function ldraw_lib__2844() = [
 // 0 !CATEGORY Electric
 // 
 // 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 27 0 2 0 0 0 -15 0 0 0 2 48\1-4con28.dat
   [1,16,0,27,0,2,0,0,0,-15,0,0,0,2, ldraw_lib__48__1_4con28()],
@@ -597,8 +598,8 @@ function ldraw_lib__2844() = [
   [1,16,0,3,0,50,0,0,0,3,0,0,0,50, ldraw_lib__48__4_4edge()],
 // 1 16 0 27 0 58 0 0 0 3 0 0 0 58 48\4-4edge.dat
   [1,16,0,27,0,58,0,0,0,3,0,0,0,58, ldraw_lib__48__4_4edge()],
-// 1 16 0 31 0 4.465 0 0 0 -3 0 0 0 -4.465 48\4-4rin12.dat
-  [1,16,0,31,0,4.465,0,0,0,-3,0,0,0,-4.465, ldraw_lib__48__4_4rin12()],
+// 1 16 0 31 0 4.465 0 0 0 -3 0 0 0 -4.465 48\4-4ring12.dat
+  [1,16,0,31,0,4.465,0,0,0,-3,0,0,0,-4.465, ldraw_lib__48__4_4ring12()],
 // 1 16 0 31 0 53.5 0 0 0 -3 0 0 0 53.5 48\4-4edge.dat
   [1,16,0,31,0,53.5,0,0,0,-3,0,0,0,53.5, ldraw_lib__48__4_4edge()],
 // 0 //

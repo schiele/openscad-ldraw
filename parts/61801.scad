@@ -3,11 +3,11 @@ use <../p/4-4cylc.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4edge.scad>
-use <../p/4-4rin15.scad>
-use <../p/4-4rin16.scad>
-use <../p/4-4rin17.scad>
-use <../p/4-4rin36.scad>
+use <../p/4-4ring15.scad>
+use <../p/4-4ring16.scad>
+use <../p/4-4ring17.scad>
 use <../p/4-4ring2.scad>
+use <../p/4-4ring36.scad>
 use <../p/4-4ring5.scad>
 use <../p/axl3hole.scad>
 use <../p/axle.scad>
@@ -16,7 +16,7 @@ function ldraw_lib__61801() = [
 // 0 Technic Bionicle Jet Booster 5L
 // 0 Name: 61801.dat
 // 0 Author: Santeri Piippo [arezey]
-// 0 !LDRAW_ORG Part UPDATE 2010-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -26,7 +26,8 @@ function ldraw_lib__61801() = [
 // 0 !KEYWORDS Aircraft, Engine, Hovercraft, Plane, Rocket
 // 
 // 0 !HISTORY 2010-07-05 [PTadmin] Official Update 2010-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\61801s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__61801s01()],
@@ -50,24 +51,24 @@ function ldraw_lib__61801() = [
   [1,16,0,0,-9.5,0,0,-12.5,12.5,0,0,0,-1,0, ldraw_lib__4_4disc()],
 // 1 16 0 0 -9.5 0 0 -3 3 0 0 0 -1 0 4-4ring5.dat
   [1,16,0,0,-9.5,0,0,-3,3,0,0,0,-1,0, ldraw_lib__4_4ring5()],
-// 1 16 0 0 -9.5 0 0 -0.5 0.5 0 0 0 -1 0 4-4rin36.dat
-  [1,16,0,0,-9.5,0,0,-0.5,0.5,0,0,0,-1,0, ldraw_lib__4_4rin36()],
+// 1 16 0 0 -9.5 0 0 -0.5 0.5 0 0 0 -1 0 4-4ring36.dat
+  [1,16,0,0,-9.5,0,0,-0.5,0.5,0,0,0,-1,0, ldraw_lib__4_4ring36()],
 // 1 16 0 0 -9.5 0 0 18.5 18.5 0 0 0 -20.5 0 4-4cyli.dat
   [1,16,0,0,-9.5,0,0,18.5,18.5,0,0,0,-20.5,0, ldraw_lib__4_4cyli()],
 // 1 16 0 0 -30 0 0 18.5 18.5 0 0 0 1 0 4-4edge.dat
   [1,16,0,0,-30,0,0,18.5,18.5,0,0,0,1,0, ldraw_lib__4_4edge()],
 // 1 16 0 0 -30 0 0 17 17 0 0 0 1 0 4-4edge.dat
   [1,16,0,0,-30,0,0,17,17,0,0,0,1,0, ldraw_lib__4_4edge()],
-// 1 16 0 0 -30 0 0 1 1 0 0 0 1 0 4-4rin17.dat
-  [1,16,0,0,-30,0,0,1,1,0,0,0,1,0, ldraw_lib__4_4rin17()],
-// 1 16 0 0 -30 0 0 0.5 0.5 0 0 0 1 0 4-4rin36.dat
-  [1,16,0,0,-30,0,0,0.5,0.5,0,0,0,1,0, ldraw_lib__4_4rin36()],
+// 1 16 0 0 -30 0 0 1 1 0 0 0 1 0 4-4ring17.dat
+  [1,16,0,0,-30,0,0,1,1,0,0,0,1,0, ldraw_lib__4_4ring17()],
+// 1 16 0 0 -30 0 0 0.5 0.5 0 0 0 1 0 4-4ring36.dat
+  [1,16,0,0,-30,0,0,0.5,0.5,0,0,0,1,0, ldraw_lib__4_4ring36()],
 // 1 16 0 0 -10 0 0 12.5 12.5 0 0 0 1 0 4-4disc.dat
   [1,16,0,0,-10,0,0,12.5,12.5,0,0,0,1,0, ldraw_lib__4_4disc()],
-// 1 16 0 0 -10 0 0 1 1 0 0 0 1 0 4-4rin15.dat
-  [1,16,0,0,-10,0,0,1,1,0,0,0,1,0, ldraw_lib__4_4rin15()],
-// 1 16 0 0 -10 0 0 1 1 0 0 0 1 0 4-4rin16.dat
-  [1,16,0,0,-10,0,0,1,1,0,0,0,1,0, ldraw_lib__4_4rin16()],
+// 1 16 0 0 -10 0 0 1 1 0 0 0 1 0 4-4ring15.dat
+  [1,16,0,0,-10,0,0,1,1,0,0,0,1,0, ldraw_lib__4_4ring15()],
+// 1 16 0 0 -10 0 0 1 1 0 0 0 1 0 4-4ring16.dat
+  [1,16,0,0,-10,0,0,1,1,0,0,0,1,0, ldraw_lib__4_4ring16()],
 // 1 16 0 0 -10 0 0 17 17 0 0 0 1 0 4-4edge.dat
   [1,16,0,0,-10,0,0,17,17,0,0,0,1,0, ldraw_lib__4_4edge()],
 // 0 BFC INVERTNEXT

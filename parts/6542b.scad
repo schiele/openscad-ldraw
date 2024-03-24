@@ -7,8 +7,8 @@ use <../p/4-4ring8.scad>
 use <../p/48/4-4cyli.scad>
 use <../p/48/4-4edge.scad>
 use <../p/48/4-4ri100.scad>
-use <../p/48/4-4rin15.scad>
-use <../p/48/4-4rin16.scad>
+use <../p/48/4-4ring15.scad>
+use <../p/48/4-4ring16.scad>
 use <../p/48/4-4ring7.scad>
 use <../p/peghole.scad>
 use <../p/tooth16.scad>
@@ -16,7 +16,7 @@ function ldraw_lib__6542b() = [
 // 0 Technic Gear 16 Tooth with Clutch Smooth
 // 0 Name: 6542b.dat
 // 0 Author: Max Martin Richter [MMR1988]
-// 0 !LDRAW_ORG Part UPDATE 2012-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -24,7 +24,8 @@ function ldraw_lib__6542b() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2012-08-09 [PTadmin] Official Update 2012-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 -10 1 0 0 0 0 -1 0 1 0 peghole.dat
   [1,16,0,0,-10,1,0,0,0,0,-1,0,1,0, ldraw_lib__peghole()],
@@ -252,10 +253,10 @@ function ldraw_lib__6542b() = [
   [1,16,0,0,10,8,0,0,0,0,8,0,1,0, ldraw_lib__4_4edge()],
 // 1 16 0 0 10 15 0 0 0 0 15 0 1 0 48\4-4edge.dat
   [1,16,0,0,10,15,0,0,0,0,15,0,1,0, ldraw_lib__48__4_4edge()],
-// 1 16 0 0 10 1 0 0 0 0 1 0 -1 0 48\4-4rin15.dat
-  [1,16,0,0,10,1,0,0,0,0,1,0,-1,0, ldraw_lib__48__4_4rin15()],
-// 1 16 0 0 10 1 0 0 0 0 1 0 -1 0 48\4-4rin16.dat
-  [1,16,0,0,10,1,0,0,0,0,1,0,-1,0, ldraw_lib__48__4_4rin16()],
+// 1 16 0 0 10 1 0 0 0 0 1 0 -1 0 48\4-4ring15.dat
+  [1,16,0,0,10,1,0,0,0,0,1,0,-1,0, ldraw_lib__48__4_4ring15()],
+// 1 16 0 0 10 1 0 0 0 0 1 0 -1 0 48\4-4ring16.dat
+  [1,16,0,0,10,1,0,0,0,0,1,0,-1,0, ldraw_lib__48__4_4ring16()],
 // 1 16 0 0 10 0.17 0 0 0 0 0.17 0 -1 0 48\4-4ri100.dat
   [1,16,0,0,10,0.17,0,0,0,0,0.17,0,-1,0, ldraw_lib__48__4_4ri100()],
 // 0 BFC INVERTNEXT

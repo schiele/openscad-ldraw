@@ -6,7 +6,7 @@ use <../p/4-4ring2.scad>
 use <../p/4-4ring3.scad>
 use <../p/4-4ring8.scad>
 use <../p/48/1-12ndis.scad>
-use <../p/48/1-12rin2.scad>
+use <../p/48/1-12ring2.scad>
 use <../p/48/1-4ndis.scad>
 use <../p/48/1-4ring2.scad>
 use <../p/48/1-6ndis.scad>
@@ -16,7 +16,7 @@ function ldraw_lib__3069bpzb() = [
 // 0 Tile  1 x  2 with Light Bluish Grey Buttons on Metallic Silver Background Pattern
 // 0 Name: 3069bpzb.dat
 // 0 Author: Damien Roux [Darats]
-// 0 !LDRAW_ORG Part UPDATE 2019-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -26,7 +26,8 @@ function ldraw_lib__3069bpzb() = [
 // 0 !KEYWORDS Brickheadz, Carbonite, Han Solo, Keyboard, Set 41498
 // 
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3069bs01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3069bs01()],
@@ -54,10 +55,10 @@ function ldraw_lib__3069bpzb() = [
   [1,80,-10,0,0,1.5,0,0,0,1,0,0,0,1.5, ldraw_lib__4_4disc()],
 // 1 80 1.25 0 2.521 0.5 0 0 0 1 0 0 0 0.5 4-4ring2.dat
   [1,80,1.25,0,2.521,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__4_4ring2()],
-// 1 80 15.8747 0 5.8742 0 0 0.5 0 1 0 -0.5 0 0 48\1-12rin2.dat
-  [1,80,15.8747,0,5.8742,0,0,0.5,0,1,0,-0.5,0,0, ldraw_lib__48__1_12rin2()],
-// 1 80 15.8747 0 5.8742 -0.5 0 0 0 1 0 0 0 0.5 48\1-12rin2.dat
-  [1,80,15.8747,0,5.8742,-0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__48__1_12rin2()],
+// 1 80 15.8747 0 5.8742 0 0 0.5 0 1 0 -0.5 0 0 48\1-12ring2.dat
+  [1,80,15.8747,0,5.8742,0,0,0.5,0,1,0,-0.5,0,0, ldraw_lib__48__1_12ring2()],
+// 1 80 15.8747 0 5.8742 -0.5 0 0 0 1 0 0 0 0.5 48\1-12ring2.dat
+  [1,80,15.8747,0,5.8742,-0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__48__1_12ring2()],
 // 1 80 15.8747 0 5.8742 1 0 0 0 1 0 0 0 -1 48\1-6ndis.dat
   [1,80,15.8747,0,5.8742,1,0,0,0,1,0,0,0,-1, ldraw_lib__48__1_6ndis()],
 // 1 80 15.8747 0 5.8742 1 0 0 0 1 0 0 0 1 48\1-4ndis.dat

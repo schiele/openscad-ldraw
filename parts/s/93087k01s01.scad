@@ -7,7 +7,7 @@ use <../../p/2-4cylo.scad>
 use <../../p/2-4edge.scad>
 use <../../p/2-4ndis.scad>
 use <../../p/3-16cylo.scad>
-use <../../p/3-16rin4.scad>
+use <../../p/3-16ring4.scad>
 use <../../p/4-4cyli.scad>
 use <../../p/4-4disc.scad>
 use <../../p/4-4edge.scad>
@@ -17,7 +17,7 @@ function ldraw_lib__s__93087k01s01() = [
 // 0 ~Animal Horse Friends Bridle Headpiece Half
 // 0 Name: s\93087k01s01.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Subpart UPDATE 2022-01
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -27,7 +27,8 @@ function ldraw_lib__s__93087k01s01() = [
 // 0 !HISTORY 2020-12-12 {LEGO/Unity Microgame} Original part shape
 // 0 !HISTORY 2020-12-12 [Philo] File preparation for LDraw Parts Tracker
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 -2.5 -0.5 0 0 16.5 0 5 0 -16.5 0 0 2-4cylo.dat
   [1,16,0,-2.5,-0.5,0,0,16.5,0,5,0,-16.5,0,0, ldraw_lib__2_4cylo()],
@@ -39,14 +40,14 @@ function ldraw_lib__s__93087k01s01() = [
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -2.5 -0.5 0 0 13.2 0 5 0 13.2 0 0 3-16cylo.dat
   [1,16,0,-2.5,-0.5,0,0,13.2,0,5,0,13.2,0,0, ldraw_lib__3_16cylo()],
-// 1 16 0 -2.5 -0.5 0 0 3.3 0 1 0 3.3 0 0 3-16rin4.dat
-  [1,16,0,-2.5,-0.5,0,0,3.3,0,1,0,3.3,0,0, ldraw_lib__3_16rin4()],
-// 1 16 0 -2.5 -0.5 0 0 3.3 0 1 0 -3.3 0 0 3-16rin4.dat
-  [1,16,0,-2.5,-0.5,0,0,3.3,0,1,0,-3.3,0,0, ldraw_lib__3_16rin4()],
-// 1 16 0 2.5 -0.5 0 0 3.3 0 -1 0 3.3 0 0 3-16rin4.dat
-  [1,16,0,2.5,-0.5,0,0,3.3,0,-1,0,3.3,0,0, ldraw_lib__3_16rin4()],
-// 1 16 0 2.5 -0.5 0 0 3.3 0 -1 0 -3.3 0 0 3-16rin4.dat
-  [1,16,0,2.5,-0.5,0,0,3.3,0,-1,0,-3.3,0,0, ldraw_lib__3_16rin4()],
+// 1 16 0 -2.5 -0.5 0 0 3.3 0 1 0 3.3 0 0 3-16ring4.dat
+  [1,16,0,-2.5,-0.5,0,0,3.3,0,1,0,3.3,0,0, ldraw_lib__3_16ring4()],
+// 1 16 0 -2.5 -0.5 0 0 3.3 0 1 0 -3.3 0 0 3-16ring4.dat
+  [1,16,0,-2.5,-0.5,0,0,3.3,0,1,0,-3.3,0,0, ldraw_lib__3_16ring4()],
+// 1 16 0 2.5 -0.5 0 0 3.3 0 -1 0 3.3 0 0 3-16ring4.dat
+  [1,16,0,2.5,-0.5,0,0,3.3,0,-1,0,3.3,0,0, ldraw_lib__3_16ring4()],
+// 1 16 0 2.5 -0.5 0 0 3.3 0 -1 0 -3.3 0 0 3-16ring4.dat
+  [1,16,0,2.5,-0.5,0,0,3.3,0,-1,0,-3.3,0,0, ldraw_lib__3_16ring4()],
 // 1 16 17 0 0 0 -1 0 0 0 4 4 0 0 4-4disc.dat
   [1,16,17,0,0,0,-1,0,0,0,4,4,0,0, ldraw_lib__4_4disc()],
 // 1 16 17 0 0 0 -1 0 0 0 4 4 0 0 4-4edge.dat

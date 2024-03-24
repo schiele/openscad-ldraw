@@ -1,7 +1,7 @@
 use <../lib.scad>
 use <../p/1-16chrd.scad>
 use <../p/1-4cylo.scad>
-use <../p/1-4rin12.scad>
+use <../p/1-4ring12.scad>
 use <../p/2-4cyli.scad>
 use <../p/2-4edge.scad>
 use <../p/3-16cyli.scad>
@@ -15,7 +15,7 @@ function ldraw_lib__15459() = [
 // 0 Technic Suspension Arm  1 x  5 Type 1
 // 0 Name: 15459.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2023-05
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -27,7 +27,8 @@ function ldraw_lib__15459() = [
 // 0 !HISTORY 2022-02-24 [MagFors] Closed gaps in hi-res mode
 // 0 !HISTORY 2022-10-14 [Cheenzo] Fixed T-Junction
 // 0 !HISTORY 2023-10-31 [OrionP] Official Update 2023-05
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 -60 0 -1 0 1 0 0 0 0 1 connhole.dat
   [1,16,0,0,-60,0,-1,0,1,0,0,0,0,1, ldraw_lib__connhole()],
@@ -49,10 +50,10 @@ function ldraw_lib__15459() = [
   [1,16,0,-1.72215,8.31141,-2,0,0,0,-1,-1.72215,0,0,.00369, ldraw_lib__rect3()],
 // 1 16 -2 0 0 0 4 0 -9 0 0 0 0 9 3-16cyli.dat
   [1,16,-2,0,0,0,4,0,-9,0,0,0,0,9, ldraw_lib__3_16cyli()],
-// 1 16 2 0 0 0 1 0 0 0 .69231 .69231 0 0 1-4rin12.dat
-  [1,16,2,0,0,0,1,0,0,0,.69231,.69231,0,0, ldraw_lib__1_4rin12()],
-// 1 16 -2 0 0 0 -1 0 0 0 .69231 .69231 0 0 1-4rin12.dat
-  [1,16,-2,0,0,0,-1,0,0,0,.69231,.69231,0,0, ldraw_lib__1_4rin12()],
+// 1 16 2 0 0 0 1 0 0 0 .69231 .69231 0 0 1-4ring12.dat
+  [1,16,2,0,0,0,1,0,0,0,.69231,.69231,0,0, ldraw_lib__1_4ring12()],
+// 1 16 -2 0 0 0 -1 0 0 0 .69231 .69231 0 0 1-4ring12.dat
+  [1,16,-2,0,0,0,-1,0,0,0,.69231,.69231,0,0, ldraw_lib__1_4ring12()],
 // 1 16 2 0 0 0 1 0 9 0 0 0 0 9 5-16edge.dat
   [1,16,2,0,0,0,1,0,9,0,0,0,0,9, ldraw_lib__5_16edge()],
 // 1 16 -2 0 0 0 1 0 9 0 0 0 0 9 5-16edge.dat

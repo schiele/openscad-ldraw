@@ -6,14 +6,14 @@ use <../p/3-4ndis.scad>
 use <../p/3-4ring2.scad>
 use <../p/7-16chrd.scad>
 use <../p/7-16ndis.scad>
-use <../p/7-16rin3.scad>
+use <../p/7-16ring3.scad>
 use <s/3069bs01.scad>
 function ldraw_lib__3069bpa1() = [
 // 0 Tile  1 x  2 with White "HC514" Pattern
 // 0 Name: 3069bpa1.dat
 // 0 Author: Marek Idec [Maras]
-// 0 !LDRAW_ORG Part UPDATE 2017-01
-// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+// 0 !LDRAW_ORG Part UPDATE 2024-02
+// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
@@ -28,7 +28,8 @@ function ldraw_lib__3069bpa1() = [
 // 0 !HISTORY 2010-12-31 [PTadmin] Official Update 2010-03
 // 0 !HISTORY 2017-07-20 [Sirio] Corrected T-Junctions
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3069bs01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3069bs01()],
@@ -65,8 +66,8 @@ function ldraw_lib__3069bpa1() = [
 // 0 // Letter C
 // 1 16 -6.8 0 0 -3.2 0 0 0 1 0 0 0 3.4 7-16ndis.dat
   [1,16,-6.8,0,0,-3.2,0,0,0,1,0,0,0,3.4, ldraw_lib__7_16ndis()],
-// 1 15 -6.8 0 0 -.8 0 0 0 1 0 0 0 .85 7-16rin3.dat
-  [1,15,-6.8,0,0,-.8,0,0,0,1,0,0,0,.85, ldraw_lib__7_16rin3()],
+// 1 15 -6.8 0 0 -.8 0 0 0 1 0 0 0 .85 7-16ring3.dat
+  [1,15,-6.8,0,0,-.8,0,0,0,1,0,0,0,.85, ldraw_lib__7_16ring3()],
 // 1 16 -6.8 0 0 -2.4 0 0 0 1 0 0 0 2.55 7-16chrd.dat
   [1,16,-6.8,0,0,-2.4,0,0,0,1,0,0,0,2.55, ldraw_lib__7_16chrd()],
 // 3 15 -3.782359 0 .975885 -3.84352 0 1.30118 -4.58264 0 .975885
@@ -81,8 +82,8 @@ function ldraw_lib__3069bpa1() = [
   [1,16,-6.8,0,0,-2.4,0,0,0,1,0,0,0,-2.55, ldraw_lib__7_16chrd()],
 // 1 16 -6.8 0 0 -3.2 0 0 0 1 0 0 0 -3.4 7-16ndis.dat
   [1,16,-6.8,0,0,-3.2,0,0,0,1,0,0,0,-3.4, ldraw_lib__7_16ndis()],
-// 1 15 -6.8 0 0 -0.8 0 0 0 1 0 0 0 -0.85 7-16rin3.dat
-  [1,15,-6.8,0,0,-0.8,0,0,0,1,0,0,0,-0.85, ldraw_lib__7_16rin3()],
+// 1 15 -6.8 0 0 -0.8 0 0 0 1 0 0 0 -0.85 7-16ring3.dat
+  [1,15,-6.8,0,0,-0.8,0,0,0,1,0,0,0,-0.85, ldraw_lib__7_16ring3()],
 // 0 // Digit 5
 // 4 15 .5 0 3.4 1.168 0 2.6 4.1 0 2.6 4.1 0 3.4
   [4,15,.5,0,3.4,1.168,0,2.6,4.1,0,2.6,4.1,0,3.4],

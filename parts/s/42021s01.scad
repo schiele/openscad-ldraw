@@ -10,7 +10,7 @@ use <../../p/4-4cyli.scad>
 use <../../p/4-4cylo.scad>
 use <../../p/4-4edge.scad>
 use <../../p/4-4ndis.scad>
-use <../../p/4-4rin12.scad>
+use <../../p/4-4ring12.scad>
 use <../../p/4-4ring3.scad>
 use <../../p/box2-5.scad>
 use <../../p/box2-7.scad>
@@ -30,7 +30,7 @@ function ldraw_lib__s__42021s01() = [
 // 0 ~Wedge  6 x  8 x  2 Triple Inverted without Underside Surfaces
 // 0 Name: s\42021s01.dat
 // 0 Author: Franklin W. Cain [fwcain]
-// 0 !LDRAW_ORG Subpart UPDATE 2011-01
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -40,7 +40,8 @@ function ldraw_lib__s__42021s01() = [
 // 0 !HISTORY 2011-02-21 [MagFors] Modified with WINDZ for BFC compliance
 // 0 !HISTORY 2011-02-24 [MagFors] "rectified", used more primitives, moved cond-lines to main file
 // 0 !HISTORY 2011-07-25 [PTadmin] Official Update 2011-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 2 24 -20 20 0 -20 4 -20
   [2,24,-20,20,0,-20,4,-20],
@@ -800,12 +801,12 @@ function ldraw_lib__s__42021s01() = [
   [1,16,-20,34,122,-6.5,0,0,0,0,-6.5,0,1,0, ldraw_lib__2_4ndis()],
 // 1 16 20 34 122 -6.5 0 0 0 0 -6.5 0 1 0 2-4ndis.dat
   [1,16,20,34,122,-6.5,0,0,0,0,-6.5,0,1,0, ldraw_lib__2_4ndis()],
-// 1 16 0 34 122 0.5 0 0 0 0 0.5 0 1 0 4-4rin12.dat
-  [1,16,0,34,122,0.5,0,0,0,0,0.5,0,1,0, ldraw_lib__4_4rin12()],
-// 1 16 -20 34 122 0.5 0 0 0 0 0.5 0 1 0 4-4rin12.dat
-  [1,16,-20,34,122,0.5,0,0,0,0,0.5,0,1,0, ldraw_lib__4_4rin12()],
-// 1 16 20 34 122 0.5 0 0 0 0 0.5 0 1 0 4-4rin12.dat
-  [1,16,20,34,122,0.5,0,0,0,0,0.5,0,1,0, ldraw_lib__4_4rin12()],
+// 1 16 0 34 122 0.5 0 0 0 0 0.5 0 1 0 4-4ring12.dat
+  [1,16,0,34,122,0.5,0,0,0,0,0.5,0,1,0, ldraw_lib__4_4ring12()],
+// 1 16 -20 34 122 0.5 0 0 0 0 0.5 0 1 0 4-4ring12.dat
+  [1,16,-20,34,122,0.5,0,0,0,0,0.5,0,1,0, ldraw_lib__4_4ring12()],
+// 1 16 20 34 122 0.5 0 0 0 0 0.5 0 1 0 4-4ring12.dat
+  [1,16,20,34,122,0.5,0,0,0,0,0.5,0,1,0, ldraw_lib__4_4ring12()],
 // 1 16 0 34 122 6 0 0 0 0 6 0 1 0 4-4edge.dat
   [1,16,0,34,122,6,0,0,0,0,6,0,1,0, ldraw_lib__4_4edge()],
 // 1 16 -20 34 122 6 0 0 0 0 6 0 1 0 4-4edge.dat

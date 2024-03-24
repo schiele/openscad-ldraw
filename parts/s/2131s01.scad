@@ -2,7 +2,7 @@ use <../../lib.scad>
 use <../../p/1-4cyli.scad>
 use <../../p/1-4disc.scad>
 use <../../p/1-4edge.scad>
-use <../../p/1-4rin17.scad>
+use <../../p/1-4ring17.scad>
 use <../../p/1-4ring9.scad>
 use <../../p/box4o4a.scad>
 use <../../p/box5-4a.scad>
@@ -12,7 +12,7 @@ function ldraw_lib__s__2131s01() = [
 // 0 ~Fabuland Refrigerator Cabinet - Half
 // 0 Name: s\2131s01.dat
 // 0 Author: Chris Dee [cwdee]
-// 0 !LDRAW_ORG Subpart UPDATE 2014-02
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CW
@@ -20,7 +20,8 @@ function ldraw_lib__s__2131s01() = [
   [0,"BFC","CW"],
 // 
 // 0 !HISTORY 2014-12-23 [PTadmin] Official Update 2014-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 27 120 0 3 0 0 0 -1 0 0 0 16 rect.dat
   [1,16,27,120,0,3,0,0,0,-1,0,0,0,16, ldraw_lib__rect()],
@@ -125,8 +126,8 @@ function ldraw_lib__s__2131s01() = [
   [1,16,20,20,18,20,0,0,0,0,-20,0,-44,0, ldraw_lib__1_4cyli()],
 // 1 16 20 20 -26 20 0 0 0 0 -20 0 1 0 1-4edge.dat
   [1,16,20,20,-26,20,0,0,0,0,-20,0,1,0, ldraw_lib__1_4edge()],
-// 1 16 20 20 -26 1 0 0 0 0 -1 0 1 0 1-4rin17.dat
-  [1,16,20,20,-26,1,0,0,0,0,-1,0,1,0, ldraw_lib__1_4rin17()],
+// 1 16 20 20 -26 1 0 0 0 0 -1 0 1 0 1-4ring17.dat
+  [1,16,20,20,-26,1,0,0,0,0,-1,0,1,0, ldraw_lib__1_4ring17()],
 // 1 16 20 20 -26 2 0 0 0 0 -2 0 1 0 1-4ring9.dat
   [1,16,20,20,-26,2,0,0,0,0,-2,0,1,0, ldraw_lib__1_4ring9()],
 // 1 16 20 20 -26 17 0 0 0 0 -17 0 1 0 1-4edge.dat

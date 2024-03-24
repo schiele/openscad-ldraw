@@ -9,7 +9,7 @@ use <../p/4-4cylc.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4edge.scad>
-use <../p/4-4rin12.scad>
+use <../p/4-4ring12.scad>
 use <../p/4-4ring2.scad>
 use <../p/axle.scad>
 use <../p/connhole.scad>
@@ -21,7 +21,7 @@ function ldraw_lib__57565() = [
 // 0 Technic Bionicle Weapon Pincer 6L
 // 0 Name: 57565.dat
 // 0 Author: Santeri Piippo [arezey]
-// 0 !LDRAW_ORG Part UPDATE 2010-03
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -31,7 +31,8 @@ function ldraw_lib__57565() = [
 // 0 !HISTORY 2009-10-13 {LEGO Universe Team} Original part shape
 // 0 !HISTORY 2009-11-01 [arezey] File preparation for LDraw Parts Tracker
 // 0 !HISTORY 2010-12-31 [PTadmin] Official Update 2010-03
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 0 -1 0 -1 0 0 0 0 -1 connhole.dat
   [1,16,0,0,0,0,-1,0,-1,0,0,0,0,-1, ldraw_lib__connhole()],
@@ -493,8 +494,8 @@ function ldraw_lib__57565() = [
   [1,16,0,-38.76,-39.5,0,0,3.25,3.1494,0.2469,0,-0.8024,0.969,0, ldraw_lib__4_4edge()],
 // 1 16 0 -38.76 -39.5 0 0 1 0.969 0.2469 0 -0.2469 0.969 0 4-4ring2.dat
   [1,16,0,-38.76,-39.5,0,0,1,0.969,0.2469,0,-0.2469,0.969,0, ldraw_lib__4_4ring2()],
-// 1 16 0 -38.76 -39.5 0 0 0.25 0.2423 0.2469 0 -0.0617 0.969 0 4-4rin12.dat
-  [1,16,0,-38.76,-39.5,0,0,0.25,0.2423,0.2469,0,-0.0617,0.969,0, ldraw_lib__4_4rin12()],
+// 1 16 0 -38.76 -39.5 0 0 0.25 0.2423 0.2469 0 -0.0617 0.969 0 4-4ring12.dat
+  [1,16,0,-38.76,-39.5,0,0,0.25,0.2423,0.2469,0,-0.0617,0.969,0, ldraw_lib__4_4ring12()],
 // 1 16 0 0 30 1 0 0 0 1 0 0 0 1 s\57565s01.dat
   [1,16,0,0,30,1,0,0,0,1,0,0,0,1, ldraw_lib__s__57565s01()],
 // 1 16 0 0 30 -1 0 0 0 1 0 0 0 1 s\57565s01.dat

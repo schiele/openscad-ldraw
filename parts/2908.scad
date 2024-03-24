@@ -7,9 +7,9 @@ use <../p/4-4cyl1sph2.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4cylo.scad>
 use <../p/4-4edge.scad>
-use <../p/4-4rin10.scad>
-use <../p/4-4rin11.scad>
-use <../p/4-4rin24.scad>
+use <../p/4-4ring10.scad>
+use <../p/4-4ring11.scad>
+use <../p/4-4ring24.scad>
 use <../p/4-4ring4.scad>
 use <../p/4-4ring9.scad>
 use <../p/8-8sphe.scad>
@@ -17,7 +17,7 @@ function ldraw_lib__2908() = [
 // 0 Technic Helicopter Rotor Holder
 // 0 Name: 2908.dat
 // 0 Author: James Jessiman
-// 0 !LDRAW_ORG Part UPDATE 2014-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -28,7 +28,8 @@ function ldraw_lib__2908() = [
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
 // 0 !HISTORY 2014-02-12 [MagFors] BFC'd, primitive substitution
 // 0 !HISTORY 2014-06-21 [PTadmin] Official Update 2014-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
@@ -40,14 +41,14 @@ function ldraw_lib__2908() = [
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 8 0 20 0 0 0 4 0 0 0 20 4-4cylo.dat
   [1,16,0,8,0,20,0,0,0,4,0,0,0,20, ldraw_lib__4_4cylo()],
-// 1 16 0 12 0 -2 0 0 0 -1 0 0 0 2 4-4rin10.dat
-  [1,16,0,12,0,-2,0,0,0,-1,0,0,0,2, ldraw_lib__4_4rin10()],
+// 1 16 0 12 0 -2 0 0 0 -1 0 0 0 2 4-4ring10.dat
+  [1,16,0,12,0,-2,0,0,0,-1,0,0,0,2, ldraw_lib__4_4ring10()],
 // 1 16 0 0 0 22 0 0 0 12 0 0 0 22 4-4cylo.dat
   [1,16,0,0,0,22,0,0,0,12,0,0,0,22, ldraw_lib__4_4cylo()],
-// 1 16 0 0 0 -2 0 0 0 -1 0 0 0 2 4-4rin11.dat
-  [1,16,0,0,0,-2,0,0,0,-1,0,0,0,2, ldraw_lib__4_4rin11()],
-// 1 16 0 0 0 -1 0 0 0 -1 0 0 0 1 4-4rin24.dat
-  [1,16,0,0,0,-1,0,0,0,-1,0,0,0,1, ldraw_lib__4_4rin24()],
+// 1 16 0 0 0 -2 0 0 0 -1 0 0 0 2 4-4ring11.dat
+  [1,16,0,0,0,-2,0,0,0,-1,0,0,0,2, ldraw_lib__4_4ring11()],
+// 1 16 0 0 0 -1 0 0 0 -1 0 0 0 1 4-4ring24.dat
+  [1,16,0,0,0,-1,0,0,0,-1,0,0,0,1, ldraw_lib__4_4ring24()],
 // 1 16 0 -4 0 25 0 0 0 4 0 0 0 25 4-4cylo.dat
   [1,16,0,-4,0,25,0,0,0,4,0,0,0,25, ldraw_lib__4_4cylo()],
 // 1 16 0 -4 0 5 0 0 0 1 0 0 0 5 4-4ring4.dat

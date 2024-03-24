@@ -1,15 +1,15 @@
 use <../lib.scad>
-use <../p/4-4rin14.scad>
 use <../p/4-4ring1.scad>
+use <../p/4-4ring14.scad>
 use <../p/48/4-4aring.scad>
-use <../p/48/4-4rin29.scad>
+use <../p/48/4-4ring29.scad>
 use <s/2723p01s01.scad>
 use <s/2723s01.scad>
 function ldraw_lib__2723p01() = [
 // 0 Technic Disc  3 x  3 with Axlehole and Metallic Silver Disc Brake Pattern
 // 0 Name: 2723p01.dat
 // 0 Author: Ulrich Röder [UR]
-// 0 !LDRAW_ORG Part UPDATE 2019-03
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -21,18 +21,19 @@ function ldraw_lib__2723p01() = [
 // 0 !CMDLINE -c0
 // 
 // 0 !HISTORY 2019-12-27 [PTadmin] Official Update 2019-03
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2723s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2723s01()],
 // 1 16 0 3 0 7 0 0 0 1 0 0 0 7 4-4ring1.dat
   [1,16,0,3,0,7,0,0,0,1,0,0,0,7, ldraw_lib__4_4ring1()],
-// 1 16 0 3 0 1 0 0 0 1 0 0 0 1 4-4rin14.dat
-  [1,16,0,3,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4rin14()],
+// 1 16 0 3 0 1 0 0 0 1 0 0 0 1 4-4ring14.dat
+  [1,16,0,3,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4ring14()],
 // 1 16 0 3 0 15 0 0 0 1 0 0 0 15 48\4-4aring.dat
   [1,16,0,3,0,15,0,0,0,1,0,0,0,15, ldraw_lib__48__4_4aring()],
-// 1 16 0 3 0 1 0 0 0 1 0 0 0 1 48\4-4rin29.dat
-  [1,16,0,3,0,1,0,0,0,1,0,0,0,1, ldraw_lib__48__4_4rin29()],
+// 1 16 0 3 0 1 0 0 0 1 0 0 0 1 48\4-4ring29.dat
+  [1,16,0,3,0,1,0,0,0,1,0,0,0,1, ldraw_lib__48__4_4ring29()],
 // 
 // 0 // Disc
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2723p01s01.dat

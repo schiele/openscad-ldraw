@@ -7,7 +7,7 @@ use <../../p/1-8cylo.scad>
 use <../../p/1-8ndis.scad>
 use <../../p/2-4stud4.scad>
 use <../../p/3-16cylo.scad>
-use <../../p/3-16rin3.scad>
+use <../../p/3-16ring3.scad>
 use <../../p/3-4stud4.scad>
 use <../../p/box2-5.scad>
 use <../../p/box2-7.scad>
@@ -19,7 +19,7 @@ function ldraw_lib__s__78444s01() = [
 // 0 ~Wing  2 x  6 Right without Studs
 // 0 Name: s\78444s01.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
-// 0 !LDRAW_ORG Subpart UPDATE 2023-02
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -27,7 +27,8 @@ function ldraw_lib__s__78444s01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2023-04-17 [OrionP] Official Update 2023-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Bottom
 // 4 16 16 8 56 -15.2782 8 56 -19.5 8 60 20 8 60
@@ -190,8 +191,8 @@ function ldraw_lib__s__78444s01() = [
   [1,16,0,4,-40,6,0,0,0,4,0,0,0,-6, ldraw_lib__3_16cylo()],
 // 1 16 0 4 -40 8 0 0 0 4 0 0 0 -8 3-16cylo.dat
   [1,16,0,4,-40,8,0,0,0,4,0,0,0,-8, ldraw_lib__3_16cylo()],
-// 1 16 0 8 -40 2 0 0 0 -1 0 0 0 -2 3-16rin3.dat
-  [1,16,0,8,-40,2,0,0,0,-1,0,0,0,-2, ldraw_lib__3_16rin3()],
+// 1 16 0 8 -40 2 0 0 0 -1 0 0 0 -2 3-16ring3.dat
+  [1,16,0,8,-40,2,0,0,0,-1,0,0,0,-2, ldraw_lib__3_16ring3()],
 // 4 16 0 8 -32 0 8 -34 -.2692 8 -34.0535 -.5919 8 -32.1177
   [4,16,0,8,-32,0,8,-34,-.2692,8,-34.0535,-.5919,8,-32.1177],
 // 4 16 3.0616 8 -47.3912 1.9892 8 -47.6044 1.6666 8 -45.6686 2.2962 8 -45.5434

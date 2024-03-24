@@ -1,6 +1,6 @@
 use <../../lib.scad>
 use <../../p/2-4ndis.scad>
-use <../../p/2-4rin18.scad>
+use <../../p/2-4ring18.scad>
 use <../../p/2-4ring8.scad>
 use <../../p/4-4cyli.scad>
 use <../../p/4-4cylo.scad>
@@ -16,7 +16,7 @@ function ldraw_lib__s__43936s01() = [
 // 0 ~Animal Serpent Basilisk Body Segment - Without patternable surface
 // 0 Name: s\43936s01.dat
 // 0 Author: Willy Tschager [Holly-Wood]
-// 0 !LDRAW_ORG Subpart UPDATE 2022-04
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -24,7 +24,8 @@ function ldraw_lib__s__43936s01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Studs
 // 1 16 0 0 0 0 0 1 0 1 0 -1 0 0 stug2-2x2.dat
@@ -52,8 +53,8 @@ function ldraw_lib__s__43936s01() = [
   [1,16,0,26,-20,1,0,0,0,0,-1,0,1,0, ldraw_lib__peghole()],
 // 1 16 0 26 -20 1 0 0 0 0 -1 0 1 0 2-4ring8.dat
   [1,16,0,26,-20,1,0,0,0,0,-1,0,1,0, ldraw_lib__2_4ring8()],
-// 1 16 0 26 -20 .5 0 0 0 0 -.5 0 1 0 2-4rin18.dat
-  [1,16,0,26,-20,.5,0,0,0,0,-.5,0,1,0, ldraw_lib__2_4rin18()],
+// 1 16 0 26 -20 .5 0 0 0 0 -.5 0 1 0 2-4ring18.dat
+  [1,16,0,26,-20,.5,0,0,0,0,-.5,0,1,0, ldraw_lib__2_4ring18()],
 // 1 16 0 26 -20 8 0 0 0 0 8 0 1 0 2-4ndis.dat
   [1,16,0,26,-20,8,0,0,0,0,8,0,1,0, ldraw_lib__2_4ndis()],
 // 3 16 8 26 -20 8 34 -20 9 26 -20

@@ -3,7 +3,7 @@ use <../p/4-4con3.scad>
 use <../p/4-4cylc.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4edge.scad>
-use <../p/4-4rin18.scad>
+use <../p/4-4ring18.scad>
 use <../p/4-4ring8.scad>
 use <s/93216s01.scad>
 use <../p/t01o1154.scad>
@@ -11,7 +11,7 @@ function ldraw_lib__93216() = [
 // 0 Minifig Tennis Racket
 // 0 Name: 93216.dat
 // 0 Author: Magnus Forsberg [MagFors]
-// 0 !LDRAW_ORG Part UPDATE 2011-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -21,7 +21,8 @@ function ldraw_lib__93216() = [
 // 0 !CATEGORY Minifig Accessory
 // 
 // 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 12 0 1 0 0 0 1 0 0 0 1 s\93216s01.dat
   [1,16,0,12,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__93216s01()],
@@ -43,8 +44,8 @@ function ldraw_lib__93216() = [
   [1,16,0,12,0,4.75,0,0,0,-4,0,0,0,-4.75, ldraw_lib__4_4cylc()],
 // 1 16 0 8 0 4 0 0 0 -1 0 0 0 -4 4-4edge.dat
   [1,16,0,8,0,4,0,0,0,-1,0,0,0,-4, ldraw_lib__4_4edge()],
-// 1 16 0 8 0 0 0 0.25 0 1 0 0.25 0 0 4-4rin18.dat
-  [1,16,0,8,0,0,0,0.25,0,1,0,0.25,0,0, ldraw_lib__4_4rin18()],
+// 1 16 0 8 0 0 0 0.25 0 1 0 0.25 0 0 4-4ring18.dat
+  [1,16,0,8,0,0,0,0.25,0,1,0,0.25,0,0, ldraw_lib__4_4ring18()],
 // 1 16 0 8 0 0 0 0.5 0 1 0 0.5 0 0 4-4ring8.dat
   [1,16,0,8,0,0,0,0.5,0,1,0,0.5,0,0, ldraw_lib__4_4ring8()],
 // 1 16 0 8 0 4 0 0 0 -1 0 0 0 -4 4-4cyli.dat

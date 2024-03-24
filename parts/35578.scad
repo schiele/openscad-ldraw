@@ -2,14 +2,14 @@ use <../lib.scad>
 use <../p/4-4con19.scad>
 use <../p/4-4con20.scad>
 use <../p/4-4cylo.scad>
-use <../p/4-4rin21.scad>
+use <../p/4-4ring21.scad>
 use <../p/48/4-4aring.scad>
 use <s/35578s01.scad>
 function ldraw_lib__35578() = [
 // 0 Tyre 14/ 70 x 17
 // 0 Name: 35578.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
-// 0 !LDRAW_ORG Part UPDATE 2019-03
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -19,14 +19,15 @@ function ldraw_lib__35578() = [
 // 0 !KEYWORDS Tyre 37 x 14
 // 
 // 0 !HISTORY 2019-12-27 [PTadmin] Official Update 2019-03
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
-// 
-// 1 16 0 0 -17 1 0 0 0 0 -1 0 1 0 4-4rin21.dat
-  [1,16,0,0,-17,1,0,0,0,0,-1,0,1,0, ldraw_lib__4_4rin21()],
+// 1 16 0 0 -17 1 0 0 0 0 -1 0 1 0 4-4ring21.dat
+  [1,16,0,0,-17,1,0,0,0,0,-1,0,1,0, ldraw_lib__4_4ring21()],
 // 1 16 0 0 -17 22 0 0 0 0 -22 0 1 0 48\4-4aring.dat
   [1,16,0,0,-17,22,0,0,0,0,-22,0,1,0, ldraw_lib__48__4_4aring()],
-// 1 16 0 0 17 1 0 0 0 0 -1 0 -1 0 4-4rin21.dat
-  [1,16,0,0,17,1,0,0,0,0,-1,0,-1,0, ldraw_lib__4_4rin21()],
+// 1 16 0 0 17 1 0 0 0 0 -1 0 -1 0 4-4ring21.dat
+  [1,16,0,0,17,1,0,0,0,0,-1,0,-1,0, ldraw_lib__4_4ring21()],
 // 1 16 0 0 17 22 0 0 0 0 -22 0 -1 0 48\4-4aring.dat
   [1,16,0,0,17,22,0,0,0,0,-22,0,-1,0, ldraw_lib__48__4_4aring()],
 // 

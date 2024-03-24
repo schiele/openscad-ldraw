@@ -8,14 +8,14 @@ use <../../p/3-8cylo.scad>
 use <../../p/48/1-24cyli.scad>
 use <../../p/48/1-8edge.scad>
 use <../../p/5-16cylo.scad>
-use <../../p/5-16rin3.scad>
+use <../../p/5-16ring3.scad>
 use <../../p/rect.scad>
 use <../../p/rect2p.scad>
 function ldraw_lib__s__22888s01() = [
 // 0 ~Plate  4 x  4 Round  1/8
 // 0 Name: s\22888s01.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
-// 0 !LDRAW_ORG Subpart UPDATE 2017-01
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -23,7 +23,8 @@ function ldraw_lib__s__22888s01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Bottom
 // 4 16 72.1316 8 16.56464 73.4084 8 20.3312 77.272 8 19.296 75.928 8 15.3312
@@ -135,8 +136,8 @@ function ldraw_lib__s__22888s01() = [
   [4,16,65.54328,8,2.2961,64.24263,8,4.24266,65.65684,8,5.65688,66.7866,8,3.9663],
 // 1 16 60 8 0 1.41421 0 -1.41422 0 -1 0 1.41422 0 1.41421 1-4ring3.dat
   [1,16,60,8,0,1.41421,0,-1.41422,0,-1,0,1.41422,0,1.41421, ldraw_lib__1_4ring3()],
-// 1 16 60 8 0 -1.41422 0 -1.41421 0 -1 0 1.41421 0 -1.41422 5-16rin3.dat
-  [1,16,60,8,0,-1.41422,0,-1.41421,0,-1,0,1.41421,0,-1.41422, ldraw_lib__5_16rin3()],
+// 1 16 60 8 0 -1.41422 0 -1.41421 0 -1 0 1.41421 0 -1.41422 5-16ring3.dat
+  [1,16,60,8,0,-1.41422,0,-1.41421,0,-1,0,1.41421,0,-1.41422, ldraw_lib__5_16ring3()],
 // 4 16 60 8 -6 58.9601 8 -7.7932 56.93853 8 -7.39104 57.7038 8 -5.5434
   [4,16,60,8,-6,58.9601,8,-7.7932,56.93853,8,-7.39104,57.7038,8,-5.5434],
 // 1 16 65.59734 6 2.0247 0.05406 0 0 0 0 -2 -0.2714 1 0 rect2p.dat

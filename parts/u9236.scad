@@ -3,8 +3,8 @@ use <../p/2-4edge.scad>
 use <../p/2-4ndis.scad>
 use <../p/3-4cyli.scad>
 use <../p/3-4edge.scad>
-use <../p/3-4rin10.scad>
-use <../p/3-4rin22.scad>
+use <../p/3-4ring10.scad>
+use <../p/3-4ring22.scad>
 use <../p/3-4ring4.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4edge.scad>
@@ -23,7 +23,7 @@ function ldraw_lib__u9236() = [
 // 0 ~Motor Windup  4 x 10 x  3 Top (Needs Work)
 // 0 Name: u9236.dat
 // 0 Author: Massimo Maso [Sirio]
-// 0 !LDRAW_ORG Part UPDATE 2022-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -38,7 +38,8 @@ function ldraw_lib__u9236() = [
 // 0 !HISTORY 2013-07-21 [PTadmin] Official Update 2013-01
 // 0 !HISTORY 2022-01-16 [OrionP] Update description
 // 0 !HISTORY 2022-03-06 [PTadmin] Official Update 2022-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Needs Work: invisible portions not modeled
 // 
@@ -180,10 +181,10 @@ function ldraw_lib__u9236() = [
   [1,16,-60,34,-7,0,1,0,0,0,-8,-8,0,0, ldraw_lib__4_4edge()],
 // 1 16 -60 34 -7 0 1 0 -1.4142 0 1.4142 1.4142 0 1.4142 3-4ring4.dat
   [1,16,-60,34,-7,0,1,0,-1.4142,0,1.4142,1.4142,0,1.4142, ldraw_lib__3_4ring4()],
-// 1 16 -60 34 -7 0 1 0 -0.7071 0 0.7071 0.7071 0 0.7071 3-4rin10.dat
-  [1,16,-60,34,-7,0,1,0,-0.7071,0,0.7071,0.7071,0,0.7071, ldraw_lib__3_4rin10()],
-// 1 16 -60 34 -7 0 1 0 -0.3536 0 0.3536 0.3536 0 0.3536 3-4rin22.dat
-  [1,16,-60,34,-7,0,1,0,-0.3536,0,0.3536,0.3536,0,0.3536, ldraw_lib__3_4rin22()],
+// 1 16 -60 34 -7 0 1 0 -0.7071 0 0.7071 0.7071 0 0.7071 3-4ring10.dat
+  [1,16,-60,34,-7,0,1,0,-0.7071,0,0.7071,0.7071,0,0.7071, ldraw_lib__3_4ring10()],
+// 1 16 -60 34 -7 0 1 0 -0.3536 0 0.3536 0.3536 0 0.3536 3-4ring22.dat
+  [1,16,-60,34,-7,0,1,0,-0.3536,0,0.3536,0.3536,0,0.3536, ldraw_lib__3_4ring22()],
 // 1 16 -40 34 -7 0 -20 0 -8.1317 0 8.1317 8.1317 0 8.1317 3-4cyli.dat
   [1,16,-40,34,-7,0,-20,0,-8.1317,0,8.1317,8.1317,0,8.1317, ldraw_lib__3_4cyli()],
 // 1 16 -60 34 -7 0 1 0 -8.1317 0 8.1317 8.1317 0 8.1317 3-4edge.dat

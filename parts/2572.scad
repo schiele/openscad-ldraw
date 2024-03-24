@@ -1,6 +1,6 @@
 use <../lib.scad>
 use <../p/48/1-4cylo.scad>
-use <../p/48/1-4rin18.scad>
+use <../p/48/1-4ring18.scad>
 use <../p/48/1-4ring9.scad>
 use <../p/box4-4a.scad>
 use <../p/box5.scad>
@@ -14,7 +14,7 @@ function ldraw_lib__2572() = [
 // 0 Panel  6 x  6 x  9 with Curved Top
 // 0 Name: 2572.dat
 // 0 Author: James Jessiman
-// 0 !LDRAW_ORG Part UPDATE 2017-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -26,7 +26,8 @@ function ldraw_lib__2572() = [
 // 0 !HISTORY 2017-03-21 [Steffen] BFCed, used stugs
 // 0 !HISTORY 2017-03-22 [Philo] More primitives
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 10 1 0 0 0 1 0 0 0 1 stug-1x6.dat
   [1,16,0,0,10,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_1x6()],
@@ -107,16 +108,16 @@ function ldraw_lib__2572() = [
   [1,16,-60,80,-20,0,4,0,0,0,-72,-72,0,0, ldraw_lib__48__1_4cylo()],
 // 1 16 -60 80 -20 0 1 0 0 0 -8 -8 0 0 48\1-4ring9.dat
   [1,16,-60,80,-20,0,1,0,0,0,-8,-8,0,0, ldraw_lib__48__1_4ring9()],
-// 1 16 -56 80 -20 0 -1 0 0 0 -4 -4 0 0 48\1-4rin18.dat
-  [1,16,-56,80,-20,0,-1,0,0,0,-4,-4,0,0, ldraw_lib__48__1_4rin18()],
+// 1 16 -56 80 -20 0 -1 0 0 0 -4 -4 0 0 48\1-4ring18.dat
+  [1,16,-56,80,-20,0,-1,0,0,0,-4,-4,0,0, ldraw_lib__48__1_4ring18()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 60 80 -20 0 -4 0 0 0 -72 -72 0 0 48\1-4cylo.dat
   [1,16,60,80,-20,0,-4,0,0,0,-72,-72,0,0, ldraw_lib__48__1_4cylo()],
 // 1 16 60 80 -20 0 -1 0 0 0 -8 -8 0 0 48\1-4ring9.dat
   [1,16,60,80,-20,0,-1,0,0,0,-8,-8,0,0, ldraw_lib__48__1_4ring9()],
-// 1 16 56 80 -20 0 1 0 0 0 -4 -4 0 0 48\1-4rin18.dat
-  [1,16,56,80,-20,0,1,0,0,0,-4,-4,0,0, ldraw_lib__48__1_4rin18()],
+// 1 16 56 80 -20 0 1 0 0 0 -4 -4 0 0 48\1-4ring18.dat
+  [1,16,56,80,-20,0,1,0,0,0,-4,-4,0,0, ldraw_lib__48__1_4ring18()],
 // 
 ];
 module ldraw_lib__2572(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)

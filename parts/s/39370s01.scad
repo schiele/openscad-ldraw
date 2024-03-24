@@ -2,7 +2,7 @@ use <../../lib.scad>
 use <../../p/1-16chrd.scad>
 use <../../p/1-16cylo.scad>
 use <../../p/1-16edge.scad>
-use <../../p/1-16rin2.scad>
+use <../../p/1-16ring2.scad>
 use <../../p/1-4cyli.scad>
 use <../../p/1-4edge.scad>
 use <../../p/1-8edge.scad>
@@ -38,7 +38,7 @@ function ldraw_lib__s__39370s01() = [
 // 0 ~Technic Beam  5 x  3 H-shaped with Ball Socket Half
 // 0 Name: s\39370s01.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Subpart UPDATE 2023-06
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -48,6 +48,8 @@ function ldraw_lib__s__39370s01() = [
 // 0 !HISTORY 2019-12-27 [PTadmin] Official Update 2019-03
 // 0 !HISTORY 2023-07-21 [MagFors] Adapted to rounded npeg corners
 // 0 !HISTORY 2023-11-19 [OrionP] Official Update 2023-06
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 -40 0 1 0 0 0 -1 -1 0 0 connhole.dat
   [1,16,0,0,-40,0,1,0,0,0,-1,-1,0,0, ldraw_lib__connhole()],
@@ -372,10 +374,10 @@ function ldraw_lib__s__39370s01() = [
   [1,16,-6.9292,13.75,-2.8702,1.38575,0,-0.0001,0,0,1.45,0.574,-1,0, ldraw_lib__rect()],
 // 1 16 0 12.3 0 6 0 0 0 -1 0 0 0 -6 2-4chrd.dat
   [1,16,0,12.3,0,6,0,0,0,-1,0,0,0,-6, ldraw_lib__2_4chrd()],
-// 1 16 0 12.3 0 -3 0 0 0 -1 0 0 0 -3 1-16rin2.dat
-  [1,16,0,12.3,0,-3,0,0,0,-1,0,0,0,-3, ldraw_lib__1_16rin2()],
-// 1 16 0 15.2 0 -3 0 0 0 1 0 0 0 -3 1-16rin2.dat
-  [1,16,0,15.2,0,-3,0,0,0,1,0,0,0,-3, ldraw_lib__1_16rin2()],
+// 1 16 0 12.3 0 -3 0 0 0 -1 0 0 0 -3 1-16ring2.dat
+  [1,16,0,12.3,0,-3,0,0,0,-1,0,0,0,-3, ldraw_lib__1_16ring2()],
+// 1 16 0 15.2 0 -3 0 0 0 1 0 0 0 -3 1-16ring2.dat
+  [1,16,0,15.2,0,-3,0,0,0,1,0,0,0,-3, ldraw_lib__1_16ring2()],
 // 1 16 8.3 44 0 0 1 0 -28.7519 0 3.78526 -3.78526 0 -28.7519 48\1-8edge.dat
   [1,16,8.3,44,0,0,1,0,-28.7519,0,3.78526,-3.78526,0,-28.7519, ldraw_lib__48__1_8edge()],
 // 1 16 8.3 44 0 0 -1 0 -2.87519 0 0.37853 -0.37853 0 -2.87519 48\1-8ring10.dat
@@ -482,10 +484,10 @@ function ldraw_lib__s__39370s01() = [
   [1,16,0,12.3,0,0,0,6,0,1,0,-6,0,0, ldraw_lib__3_16edge()],
 // 1 16 6.9292 13.75 -2.8702 0 0 1.38585 -1.45 0 0 0 -1 -0.57405 rect.dat
   [1,16,6.9292,13.75,-2.8702,0,0,1.38585,-1.45,0,0,0,-1,-0.57405, ldraw_lib__rect()],
-// 1 16 0 12.3 0 3 0 0 0 -1 0 0 0 -3 1-16rin2.dat
-  [1,16,0,12.3,0,3,0,0,0,-1,0,0,0,-3, ldraw_lib__1_16rin2()],
-// 1 16 0 15.2 0 3 0 0 0 1 0 0 0 -3 1-16rin2.dat
-  [1,16,0,15.2,0,3,0,0,0,1,0,0,0,-3, ldraw_lib__1_16rin2()],
+// 1 16 0 12.3 0 3 0 0 0 -1 0 0 0 -3 1-16ring2.dat
+  [1,16,0,12.3,0,3,0,0,0,-1,0,0,0,-3, ldraw_lib__1_16ring2()],
+// 1 16 0 15.2 0 3 0 0 0 1 0 0 0 -3 1-16ring2.dat
+  [1,16,0,15.2,0,3,0,0,0,1,0,0,0,-3, ldraw_lib__1_16ring2()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 15.2 0 -6 0 0 0 6.5908 0 0 0 -6 2-4cyli.dat

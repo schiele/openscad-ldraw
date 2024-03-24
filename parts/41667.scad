@@ -22,7 +22,7 @@ use <../p/4-4edge.scad>
 use <../p/4-4ring2.scad>
 use <../p/4-4ring7.scad>
 use <../p/48/1-4cylo.scad>
-use <../p/48/1-4rin11.scad>
+use <../p/48/1-4ring11.scad>
 use <../p/48/5-24cylo.scad>
 use <../p/48/tm04o0833.scad>
 use <../p/7-8edge.scad>
@@ -43,7 +43,7 @@ function ldraw_lib__41667() = [
 // 0 Technic Arm  3 x  2 with Gear 36 Tooth Double Bevel Quarter
 // 0 Name: 41667.dat
 // 0 Author: Guy Vivan [guyvivan]
-// 0 !LDRAW_ORG Part UPDATE 2022-03
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -53,7 +53,8 @@ function ldraw_lib__41667() = [
 // 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01
 // 0 !HISTORY 2022-04-18 [MagFors] Reworked axlehole, removed surface bleeding
 // 0 !HISTORY 2022-05-07 [PTadmin] Official Update 2022-03
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 39.392 -6.946 0 .17365 .98481 0 .98481 -.17365 0 0 0 -1 toothb12.dat
   [1,16,39.392,-6.946,0,.17365,.98481,0,.98481,-.17365,0,0,0,-1, ldraw_lib__toothb12()],
@@ -857,10 +858,10 @@ function ldraw_lib__41667() = [
   [0,"BFC","INVERTNEXT"],
 // 1 16 -10.647 -13 10 0 0 4 4 0 0 0 -20 0 3-16cyli.dat
   [1,16,-10.647,-13,10,0,0,4,4,0,0,0,-20,0, ldraw_lib__3_16cyli()],
-// 1 16 0 0 -2 0 0 2 -2 0 0 0 1 0 48\1-4rin11.dat
-  [1,16,0,0,-2,0,0,2,-2,0,0,0,1,0, ldraw_lib__48__1_4rin11()],
-// 1 16 0 0 2 0 0 2 -2 0 0 0 -1 0 48\1-4rin11.dat
-  [1,16,0,0,2,0,0,2,-2,0,0,0,-1,0, ldraw_lib__48__1_4rin11()],
+// 1 16 0 0 -2 0 0 2 -2 0 0 0 1 0 48\1-4ring11.dat
+  [1,16,0,0,-2,0,0,2,-2,0,0,0,1,0, ldraw_lib__48__1_4ring11()],
+// 1 16 0 0 2 0 0 2 -2 0 0 0 -1 0 48\1-4ring11.dat
+  [1,16,0,0,2,0,0,2,-2,0,0,0,-1,0, ldraw_lib__48__1_4ring11()],
 // 1 16 0 0 -1.5 0 0 9 -9 0 0 0 1 0 1-4ring1.dat
   [1,16,0,0,-1.5,0,0,9,-9,0,0,0,1,0, ldraw_lib__1_4ring1()],
 // 1 16 0 0 1.5 0 0 9 -9 0 0 0 -1 0 1-4ring1.dat

@@ -4,7 +4,7 @@ use <../p/48/1-6edge.scad>
 use <../p/48/1-6ndis.scad>
 use <../p/48/2-4cylo.scad>
 use <../p/48/2-4edge.scad>
-use <../p/48/2-4rin16.scad>
+use <../p/48/2-4ring16.scad>
 use <../p/box4-1.scad>
 use <../p/box5.scad>
 use <../p/rect.scad>
@@ -19,7 +19,7 @@ function ldraw_lib__18974() = [
 // 0 Car Mudguard  4 x  2.5 x  2.333
 // 0 Name: 18974.dat
 // 0 Author: Magnus Forsberg [MagFors]
-// 0 !LDRAW_ORG Part UPDATE 2015-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -27,7 +27,8 @@ function ldraw_lib__18974() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2015-10-11 [PTadmin] Official Update 2015-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // top plate
 // 2 24 -20 8 -20 -20 0 -20
@@ -212,8 +213,8 @@ function ldraw_lib__18974() = [
   [1,16,0,36,-22,-39,0,0,0,0,-36,0,2,0, ldraw_lib__48__2_4cylo()],
 // 1 16 0 42.104 -25.706 35 0 0 0 -0.12187 -33.7466 0 0.99255 -4.14356 48\2-4edge.dat
   [1,16,0,42.104,-25.706,35,0,0,0,-0.12187,-33.7466,0,0.99255,-4.14356, ldraw_lib__48__2_4edge()],
-// 1 16 0 42.104 -25.706 2.06 0 0 0 -0.12187 -1.98509 0 0.99255 -0.24374 48\2-4rin16.dat
-  [1,16,0,42.104,-25.706,2.06,0,0,0,-0.12187,-1.98509,0,0.99255,-0.24374, ldraw_lib__48__2_4rin16()],
+// 1 16 0 42.104 -25.706 2.06 0 0 0 -0.12187 -1.98509 0 0.99255 -0.24374 48\2-4ring16.dat
+  [1,16,0,42.104,-25.706,2.06,0,0,0,-0.12187,-1.98509,0,0.99255,-0.24374, ldraw_lib__48__2_4ring16()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 42.104 -25.706 33 0 0 0 -0.24374 -31.7615 0 1.98509 -3.89982 48\2-4cylo.dat

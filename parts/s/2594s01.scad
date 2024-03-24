@@ -6,7 +6,7 @@ use <../../p/2-4cylo.scad>
 use <../../p/2-4ring1.scad>
 use <../../p/3-16chrd.scad>
 use <../../p/3-16cylo.scad>
-use <../../p/3-16rin1.scad>
+use <../../p/3-16ring1.scad>
 use <../../p/4-4cylc.scad>
 use <../../p/4-4cylo.scad>
 use <../../p/4-4ring1.scad>
@@ -15,7 +15,7 @@ function ldraw_lib__s__2594s01() = [
 // 0 ~Minifig Helmet Visor Pointed - Half
 // 0 Name: s\2594s01.dat
 // 0 Author: Magnus Forsberg [MagFors]
-// 0 !LDRAW_ORG Subpart UPDATE 2022-01
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -23,7 +23,8 @@ function ldraw_lib__s__2594s01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 21.5 2.675 -0.5 0 -1 0 -1.875 0 0 0 0 1.875 4-4ring1.dat
   [1,16,21.5,2.675,-0.5,0,-1,0,-1.875,0,0,0,0,1.875, ldraw_lib__4_4ring1()],
@@ -37,8 +38,8 @@ function ldraw_lib__s__2594s01() = [
   [1,16,20,2.675,-0.5,0,-1,0,3.75,0,0,0,0,-3.75, ldraw_lib__1_4ndis()],
 // 1 16 20 2.675 -0.5 0 -1 0 0 0 -3.75 3.75 0 0 2-4ring1.dat
   [1,16,20,2.675,-0.5,0,-1,0,0,0,-3.75,3.75,0,0, ldraw_lib__2_4ring1()],
-// 1 16 20 2.675 -0.5 0 -1 0 0 0 3.75 3.75 0 0 3-16rin1.dat
-  [1,16,20,2.675,-0.5,0,-1,0,0,0,3.75,3.75,0,0, ldraw_lib__3_16rin1()],
+// 1 16 20 2.675 -0.5 0 -1 0 0 0 3.75 3.75 0 0 3-16ring1.dat
+  [1,16,20,2.675,-0.5,0,-1,0,0,0,3.75,3.75,0,0, ldraw_lib__3_16ring1()],
 // 1 16 17 2.675 -0.5 0 3 0 0 0 -7.5 7.5 0 0 2-4cylo.dat
   [1,16,17,2.675,-0.5,0,3,0,0,0,-7.5,7.5,0,0, ldraw_lib__2_4cylo()],
 // 1 16 17 2.675 -0.5 0 3 0 0 0 7.5 7.5 0 0 3-16cylo.dat

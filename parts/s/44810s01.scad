@@ -11,7 +11,7 @@ use <../../p/2-4ring2.scad>
 use <../../p/3-16chrd.scad>
 use <../../p/3-16cylo.scad>
 use <../../p/3-16ndis.scad>
-use <../../p/3-16rin2.scad>
+use <../../p/3-16ring2.scad>
 use <../../p/48/3-16chrd.scad>
 use <../../p/48/3-16cylo.scad>
 use <../../p/axlehol4.scad>
@@ -27,7 +27,7 @@ function ldraw_lib__s__44810s01() = [
 // 0 ~Constraction Block  3 x  5 with Partial Gear 28 Tooth Double Bevel - One Half
 // 0 Name: s\44810s01.dat
 // 0 Author: Massimo Maso [Sirio]
-// 0 !LDRAW_ORG Subpart UPDATE 2023-05
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -36,7 +36,8 @@ function ldraw_lib__s__44810s01() = [
 // 
 // 0 !HISTORY 2021-12-25 [MagFors] Adopted to reshaped axleholes
 // 0 !HISTORY 2023-10-31 [OrionP] Official Update 2023-05
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Beam
 // 0 // Primitives
@@ -48,10 +49,10 @@ function ldraw_lib__s__44810s01() = [
   [1,16,0,0,-10.5,6,0,0,0,0,6,0,1,0, ldraw_lib__1_16chrd()],
 // 1 16 0 0 -10.5 6 0 0 0 0 -6 0 1 0 1-16chrd.dat
   [1,16,0,0,-10.5,6,0,0,0,0,-6,0,1,0, ldraw_lib__1_16chrd()],
-// 1 16 0 0 10 3 0 0 0 0 3 0 -1 0 3-16rin2.dat
-  [1,16,0,0,10,3,0,0,0,0,3,0,-1,0, ldraw_lib__3_16rin2()],
-// 1 16 0 0 10 3 0 0 0 0 -3 0 -1 0 3-16rin2.dat
-  [1,16,0,0,10,3,0,0,0,0,-3,0,-1,0, ldraw_lib__3_16rin2()],
+// 1 16 0 0 10 3 0 0 0 0 3 0 -1 0 3-16ring2.dat
+  [1,16,0,0,10,3,0,0,0,0,3,0,-1,0, ldraw_lib__3_16ring2()],
+// 1 16 0 0 10 3 0 0 0 0 -3 0 -1 0 3-16ring2.dat
+  [1,16,0,0,10,3,0,0,0,0,-3,0,-1,0, ldraw_lib__3_16ring2()],
 // 1 16 10 0 10 0 0 1 1 0 0 0 -8 0 npeghole.dat
   [1,16,10,0,10,0,0,1,1,0,0,0,-8,0, ldraw_lib__npeghole()],
 // 1 16 20 0 -2 0 0 -9 -9 0 0 0 1 0 2-4ndis.dat

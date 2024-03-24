@@ -1,5 +1,5 @@
 use <../lib.scad>
-use <../p/48/4-4rin12.scad>
+use <../p/48/4-4ring12.scad>
 use <../p/8/2-4cylo.scad>
 use <../p/8/2-4ndis.scad>
 use <../p/axlehol6.scad>
@@ -12,7 +12,7 @@ function ldraw_lib__32269() = [
 // 0 Technic Gear 20 Tooth Double Bevel
 // 0 Name: 32269.dat
 // 0 Author: Marc Klein [marckl]
-// 0 !LDRAW_ORG Part UPDATE 2022-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -26,7 +26,8 @@ function ldraw_lib__32269() = [
 // 0 !HISTORY 2009-12-29 [PTadmin] Official Update 2009-03
 // 0 !HISTORY 2018-06-06 [Philo] Subparted, minor improvements
 // 0 !HISTORY 2022-03-06 [PTadmin] Official Update 2022-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 1 0 0 0 -1 0 0 0 -1 s\32269s01.dat
   [1,16,0,0,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__s__32269s01()],
@@ -41,10 +42,10 @@ function ldraw_lib__32269() = [
 // 1 16 -10 0 -10 0 0 -1 1 0 0 0 1 0 8\2-4ndis.dat
   [1,16,-10,0,-10,0,0,-1,1,0,0,0,1,0, ldraw_lib__8__2_4ndis()],
 // 
-// 1 16 0 0 10 1.4167 0 0 0 0 1.4167 0 -1 0 48\4-4rin12.dat
-  [1,16,0,0,10,1.4167,0,0,0,0,1.4167,0,-1,0, ldraw_lib__48__4_4rin12()],
-// 1 16 0 0 -10 1.4167 0 0 0 0 1.4167 0 1 0 48\4-4rin12.dat
-  [1,16,0,0,-10,1.4167,0,0,0,0,1.4167,0,1,0, ldraw_lib__48__4_4rin12()],
+// 1 16 0 0 10 1.4167 0 0 0 0 1.4167 0 -1 0 48\4-4ring12.dat
+  [1,16,0,0,10,1.4167,0,0,0,0,1.4167,0,-1,0, ldraw_lib__48__4_4ring12()],
+// 1 16 0 0 -10 1.4167 0 0 0 0 1.4167 0 1 0 48\4-4ring12.dat
+  [1,16,0,0,-10,1.4167,0,0,0,0,1.4167,0,1,0, ldraw_lib__48__4_4ring12()],
 // 1 16 -1 -7.901 0 0 -1 0 0 0 2.0994 10 0 0 rect3.dat
   [1,16,-1,-7.901,0,0,-1,0,0,0,2.0994,10,0,0, ldraw_lib__rect3()],
 // 1 16 -1.5 -5.7016 0 0.5 0 0 -0.0994 -1 0 0 0 10 rect2p.dat

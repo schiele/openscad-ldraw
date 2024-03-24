@@ -2,7 +2,7 @@ use <../../lib.scad>
 use <../../p/1-4cylo.scad>
 use <../../p/1-4disc.scad>
 use <../../p/1-4edge.scad>
-use <../../p/1-4rin20.scad>
+use <../../p/1-4ring20.scad>
 use <../../p/1-4ring3.scad>
 use <../../p/t04o1667.scad>
 use <../../p/t04o4167.scad>
@@ -11,7 +11,7 @@ function ldraw_lib__s__11062s01() = [
 // 0 ~Support  2 x  2 x  7 Lamppost with  4 Base Flutes - Upper Column
 // 0 Name: s\11062s01.dat
 // 0 Author: Willy Tschager [Holly-Wood]
-// 0 !LDRAW_ORG Subpart UPDATE 2020-01
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -19,7 +19,8 @@ function ldraw_lib__s__11062s01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2020-06-28 [PTadmin] Official Update 2020-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 154 0 10 0 0 0 6 0 0 0 10 1-4cylo.dat
   [1,16,0,154,0,10,0,0,0,6,0,0,0,10, ldraw_lib__1_4cylo()],
@@ -835,8 +836,8 @@ function ldraw_lib__s__11062s01() = [
 // 1 16 0 2.5 0 6.3 0 0 0 5 0 0 0 6.3 t04o5000.dat
   [1,16,0,2.5,0,6.3,0,0,0,5,0,0,0,6.3, ldraw_lib__t04o5000()],
 // 
-// 1 16 0 0 0 .3 0 0 0 1 0 0 0 .3 1-4rin20.dat
-  [1,16,0,0,0,.3,0,0,0,1,0,0,0,.3, ldraw_lib__1_4rin20()],
+// 1 16 0 0 0 .3 0 0 0 1 0 0 0 .3 1-4ring20.dat
+  [1,16,0,0,0,.3,0,0,0,1,0,0,0,.3, ldraw_lib__1_4ring20()],
 // 1 16 0 0 0 4 0 0 0 1 0 0 0 4 1-4edge.dat
   [1,16,0,0,0,4,0,0,0,1,0,0,0,4, ldraw_lib__1_4edge()],
 // 1 16 0 0 0 6 0 0 0 1 0 0 0 6 1-4edge.dat

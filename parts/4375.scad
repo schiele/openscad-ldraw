@@ -5,7 +5,7 @@ use <../p/4-4con13.scad>
 use <../p/4-4con15.scad>
 use <../p/4-4edge.scad>
 use <../p/4-4ndis.scad>
-use <../p/4-4rin14.scad>
+use <../p/4-4ring14.scad>
 use <../p/box4-1.scad>
 use <../p/box4.scad>
 use <../p/stud27a.scad>
@@ -15,7 +15,7 @@ function ldraw_lib__4375() = [
 // 0 Duplo Sign Post Base Short
 // 0 Name: 4375.dat
 // 0 Author: Tim Lampmann [L4mpi]
-// 0 !LDRAW_ORG Part UPDATE 2020-03
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -25,7 +25,8 @@ function ldraw_lib__4375() = [
 // 0 !CATEGORY Support
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Short Version based on 4913
 // 
@@ -55,8 +56,8 @@ function ldraw_lib__4375() = [
   [1,16,0,-32,0,0,0,-15,0,-1,0,15,0,0, ldraw_lib__4_4edge()],
 // 1 16 0 -32 0 0 0 -14 0 -1 0 14 0 0 4-4edge.dat
   [1,16,0,-32,0,0,0,-14,0,-1,0,14,0,0, ldraw_lib__4_4edge()],
-// 1 16 0 -32 0 0 0 -1 0 1 0 -1 0 0 4-4rin14.dat
-  [1,16,0,-32,0,0,0,-1,0,1,0,-1,0,0, ldraw_lib__4_4rin14()],
+// 1 16 0 -32 0 0 0 -1 0 1 0 -1 0 0 4-4ring14.dat
+  [1,16,0,-32,0,0,0,-1,0,1,0,-1,0,0, ldraw_lib__4_4ring14()],
 // 1 16 0 -32 0 0 0 -1 0 3 0 1 0 0 stud27a.dat
   [1,16,0,-32,0,0,0,-1,0,3,0,1,0,0, ldraw_lib__stud27a()],
 // 0 BFC INVERTNEXT

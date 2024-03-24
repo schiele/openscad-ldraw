@@ -1,13 +1,13 @@
 use <../../lib.scad>
 use <../../p/2-4cyli.scad>
 use <../../p/2-4edge.scad>
-use <../../p/2-4rin14.scad>
+use <../../p/2-4ring14.scad>
 use <../../p/box4-4a.scad>
 function ldraw_lib__s__511s01() = [
 // 0 ~Metal Contact for Electric Train Track Contact Base
 // 0 Name: s\511s01.dat
 // 0 Author: Niels Karsdorp [nielsk]
-// 0 !LDRAW_ORG Subpart UPDATE 2012-01
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CW
@@ -15,7 +15,8 @@ function ldraw_lib__s__511s01() = [
   [0,"BFC","CW"],
 // 
 // 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 3 16 15 3 5 14 3 5 15 4 5
   [3,16,15,3,5,14,3,5,15,4,5],
@@ -43,10 +44,10 @@ function ldraw_lib__s__511s01() = [
   [1,16,0,3,-5,14,0,0,0,0,-8.4,0,10,0, ldraw_lib__2_4cyli()],
 // 1 16 0 3 -5 15 0 0 0 0 -9 0 10 0 2-4cyli.dat
   [1,16,0,3,-5,15,0,0,0,0,-9,0,10,0, ldraw_lib__2_4cyli()],
-// 1 16 0 3 -5 1 0 0 0 0 -.6 0 1 0 2-4rin14.dat
-  [1,16,0,3,-5,1,0,0,0,0,-.6,0,1,0, ldraw_lib__2_4rin14()],
-// 1 16 0 3 5 1 0 0 0 0 -.6 0 -1 0 2-4rin14.dat
-  [1,16,0,3,5,1,0,0,0,0,-.6,0,-1,0, ldraw_lib__2_4rin14()],
+// 1 16 0 3 -5 1 0 0 0 0 -.6 0 1 0 2-4ring14.dat
+  [1,16,0,3,-5,1,0,0,0,0,-.6,0,1,0, ldraw_lib__2_4ring14()],
+// 1 16 0 3 5 1 0 0 0 0 -.6 0 -1 0 2-4ring14.dat
+  [1,16,0,3,5,1,0,0,0,0,-.6,0,-1,0, ldraw_lib__2_4ring14()],
 // 1 16 0 3 -5 15 0 0 0 0 -9 0 1 0 2-4edge.dat
   [1,16,0,3,-5,15,0,0,0,0,-9,0,1,0, ldraw_lib__2_4edge()],
 // 1 16 0 3 5 15 0 0 0 0 -9 0 1 0 2-4edge.dat

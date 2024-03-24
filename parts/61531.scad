@@ -5,7 +5,7 @@ use <../p/2-4chrd.scad>
 use <../p/4-4cylo.scad>
 use <../p/4-4cyls.scad>
 use <../p/4-4edge.scad>
-use <../p/4-4rin16.scad>
+use <../p/4-4ring16.scad>
 use <../p/4-4ring3.scad>
 use <../p/4-4ring5.scad>
 use <../p/4-4ring6.scad>
@@ -17,7 +17,7 @@ function ldraw_lib__61531() = [
 // 0 ~Figure Troll Wrist Cuff Left
 // 0 Name: 61531.dat
 // 0 Author: Andy Westrate [westrate]
-// 0 !LDRAW_ORG Part UPDATE 2023-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -28,7 +28,8 @@ function ldraw_lib__61531() = [
 // 0 !HISTORY 2009-11-10 [westrate] File preparation for LDraw Parts Tracker
 // 0 !HISTORY 2023-03-08 [MagFors] Closed structure, moved origin
 // 0 !HISTORY 2023-04-17 [OrionP] Official Update 2023-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 -12.275 32.5 -1.76 0 0 0 0 -0.725 0 -1 0 rect3.dat
   [1,16,0,-12.275,32.5,-1.76,0,0,0,0,-0.725,0,-1,0, ldraw_lib__rect3()],
@@ -637,8 +638,8 @@ function ldraw_lib__61531() = [
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 -20 -11.9 0 0 0 0 11.9 0 4 0 4-4cylo.dat
   [1,16,0,0,-20,-11.9,0,0,0,0,11.9,0,4,0, ldraw_lib__4_4cylo()],
-// 1 16 0 0 -16 -0.7 0 0 0 0 0.7 0 1 0 4-4rin16.dat
-  [1,16,0,0,-16,-0.7,0,0,0,0,0.7,0,1,0, ldraw_lib__4_4rin16()],
+// 1 16 0 0 -16 -0.7 0 0 0 0 0.7 0 1 0 4-4ring16.dat
+  [1,16,0,0,-16,-0.7,0,0,0,0,0.7,0,1,0, ldraw_lib__4_4ring16()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 -16 -11.2 0 0 0 0 11.2 0 10 0 4-4cylo.dat

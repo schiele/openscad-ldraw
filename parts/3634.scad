@@ -4,7 +4,7 @@ use <../p/48/4-4con30.scad>
 use <../p/48/4-4con4.scad>
 use <../p/48/4-4cyli.scad>
 use <../p/48/4-4edge.scad>
-use <../p/48/4-4rin11.scad>
+use <../p/48/4-4ring11.scad>
 use <../p/48/4-4ring3.scad>
 use <s/3634a.scad>
 use <s/3634b.scad>
@@ -13,7 +13,7 @@ function ldraw_lib__3634() = [
 // 0 Tyre 10/130 x 17 Offset Tread
 // 0 Name: 3634.dat
 // 0 Author: Leonardo Zide [leozide]
-// 0 !LDRAW_ORG Part UPDATE 2012-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -27,7 +27,8 @@ function ldraw_lib__3634() = [
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
 // 0 !HISTORY 2010-03-31 [Philo] BFCed, 48ed
 // 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Nomenclature: width_(mm)/profile_as_%age_of_width x rim_diameter_(mm)
 // 
@@ -254,8 +255,8 @@ function ldraw_lib__3634() = [
 // 1 16 0 0 9 24 0 0 0 0 24 0 1 0 48\4-4edge.dat
   [1,16,0,0,9,24,0,0,0,0,24,0,1,0, ldraw_lib__48__4_4edge()],
 // 0 // small back ring
-// 1 16 0 0 9 2 0 0 0 0 -2 0 -1 0 48\4-4rin11.dat
-  [1,16,0,0,9,2,0,0,0,0,-2,0,-1,0, ldraw_lib__48__4_4rin11()],
+// 1 16 0 0 9 2 0 0 0 0 -2 0 -1 0 48\4-4ring11.dat
+  [1,16,0,0,9,2,0,0,0,0,-2,0,-1,0, ldraw_lib__48__4_4ring11()],
 // 0 // back slope
 // 1 16 0 0 -10.714 6 0 0 0 0 -6 0 19.7143 0 48\4-4con4.dat
   [1,16,0,0,-10.714,6,0,0,0,0,-6,0,19.7143,0, ldraw_lib__48__4_4con4()],

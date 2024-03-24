@@ -7,7 +7,7 @@ use <../p/4-4ering.scad>
 use <../p/4-4ndis.scad>
 use <../p/4-4ring3.scad>
 use <../p/48/1-4chrd.scad>
-use <../p/48/1-4rin18.scad>
+use <../p/48/1-4ring18.scad>
 use <../p/48/2-4edge.scad>
 use <../p/48/2-4ring5.scad>
 use <../p/axl2hole.scad>
@@ -24,7 +24,7 @@ function ldraw_lib__44511() = [
 // 0 Roof Piece  8 x 12 x 10 Half Onion Dome
 // 0 Name: 44511.dat
 // 0 Author: William Howard [WilliamH]
-// 0 !LDRAW_ORG Part UPDATE 2022-03
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -40,7 +40,8 @@ function ldraw_lib__44511() = [
 // 0 !HISTORY 2020-06-04 [Sirio] Updated the use of primitives
 // 0 !HISTORY 2020-12-04 [MagFors] Corrected errors
 // 0 !HISTORY 2022-05-07 [PTadmin] Official Update 2022-03
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Top studded area
 // 1 16 0 8 0 6 0 0 0 -1 0 0 0 6 4-4ndis.dat
@@ -955,10 +956,10 @@ function ldraw_lib__44511() = [
   [4,16,60,240,20,60,240,-20,60,232,-20,60,232,20],
 // 1 16 0 232 -20 12 0 0 0 1 0 0 0 -12 48\2-4ring5.dat
   [1,16,0,232,-20,12,0,0,0,1,0,0,0,-12, ldraw_lib__48__2_4ring5()],
-// 1 16 0 232 -20 4 0 0 0 1 0 0 0 -4 48\1-4rin18.dat
-  [1,16,0,232,-20,4,0,0,0,1,0,0,0,-4, ldraw_lib__48__1_4rin18()],
-// 1 16 0 232 -20 -4 0 0 0 1 0 0 0 -4 48\1-4rin18.dat
-  [1,16,0,232,-20,-4,0,0,0,1,0,0,0,-4, ldraw_lib__48__1_4rin18()],
+// 1 16 0 232 -20 4 0 0 0 1 0 0 0 -4 48\1-4ring18.dat
+  [1,16,0,232,-20,4,0,0,0,1,0,0,0,-4, ldraw_lib__48__1_4ring18()],
+// 1 16 0 232 -20 -4 0 0 0 1 0 0 0 -4 48\1-4ring18.dat
+  [1,16,0,232,-20,-4,0,0,0,1,0,0,0,-4, ldraw_lib__48__1_4ring18()],
 // 2 24 -76 232 20 -76 232 -20
   [2,24,-76,232,20,-76,232,-20],
 // 2 24 76 232 20 76 232 -20

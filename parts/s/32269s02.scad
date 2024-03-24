@@ -1,6 +1,6 @@
 use <../../lib.scad>
 use <../../p/1-4cylo.scad>
-use <../../p/1-4rin10.scad>
+use <../../p/1-4ring10.scad>
 use <../../p/48/5-24cylo.scad>
 use <../../p/rect.scad>
 use <../../p/rect1.scad>
@@ -10,7 +10,7 @@ function ldraw_lib__s__32269s02() = [
 // 0 ~Technic Gear 20 Tooth Double Bevel Hub Quarter
 // 0 Name: s\32269s02.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Subpart UPDATE 2022-02
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -18,7 +18,8 @@ function ldraw_lib__s__32269s02() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2022-03-06 [PTadmin] Official Update 2022-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
@@ -28,10 +29,10 @@ function ldraw_lib__s__32269s02() = [
   [0,"BFC","INVERTNEXT"],
 // 1 16 9.513 9.513 10 -6.51 0 0 0 0 -6.51 0 -20 0 1-4cylo.dat
   [1,16,9.513,9.513,10,-6.51,0,0,0,0,-6.51,0,-20,0, ldraw_lib__1_4cylo()],
-// 1 16 9.513 9.513 10 -0.651 0 0 0 0 -0.651 0 -1 0 1-4rin10.dat
-  [1,16,9.513,9.513,10,-0.651,0,0,0,0,-0.651,0,-1,0, ldraw_lib__1_4rin10()],
-// 1 16 9.513 9.513 -10 -0.651 0 0 0 0 -0.651 0 1 0 1-4rin10.dat
-  [1,16,9.513,9.513,-10,-0.651,0,0,0,0,-0.651,0,1,0, ldraw_lib__1_4rin10()],
+// 1 16 9.513 9.513 10 -0.651 0 0 0 0 -0.651 0 -1 0 1-4ring10.dat
+  [1,16,9.513,9.513,10,-0.651,0,0,0,0,-0.651,0,-1,0, ldraw_lib__1_4ring10()],
+// 1 16 9.513 9.513 -10 -0.651 0 0 0 0 -0.651 0 1 0 1-4ring10.dat
+  [1,16,9.513,9.513,-10,-0.651,0,0,0,0,-0.651,0,1,0, ldraw_lib__1_4ring10()],
 // 1 16 10.56675 3.0015 0 1.05375 0 0 -0.0015 -1 0 0 0 -10 rect2p.dat
   [1,16,10.56675,3.0015,0,1.05375,0,0,-0.0015,-1,0,0,0,-10, ldraw_lib__rect2p()],
 // 2 24 16.7985 3 1 11.6205 3 1

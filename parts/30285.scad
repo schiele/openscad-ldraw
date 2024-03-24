@@ -7,10 +7,10 @@ use <../p/4-4con8.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4edge.scad>
-use <../p/4-4rin18.scad>
-use <../p/4-4rin19.scad>
-use <../p/4-4rin20.scad>
+use <../p/4-4ring18.scad>
+use <../p/4-4ring19.scad>
 use <../p/4-4ring2.scad>
+use <../p/4-4ring20.scad>
 use <../p/4-4ring4.scad>
 use <../p/4-4ring5.scad>
 use <../p/box3u7a.scad>
@@ -19,7 +19,7 @@ function ldraw_lib__30285() = [
 // 0 Wheel Rim 14.8 x 16.8 with Centre Groove
 // 0 Name: 30285.dat
 // 0 Author: Thomas Burger [grapeape]
-// 0 !LDRAW_ORG Part UPDATE 2014-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -32,7 +32,8 @@ function ldraw_lib__30285() = [
 // 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01
 // 0 !HISTORY 2014-03-08 [cwdee] Description change
 // 0 !HISTORY 2014-06-21 [PTadmin] Official Update 2014-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 4 10 0 0 0 0 10 0 -1 0 4-4edge.dat
   [1,16,0,0,4,10,0,0,0,0,10,0,-1,0, ldraw_lib__4_4edge()],
@@ -78,8 +79,8 @@ function ldraw_lib__30285() = [
   [1,16,0,0,4,0,0,5,5,0,0,0,-1,0, ldraw_lib__4_4ring2()],
 // 1 16 0 0 4 0 0 3 3 0 0 0 -1 0 4-4ring5.dat
   [1,16,0,0,4,0,0,3,3,0,0,0,-1,0, ldraw_lib__4_4ring5()],
-// 1 16 0 0 4 0 0 1 1 0 0 0 -1 0 4-4rin18.dat
-  [1,16,0,0,4,0,0,1,1,0,0,0,-1,0, ldraw_lib__4_4rin18()],
+// 1 16 0 0 4 0 0 1 1 0 0 0 -1 0 4-4ring18.dat
+  [1,16,0,0,4,0,0,1,1,0,0,0,-1,0, ldraw_lib__4_4ring18()],
 // 1 16 0 0 -4 0 0 21 21 0 0 0 1 0 4-4edge.dat
   [1,16,0,0,-4,0,0,21,21,0,0,0,1,0, ldraw_lib__4_4edge()],
 // 1 16 0 0 2 0 0 10 10 0 0 0 1 0 4-4edge.dat
@@ -100,14 +101,14 @@ function ldraw_lib__30285() = [
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 -17 0 0 -19 19 0 0 0 11 0 4-4cyli.dat
   [1,16,0,0,-17,0,0,-19,19,0,0,0,11,0, ldraw_lib__4_4cyli()],
-// 1 16 0 0 17 0 0 1 -1 0 0 0 -1 0 4-4rin19.dat
-  [1,16,0,0,17,0,0,1,-1,0,0,0,-1,0, ldraw_lib__4_4rin19()],
-// 1 16 0 0 17 0 0 1 -1 0 0 0 -1 0 4-4rin20.dat
-  [1,16,0,0,17,0,0,1,-1,0,0,0,-1,0, ldraw_lib__4_4rin20()],
-// 1 16 0 0 -17 0 0 -1 -1 0 0 0 1 0 4-4rin19.dat
-  [1,16,0,0,-17,0,0,-1,-1,0,0,0,1,0, ldraw_lib__4_4rin19()],
-// 1 16 0 0 -17 0 0 -1 -1 0 0 0 1 0 4-4rin20.dat
-  [1,16,0,0,-17,0,0,-1,-1,0,0,0,1,0, ldraw_lib__4_4rin20()],
+// 1 16 0 0 17 0 0 1 -1 0 0 0 -1 0 4-4ring19.dat
+  [1,16,0,0,17,0,0,1,-1,0,0,0,-1,0, ldraw_lib__4_4ring19()],
+// 1 16 0 0 17 0 0 1 -1 0 0 0 -1 0 4-4ring20.dat
+  [1,16,0,0,17,0,0,1,-1,0,0,0,-1,0, ldraw_lib__4_4ring20()],
+// 1 16 0 0 -17 0 0 -1 -1 0 0 0 1 0 4-4ring19.dat
+  [1,16,0,0,-17,0,0,-1,-1,0,0,0,1,0, ldraw_lib__4_4ring19()],
+// 1 16 0 0 -17 0 0 -1 -1 0 0 0 1 0 4-4ring20.dat
+  [1,16,0,0,-17,0,0,-1,-1,0,0,0,1,0, ldraw_lib__4_4ring20()],
 // 1 16 0 0 3 -6 0 0 0 0 -6 0 -1 0 4-4con2.dat
   [1,16,0,0,3,-6,0,0,0,0,-6,0,-1,0, ldraw_lib__4_4con2()],
 // 1 16 0 0 4 -3 0 0 0 0 -3 0 -1 0 4-4con6.dat

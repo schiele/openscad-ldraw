@@ -17,7 +17,7 @@ use <../p/2-4ring1.scad>
 use <../p/2-8sphe.scad>
 use <../p/3-16cyli.scad>
 use <../p/3-16ndis.scad>
-use <../p/3-16rin1.scad>
+use <../p/3-16ring1.scad>
 use <../p/3-8cyli.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4cylo.scad>
@@ -41,7 +41,7 @@ function ldraw_lib__4719() = [
 // 0 Minifig Bicycle Frame
 // 0 Name: 4719.dat
 // 0 Author: Tore Eriksson [Tore_Eriksson]
-// 0 !LDRAW_ORG Part UPDATE 2016-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 !HELP rear wheel at 0 30 0
@@ -64,7 +64,8 @@ function ldraw_lib__4719() = [
 // 0 !HISTORY 2010-12-31 [PTadmin] Official Update 2010-03
 // 0 !HISTORY 2016-10-26 [Philo] Plugged holes, removed bleed-through, added missing lines/condlines
 // 0 !HISTORY 2016-12-31 [PTadmin] Official Update 2016-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 2 24 4 4 10 4 4 -4
   [2,24,4,4,10,4,4,-4],
@@ -236,8 +237,8 @@ function ldraw_lib__4719() = [
   [0,"BFC","INVERTNEXT"],
 // 1 16 4 30 0 0 4 0 -1.6444 0 -1.1384 -1.1384 0 1.6444 4-4cylo.dat
   [1,16,4,30,0,0,4,0,-1.6444,0,-1.1384,-1.1384,0,1.6444, ldraw_lib__4_4cylo()],
-// 1 16 4 30 0 0 1 0 -1.1384 0 1.6444 1.6444 0 1.1384 3-16rin1.dat
-  [1,16,4,30,0,0,1,0,-1.1384,0,1.6444,1.6444,0,1.1384, ldraw_lib__3_16rin1()],
+// 1 16 4 30 0 0 1 0 -1.1384 0 1.6444 1.6444 0 1.1384 3-16ring1.dat
+  [1,16,4,30,0,0,1,0,-1.1384,0,1.6444,1.6444,0,1.1384, ldraw_lib__3_16ring1()],
 // 1 16 4 30 0 0 1 0 1.08358 0 1.68103 1.68103 0 -1.08358 1-8ring1.dat
   [1,16,4,30,0,0,1,0,1.08358,0,1.68103,1.68103,0,-1.08358, ldraw_lib__1_8ring1()],
 // 1 16 8 30 0 0 -1 0 -1.6444 0 -1.1384 -1.1384 0 1.6444 4-4ring1.dat
@@ -642,8 +643,8 @@ function ldraw_lib__4719() = [
   [0,"BFC","INVERTNEXT"],
 // 1 16 -4 30 0 0 -4 0 -1.6444 0 -1.1384 -1.1384 0 1.6444 4-4cylo.dat
   [1,16,-4,30,0,0,-4,0,-1.6444,0,-1.1384,-1.1384,0,1.6444, ldraw_lib__4_4cylo()],
-// 1 16 -4 30 0 0 -1 0 -1.1384 0 1.6444 1.6444 0 1.1384 3-16rin1.dat
-  [1,16,-4,30,0,0,-1,0,-1.1384,0,1.6444,1.6444,0,1.1384, ldraw_lib__3_16rin1()],
+// 1 16 -4 30 0 0 -1 0 -1.1384 0 1.6444 1.6444 0 1.1384 3-16ring1.dat
+  [1,16,-4,30,0,0,-1,0,-1.1384,0,1.6444,1.6444,0,1.1384, ldraw_lib__3_16ring1()],
 // 1 16 -4 30 0 0 -1 0 1.08358 0 1.68103 1.68103 0 -1.08358 1-8ring1.dat
   [1,16,-4,30,0,0,-1,0,1.08358,0,1.68103,1.68103,0,-1.08358, ldraw_lib__1_8ring1()],
 // 1 16 -8 30 0 0 1 0 -1.6444 0 -1.1384 -1.1384 0 1.6444 4-4ring1.dat

@@ -2,7 +2,7 @@ use <../lib.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4cylo.scad>
 use <../p/4-4edge.scad>
-use <../p/4-4rin12.scad>
+use <../p/4-4ring12.scad>
 use <../p/4-4ring2.scad>
 use <../p/4-4ring3.scad>
 use <../p/4-4ring6.scad>
@@ -11,14 +11,14 @@ function ldraw_lib__4790() = [
 // 0 Boat Ship Wheel with Unslotted Pin
 // 0 Name: 4790.dat
 // 0 Author: Paul Easter [pneaster]
-// 0 !LDRAW_ORG Part UPDATE 2023-07
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS helm, Pirates, steering
+// 0 !KEYWORDS Pirates, helm, steering
 // 
 // 0 !HISTORY 2001-11-23 [pneaster] corrected BFC use of primitive files.
 // 0 !HISTORY 2001-12-31 [PTadmin] Official Update 2001-03
@@ -29,7 +29,8 @@ function ldraw_lib__4790() = [
 // 0 !HISTORY 2010-12-31 [PTadmin] Official Update 2010-03
 // 0 !HISTORY 2022-11-19 [MagFors] Used common subfile
 // 0 !HISTORY 2023-12-31 [OrionP] Official Update 2023-07
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4790s00.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4790s00()],
@@ -47,10 +48,10 @@ function ldraw_lib__4790() = [
   [1,16,0,22,0,6,0,0,0,16,0,0,0,6, ldraw_lib__4_4cylo()],
 // 1 16 0 40 0 2 0 0 0 -1 0 0 0 2 4-4ring2.dat
   [1,16,0,40,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__4_4ring2()],
-// 1 16 0 40 0 .5 0 0 0 -1 0 0 0 .5 4-4rin12.dat
-  [1,16,0,40,0,.5,0,0,0,-1,0,0,0,.5, ldraw_lib__4_4rin12()],
-// 1 16 0 38 0 -.5 0 0 0 1 0 0 0 .5 4-4rin12.dat
-  [1,16,0,38,0,-.5,0,0,0,1,0,0,0,.5, ldraw_lib__4_4rin12()],
+// 1 16 0 40 0 .5 0 0 0 -1 0 0 0 .5 4-4ring12.dat
+  [1,16,0,40,0,.5,0,0,0,-1,0,0,0,.5, ldraw_lib__4_4ring12()],
+// 1 16 0 38 0 -.5 0 0 0 1 0 0 0 .5 4-4ring12.dat
+  [1,16,0,38,0,-.5,0,0,0,1,0,0,0,.5, ldraw_lib__4_4ring12()],
 // 1 16 0 38 0 6.5 0 0 0 2 0 0 0 6.5 4-4cylo.dat
   [1,16,0,38,0,6.5,0,0,0,2,0,0,0,6.5, ldraw_lib__4_4cylo()],
 // 1 16 0 40 0 4 0 0 0 1 0 0 0 4 4-4edge.dat

@@ -2,7 +2,7 @@ use <../../lib.scad>
 use <../../p/3-16chrd.scad>
 use <../../p/3-16cylo.scad>
 use <../../p/3-16ndis.scad>
-use <../../p/3-16rin3.scad>
+use <../../p/3-16ring3.scad>
 use <../../p/48/1-16chrd.scad>
 use <../../p/48/1-16cyli.scad>
 use <../../p/48/1-16cylo.scad>
@@ -17,7 +17,7 @@ function ldraw_lib__s__65474s02() = [
 // 0 ~Tile  6 x  8 with Rounded Corners and Groove, Rim Quarter
 // 0 Name: s\65474s02.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
-// 0 !LDRAW_ORG Subpart UPDATE 2020-02
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -25,7 +25,8 @@ function ldraw_lib__s__65474s02() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 0 0 -60 0 4 0 60 0 0 48\1-8cyli.dat
   [1,16,0,0,0,0,0,-60,0,4,0,60,0,0, ldraw_lib__48__1_8cyli()],
@@ -112,8 +113,8 @@ function ldraw_lib__s__65474s02() = [
   [1,16,-33.4761,6,44.3592,-.86705,-1,0,0,0,-2,1.2977,0,0, ldraw_lib__rect2p()],
 // 1 16 -40 8 40 7.39103 0 3.06147 0 -4 0 3.06147 0 -7.39103 3-16cylo.dat
   [1,16,-40,8,40,7.39103,0,3.06147,0,-4,0,3.06147,0,-7.39103, ldraw_lib__3_16cylo()],
-// 1 16 -40 8 40 1.41421 0 1.41421 0 -1 0 -1.41421 0 1.41421 3-16rin3.dat
-  [1,16,-40,8,40,1.41421,0,1.41421,0,-1,0,-1.41421,0,1.41421, ldraw_lib__3_16rin3()],
+// 1 16 -40 8 40 1.41421 0 1.41421 0 -1 0 -1.41421 0 1.41421 3-16ring3.dat
+  [1,16,-40,8,40,1.41421,0,1.41421,0,-1,0,-1.41421,0,1.41421, ldraw_lib__3_16ring3()],
 // 3 16 -35.221 8 43.4399 -35.9843 8 46.7535 -34.3431 8 45.6569
   [3,16,-35.221,8,43.4399,-35.9843,8,46.7535,-34.3431,8,45.6569],
 // 4 16 -35.221 8 43.4399 -34.3431 8 45.6569 -32.609 8 43.0615 -34.4566 8 42.2962

@@ -1,9 +1,9 @@
 use <../lib.scad>
 function ldraw_lib__4_4rin15() = [
-// 0 Ring 15 x 1.0
+// 0 ~Ring 15 x 1.0 (Obsolete)
 // 0 Name: 4-4rin15.dat
 // 0 Author: Mark Kennedy [mkennedy]
-// 0 !LDRAW_ORG Primitive UPDATE 2012-01
+// 0 !LDRAW_ORG Primitive UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -15,7 +15,8 @@ function ldraw_lib__4_4rin15() = [
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
 // 0 !HISTORY 2012-02-16 [Philo] Changed to CCW
 // 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Obsolete, use 4-4ring15.dat
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 4 16 16 0 0 14.7824 0 6.1232 13.8585 0 5.7405 15 0 0
   [4,16,16,0,0,14.7824,0,6.1232,13.8585,0,5.7405,15,0,0],

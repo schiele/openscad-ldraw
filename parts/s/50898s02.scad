@@ -10,7 +10,7 @@ use <../../p/2-4edge.scad>
 use <../../p/2-4ndis.scad>
 use <../../p/2-4ring3.scad>
 use <../../p/3-16edge.scad>
-use <../../p/3-16rin8.scad>
+use <../../p/3-16ring8.scad>
 use <../../p/4-4cyli.scad>
 use <../../p/4-4cylse.scad>
 use <../../p/4-4edge.scad>
@@ -21,7 +21,7 @@ function ldraw_lib__s__50898s02() = [
 // 0 ~Constraction Connector Ball Socket End for Beam - Half
 // 0 Name: s\50898s02.dat
 // 0 Author: Michael Heidemann [mikeheide]
-// 0 !LDRAW_ORG Subpart UPDATE 2023-01
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -38,7 +38,8 @@ function ldraw_lib__s__50898s02() = [
 // 0 !HISTORY 2022-07-12 [SwampKryakwa] Use of primitives in more places, modified geometry to prevent t-junctions, sharpened fold near npeghole
 // 0 !HISTORY 2022-08-07 [MagFors] Reworked size of socket
 // 0 !HISTORY 2023-03-05 [OrionP] Official Update 2023-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 20 0 -10 0 -4 0 1 0 0 0 0 1 npeghol7.dat
   [1,16,20,0,-10,0,-4,0,1,0,0,0,0,1, ldraw_lib__npeghol7()],
@@ -186,10 +187,10 @@ function ldraw_lib__s__50898s02() = [
 // 
 // 1 16 11.3 0 -20 0 1 0 2 0 0 0 0 -2 2-4ring3.dat
   [1,16,11.3,0,-20,0,1,0,2,0,0,0,0,-2, ldraw_lib__2_4ring3()],
-// 1 16 11.3 0 -20 0 1 0 0 0 -1 -1 0 0 3-16rin8.dat
-  [1,16,11.3,0,-20,0,1,0,0,0,-1,-1,0,0, ldraw_lib__3_16rin8()],
-// 1 16 11.3 0 -20 0 1 0 0 0 1 -1 0 0 3-16rin8.dat
-  [1,16,11.3,0,-20,0,1,0,0,0,1,-1,0,0, ldraw_lib__3_16rin8()],
+// 1 16 11.3 0 -20 0 1 0 0 0 -1 -1 0 0 3-16ring8.dat
+  [1,16,11.3,0,-20,0,1,0,0,0,-1,-1,0,0, ldraw_lib__3_16ring8()],
+// 1 16 11.3 0 -20 0 1 0 0 0 1 -1 0 0 3-16ring8.dat
+  [1,16,11.3,0,-20,0,1,0,0,0,1,-1,0,0, ldraw_lib__3_16ring8()],
 // 1 16 11.3 0 -20 0 1 0 6 0 0 0 0 6 2-4ndis.dat
   [1,16,11.3,0,-20,0,1,0,6,0,0,0,0,6, ldraw_lib__2_4ndis()],
 // 3 16 10.17 -9 -20 11.3 -7 -20 11.3 -7.3912 -23.0616

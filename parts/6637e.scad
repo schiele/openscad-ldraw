@@ -7,7 +7,7 @@ use <../p/4-4ring7.scad>
 use <../p/48/1-4aring.scad>
 use <../p/48/1-4cyli.scad>
 use <../p/48/1-4edge.scad>
-use <../p/48/1-4rin14.scad>
+use <../p/48/1-4ring14.scad>
 use <../p/48/2-4aring.scad>
 use <../p/48/4-4aring.scad>
 use <../p/48/4-4cylo.scad>
@@ -20,7 +20,7 @@ function ldraw_lib__6637e() = [
 // 0 ~Electric Technic Fiber Optics Element - Bottom
 // 0 Name: 6637e.dat
 // 0 Author: Magnus Forsberg [MagFors]
-// 0 !LDRAW_ORG Part UPDATE 2020-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -28,7 +28,8 @@ function ldraw_lib__6637e() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 -11 52 0 5 0 0 0 2 0 0 0 4 box3u5p.dat
   [1,16,-11,52,0,5,0,0,0,2,0,0,0,4, ldraw_lib__box3u5p()],
@@ -152,8 +153,8 @@ function ldraw_lib__6637e() = [
   [1,16,0,26,-15,19.79899,0,19.79899,19.79899,0,-19.79899,0,-1,0, ldraw_lib__48__2_4aring()],
 // 1 16 0 26 -15 -19.79899 0 -19.79899 19.79899 0 -19.79899 0 -1 0 48\1-4aring.dat
   [1,16,0,26,-15,-19.79899,0,-19.79899,19.79899,0,-19.79899,0,-1,0, ldraw_lib__48__1_4aring()],
-// 1 16 0 26 -15 1.41421 0 -1.41421 -1.41421 0 -1.41421 0 -1 0 48\1-4rin14.dat
-  [1,16,0,26,-15,1.41421,0,-1.41421,-1.41421,0,-1.41421,0,-1,0, ldraw_lib__48__1_4rin14()],
+// 1 16 0 26 -15 1.41421 0 -1.41421 -1.41421 0 -1.41421 0 -1 0 48\1-4ring14.dat
+  [1,16,0,26,-15,1.41421,0,-1.41421,-1.41421,0,-1.41421,0,-1,0, ldraw_lib__48__1_4ring14()],
 // 1 16 0 26 -15 21.2132 0 -21.2132 -21.2132 0 -21.2132 0 -1 0 48\1-4edge.dat
   [1,16,0,26,-15,21.2132,0,-21.2132,-21.2132,0,-21.2132,0,-1,0, ldraw_lib__48__1_4edge()],
 // 1 16 0 26 -15 18.26284 0 -23.8006 -23.8006 0 -18.26284 0 -5 0 48\5-24cylo.dat

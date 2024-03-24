@@ -7,8 +7,8 @@ use <../p/4-4cylc.scad>
 use <../p/4-4cylo.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4edge.scad>
-use <../p/4-4rin25.scad>
 use <../p/4-4ring2.scad>
+use <../p/4-4ring25.scad>
 use <../p/4-4ring5.scad>
 use <../p/5-8cyli.scad>
 use <../p/5-8edge.scad>
@@ -18,7 +18,7 @@ function ldraw_lib__41813() = [
 // 0 ~Pneumatic Fire Hose Nozzle Simulated Jet Inner Segment
 // 0 Name: 41813.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2023-04
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -28,7 +28,8 @@ function ldraw_lib__41813() = [
 // 0 !CATEGORY Technic
 // 
 // 0 !HISTORY 2023-08-25 [OrionP] Official Update 2023-04
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 -9 6 0 0 0 0 -6 0 9 0 4-4cylo.dat
   [1,16,0,0,-9,6,0,0,0,0,-6,0,9,0, ldraw_lib__4_4cylo()],
@@ -122,8 +123,8 @@ function ldraw_lib__41813() = [
   [1,16,0,0,-112,5,0,0,0,0,-5,0,1,0, ldraw_lib__5_8edge()],
 // 1 16 0 0 -112 0 0 5 5 0 0 0 1 0 1-8edge.dat
   [1,16,0,0,-112,0,0,5,5,0,0,0,1,0, ldraw_lib__1_8edge()],
-// 1 16 0 0 -112 0 0 0.2 -0.2 0 0 0 -1 0 4-4rin25.dat
-  [1,16,0,0,-112,0,0,0.2,-0.2,0,0,0,-1,0, ldraw_lib__4_4rin25()],
+// 1 16 0 0 -112 0 0 0.2 -0.2 0 0 0 -1 0 4-4ring25.dat
+  [1,16,0,0,-112,0,0,0.2,-0.2,0,0,0,-1,0, ldraw_lib__4_4ring25()],
 ];
 module ldraw_lib__41813(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
     makepoly(ldraw_lib__41813(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);

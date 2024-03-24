@@ -4,7 +4,7 @@ use <../../p/1-4cyls.scad>
 use <../../p/1-4cyls2.scad>
 use <../../p/1-4edge.scad>
 use <../../p/1-4ndis.scad>
-use <../../p/1-4rin12.scad>
+use <../../p/1-4ring12.scad>
 use <../../p/1-4ring2.scad>
 use <../../p/2-4cyli.scad>
 use <../../p/2-4edge.scad>
@@ -16,7 +16,7 @@ function ldraw_lib__s__67139s01() = [
 // 0 ~Technic Connector Block  3 x  5 x  1 with Cutout - Outer Pin Hole Quarter
 // 0 Name: s\67139s01.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
-// 0 !LDRAW_ORG Subpart UPDATE 2022-03
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -24,7 +24,8 @@ function ldraw_lib__s__67139s01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2022-05-07 [PTadmin] Official Update 2022-03
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 2 24 -13 -9 12 -13 6.5 12
   [2,24,-13,-9,12,-13,6.5,12],
@@ -117,8 +118,8 @@ function ldraw_lib__s__67139s01() = [
   [4,16,-26,-6,12,-34,-6,12,-34,0,12,-26,0,12],
 // 4 16 -26 0 12 -34 0 12 -34 6 12 -26 6 12
   [4,16,-26,0,12,-34,0,12,-34,6,12,-26,6,12],
-// 1 16 -40 0 12 0 0 -0.5 0.5 0 0 0 1 0 1-4rin12.dat
-  [1,16,-40,0,12,0,0,-0.5,0.5,0,0,0,1,0, ldraw_lib__1_4rin12()],
+// 1 16 -40 0 12 0 0 -0.5 0.5 0 0 0 1 0 1-4ring12.dat
+  [1,16,-40,0,12,0,0,-0.5,0.5,0,0,0,1,0, ldraw_lib__1_4ring12()],
 // 1 16 -40 0 12 0 0 -3 -3 0 0 0 1 0 1-4ring2.dat
   [1,16,-40,0,12,0,0,-3,-3,0,0,0,1,0, ldraw_lib__1_4ring2()],
 // 1 16 -40 0 12 0 0 -9 -9 0 0 0 1 0 1-4edge.dat

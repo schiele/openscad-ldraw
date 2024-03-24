@@ -5,7 +5,7 @@ use <../p/4-4ring2.scad>
 use <../p/48/4-4aring.scad>
 use <../p/48/4-4cyli.scad>
 use <../p/48/4-4edge.scad>
-use <../p/48/4-4rin29.scad>
+use <../p/48/4-4ring29.scad>
 use <../p/axl2ho10.scad>
 use <../p/axl2hol2.scad>
 use <../p/axl2hol3.scad>
@@ -17,7 +17,7 @@ function ldraw_lib__32219() = [
 // 0 Wheel 14 x 30 Znap
 // 0 Name: 32219.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2012-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -27,7 +27,8 @@ function ldraw_lib__32219() = [
 // 0 !KEYWORDS Propeller
 // 
 // 0 !HISTORY 2012-08-09 [PTadmin] Official Update 2012-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Nomenclature: width_(mm) x rim_diameter_(mm) [optional qualifier]
 // 
@@ -65,10 +66,10 @@ function ldraw_lib__32219() = [
   [1,16,0,0,30,1,0,0,0,0,1,0,-1,0, ldraw_lib__axl2hol2()],
 // 1 16 0 0 10 1 0 0 0 0 1 0 1 0 axl2hol3.dat
   [1,16,0,0,10,1,0,0,0,0,1,0,1,0, ldraw_lib__axl2hol3()],
-// 1 16 0 0 -18 1 0 0 0 0 1 0 1 0 48\4-4rin29.dat
-  [1,16,0,0,-18,1,0,0,0,0,1,0,1,0, ldraw_lib__48__4_4rin29()],
-// 1 16 0 0 20 1 0 0 0 0 1 0 -1 0 48\4-4rin29.dat
-  [1,16,0,0,20,1,0,0,0,0,1,0,-1,0, ldraw_lib__48__4_4rin29()],
+// 1 16 0 0 -18 1 0 0 0 0 1 0 1 0 48\4-4ring29.dat
+  [1,16,0,0,-18,1,0,0,0,0,1,0,1,0, ldraw_lib__48__4_4ring29()],
+// 1 16 0 0 20 1 0 0 0 0 1 0 -1 0 48\4-4ring29.dat
+  [1,16,0,0,20,1,0,0,0,0,1,0,-1,0, ldraw_lib__48__4_4ring29()],
 // 1 16 0 0 0 29 0 0 0 0 29 0 1 0 48\4-4edge.dat
   [1,16,0,0,0,29,0,0,0,0,29,0,1,0, ldraw_lib__48__4_4edge()],
 // 1 16 0 0 4 29 0 0 0 0 29 0 1 0 48\4-4edge.dat

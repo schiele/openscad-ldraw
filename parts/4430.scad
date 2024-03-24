@@ -17,7 +17,7 @@ use <../p/4-4cyli.scad>
 use <../p/4-4cylo.scad>
 use <../p/4-4cyls.scad>
 use <../p/4-4edge.scad>
-use <../p/4-4rin10.scad>
+use <../p/4-4ring10.scad>
 use <../p/4-4ring2.scad>
 use <../p/4-4ring4.scad>
 use <../p/48/1-4chrd.scad>
@@ -26,7 +26,7 @@ use <../p/48/4-4con1.scad>
 use <../p/48/4-4con2.scad>
 use <../p/48/4-4cylo.scad>
 use <../p/48/4-4edge.scad>
-use <../p/48/4-4rin24.scad>
+use <../p/48/4-4ring24.scad>
 use <../p/48/4-4ring5.scad>
 use <../p/7-8edge.scad>
 use <../p/box4o4a.scad>
@@ -35,7 +35,7 @@ function ldraw_lib__4430() = [
 // 0 Fabuland Kettle
 // 0 Name: 4430.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2017-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -47,7 +47,8 @@ function ldraw_lib__4430() = [
 // 0 !HISTORY 2015-12-30 [PTadmin] Official Update 2015-02
 // 0 !HISTORY 2017-08-30 [PTadmin] Renamed from u9214
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 -4 0 -24.6 0 0 0 4 0 0 0 -24.6 48\4-4cylo.dat
   [1,16,0,-4,0,-24.6,0,0,0,4,0,0,0,-24.6, ldraw_lib__48__4_4cylo()],
@@ -57,8 +58,8 @@ function ldraw_lib__4430() = [
   [1,16,0,0,0,-20.5,0,0,0,-35,0,0,0,-20.5, ldraw_lib__48__4_4cylo()],
 // 1 16 0 0 0 -4.1 0 0 0 -1 0 0 0 -4.1 48\4-4ring5.dat
   [1,16,0,0,0,-4.1,0,0,0,-1,0,0,0,-4.1, ldraw_lib__48__4_4ring5()],
-// 1 16 0 -4 0 -1.025 0 0 0 -1 0 0 0 -1.025 48\4-4rin24.dat
-  [1,16,0,-4,0,-1.025,0,0,0,-1,0,0,0,-1.025, ldraw_lib__48__4_4rin24()],
+// 1 16 0 -4 0 -1.025 0 0 0 -1 0 0 0 -1.025 48\4-4ring24.dat
+  [1,16,0,-4,0,-1.025,0,0,0,-1,0,0,0,-1.025, ldraw_lib__48__4_4ring24()],
 // 1 16 0 -39 0 -25.625 0 0 0 35 0 0 0 -25.625 48\4-4cylo.dat
   [1,16,0,-39,0,-25.625,0,0,0,35,0,0,0,-25.625, ldraw_lib__48__4_4cylo()],
 // 1 16 0 -39 0 -25.625 0 0 0 1 0 0 0 -25.625 48\1-4chrd.dat
@@ -97,8 +98,8 @@ function ldraw_lib__4430() = [
   [1,16,0,-46,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__4_4ring4()],
 // 1 16 0 -42 0 -1 0 0 0 -1 0 0 0 -1 4-4ring4.dat
   [1,16,0,-42,0,-1,0,0,0,-1,0,0,0,-1, ldraw_lib__4_4ring4()],
-// 1 16 0 -46 0 -0.5 0 0 0 1 0 0 0 -0.5 4-4rin10.dat
-  [1,16,0,-46,0,-0.5,0,0,0,1,0,0,0,-0.5, ldraw_lib__4_4rin10()],
+// 1 16 0 -46 0 -0.5 0 0 0 1 0 0 0 -0.5 4-4ring10.dat
+  [1,16,0,-46,0,-0.5,0,0,0,1,0,0,0,-0.5, ldraw_lib__4_4ring10()],
 // 1 16 0 -35 0 -7.5 0 0 0 -1 0 0 0 -7.5 4-4ring2.dat
   [1,16,0,-35,0,-7.5,0,0,0,-1,0,0,0,-7.5, ldraw_lib__4_4ring2()],
 // 1 16 0 -35 0 -15 0 0 0 -1 0 0 0 -15 4-4edge.dat

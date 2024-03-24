@@ -1,6 +1,6 @@
 use <../../lib.scad>
 use <../../p/1-16disc.scad>
-use <../../p/1-16rin2.scad>
+use <../../p/1-16ring2.scad>
 use <../../p/1-16tang.scad>
 use <../../p/1-8chrd.scad>
 use <../../p/1-8tang.scad>
@@ -15,7 +15,7 @@ function ldraw_lib__s__6142275abs03() = [
 // 0 ~Sticker  1.9 x  0.8 with Headlight on Black and White Background Left - Third Face
 // 0 Name: s\6142275abs03.dat
 // 0 Author: Massimo Maso [Sirio]
-// 0 !LDRAW_ORG Subpart UPDATE 2023-05
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -23,7 +23,8 @@ function ldraw_lib__s__6142275abs03() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2023-10-31 [OrionP] Official Update 2023-05
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Primitives
 // 1 80 2 -.25 6.0422 1.5 0 0 0 1 0 0 0 -1.5 2-4ndis.dat
@@ -56,10 +57,10 @@ function ldraw_lib__s__6142275abs03() = [
   [1,80,2,-.25,.9172,1.5,0,0,0,1,0,0,0,-1.5, ldraw_lib__1_16tang()],
 // 1 0 2 -.25 .9172 .5 0 0 0 1 0 0 0 .5 2-4ring2.dat
   [1,0,2,-.25,.9172,.5,0,0,0,1,0,0,0,.5, ldraw_lib__2_4ring2()],
-// 1 0 2 -.25 .9172 -.5 0 0 0 1 0 0 0 -.5 1-16rin2.dat
-  [1,0,2,-.25,.9172,-.5,0,0,0,1,0,0,0,-.5, ldraw_lib__1_16rin2()],
-// 1 0 2 -.25 .9172 .5 0 0 0 1 0 0 0 -.5 1-16rin2.dat
-  [1,0,2,-.25,.9172,.5,0,0,0,1,0,0,0,-.5, ldraw_lib__1_16rin2()],
+// 1 0 2 -.25 .9172 -.5 0 0 0 1 0 0 0 -.5 1-16ring2.dat
+  [1,0,2,-.25,.9172,-.5,0,0,0,1,0,0,0,-.5, ldraw_lib__1_16ring2()],
+// 1 0 2 -.25 .9172 .5 0 0 0 1 0 0 0 -.5 1-16ring2.dat
+  [1,0,2,-.25,.9172,.5,0,0,0,1,0,0,0,-.5, ldraw_lib__1_16ring2()],
 // 1 80 2 -.25 .9172 -1 0 0 0 1 0 0 0 1 2-4disc.dat
   [1,80,2,-.25,.9172,-1,0,0,0,1,0,0,0,1, ldraw_lib__2_4disc()],
 // 1 80 2 -.25 .9172 -1 0 0 0 1 0 0 0 -1 1-16disc.dat

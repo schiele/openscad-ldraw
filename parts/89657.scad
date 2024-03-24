@@ -2,8 +2,8 @@ use <../lib.scad>
 use <../p/4-4cylc.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4edge.scad>
-use <../p/4-4rin19.scad>
 use <../p/4-4ring1.scad>
+use <../p/4-4ring19.scad>
 use <../p/axlehol2.scad>
 use <../p/axlehole.scad>
 use <../p/bush1.scad>
@@ -11,7 +11,7 @@ function ldraw_lib__89657() = [
 // 0 ~Electric Energy Display Direction Button
 // 0 Name: 89657.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2018-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -19,7 +19,8 @@ function ldraw_lib__89657() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2018-12-08 [PTadmin] Official Update 2018-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 1 0 0 0 0 -.4 0 1 0 bush1.dat
   [1,16,0,0,0,1,0,0,0,0,-.4,0,1,0, ldraw_lib__bush1()],
@@ -44,8 +45,8 @@ function ldraw_lib__89657() = [
   [1,16,0,1.2,0,6.3751,0,1.26809,0,1,0,-1.26809,0,6.3751, ldraw_lib__4_4ring1()],
 // 1 16 0 1.2 0 12.75021 0 2.53617 0 1 0 -2.53617 0 12.75021 4-4edge.dat
   [1,16,0,1.2,0,12.75021,0,2.53617,0,1,0,-2.53617,0,12.75021, ldraw_lib__4_4edge()],
-// 1 16 0 15 0 0.98079 0 0.19509 0 1 0 -0.19509 0 0.98079 4-4rin19.dat
-  [1,16,0,15,0,0.98079,0,0.19509,0,1,0,-0.19509,0,0.98079, ldraw_lib__4_4rin19()],
+// 1 16 0 15 0 0.98079 0 0.19509 0 1 0 -0.19509 0 0.98079 4-4ring19.dat
+  [1,16,0,15,0,0.98079,0,0.19509,0,1,0,-0.19509,0,0.98079, ldraw_lib__4_4ring19()],
 // 1 16 0 15 0 18.63492 0 3.70672 0 1 0 -3.70672 0 18.63492 4-4edge.dat
   [1,16,0,15,0,18.63492,0,3.70672,0,1,0,-3.70672,0,18.63492, ldraw_lib__4_4edge()],
 // 4 16 12.7502 1.2 -2.5362 10.8093 1.2 -7.2227 15.7982 15 -10.5562 18.6349 15 -3.7067

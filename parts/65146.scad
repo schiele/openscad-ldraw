@@ -3,7 +3,7 @@ use <../p/1-8chrd.scad>
 use <../p/3-16cyli.scad>
 use <../p/4-4cylo.scad>
 use <../p/4-4ndis.scad>
-use <../p/4-4rin15.scad>
+use <../p/4-4ring15.scad>
 use <../p/4-4ring2.scad>
 use <../p/4-4ring8.scad>
 use <../p/48/1-8chrd.scad>
@@ -15,7 +15,7 @@ function ldraw_lib__65146() = [
 // 0 Turntable  2 x  2 with Four Snapping Clips
 // 0 Name: 65146.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
-// 0 !LDRAW_ORG Part UPDATE 2023-06
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -25,7 +25,8 @@ function ldraw_lib__65146() = [
 // 0 !KEYWORDS VIDIYO
 // 
 // 0 !HISTORY 2023-11-19 [OrionP] Official Update 2023-06
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 3 0 9 0 0 0 -1 0 0 0 9 4-4ndis.dat
   [1,16,0,3,0,9,0,0,0,-1,0,0,0,9, ldraw_lib__4_4ndis()],
@@ -68,8 +69,8 @@ function ldraw_lib__65146() = [
   [1,16,0,-2,0,9,0,0,0,5,0,0,0,9, ldraw_lib__4_4cylo()],
 // 1 16 0 -2 0 1 0 0 0 -1 0 0 0 1 4-4ring8.dat
   [1,16,0,-2,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__4_4ring8()],
-// 1 16 0 -2 0 .5 0 0 0 -1 0 0 0 .5 4-4rin15.dat
-  [1,16,0,-2,0,.5,0,0,0,-1,0,0,0,.5, ldraw_lib__4_4rin15()],
+// 1 16 0 -2 0 .5 0 0 0 -1 0 0 0 .5 4-4ring15.dat
+  [1,16,0,-2,0,.5,0,0,0,-1,0,0,0,.5, ldraw_lib__4_4ring15()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -4 0 7.5 0 0 0 2 0 0 0 7.5 4-4cylo.dat

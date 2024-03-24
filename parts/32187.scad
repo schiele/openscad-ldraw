@@ -1,10 +1,10 @@
 use <../lib.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4edge.scad>
-use <../p/4-4rin12.scad>
-use <../p/4-4rin13.scad>
-use <../p/4-4rin15.scad>
-use <../p/4-4rin16.scad>
+use <../p/4-4ring12.scad>
+use <../p/4-4ring13.scad>
+use <../p/4-4ring15.scad>
+use <../p/4-4ring16.scad>
 use <../p/4-4ring2.scad>
 use <../p/4-4ring3.scad>
 use <../p/4-4ring4.scad>
@@ -15,7 +15,7 @@ function ldraw_lib__32187() = [
 // 0 Technic Transmission Driving Ring Extension
 // 0 Name: 32187.dat
 // 0 Author: Marc Klein [marckl]
-// 0 !LDRAW_ORG Part UPDATE 2009-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -27,7 +27,8 @@ function ldraw_lib__32187() = [
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
 // 0 !HISTORY 2008-07-07 [guyvivan] Made BFC compliant (2004-09-04)
 // 0 !HISTORY 2009-09-03 [PTadmin] Official Update 2009-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 -4 10 0 0 0 0 10 0 1 0 4-4edge.dat
   [1,16,0,0,-4,10,0,0,0,0,10,0,1,0, ldraw_lib__4_4edge()],
@@ -39,18 +40,18 @@ function ldraw_lib__32187() = [
   [1,16,0,0,9,17,0,0,0,0,17,0,1,0, ldraw_lib__4_4edge()],
 // 1 16 0 0 9 15 0 0 0 0 15 0 1 0 4-4edge.dat
   [1,16,0,0,9,15,0,0,0,0,15,0,1,0, ldraw_lib__4_4edge()],
-// 1 16 0 0 9 1 0 0 0 0 -1 0 -1 0 4-4rin15.dat
-  [1,16,0,0,9,1,0,0,0,0,-1,0,-1,0, ldraw_lib__4_4rin15()],
-// 1 16 0 0 9 1 0 0 0 0 -1 0 -1 0 4-4rin16.dat
-  [1,16,0,0,9,1,0,0,0,0,-1,0,-1,0, ldraw_lib__4_4rin16()],
+// 1 16 0 0 9 1 0 0 0 0 -1 0 -1 0 4-4ring15.dat
+  [1,16,0,0,9,1,0,0,0,0,-1,0,-1,0, ldraw_lib__4_4ring15()],
+// 1 16 0 0 9 1 0 0 0 0 -1 0 -1 0 4-4ring16.dat
+  [1,16,0,0,9,1,0,0,0,0,-1,0,-1,0, ldraw_lib__4_4ring16()],
 // 1 16 0 0 -4 13 0 0 0 0 13 0 1 0 4-4edge.dat
   [1,16,0,0,-4,13,0,0,0,0,13,0,1,0, ldraw_lib__4_4edge()],
-// 1 16 0 0 -4 1 0 0 0 0 1 0 1 0 4-4rin13.dat
-  [1,16,0,0,-4,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4rin13()],
+// 1 16 0 0 -4 1 0 0 0 0 1 0 1 0 4-4ring13.dat
+  [1,16,0,0,-4,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4ring13()],
 // 1 16 0 0 -4 2 0 0 0 0 2 0 1 0 4-4ring7.dat
   [1,16,0,0,-4,2,0,0,0,0,2,0,1,0, ldraw_lib__4_4ring7()],
-// 1 16 0 0 -4 1 0 0 0 0 1 0 1 0 4-4rin16.dat
-  [1,16,0,0,-4,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4rin16()],
+// 1 16 0 0 -4 1 0 0 0 0 1 0 1 0 4-4ring16.dat
+  [1,16,0,0,-4,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4ring16()],
 // 1 16 0 0 -20 13 0 0 0 0 13 0 1 0 4-4edge.dat
   [1,16,0,0,-20,13,0,0,0,0,13,0,1,0, ldraw_lib__4_4edge()],
 // 1 16 0 0 -20 13 0 0 0 0 13 0 16 0 4-4cyli.dat
@@ -65,8 +66,8 @@ function ldraw_lib__32187() = [
   [1,16,0,0,-20,10,0,0,0,0,10,0,1,0, ldraw_lib__4_4edge()],
 // 1 16 0 0 -20 2 0 0 0 0 2 0 1 0 4-4ring5.dat
   [1,16,0,0,-20,2,0,0,0,0,2,0,1,0, ldraw_lib__4_4ring5()],
-// 1 16 0 0 -20 1 0 0 0 0 1 0 1 0 4-4rin12.dat
-  [1,16,0,0,-20,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4rin12()],
+// 1 16 0 0 -20 1 0 0 0 0 1 0 1 0 4-4ring12.dat
+  [1,16,0,0,-20,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4ring12()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 -4 10 0 0 0 0 10 0 -16 0 4-4cyli.dat

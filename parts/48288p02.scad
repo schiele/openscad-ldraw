@@ -1,42 +1,43 @@
 use <../lib.scad>
 use <../p/48/1-4chrd.scad>
 use <../p/48/1-4ndis.scad>
-use <../p/48/1-4rin10.scad>
-use <../p/48/1-4rin29.scad>
+use <../p/48/1-4ring10.scad>
+use <../p/48/1-4ring29.scad>
 use <s/48288s01.scad>
 function ldraw_lib__48288p02() = [
 // 0 Tile  8 x 16 with Blue Semicircle and Red Dashes Pattern
 // 0 Name: 48288p02.dat
 // 0 Author: Andy Westrate [westrate]
-// 0 !LDRAW_ORG Part UPDATE 2009-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Center Ice, Center Line, Face Off, Hockey, Neutral Zone, NHL
+// 0 !KEYWORDS Center Ice, Center Line, Face Off, Hockey, NHL, Neutral Zone
 // 
 // 0 !HISTORY 2009-05-02 [PTadmin] Official Update 2009-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\48288s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__48288s01()],
 // 
 // 1 16 0 0 -80 58 0 0 0 1 0 0 0 58 48\1-4chrd.dat
   [1,16,0,0,-80,58,0,0,0,1,0,0,0,58, ldraw_lib__48__1_4chrd()],
-// 1 1 0 0 -80 2 0 0 0 1 0 0 0 2 48\1-4rin29.dat
-  [1,1,0,0,-80,2,0,0,0,1,0,0,0,2, ldraw_lib__48__1_4rin29()],
-// 1 1 0 0 -80 6 0 0 0 1 0 0 0 6 48\1-4rin10.dat
-  [1,1,0,0,-80,6,0,0,0,1,0,0,0,6, ldraw_lib__48__1_4rin10()],
+// 1 1 0 0 -80 2 0 0 0 1 0 0 0 2 48\1-4ring29.dat
+  [1,1,0,0,-80,2,0,0,0,1,0,0,0,2, ldraw_lib__48__1_4ring29()],
+// 1 1 0 0 -80 6 0 0 0 1 0 0 0 6 48\1-4ring10.dat
+  [1,1,0,0,-80,6,0,0,0,1,0,0,0,6, ldraw_lib__48__1_4ring10()],
 // 1 16 0 0 -80 66 0 0 0 1 0 0 0 66 48\1-4ndis.dat
   [1,16,0,0,-80,66,0,0,0,1,0,0,0,66, ldraw_lib__48__1_4ndis()],
 // 1 16 0 0 -80 -58 0 0 0 1 0 0 0 58 48\1-4chrd.dat
   [1,16,0,0,-80,-58,0,0,0,1,0,0,0,58, ldraw_lib__48__1_4chrd()],
-// 1 1 0 0 -80 -2 0 0 0 1 0 0 0 2 48\1-4rin29.dat
-  [1,1,0,0,-80,-2,0,0,0,1,0,0,0,2, ldraw_lib__48__1_4rin29()],
-// 1 1 0 0 -80 -6 0 0 0 1 0 0 0 6 48\1-4rin10.dat
-  [1,1,0,0,-80,-6,0,0,0,1,0,0,0,6, ldraw_lib__48__1_4rin10()],
+// 1 1 0 0 -80 -2 0 0 0 1 0 0 0 2 48\1-4ring29.dat
+  [1,1,0,0,-80,-2,0,0,0,1,0,0,0,2, ldraw_lib__48__1_4ring29()],
+// 1 1 0 0 -80 -6 0 0 0 1 0 0 0 6 48\1-4ring10.dat
+  [1,1,0,0,-80,-6,0,0,0,1,0,0,0,6, ldraw_lib__48__1_4ring10()],
 // 1 16 0 0 -80 -66 0 0 0 1 0 0 0 66 48\1-4ndis.dat
   [1,16,0,0,-80,-66,0,0,0,1,0,0,0,66, ldraw_lib__48__1_4ndis()],
 // 

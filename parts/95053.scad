@@ -6,14 +6,14 @@ use <../p/4-4cylc.scad>
 use <../p/4-4cylo.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4edge.scad>
-use <../p/4-4rin26.scad>
+use <../p/4-4ring26.scad>
 use <../p/4-4ring3.scad>
 use <s/95053s01.scad>
 function ldraw_lib__95053() = [
 // 0 Minifig Sword Small with Angular Guard
 // 0 Name: 95053.dat
 // 0 Author: Christian Neumann [Wesley]
-// 0 !LDRAW_ORG Part UPDATE 2014-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -26,7 +26,8 @@ function ldraw_lib__95053() = [
 // 0 !HISTORY 2014-02-10 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2014-02-10 [Wesley] File preparation for LDraw Parts Tracker
 // 0 !HISTORY 2014-06-21 [PTadmin] Official Update 2014-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\95053s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__95053s01()],
@@ -87,8 +88,8 @@ function ldraw_lib__95053() = [
   [1,16,4.25,-10,0,0,-8.5,0,-4.5,0,0,0,0,4.5, ldraw_lib__4_4cylc()],
 // 1 16 -4.25 -10 0 0 1 0 3.25 0 0 0 0 3.25 4-4edge.dat
   [1,16,-4.25,-10,0,0,1,0,3.25,0,0,0,0,3.25, ldraw_lib__4_4edge()],
-// 1 16 -4.25 -10 0 0 1 0 0.125 0 0 0 0 0.125 4-4rin26.dat
-  [1,16,-4.25,-10,0,0,1,0,0.125,0,0,0,0,0.125, ldraw_lib__4_4rin26()],
+// 1 16 -4.25 -10 0 0 1 0 0.125 0 0 0 0 0.125 4-4ring26.dat
+  [1,16,-4.25,-10,0,0,1,0,0.125,0,0,0,0,0.125, ldraw_lib__4_4ring26()],
 // 1 16 -4.25 -10 0 0 1 0 1.125 0 0 0 0 1.125 4-4ring3.dat
   [1,16,-4.25,-10,0,0,1,0,1.125,0,0,0,0,1.125, ldraw_lib__4_4ring3()],
 // 1 16 -3.5 -10 0 0 1 0 -2.5 0 0 0 0 2.5 4-4disc.dat

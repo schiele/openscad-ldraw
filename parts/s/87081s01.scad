@@ -12,7 +12,7 @@ use <../../p/2-4edge.scad>
 use <../../p/48/1-12cyli.scad>
 use <../../p/48/1-12edge.scad>
 use <../../p/48/1-48edge.scad>
-use <../../p/48/1-48rin9.scad>
+use <../../p/48/1-48ring9.scad>
 use <../../p/48/1-8cyli.scad>
 use <../../p/48/1-8edge.scad>
 use <../../p/48/1-8ring1.scad>
@@ -29,7 +29,7 @@ function ldraw_lib__s__87081s01() = [
 // 0 ~Brick  4 x  4 Round - 1/8
 // 0 Name: s\87081s01.dat
 // 0 Author: Magnus Forsberg [MagFors]
-// 0 !LDRAW_ORG Subpart UPDATE 2011-02
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -37,7 +37,8 @@ function ldraw_lib__s__87081s01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // outside
 // 1 16 0 0 0 7 0 0 0 1 0 0 0 7 1-8edge.dat
@@ -140,8 +141,8 @@ function ldraw_lib__s__87081s01() = [
   [2,24,31.733,20,24.349,32.174,20,23.689],
 // 1 16 0 24 0 40 0 0 0 1 0 0 0 40 48\1-12edge.dat
   [1,16,0,24,0,40,0,0,0,1,0,0,0,40, ldraw_lib__48__1_12edge()],
-// 1 16 0 20 0 2.8284 0 2.8284 0 -1 0 2.8284 0 -2.8284 48\1-48rin9.dat
-  [1,16,0,20,0,2.8284,0,2.8284,0,-1,0,2.8284,0,-2.8284, ldraw_lib__48__1_48rin9()],
+// 1 16 0 20 0 2.8284 0 2.8284 0 -1 0 2.8284 0 -2.8284 48\1-48ring9.dat
+  [1,16,0,20,0,2.8284,0,2.8284,0,-1,0,2.8284,0,-2.8284, ldraw_lib__48__1_48ring9()],
 // 4 16 28.56 20 21.915 31.733 20 24.349 32.174 20 23.689 29.298 20 20.811
   [4,16,28.56,20,21.915,31.733,20,24.349,32.174,20,23.689,29.298,20,20.811],
 // 1 16 33.407 22 21.843 0 -14.764 -1.233 2 0 0 0 -9.864 1.8455 rect2a.dat

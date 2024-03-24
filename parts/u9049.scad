@@ -5,15 +5,15 @@ use <../p/48/4-4con41.scad>
 use <../p/48/4-4cyli.scad>
 use <../p/48/4-4disc.scad>
 use <../p/48/4-4edge.scad>
-use <../p/48/4-4rin10.scad>
 use <../p/48/4-4ring1.scad>
+use <../p/48/4-4ring10.scad>
 use <../p/box.scad>
 use <../p/stud.scad>
 function ldraw_lib__u9049() = [
 // 0 ~Wheel  8 x 35 with 12 Spokes
 // 0 Name: u9049.dat
 // 0 Author: James Jessiman
-// 0 !LDRAW_ORG Part UPDATE 2012-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CW
@@ -25,7 +25,8 @@ function ldraw_lib__u9049() = [
 // 0 !HISTORY 2008-10-16 [mkennedy] Used high res rings and cones, BFC
 // 0 !HISTORY 2012-02-09 [PTadmin] Renamed from 35a
 // 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Nomenclature: width_(mm) x rim_diameter_(mm) [optional qualifier]
 // 
@@ -114,10 +115,10 @@ function ldraw_lib__u9049() = [
   [1,16,0,0,7,44,0,0,0,0,44,0,3,0, ldraw_lib__48__4_4cyli()],
 // 1 16 0 0 -10 44 0 0 0 0 44 0 3 0 48\4-4cyli.dat
   [1,16,0,0,-10,44,0,0,0,0,44,0,3,0, ldraw_lib__48__4_4cyli()],
-// 1 16 0 0 10 4 0 0 0 0 4 0 -1 0 48\4-4rin10.dat
-  [1,16,0,0,10,4,0,0,0,0,4,0,-1,0, ldraw_lib__48__4_4rin10()],
-// 1 16 0 0 -10 4 0 0 0 0 4 0 1 0 48\4-4rin10.dat
-  [1,16,0,0,-10,4,0,0,0,0,4,0,1,0, ldraw_lib__48__4_4rin10()],
+// 1 16 0 0 10 4 0 0 0 0 4 0 -1 0 48\4-4ring10.dat
+  [1,16,0,0,10,4,0,0,0,0,4,0,-1,0, ldraw_lib__48__4_4ring10()],
+// 1 16 0 0 -10 4 0 0 0 0 4 0 1 0 48\4-4ring10.dat
+  [1,16,0,0,-10,4,0,0,0,0,4,0,1,0, ldraw_lib__48__4_4ring10()],
 // 1 16 0 0 -6.333 1 0 0 0 0 1 0 0.333 0 48\4-4con41.dat
   [1,16,0,0,-6.333,1,0,0,0,0,1,0,0.333,0, ldraw_lib__48__4_4con41()],
 // 1 16 0 0 6.333 1 0 0 0 0 1 0 -0.333 0 48\4-4con41.dat

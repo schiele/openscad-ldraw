@@ -4,8 +4,8 @@ use <../../p/1-16edge.scad>
 use <../../p/1-4cyli.scad>
 use <../../p/1-4edge.scad>
 use <../../p/1-4ndis.scad>
-use <../../p/1-4rin12.scad>
 use <../../p/1-4ring1.scad>
+use <../../p/1-4ring12.scad>
 use <../../p/1-4ring5.scad>
 use <../../p/1-4ring6.scad>
 use <../../p/1-8cyli.scad>
@@ -32,7 +32,7 @@ function ldraw_lib__s__4750s1() = [
 // 0 ~Brick Round 13.667 x 13.667 Fabuland Hollowed - 1/8 Section
 // 0 Name: s\4750s1.dat
 // 0 Author: Svend Eisenhardt [eisenhardt]
-// 0 !LDRAW_ORG Subpart UPDATE 2011-01
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -42,7 +42,8 @@ function ldraw_lib__s__4750s1() = [
 // 0 !HISTORY 2010-04-25 [Steffen] moved studs to parent part, removed duplicate line, fixed bad vertex sequence
 // 0 !HISTORY 2011-02-22 [Philo] BFCed with Windz, closed gaps, added missing lines & condlines
 // 0 !HISTORY 2011-07-25 [PTadmin] Official Update 2011-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // outside ring
 // 1 16 0 4 0 135 0 0 0 12 0 0 0 135 48\1-8cyli.dat
@@ -283,8 +284,8 @@ function ldraw_lib__s__4750s1() = [
   [1,16,94,16,42.5,0,0,0.5,0,1,0,-0.5,0,0, ldraw_lib__1_4ring5()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
-// 1 16 94 16 42.5 0 0 0.5 0 1 0 -0.5 0 0 1-4rin12.dat
-  [1,16,94,16,42.5,0,0,0.5,0,1,0,-0.5,0,0, ldraw_lib__1_4rin12()],
+// 1 16 94 16 42.5 0 0 0.5 0 1 0 -0.5 0 0 1-4ring12.dat
+  [1,16,94,16,42.5,0,0,0.5,0,1,0,-0.5,0,0, ldraw_lib__1_4ring12()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 94 16 42.5 0 0 3 0 1 0 -3 0 0 1-4ring1.dat

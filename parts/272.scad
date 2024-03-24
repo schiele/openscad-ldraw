@@ -9,9 +9,9 @@ use <../p/48/4-4con2.scad>
 use <../p/48/4-4cylo.scad>
 use <../p/48/4-4disc.scad>
 use <../p/48/4-4edge.scad>
-use <../p/48/4-4rin11.scad>
-use <../p/48/4-4rin12.scad>
-use <../p/48/4-4rin18.scad>
+use <../p/48/4-4ring11.scad>
+use <../p/48/4-4ring12.scad>
+use <../p/48/4-4ring18.scad>
 use <../p/rect.scad>
 use <../p/rect1.scad>
 use <../p/rect2p.scad>
@@ -20,7 +20,7 @@ function ldraw_lib__272() = [
 // 0 Cone  4 x  4 x  3
 // 0 Name: 272.dat
 // 0 Author: Niels Karsdorp [nielsk]
-// 0 !LDRAW_ORG Part UPDATE 2015-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -32,7 +32,8 @@ function ldraw_lib__272() = [
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
 // 0 !HISTORY 2015-09-12 [MagFors] Made outer bottom wall thinner
 // 0 !HISTORY 2015-10-11 [PTadmin] Official Update 2015-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Edges
 // 1 16 0 0 0 10 0 0 0 1 0 0 0 10 48\4-4edge.dat
@@ -331,8 +332,8 @@ function ldraw_lib__272() = [
 // 5 24 18.8492 72 -32.6486 18.8492 66.5 -32.6486 22.0342 66.5 -30.5195 14.428 72 -34.8323
   [5,24,18.8492,72,-32.6486,18.8492,66.5,-32.6486,22.0342,66.5,-30.5195,14.428,72,-34.8323],
 // 0 // Inner step
-// 1 16 0 66.5 0 2 0 0 0 -1 0 0 0 2 48\4-4rin18.dat
-  [1,16,0,66.5,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__48__4_4rin18()],
+// 1 16 0 66.5 0 2 0 0 0 -1 0 0 0 2 48\4-4ring18.dat
+  [1,16,0,66.5,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__48__4_4ring18()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 66.5 0 36 0 0 0 -2.5 0 0 0 36 48\4-4cylo.dat
@@ -366,10 +367,10 @@ function ldraw_lib__272() = [
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 72 0 22 0 0 0 -38 0 0 0 22 48\4-4cylo.dat
   [1,16,0,72,0,22,0,0,0,-38,0,0,0,22, ldraw_lib__48__4_4cylo()],
-// 1 16 0 72 0 2 0 0 0 -1 0 0 0 2 48\4-4rin11.dat
-  [1,16,0,72,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__48__4_4rin11()],
-// 1 16 0 72 0 2 0 0 0 -1 0 0 0 2 48\4-4rin12.dat
-  [1,16,0,72,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__48__4_4rin12()],
+// 1 16 0 72 0 2 0 0 0 -1 0 0 0 2 48\4-4ring11.dat
+  [1,16,0,72,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__48__4_4ring11()],
+// 1 16 0 72 0 2 0 0 0 -1 0 0 0 2 48\4-4ring12.dat
+  [1,16,0,72,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__48__4_4ring12()],
 // 1 16 0 72 0 26 0 0 0 -29.429 0 0 0 26 48\4-4cylo.dat
   [1,16,0,72,0,26,0,0,0,-29.429,0,0,0,26, ldraw_lib__48__4_4cylo()],
 // 0 // Inner tube small details

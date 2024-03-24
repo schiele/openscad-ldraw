@@ -9,14 +9,14 @@ use <../../p/1-8edge.scad>
 use <../../p/3-16chrd.scad>
 use <../../p/3-16cylo.scad>
 use <../../p/3-16ndis.scad>
-use <../../p/3-16rin5.scad>
+use <../../p/3-16ring5.scad>
 use <../../p/rect.scad>
 use <../../p/rect2p.scad>
 function ldraw_lib__s__35962s02() = [
 // 0 ~Duplo Train Action Brick Quarter
 // 0 Name: s\35962s02.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Subpart UPDATE 2020-01
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -24,7 +24,8 @@ function ldraw_lib__s__35962s02() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2020-06-28 [PTadmin] Official Update 2020-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 5.1 -7 98.1 0 0 20 0 1 0 20 0 0 3-16chrd.dat
   [1,16,5.1,-7,98.1,0,0,20,0,1,0,20,0,0, ldraw_lib__3_16chrd()],
@@ -42,8 +43,8 @@ function ldraw_lib__s__35962s02() = [
   [0,"BFC","INVERTNEXT"],
 // 1 16 19.9 13 57.1 0 0 6.66667 0 -17 0 -6.66667 0 0 1-4cylo.dat
   [1,16,19.9,13,57.1,0,0,6.66667,0,-17,0,-6.66667,0,0, ldraw_lib__1_4cylo()],
-// 1 16 5.1 13 98.1 0 0 3.33333 0 -1 0 3.33333 0 0 3-16rin5.dat
-  [1,16,5.1,13,98.1,0,0,3.33333,0,-1,0,3.33333,0,0, ldraw_lib__3_16rin5()],
+// 1 16 5.1 13 98.1 0 0 3.33333 0 -1 0 3.33333 0 0 3-16ring5.dat
+  [1,16,5.1,13,98.1,0,0,3.33333,0,-1,0,3.33333,0,0, ldraw_lib__3_16ring5()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 5.1 13 98.1 0 0 16.66667 0 -17 0 16.66667 0 0 3-16cylo.dat

@@ -1,7 +1,7 @@
 use <../lib.scad>
 use <../p/1-4cyli.scad>
 use <../p/1-4ndis.scad>
-use <../p/1-4rin10.scad>
+use <../p/1-4ring10.scad>
 use <../p/1-4ring5.scad>
 use <../p/1-4ring9.scad>
 use <../p/2-4disc.scad>
@@ -12,7 +12,7 @@ function ldraw_lib__973p2d() = [
 // 0 Minifig Torso with Windsurfboard Pattern
 // 0 Name: 973p2d.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2009-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -20,7 +20,8 @@ function ldraw_lib__973p2d() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2009-09-03 [PTadmin] Official Update 2009-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],
@@ -61,8 +62,8 @@ function ldraw_lib__973p2d() = [
   [4,1,0,8.08,-10,0,9.1,-10,3.8,9.9,-10,4.7,9,-10],
 // 4 1 10.3659 15.0063 -10 9.4236 15.3966 -10 10.2 19.3 -10 11.22 19.3 -10
   [4,1,10.3659,15.0063,-10,9.4236,15.3966,-10,10.2,19.3,-10,11.22,19.3,-10],
-// 1 1 0 19.3 -10 0 0 -1.02 -1.02 0 0 0 1.02 0 1-4rin10.dat
-  [1,1,0,19.3,-10,0,0,-1.02,-1.02,0,0,0,1.02,0, ldraw_lib__1_4rin10()],
+// 1 1 0 19.3 -10 0 0 -1.02 -1.02 0 0 0 1.02 0 1-4ring10.dat
+  [1,1,0,19.3,-10,0,0,-1.02,-1.02,0,0,0,1.02,0, ldraw_lib__1_4ring10()],
 // 4 14 3.8 9.9 -10 0 9.1 -10 0 10.12 -10 2.9 10.8 -10
   [4,14,3.8,9.9,-10,0,9.1,-10,0,10.12,-10,2.9,10.8,-10],
 // 4 25 2.9 10.8 -10 0 10.12 -10 0 11.65 -10 1.7 12.1 -10

@@ -3,8 +3,8 @@ use <../../p/4-4cylo.scad>
 use <../../p/4-4disc.scad>
 use <../../p/4-4edge.scad>
 use <../../p/4-4ndis.scad>
-use <../../p/4-4rin24.scad>
 use <../../p/4-4ring1.scad>
+use <../../p/4-4ring24.scad>
 use <../../p/4-4ring3.scad>
 use <../../p/4-4ring7.scad>
 use <../../p/connect.scad>
@@ -16,7 +16,7 @@ function ldraw_lib__s__43746s01() = [
 // 0 ~Animal Serpent Basilisk Head - Without patternable area
 // 0 Name: s\43746s01.dat
 // 0 Author: Willy Tschager [Holly-Wood]
-// 0 !LDRAW_ORG Subpart UPDATE 2022-04
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -24,7 +24,8 @@ function ldraw_lib__s__43746s01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 33 76 1 0 0 0 0 1 0 -1 0 connect.dat
   [1,16,0,33,76,1,0,0,0,0,1,0,-1,0, ldraw_lib__connect()],
@@ -60,8 +61,8 @@ function ldraw_lib__s__43746s01() = [
   [1,16,0,0,25,3.75,0,0,0,1.7,0,0,0,3.75, ldraw_lib__4_4cylo()],
 // 1 16 0 0 25 1.8 0 0 0 1 0 0 0 1.8 4-4ring1.dat
   [1,16,0,0,25,1.8,0,0,0,1,0,0,0,1.8, ldraw_lib__4_4ring1()],
-// 1 16 0 0 25 .15 0 0 0 1 0 0 0 .15 4-4rin24.dat
-  [1,16,0,0,25,.15,0,0,0,1,0,0,0,.15, ldraw_lib__4_4rin24()],
+// 1 16 0 0 25 .15 0 0 0 1 0 0 0 .15 4-4ring24.dat
+  [1,16,0,0,25,.15,0,0,0,1,0,0,0,.15, ldraw_lib__4_4ring24()],
 // 1 16 0 1.2 25 3.75 0 0 0 1 .5 0 0 3.75 4-4ndis.dat
   [1,16,0,1.2,25,3.75,0,0,0,1,.5,0,0,3.75, ldraw_lib__4_4ndis()],
 // 1 16 0 1.2 25 3.75 0 0 0 1 .5 0 0 3.75 4-4edge.dat
@@ -78,8 +79,8 @@ function ldraw_lib__s__43746s01() = [
   [1,16,0,1.5,35,3.75,0,0,0,3.1,0,0,0,3.75, ldraw_lib__4_4cylo()],
 // 1 16 0 1.5 35 1.8 0 0 0 1 0 0 0 1.8 4-4ring1.dat
   [1,16,0,1.5,35,1.8,0,0,0,1,0,0,0,1.8, ldraw_lib__4_4ring1()],
-// 1 16 0 1.5 35 .15 0 0 0 1 0 0 0 .15 4-4rin24.dat
-  [1,16,0,1.5,35,.15,0,0,0,1,0,0,0,.15, ldraw_lib__4_4rin24()],
+// 1 16 0 1.5 35 .15 0 0 0 1 0 0 0 .15 4-4ring24.dat
+  [1,16,0,1.5,35,.15,0,0,0,1,0,0,0,.15, ldraw_lib__4_4ring24()],
 // 1 16 0 3.2 35 3.75 0 0 0 1 1.4 0 0 3.75 4-4ndis.dat
   [1,16,0,3.2,35,3.75,0,0,0,1,1.4,0,0,3.75, ldraw_lib__4_4ndis()],
 // 1 16 0 3.2 35 3.75 0 0 0 1 1.4 0 0 3.75 4-4edge.dat
@@ -96,8 +97,8 @@ function ldraw_lib__s__43746s01() = [
   [1,16,0,5,45,3.75,0,0,0,3.6,0,0,0,3.75, ldraw_lib__4_4cylo()],
 // 1 16 0 5 45 1.8 0 0 0 1 0 0 0 1.8 4-4ring1.dat
   [1,16,0,5,45,1.8,0,0,0,1,0,0,0,1.8, ldraw_lib__4_4ring1()],
-// 1 16 0 5 45 .15 0 0 0 1 0 0 0 .15 4-4rin24.dat
-  [1,16,0,5,45,.15,0,0,0,1,0,0,0,.15, ldraw_lib__4_4rin24()],
+// 1 16 0 5 45 .15 0 0 0 1 0 0 0 .15 4-4ring24.dat
+  [1,16,0,5,45,.15,0,0,0,1,0,0,0,.15, ldraw_lib__4_4ring24()],
 // 1 16 0 7.1 45 3.75 0 0 0 1 1.5 0 0 3.75 4-4ndis.dat
   [1,16,0,7.1,45,3.75,0,0,0,1,1.5,0,0,3.75, ldraw_lib__4_4ndis()],
 // 1 16 0 7.1 45 3.75 0 0 0 1 1.5 0 0 3.75 4-4edge.dat

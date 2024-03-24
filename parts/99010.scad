@@ -8,7 +8,7 @@ use <../p/2-4cylo.scad>
 use <../p/2-4edge.scad>
 use <../p/2-4ring2.scad>
 use <../p/2-4ring3.scad>
-use <../p/3-16rin8.scad>
+use <../p/3-16ring8.scad>
 use <../p/3-4ring8.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4edge.scad>
@@ -33,7 +33,7 @@ function ldraw_lib__99010() = [
 // 0 Technic Turntable 28 Tooth Top
 // 0 Name: 99010.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2013-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -41,7 +41,8 @@ function ldraw_lib__99010() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2013-07-21 [PTadmin] Official Update 2013-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 20 -20 -10 0 0 -1 -1 0 0 0 1 0 peghole.dat
   [1,16,20,-20,-10,0,0,-1,-1,0,0,0,1,0, ldraw_lib__peghole()],
@@ -613,8 +614,8 @@ function ldraw_lib__99010() = [
   [3,16,22.644,-10,10,22.243,-10,10.969,11,-10,10],
 // 2 24 11 -10 10 22.644 -10 10
   [2,24,11,-10,10,22.644,-10,10],
-// 1 16 20 -20 10 0 0 1 1 0 0 0 -1 0 3-16rin8.dat
-  [1,16,20,-20,10,0,0,1,1,0,0,0,-1,0, ldraw_lib__3_16rin8()],
+// 1 16 20 -20 10 0 0 1 1 0 0 0 -1 0 3-16ring8.dat
+  [1,16,20,-20,10,0,0,1,1,0,0,0,-1,0, ldraw_lib__3_16ring8()],
 // 1 16 20 -20 10 0 0 -1 1 0 0 0 -1 0 1-4ring8.dat
   [1,16,20,-20,10,0,0,-1,1,0,0,0,-1,0, ldraw_lib__1_4ring8()],
 // 4 16 23.444 -11.685 10 22.644 -10 10 20 -10 10 20 -11 10
@@ -757,8 +758,8 @@ function ldraw_lib__99010() = [
   [3,16,-11,-10,10,-22.243,-10,10.969,-22.644,-10,10],
 // 2 24 -11 -10 10 -22.644 -10 10
   [2,24,-11,-10,10,-22.644,-10,10],
-// 1 16 -20 -20 10 0 0 -1 1 0 0 0 -1 0 3-16rin8.dat
-  [1,16,-20,-20,10,0,0,-1,1,0,0,0,-1,0, ldraw_lib__3_16rin8()],
+// 1 16 -20 -20 10 0 0 -1 1 0 0 0 -1 0 3-16ring8.dat
+  [1,16,-20,-20,10,0,0,-1,1,0,0,0,-1,0, ldraw_lib__3_16ring8()],
 // 1 16 -20 -20 10 0 0 1 1 0 0 0 -1 0 1-4ring8.dat
   [1,16,-20,-20,10,0,0,1,1,0,0,0,-1,0, ldraw_lib__1_4ring8()],
 // 4 16 -20 -11 10 -20 -10 10 -22.644 -10 10 -23.444 -11.685 10

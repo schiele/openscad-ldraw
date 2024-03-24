@@ -8,9 +8,9 @@ use <../p/48/4-4con41.scad>
 use <../p/48/4-4cyli.scad>
 use <../p/48/4-4disc.scad>
 use <../p/48/4-4edge.scad>
-use <../p/48/4-4rin10.scad>
-use <../p/48/4-4rin19.scad>
-use <../p/48/4-4rin37.scad>
+use <../p/48/4-4ring10.scad>
+use <../p/48/4-4ring19.scad>
+use <../p/48/4-4ring37.scad>
 use <../p/48/4-4ring9.scad>
 use <../p/rect1.scad>
 use <../p/stug-1x2.scad>
@@ -19,7 +19,7 @@ function ldraw_lib__u9237() = [
 // 0 ~Wheel Rim  8 x 35 with 12 Studs
 // 0 Name: u9237.dat
 // 0 Author: Steffen [Steffen]
-// 0 !LDRAW_ORG Part UPDATE 2013-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -32,7 +32,8 @@ function ldraw_lib__u9237() = [
 // 
 // 0 !HISTORY 2012-04-30 [Steffen] factored out from 715.dat
 // 0 !HISTORY 2013-07-21 [PTadmin] Official Update 2013-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Nomenclature: width_(mm) x rim_diameter_(mm) [optional qualifier]
 // 
@@ -66,10 +67,10 @@ function ldraw_lib__u9237() = [
   [1,16,0,0,8,0,0,-2,2,0,0,0,-0.667,0, ldraw_lib__48__4_4con21()],
 // 1 16 0 0 -7 37 0 0 0 0 37 0 -1 0 48\4-4disc.dat
   [1,16,0,0,-7,37,0,0,0,0,37,0,-1,0, ldraw_lib__48__4_4disc()],
-// 1 16 0 0 10 1 0 0 0 0 1 0 -1 0 48\4-4rin37.dat
-  [1,16,0,0,10,1,0,0,0,0,1,0,-1,0, ldraw_lib__48__4_4rin37()],
-// 1 16 0 0 10 2 0 0 0 0 2 0 -1 0 48\4-4rin19.dat
-  [1,16,0,0,10,2,0,0,0,0,2,0,-1,0, ldraw_lib__48__4_4rin19()],
+// 1 16 0 0 10 1 0 0 0 0 1 0 -1 0 48\4-4ring37.dat
+  [1,16,0,0,10,1,0,0,0,0,1,0,-1,0, ldraw_lib__48__4_4ring37()],
+// 1 16 0 0 10 2 0 0 0 0 2 0 -1 0 48\4-4ring19.dat
+  [1,16,0,0,10,2,0,0,0,0,2,0,-1,0, ldraw_lib__48__4_4ring19()],
 // 1 16 0 0 -7 37 0 0 0 0 37 0 -1 0 48\4-4edge.dat
   [1,16,0,0,-7,37,0,0,0,0,37,0,-1,0, ldraw_lib__48__4_4edge()],
 // 1 16 0 0 10 37 0 0 0 0 37 0 -1 0 48\4-4edge.dat
@@ -78,8 +79,8 @@ function ldraw_lib__u9237() = [
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 -7 37 0 0 0 0 37 0 17 0 48\4-4cyli.dat
   [1,16,0,0,-7,37,0,0,0,0,37,0,17,0, ldraw_lib__48__4_4cyli()],
-// 1 16 0 0 10 4 0 0 0 0 4 0 -1 0 48\4-4rin10.dat
-  [1,16,0,0,10,4,0,0,0,0,4,0,-1,0, ldraw_lib__48__4_4rin10()],
+// 1 16 0 0 10 4 0 0 0 0 4 0 -1 0 48\4-4ring10.dat
+  [1,16,0,0,10,4,0,0,0,0,4,0,-1,0, ldraw_lib__48__4_4ring10()],
 // 1 16 0 0 10 3 0 0 0 0 3 0 -1 0 48\4-4ring9.dat
   [1,16,0,0,10,3,0,0,0,0,3,0,-1,0, ldraw_lib__48__4_4ring9()],
 // 1 16 0 0 -7 8 0 0 0 0 8 0 19 0 4-4cyli.dat

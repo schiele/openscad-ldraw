@@ -1,9 +1,9 @@
 use <../lib.scad>
 function ldraw_lib__4_4rin34() = [
-// 0 Ring 34 x 1.0
+// 0 ~Ring 34 x 1.0 (Obsolete)
 // 0 Name: 4-4rin34.dat
 // 0 Author: Michael Heidemann [mikeheide]
-// 0 !LDRAW_ORG Primitive UPDATE 2010-01
+// 0 !LDRAW_ORG Primitive UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -11,7 +11,8 @@ function ldraw_lib__4_4rin34() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2010-04-05 [PTadmin] Official Update 2010-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Obsolete, use 4-4ring34.dat
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 4 16 34 0 0 35 0 0 32.3365 0 13.3945 31.4126 0 13.0118
   [4,16,34,0,0,35,0,0,32.3365,0,13.3945,31.4126,0,13.0118],

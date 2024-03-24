@@ -5,14 +5,14 @@ use <../../p/1-4ndis.scad>
 use <../../p/2-4ering.scad>
 use <../../p/2-4ndis.scad>
 use <../../p/3-16cylo.scad>
-use <../../p/3-16rin2.scad>
+use <../../p/3-16ring2.scad>
 use <../../p/rect.scad>
 use <../../p/rect2p.scad>
 function ldraw_lib__s__6641s01() = [
 // 0 ~Technic Transmission Changeover Catch Half
 // 0 Name: s\6641s01.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Subpart UPDATE 2022-02
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -21,12 +21,13 @@ function ldraw_lib__s__6641s01() = [
 // 
 // 0 !HISTORY 2020-11-03 [Philo] Subparted from Marc Klein original design
 // 0 !HISTORY 2022-03-06 [PTadmin] Official Update 2022-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 10 0 -20 0 -20 0 -9 0 0 0 0 -9 3-16cylo.dat
   [1,16,10,0,-20,0,-20,0,-9,0,0,0,0,-9, ldraw_lib__3_16cylo()],
-// 1 16 10 0 -20 0 -1 0 -3 0 0 0 0 -3 3-16rin2.dat
-  [1,16,10,0,-20,0,-1,0,-3,0,0,0,0,-3, ldraw_lib__3_16rin2()],
+// 1 16 10 0 -20 0 -1 0 -3 0 0 0 0 -3 3-16ring2.dat
+  [1,16,10,0,-20,0,-1,0,-3,0,0,0,0,-3, ldraw_lib__3_16ring2()],
 // 1 16 10 0 -42 0 -20 0 -2 0 -3.46 3.46 0 -2 1-4cylo.dat
   [1,16,10,0,-42,0,-20,0,-2,0,-3.46,3.46,0,-2, ldraw_lib__1_4cylo()],
 // 5 24 -10 -9 -20 10 -9 -20 -10 -9 -16.2722 -10 -8.3151 -23.4443
@@ -73,8 +74,8 @@ function ldraw_lib__s__6641s01() = [
   [4,16,10,-2,-28.603,10,-2,-38.54,10,2,-38.54,10,2,-28.603],
 // 4 16 10 -2.2962 -25.5434 10 -3.4443 -28.3151 10 -2 -28.603 10 0 -26
   [4,16,10,-2.2962,-25.5434,10,-3.4443,-28.3151,10,-2,-28.603,10,0,-26],
-// 1 16 -10 0 -20 0 1 0 -3 0 0 0 0 -3 3-16rin2.dat
-  [1,16,-10,0,-20,0,1,0,-3,0,0,0,0,-3, ldraw_lib__3_16rin2()],
+// 1 16 -10 0 -20 0 1 0 -3 0 0 0 0 -3 3-16ring2.dat
+  [1,16,-10,0,-20,0,1,0,-3,0,0,0,0,-3, ldraw_lib__3_16ring2()],
 // 4 16 -10 -2 -28.603 -10 -3.4443 -28.3151 -10 -2.2962 -25.5434 -10 0 -26
   [4,16,-10,-2,-28.603,-10,-3.4443,-28.3151,-10,-2.2962,-25.5434,-10,0,-26],
 // 3 16 10 0 -26 10 -2 -28.603 10 2 -28.603

@@ -6,7 +6,7 @@ use <../../p/1-8edge.scad>
 use <../../p/2-4cyli.scad>
 use <../../p/2-4edge.scad>
 use <../../p/2-4ring2.scad>
-use <../../p/3-16rin2.scad>
+use <../../p/3-16ring2.scad>
 use <../../p/3-8chrd.scad>
 use <../../p/3-8cyli.scad>
 use <../../p/3-8edge.scad>
@@ -25,7 +25,7 @@ function ldraw_lib__s__85489s01() = [
 // 0 ~Train Wheel Large Central Axle and Pinhole
 // 0 Name: s\85489s01.dat
 // 0 Author: Donald Sutter [technog]
-// 0 !LDRAW_ORG Subpart UPDATE 2011-01
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -33,16 +33,17 @@ function ldraw_lib__s__85489s01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2011-07-25 [PTadmin] Official Update 2011-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 -0.001 -0.001 -10 1 0 0 0 0 -1 0 20 0 axlehol4.dat
   [1,16,-0.001,-0.001,-10,1,0,0,0,0,-1,0,20,0, ldraw_lib__axlehol4()],
 // 1 16 0 0 10 3 0 0 0 0 3 0 -1 0 2-4ring2.dat
   [1,16,0,0,10,3,0,0,0,0,3,0,-1,0, ldraw_lib__2_4ring2()],
-// 1 16 0 0 10 3 0 0 0 0 -3 0 -1 0 3-16rin2.dat
-  [1,16,0,0,10,3,0,0,0,0,-3,0,-1,0, ldraw_lib__3_16rin2()],
-// 1 16 0 0 10 -3 0 0 0 0 -3 0 -1 0 3-16rin2.dat
-  [1,16,0,0,10,-3,0,0,0,0,-3,0,-1,0, ldraw_lib__3_16rin2()],
+// 1 16 0 0 10 3 0 0 0 0 -3 0 -1 0 3-16ring2.dat
+  [1,16,0,0,10,3,0,0,0,0,-3,0,-1,0, ldraw_lib__3_16ring2()],
+// 1 16 0 0 10 -3 0 0 0 0 -3 0 -1 0 3-16ring2.dat
+  [1,16,0,0,10,-3,0,0,0,0,-3,0,-1,0, ldraw_lib__3_16ring2()],
 // 1 16 0 0 -10 3 0 0 0 0 3 0 1 0 4-4ring2.dat
   [1,16,0,0,-10,3,0,0,0,0,3,0,1,0, ldraw_lib__4_4ring2()],
 // 1 16 0 0 -10 3.444 0 8.315 -8.315 0 3.444 0 1 0 7-8cyli.dat

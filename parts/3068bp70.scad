@@ -4,13 +4,13 @@ use <../p/1-4ndis.scad>
 use <../p/1-4ring2.scad>
 use <../p/1-4ring3.scad>
 use <../p/4-4ndis.scad>
-use <../p/4-4rin13.scad>
+use <../p/4-4ring13.scad>
 use <s/3068bs01.scad>
 function ldraw_lib__3068bp70() = [
 // 0 Tile  2 x  2 with Gauges Pattern
 // 0 Name: 3068bp70.dat
 // 0 Author: J.C. Tchang [tchang]
-// 0 !LDRAW_ORG Part UPDATE 2009-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CW
@@ -18,7 +18,8 @@ function ldraw_lib__3068bp70() = [
   [0,"BFC","CW"],
 // 
 // 0 !HISTORY 2009-09-03 [PTadmin] Official Update 2009-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3068bs01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3068bs01()],
@@ -475,8 +476,8 @@ function ldraw_lib__3068bp70() = [
   [3,15,-10.9146,0,-12.6251,-11.3,0,-13.6,-11.2854,0,-12.7749],
 // 0
 // 0 Big Dial Left
-// 1 0 -8.8 0 8.2 0.6 0 0 0 1 0 0 0 0.6 4-4rin13.dat
-  [1,0,-8.8,0,8.2,0.6,0,0,0,1,0,0,0,0.6, ldraw_lib__4_4rin13()],
+// 1 0 -8.8 0 8.2 0.6 0 0 0 1 0 0 0 0.6 4-4ring13.dat
+  [1,0,-8.8,0,8.2,0.6,0,0,0,1,0,0,0,0.6, ldraw_lib__4_4ring13()],
 // 0
 // 4 0 -8.6 0 15.2 -8.8 0 15.2 -8.8 0 16 -8.6 0 15.96
   [4,0,-8.6,0,15.2,-8.8,0,15.2,-8.8,0,16,-8.6,0,15.96],
@@ -1337,8 +1338,8 @@ function ldraw_lib__3068bp70() = [
   [3,15,-2.963,0,7.7815,-2.4398,0,7.5822,-2.894,0,7.5817],
 // 0
 // 0 Big Dial Right
-// 1 0 8.8 0 8.2 0.6 0 0 0 1 0 0 0 0.6 4-4rin13.dat
-  [1,0,8.8,0,8.2,0.6,0,0,0,1,0,0,0,0.6, ldraw_lib__4_4rin13()],
+// 1 0 8.8 0 8.2 0.6 0 0 0 1 0 0 0 0.6 4-4ring13.dat
+  [1,0,8.8,0,8.2,0.6,0,0,0,1,0,0,0,0.6, ldraw_lib__4_4ring13()],
 // 0
 // 4 0 9 0 15.2 8.8 0 15.2 8.8 0 16 9 0 15.96
   [4,0,9,0,15.2,8.8,0,15.2,8.8,0,16,9,0,15.96],

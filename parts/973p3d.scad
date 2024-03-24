@@ -1,6 +1,6 @@
 use <../lib.scad>
 use <../p/1-4cyli.scad>
-use <../p/1-4rin15.scad>
+use <../p/1-4ring15.scad>
 use <../p/2-4disc.scad>
 use <../p/2-4ndis.scad>
 use <../p/2-4ring1.scad>
@@ -15,7 +15,7 @@ function ldraw_lib__973p3d() = [
 // 0 Minifig Torso with Medallion, Belt and Silver Buttons Pattern
 // 0 Name: 973p3d.dat
 // 0 Author: Andy Westrate [westrate]
-// 0 !LDRAW_ORG Part UPDATE 2012-03
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -29,7 +29,8 @@ function ldraw_lib__973p3d() = [
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
 // 0 !HISTORY 2012-04-08 [BlackBrick89] General improvements / inlined subfile
 // 0 !HISTORY 2012-12-28 [PTadmin] Official Update 2012-03
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],
@@ -141,10 +142,10 @@ function ldraw_lib__973p3d() = [
   [1,0,8.5,29.5,-10,0.5,0,0,0,0,0.5,0,1,0, ldraw_lib__4_4ndis()],
 // 1 0 0 10 -10 0.5 0 0 0 0 0.375 0 1 0 2-4ring7.dat
   [1,0,0,10,-10,0.5,0,0,0,0,0.375,0,1,0, ldraw_lib__2_4ring7()],
-// 1 0 0 10 -10 0.4 0 0 0 0 0.5 0 1 0 1-4rin15.dat
-  [1,0,0,10,-10,0.4,0,0,0,0,0.5,0,1,0, ldraw_lib__1_4rin15()],
-// 1 0 0 10 -10 -0.4 0 0 0 0 0.5 0 1 0 1-4rin15.dat
-  [1,0,0,10,-10,-0.4,0,0,0,0,0.5,0,1,0, ldraw_lib__1_4rin15()],
+// 1 0 0 10 -10 0.4 0 0 0 0 0.5 0 1 0 1-4ring15.dat
+  [1,0,0,10,-10,0.4,0,0,0,0,0.5,0,1,0, ldraw_lib__1_4ring15()],
+// 1 0 0 10 -10 -0.4 0 0 0 0 0.5 0 1 0 1-4ring15.dat
+  [1,0,0,10,-10,-0.4,0,0,0,0,0.5,0,1,0, ldraw_lib__1_4ring15()],
 // 1 16 5 10 -10 1.5 0 0 0 0 -1.5 0 1 0 2-4ndis.dat
   [1,16,5,10,-10,1.5,0,0,0,0,-1.5,0,1,0, ldraw_lib__2_4ndis()],
 // 1 0 5 10 -10 0.5 0 0 0 0 -0.5 0 1 0 2-4ring2.dat

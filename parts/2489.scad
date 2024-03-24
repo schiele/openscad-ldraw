@@ -6,9 +6,9 @@ use <../p/4-4cyli.scad>
 use <../p/4-4cylo.scad>
 use <../p/4-4edge.scad>
 use <../p/4-4ndis.scad>
-use <../p/4-4rin12.scad>
-use <../p/4-4rin13.scad>
 use <../p/4-4ring1.scad>
+use <../p/4-4ring12.scad>
+use <../p/4-4ring13.scad>
 use <../p/4-4ring4.scad>
 use <../p/4-4ring7.scad>
 use <../p/4-4ring9.scad>
@@ -22,7 +22,7 @@ function ldraw_lib__2489() = [
 // 0 Barrel  2 x  2 x  1.667
 // 0 Name: 2489.dat
 // 0 Author: James Jessiman
-// 0 !LDRAW_ORG Part UPDATE 2019-03
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -37,7 +37,8 @@ function ldraw_lib__2489() = [
 // 0 !HISTORY 2010-12-31 [PTadmin] Official Update 2010-03
 // 0 !HISTORY 2019-07-12 [GeraldLasser] Added Details, Bevels between Staves
 // 0 !HISTORY 2019-12-27 [PTadmin] Official Update 2019-03
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 36 0 1 0 0 0 -1 0 0 0 1 stud4a.dat
   [1,16,0,36,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4a()],
@@ -195,8 +196,8 @@ function ldraw_lib__2489() = [
   [1,16,0,32,0,20,0,0,0,1,0,0,0,20, ldraw_lib__4_4edge()],
 // 1 16 0 32 0 6 0 0 0 1 0 0 0 6 4-4ring1.dat
   [1,16,0,32,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4ring1()],
-// 1 16 0 32 0 1 0 0 0 1 0 0 0 1 4-4rin12.dat
-  [1,16,0,32,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4rin12()],
+// 1 16 0 32 0 1 0 0 0 1 0 0 0 1 4-4ring12.dat
+  [1,16,0,32,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4ring12()],
 // 1 16 0 32 0 13 0 0 0 1 0 0 0 13 4-4edge.dat
   [1,16,0,32,0,13,0,0,0,1,0,0,0,13, ldraw_lib__4_4edge()],
 // 
@@ -358,8 +359,8 @@ function ldraw_lib__2489() = [
   [1,16,0,-4,0,16,0,0,0,4,0,0,0,16, ldraw_lib__4_4cylo()],
 // 1 16 0 -4 0 2 0 0 0 1 0 0 0 2 4-4ring7.dat
   [1,16,0,-4,0,2,0,0,0,1,0,0,0,2, ldraw_lib__4_4ring7()],
-// 1 16 0 -4 0 1 0 0 0 1 0 0 0 1 4-4rin13.dat
-  [1,16,0,-4,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4rin13()],
+// 1 16 0 -4 0 1 0 0 0 1 0 0 0 1 4-4ring13.dat
+  [1,16,0,-4,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4ring13()],
 ];
 module ldraw_lib__2489(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
     makepoly(ldraw_lib__2489(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);

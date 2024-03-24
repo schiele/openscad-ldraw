@@ -1,16 +1,16 @@
 use <../../lib.scad>
 use <../../p/1-4chrd.scad>
 use <../../p/1-8chrd.scad>
-use <../../p/4-4rin11.scad>
-use <../../p/4-4rin15.scad>
-use <../../p/4-4rin16.scad>
+use <../../p/4-4ring11.scad>
+use <../../p/4-4ring15.scad>
+use <../../p/4-4ring16.scad>
 use <../../p/4-4ring8.scad>
 use <../../p/4-4ring9.scad>
 function ldraw_lib__s__6142617ls02() = [
 // 0 ~Sticker  0.5 x  1.8 with Fog Light and Silver Stripe on Black Background Left - Fog Light
 // 0 Name: s\6142617ls02.dat
 // 0 Author: Massimo Maso [Sirio]
-// 0 !LDRAW_ORG Subpart UPDATE 2023-04
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -20,17 +20,18 @@ function ldraw_lib__s__6142617ls02() = [
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04
 // 0 !HISTORY 2022-07-22 [Sirio] Reduced diameter of fog light; changed color of stripe
 // 0 !HISTORY 2023-08-25 [OrionP] Official Update 2023-04
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Primitives
-// 1 80 0 0 0 .2 0 0 0 1 0 0 0 .2 4-4rin16.dat
-  [1,80,0,0,0,.2,0,0,0,1,0,0,0,.2, ldraw_lib__4_4rin16()],
-// 1 80 0 0 0 .2 0 0 0 1 0 0 0 .2 4-4rin15.dat
-  [1,80,0,0,0,.2,0,0,0,1,0,0,0,.2, ldraw_lib__4_4rin15()],
+// 1 80 0 0 0 .2 0 0 0 1 0 0 0 .2 4-4ring16.dat
+  [1,80,0,0,0,.2,0,0,0,1,0,0,0,.2, ldraw_lib__4_4ring16()],
+// 1 80 0 0 0 .2 0 0 0 1 0 0 0 .2 4-4ring15.dat
+  [1,80,0,0,0,.2,0,0,0,1,0,0,0,.2, ldraw_lib__4_4ring15()],
 // 1 80 0 0 0 .3 0 0 0 1 0 0 0 .3 4-4ring9.dat
   [1,80,0,0,0,.3,0,0,0,1,0,0,0,.3, ldraw_lib__4_4ring9()],
-// 1 0 0 0 0 .225 0 0 0 1 0 0 0 .225 4-4rin11.dat
-  [1,0,0,0,0,.225,0,0,0,1,0,0,0,.225, ldraw_lib__4_4rin11()],
+// 1 0 0 0 0 .225 0 0 0 1 0 0 0 .225 4-4ring11.dat
+  [1,0,0,0,0,.225,0,0,0,1,0,0,0,.225, ldraw_lib__4_4ring11()],
 // 1 0 0 0 0 .275 0 0 0 1 0 0 0 .275 4-4ring8.dat
   [1,0,0,0,0,.275,0,0,0,1,0,0,0,.275, ldraw_lib__4_4ring8()],
 // 1 80 0 0 0 2.2 0 0 0 1 0 0 0 2.2 1-4chrd.dat

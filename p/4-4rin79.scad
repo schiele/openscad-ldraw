@@ -1,9 +1,9 @@
 use <../lib.scad>
 function ldraw_lib__4_4rin79() = [
-// 0 Ring 79 x 1.0
+// 0 ~Ring 79 x 1.0 (Obsolete)
 // 0 Name: 4-4rin79.dat
 // 0 Author: Alex Taylor [anathema]
-// 0 !LDRAW_ORG Primitive UPDATE 2009-03
+// 0 !LDRAW_ORG Primitive UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -11,7 +11,8 @@ function ldraw_lib__4_4rin79() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2009-12-29 [PTadmin] Official Update 2009-03
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Obsolete, use 4-4ring79.dat
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 4 16 79 0 0 80 0 0 73.912 0 30.616 72.9881 0 30.2333
   [4,16,79,0,0,80,0,0,73.912,0,30.616,72.9881,0,30.2333],

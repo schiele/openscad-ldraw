@@ -11,20 +11,20 @@ use <../../p/1-8ring2.scad>
 use <../../p/1-8ring9.scad>
 use <../../p/2-4disc.scad>
 use <../../p/2-4ndis.scad>
-use <../../p/2-4rin16.scad>
 use <../../p/2-4ring1.scad>
+use <../../p/2-4ring16.scad>
 use <../../p/2-4ring2.scad>
 use <../../p/2-4ring7.scad>
 use <../../p/3-16chrd.scad>
 use <../../p/3-16ndis.scad>
-use <../../p/3-8rin16.scad>
+use <../../p/3-8ring16.scad>
 use <../../p/3-8ring7.scad>
 function ldraw_lib__s__3068p69a() = [
 // 0 ~Space Police II Pattern - Text
 // 0 Name: s\3068p69a.dat
 // 0 Author: Carsten Schmitz [Deckard]
-// 0 !LDRAW_ORG Subpart UPDATE 2013-01
-// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
+// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
@@ -38,7 +38,8 @@ function ldraw_lib__s__3068p69a() = [
 // 0 !HISTORY 2013-02-17 [MagFors] Changed colour 179 to 80 (printed silver)
 // 0 !HISTORY 2013-02-17 [MagFors] Removed t-junctions
 // 0 !HISTORY 2013-07-21 [PTadmin] Official Update 2013-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // S
 // 
@@ -188,8 +189,8 @@ function ldraw_lib__s__3068p69a() = [
   [1,80,-62,0,-54,14,0,0,0,1,0,0,0,14, ldraw_lib__2_4ring1()],
 // 1 80 -62 0 -54 4 0 0 0 1 0 0 0 4 2-4ring7.dat
   [1,80,-62,0,-54,4,0,0,0,1,0,0,0,4, ldraw_lib__2_4ring7()],
-// 1 80 -62 0 -54 2 0 0 0 1 0 0 0 2 2-4rin16.dat
-  [1,80,-62,0,-54,2,0,0,0,1,0,0,0,2, ldraw_lib__2_4rin16()],
+// 1 80 -62 0 -54 2 0 0 0 1 0 0 0 2 2-4ring16.dat
+  [1,80,-62,0,-54,2,0,0,0,1,0,0,0,2, ldraw_lib__2_4ring16()],
 // 1 16 -62 0 -54 34 0 0 0 1 0 0 0 34 2-4ndis.dat
   [1,16,-62,0,-54,34,0,0,0,1,0,0,0,34, ldraw_lib__2_4ndis()],
 // 1 16 -62 0 -80 -9.899 0 9.899 0 1 0 -9.899 0 -9.899 1-4chrd.dat
@@ -198,8 +199,8 @@ function ldraw_lib__s__3068p69a() = [
   [1,80,-62,0,-80,-9.899,0,9.899,0,1,0,-9.899,0,-9.899, ldraw_lib__1_4ring1()],
 // 1 80 -62 0 -80 -3.696 0 1.531 0 1 0 -1.531 0 -3.696 3-8ring7.dat
   [1,80,-62,0,-80,-3.696,0,1.531,0,1,0,-1.531,0,-3.696, ldraw_lib__3_8ring7()],
-// 1 80 -62 0 -80 -1.848 0 0.765 0 1 0 -0.765 0 -1.848 3-8rin16.dat
-  [1,80,-62,0,-80,-1.848,0,0.765,0,1,0,-0.765,0,-1.848, ldraw_lib__3_8rin16()],
+// 1 80 -62 0 -80 -1.848 0 0.765 0 1 0 -0.765 0 -1.848 3-8ring16.dat
+  [1,80,-62,0,-80,-1.848,0,0.765,0,1,0,-0.765,0,-1.848, ldraw_lib__3_8ring16()],
 // 1 16 -62 0 -80 0 0 34 0 1 0 -34 0 0 3-16ndis.dat
   [1,16,-62,0,-80,0,0,34,0,1,0,-34,0,0, ldraw_lib__3_16ndis()],
 // 1 16 -62 0 -80 0 0 -34 0 1 0 -34 0 0 3-16ndis.dat

@@ -1,9 +1,9 @@
 use <../lib.scad>
 function ldraw_lib__3_4rin14() = [
-// 0 Ring 14 x 0.75
+// 0 ~Ring 14 x 0.75 (Obsolete)
 // 0 Name: 3-4rin14.dat
 // 0 Author: J.C. Tchang [tchang]
-// 0 !LDRAW_ORG Primitive UPDATE 2012-01
+// 0 !LDRAW_ORG Primitive UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -11,7 +11,8 @@ function ldraw_lib__3_4rin14() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Obsolete, use 3-4ring14.dat
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 4 16 15 0 0 13.8585 0 5.7405 12.9346 0 5.3578 14 0 0
   [4,16,15,0,0,13.8585,0,5.7405,12.9346,0,5.3578,14,0,0],

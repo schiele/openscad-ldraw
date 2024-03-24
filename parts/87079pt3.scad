@@ -12,7 +12,7 @@ use <../p/48/1-24ring2.scad>
 use <../p/48/1-4disc.scad>
 use <../p/7-16chrd.scad>
 use <../p/7-16ndis.scad>
-use <../p/7-16rin1.scad>
+use <../p/7-16ring1.scad>
 use <../p/7-16ring2.scad>
 use <s/87079pt3s01.scad>
 use <s/87079s01.scad>
@@ -20,7 +20,7 @@ function ldraw_lib__87079pt3() = [
 // 0 Tile  2 x  4 with Groove and "10277 Ce6/8" Pattern
 // 0 Name: 87079pt3.dat
 // 0 Author: Ulrich Röder [UR]
-// 0 !LDRAW_ORG Part UPDATE 2022-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -35,7 +35,8 @@ function ldraw_lib__87079pt3() = [
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 0 !HISTORY 2021-01-04 [cwdee] Update 7-16rin1 reference
 // 0 !HISTORY 2022-03-06 [PTadmin] Official Update 2022-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\87079s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__87079s01()],
@@ -295,8 +296,8 @@ function ldraw_lib__87079pt3() = [
   [1,14,-2.389,0,-13.182,.45448,0,0,0,1,0,0,0,.464048, ldraw_lib__2_4ring1()],
 // 1 14 -2.389 0 -13.182 .45448 0 0 0 1 0 0 0 .464048 2-4ring2.dat
   [1,14,-2.389,0,-13.182,.45448,0,0,0,1,0,0,0,.464048, ldraw_lib__2_4ring2()],
-// 1 14 -2.389 0 -13.826 -.45448 0 0 0 1 0 0 0 -.464048 7-16rin1.dat
-  [1,14,-2.389,0,-13.826,-.45448,0,0,0,1,0,0,0,-.464048, ldraw_lib__7_16rin1()],
+// 1 14 -2.389 0 -13.826 -.45448 0 0 0 1 0 0 0 -.464048 7-16ring1.dat
+  [1,14,-2.389,0,-13.826,-.45448,0,0,0,1,0,0,0,-.464048, ldraw_lib__7_16ring1()],
 // 1 14 -2.389 0 -13.826 -.45448 0 0 0 1 0 0 0 -.464048 7-16ring2.dat
   [1,14,-2.389,0,-13.826,-.45448,0,0,0,1,0,0,0,-.464048, ldraw_lib__7_16ring2()],
 // 4 14 -3.75244 0 -13.826 -3.29796 0 -13.826 -3.29796 0 -13.182 -3.75244 0 -13.182

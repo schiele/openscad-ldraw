@@ -1,7 +1,7 @@
 use <../../lib.scad>
 use <../../p/2-4stud4.scad>
 use <../../p/3-16cylo.scad>
-use <../../p/3-16rin3.scad>
+use <../../p/3-16ring3.scad>
 use <../../p/48/1-12cyli.scad>
 use <../../p/48/1-12edge.scad>
 use <../../p/48/1-16chrd.scad>
@@ -19,7 +19,7 @@ function ldraw_lib__s__5152s01() = [
 // 0 ~Brick  3 x  3 Corner Round - Half
 // 0 Name: s\5152s01.dat
 // 0 Author: Magnus Forsberg [MagFors]
-// 0 !LDRAW_ORG Subpart UPDATE 2023-07
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -27,6 +27,8 @@ function ldraw_lib__s__5152s01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2023-12-31 [OrionP] Official Update 2023-07
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Bottom
 // 
@@ -195,8 +197,8 @@ function ldraw_lib__s__5152s01() = [
   [2,24,36.9385,4,-27.391,35.2565,4,-26.2673],
 // 
 // 0 // Quarter Stud4
-// 1 16 40 24 -40 -1.41421 0 1.41421 0 -1 0 1.41421 0 1.41421 3-16rin3.dat
-  [1,16,40,24,-40,-1.41421,0,1.41421,0,-1,0,1.41421,0,1.41421, ldraw_lib__3_16rin3()],
+// 1 16 40 24 -40 -1.41421 0 1.41421 0 -1 0 1.41421 0 1.41421 3-16ring3.dat
+  [1,16,40,24,-40,-1.41421,0,1.41421,0,-1,0,1.41421,0,1.41421, ldraw_lib__3_16ring3()],
 // 1 16 41.9048 14 -37.7259 1.9536 1 0 0 0 10 2.2253 0 0 rect2a.dat
   [1,16,41.9048,14,-37.7259,1.9536,1,0,0,0,10,2.2253,0,0, ldraw_lib__rect2a()],
 // 1 16 43.07725 14 -34.9786 0.78115 0 0 0 0 -10 -0.522 1 0 rect2p.dat

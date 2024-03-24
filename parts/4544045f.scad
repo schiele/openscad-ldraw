@@ -1,16 +1,16 @@
 use <../lib.scad>
 use <../p/4-4cylc3.scad>
 use <../p/4-4ering.scad>
-use <../p/4-4rin12.scad>
-use <../p/4-4rin13.scad>
-use <../p/4-4rin14.scad>
-use <../p/4-4rin15.scad>
-use <../p/4-4rin16.scad>
+use <../p/4-4ring12.scad>
+use <../p/4-4ring13.scad>
+use <../p/4-4ring14.scad>
+use <../p/4-4ring15.scad>
+use <../p/4-4ring16.scad>
 function ldraw_lib__4544045f() = [
 // 0 Sticker  1.7 x  1.7 Round with Motor
 // 0 Name: 4544045f.dat
 // 0 Author: Michael Heidemann [mikeheide]
-// 0 !LDRAW_ORG Part UPDATE 2018-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -28,20 +28,21 @@ function ldraw_lib__4544045f() = [
 // 0 !HISTORY 2017-08-19 [MagFors] used ring primitives
 // 0 !HISTORY 2018-03-30 [Steffen] changed backside color to 16
 // 0 !HISTORY 2018-12-08 [PTadmin] Official Update 2018-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 17 0 0 0 -.25 0 0 0 17 4-4cylc3.dat
   [1,16,0,0,0,17,0,0,0,-.25,0,0,0,17, ldraw_lib__4_4cylc3()],
-// 1 0 0 -0.25 0 1 0 0 0 1 0 0 0 1 4-4rin16.dat
-  [1,0,0,-0.25,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4rin16()],
-// 1 0 0 -0.25 0 1 0 0 0 1 0 0 0 1 4-4rin15.dat
-  [1,0,0,-0.25,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4rin15()],
-// 1 80 0 -0.25 0 1 0 0 0 1 0 0 0 1 4-4rin14.dat
-  [1,80,0,-0.25,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4rin14()],
-// 1 80 0 -0.25 0 1 0 0 0 1 0 0 0 1 4-4rin13.dat
-  [1,80,0,-0.25,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4rin13()],
-// 1 0 0 -0.25 0 1 0 0 0 1 0 0 0 1 4-4rin12.dat
-  [1,0,0,-0.25,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4rin12()],
+// 1 0 0 -0.25 0 1 0 0 0 1 0 0 0 1 4-4ring16.dat
+  [1,0,0,-0.25,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4ring16()],
+// 1 0 0 -0.25 0 1 0 0 0 1 0 0 0 1 4-4ring15.dat
+  [1,0,0,-0.25,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4ring15()],
+// 1 80 0 -0.25 0 1 0 0 0 1 0 0 0 1 4-4ring14.dat
+  [1,80,0,-0.25,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4ring14()],
+// 1 80 0 -0.25 0 1 0 0 0 1 0 0 0 1 4-4ring13.dat
+  [1,80,0,-0.25,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4ring13()],
+// 1 0 0 -0.25 0 1 0 0 0 1 0 0 0 1 4-4ring12.dat
+  [1,0,0,-0.25,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4ring12()],
 // 1 80 0 -.25 0 12 0 0 0 1 0 0 0 12 4-4ering.dat
   [1,80,0,-.25,0,12,0,0,0,1,0,0,0,12, ldraw_lib__4_4ering()],
 // 

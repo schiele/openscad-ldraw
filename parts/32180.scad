@@ -5,8 +5,8 @@ use <../p/48/4-4con4.scad>
 use <../p/48/4-4con7.scad>
 use <../p/48/4-4cylo.scad>
 use <../p/48/4-4edge.scad>
-use <../p/48/4-4rin10.scad>
-use <../p/48/4-4rin15.scad>
+use <../p/48/4-4ring10.scad>
+use <../p/48/4-4ring15.scad>
 use <../p/48/4-4ring5.scad>
 use <../p/48/4-4ring8.scad>
 use <s/32180s01.scad>
@@ -14,7 +14,7 @@ function ldraw_lib__32180() = [
 // 0 Tyre 30/ 42 x 28 R Balloon
 // 0 Name: 32180.dat
 // 0 Author: Ian Reid [Ian_Reid]
-// 0 !LDRAW_ORG Part UPDATE 2016-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -25,7 +25,8 @@ function ldraw_lib__32180() = [
 // 
 // 0 !HISTORY 2015-01-21 [Philo] Adapted to new rim shape
 // 0 !HISTORY 2016-12-31 [PTadmin] Official Update 2016-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
@@ -47,8 +48,8 @@ function ldraw_lib__32180() = [
   [1,16,0,0,32,0,0,49.3333,49.3333,0,0,0,1,0, ldraw_lib__48__4_4edge()],
 // 1 16 0 0 -34 0 0 8 8 0 0 0 -1 0 48\4-4ring5.dat
   [1,16,0,0,-34,0,0,8,8,0,0,0,-1,0, ldraw_lib__48__4_4ring5()],
-// 1 16 0 0 32 0 0 3.285 3.285 0 0 0 1 0 48\4-4rin15.dat
-  [1,16,0,0,32,0,0,3.285,3.285,0,0,0,1,0, ldraw_lib__48__4_4rin15()],
+// 1 16 0 0 32 0 0 3.285 3.285 0 0 0 1 0 48\4-4ring15.dat
+  [1,16,0,0,32,0,0,3.285,3.285,0,0,0,1,0, ldraw_lib__48__4_4ring15()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 -28 0 0 36 36 0 0 0 -6.75 0 48\4-4cylo.dat
@@ -81,10 +82,10 @@ function ldraw_lib__32180() = [
   [1,16,0,0,35.75,0,0,43.1667,43.1667,0,0,0,-7.75,0, ldraw_lib__48__4_4cylo()],
 // 1 16 0 0 24 0 0 43.1667 43.1667 0 0 0 1 0 48\4-4edge.dat
   [1,16,0,0,24,0,0,43.1667,43.1667,0,0,0,1,0, ldraw_lib__48__4_4edge()],
-// 1 16 0 0 28 0 0 3.92425 3.92425 0 0 0 -1 0 48\4-4rin10.dat
-  [1,16,0,0,28,0,0,3.92425,3.92425,0,0,0,-1,0, ldraw_lib__48__4_4rin10()],
-// 1 16 0 0 24 0 0 3.92425 3.92425 0 0 0 1 0 48\4-4rin10.dat
-  [1,16,0,0,24,0,0,3.92425,3.92425,0,0,0,1,0, ldraw_lib__48__4_4rin10()],
+// 1 16 0 0 28 0 0 3.92425 3.92425 0 0 0 -1 0 48\4-4ring10.dat
+  [1,16,0,0,28,0,0,3.92425,3.92425,0,0,0,-1,0, ldraw_lib__48__4_4ring10()],
+// 1 16 0 0 24 0 0 3.92425 3.92425 0 0 0 1 0 48\4-4ring10.dat
+  [1,16,0,0,24,0,0,3.92425,3.92425,0,0,0,1,0, ldraw_lib__48__4_4ring10()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 28 0 0 39.2425 39.2425 0 0 0 -4 0 48\4-4cylo.dat

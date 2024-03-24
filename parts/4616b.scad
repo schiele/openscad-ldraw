@@ -2,8 +2,8 @@ use <../lib.scad>
 use <../p/1-8edge.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4edge.scad>
-use <../p/4-4rin12.scad>
-use <../p/4-4rin13.scad>
+use <../p/4-4ring12.scad>
+use <../p/4-4ring13.scad>
 use <../p/4-4ring6.scad>
 use <s/4616s01.scad>
 use <../p/stud4.scad>
@@ -12,17 +12,18 @@ function ldraw_lib__4616b() = [
 // 0 Brick  2 x  4 x  2 with Engine Cowling and Hole for Technic Pin
 // 0 Name: 4616b.dat
 // 0 Author: Steve Chisnall [StevieC]
-// 0 !LDRAW_ORG Part UPDATE 2012-03
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS aeroplane, Airplane, Plane
+// 0 !KEYWORDS Airplane, Plane, aeroplane
 // 
 // 0 !HISTORY 2012-12-28 [PTadmin] Official Update 2012-03
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4616s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4616s01()],
@@ -48,10 +49,10 @@ function ldraw_lib__4616b() = [
   [1,16,0,24,-16,6.5,0,0,0,0,6.5,0,-6,0, ldraw_lib__4_4cyli()],
 // 1 16 0 24 -38 6 0 0 0 0 6 0 -6 0 4-4edge.dat
   [1,16,0,24,-38,6,0,0,0,0,6,0,-6,0, ldraw_lib__4_4edge()],
-// 1 16 0 24 -22 0.5 0 0 0 0 -0.5 0 -0.5 0 4-4rin12.dat
-  [1,16,0,24,-22,0.5,0,0,0,0,-0.5,0,-0.5,0, ldraw_lib__4_4rin12()],
-// 1 16 0 24 -16 0.5 0 0 0 0 -0.5 0 -0.5 0 4-4rin13.dat
-  [1,16,0,24,-16,0.5,0,0,0,0,-0.5,0,-0.5,0, ldraw_lib__4_4rin13()],
+// 1 16 0 24 -22 0.5 0 0 0 0 -0.5 0 -0.5 0 4-4ring12.dat
+  [1,16,0,24,-22,0.5,0,0,0,0,-0.5,0,-0.5,0, ldraw_lib__4_4ring12()],
+// 1 16 0 24 -16 0.5 0 0 0 0 -0.5 0 -0.5 0 4-4ring13.dat
+  [1,16,0,24,-16,0.5,0,0,0,0,-0.5,0,-0.5,0, ldraw_lib__4_4ring13()],
 // 1 16 0 24 -22 6 0 0 0 0 -6 0 6 0 4-4edge.dat
   [1,16,0,24,-22,6,0,0,0,0,-6,0,6,0, ldraw_lib__4_4edge()],
 // 1 16 0 24 -22 6.5 0 0 0 0 -6.5 0 6.5 0 4-4edge.dat

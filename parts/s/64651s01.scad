@@ -3,7 +3,7 @@ use <../../p/1-4edge.scad>
 use <../../p/11-16edge.scad>
 use <../../p/2-4ring7.scad>
 use <../../p/3-16edge.scad>
-use <../../p/3-16rin7.scad>
+use <../../p/3-16ring7.scad>
 use <../../p/3-4ring7.scad>
 use <../../p/4-4edge.scad>
 use <../../p/4-4ring7.scad>
@@ -24,7 +24,7 @@ function ldraw_lib__s__64651s01() = [
 // 0 ~Boat Base 13 x 16 Stern / Bow Half
 // 0 Name: s\64651s01.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Subpart UPDATE 2019-01
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -34,7 +34,8 @@ function ldraw_lib__s__64651s01() = [
 // 0 !HISTORY 2013-08-14 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2016-10-01 [Philo] File preparation for LDraw Parts Tracker
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 20 24 190 1 0 0 0 1 0 0 0 1 s\95227s01.dat
   [1,16,20,24,190,1,0,0,0,1,0,0,0,1, ldraw_lib__s__95227s01()],
@@ -5715,8 +5716,8 @@ function ldraw_lib__s__64651s01() = [
   [1,16,110,0,30,3.23358,0,-1.33939,0,1,0,1.33939,0,3.23358, ldraw_lib__11_16edge()],
 // 1 16 110 0 30 0.46194 0 -0.19134 0 1 0 0.19134 0 0.46194 2-4ring7.dat
   [1,16,110,0,30,0.46194,0,-0.19134,0,1,0,0.19134,0,0.46194, ldraw_lib__2_4ring7()],
-// 1 16 110 0 30 -0.46194 0 0.19134 0 1 0 -0.19134 0 -0.46194 3-16rin7.dat
-  [1,16,110,0,30,-0.46194,0,0.19134,0,1,0,-0.19134,0,-0.46194, ldraw_lib__3_16rin7()],
+// 1 16 110 0 30 -0.46194 0 0.19134 0 1 0 -0.19134 0 -0.46194 3-16ring7.dat
+  [1,16,110,0,30,-0.46194,0,0.19134,0,1,0,-0.19134,0,-0.46194, ldraw_lib__3_16ring7()],
 // 1 16 110 0 30 4 0 0 0 1 0 0 0 4 4-4edge.dat
   [1,16,110,0,30,4,0,0,0,1,0,0,0,4, ldraw_lib__4_4edge()],
 // 1 16 110 0 30 0 0 6 0 1 0 -6 0 0 5-16edge.dat

@@ -5,7 +5,7 @@ use <../p/3-16chrd.scad>
 use <../p/3-16cyli.scad>
 use <../p/3-16edge.scad>
 use <../p/3-16ndis.scad>
-use <../p/3-16rin5.scad>
+use <../p/3-16ring5.scad>
 use <../p/box2-5.scad>
 use <../p/box2-7.scad>
 use <../p/box4-4a.scad>
@@ -16,7 +16,7 @@ function ldraw_lib__88292() = [
 // 0 Arch  1 x  3 x  2
 // 0 Name: 88292.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2010-03
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -26,7 +26,8 @@ function ldraw_lib__88292() = [
 // 0 !KEYWORDS Ogee, Ogee arch
 // 
 // 0 !HISTORY 2010-12-31 [PTadmin] Official Update 2010-03
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
@@ -68,8 +69,8 @@ function ldraw_lib__88292() = [
   [1,16,10,44,26.199,0,1,0,0,0,-21.6478,-16.1991,0,0, ldraw_lib__3_16edge()],
 // 1 16 6 44 26.199 0 1 0 0 0 -21.6478 -16.1991 0 0 3-16edge.dat
   [1,16,6,44,26.199,0,1,0,0,0,-21.6478,-16.1991,0,0, ldraw_lib__3_16edge()],
-// 1 16 6 44 26.199 0 1 0 0 0 -4.32957 -3.23982 0 0 3-16rin5.dat
-  [1,16,6,44,26.199,0,1,0,0,0,-4.32957,-3.23982,0,0, ldraw_lib__3_16rin5()],
+// 1 16 6 44 26.199 0 1 0 0 0 -4.32957 -3.23982 0 0 3-16ring5.dat
+  [1,16,6,44,26.199,0,1,0,0,0,-4.32957,-3.23982,0,0, ldraw_lib__3_16ring5()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 6 44 26.199 0 4 0 0 0 -21.6478 -16.1991 0 0 3-16cyli.dat
@@ -120,8 +121,8 @@ function ldraw_lib__88292() = [
   [1,16,-10,44,26.199,0,-1,0,0,0,-21.6478,-16.1991,0,0, ldraw_lib__3_16edge()],
 // 1 16 -6 44 26.199 0 -1 0 0 0 -21.6478 -16.1991 0 0 3-16edge.dat
   [1,16,-6,44,26.199,0,-1,0,0,0,-21.6478,-16.1991,0,0, ldraw_lib__3_16edge()],
-// 1 16 -6 44 26.199 0 -1 0 0 0 -4.32957 -3.23982 0 0 3-16rin5.dat
-  [1,16,-6,44,26.199,0,-1,0,0,0,-4.32957,-3.23982,0,0, ldraw_lib__3_16rin5()],
+// 1 16 -6 44 26.199 0 -1 0 0 0 -4.32957 -3.23982 0 0 3-16ring5.dat
+  [1,16,-6,44,26.199,0,-1,0,0,0,-4.32957,-3.23982,0,0, ldraw_lib__3_16ring5()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -6 44 26.199 0 -4 0 0 0 -21.6478 -16.1991 0 0 3-16cyli.dat

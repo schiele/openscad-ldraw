@@ -1,9 +1,9 @@
 use <../lib.scad>
 function ldraw_lib__1_4rin12() = [
-// 0 Ring 12 x 0.25
+// 0 ~Ring 12 x 0.25 (Obsolete)
 // 0 Name: 1-4rin12.dat
 // 0 Author: Franklin W. Cain [fwcain]
-// 0 !LDRAW_ORG Primitive UPDATE 2022-02
+// 0 !LDRAW_ORG Primitive UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -17,7 +17,8 @@ function ldraw_lib__1_4rin12() = [
 // 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01
 // 0 !HISTORY 2022-03-01 [MagFors] Recreated using PrimGen2
 // 0 !HISTORY 2022-03-06 [PTadmin] Official Update 2022-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Obsolete, use 1-4ring12.dat
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 4 16 13 0 0 12.0107 0 4.9751 11.0868 0 4.5924 12 0 0
   [4,16,13,0,0,12.0107,0,4.9751,11.0868,0,4.5924,12,0,0],

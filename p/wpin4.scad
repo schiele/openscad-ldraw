@@ -6,13 +6,13 @@ use <1-4ndis.scad>
 use <3-8chrd.scad>
 use <3-8cyli.scad>
 use <3-8edge.scad>
-use <3-8rin12.scad>
+use <3-8ring12.scad>
 use <4-4cyli.scad>
 function ldraw_lib__wpin4() = [
 // 0 Wheel Holding Pin for Pull Back Motor
 // 0 Name: wpin4.dat
 // 0 Author: Michael Heidemann [mikeheide]
-// 0 !LDRAW_ORG Primitive UPDATE 2013-02
+// 0 !LDRAW_ORG Primitive UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -20,7 +20,8 @@ function ldraw_lib__wpin4() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2013-12-23 [PTadmin] Official Update 2013-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 2 24 3.86734 -11 0.666667 3.69534 -11 1.53067
   [2,24,3.86734,-11,0.666667,3.69534,-11,1.53067],
@@ -120,10 +121,10 @@ function ldraw_lib__wpin4() = [
   [1,16,0,-12,0,4.00348,0,-1.65829,0,1,0,1.65829,0,4.00348, ldraw_lib__3_8cyli()],
 // 1 16 0 -12 0 -4.00348 0 1.65829 0 1 0 -1.65829 0 -4.00348 3-8cyli.dat
   [1,16,0,-12,0,-4.00348,0,1.65829,0,1,0,-1.65829,0,-4.00348, ldraw_lib__3_8cyli()],
-// 1 16 0 -11 0 0.30796 0 -0.127561 0 -0.6 0 0.127561 0 0.30796 3-8rin12.dat
-  [1,16,0,-11,0,0.30796,0,-0.127561,0,-0.6,0,0.127561,0,0.30796, ldraw_lib__3_8rin12()],
-// 1 16 0 -11 0 -0.30796 0 0.127561 0 -0.6 0 -0.127561 0 -0.30796 3-8rin12.dat
-  [1,16,0,-11,0,-0.30796,0,0.127561,0,-0.6,0,-0.127561,0,-0.30796, ldraw_lib__3_8rin12()],
+// 1 16 0 -11 0 0.30796 0 -0.127561 0 -0.6 0 0.127561 0 0.30796 3-8ring12.dat
+  [1,16,0,-11,0,0.30796,0,-0.127561,0,-0.6,0,0.127561,0,0.30796, ldraw_lib__3_8ring12()],
+// 1 16 0 -11 0 -0.30796 0 0.127561 0 -0.6 0 -0.127561 0 -0.30796 3-8ring12.dat
+  [1,16,0,-11,0,-0.30796,0,0.127561,0,-0.6,0,-0.127561,0,-0.30796, ldraw_lib__3_8ring12()],
 // 1 16 0 -12 0 4.00348 0 -1.65829 0 0.6 0 1.65829 0 4.00348 3-8chrd.dat
   [1,16,0,-12,0,4.00348,0,-1.65829,0,0.6,0,1.65829,0,4.00348, ldraw_lib__3_8chrd()],
 // 1 16 0 -12 0 -4.00348 0 1.65829 0 0.6 0 -1.65829 0 -4.00348 3-8chrd.dat

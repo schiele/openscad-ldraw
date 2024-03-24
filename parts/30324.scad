@@ -7,7 +7,7 @@ use <../p/48/4-4con16.scad>
 use <../p/48/4-4con34.scad>
 use <../p/48/4-4cyli.scad>
 use <../p/48/4-4edge.scad>
-use <../p/48/4-4rin12.scad>
+use <../p/48/4-4ring12.scad>
 use <../p/48/4-4ring8.scad>
 use <../p/peghole.scad>
 use <s/30324s01.scad>
@@ -15,7 +15,7 @@ function ldraw_lib__30324() = [
 // 0 Wheel Hard with Treads
 // 0 Name: 30324.dat
 // 0 Author: Chris Dee [cwdee]
-// 0 !LDRAW_ORG Part UPDATE 2022-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -29,7 +29,8 @@ function ldraw_lib__30324() = [
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
 // 0 !HISTORY 2017-07-14 [MagFors] bfc'd, closed gaps
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 1 0 0 0 0 1 0 -1 0 peghole.dat
   [1,16,0,0,0,1,0,0,0,0,1,0,-1,0, ldraw_lib__peghole()],
@@ -46,8 +47,8 @@ function ldraw_lib__30324() = [
   [1,16,0,0,-36,32,0,0,0,0,32,0,36,0, ldraw_lib__48__4_4cyli()],
 // 
 // 0 // 48-sided ring at -50
-// 1 16 0 0 -50 2.91666 0 0 0 0 2.91666 0 1 0 48\4-4rin12.dat
-  [1,16,0,0,-50,2.91666,0,0,0,0,2.91666,0,1,0, ldraw_lib__48__4_4rin12()],
+// 1 16 0 0 -50 2.91666 0 0 0 0 2.91666 0 1 0 48\4-4ring12.dat
+  [1,16,0,0,-50,2.91666,0,0,0,0,2.91666,0,1,0, ldraw_lib__48__4_4ring12()],
 // 
 // 0 // 48 sided cone from -50 to ?-36
 // 0 BFC INVERTNEXT

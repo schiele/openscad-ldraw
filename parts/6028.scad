@@ -1,8 +1,8 @@
 use <../lib.scad>
 use <../p/1-4con13.scad>
 use <../p/1-4con28.scad>
-use <../p/1-4rin28.scad>
 use <../p/1-4ring2.scad>
+use <../p/1-4ring28.scad>
 use <../p/2-4cyli.scad>
 use <../p/2-4disc.scad>
 use <../p/2-4edge.scad>
@@ -16,7 +16,7 @@ function ldraw_lib__6028() = [
 // 0 Animal Dragon Tail
 // 0 Name: 6028.dat
 // 0 Author: Bernd Broich [bbroich]
-// 0 !LDRAW_ORG Part UPDATE 2004-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CW
@@ -24,12 +24,13 @@ function ldraw_lib__6028() = [
   [0,"BFC","CW"],
 // 
 // 0 !KEYWORDS Adventurers, Alligator, Castle, City, Crocodile, Dinosaurs, Pirates
-// 0 !KEYWORDS reptile, Stegosaurus
+// 0 !KEYWORDS Stegosaurus, reptile
 // 
 // 0 !HISTORY 2004-04-22 [PTadmin] Official Update 2004-02
 // 0 !HISTORY 2007-07-09 [PTadmin] Header formatted for Contributor Agreement
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Underside Stud
 // 1 16 14.75 14.5 58 4 0 0 0 -1 0 0 0 4 4-4disc.dat
@@ -164,10 +165,10 @@ function ldraw_lib__6028() = [
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 2 0 10.5 0 0 0 20 0 0 0 -10.5 2-4cyli.dat
   [1,16,0,2,0,10.5,0,0,0,20,0,0,0,-10.5, ldraw_lib__2_4cyli()],
-// 1 16 0 22 0 -0.5 0 0 0 -1 0 0 0 -0.5 1-4rin28.dat
-  [1,16,0,22,0,-0.5,0,0,0,-1,0,0,0,-0.5, ldraw_lib__1_4rin28()],
-// 1 16 0 22 0 0.5 0 0 0 -1 0 0 0 -0.5 1-4rin28.dat
-  [1,16,0,22,0,0.5,0,0,0,-1,0,0,0,-0.5, ldraw_lib__1_4rin28()],
+// 1 16 0 22 0 -0.5 0 0 0 -1 0 0 0 -0.5 1-4ring28.dat
+  [1,16,0,22,0,-0.5,0,0,0,-1,0,0,0,-0.5, ldraw_lib__1_4ring28()],
+// 1 16 0 22 0 0.5 0 0 0 -1 0 0 0 -0.5 1-4ring28.dat
+  [1,16,0,22,0,0.5,0,0,0,-1,0,0,0,-0.5, ldraw_lib__1_4ring28()],
 // 1 16 0 22 0 10.5 0 0 0 1 0 0 0 -10.5 2-4edge.dat
   [1,16,0,22,0,10.5,0,0,0,1,0,0,0,-10.5, ldraw_lib__2_4edge()],
 // 1 16 0 22 0 14.5 0 0 0 1 0 0 0 -14.5 2-4edge.dat

@@ -1,6 +1,6 @@
 use <../../lib.scad>
 use <../../p/1-4cylo.scad>
-use <../../p/1-4rin10.scad>
+use <../../p/1-4ring10.scad>
 use <../../p/1-4ring9.scad>
 use <../../p/box3u2p.scad>
 use <../../p/box3u4p.scad>
@@ -13,7 +13,7 @@ function ldraw_lib__s__65803s01() = [
 // 0 ~Technic Brick 16 x 16 x  1.333 - Quarter
 // 0 Name: s\65803s01.dat
 // 0 Author: Magnus Forsberg [MagFors]
-// 0 !LDRAW_ORG Subpart UPDATE 2023-04
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -21,7 +21,8 @@ function ldraw_lib__s__65803s01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2023-08-25 [OrionP] Official Update 2023-04
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 150 0 0 1 0 0 0 1 0 0 0 1 s\65803s03.dat
   [1,16,150,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__65803s03()],
@@ -97,8 +98,8 @@ function ldraw_lib__s__65803s01() = [
   [1,16,90,4,90,0,0,-11,0,4,0,-11,0,0, ldraw_lib__1_4cylo()],
 // 1 16 90 8 90 0 0 -1 0 -1 0 -1 0 0 1-4ring9.dat
   [1,16,90,8,90,0,0,-1,0,-1,0,-1,0,0, ldraw_lib__1_4ring9()],
-// 1 16 90 8 90 0 0 -1 0 -1 0 -1 0 0 1-4rin10.dat
-  [1,16,90,8,90,0,0,-1,0,-1,0,-1,0,0, ldraw_lib__1_4rin10()],
+// 1 16 90 8 90 0 0 -1 0 -1 0 -1 0 0 1-4ring10.dat
+  [1,16,90,8,90,0,0,-1,0,-1,0,-1,0,0, ldraw_lib__1_4ring10()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 50 4 50 0 0 -9 0 4 0 -9 0 0 1-4cylo.dat
@@ -107,8 +108,8 @@ function ldraw_lib__s__65803s01() = [
   [1,16,50,4,50,0,0,-11,0,4,0,-11,0,0, ldraw_lib__1_4cylo()],
 // 1 16 50 8 50 0 0 -1 0 -1 0 -1 0 0 1-4ring9.dat
   [1,16,50,8,50,0,0,-1,0,-1,0,-1,0,0, ldraw_lib__1_4ring9()],
-// 1 16 50 8 50 0 0 -1 0 -1 0 -1 0 0 1-4rin10.dat
-  [1,16,50,8,50,0,0,-1,0,-1,0,-1,0,0, ldraw_lib__1_4rin10()],
+// 1 16 50 8 50 0 0 -1 0 -1 0 -1 0 0 1-4ring10.dat
+  [1,16,50,8,50,0,0,-1,0,-1,0,-1,0,0, ldraw_lib__1_4ring10()],
 ];
 module ldraw_lib__s__65803s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
     makepoly(ldraw_lib__s__65803s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);

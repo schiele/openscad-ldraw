@@ -16,7 +16,7 @@ use <../../p/48/7-48edge.scad>
 use <../../p/48/7-48ring80.scad>
 use <../../p/5-16chrd.scad>
 use <../../p/5-16cylo.scad>
-use <../../p/5-16rin2.scad>
+use <../../p/5-16ring2.scad>
 use <../../p/rect.scad>
 use <../../p/rect1.scad>
 use <../../p/rect2p.scad>
@@ -25,7 +25,7 @@ function ldraw_lib__s__18943s01() = [
 // 0 ~Technic Excavator Bucket  7 x  5 x  4.5 Clamshell Half
 // 0 Name: s\18943s01.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Subpart UPDATE 2018-01
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -33,7 +33,8 @@ function ldraw_lib__s__18943s01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2018-01-30 [PTadmin] Official Update 2018-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 10 0 0 0 -1 0 0 0 9 9 0 0 1-4ndis.dat
   [1,16,10,0,0,0,-1,0,0,0,9,9,0,0, ldraw_lib__1_4ndis()],
@@ -73,8 +74,8 @@ function ldraw_lib__s__18943s01() = [
   [1,16,66,29,12.648,0,-1,0,3.00706,0,-9.53717,9.53717,0,3.00706, ldraw_lib__1_8chrd()],
 // 1 16 70 17.142 4.648 0 -4 0 7.62974 0 -2.40565 2.40565 0 7.62974 5-16cylo.dat
   [1,16,70,17.142,4.648,0,-4,0,7.62974,0,-2.40565,2.40565,0,7.62974, ldraw_lib__5_16cylo()],
-// 1 16 70 17.142 4.648 0 -1 0 2.54325 0 -0.80188 0.80188 0 2.54325 5-16rin2.dat
-  [1,16,70,17.142,4.648,0,-1,0,2.54325,0,-0.80188,0.80188,0,2.54325, ldraw_lib__5_16rin2()],
+// 1 16 70 17.142 4.648 0 -1 0 2.54325 0 -0.80188 0.80188 0 2.54325 5-16ring2.dat
+  [1,16,70,17.142,4.648,0,-1,0,2.54325,0,-0.80188,0.80188,0,2.54325, ldraw_lib__5_16ring2()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 70 17.142 4.648 0 -4 0 5.08649 0 -1.60377 1.60377 0 5.08649 5-16cylo.dat

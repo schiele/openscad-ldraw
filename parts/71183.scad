@@ -6,15 +6,15 @@ use <../p/4-4cylc.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4cylo.scad>
 use <../p/4-4edge.scad>
-use <../p/4-4rin18.scad>
 use <../p/4-4ring1.scad>
+use <../p/4-4ring18.scad>
 use <../p/4-4ring2.scad>
 use <../p/4-4ring4.scad>
 function ldraw_lib__71183() = [
 // 0 Bar  1L with Light Holder
 // 0 Name: 71183.dat
 // 0 Author: Sven Moritz Hein [smhltec]
-// 0 !LDRAW_ORG Part UPDATE 2011-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -23,7 +23,8 @@ function ldraw_lib__71183() = [
 // 
 // 0 !HISTORY 2011-01-15 [Philo] BFCed, rebuilt with primitives
 // 0 !HISTORY 2011-07-25 [PTadmin] Official Update 2011-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 8.5 0 -5 0 0 0 -3 0 0 0 -5 4-4cylc.dat
   [1,16,0,8.5,0,-5,0,0,0,-3,0,0,0,-5, ldraw_lib__4_4cylc()],
@@ -57,8 +58,8 @@ function ldraw_lib__71183() = [
   [1,16,0,-19,3,4,0,0,0,0,-4,0,1,0, ldraw_lib__4_4ring1()],
 // 1 16 0 -19 12 -2 0 0 0 0 -2 0 -1 0 4-4ring2.dat
   [1,16,0,-19,12,-2,0,0,0,0,-2,0,-1,0, ldraw_lib__4_4ring2()],
-// 1 16 0 -19 12 -0.33333 0 0 0 0 -0.33333 0 -1 0 4-4rin18.dat
-  [1,16,0,-19,12,-0.33333,0,0,0,0,-0.33333,0,-1,0, ldraw_lib__4_4rin18()],
+// 1 16 0 -19 12 -0.33333 0 0 0 0 -0.33333 0 -1 0 4-4ring18.dat
+  [1,16,0,-19,12,-0.33333,0,0,0,0,-0.33333,0,-1,0, ldraw_lib__4_4ring18()],
 // 1 16 0 -19 -4 -10 0 0 0 0 -10 0 4 0 4-4cylo.dat
   [1,16,0,-19,-4,-10,0,0,0,0,-10,0,4,0, ldraw_lib__4_4cylo()],
 // 1 16 0 -19 3 -3.16667 0 0 0 0 -3.16667 0 9 0 4-4con2.dat

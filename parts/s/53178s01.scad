@@ -24,8 +24,8 @@ use <../../p/48/1-6cyli.scad>
 use <../../p/48/1-6edge.scad>
 use <../../p/48/2-4cyli.scad>
 use <../../p/48/2-4edge.scad>
-use <../../p/48/2-4rin11.scad>
-use <../../p/48/2-4rin12.scad>
+use <../../p/48/2-4ring11.scad>
+use <../../p/48/2-4ring12.scad>
 use <../../p/axlehol4.scad>
 use <../../p/npeghol4.scad>
 use <../../p/peghole.scad>
@@ -36,7 +36,7 @@ function ldraw_lib__s__53178s01() = [
 // 0 ~Technic Pneumatic Cylinder Bracket - Half
 // 0 Name: s\53178s01.dat
 // 0 Author: Guy Vivan [guyvivan]
-// 0 !LDRAW_ORG Subpart UPDATE 2010-02
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -44,7 +44,8 @@ function ldraw_lib__s__53178s01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2010-07-05 [PTadmin] Official Update 2010-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 20 9 0 0 0 1 0 0 0 -9 2-4edge.dat
   [1,16,0,0,20,9,0,0,0,1,0,0,0,-9, ldraw_lib__2_4edge()],
@@ -474,14 +475,14 @@ function ldraw_lib__s__53178s01() = [
   [1,16,0,20,61,-22,0,0,0,0,-22,0,-28,0, ldraw_lib__48__1_6cyli()],
 // 1 16 0 20 61 22 0 0 0 0 -22 0 -28 0 48\1-6cyli.dat
   [1,16,0,20,61,22,0,0,0,0,-22,0,-28,0, ldraw_lib__48__1_6cyli()],
-// 1 16 0 20 61 2 0 0 0 0 -2 0 1 0 48\2-4rin11.dat
-  [1,16,0,20,61,2,0,0,0,0,-2,0,1,0, ldraw_lib__48__2_4rin11()],
-// 1 16 0 20 70 2 0 0 0 0 -2 0 -1 0 48\2-4rin11.dat
-  [1,16,0,20,70,2,0,0,0,0,-2,0,-1,0, ldraw_lib__48__2_4rin11()],
-// 1 16 0 20 61 2 0 0 0 0 -2 0 1 0 48\2-4rin12.dat
-  [1,16,0,20,61,2,0,0,0,0,-2,0,1,0, ldraw_lib__48__2_4rin12()],
-// 1 16 0 20 70 2 0 0 0 0 -2 0 -1 0 48\2-4rin12.dat
-  [1,16,0,20,70,2,0,0,0,0,-2,0,-1,0, ldraw_lib__48__2_4rin12()],
+// 1 16 0 20 61 2 0 0 0 0 -2 0 1 0 48\2-4ring11.dat
+  [1,16,0,20,61,2,0,0,0,0,-2,0,1,0, ldraw_lib__48__2_4ring11()],
+// 1 16 0 20 70 2 0 0 0 0 -2 0 -1 0 48\2-4ring11.dat
+  [1,16,0,20,70,2,0,0,0,0,-2,0,-1,0, ldraw_lib__48__2_4ring11()],
+// 1 16 0 20 61 2 0 0 0 0 -2 0 1 0 48\2-4ring12.dat
+  [1,16,0,20,61,2,0,0,0,0,-2,0,1,0, ldraw_lib__48__2_4ring12()],
+// 1 16 0 20 70 2 0 0 0 0 -2 0 -1 0 48\2-4ring12.dat
+  [1,16,0,20,70,2,0,0,0,0,-2,0,-1,0, ldraw_lib__48__2_4ring12()],
 // 2 24 19 20 70 26 20 70
   [2,24,19,20,70,26,20,70],
 // 2 24 -19 20 70 -26 20 70

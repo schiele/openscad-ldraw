@@ -3,16 +3,16 @@ use <../p/4-4con9.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4cylo.scad>
 use <../p/4-4edge.scad>
-use <../p/4-4rin20.scad>
 use <../p/4-4ring2.scad>
+use <../p/4-4ring20.scad>
 use <../p/4-4ring9.scad>
 use <../p/48/4-4con21.scad>
 use <../p/48/4-4con22.scad>
 use <../p/48/4-4con70.scad>
 use <../p/48/4-4cylo.scad>
 use <../p/48/4-4edge.scad>
-use <../p/48/4-4rin15.scad>
-use <../p/48/4-4rin47.scad>
+use <../p/48/4-4ring15.scad>
+use <../p/48/4-4ring47.scad>
 use <../p/axl3ho10.scad>
 use <../p/axl3hol2.scad>
 use <../p/axl3hol3.scad>
@@ -23,18 +23,19 @@ function ldraw_lib__51378() = [
 // 0 Wheel Rim 20 x 75 with 6 Double Spokes
 // 0 Name: 51378.dat
 // 0 Author: Andreas Laber [Tandini]
-// 0 !LDRAW_ORG Part UPDATE 2023-03
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS 28 x 81, Motorcycle, set 8420, Street Bike, tyre 51379, tyre 51380
+// 0 !KEYWORDS 28 x 81, Motorcycle, Street Bike, set 8420, tyre 51379, tyre 51380
 // 
 // 0 !HISTORY 2020-02-15 [MagFors] unified subfiles, rotated 180 degrees
 // 0 !HISTORY 2023-06-24 [OrionP] Official Update 2023-03
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 3 0 0 0 0 3 0 -1 0 4-4ring2.dat
   [1,16,0,0,0,3,0,0,0,0,3,0,-1,0, ldraw_lib__4_4ring2()],
@@ -72,8 +73,8 @@ function ldraw_lib__51378() = [
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 -20 -10 0 0 0 0 10 0 -10 0 4-4cylo.dat
   [1,16,0,0,-20,-10,0,0,0,0,10,0,-10,0, ldraw_lib__4_4cylo()],
-// 1 16 0 0 -30 0 0 -0.5 0.5 0 0 0 1 0 4-4rin20.dat
-  [1,16,0,0,-30,0,0,-0.5,0.5,0,0,0,1,0, ldraw_lib__4_4rin20()],
+// 1 16 0 0 -30 0 0 -0.5 0.5 0 0 0 1 0 4-4ring20.dat
+  [1,16,0,0,-30,0,0,-0.5,0.5,0,0,0,1,0, ldraw_lib__4_4ring20()],
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\51378s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__51378s01()],
@@ -112,18 +113,18 @@ function ldraw_lib__51378() = [
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 -4 0 0 -1.17847 1.17847 0 0 0 -2 0 48\4-4con70.dat
   [1,16,0,0,-4,0,0,-1.17847,1.17847,0,0,0,-2,0, ldraw_lib__48__4_4con70()],
-// 1 16 0 0 15 0 0 -5.8437 5.8437 0 0 0 -1 0 48\4-4rin15.dat
-  [1,16,0,0,15,0,0,-5.8437,5.8437,0,0,0,-1,0, ldraw_lib__48__4_4rin15()],
-// 1 16 0 0 -36 0 0 -5.8437 5.8437 0 0 0 1 0 48\4-4rin15.dat
-  [1,16,0,0,-36,0,0,-5.8437,5.8437,0,0,0,1,0, ldraw_lib__48__4_4rin15()],
+// 1 16 0 0 15 0 0 -5.8437 5.8437 0 0 0 -1 0 48\4-4ring15.dat
+  [1,16,0,0,15,0,0,-5.8437,5.8437,0,0,0,-1,0, ldraw_lib__48__4_4ring15()],
+// 1 16 0 0 -36 0 0 -5.8437 5.8437 0 0 0 1 0 48\4-4ring15.dat
+  [1,16,0,0,-36,0,0,-5.8437,5.8437,0,0,0,1,0, ldraw_lib__48__4_4ring15()],
 // 1 16 0 0 15 0 0 -93.5 93.5 0 0 0 -2.5 0 48\4-4cylo.dat
   [1,16,0,0,15,0,0,-93.5,93.5,0,0,0,-2.5,0, ldraw_lib__48__4_4cylo()],
 // 1 16 0 0 -33.5 0 0 -93.5 93.5 0 0 0 -2.5 0 48\4-4cylo.dat
   [1,16,0,0,-33.5,0,0,-93.5,93.5,0,0,0,-2.5,0, ldraw_lib__48__4_4cylo()],
-// 1 16 0 0 12.5 0 0 -1.94792 1.94792 0 0 0 1 0 48\4-4rin47.dat
-  [1,16,0,0,12.5,0,0,-1.94792,1.94792,0,0,0,1,0, ldraw_lib__48__4_4rin47()],
-// 1 16 0 0 -33.5 0 0 -1.94792 1.94792 0 0 0 -1 0 48\4-4rin47.dat
-  [1,16,0,0,-33.5,0,0,-1.94792,1.94792,0,0,0,-1,0, ldraw_lib__48__4_4rin47()],
+// 1 16 0 0 12.5 0 0 -1.94792 1.94792 0 0 0 1 0 48\4-4ring47.dat
+  [1,16,0,0,12.5,0,0,-1.94792,1.94792,0,0,0,1,0, ldraw_lib__48__4_4ring47()],
+// 1 16 0 0 -33.5 0 0 -1.94792 1.94792 0 0 0 -1 0 48\4-4ring47.dat
+  [1,16,0,0,-33.5,0,0,-1.94792,1.94792,0,0,0,-1,0, ldraw_lib__48__4_4ring47()],
 // 1 16 0 0 12.5 0 0 -92 92 0 0 0 -1 0 48\4-4edge.dat
   [1,16,0,0,12.5,0,0,-92,92,0,0,0,-1,0, ldraw_lib__48__4_4edge()],
 // 1 16 0 0 -33.5 0 0 -92 92 0 0 0 1 0 48\4-4edge.dat

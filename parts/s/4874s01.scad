@@ -1,14 +1,14 @@
 use <../../lib.scad>
 use <../../p/1-4cyli.scad>
 use <../../p/1-4edge.scad>
-use <../../p/1-4rin19.scad>
-use <../../p/1-4rin20.scad>
+use <../../p/1-4ring19.scad>
+use <../../p/1-4ring20.scad>
 use <../../p/box4-7a.scad>
 function ldraw_lib__s__4874s01() = [
 // 0 ~Fabuland Merry-Go-Round Platform - 1/4
 // 0 Name: s\4874s01.dat
 // 0 Author: Chris Dee [cwdee]
-// 0 !LDRAW_ORG Subpart UPDATE 2014-02
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CW
@@ -16,7 +16,8 @@ function ldraw_lib__s__4874s01() = [
   [0,"BFC","CW"],
 // 
 // 0 !HISTORY 2014-12-23 [PTadmin] Official Update 2014-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 2 24 28 56 66 28 56 114
   [2,24,28,56,66,28,56,114],
@@ -34,10 +35,10 @@ function ldraw_lib__s__4874s01() = [
   [2,24,-28,56,114,-28,56,66],
 // 1 16 66 56 66 -38 0 0 0 1 0 0 0 -38 1-4edge.dat
   [1,16,66,56,66,-38,0,0,0,1,0,0,0,-38, ldraw_lib__1_4edge()],
-// 1 16 66 56 66 -2 0 0 0 -1 0 0 0 -2 1-4rin19.dat
-  [1,16,66,56,66,-2,0,0,0,-1,0,0,0,-2, ldraw_lib__1_4rin19()],
-// 1 16 66 56 66 -2 0 0 0 -1 0 0 0 -2 1-4rin20.dat
-  [1,16,66,56,66,-2,0,0,0,-1,0,0,0,-2, ldraw_lib__1_4rin20()],
+// 1 16 66 56 66 -2 0 0 0 -1 0 0 0 -2 1-4ring19.dat
+  [1,16,66,56,66,-2,0,0,0,-1,0,0,0,-2, ldraw_lib__1_4ring19()],
+// 1 16 66 56 66 -2 0 0 0 -1 0 0 0 -2 1-4ring20.dat
+  [1,16,66,56,66,-2,0,0,0,-1,0,0,0,-2, ldraw_lib__1_4ring20()],
 // 1 16 66 56 66 -42 0 0 0 1 0 0 0 -42 1-4edge.dat
   [1,16,66,56,66,-42,0,0,0,1,0,0,0,-42, ldraw_lib__1_4edge()],
 // 2 24 -24 56 66 -24 56 106

@@ -5,7 +5,7 @@ use <../p/2-4edge.scad>
 use <../p/2-4ndis.scad>
 use <../p/3-8cyli.scad>
 use <../p/3-8edge.scad>
-use <../p/3-8rin18.scad>
+use <../p/3-8ring18.scad>
 use <../p/3-8ring8.scad>
 use <../p/4-4con2.scad>
 use <../p/4-4cylc.scad>
@@ -24,7 +24,7 @@ function ldraw_lib__2799() = [
 // 0 ~Technic Pneumatic Cylinder  2 x  2 Piston with Large Knob Handle
 // 0 Name: 2799.dat
 // 0 Author: Marc Klein [marckl]
-// 0 !LDRAW_ORG Part UPDATE 2018-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -36,7 +36,8 @@ function ldraw_lib__2799() = [
 // 0 !HISTORY 2010-04-05 [PTadmin] Official Update 2010-01
 // 0 !HISTORY 2017-06-27 [Philo] Added gasket attachment
 // 0 !HISTORY 2018-01-30 [PTadmin] Official Update 2018-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Created with stl2dat conversion tool
 // 
@@ -76,12 +77,12 @@ function ldraw_lib__2799() = [
   [1,16,0,12,0,-8,0,0,0,-1,0,0,0,-8, ldraw_lib__4_4ring1()],
 // 1 16 0 12 0 -1.8478 0 0.7654 0 -1 0 -0.7654 0 -1.8478 3-8ring8.dat
   [1,16,0,12,0,-1.8478,0,0.7654,0,-1,0,-0.7654,0,-1.8478, ldraw_lib__3_8ring8()],
-// 1 16 0 12 0 -0.9239 0 0.3827 0 -1 0 -0.3827 0 -0.9239 3-8rin18.dat
-  [1,16,0,12,0,-0.9239,0,0.3827,0,-1,0,-0.3827,0,-0.9239, ldraw_lib__3_8rin18()],
+// 1 16 0 12 0 -0.9239 0 0.3827 0 -1 0 -0.3827 0 -0.9239 3-8ring18.dat
+  [1,16,0,12,0,-0.9239,0,0.3827,0,-1,0,-0.3827,0,-0.9239, ldraw_lib__3_8ring18()],
 // 1 16 0 12 0 1.8478 0 -0.7654 0 -1 0 0.7654 0 1.8478 3-8ring8.dat
   [1,16,0,12,0,1.8478,0,-0.7654,0,-1,0,0.7654,0,1.8478, ldraw_lib__3_8ring8()],
-// 1 16 0 12 0 0.9239 0 -0.3827 0 -1 0 0.3827 0 0.9239 3-8rin18.dat
-  [1,16,0,12,0,0.9239,0,-0.3827,0,-1,0,0.3827,0,0.9239, ldraw_lib__3_8rin18()],
+// 1 16 0 12 0 0.9239 0 -0.3827 0 -1 0 0.3827 0 0.9239 3-8ring18.dat
+  [1,16,0,12,0,0.9239,0,-0.3827,0,-1,0,0.3827,0,0.9239, ldraw_lib__3_8ring18()],
 // 4 16 18.03 12 -6 17.55 12 -7.271 14.782 12 -6.123 16 12 0
   [4,16,18.03,12,-6,17.55,12,-7.271,14.782,12,-6.123,16,12,0],
 // 4 16 16 12 0 14.782 12 6.123 17.55 12 7.271 18.03 12 6

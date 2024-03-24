@@ -6,8 +6,8 @@ use <../../p/48/1-16chrd.scad>
 use <../../p/48/1-16edge.scad>
 use <../../p/48/1-4cylo.scad>
 use <../../p/48/1-4edge.scad>
-use <../../p/48/1-4rin15.scad>
-use <../../p/48/1-4rin29.scad>
+use <../../p/48/1-4ring15.scad>
+use <../../p/48/1-4ring29.scad>
 use <../../p/48/1-4ring4.scad>
 use <../../p/rect.scad>
 use <../../p/rect2p.scad>
@@ -16,7 +16,7 @@ function ldraw_lib__s__64390s03() = [
 // 0 ~Door  1 x  4 x  6 with Window and Reinforced Edge - Window
 // 0 Name: s\64390s03.dat
 // 0 Author: Vincent Messenet [Cheenzo]
-// 0 !LDRAW_ORG Subpart UPDATE 2020-03
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -24,7 +24,8 @@ function ldraw_lib__s__64390s03() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 20 -5 0 0 4 -4 0 0 0 1 0 48\1-4ring4.dat
   [1,16,0,20,-5,0,0,4,-4,0,0,0,1,0, ldraw_lib__48__1_4ring4()],
@@ -34,14 +35,14 @@ function ldraw_lib__s__64390s03() = [
   [1,16,0,20,5,0,0,20,-20,0,0,0,1,0, ldraw_lib__48__1_4edge()],
 // 1 16 0 20 5 0 0 4 -4 0 0 0 -1 0 48\1-4ring4.dat
   [1,16,0,20,5,0,0,4,-4,0,0,0,-1,0, ldraw_lib__48__1_4ring4()],
-// 1 16 0 20 5 0 0 1 -1 0 0 0 -1 0 48\1-4rin15.dat
-  [1,16,0,20,5,0,0,1,-1,0,0,0,-1,0, ldraw_lib__48__1_4rin15()],
-// 1 16 0 20 5 0 0 .5 -.5 0 0 0 -1 0 48\1-4rin29.dat
-  [1,16,0,20,5,0,0,.5,-.5,0,0,0,-1,0, ldraw_lib__48__1_4rin29()],
-// 1 16 0 20 2.5 0 0 1 -1 0 0 0 1 0 48\1-4rin15.dat
-  [1,16,0,20,2.5,0,0,1,-1,0,0,0,1,0, ldraw_lib__48__1_4rin15()],
-// 1 16 0 20 2.5 0 0 .5 -.5 0 0 0 1 0 48\1-4rin29.dat
-  [1,16,0,20,2.5,0,0,.5,-.5,0,0,0,1,0, ldraw_lib__48__1_4rin29()],
+// 1 16 0 20 5 0 0 1 -1 0 0 0 -1 0 48\1-4ring15.dat
+  [1,16,0,20,5,0,0,1,-1,0,0,0,-1,0, ldraw_lib__48__1_4ring15()],
+// 1 16 0 20 5 0 0 .5 -.5 0 0 0 -1 0 48\1-4ring29.dat
+  [1,16,0,20,5,0,0,.5,-.5,0,0,0,-1,0, ldraw_lib__48__1_4ring29()],
+// 1 16 0 20 2.5 0 0 1 -1 0 0 0 1 0 48\1-4ring15.dat
+  [1,16,0,20,2.5,0,0,1,-1,0,0,0,1,0, ldraw_lib__48__1_4ring15()],
+// 1 16 0 20 2.5 0 0 .5 -.5 0 0 0 1 0 48\1-4ring29.dat
+  [1,16,0,20,2.5,0,0,.5,-.5,0,0,0,1,0, ldraw_lib__48__1_4ring29()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 20 2.5 0 0 14.5 -14.5 0 0 0 2.5 0 48\1-4cylo.dat

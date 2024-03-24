@@ -1,14 +1,14 @@
 use <../../lib.scad>
 use <../../p/1-4chrd.scad>
 use <../../p/1-4ndis.scad>
-use <../../p/1-4rin12.scad>
 use <../../p/1-4ring1.scad>
+use <../../p/1-4ring12.scad>
 use <../../p/1-4ring5.scad>
 function ldraw_lib__s__6142275zs03() = [
 // 0 ~Sticker  1.9 x  0.8 with Red "P1" and Grey Triangle on Black Background Right - Third Face
 // 0 Name: s\6142275zs03.dat
 // 0 Author: Massimo Maso [Sirio]
-// 0 !LDRAW_ORG Subpart UPDATE 2023-05
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -16,7 +16,8 @@ function ldraw_lib__s__6142275zs03() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2023-10-31 [OrionP] Official Update 2023-05
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Primitives
 // 1 0 -4.8 -.25 6.2172 -1.3 0 0 0 1 0 0 0 -1.3 1-4ndis.dat
@@ -25,8 +26,8 @@ function ldraw_lib__s__6142275zs03() = [
   [1,4,-4.8,-.25,6.2172,-.5,0,0,0,1,0,0,0,-.5, ldraw_lib__1_4ring1()],
 // 1 4 -4.8 -.25 6.2172 -.2 0 0 0 1 0 0 0 -.2 1-4ring5.dat
   [1,4,-4.8,-.25,6.2172,-.2,0,0,0,1,0,0,0,-.2, ldraw_lib__1_4ring5()],
-// 1 4 -4.8 -.25 6.2172 -.1 0 0 0 1 0 0 0 -.1 1-4rin12.dat
-  [1,4,-4.8,-.25,6.2172,-.1,0,0,0,1,0,0,0,-.1, ldraw_lib__1_4rin12()],
+// 1 4 -4.8 -.25 6.2172 -.1 0 0 0 1 0 0 0 -.1 1-4ring12.dat
+  [1,4,-4.8,-.25,6.2172,-.1,0,0,0,1,0,0,0,-.1, ldraw_lib__1_4ring12()],
 // 1 15 -4.8 -.25 6.2172 -.5 0 0 0 1 0 0 0 -.5 1-4chrd.dat
   [1,15,-4.8,-.25,6.2172,-.5,0,0,0,1,0,0,0,-.5, ldraw_lib__1_4chrd()],
 // 1 0 2.4 -.25 6.2172 1.3 0 0 0 1 0 0 0 -1.3 1-4ndis.dat
@@ -35,8 +36,8 @@ function ldraw_lib__s__6142275zs03() = [
   [1,4,2.4,-.25,6.2172,.5,0,0,0,1,0,0,0,-.5, ldraw_lib__1_4ring1()],
 // 1 4 2.4 -.25 6.2172 .2 0 0 0 1 0 0 0 -.2 1-4ring5.dat
   [1,4,2.4,-.25,6.2172,.2,0,0,0,1,0,0,0,-.2, ldraw_lib__1_4ring5()],
-// 1 4 2.4 -.25 6.2172 .1 0 0 0 1 0 0 0 -.1 1-4rin12.dat
-  [1,4,2.4,-.25,6.2172,.1,0,0,0,1,0,0,0,-.1, ldraw_lib__1_4rin12()],
+// 1 4 2.4 -.25 6.2172 .1 0 0 0 1 0 0 0 -.1 1-4ring12.dat
+  [1,4,2.4,-.25,6.2172,.1,0,0,0,1,0,0,0,-.1, ldraw_lib__1_4ring12()],
 // 1 15 2.4 -.25 6.2172 .5 0 0 0 1 0 0 0 -.5 1-4chrd.dat
   [1,15,2.4,-.25,6.2172,.5,0,0,0,1,0,0,0,-.5, ldraw_lib__1_4chrd()],
 // 0 // Black faces

@@ -6,23 +6,23 @@ use <../p/2-4ring1.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4ering.scad>
 use <../p/4-4ndis.scad>
-use <../p/4-4rin10.scad>
 use <../p/4-4ring1.scad>
+use <../p/4-4ring10.scad>
 use <../p/4-4ring2.scad>
 use <s/973s01.scad>
 function ldraw_lib__973pac() = [
 // 0 Minifig Torso with Mayan Necklace, Tribal Shirt & Navel Pattern
 // 0 Name: 973pac.dat
 // 0 Author: George Barnes [glbarnes]
-// 0 !LDRAW_ORG Part UPDATE 2018-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Achu, Adventurers, amazon, belly button, ceremonial, Cloak, Feathers
-// 0 !KEYWORDS Jungle, priest, ruler
+// 0 !KEYWORDS Achu, Adventurers, Cloak, Feathers, Jungle, amazon, belly button
+// 0 !KEYWORDS ceremonial, priest, ruler
 // 
 // 0 !CMDLINE -c14
 // 
@@ -31,7 +31,8 @@ function ldraw_lib__973pac() = [
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
 // 0 !HISTORY 2017-10-10 [MagFors] Modified with WINDZ for BFC compliance
 // 0 !HISTORY 2018-01-30 [PTadmin] Official Update 2018-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],
@@ -46,8 +47,8 @@ function ldraw_lib__973pac() = [
 // 4 16 12 0 10 14.345 2 10 -14.345 2 10 -12 0 10
   [4,16,12,0,10,14.345,2,10,-14.345,2,10,-12,0,10],
 // 0 // front pattern
-// 1 0 0 21 -10 0.65 0 0 0 0 0.65 0 1 0 4-4rin10.dat
-  [1,0,0,21,-10,0.65,0,0,0,0,0.65,0,1,0, ldraw_lib__4_4rin10()],
+// 1 0 0 21 -10 0.65 0 0 0 0 0.65 0 1 0 4-4ring10.dat
+  [1,0,0,21,-10,0.65,0,0,0,0,0.65,0,1,0, ldraw_lib__4_4ring10()],
 // 1 0 0 21 -10 6.5 0 0 0 0 6.5 0 1 0 4-4ering.dat
   [1,0,0,21,-10,6.5,0,0,0,0,6.5,0,1,0, ldraw_lib__4_4ering()],
 // 1 16 0 21 -10 7.15 0 0 0 0 7.15 0 1 0 2-4ndis.dat

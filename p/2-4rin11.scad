@@ -1,9 +1,9 @@
 use <../lib.scad>
 function ldraw_lib__2_4rin11() = [
-// 0 Ring 11 x 0.5
+// 0 ~Ring 11 x 0.5 (Obsolete)
 // 0 Name: 2-4rin11.dat
 // 0 Author: Alex Taylor [anathema]
-// 0 !LDRAW_ORG Primitive UPDATE 2010-01
+// 0 !LDRAW_ORG Primitive UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -11,7 +11,8 @@ function ldraw_lib__2_4rin11() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2010-04-05 [PTadmin] Official Update 2010-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Obsolete, use 2-4ring11.dat
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 4 16 11 0 0 12 0 0 11.0868 0 4.5924 10.1629 0 4.2097
   [4,16,11,0,0,12,0,0,11.0868,0,4.5924,10.1629,0,4.2097],

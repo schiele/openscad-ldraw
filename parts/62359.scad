@@ -3,7 +3,7 @@ use <../p/4-4cyli.scad>
 use <../p/4-4cylo.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4edge.scad>
-use <../p/4-4rin10.scad>
+use <../p/4-4ring10.scad>
 use <../p/4-4ring3.scad>
 use <../p/4-4ring4.scad>
 use <../p/axlehol2.scad>
@@ -13,7 +13,7 @@ function ldraw_lib__62359() = [
 // 0 Wheel Cover  7 Spoke for Wheel 14 x 18
 // 0 Name: 62359.dat
 // 0 Author: Ulrich Röder [UR]
-// 0 !LDRAW_ORG Part UPDATE 2023-04
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 !HELP For Wheel 55982
@@ -25,7 +25,8 @@ function ldraw_lib__62359() = [
 // 0 !HISTORY 2014-10-16 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2014-10-16 [UR] File preparation for LDraw Parts Tracker
 // 0 !HISTORY 2023-08-25 [OrionP] Official Update 2023-04
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Main
 // 1 16 0 0 0 1 0 0 0 0 1 0 -10 0 axlehole.dat
@@ -51,8 +52,8 @@ function ldraw_lib__62359() = [
 // 0 // Hub
 // 1 16 0 0 -15.75 1 0 0 0 0 1 0 1 0 4-4ring4.dat
   [1,16,0,0,-15.75,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4ring4()],
-// 1 16 0 0 -15.75 .5 0 0 0 0 .5 0 1 0 4-4rin10.dat
-  [1,16,0,0,-15.75,.5,0,0,0,0,.5,0,1,0, ldraw_lib__4_4rin10()],
+// 1 16 0 0 -15.75 .5 0 0 0 0 .5 0 1 0 4-4ring10.dat
+  [1,16,0,0,-15.75,.5,0,0,0,0,.5,0,1,0, ldraw_lib__4_4ring10()],
 // 1 16 0 0 -14.75 4 0 0 0 0 4 0 1 0 4-4disc.dat
   [1,16,0,0,-14.75,4,0,0,0,0,4,0,1,0, ldraw_lib__4_4disc()],
 // 0 BFC INVERTNEXT

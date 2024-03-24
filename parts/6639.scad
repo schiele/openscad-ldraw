@@ -1,9 +1,9 @@
 use <../lib.scad>
 use <../p/4-4cylc.scad>
 use <../p/4-4cylo.scad>
-use <../p/4-4rin21.scad>
 use <../p/4-4ring1.scad>
 use <../p/4-4ring2.scad>
+use <../p/4-4ring21.scad>
 use <../p/4-4ring6.scad>
 use <../p/axlehol2.scad>
 use <../p/axlehole.scad>
@@ -12,7 +12,7 @@ function ldraw_lib__6639() = [
 // 0 Electric Technic Fiber Optics Element - Axis
 // 0 Name: 6639.dat
 // 0 Author: Remco Braak [remco1974]
-// 0 !LDRAW_ORG Part UPDATE 2020-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -27,7 +27,8 @@ function ldraw_lib__6639() = [
 // 0 !HISTORY 2018-12-08 [PTadmin] Official Update 2018-02
 // 0 !HISTORY 2019-05-04 [MagFors] Added a light
 // 0 !HISTORY 2020-06-28 [PTadmin] Official Update 2020-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 -20 1 0 0 0 0 1 0 40 0 axlehole.dat
   [1,16,0,0,-20,1,0,0,0,0,1,0,40,0, ldraw_lib__axlehole()],
@@ -47,16 +48,16 @@ function ldraw_lib__6639() = [
   [1,16,0,0,-14,7,0,0,0,0,7,0,1,0, ldraw_lib__4_4ring1()],
 // 1 0 0 0 -14 0 0 7 7 0 0 0 1 0 4-4ring2.dat
   [1,0,0,0,-14,0,0,7,7,0,0,0,1,0, ldraw_lib__4_4ring2()],
-// 1 0 0 0 -14 0 0 1 1 0 0 0 1 0 4-4rin21.dat
-  [1,0,0,0,-14,0,0,1,1,0,0,0,1,0, ldraw_lib__4_4rin21()],
+// 1 0 0 0 -14 0 0 1 1 0 0 0 1 0 4-4ring21.dat
+  [1,0,0,0,-14,0,0,1,1,0,0,0,1,0, ldraw_lib__4_4ring21()],
 // 1 16 0 0 -14 0 0 22 22 0 0 0 2 0 4-4cylo.dat
   [1,16,0,0,-14,0,0,22,22,0,0,0,2,0, ldraw_lib__4_4cylo()],
 // 1 16 0 0 -12 7 0 0 0 0 7 0 -1 0 4-4ring1.dat
   [1,16,0,0,-12,7,0,0,0,0,7,0,-1,0, ldraw_lib__4_4ring1()],
 // 1 16 0 0 -12 0 0 7 7 0 0 0 -1 0 4-4ring2.dat
   [1,16,0,0,-12,0,0,7,7,0,0,0,-1,0, ldraw_lib__4_4ring2()],
-// 1 16 0 0 -12 0 0 1 1 0 0 0 -1 0 4-4rin21.dat
-  [1,16,0,0,-12,0,0,1,1,0,0,0,-1,0, ldraw_lib__4_4rin21()],
+// 1 16 0 0 -12 0 0 1 1 0 0 0 -1 0 4-4ring21.dat
+  [1,16,0,0,-12,0,0,1,1,0,0,0,-1,0, ldraw_lib__4_4ring21()],
 // 0 // LED
 // 1 80 6.8883 -16.6298 -14.5 1.53073 0 -3.69552 -3.69552 0 -1.53073 0 0.5 0 4-4cylc.dat
   [1,80,6.8883,-16.6298,-14.5,1.53073,0,-3.69552,-3.69552,0,-1.53073,0,0.5,0, ldraw_lib__4_4cylc()],

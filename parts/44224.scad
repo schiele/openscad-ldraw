@@ -7,18 +7,18 @@ use <../p/4-4ndis.scad>
 use <../p/48/1-16cylo.scad>
 use <../p/48/1-24tndis.scad>
 use <../p/48/1-48cylo.scad>
-use <../p/48/1-4rin13.scad>
-use <../p/48/1-4rin14.scad>
+use <../p/48/1-4ring13.scad>
+use <../p/48/1-4ring14.scad>
 use <../p/48/1-6edge.scad>
-use <../p/48/1-8rin14.scad>
 use <../p/48/1-8ring13.scad>
+use <../p/48/1-8ring14.scad>
 use <../p/48/3-8cylo.scad>
 use <../p/48/4-4con8.scad>
 use <../p/48/4-4cyli.scad>
 use <../p/48/4-4cylo.scad>
 use <../p/48/4-4edge.scad>
 use <../p/48/4-4ndis.scad>
-use <../p/48/4-4rin10.scad>
+use <../p/48/4-4ring10.scad>
 use <../p/48/4-4ring8.scad>
 use <../p/48/4-4ring9.scad>
 use <../p/beamhole.scad>
@@ -33,7 +33,7 @@ function ldraw_lib__44224() = [
 // 0 Technic Beam  3 with Rotation Joint 3 Socket
 // 0 Name: 44224.dat
 // 0 Author: Guy Vivan [guyvivan]
-// 0 !LDRAW_ORG Part UPDATE 2023-06
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -43,6 +43,8 @@ function ldraw_lib__44224() = [
 // 0 !HISTORY 2010-04-05 [PTadmin] Official Update 2010-01
 // 0 !HISTORY 2023-07-25 [MagFors] Adapted to rounded npeg corners
 // 0 !HISTORY 2023-11-19 [OrionP] Official Update 2023-06
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 -10 80 9 0 0 0 20 0 0 0 9 2-4cylo.dat
   [1,16,0,-10,80,9,0,0,0,20,0,0,0,9, ldraw_lib__2_4cylo()],
@@ -164,22 +166,22 @@ function ldraw_lib__44224() = [
 // 1 16 0 0 0 0 0 -26 0 6 0 -26 0 0 48\3-8cylo.dat
   [1,16,0,0,0,0,0,-26,0,6,0,-26,0,0, ldraw_lib__48__3_8cylo()],
 // 
-// 1 16 0 0 0 2 0 0 0 1 0 0 0 -2 48\1-4rin13.dat
-  [1,16,0,0,0,2,0,0,0,1,0,0,0,-2, ldraw_lib__48__1_4rin13()],
-// 1 16 0 0 0 2 0 0 0 1 0 0 0 -2 48\1-4rin14.dat
-  [1,16,0,0,0,2,0,0,0,1,0,0,0,-2, ldraw_lib__48__1_4rin14()],
-// 1 16 0 0 0 -2 0 0 0 1 0 0 0 -2 48\1-4rin13.dat
-  [1,16,0,0,0,-2,0,0,0,1,0,0,0,-2, ldraw_lib__48__1_4rin13()],
-// 1 16 0 0 0 -2 0 0 0 1 0 0 0 -2 48\1-4rin14.dat
-  [1,16,0,0,0,-2,0,0,0,1,0,0,0,-2, ldraw_lib__48__1_4rin14()],
+// 1 16 0 0 0 2 0 0 0 1 0 0 0 -2 48\1-4ring13.dat
+  [1,16,0,0,0,2,0,0,0,1,0,0,0,-2, ldraw_lib__48__1_4ring13()],
+// 1 16 0 0 0 2 0 0 0 1 0 0 0 -2 48\1-4ring14.dat
+  [1,16,0,0,0,2,0,0,0,1,0,0,0,-2, ldraw_lib__48__1_4ring14()],
+// 1 16 0 0 0 -2 0 0 0 1 0 0 0 -2 48\1-4ring13.dat
+  [1,16,0,0,0,-2,0,0,0,1,0,0,0,-2, ldraw_lib__48__1_4ring13()],
+// 1 16 0 0 0 -2 0 0 0 1 0 0 0 -2 48\1-4ring14.dat
+  [1,16,0,0,0,-2,0,0,0,1,0,0,0,-2, ldraw_lib__48__1_4ring14()],
 // 1 16 0 0 0 2 0 0 0 1 0 0 0 2 48\1-8ring13.dat
   [1,16,0,0,0,2,0,0,0,1,0,0,0,2, ldraw_lib__48__1_8ring13()],
-// 1 16 0 0 0 2 0 0 0 1 0 0 0 2 48\1-8rin14.dat
-  [1,16,0,0,0,2,0,0,0,1,0,0,0,2, ldraw_lib__48__1_8rin14()],
+// 1 16 0 0 0 2 0 0 0 1 0 0 0 2 48\1-8ring14.dat
+  [1,16,0,0,0,2,0,0,0,1,0,0,0,2, ldraw_lib__48__1_8ring14()],
 // 1 16 0 0 0 -2 0 0 0 1 0 0 0 2 48\1-8ring13.dat
   [1,16,0,0,0,-2,0,0,0,1,0,0,0,2, ldraw_lib__48__1_8ring13()],
-// 1 16 0 0 0 -2 0 0 0 1 0 0 0 2 48\1-8rin14.dat
-  [1,16,0,0,0,-2,0,0,0,1,0,0,0,2, ldraw_lib__48__1_8rin14()],
+// 1 16 0 0 0 -2 0 0 0 1 0 0 0 2 48\1-8ring14.dat
+  [1,16,0,0,0,-2,0,0,0,1,0,0,0,2, ldraw_lib__48__1_8ring14()],
 // 
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
@@ -198,8 +200,8 @@ function ldraw_lib__44224() = [
   [1,16,0,-4,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__48__4_4con8()],
 // 1 16 0 -4 0 1 0 0 0 1 0 0 0 -1 48\4-4ring9.dat
   [1,16,0,-4,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__48__4_4ring9()],
-// 1 16 0 -4 0 1 0 0 0 1 0 0 0 -1 48\4-4rin10.dat
-  [1,16,0,-4,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__48__4_4rin10()],
+// 1 16 0 -4 0 1 0 0 0 1 0 0 0 -1 48\4-4ring10.dat
+  [1,16,0,-4,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__48__4_4ring10()],
 // 1 16 0 -4 0 0 0 11 0 1 0 -11 0 0 48\1-6edge.dat
   [1,16,0,-4,0,0,0,11,0,1,0,-11,0,0, ldraw_lib__48__1_6edge()],
 // 1 16 0 -4 0 0 0 -11 0 1 0 -11 0 0 48\1-6edge.dat

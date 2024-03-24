@@ -7,9 +7,9 @@ use <../p/4-4con6.scad>
 use <../p/4-4cylo.scad>
 use <../p/4-4edge.scad>
 use <../p/4-4ndis.scad>
-use <../p/4-4rin12.scad>
-use <../p/4-4rin17.scad>
-use <../p/4-4rin18.scad>
+use <../p/4-4ring12.scad>
+use <../p/4-4ring17.scad>
+use <../p/4-4ring18.scad>
 use <../p/48/4-4cyli.scad>
 use <../p/48/4-4cylo.scad>
 use <../p/48/4-4edge.scad>
@@ -26,7 +26,7 @@ function ldraw_lib__46490() = [
 // 0 ~Technic Steering Wheel Bearing with Planetary Gear Reduction Body Back
 // 0 Name: 46490.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2020-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -34,7 +34,8 @@ function ldraw_lib__46490() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\46490s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__46490s01()],
@@ -98,8 +99,8 @@ function ldraw_lib__46490() = [
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 2.8 14.57143 0 0 0 0 14.57143 0 -4 0 4-4cylo.dat
   [1,16,0,0,2.8,14.57143,0,0,0,0,14.57143,0,-4,0, ldraw_lib__4_4cylo()],
-// 1 16 0 0 5.3 1 0 0 0 0 1 0 -1 0 4-4rin17.dat
-  [1,16,0,0,5.3,1,0,0,0,0,1,0,-1,0, ldraw_lib__4_4rin17()],
+// 1 16 0 0 5.3 1 0 0 0 0 1 0 -1 0 4-4ring17.dat
+  [1,16,0,0,5.3,1,0,0,0,0,1,0,-1,0, ldraw_lib__4_4ring17()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 5.3 2.42857 0 0 0 0 2.42857 0 -2.5 0 4-4con6.dat
@@ -128,12 +129,12 @@ function ldraw_lib__46490() = [
   [1,16,0,0,-12,21.92031,0,21.92031,-21.92031,0,21.92031,0,1,0, ldraw_lib__1_4chrd()],
 // 4 16 13.5 13.5 -12 21.9203 21.9203 -12 21.9203 -21.9203 -12 13.5 -13.5 -12
   [4,16,13.5,13.5,-12,21.9203,21.9203,-12,21.9203,-21.9203,-12,13.5,-13.5,-12],
-// 1 16 0 0 -1.2 1.125 0 0 0 0 1.125 0 -1 0 4-4rin12.dat
-  [1,16,0,0,-1.2,1.125,0,0,0,0,1.125,0,-1,0, ldraw_lib__4_4rin12()],
+// 1 16 0 0 -1.2 1.125 0 0 0 0 1.125 0 -1 0 4-4ring12.dat
+  [1,16,0,0,-1.2,1.125,0,0,0,0,1.125,0,-1,0, ldraw_lib__4_4ring12()],
 // 1 16 0 0 -4.4 19 0 0 0 0 19 0 -5 0 4-4cylo.dat
   [1,16,0,0,-4.4,19,0,0,0,0,19,0,-5,0, ldraw_lib__4_4cylo()],
-// 1 16 0 0 -4.4 1 0 0 0 0 1 0 -1 0 4-4rin18.dat
-  [1,16,0,0,-4.4,1,0,0,0,0,1,0,-1,0, ldraw_lib__4_4rin18()],
+// 1 16 0 0 -4.4 1 0 0 0 0 1 0 -1 0 4-4ring18.dat
+  [1,16,0,0,-4.4,1,0,0,0,0,1,0,-1,0, ldraw_lib__4_4ring18()],
 // 1 16 0 0 -9.4 13.43503 0 -13.43503 13.43503 0 13.43503 0 -1 0 4-4ndis.dat
   [1,16,0,0,-9.4,13.43503,0,-13.43503,13.43503,0,13.43503,0,-1,0, ldraw_lib__4_4ndis()],
 // 4 16 32.8406 8.7992 -9 40 10 -9 40 -10 -9 32.8406 -8.7992 -9

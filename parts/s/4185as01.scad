@@ -7,8 +7,8 @@ use <../../p/1-8ring3.scad>
 use <../../p/2-4ndis.scad>
 use <../../p/3-16cylo.scad>
 use <../../p/3-16ndis.scad>
-use <../../p/3-16rin4.scad>
 use <../../p/3-16ring12.scad>
+use <../../p/3-16ring4.scad>
 use <../../p/48/1-4aring.scad>
 use <../../p/48/1-4con11.scad>
 use <../../p/48/1-4cylo.scad>
@@ -17,7 +17,7 @@ function ldraw_lib__s__4185as01() = [
 // 0 ~Technic Wedge Belt Wheel - Not Reinforced 1/8
 // 0 Name: s\4185as01.dat
 // 0 Author: Max Martin Richter [MMR1988]
-// 0 !LDRAW_ORG Subpart UPDATE 2020-02
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -25,7 +25,8 @@ function ldraw_lib__s__4185as01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 -3.25 30 0 0 0 0 -30 0 -1.125 0 48\1-4cylo.dat
   [1,16,0,0,-3.25,30,0,0,0,0,-30,0,-1.125,0, ldraw_lib__48__1_4cylo()],
@@ -196,8 +197,8 @@ function ldraw_lib__s__4185as01() = [
 // 5 24 7.507 -3.109 -3 7.507 -3.109 -5 7.926 -1 -5 5.745 -5.745 -5
   [5,24,7.507,-3.109,-3,7.507,-3.109,-5,7.926,-1,-5,5.745,-5.745,-5],
 // 
-// 1 16 0 0 -5 0 0 1.5 -1.5 0 0 0 1 0 3-16rin4.dat
-  [1,16,0,0,-5,0,0,1.5,-1.5,0,0,0,1,0, ldraw_lib__3_16rin4()],
+// 1 16 0 0 -5 0 0 1.5 -1.5 0 0 0 1 0 3-16ring4.dat
+  [1,16,0,0,-5,0,0,1.5,-1.5,0,0,0,1,0, ldraw_lib__3_16ring4()],
 // 1 16 0 0 -5 0 0 0.625 -0.625 0 0 0 1 0 3-16ring12.dat
   [1,16,0,0,-5,0,0,0.625,-0.625,0,0,0,1,0, ldraw_lib__3_16ring12()],
 // 

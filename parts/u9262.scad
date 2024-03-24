@@ -3,8 +3,8 @@ use <../p/1-4cylo.scad>
 use <../p/3-4cylo.scad>
 use <../p/4-4cylo.scad>
 use <../p/4-4ndis.scad>
-use <../p/4-4rin12.scad>
 use <../p/4-4ring1.scad>
+use <../p/4-4ring12.scad>
 use <../p/4-4ring2.scad>
 use <../p/box3u2p.scad>
 use <../p/rect.scad>
@@ -14,7 +14,7 @@ function ldraw_lib__u9262() = [
 // 0 ~Brick  2 x  4 x  1.333 with Half Round  2 x  2 Plate Underside
 // 0 Name: u9262.dat
 // 0 Author: Max Martin Richter [MMR1988]
-// 0 !LDRAW_ORG Part UPDATE 2013-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -22,7 +22,8 @@ function ldraw_lib__u9262() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2013-07-21 [PTadmin] Official Update 2013-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // outside frame
 // 
@@ -123,8 +124,8 @@ function ldraw_lib__u9262() = [
   [1,16,27.5,-16.25,0,5,0,0,0,7.5,0,0,0,5, ldraw_lib__4_4cylo()],
 // 1 16 27.5 -16.25 0 2.5 0 0 0 1 0 0 0 2.5 4-4ring2.dat
   [1,16,27.5,-16.25,0,2.5,0,0,0,1,0,0,0,2.5, ldraw_lib__4_4ring2()],
-// 1 16 27.5 -16.25 0 0.625 0 0 0 1 0 0 0 0.625 4-4rin12.dat
-  [1,16,27.5,-16.25,0,0.625,0,0,0,1,0,0,0,0.625, ldraw_lib__4_4rin12()],
+// 1 16 27.5 -16.25 0 0.625 0 0 0 1 0 0 0 0.625 4-4ring12.dat
+  [1,16,27.5,-16.25,0,0.625,0,0,0,1,0,0,0,0.625, ldraw_lib__4_4ring12()],
 // 1 16 27.5 -3.5 0 5.746 0 -5.745 0 -12.75 0 5.745 0 5.746 3-4cylo.dat
   [1,16,27.5,-3.5,0,5.746,0,-5.745,0,-12.75,0,5.745,0,5.746, ldraw_lib__3_4cylo()],
 // 1 16 27.5 -4.5 0 5.745 0 5.746 0 -11.75 0 -5.746 0 5.745 1-4cylo.dat
@@ -159,8 +160,8 @@ function ldraw_lib__u9262() = [
   [1,16,-27.5,-16.25,0,5,0,0,0,7.5,0,0,0,5, ldraw_lib__4_4cylo()],
 // 1 16 -27.5 -16.25 0 2.5 0 0 0 1 0 0 0 2.5 4-4ring2.dat
   [1,16,-27.5,-16.25,0,2.5,0,0,0,1,0,0,0,2.5, ldraw_lib__4_4ring2()],
-// 1 16 -27.5 -16.25 0 0.625 0 0 0 1 0 0 0 0.625 4-4rin12.dat
-  [1,16,-27.5,-16.25,0,0.625,0,0,0,1,0,0,0,0.625, ldraw_lib__4_4rin12()],
+// 1 16 -27.5 -16.25 0 0.625 0 0 0 1 0 0 0 0.625 4-4ring12.dat
+  [1,16,-27.5,-16.25,0,0.625,0,0,0,1,0,0,0,0.625, ldraw_lib__4_4ring12()],
 // 1 16 -27.5 -3.5 0 -5.746 0 5.745 0 -12.75 0 -5.745 0 -5.746 3-4cylo.dat
   [1,16,-27.5,-3.5,0,-5.746,0,5.745,0,-12.75,0,-5.745,0,-5.746, ldraw_lib__3_4cylo()],
 // 1 16 -27.5 -4.5 0 -5.745 0 -5.746 0 -11.75 0 5.746 0 -5.745 1-4cylo.dat

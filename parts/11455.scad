@@ -11,7 +11,7 @@ use <../p/2-4edge.scad>
 use <../p/2-4ndis.scad>
 use <../p/2-4ring8.scad>
 use <../p/3-16edge.scad>
-use <../p/3-16rin8.scad>
+use <../p/3-16ring8.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4edge.scad>
 use <../p/4-4ring3.scad>
@@ -22,7 +22,7 @@ function ldraw_lib__11455() = [
 // 0 Technic Link  2 x  4 Bent 90 with One Offset Transverse Peghole
 // 0 Name: 11455.dat
 // 0 Author: Magnus Forsberg [MagFors]
-// 0 !LDRAW_ORG Part UPDATE 2013-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -30,7 +30,8 @@ function ldraw_lib__11455() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2013-07-21 [PTadmin] Official Update 2013-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 connhole.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__connhole()],
@@ -360,8 +361,8 @@ function ldraw_lib__11455() = [
   [1,16,20,0,50,-1,0,0,0,0,1,0,1,0, ldraw_lib__2_4ring8()],
 // 1 16 20 0 52 0 0 -1 -1 0 0 0 1 0 1-4ring8.dat
   [1,16,20,0,52,0,0,-1,-1,0,0,0,1,0, ldraw_lib__1_4ring8()],
-// 1 16 20 0 52 0.9239 0 -0.3827 -0.3827 0 -0.9239 0 1 0 3-16rin8.dat
-  [1,16,20,0,52,0.9239,0,-0.3827,-0.3827,0,-0.9239,0,1,0, ldraw_lib__3_16rin8()],
+// 1 16 20 0 52 0.9239 0 -0.3827 -0.3827 0 -0.9239 0 1 0 3-16ring8.dat
+  [1,16,20,0,52,0.9239,0,-0.3827,-0.3827,0,-0.9239,0,1,0, ldraw_lib__3_16ring8()],
 // 2 24 28.315 -3.444 52 28 0 52
   [2,24,28.315,-3.444,52,28,0,52],
 // 2 24 28.315 -3.444 52 28 0 50

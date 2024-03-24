@@ -2,7 +2,7 @@ use <../lib.scad>
 use <../p/1-4con12.scad>
 use <../p/1-4con7.scad>
 use <../p/1-4con8.scad>
-use <../p/1-4rin13.scad>
+use <../p/1-4ring13.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4edge.scad>
 use <../p/4-4ring1.scad>
@@ -12,7 +12,7 @@ function ldraw_lib__995() = [
 // 0 ~Train Wheel Large with Pin Axle Hole
 // 0 Name: 995.dat
 // 0 Author: Reinhard "Ben" Beneke [Ben_aus_BS]
-// 0 !LDRAW_ORG Part UPDATE 2011-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CW
@@ -20,7 +20,8 @@ function ldraw_lib__995() = [
   [0,"BFC","CW"],
 // 
 // 0 !HISTORY 2011-07-25 [PTadmin] Official Update 2011-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 4 4 0 0 0 0 4 0 -2 0 1-4con7.dat
   [1,16,0,0,4,4,0,0,0,0,4,0,-2,0, ldraw_lib__1_4con7()],
@@ -30,14 +31,14 @@ function ldraw_lib__995() = [
   [1,16,0,0,4,-4,0,0,0,0,-4,0,-2,0, ldraw_lib__1_4con7()],
 // 1 16 0 0 4 0 0 4 -4 0 0 0 -2 0 1-4con7.dat
   [1,16,0,0,4,0,0,4,-4,0,0,0,-2,0, ldraw_lib__1_4con7()],
-// 1 16 0 0 -10 0 0 2 -2 0 0 0 2 0 1-4rin13.dat
-  [1,16,0,0,-10,0,0,2,-2,0,0,0,2,0, ldraw_lib__1_4rin13()],
-// 1 16 0 0 -10 2 0 0 0 0 2 0 2 0 1-4rin13.dat
-  [1,16,0,0,-10,2,0,0,0,0,2,0,2,0, ldraw_lib__1_4rin13()],
-// 1 16 0 0 -10 0 0 -2 2 0 0 0 2 0 1-4rin13.dat
-  [1,16,0,0,-10,0,0,-2,2,0,0,0,2,0, ldraw_lib__1_4rin13()],
-// 1 16 0 0 -10 -2 0 0 0 0 -2 0 2 0 1-4rin13.dat
-  [1,16,0,0,-10,-2,0,0,0,0,-2,0,2,0, ldraw_lib__1_4rin13()],
+// 1 16 0 0 -10 0 0 2 -2 0 0 0 2 0 1-4ring13.dat
+  [1,16,0,0,-10,0,0,2,-2,0,0,0,2,0, ldraw_lib__1_4ring13()],
+// 1 16 0 0 -10 2 0 0 0 0 2 0 2 0 1-4ring13.dat
+  [1,16,0,0,-10,2,0,0,0,0,2,0,2,0, ldraw_lib__1_4ring13()],
+// 1 16 0 0 -10 0 0 -2 2 0 0 0 2 0 1-4ring13.dat
+  [1,16,0,0,-10,0,0,-2,2,0,0,0,2,0, ldraw_lib__1_4ring13()],
+// 1 16 0 0 -10 -2 0 0 0 0 -2 0 2 0 1-4ring13.dat
+  [1,16,0,0,-10,-2,0,0,0,0,-2,0,2,0, ldraw_lib__1_4ring13()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 -10 0 0 2 2 0 0 0 2 0 1-4con12.dat

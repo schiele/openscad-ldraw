@@ -1,16 +1,16 @@
 use <../lib.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4ndis.scad>
-use <../p/4-4rin45.scad>
-use <../p/4-4rin46.scad>
 use <../p/4-4ring3.scad>
+use <../p/4-4ring45.scad>
+use <../p/4-4ring46.scad>
 use <../p/4-4ring8.scad>
 use <s/2431s01.scad>
 function ldraw_lib__2431pz6() = [
 // 0 Tile  1 x  4 with Dark Red Lines and White and Yellow Circle Pattern
 // 0 Name: 2431pz6.dat
 // 0 Author: Damien Roux [Darats]
-// 0 !LDRAW_ORG Part UPDATE 2019-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -20,7 +20,8 @@ function ldraw_lib__2431pz6() = [
 // 0 !KEYWORDS Brickheadz, Iron Man, Set 41492
 // 
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2431s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2431s01()],
@@ -31,10 +32,10 @@ function ldraw_lib__2431pz6() = [
   [1,14,0,0,0,2,0,0,0,1,0,0,0,2, ldraw_lib__4_4ring3()],
 // 1 0 0 0 0 1 0 0 0 1 0 0 0 1 4-4ring8.dat
   [1,0,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4ring8()],
-// 1 0 0 0 0 0.2 0 0 0 1 0 0 0 0.2 4-4rin45.dat
-  [1,0,0,0,0,0.2,0,0,0,1,0,0,0,0.2, ldraw_lib__4_4rin45()],
-// 1 0 0 0 0 0.2 0 0 0 1 0 0 0 0.2 4-4rin46.dat
-  [1,0,0,0,0,0.2,0,0,0,1,0,0,0,0.2, ldraw_lib__4_4rin46()],
+// 1 0 0 0 0 0.2 0 0 0 1 0 0 0 0.2 4-4ring45.dat
+  [1,0,0,0,0,0.2,0,0,0,1,0,0,0,0.2, ldraw_lib__4_4ring45()],
+// 1 0 0 0 0 0.2 0 0 0 1 0 0 0 0.2 4-4ring46.dat
+  [1,0,0,0,0,0.2,0,0,0,1,0,0,0,0.2, ldraw_lib__4_4ring46()],
 // 1 16 0 0 0 9.4 0 0 0 1 0 0 0 9.4 4-4ndis.dat
   [1,16,0,0,0,9.4,0,0,0,1,0,0,0,9.4, ldraw_lib__4_4ndis()],
 // 4 16 -39 0 -0.62 -40 0 10 -40 0 -10 -39 0 -2.14

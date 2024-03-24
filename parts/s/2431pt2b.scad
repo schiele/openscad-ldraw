@@ -3,16 +3,16 @@ use <../../p/1-16chrd.scad>
 use <../../p/1-16tang.scad>
 use <../../p/1-4tang.scad>
 use <../../p/1-8chrd.scad>
-use <../../p/2-4rin11.scad>
+use <../../p/2-4ring11.scad>
 use <../../p/2-4ring4.scad>
 use <../../p/2-4ring7.scad>
 use <../../p/3-16tang.scad>
-use <../../p/4-4rin10.scad>
+use <../../p/4-4ring10.scad>
 function ldraw_lib__s__2431pt2b() = [
 // 0 ~Tile  1 x  4 with "Octan" Pattern - Border for "Oc"
 // 0 Name: s\2431pt2b.dat
 // 0 Author: Alex Taylor [anathema]
-// 0 !LDRAW_ORG Subpart UPDATE 2022-03
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 !HELP Use in conjunction with s\2431pt2a.dat & s\2431pt2c.dat
@@ -24,11 +24,12 @@ function ldraw_lib__s__2431pt2b() = [
 // 0 !HISTORY 2010-04-05 [PTadmin] Official Update 2010-01
 // 0 !HISTORY 2021-02-25 [Sirio] Removed overlapping
 // 0 !HISTORY 2022-05-07 [PTadmin] Official Update 2022-03
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Primitives
-// 1 16 -254 0 0 8 0 0 0 1 0 0 0 8 4-4rin10.dat
-  [1,16,-254,0,0,8,0,0,0,1,0,0,0,8, ldraw_lib__4_4rin10()],
+// 1 16 -254 0 0 8 0 0 0 1 0 0 0 8 4-4ring10.dat
+  [1,16,-254,0,0,8,0,0,0,1,0,0,0,8, ldraw_lib__4_4ring10()],
 // 1 16 -254 0 0 24 0 0 0 1 0 0 0 32 1-4tang.dat
   [1,16,-254,0,0,24,0,0,0,1,0,0,0,32, ldraw_lib__1_4tang()],
 // 1 16 -254 0 0 -24 0 0 0 1 0 0 0 32 1-4tang.dat
@@ -63,8 +64,8 @@ function ldraw_lib__s__2431pt2b() = [
   [1,16,-99,0,-15,0,0,72,0,1,0,-56,0,0, ldraw_lib__1_16tang()],
 // 1 16 -99 0 -15 0 0 80 0 1 0 -64 0 0 1-16chrd.dat
   [1,16,-99,0,-15,0,0,80,0,1,0,-64,0,0, ldraw_lib__1_16chrd()],
-// 1 16 -86 0 -15 0 0 -2 0 1 0 2 0 0 2-4rin11.dat
-  [1,16,-86,0,-15,0,0,-2,0,1,0,2,0,0, ldraw_lib__2_4rin11()],
+// 1 16 -86 0 -15 0 0 -2 0 1 0 2 0 0 2-4ring11.dat
+  [1,16,-86,0,-15,0,0,-2,0,1,0,2,0,0, ldraw_lib__2_4ring11()],
 // 1 16 -86 0 -15 0 0 -6 0 1 0 6 0 0 2-4ring4.dat
   [1,16,-86,0,-15,0,0,-6,0,1,0,6,0,0, ldraw_lib__2_4ring4()],
 // 1 16 -86 0 -15 0 0 40 0 1 0 -30 0 0 1-8chrd.dat

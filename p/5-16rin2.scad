@@ -1,9 +1,9 @@
 use <../lib.scad>
 function ldraw_lib__5_16rin2() = [
-// 0 Ring  2 x 0.3125
+// 0 ~Ring  2 x 0.3125 (Obsolete)
 // 0 Name: 5-16rin2.dat
 // 0 Author: Alex Taylor [anathema]
-// 0 !LDRAW_ORG Primitive UPDATE 2011-01
+// 0 !LDRAW_ORG Primitive UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -11,7 +11,8 @@ function ldraw_lib__5_16rin2() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2011-07-25 [PTadmin] Official Update 2011-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Obsolete, use 5-16ring2.dat
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 4 16 2 0 0 3 0 0 2.7717 0 1.1481 1.8478 0 0.7654
   [4,16,2,0,0,3,0,0,2.7717,0,1.1481,1.8478,0,0.7654],

@@ -1,7 +1,7 @@
 use <../../lib.scad>
 use <../../p/1-8cylo.scad>
 use <../../p/1-8edge.scad>
-use <../../p/1-8rin19.scad>
+use <../../p/1-8ring19.scad>
 use <../../p/4-4disc.scad>
 use <../../p/4-4edge.scad>
 use <../../p/rect2a.scad>
@@ -11,7 +11,7 @@ function ldraw_lib__s__2654bs01() = [
 // 0 ~Dish  2 x  2 without Rim - Stud with Quarter Edge
 // 0 Name: s\2654bs01.dat
 // 0 Author: Evert-Jan Boer [ejboer]
-// 0 !LDRAW_ORG Subpart UPDATE 2020-03
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -19,7 +19,8 @@ function ldraw_lib__s__2654bs01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 -10 0 10 0 0 -1 0 1 0 1 0 0 stud6a.dat
   [1,16,-10,0,10,0,0,-1,0,1,0,1,0,0, ldraw_lib__stud6a()],
@@ -30,8 +31,8 @@ function ldraw_lib__s__2654bs01() = [
 // 
 // 1 16 0 1.125 0 7.65367 0 -18.47759 0 1 0 18.47759 0 7.65367 1-8edge.dat
   [1,16,0,1.125,0,7.65367,0,-18.47759,0,1,0,18.47759,0,7.65367, ldraw_lib__1_8edge()],
-// 1 16 0 1.125 0 0.38268 0 -0.92388 0 1 0 0.92388 0 0.38268 1-8rin19.dat
-  [1,16,0,1.125,0,0.38268,0,-0.92388,0,1,0,0.92388,0,0.38268, ldraw_lib__1_8rin19()],
+// 1 16 0 1.125 0 0.38268 0 -0.92388 0 1 0 0.92388 0 0.38268 1-8ring19.dat
+  [1,16,0,1.125,0,0.38268,0,-0.92388,0,1,0,0.92388,0,0.38268, ldraw_lib__1_8ring19()],
 // 1 16 0 0 0 7.27099 0 -17.55371 0 1.125 0 17.55371 0 7.27099 1-8cylo.dat
   [1,16,0,0,0,7.27099,0,-17.55371,0,1.125,0,17.55371,0,7.27099, ldraw_lib__1_8cylo()],
 // 

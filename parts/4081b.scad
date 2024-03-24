@@ -2,11 +2,11 @@ use <../lib.scad>
 use <../p/1-4cylo.scad>
 use <../p/1-4ring3.scad>
 use <../p/3-16cylo.scad>
-use <../p/3-16rin3.scad>
+use <../p/3-16ring3.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4edge.scad>
 use <../p/5-16cylo.scad>
-use <../p/5-16rin3.scad>
+use <../p/5-16ring3.scad>
 use <../p/box4-2p.scad>
 use <../p/box4o8a.scad>
 use <../p/box5.scad>
@@ -19,7 +19,7 @@ function ldraw_lib__4081b() = [
 // 0 Plate  1 x  1 with Clip Light Type 2
 // 0 Name: 4081b.dat
 // 0 Author: James Jessiman
-// 0 !LDRAW_ORG Part UPDATE 2022-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -36,7 +36,8 @@ function ldraw_lib__4081b() = [
 // 0 !HISTORY 2020-06-04 [Sirio] Updated the use of primitives
 // 0 !HISTORY 2021-10-30 [MagFors] Removed unwanted edges and surface bleeding
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 4 -10 -10 0 0 0 0 -4 0 20 0 box4-2p.dat
   [1,16,0,4,-10,-10,0,0,0,0,-4,0,20,0, ldraw_lib__box4_2p()],
@@ -75,16 +76,16 @@ function ldraw_lib__4081b() = [
 // 1 16 4 2 -20 0 -8 0 4 0 0 0 0 4 4-4cyli.dat
   [1,16,4,2,-20,0,-8,0,4,0,0,0,0,4, ldraw_lib__4_4cyli()],
 // 
-// 1 16 4 2 -20 0 -1 0 -2 0 0 0 0 2 3-16rin3.dat
-  [1,16,4,2,-20,0,-1,0,-2,0,0,0,0,2, ldraw_lib__3_16rin3()],
-// 1 16 4 2 -20 0 -1 0 0 0 2 -2 0 0 5-16rin3.dat
-  [1,16,4,2,-20,0,-1,0,0,0,2,-2,0,0, ldraw_lib__5_16rin3()],
+// 1 16 4 2 -20 0 -1 0 -2 0 0 0 0 2 3-16ring3.dat
+  [1,16,4,2,-20,0,-1,0,-2,0,0,0,0,2, ldraw_lib__3_16ring3()],
+// 1 16 4 2 -20 0 -1 0 0 0 2 -2 0 0 5-16ring3.dat
+  [1,16,4,2,-20,0,-1,0,0,0,2,-2,0,0, ldraw_lib__5_16ring3()],
 // 1 16 4 2 -20 0 -1 0 0 0 -2 -2 0 0 1-4ring3.dat
   [1,16,4,2,-20,0,-1,0,0,0,-2,-2,0,0, ldraw_lib__1_4ring3()],
-// 1 16 -4 2 -20 0 1 0 -2 0 0 0 0 2 3-16rin3.dat
-  [1,16,-4,2,-20,0,1,0,-2,0,0,0,0,2, ldraw_lib__3_16rin3()],
-// 1 16 -4 2 -20 0 1 0 0 0 2 -2 0 0 5-16rin3.dat
-  [1,16,-4,2,-20,0,1,0,0,0,2,-2,0,0, ldraw_lib__5_16rin3()],
+// 1 16 -4 2 -20 0 1 0 -2 0 0 0 0 2 3-16ring3.dat
+  [1,16,-4,2,-20,0,1,0,-2,0,0,0,0,2, ldraw_lib__3_16ring3()],
+// 1 16 -4 2 -20 0 1 0 0 0 2 -2 0 0 5-16ring3.dat
+  [1,16,-4,2,-20,0,1,0,0,0,2,-2,0,0, ldraw_lib__5_16ring3()],
 // 1 16 -4 2 -20 0 1 0 0 0 -2 -2 0 0 1-4ring3.dat
   [1,16,-4,2,-20,0,1,0,0,0,-2,-2,0,0, ldraw_lib__1_4ring3()],
 // 1 16 4 2 -20 0 -8 0 -8 0 0 0 0 -8 1-4cylo.dat

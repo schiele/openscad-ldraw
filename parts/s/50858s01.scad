@@ -10,7 +10,7 @@ use <../../p/3-8edge.scad>
 use <../../p/4-4cylc.scad>
 use <../../p/4-4cyli.scad>
 use <../../p/4-4edge.scad>
-use <../../p/4-4rin18.scad>
+use <../../p/4-4ring18.scad>
 use <../../p/4-4ring2.scad>
 use <../../p/4-4ring5.scad>
 use <../../p/rect.scad>
@@ -22,7 +22,7 @@ function ldraw_lib__s__50858s01() = [
 // 0 ~Constraction Foot  2 x  7 Pointed with 3 Pegholes - Half without Holes
 // 0 Name: s\50858s01.dat
 // 0 Author: Santeri Piippo [arezey]
-// 0 !LDRAW_ORG Subpart UPDATE 2019-03
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -32,7 +32,8 @@ function ldraw_lib__s__50858s01() = [
 // 0 !HISTORY 2014-06-21 [PTadmin] Official Update 2014-01
 // 0 !HISTORY 2019-10-18 [cwdee] Update description
 // 0 !HISTORY 2019-12-27 [PTadmin] Official Update 2019-03
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 3 16 3.058 8.874 -86.229 2.64 8.76 -86.087 2.64 10 -88.817
   [3,16,3.058,8.874,-86.229,2.64,8.76,-86.087,2.64,10,-88.817],
@@ -1992,8 +1993,8 @@ function ldraw_lib__s__50858s01() = [
   [1,16,15.319,-2,15.11,0,0,0.5,0,1,0,-0.5,0,0, ldraw_lib__4_4ring5()],
 // 1 16 15.319 -2 15.11 0 0 0.6 0 1 0 -0.6 0 0 4-4ring5.dat
   [1,16,15.319,-2,15.11,0,0,0.6,0,1,0,-0.6,0,0, ldraw_lib__4_4ring5()],
-// 1 16 15.319 -2 15.11 0 0 0.2 0 1 0 -0.2 0 0 4-4rin18.dat
-  [1,16,15.319,-2,15.11,0,0,0.2,0,1,0,-0.2,0,0, ldraw_lib__4_4rin18()],
+// 1 16 15.319 -2 15.11 0 0 0.2 0 1 0 -0.2 0 0 4-4ring18.dat
+  [1,16,15.319,-2,15.11,0,0,0.2,0,1,0,-0.2,0,0, ldraw_lib__4_4ring18()],
 // 1 16 15.319 -2 15.11 0 0 -3.8 0 1 0 3.8 0 0 2-4ndis.dat
   [1,16,15.319,-2,15.11,0,0,-3.8,0,1,0,3.8,0,0, ldraw_lib__2_4ndis()],
 // 4 16 11.52 -2 18.91 6.943 -2 25.498 6.943 -2 11.31 11.52 -2 11.31
@@ -2014,8 +2015,8 @@ function ldraw_lib__s__50858s01() = [
   [1,16,15.319,8,15.11,0,0,0.5,0,-1,0,0.5,0,0, ldraw_lib__4_4ring5()],
 // 1 16 15.319 8 15.11 0 0 0.6 0 -1 0 0.6 0 0 4-4ring5.dat
   [1,16,15.319,8,15.11,0,0,0.6,0,-1,0,0.6,0,0, ldraw_lib__4_4ring5()],
-// 1 16 15.319 8 15.11 0 0 0.2 0 -1 0 0.2 0 0 4-4rin18.dat
-  [1,16,15.319,8,15.11,0,0,0.2,0,-1,0,0.2,0,0, ldraw_lib__4_4rin18()],
+// 1 16 15.319 8 15.11 0 0 0.2 0 -1 0 0.2 0 0 4-4ring18.dat
+  [1,16,15.319,8,15.11,0,0,0.2,0,-1,0,0.2,0,0, ldraw_lib__4_4ring18()],
 // 1 16 15.319 8 15.11 0 0 -3.8 0 -1 0 -3.8 0 0 2-4ndis.dat
   [1,16,15.319,8,15.11,0,0,-3.8,0,-1,0,-3.8,0,0, ldraw_lib__2_4ndis()],
 // 4 16 11.52 8 11.31 6.943 8 11.31 6.943 8 25.498 11.52 8 18.91

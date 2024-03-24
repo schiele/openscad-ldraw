@@ -1,7 +1,7 @@
 use <../../lib.scad>
 use <../../p/2-4cyli.scad>
 use <../../p/2-4edge.scad>
-use <../../p/2-4rin14.scad>
+use <../../p/2-4ring14.scad>
 use <../../p/2-4ring7.scad>
 use <../../p/2-4ring8.scad>
 use <../../p/4-4cyli.scad>
@@ -19,7 +19,7 @@ function ldraw_lib__s__47325s03() = [
 // 0 ~Technic Connector  2 x  3 with Ball Socket - Socket End
 // 0 Name: s\47325s03.dat
 // 0 Author: Michael Heidemann [mikeheide]
-// 0 !LDRAW_ORG Subpart UPDATE 2022-02
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -28,7 +28,8 @@ function ldraw_lib__s__47325s03() = [
 // 
 // 0 !HISTORY 2018-11-11 [MagFors] Semi-reduced axle holes
 // 0 !HISTORY 2022-03-06 [PTadmin] Official Update 2022-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\47325s02.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__47325s02()],
@@ -74,10 +75,10 @@ function ldraw_lib__s__47325s03() = [
   [1,16,20,0,0,0,-1,0,-1,0,0,0,0,-1, ldraw_lib__4_4ring6()],
 // 1 16 -20 0 0 0 1 0 -1 0 0 0 0 1 4-4ring6.dat
   [1,16,-20,0,0,0,1,0,-1,0,0,0,0,1, ldraw_lib__4_4ring6()],
-// 1 16 20 0 0 0 -1 0 -0.5 0 0 0 0 -0.5 2-4rin14.dat
-  [1,16,20,0,0,0,-1,0,-0.5,0,0,0,0,-0.5, ldraw_lib__2_4rin14()],
-// 1 16 -20 0 0 0 1 0 0.5 0 0 0 0 -0.5 2-4rin14.dat
-  [1,16,-20,0,0,0,1,0,0.5,0,0,0,0,-0.5, ldraw_lib__2_4rin14()],
+// 1 16 20 0 0 0 -1 0 -0.5 0 0 0 0 -0.5 2-4ring14.dat
+  [1,16,20,0,0,0,-1,0,-0.5,0,0,0,0,-0.5, ldraw_lib__2_4ring14()],
+// 1 16 -20 0 0 0 1 0 0.5 0 0 0 0 -0.5 2-4ring14.dat
+  [1,16,-20,0,0,0,1,0,0.5,0,0,0,0,-0.5, ldraw_lib__2_4ring14()],
 // 1 16 20 0 0 0 -1 0 1 0 0 0 0 1 2-4ring8.dat
   [1,16,20,0,0,0,-1,0,1,0,0,0,0,1, ldraw_lib__2_4ring8()],
 // 1 16 -20 0 0 0 1 0 -1 0 0 0 0 1 2-4ring8.dat

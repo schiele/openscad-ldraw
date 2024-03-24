@@ -6,14 +6,14 @@ use <2-4ndis.scad>
 use <4-4con10.scad>
 use <4-4disc.scad>
 use <4-4edge.scad>
-use <4-4rin11.scad>
-use <4-4rin12.scad>
+use <4-4ring11.scad>
+use <4-4ring12.scad>
 use <rect3.scad>
 function ldraw_lib__arm1() = [
 // 0 Hinge Arm 2 Finger
 // 0 Name: arm1.dat
 // 0 Author: James Jessiman
-// 0 !LDRAW_ORG Primitive UPDATE 2016-01
+// 0 !LDRAW_ORG Primitive UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -26,7 +26,8 @@ function ldraw_lib__arm1() = [
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
 // 0 !HISTORY 2014-01-05 [MMR1988] Reworked to match 16 sided primitives
 // 0 !HISTORY 2016-12-31 [PTadmin] Official Update 2016-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 -7.07107 0 7.07107 7.07107 0 7.07107 0 1 0 1-4chrd.dat
   [1,16,0,0,0,-7.07107,0,7.07107,7.07107,0,7.07107,0,1,0, ldraw_lib__1_4chrd()],
@@ -289,10 +290,10 @@ function ldraw_lib__arm1() = [
   [1,16,0,5.75,-10,0.25,0,0,0,-0.25,0,0,0,0.25, ldraw_lib__4_4con10()],
 // 1 16 0 5.75 -10 2.75 0 0 0 1 0 0 0 -2.75 4-4edge.dat
   [1,16,0,5.75,-10,2.75,0,0,0,1,0,0,0,-2.75, ldraw_lib__4_4edge()],
-// 1 16 0 5.75 -10 0.25 0 0 0 -1 0 0 0 0.25 4-4rin11.dat
-  [1,16,0,5.75,-10,0.25,0,0,0,-1,0,0,0,0.25, ldraw_lib__4_4rin11()],
-// 1 16 0 5.75 -10 0.25 0 0 0 -1 0 0 0 0.25 4-4rin12.dat
-  [1,16,0,5.75,-10,0.25,0,0,0,-1,0,0,0,0.25, ldraw_lib__4_4rin12()],
+// 1 16 0 5.75 -10 0.25 0 0 0 -1 0 0 0 0.25 4-4ring11.dat
+  [1,16,0,5.75,-10,0.25,0,0,0,-1,0,0,0,0.25, ldraw_lib__4_4ring11()],
+// 1 16 0 5.75 -10 0.25 0 0 0 -1 0 0 0 0.25 4-4ring12.dat
+  [1,16,0,5.75,-10,0.25,0,0,0,-1,0,0,0,0.25, ldraw_lib__4_4ring12()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 6 -10 3.25 0 0 0 -0.25 0 0 0 3.25 2-4cylo.dat
@@ -580,10 +581,10 @@ function ldraw_lib__arm1() = [
   [1,16,0,-5.75,-10,-0.25,0,0,0,0.25,0,0,0,0.25, ldraw_lib__4_4con10()],
 // 1 16 0 -5.75 -10 -2.75 0 0 0 -1 0 0 0 -2.75 4-4edge.dat
   [1,16,0,-5.75,-10,-2.75,0,0,0,-1,0,0,0,-2.75, ldraw_lib__4_4edge()],
-// 1 16 0 -5.75 -10 -0.25 0 0 0 1 0 0 0 0.25 4-4rin11.dat
-  [1,16,0,-5.75,-10,-0.25,0,0,0,1,0,0,0,0.25, ldraw_lib__4_4rin11()],
-// 1 16 0 -5.75 -10 -0.25 0 0 0 1 0 0 0 0.25 4-4rin12.dat
-  [1,16,0,-5.75,-10,-0.25,0,0,0,1,0,0,0,0.25, ldraw_lib__4_4rin12()],
+// 1 16 0 -5.75 -10 -0.25 0 0 0 1 0 0 0 0.25 4-4ring11.dat
+  [1,16,0,-5.75,-10,-0.25,0,0,0,1,0,0,0,0.25, ldraw_lib__4_4ring11()],
+// 1 16 0 -5.75 -10 -0.25 0 0 0 1 0 0 0 0.25 4-4ring12.dat
+  [1,16,0,-5.75,-10,-0.25,0,0,0,1,0,0,0,0.25, ldraw_lib__4_4ring12()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -6 -10 -3.25 0 0 0 0.25 0 0 0 3.25 2-4cylo.dat

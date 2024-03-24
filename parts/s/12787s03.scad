@@ -13,7 +13,7 @@ use <../../p/2-4edge.scad>
 use <../../p/3-16cylo.scad>
 use <../../p/4-4cyli.scad>
 use <../../p/4-4edge.scad>
-use <../../p/4-4rin12.scad>
+use <../../p/4-4ring12.scad>
 use <../../p/4-4ring2.scad>
 use <../../p/4-4ring8.scad>
 use <../../p/7-16cyli.scad>
@@ -31,7 +31,7 @@ function ldraw_lib__s__12787s03() = [
 // 0 ~Technic Motor Pull Back  6 x  5 x  3 Common Shell
 // 0 Name: s\12787s03.dat
 // 0 Author: J.C. Tchang [tchang]
-// 0 !LDRAW_ORG Subpart UPDATE 2014-02
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -41,7 +41,8 @@ function ldraw_lib__s__12787s03() = [
 // 0 !HISTORY 2014-11-26 [tchang] Uncolored, BFC'ed 1 face, change 1 edgline position, used Unificator, Change orientation
 // 0 !HISTORY 2014-12-03 [tchang] Corrected DATHeader messages, Suppress some little gaps
 // 0 !HISTORY 2014-12-23 [PTadmin] Official Update 2014-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 30 0 0 0 -1 0 8 0 0 0 0 8 4-4edge.dat
   [1,16,30,0,0,0,-1,0,8,0,0,0,0,8, ldraw_lib__4_4edge()],
@@ -49,8 +50,8 @@ function ldraw_lib__s__12787s03() = [
   [1,16,30,0,0,0,-1,0,9.1924,0,9.1924,-9.1924,0,9.1924, ldraw_lib__2_4edge()],
 // 1 16 30 0 0 0 -1 0 4 0 0 0 0 4 4-4ring2.dat
   [1,16,30,0,0,0,-1,0,4,0,0,0,0,4, ldraw_lib__4_4ring2()],
-// 1 16 30 0 0 0 -1 0 1 0 0 0 0 1 4-4rin12.dat
-  [1,16,30,0,0,0,-1,0,1,0,0,0,0,1, ldraw_lib__4_4rin12()],
+// 1 16 30 0 0 0 -1 0 1 0 0 0 0 1 4-4ring12.dat
+  [1,16,30,0,0,0,-1,0,1,0,0,0,0,1, ldraw_lib__4_4ring12()],
 // 4 16 10 -14.437 8 27 -14.437 8 27 -11.314 11.314 10 -11.314 11.314
   [4,16,10,-14.437,8,27,-14.437,8,27,-11.314,11.314,10,-11.314,11.314],
 // 2 24 27 -11.314 11.314 27 -14.437 8

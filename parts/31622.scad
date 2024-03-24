@@ -3,8 +3,8 @@ use <../p/4-4edge.scad>
 use <../p/4-4ndis.scad>
 use <../p/48/1-4chrd.scad>
 use <../p/48/4-4cylo.scad>
-use <../p/48/4-4rin11.scad>
-use <../p/48/4-4rin17.scad>
+use <../p/48/4-4ring11.scad>
+use <../p/48/4-4ring17.scad>
 use <../p/box3u8p.scad>
 use <../p/daxlehole.scad>
 use <../p/daxlehub.scad>
@@ -15,7 +15,7 @@ function ldraw_lib__31622() = [
 // 0 Duplo Gear 24 Tooth Crown
 // 0 Name: 31622.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2017-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -23,10 +23,11 @@ function ldraw_lib__31622() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Technic
-// 0 !KEYWORDS dacta, Early Simple Machines
+// 0 !KEYWORDS Early Simple Machines, dacta
 // 
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 -20 0 0 -1 -1 0 0 0 40 0 daxlehub.dat
   [1,16,0,0,-20,0,0,-1,-1,0,0,0,40,0, ldraw_lib__daxlehub()],
@@ -38,16 +39,16 @@ function ldraw_lib__31622() = [
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 -19.5 0 0 51 51 0 0 0 7.5 0 48\4-4cylo.dat
   [1,16,0,0,-19.5,0,0,51,51,0,0,0,7.5,0, ldraw_lib__48__4_4cylo()],
-// 1 16 0 0 -19.5 0 0 3 3 0 0 0 1 0 48\4-4rin17.dat
-  [1,16,0,0,-19.5,0,0,3,3,0,0,0,1,0, ldraw_lib__48__4_4rin17()],
+// 1 16 0 0 -19.5 0 0 3 3 0 0 0 1 0 48\4-4ring17.dat
+  [1,16,0,0,-19.5,0,0,3,3,0,0,0,1,0, ldraw_lib__48__4_4ring17()],
 // 1 16 0 0 -8 0 0 37 37 0 0 0 12 0 48\4-4cylo.dat
   [1,16,0,0,-8,0,0,37,37,0,0,0,12,0, ldraw_lib__48__4_4cylo()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 -8 0 0 33.91667 33.91667 0 0 0 12 0 48\4-4cylo.dat
   [1,16,0,0,-8,0,0,33.91667,33.91667,0,0,0,12,0, ldraw_lib__48__4_4cylo()],
-// 1 16 0 0 4 0 0 3.08333 3.08333 0 0 0 -1 0 48\4-4rin11.dat
-  [1,16,0,0,4,0,0,3.08333,3.08333,0,0,0,-1,0, ldraw_lib__48__4_4rin11()],
+// 1 16 0 0 4 0 0 3.08333 3.08333 0 0 0 -1 0 48\4-4ring11.dat
+  [1,16,0,0,4,0,0,3.08333,3.08333,0,0,0,-1,0, ldraw_lib__48__4_4ring11()],
 // 1 16 0 0 -8 0 0 -24 -24 0 0 0 1 0 4-4edge.dat
   [1,16,0,0,-8,0,0,-24,-24,0,0,0,1,0, ldraw_lib__4_4edge()],
 // 1 16 0 0 -12 0 0 -24 -24 0 0 0 1 0 4-4edge.dat

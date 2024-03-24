@@ -1,5 +1,5 @@
 use <../lib.scad>
-use <../p/1-16rin1.scad>
+use <../p/1-16ring1.scad>
 use <../p/1-16ring8.scad>
 use <../p/1-16tndis.scad>
 use <../p/1-4chrd.scad>
@@ -7,13 +7,13 @@ use <../p/1-4cyli.scad>
 use <../p/1-4ring8.scad>
 use <../p/2-4chrd.scad>
 use <../p/2-4ndis.scad>
-use <../p/2-4rin11.scad>
-use <../p/2-4rin12.scad>
 use <../p/2-4ring1.scad>
-use <../p/3-16rin8.scad>
+use <../p/2-4ring11.scad>
+use <../p/2-4ring12.scad>
 use <../p/3-16ring1.scad>
 use <../p/3-16ring11.scad>
 use <../p/3-16ring12.scad>
+use <../p/3-16ring8.scad>
 use <../p/3-16tndis.scad>
 use <../p/3-4ndis.scad>
 use <../p/3-4ring1.scad>
@@ -21,12 +21,12 @@ use <../p/3-4ring8.scad>
 use <../p/4-4disc.scad>
 use <../p/7-16chrd.scad>
 use <../p/7-16ndis.scad>
-use <../p/7-16rin1.scad>
+use <../p/7-16ring1.scad>
 function ldraw_lib__6141875a() = [
 // 0 Sticker  0.8 x  1.8 with White Number Plate "y9172" on Black Background
 // 0 Name: 6141875a.dat
 // 0 Author: Massimo Maso [Sirio]
-// 0 !LDRAW_ORG Part UPDATE 2022-06
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -37,7 +37,8 @@ function ldraw_lib__6141875a() = [
 // 0 !KEYWORDS Rebrickable 24760, Set 75875, Speed Champions
 // 
 // 0 !HISTORY 2022-12-20 [PTadmin] Official Update 2022-06
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Primitives
 // 
@@ -83,32 +84,32 @@ function ldraw_lib__6141875a() = [
   [1,15,-5.9,-.25,1.35,0,0,.3,0,1,0,-.3,0,0, ldraw_lib__1_16ring8()],
 // 1 15 -5.9 -.25 1.35 1.2 0 0 0 1 0 0 0 1.2 3-4ring1.dat
   [1,15,-5.9,-.25,1.35,1.2,0,0,0,1,0,0,0,1.2, ldraw_lib__3_4ring1()],
-// 1 15 -5.9 -.25 1.35 0 0 1.2 0 1 0 -1.2 0 0 1-16rin1.dat
-  [1,15,-5.9,-.25,1.35,0,0,1.2,0,1,0,-1.2,0,0, ldraw_lib__1_16rin1()],
+// 1 15 -5.9 -.25 1.35 0 0 1.2 0 1 0 -1.2 0 0 1-16ring1.dat
+  [1,15,-5.9,-.25,1.35,0,0,1.2,0,1,0,-1.2,0,0, ldraw_lib__1_16ring1()],
 // 1 15 -5.9 -.25 1.35 1.2 0 0 0 1 0 0 0 -1.2 3-16tndis.dat
   [1,15,-5.9,-.25,1.35,1.2,0,0,0,1,0,0,0,-1.2, ldraw_lib__3_16tndis()],
 // 1 0 -5.9 -.25 1.35 1.2 0 0 0 1 0 0 0 1.2 4-4disc.dat
   [1,0,-5.9,-.25,1.35,1.2,0,0,0,1,0,0,0,1.2, ldraw_lib__4_4disc()],
 // 1 0 -5.9 -.25 -1.35 1.2 0 0 0 1 0 0 0 -1.2 7-16chrd.dat
   [1,0,-5.9,-.25,-1.35,1.2,0,0,0,1,0,0,0,-1.2, ldraw_lib__7_16chrd()],
-// 1 15 -5.9 -.25 -1.35 1.2 0 0 0 1 0 0 0 -1.2 7-16rin1.dat
-  [1,15,-5.9,-.25,-1.35,1.2,0,0,0,1,0,0,0,-1.2, ldraw_lib__7_16rin1()],
+// 1 15 -5.9 -.25 -1.35 1.2 0 0 0 1 0 0 0 -1.2 7-16ring1.dat
+  [1,15,-5.9,-.25,-1.35,1.2,0,0,0,1,0,0,0,-1.2, ldraw_lib__7_16ring1()],
 // 1 15 -5.9 -.25 -1.35 .3 0 0 0 1 0 0 0 -.3 1-4ring8.dat
   [1,15,-5.9,-.25,-1.35,.3,0,0,0,1,0,0,0,-.3, ldraw_lib__1_4ring8()],
-// 1 15 -5.9 -.25 -1.35 0 0 -.3 0 1 0 -.3 0 0 3-16rin8.dat
-  [1,15,-5.9,-.25,-1.35,0,0,-.3,0,1,0,-.3,0,0, ldraw_lib__3_16rin8()],
+// 1 15 -5.9 -.25 -1.35 0 0 -.3 0 1 0 -.3 0 0 3-16ring8.dat
+  [1,15,-5.9,-.25,-1.35,0,0,-.3,0,1,0,-.3,0,0, ldraw_lib__3_16ring8()],
 // 1 0 -5.9 -.25 -1.35 2.7 0 0 0 1 0 0 0 -2.7 7-16ndis.dat
   [1,0,-5.9,-.25,-1.35,2.7,0,0,0,1,0,0,0,-2.7, ldraw_lib__7_16ndis()],
 // 1 0 12.1 -.25 1.45 2.6 0 0 0 1 0 0 0 2.6 2-4ndis.dat
   [1,0,12.1,-.25,1.45,2.6,0,0,0,1,0,0,0,2.6, ldraw_lib__2_4ndis()],
 // 1 0 12.1 -.25 1.45 2.6 0 0 0 1 0 0 0 -2.6 3-16tndis.dat
   [1,0,12.1,-.25,1.45,2.6,0,0,0,1,0,0,0,-2.6, ldraw_lib__3_16tndis()],
-// 1 15 12.1 -.25 1.45 .2 0 0 0 1 0 0 0 .2 2-4rin12.dat
-  [1,15,12.1,-.25,1.45,.2,0,0,0,1,0,0,0,.2, ldraw_lib__2_4rin12()],
+// 1 15 12.1 -.25 1.45 .2 0 0 0 1 0 0 0 .2 2-4ring12.dat
+  [1,15,12.1,-.25,1.45,.2,0,0,0,1,0,0,0,.2, ldraw_lib__2_4ring12()],
 // 1 15 12.1 -.25 1.45 .2 0 0 0 1 0 0 0 -.2 3-16ring12.dat
   [1,15,12.1,-.25,1.45,.2,0,0,0,1,0,0,0,-.2, ldraw_lib__3_16ring12()],
-// 1 15 12.1 -.25 1.45 .2 0 0 0 1 0 0 0 .2 2-4rin11.dat
-  [1,15,12.1,-.25,1.45,.2,0,0,0,1,0,0,0,.2, ldraw_lib__2_4rin11()],
+// 1 15 12.1 -.25 1.45 .2 0 0 0 1 0 0 0 .2 2-4ring11.dat
+  [1,15,12.1,-.25,1.45,.2,0,0,0,1,0,0,0,.2, ldraw_lib__2_4ring11()],
 // 1 15 12.1 -.25 1.45 .2 0 0 0 1 0 0 0 -.2 3-16ring11.dat
   [1,15,12.1,-.25,1.45,.2,0,0,0,1,0,0,0,-.2, ldraw_lib__3_16ring11()],
 // 1 15 12.1 -.25 1.45 1.1 0 0 0 1 0 0 0 1.1 2-4ring1.dat

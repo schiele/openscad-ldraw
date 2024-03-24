@@ -21,14 +21,14 @@ use <../p/48/5-24ring3.scad>
 use <../p/48/5-24ring4.scad>
 use <../p/7-16disc.scad>
 use <../p/7-16ndis.scad>
-use <../p/7-16rin1.scad>
+use <../p/7-16ring1.scad>
 use <../p/7-16ring2.scad>
 use <s/57895s01.scad>
 function ldraw_lib__57895p05() = [
 // 0 Glass for Window  1 x  4 x  6 with "OPEN", "Soap n' Suds" and "Wash - Dry - Fold 24 Hour Service" Sign Pattern
 // 0 Name: 57895p05.dat
 // 0 Author: Ulrich Röder [UR]
-// 0 !LDRAW_ORG Part UPDATE 2020-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -40,7 +40,8 @@ function ldraw_lib__57895p05() = [
 // 0 !CMDLINE -47
 // 
 // 0 !HISTORY 2020-06-28 [PTadmin] Official Update 2020-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Font : Signature Regular, Bankoli Bold
 // 
@@ -3452,10 +3453,10 @@ function ldraw_lib__57895p05() = [
   [1,15,23.2,17.5,-2,-.5,0,0,0,0,-.5,0,1,0, ldraw_lib__2_4chrd()],
 // 1 15 14.3 30.5 -2 .5 0 0 0 0 .5 0 1 0 2-4chrd.dat
   [1,15,14.3,30.5,-2,.5,0,0,0,0,.5,0,1,0, ldraw_lib__2_4chrd()],
-// 1 15 15.8 19 -2 -1 0 0 0 0 -1 0 1 0 7-16rin1.dat
-  [1,15,15.8,19,-2,-1,0,0,0,0,-1,0,1,0, ldraw_lib__7_16rin1()],
-// 1 15 21.7 29 -2 1 0 0 0 0 1 0 1 0 7-16rin1.dat
-  [1,15,21.7,29,-2,1,0,0,0,0,1,0,1,0, ldraw_lib__7_16rin1()],
+// 1 15 15.8 19 -2 -1 0 0 0 0 -1 0 1 0 7-16ring1.dat
+  [1,15,15.8,19,-2,-1,0,0,0,0,-1,0,1,0, ldraw_lib__7_16ring1()],
+// 1 15 21.7 29 -2 1 0 0 0 0 1 0 1 0 7-16ring1.dat
+  [1,15,21.7,29,-2,1,0,0,0,0,1,0,1,0, ldraw_lib__7_16ring1()],
 // 1 15 -19 21.5 -2 -1.1 0 0 0 0 -1.1 0 1 0 2-4ring3.dat
   [1,15,-19,21.5,-2,-1.1,0,0,0,0,-1.1,0,1,0, ldraw_lib__2_4ring3()],
 // 1 15 -5.8 21 -2 0 0 1 -1 0 0 0 1 0 2-4ring3.dat

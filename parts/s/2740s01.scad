@@ -1,12 +1,12 @@
 use <../../lib.scad>
-use <../../p/48/4-4rin12.scad>
+use <../../p/48/4-4ring12.scad>
 use <../../p/rect3.scad>
 use <../../p/tooth24.scad>
 function ldraw_lib__s__2740s01() = [
 // 0 ~Technic Gear 24 Tooth - Teeth and Outer Ring without Edges
 // 0 Name: s\2740s01.dat
 // 0 Author: Max Martin Richter [MMR1988]
-// 0 !LDRAW_ORG Subpart UPDATE 2015-02
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -14,7 +14,8 @@ function ldraw_lib__s__2740s01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2015-12-30 [PTadmin] Official Update 2015-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Teeth
 // 
@@ -218,10 +219,10 @@ function ldraw_lib__s__2740s01() = [
 // 
 // 0 // Ring Surfaces
 // 
-// 1 16 0 0 -4.75 2.08 0 0 0 0 2.08 0 1 0 48\4-4rin12.dat
-  [1,16,0,0,-4.75,2.08,0,0,0,0,2.08,0,1,0, ldraw_lib__48__4_4rin12()],
-// 1 16 0 0 4.75 2.08 0 0 0 0 2.08 0 -1 0 48\4-4rin12.dat
-  [1,16,0,0,4.75,2.08,0,0,0,0,2.08,0,-1,0, ldraw_lib__48__4_4rin12()],
+// 1 16 0 0 -4.75 2.08 0 0 0 0 2.08 0 1 0 48\4-4ring12.dat
+  [1,16,0,0,-4.75,2.08,0,0,0,0,2.08,0,1,0, ldraw_lib__48__4_4ring12()],
+// 1 16 0 0 4.75 2.08 0 0 0 0 2.08 0 -1 0 48\4-4ring12.dat
+  [1,16,0,0,4.75,2.08,0,0,0,0,2.08,0,-1,0, ldraw_lib__48__4_4ring12()],
 ];
 module ldraw_lib__s__2740s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
     makepoly(ldraw_lib__s__2740s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);

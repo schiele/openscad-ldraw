@@ -10,7 +10,7 @@ use <../p/48/1-4chrd.scad>
 use <../p/48/1-4con40.scad>
 use <../p/48/4-4con22.scad>
 use <../p/48/4-4edge.scad>
-use <../p/48/4-4rin18.scad>
+use <../p/48/4-4ring18.scad>
 use <s/37195s01.scad>
 use <../p/stud2a.scad>
 use <../p/stud4a.scad>
@@ -18,7 +18,7 @@ function ldraw_lib__37195() = [
 // 0 Wheel Cover 28 Spoke for Wheel 20 x 30
 // 0 Name: 37195.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2023-03
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -28,7 +28,8 @@ function ldraw_lib__37195() = [
 // 0 !KEYWORDS Aston Martin, James Bond
 // 
 // 0 !HISTORY 2023-06-24 [OrionP] Official Update 2023-03
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 1 0 0 0 0 -1 0 1 0 stud2a.dat
   [1,16,0,0,0,1,0,0,0,0,-1,0,1,0, ldraw_lib__stud2a()],
@@ -76,8 +77,8 @@ function ldraw_lib__37195() = [
   [1,16,0,0,3.5,26.4,0,0,0,0,26.4,0,-1,0, ldraw_lib__48__1_4chrd()],
 // 4 16 0 10 3.5 10 0 3.5 26.4 0 3.5 0 26.4 3.5
   [4,16,0,10,3.5,10,0,3.5,26.4,0,3.5,0,26.4,3.5],
-// 1 16 0 0 6.3 1.50333 0 0 0 0 1.50333 0 -1 0 48\4-4rin18.dat
-  [1,16,0,0,6.3,1.50333,0,0,0,0,1.50333,0,-1,0, ldraw_lib__48__4_4rin18()],
+// 1 16 0 0 6.3 1.50333 0 0 0 0 1.50333 0 -1 0 48\4-4ring18.dat
+  [1,16,0,0,6.3,1.50333,0,0,0,0,1.50333,0,-1,0, ldraw_lib__48__4_4ring18()],
 // 1 16 0 0 6.3 28.56333 0 0 0 0 28.56333 0 -1 0 48\4-4edge.dat
   [1,16,0,0,6.3,28.56333,0,0,0,0,28.56333,0,-1,0, ldraw_lib__48__4_4edge()],
 // 1 16 0 0 4.6 1.29833 0 0 0 0 1.29833 0 1.7 0 48\4-4con22.dat

@@ -1,9 +1,9 @@
 use <../lib.scad>
 function ldraw_lib__3_4rin10() = [
-// 0 Ring 10 x 0.75
+// 0 ~Ring 10 x 0.75 (Obsolete)
 // 0 Name: 3-4rin10.dat
 // 0 Author: Michael Heidemann [mikeheide]
-// 0 !LDRAW_ORG Primitive UPDATE 2010-01
+// 0 !LDRAW_ORG Primitive UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -11,7 +11,8 @@ function ldraw_lib__3_4rin10() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2010-04-05 [PTadmin] Official Update 2010-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Obsolete, use 3-4ring10.dat
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 4 16 10 0 0 11 0 0 10.1629 0 4.2097 9.239 0 3.827
   [4,16,10,0,0,11,0,0,10.1629,0,4.2097,9.239,0,3.827],

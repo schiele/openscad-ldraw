@@ -7,7 +7,7 @@ use <../p/2-4con4.scad>
 use <../p/2-4cyli.scad>
 use <../p/2-4cylo.scad>
 use <../p/2-4edge.scad>
-use <../p/2-4rin16.scad>
+use <../p/2-4ring16.scad>
 use <../p/2-4ring3.scad>
 use <../p/2-4ring5.scad>
 use <../p/2-4stud4.scad>
@@ -26,7 +26,7 @@ function ldraw_lib__10040() = [
 // 0 ~Motor Pull Back  8 x  4 x  0.667 - Top
 // 0 Name: 10040.dat
 // 0 Author: Magnus Forsberg [MagFors]
-// 0 !LDRAW_ORG Part UPDATE 2014-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -36,7 +36,8 @@ function ldraw_lib__10040() = [
 // 0 !CATEGORY Vehicle
 // 
 // 0 !HISTORY 2014-12-23 [PTadmin] Official Update 2014-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 4 -40 0 0 1 0 -1 0 -1 0 0 stug4-1x3.dat
   [1,16,0,4,-40,0,0,1,0,-1,0,-1,0,0, ldraw_lib__stug4_1x3()],
@@ -138,8 +139,8 @@ function ldraw_lib__10040() = [
   [1,16,32,5,60,0,-1,0,0,0,-1,1,0,0, ldraw_lib__2_4ring5()],
 // 1 16 32 5 60 0 -1 0 0 0 -2 2 0 0 2-4ring3.dat
   [1,16,32,5,60,0,-1,0,0,0,-2,2,0,0, ldraw_lib__2_4ring3()],
-// 1 16 32 5 60 0 -1 0 0 0 -0.5 0.5 0 0 2-4rin16.dat
-  [1,16,32,5,60,0,-1,0,0,0,-0.5,0.5,0,0, ldraw_lib__2_4rin16()],
+// 1 16 32 5 60 0 -1 0 0 0 -0.5 0.5 0 0 2-4ring16.dat
+  [1,16,32,5,60,0,-1,0,0,0,-0.5,0.5,0,0, ldraw_lib__2_4ring16()],
 // 0 // reshaped ldd-surface
 // 2 24 20 0 65.5055 20 0 54.4945
   [2,24,20,0,65.5055,20,0,54.4945],
@@ -436,8 +437,8 @@ function ldraw_lib__10040() = [
   [1,16,-32,5,60,0,1,0,0,0,-1,1,0,0, ldraw_lib__2_4ring5()],
 // 1 16 -32 5 60 0 1 0 0 0 -2 2 0 0 2-4ring3.dat
   [1,16,-32,5,60,0,1,0,0,0,-2,2,0,0, ldraw_lib__2_4ring3()],
-// 1 16 -32 5 60 0 1 0 0 0 -0.5 0.5 0 0 2-4rin16.dat
-  [1,16,-32,5,60,0,1,0,0,0,-0.5,0.5,0,0, ldraw_lib__2_4rin16()],
+// 1 16 -32 5 60 0 1 0 0 0 -0.5 0.5 0 0 2-4ring16.dat
+  [1,16,-32,5,60,0,1,0,0,0,-0.5,0.5,0,0, ldraw_lib__2_4ring16()],
 // 0 // reshaped ldd-surface
 // 2 24 -20 0 65.5055 -20 0 54.4945
   [2,24,-20,0,65.5055,-20,0,54.4945],

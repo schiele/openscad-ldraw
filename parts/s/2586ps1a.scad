@@ -1,12 +1,12 @@
 use <../../lib.scad>
-use <../../p/1-4rin11.scad>
-use <../../p/1-4rin12.scad>
-use <../../p/1-4rin39.scad>
+use <../../p/1-4ring11.scad>
+use <../../p/1-4ring12.scad>
+use <../../p/1-4ring39.scad>
 function ldraw_lib__s__2586ps1a() = [
 // 0 ~Minifig Shield Ovoid with SW Gungan Patrol Shield Pattern - Half
 // 0 Name: s\2586ps1a.dat
 // 0 Author: Bernd Broich [bbroich]
-// 0 !LDRAW_ORG Subpart UPDATE 2015-02
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -18,11 +18,12 @@ function ldraw_lib__s__2586ps1a() = [
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
 // 0 !HISTORY 2014-12-06 [MagFors] Made BFC compliant, removed gaps and t-junctions
 // 0 !HISTORY 2015-12-30 [PTadmin] Official Update 2015-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Black Borders
-// 1 0 0 -14.5 0 0.5 0 0 0 0 -0.5 0 1 0 1-4rin39.dat
-  [1,0,0,-14.5,0,0.5,0,0,0,0,-0.5,0,1,0, ldraw_lib__1_4rin39()],
+// 1 0 0 -14.5 0 0.5 0 0 0 0 -0.5 0 1 0 1-4ring39.dat
+  [1,0,0,-14.5,0,0.5,0,0,0,0,-0.5,0,1,0, ldraw_lib__1_4ring39()],
 // 
 // 3 0 4.321 0.75 0 0 0.75 0 0 1.5 0
   [3,0,4.321,0.75,0,0,0.75,0,0,1.5,0],
@@ -119,10 +120,10 @@ function ldraw_lib__s__2586ps1a() = [
   [4,0,8.5,29.25,0,3.889,35.389,0,4.243,35.743,0,9,29.5,0],
 // 
 // 0 // Gold Detail
-// 1 82 0 -14.5 0 1.5 0 0 0 0 -1.5 0 1 0 1-4rin11.dat
-  [1,82,0,-14.5,0,1.5,0,0,0,0,-1.5,0,1,0, ldraw_lib__1_4rin11()],
-// 1 82 0 -14.5 0 1.5 0 0 0 0 -1.5 0 1 0 1-4rin12.dat
-  [1,82,0,-14.5,0,1.5,0,0,0,0,-1.5,0,1,0, ldraw_lib__1_4rin12()],
+// 1 82 0 -14.5 0 1.5 0 0 0 0 -1.5 0 1 0 1-4ring11.dat
+  [1,82,0,-14.5,0,1.5,0,0,0,0,-1.5,0,1,0, ldraw_lib__1_4ring11()],
+// 1 82 0 -14.5 0 1.5 0 0 0 0 -1.5 0 1 0 1-4ring12.dat
+  [1,82,0,-14.5,0,1.5,0,0,0,0,-1.5,0,1,0, ldraw_lib__1_4ring12()],
 // 
 // 3 82 0 -6.25 0 0 -5 0 1.75 -5.825 0
   [3,82,0,-6.25,0,0,-5,0,1.75,-5.825,0],

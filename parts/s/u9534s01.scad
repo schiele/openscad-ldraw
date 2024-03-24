@@ -4,7 +4,7 @@ use <../../p/2-4cyli.scad>
 use <../../p/2-4edge.scad>
 use <../../p/2-4ndis.scad>
 use <../../p/3-16cyli.scad>
-use <../../p/3-16rin8.scad>
+use <../../p/3-16ring8.scad>
 use <../../p/3-8chrd.scad>
 use <../../p/3-8cylo.scad>
 use <../../p/4-4cylc.scad>
@@ -21,8 +21,8 @@ use <../../p/48/1-8edge.scad>
 use <../../p/48/11-48cyli.scad>
 use <../../p/48/4-4cylo.scad>
 use <../../p/48/4-4edge.scad>
-use <../../p/48/4-4rin27.scad>
-use <../../p/48/4-4rin28.scad>
+use <../../p/48/4-4ring27.scad>
+use <../../p/48/4-4ring28.scad>
 use <../../p/5-16cylo.scad>
 use <../../p/5-16ndis.scad>
 use <../../p/7-16ndis.scad>
@@ -34,7 +34,7 @@ function ldraw_lib__s__u9534s01() = [
 // 0 ~Electric Powered Up Small Angular Motor Drive Hub Rim without Pointer
 // 0 Name: s\u9534s01.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Subpart UPDATE 2023-04
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -42,7 +42,8 @@ function ldraw_lib__s__u9534s01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2023-08-25 [OrionP] Official Update 2023-04
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 23 0 9 0 0 0 -5 0 0 0 9 4-4cylc.dat
   [1,16,0,23,0,9,0,0,0,-5,0,0,0,9, ldraw_lib__4_4cylc()],
@@ -66,10 +67,10 @@ function ldraw_lib__s__u9534s01() = [
   [1,16,0,20,0,27,0,0,0,-2,0,0,0,27, ldraw_lib__48__4_4cylo()],
 // 1 16 0 20 0 28 0 0 0 -5.5 0 0 0 28 48\4-4cylo.dat
   [1,16,0,20,0,28,0,0,0,-5.5,0,0,0,28, ldraw_lib__48__4_4cylo()],
-// 1 16 0 14.5 0 1 0 0 0 -1 0 0 0 1 48\4-4rin28.dat
-  [1,16,0,14.5,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__48__4_4rin28()],
-// 1 16 0 20 0 1 0 0 0 -1 0 0 0 1 48\4-4rin27.dat
-  [1,16,0,20,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__48__4_4rin27()],
+// 1 16 0 14.5 0 1 0 0 0 -1 0 0 0 1 48\4-4ring28.dat
+  [1,16,0,14.5,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__48__4_4ring28()],
+// 1 16 0 20 0 1 0 0 0 -1 0 0 0 1 48\4-4ring27.dat
+  [1,16,0,20,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__48__4_4ring27()],
 // 1 16 0 0 0 0 0 8.5 0 1 0 8.5 0 0 5-16ndis.dat
   [1,16,0,0,0,0,0,8.5,0,1,0,8.5,0,0, ldraw_lib__5_16ndis()],
 // 1 16 0 0 0 0 0 -8.5 0 1 0 8.5 0 0 2-4ndis.dat
@@ -84,10 +85,10 @@ function ldraw_lib__s__u9534s01() = [
   [1,16,0,18,-20,-6,0,0,0,-16,0,0,0,6, ldraw_lib__4_4cyli()],
 // 1 16 0 18 -20 0 0 -6 0 1 0 6 0 0 4-4edge.dat
   [1,16,0,18,-20,0,0,-6,0,1,0,6,0,0, ldraw_lib__4_4edge()],
-// 1 16 0 0 -20 -1 0 0 0 1 0 0 0 -1 3-16rin8.dat
-  [1,16,0,0,-20,-1,0,0,0,1,0,0,0,-1, ldraw_lib__3_16rin8()],
-// 1 16 0 0 -20 1 0 0 0 1 0 0 0 -1 3-16rin8.dat
-  [1,16,0,0,-20,1,0,0,0,1,0,0,0,-1, ldraw_lib__3_16rin8()],
+// 1 16 0 0 -20 -1 0 0 0 1 0 0 0 -1 3-16ring8.dat
+  [1,16,0,0,-20,-1,0,0,0,1,0,0,0,-1, ldraw_lib__3_16ring8()],
+// 1 16 0 0 -20 1 0 0 0 1 0 0 0 -1 3-16ring8.dat
+  [1,16,0,0,-20,1,0,0,0,1,0,0,0,-1, ldraw_lib__3_16ring8()],
 // 1 16 0 0 -20 8 0 0 0 1 0 0 0 8 2-4ndis.dat
   [1,16,0,0,-20,8,0,0,0,1,0,0,0,8, ldraw_lib__2_4ndis()],
 // 1 16 0 18 -20 6 0 0 0 -1 0 0 0 6 4-4ndis.dat

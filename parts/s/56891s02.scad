@@ -3,20 +3,20 @@ use <../../p/1-4con6.scad>
 use <../../p/1-4con7.scad>
 use <../../p/1-4cyli.scad>
 use <../../p/1-4edge.scad>
-use <../../p/1-4rin10.scad>
-use <../../p/1-4rin11.scad>
+use <../../p/1-4ring10.scad>
+use <../../p/1-4ring11.scad>
 use <../../p/1-4ring5.scad>
 use <../../p/1-4ring7.scad>
 use <../../p/1-4ring9.scad>
 use <../../p/2-4cylc.scad>
 use <../../p/2-4disc.scad>
-use <../../p/48/1-4rin14.scad>
+use <../../p/48/1-4ring14.scad>
 use <../../p/rect.scad>
 function ldraw_lib__s__56891s02() = [
 // 0 ~Tyre 18/ 56 x 17 Off-Road with Offset Centre - 1/4 Tyrebase
 // 0 Name: s\56891s02.dat
 // 0 Author: Magnus Forsberg [MagFors]
-// 0 !LDRAW_ORG Subpart UPDATE 2013-02
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -26,14 +26,15 @@ function ldraw_lib__s__56891s02() = [
 // 0 !HISTORY 2009-10-13 {LEGO Universe Team} Original part shape
 // 0 !HISTORY 2010-02-22 [MagFors] File preparation for LDraw Parts Tracker
 // 0 !HISTORY 2013-12-23 [PTadmin] Official Update 2013-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 17.5 0 0 3 -3 0 0 0 -1 0 1-4ring7.dat
   [1,16,0,0,17.5,0,0,3,-3,0,0,0,-1,0, ldraw_lib__1_4ring7()],
-// 1 16 0 0 17.5 0 0 2.15 -2.15 0 0 0 -1 0 1-4rin11.dat
-  [1,16,0,0,17.5,0,0,2.15,-2.15,0,0,0,-1,0, ldraw_lib__1_4rin11()],
-// 1 16 0 0 17.5 0 0 2.5272 -2.5272 0 0 0 -1 0 1-4rin10.dat
-  [1,16,0,0,17.5,0,0,2.5272,-2.5272,0,0,0,-1,0, ldraw_lib__1_4rin10()],
+// 1 16 0 0 17.5 0 0 2.15 -2.15 0 0 0 -1 0 1-4ring11.dat
+  [1,16,0,0,17.5,0,0,2.15,-2.15,0,0,0,-1,0, ldraw_lib__1_4ring11()],
+// 1 16 0 0 17.5 0 0 2.5272 -2.5272 0 0 0 -1 0 1-4ring10.dat
+  [1,16,0,0,17.5,0,0,2.5272,-2.5272,0,0,0,-1,0, ldraw_lib__1_4ring10()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 17.5 0 0 21 -21 0 0 0 -35 0 1-4cyli.dat
@@ -52,8 +53,8 @@ function ldraw_lib__s__56891s02() = [
   [1,16,0,0,-17.5,0,0,5.56,-5.56,0,0,0,-1,0, ldraw_lib__1_4ring5()],
 // 1 16 0 0 -17.5 0 0 3.6 -3.6 0 0 0 -1 0 1-4ring9.dat
   [1,16,0,0,-17.5,0,0,3.6,-3.6,0,0,0,-1,0, ldraw_lib__1_4ring9()],
-// 1 16 0 0 -17.5 0 0 2.5 -2.5 0 0 0 -1 0 48\1-4rin14.dat
-  [1,16,0,0,-17.5,0,0,2.5,-2.5,0,0,0,-1,0, ldraw_lib__48__1_4rin14()],
+// 1 16 0 0 -17.5 0 0 2.5 -2.5 0 0 0 -1 0 48\1-4ring14.dat
+  [1,16,0,0,-17.5,0,0,2.5,-2.5,0,0,0,-1,0, ldraw_lib__48__1_4ring14()],
 // 1 16 9.745 -30.91 0 -1.4955 0.9539 0 4.7505 1 0 0 0 -17.5 rect.dat
   [1,16,9.745,-30.91,0,-1.4955,0.9539,0,4.7505,1,0,0,0,-17.5, ldraw_lib__rect()],
 // 1 16 14.966 -28.747 0 -2.3015 -309.155 0 4.4165 -161.105 0 0 0 17.5 rect.dat

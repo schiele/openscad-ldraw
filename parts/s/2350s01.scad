@@ -2,7 +2,7 @@ use <../../lib.scad>
 use <../../p/2-4cyli.scad>
 use <../../p/2-4edge.scad>
 use <../../p/2-4ndis.scad>
-use <../../p/2-4rin12.scad>
+use <../../p/2-4ring12.scad>
 use <../../p/3-16cyls.scad>
 use <../../p/3-16edge.scad>
 use <../../p/3-16ndis.scad>
@@ -20,7 +20,7 @@ function ldraw_lib__s__2350s01() = [
 // 0 ~Crane Arm Base  2 x  2 without Studs
 // 0 Name: s\2350s01.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
-// 0 !LDRAW_ORG Subpart UPDATE 2015-01
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -30,7 +30,8 @@ function ldraw_lib__s__2350s01() = [
 // 0 !HISTORY 2015-01-23 [GeraldLasser] Subfiled Part 2350
 // 0 !HISTORY 2015-01-29 [GeraldLasser] Improved the Center Pin Housing
 // 0 !HISTORY 2015-10-11 [PTadmin] Official Update 2015-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 2 24 16 24 16 1.5 24 16
   [2,24,16,24,16,1.5,24,16],
@@ -216,10 +217,10 @@ function ldraw_lib__s__2350s01() = [
   [1,16,-2,10,0,0,-1,0,0,0,-6.5,6.5,0,0, ldraw_lib__2_4edge()],
 // 1 16 2 10 0 0 -1 0 0 0 -6.5 6.5 0 0 2-4edge.dat
   [1,16,2,10,0,0,-1,0,0,0,-6.5,6.5,0,0, ldraw_lib__2_4edge()],
-// 1 16 -2 10 0 0 -1 0 0 0 -0.5 0.5 0 0 2-4rin12.dat
-  [1,16,-2,10,0,0,-1,0,0,0,-0.5,0.5,0,0, ldraw_lib__2_4rin12()],
-// 1 16 2 10 0 0 1 0 0 0 -0.5 0.5 0 0 2-4rin12.dat
-  [1,16,2,10,0,0,1,0,0,0,-0.5,0.5,0,0, ldraw_lib__2_4rin12()],
+// 1 16 -2 10 0 0 -1 0 0 0 -0.5 0.5 0 0 2-4ring12.dat
+  [1,16,-2,10,0,0,-1,0,0,0,-0.5,0.5,0,0, ldraw_lib__2_4ring12()],
+// 1 16 2 10 0 0 1 0 0 0 -0.5 0.5 0 0 2-4ring12.dat
+  [1,16,2,10,0,0,1,0,0,0,-0.5,0.5,0,0, ldraw_lib__2_4ring12()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 2 10 0 0 -4 0 0 0 -6.5 6.5 0 0 2-4cyli.dat

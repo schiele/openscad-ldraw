@@ -1,10 +1,10 @@
 use <../lib.scad>
 use <../p/2-4ndis.scad>
-use <../p/2-4rin14.scad>
+use <../p/2-4ring14.scad>
 use <../p/2-4ring5.scad>
 use <../p/2-4ring6.scad>
 use <../p/3-4ndis.scad>
-use <../p/3-4rin14.scad>
+use <../p/3-4ring14.scad>
 use <../p/3-4ring5.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4ring2.scad>
@@ -14,17 +14,18 @@ function ldraw_lib__4622303r() = [
 // 0 Sticker  0.75 x  5 with Pneumatic Cylinder / Half Trucks Diagram
 // 0 Name: 4622303r.dat
 // 0 Author: J.C. Tchang [tchang]
-// 0 !LDRAW_ORG Part UPDATE 2012-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS set 8110, Unimog
+// 0 !KEYWORDS Unimog, set 8110
 // 
 // 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 -0.25 0 50 0 0 0 0.25 0 0 0 7.5 box5-12.dat
   [1,16,0,-0.25,0,50,0,0,0,0.25,0,0,0,7.5, ldraw_lib__box5_12()],
@@ -37,14 +38,14 @@ function ldraw_lib__4622303r() = [
   [1,15,-15.4,-0.25,-1.4,0,0,-0.7,0,0.7,0,0.7,0,0, ldraw_lib__4_4ring2()],
 // 1 15 -15.4 -0.25 -1.4 0.39598 0 -0.39598 0 1 0 0.39598 0 0.39598 3-4ring5.dat
   [1,15,-15.4,-0.25,-1.4,0.39598,0,-0.39598,0,1,0,0.39598,0,0.39598, ldraw_lib__3_4ring5()],
-// 1 15 -15.4 -0.25 -1.4 0.169706 0 -0.169706 0 1 0 0.169706 0 0.169706 3-4rin14.dat
-  [1,15,-15.4,-0.25,-1.4,0.169706,0,-0.169706,0,1,0,0.169706,0,0.169706, ldraw_lib__3_4rin14()],
+// 1 15 -15.4 -0.25 -1.4 0.169706 0 -0.169706 0 1 0 0.169706 0 0.169706 3-4ring14.dat
+  [1,15,-15.4,-0.25,-1.4,0.169706,0,-0.169706,0,1,0,0.169706,0,0.169706, ldraw_lib__3_4ring14()],
 // 1 15 16.3 -0.25 -1.4 0 0 -0.7 0 0.7 0 0.7 0 0 4-4ring2.dat
   [1,15,16.3,-0.25,-1.4,0,0,-0.7,0,0.7,0,0.7,0,0, ldraw_lib__4_4ring2()],
 // 1 15 16.3 -0.25 -1.4 0 0 0.56 0 0.56 0 -0.56 0 0 2-4ring5.dat
   [1,15,16.3,-0.25,-1.4,0,0,0.56,0,0.56,0,-0.56,0,0, ldraw_lib__2_4ring5()],
-// 1 15 16.3 -0.25 -1.4 0 0 0.24 0 0.24 0 -0.24 0 0 2-4rin14.dat
-  [1,15,16.3,-0.25,-1.4,0,0,0.24,0,0.24,0,-0.24,0,0, ldraw_lib__2_4rin14()],
+// 1 15 16.3 -0.25 -1.4 0 0 0.24 0 0.24 0 -0.24 0 0 2-4ring14.dat
+  [1,15,16.3,-0.25,-1.4,0,0,0.24,0,0.24,0,-0.24,0,0, ldraw_lib__2_4ring14()],
 // 1 15 -30.5 -0.25 -1.8 -0.6 0 0 0 0.6 0 0 0 -0.6 4-4ring3.dat
   [1,15,-30.5,-0.25,-1.8,-0.6,0,0,0,0.6,0,0,0,-0.6, ldraw_lib__4_4ring3()],
 // 1 15 -30.5 -0.25 -1.8 0 0 -0.4 0 0.4 0 0.4 0 0 2-4ring6.dat

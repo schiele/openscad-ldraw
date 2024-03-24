@@ -6,9 +6,9 @@ use <../../p/3-16cyli.scad>
 use <../../p/48/1-4cyli.scad>
 use <../../p/48/1-4disc.scad>
 use <../../p/48/1-4edge.scad>
-use <../../p/48/1-4rin23.scad>
-use <../../p/48/1-4rin48.scad>
 use <../../p/48/1-4ring179.scad>
+use <../../p/48/1-4ring23.scad>
+use <../../p/48/1-4ring48.scad>
 use <../../p/48/1-4ring9.scad>
 use <../../p/box2-7.scad>
 use <../../p/box3u2p.scad>
@@ -22,7 +22,7 @@ function ldraw_lib__s__6181s01() = [
 // 0 ~Belville Swimming Pool, Half
 // 0 Name: s\6181s01.dat
 // 0 Author: J.C. Tchang [tchang]
-// 0 !LDRAW_ORG Subpart UPDATE 2016-01
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -32,7 +32,8 @@ function ldraw_lib__s__6181s01() = [
 // 0 !HISTORY 2014-12-09 [tchang] Add some condlines in corner
 // 0 !HISTORY 2014-12-18 [tchang] Rebuild struts, partially move to 6181s02.dat
 // 0 !HISTORY 2016-12-31 [PTadmin] Official Update 2016-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Bottom
 // 1 16 -80 44 80 0 0 160 0 -1 0 -160 0 0 48\1-4disc.dat
@@ -256,10 +257,10 @@ function ldraw_lib__s__6181s01() = [
   [4,16,104,4,104,-160,4,104,-160,4,116,116,4,116],
 // 4 16 104 4 104 116 4 116 116 4 80 104 4 80
   [4,16,104,4,104,116,4,116,116,4,80,104,4,80],
-// 1 16 -80 4 80 0 0 8 0 -1 0 -8 0 0 48\1-4rin23.dat
-  [1,16,-80,4,80,0,0,8,0,-1,0,-8,0,0, ldraw_lib__48__1_4rin23()],
-// 1 16 -80 4 80 0 0 4 0 -1 0 -4 0 0 48\1-4rin48.dat
-  [1,16,-80,4,80,0,0,4,0,-1,0,-4,0,0, ldraw_lib__48__1_4rin48()],
+// 1 16 -80 4 80 0 0 8 0 -1 0 -8 0 0 48\1-4ring23.dat
+  [1,16,-80,4,80,0,0,8,0,-1,0,-8,0,0, ldraw_lib__48__1_4ring23()],
+// 1 16 -80 4 80 0 0 4 0 -1 0 -4 0 0 48\1-4ring48.dat
+  [1,16,-80,4,80,0,0,4,0,-1,0,-4,0,0, ldraw_lib__48__1_4ring48()],
 // 1 16 -80 4 80 0 0 196 0 1 0 -196 0 0 48\1-4edge.dat
   [1,16,-80,4,80,0,0,196,0,1,0,-196,0,0, ldraw_lib__48__1_4edge()],
 // 1 16 -80 4 80 0 0 184 0 1 0 -184 0 0 48\1-4edge.dat

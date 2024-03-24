@@ -4,8 +4,8 @@ use <../p/48/4-4aring.scad>
 use <../p/48/4-4con1.scad>
 use <../p/48/4-4con2.scad>
 use <../p/48/4-4cylo.scad>
-use <../p/48/4-4rin17.scad>
-use <../p/48/4-4rin18.scad>
+use <../p/48/4-4ring17.scad>
+use <../p/48/4-4ring18.scad>
 use <../p/box4-2p.scad>
 use <../p/box5.scad>
 use <../p/connhole.scad>
@@ -17,7 +17,7 @@ function ldraw_lib__30535() = [
 // 0 Brick  2 x  4 x  4 with Propeller Housing
 // 0 Name: 30535.dat
 // 0 Author: John Riley [jriley]
-// 0 !LDRAW_ORG Part UPDATE 2022-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -33,7 +33,8 @@ function ldraw_lib__30535() = [
 // 0 !HISTORY 2014-06-21 [PTadmin] Official Update 2014-01
 // 0 !HISTORY 2021-03-17 [cwdee] Update description
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\30535s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30535s01()],
@@ -87,10 +88,10 @@ function ldraw_lib__30535() = [
 // 1 16 0 92 0 1 0 0 0 -1 0 0 0 1 stug4-1x3.dat
   [1,16,0,92,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stug4_1x3()],
 // 
-// 1 16 0 42 -20 0 0 2 2 0 0 0 1 0 48\4-4rin17.dat
-  [1,16,0,42,-20,0,0,2,2,0,0,0,1,0, ldraw_lib__48__4_4rin17()],
-// 1 16 0 42 -20 0 0 2 2 0 0 0 1 0 48\4-4rin18.dat
-  [1,16,0,42,-20,0,0,2,2,0,0,0,1,0, ldraw_lib__48__4_4rin18()],
+// 1 16 0 42 -20 0 0 2 2 0 0 0 1 0 48\4-4ring17.dat
+  [1,16,0,42,-20,0,0,2,2,0,0,0,1,0, ldraw_lib__48__4_4ring17()],
+// 1 16 0 42 -20 0 0 2 2 0 0 0 1 0 48\4-4ring18.dat
+  [1,16,0,42,-20,0,0,2,2,0,0,0,1,0, ldraw_lib__48__4_4ring18()],
 // 4 16 9.8344 4 -20 -9.8344 4 -20 -9.8344 5.35194 -20 9.8344 5.35194 -20
   [4,16,9.8344,4,-20,-9.8344,4,-20,-9.8344,5.35194,-20,9.8344,5.35194,-20],
 // 

@@ -1,6 +1,6 @@
 use <../../lib.scad>
 use <../../p/4-4edge.scad>
-use <../../p/4-4rin39.scad>
+use <../../p/4-4ring39.scad>
 use <../../p/4-4ring5.scad>
 use <../../p/rect1.scad>
 use <../../p/stud2a.scad>
@@ -8,7 +8,7 @@ function ldraw_lib__s__54091s02() = [
 // 0 ~Slope Brick Curved  8 x  8 x  2 Inverted Double - Ridge Stud
 // 0 Name: s\54091s02.dat
 // 0 Author: Santeri Piippo [arezey]
-// 0 !LDRAW_ORG Subpart UPDATE 2010-02
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -18,7 +18,8 @@ function ldraw_lib__s__54091s02() = [
 // 0 !HISTORY 2009-10-13 {LEGO Universe Team} Original part shape
 // 0 !HISTORY 2010-01-12 [arezey] Create from scratch using LEGO Universe Team version as reference
 // 0 !HISTORY 2010-07-05 [PTadmin] Official Update 2010-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 -40 0 1 0 0 0 1 0 0 0 1 stud2a.dat
   [1,16,0,-40,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2a()],
@@ -28,8 +29,8 @@ function ldraw_lib__s__54091s02() = [
   [1,16,0,-40,0,4,0,0,0,1,0,0,0,4, ldraw_lib__4_4edge()],
 // 1 16 0 -40 0 0.65 0 0 0 1 0 0 0 0.65 4-4ring5.dat
   [1,16,0,-40,0,0.65,0,0,0,1,0,0,0,0.65, ldraw_lib__4_4ring5()],
-// 1 16 0 -40 0 0.1 0 0 0 1 0 0 0 0.1 4-4rin39.dat
-  [1,16,0,-40,0,0.1,0,0,0,1,0,0,0,0.1, ldraw_lib__4_4rin39()],
+// 1 16 0 -40 0 0.1 0 0 0 1 0 0 0 0.1 4-4ring39.dat
+  [1,16,0,-40,0,0.1,0,0,0,1,0,0,0,0.1, ldraw_lib__4_4ring39()],
 // 3 16 -6 -40 0 -5.543 -40 2.296 -5.543 -37.927 2.296
   [3,16,-6,-40,0,-5.543,-40,2.296,-5.543,-37.927,2.296],
 // 4 16 6 -15.84 0 5.543 -16.483 2.296 5.543 -40 2.296 6 -40 0

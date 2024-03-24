@@ -1,6 +1,6 @@
 use <../lib.scad>
 use <../p/48/4-4ndis.scad>
-use <../p/48/4-4rin15.scad>
+use <../p/48/4-4ring15.scad>
 use <../p/box5-12.scad>
 use <../p/type-swiss721bt-bold-n0.scad>
 use <../p/type-swiss721bt-bold-n1.scad>
@@ -16,22 +16,23 @@ function ldraw_lib__190295d() = [
 // 0 Sticker  2.3 x  2.5 with Clock Hands  8:00:22 on Red Background
 // 0 Name: 190295d.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
-// 0 !LDRAW_ORG Part UPDATE 2022-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS bus station, Set 379-1, Transport
+// 0 !KEYWORDS Set 379-1, Transport, bus station
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 -0.25 0 25 0 0 0 0.25 0 0 0 23 box5-12.dat
   [1,16,0,-0.25,0,25,0,0,0,0.25,0,0,0,23, ldraw_lib__box5_12()],
-// 1 0 0 -.25 0 1 0 0 0 1 0 0 0 1 48\4-4rin15.dat
-  [1,0,0,-.25,0,1,0,0,0,1,0,0,0,1, ldraw_lib__48__4_4rin15()],
+// 1 0 0 -.25 0 1 0 0 0 1 0 0 0 1 48\4-4ring15.dat
+  [1,0,0,-.25,0,1,0,0,0,1,0,0,0,1, ldraw_lib__48__4_4ring15()],
 // 1 4 0 -.25 0 16 0 0 0 1 0 0 0 16 48\4-4ndis.dat
   [1,4,0,-.25,0,16,0,0,0,1,0,0,0,16, ldraw_lib__48__4_4ndis()],
 // 1 15 6 -.25 10.4 3.2 0 0 0 1 0 0 0 3.2 type-swiss721bt-bold-n1.dat

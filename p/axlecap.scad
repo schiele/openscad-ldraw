@@ -2,10 +2,10 @@ use <../lib.scad>
 use <axlehol2.scad>
 use <axlehol9.scad>
 function ldraw_lib__axlecap() = [
-// 0 Axle Endcap
+// 0 Technic Axle Endcap
 // 0 Name: axlecap.dat
 // 0 Author: Jens Bauer [rockford]
-// 0 !LDRAW_ORG Primitive UPDATE 2019-01
+// 0 !LDRAW_ORG Primitive UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -13,7 +13,8 @@ function ldraw_lib__axlecap() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
-// 
+// 0 !HISTORY 2024-02-06 [Holly-Wood] Added 'Technic' to the description
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 4 16 4.802 1 1 5 1 0 0 1 0 1 1 1
   [4,16,4.802,1,1,5,1,0,0,1,0,1,1,1],
@@ -131,7 +132,6 @@ function ldraw_lib__axlecap() = [
   [2,24,2,0,-2,1,1,-1],
 // 2 24 2 0 2 1 1 1
   [2,24,2,0,2,1,1,1],
-// 0
 ];
 module ldraw_lib__axlecap(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
     makepoly(ldraw_lib__axlecap(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);

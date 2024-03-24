@@ -2,7 +2,7 @@ use <../lib.scad>
 use <../p/4-4cylo.scad>
 use <../p/4-4ndis.scad>
 use <../p/48/4-4cylo.scad>
-use <../p/48/4-4rin28.scad>
+use <../p/48/4-4ring28.scad>
 use <../p/rect.scad>
 use <../p/rect1.scad>
 use <../p/rect2p.scad>
@@ -11,7 +11,7 @@ function ldraw_lib__u9364() = [
 // 0 ~Electric Powered Up Medium Angular Motor Front Top
 // 0 Name: u9364.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2023-04
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -25,7 +25,8 @@ function ldraw_lib__u9364() = [
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 0 !HISTORY 2021-08-30 [Philo] Adapted for variant
 // 0 !HISTORY 2023-08-25 [OrionP] Official Update 2023-04
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\u9364s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__u9364s01()],
@@ -39,8 +40,8 @@ function ldraw_lib__u9364() = [
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -10 0 28 0 0 0 -5.5 0 0 0 28 48\4-4cylo.dat
   [1,16,0,-10,0,28,0,0,0,-5.5,0,0,0,28, ldraw_lib__48__4_4cylo()],
-// 1 16 0 -15.5 0 1 0 0 0 1 0 0 0 1 48\4-4rin28.dat
-  [1,16,0,-15.5,0,1,0,0,0,1,0,0,0,1, ldraw_lib__48__4_4rin28()],
+// 1 16 0 -15.5 0 1 0 0 0 1 0 0 0 1 48\4-4ring28.dat
+  [1,16,0,-15.5,0,1,0,0,0,1,0,0,0,1, ldraw_lib__48__4_4ring28()],
 // 1 16 0 -10 0 6.36396 0 6.36396 0 1 0 -6.36396 0 6.36396 4-4ndis.dat
   [1,16,0,-10,0,6.36396,0,6.36396,0,1,0,-6.36396,0,6.36396, ldraw_lib__4_4ndis()],
 // 0 BFC INVERTNEXT

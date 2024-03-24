@@ -2,13 +2,13 @@ use <../../lib.scad>
 use <../../p/1-16chrd.scad>
 use <../../p/1-16tang.scad>
 use <../../p/1-4chrd.scad>
-use <../../p/1-4rin10.scad>
-use <../../p/1-4rin11.scad>
+use <../../p/1-4ring10.scad>
+use <../../p/1-4ring11.scad>
 use <../../p/1-4ring3.scad>
 use <../../p/1-4ring4.scad>
 use <../../p/1-4tang.scad>
 use <../../p/1-8chrd.scad>
-use <../../p/1-8rin10.scad>
+use <../../p/1-8ring10.scad>
 use <../../p/1-8ring3.scad>
 use <../../p/1-8tang.scad>
 use <../../p/3-16ering.scad>
@@ -18,7 +18,7 @@ function ldraw_lib__s__6142275gs01() = [
 // 0 ~Sticker  1.2 x  1.8 with Lights and Levers on Dark Bluish Grey Background - Half Green Lever
 // 0 Name: s\6142275gs01.dat
 // 0 Author: Massimo Maso [Sirio]
-// 0 !LDRAW_ORG Subpart UPDATE 2024-01
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -26,7 +26,8 @@ function ldraw_lib__s__6142275gs01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2024-01-29 [OrionP] Official Update 2024-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Primitives
 // 
@@ -36,18 +37,18 @@ function ldraw_lib__s__6142275gs01() = [
   [1,72,0,0,0,3.25,0,0,0,1,0,0,0,3.25, ldraw_lib__3_16ndis()],
 // 1 0 0 0 0 .25 0 0 0 1 0 0 0 .25 3-16ring12.dat
   [1,0,0,0,0,.25,0,0,0,1,0,0,0,.25, ldraw_lib__3_16ring12()],
-// 1 0 0 0 0 .25 0 0 0 1 0 0 0 .25 1-4rin11.dat
-  [1,0,0,0,0,.25,0,0,0,1,0,0,0,.25, ldraw_lib__1_4rin11()],
-// 1 2 0 0 0 .25 0 0 0 1 0 0 0 .25 1-4rin10.dat
-  [1,2,0,0,0,.25,0,0,0,1,0,0,0,.25, ldraw_lib__1_4rin10()],
+// 1 0 0 0 0 .25 0 0 0 1 0 0 0 .25 1-4ring11.dat
+  [1,0,0,0,0,.25,0,0,0,1,0,0,0,.25, ldraw_lib__1_4ring11()],
+// 1 2 0 0 0 .25 0 0 0 1 0 0 0 .25 1-4ring10.dat
+  [1,2,0,0,0,.25,0,0,0,1,0,0,0,.25, ldraw_lib__1_4ring10()],
 // 1 2 0 0 0 .625 0 0 0 1 0 0 0 .625 1-4ring3.dat
   [1,2,0,0,0,.625,0,0,0,1,0,0,0,.625, ldraw_lib__1_4ring3()],
 // 1 0 0 0 0 .375 0 0 0 1 0 0 0 .375 1-4ring4.dat
   [1,0,0,0,0,.375,0,0,0,1,0,0,0,.375, ldraw_lib__1_4ring4()],
-// 1 0 0 0 0 .125 0 0 0 1 0 0 0 .125 1-4rin11.dat
-  [1,0,0,0,0,.125,0,0,0,1,0,0,0,.125, ldraw_lib__1_4rin11()],
-// 1 71 0 0 0 .125 0 0 0 1 0 0 0 .125 1-4rin10.dat
-  [1,71,0,0,0,.125,0,0,0,1,0,0,0,.125, ldraw_lib__1_4rin10()],
+// 1 0 0 0 0 .125 0 0 0 1 0 0 0 .125 1-4ring11.dat
+  [1,0,0,0,0,.125,0,0,0,1,0,0,0,.125, ldraw_lib__1_4ring11()],
+// 1 71 0 0 0 .125 0 0 0 1 0 0 0 .125 1-4ring10.dat
+  [1,71,0,0,0,.125,0,0,0,1,0,0,0,.125, ldraw_lib__1_4ring10()],
 // 1 71 0 0 0 .25 0 0 0 1 0 0 0 .25 1-4ring4.dat
   [1,71,0,0,0,.25,0,0,0,1,0,0,0,.25, ldraw_lib__1_4ring4()],
 // 1 0 0 0 0 .25 0 0 0 1 0 0 0 .25 1-4ring3.dat
@@ -62,8 +63,8 @@ function ldraw_lib__s__6142275gs01() = [
   [1,0,0,0,0,1.875,0,0,0,1,0,0,0,-1.875, ldraw_lib__1_8chrd()],
 // 1 2 0 0 0 .625 0 0 0 1 0 0 0 -.625 1-8ring3.dat
   [1,2,0,0,0,.625,0,0,0,1,0,0,0,-.625, ldraw_lib__1_8ring3()],
-// 1 2 0 0 0 .25 0 0 0 1 0 0 0 -.25 1-8rin10.dat
-  [1,2,0,0,0,.25,0,0,0,1,0,0,0,-.25, ldraw_lib__1_8rin10()],
+// 1 2 0 0 0 .25 0 0 0 1 0 0 0 -.25 1-8ring10.dat
+  [1,2,0,0,0,.25,0,0,0,1,0,0,0,-.25, ldraw_lib__1_8ring10()],
 // 1 0 0 0 0 2.75 0 0 0 1 0 0 0 -2.75 1-8tang.dat
   [1,0,0,0,0,2.75,0,0,0,1,0,0,0,-2.75, ldraw_lib__1_8tang()],
 // 1 0 0 0 0 3.25 0 0 0 1 0 0 0 -3.25 3-16ering.dat

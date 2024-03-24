@@ -16,9 +16,9 @@ use <../p/4-4ndis.scad>
 use <../p/4-4ring3.scad>
 use <../p/48/4-4cyli.scad>
 use <../p/48/4-4edge.scad>
-use <../p/48/4-4rin17.scad>
-use <../p/48/4-4rin33.scad>
+use <../p/48/4-4ring17.scad>
 use <../p/48/4-4ring3.scad>
+use <../p/48/4-4ring33.scad>
 use <../p/48/4-4ring6.scad>
 use <../p/48/4-4ring7.scad>
 use <../p/7-8cyli.scad>
@@ -33,7 +33,7 @@ function ldraw_lib__2856() = [
 // 0 Technic Turntable Type 1 Bottom
 // 0 Name: 2856.dat
 // 0 Author: Remco Braak [remco1974]
-// 0 !LDRAW_ORG Part UPDATE 2011-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -46,7 +46,8 @@ function ldraw_lib__2856() = [
 // 0 !HISTORY 2008-07-07 [guyvivan] Made BFC Compliant (2004-08-16)
 // 0 !HISTORY 2008-07-08 [guyvivan] Add missing lines, quads and gaps; fix tooth size
 // 0 !HISTORY 2011-07-25 [PTadmin] Official Update 2011-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 16 0 36 0 0 0 1 0 0 0 36 48\4-4edge.dat
   [1,16,0,16,0,36,0,0,0,1,0,0,0,36, ldraw_lib__48__4_4edge()],
@@ -64,14 +65,14 @@ function ldraw_lib__2856() = [
   [1,16,0,16,0,8,0,0,0,1,0,0,0,8, ldraw_lib__48__4_4ring7()],
 // 1 16 0 0 0 36 0 0 0 1 0 0 0 36 48\4-4edge.dat
   [1,16,0,0,0,36,0,0,0,1,0,0,0,36, ldraw_lib__48__4_4edge()],
-// 1 16 0 0 0 1 0 0 0 1 0 0 0 1 48\4-4rin33.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__48__4_4rin33()],
-// 1 16 0 20 0 1 0 0 0 -1 0 0 0 1 48\4-4rin33.dat
-  [1,16,0,20,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__48__4_4rin33()],
-// 1 16 0 0 0 2 0 0 0 1 0 0 0 2 48\4-4rin17.dat
-  [1,16,0,0,0,2,0,0,0,1,0,0,0,2, ldraw_lib__48__4_4rin17()],
-// 1 16 0 20 0 2 0 0 0 -1 0 0 0 2 48\4-4rin17.dat
-  [1,16,0,20,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__48__4_4rin17()],
+// 1 16 0 0 0 1 0 0 0 1 0 0 0 1 48\4-4ring33.dat
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__48__4_4ring33()],
+// 1 16 0 20 0 1 0 0 0 -1 0 0 0 1 48\4-4ring33.dat
+  [1,16,0,20,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__48__4_4ring33()],
+// 1 16 0 0 0 2 0 0 0 1 0 0 0 2 48\4-4ring17.dat
+  [1,16,0,0,0,2,0,0,0,1,0,0,0,2, ldraw_lib__48__4_4ring17()],
+// 1 16 0 20 0 2 0 0 0 -1 0 0 0 2 48\4-4ring17.dat
+  [1,16,0,20,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__48__4_4ring17()],
 // 1 16 0 0 0 36 0 0 0 16 0 0 0 36 48\4-4cyli.dat
   [1,16,0,0,0,36,0,0,0,16,0,0,0,36, ldraw_lib__48__4_4cyli()],
 // 1 16 20 50 60 -1 0 0 0 0 1 0 -1 0 peghole.dat

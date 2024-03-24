@@ -6,7 +6,7 @@ use <../../p/4-4edge.scad>
 use <../../p/48/1-12chrd.scad>
 use <../../p/48/1-12cyls.scad>
 use <../../p/48/1-12edge.scad>
-use <../../p/48/1-4rin35.scad>
+use <../../p/48/1-4ring35.scad>
 use <../../p/48/1-6cyli.scad>
 use <../../p/48/1-6edge.scad>
 use <../../p/8/1-4chrd.scad>
@@ -26,7 +26,7 @@ function ldraw_lib__s__33213s01() = [
 // 0 ~Panel  6 x  8 x 12 Tower with Arched Window - Half
 // 0 Name: s\33213s01.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
-// 0 !LDRAW_ORG Subpart UPDATE 2020-02
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -34,7 +34,8 @@ function ldraw_lib__s__33213s01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Bottom
 // 
@@ -454,8 +455,8 @@ function ldraw_lib__s__33213s01() = [
 // 4 16 37 85 -56 30 85 -56 30 168 -56 37 175 -56
   [4,16,37,85,-56,30,85,-56,30,168,-56,37,175,-56],
 // 
-// 1 16 0 264 20 0 0 2 0 -1 0 -2 0 0 48\1-4rin35.dat
-  [1,16,0,264,20,0,0,2,0,-1,0,-2,0,0, ldraw_lib__48__1_4rin35()],
+// 1 16 0 264 20 0 0 2 0 -1 0 -2 0 0 48\1-4ring35.dat
+  [1,16,0,264,20,0,0,2,0,-1,0,-2,0,0, ldraw_lib__48__1_4ring35()],
 // 2 24 35 175 -40.62 37 175 -39.284575
   [2,24,35,175,-40.62,37,175,-39.284575],
 // 

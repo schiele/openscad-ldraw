@@ -1,15 +1,15 @@
 use <../lib.scad>
-use <../p/1-4rin38.scad>
+use <../p/1-4ring38.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4ndis.scad>
-use <../p/4-4rin34.scad>
+use <../p/4-4ring34.scad>
 use <s/4864s01.scad>
 use <../p/stud2.scad>
 function ldraw_lib__4864bp13() = [
 // 0 Panel  1 x  2 x  2 with Red Porthole Pattern
 // 0 Name: 4864bp13.dat
 // 0 Author: Donald Sutter [technog]
-// 0 !LDRAW_ORG Part UPDATE 2010-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -19,7 +19,8 @@ function ldraw_lib__4864bp13() = [
 // 0 !CMDLINE -c47
 // 
 // 0 !HISTORY 2010-04-05 [PTadmin] Official Update 2010-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4864s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4864s01()],
@@ -29,14 +30,14 @@ function ldraw_lib__4864bp13() = [
   [1,16,10,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2()],
 // 1 16 0 22 10 0 0 17 17 0 0 0 -1 0 4-4disc.dat
   [1,16,0,22,10,0,0,17,17,0,0,0,-1,0, ldraw_lib__4_4disc()],
-// 1 0 0 22 10 0 0 0.5 0.5 0 0 0 -1 0 1-4rin38.dat
-  [1,0,0,22,10,0,0,0.5,0.5,0,0,0,-1,0, ldraw_lib__1_4rin38()],
-// 1 0 0 22 10 -0.5 0 0 0 0 0.5 0 -1 0 1-4rin38.dat
-  [1,0,0,22,10,-0.5,0,0,0,0,0.5,0,-1,0, ldraw_lib__1_4rin38()],
-// 1 0 0 22 10 0 0 -0.5 -0.5 0 0 0 -1 0 1-4rin38.dat
-  [1,0,0,22,10,0,0,-0.5,-0.5,0,0,0,-1,0, ldraw_lib__1_4rin38()],
-// 1 0 0 22 10 0.5 0 0 0 0 -0.5 0 -1 0 1-4rin38.dat
-  [1,0,0,22,10,0.5,0,0,0,0,-0.5,0,-1,0, ldraw_lib__1_4rin38()],
+// 1 0 0 22 10 0 0 0.5 0.5 0 0 0 -1 0 1-4ring38.dat
+  [1,0,0,22,10,0,0,0.5,0.5,0,0,0,-1,0, ldraw_lib__1_4ring38()],
+// 1 0 0 22 10 -0.5 0 0 0 0 0.5 0 -1 0 1-4ring38.dat
+  [1,0,0,22,10,-0.5,0,0,0,0,0.5,0,-1,0, ldraw_lib__1_4ring38()],
+// 1 0 0 22 10 0 0 -0.5 -0.5 0 0 0 -1 0 1-4ring38.dat
+  [1,0,0,22,10,0,0,-0.5,-0.5,0,0,0,-1,0, ldraw_lib__1_4ring38()],
+// 1 0 0 22 10 0.5 0 0 0 0 -0.5 0 -1 0 1-4ring38.dat
+  [1,0,0,22,10,0.5,0,0,0,0,-0.5,0,-1,0, ldraw_lib__1_4ring38()],
 // 1 0 0 3.75 10 0.5 0 0 0 0 -0.5 0 -1 0 4-4disc.dat
   [1,0,0,3.75,10,0.5,0,0,0,0,-0.5,0,-1,0, ldraw_lib__4_4disc()],
 // 1 0 0 40.25 10 0.5 0 0 0 0 -0.5 0 -1 0 4-4disc.dat
@@ -45,8 +46,8 @@ function ldraw_lib__4864bp13() = [
   [1,0,18.25,22,10,0.5,0,0,0,0,-0.5,0,-1,0, ldraw_lib__4_4disc()],
 // 1 0 -18.25 22 10 0.5 0 0 0 0 -0.5 0 -1 0 4-4disc.dat
   [1,0,-18.25,22,10,0.5,0,0,0,0,-0.5,0,-1,0, ldraw_lib__4_4disc()],
-// 1 0 0 22 10 0 0 0.5 0.5 0 0 0 -1 0 4-4rin34.dat
-  [1,0,0,22,10,0,0,0.5,0.5,0,0,0,-1,0, ldraw_lib__4_4rin34()],
+// 1 0 0 22 10 0 0 0.5 0.5 0 0 0 -1 0 4-4ring34.dat
+  [1,0,0,22,10,0,0,0.5,0.5,0,0,0,-1,0, ldraw_lib__4_4ring34()],
 // 1 4 0 22 10 0 0 19.5 19.5 0 0 0 -1 0 4-4ndis.dat
   [1,4,0,22,10,0,0,19.5,19.5,0,0,0,-1,0, ldraw_lib__4_4ndis()],
 // 1 4 0 3.75 10 0.5 0 0 0 0 -0.5 0 -1 0 4-4ndis.dat

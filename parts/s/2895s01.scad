@@ -2,14 +2,14 @@ use <../../lib.scad>
 use <../../p/1-4con28.scad>
 use <../../p/1-4con5.scad>
 use <../../p/1-4con6.scad>
-use <../../p/1-4rin28.scad>
+use <../../p/1-4ring28.scad>
 use <../../p/2-4cyli.scad>
 use <../../p/2-4edge.scad>
 use <../../p/2-4ndis.scad>
 use <../../p/4-4cyli.scad>
 use <../../p/4-4edge.scad>
 use <../../p/4-4ndis.scad>
-use <../../p/4-4rin19.scad>
+use <../../p/4-4ring19.scad>
 use <../../p/4-4ring3.scad>
 use <../../p/4-4ring4.scad>
 use <../../p/rect2p.scad>
@@ -18,7 +18,7 @@ function ldraw_lib__s__2895s01() = [
 // 0 ~Train Wheel  9V Electrical Contact Metal
 // 0 Name: s\2895s01.dat
 // 0 Author: Donald Sutter [technog]
-// 0 !LDRAW_ORG Subpart UPDATE 2010-02
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CW
@@ -26,7 +26,8 @@ function ldraw_lib__s__2895s01() = [
   [0,"BFC","CW"],
 // 
 // 0 !HISTORY 2010-07-05 [PTadmin] Official Update 2010-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // 2010-05-29 [Steffen] used more primitives, adjusted origin
 // 
@@ -82,8 +83,8 @@ function ldraw_lib__s__2895s01() = [
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 -7.5 19 0 0 0 0 19 0 1 0 4-4cyli.dat
   [1,16,0,0,-7.5,19,0,0,0,0,19,0,1,0, ldraw_lib__4_4cyli()],
-// 1 16 0 0 -7.5 1 0 0 0 0 1 0 1 0 4-4rin19.dat
-  [1,16,0,0,-7.5,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4rin19()],
+// 1 16 0 0 -7.5 1 0 0 0 0 1 0 1 0 4-4ring19.dat
+  [1,16,0,0,-7.5,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4ring19()],
 // 1 16 0 0 -6.166 4 0 0 0 0 4 0 -1.33333 0 1-4con5.dat
   [1,16,0,0,-6.166,4,0,0,0,0,4,0,-1.33333,0, ldraw_lib__1_4con5()],
 // 1 16 0 0 -4.833 4 0 0 0 0 4 0 -1.33333 0 1-4con6.dat
@@ -470,14 +471,14 @@ function ldraw_lib__s__2895s01() = [
   [4,16,-22.06,-3.89,-2,-19.9,-10.334,-2,-26.793,-11.098,-2,-29,0,-2],
 // 3 16 -22.06 -3.89 -2 -29 0 -2 -22.06 3.89 -2
   [3,16,-22.06,-3.89,-2,-29,0,-2,-22.06,3.89,-2],
-// 1 16 0 0 -2 1 0 0 0 0 1 0 -1 0 1-4rin28.dat
-  [1,16,0,0,-2,1,0,0,0,0,1,0,-1,0, ldraw_lib__1_4rin28()],
-// 1 16 0 0 -2 0 0 1 -1 0 0 0 -1 0 1-4rin28.dat
-  [1,16,0,0,-2,0,0,1,-1,0,0,0,-1,0, ldraw_lib__1_4rin28()],
-// 1 16 0 0 -2 -1 0 0 0 0 -1 0 -1 0 1-4rin28.dat
-  [1,16,0,0,-2,-1,0,0,0,0,-1,0,-1,0, ldraw_lib__1_4rin28()],
-// 1 16 0 0 -2 0 0 -1 1 0 0 0 -1 0 1-4rin28.dat
-  [1,16,0,0,-2,0,0,-1,1,0,0,0,-1,0, ldraw_lib__1_4rin28()],
+// 1 16 0 0 -2 1 0 0 0 0 1 0 -1 0 1-4ring28.dat
+  [1,16,0,0,-2,1,0,0,0,0,1,0,-1,0, ldraw_lib__1_4ring28()],
+// 1 16 0 0 -2 0 0 1 -1 0 0 0 -1 0 1-4ring28.dat
+  [1,16,0,0,-2,0,0,1,-1,0,0,0,-1,0, ldraw_lib__1_4ring28()],
+// 1 16 0 0 -2 -1 0 0 0 0 -1 0 -1 0 1-4ring28.dat
+  [1,16,0,0,-2,-1,0,0,0,0,-1,0,-1,0, ldraw_lib__1_4ring28()],
+// 1 16 0 0 -2 0 0 -1 1 0 0 0 -1 0 1-4ring28.dat
+  [1,16,0,0,-2,0,0,-1,1,0,0,0,-1,0, ldraw_lib__1_4ring28()],
 // 4 16 -29 0 -2 -26.793 11.098 -2 -19.9 10.334 -2 -22.06 3.89 -2
   [4,16,-29,0,-2,-26.793,11.098,-2,-19.9,10.334,-2,-22.06,3.89,-2],
 // 4 16 -26.793 11.098 -2 -20.506 20.506 -2 -18.9 12.066 -2 -19.9 10.334 -2

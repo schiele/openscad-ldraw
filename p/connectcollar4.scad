@@ -3,7 +3,7 @@ use <1-4cyli.scad>
 use <1-4cylo.scad>
 use <1-4edge.scad>
 use <1-4ndis.scad>
-use <1-4rin12.scad>
+use <1-4ring12.scad>
 use <1-8chrd.scad>
 use <3-8cyli.scad>
 use <3-8edge.scad>
@@ -17,7 +17,7 @@ function ldraw_lib__connectcollar4() = [
 // 0 Technic Pin Collar Half with Small Rectangular Hole and Long Slit
 // 0 Name: connectcollar4.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Primitive UPDATE 2022-05
+// 0 !LDRAW_ORG Primitive UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -25,7 +25,8 @@ function ldraw_lib__connectcollar4() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2022-09-15 [PTadmin] Official Update 2022-05
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 2 0 5.54328 0 -2.2961 0 8 0 2.2961 0 5.54328 3-8cyli.dat
   [1,16,0,2,0,5.54328,0,-2.2961,0,8,0,2.2961,0,5.54328, ldraw_lib__3_8cyli()],
@@ -33,8 +34,8 @@ function ldraw_lib__connectcollar4() = [
   [1,16,0,2,0,-5.54328,0,2.2961,0,1,0,2.2961,0,5.54328, ldraw_lib__3_8edge()],
 // 1 16 0 0 0 4.5962 0 -4.59619 0 2 0 4.59619 0 4.5962 1-4cylo.dat
   [1,16,0,0,0,4.5962,0,-4.59619,0,2,0,4.59619,0,4.5962, ldraw_lib__1_4cylo()],
-// 1 16 0 2 0 0.35355 0 -0.35355 0 -1 0 0.35355 0 0.35355 1-4rin12.dat
-  [1,16,0,2,0,0.35355,0,-0.35355,0,-1,0,0.35355,0,0.35355, ldraw_lib__1_4rin12()],
+// 1 16 0 2 0 0.35355 0 -0.35355 0 -1 0 0.35355 0 0.35355 1-4ring12.dat
+  [1,16,0,2,0,0.35355,0,-0.35355,0,-1,0,0.35355,0,0.35355, ldraw_lib__1_4ring12()],
 // 2 24 5.801 0 1 5.5 0 2.9
   [2,24,5.801,0,1,5.5,0,2.9],
 // 2 24 4.5962 0 4.5962 5.5 0 2.9

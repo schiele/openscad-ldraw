@@ -1,14 +1,14 @@
 use <../lib.scad>
 use <../p/4-4ering.scad>
-use <../p/4-4rin16.scad>
-use <../p/4-4rin17.scad>
+use <../p/4-4ring16.scad>
+use <../p/4-4ring17.scad>
 use <../p/4-4ring5.scad>
 use <s/14769s01.scad>
 function ldraw_lib__14769p0m() = [
 // 0 Tile  2 x  2 Round with Round Underside Stud with Clock Pattern with Red Second Hand Pattern
 // 0 Name: 14769p0m.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2022-04
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -18,16 +18,17 @@ function ldraw_lib__14769p0m() = [
 // 0 !KEYWORDS Bricklink 14769pb356, Set 10278, Timekeeper, Timepiece, Watch
 // 
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\14769s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__14769s01()],
 // 1 16 0 0 0 3.33333 0 0 0 1 0 0 0 3.33333 4-4ring5.dat
   [1,16,0,0,0,3.33333,0,0,0,1,0,0,0,3.33333, ldraw_lib__4_4ring5()],
-// 1 0 0 0 0 0.92593 0 0 0 1 0 0 0 0.92593 4-4rin17.dat
-  [1,0,0,0,0,0.92593,0,0,0,1,0,0,0,0.92593, ldraw_lib__4_4rin17()],
-// 1 71 0 0 0 0.92593 0 0 0 1 0 0 0 0.92593 4-4rin16.dat
-  [1,71,0,0,0,0.92593,0,0,0,1,0,0,0,0.92593, ldraw_lib__4_4rin16()],
+// 1 0 0 0 0 0.92593 0 0 0 1 0 0 0 0.92593 4-4ring17.dat
+  [1,0,0,0,0,0.92593,0,0,0,1,0,0,0,0.92593, ldraw_lib__4_4ring17()],
+// 1 71 0 0 0 0.92593 0 0 0 1 0 0 0 0.92593 4-4ring16.dat
+  [1,71,0,0,0,0.92593,0,0,0,1,0,0,0,0.92593, ldraw_lib__4_4ring16()],
 // 1 16 0 0 0 14.81481 0 0 0 1 0 0 0 14.81481 4-4ering.dat
   [1,16,0,0,0,14.81481,0,0,0,1,0,0,0,14.81481, ldraw_lib__4_4ering()],
 // 

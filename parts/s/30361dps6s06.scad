@@ -1,6 +1,6 @@
 use <../../lib.scad>
 use <../../p/1-4disc.scad>
-use <../../p/1-4rin12.scad>
+use <../../p/1-4ring12.scad>
 use <../../p/1-4ring2.scad>
 use <../../p/1-4ring3.scad>
 use <../../p/1-4ring5.scad>
@@ -8,7 +8,7 @@ function ldraw_lib__s__30361dps6s06() = [
 // 0 ~Cylinder  2 x  2 x  2 Robot Body with SW R5 Red and Blue Pattern - Centre Vent Panel
 // 0 Name: s\30361dps6s06.dat
 // 0 Author: Willy Tschager [Holly-Wood]
-// 0 !LDRAW_ORG Subpart UPDATE 2022-02
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -17,12 +17,13 @@ function ldraw_lib__s__30361dps6s06() = [
 // 
 // 0 !HISTORY 2020-11-18 [Holly-Wood] Fixed rounding errors
 // 0 !HISTORY 2022-03-06 [PTadmin] Official Update 2022-02
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
-// 
-// 1 16 -.9 8.2 -19.821 -.1 0 0 0 0 .1 .02 1 0 1-4rin12.dat
-  [1,16,-.9,8.2,-19.821,-.1,0,0,0,0,.1,.02,1,0, ldraw_lib__1_4rin12()],
-// 1 16 -.9 5 -19.821 0 0 -.1 -.1 0 0 0 1 .02 1-4rin12.dat
-  [1,16,-.9,5,-19.821,0,0,-.1,-.1,0,0,0,1,.02, ldraw_lib__1_4rin12()],
+// 1 16 -.9 8.2 -19.821 -.1 0 0 0 0 .1 .02 1 0 1-4ring12.dat
+  [1,16,-.9,8.2,-19.821,-.1,0,0,0,0,.1,.02,1,0, ldraw_lib__1_4ring12()],
+// 1 16 -.9 5 -19.821 0 0 -.1 -.1 0 0 0 1 .02 1-4ring12.dat
+  [1,16,-.9,5,-19.821,0,0,-.1,-.1,0,0,0,1,.02, ldraw_lib__1_4ring12()],
 // 1 16 -.9 5 -19.821 0 0 -.3 -.3 0 0 0 1 .06 1-4ring3.dat
   [1,16,-.9,5,-19.821,0,0,-.3,-.3,0,0,0,1,.06, ldraw_lib__1_4ring3()],
 // 1 16 -.9 8.2 -19.821 -.3 0 0 0 0 .3 .06 1 0 1-4ring3.dat
@@ -99,10 +100,10 @@ function ldraw_lib__s__30361dps6s06() = [
 // 4 16 0 6.2 -20 -.9 6.2 -19.821 -.9 7 -19.821 0 7 -20
   [4,16,0,6.2,-20,-.9,6.2,-19.821,-.9,7,-19.821,0,7,-20],
 // 
-// 1 16 -.9 12.4 -19.821 -.1 0 0 0 0 -.1 .02 1 0 1-4rin12.dat
-  [1,16,-.9,12.4,-19.821,-.1,0,0,0,0,-.1,.02,1,0, ldraw_lib__1_4rin12()],
-// 1 16 -.9 15.6 -19.821 0 0 -.1 .1 0 0 0 1 .02 1-4rin12.dat
-  [1,16,-.9,15.6,-19.821,0,0,-.1,.1,0,0,0,1,.02, ldraw_lib__1_4rin12()],
+// 1 16 -.9 12.4 -19.821 -.1 0 0 0 0 -.1 .02 1 0 1-4ring12.dat
+  [1,16,-.9,12.4,-19.821,-.1,0,0,0,0,-.1,.02,1,0, ldraw_lib__1_4ring12()],
+// 1 16 -.9 15.6 -19.821 0 0 -.1 .1 0 0 0 1 .02 1-4ring12.dat
+  [1,16,-.9,15.6,-19.821,0,0,-.1,.1,0,0,0,1,.02, ldraw_lib__1_4ring12()],
 // 1 16 -.9 15.6 -19.821 0 0 -.3 .3 0 0 0 1 .06 1-4ring3.dat
   [1,16,-.9,15.6,-19.821,0,0,-.3,.3,0,0,0,1,.06, ldraw_lib__1_4ring3()],
 // 1 16 -.9 12.4 -19.821 -.3 0 0 0 0 -.3 .06 1 0 1-4ring3.dat

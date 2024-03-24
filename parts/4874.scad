@@ -2,11 +2,11 @@ use <../lib.scad>
 use <../p/4-4cylc.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4edge.scad>
-use <../p/4-4rin23.scad>
-use <../p/4-4rin45.scad>
-use <../p/4-4rin48.scad>
 use <../p/4-4ring1.scad>
+use <../p/4-4ring23.scad>
 use <../p/4-4ring4.scad>
+use <../p/4-4ring45.scad>
+use <../p/4-4ring48.scad>
 use <s/4874s01.scad>
 use <../p/stud10.scad>
 use <../p/stug-2x2.scad>
@@ -16,7 +16,7 @@ function ldraw_lib__4874() = [
 // 0 Fabuland Merry-Go-Round Platform
 // 0 Name: 4874.dat
 // 0 Author: Chris Dee [cwdee]
-// 0 !LDRAW_ORG Part UPDATE 2014-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CW
@@ -27,7 +27,8 @@ function ldraw_lib__4874() = [
 // 0 !KEYWORDS Roundabout
 // 
 // 0 !HISTORY 2014-12-23 [PTadmin] Official Update 2014-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 10 0 10 1 0 0 0 1 0 0 0 1 stud10.dat
   [1,16,10,0,10,1,0,0,0,1,0,0,0,1, ldraw_lib__stud10()],
@@ -72,12 +73,12 @@ function ldraw_lib__4874() = [
   [1,16,0,52,0,45,0,0,0,4,0,0,0,45, ldraw_lib__4_4cyli()],
 // 1 16 0 56 0 45 0 0 0 1 0 0 0 45 4-4edge.dat
   [1,16,0,56,0,45,0,0,0,1,0,0,0,45, ldraw_lib__4_4edge()],
-// 1 16 0 56 0 1 0 0 0 -1 0 0 0 1 4-4rin45.dat
-  [1,16,0,56,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__4_4rin45()],
-// 1 16 0 56 0 2 0 0 0 -1 0 0 0 2 4-4rin23.dat
-  [1,16,0,56,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__4_4rin23()],
-// 1 16 0 56 0 1 0 0 0 -1 0 0 0 1 4-4rin48.dat
-  [1,16,0,56,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__4_4rin48()],
+// 1 16 0 56 0 1 0 0 0 -1 0 0 0 1 4-4ring45.dat
+  [1,16,0,56,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__4_4ring45()],
+// 1 16 0 56 0 2 0 0 0 -1 0 0 0 2 4-4ring23.dat
+  [1,16,0,56,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__4_4ring23()],
+// 1 16 0 56 0 1 0 0 0 -1 0 0 0 1 4-4ring48.dat
+  [1,16,0,56,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__4_4ring48()],
 // 1 16 0 56 0 49 0 0 0 1 0 0 0 49 4-4edge.dat
   [1,16,0,56,0,49,0,0,0,1,0,0,0,49, ldraw_lib__4_4edge()],
 // 1 16 0 52 0 49 0 0 0 4 0 0 0 49 4-4cyli.dat

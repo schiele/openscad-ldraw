@@ -6,7 +6,7 @@ use <2-4cyli.scad>
 use <3-8chrd.scad>
 use <3-8cyli.scad>
 use <3-8edge.scad>
-use <3-8rin12.scad>
+use <3-8ring12.scad>
 use <4-4cyli.scad>
 use <4-4edge.scad>
 use <4-4ring3.scad>
@@ -14,7 +14,7 @@ function ldraw_lib__connect6() = [
 // 0 Technic Pin 1.0 with Base Collar and Notches
 // 0 Name: connect6.dat
 // 0 Author: Chris Dee [cwdee]
-// 0 !LDRAW_ORG Primitive UPDATE 2010-01
+// 0 !LDRAW_ORG Primitive UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -25,7 +25,8 @@ function ldraw_lib__connect6() = [
 // 0 !HISTORY 2009-05-02 [PTadmin] Official Update 2009-01
 // 0 !HISTORY 2010-01-15 [cwdee] Update ring3 to 4-4ring3
 // 0 !HISTORY 2010-04-05 [PTadmin] Official Update 2010-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
@@ -417,14 +418,14 @@ function ldraw_lib__connect6() = [
   [1,16,0,-20,0,6.00522,0,-2.48744,0,2,0,2.48744,0,6.00522, ldraw_lib__3_8edge()],
 // 1 16 0 -18 0 6.00522 0 -2.48744 0 2 0 2.48744 0 6.00522 3-8edge.dat
   [1,16,0,-18,0,6.00522,0,-2.48744,0,2,0,2.48744,0,6.00522, ldraw_lib__3_8edge()],
-// 1 16 0 -18 0 0.461939 0 -0.191342 0 -1 0 0.191342 0 0.461939 3-8rin12.dat
-  [1,16,0,-18,0,0.461939,0,-0.191342,0,-1,0,0.191342,0,0.461939, ldraw_lib__3_8rin12()],
+// 1 16 0 -18 0 0.461939 0 -0.191342 0 -1 0 0.191342 0 0.461939 3-8ring12.dat
+  [1,16,0,-18,0,0.461939,0,-0.191342,0,-1,0,0.191342,0,0.461939, ldraw_lib__3_8ring12()],
 // 1 16 0 -18 0 5.54328 0 -2.2961 0 1 0 2.2961 0 5.54328 3-8edge.dat
   [1,16,0,-18,0,5.54328,0,-2.2961,0,1,0,2.2961,0,5.54328, ldraw_lib__3_8edge()],
 // 1 16 0 -18 0 -5.54328 0 2.2961 0 1 0 -2.2961 0 -5.54328 3-8edge.dat
   [1,16,0,-18,0,-5.54328,0,2.2961,0,1,0,-2.2961,0,-5.54328, ldraw_lib__3_8edge()],
-// 1 16 0 -18 0 -0.461939 0 0.191342 0 -1 0 -0.191342 0 -0.461939 3-8rin12.dat
-  [1,16,0,-18,0,-0.461939,0,0.191342,0,-1,0,-0.191342,0,-0.461939, ldraw_lib__3_8rin12()],
+// 1 16 0 -18 0 -0.461939 0 0.191342 0 -1 0 -0.191342 0 -0.461939 3-8ring12.dat
+  [1,16,0,-18,0,-0.461939,0,0.191342,0,-1,0,-0.191342,0,-0.461939, ldraw_lib__3_8ring12()],
 // 1 16 0 -20 0 -6.00522 0 2.48744 0 2 0 -2.48744 0 -6.00522 3-8edge.dat
   [1,16,0,-20,0,-6.00522,0,2.48744,0,2,0,-2.48744,0,-6.00522, ldraw_lib__3_8edge()],
 // 1 16 0 -18 0 -6.00522 0 2.48744 0 2 0 -2.48744 0 -6.00522 3-8edge.dat

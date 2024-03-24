@@ -12,7 +12,7 @@ use <../p/4-4cyli.scad>
 use <../p/4-4cylo.scad>
 use <../p/4-4edge.scad>
 use <../p/4-4ndis.scad>
-use <../p/4-4rin16.scad>
+use <../p/4-4ring16.scad>
 use <../p/4-4ring4.scad>
 use <../p/4-4ring5.scad>
 use <../p/peghole.scad>
@@ -22,7 +22,7 @@ function ldraw_lib__u9145() = [
 // 0 ~Technic Pneumatic Cylinder  1 x 11 with  2 Ports Body
 // 0 Name: u9145.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2018-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -30,7 +30,8 @@ function ldraw_lib__u9145() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2018-01-30 [PTadmin] Official Update 2018-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 10 0 0 0 -1 0 -1 0 0 0 0 -1 peghole.dat
   [1,16,10,0,0,0,-1,0,-1,0,0,0,0,-1, ldraw_lib__peghole()],
@@ -198,8 +199,8 @@ function ldraw_lib__u9145() = [
   [3,16,3.827,-164,-9.239,5,-164,-10,0,-164,-10],
 // 2 24 0 -164 -10 5 -164 -10
   [2,24,0,-164,-10,5,-164,-10],
-// 1 16 0 -176 0 0.5 0 0 0 1 0 0 0 0.5 4-4rin16.dat
-  [1,16,0,-176,0,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__4_4rin16()],
+// 1 16 0 -176 0 0.5 0 0 0 1 0 0 0 0.5 4-4ring16.dat
+  [1,16,0,-176,0,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__4_4ring16()],
 // 1 16 0 -176 0 8.5 0 0 0 1 0 0 0 8.5 4-4ndis.dat
   [1,16,0,-176,0,8.5,0,0,0,1,0,0,0,8.5, ldraw_lib__4_4ndis()],
 // 1 16 0 -164 0 10 0 0 0 1 0 0 0 10 4-4edge.dat

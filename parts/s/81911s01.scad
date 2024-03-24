@@ -9,7 +9,7 @@ use <../../p/48/1-16edge.scad>
 use <../../p/48/1-24chrd.scad>
 use <../../p/48/1-8cylo.scad>
 use <../../p/48/1-8edge.scad>
-use <../../p/48/1-8rin14.scad>
+use <../../p/48/1-8ring14.scad>
 use <../../p/48/5-48chrd.scad>
 use <../../p/48/5-48con12.scad>
 use <../../p/48/5-48cylo.scad>
@@ -25,7 +25,7 @@ function ldraw_lib__s__81911s01() = [
 // 0 ~Windscreen  2 x  4 x  1 Curved Half
 // 0 Name: s\81911s01.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Subpart UPDATE 2023-04
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -33,12 +33,13 @@ function ldraw_lib__s__81911s01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2023-08-25 [OrionP] Official Update 2023-04
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 -24 44 0 0 54.16667 0 1 0 -54.16667 0 0 48\1-8edge.dat
   [1,16,0,-24,44,0,0,54.16667,0,1,0,-54.16667,0,0, ldraw_lib__48__1_8edge()],
-// 1 16 0 -24 44 0 0 3.61111 0 1 0 -3.61111 0 0 48\1-8rin14.dat
-  [1,16,0,-24,44,0,0,3.61111,0,1,0,-3.61111,0,0, ldraw_lib__48__1_8rin14()],
+// 1 16 0 -24 44 0 0 3.61111 0 1 0 -3.61111 0 0 48\1-8ring14.dat
+  [1,16,0,-24,44,0,0,3.61111,0,1,0,-3.61111,0,0, ldraw_lib__48__1_8ring14()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -24 44 0 0 50.55556 0 1 0 -50.55556 0 0 48\1-8cylo.dat

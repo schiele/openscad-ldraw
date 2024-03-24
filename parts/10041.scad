@@ -6,7 +6,7 @@ use <../p/2-4cylo.scad>
 use <../p/2-4disc.scad>
 use <../p/2-4edge.scad>
 use <../p/2-4ndis.scad>
-use <../p/2-4rin16.scad>
+use <../p/2-4ring16.scad>
 use <../p/2-4ring3.scad>
 use <../p/2-4ring5.scad>
 use <../p/3-16edge.scad>
@@ -26,7 +26,7 @@ function ldraw_lib__10041() = [
 // 0 ~Motor Pull Back  8 x  4 x  0.667 - Bottom
 // 0 Name: 10041.dat
 // 0 Author: Magnus Forsberg [MagFors]
-// 0 !LDRAW_ORG Part UPDATE 2014-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -36,7 +36,8 @@ function ldraw_lib__10041() = [
 // 0 !CATEGORY Vehicle
 // 
 // 0 !HISTORY 2014-12-23 [PTadmin] Official Update 2014-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 30 4 20 1 0 0 0 -1 0 0 0 1 stud3.dat
   [1,16,30,4,20,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud3()],
@@ -473,8 +474,8 @@ function ldraw_lib__10041() = [
   [1,16,32,-3,60,0,-1,0,0,0,1,-1,0,0, ldraw_lib__2_4ring5()],
 // 1 16 32 -3 60 0 -1 0 0 0 2 -2 0 0 2-4ring3.dat
   [1,16,32,-3,60,0,-1,0,0,0,2,-2,0,0, ldraw_lib__2_4ring3()],
-// 1 16 32 -3 60 0 -1 0 0 0 0.5 -0.5 0 0 2-4rin16.dat
-  [1,16,32,-3,60,0,-1,0,0,0,0.5,-0.5,0,0, ldraw_lib__2_4rin16()],
+// 1 16 32 -3 60 0 -1 0 0 0 0.5 -0.5 0 0 2-4ring16.dat
+  [1,16,32,-3,60,0,-1,0,0,0,0.5,-0.5,0,0, ldraw_lib__2_4ring16()],
 // 
 // 4 16 31.25 -3 68.5 31.25 0.25295 67.8531 31.25 4.8531 68.827 31.25 -3 68.827
   [4,16,31.25,-3,68.5,31.25,0.25295,67.8531,31.25,4.8531,68.827,31.25,-3,68.827],
@@ -518,8 +519,8 @@ function ldraw_lib__10041() = [
   [1,16,-32,-3,60,0,1,0,0,0,1,1,0,0, ldraw_lib__2_4ring5()],
 // 1 16 -32 -3 60 0 1 0 0 0 2 2 0 0 2-4ring3.dat
   [1,16,-32,-3,60,0,1,0,0,0,2,2,0,0, ldraw_lib__2_4ring3()],
-// 1 16 -32 -3 60 0 1 0 0 0 0.5 0.5 0 0 2-4rin16.dat
-  [1,16,-32,-3,60,0,1,0,0,0,0.5,0.5,0,0, ldraw_lib__2_4rin16()],
+// 1 16 -32 -3 60 0 1 0 0 0 0.5 0.5 0 0 2-4ring16.dat
+  [1,16,-32,-3,60,0,1,0,0,0,0.5,0.5,0,0, ldraw_lib__2_4ring16()],
 // 
 // 0 // Added lines/Condlines
 // 2 24 28.9 0 46.503 28.9 0 40

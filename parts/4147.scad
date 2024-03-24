@@ -3,14 +3,14 @@ use <../p/1-4ndis.scad>
 use <../p/1-8cylo.scad>
 use <../p/1-8disc.scad>
 use <../p/3-8cylo.scad>
-use <../p/3-8rin10.scad>
 use <../p/3-8ring1.scad>
+use <../p/3-8ring10.scad>
 use <../p/4-4cylo.scad>
 function ldraw_lib__4147() = [
 // 0 ~Duplo Brick  1 x  4 x  3 with Clock Face - Short Hand
 // 0 Name: 4147.dat
 // 0 Author: Tim Lampmann [L4mpi]
-// 0 !LDRAW_ORG Part UPDATE 2022-06
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -22,7 +22,8 @@ function ldraw_lib__4147() = [
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 0 !HISTORY 2021-05-31 [PTadmin] Renamed from u9524
 // 0 !HISTORY 2022-12-20 [PTadmin] Official Update 2022-06
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 -20 -4 -10 0 0 0 0 15 0 1 0 1-8disc.dat
   [1,16,0,-20,-4,-10,0,0,0,0,15,0,1,0, ldraw_lib__1_8disc()],
@@ -87,14 +88,14 @@ function ldraw_lib__4147() = [
 // 1 16 0 0 0 3.5355339 0 -3.5355339 -3.5355339 0 -3.5355339 0 -1 0 1-4ndis.dat
   [1,16,0,0,0,3.5355339,0,-3.5355339,-3.5355339,0,-3.5355339,0,-1,0, ldraw_lib__1_4ndis()],
 // 
-// 1 16 0 0 -4 0 0 1 1 0 0 0 1 0 3-8rin10.dat
-  [1,16,0,0,-4,0,0,1,1,0,0,0,1,0, ldraw_lib__3_8rin10()],
-// 1 16 0 0 -4 0 0 -1 1 0 0 0 1 0 3-8rin10.dat
-  [1,16,0,0,-4,0,0,-1,1,0,0,0,1,0, ldraw_lib__3_8rin10()],
-// 1 16 0 0 0 0 0 1 1 0 0 0 -1 0 3-8rin10.dat
-  [1,16,0,0,0,0,0,1,1,0,0,0,-1,0, ldraw_lib__3_8rin10()],
-// 1 16 0 0 0 0 0 -1 1 0 0 0 -1 0 3-8rin10.dat
-  [1,16,0,0,0,0,0,-1,1,0,0,0,-1,0, ldraw_lib__3_8rin10()],
+// 1 16 0 0 -4 0 0 1 1 0 0 0 1 0 3-8ring10.dat
+  [1,16,0,0,-4,0,0,1,1,0,0,0,1,0, ldraw_lib__3_8ring10()],
+// 1 16 0 0 -4 0 0 -1 1 0 0 0 1 0 3-8ring10.dat
+  [1,16,0,0,-4,0,0,-1,1,0,0,0,1,0, ldraw_lib__3_8ring10()],
+// 1 16 0 0 0 0 0 1 1 0 0 0 -1 0 3-8ring10.dat
+  [1,16,0,0,0,0,0,1,1,0,0,0,-1,0, ldraw_lib__3_8ring10()],
+// 1 16 0 0 0 0 0 -1 1 0 0 0 -1 0 3-8ring10.dat
+  [1,16,0,0,0,0,0,-1,1,0,0,0,-1,0, ldraw_lib__3_8ring10()],
 // 1 16 0 0 -4 0 0 5 5 0 0 0 1 0 3-8ring1.dat
   [1,16,0,0,-4,0,0,5,5,0,0,0,1,0, ldraw_lib__3_8ring1()],
 // 1 16 0 0 -4 0 0 -5 5 0 0 0 1 0 3-8ring1.dat

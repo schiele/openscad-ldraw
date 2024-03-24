@@ -7,8 +7,8 @@ use <../p/3-4edge.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4edge.scad>
-use <../p/4-4rin14.scad>
 use <../p/4-4ring1.scad>
+use <../p/4-4ring14.scad>
 use <../p/4-4ring3.scad>
 use <../p/4-4ring4.scad>
 use <../p/4-4ring7.scad>
@@ -20,8 +20,8 @@ function ldraw_lib__502() = [
 // 0 Electric Train Motor 12V Connecting Rod
 // 0 Name: 502.dat
 // 0 Author: Thomas Burger [grapeape]
-// 0 !LDRAW_ORG Part UPDATE 2010-02
-// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+// 0 !LDRAW_ORG Part UPDATE 2024-02
+// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
@@ -29,7 +29,8 @@ function ldraw_lib__502() = [
 // 
 // 0 !HISTORY 2008-11-16 [anathema] Fixed various errors, BFC'd, added more detail
 // 0 !HISTORY 2010-07-05 [PTadmin] Official Update 2010-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 11 3 60 0 1 0 0 0 -7.5 -7.5 0 0 4-4disc.dat
   [1,16,11,3,60,0,1,0,0,0,-7.5,-7.5,0,0, ldraw_lib__4_4disc()],
@@ -73,8 +74,8 @@ function ldraw_lib__502() = [
   [1,16,17,3,0,0,-1,0,0,0,-1.5,1.5,0,0, ldraw_lib__4_4ring3()],
 // 1 16 11 3 0 0 1 0 0 0 -3.5 -3.5 0 0 4-4ring1.dat
   [1,16,11,3,0,0,1,0,0,0,-3.5,-3.5,0,0, ldraw_lib__4_4ring1()],
-// 1 16 11 3 0 0 1 0 0 0 -0.5 -0.5 0 0 4-4rin14.dat
-  [1,16,11,3,0,0,1,0,0,0,-0.5,-0.5,0,0, ldraw_lib__4_4rin14()],
+// 1 16 11 3 0 0 1 0 0 0 -0.5 -0.5 0 0 4-4ring14.dat
+  [1,16,11,3,0,0,1,0,0,0,-0.5,-0.5,0,0, ldraw_lib__4_4ring14()],
 // 1 16 17 3 0 0 -1 0 0 0 -1.5 1.5 0 0 4-4ring4.dat
   [1,16,17,3,0,0,-1,0,0,0,-1.5,1.5,0,0, ldraw_lib__4_4ring4()],
 // 1 16 15.5 3 0 0 -1 0 0 0 -0.5 0.5 0 0 4-4ring7.dat

@@ -2,7 +2,7 @@ use <../lib.scad>
 use <../p/1-4cyli.scad>
 use <../p/1-4edge.scad>
 use <../p/1-4ndis.scad>
-use <../p/1-4rin12.scad>
+use <../p/1-4ring12.scad>
 use <../p/1-4ring4.scad>
 use <../p/2-4cyli.scad>
 use <../p/2-4edge.scad>
@@ -17,7 +17,7 @@ function ldraw_lib__2475() = [
 // 0 Brush Holder Car Wash
 // 0 Name: 2475.dat
 // 0 Author: Bernd Broich [bbroich]
-// 0 !LDRAW_ORG Part UPDATE 2013-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -33,14 +33,15 @@ function ldraw_lib__2475() = [
 // 0 !HISTORY 2009-09-03 [PTadmin] Official Update 2009-02
 // 0 !HISTORY 2013-08-29 [cwdee] Update category
 // 0 !HISTORY 2013-12-23 [PTadmin] Official Update 2013-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Left End
 // 
-// 1 16 63.5 0 0 0 1 0 0 0 -0.5 -0.5 0 0 1-4rin12.dat
-  [1,16,63.5,0,0,0,1,0,0,0,-0.5,-0.5,0,0, ldraw_lib__1_4rin12()],
-// 1 16 63.5 0 0 0 1 0 0 0 -0.5 0.5 0 0 1-4rin12.dat
-  [1,16,63.5,0,0,0,1,0,0,0,-0.5,0.5,0,0, ldraw_lib__1_4rin12()],
+// 1 16 63.5 0 0 0 1 0 0 0 -0.5 -0.5 0 0 1-4ring12.dat
+  [1,16,63.5,0,0,0,1,0,0,0,-0.5,-0.5,0,0, ldraw_lib__1_4ring12()],
+// 1 16 63.5 0 0 0 1 0 0 0 -0.5 0.5 0 0 1-4ring12.dat
+  [1,16,63.5,0,0,0,1,0,0,0,-0.5,0.5,0,0, ldraw_lib__1_4ring12()],
 // 1 16 63.5 0 0 0 1 0 0 0 -6.5 6.5 0 0 2-4edge.dat
   [1,16,63.5,0,0,0,1,0,0,0,-6.5,6.5,0,0, ldraw_lib__2_4edge()],
 // 1 16 63.5 0 0 0 1 0 0 0 6 -6 0 0 2-4ndis.dat
@@ -428,10 +429,10 @@ function ldraw_lib__2475() = [
 // 5 24 80 55.5 4.25 77 55.5 4.25 80 58.5 6.25 80 51.5355 3.5355
   [5,24,80,55.5,4.25,77,55.5,4.25,80,58.5,6.25,80,51.5355,3.5355],
 // 0 Right End
-// 1 16 -63.5 0 0 0 -1 0 0 0 -0.5 -0.5 0 0 1-4rin12.dat
-  [1,16,-63.5,0,0,0,-1,0,0,0,-0.5,-0.5,0,0, ldraw_lib__1_4rin12()],
-// 1 16 -63.5 0 0 0 -1 0 0 0 -0.5 0.5 0 0 1-4rin12.dat
-  [1,16,-63.5,0,0,0,-1,0,0,0,-0.5,0.5,0,0, ldraw_lib__1_4rin12()],
+// 1 16 -63.5 0 0 0 -1 0 0 0 -0.5 -0.5 0 0 1-4ring12.dat
+  [1,16,-63.5,0,0,0,-1,0,0,0,-0.5,-0.5,0,0, ldraw_lib__1_4ring12()],
+// 1 16 -63.5 0 0 0 -1 0 0 0 -0.5 0.5 0 0 1-4ring12.dat
+  [1,16,-63.5,0,0,0,-1,0,0,0,-0.5,0.5,0,0, ldraw_lib__1_4ring12()],
 // 1 16 -63.5 0 0 0 1 0 0 0 -6.5 -6.5 0 0 2-4edge.dat
   [1,16,-63.5,0,0,0,1,0,0,0,-6.5,-6.5,0,0, ldraw_lib__2_4edge()],
 // 1 16 -63.5 0 0 0 -1 0 0 0 6 6 0 0 2-4ndis.dat

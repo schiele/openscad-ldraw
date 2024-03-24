@@ -6,7 +6,7 @@ use <../p/4-4cylc.scad>
 use <../p/4-4cylo.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4edge.scad>
-use <../p/4-4rin16.scad>
+use <../p/4-4ring16.scad>
 use <../p/4-4ring5.scad>
 use <s/29117as01.scad>
 use <../p/stud4.scad>
@@ -14,17 +14,18 @@ function ldraw_lib__29117a() = [
 // 0 Wheel Rim 11 x 18 Front with  5 Wide Spokes
 // 0 Name: 29117a.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2020-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Cap, cover, Star
+// 0 !KEYWORDS Cap, Star, cover
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 1 0 0 0 0 -1 0 -1 0 stud4.dat
   [1,16,0,0,0,1,0,0,0,0,-1,0,-1,0, ldraw_lib__stud4()],
@@ -54,8 +55,8 @@ function ldraw_lib__29117a() = [
   [1,16,0,0,-3.9,2.22222,0,0,0,0,2.22222,0,1.15,0, ldraw_lib__4_4con3()],
 // 1 16 0 0 -3.9 8.88889 0 0 0 0 8.88889 0 1 0 4-4edge.dat
   [1,16,0,0,-3.9,8.88889,0,0,0,0,8.88889,0,1,0, ldraw_lib__4_4edge()],
-// 1 16 0 0 -3.9 0.55556 0 0 0 0 0.55556 0 1 0 4-4rin16.dat
-  [1,16,0,0,-3.9,0.55556,0,0,0,0,0.55556,0,1,0, ldraw_lib__4_4rin16()],
+// 1 16 0 0 -3.9 0.55556 0 0 0 0 0.55556 0 1 0 4-4ring16.dat
+  [1,16,0,0,-3.9,0.55556,0,0,0,0,0.55556,0,1,0, ldraw_lib__4_4ring16()],
 // 1 16 0 0 3 18.75 0 0 0 0 18.75 0 -4.6 0 4-4cylo.dat
   [1,16,0,0,3,18.75,0,0,0,0,18.75,0,-4.6,0, ldraw_lib__4_4cylo()],
 // 0 BFC INVERTNEXT

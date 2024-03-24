@@ -1,13 +1,13 @@
 use <../lib.scad>
 use <../p/4-4cylc.scad>
 use <../p/4-4edge.scad>
-use <../p/4-4rin12.scad>
 use <../p/4-4ring1.scad>
+use <../p/4-4ring12.scad>
 function ldraw_lib__2543() = [
 // 0 Minifig Hat Rag
 // 0 Name: 2543.dat
 // 0 Author: Alex Taylor [anathema]
-// 0 !LDRAW_ORG Part UPDATE 2012-03
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -21,7 +21,8 @@ function ldraw_lib__2543() = [
 // 0 !HISTORY 2010-12-31 [PTadmin] Official Update 2010-03
 // 0 !HISTORY 2012-12-24 [cwdee] Update category
 // 0 !HISTORY 2012-12-28 [PTadmin] Official Update 2012-03
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 3 16 3.695 26.066 13.814 1.943 26.097 14.116 3.192 26.342 13.977
   [3,16,3.695,26.066,13.814,1.943,26.097,14.116,3.192,26.342,13.977],
@@ -1701,8 +1702,8 @@ function ldraw_lib__2543() = [
   [1,16,0,-4,0,6,0,0,0,4,0,0,0,6, ldraw_lib__4_4cylc()],
 // 1 16 0 0 0 6 0 0 0 -1 0 0 0 -6 4-4ring1.dat
   [1,16,0,0,0,6,0,0,0,-1,0,0,0,-6, ldraw_lib__4_4ring1()],
-// 1 16 0 0 0 1 0 0 0 -1 0 0 0 -1 4-4rin12.dat
-  [1,16,0,0,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__4_4rin12()],
+// 1 16 0 0 0 1 0 0 0 -1 0 0 0 -1 4-4ring12.dat
+  [1,16,0,0,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__4_4ring12()],
 // 4 16 0.292 24.126 14.011 3.928 15.338 12.261 3.692 13.777 12.266 1.268 6.221 12.748
   [4,16,0.292,24.126,14.011,3.928,15.338,12.261,3.692,13.777,12.266,1.268,6.221,12.748],
 // 4 16 4.975 0 12.01 0 0 13 1.268 6.221 12.748 3.692 13.777 12.266

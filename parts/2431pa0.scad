@@ -12,7 +12,7 @@ use <../p/3-16chrd.scad>
 use <../p/3-16disc.scad>
 use <../p/3-16ndis.scad>
 use <../p/3-8ndis.scad>
-use <../p/3-8rin10.scad>
+use <../p/3-8ring10.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4ndis.scad>
 use <s/2431s01.scad>
@@ -20,7 +20,7 @@ function ldraw_lib__2431pa0() = [
 // 0 Tile  1 x  4 with Hieroglyphs and Minifig Pattern
 // 0 Name: 2431pa0.dat
 // 0 Author: Alex Taylor [anathema]
-// 0 !LDRAW_ORG Part UPDATE 2010-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -28,7 +28,8 @@ function ldraw_lib__2431pa0() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2010-07-05 [PTadmin] Official Update 2010-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2431s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2431s01()],
@@ -714,8 +715,8 @@ function ldraw_lib__2431pa0() = [
   [1,16,-5.9,0,2,0,0,5.7,0,1,0,5.7,0,0, ldraw_lib__3_16ndis()],
 // 1 0 -5.9 0 2 0 0 5.7 0 1 0 5.7 0 0 3-16chrd.dat
   [1,0,-5.9,0,2,0,0,5.7,0,1,0,5.7,0,0, ldraw_lib__3_16chrd()],
-// 1 0 5.5 0 2 0.5 0 0 0 1 0 0 0 0.5 3-8rin10.dat
-  [1,0,5.5,0,2,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__3_8rin10()],
+// 1 0 5.5 0 2 0.5 0 0 0 1 0 0 0 0.5 3-8ring10.dat
+  [1,0,5.5,0,2,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__3_8ring10()],
 // 1 16 5.5 0 2 5.5 0 0 0 1 0 0 0 5.5 3-8ndis.dat
   [1,16,5.5,0,2,5.5,0,0,0,1,0,0,0,5.5, ldraw_lib__3_8ndis()],
 // 1 4 5.5 0 2 5 0 0 0 1 0 0 0 5 3-16chrd.dat

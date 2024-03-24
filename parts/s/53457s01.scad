@@ -15,7 +15,7 @@ use <../../p/4-4cylc.scad>
 use <../../p/4-4cyli.scad>
 use <../../p/4-4disc.scad>
 use <../../p/4-4edge.scad>
-use <../../p/4-4rin10.scad>
+use <../../p/4-4ring10.scad>
 use <../../p/4-4ring3.scad>
 use <../../p/4-4ring4.scad>
 use <../../p/4-4ring8.scad>
@@ -32,7 +32,7 @@ function ldraw_lib__s__53457s01() = [
 // 0 ~Animal Wolf Head Half
 // 0 Name: s\53457s01.dat
 // 0 Author: Magnus Forsberg [MagFors]
-// 0 !LDRAW_ORG Subpart UPDATE 2012-02
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -42,7 +42,8 @@ function ldraw_lib__s__53457s01() = [
 // 0 !HISTORY 2009-10-13 {LEGO Universe Team} Original part shape
 // 0 !HISTORY 2010-09-30 [MagFors] File preparation for LDraw Parts Tracker
 // 0 !HISTORY 2012-08-09 [PTadmin] Official Update 2012-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 20 0 0 0 -1 0 0 0 -1 -1 0 0 peghole.dat
   [1,16,20,0,0,0,-1,0,0,0,-1,-1,0,0, ldraw_lib__peghole()],
@@ -494,8 +495,8 @@ function ldraw_lib__s__53457s01() = [
   [1,16,10,20,-42,-5.5,0,0,0,1,0,0,0,5.5, ldraw_lib__4_4edge()],
 // 1 16 10 20 -42 -1 0 0 0 -1 0 0 0 -1 4-4ring4.dat
   [1,16,10,20,-42,-1,0,0,0,-1,0,0,0,-1, ldraw_lib__4_4ring4()],
-// 1 16 10 20 -42 -0.5 0 0 0 -1 0 0 0 -0.5 4-4rin10.dat
-  [1,16,10,20,-42,-0.5,0,0,0,-1,0,0,0,-0.5, ldraw_lib__4_4rin10()],
+// 1 16 10 20 -42 -0.5 0 0 0 -1 0 0 0 -0.5 4-4ring10.dat
+  [1,16,10,20,-42,-0.5,0,0,0,-1,0,0,0,-0.5, ldraw_lib__4_4ring10()],
 // 1 16 10 20 -42 0 0 -5.5 0 -0.5 0 5.5 0 0 2-4cyli.dat
   [1,16,10,20,-42,0,0,-5.5,0,-0.5,0,5.5,0,0, ldraw_lib__2_4cyli()],
 // 1 16 10 19.5 -42 0 0 -5.5 0 -1.5 0 -5.5 0 0 2-4cyls.dat

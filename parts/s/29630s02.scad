@@ -1,14 +1,14 @@
 use <../../lib.scad>
 use <../../p/4-4cylo.scad>
 use <../../p/4-4ndis.scad>
-use <../../p/4-4rin15.scad>
+use <../../p/4-4ring15.scad>
 use <../../p/4-4ring4.scad>
 use <../../p/48/1-4chrd.scad>
 use <../../p/48/2-4chrd.scad>
 use <../../p/48/2-4edge.scad>
 use <../../p/48/4-4cylo.scad>
-use <../../p/48/4-4rin14.scad>
-use <../../p/48/4-4rin20.scad>
+use <../../p/48/4-4ring14.scad>
+use <../../p/48/4-4ring20.scad>
 use <../../p/box4-1.scad>
 use <29630s05.scad>
 use <29630s07.scad>
@@ -16,7 +16,7 @@ function ldraw_lib__s__29630s02() = [
 // 0 ~Container Hemispherical Pod  6 x  2.4 x  6 with Hinges and Hole Inner Surfaces
 // 0 Name: s\29630s02.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
-// 0 !LDRAW_ORG Subpart UPDATE 2022-05
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -24,7 +24,8 @@ function ldraw_lib__s__29630s02() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2022-09-15 [PTadmin] Official Update 2022-05
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 80 0 1 0 0 0 1 0 0 0 1 s\29630s05.dat
   [1,16,0,80,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__29630s05()],
@@ -75,14 +76,14 @@ function ldraw_lib__s__29630s02() = [
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 80 47 0 0 -8 -8 0 0 0 -9 0 4-4cylo.dat
   [1,16,0,80,47,0,0,-8,-8,0,0,0,-9,0, ldraw_lib__4_4cylo()],
-// 1 16 0 80 38 0 0 .5 -.5 0 0 0 -1 0 4-4rin15.dat
-  [1,16,0,80,38,0,0,.5,-.5,0,0,0,-1,0, ldraw_lib__4_4rin15()],
+// 1 16 0 80 38 0 0 .5 -.5 0 0 0 -1 0 4-4ring15.dat
+  [1,16,0,80,38,0,0,.5,-.5,0,0,0,-1,0, ldraw_lib__4_4ring15()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 80 36 0 0 -7.5 -7.5 0 0 0 2 0 4-4cylo.dat
   [1,16,0,80,36,0,0,-7.5,-7.5,0,0,0,2,0, ldraw_lib__4_4cylo()],
-// 1 16 0 80 36 0 0 -.5 -.5 0 0 0 1 0 4-4rin15.dat
-  [1,16,0,80,36,0,0,-.5,-.5,0,0,0,1,0, ldraw_lib__4_4rin15()],
+// 1 16 0 80 36 0 0 -.5 -.5 0 0 0 1 0 4-4ring15.dat
+  [1,16,0,80,36,0,0,-.5,-.5,0,0,0,1,0, ldraw_lib__4_4ring15()],
 // 1 16 0 80 36 0 0 -2 -2 0 0 0 1 0 4-4ring4.dat
   [1,16,0,80,36,0,0,-2,-2,0,0,0,1,0, ldraw_lib__4_4ring4()],
 // 1 16 0 80 36 0 0 -10 -10 0 0 0 8 0 4-4cylo.dat
@@ -95,16 +96,16 @@ function ldraw_lib__s__29630s02() = [
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 80 41 0 0 -60 60 0 0 0 -9 0 48\4-4cylo.dat
   [1,16,0,80,41,0,0,-60,60,0,0,0,-9,0, ldraw_lib__48__4_4cylo()],
-// 1 16 0 80 32 0 0 -3 3 0 0 0 1 0 48\4-4rin20.dat
-  [1,16,0,80,32,0,0,-3,3,0,0,0,1,0, ldraw_lib__48__4_4rin20()],
+// 1 16 0 80 32 0 0 -3 3 0 0 0 1 0 48\4-4ring20.dat
+  [1,16,0,80,32,0,0,-3,3,0,0,0,1,0, ldraw_lib__48__4_4ring20()],
 // 1 16 0 80 44 0 0 -63 63 0 0 0 -12 0 48\4-4cylo.dat
   [1,16,0,80,44,0,0,-63,63,0,0,0,-12,0, ldraw_lib__48__4_4cylo()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 80 44 0 0 -56 56 0 0 0 -3 0 48\4-4cylo.dat
   [1,16,0,80,44,0,0,-56,56,0,0,0,-3,0, ldraw_lib__48__4_4cylo()],
-// 1 16 0 80 41 0 0 -4 4 0 0 0 1 0 48\4-4rin14.dat
-  [1,16,0,80,41,0,0,-4,4,0,0,0,1,0, ldraw_lib__48__4_4rin14()],
+// 1 16 0 80 41 0 0 -4 4 0 0 0 1 0 48\4-4ring14.dat
+  [1,16,0,80,41,0,0,-4,4,0,0,0,1,0, ldraw_lib__48__4_4ring14()],
 // 1 16 52.1724 105.7286 41 -.53075 0 -1.52468 1.07625 0 -.75189 0 -5 0 box4-1.dat
   [1,16,52.1724,105.7286,41,-.53075,0,-1.52468,1.07625,0,-.75189,0,-5,0, ldraw_lib__box4_1()],
 // 1 16 52.1724 54.2714 41 .53075 0 -1.52468 1.07625 0 .75189 0 -5 0 box4-1.dat

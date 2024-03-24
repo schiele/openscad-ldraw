@@ -1,9 +1,9 @@
 use <../lib.scad>
 use <../p/4-4cylc.scad>
 use <../p/4-4cylo.scad>
-use <../p/4-4rin10.scad>
-use <../p/4-4rin22.scad>
-use <../p/4-4rin24.scad>
+use <../p/4-4ring10.scad>
+use <../p/4-4ring22.scad>
+use <../p/4-4ring24.scad>
 use <../p/axl5end.scad>
 use <../p/axl5ho10.scad>
 use <../p/axl5hol8.scad>
@@ -18,7 +18,7 @@ function ldraw_lib__u9068() = [
 // 0 Rack Winder  2 x  4 x  2 Axle
 // 0 Name: u9068.dat
 // 0 Author: John Van Zwieten [jvan]
-// 0 !LDRAW_ORG Part UPDATE 2022-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -36,7 +36,8 @@ function ldraw_lib__u9068() = [
 // 0 !HISTORY 2013-07-21 [PTadmin] Official Update 2013-01
 // 0 !HISTORY 2021-12-31 [MagFors] Reshaped axlehole
 // 0 !HISTORY 2022-03-06 [PTadmin] Official Update 2022-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 -40 0 0 0 1 0 1 0 0 0 0 -1 axlehol2.dat
   [1,16,-40,0,0,0,1,0,1,0,0,0,0,-1, ldraw_lib__axlehol2()],
@@ -108,12 +109,12 @@ function ldraw_lib__u9068() = [
 // 1 16 40 0 0 0 -7.5 0 0 0 -7.1875 -7.1875 0 0 4-4cylo.dat
   [1,16,40,0,0,0,-7.5,0,0,0,-7.1875,-7.1875,0,0, ldraw_lib__4_4cylo()],
 // 
-// 1 16 40 0 0 0 -1 0 0.6 0 0 0 0 0.6 4-4rin10.dat
-  [1,16,40,0,0,0,-1,0,0.6,0,0,0,0,0.6, ldraw_lib__4_4rin10()],
-// 1 16 40 0 0 0 -1 0 0.275 0 0 0 0 0.275 4-4rin24.dat
-  [1,16,40,0,0,0,-1,0,0.275,0,0,0,0,0.275, ldraw_lib__4_4rin24()],
-// 1 16 40 0 0 0 -1 0 0.3125 0 0 0 0 0.3125 4-4rin22.dat
-  [1,16,40,0,0,0,-1,0,0.3125,0,0,0,0,0.3125, ldraw_lib__4_4rin22()],
+// 1 16 40 0 0 0 -1 0 0.6 0 0 0 0 0.6 4-4ring10.dat
+  [1,16,40,0,0,0,-1,0,0.6,0,0,0,0,0.6, ldraw_lib__4_4ring10()],
+// 1 16 40 0 0 0 -1 0 0.275 0 0 0 0 0.275 4-4ring24.dat
+  [1,16,40,0,0,0,-1,0,0.275,0,0,0,0,0.275, ldraw_lib__4_4ring24()],
+// 1 16 40 0 0 0 -1 0 0.3125 0 0 0 0 0.3125 4-4ring22.dat
+  [1,16,40,0,0,0,-1,0,0.3125,0,0,0,0,0.3125, ldraw_lib__4_4ring22()],
 // 
 // 1 16 20 0 0 0 20 0 1 0 0 0 0 -1 axl5hol8.dat
   [1,16,20,0,0,0,20,0,1,0,0,0,0,-1, ldraw_lib__axl5hol8()],

@@ -1,9 +1,9 @@
 use <../../lib.scad>
 function ldraw_lib__48__1_8rin39() = [
-// 0 Hi-Res Ring 39 x 0.125
+// 0 ~Hi-Res Ring 39 x 0.125 (Obsolete)
 // 0 Name: 48\1-8rin39.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG 48_Primitive UPDATE 2010-03
+// 0 !LDRAW_ORG 48_Primitive UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -11,7 +11,8 @@ function ldraw_lib__48__1_8rin39() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2010-12-31 [PTadmin] Official Update 2010-03
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Obsolete, use 48\1-8ring39.dat
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 4 16 39 0 0 40 0 0 39.656 0 5.22 38.6646 0 5.0895
   [4,16,39,0,0,40,0,0,39.656,0,5.22,38.6646,0,5.0895],

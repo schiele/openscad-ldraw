@@ -4,12 +4,12 @@ use <../../p/1-4cyls.scad>
 use <../../p/2-4ndis.scad>
 use <../../p/3-16cyli.scad>
 use <../../p/3-16edge.scad>
-use <../../p/3-16rin2.scad>
+use <../../p/3-16ring2.scad>
 function ldraw_lib__s__32475s02() = [
 // 0 ~Constraction Foot  3 x  6 x  2.333 with Rounded Ball Socket - Half of Rounded Ball Socket
 // 0 Name: s\32475s02.dat
 // 0 Author: Massimo Maso [Sirio]
-// 0 !LDRAW_ORG Subpart UPDATE 2023-03
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -17,15 +17,16 @@ function ldraw_lib__s__32475s02() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2023-06-24 [OrionP] Official Update 2023-03
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Primitives
 // 1 16 18 0 0 0 -1 -1.3333 0 0 -6 6 0 0 1-16tang.dat
   [1,16,18,0,0,0,-1,-1.3333,0,0,-6,6,0,0, ldraw_lib__1_16tang()],
-// 1 16 18 0 0 -.6667 -1 0 -3 0 0 0 0 3 3-16rin2.dat
-  [1,16,18,0,0,-.6667,-1,0,-3,0,0,0,0,3, ldraw_lib__3_16rin2()],
-// 1 16 18 0 0 -.6667 -1 0 -3 0 0 0 0 -3 3-16rin2.dat
-  [1,16,18,0,0,-.6667,-1,0,-3,0,0,0,0,-3, ldraw_lib__3_16rin2()],
+// 1 16 18 0 0 -.6667 -1 0 -3 0 0 0 0 3 3-16ring2.dat
+  [1,16,18,0,0,-.6667,-1,0,-3,0,0,0,0,3, ldraw_lib__3_16ring2()],
+// 1 16 18 0 0 -.6667 -1 0 -3 0 0 0 0 -3 3-16ring2.dat
+  [1,16,18,0,0,-.6667,-1,0,-3,0,0,0,0,-3, ldraw_lib__3_16ring2()],
 // 1 16 18 0 0 0 -1 -1.3333 0 0 -6 -6 0 0 1-16tang.dat
   [1,16,18,0,0,0,-1,-1.3333,0,0,-6,-6,0,0, ldraw_lib__1_16tang()],
 // 1 16 18 0 0 -2 1 0 -9 0 0 0 0 -9 3-16edge.dat

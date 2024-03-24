@@ -1,22 +1,22 @@
 use <../lib.scad>
-use <../p/1-4rin15.scad>
+use <../p/1-4ring15.scad>
 use <../p/2-4disc.scad>
 use <../p/2-4ndis.scad>
 use <../p/2-4ring2.scad>
 use <../p/2-4ring7.scad>
-use <../p/3-16rin5.scad>
+use <../p/3-16ring5.scad>
 use <../p/3-4ndis.scad>
 use <../p/3-4ring6.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4ndis.scad>
-use <../p/4-4rin10.scad>
+use <../p/4-4ring10.scad>
 use <../p/4-4ring8.scad>
 use <s/3069bs01.scad>
 function ldraw_lib__3069bpa0() = [
 // 0 Tile  1 x  2 with Vehicle Gauges Pattern
 // 0 Name: 3069bpa0.dat
 // 0 Author: Alex Taylor [anathema]
-// 0 !LDRAW_ORG Part UPDATE 2011-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -24,7 +24,8 @@ function ldraw_lib__3069bpa0() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3069bs01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3069bs01()],
@@ -62,8 +63,8 @@ function ldraw_lib__3069bpa0() = [
   [1,16,-11.1,0,0,7.2,0,0,0,1,0,0,0,7.2, ldraw_lib__4_4ndis()],
 // 4 16 -20 0 -10 -18.3 0 -7.2 -18.3 0 7.2 -20 0 10
   [4,16,-20,0,-10,-18.3,0,-7.2,-18.3,0,7.2,-20,0,10],
-// 1 0 2.8 0 3.1 0.42 0 0 0 1 0 0 0 0.42 4-4rin10.dat
-  [1,0,2.8,0,3.1,0.42,0,0,0,1,0,0,0,0.42, ldraw_lib__4_4rin10()],
+// 1 0 2.8 0 3.1 0.42 0 0 0 1 0 0 0 0.42 4-4ring10.dat
+  [1,0,2.8,0,3.1,0.42,0,0,0,1,0,0,0,0.42, ldraw_lib__4_4ring10()],
 // 1 16 2.8 0 3.1 4.62 0 0 0 1 0 0 0 4.62 4-4ndis.dat
   [1,16,2.8,0,3.1,4.62,0,0,0,1,0,0,0,4.62, ldraw_lib__4_4ndis()],
 // 4 16 -20 0 10 -1.82 0 7.72 7.42 0 7.72 20 0 10
@@ -992,10 +993,10 @@ function ldraw_lib__3069bpa0() = [
   [4,0,2.2,0,-4.7,1.2,0,-5.8,1.7,0,-6.1,2.8,0,-5.2],
 // 3 0 -0.1 0 -6.7 0.6 0 -6.8 0.8 0 -6.4
   [3,0,-0.1,0,-6.7,0.6,0,-6.8,0.8,0,-6.4],
-// 1 15 -11.1 0 0 0 0 1 0 1 0 -1 0 0 3-16rin5.dat
-  [1,15,-11.1,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__3_16rin5()],
-// 1 9 -11.1 0 0 0 0 0.4 0 1 0 -0.4 0 0 1-4rin15.dat
-  [1,9,-11.1,0,0,0,0,0.4,0,1,0,-0.4,0,0, ldraw_lib__1_4rin15()],
+// 1 15 -11.1 0 0 0 0 1 0 1 0 -1 0 0 3-16ring5.dat
+  [1,15,-11.1,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__3_16ring5()],
+// 1 9 -11.1 0 0 0 0 0.4 0 1 0 -0.4 0 0 1-4ring15.dat
+  [1,9,-11.1,0,0,0,0,0.4,0,1,0,-0.4,0,0, ldraw_lib__1_4ring15()],
 // 4 15 -6.481 0 -1.934 -5.557 0 -2.296 -5.8 0 -0.4 -6.151 0 -0.26
   [4,15,-6.481,0,-1.934,-5.557,0,-2.296,-5.8,0,-0.4,-6.151,0,-0.26],
 // 4 9 -6.3 0 -0.2 -6.9 0 -0.2 -7.4 0 -0.4 -6.481 0 -1.934

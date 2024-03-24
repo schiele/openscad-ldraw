@@ -7,15 +7,15 @@ use <../p/1-4ring3.scad>
 use <../p/48/1-8chrd.scad>
 use <../p/48/4-4cyli.scad>
 use <../p/48/4-4disc.scad>
-use <../p/48/4-4rin12.scad>
-use <../p/48/4-4rin19.scad>
-use <../p/48/4-4rin20.scad>
+use <../p/48/4-4ring12.scad>
+use <../p/48/4-4ring19.scad>
+use <../p/48/4-4ring20.scad>
 use <s/6258203ms01.scad>
 function ldraw_lib__6258203m() = [
 // 0 Sticker  1.9 x  1.9 Round with Gas Cap and Classic "GT" Emblem
 // 0 Name: 6258203m.dat
 // 0 Author: Ulrich Röder [UR]
-// 0 !LDRAW_ORG Part UPDATE 2019-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -25,7 +25,8 @@ function ldraw_lib__6258203m() = [
 // 0 !KEYWORDS Car, Ford, Mustang, Set 10265
 // 
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Main
 // 0 // Base
@@ -36,8 +37,8 @@ function ldraw_lib__6258203m() = [
 // 
 // 0 // Metallic Silver
 // 0 // Surface
-// 1 80 0 -.25 0 1.5 0 0 0 1 0 0 0 -1.5 48\4-4rin12.dat
-  [1,80,0,-.25,0,1.5,0,0,0,1,0,0,0,-1.5, ldraw_lib__48__4_4rin12()],
+// 1 80 0 -.25 0 1.5 0 0 0 1 0 0 0 -1.5 48\4-4ring12.dat
+  [1,80,0,-.25,0,1.5,0,0,0,1,0,0,0,-1.5, ldraw_lib__48__4_4ring12()],
 // 1 80 0 -.25 0 1 0 0 0 1 0 0 0 1 s\6258203ms01.dat
   [1,80,0,-.25,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6258203ms01()],
 // 1 80 0 -.25 0 -1 0 0 0 1 0 0 0 1 s\6258203ms01.dat
@@ -50,8 +51,8 @@ function ldraw_lib__6258203m() = [
   [1,80,0,-.25,0,.5,0,-.866025404,0,1,0,-.866025404,0,-.5, ldraw_lib__s__6258203ms01()],
 // 1 80 0 -.25 0 -.5 0 -.866025404 0 1 0 .866025404 0 -.5 s\6258203ms01.dat
   [1,80,0,-.25,0,-.5,0,-.866025404,0,1,0,.866025404,0,-.5, ldraw_lib__s__6258203ms01()],
-// 1 80 0 -.25 0 0 0 -.5 0 1 0 .5 0 0 48\4-4rin20.dat
-  [1,80,0,-.25,0,0,0,-.5,0,1,0,.5,0,0, ldraw_lib__48__4_4rin20()],
+// 1 80 0 -.25 0 0 0 -.5 0 1 0 .5 0 0 48\4-4ring20.dat
+  [1,80,0,-.25,0,0,0,-.5,0,1,0,.5,0,0, ldraw_lib__48__4_4ring20()],
 // 1 80 -1.48 -.25 -2.91 .24 0 0 0 1 0 0 0 .24 1-4chrd.dat
   [1,80,-1.48,-.25,-2.91,.24,0,0,0,1,0,0,0,.24, ldraw_lib__1_4chrd()],
 // 1 80 -1.48 -.25 -2.91 .48 0 0 0 1 0 0 0 .48 1-4ndis.dat
@@ -420,8 +421,8 @@ function ldraw_lib__6258203m() = [
   [4,80,-7,-.25,-2.67,-6.71745,-.25,-6.71745,-1.24,-.25,-6.65,-6.04,-.25,-2.67],
 // 
 // 0 // Black
-// 1 0 0 -.25 0 .5 0 0 0 1 0 0 0 .5 48\4-4rin19.dat
-  [1,0,0,-.25,0,.5,0,0,0,1,0,0,0,.5, ldraw_lib__48__4_4rin19()],
+// 1 0 0 -.25 0 .5 0 0 0 1 0 0 0 .5 48\4-4ring19.dat
+  [1,0,0,-.25,0,.5,0,0,0,1,0,0,0,.5, ldraw_lib__48__4_4ring19()],
 // 1 0 -1.48 -.25 -2.91 .24 0 0 0 1 0 0 0 .24 1-4ring1.dat
   [1,0,-1.48,-.25,-2.91,.24,0,0,0,1,0,0,0,.24, ldraw_lib__1_4ring1()],
 // 1 0 1.48 -.25 -2.91 -.24 0 0 0 1 0 0 0 .24 1-4ring1.dat

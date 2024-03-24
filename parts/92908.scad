@@ -31,8 +31,8 @@ use <../p/4-4cyli.scad>
 use <../p/4-4cylo.scad>
 use <../p/4-4edge.scad>
 use <../p/4-4ndis.scad>
-use <../p/4-4rin13.scad>
-use <../p/4-4rin25.scad>
+use <../p/4-4ring13.scad>
+use <../p/4-4ring25.scad>
 use <../p/4-4ring3.scad>
 use <../p/4-4ring5.scad>
 use <../p/5-16cyli.scad>
@@ -53,17 +53,18 @@ function ldraw_lib__92908() = [
 // 0 Technic Steering Portal Axle Frame
 // 0 Name: 92908.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2011-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS set 8110, Unimog
+// 0 !KEYWORDS Unimog, set 8110
 // 
 // 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
@@ -433,10 +434,10 @@ function ldraw_lib__92908() = [
   [1,16,0,40,-70,25,0,0,0,0,25,0,4,0, ldraw_lib__4_4cylo()],
 // 1 16 0 40 -70 28 0 0 0 0 28 0 1 0 4-4edge.dat
   [1,16,0,40,-70,28,0,0,0,0,28,0,1,0, ldraw_lib__4_4edge()],
-// 1 16 0 40 -70 2 0 0 0 0 2 0 1 0 4-4rin13.dat
-  [1,16,0,40,-70,2,0,0,0,0,2,0,1,0, ldraw_lib__4_4rin13()],
-// 1 16 0 40 -70 1 0 0 0 0 1 0 1 0 4-4rin25.dat
-  [1,16,0,40,-70,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4rin25()],
+// 1 16 0 40 -70 2 0 0 0 0 2 0 1 0 4-4ring13.dat
+  [1,16,0,40,-70,2,0,0,0,0,2,0,1,0, ldraw_lib__4_4ring13()],
+// 1 16 0 40 -70 1 0 0 0 0 1 0 1 0 4-4ring25.dat
+  [1,16,0,40,-70,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4ring25()],
 // 1 16 0 40 -40 -9.89949 0 -9.89949 9.89949 0 -9.89949 0 10 0 1-4cyli.dat
   [1,16,0,40,-40,-9.89949,0,-9.89949,9.89949,0,-9.89949,0,10,0, ldraw_lib__1_4cyli()],
 // 1 16 0 40 -30 -9.89949 0 -9.89949 9.89949 0 -9.89949 0 12 0 1-4edge.dat

@@ -5,8 +5,8 @@ use <../p/4-4con2.scad>
 use <../p/4-4con6.scad>
 use <../p/4-4cylo.scad>
 use <../p/4-4edge.scad>
-use <../p/4-4rin12.scad>
-use <../p/4-4rin13.scad>
+use <../p/4-4ring12.scad>
+use <../p/4-4ring13.scad>
 use <../p/4-4ring2.scad>
 use <../p/4-4ring3.scad>
 use <../p/4-4ring9.scad>
@@ -17,7 +17,7 @@ function ldraw_lib__13971() = [
 // 0 Wheel Rim  8 x 18 with Deep Centre Groove, Deep Spokes and Peghole
 // 0 Name: 13971.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2020-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -25,7 +25,8 @@ function ldraw_lib__13971() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Nomenclature: width_(mm) x rim_diameter_(mm) [optional qualifier]
 // 
@@ -47,14 +48,14 @@ function ldraw_lib__13971() = [
   [1,16,0,0,-9,0,0,-21,-21,0,0,0,5,0, ldraw_lib__4_4cylo()],
 // 1 16 0 0 9 0 0 19.5 19.5 0 0 0 1 0 4-4edge.dat
   [1,16,0,0,9,0,0,19.5,19.5,0,0,0,1,0, ldraw_lib__4_4edge()],
-// 1 16 0 0 -9 0 0 1.61538 -1.61538 0 0 0 1 0 4-4rin12.dat
-  [1,16,0,0,-9,0,0,1.61538,-1.61538,0,0,0,1,0, ldraw_lib__4_4rin12()],
+// 1 16 0 0 -9 0 0 1.61538 -1.61538 0 0 0 1 0 4-4ring12.dat
+  [1,16,0,0,-9,0,0,1.61538,-1.61538,0,0,0,1,0, ldraw_lib__4_4ring12()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 -9 0 0 1.21154 -1.21154 0 0 0 2 0 4-4con15.dat
   [1,16,0,0,-9,0,0,1.21154,-1.21154,0,0,0,2,0, ldraw_lib__4_4con15()],
-// 1 16 0 0 9 0 0 1.5 1.5 0 0 0 -1 0 4-4rin13.dat
-  [1,16,0,0,9,0,0,1.5,1.5,0,0,0,-1,0, ldraw_lib__4_4rin13()],
+// 1 16 0 0 9 0 0 1.5 1.5 0 0 0 -1 0 4-4ring13.dat
+  [1,16,0,0,9,0,0,1.5,1.5,0,0,0,-1,0, ldraw_lib__4_4ring13()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 9 0 0 1.5 1.5 0 0 0 -1.5 0 4-4con12.dat

@@ -5,8 +5,8 @@ use <../../p/1-8edge.scad>
 use <../../p/4-4cyli.scad>
 use <../../p/4-4cylo.scad>
 use <../../p/4-4edge.scad>
-use <../../p/4-4rin17.scad>
 use <../../p/4-4ring1.scad>
+use <../../p/4-4ring17.scad>
 use <../../p/4-4ring4.scad>
 use <../../p/4-4ring6.scad>
 use <../../p/rect.scad>
@@ -16,7 +16,7 @@ function ldraw_lib__s__4751s01() = [
 // 0 ~Propeller  4 Blade 13 Diameter Common Geometry
 // 0 Name: s\4751s01.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Subpart UPDATE 2022-01
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -27,7 +27,8 @@ function ldraw_lib__s__4751s01() = [
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
 // 0 !HISTORY 2021-03-17 [cwdee] Update description
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // center core
 // 
@@ -97,8 +98,8 @@ function ldraw_lib__s__4751s01() = [
   [1,16,0,4,0,9,0,0,0,-1,0,0,0,9, ldraw_lib__4_4ring1()],
 // 1 16 0 0 0 21 0 0 0 24 0 0 0 21 4-4cylo.dat
   [1,16,0,0,0,21,0,0,0,24,0,0,0,21, ldraw_lib__4_4cylo()],
-// 1 16 0 24 0 1 0 0 0 -1 0 0 0 1 4-4rin17.dat
-  [1,16,0,24,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__4_4rin17()],
+// 1 16 0 24 0 1 0 0 0 -1 0 0 0 1 4-4ring17.dat
+  [1,16,0,24,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__4_4ring17()],
 // 1 16 0 24 0 3 0 0 0 -1 0 0 0 3 4-4ring6.dat
   [1,16,0,24,0,3,0,0,0,-1,0,0,0,3, ldraw_lib__4_4ring6()],
 // 1 16 13.1 14 2 3.5 0 0 0 0 10 0 -1 0 rect.dat

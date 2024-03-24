@@ -11,7 +11,7 @@ use <../p/2-4edge.scad>
 use <../p/2-4ndis.scad>
 use <../p/3-16cyli.scad>
 use <../p/3-16edge.scad>
-use <../p/3-16rin3.scad>
+use <../p/3-16ring3.scad>
 use <../p/4-4cylc.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4edge.scad>
@@ -23,7 +23,7 @@ function ldraw_lib__3741a() = [
 // 0 Plant Flower Stem
 // 0 Name: 3741a.dat
 // 0 Author: Max Martin Richter [MMR1988]
-// 0 !LDRAW_ORG Part UPDATE 2013-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 !HELP Placing Flowers (Rotation center is at 0/0/0):
@@ -38,16 +38,17 @@ function ldraw_lib__3741a() = [
 // 
 // 0 !HISTORY 2013-02-24 [MMR1988] Rewritten to correct dimension errors of 3741
 // 0 !HISTORY 2013-07-21 [PTadmin] Official Update 2013-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 -0.866 0 -0.5 0 1 0 0.5 0 -0.866 stud.dat
   [1,16,0,0,0,-0.866,0,-0.5,0,1,0,0.5,0,-0.866, ldraw_lib__stud()],
 // 1 16 0 0 0 -1.2175 0 -1.5867 0 1 0 1.5867 0 -1.2175 1-8ring3.dat
   [1,16,0,0,0,-1.2175,0,-1.5867,0,1,0,1.5867,0,-1.2175, ldraw_lib__1_8ring3()],
-// 1 16 0 0 0 -1 0 1.7321 0 1 0 -1.7321 0 -1 3-16rin3.dat
-  [1,16,0,0,0,-1,0,1.7321,0,1,0,-1.7321,0,-1, ldraw_lib__3_16rin3()],
-// 1 16 0 0 0 1.9829 0 0.261 0 1 0 -0.261 0 1.9829 3-16rin3.dat
-  [1,16,0,0,0,1.9829,0,0.261,0,1,0,-0.261,0,1.9829, ldraw_lib__3_16rin3()],
+// 1 16 0 0 0 -1 0 1.7321 0 1 0 -1.7321 0 -1 3-16ring3.dat
+  [1,16,0,0,0,-1,0,1.7321,0,1,0,-1.7321,0,-1, ldraw_lib__3_16ring3()],
+// 1 16 0 0 0 1.9829 0 0.261 0 1 0 -0.261 0 1.9829 3-16ring3.dat
+  [1,16,0,0,0,1.9829,0,0.261,0,1,0,-0.261,0,1.9829, ldraw_lib__3_16ring3()],
 // 
 // 4 16 5.4157 0 -5.7248 5.1962 0 -3 3.6526 0 -4.7603 4.8701 0 -6.3468
   [4,16,5.4157,0,-5.7248,5.1962,0,-3,3.6526,0,-4.7603,4.8701,0,-6.3468],

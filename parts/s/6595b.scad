@@ -6,7 +6,7 @@ use <../../p/48/4-4con36.scad>
 use <../../p/48/4-4con5.scad>
 use <../../p/48/4-4cylo.scad>
 use <../../p/48/4-4edge.scad>
-use <../../p/48/4-4rin10.scad>
+use <../../p/48/4-4ring10.scad>
 use <../../p/48/4-4ring4.scad>
 use <../../p/48/4-4ring6.scad>
 use <../../p/48/4-4ring8.scad>
@@ -17,7 +17,7 @@ function ldraw_lib__s__6595b() = [
 // 0 ~Wheel 25 x 28 VR with 35mm Diameter Rear Rim without Axle Hole
 // 0 Name: s\6595b.dat
 // 0 Author: Jeff Boen [onyx]
-// 0 !LDRAW_ORG Subpart UPDATE 2019-01
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -30,7 +30,8 @@ function ldraw_lib__s__6595b() = [
 // 0 !HISTORY 2014-11-21 [roland] Auto-corrected with libfix version of LDCad 1.4
 // 0 !HISTORY 2015-01-13 [Philo] Rebuilt with primitives
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\6595a.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6595a()],
@@ -54,12 +55,12 @@ function ldraw_lib__s__6595b() = [
   [1,16,0,0,-22,0,0,32,32,0,0,0,-6,0, ldraw_lib__48__4_4cylo()],
 // 1 16 0 0 -22 0 0 8 8 0 0 0 1 0 48\4-4ring4.dat
   [1,16,0,0,-22,0,0,8,8,0,0,0,1,0, ldraw_lib__48__4_4ring4()],
-// 1 16 0 0 -22 0 0 4 4 0 0 0 1 0 48\4-4rin10.dat
-  [1,16,0,0,-22,0,0,4,4,0,0,0,1,0, ldraw_lib__48__4_4rin10()],
+// 1 16 0 0 -22 0 0 4 4 0 0 0 1 0 48\4-4ring10.dat
+  [1,16,0,0,-22,0,0,4,4,0,0,0,1,0, ldraw_lib__48__4_4ring10()],
 // 1 16 0 0 -19 0 0 8 8 0 0 0 -1 0 48\4-4ring4.dat
   [1,16,0,0,-19,0,0,8,8,0,0,0,-1,0, ldraw_lib__48__4_4ring4()],
-// 1 16 0 0 -19 0 0 4 4 0 0 0 -1 0 48\4-4rin10.dat
-  [1,16,0,0,-19,0,0,4,4,0,0,0,-1,0, ldraw_lib__48__4_4rin10()],
+// 1 16 0 0 -19 0 0 4 4 0 0 0 -1 0 48\4-4ring10.dat
+  [1,16,0,0,-19,0,0,4,4,0,0,0,-1,0, ldraw_lib__48__4_4ring10()],
 // 1 16 0 0 -19 0 0 44 44 0 0 0 -1 0 48\4-4edge.dat
   [1,16,0,0,-19,0,0,44,44,0,0,0,-1,0, ldraw_lib__48__4_4edge()],
 // 1 16 0 0 -22 0 0 44 44 0 0 0 -1 0 48\4-4edge.dat

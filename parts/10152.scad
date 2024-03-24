@@ -1,5 +1,5 @@
 use <../lib.scad>
-use <../p/3-16rin2.scad>
+use <../p/3-16ring2.scad>
 use <../p/4-4cylc.scad>
 use <../p/4-4cylo.scad>
 use <../p/4-4ndis.scad>
@@ -16,7 +16,7 @@ function ldraw_lib__10152() = [
 // 0 Electric Power Functions Servo Motor Axle Hub
 // 0 Name: 10152.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2022-05
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -29,7 +29,8 @@ function ldraw_lib__10152() = [
 // 0 !HISTORY 2021-12-30 [MagFors] Reshaped axlehole
 // 0 !HISTORY 2022-01-17 [MMR1988] Changed 3-16ring2 reference to 3-16rin2
 // 0 !HISTORY 2022-09-15 [PTadmin] Official Update 2022-05
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 9 0 0 0 0 9 0 21 0 4-4cylo.dat
   [1,16,0,0,0,9,0,0,0,0,9,0,21,0, ldraw_lib__4_4cylo()],
@@ -51,14 +52,14 @@ function ldraw_lib__10152() = [
   [1,16,0,0,34,2,0,0,0,0,2,0,1,0, ldraw_lib__4_4ring5()],
 // 1 16 0 0 60 3 0 0 0 0 3 0 -1 0 4-4ring2.dat
   [1,16,0,0,60,3,0,0,0,0,3,0,-1,0, ldraw_lib__4_4ring2()],
-// 1 16 0 0 0 -3 0 0 0 0 -3 0 1 0 3-16rin2.dat
-  [1,16,0,0,0,-3,0,0,0,0,-3,0,1,0, ldraw_lib__3_16rin2()],
-// 1 16 0 0 0 3 0 0 0 0 3 0 1 0 3-16rin2.dat
-  [1,16,0,0,0,3,0,0,0,0,3,0,1,0, ldraw_lib__3_16rin2()],
-// 1 16 0 0 0 -3 0 0 0 0 3 0 1 0 3-16rin2.dat
-  [1,16,0,0,0,-3,0,0,0,0,3,0,1,0, ldraw_lib__3_16rin2()],
-// 1 16 0 0 0 3 0 0 0 0 -3 0 1 0 3-16rin2.dat
-  [1,16,0,0,0,3,0,0,0,0,-3,0,1,0, ldraw_lib__3_16rin2()],
+// 1 16 0 0 0 -3 0 0 0 0 -3 0 1 0 3-16ring2.dat
+  [1,16,0,0,0,-3,0,0,0,0,-3,0,1,0, ldraw_lib__3_16ring2()],
+// 1 16 0 0 0 3 0 0 0 0 3 0 1 0 3-16ring2.dat
+  [1,16,0,0,0,3,0,0,0,0,3,0,1,0, ldraw_lib__3_16ring2()],
+// 1 16 0 0 0 -3 0 0 0 0 3 0 1 0 3-16ring2.dat
+  [1,16,0,0,0,-3,0,0,0,0,3,0,1,0, ldraw_lib__3_16ring2()],
+// 1 16 0 0 0 3 0 0 0 0 -3 0 1 0 3-16ring2.dat
+  [1,16,0,0,0,3,0,0,0,0,-3,0,1,0, ldraw_lib__3_16ring2()],
 // 1 16 0 0 60 1 0 0 0 0 1 0 -20 0 axl5hol8.dat
   [1,16,0,0,60,1,0,0,0,0,1,0,-20,0, ldraw_lib__axl5hol8()],
 // 1 16 0 0 60 1 0 0 0 0 1 0 1 0 axlehol2.dat

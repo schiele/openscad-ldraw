@@ -5,8 +5,8 @@ use <../../p/2-4ndis.scad>
 use <../../p/48/1-24edge.scad>
 use <../../p/48/1-4chrd.scad>
 use <../../p/48/1-4edge.scad>
-use <../../p/48/1-4rin13.scad>
-use <../../p/48/1-4rin14.scad>
+use <../../p/48/1-4ring13.scad>
+use <../../p/48/1-4ring14.scad>
 use <../../p/48/1-8cyli.scad>
 use <../../p/48/1-8edge.scad>
 use <../../p/48/2-4cyli.scad>
@@ -23,7 +23,7 @@ function ldraw_lib__s__u9205s01() = [
 // 0 ~Fabuland Tricycle Mudguard
 // 0 Name: s\u9205s01.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Subpart UPDATE 2012-03
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -31,7 +31,8 @@ function ldraw_lib__s__u9205s01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2012-12-28 [PTadmin] Official Update 2012-03
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 4 -18.3848 0 18.3848 -18.3848 0 -18.3848 0 1 0 48\1-4edge.dat
   [1,16,0,0,4,-18.3848,0,18.3848,-18.3848,0,-18.3848,0,1,0, ldraw_lib__48__1_4edge()],
@@ -165,14 +166,14 @@ function ldraw_lib__s__u9205s01() = [
   [1,16,0,0,12,26,0,0,0,0,-26,0,1,0, ldraw_lib__48__1_24edge()],
 // 1 16 0 0 12 -26 0 0 0 0 -26 0 1 0 48\1-24edge.dat
   [1,16,0,0,12,-26,0,0,0,0,-26,0,1,0, ldraw_lib__48__1_24edge()],
-// 1 16 0 0 0 0 0 2 -2 0 0 0 1 0 48\1-4rin13.dat
-  [1,16,0,0,0,0,0,2,-2,0,0,0,1,0, ldraw_lib__48__1_4rin13()],
-// 1 16 0 0 0 0 0 2 -2 0 0 0 1 0 48\1-4rin14.dat
-  [1,16,0,0,0,0,0,2,-2,0,0,0,1,0, ldraw_lib__48__1_4rin14()],
-// 1 16 0 0 0 -2 0 0 0 0 -2 0 1 0 48\1-4rin13.dat
-  [1,16,0,0,0,-2,0,0,0,0,-2,0,1,0, ldraw_lib__48__1_4rin13()],
-// 1 16 0 0 0 -2 0 0 0 0 -2 0 1 0 48\1-4rin14.dat
-  [1,16,0,0,0,-2,0,0,0,0,-2,0,1,0, ldraw_lib__48__1_4rin14()],
+// 1 16 0 0 0 0 0 2 -2 0 0 0 1 0 48\1-4ring13.dat
+  [1,16,0,0,0,0,0,2,-2,0,0,0,1,0, ldraw_lib__48__1_4ring13()],
+// 1 16 0 0 0 0 0 2 -2 0 0 0 1 0 48\1-4ring14.dat
+  [1,16,0,0,0,0,0,2,-2,0,0,0,1,0, ldraw_lib__48__1_4ring14()],
+// 1 16 0 0 0 -2 0 0 0 0 -2 0 1 0 48\1-4ring13.dat
+  [1,16,0,0,0,-2,0,0,0,0,-2,0,1,0, ldraw_lib__48__1_4ring13()],
+// 1 16 0 0 0 -2 0 0 0 0 -2 0 1 0 48\1-4ring14.dat
+  [1,16,0,0,0,-2,0,0,0,0,-2,0,1,0, ldraw_lib__48__1_4ring14()],
 // 1 16 0 0 12 -28.9778 0 7.76457 -7.76457 0 -28.9778 0 10 0 48\5-12cyli.dat
   [1,16,0,0,12,-28.9778,0,7.76457,-7.76457,0,-28.9778,0,10,0, ldraw_lib__48__5_12cyli()],
 // 1 16 0 0 22 -28.9778 0 7.76457 -7.76457 0 -28.9778 0 -1 0 48\5-12chrd.dat

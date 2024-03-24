@@ -2,7 +2,7 @@ use <../lib.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4cylo.scad>
 use <../p/4-4edge.scad>
-use <../p/4-4rin17.scad>
+use <../p/4-4ring17.scad>
 use <../p/4-4ring2.scad>
 use <../p/4-4ring3.scad>
 use <../p/4-4ring9.scad>
@@ -12,7 +12,7 @@ function ldraw_lib__30027a() = [
 // 0 Wheel Rim  8 x  8 Round Hole, for Wheel Holding Pin
 // 0 Name: 30027a.dat
 // 0 Author: Thomas Burger [grapeape]
-// 0 !LDRAW_ORG Part UPDATE 2018-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -29,7 +29,8 @@ function ldraw_lib__30027a() = [
 // 0 !HISTORY 2012-08-09 [PTadmin] Official Update 2012-02
 // 0 !HISTORY 2016-02-06 [MagFors] Subfiled for reuse
 // 0 !HISTORY 2018-01-30 [PTadmin] Official Update 2018-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Nomenclature: width_(mm) x rim_diameter_(mm) [optional qualifier]
 // 
@@ -58,8 +59,8 @@ function ldraw_lib__30027a() = [
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30027s01()],
 // 
 // 0 // ring on rim frontside
-// 1 16 0 0 -10 0.5 0 0 0 0 0.5 0 1 0 4-4rin17.dat
-  [1,16,0,0,-10,0.5,0,0,0,0,0.5,0,1,0, ldraw_lib__4_4rin17()],
+// 1 16 0 0 -10 0.5 0 0 0 0 0.5 0 1 0 4-4ring17.dat
+  [1,16,0,0,-10,0.5,0,0,0,0,0.5,0,1,0, ldraw_lib__4_4ring17()],
 // 1 16 0 0 -10 1 0 0 0 0 1 0 1 0 4-4ring9.dat
   [1,16,0,0,-10,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4ring9()],
 ];

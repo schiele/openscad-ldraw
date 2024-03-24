@@ -6,7 +6,7 @@ use <../p/48/3-4cyli.scad>
 use <../p/48/3-4edge.scad>
 use <../p/48/4-4cyli.scad>
 use <../p/48/4-4edge.scad>
-use <../p/48/4-4rin25.scad>
+use <../p/48/4-4ring25.scad>
 use <../p/48/5-48cyli.scad>
 use <../p/48/5-48edge.scad>
 use <../p/rect.scad>
@@ -16,7 +16,7 @@ function ldraw_lib__30589() = [
 // 0 ~Hose Air Pump 16 x 14 x 13 Valve Lock Ring (Needs Work)
 // 0 Name: 30589.dat
 // 0 Author: Mikkel Bech Jensen [gaia]
-// 0 !LDRAW_ORG Part UPDATE 2019-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -24,7 +24,8 @@ function ldraw_lib__30589() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2019-09-09 [PTadmin] Official Update 2019-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Needs work - Inside not accurate
 // 
@@ -984,10 +985,10 @@ function ldraw_lib__30589() = [
   [1,16,0,0,0,0,0,-104,0,-4,0,104,0,0, ldraw_lib__48__3_4cyli()],
 // 1 16 0 -4 0 0 0 100 0 -4 0 100 0 0 48\4-4cyli.dat
   [1,16,0,-4,0,0,0,100,0,-4,0,100,0,0, ldraw_lib__48__4_4cyli()],
-// 1 16 0 0 0 4 0 0 0 -1 0 0 0 4 48\4-4rin25.dat
-  [1,16,0,0,0,4,0,0,0,-1,0,0,0,4, ldraw_lib__48__4_4rin25()],
-// 1 16 0 -4 0 4 0 0 0 1 0 0 0 4 48\4-4rin25.dat
-  [1,16,0,-4,0,4,0,0,0,1,0,0,0,4, ldraw_lib__48__4_4rin25()],
+// 1 16 0 0 0 4 0 0 0 -1 0 0 0 4 48\4-4ring25.dat
+  [1,16,0,0,0,4,0,0,0,-1,0,0,0,4, ldraw_lib__48__4_4ring25()],
+// 1 16 0 -4 0 4 0 0 0 1 0 0 0 4 48\4-4ring25.dat
+  [1,16,0,-4,0,4,0,0,0,1,0,0,0,4, ldraw_lib__48__4_4ring25()],
 // 1 16 0 -4 0 0 0 -104 0 1 0 104 0 0 48\3-4edge.dat
   [1,16,0,-4,0,0,0,-104,0,1,0,104,0,0, ldraw_lib__48__3_4edge()],
 // 1 16 0 0 0 0 0 -104 0 1 0 104 0 0 48\3-4edge.dat

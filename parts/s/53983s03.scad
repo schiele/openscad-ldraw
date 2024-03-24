@@ -10,7 +10,7 @@ use <../../p/48/1-12cylo.scad>
 use <../../p/48/1-12edge.scad>
 use <../../p/48/1-24edge.scad>
 use <../../p/48/1-4edge.scad>
-use <../../p/48/1-4rin21.scad>
+use <../../p/48/1-4ring21.scad>
 use <../../p/connhole.scad>
 use <../../p/rect.scad>
 use <../../p/rect3.scad>
@@ -18,7 +18,7 @@ function ldraw_lib__s__53983s03() = [
 // 0 ~Turbine Fan 16 / 8 Blade 10 Diameter with Case - Peghole Spoke Inner
 // 0 Name: s\53983s03.dat
 // 0 Author: Santeri Piippo [arezey]
-// 0 !LDRAW_ORG Subpart UPDATE 2020-03
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -29,7 +29,8 @@ function ldraw_lib__s__53983s03() = [
 // 0 !HISTORY 2018-02-07 [arezey] Complete rewrite
 // 0 !HISTORY 2020-05-31 [Holly-Wood] Fixed T-Junk
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 2 24 17.082 63.751 9 9.5 65.256 9
   [2,24,17.082,63.751,9,9.5,65.256,9],
@@ -48,8 +49,8 @@ function ldraw_lib__s__53983s03() = [
   [1,16,0,80,-10,9,0,0,0,0,-9,0,1,0, ldraw_lib__2_4ndis()],
 // 1 16 0 0 9 -44.5477 0 44.5477 44.5477 0 44.5477 0 1 0 48\1-4edge.dat
   [1,16,0,0,9,-44.5477,0,44.5477,44.5477,0,44.5477,0,1,0, ldraw_lib__48__1_4edge()],
-// 1 16 0 0 9 -2.12132 0 2.12132 2.12132 0 2.12132 0 -1 0 48\1-4rin21.dat
-  [1,16,0,0,9,-2.12132,0,2.12132,2.12132,0,2.12132,0,-1,0, ldraw_lib__48__1_4rin21()],
+// 1 16 0 0 9 -2.12132 0 2.12132 2.12132 0 2.12132 0 -1 0 48\1-4ring21.dat
+  [1,16,0,0,9,-2.12132,0,2.12132,2.12132,0,2.12132,0,-1,0, ldraw_lib__48__1_4ring21()],
 // 1 16 0 0 9 -46.669 0 46.6689 46.6689 0 46.669 0 -39 0 48\1-12cylo.dat
   [1,16,0,0,9,-46.669,0,46.6689,46.6689,0,46.669,0,-39,0, ldraw_lib__48__1_12cylo()],
 // 1 16 0 80 0 -1 0 0 0 0 1 0 1 0 connhole.dat

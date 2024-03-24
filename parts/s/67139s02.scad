@@ -2,14 +2,14 @@ use <../../lib.scad>
 use <../../p/1-8ndis.scad>
 use <../../p/3-16ndis.scad>
 use <../../p/5-16cylo.scad>
-use <../../p/5-16rin3.scad>
+use <../../p/5-16ring3.scad>
 use <../../p/5-16ring8.scad>
 use <../../p/rect3.scad>
 function ldraw_lib__s__67139s02() = [
 // 0 ~Technic Connector Block  3 x  5 x  1 with Cutout - Centre Cutout Quarter
 // 0 Name: s\67139s02.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
-// 0 !LDRAW_ORG Subpart UPDATE 2022-03
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -17,7 +17,8 @@ function ldraw_lib__s__67139s02() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2022-05-07 [PTadmin] Official Update 2022-03
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Closed Side
 // 4 16 0 -9 9 -11 -9 30 -13 -9 12 -9 -9 9
@@ -32,8 +33,8 @@ function ldraw_lib__s__67139s02() = [
   [2,24,-20,-9,30,-11,-9,30],
 // 
 // 0 // Open Side
-// 1 16 -20 0 -28 -2 0 0 0 0 -2 0 1 0 5-16rin3.dat
-  [1,16,-20,0,-28,-2,0,0,0,0,-2,0,1,0, ldraw_lib__5_16rin3()],
+// 1 16 -20 0 -28 -2 0 0 0 0 -2 0 1 0 5-16ring3.dat
+  [1,16,-20,0,-28,-2,0,0,0,0,-2,0,1,0, ldraw_lib__5_16ring3()],
 // 1 16 -20 0 -28 6 0 0 0 0 -6 0 1 0 3-16ndis.dat
   [1,16,-20,0,-28,6,0,0,0,0,-6,0,1,0, ldraw_lib__3_16ndis()],
 // 0 BFC INVERTNEXT

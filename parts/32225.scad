@@ -1,7 +1,7 @@
 use <../lib.scad>
 use <../p/2-4cylo.scad>
 use <../p/2-4ndis.scad>
-use <../p/2-4rin18.scad>
+use <../p/2-4ring18.scad>
 use <../p/2-4ring3.scad>
 use <../p/2-4ring8.scad>
 use <../p/4-4cyli.scad>
@@ -16,7 +16,7 @@ function ldraw_lib__32225() = [
 // 0 Znap Grid  9 x  7 x  4 Motor Holder
 // 0 Name: 32225.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
-// 0 !LDRAW_ORG Part UPDATE 2023-04
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 !HELP Only compatible with 4019.dat 16 Tooth Gear
@@ -27,7 +27,8 @@ function ldraw_lib__32225() = [
 // 
 // 0 !HISTORY 2023-05-18 [Philo] Basic Sketch
 // 0 !HISTORY 2023-08-25 [OrionP] Official Update 2023-04
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\32225s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__32225s01()],
@@ -84,8 +85,8 @@ function ldraw_lib__32225() = [
   [1,16,40,-14,0,0,0,-9.5,0,4,0,9.5,0,0, ldraw_lib__2_4cylo()],
 // 1 16 40 -10 0 0 0 -1 0 1 0 1 0 0 2-4ring8.dat
   [1,16,40,-10,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__2_4ring8()],
-// 1 16 40 -10 0 0 0 -.5 0 1 0 .5 0 0 2-4rin18.dat
-  [1,16,40,-10,0,0,0,-.5,0,1,0,.5,0,0, ldraw_lib__2_4rin18()],
+// 1 16 40 -10 0 0 0 -.5 0 1 0 .5 0 0 2-4ring18.dat
+  [1,16,40,-10,0,0,0,-.5,0,1,0,.5,0,0, ldraw_lib__2_4ring18()],
 // 1 16 40 -14 0 0 0 -9.5 0 1 0 9.5 0 0 2-4ndis.dat
   [1,16,40,-14,0,0,0,-9.5,0,1,0,9.5,0,0, ldraw_lib__2_4ndis()],
 // 1 16 40 -8 0 0 0 6 0 1 0 6 0 0 2-4ndis.dat

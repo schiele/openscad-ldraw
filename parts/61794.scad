@@ -9,8 +9,8 @@ use <../p/4-4cyli.scad>
 use <../p/4-4cylo.scad>
 use <../p/4-4ring2.scad>
 use <../p/48/4-4cylo.scad>
-use <../p/48/4-4rin10.scad>
-use <../p/48/4-4rin19.scad>
+use <../p/48/4-4ring10.scad>
+use <../p/48/4-4ring19.scad>
 use <../p/7-16cylo.scad>
 use <../p/7-8cylo.scad>
 use <../p/axl3hole.scad>
@@ -20,7 +20,7 @@ function ldraw_lib__61794() = [
 // 0 Constraction Sight with Crosshairs
 // 0 Name: 61794.dat
 // 0 Author: Santeri Piippo [arezey]
-// 0 !LDRAW_ORG Part UPDATE 2019-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -30,7 +30,8 @@ function ldraw_lib__61794() = [
 // 0 !KEYWORDS bionicle, reticle, scope
 // 
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
@@ -52,20 +53,20 @@ function ldraw_lib__61794() = [
   [1,16,0,0,10,-3,0,0,0,0,-3,0,-1,0, ldraw_lib__4_4ring2()],
 // 1 16 0 0 -10 -3 0 0 0 0 -3 0 1 0 4-4ring2.dat
   [1,16,0,0,-10,-3,0,0,0,0,-3,0,1,0, ldraw_lib__4_4ring2()],
-// 1 16 46 -46 3.8 -1 0 0 0 0 -1 0 -1 0 48\4-4rin19.dat
-  [1,16,46,-46,3.8,-1,0,0,0,0,-1,0,-1,0, ldraw_lib__48__4_4rin19()],
-// 1 16 46 -46 3.8 -2 0 0 0 0 -2 0 -1 0 48\4-4rin10.dat
-  [1,16,46,-46,3.8,-2,0,0,0,0,-2,0,-1,0, ldraw_lib__48__4_4rin10()],
+// 1 16 46 -46 3.8 -1 0 0 0 0 -1 0 -1 0 48\4-4ring19.dat
+  [1,16,46,-46,3.8,-1,0,0,0,0,-1,0,-1,0, ldraw_lib__48__4_4ring19()],
+// 1 16 46 -46 3.8 -2 0 0 0 0 -2 0 -1 0 48\4-4ring10.dat
+  [1,16,46,-46,3.8,-2,0,0,0,0,-2,0,-1,0, ldraw_lib__48__4_4ring10()],
 // 1 16 46 -46 -3.8 -22 0 0 0 0 -22 0 7.6 0 48\4-4cylo.dat
   [1,16,46,-46,-3.8,-22,0,0,0,0,-22,0,7.6,0, ldraw_lib__48__4_4cylo()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 46 -46 -3.8 -19 0 0 0 0 -19 0 7.6 0 48\4-4cylo.dat
   [1,16,46,-46,-3.8,-19,0,0,0,0,-19,0,7.6,0, ldraw_lib__48__4_4cylo()],
-// 1 16 46 -46 -3.8 -1 0 0 0 0 -1 0 1 0 48\4-4rin19.dat
-  [1,16,46,-46,-3.8,-1,0,0,0,0,-1,0,1,0, ldraw_lib__48__4_4rin19()],
-// 1 16 46 -46 -3.8 -2 0 0 0 0 -2 0 1 0 48\4-4rin10.dat
-  [1,16,46,-46,-3.8,-2,0,0,0,0,-2,0,1,0, ldraw_lib__48__4_4rin10()],
+// 1 16 46 -46 -3.8 -1 0 0 0 0 -1 0 1 0 48\4-4ring19.dat
+  [1,16,46,-46,-3.8,-1,0,0,0,0,-1,0,1,0, ldraw_lib__48__4_4ring19()],
+// 1 16 46 -46 -3.8 -2 0 0 0 0 -2 0 1 0 48\4-4ring10.dat
+  [1,16,46,-46,-3.8,-2,0,0,0,0,-2,0,1,0, ldraw_lib__48__4_4ring10()],
 // 1 16 51 -46 3.2 0 0 -2 2 0 0 0 -6.4 0 2-4cylo.dat
   [1,16,51,-46,3.2,0,0,-2,2,0,0,0,-6.4,0, ldraw_lib__2_4cylo()],
 // 1 16 51 -46 -3.2 0 0 -2 2 0 0 0 6.4 0 2-4chrd.dat

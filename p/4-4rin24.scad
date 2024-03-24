@@ -1,9 +1,9 @@
 use <../lib.scad>
 function ldraw_lib__4_4rin24() = [
-// 0 Ring 24 x 1.0
+// 0 ~Ring 24 x 1.0 (Obsolete)
 // 0 Name: 4-4rin24.dat
 // 0 Author: Niels Karsdorp [nielsk]
-// 0 !LDRAW_ORG Primitive UPDATE 2012-01
+// 0 !LDRAW_ORG Primitive UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -13,7 +13,8 @@ function ldraw_lib__4_4rin24() = [
 // 0 !HISTORY 2009-05-02 [PTadmin] Official Update 2009-01
 // 0 !HISTORY 2012-02-16 [Philo] Changed to CCW
 // 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Obsolete, use 4-4ring24.dat
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 4 16 25 0 0 23.0975 0 9.5675 22.1736 0 9.1848 24 0 0
   [4,16,25,0,0,23.0975,0,9.5675,22.1736,0,9.1848,24,0,0],

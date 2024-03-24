@@ -2,14 +2,14 @@ use <../lib.scad>
 use <../p/1-4disc.scad>
 use <../p/1-8disc.scad>
 use <../p/1-8ndis.scad>
-use <../p/1-8rin10.scad>
 use <../p/1-8ring1.scad>
+use <../p/1-8ring10.scad>
 use <s/4478s01.scad>
 function ldraw_lib__4478p02() = [
 // 0 Baseplate 32 x 32 Road 9-Stud Driveway with White Lines Pattern
 // 0 Name: 4478p02.dat
 // 0 Author: Alex Taylor [anathema]
-// 0 !LDRAW_ORG Part UPDATE 2010-03
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -18,7 +18,8 @@ function ldraw_lib__4478p02() = [
 // 
 // 0 !HISTORY 2010-04-09 [mikeheide] Moved portions from subfile
 // 0 !HISTORY 2010-12-31 [PTadmin] Official Update 2010-03
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4478s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4478s01()],
@@ -50,14 +51,14 @@ function ldraw_lib__4478p02() = [
   [4,16,316,0,320,276,0,320,276,0,-142,316,0,-111],
 // 1 16 146 0 -295 -10 0 0 0 1 0 0 0 10 1-8disc.dat
   [1,16,146,0,-295,-10,0,0,0,1,0,0,0,10, ldraw_lib__1_8disc()],
-// 1 15 146 0 -295 -2 0 0 0 1 0 0 0 2 1-8rin10.dat
-  [1,15,146,0,-295,-2,0,0,0,1,0,0,0,2, ldraw_lib__1_8rin10()],
+// 1 15 146 0 -295 -2 0 0 0 1 0 0 0 2 1-8ring10.dat
+  [1,15,146,0,-295,-2,0,0,0,1,0,0,0,2, ldraw_lib__1_8ring10()],
 // 1 16 146 0 -295 -22 0 0 0 1 0 0 0 22 1-8ndis.dat
   [1,16,146,0,-295,-22,0,0,0,1,0,0,0,22, ldraw_lib__1_8ndis()],
 // 1 15 146 0 -295 -10 0 0 0 1 0 0 0 10 1-8ring1.dat
   [1,15,146,0,-295,-10,0,0,0,1,0,0,0,10, ldraw_lib__1_8ring1()],
-// 1 15 112 0 -52 2 0 0 0 1 0 0 0 -2 1-8rin10.dat
-  [1,15,112,0,-52,2,0,0,0,1,0,0,0,-2, ldraw_lib__1_8rin10()],
+// 1 15 112 0 -52 2 0 0 0 1 0 0 0 -2 1-8ring10.dat
+  [1,15,112,0,-52,2,0,0,0,1,0,0,0,-2, ldraw_lib__1_8ring10()],
 // 1 16 112 0 -52 22 0 0 0 1 0 0 0 -22 1-8ndis.dat
   [1,16,112,0,-52,22,0,0,0,1,0,0,0,-22, ldraw_lib__1_8ndis()],
 // 1 15 112 0 -52 10 0 0 0 1 0 0 0 -10 1-8ring1.dat
@@ -74,8 +75,8 @@ function ldraw_lib__4478p02() = [
   [4,16,122,0,-272,134,0,-142,134,0,-74,128,0,-67],
 // 4 15 264 0 -142 276 0 -142 276 0 320 264 0 320
   [4,15,264,0,-142,276,0,-142,276,0,320,264,0,320],
-// 1 15 254 0 -142 2 0 0 0 1 0 0 0 -2 1-8rin10.dat
-  [1,15,254,0,-142,2,0,0,0,1,0,0,0,-2, ldraw_lib__1_8rin10()],
+// 1 15 254 0 -142 2 0 0 0 1 0 0 0 -2 1-8ring10.dat
+  [1,15,254,0,-142,2,0,0,0,1,0,0,0,-2, ldraw_lib__1_8ring10()],
 // 1 15 254 0 -142 10 0 0 0 1 0 0 0 -10 1-8ring1.dat
   [1,15,254,0,-142,10,0,0,0,1,0,0,0,-10, ldraw_lib__1_8ring1()],
 // 1 16 254 0 -142 10 0 0 0 1 0 0 0 -10 1-8disc.dat

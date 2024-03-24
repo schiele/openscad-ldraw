@@ -4,8 +4,8 @@ use <../p/4-4cyli.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4edge.scad>
 use <../p/4-4ndis.scad>
-use <../p/4-4rin18.scad>
 use <../p/4-4ring1.scad>
+use <../p/4-4ring18.scad>
 use <../p/4-4ring9.scad>
 use <../p/box4-4a.scad>
 use <../p/rect.scad>
@@ -16,7 +16,7 @@ function ldraw_lib__2895() = [
 // 0 ~Train Wheel  9V with Electrical Contact
 // 0 Name: 2895.dat
 // 0 Author: Thomas Burger [grapeape]
-// 0 !LDRAW_ORG Part UPDATE 2010-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CW
@@ -34,7 +34,8 @@ function ldraw_lib__2895() = [
 // 0 !HISTORY 2008-07-10 [technog] Refined detail of part (2006-02-15)
 // 0 !HISTORY 2010-05-29 [Steffen] adjusted origin, used black rubber color
 // 0 !HISTORY 2010-07-05 [PTadmin] Official Update 2010-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 -6.5 19 0 0 0 0 19 0 -1 0 4-4disc.dat
   [1,16,0,0,-6.5,19,0,0,0,0,19,0,-1,0, ldraw_lib__4_4disc()],
@@ -148,8 +149,8 @@ function ldraw_lib__2895() = [
   [1,16,0,0,-7.5,19,0,0,0,0,19,0,1,0, ldraw_lib__4_4edge()],
 // 1 16 0 0 -6.5 19 0 0 0 0 19 0 1 0 4-4edge.dat
   [1,16,0,0,-6.5,19,0,0,0,0,19,0,1,0, ldraw_lib__4_4edge()],
-// 1 16 0 0 -7.5 1 0 0 0 0 1 0 1 0 4-4rin18.dat
-  [1,16,0,0,-7.5,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4rin18()],
+// 1 16 0 0 -7.5 1 0 0 0 0 1 0 1 0 4-4ring18.dat
+  [1,16,0,0,-7.5,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4ring18()],
 // 1 16 0 0 -13 20 0 0 0 0 20 0 1 0 4-4edge.dat
   [1,16,0,0,-13,20,0,0,0,0,20,0,1,0, ldraw_lib__4_4edge()],
 // 1 16 0 0 -12 20 0 0 0 0 20 0 1 0 4-4edge.dat

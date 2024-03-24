@@ -8,7 +8,7 @@ use <../p/2-4con15.scad>
 use <../p/2-4con5.scad>
 use <../p/2-4cylc.scad>
 use <../p/2-4cylo.scad>
-use <../p/2-4rin10.scad>
+use <../p/2-4ring10.scad>
 use <../p/2-4ring9.scad>
 use <../p/2-8sphe.scad>
 use <../p/3-4cyli.scad>
@@ -28,7 +28,7 @@ function ldraw_lib__58086() = [
 // 0 Duplo Pitchfork
 // 0 Name: 58086.dat
 // 0 Author: Magnus Forsberg [MagFors]
-// 0 !LDRAW_ORG Part UPDATE 2020-03
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -38,7 +38,8 @@ function ldraw_lib__58086() = [
 // 0 !CATEGORY Figure Accessory
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 -11 0 0 0 22 0 -6.25 0 0 0 0 6.25 4-4cyli.dat
   [1,16,-11,0,0,0,22,0,-6.25,0,0,0,0,6.25, ldraw_lib__4_4cyli()],
@@ -83,12 +84,12 @@ function ldraw_lib__58086() = [
   [1,16,-20,0,0,2,0,0,0,8.25,0,0,0,9.5, ldraw_lib__box4o8a()],
 // 1 16 0 8.25 -9.5 -2 0 0 0 0 2 0 1 0 2-4ring9.dat
   [1,16,0,8.25,-9.5,-2,0,0,0,0,2,0,1,0, ldraw_lib__2_4ring9()],
-// 1 16 0 8.25 -9.5 -2 0 0 0 0 2 0 1 0 2-4rin10.dat
-  [1,16,0,8.25,-9.5,-2,0,0,0,0,2,0,1,0, ldraw_lib__2_4rin10()],
+// 1 16 0 8.25 -9.5 -2 0 0 0 0 2 0 1 0 2-4ring10.dat
+  [1,16,0,8.25,-9.5,-2,0,0,0,0,2,0,1,0, ldraw_lib__2_4ring10()],
 // 1 16 0 8.25 9.5 -2 0 0 0 0 2 0 -1 0 2-4ring9.dat
   [1,16,0,8.25,9.5,-2,0,0,0,0,2,0,-1,0, ldraw_lib__2_4ring9()],
-// 1 16 0 8.25 9.5 -2 0 0 0 0 2 0 -1 0 2-4rin10.dat
-  [1,16,0,8.25,9.5,-2,0,0,0,0,2,0,-1,0, ldraw_lib__2_4rin10()],
+// 1 16 0 8.25 9.5 -2 0 0 0 0 2 0 -1 0 2-4ring10.dat
+  [1,16,0,8.25,9.5,-2,0,0,0,0,2,0,-1,0, ldraw_lib__2_4ring10()],
 // 
 // 1 16 0 46.25 0 0 0 8 0 -17.5908 0 -8 0 0 3-8cyli.dat
   [1,16,0,46.25,0,0,0,8,0,-17.5908,0,-8,0,0, ldraw_lib__3_8cyli()],

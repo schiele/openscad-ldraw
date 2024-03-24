@@ -1,6 +1,6 @@
 use <../lib.scad>
 use <../p/2-4disc.scad>
-use <../p/2-4rin12.scad>
+use <../p/2-4ring12.scad>
 use <../p/2-4ring2.scad>
 use <s/98100ps1s01.scad>
 use <s/98100s01.scad>
@@ -8,17 +8,18 @@ function ldraw_lib__98100ps1() = [
 // 0 Cone  2 x  2 Truncated with SW R5 Red Pattern
 // 0 Name: 98100ps1.dat
 // 0 Author: John Troxler [Gargan]
-// 0 !LDRAW_ORG Part UPDATE 2019-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS astromech, droid, minifig, R5-D8, red droid, Star Wars
+// 0 !KEYWORDS R5-D8, Star Wars, astromech, droid, minifig, red droid
 // 
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Part without faces
 // 
@@ -721,10 +722,10 @@ function ldraw_lib__98100ps1() = [
   [1,80,0,11,-18.281,0,0,-.4,-.4,1,0,.138,0,.08, ldraw_lib__2_4ring2()],
 // 1 80 0 11 -18.281 0 0 .4 -.4 1 0 .138 0 .08 2-4ring2.dat
   [1,80,0,11,-18.281,0,0,.4,-.4,1,0,.138,0,.08, ldraw_lib__2_4ring2()],
-// 1 80 0 11 -18.281 0 0 -.1 -.1 1 0 .034 0 .02 2-4rin12.dat
-  [1,80,0,11,-18.281,0,0,-.1,-.1,1,0,.034,0,.02, ldraw_lib__2_4rin12()],
-// 1 80 0 11 -18.281 0 0 .1 -.1 1 0 .034 0 .02 2-4rin12.dat
-  [1,80,0,11,-18.281,0,0,.1,-.1,1,0,.034,0,.02, ldraw_lib__2_4rin12()],
+// 1 80 0 11 -18.281 0 0 -.1 -.1 1 0 .034 0 .02 2-4ring12.dat
+  [1,80,0,11,-18.281,0,0,-.1,-.1,1,0,.034,0,.02, ldraw_lib__2_4ring12()],
+// 1 80 0 11 -18.281 0 0 .1 -.1 1 0 .034 0 .02 2-4ring12.dat
+  [1,80,0,11,-18.281,0,0,.1,-.1,1,0,.034,0,.02, ldraw_lib__2_4ring12()],
 // 1 80 0 14.3 -19.416 0 0 -.6 -.6 1 0 .206 0 .119 2-4disc.dat
   [1,80,0,14.3,-19.416,0,0,-.6,-.6,1,0,.206,0,.119, ldraw_lib__2_4disc()],
 // 1 80 0 14.3 -19.416 0 0 .6 -.6 1 0 .206 0 .119 2-4disc.dat

@@ -2,20 +2,20 @@ use <../lib.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4ering.scad>
 use <../p/4-4ndis.scad>
-use <../p/4-4rin16.scad>
-use <../p/4-4rin18.scad>
-use <../p/4-4rin19.scad>
-use <../p/4-4rin34.scad>
+use <../p/4-4ring16.scad>
+use <../p/4-4ring18.scad>
+use <../p/4-4ring19.scad>
+use <../p/4-4ring34.scad>
 use <../p/4-4ring35.scad>
-use <../p/48/4-4rin26.scad>
-use <../p/48/4-4rin27.scad>
-use <../p/48/4-4rin30.scad>
+use <../p/48/4-4ring26.scad>
+use <../p/48/4-4ring27.scad>
+use <../p/48/4-4ring30.scad>
 use <s/14769s01.scad>
 function ldraw_lib__14769p0a() = [
 // 0 Tile  2 x  2 Round with Round Underside Stud with Clock and Roman Numerals Pattern
 // 0 Name: 14769p0a.dat
 // 0 Author: Evert-Jan Boer [ejboer]
-// 0 !LDRAW_ORG Part UPDATE 2019-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -25,29 +25,30 @@ function ldraw_lib__14769p0a() = [
 // 0 !KEYWORDS 14769pb133
 // 
 // 0 !HISTORY 2019-09-09 [PTadmin] Official Update 2019-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\14769s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__14769s01()],
 // 
-// 1 16 0 0 0 1 0 0 0 1 0 0 0 1 4-4rin19.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4rin19()],
-// 1 16 0 0 0 1 0 0 0 1 0 0 0 1 4-4rin16.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4rin16()],
+// 1 16 0 0 0 1 0 0 0 1 0 0 0 1 4-4ring19.dat
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4ring19()],
+// 1 16 0 0 0 1 0 0 0 1 0 0 0 1 4-4ring16.dat
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4ring16()],
 // 1 16 0 0 0 16 0 0 0 1 0 0 0 16 4-4ering.dat
   [1,16,0,0,0,16,0,0,0,1,0,0,0,16, ldraw_lib__4_4ering()],
-// 1 28 0 0 0 1 0 0 0 1 0 0 0 1 4-4rin18.dat
-  [1,28,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4rin18()],
+// 1 28 0 0 0 1 0 0 0 1 0 0 0 1 4-4ring18.dat
+  [1,28,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4ring18()],
 // 1 28 0 0 0 0.5 0 0 0 1 0 0 0 0.5 4-4ring35.dat
   [1,28,0,0,0,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__4_4ring35()],
-// 1 0 0 0 0 0.5 0 0 0 1 0 0 0 0.5 4-4rin34.dat
-  [1,0,0,0,0,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__4_4rin34()],
-// 1 28 0 0 0 0.5 0 0 0 1 0 0 0 0.5 48\4-4rin26.dat
-  [1,28,0,0,0,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__48__4_4rin26()],
-// 1 0 0 0 0 0.5 0 0 0 1 0 0 0 0.5 48\4-4rin27.dat
-  [1,0,0,0,0,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__48__4_4rin27()],
-// 1 0 0 0 0 0.5 0 0 0 1 0 0 0 0.5 48\4-4rin30.dat
-  [1,0,0,0,0,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__48__4_4rin30()],
+// 1 0 0 0 0 0.5 0 0 0 1 0 0 0 0.5 4-4ring34.dat
+  [1,0,0,0,0,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__4_4ring34()],
+// 1 28 0 0 0 0.5 0 0 0 1 0 0 0 0.5 48\4-4ring26.dat
+  [1,28,0,0,0,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__48__4_4ring26()],
+// 1 0 0 0 0 0.5 0 0 0 1 0 0 0 0.5 48\4-4ring27.dat
+  [1,0,0,0,0,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__48__4_4ring27()],
+// 1 0 0 0 0 0.5 0 0 0 1 0 0 0 0.5 48\4-4ring30.dat
+  [1,0,0,0,0,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__48__4_4ring30()],
 // 1 0 -5.7 0 9.9 0.7 0 0 0 1 0 0 0 -0.7 4-4disc.dat
   [1,0,-5.7,0,9.9,0.7,0,0,0,1,0,0,0,-0.7, ldraw_lib__4_4disc()],
 // 1 15 -5.7 0 9.9 0.7 0 0 0 1 0 0 0 0.7 4-4ndis.dat

@@ -6,7 +6,7 @@ use <../p/1-4ring3.scad>
 use <../p/1-4ring4.scad>
 use <../p/48/1-4cyli.scad>
 use <../p/48/1-4edge.scad>
-use <../p/48/1-4rin18.scad>
+use <../p/48/1-4ring18.scad>
 use <../p/48/1-4ring3.scad>
 use <../p/48/1-4ring5.scad>
 use <../p/48/1-8sphe.scad>
@@ -16,7 +16,7 @@ function ldraw_lib__6002() = [
 // 0 Panel  6 x  6 x  9 Corner Round
 // 0 Name: 6002.dat
 // 0 Author: Mark Kennedy [mkennedy]
-// 0 !LDRAW_ORG Part UPDATE 2010-03
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CW
@@ -28,7 +28,8 @@ function ldraw_lib__6002() = [
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
 // 0 !HISTORY 2008-07-07 [mkennedy] Added BFC, used more primitves, fixed error (2006-07-07)
 // 0 !HISTORY 2010-12-31 [PTadmin] Official Update 2010-03
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 0 0 1 0 1 0 -1 0 0 s\6002s2.dat
   [1,16,0,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__s__6002s2()],
@@ -80,8 +81,8 @@ function ldraw_lib__6002() = [
   [1,16,20,212,-20,20,0,0,0,-1,0,0,0,-20, ldraw_lib__48__1_4ring3()],
 // 1 16 20 208 -20 12 0 0 0 1 0 0 0 -12 48\1-4ring5.dat
   [1,16,20,208,-20,12,0,0,0,1,0,0,0,-12, ldraw_lib__48__1_4ring5()],
-// 1 16 20 208 -20 4 0 0 0 1 0 0 0 -4 48\1-4rin18.dat
-  [1,16,20,208,-20,4,0,0,0,1,0,0,0,-4, ldraw_lib__48__1_4rin18()],
+// 1 16 20 208 -20 4 0 0 0 1 0 0 0 -4 48\1-4ring18.dat
+  [1,16,20,208,-20,4,0,0,0,1,0,0,0,-4, ldraw_lib__48__1_4ring18()],
 // 1 16 20 208 -20 0 0 76 0 1 0 -76 0 0 48\1-4edge.dat
   [1,16,20,208,-20,0,0,76,0,1,0,-76,0,0, ldraw_lib__48__1_4edge()],
 // 0

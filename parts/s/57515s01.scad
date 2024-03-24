@@ -1,7 +1,7 @@
 use <../../lib.scad>
 use <../../p/1-16cyli.scad>
 use <../../p/1-16cylo.scad>
-use <../../p/1-16rin4.scad>
+use <../../p/1-16ring4.scad>
 use <../../p/1-4cyls.scad>
 use <../../p/1-4cyls2.scad>
 use <../../p/1-8cyli.scad>
@@ -24,7 +24,7 @@ function ldraw_lib__s__57515s01() = [
 // 0 ~Technic Suspension Arm Ball Socket
 // 0 Name: s\57515s01.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Subpart UPDATE 2023-05
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -37,6 +37,8 @@ function ldraw_lib__s__57515s01() = [
 // 0 !HISTORY 2022-10-14 [Cheenzo] Removed unnecessary surfaces and added missing edges
 // 0 !HISTORY 2023-10-08 [MagFors] Closed thin gaps
 // 0 !HISTORY 2023-10-31 [OrionP] Official Update 2023-05
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Adapted from Don Sutter 32195
 // 1 16 0 .5 -7 0 0 4 6.5 0 0 0 1 0 rect.dat
@@ -289,10 +291,10 @@ function ldraw_lib__s__57515s01() = [
   [4,16,-4,7,-7,-10,7,-5.412,10,7,-5.412,4,7,-7],
 // 1 16 0 7 -20 2 0 0 0 -1 -.8 0 0 -2 2-4ring4.dat
   [1,16,0,7,-20,2,0,0,0,-1,-.8,0,0,-2, ldraw_lib__2_4ring4()],
-// 1 16 0 7 -20 0 0 2 0 -1 0 2 0 0 1-16rin4.dat
-  [1,16,0,7,-20,0,0,2,0,-1,0,2,0,0, ldraw_lib__1_16rin4()],
-// 1 16 0 7 -20 0 0 -2 0 -1 0 2 0 0 1-16rin4.dat
-  [1,16,0,7,-20,0,0,-2,0,-1,0,2,0,0, ldraw_lib__1_16rin4()],
+// 1 16 0 7 -20 0 0 2 0 -1 0 2 0 0 1-16ring4.dat
+  [1,16,0,7,-20,0,0,2,0,-1,0,2,0,0, ldraw_lib__1_16ring4()],
+// 1 16 0 7 -20 0 0 -2 0 -1 0 2 0 0 1-16ring4.dat
+  [1,16,0,7,-20,0,0,-2,0,-1,0,2,0,0, ldraw_lib__1_16ring4()],
 // 1 16 0 7 -20 -8 0 0 0 -1 0 0 0 8 3-16tndis.dat
   [1,16,0,7,-20,-8,0,0,0,-1,0,0,0,8, ldraw_lib__3_16tndis()],
 // 1 16 0 7 -20 8 0 0 0 -1 0 0 0 8 3-16tndis.dat

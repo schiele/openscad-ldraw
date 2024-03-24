@@ -3,14 +3,14 @@ use <../p/1-8chrd.scad>
 use <../p/2-4chrd.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4ndis.scad>
-use <../p/4-4rin10.scad>
+use <../p/4-4ring10.scad>
 use <../p/4-4ring2.scad>
 use <s/3003s01.scad>
 function ldraw_lib__3003pe7() = [
 // 0 Brick  2 x  2 with Centred White Eye Pattern
 // 0 Name: 3003pe7.dat
 // 0 Author: Vincent Messenet [Cheenzo]
-// 0 !LDRAW_ORG Part UPDATE 2022-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -20,7 +20,8 @@ function ldraw_lib__3003pe7() = [
 // 0 !KEYWORDS BrickLink 3003pb129, Set 71381
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3003s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3003s01()],
@@ -41,8 +42,8 @@ function ldraw_lib__3003pe7() = [
   [1,16,0,12.25,-20,-5,0,0,0,0,5,0,1,0, ldraw_lib__1_8chrd()],
 // 1 15 0 12.25 -20 2.5 0 0 0 0 2.5 0 1 0 4-4ring2.dat
   [1,15,0,12.25,-20,2.5,0,0,0,0,2.5,0,1,0, ldraw_lib__4_4ring2()],
-// 1 15 0 12.25 -20 .75 0 0 0 0 .75 0 1 0 4-4rin10.dat
-  [1,15,0,12.25,-20,.75,0,0,0,0,.75,0,1,0, ldraw_lib__4_4rin10()],
+// 1 15 0 12.25 -20 .75 0 0 0 0 .75 0 1 0 4-4ring10.dat
+  [1,15,0,12.25,-20,.75,0,0,0,0,.75,0,1,0, ldraw_lib__4_4ring10()],
 // 1 16 0 12.25 -20 8.25 0 0 0 0 8.25 0 1 0 4-4ndis.dat
   [1,16,0,12.25,-20,8.25,0,0,0,0,8.25,0,1,0, ldraw_lib__4_4ndis()],
 // 3 16 -20 0 -20 -8.25 4 -20 0 4 -20

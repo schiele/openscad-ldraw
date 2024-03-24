@@ -6,8 +6,8 @@ use <../p/4-4con15.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4edge.scad>
 use <../p/4-4ndis.scad>
-use <../p/4-4rin11.scad>
-use <../p/4-4rin14.scad>
+use <../p/4-4ring11.scad>
+use <../p/4-4ring14.scad>
 use <../p/4-4ring6.scad>
 use <../p/box4-2p.scad>
 use <../p/stud8.scad>
@@ -16,7 +16,7 @@ function ldraw_lib__4913() = [
 // 0 Duplo Sign Post Tall
 // 0 Name: 4913.dat
 // 0 Author: Michael Heidemann [mikeheide]
-// 0 !LDRAW_ORG Part UPDATE 2010-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -26,7 +26,8 @@ function ldraw_lib__4913() = [
 // 0 !CATEGORY Support
 // 
 // 0 !HISTORY 2010-07-05 [PTadmin] Official Update 2010-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 25 0 0 0 25 0 0 0 25 4-4ndis.dat
   [1,16,0,0,0,25,0,0,0,25,0,0,0,25, ldraw_lib__4_4ndis()],
@@ -94,16 +95,16 @@ function ldraw_lib__4913() = [
   [1,16,0,-128,0,0,0,-15,0,-1,0,15,0,0, ldraw_lib__4_4edge()],
 // 1 16 0 -128 0 0 0 -14 0 -1 0 14 0 0 4-4edge.dat
   [1,16,0,-128,0,0,0,-14,0,-1,0,14,0,0, ldraw_lib__4_4edge()],
-// 1 16 0 -128 0 0 0 -1 0 1 0 -1 0 0 4-4rin14.dat
-  [1,16,0,-128,0,0,0,-1,0,1,0,-1,0,0, ldraw_lib__4_4rin14()],
+// 1 16 0 -128 0 0 0 -1 0 1 0 -1 0 0 4-4ring14.dat
+  [1,16,0,-128,0,0,0,-1,0,1,0,-1,0,0, ldraw_lib__4_4ring14()],
 // 1 16 0 -140 0 0 0 -14 0 -1 0 14 0 0 4-4edge.dat
   [1,16,0,-140,0,0,0,-14,0,-1,0,14,0,0, ldraw_lib__4_4edge()],
 // 1 16 0 -140 0 0 0 -14 0 12 0 14 0 0 4-4cyli.dat
   [1,16,0,-140,0,0,0,-14,0,12,0,14,0,0, ldraw_lib__4_4cyli()],
 // 1 16 0 -140 0 0 0 -11 0 12 0 11 0 0 4-4edge.dat
   [1,16,0,-140,0,0,0,-11,0,12,0,11,0,0, ldraw_lib__4_4edge()],
-// 1 16 0 -140 0 0 0 -1 0 1 0 1 0 0 4-4rin11.dat
-  [1,16,0,-140,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__4_4rin11()],
+// 1 16 0 -140 0 0 0 -1 0 1 0 1 0 0 4-4ring11.dat
+  [1,16,0,-140,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__4_4ring11()],
 // 1 16 0 -140 0 0 0 -2 0 1 0 2 0 0 4-4ring6.dat
   [1,16,0,-140,0,0,0,-2,0,1,0,2,0,0, ldraw_lib__4_4ring6()],
 // 1 16 -20 10 -36 -1.5 0 0 0 0 6 0 4 0 box4-2p.dat

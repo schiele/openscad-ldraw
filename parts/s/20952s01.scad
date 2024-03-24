@@ -1,8 +1,8 @@
 use <../../lib.scad>
 use <../../p/4-4cylo.scad>
 use <../../p/4-4disc.scad>
-use <../../p/4-4rin11.scad>
-use <../../p/4-4rin21.scad>
+use <../../p/4-4ring11.scad>
+use <../../p/4-4ring21.scad>
 use <../../p/4-4ring6.scad>
 use <../../p/4-4ring8.scad>
 use <../../p/48/4-4aring.scad>
@@ -14,7 +14,7 @@ function ldraw_lib__s__20952s01() = [
 // 0 ~Brick Round  1.4 x  1.4 x  0.667 Dome Top without Outer Faces
 // 0 Name: s\20952s01.dat
 // 0 Author: Massimo Maso [Sirio]
-// 0 !LDRAW_ORG Subpart UPDATE 2020-03
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -22,7 +22,8 @@ function ldraw_lib__s__20952s01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 stud2.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2()],
@@ -46,10 +47,10 @@ function ldraw_lib__s__20952s01() = [
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 16 0 10.5 0 0 0 -7 0 0 0 10.5 4-4cylo.dat
   [1,16,0,16,0,10.5,0,0,0,-7,0,0,0,10.5, ldraw_lib__4_4cylo()],
-// 1 16 0 16 0 0.5 0 0 0 -1 0 0 0 0.5 4-4rin21.dat
-  [1,16,0,16,0,0.5,0,0,0,-1,0,0,0,0.5, ldraw_lib__4_4rin21()],
-// 1 16 0 16 0 1 0 0 0 -1 0 0 0 1 4-4rin11.dat
-  [1,16,0,16,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__4_4rin11()],
+// 1 16 0 16 0 0.5 0 0 0 -1 0 0 0 0.5 4-4ring21.dat
+  [1,16,0,16,0,0.5,0,0,0,-1,0,0,0,0.5, ldraw_lib__4_4ring21()],
+// 1 16 0 16 0 1 0 0 0 -1 0 0 0 1 4-4ring11.dat
+  [1,16,0,16,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__4_4ring11()],
 // 1 16 0 16 0 12 0 0 0 -1 0 0 0 12 48\4-4aring.dat
   [1,16,0,16,0,12,0,0,0,-1,0,0,0,12, ldraw_lib__48__4_4aring()],
 // 1 16 0 16 0 12 0 0 0 -1 0 0 0 12 48\4-4edge.dat

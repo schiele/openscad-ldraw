@@ -5,8 +5,8 @@ use <../p/4-4cylc.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4edge.scad>
-use <../p/4-4rin24.scad>
 use <../p/4-4ring1.scad>
+use <../p/4-4ring24.scad>
 use <../p/4-8sphe.scad>
 use <../p/box3u2p.scad>
 use <../p/rect2p.scad>
@@ -15,7 +15,7 @@ function ldraw_lib__2866() = [
 // 0 Train Track  9V Points Lever
 // 0 Name: 2866.dat
 // 0 Author: Ludo Soete [ludo]
-// 0 !LDRAW_ORG Part UPDATE 2016-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -27,7 +27,8 @@ function ldraw_lib__2866() = [
 // 0 !HISTORY 2012-09-09 [Steffen] uploaded to PT from LUGNET, BFCed, rotated by 90 degrees
 // 0 !HISTORY 2016-01-02 [MMR1988] Added condlines, used more prims
 // 0 !HISTORY 2016-12-31 [PTadmin] Official Update 2016-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // scharnier punt links
 // 
@@ -59,8 +60,8 @@ function ldraw_lib__2866() = [
   [1,16,10,-35,0,0,-1,0,0,0,1,-1,0,0, ldraw_lib__stud2a()],
 // 1 16 10 -35 0 0 -1 0 6 0 0 0 0 6 4-4ring1.dat
   [1,16,10,-35,0,0,-1,0,6,0,0,0,0,6, ldraw_lib__4_4ring1()],
-// 1 16 10 -35 0 0 -1 0 0.5 0 0 0 0 0.5 4-4rin24.dat
-  [1,16,10,-35,0,0,-1,0,0.5,0,0,0,0,0.5, ldraw_lib__4_4rin24()],
+// 1 16 10 -35 0 0 -1 0 0.5 0 0 0 0 0.5 4-4ring24.dat
+  [1,16,10,-35,0,0,-1,0,0.5,0,0,0,0,0.5, ldraw_lib__4_4ring24()],
 // 
 // 0 // top vierkantje
 // 1 16 0 -46.754315 0 3.75 0 0 0 -3.49569 0 0 0 3.75 box3u2p.dat

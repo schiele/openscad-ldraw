@@ -1,7 +1,7 @@
 use <../../lib.scad>
 use <../../p/1-8cylo.scad>
-use <../../p/1-8rin10.scad>
-use <../../p/1-8rin19.scad>
+use <../../p/1-8ring10.scad>
+use <../../p/1-8ring19.scad>
 use <../../p/1-8ring2.scad>
 use <../../p/1-8ring3.scad>
 use <../../p/1-8ring4.scad>
@@ -10,7 +10,7 @@ function ldraw_lib__s__2593s02() = [
 // 0 ~Wheel 30 x 35 with Tread on Sidewall - 1/8 Hub Segment
 // 0 Name: s\2593s02.dat
 // 0 Author: Steve Bliss [sbliss]
-// 0 !LDRAW_ORG Subpart UPDATE 2017-01
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -25,7 +25,8 @@ function ldraw_lib__s__2593s02() = [
 // 0 !HISTORY 2017-01-15 [MagFors] Closed gaps, used more primitives
 // 0 !HISTORY 2017-01-25 [PTadmin] Renamed from s/25931-8h
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // The hub-section which fits a stop bushing base
 // 
@@ -73,8 +74,8 @@ function ldraw_lib__s__2593s02() = [
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 -38 11 0 0 0 0 -11 0 11 0 1-8cylo.dat
   [1,16,0,0,-38,11,0,0,0,0,-11,0,11,0, ldraw_lib__1_8cylo()],
-// 1 16 0 0 -38 1.1 0 0 0 0 -1.1 0 1 0 1-8rin10.dat
-  [1,16,0,0,-38,1.1,0,0,0,0,-1.1,0,1,0, ldraw_lib__1_8rin10()],
+// 1 16 0 0 -38 1.1 0 0 0 0 -1.1 0 1 0 1-8ring10.dat
+  [1,16,0,0,-38,1.1,0,0,0,0,-1.1,0,1,0, ldraw_lib__1_8ring10()],
 // 
 // 0 // Outside hub
 // 1 16 0 0 -13 11 0 0 0 0 -11 0 11 0 1-8cylo.dat
@@ -99,8 +100,8 @@ function ldraw_lib__s__2593s02() = [
   [1,16,0,0,-2,3,0,0,0,0,-3,0,-1,0, ldraw_lib__1_8ring2()],
 // 1 16 0 0 -2 1 0 0 0 0 -1 0 -1 0 1-8ring9.dat
   [1,16,0,0,-2,1,0,0,0,0,-1,0,-1,0, ldraw_lib__1_8ring9()],
-// 1 16 0 0 -2 1 0 0 0 0 -1 0 -1 0 1-8rin10.dat
-  [1,16,0,0,-2,1,0,0,0,0,-1,0,-1,0, ldraw_lib__1_8rin10()],
+// 1 16 0 0 -2 1 0 0 0 0 -1 0 -1 0 1-8ring10.dat
+  [1,16,0,0,-2,1,0,0,0,0,-1,0,-1,0, ldraw_lib__1_8ring10()],
 // 
 // 0 // Inner
 // 4 16 6.36396 -6.36396 -22.5 5.65685 -5.65685 -22.5 7.39124021 -3.06148722 -22.5 8.3085 -3.44361 -22.5
@@ -124,12 +125,12 @@ function ldraw_lib__s__2593s02() = [
   [1,16,0,0,-13,3.5,0,0,0,0,-3.5,0,-1,0, ldraw_lib__1_8ring3()],
 // 1 16 0 0 -23 6.3333 0 0 0 0 -6.3333 0 -1 0 1-8ring2.dat
   [1,16,0,0,-23,6.3333,0,0,0,0,-6.3333,0,-1,0, ldraw_lib__1_8ring2()],
-// 1 16 0 0 -30 1 0 0 0 0 -1 0 -1 0 1-8rin19.dat
-  [1,16,0,0,-30,1,0,0,0,0,-1,0,-1,0, ldraw_lib__1_8rin19()],
+// 1 16 0 0 -30 1 0 0 0 0 -1 0 -1 0 1-8ring19.dat
+  [1,16,0,0,-30,1,0,0,0,0,-1,0,-1,0, ldraw_lib__1_8ring19()],
 // 1 16 0 0 -2 5 0 0 0 0 -5 0 -1 0 1-8ring4.dat
   [1,16,0,0,-2,5,0,0,0,0,-5,0,-1,0, ldraw_lib__1_8ring4()],
-// 1 16 0 0 -22 2.45454 0 0 0 0 -2.454545 0 -1 0 1-8rin10.dat
-  [1,16,0,0,-22,2.45454,0,0,0,0,-2.454545,0,-1,0, ldraw_lib__1_8rin10()],
+// 1 16 0 0 -22 2.45454 0 0 0 0 -2.454545 0 -1 0 1-8ring10.dat
+  [1,16,0,0,-22,2.45454,0,0,0,0,-2.454545,0,-1,0, ldraw_lib__1_8ring10()],
 // 
 // 3 16 34.699 -4.5675 -30 35 0 -30 27 0 -30
   [3,16,34.699,-4.5675,-30,35,0,-30,27,0,-30],

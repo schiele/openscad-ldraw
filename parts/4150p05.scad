@@ -1,13 +1,13 @@
 use <../lib.scad>
 use <../p/4-4ring5.scad>
 use <../p/48/4-4disc.scad>
-use <../p/48/4-4rin24.scad>
+use <../p/48/4-4ring24.scad>
 use <s/4150s01.scad>
 function ldraw_lib__4150p05() = [
 // 0 Tile  2 x  2 Round with Black Exhaust Port Pattern
 // 0 Name: 4150p05.dat
 // 0 Author: Alex Taylor [anathema]
-// 0 !LDRAW_ORG Part UPDATE 2011-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -15,14 +15,15 @@ function ldraw_lib__4150p05() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2011-07-25 [PTadmin] Official Update 2011-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 0 0 0 0 12.4 0 0 0 1 0 0 0 12.4 48\4-4disc.dat
   [1,0,0,0,0,12.4,0,0,0,1,0,0,0,12.4, ldraw_lib__48__4_4disc()],
 // 1 16 0 0 0 3.33333 0 0 0 1 0 0 0 3.33333 4-4ring5.dat
   [1,16,0,0,0,3.33333,0,0,0,1,0,0,0,3.33333, ldraw_lib__4_4ring5()],
-// 1 16 0 0 0 0.66666 0 0 0 1 0 0 0 0.66666 48\4-4rin24.dat
-  [1,16,0,0,0,0.66666,0,0,0,1,0,0,0,0.66666, ldraw_lib__48__4_4rin24()],
+// 1 16 0 0 0 0.66666 0 0 0 1 0 0 0 0.66666 48\4-4ring24.dat
+  [1,16,0,0,0,0.66666,0,0,0,1,0,0,0,0.66666, ldraw_lib__48__4_4ring24()],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4150s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4150s01()],
 // 0 // gradation pattern

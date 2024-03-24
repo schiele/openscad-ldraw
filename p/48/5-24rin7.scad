@@ -1,9 +1,9 @@
 use <../../lib.scad>
 function ldraw_lib__48__5_24rin7() = [
-// 0 Hi-Res Ring  7 x 0.2083
+// 0 ~Hi-Res Ring  7 x 0.2083 (Obsolete)
 // 0 Name: 48\5-24rin7.dat
 // 0 Author: Tim Gould [timgould]
-// 0 !LDRAW_ORG 48_Primitive UPDATE 2012-01
+// 0 !LDRAW_ORG 48_Primitive UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -11,7 +11,8 @@ function ldraw_lib__48__5_24rin7() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Obsolete, use 48\5-24ring7.dat
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 4 16 8 0 0 7.9312 0 1.044 6.9398 0 0.9135 7 0 0
   [4,16,8,0,0,7.9312,0,1.044,6.9398,0,0.9135,7,0,0],

@@ -1,13 +1,13 @@
 use <../lib.scad>
 use <../p/48/4-4ndis.scad>
-use <../p/48/4-4rin17.scad>
-use <../p/48/4-4rin18.scad>
+use <../p/48/4-4ring17.scad>
+use <../p/48/4-4ring18.scad>
 use <s/4198s01.scad>
 function ldraw_lib__4198p07() = [
 // 0 Duplo Brick  2 x  4 x  2 with Rounded Ends with Clock Pattern
 // 0 Name: 4198p07.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
-// 0 !LDRAW_ORG Part UPDATE 2020-03
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -15,18 +15,19 @@ function ldraw_lib__4198p07() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Brick
-// 0 !KEYWORDS bricklink 4198px4, Cargo, Set 1622, Set 1635, Set 2459, Set 2653
-// 0 !KEYWORDS Set 2701, Set 2720, Train
+// 0 !KEYWORDS Cargo, Set 1622, Set 1635, Set 2459, Set 2653, Set 2701, Set 2720
+// 0 !KEYWORDS Train, bricklink 4198px4
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4198s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4198s01()],
-// 1 0 0 48 -40 2 0 0 0 0 -2 0 1 0 48\4-4rin17.dat
-  [1,0,0,48,-40,2,0,0,0,0,-2,0,1,0, ldraw_lib__48__4_4rin17()],
-// 1 0 0 48 -40 2 0 0 0 0 -2 0 1 0 48\4-4rin18.dat
-  [1,0,0,48,-40,2,0,0,0,0,-2,0,1,0, ldraw_lib__48__4_4rin18()],
+// 1 0 0 48 -40 2 0 0 0 0 -2 0 1 0 48\4-4ring17.dat
+  [1,0,0,48,-40,2,0,0,0,0,-2,0,1,0, ldraw_lib__48__4_4ring17()],
+// 1 0 0 48 -40 2 0 0 0 0 -2 0 1 0 48\4-4ring18.dat
+  [1,0,0,48,-40,2,0,0,0,0,-2,0,1,0, ldraw_lib__48__4_4ring18()],
 // 1 16 0 48 -40 38 0 0 0 0 -38 0 1 0 48\4-4ndis.dat
   [1,16,0,48,-40,38,0,0,0,0,-38,0,1,0, ldraw_lib__48__4_4ndis()],
 // 4 15 0 48 -40 -1.39 47.43 -40 -1.5 48 -40 -1.39 48.57 -40

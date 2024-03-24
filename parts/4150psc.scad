@@ -1,34 +1,35 @@
 use <../lib.scad>
 use <../p/4-4ering.scad>
-use <../p/4-4rin39.scad>
+use <../p/4-4ring39.scad>
 use <s/4150s01.scad>
 function ldraw_lib__4150psc() = [
 // 0 Tile  2 x  2 Round with Metallic Silver Dense Fan Pattern
 // 0 Name: 4150psc.dat
 // 0 Author: Evert-Jan Boer [ejboer]
-// 0 !LDRAW_ORG Part UPDATE 2023-04
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Anakin, bricklink 4150px21, Cooling, Coruscant, Engine, Enzo
-// 0 !KEYWORDS Ferrari, Obi-Wan, Set 7133, set 8652, Speeder, Star Wars, SW
-// 0 !KEYWORDS XJ-6 Airspeeder
+// 0 !KEYWORDS Anakin, Cooling, Coruscant, Engine, Enzo, Ferrari, Obi-Wan, SW
+// 0 !KEYWORDS Set 7133, Speeder, Star Wars, XJ-6 Airspeeder, bricklink 4150px21
+// 0 !KEYWORDS set 8652
 // 
 // 0 !HISTORY 2020-12-10 [MagFors] Pattern image created by Jaco van der Molen
 // 0 !HISTORY 2020-12-10 [MagFors] Reduced pattern resolution, added texmap
 // 0 !HISTORY 2023-08-25 [OrionP] Official Update 2023-04
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4150s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4150s01()],
 // 0 !TEXMAP START PLANAR -20 0 20 20 0 20 -20 0 -20 4150psc.png
 // 0 !: 1 16 0 0 0 20 0 0 0 1 0 0 0 20 4-4disc.dat
 // 0 !TEXMAP FALLBACK
-// 1 16 0 0 0 0.5 0 0 0 1 0 0 0 0.5 4-4rin39.dat
-  [1,16,0,0,0,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__4_4rin39()],
+// 1 16 0 0 0 0.5 0 0 0 1 0 0 0 0.5 4-4ring39.dat
+  [1,16,0,0,0,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__4_4ring39()],
 // 1 80 0 0 0 19.5 0 0 0 1 0 0 0 19.5 4-4ering.dat
   [1,80,0,0,0,19.5,0,0,0,1,0,0,0,19.5, ldraw_lib__4_4ering()],
 // 4 80 -18.411 0 1.813 -18.3 0 2.715 -19.5 0 0 -19.026 0 0.627

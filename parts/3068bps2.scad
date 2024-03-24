@@ -2,10 +2,10 @@ use <../lib.scad>
 use <../p/1-4tang.scad>
 use <../p/2-4disc.scad>
 use <../p/2-4ndis.scad>
-use <../p/2-4rin10.scad>
+use <../p/2-4ring10.scad>
 use <../p/4-4ering.scad>
 use <../p/4-4ring9.scad>
-use <../p/48/1-4rin18.scad>
+use <../p/48/1-4ring18.scad>
 use <../p/48/1-6chrd.scad>
 use <../p/48/1-6disc.scad>
 use <../p/48/2-4aring.scad>
@@ -15,7 +15,7 @@ function ldraw_lib__3068bps2() = [
 // 0 Tile  2 x  2 with SW Pod Racer Pattern
 // 0 Name: 3068bps2.dat
 // 0 Author: Ronald Scott Moody [rmoody]
-// 0 !LDRAW_ORG Part UPDATE 2022-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -30,7 +30,8 @@ function ldraw_lib__3068bps2() = [
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
 // 0 !HISTORY 2020-06-04 [Sirio] Updated the pattern dimension and the use of primitives: removed ringr.dat or ringrr.dat, reduced number of overlapping surfaces
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Subparts
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3068bs01.dat
@@ -54,16 +55,16 @@ function ldraw_lib__3068bps2() = [
   [1,16,0,0,0,1.602,0,0,0,1,0,0,0,1.602, ldraw_lib__4_4ring9()],
 // 1 16 0 0 0 16.02 0 0 0 1 0 0 0 16.02 48\2-4aring.dat
   [1,16,0,0,0,16.02,0,0,0,1,0,0,0,16.02, ldraw_lib__48__2_4aring()],
-// 1 2 0 0 0 1.1 0 0 0 1 0 0 0 1.1 2-4rin10.dat
-  [1,2,0,0,0,1.1,0,0,0,1,0,0,0,1.1, ldraw_lib__2_4rin10()],
+// 1 2 0 0 0 1.1 0 0 0 1 0 0 0 1.1 2-4ring10.dat
+  [1,2,0,0,0,1.1,0,0,0,1,0,0,0,1.1, ldraw_lib__2_4ring10()],
 // 1 2 0 0 0 1.1 0 0 0 1 0 0 0 -1.1 48\2-4ring10.dat
   [1,2,0,0,0,1.1,0,0,0,1,0,0,0,-1.1, ldraw_lib__48__2_4ring10()],
 // 1 2 0 0 0 -16.02 0 0 0 1 0 0 0 -16.02 2-4ndis.dat
   [1,2,0,0,0,-16.02,0,0,0,1,0,0,0,-16.02, ldraw_lib__2_4ndis()],
-// 1 2 0 0 0 .89 0 0 0 1 0 0 0 .89 48\1-4rin18.dat
-  [1,2,0,0,0,.89,0,0,0,1,0,0,0,.89, ldraw_lib__48__1_4rin18()],
-// 1 2 0 0 0 0 0 -.89 0 1 0 .89 0 0 48\1-4rin18.dat
-  [1,2,0,0,0,0,0,-.89,0,1,0,.89,0,0, ldraw_lib__48__1_4rin18()],
+// 1 2 0 0 0 .89 0 0 0 1 0 0 0 .89 48\1-4ring18.dat
+  [1,2,0,0,0,.89,0,0,0,1,0,0,0,.89, ldraw_lib__48__1_4ring18()],
+// 1 2 0 0 0 0 0 -.89 0 1 0 .89 0 0 48\1-4ring18.dat
+  [1,2,0,0,0,0,0,-.89,0,1,0,.89,0,0, ldraw_lib__48__1_4ring18()],
 // 0 // Brown faces
 // 3 6 -13.4156 0 20 -13.4156 0 10.2942 -11.9572 0 11.9572
   [3,6,-13.4156,0,20,-13.4156,0,10.2942,-11.9572,0,11.9572],

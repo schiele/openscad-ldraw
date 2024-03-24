@@ -10,7 +10,7 @@ use <../../p/48/1-12ring19.scad>
 use <../../p/48/1-4chrd.scad>
 use <../../p/48/1-4con1.scad>
 use <../../p/48/1-4edge.scad>
-use <../../p/48/1-4rin37.scad>
+use <../../p/48/1-4ring37.scad>
 use <../../p/box3u4p.scad>
 use <../../p/rect.scad>
 use <../../p/rect1.scad>
@@ -20,7 +20,7 @@ function ldraw_lib__s__3943s01() = [
 // 0 ~Cone  4 x  4 x  2 - Inside Quarter
 // 0 Name: s\3943s01.dat
 // 0 Author: Magnus Forsberg [MagFors]
-// 0 !LDRAW_ORG Subpart UPDATE 2022-02
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -28,7 +28,8 @@ function ldraw_lib__s__3943s01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2022-03-06 [PTadmin] Official Update 2022-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 10 4 0 2.3977 0 0 0 40 0 0 0 2 box3u4p.dat
   [1,16,10,4,0,2.3977,0,0,0,40,0,0,0,2, ldraw_lib__box3u4p()],
@@ -72,8 +73,8 @@ function ldraw_lib__s__3943s01() = [
   [1,16,20,19,0,0,0,-6,0,5,0,6,0,0, ldraw_lib__4_4cyli()],
 // 
 // 0 // thin bottom edge
-// 1 16 0 44 0 1 0 0 0 -1 0 0 0 1 48\1-4rin37.dat
-  [1,16,0,44,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__48__1_4rin37()],
+// 1 16 0 44 0 1 0 0 0 -1 0 0 0 1 48\1-4ring37.dat
+  [1,16,0,44,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__48__1_4ring37()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 44 0 38 0 0 0 4 0 0 0 38 48\1-12cylo.dat

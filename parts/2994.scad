@@ -1,7 +1,7 @@
 use <../lib.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4edge.scad>
-use <../p/4-4rin11.scad>
+use <../p/4-4ring11.scad>
 use <../p/4-4ring3.scad>
 use <../p/4-4ring4.scad>
 use <../p/axlehol2.scad>
@@ -11,7 +11,7 @@ function ldraw_lib__2994() = [
 // 0 Wheel 12 x 20 with Technic Axle Hole and 6 Pegholes
 // 0 Name: 2994.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2011-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CW
@@ -21,7 +21,8 @@ function ldraw_lib__2994() = [
 // 0 !KEYWORDS 30.4 x 14
 // 
 // 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Axle hole
 // 
@@ -132,10 +133,10 @@ function ldraw_lib__2994() = [
   [1,16,0,0,7.5,7.5,0,0,0,0,7.5,0,-1,0, ldraw_lib__4_4ring3()],
 // 1 16 0 0 4 -7.5 0 0 0 0 7.5 0 1 0 4-4ring3.dat
   [1,16,0,0,4,-7.5,0,0,0,0,7.5,0,1,0, ldraw_lib__4_4ring3()],
-// 1 16 0 0 12.5 -2.083 0 0 0 0 2.083 0 1 0 4-4rin11.dat
-  [1,16,0,0,12.5,-2.083,0,0,0,0,2.083,0,1,0, ldraw_lib__4_4rin11()],
-// 1 16 0 0 -12.5 2.083 0 0 0 0 2.083 0 -1 0 4-4rin11.dat
-  [1,16,0,0,-12.5,2.083,0,0,0,0,2.083,0,-1,0, ldraw_lib__4_4rin11()],
+// 1 16 0 0 12.5 -2.083 0 0 0 0 2.083 0 1 0 4-4ring11.dat
+  [1,16,0,0,12.5,-2.083,0,0,0,0,2.083,0,1,0, ldraw_lib__4_4ring11()],
+// 1 16 0 0 -12.5 2.083 0 0 0 0 2.083 0 -1 0 4-4ring11.dat
+  [1,16,0,0,-12.5,2.083,0,0,0,0,2.083,0,-1,0, ldraw_lib__4_4ring11()],
 // 1 16 0 0 -7.5 23 0 0 0 0 23 0 -5 0 4-4cyli.dat
   [1,16,0,0,-7.5,23,0,0,0,0,23,0,-5,0, ldraw_lib__4_4cyli()],
 // 1 16 0 0 12.5 23 0 0 0 0 23 0 -5 0 4-4cyli.dat

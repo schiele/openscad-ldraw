@@ -1,6 +1,6 @@
 use <../lib.scad>
 use <../p/1-4cylo.scad>
-use <../p/1-4rin39.scad>
+use <../p/1-4ring39.scad>
 use <../p/1-4ring8.scad>
 use <../p/1-4ring9.scad>
 use <../p/box4o8a.scad>
@@ -10,7 +10,7 @@ function ldraw_lib__94318c01() = [
 // 0 Sheet Fabric  4.3 x 30.7 Pop-up Roof with 10 Rectangular Holes (Formed)
 // 0 Name: 94318c01.dat
 // 0 Author: Frank Engel [lostcontinent]
-// 0 !LDRAW_ORG Shortcut UPDATE 2020-03
+// 0 !LDRAW_ORG Shortcut UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -22,7 +22,8 @@ function ldraw_lib__94318c01() = [
 // 
 // 0 !HISTORY 2020-05-17 [Holly-Wood] Inlined subfiles, fixed t-junk, changed winding to CCW, changed origin
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Beginning
 // 
@@ -119,13 +120,13 @@ function ldraw_lib__94318c01() = [
 // 0 // Top
 // 1 16 57 0 -76 0 0 .65 0 1 0 -.65 0 0 1-4ring8.dat
   [1,16,57,0,-76,0,0,.65,0,1,0,-.65,0,0, ldraw_lib__1_4ring8()],
-// 1 16 57 0 -76 0 0 .15 0 1 0 -.15 0 0 1-4rin39.dat
-  [1,16,57,0,-76,0,0,.15,0,1,0,-.15,0,0, ldraw_lib__1_4rin39()],
+// 1 16 57 0 -76 0 0 .15 0 1 0 -.15 0 0 1-4ring39.dat
+  [1,16,57,0,-76,0,0,.15,0,1,0,-.15,0,0, ldraw_lib__1_4ring39()],
 // 0 // Bottom
 // 1 16 57 86 -76 0 0 .65 0 -1 0 -.65 0 0 1-4ring8.dat
   [1,16,57,86,-76,0,0,.65,0,-1,0,-.65,0,0, ldraw_lib__1_4ring8()],
-// 1 16 57 86 -76 0 0 .15 0 -1 0 -.15 0 0 1-4rin39.dat
-  [1,16,57,86,-76,0,0,.15,0,-1,0,-.15,0,0, ldraw_lib__1_4rin39()],
+// 1 16 57 86 -76 0 0 .15 0 -1 0 -.15 0 0 1-4ring39.dat
+  [1,16,57,86,-76,0,0,.15,0,-1,0,-.15,0,0, ldraw_lib__1_4ring39()],
 // 0 // End.
 // 1 16 57 43 -81.6 0 -3 0 43 0 0 0 0 .4 box4o8a.dat
   [1,16,57,43,-81.6,0,-3,0,43,0,0,0,0,.4, ldraw_lib__box4o8a()],

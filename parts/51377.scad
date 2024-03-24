@@ -15,10 +15,10 @@ use <../p/48/4-4aring.scad>
 use <../p/48/4-4con2.scad>
 use <../p/48/4-4cyli.scad>
 use <../p/48/4-4edge.scad>
-use <../p/48/4-4rin18.scad>
-use <../p/48/4-4rin19.scad>
-use <../p/48/4-4rin20.scad>
+use <../p/48/4-4ring18.scad>
+use <../p/48/4-4ring19.scad>
 use <../p/48/4-4ring2.scad>
+use <../p/48/4-4ring20.scad>
 use <../p/48/4-4ring5.scad>
 use <../p/5-8cyli.scad>
 use <../p/5-8edge.scad>
@@ -30,7 +30,7 @@ function ldraw_lib__51377() = [
 // 0 Wheel Rim 14 x 18 with  8 Spokes
 // 0 Name: 51377.dat
 // 0 Author: Donald Sutter [technog]
-// 0 !LDRAW_ORG Part UPDATE 2013-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -39,7 +39,8 @@ function ldraw_lib__51377() = [
 // 
 // 0 !HISTORY 2012-07-31 [MagFors] Retitled, corrected file ending, added cond-lines
 // 0 !HISTORY 2013-07-21 [PTadmin] Official Update 2013-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Nomenclature: width_(mm) x rim_diameter_(mm) [optional qualifier]
 // 
@@ -65,8 +66,8 @@ function ldraw_lib__51377() = [
   [1,16,0,0,5,0,0,5,5,0,0,0,-1,0, ldraw_lib__48__4_4ring2()],
 // 1 16 0 0 5 0 0 3 3 0 0 0 -1 0 48\4-4ring5.dat
   [1,16,0,0,5,0,0,3,3,0,0,0,-1,0, ldraw_lib__48__4_4ring5()],
-// 1 16 0 0 5 0 0 1 1 0 0 0 -1 0 48\4-4rin18.dat
-  [1,16,0,0,5,0,0,1,1,0,0,0,-1,0, ldraw_lib__48__4_4rin18()],
+// 1 16 0 0 5 0 0 1 1 0 0 0 -1 0 48\4-4ring18.dat
+  [1,16,0,0,5,0,0,1,1,0,0,0,-1,0, ldraw_lib__48__4_4ring18()],
 // 1 16 0 0 5 0 0 19 19 0 0 0 1 0 48\4-4edge.dat
   [1,16,0,0,5,0,0,19,19,0,0,0,1,0, ldraw_lib__48__4_4edge()],
 // 0 BFC INVERTNEXT
@@ -75,10 +76,10 @@ function ldraw_lib__51377() = [
   [1,16,0,0,5,0,0,19,19,0,0,0,12,0, ldraw_lib__48__4_4cyli()],
 // 1 16 0 0 17 0 0 19 19 0 0 0 1 0 48\4-4edge.dat
   [1,16,0,0,17,0,0,19,19,0,0,0,1,0, ldraw_lib__48__4_4edge()],
-// 1 16 0 0 17 0 0 1 1 0 0 0 -1 0 48\4-4rin19.dat
-  [1,16,0,0,17,0,0,1,1,0,0,0,-1,0, ldraw_lib__48__4_4rin19()],
-// 1 16 0 0 17 0 0 1 1 0 0 0 -1 0 48\4-4rin20.dat
-  [1,16,0,0,17,0,0,1,1,0,0,0,-1,0, ldraw_lib__48__4_4rin20()],
+// 1 16 0 0 17 0 0 1 1 0 0 0 -1 0 48\4-4ring19.dat
+  [1,16,0,0,17,0,0,1,1,0,0,0,-1,0, ldraw_lib__48__4_4ring19()],
+// 1 16 0 0 17 0 0 1 1 0 0 0 -1 0 48\4-4ring20.dat
+  [1,16,0,0,17,0,0,1,1,0,0,0,-1,0, ldraw_lib__48__4_4ring20()],
 // 1 16 0 0 17 0 0 21 21 0 0 0 1 0 48\4-4edge.dat
   [1,16,0,0,17,0,0,21,21,0,0,0,1,0, ldraw_lib__48__4_4edge()],
 // 1 16 0 0 4 0 0 21 21 0 0 0 13 0 48\4-4cyli.dat
@@ -171,10 +172,10 @@ function ldraw_lib__51377() = [
   [1,16,0,0,-17,0,0,21,21,0,0,0,13,0, ldraw_lib__48__4_4cyli()],
 // 1 16 0 0 -17 0 0 21 21 0 0 0 1 0 48\4-4edge.dat
   [1,16,0,0,-17,0,0,21,21,0,0,0,1,0, ldraw_lib__48__4_4edge()],
-// 1 16 0 0 -17 0 0 -1 1 0 0 0 1 0 48\4-4rin20.dat
-  [1,16,0,0,-17,0,0,-1,1,0,0,0,1,0, ldraw_lib__48__4_4rin20()],
-// 1 16 0 0 -17 0 0 -1 1 0 0 0 1 0 48\4-4rin19.dat
-  [1,16,0,0,-17,0,0,-1,1,0,0,0,1,0, ldraw_lib__48__4_4rin19()],
+// 1 16 0 0 -17 0 0 -1 1 0 0 0 1 0 48\4-4ring20.dat
+  [1,16,0,0,-17,0,0,-1,1,0,0,0,1,0, ldraw_lib__48__4_4ring20()],
+// 1 16 0 0 -17 0 0 -1 1 0 0 0 1 0 48\4-4ring19.dat
+  [1,16,0,0,-17,0,0,-1,1,0,0,0,1,0, ldraw_lib__48__4_4ring19()],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\51377s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__51377s01()],
 // 1 16 0 0 0 0.7071 -0.7071 0 0.7071 0.7071 0 0 0 1 s\51377s01.dat

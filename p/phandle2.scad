@@ -4,14 +4,14 @@ use <1-4ndis.scad>
 use <2-4cylo.scad>
 use <2-4ring2.scad>
 use <3-16cylo.scad>
-use <3-16rin2.scad>
+use <3-16ring2.scad>
 use <rect2p.scad>
 use <rect3.scad>
 function ldraw_lib__phandle2() = [
 // 0 Bar Handle Attachment with 2 Open Sides
 // 0 Name: phandle2.dat
 // 0 Author: Magnus Forsberg [MagFors]
-// 0 !LDRAW_ORG Primitive UPDATE 2024-01
+// 0 !LDRAW_ORG Primitive UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -19,6 +19,8 @@ function ldraw_lib__phandle2() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2024-01-29 [OrionP] Official Update 2024-01
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 7.8015 0 0 3 0 1 0 -2.1985 0 0 rect2p.dat
   [1,16,0,0,7.8015,0,0,3,0,1,0,-2.1985,0,0, ldraw_lib__rect2p()],
@@ -39,8 +41,8 @@ function ldraw_lib__phandle2() = [
   [1,16,3,2,0,0,-1,0,0,0,-4,4,0,0, ldraw_lib__1_16tang()],
 // 1 16 3 2 0 0 -1 0 2 0 0 0 0 -2 2-4ring2.dat
   [1,16,3,2,0,0,-1,0,2,0,0,0,0,-2, ldraw_lib__2_4ring2()],
-// 1 16 3 2 0 0 -1 0 -2 0 0 0 0 2 3-16rin2.dat
-  [1,16,3,2,0,0,-1,0,-2,0,0,0,0,2, ldraw_lib__3_16rin2()],
+// 1 16 3 2 0 0 -1 0 -2 0 0 0 0 2 3-16ring2.dat
+  [1,16,3,2,0,0,-1,0,-2,0,0,0,0,2, ldraw_lib__3_16ring2()],
 // 4 16 3 8 10 3 0 10 3 2 4 3 6 4
   [4,16,3,8,10,3,0,10,3,2,4,3,6,4],
 // 4 16 3 8 10 3 6 4 3 6 0 3 8 0
@@ -56,8 +58,8 @@ function ldraw_lib__phandle2() = [
   [1,16,-3,2,0,0,1,0,0,0,-4,4,0,0, ldraw_lib__1_16tang()],
 // 1 16 -3 2 0 0 1 0 2 0 0 0 0 -2 2-4ring2.dat
   [1,16,-3,2,0,0,1,0,2,0,0,0,0,-2, ldraw_lib__2_4ring2()],
-// 1 16 -3 2 0 0 1 0 -2 0 0 0 0 2 3-16rin2.dat
-  [1,16,-3,2,0,0,1,0,-2,0,0,0,0,2, ldraw_lib__3_16rin2()],
+// 1 16 -3 2 0 0 1 0 -2 0 0 0 0 2 3-16ring2.dat
+  [1,16,-3,2,0,0,1,0,-2,0,0,0,0,2, ldraw_lib__3_16ring2()],
 // 4 16 -3 2 4 -3 0 10 -3 8 10 -3 6 4
   [4,16,-3,2,4,-3,0,10,-3,8,10,-3,6,4],
 // 4 16 -3 6 0 -3 6 4 -3 8 10 -3 8 0

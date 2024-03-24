@@ -4,7 +4,7 @@ use <../../p/1-4cyli.scad>
 use <../../p/1-4ndis.scad>
 use <../../p/1-4ring8.scad>
 use <../../p/1-8edge.scad>
-use <../../p/1-8rin18.scad>
+use <../../p/1-8ring18.scad>
 use <../../p/2-4cyli.scad>
 use <../../p/2-4disc.scad>
 use <../../p/2-4edge.scad>
@@ -34,7 +34,7 @@ function ldraw_lib__s__61904s01() = [
 // 0 ~Technic Linear Actuator  2 x  2 Bracket Hinged Mount
 // 0 Name: s\61904s01.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Subpart UPDATE 2019-03
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -44,7 +44,8 @@ function ldraw_lib__s__61904s01() = [
 // 0 !HISTORY 2010-07-05 [PTadmin] Official Update 2010-02
 // 0 !HISTORY 2019-11-13 [cwdee] Update description
 // 0 !HISTORY 2019-12-27 [PTadmin] Official Update 2019-03
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 -20 20 0 0 10 0 -1 0 0 0 0 1 npeghol4.dat
   [1,16,-20,20,0,0,10,0,-1,0,0,0,0,1, ldraw_lib__npeghol4()],
@@ -450,8 +451,8 @@ function ldraw_lib__s__61904s01() = [
   [4,16,-10,-15.73,10,-10,-15.73,20,-10,-15.28,20,-10,-15.28,10],
 // 1 16 0 0 20 -17.554 0 -7.271 -7.271 0 17.554 0 -10 0 3-16cyli.dat
   [1,16,0,0,20,-17.554,0,-7.271,-7.271,0,17.554,0,-10,0, ldraw_lib__3_16cyli()],
-// 1 16 0 0 20 -1 0 0 0 0 1 0 -1 0 1-8rin18.dat
-  [1,16,0,0,20,-1,0,0,0,0,1,0,-1,0, ldraw_lib__1_8rin18()],
+// 1 16 0 0 20 -1 0 0 0 0 1 0 -1 0 1-8ring18.dat
+  [1,16,0,0,20,-1,0,0,0,0,1,0,-1,0, ldraw_lib__1_8ring18()],
 // 1 16 0 0 20 -17.554 0 -7.271 -7.271 0 17.554 0 -1 0 1-8edge.dat
   [1,16,0,0,20,-17.554,0,-7.271,-7.271,0,17.554,0,-1,0, ldraw_lib__1_8edge()],
 // 4 16 0 9 0 0 10 0 -14 6.36 0 -6 6.36 0

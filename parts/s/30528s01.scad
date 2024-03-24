@@ -11,9 +11,9 @@ use <../../p/1-8ndis.scad>
 use <../../p/1-8ring9.scad>
 use <../../p/1-8tang.scad>
 use <../../p/3-16cylo.scad>
-use <../../p/3-16rin3.scad>
-use <../../p/3-16rin5.scad>
-use <../../p/3-16rin9.scad>
+use <../../p/3-16ring3.scad>
+use <../../p/3-16ring5.scad>
+use <../../p/3-16ring9.scad>
 use <../../p/3-8ring9.scad>
 use <../../p/5-16cylo.scad>
 use <../../p/box2-5.scad>
@@ -22,7 +22,7 @@ function ldraw_lib__s__30528s01() = [
 // 0 ~Arch  1 x  8 x  6 - Quarter Arch
 // 0 Name: s\30528s01.dat
 // 0 Author: Massimo Maso [Sirio]
-// 0 !LDRAW_ORG Subpart UPDATE 2022-01
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -30,7 +30,8 @@ function ldraw_lib__s__30528s01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Primitives
 // 
@@ -50,18 +51,18 @@ function ldraw_lib__s__30528s01() = [
   [1,16,40,10,10,0,0,10,10,0,0,0,-8,0, ldraw_lib__1_8cylo()],
 // 1 16 40 10 2 0 0 10 10 0 0 0 -1 0 1-8ndis.dat
   [1,16,40,10,2,0,0,10,10,0,0,0,-1,0, ldraw_lib__1_8ndis()],
-// 1 16 40 10 2 0 0 -2 2 0 0 0 -1 0 3-16rin5.dat
-  [1,16,40,10,2,0,0,-2,2,0,0,0,-1,0, ldraw_lib__3_16rin5()],
+// 1 16 40 10 2 0 0 -2 2 0 0 0 -1 0 3-16ring5.dat
+  [1,16,40,10,2,0,0,-2,2,0,0,0,-1,0, ldraw_lib__3_16ring5()],
 // 1 16 40 10 2 -10 0 0 0 0 10 0 1 0 1-4edge.dat
   [1,16,40,10,2,-10,0,0,0,0,10,0,1,0, ldraw_lib__1_4edge()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 40 10 10 0 0 -12 12 0 0 0 -8 0 3-16cylo.dat
   [1,16,40,10,10,0,0,-12,12,0,0,0,-8,0, ldraw_lib__3_16cylo()],
-// 1 16 40 10 10 0 0 -4 4 0 0 0 -1 0 3-16rin3.dat
-  [1,16,40,10,10,0,0,-4,4,0,0,0,-1,0, ldraw_lib__3_16rin3()],
-// 1 16 60 106 10 -1 0 0 0 0 -1 0 -1 0 3-16rin9.dat
-  [1,16,60,106,10,-1,0,0,0,0,-1,0,-1,0, ldraw_lib__3_16rin9()],
+// 1 16 40 10 10 0 0 -4 4 0 0 0 -1 0 3-16ring3.dat
+  [1,16,40,10,10,0,0,-4,4,0,0,0,-1,0, ldraw_lib__3_16ring3()],
+// 1 16 60 106 10 -1 0 0 0 0 -1 0 -1 0 3-16ring9.dat
+  [1,16,60,106,10,-1,0,0,0,0,-1,0,-1,0, ldraw_lib__3_16ring9()],
 // 1 16 60 106 10 -1 0 0 0 0 1 0 -1 0 1-8ring9.dat
   [1,16,60,106,10,-1,0,0,0,0,1,0,-1,0, ldraw_lib__1_8ring9()],
 // 1 16 60 106 10 0 0 1 1 0 0 0 -1 0 1-4ring9.dat

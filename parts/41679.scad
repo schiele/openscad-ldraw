@@ -9,11 +9,11 @@ use <../p/2-4ndis.scad>
 use <../p/2-4ring2.scad>
 use <../p/3-4edge.scad>
 use <../p/4-4cyli.scad>
-use <../p/4-4rin15.scad>
-use <../p/4-4rin16.scad>
+use <../p/4-4ring15.scad>
+use <../p/4-4ring16.scad>
 use <../p/4-4ring2.scad>
 use <../p/4-4ring8.scad>
-use <../p/48/1-4rin16.scad>
+use <../p/48/1-4ring16.scad>
 use <../p/48/4-4ring8.scad>
 use <../p/axl2hole.scad>
 use <../p/axlehol4.scad>
@@ -27,7 +27,7 @@ function ldraw_lib__41679() = [
 // 0 Technic Beam  4 x  0.5 Liftarm with Click Rotation Hinge Half
 // 0 Name: 41679.dat
 // 0 Author: Guy Vivan [guyvivan]
-// 0 !LDRAW_ORG Part UPDATE 2012-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -35,7 +35,8 @@ function ldraw_lib__41679() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Needs Work: Rivets modelled only as lines
 // 
@@ -379,12 +380,12 @@ function ldraw_lib__41679() = [
   [1,16,0,0,0,-10.6066,0,-10.6066,0,1,0,10.6066,0,-10.6066, ldraw_lib__3_4edge()],
 // 1 16 0 0 0 5.74025 0 -13.8582 0 1 0 13.8582 0 5.74025 1-8edge.dat
   [1,16,0,0,0,5.74025,0,-13.8582,0,1,0,13.8582,0,5.74025, ldraw_lib__1_8edge()],
-// 1 16 0 0 0 -1 0 0 0 -1 0 0 0 -1 4-4rin15.dat
-  [1,16,0,0,0,-1,0,0,0,-1,0,0,0,-1, ldraw_lib__4_4rin15()],
-// 1 16 0 0 0 -1 0 0 0 -1 0 0 0 -1 4-4rin16.dat
-  [1,16,0,0,0,-1,0,0,0,-1,0,0,0,-1, ldraw_lib__4_4rin16()],
-// 1 16 0 0 0 0.707107 0 -0.707107 0 -1 0 0.707107 0 0.707107 48\1-4rin16.dat
-  [1,16,0,0,0,0.707107,0,-0.707107,0,-1,0,0.707107,0,0.707107, ldraw_lib__48__1_4rin16()],
+// 1 16 0 0 0 -1 0 0 0 -1 0 0 0 -1 4-4ring15.dat
+  [1,16,0,0,0,-1,0,0,0,-1,0,0,0,-1, ldraw_lib__4_4ring15()],
+// 1 16 0 0 0 -1 0 0 0 -1 0 0 0 -1 4-4ring16.dat
+  [1,16,0,0,0,-1,0,0,0,-1,0,0,0,-1, ldraw_lib__4_4ring16()],
+// 1 16 0 0 0 0.707107 0 -0.707107 0 -1 0 0.707107 0 0.707107 48\1-4ring16.dat
+  [1,16,0,0,0,0.707107,0,-0.707107,0,-1,0,0.707107,0,0.707107, ldraw_lib__48__1_4ring16()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 0 12 0 0 0 -12 0 0 0 -12 t04o2500.dat

@@ -13,7 +13,7 @@ use <../p/48/1-8chrd.scad>
 use <../p/48/4-4con27.scad>
 use <../p/48/4-4cyli.scad>
 use <../p/48/4-4edge.scad>
-use <../p/48/4-4rin26.scad>
+use <../p/48/4-4ring26.scad>
 use <../p/stud2a.scad>
 use <../p/stud4.scad>
 use <../p/toothl.scad>
@@ -21,14 +21,14 @@ function ldraw_lib__644() = [
 // 0 Technic Gear 42 Large Tooth
 // 0 Name: 644.dat
 // 0 Author: Tore Eriksson [Tore_Eriksson]
-// 0 !LDRAW_ORG Part UPDATE 2009-03
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS gear, pre-technic, Samsonite
+// 0 !KEYWORDS Samsonite, gear, pre-technic
 // 
 // 0 !CMDLINE -c4
 // 
@@ -39,7 +39,8 @@ function ldraw_lib__644() = [
 // 0 !HISTORY 2008-07-08 [cwdee] Moved from 744.dat and rotated about Y (2005-01-04)
 // 0 !HISTORY 2009-12-19 [cwdee] Added missing edge lines
 // 0 !HISTORY 2009-12-29 [PTadmin] Official Update 2009-03
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 -6 0 0 112 112 0 0 0 1 0 48\4-4edge.dat
   [1,16,0,0,-6,0,0,112,112,0,0,0,1,0, ldraw_lib__48__4_4edge()],
@@ -95,8 +96,8 @@ function ldraw_lib__644() = [
   [1,16,0,0,-6,-96.0835,0,-39.7991,-39.7991,0,96.0835,0,-1,0, ldraw_lib__48__1_8chrd()],
 // 1 16 0 0 -6 -39.7991 0 -96.0835 -96.0835 0 39.7991 0 -1 0 48\1-8chrd.dat
   [1,16,0,0,-6,-39.7991,0,-96.0835,-96.0835,0,39.7991,0,-1,0, ldraw_lib__48__1_8chrd()],
-// 1 16 0 0 9 0 0 4 4 0 0 0 -1 0 48\4-4rin26.dat
-  [1,16,0,0,9,0,0,4,4,0,0,0,-1,0, ldraw_lib__48__4_4rin26()],
+// 1 16 0 0 9 0 0 4 4 0 0 0 -1 0 48\4-4ring26.dat
+  [1,16,0,0,9,0,0,4,4,0,0,0,-1,0, ldraw_lib__48__4_4ring26()],
 // 1 16 0 0 -9 0 0 8 8 0 0 0 -1 0 4-4edge.dat
   [1,16,0,0,-9,0,0,8,8,0,0,0,-1,0, ldraw_lib__4_4edge()],
 // 1 16 0 0 -1 -7.39104 0 -3.06147 -3.06147 0 7.39104 0 -1 0 1-8edge.dat

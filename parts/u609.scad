@@ -4,13 +4,13 @@ use <../p/1-4cylc.scad>
 use <../p/1-4cylo.scad>
 use <../p/1-4edge.scad>
 use <../p/1-4ndis.scad>
-use <../p/2-4rin10.scad>
+use <../p/2-4ring10.scad>
 use <../p/3-8chrd.scad>
 use <../p/3-8cylo.scad>
 use <../p/4-4con3.scad>
 use <../p/4-4cylc.scad>
 use <../p/4-4cylo.scad>
-use <../p/4-4rin10.scad>
+use <../p/4-4ring10.scad>
 use <../p/4-4ring4.scad>
 use <../p/box2-5.scad>
 use <../p/box3u2p.scad>
@@ -24,7 +24,7 @@ function ldraw_lib__u609() = [
 // 0 Brick  1 x  4 x  2 Bellshaped with Headlights
 // 0 Name: u609.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2015-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -34,7 +34,8 @@ function ldraw_lib__u609() = [
 // 0 !KEYWORDS Car, Engine, Fabuland, Jalopy, Motor, Vehicle
 // 
 // 0 !HISTORY 2015-10-11 [PTadmin] Official Update 2015-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 0 0 1 0 1 0 -1 0 0 stug-2x1.dat
   [1,16,0,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__stug_2x1()],
@@ -248,10 +249,10 @@ function ldraw_lib__u609() = [
   [1,16,30,20,-6,0,0,-10,10,0,0,0,-1,0, ldraw_lib__1_4ndis()],
 // 1 16 30 20 2 0 0 -10 10 0 0 0 1 0 1-4ndis.dat
   [1,16,30,20,2,0,0,-10,10,0,0,0,1,0, ldraw_lib__1_4ndis()],
-// 1 16 30 20 -10 -0.70711 0 0.70711 -0.70711 0 -0.70711 0 -1 0 2-4rin10.dat
-  [1,16,30,20,-10,-0.70711,0,0.70711,-0.70711,0,-0.70711,0,-1,0, ldraw_lib__2_4rin10()],
-// 1 16 30 20 -15 0 0 1 -1 0 0 0 1 0 4-4rin10.dat
-  [1,16,30,20,-15,0,0,1,-1,0,0,0,1,0, ldraw_lib__4_4rin10()],
+// 1 16 30 20 -10 -0.70711 0 0.70711 -0.70711 0 -0.70711 0 -1 0 2-4ring10.dat
+  [1,16,30,20,-10,-0.70711,0,0.70711,-0.70711,0,-0.70711,0,-1,0, ldraw_lib__2_4ring10()],
+// 1 16 30 20 -15 0 0 1 -1 0 0 0 1 0 4-4ring10.dat
+  [1,16,30,20,-15,0,0,1,-1,0,0,0,1,0, ldraw_lib__4_4ring10()],
 // 1 16 30 20 -15 0 0 2 2 0 0 0 1 0 4-4ring4.dat
   [1,16,30,20,-15,0,0,2,2,0,0,0,1,0, ldraw_lib__4_4ring4()],
 // 0 BFC INVERTNEXT
@@ -432,10 +433,10 @@ function ldraw_lib__u609() = [
   [1,16,-30,20,-6,0,0,10,10,0,0,0,-1,0, ldraw_lib__1_4ndis()],
 // 1 16 -30 20 2 0 0 10 10 0 0 0 1 0 1-4ndis.dat
   [1,16,-30,20,2,0,0,10,10,0,0,0,1,0, ldraw_lib__1_4ndis()],
-// 1 16 -30 20 -10 0.70711 0 -0.70711 -0.70711 0 -0.70711 0 -1 0 2-4rin10.dat
-  [1,16,-30,20,-10,0.70711,0,-0.70711,-0.70711,0,-0.70711,0,-1,0, ldraw_lib__2_4rin10()],
-// 1 16 -30 20 -15 0 0 -1 -1 0 0 0 1 0 4-4rin10.dat
-  [1,16,-30,20,-15,0,0,-1,-1,0,0,0,1,0, ldraw_lib__4_4rin10()],
+// 1 16 -30 20 -10 0.70711 0 -0.70711 -0.70711 0 -0.70711 0 -1 0 2-4ring10.dat
+  [1,16,-30,20,-10,0.70711,0,-0.70711,-0.70711,0,-0.70711,0,-1,0, ldraw_lib__2_4ring10()],
+// 1 16 -30 20 -15 0 0 -1 -1 0 0 0 1 0 4-4ring10.dat
+  [1,16,-30,20,-15,0,0,-1,-1,0,0,0,1,0, ldraw_lib__4_4ring10()],
 // 1 16 -30 20 -15 0 0 -2 2 0 0 0 1 0 4-4ring4.dat
   [1,16,-30,20,-15,0,0,-2,2,0,0,0,1,0, ldraw_lib__4_4ring4()],
 // 0 BFC INVERTNEXT

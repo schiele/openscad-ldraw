@@ -5,8 +5,8 @@ use <../../p/1-4chrd.scad>
 use <../../p/1-4cyli.scad>
 use <../../p/1-4edge.scad>
 use <../../p/1-4ndis.scad>
-use <../../p/1-4rin19.scad>
 use <../../p/1-4ring1.scad>
+use <../../p/1-4ring19.scad>
 use <../../p/1-4ring2.scad>
 use <../../p/1-4ring3.scad>
 use <../../p/1-4ring5.scad>
@@ -21,7 +21,7 @@ use <../../p/3-16cyli.scad>
 use <../../p/3-16edge.scad>
 use <../../p/48/1-4cyli.scad>
 use <../../p/48/1-4edge.scad>
-use <../../p/48/1-4rin17.scad>
+use <../../p/48/1-4ring17.scad>
 use <../../p/48/5-24cyli.scad>
 use <../../p/48/5-24edge.scad>
 use <../../p/rect.scad>
@@ -33,7 +33,7 @@ function ldraw_lib__s__32498s01() = [
 // 0 ~1/8 of 36 Tooth Double Bevel Gear Hub
 // 0 Name: s\32498s01.dat
 // 0 Author: Ross Crawford [rosco]
-// 0 !LDRAW_ORG Subpart UPDATE 2009-03
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CW
@@ -42,7 +42,8 @@ function ldraw_lib__s__32498s01() = [
 // 
 // 0 !HISTORY 2006-03-12 [technog] recreated part to correct size and detail
 // 0 !HISTORY 2009-12-29 [PTadmin] Official Update 2009-03
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 2 24 37 0 9 36.902 1.5 9
   [2,24,37,0,9,36.902,1.5,9],
@@ -122,8 +123,8 @@ function ldraw_lib__s__32498s01() = [
   [1,16,0,0,1.5,37,0,0,0,0,37,0,8.5,0, ldraw_lib__48__1_4cyli()],
 // 1 16 0 0 1.5 37 0 0 0 0 37 0 1 0 48\1-4edge.dat
   [1,16,0,0,1.5,37,0,0,0,0,37,0,1,0, ldraw_lib__48__1_4edge()],
-// 1 16 0 0 1.5 2.055 0 0 0 0 2.055 0 -1 0 48\1-4rin17.dat
-  [1,16,0,0,1.5,2.055,0,0,0,0,2.055,0,-1,0, ldraw_lib__48__1_4rin17()],
+// 1 16 0 0 1.5 2.055 0 0 0 0 2.055 0 -1 0 48\1-4ring17.dat
+  [1,16,0,0,1.5,2.055,0,0,0,0,2.055,0,-1,0, ldraw_lib__48__1_4ring17()],
 // 1 16 32.866 4.56 1.5 1.77 0 0 0 0 -1.77 0 -1 0 2-4ndis.dat
   [1,16,32.866,4.56,1.5,1.77,0,0,0,0,-1.77,0,-1,0, ldraw_lib__2_4ndis()],
 // 1 16 32.866 4.56 1.5 1.77 0 0 0 0 -1.77 0 1 0 2-4edge.dat
@@ -154,8 +155,8 @@ function ldraw_lib__s__32498s01() = [
   [1,16,0,20,1.5,12,0,0,0,0,12,0,1,0, ldraw_lib__3_16edge()],
 // 1 16 0 20 1.5 2 0 0 0 0 2 0 -1 0 1-4ring5.dat
   [1,16,0,20,1.5,2,0,0,0,0,2,0,-1,0, ldraw_lib__1_4ring5()],
-// 1 16 0 20 1.5 0.5 0 0 0 0 0.5 0 -1 0 1-4rin19.dat
-  [1,16,0,20,1.5,0.5,0,0,0,0,0.5,0,-1,0, ldraw_lib__1_4rin19()],
+// 1 16 0 20 1.5 0.5 0 0 0 0 0.5 0 -1 0 1-4ring19.dat
+  [1,16,0,20,1.5,0.5,0,0,0,0,0.5,0,-1,0, ldraw_lib__1_4ring19()],
 // 1 16 12 16.5 0.75 0 -1 0 0 0 -3.5 0.75 0 0 rect1.dat
   [1,16,12,16.5,0.75,0,-1,0,0,0,-3.5,0.75,0,0, ldraw_lib__rect1()],
 // 0 BFC INVERTNEXT
@@ -176,8 +177,8 @@ function ldraw_lib__s__32498s01() = [
   [1,16,20,0,1.5,0,0,12,12,0,0,0,1,0, ldraw_lib__3_16edge()],
 // 1 16 20 0 1.5 0 0 2 2 0 0 0 -1 0 1-4ring5.dat
   [1,16,20,0,1.5,0,0,2,2,0,0,0,-1,0, ldraw_lib__1_4ring5()],
-// 1 16 20 0 1.5 0 0 0.5 0.5 0 0 0 -1 0 1-4rin19.dat
-  [1,16,20,0,1.5,0,0,0.5,0.5,0,0,0,-1,0, ldraw_lib__1_4rin19()],
+// 1 16 20 0 1.5 0 0 0.5 0.5 0 0 0 -1 0 1-4ring19.dat
+  [1,16,20,0,1.5,0,0,0.5,0.5,0,0,0,-1,0, ldraw_lib__1_4ring19()],
 // 1 16 31.087 4.546 0.75 0 -1 0.009 0 0 -0.046 0.75 0 0 rect1.dat
   [1,16,31.087,4.546,0.75,0,-1,0.009,0,0,-0.046,0.75,0,0, ldraw_lib__rect1()],
 // 1 16 33.054 1.5 5.25 3.847 0 0 0 -1 0 0 0 3.75 rect.dat

@@ -4,8 +4,8 @@ use <../p/1-4cyls2.scad>
 use <../p/2-4cyli.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4edge.scad>
-use <../p/4-4rin12.scad>
 use <../p/4-4ring1.scad>
+use <../p/4-4ring12.scad>
 use <../p/4-4ring2.scad>
 use <../p/4-8sphe.scad>
 use <../p/48/1-8cyli.scad>
@@ -18,7 +18,7 @@ function ldraw_lib__2544() = [
 // 0 Minifig Hat Tricorne
 // 0 Name: 2544.dat
 // 0 Author: Franklin W. Cain [fwcain]
-// 0 !LDRAW_ORG Part UPDATE 2018-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -26,8 +26,8 @@ function ldraw_lib__2544() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Cap, colonial, Feather, gentleman, merchant, officer, Pirate
-// 0 !KEYWORDS Pirates, plume, soldier, three corner, tri-corner, tricorn
+// 0 !KEYWORDS Cap, Feather, Pirate, Pirates, colonial, gentleman, merchant
+// 0 !KEYWORDS officer, plume, soldier, three corner, tri-corner, tricorn
 // 0 !KEYWORDS tricorner
 // 
 // 0 !HISTORY 2002-08-18 [PTadmin] Official Update 2002-04
@@ -37,14 +37,15 @@ function ldraw_lib__2544() = [
 // 0 !HISTORY 2012-12-28 [PTadmin] Official Update 2012-03
 // 0 !HISTORY 2017-07-19 [MagFors] bfc'd, added more conditional lines
 // 0 !HISTORY 2018-12-08 [PTadmin] Official Update 2018-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 -4 0 1 0 0 0 -1 0 0 0 1 stud4o.dat
   [1,16,0,-4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4o()],
 // 1 16 0 0 0 4 0 0 0 -1 0 0 0 4 4-4ring2.dat
   [1,16,0,0,0,4,0,0,0,-1,0,0,0,4, ldraw_lib__4_4ring2()],
-// 1 16 0 0 0 1 0 0 0 -1 0 0 0 1 4-4rin12.dat
-  [1,16,0,0,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__4_4rin12()],
+// 1 16 0 0 0 1 0 0 0 -1 0 0 0 1 4-4ring12.dat
+  [1,16,0,0,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__4_4ring12()],
 // 1 16 0 0 0 13 0 0 0 -1 0 0 0 13 48\4-4aring.dat
   [1,16,0,0,0,13,0,0,0,-1,0,0,0,13, ldraw_lib__48__4_4aring()],
 // 0 BFC INVERTNEXT

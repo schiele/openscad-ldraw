@@ -1,7 +1,7 @@
 use <../lib.scad>
 use <../p/4-4con10.scad>
 use <../p/4-4cylo.scad>
-use <../p/4-4rin11.scad>
+use <../p/4-4ring11.scad>
 use <../p/4-4ring6.scad>
 use <../p/48/4-4aring.scad>
 use <../p/48/4-4cylo.scad>
@@ -10,7 +10,7 @@ function ldraw_lib__18977() = [
 // 0 Tyre 11.2/ 28 x 17.6 Intermediate
 // 0 Name: 18977.dat
 // 0 Author: Magnus Forsberg [MagFors]
-// 0 !LDRAW_ORG Part UPDATE 2018-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -21,7 +21,8 @@ function ldraw_lib__18977() = [
 // 0 !KEYWORDS Speed Champions
 // 
 // 0 !HISTORY 2018-12-08 [PTadmin] Official Update 2018-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Nomenclature: width_(mm)/profile_as_%age_of_width x rim_diameter_(mm) [optional qualifier]
 // 
@@ -55,14 +56,14 @@ function ldraw_lib__18977() = [
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 -4 22 0 0 0 0 22 0 -10 0 4-4cylo.dat
   [1,16,0,0,-4,22,0,0,0,0,22,0,-10,0, ldraw_lib__4_4cylo()],
-// 1 16 0 0 -14 2 0 0 0 0 -2 0 1 0 4-4rin11.dat
-  [1,16,0,0,-14,2,0,0,0,0,-2,0,1,0, ldraw_lib__4_4rin11()],
+// 1 16 0 0 -14 2 0 0 0 0 -2 0 1 0 4-4ring11.dat
+  [1,16,0,0,-14,2,0,0,0,0,-2,0,1,0, ldraw_lib__4_4ring11()],
 // 1 16 0 0 -14 4 0 0 0 0 -4 0 1 0 4-4ring6.dat
   [1,16,0,0,-14,4,0,0,0,0,-4,0,1,0, ldraw_lib__4_4ring6()],
 // 1 16 0 0 -14 28 0 0 0 0 -28 0 1 0 48\4-4aring.dat
   [1,16,0,0,-14,28,0,0,0,0,-28,0,1,0, ldraw_lib__48__4_4aring()],
-// 1 16 0 0 14 2 0 0 0 0 2 0 -1 0 4-4rin11.dat
-  [1,16,0,0,14,2,0,0,0,0,2,0,-1,0, ldraw_lib__4_4rin11()],
+// 1 16 0 0 14 2 0 0 0 0 2 0 -1 0 4-4ring11.dat
+  [1,16,0,0,14,2,0,0,0,0,2,0,-1,0, ldraw_lib__4_4ring11()],
 // 1 16 0 0 14 4 0 0 0 0 4 0 -1 0 4-4ring6.dat
   [1,16,0,0,14,4,0,0,0,0,4,0,-1,0, ldraw_lib__4_4ring6()],
 // 1 16 0 0 14 28 0 0 0 0 28 0 -1 0 48\4-4aring.dat

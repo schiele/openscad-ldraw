@@ -1,9 +1,9 @@
 use <../lib.scad>
 function ldraw_lib__4_4rin45() = [
-// 0 Ring 45 x 1.0
+// 0 ~Ring 45 x 1.0 (Obsolete)
 // 0 Name: 4-4rin45.dat
 // 0 Author: J.C. Tchang [tchang]
-// 0 !LDRAW_ORG Primitive UPDATE 2012-01
+// 0 !LDRAW_ORG Primitive UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -11,7 +11,8 @@ function ldraw_lib__4_4rin45() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Obsolete, use 4-4ring45.dat
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 4 16 46 0 0 42.4994 0 17.6042 41.5755 0 17.2215 45 0 0
   [4,16,46,0,0,42.4994,0,17.6042,41.5755,0,17.2215,45,0,0],

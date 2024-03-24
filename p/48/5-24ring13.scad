@@ -2,16 +2,17 @@ use <../../lib.scad>
 function ldraw_lib__48__5_24ring13() = [
 // 0 Hi-Res Ring 13 x 0.2083
 // 0 Name: 48\5-24ring13.dat
-// 0 Author: Kevin Roach [KROACH]
-// 0 !LDRAW_ORG 48_Primitive UPDATE 2016-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 Author: Willy Tschager [Holly-Wood]
+// 0 !LDRAW_ORG 48_Primitive UPDATE 2024-02
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2016-12-31 [PTadmin] Official Update 2016-01
-// 
+// 0 !HISTORY 2024-03-07 [Holly-Wood] Complete regeneration, original by KROACH
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 4 16 14 0 0 13.8796 0 1.827 12.8882 0 1.6965 13 0 0
   [4,16,14,0,0,13.8796,0,1.827,12.8882,0,1.6965,13,0,0],
@@ -33,7 +34,7 @@ function ldraw_lib__48__5_24ring13() = [
   [4,16,7,0,12.124,5.3578,0,12.9346,4.9751,0,12.0107,6.5,0,11.258],
 // 4 16 5.3578 0 12.9346 3.6232 0 13.5226 3.3644 0 12.5567 4.9751 0 12.0107
   [4,16,5.3578,0,12.9346,3.6232,0,13.5226,3.3644,0,12.5567,4.9751,0,12.0107],
-// 0 // Build by Primitive Generator 2
+// 0 // Build by LDPartEditor (PrimGen 2.X)
 ];
 module ldraw_lib__48__5_24ring13(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
     makepoly(ldraw_lib__48__5_24ring13(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);

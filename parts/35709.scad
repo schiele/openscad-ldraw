@@ -10,8 +10,8 @@ use <../p/48/4-4con10.scad>
 use <../p/48/4-4con24.scad>
 use <../p/48/4-4cylo.scad>
 use <../p/48/4-4edge.scad>
-use <../p/48/4-4rin11.scad>
-use <../p/48/4-4rin26.scad>
+use <../p/48/4-4ring11.scad>
+use <../p/48/4-4ring26.scad>
 use <../p/48/4-4ring9.scad>
 use <../p/box2-5.scad>
 use <s/24779s03.scad>
@@ -19,7 +19,7 @@ function ldraw_lib__35709() = [
 // 0 Minifig Costume Flowerpot
 // 0 Name: 35709.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
-// 0 !LDRAW_ORG Part UPDATE 2022-03
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -30,7 +30,8 @@ function ldraw_lib__35709() = [
 // 0 !KEYWORDS Collectible Minifigures, Series 18
 // 
 // 0 !HISTORY 2022-05-07 [PTadmin] Official Update 2022-03
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Bottom and Inside
 // 1 16 0 32 0 0 0 4 0 -1 0 -4 0 0 48\1-6ring5.dat
@@ -195,8 +196,8 @@ function ldraw_lib__35709() = [
   [1,16,0,1,0,2.4,0,0,0,31,0,0,0,2.4, ldraw_lib__48__4_4con10()],
 // 1 16 0 1 0 26.4 0 0 0 1 0 0 0 26.4 48\4-4edge.dat
   [1,16,0,1,0,26.4,0,0,0,1,0,0,0,26.4, ldraw_lib__48__4_4edge()],
-// 1 16 0 1 0 2.4 0 0 0 -1 0 0 0 2.4 48\4-4rin11.dat
-  [1,16,0,1,0,2.4,0,0,0,-1,0,0,0,2.4, ldraw_lib__48__4_4rin11()],
+// 1 16 0 1 0 2.4 0 0 0 -1 0 0 0 2.4 48\4-4ring11.dat
+  [1,16,0,1,0,2.4,0,0,0,-1,0,0,0,2.4, ldraw_lib__48__4_4ring11()],
 // 1 16 0 1 0 28.8 0 0 0 1 0 0 0 28.8 48\4-4edge.dat
   [1,16,0,1,0,28.8,0,0,0,1,0,0,0,28.8, ldraw_lib__48__4_4edge()],
 // 1 16 0 -10 0 1.2 0 0 0 11 0 0 0 1.2 48\4-4con24.dat
@@ -207,8 +208,8 @@ function ldraw_lib__35709() = [
   [1,16,0,-10,0,30,0,0,0,1,0,0,0,30, ldraw_lib__48__4_4edge()],
 // 1 16 0 -10 0 3 0 0 0 1 0 0 0 3 48\4-4ring9.dat
   [1,16,0,-10,0,3,0,0,0,1,0,0,0,3, ldraw_lib__48__4_4ring9()],
-// 1 16 0 -10 0 1 0 0 0 1 0 0 0 1 48\4-4rin26.dat
-  [1,16,0,-10,0,1,0,0,0,1,0,0,0,1, ldraw_lib__48__4_4rin26()],
+// 1 16 0 -10 0 1 0 0 0 1 0 0 0 1 48\4-4ring26.dat
+  [1,16,0,-10,0,1,0,0,0,1,0,0,0,1, ldraw_lib__48__4_4ring26()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -10 0 26 0 0 0 7 0 0 0 26 48\4-4cylo.dat

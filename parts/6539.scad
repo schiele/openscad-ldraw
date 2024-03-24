@@ -3,7 +3,7 @@ use <../p/1-8cyli.scad>
 use <../p/3-8cyli.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4edge.scad>
-use <../p/4-4rin12.scad>
+use <../p/4-4ring12.scad>
 use <../p/4-4ring3.scad>
 use <../p/4-4ring4.scad>
 use <../p/4-4ring5.scad>
@@ -11,7 +11,7 @@ function ldraw_lib__6539() = [
 // 0 Technic Transmission Driving Ring
 // 0 Name: 6539.dat
 // 0 Author: Marc Klein [marckl]
-// 0 !LDRAW_ORG Part UPDATE 2009-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -23,7 +23,8 @@ function ldraw_lib__6539() = [
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
 // 0 !HISTORY 2008-07-07 [guyvivan] Made BFC compliant (2004-09-04)
 // 0 !HISTORY 2009-09-03 [PTadmin] Official Update 2009-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 9 20 0 0 0 0 20 0 -4 0 4-4cyli.dat
   [1,16,0,0,9,20,0,0,0,0,20,0,-4,0, ldraw_lib__4_4cyli()],
@@ -65,12 +66,12 @@ function ldraw_lib__6539() = [
   [1,16,0,0,-20,13,0,0,0,0,13,0,1,0, ldraw_lib__4_4edge()],
 // 1 16 0 0 -20 2 0 0 0 0 2 0 1 0 4-4ring5.dat
   [1,16,0,0,-20,2,0,0,0,0,2,0,1,0, ldraw_lib__4_4ring5()],
-// 1 16 0 0 -20 1 0 0 0 0 1 0 1 0 4-4rin12.dat
-  [1,16,0,0,-20,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4rin12()],
+// 1 16 0 0 -20 1 0 0 0 0 1 0 1 0 4-4ring12.dat
+  [1,16,0,0,-20,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4ring12()],
 // 1 16 0 0 20 -2 0 0 0 0 2 0 -1 0 4-4ring5.dat
   [1,16,0,0,20,-2,0,0,0,0,2,0,-1,0, ldraw_lib__4_4ring5()],
-// 1 16 0 0 20 -1 0 0 0 0 1 0 -1 0 4-4rin12.dat
-  [1,16,0,0,20,-1,0,0,0,0,1,0,-1,0, ldraw_lib__4_4rin12()],
+// 1 16 0 0 20 -1 0 0 0 0 1 0 -1 0 4-4ring12.dat
+  [1,16,0,0,20,-1,0,0,0,0,1,0,-1,0, ldraw_lib__4_4ring12()],
 // 1 16 0 0 -20 13 0 0 0 0 13 0 11 0 4-4cyli.dat
   [1,16,0,0,-20,13,0,0,0,0,13,0,11,0, ldraw_lib__4_4cyli()],
 // 1 16 0 0 20 13 0 0 0 0 13 0 -11 0 4-4cyli.dat

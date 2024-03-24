@@ -1,11 +1,11 @@
 use <../../lib.scad>
 use <../../p/1-4cyli.scad>
 use <../../p/2-4cylo.scad>
-use <../../p/2-4rin12.scad>
+use <../../p/2-4ring12.scad>
 use <../../p/2-4ring3.scad>
 use <../../p/2-4ring6.scad>
 use <../../p/4-4cylo.scad>
-use <../../p/4-4rin12.scad>
+use <../../p/4-4ring12.scad>
 use <../../p/4-4ring3.scad>
 use <../../p/4-4ring6.scad>
 use <../../p/5-16edge.scad>
@@ -16,7 +16,7 @@ function ldraw_lib__s__6580a() = [
 // 0 ~Wheel Rim 23 x 22 Offroad - 1/4 Subpart
 // 0 Name: s\6580a.dat
 // 0 Author: Jeff Boen [onyx]
-// 0 !LDRAW_ORG Subpart UPDATE 2017-01
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -30,7 +30,8 @@ function ldraw_lib__s__6580a() = [
 // 0 !HISTORY 2017-01-03 [Steffen] BFCed
 // 0 !HISTORY 2017-02-14 [MagFors] Closed gaps, added cond-lines, removed center
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Faces (Quads and Triangles)
 // 
@@ -1005,8 +1006,8 @@ function ldraw_lib__s__6580a() = [
   [1,16,3,-14.5,0,0,1,0,-0.75,0,0,0,0,-0.75, ldraw_lib__2_4ring6()],
 // 1 16 13 -14.5 0 0 -1 0 -1.5 0 0 0 0 -1.5 2-4ring3.dat
   [1,16,13,-14.5,0,0,-1,0,-1.5,0,0,0,0,-1.5, ldraw_lib__2_4ring3()],
-// 1 16 13 -14.5 0 0 -1 0 -0.5 0 0 0 0 -0.5 2-4rin12.dat
-  [1,16,13,-14.5,0,0,-1,0,-0.5,0,0,0,0,-0.5, ldraw_lib__2_4rin12()],
+// 1 16 13 -14.5 0 0 -1 0 -0.5 0 0 0 0 -0.5 2-4ring12.dat
+  [1,16,13,-14.5,0,0,-1,0,-0.5,0,0,0,0,-0.5, ldraw_lib__2_4ring12()],
 // 1 16 13 -14.5 0 0 -6.2 0 -6.00522 0 2.48744 -2.48744 0 -6.00522 1-4cyli.dat
   [1,16,13,-14.5,0,0,-6.2,0,-6.00522,0,2.48744,-2.48744,0,-6.00522, ldraw_lib__1_4cyli()],
 // 0 BFC INVERTNEXT
@@ -1030,8 +1031,8 @@ function ldraw_lib__s__6580a() = [
   [1,16,13,-7.25,-12.5574,0,-10,0,-2.25,0,3.89711,-3.89711,0,-2.25, ldraw_lib__4_4cylo()],
 // 1 16 13 -7.25 -12.5574 0 -1 0 -0.75 0 1.29904 -1.29904 0 -0.75 4-4ring3.dat
   [1,16,13,-7.25,-12.5574,0,-1,0,-0.75,0,1.29904,-1.29904,0,-0.75, ldraw_lib__4_4ring3()],
-// 1 16 13 -7.25 -12.5574 0 -1 0 -0.25 0 0.43301 -0.43301 0 -0.25 4-4rin12.dat
-  [1,16,13,-7.25,-12.5574,0,-1,0,-0.25,0,0.43301,-0.43301,0,-0.25, ldraw_lib__4_4rin12()],
+// 1 16 13 -7.25 -12.5574 0 -1 0 -0.25 0 0.43301 -0.43301 0 -0.25 4-4ring12.dat
+  [1,16,13,-7.25,-12.5574,0,-1,0,-0.25,0,0.43301,-0.43301,0,-0.25, ldraw_lib__4_4ring12()],
 // 0 // 3DSMAX Object: Hub Tube Edges
 // 2 24 6.8 -19.5619 -3.8995 13 -19.5619 -3.8995
   [2,24,6.8,-19.5619,-3.8995,13,-19.5619,-3.8995],

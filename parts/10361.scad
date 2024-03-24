@@ -5,10 +5,10 @@ use <../p/4-4cyli.scad>
 use <../p/4-4cylo.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4edge.scad>
-use <../p/4-4rin18.scad>
-use <../p/4-4rin19.scad>
-use <../p/4-4rin20.scad>
+use <../p/4-4ring18.scad>
+use <../p/4-4ring19.scad>
 use <../p/4-4ring2.scad>
+use <../p/4-4ring20.scad>
 use <../p/4-4ring3.scad>
 use <../p/48/1-4edge.scad>
 use <../p/48/4-4aring.scad>
@@ -21,7 +21,7 @@ function ldraw_lib__10361() = [
 // 0 ~Electric Mindstorms EV3 Ultrasonic Sensor Front
 // 0 Name: 10361.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2013-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -31,7 +31,8 @@ function ldraw_lib__10361() = [
 // 0 !HISTORY 2012-05-20 {LEGO MINDSTORMS Team} Original part shape
 // 0 !HISTORY 2012-06-18 [Philo] File preparation for LDraw Parts Tracker
 // 0 !HISTORY 2013-12-23 [PTadmin] Official Update 2013-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 17 4 0 0 0 0 4 0 4 0 4-4cyli.dat
   [1,16,0,0,17,4,0,0,0,0,4,0,4,0, ldraw_lib__4_4cyli()],
@@ -45,16 +46,16 @@ function ldraw_lib__10361() = [
   [1,16,40,0,-14,12,0,0,0,0,12,0,12,0, ldraw_lib__4_4cylo()],
 // 1 16 40 0 -2 6 0 0 0 0 6 0 -1 0 4-4ring2.dat
   [1,16,40,0,-2,6,0,0,0,0,6,0,-1,0, ldraw_lib__4_4ring2()],
-// 1 16 40 0 -2 1 0 0 0 0 1 0 -1 0 4-4rin18.dat
-  [1,16,40,0,-2,1,0,0,0,0,1,0,-1,0, ldraw_lib__4_4rin18()],
+// 1 16 40 0 -2 1 0 0 0 0 1 0 -1 0 4-4ring18.dat
+  [1,16,40,0,-2,1,0,0,0,0,1,0,-1,0, ldraw_lib__4_4ring18()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 40 0 -2 19 0 0 0 0 19 0 9 0 4-4cylo.dat
   [1,16,40,0,-2,19,0,0,0,0,19,0,9,0, ldraw_lib__4_4cylo()],
-// 1 16 40 0 7 1 0 0 0 0 1 0 -1 0 4-4rin19.dat
-  [1,16,40,0,7,1,0,0,0,0,1,0,-1,0, ldraw_lib__4_4rin19()],
-// 1 16 40 0 7 1 0 0 0 0 1 0 -1 0 4-4rin20.dat
-  [1,16,40,0,7,1,0,0,0,0,1,0,-1,0, ldraw_lib__4_4rin20()],
+// 1 16 40 0 7 1 0 0 0 0 1 0 -1 0 4-4ring19.dat
+  [1,16,40,0,7,1,0,0,0,0,1,0,-1,0, ldraw_lib__4_4ring19()],
+// 1 16 40 0 7 1 0 0 0 0 1 0 -1 0 4-4ring20.dat
+  [1,16,40,0,7,1,0,0,0,0,1,0,-1,0, ldraw_lib__4_4ring20()],
 // 1 16 40 0 -14 16 0 0 0 0 16 0 5 0 48\4-4cylo.dat
   [1,16,40,0,-14,16,0,0,0,0,16,0,5,0, ldraw_lib__48__4_4cylo()],
 // 1 16 40 0 -14 16 0 0 0 0 16 0 1 0 48\4-4aring.dat
@@ -194,16 +195,16 @@ function ldraw_lib__10361() = [
   [1,16,-40,0,-14,-12,0,0,0,0,-12,0,12,0, ldraw_lib__4_4cylo()],
 // 1 16 -40 0 -2 -6 0 0 0 0 -6 0 -1 0 4-4ring2.dat
   [1,16,-40,0,-2,-6,0,0,0,0,-6,0,-1,0, ldraw_lib__4_4ring2()],
-// 1 16 -40 0 -2 -1 0 0 0 0 -1 0 -1 0 4-4rin18.dat
-  [1,16,-40,0,-2,-1,0,0,0,0,-1,0,-1,0, ldraw_lib__4_4rin18()],
+// 1 16 -40 0 -2 -1 0 0 0 0 -1 0 -1 0 4-4ring18.dat
+  [1,16,-40,0,-2,-1,0,0,0,0,-1,0,-1,0, ldraw_lib__4_4ring18()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -40 0 -2 -19 0 0 0 0 -19 0 9 0 4-4cylo.dat
   [1,16,-40,0,-2,-19,0,0,0,0,-19,0,9,0, ldraw_lib__4_4cylo()],
-// 1 16 -40 0 7 -1 0 0 0 0 -1 0 -1 0 4-4rin19.dat
-  [1,16,-40,0,7,-1,0,0,0,0,-1,0,-1,0, ldraw_lib__4_4rin19()],
-// 1 16 -40 0 7 -1 0 0 0 0 -1 0 -1 0 4-4rin20.dat
-  [1,16,-40,0,7,-1,0,0,0,0,-1,0,-1,0, ldraw_lib__4_4rin20()],
+// 1 16 -40 0 7 -1 0 0 0 0 -1 0 -1 0 4-4ring19.dat
+  [1,16,-40,0,7,-1,0,0,0,0,-1,0,-1,0, ldraw_lib__4_4ring19()],
+// 1 16 -40 0 7 -1 0 0 0 0 -1 0 -1 0 4-4ring20.dat
+  [1,16,-40,0,7,-1,0,0,0,0,-1,0,-1,0, ldraw_lib__4_4ring20()],
 // 1 16 -40 0 -14 -16 0 0 0 0 -16 0 5 0 48\4-4cylo.dat
   [1,16,-40,0,-14,-16,0,0,0,0,-16,0,5,0, ldraw_lib__48__4_4cylo()],
 // 1 16 -40 0 -14 -16 0 0 0 0 -16 0 1 0 48\4-4aring.dat

@@ -4,8 +4,8 @@ use <../p/1-4cyls.scad>
 use <../p/1-4cyls2.scad>
 use <../p/1-4disc.scad>
 use <../p/1-4edge.scad>
-use <../p/1-4rin15.scad>
-use <../p/1-4rin16.scad>
+use <../p/1-4ring15.scad>
+use <../p/1-4ring16.scad>
 use <../p/2-4cyli.scad>
 use <../p/2-4edge.scad>
 use <../p/2-8sphe.scad>
@@ -16,7 +16,7 @@ function ldraw_lib__769() = [
 // 0 Minifig Helmet Visor Space
 // 0 Name: 769.dat
 // 0 Author: Donald Sutter [technog]
-// 0 !LDRAW_ORG Part UPDATE 2012-03
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CW
@@ -24,7 +24,7 @@ function ldraw_lib__769() = [
   [0,"BFC","CW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Apollo, astronaut, Dome, Launch Command, space port, Space Shuttle
+// 0 !KEYWORDS Apollo, Dome, Launch Command, Space Shuttle, astronaut, space port
 // 
 // 0 !CMDLINE -c334
 // 
@@ -33,24 +33,25 @@ function ldraw_lib__769() = [
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
 // 0 !HISTORY 2012-12-24 [cwdee] Update category
 // 0 !HISTORY 2012-12-28 [PTadmin] Official Update 2012-03
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
-// 
-// 1 16 0 12 -3 0 0 1 0.44 -1 0 -1 0 0 1-4rin15.dat
-  [1,16,0,12,-3,0,0,1,0.44,-1,0,-1,0,0, ldraw_lib__1_4rin15()],
-// 1 16 0 12 -3 0 0 1 0.44 -1 0 -1 0 0 1-4rin16.dat
-  [1,16,0,12,-3,0,0,1,0.44,-1,0,-1,0,0, ldraw_lib__1_4rin16()],
-// 1 16 0 12 -3 -1 0 0 0 -1 0.44 0 0 -1 1-4rin15.dat
-  [1,16,0,12,-3,-1,0,0,0,-1,0.44,0,0,-1, ldraw_lib__1_4rin15()],
-// 1 16 0 12 -3 -1 0 0 0 -1 0.44 0 0 -1 1-4rin16.dat
-  [1,16,0,12,-3,-1,0,0,0,-1,0.44,0,0,-1, ldraw_lib__1_4rin16()],
-// 1 16 0 5 3.67 0 0 -1 -1 -0.707 0 -0.393 -1 0 1-4rin15.dat
-  [1,16,0,5,3.67,0,0,-1,-1,-0.707,0,-0.393,-1,0, ldraw_lib__1_4rin15()],
-// 1 16 0 5 3.67 0 0 -1 -1 -0.707 0 -0.393 -1 0 1-4rin16.dat
-  [1,16,0,5,3.67,0,0,-1,-1,-0.707,0,-0.393,-1,0, ldraw_lib__1_4rin16()],
-// 1 16 0 5 3.67 1 0 0 0 -0.707 -1 0 -1 -0.393 1-4rin15.dat
-  [1,16,0,5,3.67,1,0,0,0,-0.707,-1,0,-1,-0.393, ldraw_lib__1_4rin15()],
-// 1 16 0 5 3.67 1 0 0 0 -0.707 -1 0 -1 -0.393 1-4rin16.dat
-  [1,16,0,5,3.67,1,0,0,0,-0.707,-1,0,-1,-0.393, ldraw_lib__1_4rin16()],
+// 1 16 0 12 -3 0 0 1 0.44 -1 0 -1 0 0 1-4ring15.dat
+  [1,16,0,12,-3,0,0,1,0.44,-1,0,-1,0,0, ldraw_lib__1_4ring15()],
+// 1 16 0 12 -3 0 0 1 0.44 -1 0 -1 0 0 1-4ring16.dat
+  [1,16,0,12,-3,0,0,1,0.44,-1,0,-1,0,0, ldraw_lib__1_4ring16()],
+// 1 16 0 12 -3 -1 0 0 0 -1 0.44 0 0 -1 1-4ring15.dat
+  [1,16,0,12,-3,-1,0,0,0,-1,0.44,0,0,-1, ldraw_lib__1_4ring15()],
+// 1 16 0 12 -3 -1 0 0 0 -1 0.44 0 0 -1 1-4ring16.dat
+  [1,16,0,12,-3,-1,0,0,0,-1,0.44,0,0,-1, ldraw_lib__1_4ring16()],
+// 1 16 0 5 3.67 0 0 -1 -1 -0.707 0 -0.393 -1 0 1-4ring15.dat
+  [1,16,0,5,3.67,0,0,-1,-1,-0.707,0,-0.393,-1,0, ldraw_lib__1_4ring15()],
+// 1 16 0 5 3.67 0 0 -1 -1 -0.707 0 -0.393 -1 0 1-4ring16.dat
+  [1,16,0,5,3.67,0,0,-1,-1,-0.707,0,-0.393,-1,0, ldraw_lib__1_4ring16()],
+// 1 16 0 5 3.67 1 0 0 0 -0.707 -1 0 -1 -0.393 1-4ring15.dat
+  [1,16,0,5,3.67,1,0,0,0,-0.707,-1,0,-1,-0.393, ldraw_lib__1_4ring15()],
+// 1 16 0 5 3.67 1 0 0 0 -0.707 -1 0 -1 -0.393 1-4ring16.dat
+  [1,16,0,5,3.67,1,0,0,0,-0.707,-1,0,-1,-0.393, ldraw_lib__1_4ring16()],
 // 1 16 17 6.5 0 0 -2 0 -1.531 0 3.695 3.695 0 1.531 1-4cyli.dat
   [1,16,17,6.5,0,0,-2,0,-1.531,0,3.695,3.695,0,1.531, ldraw_lib__1_4cyli()],
 // 1 16 -15 6.5 0 0 -2 0 -1.531 0 3.695 3.695 0 1.531 1-4cyli.dat

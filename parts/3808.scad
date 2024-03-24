@@ -5,7 +5,7 @@ use <../p/48/11-24edge.scad>
 use <../p/48/2-4cyli.scad>
 use <../p/48/2-4disc.scad>
 use <../p/48/2-4edge.scad>
-use <../p/48/2-4rin19.scad>
+use <../p/48/2-4ring19.scad>
 use <../p/box4-1.scad>
 use <../p/stud7.scad>
 use <../p/stug8-1x3.scad>
@@ -13,7 +13,7 @@ function ldraw_lib__3808() = [
 // 0 Duplo Plate  2 x  4 x  0.333 Half Circle with 2 Studs
 // 0 Name: 3808.dat
 // 0 Author: Chris Dee [cwdee]
-// 0 !LDRAW_ORG Part UPDATE 2020-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CW
@@ -25,7 +25,8 @@ function ldraw_lib__3808() = [
 // 0 !HISTORY 2014-12-23 [PTadmin] Official Update 2014-02
 // 0 !HISTORY 2020-05-25 [PTadmin] Update description
 // 0 !HISTORY 2020-06-28 [PTadmin] Official Update 2020-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 20 0 0 1 0 0 0 2.75 0 0 0 1 stud7.dat
   [1,16,20,0,0,1,0,0,0,2.75,0,0,0,1, ldraw_lib__stud7()],
@@ -53,8 +54,8 @@ function ldraw_lib__3808() = [
 // 1 16 0 4 20 1 0 0 0 -1.75 0 0 0 1 stug8-1x3.dat
   [1,16,0,4,20,1,0,0,0,-1.75,0,0,0,1, ldraw_lib__stug8_1x3()],
 // 
-// 1 16 0 16 -20 4 0 0 0 -1 0 0 0 4 48\2-4rin19.dat
-  [1,16,0,16,-20,4,0,0,0,-1,0,0,0,4, ldraw_lib__48__2_4rin19()],
+// 1 16 0 16 -20 4 0 0 0 -1 0 0 0 4 48\2-4ring19.dat
+  [1,16,0,16,-20,4,0,0,0,-1,0,0,0,4, ldraw_lib__48__2_4ring19()],
 // 4 16 76 16 -20 75.736 16 -16 -75.736 16 -16 -76 16 -20
   [4,16,76,16,-20,75.736,16,-16,-75.736,16,-16,-76,16,-20],
 // 1 16 0 16 -20 75.35 0 -9.92 0 1 0 9.92 0 75.35 48\11-24edge.dat

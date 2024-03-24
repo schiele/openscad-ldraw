@@ -6,7 +6,7 @@ use <../p/1-4cyli.scad>
 use <../p/1-4cylo.scad>
 use <../p/1-4edge.scad>
 use <../p/1-4ndis.scad>
-use <../p/1-4rin12.scad>
+use <../p/1-4ring12.scad>
 use <../p/1-4ring8.scad>
 use <../p/1-8ndis.scad>
 use <../p/2-4cyli.scad>
@@ -15,7 +15,7 @@ use <../p/2-4ndis.scad>
 use <../p/2-4ring2.scad>
 use <../p/3-16cyli.scad>
 use <../p/3-16edge.scad>
-use <../p/3-16rin8.scad>
+use <../p/3-16ring8.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4edge.scad>
 use <../p/4-4ring3.scad>
@@ -46,7 +46,7 @@ function ldraw_lib__57515() = [
 // 0 Technic Suspension Arm  2 x  6
 // 0 Name: 57515.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2023-05
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -56,6 +56,8 @@ function ldraw_lib__57515() = [
 // 0 !HISTORY 2014-06-21 [PTadmin] Official Update 2014-01
 // 0 !HISTORY 2023-07-28 [MagFors] Adapted to rounded npeg corners
 // 0 !HISTORY 2023-10-31 [OrionP] Official Update 2023-05
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 -80 0 -1 0 1 0 0 0 0 1 connhole.dat
   [1,16,0,0,-80,0,-1,0,1,0,0,0,0,1, ldraw_lib__connhole()],
@@ -117,18 +119,18 @@ function ldraw_lib__57515() = [
   [1,16,10,0,0,0,2,0,0,0,-8,-8,0,0, ldraw_lib__2_4cyli()],
 // 1 16 12 0 0 0 1 0 0 0 -2 -2 0 0 4-4ring3.dat
   [1,16,12,0,0,0,1,0,0,0,-2,-2,0,0, ldraw_lib__4_4ring3()],
-// 1 16 12 0 0 0 1 0 1 0 0 0 0 1 3-16rin8.dat
-  [1,16,12,0,0,0,1,0,1,0,0,0,0,1, ldraw_lib__3_16rin8()],
+// 1 16 12 0 0 0 1 0 1 0 0 0 0 1 3-16ring8.dat
+  [1,16,12,0,0,0,1,0,1,0,0,0,0,1, ldraw_lib__3_16ring8()],
 // 1 16 12 0 0 0 1 0 8 0 0 0 0 -8 1-4ndis.dat
   [1,16,12,0,0,0,1,0,8,0,0,0,0,-8, ldraw_lib__1_4ndis()],
 // 1 16 12 8.5 -4 0 1 0 .5 0 0 0 0 -4 rect1.dat
   [1,16,12,8.5,-4,0,1,0,.5,0,0,0,0,-4, ldraw_lib__rect1()],
 // 1 16 10 0 0 0 1 0 0 0 -1 1 0 0 1-4ring8.dat
   [1,16,10,0,0,0,1,0,0,0,-1,1,0,0, ldraw_lib__1_4ring8()],
-// 1 16 17 0 0 0 1 0 0 0 .69231 .69231 0 0 1-4rin12.dat
-  [1,16,17,0,0,0,1,0,0,0,.69231,.69231,0,0, ldraw_lib__1_4rin12()],
-// 1 16 14 0 0 0 -1 0 0 0 .69231 .69231 0 0 1-4rin12.dat
-  [1,16,14,0,0,0,-1,0,0,0,.69231,.69231,0,0, ldraw_lib__1_4rin12()],
+// 1 16 17 0 0 0 1 0 0 0 .69231 .69231 0 0 1-4ring12.dat
+  [1,16,17,0,0,0,1,0,0,0,.69231,.69231,0,0, ldraw_lib__1_4ring12()],
+// 1 16 14 0 0 0 -1 0 0 0 .69231 .69231 0 0 1-4ring12.dat
+  [1,16,14,0,0,0,-1,0,0,0,.69231,.69231,0,0, ldraw_lib__1_4ring12()],
 // 1 16 17 0 0 0 3 0 -9 0 0 0 0 9 2-4cyli.dat
   [1,16,17,0,0,0,3,0,-9,0,0,0,0,9, ldraw_lib__2_4cyli()],
 // 1 16 20 0 0 0 1 0 9 0 0 0 0 9 2-4edge.dat
@@ -345,18 +347,18 @@ function ldraw_lib__57515() = [
   [1,16,-10,0,0,0,-2,0,0,0,-8,-8,0,0, ldraw_lib__2_4cyli()],
 // 1 16 -12 0 0 0 -1 0 0 0 -2 -2 0 0 4-4ring3.dat
   [1,16,-12,0,0,0,-1,0,0,0,-2,-2,0,0, ldraw_lib__4_4ring3()],
-// 1 16 -12 0 0 0 -1 0 1 0 0 0 0 1 3-16rin8.dat
-  [1,16,-12,0,0,0,-1,0,1,0,0,0,0,1, ldraw_lib__3_16rin8()],
+// 1 16 -12 0 0 0 -1 0 1 0 0 0 0 1 3-16ring8.dat
+  [1,16,-12,0,0,0,-1,0,1,0,0,0,0,1, ldraw_lib__3_16ring8()],
 // 1 16 -12 0 0 0 -1 0 8 0 0 0 0 -8 1-4ndis.dat
   [1,16,-12,0,0,0,-1,0,8,0,0,0,0,-8, ldraw_lib__1_4ndis()],
 // 1 16 -12 8.5 -4 0 -1 0 .5 0 0 0 0 -4 rect1.dat
   [1,16,-12,8.5,-4,0,-1,0,.5,0,0,0,0,-4, ldraw_lib__rect1()],
 // 1 16 -10 0 0 0 -1 0 0 0 -1 1 0 0 1-4ring8.dat
   [1,16,-10,0,0,0,-1,0,0,0,-1,1,0,0, ldraw_lib__1_4ring8()],
-// 1 16 -17 0 0 0 -1 0 0 0 .6923 .6923 0 0 1-4rin12.dat
-  [1,16,-17,0,0,0,-1,0,0,0,.6923,.6923,0,0, ldraw_lib__1_4rin12()],
-// 1 16 -14 0 0 0 1 0 0 0 .69231 .69231 0 0 1-4rin12.dat
-  [1,16,-14,0,0,0,1,0,0,0,.69231,.69231,0,0, ldraw_lib__1_4rin12()],
+// 1 16 -17 0 0 0 -1 0 0 0 .6923 .6923 0 0 1-4ring12.dat
+  [1,16,-17,0,0,0,-1,0,0,0,.6923,.6923,0,0, ldraw_lib__1_4ring12()],
+// 1 16 -14 0 0 0 1 0 0 0 .69231 .69231 0 0 1-4ring12.dat
+  [1,16,-14,0,0,0,1,0,0,0,.69231,.69231,0,0, ldraw_lib__1_4ring12()],
 // 1 16 -17 0 0 0 -3 0 -9 0 0 0 0 9 2-4cyli.dat
   [1,16,-17,0,0,0,-3,0,-9,0,0,0,0,9, ldraw_lib__2_4cyli()],
 // 1 16 -20 0 0 0 -1 0 9 0 0 0 0 9 2-4edge.dat

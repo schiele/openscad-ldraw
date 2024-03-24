@@ -9,7 +9,7 @@ use <../p/3-16cyli.scad>
 use <../p/3-16cyls.scad>
 use <../p/3-16edge.scad>
 use <../p/3-16ndis.scad>
-use <../p/3-16rin3.scad>
+use <../p/3-16ring3.scad>
 use <../p/4-4cylc.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4edge.scad>
@@ -31,7 +31,7 @@ function ldraw_lib__95347() = [
 // 0 Support  2 x  2 x 10 Girder Triangular  3 Sections with Axlehole
 // 0 Name: 95347.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2023-07
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -42,7 +42,8 @@ function ldraw_lib__95347() = [
 // 0 !HISTORY 2019-12-08 [Philo] File preparation for LDraw Parts Tracker
 // 0 !HISTORY 2021-12-26 [MagFors] reshaped axleholes
 // 0 !HISTORY 2023-12-31 [OrionP] Official Update 2023-07
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 0 0 -1 0 1 0 1 0 0 stug2-2x2.dat
   [1,16,0,0,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__stug2_2x2()],
@@ -1404,10 +1405,10 @@ function ldraw_lib__95347() = [
   [4,16,16,236,-16,5.6568,236,-5.6568,8,236,0,16,236,16],
 // 1 16 0 240 0 2 0 0 0 -1 0 0 0 -2 2-4ring3.dat
   [1,16,0,240,0,2,0,0,0,-1,0,0,0,-2, ldraw_lib__2_4ring3()],
-// 1 16 0 240 0 2 0 0 0 -1 0 0 0 2 3-16rin3.dat
-  [1,16,0,240,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__3_16rin3()],
-// 1 16 0 240 0 -2 0 0 0 -1 0 0 0 2 3-16rin3.dat
-  [1,16,0,240,0,-2,0,0,0,-1,0,0,0,2, ldraw_lib__3_16rin3()],
+// 1 16 0 240 0 2 0 0 0 -1 0 0 0 2 3-16ring3.dat
+  [1,16,0,240,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__3_16ring3()],
+// 1 16 0 240 0 -2 0 0 0 -1 0 0 0 2 3-16ring3.dat
+  [1,16,0,240,0,-2,0,0,0,-1,0,0,0,2, ldraw_lib__3_16ring3()],
 // 1 16 0 236 0 5.65685 0 5.65685 0 1 0 -5.65685 0 5.65685 5-16edge.dat
   [1,16,0,236,0,5.65685,0,5.65685,0,1,0,-5.65685,0,5.65685, ldraw_lib__5_16edge()],
 // 1 16 0 240 0 0 0 8 0 1 0 -8 0 0 7-16edge.dat

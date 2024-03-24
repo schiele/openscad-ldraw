@@ -10,13 +10,13 @@ use <../p/3-4edge.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4edge.scad>
-use <../p/4-4rin13.scad>
-use <../p/4-4rin14.scad>
+use <../p/4-4ring13.scad>
+use <../p/4-4ring14.scad>
 function ldraw_lib__499() = [
 // 0 ~Magnet Cylindrical Casing for Plate  2 x  4
 // 0 Name: 499.dat
 // 0 Author: Michael Heidemann [mikeheide]
-// 0 !LDRAW_ORG Part UPDATE 2011-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CW
@@ -25,7 +25,8 @@ function ldraw_lib__499() = [
 // 
 // 0 !HISTORY 2011-08-18 [cwdee] Split into component parts
 // 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Tube is a bit simplified for using sphere primitive (Seen by Nils)
 // 
@@ -158,10 +159,10 @@ function ldraw_lib__499() = [
   [1,16,17,-6,0,0,1,0,15,0,0,0,0,15, ldraw_lib__4_4disc()],
 // 1 16 34 -6 0 0 1 0 15 0 0 0 0 15 4-4edge.dat
   [1,16,34,-6,0,0,1,0,15,0,0,0,0,15, ldraw_lib__4_4edge()],
-// 1 16 34 -6 0 0 -1 0 1 0 0 0 0 1 4-4rin14.dat
-  [1,16,34,-6,0,0,-1,0,1,0,0,0,0,1, ldraw_lib__4_4rin14()],
-// 1 16 34 -6 0 0 -1 0 1 0 0 0 0 1 4-4rin13.dat
-  [1,16,34,-6,0,0,-1,0,1,0,0,0,0,1, ldraw_lib__4_4rin13()],
+// 1 16 34 -6 0 0 -1 0 1 0 0 0 0 1 4-4ring14.dat
+  [1,16,34,-6,0,0,-1,0,1,0,0,0,0,1, ldraw_lib__4_4ring14()],
+// 1 16 34 -6 0 0 -1 0 1 0 0 0 0 1 4-4ring13.dat
+  [1,16,34,-6,0,0,-1,0,1,0,0,0,0,1, ldraw_lib__4_4ring13()],
 // 1 16 34 -6 0 0 1 0 13 0 0 0 0 13 4-4edge.dat
   [1,16,34,-6,0,0,1,0,13,0,0,0,0,13, ldraw_lib__4_4edge()],
 // 1 16 21 -6 0 0 1 0 13 0 0 0 0 13 4-4edge.dat

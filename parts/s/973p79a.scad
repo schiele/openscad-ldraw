@@ -1,12 +1,12 @@
 use <../../lib.scad>
-use <../../p/1-4rin10.scad>
+use <../../p/1-4ring10.scad>
 use <../../p/2-4disc.scad>
 use <../../p/4-4ring5.scad>
 function ldraw_lib__s__973p79a() = [
 // 0 ~Lifebelt Logo Pattern
 // 0 Name: s\973p79a.dat
 // 0 Author: Chris Dee [cwdee]
-// 0 !LDRAW_ORG Subpart UPDATE 2015-01
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CW
@@ -16,18 +16,19 @@ function ldraw_lib__s__973p79a() = [
 // 0 !HISTORY 2009-12-29 [PTadmin] Official Update 2009-03
 // 0 !HISTORY 2014-12-28 [cwdee] Remove emphasis lines
 // 0 !HISTORY 2015-10-11 [PTadmin] Official Update 2015-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 0 0 0 0 0.5 0 0 0 0 0.5 0 1 0 4-4ring5.dat
   [1,0,0,0,0,0.5,0,0,0,0,0.5,0,1,0, ldraw_lib__4_4ring5()],
-// 1 0 0 0 0 0.5 0 0 0 0 0.5 0 1 0 1-4rin10.dat
-  [1,0,0,0,0,0.5,0,0,0,0,0.5,0,1,0, ldraw_lib__1_4rin10()],
-// 1 0 0 0 0 0 0 -0.5 0.5 0 0 0 1 0 1-4rin10.dat
-  [1,0,0,0,0,0,0,-0.5,0.5,0,0,0,1,0, ldraw_lib__1_4rin10()],
-// 1 0 0 0 0 -0.5 0 0 0 0 -0.5 0 1 0 1-4rin10.dat
-  [1,0,0,0,0,-0.5,0,0,0,0,-0.5,0,1,0, ldraw_lib__1_4rin10()],
-// 1 0 0 0 0 0 0 0.5 -0.5 0 0 0 1 0 1-4rin10.dat
-  [1,0,0,0,0,0,0,0.5,-0.5,0,0,0,1,0, ldraw_lib__1_4rin10()],
+// 1 0 0 0 0 0.5 0 0 0 0 0.5 0 1 0 1-4ring10.dat
+  [1,0,0,0,0,0.5,0,0,0,0,0.5,0,1,0, ldraw_lib__1_4ring10()],
+// 1 0 0 0 0 0 0 -0.5 0.5 0 0 0 1 0 1-4ring10.dat
+  [1,0,0,0,0,0,0,-0.5,0.5,0,0,0,1,0, ldraw_lib__1_4ring10()],
+// 1 0 0 0 0 -0.5 0 0 0 0 -0.5 0 1 0 1-4ring10.dat
+  [1,0,0,0,0,-0.5,0,0,0,0,-0.5,0,1,0, ldraw_lib__1_4ring10()],
+// 1 0 0 0 0 0 0 0.5 -0.5 0 0 0 1 0 1-4ring10.dat
+  [1,0,0,0,0,0,0,0.5,-0.5,0,0,0,1,0, ldraw_lib__1_4ring10()],
 // 1 15 0 0 0 -2.5 0 0 0 0 -2.5 0 1 0 2-4disc.dat
   [1,15,0,0,0,-2.5,0,0,0,0,-2.5,0,1,0, ldraw_lib__2_4disc()],
 // 

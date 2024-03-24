@@ -1,14 +1,14 @@
 use <../../lib.scad>
 use <../../p/1-4disc.scad>
 use <../../p/1-4ndis.scad>
-use <../../p/1-4rin12.scad>
-use <../../p/1-4rin13.scad>
+use <../../p/1-4ring12.scad>
+use <../../p/1-4ring13.scad>
 use <../../p/1-4ring3.scad>
 function ldraw_lib__s__44341s05() = [
 // 0 ~White Road Demarcation Strip
 // 0 Name: s\44341s05.dat
 // 0 Author: Sylvain Sauvage [SLS]
-// 0 !LDRAW_ORG Subpart UPDATE 2019-02
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -18,16 +18,17 @@ function ldraw_lib__s__44341s05() = [
 // 0 !HISTORY 2018-08-30 [SLS] Copied from s\44341s01.dat
 // 0 !HISTORY 2018-09-12 [SLS] Removed T-junctions
 // 0 !HISTORY 2019-09-09 [PTadmin] Official Update 2019-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 28 0 28 -18 0 0 0 1 0 0 0 -18 1-4disc.dat
   [1,16,28,0,28,-18,0,0,0,1,0,0,0,-18, ldraw_lib__1_4disc()],
 // 1 15 28 0 28 -6 0 0 0 1 0 0 0 -6 1-4ring3.dat
   [1,15,28,0,28,-6,0,0,0,1,0,0,0,-6, ldraw_lib__1_4ring3()],
-// 1 15 28 0 28 -2 0 0 0 1 0 0 0 -2 1-4rin12.dat
-  [1,15,28,0,28,-2,0,0,0,1,0,0,0,-2, ldraw_lib__1_4rin12()],
-// 1 15 28 0 28 -2 0 0 0 1 0 0 0 -2 1-4rin13.dat
-  [1,15,28,0,28,-2,0,0,0,1,0,0,0,-2, ldraw_lib__1_4rin13()],
+// 1 15 28 0 28 -2 0 0 0 1 0 0 0 -2 1-4ring12.dat
+  [1,15,28,0,28,-2,0,0,0,1,0,0,0,-2, ldraw_lib__1_4ring12()],
+// 1 15 28 0 28 -2 0 0 0 1 0 0 0 -2 1-4ring13.dat
+  [1,15,28,0,28,-2,0,0,0,1,0,0,0,-2, ldraw_lib__1_4ring13()],
 // 1 16 28 0 28 -28 0 0 0 1 0 0 0 -28 1-4ndis.dat
   [1,16,28,0,28,-28,0,0,0,1,0,0,0,-28, ldraw_lib__1_4ndis()],
 // 1 16 134 0 134 4 0 0 0 1 0 0 0 4 1-4disc.dat

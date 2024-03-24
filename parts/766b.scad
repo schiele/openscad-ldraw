@@ -8,7 +8,7 @@ use <../p/4-4cyli.scad>
 use <../p/4-4cylo.scad>
 use <../p/4-4edge.scad>
 use <../p/4-4ndis.scad>
-use <../p/4-4rin14.scad>
+use <../p/4-4ring14.scad>
 use <../p/4-4ring5.scad>
 use <../p/5-8cyli.scad>
 use <../p/rect.scad>
@@ -16,7 +16,7 @@ function ldraw_lib__766b() = [
 // 0 ~Electric Plug (Type 4) Twin without Centre Plastic Pin
 // 0 Name: 766b.dat
 // 0 Author: Michael Heidemann [mikeheide]
-// 0 !LDRAW_ORG Part UPDATE 2022-03
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -27,7 +27,8 @@ function ldraw_lib__766b() = [
 // 0 !HISTORY 2011-12-22 [Steffen] removed central pin hole
 // 0 !HISTORY 2020-12-09 [Holly-Wood] Prim substitution, fixed T-Junk, added conds
 // 0 !HISTORY 2022-05-07 [PTadmin] Official Update 2022-03
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 16 -7.5 21.5 0 0 2 0 1 0 -2 0 0 2-4chrd.dat
   [1,16,16,-7.5,21.5,0,0,2,0,1,0,-2,0,0, ldraw_lib__2_4chrd()],
@@ -95,8 +96,8 @@ function ldraw_lib__766b() = [
   [0,"BFC","INVERTNEXT"],
 // 1 16 10 0 23 3.5 0 0 0 0 3.5 0 1 0 4-4cylo.dat
   [1,16,10,0,23,3.5,0,0,0,0,3.5,0,1,0, ldraw_lib__4_4cylo()],
-// 1 16 10 0 23 .25 0 0 0 0 .25 0 1 0 4-4rin14.dat
-  [1,16,10,0,23,.25,0,0,0,0,.25,0,1,0, ldraw_lib__4_4rin14()],
+// 1 16 10 0 23 .25 0 0 0 0 .25 0 1 0 4-4ring14.dat
+  [1,16,10,0,23,.25,0,0,0,0,.25,0,1,0, ldraw_lib__4_4ring14()],
 // 1 16 10 0 23 .75 0 0 0 0 .75 0 1 0 4-4ring5.dat
   [1,16,10,0,23,.75,0,0,0,0,.75,0,1,0, ldraw_lib__4_4ring5()],
 // 1 16 10 0 23 4.5 0 0 0 0 4.5 0 1 0 4-4edge.dat
@@ -273,8 +274,8 @@ function ldraw_lib__766b() = [
   [0,"BFC","INVERTNEXT"],
 // 1 16 -10 0 23 3.5 0 0 0 0 3.5 0 1 0 4-4cylo.dat
   [1,16,-10,0,23,3.5,0,0,0,0,3.5,0,1,0, ldraw_lib__4_4cylo()],
-// 1 16 -10 0 23 .25 0 0 0 0 .25 0 1 0 4-4rin14.dat
-  [1,16,-10,0,23,.25,0,0,0,0,.25,0,1,0, ldraw_lib__4_4rin14()],
+// 1 16 -10 0 23 .25 0 0 0 0 .25 0 1 0 4-4ring14.dat
+  [1,16,-10,0,23,.25,0,0,0,0,.25,0,1,0, ldraw_lib__4_4ring14()],
 // 1 16 -10 0 23 .75 0 0 0 0 .75 0 1 0 4-4ring5.dat
   [1,16,-10,0,23,.75,0,0,0,0,.75,0,1,0, ldraw_lib__4_4ring5()],
 // 0 BFC INVERTNEXT

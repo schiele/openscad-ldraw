@@ -1,7 +1,7 @@
 use <../../lib.scad>
 use <../../p/48/1-4cyli.scad>
 use <../../p/48/1-4edge.scad>
-use <../../p/48/1-4rin18.scad>
+use <../../p/48/1-4ring18.scad>
 use <../../p/48/1-4ring3.scad>
 use <../../p/48/1-4ring5.scad>
 use <../../p/stud2.scad>
@@ -9,7 +9,7 @@ function ldraw_lib__s__30562s01() = [
 // 0 ~Panel  4 x  4 x  6 Corner Round without Outer Face
 // 0 Name: s\30562s01.dat
 // 0 Author: Franklin W. Cain [fwcain]
-// 0 !LDRAW_ORG Subpart UPDATE 2010-02
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -22,7 +22,8 @@ function ldraw_lib__s__30562s01() = [
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
 // 0 !HISTORY 2008-07-07 [DeannaEarley] BFCd (2008-02-04)
 // 0 !HISTORY 2010-07-05 [PTadmin] Official Update 2010-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Un-comment the following line for the outside wall:
 // 0 // 1 16 0 0 0 0 0 80 0 140 0 -80 0 0 48\1-4cyli.dat
@@ -87,8 +88,8 @@ function ldraw_lib__s__30562s01() = [
 // 
 // 1 16 0 4 0 12 0 0 0 -1 0 0 0 -12 48\1-4ring5.dat
   [1,16,0,4,0,12,0,0,0,-1,0,0,0,-12, ldraw_lib__48__1_4ring5()],
-// 1 16 0 4 0 4 0 0 0 -1 0 0 0 -4 48\1-4rin18.dat
-  [1,16,0,4,0,4,0,0,0,-1,0,0,0,-4, ldraw_lib__48__1_4rin18()],
+// 1 16 0 4 0 4 0 0 0 -1 0 0 0 -4 48\1-4ring18.dat
+  [1,16,0,4,0,4,0,0,0,-1,0,0,0,-4, ldraw_lib__48__1_4ring18()],
 // 
 // 1 16 0 0 0 60 0 0 0 1 0 0 0 -60 48\1-4edge.dat
   [1,16,0,0,0,60,0,0,0,1,0,0,0,-60, ldraw_lib__48__1_4edge()],
@@ -100,8 +101,8 @@ function ldraw_lib__s__30562s01() = [
 // 
 // 1 16 0 136 0 12 0 0 0 1 0 0 0 -12 48\1-4ring5.dat
   [1,16,0,136,0,12,0,0,0,1,0,0,0,-12, ldraw_lib__48__1_4ring5()],
-// 1 16 0 136 0 4 0 0 0 1 0 0 0 -4 48\1-4rin18.dat
-  [1,16,0,136,0,4,0,0,0,1,0,0,0,-4, ldraw_lib__48__1_4rin18()],
+// 1 16 0 136 0 4 0 0 0 1 0 0 0 -4 48\1-4ring18.dat
+  [1,16,0,136,0,4,0,0,0,1,0,0,0,-4, ldraw_lib__48__1_4ring18()],
 // 
 // 1 16 0 136 0 60 0 0 0 1 0 0 0 -60 48\1-4edge.dat
   [1,16,0,136,0,60,0,0,0,1,0,0,0,-60, ldraw_lib__48__1_4edge()],

@@ -10,7 +10,7 @@ use <../../p/4-4edge.scad>
 use <../../p/4-4ering.scad>
 use <../../p/4-4ring2.scad>
 use <../../p/48/1-6cylo.scad>
-use <../../p/48/1-6rin17.scad>
+use <../../p/48/1-6ring17.scad>
 use <../../p/48/1-6ring29.scad>
 use <../../p/48/1-6ring39.scad>
 use <../../p/48/3-16con10.scad>
@@ -29,7 +29,7 @@ function ldraw_lib__s__71689s01() = [
 // 0 ~Technic Panel 13 x  2 x  5 Mudguard Arched Extension
 // 0 Name: s\71689s01.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Subpart UPDATE 2023-07
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -37,6 +37,8 @@ function ldraw_lib__s__71689s01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2023-12-31 [OrionP] Official Update 2023-07
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 130 0 0 -1 1 0 0 0 -20 0 axlehole.dat
   [1,16,0,0,130,0,0,-1,1,0,0,0,-20,0, ldraw_lib__axlehole()],
@@ -206,8 +208,8 @@ function ldraw_lib__s__71689s01() = [
   [2,24,9.5,-31.7956,96.7948,9.5,-11,109.6581],
 // 3 16 9.5 -31.7957 96.7949 9.5 -18.2501 105.6521 9.5 -3.6462 112.7159
   [3,16,9.5,-31.7957,96.7949,9.5,-18.2501,105.6521,9.5,-3.6462,112.7159],
-// 1 16 -2.5 44 0 0 1 0 -7.1214 0 0 0 0 6.9784 48\1-6rin17.dat
-  [1,16,-2.5,44,0,0,1,0,-7.1214,0,0,0,0,6.9784, ldraw_lib__48__1_6rin17()],
+// 1 16 -2.5 44 0 0 1 0 -7.1214 0 0 0 0 6.9784 48\1-6ring17.dat
+  [1,16,-2.5,44,0,0,1,0,-7.1214,0,0,0,0,6.9784, ldraw_lib__48__1_6ring17()],
 // 1 16 0 44 0 0 -1 0 -4.27284 0 0 0 0 4.18704 48\1-6ring29.dat
   [1,16,0,44,0,0,-1,0,-4.27284,0,0,0,0,4.18704, ldraw_lib__48__1_6ring29()],
 // 1 16 -2.5 44 0 0 2.5 0 -128.18521 0 0 0 0 125.6112 48\1-6cylo.dat

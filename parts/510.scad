@@ -2,7 +2,7 @@ use <../lib.scad>
 use <../p/1-16cyli.scad>
 use <../p/1-16disc.scad>
 use <../p/1-16edge.scad>
-use <../p/1-16rin1.scad>
+use <../p/1-16ring1.scad>
 use <../p/1-4ndis.scad>
 use <../p/2-4con1.scad>
 use <../p/2-4cyli.scad>
@@ -28,7 +28,7 @@ function ldraw_lib__510() = [
 // 0 Trailer Base  4 x 16 x  1
 // 0 Name: 510.dat
 // 0 Author: Niels Karsdorp [nielsk]
-// 0 !LDRAW_ORG Part UPDATE 2010-03
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -41,7 +41,8 @@ function ldraw_lib__510() = [
 // 0 !HISTORY 2009-12-29 [PTadmin] Official Update 2009-03
 // 0 !HISTORY 2010-11-22 [anathema] Added !CATEGORY
 // 0 !HISTORY 2010-12-31 [PTadmin] Official Update 2010-03
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Pivot hole
 // 
@@ -397,8 +398,8 @@ function ldraw_lib__510() = [
   [2,24,-36,24,-60,-36,24,144],
 // 1 16 36 24 168 0 1 0 4 0 0 0 0 4 2-4ring1.dat
   [1,16,36,24,168,0,1,0,4,0,0,0,0,4, ldraw_lib__2_4ring1()],
-// 1 16 36 24 168 0 1 0 4 0 0 0 0 -4 1-16rin1.dat
-  [1,16,36,24,168,0,1,0,4,0,0,0,0,-4, ldraw_lib__1_16rin1()],
+// 1 16 36 24 168 0 1 0 4 0 0 0 0 -4 1-16ring1.dat
+  [1,16,36,24,168,0,1,0,4,0,0,0,0,-4, ldraw_lib__1_16ring1()],
 // 1 16 36 24 168 0 1 0 0 0 4 -4 0 0 3-16ndis.dat
   [1,16,36,24,168,0,1,0,0,0,4,-4,0,0, ldraw_lib__3_16ndis()],
 // 1 16 36 24 168 0 1 0 0 0 -4 -4 0 0 1-4ndis.dat
@@ -415,8 +416,8 @@ function ldraw_lib__510() = [
   [4,16,36,28,164,36,31.391,164.938,36,24,144,36,24,160],
 // 1 16 -36 24 168 0 -1 0 4 0 0 0 0 4 2-4ring1.dat
   [1,16,-36,24,168,0,-1,0,4,0,0,0,0,4, ldraw_lib__2_4ring1()],
-// 1 16 -36 24 168 0 -1 0 4 0 0 0 0 -4 1-16rin1.dat
-  [1,16,-36,24,168,0,-1,0,4,0,0,0,0,-4, ldraw_lib__1_16rin1()],
+// 1 16 -36 24 168 0 -1 0 4 0 0 0 0 -4 1-16ring1.dat
+  [1,16,-36,24,168,0,-1,0,4,0,0,0,0,-4, ldraw_lib__1_16ring1()],
 // 1 16 -36 24 168 0 -1 0 0 0 4 -4 0 0 3-16ndis.dat
   [1,16,-36,24,168,0,-1,0,0,0,4,-4,0,0, ldraw_lib__3_16ndis()],
 // 1 16 -36 24 168 0 -1 0 0 0 -4 -4 0 0 1-4ndis.dat

@@ -1,9 +1,9 @@
 use <../../lib.scad>
 function ldraw_lib__48__4_4rin41() = [
-// 0 Hi-Res Ring 41 x 1.0
+// 0 ~Hi-Res Ring 41 x 1.0 (Obsolete)
 // 0 Name: 48\4-4rin41.dat
 // 0 Author: Alex Taylor [anathema]
-// 0 !LDRAW_ORG 48_Primitive UPDATE 2011-01
+// 0 !LDRAW_ORG 48_Primitive UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -11,7 +11,8 @@ function ldraw_lib__48__4_4rin41() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2011-07-25 [PTadmin] Official Update 2011-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Obsolete, use 48\4-4ring41.dat
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 4 16 41 0 0 42 0 0 41.6388 0 5.481 40.6474 0 5.3505
   [4,16,41,0,0,42,0,0,41.6388,0,5.481,40.6474,0,5.3505],

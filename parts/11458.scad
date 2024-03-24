@@ -1,7 +1,7 @@
 use <../lib.scad>
 use <../p/2-4cylo.scad>
 use <../p/2-4ndis.scad>
-use <../p/2-4rin18.scad>
+use <../p/2-4ring18.scad>
 use <../p/box2-7.scad>
 use <../p/box5.scad>
 use <../p/connhole.scad>
@@ -13,7 +13,7 @@ function ldraw_lib__11458() = [
 // 0 Plate  1 x  2 with Offset Peghole
 // 0 Name: 11458.dat
 // 0 Author: Magnus Forsberg [MagFors]
-// 0 !LDRAW_ORG Part UPDATE 2022-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -23,7 +23,8 @@ function ldraw_lib__11458() = [
 // 0 !HISTORY 2012-12-28 [PTadmin] Official Update 2012-03
 // 0 !HISTORY 2021-03-27 [MagFors] Increased outer diameter to 9.5LDU
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 4 0 1 0 0 0 -1 0 0 0 1 stud3.dat
   [1,16,0,4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud3()],
@@ -77,10 +78,10 @@ function ldraw_lib__11458() = [
   [1,16,19.75,4,0,0,.25,0,0,0,-4,-10,0,0, ldraw_lib__box2_7()],
 // 1 16 10 -6 0 1 0 0 0 0 -1 0 1 0 connhole.dat
   [1,16,10,-6,0,1,0,0,0,0,-1,0,1,0, ldraw_lib__connhole()],
-// 1 16 10 -6 10 -.5 0 0 0 0 -.5 0 -1 0 2-4rin18.dat
-  [1,16,10,-6,10,-.5,0,0,0,0,-.5,0,-1,0, ldraw_lib__2_4rin18()],
-// 1 16 10 -6 -10 -.5 0 0 0 0 -.5 0 1 0 2-4rin18.dat
-  [1,16,10,-6,-10,-.5,0,0,0,0,-.5,0,1,0, ldraw_lib__2_4rin18()],
+// 1 16 10 -6 10 -.5 0 0 0 0 -.5 0 -1 0 2-4ring18.dat
+  [1,16,10,-6,10,-.5,0,0,0,0,-.5,0,-1,0, ldraw_lib__2_4ring18()],
+// 1 16 10 -6 -10 -.5 0 0 0 0 -.5 0 1 0 2-4ring18.dat
+  [1,16,10,-6,-10,-.5,0,0,0,0,-.5,0,1,0, ldraw_lib__2_4ring18()],
 // 1 16 10 -6 10 -9.5 0 0 0 0 -9.5 0 -20 0 2-4cylo.dat
   [1,16,10,-6,10,-9.5,0,0,0,0,-9.5,0,-20,0, ldraw_lib__2_4cylo()],
 ];

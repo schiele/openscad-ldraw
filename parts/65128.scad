@@ -2,7 +2,7 @@ use <../lib.scad>
 use <../p/4-4ndis.scad>
 use <../p/48/4-4cylo.scad>
 use <../p/48/4-4ndis.scad>
-use <../p/48/4-4rin17.scad>
+use <../p/48/4-4ring17.scad>
 use <../p/48/4-4ring9.scad>
 use <../p/box3u8p.scad>
 use <../p/box4.scad>
@@ -15,7 +15,7 @@ function ldraw_lib__65128() = [
 // 0 Container Lid  8 x  8 x  4.667 with Latches
 // 0 Name: 65128.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
-// 0 !LDRAW_ORG Part UPDATE 2023-06
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -25,7 +25,8 @@ function ldraw_lib__65128() = [
 // 0 !KEYWORDS VIDIYO
 // 
 // 0 !HISTORY 2023-11-19 [OrionP] Official Update 2023-06
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\65128s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__65128s01()],
@@ -82,8 +83,8 @@ function ldraw_lib__65128() = [
   [1,16,-80,28,0,0,1,0,0,0,20,-20,0,0, ldraw_lib__48__4_4ndis()],
 // 1 16 -88 28 0 0 1 0 0 0 2 -2 0 0 48\4-4ring9.dat
   [1,16,-88,28,0,0,1,0,0,0,2,-2,0,0, ldraw_lib__48__4_4ring9()],
-// 1 16 -88 28 0 0 1 0 0 0 1 -1 0 0 48\4-4rin17.dat
-  [1,16,-88,28,0,0,1,0,0,0,1,-1,0,0, ldraw_lib__48__4_4rin17()],
+// 1 16 -88 28 0 0 1 0 0 0 1 -1 0 0 48\4-4ring17.dat
+  [1,16,-88,28,0,0,1,0,0,0,1,-1,0,0, ldraw_lib__48__4_4ring17()],
 // 3 16 -80 107 -40 -80 48 0 -80 107 40
   [3,16,-80,107,-40,-80,48,0,-80,107,40],
 // 4 16 -80 -17 2.5 -80 -17 -2.5 -80 -24 -30 -80 -24 30
@@ -111,8 +112,8 @@ function ldraw_lib__65128() = [
   [1,16,80,28,0,0,-1,0,0,0,20,-20,0,0, ldraw_lib__48__4_4ndis()],
 // 1 16 88 28 0 0 -1 0 0 0 2 -2 0 0 48\4-4ring9.dat
   [1,16,88,28,0,0,-1,0,0,0,2,-2,0,0, ldraw_lib__48__4_4ring9()],
-// 1 16 88 28 0 0 -1 0 0 0 1 -1 0 0 48\4-4rin17.dat
-  [1,16,88,28,0,0,-1,0,0,0,1,-1,0,0, ldraw_lib__48__4_4rin17()],
+// 1 16 88 28 0 0 -1 0 0 0 1 -1 0 0 48\4-4ring17.dat
+  [1,16,88,28,0,0,-1,0,0,0,1,-1,0,0, ldraw_lib__48__4_4ring17()],
 // 3 16 80 107 40 80 48 0 80 107 -40
   [3,16,80,107,40,80,48,0,80,107,-40],
 // 4 16 80 -24 -30 80 -17 -2.5 80 -17 2.5 80 -24 30

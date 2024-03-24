@@ -2,7 +2,7 @@ use <../../lib.scad>
 use <../../p/4-4cyli.scad>
 use <../../p/4-4edge.scad>
 use <../../p/4-4ndis.scad>
-use <../../p/4-4rin17.scad>
+use <../../p/4-4ring17.scad>
 use <../../p/4-4ring2.scad>
 use <../../p/4-4ring9.scad>
 use <../../p/box4.scad>
@@ -11,7 +11,7 @@ function ldraw_lib__s__57915s02() = [
 // 0 ~Boat Hull Hovercraft Round Pinhole
 // 0 Name: s\57915s02.dat
 // 0 Author: Michael Heidemann [mikeheide]
-// 0 !LDRAW_ORG Subpart UPDATE 2012-02
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -20,7 +20,8 @@ function ldraw_lib__s__57915s02() = [
 // 
 // 0 !HISTORY 2012-03-06 [BlackBrick89] Closed gaps, added missing lines
 // 0 !HISTORY 2012-08-09 [PTadmin] Official Update 2012-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 3 0 23 0 0 0 8 0 0 0 23 box4.dat
   [1,16,0,3,0,23,0,0,0,8,0,0,0,23, ldraw_lib__box4()],
@@ -48,8 +49,8 @@ function ldraw_lib__s__57915s02() = [
   [1,16,0,28,0,-3,0,0,0,-1,0,0,0,3, ldraw_lib__4_4ring2()],
 // 1 16 0 28 0 -2 0 0 0 -1 0 0 0 2 4-4ring9.dat
   [1,16,0,28,0,-2,0,0,0,-1,0,0,0,2, ldraw_lib__4_4ring9()],
-// 1 16 0 28 0 -1 0 0 0 -1 0 0 0 1 4-4rin17.dat
-  [1,16,0,28,0,-1,0,0,0,-1,0,0,0,1, ldraw_lib__4_4rin17()],
+// 1 16 0 28 0 -1 0 0 0 -1 0 0 0 1 4-4ring17.dat
+  [1,16,0,28,0,-1,0,0,0,-1,0,0,0,1, ldraw_lib__4_4ring17()],
 // 1 16 0 11 0 -9 0 0 0 17 0 0 0 -9 4-4cyli.dat
   [1,16,0,11,0,-9,0,0,0,17,0,0,0,-9, ldraw_lib__4_4cyli()],
 // 0 BFC INVERTNEXT

@@ -5,7 +5,7 @@ use <../p/2-4ndis.scad>
 use <../p/4-4cylo.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4edge.scad>
-use <../p/4-4rin12.scad>
+use <../p/4-4ring12.scad>
 use <../p/4-4ring7.scad>
 use <../p/box3u2p.scad>
 use <../p/box5.scad>
@@ -18,7 +18,7 @@ function ldraw_lib__20310() = [
 // 0 Brick  1 x  1 with Scroll with Open Stud
 // 0 Name: 20310.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
-// 0 !LDRAW_ORG Part UPDATE 2020-03
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -26,7 +26,8 @@ function ldraw_lib__20310() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 4 16 -10 24 10 -6 24 6 -6 24 -6 -10 24 -10
   [4,16,-10,24,10,-6,24,6,-6,24,-6,-10,24,-10],
@@ -85,8 +86,8 @@ function ldraw_lib__20310() = [
   [3,16,6.5,0,-10,10,0,-10,10,0,10],
 // 1 16 0 0 -11.75 0 0 -6.5 0 1 0 1.75 0 0 rect2p.dat
   [1,16,0,0,-11.75,0,0,-6.5,0,1,0,1.75,0,0, ldraw_lib__rect2p()],
-// 1 16 0 0 -20 0 0 -.5 0 1 0 .5 0 0 4-4rin12.dat
-  [1,16,0,0,-20,0,0,-.5,0,1,0,.5,0,0, ldraw_lib__4_4rin12()],
+// 1 16 0 0 -20 0 0 -.5 0 1 0 .5 0 0 4-4ring12.dat
+  [1,16,0,0,-20,0,0,-.5,0,1,0,.5,0,0, ldraw_lib__4_4ring12()],
 // 1 16 0 0 -20 -6.5 0 0 0 1 0 0 0 6.5 2-4ndis.dat
   [1,16,0,0,-20,-6.5,0,0,0,1,0,0,0,6.5, ldraw_lib__2_4ndis()],
 // 1 16 0 0 -20 -6.5 0 0 0 1 0 0 0 -6.5 2-4edge.dat

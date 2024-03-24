@@ -1,5 +1,5 @@
 use <../lib.scad>
-use <../p/4-4rin16.scad>
+use <../p/4-4ring16.scad>
 use <s/61200s01.scad>
 use <s/61200s02.scad>
 use <../p/stud4o.scad>
@@ -7,7 +7,7 @@ function ldraw_lib__61200() = [
 // 0 Minifig Head Kel'Dor with Breathing Apparatus
 // 0 Name: 61200.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
-// 0 !LDRAW_ORG Part UPDATE 2022-04
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -20,7 +20,8 @@ function ldraw_lib__61200() = [
 // 0 !HISTORY 2019-10-04 [GeraldLasser] File preparation for LDraw Parts Tracker
 // 0 !HISTORY 2020-03-11 [Holly-Wood] Fixed conds
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\61200s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__61200s01()],
@@ -33,8 +34,8 @@ function ldraw_lib__61200() = [
 // 
 // 1 16 0 -29 0 1 0 0 0 -7.25 0 0 0 1 stud4o.dat
   [1,16,0,-29,0,1,0,0,0,-7.25,0,0,0,1, ldraw_lib__stud4o()],
-// 1 16 0 0 0 .5 0 0 0 -1 0 0 0 .5 4-4rin16.dat
-  [1,16,0,0,0,.5,0,0,0,-1,0,0,0,.5, ldraw_lib__4_4rin16()],
+// 1 16 0 0 0 .5 0 0 0 -1 0 0 0 .5 4-4ring16.dat
+  [1,16,0,0,0,.5,0,0,0,-1,0,0,0,.5, ldraw_lib__4_4ring16()],
 // 
 // 3 16 0 -29.196 -13.045 -1.184 -28.499 -13.491 1.184 -28.499 -13.491
   [3,16,0,-29.196,-13.045,-1.184,-28.499,-13.491,1.184,-28.499,-13.491],

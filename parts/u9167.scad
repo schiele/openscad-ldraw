@@ -2,12 +2,12 @@ use <../lib.scad>
 use <../p/4-4cylc.scad>
 use <../p/4-4cylo.scad>
 use <../p/4-4ndis.scad>
-use <../p/4-4rin12.scad>
-use <../p/4-4rin13.scad>
-use <../p/4-4rin21.scad>
-use <../p/4-4rin22.scad>
 use <../p/4-4ring1.scad>
+use <../p/4-4ring12.scad>
+use <../p/4-4ring13.scad>
 use <../p/4-4ring2.scad>
+use <../p/4-4ring21.scad>
+use <../p/4-4ring22.scad>
 use <../p/4-4ring5.scad>
 use <../p/4-4ring8.scad>
 use <../p/4-4ring9.scad>
@@ -19,17 +19,18 @@ function ldraw_lib__u9167() = [
 // 0 Wheel  4 x 19 with Stub Axles
 // 0 Name: u9167.dat
 // 0 Author: Alex Taylor [anathema]
-// 0 !LDRAW_ORG Part UPDATE 2011-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS aeroplane, Airplane, Fabuland, Plane, tricycle, trike
+// 0 !KEYWORDS Airplane, Fabuland, Plane, aeroplane, tricycle, trike
 // 
 // 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 -4 0 0 -1 1 0 0 0 -1 0 48\4-4con23.dat
   [1,16,0,0,-4,0,0,-1,1,0,0,0,-1,0, ldraw_lib__48__4_4con23()],
@@ -73,30 +74,30 @@ function ldraw_lib__u9167() = [
   [3,16,5.358,-12.934,-5,2.5,-15.502,-5,0,-14,-5],
 // 1 16 0 0 -10 2 0 0 0 0 -2 0 1 0 4-4ring1.dat
   [1,16,0,0,-10,2,0,0,0,0,-2,0,1,0, ldraw_lib__4_4ring1()],
-// 1 16 0 0 -6 1 0 0 0 0 -1 0 1 0 4-4rin12.dat
-  [1,16,0,0,-6,1,0,0,0,0,-1,0,1,0, ldraw_lib__4_4rin12()],
-// 1 16 0 0 5 -1 0 0 0 0 -1 0 -1 0 4-4rin13.dat
-  [1,16,0,0,5,-1,0,0,0,0,-1,0,-1,0, ldraw_lib__4_4rin13()],
-// 1 16 0 0 -5 1 0 0 0 0 -1 0 1 0 4-4rin13.dat
-  [1,16,0,0,-5,1,0,0,0,0,-1,0,1,0, ldraw_lib__4_4rin13()],
+// 1 16 0 0 -6 1 0 0 0 0 -1 0 1 0 4-4ring12.dat
+  [1,16,0,0,-6,1,0,0,0,0,-1,0,1,0, ldraw_lib__4_4ring12()],
+// 1 16 0 0 5 -1 0 0 0 0 -1 0 -1 0 4-4ring13.dat
+  [1,16,0,0,5,-1,0,0,0,0,-1,0,-1,0, ldraw_lib__4_4ring13()],
+// 1 16 0 0 -5 1 0 0 0 0 -1 0 1 0 4-4ring13.dat
+  [1,16,0,0,-5,1,0,0,0,0,-1,0,1,0, ldraw_lib__4_4ring13()],
 // 1 16 0 0 5 -7 0 0 0 0 -7 0 -1 0 4-4ring2.dat
   [1,16,0,0,5,-7,0,0,0,0,-7,0,-1,0, ldraw_lib__4_4ring2()],
 // 1 16 0 0 -5 -2.679 0 -6.467 -6.467 0 2.679 0 1 0 7-8ring2.dat
   [1,16,0,0,-5,-2.679,0,-6.467,-6.467,0,2.679,0,1,0, ldraw_lib__7_8ring2()],
-// 1 16 0 0 5 -1 0 0 0 0 -1 0 -1 0 4-4rin21.dat
-  [1,16,0,0,5,-1,0,0,0,0,-1,0,-1,0, ldraw_lib__4_4rin21()],
-// 1 16 0 0 -5 1 0 0 0 0 -1 0 1 0 4-4rin21.dat
-  [1,16,0,0,-5,1,0,0,0,0,-1,0,1,0, ldraw_lib__4_4rin21()],
-// 1 16 0 0 5 -1 0 0 0 0 -1 0 -1 0 4-4rin22.dat
-  [1,16,0,0,5,-1,0,0,0,0,-1,0,-1,0, ldraw_lib__4_4rin22()],
-// 1 16 0 0 -5 1 0 0 0 0 -1 0 1 0 4-4rin22.dat
-  [1,16,0,0,-5,1,0,0,0,0,-1,0,1,0, ldraw_lib__4_4rin22()],
+// 1 16 0 0 5 -1 0 0 0 0 -1 0 -1 0 4-4ring21.dat
+  [1,16,0,0,5,-1,0,0,0,0,-1,0,-1,0, ldraw_lib__4_4ring21()],
+// 1 16 0 0 -5 1 0 0 0 0 -1 0 1 0 4-4ring21.dat
+  [1,16,0,0,-5,1,0,0,0,0,-1,0,1,0, ldraw_lib__4_4ring21()],
+// 1 16 0 0 5 -1 0 0 0 0 -1 0 -1 0 4-4ring22.dat
+  [1,16,0,0,5,-1,0,0,0,0,-1,0,-1,0, ldraw_lib__4_4ring22()],
+// 1 16 0 0 -5 1 0 0 0 0 -1 0 1 0 4-4ring22.dat
+  [1,16,0,0,-5,1,0,0,0,0,-1,0,1,0, ldraw_lib__4_4ring22()],
 // 1 16 0 0 5 23 0 0 0 0 23 0 -1 0 48\4-4aring.dat
   [1,16,0,0,5,23,0,0,0,0,23,0,-1,0, ldraw_lib__48__4_4aring()],
 // 1 16 0 0 -5 -23 0 0 0 0 23 0 1 0 48\4-4aring.dat
   [1,16,0,0,-5,-23,0,0,0,0,23,0,1,0, ldraw_lib__48__4_4aring()],
-// 1 16 0 0 6 -1 0 0 0 0 -1 0 -1 0 4-4rin12.dat
-  [1,16,0,0,6,-1,0,0,0,0,-1,0,-1,0, ldraw_lib__4_4rin12()],
+// 1 16 0 0 6 -1 0 0 0 0 -1 0 -1 0 4-4ring12.dat
+  [1,16,0,0,6,-1,0,0,0,0,-1,0,-1,0, ldraw_lib__4_4ring12()],
 // 1 16 0 0 10 2 0 0 0 0 2 0 -1 0 4-4ring1.dat
   [1,16,0,0,10,2,0,0,0,0,2,0,-1,0, ldraw_lib__4_4ring1()],
 // 1 16 0 0 10 0.5 0 0 0 0 0.5 0 -1 0 4-4ring8.dat

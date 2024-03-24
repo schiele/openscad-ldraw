@@ -8,8 +8,8 @@ use <../../p/4-4con4.scad>
 use <../../p/4-4cyli.scad>
 use <../../p/4-4cylo.scad>
 use <../../p/4-4edge.scad>
-use <../../p/4-4rin11.scad>
 use <../../p/4-4ring1.scad>
+use <../../p/4-4ring11.scad>
 use <../../p/4-4ring3.scad>
 use <../../p/8/3-8cylo.scad>
 use <../../p/8/3-8ndis.scad>
@@ -20,7 +20,7 @@ function ldraw_lib__s__33492s01() = [
 // 0 ~Cone  1.5 x  1.5 x  0.667 Truncated without Outer Surface
 // 0 Name: s\33492s01.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Subpart UPDATE 2020-02
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -30,7 +30,8 @@ function ldraw_lib__s__33492s01() = [
 // 0 !HISTORY 2018-01-28 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2018-02-16 [Philo] File preparation for LDraw Parts Tracker
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 stud2a.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2a()],
@@ -48,8 +49,8 @@ function ldraw_lib__s__33492s01() = [
   [1,16,0,10.4,0,13.66061,0,0,0,1.4,0,0,0,13.66061, ldraw_lib__4_4cylo()],
 // 1 16 0 15.6 0 10.92848 0 0 0 1 0 0 0 10.92848 4-4edge.dat
   [1,16,0,15.6,0,10.92848,0,0,0,1,0,0,0,10.92848, ldraw_lib__4_4edge()],
-// 1 16 0 15.6 0 0.91071 0 0 0 -1 0 0 0 0.91071 4-4rin11.dat
-  [1,16,0,15.6,0,0.91071,0,0,0,-1,0,0,0,0.91071, ldraw_lib__4_4rin11()],
+// 1 16 0 15.6 0 0.91071 0 0 0 -1 0 0 0 0.91071 4-4ring11.dat
+  [1,16,0,15.6,0,0.91071,0,0,0,-1,0,0,0,0.91071, ldraw_lib__4_4ring11()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 15.6 0 10.01778 0 0 0 -7.6 0 0 0 10.01778 4-4cylo.dat

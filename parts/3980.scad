@@ -9,7 +9,7 @@ use <../p/2-4cyli.scad>
 use <../p/2-4disc.scad>
 use <../p/2-4edge.scad>
 use <../p/2-4ndis.scad>
-use <../p/2-4rin10.scad>
+use <../p/2-4ring10.scad>
 use <../p/2-4ring5.scad>
 use <../p/3-16cyli.scad>
 use <../p/3-16edge.scad>
@@ -21,7 +21,7 @@ function ldraw_lib__3980() = [
 // 0 ~Window Fabuland Rectangular
 // 0 Name: 3980.dat
 // 0 Author: Sybrand Bonsma [Sybrand]
-// 0 !LDRAW_ORG Part UPDATE 2014-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CW
@@ -30,7 +30,8 @@ function ldraw_lib__3980() = [
 // 
 // 0 !HISTORY 2014-08-16 [cwdee] Rewrite
 // 0 !HISTORY 2014-12-23 [PTadmin] Official Update 2014-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Rear box frame
 // 4 16 31 76 4 -31 76 4 -31 76 0 31 76 0
@@ -970,8 +971,8 @@ function ldraw_lib__3980() = [
   [1,16,16.5,16.5,-2,16.5,0,0,0,0,-16.5,0,-1,0, ldraw_lib__2_4cyli()],
 // 1 16 16.5 16.5 -2 2.5 0 0 0 0 -2.5 0 1 0 2-4ring5.dat
   [1,16,16.5,16.5,-2,2.5,0,0,0,0,-2.5,0,1,0, ldraw_lib__2_4ring5()],
-// 1 16 16.5 16.5 -2 1.5 0 0 0 0 -1.5 0 1 0 2-4rin10.dat
-  [1,16,16.5,16.5,-2,1.5,0,0,0,0,-1.5,0,1,0, ldraw_lib__2_4rin10()],
+// 1 16 16.5 16.5 -2 1.5 0 0 0 0 -1.5 0 1 0 2-4ring10.dat
+  [1,16,16.5,16.5,-2,1.5,0,0,0,0,-1.5,0,1,0, ldraw_lib__2_4ring10()],
 // 4 16 29 16.5 -2 33 16.5 -2 33 17 -2 29 36 -2
   [4,16,29,16.5,-2,33,16.5,-2,33,17,-2,29,36,-2],
 // 3 16 33 17 -2 29 40 -2 29 36 -2
@@ -994,8 +995,8 @@ function ldraw_lib__3980() = [
   [1,16,-16.5,16.5,-2,-16.5,0,0,0,0,-16.5,0,-1,0, ldraw_lib__2_4cyli()],
 // 1 16 -16.5 16.5 -2 -2.5 0 0 0 0 -2.5 0 1 0 2-4ring5.dat
   [1,16,-16.5,16.5,-2,-2.5,0,0,0,0,-2.5,0,1,0, ldraw_lib__2_4ring5()],
-// 1 16 -16.5 16.5 -2 -1.5 0 0 0 0 -1.5 0 1 0 2-4rin10.dat
-  [1,16,-16.5,16.5,-2,-1.5,0,0,0,0,-1.5,0,1,0, ldraw_lib__2_4rin10()],
+// 1 16 -16.5 16.5 -2 -1.5 0 0 0 0 -1.5 0 1 0 2-4ring10.dat
+  [1,16,-16.5,16.5,-2,-1.5,0,0,0,0,-1.5,0,1,0, ldraw_lib__2_4ring10()],
 // 4 16 -29 26 -2 -33 17 -2 -33 16.5 -2 -29 16.5 -2
   [4,16,-29,26,-2,-33,17,-2,-33,16.5,-2,-29,16.5,-2],
 // 3 16 -29 26 -2 -29 30 -2 -33 17 -2

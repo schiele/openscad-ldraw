@@ -4,14 +4,14 @@ use <../p/4-4con3.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4edge.scad>
-use <../p/4-4rin10.scad>
 use <../p/4-4ring1.scad>
+use <../p/4-4ring10.scad>
 use <../p/4-4ring4.scad>
 function ldraw_lib__u9057() = [
 // 0 ~Electric Train 12V Power Pickup Plug Pin Type 1
 // 0 Name: u9057.dat
 // 0 Author: Niels Karsdorp [nielsk]
-// 0 !LDRAW_ORG Part UPDATE 2012-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CW
@@ -22,7 +22,8 @@ function ldraw_lib__u9057() = [
 // 
 // 0 !HISTORY 2012-02-03 [Steffen] replaced color 383 by 494
 // 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 4 0 3 0 0 0 1 0 0 0 3 4-4edge.dat
   [1,16,0,4,0,3,0,0,0,1,0,0,0,3, ldraw_lib__4_4edge()],
@@ -58,8 +59,8 @@ function ldraw_lib__u9057() = [
   [1,16,0,-5,0,0.5,0,0,0,-1,0,0,0,0.5, ldraw_lib__4_4con11()],
 // 1 16 0 -6 0 1 0 0 0 1 0 0 0 1 4-4ring4.dat
   [1,16,0,-6,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4ring4()],
-// 1 16 0 -6 0 0.5 0 0 0 1 0 0 0 0.5 4-4rin10.dat
-  [1,16,0,-6,0,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__4_4rin10()],
+// 1 16 0 -6 0 0.5 0 0 0 1 0 0 0 0.5 4-4ring10.dat
+  [1,16,0,-6,0,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__4_4ring10()],
 // 1 16 0 -6 0 4 0 0 0 -4 0 0 0 4 4-4cyli.dat
   [1,16,0,-6,0,4,0,0,0,-4,0,0,0,4, ldraw_lib__4_4cyli()],
 // 1 16 0 -10 0 1 0 0 0 -1.5 0 0 0 1 4-4con3.dat

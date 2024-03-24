@@ -2,16 +2,16 @@ use <../lib.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4cylo.scad>
 use <../p/4-4edge.scad>
-use <../p/4-4rin17.scad>
-use <../p/4-4rin19.scad>
-use <../p/4-4rin20.scad>
+use <../p/4-4ring17.scad>
+use <../p/4-4ring19.scad>
+use <../p/4-4ring20.scad>
 use <../p/4-4ring6.scad>
 use <../p/4-8sphe.scad>
 function ldraw_lib__30081() = [
 // 0 ~Glass for Panel  4 x  3 x  3 with Porthole
 // 0 Name: 30081.dat
 // 0 Author: Magnus Forsberg [MagFors]
-// 0 !LDRAW_ORG Part UPDATE 2011-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -19,12 +19,13 @@ function ldraw_lib__30081() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 17 0 0 0 1 0 0 0 17 4-4edge.dat
   [1,16,0,0,0,17,0,0,0,1,0,0,0,17, ldraw_lib__4_4edge()],
-// 1 16 0 0 0 -1 0 0 0 -1 0 0 0 1 4-4rin17.dat
-  [1,16,0,0,0,-1,0,0,0,-1,0,0,0,1, ldraw_lib__4_4rin17()],
+// 1 16 0 0 0 -1 0 0 0 -1 0 0 0 1 4-4ring17.dat
+  [1,16,0,0,0,-1,0,0,0,-1,0,0,0,1, ldraw_lib__4_4ring17()],
 // 1 16 0 0 0 -3 0 0 0 -1 0 0 0 3 4-4ring6.dat
   [1,16,0,0,0,-3,0,0,0,-1,0,0,0,3, ldraw_lib__4_4ring6()],
 // 0 BFC INVERTNEXT
@@ -41,10 +42,10 @@ function ldraw_lib__30081() = [
   [1,16,0,-8,0,19,0,0,0,-3,0,0,0,-19, ldraw_lib__4_8sphe()],
 // 1 16 0 -4 0 19 0 0 0 1 0 0 0 19 4-4edge.dat
   [1,16,0,-4,0,19,0,0,0,1,0,0,0,19, ldraw_lib__4_4edge()],
-// 1 16 0 -4 0 1 0 0 0 1 0 0 0 1 4-4rin19.dat
-  [1,16,0,-4,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4rin19()],
-// 1 16 0 -4 0 1 0 0 0 1 0 0 0 1 4-4rin20.dat
-  [1,16,0,-4,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4rin20()],
+// 1 16 0 -4 0 1 0 0 0 1 0 0 0 1 4-4ring19.dat
+  [1,16,0,-4,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4ring19()],
+// 1 16 0 -4 0 1 0 0 0 1 0 0 0 1 4-4ring20.dat
+  [1,16,0,-4,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4ring20()],
 // 1 16 0 -4 0 21 0 0 0 4 0 0 0 21 4-4cylo.dat
   [1,16,0,-4,0,21,0,0,0,4,0,0,0,21, ldraw_lib__4_4cylo()],
 ];

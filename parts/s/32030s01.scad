@@ -3,12 +3,12 @@ use <../../p/1-8con19.scad>
 use <../../p/1-8con20.scad>
 use <../../p/1-8cyli.scad>
 use <../../p/1-8edge.scad>
-use <../../p/1-8rin23.scad>
+use <../../p/1-8ring23.scad>
 function ldraw_lib__s__32030s01() = [
 // 0 ~Excavator Bucket 18 x 10 (Rib and tooth)
 // 0 Name: s\32030s01.dat
 // 0 Author: Guy Vivan [guyvivan]
-// 0 !LDRAW_ORG Subpart UPDATE 2009-01
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -16,7 +16,8 @@ function ldraw_lib__s__32030s01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2009-05-02 [PTadmin] Official Update 2009-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 2 24 -162 56 4 -70 56 4
   [2,24,-162,56,4,-70,56,4],
@@ -42,10 +43,10 @@ function ldraw_lib__s__32030s01() = [
   [1,16,-70,8,4,0,0,46,46,0,0,0,1,0, ldraw_lib__1_8edge()],
 // 1 16 -70 8 -4 0 0 46 46 0 0 0 1 0 1-8edge.dat
   [1,16,-70,8,-4,0,0,46,46,0,0,0,1,0, ldraw_lib__1_8edge()],
-// 1 16 -70 8 -4 0 0 2 2 0 0 0 1 0 1-8rin23.dat
-  [1,16,-70,8,-4,0,0,2,2,0,0,0,1,0, ldraw_lib__1_8rin23()],
-// 1 16 -70 8 4 0 0 2 2 0 0 0 -1 0 1-8rin23.dat
-  [1,16,-70,8,4,0,0,2,2,0,0,0,-1,0, ldraw_lib__1_8rin23()],
+// 1 16 -70 8 -4 0 0 2 2 0 0 0 1 0 1-8ring23.dat
+  [1,16,-70,8,-4,0,0,2,2,0,0,0,1,0, ldraw_lib__1_8ring23()],
+// 1 16 -70 8 4 0 0 2 2 0 0 0 -1 0 1-8ring23.dat
+  [1,16,-70,8,4,0,0,2,2,0,0,0,-1,0, ldraw_lib__1_8ring23()],
 // 1 16 -70 8 -4 0 0 48 48 0 0 0 1 0 1-8edge.dat
   [1,16,-70,8,-4,0,0,48,48,0,0,0,1,0, ldraw_lib__1_8edge()],
 // 1 16 -70 8 -4 0 0 48 48 0 0 0 8 0 1-8cyli.dat

@@ -2,7 +2,7 @@ use <../lib.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4edge.scad>
 use <../p/4-4ndis.scad>
-use <../p/4-4rin15.scad>
+use <../p/4-4ring15.scad>
 use <../p/box4-4a.scad>
 use <../p/box4.scad>
 use <../p/box5.scad>
@@ -12,7 +12,7 @@ function ldraw_lib__3461() = [
 // 0 Propeller  4 Blade  5 Diameter with Rotor Holder
 // 0 Name: 3461.dat
 // 0 Author: Christian M. Angele [cma_1971]
-// 0 !LDRAW_ORG Part UPDATE 2022-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CW
@@ -27,7 +27,8 @@ function ldraw_lib__3461() = [
 // 0 !HISTORY 2009-12-29 [PTadmin] Official Update 2009-03
 // 0 !HISTORY 2021-03-17 [cwdee] Update description
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // center
 // 
@@ -55,10 +56,10 @@ function ldraw_lib__3461() = [
   [1,16,0,-16,0,8,0,0,0,1,0,0,0,8, ldraw_lib__4_4edge()],
 // 1 16 0 -20 0 8 0 0 0 1 0 0 0 8 4-4edge.dat
   [1,16,0,-20,0,8,0,0,0,1,0,0,0,8, ldraw_lib__4_4edge()],
-// 1 16 0 -8 0 0.5 0 0 0 -1 0 0 0 0.5 4-4rin15.dat
-  [1,16,0,-8,0,0.5,0,0,0,-1,0,0,0,0.5, ldraw_lib__4_4rin15()],
-// 1 16 0 -16 0 0.5 0 0 0 1 0 0 0 0.5 4-4rin15.dat
-  [1,16,0,-16,0,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__4_4rin15()],
+// 1 16 0 -8 0 0.5 0 0 0 -1 0 0 0 0.5 4-4ring15.dat
+  [1,16,0,-8,0,0.5,0,0,0,-1,0,0,0,0.5, ldraw_lib__4_4ring15()],
+// 1 16 0 -16 0 0.5 0 0 0 1 0 0 0 0.5 4-4ring15.dat
+  [1,16,0,-16,0,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__4_4ring15()],
 // 0
 // 1 16 0 -4 0 8 0 0 0 -1 0 0 0 8 4-4ndis.dat
   [1,16,0,-4,0,8,0,0,0,-1,0,0,0,8, ldraw_lib__4_4ndis()],

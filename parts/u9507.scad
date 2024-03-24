@@ -12,16 +12,16 @@ use <../p/2-4edge.scad>
 use <../p/2-4ndis.scad>
 use <../p/4-4cylo.scad>
 use <../p/4-4disc.scad>
-use <../p/4-4rin12.scad>
-use <../p/4-4rin13.scad>
-use <../p/4-4rin14.scad>
+use <../p/4-4ring12.scad>
+use <../p/4-4ring13.scad>
+use <../p/4-4ring14.scad>
 use <../p/4-4ring5.scad>
 use <../p/rect3.scad>
 function ldraw_lib__u9507() = [
 // 0 ~Duplo Train Engine Hood  2 x  2 - Top
 // 0 Name: u9507.dat
 // 0 Author: Tim Lampmann [L4mpi]
-// 0 !LDRAW_ORG Part UPDATE 2019-03
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -31,7 +31,8 @@ function ldraw_lib__u9507() = [
 // 0 !CATEGORY Brick
 // 
 // 0 !HISTORY 2019-12-27 [PTadmin] Official Update 2019-03
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 -32 24 -32 -8 0 0 0 -10 -8 0 48 0 1-4cyli.dat
   [1,16,-32,24,-32,-8,0,0,0,-10,-8,0,48,0, ldraw_lib__1_4cyli()],
@@ -261,12 +262,12 @@ function ldraw_lib__u9507() = [
   [1,16,0,0,12,15,0,0,0,1,0,0,0,15, ldraw_lib__2_4ndis()],
 // 1 16 0 4 12 2 0 0 0 1 0 0 0 2 4-4ring5.dat
   [1,16,0,4,12,2,0,0,0,1,0,0,0,2, ldraw_lib__4_4ring5()],
-// 1 16 0 4 12 1 0 0 0 1 0 0 0 1 4-4rin12.dat
-  [1,16,0,4,12,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4rin12()],
-// 1 16 0 0 12 1 0 0 0 1 0 0 0 -1 4-4rin13.dat
-  [1,16,0,0,12,1,0,0,0,1,0,0,0,-1, ldraw_lib__4_4rin13()],
-// 1 16 0 0 12 1 0 0 0 1 0 0 0 -1 4-4rin14.dat
-  [1,16,0,0,12,1,0,0,0,1,0,0,0,-1, ldraw_lib__4_4rin14()],
+// 1 16 0 4 12 1 0 0 0 1 0 0 0 1 4-4ring12.dat
+  [1,16,0,4,12,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4ring12()],
+// 1 16 0 0 12 1 0 0 0 1 0 0 0 -1 4-4ring13.dat
+  [1,16,0,0,12,1,0,0,0,1,0,0,0,-1, ldraw_lib__4_4ring13()],
+// 1 16 0 0 12 1 0 0 0 1 0 0 0 -1 4-4ring14.dat
+  [1,16,0,0,12,1,0,0,0,1,0,0,0,-1, ldraw_lib__4_4ring14()],
 // 3 16 -15 0 40 0 0 27 15 0 40
   [3,16,-15,0,40,0,0,27,15,0,40],
 // 3 16 15 0 27 15 0 40 0 0 27

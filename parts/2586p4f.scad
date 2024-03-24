@@ -1,7 +1,7 @@
 use <../lib.scad>
 use <../p/1-4disc.scad>
-use <../p/1-4rin17.scad>
 use <../p/1-4ring1.scad>
+use <../p/1-4ring17.scad>
 use <../p/1-4ring9.scad>
 use <s/2586p4fa.scad>
 use <s/2586s01.scad>
@@ -9,7 +9,7 @@ function ldraw_lib__2586p4f() = [
 // 0 Minifig Shield Ovoid with Bat Pattern
 // 0 Name: 2586p4f.dat
 // 0 Author: Chris Dee [cwdee]
-// 0 !LDRAW_ORG Part UPDATE 2014-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -25,14 +25,15 @@ function ldraw_lib__2586p4f() = [
 // 0 !HISTORY 2013-02-28 [MagFors] Changed colour 383 to 80 (printed silver)
 // 0 !HISTORY 2014-08-01 [MagFors] Changed description and added keywords
 // 0 !HISTORY 2014-12-23 [PTadmin] Official Update 2014-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2586s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2586s01()],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2586p4fa.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2586p4fa()],
-// 1 4 0 -14.5 -8 1 0 0 0 0 -1 0 1 0 1-4rin17.dat
-  [1,4,0,-14.5,-8,1,0,0,0,0,-1,0,1,0, ldraw_lib__1_4rin17()],
+// 1 4 0 -14.5 -8 1 0 0 0 0 -1 0 1 0 1-4ring17.dat
+  [1,4,0,-14.5,-8,1,0,0,0,0,-1,0,1,0, ldraw_lib__1_4ring17()],
 // 1 4 0 -14.5 -8 2 0 0 0 0 -2 0 1 0 1-4ring9.dat
   [1,4,0,-14.5,-8,2,0,0,0,0,-2,0,1,0, ldraw_lib__1_4ring9()],
 // 4 4 20 -14.5 -8 18 -14.5 -8 16.039 -2.939 -8 19 -2.5 -8
@@ -47,8 +48,8 @@ function ldraw_lib__2586p4f() = [
   [4,4,13,21.5,-8,10.222,20.398,-8,6.466,27.92,-8,9,29.5,-8],
 // 4 4 9 29.5 -8 6.466 27.92 -8 2.121 33.621 -8 4.243 35.743 -8
   [4,4,9,29.5,-8,6.466,27.92,-8,2.121,33.621,-8,4.243,35.743,-8],
-// 1 4 0 -14.5 -8 -1 0 0 0 0 -1 0 1 0 1-4rin17.dat
-  [1,4,0,-14.5,-8,-1,0,0,0,0,-1,0,1,0, ldraw_lib__1_4rin17()],
+// 1 4 0 -14.5 -8 -1 0 0 0 0 -1 0 1 0 1-4ring17.dat
+  [1,4,0,-14.5,-8,-1,0,0,0,0,-1,0,1,0, ldraw_lib__1_4ring17()],
 // 1 4 0 -14.5 -8 -2 0 0 0 0 -2 0 1 0 1-4ring9.dat
   [1,4,0,-14.5,-8,-2,0,0,0,0,-2,0,1,0, ldraw_lib__1_4ring9()],
 // 4 4 -19 -2.5 -8 -16.039 -2.939 -8 -18 -14.5 -8 -20 -14.5 -8

@@ -5,14 +5,14 @@ use <../../p/48/1-6chrd.scad>
 use <../../p/48/1-6con16.scad>
 use <../../p/48/1-6con17.scad>
 use <../../p/48/1-6edge.scad>
-use <../../p/48/1-6rin19.scad>
+use <../../p/48/1-6ring19.scad>
 use <../../p/npeghol7a.scad>
 use <../../p/rect2p.scad>
 function ldraw_lib__s__39367s04() = [
 // 0 ~Wheel 14 x 48 with  4 Spokes with Integral Tyre - Rim Centre Reinforcement
 // 0 Name: s\39367s04.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Subpart UPDATE 2023-06
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -22,6 +22,8 @@ function ldraw_lib__s__39367s04() = [
 // 0 !HISTORY 2020-06-28 [PTadmin] Official Update 2020-01
 // 0 !HISTORY 2023-07-21 [MagFors] Adapted to rounded npeg corners, added common structure
 // 0 !HISTORY 2023-11-19 [OrionP] Official Update 2023-06
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 1.60344 0 -.42964 .42964 0 1.60344 0 -8 0 48\1-6con17.dat
   [1,16,0,0,0,1.60344,0,-.42964,.42964,0,1.60344,0,-8,0, ldraw_lib__48__1_6con17()],
@@ -29,8 +31,8 @@ function ldraw_lib__s__39367s04() = [
   [1,16,0,0,0,1.60344,0,-.42964,.42964,0,1.60344,0,8,0, ldraw_lib__48__1_6con17()],
 // 1 16 0 0 -8 27.25843 0 -7.30387 7.30387 0 27.25843 0 1 0 48\1-6edge.dat
   [1,16,0,0,-8,27.25843,0,-7.30387,7.30387,0,27.25843,0,1,0, ldraw_lib__48__1_6edge()],
-// 1 16 0 0 -8 1.36292 0 -.36519 .36519 0 1.36292 0 1 0 48\1-6rin19.dat
-  [1,16,0,0,-8,1.36292,0,-.36519,.36519,0,1.36292,0,1,0, ldraw_lib__48__1_6rin19()],
+// 1 16 0 0 -8 1.36292 0 -.36519 .36519 0 1.36292 0 1 0 48\1-6ring19.dat
+  [1,16,0,0,-8,1.36292,0,-.36519,.36519,0,1.36292,0,1,0, ldraw_lib__48__1_6ring19()],
 // 1 16 0 0 -8 25.89551 0 -6.93868 6.93868 0 25.89551 0 1 0 48\1-6edge.dat
   [1,16,0,0,-8,25.89551,0,-6.93868,6.93868,0,25.89551,0,1,0, ldraw_lib__48__1_6edge()],
 // 0 BFC INVERTNEXT
@@ -43,8 +45,8 @@ function ldraw_lib__s__39367s04() = [
   [1,16,0,0,-2,24.37224,0,-6.53052,6.53052,0,24.37224,0,1,0, ldraw_lib__48__1_6chrd()],
 // 1 16 0 0 8 27.25843 0 -7.30387 7.30387 0 27.25843 0 -1 0 48\1-6edge.dat
   [1,16,0,0,8,27.25843,0,-7.30387,7.30387,0,27.25843,0,-1,0, ldraw_lib__48__1_6edge()],
-// 1 16 0 0 8 1.36292 0 -.36519 .36519 0 1.36292 0 -1 0 48\1-6rin19.dat
-  [1,16,0,0,8,1.36292,0,-.36519,.36519,0,1.36292,0,-1,0, ldraw_lib__48__1_6rin19()],
+// 1 16 0 0 8 1.36292 0 -.36519 .36519 0 1.36292 0 -1 0 48\1-6ring19.dat
+  [1,16,0,0,8,1.36292,0,-.36519,.36519,0,1.36292,0,-1,0, ldraw_lib__48__1_6ring19()],
 // 1 16 0 0 8 25.89551 0 -6.93868 6.93868 0 25.89551 0 -1 0 48\1-6edge.dat
   [1,16,0,0,8,25.89551,0,-6.93868,6.93868,0,25.89551,0,-1,0, ldraw_lib__48__1_6edge()],
 // 0 BFC INVERTNEXT

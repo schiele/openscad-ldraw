@@ -3,7 +3,7 @@ use <../../p/1-8edge.scad>
 use <../../p/1-8ring3.scad>
 use <../../p/2-4cylo.scad>
 use <../../p/2-4edge.scad>
-use <../../p/2-4rin12.scad>
+use <../../p/2-4ring12.scad>
 use <../../p/2-4ring3.scad>
 use <../../p/3-16chrd.scad>
 use <../../p/3-16cylo.scad>
@@ -12,7 +12,7 @@ function ldraw_lib__s__17485s01() = [
 // 0 ~Brick  2 x  2 Round with Pin Holes - 3/16 without Patterned Surface
 // 0 Name: s\17485s01.dat
 // 0 Author: Magnus Forsberg [MagFors]
-// 0 !LDRAW_ORG Subpart UPDATE 2020-02
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -22,7 +22,8 @@ function ldraw_lib__s__17485s01() = [
 // 0 !HISTORY 2015-12-30 [PTadmin] Official Update 2015-02
 // 0 !HISTORY 2019-10-13 [cwdee] Remove decorated surfaces
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // inside cavity
 // 
@@ -196,8 +197,8 @@ function ldraw_lib__s__17485s01() = [
   [5,24,6.123,24,-14.7825,6.123,3,-14.7825,6.3442,20,-14.6347,0.000114,3,-16.0004],
 // 
 // 0 // peghole
-// 1 16 2 10 0 0 1 0 0.5 0 0 0 0 -0.5 2-4rin12.dat
-  [1,16,2,10,0,0,1,0,0.5,0,0,0,0,-0.5, ldraw_lib__2_4rin12()],
+// 1 16 2 10 0 0 1 0 0.5 0 0 0 0 -0.5 2-4ring12.dat
+  [1,16,2,10,0,0,1,0,0.5,0,0,0,0,-0.5, ldraw_lib__2_4ring12()],
 // 1 16 2 10 0 0 1 0 6.5 0 0 0 0 -6.5 3-8ndis.dat
   [1,16,2,10,0,0,1,0,6.5,0,0,0,0,-6.5, ldraw_lib__3_8ndis()],
 // 0 BFC INVERTNEXT

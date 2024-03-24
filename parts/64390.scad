@@ -1,6 +1,6 @@
 use <../lib.scad>
 use <../p/48/2-4cylo.scad>
-use <../p/48/2-4rin16.scad>
+use <../p/48/2-4ring16.scad>
 use <../p/48/2-4ring34.scad>
 use <../p/rect.scad>
 use <../p/rect2p.scad>
@@ -13,7 +13,7 @@ function ldraw_lib__64390() = [
 // 0 Door  1 x  4 x  6 with Window and Reinforced Edge
 // 0 Name: 64390.dat
 // 0 Author: Vincent Messenet [Cheenzo]
-// 0 !LDRAW_ORG Part UPDATE 2020-03
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 !HELP Window should be placed at 50 -20.75 -5, i.e.
@@ -31,7 +31,8 @@ function ldraw_lib__64390() = [
 // 0 !HISTORY 2020-09-15 [Cheenzo] removed duplicated surfaces and unnecessary vertices
 // 0 !HISTORY 2020-09-29 [Cheenzo] Complete rewrite using prims, added help, subfiled hinges
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 -6.875 1 0 0 0 1 0 0 0 1 s\64390s01.dat
   [1,16,0,0,-6.875,1,0,0,0,1,0,0,0,1, ldraw_lib__s__64390s01()],
@@ -60,12 +61,12 @@ function ldraw_lib__64390() = [
   [0,"BFC","INVERTNEXT"],
 // 1 16 50 -13.5 -10 -40 0 0 0 0 -40 0 10 0 48\2-4cylo.dat
   [1,16,50,-13.5,-10,-40,0,0,0,0,-40,0,10,0, ldraw_lib__48__2_4cylo()],
-// 1 16 50 -13.5 -10 -2.5 0 0 0 0 -2.5 0 1 0 48\2-4rin16.dat
-  [1,16,50,-13.5,-10,-2.5,0,0,0,0,-2.5,0,1,0, ldraw_lib__48__2_4rin16()],
+// 1 16 50 -13.5 -10 -2.5 0 0 0 0 -2.5 0 1 0 48\2-4ring16.dat
+  [1,16,50,-13.5,-10,-2.5,0,0,0,0,-2.5,0,1,0, ldraw_lib__48__2_4ring16()],
 // 1 16 50 -13.5 -10 -1.25 0 0 0 0 -1.25 0 1 0 48\2-4ring34.dat
   [1,16,50,-13.5,-10,-1.25,0,0,0,0,-1.25,0,1,0, ldraw_lib__48__2_4ring34()],
-// 1 16 50 -13.5 0 -2.5 0 0 0 0 -2.5 0 -1 0 48\2-4rin16.dat
-  [1,16,50,-13.5,0,-2.5,0,0,0,0,-2.5,0,-1,0, ldraw_lib__48__2_4rin16()],
+// 1 16 50 -13.5 0 -2.5 0 0 0 0 -2.5 0 -1 0 48\2-4ring16.dat
+  [1,16,50,-13.5,0,-2.5,0,0,0,0,-2.5,0,-1,0, ldraw_lib__48__2_4ring16()],
 // 1 16 50 -13.5 0 -1.25 0 0 0 0 -1.25 0 -1 0 48\2-4ring34.dat
   [1,16,50,-13.5,0,-1.25,0,0,0,0,-1.25,0,-1,0, ldraw_lib__48__2_4ring34()],
 // 1 16 8.125 65.375 0 0 0 1.875 -11.5 0 -1.875 0 -1 0 rect2p.dat

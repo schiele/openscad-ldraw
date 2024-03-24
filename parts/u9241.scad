@@ -6,9 +6,9 @@ use <../p/4-4con2.scad>
 use <../p/4-4con3.scad>
 use <../p/4-4cylo.scad>
 use <../p/4-4edge.scad>
-use <../p/4-4rin16.scad>
-use <../p/4-4rin18.scad>
 use <../p/4-4ring1.scad>
+use <../p/4-4ring16.scad>
+use <../p/4-4ring18.scad>
 use <../p/4-4ring2.scad>
 use <../p/4-4ring3.scad>
 use <../p/4-4ring4.scad>
@@ -22,7 +22,7 @@ function ldraw_lib__u9241() = [
 // 0 ~Train Wheel for RC Train with Technic Axle Hole
 // 0 Name: u9241.dat
 // 0 Author: Matthew J. Chiles [mchiles]
-// 0 !LDRAW_ORG Part UPDATE 2013-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -33,7 +33,8 @@ function ldraw_lib__u9241() = [
 // 
 // 0 !HISTORY 2013-07-01 [MMR1988] Reworked (Dimensions and more Primitives)
 // 0 !HISTORY 2013-12-23 [PTadmin] Official Update 2013-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Center Technic Hole and faces
 // 
@@ -47,8 +48,8 @@ function ldraw_lib__u9241() = [
   [1,16,0,0,-12.5,0,0,3,3,0,0,0,1,0, ldraw_lib__4_4ring2()],
 // 1 16 0 0 0 0 0 2 2 0 0 0 -1 0 4-4ring3.dat
   [1,16,0,0,0,0,0,2,2,0,0,0,-1,0, ldraw_lib__4_4ring3()],
-// 1 16 0 0 0 0 0 0.5 0.5 0 0 0 -1 0 4-4rin16.dat
-  [1,16,0,0,0,0,0,0.5,0.5,0,0,0,-1,0, ldraw_lib__4_4rin16()],
+// 1 16 0 0 0 0 0 0.5 0.5 0 0 0 -1 0 4-4ring16.dat
+  [1,16,0,0,0,0,0,0.5,0.5,0,0,0,-1,0, ldraw_lib__4_4ring16()],
 // 
 // 0 // Inside of Wheel
 // 1 16 0 0 -7.5 8.5 0 0 0 0 -8.5 0 7.5 0 4-4cylo.dat
@@ -105,8 +106,8 @@ function ldraw_lib__u9241() = [
   [1,16,0,0,-12.5,18,0,0,0,0,-18,0,1,0, ldraw_lib__4_4cylo()],
 // 1 16 0 0 -12.5 0 0 2.25 2.25 0 0 0 1 0 4-4ring8.dat
   [1,16,0,0,-12.5,0,0,2.25,2.25,0,0,0,1,0, ldraw_lib__4_4ring8()],
-// 1 16 0 0 -12.5 0 0 1.125 1.125 0 0 0 1 0 4-4rin18.dat
-  [1,16,0,0,-12.5,0,0,1.125,1.125,0,0,0,1,0, ldraw_lib__4_4rin18()],
+// 1 16 0 0 -12.5 0 0 1.125 1.125 0 0 0 1 0 4-4ring18.dat
+  [1,16,0,0,-12.5,0,0,1.125,1.125,0,0,0,1,0, ldraw_lib__4_4ring18()],
 // 1 16 0 0 -12.5 21.375 0 0 0 0 -21.375 0 2 0 4-4cylo.dat
   [1,16,0,0,-12.5,21.375,0,0,0,0,-21.375,0,2,0, ldraw_lib__4_4cylo()],
 // 0 BFC INVERTNEXT

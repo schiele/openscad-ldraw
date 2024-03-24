@@ -7,10 +7,10 @@ use <../../p/2-4cyli.scad>
 use <../../p/2-4cylo.scad>
 use <../../p/2-4disc.scad>
 use <../../p/2-4edge.scad>
-use <../../p/2-4rin11.scad>
-use <../../p/2-4rin13.scad>
-use <../../p/2-4rin15.scad>
 use <../../p/2-4ring1.scad>
+use <../../p/2-4ring11.scad>
+use <../../p/2-4ring13.scad>
+use <../../p/2-4ring15.scad>
 use <../../p/2-4ring19.scad>
 use <../../p/2-4ring2.scad>
 use <../../p/2-4ring5.scad>
@@ -21,7 +21,7 @@ function ldraw_lib__s__72092s02() = [
 // 0 ~Minifig Trophy Cup  5L - Half
 // 0 Name: s\72092s02.dat
 // 0 Author: Santeri Piippo [arezey]
-// 0 !LDRAW_ORG Subpart UPDATE 2019-01
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -29,7 +29,8 @@ function ldraw_lib__s__72092s02() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 0 0 24 0 1 0 -24 0 0 2-4edge.dat
   [1,16,0,0,0,0,0,24,0,1,0,-24,0,0, ldraw_lib__2_4edge()],
@@ -41,14 +42,14 @@ function ldraw_lib__s__72092s02() = [
   [1,16,0,0,0,0,0,20.25,0,-6.25,0,-20.25,0,0, ldraw_lib__2_4cylo()],
 // 1 16 0 0 0 0 0 2.25 0 -1 0 -2.25 0 0 2-4ring9.dat
   [1,16,0,0,0,0,0,2.25,0,-1,0,-2.25,0,0, ldraw_lib__2_4ring9()],
-// 1 16 0 0 0 0 0 1.5 0 -1 0 -1.5 0 0 2-4rin15.dat
-  [1,16,0,0,0,0,0,1.5,0,-1,0,-1.5,0,0, ldraw_lib__2_4rin15()],
+// 1 16 0 0 0 0 0 1.5 0 -1 0 -1.5 0 0 2-4ring15.dat
+  [1,16,0,0,0,0,0,1.5,0,-1,0,-1.5,0,0, ldraw_lib__2_4ring15()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -7.5 0 0 0 5.5 0 -8.75 0 -5.5 0 0 2-4cylo.dat
   [1,16,0,-7.5,0,0,0,5.5,0,-8.75,0,-5.5,0,0, ldraw_lib__2_4cylo()],
-// 1 16 0 -7.5 0 0 0 0.5 0 -1 0 -0.5 0 0 2-4rin11.dat
-  [1,16,0,-7.5,0,0,0,0.5,0,-1,0,-0.5,0,0, ldraw_lib__2_4rin11()],
+// 1 16 0 -7.5 0 0 0 0.5 0 -1 0 -0.5 0 0 2-4ring11.dat
+  [1,16,0,-7.5,0,0,0,0.5,0,-1,0,-0.5,0,0, ldraw_lib__2_4ring11()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -21.25 0 0 0 3 0 5 0 -3 0 0 2-4cylc.dat
@@ -65,8 +66,8 @@ function ldraw_lib__s__72092s02() = [
   [1,16,0,-6.25,0,0,0,1,0,-0.25,0,-1,0,0, ldraw_lib__2_4con12()],
 // 1 16 0 -6.25 0 0 0 6.5 0 -1 0 -6.5 0 0 2-4ring2.dat
   [1,16,0,-6.25,0,0,0,6.5,0,-1,0,-6.5,0,0, ldraw_lib__2_4ring2()],
-// 1 16 0 -6.25 0 0 0 1.5 0 -1 0 -1.5 0 0 2-4rin13.dat
-  [1,16,0,-6.25,0,0,0,1.5,0,-1,0,-1.5,0,0, ldraw_lib__2_4rin13()],
+// 1 16 0 -6.25 0 0 0 1.5 0 -1 0 -1.5 0 0 2-4ring13.dat
+  [1,16,0,-6.25,0,0,0,1.5,0,-1,0,-1.5,0,0, ldraw_lib__2_4ring13()],
 // 5 24 4.9751 -6.25 -12.0107 0 -6.25 -13 0 -6.5 -12 7.4626 -6.25 -18.016
   [5,24,4.9751,-6.25,-12.0107,0,-6.25,-13,0,-6.5,-12,7.4626,-6.25,-18.016],
 // 5 24 9.1923 -6.25 -9.1923 4.9751 -6.25 -12.0107 4.5924 -6.5 -11.0868 13.7885 -6.25 -13.7885

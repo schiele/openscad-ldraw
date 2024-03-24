@@ -4,7 +4,7 @@ use <../p/4-4cyli.scad>
 use <../p/4-4cylo.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4edge.scad>
-use <../p/4-4rin10.scad>
+use <../p/4-4ring10.scad>
 use <../p/4-4ring4.scad>
 use <../p/48/1-8chrd.scad>
 use <../p/48/4-4cylo.scad>
@@ -21,7 +21,7 @@ function ldraw_lib__19215() = [
 // 0 Wheel Cover  5 Spoke Thick with Edge Bolts
 // 0 Name: 19215.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2017-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -33,7 +33,8 @@ function ldraw_lib__19215() = [
 // 0 !HISTORY 2016-03-18 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2017-01-10 [Philo] File preparation for LDraw Parts Tracker
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 1 0 0 -30 30 0 0 0 3.75 0 48\4-4cylo.dat
   [1,16,0,0,1,0,0,-30,30,0,0,0,3.75,0, ldraw_lib__48__4_4cylo()],
@@ -181,8 +182,8 @@ function ldraw_lib__19215() = [
   [1,16,0,0,3.75,0,0,-9.75,9.75,0,0,0,1,0, ldraw_lib__4_4disc()],
 // 1 16 0 0 1 0 0 -10.5 10.5 0 0 0 1 0 4-4edge.dat
   [1,16,0,0,1,0,0,-10.5,10.5,0,0,0,1,0, ldraw_lib__4_4edge()],
-// 1 16 0 0 1 0 0 -1.05 1.05 0 0 0 1 0 4-4rin10.dat
-  [1,16,0,0,1,0,0,-1.05,1.05,0,0,0,1,0, ldraw_lib__4_4rin10()],
+// 1 16 0 0 1 0 0 -1.05 1.05 0 0 0 1 0 4-4ring10.dat
+  [1,16,0,0,1,0,0,-1.05,1.05,0,0,0,1,0, ldraw_lib__4_4ring10()],
 // 4 16 -24.561 7.98 1 -24.561 7.98 4.75 -25.825 0 4.75 -25.825 0 1
   [4,16,-24.561,7.98,1,-24.561,7.98,4.75,-25.825,0,4.75,-25.825,0,1],
 // 4 16 -25.825 0 1 -25.825 0 4.75 -25.667 -2.854 4.75 -25.667 -2.854 1

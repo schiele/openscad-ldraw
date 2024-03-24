@@ -1,17 +1,17 @@
 use <../../lib.scad>
 use <../../p/1-16chrd.scad>
 use <../../p/1-16tndis.scad>
-use <../../p/1-4rin11.scad>
+use <../../p/1-4ring11.scad>
 use <../../p/1-8chrd.scad>
 use <../../p/1-8ring11.scad>
 use <../../p/1-8tndis.scad>
-use <../../p/2-4rin11.scad>
+use <../../p/2-4ring11.scad>
 use <../../p/5-16chrd.scad>
 function ldraw_lib__s__14769py0s01() = [
 // 0 ~Tile  2 x  2 Round with Four Dark Grey Rings inside Black Disc Pattern - One Ring
 // 0 Name: s\14769py0s01.dat
 // 0 Author: Massimo Maso [Sirio]
-// 0 !LDRAW_ORG Subpart UPDATE 2023-03
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -19,17 +19,18 @@ function ldraw_lib__s__14769py0s01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2023-06-24 [OrionP] Official Update 2023-03
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Primitives
-// 1 0 0 0 0 .5 0 0 0 1 0 0 0 .5 1-4rin11.dat
-  [1,0,0,0,0,.5,0,0,0,1,0,0,0,.5, ldraw_lib__1_4rin11()],
+// 1 0 0 0 0 .5 0 0 0 1 0 0 0 .5 1-4ring11.dat
+  [1,0,0,0,0,.5,0,0,0,1,0,0,0,.5, ldraw_lib__1_4ring11()],
 // 1 0 0 0 0 0 0 -.5 0 1 0 .5 0 0 1-8ring11.dat
   [1,0,0,0,0,0,0,-.5,0,1,0,.5,0,0, ldraw_lib__1_8ring11()],
 // 1 0 0 0 0 -6 0 0 0 1 0 0 0 6 1-8chrd.dat
   [1,0,0,0,0,-6,0,0,0,1,0,0,0,6, ldraw_lib__1_8chrd()],
-// 1 0 0 0 0 .5 0 0 0 1 0 0 0 -.5 2-4rin11.dat
-  [1,0,0,0,0,.5,0,0,0,1,0,0,0,-.5, ldraw_lib__2_4rin11()],
+// 1 0 0 0 0 .5 0 0 0 1 0 0 0 -.5 2-4ring11.dat
+  [1,0,0,0,0,.5,0,0,0,1,0,0,0,-.5, ldraw_lib__2_4ring11()],
 // 1 72 0 0 0 5.5 0 0 0 1 0 0 0 5.5 1-8chrd.dat
   [1,72,0,0,0,5.5,0,0,0,1,0,0,0,5.5, ldraw_lib__1_8chrd()],
 // 1 16 0 0 0 0 0 5.5 0 1 0 5.5 0 0 1-8chrd.dat

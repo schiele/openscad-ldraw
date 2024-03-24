@@ -3,9 +3,9 @@ use <../p/1-4cylc.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4edge.scad>
 use <../p/4-4ndis.scad>
-use <../p/4-4rin14.scad>
-use <../p/4-4rin36.scad>
-use <../p/4-4rin37.scad>
+use <../p/4-4ring14.scad>
+use <../p/4-4ring36.scad>
+use <../p/4-4ring37.scad>
 use <../p/r04o4600.scad>
 use <../p/rect.scad>
 use <../p/rect2p.scad>
@@ -16,7 +16,7 @@ function ldraw_lib__30342() = [
 // 0 Rock Arctic Globe, Bottom
 // 0 Name: 30342.dat
 // 0 Author: Stan Isachenko [angmarec]
-// 0 !LDRAW_ORG Part UPDATE 2014-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -29,7 +29,8 @@ function ldraw_lib__30342() = [
 // 0 !HISTORY 2014-01-08 [angmarec] File preparation for LDraw Parts Tracker
 // 0 !HISTORY 2014-01-21 [Philo] Closed gap
 // 0 !HISTORY 2014-06-21 [PTadmin] Official Update 2014-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
@@ -47,8 +48,8 @@ function ldraw_lib__30342() = [
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -45.25 0 0 0 6.428 0 8 0 -6.428 0 0 r04o4600.dat
   [1,16,0,-45.25,0,0,0,6.428,0,8,0,-6.428,0,0, ldraw_lib__r04o4600()],
-// 1 16 0 -8.45 0 0.42853 0 0 0 1 0 0 0 0.42853 4-4rin14.dat
-  [1,16,0,-8.45,0,0.42853,0,0,0,1,0,0,0,0.42853, ldraw_lib__4_4rin14()],
+// 1 16 0 -8.45 0 0.42853 0 0 0 1 0 0 0 0.42853 4-4ring14.dat
+  [1,16,0,-8.45,0,0.42853,0,0,0,1,0,0,0,0.42853, ldraw_lib__4_4ring14()],
 // 1 16 0 -45.25 0 -36 0 0 0 1 0 0 0 -36 4-4edge.dat
   [1,16,0,-45.25,0,-36,0,0,0,1,0,0,0,-36, ldraw_lib__4_4edge()],
 // 1 16 0 -4 0 1 0 0 0 -1 0 0 0 -1 stud4.dat
@@ -71,10 +72,10 @@ function ldraw_lib__30342() = [
   [1,16,0,-40,0,38,0,0,0,-5.25,0,0,0,38, ldraw_lib__4_4edge()],
 // 1 16 0 -45.25 0 38 0 0 0 -5.25 0 0 0 38 4-4edge.dat
   [1,16,0,-45.25,0,38,0,0,0,-5.25,0,0,0,38, ldraw_lib__4_4edge()],
-// 1 16 0 -45.25 0 1 0 0 0 5.25 0 0 0 1 4-4rin36.dat
-  [1,16,0,-45.25,0,1,0,0,0,5.25,0,0,0,1, ldraw_lib__4_4rin36()],
-// 1 16 0 -45.25 0 1 0 0 0 5.25 0 0 0 1 4-4rin37.dat
-  [1,16,0,-45.25,0,1,0,0,0,5.25,0,0,0,1, ldraw_lib__4_4rin37()],
+// 1 16 0 -45.25 0 1 0 0 0 5.25 0 0 0 1 4-4ring36.dat
+  [1,16,0,-45.25,0,1,0,0,0,5.25,0,0,0,1, ldraw_lib__4_4ring36()],
+// 1 16 0 -45.25 0 1 0 0 0 5.25 0 0 0 1 4-4ring37.dat
+  [1,16,0,-45.25,0,1,0,0,0,5.25,0,0,0,1, ldraw_lib__4_4ring37()],
 // 0 // ////
 // 1 16 0 -4 0 4 0 0 0 -1 0 0 0 4 4-4ndis.dat
   [1,16,0,-4,0,4,0,0,0,-1,0,0,0,4, ldraw_lib__4_4ndis()],

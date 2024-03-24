@@ -11,8 +11,8 @@ use <../../p/48/4-4con2.scad>
 use <../../p/48/4-4con3.scad>
 use <../../p/48/4-4cyli.scad>
 use <../../p/48/4-4edge.scad>
-use <../../p/48/4-4rin49.scad>
-use <../../p/48/4-4rin97.scad>
+use <../../p/48/4-4ring49.scad>
+use <../../p/48/4-4ring97.scad>
 use <../../p/box4.scad>
 use <50990s02.scad>
 use <../../p/stud4a.scad>
@@ -20,7 +20,7 @@ function ldraw_lib__s__50990s01() = [
 // 0 ~Dish 10 x 10 Inverted without Top Face and Studs
 // 0 Name: s\50990s01.dat
 // 0 Author: Alex Taylor [anathema]
-// 0 !LDRAW_ORG Subpart UPDATE 2015-02
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -31,7 +31,8 @@ function ldraw_lib__s__50990s01() = [
 // 0 !HISTORY 2013-07-21 [PTadmin] Official Update 2013-01
 // 0 !HISTORY 2015-11-14 [MagFors] Removed studs
 // 0 !HISTORY 2015-12-30 [PTadmin] Official Update 2015-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\50990s02.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__50990s02()],
@@ -51,10 +52,10 @@ function ldraw_lib__s__50990s01() = [
   [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__s__50990s02()],
 // 1 16 0 0 0 20 0 0 0 1 0 0 0 20 48\4-4aring.dat
   [1,16,0,0,0,20,0,0,0,1,0,0,0,20, ldraw_lib__48__4_4aring()],
-// 1 16 0 24 0 1 0 0 0 -1 0 0 0 1 48\4-4rin97.dat
-  [1,16,0,24,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__48__4_4rin97()],
-// 1 16 0 24 0 2 0 0 0 -1 0 0 0 2 48\4-4rin49.dat
-  [1,16,0,24,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__48__4_4rin49()],
+// 1 16 0 24 0 1 0 0 0 -1 0 0 0 1 48\4-4ring97.dat
+  [1,16,0,24,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__48__4_4ring97()],
+// 1 16 0 24 0 2 0 0 0 -1 0 0 0 2 48\4-4ring49.dat
+  [1,16,0,24,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__48__4_4ring49()],
 // 
 // 1 16 0 24 0 100 0 0 0 1 0 0 0 100 48\4-4edge.dat
   [1,16,0,24,0,100,0,0,0,1,0,0,0,100, ldraw_lib__48__4_4edge()],

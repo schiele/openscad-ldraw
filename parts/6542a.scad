@@ -6,9 +6,9 @@ use <../p/4-4ring1.scad>
 use <../p/4-4ring3.scad>
 use <../p/48/4-4cyli.scad>
 use <../p/48/4-4edge.scad>
-use <../p/48/4-4rin15.scad>
-use <../p/48/4-4rin16.scad>
 use <../p/48/4-4ring100.scad>
+use <../p/48/4-4ring15.scad>
+use <../p/48/4-4ring16.scad>
 use <../p/48/4-4ring7.scad>
 use <../p/bushloc2.scad>
 use <../p/tooth16.scad>
@@ -16,7 +16,7 @@ function ldraw_lib__6542a() = [
 // 0 Technic Gear 16 Tooth with Clutch
 // 0 Name: 6542a.dat
 // 0 Author: James Jessiman
-// 0 !LDRAW_ORG Part UPDATE 2019-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -31,7 +31,8 @@ function ldraw_lib__6542a() = [
 // 0 !HISTORY 2012-08-09 [PTadmin] Official Update 2012-02
 // 0 !HISTORY 2018-10-01 [mkennedy] Moved inner edgelines of bushloc2 to main file.
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 -8 1 0 0 0 0 1 0 -1 0 bushloc2.dat
   [1,16,0,0,-8,1,0,0,0,0,1,0,-1,0, ldraw_lib__bushloc2()],
@@ -285,10 +286,10 @@ function ldraw_lib__6542a() = [
   [1,16,0,0,10,2,0,0,0,0,2,0,-1,0, ldraw_lib__4_4ring3()],
 // 1 16 0 0 10 15 0 0 0 0 15 0 1 0 48\4-4edge.dat
   [1,16,0,0,10,15,0,0,0,0,15,0,1,0, ldraw_lib__48__4_4edge()],
-// 1 16 0 0 10 1 0 0 0 0 1 0 -1 0 48\4-4rin15.dat
-  [1,16,0,0,10,1,0,0,0,0,1,0,-1,0, ldraw_lib__48__4_4rin15()],
-// 1 16 0 0 10 1 0 0 0 0 1 0 -1 0 48\4-4rin16.dat
-  [1,16,0,0,10,1,0,0,0,0,1,0,-1,0, ldraw_lib__48__4_4rin16()],
+// 1 16 0 0 10 1 0 0 0 0 1 0 -1 0 48\4-4ring15.dat
+  [1,16,0,0,10,1,0,0,0,0,1,0,-1,0, ldraw_lib__48__4_4ring15()],
+// 1 16 0 0 10 1 0 0 0 0 1 0 -1 0 48\4-4ring16.dat
+  [1,16,0,0,10,1,0,0,0,0,1,0,-1,0, ldraw_lib__48__4_4ring16()],
 // 1 16 0 0 10 0.17 0 0 0 0 0.17 0 -1 0 48\4-4ring100.dat
   [1,16,0,0,10,0.17,0,0,0,0,0.17,0,-1,0, ldraw_lib__48__4_4ring100()],
 // 0 BFC INVERTNEXT

@@ -4,7 +4,7 @@ use <../../p/48/1-24edge.scad>
 use <../../p/48/1-48edge.scad>
 use <../../p/48/4-4cylo.scad>
 use <../../p/48/4-4edge.scad>
-use <../../p/48/4-4rin16.scad>
+use <../../p/48/4-4ring16.scad>
 use <../../p/48/4-4ring39.scad>
 use <../../p/48/4-4ring85.scad>
 use <../../p/48/4-4ring9.scad>
@@ -13,7 +13,7 @@ function ldraw_lib__s__49736s01() = [
 // 0 ~Cylinder Tube Slide Connector Female
 // 0 Name: s\49736s01.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Subpart UPDATE 2020-03
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -21,14 +21,15 @@ function ldraw_lib__s__49736s01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 10 0 0 43 43 0 0 0 -20 0 48\4-4cylo.dat
   [1,16,0,0,10,0,0,43,43,0,0,0,-20,0, ldraw_lib__48__4_4cylo()],
 // 1 16 0 0 -10 0 0 1 1 0 0 0 1 0 48\4-4ring39.dat
   [1,16,0,0,-10,0,0,1,1,0,0,0,1,0, ldraw_lib__48__4_4ring39()],
-// 1 16 0 0 -10 0 0 2.5 2.5 0 0 0 1 0 48\4-4rin16.dat
-  [1,16,0,0,-10,0,0,2.5,2.5,0,0,0,1,0, ldraw_lib__48__4_4rin16()],
+// 1 16 0 0 -10 0 0 2.5 2.5 0 0 0 1 0 48\4-4ring16.dat
+  [1,16,0,0,-10,0,0,2.5,2.5,0,0,0,1,0, ldraw_lib__48__4_4ring16()],
 // 1 16 0 0 -10 0 0 0.5 0.5 0 0 0 1 0 48\4-4ring85.dat
   [1,16,0,0,-10,0,0,0.5,0.5,0,0,0,1,0, ldraw_lib__48__4_4ring85()],
 // 0 BFC INVERTNEXT
@@ -37,8 +38,8 @@ function ldraw_lib__s__49736s01() = [
   [1,16,0,0,10,0,0,40,40,0,0,0,-16,0, ldraw_lib__48__4_4cylo()],
 // 1 16 0 0 -6 0 0 4 4 0 0 0 -1 0 48\4-4ring9.dat
   [1,16,0,0,-6,0,0,4,4,0,0,0,-1,0, ldraw_lib__48__4_4ring9()],
-// 1 16 0 0 10 0 0 2.5 2.5 0 0 0 -1 0 48\4-4rin16.dat
-  [1,16,0,0,10,0,0,2.5,2.5,0,0,0,-1,0, ldraw_lib__48__4_4rin16()],
+// 1 16 0 0 10 0 0 2.5 2.5 0 0 0 -1 0 48\4-4ring16.dat
+  [1,16,0,0,10,0,0,2.5,2.5,0,0,0,-1,0, ldraw_lib__48__4_4ring16()],
 // 1 16 0 0 10 0 0 0.5 0.5 0 0 0 -1 0 48\4-4ring85.dat
   [1,16,0,0,10,0,0,0.5,0.5,0,0,0,-1,0, ldraw_lib__48__4_4ring85()],
 // 1 16 0 0 -10 0 0 39 39 0 0 0 -1 0 48\4-4edge.dat

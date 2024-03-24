@@ -10,8 +10,8 @@ use <../p/4-4con8.scad>
 use <../p/4-4con9.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4edge.scad>
-use <../p/4-4rin10.scad>
-use <../p/4-4rin22.scad>
+use <../p/4-4ring10.scad>
+use <../p/4-4ring22.scad>
 use <../p/4-8sphe.scad>
 use <../p/box4-7a.scad>
 use <../p/rect.scad>
@@ -20,7 +20,7 @@ function ldraw_lib__2999() = [
 // 0 Technic Large Wheel Hub
 // 0 Name: 2999.dat
 // 0 Author: Jeff Boen [onyx]
-// 0 !LDRAW_ORG Part UPDATE 2011-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CW
@@ -37,17 +37,18 @@ function ldraw_lib__2999() = [
 // 0 !HISTORY 2008-07-10 [guyvivan] Add missing lines and conditional lines and use more primitives (2004-12-20)
 // 0 !HISTORY 2011-02-20 [Philo] Restored official part origin and orientation.
 // 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Top flange outer cylinder
 // 
 // 1 16 0 -31 0 23 0 0 0 3 0 0 0 23 4-4cyli.dat
   [1,16,0,-31,0,23,0,0,0,3,0,0,0,23, ldraw_lib__4_4cyli()],
 // 0 // Top torus surface
-// 1 16 0 -31 0 1.9 0 0 0 1 0 0 0 1.9 4-4rin10.dat
-  [1,16,0,-31,0,1.9,0,0,0,1,0,0,0,1.9, ldraw_lib__4_4rin10()],
-// 1 16 0 -31 0 2.09 0 0 0 1 0 0 0 2.09 4-4rin10.dat
-  [1,16,0,-31,0,2.09,0,0,0,1,0,0,0,2.09, ldraw_lib__4_4rin10()],
+// 1 16 0 -31 0 1.9 0 0 0 1 0 0 0 1.9 4-4ring10.dat
+  [1,16,0,-31,0,1.9,0,0,0,1,0,0,0,1.9, ldraw_lib__4_4ring10()],
+// 1 16 0 -31 0 2.09 0 0 0 1 0 0 0 2.09 4-4ring10.dat
+  [1,16,0,-31,0,2.09,0,0,0,1,0,0,0,2.09, ldraw_lib__4_4ring10()],
 // 0 // Flange under upper lip
 // 1 16 0 -27.999 0 20 0 0 0 2 0 0 0 20 4-4cyli.dat
   [1,16,0,-27.999,0,20,0,0,0,2,0,0,0,20, ldraw_lib__4_4cyli()],
@@ -58,10 +59,10 @@ function ldraw_lib__2999() = [
   [1,16,0,-31,0,19,0,0,0,-1,0,0,0,19, ldraw_lib__4_4edge()],
 // 1 16 0 -28 0 23 0 0 0 -1 0 0 0 23 4-4edge.dat
   [1,16,0,-28,0,23,0,0,0,-1,0,0,0,23, ldraw_lib__4_4edge()],
-// 1 16 0 -28 0 2 0 0 0 -1 0 0 0 2 4-4rin10.dat
-  [1,16,0,-28,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__4_4rin10()],
-// 1 16 0 -28 0 1 0 0 0 -1 0 0 0 1 4-4rin22.dat
-  [1,16,0,-28,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__4_4rin22()],
+// 1 16 0 -28 0 2 0 0 0 -1 0 0 0 2 4-4ring10.dat
+  [1,16,0,-28,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__4_4ring10()],
+// 1 16 0 -28 0 1 0 0 0 -1 0 0 0 1 4-4ring22.dat
+  [1,16,0,-28,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__4_4ring22()],
 // 1 16 0 -28 0 20 0 0 0 -1 0 0 0 20 4-4edge.dat
   [1,16,0,-28,0,20,0,0,0,-1,0,0,0,20, ldraw_lib__4_4edge()],
 // 1 16 0 -28 0 16 0 0 0 -1 0 0 0 16 4-4edge.dat

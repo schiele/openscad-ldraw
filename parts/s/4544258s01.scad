@@ -2,13 +2,13 @@ use <../../lib.scad>
 use <../../p/2-4disc.scad>
 use <../../p/4-4disc.scad>
 use <../../p/4-4ndis.scad>
-use <../../p/4-4rin13.scad>
+use <../../p/4-4ring13.scad>
 use <../../p/4-4ring9.scad>
 function ldraw_lib__s__4544258s01() = [
 // 0 ~Sticker Porthole
 // 0 Name: s\4544258s01.dat
 // 0 Author: J.C. Tchang [tchang]
-// 0 !LDRAW_ORG Subpart UPDATE 2012-03
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -16,14 +16,15 @@ function ldraw_lib__s__4544258s01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2012-12-28 [PTadmin] Official Update 2012-03
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 8 0 0 0 1 0 0 0 8 4-4ndis.dat
   [1,16,0,0,0,8,0,0,0,1,0,0,0,8, ldraw_lib__4_4ndis()],
 // 1 0 0 0 0 0.8 0 0 0 1 0 0 0 0.8 4-4ring9.dat
   [1,0,0,0,0,0.8,0,0,0,1,0,0,0,0.8, ldraw_lib__4_4ring9()],
-// 1 0 0 0 0 0.4 0 0 0 1 0 0 0 0.4 4-4rin13.dat
-  [1,0,0,0,0,0.4,0,0,0,1,0,0,0,0.4, ldraw_lib__4_4rin13()],
+// 1 0 0 0 0 0.4 0 0 0 1 0 0 0 0.4 4-4ring13.dat
+  [1,0,0,0,0,0.4,0,0,0,1,0,0,0,0.4, ldraw_lib__4_4ring13()],
 // 1 0 0 0 0 3.67696 0 3.67696 0 1 0 -3.67696 0 3.67696 2-4disc.dat
   [1,0,0,0,0,3.67696,0,3.67696,0,1,0,-3.67696,0,3.67696, ldraw_lib__2_4disc()],
 // 1 0 -6.4 0 0 0.5 0 0 0 1 0 0 0 0.5 4-4disc.dat

@@ -4,7 +4,7 @@ use <../p/48/4-4con9.scad>
 use <../p/48/4-4cyli.scad>
 use <../p/48/4-4cylo.scad>
 use <../p/48/4-4edge.scad>
-use <../p/48/4-4rin12.scad>
+use <../p/48/4-4ring12.scad>
 use <../p/48/4-4ring5.scad>
 use <../p/48/4-4ring8.scad>
 use <s/69909s01.scad>
@@ -13,7 +13,7 @@ function ldraw_lib__69909() = [
 // 0 Tyre 28/ 57 x 43 Off Road
 // 0 Name: 69909.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2023-05
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -23,7 +23,8 @@ function ldraw_lib__69909() = [
 // 0 !KEYWORDS 75.1 x 28, Buggy, Knob, Set 42124
 // 
 // 0 !HISTORY 2023-10-31 [OrionP] Official Update 2023-05
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
@@ -33,8 +34,8 @@ function ldraw_lib__69909() = [
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 -29 0 0 -49.8462 49.8462 0 0 0 5 0 48\4-4cylo.dat
   [1,16,0,0,-29,0,0,-49.8462,49.8462,0,0,0,5,0, ldraw_lib__48__4_4cylo()],
-// 1 16 0 0 -29 0 0 -4.1539 4.1539 0 0 0 1 0 48\4-4rin12.dat
-  [1,16,0,0,-29,0,0,-4.1539,4.1539,0,0,0,1,0, ldraw_lib__48__4_4rin12()],
+// 1 16 0 0 -29 0 0 -4.1539 4.1539 0 0 0 1 0 48\4-4ring12.dat
+  [1,16,0,0,-29,0,0,-4.1539,4.1539,0,0,0,1,0, ldraw_lib__48__4_4ring12()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 33 0 0 54 54 0 0 0 -4 0 48\4-4cylo.dat
@@ -43,8 +44,8 @@ function ldraw_lib__69909() = [
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 29 0 0 -49.8462 49.8462 0 0 0 -5 0 48\4-4cylo.dat
   [1,16,0,0,29,0,0,-49.8462,49.8462,0,0,0,-5,0, ldraw_lib__48__4_4cylo()],
-// 1 16 0 0 29 0 0 -4.1539 4.1539 0 0 0 -1 0 48\4-4rin12.dat
-  [1,16,0,0,29,0,0,-4.1539,4.1539,0,0,0,-1,0, ldraw_lib__48__4_4rin12()],
+// 1 16 0 0 29 0 0 -4.1539 4.1539 0 0 0 -1 0 48\4-4ring12.dat
+  [1,16,0,0,29,0,0,-4.1539,4.1539,0,0,0,-1,0, ldraw_lib__48__4_4ring12()],
 // 1 16 0 0 -24 0 0 -6.23078 -6.23078 0 0 0 -1 0 48\4-4ring8.dat
   [1,16,0,0,-24,0,0,-6.23078,-6.23078,0,0,0,-1,0, ldraw_lib__48__4_4ring8()],
 // 1 16 0 0 -24 0 0 -56.07698 -56.07698 0 0 0 -1 0 48\4-4edge.dat

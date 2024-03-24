@@ -2,8 +2,8 @@ use <../lib.scad>
 use <../p/2-4chrd.scad>
 use <../p/2-4cylo.scad>
 use <../p/2-4ndis.scad>
-use <../p/2-4rin14.scad>
 use <../p/2-4ring1.scad>
+use <../p/2-4ring14.scad>
 use <../p/3-16chrd.scad>
 use <../p/3-16cylo.scad>
 use <../p/4-4cylc.scad>
@@ -31,7 +31,7 @@ function ldraw_lib__2648() = [
 // 0 Container Lifting Grab Tool Half
 // 0 Name: 2648.dat
 // 0 Author: Max Martin Richter [MMR1988]
-// 0 !LDRAW_ORG Part UPDATE 2022-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -40,7 +40,8 @@ function ldraw_lib__2648() = [
 // 
 // 0 !HISTORY 2020-10-24 [MMR1988] Rewritten from scratch
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
@@ -231,8 +232,8 @@ function ldraw_lib__2648() = [
   [1,16,0,0,25,0,0,3.5,3.5,0,0,0,1.5,0, ldraw_lib__4_4cylc()],
 // 1 16 0 0 26.5 0 0 3.5 3.5 0 0 0 -1 0 2-4ring1.dat
   [1,16,0,0,26.5,0,0,3.5,3.5,0,0,0,-1,0, ldraw_lib__2_4ring1()],
-// 1 16 0 0 26.5 0 0 .5 .5 0 0 0 -1 0 2-4rin14.dat
-  [1,16,0,0,26.5,0,0,.5,.5,0,0,0,-1,0, ldraw_lib__2_4rin14()],
+// 1 16 0 0 26.5 0 0 .5 .5 0 0 0 -1 0 2-4ring14.dat
+  [1,16,0,0,26.5,0,0,.5,.5,0,0,0,-1,0, ldraw_lib__2_4ring14()],
 // 1 16 0 0 26.5 0 0 -3.5 3.5 0 0 0 -1 0 2-4ndis.dat
   [1,16,0,0,26.5,0,0,-3.5,3.5,0,0,0,-1,0, ldraw_lib__2_4ndis()],
 // 3 16 0 -7.5 26.5 0 -7 26.5 -8 -6.421162 26.5
@@ -357,8 +358,8 @@ function ldraw_lib__2648() = [
   [1,16,0,0,-25.5,0,0,3.5,3.5,0,0,0,-1,0, ldraw_lib__4_4cylc()],
 // 1 16 0 0 -26.5 0 0 3.5 3.5 0 0 0 -1 0 2-4ring1.dat
   [1,16,0,0,-26.5,0,0,3.5,3.5,0,0,0,-1,0, ldraw_lib__2_4ring1()],
-// 1 16 0 0 -26.5 0 0 .5 .5 0 0 0 -1 0 2-4rin14.dat
-  [1,16,0,0,-26.5,0,0,.5,.5,0,0,0,-1,0, ldraw_lib__2_4rin14()],
+// 1 16 0 0 -26.5 0 0 .5 .5 0 0 0 -1 0 2-4ring14.dat
+  [1,16,0,0,-26.5,0,0,.5,.5,0,0,0,-1,0, ldraw_lib__2_4ring14()],
 // 1 16 0 0 -26.5 0 0 -3.5 3.5 0 0 0 -1 0 2-4ndis.dat
   [1,16,0,0,-26.5,0,0,-3.5,3.5,0,0,0,-1,0, ldraw_lib__2_4ndis()],
 // 3 16 0 -7.5 -26.5 0 -7 -26.5 -9.5 -6.21888 -26.5

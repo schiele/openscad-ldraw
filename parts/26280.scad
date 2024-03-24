@@ -14,9 +14,9 @@ use <../p/4-4cylc.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4cylo.scad>
 use <../p/4-4edge.scad>
-use <../p/4-4rin15.scad>
-use <../p/4-4rin16.scad>
-use <../p/4-4rin17.scad>
+use <../p/4-4ring15.scad>
+use <../p/4-4ring16.scad>
+use <../p/4-4ring17.scad>
 use <../p/4-4ring5.scad>
 use <../p/4-4ring9.scad>
 use <../p/rect.scad>
@@ -26,7 +26,7 @@ function ldraw_lib__26280() = [
 // 0 ~Technic Pneumatic Pump  2 x  2 Base with  3L Beam
 // 0 Name: 26280.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2018-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -34,7 +34,8 @@ function ldraw_lib__26280() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2018-01-30 [PTadmin] Official Update 2018-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 0 -1 0 1 0 0 0 0 1 32523.dat
   [1,16,0,0,0,0,-1,0,1,0,0,0,0,1, ldraw_lib__32523()],
@@ -52,14 +53,14 @@ function ldraw_lib__26280() = [
   [1,16,0,-126,0,0,0,-17,0,1,0,-17,0,0, ldraw_lib__4_4edge()],
 // 1 16 0 -126 0 0 0 -17 0 22 0 -17 0 0 4-4cyli.dat
   [1,16,0,-126,0,0,0,-17,0,22,0,-17,0,0, ldraw_lib__4_4cyli()],
-// 1 16 0 -126 0 0 0 1 0 1 0 -1 0 0 4-4rin16.dat
-  [1,16,0,-126,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__4_4rin16()],
-// 1 16 0 -104 0 0 0 1 0 1 0 -1 0 0 4-4rin17.dat
-  [1,16,0,-104,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__4_4rin17()],
+// 1 16 0 -126 0 0 0 1 0 1 0 -1 0 0 4-4ring16.dat
+  [1,16,0,-126,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__4_4ring16()],
+// 1 16 0 -104 0 0 0 1 0 1 0 -1 0 0 4-4ring17.dat
+  [1,16,0,-104,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__4_4ring17()],
 // 1 16 0 -104 0 0 0 2 0 1 0 2 0 0 4-4ring9.dat
   [1,16,0,-104,0,0,0,2,0,1,0,2,0,0, ldraw_lib__4_4ring9()],
-// 1 16 0 -126 0 0 0 1 0 1 0 -1 0 0 4-4rin15.dat
-  [1,16,0,-126,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__4_4rin15()],
+// 1 16 0 -126 0 0 0 1 0 1 0 -1 0 0 4-4ring15.dat
+  [1,16,0,-126,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__4_4ring15()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -18 0 0 0 -15 0 -108 0 -15 0 0 4-4cylc.dat

@@ -6,27 +6,28 @@ use <../p/4-4ring3.scad>
 use <../p/4-4ring8.scad>
 use <../p/48/4-4cyli.scad>
 use <../p/48/4-4edge.scad>
-use <../p/48/4-4rin24.scad>
-use <../p/48/4-4rin47.scad>
+use <../p/48/4-4ring24.scad>
+use <../p/48/4-4ring47.scad>
 function ldraw_lib__50899() = [
 // 0 Propeller 3 Blade 5D with Outer Ring
 // 0 Name: 50899.dat
 // 0 Author: Michael Heidemann [mikeheide]
-// 0 !LDRAW_ORG Part UPDATE 2022-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS bionicle, Rhotuka, spinner
+// 0 !KEYWORDS Rhotuka, bionicle, spinner
 // 
 // 0 !HISTORY 2010-07-05 [PTadmin] Official Update 2010-02
 // 0 !HISTORY 2011-01-29 [Steffen] removed special characters from comments by translation to English
 // 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01
 // 0 !HISTORY 2021-03-17 [cwdee] Update description
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 7 0 -50 0 0 0 -1 0 0 0 50 48\4-4edge.dat
   [1,16,0,7,0,-50,0,0,0,-1,0,0,0,50, ldraw_lib__48__4_4edge()],
@@ -38,14 +39,14 @@ function ldraw_lib__50899() = [
   [1,16,0,-7,0,-47,0,0,0,-1,0,0,0,47, ldraw_lib__48__4_4edge()],
 // 1 16 0 7 0 -47 0 0 0 -1 0 0 0 47 48\4-4edge.dat
   [1,16,0,7,0,-47,0,0,0,-1,0,0,0,47, ldraw_lib__48__4_4edge()],
-// 1 16 0 7 0 -1 0 0 0 -1 0 0 0 1 48\4-4rin47.dat
-  [1,16,0,7,0,-1,0,0,0,-1,0,0,0,1, ldraw_lib__48__4_4rin47()],
-// 1 16 0 -7 0 1 0 0 0 1 0 0 0 1 48\4-4rin47.dat
-  [1,16,0,-7,0,1,0,0,0,1,0,0,0,1, ldraw_lib__48__4_4rin47()],
-// 1 16 0 7 0 -2 0 0 0 -1 0 0 0 2 48\4-4rin24.dat
-  [1,16,0,7,0,-2,0,0,0,-1,0,0,0,2, ldraw_lib__48__4_4rin24()],
-// 1 16 0 -7 0 2 0 0 0 1 0 0 0 2 48\4-4rin24.dat
-  [1,16,0,-7,0,2,0,0,0,1,0,0,0,2, ldraw_lib__48__4_4rin24()],
+// 1 16 0 7 0 -1 0 0 0 -1 0 0 0 1 48\4-4ring47.dat
+  [1,16,0,7,0,-1,0,0,0,-1,0,0,0,1, ldraw_lib__48__4_4ring47()],
+// 1 16 0 -7 0 1 0 0 0 1 0 0 0 1 48\4-4ring47.dat
+  [1,16,0,-7,0,1,0,0,0,1,0,0,0,1, ldraw_lib__48__4_4ring47()],
+// 1 16 0 7 0 -2 0 0 0 -1 0 0 0 2 48\4-4ring24.dat
+  [1,16,0,7,0,-2,0,0,0,-1,0,0,0,2, ldraw_lib__48__4_4ring24()],
+// 1 16 0 -7 0 2 0 0 0 1 0 0 0 2 48\4-4ring24.dat
+  [1,16,0,-7,0,2,0,0,0,1,0,0,0,2, ldraw_lib__48__4_4ring24()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 7 0 -47 0 0 0 -14 0 0 0 47 48\4-4cyli.dat

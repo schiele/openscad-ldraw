@@ -2,8 +2,8 @@ use <../lib.scad>
 use <../p/4-4edge.scad>
 use <../p/4-8sphe.scad>
 use <../p/48/4-4cylo.scad>
-use <../p/48/4-4rin15.scad>
-use <../p/48/4-4rin16.scad>
+use <../p/48/4-4ring15.scad>
+use <../p/48/4-4ring16.scad>
 use <../p/48/4-4ring9.scad>
 use <s/2470s01.scad>
 use <s/2470s02.scad>
@@ -11,14 +11,14 @@ function ldraw_lib__2470() = [
 // 0 Wheel  2.8 x 27 with  8 Spokes
 // 0 Name: 2470.dat
 // 0 Author: James Jessiman
-// 0 !LDRAW_ORG Part UPDATE 2013-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Castle, cavalry, Connestoga, prairie, settler, wagon, western
+// 0 !KEYWORDS Castle, Connestoga, cavalry, prairie, settler, wagon, western
 // 0 !KEYWORDS wild west
 // 
 // 0 !HISTORY 2007-05-13 [PTadmin] Header formatted for Contributor Agreement
@@ -28,7 +28,8 @@ function ldraw_lib__2470() = [
 // 0 !HISTORY 2008-07-09 [WilliamH] Used hub sub-part, corrected position of outer rim (2006-08-12)
 // 0 !HISTORY 2013-03-28 [MMR1988] introduce half spoke subpart
 // 0 !HISTORY 2013-12-23 [PTadmin] Official Update 2013-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Nomenclature: width_(mm) x rim_diameter_(mm) [optional qualifier]
 // 
@@ -107,16 +108,16 @@ function ldraw_lib__2470() = [
   [1,16,0,0,-10,27,0,0,0,0,-27,0,7,0, ldraw_lib__48__4_4cylo()],
 // 1 16 0 0 -10 34 0 0 0 0 -34 0 7 0 48\4-4cylo.dat
   [1,16,0,0,-10,34,0,0,0,0,-34,0,7,0, ldraw_lib__48__4_4cylo()],
-// 1 16 0 0 -10 2 0 0 0 0 -2 0 1 0 48\4-4rin16.dat
-  [1,16,0,0,-10,2,0,0,0,0,-2,0,1,0, ldraw_lib__48__4_4rin16()],
-// 1 16 0 0 -10 2 0 0 0 0 -2 0 1 0 48\4-4rin15.dat
-  [1,16,0,0,-10,2,0,0,0,0,-2,0,1,0, ldraw_lib__48__4_4rin15()],
+// 1 16 0 0 -10 2 0 0 0 0 -2 0 1 0 48\4-4ring16.dat
+  [1,16,0,0,-10,2,0,0,0,0,-2,0,1,0, ldraw_lib__48__4_4ring16()],
+// 1 16 0 0 -10 2 0 0 0 0 -2 0 1 0 48\4-4ring15.dat
+  [1,16,0,0,-10,2,0,0,0,0,-2,0,1,0, ldraw_lib__48__4_4ring15()],
 // 1 16 0 0 -10 3 0 0 0 0 -3 0 1 0 48\4-4ring9.dat
   [1,16,0,0,-10,3,0,0,0,0,-3,0,1,0, ldraw_lib__48__4_4ring9()],
-// 1 16 0 0 -3 2 0 0 0 0 -2 0 -1 0 48\4-4rin16.dat
-  [1,16,0,0,-3,2,0,0,0,0,-2,0,-1,0, ldraw_lib__48__4_4rin16()],
-// 1 16 0 0 -3 2 0 0 0 0 -2 0 -1 0 48\4-4rin15.dat
-  [1,16,0,0,-3,2,0,0,0,0,-2,0,-1,0, ldraw_lib__48__4_4rin15()],
+// 1 16 0 0 -3 2 0 0 0 0 -2 0 -1 0 48\4-4ring16.dat
+  [1,16,0,0,-3,2,0,0,0,0,-2,0,-1,0, ldraw_lib__48__4_4ring16()],
+// 1 16 0 0 -3 2 0 0 0 0 -2 0 -1 0 48\4-4ring15.dat
+  [1,16,0,0,-3,2,0,0,0,0,-2,0,-1,0, ldraw_lib__48__4_4ring15()],
 // 1 16 0 0 -3 3 0 0 0 0 -3 0 -1 0 48\4-4ring9.dat
   [1,16,0,0,-3,3,0,0,0,0,-3,0,-1,0, ldraw_lib__48__4_4ring9()],
 ];

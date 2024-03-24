@@ -5,20 +5,20 @@ use <../../p/1-4con2.scad>
 use <../../p/1-4con3.scad>
 use <../../p/1-4con9.scad>
 use <../../p/1-4cylo.scad>
-use <../../p/1-4rin17.scad>
+use <../../p/1-4ring17.scad>
 use <../../p/1-4ring9.scad>
 use <../../p/3-8chrd.scad>
 use <../../p/3-8cyli.scad>
 use <../../p/3-8edge.scad>
 use <../../p/48/1-4con32.scad>
 use <../../p/48/1-4edge.scad>
-use <../../p/48/1-4rin15.scad>
+use <../../p/48/1-4ring15.scad>
 use <53983s02.scad>
 function ldraw_lib__s__53983s04() = [
 // 0 ~Turbine Fan 16 / 8 Blade 10 Diameter with Case - Inner Quarter
 // 0 Name: s\53983s04.dat
 // 0 Author: Santeri Piippo [arezey]
-// 0 !LDRAW_ORG Subpart UPDATE 2020-03
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -29,7 +29,8 @@ function ldraw_lib__s__53983s04() = [
 // 0 !HISTORY 2018-02-07 [arezey] Complete rewrite
 // 0 !HISTORY 2020-05-28 [Holly-Wood] Eliminated T-Junk, rebuild blades
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 -30 0 0 2 2 0 0 0 -19 0 48\1-4con32.dat
   [1,16,0,0,-30,0,0,2,2,0,0,0,-19,0, ldraw_lib__48__1_4con32()],
@@ -37,16 +38,16 @@ function ldraw_lib__s__53983s04() = [
   [1,16,0,0,-49,0,0,64,64,0,0,0,1,0, ldraw_lib__48__1_4edge()],
 // 1 16 0 0 -49 0 0 60 60 0 0 0 1 0 48\1-4edge.dat
   [1,16,0,0,-49,0,0,60,60,0,0,0,1,0, ldraw_lib__48__1_4edge()],
-// 1 16 0 0 -49 0 0 4 4 0 0 0 1 0 48\1-4rin15.dat
-  [1,16,0,0,-49,0,0,4,4,0,0,0,1,0, ldraw_lib__48__1_4rin15()],
+// 1 16 0 0 -49 0 0 4 4 0 0 0 1 0 48\1-4ring15.dat
+  [1,16,0,0,-49,0,0,4,4,0,0,0,1,0, ldraw_lib__48__1_4ring15()],
 // 1 16 0 0 10 0 0 9 9 0 0 0 -13 0 1-4cylo.dat
   [1,16,0,0,10,0,0,9,9,0,0,0,-13,0, ldraw_lib__1_4cylo()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 0 0 0 9 9 0 0 0 -3 0 1-4con1.dat
   [1,16,0,0,0,0,0,9,9,0,0,0,-3,0, ldraw_lib__1_4con1()],
-// 1 16 0 0 9 0 0 1 1 0 0 0 -1 0 1-4rin17.dat
-  [1,16,0,0,9,0,0,1,1,0,0,0,-1,0, ldraw_lib__1_4rin17()],
+// 1 16 0 0 9 0 0 1 1 0 0 0 -1 0 1-4ring17.dat
+  [1,16,0,0,9,0,0,1,1,0,0,0,-1,0, ldraw_lib__1_4ring17()],
 // 1 16 0 0 9 0 0 2 2 0 0 0 -1 0 1-4ring9.dat
   [1,16,0,0,9,0,0,2,2,0,0,0,-1,0, ldraw_lib__1_4ring9()],
 // 1 16 0 0 -6 0 0 2 2 0 0 0 -1.5 0 1-4con9.dat

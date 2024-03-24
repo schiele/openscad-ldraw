@@ -2,7 +2,7 @@ use <../lib.scad>
 use <../p/1-4con10.scad>
 use <../p/1-4cylo.scad>
 use <../p/1-4edge.scad>
-use <../p/1-4rin10.scad>
+use <../p/1-4ring10.scad>
 use <../p/4-4cylo.scad>
 use <../p/5-8cylo.scad>
 use <../p/5-8ring4.scad>
@@ -13,7 +13,7 @@ function ldraw_lib__6644k01() = [
 // 0 ~Technic Flex-System Ball Connector Bottom
 // 0 Name: 6644k01.dat
 // 0 Author: Miguel Agullo [MiguelAgullo]
-// 0 !LDRAW_ORG Part Flexible_Section UPDATE 2020-03
+// 0 !LDRAW_ORG Part Flexible_Section UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -25,7 +25,8 @@ function ldraw_lib__6644k01() = [
 // 0 !HISTORY 2016-06-11 [Holly-Wood] Complete overhaul, subfiled
 // 0 !HISTORY 2018-01-02 [MagFors] rearranged subfile for reuse in all three parts
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\6642s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6642s01()],
@@ -40,10 +41,10 @@ function ldraw_lib__6644k01() = [
 // 1 16 0 5 0 9.2388 0 3.82683 0 -10 0 -3.82683 0 9.2388 5-8cylo.dat
   [1,16,0,5,0,9.2388,0,3.82683,0,-10,0,-3.82683,0,9.2388, ldraw_lib__5_8cylo()],
 // 
-// 1 16 -2 4 0 0 1 0 -.82 0 -.82 -.82 0 .82 1-4rin10.dat
-  [1,16,-2,4,0,0,1,0,-.82,0,-.82,-.82,0,.82, ldraw_lib__1_4rin10()],
-// 1 16 2 4 0 0 -1 0 -.82 0 -.82 -.82 0 .82 1-4rin10.dat
-  [1,16,2,4,0,0,-1,0,-.82,0,-.82,-.82,0,.82, ldraw_lib__1_4rin10()],
+// 1 16 -2 4 0 0 1 0 -.82 0 -.82 -.82 0 .82 1-4ring10.dat
+  [1,16,-2,4,0,0,1,0,-.82,0,-.82,-.82,0,.82, ldraw_lib__1_4ring10()],
+// 1 16 2 4 0 0 -1 0 -.82 0 -.82 -.82 0 .82 1-4ring10.dat
+  [1,16,2,4,0,0,-1,0,-.82,0,-.82,-.82,0,.82, ldraw_lib__1_4ring10()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -2 4 0 0 4 0 -8.2 0 -8.2 -8.2 0 8.2 1-4cylo.dat

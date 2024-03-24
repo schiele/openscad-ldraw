@@ -7,8 +7,8 @@ use <../p/1-8disc.scad>
 use <../p/1-8ndis.scad>
 use <../p/2-4disc.scad>
 use <../p/2-4ndis.scad>
-use <../p/2-4rin30.scad>
 use <../p/2-4ring1.scad>
+use <../p/2-4ring30.scad>
 use <../p/2-4ring4.scad>
 use <../p/3-16chrd.scad>
 use <../p/3-16disc.scad>
@@ -18,7 +18,7 @@ function ldraw_lib__3009pt2() = [
 // 0 Brick  1 x  6 with Black Philips Pattern
 // 0 Name: 3009pt2.dat
 // 0 Author: Niels Karsdorp [nielsk]
-// 0 !LDRAW_ORG Part UPDATE 2010-03
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CW
@@ -29,7 +29,8 @@ function ldraw_lib__3009pt2() = [
 // 
 // 0 !HISTORY 2009-08-08 [Eldar] remove overlaps,lines in pattern
 // 0 !HISTORY 2010-12-31 [PTadmin] Official Update 2010-03
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3009s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3009s01()],
@@ -560,8 +561,8 @@ function ldraw_lib__3009pt2() = [
   [1,0,-21.7,8.2,-10,0,0,2.4,2.4,0,0,0,1,0, ldraw_lib__2_4ring1()],
 // 1 0 -21.7 8.2 -10 0 0 1.2 1.2 0 0 0 1 0 2-4ring4.dat
   [1,0,-21.7,8.2,-10,0,0,1.2,1.2,0,0,0,1,0, ldraw_lib__2_4ring4()],
-// 1 0 -21.7 8.2 -10 0 0 0.2 0.2 0 0 0 1 0 2-4rin30.dat
-  [1,0,-21.7,8.2,-10,0,0,0.2,0.2,0,0,0,1,0, ldraw_lib__2_4rin30()],
+// 1 0 -21.7 8.2 -10 0 0 0.2 0.2 0 0 0 1 0 2-4ring30.dat
+  [1,0,-21.7,8.2,-10,0,0,0.2,0.2,0,0,0,1,0, ldraw_lib__2_4ring30()],
 // 0 // Text HILI
 // 4 0 -13.8 2 -10 -8.8 2 -10 -8.8 18 -10 -13.8 18 -10
   [4,0,-13.8,2,-10,-8.8,2,-10,-8.8,18,-10,-13.8,18,-10],
@@ -590,8 +591,8 @@ function ldraw_lib__3009pt2() = [
   [1,0,37,8.2,-10,0,0,2.4,2.4,0,0,0,1,0, ldraw_lib__2_4ring1()],
 // 1 0 37 8.2 -10 0 0 1.2 1.2 0 0 0 1 0 2-4ring4.dat
   [1,0,37,8.2,-10,0,0,1.2,1.2,0,0,0,1,0, ldraw_lib__2_4ring4()],
-// 1 0 37 8.2 -10 0 0 0.2 0.2 0 0 0 1 0 2-4rin30.dat
-  [1,0,37,8.2,-10,0,0,0.2,0.2,0,0,0,1,0, ldraw_lib__2_4rin30()],
+// 1 0 37 8.2 -10 0 0 0.2 0.2 0 0 0 1 0 2-4ring30.dat
+  [1,0,37,8.2,-10,0,0,0.2,0.2,0,0,0,1,0, ldraw_lib__2_4ring30()],
 // 0 // Text S
 // 1 0 51.1 7 -10 -6.8 0 0 0 0 -5 0 1 0 1-4chrd.dat
   [1,0,51.1,7,-10,-6.8,0,0,0,0,-5,0,1,0, ldraw_lib__1_4chrd()],

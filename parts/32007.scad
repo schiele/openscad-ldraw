@@ -2,8 +2,8 @@ use <../lib.scad>
 use <../p/2-4chrd.scad>
 use <../p/2-4cylo.scad>
 use <../p/4-4cylo.scad>
-use <../p/4-4rin10.scad>
 use <../p/4-4ring1.scad>
+use <../p/4-4ring10.scad>
 use <../p/4-4ring9.scad>
 use <../p/box4o8a.scad>
 use <../p/connhole.scad>
@@ -13,7 +13,7 @@ function ldraw_lib__32007() = [
 // 0 Technic Tread Sprocket Wheel
 // 0 Name: 32007.dat
 // 0 Author: Marc Klein [marckl]
-// 0 !LDRAW_ORG Part UPDATE 2017-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -27,7 +27,8 @@ function ldraw_lib__32007() = [
 // 0 !HISTORY 2014-12-28 [Philo] BFCed with Windz
 // 0 !HISTORY 2016-09-24 [MagFors] Corrected connhole depth, primitive substitution
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 1 0 0 0 0 1 0 1 0 connhole.dat
   [1,16,0,0,0,1,0,0,0,0,1,0,1,0, ldraw_lib__connhole()],
@@ -35,14 +36,14 @@ function ldraw_lib__32007() = [
   [1,16,0,0,-10,9,0,0,0,0,9,0,8,0, ldraw_lib__4_4cylo()],
 // 1 16 0 0 -2 1 0 0 0 0 1 0 1 0 4-4ring9.dat
   [1,16,0,0,-2,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4ring9()],
-// 1 16 0 0 -2 1 0 0 0 0 1 0 1 0 4-4rin10.dat
-  [1,16,0,0,-2,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4rin10()],
+// 1 16 0 0 -2 1 0 0 0 0 1 0 1 0 4-4ring10.dat
+  [1,16,0,0,-2,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4ring10()],
 // 1 16 0 0 10 9 0 0 0 0 -9 0 -8 0 4-4cylo.dat
   [1,16,0,0,10,9,0,0,0,0,-9,0,-8,0, ldraw_lib__4_4cylo()],
 // 1 16 0 0 2 -1 0 0 0 0 1 0 -1 0 4-4ring9.dat
   [1,16,0,0,2,-1,0,0,0,0,1,0,-1,0, ldraw_lib__4_4ring9()],
-// 1 16 0 0 2 -1 0 0 0 0 1 0 -1 0 4-4rin10.dat
-  [1,16,0,0,2,-1,0,0,0,0,1,0,-1,0, ldraw_lib__4_4rin10()],
+// 1 16 0 0 2 -1 0 0 0 0 1 0 -1 0 4-4ring10.dat
+  [1,16,0,0,2,-1,0,0,0,0,1,0,-1,0, ldraw_lib__4_4ring10()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 -12 11 0 0 0 0 11 0 10 0 4-4cylo.dat

@@ -1,5 +1,5 @@
 use <../lib.scad>
-use <../p/48/1-4rin39.scad>
+use <../p/48/1-4ring39.scad>
 use <../p/48/4-4con17.scad>
 use <../p/48/4-4con18.scad>
 use <../p/48/4-4con39.scad>
@@ -10,7 +10,7 @@ function ldraw_lib__56898() = [
 // 0 Tyre 14/ 43 x 30 with Offset Tread
 // 0 Name: 56898.dat
 // 0 Author: Joerg Sommerer [Brickaneer]
-// 0 !LDRAW_ORG Part UPDATE 2018-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -20,7 +20,8 @@ function ldraw_lib__56898() = [
 // 0 !HISTORY 2013-07-21 [PTadmin] Official Update 2013-01
 // 0 !HISTORY 2018-02-06 [Philo] Extended description
 // 0 !HISTORY 2018-12-08 [PTadmin] Official Update 2018-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 18 38 0 0 0 0 -38 0 1 0 48\4-4edge.dat
   [1,16,0,0,18,38,0,0,0,0,-38,0,1,0, ldraw_lib__48__4_4edge()],
@@ -42,14 +43,14 @@ function ldraw_lib__56898() = [
   [1,16,0,0,8,38.9744,0,0,0,0,-38.9744,0,3,0, ldraw_lib__48__4_4cyli()],
 // 1 16 0 0 8 38.9744 0 0 0 0 -38.9744 0 1 0 48\4-4edge.dat
   [1,16,0,0,8,38.9744,0,0,0,0,-38.9744,0,1,0, ldraw_lib__48__4_4edge()],
-// 1 16 0 0 8 -0.9744 0 0 0 0 -0.9744 0 -1 0 48\1-4rin39.dat
-  [1,16,0,0,8,-0.9744,0,0,0,0,-0.9744,0,-1,0, ldraw_lib__48__1_4rin39()],
-// 1 16 0 0 8 0 0 -0.9744 0.9744 0 0 0 -1 0 48\1-4rin39.dat
-  [1,16,0,0,8,0,0,-0.9744,0.9744,0,0,0,-1,0, ldraw_lib__48__1_4rin39()],
-// 1 16 0 0 8 0.9744 0 0 0 0 0.9744 0 -1 0 48\1-4rin39.dat
-  [1,16,0,0,8,0.9744,0,0,0,0,0.9744,0,-1,0, ldraw_lib__48__1_4rin39()],
-// 1 16 0 0 8 0 0 0.9744 -0.9744 0 0 0 -1 0 48\1-4rin39.dat
-  [1,16,0,0,8,0,0,0.9744,-0.9744,0,0,0,-1,0, ldraw_lib__48__1_4rin39()],
+// 1 16 0 0 8 -0.9744 0 0 0 0 -0.9744 0 -1 0 48\1-4ring39.dat
+  [1,16,0,0,8,-0.9744,0,0,0,0,-0.9744,0,-1,0, ldraw_lib__48__1_4ring39()],
+// 1 16 0 0 8 0 0 -0.9744 0.9744 0 0 0 -1 0 48\1-4ring39.dat
+  [1,16,0,0,8,0,0,-0.9744,0.9744,0,0,0,-1,0, ldraw_lib__48__1_4ring39()],
+// 1 16 0 0 8 0.9744 0 0 0 0 0.9744 0 -1 0 48\1-4ring39.dat
+  [1,16,0,0,8,0.9744,0,0,0,0,0.9744,0,-1,0, ldraw_lib__48__1_4ring39()],
+// 1 16 0 0 8 0 0 0.9744 -0.9744 0 0 0 -1 0 48\1-4ring39.dat
+  [1,16,0,0,8,0,0,0.9744,-0.9744,0,0,0,-1,0, ldraw_lib__48__1_4ring39()],
 // 1 16 0 0 8 38 0 0 0 0 -38 0 1 0 48\4-4edge.dat
   [1,16,0,0,8,38,0,0,0,0,-38,0,1,0, ldraw_lib__48__4_4edge()],
 // 0 BFC INVERTNEXT

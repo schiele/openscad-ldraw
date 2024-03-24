@@ -1,13 +1,13 @@
 use <../lib.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4edge.scad>
-use <../p/4-4rin13.scad>
+use <../p/4-4ring13.scad>
 use <../p/zstud.scad>
 function ldraw_lib__32228() = [
 // 0 Znap Connector  3 x  3 - 4 Way Core Section
 // 0 Name: 32228.dat
 // 0 Author: Michael Heidemann [mikeheide]
-// 0 !LDRAW_ORG Part UPDATE 2010-03
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CW
@@ -15,7 +15,8 @@ function ldraw_lib__32228() = [
   [0,"BFC","CW"],
 // 
 // 0 !HISTORY 2010-12-31 [PTadmin] Official Update 2010-03
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 4 16 10 -7 15 10 7 15 10 7 10 10 -7 10
   [4,16,10,-7,15,10,7,15,10,7,10,10,-7,10],
@@ -180,10 +181,10 @@ function ldraw_lib__32228() = [
   [1,16,0,0,1,14,0,0,0,0,14,0,-2,0, ldraw_lib__4_4edge()],
 // 1 16 0 0 -1 14 0 0 0 0 14 0 -2 0 4-4edge.dat
   [1,16,0,0,-1,14,0,0,0,0,14,0,-2,0, ldraw_lib__4_4edge()],
-// 1 16 0 0 -1 -1 0 0 0 0 1 0 1 0 4-4rin13.dat
-  [1,16,0,0,-1,-1,0,0,0,0,1,0,1,0, ldraw_lib__4_4rin13()],
-// 1 16 0 0 1 1 0 0 0 0 1 0 -1 0 4-4rin13.dat
-  [1,16,0,0,1,1,0,0,0,0,1,0,-1,0, ldraw_lib__4_4rin13()],
+// 1 16 0 0 -1 -1 0 0 0 0 1 0 1 0 4-4ring13.dat
+  [1,16,0,0,-1,-1,0,0,0,0,1,0,1,0, ldraw_lib__4_4ring13()],
+// 1 16 0 0 1 1 0 0 0 0 1 0 -1 0 4-4ring13.dat
+  [1,16,0,0,1,1,0,0,0,0,1,0,-1,0, ldraw_lib__4_4ring13()],
 // 2 24 2 -10 13 -2 -10 13
   [2,24,2,-10,13,-2,-10,13],
 // 4 16 -2 -10 13 2 -10 13 2 10 13 -2 10 13

@@ -15,8 +15,8 @@ use <../p/48/4-4con17.scad>
 use <../p/48/4-4cyli.scad>
 use <../p/48/4-4cylo.scad>
 use <../p/48/4-4edge.scad>
-use <../p/48/4-4rin14.scad>
-use <../p/48/4-4rin17.scad>
+use <../p/48/4-4ring14.scad>
+use <../p/48/4-4ring17.scad>
 use <../p/48/5-12edge.scad>
 use <../p/box4-3p.scad>
 use <../p/connhole.scad>
@@ -28,7 +28,7 @@ function ldraw_lib__99009() = [
 // 0 Technic Turntable 28 Tooth Bottom
 // 0 Name: 99009.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2013-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -36,7 +36,8 @@ function ldraw_lib__99009() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2013-07-21 [PTadmin] Official Update 2013-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 20 20 0 0 0 -1 -1 0 0 0 1 0 connhole.dat
   [1,16,20,20,0,0,0,-1,-1,0,0,0,1,0, ldraw_lib__connhole()],
@@ -54,16 +55,16 @@ function ldraw_lib__99009() = [
   [1,16,0,5,0,25.5,0,0,0,-6,0,0,0,25.5, ldraw_lib__48__4_4cylo()],
 // 1 16 0 7 0 1.5 0 0 0 -2 0 0 0 1.5 48\4-4con17.dat
   [1,16,0,7,0,1.5,0,0,0,-2,0,0,0,1.5, ldraw_lib__48__4_4con17()],
-// 1 16 0 -1 0 1.5 0 0 0 -1 0 0 0 1.5 48\4-4rin17.dat
-  [1,16,0,-1,0,1.5,0,0,0,-1,0,0,0,1.5, ldraw_lib__48__4_4rin17()],
+// 1 16 0 -1 0 1.5 0 0 0 -1 0 0 0 1.5 48\4-4ring17.dat
+  [1,16,0,-1,0,1.5,0,0,0,-1,0,0,0,1.5, ldraw_lib__48__4_4ring17()],
 // 1 16 0 -1 0 27 0 0 0 1 0 0 0 27 48\4-4edge.dat
   [1,16,0,-1,0,27,0,0,0,1,0,0,0,27, ldraw_lib__48__4_4edge()],
 // 1 16 0 -4 0 24.75 0 0 0 1 0 0 0 24.75 48\4-4edge.dat
   [1,16,0,-4,0,24.75,0,0,0,1,0,0,0,24.75, ldraw_lib__48__4_4edge()],
 // 1 16 0 -1 0 2.25 0 0 0 -3 0 0 0 2.25 48\4-4con11.dat
   [1,16,0,-1,0,2.25,0,0,0,-3,0,0,0,2.25, ldraw_lib__48__4_4con11()],
-// 1 16 0 -4 0 1.65 0 0 0 1 0 0 0 1.65 48\4-4rin14.dat
-  [1,16,0,-4,0,1.65,0,0,0,1,0,0,0,1.65, ldraw_lib__48__4_4rin14()],
+// 1 16 0 -4 0 1.65 0 0 0 1 0 0 0 1.65 48\4-4ring14.dat
+  [1,16,0,-4,0,1.65,0,0,0,1,0,0,0,1.65, ldraw_lib__48__4_4ring14()],
 // 1 16 0 -4 0 23.1 0 0 0 1 0 0 0 23.1 48\4-4edge.dat
   [1,16,0,-4,0,23.1,0,0,0,1,0,0,0,23.1, ldraw_lib__48__4_4edge()],
 // 0 BFC INVERTNEXT

@@ -2,10 +2,10 @@ use <../lib.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4edge.scad>
 use <../p/4-4ndis.scad>
-use <../p/4-4rin10.scad>
+use <../p/4-4ring10.scad>
 use <../p/4-4ring4.scad>
 use <../p/4-8sphe.scad>
-use <../p/48/1-4rin23.scad>
+use <../p/48/1-4ring23.scad>
 use <../p/48/1-4ring8.scad>
 use <../p/48/4-4cyli.scad>
 use <../p/48/4-4edge.scad>
@@ -14,22 +14,23 @@ function ldraw_lib__33211() = [
 // 0 Wheel  3.2 x 43 with 10 Spokes Wooden
 // 0 Name: 33211.dat
 // 0 Author: Steve Bliss [sbliss]
-// 0 !LDRAW_ORG Part UPDATE 2012-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Belville, carriage, Castle Wagon Wheel, Rebel Blockade Runner
-// 0 !KEYWORDS stagecoach, Star Wars, wooden
+// 0 !KEYWORDS Belville, Castle Wagon Wheel, Rebel Blockade Runner, Star Wars
+// 0 !KEYWORDS carriage, stagecoach, wooden
 // 
 // 0 !HISTORY 2004-04-22 [PTadmin] Official Update 2004-02
 // 0 !HISTORY 2007-06-25 [PTadmin] Header formatted for Contributor Agreement
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
 // 0 !HISTORY 2012-05-23 [cwdee] Description change
 // 0 !HISTORY 2012-08-09 [PTadmin] Official Update 2012-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Nomenclature: width_(mm) x rim_diameter_(mm) [optional qualifier]
 // 
@@ -63,20 +64,20 @@ function ldraw_lib__33211() = [
   [1,16,0,0,-16,54,0,0,0,0,-54,0,1,0, ldraw_lib__48__4_4edge()],
 // 1 16 0 0 -16 46 0 0 0 0 -46 0 1 0 48\4-4edge.dat
   [1,16,0,0,-16,46,0,0,0,0,-46,0,1,0, ldraw_lib__48__4_4edge()],
-// 1 16 0 0 -16 -2 0 0 0 0 -2 0 -1 0 48\1-4rin23.dat
-  [1,16,0,0,-16,-2,0,0,0,0,-2,0,-1,0, ldraw_lib__48__1_4rin23()],
+// 1 16 0 0 -16 -2 0 0 0 0 -2 0 -1 0 48\1-4ring23.dat
+  [1,16,0,0,-16,-2,0,0,0,0,-2,0,-1,0, ldraw_lib__48__1_4ring23()],
 // 1 16 0 0 -16 -6 0 0 0 0 -6 0 -1 0 48\1-4ring8.dat
   [1,16,0,0,-16,-6,0,0,0,0,-6,0,-1,0, ldraw_lib__48__1_4ring8()],
-// 1 16 0 0 -16 0 0 -2 2 0 0 0 -1 0 48\1-4rin23.dat
-  [1,16,0,0,-16,0,0,-2,2,0,0,0,-1,0, ldraw_lib__48__1_4rin23()],
+// 1 16 0 0 -16 0 0 -2 2 0 0 0 -1 0 48\1-4ring23.dat
+  [1,16,0,0,-16,0,0,-2,2,0,0,0,-1,0, ldraw_lib__48__1_4ring23()],
 // 1 16 0 0 -16 0 0 -6 6 0 0 0 -1 0 48\1-4ring8.dat
   [1,16,0,0,-16,0,0,-6,6,0,0,0,-1,0, ldraw_lib__48__1_4ring8()],
-// 1 16 0 0 -16 2 0 0 0 0 2 0 -1 0 48\1-4rin23.dat
-  [1,16,0,0,-16,2,0,0,0,0,2,0,-1,0, ldraw_lib__48__1_4rin23()],
+// 1 16 0 0 -16 2 0 0 0 0 2 0 -1 0 48\1-4ring23.dat
+  [1,16,0,0,-16,2,0,0,0,0,2,0,-1,0, ldraw_lib__48__1_4ring23()],
 // 1 16 0 0 -16 6 0 0 0 0 6 0 -1 0 48\1-4ring8.dat
   [1,16,0,0,-16,6,0,0,0,0,6,0,-1,0, ldraw_lib__48__1_4ring8()],
-// 1 16 0 0 -16 0 0 2 -2 0 0 0 -1 0 48\1-4rin23.dat
-  [1,16,0,0,-16,0,0,2,-2,0,0,0,-1,0, ldraw_lib__48__1_4rin23()],
+// 1 16 0 0 -16 0 0 2 -2 0 0 0 -1 0 48\1-4ring23.dat
+  [1,16,0,0,-16,0,0,2,-2,0,0,0,-1,0, ldraw_lib__48__1_4ring23()],
 // 1 16 0 0 -16 0 0 6 -6 0 0 0 -1 0 48\1-4ring8.dat
   [1,16,0,0,-16,0,0,6,-6,0,0,0,-1,0, ldraw_lib__48__1_4ring8()],
 // 0 BFC INVERTNEXT
@@ -86,10 +87,10 @@ function ldraw_lib__33211() = [
 // 1 16 0 0 -24 54 0 0 0 0 -54 0 8 0 48\4-4cyli.dat
   [1,16,0,0,-24,54,0,0,0,0,-54,0,8,0, ldraw_lib__48__4_4cyli()],
 // 0 Following rings fill in gaps in the polygonal 'curves' of LDraw.
-// 1 16 0 0 -9 -1 0 0 0 0 -1 0 -1 0 4-4rin10.dat
-  [1,16,0,0,-9,-1,0,0,0,0,-1,0,-1,0, ldraw_lib__4_4rin10()],
-// 1 16 0 0 -12 1 0 0 0 0 -1 0 1 0 4-4rin10.dat
-  [1,16,0,0,-12,1,0,0,0,0,-1,0,1,0, ldraw_lib__4_4rin10()],
+// 1 16 0 0 -9 -1 0 0 0 0 -1 0 -1 0 4-4ring10.dat
+  [1,16,0,0,-9,-1,0,0,0,0,-1,0,-1,0, ldraw_lib__4_4ring10()],
+// 1 16 0 0 -12 1 0 0 0 0 -1 0 1 0 4-4ring10.dat
+  [1,16,0,0,-12,1,0,0,0,0,-1,0,1,0, ldraw_lib__4_4ring10()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 50 0 -24 1.6 0 0 0 0 -1.6 0 1.6 0 4-8sphe.dat

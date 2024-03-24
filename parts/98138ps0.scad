@@ -1,12 +1,12 @@
 use <../lib.scad>
 use <../p/4-4ering.scad>
-use <../p/4-4rin12.scad>
+use <../p/4-4ring12.scad>
 use <s/98138s01.scad>
 function ldraw_lib__98138ps0() = [
 // 0 Tile  1 x  1 Round with  8 Spokes Republic Pattern
 // 0 Name: 98138ps0.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2015-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -14,12 +14,13 @@ function ldraw_lib__98138ps0() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2015-10-11 [PTadmin] Official Update 2015-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\98138s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01()],
-// 1 0 0 0 0 0.69231 0 0 0 1 0 0 0 -0.69231 4-4rin12.dat
-  [1,0,0,0,0,0.69231,0,0,0,1,0,0,0,-0.69231, ldraw_lib__4_4rin12()],
+// 1 0 0 0 0 0.69231 0 0 0 1 0 0 0 -0.69231 4-4ring12.dat
+  [1,0,0,0,0,0.69231,0,0,0,1,0,0,0,-0.69231, ldraw_lib__4_4ring12()],
 // 1 16 0 0 0 8.30769 0 0 0 1 0 0 0 8.30769 4-4ering.dat
   [1,16,0,0,0,8.30769,0,0,0,1,0,0,0,8.30769, ldraw_lib__4_4ering()],
 // 4 0 -2.2166 0 -0.4409 -1.8791 0 -1.2556 0 0 0 -2.2166 0 0.4409

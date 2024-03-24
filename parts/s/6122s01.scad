@@ -3,13 +3,13 @@ use <../../p/1-8edge.scad>
 use <../../p/4-4cylc.scad>
 use <../../p/4-4cyli.scad>
 use <../../p/4-4edge.scad>
-use <../../p/4-4rin19.scad>
 use <../../p/4-4ring1.scad>
+use <../../p/4-4ring19.scad>
 function ldraw_lib__s__6122s01() = [
 // 0 ~Minifig Helmet Castle with Dragon Crown Top Half
 // 0 Name: s\6122s01.dat
 // 0 Author: Magnus Forsberg [MagFors]
-// 0 !LDRAW_ORG Subpart UPDATE 2011-02
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -17,7 +17,8 @@ function ldraw_lib__s__6122s01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 4 16 2.269 -3.347 16.35 1.323 -4.675 24.31 1.261 -7.395 24.83 1.471 -8.646 23.07
   [4,16,2.269,-3.347,16.35,1.323,-4.675,24.31,1.261,-7.395,24.83,1.471,-8.646,23.07],
@@ -301,8 +302,8 @@ function ldraw_lib__s__6122s01() = [
   [1,16,19,3.4,-0.7,0,1,0,-4.1,0,0,0,0,4.1, ldraw_lib__4_4edge()],
 // 1 16 19 3.4 -0.7 0 -1 0 -2 0 0 0 0 -2 4-4ring1.dat
   [1,16,19,3.4,-0.7,0,-1,0,-2,0,0,0,0,-2, ldraw_lib__4_4ring1()],
-// 1 16 19 3.4 -0.7 0 -1 0 -0.205 0 0 0 0 -0.205 4-4rin19.dat
-  [1,16,19,3.4,-0.7,0,-1,0,-0.205,0,0,0,0,-0.205, ldraw_lib__4_4rin19()],
+// 1 16 19 3.4 -0.7 0 -1 0 -0.205 0 0 0 0 -0.205 4-4ring19.dat
+  [1,16,19,3.4,-0.7,0,-1,0,-0.205,0,0,0,0,-0.205, ldraw_lib__4_4ring19()],
 // 1 16 14 3.4 -0.7 0 5 0 -4.1 0 0 0 0 4.1 4-4cyli.dat
   [1,16,14,3.4,-0.7,0,5,0,-4.1,0,0,0,0,4.1, ldraw_lib__4_4cyli()],
 // 0 // bottom of top pinhole

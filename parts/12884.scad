@@ -9,7 +9,7 @@ use <../p/4-4con17.scad>
 use <../p/4-4cylo.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4edge.scad>
-use <../p/4-4rin12.scad>
+use <../p/4-4ring12.scad>
 use <../p/4-4ring5.scad>
 use <../p/4-4ring9.scad>
 use <../p/4-8sphe.scad>
@@ -18,7 +18,7 @@ function ldraw_lib__12884() = [
 // 0 Bucket  1 x  1 x  1 Cylindrical
 // 0 Name: 12884.dat
 // 0 Author: Magnus Forsberg [MagFors]
-// 0 !LDRAW_ORG Part UPDATE 2014-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 !HELP Hinge point is at y = -20.685
@@ -30,7 +30,8 @@ function ldraw_lib__12884() = [
 // 0 !CATEGORY Container
 // 
 // 0 !HISTORY 2014-06-21 [PTadmin] Official Update 2014-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 -5 0 10 0 0 0 1 0 0 0 10 4-4edge.dat
   [1,16,0,-5,0,10,0,0,0,1,0,0,0,10, ldraw_lib__4_4edge()],
@@ -131,8 +132,8 @@ function ldraw_lib__12884() = [
 // 
 // 1 16 0 0 0 -2 0 0 0 -1 0 0 0 2 4-4ring5.dat
   [1,16,0,0,0,-2,0,0,0,-1,0,0,0,2, ldraw_lib__4_4ring5()],
-// 1 16 0 0 0 -1 0 0 0 -1 0 0 0 1 4-4rin12.dat
-  [1,16,0,0,0,-1,0,0,0,-1,0,0,0,1, ldraw_lib__4_4rin12()],
+// 1 16 0 0 0 -1 0 0 0 -1 0 0 0 1 4-4ring12.dat
+  [1,16,0,0,0,-1,0,0,0,-1,0,0,0,1, ldraw_lib__4_4ring12()],
 // 
 // 0 // inside
 // 1 16 0 -8 0 7.5 0 0 0 1 0 0 0 7.5 4-4edge.dat
@@ -197,8 +198,8 @@ function ldraw_lib__12884() = [
   [1,16,0,-24,0,13,0,0,0,24,0,0,0,13, ldraw_lib__4_4cylo()],
 // 1 16 0 -24 0 2 0 0 0 1 0 0 0 2 4-4ring5.dat
   [1,16,0,-24,0,2,0,0,0,1,0,0,0,2, ldraw_lib__4_4ring5()],
-// 1 16 0 -24 0 1 0 0 0 1 0 0 0 1 4-4rin12.dat
-  [1,16,0,-24,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4rin12()],
+// 1 16 0 -24 0 1 0 0 0 1 0 0 0 1 4-4ring12.dat
+  [1,16,0,-24,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4ring12()],
 // 
 // 0 // hinges
 // 1 16 13 -20.685 0 0 1.8 0 -1.8 0 0 0 0 1.8 4-8sphe.dat

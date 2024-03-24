@@ -1,9 +1,9 @@
 use <../lib.scad>
 function ldraw_lib__1_4rin19() = [
-// 0 Ring 19 x 0.25
+// 0 ~Ring 19 x 0.25 (Obsolete)
 // 0 Name: 1-4rin19.dat
 // 0 Author: Steve Bliss [sbliss]
-// 0 !LDRAW_ORG Primitive UPDATE 2000-02
+// 0 !LDRAW_ORG Primitive UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -13,7 +13,8 @@ function ldraw_lib__1_4rin19() = [
 // 0 !HISTORY 2000-09-30 [PTadmin] Official Update 2000-02
 // 0 !HISTORY 2007-06-22 [PTadmin] Header formatted for Contributor Agreement
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Obsolete, use 1-4ring19.dat
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 4 16 19 0 0 20 0 0 18.478 0 7.654 17.5541 0 7.2713
   [4,16,19,0,0,20,0,0,18.478,0,7.654,17.5541,0,7.2713],

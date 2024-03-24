@@ -3,8 +3,8 @@ use <../p/4-4con4.scad>
 use <../p/4-4con7.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4edge.scad>
-use <../p/4-4rin15.scad>
 use <../p/4-4ring1.scad>
+use <../p/4-4ring15.scad>
 use <../p/4-4ring2.scad>
 use <../p/4-4ring4.scad>
 use <../p/4-4ring9.scad>
@@ -15,7 +15,7 @@ function ldraw_lib__6269() = [
 // 0 Minifig Goblet with Hollow Stem
 // 0 Name: 6269.dat
 // 0 Author: J.C. Tchang [tchang]
-// 0 !LDRAW_ORG Part UPDATE 2013-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CW
@@ -28,7 +28,8 @@ function ldraw_lib__6269() = [
 // 
 // 0 !HISTORY 2009-10-12 [tchang] Rebuild from 2343, Change shape, Add inner hole and cylinder part
 // 0 !HISTORY 2013-12-23 [PTadmin] Official Update 2013-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
@@ -39,8 +40,8 @@ function ldraw_lib__6269() = [
 // 1 16 0 5 0 8 0 0 0 1 0 0 0 8 4-4edge.dat
   [1,16,0,5,0,8,0,0,0,1,0,0,0,8, ldraw_lib__4_4edge()],
 // 0 //
-// 1 16 0 5 0 0.5 0 0 0 1 0 0 0 0.5 4-4rin15.dat
-  [1,16,0,5,0,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__4_4rin15()],
+// 1 16 0 5 0 0.5 0 0 0 1 0 0 0 0.5 4-4ring15.dat
+  [1,16,0,5,0,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__4_4ring15()],
 // 1 16 0 5 0 7.5 0 0 0 1 0 0 0 7.5 4-4edge.dat
   [1,16,0,5,0,7.5,0,0,0,1,0,0,0,7.5, ldraw_lib__4_4edge()],
 // 0 BFC INVERTNEXT

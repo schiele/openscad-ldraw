@@ -12,7 +12,7 @@ use <../p/2-4edge.scad>
 use <../p/2-4ndis.scad>
 use <../p/48/1-16cyli.scad>
 use <../p/48/1-16edge.scad>
-use <../p/48/1-16ri21.scad>
+use <../p/48/1-16ring21.scad>
 use <../p/48/1-3cyli.scad>
 use <../p/48/1-3edge.scad>
 use <../p/48/1-4con14.scad>
@@ -21,7 +21,7 @@ use <../p/48/1-4cyli.scad>
 use <../p/48/1-4disc.scad>
 use <../p/48/1-4edge.scad>
 use <../p/48/1-4ndis.scad>
-use <../p/48/1-4rin21.scad>
+use <../p/48/1-4ring21.scad>
 use <../p/48/1-8con6.scad>
 use <../p/48/1-8disc.scad>
 use <../p/48/2-4cyli.scad>
@@ -31,8 +31,8 @@ use <../p/48/3-8edge.scad>
 use <../p/48/4-4cyli.scad>
 use <../p/48/4-4disc.scad>
 use <../p/48/4-4edge.scad>
-use <../p/48/4-4rin28.scad>
 use <../p/48/4-4ring1.scad>
+use <../p/48/4-4ring28.scad>
 use <../p/48/4-4ring6.scad>
 use <../p/box.scad>
 use <../p/connhole.scad>
@@ -41,7 +41,7 @@ function ldraw_lib__54715() = [
 // 0 ~Electric Mindstorms NXT Motor Casing Left (Needs Work)
 // 0 Name: 54715.dat
 // 0 Author: Kevin Clague [kclague]
-// 0 !LDRAW_ORG Part UPDATE 2012-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -50,7 +50,8 @@ function ldraw_lib__54715() = [
 // 
 // 0 !HISTORY 2007-12-02 [Philo] Added bevels - Refined shape
 // 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Needs work: Internal structure not modelled
 // 
@@ -201,10 +202,10 @@ function ldraw_lib__54715() = [
   [1,16,-47,39,-160,0,17,0,0,0,44,44,0,0, ldraw_lib__48__1_16cyli()],
 // 1 16 -47 39 -160 0 20 0 16.838 0 40.651 40.651 0 -16.838 48\1-4cyli.dat
   [1,16,-47,39,-160,0,20,0,16.838,0,40.651,40.651,0,-16.838, ldraw_lib__48__1_4cyli()],
-// 1 16 -27 39 -160 0 -1 0 1.414 0 1.414 1.414 0 -1.414 48\1-4rin21.dat
-  [1,16,-27,39,-160,0,-1,0,1.414,0,1.414,1.414,0,-1.414, ldraw_lib__48__1_4rin21()],
-// 1 16 -27 39 -160 0 -1 0 0 0 2 -2 0 0 48\1-16ri21.dat
-  [1,16,-27,39,-160,0,-1,0,0,0,2,-2,0,0, ldraw_lib__48__1_16ri21()],
+// 1 16 -27 39 -160 0 -1 0 1.414 0 1.414 1.414 0 -1.414 48\1-4ring21.dat
+  [1,16,-27,39,-160,0,-1,0,1.414,0,1.414,1.414,0,-1.414, ldraw_lib__48__1_4ring21()],
+// 1 16 -27 39 -160 0 -1 0 0 0 2 -2 0 0 48\1-16ring21.dat
+  [1,16,-27,39,-160,0,-1,0,0,0,2,-2,0,0, ldraw_lib__48__1_16ring21()],
 // 1 16 -47 39 -160 0 20 0 40.651 0 -16.838 -16.838 0 -40.651 48\1-16cyli.dat
   [1,16,-47,39,-160,0,20,0,40.651,0,-16.838,-16.838,0,-40.651, ldraw_lib__48__1_16cyli()],
 // 1 16 -47 39 -160 0 23 0 31.113 0 -31.113 -31.113 0 -31.113 48\1-16cyli.dat
@@ -590,8 +591,8 @@ function ldraw_lib__54715() = [
   [5,24,-15.5,29,-2,-17,29,-2,-15.5,29,0,-15.5,28.75,-3.78],
 // 1 16 -15.5 0 0 0 15.5 0 -29 0 0 0 0 29 48\2-4cyli.dat
   [1,16,-15.5,0,0,0,15.5,0,-29,0,0,0,0,29, ldraw_lib__48__2_4cyli()],
-// 1 16 -15.5 0 0 0 1 0 -1 0 0 0 0 1 48\4-4rin28.dat
-  [1,16,-15.5,0,0,0,1,0,-1,0,0,0,0,1, ldraw_lib__48__4_4rin28()],
+// 1 16 -15.5 0 0 0 1 0 -1 0 0 0 0 1 48\4-4ring28.dat
+  [1,16,-15.5,0,0,0,1,0,-1,0,0,0,0,1, ldraw_lib__48__4_4ring28()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -15.5 0 0 0 5.5 0 -28 0 0 0 0 28 48\4-4cyli.dat

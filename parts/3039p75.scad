@@ -1,6 +1,6 @@
 use <../lib.scad>
 use <../p/2-4disc.scad>
-use <../p/2-4rin10.scad>
+use <../p/2-4ring10.scad>
 use <../p/3-4ring3.scad>
 use <../p/3-4ring4.scad>
 use <../p/3-4ring5.scad>
@@ -9,7 +9,7 @@ function ldraw_lib__3039p75() = [
 // 0 Slope Brick 45  2 x  2 with Red/White "5" and White Stripe Pattern
 // 0 Name: 3039p75.dat
 // 0 Author: J.C. Tchang [tchang]
-// 0 !LDRAW_ORG Part UPDATE 2022-04
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -21,7 +21,8 @@ function ldraw_lib__3039p75() = [
 // 0 !HISTORY 2011-07-25 [PTadmin] Official Update 2011-01
 // 0 !HISTORY 2022-06-22 [Philo] Updated description, added keywords
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3039s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3039s01()],
@@ -47,8 +48,8 @@ function ldraw_lib__3039p75() = [
 // 0 // White outline
 // 1 15 0 13.039 -23.039 -0.7391 0 0.3062 0.21645 0.70711 0.52262 -0.21645 0.70711 -0.52262 3-4ring5.dat
   [1,15,0,13.039,-23.039,-0.7391,0,0.3062,0.21645,0.70711,0.52262,-0.21645,0.70711,-0.52262, ldraw_lib__3_4ring5()],
-// 1 15 0 13.039 -23.039 -0.7391 0 0.3062 0.21645 0.70711 0.52262 -0.21645 0.70711 -0.52262 2-4rin10.dat
-  [1,15,0,13.039,-23.039,-0.7391,0,0.3062,0.21645,0.70711,0.52262,-0.21645,0.70711,-0.52262, ldraw_lib__2_4rin10()],
+// 1 15 0 13.039 -23.039 -0.7391 0 0.3062 0.21645 0.70711 0.52262 -0.21645 0.70711 -0.52262 2-4ring10.dat
+  [1,15,0,13.039,-23.039,-0.7391,0,0.3062,0.21645,0.70711,0.52262,-0.21645,0.70711,-0.52262, ldraw_lib__2_4ring10()],
 // 4 15 6.222 8.639 -18.639 5.657 9.039 -19.039 7.391 10.875 -20.875 8.13 10.658 -20.658
   [4,15,6.222,8.639,-18.639,5.657,9.039,-19.039,7.391,10.875,-20.875,8.13,10.658,-20.658],
 // 4 15 6.222 8.639 -18.639 3.368 7.29 -17.29 3.062 7.813 -17.813 5.657 9.039 -19.039

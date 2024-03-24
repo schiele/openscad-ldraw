@@ -1,9 +1,9 @@
 use <../../lib.scad>
 function ldraw_lib__48__1_4rin38() = [
-// 0 Hi-Res Ring 38 x 0.25
+// 0 ~Hi-Res Ring 38 x 0.25 (Obsolete)
 // 0 Name: 48\1-4rin38.dat
 // 0 Author: Steffen [Steffen]
-// 0 !LDRAW_ORG 48_Primitive UPDATE 2012-02
+// 0 !LDRAW_ORG 48_Primitive UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -15,7 +15,8 @@ function ldraw_lib__48__1_4rin38() = [
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
 // 0 !HISTORY 2012-02-27 [Philo] Changed to CCW
 // 0 !HISTORY 2012-08-09 [PTadmin] Official Update 2012-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Obsolete, use 48\1-4ring38.dat
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 4 16 39 0 0 38.6646 0 5.0895 37.6732 0 4.959 38 0 0
   [4,16,39,0,0,38.6646,0,5.0895,37.6732,0,4.959,38,0,0],

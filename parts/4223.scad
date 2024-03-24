@@ -4,11 +4,11 @@ use <../p/4-4edge.scad>
 use <../p/4-4ring1.scad>
 use <../p/4-4ring2.scad>
 use <../p/4-4ring4.scad>
-use <../p/48/1-4rin23.scad>
+use <../p/48/1-4ring23.scad>
 use <../p/48/4-4aring.scad>
 use <../p/48/4-4cyli.scad>
 use <../p/48/4-4edge.scad>
-use <../p/48/4-4rin24.scad>
+use <../p/48/4-4ring24.scad>
 use <../p/box2-7.scad>
 use <../p/box4-4a.scad>
 use <../p/rect.scad>
@@ -18,7 +18,7 @@ function ldraw_lib__4223() = [
 // 0 Fabuland Table
 // 0 Name: 4223.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2012-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -28,7 +28,8 @@ function ldraw_lib__4223() = [
 // 0 !CATEGORY Figure Accessory
 // 
 // 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 0 0 -50 0 8 0 50 0 0 48\4-4cyli.dat
   [1,16,0,0,0,0,0,-50,0,8,0,50,0,0, ldraw_lib__48__4_4cyli()],
@@ -168,16 +169,16 @@ function ldraw_lib__4223() = [
   [1,16,0,0,0,0,0,-10,0,1,0,10,0,0, ldraw_lib__4_4ring4()],
 // 1 16 0 0 0 0 0 -50 0 1 0 50 0 0 48\4-4aring.dat
   [1,16,0,0,0,0,0,-50,0,1,0,50,0,0, ldraw_lib__48__4_4aring()],
-// 1 16 0 8 0 0 0 -2 0 -1 0 2 0 0 48\4-4rin24.dat
-  [1,16,0,8,0,0,0,-2,0,-1,0,2,0,0, ldraw_lib__48__4_4rin24()],
-// 1 16 0 8 0 0 0 -2 0 -1 0 2 0 0 48\1-4rin23.dat
-  [1,16,0,8,0,0,0,-2,0,-1,0,2,0,0, ldraw_lib__48__1_4rin23()],
-// 1 16 0 8 0 -2 0 0 0 -1 0 0 0 -2 48\1-4rin23.dat
-  [1,16,0,8,0,-2,0,0,0,-1,0,0,0,-2, ldraw_lib__48__1_4rin23()],
-// 1 16 0 8 0 0 0 2 0 -1 0 -2 0 0 48\1-4rin23.dat
-  [1,16,0,8,0,0,0,2,0,-1,0,-2,0,0, ldraw_lib__48__1_4rin23()],
-// 1 16 0 8 0 2 0 0 0 -1 0 0 0 2 48\1-4rin23.dat
-  [1,16,0,8,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__48__1_4rin23()],
+// 1 16 0 8 0 0 0 -2 0 -1 0 2 0 0 48\4-4ring24.dat
+  [1,16,0,8,0,0,0,-2,0,-1,0,2,0,0, ldraw_lib__48__4_4ring24()],
+// 1 16 0 8 0 0 0 -2 0 -1 0 2 0 0 48\1-4ring23.dat
+  [1,16,0,8,0,0,0,-2,0,-1,0,2,0,0, ldraw_lib__48__1_4ring23()],
+// 1 16 0 8 0 -2 0 0 0 -1 0 0 0 -2 48\1-4ring23.dat
+  [1,16,0,8,0,-2,0,0,0,-1,0,0,0,-2, ldraw_lib__48__1_4ring23()],
+// 1 16 0 8 0 0 0 2 0 -1 0 -2 0 0 48\1-4ring23.dat
+  [1,16,0,8,0,0,0,2,0,-1,0,-2,0,0, ldraw_lib__48__1_4ring23()],
+// 1 16 0 8 0 2 0 0 0 -1 0 0 0 2 48\1-4ring23.dat
+  [1,16,0,8,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__48__1_4ring23()],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 stug-2x2.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_2x2()],
 ];

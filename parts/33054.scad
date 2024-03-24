@@ -2,7 +2,7 @@ use <../lib.scad>
 use <../p/4-4cylc.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4edge.scad>
-use <../p/4-4rin15.scad>
+use <../p/4-4ring15.scad>
 use <../p/4-4ring3.scad>
 use <../p/t01i1579.scad>
 use <../p/t01o1579.scad>
@@ -11,7 +11,7 @@ function ldraw_lib__33054() = [
 // 0 Minifig Mug
 // 0 Name: 33054.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2010-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -23,7 +23,8 @@ function ldraw_lib__33054() = [
 // 0 !HISTORY 2010-02-09 {LEGO Universe Team} Original part shape
 // 0 !HISTORY 2010-02-19 [Philo] File preparation for LDraw Parts Tracker
 // 0 !HISTORY 2010-04-05 [PTadmin] Official Update 2010-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 24 0 0 0 -8 0 1 0 8 0 0 4-4edge.dat
   [1,16,0,24,0,0,0,-8,0,1,0,8,0,0, ldraw_lib__4_4edge()],
@@ -39,8 +40,8 @@ function ldraw_lib__33054() = [
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 5 0 0 0 -8 0 -4 0 8 0 0 4-4cyli.dat
   [1,16,0,5,0,0,0,-8,0,-4,0,8,0,0, ldraw_lib__4_4cyli()],
-// 1 16 0 5 0 0 0 -0.5 0 1 0 0.5 0 0 4-4rin15.dat
-  [1,16,0,5,0,0,0,-0.5,0,1,0,0.5,0,0, ldraw_lib__4_4rin15()],
+// 1 16 0 5 0 0 0 -0.5 0 1 0 0.5 0 0 4-4ring15.dat
+  [1,16,0,5,0,0,0,-0.5,0,1,0,0.5,0,0, ldraw_lib__4_4ring15()],
 // 1 16 0 5 0 0 0 -8 0 1 0 8 0 0 4-4edge.dat
   [1,16,0,5,0,0,0,-8,0,1,0,8,0,0, ldraw_lib__4_4edge()],
 // 1 16 0 9 0 0 0 -8 0 33.3333 0 8 0 0 t01o3750.dat

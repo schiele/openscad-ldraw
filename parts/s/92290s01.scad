@@ -1,12 +1,12 @@
 use <../../lib.scad>
-use <../../p/3-8rin10.scad>
+use <../../p/3-8ring10.scad>
 use <../../p/3-8ring3.scad>
 use <../../p/3-8ring4.scad>
 function ldraw_lib__s__92290s01() = [
 // 0 ~Minifig Weapon Trident Quarter of Head
 // 0 Name: s\92290s01.dat
 // 0 Author: Joerg Sommerer [Brickaneer]
-// 0 !LDRAW_ORG Subpart UPDATE 2012-02
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -14,7 +14,8 @@ function ldraw_lib__s__92290s01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2012-08-09 [PTadmin] Official Update 2012-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 2 24 0 -51.547 -4 1.531 -51.483 -3.696
   [2,24,0,-51.547,-4,1.531,-51.483,-3.696],
@@ -226,8 +227,8 @@ function ldraw_lib__s__92290s01() = [
   [1,16,4.5,-70,0,0,-1,0,-1,0,0,0,0,-1, ldraw_lib__3_8ring3()],
 // 1 16 4.5 -70 0 0 -1 0 -1 0 0 0 0 -1 3-8ring4.dat
   [1,16,4.5,-70,0,0,-1,0,-1,0,0,0,0,-1, ldraw_lib__3_8ring4()],
-// 1 16 4.5 -70 0 0 -1 0 -0.5 0 0 0 0 -0.5 3-8rin10.dat
-  [1,16,4.5,-70,0,0,-1,0,-0.5,0,0,0,0,-0.5, ldraw_lib__3_8rin10()],
+// 1 16 4.5 -70 0 0 -1 0 -0.5 0 0 0 0 -0.5 3-8ring10.dat
+  [1,16,4.5,-70,0,0,-1,0,-0.5,0,0,0,0,-0.5, ldraw_lib__3_8ring10()],
 // 4 16 2.31 -75.31 -0.957 2.5 -75.5 0 2.5 -90.883 0 2.31 -91.299 -0.957
   [4,16,2.31,-75.31,-0.957,2.5,-75.5,0,2.5,-90.883,0,2.31,-91.299,-0.957],
 // 5 24 2.5 -75.5 0 2.5 -90.883 0 2.31 -75.31 -0.957 2.31 -75.31 0.957

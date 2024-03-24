@@ -25,7 +25,7 @@ use <../p/4-4cyls.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4edge.scad>
 use <../p/4-4ndis.scad>
-use <../p/4-4rin25.scad>
+use <../p/4-4ring25.scad>
 use <../p/4-4ring3.scad>
 use <../p/4-4ring4.scad>
 use <../p/4-4ring8.scad>
@@ -39,7 +39,7 @@ use <../p/48/3-4edge.scad>
 use <../p/48/4-4crh1.scad>
 use <../p/48/4-4edge.scad>
 use <../p/48/4-4ndis.scad>
-use <../p/48/4-4rin15.scad>
+use <../p/48/4-4ring15.scad>
 use <../p/5-8cyli.scad>
 use <../p/5-8edge.scad>
 use <../p/peghole.scad>
@@ -51,7 +51,7 @@ function ldraw_lib__41533() = [
 // 0 Brick  2 x  2  x  2 with  2 Holes and Click Rotation Ring
 // 0 Name: 41533.dat
 // 0 Author: Donald Sutter [technog]
-// 0 !LDRAW_ORG Part UPDATE 2010-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -59,7 +59,8 @@ function ldraw_lib__41533() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2010-07-05 [PTadmin] Official Update 2010-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 -10 0 -10 1 0 0 0 1 0 0 0 1 stud2a.dat
   [1,16,-10,0,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2a()],
@@ -267,10 +268,10 @@ function ldraw_lib__41533() = [
   [1,16,0,26,20,0,0,-8,8,0,0,0,-1,0, ldraw_lib__4_4ndis()],
 // 1 16 0 26 -5 0 0 1 1 0 0 0 19 0 48\4-4crh1.dat
   [1,16,0,26,-5,0,0,1,1,0,0,0,19,0, ldraw_lib__48__4_4crh1()],
-// 1 16 0 26 -24 -0.8 0 0 0 0 0.8 0 1 0 48\4-4rin15.dat
-  [1,16,0,26,-24,-0.8,0,0,0,0,0.8,0,1,0, ldraw_lib__48__4_4rin15()],
-// 1 16 0 26 -24 -0.507 0 0 0 0 0.507 0 1 0 4-4rin25.dat
-  [1,16,0,26,-24,-0.507,0,0,0,0,0.507,0,1,0, ldraw_lib__4_4rin25()],
+// 1 16 0 26 -24 -0.8 0 0 0 0 0.8 0 1 0 48\4-4ring15.dat
+  [1,16,0,26,-24,-0.8,0,0,0,0,0.8,0,1,0, ldraw_lib__48__4_4ring15()],
+// 1 16 0 26 -24 -0.507 0 0 0 0 0.507 0 1 0 4-4ring25.dat
+  [1,16,0,26,-24,-0.507,0,0,0,0,0.507,0,1,0, ldraw_lib__4_4ring25()],
 // 1 16 0 26 -23.176 -13.176 0 0 0 0 13.176 0 -13.176 0 t04o0625.dat
   [1,16,0,26,-23.176,-13.176,0,0,0,0,13.176,0,-13.176,0, ldraw_lib__t04o0625()],
 // 1 16 0 26 -23.176 0 0 13.176 13.176 0 0 0 -13.176 0 t04o0625.dat

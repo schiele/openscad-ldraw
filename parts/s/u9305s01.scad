@@ -8,9 +8,9 @@ use <../../p/1-8chrd.scad>
 use <../../p/1-8cyli.scad>
 use <../../p/2-4cyli.scad>
 use <../../p/2-4edge.scad>
-use <../../p/2-4rin24.scad>
+use <../../p/2-4ring24.scad>
 use <../../p/4-4edge.scad>
-use <../../p/4-4rin24.scad>
+use <../../p/4-4ring24.scad>
 use <../../p/box4-7a.scad>
 use <../../p/rect1.scad>
 use <../../p/rect3.scad>
@@ -19,7 +19,7 @@ function ldraw_lib__s__u9305s01() = [
 // 0 ~Boat Keel - Top Part, Quarter
 // 0 Name: s\u9305s01.dat
 // 0 Author: Max Martin Richter [MMR1988]
-// 0 !LDRAW_ORG Subpart UPDATE 2018-02
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -27,7 +27,8 @@ function ldraw_lib__s__u9305s01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2018-12-08 [PTadmin] Official Update 2018-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // outside hull
 // 
@@ -1311,8 +1312,8 @@ function ldraw_lib__s__u9305s01() = [
 // 
 // 1 16 10 5.25 50 6.25 0 0 0 1 0 0 0 6.25 4-4edge.dat
   [1,16,10,5.25,50,6.25,0,0,0,1,0,0,0,6.25, ldraw_lib__4_4edge()],
-// 1 16 10 5.25 50 0.25 0 0 0 1 0 0 0 0.25 4-4rin24.dat
-  [1,16,10,5.25,50,0.25,0,0,0,1,0,0,0,0.25, ldraw_lib__4_4rin24()],
+// 1 16 10 5.25 50 0.25 0 0 0 1 0 0 0 0.25 4-4ring24.dat
+  [1,16,10,5.25,50,0.25,0,0,0,1,0,0,0,0.25, ldraw_lib__4_4ring24()],
 // 1 16 10 5.25 50 6 0 0 0 1 0 0 0 6 4-4edge.dat
   [1,16,10,5.25,50,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4edge()],
 // 2 24 15.01076 5.25 53.0932 15.01076 5.25 53.53449
@@ -1605,8 +1606,8 @@ function ldraw_lib__s__u9305s01() = [
 // 
 // 1 16 10 5.25 70 5.774247 0 -2.391771 0 1 0 -2.391771 0 -5.774247 2-4edge.dat
   [1,16,10,5.25,70,5.774247,0,-2.391771,0,1,0,-2.391771,0,-5.774247, ldraw_lib__2_4edge()],
-// 1 16 10 5.25 70 -0.23097 0 -0.095671 0 1 0 0.095671 0 -0.23097 2-4rin24.dat
-  [1,16,10,5.25,70,-0.23097,0,-0.095671,0,1,0,0.095671,0,-0.23097, ldraw_lib__2_4rin24()],
+// 1 16 10 5.25 70 -0.23097 0 -0.095671 0 1 0 0.095671 0 -0.23097 2-4ring24.dat
+  [1,16,10,5.25,70,-0.23097,0,-0.095671,0,1,0,0.095671,0,-0.23097, ldraw_lib__2_4ring24()],
 // 1 16 10 5.25 70 5.543277 0 -2.296101 0 1 0 -2.296101 0 -5.543277 2-4edge.dat
   [1,16,10,5.25,70,5.543277,0,-2.296101,0,1,0,-2.296101,0,-5.543277, ldraw_lib__2_4edge()],
 // 2 24 4.109402 5.25 70.55017 3.859402 5.25 70.550172

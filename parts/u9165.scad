@@ -10,14 +10,14 @@ use <../p/48/4-4aring.scad>
 use <../p/48/4-4con1.scad>
 use <../p/48/4-4con3.scad>
 use <../p/48/4-4cylo.scad>
-use <../p/48/4-4rin10.scad>
-use <../p/48/4-4rin11.scad>
-use <../p/48/4-4rin12.scad>
+use <../p/48/4-4ring10.scad>
+use <../p/48/4-4ring11.scad>
+use <../p/48/4-4ring12.scad>
 function ldraw_lib__u9165() = [
 // 0 Container  4.5 x  4.5 x  4.5 Rubbish Bin Lid
 // 0 Name: u9165.dat
 // 0 Author: Alex Taylor [anathema]
-// 0 !LDRAW_ORG Part UPDATE 2012-03
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -27,10 +27,11 @@ function ldraw_lib__u9165() = [
 // 0 !KEYWORDS Fabuland, garbage, trash, trashcan
 // 
 // 0 !HISTORY 2012-12-28 [PTadmin] Official Update 2012-03
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
-// 
-// 1 16 0 5 0 4 0 0 0 -1 0 0 0 -4 48\4-4rin11.dat
-  [1,16,0,5,0,4,0,0,0,-1,0,0,0,-4, ldraw_lib__48__4_4rin11()],
+// 1 16 0 5 0 4 0 0 0 -1 0 0 0 -4 48\4-4ring11.dat
+  [1,16,0,5,0,4,0,0,0,-1,0,0,0,-4, ldraw_lib__48__4_4ring11()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -4 0 44 0 0 0 9 0 0 0 44 48\4-4cylo.dat
@@ -61,8 +62,8 @@ function ldraw_lib__u9165() = [
   [1,16,0,-12,0,2.5,0,0,0,-1,0,0,0,-2.5, ldraw_lib__4_4ring1()],
 // 1 16 0 -4 0 10 0 0 0 -1 0 0 0 -10 48\4-4aring.dat
   [1,16,0,-4,0,10,0,0,0,-1,0,0,0,-10, ldraw_lib__48__4_4aring()],
-// 1 16 0 -4 0 1 0 0 0 -1 0 0 0 -1 48\4-4rin10.dat
-  [1,16,0,-4,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__48__4_4rin10()],
+// 1 16 0 -4 0 1 0 0 0 -1 0 0 0 -1 48\4-4ring10.dat
+  [1,16,0,-4,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__48__4_4ring10()],
 // 1 16 0 -11.5 0 9 0 0 0 -0.5 0 0 0 -9 48\4-4con1.dat
   [1,16,0,-11.5,0,9,0,0,0,-0.5,0,0,0,-9, ldraw_lib__48__4_4con1()],
 // 5 24 33 -7 0 32.718 -7 -4.307 16.506 -9.5 0 36 -4 0
@@ -551,8 +552,8 @@ function ldraw_lib__u9165() = [
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -4 0 -24 0 0 0 -4.365 0 0 0 24 48\4-4cylo.dat
   [1,16,0,-4,0,-24,0,0,0,-4.365,0,0,0,24, ldraw_lib__48__4_4cylo()],
-// 1 16 0 -4 0 2 0 0 0 -1 0 0 0 -2 48\4-4rin12.dat
-  [1,16,0,-4,0,2,0,0,0,-1,0,0,0,-2, ldraw_lib__48__4_4rin12()],
+// 1 16 0 -4 0 2 0 0 0 -1 0 0 0 -2 48\4-4ring12.dat
+  [1,16,0,-4,0,2,0,0,0,-1,0,0,0,-2, ldraw_lib__48__4_4ring12()],
 // 1 16 0 -4 0 -26 0 0 0 -4.062 0 0 0 26 48\4-4cylo.dat
   [1,16,0,-4,0,-26,0,0,0,-4.062,0,0,0,26, ldraw_lib__48__4_4cylo()],
 // 0 BFC INVERTNEXT

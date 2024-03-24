@@ -2,8 +2,8 @@ use <../lib.scad>
 use <../p/1-4cyli.scad>
 use <../p/48/1-4ndis.scad>
 use <../p/48/4-4disc.scad>
-use <../p/48/4-4rin10.scad>
-use <../p/48/4-4rin22.scad>
+use <../p/48/4-4ring10.scad>
+use <../p/48/4-4ring22.scad>
 use <../p/48/4-4ring4.scad>
 use <../p/48/4-4ring6.scad>
 use <../p/48/4-4ring7.scad>
@@ -12,7 +12,7 @@ function ldraw_lib__973pb2() = [
 // 0 Minifig Torso with Batman Robin Pattern
 // 0 Name: 973pb2.dat
 // 0 Author: Kevin Roach [KROACH]
-// 0 !LDRAW_ORG Part UPDATE 2011-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -21,7 +21,8 @@ function ldraw_lib__973pb2() = [
 // 
 // 0 !HISTORY 2011-07-24 [BlackBrick89] Re-written and BFCed
 // 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],
@@ -44,10 +45,10 @@ function ldraw_lib__973pb2() = [
   [1,0,0,27.983,-10,0.25,0,0,0,0,-0.25,0,1,0, ldraw_lib__48__4_4ring7()],
 // 1 14 0 27.983 -10 0.5 0 0 0 0 -0.5 0 1 0 48\4-4ring4.dat
   [1,14,0,27.983,-10,0.5,0,0,0,0,-0.5,0,1,0, ldraw_lib__48__4_4ring4()],
-// 1 14 0 27.983 -10 0.25 0 0 0 0 -0.25 0 1 0 48\4-4rin10.dat
-  [1,14,0,27.983,-10,0.25,0,0,0,0,-0.25,0,1,0, ldraw_lib__48__4_4rin10()],
-// 1 14 0 27.983 -10 0.125 0 0 0 0 -0.125 0 1 0 48\4-4rin22.dat
-  [1,14,0,27.983,-10,0.125,0,0,0,0,-0.125,0,1,0, ldraw_lib__48__4_4rin22()],
+// 1 14 0 27.983 -10 0.25 0 0 0 0 -0.25 0 1 0 48\4-4ring10.dat
+  [1,14,0,27.983,-10,0.25,0,0,0,0,-0.25,0,1,0, ldraw_lib__48__4_4ring10()],
+// 1 14 0 27.983 -10 0.125 0 0 0 0 -0.125 0 1 0 48\4-4ring22.dat
+  [1,14,0,27.983,-10,0.125,0,0,0,0,-0.125,0,1,0, ldraw_lib__48__4_4ring22()],
 // 1 0 0 27.983 -10 0.4791 0 0 0 0 -0.4791 0 1 0 48\4-4ring6.dat
   [1,0,0,27.983,-10,0.4791,0,0,0,0,-0.4791,0,1,0, ldraw_lib__48__4_4ring6()],
 // 4 14 6.3125 5.6875 -10 4.693 10.176 -10 6.7117 9.5651 -10 7.3133 6.9133 -10

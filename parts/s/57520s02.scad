@@ -1,7 +1,7 @@
 use <../../lib.scad>
 use <../../p/4-4cyli.scad>
 use <../../p/4-4edge.scad>
-use <../../p/4-4rin14.scad>
+use <../../p/4-4ring14.scad>
 use <../../p/4-4ring3.scad>
 use <../../p/4-4ring6.scad>
 use <../../p/4-4ring8.scad>
@@ -14,7 +14,7 @@ function ldraw_lib__s__57520s02() = [
 // 0 ~Technic Sprocket Wheel 25.4 without Front Face
 // 0 Name: s\57520s02.dat
 // 0 Author: Donald Sutter [technog]
-// 0 !LDRAW_ORG Subpart UPDATE 2010-01
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -23,7 +23,8 @@ function ldraw_lib__s__57520s02() = [
 // 
 // 0 !HISTORY 2009-10-17 [arezey] Subfiled geometry
 // 0 !HISTORY 2010-04-05 [PTadmin] Official Update 2010-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 10 1 0 0 0 0 1 0 -20 0 axlehole.dat
   [1,16,0,0,10,1,0,0,0,0,1,0,-20,0, ldraw_lib__axlehole()],
@@ -59,10 +60,10 @@ function ldraw_lib__s__57520s02() = [
   [1,16,0,0,1,2,0,0,0,0,2,0,-1,0, ldraw_lib__4_4ring6()],
 // 1 16 0 0 -1 2 0 0 0 0 2 0 1 0 4-4ring6.dat
   [1,16,0,0,-1,2,0,0,0,0,2,0,1,0, ldraw_lib__4_4ring6()],
-// 1 16 0 0 1 1 0 0 0 0 1 0 -1 0 4-4rin14.dat
-  [1,16,0,0,1,1,0,0,0,0,1,0,-1,0, ldraw_lib__4_4rin14()],
-// 1 16 0 0 -1 1 0 0 0 0 1 0 1 0 4-4rin14.dat
-  [1,16,0,0,-1,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4rin14()],
+// 1 16 0 0 1 1 0 0 0 0 1 0 -1 0 4-4ring14.dat
+  [1,16,0,0,1,1,0,0,0,0,1,0,-1,0, ldraw_lib__4_4ring14()],
+// 1 16 0 0 -1 1 0 0 0 0 1 0 1 0 4-4ring14.dat
+  [1,16,0,0,-1,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4ring14()],
 // 1 16 0 0 1 15 0 0 0 0 15 0 1 0 4-4edge.dat
   [1,16,0,0,1,15,0,0,0,0,15,0,1,0, ldraw_lib__4_4edge()],
 // 1 16 0 0 -1 15 0 0 0 0 15 0 1 0 4-4edge.dat

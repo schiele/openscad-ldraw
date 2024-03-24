@@ -6,12 +6,12 @@ use <../../p/48/1-4con5.scad>
 use <../../p/48/1-4con8.scad>
 use <../../p/48/1-4cyli.scad>
 use <../../p/48/1-4edge.scad>
-use <../../p/48/1-4rin24.scad>
-use <../../p/48/1-4rin40.scad>
-use <../../p/48/1-4rin82.scad>
-use <../../p/48/1-4rin83.scad>
+use <../../p/48/1-4ring24.scad>
 use <../../p/48/1-4ring4.scad>
+use <../../p/48/1-4ring40.scad>
 use <../../p/48/1-4ring7.scad>
+use <../../p/48/1-4ring82.scad>
+use <../../p/48/1-4ring83.scad>
 use <../../p/box2-5.scad>
 use <../../p/box3u2p.scad>
 use <../../p/box4.scad>
@@ -25,7 +25,7 @@ function ldraw_lib__s__57915s01() = [
 // 0 ~Boat Hull Hovercraft Half
 // 0 Name: s\57915s01.dat
 // 0 Author: Michael Heidemann [mikeheide]
-// 0 !LDRAW_ORG Subpart UPDATE 2012-02
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -33,7 +33,8 @@ function ldraw_lib__s__57915s01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2012-08-09 [PTadmin] Official Update 2012-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
@@ -405,14 +406,14 @@ function ldraw_lib__s__57915s01() = [
   [1,16,80,0,120,20,0,0,0,1,0,0,0,20, ldraw_lib__48__1_4ring4()],
 // 1 16 80 4 120 0 0 12 0 -1 0 12 0 0 48\1-4ring7.dat
   [1,16,80,4,120,0,0,12,0,-1,0,12,0,0, ldraw_lib__48__1_4ring7()],
-// 1 16 80 4 120 0 0 1 0 -1 0 1 0 0 48\1-4rin83.dat
-  [1,16,80,4,120,0,0,1,0,-1,0,1,0,0, ldraw_lib__48__1_4rin83()],
-// 1 16 80 54 120 0 0 2 0 -1 0 2 0 0 48\1-4rin40.dat
-  [1,16,80,54,120,0,0,2,0,-1,0,2,0,0, ldraw_lib__48__1_4rin40()],
-// 1 16 80 54 120 0 0 1 0 -1 0 1 0 0 48\1-4rin82.dat
-  [1,16,80,54,120,0,0,1,0,-1,0,1,0,0, ldraw_lib__48__1_4rin82()],
-// 1 16 80 4 120 0 0 4 0 -1 0 4 0 0 48\1-4rin24.dat
-  [1,16,80,4,120,0,0,4,0,-1,0,4,0,0, ldraw_lib__48__1_4rin24()],
+// 1 16 80 4 120 0 0 1 0 -1 0 1 0 0 48\1-4ring83.dat
+  [1,16,80,4,120,0,0,1,0,-1,0,1,0,0, ldraw_lib__48__1_4ring83()],
+// 1 16 80 54 120 0 0 2 0 -1 0 2 0 0 48\1-4ring40.dat
+  [1,16,80,54,120,0,0,2,0,-1,0,2,0,0, ldraw_lib__48__1_4ring40()],
+// 1 16 80 54 120 0 0 1 0 -1 0 1 0 0 48\1-4ring82.dat
+  [1,16,80,54,120,0,0,1,0,-1,0,1,0,0, ldraw_lib__48__1_4ring82()],
+// 1 16 80 4 120 0 0 4 0 -1 0 4 0 0 48\1-4ring24.dat
+  [1,16,80,4,120,0,0,4,0,-1,0,4,0,0, ldraw_lib__48__1_4ring24()],
 // 1 16 80 4 120 100 0 0 0 1 0 0 0 100 48\1-4edge.dat
   [1,16,80,4,120,100,0,0,0,1,0,0,0,100, ldraw_lib__48__1_4edge()],
 // 1 16 80 16 120 120 0 0 0 1 0 0 0 120 48\1-4edge.dat

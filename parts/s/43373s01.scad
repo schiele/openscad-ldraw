@@ -3,17 +3,17 @@ use <../../p/1-4cylc.scad>
 use <../../p/1-4disc.scad>
 use <../../p/48/1-16co24.scad>
 use <../../p/48/1-4con24.scad>
-use <../../p/48/1-4rin19.scad>
+use <../../p/48/1-4ring19.scad>
 use <../../p/48/1-6cyli.scad>
 use <../../p/48/1-6edge.scad>
-use <../../p/48/1-6rin19.scad>
+use <../../p/48/1-6ring19.scad>
 use <../../p/48/5-16edge.scad>
 use <../../p/rect1.scad>
 function ldraw_lib__s__43373s01() = [
 // 0 ~Brick  1 x  2 with Hoop and Axle Half
 // 0 Name: s\43373s01.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Subpart UPDATE 2013-01
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -21,7 +21,8 @@ function ldraw_lib__s__43373s01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2013-07-21 [PTadmin] Official Update 2013-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 3 0 47 0 0 0 1 0 0 0 47 48\1-6edge.dat
   [1,16,0,3,0,47,0,0,0,1,0,0,0,47, ldraw_lib__48__1_6edge()],
@@ -31,10 +32,10 @@ function ldraw_lib__s__43373s01() = [
   [1,16,0,3,0,47,0,0,0,3,0,0,0,47, ldraw_lib__48__1_6cyli()],
 // 1 16 0 6 0 47 0 0 0 1 0 0 0 47 48\1-6edge.dat
   [1,16,0,6,0,47,0,0,0,1,0,0,0,47, ldraw_lib__48__1_6edge()],
-// 1 16 0 6 0 0 0 2.35 0 1 0 -2.35 0 0 48\1-4rin19.dat
-  [1,16,0,6,0,0,0,2.35,0,1,0,-2.35,0,0, ldraw_lib__48__1_4rin19()],
-// 1 16 0 6 0 2.35 0 0 0 1 0 0 0 2.35 48\1-6rin19.dat
-  [1,16,0,6,0,2.35,0,0,0,1,0,0,0,2.35, ldraw_lib__48__1_6rin19()],
+// 1 16 0 6 0 0 0 2.35 0 1 0 -2.35 0 0 48\1-4ring19.dat
+  [1,16,0,6,0,0,0,2.35,0,1,0,-2.35,0,0, ldraw_lib__48__1_4ring19()],
+// 1 16 0 6 0 2.35 0 0 0 1 0 0 0 2.35 48\1-6ring19.dat
+  [1,16,0,6,0,2.35,0,0,0,1,0,0,0,2.35, ldraw_lib__48__1_6ring19()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 6 0 1.54672 0 0.893 0 3 0 -0.893 0 1.54672 48\1-4con24.dat

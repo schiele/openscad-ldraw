@@ -9,9 +9,9 @@ use <../p/4-4edge.scad>
 use <../p/4-4ndis.scad>
 use <../p/48/4-4cylo.scad>
 use <../p/48/4-4edge.scad>
-use <../p/48/4-4rin15.scad>
-use <../p/48/4-4rin27.scad>
-use <../p/48/4-4rin34.scad>
+use <../p/48/4-4ring15.scad>
+use <../p/48/4-4ring27.scad>
+use <../p/48/4-4ring34.scad>
 use <../p/box3u8p.scad>
 use <s/2870s01.scad>
 use <s/2870s02.scad>
@@ -19,7 +19,7 @@ function ldraw_lib__2870() = [
 // 0 Train Speed Regulator  9V - Dial
 // 0 Name: 2870.dat
 // 0 Author: Max Martin Richter [MMR1988]
-// 0 !LDRAW_ORG Part UPDATE 2013-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -27,7 +27,8 @@ function ldraw_lib__2870() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2013-12-23 [PTadmin] Official Update 2013-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2870s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2870s01()],
@@ -63,17 +64,17 @@ function ldraw_lib__2870() = [
 // 
 // 1 16 0 -34 0 87.5 0 0 0 -7.25 0 0 0 87.5 48\4-4cylo.dat
   [1,16,0,-34,0,87.5,0,0,0,-7.25,0,0,0,87.5, ldraw_lib__48__4_4cylo()],
-// 1 16 0 -41.25 0 2.5 0 0 0 1 0 0 0 2.5 48\4-4rin34.dat
-  [1,16,0,-41.25,0,2.5,0,0,0,1,0,0,0,2.5, ldraw_lib__48__4_4rin34()],
+// 1 16 0 -41.25 0 2.5 0 0 0 1 0 0 0 2.5 48\4-4ring34.dat
+  [1,16,0,-41.25,0,2.5,0,0,0,1,0,0,0,2.5, ldraw_lib__48__4_4ring34()],
 // 
-// 1 16 0 -6.5 0 3.25 0 0 0 -1 0 0 0 3.25 48\4-4rin27.dat
-  [1,16,0,-6.5,0,3.25,0,0,0,-1,0,0,0,3.25, ldraw_lib__48__4_4rin27()],
+// 1 16 0 -6.5 0 3.25 0 0 0 -1 0 0 0 3.25 48\4-4ring27.dat
+  [1,16,0,-6.5,0,3.25,0,0,0,-1,0,0,0,3.25, ldraw_lib__48__4_4ring27()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -6.5 0 87.75 0 0 0 -22.5 0 0 0 87.75 48\4-4cylo.dat
   [1,16,0,-6.5,0,87.75,0,0,0,-22.5,0,0,0,87.75, ldraw_lib__48__4_4cylo()],
-// 1 16 0 -29 0 5.5 0 0 0 -1 0 0 0 5.5 48\4-4rin15.dat
-  [1,16,0,-29,0,5.5,0,0,0,-1,0,0,0,5.5, ldraw_lib__48__4_4rin15()],
+// 1 16 0 -29 0 5.5 0 0 0 -1 0 0 0 5.5 48\4-4ring15.dat
+  [1,16,0,-29,0,5.5,0,0,0,-1,0,0,0,5.5, ldraw_lib__48__4_4ring15()],
 // 1 16 0 -29 0 82.5 0 0 0 1 0 0 0 82.5 48\4-4edge.dat
   [1,16,0,-29,0,82.5,0,0,0,1,0,0,0,82.5, ldraw_lib__48__4_4edge()],
 // 

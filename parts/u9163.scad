@@ -3,11 +3,11 @@ use <../p/4-4cylc.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4cylo.scad>
 use <../p/4-4edge.scad>
-use <../p/4-4rin11.scad>
-use <../p/4-4rin12.scad>
-use <../p/4-4rin13.scad>
-use <../p/4-4rin14.scad>
 use <../p/4-4ring1.scad>
+use <../p/4-4ring11.scad>
+use <../p/4-4ring12.scad>
+use <../p/4-4ring13.scad>
+use <../p/4-4ring14.scad>
 use <../p/4-4ring2.scad>
 use <../p/4-4ring3.scad>
 use <../p/4-4ring5.scad>
@@ -21,17 +21,18 @@ function ldraw_lib__u9163() = [
 // 0 Wheel  8 x 19 with Integral Axle
 // 0 Name: u9163.dat
 // 0 Author: Alex Taylor [anathema]
-// 0 !LDRAW_ORG Part UPDATE 2012-03
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS bicycle, bike, Fabuland, motorbike, Motorcycle, scooter
+// 0 !KEYWORDS Fabuland, Motorcycle, bicycle, bike, motorbike, scooter
 // 
 // 0 !HISTORY 2012-12-28 [PTadmin] Official Update 2012-03
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Nomenclature: width_(mm) x rim_diameter_(mm) [optional qualifier]
 // 
@@ -91,32 +92,32 @@ function ldraw_lib__u9163() = [
   [1,16,0,0,6,11,0,0,0,0,-11,0,1,0, ldraw_lib__4_4edge()],
 // 1 16 0 0 -6 11 0 0 0 0 -11 0 1 0 4-4edge.dat
   [1,16,0,0,-6,11,0,0,0,0,-11,0,1,0, ldraw_lib__4_4edge()],
-// 1 16 0 0 6 -1 0 0 0 0 -1 0 -1 0 4-4rin11.dat
-  [1,16,0,0,6,-1,0,0,0,0,-1,0,-1,0, ldraw_lib__4_4rin11()],
-// 1 16 0 0 -6 1 0 0 0 0 -1 0 1 0 4-4rin11.dat
-  [1,16,0,0,-6,1,0,0,0,0,-1,0,1,0, ldraw_lib__4_4rin11()],
-// 1 16 0 0 -6 1 0 0 0 0 -1 0 1 0 4-4rin12.dat
-  [1,16,0,0,-6,1,0,0,0,0,-1,0,1,0, ldraw_lib__4_4rin12()],
-// 1 16 0 0 6 -1 0 0 0 0 -1 0 -1 0 4-4rin12.dat
-  [1,16,0,0,6,-1,0,0,0,0,-1,0,-1,0, ldraw_lib__4_4rin12()],
+// 1 16 0 0 6 -1 0 0 0 0 -1 0 -1 0 4-4ring11.dat
+  [1,16,0,0,6,-1,0,0,0,0,-1,0,-1,0, ldraw_lib__4_4ring11()],
+// 1 16 0 0 -6 1 0 0 0 0 -1 0 1 0 4-4ring11.dat
+  [1,16,0,0,-6,1,0,0,0,0,-1,0,1,0, ldraw_lib__4_4ring11()],
+// 1 16 0 0 -6 1 0 0 0 0 -1 0 1 0 4-4ring12.dat
+  [1,16,0,0,-6,1,0,0,0,0,-1,0,1,0, ldraw_lib__4_4ring12()],
+// 1 16 0 0 6 -1 0 0 0 0 -1 0 -1 0 4-4ring12.dat
+  [1,16,0,0,6,-1,0,0,0,0,-1,0,-1,0, ldraw_lib__4_4ring12()],
 // 1 16 0 0 -9 9 0 0 0 0 9 0 -9 0 t01o2222.dat
   [1,16,0,0,-9,9,0,0,0,0,9,0,-9,0, ldraw_lib__t01o2222()],
 // 1 16 0 0 9 -9 0 0 0 0 9 0 9 0 t01o2222.dat
   [1,16,0,0,9,-9,0,0,0,0,9,0,9,0, ldraw_lib__t01o2222()],
-// 1 16 0 0 -9 1 0 0 0 0 -1 0 1 0 4-4rin13.dat
-  [1,16,0,0,-9,1,0,0,0,0,-1,0,1,0, ldraw_lib__4_4rin13()],
-// 1 16 0 0 -10 1 0 0 0 0 -1 0 1 0 4-4rin14.dat
-  [1,16,0,0,-10,1,0,0,0,0,-1,0,1,0, ldraw_lib__4_4rin14()],
-// 1 16 0 0 10 -1 0 0 0 0 -1 0 -1 0 4-4rin14.dat
-  [1,16,0,0,10,-1,0,0,0,0,-1,0,-1,0, ldraw_lib__4_4rin14()],
+// 1 16 0 0 -9 1 0 0 0 0 -1 0 1 0 4-4ring13.dat
+  [1,16,0,0,-9,1,0,0,0,0,-1,0,1,0, ldraw_lib__4_4ring13()],
+// 1 16 0 0 -10 1 0 0 0 0 -1 0 1 0 4-4ring14.dat
+  [1,16,0,0,-10,1,0,0,0,0,-1,0,1,0, ldraw_lib__4_4ring14()],
+// 1 16 0 0 10 -1 0 0 0 0 -1 0 -1 0 4-4ring14.dat
+  [1,16,0,0,10,-1,0,0,0,0,-1,0,-1,0, ldraw_lib__4_4ring14()],
 // 1 16 0 0 -6 24 0 0 0 0 -24 0 12 0 48\4-4cyli.dat
   [1,16,0,0,-6,24,0,0,0,0,-24,0,12,0, ldraw_lib__48__4_4cyli()],
 // 1 16 0 0 -10 5 0 0 0 0 -5 0 1 0 4-4ring3.dat
   [1,16,0,0,-10,5,0,0,0,0,-5,0,1,0, ldraw_lib__4_4ring3()],
 // 1 16 0 0 10 -5 0 0 0 0 -5 0 -1 0 4-4ring3.dat
   [1,16,0,0,10,-5,0,0,0,0,-5,0,-1,0, ldraw_lib__4_4ring3()],
-// 1 16 0 0 9 -1 0 0 0 0 -1 0 -1 0 4-4rin13.dat
-  [1,16,0,0,9,-1,0,0,0,0,-1,0,-1,0, ldraw_lib__4_4rin13()],
+// 1 16 0 0 9 -1 0 0 0 0 -1 0 -1 0 4-4ring13.dat
+  [1,16,0,0,9,-1,0,0,0,0,-1,0,-1,0, ldraw_lib__4_4ring13()],
 // 1 16 0 0 6 20 0 0 0 0 -20 0 20 0 48\t01o2000.dat
   [1,16,0,0,6,20,0,0,0,0,-20,0,20,0, ldraw_lib__48__t01o2000()],
 // 1 16 0 0 -6 20 0 0 0 0 20 0 -20 0 48\t01o2000.dat

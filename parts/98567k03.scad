@@ -1,7 +1,7 @@
 use <../lib.scad>
 use <../p/3-16chrd.scad>
 use <../p/3-16cylo.scad>
-use <../p/3-16rin7.scad>
+use <../p/3-16ring7.scad>
 use <../p/4-4cylo.scad>
 use <../p/4-4ndis.scad>
 use <../p/box2-7.scad>
@@ -13,7 +13,7 @@ function ldraw_lib__98567k03() = [
 // 0 ~Tool Belt 17L, Segment with Hole
 // 0 Name: 98567k03.dat
 // 0 Author: J.C. Tchang [tchang]
-// 0 !LDRAW_ORG Part Flexible_Section UPDATE 2023-02
+// 0 !LDRAW_ORG Part Flexible_Section UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -24,7 +24,8 @@ function ldraw_lib__98567k03() = [
 // 
 // 0 !HISTORY 2022-12-30 [MagFors] Removed hidden surfaces
 // 0 !HISTORY 2023-04-17 [OrionP] Official Update 2023-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
@@ -142,23 +143,23 @@ function ldraw_lib__98567k03() = [
 // 2 24 -2 10.5 -5 -2 6.602 -5
   [2,24,-2,10.5,-5,-2,6.602,-5],
 // 
-// 1 16 0 0 5 1 0 0 0 0 -1 0 -1 0 3-16rin7.dat
-  [1,16,0,0,5,1,0,0,0,0,-1,0,-1,0, ldraw_lib__3_16rin7()],
-// 1 16 0 0 5 1 0 0 0 0 1 0 -1 0 3-16rin7.dat
-  [1,16,0,0,5,1,0,0,0,0,1,0,-1,0, ldraw_lib__3_16rin7()],
-// 1 16 0 0 5 -1 0 0 0 0 -1 0 -1 0 3-16rin7.dat
-  [1,16,0,0,5,-1,0,0,0,0,-1,0,-1,0, ldraw_lib__3_16rin7()],
-// 1 16 0 0 5 -1 0 0 0 0 1 0 -1 0 3-16rin7.dat
-  [1,16,0,0,5,-1,0,0,0,0,1,0,-1,0, ldraw_lib__3_16rin7()],
+// 1 16 0 0 5 1 0 0 0 0 -1 0 -1 0 3-16ring7.dat
+  [1,16,0,0,5,1,0,0,0,0,-1,0,-1,0, ldraw_lib__3_16ring7()],
+// 1 16 0 0 5 1 0 0 0 0 1 0 -1 0 3-16ring7.dat
+  [1,16,0,0,5,1,0,0,0,0,1,0,-1,0, ldraw_lib__3_16ring7()],
+// 1 16 0 0 5 -1 0 0 0 0 -1 0 -1 0 3-16ring7.dat
+  [1,16,0,0,5,-1,0,0,0,0,-1,0,-1,0, ldraw_lib__3_16ring7()],
+// 1 16 0 0 5 -1 0 0 0 0 1 0 -1 0 3-16ring7.dat
+  [1,16,0,0,5,-1,0,0,0,0,1,0,-1,0, ldraw_lib__3_16ring7()],
 // 
-// 1 16 0 0 -5 1 0 0 0 0 -1 0 1 0 3-16rin7.dat
-  [1,16,0,0,-5,1,0,0,0,0,-1,0,1,0, ldraw_lib__3_16rin7()],
-// 1 16 0 0 -5 1 0 0 0 0 1 0 1 0 3-16rin7.dat
-  [1,16,0,0,-5,1,0,0,0,0,1,0,1,0, ldraw_lib__3_16rin7()],
-// 1 16 0 0 -5 -1 0 0 0 0 -1 0 1 0 3-16rin7.dat
-  [1,16,0,0,-5,-1,0,0,0,0,-1,0,1,0, ldraw_lib__3_16rin7()],
-// 1 16 0 0 -5 -1 0 0 0 0 1 0 1 0 3-16rin7.dat
-  [1,16,0,0,-5,-1,0,0,0,0,1,0,1,0, ldraw_lib__3_16rin7()],
+// 1 16 0 0 -5 1 0 0 0 0 -1 0 1 0 3-16ring7.dat
+  [1,16,0,0,-5,1,0,0,0,0,-1,0,1,0, ldraw_lib__3_16ring7()],
+// 1 16 0 0 -5 1 0 0 0 0 1 0 1 0 3-16ring7.dat
+  [1,16,0,0,-5,1,0,0,0,0,1,0,1,0, ldraw_lib__3_16ring7()],
+// 1 16 0 0 -5 -1 0 0 0 0 -1 0 1 0 3-16ring7.dat
+  [1,16,0,0,-5,-1,0,0,0,0,-1,0,1,0, ldraw_lib__3_16ring7()],
+// 1 16 0 0 -5 -1 0 0 0 0 1 0 1 0 3-16ring7.dat
+  [1,16,0,0,-5,-1,0,0,0,0,1,0,1,0, ldraw_lib__3_16ring7()],
 // 
 // 1 16 0 0 5 8 0 0 0 0 -8 0 -10 0 3-16cylo.dat
   [1,16,0,0,5,8,0,0,0,0,-8,0,-10,0, ldraw_lib__3_16cylo()],

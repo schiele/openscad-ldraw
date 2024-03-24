@@ -11,7 +11,7 @@ use <../../p/2-4ndis.scad>
 use <../../p/2-4ring3.scad>
 use <../../p/2-4ring4.scad>
 use <../../p/3-16cylo.scad>
-use <../../p/3-16rin9.scad>
+use <../../p/3-16ring9.scad>
 use <../../p/3-8cylo.scad>
 use <../../p/4-4ring3.scad>
 use <../../p/48/1-12chrd.scad>
@@ -40,7 +40,7 @@ function ldraw_lib__s__18938s01() = [
 // 0 ~Technic Turntable 60 Tooth Top Quarter
 // 0 Name: s\18938s01.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Subpart UPDATE 2016-01
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -48,7 +48,8 @@ function ldraw_lib__s__18938s01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2016-12-31 [PTadmin] Official Update 2016-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 32 -20 20 0 18 0 0 0 -10 10 0 0 7-16cylo.dat
   [1,16,32,-20,20,0,18,0,0,0,-10,10,0,0, ldraw_lib__7_16cylo()],
@@ -70,10 +71,10 @@ function ldraw_lib__s__18938s01() = [
   [1,16,50,-20,0,0,-1,0,9,0,0,0,0,9, ldraw_lib__1_4ndis()],
 // 1 16 30 -20 0 0 1 0 8 0 0 0 0 8 1-4ndis.dat
   [1,16,30,-20,0,0,1,0,8,0,0,0,0,8, ldraw_lib__1_4ndis()],
-// 1 16 50 -20 20 0 -1 0 -1 0 0 0 0 -1 3-16rin9.dat
-  [1,16,50,-20,20,0,-1,0,-1,0,0,0,0,-1, ldraw_lib__3_16rin9()],
-// 1 16 50 -20 0 0 -1 0 -1 0 0 0 0 1 3-16rin9.dat
-  [1,16,50,-20,0,0,-1,0,-1,0,0,0,0,1, ldraw_lib__3_16rin9()],
+// 1 16 50 -20 20 0 -1 0 -1 0 0 0 0 -1 3-16ring9.dat
+  [1,16,50,-20,20,0,-1,0,-1,0,0,0,0,-1, ldraw_lib__3_16ring9()],
+// 1 16 50 -20 0 0 -1 0 -1 0 0 0 0 1 3-16ring9.dat
+  [1,16,50,-20,0,0,-1,0,-1,0,0,0,0,1, ldraw_lib__3_16ring9()],
 // 1 16 50 -20 20 0 -1 0 0 0 -1 1 0 0 1-4ring9.dat
   [1,16,50,-20,20,0,-1,0,0,0,-1,1,0,0, ldraw_lib__1_4ring9()],
 // 1 16 32 -20 20 0 1 0 0 0 -2 2 0 0 2-4ring4.dat

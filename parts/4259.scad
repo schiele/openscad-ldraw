@@ -3,8 +3,8 @@ use <../p/4-4con10.scad>
 use <../p/4-4con19.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4edge.scad>
-use <../p/4-4rin10.scad>
 use <../p/4-4ring1.scad>
+use <../p/4-4ring10.scad>
 use <../p/4-4ring2.scad>
 use <../p/4-4ring4.scad>
 use <../p/box2-7.scad>
@@ -13,7 +13,7 @@ function ldraw_lib__4259() = [
 // 0 Wheel Rim 10 x 17.4 with 4 Studs and Freestyle Pinhole
 // 0 Name: 4259.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2012-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -21,7 +21,8 @@ function ldraw_lib__4259() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2012-08-09 [PTadmin] Official Update 2012-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Nomenclature: width_(mm) x rim_diameter_(mm) [optional qualifier]
 // 
@@ -93,8 +94,8 @@ function ldraw_lib__4259() = [
   [1,16,0,0,-8,2,0,0,0,0,2,0,1,0, ldraw_lib__4_4ring2()],
 // 1 16 0 0 9 4 0 0 0 0 4 0 -1 0 4-4ring4.dat
   [1,16,0,0,9,4,0,0,0,0,4,0,-1,0, ldraw_lib__4_4ring4()],
-// 1 16 0 0 9 2 0 0 0 0 2 0 -1 0 4-4rin10.dat
-  [1,16,0,0,9,2,0,0,0,0,2,0,-1,0, ldraw_lib__4_4rin10()],
+// 1 16 0 0 9 2 0 0 0 0 2 0 -1 0 4-4ring10.dat
+  [1,16,0,0,9,2,0,0,0,0,2,0,-1,0, ldraw_lib__4_4ring10()],
 // 1 16 0 0 -10 1 0 0 0 0 -1 0 1 0 stug-2x2.dat
   [1,16,0,0,-10,1,0,0,0,0,-1,0,1,0, ldraw_lib__stug_2x2()],
 // 1 16 -0.5 -11.902 0.5 0 -0.5 0 4 0.098 0 0 0 7.5 box2-7.dat

@@ -2,9 +2,9 @@ use <../lib.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4cylo.scad>
 use <../p/4-4edge.scad>
-use <../p/4-4rin36.scad>
 use <../p/4-4ring2.scad>
 use <../p/4-4ring3.scad>
+use <../p/4-4ring36.scad>
 use <../p/axlehol3.scad>
 use <../p/axlehol6.scad>
 use <s/51270s01.scad>
@@ -14,7 +14,7 @@ function ldraw_lib__51270() = [
 // 0 Plant Pumpkin
 // 0 Name: 51270.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2019-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -22,7 +22,8 @@ function ldraw_lib__51270() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2019-09-09 [PTadmin] Official Update 2019-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 stud2a.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2a()],
@@ -38,8 +39,8 @@ function ldraw_lib__51270() = [
   [1,16,0,0,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4edge()],
 // 1 16 0 0 0 2 0 0 0 1 0 0 0 2 4-4ring3.dat
   [1,16,0,0,0,2,0,0,0,1,0,0,0,2, ldraw_lib__4_4ring3()],
-// 1 16 0 27 0 0.33333 0 0 0 -1 0 0 0 0.33333 4-4rin36.dat
-  [1,16,0,27,0,0.33333,0,0,0,-1,0,0,0,0.33333, ldraw_lib__4_4rin36()],
+// 1 16 0 27 0 0.33333 0 0 0 -1 0 0 0 0.33333 4-4ring36.dat
+  [1,16,0,27,0,0.33333,0,0,0,-1,0,0,0,0.33333, ldraw_lib__4_4ring36()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 0 4 0 0 0 4 0 0 0 4 4-4cyli.dat

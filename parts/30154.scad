@@ -8,8 +8,8 @@ use <../p/4-4cyli.scad>
 use <../p/4-4cylo.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4edge.scad>
-use <../p/4-4rin11.scad>
 use <../p/4-4ring1.scad>
+use <../p/4-4ring11.scad>
 use <../p/4-4ring2.scad>
 use <../p/4-4ring3.scad>
 use <../p/4-4ring7.scad>
@@ -18,7 +18,7 @@ function ldraw_lib__30154() = [
 // 0 Minifig Sextant
 // 0 Name: 30154.dat
 // 0 Author: Orion Pobursky [OrionP]
-// 0 !LDRAW_ORG Part UPDATE 2017-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -26,21 +26,22 @@ function ldraw_lib__30154() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS Adventurers, amazon, boat, boating, celestial, chart, charts
-// 0 !KEYWORDS Dino Island, Egypt, navagation, ocean, orienteering, plotting, river
-// 0 !KEYWORDS sailing, sea, ship, Star Wars, Stars, TIE Interceptor
+// 0 !KEYWORDS Adventurers, Dino Island, Egypt, Star Wars, Stars, TIE Interceptor
+// 0 !KEYWORDS amazon, boat, boating, celestial, chart, charts, navagation, ocean
+// 0 !KEYWORDS orienteering, plotting, river, sailing, sea, ship
 // 
 // 0 !HISTORY 2003-08-01 [PTadmin] Official Update 2003-02
 // 0 !HISTORY 2007-06-06 [PTadmin] Header formatted for Contributor Agreement
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
 // 0 !HISTORY 2017-06-29 [MagFors] bfc'd, added missing edges
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 10 0 0 0 2 0 -5.5 0 0 0 0 -5.5 4-4cylo.dat
   [1,16,10,0,0,0,2,0,-5.5,0,0,0,0,-5.5, ldraw_lib__4_4cylo()],
-// 1 16 12 0 0 0 1 0 -.5 0 0 0 0 -.5 4-4rin11.dat
-  [1,16,12,0,0,0,1,0,-.5,0,0,0,0,-.5, ldraw_lib__4_4rin11()],
+// 1 16 12 0 0 0 1 0 -.5 0 0 0 0 -.5 4-4ring11.dat
+  [1,16,12,0,0,0,1,0,-.5,0,0,0,0,-.5, ldraw_lib__4_4ring11()],
 // 1 16 10 0 0 0 1 0 -5.5 0 0 0 0 -5.5 4-4disc.dat
   [1,16,10,0,0,0,1,0,-5.5,0,0,0,0,-5.5, ldraw_lib__4_4disc()],
 // 1 16 0 -6 0 4 0 0 0 1 0 0 0 -4 4-4disc.dat

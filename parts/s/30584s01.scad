@@ -21,13 +21,13 @@ use <../../p/48/1-24edge.scad>
 use <../../p/48/1-4cyli.scad>
 use <../../p/48/1-4edge.scad>
 use <../../p/48/1-4ndis.scad>
-use <../../p/48/1-4rin10.scad>
+use <../../p/48/1-4ring10.scad>
 use <../../p/48/1-4ring7.scad>
 use <../../p/48/1-8cyli.scad>
 use <../../p/48/1-8edge.scad>
 use <../../p/48/2-4cyli.scad>
 use <../../p/48/2-4edge.scad>
-use <../../p/48/2-4rin11.scad>
+use <../../p/48/2-4ring11.scad>
 use <../../p/48/2-4ring3.scad>
 use <../../p/48/2-4ring4.scad>
 use <../../p/48/2-4ring6.scad>
@@ -42,7 +42,7 @@ function ldraw_lib__s__30584s01() = [
 // 0 ~Hose Air Pump 16 x 14 x 13 Base - 1/2
 // 0 Name: s\30584s01.dat
 // 0 Author: Mikkel Bech Jensen [gaia]
-// 0 !LDRAW_ORG Subpart UPDATE 2019-01
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -50,7 +50,8 @@ function ldraw_lib__s__30584s01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 30 0 20 6 0 0 0 20 0 0 0 6 4-4cyli.dat
   [1,16,30,0,20,6,0,0,0,20,0,0,0,6, ldraw_lib__4_4cyli()],
@@ -528,14 +529,14 @@ function ldraw_lib__s__30584s01() = [
   [1,16,0,72,150,0,0,18,0,20,0,-18,0,0, ldraw_lib__48__2_4cyli()],
 // 1 16 0 76 150 0 0 22 0 16 0 -22 0 0 48\2-4cyli.dat
   [1,16,0,76,150,0,0,22,0,16,0,-22,0,0, ldraw_lib__48__2_4cyli()],
-// 1 16 0 92 150 0 0 1.8 0 -1 0 -1.8 0 0 48\1-4rin10.dat
-  [1,16,0,92,150,0,0,1.8,0,-1,0,-1.8,0,0, ldraw_lib__48__1_4rin10()],
+// 1 16 0 92 150 0 0 1.8 0 -1 0 -1.8 0 0 48\1-4ring10.dat
+  [1,16,0,92,150,0,0,1.8,0,-1,0,-1.8,0,0, ldraw_lib__48__1_4ring10()],
 // 1 16 0 92 150 0 0 2.2 0 -1 0 -2.2 0 0 48\2-4ring9.dat
   [1,16,0,92,150,0,0,2.2,0,-1,0,-2.2,0,0, ldraw_lib__48__2_4ring9()],
-// 1 16 0 92 150 1.8 0 0 0 -1 0 0 0 1.8 48\1-4rin10.dat
-  [1,16,0,92,150,1.8,0,0,0,-1,0,0,0,1.8, ldraw_lib__48__1_4rin10()],
-// 1 16 0 76 150 0 0 2 0 -1 0 -2 0 0 48\2-4rin11.dat
-  [1,16,0,76,150,0,0,2,0,-1,0,-2,0,0, ldraw_lib__48__2_4rin11()],
+// 1 16 0 92 150 1.8 0 0 0 -1 0 0 0 1.8 48\1-4ring10.dat
+  [1,16,0,92,150,1.8,0,0,0,-1,0,0,0,1.8, ldraw_lib__48__1_4ring10()],
+// 1 16 0 76 150 0 0 2 0 -1 0 -2 0 0 48\2-4ring11.dat
+  [1,16,0,76,150,0,0,2,0,-1,0,-2,0,0, ldraw_lib__48__2_4ring11()],
 // 1 16 0 76 150 0 0 4 0 -1 0 -4 0 0 48\2-4ring6.dat
   [1,16,0,76,150,0,0,4,0,-1,0,-4,0,0, ldraw_lib__48__2_4ring6()],
 // 1 16 0 72 150 0 0 18 0 1 0 -18 0 0 48\2-4edge.dat

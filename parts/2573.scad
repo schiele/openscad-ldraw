@@ -1,9 +1,9 @@
 use <../lib.scad>
 use <../p/4-4cylo.scad>
-use <../p/4-4rin18.scad>
-use <../p/4-4rin25.scad>
 use <../p/4-4ring1.scad>
+use <../p/4-4ring18.scad>
 use <../p/4-4ring2.scad>
+use <../p/4-4ring25.scad>
 use <../p/4-4ring3.scad>
 use <../p/4-4ring4.scad>
 use <../p/4-4ring5.scad>
@@ -15,7 +15,7 @@ function ldraw_lib__2573() = [
 // 0 Wheel 48 x 76 with Tread on Sidewall
 // 0 Name: 2573.dat
 // 0 Author: John Van Zwieten [jvan]
-// 0 !LDRAW_ORG Part UPDATE 2018-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -31,7 +31,8 @@ function ldraw_lib__2573() = [
 // 0 !HISTORY 2012-10-29 [spykidx] Fixed gaps, realigned studs, added some primitives, and BFC'd
 // 0 !HISTORY 2017-02-18 [MagFors] Closed gaps, added edge lines, standardized description
 // 0 !HISTORY 2018-01-30 [PTadmin] Official Update 2018-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Based on Steve Bliss' Space Wheel Medium
 // 0 // Hub
@@ -74,12 +75,12 @@ function ldraw_lib__2573() = [
   [1,16,1.078,0,0,0,41,0,-18.75,0,0,0,0,18.75, ldraw_lib__4_4cylo()],
 // 1 16 1.078 0 0 0 1 0 3.125 0 0 0 0 3.125 4-4ring6.dat
   [1,16,1.078,0,0,0,1,0,3.125,0,0,0,0,3.125, ldraw_lib__4_4ring6()],
-// 1 16 1.078 0 0 0 1 0 0.875 0 0 0 0 0.875 4-4rin25.dat
-  [1,16,1.078,0,0,0,1,0,0.875,0,0,0,0,0.875, ldraw_lib__4_4rin25()],
+// 1 16 1.078 0 0 0 1 0 0.875 0 0 0 0 0.875 4-4ring25.dat
+  [1,16,1.078,0,0,0,1,0,0.875,0,0,0,0,0.875, ldraw_lib__4_4ring25()],
 // 1 16 1.078 0 0 0 41.5 0 -22.75 0 0 0 0 22.75 4-4cylo.dat
   [1,16,1.078,0,0,0,41.5,0,-22.75,0,0,0,0,22.75, ldraw_lib__4_4cylo()],
-// 1 16 42.578 0 0 0 1 0 1.25 0 0 0 0 1.25 4-4rin18.dat
-  [1,16,42.578,0,0,0,1,0,1.25,0,0,0,0,1.25, ldraw_lib__4_4rin18()],
+// 1 16 42.578 0 0 0 1 0 1.25 0 0 0 0 1.25 4-4ring18.dat
+  [1,16,42.578,0,0,0,1,0,1.25,0,0,0,0,1.25, ldraw_lib__4_4ring18()],
 // 1 16 42.578 0 0 0 7.422 0 -23.75 0 0 0 0 23.75 4-4cylo.dat
   [1,16,42.578,0,0,0,7.422,0,-23.75,0,0,0,0,23.75, ldraw_lib__4_4cylo()],
 // 1 16 50 0 0 0 1 0 -23.75 0 0 0 0 23.75 48\4-4aring.dat

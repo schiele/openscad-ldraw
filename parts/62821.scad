@@ -3,7 +3,7 @@ use <../p/2-4cyli.scad>
 use <../p/2-4disc.scad>
 use <../p/2-4edge.scad>
 use <../p/2-4ndis.scad>
-use <../p/2-4rin14.scad>
+use <../p/2-4ring14.scad>
 use <../p/2-4ring2.scad>
 use <../p/2-4ring3.scad>
 use <../p/2-4ring6.scad>
@@ -31,7 +31,7 @@ use <../p/48/3-16edge.scad>
 use <../p/48/4-4con24.scad>
 use <../p/48/4-4cyli.scad>
 use <../p/48/4-4edge.scad>
-use <../p/48/4-4rin22.scad>
+use <../p/48/4-4ring22.scad>
 use <../p/48/4-4ring3.scad>
 use <../p/48/5-24cyli.scad>
 use <../p/48/5-24edge.scad>
@@ -50,7 +50,7 @@ function ldraw_lib__62821() = [
 // 0 Technic Differential with One Gear 28 Tooth Bevel
 // 0 Name: 62821.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2009-03
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -58,7 +58,8 @@ function ldraw_lib__62821() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2009-12-29 [PTadmin] Official Update 2009-03
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 -30 -1 0 0 0 0 -1 0 1 0 peghole.dat
   [1,16,0,0,-30,-1,0,0,0,0,-1,0,1,0, ldraw_lib__peghole()],
@@ -154,8 +155,8 @@ function ldraw_lib__62821() = [
   [1,16,0,0,-23.5,0,0,2,-2,0,0,0,1,0, ldraw_lib__2_4ring6()],
 // 1 16 0 0 -22 0 0 7 -7 0 0 0 1 0 2-4ring2.dat
   [1,16,0,0,-22,0,0,7,-7,0,0,0,1,0, ldraw_lib__2_4ring2()],
-// 1 16 0 0 -22 0 0 1.5 -1.5 0 0 0 1 0 2-4rin14.dat
-  [1,16,0,0,-22,0,0,1.5,-1.5,0,0,0,1,0, ldraw_lib__2_4rin14()],
+// 1 16 0 0 -22 0 0 1.5 -1.5 0 0 0 1 0 2-4ring14.dat
+  [1,16,0,0,-22,0,0,1.5,-1.5,0,0,0,1,0, ldraw_lib__2_4ring14()],
 // 1 16 0 0 -23.5 0 0 14 -14 0 0 0 1 0 2-4edge.dat
   [1,16,0,0,-23.5,0,0,14,-14,0,0,0,1,0, ldraw_lib__2_4edge()],
 // 1 16 0 0 -22 0 0 14 -14 0 0 0 1 0 2-4edge.dat
@@ -264,8 +265,8 @@ function ldraw_lib__62821() = [
   [4,16,-22,2.87,-27,-21,2.87,-27,-21,-2.87,-27,-22,-2.87,-27],
 // 1 16 0 0 -27 0 0 -23 -23 0 0 0 -5 0 48\4-4edge.dat
   [1,16,0,0,-27,0,0,-23,-23,0,0,0,-5,0, ldraw_lib__48__4_4edge()],
-// 1 16 0 0 -27 0 0 1 -1 0 0 0 5 0 48\4-4rin22.dat
-  [1,16,0,0,-27,0,0,1,-1,0,0,0,5,0, ldraw_lib__48__4_4rin22()],
+// 1 16 0 0 -27 0 0 1 -1 0 0 0 5 0 48\4-4ring22.dat
+  [1,16,0,0,-27,0,0,1,-1,0,0,0,5,0, ldraw_lib__48__4_4ring22()],
 // 1 16 0 0 -26 0 0 -1 -1 0 0 0 -1 0 48\1-4con23.dat
   [1,16,0,0,-26,0,0,-1,-1,0,0,0,-1,0, ldraw_lib__48__1_4con23()],
 // 1 16 0 0 -26 1 0 0 0 0 -1 0 -1 0 48\1-4con23.dat

@@ -5,7 +5,7 @@ use <../p/4-4cylo.scad>
 use <../p/4-4cylse.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4edge.scad>
-use <../p/4-4rin10.scad>
+use <../p/4-4ring10.scad>
 use <../p/4-4ring2.scad>
 use <../p/4-4ring7.scad>
 use <../p/4-4ring8.scad>
@@ -14,7 +14,7 @@ function ldraw_lib__71137() = [
 // 0 Exhaust Pipe
 // 0 Name: 71137.dat
 // 0 Author: James Jessiman
-// 0 !LDRAW_ORG Part UPDATE 2013-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -28,20 +28,21 @@ function ldraw_lib__71137() = [
 // 0 !HISTORY 2013-03-11 [mikeheide] made the elbow diameter greater.
 // 0 !HISTORY 2013-03-12 [MMR1988] optimzied by using other prims
 // 0 !HISTORY 2013-07-21 [PTadmin] Official Update 2013-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 -30 4 0 0 0 0 4 0 19 0 4-4cylc.dat
   [1,16,0,0,-30,4,0,0,0,0,4,0,19,0, ldraw_lib__4_4cylc()],
 // 1 16 0 0 -11 4.4 0 0 0 0 4.4 0 1 0 4-4edge.dat
   [1,16,0,0,-11,4.4,0,0,0,0,4.4,0,1,0, ldraw_lib__4_4edge()],
-// 1 16 0 0 -11 0 0 0.4 0.4 0 0 0 1 0 4-4rin10.dat
-  [1,16,0,0,-11,0,0,0.4,0.4,0,0,0,1,0, ldraw_lib__4_4rin10()],
+// 1 16 0 0 -11 0 0 0.4 0.4 0 0 0 1 0 4-4ring10.dat
+  [1,16,0,0,-11,0,0,0.4,0.4,0,0,0,1,0, ldraw_lib__4_4ring10()],
 // 1 16 0 -11 -11 0 11 0 11 0 0 0 0 11 t04q4000.dat
   [1,16,0,-11,-11,0,11,0,11,0,0,0,0,11, ldraw_lib__t04q4000()],
 // 1 16 0 -11 0 4.4 0 0 0 1 0 0 0 4.4 4-4edge.dat
   [1,16,0,-11,0,4.4,0,0,0,1,0,0,0,4.4, ldraw_lib__4_4edge()],
-// 1 16 0 -11 0 0.4 0 0 0 1 0 0 0 0.4 4-4rin10.dat
-  [1,16,0,-11,0,0.4,0,0,0,1,0,0,0,0.4, ldraw_lib__4_4rin10()],
+// 1 16 0 -11 0 0.4 0 0 0 1 0 0 0 0.4 4-4ring10.dat
+  [1,16,0,-11,0,0.4,0,0,0,1,0,0,0,0.4, ldraw_lib__4_4ring10()],
 // 1 16 0 -26 0 4 0 0 0 15 0 0 0 4 4-4cylo.dat
   [1,16,0,-26,0,4,0,0,0,15,0,0,0,4, ldraw_lib__4_4cylo()],
 // 1 16 0 -26 0 2 0 0 0 -1 0 0 0 2 4-4ring2.dat

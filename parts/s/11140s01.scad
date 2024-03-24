@@ -1,8 +1,8 @@
 use <../../lib.scad>
 use <../../p/48/1-12cylo.scad>
 use <../../p/48/1-12edge.scad>
-use <../../p/48/1-12rin8.scad>
 use <../../p/48/1-12ring4.scad>
+use <../../p/48/1-12ring8.scad>
 use <../../p/48/1-24con7.scad>
 use <../../p/rect.scad>
 use <../../p/rect1.scad>
@@ -14,7 +14,7 @@ function ldraw_lib__s__11140s01() = [
 // 0 ~Wheel Rim 26 x 7 with Rip Cord Gear Axle - Surface 1/6
 // 0 Name: s\11140s01.dat
 // 0 Author: Ingolf Weisheit [stahlwollschaf]
-// 0 !LDRAW_ORG Subpart UPDATE 2014-02
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -22,7 +22,8 @@ function ldraw_lib__s__11140s01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2014-12-23 [PTadmin] Official Update 2014-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // subpart for 11140.dat: common parts (symmetrical to xy-plane and zy-plane, 60deg)
 // 0 // origin: center of wheel
@@ -201,8 +202,8 @@ function ldraw_lib__s__11140s01() = [
   [1,16,-10.87521,-29.23908,-8.375,-1.08365,0,0,0.36785,-1,0,0,0,0.375, ldraw_lib__rect()],
 // 1 16 0 0 -8.75 -12.625 0 -21.86714 -21.86714 0 12.625 0 0.75 0 48\1-12cylo.dat
   [1,16,0,0,-8.75,-12.625,0,-21.86714,-21.86714,0,12.625,0,0.75,0, ldraw_lib__48__1_12cylo()],
-// 1 16 0 0 -8 -1.57813 0 -2.73339 -2.73339 0 1.57813 0 1 0 48\1-12rin8.dat
-  [1,16,0,0,-8,-1.57813,0,-2.73339,-2.73339,0,1.57813,0,1,0, ldraw_lib__48__1_12rin8()],
+// 1 16 0 0 -8 -1.57813 0 -2.73339 -2.73339 0 1.57813 0 1 0 48\1-12ring8.dat
+  [1,16,0,0,-8,-1.57813,0,-2.73339,-2.73339,0,1.57813,0,1,0, ldraw_lib__48__1_12ring8()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 -8.75 -14.20312 0 -24.60053 -24.60053 0 14.20312 0 0.74753 0 48\1-12cylo.dat

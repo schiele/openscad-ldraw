@@ -2,16 +2,17 @@ use <../lib.scad>
 function ldraw_lib__2_4ring44() = [
 // 0 Ring 44 x 0.5
 // 0 Name: 2-4ring44.dat
-// 0 Author: Kevin Roach [KROACH]
-// 0 !LDRAW_ORG Primitive UPDATE 2016-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 Author: Willy Tschager [Holly-Wood]
+// 0 !LDRAW_ORG Primitive UPDATE 2024-02
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2016-12-31 [PTadmin] Official Update 2016-01
-// 
+// 0 !HISTORY 2024-03-02 [Holly-Wood] Complete regeneration, original by KROACH
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 4 16 45 0 0 41.5755 0 17.2215 40.6516 0 16.8388 44 0 0
   [4,16,45,0,0,41.5755,0,17.2215,40.6516,0,16.8388,44,0,0],
@@ -29,6 +30,7 @@ function ldraw_lib__2_4ring44() = [
   [4,16,-31.8195,0,31.8195,-41.5755,0,17.2215,-40.6516,0,16.8388,-31.1124,0,31.1124],
 // 4 16 -41.5755 0 17.2215 -45 0 0 -44 0 0 -40.6516 0 16.8388
   [4,16,-41.5755,0,17.2215,-45,0,0,-44,0,0,-40.6516,0,16.8388],
+// 0 // Build by LDPartEditor (PrimGen 2.X)
 ];
 module ldraw_lib__2_4ring44(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
     makepoly(ldraw_lib__2_4ring44(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);

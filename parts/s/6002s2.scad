@@ -1,7 +1,7 @@
 use <../../lib.scad>
 use <../../p/48/1-4cyli.scad>
 use <../../p/48/1-4edge.scad>
-use <../../p/48/1-4rin18.scad>
+use <../../p/48/1-4ring18.scad>
 use <../../p/48/1-4ring9.scad>
 use <../../p/box4-4a.scad>
 use <../../p/rect.scad>
@@ -14,7 +14,7 @@ function ldraw_lib__s__6002s2() = [
 // 0 ~Panel  6 x  6 x  9 Round with Spherical Top
 // 0 Name: s\6002s2.dat
 // 0 Author: Mark Kennedy [mkennedy]
-// 0 !LDRAW_ORG Subpart UPDATE 2010-03
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CW
@@ -27,7 +27,8 @@ function ldraw_lib__s__6002s2() = [
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
 // 0 !HISTORY 2008-07-07 [mkennedy] Added BFC, used more primitives, fixed error (2006-07-07)
 // 0 !HISTORY 2010-12-31 [PTadmin] Official Update 2010-03
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
@@ -95,8 +96,8 @@ function ldraw_lib__s__6002s2() = [
   [1,16,-16,80,20,0,-4,0,0,0,-72,72,0,0, ldraw_lib__48__1_4cyli()],
 // 1 16 -20 80 20 0 1 0 -8 0 0 0 0 8 48\1-4ring9.dat
   [1,16,-20,80,20,0,1,0,-8,0,0,0,0,8, ldraw_lib__48__1_4ring9()],
-// 1 16 -16 80 20 0 -1 0 -4 0 0 0 0 4 48\1-4rin18.dat
-  [1,16,-16,80,20,0,-1,0,-4,0,0,0,0,4, ldraw_lib__48__1_4rin18()],
+// 1 16 -16 80 20 0 -1 0 -4 0 0 0 0 4 48\1-4ring18.dat
+  [1,16,-16,80,20,0,-1,0,-4,0,0,0,0,4, ldraw_lib__48__1_4ring18()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 20 80 20 0 -36 0 0 0 -76 76 0 0 48\1-4cyli.dat

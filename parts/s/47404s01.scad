@@ -9,7 +9,7 @@ use <../../p/1-8stud4.scad>
 use <../../p/11-16edge.scad>
 use <../../p/3-16cylo.scad>
 use <../../p/3-16edge.scad>
-use <../../p/3-16rin3.scad>
+use <../../p/3-16ring3.scad>
 use <../../p/3-16stud4.scad>
 use <../../p/3-4cyli.scad>
 use <../../p/3-4edge.scad>
@@ -40,7 +40,7 @@ function ldraw_lib__s__47404s01() = [
 // 0 ~Boat Base 10 x 12 - Half
 // 0 Name: s\47404s01.dat
 // 0 Author: Massimo Maso [Sirio]
-// 0 !LDRAW_ORG Subpart UPDATE 2022-04
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -48,7 +48,8 @@ function ldraw_lib__s__47404s01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Undertuds
 // 0 // Primitives
@@ -84,8 +85,8 @@ function ldraw_lib__s__47404s01() = [
   [1,16,80,20,0,0,0,1,0,-1,0,1,0,0, ldraw_lib__st4jfil3()],
 // 1 16 80 20 0 -8 0 0 0 4 0 0 0 8 3-16cylo.dat
   [1,16,80,20,0,-8,0,0,0,4,0,0,0,8, ldraw_lib__3_16cylo()],
-// 1 16 80 24 0 -2 0 0 0 -1 0 0 0 2 3-16rin3.dat
-  [1,16,80,24,0,-2,0,0,0,-1,0,0,0,2, ldraw_lib__3_16rin3()],
+// 1 16 80 24 0 -2 0 0 0 -1 0 0 0 2 3-16ring3.dat
+  [1,16,80,24,0,-2,0,0,0,-1,0,0,0,2, ldraw_lib__3_16ring3()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 80 20 0 -6 0 0 0 4 0 0 0 6 5-16cylo.dat
@@ -96,18 +97,18 @@ function ldraw_lib__s__47404s01() = [
   [1,16,60,20,0,-8,0,0,0,4,0,0,0,8, ldraw_lib__3_16cylo()],
 // 1 16 60 20 0 8 0 0 0 4 0 0 0 8 3-16cylo.dat
   [1,16,60,20,0,8,0,0,0,4,0,0,0,8, ldraw_lib__3_16cylo()],
-// 1 16 60 24 0 -2 0 0 0 -1 0 0 0 2 3-16rin3.dat
-  [1,16,60,24,0,-2,0,0,0,-1,0,0,0,2, ldraw_lib__3_16rin3()],
-// 1 16 60 24 0 2 0 0 0 -1 0 0 0 2 3-16rin3.dat
-  [1,16,60,24,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__3_16rin3()],
+// 1 16 60 24 0 -2 0 0 0 -1 0 0 0 2 3-16ring3.dat
+  [1,16,60,24,0,-2,0,0,0,-1,0,0,0,2, ldraw_lib__3_16ring3()],
+// 1 16 60 24 0 2 0 0 0 -1 0 0 0 2 3-16ring3.dat
+  [1,16,60,24,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__3_16ring3()],
 // 1 16 60 20 0 -8 0 0 0 4 0 0 0 -8 3-16cylo.dat
   [1,16,60,20,0,-8,0,0,0,4,0,0,0,-8, ldraw_lib__3_16cylo()],
 // 1 16 60 20 0 8 0 0 0 4 0 0 0 -8 3-16cylo.dat
   [1,16,60,20,0,8,0,0,0,4,0,0,0,-8, ldraw_lib__3_16cylo()],
-// 1 16 60 24 0 -2 0 0 0 -1 0 0 0 -2 3-16rin3.dat
-  [1,16,60,24,0,-2,0,0,0,-1,0,0,0,-2, ldraw_lib__3_16rin3()],
-// 1 16 60 24 0 2 0 0 0 -1 0 0 0 -2 3-16rin3.dat
-  [1,16,60,24,0,2,0,0,0,-1,0,0,0,-2, ldraw_lib__3_16rin3()],
+// 1 16 60 24 0 -2 0 0 0 -1 0 0 0 -2 3-16ring3.dat
+  [1,16,60,24,0,-2,0,0,0,-1,0,0,0,-2, ldraw_lib__3_16ring3()],
+// 1 16 60 24 0 2 0 0 0 -1 0 0 0 -2 3-16ring3.dat
+  [1,16,60,24,0,2,0,0,0,-1,0,0,0,-2, ldraw_lib__3_16ring3()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 60 20 0 6 0 0 0 4 0 0 0 6 4-4cylo.dat
@@ -122,8 +123,8 @@ function ldraw_lib__s__47404s01() = [
   [1,16,60,20,-20,1,0,0,0,-1,0,0,0,1, ldraw_lib__3_16stud4()],
 // 1 16 60 20 -20 -8 0 0 0 4 0 0 0 8 3-16cylo.dat
   [1,16,60,20,-20,-8,0,0,0,4,0,0,0,8, ldraw_lib__3_16cylo()],
-// 1 16 60 24 -20 -2 0 0 0 -1 0 0 0 2 3-16rin3.dat
-  [1,16,60,24,-20,-2,0,0,0,-1,0,0,0,2, ldraw_lib__3_16rin3()],
+// 1 16 60 24 -20 -2 0 0 0 -1 0 0 0 2 3-16ring3.dat
+  [1,16,60,24,-20,-2,0,0,0,-1,0,0,0,2, ldraw_lib__3_16ring3()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 60 20 -20 -6 0 0 0 4 0 0 0 6 5-16cylo.dat

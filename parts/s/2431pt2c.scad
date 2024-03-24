@@ -7,13 +7,13 @@ use <../../p/1-8chrd.scad>
 use <../../p/1-8tang.scad>
 use <../../p/2-4ring7.scad>
 use <../../p/3-16tang.scad>
-use <../../p/7-16rin3.scad>
-use <../../p/7-16rin4.scad>
+use <../../p/7-16ring3.scad>
+use <../../p/7-16ring4.scad>
 function ldraw_lib__s__2431pt2c() = [
 // 0 ~Tile  1 x  4 with "Octan" Pattern - Border for "tan"
 // 0 Name: s\2431pt2c.dat
 // 0 Author: Alex Taylor [anathema]
-// 0 !LDRAW_ORG Subpart UPDATE 2022-03
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 !HELP Use in conjunction with s\2431pt2a.dat & s\2431pt2b.dat
@@ -25,7 +25,8 @@ function ldraw_lib__s__2431pt2c() = [
 // 0 !HISTORY 2010-04-05 [PTadmin] Official Update 2010-01
 // 0 !HISTORY 2021-02-25 [Sirio] Removed overlapping
 // 0 !HISTORY 2022-05-07 [PTadmin] Official Update 2022-03
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Primitives
 // 1 16 13 0 -40 0 0 60 0 1 0 -32 0 0 1-8tang.dat
@@ -68,10 +69,10 @@ function ldraw_lib__s__2431pt2c() = [
   [1,16,142,0,-15,0,0,-24,0,1,0,-28,0,0, ldraw_lib__1_8chrd()],
 // 1 16 142 0 -15 0 0 24 0 1 0 -28 0 0 1-8chrd.dat
   [1,16,142,0,-15,0,0,24,0,1,0,-28,0,0, ldraw_lib__1_8chrd()],
-// 1 16 278 0 -13 4 0 0 0 1 0 0 0 4 7-16rin4.dat
-  [1,16,278,0,-13,4,0,0,0,1,0,0,0,4, ldraw_lib__7_16rin4()],
-// 1 16 278 0 -13 4 0 0 0 1 0 0 0 4 7-16rin3.dat
-  [1,16,278,0,-13,4,0,0,0,1,0,0,0,4, ldraw_lib__7_16rin3()],
+// 1 16 278 0 -13 4 0 0 0 1 0 0 0 4 7-16ring4.dat
+  [1,16,278,0,-13,4,0,0,0,1,0,0,0,4, ldraw_lib__7_16ring4()],
+// 1 16 278 0 -13 4 0 0 0 1 0 0 0 4 7-16ring3.dat
+  [1,16,278,0,-13,4,0,0,0,1,0,0,0,4, ldraw_lib__7_16ring3()],
 // 1 16 303 0 -3 32 0 0 0 1 0 0 0 40 1-4tang.dat
   [1,16,303,0,-3,32,0,0,0,1,0,0,0,40, ldraw_lib__1_4tang()],
 // 1 16 303 0 -3 40 0 0 0 1 0 0 0 48 1-8chrd.dat

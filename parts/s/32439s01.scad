@@ -1,9 +1,9 @@
 use <../../lib.scad>
 use <../../p/4-4cylo.scad>
-use <../../p/4-4rin10.scad>
 use <../../p/4-4ring1.scad>
+use <../../p/4-4ring10.scad>
 use <../../p/4-4ring9.scad>
-use <../../p/48/1-24rin4.scad>
+use <../../p/48/1-24ring4.scad>
 use <../../p/48/1-4ring4.scad>
 use <../../p/48/1-6cyli.scad>
 use <../../p/48/1-6edge.scad>
@@ -21,7 +21,7 @@ function ldraw_lib__s__32439s01() = [
 // 0 ~Technic Disc  5 x  5 without Top Surface
 // 0 Name: s\32439s01.dat
 // 0 Author: Marc Klein [marckl]
-// 0 !LDRAW_ORG Subpart UPDATE 2011-01
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -30,7 +30,8 @@ function ldraw_lib__s__32439s01() = [
 // 
 // 0 !HISTORY 2010-04-17 [Philo] Subparted for patterned versions
 // 0 !HISTORY 2011-07-25 [PTadmin] Official Update 2011-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 1 0 0 0 0 -1 0 1 0 connhole.dat
   [1,16,0,0,0,1,0,0,0,0,-1,0,1,0, ldraw_lib__connhole()],
@@ -382,8 +383,8 @@ function ldraw_lib__s__32439s01() = [
   [1,16,0,0,0,-4.76012,0,3.65257,3.65257,0,4.76012,0,-1,0, ldraw_lib__48__1_4ring4()],
 // 1 16 0 0 0 3.65257 0 4.76012 4.76012 0 -3.65257 0 -1 0 48\1-8ring4.dat
   [1,16,0,0,0,3.65257,0,4.76012,4.76012,0,-3.65257,0,-1,0, ldraw_lib__48__1_8ring4()],
-// 1 16 0 0 0 5.94867 0 0.78316 0.78316 0 -5.94867 0 -1 0 48\1-24rin4.dat
-  [1,16,0,0,0,5.94867,0,0.78316,0.78316,0,-5.94867,0,-1,0, ldraw_lib__48__1_24rin4()],
+// 1 16 0 0 0 5.94867 0 0.78316 0.78316 0 -5.94867 0 -1 0 48\1-24ring4.dat
+  [1,16,0,0,0,5.94867,0,0.78316,0.78316,0,-5.94867,0,-1,0, ldraw_lib__48__1_24ring4()],
 // 1 16 0 0 -3 23.8006 0 -18.2628 -18.2628 0 -23.8006 0 1 0 48\3-4edge.dat
   [1,16,0,0,-3,23.8006,0,-18.2628,-18.2628,0,-23.8006,0,1,0, ldraw_lib__48__3_4edge()],
 // 1 16 0 0 0 23.8006 0 -18.2628 -18.2628 0 -23.8006 0 1 0 48\3-4edge.dat
@@ -398,8 +399,8 @@ function ldraw_lib__s__32439s01() = [
   [1,16,0,0,0,18.2628,0,23.8006,23.8006,0,-18.2628,0,1,0, ldraw_lib__48__1_6edge()],
 // 1 16 0 0 0 10 0 0 0 0 -10 0 -1 0 4-4ring1.dat
   [1,16,0,0,0,10,0,0,0,0,-10,0,-1,0, ldraw_lib__4_4ring1()],
-// 1 16 0 0 0 2 0 0 0 0 -2 0 -1 0 4-4rin10.dat
-  [1,16,0,0,0,2,0,0,0,0,-2,0,-1,0, ldraw_lib__4_4rin10()],
+// 1 16 0 0 0 2 0 0 0 0 -2 0 -1 0 4-4ring10.dat
+  [1,16,0,0,0,2,0,0,0,0,-2,0,-1,0, ldraw_lib__4_4ring10()],
 // 2 24 27.4 -6.8 0 29.101 -7.138 0
   [2,24,27.4,-6.8,0,29.101,-7.138,0],
 // 2 24 25.104 -7.257 0 27.4 -6.8 0

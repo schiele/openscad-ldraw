@@ -6,15 +6,15 @@ use <../p/4-4ndis.scad>
 use <../p/4-4ring5.scad>
 use <../p/4-4ring6.scad>
 use <../p/48/4-4cylo.scad>
-use <../p/48/4-4rin15.scad>
-use <../p/48/4-4rin16.scad>
+use <../p/48/4-4ring15.scad>
+use <../p/48/4-4ring16.scad>
 use <../p/box4.scad>
 use <../p/stug4-1x2.scad>
 function ldraw_lib__3403() = [
 // 0 Turntable  4 x  4 Base
 // 0 Name: 3403.dat
 // 0 Author: James Jessiman
-// 0 !LDRAW_ORG Part UPDATE 2018-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -29,7 +29,8 @@ function ldraw_lib__3403() = [
 // 0 !HISTORY 2010-12-31 [PTadmin] Official Update 2010-03
 // 0 !HISTORY 2017-12-10 [Philo] Deepened bottom dip to fit snapping top, removed ~
 // 0 !HISTORY 2018-01-30 [PTadmin] Official Update 2018-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 10 20 20 1 0 0 0 -1 0 0 0 1 stug4-1x2.dat
   [1,16,10,20,20,1,0,0,0,-1,0,0,0,1, ldraw_lib__stug4_1x2()],
@@ -105,10 +106,10 @@ function ldraw_lib__3403() = [
   [1,16,0,4,0,2,0,0,0,4,0,0,0,2, ldraw_lib__4_4con5()],
 // 1 16 0 6 0 34 0 0 0 10 0 0 0 34 48\4-4cylo.dat
   [1,16,0,6,0,34,0,0,0,10,0,0,0,34, ldraw_lib__48__4_4cylo()],
-// 1 16 0 6 0 2 0 0 0 1 0 0 0 2 48\4-4rin15.dat
-  [1,16,0,6,0,2,0,0,0,1,0,0,0,2, ldraw_lib__48__4_4rin15()],
-// 1 16 0 6 0 2 0 0 0 1 0 0 0 2 48\4-4rin16.dat
-  [1,16,0,6,0,2,0,0,0,1,0,0,0,2, ldraw_lib__48__4_4rin16()],
+// 1 16 0 6 0 2 0 0 0 1 0 0 0 2 48\4-4ring15.dat
+  [1,16,0,6,0,2,0,0,0,1,0,0,0,2, ldraw_lib__48__4_4ring15()],
+// 1 16 0 6 0 2 0 0 0 1 0 0 0 2 48\4-4ring16.dat
+  [1,16,0,6,0,2,0,0,0,1,0,0,0,2, ldraw_lib__48__4_4ring16()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 6 0 30 0 0 0 10 0 0 0 30 48\4-4cylo.dat

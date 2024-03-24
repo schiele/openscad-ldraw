@@ -1,14 +1,14 @@
 use <../lib.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4edge.scad>
-use <../p/4-4rin12.scad>
+use <../p/4-4ring12.scad>
 use <../p/4-4ring2.scad>
 use <../p/stud4.scad>
 function ldraw_lib__3624() = [
 // 0 Minifig Police Hat
 // 0 Name: 3624.dat
 // 0 Author: James Jessiman
-// 0 !LDRAW_ORG Part UPDATE 2012-03
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -27,7 +27,8 @@ function ldraw_lib__3624() = [
 // 0 !HISTORY 2010-04-05 [PTadmin] Official Update 2010-01
 // 0 !HISTORY 2012-12-24 [cwdee] Update category
 // 0 !HISTORY 2012-12-28 [PTadmin] Official Update 2012-03
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 3 16 13.95 -6.771 -0.699 12.07 -7.612 -5.792 14.22 -6.891 -6.324
   [3,16,13.95,-6.771,-0.699,12.07,-7.612,-5.792,14.22,-6.891,-6.324],
@@ -1171,8 +1172,8 @@ function ldraw_lib__3624() = [
   [1,16,0,-4,0,6,0,0,0,-1,0,0,0,-6, ldraw_lib__4_4disc()],
 // 1 16 0 -4 0 4 0 0 0 -1 0 0 0 -4 4-4ring2.dat
   [1,16,0,-4,0,4,0,0,0,-1,0,0,0,-4, ldraw_lib__4_4ring2()],
-// 1 16 0 -4 0 1 0 0 0 -1 0 0 0 -1 4-4rin12.dat
-  [1,16,0,-4,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__4_4rin12()],
+// 1 16 0 -4 0 1 0 0 0 -1 0 0 0 -1 4-4ring12.dat
+  [1,16,0,-4,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__4_4ring12()],
 // 0 //
 // 0 // Added lines/Condlines
 // 2 24 7.531 -8.045 -15.26 12.27 -7.012 -11.72

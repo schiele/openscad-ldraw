@@ -8,7 +8,7 @@ use <../../p/2-4cyls.scad>
 use <../../p/2-4ring3.scad>
 use <../../p/3-16cyli.scad>
 use <../../p/3-16edge.scad>
-use <../../p/3-16rin3.scad>
+use <../../p/3-16ring3.scad>
 use <../../p/3-8cyls.scad>
 use <../../p/4-4cyli.scad>
 use <../../p/4-4edge.scad>
@@ -28,7 +28,7 @@ function ldraw_lib__s__76795s01() = [
 // 0 ~Brick  5 x  5 Corner Round with Slope 45 Chamfer - Half
 // 0 Name: s\76795s01.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
-// 0 !LDRAW_ORG Subpart UPDATE 2022-06
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -36,7 +36,8 @@ function ldraw_lib__s__76795s01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2022-12-20 [PTadmin] Official Update 2022-06
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Bottom Skirt
 // 0 BFC INVERTNEXT
@@ -233,12 +234,12 @@ function ldraw_lib__s__76795s01() = [
   [1,16,-80,24,40,0,0,-8,0,-1,0,-8,0,0, ldraw_lib__3_16edge()],
 // 1 16 -80 24 40 0 0 8 0 -1 0 -8 0 0 11-16edge.dat
   [1,16,-80,24,40,0,0,8,0,-1,0,-8,0,0, ldraw_lib__11_16edge()],
-// 1 16 -80 24 40 0 0 -2 0 -1 0 -2 0 0 3-16rin3.dat
-  [1,16,-80,24,40,0,0,-2,0,-1,0,-2,0,0, ldraw_lib__3_16rin3()],
+// 1 16 -80 24 40 0 0 -2 0 -1 0 -2 0 0 3-16ring3.dat
+  [1,16,-80,24,40,0,0,-2,0,-1,0,-2,0,0, ldraw_lib__3_16ring3()],
 // 1 16 -80 24 40 0 0 2 0 -1 0 -2 0 0 2-4ring3.dat
   [1,16,-80,24,40,0,0,2,0,-1,0,-2,0,0, ldraw_lib__2_4ring3()],
-// 1 16 -80 24 40 0 0 -2 0 -1 0 2 0 0 3-16rin3.dat
-  [1,16,-80,24,40,0,0,-2,0,-1,0,2,0,0, ldraw_lib__3_16rin3()],
+// 1 16 -80 24 40 0 0 -2 0 -1 0 2 0 0 3-16ring3.dat
+  [1,16,-80,24,40,0,0,-2,0,-1,0,2,0,0, ldraw_lib__3_16ring3()],
 // 1 16 -80 24 40 0 0 -6 0 1 0 -6 0 0 4-4edge.dat
   [1,16,-80,24,40,0,0,-6,0,1,0,-6,0,0, ldraw_lib__4_4edge()],
 // 1 16 -80 24 40 -5.54328 0 -2.2961 0 -1 0 2.2961 0 -5.54328 1-8tang.dat

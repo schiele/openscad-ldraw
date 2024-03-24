@@ -3,7 +3,7 @@ use <../p/1-16chrd.scad>
 use <../p/1-4chrd.scad>
 use <../p/1-8chrd.scad>
 use <../p/3-16chrd.scad>
-use <../p/3-8rin13.scad>
+use <../p/3-8ring13.scad>
 use <../p/4-4ndis.scad>
 use <../p/4-4ring4.scad>
 use <../p/4-4ring8.scad>
@@ -13,7 +13,7 @@ function ldraw_lib__98138p06() = [
 // 0 Tile  1 x  1 Round with Headlight Pattern
 // 0 Name: 98138p06.dat
 // 0 Author: Nils Schmidt [BlackBrick89]
-// 0 !LDRAW_ORG Part UPDATE 2022-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -27,7 +27,8 @@ function ldraw_lib__98138p06() = [
 // 0 !HISTORY 2014-12-23 [PTadmin] Official Update 2014-02
 // 0 !HISTORY 2021-01-19 [GeraldLasser] Reworked for Prims and added BL Reference
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\98138s02.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s02()],
@@ -78,8 +79,8 @@ function ldraw_lib__98138p06() = [
   [1,72,0,0,0,0,0,4.4,0,1,0,4.4,0,0, ldraw_lib__3_16chrd()],
 // 1 72 0 0 0 0 0 -4.4 0 1 0 -4.4 0 0 1-8chrd.dat
   [1,72,0,0,0,0,0,-4.4,0,1,0,-4.4,0,0, ldraw_lib__1_8chrd()],
-// 1 72 0 0 0 0 0 -.31427 0 1 0 .31427 0 0 3-8rin13.dat
-  [1,72,0,0,0,0,0,-.31427,0,1,0,.31427,0,0, ldraw_lib__3_8rin13()],
+// 1 72 0 0 0 0 0 -.31427 0 1 0 .31427 0 0 3-8ring13.dat
+  [1,72,0,0,0,0,0,-.31427,0,1,0,.31427,0,0, ldraw_lib__3_8ring13()],
 // 1 0 0 0 0 -4.08551 0 0 0 1 0 0 0 4.08551 1-4chrd.dat
   [1,0,0,0,0,-4.08551,0,0,0,1,0,0,0,4.08551, ldraw_lib__1_4chrd()],
 // 1 0 0 0 0 -4.08551 0 0 0 1 0 0 0 -4.08551 1-8chrd.dat

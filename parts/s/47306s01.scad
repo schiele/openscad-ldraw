@@ -8,7 +8,7 @@ use <../../p/48/1-4con16.scad>
 use <../../p/48/1-4edge.scad>
 use <../../p/48/1-8cyli.scad>
 use <../../p/48/1-8edge.scad>
-use <../../p/48/1-8rin20.scad>
+use <../../p/48/1-8ring20.scad>
 use <../../p/8-8sphe.scad>
 use <../../p/axlehol8.scad>
 use <../../p/axlesphe.scad>
@@ -20,7 +20,7 @@ function ldraw_lib__s__47306s01() = [
 // 0 ~Constraction Block  1 x  7 with Partial Gear 20 Double Bevel - Half
 // 0 Name: s\47306s01.dat
 // 0 Author: Santeri Piippo [arezey]
-// 0 !LDRAW_ORG Subpart UPDATE 2018-02
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -30,7 +30,8 @@ function ldraw_lib__s__47306s01() = [
 // 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02
 // 0 !HISTORY 2018-02-13 [cwdee] Update description
 // 0 !HISTORY 2018-12-08 [PTadmin] Official Update 2018-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 -3 17 0 0 0 0 17 0 -1 0 48\1-4edge.dat
   [1,16,0,0,-3,17,0,0,0,0,17,0,-1,0, ldraw_lib__48__1_4edge()],
@@ -591,10 +592,10 @@ function ldraw_lib__s__47306s01() = [
   [1,16,0,0,3,15.8671,0,12.1752,12.1752,0,-15.8671,0,1,0, ldraw_lib__48__1_8edge()],
 // 1 16 0 0 -3 15.8671 0 12.1752 12.1752 0 -15.8671 0 1 0 48\1-8edge.dat
   [1,16,0,0,-3,15.8671,0,12.1752,12.1752,0,-15.8671,0,1,0, ldraw_lib__48__1_8edge()],
-// 1 16 0 0 -3 0.7934 0 0.6088 0.6088 0 -0.7934 0 1 0 48\1-8rin20.dat
-  [1,16,0,0,-3,0.7934,0,0.6088,0.6088,0,-0.7934,0,1,0, ldraw_lib__48__1_8rin20()],
-// 1 16 0 0 3 0.9914 0 0.1305 -0.1305 0 0.9914 0 -1 0 48\1-8rin20.dat
-  [1,16,0,0,3,0.9914,0,0.1305,-0.1305,0,0.9914,0,-1,0, ldraw_lib__48__1_8rin20()],
+// 1 16 0 0 -3 0.7934 0 0.6088 0.6088 0 -0.7934 0 1 0 48\1-8ring20.dat
+  [1,16,0,0,-3,0.7934,0,0.6088,0.6088,0,-0.7934,0,1,0, ldraw_lib__48__1_8ring20()],
+// 1 16 0 0 3 0.9914 0 0.1305 -0.1305 0 0.9914 0 -1 0 48\1-8ring20.dat
+  [1,16,0,0,3,0.9914,0,0.1305,-0.1305,0,0.9914,0,-1,0, ldraw_lib__48__1_8ring20()],
 // 1 16 0 0 -3 16.6604 0 12.784 12.784 0 -16.6604 0 6 0 48\1-8cyli.dat
   [1,16,0,0,-3,16.6604,0,12.784,12.784,0,-16.6604,0,6,0, ldraw_lib__48__1_8cyli()],
 // 2 24 16.888 10.65 -3 17.78 11.11 -3

@@ -2,7 +2,7 @@ use <../lib.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4edge.scad>
-use <../p/4-4rin14.scad>
+use <../p/4-4ring14.scad>
 use <../p/4-4ring9.scad>
 use <s/24308as01.scad>
 use <../p/stud4a.scad>
@@ -10,7 +10,7 @@ function ldraw_lib__24308a() = [
 // 0 Wheel Rim 11 x 18 Front with 10 Parallel Spokes
 // 0 Name: 24308a.dat
 // 0 Author: Magnus Forsberg [MagFors]
-// 0 !LDRAW_ORG Part UPDATE 2019-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -18,7 +18,8 @@ function ldraw_lib__24308a() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2019-09-09 [PTadmin] Official Update 2019-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 18.75 0 0 0 0 -18.75 0 3 0 4-4cyli.dat
   [1,16,0,0,0,18.75,0,0,0,0,-18.75,0,3,0, ldraw_lib__4_4cyli()],
@@ -32,8 +33,8 @@ function ldraw_lib__24308a() = [
   [1,16,0,0,3,15.75,0,0,0,0,-15.75,0,1,0, ldraw_lib__4_4edge()],
 // 1 16 0 0 3 1.75 0 0 0 0 1.75 0 -1 0 4-4ring9.dat
   [1,16,0,0,3,1.75,0,0,0,0,1.75,0,-1,0, ldraw_lib__4_4ring9()],
-// 1 16 0 0 3 1.25 0 0 0 0 1.25 0 -1 0 4-4rin14.dat
-  [1,16,0,0,3,1.25,0,0,0,0,1.25,0,-1,0, ldraw_lib__4_4rin14()],
+// 1 16 0 0 3 1.25 0 0 0 0 1.25 0 -1 0 4-4ring14.dat
+  [1,16,0,0,3,1.25,0,0,0,0,1.25,0,-1,0, ldraw_lib__4_4ring14()],
 // 1 16 0 0 0 6 0 0 0 0 -6 0 1 0 4-4edge.dat
   [1,16,0,0,0,6,0,0,0,0,-6,0,1,0, ldraw_lib__4_4edge()],
 // 1 16 0 0 0 6 0 0 0 0 6 0 -1 0 4-4disc.dat

@@ -12,8 +12,8 @@ use <../../p/2-4edge.scad>
 use <../../p/3-16cyli.scad>
 use <../../p/3-16cylo.scad>
 use <../../p/3-16edge.scad>
-use <../../p/3-16rin2.scad>
-use <../../p/3-16rin8.scad>
+use <../../p/3-16ring2.scad>
+use <../../p/3-16ring8.scad>
 use <../../p/48/1-24chrd.scad>
 use <../../p/48/1-4chrd.scad>
 use <../../p/48/1-4cyli.scad>
@@ -32,7 +32,7 @@ function ldraw_lib__s__79505s01() = [
 // 0 ~Technic Rotation Joint Disk with Pin and  2 Perpendicular Click Rotation Ring Sockets Quarter
 // 0 Name: s\79505s01.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Subpart UPDATE 2022-04
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -40,7 +40,8 @@ function ldraw_lib__s__79505s01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 -23 0 0 0 30 0 3 0 30 0 0 48\1-6cylo.dat
   [1,16,0,-23,0,0,0,30,0,3,0,30,0,0, ldraw_lib__48__1_6cylo()],
@@ -58,8 +59,8 @@ function ldraw_lib__s__79505s01() = [
   [1,16,0,-25,0,0,0,4,0,1,0,4,0,0, ldraw_lib__1_4ring2()],
 // 1 16 0 -25 0 0 0 12 0 2 0 12 0 0 1-4cylo.dat
   [1,16,0,-25,0,0,0,12,0,2,0,12,0,0, ldraw_lib__1_4cylo()],
-// 1 16 0 -38 0 3 0 0 0 1 0 0 0 3 3-16rin2.dat
-  [1,16,0,-38,0,3,0,0,0,1,0,0,0,3, ldraw_lib__3_16rin2()],
+// 1 16 0 -38 0 3 0 0 0 1 0 0 0 3 3-16ring2.dat
+  [1,16,0,-38,0,3,0,0,0,1,0,0,0,3, ldraw_lib__3_16ring2()],
 // 1 16 0 -38 0 9 0 0 0 2 0 0 0 9 3-16cylo.dat
   [1,16,0,-38,0,9,0,0,0,2,0,0,0,9, ldraw_lib__3_16cylo()],
 // 1 16 0 -30 0 0 0 8 0 5 0 8 0 0 1-4cyli.dat
@@ -70,8 +71,8 @@ function ldraw_lib__s__79505s01() = [
   [1,16,0,-25,0,0,0,8,0,1,0,8,0,0, ldraw_lib__1_4edge()],
 // 1 16 0 -36 0 8 0 0 0 1 0 0 0 8 3-16edge.dat
   [1,16,0,-36,0,8,0,0,0,1,0,0,0,8, ldraw_lib__3_16edge()],
-// 1 16 0 -36 0 1 0 0 0 -1 0 0 0 1 3-16rin8.dat
-  [1,16,0,-36,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__3_16rin8()],
+// 1 16 0 -36 0 1 0 0 0 -1 0 0 0 1 3-16ring8.dat
+  [1,16,0,-36,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__3_16ring8()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -30 0 0 0 6 0 8 0 6 0 0 1-4cyli.dat

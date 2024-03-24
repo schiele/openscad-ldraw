@@ -3,12 +3,12 @@ use <../../p/3-16con25.scad>
 use <../../p/3-16con3.scad>
 use <../../p/3-16cylo.scad>
 use <../../p/3-16edge.scad>
-use <../../p/3-16rin2.scad>
+use <../../p/3-16ring2.scad>
 function ldraw_lib__s__58213s01() = [
 // 0 ~Figure Arm Mario Top Half
 // 0 Name: s\58213s01.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Subpart UPDATE 2023-06
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -16,7 +16,8 @@ function ldraw_lib__s__58213s01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2023-11-19 [OrionP] Official Update 2023-06
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 4 16 0 0 -6.86 0 6.857 0 0 5.934 -3.434 0 3.435 -5.949
   [4,16,0,0,-6.86,0,6.857,0,0,5.934,-3.434,0,3.435,-5.949],
@@ -290,8 +291,8 @@ function ldraw_lib__s__58213s01() = [
   [1,16,-3.2,0,0,0,0.2,0,0.2,0,0,0,0,-0.2, ldraw_lib__3_16con25()],
 // 1 16 -4.8 0 0 0 -1.2 0 1.3 0 0 0 0 -1.3 3-16con3.dat
   [1,16,-4.8,0,0,0,-1.2,0,1.3,0,0,0,0,-1.3, ldraw_lib__3_16con3()],
-// 1 16 -6 0 0 0 1 0 1.3 0 0 0 0 -1.3 3-16rin2.dat
-  [1,16,-6,0,0,0,1,0,1.3,0,0,0,0,-1.3, ldraw_lib__3_16rin2()],
+// 1 16 -6 0 0 0 1 0 1.3 0 0 0 0 -1.3 3-16ring2.dat
+  [1,16,-6,0,0,0,1,0,1.3,0,0,0,0,-1.3, ldraw_lib__3_16ring2()],
 // 1 16 -6 0 0 0 1 0 3.9 0 0 0 0 -3.9 3-16edge.dat
   [1,16,-6,0,0,0,1,0,3.9,0,0,0,0,-3.9, ldraw_lib__3_16edge()],
 // 1 16 0 0 0 0 -3 0 -5 0 0 0 0 -5 3-16cylo.dat
@@ -306,8 +307,8 @@ function ldraw_lib__s__58213s01() = [
   [1,16,-3.2,0,0,0,0.2,0,-0.2,0,0,0,0,-0.2, ldraw_lib__3_16con25()],
 // 1 16 -4.8 0 0 0 -1.2 0 -1.3 0 0 0 0 -1.3 3-16con3.dat
   [1,16,-4.8,0,0,0,-1.2,0,-1.3,0,0,0,0,-1.3, ldraw_lib__3_16con3()],
-// 1 16 -6 0 0 0 1 0 -1.3 0 0 0 0 -1.3 3-16rin2.dat
-  [1,16,-6,0,0,0,1,0,-1.3,0,0,0,0,-1.3, ldraw_lib__3_16rin2()],
+// 1 16 -6 0 0 0 1 0 -1.3 0 0 0 0 -1.3 3-16ring2.dat
+  [1,16,-6,0,0,0,1,0,-1.3,0,0,0,0,-1.3, ldraw_lib__3_16ring2()],
 // 1 16 -6 0 0 0 1 0 -3.9 0 0 0 0 -3.9 3-16edge.dat
   [1,16,-6,0,0,0,1,0,-3.9,0,0,0,0,-3.9, ldraw_lib__3_16edge()],
 // 

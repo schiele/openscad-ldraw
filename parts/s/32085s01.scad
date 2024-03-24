@@ -2,15 +2,15 @@ use <../../lib.scad>
 use <../../p/1-4cyls2.scad>
 use <../../p/1-8cylo.scad>
 use <../../p/1-8edge.scad>
-use <../../p/1-8rin10.scad>
+use <../../p/1-8ring10.scad>
 use <../../p/1-8ring9.scad>
 use <../../p/2-4cylo.scad>
 use <../../p/2-4edge.scad>
 use <../../p/2-4ndis.scad>
 use <../../p/2-4ring3.scad>
 use <../../p/2-4ring6.scad>
-use <../../p/3-16rin7.scad>
-use <../../p/3-16rin8.scad>
+use <../../p/3-16ring7.scad>
+use <../../p/3-16ring8.scad>
 use <../../p/5-16cyli.scad>
 use <../../p/box2-9p.scad>
 use <../../p/box3u5p.scad>
@@ -22,7 +22,7 @@ function ldraw_lib__s__32085s01() = [
 // 0 ~Train Base  6 x 14 Inverted Sloped Front Half
 // 0 Name: s\32085s01.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
-// 0 !LDRAW_ORG Subpart UPDATE 2018-02
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -30,7 +30,8 @@ function ldraw_lib__s__32085s01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2018-12-08 [PTadmin] Official Update 2018-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 3 16 24 56 -7.5 36 56 -7.5 40 56 -9
   [3,16,24,56,-7.5,36,56,-7.5,40,56,-9],
@@ -272,8 +273,8 @@ function ldraw_lib__s__32085s01() = [
   [5,24,7.7781,32.41421,-22.2219,7.7781,28,-22.2219,10.06494,28,-25.64372,4.2097,28,-19.8371],
 // 1 16 0 28 -30 0 0 1 0 1 0 1 0 0 1-8ring9.dat
   [1,16,0,28,-30,0,0,1,0,1,0,1,0,0, ldraw_lib__1_8ring9()],
-// 1 16 0 28 -30 0 0 1 0 1 0 1 0 0 1-8rin10.dat
-  [1,16,0,28,-30,0,0,1,0,1,0,1,0,0, ldraw_lib__1_8rin10()],
+// 1 16 0 28 -30 0 0 1 0 1 0 1 0 0 1-8ring10.dat
+  [1,16,0,28,-30,0,0,1,0,1,0,1,0,0, ldraw_lib__1_8ring10()],
 // 3 16 7.70561 28 -25.64372 10.06494 28 -25.64372 6.3639 28 -23.6361
   [3,16,7.70561,28,-25.64372,10.06494,28,-25.64372,6.3639,28,-23.6361],
 // 3 16 6.3639 28 -23.6361 10.06494 28 -25.64372 7.071 28 -22.929
@@ -301,10 +302,10 @@ function ldraw_lib__s__32085s01() = [
 // 
 // 1 16 0 24 -30 0 0 1 0 1 0 -1 0 0 2-4ring6.dat
   [1,16,0,24,-30,0,0,1,0,1,0,-1,0,0, ldraw_lib__2_4ring6()],
-// 1 16 0 24 -30 0 0 1 0 1 0 1 0 0 3-16rin7.dat
-  [1,16,0,24,-30,0,0,1,0,1,0,1,0,0, ldraw_lib__3_16rin7()],
-// 1 16 0 24 -30 0 0 1 0 1 0 1 0 0 3-16rin8.dat
-  [1,16,0,24,-30,0,0,1,0,1,0,1,0,0, ldraw_lib__3_16rin8()],
+// 1 16 0 24 -30 0 0 1 0 1 0 1 0 0 3-16ring7.dat
+  [1,16,0,24,-30,0,0,1,0,1,0,1,0,0, ldraw_lib__3_16ring7()],
+// 1 16 0 24 -30 0 0 1 0 1 0 1 0 0 3-16ring8.dat
+  [1,16,0,24,-30,0,0,1,0,1,0,1,0,0, ldraw_lib__3_16ring8()],
 // 3 16 8.75033 24 -28.74444 7 24 -30 6.4673 24 -32.6789
   [3,16,8.75033,24,-28.74444,7,24,-30,6.4673,24,-32.6789],
 // 3 16 7 24 -30 8.75033 24 -28.74444 6.4673 24 -27.3211

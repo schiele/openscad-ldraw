@@ -1,9 +1,9 @@
 use <../lib.scad>
 function ldraw_lib__1_4rin38() = [
-// 0 Ring 38 x 0.25
+// 0 ~Ring 38 x 0.25 (Obsolete)
 // 0 Name: 1-4rin38.dat
 // 0 Author: Paul Easter [pneaster]
-// 0 !LDRAW_ORG Primitive UPDATE 2012-01
+// 0 !LDRAW_ORG Primitive UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -15,7 +15,8 @@ function ldraw_lib__1_4rin38() = [
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
 // 0 !HISTORY 2012-02-16 [Philo] Changed to CCW
 // 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Obsolete, use 1-4ring38.dat
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 4 16 39 0 0 36.0313 0 14.9247 35.1074 0 14.542 38 0 0
   [4,16,39,0,0,36.0313,0,14.9247,35.1074,0,14.542,38,0,0],

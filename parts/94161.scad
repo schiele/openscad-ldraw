@@ -1,7 +1,7 @@
 use <../lib.scad>
 use <../p/2-4cyli.scad>
 use <../p/2-4edge.scad>
-use <../p/2-4rin13.scad>
+use <../p/2-4ring13.scad>
 use <../p/2-4ring7.scad>
 use <../p/2-8sphe.scad>
 use <../p/box3u4a.scad>
@@ -13,7 +13,7 @@ function ldraw_lib__94161() = [
 // 0 Window  1 x  2 x  2.667 Shutter with Rounded Top
 // 0 Name: 94161.dat
 // 0 Author: Evert-Jan Boer [ejboer]
-// 0 !LDRAW_ORG Part UPDATE 2018-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -21,7 +21,8 @@ function ldraw_lib__94161() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2018-01-30 [PTadmin] Official Update 2018-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Frame
 // 
@@ -95,10 +96,10 @@ function ldraw_lib__94161() = [
   [1,16,0,-4,-2,13,0,0,0,0,-13,0,1,0, ldraw_lib__2_4edge()],
 // 1 16 0 -4 2 13 0 0 0 0 -13 0 1 0 2-4edge.dat
   [1,16,0,-4,2,13,0,0,0,0,-13,0,1,0, ldraw_lib__2_4edge()],
-// 1 16 0 -4 -2 1 0 0 0 0 -1 0 1 0 2-4rin13.dat
-  [1,16,0,-4,-2,1,0,0,0,0,-1,0,1,0, ldraw_lib__2_4rin13()],
-// 1 16 0 -4 2 -1 0 0 0 0 -1 0 -1 0 2-4rin13.dat
-  [1,16,0,-4,2,-1,0,0,0,0,-1,0,-1,0, ldraw_lib__2_4rin13()],
+// 1 16 0 -4 -2 1 0 0 0 0 -1 0 1 0 2-4ring13.dat
+  [1,16,0,-4,-2,1,0,0,0,0,-1,0,1,0, ldraw_lib__2_4ring13()],
+// 1 16 0 -4 2 -1 0 0 0 0 -1 0 -1 0 2-4ring13.dat
+  [1,16,0,-4,2,-1,0,0,0,0,-1,0,-1,0, ldraw_lib__2_4ring13()],
 // 1 16 0 -4 2 -2 0 0 0 0 -2 0 -1 0 2-4ring7.dat
   [1,16,0,-4,2,-2,0,0,0,0,-2,0,-1,0, ldraw_lib__2_4ring7()],
 // 1 16 0 -4 -2 2 0 0 0 0 -2 0 1 0 2-4ring7.dat

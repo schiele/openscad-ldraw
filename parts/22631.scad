@@ -6,7 +6,7 @@ use <../p/4-4cyli.scad>
 use <../p/4-4cylo.scad>
 use <../p/4-4edge.scad>
 use <../p/4-4ndis.scad>
-use <../p/4-4rin12.scad>
+use <../p/4-4ring12.scad>
 use <../p/4-4ring4.scad>
 use <../p/4-4ring5.scad>
 use <../p/48/1-12edge.scad>
@@ -19,9 +19,9 @@ use <../p/48/4-4con52.scad>
 use <../p/48/4-4cyli.scad>
 use <../p/48/4-4cylo.scad>
 use <../p/48/4-4edge.scad>
-use <../p/48/4-4rin24.scad>
-use <../p/48/4-4rin53.scad>
-use <../p/48/4-4rin54.scad>
+use <../p/48/4-4ring24.scad>
+use <../p/48/4-4ring53.scad>
+use <../p/48/4-4ring54.scad>
 use <../p/48/5-48edge.scad>
 use <../p/48/tm01o0200.scad>
 use <../p/box4.scad>
@@ -39,7 +39,7 @@ function ldraw_lib__22631() = [
 // 0 Technic RoboRider Container Lid
 // 0 Name: 22631.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
-// 0 !LDRAW_ORG Part UPDATE 2023-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -47,7 +47,8 @@ function ldraw_lib__22631() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2023-04-17 [OrionP] Official Update 2023-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Centre Part, Peghole
 // 1 16 0 0 0 -2 0 0 0 -1 0 0 0 2 4-4ring4.dat
@@ -74,8 +75,8 @@ function ldraw_lib__22631() = [
   [1,16,0,-42,0,-12,0,0,0,1,0,0,0,-12, ldraw_lib__4_4ndis()],
 // 1 16 0 -16 0 -10 0 0 0 16 0 0 0 10 4-4cylo.dat
   [1,16,0,-16,0,-10,0,0,0,16,0,0,0,10, ldraw_lib__4_4cylo()],
-// 1 16 0 -16 0 -1 0 0 0 -1 0 0 0 1 4-4rin12.dat
-  [1,16,0,-16,0,-1,0,0,0,-1,0,0,0,1, ldraw_lib__4_4rin12()],
+// 1 16 0 -16 0 -1 0 0 0 -1 0 0 0 1 4-4ring12.dat
+  [1,16,0,-16,0,-1,0,0,0,-1,0,0,0,1, ldraw_lib__4_4ring12()],
 // 1 16 0 -16 0 -2 0 0 0 -1 0 0 0 2 4-4ring5.dat
   [1,16,0,-16,0,-2,0,0,0,-1,0,0,0,2, ldraw_lib__4_4ring5()],
 // 1 16 0 -16 0 -13 0 0 0 -1 0 0 0 13 4-4edge.dat
@@ -330,10 +331,10 @@ function ldraw_lib__22631() = [
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 12 0 -106 0 0 0 -28 0 0 0 106 48\4-4cylo.dat
   [1,16,0,12,0,-106,0,0,0,-28,0,0,0,106, ldraw_lib__48__4_4cylo()],
-// 1 16 0 12 0 -2 0 0 0 -1 0 0 0 2 48\4-4rin54.dat
-  [1,16,0,12,0,-2,0,0,0,-1,0,0,0,2, ldraw_lib__48__4_4rin54()],
-// 1 16 0 12 0 -2 0 0 0 -1 0 0 0 2 48\4-4rin53.dat
-  [1,16,0,12,0,-2,0,0,0,-1,0,0,0,2, ldraw_lib__48__4_4rin53()],
+// 1 16 0 12 0 -2 0 0 0 -1 0 0 0 2 48\4-4ring54.dat
+  [1,16,0,12,0,-2,0,0,0,-1,0,0,0,2, ldraw_lib__48__4_4ring54()],
+// 1 16 0 12 0 -2 0 0 0 -1 0 0 0 2 48\4-4ring53.dat
+  [1,16,0,12,0,-2,0,0,0,-1,0,0,0,2, ldraw_lib__48__4_4ring53()],
 // 
 // 5 24 -96.0856 -20 -39.8008 -90.064 -20 -52 -86.6 -29 -50 -97.9334 -16 -40.5662
   [5,24,-96.0856,-20,-39.8008,-90.064,-20,-52,-86.6,-29,-50,-97.9334,-16,-40.5662],
@@ -693,8 +694,8 @@ function ldraw_lib__22631() = [
   [1,16,0,-55,0,-100,0,0,0,-250,0,0,0,100, ldraw_lib__48__tm01o0200()],
 // 1 16 0 -55 0 -100 0 0 0 250 0 0 0 -100 48\tm01o0200.dat
   [1,16,0,-55,0,-100,0,0,0,250,0,0,0,-100, ldraw_lib__48__tm01o0200()],
-// 1 16 0 -60 0 -4 0 0 0 1 0 0 0 -4 48\4-4rin24.dat
-  [1,16,0,-60,0,-4,0,0,0,1,0,0,0,-4, ldraw_lib__48__4_4rin24()],
+// 1 16 0 -60 0 -4 0 0 0 1 0 0 0 -4 48\4-4ring24.dat
+  [1,16,0,-60,0,-4,0,0,0,1,0,0,0,-4, ldraw_lib__48__4_4ring24()],
 // 
 // 0 // Top
 // 1 16 0 -60 0 -96 0 0 0 -1 0 0 0 96 48\4-4edge.dat

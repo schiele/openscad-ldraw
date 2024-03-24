@@ -1,14 +1,14 @@
 use <../../lib.scad>
 use <../../p/4-4disc.scad>
 use <../../p/4-4ndis.scad>
-use <../../p/4-4rin10.scad>
 use <../../p/4-4ring1.scad>
+use <../../p/4-4ring10.scad>
 use <../../p/4-4ring4.scad>
 function ldraw_lib__s__3004pz7s01() = [
 // 0 ~Brick  1 x  2 with Boombox Pattern
 // 0 Name: s\3004pz7s01.dat
 // 0 Author: Vincent Messenet [Cheenzo]
-// 0 !LDRAW_ORG Subpart UPDATE 2019-01
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -16,7 +16,8 @@ function ldraw_lib__s__3004pz7s01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Center
 // 
@@ -31,8 +32,8 @@ function ldraw_lib__s__3004pz7s01() = [
   [1,0,12,10.3,0,2,0,0,0,0,2,0,1,0, ldraw_lib__4_4ring1()],
 // 1 0 12 10.3 0 1 0 0 0 0 1 0 1 0 4-4ring4.dat
   [1,0,12,10.3,0,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4ring4()],
-// 1 0 12 10.3 0 .5 0 0 0 0 .5 0 1 0 4-4rin10.dat
-  [1,0,12,10.3,0,.5,0,0,0,0,.5,0,1,0, ldraw_lib__4_4rin10()],
+// 1 0 12 10.3 0 .5 0 0 0 0 .5 0 1 0 4-4ring10.dat
+  [1,0,12,10.3,0,.5,0,0,0,0,.5,0,1,0, ldraw_lib__4_4ring10()],
 // 1 80 12 10.3 0 5.5 0 0 0 0 5.5 0 1 0 4-4ndis.dat
   [1,80,12,10.3,0,5.5,0,0,0,0,5.5,0,1,0, ldraw_lib__4_4ndis()],
 // 

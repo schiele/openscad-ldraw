@@ -1,8 +1,8 @@
 use <../../lib.scad>
 use <../../p/4-4cyli.scad>
 use <../../p/4-4edge.scad>
-use <../../p/4-4rin32.scad>
 use <../../p/4-4ring3.scad>
+use <../../p/4-4ring32.scad>
 use <../../p/axl5end.scad>
 use <../../p/axl5ho10.scad>
 use <../../p/axl5hol8.scad>
@@ -14,7 +14,7 @@ function ldraw_lib__s__10178s01() = [
 // 0 ~Rock Stepped Main
 // 0 Name: s\10178s01.dat
 // 0 Author: Rolf Osterthun [Rolf]
-// 0 !LDRAW_ORG Subpart UPDATE 2022-02
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -26,7 +26,8 @@ function ldraw_lib__s__10178s01() = [
 // 0 !HISTORY 2012-12-28 [PTadmin] Official Update 2012-03
 // 0 !HISTORY 2021-12-30 [MagFors] Reshaped axlehole
 // 0 !HISTORY 2022-03-06 [PTadmin] Official Update 2022-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 2 24 20.023 -6.178 0 16.581 -5.602 0
   [2,24,20.023,-6.178,0,16.581,-5.602,0],
@@ -154,8 +155,8 @@ function ldraw_lib__s__10178s01() = [
   [1,16,0,0,0,6,0,0,0,-4.875,0,0,0,6, ldraw_lib__4_4cyli()],
 // 1 16 0 0 0 2 0 0 0 -1 0 0 0 2 4-4ring3.dat
   [1,16,0,0,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__4_4ring3()],
-// 1 16 0 0 0 .25 0 0 0 -1 0 0 0 .25 4-4rin32.dat
-  [1,16,0,0,0,.25,0,0,0,-1,0,0,0,.25, ldraw_lib__4_4rin32()],
+// 1 16 0 0 0 .25 0 0 0 -1 0 0 0 .25 4-4ring32.dat
+  [1,16,0,0,0,.25,0,0,0,-1,0,0,0,.25, ldraw_lib__4_4ring32()],
 // 1 16 0 -20 0 1 0 0 0 -1 0 0 0 -1 axl5end.dat
   [1,16,0,-20,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__axl5end()],
 // 1 16 0 -20 0 1 0 0 0 1 0 0 0 1 axlehol2.dat

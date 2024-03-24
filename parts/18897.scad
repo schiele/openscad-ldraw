@@ -9,7 +9,7 @@ use <../p/4-4ring6.scad>
 use <../p/4-4ring7.scad>
 use <../p/48/4-4aring.scad>
 use <../p/48/4-4edge.scad>
-use <../p/48/4-4rin27.scad>
+use <../p/48/4-4ring27.scad>
 use <s/18897s01.scad>
 use <../p/stud18a.scad>
 use <../p/stud2.scad>
@@ -19,7 +19,7 @@ function ldraw_lib__18897() = [
 // 0 Brick  6 x  6 Round with Holes
 // 0 Name: 18897.dat
 // 0 Author: Massimo Maso [Sirio]
-// 0 !LDRAW_ORG Part UPDATE 2020-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -29,7 +29,8 @@ function ldraw_lib__18897() = [
 // 0 !HISTORY 2016-03-18 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2017-11-18 [Sirio] File preparation for LDraw Parts Tracker
 // 0 !HISTORY 2020-06-28 [PTadmin] Official Update 2020-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Underside studs
 // 1 16 0 20 0 1 0 0 0 -1 0 0 0 1 stud18a.dat
@@ -114,8 +115,8 @@ function ldraw_lib__18897() = [
   [1,16,0,4,0,27,0,0,0,-1,0,0,0,27, ldraw_lib__4_4ring1()],
 // 1 16 0 4 0 54 0 0 0 -1 0 0 0 54 48\4-4aring.dat
   [1,16,0,4,0,54,0,0,0,-1,0,0,0,54, ldraw_lib__48__4_4aring()],
-// 1 16 0 4 0 2 0 0 0 -1 0 0 0 2 48\4-4rin27.dat
-  [1,16,0,4,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__48__4_4rin27()],
+// 1 16 0 4 0 2 0 0 0 -1 0 0 0 2 48\4-4ring27.dat
+  [1,16,0,4,0,2,0,0,0,-1,0,0,0,2, ldraw_lib__48__4_4ring27()],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 4-4ring7.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4_4ring7()],
 // 1 16 0 0 0 4 0 0 0 1 0 0 0 4 4-4ring2.dat

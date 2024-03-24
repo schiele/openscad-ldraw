@@ -4,7 +4,7 @@ use <../../p/1-8ndis.scad>
 use <../../p/2-4cylo.scad>
 use <../../p/2-4ndis.scad>
 use <../../p/3-16cylo.scad>
-use <../../p/3-16rin2.scad>
+use <../../p/3-16ring2.scad>
 use <../../p/4-4ring6.scad>
 use <../../p/4-4ring9.scad>
 use <../../p/7-16cylo.scad>
@@ -19,7 +19,7 @@ function ldraw_lib__s__2850s01() = [
 // 0 ~Technic Engine Cylinder Head Common Geometry Half
 // 0 Name: s\2850s01.dat
 // 0 Author: Jeff Boen [onyx]
-// 0 !LDRAW_ORG Subpart UPDATE 2018-01
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -29,7 +29,8 @@ function ldraw_lib__s__2850s01() = [
 // 0 !HISTORY 2015-02-22 [Philo] Subfiled from Jeff Boen original design
 // 0 !HISTORY 2015-11-11 [MMR1988] Reworked, split into a half
 // 0 !HISTORY 2018-01-30 [PTadmin] Official Update 2018-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // top studs
 // 
@@ -75,8 +76,8 @@ function ldraw_lib__s__2850s01() = [
   [1,16,10,-4,10,0,0,4,0,4,0,4,0,0, ldraw_lib__7_16cylo()],
 // 1 16 10 -4 10 0 0 2 0 1 0 2 0 0 7-16ring2.dat
   [1,16,10,-4,10,0,0,2,0,1,0,2,0,0, ldraw_lib__7_16ring2()],
-// 1 16 10 -4 10 0 0 -2 0 1 0 2 0 0 3-16rin2.dat
-  [1,16,10,-4,10,0,0,-2,0,1,0,2,0,0, ldraw_lib__3_16rin2()],
+// 1 16 10 -4 10 0 0 -2 0 1 0 2 0 0 3-16ring2.dat
+  [1,16,10,-4,10,0,0,-2,0,1,0,2,0,0, ldraw_lib__3_16ring2()],
 // 
 // 1 16 -5.544075 -2 11.539775 0 0.066333 -0.693992 2 0 0 0 -0.333585 -0.34256 box2-7.dat
   [1,16,-5.544075,-2,11.539775,0,0.066333,-0.693992,2,0,0,0,-0.333585,-0.34256, ldraw_lib__box2_7()],
@@ -120,8 +121,8 @@ function ldraw_lib__s__2850s01() = [
   [1,16,-10,-4,10,-4,0,0,0,4,0,0,0,4, ldraw_lib__7_16cylo()],
 // 1 16 -10 -4 10 -2 0 0 0 1 0 0 0 2 7-16ring2.dat
   [1,16,-10,-4,10,-2,0,0,0,1,0,0,0,2, ldraw_lib__7_16ring2()],
-// 1 16 -10 -4 10 -2 0 0 0 1 0 0 0 -2 3-16rin2.dat
-  [1,16,-10,-4,10,-2,0,0,0,1,0,0,0,-2, ldraw_lib__3_16rin2()],
+// 1 16 -10 -4 10 -2 0 0 0 1 0 0 0 -2 3-16ring2.dat
+  [1,16,-10,-4,10,-2,0,0,0,1,0,0,0,-2, ldraw_lib__3_16ring2()],
 // 
 // 0 // cooling ribs
 // 0 BFC INVERTNEXT

@@ -1,5 +1,5 @@
 use <../../lib.scad>
-use <../../p/1-16rin4.scad>
+use <../../p/1-16ring4.scad>
 use <../../p/1-4cylo.scad>
 use <../../p/1-4ndis.scad>
 use <../../p/1-4ring3.scad>
@@ -14,7 +14,7 @@ use <../../p/2-4ring2.scad>
 use <../../p/3-16cyli.scad>
 use <../../p/3-16cyls.scad>
 use <../../p/3-16edge.scad>
-use <../../p/3-16rin2.scad>
+use <../../p/3-16ring2.scad>
 use <../../p/4-4cyli.scad>
 use <../../p/4-4edge.scad>
 use <../../p/4-4ring8.scad>
@@ -23,7 +23,7 @@ use <../../p/48/1-24edge.scad>
 use <../../p/48/1-8chrd.scad>
 use <../../p/48/1-8cyli.scad>
 use <../../p/48/1-8edge.scad>
-use <../../p/48/1-8rin16.scad>
+use <../../p/48/1-8ring16.scad>
 use <../../p/7-16edge.scad>
 use <../../p/peghole.scad>
 use <../../p/rect.scad>
@@ -34,7 +34,7 @@ function ldraw_lib__s__10090s01() = [
 // 0 ~Electric Power Functions Large Motor Case Front Quarter
 // 0 Name: s\10090s01.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Subpart UPDATE 2012-03
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -44,7 +44,8 @@ function ldraw_lib__s__10090s01() = [
 // 0 !HISTORY 2012-09-12 {LEGO Technic Team} Original part shape
 // 0 !HISTORY 2012-10-03 [Philo] Complete rebuild for LDraw Parts Tracker
 // 0 !HISTORY 2012-12-28 [PTadmin] Official Update 2012-03
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
@@ -160,8 +161,8 @@ function ldraw_lib__s__10090s01() = [
   [1,16,0,0,54,0,0,37,37,0,0,0,19,0, ldraw_lib__48__1_8cyli()],
 // 1 16 0 0 73 0 0 37 37 0 0 0 1 0 48\1-8edge.dat
   [1,16,0,0,73,0,0,37,37,0,0,0,1,0, ldraw_lib__48__1_8edge()],
-// 1 16 0 0 73 0 0 2.17647 2.17647 0 0 0 -1 0 48\1-8rin16.dat
-  [1,16,0,0,73,0,0,2.17647,2.17647,0,0,0,-1,0, ldraw_lib__48__1_8rin16()],
+// 1 16 0 0 73 0 0 2.17647 2.17647 0 0 0 -1 0 48\1-8ring16.dat
+  [1,16,0,0,73,0,0,2.17647,2.17647,0,0,0,-1,0, ldraw_lib__48__1_8ring16()],
 // 1 16 24.562 23.312 61.5 -0.062 0.9988853 0 -1.312 -0.9999939 0 0 0 11.5 rect.dat
   [1,16,24.562,23.312,61.5,-0.062,0.9988853,0,-1.312,-0.9999939,0,0,0,11.5, ldraw_lib__rect()],
 // 1 16 25.5 21 61.5 0 1 1 0 1 -1 -11.5 0 0 rect3.dat
@@ -214,12 +215,12 @@ function ldraw_lib__s__10090s01() = [
   [1,16,10,20,10,0,2,0,-7,0,0,0,0,7, ldraw_lib__1_4cylo()],
 // 1 16 12 20 10 0 1 0 3 0 0 0 0 -3 2-4ring2.dat
   [1,16,12,20,10,0,1,0,3,0,0,0,0,-3, ldraw_lib__2_4ring2()],
-// 1 16 12 20 10 0 1 0 3 0 0 0 0 3 3-16rin2.dat
-  [1,16,12,20,10,0,1,0,3,0,0,0,0,3, ldraw_lib__3_16rin2()],
+// 1 16 12 20 10 0 1 0 3 0 0 0 0 3 3-16ring2.dat
+  [1,16,12,20,10,0,1,0,3,0,0,0,0,3, ldraw_lib__3_16ring2()],
 // 1 16 12 20 10 0 1 0 -1 0 0 0 0 1 1-4ring6.dat
   [1,16,12,20,10,0,1,0,-1,0,0,0,0,1, ldraw_lib__1_4ring6()],
-// 1 16 12 20 10 0 1 0 0 0 1.5 1.5 0 0 1-16rin4.dat
-  [1,16,12,20,10,0,1,0,0,0,1.5,1.5,0,0, ldraw_lib__1_16rin4()],
+// 1 16 12 20 10 0 1 0 0 0 1.5 1.5 0 0 1-16ring4.dat
+  [1,16,12,20,10,0,1,0,0,0,1.5,1.5,0,0, ldraw_lib__1_16ring4()],
 // 2 24 12 13 10 10 13 10
   [2,24,12,13,10,10,13,10],
 // 2 24 10 10 10 10 13 10

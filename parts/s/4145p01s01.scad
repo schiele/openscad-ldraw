@@ -12,7 +12,7 @@ use <../../p/3-8ndis.scad>
 use <../../p/4-4disc.scad>
 use <../../p/4-4ndis.scad>
 use <../../p/48/1-8chrd.scad>
-use <../../p/48/4-4rin16.scad>
+use <../../p/48/4-4ring16.scad>
 use <../../p/5-16chrd.scad>
 use <../../p/5-16ndis.scad>
 use <../../p/7-16chrd.scad>
@@ -21,7 +21,7 @@ function ldraw_lib__s__4145p01s01() = [
 // 0 ~Duplo Brick  1 x  4 x  3 - Clock Face Pattern
 // 0 Name: s\4145p01s01.dat
 // 0 Author: Tim Lampmann [L4mpi]
-// 0 !LDRAW_ORG Subpart UPDATE 2020-03
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -29,10 +29,11 @@ function ldraw_lib__s__4145p01s01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
-// 
-// 1 0 0 0 0 4 0 0 0 0 -4 0 1 0 48\4-4rin16.dat
-  [1,0,0,0,0,4,0,0,0,0,-4,0,1,0, ldraw_lib__48__4_4rin16()],
+// 1 0 0 0 0 4 0 0 0 0 -4 0 1 0 48\4-4ring16.dat
+  [1,0,0,0,0,4,0,0,0,0,-4,0,1,0, ldraw_lib__48__4_4ring16()],
 // 1 0 26.5 -49 0 2 0 0 0 0 -2 0 1 0 3-8chrd.dat
   [1,0,26.5,-49,0,2,0,0,0,0,-2,0,1,0, ldraw_lib__3_8chrd()],
 // 1 0 23.5 -46 0 0 0 -2 2 0 0 0 1 0 3-8chrd.dat

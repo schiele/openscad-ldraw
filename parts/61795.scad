@@ -4,7 +4,7 @@ use <../p/3-4cyli.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4edge.scad>
-use <../p/4-4rin17.scad>
+use <../p/4-4ring17.scad>
 use <../p/4-4ring2.scad>
 use <../p/4-4ring7.scad>
 use <../p/4-4ring8.scad>
@@ -20,7 +20,7 @@ function ldraw_lib__61795() = [
 // 0 Technic Bionicle Weapon Shield Blade with Axlehole
 // 0 Name: 61795.dat
 // 0 Author: Joerg Sommerer [Brickaneer]
-// 0 !LDRAW_ORG Part UPDATE 2012-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -28,7 +28,8 @@ function ldraw_lib__61795() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2012-08-09 [PTadmin] Official Update 2012-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 3 0 0 0 0 3 0 -1 0 4-4ring2.dat
   [1,16,0,0,0,3,0,0,0,0,3,0,-1,0, ldraw_lib__4_4ring2()],
@@ -42,16 +43,16 @@ function ldraw_lib__61795() = [
   [1,16,0,0,0,9,0,0,0,0,9,0,-10,0, ldraw_lib__4_4cyli()],
 // 1 16 0 0 -10 9 0 0 0 0 9 0 -1 0 4-4edge.dat
   [1,16,0,0,-10,9,0,0,0,0,9,0,-1,0, ldraw_lib__4_4edge()],
-// 1 16 0 0 -10 0.5 0 0 0 0 -0.5 0 1 0 4-4rin17.dat
-  [1,16,0,0,-10,0.5,0,0,0,0,-0.5,0,1,0, ldraw_lib__4_4rin17()],
+// 1 16 0 0 -10 0.5 0 0 0 0 -0.5 0 1 0 4-4ring17.dat
+  [1,16,0,0,-10,0.5,0,0,0,0,-0.5,0,1,0, ldraw_lib__4_4ring17()],
 // 1 16 0 0 -10 8.5 0 0 0 0 8.5 0 -1 0 4-4edge.dat
   [1,16,0,0,-10,8.5,0,0,0,0,8.5,0,-1,0, ldraw_lib__4_4edge()],
 // 1 16 0 0 -10 8.5 0 0 0 0 8.5 0 -2.5 0 4-4cyli.dat
   [1,16,0,0,-10,8.5,0,0,0,0,8.5,0,-2.5,0, ldraw_lib__4_4cyli()],
 // 1 16 0 0 -12.5 8.5 0 0 0 0 8.5 0 -1 0 4-4edge.dat
   [1,16,0,0,-12.5,8.5,0,0,0,0,8.5,0,-1,0, ldraw_lib__4_4edge()],
-// 1 16 0 0 -12.5 0.5 0 0 0 0 0.5 0 -1 0 4-4rin17.dat
-  [1,16,0,0,-12.5,0.5,0,0,0,0,0.5,0,-1,0, ldraw_lib__4_4rin17()],
+// 1 16 0 0 -12.5 0.5 0 0 0 0 0.5 0 -1 0 4-4ring17.dat
+  [1,16,0,0,-12.5,0.5,0,0,0,0,0.5,0,-1,0, ldraw_lib__4_4ring17()],
 // 1 16 0 0 -12.5 9 0 0 0 0 9 0 -1 0 4-4edge.dat
   [1,16,0,0,-12.5,9,0,0,0,0,9,0,-1,0, ldraw_lib__4_4edge()],
 // 1 16 0 0 -12.5 -6.364 0 -6.364 6.364 0 -6.364 0 -9 0 3-4cyli.dat

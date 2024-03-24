@@ -11,7 +11,7 @@ use <../p/48/4-4cylo.scad>
 use <../p/48/4-4disc.scad>
 use <../p/48/4-4edge.scad>
 use <../p/48/4-4ndis.scad>
-use <../p/48/4-4rin18.scad>
+use <../p/48/4-4ring18.scad>
 use <../p/48/4-4ring4.scad>
 use <../p/48/5-24cyli.scad>
 use <../p/48/5-24cylo.scad>
@@ -25,7 +25,7 @@ function ldraw_lib__4779() = [
 // 0 Fabuland Ferris Wheel Axle
 // 0 Name: 4779.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2018-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -35,7 +35,8 @@ function ldraw_lib__4779() = [
 // 0 !CATEGORY Plate
 // 
 // 0 !HISTORY 2018-01-30 [PTadmin] Official Update 2018-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 -10 0 -30 1 0 0 0 1 0 0 0 1 stug-1x3.dat
   [1,16,-10,0,-30,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_1x3()],
@@ -61,8 +62,8 @@ function ldraw_lib__4779() = [
   [4,16,19,-8,-19,-19,-8,-19,-20,-8,-20,20,-8,-20],
 // 1 16 0 -8 0 19 0 0 0 -22 0 0 0 19 48\4-4cylo.dat
   [1,16,0,-8,0,19,0,0,0,-22,0,0,0,19, ldraw_lib__48__4_4cylo()],
-// 1 16 0 -30 0 1 0 0 0 1 0 0 0 1 48\4-4rin18.dat
-  [1,16,0,-30,0,1,0,0,0,1,0,0,0,1, ldraw_lib__48__4_4rin18()],
+// 1 16 0 -30 0 1 0 0 0 1 0 0 0 1 48\4-4ring18.dat
+  [1,16,0,-30,0,1,0,0,0,1,0,0,0,1, ldraw_lib__48__4_4ring18()],
 // 1 16 0 -30 0 18 0 0 0 1 0 0 0 18 48\4-4edge.dat
   [1,16,0,-30,0,18,0,0,0,1,0,0,0,18, ldraw_lib__48__4_4edge()],
 // 1 16 0 -30 0 18 0 0 0 -40 0 0 0 18 48\4-4cyli.dat

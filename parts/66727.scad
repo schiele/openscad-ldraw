@@ -13,11 +13,11 @@ use <../p/4-4cyli.scad>
 use <../p/4-4cylo.scad>
 use <../p/4-4edge.scad>
 use <../p/4-4ering.scad>
-use <../p/4-4rin10.scad>
-use <../p/4-4rin15.scad>
-use <../p/4-4rin24.scad>
-use <../p/4-4rin36.scad>
 use <../p/4-4ring1.scad>
+use <../p/4-4ring10.scad>
+use <../p/4-4ring15.scad>
+use <../p/4-4ring24.scad>
+use <../p/4-4ring36.scad>
 use <../p/4-4ring4.scad>
 use <../p/connhol2.scad>
 use <../p/rect3.scad>
@@ -28,7 +28,7 @@ function ldraw_lib__66727() = [
 // 0 Wheel Rim 11 x 18 with Drilled Disc Brake
 // 0 Name: 66727.dat
 // 0 Author: Magnus Forsberg [MagFors]
-// 0 !LDRAW_ORG Part UPDATE 2020-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -36,7 +36,8 @@ function ldraw_lib__66727() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2020-06-28 [PTadmin] Official Update 2020-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 1 0 0 0 0 -1 0 1 0 connhol2.dat
   [1,16,0,0,0,1,0,0,0,0,-1,0,1,0, ldraw_lib__connhol2()],
@@ -45,20 +46,20 @@ function ldraw_lib__66727() = [
   [1,16,0,0,10,6,0,0,0,0,6,0,-1,0, ldraw_lib__4_4ering()],
 // 1 16 0 0 10 9.25 0 0 0 0 9.25 0 -10 0 4-4cylo.dat
   [1,16,0,0,10,9.25,0,0,0,0,9.25,0,-10,0, ldraw_lib__4_4cylo()],
-// 1 16 0 0 10 0.25 0 0 0 0 0.25 0 -1 0 4-4rin36.dat
-  [1,16,0,0,10,0.25,0,0,0,0,0.25,0,-1,0, ldraw_lib__4_4rin36()],
+// 1 16 0 0 10 0.25 0 0 0 0 0.25 0 -1 0 4-4ring36.dat
+  [1,16,0,0,10,0.25,0,0,0,0,0.25,0,-1,0, ldraw_lib__4_4ring36()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 8 18.75 0 0 0 0 18.75 0 -8 0 4-4cylo.dat
   [1,16,0,0,8,18.75,0,0,0,0,18.75,0,-8,0, ldraw_lib__4_4cylo()],
 // 1 16 0 0 0 9 0 0 0 0 9 0 -1 0 4-4ring1.dat
   [1,16,0,0,0,9,0,0,0,0,9,0,-1,0, ldraw_lib__4_4ring1()],
-// 1 16 0 0 0 0.75 0 0 0 0 0.75 0 -1 0 4-4rin24.dat
-  [1,16,0,0,0,0.75,0,0,0,0,0.75,0,-1,0, ldraw_lib__4_4rin24()],
-// 1 16 0 0 8 1.25 0 0 0 0 1.25 0 -1 0 4-4rin15.dat
-  [1,16,0,0,8,1.25,0,0,0,0,1.25,0,-1,0, ldraw_lib__4_4rin15()],
-// 1 16 0 0 8 2 0 0 0 0 2 0 -1 0 4-4rin10.dat
-  [1,16,0,0,8,2,0,0,0,0,2,0,-1,0, ldraw_lib__4_4rin10()],
+// 1 16 0 0 0 0.75 0 0 0 0 0.75 0 -1 0 4-4ring24.dat
+  [1,16,0,0,0,0.75,0,0,0,0,0.75,0,-1,0, ldraw_lib__4_4ring24()],
+// 1 16 0 0 8 1.25 0 0 0 0 1.25 0 -1 0 4-4ring15.dat
+  [1,16,0,0,8,1.25,0,0,0,0,1.25,0,-1,0, ldraw_lib__4_4ring15()],
+// 1 16 0 0 8 2 0 0 0 0 2 0 -1 0 4-4ring10.dat
+  [1,16,0,0,8,2,0,0,0,0,2,0,-1,0, ldraw_lib__4_4ring10()],
 // 1 16 0 0 8 22 0 0 0 0 22 0 -10 0 4-4cylo.dat
   [1,16,0,0,8,22,0,0,0,0,22,0,-10,0, ldraw_lib__4_4cylo()],
 // 1 16 0 0 -4 19 0 0 0 0 19 0 -1 0 4-4edge.dat
@@ -234,10 +235,10 @@ function ldraw_lib__66727() = [
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 -11.9 18.75 0 0 0 0 18.75 0 -8.1 0 4-4cylo.dat
   [1,16,0,0,-11.9,18.75,0,0,0,0,18.75,0,-8.1,0, ldraw_lib__4_4cylo()],
-// 1 16 0 0 -20 -1.25 0 0 0 0 1.25 0 1 0 4-4rin15.dat
-  [1,16,0,0,-20,-1.25,0,0,0,0,1.25,0,1,0, ldraw_lib__4_4rin15()],
-// 1 16 0 0 -20 -2 0 0 0 0 2 0 1 0 4-4rin10.dat
-  [1,16,0,0,-20,-2,0,0,0,0,2,0,1,0, ldraw_lib__4_4rin10()],
+// 1 16 0 0 -20 -1.25 0 0 0 0 1.25 0 1 0 4-4ring15.dat
+  [1,16,0,0,-20,-1.25,0,0,0,0,1.25,0,1,0, ldraw_lib__4_4ring15()],
+// 1 16 0 0 -20 -2 0 0 0 0 2 0 1 0 4-4ring10.dat
+  [1,16,0,0,-20,-2,0,0,0,0,2,0,1,0, ldraw_lib__4_4ring10()],
 // 1 16 0 0 -10 22 0 0 0 0 22 0 -10 0 4-4cylo.dat
   [1,16,0,0,-10,22,0,0,0,0,22,0,-10,0, ldraw_lib__4_4cylo()],
 ];

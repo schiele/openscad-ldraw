@@ -1,9 +1,9 @@
 use <../lib.scad>
 function ldraw_lib__3_8rin12() = [
-// 0 Ring 12 x 0.375
+// 0 ~Ring 12 x 0.375 (Obsolete)
 // 0 Name: 3-8rin12.dat
 // 0 Author: Niels Karsdorp [nielsk]
-// 0 !LDRAW_ORG Primitive UPDATE 2012-01
+// 0 !LDRAW_ORG Primitive UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -15,7 +15,8 @@ function ldraw_lib__3_8rin12() = [
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
 // 0 !HISTORY 2012-02-16 [Philo] Changed to CCW
 // 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Obsolete, use 3-8ring12.dat
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 4 16 13 0 0 12.0107 0 4.9751 11.0868 0 4.5924 12 0 0
   [4,16,13,0,0,12.0107,0,4.9751,11.0868,0,4.5924,12,0,0],

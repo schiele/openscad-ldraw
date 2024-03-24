@@ -5,7 +5,7 @@ use <../p/1-4cyli.scad>
 use <../p/1-4cylo.scad>
 use <../p/1-4edge.scad>
 use <../p/1-4ndis.scad>
-use <../p/1-4rin19.scad>
+use <../p/1-4ring19.scad>
 use <../p/1-4ring2.scad>
 use <../p/1-4ring4.scad>
 use <../p/1-8chrd.scad>
@@ -33,7 +33,7 @@ function ldraw_lib__t1060() = [
 // 0 ~| Circuit Cubes Battery BLE Cover
 // 0 Name: t1060.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2022-05
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -44,7 +44,8 @@ function ldraw_lib__t1060() = [
 // 0 !KEYWORDS Bluetooth
 // 
 // 0 !HISTORY 2022-09-15 [PTadmin] Official Update 2022-05
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Top led
 // 
@@ -303,8 +304,8 @@ function ldraw_lib__t1060() = [
   [1,16,30,16,-30,10,0,0,0,18,0,0,0,-10, ldraw_lib__1_4cylo()],
 // 1 16 30 34 -30 9.5 0 0 0 8 0 0 0 -9.5 1-4cylo.dat
   [1,16,30,34,-30,9.5,0,0,0,8,0,0,0,-9.5, ldraw_lib__1_4cylo()],
-// 1 16 30 34 -30 0.5 0 0 0 -1 0 0 0 -0.5 1-4rin19.dat
-  [1,16,30,34,-30,0.5,0,0,0,-1,0,0,0,-0.5, ldraw_lib__1_4rin19()],
+// 1 16 30 34 -30 0.5 0 0 0 -1 0 0 0 -0.5 1-4ring19.dat
+  [1,16,30,34,-30,0.5,0,0,0,-1,0,0,0,-0.5, ldraw_lib__1_4ring19()],
 // 1 16 30 42 -30 1.9 0 0 0 -1 0 0 0 -1.9 1-4ring4.dat
   [1,16,30,42,-30,1.9,0,0,0,-1,0,0,0,-1.9, ldraw_lib__1_4ring4()],
 // 0 BFC INVERTNEXT
@@ -409,8 +410,8 @@ function ldraw_lib__t1060() = [
   [1,16,-30,16,-30,-10,0,0,0,18,0,0,0,-10, ldraw_lib__1_4cylo()],
 // 1 16 -30 34 -30 -9.5 0 0 0 8 0 0 0 -9.5 1-4cylo.dat
   [1,16,-30,34,-30,-9.5,0,0,0,8,0,0,0,-9.5, ldraw_lib__1_4cylo()],
-// 1 16 -30 34 -30 -0.5 0 0 0 -1 0 0 0 -0.5 1-4rin19.dat
-  [1,16,-30,34,-30,-0.5,0,0,0,-1,0,0,0,-0.5, ldraw_lib__1_4rin19()],
+// 1 16 -30 34 -30 -0.5 0 0 0 -1 0 0 0 -0.5 1-4ring19.dat
+  [1,16,-30,34,-30,-0.5,0,0,0,-1,0,0,0,-0.5, ldraw_lib__1_4ring19()],
 // 1 16 -30 42 -30 -1.9 0 0 0 -1 0 0 0 -1.9 1-4ring4.dat
   [1,16,-30,42,-30,-1.9,0,0,0,-1,0,0,0,-1.9, ldraw_lib__1_4ring4()],
 // 0 BFC INVERTNEXT

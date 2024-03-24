@@ -7,7 +7,7 @@ use <../../p/4-4cylc.scad>
 use <../../p/4-4cylo.scad>
 use <../../p/4-4edge.scad>
 use <../../p/4-4ndis.scad>
-use <../../p/4-4rin15.scad>
+use <../../p/4-4ring15.scad>
 use <../../p/4-4ring3.scad>
 use <../../p/4-4ring9.scad>
 use <../../p/axl3hol3.scad>
@@ -20,7 +20,7 @@ function ldraw_lib__s__30361ds01() = [
 // 0 ~Cylinder  2 x  2 x  2 Robot Body w/ Axle Holder w/o Front Face
 // 0 Name: s\30361ds01.dat
 // 0 Author: Joerg Sommerer [Brickaneer]
-// 0 !LDRAW_ORG Subpart UPDATE 2012-03
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -29,12 +29,13 @@ function ldraw_lib__s__30361ds01() = [
 // 
 // 0 !HISTORY 2012-05-14 [TK-949] Widened Front Face
 // 0 !HISTORY 2012-12-28 [PTadmin] Official Update 2012-03
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 30 0 0 0 2 0 -1 0 2 0 0 4-4ring9.dat
   [1,16,0,30,0,0,0,2,0,-1,0,2,0,0, ldraw_lib__4_4ring9()],
-// 1 16 0 30 0 0 0 1.129 0 -1 0 1.129 0 0 4-4rin15.dat
-  [1,16,0,30,0,0,0,1.129,0,-1,0,1.129,0,0, ldraw_lib__4_4rin15()],
+// 1 16 0 30 0 0 0 1.129 0 -1 0 1.129 0 0 4-4ring15.dat
+  [1,16,0,30,0,0,0,1.129,0,-1,0,1.129,0,0, ldraw_lib__4_4ring15()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -2 0 0 0 -16 0 6 0 0 0 0 6 4-4cylo.dat

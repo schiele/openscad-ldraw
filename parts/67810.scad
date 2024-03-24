@@ -1,7 +1,7 @@
 use <../lib.scad>
 use <../p/1-16cyli.scad>
 use <../p/1-16edge.scad>
-use <../p/1-16rin4.scad>
+use <../p/1-16ring4.scad>
 use <../p/1-4chrd.scad>
 use <../p/1-4cylc.scad>
 use <../p/1-4cyli.scad>
@@ -24,7 +24,7 @@ function ldraw_lib__67810() = [
 // 0 Brick  2 x  2 x  1.333 with Curved Corner Top
 // 0 Name: 67810.dat
 // 0 Author: Magnus Forsberg [MagFors]
-// 0 !LDRAW_ORG Part UPDATE 2020-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -32,7 +32,8 @@ function ldraw_lib__67810() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 -10 12 -10 1 0 0 0 -1 0 0 0 1 1-4stud4.dat
   [1,16,-10,12,-10,1,0,0,0,-1,0,0,0,1, ldraw_lib__1_4stud4()],
@@ -198,10 +199,10 @@ function ldraw_lib__67810() = [
   [1,16,-10,20,-10,-20,0,0,0,12,0,0,0,-20, ldraw_lib__1_16cyli()],
 // 1 16 -10 20 -10 0 0 -20 0 12 0 -20 0 0 1-16cyli.dat
   [1,16,-10,20,-10,0,0,-20,0,12,0,-20,0,0, ldraw_lib__1_16cyli()],
-// 1 16 -10 32 -10 -4 0 0 0 -1 0 0 0 -4 1-16rin4.dat
-  [1,16,-10,32,-10,-4,0,0,0,-1,0,0,0,-4, ldraw_lib__1_16rin4()],
-// 1 16 -10 32 -10 0 0 -4 0 -1 0 -4 0 0 1-16rin4.dat
-  [1,16,-10,32,-10,0,0,-4,0,-1,0,-4,0,0, ldraw_lib__1_16rin4()],
+// 1 16 -10 32 -10 -4 0 0 0 -1 0 0 0 -4 1-16ring4.dat
+  [1,16,-10,32,-10,-4,0,0,0,-1,0,0,0,-4, ldraw_lib__1_16ring4()],
+// 1 16 -10 32 -10 0 0 -4 0 -1 0 -4 0 0 1-16ring4.dat
+  [1,16,-10,32,-10,0,0,-4,0,-1,0,-4,0,0, ldraw_lib__1_16ring4()],
 // 1 16 -10 28 -10 -3.69552 0 1.53073 0 -1 0 -1.53073 0 -3.69552 1-8ring4.dat
   [1,16,-10,28,-10,-3.69552,0,1.53073,0,-1,0,-1.53073,0,-3.69552, ldraw_lib__1_8ring4()],
 // 1 16 -10 32 -10 -20 0 0 0 1 0 0 0 -20 1-16edge.dat

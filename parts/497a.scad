@@ -4,8 +4,8 @@ use <../p/4-4con19.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4edge.scad>
-use <../p/4-4rin10.scad>
 use <../p/4-4ring1.scad>
+use <../p/4-4ring10.scad>
 use <../p/4-4ring4.scad>
 use <../p/rect.scad>
 use <../p/stud.scad>
@@ -13,7 +13,7 @@ function ldraw_lib__497a() = [
 // 0 ~Wheel Rim  8 x 18 with 4 Studs
 // 0 Name: 497a.dat
 // 0 Author: James Jessiman
-// 0 !LDRAW_ORG Part UPDATE 2012-03
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CW
@@ -24,7 +24,8 @@ function ldraw_lib__497a() = [
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
 // 0 !HISTORY 2008-07-07 [nielsk] Modified for BFC compliance (2004-12-11)
 // 0 !HISTORY 2012-12-28 [PTadmin] Official Update 2012-03
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 10 4 0 0 0 0 4 0 1 0 4-4edge.dat
   [1,16,0,0,10,4,0,0,0,0,4,0,1,0, ldraw_lib__4_4edge()],
@@ -110,8 +111,8 @@ function ldraw_lib__497a() = [
   [1,16,0,0,10,4,0,0,0,0,4,0,-4,0, ldraw_lib__4_4ring1()],
 // 1 16 0 0 8 4 0 0 0 0 4 0 -4 0 4-4ring4.dat
   [1,16,0,0,8,4,0,0,0,0,4,0,-4,0, ldraw_lib__4_4ring4()],
-// 1 16 0 0 8 2 0 0 0 0 2 0 -2 0 4-4rin10.dat
-  [1,16,0,0,8,2,0,0,0,0,2,0,-2,0, ldraw_lib__4_4rin10()],
+// 1 16 0 0 8 2 0 0 0 0 2 0 -2 0 4-4ring10.dat
+  [1,16,0,0,8,2,0,0,0,0,2,0,-2,0, ldraw_lib__4_4ring10()],
 // 1 16 0 0 5 2 0 0 0 0 2 0 -0.6667 0 4-4con10.dat
   [1,16,0,0,5,2,0,0,0,0,2,0,-0.6667,0, ldraw_lib__4_4con10()],
 // 1 16 0 0 4.3333 1 0 0 0 0 1 0 -0.3333 0 4-4con19.dat

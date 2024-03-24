@@ -15,7 +15,7 @@ use <../p/2-4ring4.scad>
 use <../p/2-4ring5.scad>
 use <../p/3-16disc.scad>
 use <../p/3-16ndis.scad>
-use <../p/3-16rin1.scad>
+use <../p/3-16ring1.scad>
 use <../p/3-8ndis.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4ndis.scad>
@@ -30,7 +30,7 @@ function ldraw_lib__3069bp51() = [
 // 0 Tile  1 x  2 with Yellow and Orange Display Pattern
 // 0 Name: 3069bp51.dat
 // 0 Author: Alex Taylor [anathema]
-// 0 !LDRAW_ORG Part UPDATE 2013-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -40,7 +40,8 @@ function ldraw_lib__3069bp51() = [
 // 0 !HISTORY 2010-12-31 [PTadmin] Official Update 2010-03
 // 0 !HISTORY 2013-02-17 [MagFors] Changed colour 179 to 80 (printed silver)
 // 0 !HISTORY 2013-07-21 [PTadmin] Official Update 2013-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3069bs01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3069bs01()],
@@ -422,8 +423,8 @@ function ldraw_lib__3069bp51() = [
   [4,80,-4.2,0,-8.6,-3.8,0,-8.7,-3.8,0,-5.7,-4.2,0,-5.8],
 // 4 80 -4.2 0 -5.8 -3.8 0 -5.7 -10.8 0 -5.7 -10.5 0 -5.8
   [4,80,-4.2,0,-5.8,-3.8,0,-5.7,-10.8,0,-5.7,-10.5,0,-5.8],
-// 1 80 -12.186 0 -5.478 -1.061 0 0.439 0 1 0 -0.439 0 -1.061 3-16rin1.dat
-  [1,80,-12.186,0,-5.478,-1.061,0,0.439,0,1,0,-0.439,0,-1.061, ldraw_lib__3_16rin1()],
+// 1 80 -12.186 0 -5.478 -1.061 0 0.439 0 1 0 -0.439 0 -1.061 3-16ring1.dat
+  [1,80,-12.186,0,-5.478,-1.061,0,0.439,0,1,0,-0.439,0,-1.061, ldraw_lib__3_16ring1()],
 // 1 16 -12.186 0 -5.478 -1.061 0 0.439 0 1 0 -0.439 0 -1.061 3-16disc.dat
   [1,16,-12.186,0,-5.478,-1.061,0,0.439,0,1,0,-0.439,0,-1.061, ldraw_lib__3_16disc()],
 // 1 16 -12.186 0 -5.478 -2.121 0 0.879 0 1 0 -0.879 0 -2.121 3-16ndis.dat

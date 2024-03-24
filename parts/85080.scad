@@ -5,7 +5,7 @@ use <../p/1-4ndis.scad>
 use <../p/1-4ring1.scad>
 use <../p/48/1-12cylo.scad>
 use <../p/48/1-24cylo.scad>
-use <../p/48/1-24rin9.scad>
+use <../p/48/1-24ring9.scad>
 use <../p/48/1-4aring.scad>
 use <../p/box2-5.scad>
 use <../p/box2-7.scad>
@@ -15,7 +15,7 @@ function ldraw_lib__85080() = [
 // 0 Brick  2 x  2 Corner Round w Stud Notch and Reinforced Underside
 // 0 Name: 85080.dat
 // 0 Author: Max Martin Richter [MMR1988]
-// 0 !LDRAW_ORG Part UPDATE 2013-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -25,7 +25,8 @@ function ldraw_lib__85080() = [
 // 0 !KEYWORDS macaroni
 // 
 // 0 !HISTORY 2013-07-21 [PTadmin] Official Update 2013-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // outside
 // 
@@ -98,8 +99,8 @@ function ldraw_lib__85080() = [
 // 1 16 0 24 -20 0 0 6 0 -1 0 -6 0 0 1-4ndis.dat
   [1,16,0,24,-20,0,0,6,0,-1,0,-6,0,0, ldraw_lib__1_4ndis()],
 // 
-// 1 16 -10 20 10 2.43504 0 3.17342 0 -1 0 -3.17342 0 2.43504 48\1-24rin9.dat
-  [1,16,-10,20,10,2.43504,0,3.17342,0,-1,0,-3.17342,0,2.43504, ldraw_lib__48__1_24rin9()],
+// 1 16 -10 20 10 2.43504 0 3.17342 0 -1 0 -3.17342 0 2.43504 48\1-24ring9.dat
+  [1,16,-10,20,10,2.43504,0,3.17342,0,-1,0,-3.17342,0,2.43504, ldraw_lib__48__1_24ring9()],
 // 4 16 4.142 24 -4.142 7.61908 24 -6 9 24 -9 6 24 -7.61908
   [4,16,4.142,24,-4.142,7.61908,24,-6,9,24,-9,6,24,-7.61908],
 // 

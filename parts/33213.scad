@@ -1,6 +1,6 @@
 use <../lib.scad>
 use <../p/48/1-12edge.scad>
-use <../p/48/1-4rin36.scad>
+use <../p/48/1-4ring36.scad>
 use <../p/48/2-4cyli.scad>
 use <../p/48/2-4cylo.scad>
 use <../p/48/2-4edge.scad>
@@ -19,7 +19,7 @@ function ldraw_lib__33213() = [
 // 0 Panel  6 x  8 x 12 Tower with Arched Window
 // 0 Name: 33213.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
-// 0 !LDRAW_ORG Part UPDATE 2020-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -29,7 +29,8 @@ function ldraw_lib__33213() = [
 // 0 !KEYWORDS Belville
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\33213s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__33213s01()],
@@ -96,16 +97,16 @@ function ldraw_lib__33213() = [
   [1,16,0,85,-56,30,0,0,0,0,-30,0,20,0, ldraw_lib__48__2_4cylo()],
 // 1 16 0 85 -56 6 0 0 0 0 -6 0 1 0 48\2-4ring5.dat
   [1,16,0,85,-56,6,0,0,0,0,-6,0,1,0, ldraw_lib__48__2_4ring5()],
-// 1 16 0 85 -56 -1 0 0 0 0 -1 0 1 0 48\1-4rin36.dat
-  [1,16,0,85,-56,-1,0,0,0,0,-1,0,1,0, ldraw_lib__48__1_4rin36()],
-// 1 16 0 85 -56 1 0 0 0 0 -1 0 1 0 48\1-4rin36.dat
-  [1,16,0,85,-56,1,0,0,0,0,-1,0,1,0, ldraw_lib__48__1_4rin36()],
+// 1 16 0 85 -56 -1 0 0 0 0 -1 0 1 0 48\1-4ring36.dat
+  [1,16,0,85,-56,-1,0,0,0,0,-1,0,1,0, ldraw_lib__48__1_4ring36()],
+// 1 16 0 85 -56 1 0 0 0 0 -1 0 1 0 48\1-4ring36.dat
+  [1,16,0,85,-56,1,0,0,0,0,-1,0,1,0, ldraw_lib__48__1_4ring36()],
 // 1 16 0 85 -36 6 0 0 0 0 -6 0 -1 0 48\2-4ring5.dat
   [1,16,0,85,-36,6,0,0,0,0,-6,0,-1,0, ldraw_lib__48__2_4ring5()],
-// 1 16 0 85 -36 1 0 0 0 0 -1 0 -1 0 48\1-4rin36.dat
-  [1,16,0,85,-36,1,0,0,0,0,-1,0,-1,0, ldraw_lib__48__1_4rin36()],
-// 1 16 0 85 -36 -1 0 0 0 0 -1 0 -1 0 48\1-4rin36.dat
-  [1,16,0,85,-36,-1,0,0,0,0,-1,0,-1,0, ldraw_lib__48__1_4rin36()],
+// 1 16 0 85 -36 1 0 0 0 0 -1 0 -1 0 48\1-4ring36.dat
+  [1,16,0,85,-36,1,0,0,0,0,-1,0,-1,0, ldraw_lib__48__1_4ring36()],
+// 1 16 0 85 -36 -1 0 0 0 0 -1 0 -1 0 48\1-4ring36.dat
+  [1,16,0,85,-36,-1,0,0,0,0,-1,0,-1,0, ldraw_lib__48__1_4ring36()],
 // 
 // 0 // Top Half
 // 1 16 0 24 20 -73 0 0 0 24 0 0 0 -73 48\2-4cyli.dat

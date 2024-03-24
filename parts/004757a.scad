@@ -1,13 +1,13 @@
 use <../lib.scad>
 use <../p/48/4-4aring.scad>
 use <../p/48/4-4ndis.scad>
-use <../p/48/4-4rin20.scad>
+use <../p/48/4-4ring20.scad>
 use <../p/box5-12.scad>
 function ldraw_lib__004757a() = [
 // 0 Sticker  1.3 x  1.3 with White French Railways Logo ("SNCF")
 // 0 Name: 004757a.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
-// 0 !LDRAW_ORG Part UPDATE 2022-05
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -19,14 +19,15 @@ function ldraw_lib__004757a() = [
 // 0 !HISTORY 2020-01-07 [Plastikean] Original TEXMAP pattern for OMR
 // 0 !HISTORY 2021-03-31 [RainbowDolphin] File preparation for LDraw Parts Tracker, vectorized the pattern
 // 0 !HISTORY 2022-09-15 [PTadmin] Official Update 2022-05
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 -0.25 0 13 0 0 0 0.25 0 0 0 13 box5-12.dat
   [1,16,0,-0.25,0,13,0,0,0,0.25,0,0,0,13, ldraw_lib__box5_12()],
 // 1 4 0 -0.25 0 10 0 0 0 1 0 0 0 10 48\4-4aring.dat
   [1,4,0,-0.25,0,10,0,0,0,1,0,0,0,10, ldraw_lib__48__4_4aring()],
-// 1 15 0 -0.25 0 0.5 0 0 0 1 0 0 0 0.5 48\4-4rin20.dat
-  [1,15,0,-0.25,0,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__48__4_4rin20()],
+// 1 15 0 -0.25 0 0.5 0 0 0 1 0 0 0 0.5 48\4-4ring20.dat
+  [1,15,0,-0.25,0,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__48__4_4ring20()],
 // 1 4 0 -0.25 0 10.5 0 0 0 1 0 0 0 10.5 48\4-4ndis.dat
   [1,4,0,-0.25,0,10.5,0,0,0,1,0,0,0,10.5, ldraw_lib__48__4_4ndis()],
 // 4 15 5.7 -0.25 5.2 6.8 -0.25 6.3 6.51 -0.25 6.65 4.9 -0.25 6

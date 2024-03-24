@@ -1,6 +1,6 @@
 use <../lib.scad>
 use <../p/48/1-16edge.scad>
-use <../p/48/1-16rin8.scad>
+use <../p/48/1-16ring8.scad>
 use <../p/48/1-4ring8.scad>
 use <../p/48/1-8ring8.scad>
 use <../p/48/5-8edge.scad>
@@ -10,7 +10,7 @@ function ldraw_lib__99550() = [
 // 0 ~Electric Mindstorms EV3 Large Motor Casing Right
 // 0 Name: 99550.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2013-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -20,7 +20,8 @@ function ldraw_lib__99550() = [
 // 0 !HISTORY 2012-05-20 {LEGO MINDSTORMS Team} Original part shape
 // 0 !HISTORY 2012-08-01 [Philo] File preparation for LDraw Parts Tracker
 // 0 !HISTORY 2013-12-23 [PTadmin] Official Update 2013-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\99550s02.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__99550s02()],
@@ -50,8 +51,8 @@ function ldraw_lib__99550() = [
   [1,16,1,0,0,0,14,0,6.67178,0,24.8994,-24.8994,0,6.67178, ldraw_lib__48__5_8edge()],
 // 1 16 1 0 0 0 14 0 -22.3242 0 -12.8889 12.8889 0 -22.3242 48\1-16edge.dat
   [1,16,1,0,0,0,14,0,-22.3242,0,-12.8889,12.8889,0,-22.3242, ldraw_lib__48__1_16edge()],
-// 1 16 1 0 0 0 1 0 3.19465 0 -0.42058 -0.42058 0 -3.19465 48\1-16rin8.dat
-  [1,16,1,0,0,0,1,0,3.19465,0,-0.42058,-0.42058,0,-3.19465, ldraw_lib__48__1_16rin8()],
+// 1 16 1 0 0 0 1 0 3.19465 0 -0.42058 -0.42058 0 -3.19465 48\1-16ring8.dat
+  [1,16,1,0,0,0,1,0,3.19465,0,-0.42058,-0.42058,0,-3.19465, ldraw_lib__48__1_16ring8()],
 // 1 16 1 0 0 0 1 0 0.42058 0 -3.19466 3.19466 0 0.42058 48\1-4ring8.dat
   [1,16,1,0,0,0,1,0,0.42058,0,-3.19466,3.19466,0,0.42058, ldraw_lib__48__1_4ring8()],
 // 1 16 1 0 0 0 1 0 3.19466 0 0.42058 -0.42058 0 3.19466 48\1-4ring8.dat

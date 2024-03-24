@@ -2,12 +2,12 @@ use <../../lib.scad>
 use <../../p/1-4tang.scad>
 use <../../p/3-16ndis.scad>
 use <../../p/7-16disc.scad>
-use <../../p/7-16rin3.scad>
+use <../../p/7-16ring3.scad>
 function ldraw_lib__s__004845as01() = [
 // 0 ~Refrigeration Pattern - 1/12
 // 0 Name: s\004845as01.dat
 // 0 Author: Alex Taylor [anathema]
-// 0 !LDRAW_ORG Subpart UPDATE 2023-01
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -15,12 +15,13 @@ function ldraw_lib__s__004845as01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2023-03-05 [OrionP] Official Update 2023-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 -15.475 0 0 -5.3568 0 0 0 1 0 0 0 5.3568 7-16disc.dat
   [1,16,-15.475,0,0,-5.3568,0,0,0,1,0,0,0,5.3568, ldraw_lib__7_16disc()],
-// 1 1 -15.475 0 0 -1.7856 0 0 0 1 0 0 0 1.7856 7-16rin3.dat
-  [1,1,-15.475,0,0,-1.7856,0,0,0,1,0,0,0,1.7856, ldraw_lib__7_16rin3()],
+// 1 1 -15.475 0 0 -1.7856 0 0 0 1 0 0 0 1.7856 7-16ring3.dat
+  [1,1,-15.475,0,0,-1.7856,0,0,0,1,0,0,0,1.7856, ldraw_lib__7_16ring3()],
 // 4 16 -2.36711 0 1.36658 -10.3901 0 1.36658 -15.475 0 0 0 0 0
   [4,16,-2.36711,0,1.36658,-10.3901,0,1.36658,-15.475,0,0,0,0,0],
 // 4 1 -4.73422 0 2.73328 -8.87649 0 2.73328 -10.3901 0 1.36658 -2.36711 0 1.36658

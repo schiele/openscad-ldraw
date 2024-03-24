@@ -1,12 +1,12 @@
 use <../../lib.scad>
 use <../../p/1-16cyli.scad>
 use <../../p/1-16edge.scad>
-use <../../p/1-16rin4.scad>
+use <../../p/1-16ring4.scad>
 function ldraw_lib__s__30151s01() = [
 // 0 ~Cylinder  2 x  2 x  1.667 with Dome Top - Stud Cutout Half
 // 0 Name: s\30151s01.dat
 // 0 Author: Magnus Forsberg [MagFors]
-// 0 !LDRAW_ORG Subpart UPDATE 2016-01
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -14,7 +14,8 @@ function ldraw_lib__s__30151s01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2016-12-31 [PTadmin] Official Update 2016-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 2 24 6.344 40 -14.635 7.704 40 -15.543
   [2,24,6.344,40,-14.635,7.704,40,-15.543],
@@ -83,8 +84,8 @@ function ldraw_lib__s__30151s01() = [
   [1,16,0,40,0,0,0,16,0,1,0,-16,0,0, ldraw_lib__1_16edge()],
 // 1 16 0 40 0 0 0 20 0 1 0 -20 0 0 1-16edge.dat
   [1,16,0,40,0,0,0,20,0,1,0,-20,0,0, ldraw_lib__1_16edge()],
-// 1 16 0 40 0 0 0 4 0 -1 0 -4 0 0 1-16rin4.dat
-  [1,16,0,40,0,0,0,4,0,-1,0,-4,0,0, ldraw_lib__1_16rin4()],
+// 1 16 0 40 0 0 0 4 0 -1 0 -4 0 0 1-16ring4.dat
+  [1,16,0,40,0,0,0,4,0,-1,0,-4,0,0, ldraw_lib__1_16ring4()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 40 0 0 0 16 0 -4 0 -16 0 0 1-16cyli.dat

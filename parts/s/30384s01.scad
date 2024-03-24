@@ -1,9 +1,9 @@
 use <../../lib.scad>
-use <../../p/1-4rin19.scad>
+use <../../p/1-4ring19.scad>
 use <../../p/2-4con1.scad>
 use <../../p/2-4cyli.scad>
 use <../../p/2-4edge.scad>
-use <../../p/2-4rin18.scad>
+use <../../p/2-4ring18.scad>
 use <../../p/box4-5a.scad>
 use <../../p/rect.scad>
 use <../../p/rect1.scad>
@@ -11,7 +11,7 @@ function ldraw_lib__s__30384s01() = [
 // 0 ~Windscreen  4 x  7 x  2 Round Rear Arch
 // 0 Name: s\30384s01.dat
 // 0 Author: Magnus Forsberg [MagFors]
-// 0 !LDRAW_ORG Subpart UPDATE 2012-03
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -19,7 +19,8 @@ function ldraw_lib__s__30384s01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2012-12-28 [PTadmin] Official Update 2012-03
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 -38 -8 60 2 0 0 0 8 0 0 0 30 box4-5a.dat
   [1,16,-38,-8,60,2,0,0,0,8,0,0,0,30, ldraw_lib__box4_5a()],
@@ -141,12 +142,12 @@ function ldraw_lib__s__30384s01() = [
   [1,16,0,-8,90,36,0,0,0,0,-36,0,1,0, ldraw_lib__2_4edge()],
 // 1 16 0 -8 90 40 0 0 0 0 -40 0 1 0 2-4edge.dat
   [1,16,0,-8,90,40,0,0,0,0,-40,0,1,0, ldraw_lib__2_4edge()],
-// 1 16 0 -8 90 2 0 0 0 0 -2 0 -1 0 2-4rin18.dat
-  [1,16,0,-8,90,2,0,0,0,0,-2,0,-1,0, ldraw_lib__2_4rin18()],
-// 1 16 0 -8 90 2 0 0 0 0 -2 0 -1 0 1-4rin19.dat
-  [1,16,0,-8,90,2,0,0,0,0,-2,0,-1,0, ldraw_lib__1_4rin19()],
-// 1 16 0 -8 90 -2 0 0 0 0 -2 0 -1 0 1-4rin19.dat
-  [1,16,0,-8,90,-2,0,0,0,0,-2,0,-1,0, ldraw_lib__1_4rin19()],
+// 1 16 0 -8 90 2 0 0 0 0 -2 0 -1 0 2-4ring18.dat
+  [1,16,0,-8,90,2,0,0,0,0,-2,0,-1,0, ldraw_lib__2_4ring18()],
+// 1 16 0 -8 90 2 0 0 0 0 -2 0 -1 0 1-4ring19.dat
+  [1,16,0,-8,90,2,0,0,0,0,-2,0,-1,0, ldraw_lib__1_4ring19()],
+// 1 16 0 -8 90 -2 0 0 0 0 -2 0 -1 0 1-4ring19.dat
+  [1,16,0,-8,90,-2,0,0,0,0,-2,0,-1,0, ldraw_lib__1_4ring19()],
 // 0 // inside surface
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],

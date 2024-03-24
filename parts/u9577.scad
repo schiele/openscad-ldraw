@@ -15,9 +15,9 @@ use <../p/4-4cylo.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4edge.scad>
 use <../p/4-4ndis.scad>
-use <../p/4-4rin12.scad>
-use <../p/4-4rin25.scad>
 use <../p/4-4ring1.scad>
+use <../p/4-4ring12.scad>
+use <../p/4-4ring25.scad>
 use <../p/4-4ring4.scad>
 use <../p/4-4ring5.scad>
 use <../p/4-4ring9.scad>
@@ -40,7 +40,7 @@ function ldraw_lib__u9577() = [
 // 0 ~Electric Light & Sound Insectoid Tail  4 x 20 x  4.333 - Electronics
 // 0 Name: u9577.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
-// 0 !LDRAW_ORG Part UPDATE 2022-05
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -48,7 +48,8 @@ function ldraw_lib__u9577() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2022-09-15 [PTadmin] Official Update 2022-05
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Printed Circuit Board
 // 1 70 14.5 -27 -95.5 5.5 0 0 0 0 1 0 1 0 rect2p.dat
@@ -435,10 +436,10 @@ function ldraw_lib__u9577() = [
   [1,0,8.4193,-32.2619,-121,19.5238,-.65079,0,4.3386,2.92857,0,0,0,20, ldraw_lib__4_4cylo()],
 // 1 0 7.76851 -29.33333 -121 3.90476 0 0 .86772 -1 0 0 0 4 4-4ring5.dat
   [1,0,7.76851,-29.33333,-121,3.90476,0,0,.86772,-1,0,0,0,4, ldraw_lib__4_4ring5()],
-// 1 0 7.76851 -29.33333 -121 1.95238 0 0 .43386 -1 0 0 0 2 4-4rin12.dat
-  [1,0,7.76851,-29.33333,-121,1.95238,0,0,.43386,-1,0,0,0,2, ldraw_lib__4_4rin12()],
-// 1 0 9.50395 -37.14285 -121 .97619 0 0 .21693 1 0 0 0 1 4-4rin25.dat
-  [1,0,9.50395,-37.14285,-121,.97619,0,0,.21693,1,0,0,0,1, ldraw_lib__4_4rin25()],
+// 1 0 7.76851 -29.33333 -121 1.95238 0 0 .43386 -1 0 0 0 2 4-4ring12.dat
+  [1,0,7.76851,-29.33333,-121,1.95238,0,0,.43386,-1,0,0,0,2, ldraw_lib__4_4ring12()],
+// 1 0 9.50395 -37.14285 -121 .97619 0 0 .21693 1 0 0 0 1 4-4ring25.dat
+  [1,0,9.50395,-37.14285,-121,.97619,0,0,.21693,1,0,0,0,1, ldraw_lib__4_4ring25()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 0 9.50395 -37.14285 -121 24.40475 -.65079 0 5.42325 2.92857 0 0 0 25 4-4cylo.dat

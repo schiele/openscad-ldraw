@@ -1,30 +1,30 @@
 use <../lib.scad>
-use <../p/4-4rin21.scad>
-use <../p/4-4rin22.scad>
-use <../p/4-4rin24.scad>
-use <../p/4-4rin46.scad>
-use <../p/4-4rin47.scad>
-use <../p/4-4rin50.scad>
-use <../p/4-4rin51.scad>
-use <../p/4-4rin52.scad>
-use <../p/4-4rin77.scad>
-use <../p/4-4rin78.scad>
-use <../p/4-4rin79.scad>
+use <../p/4-4ring21.scad>
+use <../p/4-4ring22.scad>
+use <../p/4-4ring24.scad>
+use <../p/4-4ring46.scad>
+use <../p/4-4ring47.scad>
+use <../p/4-4ring50.scad>
+use <../p/4-4ring51.scad>
+use <../p/4-4ring52.scad>
+use <../p/4-4ring77.scad>
+use <../p/4-4ring78.scad>
+use <../p/4-4ring79.scad>
 use <s/4150ps1a.scad>
 use <s/4150s01.scad>
 function ldraw_lib__4150ps1() = [
 // 0 Tile  2 x  2 Round with SW Red & Black Vent Pattern
 // 0 Name: 4150ps1.dat
 // 0 Author: Franklin W. Cain [fwcain]
-// 0 !LDRAW_ORG Part UPDATE 2009-03
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Episode One, Flash, Life on Mars, pod racer, podracer, Sebulba
-// 0 !KEYWORDS Star Wars, steam
+// 0 !KEYWORDS Episode One, Flash, Life on Mars, Sebulba, Star Wars, pod racer
+// 0 !KEYWORDS podracer, steam
 // 
 // 0 !CMDLINE -C7
 // 
@@ -35,7 +35,8 @@ function ldraw_lib__4150ps1() = [
 // 0 !HISTORY 2008-07-08 [westrate] fixed bowtie quads (2004-03-15)
 // 0 !HISTORY 2009-09-22 [anathema] BFC'd, added subpart and more primitives, removed edge-lines from pattern
 // 0 !HISTORY 2009-12-29 [PTadmin] Official Update 2009-03
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4150s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__4150s01()],
@@ -167,28 +168,28 @@ function ldraw_lib__4150ps1() = [
   [4,0,-4.018,0,9.701,-3.923,0,9.47,0,0,10.25,0,0,10.5],
 // 4 0 0 0 10.5 0 0 10.25 3.923 0 9.47 4.018 0 9.701
   [4,0,0,0,10.5,0,0,10.25,3.923,0,9.47,4.018,0,9.701],
-// 1 16 0 0 0 0.25 0 0 0 1 0 0 0 0.25 4-4rin79.dat
-  [1,16,0,0,0,0.25,0,0,0,1,0,0,0,0.25, ldraw_lib__4_4rin79()],
-// 1 0 0 0 0 0.25 0 0 0 1 0 0 0 0.25 4-4rin78.dat
-  [1,0,0,0,0,0.25,0,0,0,1,0,0,0,0.25, ldraw_lib__4_4rin78()],
-// 1 0 0 0 0 0.25 0 0 0 1 0 0 0 0.25 4-4rin52.dat
-  [1,0,0,0,0,0.25,0,0,0,1,0,0,0,0.25, ldraw_lib__4_4rin52()],
-// 1 0 0 0 0 0.25 0 0 0 1 0 0 0 0.25 4-4rin51.dat
-  [1,0,0,0,0,0.25,0,0,0,1,0,0,0,0.25, ldraw_lib__4_4rin51()],
-// 1 8 0 0 0 0.5 0 0 0 1 0 0 0 0.5 4-4rin21.dat
-  [1,8,0,0,0,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__4_4rin21()],
-// 1 8 0 0 0 0.5 0 0 0 1 0 0 0 0.5 4-4rin22.dat
-  [1,8,0,0,0,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__4_4rin22()],
-// 1 8 0 0 0 0.25 0 0 0 1 0 0 0 0.25 4-4rin47.dat
-  [1,8,0,0,0,0.25,0,0,0,1,0,0,0,0.25, ldraw_lib__4_4rin47()],
-// 1 8 0 0 0 0.5 0 0 0 1 0 0 0 0.5 4-4rin24.dat
-  [1,8,0,0,0,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__4_4rin24()],
-// 1 8 0 0 0 0.25 0 0 0 1 0 0 0 0.25 4-4rin50.dat
-  [1,8,0,0,0,0.25,0,0,0,1,0,0,0,0.25, ldraw_lib__4_4rin50()],
-// 1 0 0 0 0 0.25 0 0 0 1 0 0 0 0.25 4-4rin46.dat
-  [1,0,0,0,0,0.25,0,0,0,1,0,0,0,0.25, ldraw_lib__4_4rin46()],
-// 1 0 0 0 0 0.25 0 0 0 1 0 0 0 0.25 4-4rin77.dat
-  [1,0,0,0,0,0.25,0,0,0,1,0,0,0,0.25, ldraw_lib__4_4rin77()],
+// 1 16 0 0 0 0.25 0 0 0 1 0 0 0 0.25 4-4ring79.dat
+  [1,16,0,0,0,0.25,0,0,0,1,0,0,0,0.25, ldraw_lib__4_4ring79()],
+// 1 0 0 0 0 0.25 0 0 0 1 0 0 0 0.25 4-4ring78.dat
+  [1,0,0,0,0,0.25,0,0,0,1,0,0,0,0.25, ldraw_lib__4_4ring78()],
+// 1 0 0 0 0 0.25 0 0 0 1 0 0 0 0.25 4-4ring52.dat
+  [1,0,0,0,0,0.25,0,0,0,1,0,0,0,0.25, ldraw_lib__4_4ring52()],
+// 1 0 0 0 0 0.25 0 0 0 1 0 0 0 0.25 4-4ring51.dat
+  [1,0,0,0,0,0.25,0,0,0,1,0,0,0,0.25, ldraw_lib__4_4ring51()],
+// 1 8 0 0 0 0.5 0 0 0 1 0 0 0 0.5 4-4ring21.dat
+  [1,8,0,0,0,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__4_4ring21()],
+// 1 8 0 0 0 0.5 0 0 0 1 0 0 0 0.5 4-4ring22.dat
+  [1,8,0,0,0,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__4_4ring22()],
+// 1 8 0 0 0 0.25 0 0 0 1 0 0 0 0.25 4-4ring47.dat
+  [1,8,0,0,0,0.25,0,0,0,1,0,0,0,0.25, ldraw_lib__4_4ring47()],
+// 1 8 0 0 0 0.5 0 0 0 1 0 0 0 0.5 4-4ring24.dat
+  [1,8,0,0,0,0.5,0,0,0,1,0,0,0,0.5, ldraw_lib__4_4ring24()],
+// 1 8 0 0 0 0.25 0 0 0 1 0 0 0 0.25 4-4ring50.dat
+  [1,8,0,0,0,0.25,0,0,0,1,0,0,0,0.25, ldraw_lib__4_4ring50()],
+// 1 0 0 0 0 0.25 0 0 0 1 0 0 0 0.25 4-4ring46.dat
+  [1,0,0,0,0,0.25,0,0,0,1,0,0,0,0.25, ldraw_lib__4_4ring46()],
+// 1 0 0 0 0 0.25 0 0 0 1 0 0 0 0.25 4-4ring77.dat
+  [1,0,0,0,0,0.25,0,0,0,1,0,0,0,0.25, ldraw_lib__4_4ring77()],
 // 0
 ];
 module ldraw_lib__4150ps1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)

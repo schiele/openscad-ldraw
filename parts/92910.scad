@@ -19,7 +19,7 @@ use <../p/4-4cyli.scad>
 use <../p/4-4cylo.scad>
 use <../p/4-4edge.scad>
 use <../p/4-4ndis.scad>
-use <../p/4-4rin10.scad>
+use <../p/4-4ring10.scad>
 use <../p/4-4ring4.scad>
 use <../p/4-4ring5.scad>
 use <../p/4-4ring7.scad>
@@ -37,19 +37,20 @@ function ldraw_lib__92910() = [
 // 0 Technic Ball Joint  2.25 Diameter with C-Shape Frame
 // 0 Name: 92910.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2023-01
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS set 8110, Torque Tube, Unimog
+// 0 !KEYWORDS Torque Tube, Unimog, set 8110
 // 
 // 0 !HISTORY 2012-12-28 [PTadmin] Official Update 2012-03
 // 0 !HISTORY 2022-09-08 [SwampKryakwa] Tweaked to fit the changed npeghol10
 // 0 !HISTORY 2023-03-05 [OrionP] Official Update 2023-01
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 // Beam left side
 // 1 16 -10 0 -40 0 0 -1 0 1 0 -1 0 0 npeghol9.dat
@@ -460,8 +461,8 @@ function ldraw_lib__92910() = [
   [1,16,0,0,3.1,1.90909,0,0,0,0,1.90909,0,6.2,0, ldraw_lib__4_4con11()],
 // 1 16 0 0 9.3 21 0 0 0 0 21 0 1.7 0 4-4cylo.dat
   [1,16,0,0,9.3,21,0,0,0,0,21,0,1.7,0, ldraw_lib__4_4cylo()],
-// 1 16 0 0 11 1.90909 0 0 0 0 1.90909 0 -1 0 4-4rin10.dat
-  [1,16,0,0,11,1.90909,0,0,0,0,1.90909,0,-1,0, ldraw_lib__4_4rin10()],
+// 1 16 0 0 11 1.90909 0 0 0 0 1.90909 0 -1 0 4-4ring10.dat
+  [1,16,0,0,11,1.90909,0,0,0,0,1.90909,0,-1,0, ldraw_lib__4_4ring10()],
 // 1 16 0 0 11 19.0909 0 0 0 0 19.0909 0 -1 0 4-4edge.dat
   [1,16,0,0,11,19.0909,0,0,0,0,19.0909,0,-1,0, ldraw_lib__4_4edge()],
 // 0 BFC INVERTNEXT

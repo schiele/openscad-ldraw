@@ -11,13 +11,13 @@ use <../p/48/1-16cylo.scad>
 use <../p/48/1-4chrd.scad>
 use <../p/48/4-4cylc.scad>
 use <../p/48/4-4cylo.scad>
-use <../p/48/4-4rin14.scad>
+use <../p/48/4-4ring14.scad>
 use <../p/connect8.scad>
 function ldraw_lib__46434() = [
 // 0 Technic Steering Wheel Bearing with Planetary Gear Reduction Wheel Hub
 // 0 Name: 46434.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2019-03
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -25,7 +25,8 @@ function ldraw_lib__46434() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2019-12-27 [PTadmin] Official Update 2019-03
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 0 -20 -10 8 0 0 0 0 8 0 5 0 4-4cyli.dat
   [1,16,0,-20,-10,8,0,0,0,0,8,0,5,0, ldraw_lib__4_4cyli()],
@@ -213,8 +214,8 @@ function ldraw_lib__46434() = [
   [1,16,0,0,0,28,0,0,0,0,28,0,-5,0, ldraw_lib__48__4_4cylo()],
 // 1 16 0 0 5 30 0 0 0 0 30 0 -5 0 48\4-4cylc.dat
   [1,16,0,0,5,30,0,0,0,0,30,0,-5,0, ldraw_lib__48__4_4cylc()],
-// 1 16 0 0 0 2 0 0 0 0 2 0 1 0 48\4-4rin14.dat
-  [1,16,0,0,0,2,0,0,0,0,2,0,1,0, ldraw_lib__48__4_4rin14()],
+// 1 16 0 0 0 2 0 0 0 0 2 0 1 0 48\4-4ring14.dat
+  [1,16,0,0,0,2,0,0,0,0,2,0,1,0, ldraw_lib__48__4_4ring14()],
 ];
 module ldraw_lib__46434(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
     makepoly(ldraw_lib__46434(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);

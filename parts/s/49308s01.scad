@@ -1,8 +1,8 @@
 use <../../lib.scad>
 use <../../p/4-4cyli.scad>
 use <../../p/4-4edge.scad>
-use <../../p/4-4rin12.scad>
 use <../../p/4-4ring1.scad>
+use <../../p/4-4ring12.scad>
 use <../../p/4-4ring3.scad>
 use <../../p/48/4-4aring.scad>
 use <../../p/48/4-4ring4.scad>
@@ -14,7 +14,7 @@ function ldraw_lib__s__49308s01() = [
 // 0 ~Cylinder  3 x  3 with Dome Top with Open Stud without Outer Surfaces
 // 0 Name: s\49308s01.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
-// 0 !LDRAW_ORG Subpart UPDATE 2022-04
+// 0 !LDRAW_ORG Subpart UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -22,7 +22,8 @@ function ldraw_lib__s__49308s01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 1 16 10 28 10 1 0 0 0 -1 0 0 0 1 stud4a.dat
   [1,16,10,28,10,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4a()],
@@ -62,8 +63,8 @@ function ldraw_lib__s__49308s01() = [
 // 
 // 1 16 0 4 0 8.6667 0 0 0 -1 0 0 0 8.6667 48\4-4aring.dat
   [1,16,0,4,0,8.6667,0,0,0,-1,0,0,0,8.6667, ldraw_lib__48__4_4aring()],
-// 1 16 0 4 0 .66667 0 0 0 -1 0 0 0 .66667 4-4rin12.dat
-  [1,16,0,4,0,.66667,0,0,0,-1,0,0,0,.66667, ldraw_lib__4_4rin12()],
+// 1 16 0 4 0 .66667 0 0 0 -1 0 0 0 .66667 4-4ring12.dat
+  [1,16,0,4,0,.66667,0,0,0,-1,0,0,0,.66667, ldraw_lib__4_4ring12()],
 // 
 // 1 16 0 4 0 4 0 0 0 -1 0 0 0 4 4-4ring1.dat
   [1,16,0,4,0,4,0,0,0,-1,0,0,0,4, ldraw_lib__4_4ring1()],

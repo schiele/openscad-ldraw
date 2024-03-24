@@ -1,13 +1,13 @@
 use <../lib.scad>
 use <../p/4-4con10.scad>
 use <../p/4-4cylo.scad>
-use <../p/4-4rin22.scad>
+use <../p/4-4ring22.scad>
 use <s/61254s01.scad>
 function ldraw_lib__61254() = [
 // 0 Tyre  7/ 45 x 17 Offset Tread with Middle Band
 // 0 Name: 61254.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2019-02
+// 0 !LDRAW_ORG Part UPDATE 2024-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -17,7 +17,8 @@ function ldraw_lib__61254() = [
 // 0 !HISTORY 2013-06-21 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2013-06-21 [Philo] File preparation for LDraw Parts Tracker
 // 0 !HISTORY 2019-09-09 [PTadmin] Official Update 2019-02
-// 
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
@@ -39,10 +40,10 @@ function ldraw_lib__61254() = [
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 0 -4 22 0 0 0 0 22 0 -5 0 4-4cylo.dat
   [1,16,0,0,-4,22,0,0,0,0,22,0,-5,0, ldraw_lib__4_4cylo()],
-// 1 16 0 0 -9 1 0 0 0 0 1 0 1 0 4-4rin22.dat
-  [1,16,0,0,-9,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4rin22()],
-// 1 16 0 0 9 -1 0 0 0 0 1 0 -1 0 4-4rin22.dat
-  [1,16,0,0,9,-1,0,0,0,0,1,0,-1,0, ldraw_lib__4_4rin22()],
+// 1 16 0 0 -9 1 0 0 0 0 1 0 1 0 4-4ring22.dat
+  [1,16,0,0,-9,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4ring22()],
+// 1 16 0 0 9 -1 0 0 0 0 1 0 -1 0 4-4ring22.dat
+  [1,16,0,0,9,-1,0,0,0,0,1,0,-1,0, ldraw_lib__4_4ring22()],
 // 4 16 2.199 -24.581 9 4.8153 -24.2048 9 0 -23 9 -2.199 -24.581 9
   [4,16,2.199,-24.581,9,4.8153,-24.2048,9,0,-23,9,-2.199,-24.581,9],
 // 4 16 -4.8153 -24.2048 9 -2.199 -24.581 9 0 -23 9 -8.8021 -21.2497 9
