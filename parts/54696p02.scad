@@ -5,7 +5,7 @@ function ldraw_lib__54696p02() = [
 // 0 Electric Powered Up Medium Angular Motor with Light Bluish Grey Back and Hub Pattern
 // 0 Name: 54696p02.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Unofficial_Shortcut
+// 0 !LDRAW_ORG Shortcut UPDATE 2024-03
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -13,6 +13,8 @@ function ldraw_lib__54696p02() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS Mindstorms, Robot Inventor, Set 51515
+// 
+// 0 !HISTORY 2024-04-28 [OrionP] Official Update 2024-03
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 u9364c02.dat

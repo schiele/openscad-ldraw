@@ -4,12 +4,14 @@ function ldraw_lib__s__u9363s02() = [
 // 0 ~Electric Powered Up Angular Motor Drive Hub Pointer
 // 0 Name: s\u9363s02.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Unofficial_Subpart
+// 0 !LDRAW_ORG Subpart UPDATE 2024-03
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
+// 
+// 0 !HISTORY 2024-04-28 [OrionP] Official Update 2024-03
 // 
 // 
 // 4 16 -.5 0 -12 .5 0 -12 .5 0 -6 -.5 0 -6
