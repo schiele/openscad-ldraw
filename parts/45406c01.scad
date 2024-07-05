@@ -2,10 +2,10 @@ use <../lib.scad>
 use <45406.scad>
 use <46103.scad>
 function ldraw_lib__45406c01() = [
-// 0 Windscreen  4 x  6 x  4 Cab with Hinge with Trans Black Glass
+// 0 Windscreen  4 x  6 x  4 Cab with Hinge with Trans Brown Glass
 // 0 Name: 45406c01.dat
 // 0 Author: Sylvain Sauvage [SLS]
-// 0 !LDRAW_ORG Shortcut UPDATE 2020-02
+// 0 !LDRAW_ORG Shortcut UPDATE 2024-05
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -13,7 +13,8 @@ function ldraw_lib__45406c01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
-// 
+// 0 !HISTORY 2024-05-29 [MagFors] Update description
+// 0 !HISTORY 2024-06-30 [OrionP] Official Update 2024-05
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 45406.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__45406()],

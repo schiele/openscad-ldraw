@@ -4,20 +4,24 @@ use <s/62575s02.scad>
 use <s/62575s03.scad>
 use <../p/stud4a.scad>
 function ldraw_lib__62575p01() = [
-// 0 Animal Ant with Marbled Trans Black Pattern
+// 0 Animal Ant with Marbled Trans Brown Pattern
 // 0 Name: 62575p01.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2022-01
+// 0 !LDRAW_ORG Part UPDATE 2024-05
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS Bricklink 62575pb01, Brickowl 432228, Jungle
+// 0 !KEYWORDS Rebrickable 62575pat0001, set 7624, set 7626
+// 
 // 0 !HISTORY 2013-08-14 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2020-05-06 [Philo] File preparation for LDraw Parts Tracker
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
-// 
+// 0 !HISTORY 2024-05-29 [MagFors] Update description
+// 0 !HISTORY 2024-06-30 [OrionP] Official Update 2024-05
 // 
 // 1 40 0 -8 0 1 0 0 0 -2 0 0 0 -1 stud4a.dat
   [1,40,0,-8,0,1,0,0,0,-2,0,0,0,-1, ldraw_lib__stud4a()],

@@ -1,10 +1,10 @@
 use <../lib.scad>
 use <s/30138s01.scad>
 function ldraw_lib__30138() = [
-// 0 Minifig Headdress Indian Warbonnet
+// 0 Minifig Headdress American Indian Warbonnet
 // 0 Name: 30138.dat
 // 0 Author: Willy Tschager [Holly-Wood]
-// 0 !LDRAW_ORG Part UPDATE 2016-01
+// 0 !LDRAW_ORG Part UPDATE 2024-05
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -12,14 +12,15 @@ function ldraw_lib__30138() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS american nativ, chief, chieftain, leader, set 5317, set 5392
+// 0 !KEYWORDS chief, chieftain, leader, Native American, set 5317, set 5392
 // 0 !KEYWORDS set 5923, set 6709, set 6746, set 6763, set 6766, tyee, west
 // 0 !KEYWORDS western, wild west
 // 
 // 0 !HISTORY 2013-08-14 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2016-03-14 [Holly-Wood] File preparation for LDraw Parts Tracker
 // 0 !HISTORY 2016-12-31 [PTadmin] Official Update 2016-01
-// 
+// 0 !HISTORY 2024-06-10 [OrionP] Update description and keywords
+// 0 !HISTORY 2024-06-30 [OrionP] Official Update 2024-05
 // 
 // 3 16 0 -5.086 -12.935 1.426 -4.931 -12.866 0 -11.056 -10.363
   [3,16,0,-5.086,-12.935,1.426,-4.931,-12.866,0,-11.056,-10.363],

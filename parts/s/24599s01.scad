@@ -8,18 +8,16 @@ use <../../p/4-4edge.scad>
 use <../../p/4-4ring3.scad>
 use <../../p/48/1-8cyli.scad>
 use <../../p/48/1-8edge.scad>
-use <../../p/48/1-8ring3.scad>
-use <../../p/48/tm08o2500.scad>
 use <../../p/7-8cyli.scad>
 use <../../p/7-8edge.scad>
 use <../../p/rect.scad>
 use <../../p/rect3.scad>
 use <../../p/stud4a.scad>
 function ldraw_lib__s__24599s01() = [
-// 0 ~Brick  5 x  5 x  1 Corner Round with Curved Top - Half
+// 0 ~Brick  5 x  5 x  1 Corner Round with Curved Top - Half without Patternable Faces
 // 0 Name: s\24599s01.dat
 // 0 Author: Magnus Forsberg [MagFors]
-// 0 !LDRAW_ORG Subpart UPDATE 2020-01
+// 0 !LDRAW_ORG Subpart UPDATE 2024-04
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -29,12 +27,10 @@ function ldraw_lib__s__24599s01() = [
 // 0 !HISTORY 2016-12-31 [PTadmin] Official Update 2016-01
 // 0 !HISTORY 2020-01-23 [MagFors] Used mixed-mode torus primitive
 // 0 !HISTORY 2020-06-28 [PTadmin] Official Update 2020-01
+// 0 !HISTORY 2021-02-20 [Sirio] Removed patternable faces
+// 0 !HISTORY 2024-05-28 [OrionP] Official Update 2024-04
 // 
 // 
-// 1 16 0 20 0 80 0 0 0 -80 0 0 0 80 48\tm08o2500.dat
-  [1,16,0,20,0,80,0,0,0,-80,0,0,0,80, ldraw_lib__48__tm08o2500()],
-// 1 16 0 0 0 20 0 0 0 1 0 0 0 20 48\1-8ring3.dat
-  [1,16,0,0,0,20,0,0,0,1,0,0,0,20, ldraw_lib__48__1_8ring3()],
 // 1 16 0 0 0 60 0 0 0 1 0 0 0 60 48\1-8edge.dat
   [1,16,0,0,0,60,0,0,0,1,0,0,0,60, ldraw_lib__48__1_8edge()],
 // 0 BFC INVERTNEXT

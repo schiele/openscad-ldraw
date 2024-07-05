@@ -3,21 +3,23 @@ use <../p/1-4cyli.scad>
 use <../p/4-4disc.scad>
 use <s/973s01.scad>
 function ldraw_lib__973pc11() = [
-// 0 Minifig Torso with Necklace and Fringe Pattern
+// 0 Minifig Torso with American Indian Necklace and Fringe Pattern
 // 0 Name: 973pc11.dat
 // 0 Author: Willy Tschager [Holly-Wood]
-// 0 !LDRAW_ORG Part UPDATE 2014-02
+// 0 !LDRAW_ORG Part UPDATE 2024-05
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS american native, collectible minifigure, indian, series 1
-// 0 !KEYWORDS tribal hunter, western, wild west
+// 0 !KEYWORDS Bricklink 973pb0657c01, Brickowl 814360, CMF, collectible minifigure
+// 0 !KEYWORDS Rebrickable 973c26h01pr1533, series 1, Set 8683, tribal hunter
+// 0 !KEYWORDS western, wild west
 // 
 // 0 !HISTORY 2014-12-23 [PTadmin] Official Update 2014-02
-// 
+// 0 !HISTORY 2024-06-11 [Holly-Wood] Added keywords
+// 0 !HISTORY 2024-06-30 [OrionP] Official Update 2024-05
 // 
 // 0 // Blue
 // 

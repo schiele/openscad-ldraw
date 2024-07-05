@@ -3,10 +3,10 @@ use <../p/4-4cylo.scad>
 use <s/11609s01.scad>
 use <../p/stud4.scad>
 function ldraw_lib__11609() = [
-// 0 Plate  1 x  1 Round with Five-Pointed Star Top and Pin Hole Arm
+// 0 Plate  1 x  1 Round with Five-Pointed Star Top and Pin Hole
 // 0 Name: 11609.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2015-01
+// 0 !LDRAW_ORG Part UPDATE 2024-05
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -18,7 +18,8 @@ function ldraw_lib__11609() = [
 // 0 !HISTORY 2013-08-14 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2014-10-07 [Philo] File preparation for LDraw Parts Tracker
 // 0 !HISTORY 2015-10-11 [PTadmin] Official Update 2015-01
-// 
+// 0 !HISTORY 2024-04-12 [Philo] Corrected description
+// 0 !HISTORY 2024-06-30 [OrionP] Official Update 2024-05
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\11609s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__11609s01()],

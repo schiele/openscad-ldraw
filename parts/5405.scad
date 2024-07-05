@@ -1,0 +1,45 @@
+use <../lib.scad>
+use <../p/4-4cylo.scad>
+use <../p/4-4ering.scad>
+use <../p/4-4ring2.scad>
+use <../p/axl3hole.scad>
+use <s/5405s01.scad>
+function ldraw_lib__5405() = [
+// 0 Technic Gear  4 Knob 45°
+// 0 Name: 5405.dat
+// 0 Author: Philippe Hurbain [Philo]
+// 0 !LDRAW_ORG Part UPDATE 2024-05
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+// 
+// 0 BFC CERTIFY CCW
+  [0,"BFC","CERTIFY"],
+  [0,"BFC","CCW"],
+// 
+// 0 !KEYWORDS wheel
+// 
+// 0 !HISTORY 2024-06-30 [OrionP] Official Update 2024-05
+// 
+// 1 16 0 0 -10 1 0 0 0 0 -1 0 20 0 axl3hole.dat
+  [1,16,0,0,-10,1,0,0,0,0,-1,0,20,0, ldraw_lib__axl3hole()],
+// 1 16 0 0 -10 9 0 0 0 0 9 0 20 0 4-4cylo.dat
+  [1,16,0,0,-10,9,0,0,0,0,9,0,20,0, ldraw_lib__4_4cylo()],
+// 1 16 0 0 -10 3 0 0 0 0 3 0 1 0 4-4ring2.dat
+  [1,16,0,0,-10,3,0,0,0,0,3,0,1,0, ldraw_lib__4_4ring2()],
+// 1 16 0 0 10 3 0 0 0 0 3 0 -1 0 4-4ring2.dat
+  [1,16,0,0,10,3,0,0,0,0,3,0,-1,0, ldraw_lib__4_4ring2()],
+// 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\5405s01.dat
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__5405s01()],
+// 1 16 0 0 0 0 -1 0 1 0 0 0 0 1 s\5405s01.dat
+  [1,16,0,0,0,0,-1,0,1,0,0,0,0,1, ldraw_lib__s__5405s01()],
+// 1 16 0 0 0 -1 0 0 0 -1 0 0 0 1 s\5405s01.dat
+  [1,16,0,0,0,-1,0,0,0,-1,0,0,0,1, ldraw_lib__s__5405s01()],
+// 1 16 0 0 0 0 1 0 -1 0 0 0 0 1 s\5405s01.dat
+  [1,16,0,0,0,0,1,0,-1,0,0,0,0,1, ldraw_lib__s__5405s01()],
+// 1 16 0 0 -10 6 0 0 0 0 6 0 1 0 4-4ering.dat
+  [1,16,0,0,-10,6,0,0,0,0,6,0,1,0, ldraw_lib__4_4ering()],
+// 1 16 0 0 10 6 0 0 0 0 6 0 -1 0 4-4ering.dat
+  [1,16,0,0,10,6,0,0,0,0,6,0,-1,0, ldraw_lib__4_4ering()],
+];
+module ldraw_lib__5405(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__5405(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__5405(line=0.2);

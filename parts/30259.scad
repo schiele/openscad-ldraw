@@ -2,10 +2,10 @@ use <../lib.scad>
 use <../p/1-4chrd.scad>
 use <s/30259s01.scad>
 function ldraw_lib__30259() = [
-// 0 Roadsign Clip-on  2.2 x  2.667 Triangular
+// 0 Roadsign Clip-on  2.2 x  2.667 Triangular (Obsolete)
 // 0 Name: 30259.dat
 // 0 Author: John Van Zwieten [jvan]
-// 0 !LDRAW_ORG Part UPDATE 2022-04
+// 0 !LDRAW_ORG Part UPDATE 2024-05
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -22,7 +22,8 @@ function ldraw_lib__30259() = [
 // 0 !HISTORY 2010-12-31 [PTadmin] Official Update 2010-03
 // 0 !HISTORY 2020-12-30 [Cheenzo] Simplified front face with 1-4chrd
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04
-// 
+// 0 !HISTORY 2024-06-27 [Philo] Obsoleted for wrong clip position. Use 30259a instead
+// 0 !HISTORY 2024-06-30 [OrionP] Official Update 2024-05
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\30259s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30259s01()],

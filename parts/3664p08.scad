@@ -1,5 +1,5 @@
 use <../lib.scad>
-use <../p/2-4ering.scad>
+use <../p/48/2-4aring.scad>
 use <../p/48/2-4ndis.scad>
 use <../p/48/4-4ring4.scad>
 use <s/3664s01.scad>
@@ -7,7 +7,7 @@ function ldraw_lib__3664p08() = [
 // 0 Duplo Brick  2 x  2 x  2 Curved Top with Yellow Circled "2" Pattern
 // 0 Name: 3664p08.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
-// 0 !LDRAW_ORG Part UPDATE 2022-01
+// 0 !LDRAW_ORG Part UPDATE 2024-04
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -15,9 +15,12 @@ function ldraw_lib__3664p08() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Brick
-// 0 !KEYWORDS Airport, bricklink 3664pb07, dacta, Set 9156, Set 9976
+// 0 !KEYWORDS Airport, bricklink 3664pb07, Brickowl 109802, dacta
+// 0 !KEYWORDS Rebrickable 3664pr9992, Set 9156, Set 9976
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
+// 0 !HISTORY 2022-09-07 [RainbowDolphin] Made top semi-cylinder hi-res to comply with latest part regulations
+// 0 !HISTORY 2024-05-28 [OrionP] Official Update 2024-04
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3664s01.dat
@@ -26,8 +29,8 @@ function ldraw_lib__3664p08() = [
   [1,14,0,-24,-40,7,0,0,0,0,-7,0,1,0, ldraw_lib__48__4_4ring4()],
 // 1 16 0 -24 -40 -35 0 0 0 0 35 0 1 0 48\2-4ndis.dat
   [1,16,0,-24,-40,-35,0,0,0,0,35,0,1,0, ldraw_lib__48__2_4ndis()],
-// 1 16 0 -24 -40 40 0 0 0 0 -40 0 1 0 2-4ering.dat
-  [1,16,0,-24,-40,40,0,0,0,0,-40,0,1,0, ldraw_lib__2_4ering()],
+// 1 16 0 -24 -40 40 0 0 0 0 -40 0 1 0 48\2-4aring.dat
+  [1,16,0,-24,-40,40,0,0,0,0,-40,0,1,0, ldraw_lib__48__2_4aring()],
 // 4 14 -5.75 -37.25 -40 -7.25 -38 -40 -7.25 -28 -40 -6 -28.75 -40
   [4,14,-5.75,-37.25,-40,-7.25,-38,-40,-7.25,-28,-40,-6,-28.75,-40],
 // 4 14 -4.75 -36.25 -40 -5.75 -37.25 -40 -6 -28.75 -40 -4.75 -29.75 -40

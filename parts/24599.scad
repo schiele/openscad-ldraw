@@ -1,11 +1,13 @@
 use <../lib.scad>
+use <../p/48/1-4ring3.scad>
+use <../p/48/tm08o2500.scad>
 use <s/24599s01.scad>
 use <../p/stud4a.scad>
 function ldraw_lib__24599() = [
 // 0 Brick  5 x  5 x  1 Corner Round with Curved Top
 // 0 Name: 24599.dat
 // 0 Author: Magnus Forsberg [MagFors]
-// 0 !LDRAW_ORG Part UPDATE 2020-01
+// 0 !LDRAW_ORG Part UPDATE 2024-04
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -15,6 +17,8 @@ function ldraw_lib__24599() = [
 // 0 !HISTORY 2016-12-31 [PTadmin] Official Update 2016-01
 // 0 !HISTORY 2020-03-21 [cwdee] Update description
 // 0 !HISTORY 2020-06-28 [PTadmin] Official Update 2020-01
+// 0 !HISTORY 2021-02-20 [Sirio] Added patternable faces
+// 0 !HISTORY 2024-05-28 [OrionP] Official Update 2024-04
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 -1 s\24599s01.dat
@@ -44,6 +48,13 @@ function ldraw_lib__24599() = [
   [5,24,65.657,20,-65.657,65.657,11.931,-65.657,63.062,20,-67.391,67.391,20,-63.062],
 // 5 24 64.243 20 -64.243 64.243 9.537 -64.243 65.543 20 -62.296 62.296 20 -65.543
   [5,24,64.243,20,-64.243,64.243,9.537,-64.243,65.543,20,-62.296,62.296,20,-65.543],
+// 0 // Patternable faces
+// 1 16 0 20 0 80 0 0 0 -80 0 0 0 -80 48\tm08o2500.dat
+  [1,16,0,20,0,80,0,0,0,-80,0,0,0,-80, ldraw_lib__48__tm08o2500()],
+// 1 16 0 20 0 0 0 80 0 -80 0 -80 0 0 48\tm08o2500.dat
+  [1,16,0,20,0,0,0,80,0,-80,0,-80,0,0, ldraw_lib__48__tm08o2500()],
+// 1 16 0 0 0 0 0 20 0 1 0 -20 0 0 48\1-4ring3.dat
+  [1,16,0,0,0,0,0,20,0,1,0,-20,0,0, ldraw_lib__48__1_4ring3()],
 ];
 module ldraw_lib__24599(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
     makepoly(ldraw_lib__24599(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);

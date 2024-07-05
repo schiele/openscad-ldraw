@@ -2,20 +2,24 @@ use <../lib.scad>
 use <4515.scad>
 use <821472a.scad>
 function ldraw_lib__4515d01() = [
-// 0 Slope Brick 10  6 x  8 with Sticker Red and Blue "28" on Transparent Background
+// 0 Slope Brick 10  6 x  8 with Red and Blue "28" on Transparent Background Sticker
 // 0 Name: 4515d01.dat
 // 0 Author: Damien Roux [Darats]
-// 0 !LDRAW_ORG Shortcut UPDATE 2014-02
+// 0 !LDRAW_ORG Shortcut UPDATE 2024-05
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Set 5521
+// 0 !CATEGORY Sticker Shortcut
+// 0 !KEYWORDS Bricklink 4515pb001, Set 5521
 // 
 // 0 !HISTORY 2014-12-23 [PTadmin] Official Update 2014-02
-// 
+// 0 !HISTORY 2024-05-27 [OrionP] Change category to Sticker Shortcut
+// 0 !HISTORY 2024-05-28 [OrionP] Official Update 2024-04
+// 0 !HISTORY 2024-06-22 [MagFors] Update description
+// 0 !HISTORY 2024-06-30 [OrionP] Official Update 2024-05
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 4515.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4515()],

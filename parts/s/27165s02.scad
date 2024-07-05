@@ -1,25 +1,22 @@
 use <../../lib.scad>
 use <../../p/1-4chrd.scad>
 use <../../p/1-4cylo.scad>
-use <../../p/1-4ndis.scad>
 use <../../p/1-8chrd.scad>
-use <../../p/2-4cylo.scad>
 use <../../p/3-16chrd.scad>
 use <../../p/3-16cylo.scad>
-use <../../p/4-4disc.scad>
+use <../../p/4-4edge.scad>
 use <../../p/4-4ndis.scad>
-use <../../p/4-4ring2.scad>
 use <../../p/5-16chrd.scad>
 use <../../p/5-16cylo.scad>
+use <../../p/phandle1.scad>
 use <../../p/rect.scad>
 use <../../p/rect2a.scad>
-use <../../p/rect2p.scad>
 use <../../p/rect3.scad>
 function ldraw_lib__s__27165s02() = [
 // 0 ~Windscreen 11 x  4 x  2.333 Pointed with Handle without Outside Faces - Half
 // 0 Name: s\27165s02.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
-// 0 !LDRAW_ORG Subpart UPDATE 2018-01
+// 0 !LDRAW_ORG Subpart UPDATE 2024-04
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -27,10 +24,11 @@ function ldraw_lib__s__27165s02() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2018-01-30 [PTadmin] Official Update 2018-01
+// 0 !HISTORY 2021-11-04 [MagFors] used handle primitive
+// 0 !HISTORY 2024-05-28 [OrionP] Official Update 2024-04
 // 
 // 
 // 0 // Bottom
-// 
 // 1 16 40 52 -12 0 -4 0 2 0 0 0 0 2 1-4cylo.dat
   [1,16,40,52,-12,0,-4,0,2,0,0,0,0,2, ldraw_lib__1_4cylo()],
 // 4 16 40 54 -150 36 54 -148.7889 36 54 -12 40 54 -12
@@ -465,34 +463,10 @@ function ldraw_lib__s__27165s02() = [
   [5,24,1.9135,49.4391,-205.6195,1.9135,54,-205.6195,3.5355,54,-204.5355,0,54,-206],
 // 
 // 0 // Handle
-// 1 16 17 6 -8 0 0 -3 0 -1 0 -2 0 0 rect2p.dat
-  [1,16,17,6,-8,0,0,-3,0,-1,0,-2,0,0, ldraw_lib__rect2p()],
-// 1 16 17 6 -3 0 0 3 0 -1 0 3 0 0 rect2p.dat
-  [1,16,17,6,-3,0,0,3,0,-1,0,3,0,0, ldraw_lib__rect2p()],
-// 1 16 17 -2 -7.8015 3 0 0 0 1 0 0 0 2.1985 rect3.dat
-  [1,16,17,-2,-7.8015,3,0,0,0,1,0,0,0,2.1985, ldraw_lib__rect3()],
-// 1 16 20 0 0 0 -6 0 6 0 0 0 0 6 2-4cylo.dat
-  [1,16,20,0,0,0,-6,0,6,0,0,0,0,6, ldraw_lib__2_4cylo()],
-// 1 16 14 0 0 0 6 0 -6 0 0 0 0 -6 3-16cylo.dat
-  [1,16,14,0,0,0,6,0,-6,0,0,0,0,-6, ldraw_lib__3_16cylo()],
-// 1 16 17 -2.149 -5.5735 0 0 3 .149 1 0 -.0295 0 0 rect2p.dat
-  [1,16,17,-2.149,-5.5735,0,0,3,.149,1,0,-.0295,0,0, ldraw_lib__rect2p()],
-// 1 16 20 0 0 0 -1 0 6 0 0 0 0 -6 4-4disc.dat
-  [1,16,20,0,0,0,-1,0,6,0,0,0,0,-6, ldraw_lib__4_4disc()],
-// 1 16 20 0 0 0 -1 0 6 0 0 0 0 -6 1-4ndis.dat
-  [1,16,20,0,0,0,-1,0,6,0,0,0,0,-6, ldraw_lib__1_4ndis()],
-// 1 16 14 0 0 0 1 0 6 0 0 0 0 -6 1-4ndis.dat
-  [1,16,14,0,0,0,1,0,6,0,0,0,0,-6, ldraw_lib__1_4ndis()],
-// 1 16 14 0 0 0 1 0 2 0 0 0 0 2 4-4ring2.dat
-  [1,16,14,0,0,0,1,0,2,0,0,0,0,2, ldraw_lib__4_4ring2()],
-// 3 16 14 -2 -5.603 14 0 -6 14 -2 -10
-  [3,16,14,-2,-5.603,14,0,-6,14,-2,-10],
-// 4 16 14 6 -6 14 6 -10 14 -2 -10 14 0 -6
-  [4,16,14,6,-6,14,6,-10,14,-2,-10,14,0,-6],
-// 4 16 20 -2 -10 20 6 -10 20 6 -6 20 0 -6
-  [4,16,20,-2,-10,20,6,-10,20,6,-6,20,0,-6],
-// 3 16 20 -2 -10 20 0 -6 20 -2 -5.603
-  [3,16,20,-2,-10,20,0,-6,20,-2,-5.603],
+// 1 16 17 -2 0 -1 0 0 0 1 0 0 0 -1 phandle1.dat
+  [1,16,17,-2,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__phandle1()],
+// 1 16 14 0 0 0 1 0 4 0 0 0 0 -4 4-4edge.dat
+  [1,16,14,0,0,0,1,0,4,0,0,0,0,-4, ldraw_lib__4_4edge()],
 // 
 // 0 // Top Studs
 // 1 16 10 -2 -20 6 0 0 0 1 0 0 0 6 4-4ndis.dat

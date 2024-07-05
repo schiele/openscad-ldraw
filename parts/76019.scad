@@ -3,10 +3,10 @@ use <32051.scad>
 use <32052.scad>
 use <32053.scad>
 function ldraw_lib__76019() = [
-// 0 Technic Gear 24 Tooth Clutch with DkGray Center
+// 0 Technic Gear 24 Tooth Clutch with Dark Grey Centre
 // 0 Name: 76019.dat
 // 0 Author: Michael Heidemann [mikeheide]
-// 0 !LDRAW_ORG Shortcut UPDATE 2012-03
+// 0 !LDRAW_ORG Shortcut UPDATE 2024-04
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -19,6 +19,8 @@ function ldraw_lib__76019() = [
 // 0 !HISTORY 2010-02-03 [mikeheide] separated files and renumbered
 // 0 !HISTORY 2010-02-07 [PTadmin] Renamed from 60c01
 // 0 !HISTORY 2012-12-28 [PTadmin] Official Update 2012-03
+// 0 !HISTORY 2021-01-16 [cwdee] Update description
+// 0 !HISTORY 2024-05-28 [OrionP] Official Update 2024-04
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 32052.dat

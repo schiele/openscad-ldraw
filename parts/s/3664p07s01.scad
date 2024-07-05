@@ -1,10 +1,10 @@
 use <../../lib.scad>
-use <../../p/2-4ering.scad>
+use <../../p/48/2-4aring.scad>
 function ldraw_lib__s__3664p07s01() = [
 // 0 ~Duplo Brick  2 x  2 x  2 Curved Top with Eye Pattern on Both Sides - Side
 // 0 Name: s\3664p07s01.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
-// 0 !LDRAW_ORG Subpart UPDATE 2020-02
+// 0 !LDRAW_ORG Subpart UPDATE 2024-04
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -12,10 +12,12 @@ function ldraw_lib__s__3664p07s01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
+// 0 !HISTORY 2022-09-07 [RainbowDolphin] Made top semi-cylinder hi-res to comply with latest part regulations
+// 0 !HISTORY 2024-05-28 [OrionP] Official Update 2024-04
 // 
 // 
-// 1 16 0 -24 0 40 0 0 0 0 -40 0 1 0 2-4ering.dat
-  [1,16,0,-24,0,40,0,0,0,0,-40,0,1,0, ldraw_lib__2_4ering()],
+// 1 16 0 -24 0 40 0 0 0 0 -40 0 1 0 48\2-4aring.dat
+  [1,16,0,-24,0,40,0,0,0,0,-40,0,1,0, ldraw_lib__48__2_4aring()],
 // 
 // 4 0 20 -2 0 8.91 -6.59 0 8 -2 0 8.91 2.59 0
   [4,0,20,-2,0,8.91,-6.59,0,8,-2,0,8.91,2.59,0],

@@ -2,13 +2,14 @@ use <../lib.scad>
 use <../p/1-4chrd.scad>
 use <../p/1-4cyli.scad>
 use <../p/box3u12.scad>
-use <../p/logoporsl02.scad>
+use <../p/logo-porsche-box.scad>
+use <../p/logo-porsche-text.scad>
 use <s/6148328ps01.scad>
 function ldraw_lib__6148328i() = [
 // 0 Sticker  1.8 x  3.8 with Red "STOP" with Arrow on Black Background
 // 0 Name: 6148328i.dat
 // 0 Author: Massimo Maso [Sirio]
-// 0 !LDRAW_ORG Part UPDATE 2024-02
+// 0 !LDRAW_ORG Part UPDATE 2024-05
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -16,18 +17,21 @@ function ldraw_lib__6148328i() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS 917K, 919, Bricklink 75876stk01, Brickowl 852010, Hybrid, Pit Lane
-// 0 !KEYWORDS Porsche, Rebrickable 26357, Speed Champions, set 75876
+// 0 !KEYWORDS Porsche, Rebrickable 26357, set 75876, Speed Champions
 // 
 // 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
-// 
+// 0 !HISTORY 2024-06-20 [OrionP] Update logo primitive
+// 0 !HISTORY 2024-06-30 [OrionP] Official Update 2024-05
 // 
 // 0 // Subpart
 // 
 // 1 0 -31.5 -.25 0 0 0 -.32 0 1 0 .32 0 0 s\6148328ps01.dat
   [1,0,-31.5,-.25,0,0,0,-.32,0,1,0,.32,0,0, ldraw_lib__s__6148328ps01()],
 // 0 // Logo primitive
-// 1 0 -31.5 -.25 0 0 0 -.32 0 1 0 .32 0 0 logoporsl02.dat
-  [1,0,-31.5,-.25,0,0,0,-.32,0,1,0,.32,0,0, ldraw_lib__logoporsl02()],
+// 1 15 -31.5 -.25 0 0 0 -.32 0 1 0 .32 0 0 logo-porsche-text.dat
+  [1,15,-31.5,-.25,0,0,0,-.32,0,1,0,.32,0,0, ldraw_lib__logo_porsche_text()],
+// 1 0 -31.5 -.25 0 0 0 -.32 0 1 0 .32 0 0 logo-porsche-box.dat
+  [1,0,-31.5,-.25,0,0,0,-.32,0,1,0,.32,0,0, ldraw_lib__logo_porsche_box()],
 // 0 // Primitives
 // 1 16 -36.5 0 16.5 -1.5 0 0 0 -1 0 0 0 1.5 1-4chrd.dat
   [1,16,-36.5,0,16.5,-1.5,0,0,0,-1,0,0,0,1.5, ldraw_lib__1_4chrd()],

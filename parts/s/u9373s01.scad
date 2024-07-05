@@ -10,10 +10,10 @@ use <../../p/rect3.scad>
 use <../../p/stud2a.scad>
 use <../../p/stud3.scad>
 function ldraw_lib__s__u9373s01() = [
-// 0 ~Electric Technic Motor Back without Centre Pin Hole
+// 0 ~Electric Technic Motor Back without Centre Pin Hole (Obsolete)
 // 0 Name: s\u9373s01.dat
 // 0 Author: Magnus Forsberg [MagFors]
-// 0 !LDRAW_ORG Subpart UPDATE 2020-03
+// 0 !LDRAW_ORG Subpart UPDATE 2024-05
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -21,7 +21,8 @@ function ldraw_lib__s__u9373s01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
-// 
+// 0 !HISTORY 2024-03-15 [Holly-Wood] Obsoleted due to bad geometry
+// 0 !HISTORY 2024-06-30 [OrionP] Official Update 2024-05
 // 
 // 4 16 22 2 40 22 50 40 20 40 40 20 16 40
   [4,16,22,2,40,22,50,40,20,40,40,20,16,40],

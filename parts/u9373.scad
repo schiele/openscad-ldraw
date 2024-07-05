@@ -8,10 +8,10 @@ use <../p/box5.scad>
 use <../p/rect3.scad>
 use <s/u9373s01.scad>
 function ldraw_lib__u9373() = [
-// 0 ~Electric Technic Motor Back with Centre Pin Hole
+// 0 ~Electric Technic Motor Back with Centre Pin Hole (Obsolete)
 // 0 Name: u9373.dat
 // 0 Author: Chris Dee [cwdee]
-// 0 !LDRAW_ORG Part UPDATE 2020-03
+// 0 !LDRAW_ORG Part UPDATE 2024-05
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -26,7 +26,8 @@ function ldraw_lib__u9373() = [
 // 0 !HISTORY 2013-04-09 [MagFors] bfc'd, removed t-junctions
 // 0 !HISTORY 2018-03-31 [MagFors] renamed from s/6216mb, subfiled for parts with/without centre hole
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
-// 
+// 0 !HISTORY 2024-03-15 [Holly-Wood] Obsoleted due to bad geometry
+// 0 !HISTORY 2024-06-30 [OrionP] Official Update 2024-05
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\u9373s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__u9373s01()],

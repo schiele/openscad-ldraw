@@ -1,0 +1,34 @@
+use <../lib.scad>
+use <../p/box5-12.scad>
+function ldraw_lib__4584252f() = [
+// 0 Sticker  0.8 x  7.8 with Red and White Vertical Stripes
+// 0 Name: 4584252f.dat
+// 0 Author: Gerald Lasser [GeraldLasser]
+// 0 !LDRAW_ORG Part UPDATE 2024-04
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+// 
+// 0 BFC CERTIFY CCW
+  [0,"BFC","CERTIFY"],
+  [0,"BFC","CCW"],
+// 
+// 0 !KEYWORDS Set 7936
+// 
+// 0 !HISTORY 2024-05-28 [OrionP] Official Update 2024-04
+// 
+// 
+// 1 16 0 -.25 0 78 0 0 0 .25 0 0 0 8 box5-12.dat
+  [1,16,0,-.25,0,78,0,0,0,.25,0,0,0,8, ldraw_lib__box5_12()],
+// 4 15 78 -.25 -8 78 -.25 8 60 -.25 8 60 -.25 -8
+  [4,15,78,-.25,-8,78,-.25,8,60,-.25,8,60,-.25,-8],
+// 4 15 -60 -.25 -8 -60 -.25 8 -78 -.25 8 -78 -.25 -8
+  [4,15,-60,-.25,-8,-60,-.25,8,-78,-.25,8,-78,-.25,-8],
+// 4 4 -60 -.25 8 -60 -.25 -8 -20 -.25 -8 -20 -.25 8
+  [4,4,-60,-.25,8,-60,-.25,-8,-20,-.25,-8,-20,-.25,8],
+// 4 4 20 -.25 -8 60 -.25 -8 60 -.25 8 20 -.25 8
+  [4,4,20,-.25,-8,60,-.25,-8,60,-.25,8,20,-.25,8],
+// 4 15 -20 -.25 -8 20 -.25 -8 20 -.25 8 -20 -.25 8
+  [4,15,-20,-.25,-8,20,-.25,-8,20,-.25,8,-20,-.25,8],
+];
+module ldraw_lib__4584252f(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__4584252f(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__4584252f(line=0.2);

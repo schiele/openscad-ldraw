@@ -1,10 +1,10 @@
 use <../lib.scad>
 use <s/30138s01.scad>
 function ldraw_lib__30138p01() = [
-// 0 Minifig Headdress Indian Warbonnet with Coloured Feathers Pattern
+// 0 Minifig Headdress American Indian Warbonnet with Coloured Feathers Pattern
 // 0 Name: 30138p01.dat
 // 0 Author: Willy Tschager [Holly-Wood]
-// 0 !LDRAW_ORG Part UPDATE 2018-02
+// 0 !LDRAW_ORG Part UPDATE 2024-05
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -12,7 +12,8 @@ function ldraw_lib__30138p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS american nativ, chief, chieftain, leader, set 5317, set 5392
+// 0 !KEYWORDS Bricklink 30138pb01, Brickowl 765016, chief, chieftain, leader
+// 0 !KEYWORDS Native American, Rebrickable 30138pr0001, set 5317, set 5392
 // 0 !KEYWORDS set 5923, set 6709, set 6746, set 6763, set 6766, tyee, west
 // 0 !KEYWORDS western, wild west
 // 
@@ -21,7 +22,8 @@ function ldraw_lib__30138p01() = [
 // 0 !HISTORY 2016-12-31 [PTadmin] Official Update 2016-01
 // 0 !HISTORY 2018-03-25 [cwdee] Correct description spelling
 // 0 !HISTORY 2018-12-08 [PTadmin] Official Update 2018-02
-// 
+// 0 !HISTORY 2024-06-10 [OrionP] Update description and keywords
+// 0 !HISTORY 2024-06-30 [OrionP] Official Update 2024-05
 // 
 // 0 // Pattern
 // 0 // Red
