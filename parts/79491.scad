@@ -19,10 +19,10 @@ use <../p/rect3.scad>
 use <../p/stud.scad>
 use <../p/stud3.scad>
 function ldraw_lib__79491() = [
-// 0 Plate  2 x  2 Corner Round
+// 0 Plate  2 x  2 with Corner Round
 // 0 Name: 79491.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
-// 0 !LDRAW_ORG Part UPDATE 2024-02
+// 0 !LDRAW_ORG Part UPDATE 2024-06
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -30,7 +30,8 @@ function ldraw_lib__79491() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
-// 
+// 0 !HISTORY 2024-07-16 [Jaco] Update description
+// 0 !HISTORY 2024-07-29 [OrionP] Official Update 2024-06
 // 
 // 0 // Bottom
 // 4 16 10 8 30 6 8 26 -6 8 26 -10 8 30

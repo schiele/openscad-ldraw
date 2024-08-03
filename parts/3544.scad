@@ -6,15 +6,18 @@ function ldraw_lib__3544() = [
 // 0 Wing  3 x  8 Left
 // 0 Name: 3544.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
-// 0 !LDRAW_ORG Part UPDATE 2024-05
+// 0 !LDRAW_ORG Part UPDATE 2024-06
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !HISTORY 2024-06-30 [OrionP] Official Update 2024-05
+// 0 !KEYWORDS wedge plate
 // 
+// 0 !HISTORY 2024-06-30 [OrionP] Official Update 2024-05
+// 0 !HISTORY 2024-07-16 [Jaco] Add keywords
+// 0 !HISTORY 2024-07-29 [OrionP] Official Update 2024-06
 // 
 // 1 16 -20 0 0 0 0 -1 0 1 0 1 0 0 stug-1x8.dat
   [1,16,-20,0,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__stug_1x8()],

@@ -6,10 +6,10 @@ use <../p/rect2p.scad>
 use <../p/rect3.scad>
 use <../p/stud.scad>
 function ldraw_lib__4190() = [
-// 0 Plate  2 x  2 Slope Inverted Corner
+// 0 Plate  2 x  2 with Slope Inverted Corner
 // 0 Name: 4190.dat
 // 0 Author: Magnus Forsberg [MagFors]
-// 0 !LDRAW_ORG Part UPDATE 2023-07
+// 0 !LDRAW_ORG Part UPDATE 2024-06
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -17,7 +17,8 @@ function ldraw_lib__4190() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2023-12-31 [OrionP] Official Update 2023-07
-// 
+// 0 !HISTORY 2024-07-16 [Jaco] Update description
+// 0 !HISTORY 2024-07-29 [OrionP] Official Update 2024-06
 // 
 // 1 16 0 0 0 0 0 1 0 1 0 -1 0 0 stud.dat
   [1,16,0,0,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__stud()],

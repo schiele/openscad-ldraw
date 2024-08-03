@@ -1,12 +1,11 @@
 use <../lib.scad>
-use <4694.scad>
+use <4694c04.scad>
 use <4695.scad>
-use <4713.scad>
 function ldraw_lib__4694c01_f3() = [
 // 0 Technic Pneumatic Valve (Complete - Up Position)
 // 0 Name: 4694c01-f3.dat
 // 0 Author: Chris Dee [cwdee]
-// 0 !LDRAW_ORG Shortcut UPDATE 2017-01
+// 0 !LDRAW_ORG Shortcut UPDATE 2024-06
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -17,15 +16,14 @@ function ldraw_lib__4694c01_f3() = [
 // 0 !HISTORY 2009-12-29 [PTadmin] Official Update 2009-03
 // 0 !HISTORY 2016-08-21 [PTadmin] Renamed from 4694c03
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
+// 0 !HISTORY 2020-06-23 [SLS] Use mechanical assemblies
+// 0 !HISTORY 2024-07-29 [OrionP] Official Update 2024-06
 // 
 // 
-// 1 16 0 0 0 1 0 0 0 1 0 0 0 1 4694.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4694()],
-// 1 16 -10 0 -2 1 0 0 0 1 0 0 0 1 4713.dat
-  [1,16,-10,0,-2,1,0,0,0,1,0,0,0,1, ldraw_lib__4713()],
+// 1 16 0 0 0 1 0 0 0 1 0 0 0 1 4694c04.dat
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4694c04()],
 // 1 0 0 26 -9 1 0 0 0 0.866 0.5 0 -0.5 0.866 4695.dat
   [1,0,0,26,-9,1,0,0,0,0.866,0.5,0,-0.5,0.866, ldraw_lib__4695()],
-// 0 //
 ];
 module ldraw_lib__4694c01_f3(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
     makepoly(ldraw_lib__4694c01_f3(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);

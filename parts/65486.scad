@@ -14,10 +14,10 @@ use <../p/stug4-1x3.scad>
 use <../p/stug4-1x5.scad>
 use <../p/stug4-5x5.scad>
 function ldraw_lib__65486() = [
-// 0 Plate  9 x  9 Heart Shape
+// 0 Plate  9 x  9 with Heart Shape
 // 0 Name: 65486.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
-// 0 !LDRAW_ORG Part UPDATE 2024-05
+// 0 !LDRAW_ORG Part UPDATE 2024-06
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -28,7 +28,8 @@ function ldraw_lib__65486() = [
 // 
 // 0 !HISTORY 2020-12-11 [RainbowDolphin] Created based on 11213 by Magnus Forsberg [MagFors] and 46342 by Gerald Lasser [GeraldLasser]
 // 0 !HISTORY 2024-06-30 [OrionP] Official Update 2024-05
-// 
+// 0 !HISTORY 2024-07-16 [Jaco] Update description
+// 0 !HISTORY 2024-07-29 [OrionP] Official Update 2024-06
 // 
 // 0 // Studs
 // 1 16 30 0 -30 1 0 0 0 1 0 0 0 1 stug-6x6.dat

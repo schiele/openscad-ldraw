@@ -5,19 +5,20 @@ function ldraw_lib__88695() = [
 // 0 Bar  0.5L with Faceted Spike 1L
 // 0 Name: 88695.dat
 // 0 Author: Rolf Osterthun [Rolf]
-// 0 !LDRAW_ORG Part UPDATE 2011-02
+// 0 !LDRAW_ORG Part UPDATE 2024-06
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Ben 10, Horn Chromastone
+// 0 !KEYWORDS Barb, Ben 10, Chromastone, crystal, Horn, Set 8411
 // 
 // 0 !HISTORY 2011-10-16 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2011-10-17 [Rolf] File preparation for LDraw Parts Tracker
 // 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02
-// 
+// 0 !HISTORY 2024-07-16 [notmaster] changed keywords
+// 0 !HISTORY 2024-07-29 [OrionP] Official Update 2024-06
 // 
 // 1 16 0 -1.1925 6.814 -3.25 0 0 0 0 -1.1925 0 -1 0 rect.dat
   [1,16,0,-1.1925,6.814,-3.25,0,0,0,0,-1.1925,0,-1,0, ldraw_lib__rect()],

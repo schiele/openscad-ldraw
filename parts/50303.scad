@@ -5,17 +5,20 @@ function ldraw_lib__50303() = [
 // 0 Wing  7 x  6 with Stud Notches
 // 0 Name: 50303.dat
 // 0 Author: Michael Heidemann [mikeheide]
-// 0 !LDRAW_ORG Part UPDATE 2010-02
+// 0 !LDRAW_ORG Part UPDATE 2024-06
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS wedge plate
+// 
 // 0 !HISTORY 2007-08-25 {LEGO Universe Team} Original part shape
 // 0 !HISTORY 2008-04-06 [mikeheide] File preparation for LDraw Parts Tracker
 // 0 !HISTORY 2010-07-05 [PTadmin] Official Update 2010-02
-// 
+// 0 !HISTORY 2024-07-16 [Jaco] Add keywords
+// 0 !HISTORY 2024-07-29 [OrionP] Official Update 2024-06
 // 
 // 3 16 -36.16 8 17.3 -36.88 8 15.41 -38.38 8 16.04
   [3,16,-36.16,8,17.3,-36.88,8,15.41,-38.38,8,16.04],

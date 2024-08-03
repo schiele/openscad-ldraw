@@ -5,17 +5,19 @@ function ldraw_lib__98138p0c() = [
 // 0 Tile  1 x  1 Round with Eye Closed Pattern
 // 0 Name: 98138p0c.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2015-01
+// 0 !LDRAW_ORG Part UPDATE 2024-06
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Eyelash
+// 0 !KEYWORDS Bricklink 98138pb028, Eyelash, Set 11021, Set 40382, Set 40711
+// 0 !KEYWORDS Set 41433
 // 
 // 0 !HISTORY 2015-10-11 [PTadmin] Official Update 2015-01
-// 
+// 0 !HISTORY 2024-07-08 [GeraldLasser] Added Keywords
+// 0 !HISTORY 2024-07-29 [OrionP] Official Update 2024-06
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\98138s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01()],

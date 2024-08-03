@@ -1,19 +1,19 @@
 use <../lib.scad>
-use <../p/2-4ndis.scad>
-use <../p/4-4ering.scad>
-use <../p/4-4rin23.scad>
-use <../p/4-4rin24.scad>
-use <../p/4-4rin25.scad>
-use <../p/4-4rin26.scad>
-use <../p/4-4ring27.scad>
-use <../p/4-4ring4.scad>
-use <../p/4-4ring7.scad>
+use <../p/48/1-4ring23.scad>
+use <../p/48/2-4ndis.scad>
+use <../p/48/4-4aring.scad>
+use <../p/48/4-4ring24.scad>
+use <../p/48/4-4ring25.scad>
+use <../p/48/4-4ring26.scad>
+use <../p/48/4-4ring27.scad>
+use <../p/48/4-4ring4.scad>
+use <../p/48/4-4ring7.scad>
 use <s/3664s01.scad>
 function ldraw_lib__3664p05() = [
 // 0 Duplo Brick  2 x  2 x  2 Curved Top with Black Clock Hands 2:30 Pattern
 // 0 Name: 3664p05.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
-// 0 !LDRAW_ORG Part UPDATE 2020-03
+// 0 !LDRAW_ORG Part UPDATE 2024-06
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -21,31 +21,40 @@ function ldraw_lib__3664p05() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Brick
-// 0 !KEYWORDS bricklink 3664pb08, Farm, set 045-1, set 2650-1
+// 0 !KEYWORDS bricklink 3664pb08, Brickowl 393549, Farm, Rebrickable 3664pr9995
+// 0 !KEYWORDS set 045-1, set 2650-1
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
-// 
+// 0 !HISTORY 2022-09-07 [RainbowDolphin] Made top semi-cylinder hi-res to comply with latest part regulations
+// 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
+// 0 !HISTORY 2024-07-29 [OrionP] Official Update 2024-06
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3664s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3664s01()],
-// 1 16 0 -24 -40 23 0 0 0 0 -23 0 1 0 4-4ering.dat
-  [1,16,0,-24,-40,23,0,0,0,0,-23,0,1,0, ldraw_lib__4_4ering()],
-// 1 0 0 -24 -40 1 0 0 0 0 -1 0 1 0 4-4rin23.dat
-  [1,0,0,-24,-40,1,0,0,0,0,-1,0,1,0, ldraw_lib__4_4rin23()],
-// 1 0 0 -24 -40 1 0 0 0 0 -1 0 1 0 4-4rin24.dat
-  [1,0,0,-24,-40,1,0,0,0,0,-1,0,1,0, ldraw_lib__4_4rin24()],
-// 1 16 0 -24 -40 1 0 0 0 0 -1 0 1 0 4-4rin25.dat
-  [1,16,0,-24,-40,1,0,0,0,0,-1,0,1,0, ldraw_lib__4_4rin25()],
-// 1 16 0 -24 -40 1 0 0 0 0 -1 0 1 0 4-4rin26.dat
-  [1,16,0,-24,-40,1,0,0,0,0,-1,0,1,0, ldraw_lib__4_4rin26()],
-// 1 0 0 -24 -40 1 0 0 0 0 -1 0 1 0 4-4ring27.dat
-  [1,0,0,-24,-40,1,0,0,0,0,-1,0,1,0, ldraw_lib__4_4ring27()],
-// 1 16 0 -24 -40 4 0 0 0 0 -4 0 1 0 4-4ring7.dat
-  [1,16,0,-24,-40,4,0,0,0,0,-4,0,1,0, ldraw_lib__4_4ring7()],
-// 1 16 0 -24 -40 8 0 0 0 0 -8 0 1 0 4-4ring4.dat
-  [1,16,0,-24,-40,8,0,0,0,0,-8,0,1,0, ldraw_lib__4_4ring4()],
-// 1 16 0 -24 -40 -40 0 0 0 0 40 0 1 0 2-4ndis.dat
-  [1,16,0,-24,-40,-40,0,0,0,0,40,0,1,0, ldraw_lib__2_4ndis()],
+// 1 16 0 -24 -40 23 0 0 0 0 -23 0 1 0 48\4-4aring.dat
+  [1,16,0,-24,-40,23,0,0,0,0,-23,0,1,0, ldraw_lib__48__4_4aring()],
+// 1 0 0 -24 -40 1 0 0 0 0 -1 0 1 0 48\1-4ring23.dat
+  [1,0,0,-24,-40,1,0,0,0,0,-1,0,1,0, ldraw_lib__48__1_4ring23()],
+// 1 0 0 -24 -40 0 0 -1 -1 0 0 0 1 0 48\1-4ring23.dat
+  [1,0,0,-24,-40,0,0,-1,-1,0,0,0,1,0, ldraw_lib__48__1_4ring23()],
+// 1 0 0 -24 -40 -1 0 0 0 0 1 0 1 0 48\1-4ring23.dat
+  [1,0,0,-24,-40,-1,0,0,0,0,1,0,1,0, ldraw_lib__48__1_4ring23()],
+// 1 0 0 -24 -40 0 0 1 1 0 0 0 1 0 48\1-4ring23.dat
+  [1,0,0,-24,-40,0,0,1,1,0,0,0,1,0, ldraw_lib__48__1_4ring23()],
+// 1 0 0 -24 -40 1 0 0 0 0 -1 0 1 0 48\4-4ring24.dat
+  [1,0,0,-24,-40,1,0,0,0,0,-1,0,1,0, ldraw_lib__48__4_4ring24()],
+// 1 16 0 -24 -40 1 0 0 0 0 -1 0 1 0 48\4-4ring25.dat
+  [1,16,0,-24,-40,1,0,0,0,0,-1,0,1,0, ldraw_lib__48__4_4ring25()],
+// 1 16 0 -24 -40 1 0 0 0 0 -1 0 1 0 48\4-4ring26.dat
+  [1,16,0,-24,-40,1,0,0,0,0,-1,0,1,0, ldraw_lib__48__4_4ring26()],
+// 1 0 0 -24 -40 1 0 0 0 0 -1 0 1 0 48\4-4ring27.dat
+  [1,0,0,-24,-40,1,0,0,0,0,-1,0,1,0, ldraw_lib__48__4_4ring27()],
+// 1 16 0 -24 -40 4 0 0 0 0 -4 0 1 0 48\4-4ring7.dat
+  [1,16,0,-24,-40,4,0,0,0,0,-4,0,1,0, ldraw_lib__48__4_4ring7()],
+// 1 16 0 -24 -40 8 0 0 0 0 -8 0 1 0 48\4-4ring4.dat
+  [1,16,0,-24,-40,8,0,0,0,0,-8,0,1,0, ldraw_lib__48__4_4ring4()],
+// 1 16 0 -24 -40 -40 0 0 0 0 40 0 1 0 48\2-4ndis.dat
+  [1,16,0,-24,-40,-40,0,0,0,0,40,0,1,0, ldraw_lib__48__2_4ndis()],
 // 4 16 40 24 -40 40 16 -40 -40 16 -40 -40 24 -40
   [4,16,40,24,-40,40,16,-40,-40,16,-40,-40,24,-40],
 // 4 0 -1.5 -24 -40 -1.39 -24.57 -40 -2.77 -25.15 -40 -3 -24 -40
@@ -628,6 +637,7 @@ function ldraw_lib__3664p05() = [
   [4,16,0,-47,-40,-8.8021,-45.2497,-40,-1.41,-43.91,-40,-0.77,-44.35,-40],
 // 3 16 0 -47 -40 -0.77 -44.35 -40 0 -44.5 -40
   [3,16,0,-47,-40,-0.77,-44.35,-40,0,-44.5,-40],
+// 
 ];
 module ldraw_lib__3664p05(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
     makepoly(ldraw_lib__3664p05(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);

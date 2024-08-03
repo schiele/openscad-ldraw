@@ -2,10 +2,10 @@ use <../lib.scad>
 use <s/3960s01.scad>
 use <s/3960s05.scad>
 function ldraw_lib__3960ph0() = [
-// 0 Dish 4 x 4 Inverted with White "HOGWARTS EXPRESS" on Red Background with Metallic Gold Frame and White "5972" Pattern
+// 0 Dish  4 x  4 Inverted with White "HOGWARTS EXPRESS" on Red Background with Metallic Gold Frame and White "5972" Pattern
 // 0 Name: 3960ph0.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
-// 0 !LDRAW_ORG Part UPDATE 2024-05
+// 0 !LDRAW_ORG Part UPDATE 2024-06
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -15,6 +15,8 @@ function ldraw_lib__3960ph0() = [
 // 0 !KEYWORDS Bricklink 3960pb077, Harry Potter, Set 10132, Set 4708, Set 4758
 // 
 // 0 !HISTORY 2024-06-30 [OrionP] Official Update 2024-05
+// 0 !HISTORY 2024-07-02 [Holly-Wood] Fixed title
+// 0 !HISTORY 2024-07-29 [OrionP] Official Update 2024-06
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3960s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3960s01()],

@@ -1,9 +1,9 @@
 use <../../lib.scad>
 function ldraw_lib__s__3960psbs02() = [
-// 0 ~Dish 4 x 4 Inverted with SW Dejarik Hologame Board Pattern - Dots
+// 0 ~Dish  4 x  4 Inverted with SW Dejarik Hologame Board Pattern - Dots
 // 0 Name: s\3960psbs02.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
-// 0 !LDRAW_ORG Subpart UPDATE 2022-03
+// 0 !LDRAW_ORG Subpart UPDATE 2024-06
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -11,7 +11,8 @@ function ldraw_lib__s__3960psbs02() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2022-05-07 [PTadmin] Official Update 2022-03
-// 
+// 0 !HISTORY 2024-07-02 [Holly-Wood] Fixed title
+// 0 !HISTORY 2024-07-29 [OrionP] Official Update 2024-06
 // 
 // 4 16 30.3329 4.3793 3.1881 31.0291 4.6342 3.2613 30.9481 4.611 3.5221 30.7734 4.5525 3.7321
   [4,16,30.3329,4.3793,3.1881,31.0291,4.6342,3.2613,30.9481,4.611,3.5221,30.7734,4.5525,3.7321],

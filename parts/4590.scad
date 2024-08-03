@@ -24,10 +24,10 @@ use <../p/stud3.scad>
 use <../p/stud4a.scad>
 use <../p/stug-1x2.scad>
 function ldraw_lib__4590() = [
-// 0 Plate  1 x  4 Offset
+// 0 Plate  1 x  2 with  2 Offset Hollow Studs
 // 0 Name: 4590.dat
 // 0 Author: James Jessiman
-// 0 !LDRAW_ORG Part UPDATE 2020-03
+// 0 !LDRAW_ORG Part UPDATE 2024-06
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -43,7 +43,8 @@ function ldraw_lib__4590() = [
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
 // 0 !HISTORY 2020-06-04 [Sirio] Reshaped and updated the use of primitives: removed ringr.dat or ringrr.dat, introduced use of boxes and 3-8cylo.dat, merged some triangles to quads, reduced overalpping surfaces
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
-// 
+// 0 !HISTORY 2024-07-16 [Jaco] Update description
+// 0 !HISTORY 2024-07-29 [OrionP] Official Update 2024-06
 // 
 // 0 // Primitives
 // 1 16 0 4 0 1 0 0 0 -1 0 0 0 1 stud3.dat

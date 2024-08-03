@@ -6,15 +6,18 @@ function ldraw_lib__1745() = [
 // 0 Plate  1 x  2 Half Round with 1 Centre Stud
 // 0 Name: 1745.dat
 // 0 Author: Magnus Forsberg [MagFors]
-// 0 !LDRAW_ORG Part UPDATE 2023-02
+// 0 !LDRAW_ORG Part UPDATE 2024-06
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !HISTORY 2023-04-17 [OrionP] Official Update 2023-02
+// 0 !KEYWORDS jumper, offset, spacer
 // 
+// 0 !HISTORY 2023-04-17 [OrionP] Official Update 2023-02
+// 0 !HISTORY 2024-07-16 [Jaco] Add keywords
+// 0 !HISTORY 2024-07-29 [OrionP] Official Update 2024-06
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\1748s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__1748s01()],

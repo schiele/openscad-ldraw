@@ -5,10 +5,10 @@ use <s/44375s01.scad>
 use <s/44375s03.scad>
 use <../p/stug-2x2.scad>
 function ldraw_lib__44375bp03() = [
-// 0 Dish 6 x 6 Inverted Solid Studs with Silver and Gold Lines and Chinese Logogram for Silver and Gold Pattern
+// 0 Dish  6 x  6 Inverted Solid Studs with Silver and Gold Lines and Chinese Logogram for Silver and Gold Pattern
 // 0 Name: 44375bp03.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
-// 0 !LDRAW_ORG Part UPDATE 2023-04
+// 0 !LDRAW_ORG Part UPDATE 2024-06
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -19,7 +19,8 @@ function ldraw_lib__44375bp03() = [
 // 0 !KEYWORDS Set 80015
 // 
 // 0 !HISTORY 2023-08-25 [OrionP] Official Update 2023-04
-// 
+// 0 !HISTORY 2024-07-02 [Holly-Wood] Fixed title
+// 0 !HISTORY 2024-07-29 [OrionP] Official Update 2024-06
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\44375s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__44375s01()],
