@@ -1,28 +1,29 @@
 use <../lib.scad>
-use <u9363.scad>
+use <u9363p01.scad>
 use <u9364c01.scad>
 function ldraw_lib__54696p01() = [
-// 0 Electric Powered Up Medium Angular Motor with Medium Azure Back and Hub
+// 0 Electric Powered Up Medium Angular Motor with Medium Azure Back and Hub Pattern
 // 0 Name: 54696p01.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Shortcut UPDATE 2020-03
+// 0 !LDRAW_ORG Shortcut UPDATE 2024-08
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Spike Prime
+// 0 !KEYWORDS Set 45678, Spike Prime
 // 
 // 0 !HISTORY 2020-06-28 [PTadmin] Official Update 2020-01
 // 0 !HISTORY 2020-12-27 [PTadmin] Update description and rename from 54696
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
-// 
+// 0 !HISTORY 2024-06-12 [Cheenzo] Updated to use u9363p01
+// 0 !HISTORY 2024-09-30 [OrionP] Official Update 2024-08
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 u9364c01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9364c01()],
-// 1 322 0 -50 0 1 0 0 0 1 0 0 0 1 u9363.dat
-  [1,322,0,-50,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9363()],
+// 1 322 0 -50 0 1 0 0 0 1 0 0 0 1 u9363p01.dat
+  [1,322,0,-50,0,1,0,0,0,1,0,0,0,1, ldraw_lib__u9363p01()],
 ];
 module ldraw_lib__54696p01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
     makepoly(ldraw_lib__54696p01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);

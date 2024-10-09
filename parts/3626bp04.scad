@@ -7,12 +7,15 @@ function ldraw_lib__3626bp04() = [
 // 0 Minifig Head with Standard Grin and Sunglasses Pattern
 // 0 Name: 3626bp04.dat
 // 0 Author: Chris Dee [cwdee]
-// 0 !LDRAW_ORG Part UPDATE 2018-02
+// 0 !LDRAW_ORG Part UPDATE 2024-07
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
+// 
+// 0 !KEYWORDS Bricklink 3626bp04, Brickowl 348075, Rebrickable 3626bpr0006
+// 0 !KEYWORDS Set 2150, set 4556, Set 9371
 // 
 // 0 !HISTORY 1999-05-24 [PTadmin] Official Update 1999-04
 // 0 !HISTORY 2003-11-02 [hmick] corrected overlapping quads
@@ -22,7 +25,8 @@ function ldraw_lib__3626bp04() = [
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
 // 0 !HISTORY 2017-10-15 [MagFors] Modified with WINDZ for BFC compliance
 // 0 !HISTORY 2018-12-08 [PTadmin] Official Update 2018-02
-// 
+// 0 !HISTORY 2024-08-18 [Lego-Manfred] Bricklink, Rebrickable reference and sets added
+// 0 !HISTORY 2024-08-26 [OrionP] Official Update 2024-07
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3626bs02.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626bs02()],

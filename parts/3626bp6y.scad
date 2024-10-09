@@ -6,19 +6,21 @@ function ldraw_lib__3626bp6y() = [
 // 0 Minifig Head with Green Brain and Yellow Mouth Pattern
 // 0 Name: 3626bp6y.dat
 // 0 Author: Nils Schmidt [BlackBrick89]
-// 0 !LDRAW_ORG Part UPDATE 2011-02
+// 0 !LDRAW_ORG Part UPDATE 2024-08
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Invaders, Space, UFO
+// 0 !KEYWORDS Bricklink 3626bpx76, Brickowl 779362, Invaders
+// 0 !KEYWORDS Rebrickable 3626bpr0032, set 2543, set 2847, set 6975, Space, UFO
 // 
 // 0 !HISTORY 2010-12-31 [PTadmin] Official Update 2010-03
 // 0 !HISTORY 2011-09-02 [BlackBrick89] Corrected description and conditional lines
 // 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02
-// 
+// 0 !HISTORY 2024-08-29 [Lego-Manfred] Reference and sets added
+// 0 !HISTORY 2024-09-30 [OrionP] Official Update 2024-08
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3626bs02.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626bs02()],

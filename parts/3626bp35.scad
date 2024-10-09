@@ -7,15 +7,19 @@ function ldraw_lib__3626bp35() = [
 // 0 Minifig Head with Messy Hair, Moustache and Stubble Pattern
 // 0 Name: 3626bp35.dat
 // 0 Author: Daniel Goerner [TK-949]
-// 0 !LDRAW_ORG Part UPDATE 2012-03
+// 0 !LDRAW_ORG Part UPDATE 2024-07
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !HISTORY 2012-12-28 [PTadmin] Official Update 2012-03
+// 0 !KEYWORDS Bricklink 3626bpx13, Brickowl 674493, Rebrickable 3626bpr0018
+// 0 !KEYWORDS set 6755, Set 6764, set 7142
 // 
+// 0 !HISTORY 2012-12-28 [PTadmin] Official Update 2012-03
+// 0 !HISTORY 2024-08-21 [Lego-Manfred] References and sets added
+// 0 !HISTORY 2024-08-26 [OrionP] Official Update 2024-07
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3626bs02.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626bs02()],

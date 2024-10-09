@@ -7,17 +7,19 @@ function ldraw_lib__3626bp68() = [
 // 0 Minifig Head with Silver Sunglasses and Red Headset Pattern
 // 0 Name: 3626bp68.dat
 // 0 Author: Damien Roux [Darats]
-// 0 !LDRAW_ORG Part UPDATE 2014-02
+// 0 !LDRAW_ORG Part UPDATE 2024-07
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Roboforce, Unitron
+// 0 !KEYWORDS Bricklink 3626bpx157, Brickowl 792002, Rebrickable 3626bpr0038
+// 0 !KEYWORDS Roboforce, Set 2154, set 6705, Set 6991, Unitron
 // 
 // 0 !HISTORY 2014-12-23 [PTadmin] Official Update 2014-02
-// 
+// 0 !HISTORY 2024-08-21 [Lego-Manfred] References and sets added
+// 0 !HISTORY 2024-08-26 [OrionP] Official Update 2024-07
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3626bs02.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626bs02()],

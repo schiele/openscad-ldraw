@@ -11,14 +11,16 @@ function ldraw_lib__3626bp3k() = [
 // 0 Minifig Head with Islander White/Blue Painted Face Pattern
 // 0 Name: 3626bp3k.dat
 // 0 Author: Andy Westrate [westrate]
-// 0 !LDRAW_ORG Part UPDATE 2018-02
+// 0 !LDRAW_ORG Part UPDATE 2024-08
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Islander King, islanders, mime, natives, whiteface
+// 0 !KEYWORDS Bricklink 3626bp3k, Brickowl 33409, Islander King, islanders, mime
+// 0 !KEYWORDS natives, Rebrickable 3626bpr0014, set 6236, set 6256, set 6262
+// 0 !KEYWORDS whiteface
 // 
 // 0 !CMDLINE -c14
 // 
@@ -29,7 +31,8 @@ function ldraw_lib__3626bp3k() = [
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
 // 0 !HISTORY 2017-10-15 [MagFors] Modified with WINDZ for BFC compliance
 // 0 !HISTORY 2018-12-08 [PTadmin] Official Update 2018-02
-// 
+// 0 !HISTORY 2024-08-21 [Lego-Manfred] References and sets added
+// 0 !HISTORY 2024-09-30 [OrionP] Official Update 2024-08
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3626bs02.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626bs02()],

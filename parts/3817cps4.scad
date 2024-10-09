@@ -1,10 +1,10 @@
 use <../lib.scad>
 use <s/3817cs01.scad>
 function ldraw_lib__3817cps4() = [
-// 0 Minifig Leg Left with SW Clone Trooper Black, Light Bluish Gray Markings and Knee Pad Pattern
+// 0 Minifig Leg Left with SW Clone Trooper Black, Light Bluish Grey Markings and Knee Pad Pattern
 // 0 Name: 3817cps4.dat
 // 0 Author: Evert-Jan Boer [ejboer]
-// 0 !LDRAW_ORG Part UPDATE 2023-03
+// 0 !LDRAW_ORG Part UPDATE 2024-08
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 !HELP Move down 12 units to align with hips
@@ -16,12 +16,13 @@ function ldraw_lib__3817cps4() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickowl 1312204, Rebrickable 970c27pr2143, Set 75337, Set 75340
-// 0 !KEYWORDS Set 75390, Star Wars, Set 40558, Bricklink 970c00pb1283
+// 0 !KEYWORDS Bricklink 970c00pb1283, Brickowl 1312204, Rebrickable 970c27pr2143
+// 0 !KEYWORDS Set 40558, Set 75337, Set 75340, Set 75390, Star Wars
 // 
 // 0 !HISTORY 2023-05-15 [MagFors] Adapted to c-version leg
 // 0 !HISTORY 2023-06-24 [OrionP] Official Update 2023-03
-// 
+// 0 !HISTORY 2024-08-28 [Cheenzo] Corrected spelling of Grey
+// 0 !HISTORY 2024-09-30 [OrionP] Official Update 2024-08
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3817cs01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3817cs01()],

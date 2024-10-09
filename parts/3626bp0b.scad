@@ -8,17 +8,21 @@ function ldraw_lib__3626bp0b() = [
 // 0 Minifig Head with Teeth, Pupils, Brown Eyebrows Pattern
 // 0 Name: 3626bp0b.dat
 // 0 Author: J.C. Tchang [tchang]
-// 0 !LDRAW_ORG Part UPDATE 2014-02
+// 0 !LDRAW_ORG Part UPDATE 2024-07
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS Bricklink 3626bpb0273, Brickowl 102053, Rebrickable 3626bpr0498
+// 0 !KEYWORDS Set 5489, set 7567, set 7937
+// 
 // 0 !HISTORY 2012-06-06 [tchang] New part
 // 0 !HISTORY 2014-06-29 [MagFors] removed unnecessary cond-lines
 // 0 !HISTORY 2014-12-23 [PTadmin] Official Update 2014-02
-// 
+// 0 !HISTORY 2024-08-18 [Lego-Manfred] Bricklink, Rebrickable reference and sets added
+// 0 !HISTORY 2024-08-26 [OrionP] Official Update 2024-07
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3626bs02.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626bs02()],

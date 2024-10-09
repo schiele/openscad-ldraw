@@ -7,19 +7,21 @@ function ldraw_lib__3626bpar() = [
 // 0 Minifig Head Alien with Large Dark Blue Eyes, Turtle Mouth and Gills Pattern
 // 0 Name: 3626bpar.dat
 // 0 Author: Willy Tschager [Holly-Wood]
-// 0 !LDRAW_ORG Part UPDATE 2022-01
+// 0 !LDRAW_ORG Part UPDATE 2024-08
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Atlantis, emperor, Portal, set 8078
+// 0 !KEYWORDS Atlantis, Bricklink 3626bpb0451, Brickowl 727547, emperor, Portal
+// 0 !KEYWORDS Rebrickable 3626bpr0678, set 8078
 // 
 // 0 !CMDLINE -c378
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
-// 
+// 0 !HISTORY 2024-08-29 [Lego-Manfred] Reference added
+// 0 !HISTORY 2024-09-30 [OrionP] Official Update 2024-08
 // 
 // 0 // Head
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3626bs02.dat

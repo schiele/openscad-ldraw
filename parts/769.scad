@@ -13,18 +13,18 @@ use <../p/4-4edge.scad>
 use <../p/4-8sphe.scad>
 use <../p/rect2p.scad>
 function ldraw_lib__769() = [
-// 0 Minifig Helmet Visor Space
+// 0 ~Minifig Helmet Visor Space (Obsolete)
 // 0 Name: 769.dat
 // 0 Author: Donald Sutter [technog]
-// 0 !LDRAW_ORG Part UPDATE 2024-02
+// 0 !LDRAW_ORG Part UPDATE 2024-07
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
-// 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Apollo, Dome, Launch Command, Space Shuttle, astronaut, space port
+// 0 !CATEGORY Obsolete
+// 0 !KEYWORDS Apollo, astronaut, Dome, Launch Command, space port, Space Shuttle
 // 
 // 0 !CMDLINE -c334
 // 
@@ -35,6 +35,8 @@ function ldraw_lib__769() = [
 // 0 !HISTORY 2012-12-28 [PTadmin] Official Update 2012-03
 // 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
 // 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
+// 0 !HISTORY 2024-08-02 [MagFors] Obsoleted due to bad geometry
+// 0 !HISTORY 2024-08-26 [OrionP] Official Update 2024-07
 // 
 // 1 16 0 12 -3 0 0 1 0.44 -1 0 -1 0 0 1-4ring15.dat
   [1,16,0,12,-3,0,0,1,0.44,-1,0,-1,0,0, ldraw_lib__1_4ring15()],
@@ -132,23 +134,22 @@ function ldraw_lib__769() = [
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 5 -2.3 0 0 -15 -15 0 0 0 6 0 1-4cyls.dat
   [1,16,0,5,-2.3,0,0,-15,-15,0,0,0,6,0, ldraw_lib__1_4cyls()],
-// 4 16 -15 6.5 0 -15 10.195 1.531 -15 12 -3 -15 5 -3
-  [4,16,-15,6.5,0,-15,10.195,1.531,-15,12,-3,-15,5,-3],
-// 4 16 15 6.5 0 15 5 -3 15 12 -3 15 10.195 1.531
-  [4,16,15,6.5,0,15,5,-3,15,12,-3,15,10.195,1.531],
-// 4 16 -17 10.195 1.531 -17 6.5 0 -17 5 -3 -17 12 -3
-  [4,16,-17,10.195,1.531,-17,6.5,0,-17,5,-3,-17,12,-3],
-// 4 16 17 6.5 0 17 10.195 1.531 17 12 -3 17 5 -3
-  [4,16,17,6.5,0,17,10.195,1.531,17,12,-3,17,5,-3],
-// 3 16 -17 5 3.695 -17 5 -3 -17 6.5 0
-  [3,16,-17,5,3.695,-17,5,-3,-17,6.5,0],
-// 3 16 -15 5 -3 -15 5 3.695 -15 6.5 0
-  [3,16,-15,5,-3,-15,5,3.695,-15,6.5,0],
-// 3 16 15 5 3.695 15 5 -3 15 6.5 0
-  [3,16,15,5,3.695,15,5,-3,15,6.5,0],
-// 3 16 17 5 -3 17 5 3.695 17 6.5 0
-  [3,16,17,5,-3,17,5,3.695,17,6.5,0],
-// 0
+// 4 16 -15 5 -3 -15 12 -3 -15 10.195 1.531 -15 6.5 0
+  [4,16,-15,5,-3,-15,12,-3,-15,10.195,1.531,-15,6.5,0],
+// 4 16 15 10.195 1.531 15 12 -3 15 5 -3 15 6.5 0
+  [4,16,15,10.195,1.531,15,12,-3,15,5,-3,15,6.5,0],
+// 4 16 -17 12 -3 -17 5 -3 -17 6.5 0 -17 10.195 1.531
+  [4,16,-17,12,-3,-17,5,-3,-17,6.5,0,-17,10.195,1.531],
+// 4 16 17 5 -3 17 12 -3 17 10.195 1.531 17 6.5 0
+  [4,16,17,5,-3,17,12,-3,17,10.195,1.531,17,6.5,0],
+// 3 16 -17 6.5 0 -17 5 -3 -17 5 3.695
+  [3,16,-17,6.5,0,-17,5,-3,-17,5,3.695],
+// 3 16 -15 6.5 0 -15 5 3.695 -15 5 -3
+  [3,16,-15,6.5,0,-15,5,3.695,-15,5,-3],
+// 3 16 15 6.5 0 15 5 -3 15 5 3.695
+  [3,16,15,6.5,0,15,5,-3,15,5,3.695],
+// 3 16 17 6.5 0 17 5 3.695 17 5 -3
+  [3,16,17,6.5,0,17,5,3.695,17,5,-3],
 ];
 module ldraw_lib__769(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
     makepoly(ldraw_lib__769(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);

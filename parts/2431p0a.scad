@@ -3,10 +3,10 @@ use <../p/1-4chrd.scad>
 use <../p/1-4ndis.scad>
 use <s/2431s01.scad>
 function ldraw_lib__2431p0a() = [
-// 0 Tile  1 x  4 with Dark Bluish Gray Stripe Pattern
+// 0 Tile  1 x  4 with Dark Bluish Grey Stripe Pattern
 // 0 Name: 2431p0a.dat
 // 0 Author: Florent Faramond [Makou]
-// 0 !LDRAW_ORG Part UPDATE 2024-06
+// 0 !LDRAW_ORG Part UPDATE 2024-08
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -17,6 +17,8 @@ function ldraw_lib__2431p0a() = [
 // 0 !KEYWORDS Set 71374
 // 
 // 0 !HISTORY 2024-07-29 [OrionP] Official Update 2024-06
+// 0 !HISTORY 2024-08-28 [Cheenzo] Corrected spelling of Grey
+// 0 !HISTORY 2024-09-30 [OrionP] Official Update 2024-08
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2431s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2431s01()],

@@ -7,15 +7,19 @@ function ldraw_lib__3626bp0f() = [
 // 0 Minifig Head with Angry Eyebrows and Tense Mouth Pattern
 // 0 Name: 3626bp0f.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2016-01
+// 0 !LDRAW_ORG Part UPDATE 2024-07
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !HISTORY 2016-12-31 [PTadmin] Official Update 2016-01
+// 0 !KEYWORDS Bricklink 3626bpx302, Brickowl 947517, Rebrickable 3626bpr0411
+// 0 !KEYWORDS Set 7016, Set 7041, Set 7097
 // 
+// 0 !HISTORY 2016-12-31 [PTadmin] Official Update 2016-01
+// 0 !HISTORY 2024-08-18 [Lego-Manfred] Bricklink, Rebrickable reference and sets added
+// 0 !HISTORY 2024-08-26 [OrionP] Official Update 2024-07
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3626bs02.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626bs02()],

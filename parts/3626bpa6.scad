@@ -16,15 +16,16 @@ function ldraw_lib__3626bpa6() = [
 // 0 Minifig Head Female with Brown Hair, Eyelashes, and Lipstick Pattern
 // 0 Name: 3626bpa6.dat
 // 0 Author: George Barnes [glbarnes]
-// 0 !LDRAW_ORG Part UPDATE 2023-06
+// 0 !LDRAW_ORG Part UPDATE 2024-07
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Adventurers, Bricklink 3626bp6a, curly hair, face, Gail Storm
-// 0 !KEYWORDS Pippen Read, set 1270, set 5978, smile, Studios
+// 0 !KEYWORDS Adventurers, Bricklink 3626bpa6, Brickowl 928484, curly hair, face
+// 0 !KEYWORDS Gail Storm, Pippen Read, Rebrickable 3626bpr0098, Set 1271, set 5978
+// 0 !KEYWORDS smile, Studios
 // 
 // 0 !CMDLINE -c14
 // 
@@ -35,6 +36,8 @@ function ldraw_lib__3626bpa6() = [
 // 0 !HISTORY 2018-01-30 [PTadmin] Official Update 2018-01
 // 0 !HISTORY 2023-11-06 [MagFors] Update description, added keywords
 // 0 !HISTORY 2023-11-19 [OrionP] Official Update 2023-06
+// 0 !HISTORY 2024-08-18 [Lego-Manfred] Bricklink reference corrected, Rebrickable reference added
+// 0 !HISTORY 2024-08-26 [OrionP] Official Update 2024-07
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3626bs02.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626bs02()],

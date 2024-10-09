@@ -3,10 +3,10 @@ use <../../p/1-4chrd.scad>
 use <../../p/3-16ndis.scad>
 use <../../p/4-4ndis.scad>
 function ldraw_lib__s__4865p01b() = [
-// 0 ~Pattern Train Logo - Background
+// 0 ~Pattern Train Logo - Background (Obsolete)
 // 0 Name: s\4865p01b.dat
 // 0 Author: Steffen [Steffen]
-// 0 !LDRAW_ORG Subpart UPDATE 2022-04
+// 0 !LDRAW_ORG Subpart UPDATE 2024-08
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -25,7 +25,8 @@ function ldraw_lib__s__4865p01b() = [
 // 0 !HISTORY 2020-11-09 [UR] Minor Dimensional Adjustments (1200 dpi scan)
 // 0 !HISTORY 2020-11-09 [UR] Polygon Reduction with Other Primitives
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04
-// 
+// 0 !HISTORY 2024-09-02 [Holly-Wood] Obsoleted after the geometry has been moved to a prim
+// 0 !HISTORY 2024-09-30 [OrionP] Official Update 2024-08
 // 
 // 1 16 0 0 0 0 0 4 4 0 0 0 1 0 3-16ndis.dat
   [1,16,0,0,0,0,0,4,4,0,0,0,1,0, ldraw_lib__3_16ndis()],
@@ -77,7 +78,6 @@ function ldraw_lib__s__4865p01b() = [
   [4,16,-3.6956,-1.5308,0,-4,-4,0,-6.8,-.95,0,-3.88,-.95,0],
 // 4 16 -6.8 .95 0 -4 4 0 -3.6956 1.5308 0 -3.88 .95 0
   [4,16,-6.8,.95,0,-4,4,0,-3.6956,1.5308,0,-3.88,.95,0],
-// 
 ];
 module ldraw_lib__s__4865p01b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
     makepoly(ldraw_lib__s__4865p01b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);

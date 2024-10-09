@@ -10,15 +10,16 @@ function ldraw_lib__3626bp3e() = [
 // 0 Minifig Head with Wiry Moustache, Goatee and Eyebrows Pattern
 // 0 Name: 3626bp3e.dat
 // 0 Author: Andy Westrate [westrate]
-// 0 !LDRAW_ORG Part UPDATE 2017-01
+// 0 !LDRAW_ORG Part UPDATE 2024-07
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS arched eyebrows, handlebar moustache, Imperial Armada, Pirates
-// 0 !KEYWORDS pointed eyebrows, Spaniard
+// 0 !KEYWORDS arched eyebrows, Bricklink 3626bpx82, Brickowl 238470
+// 0 !KEYWORDS handlebar moustache, Imperial Armada, Pirates, pointed eyebrows
+// 0 !KEYWORDS Rebrickable 3626bpr0016, set 6204, set 6281, set 6291, Spaniard
 // 
 // 0 !CMDLINE -c14
 // 
@@ -29,7 +30,8 @@ function ldraw_lib__3626bp3e() = [
 // 0 !HISTORY 2009-09-03 [PTadmin] Official Update 2009-02
 // 0 !HISTORY 2017-11-02 [MagFors] used torus primitives
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
-// 
+// 0 !HISTORY 2024-08-21 [Lego-Manfred] References and sets added
+// 0 !HISTORY 2024-08-26 [OrionP] Official Update 2024-07
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3626bs02.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626bs02()],

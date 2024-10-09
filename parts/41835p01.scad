@@ -6,10 +6,10 @@ use <s/41835s01.scad>
 use <s/41835s03.scad>
 use <../p/stud4a.scad>
 function ldraw_lib__41835p01() = [
-// 0 Animal Bird Songbird with Black Eyes and Bright Light Orange Beak
+// 0 Animal Bird Songbird with Black Eyes and Bright Light Orange Beak Pattern
 // 0 Name: 41835p01.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2022-02
+// 0 !LDRAW_ORG Part UPDATE 2024-08
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -19,7 +19,8 @@ function ldraw_lib__41835p01() = [
 // 0 !KEYWORDS Bricklink 41835pb01, Set 10270, Set 10278, Set 21318
 // 
 // 0 !HISTORY 2022-03-06 [PTadmin] Official Update 2022-02
-// 
+// 0 !HISTORY 2024-08-30 [Philo] Added missing "Pattern"
+// 0 !HISTORY 2024-09-30 [OrionP] Official Update 2024-08
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\41835s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__41835s01()],

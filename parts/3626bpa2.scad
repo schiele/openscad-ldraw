@@ -7,16 +7,17 @@ function ldraw_lib__3626bpa2() = [
 // 0 Minifig Head with Adventurers Mummy Pattern
 // 0 Name: 3626bpa2.dat
 // 0 Author: Franklin W. Cain [fwcain]
-// 0 !LDRAW_ORG Part UPDATE 2018-01
+// 0 !LDRAW_ORG Part UPDATE 2024-08
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS ancient, archeology, Cairo, corpse, crypt, Egypt, egyptian, eyebrows
-// 0 !KEYWORDS face, Giza, King Tut, Nile, Pharaoh, pyramid, ruins, scars, sutures
-// 0 !KEYWORDS undead, walking dead
+// 0 !KEYWORDS ancient, archeology, Bricklink 3626bpa2, Brickowl 773999, Cairo
+// 0 !KEYWORDS corpse, crypt, Egypt, egyptian, eyebrows, face, Giza, King Tut, Nile
+// 0 !KEYWORDS Pharaoh, pyramid, Rebrickable 3626bpr0046, ruins, scars, set 5958
+// 0 !KEYWORDS set 5978, set 5988, sutures, undead, walking dead
 // 
 // 0 !CMDLINE -c7
 // 
@@ -27,7 +28,8 @@ function ldraw_lib__3626bpa2() = [
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
 // 0 !HISTORY 2017-10-28 [MagFors] bfc'd, reworked pattern
 // 0 !HISTORY 2018-01-30 [PTadmin] Official Update 2018-01
-// 
+// 0 !HISTORY 2024-08-29 [Lego-Manfred] Reference and sets added
+// 0 !HISTORY 2024-09-30 [OrionP] Official Update 2024-08
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3626bs02.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626bs02()],

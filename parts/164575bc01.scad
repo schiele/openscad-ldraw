@@ -3,7 +3,7 @@ function ldraw_lib__164575bc01() = [
 // 0 Sticker Train Front  2 x  6 Stripe Right (Formed)
 // 0 Name: 164575bc01.dat
 // 0 Author: Max Martin Richter [MMR1988]
-// 0 !LDRAW_ORG Part UPDATE 2014-01
+// 0 !LDRAW_ORG Part UPDATE 2024-07
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -11,7 +11,8 @@ function ldraw_lib__164575bc01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2014-06-21 [PTadmin] Official Update 2014-01
-// 
+// 0 !HISTORY 2024-06-01 [Blechtaler] added fold edgelines
+// 0 !HISTORY 2024-08-26 [OrionP] Official Update 2024-07
 // 
 // 4 15 -20 -0.25 -12 0.1036 -0.25 -12 0.1036 -0.25 12 -20 -0.25 12
   [4,15,-20,-0.25,-12,0.1036,-0.25,-12,0.1036,-0.25,12,-20,-0.25,12],
@@ -34,6 +35,11 @@ function ldraw_lib__164575bc01() = [
   [3,16,14.3189,13.9654,12,0,0,-12,14.1421,14.1421,12],
 // 3 16 14.3189 13.9654 12 0.1036 -0.25 -12 0 0 -12
   [3,16,14.3189,13.9654,12,0.1036,-0.25,-12,0,0,-12],
+// 
+// 2 24 .1036 -.25 -12 .1036 -.25 12
+  [2,24,.1036,-.25,-12,.1036,-.25,12],
+// 2 24 0 0 -12 0 0 12
+  [2,24,0,0,-12,0,0,12],
 ];
 module ldraw_lib__164575bc01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
     makepoly(ldraw_lib__164575bc01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);

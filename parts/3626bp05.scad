@@ -8,12 +8,15 @@ function ldraw_lib__3626bp05() = [
 // 0 Minifig Head with Standard Grin and Eyebrows Pattern
 // 0 Name: 3626bp05.dat
 // 0 Author: Chris Dee [cwdee]
-// 0 !LDRAW_ORG Part UPDATE 2014-02
+// 0 !LDRAW_ORG Part UPDATE 2024-07
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
+// 
+// 0 !KEYWORDS Bricklink 3626bp05, Brickowl 565802, Rebrickable 3626bpr0007
+// 0 !KEYWORDS Set 3407, Set 3426, Set 4560
 // 
 // 0 !HISTORY 1999-05-24 [PTadmin] Official Update 1999-04
 // 0 !HISTORY 2003-11-02 [hmick] corrected overlapping quads
@@ -23,7 +26,8 @@ function ldraw_lib__3626bp05() = [
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
 // 0 !HISTORY 2014-02-13 [smr] moved half face from 3626bp05 to s\3626p05s01.dat
 // 0 !HISTORY 2014-12-23 [PTadmin] Official Update 2014-02
-// 
+// 0 !HISTORY 2024-08-18 [Lego-Manfred] Bricklink, Rebrickable reference and sets added
+// 0 !HISTORY 2024-08-26 [OrionP] Official Update 2024-07
 // 
 // 0 // replacing s\3626bs00.dat
 // 

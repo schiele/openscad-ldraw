@@ -3,18 +3,22 @@ use <../p/3-4cyli.scad>
 use <s/3626bs02.scad>
 use <../p/t04o6250.scad>
 function ldraw_lib__3626bp0g() = [
-// 0 Minifig Head with Brown Eyebrows, White Pupils, Lopsided Smile with Dimple Pattern
+// 0 Minifig Head with Reddish Brown Eyebrows, White Pupils, Lopsided Smile with Black Dimple Pattern
 // 0 Name: 3626bp0g.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2016-01
+// 0 !LDRAW_ORG Part UPDATE 2024-07
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !HISTORY 2016-12-31 [PTadmin] Official Update 2016-01
+// 0 !KEYWORDS Bricklink 3626bpb0278, Brickowl 598883, Rebrickable 3626cpr0499
+// 0 !KEYWORDS Set 10245, set 60011, set 60053
 // 
+// 0 !HISTORY 2016-12-31 [PTadmin] Official Update 2016-01
+// 0 !HISTORY 2024-08-21 [Lego-Manfred] References and sets added
+// 0 !HISTORY 2024-08-26 [OrionP] Official Update 2024-07
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3626bs02.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626bs02()],

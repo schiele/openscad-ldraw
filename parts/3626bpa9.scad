@@ -13,15 +13,16 @@ function ldraw_lib__3626bpa9() = [
 // 0 Minifig Head with Villainous Glasses & Black Facial Hair Pattern
 // 0 Name: 3626bpa9.dat
 // 0 Author: George Barnes [glbarnes]
-// 0 !LDRAW_ORG Part UPDATE 2017-01
+// 0 !LDRAW_ORG Part UPDATE 2024-08
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Adventurers, beard, eyebrows, face, Lord Sam Sinister, moustache
-// 0 !KEYWORDS Slyboots, villian
+// 0 !KEYWORDS Adventurers, beard, Bricklink 3626bpx62, Brickowl 296326, eyebrows
+// 0 !KEYWORDS face, Lord Sam Sinister, moustache, Rebrickable 3626bpr0040
+// 0 !KEYWORDS Set 5938, set 5958, set 5988, Slyboots, villian
 // 
 // 0 !CMDLINE -c14
 // 
@@ -30,7 +31,8 @@ function ldraw_lib__3626bpa9() = [
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
 // 0 !HISTORY 2017-10-30 [MagFors] Modified with WINDZ for BFC compliance
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
-// 
+// 0 !HISTORY 2024-08-29 [Lego-Manfred] Reference and sets added
+// 0 !HISTORY 2024-09-30 [OrionP] Official Update 2024-08
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3626bs02.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626bs02()],

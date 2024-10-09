@@ -7,19 +7,21 @@ function ldraw_lib__3626bpw9() = [
 // 0 Minifig Head with Moustache, Stubble and Bald Hair Part Pattern
 // 0 Name: 3626bpw9.dat
 // 0 Author: Willy Tschager [Holly-Wood]
-// 0 !LDRAW_ORG Part UPDATE 2018-02
+// 0 !LDRAW_ORG Part UPDATE 2024-07
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bank, buccaneer, corsair, cowboys, freebooter, gold city junction
-// 0 !KEYWORDS Pirates, set 6232, set 6249, set 6250, set 6281, set 6289, set 6290
-// 0 !KEYWORDS set 6296, set 6765, western, wild west
+// 0 !KEYWORDS Bank, Bricklink 3626bpx108, Brickowl 123820, buccaneer, corsair
+// 0 !KEYWORDS cowboys, freebooter, gold city junction, Pirates
+// 0 !KEYWORDS Rebrickable 3626bpr0298, set 6232, set 6249, set 6250, set 6281
+// 0 !KEYWORDS set 6289, set 6290, set 6296, set 6765, western, wild west
 // 
 // 0 !HISTORY 2018-12-08 [PTadmin] Official Update 2018-02
-// 
+// 0 !HISTORY 2024-08-21 [Lego-Manfred] References added
+// 0 !HISTORY 2024-08-26 [OrionP] Official Update 2024-07
 // 
 // 0 // Pattern
 // 0 // Black

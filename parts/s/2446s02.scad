@@ -1,9 +1,9 @@
 use <../../lib.scad>
 function ldraw_lib__s__2446s02() = [
-// 0 ~Minifig Helmet Modern Patternable Area Half
+// 0 ~Minifig Helmet Standard Patternable Area Half (Obsolete)
 // 0 Name: s\2446s02.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Subpart UPDATE 2014-02
+// 0 !LDRAW_ORG Subpart UPDATE 2024-07
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -12,10 +12,10 @@ function ldraw_lib__s__2446s02() = [
 // 
 // 0 !HISTORY 2014-12-02 [Philo] Subparted from 2446 design
 // 0 !HISTORY 2014-12-23 [PTadmin] Official Update 2014-02
-// 
+// 0 !HISTORY 2024-07-22 [MagFors] Obsolete due to bad geometry
+// 0 !HISTORY 2024-08-26 [OrionP] Official Update 2024-07
 // 
 // 0 // Top
-// 
 // 5 24 6.123 -8.282 0 0 -9.5 0 5.657 -8.282 2.343 5.657 -8.282 -2.87
   [5,24,6.123,-8.282,0,0,-9.5,0,5.657,-8.282,2.343,5.657,-8.282,-2.87],
 // 5 24 0 -9.5 0 5.657 -8.282 2.343 6.123 -8.282 0 4.33 -8.282 4.33

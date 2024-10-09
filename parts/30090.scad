@@ -4,24 +4,25 @@ use <../p/1-4edge.scad>
 use <../p/4-4edge.scad>
 use <../p/4-8sphe.scad>
 function ldraw_lib__30090() = [
-// 0 Minifig Diver Mask
+// 0 ~Minifig Helmet Visor Diver Mask (Obsolete)
 // 0 Name: 30090.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2012-03
+// 0 !LDRAW_ORG Part UPDATE 2024-07
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !CATEGORY Minifig Headwear
+// 0 !CATEGORY Obsolete
 // 
 // 0 !HISTORY 2009-10-13 {LEGO Universe Team} Original part shape
 // 0 !HISTORY 2009-10-20 [Philo] File preparation for LDraw Parts Tracker
 // 0 !HISTORY 2010-07-05 [PTadmin] Official Update 2010-02
 // 0 !HISTORY 2012-12-24 [cwdee] Update category
 // 0 !HISTORY 2012-12-28 [PTadmin] Official Update 2012-03
-// 
+// 0 !HISTORY 2024-07-23 [MagFors] Obsoleted due to bad geometry
+// 0 !HISTORY 2024-08-26 [OrionP] Official Update 2024-07
 // 
 // 1 16 15 6.5 0 0 -1 0 1.5 0 0 0 0 1.5 4-4edge.dat
   [1,16,15,6.5,0,0,-1,0,1.5,0,0,0,0,1.5, ldraw_lib__4_4edge()],

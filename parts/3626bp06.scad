@@ -9,14 +9,16 @@ function ldraw_lib__3626bp06() = [
 // 0 Minifig Head with Standard Grin, Eyebrows and Microphone Pattern
 // 0 Name: 3626bp06.dat
 // 0 Author: Franklin W. Cain [fwcain]
-// 0 !LDRAW_ORG Part UPDATE 2018-02
+// 0 !LDRAW_ORG Part UPDATE 2024-07
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS headset, Launch Command, Spaceport, town
+// 0 !KEYWORDS Bricklink 3626bp06, Brickowl 349684, headset, Launch Command
+// 0 !KEYWORDS Rebrickable 3626bpr0008, set 6339, set 6451, set 6516, Spaceport
+// 0 !KEYWORDS town
 // 
 // 0 !HISTORY 2002-04-25 [PTadmin] Official Update 2002-02
 // 0 !HISTORY 2004-04-15 [westrate] added torus primitives
@@ -26,7 +28,8 @@ function ldraw_lib__3626bp06() = [
 // 0 !HISTORY 2017-10-18 [MagFors] Modified with WINDZ for BFC compliance
 // 0 !HISTORY 2017-10-19 [MagFors] Reworked pattern
 // 0 !HISTORY 2018-12-08 [PTadmin] Official Update 2018-02
-// 
+// 0 !HISTORY 2024-08-18 [Lego-Manfred] Bricklink, Rebrickable reference and sets added
+// 0 !HISTORY 2024-08-26 [OrionP] Official Update 2024-07
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3626bs02.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626bs02()],

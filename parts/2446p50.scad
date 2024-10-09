@@ -1,20 +1,22 @@
 use <../lib.scad>
 use <s/2446s01.scad>
 function ldraw_lib__2446p50() = [
-// 0 Minifig Helmet Modern with Blue and Silver Spyrius Pattern
+// 0 ~Minifig Helmet Standard with Blue and Silver Spyrius Pattern (Obsolete)
 // 0 Name: 2446p50.dat
 // 0 Author: Damien Roux [Darats]
-// 0 !LDRAW_ORG Part UPDATE 2015-01
+// 0 !LDRAW_ORG Part UPDATE 2024-07
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !CATEGORY Minifig Headwear
+// 0 !CATEGORY Obsolete
+// 0 !KEYWORDS set 6889
 // 
 // 0 !HISTORY 2015-10-11 [PTadmin] Official Update 2015-01
-// 
+// 0 !HISTORY 2024-07-31 [MagFors] Obsoleted due to bad geometry
+// 0 !HISTORY 2024-08-26 [OrionP] Official Update 2024-07
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2446s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2446s01()],

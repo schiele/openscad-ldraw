@@ -5,23 +5,23 @@ use <../p/2-4edge.scad>
 use <../p/2-4ndis.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4edge.scad>
-use <../p/4-4ring13.scad>
+use <../p/4-4rin13.scad>
 use <../p/4-8sphe.scad>
 use <../p/rect2p.scad>
 use <../p/stud4a.scad>
 function ldraw_lib__4485() = [
-// 0 Minifig Cap with Long Flat Peak
+// 0 ~Minifig Cap with Long Flat Peak (Obsolete)
 // 0 Name: 4485.dat
 // 0 Author: Thomas Burger [grapeape]
-// 0 !LDRAW_ORG Part UPDATE 2024-02
+// 0 !LDRAW_ORG Part UPDATE 2024-08
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
-// 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Sports, ballcap, baseball, hat
+// 0 !CATEGORY Obsolete
+// 0 !KEYWORDS ballcap, baseball, hat, Sports
 // 
 // 0 !HISTORY 1998-05-21 [PTadmin] Official Update 1998-05
 // 0 !HISTORY 2003-09-24 [westrate] Fixed gaps and inner radius; Replaced quads with primitives; BFC'd
@@ -35,11 +35,13 @@ function ldraw_lib__4485() = [
 // 0 !HISTORY 2014-06-21 [PTadmin] Official Update 2014-01
 // 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
 // 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
+// 0 !HISTORY 2024-09-08 [KnightOfTarenta] Obsolete due to bad geometry
+// 0 !HISTORY 2024-09-30 [OrionP] Official Update 2024-08
 // 
 // 0 // brim
 // 
-// 1 16 0 8 0 1 0 0 0 -1 0.071 0 0 1 4-4ring13.dat
-  [1,16,0,8,0,1,0,0,0,-1,0.071,0,0,1, ldraw_lib__4_4ring13()],
+// 1 16 0 8 0 1 0 0 0 -1 0.071 0 0 1 4-4rin13.dat
+  [1,16,0,8,0,1,0,0,0,-1,0.071,0,0,1, ldraw_lib__4_4rin13()],
 // 1 16 0 8 0 14 0 0 0 -1 -1 0 0 -14 2-4ndis.dat
   [1,16,0,8,0,14,0,0,0,-1,-1,0,0,-14, ldraw_lib__2_4ndis()],
 // 1 16 0 5 0 -14 0 0 0 1 -1 0 0 -14 2-4ndis.dat
@@ -61,7 +63,7 @@ function ldraw_lib__4485() = [
 // 1 16 0 7 -14 14 0 0 0 1 -1 0 0 -14 2-4edge.dat
   [1,16,0,7,-14,14,0,0,0,1,-1,0,0,-14, ldraw_lib__2_4edge()],
 // 
-// 0 inside
+// 0 // inside
 // 
 // 1 16 0 -4 0 1 0 0 0 -1 0 0 0 1 stud4a.dat
   [1,16,0,-4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4a()],
@@ -91,7 +93,7 @@ function ldraw_lib__4485() = [
 // 1 16 0 8 0 13 0 0 0 1 0.929 0 0 13 4-4edge.dat
   [1,16,0,8,0,13,0,0,0,1,0.929,0,0,13, ldraw_lib__4_4edge()],
 // 
-// 0 outside
+// 0 // outside
 // 
 // 1 16 0 -1 0 -14 0 0 0 -10 1 0 0 14 4-8sphe.dat
   [1,16,0,-1,0,-14,0,0,0,-10,1,0,0,14, ldraw_lib__4_8sphe()],
@@ -102,7 +104,7 @@ function ldraw_lib__4485() = [
 // 1 16 0 -1 0 -14 0 0 0 6 -1 0 0 -14 2-4cyli.dat
   [1,16,0,-1,0,-14,0,0,0,6,-1,0,0,-14, ldraw_lib__2_4cyli()],
 // 
-// 0 end of file
+// 0 // end of file
 ];
 module ldraw_lib__4485(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
     makepoly(ldraw_lib__4485(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);

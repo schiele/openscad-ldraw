@@ -1,22 +1,25 @@
 use <../lib.scad>
 use <s/3626bs02.scad>
 function ldraw_lib__3626bpq0() = [
-// 0 Minifig Head Mummy Face with 2 Eyes / 1 Eye 2-Sided Pattern
+// 0 Minifig Head Mummy with Wrapped Face with 2 Eyes / 1 Eye 2-Sided Pattern
 // 0 Name: 3626bpq0.dat
 // 0 Author: Christian Neumann [Wesley]
-// 0 !LDRAW_ORG Part UPDATE 2013-01
+// 0 !LDRAW_ORG Part UPDATE 2024-08
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Mummy Warrior, Pharaoh's Quest
+// 0 !KEYWORDS Bricklink 3626bpb0496, Brickowl 922192, Mummy Warrior
+// 0 !KEYWORDS Pharaoh's Quest, Rebrickable 3626bpr0755, Set 7307, Set 7326
+// 0 !KEYWORDS Set 7327
 // 
 // 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02
 // 0 !HISTORY 2013-02-06 [Wesley] part name correction
 // 0 !HISTORY 2013-07-21 [PTadmin] Official Update 2013-01
-// 
+// 0 !HISTORY 2024-09-08 [Lego-Manfred] Reference and sets added
+// 0 !HISTORY 2024-09-30 [OrionP] Official Update 2024-08
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3626bs02.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626bs02()],

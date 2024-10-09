@@ -1,9 +1,9 @@
 use <../../lib.scad>
 function ldraw_lib__s__2446p01s01() = [
-// 0 ~Minifig Helmet Modern with One Red and Two Green Stripes Pattern - Half
+// 0 ~Minifig Helmet Standard with One Red and Two Green Stripes Pattern - Half (Obsolete)
 // 0 Name: s\2446p01s01.dat
 // 0 Author: Damien Roux [Darats]
-// 0 !LDRAW_ORG Subpart UPDATE 2014-02
+// 0 !LDRAW_ORG Subpart UPDATE 2024-07
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -11,7 +11,8 @@ function ldraw_lib__s__2446p01s01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2014-12-23 [PTadmin] Official Update 2014-02
-// 
+// 0 !HISTORY 2024-07-22 [MagFors] Obsolete due to bad geometry
+// 0 !HISTORY 2024-08-26 [OrionP] Official Update 2024-07
 // 
 // 3 2 4 -8.639 1.657 4.33 -8.282 4.33 4 -8.375 4
   [3,2,4,-8.639,1.657,4.33,-8.282,4.33,4,-8.375,4],

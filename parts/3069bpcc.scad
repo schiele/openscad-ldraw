@@ -4,20 +4,22 @@ use <../p/8/1-4ndis.scad>
 use <s/3069bpccs01.scad>
 use <s/3069bs01.scad>
 function ldraw_lib__3069bpcc() = [
-// 0 Tile  1 x  2 with Dark Bluish Gray Computer Keyboard Pattern
+// 0 Tile  1 x  2 with Dark Bluish Grey Computer Keyboard Pattern
 // 0 Name: 3069bpcc.dat
 // 0 Author: Vincent Messenet [Cheenzo]
-// 0 !LDRAW_ORG Part UPDATE 2022-04
+// 0 !LDRAW_ORG Part UPDATE 2024-08
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS BrickLink 3069bpb856, Set 60306, set 70423
+// 0 !KEYWORDS BrickLink 3069pb0856, Brickowl 157701, Rebrickable 3069bpr0300
+// 0 !KEYWORDS Set 60306, set 70423
 // 
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04
-// 
+// 0 !HISTORY 2024-08-28 [Cheenzo] Corrected spelling of Grey, Fixed and added keywords
+// 0 !HISTORY 2024-09-30 [OrionP] Official Update 2024-08
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3069bs01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3069bs01()],

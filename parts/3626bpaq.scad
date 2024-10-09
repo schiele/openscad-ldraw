@@ -8,14 +8,16 @@ function ldraw_lib__3626bpaq() = [
 // 0 Minifig Head with Skull Type 1 (Smiling) Pattern
 // 0 Name: 3626bpaq.dat
 // 0 Author: Tore Eriksson [Tore_Eriksson]
-// 0 !LDRAW_ORG Part UPDATE 2018-02
+// 0 !LDRAW_ORG Part UPDATE 2024-08
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Castle, happy, minifig skeleton skull, old
+// 0 !KEYWORDS Bricklink 3626bpb0001, Brickowl 422145, Castle, happy
+// 0 !KEYWORDS minifig skeleton skull, old, Rebrickable 3626bpr0895, set 3722
+// 0 !KEYWORDS set 79010, set 9468
 // 
 // 0 !CMDLINE -c15
 // 
@@ -30,7 +32,8 @@ function ldraw_lib__3626bpaq() = [
 // 0 !HISTORY 2017-11-02 [MagFors] used torus primitives
 // 0 !HISTORY 2017-11-19 [PTadmin] Renamed from 82359
 // 0 !HISTORY 2018-12-08 [PTadmin] Official Update 2018-02
-// 
+// 0 !HISTORY 2024-08-29 [Lego-Manfred] Reference and sets added
+// 0 !HISTORY 2024-09-30 [OrionP] Official Update 2024-08
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3626bs02.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626bs02()],

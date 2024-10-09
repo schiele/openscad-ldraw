@@ -10,15 +10,16 @@ function ldraw_lib__3626bpa3() = [
 // 0 Minifig Head with Smirk & Black Moustache Pattern
 // 0 Name: 3626bpa3.dat
 // 0 Author: George Barnes [glbarnes]
-// 0 !LDRAW_ORG Part UPDATE 2018-02
+// 0 !LDRAW_ORG Part UPDATE 2024-08
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Adventurers, amazon, Dino Island, Egypt, face, grin, hero
-// 0 !KEYWORDS Johnny Thunder, Johny Thunder, sideburns
+// 0 !KEYWORDS Adventurers, amazon, Bricklink 3626bpa3, Brickowl 736778
+// 0 !KEYWORDS Dino Island, Egypt, face, grin, hero, Johnny Thunder, Johny Thunder
+// 0 !KEYWORDS Rebrickable 3626bpr0045, Set 3407, Set 3411, set 5988, sideburns
 // 
 // 0 !CMDLINE -c14
 // 
@@ -28,7 +29,8 @@ function ldraw_lib__3626bpa3() = [
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
 // 0 !HISTORY 2017-10-28 [MagFors] Modified with WINDZ for BFC compliance
 // 0 !HISTORY 2018-12-08 [PTadmin] Official Update 2018-02
-// 
+// 0 !HISTORY 2024-08-29 [Lego-Manfred] Reference and sets added
+// 0 !HISTORY 2024-09-30 [OrionP] Official Update 2024-08
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3626bs02.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626bs02()],

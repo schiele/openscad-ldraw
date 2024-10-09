@@ -8,15 +8,16 @@ function ldraw_lib__3626bp39() = [
 // 0 Minifig Head with Grin, Dark Grey Beard and Eyebrows Pattern
 // 0 Name: 3626bp39.dat
 // 0 Author: Franklin W. Cain [fwcain]
-// 0 !LDRAW_ORG Part UPDATE 2017-01
+// 0 !LDRAW_ORG Part UPDATE 2024-07
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS buccaneer, cavalry, chin, corsair, dimple, face, fort, freebooter
-// 0 !KEYWORDS legoredo, lieutenant, moustache, Pirates, set 1747, set 1802
+// 0 !KEYWORDS Bricklink 3626bp39, Brickowl 208993, buccaneer, cavalry, chin
+// 0 !KEYWORDS corsair, dimple, face, fort, freebooter, legoredo, lieutenant
+// 0 !KEYWORDS moustache, Pirates, Rebrickable 3626bpr0017, set 1747, set 1802
 // 0 !KEYWORDS set 6204, set 6248, set 6281, set 6289, set 6290, set 6296, set 6706
 // 0 !KEYWORDS set 6716, set 6761, set 6762, set 6769, smile, smiley, western
 // 0 !KEYWORDS wild west
@@ -28,7 +29,8 @@ function ldraw_lib__3626bp39() = [
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
 // 0 !HISTORY 2017-07-12 [Holly-Wood] Rewrote from scratch
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
-// 
+// 0 !HISTORY 2024-08-21 [Lego-Manfred] References added
+// 0 !HISTORY 2024-08-26 [OrionP] Official Update 2024-07
 // 
 // 0 // Pattern
 // 0 // Black

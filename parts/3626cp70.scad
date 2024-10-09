@@ -8,17 +8,19 @@ function ldraw_lib__3626cp70() = [
 // 0 Minifig Head with Eyebrows, Crow's Feet, Open Mouth Smile / Queasy Expression with Sweat Drop 2-Sided Pattern
 // 0 Name: 3626cp70.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2019-01
+// 0 !LDRAW_ORG Part UPDATE 2024-07
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626cpb1314
+// 0 !KEYWORDS Bricklink 3626cpb2492, Brickowl 790852, Rebrickable 3626cpr1769
+// 0 !KEYWORDS Set 10257, Set 60217, Set 60333, Set 80103
 // 
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
-// 
+// 0 !HISTORY 2024-08-18 [Lego-Manfred] Bricklink, Rebrickable reference and set added
+// 0 !HISTORY 2024-08-26 [OrionP] Official Update 2024-07
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3626cs02.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626cs02()],

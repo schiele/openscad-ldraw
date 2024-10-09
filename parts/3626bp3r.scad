@@ -7,17 +7,21 @@ function ldraw_lib__3626bp3r() = [
 // 0 Minifig Head with Brown Moustache, Stubble, Eyebrows, Frowning Pattern
 // 0 Name: 3626bp3r.dat
 // 0 Author: J.C. Tchang [tchang]
-// 0 !LDRAW_ORG Part UPDATE 2014-01
+// 0 !LDRAW_ORG Part UPDATE 2024-07
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS Bricklink 3626bpb0319, Brickowl 491238, Rebrickable 3626bpr0566
+// 0 !KEYWORDS set 7189, Set 7946, Set 7947
+// 
 // 0 !HISTORY 2012-05-14 [tchang] New part
 // 0 !HISTORY 2013-12-15 [MagFors] Removed unwanted cond-lines
 // 0 !HISTORY 2014-06-21 [PTadmin] Official Update 2014-01
-// 
+// 0 !HISTORY 2024-08-21 [Lego-Manfred] References and sets added
+// 0 !HISTORY 2024-08-26 [OrionP] Official Update 2024-07
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3626bs02.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626bs02()],

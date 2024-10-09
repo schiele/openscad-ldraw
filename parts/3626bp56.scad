@@ -6,17 +6,19 @@ function ldraw_lib__3626bp56() = [
 // 0 Minifig Head with Insectoids with Black Hair, Headset, Green and Copper Eye Grid Pattern
 // 0 Name: 3626bp56.dat
 // 0 Author: Mikkel Bech Jensen [gaia]
-// 0 !LDRAW_ORG Part UPDATE 2019-03
+// 0 !LDRAW_ORG Part UPDATE 2024-07
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Set 6977, Space
+// 0 !KEYWORDS Bricklink 3626bpb0036, Brickowl 903502, Prof. Webb/Locust
+// 0 !KEYWORDS Rebrickable 3626bpr0077, set 3070, Set 6977, Space
 // 
 // 0 !HISTORY 2019-12-27 [PTadmin] Official Update 2019-03
-// 
+// 0 !HISTORY 2024-08-21 [Lego-Manfred] References and set added
+// 0 !HISTORY 2024-08-26 [OrionP] Official Update 2024-07
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3626bs02.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626bs02()],

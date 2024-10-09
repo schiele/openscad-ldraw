@@ -1,9 +1,9 @@
 use <../../lib.scad>
 function ldraw_lib__s__87610ps7s02() = [
-// 0 ~Minifig Helmet Mandalorian with Reddish Brown Visor with Slanted Eyeslits Dark Bluish Gray Cheeks and Reddish Brown Pattern - Half
+// 0 ~Minifig Helmet Mandalorian with Reddish Brown Visor with Slanted Eyeslits Dark Bluish Grey Cheeks and Reddish Brown Pattern - Half
 // 0 Name: s\87610ps7s02.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
-// 0 !LDRAW_ORG Subpart UPDATE 2022-01
+// 0 !LDRAW_ORG Subpart UPDATE 2024-08
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -11,7 +11,8 @@ function ldraw_lib__s__87610ps7s02() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
-// 
+// 0 !HISTORY 2024-08-28 [Cheenzo] Corrected spelling of Grey
+// 0 !HISTORY 2024-09-30 [OrionP] Official Update 2024-08
 // 
 // 0 // Top Rim
 // 

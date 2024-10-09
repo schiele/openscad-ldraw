@@ -12,19 +12,18 @@ use <../p/8-8sphe.scad>
 use <../p/rect.scad>
 use <../p/rect2p.scad>
 function ldraw_lib__6119() = [
-// 0 Minifig Helmet Visor Ice Planet
+// 0 ~Minifig Helmet Visor Shielded with Antenna (Obsolete)
 // 0 Name: 6119.dat
 // 0 Author: Franklin W. Cain [fwcain]
-// 0 !LDRAW_ORG Part UPDATE 2018-02
+// 0 !LDRAW_ORG Part UPDATE 2024-07
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS antenna, blinder, Cyclops, microphone, radio, Scott Summers
-// 0 !KEYWORDS shielded visor, Space, X-Men
+// 0 !CATEGORY Obsolete
+// 0 !KEYWORDS blinder, ice planet, radio, Space
 // 
 // 0 !HISTORY 2011-12-10 [timgould] Shifted by y=-1.5 as suggested, otherwise unchanged
 // 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01
@@ -32,7 +31,8 @@ function ldraw_lib__6119() = [
 // 0 !HISTORY 2012-12-28 [PTadmin] Official Update 2012-03
 // 0 !HISTORY 2017-09-21 [MagFors] bfc'd, reworked using LDD data
 // 0 !HISTORY 2018-12-08 [PTadmin] Official Update 2018-02
-// 
+// 0 !HISTORY 2024-08-05 [MagFors] Obsoleted due to bad geometry
+// 0 !HISTORY 2024-08-26 [OrionP] Official Update 2024-07
 // 
 // 1 16 17 6.5 0 0 -1 0 -4.5 0 0 0 0 4.5 7-16chrd.dat
   [1,16,17,6.5,0,0,-1,0,-4.5,0,0,0,0,4.5, ldraw_lib__7_16chrd()],

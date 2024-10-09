@@ -7,19 +7,21 @@ function ldraw_lib__3626bpq4() = [
 // 0 Minifig Head with Glasses, Brown Sideburns and Moustache Pattern
 // 0 Name: 3626bpq4.dat
 // 0 Author: Christian Neumann [Wesley]
-// 0 !LDRAW_ORG Part UPDATE 2013-02
+// 0 !LDRAW_ORG Part UPDATE 2024-08
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Pharaoh's Quest, Professor Archibald Hale
+// 0 !KEYWORDS Bricklink 3626bpb0531, Brickowl 1204, Pharaoh's Quest
+// 0 !KEYWORDS Professor Archibald Hale, Rebrickable 3626bpr0757, Set 7327
 // 
 // 0 !CMDLINE -c14
 // 
 // 0 !HISTORY 2013-12-23 [PTadmin] Official Update 2013-02
-// 
+// 0 !HISTORY 2024-09-08 [Lego-Manfred] Reference and sets added
+// 0 !HISTORY 2024-09-30 [OrionP] Official Update 2024-08
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3626bs02.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626bs02()],

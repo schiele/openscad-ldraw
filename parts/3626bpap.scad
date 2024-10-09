@@ -7,17 +7,20 @@ function ldraw_lib__3626bpap() = [
 // 0 Minifig Head with Smirk, Black Moustache and Cleft Chin Pattern
 // 0 Name: 3626bpap.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2016-01
+// 0 !LDRAW_ORG Part UPDATE 2024-08
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Adventurers, Johnny Thunder, Orient Expedition, sideburns
+// 0 !KEYWORDS Adventurers, Bricklink 3626bpx129, Brickowl 146672, Johnny Thunder
+// 0 !KEYWORDS Orient Expedition, Rebrickable 3626bpr0247, set 10176, Set 7417
+// 0 !KEYWORDS set 7422, sideburns
 // 
 // 0 !HISTORY 2016-12-31 [PTadmin] Official Update 2016-01
-// 
+// 0 !HISTORY 2024-08-29 [Lego-Manfred] Reference and sets added
+// 0 !HISTORY 2024-09-30 [OrionP] Official Update 2024-08
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3626bs02.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626bs02()],

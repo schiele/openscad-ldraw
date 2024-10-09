@@ -6,17 +6,20 @@ function ldraw_lib__3626bpab() = [
 // 0 Minifig Head with Aquanaut, Green Angled Sunglasses and Brown Hair Pattern
 // 0 Name: 3626bpab.dat
 // 0 Author: Mikkel Bech Jensen [gaia]
-// 0 !LDRAW_ORG Part UPDATE 2019-03
+// 0 !LDRAW_ORG Part UPDATE 2024-08
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Aquazone, Set 1728, Set 1749, Set 1806, Set 1822, Set 6145, Set 6195
+// 0 !KEYWORDS Aquazone, Bricklink 3626bpx114, Brickowl 296865
+// 0 !KEYWORDS Rebrickable 3626bpr0291, Set 1728, Set 1749, Set 1806, Set 1822
+// 0 !KEYWORDS Set 6145, Set 6195
 // 
 // 0 !HISTORY 2019-12-27 [PTadmin] Official Update 2019-03
-// 
+// 0 !HISTORY 2024-08-29 [Lego-Manfred] Reference added
+// 0 !HISTORY 2024-09-30 [OrionP] Official Update 2024-08
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3626bs02.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626bs02()],

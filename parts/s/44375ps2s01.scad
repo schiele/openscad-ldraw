@@ -1,19 +1,18 @@
 use <../../lib.scad>
 function ldraw_lib__s__44375ps2s01() = [
-// 0 ~Dish 6 x 6 Inverted Solid Studs with 8 Radial Rectangular Black and Dark Gray Grille Pattern - 1/8
+// 0 ~Dish 6 x 6 Inverted Solid Studs with 8 Radial Rectangular Black and Dark Grey Grille Pattern - 1/8
 // 0 Name: s\44375ps2s01.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
-// 0 !LDRAW_ORG Subpart UPDATE 2023-04
+// 0 !LDRAW_ORG Subpart UPDATE 2024-08
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS
-// 
 // 0 !HISTORY 2023-08-25 [OrionP] Official Update 2023-04
-// 
+// 0 !HISTORY 2024-08-28 [Cheenzo] Corrected spelling of Grey
+// 0 !HISTORY 2024-09-30 [OrionP] Official Update 2024-08
 // 
 // 4 72 22.69354 10.64925 -54.78589 29.34322 10.64929 -51.50366 29.07062 10.29313 -50.84554 22.23431 10.04927 -53.67723
   [4,72,22.69354,10.64925,-54.78589,29.34322,10.64929,-51.50366,29.07062,10.29313,-50.84554,22.23431,10.04927,-53.67723],

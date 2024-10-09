@@ -15,22 +15,24 @@ use <s/30361dps7s04.scad>
 use <s/30361ds01.scad>
 use <s/30361ps1s06.scad>
 function ldraw_lib__30361dps8() = [
-// 0 Cylinder  2 x  2 x  2 Robot Body with Gray Lines and Dark Blue Pattern (R2-D2, R3-T2)
+// 0 Cylinder  2 x  2 x  2 Robot Body with Grey Lines and Dark Blue Pattern
 // 0 Name: 30361dps8.dat
 // 0 Author: John Troxler [Gargan]
-// 0 !LDRAW_ORG Part UPDATE 2022-02
+// 0 !LDRAW_ORG Part UPDATE 2024-08
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS 75038, astromech, Bricklink 30361pb025, droid, minifig, set
-// 0 !KEYWORDS set 75059, set 75092, set 75096, Star Wars
+// 0 !KEYWORDS astromech, Bricklink 30361pb025, Brickowl 359902, droid, minifig
+// 0 !KEYWORDS R2-D2, R3-T2, Rebrickable 30361cpr1001, Set 75038, set 75059
+// 0 !KEYWORDS set 75092, set 75096, Star Wars
 // 
 // 0 !HISTORY 2020-12-07 [Holly-Wood] Streamlined pattern, reduced subfiles, corrected rounding errors
 // 0 !HISTORY 2022-03-06 [PTadmin] Official Update 2022-02
-// 
+// 0 !HISTORY 2024-08-28 [Cheenzo] Corrected spelling of Grey, Fixed and added keywords
+// 0 !HISTORY 2024-09-30 [OrionP] Official Update 2024-08
 // 
 // 0 // Body without front face
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\30361ds01.dat

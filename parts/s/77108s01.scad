@@ -1,9 +1,9 @@
 use <../../lib.scad>
 function ldraw_lib__s__77108s01() = [
-// 0 ~Minifigure Top Hat with Pin Attachment and Antistud - Rim Quarter
+// 0 ~Minifig Top Hat with Pin Attachment and Antistud - Rim Quarter
 // 0 Name: s\77108s01.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
-// 0 !LDRAW_ORG Subpart UPDATE 2023-04
+// 0 !LDRAW_ORG Subpart UPDATE 2024-07
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -11,7 +11,8 @@ function ldraw_lib__s__77108s01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2023-08-25 [OrionP] Official Update 2023-04
-// 
+// 0 !HISTORY 2024-08-03 [MagFors] Update description
+// 0 !HISTORY 2024-08-26 [OrionP] Official Update 2024-07
 // 
 // 3 16 3.7312 .2929 -9.0081 0 0 -9.75 5.3576 .2929 -12.9347
   [3,16,3.7312,.2929,-9.0081,0,0,-9.75,5.3576,.2929,-12.9347],

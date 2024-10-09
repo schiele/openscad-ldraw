@@ -8,17 +8,17 @@ use <../p/rect1.scad>
 use <../p/rect2p.scad>
 use <../p/rect3.scad>
 function ldraw_lib__30170() = [
-// 0 Minifig Cap Aviator Goggles
+// 0 ~Minifig Cap Aviator Goggles (Obsolete)
 // 0 Name: 30170.dat
 // 0 Author: Franklin W. Cain [fwcain]
-// 0 !LDRAW_ORG Part UPDATE 2016-01
+// 0 !LDRAW_ORG Part UPDATE 2024-07
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !CATEGORY Minifig Headwear
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS Adventurers, barnstormer, Fighter, glasses, hat, helmet, lenses
 // 0 !KEYWORDS Naboo, pilot, pod race, Race, skullcap, Star Wars
 // 
@@ -29,7 +29,8 @@ function ldraw_lib__30170() = [
 // 0 !HISTORY 2012-12-28 [PTadmin] Official Update 2012-03
 // 0 !HISTORY 2016-10-17 [Philo] BFCed with Windz, minor improvements
 // 0 !HISTORY 2016-12-31 [PTadmin] Official Update 2016-01
-// 
+// 0 !HISTORY 2024-07-22 [MagFors] Obsolete due to bad geometry
+// 0 !HISTORY 2024-08-26 [OrionP] Official Update 2024-07
 // 
 // 1 16 -15 0 0 0 -2 0 4 0 0 0 0 4 2-4cylc.dat
   [1,16,-15,0,0,0,-2,0,4,0,0,0,0,4, ldraw_lib__2_4cylc()],

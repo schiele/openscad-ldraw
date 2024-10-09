@@ -10,15 +10,19 @@ function ldraw_lib__3626bp83() = [
 // 0 Minifig Head with Brown Eyebrows, Smirking Face, Pupils Pattern
 // 0 Name: 3626bp83.dat
 // 0 Author: J.C. Tchang [tchang]
-// 0 !LDRAW_ORG Part UPDATE 2012-01
+// 0 !LDRAW_ORG Part UPDATE 2024-08
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01
+// 0 !KEYWORDS Bricklink 3626bpb0204, Brickowl 80661, Rebrickable 3626bpr0325
+// 0 !KEYWORDS set 10210, Set 3181, Set 7946
 // 
+// 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01
+// 0 !HISTORY 2024-08-29 [Lego-Manfred] Reference and sets added
+// 0 !HISTORY 2024-09-30 [OrionP] Official Update 2024-08
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3626bs02.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626bs02()],

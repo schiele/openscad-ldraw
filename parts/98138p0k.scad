@@ -7,21 +7,24 @@ use <../p/4-4ering.scad>
 use <../p/4-4ndis.scad>
 use <s/98138s01.scad>
 function ldraw_lib__98138p0k() = [
-// 0 Tile  1 x  1 Round with Black Eye with Pupil Squinting Pattern
+// 0 Tile  1 x  1 Round with Black Eye with Pupil in Corner Squinting Pattern
 // 0 Name: 98138p0k.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2024-06
+// 0 !LDRAW_ORG Part UPDATE 2024-07
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 98138pb204, Set 11015, Set 40596, Set 41720, Set 45400
+// 0 !KEYWORDS Bricklink 98138pb066, Rebrickable 98138pr0062, Set 11003, set 41288
+// 0 !KEYWORDS Set 41373, Set 45678
 // 
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
 // 0 !HISTORY 2024-07-08 [GeraldLasser] Added Keywords
 // 0 !HISTORY 2024-07-29 [OrionP] Official Update 2024-06
+// 0 !HISTORY 2024-08-16 [GeraldLasser] Corrected Keywords and BL Reference
+// 0 !HISTORY 2024-08-26 [OrionP] Official Update 2024-07
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\98138s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__98138s01()],

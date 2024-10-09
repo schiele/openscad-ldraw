@@ -12,14 +12,16 @@ function ldraw_lib__3626bpa5() = [
 // 0 Minifig Head with Stubble, Moustache and Smirk Pattern
 // 0 Name: 3626bpa5.dat
 // 0 Author: George Barnes [glbarnes]
-// 0 !LDRAW_ORG Part UPDATE 2018-02
+// 0 !LDRAW_ORG Part UPDATE 2024-08
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Adventurers, aviator, eyebrows, face, Harry Cane, hero, pilot
+// 0 !KEYWORDS Adventurers, aviator, Bricklink 3626bpa5, Brickowl 77227, eyebrows
+// 0 !KEYWORDS face, Harry Cane, hero, pilot, Rebrickable 3626bpr0042, Set 5925
+// 0 !KEYWORDS set 5948, set 5988
 // 
 // 0 !CMDLINE -c14
 // 
@@ -29,7 +31,8 @@ function ldraw_lib__3626bpa5() = [
 // 0 !HISTORY 2017-10-29 [MagFors] Modified with WINDZ for BFC compliance
 // 0 !HISTORY 2017-10-29 [MagFors] adapted part of pattern
 // 0 !HISTORY 2018-12-08 [PTadmin] Official Update 2018-02
-// 
+// 0 !HISTORY 2024-08-29 [Lego-Manfred] Reference and sets added
+// 0 !HISTORY 2024-09-30 [OrionP] Official Update 2024-08
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3626bs02.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626bs02()],

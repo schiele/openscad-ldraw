@@ -8,15 +8,19 @@ function ldraw_lib__3626bp07() = [
 // 0 Minifig Head with Freckle Nose and Standard Grin Pattern
 // 0 Name: 3626bp07.dat
 // 0 Author: Damien Roux [Darats]
-// 0 !LDRAW_ORG Part UPDATE 2011-01
+// 0 !LDRAW_ORG Part UPDATE 2024-07
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !HISTORY 2011-07-25 [PTadmin] Official Update 2011-01
+// 0 !KEYWORDS Bricklink 3626bpx124, Brickowl 997007, Rebrickable 3626bpr0009
+// 0 !KEYWORDS set 10159, Set 6411, Set 6416
 // 
+// 0 !HISTORY 2011-07-25 [PTadmin] Official Update 2011-01
+// 0 !HISTORY 2024-08-18 [Lego-Manfred] Bricklink, Rebrickable reference and sets added
+// 0 !HISTORY 2024-08-26 [OrionP] Official Update 2024-07
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3626bs02.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626bs02()],

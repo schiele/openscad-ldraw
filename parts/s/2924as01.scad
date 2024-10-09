@@ -10,10 +10,10 @@ use <../../p/stud2a.scad>
 use <../../p/stud3.scad>
 use <../../p/stug3-1x3.scad>
 function ldraw_lib__s__2924as01() = [
-// 0 ~Train Front  2 x  2 x  6 with  3 x  4 Cutout without Glass
+// 0 ~Train Front  2 x  6 x  5.333 with  4 x  3 Cutout without Glass
 // 0 Name: s\2924as01.dat
 // 0 Author: Max Martin Richter [MMR1988]
-// 0 !LDRAW_ORG Subpart UPDATE 2015-01
+// 0 !LDRAW_ORG Subpart UPDATE 2024-07
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -21,7 +21,8 @@ function ldraw_lib__s__2924as01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2015-10-11 [PTadmin] Official Update 2015-01
-// 
+// 0 !HISTORY 2024-06-02 [GeraldLasser] Corrected Dimensions
+// 0 !HISTORY 2024-08-26 [OrionP] Official Update 2024-07
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2924s04.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2924s04()],

@@ -7,15 +7,16 @@ function ldraw_lib__3626bpa7() = [
 // 0 Minifig Head with Monocle, Scar, and Moustache Pattern
 // 0 Name: 3626bpa7.dat
 // 0 Author: George Barnes [glbarnes]
-// 0 !LDRAW_ORG Part UPDATE 2013-01
+// 0 !LDRAW_ORG Part UPDATE 2024-08
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Adventurers, Baron von Barron, dueling scar, eyebrows, face
-// 0 !KEYWORDS Mr. Hates, villain
+// 0 !KEYWORDS Adventurers, Baron von Barron, Bricklink 3626bpa7, Brickowl 693084
+// 0 !KEYWORDS dueling scar, eyebrows, face, Mr. Hates, Rebrickable 3626bpr0041
+// 0 !KEYWORDS set 3722, set 5919, set 5988, villain
 // 
 // 0 !CMDLINE -c14
 // 
@@ -27,7 +28,8 @@ function ldraw_lib__3626bpa7() = [
 // 0 !HISTORY 2013-03-22 [MagFors] Changed colour 383 to 80 (printed silver)
 // 0 !HISTORY 2013-03-22 [MagFors] inlined silver subpart
 // 0 !HISTORY 2013-07-21 [PTadmin] Official Update 2013-01
-// 
+// 0 !HISTORY 2024-08-29 [Lego-Manfred] Reference and sets added
+// 0 !HISTORY 2024-09-30 [OrionP] Official Update 2024-08
 // 
 // 0 // replacing s\3626bs01.dat
 // 

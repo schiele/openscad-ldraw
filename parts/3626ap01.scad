@@ -7,12 +7,15 @@ function ldraw_lib__3626ap01() = [
 // 0 Minifig Head with Standard Grin Pattern (Solid Stud)
 // 0 Name: 3626ap01.dat
 // 0 Author: Jonathan Wilson [jonwil]
-// 0 !LDRAW_ORG Part UPDATE 2019-01
+// 0 !LDRAW_ORG Part UPDATE 2024-07
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
+// 
+// 0 !KEYWORDS Bricklink 3626ap01, Brickowl 303227, Rebrickable 3626apr0001
+// 0 !KEYWORDS set 1066, set 1598, set 7720
 // 
 // 0 !HISTORY 2002-06-28 [jonwil] Replaced subfile reference
 // 0 !HISTORY 2002-08-18 [PTadmin] Official Update 2002-04
@@ -24,7 +27,8 @@ function ldraw_lib__3626ap01() = [
 // 0 !HISTORY 2013-04-16 [MMR1988] Used pattern subfile
 // 0 !HISTORY 2013-09-01 [MagFors] Extended description
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
-// 
+// 0 !HISTORY 2024-08-18 [Lego-Manfred] Bricklink, Rebrickable reference and sets added
+// 0 !HISTORY 2024-08-26 [OrionP] Official Update 2024-07
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3626ap01s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626ap01s01()],

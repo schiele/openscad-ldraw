@@ -11,15 +11,19 @@ function ldraw_lib__3626bp44() = [
 // 0 Minifig Head with Black Moustache, Beard and Messy Hair Pattern
 // 0 Name: 3626bp44.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2014-01
+// 0 !LDRAW_ORG Part UPDATE 2024-07
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !HISTORY 2014-06-21 [PTadmin] Official Update 2014-01
+// 0 !KEYWORDS Bricklink 3626bpx75, Brickowl 675068, Rebrickable 3626bpr0010
+// 0 !KEYWORDS Set 6097, set 6271, set 6277
 // 
+// 0 !HISTORY 2014-06-21 [PTadmin] Official Update 2014-01
+// 0 !HISTORY 2024-08-21 [Lego-Manfred] References and sets added
+// 0 !HISTORY 2024-08-26 [OrionP] Official Update 2024-07
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3626bs02.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626bs02()],
