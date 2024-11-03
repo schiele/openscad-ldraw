@@ -6,18 +6,20 @@ function ldraw_lib__3626bpw2() = [
 // 0 Minifig Head with Angry Moustache and Teeth Pattern
 // 0 Name: 3626bpw2.dat
 // 0 Author: Willy Tschager [Holly-Wood]
-// 0 !LDRAW_ORG Part UPDATE 2016-01
+// 0 !LDRAW_ORG Part UPDATE 2024-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS bandit, cavalry, desperado, fort, legoredo, outlaw, robber, set 6755
+// 0 !KEYWORDS bandit, Bricklink 3626bpx30, Brickowl 622010, cavalry, desperado
+// 0 !KEYWORDS fort, legoredo, outlaw, Rebrickable 3626bpr0333, robber, set 6755
 // 0 !KEYWORDS set 6761, set 6762, Set 6764, set 6769, set 6799, western, wild west
 // 
 // 0 !HISTORY 2016-12-31 [PTadmin] Official Update 2016-01
-// 
+// 0 !HISTORY 2024-10-26 [Lego-Manfred] Reference added
+// 0 !HISTORY 2024-10-27 [OrionP] Official Update 2024-09
 // 
 // 0 // Pattern
 // 0 // White

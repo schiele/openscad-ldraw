@@ -3,10 +3,10 @@ use <../p/1-4chrd.scad>
 use <../p/1-4cyli.scad>
 use <s/6062886gs01.scad>
 function ldraw_lib__6062886h() = [
-// 0 Sticker  0.7 x  3.6 with "PJM 340" Canadian License Plate on Dark Green Background
+// 0 Sticker  0.7 x  3.6 with "PJM 340" Australian License Plate on Dark Green Background
 // 0 Name: 6062886h.dat
 // 0 Author: Evert-Jan Boer [ejboer]
-// 0 !LDRAW_ORG Part UPDATE 2024-08
+// 0 !LDRAW_ORG Part UPDATE 2024-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -16,7 +16,8 @@ function ldraw_lib__6062886h() = [
 // 0 !KEYWORDS Mini Cooper, set 10242
 // 
 // 0 !HISTORY 2024-09-30 [OrionP] Official Update 2024-08
-// 
+// 0 !HISTORY 2024-10-01 [MagFors] Corrected description
+// 0 !HISTORY 2024-10-27 [OrionP] Official Update 2024-09
 // 
 // 1 288 0 -.25 0 1 0 0 0 1 0 0 0 1 s\6062886gs01.dat
   [1,288,0,-.25,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6062886gs01()],

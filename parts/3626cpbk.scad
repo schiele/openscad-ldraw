@@ -6,17 +6,20 @@ function ldraw_lib__3626cpbk() = [
 // 0 Minifig Head with Glasses, Grey Eyes, Eyebrows, Cheeks Pattern
 // 0 Name: 3626cpbk.dat
 // 0 Author: Magnus Forsberg [MagFors]
-// 0 !LDRAW_ORG Part UPDATE 2013-02
+// 0 !LDRAW_ORG Part UPDATE 2024-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Batman The Movie, Clark Kent, DC Super Heroes Unite, Superman
+// 0 !KEYWORDS Batman The Movie, Bricklink 3626bpb1013, Brickowl 712633, Clark Kent
+// 0 !KEYWORDS DC Super Heroes Unite, Rebrickable 3626bpr9990
+// 0 !KEYWORDS Set 5002202 (was only included in a DVD box), Superman
 // 
 // 0 !HISTORY 2013-12-23 [PTadmin] Official Update 2013-02
-// 
+// 0 !HISTORY 2024-10-26 [Lego-Manfred] Reference and setadded
+// 0 !HISTORY 2024-10-27 [OrionP] Official Update 2024-09
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3626cs02.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626cs02()],

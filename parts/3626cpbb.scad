@@ -7,17 +7,19 @@ function ldraw_lib__3626cpbb() = [
 // 0 Minifig Head with Beard, Happy/Angry 2-Sided Pattern
 // 0 Name: 3626cpbb.dat
 // 0 Author: Magnus Forsberg [MagFors]
-// 0 !LDRAW_ORG Part UPDATE 2013-02
+// 0 !LDRAW_ORG Part UPDATE 2024-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Iron Man, Tony Stark
+// 0 !KEYWORDS Bricklink 3626cpb0705, Brickowl 157393, Iron Man
+// 0 !KEYWORDS Rebrickable 3626cpr0961, Set 76038, set 76049, set 76077, Tony Stark
 // 
 // 0 !HISTORY 2013-12-23 [PTadmin] Official Update 2013-02
-// 
+// 0 !HISTORY 2024-10-26 [Lego-Manfred] Reference and sets added
+// 0 !HISTORY 2024-10-27 [OrionP] Official Update 2024-09
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3626cs02.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626cs02()],

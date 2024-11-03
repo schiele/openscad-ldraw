@@ -12,15 +12,16 @@ function ldraw_lib__3626bpsc() = [
 // 0 Minifig Head with SW Grey Eyebrows & Implant 2-Sided Pattern
 // 0 Name: 3626bpsc.dat
 // 0 Author: Franklin W. Cain [fwcain]
-// 0 !LDRAW_ORG Part UPDATE 2013-01
+// 0 !LDRAW_ORG Part UPDATE 2024-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bespin, Cloud City, cybernetic implant, cybertech, Cyborg, face
-// 0 !KEYWORDS Lobot, Star Wars, thin grey eyebrows
+// 0 !KEYWORDS Bespin, Bricklink 3626bpsc, Brickowl 884216, Cloud City
+// 0 !KEYWORDS cybernetic implant, cybertech, Cyborg, face, Lobot
+// 0 !KEYWORDS Rebrickable 3626bpr0271, Set 7119, Star Wars, thin grey eyebrows
 // 
 // 0 !CMDLINE -c14
 // 
@@ -35,7 +36,8 @@ function ldraw_lib__3626bpsc() = [
 // 0 !HISTORY 2013-02-10 [MagFors] inlined subfiles, removed emphasis lines
 // 0 !HISTORY 2013-02-10 [MagFors] Modified with WINDZ for BFC compliance
 // 0 !HISTORY 2013-07-21 [PTadmin] Official Update 2013-01
-// 
+// 0 !HISTORY 2024-10-26 [Lego-Manfred] Reference and set added
+// 0 !HISTORY 2024-10-27 [OrionP] Official Update 2024-09
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3626bs02.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626bs02()],

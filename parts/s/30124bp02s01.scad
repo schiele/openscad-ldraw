@@ -2,10 +2,10 @@ use <../../lib.scad>
 use <../../p/1-4ndis.scad>
 use <../../p/1-4tang.scad>
 function ldraw_lib__s__30124bp02s01() = [
-// 0 ~Minifig Helmet Modern - Top Half with Red Lines and White Stars Pattern
+// 0 ~Minifig Helmet Standard with Red Lines and White Stars Pattern - Top Half
 // 0 Name: s\30124bp02s01.dat
 // 0 Author: Chris Böhnke [KnightOfTarenta]
-// 0 !LDRAW_ORG Subpart UPDATE 2024-07
+// 0 !LDRAW_ORG Subpart UPDATE 2024-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -13,6 +13,8 @@ function ldraw_lib__s__30124bp02s01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2024-08-26 [OrionP] Official Update 2024-07
+// 0 !HISTORY 2024-10-02 [Holly-Wood] Sanded description
+// 0 !HISTORY 2024-10-27 [OrionP] Official Update 2024-09
 // 
 // 0 // Colour 4 Red
 // 3 4 4 -8.064 .922 4 -7.951 -.774 4.773 -7.951 .961

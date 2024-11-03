@@ -1,12 +1,11 @@
 use <../lib.scad>
-use <32282.scad>
-use <u9062.scad>
+use <32282c03.scad>
 use <u9063.scad>
 function ldraw_lib__u9062c02() = [
-// 0 Motor Pull Back  4 x  9 x  2.333 Type 2 with Dark Gray Base
+// 0 Motor Pull Back  4 x  9 x  2.333 Type 2 with Dark Grey Base (Complete)
 // 0 Name: u9062c02.dat
 // 0 Author: Owen Burgoyne [C3POwen]
-// 0 !LDRAW_ORG Shortcut UPDATE 2013-01
+// 0 !LDRAW_ORG Shortcut UPDATE 2024-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -18,14 +17,14 @@ function ldraw_lib__u9062c02() = [
 // 
 // 0 !HISTORY 2012-06-30 [Steffen] Unmirrored top
 // 0 !HISTORY 2013-07-21 [PTadmin] Official Update 2013-01
+// 0 !HISTORY 2020-10-28 [SLS] Use shortcut
+// 0 !HISTORY 2024-10-27 [OrionP] Official Update 2024-09
 // 
 // 
 // 1 79 0 42 30 1 0 0 0 1 0 0 0 1 u9063.dat
   [1,79,0,42,30,1,0,0,0,1,0,0,0,1, ldraw_lib__u9063()],
-// 1 16 0 0 0 1 0 0 0 1 0 0 0 1 32282.dat
-  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__32282()],
-// 1 8 0 42 70 1 0 0 0 1 0 0 0 1 u9062.dat
-  [1,8,0,42,70,1,0,0,0,1,0,0,0,1, ldraw_lib__u9062()],
+// 1 16 0 0 0 1 0 0 0 1 0 0 0 1 32282c03.dat
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__32282c03()],
 ];
 module ldraw_lib__u9062c02(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
     makepoly(ldraw_lib__u9062c02(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);

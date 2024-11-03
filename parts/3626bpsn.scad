@@ -4,20 +4,22 @@ use <s/3626bpsns01.scad>
 use <s/3626bs02.scad>
 use <../p/t04o6250.scad>
 function ldraw_lib__3626bpsn() = [
-// 0 Minifig Head with White Eyes, Black Dots, Red and Yellow Rim Pattern
+// 0 Minifig Head with Bright Light Yellow Eyes, Black Dots, Red and Yellow Rim Pattern
 // 0 Name: 3626bpsn.dat
 // 0 Author: Evert-Jan Boer [ejboer]
-// 0 !LDRAW_ORG Part UPDATE 2024-08
+// 0 !LDRAW_ORG Part UPDATE 2024-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626bpb0251, Jawa, Set 10144, Star Wars
+// 0 !KEYWORDS Bricklink 3626bpb0251, Brickowl 26853, Jawa, Rebrickable 3626bpr0201
+// 0 !KEYWORDS Set 10144, Star Wars
 // 
 // 0 !HISTORY 2024-09-30 [OrionP] Official Update 2024-08
-// 
+// 0 !HISTORY 2024-10-15 [Holly-Wood] Sanded Title added keywords
+// 0 !HISTORY 2024-10-27 [OrionP] Official Update 2024-09
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3626bs02.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626bs02()],

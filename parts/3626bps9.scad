@@ -8,22 +8,24 @@ function ldraw_lib__3626bps9() = [
 // 0 Minifig Head with SW Brown Eyebrows and Beard Pattern
 // 0 Name: 3626bps9.dat
 // 0 Author: Franklin W. Cain [fwcain]
-// 0 !LDRAW_ORG Part UPDATE 2012-02
+// 0 !LDRAW_ORG Part UPDATE 2024-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Episode One, face, jedi knight, moustache, Qui-Gon Jinn, serious
-// 0 !KEYWORDS Star Wars
+// 0 !KEYWORDS Bricklink 3626bps9, Brickowl 970770, Episode One, face, jedi knight
+// 0 !KEYWORDS moustache, Qui-Gon Jinn, Rebrickable 3626bpr0274, serious, Set 7161
+// 0 !KEYWORDS set 7204, set 7665, Star Wars
 // 
 // 0 !HISTORY 2002-04-25 [PTadmin] Official Update 2002-02
 // 0 !HISTORY 2007-06-29 [PTadmin] Header formatted for Contributor Agreement
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
 // 0 !HISTORY 2012-04-04 [TK-949] Complete Rewrite
 // 0 !HISTORY 2012-08-09 [PTadmin] Official Update 2012-02
-// 
+// 0 !HISTORY 2024-10-26 [Lego-Manfred] Reference and sets added
+// 0 !HISTORY 2024-10-27 [OrionP] Official Update 2024-09
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3626bs02.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626bs02()],

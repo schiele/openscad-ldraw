@@ -12,15 +12,16 @@ function ldraw_lib__3626bpsb() = [
 // 0 Minifig Head with SW Alien with Large Black Eyes Pattern
 // 0 Name: 3626bpsb.dat
 // 0 Author: Franklin W. Cain [fwcain]
-// 0 !LDRAW_ORG Part UPDATE 2018-02
+// 0 !LDRAW_ORG Part UPDATE 2024-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS big eyes, Episode One, face, Gasgano, Mos Espa, non-human, pod race
-// 0 !KEYWORDS podracer, Star Wars
+// 0 !KEYWORDS big eyes, Bricklink 3626bpsb, Brickowl 826878, Episode One, face
+// 0 !KEYWORDS Gasgano, Mos Espa, non-human, pod race, podracer
+// 0 !KEYWORDS Rebrickable 3626bpr0273, Set 7171, Star Wars
 // 
 // 0 !CMDLINE -c15
 // 
@@ -30,7 +31,8 @@ function ldraw_lib__3626bpsb() = [
 // 0 !HISTORY 2017-10-31 [MagFors] Modified with WINDZ for BFC compliance
 // 0 !HISTORY 2017-11-01 [MagFors] Complete rewrite
 // 0 !HISTORY 2018-12-08 [PTadmin] Official Update 2018-02
-// 
+// 0 !HISTORY 2024-10-26 [Lego-Manfred] Reference and set added
+// 0 !HISTORY 2024-10-27 [OrionP] Official Update 2024-09
 // 
 // 0 // Also suitable for "Greys" (UFO aliens)...
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3626bs02.dat

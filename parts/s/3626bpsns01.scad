@@ -1,9 +1,9 @@
 use <../../lib.scad>
 function ldraw_lib__s__3626bpsns01() = [
-// 0 ~Minifig Head with White Eyes, Black Dots, Red and Yellow Rim Pattern - Half
+// 0 ~Minifig Head with Bright Light Yellow Eyes, Black Dots, Red and Yellow Rim Pattern - Half
 // 0 Name: s\3626bpsns01.dat
 // 0 Author: Evert-Jan Boer [ejboer]
-// 0 !LDRAW_ORG Subpart UPDATE 2024-08
+// 0 !LDRAW_ORG Subpart UPDATE 2024-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -11,6 +11,8 @@ function ldraw_lib__s__3626bpsns01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2024-09-30 [OrionP] Official Update 2024-08
+// 0 !HISTORY 2024-10-15 [Holly-Wood] Sanded Title
+// 0 !HISTORY 2024-10-27 [OrionP] Official Update 2024-09
 // 
 // 4 4 -1.6375 9.2285 -12.6743 -1.857 9.3194 -12.6307 -1.7216 10 -12.6576 -1.484 10 -12.7049
   [4,4,-1.6375,9.2285,-12.6743,-1.857,9.3194,-12.6307,-1.7216,10,-12.6576,-1.484,10,-12.7049],

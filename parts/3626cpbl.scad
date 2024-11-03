@@ -7,19 +7,21 @@ function ldraw_lib__3626cpbl() = [
 // 0 Minifig Head with Eyes in Mask, White 'A' and Black Line on Back Pattern
 // 0 Name: 3626cpbl.dat
 // 0 Author: Magnus Forsberg [MagFors]
-// 0 !LDRAW_ORG Part UPDATE 2013-02
+// 0 !LDRAW_ORG Part UPDATE 2024-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Captain America, set 6865, The Avengers
+// 0 !KEYWORDS Bricklink 3626cpb0700, Brickowl 189300, Captain America
+// 0 !KEYWORDS Rebrickable 3626cpr0958, set 6865, The Avengers
 // 
 // 0 !CMDLINE -c272
 // 
 // 0 !HISTORY 2013-12-23 [PTadmin] Official Update 2013-02
-// 
+// 0 !HISTORY 2024-10-26 [Lego-Manfred] Reference added
+// 0 !HISTORY 2024-10-27 [OrionP] Official Update 2024-09
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3626cs02.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626cs02()],

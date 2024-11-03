@@ -6,19 +6,21 @@ function ldraw_lib__3626bpw8() = [
 // 0 Minifig Head with Glasses, Pencil Behind Ear and Pointed Moustache Pattern
 // 0 Name: 3626bpw8.dat
 // 0 Author: Willy Tschager [Holly-Wood]
-// 0 !LDRAW_ORG Part UPDATE 2017-01
+// 0 !LDRAW_ORG Part UPDATE 2024-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS accountant, bandit, Bank, banker, bankster, bookkeeper, cowboys
-// 0 !KEYWORDS gold city junction, money, robbery, safe, set 6765, sheriff, western
-// 0 !KEYWORDS wild west
+// 0 !KEYWORDS accountant, bandit, Bank, banker, bankster, bookkeeper
+// 0 !KEYWORDS Bricklink 3626bpx107, Brickowl 607088, cowboys, gold city junction
+// 0 !KEYWORDS money, Rebrickable 3626bpr0209, robbery, safe, set 6765, sheriff
+// 0 !KEYWORDS western, wild west
 // 
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
-// 
+// 0 !HISTORY 2024-10-26 [Lego-Manfred] Reference added
+// 0 !HISTORY 2024-10-27 [OrionP] Official Update 2024-09
 // 
 // 0 // Pattern
 // 0 // Black

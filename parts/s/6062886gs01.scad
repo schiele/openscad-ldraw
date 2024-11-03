@@ -1,10 +1,10 @@
 use <../../lib.scad>
 use <../../p/1-4chrd.scad>
 function ldraw_lib__s__6062886gs01() = [
-// 0 ~Sticker  0.7 x  3.6 with "PJM 340" Canadian License Plate
+// 0 ~Sticker  0.7 x  3.6 with "PJM 340" Australian License Plate
 // 0 Name: s\6062886gs01.dat
 // 0 Author: Evert-Jan Boer [ejboer]
-// 0 !LDRAW_ORG Subpart UPDATE 2024-08
+// 0 !LDRAW_ORG Subpart UPDATE 2024-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -12,7 +12,8 @@ function ldraw_lib__s__6062886gs01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2024-09-30 [OrionP] Official Update 2024-08
-// 
+// 0 !HISTORY 2024-10-01 [MagFors] Corrected description
+// 0 !HISTORY 2024-10-27 [OrionP] Official Update 2024-09
 // 
 // 1 16 -35.25 0 6.5 0 0 -1 0 1 0 1 0 0 1-4chrd.dat
   [1,16,-35.25,0,6.5,0,0,-1,0,1,0,1,0,0, ldraw_lib__1_4chrd()],

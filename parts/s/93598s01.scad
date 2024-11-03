@@ -11,10 +11,10 @@ use <../../p/rect1.scad>
 use <../../p/stud2.scad>
 use <../../p/stud3.scad>
 function ldraw_lib__s__93598s01() = [
-// 0 ~Windscreen  2 x  4 x  2 - 3 Wide without Front Face
+// 0 ~Windscreen  2 x  3 x  2 with  2 x  4 Base without Front Face
 // 0 Name: s\93598s01.dat
 // 0 Author: Magnus Forsberg [MagFors]
-// 0 !LDRAW_ORG Subpart UPDATE 2011-02
+// 0 !LDRAW_ORG Subpart UPDATE 2024-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -22,7 +22,8 @@ function ldraw_lib__s__93598s01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02
-// 
+// 0 !HISTORY 2024-10-06 [MagFors] Unified description
+// 0 !HISTORY 2024-10-27 [OrionP] Official Update 2024-09
 // 
 // 1 16 -30 44 -10 1 0 0 0 -1 0 0 0 1 stud3.dat
   [1,16,-30,44,-10,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud3()],

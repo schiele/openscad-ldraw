@@ -6,17 +6,19 @@ function ldraw_lib__3626cpb9() = [
 // 0 Minifig Head with Black Eyebrows and Cheek Lines 2-Sided Pattern
 // 0 Name: 3626cpb9.dat
 // 0 Author: Magnus Forsberg [MagFors]
-// 0 !LDRAW_ORG Part UPDATE 2013-01
+// 0 !LDRAW_ORG Part UPDATE 2024-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Super Heroes, Superman
+// 0 !KEYWORDS Bricklink 3626cbp0636, Brickowl 115871, Rebrickable 3626cpr0901
+// 0 !KEYWORDS Set 6862, Set 76028, Super Heroes, Superman
 // 
 // 0 !HISTORY 2013-07-21 [PTadmin] Official Update 2013-01
-// 
+// 0 !HISTORY 2024-10-26 [Lego-Manfred] Reference and sets added
+// 0 !HISTORY 2024-10-27 [OrionP] Official Update 2024-09
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3626cs02.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626cs02()],

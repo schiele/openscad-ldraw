@@ -8,15 +8,19 @@ function ldraw_lib__3626cp8i() = [
 // 0 Minifig Head with Black Eyebrows, Chin Dimple and Lopsided Grin Pattern
 // 0 Name: 3626cp8i.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2016-01
+// 0 !LDRAW_ORG Part UPDATE 2024-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !HISTORY 2016-12-31 [PTadmin] Official Update 2016-01
+// 0 !KEYWORDS Bricklink 3626cpb0857, Brickowl 253511, Rebrickable 3626cpr1147
+// 0 !KEYWORDS Set 40175, Set 60062, set 60103
 // 
+// 0 !HISTORY 2016-12-31 [PTadmin] Official Update 2016-01
+// 0 !HISTORY 2024-10-26 [Lego-Manfred] Reference and sets added
+// 0 !HISTORY 2024-10-27 [OrionP] Official Update 2024-09
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3626cs01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626cs01()],

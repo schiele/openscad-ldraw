@@ -7,14 +7,16 @@ function ldraw_lib__3626bps5() = [
 // 0 Minifig Head with SW Smirk and Brown Eyebrows Pattern
 // 0 Name: 3626bps5.dat
 // 0 Author: Franklin W. Cain [fwcain]
-// 0 !LDRAW_ORG Part UPDATE 2012-02
+// 0 !LDRAW_ORG Part UPDATE 2024-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Classic Trilogy, Han Solo, Harrison Ford, Star Wars
+// 0 !KEYWORDS Bricklink 3626bps5, Brickowl 998192, Classic Trilogy, Han Solo
+// 0 !KEYWORDS Harrison Ford, Rebrickable 3626bpr0342, Set 10179, Set 10188
+// 0 !KEYWORDS Set 6212, Star Wars
 // 
 // 0 !HISTORY 2002-04-25 [PTadmin] Official Update 2002-02
 // 0 !HISTORY 2004-04-15 [westrate] added torus primitives
@@ -23,7 +25,8 @@ function ldraw_lib__3626bps5() = [
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
 // 0 !HISTORY 2012-04-06 [TK-949] Complete Rewrite
 // 0 !HISTORY 2012-08-09 [PTadmin] Official Update 2012-02
-// 
+// 0 !HISTORY 2024-10-26 [Lego-Manfred] Reference and sets added
+// 0 !HISTORY 2024-10-27 [OrionP] Official Update 2024-09
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3626bs02.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626bs02()],

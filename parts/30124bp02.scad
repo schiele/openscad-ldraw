@@ -3,10 +3,10 @@ use <s/30124bp02s01.scad>
 use <s/30124bs01.scad>
 use <s/30124bs05.scad>
 function ldraw_lib__30124bp02() = [
-// 0 Minifig Helmet Modern with Red Lines and White Stars Pattern
+// 0 Minifig Helmet Standard with Red Lines and White Stars Pattern
 // 0 Name: 30124bp02.dat
 // 0 Author: Chris Böhnke [KnightOfTarenta]
-// 0 !LDRAW_ORG Part UPDATE 2024-07
+// 0 !LDRAW_ORG Part UPDATE 2024-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 !HELP place visor at y= 8 z= 0.7
@@ -23,6 +23,8 @@ function ldraw_lib__30124bp02() = [
 // 0 !KEYWORDS Set 6539, Set 6543, set 9293, town
 // 
 // 0 !HISTORY 2024-08-26 [OrionP] Official Update 2024-07
+// 0 !HISTORY 2024-10-02 [Holly-Wood] Sanded description
+// 0 !HISTORY 2024-10-27 [OrionP] Official Update 2024-09
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\30124bs01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30124bs01()],

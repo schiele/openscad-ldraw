@@ -9,15 +9,16 @@ function ldraw_lib__3626bps3() = [
 // 0 Minifig Head with SW Small Black Eyebrows Pattern
 // 0 Name: 3626bps3.dat
 // 0 Author: Franklin W. Cain [fwcain]
-// 0 !LDRAW_ORG Part UPDATE 2012-02
+// 0 !LDRAW_ORG Part UPDATE 2024-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS face, Luke Skywalker (1999), Mark Hamill, Original Trilogy, serious
-// 0 !KEYWORDS Star Wars
+// 0 !KEYWORDS Bricklink 3626bps3, Brickowl 646047, face, Luke Skywalker (1999)
+// 0 !KEYWORDS Mark Hamill, Original Trilogy, Rebrickable 3626bpr0277, serious
+// 0 !KEYWORDS Set 4483, Set 4500, set 4502, Star Wars
 // 
 // 0 !CMDLINE -c14
 // 
@@ -28,7 +29,8 @@ function ldraw_lib__3626bps3() = [
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
 // 0 !HISTORY 2012-04-08 [TK-949] Complete Rewrite
 // 0 !HISTORY 2012-08-09 [PTadmin] Official Update 2012-02
-// 
+// 0 !HISTORY 2024-10-26 [Lego-Manfred] Reference and sets added
+// 0 !HISTORY 2024-10-27 [OrionP] Official Update 2024-09
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3626bs02.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626bs02()],

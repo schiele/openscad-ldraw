@@ -4,10 +4,10 @@ use <s/30124bs04.scad>
 use <s/30124bs05.scad>
 use <s/30124bs06.scad>
 function ldraw_lib__30124bp04() = [
-// 0 Minifig Helmet Modern with Black "POLICE" and Red Line Pattern
+// 0 Minifig Helmet Standard with Black 'POLICE' and Red Line Pattern
 // 0 Name: 30124bp04.dat
 // 0 Author: Chris Böhnke [KnightOfTarenta]
-// 0 !LDRAW_ORG Part UPDATE 2024-08
+// 0 !LDRAW_ORG Part UPDATE 2024-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 !HELP place visor at y= 8 z= 0.7
@@ -17,11 +17,14 @@ function ldraw_lib__30124bp04() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS city center, dacta, Paula, police, Set 3350, Set 4304, Set 5393
+// 0 !KEYWORDS Bricklink 2446px2, Brickowl 653327, city center, dacta, Paula
+// 0 !KEYWORDS police, Rebrickable 2446pr0040, Set 3350, Set 4304, Set 5393
 // 0 !KEYWORDS Set 6324, Set 6326, set 6332, Set 6344, set 6348, set 6549, set 6636
 // 0 !KEYWORDS Set 6664, set 9293, town
 // 
 // 0 !HISTORY 2024-09-30 [OrionP] Official Update 2024-08
+// 0 !HISTORY 2024-10-16 [Holly-Wood] Sanded title, Added keywords
+// 0 !HISTORY 2024-10-27 [OrionP] Official Update 2024-09
 // 
 // 0 // Base Part
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\30124bs01.dat

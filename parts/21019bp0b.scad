@@ -3,10 +3,10 @@ use <20460bp0a.scad>
 use <20461bp0a.scad>
 use <3815b.scad>
 function ldraw_lib__21019bp0b() = [
-// 0 Minifig Hips and Legs Dual Mould with Reddish Brown Lower Leg and Hips Pattern
+// 0 Minifig Hips and Legs with Reddish Brown Lower Leg and Hips Pattern
 // 0 Name: 21019bp0b.dat
 // 0 Author: Magnus Forsberg [MagFors]
-// 0 !LDRAW_ORG Shortcut UPDATE 2023-03
+// 0 !LDRAW_ORG Shortcut UPDATE 2024-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 !HELP Move at z=1.25 relative to stud grid
@@ -17,12 +17,13 @@ function ldraw_lib__21019bp0b() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickowl 370966, CMF, Collectible Minifigures
+// 0 !KEYWORDS Bricklink 970c110pb02, Brickowl 370966, CMF, Collectible Minifigures
 // 0 !KEYWORDS Rebrickable 970c38pat19, series 1, set 71017, Super Heroes
-// 0 !KEYWORDS The LEGO Batman Movie, Bricklink 970c110pb02
+// 0 !KEYWORDS The Lego Batman Movie
 // 
 // 0 !HISTORY 2023-06-24 [OrionP] Official Update 2023-03
-// 
+// 0 !HISTORY 2024-10-06 [MagFors] Update description
+// 0 !HISTORY 2024-10-27 [OrionP] Official Update 2024-09
 // 
 // 1 70 0 0 0 1 0 0 0 1 0 0 0 1 3815b.dat
   [1,70,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3815b()],

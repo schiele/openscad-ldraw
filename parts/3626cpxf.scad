@@ -2,19 +2,22 @@ use <../lib.scad>
 use <s/3626cs02.scad>
 use <../p/t04o6250.scad>
 function ldraw_lib__3626cpxf() = [
-// 0 Minifig Head with Brow Eyebrows, Dark Tan Freckles and Crooked Smile/Worried Mouth 2-Sided Pattern
+// 0 Minifig Head with Brown Eyebrows, Dark Tan Freckles and Crooked Smile/Worried Mouth 2-Sided Pattern
 // 0 Name: 3626cpxf.dat
 // 0 Author: Evert-Jan Boer [ejboer]
-// 0 !LDRAW_ORG Part UPDATE 2024-07
+// 0 !LDRAW_ORG Part UPDATE 2024-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626cpb1776, Robin, set 71264
+// 0 !KEYWORDS Bricklink 3626cpb1776, Brickowl 623322, Robin
+// 0 !KEYWORDS Set 71264 Rebrickable 3626cpr2228, Story pack, The Lego Batman Movie
 // 
 // 0 !HISTORY 2024-08-26 [OrionP] Official Update 2024-07
+// 0 !HISTORY 2024-10-01 [Holly-Wood] Sanded description
+// 0 !HISTORY 2024-10-27 [OrionP] Official Update 2024-09
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3626cs02.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626cs02()],

@@ -7,17 +7,19 @@ function ldraw_lib__3626cpcbe() = [
 // 0 Minifig Head with Brown Bushy Moustache and Eyebrows and Black Chin Strap Pattern
 // 0 Name: 3626cpcbe.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2015-02
+// 0 !LDRAW_ORG Part UPDATE 2024-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bobby, Constable, Series 11
+// 0 !KEYWORDS Bobby, Bricklink 3626cpb0999, Brickowl 222494, CMF Series 11
+// 0 !KEYWORDS Constable, Rebrickable 3626cpr1239
 // 
 // 0 !HISTORY 2015-12-30 [PTadmin] Official Update 2015-02
-// 
+// 0 !HISTORY 2024-10-26 [Lego-Manfred] Reference added
+// 0 !HISTORY 2024-10-27 [OrionP] Official Update 2024-09
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3626cs01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626cs01()],

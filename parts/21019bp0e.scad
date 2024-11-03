@@ -3,10 +3,10 @@ use <20460bp0e.scad>
 use <20461bp0e.scad>
 use <3815b.scad>
 function ldraw_lib__21019bp0e() = [
-// 0 Minifig Hips and Legs Dual Mould with Dark Orange Lower Leg Pattern
+// 0 Minifig Hips and Legs with Dark Orange Lower Leg Pattern
 // 0 Name: 21019bp0e.dat
 // 0 Author: Magnus Forsberg [MagFors]
-// 0 !LDRAW_ORG Shortcut UPDATE 2023-03
+// 0 !LDRAW_ORG Shortcut UPDATE 2024-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 !HELP Move at z=1.25 relative to stud grid
@@ -17,11 +17,13 @@ function ldraw_lib__21019bp0e() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS cowboy, set 10766, Woody, Brickowl 136046, Rebrickable 970c28pat41
-// 0 !KEYWORDS set 10767 set 43212, set 10770, Bricklink 970c00pb0970
+// 0 !KEYWORDS Bricklink 970c00pb0970, Brickowl 136046, cowboy
+// 0 !KEYWORDS Rebrickable 970c28pat41, set 10766, set 10767 set 43212, set 10770
+// 0 !KEYWORDS Woody
 // 
 // 0 !HISTORY 2023-06-24 [OrionP] Official Update 2023-03
-// 
+// 0 !HISTORY 2024-10-06 [MagFors] Update description
+// 0 !HISTORY 2024-10-27 [OrionP] Official Update 2024-09
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 3815b.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3815b()],

@@ -5,17 +5,19 @@ function ldraw_lib__3939d01() = [
 // 0 Slope Brick 33  3 x  6 with Coastguard Sticker
 // 0 Name: 3939d01.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
-// 0 !LDRAW_ORG Shortcut UPDATE 2022-05
+// 0 !LDRAW_ORG Shortcut UPDATE 2024-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Sticker Shortcut
 // 0 !KEYWORDS boat, Bricklink 3939pb06, Coastal cutter, Set 6353, ship
 // 
 // 0 !HISTORY 2022-09-15 [PTadmin] Official Update 2022-05
-// 
+// 0 !HISTORY 2024-05-12 [RainbowDolphin] Corrected mirrored sticker
+// 0 !HISTORY 2024-10-27 [OrionP] Official Update 2024-09
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 3939.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3939()],

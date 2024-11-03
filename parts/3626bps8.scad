@@ -7,21 +7,23 @@ function ldraw_lib__3626bps8() = [
 // 0 Minifig Head with SW Darth Maul Pattern
 // 0 Name: 3626bps8.dat
 // 0 Author: Nils Schmidt [BlackBrick89]
-// 0 !LDRAW_ORG Part UPDATE 2011-02
+// 0 !LDRAW_ORG Part UPDATE 2024-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS apprentice, Episode One, Sith Infiltrator, Sith Lord, Star Wars
-// 0 !KEYWORDS villian
+// 0 !KEYWORDS apprentice, Bricklink 3626bps8, Brickowl 56194, Episode One
+// 0 !KEYWORDS Rebrickable 3626bpr0815, Set 7101, set 7151, set 7663
+// 0 !KEYWORDS Sith Infiltrator, Sith Lord, Star Wars, villian
 // 
 // 0 !CMDLINE -c0
 // 
 // 0 !HISTORY 2011-10-20 [BlackBrick89] CA rewrite
 // 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02
-// 
+// 0 !HISTORY 2024-10-26 [Lego-Manfred] Reference and sets added
+// 0 !HISTORY 2024-10-27 [OrionP] Official Update 2024-09
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3626bs02.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626bs02()],

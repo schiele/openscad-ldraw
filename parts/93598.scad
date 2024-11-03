@@ -2,10 +2,10 @@ use <../lib.scad>
 use <../p/1-4cyli.scad>
 use <s/93598s01.scad>
 function ldraw_lib__93598() = [
-// 0 Windscreen  2 x  3 x  2 on  2 x  4 Base
+// 0 Windscreen  2 x  3 x  2 with  2 x  4 Base
 // 0 Name: 93598.dat
 // 0 Author: Magnus Forsberg [MagFors]
-// 0 !LDRAW_ORG Part UPDATE 2013-01
+// 0 !LDRAW_ORG Part UPDATE 2024-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -15,7 +15,8 @@ function ldraw_lib__93598() = [
 // 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02
 // 0 !HISTORY 2013-04-01 [cwdee] Update description
 // 0 !HISTORY 2013-07-21 [PTadmin] Official Update 2013-01
-// 
+// 0 !HISTORY 2024-10-06 [MagFors] Unified description
+// 0 !HISTORY 2024-10-27 [OrionP] Official Update 2024-09
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\93598s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__93598s01()],

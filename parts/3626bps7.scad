@@ -11,17 +11,18 @@ function ldraw_lib__3626bps7() = [
 // 0 Minifig Head with SW Black Eyebrows and Dark Grey Scars Pattern
 // 0 Name: 3626bps7.dat
 // 0 Author: Franklin W. Cain [fwcain]
-// 0 !LDRAW_ORG Part UPDATE 2020-01
+// 0 !LDRAW_ORG Part UPDATE 2024-09
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Anakin Skywalker, bad guy, burn marks, Classic Trilogy, Darth Vader
-// 0 !KEYWORDS Empire, evil, eyebrows, face, frown, grim, pockets under eyes, scar
-// 0 !KEYWORDS scarred, scars, sith, Sith Lord, Star Wars, sunken eye sockets
-// 0 !KEYWORDS villain, wrinkles
+// 0 !KEYWORDS Anakin Skywalker, bad guy, Bricklink 3626cps7, Brickowl 88433
+// 0 !KEYWORDS burn marks, Classic Trilogy, Darth Vader, Empire, evil, eyebrows
+// 0 !KEYWORDS face, frown, grim, pockets under eyes, Rebrickable 3626cpr2864, scar
+// 0 !KEYWORDS scarred, scars, Set 76261, sith, Sith Lord, Star Wars
+// 0 !KEYWORDS sunken eye sockets, villain, wrinkles
 // 
 // 0 !HISTORY 2002-06-11 [PTadmin] Official Update 2002-03
 // 0 !HISTORY 2007-06-29 [PTadmin] Header formatted for Contributor Agreement
@@ -29,7 +30,8 @@ function ldraw_lib__3626bps7() = [
 // 0 !HISTORY 2012-06-01 [TK-949] Complete Rewrite
 // 0 !HISTORY 2019-02-01 [Holly-Wood] Closed gaps
 // 0 !HISTORY 2020-06-28 [PTadmin] Official Update 2020-01
-// 
+// 0 !HISTORY 2024-10-26 [Lego-Manfred] Reference and sets added
+// 0 !HISTORY 2024-10-27 [OrionP] Official Update 2024-09
 // 
 // 0 // Subfiles
 // 

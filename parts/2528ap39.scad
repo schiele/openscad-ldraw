@@ -13,7 +13,7 @@ function ldraw_lib__2528ap39() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Bricklink 2528pb05, Set 3817, Spongebob, SquarePants
+// 0 !KEYWORDS Bricklink 2528pb05, Set 3817, SpongeBob, SquarePants
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
 // 
