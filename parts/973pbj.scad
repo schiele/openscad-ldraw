@@ -2,20 +2,22 @@ use <../lib.scad>
 use <../p/1-4cyli.scad>
 use <s/973s01.scad>
 function ldraw_lib__973pbj() = [
-// 0 Minifig Torso Female with Jacket, 2 Pockets, Buttons, Gold Necklace Pattern
+// 0 Minifig Torso with Female Jacket with 2 Pockets, Buttons, Gold Necklace Pattern
 // 0 Name: 973pbj.dat
 // 0 Author: Magnus Forsberg [MagFors]
-// 0 !LDRAW_ORG Part UPDATE 2013-02
+// 0 !LDRAW_ORG Part UPDATE 2024-11
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Iron Man, Pepper Potts
+// 0 !KEYWORDS Bricklink 973pb1396, Iron Man, Malibu Mansion, Pepper Potts
+// 0 !KEYWORDS set 76007
 // 
 // 0 !HISTORY 2013-12-23 [PTadmin] Official Update 2013-02
-// 
+// 0 !HISTORY 2024-12-28 [MagFors] Update description and keywords
+// 0 !HISTORY 2024-12-30 [OrionP] Official Update 2024-11
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],

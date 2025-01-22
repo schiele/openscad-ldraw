@@ -2,20 +2,22 @@ use <../lib.scad>
 use <../p/1-4cyli.scad>
 use <s/973s01.scad>
 function ldraw_lib__973p99() = [
-// 0 Minifig Torso Hoodie with Zipper over Lime and Green Striped Shirt Pattern
+// 0 Minifig Torso with Hoodie with Zipper over Lime and Green Striped Shirt Pattern
 // 0 Name: 973p99.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2019-01
+// 0 !LDRAW_ORG Part UPDATE 2024-11
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb2346
+// 0 !KEYWORDS Bricklink 973pb2346, set 21310, set 31084, Set 40346, Set 60154
+// 0 !KEYWORDS Set 60271, Set 60306
 // 
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
-// 
+// 0 !HISTORY 2024-12-28 [MagFors] Update description and keywords
+// 0 !HISTORY 2024-12-30 [OrionP] Official Update 2024-11
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],

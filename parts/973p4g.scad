@@ -2,26 +2,27 @@ use <../lib.scad>
 use <../p/1-4cyli.scad>
 use <s/973s01.scad>
 function ldraw_lib__973p4g() = [
-// 0 Minifig Torso with Castle Female Armour Pattern
+// 0 Minifig Torso with Female Castle Armour Pattern
 // 0 Name: 973p4g.dat
 // 0 Author: Matt Schild [mschild]
-// 0 !LDRAW_ORG Part UPDATE 2012-03
+// 0 !LDRAW_ORG Part UPDATE 2025-01
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Armor, breastplate, chrome, gold, Joan of Arc, Knights Kingdom
-// 0 !KEYWORDS plate armour, plate mail, Princess, Princess Storm, shield-maiden
-// 0 !KEYWORDS silver, Warrior
+// 0 !KEYWORDS Armor, breastplate, Bricklink 973px116, chrome, gold, Joan of Arc
+// 0 !KEYWORDS Knights Kingdom, plate armour, plate mail, Princess, Princess Storm
+// 0 !KEYWORDS Set 4816, Set 6091, Set 6098, shield-maiden, silver, Warrior
 // 
 // 0 !HISTORY 2003-03-12 [PTadmin] Official Update 2003-01
 // 0 !HISTORY 2007-07-29 [PTadmin] Header formatted for Contributor Agreement
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
 // 0 !HISTORY 2012-04-08 [BlackBrick89] Colour cleanup;BFCed;Inlined subfile
 // 0 !HISTORY 2012-12-28 [PTadmin] Official Update 2012-03
-// 
+// 0 !HISTORY 2025-01-17 [MagFors] Update description, added keywords
+// 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],

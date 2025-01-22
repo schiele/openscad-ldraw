@@ -5,18 +5,21 @@ use <s/973p7ma.scad>
 use <s/973p7na.scad>
 use <s/973s01.scad>
 function ldraw_lib__973p7n() = [
-// 0 Minifig Torso w/ Leather Jacket, Badge, "POLICE" Back Pattern
+// 0 Minifig Torso with Leather Jacket, Badge, "POLICE" Back Pattern
 // 0 Name: 973p7n.dat
 // 0 Author: Nils Schmidt [BlackBrick89]
-// 0 !LDRAW_ORG Part UPDATE 2012-02
+// 0 !LDRAW_ORG Part UPDATE 2024-11
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !HISTORY 2012-08-09 [PTadmin] Official Update 2012-02
+// 0 !KEYWORDS Bricklink 973pb0797, Set 30014, Set 3658, Set 7279, Set 7288
 // 
+// 0 !HISTORY 2012-08-09 [PTadmin] Official Update 2012-02
+// 0 !HISTORY 2024-12-23 [MagFors] Update description and keywords
+// 0 !HISTORY 2024-12-30 [OrionP] Official Update 2024-11
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],

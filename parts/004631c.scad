@@ -12,7 +12,7 @@ function ldraw_lib__004631c() = [
 // 0 Sticker  1 x  3.5 with Red "L-386"
 // 0 Name: 004631c.dat
 // 0 Author: Niels Karsdorp [nielsk]
-// 0 !LDRAW_ORG Part UPDATE 2011-02
+// 0 !LDRAW_ORG Part UPDATE 2024-11
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -21,7 +21,8 @@ function ldraw_lib__004631c() = [
 // 
 // 0 !HISTORY 2008-01-10 [mikeheide] fixed bowtie quad
 // 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02
-// 
+// 0 !HISTORY 2024-12-27 [OrionP] Correct comment error
+// 0 !HISTORY 2024-12-30 [OrionP] Official Update 2024-11
 // 
 // 0 // L-
 // 
@@ -213,7 +214,7 @@ function ldraw_lib__004631c() = [
   [4,15,16.8,-.25,8.4,16.8,-.25,3.125,17.3,-.25,2.2,18.1,-.25,8.4],
 // 4 15 18.1 -.25 8.4 17.3 -.25 2.2 17.3 -.25 -8.2 18.1 -.25 -8.2
   [4,15,18.1,-.25,8.4,17.3,-.25,2.2,17.3,-.25,-8.2,18.1,-.25,-8.2],
-// 0 -- 6
+// 0 // 6
 // 1 4 25 -.25 -2.4 2.9 0 0 0 1 0 0 0 2.9 4-4ndis.dat
   [1,4,25,-.25,-2.4,2.9,0,0,0,1,0,0,0,2.9, ldraw_lib__4_4ndis()],
 // 1 4 24.7 -.25 3.9 6 0 0 0 1 0 0 0 4.5 1-4chrd.dat

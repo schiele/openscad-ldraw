@@ -17,7 +17,7 @@ function ldraw_lib__2475() = [
 // 0 Brush Holder Car Wash
 // 0 Name: 2475.dat
 // 0 Author: Bernd Broich [bbroich]
-// 0 !LDRAW_ORG Part UPDATE 2024-02
+// 0 !LDRAW_ORG Part UPDATE 2025-01
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -35,6 +35,8 @@ function ldraw_lib__2475() = [
 // 0 !HISTORY 2013-12-23 [PTadmin] Official Update 2013-02
 // 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
 // 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
+// 0 !HISTORY 2025-01-19 [OrionP] Fix comment errors
+// 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 
 // 0 // Left End
 // 
@@ -428,7 +430,7 @@ function ldraw_lib__2475() = [
   [5,24,80,55.5,-4.25,77,55.5,-4.25,80,58.5,-6.25,80,51.5355,-3.5355],
 // 5 24 80 55.5 4.25 77 55.5 4.25 80 58.5 6.25 80 51.5355 3.5355
   [5,24,80,55.5,4.25,77,55.5,4.25,80,58.5,6.25,80,51.5355,3.5355],
-// 0 Right End
+// 0 // Right End
 // 1 16 -63.5 0 0 0 -1 0 0 0 -0.5 -0.5 0 0 1-4ring12.dat
   [1,16,-63.5,0,0,0,-1,0,0,0,-0.5,-0.5,0,0, ldraw_lib__1_4ring12()],
 // 1 16 -63.5 0 0 0 -1 0 0 0 -0.5 0.5 0 0 1-4ring12.dat
@@ -819,7 +821,7 @@ function ldraw_lib__2475() = [
   [5,24,-80,55.5,-4.25,-77,55.5,-4.25,-80,58.5,-6.25,-80,51.5355,-3.5355],
 // 5 24 -80 55.5 4.25 -77 55.5 4.25 -80 58.5 6.25 -80 51.5355 3.5355
   [5,24,-80,55.5,4.25,-77,55.5,4.25,-80,58.5,6.25,-80,51.5355,3.5355],
-// 0 Shaft
+// 0 // Shaft
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 63.5 0 0 0 -127 0 0 0 -6.5 6.5 0 0 2-4cyli.dat

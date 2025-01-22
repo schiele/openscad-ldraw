@@ -2,20 +2,22 @@ use <../lib.scad>
 use <../p/1-4cyli.scad>
 use <s/973s01.scad>
 function ldraw_lib__973pu1() = [
-// 0 Minifig Torso Female with Zipper, Magenta and Medium Azure Markings Pattern
+// 0 Minifig Torso with Female Hoodie with Zipper, Magenta and Medium Azure Markings Pattern
 // 0 Name: 973pu1.dat
 // 0 Author: Evert-Jan Boer [ejboer]
-// 0 !LDRAW_ORG Part UPDATE 2020-02
+// 0 !LDRAW_ORG Part UPDATE 2024-11
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb1562, The LEGO Movie, Wyldstyle
+// 0 !KEYWORDS Bricklink 973pb1562, set 30281, set 70801, Set 70803, set 70808
+// 0 !KEYWORDS Set 70810, Set 70819, Set 71200, The LEGO Movie, Wyldstyle
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
-// 
+// 0 !HISTORY 2024-12-25 [MagFors] Update description and keywords
+// 0 !HISTORY 2024-12-30 [OrionP] Official Update 2024-11
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],

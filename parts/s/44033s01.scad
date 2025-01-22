@@ -4,10 +4,10 @@ use <../../p/2-4disc.scad>
 use <../../p/2-4edge.scad>
 use <../../p/2-4ndis.scad>
 function ldraw_lib__s__44033s01() = [
-// 0 ~Technic Bionicle Weapon Blade 12L Blade Centre - Half
+// 0 ~Constraction Blade 12L Curved with  2 Pinholes and Axle - Half
 // 0 Name: s\44033s01.dat
 // 0 Author: Santeri Piippo [arezey]
-// 0 !LDRAW_ORG Subpart UPDATE 2012-02
+// 0 !LDRAW_ORG Subpart UPDATE 2024-10
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -15,7 +15,8 @@ function ldraw_lib__s__44033s01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2012-08-09 [PTadmin] Official Update 2012-02
-// 
+// 0 !HISTORY 2024-11-17 [MagFors] Update description
+// 0 !HISTORY 2024-12-01 [OrionP] Official Update 2024-10
 // 
 // 3 16 2 -15.924 -210 2 -15.697 -205.308 4 -27.071 -184.379
   [3,16,2,-15.924,-210,2,-15.697,-205.308,4,-27.071,-184.379],
@@ -876,7 +877,6 @@ function ldraw_lib__s__44033s01() = [
   [5,24,7,-12.87,-117.63,7,-12.87,-114.476,3,-27.867,-115.128,4,-2.62,-116.948],
 // 5 24 6 -13.87 -142.63 6 -13.87 -139.476 3 -27.867 -140.128 4 -9.37 -141.948
   [5,24,6,-13.87,-142.63,6,-13.87,-139.476,3,-27.867,-140.128,4,-9.37,-141.948],
-// 0 //
 ];
 module ldraw_lib__s__44033s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
     makepoly(ldraw_lib__s__44033s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);

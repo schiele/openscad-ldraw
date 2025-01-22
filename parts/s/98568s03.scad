@@ -16,10 +16,10 @@ use <../../p/rect2p.scad>
 use <../../p/rect3.scad>
 use <98568s01.scad>
 function ldraw_lib__s__98568s03() = [
-// 0 ~Technic Sword 11.5L with Sawtooth Back Hilt and Back
+// 0 ~Constraction Blade 11.5L with Sawtooth Back - Hilt and Back
 // 0 Name: s\98568s03.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Subpart UPDATE 2013-02
+// 0 !LDRAW_ORG Subpart UPDATE 2024-10
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -31,7 +31,8 @@ function ldraw_lib__s__98568s03() = [
 // 0 !HISTORY 2013-07-21 [PTadmin] Official Update 2013-01
 // 0 !HISTORY 2013-08-04 [cwdee] Correct tag in first HISTORY line
 // 0 !HISTORY 2013-12-23 [PTadmin] Official Update 2013-02
-// 
+// 0 !HISTORY 2024-11-17 [MagFors] Update description
+// 0 !HISTORY 2024-12-01 [OrionP] Official Update 2024-10
 // 
 // 1 16 0 0 0 1 0 0 0 0 1 0 -20 0 axle.dat
   [1,16,0,0,0,1,0,0,0,0,1,0,-20,0, ldraw_lib__axle()],

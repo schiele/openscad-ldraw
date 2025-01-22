@@ -7,11 +7,13 @@ function ldraw_lib__4221858() = [
 // 0 Name: 4221858.dat
 // 0 Author: Joshua Delahunty [dulcaoin]
 // 0 !LDRAW_ORG Shortcut Physical_Colour UPDATE 2019-02
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
+// 
+// 0 !CATEGORY Minifig
 // 
 // 0 !HISTORY 2007-10-11 [cwdee] Corrected colours
 // 0 !HISTORY 2010-07-05 [PTadmin] Official Update 2010-02

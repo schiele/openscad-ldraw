@@ -3,16 +3,19 @@ function ldraw_lib__004239a() = [
 // 0 Sticker  3.5 x 14 "USS Constellation" on Scroll
 // 0 Name: 004239a.dat
 // 0 Author: Howard Lande [HowardLande]
-// 0 !LDRAW_ORG Part UPDATE 2019-01
+// 0 !LDRAW_ORG Part UPDATE 2024-11
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS Bricklink 398stk01, Brickowl 56405, Rebrickable 4239, Set 398
+// 
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
 // 0 !HISTORY 2019-09-15 [Holly-Wood] Closed gaps, reduced complexity, changed orientation, added small box
-// 
+// 0 !HISTORY 2024-12-19 [OrionP] Added KEYWORDS
+// 0 !HISTORY 2024-12-30 [OrionP] Official Update 2024-11
 // 
 // 0 // Pattern
 // 0 // Black

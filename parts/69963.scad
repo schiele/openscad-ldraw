@@ -25,10 +25,10 @@ use <../p/stud4.scad>
 use <../p/stug-2x2.scad>
 use <../p/stug2-2x2.scad>
 function ldraw_lib__69963() = [
-// 0 Plate  2 x  4 with Steering Axle Socket
+// 0 Car Wheel Holder Plate  2 x  4 for Tilt Steering
 // 0 Name: 69963.dat
 // 0 Author: Magnus Forsberg [MagFors]
-// 0 !LDRAW_ORG Part UPDATE 2024-05
+// 0 !LDRAW_ORG Part UPDATE 2024-10
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -36,6 +36,8 @@ function ldraw_lib__69963() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2024-06-30 [OrionP] Official Update 2024-05
+// 0 !HISTORY 2024-11-29 [MagFors] Update description
+// 0 !HISTORY 2024-12-01 [OrionP] Official Update 2024-10
 // 
 // 1 16 -20 20 0 -1 0 0 0 -1 0 0 0 -1 stud4.dat
   [1,16,-20,20,0,-1,0,0,0,-1,0,0,0,-1, ldraw_lib__stud4()],

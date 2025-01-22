@@ -2,20 +2,25 @@ use <../lib.scad>
 use <../p/1-4cyli.scad>
 use <s/973s01.scad>
 function ldraw_lib__973p9w() = [
-// 0 Minifig Torso with Suit Jacket, Pink Shirt and Magenta Scarf Pattern
+// 0 Minifig Torso with Female Suit Jacket, Pink Shirt and Magenta Scarf Pattern
 // 0 Name: 973p9w.dat
 // 0 Author: Evert-Jan Boer [ejboer]
-// 0 !LDRAW_ORG Part UPDATE 2020-02
+// 0 !LDRAW_ORG Part UPDATE 2024-11
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb0639
+// 0 !KEYWORDS Bricklink 973pb0639, Creator, set 10211, Set 10216, Set 10224
+// 0 !KEYWORDS set 10229, set 10235, set 10247, Set 10249, set 10260, Set 21110
+// 0 !KEYWORDS set 2824, Set 31036, Set 3182, Set 3222, Set 3661, Set 4000008
+// 0 !KEYWORDS Set 4000014, Set 60017, Set 60022, Set 60097, Set 60119, Set 60228
+// 0 !KEYWORDS Set 7848, set 8404
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
-// 
+// 0 !HISTORY 2024-12-27 [MagFors] Update description and keywords
+// 0 !HISTORY 2024-12-30 [OrionP] Official Update 2024-11
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],

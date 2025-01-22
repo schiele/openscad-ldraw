@@ -2,10 +2,10 @@ use <../lib.scad>
 use <003605e.scad>
 use <3040a.scad>
 function ldraw_lib__3040ad02() = [
-// 0 Slope Brick 45  1 x  2 with Life Preserver Right Sticker
+// 0 Slope Brick 45  2 x  1 with Life Preserver Right Sticker
 // 0 Name: 3040ad02.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
-// 0 !LDRAW_ORG Shortcut UPDATE 2024-08
+// 0 !LDRAW_ORG Shortcut UPDATE 2024-11
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -16,6 +16,8 @@ function ldraw_lib__3040ad02() = [
 // 0 !KEYWORDS Bricklink 3040apb01R, Fuel tanker, set 373-1
 // 
 // 0 !HISTORY 2024-09-30 [OrionP] Official Update 2024-08
+// 0 !HISTORY 2024-12-23 [MagFors] Update description
+// 0 !HISTORY 2024-12-30 [OrionP] Official Update 2024-11
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 3040a.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3040a()],

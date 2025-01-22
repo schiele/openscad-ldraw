@@ -4,12 +4,14 @@ function ldraw_lib__2345p44() = [
 // 0 Panel Wall  3 x  3 x  6 Corner with Blacktron I Logo Pattern
 // 0 Name: 2345p44.dat
 // 0 Author: Jonathan Wilson [jonwil]
-// 0 !LDRAW_ORG Part UPDATE 2009-01
+// 0 !LDRAW_ORG Part UPDATE 2025-01
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
+// 
+// 0 !KEYWORDS Bricklink 2345p44, BrickOwl 520762, Rebrickable 2345pr0005, Set 6894
 // 
 // 0 !HISTORY 1999-03-26 [PTadmin] Official Update 1999-02
 // 0 !HISTORY 1999-04-01 [leozide] redone
@@ -22,7 +24,8 @@ function ldraw_lib__2345p44() = [
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
 // 0 !HISTORY 2008-07-07 [cwdee] Insert edge lines removed from subpart (2005-08-22)
 // 0 !HISTORY 2009-05-02 [PTadmin] Official Update 2009-01
-// 
+// 0 !HISTORY 2025-01-19 [OrionP] Fix comment errors, added keywords
+// 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2345s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2345s01()],
@@ -30,7 +33,7 @@ function ldraw_lib__2345p44() = [
   [2,24,30,24,10,30,120,10],
 // 2 24 -10 24 -30 -10 120 -30
   [2,24,-10,24,-30,-10,120,-30],
-// 0 Pattern
+// 0 // Pattern
 // 4 16 -10 120 -30 -10 24 -30 -30 24 -30 -30 120 -30
   [4,16,-10,120,-30,-10,24,-30,-30,24,-30,-30,120,-30],
 // 4 16 30 24 30 30 24 10 30 120 10 30 120 30
@@ -42,7 +45,7 @@ function ldraw_lib__2345p44() = [
 // 3 14 17.5 74 -2.5 2.5 74 -17.5 10 96 -10
   [3,14,17.5,74,-2.5,2.5,74,-17.5,10,96,-10],
 // 
-// 0 Fill the rest with color 16
+// 0 // Fill the rest with color 16
 // 3 16 2.5 74 -17.5 17.5 74 -2.5 10 52 -10
   [3,16,2.5,74,-17.5,17.5,74,-2.5,10,52,-10],
 // 3 16 -4.2424 140 -24.2418 -5 52 -25 -10 0 -30

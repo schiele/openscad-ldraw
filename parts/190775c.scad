@@ -17,17 +17,19 @@ function ldraw_lib__190775c() = [
 // 0 Sticker  1.4 x  1.8 with White Maersk Line Logo on Transparent Background
 // 0 Name: 190775c.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
-// 0 !LDRAW_ORG Part UPDATE 2022-05
+// 0 !LDRAW_ORG Part UPDATE 2024-11
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Container truck, Set 1651-2, Trailer, Transport
+// 0 !KEYWORDS Bricklink 1651.2stk01, Brickowl 699032, Container truck
+// 0 !KEYWORDS Rebrickable 190775stk, Set 1651-2, Trailer, Transport
 // 
 // 0 !HISTORY 2022-09-15 [PTadmin] Official Update 2022-05
-// 
+// 0 !HISTORY 2024-12-19 [OrionP] Added KEYWORDS
+// 0 !HISTORY 2024-12-30 [OrionP] Official Update 2024-11
 // 
 // 1 16 0 -0.25 0 18 0 0 0 0.25 0 0 0 14 box5-12.dat
   [1,16,0,-0.25,0,18,0,0,0,0.25,0,0,0,14, ldraw_lib__box5_12()],

@@ -2,22 +2,24 @@ use <../lib.scad>
 use <../p/1-4cyli.scad>
 use <s/973s01.scad>
 function ldraw_lib__973pq5() = [
-// 0 Minifig Torso with Aviator Jacket w/ Eagle/"SMH" on Back Pattern
+// 0 Minifig Torso with Aviator Jacket with Eagle and "SMH" on Back Pattern
 // 0 Name: 973pq5.dat
 // 0 Author: Christian Neumann [Wesley]
-// 0 !LDRAW_ORG Part UPDATE 2013-01
+// 0 !LDRAW_ORG Part UPDATE 2024-11
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Jake Raines, Pharaoh's Quest
+// 0 !KEYWORDS Bricklink 973pb0785, Jake Raines, Pharaoh's Quest, set 30090
+// 0 !KEYWORDS Set 7307, Set 7326
 // 
 // 0 !CMDLINE -c308
 // 
 // 0 !HISTORY 2013-07-21 [PTadmin] Official Update 2013-01
-// 
+// 0 !HISTORY 2024-02-25 [MagFors] Updated description
+// 0 !HISTORY 2024-12-30 [OrionP] Official Update 2024-11
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],

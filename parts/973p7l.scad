@@ -9,22 +9,24 @@ use <../p/4-4ring1.scad>
 use <../p/4-4ring2.scad>
 use <s/973s01.scad>
 function ldraw_lib__973p7l() = [
-// 0 Minifig Torso with Police Female Shirt with Gold Badge, Pocket and Black Tie Pattern
+// 0 Minifig Torso with Female Police Shirt with Gold Badge, Pocket and Black Tie Pattern
 // 0 Name: 973p7l.dat
 // 0 Author: Willy Tschager [Holly-Wood]
-// 0 !LDRAW_ORG Part UPDATE 2019-02
+// 0 !LDRAW_ORG Part UPDATE 2025-01
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS detective's, office, officer, set 10246, Set 70809
+// 0 !KEYWORDS Bricklink 973pb1617, detective's, office, officer, set 10246
+// 0 !KEYWORDS Set 70809
 // 
 // 0 !CMDLINE -c73
 // 
 // 0 !HISTORY 2019-09-09 [PTadmin] Official Update 2019-02
-// 
+// 0 !HISTORY 2025-01-18 [MagFors] Update description
+// 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 
 // 0 // Subfile
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat

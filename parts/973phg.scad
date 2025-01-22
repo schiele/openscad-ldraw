@@ -2,21 +2,22 @@ use <../lib.scad>
 use <../p/1-4cyli.scad>
 use <s/973s01.scad>
 function ldraw_lib__973phg() = [
-// 0 Minifig Torso Trench Coat over Dark Brown Suit Jacket and Bow Tie, Dark Tan Vest and White Shirt Pattern
+// 0 Minifig Torso with Trench Coat over Dark Brown Suit Jacket and Bow Tie, Dark Tan Vest and White Shirt Pattern
 // 0 Name: 973phg.dat
 // 0 Author: Evert-Jan Boer [ejboer]
-// 0 !LDRAW_ORG Part UPDATE 2024-01
+// 0 !LDRAW_ORG Part UPDATE 2024-11
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb2536c01, Fantastic Beasts, Harry Potter
-// 0 !KEYWORDS Newt Scamander, Set 71253
+// 0 !KEYWORDS Bricklink 973pb2536, Fantastic Beasts, Harry Potter, Newt Scamander
+// 0 !KEYWORDS Set 71253
 // 
 // 0 !HISTORY 2024-01-29 [OrionP] Official Update 2024-01
-// 
+// 0 !HISTORY 2024-12-29 [MagFors] Update description and keywords
+// 0 !HISTORY 2024-12-30 [OrionP] Official Update 2024-11
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],

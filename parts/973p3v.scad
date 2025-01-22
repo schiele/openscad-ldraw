@@ -5,26 +5,28 @@ use <../p/4-4ring2.scad>
 use <../p/4-4ring5.scad>
 use <s/973s01.scad>
 function ldraw_lib__973p3v() = [
-// 0 Minifig Torso Pirate Vest, Anchor Tattoo, Rope on Back Pattern
+// 0 Minifig Torso with Pirate Vest over Yellow Skin, Anchor Tattoo, Rope on Back Pattern
 // 0 Name: 973p3v.dat
 // 0 Author: J.C. Tchang [tchang]
-// 0 !LDRAW_ORG Part UPDATE 2012-03
+// 0 !LDRAW_ORG Part UPDATE 2024-11
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !HISTORY 2012-12-28 [PTadmin] Official Update 2012-03
+// 0 !KEYWORDS Bricklink 973pb0523, set 6240, Set 6241, Set 6242, set 6243
+// 0 !KEYWORDS set 852750
 // 
+// 0 !HISTORY 2012-12-28 [PTadmin] Official Update 2012-03
+// 0 !HISTORY 2024-12-24 [MagFors] Update description and keywords
+// 0 !HISTORY 2024-12-30 [OrionP] Official Update 2024-11
 // 
 // 0 // Body
-// 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],
 // 1 15 0 -4 0 4.243 0 -4.243 0 -8 0 -4.243 0 -4.243 1-4cyli.dat
   [1,15,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli()],
-// 0 //
 // 0 // Front Pattern
 // 1 0 -7.4 13.5 -10 0.5 0 0 0 0 -0.5 0 1 0 4-4ring2.dat
   [1,0,-7.4,13.5,-10,0.5,0,0,0,0,-0.5,0,1,0, ldraw_lib__4_4ring2()],

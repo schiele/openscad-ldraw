@@ -17,10 +17,10 @@ use <../../p/rect2a.scad>
 use <../../p/rect2p.scad>
 use <../../p/rect3.scad>
 function ldraw_lib__s__32552s01() = [
-// 0 ~Technic Bionicle Weapon Double-Edged Sword - Blade
+// 0 ~Constraction Blade 12L Double-Edged Sword with  3 Pinholes and Axle - Blade
 // 0 Name: s\32552s01.dat
 // 0 Author: Robert Sexton [rhsexton]
-// 0 !LDRAW_ORG Subpart UPDATE 2014-02
+// 0 !LDRAW_ORG Subpart UPDATE 2024-10
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -30,10 +30,10 @@ function ldraw_lib__s__32552s01() = [
 // 0 !HISTORY 2014-07-16 [MagFors] Modified with WINDZ for BFC compliance
 // 0 !HISTORY 2014-07-16 [MagFors] Primitive substitution
 // 0 !HISTORY 2014-12-23 [PTadmin] Official Update 2014-02
-// 
+// 0 !HISTORY 2024-11-17 [MagFors] Update description
+// 0 !HISTORY 2024-12-01 [OrionP] Official Update 2024-10
 // 
 // 0 // **Piston Base**
-// 
 // 1 16 -5 -14 6 0 1 0 0 0 -2 2 0 0 4-4cylc.dat
   [1,16,-5,-14,6,0,1,0,0,0,-2,2,0,0, ldraw_lib__4_4cylc()],
 // 1 16 -4 -14 6 0 4 0 0 0 -4 4 0 0 2-4cyli.dat

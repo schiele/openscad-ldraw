@@ -1,10 +1,10 @@
 use <../lib.scad>
 use <s/37366s02.scad>
 function ldraw_lib__37366pdg4() = [
-// 0 Minifig Leg Medium Left with with Orange and Brown Dots, White Shoes Pattern
+// 0 Minifig Leg Medium Left with Orange and Brown Dots, White Shoes Pattern
 // 0 Name: 37366pdg4.dat
 // 0 Author: Magnus Forsberg [MagFors]
-// 0 !LDRAW_ORG Part UPDATE 2024-09
+// 0 !LDRAW_ORG Part UPDATE 2024-10
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 !HELP Move down 12 units to align with hips
@@ -17,6 +17,8 @@ function ldraw_lib__37366pdg4() = [
 // 0 !KEYWORDS Rebrickable 37364c11pr2232, set 71033, The Muppets
 // 
 // 0 !HISTORY 2024-10-27 [OrionP] Official Update 2024-09
+// 0 !HISTORY 2024-11-06 [Holly-Wood] Fixed typo
+// 0 !HISTORY 2024-12-01 [OrionP] Official Update 2024-10
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\37366s02.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__37366s02()],

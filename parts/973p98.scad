@@ -3,20 +3,21 @@ use <../p/1-4cyli.scad>
 use <s/973s01.scad>
 use <s/99141s02.scad>
 function ldraw_lib__973p98() = [
-// 0 Minifig Torso Polo Shirt with Pocket with Pen and LEGO Logo on Back Pattern
+// 0 Minifig Torso with Polo Shirt with Pocket and Pen with LEGO Logo on Back Pattern
 // 0 Name: 973p98.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2019-01
+// 0 !LDRAW_ORG Part UPDATE 2024-11
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb2032
+// 0 !KEYWORDS Bricklink 973pb2032, set 10261, Set 10303, Set 31105, Set 60097
 // 
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
-// 
+// 0 !HISTORY 2024-12-28 [MagFors] Update description and keywords
+// 0 !HISTORY 2024-12-30 [OrionP] Official Update 2024-11
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],

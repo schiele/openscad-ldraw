@@ -18,10 +18,10 @@ use <../p/rect3.scad>
 use <../p/stud2a.scad>
 use <../p/stud4a.scad>
 function ldraw_lib__6064() = [
-// 0 Plant Bush
+// 0 ~Plant Bush (Obsolete)
 // 0 Name: 6064.dat
 // 0 Author: Tore Eriksson [Tore_Eriksson]
-// 0 !LDRAW_ORG Part UPDATE 2017-01
+// 0 !LDRAW_ORG Part UPDATE 2024-11
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -37,7 +37,8 @@ function ldraw_lib__6064() = [
 // 0 !HISTORY 2016-02-25 [Holly-Wood] BFCed, fixed positions of twigs
 // 0 !HISTORY 2017-02-15 [MagFors] Added edge lines around the twigs, used low resolution primitives
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
-// 
+// 0 !HISTORY 2024-12-16 [KnightOfTarenta] Obsolete due to bad geometry
+// 0 !HISTORY 2024-12-30 [OrionP] Official Update 2024-11
 // 
 // 1 16 0 -6 0 16 0 0 0 1 0 0 0 16 4-4edge.dat
   [1,16,0,-6,0,16,0,0,0,1,0,0,0,16, ldraw_lib__4_4edge()],

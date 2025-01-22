@@ -9,17 +9,19 @@ function ldraw_lib__190775b() = [
 // 0 Sticker  0.9 x  5.9 with Black Car Grille and White Headlights
 // 0 Name: 190775b.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
-// 0 !LDRAW_ORG Part UPDATE 2022-03
+// 0 !LDRAW_ORG Part UPDATE 2024-11
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Container truck, Maersk Line, Set 1651-2
+// 0 !KEYWORDS Bricklink 1651.2stk01, Brickowl 699032, Container truck, Maersk Line
+// 0 !KEYWORDS Rebrickable 190775stk, Set 1651-2
 // 
 // 0 !HISTORY 2022-05-07 [PTadmin] Official Update 2022-03
-// 
+// 0 !HISTORY 2024-12-19 [OrionP] Added KEYWORDS
+// 0 !HISTORY 2024-12-30 [OrionP] Official Update 2024-11
 // 
 // 1 16 0 -0.25 0 59 0 0 0 0.25 0 0 0 9 box5-12.dat
   [1,16,0,-0.25,0,59,0,0,0,0.25,0,0,0,9, ldraw_lib__box5_12()],

@@ -3,7 +3,7 @@ function ldraw_lib__163555bc01() = [
 // 0 Sticker  3.5 x  3.5 with Flight Schedule (Formed for Panel  6 x  6 x  9 with Curved Top)
 // 0 Name: 163555bc01.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
-// 0 !LDRAW_ORG Part UPDATE 2022-05
+// 0 !LDRAW_ORG Part UPDATE 2024-11
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -14,13 +14,11 @@ function ldraw_lib__163555bc01() = [
 // 0 !KEYWORDS Rebrickable 163555, set 6399, Station
 // 
 // 0 !HISTORY 2022-09-15 [PTadmin] Official Update 2022-05
-// 0 !HISTORY 2022-09-15 [PTadmin] Official Update 2022-05
-// 
+// 0 !HISTORY 2024-12-27 [OrionP] Correct erroneus history lines
+// 0 !HISTORY 2024-12-30 [OrionP] Official Update 2024-11
 // 
 // 0 BFC NOCLIP
   [0,"BFC","NOCLIP"],
-// 
-// 0 !HISTORY 2022-09-15 [PTadmin] Official Update 2022-05
 // 
 // 3 0 -15.068 -.25 .412 -15.932 -.25 .06 -15.168 -.25 -.168
   [3,0,-15.068,-.25,.412,-15.932,-.25,.06,-15.168,-.25,-.168],

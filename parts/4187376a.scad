@@ -3,16 +3,19 @@ use <004239a.scad>
 function ldraw_lib__4187376a() = [
 // 0 =Sticker  3.5 x 14 "USS Constellation" on Scroll
 // 0 Name: 4187376a.dat
-// 0 Author: [PTadmin]
-// 0 !LDRAW_ORG Part Alias UPDATE 2019-03
+// 0 Author: Orion Pobursky [OrionP]
+// 0 !LDRAW_ORG Part Alias UPDATE 2024-11
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !HISTORY 2019-12-27 [PTadmin] Official Update 2019-03
+// 0 !KEYWORDS Bricklink 10021stk01, Brickowl 449250, Rebrickable 45246, Set 10021
 // 
+// 0 !HISTORY 2019-12-27 [PTadmin] Official Update 2019-03
+// 0 !HISTORY 2024-12-19 [OrionP] Added KEYWORDS
+// 0 !HISTORY 2024-12-30 [OrionP] Official Update 2024-11
 // 
 // 0 // Alias of 004239a
 // 

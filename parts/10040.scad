@@ -26,7 +26,7 @@ function ldraw_lib__10040() = [
 // 0 ~Motor Pull Back  8 x  4 x  0.667 - Top
 // 0 Name: 10040.dat
 // 0 Author: Magnus Forsberg [MagFors]
-// 0 !LDRAW_ORG Part UPDATE 2024-02
+// 0 !LDRAW_ORG Part UPDATE 2024-11
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -38,6 +38,8 @@ function ldraw_lib__10040() = [
 // 0 !HISTORY 2014-12-23 [PTadmin] Official Update 2014-02
 // 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
 // 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
+// 0 !HISTORY 2024-12-27 [OrionP] Remove scientific notation
+// 0 !HISTORY 2024-12-30 [OrionP] Official Update 2024-11
 // 
 // 1 16 0 4 -40 0 0 1 0 -1 0 -1 0 0 stug4-1x3.dat
   [1,16,0,4,-40,0,0,1,0,-1,0,-1,0,0, ldraw_lib__stug4_1x3()],
@@ -77,8 +79,8 @@ function ldraw_lib__10040() = [
   [1,16,0,6,0,6,0,0,0,0,-2,0,1,0, ldraw_lib__rect()],
 // 1 16 11 6 0 0 0 -3 -2 0 0 0 1 0 rect3.dat
   [1,16,11,6,0,0,0,-3,-2,0,0,0,1,0, ldraw_lib__rect3()],
-// 1 16 -11 6 0 0 0 3 2 0 -1e-15 0 1 0 rect3.dat
-  [1,16,-11,6,0,0,0,3,2,0,-1e-15,0,1,0, ldraw_lib__rect3()],
+// 1 16 -11 6 0 0 0 3 2 0 0 0 1 0 rect3.dat
+  [1,16,-11,6,0,0,0,3,2,0,0,0,1,0, ldraw_lib__rect3()],
 // 1 16 0 8 -40 -20 0 0 0 -8 0 0 0 -40 box4-4a.dat
   [1,16,0,8,-40,-20,0,0,0,-8,0,0,0,-40, ldraw_lib__box4_4a()],
 // 1 16 0 8 20.25 0 0 -20 0 -8 0 20.25 0 0 box3u8p.dat

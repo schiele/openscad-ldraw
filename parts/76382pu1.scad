@@ -4,10 +4,10 @@ use <3819.scad>
 use <3820.scad>
 use <973pu1.scad>
 function ldraw_lib__76382pu1() = [
-// 0 Minifig Torso with Arms and Hands with Zipper, Magenta and Medium Azure Markings Pattern
+// 0 Minifig Torso with Arms and Hands with Female Hoodie with Zipper, Magenta and Medium Azure Markings Pattern
 // 0 Name: 76382pu1.dat
 // 0 Author: Magnus Forsberg [MagFors]
-// 0 !LDRAW_ORG Shortcut UPDATE 2024-09
+// 0 !LDRAW_ORG Shortcut UPDATE 2024-11
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -19,6 +19,8 @@ function ldraw_lib__76382pu1() = [
 // 0 !KEYWORDS Set 71200, The LEGO Movie, Wyldstyle
 // 
 // 0 !HISTORY 2024-10-27 [OrionP] Official Update 2024-09
+// 0 !HISTORY 2024-12-25 [MagFors] Update description
+// 0 !HISTORY 2024-12-30 [OrionP] Official Update 2024-11
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 973pu1.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__973pu1()],

@@ -4,15 +4,18 @@ function ldraw_lib__2431p06() = [
 // 0 Tile  1 x  4 with 3 White Stars Pattern
 // 0 Name: 2431p06.dat
 // 0 Author: Michael Heidemann [mikeheide]
-// 0 !LDRAW_ORG Part UPDATE 2009-02
+// 0 !LDRAW_ORG Part UPDATE 2025-01
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !HISTORY 2009-09-03 [PTadmin] Official Update 2009-02
+// 0 !KEYWORDS Bricklink 2431px6, BrickOwl 148695, Rebrickable 2431pr0015, Set 6345
 // 
+// 0 !HISTORY 2009-09-03 [PTadmin] Official Update 2009-02
+// 0 !HISTORY 2025-01-19 [OrionP] Fix comment errors, added keywords
+// 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2431bs01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2431bs01()],
@@ -140,8 +143,8 @@ function ldraw_lib__2431p06() = [
   [4,16,40,0,10,36,0,10,36,0,-10,40,0,-10],
 // 4 16 -36 0 10 -40 0 10 -40 0 -10 -36 0 -10
   [4,16,-36,0,10,-40,0,10,-40,0,-10,-36,0,-10],
-// 0 Pattern created wholly or in part by Quad2Dat
-// 0 Thanks James
+// 0 // Pattern created wholly or in part by Quad2Dat
+// 0 // Thanks James
 // 0
 ];
 module ldraw_lib__2431p06(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)

@@ -6,17 +6,19 @@ function ldraw_lib__3626cpn2() = [
 // 0 Minifig Head Skull Cracked with Metal Plates Pattern
 // 0 Name: 3626cpn2.dat
 // 0 Author: J.C. Tchang [tchang]
-// 0 !LDRAW_ORG Part UPDATE 2014-01
+// 0 !LDRAW_ORG Part UPDATE 2025-01
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Frakjaw, Ninjago
+// 0 !KEYWORDS Bricklink 3626bpb0549, Brickowl 883711, Frakjaw, Ninjago
+// 0 !KEYWORDS Rebrickable 3626bpr0751, Set 2257, set 2263, Set 2521
 // 
 // 0 !HISTORY 2014-06-21 [PTadmin] Official Update 2014-01
-// 
+// 0 !HISTORY 2024-11-13 [Lego-Manfred] Reference and sets added
+// 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3626cs01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626cs01()],

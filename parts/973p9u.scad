@@ -3,20 +3,25 @@ use <../p/1-4cyli.scad>
 use <s/973p9us01.scad>
 use <s/973s01.scad>
 function ldraw_lib__973p9u() = [
-// 0 Minifig Torso with Sweater, Bow and Heart Shaped Necklace Pattern
+// 0 Minifig Torso with Female Sweater, Bow and Heart Shaped Necklace Pattern
 // 0 Name: 973p9u.dat
 // 0 Author: Evert-Jan Boer [ejboer]
-// 0 !LDRAW_ORG Part UPDATE 2020-02
+// 0 !LDRAW_ORG Part UPDATE 2024-11
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb0580
+// 0 !KEYWORDS Bricklink 973pb0580, set 10211, Set 10216, set 10235, set 2824
+// 0 !KEYWORDS Set 40058, Set 40145, Set 40261, Set 4206, Set 4207, Set 4428
+// 0 !KEYWORDS Set 5003470, Set 5003471, Set 5560, Set 5899, Set 60050, Set 60097
+// 0 !KEYWORDS Set 60201, Set 7639, set 7937, Set 9311, Set 9314, Set 9335
+// 0 !KEYWORDS Set 9349, Set 9389, Set 9664
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
-// 
+// 0 !HISTORY 2024-12-27 [MagFors] Update description and keywords
+// 0 !HISTORY 2024-12-30 [OrionP] Official Update 2024-11
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],

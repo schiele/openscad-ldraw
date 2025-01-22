@@ -13,10 +13,10 @@ use <../p/rect.scad>
 use <../p/rect3.scad>
 use <../p/stud4a.scad>
 function ldraw_lib__65826() = [
-// 0 Technic Axle Pin  1/2 with Stud Tube
+// 0 Technic Pin  1/2 with Stud Tube
 // 0 Name: 65826.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2024-02
+// 0 !LDRAW_ORG Part UPDATE 2024-11
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -26,6 +26,8 @@ function ldraw_lib__65826() = [
 // 0 !HISTORY 2022-12-20 [PTadmin] Official Update 2022-06
 // 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
 // 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
+// 0 !HISTORY 2024-12-23 [MagFors] Update description
+// 0 !HISTORY 2024-12-30 [OrionP] Official Update 2024-11
 // 
 // 1 16 0 0 0 0 1 0 0 0 1 1 0 0 connect2.dat
   [1,16,0,0,0,0,1,0,0,0,1,1,0,0, ldraw_lib__connect2()],

@@ -1,10 +1,13 @@
 use <../lib.scad>
+use <../p/4-4con12.scad>
+use <../p/4-4cylo.scad>
+use <s/6015s02.scad>
 use <s/87697s01.scad>
 function ldraw_lib__87697() = [
 // 0 Tyre 12/ 40 x 11 Wide with Centre Band
 // 0 Name: 87697.dat
 // 0 Author: Magnus Forsberg [MagFors]
-// 0 !LDRAW_ORG Part UPDATE 2013-02
+// 0 !LDRAW_ORG Part UPDATE 2024-11
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -12,10 +15,49 @@ function ldraw_lib__87697() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2013-12-23 [PTadmin] Official Update 2013-02
-// 
+// 0 !HISTORY 2024-12-21 [ejboer] Changed inside to primitives
+// 0 !HISTORY 2024-12-30 [OrionP] Official Update 2024-11
 // 
 // 0 // Nomenclature: width_(mm)/profile_as_percentage_of_width x rim_diameter_(mm)
 // 0 // Similar design as 6015 and 60700, partnumber is present in LDD
+// 
+// 0 BFC INVERTNEXT
+  [0,"BFC","INVERTNEXT"],
+// 1 16 0 0 -3 13 0 0 0 0 13 0 -11 0 4-4cylo.dat
+  [1,16,0,0,-3,13,0,0,0,0,13,0,-11,0, ldraw_lib__4_4cylo()],
+// 0 BFC INVERTNEXT
+  [0,"BFC","INVERTNEXT"],
+// 1 16 0 0 14 13 0 0 0 0 13 0 -11 0 4-4cylo.dat
+  [1,16,0,0,14,13,0,0,0,0,13,0,-11,0, ldraw_lib__4_4cylo()],
+// 0 BFC INVERTNEXT
+  [0,"BFC","INVERTNEXT"],
+// 1 16 0 0 2.33333 12 0 0 0 0 12 0 -4.66667 0 4-4cylo.dat
+  [1,16,0,0,2.33333,12,0,0,0,0,12,0,-4.66667,0, ldraw_lib__4_4cylo()],
+// 0 BFC INVERTNEXT
+  [0,"BFC","INVERTNEXT"],
+// 1 16 0 0 -3 1 0 0 0 0 -1 0 .66667 0 4-4con12.dat
+  [1,16,0,0,-3,1,0,0,0,0,-1,0,.66667,0, ldraw_lib__4_4con12()],
+// 0 BFC INVERTNEXT
+  [0,"BFC","INVERTNEXT"],
+// 1 16 0 0 3 -1 0 0 0 0 1 0 -.66667 0 4-4con12.dat
+  [1,16,0,0,3,-1,0,0,0,0,1,0,-.66667,0, ldraw_lib__4_4con12()],
+// 
+// 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\6015s02.dat
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6015s02()],
+// 1 16 0 0 0 0 -1 0 1 0 0 0 0 1 s\6015s02.dat
+  [1,16,0,0,0,0,-1,0,1,0,0,0,0,1, ldraw_lib__s__6015s02()],
+// 1 16 0 0 0 1 0 0 0 -1 0 0 0 -1 s\6015s02.dat
+  [1,16,0,0,0,1,0,0,0,-1,0,0,0,-1, ldraw_lib__s__6015s02()],
+// 1 16 0 0 0 0 -1 0 -1 0 0 0 0 -1 s\6015s02.dat
+  [1,16,0,0,0,0,-1,0,-1,0,0,0,0,-1, ldraw_lib__s__6015s02()],
+// 1 16 0 0 0 -1 0 0 0 1 0 0 0 -1 s\6015s02.dat
+  [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__6015s02()],
+// 1 16 0 0 0 0 1 0 1 0 0 0 0 -1 s\6015s02.dat
+  [1,16,0,0,0,0,1,0,1,0,0,0,0,-1, ldraw_lib__s__6015s02()],
+// 1 16 0 0 0 -1 0 0 0 -1 0 0 0 1 s\6015s02.dat
+  [1,16,0,0,0,-1,0,0,0,-1,0,0,0,1, ldraw_lib__s__6015s02()],
+// 1 16 0 0 0 0 1 0 -1 0 0 0 0 1 s\6015s02.dat
+  [1,16,0,0,0,0,1,0,-1,0,0,0,0,1, ldraw_lib__s__6015s02()],
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\87697s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__87697s01()],

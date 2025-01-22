@@ -5,7 +5,7 @@ function ldraw_lib__164365a() = [
 // 0 Sticker  3.6 x  4 with Black Aircraft and Five Coloured Stripes
 // 0 Name: 164365a.dat
 // 0 Author: Michael Heidemann [mikeheide]
-// 0 !LDRAW_ORG Part UPDATE 2012-01
+// 0 !LDRAW_ORG Part UPDATE 2024-11
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -17,7 +17,8 @@ function ldraw_lib__164365a() = [
 // 0 !HISTORY 2011-07-25 [PTadmin] Official Update 2011-01
 // 0 !HISTORY 2012-01-09 [cwdee] Corrected dimensions
 // 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01
-// 
+// 0 !HISTORY 2024-12-27 [OrionP] Correct comment error
+// 0 !HISTORY 2024-12-30 [OrionP] Official Update 2024-11
 // 
 // 4 0 -40 -0.25 -31 -40 -0.25 -36 40 -0.25 -36 40 -0.25 -31
   [4,0,-40,-0.25,-31,-40,-0.25,-36,40,-0.25,-36,40,-0.25,-31],
@@ -175,9 +176,8 @@ function ldraw_lib__164365a() = [
   [3,15,3,-0.25,5.75,3,-0.25,2.75,40,-0.25,36],
 // 3 15 -3 -0.25 2.75 -3 -0.25 5.75 -40 -0.25 36
   [3,15,-3,-0.25,2.75,-3,-0.25,5.75,-40,-0.25,36],
-// 0
-// 0 Pattern created wholly or in part by Quad2Dat
-// 0 Thanks James
+// 0 // Pattern created wholly or in part by Quad2Dat
+// 0 // Thanks James
 // 4 15 40 0 36 40 0 -36 -40 0 -36 -40 0 36
   [4,15,40,0,36,40,0,-36,-40,0,-36,-40,0,36],
 // 4 15 40 0 -36 40 -0.25 -36 -40 -0.25 -36 -40 0 -36

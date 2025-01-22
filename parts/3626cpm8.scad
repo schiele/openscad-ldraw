@@ -7,19 +7,21 @@ function ldraw_lib__3626cpm8() = [
 // 0 Minifig Head with LOTR Smirking / Shouting 2-Sided Pattern
 // 0 Name: 3626cpm8.dat
 // 0 Author: Christian Neumann [Wesley]
-// 0 !LDRAW_ORG Part UPDATE 2014-01
+// 0 !LDRAW_ORG Part UPDATE 2025-01
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Lord of the Rings, Merry
+// 0 !KEYWORDS Bricklink 3626cpb0726, Brickowl 294246, Lord of the Rings, Merry
+// 0 !KEYWORDS Rebrickable 3626cpr0989, set 9472
 // 
 // 0 !CMDLINE -c78
 // 
 // 0 !HISTORY 2014-06-21 [PTadmin] Official Update 2014-01
-// 
+// 0 !HISTORY 2024-11-13 [Lego-Manfred] Reference and set added
+// 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3626cs02.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626cs02()],

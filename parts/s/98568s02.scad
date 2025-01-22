@@ -5,10 +5,10 @@ use <../../p/rect.scad>
 use <../../p/rect2p.scad>
 use <../../p/rect3.scad>
 function ldraw_lib__s__98568s02() = [
-// 0 ~Technic Sword 11.5L with Sawtooth Back Blade
+// 0 ~Constraction Blade 11.5L with Sawtooth Back - Blade
 // 0 Name: s\98568s02.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Subpart UPDATE 2013-02
+// 0 !LDRAW_ORG Subpart UPDATE 2024-10
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -20,7 +20,8 @@ function ldraw_lib__s__98568s02() = [
 // 0 !HISTORY 2013-07-21 [PTadmin] Official Update 2013-01
 // 0 !HISTORY 2013-08-04 [cwdee] Correct tag in first HISTORY line
 // 0 !HISTORY 2013-12-23 [PTadmin] Official Update 2013-02
-// 
+// 0 !HISTORY 2024-11-17 [MagFors] Update description
+// 0 !HISTORY 2024-12-01 [OrionP] Official Update 2024-10
 // 
 // 4 16 -4 16.5 -139.5 -4 20.8 -159.6 -4 20 -170.9 -4 17.8 -185.4
   [4,16,-4,16.5,-139.5,-4,20.8,-159.6,-4,20,-170.9,-4,17.8,-185.4],

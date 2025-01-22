@@ -8,13 +8,13 @@ use <../p/box2-5.scad>
 use <../p/box3u2p.scad>
 use <../p/box4.scad>
 use <../p/rect.scad>
-use <../p/stud.scad>
-use <../p/studel.scad>
+use <../p/stug-2x1.scad>
+use <../p/stugel-2x2.scad>
 function ldraw_lib__32025() = [
 // 0 ~Electric Touch Sensor Brick  3 x  2 - Top
 // 0 Name: 32025.dat
 // 0 Author: Magnus Forsberg [MagFors]
-// 0 !LDRAW_ORG Part UPDATE 2018-02
+// 0 !LDRAW_ORG Part UPDATE 2024-11
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -22,7 +22,8 @@ function ldraw_lib__32025() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2018-12-08 [PTadmin] Official Update 2018-02
-// 
+// 0 !HISTORY 2024-02-06 [Steffen] used stugs
+// 0 !HISTORY 2024-12-30 [OrionP] Official Update 2024-11
 // 
 // 2 24 26 24 16 -26 24 16
   [2,24,26,24,16,-26,24,16],
@@ -151,18 +152,10 @@ function ldraw_lib__32025() = [
 // 4 16 2 19 -20 18 19 -20 18 17 -20 2 17 -20
   [4,16,2,19,-20,18,19,-20,18,17,-20,2,17,-20],
 // 
-// 1 16 20 0 10 -1 0 0 0 1 0 0 0 -1 studel.dat
-  [1,16,20,0,10,-1,0,0,0,1,0,0,0,-1, ldraw_lib__studel()],
-// 1 16 0 0 10 -1 0 0 0 1 0 0 0 -1 studel.dat
-  [1,16,0,0,10,-1,0,0,0,1,0,0,0,-1, ldraw_lib__studel()],
-// 1 16 -20 0 10 1 0 0 0 1 0 0 0 1 stud.dat
-  [1,16,-20,0,10,1,0,0,0,1,0,0,0,1, ldraw_lib__stud()],
-// 1 16 20 0 -10 1 0 0 0 1 0 0 0 1 studel.dat
-  [1,16,20,0,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__studel()],
-// 1 16 0 0 -10 1 0 0 0 1 0 0 0 1 studel.dat
-  [1,16,0,0,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__studel()],
-// 1 16 -20 0 -10 1 0 0 0 1 0 0 0 1 stud.dat
-  [1,16,-20,0,-10,1,0,0,0,1,0,0,0,1, ldraw_lib__stud()],
+// 1 16 10 0 0 1 0 0 0 1 0 0 0 1 stugel-2x2.dat
+  [1,16,10,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stugel_2x2()],
+// 1 16 -20 0 0 1 0 0 0 1 0 0 0 1 stug-2x1.dat
+  [1,16,-20,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_2x1()],
 // 1 16 -20 10 -20 1 0 0 0 0 -1 0 4 0 axlehole.dat
   [1,16,-20,10,-20,1,0,0,0,0,-1,0,4,0, ldraw_lib__axlehole()],
 // 1 16 -20 10 -20 1 0 0 0 0 -1 0 1 0 axlehol2.dat

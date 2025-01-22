@@ -1,10 +1,10 @@
 use <../lib.scad>
 use <s/u9328c01s01.scad>
 function ldraw_lib__u9328c01() = [
-// 0 Canvas Tepee Cover (Formed)
+// 0 ~Sheet Fabric Tepee Cover (Formed) (Obsolete)
 // 0 Name: u9328c01.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2019-01
+// 0 !LDRAW_ORG Part UPDATE 2024-10
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -16,6 +16,8 @@ function ldraw_lib__u9328c01() = [
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
 // 0 !HISTORY 2019-01-25 [cwdee] Update category
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
+// 0 !HISTORY 2020-06-27 [anathema] Marked obsolete due to inaccurate geometry, use u9328a instead
+// 0 !HISTORY 2024-12-01 [OrionP] Official Update 2024-10
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\u9328c01s01.dat

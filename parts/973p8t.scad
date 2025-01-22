@@ -7,21 +7,25 @@ function ldraw_lib__973p8t() = [
 // 0 Minifig Torso with Chef Jacket with  8 Buttons and Long Red Neckerchief Pattern
 // 0 Name: 973p8t.dat
 // 0 Author: Willy Tschager [Holly-Wood]
-// 0 !LDRAW_ORG Part UPDATE 2016-01
+// 0 !LDRAW_ORG Part UPDATE 2024-11
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS cook, creator expert, culinarian, modular building
-// 0 !KEYWORDS parisian restaurant, servant, set 10243
+// 0 !KEYWORDS Bricklink 973px4c01, cook, creator expert, culinarian
+// 0 !KEYWORDS modular building, parisian restaurant, servant, Set 10184, Set 10216
+// 0 !KEYWORDS set 10243, Set 3383, Set 40078, Set 4496, Set 4513, set 5002148
+// 0 !KEYWORDS Set 60026, Set 60031, Set 60050, Set 60097, Set 70805, Set 7178
+// 0 !KEYWORDS Set 7324, Set 7641, Set 7724, Set 8398, Set 9247, Set 9302, Set 9311
+// 0 !KEYWORDS Set 9322, Set 9348, Set 9691
 // 
 // 0 !HISTORY 2016-12-31 [PTadmin] Official Update 2016-01
-// 
+// 0 !HISTORY 2024-12-27 [MagFors] Update description and keywords
+// 0 !HISTORY 2024-12-30 [OrionP] Official Update 2024-11
 // 
 // 0 // Red
-// 
 // 4 4 -4.78 .8 -10 -6.7 .8 -10 -5.86 1.71 -10 -3.7 1.81 -10
   [4,4,-4.78,.8,-10,-6.7,.8,-10,-5.86,1.71,-10,-3.7,1.81,-10],
 // 4 4 -3.7 1.81 -10 -5.86 1.71 -10 -4.78 2.63 -10 -2.86 2.51 -10

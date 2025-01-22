@@ -9,12 +9,14 @@ function ldraw_lib__2466p68() = [
 // 0 Panel  3 x  2 x  6 with MTron Logo Pattern
 // 0 Name: 2466p68.dat
 // 0 Author: John Van Zwieten [jvan]
-// 0 !LDRAW_ORG Part UPDATE 2009-03
+// 0 !LDRAW_ORG Part UPDATE 2025-01
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
+// 
+// 0 !KEYWORDS Bricklink 2466p68, BrickOwl 887892, Rebrickable 2466pr0002, Set 6833
 // 
 // 0 !HISTORY 1998-10-15 [PTadmin] Official Update 1998-09
 // 0 !HISTORY 2007-05-13 [PTadmin] Header formatted for Contributor Agreement
@@ -22,7 +24,8 @@ function ldraw_lib__2466p68() = [
 // 0 !HISTORY 2008-07-07 [Steffen] Made use of pattern subfile, fixed BFC errors (2004-09-24)
 // 0 !HISTORY 2008-07-08 [OrionP] BFC'd (2004-09-24)
 // 0 !HISTORY 2009-12-29 [PTadmin] Official Update 2009-03
-// 
+// 0 !HISTORY 2025-01-19 [OrionP] Fix comment errors, added keywords
+// 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 
 // 0 // Panel 3 x 2 x 6
 // 
@@ -419,8 +422,8 @@ function ldraw_lib__2466p68() = [
   [4,16,20,136,-10,20,90,-50,-20,90,-50,-20,136,-10],
 // 4 16 20 34 -50 20 -8 -10 -20 -8 -10 -20 34 -50
   [4,16,20,34,-50,20,-8,-10,-20,-8,-10,-20,34,-50],
-// 0 mtlogo.dat
-// 0 Mtron Logo
+// 0 // mtlogo.dat
+// 0 // Mtron Logo
 // 4 16 -20 34 -50 -18.5 43.5 -50 18.5 43.5 -50 20 34 -50
   [4,16,-20,34,-50,-18.5,43.5,-50,18.5,43.5,-50,20,34,-50],
 // 4 16 20 34 -50 18.5 43.5 -50 18.5 80.5 -50 20 90 -50

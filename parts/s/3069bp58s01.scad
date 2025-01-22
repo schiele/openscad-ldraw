@@ -1,9 +1,9 @@
 use <../../lib.scad>
 function ldraw_lib__s__3069bp58s01() = [
-// 0 ~Tile 1 x 2 with Gold Hexagonal Solar Panel Pattern 1 / 4
+// 0 ~Tile  1 x  2 with Gold Hexagonal Solar Panel Pattern - 1/4
 // 0 Name: s\3069bp58s01.dat
 // 0 Author: Bertrand Lequy [Berth]
-// 0 !LDRAW_ORG Subpart UPDATE 2024-04
+// 0 !LDRAW_ORG Subpart UPDATE 2024-10
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -11,6 +11,8 @@ function ldraw_lib__s__3069bp58s01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2024-05-28 [OrionP] Official Update 2024-04
+// 0 !HISTORY 2024-11-27 [MagFors] Update description
+// 0 !HISTORY 2024-12-01 [OrionP] Official Update 2024-10
 // 
 // 4 16 -20 0 10 -20 0 0 -19.5 0 0 -19.5 0 9.5
   [4,16,-20,0,10,-20,0,0,-19.5,0,0,-19.5,0,9.5],

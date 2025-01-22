@@ -1,0 +1,37 @@
+use <../lib.scad>
+use <3818.scad>
+use <3819.scad>
+use <3820.scad>
+use <973p6k.scad>
+function ldraw_lib__76382p6k() = [
+// 0 Minifig Torso with Arms and Hands with Insectoids with Green Circuitry & Silver Hose on Sides Pattern
+// 0 Name: 76382p6k.dat
+// 0 Author: Chris Böhnke [KnightOfTarenta]
+// 0 !LDRAW_ORG Shortcut UPDATE 2025-01
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+// 
+// 0 BFC CERTIFY CCW
+  [0,"BFC","CERTIFY"],
+  [0,"BFC","CCW"],
+// 
+// 0 !KEYWORDS Alien, Arachnoid Star Base, Armaron, Bricklink 973pb0200c01
+// 0 !KEYWORDS BrickOwl 488829, Cyborg, Extraterrestrial, Holox, Insectoids, Locust
+// 0 !KEYWORDS Mini Upper Part No 307, Professor Webb, Rebrickable 973c03h03pr0200
+// 0 !KEYWORDS set 3070, Set 6977, Space, Zotax
+// 
+// 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
+// 
+// 1 16 0 0 0 1 0 0 0 1 0 0 0 1 973p6k.dat
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__973p6k()],
+// 1 0 -15.552 9 0 0.985 -0.17 0 0.17 0.985 0 0 0 1 3818.dat
+  [1,0,-15.552,9,0,0.985,-0.17,0,0.17,0.985,0,0,0,1, ldraw_lib__3818()],
+// 1 0 15.552 9 0 0.985 0.17 0 -0.17 0.985 0 0 0 1 3819.dat
+  [1,0,15.552,9,0,0.985,0.17,0,-0.17,0.985,0,0,0,1, ldraw_lib__3819()],
+// 1 0 -23.69 26.774 -9.898 0.985 -0.12 0.12 0.17 0.696 -0.696 0 0.707 0.707 3820.dat
+  [1,0,-23.69,26.774,-9.898,0.985,-0.12,0.12,0.17,0.696,-0.696,0,0.707,0.707, ldraw_lib__3820()],
+// 1 0 23.69 26.774 -9.898 0.985 0.12 -0.12 -0.17 0.696 -0.696 0 0.707 0.707 3820.dat
+  [1,0,23.69,26.774,-9.898,0.985,0.12,-0.12,-0.17,0.696,-0.696,0,0.707,0.707, ldraw_lib__3820()],
+];
+module ldraw_lib__76382p6k(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
+    makepoly(ldraw_lib__76382p6k(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);
+ldraw_lib__76382p6k(line=0.2);

@@ -6,14 +6,15 @@ function ldraw_lib__190775a() = [
 // 0 Sticker  3.1 x  3.1 Round with Black "6" on White
 // 0 Name: 190775a.dat
 // 0 Author: Donald Sutter [technog]
-// 0 !LDRAW_ORG Part UPDATE 2022-01
+// 0 !LDRAW_ORG Part UPDATE 2024-11
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Go-kart, Set 8842, Technic
+// 0 !KEYWORDS Bricklink 8842stk01, Brickowl 470144, Go-kart, Rebrickable 190775
+// 0 !KEYWORDS Set 8842, Technic
 // 
 // 0 !HISTORY 2003-07-04 [Steffen] BFCed, added ring9 primitive to close render gaps
 // 0 !HISTORY 2004-11-06 [PTadmin] Official Update 2004-04
@@ -29,7 +30,8 @@ function ldraw_lib__190775a() = [
 // 0 !HISTORY 2019-12-27 [PTadmin] Official Update 2019-03
 // 0 !HISTORY 2021-02-17 [RainbowDolphin] Reworked using font
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
-// 
+// 0 !HISTORY 2024-12-19 [OrionP] Added KEYWORDS
+// 0 !HISTORY 2024-12-30 [OrionP] Official Update 2024-11
 // 
 // 1 16 0 0 0 31 0 0 0 -0.25 0 0 0 31 4-4cylc3.dat
   [1,16,0,0,0,31,0,0,0,-0.25,0,0,0,31, ldraw_lib__4_4cylc3()],

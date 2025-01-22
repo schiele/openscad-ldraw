@@ -3,7 +3,7 @@ function ldraw_lib__004631a() = [
 // 0 Sticker  1.8 x  1.8 with Red Cross Logo
 // 0 Name: 004631a.dat
 // 0 Author: Niels Karsdorp [nielsk]
-// 0 !LDRAW_ORG Part UPDATE 2011-02
+// 0 !LDRAW_ORG Part UPDATE 2024-11
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -11,7 +11,8 @@ function ldraw_lib__004631a() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02
-// 
+// 0 !HISTORY 2024-12-27 [OrionP] Correct comment error
+// 0 !HISTORY 2024-12-30 [OrionP] Official Update 2024-11
 // 
 // 0 // Created from original stickersheet from set 386 Number 004631 on original stickersheet pattern
 // 
@@ -37,7 +38,7 @@ function ldraw_lib__004631a() = [
   [4,4,-5.25,-0.25,5.25,5.25,-0.25,5.25,5.25,-0.25,15.5,-5.25,-0.25,15.5],
 // 4 4 15.5 -0.25 -5.25 15.5 -0.25 5.25 -15.5 -0.25 5.25 -15.5 -0.25 -5.25
   [4,4,15.5,-0.25,-5.25,15.5,-0.25,5.25,-15.5,-0.25,5.25,-15.5,-0.25,-5.25],
-// 0 //box
+// 0 // box
 // 4 15 -17.5 0 17.5 17.5 0 17.5 17.5 0 -17.5 -17.5 0 -17.5
   [4,15,-17.5,0,17.5,17.5,0,17.5,17.5,0,-17.5,-17.5,0,-17.5],
 // 4 15 -17.5 0 17.5 -17.5 -0.25 17.5 17.5 -0.25 17.5 17.5 0 17.5
