@@ -13,6 +13,8 @@ function ldraw_lib__747p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
+// 
 // 0 !CMDLINE -c15
 // 
 // 0 !HISTORY 2000-09-30 [PTadmin] Official Update 2000-02

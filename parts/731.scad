@@ -12,6 +12,8 @@ function ldraw_lib__731() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
+// 0 !CATEGORY Obsolete
+// 
 // 0 !HISTORY 1998-03-23 [PTadmin] Official Update 1998-03
 // 0 !HISTORY 2000-09-30 [PTadmin] Official Update 2000-02
 // 0 !HISTORY 2007-07-21 [PTadmin] Header formatted for Contributor Agreement

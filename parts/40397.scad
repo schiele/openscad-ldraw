@@ -7,11 +7,13 @@ function ldraw_lib__40397() = [
 // 0 Name: 40397.dat
 // 0 Author: Andy Westrate [westrate]
 // 0 !LDRAW_ORG Shortcut UPDATE 2011-02
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
+// 
+// 0 !KEYWORDS BrickLink 40380c01, Rebrickable 40380c01
 // 
 // 0 !HISTORY 2010-09-10 {LEGO Universe Team} Original part shape
 // 0 !HISTORY 2010-10-07 [westrate] File preparation for LDraw Parts Tracker

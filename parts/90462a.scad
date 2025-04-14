@@ -21,7 +21,7 @@ function ldraw_lib__90462a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !CATEGORY Minifig Headwear
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS Pharaoh's Quest
 // 
 // 0 !HISTORY 2011-10-14 {LEGO Digital Designer} Original part shape

@@ -12,6 +12,7 @@ function ldraw_lib__30213d01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Sticker Shortcut
 // 0 !KEYWORDS Insectoids, Space
 // 
 // 0 !HISTORY 2019-09-09 [PTadmin] Official Update 2019-02

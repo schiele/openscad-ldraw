@@ -18,6 +18,7 @@ function ldraw_lib__u9373() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS 12V, 4.5V, Stator
 // 
 // 0 !HISTORY 2000-09-30 [PTadmin] Official Update 2000-02

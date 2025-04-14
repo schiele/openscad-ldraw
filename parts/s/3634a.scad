@@ -6,7 +6,7 @@ function ldraw_lib__s__3634a() = [
 // 0 Name: s\3634a.dat
 // 0 Author: Leonardo Zide [leozide]
 // 0 !LDRAW_ORG Subpart UPDATE 2012-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],

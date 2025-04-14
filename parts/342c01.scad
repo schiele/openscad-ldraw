@@ -6,7 +6,7 @@ function ldraw_lib__342c01() = [
 // 0 Name: 342c01.dat
 // 0 Author: Ross Crawford [rosco]
 // 0 !LDRAW_ORG Shortcut UPDATE 2004-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 !HELP A Technic Flex-System is often seen curved in a model. In those cases,
 // 0 !HELP some part of the ends are normally fixed inside another element, while
@@ -22,6 +22,8 @@ function ldraw_lib__342c01() = [
 // 0 BFC CERTIFY CW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
+// 
+// 0 !KEYWORDS BrickLink bb0008c04L, Rebrickable flex08c04
 // 
 // 0 !HISTORY 2004-03-02 [PTadmin] Official Update 2004-01
 // 0 !HISTORY 2007-06-25 [PTadmin] Header formatted for Contributor Agreement

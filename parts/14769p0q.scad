@@ -13,8 +13,8 @@ function ldraw_lib__14769p0q() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickowl 1004554, Earth, Globe, Rebrickable 14769pr1237, Set 21332
-// 0 !KEYWORDS Bricklink 14769pb503
+// 0 !KEYWORDS Bricklink 14769pb503, Brickowl 1004554, Earth, Globe
+// 0 !KEYWORDS Rebrickable 14769pr1237, Set 21332
 // 
 // 0 !HISTORY 2023-06-24 [OrionP] Official Update 2023-03
 // 

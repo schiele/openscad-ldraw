@@ -28,6 +28,7 @@ function ldraw_lib__6064() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS desert, shrub, spiky, spiny, town, tumbleweed, western, wild west
 // 
 // 0 !HISTORY 2001-11-30 [PTadmin] Official Update 2001-02

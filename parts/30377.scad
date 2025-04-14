@@ -26,9 +26,9 @@ function ldraw_lib__30377() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Attack of the Clones, Clip, Episode 1, Episode 2, Life on Mars
-// 0 !KEYWORDS Martian, Space, Star Wars, The Phantom Menace, Trade Federation
-// 0 !KEYWORDS battle droid, clip-on, minifig-scale
+// 0 !KEYWORDS Attack of the Clones, battle droid, Clip, clip-on, Episode 1
+// 0 !KEYWORDS Episode 2, Life on Mars, Martian, minifig-scale, Space, Star Wars
+// 0 !KEYWORDS The Phantom Menace, Trade Federation
 // 
 // 0 !HISTORY 2002-11-30 [PTadmin] Official Update 2002-05
 // 0 !HISTORY 2007-06-09 [PTadmin] Header formatted for Contributor Agreement

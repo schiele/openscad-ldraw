@@ -11,6 +11,7 @@ function ldraw_lib__3817bpc1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS Avengers, Bricklink 970c00pb0482, Captain Marvel, Carol Danvers
 // 0 !KEYWORDS Marvel, set 76049, Super Heroes
 // 

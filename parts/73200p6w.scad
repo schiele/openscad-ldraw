@@ -13,6 +13,7 @@ function ldraw_lib__73200p6w() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS Bricklink 970c00pb0021, set 3012, set 4305, set 6800, set 6816
 // 0 !KEYWORDS set 6818, set 6829, set 6836, set 6901, set 6902, set 6915, set 6975
 // 0 !KEYWORDS set 6979

@@ -14,7 +14,6 @@ function ldraw_lib__37822() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Neckwear
-// 0 !KEYWORDS
 // 
 // 0 !HISTORY 2023-04-27 {LEGO Instructions App} Original part shape
 // 0 !HISTORY 2023-04-30 [Philo] File preparation for LDraw Parts Tracker

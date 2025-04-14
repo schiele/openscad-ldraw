@@ -17,9 +17,9 @@ function ldraw_lib__73200bpx1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 970c00pb0417, Brickowl 595446, Jurassic world
+// 0 !KEYWORDS ACU Trooper, Bricklink 970c00pb0417, Brickowl 595446, Jurassic world
 // 0 !KEYWORDS Rebrickable 970c12pr0886, Set 71205, Set 75915, Set 75916, Set 75917
-// 0 !KEYWORDS Set 75918, Set 75919, ACU Trooper
+// 0 !KEYWORDS Set 75918, Set 75919
 // 
 // 0 !HISTORY 2023-06-24 [OrionP] Official Update 2023-03
 // 

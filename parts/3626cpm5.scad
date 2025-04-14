@@ -14,7 +14,7 @@ function ldraw_lib__3626cpm5() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Éomer, Lord of the Rings
+// 0 !KEYWORDS Ãomer, Lord of the Rings
 // 
 // 0 !CMDLINE -c78
 // 

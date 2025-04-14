@@ -18,7 +18,7 @@ function ldraw_lib__4790() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Pirates, helm, steering
+// 0 !KEYWORDS helm, Pirates, steering
 // 
 // 0 !HISTORY 2001-11-23 [pneaster] corrected BFC use of primitive files.
 // 0 !HISTORY 2001-12-31 [PTadmin] Official Update 2001-03

@@ -8,11 +8,13 @@ function ldraw_lib__2538b() = [
 // 0 Name: 2538b.dat
 // 0 Author: Andy Westrate [westrate]
 // 0 !LDRAW_ORG Part UPDATE 2023-04
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
+// 
+// 0 !CATEGORY Obsolete
 // 
 // 0 !HISTORY 2002-12-31 [PTadmin] Official Update 2002-06
 // 0 !HISTORY 2007-05-14 [PTadmin] Header formatted for Contributor Agreement

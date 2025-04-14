@@ -11,7 +11,7 @@ function ldraw_lib__21709() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !CATEGORY Vehicle
+// 0 !CATEGORY Obsolete
 // 
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
 // 0 !HISTORY 2022-11-07 [OrionP] Made obsolete due to improper geometry

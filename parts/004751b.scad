@@ -15,8 +15,8 @@ function ldraw_lib__004751b() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS  Bricklink 395.1stk01,  Classic car,  Rebrickable 004751,  Set 395-1
-// 0 !KEYWORDS  Silver Ghost, Brickowl 122487
+// 0 !KEYWORDS Bricklink 395.1stk01, Brickowl 122487, Classic car
+// 0 !KEYWORDS Rebrickable 004751, Set 395-1, Silver Ghost
 // 
 // 0 !HISTORY 2023-08-25 [OrionP] Official Update 2023-04
 // 

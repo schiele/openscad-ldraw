@@ -10,11 +10,13 @@ function ldraw_lib__976() = [
 // 0 Name: 976.dat
 // 0 Author: Leonardo Zide [leozide]
 // 0 !LDRAW_ORG Part UPDATE 2016-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
+// 
+// 0 !CATEGORY Obsolete
 // 
 // 0 !HISTORY 1998-02-12 [PTadmin] Official Update 1998-02
 // 0 !HISTORY 1998-03-22 [Tore_Eriksson] 5-lines

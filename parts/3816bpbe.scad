@@ -11,6 +11,7 @@ function ldraw_lib__3816bpbe() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS bricklink 970c00pb0235, Heartbreaker, set 76008
 // 
 // 0 !CMDLINE -c320

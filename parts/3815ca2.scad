@@ -13,6 +13,7 @@ function ldraw_lib__3815ca2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS Adventurers, ancient, archeology, barefeet, barefoot, Cairo, crypt
 // 0 !KEYWORDS Egypt, egyptian, folded, folds, Giza, King Tut, loincloth, mummy
 // 0 !KEYWORDS Nile, Pharaoh, pleated, pleats, pyramid, ruins, skirt, toes, wrap

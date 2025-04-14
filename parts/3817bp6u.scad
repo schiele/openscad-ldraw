@@ -11,6 +11,7 @@ function ldraw_lib__3817bp6u() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS Android, Invaders, set 6975, set 6979, UFO
 // 
 // 0 !HISTORY 2010-12-31 [BlackBrick89] Original pattern design

@@ -18,7 +18,7 @@ function ldraw_lib__6942() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Round, Scala Cone 5 x 5, bowl, cone, lampshade, lightshade, tile
+// 0 !KEYWORDS bowl, cone, lampshade, lightshade, Round, Scala Cone 5 x 5, tile
 // 
 // 0 !HISTORY 1999-03-26 [PTadmin] Official Update 1999-02
 // 0 !HISTORY 2007-07-18 [PTadmin] Header formatted for Contributor Agreement

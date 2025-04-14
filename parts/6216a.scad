@@ -12,6 +12,8 @@ function ldraw_lib__6216a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
+// 
 // 0 !CMDLINE -c7
 // 
 // 0 !HISTORY 2018-03-31 [cwdee] reworked with renumbered parts

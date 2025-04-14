@@ -14,9 +14,11 @@ function ldraw_lib__87552p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 87552pb070L, Porsche, Set 10295
+// 0 !KEYWORDS Bricklink 87552pb070L, Porsche, Rebrickable 87552pr0012, Set 10295
 // 
 // 0 !CMDLINE -c47
+// 
+// 0 !PREVIEW 16 0 0 0 -1 0 0 0 1 0 0 0 -1
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
 // 

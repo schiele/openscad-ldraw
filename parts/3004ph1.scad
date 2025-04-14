@@ -7,14 +7,16 @@ function ldraw_lib__3004ph1() = [
 // 0 Name: 3004ph1.dat
 // 0 Author: Andy Westrate [westrate]
 // 0 !LDRAW_ORG Part UPDATE 2010-02
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Coat of Arms, Godric Gryffindor, Gryffindor House, Harry Potter
-// 0 !KEYWORDS Hogwarts School of Witchcraft and Wizardry, Lion, Red and Gold
+// 0 !KEYWORDS BrickLink 3004px11, Coat of Arms, Godric Gryffindor
+// 0 !KEYWORDS Gryffindor House, Harry Potter
+// 0 !KEYWORDS Hogwarts School of Witchcraft and Wizardry, Lion
+// 0 !KEYWORDS Rebrickable 3004pr9957, Red and Gold
 // 
 // 0 !CMDLINE -c19
 // 

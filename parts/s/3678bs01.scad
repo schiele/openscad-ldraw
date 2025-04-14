@@ -16,7 +16,7 @@ function ldraw_lib__s__3678bs01() = [
 // 0 Name: s\3678bs01.dat
 // 0 Author: Andy Westrate [westrate]
 // 0 !LDRAW_ORG Subpart UPDATE 2014-02
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 !HELP Uncomment for front face
 // 0 !HELP 4 16 20 44 -30 20 0 -10 -20 0 -10 -20 44 -30

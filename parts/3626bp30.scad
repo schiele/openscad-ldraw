@@ -13,6 +13,7 @@ function ldraw_lib__3626bp30() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS Castle, face, Pirates, wolfpack
 // 
 // 0 !HISTORY 2002-02-18 [PTadmin] Official Update 2002-01

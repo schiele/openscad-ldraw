@@ -8,17 +8,19 @@ function ldraw_lib__6037727b() = [
 // 0 Sticker  1.5 x  1.9 with Two Clocks and Pretzel
 // 0 Name: 6037727b.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
-// 0 !LDRAW_ORG Part UPDATE 2022-05
+// 0 !LDRAW_ORG Part UPDATE 2025-03
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bakery, Open hours, Set 41006
+// 0 !KEYWORDS Bakery, Bricklink 41006stk01, Brickowl 762183, Open hours
+// 0 !KEYWORDS Rebrickable 14249, Set 41006
 // 
 // 0 !HISTORY 2022-09-15 [PTadmin] Official Update 2022-05
-// 
+// 0 !HISTORY 2025-03-11 [Holly-Wood] Added keywords
+// 0 !HISTORY 2025-03-30 [OrionP] Official Update 2025-03
 // 
 // 1 16 0 -0.25 0 19 0 0 0 0.25 0 0 0 15 box5-12.dat
   [1,16,0,-0.25,0,19,0,0,0,0.25,0,0,0,15, ldraw_lib__box5_12()],

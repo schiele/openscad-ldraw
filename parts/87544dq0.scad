@@ -17,6 +17,8 @@ function ldraw_lib__87544dq0() = [
 // 
 // 0 !CMDLINE -c0
 // 
+// 0 !PREVIEW 16 0 0 0 -1 0 0 0 1 0 0 0 -1
+// 
 // 0 !HISTORY 2016-12-31 [PTadmin] Official Update 2016-01
 // 0 !HISTORY 2020-05-25 [PTadmin] Update description
 // 0 !HISTORY 2020-06-28 [PTadmin] Official Update 2020-01

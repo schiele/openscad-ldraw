@@ -10,19 +10,19 @@ use <s/973psqs06.scad>
 use <s/973psqs07.scad>
 use <s/973s01.scad>
 function ldraw_lib__973psq() = [
-// 0 Minifig Torso with SW Imperial Officer Pattern
+// 0 Minifig Torso with SW Imperial Officer (Captain) Pattern
 // 0 Name: 973psq.dat
 // 0 Author: Franklin W. Cain [fwcain]
-// 0 !LDRAW_ORG Part UPDATE 2012-03
+// 0 !LDRAW_ORG Part UPDATE 2025-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS admiral, captain, Classic Trilogy, commander, Death Star, Empire
-// 0 !KEYWORDS General, Governor, Grand Moff, Jacket, Major, Military
-// 0 !KEYWORDS rank insignia, set 7201, Star Wars, tunic, Uniform
+// 0 !KEYWORDS admiral, Bricklink 973psq, captain, Classic Trilogy, commander
+// 0 !KEYWORDS Death Star, Empire, General, Governor, Grand Moff, Jacket, Major
+// 0 !KEYWORDS Military, rank insignia, set 7201, Star Wars, tunic, Uniform
 // 
 // 0 !HISTORY 2002-08-18 [PTadmin] Official Update 2002-04
 // 0 !HISTORY 2007-07-29 [PTadmin] Header formatted for Contributor Agreement
@@ -30,7 +30,8 @@ function ldraw_lib__973psq() = [
 // 0 !HISTORY 2012-04-08 [BlackBrick89] Colour/pattern cleanup
 // 0 !HISTORY 2012-05-25 [TK-949] Complete Rewrite
 // 0 !HISTORY 2012-12-28 [PTadmin] Official Update 2012-03
-// 
+// 0 !HISTORY 2025-02-23 [MagFors] Update description
+// 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],

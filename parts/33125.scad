@@ -7,10 +7,10 @@ use <../p/4-4cylc.scad>
 use <../p/4-4ring2.scad>
 use <s/33125s01.scad>
 function ldraw_lib__33125() = [
-// 0 Minifig Food Croissant
+// 0 Minifig Food Croissant with Rounded Ends
 // 0 Name: 33125.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2009-03
+// 0 !LDRAW_ORG Part UPDATE 2025-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -20,7 +20,8 @@ function ldraw_lib__33125() = [
 // 0 !CATEGORY Minifig Accessory
 // 
 // 0 !HISTORY 2009-12-29 [PTadmin] Official Update 2009-03
-// 
+// 0 !HISTORY 2025-02-09 [MagFors] Update description
+// 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\33125s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__33125s01()],

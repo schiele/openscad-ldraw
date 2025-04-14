@@ -19,11 +19,13 @@ function ldraw_lib__4474p61() = [
 // 0 Name: 4474p61.dat
 // 0 Author: Bernd Broich [bbroich]
 // 0 !LDRAW_ORG Part UPDATE 2018-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
+// 
+// 0 !KEYWORDS Rebrickable 4474pr0001
 // 
 // 0 !HISTORY 2002-11-30 [PTadmin] Official Update 2002-05
 // 0 !HISTORY 2007-07-04 [PTadmin] Header formatted for Contributor Agreement

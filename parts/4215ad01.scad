@@ -15,6 +15,8 @@ function ldraw_lib__4215ad01() = [
 // 0 !CATEGORY Sticker Shortcut
 // 0 !KEYWORDS Set 6651
 // 
+// 0 !PREVIEW 16 0 0 0 -1 0 0 0 1 0 0 0 -1
+// 
 // 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02
 // 0 !HISTORY 2024-05-27 [OrionP] Change category to Sticker Shortcut
 // 0 !HISTORY 2024-05-28 [OrionP] Official Update 2024-04

@@ -15,6 +15,8 @@ function ldraw_lib__4864ad02() = [
 // 0 !CATEGORY Sticker Shortcut
 // 0 !KEYWORDS Bricklink 4864apb002, Horse Trailer, Set 6359
 // 
+// 0 !PREVIEW 16 0 0 0 -1 0 0 0 1 0 0 0 -1
+// 
 // 0 !HISTORY 2024-12-30 [OrionP] Official Update 2024-11
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 4864a.dat

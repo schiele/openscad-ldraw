@@ -4,18 +4,22 @@ use <16001p01.scad>
 use <3820.scad>
 use <973.scad>
 function ldraw_lib__16360p01() = [
-// 0 Minifig Torso with Yellow Lower Arms and Hands
+// 0 Minifig Torso with Yellow Dual Mould Arms and Hands Pattern
 // 0 Name: 16360p01.dat
 // 0 Author: Magnus Forsberg [MagFors]
-// 0 !LDRAW_ORG Shortcut UPDATE 2022-03
+// 0 !LDRAW_ORG Shortcut UPDATE 2025-03
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !HISTORY 2022-05-07 [PTadmin] Official Update 2022-03
+// 0 !KEYWORDS Bricklink 973c064, Rebrickable 973g22c01h01, Set 71006, Set 71016
+// 0 !KEYWORDS Set 71211
 // 
+// 0 !HISTORY 2022-05-07 [PTadmin] Official Update 2022-03
+// 0 !HISTORY 2025-03-16 [MagFors] Update description and keywords
+// 0 !HISTORY 2025-03-30 [OrionP] Official Update 2025-03
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 973.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__973()],

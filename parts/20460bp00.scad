@@ -18,7 +18,7 @@ function ldraw_lib__20460bp00() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS Bricklink 970c00pb0965, Brickowl 792429, Rebrickable 970c28pat27
-// 0 !KEYWORDS Set 70848, Set 71203, Set 40418
+// 0 !KEYWORDS Set 40418, Set 70848, Set 71203
 // 
 // 0 !HISTORY 2022-09-15 [ejboer] Original design
 // 0 !HISTORY 2023-06-05 [MagFors] Adapted to corrected geometry

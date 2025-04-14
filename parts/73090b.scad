@@ -9,9 +9,9 @@ use <../p/stug4-1x5.scad>
 function ldraw_lib__73090b() = [
 // 0 Brick  2 x  6 x  2 Weight with Plate Bottom
 // 0 Name: 73090b.dat
-// 0 Author: Dee Earley [DeannaEarley]
+// 0 Author: Deanna Earley [DeannaEarley]
 // 0 !LDRAW_ORG Part UPDATE 2022-04
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],

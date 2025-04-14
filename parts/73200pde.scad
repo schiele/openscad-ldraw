@@ -13,6 +13,7 @@ function ldraw_lib__73200pde() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS Bricklink 970c11pb06, Mad Scientist, set 1382, set 852331
 // 
 // 0 !CMDLINE -c0

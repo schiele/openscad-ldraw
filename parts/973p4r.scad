@@ -6,13 +6,13 @@ function ldraw_lib__973p4r() = [
 // 0 Name: 973p4r.dat
 // 0 Author: Andy Westrate [westrate]
 // 0 !LDRAW_ORG Part UPDATE 2015-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Castle, guard, LEGOLAND Castle, tournament
+// 0 !KEYWORDS BrickLink 973px47, Castle, guard, LEGOLAND Castle, tournament
 // 
 // 0 !CMDLINE -C4
 // 

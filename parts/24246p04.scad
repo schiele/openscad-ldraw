@@ -7,17 +7,19 @@ function ldraw_lib__24246p04() = [
 // 0 Tile  1 x  1 with Rounded End with White Mercedes-Benz Logo Pattern
 // 0 Name: 24246p04.dat
 // 0 Author: Massimo Maso [Sirio]
-// 0 !LDRAW_ORG Part UPDATE 2022-05
+// 0 !LDRAW_ORG Part UPDATE 2025-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS F1, Mercedes, Set 76909, Speed Champions
+// 0 !KEYWORDS Bricklink 24246pb043, Brickowl 546531, F1, Mercedes
+// 0 !KEYWORDS Rebrickable 24246pr0034, Set 76909, Speed Champions
 // 
 // 0 !HISTORY 2022-09-15 [PTadmin] Official Update 2022-05
-// 
+// 0 !HISTORY 2025-02-27 [Lego-Manfred] References added
+// 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 
 // 0 // Subpart
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\24246s02.dat

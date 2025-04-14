@@ -13,6 +13,7 @@ function ldraw_lib__3817bp63() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS Bricklink 970c00pb0019, Brickowl 172416, droid, Exploriens
 // 0 !KEYWORDS Rebrickable 970c22pr0019, set 1858, set 6705, set 6939, Set 6949
 // 0 !KEYWORDS set 6958, Set 6959, set 6982, Set 6991, Spyrius

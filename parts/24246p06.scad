@@ -7,17 +7,19 @@ function ldraw_lib__24246p06() = [
 // 0 Tile  1 x  1 with Rounded End with Yellow Ferrari Horse Pattern
 // 0 Name: 24246p06.dat
 // 0 Author: Massimo Maso [Sirio]
-// 0 !LDRAW_ORG Part UPDATE 2023-02
+// 0 !LDRAW_ORG Part UPDATE 2025-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Competizione, Set 76914, Speed Champions, 812
+// 0 !KEYWORDS 812, Bricklink 24246pb045, Brickowl 930590, Competizione
+// 0 !KEYWORDS Rebrickable 24246pr0041, Set 76914, Speed Champions
 // 
 // 0 !HISTORY 2023-04-17 [OrionP] Official Update 2023-02
-// 
+// 0 !HISTORY 2025-02-27 [Lego-Manfred] References added
+// 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 
 // 0 // Subparts
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\24246s02.dat

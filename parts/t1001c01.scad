@@ -4,10 +4,10 @@ use <t1001.scad>
 use <t1002.scad>
 use <t1003.scad>
 function ldraw_lib__t1001c01() = [
-// 0 | BuWizz Rechargeable Battery and Bluetooth  4 Ports Motor Driver
+// 0 | BuWizz 2.0 Hub with 4 Power Functions Ports
 // 0 Name: t1001c01.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2020-02
+// 0 !LDRAW_ORG Part UPDATE 2025-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -17,6 +17,8 @@ function ldraw_lib__t1001c01() = [
 // 0 !CATEGORY Electric
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
+// 0 !HISTORY 2021-04-06 [PTadmin] Update description
+// 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 t1001.dat

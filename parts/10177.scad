@@ -24,6 +24,7 @@ function ldraw_lib__10177() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS Bricklink 970d15, Cybernetic, Prostetic, Robot, Rodney Rathbone
 // 0 !KEYWORDS set 9464, set 9466, set 9468
 // 

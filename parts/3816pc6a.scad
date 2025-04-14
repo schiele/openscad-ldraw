@@ -11,6 +11,7 @@ function ldraw_lib__3816pc6a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS CMF Series 6, Collectable, Collectible, soldier
 // 
 // 0 !HISTORY 2018-01-30 [PTadmin] Official Update 2018-01

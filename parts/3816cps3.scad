@@ -16,8 +16,8 @@ function ldraw_lib__3816cps3() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickowl 149682, Rebrickable 970c49pr0023, Set 7133, Star Wars
-// 0 !KEYWORDS Zam Wesell, Bricklink 970c00pb0024
+// 0 !KEYWORDS Bricklink 970c00pb0024, Brickowl 149682, Rebrickable 970c49pr0023
+// 0 !KEYWORDS Set 7133, Star Wars, Zam Wesell
 // 
 // 0 !HISTORY 2023-05-16 [MagFors] Adapted to c-version leg
 // 0 !HISTORY 2023-06-24 [OrionP] Official Update 2023-03

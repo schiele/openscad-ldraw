@@ -6,13 +6,14 @@ function ldraw_lib__2335ps1() = [
 // 0 Name: 2335ps1.dat
 // 0 Author: Carsten Schmitz [Deckard]
 // 0 !LDRAW_ORG Part UPDATE 2018-02
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS conduit, cover, Episode One, flap, machinery, Sebulba, Star Wars
+// 0 !KEYWORDS conduit, cover, Episode One, flap, machinery, Rebrickable 2335pr0028
+// 0 !KEYWORDS Sebulba, Star Wars
 // 
 // 0 !HISTORY 2002-04-25 [PTadmin] Official Update 2002-02
 // 0 !HISTORY 2002-06-22 [fwcain] #1: References to dithered colors' subfiles were not using proper color codes...

@@ -13,6 +13,7 @@ function ldraw_lib__73200pc4b() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS Bricklink 970c00pb0098, Set 8804, Soccer
 // 
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04

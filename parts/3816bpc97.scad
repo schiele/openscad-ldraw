@@ -11,6 +11,7 @@ function ldraw_lib__3816bpc97() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS CMF, Series 9
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02

@@ -6,18 +6,20 @@ function ldraw_lib__6636p02() = [
 // 0 Tile  1 x  6 with "Center" Pattern
 // 0 Name: 6636p02.dat
 // 0 Author: J.C. Tchang [tchang]
-// 0 !LDRAW_ORG Part UPDATE 2012-02
+// 0 !LDRAW_ORG Part UPDATE 2025-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Architect, Architecture, New York City, Raymond M. Hood
-// 0 !KEYWORDS Rockefeller Center, Set 21007, USA
+// 0 !KEYWORDS 6636pr0010, Architect, Architecture, Bricklink 6636pb033
+// 0 !KEYWORDS Brickowl 240390, New York City, Raymond M. Hood, Rockefeller Center
+// 0 !KEYWORDS Set 21007, USA
 // 
 // 0 !HISTORY 2012-08-09 [PTadmin] Official Update 2012-02
-// 
+// 0 !HISTORY 2025-02-27 [Lego-Manfred] References added
+// 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 
 // 0 // Text produced by txt2dat, using "Arial" font
 // 0 // (R) extract from s\777s07.dat

@@ -11,6 +11,7 @@ function ldraw_lib__80120() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS ambulance, thin-wall, town, Window
 // 
 // 0 !HISTORY 1999-02-01 [PTadmin] Official Update 1999-01

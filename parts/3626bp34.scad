@@ -18,6 +18,7 @@ function ldraw_lib__3626bp34() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS face, moustache, Pirates
 // 
 // 0 !HISTORY 2002-04-25 [PTadmin] Official Update 2002-02

@@ -13,6 +13,7 @@ function ldraw_lib__6135() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS Technic Horn
 // 
 // 0 !HISTORY 2003-03-12 [PTadmin] Official Update 2003-01

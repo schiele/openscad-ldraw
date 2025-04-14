@@ -28,7 +28,7 @@ function ldraw_lib__u9163() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Fabuland, Motorcycle, bicycle, bike, motorbike, scooter
+// 0 !KEYWORDS bicycle, bike, Fabuland, motorbike, Motorcycle, scooter
 // 
 // 0 !HISTORY 2012-12-28 [PTadmin] Official Update 2012-03
 // 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives

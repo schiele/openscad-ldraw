@@ -16,7 +16,7 @@ function ldraw_lib__u9107p05c03() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS Bear, Ricky Raccoon, Riton le raton, Roky el oso, Set 3681
-// 0 !KEYWORDS Willie Waschbär
+// 0 !KEYWORDS Willie WaschbÃ¤r
 // 
 // 0 !HISTORY 2011-07-25 [PTadmin] Official Update 2011-01
 // 

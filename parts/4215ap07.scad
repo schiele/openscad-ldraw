@@ -12,7 +12,9 @@ function ldraw_lib__4215ap07() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 4215ap06, Highway rig, set 5588
+// 0 !KEYWORDS Highway rig, Rebrickable 4215apr0007, set 5588
+// 
+// 0 !PREVIEW 16 0 0 0 -1 0 0 0 1 0 0 0 -1
 // 
 // 0 !HISTORY 2010-04-05 [PTadmin] Official Update 2010-01
 // 0 !HISTORY 2024-02-14 [MagFors] Update description

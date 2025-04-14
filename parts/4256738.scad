@@ -11,6 +11,8 @@ function ldraw_lib__4256738() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
+// 
 // 0 !HISTORY 2010-12-31 [PTadmin] Official Update 2010-03
 // 0 !HISTORY 2019-08-20 [Holly-Wood] Obsoleted per decision not to include physical colour parts
 // 0 !HISTORY 2019-09-09 [PTadmin] Official Update 2019-02

@@ -15,6 +15,8 @@ function ldraw_lib__4865d01() = [
 // 0 !CATEGORY Sticker Shortcut
 // 0 !KEYWORDS railway, set 4544
 // 
+// 0 !PREVIEW 16 0 0 0 -1 0 0 0 1 0 0 0 -1
+// 
 // 0 !HISTORY 1997-09-29 [PTadmin] Official Update 1997-15
 // 0 !HISTORY 2002-02-14 {unknown} Corrected concave quads, gaps and lines
 // 0 !HISTORY 2002-04-25 [PTadmin] Official Update 2002-02

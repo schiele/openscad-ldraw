@@ -73,7 +73,7 @@ function ldraw_lib__50922() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Hordika, Technic, Toa, bionicle
+// 0 !KEYWORDS bionicle, Hordika, Technic, Toa
 // 
 // 0 !HISTORY 2016-01-01 [arezey] Fixed edges and rects
 // 0 !HISTORY 2021-03-31 [Sirio] Fixed sphere joint and corrected intermediate rotation of circular primitives

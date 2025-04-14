@@ -15,6 +15,8 @@ function ldraw_lib__3821d05() = [
 // 0 !CATEGORY Sticker Shortcut
 // 0 !KEYWORDS Breakdown assistance, Bricklink 3821pb008, Set 1590-2
 // 
+// 0 !PREVIEW 16 0 0 0 -1 0 0 0 1 0 0 0 -1
+// 
 // 0 !HISTORY 2024-08-26 [OrionP] Official Update 2024-07
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 3821.dat

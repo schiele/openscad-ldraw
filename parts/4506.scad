@@ -25,7 +25,7 @@ function ldraw_lib__4506() = [
   [0,"BFC","CW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Castle, Robin Hood, forestmen, hat, hunt, hunter, hunting
+// 0 !KEYWORDS Castle, forestmen, hat, hunt, hunter, hunting, Robin Hood
 // 
 // 0 !HISTORY 2004-09-15 [PTadmin] Official Update 2004-03
 // 0 !HISTORY 2007-07-22 [PTadmin] Header formatted for Contributor Agreement

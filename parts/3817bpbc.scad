@@ -11,6 +11,7 @@ function ldraw_lib__3817bpbc() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS Bricklink 970c00pb0155, set 10721, set 6869
 // 
 // 0 !HISTORY 2013-12-23 [MagFors] Original design as 3815c89

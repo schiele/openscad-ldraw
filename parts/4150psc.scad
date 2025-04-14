@@ -13,9 +13,9 @@ function ldraw_lib__4150psc() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Anakin, Cooling, Coruscant, Engine, Enzo, Ferrari, Obi-Wan, SW
-// 0 !KEYWORDS Set 7133, Speeder, Star Wars, XJ-6 Airspeeder, bricklink 4150px21
-// 0 !KEYWORDS set 8652
+// 0 !KEYWORDS Anakin, bricklink 4150px21, Cooling, Coruscant, Engine, Enzo
+// 0 !KEYWORDS Ferrari, Obi-Wan, Set 7133, set 8652, Speeder, Star Wars, SW
+// 0 !KEYWORDS XJ-6 Airspeeder
 // 
 // 0 !HISTORY 2020-12-10 [MagFors] Pattern image created by Jaco van der Molen
 // 0 !HISTORY 2020-12-10 [MagFors] Reduced pattern resolution, added texmap

@@ -13,8 +13,9 @@ function ldraw_lib__73200pm1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 970c120pb01, Éomer, Lord of the Rings, set 9471, set 9474
-// 0 !KEYWORDS Théoden
+// 0 !CATEGORY Obsolete
+// 0 !KEYWORDS Ãomer, Bricklink 970c120pb01, Lord of the Rings, set 9471, set 9474
+// 0 !KEYWORDS ThÃ©oden
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
 // 0 !HISTORY 2023-05-27 [MagFors] Obsoleted due to bad geometry

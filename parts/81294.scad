@@ -12,6 +12,7 @@ function ldraw_lib__81294() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS Bricklink 81294, Set 2234, Set 989
 // 
 // 0 !HISTORY 1998-09-15 [PTadmin] Official Update 1998-08

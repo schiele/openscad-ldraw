@@ -13,6 +13,7 @@ function ldraw_lib__73200p8i() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS Emmet, Set 70816
 // 
 // 0 !HISTORY 2020-06-10 [cwdee] Adapted to corrected geometry

@@ -4,18 +4,20 @@ function ldraw_lib__6636p03() = [
 // 0 Tile  1 x  6 with "Solomon" Pattern
 // 0 Name: 6636p03.dat
 // 0 Author: J.C. Tchang [tchang]
-// 0 !LDRAW_ORG Part UPDATE 2012-02
+// 0 !LDRAW_ORG Part UPDATE 2025-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Architect, Architecture, Frank Lloyd Wright, New York City
-// 0 !KEYWORDS Set 21004, Solomon R. Guggenheim Museum, USA
+// 0 !KEYWORDS Architect, Architecture, Bricklink 6636pb015, Brickowl 877108
+// 0 !KEYWORDS Frank Lloyd Wright, New York City, Rebrickable 6636pr0001, Set 21004
+// 0 !KEYWORDS Solomon R. Guggenheim Museum, USA
 // 
 // 0 !HISTORY 2012-08-09 [PTadmin] Official Update 2012-02
-// 
+// 0 !HISTORY 2025-02-27 [Lego-Manfred] References added
+// 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 
 // 0 // Text produced by txt2dat, using "Arial" font
 // 0 // Scaled and Positioned with MLCad

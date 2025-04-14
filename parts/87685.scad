@@ -5,13 +5,14 @@ function ldraw_lib__87685() = [
 // 0 Name: 87685.dat
 // 0 Author: Andy Westrate [westrate]
 // 0 !LDRAW_ORG Part UPDATE 2012-03
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
+// 0 !KEYWORDS BrickLink x46
 // 
 // 0 !HISTORY 2009-10-13 {LEGO Universe Team} Original part shape
 // 0 !HISTORY 2009-11-07 [westrate] File preparation for LDraw Parts Tracker

@@ -16,9 +16,9 @@ function ldraw_lib__3817cpm0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickowl 360424, Lord of the Rings, Rebrickable 970c07pr0334
-// 0 !KEYWORDS Set 10237, set 30211, set 9471, set 9474, set 9476, Uruk-hai
-// 0 !KEYWORDS Bricklink 970c00pb0159
+// 0 !KEYWORDS Bricklink 970c00pb0159, Brickowl 360424, Lord of the Rings
+// 0 !KEYWORDS Rebrickable 970c07pr0334, Set 10237, set 30211, set 9471, set 9474
+// 0 !KEYWORDS Set 9476, Uruk-hai
 // 
 // 0 !HISTORY 2012-12-28 [HowardLande] Original pattern design
 // 0 !HISTORY 2020-06-01 [MagFors] Adapted to corrected geometry

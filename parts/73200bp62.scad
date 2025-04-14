@@ -17,8 +17,8 @@ function ldraw_lib__73200bp62() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickowl 51038, Locust, Professor Webb, Rebrickable 970c03pr0002
-// 0 !KEYWORDS set 3070, Set 6977, Zotaxian Alien, Bricklink 970c11pb03
+// 0 !KEYWORDS Bricklink 970c11pb03, Brickowl 51038, Locust, Professor Webb
+// 0 !KEYWORDS Rebrickable 970c03pr0002, set 3070, Set 6977, Zotaxian Alien
 // 
 // 0 !HISTORY 2023-06-24 [OrionP] Official Update 2023-03
 // 

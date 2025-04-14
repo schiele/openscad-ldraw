@@ -2,10 +2,10 @@ use <../lib.scad>
 use <../p/axlehol5.scad>
 use <s/43363s01.scad>
 function ldraw_lib__43363() = [
-// 0 Technic Darth Vader Helmet
+// 0 Constraction Helmet Darth Vader
 // 0 Name: 43363.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2016-01
+// 0 !LDRAW_ORG Part UPDATE 2025-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -15,7 +15,8 @@ function ldraw_lib__43363() = [
 // 0 !KEYWORDS Set 8010
 // 
 // 0 !HISTORY 2016-12-31 [PTadmin] Official Update 2016-01
-// 
+// 0 !HISTORY 2025-02-22 [MagFors] Update description
+// 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\43363s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__43363s01()],

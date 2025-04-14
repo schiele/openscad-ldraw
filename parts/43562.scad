@@ -11,6 +11,7 @@ function ldraw_lib__43562() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS G60, Gigamesh, Gigamesh G60, Programmable, Robot, Robotics, Spybot
 // 
 // 0 !HISTORY 2013-12-23 [PTadmin] Official Update 2013-02

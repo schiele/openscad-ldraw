@@ -12,7 +12,10 @@ function ldraw_lib__4864ap06() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS bricklink 4864apx9, Cycle fix-it shop, set 6699
+// 0 !KEYWORDS bricklink 4864apx9, Cycle fix-it shop, Rebrickable 4864apr0015
+// 0 !KEYWORDS set 6699
+// 
+// 0 !PREVIEW 16 0 0 0 -1 0 0 0 1 0 0 0 -1
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
 // 

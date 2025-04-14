@@ -7,12 +7,13 @@ function ldraw_lib__3815c3j() = [
 // 0 Name: 3815c3j.dat
 // 0 Author: Andy Westrate [westrate]
 // 0 !LDRAW_ORG Shortcut UPDATE 2022-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS Islander, natives, Pirates
 // 
 // 0 !CMDLINE -C14

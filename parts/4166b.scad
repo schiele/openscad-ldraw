@@ -17,11 +17,13 @@ function ldraw_lib__4166b() = [
 // 0 Name: 4166b.dat
 // 0 Author: Leonardo Zide [leozide]
 // 0 !LDRAW_ORG Part UPDATE 2017-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
+// 
+// 0 !KEYWORDS BrickLink 4166, Rebrickable 4166
 // 
 // 0 !HISTORY 1998-09-15 [PTadmin] Official Update 1998-08
 // 0 !HISTORY 1999-02-01 [PTadmin] Official Update 1999-01

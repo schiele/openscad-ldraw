@@ -14,7 +14,6 @@ function ldraw_lib__12893() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS
 // 
 // 0 !HISTORY 2013-08-14 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2023-04-12 [ejboer] File preparation for LDraw Parts Tracker

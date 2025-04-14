@@ -17,9 +17,9 @@ function ldraw_lib__3626bp4m() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS Bricklink 3626bpx97, Castle, Dark Forest, Dragon Masters
-// 0 !KEYWORDS Fright Knights, Set 1712, Set 1732, Set 6004, Set 6031, Set 6043
-// 0 !KEYWORDS Set 6046, Set 6047, Set 6056, Set 6076, Set 6079, Set 6082, Set 6087
-// 0 !KEYWORDS Set 6097, Set 6099, Set 6105, set 1906
+// 0 !KEYWORDS Fright Knights, Set 1712, Set 1732, set 1906, Set 6004, Set 6031
+// 0 !KEYWORDS Set 6043, Set 6046, Set 6047, Set 6056, Set 6076, Set 6079, Set 6082
+// 0 !KEYWORDS Set 6087, Set 6097, Set 6099, Set 6105
 // 
 // 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 

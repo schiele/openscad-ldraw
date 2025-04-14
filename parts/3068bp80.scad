@@ -12,14 +12,15 @@ function ldraw_lib__3068bp80() = [
 // 0 Name: 3068bp80.dat
 // 0 Author: Carsten Schmitz [Deckard]
 // 0 !LDRAW_ORG Part UPDATE 2020-03
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !KEYWORDS clock, computer, degree, digits, input, lcd, letter, office
-// 0 !KEYWORDS temperature, terminal, timer, typewriter
+// 0 !KEYWORDS BrickLink 3068p80, clock, computer, degree, digits, input, lcd
+// 0 !KEYWORDS letter, office, Rebrickable 3068bpr0077, temperature, terminal
+// 0 !KEYWORDS timer, typewriter
 // 
 // 0 !HISTORY 2002-02-15 [BrickCaster] groove
 // 0 !HISTORY 2002-04-25 [PTadmin] Official Update 2002-02

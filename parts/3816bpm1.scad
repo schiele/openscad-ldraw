@@ -11,7 +11,8 @@ function ldraw_lib__3816bpm1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Armor, Éomer, Lord of the Rings, set 9471, set 9474, Théoden
+// 0 !CATEGORY Obsolete
+// 0 !KEYWORDS Ãomer, Armor, Lord of the Rings, set 9471, set 9474, ThÃ©oden
 // 
 // 0 !CMDLINE -c308
 // 

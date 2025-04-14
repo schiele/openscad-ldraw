@@ -9,13 +9,14 @@ function ldraw_lib__40359a() = [
 // 0 Name: 40359a.dat
 // 0 Author: Andy Westrate [westrate]
 // 0 !LDRAW_ORG Part UPDATE 2020-02
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
+// 0 !KEYWORDS Rebrickable 62808
 // 
 // 0 !HISTORY 2009-10-13 {LEGO Universe Team} Original part shape
 // 0 !HISTORY 2009-11-12 [westrate] File preparation for LDraw Parts Tracker

@@ -12,7 +12,7 @@ function ldraw_lib__973pm5() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Armor, Éomer, Lord of the Rings
+// 0 !KEYWORDS Ãomer, Armor, Lord of the Rings
 // 
 // 0 !CMDLINE -c320
 // 

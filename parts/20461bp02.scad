@@ -16,8 +16,8 @@ function ldraw_lib__20461bp02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS 20932, Batman II, Bricklink 970c00pb0550, Brickowl 393417
-// 0 !KEYWORDS Rebrickable 970c27pat28, Set 76054, Super Heroes, 73126
+// 0 !KEYWORDS 20932, 73126, Batman II, Bricklink 970c00pb0550, Brickowl 393417
+// 0 !KEYWORDS Rebrickable 970c27pat28, Set 76054, Super Heroes
 // 
 // 0 !HISTORY 2019-12-27 [MagFors] Original design
 // 0 !HISTORY 2023-06-05 [MagFors] Adapted to corrected geometry

@@ -15,6 +15,7 @@ function ldraw_lib__96905() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
+// 0 !KEYWORDS BrickLink 97053b
 // 
 // 0 !CMDLINE -c334
 // 

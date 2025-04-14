@@ -6,7 +6,7 @@ function ldraw_lib__60673c02() = [
 // 0 Name: 60673c02.dat
 // 0 Author: Andy Westrate [westrate]
 // 0 !LDRAW_ORG Shortcut UPDATE 2023-03
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 !HELP To add the hand, use
 // 0 !HELP 1 16 13.75 45 -46 1 0 0 0 1 0 0 0 1 60641.dat
@@ -15,7 +15,7 @@ function ldraw_lib__60673c02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 60642c01, Set 7036, set 852293
+// 0 !KEYWORDS Bricklink 60642c01, Rebrickable 60642c01, Set 7036, set 852293
 // 
 // 0 !HISTORY 2019-10-15 [GeraldLasser] Removed Trailing 0 and Empty Lines
 // 0 !HISTORY 2023-03-11 [MagFors] Update description and Help info

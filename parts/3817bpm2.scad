@@ -11,6 +11,7 @@ function ldraw_lib__3817bpm2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS Aragorn, Lord of the Rings, set 9472
 // 
 // 0 !CMDLINE -c28

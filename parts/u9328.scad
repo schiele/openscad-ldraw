@@ -11,7 +11,7 @@ function ldraw_lib__u9328() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !CATEGORY Sheet Fabric
+// 0 !CATEGORY Obsolete
 // 
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
 // 0 !HISTORY 2019-01-25 [cwdee] Update category

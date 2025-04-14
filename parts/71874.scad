@@ -11,6 +11,7 @@ function ldraw_lib__71874() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS Apollo, chrome, LEM, metal, metallic, moon landing, NASA, radar
 // 0 !KEYWORDS Round, Saturn V, silver, Space
 // 

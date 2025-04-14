@@ -12,6 +12,7 @@ function ldraw_lib__3817p6f() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS Astrobots
 // 
 // 0 !HISTORY 2010-04-05 [PTadmin] Official Update 2010-01

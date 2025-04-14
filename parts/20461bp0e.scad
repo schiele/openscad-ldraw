@@ -16,9 +16,9 @@ function ldraw_lib__20461bp0e() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS cowboy, set 10766, Woody, 20932, Bricklink 970c00pb0970
-// 0 !KEYWORDS Brickowl 136046, Rebrickable 970c28pat41, set 10767 set 43212
-// 0 !KEYWORDS set 10770, 73126
+// 0 !KEYWORDS 20932, 73126, Bricklink 970c00pb0970, Brickowl 136046, cowboy
+// 0 !KEYWORDS Rebrickable 970c28pat41, set 10766, set 10767 set 43212, set 10770
+// 0 !KEYWORDS Woody
 // 
 // 0 !HISTORY 2023-06-24 [OrionP] Official Update 2023-03
 // 

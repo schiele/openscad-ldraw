@@ -14,6 +14,7 @@ function ldraw_lib__973p4a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS Castle, Dress, Princess
 // 
 // 0 !HISTORY 2001-12-31 [PTadmin] Official Update 2001-03

@@ -15,6 +15,8 @@ function ldraw_lib__4864ad01() = [
 // 0 !CATEGORY Sticker Shortcut
 // 0 !KEYWORDS Bricklink 4864apb001, Fire engine, Set 6385
 // 
+// 0 !PREVIEW 16 0 0 0 -1 0 0 0 1 0 0 0 -1
+// 
 // 0 !HISTORY 2024-08-26 [OrionP] Official Update 2024-07
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 4864a.dat

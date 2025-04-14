@@ -13,6 +13,7 @@ function ldraw_lib__21019pd92() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS Bricklink 970c00pb0962, CMF, set 71024-2, Vintage Minnie Mouse
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03

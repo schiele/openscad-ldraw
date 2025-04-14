@@ -21,7 +21,7 @@ function ldraw_lib__44817() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Constraction Accessory
-// 0 !KEYWORDS  bionicle,  Guurahk,  Staff of Disintegration, Rahkshi
+// 0 !KEYWORDS bionicle, Guurahk, Rahkshi, Staff of Disintegration
 // 
 // 0 !HISTORY 2023-08-25 [OrionP] Official Update 2023-04
 // 

@@ -10,7 +10,7 @@ function ldraw_lib__2586ph2() = [
 // 0 Name: 2586ph2.dat
 // 0 Author: Andy Westrate [westrate]
 // 0 !LDRAW_ORG Part UPDATE 2024-02
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
@@ -18,8 +18,8 @@ function ldraw_lib__2586ph2() = [
 // 
 // 0 !CATEGORY Minifig Accessory
 // 0 !KEYWORDS Green and Silver, Harry Potter
-// 0 !KEYWORDS Hogwarts School of Witchcraft and Wizardry, Salazar Slytherin
-// 0 !KEYWORDS Slytherin House, Snake
+// 0 !KEYWORDS Hogwarts School of Witchcraft and Wizardry, Rebrickable 2586pr0019
+// 0 !KEYWORDS Salazar Slytherin, Slytherin House, Snake
 // 
 // 0 !CMDLINE -C0
 // 

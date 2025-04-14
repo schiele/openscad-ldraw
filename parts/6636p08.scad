@@ -4,17 +4,19 @@ function ldraw_lib__6636p08() = [
 // 0 Tile  1 x  6 with Red "UNITED" Pattern
 // 0 Name: 6636p08.dat
 // 0 Author: Evert-Jan Boer [ejboer]
-// 0 !LDRAW_ORG Part UPDATE 2017-01
+// 0 !LDRAW_ORG Part UPDATE 2025-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Apollo, NASA, Rocket, Saturn V, Set 21309
+// 0 !KEYWORDS Apollo, Bricklink 6636pb154, Brickowl 462468, NASA
+// 0 !KEYWORDS Rebrickable 6636pr0016, Rocket, Saturn V, Set 21309
 // 
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
-// 
+// 0 !HISTORY 2025-02-27 [Lego-Manfred] References added
+// 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 
 // 0 // Subfile
 // 

@@ -6,12 +6,13 @@ function ldraw_lib__3815phb() = [
 // 0 Name: 3815phb.dat
 // 0 Author: Andy Westrate [westrate]
 // 0 !LDRAW_ORG Part UPDATE 2022-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS Harry Potter, Hogwarts, Severus Snape, Slytherin
 // 
 // 0 !CMDLINE -c0

@@ -12,9 +12,8 @@ function ldraw_lib__3815bpy0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 970c00pb0643, Brickowl 488405, GT3, Mercedes
-// 0 !KEYWORDS Rebrickable 970c03pr1248, Set 75877, Speed Champions, sport, uniform
-// 0 !KEYWORDS AMG
+// 0 !KEYWORDS AMG, Bricklink 970c00pb0643, Brickowl 488405, GT3, Mercedes
+// 0 !KEYWORDS Rebrickable 970c03pr1248, Set 75877, Speed Champions, sport, Uniform
 // 
 // 0 !HISTORY 2023-06-24 [OrionP] Official Update 2023-03
 // 

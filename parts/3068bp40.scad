@@ -8,14 +8,15 @@ function ldraw_lib__3068bp40() = [
 // 0 Name: 3068bp40.dat
 // 0 Author: Andy Westrate [westrate]
 // 0 !LDRAW_ORG Part UPDATE 2004-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Castle, Dragon Master, Fright Knights, Majisto, runes, spell
-// 0 !KEYWORDS spellbook, spellcaster, wand, Willa, Witch, Wizard
+// 0 !KEYWORDS BrickLink 3068p40, Castle, Dragon Master, Fright Knights, Majisto
+// 0 !KEYWORDS Rebrickable 3068bpr0023, runes, spell, spellbook, spellcaster, wand
+// 0 !KEYWORDS Willa, Witch, Wizard
 // 
 // 0 !CMDLINE -c15
 // 

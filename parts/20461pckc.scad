@@ -12,6 +12,7 @@ function ldraw_lib__20461pckc() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS Bricklink 970c00pb1094, CMF, Sea Rescuer, Series 20, Set 71027-2
 // 
 // 0 !HISTORY 2022-09-15 [PTadmin] Official Update 2022-05

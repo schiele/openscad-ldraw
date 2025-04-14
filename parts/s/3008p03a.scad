@@ -7,7 +7,7 @@ function ldraw_lib__s__3008p03a() = [
 // 0 Name: s\3008p03a.dat
 // 0 Author: Andy Westrate [westrate]
 // 0 !LDRAW_ORG Subpart UPDATE 2004-03
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],

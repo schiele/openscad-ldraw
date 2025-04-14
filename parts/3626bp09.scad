@@ -12,14 +12,14 @@ function ldraw_lib__3626bp09() = [
 // 0 Minifig Head Female with Brown Eyebrows, Pupils, Eyelashes Pattern
 // 0 Name: 3626bp09.dat
 // 0 Author: J.C. Tchang [tchang]
-// 0 !LDRAW_ORG Part UPDATE 2024-07
+// 0 !LDRAW_ORG Part UPDATE 2025-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626bp0205, Brickowl 960293, Rebrickable 3626bpr0043
+// 0 !KEYWORDS Bricklink 3626bpb0205, Brickowl 960293, Rebrickable 3626bpr0043
 // 0 !KEYWORDS Set 10199, Set 10216, Set 4856
 // 
 // 0 !HISTORY 2012-06-06 [tchang] New part
@@ -27,6 +27,8 @@ function ldraw_lib__3626bp09() = [
 // 0 !HISTORY 2014-12-23 [PTadmin] Official Update 2014-02
 // 0 !HISTORY 2024-08-18 [Lego-Manfred] Bricklink, Rebrickable reference and sets added
 // 0 !HISTORY 2024-08-26 [OrionP] Official Update 2024-07
+// 0 !HISTORY 2024-09-08 [Lego-Manfred] Bricklink reference corrected
+// 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3626bs02.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626bs02()],

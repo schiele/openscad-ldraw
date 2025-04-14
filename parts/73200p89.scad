@@ -13,6 +13,7 @@ function ldraw_lib__73200p89() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS BrickLink 970c00pb0297, Ned Flanders, Set 71006, The Simpsons
 // 
 // 0 !HISTORY 2015-10-11 [Philo] Original design as 3815c89

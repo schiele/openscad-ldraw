@@ -15,6 +15,8 @@ function ldraw_lib__2362ad03() = [
 // 0 !CATEGORY Sticker Shortcut
 // 0 !KEYWORDS Bricklink 2362apb24R, Set 10220, Volkswagen T1 Camper
 // 
+// 0 !PREVIEW 16 0 0 0 -1 0 0 0 1 0 0 0 -1
+// 
 // 0 !HISTORY 2024-12-01 [OrionP] Official Update 2024-10
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 2362a.dat

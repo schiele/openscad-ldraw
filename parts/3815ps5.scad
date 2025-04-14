@@ -12,6 +12,7 @@ function ldraw_lib__3815ps5() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS belt, Blaster, fast-draw, firearm, gun, gunfighter, gunslinger
 // 0 !KEYWORDS Han Solo, holster, Original Trilogy, Pirate, Pistol, quick-draw
 // 0 !KEYWORDS shootist, smuggler, Star Wars, Weapon

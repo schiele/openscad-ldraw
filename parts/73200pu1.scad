@@ -13,6 +13,7 @@ function ldraw_lib__73200pu1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS Bricklink 970c00pb0283, set 70801, The LEGO Movie, Wyldstyle
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03

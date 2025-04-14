@@ -18,6 +18,8 @@ function ldraw_lib__32803() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !PREVIEW 16 0 0 0 -1 0 0 0 -1 0 0 0 1
+// 
 // 0 !HISTORY 2017-12-04 [GeraldLasser] part derived from 24201
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
 // 

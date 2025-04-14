@@ -16,6 +16,8 @@ function ldraw_lib__973p11() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
+// 0 !CATEGORY Obsolete
+// 
 // 0 !HISTORY 1999-04-16 [sbliss] Changed 973 reference to s\973s01; added back surface
 // 0 !HISTORY 1999-04-19 [sbliss] Filled in white area on front surface
 // 0 !HISTORY 1999-05-17 [PTadmin] Official Update 1999-03

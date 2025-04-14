@@ -11,6 +11,7 @@ function ldraw_lib__3816bpa9() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS Bricklink 970c00pb0040, Indiana Jones, set 7683
 // 
 // 0 !HISTORY 2011-07-25 [Philo] Original pattern design

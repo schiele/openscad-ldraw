@@ -13,6 +13,7 @@ function ldraw_lib__73200pw2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS american native, Bricklink 970c02pb02, indian, set 2846, set 6718
 // 0 !KEYWORDS set 6748, set 6763, set 6766, western, wild west
 // 

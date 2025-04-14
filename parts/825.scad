@@ -13,6 +13,8 @@ function ldraw_lib__825() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
+// 
 // 0 !HISTORY 1998-03-23 [PTadmin] Official Update 1998-03
 // 0 !HISTORY 2003-07-12 [Steffen] BFCed, added missing quad (door side at doorhandle was open), replaced quads by ring primitives
 // 0 !HISTORY 2004-04-22 [PTadmin] Official Update 2004-02

@@ -13,7 +13,7 @@ function ldraw_lib__84133p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 970d53, Cheetah, flexible, Set 60347, Blade
+// 0 !KEYWORDS Blade, Bricklink 970d53, Cheetah, flexible, Set 60347
 // 
 // 0 !HISTORY 2023-06-24 [OrionP] Official Update 2023-03
 // 

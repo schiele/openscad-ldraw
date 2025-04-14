@@ -13,9 +13,9 @@ use <../p/stud4a.scad>
 function ldraw_lib__47457() = [
 // 0 Slope Brick Curved  2 x  2 x   2/3 Triple with Two Top Studs
 // 0 Name: 47457.dat
-// 0 Author: Edwin Pilobello [gypsy_fly]
+// 0 Author: Edwin Pilobello [g_fly]
 // 0 !LDRAW_ORG Part UPDATE 2009-02
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CW
   [0,"BFC","CERTIFY"],

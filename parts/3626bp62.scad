@@ -13,13 +13,14 @@ function ldraw_lib__3626bp62() = [
 // 0 Name: 3626bp62.dat
 // 0 Author: Bernd Broich [bbroich]
 // 0 !LDRAW_ORG Part UPDATE 2022-04
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626bp62, set 6762, Set 6764, Set 6898, Space, wild west
+// 0 !KEYWORDS BrickLink 3626p62, Rebrickable 3626bpr0024, set 6762, Set 6764
+// 0 !KEYWORDS Set 6898, Space, wild west
 // 
 // 0 !HISTORY 2002-08-18 [PTadmin] Official Update 2002-04
 // 0 !HISTORY 2007-06-29 [PTadmin] Header formatted for Contributor Agreement

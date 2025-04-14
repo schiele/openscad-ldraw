@@ -26,8 +26,8 @@ function ldraw_lib__2544() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Cap, Feather, Pirate, Pirates, colonial, gentleman, merchant
-// 0 !KEYWORDS officer, plume, soldier, three corner, tri-corner, tricorn
+// 0 !KEYWORDS Cap, colonial, Feather, gentleman, merchant, officer, Pirate
+// 0 !KEYWORDS Pirates, plume, soldier, three corner, tri-corner, tricorn
 // 0 !KEYWORDS tricorner
 // 
 // 0 !HISTORY 2002-08-18 [PTadmin] Official Update 2002-04

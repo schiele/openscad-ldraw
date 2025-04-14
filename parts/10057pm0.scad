@@ -9,7 +9,7 @@ function ldraw_lib__10057pm0() = [
 // 0 Minifig Gollum with Wide Eyes and Open Mouth Pattern
 // 0 Name: 10057pm0.dat
 // 0 Author: Christian Neumann [Wesley]
-// 0 !LDRAW_ORG Part UPDATE 2014-01
+// 0 !LDRAW_ORG Part UPDATE 2025-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 !HELP top stud base at y = -48
@@ -20,14 +20,16 @@ function ldraw_lib__10057pm0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Lord of the Rings, LOTR
+// 0 !KEYWORDS Bricklink 10057pb01, Brickowl 705242, Lord of the Rings, LOTR
+// 0 !KEYWORDS Rebrickable 10057pr0001, Set 9470
 // 
 // 0 !CMDLINE -c19
 // 
 // 0 !HISTORY 2014-01-11 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2014-01-11 [Wesley] File preparation for LDraw Parts Tracker
 // 0 !HISTORY 2014-06-21 [PTadmin] Official Update 2014-01
-// 
+// 0 !HISTORY 2025-02-26 [OrionP] Added keywords
+// 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 
 // 1 16 0 -48 0 1 0 0 0 1 0 0 0 1 stud2.dat
   [1,16,0,-48,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2()],

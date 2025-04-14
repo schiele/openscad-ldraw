@@ -12,7 +12,7 @@ function ldraw_lib__16709p0a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Rebrickable 16709pat27, Set BAM2019, Bricklink 41879pb017
+// 0 !KEYWORDS Bricklink 41879pb017, Rebrickable 16709pat27, Set BAM2019
 // 
 // 0 !HISTORY 2023-04-17 [OrionP] Official Update 2023-02
 // 

@@ -16,8 +16,8 @@ function ldraw_lib__3817cpc97() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickowl 683445, Chicken Suit, CMF, Easter, Rebrickable 970c38pr0423
-// 0 !KEYWORDS Series 9, set 5004468, Bricklink 970c110pb01
+// 0 !KEYWORDS Bricklink 970c110pb01, Brickowl 683445, Chicken Suit, CMF, Easter
+// 0 !KEYWORDS Rebrickable 970c38pr0423, Series 9, set 5004468
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
 // 0 !HISTORY 2023-06-01 [MagFors] Adapted to c-version leg

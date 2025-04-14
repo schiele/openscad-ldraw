@@ -12,6 +12,7 @@ function ldraw_lib__3039dy1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Sticker Shortcut
 // 0 !KEYWORDS 917K, 919, Hybrid, Pit Lane, Porsche, set 75876, Speed Champions
 // 
 // 0 !HISTORY 2024-10-27 [OrionP] Official Update 2024-09

@@ -21,8 +21,8 @@ function ldraw_lib__973pac() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Achu, Adventurers, Cloak, Feathers, Jungle, amazon, belly button
-// 0 !KEYWORDS ceremonial, priest, ruler
+// 0 !KEYWORDS Achu, Adventurers, amazon, belly button, ceremonial, Cloak, Feathers
+// 0 !KEYWORDS Jungle, priest, ruler
 // 
 // 0 !CMDLINE -c14
 // 

@@ -13,8 +13,9 @@ function ldraw_lib__3069bpap() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Aquazone, controls, display, engineering, fluid, handle
-// 0 !KEYWORDS hydrodynamics, Hydronauts, liquid, machinery, plumbing, pump, silver
+// 0 !KEYWORDS Aquazone, BrickLink 3069px26, controls, display, engineering, fluid
+// 0 !KEYWORDS handle, hydrodynamics, Hydronauts, liquid, machinery, plumbing, pump
+// 0 !KEYWORDS Rebrickable 3069bpr0057, silver
 // 
 // 0 !HISTORY 2004-04-22 [PTadmin] Official Update 2004-02
 // 0 !HISTORY 2007-06-13 [PTadmin] Header formatted for Contributor Agreement

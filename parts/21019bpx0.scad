@@ -17,8 +17,8 @@ function ldraw_lib__21019bpx0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 970c00pb0616, Brickowl 816978, Finn
-// 0 !KEYWORDS Rebrickable 970c28pat02pr1113, Set 71245, Adventure Time
+// 0 !KEYWORDS Adventure Time, Bricklink 970c00pb0616, Brickowl 816978, Finn
+// 0 !KEYWORDS Rebrickable 970c28pat02pr1113, Set 71245
 // 
 // 0 !HISTORY 2022-09-15 [ejboer] Original design
 // 0 !HISTORY 2023-06-06 [MagFors] Adapted to correct geometry

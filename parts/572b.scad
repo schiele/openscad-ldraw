@@ -12,7 +12,7 @@ function ldraw_lib__572b() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !CATEGORY Minifig Accessory
+// 0 !CATEGORY Obsolete
 // 
 // 0 !HISTORY 2005-12-28 [PTadmin] Official Update 2005-01
 // 0 !HISTORY 2007-07-09 [PTadmin] Header formatted for Contributor Agreement

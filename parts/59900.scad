@@ -26,7 +26,7 @@ function ldraw_lib__59900() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Round, pylon
+// 0 !KEYWORDS pylon, Round
 // 
 // 0 !HISTORY 2011-07-25 [PTadmin] Official Update 2011-01
 // 0 !HISTORY 2014-07-10 [C3POwen] Fixed depth of axle hole

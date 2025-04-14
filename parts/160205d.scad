@@ -13,8 +13,8 @@ function ldraw_lib__160205d() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 1490stk01, Brickowl 763104, Rebrickable 160205, Signboard
-// 0 !KEYWORDS Town bank, Set 1490
+// 0 !KEYWORDS Bricklink 1490stk01, Brickowl 763104, Rebrickable 160205, Set 1490
+// 0 !KEYWORDS Signboard, Town bank
 // 
 // 0 !HISTORY 2023-04-17 [OrionP] Official Update 2023-02
 // 

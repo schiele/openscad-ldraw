@@ -6,10 +6,10 @@ use <../p/4-4disc.scad>
 use <../p/4-4ndis.scad>
 use <s/973s01.scad>
 function ldraw_lib__973psw() = [
-// 0 Minifig Torso with Silver Buttons and Ammo Belt Pattern
+// 0 Minifig Torso with SW Jacket with Silver Buttons and Ammo Belt Pattern
 // 0 Name: 973psw.dat
 // 0 Author: Magnus Forsberg [MagFors]
-// 0 !LDRAW_ORG Part UPDATE 2024-03
+// 0 !LDRAW_ORG Part UPDATE 2025-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -17,12 +17,14 @@ function ldraw_lib__973psw() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS Bricklink 973pb0707, Brickowl 446940, Cad Bane
-// 0 !KEYWORDS Rebrickable 973c07h12pr1639, set 8098, set 8128, Star Wars, SW
+// 0 !KEYWORDS Rebrickable 973c07h12pr1639, set 8098, set 8128, Star Wars
 // 
 // 0 !HISTORY 2011-07-28 [BlackBrick89] Minor corrections
 // 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01
 // 0 !HISTORY 2024-04-03 [MagFors] Complete rework, original by HowardLande
 // 0 !HISTORY 2024-04-28 [OrionP] Official Update 2024-03
+// 0 !HISTORY 2025-02-20 [MagFors] Update description
+// 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],

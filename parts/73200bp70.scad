@@ -17,9 +17,9 @@ function ldraw_lib__73200bp70() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickowl 985018, Firebrigade, Rebrickable 970c38pr1598, set 30566
-// 0 !KEYWORDS set 60213, set 60214, set 60216, set 60318, set 60321, set 952104
-// 0 !KEYWORDS set 952301, Stuntz, Bricklink 970c00pb0901
+// 0 !KEYWORDS Bricklink 970c00pb0901, Brickowl 985018, Firebrigade
+// 0 !KEYWORDS Rebrickable 970c38pr1598, set 30566, Set 60213, Set 60214, Set 60216
+// 0 !KEYWORDS set 60318, Set 60321, set 952104, set 952301, Stuntz
 // 
 // 0 !HISTORY 2023-03-09 [Philo] Updated to "c" geometry
 // 0 !HISTORY 2023-06-24 [OrionP] Official Update 2023-03

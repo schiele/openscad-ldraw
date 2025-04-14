@@ -13,6 +13,7 @@ function ldraw_lib__3815cba() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS 2006, Batman, Harley Quinn, set 7886
 // 
 // 0 !CMDLINE -c4

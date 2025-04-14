@@ -24,8 +24,8 @@ function ldraw_lib__518() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS Castle, Imperials, Ninja, Pirate, Pirates, artillery, cavalry
-// 0 !KEYWORDS man-o-war, wild west
+// 0 !KEYWORDS artillery, Castle, cavalry, Imperials, man-o-war, Ninja, Pirate
+// 0 !KEYWORDS Pirates, wild west
 // 
 // 0 !HISTORY 2001-11-23 [pneaster] corrected BFC use of primitive files.
 // 0 !HISTORY 2002-11-30 [PTadmin] Official Update 2002-05

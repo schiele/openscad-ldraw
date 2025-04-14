@@ -21,8 +21,8 @@ function ldraw_lib__33211() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Belville, Castle Wagon Wheel, Rebel Blockade Runner, Star Wars
-// 0 !KEYWORDS carriage, stagecoach, wooden
+// 0 !KEYWORDS Belville, carriage, Castle Wagon Wheel, Rebel Blockade Runner
+// 0 !KEYWORDS stagecoach, Star Wars, wooden
 // 
 // 0 !HISTORY 2004-04-22 [PTadmin] Official Update 2004-02
 // 0 !HISTORY 2007-06-25 [PTadmin] Header formatted for Contributor Agreement

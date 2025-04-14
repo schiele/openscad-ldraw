@@ -13,6 +13,7 @@ function ldraw_lib__3817bpcbd() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS animal, CMF series 12, Costume, pig, piggy guy, set 80102
 // 
 // 0 !HISTORY 2020-08-25 [Holly-Wood] Added conds

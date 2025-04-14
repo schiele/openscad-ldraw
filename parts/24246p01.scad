@@ -11,19 +11,21 @@ function ldraw_lib__24246p01() = [
 // 0 Tile  1 x  1 with Rounded End with Black and Light Grey Circle and Four Lines Pattern
 // 0 Name: 24246p01.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
-// 0 !LDRAW_ORG Part UPDATE 2022-01
+// 0 !LDRAW_ORG Part UPDATE 2025-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Cylinder, Engine
+// 0 !KEYWORDS Bricklink 24246pb001, Brickowl 362977, Cylinder, Engine
+// 0 !KEYWORDS Rebrickable 24246pr0001, Set 70902
 // 
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
 // 0 !HISTORY 2021-01-16 [cwdee] Update description
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
-// 
+// 0 !HISTORY 2025-02-27 [Lego-Manfred] References and set added
+// 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\24246s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__24246s01()],

@@ -13,7 +13,7 @@ function ldraw_lib__3070bpx0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Rebrickable 3070bpr0297, Set 21340, BrickOwl 125686
+// 0 !KEYWORDS BrickOwl 125686, Rebrickable 3070bpr0297, Set 21340
 // 
 // 0 !HISTORY 2023-06-24 [OrionP] Official Update 2023-03
 // 

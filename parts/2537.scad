@@ -26,14 +26,14 @@ function ldraw_lib__2537() = [
 // 0 Name: 2537.dat
 // 0 Author: Andy Westrate [westrate]
 // 0 !LDRAW_ORG Part UPDATE 2009-03
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS clipper, Imperial Armada, Imperial Guard, man-o-war, Pirates, ship
-// 0 !KEYWORDS Soldiers
+// 0 !KEYWORDS BrickLink 2537a, clipper, Imperial Armada, Imperial Guard, man-o-war
+// 0 !KEYWORDS Pirates, Rebrickable 2537a, ship, Soldiers
 // 
 // 0 !HISTORY 2007-11-02 [mikeheide] added missing lines
 // 0 !HISTORY 2009-12-29 [PTadmin] Official Update 2009-03

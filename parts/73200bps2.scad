@@ -17,9 +17,9 @@ function ldraw_lib__73200bps2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickowl 623427, leggings, Luke Skywalker, Rebrickable 970c26pr0113
-// 0 !KEYWORDS Set 10179, Set 10188, Set 7965, Set 8092, Star Wars
-// 0 !KEYWORDS Bricklink 970c02pb06
+// 0 !KEYWORDS Bricklink 970c02pb06, Brickowl 623427, leggings, Luke Skywalker
+// 0 !KEYWORDS Rebrickable 970c26pr0113, Set 10179, Set 10188, Set 7965, Set 8092
+// 0 !KEYWORDS Star Wars
 // 
 // 0 !HISTORY 2023-06-22 [GeraldLasser] Changed to coloured Hips and uncoloured Legs
 // 0 !HISTORY 2023-06-24 [OrionP] Official Update 2023-03

@@ -28,7 +28,7 @@ function ldraw_lib__644() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Samsonite, gear, pre-technic
+// 0 !KEYWORDS gear, pre-technic, Samsonite
 // 
 // 0 !CMDLINE -c4
 // 

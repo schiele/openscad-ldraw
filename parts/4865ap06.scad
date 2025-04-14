@@ -11,7 +11,9 @@ function ldraw_lib__4865ap06() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS BrickLink 4865p06, set 6893
+// 0 !KEYWORDS BrickLink 4865p06, Rebrickable 4865apr0001, set 6893
+// 
+// 0 !PREVIEW 16 0 0 0 -1 0 0 0 1 0 0 0 -1
 // 
 // 0 !HISTORY 1999-12-31 [PTadmin] Official Update 1999-06
 // 0 !HISTORY 2004-04-21 [Steffen] replaced guts with subfile; BFC'ed

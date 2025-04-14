@@ -5,7 +5,7 @@ use <../p/1-4edge.scad>
 use <../p/1-4ring2.scad>
 use <../p/1-4ring3.scad>
 use <../p/1-4ring4.scad>
-use <3023.scad>
+use <3023b.scad>
 use <../p/4-4cyli.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4edge.scad>
@@ -13,7 +13,7 @@ function ldraw_lib__42445() = [
 // 0 Bar 12L with Plate  1 x  2 with Solid Studs and Hollow Stud
 // 0 Name: 42445.dat
 // 0 Author: Franklin W. Cain [fwcain]
-// 0 !LDRAW_ORG Part UPDATE 2012-03
+// 0 !LDRAW_ORG Part UPDATE 2025-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -28,10 +28,11 @@ function ldraw_lib__42445() = [
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
 // 0 !HISTORY 2012-09-03 [cwdee] Align description with 99784
 // 0 !HISTORY 2012-12-28 [PTadmin] Official Update 2012-03
+// 0 !HISTORY 2025-01-26 [OrionP] Update 3023 reference
+// 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 
-// 
-// 1 16 0 0 -100 0 0 -1 0 1 0 1 0 0 3023.dat
-  [1,16,0,0,-100,0,0,-1,0,1,0,1,0,0, ldraw_lib__3023()],
+// 1 16 0 0 -100 0 0 -1 0 1 0 1 0 0 3023b.dat
+  [1,16,0,0,-100,0,0,-1,0,1,0,1,0,0, ldraw_lib__3023b()],
 // 0
 // 1 16 0 4 -80 4 0 0 0 0 4 0 160 0 4-4cyli.dat
   [1,16,0,4,-80,4,0,0,0,0,4,0,160,0, ldraw_lib__4_4cyli()],
@@ -177,7 +178,7 @@ function ldraw_lib__42445() = [
 // 1 16 0 4 100 4 -2.828 0 0 0 4 -0.75 -0.75 0 1-4edge.dat
   [1,16,0,4,100,4,-2.828,0,0,0,4,-0.75,-0.75,0, ldraw_lib__1_4edge()],
 // 0
-// 0 end of file
+// 0 // end of file
 ];
 module ldraw_lib__42445(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
     makepoly(ldraw_lib__42445(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);

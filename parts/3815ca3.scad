@@ -7,11 +7,13 @@ function ldraw_lib__3815ca3() = [
 // 0 Name: 3815ca3.dat
 // 0 Author: Andy Westrate [westrate]
 // 0 !LDRAW_ORG Shortcut UPDATE 2022-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
+// 
+// 0 !CATEGORY Obsolete
 // 
 // 0 !CMDLINE -c19
 // 

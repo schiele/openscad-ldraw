@@ -9,13 +9,13 @@ function ldraw_lib__3626bpse() = [
 // 0 Name: 3626bpse.dat
 // 0 Author: Andy Westrate [westrate]
 // 0 !LDRAW_ORG Part UPDATE 2024-09
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626bpse, Brickowl 33776, Empire, Endor, Episode VI
+// 0 !KEYWORDS BrickLink 3626pse, Empire, Endor, Episode VI
 // 0 !KEYWORDS Rebrickable 3626bpr0289, Set 4477, set 7128, set 7139, Speeder Bike
 // 0 !KEYWORDS Star Wars
 // 

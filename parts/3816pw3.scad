@@ -11,6 +11,7 @@ function ldraw_lib__3816pw3() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS 6746, 6763, 6766, american native, indian, set 6709, western
 // 0 !KEYWORDS wild west
 // 

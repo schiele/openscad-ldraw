@@ -18,6 +18,7 @@ function ldraw_lib__u9482c01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Sticker Shortcut
 // 0 !KEYWORDS Train
 // 
 // 0 !CMDLINE -c0

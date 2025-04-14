@@ -14,7 +14,7 @@ function ldraw_lib__50861() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Motorcycle, motorbike
+// 0 !KEYWORDS motorbike, Motorcycle
 // 
 // 0 !HISTORY 2009-02-11 [Philo] Rebuild tread
 // 0 !HISTORY 2009-02-11 [Philo] Checked against LEGO Universe Team version

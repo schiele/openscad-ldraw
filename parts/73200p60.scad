@@ -13,6 +13,7 @@ function ldraw_lib__73200p60() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS Bricklink 970c11pb04, droid, Gigabot, Set 3071, Set 6905, Set 6919
 // 0 !KEYWORDS set 6965, Set 6969, Set 6977, Space
 // 

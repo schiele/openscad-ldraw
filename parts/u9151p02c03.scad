@@ -15,7 +15,7 @@ function ldraw_lib__u9151p02c03() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Set 3633, set 3646, Set 3860, Wilfred Walrus, Willem Walroß
+// 0 !KEYWORDS Set 3633, set 3646, Set 3860, Wilfred Walrus, Willem WalroÃ
 // 
 // 0 !HISTORY 2011-07-25 [PTadmin] Official Update 2011-01
 // 

@@ -13,6 +13,7 @@ function ldraw_lib__3816bpq0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS Bricklink 970c00pb0074, Mummy Warrior, Pharaoh's Quest, Set 7326
 // 
 // 0 !HISTORY 2011-12-29 [Wesley] Original pattern design

@@ -8,13 +8,15 @@ function ldraw_lib__3626bph4() = [
 // 0 Name: 3626bph4.dat
 // 0 Author: Andy Westrate [westrate]
 // 0 !LDRAW_ORG Part UPDATE 2013-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Gryffindor, Hogwarts School of Witchcraft and Wizardry, Slytherin
+// 0 !KEYWORDS BrickLink 3626px168, Gryffindor
+// 0 !KEYWORDS Hogwarts School of Witchcraft and Wizardry, Rebrickable 3626bpr0266
+// 0 !KEYWORDS Slytherin
 // 
 // 0 !CMDLINE -C14
 // 

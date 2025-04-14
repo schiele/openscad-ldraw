@@ -16,10 +16,10 @@ use <../p/rect2p.scad>
 use <../p/rect3.scad>
 use <../p/stud2.scad>
 function ldraw_lib__61184() = [
-// 0 Technic Pin 1/2 with Bar 2L
+// 0 Technic Pin  1/2 with Bar 2L
 // 0 Name: 61184.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2024-02
+// 0 !LDRAW_ORG Part UPDATE 2025-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -29,6 +29,8 @@ function ldraw_lib__61184() = [
 // 0 !HISTORY 2009-12-29 [PTadmin] Official Update 2009-03
 // 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
 // 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
+// 0 !HISTORY 2025-02-22 [MagFors] Update description
+// 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 
 // 1 16 0 0 0 0 -1 0 6 0 0 0 0 6 4-4edge.dat
   [1,16,0,0,0,0,-1,0,6,0,0,0,0,6, ldraw_lib__4_4edge()],

@@ -19,9 +19,9 @@ function ldraw_lib__3816cpw3() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 970c00pb0025, Brickowl 549750, chief, indian
-// 0 !KEYWORDS Rebrickable 970c22pr0024, set 6709, set 6746, set 6763, set 6766
-// 0 !KEYWORDS western, wild west, american native
+// 0 !KEYWORDS american native, Bricklink 970c00pb0025, Brickowl 549750, chief
+// 0 !KEYWORDS indian, Rebrickable 970c22pr0024, set 6709, set 6746, set 6763
+// 0 !KEYWORDS set 6766, western, wild west
 // 
 // 0 !CMDLINE -c4
 // 

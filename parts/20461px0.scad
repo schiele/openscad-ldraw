@@ -13,6 +13,7 @@ function ldraw_lib__20461px0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS Bricklink 970c00pb0616, Set 71245
 // 
 // 0 !HISTORY 2022-09-15 [PTadmin] Official Update 2022-05

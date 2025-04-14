@@ -17,9 +17,9 @@ function ldraw_lib__73200bp6w() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickowl 884660, Rebrickable 970c03pr0021, set 3012, set 4305
-// 0 !KEYWORDS set 6800, set 6816, set 6818, set 6829, set 6836, set 6901, set 6902
-// 0 !KEYWORDS set 6915, set 6975, set 6979, Bricklink 970c00pb0021
+// 0 !KEYWORDS Bricklink 970c00pb0021, Brickowl 884660, Rebrickable 970c03pr0021
+// 0 !KEYWORDS set 3012, set 4305, set 6800, set 6816, set 6818, set 6829, set 6836
+// 0 !KEYWORDS set 6901, set 6902, set 6915, set 6975, set 6979
 // 
 // 0 !CMDLINE -c0
 // 

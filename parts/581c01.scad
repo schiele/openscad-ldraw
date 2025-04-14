@@ -18,6 +18,7 @@ function ldraw_lib__581c01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Sticker Shortcut
 // 0 !KEYWORDS Bricklink x469b, Set 107, set 183, Set 404, Set 744, set 7720
 // 0 !KEYWORDS Set 901, Set 912, Train
 // 

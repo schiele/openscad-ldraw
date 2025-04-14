@@ -17,8 +17,8 @@ function ldraw_lib__21019bpd92() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickowl 937167, Collectible Minifigs, Rebrickable 970c27pat03pr1590
-// 0 !KEYWORDS set 71024-2, Vintage Minnie Mouse, Bricklink 970c00pb0962
+// 0 !KEYWORDS Bricklink 970c00pb0962, Brickowl 937167, Collectible Minifigs
+// 0 !KEYWORDS Rebrickable 970c27pat03pr1590, set 71024-2, Vintage Minnie Mouse
 // 
 // 0 !HISTORY 2020-12-29 [GeraldLasser] Original design
 // 0 !HISTORY 2023-06-06 [MagFors] Adapted to corrected geometry

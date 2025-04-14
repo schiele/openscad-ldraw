@@ -2,20 +2,22 @@ use <../lib.scad>
 use <../p/1-4cyli.scad>
 use <s/973s01.scad>
 function ldraw_lib__973p8w() = [
-// 0 Minifig Torso with White Shirt with Dark Blue Tie, Gold Airline Pin, Belt and ID Badge Pattern
+// 0 Minifig Torso with Shirt with Dark Blue Tie, Gold Airline Pin, Belt and ID Badge Pattern
 // 0 Name: 973p8w.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2016-01
+// 0 !LDRAW_ORG Part UPDATE 2025-03
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Aircraft, Airplane, pilot
+// 0 !KEYWORDS Aircraft, Airplane, Bricklink 973pb2367, City, pilot, Set 60101
+// 0 !KEYWORDS set 60104
 // 
 // 0 !HISTORY 2016-12-31 [PTadmin] Official Update 2016-01
-// 
+// 0 !HISTORY 2025-03-09 [MagFors] Update description, added keywords
+// 0 !HISTORY 2025-03-30 [OrionP] Official Update 2025-03
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],

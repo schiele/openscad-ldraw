@@ -11,9 +11,11 @@ function ldraw_lib__3821p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Car, Zebra
+// 0 !KEYWORDS BrickLink 3821pb005, Car, Rebrickable 3821pr0001, Zebra
 // 
 // 0 !CMDLINE -c15
+// 
+// 0 !PREVIEW 16 0 0 0 -1 0 0 0 1 0 0 0 -1
 // 
 // 0 !HISTORY 2003-12-19 [PTadmin] Official Update 2003-03
 // 0 !HISTORY 2007-06-29 [PTadmin] Header formatted for Contributor Agreement

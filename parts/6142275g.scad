@@ -23,7 +23,7 @@ function ldraw_lib__6142275g() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Audi, R18, Set 75872, Speed Champions, e-tron, quattro
+// 0 !KEYWORDS Audi, e-tron, quattro, R18, Set 75872, Speed Champions
 // 
 // 0 !HISTORY 2024-01-29 [OrionP] Official Update 2024-01
 // 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives

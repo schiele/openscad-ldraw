@@ -9,10 +9,10 @@ use <../../p/rect.scad>
 use <../../p/rect2p.scad>
 use <../../p/rect3.scad>
 function ldraw_lib__s__33125s01() = [
-// 0 ~Minifig Food Croissant Half
+// 0 ~Minifig Food Croissant with Rounded Ends - Half
 // 0 Name: s\33125s01.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Subpart UPDATE 2009-03
+// 0 !LDRAW_ORG Subpart UPDATE 2025-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -20,7 +20,8 @@ function ldraw_lib__s__33125s01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2009-12-29 [PTadmin] Official Update 2009-03
-// 
+// 0 !HISTORY 2025-02-09 [MagFors] Update description
+// 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 
 // 2 24 7 0 3.163 7.9 -0.4 3.102
   [2,24,7,0,3.163,7.9,-0.4,3.102],

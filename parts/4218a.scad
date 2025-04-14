@@ -19,7 +19,7 @@ function ldraw_lib__4218a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !CATEGORY Door
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS Garage, slat
 // 
 // 0 !HISTORY 1997-12-05 [PTadmin] Official Update 1997-17

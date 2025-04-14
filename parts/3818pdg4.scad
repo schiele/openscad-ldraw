@@ -21,6 +21,8 @@ function ldraw_lib__3818pdg4() = [
 // 
 // 0 !KEYWORDS Bricklink 982pb293, CMF, Gonzo, set 71033, The Muppets
 // 
+// 0 !PREVIEW 16 0 0 0 -1 0 0 0 1 0 0 0 -1
+// 
 // 0 !HISTORY 2024-10-27 [OrionP] Official Update 2024-09
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3818s01.dat

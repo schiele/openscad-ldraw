@@ -13,6 +13,7 @@ function ldraw_lib__73200p8h() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS Set 70818
 // 
 // 0 !HISTORY 2016-12-31 [MagFors] Original design as 3815c8h

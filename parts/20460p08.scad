@@ -14,6 +14,7 @@ function ldraw_lib__20460p08() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS set 21310
 // 
 // 0 !HISTORY 2019-12-27 [PTadmin] Official Update 2019-03

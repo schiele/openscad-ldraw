@@ -6,7 +6,7 @@ function ldraw_lib__40373() = [
 // 0 Name: 40373.dat
 // 0 Author: Andy Westrate [westrate]
 // 0 !LDRAW_ORG Part UPDATE 2023-03
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 !HELP Pivot point for leg at +40 33.5 60
 // 

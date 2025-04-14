@@ -6,13 +6,13 @@ function ldraw_lib__2468p53() = [
 // 0 Name: 2468p53.dat
 // 0 Author: Carsten Schmitz [Deckard]
 // 0 !LDRAW_ORG Part UPDATE 2013-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Space Police I Logo
+// 0 !KEYWORDS BrickLink 2468pb02, Rebrickable 2468pr0001, Space Police I Logo
 // 
 // 0 !HISTORY 2004-09-15 [PTadmin] Official Update 2004-03
 // 0 !HISTORY 2007-05-13 [PTadmin] Header formatted for Contributor Agreement

@@ -12,7 +12,9 @@ function ldraw_lib__3678bp30() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3678bpb018, Pirates, set 10210
+// 0 !KEYWORDS Bricklink 3678bpb018, Pirates, Rebrickable 3678bpr0007, set 10210
+// 
+// 0 !PREVIEW 16 0 0 0 -1 0 0 0 1 0 0 0 -1
 // 
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04
 // 

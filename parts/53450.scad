@@ -9,7 +9,7 @@ function ldraw_lib__53450() = [
 // 0 Name: 53450.dat
 // 0 Author: Andy Westrate [westrate]
 // 0 !LDRAW_ORG Part UPDATE 2012-03
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 !HELP Horns are placed at (+/-16.25, -4.12, 0)
 // 
@@ -18,6 +18,7 @@ function ldraw_lib__53450() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
+// 0 !KEYWORDS BrickLink x1533
 // 
 // 0 !HISTORY 2008-12-20 {LEGO Universe Team} Original part shape
 // 0 !HISTORY 2009-06-30 [westrate] File preparation for LDraw Parts Tracker

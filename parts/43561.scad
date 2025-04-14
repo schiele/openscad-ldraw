@@ -11,6 +11,7 @@ function ldraw_lib__43561() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS Programmable, Robot, Robotics, S70, Shadowstrike, Shadowstrike S70
 // 0 !KEYWORDS Spybot
 // 

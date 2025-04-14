@@ -13,9 +13,9 @@ function ldraw_lib__73200bphb() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS bricklink 970c00pb0002, Harry Potter, Hogwarts
+// 0 !KEYWORDS bricklink 970c00pb0002, Brickowl 639594, Harry Potter, Hogwarts
 // 0 !KEYWORDS Rebrickable 970c03pr0020, set 4705, set 4709, set 4733
-// 0 !KEYWORDS Severus Snape, Slytherin, Sorcerer's Stone, Brickowl 639594
+// 0 !KEYWORDS Severus Snape, Slytherin, Sorcerer's Stone
 // 
 // 0 !CMDLINE -c0
 // 

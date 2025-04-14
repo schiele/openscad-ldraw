@@ -11,6 +11,8 @@ function ldraw_lib__83496() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !PREVIEW 16 0 0 0 1 0 0 0 -1 0 0 0 -1
+// 
 // 0 !HISTORY 2024-05-28 [OrionP] Official Update 2024-04
 // 
 // 

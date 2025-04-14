@@ -9,13 +9,13 @@ function ldraw_lib__72632c01() = [
 // 0 Name: 72632c01.dat
 // 0 Author: Kevin Clague [kclague]
 // 0 !LDRAW_ORG Shortcut UPDATE 2017-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS 9V, dacta, Mindstorm, RCX
+// 0 !KEYWORDS 9V, BrickLink 2977c01, dacta, Mindstorm, RCX, Rebrickable 2977c01
 // 
 // 0 !CMDLINE -c1
 // 

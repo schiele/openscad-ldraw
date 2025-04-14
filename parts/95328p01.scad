@@ -4,7 +4,7 @@ function ldraw_lib__95328p01() = [
 // 0 Minifig Hair Mid-Length Smooth Wide Bob Cut with Gold Diadem Pattern
 // 0 Name: 95328p01.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
-// 0 !LDRAW_ORG Part UPDATE 2020-03
+// 0 !LDRAW_ORG Part UPDATE 2025-03
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -12,12 +12,14 @@ function ldraw_lib__95328p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Bricklink 95328pb01, Collectible Minifigs Series 5, Egyptian Queen
+// 0 !KEYWORDS Bricklink 95328pb01, CMF series 5, Egyptian Queen
+// 0 !KEYWORDS Rebrickable 95328pr0001
 // 
 // 0 !HISTORY 2013-08-14 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2018-03-16 [GeraldLasser] File preparation for LDraw Parts Tracker
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
-// 
+// 0 !HISTORY 2025-03-26 [OrionP] Fix concave quad
+// 0 !HISTORY 2025-03-30 [OrionP] Official Update 2025-03
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\95328s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__95328s01()],
@@ -459,8 +461,10 @@ function ldraw_lib__95328p01() = [
   [3,16,-1.685,-9.006,-8.523,-1.6,-8.7034,-9.0994,-1.21,-8.8327,-8.96],
 // 4 16 5.6 -6.3588 -10.2903 6.17 -5.6663 -10.7716 7.31 -4.326 -11.678 5.4056 -6.7076 -9.9858
   [4,16,5.6,-6.3588,-10.2903,6.17,-5.6663,-10.7716,7.31,-4.326,-11.678,5.4056,-6.7076,-9.9858],
-// 4 16 7.9 -4.9124 -9.5228 8.18 -4.5542 -9.815 9.035 -3.758 -10.092 6.115 -7.057 -7.948
-  [4,16,7.9,-4.9124,-9.5228,8.18,-4.5542,-9.815,9.035,-3.758,-10.092,6.115,-7.057,-7.948],
+// 3 16 7.9 -4.9124 -9.5228 8.18 -4.5542 -9.815 9.035 -3.758 -10.092
+  [3,16,7.9,-4.9124,-9.5228,8.18,-4.5542,-9.815,9.035,-3.758,-10.092],
+// 3 16 7.9 -4.9124 -9.5228 9.035 -3.758 -10.092 6.115 -7.057 -7.948
+  [3,16,7.9,-4.9124,-9.5228,9.035,-3.758,-10.092,6.115,-7.057,-7.948],
 // 4 82 -1.66 -5.6448 -13.126 -1.04 -5.9727 -12.9589 -1.2759 -6.3535 -12.5336 -1.7654 -5.8102 -12.9405
   [4,82,-1.66,-5.6448,-13.126,-1.04,-5.9727,-12.9589,-1.2759,-6.3535,-12.5336,-1.7654,-5.8102,-12.9405],
 // 4 82 -3.1359 -6.2535 -12.2498 -2.9235 -7.1186 -11.487 -3.55 -6.0928 -12.0042 -3.23 -6.208 -12.2043

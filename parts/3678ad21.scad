@@ -16,6 +16,8 @@ function ldraw_lib__3678ad21() = [
 // 0 !KEYWORDS Bricklink 1554stk01, Bricklink BA250pb01, Brickowl 356438, ferry
 // 0 !KEYWORDS Johnson Line Ab, Rebrickable 191485, Set 1554, Silja
 // 
+// 0 !PREVIEW 16 0 0 0 -1 0 0 0 1 0 0 0 -1
+// 
 // 0 !HISTORY 2024-04-28 [OrionP] Official Update 2024-03
 // 0 !HISTORY 2024-05-27 [OrionP] Change category to Sticker Shortcut
 // 0 !HISTORY 2024-05-28 [OrionP] Official Update 2024-04

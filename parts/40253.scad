@@ -22,7 +22,7 @@ function ldraw_lib__40253() = [
 // 0 Name: 40253.dat
 // 0 Author: Andy Westrate [westrate]
 // 0 !LDRAW_ORG Part UPDATE 2009-02
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 !HELP Door should be placed at <0 13 -8>, i.e.
 // 0 !HELP 1 34 0 13 -8 1 0 0 0 1 0 0 0 1 30102.dat

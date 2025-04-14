@@ -14,7 +14,7 @@ function ldraw_lib__190736a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Action Figure, Arctic, Rescue Base, Technic, set 8680
+// 0 !KEYWORDS Action Figure, Arctic, Rescue Base, set 8680, Technic
 // 
 // 0 !HISTORY 2018-12-08 [PTadmin] Official Update 2018-02
 // 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives

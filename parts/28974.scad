@@ -17,6 +17,7 @@ function ldraw_lib__28974() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS Minifig Neckwear
 // 
 // 0 !HISTORY 2019-09-09 [PTadmin] Official Update 2019-02

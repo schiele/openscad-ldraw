@@ -11,6 +11,7 @@ function ldraw_lib__3816bp89() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS Ned Flanders, Set 71006, The Simpsons
 // 
 // 0 !HISTORY 2015-10-11 [Philo] Original pattern design

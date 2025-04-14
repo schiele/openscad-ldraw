@@ -14,8 +14,8 @@ function ldraw_lib__973py7() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS  F-150,  Hot Rod,  Model A,  Raptor,  set 75875,  Speed Champions
-// 0 !KEYWORDS 973pb2261
+// 0 !KEYWORDS 973pb2261, F-150, Hot Rod, Model A, Raptor, Set 75875
+// 0 !KEYWORDS Speed Champions
 // 
 // 0 !HISTORY 2024-01-29 [OrionP] Official Update 2024-01
 // 

@@ -11,6 +11,10 @@ function ldraw_lib__4215ap25() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS Rebrickable 4215apr0015
+// 
+// 0 !PREVIEW 16 0 0 0 -1 0 0 0 1 0 0 0 -1
+// 
 // 0 !HISTORY 2002-07-03 [cwdee] Replaced non-decorated portion with reference to s\4215as01.dat
 // 0 !HISTORY 2002-11-30 [PTadmin] Official Update 2002-05
 // 0 !HISTORY 2007-07-04 [PTadmin] Header formatted for Contributor Agreement

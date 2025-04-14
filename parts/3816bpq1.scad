@@ -13,6 +13,7 @@ function ldraw_lib__3816bpq1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS Amset-Ra, Anubis Guard, Bricklink 970c00pb0081
 // 0 !KEYWORDS Bricklink 970c00pb0082, Pharaoh's Quest, Set 7327
 // 

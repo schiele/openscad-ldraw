@@ -15,7 +15,7 @@ function ldraw_lib__60115() = [
 // 0 Name: 60115.dat
 // 0 Author: Andy Westrate [westrate]
 // 0 !LDRAW_ORG Part UPDATE 2012-03
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 !HELP Arm posts start at <+/-15.197, 7.925, 0>, and are rotated 10.3 degrees on z axis
 // 0 !HELP Leg posts start at <+/-6, 44.8, 0>

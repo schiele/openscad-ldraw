@@ -14,6 +14,7 @@ function ldraw_lib__63965() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS Missile, pole, rod, Small, stand, Star Wars, town, umbrella
 // 
 // 0 !HISTORY 2009-09-03 [PTadmin] Official Update 2009-02

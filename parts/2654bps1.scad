@@ -12,8 +12,10 @@ function ldraw_lib__2654bps1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Baby Yoda, Bricklink 2654pb015, Eye, Mandalorian, Set 75318
-// 0 !KEYWORDS The Child
+// 0 !KEYWORDS Baby Yoda, Bricklink 2654pb015, Eye, Mandalorian
+// 0 !KEYWORDS Rebrickable 2654pr0003, Set 75318, The Child
+// 
+// 0 !PREVIEW 16 0 0 0 1 0 0 0 -1 0 0 0 -1
 // 
 // 0 !HISTORY 2023-03-05 [OrionP] Official Update 2023-01
 // 

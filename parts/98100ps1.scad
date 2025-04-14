@@ -8,18 +8,21 @@ function ldraw_lib__98100ps1() = [
 // 0 Cone  2 x  2 Truncated with SW R5 Red Pattern
 // 0 Name: 98100ps1.dat
 // 0 Author: John Troxler [Gargan]
-// 0 !LDRAW_ORG Part UPDATE 2024-02
+// 0 !LDRAW_ORG Part UPDATE 2025-03
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS R5-D8, Star Wars, astromech, droid, minifig, red droid
+// 0 !KEYWORDS astromech, BrickLink 98100pb01, droid, minifig, R5-D8
+// 0 !KEYWORDS Rebrickable 98100pr0001, red droid, Set 9493, Star Wars
 // 
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
 // 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
 // 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
+// 0 !HISTORY 2025-03-26 [OrionP] Fix concave quad
+// 0 !HISTORY 2025-03-30 [OrionP] Official Update 2025-03
 // 
 // 0 // Part without faces
 // 
@@ -106,8 +109,10 @@ function ldraw_lib__98100ps1() = [
   [4,16,5.549,0,-13.397,0,0,-14.5,0,1.4,-14.981,5.733,1.4,-13.842],
 // 4 16 5.384 7.639 -16.056 0 3.6 -15.738 0 8.8 -17.525 5.546 7.895 -16.111
   [4,16,5.384,7.639,-16.056,0,3.6,-15.738,0,8.8,-17.525,5.546,7.895,-16.111],
-// 4 16 7.298 13.496 -17.688 4.318 13.42 -18.255 7.654 16 -18.478 7.324 13.492 -17.681
-  [4,16,7.298,13.496,-17.688,4.318,13.42,-18.255,7.654,16,-18.478,7.324,13.492,-17.681],
+// 3 16 7.298 13.496 -17.688 4.318 13.42 -18.255 7.654 16 -18.478
+  [3,16,7.298,13.496,-17.688,4.318,13.42,-18.255,7.654,16,-18.478],
+// 3 16 7.298 13.496 -17.688 7.654 16 -18.478 7.324 13.492 -17.681
+  [3,16,7.298,13.496,-17.688,7.654,16,-18.478,7.324,13.492,-17.681],
 // 3 16 6.491 7.164 -15.672 6.481 7.086 -15.647 6.454 7.105 -15.659
   [3,16,6.491,7.164,-15.672,6.481,7.086,-15.647,6.454,7.105,-15.659],
 // 4 16 3.669 14.679 -18.816 .554 14.53 -19.384 .424 14.724 -19.477 3.848 14.798 -18.822

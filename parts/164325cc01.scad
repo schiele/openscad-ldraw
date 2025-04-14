@@ -10,8 +10,8 @@ function ldraw_lib__164325cc01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Airliner, Brickowl 949698, Plane, Rebrickable 164325
-// 0 !KEYWORDS Bricklink 1973stk01, Set 1973
+// 0 !KEYWORDS Airliner, Bricklink 1973stk01, Brickowl 949698, Plane
+// 0 !KEYWORDS Rebrickable 164325, Set 1973
 // 
 // 0 !HISTORY 2023-06-24 [OrionP] Official Update 2023-03
 // 

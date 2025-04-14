@@ -8,14 +8,14 @@ function ldraw_lib__30287() = [
 // 0 Name: 30287.dat
 // 0 Author: Andy Westrate [westrate]
 // 0 !LDRAW_ORG Part UPDATE 2017-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Arctic, parka
+// 0 !KEYWORDS Arctic, BrickLink x205, parka
 // 
 // 0 !HISTORY 2008-12-20 {LEGO Universe Team} Original part shape
 // 0 !HISTORY 2009-05-08 [westrate] File preparation for LDraw Parts

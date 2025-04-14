@@ -11,7 +11,10 @@ function ldraw_lib__4215ap0b() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS bricklink 4215apx4, Fire Station, set 6389, Signboard
+// 0 !KEYWORDS bricklink 4215apx4, Fire Station, Rebrickable 4215apr0019, set 6389
+// 0 !KEYWORDS Signboard
+// 
+// 0 !PREVIEW 16 0 0 0 -1 0 0 0 1 0 0 0 -1
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
 // 

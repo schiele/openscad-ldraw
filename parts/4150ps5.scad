@@ -15,7 +15,7 @@ function ldraw_lib__4150ps5() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Darth Vader, Empire, Episode Four, Star Wars, TIE Fighter, hexagonal
+// 0 !KEYWORDS Darth Vader, Empire, Episode Four, hexagonal, Star Wars, TIE Fighter
 // 
 // 0 !HISTORY 2002-04-25 [PTadmin] Official Update 2002-02
 // 0 !HISTORY 2002-09-01 {unknown} Fixed vertex sequence

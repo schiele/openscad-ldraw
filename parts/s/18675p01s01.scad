@@ -1,9 +1,9 @@
 use <../../lib.scad>
 function ldraw_lib__s__18675p01s01() = [
-// 0 ~Dish  6 x  6 Inverted - No Studs with Handle with Metallic Dark Grey and Metallic Silver Armor Pattern - Half
+// 0 ~Dish  6 x  6 Inverted - No Studs with Handle with Metallic Dark Grey and Metallic Silver Armour Pattern - Half
 // 0 Name: s\18675p01s01.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
-// 0 !LDRAW_ORG Subpart UPDATE 2024-03
+// 0 !LDRAW_ORG Subpart UPDATE 2025-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -11,6 +11,8 @@ function ldraw_lib__s__18675p01s01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2024-04-28 [OrionP] Official Update 2024-03
+// 0 !HISTORY 2025-02-22 [MagFors] Update description
+// 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 
 // 4 16 24.86 .692 -49.11 24.8383 -.1 -47.831 20.6658 -.1 -49.8906 22.962 4 -55.434
   [4,16,24.86,.692,-49.11,24.8383,-.1,-47.831,20.6658,-.1,-49.8906,22.962,4,-55.434],

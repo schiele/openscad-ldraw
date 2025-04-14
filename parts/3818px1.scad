@@ -22,6 +22,8 @@ function ldraw_lib__3818px1() = [
 // 
 // 0 !KEYWORDS Bricklink 973pb2308, Disney, Donald Duck, set 71040
 // 
+// 0 !PREVIEW 16 0 0 0 -1 0 0 0 1 0 0 0 -1
+// 
 // 0 !HISTORY 2024-06-30 [OrionP] Official Update 2024-05
 // 
 // 

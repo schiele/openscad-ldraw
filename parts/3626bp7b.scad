@@ -7,14 +7,15 @@ function ldraw_lib__3626bp7b() = [
 // 0 Name: 3626bp7b.dat
 // 0 Author: Andy Westrate [westrate]
 // 0 !LDRAW_ORG Part UPDATE 2005-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !KEYWORDS A2, Antarctic, Antarctica, Arctic, explorer, north pole, Polar
-// 0 !KEYWORDS scooter, south pole, town
+// 0 !KEYWORDS A2, Antarctic, Antarctica, Arctic, BrickLink 3626px87, explorer
+// 0 !KEYWORDS north pole, Polar, Rebrickable 3626bpr0030, scooter, south pole
+// 0 !KEYWORDS town
 // 
 // 0 !CMDLINE -C14
 // 

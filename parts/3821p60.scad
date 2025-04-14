@@ -14,10 +14,12 @@ function ldraw_lib__3821p60() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3821pb004, BrickOwl 950766, Rebrickable 3821pr0007
-// 0 !KEYWORDS Set 6378, Set 6394, set 6395, Set 6628, Set 6695, town
+// 0 !KEYWORDS Bricklink 3821pb004, Rebrickable 3821pr0007, Set 6378, Set 6394
+// 0 !KEYWORDS set 6395, Set 6628, Set 6695, town
 // 
 // 0 !CMDLINE -c15
+// 
+// 0 !PREVIEW 16 0 0 0 -1 0 0 0 1 0 0 0 -1
 // 
 // 0 !HISTORY 2004-11-06 [PTadmin] Official Update 2004-04
 // 0 !HISTORY 2007-06-29 [PTadmin] Header formatted for Contributor Agreement

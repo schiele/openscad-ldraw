@@ -11,7 +11,10 @@ function ldraw_lib__11203p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Birthday, Bricklink 11203pb013, Party, Present, Set 41132, Set 41310
+// 0 !KEYWORDS Birthday, Bricklink 11203pb013, Party, Present
+// 0 !KEYWORDS Rebrickable 11203pr0013, Set 41132, Set 41310
+// 
+// 0 !PREVIEW 16 0 0 0 1 0 0 0 -1 0 0 0 -1
 // 
 // 0 !HISTORY 2022-12-20 [PTadmin] Official Update 2022-06
 // 

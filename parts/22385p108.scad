@@ -11,7 +11,8 @@ function ldraw_lib__22385p108() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS 70339, 70363, Nexo Knights, set 70315
+// 0 !KEYWORDS 70339, 70363, BrickLink 22385pb034, Nexo Knights
+// 0 !KEYWORDS Rebrickable 22385pr0038, set 70315
 // 
 // 0 !HISTORY 2018-03-29 [technicbasics] Add barcode, edit Header
 // 0 !HISTORY 2018-12-08 [PTadmin] Official Update 2018-02

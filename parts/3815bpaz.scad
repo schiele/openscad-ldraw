@@ -12,7 +12,7 @@ function ldraw_lib__3815bpaz() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 970c88pb09, Chima, Crug, Set 70112
+// 0 !KEYWORDS Bricklink 970c88pb09, Chima, Crug, set 70112
 // 
 // 0 !HISTORY 2023-06-24 [OrionP] Official Update 2023-03
 // 

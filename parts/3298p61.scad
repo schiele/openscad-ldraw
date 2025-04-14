@@ -5,11 +5,13 @@ function ldraw_lib__3298p61() = [
 // 0 Name: 3298p61.dat
 // 0 Author: Bernd Broich [bbroich]
 // 0 !LDRAW_ORG Part UPDATE 2015-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
+// 
+// 0 !KEYWORDS Rebrickable 3298pr0027
 // 
 // 0 !HISTORY 2002-04-25 [PTadmin] Official Update 2002-02
 // 0 !HISTORY 2007-06-25 [PTadmin] Header formatted for Contributor Agreement

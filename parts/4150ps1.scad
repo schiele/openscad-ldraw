@@ -23,8 +23,8 @@ function ldraw_lib__4150ps1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Episode One, Flash, Life on Mars, Sebulba, Star Wars, pod racer
-// 0 !KEYWORDS podracer, steam
+// 0 !KEYWORDS Episode One, Flash, Life on Mars, pod racer, podracer, Sebulba
+// 0 !KEYWORDS Star Wars, steam
 // 
 // 0 !CMDLINE -C7
 // 

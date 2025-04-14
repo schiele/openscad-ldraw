@@ -16,11 +16,11 @@ function ldraw_lib__3816cps5() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Blaster, Bricklink 970c00pb0023, Brickowl 233725, Classic Trilogy
-// 0 !KEYWORDS firearm, gun, Han Solo, holster, Luke Skywalker, Pirate
-// 0 !KEYWORDS Rebrickable 970c19pr0033, set 10123, Set 10179, set 10236, set 4501
-// 0 !KEYWORDS Set 6212, set 7190, set 75003, set 75262, smuggler, Star Wars
-// 0 !KEYWORDS Weapon, belt
+// 0 !KEYWORDS belt, Blaster, Bricklink 970c00pb0023, Brickowl 233725
+// 0 !KEYWORDS Classic Trilogy, firearm, gun, Han Solo, holster, Luke Skywalker
+// 0 !KEYWORDS Pirate, Rebrickable 970c19pr0033, set 10123, Set 10179, set 10236
+// 0 !KEYWORDS set 4501, Set 6212, set 7190, set 75003, Set 75262, smuggler
+// 0 !KEYWORDS Star Wars, Weapon
 // 
 // 0 !HISTORY 2002-08-18 [fwcain] Original design as 3816ps5
 // 0 !HISTORY 2020-06-25 [MagFors] Adapted to corrected geometry

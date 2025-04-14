@@ -33,7 +33,7 @@ function ldraw_lib__2443() = [
 // 0 Name: 2443.dat
 // 0 Author: Leonardo Zide [leozide]
 // 0 !LDRAW_ORG Part UPDATE 2023-05
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],

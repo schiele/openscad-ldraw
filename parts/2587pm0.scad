@@ -13,7 +13,7 @@ function ldraw_lib__2587pm0() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Neckwear
-// 0 !KEYWORDS Lord of the Rings, Théoden
+// 0 !KEYWORDS Lord of the Rings, ThÃ©oden
 // 
 // 0 !HISTORY 2015-12-30 [PTadmin] Official Update 2015-02
 // 

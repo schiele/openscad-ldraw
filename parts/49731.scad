@@ -7,10 +7,10 @@ use <../p/4-4ring4.scad>
 use <../p/bump5000.scad>
 use <../p/connect8.scad>
 function ldraw_lib__49731() = [
-// 0 Technic Pin 1/2 with Button
+// 0 Technic Pin  1/2 with Button
 // 0 Name: 49731.dat
 // 0 Author: Magnus Forsberg [MagFors]
-// 0 !LDRAW_ORG Part UPDATE 2019-02
+// 0 !LDRAW_ORG Part UPDATE 2025-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -18,7 +18,8 @@ function ldraw_lib__49731() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2019-09-09 [PTadmin] Official Update 2019-02
-// 
+// 0 !HISTORY 2025-02-22 [MagFors] Update description
+// 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 
 // 1 16 0 0 0 0 1 0 0 0 -1 -1 0 0 connect8.dat
   [1,16,0,0,0,0,1,0,0,0,-1,-1,0,0, ldraw_lib__connect8()],

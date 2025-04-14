@@ -12,6 +12,10 @@ function ldraw_lib__4864apt4() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 4864apx4, Rebrickable 4864apr0001
+// 
+// 0 !PREVIEW 16 0 0 0 -1 0 0 0 1 0 0 0 -1
+// 
 // 0 !HISTORY 2015-12-30 [PTadmin] Official Update 2015-02
 // 0 !HISTORY 2018-03-17 [MagFors] Corrected position on the studs
 // 0 !HISTORY 2018-12-08 [PTadmin] Official Update 2018-02

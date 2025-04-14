@@ -24,7 +24,7 @@ function ldraw_lib__6797() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Scala, refuse, trash can, wastebin
+// 0 !KEYWORDS refuse, Scala, trash can, wastebin
 // 
 // 0 !HISTORY 2015-12-30 [PTadmin] Official Update 2015-02
 // 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives

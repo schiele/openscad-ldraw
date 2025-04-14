@@ -23,7 +23,7 @@ function ldraw_lib__47297() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Lower, Metru, Technic, Toa, bionicle, leg
+// 0 !KEYWORDS bionicle, leg, Lower, Metru, Technic, Toa
 // 
 // 0 !HISTORY 2008-12-16 [mikeheide] Original design
 // 0 !HISTORY 2015-11-03 {LEGO Digital Designer} Original part shape

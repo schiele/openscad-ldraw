@@ -11,10 +11,12 @@ function ldraw_lib__3678bp31() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3678bpb014, Brickowl 210468, bride, Grand Emporium
-// 0 !KEYWORDS Mannequin, Rebrickable 3678bpr0003, set 10211
+// 0 !KEYWORDS Bricklink 3678bpb014, bride, Grand Emporium, Mannequin
+// 0 !KEYWORDS Rebrickable 3678bpr0003, set 10211
 // 
 // 0 !CMDLINE -c15
+// 
+// 0 !PREVIEW 16 0 0 0 -1 0 0 0 1 0 0 0 -1
 // 
 // 0 !HISTORY 2023-04-17 [OrionP] Official Update 2023-02
 // 

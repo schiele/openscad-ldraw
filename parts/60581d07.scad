@@ -16,6 +16,8 @@ function ldraw_lib__60581d07() = [
 // 0 !KEYWORDS Bricklink 60581pb048, Mail van, Post office, set 10222, truck
 // 0 !KEYWORDS Winter Village
 // 
+// 0 !PREVIEW 16 0 0 0 -1 0 0 0 1 0 0 0 -1
+// 
 // 0 !HISTORY 2024-12-30 [OrionP] Official Update 2024-11
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 60581.dat

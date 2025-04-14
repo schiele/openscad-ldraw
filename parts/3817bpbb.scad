@@ -11,6 +11,7 @@ function ldraw_lib__3817bpbb() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS bricklink 970c00pb0154, set 30167, set 6867, Tony Stark
 // 
 // 0 !HISTORY 2013-12-23 [MagFors] Original design as 3816pbb

@@ -34,7 +34,7 @@ function ldraw_lib__30273() = [
   [0,"BFC","CW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Castle, Lancaster, Late Medieval, Tudor, knight, tournament
+// 0 !KEYWORDS Castle, knight, Lancaster, Late Medieval, tournament, Tudor
 // 
 // 0 !HISTORY 2003-11-04 [fwcain] added CMDLINE and some KEYWORDS; fixed Title...
 // 0 !HISTORY 2010-12-31 [PTadmin] Official Update 2010-03

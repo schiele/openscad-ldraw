@@ -11,6 +11,7 @@ function ldraw_lib__3817bpaw() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS BrickLink 970c86pb06, Chima, set 70127, Worriz
 // 
 // 0 !HISTORY 2014-12-23 [Philo] Original design as 3817paw

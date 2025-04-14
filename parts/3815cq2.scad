@@ -13,6 +13,7 @@ function ldraw_lib__3815cq2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS Anubis Guard, Pharaoh's Quest
 // 
 // 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02

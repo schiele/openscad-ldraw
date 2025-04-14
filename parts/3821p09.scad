@@ -7,13 +7,15 @@ function ldraw_lib__3821p09() = [
 // 0 Name: 3821p09.dat
 // 0 Author: John Riley [jriley]
 // 0 !LDRAW_ORG Part UPDATE 2012-01
-// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Car, Flame, rescue
+// 0 !KEYWORDS BrickLink 3821pb002, Car, Flame, Rebrickable 3821pr0004, rescue
+// 
+// 0 !PREVIEW 16 0 0 0 -1 0 0 0 1 0 0 0 -1
 // 
 // 0 !HISTORY 2004-03-02 [PTadmin] Official Update 2004-01
 // 0 !HISTORY 2007-06-29 [PTadmin] Header formatted for Contributor Agreement

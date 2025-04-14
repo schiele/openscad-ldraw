@@ -6,9 +6,9 @@ use <../../p/rect3.scad>
 function ldraw_lib__s__4493s() = [
 // 0 ~Animal Horse Side
 // 0 Name: s\4493s.dat
-// 0 Author: Sascha Broich
+// 0 Author: Sascha Broich [SaschaBroich]
 // 0 !LDRAW_ORG Subpart UPDATE 2015-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],

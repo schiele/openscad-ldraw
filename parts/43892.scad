@@ -6,7 +6,7 @@ function ldraw_lib__43892() = [
 // 0 Name: 43892.dat
 // 0 Author: Andy Westrate [westrate]
 // 0 !LDRAW_ORG Part UPDATE 2010-02
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 !HELP stud at end of tail located at (0, 64, 44)
 // 

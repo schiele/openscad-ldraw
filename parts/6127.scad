@@ -13,7 +13,7 @@ function ldraw_lib__6127() = [
 // 0 Name: 6127.dat
 // 0 Author: Bernd Broich [bbroich]
 // 0 !LDRAW_ORG Part UPDATE 2011-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 !HELP center of grip -3.75 -32.5 -59
 // 

@@ -13,6 +13,7 @@ function ldraw_lib__73200p4f() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS archer, Armor, belt, Castle, knight, Knights Kingdom, leggings
 // 0 !KEYWORDS red studs, set 4817, straps
 // 

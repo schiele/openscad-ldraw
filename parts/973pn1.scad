@@ -2,24 +2,27 @@ use <../lib.scad>
 use <../p/1-4cyli.scad>
 use <s/973s01.scad>
 function ldraw_lib__973pn1() = [
-// 0 Minifig Torso with Samurai Robe, Sash and Dagger Pattern
+// 0 Minifig Torso with Yellow Neck, Samurai Robe, Sash and Dagger Pattern
 // 0 Name: 973pn1.dat
 // 0 Author: Andy Westrate [westrate]
-// 0 !LDRAW_ORG Part UPDATE 2018-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LDRAW_ORG Part UPDATE 2025-03
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Castle, emperor, feudal, Japan, medieval, Ninja, Nippon, shogun
+// 0 !KEYWORDS Bricklink 973pn1, Castle, emperor, feudal, Japan, Kabaya, medieval
+// 0 !KEYWORDS Mini Upper Part No 292, Ninja, Nippon, Set 1186, Set 3018, Set 4805
+// 0 !KEYWORDS Set 6013, Set 6083, set 6089, Set 6093, shogun, Shogun Gi-Dan
 // 
 // 0 !HISTORY 2002-08-18 [PTadmin] Official Update 2002-04
 // 0 !HISTORY 2007-07-29 [PTadmin] Header formatted for Contributor Agreement
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
 // 0 !HISTORY 2017-10-08 [MagFors] Modified with WINDZ for BFC compliance
 // 0 !HISTORY 2018-01-30 [PTadmin] Official Update 2018-01
-// 
+// 0 !HISTORY 2025-03-29 [MagFors] Update description, added keywords
+// 0 !HISTORY 2025-03-30 [OrionP] Official Update 2025-03
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],

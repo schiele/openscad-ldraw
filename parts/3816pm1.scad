@@ -11,7 +11,8 @@ function ldraw_lib__3816pm1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Éomer, Lord of the Rings, Théoden
+// 0 !CATEGORY Obsolete
+// 0 !KEYWORDS Ãomer, Lord of the Rings, ThÃ©oden
 // 
 // 0 !CMDLINE -c308
 // 

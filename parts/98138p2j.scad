@@ -15,7 +15,7 @@ function ldraw_lib__98138p2j() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS BrickOwl 377592, Bricklink 98138pb367, Eye, Rebrickable 98138pr9981
+// 0 !KEYWORDS Bricklink 98138pb367, BrickOwl 377592, Eye, Rebrickable 98138pr9981
 // 0 !KEYWORDS Set 11027, Set 11028, Set 11031, Set 11033
 // 
 // 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02

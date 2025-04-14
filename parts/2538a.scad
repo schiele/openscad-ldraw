@@ -29,6 +29,8 @@ function ldraw_lib__2538a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
+// 
 // 0 !HISTORY 2018-10-16 [MagFors] Derived from Andy Westrate's original design
 // 0 !HISTORY 2018-12-08 [PTadmin] Official Update 2018-02
 // 0 !HISTORY 2022-10-08 [Philo] Obsoleted for bad geometry (arms too long). Use 2538c instead.

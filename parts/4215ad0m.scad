@@ -16,6 +16,8 @@ function ldraw_lib__4215ad0m() = [
 // 0 !KEYWORDS Aerial Acrobats, Bricklink 4215pb011, coastguard, helicopter, rescue
 // 0 !KEYWORDS set 6342, Set 6345
 // 
+// 0 !PREVIEW 16 0 0 0 -1 0 0 0 1 0 0 0 -1
+// 
 // 0 !HISTORY 2024-10-27 [OrionP] Official Update 2024-09
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 4215a.dat

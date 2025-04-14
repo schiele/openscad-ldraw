@@ -12,8 +12,10 @@ function ldraw_lib__2654bp01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 2654pb004, Brickowl 384885, Ghostbusters, Proton Pack
+// 0 !KEYWORDS Bricklink 2654pb004, Ghostbusters, Proton Pack
 // 0 !KEYWORDS Rebrickable 2654pr0001, Set 21108, Set 71228, set 75827
+// 
+// 0 !PREVIEW 16 0 0 0 1 0 0 0 -1 0 0 0 -1
 // 
 // 0 !HISTORY 2021-11-01 [Holly-Wood] Changed subfile, changed light blue color, fixed unmatched vertices, changed description, added keywords
 // 0 !HISTORY 2024-06-30 [OrionP] Official Update 2024-05

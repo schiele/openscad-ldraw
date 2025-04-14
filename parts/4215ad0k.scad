@@ -16,6 +16,8 @@ function ldraw_lib__4215ad0k() = [
 // 0 !KEYWORDS Bricklink 4215pb036, Cargo, container, Launch and load seaport
 // 0 !KEYWORDS Set 6542
 // 
+// 0 !PREVIEW 16 0 0 0 -1 0 0 0 1 0 0 0 -1
+// 
 // 0 !HISTORY 2024-08-26 [OrionP] Official Update 2024-07
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 4215a.dat

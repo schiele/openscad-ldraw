@@ -15,8 +15,6 @@ function ldraw_lib__3628() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS
-// 
 // 0 !HISTORY 2023-08-25 [OrionP] Official Update 2023-04
 // 
 // 

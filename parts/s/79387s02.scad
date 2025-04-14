@@ -20,8 +20,6 @@ function ldraw_lib__s__79387s02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS
-// 
 // 0 !HISTORY 2023-05-02 [GeraldLasser] based on 68869 by [Philo]
 // 0 !HISTORY 2023-10-31 [OrionP] Official Update 2023-05
 // 

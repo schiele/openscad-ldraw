@@ -9,11 +9,13 @@ function ldraw_lib__51595() = [
 // 0 Name: 51595.dat
 // 0 Author: Ross Crawford [rosco]
 // 0 !LDRAW_ORG Part UPDATE 2010-03
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
+// 
+// 0 !KEYWORDS BrickLink 30225
 // 
 // 0 !HISTORY 2002-08-18 [PTadmin] Official Update 2002-04
 // 0 !HISTORY 2004-09-15 [PTadmin] Official Update 2004-03

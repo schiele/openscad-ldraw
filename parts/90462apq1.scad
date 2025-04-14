@@ -18,7 +18,7 @@ function ldraw_lib__90462apq1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !CATEGORY Minifig Headwear
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS Pharaoh's Quest
 // 
 // 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02

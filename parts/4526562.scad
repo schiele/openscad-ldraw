@@ -11,6 +11,7 @@ function ldraw_lib__4526562() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS Batman, Harley Quinn, set 7886
 // 
 // 0 !HISTORY 2012-08-09 [PTadmin] Official Update 2012-02

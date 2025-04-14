@@ -13,6 +13,8 @@ function ldraw_lib__3815c6v() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
+// 
 // 0 !HISTORY 2010-12-31 [PTadmin] Official Update 2010-03
 // 0 !HISTORY 2015-12-30 [cwdee] Update description
 // 0 !HISTORY 2015-12-30 [PTadmin] Official Update 2015-02

@@ -11,6 +11,8 @@ function ldraw_lib__2454() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
+// 
 // 0 !HISTORY 2003-06-08 [jriley] BFC compliant
 // 0 !HISTORY 2003-10-04 [OrionP] Moved guts to subpart
 // 0 !HISTORY 2003-12-19 [PTadmin] Official Update 2003-03

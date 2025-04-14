@@ -15,6 +15,8 @@ function ldraw_lib__87552df0() = [
 // 0 !CATEGORY Sticker Shortcut
 // 0 !KEYWORDS Bricklink 87552pb007, City park cafe, Friends, Set 3061
 // 
+// 0 !PREVIEW 16 0 0 0 -1 0 0 0 1 0 0 0 -1
+// 
 // 0 !HISTORY 2024-09-30 [OrionP] Official Update 2024-08
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 87552.dat

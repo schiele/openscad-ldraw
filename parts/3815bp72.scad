@@ -12,10 +12,10 @@ function ldraw_lib__3815bp72() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickowl 187241, pilot, police, Rebrickable 970c05pr0293, Set 30018
-// 0 !KEYWORDS Set 30222, Set 30346, Set 4209, Set 4429, Set 4439, Set 4440
-// 0 !KEYWORDS Set 4473, Set 60008, Set 60009, Set 60067, Set 60068, Set 60070
-// 0 !KEYWORDS Set 60093, Set 60130, set 60131, Bricklink 970c00pb0126
+// 0 !KEYWORDS Bricklink 970c00pb0126, Brickowl 187241, pilot, police
+// 0 !KEYWORDS Rebrickable 970c05pr0293, Set 30018, Set 30222, Set 30346, Set 4209
+// 0 !KEYWORDS Set 4429, Set 4439, Set 4440, Set 4473, Set 60008, Set 60009
+// 0 !KEYWORDS Set 60067, Set 60068, Set 60070, Set 60093, Set 60130, set 60131
 // 
 // 0 !HISTORY 2023-06-24 [OrionP] Official Update 2023-03
 // 

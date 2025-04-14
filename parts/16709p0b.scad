@@ -12,8 +12,8 @@ function ldraw_lib__16709p0b() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Cheshire Cat, Disney, Rebrickable 16709pats37, Set 71012
-// 0 !KEYWORDS Bricklink 41879pb005
+// 0 !KEYWORDS Bricklink 41879pb005, Cheshire Cat, Disney, Rebrickable 16709pats37
+// 0 !KEYWORDS Set 71012
 // 
 // 0 !HISTORY 2023-04-17 [OrionP] Official Update 2023-02
 // 

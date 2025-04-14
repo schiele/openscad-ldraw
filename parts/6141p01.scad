@@ -16,6 +16,8 @@ function ldraw_lib__6141p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
+// 
 // 0 !HISTORY 2010-05-26 [mikeheide] Changed colour coding; rationalised primitives
 // 0 !HISTORY 2010-07-05 [PTadmin] Official Update 2010-02
 // 0 !HISTORY 2019-11-09 [Holly-Wood] obsoleted per decision not to include physical colour parts

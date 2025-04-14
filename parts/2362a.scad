@@ -12,6 +12,8 @@ function ldraw_lib__2362a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !PREVIEW 16 0 0 0 -1 0 0 0 1 0 0 0 -1
+// 
 // 0 !HISTORY 2003-06-08 [jriley] BFC compliant
 // 0 !HISTORY 2003-08-03 [OrionP] Moved guts to subpart
 // 0 !HISTORY 2004-04-25 [cwdee] Created solid stud version

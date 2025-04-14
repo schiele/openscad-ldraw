@@ -5,7 +5,7 @@ function ldraw_lib__60639() = [
 // 0 Name: 60639.dat
 // 0 Author: Andy Westrate [westrate]
 // 0 !LDRAW_ORG Part UPDATE 2023-03
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 !HELP To get the complete right arm, use the following lines:
 // 0 !HELP 1 16 -40 0 0 1 0 0 0 1 0 0 0 1 60672.dat

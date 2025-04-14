@@ -11,13 +11,13 @@ function ldraw_lib__3626bp61() = [
 // 0 Name: 3626bp61.dat
 // 0 Author: Bernd Broich [bbroich]
 // 0 !LDRAW_ORG Part UPDATE 2024-07
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626bp61, Brickowl 896205, Commander Bear, Commander Cold
+// 0 !KEYWORDS BrickLink 3626p61, Commander Bear, Commander Cold
 // 0 !KEYWORDS Rebrickable 3626bpr0025, set 6705, Set 6834, Set 6973, set 6983
 // 
 // 0 !HISTORY 2002-06-11 [PTadmin] Official Update 2002-03

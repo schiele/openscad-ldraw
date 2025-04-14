@@ -13,6 +13,7 @@ function ldraw_lib__73200pc6a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS BrickLink 970c03pb13, CMF, Collectable, Collectible, Series 6
 // 0 !KEYWORDS soldier
 // 

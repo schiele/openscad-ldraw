@@ -5,25 +5,29 @@ function ldraw_lib__10178p03() = [
 // 0 Rock Stepped with Black Wolf Pattern
 // 0 Name: 10178p03.dat
 // 0 Author: Christian Neumann [Wesley]
-// 0 !LDRAW_ORG Part UPDATE 2013-01
+// 0 !LDRAW_ORG Part UPDATE 2025-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Monster Fighters, Moonstone
+// 0 !KEYWORDS Bricklink 10178pb01, Brickowl 675076, Monster Fighters, Moonstone
+// 0 !KEYWORDS Rebrickable 10178pr0003, set 9468
 // 
 // 0 !CMDLINE -c38
 // 
 // 0 !HISTORY 2013-07-21 [PTadmin] Official Update 2013-01
-// 
+// 0 !HISTORY 2025-02-26 [OrionP] Added keywords, noclip
+// 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\10178s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__10178s01()],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 -1 s\10178s02.dat
   [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__10178s02()],
 // 0 // front pattern
+// 0 BFC NOCLIP
+  [0,"BFC","NOCLIP"],
 // 3 0 -2.54 -27.33 -8.25 -3.19 -26.23 -8.25 -2.11 -26.65 -8.25
   [3,0,-2.54,-27.33,-8.25,-3.19,-26.23,-8.25,-2.11,-26.65,-8.25],
 // 4 0 -2.16 -28.2 -8.25 -2.54 -27.33 -8.25 -2.11 -26.65 -8.25 -0.08 -29.72 -8.25
@@ -152,6 +156,8 @@ function ldraw_lib__10178p03() = [
   [4,0,8.49,-15.13,-8.25,8.188,-14.012,-8.25,8.9,-14.79,-8.25,9.178,-16.064,-8.25],
 // 3 0 9.178 -16.064 -8.25 8.9 -14.79 -8.25 9.608 -15.777 -8.25
   [3,0,9.178,-16.064,-8.25,8.9,-14.79,-8.25,9.608,-15.777,-8.25],
+// 0 BFC NOCLIP
+  [0,"BFC","NOCLIP"],
 // 4 16 0.477 -43.018 -8.25 -0.477 -43.018 -8.25 -3.558 -36.972 -8.25 3.558 -36.972 -8.25
   [4,16,0.477,-43.018,-8.25,-0.477,-43.018,-8.25,-3.558,-36.972,-8.25,3.558,-36.972,-8.25],
 // 4 16 0 -33.779 -8.25 3.558 -36.972 -8.25 -3.558 -36.972 -8.25 -2.259 -33.557 -8.25

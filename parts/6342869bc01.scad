@@ -10,7 +10,7 @@ function ldraw_lib__6342869bc01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Discovery, Space Shuttle, Set 10283
+// 0 !KEYWORDS Discovery, Set 10283, Space Shuttle
 // 
 // 0 !HISTORY 2023-06-24 [OrionP] Official Update 2023-03
 // 

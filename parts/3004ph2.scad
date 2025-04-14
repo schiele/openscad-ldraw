@@ -5,15 +5,15 @@ function ldraw_lib__3004ph2() = [
 // 0 Name: 3004ph2.dat
 // 0 Author: Andy Westrate [westrate]
 // 0 !LDRAW_ORG Part UPDATE 2013-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Coat of Arms, Harry Potter
-// 0 !KEYWORDS Hogwarts School of Witchcraft and Wizardry, Salazar Syltherin
-// 0 !KEYWORDS Slytherin House
+// 0 !KEYWORDS BrickLink 3004px10, Coat of Arms, Harry Potter
+// 0 !KEYWORDS Hogwarts School of Witchcraft and Wizardry, Rebrickable 3004pr9956
+// 0 !KEYWORDS Salazar Syltherin, Slytherin House
 // 
 // 0 !CMDLINE -c2
 // 

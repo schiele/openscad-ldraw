@@ -12,8 +12,8 @@ function ldraw_lib__4150p0a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickowl 803539, Eye, Rebrickable 4150pr1003, set 31019
-// 0 !KEYWORDS Bricklink 4150pb148
+// 0 !KEYWORDS Bricklink 4150pb148, Brickowl 803539, Eye, Rebrickable 4150pr1003
+// 0 !KEYWORDS set 31019
 // 
 // 0 !HISTORY 2023-06-24 [OrionP] Official Update 2023-03
 // 

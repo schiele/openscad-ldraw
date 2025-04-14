@@ -13,6 +13,8 @@ function ldraw_lib__3816p63() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
+// 0 !CATEGORY Obsolete
+// 
 // 0 !HISTORY 1999-02-01 [PTadmin] Official Update 1999-01
 // 0 !HISTORY 2002-05-29 [fwcain] Moved all front surfaces to "main" file (from subfile)...
 // 0 !HISTORY 2002-08-18 [PTadmin] Official Update 2002-04

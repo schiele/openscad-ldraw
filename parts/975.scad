@@ -10,11 +10,13 @@ function ldraw_lib__975() = [
 // 0 Name: 975.dat
 // 0 Author: Leonardo Zide [leozide]
 // 0 !LDRAW_ORG Part UPDATE 2017-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
+// 
+// 0 !CATEGORY Obsolete
 // 
 // 0 !HISTORY 1998-02-12 [PTadmin] Official Update 1998-02
 // 0 !HISTORY 2000-09-04 [fwcain] 5-lines inserted (using Tore Eriksson's 5-lines in 976.dat); wrist-endcap added

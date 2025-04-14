@@ -11,6 +11,7 @@ function ldraw_lib__3816bp6g() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS Set 70816, Wyldstyle
 // 
 // 0 !CMDLINE -c1

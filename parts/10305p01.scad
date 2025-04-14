@@ -8,7 +8,7 @@ function ldraw_lib__10305p01() = [
 // 0 Minifig Helmet with Front Prongs with Dark Purple Highlight Pattern
 // 0 Name: 10305p01.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2013-02
+// 0 !LDRAW_ORG Part UPDATE 2025-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -16,12 +16,14 @@ function ldraw_lib__10305p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Magneto, Marvel, Super Heroes, X-Men
+// 0 !KEYWORDS Bricklink 10305pb01, Brickowl 362368, Magneto, Marvel
+// 0 !KEYWORDS Rebrickable 10305pr0001, Set 76022, Super Heroes, X-Men
 // 
 // 0 !HISTORY 2013-08-14 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2013-11-21 [Philo] File preparation for LDraw Parts Tracker
 // 0 !HISTORY 2013-12-23 [PTadmin] Official Update 2013-02
-// 
+// 0 !HISTORY 2025-02-26 [OrionP] Added keywords
+// 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 
 // 1 16 0 -4 0 1 0 0 0 -1 0 0 0 1 stud16.dat
   [1,16,0,-4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud16()],

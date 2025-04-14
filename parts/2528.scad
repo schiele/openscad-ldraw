@@ -6,13 +6,13 @@ function ldraw_lib__2528() = [
 // 0 Name: 2528.dat
 // 0 Author: Andy Westrate [westrate]
 // 0 !LDRAW_ORG Part UPDATE 2022-03
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !CATEGORY Minifig Headwear
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS 2-corner, admiral, bi-corner, bicorn, bicorner, Cap, captain
 // 0 !KEYWORDS chapeau bras, chapeau-bras, cocked hat, Feather, fore and aft hat
 // 0 !KEYWORDS gentleman, Governor, officer, Pirate, Pirates, plume, Redbeard

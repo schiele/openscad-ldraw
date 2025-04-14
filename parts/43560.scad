@@ -11,6 +11,7 @@ function ldraw_lib__43560() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS Programmable, Robot, Robotics, Spybot, T55, Technojaw, Technojaw T55
 // 
 // 0 !HISTORY 2013-12-23 [PTadmin] Official Update 2013-02

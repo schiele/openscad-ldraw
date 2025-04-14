@@ -21,7 +21,7 @@ function ldraw_lib__29117a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Cap, Star, cover
+// 0 !KEYWORDS Cap, cover, Star
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
 // 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives

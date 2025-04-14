@@ -16,8 +16,8 @@ function ldraw_lib__3817cpc67() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickowl 347081, CMF, Collectible Minifigures
-// 0 !KEYWORDS Rebrickable 970c14pr0288, Series 6, set 8827, Bricklink 970c86pb03
+// 0 !KEYWORDS Bricklink 970c86pb03, Brickowl 347081, CMF, Collectible Minifigures
+// 0 !KEYWORDS Rebrickable 970c14pr0288, Series 6, set 8827
 // 
 // 0 !HISTORY 2012-12-28 [MagFors] Original design as 3817pc67
 // 0 !HISTORY 2020-06-16 [MagFors] Adapted to corrected geometry

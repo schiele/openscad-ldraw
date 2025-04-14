@@ -23,7 +23,7 @@ function ldraw_lib__6142617i() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Camaro, Chevrolet, Drag, Race, SS, Set 75874, Speed Champions
+// 0 !KEYWORDS Camaro, Chevrolet, Drag, Race, Set 75874, Speed Champions, SS
 // 
 // 0 !HISTORY 2023-04-17 [OrionP] Official Update 2023-02
 // 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives

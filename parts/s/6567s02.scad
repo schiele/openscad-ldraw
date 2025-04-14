@@ -8,9 +8,9 @@ use <../../p/stud3.scad>
 function ldraw_lib__s__6567s02() = [
 // 0 ~Windscreen  2 x  6 x  2 with Integral Glass - Opaque Section
 // 0 Name: s\6567s02.dat
-// 0 Author: Dee Earley [DeannaEarley]
+// 0 Author: Deanna Earley [DeannaEarley]
 // 0 !LDRAW_ORG Subpart UPDATE 2015-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],

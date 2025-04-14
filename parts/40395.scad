@@ -7,13 +7,15 @@ function ldraw_lib__40395() = [
 // 0 Name: 40395.dat
 // 0 Author: Andy Westrate [westrate]
 // 0 !LDRAW_ORG Shortcut UPDATE 2011-02
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 !HELP Peg hole at tip located at <60 0 139>, angled at 45 degrees
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
+// 
+// 0 !KEYWORDS BrickLink 40395c01
 // 
 // 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02
 // 

@@ -24,7 +24,7 @@ function ldraw_lib__45749() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Lower, Rahkshi, Technic, bionicle, leg
+// 0 !KEYWORDS bionicle, leg, Lower, Rahkshi, Technic
 // 
 // 0 !HISTORY 2008-12-18 [mikeheide] Original design
 // 0 !HISTORY 2015-11-03 {LEGO Digital Designer} Original part shape

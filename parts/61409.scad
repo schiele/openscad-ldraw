@@ -3,16 +3,17 @@ use <../p/box4.scad>
 use <../p/rect.scad>
 use <../p/rect2p.scad>
 function ldraw_lib__61409() = [
-// 0 Slope Brick 18  2 x  1 x  0.667 Grille
+// 0 ~Slope Brick 18  2 x  1 x  0.667 Grille (Obsolete)
 // 0 Name: 61409.dat
 // 0 Author: Tim Gould [timgould]
-// 0 !LDRAW_ORG Part UPDATE 2017-01
+// 0 !LDRAW_ORG Part UPDATE 2025-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS grille
 // 
 // 0 !HISTORY 2008-12-06 [gregteft] Updated geometry to include raised surface
@@ -20,7 +21,8 @@ function ldraw_lib__61409() = [
 // 0 !HISTORY 2009-09-03 [PTadmin] Official Update 2009-02
 // 0 !HISTORY 2017-08-08 [cwdee] Updated description
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
-// 
+// 0 !HISTORY 2025-02-12 [MagFors] Obsoleted due to bad geometry
+// 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 
 // 1 16 0 -1 0 0 0 -9 0 1 0 19 0 0 box4.dat
   [1,16,0,-1,0,0,0,-9,0,1,0,19,0,0, ldraw_lib__box4()],

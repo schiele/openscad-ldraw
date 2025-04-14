@@ -12,15 +12,17 @@ use <../p/stug-7x7.scad>
 use <../p/stug-8x8.scad>
 use <../p/stug-9x9.scad>
 function ldraw_lib__385() = [
-// 0 Baseplate 50 x 50 Road 3-way Curve (Obsolete)
+// 0 ~Baseplate 50 x 50 Road 3-way Curve (Obsolete)
 // 0 Name: 385.dat
 // 0 Author: Michael Heidemann [mikeheide]
-// 0 !LDRAW_ORG Part UPDATE 2024-05
+// 0 !LDRAW_ORG Part UPDATE 2025-03
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
+// 
+// 0 !CATEGORY Obsolete
 // 
 // 0 !HISTORY 2009-05-06 [Eldar] reduced file size, quads replaced by rects
 // 0 !HISTORY 2010-07-05 [PTadmin] Official Update 2010-02
@@ -28,6 +30,8 @@ function ldraw_lib__385() = [
 // 0 !HISTORY 2023-02-12 [MagFors] Replaced primitives, removed T-junctions
 // 0 !HISTORY 2024-06-21 [MagFors] made bfc ccw
 // 0 !HISTORY 2024-06-30 [OrionP] Official Update 2024-05
+// 0 !HISTORY 2025-03-02 [OrionP] Fix description, add category
+// 0 !HISTORY 2025-03-30 [OrionP] Official Update 2025-03
 // 
 // 1 16 -410 0 410 1 0 0 0 1 0 0 0 1 stug-9x9.dat
   [1,16,-410,0,410,1,0,0,0,1,0,0,0,1, ldraw_lib__stug_9x9()],

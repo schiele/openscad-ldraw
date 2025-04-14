@@ -13,6 +13,7 @@ function ldraw_lib__73200pc67() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS Bricklink 970c86pb03, CMF, Series 6
 // 
 // 0 !CMDLINE -c71

@@ -12,7 +12,10 @@ function ldraw_lib__61287p04() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Globe, Set 21313, Set 70657, Set 92177, Bricklink 61287pb006
+// 0 !KEYWORDS Bricklink 61287pb006, Globe, Rebrickable 61287pr0004, Set 21313
+// 0 !KEYWORDS Set 70657, Set 92177
+// 
+// 0 !PREVIEW 16 0 0 0 -1 0 0 0 1 0 0 0 -1
 // 
 // 0 !HISTORY 2023-04-17 [OrionP] Official Update 2023-02
 // 

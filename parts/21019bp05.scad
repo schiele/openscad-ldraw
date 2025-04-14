@@ -17,9 +17,9 @@ function ldraw_lib__21019bp05() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickowl 807400, CMF, Collectible Minifigures
-// 0 !KEYWORDS Rebrickable 970c12pat03, Set 40565, set 75252, set 76046
-// 0 !KEYWORDS Bricklink 970c00pb0411
+// 0 !KEYWORDS Bricklink 970c00pb0411, Brickowl 807400, CMF
+// 0 !KEYWORDS Collectible Minifigures, Rebrickable 970c12pat03, Set 40565
+// 0 !KEYWORDS set 75252, set 76046
 // 
 // 0 !HISTORY 2022-09-15 [MagFors] Original design
 // 0 !HISTORY 2023-06-05 [MagFors] Adapted to corrected geometry

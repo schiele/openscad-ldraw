@@ -15,8 +15,9 @@ function ldraw_lib__60581p04() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 60581pb158, Brickowl, City, Rebrickable 60581pr0028
-// 0 !KEYWORDS set 60280
+// 0 !KEYWORDS Bricklink 60581pb158, City, Rebrickable 60581pr0028, set 60280
+// 
+// 0 !PREVIEW 16 0 0 0 -1 0 0 0 1 0 0 0 -1
 // 
 // 0 !HISTORY 2023-09-27 [Holly-Wood] Used prims, overhauled subfiling
 // 0 !HISTORY 2024-01-29 [OrionP] Official Update 2024-01

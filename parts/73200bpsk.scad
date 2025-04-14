@@ -17,8 +17,8 @@ function ldraw_lib__73200bpsk() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickowl 658737, Rebrickable 970c27pr0040, set 7264
-// 0 !KEYWORDS Bricklink 970c00pb0039
+// 0 !KEYWORDS Bricklink 970c00pb0039, Brickowl 658737, Rebrickable 970c27pr0040
+// 0 !KEYWORDS set 7264
 // 
 // 0 !HISTORY 2015-10-11 [MagFors] Original design as 3817psk
 // 0 !HISTORY 2020-06-25 [MagFors] Adapted to corrected geometry

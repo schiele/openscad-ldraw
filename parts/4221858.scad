@@ -13,7 +13,7 @@ function ldraw_lib__4221858() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !CATEGORY Minifig
+// 0 !CATEGORY Obsolete
 // 
 // 0 !HISTORY 2007-10-11 [cwdee] Corrected colours
 // 0 !HISTORY 2010-07-05 [PTadmin] Official Update 2010-02

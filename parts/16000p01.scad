@@ -20,6 +20,8 @@ function ldraw_lib__16000p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !PREVIEW 16 0 0 0 -1 0 0 0 1 0 0 0 -1
+// 
 // 0 !HISTORY 2014-12-23 [PTadmin] Official Update 2014-02
 // 0 !HISTORY 2019-11-13 [MagFors] Renamed from 3818p01
 // 0 !HISTORY 2020-06-28 [PTadmin] Official Update 2020-01

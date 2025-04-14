@@ -16,7 +16,9 @@ function ldraw_lib__4865bp02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Berlin, Bricklink 4865pb057, Set 21027
+// 0 !KEYWORDS Berlin, Bricklink 4865pb057, Rebrickable 4865bpr0003, Set 21027
+// 
+// 0 !PREVIEW 16 0 0 0 -1 0 0 0 1 0 0 0 -1
 // 
 // 0 !HISTORY 2016-12-31 [PTadmin] Official Update 2016-01
 // 

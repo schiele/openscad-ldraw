@@ -15,6 +15,8 @@ function ldraw_lib__4215ad06() = [
 // 0 !CATEGORY Sticker Shortcut
 // 0 !KEYWORDS container, Set 4549, Train, Transport
 // 
+// 0 !PREVIEW 16 0 0 0 -1 0 0 0 1 0 0 0 -1
+// 
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
 // 0 !HISTORY 2022-12-03 [MMR1988] Standardised description
 // 0 !HISTORY 2022-12-20 [PTadmin] Official Update 2022-06

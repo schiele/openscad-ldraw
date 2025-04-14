@@ -15,8 +15,9 @@ function ldraw_lib__13809p03() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 13809pb03, Brickowl 587486, CMF, Collectible Minifigures
-// 0 !KEYWORDS Rebrickable 13809pr0003, Series 14, Square Foot, Bigfoot
+// 0 !KEYWORDS Bigfoot, Bricklink 13809pb03, Brickowl 587486, CMF
+// 0 !KEYWORDS Collectible Minifigures, Rebrickable 13809pr0003, Series 14
+// 0 !KEYWORDS Square Foot
 // 
 // 0 !HISTORY 2023-04-17 [OrionP] Official Update 2023-02
 // 

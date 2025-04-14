@@ -22,7 +22,7 @@ function ldraw_lib__30168a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !CATEGORY Minifig Headwear
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS Adventurers
 // 
 // 0 !HISTORY 2007-08-25 {LEGO Universe Team} Original part shape

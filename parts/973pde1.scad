@@ -5,16 +5,18 @@ function ldraw_lib__973pde1() = [
 // 0 Minifig Torso with Tank Top, Belt and Bunny Tail Pattern
 // 0 Name: 973pde1.dat
 // 0 Author: Magnus Forsberg [MagFors]
-// 0 !LDRAW_ORG Part UPDATE 2024-07
+// 0 !LDRAW_ORG Part UPDATE 2025-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb4262c01, CMF, Lola Bunny, Looney Tunes, set 710310
+// 0 !KEYWORDS Bricklink 973pb4262, CMF, Lola Bunny, Looney Tunes, Set 71030
 // 
 // 0 !HISTORY 2024-08-26 [OrionP] Official Update 2024-07
+// 0 !HISTORY 2025-02-24 [MagFors] Corrected set number
+// 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],

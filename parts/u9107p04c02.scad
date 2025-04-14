@@ -16,7 +16,7 @@ function ldraw_lib__u9107p04c02() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS Bear, Racoon, Ricky Raccoon, Riton le raton, Roky el oso, Set 324
-// 0 !KEYWORDS Willie Waschbär
+// 0 !KEYWORDS Willie WaschbÃ¤r
 // 
 // 0 !HISTORY 2010-12-31 [PTadmin] Official Update 2010-03
 // 0 !HISTORY 2011-01-29 [Steffen] changed file encoding to UTF-8 without BOM

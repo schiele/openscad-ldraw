@@ -20,7 +20,7 @@ function ldraw_lib__92912() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS 94.3 x 38 R, Unimog, set 8110
+// 0 !KEYWORDS 94.3 x 38 R, set 8110, Unimog
 // 
 // 0 !HISTORY 2012-08-09 [PTadmin] Official Update 2012-02
 // 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives

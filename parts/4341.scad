@@ -29,8 +29,8 @@ function ldraw_lib__4341() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS Belville, Castle, Fabuland, Harry Potter, Witch, container, kettle
-// 0 !KEYWORDS pot, potion
+// 0 !KEYWORDS Belville, Castle, container, Fabuland, Harry Potter, kettle, pot
+// 0 !KEYWORDS potion, Witch
 // 
 // 0 !HISTORY 2002-04-25 [PTadmin] Official Update 2002-02
 // 0 !HISTORY 2007-07-04 [PTadmin] Header formatted for Contributor Agreement

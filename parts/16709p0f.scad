@@ -12,8 +12,8 @@ function ldraw_lib__16709p0f() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Batman, Bricklink 41879pb018, DC Super Heroes
-// 0 !KEYWORDS Rebrickable 16709pats14, Set 71026, Bat-Mite
+// 0 !KEYWORDS Bat-Mite, Batman, Bricklink 41879pb018, DC Super Heroes
+// 0 !KEYWORDS Rebrickable 16709pats14, Set 71026
 // 
 // 0 !HISTORY 2023-04-17 [OrionP] Official Update 2023-02
 // 

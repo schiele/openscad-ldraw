@@ -11,6 +11,7 @@ function ldraw_lib__3816bpd6e() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS Batman, Bricklink 970c00pb610, CMF, Movie
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03

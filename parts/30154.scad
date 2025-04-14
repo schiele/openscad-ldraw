@@ -26,9 +26,9 @@ function ldraw_lib__30154() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS Adventurers, Dino Island, Egypt, Star Wars, Stars, TIE Interceptor
-// 0 !KEYWORDS amazon, boat, boating, celestial, chart, charts, navagation, ocean
-// 0 !KEYWORDS orienteering, plotting, river, sailing, sea, ship
+// 0 !KEYWORDS Adventurers, amazon, boat, boating, celestial, chart, charts
+// 0 !KEYWORDS Dino Island, Egypt, navagation, ocean, orienteering, plotting, river
+// 0 !KEYWORDS sailing, sea, ship, Star Wars, Stars, TIE Interceptor
 // 
 // 0 !HISTORY 2003-08-01 [PTadmin] Official Update 2003-02
 // 0 !HISTORY 2007-06-06 [PTadmin] Header formatted for Contributor Agreement

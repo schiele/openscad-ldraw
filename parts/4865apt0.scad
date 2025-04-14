@@ -12,7 +12,10 @@ function ldraw_lib__4865apt0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS BrickLink 4865pb003, set 1610, set 4021, set 6354, set 6632
+// 0 !KEYWORDS BrickLink 4865pb003, Rebrickable 4865apr0002, set 1610, set 4021
+// 0 !KEYWORDS set 6354, set 6632
+// 
+// 0 !PREVIEW 16 0 0 0 -1 0 0 0 1 0 0 0 -1
 // 
 // 0 !HISTORY 2004-11-06 [PTadmin] Official Update 2004-04
 // 0 !HISTORY 2007-07-09 [PTadmin] Header formatted for Contributor Agreement

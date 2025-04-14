@@ -12,7 +12,10 @@ function ldraw_lib__2654bp03() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 2654pb003, Chima Legend Beasts, Set 70125
+// 0 !KEYWORDS Bricklink 2654pb003, Chima Legend Beasts, Rebrickable 2654pr0006
+// 0 !KEYWORDS Set 70125
+// 
+// 0 !PREVIEW 16 0 0 0 1 0 0 0 -1 0 0 0 -1
 // 
 // 0 !HISTORY 2023-03-05 [OrionP] Official Update 2023-01
 // 

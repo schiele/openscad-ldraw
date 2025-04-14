@@ -13,6 +13,7 @@ function ldraw_lib__73200px2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS Bricklink 970c00pb0416, Jurassic world, Owen Grady, Set 71205
 // 0 !KEYWORDS Set 75917
 // 

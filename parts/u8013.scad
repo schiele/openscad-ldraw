@@ -14,7 +14,7 @@ function ldraw_lib__u8013() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !CATEGORY Door
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS Automatic Binding Brick, Lego Mursten
 // 
 // 0 !HISTORY 2012-12-28 [PTadmin] Official Update 2012-03

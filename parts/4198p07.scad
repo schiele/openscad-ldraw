@@ -15,8 +15,8 @@ function ldraw_lib__4198p07() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Brick
-// 0 !KEYWORDS Cargo, Set 1622, Set 1635, Set 2459, Set 2653, Set 2701, Set 2720
-// 0 !KEYWORDS Train, bricklink 4198px4
+// 0 !KEYWORDS bricklink 4198px4, Cargo, Set 1622, Set 1635, Set 2459, Set 2653
+// 0 !KEYWORDS Set 2701, Set 2720, Train
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives

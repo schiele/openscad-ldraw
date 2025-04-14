@@ -5,12 +5,13 @@ function ldraw_lib__3816bpa3() = [
 // 0 Name: 3816bpa3.dat
 // 0 Author: Andy Westrate [westrate]
 // 0 !LDRAW_ORG Part UPDATE 2023-03
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS Bricklink 970c00pb0018, Johnny Thunder, set 3380, Set 7410, set 7415
 // 0 !KEYWORDS Set 7417, Set 7418
 // 

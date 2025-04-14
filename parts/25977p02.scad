@@ -18,7 +18,7 @@ function ldraw_lib__25977p02() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS CMF, series 16, Set 71013
+// 0 !KEYWORDS CMF, Series 16, Set 71013
 // 
 // 0 !HISTORY 2016-10-05 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2016-10-05 [GeraldLasser] File preparation for LDraw Parts Tracker

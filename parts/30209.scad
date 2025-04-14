@@ -27,7 +27,7 @@ function ldraw_lib__30209() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !KEYWORDS Insectoids, Plate 1 x 2, Space, Star Wars, disc, dish, disk
+// 0 !KEYWORDS disc, dish, disk, Insectoids, Plate 1 x 2, Space, Star Wars
 // 
 // 0 !HISTORY 2003-06-28 [Steffen] 48ed part, fixed CATEGORY, KEYWORDS syntax
 // 0 !HISTORY 2004-09-15 [PTadmin] Official Update 2004-03

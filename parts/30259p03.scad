@@ -6,21 +6,24 @@ use <../p/1-4ring3.scad>
 use <../p/1-4ring6.scad>
 use <s/30259s01.scad>
 function ldraw_lib__30259p03() = [
-// 0 Roadsign Clip-on  2.2 x  2.667 Triangular with Bend Pattern (Obsolete)
+// 0 ~Roadsign Clip-on  2.2 x  2.667 Triangular with Bend Pattern (Obsolete)
 // 0 Name: 30259p03.dat
 // 0 Author: Chris Dee [cwdee]
-// 0 !LDRAW_ORG Part UPDATE 2024-05
+// 0 !LDRAW_ORG Part UPDATE 2025-03
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS Bricklink 892pb005, Set 6427, Set 6464, Set 9301
 // 
 // 0 !HISTORY 2009-12-29 [PTadmin] Official Update 2009-03
 // 0 !HISTORY 2024-06-27 [Philo] Obsoleted for wrong clip position. Use 30259ap03 instead
 // 0 !HISTORY 2024-06-30 [OrionP] Official Update 2024-05
+// 0 !HISTORY 2025-03-02 [OrionP] Fix description, add category
+// 0 !HISTORY 2025-03-30 [OrionP] Official Update 2025-03
 // 
 // 4 16 -19.776 16 -9 19.776 16 -9 19.582 15.276 -9 -19.582 15.276 -9
   [4,16,-19.776,16,-9,19.776,16,-9,19.582,15.276,-9,-19.582,15.276,-9],

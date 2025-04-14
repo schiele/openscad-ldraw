@@ -3,22 +3,26 @@ use <../p/2-4disc.scad>
 use <../p/2-4ndis.scad>
 use <s/3070bs01.scad>
 function ldraw_lib__3070bp07() = [
-// 0 Tile  1 x  1 with Dial Pattern
+// 0 Tile  1 x  1 with White and Red Dial, Black Needle and 4 Black Screw Heads Pattern
 // 0 Name: 3070bp07.dat
 // 0 Author: Tony Hafner [hafhead]
-// 0 !LDRAW_ORG Part UPDATE 2009-03
+// 0 !LDRAW_ORG Part UPDATE 2025-03
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS Bricklink 3070p07, Rebrickable 3070bpr0007, Set 2774, set 5987
+// 0 !KEYWORDS Set 6455, set 6456, set 6575, Set 7180
+// 
 // 0 !HISTORY 2002-04-25 [PTadmin] Official Update 2002-02
 // 0 !HISTORY 2007-10-13 [PTadmin] Header formatted for Contributor Agreement
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
 // 0 !HISTORY 2009-08-11 [anathema] Added more detail to pattern and BFC'd
 // 0 !HISTORY 2009-12-29 [PTadmin] Official Update 2009-03
-// 
+// 0 !HISTORY 2025-03-25 [MagFors] Update description, added keywords
+// 0 !HISTORY 2025-03-30 [OrionP] Official Update 2025-03
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3070bs01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3070bs01()],
@@ -306,7 +310,6 @@ function ldraw_lib__3070bp07() = [
   [3,16,-7.541,0,-8.257,0,0,-8.25,-2.135,0,-7.969],
 // 4 16 -5.602 0 -7.453 -7.541 0 -8.257 -2.135 0 -7.969 -4.125 0 -7.144
   [4,16,-5.602,0,-7.453,-7.541,0,-8.257,-2.135,0,-7.969,-4.125,0,-7.144],
-// 0
 ];
 module ldraw_lib__3070bp07(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
     makepoly(ldraw_lib__3070bp07(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);

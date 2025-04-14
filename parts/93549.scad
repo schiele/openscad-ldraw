@@ -12,7 +12,7 @@ function ldraw_lib__93549() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !CATEGORY Minifig Accessory
+// 0 !CATEGORY Obsolete
 // 
 // 0 !HISTORY 2011-06-13 [cwdee] Rework nomenclature
 // 0 !HISTORY 2012-01-25 [MagFors] Inlined hardcoded subfiles

@@ -16,8 +16,8 @@ function ldraw_lib__3816cp40() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickowl 585864, Castle, CMF, Rebrickable 970c28pr0156, set 5002148
-// 0 !KEYWORDS Set 7952, Wizard, Bricklink 970c00pb0068
+// 0 !KEYWORDS Bricklink 970c00pb0068, Brickowl 585864, Castle, CMF
+// 0 !KEYWORDS Rebrickable 970c28pr0156, set 5002148, Set 7952, Wizard
 // 
 // 0 !HISTORY 2023-02-19 [ejboer] Original pattern design
 // 0 !HISTORY 2023-02-19 [Holly-Wood] Adapted to corrected geometry

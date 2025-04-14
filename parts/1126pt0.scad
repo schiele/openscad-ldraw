@@ -13,8 +13,8 @@ function ldraw_lib__1126pt0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS   Defender 90,   Land Rover,   Rebrickable 1126pr0002,   Set 10317
-// 0 !KEYWORDS  Bricklink 1126pb002, BrickOwl 1152414
+// 0 !KEYWORDS Bricklink 1126pb002, BrickOwl 1152414, Defender 90, Land Rover
+// 0 !KEYWORDS Rebrickable 1126pr0002, Set 10317
 // 
 // 0 !HISTORY 2023-08-25 [OrionP] Official Update 2023-04
 // 

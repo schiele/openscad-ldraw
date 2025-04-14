@@ -5,7 +5,7 @@ function ldraw_lib__s__973p54a() = [
 // 0 Name: s\973p54a.dat
 // 0 Author: Carsten Schmitz [Deckard]
 // 0 !LDRAW_ORG Subpart UPDATE 2004-04
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],

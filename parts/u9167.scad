@@ -26,7 +26,7 @@ function ldraw_lib__u9167() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Airplane, Fabuland, Plane, aeroplane, tricycle, trike
+// 0 !KEYWORDS aeroplane, Airplane, Fabuland, Plane, tricycle, trike
 // 
 // 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02
 // 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives

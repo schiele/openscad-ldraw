@@ -16,8 +16,8 @@ function ldraw_lib__3816cph0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickowl 683489, Fantastic Beasts, Harry Potter, Newt Scamander
-// 0 !KEYWORDS Rebrickable 970c07pr1137, Set 71253, Bricklink 970c00pb0595
+// 0 !KEYWORDS Bricklink 970c00pb0595, Brickowl 683489, Fantastic Beasts
+// 0 !KEYWORDS Harry Potter, Newt Scamander, Rebrickable 970c07pr1137, Set 71253
 // 
 // 0 !HISTORY 2022-01-14 [ejboer] Original design as 3816bph0
 // 0 !HISTORY 2023-05-28 [MagFors] Adapted to c-version leg

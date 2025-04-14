@@ -15,6 +15,8 @@ function ldraw_lib__2654b() = [
 // 0 !KEYWORDS boat stud 2 x 2, inverted tile, Round, skid plate, smooth bottom
 // 0 !KEYWORDS spherical
 // 
+// 0 !PREVIEW 16 0 0 0 1 0 0 0 -1 0 0 0 -1
+// 
 // 0 !HISTORY 2020-06-09 [ejboer] Build from LDD data, modified rim
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 0 !HISTORY 2021-05-20 [MagFors] Used subfile

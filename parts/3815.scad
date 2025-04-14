@@ -12,6 +12,8 @@ function ldraw_lib__3815() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
+// 0 !CATEGORY Obsolete
+// 
 // 0 !HISTORY 1997-10-29 [PTadmin] Official Update 1997-16
 // 0 !HISTORY 1999-01-01 [cwdee] Modifications
 // 0 !HISTORY 1999-02-01 [PTadmin] Official Update 1999-01

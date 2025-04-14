@@ -11,6 +11,8 @@ function ldraw_lib__3817pa9() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
+// 
 // 0 !HISTORY 2011-07-25 [PTadmin] Official Update 2011-01
 // 0 !HISTORY 2020-06-13 [cwdee] Obsoleted due to bad geometry
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01

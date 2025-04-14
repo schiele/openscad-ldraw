@@ -11,7 +11,7 @@ function ldraw_lib__71368() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !CATEGORY Sphere
+// 0 !CATEGORY Obsolete
 // 
 // 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01
 // 0 !HISTORY 2019-09-09 [Steffen] obsoleted per decision not to include physical colour parts

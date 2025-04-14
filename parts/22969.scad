@@ -34,6 +34,8 @@ function ldraw_lib__22969() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
+// 
 // 0 !HISTORY 2004-10-26 [sbliss] Reorg'ed and substituted primitives for polygons/edges to eliminate 1 subfile and reduce filesize; BFC'ed
 // 0 !HISTORY 2007-11-17 [mikeheide] converted to hi-res, some minor changes
 // 0 !HISTORY 2011-11-06 [MagFors] renamed, moved loose conditional lines to subfile

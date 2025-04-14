@@ -10,9 +10,9 @@ use <s/4492s.scad>
 function ldraw_lib__4492p02() = [
 // 0 Animal Horse Head with Brown/Black Tack Pattern
 // 0 Name: 4492p02.dat
-// 0 Author: Sascha Broich
+// 0 Author: Sascha Broich [SaschaBroich]
 // 0 !LDRAW_ORG Part UPDATE 2015-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],

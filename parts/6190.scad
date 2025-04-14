@@ -17,6 +17,7 @@ function ldraw_lib__6190() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS Belville, Divers, handle, handset, receiver, Scala, Star Wars
 // 0 !KEYWORDS telephone, town, Train
 // 

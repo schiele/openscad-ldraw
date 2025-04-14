@@ -6,11 +6,13 @@ function ldraw_lib__3298p69() = [
 // 0 Name: 3298p69.dat
 // 0 Author: Carsten Schmitz [Deckard]
 // 0 !LDRAW_ORG Part UPDATE 2013-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
+// 
+// 0 !KEYWORDS BrickLink 3298pb010, Rebrickable 3298pr0033
 // 
 // 0 !HISTORY 2003-03-12 [PTadmin] Official Update 2003-01
 // 0 !HISTORY 2007-06-25 [PTadmin] Header formatted for Contributor Agreement

@@ -15,7 +15,7 @@ function ldraw_lib__56074p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Set 76139, Batmobile
+// 0 !KEYWORDS Batmobile, Set 76139
 // 
 // 0 !HISTORY 2023-04-17 [OrionP] Official Update 2023-02
 // 

@@ -9,13 +9,14 @@ function ldraw_lib__112() = [
 // 0 Name: 112.dat
 // 0 Author: Ross Crawford [rosco]
 // 0 !LDRAW_ORG Part UPDATE 2012-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS bar, cone, exhaust, Model Team, pipe, town
+// 0 !KEYWORDS bar, BrickLink 71182, cone, exhaust, Model Team, pipe
+// 0 !KEYWORDS Rebrickable 71182, town
 // 
 // 0 !HISTORY 2001-10-26 [PTadmin] Official Update 2001-01
 // 0 !HISTORY 2007-05-04 [PTadmin] Header formatted for Contributor Agreement

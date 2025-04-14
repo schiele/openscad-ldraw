@@ -18,7 +18,7 @@ function ldraw_lib__2470() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Castle, Connestoga, cavalry, prairie, settler, wagon, western
+// 0 !KEYWORDS Castle, cavalry, Connestoga, prairie, settler, wagon, western
 // 0 !KEYWORDS wild west
 // 
 // 0 !HISTORY 2007-05-13 [PTadmin] Header formatted for Contributor Agreement

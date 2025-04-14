@@ -12,6 +12,8 @@ function ldraw_lib__649p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
+// 
 // 0 !HISTORY 1998-07-15 [PTadmin] Official Update 1998-07
 // 0 !HISTORY 2003-08-01 [Steffen] made use of primitives and subfiles
 // 0 !HISTORY 2005-12-28 [PTadmin] Official Update 2005-01

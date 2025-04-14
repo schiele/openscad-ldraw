@@ -14,6 +14,8 @@ function ldraw_lib__3821() = [
 // 
 // 0 !KEYWORDS Car
 // 
+// 0 !PREVIEW 16 0 0 0 -1 0 0 0 1 0 0 0 -1
+// 
 // 0 !HISTORY 1998-06-20 [PTadmin] Official Update 1998-06
 // 0 !HISTORY 2003-01-28 [sbliss] Replaced mirror-ref to 3822 with code, completed header, BFC'ed
 // 0 !HISTORY 2003-12-19 [PTadmin] Official Update 2003-03

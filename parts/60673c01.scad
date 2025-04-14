@@ -6,7 +6,7 @@ function ldraw_lib__60673c01() = [
 // 0 Name: 60673c01.dat
 // 0 Author: Andy Westrate [westrate]
 // 0 !LDRAW_ORG Shortcut UPDATE 2023-03
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 !HELP To add the hand, use
 // 0 !HELP 1 16 13.75 45 -46 1 0 0 0 1 0 0 0 1 60641.dat
@@ -15,7 +15,8 @@ function ldraw_lib__60673c01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 60642c02, Set 7038, Set 7048, set 852293
+// 0 !KEYWORDS Bricklink 60642c02, Rebrickable 60642c02, Set 7038, Set 7048
+// 0 !KEYWORDS set 852293
 // 
 // 0 !HISTORY 2023-03-11 [MagFors] Update description and Help info
 // 0 !HISTORY 2023-06-24 [OrionP] Official Update 2023-03

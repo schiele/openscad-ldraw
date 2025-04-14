@@ -16,6 +16,7 @@ function ldraw_lib__10199() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Plate
+// 0 !KEYWORDS BrickLink 4672, Rebrickable 4672
 // 
 // 0 !HISTORY 2014-07-06 [MagFors] Moved most content to s\4672s01.dat
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01

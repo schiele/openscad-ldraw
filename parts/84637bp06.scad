@@ -13,8 +13,8 @@ function ldraw_lib__84637bp06() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS CMF, Rebrickable 970e05, Series 3, set 31109, set 70654, set 70655
-// 0 !KEYWORDS Set 8803, Space Villain, Bricklink 970d12
+// 0 !KEYWORDS Bricklink 970d12, CMF, Rebrickable 970e05, Series 3, set 31109
+// 0 !KEYWORDS set 70654, set 70655, Set 8803, Space Villain
 // 
 // 0 !HISTORY 2023-06-06 [MagFors] Adapted to corrected geometry
 // 0 !HISTORY 2023-06-24 [OrionP] Official Update 2023-03

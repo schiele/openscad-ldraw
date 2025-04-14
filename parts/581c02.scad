@@ -18,6 +18,7 @@ function ldraw_lib__581c02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Sticker Shortcut
 // 0 !KEYWORDS Bricklink x550b, set 725, set 726, set 727, Train
 // 
 // 0 !CMDLINE -c0

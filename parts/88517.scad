@@ -20,7 +20,7 @@ function ldraw_lib__88517() = [
 // 0 Name: 88517.dat
 // 0 Author: Ronald Vallenduuk [Duq]
 // 0 !LDRAW_ORG Part UPDATE 2013-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],

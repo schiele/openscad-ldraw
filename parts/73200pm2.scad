@@ -13,6 +13,7 @@ function ldraw_lib__73200pm2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS Aragorn, Bricklink 970c00pb0161, Lord of the Rings, set 79008
 // 0 !KEYWORDS set 9472, set 9474
 // 

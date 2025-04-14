@@ -13,7 +13,7 @@ function ldraw_lib__577c02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !CATEGORY Minifig Accessory
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS Accessory, bar, saber, Star Wars, sword
 // 
 // 0 !HISTORY 2004-11-06 [PTadmin] Official Update 2004-04

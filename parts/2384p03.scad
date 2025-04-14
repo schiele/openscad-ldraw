@@ -12,8 +12,8 @@ function ldraw_lib__2384p03() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS   Set 846,  Bricklink 2384pb03,  Brickowl 460765
-// 0 !KEYWORDS  Rebrickable 2384pr0003, Set 5030
+// 0 !KEYWORDS Bricklink 2384pb03, Brickowl 460765, Rebrickable 2384pr0003
+// 0 !KEYWORDS Set 5030, Set 846
 // 
 // 0 !HISTORY 2023-08-25 [OrionP] Official Update 2023-04
 // 

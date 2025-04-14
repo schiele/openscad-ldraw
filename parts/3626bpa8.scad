@@ -9,14 +9,14 @@ function ldraw_lib__3626bpa8() = [
 // 0 Name: 3626bpa8.dat
 // 0 Author: Andy Westrate [westrate]
 // 0 !LDRAW_ORG Part UPDATE 2022-03
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS bricklink 3626bpx115, set 10176, set 4757, set 7409, set 7774
-// 0 !KEYWORDS set 8104, set 8877
+// 0 !KEYWORDS BrickLink 3626px115, Rebrickable 3626bpr0190, set 10176, set 4757
+// 0 !KEYWORDS set 7409, set 7774, set 8104, set 8877
 // 
 // 0 !CMDLINE -c15
 // 

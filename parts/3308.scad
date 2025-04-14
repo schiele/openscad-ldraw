@@ -15,6 +15,8 @@ function ldraw_lib__3308() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
+// 
 // 0 !HISTORY 2004-09-07 [guyvivan] Made BFC Compliant
 // 0 !HISTORY 2004-11-06 [PTadmin] Official Update 2004-04
 // 0 !HISTORY 2007-06-25 [PTadmin] Header formatted for Contributor Agreement

@@ -12,6 +12,8 @@ function ldraw_lib__61287() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !PREVIEW 16 0 0 0 -1 0 0 0 1 0 0 0 -1
+// 
 // 0 !HISTORY 2010-04-05 [PTadmin] Official Update 2010-01
 // 0 !HISTORY 2012-12-24 [cwdee] Add category
 // 0 !HISTORY 2012-12-28 [PTadmin] Official Update 2012-03

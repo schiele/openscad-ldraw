@@ -4,9 +4,9 @@ use <s/4493s01.scad>
 function ldraw_lib__4493() = [
 // 0 ~Animal Horse Body Left
 // 0 Name: 4493.dat
-// 0 Author: Sascha Broich
+// 0 Author: Sascha Broich [SaschaBroich]
 // 0 !LDRAW_ORG Part UPDATE 2015-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],

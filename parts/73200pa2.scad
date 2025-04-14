@@ -13,6 +13,7 @@ function ldraw_lib__73200pa2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS Adventurers, ancient, archeology, barefeet, barefoot
 // 0 !KEYWORDS Bricklink 970c11pb01, Cairo, crypt, Egypt, egyptian, folded, folds
 // 0 !KEYWORDS Giza, loincloth, mummy, Nile, Pharaoh Hotep, pleated, pleats

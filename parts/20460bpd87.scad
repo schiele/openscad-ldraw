@@ -17,9 +17,9 @@ function ldraw_lib__20460bpd87() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS 73130, Bricklink 970c00pb0752, Brickowl 223885, Collectible Minifigs
-// 0 !KEYWORDS Rebrickable 970c09pat27pr1422, set 71020, The LEGO Batman Movie
-// 0 !KEYWORDS Tropical Joker, Vacation The Joker, 20926
+// 0 !KEYWORDS 20926, 73130, Bricklink 970c00pb0752, Brickowl 223885
+// 0 !KEYWORDS Collectible Minifigs, Rebrickable 970c09pat27pr1422, set 71020
+// 0 !KEYWORDS The Lego Batman Movie, Tropical Joker, Vacation The Joker
 // 
 // 0 !HISTORY 2019-12-27 [GeraldLasser] Original design
 // 0 !HISTORY 2023-06-04 [MagFors] Adapted to corrected geometry

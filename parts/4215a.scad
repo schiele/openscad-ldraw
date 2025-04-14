@@ -5,11 +5,13 @@ function ldraw_lib__4215a() = [
 // 0 Name: 4215a.dat
 // 0 Author: Bernd Broich [bbroich]
 // 0 !LDRAW_ORG Part UPDATE 2010-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
+// 
+// 0 !PREVIEW 16 0 0 0 -1 0 0 0 1 0 0 0 -1
 // 
 // 0 !HISTORY 2001-12-02 [bbroich] Replaced non-decorated portion with reference to s\4215s01.dat
 // 0 !HISTORY 2002-06-25 [cwdee] Corrected header and added final 0

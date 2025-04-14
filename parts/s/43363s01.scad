@@ -7,10 +7,10 @@ use <../../p/8/1-4cylo.scad>
 use <../../p/8/1-4ndis.scad>
 use <../../p/rect2p.scad>
 function ldraw_lib__s__43363s01() = [
-// 0 ~Technic Darth Vader Helmet Half
+// 0 ~Constraction Helmet Darth Vader Half
 // 0 Name: s\43363s01.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Subpart UPDATE 2022-02
+// 0 !LDRAW_ORG Subpart UPDATE 2025-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -20,7 +20,8 @@ function ldraw_lib__s__43363s01() = [
 // 0 !HISTORY 2016-12-31 [PTadmin] Official Update 2016-01
 // 0 !HISTORY 2022-01-06 [MagFors] Reshaped axleholes
 // 0 !HISTORY 2022-03-06 [PTadmin] Official Update 2022-02
-// 
+// 0 !HISTORY 2025-02-22 [MagFors] Update description
+// 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 
 // 4 16 12.8284 116.213 87.5042 12.8498 126.937 90.479 0 126.813 91.0059 0 116.061 88.0218
   [4,16,12.8284,116.213,87.5042,12.8498,126.937,90.479,0,126.813,91.0059,0,116.061,88.0218],

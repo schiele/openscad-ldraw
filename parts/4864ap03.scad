@@ -16,6 +16,10 @@ function ldraw_lib__4864ap03() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
+// 0 !KEYWORDS Rebrickable 4864apr0007
+// 
+// 0 !PREVIEW 16 0 0 0 -1 0 0 0 1 0 0 0 -1
+// 
 // 0 !HISTORY 2004-04-25 [cwdee] Modifled to use subpart and BFCed
 // 0 !HISTORY 2004-04-26 [cwdee] Reworked pattern
 // 0 !HISTORY 2004-09-15 [PTadmin] Official Update 2004-03

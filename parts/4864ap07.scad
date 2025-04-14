@@ -12,8 +12,10 @@ function ldraw_lib__4864ap07() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS bricklink 4864apx13, Cargo, Delivery, Freighter, Set 1879
-// 0 !KEYWORDS Set 6375-1
+// 0 !KEYWORDS bricklink 4864apx13, Cargo, Delivery, Freighter
+// 0 !KEYWORDS Rebrickable 4864apr0010, Set 1879, Set 6375-1
+// 
+// 0 !PREVIEW 16 0 0 0 -1 0 0 0 1 0 0 0 -1
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 0 !HISTORY 2022-12-03 [MMR1988] Standardised description

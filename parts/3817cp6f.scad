@@ -11,9 +11,9 @@ function ldraw_lib__3817cp6f() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Biff Starling, Bricklink 970c00pb0027, Brickowl 353551
+// 0 !KEYWORDS Astrobots, Biff Starling, Bricklink 970c00pb0027, Brickowl 353551
 // 0 !KEYWORDS Mars Exploration Rover, promotional, Rebrickable 970c17pr0026
-// 0 !KEYWORDS Sandy Moondust, set 3928, set 3929, Astrobots
+// 0 !KEYWORDS Sandy Moondust, set 3928, set 3929
 // 
 // 0 !HISTORY 2020-06-02 [pneaster] Original pattern design
 // 0 !HISTORY 2023-05-03 [Holly-Wood] Adapted to corrected geometry

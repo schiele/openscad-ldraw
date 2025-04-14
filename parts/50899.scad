@@ -19,7 +19,7 @@ function ldraw_lib__50899() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Rhotuka, bionicle, spinner
+// 0 !KEYWORDS bionicle, Rhotuka, spinner
 // 
 // 0 !HISTORY 2010-07-05 [PTadmin] Official Update 2010-02
 // 0 !HISTORY 2011-01-29 [Steffen] removed special characters from comments by translation to English

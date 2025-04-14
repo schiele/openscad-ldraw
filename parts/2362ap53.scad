@@ -6,13 +6,15 @@ function ldraw_lib__2362ap53() = [
 // 0 Name: 2362ap53.dat
 // 0 Author: Carsten Schmitz [Deckard]
 // 0 !LDRAW_ORG Part UPDATE 2013-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Space Police
+// 0 !KEYWORDS BrickLink 2362apb04L, Rebrickable 2362apr0001, Space Police
+// 
+// 0 !PREVIEW 16 0 0 0 -1 0 0 0 1 0 0 0 -1
 // 
 // 0 !HISTORY 2004-04-25 [cwdee] Make use of subfile
 // 0 !HISTORY 2004-09-15 [PTadmin] Official Update 2004-03

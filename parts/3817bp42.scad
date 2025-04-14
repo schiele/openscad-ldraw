@@ -13,6 +13,7 @@ function ldraw_lib__3817bp42() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS Bricklink 970c00pb0063, Castle, Kingdoms, Set 10223, Set 7946
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01

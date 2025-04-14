@@ -17,10 +17,10 @@ function ldraw_lib__73200bp71() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickowl 131990, Far From Home, Firebrigade
-// 0 !KEYWORDS Rebrickable 970c03pr0408, set 45022, set 60024, set 60133, set 60214
-// 0 !KEYWORDS set 60321, set 60393, set 76128, set 77943, set 850618, set 951704
-// 0 !KEYWORDS Spider-Man, Super Heroes, Bricklink 970c00pb0160
+// 0 !KEYWORDS Bricklink 970c00pb0160, Brickowl 131990, Far From Home, Firebrigade
+// 0 !KEYWORDS Rebrickable 970c03pr0408, set 45022, Set 60024, Set 60133, Set 60214
+// 0 !KEYWORDS Set 60321, set 60393, Set 76128, set 77943, set 850618, set 951704
+// 0 !KEYWORDS Spider-Man, Super Heroes
 // 
 // 0 !HISTORY 2023-03-09 [Philo] Adapted to "c" geometry
 // 0 !HISTORY 2023-06-24 [OrionP] Official Update 2023-03

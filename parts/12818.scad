@@ -35,6 +35,8 @@ function ldraw_lib__12818() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 6059, Rebrickable 6059
+// 
 // 0 !HISTORY 2018-05-27 [MagFors] Created with LDD data as reference
 // 0 !HISTORY 2019-09-09 [PTadmin] Official Update 2019-02
 // 0 !HISTORY 2021-05-31 [MagFors] Made outside hi-res

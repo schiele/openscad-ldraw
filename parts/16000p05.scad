@@ -6,7 +6,7 @@ function ldraw_lib__16000p05() = [
 // 0 Name: 16000p05.dat
 // 0 Author: Manfred Schaefer [Lego-Manfred]
 // 0 !LDRAW_ORG Part UPDATE 2022-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 !HELP Place at -15.552 9 0 relative to torso
 // 0 !HELP Then rotate about x axis to give required elevation of arm
@@ -21,6 +21,8 @@ function ldraw_lib__16000p05() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS Set 70908
+// 
+// 0 !PREVIEW 16 0 0 0 -1 0 0 0 1 0 0 0 -1
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
 // 

@@ -25,7 +25,7 @@ function ldraw_lib__163555c() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS Bricklink 6399stk01, Brickowl 458337, Monorail, Rebrickable 163555
-// 0 !KEYWORDS Station, set 6399
+// 0 !KEYWORDS set 6399, Station
 // 
 // 0 !HISTORY 2023-08-25 [OrionP] Official Update 2023-04
 // 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives

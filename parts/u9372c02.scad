@@ -12,6 +12,8 @@ function ldraw_lib__u9372c02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
+// 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 0 !HISTORY 2024-03-16 [Holly-Wood] Obsoleted due to bad geometry
 // 0 !HISTORY 2024-06-30 [OrionP] Official Update 2024-05

@@ -22,6 +22,8 @@ function ldraw_lib__16000p07() = [
 // 
 // 0 !KEYWORDS Bricklink 973pb5583c01, Set 77048
 // 
+// 0 !PREVIEW 16 0 0 0 -1 0 0 0 1 0 0 0 -1
+// 
 // 0 !HISTORY 2024-08-26 [OrionP] Official Update 2024-07
 // 
 // 1 10 0 0 0 1 0 0 0 1 0 0 0 1 s\16000s01.dat

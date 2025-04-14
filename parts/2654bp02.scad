@@ -13,7 +13,10 @@ function ldraw_lib__2654bp02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 2654pb016, ECTO-1, Ghostbusters, Set 10274
+// 0 !KEYWORDS Bricklink 2654pb016, ECTO-1, Ghostbusters, Rebrickable 2654pr0004
+// 0 !KEYWORDS Set 10274
+// 
+// 0 !PREVIEW 16 0 0 0 1 0 0 0 -1 0 0 0 -1
 // 
 // 0 !HISTORY 2023-03-05 [OrionP] Official Update 2023-01
 // 

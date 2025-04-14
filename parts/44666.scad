@@ -22,7 +22,7 @@ function ldraw_lib__44666() = [
 // 0 Plate 14 x 18 x  1 Hexagonal with Three Pinholes at Centre
 // 0 Name: 44666.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
-// 0 !LDRAW_ORG Part UPDATE 2024-08
+// 0 !LDRAW_ORG Part UPDATE 2025-03
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -30,6 +30,8 @@ function ldraw_lib__44666() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2024-09-30 [OrionP] Official Update 2024-08
+// 0 !HISTORY 2025-03-26 [OrionP] Fix incorrect color usage
+// 0 !HISTORY 2025-03-30 [OrionP] Official Update 2025-03
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\44666s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__44666s01()],
@@ -173,8 +175,8 @@ function ldraw_lib__44666() = [
   [1,16,180,4,0,0,-1,0,0,0,4,80,0,0, ldraw_lib__rect()],
 // 4 16 -176 8 -77.5 -180 8 -80 -180 8 80 -176 8 77.5
   [4,16,-176,8,-77.5,-180,8,-80,-180,8,80,-176,8,77.5],
-// 2 16 0 8 136.159844 0 4 136.157725
-  [2,16,0,8,136.159844,0,4,136.157725],
+// 2 24 0 8 136.159844 0 4 136.157725
+  [2,24,0,8,136.159844,0,4,136.157725],
 // 
 // 1 16 110 4 10 1 0 0 0 -1 0 0 0 1 stug4-6x6.dat
   [1,16,110,4,10,1,0,0,0,-1,0,0,0,1, ldraw_lib__stug4_6x6()],

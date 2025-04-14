@@ -13,8 +13,8 @@ function ldraw_lib__2384p05() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Roadsign, Set 5030, Set 846, Bricklink 2384pb05, Brickowl 100118
-// 0 !KEYWORDS Rebrickable 2384pr0005, No thoroughfare
+// 0 !KEYWORDS Bricklink 2384pb05, Brickowl 100118, No thoroughfare
+// 0 !KEYWORDS Rebrickable 2384pr0005, Roadsign, Set 5030, Set 846
 // 
 // 0 !HISTORY 2023-06-24 [OrionP] Official Update 2023-03
 // 

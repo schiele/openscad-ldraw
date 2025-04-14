@@ -4,21 +4,22 @@ use <3819.scad>
 use <3820.scad>
 use <973p6b.scad>
 function ldraw_lib__76382p6b() = [
-// 0 Minifig Torso with Arms and Hands with Black Futuron Pattern
+// 0 Minifig Torso with Arms and Black Hands with Black Futuron Pattern
 // 0 Name: 76382p6b.dat
 // 0 Author: Chris Böhnke [KnightOfTarenta]
-// 0 !LDRAW_ORG Shortcut UPDATE 2025-01
+// 0 !LDRAW_ORG Shortcut UPDATE 2025-03
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973p6bc02, BrickOwl 500221, dacta, Futuron
-// 0 !KEYWORDS Rebrickable 973c03h03pr0006, Set 1974, Set 6703, Set 6810, Set 6885
-// 0 !KEYWORDS Set 9355, Space
+// 0 !KEYWORDS Bricklink 973p6bc02, dacta, Futuron, Rebrickable 973c03h03pr0006
+// 0 !KEYWORDS Set 1974, Set 6703, Set 6810, Set 6885, Set 9355, Space
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
+// 0 !HISTORY 2025-03-29 [MagFors] Update description
+// 0 !HISTORY 2025-03-30 [OrionP] Official Update 2025-03
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 973p6b.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__973p6b()],

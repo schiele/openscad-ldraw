@@ -44,7 +44,7 @@ function ldraw_lib__92910() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Torque Tube, Unimog, set 8110
+// 0 !KEYWORDS set 8110, Torque Tube, Unimog
 // 
 // 0 !HISTORY 2012-12-28 [PTadmin] Official Update 2012-03
 // 0 !HISTORY 2022-09-08 [SwampKryakwa] Tweaked to fit the changed npeghol10

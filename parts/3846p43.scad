@@ -13,7 +13,7 @@ function ldraw_lib__3846p43() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !CATEGORY Minifig Accessory
+// 0 !CATEGORY Obsolete
 // 
 // 0 !HISTORY 2000-09-30 [PTadmin] Official Update 2000-02
 // 0 !HISTORY 2003-12-18 [cwdee] Replaced by 3846p45, 3846p46

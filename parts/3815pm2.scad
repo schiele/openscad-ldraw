@@ -12,6 +12,7 @@ function ldraw_lib__3815pm2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS Aragorn, Lord of the Rings
 // 
 // 0 !CMDLINE -c28

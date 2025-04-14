@@ -12,8 +12,8 @@ function ldraw_lib__16709p09() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Penguin Boy, Rebrickable 16709pat28, Set BAM2020
-// 0 !KEYWORDS Bricklink 41879pb020
+// 0 !KEYWORDS Bricklink 41879pb020, Penguin Boy, Rebrickable 16709pat28
+// 0 !KEYWORDS Set BAM2020
 // 
 // 0 !HISTORY 2023-04-17 [OrionP] Official Update 2023-02
 // 

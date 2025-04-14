@@ -15,6 +15,8 @@ function ldraw_lib__3821d03() = [
 // 0 !CATEGORY Sticker Shortcut
 // 0 !KEYWORDS Bricklink 3821pb013, set 640-2, Set 6690
 // 
+// 0 !PREVIEW 16 0 0 0 -1 0 0 0 1 0 0 0 -1
+// 
 // 0 !HISTORY 2024-05-28 [OrionP] Official Update 2024-04
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 3821.dat

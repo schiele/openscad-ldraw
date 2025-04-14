@@ -13,6 +13,7 @@ function ldraw_lib__3817pq1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS Amset-Ra, Anubis Guard, Pharaoh's Quest
 // 
 // 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02

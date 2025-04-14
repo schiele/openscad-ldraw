@@ -16,9 +16,10 @@ function ldraw_lib__20461bp0c() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS 73126, Bricklink 970c00pb0922, Brickowl 207143, Brickowl 996256, CMF
-// 0 !KEYWORDS Collectible Minifigures, Crayon Girl, Rebrickable 970c03pat09
-// 0 !KEYWORDS Rebrickable 970c33pat09, Set 71023, The LEGO Movie 2, 20932
+// 0 !KEYWORDS 20932, 73126, Bricklink 970c00pb0922, Brickowl 207143
+// 0 !KEYWORDS Brickowl 996256, CMF, Collectible Minifigures, Crayon Girl
+// 0 !KEYWORDS Rebrickable 970c03pat09, Rebrickable 970c33pat09, Set 71023
+// 0 !KEYWORDS The LEGO Movie 2
 // 
 // 0 !HISTORY 2023-06-24 [OrionP] Official Update 2023-03
 // 

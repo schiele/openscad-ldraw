@@ -21,6 +21,7 @@ function ldraw_lib__3614() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS arm, bendy-arm, grab, hand, maxi-figure
 // 
 // 0 !HISTORY 2001-11-30 [PTadmin] Official Update 2001-02

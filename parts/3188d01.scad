@@ -15,6 +15,8 @@ function ldraw_lib__3188d01() = [
 // 0 !CATEGORY Sticker Shortcut
 // 0 !KEYWORDS Container truck, Set 1552, Trailer, Transport
 // 
+// 0 !PREVIEW 16 0 0 0 -1 0 0 0 1 0 0 0 -1
+// 
 // 0 !HISTORY 2024-07-29 [OrionP] Official Update 2024-06
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 3188.dat

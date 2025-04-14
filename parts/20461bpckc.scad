@@ -16,8 +16,8 @@ function ldraw_lib__20461bpckc() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickowl 810900, CMF, Rebrickable 970c03pat01pr1882, Sea Rescuer
-// 0 !KEYWORDS Series 20, Set 71027, Bricklink 970c00pb1094
+// 0 !KEYWORDS Bricklink 970c00pb1094, Brickowl 810900, CMF
+// 0 !KEYWORDS Rebrickable 970c03pat01pr1882, Sea Rescuer, Series 20, Set 71027
 // 
 // 0 !HISTORY 2022-09-15 [cwdee] Original design
 // 0 !HISTORY 2023-06-06 [MagFors] Adapted to corrected geometry

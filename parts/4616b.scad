@@ -19,7 +19,7 @@ function ldraw_lib__4616b() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Airplane, Plane, aeroplane
+// 0 !KEYWORDS aeroplane, Airplane, Plane
 // 
 // 0 !HISTORY 2012-12-28 [PTadmin] Official Update 2012-03
 // 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives

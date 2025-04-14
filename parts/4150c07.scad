@@ -15,7 +15,7 @@ function ldraw_lib__4150c07() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !CATEGORY Sticker Shortcut
+// 0 !CATEGORY Obsolete
 // 
 // 0 !HISTORY 2003-07-28 [Steffen] moved pattern to sticker
 // 0 !HISTORY 2004-04-22 [PTadmin] Official Update 2004-02

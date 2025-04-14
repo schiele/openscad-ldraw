@@ -13,7 +13,7 @@ function ldraw_lib__3815bpy2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 970c00pb0644, Ford, GT, set 75881, Speed Champions, 2016
+// 0 !KEYWORDS 2016, Bricklink 970c00pb0644, Ford, GT, Set 75881, Speed Champions
 // 
 // 0 !HISTORY 2023-06-24 [OrionP] Official Update 2023-03
 // 

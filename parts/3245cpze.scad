@@ -1,20 +1,22 @@
 use <../lib.scad>
 use <s/3245cs01.scad>
 function ldraw_lib__3245cpze() = [
-// 0 Brick  1 x  2 x  2 with Dark Bluish Grey Armor and Control Panel with Red and Blue Buttons Pattern
+// 0 Brick  1 x  2 x  2 with Dark Bluish Grey Armour and Control Panel with Red and Blue Buttons Pattern
 // 0 Name: 3245cpze.dat
 // 0 Author: Evert-Jan Boer [ejboer]
-// 0 !LDRAW_ORG Part UPDATE 2023-04
+// 0 !LDRAW_ORG Part UPDATE 2025-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickheadz, Bricklink 3245cpb075, Darth Vader, Set 41619
+// 0 !KEYWORDS Armor, Brickheadz, Bricklink 3245cpb075, Brickowl 168421
+// 0 !KEYWORDS Darth Vader, Rebrickable 3245cpr0144, Set 41619
 // 
 // 0 !HISTORY 2023-08-25 [OrionP] Official Update 2023-04
-// 
+// 0 !HISTORY 2025-02-22 [MagFors] Update description
+// 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3245cs01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3245cs01()],

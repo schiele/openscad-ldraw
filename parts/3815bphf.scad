@@ -12,9 +12,9 @@ function ldraw_lib__3815bphf() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickowl 152203, Harry Potter, Hogwarts, Prisoner of Azkaban
-// 0 !KEYWORDS Rebrickable 970c03pr0012, set 4751, Severus Snape, Slytherin
-// 0 !KEYWORDS bricklink 970c00pb0012
+// 0 !KEYWORDS bricklink 970c00pb0012, Brickowl 152203, Harry Potter, Hogwarts
+// 0 !KEYWORDS Prisoner of Azkaban, Rebrickable 970c03pr0012, set 4751
+// 0 !KEYWORDS Severus Snape, Slytherin
 // 
 // 0 !CMDLINE -c0
 // 

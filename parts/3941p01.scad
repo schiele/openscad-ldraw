@@ -11,14 +11,14 @@ function ldraw_lib__3941p01() = [
 // 0 Name: 3941p01.dat
 // 0 Author: Bernd Broich [bbroich]
 // 0 !LDRAW_ORG Part UPDATE 2019-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Fire truck, fuel pump, Gas Station, Set 6378, Set 6394, set 715
-// 0 !KEYWORDS Set 735
+// 0 !KEYWORDS Fire truck, fuel pump, Gas Station, Rebrickable 3941pr0002, Set 6378
+// 0 !KEYWORDS Set 6394, set 715, Set 735
 // 
 // 0 !HISTORY 2002-06-11 [PTadmin] Official Update 2002-03
 // 0 !HISTORY 2007-06-30 [PTadmin] Header formatted for Contributor Agreement

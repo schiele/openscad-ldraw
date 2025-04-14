@@ -12,7 +12,9 @@ function ldraw_lib__4865apt2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 4865pb002, helicopter, Set 6664
+// 0 !KEYWORDS Bricklink 4865pb002, helicopter, Rebrickable 4865apr0004, Set 6664
+// 
+// 0 !PREVIEW 16 0 0 0 -1 0 0 0 1 0 0 0 -1
 // 
 // 0 !HISTORY 2022-12-20 [PTadmin] Official Update 2022-06
 // 

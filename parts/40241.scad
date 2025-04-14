@@ -6,7 +6,7 @@ function ldraw_lib__40241() = [
 // 0 Name: 40241.dat
 // 0 Author: Andy Westrate [westrate]
 // 0 !LDRAW_ORG Part UPDATE 2011-02
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 !HELP Center of keyhole: 69.94, -18.64, 0
 // 0 !HELP Top of window: 49.94, -46.95, 0

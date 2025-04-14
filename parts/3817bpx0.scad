@@ -11,6 +11,7 @@ function ldraw_lib__3817bpx0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS Bricklink 970c00pb0461, Doctor Who, Set 71204
 // 
 // 0 !HISTORY 2022-05-07 [PTadmin] Official Update 2022-03

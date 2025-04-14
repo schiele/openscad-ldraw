@@ -12,6 +12,10 @@ function ldraw_lib__3821ps1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 3821px1, Rebrickable 3821pr0009
+// 
+// 0 !PREVIEW 16 0 0 0 -1 0 0 0 1 0 0 0 -1
+// 
 // 0 !HISTORY 2012-04-14 [MagFors] Changed colour 383 to 80 (printed silver)
 // 0 !HISTORY 2012-08-09 [PTadmin] Official Update 2012-02
 // 

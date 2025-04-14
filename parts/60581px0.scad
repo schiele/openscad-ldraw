@@ -11,7 +11,9 @@ function ldraw_lib__60581px0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 60581pb127, Friends, Set 21319
+// 0 !KEYWORDS Bricklink 60581pb127, Friends, Rebrickable 60581pr0021, Set 21319
+// 
+// 0 !PREVIEW 16 0 0 0 -1 0 0 0 1 0 0 0 -1
 // 
 // 0 !HISTORY 2020-06-28 [PTadmin] Official Update 2020-01
 // 

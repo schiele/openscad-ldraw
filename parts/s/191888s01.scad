@@ -3,7 +3,7 @@ function ldraw_lib__s__191888s01() = [
 // 0 ~"7710" White
 // 0 Name: s\191888s01.dat
 // 0 Author: Steffen [Steffen]
-// 0 !LDRAW_ORG Subpart UPDATE 2012-01
+// 0 !LDRAW_ORG Subpart UPDATE 2025-03
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -11,12 +11,15 @@ function ldraw_lib__s__191888s01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01
-// 
+// 0 !HISTORY 2025-03-28 [Blechtaler] added BFC NOCLIP
+// 0 !HISTORY 2025-03-30 [OrionP] Official Update 2025-03
 // 
 // 0 // Produced by txt2dat,
 // 0 // Using font: "Swis721 BT" style: "Roman" size: 36pt
-// 0 // 7
 // 
+// 0 BFC NOCLIP
+  [0,"BFC","NOCLIP"],
+// 0 // 7
 // 3 15 -30.813 0 0 -27.547 0 0 -29.723 0 5.158
   [3,15,-30.813,0,0,-27.547,0,0,-29.723,0,5.158],
 // 3 15 -27.859 0 9.977 -29.723 0 5.158 -26.463 0 5.291
@@ -142,6 +145,8 @@ function ldraw_lib__s__191888s01() = [
   [3,15,29.836,0,17.633,32.078,0,19.445,28.408,0,19.221],
 // 3 15 32.078 0 19.445 29.836 0 17.633 33.555 0 15.83
   [3,15,32.078,0,19.445,29.836,0,17.633,33.555,0,15.83],
+// 0 BFC CLIP
+  [0,"BFC","CLIP"],
 // 0 // Bounding box width: 80 height 32
 // 3 16 -40 0 -8 -30.813 0 0 -29.723 0 5.158
   [3,16,-40,0,-8,-30.813,0,0,-29.723,0,5.158],

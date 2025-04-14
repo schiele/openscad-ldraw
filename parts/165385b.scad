@@ -11,8 +11,8 @@ function ldraw_lib__165385b() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Airport, Bricklink 1774stk01, Brickowl 455020, Rebrickable 165385
-// 0 !KEYWORDS Set 1774, Airline
+// 0 !KEYWORDS Airline, Airport, Bricklink 1774stk01, Brickowl 455020
+// 0 !KEYWORDS Rebrickable 165385, Set 1774
 // 
 // 0 !HISTORY 2023-06-24 [OrionP] Official Update 2023-03
 // 

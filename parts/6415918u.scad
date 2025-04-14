@@ -16,8 +16,8 @@ function ldraw_lib__6415918u() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickowl 1167942, Bugatti, EB, race car, Rebrickable 10101053
-// 0 !KEYWORDS Set 42151, W16.4, Bricklink 42151stk01
+// 0 !KEYWORDS Bricklink 42151stk01, Brickowl 1167942, Bugatti, EB, race car
+// 0 !KEYWORDS Rebrickable 10101053, Set 42151, W16.4
 // 
 // 0 !HISTORY 2023-04-17 [OrionP] Official Update 2023-02
 // 

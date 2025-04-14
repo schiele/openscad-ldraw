@@ -3,18 +3,20 @@ use <../p/1-4cyli.scad>
 use <s/973ph0a.scad>
 use <s/973s01.scad>
 function ldraw_lib__973ph1() = [
-// 0 Minifig Torso with Gryffindor Uniform Pattern
+// 0 Minifig Torso with HP Gryffindor Uniform Pattern
 // 0 Name: 973ph1.dat
 // 0 Author: Andy Westrate [westrate]
-// 0 !LDRAW_ORG Part UPDATE 2019-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LDRAW_ORG Part UPDATE 2025-03
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Ginny Weasley, Godric Gryffindor, Gryffindor House, Harry Potter
-// 0 !KEYWORDS hermione granger, Hogwarts, Lion, Red and Gold, Ron Weasley
+// 0 !KEYWORDS Bricklink 973px146, Ginny Weasley, Godric Gryffindor
+// 0 !KEYWORDS Gryffindor House, Harry Potter, hermione granger, Hogwarts, Lion
+// 0 !KEYWORDS Red and Gold, Ron Weasley, Set 4702, set 4704, set 4705, Set 4706
+// 0 !KEYWORDS set 4709, Set 4711, Set 4712, Set 4721, set 4729, set 4730, set 4733
 // 
 // 0 !CMDLINE -c7
 // 
@@ -23,10 +25,10 @@ function ldraw_lib__973ph1() = [
 // 0 !HISTORY 2013-12-03 [MagFors] Corrected bfc errors, changed colour 334 to 82 (printed gold)
 // 0 !HISTORY 2018-11-07 [MagFors] inlined Gold/DkRed pattern subfiles
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
-// 
+// 0 !HISTORY 2025-03-02 [MagFors] Update description, added keywords
+// 0 !HISTORY 2025-03-30 [OrionP] Official Update 2025-03
 // 
 // 0 // Torso
-// 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],
 // 4 16 -14.345 2 10 -12 0 10 12 0 10 14.345 2 10

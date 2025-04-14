@@ -16,8 +16,8 @@ function ldraw_lib__3816cpy1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 970c00pb0646, Scuderia, Set 75879, SF16-H, Speed Champions
-// 0 !KEYWORDS sport, uniform, Ferrari
+// 0 !KEYWORDS Bricklink 970c00pb0646, Ferrari, Scuderia, Set 75879, SF16-H
+// 0 !KEYWORDS Speed Champions, sport, Uniform
 // 
 // 0 !HISTORY 2023-06-24 [OrionP] Official Update 2023-03
 // 

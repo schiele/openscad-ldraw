@@ -6,7 +6,7 @@ function ldraw_lib__41630() = [
 // 0 Name: 41630.dat
 // 0 Author: Andy Westrate [westrate]
 // 0 !LDRAW_ORG Part UPDATE 2013-02
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 !HELP This number is used on opaque parts which has a solid top stud
 // 
@@ -15,6 +15,7 @@ function ldraw_lib__41630() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Slope
+// 0 !KEYWORDS BrickLink 30614, Rebrickable 30614
 // 
 // 0 !HISTORY 2007-08-25 {LEGO Universe Team} Original part shape
 // 0 !HISTORY 2008-12-09 [westrate] File preparation for LDraw Parts Tracker

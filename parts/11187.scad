@@ -11,7 +11,7 @@ function ldraw_lib__11187() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !CATEGORY Minifig Footwear
+// 0 !CATEGORY Obsolete
 // 
 // 0 !HISTORY 2012-12-28 [PTadmin] Official Update 2012-03
 // 0 !HISTORY 2013-12-14 [cwdee] Add = prefix

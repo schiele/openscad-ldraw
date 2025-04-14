@@ -5,9 +5,9 @@ use <4762.scad>
 function ldraw_lib__4760c01() = [
 // 0 Electric  9V Battery Box  4 x  8 x  2.333 (Complete)
 // 0 Name: 4760c01.dat
-// 0 Author: Dee Earley [DeannaEarley]
+// 0 Author: Deanna Earley [DeannaEarley]
 // 0 !LDRAW_ORG Shortcut UPDATE 2011-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CW
   [0,"BFC","CERTIFY"],

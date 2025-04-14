@@ -6,7 +6,7 @@ function ldraw_lib__50859a() = [
 // 0 Name: 50859a.dat
 // 0 Author: Andy Westrate [westrate]
 // 0 !LDRAW_ORG Part UPDATE 2015-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 !HELP Wheel centers are at (0, -3.7, -43.5) and (0, -3.7, 63.5)
 // 0 !HELP Axle hole center is at (0, 0, 0)

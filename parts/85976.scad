@@ -14,7 +14,7 @@ function ldraw_lib__85976() = [
 // 0 Name: 85976.dat
 // 0 Author: Ronald Vallenduuk [Duq]
 // 0 !LDRAW_ORG Part UPDATE 2013-02
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 !HELP The rotation point is at 0/0/-480
 // 

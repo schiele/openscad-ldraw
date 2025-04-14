@@ -5,25 +5,29 @@ function ldraw_lib__10178p06() = [
 // 0 Rock Stepped with White Lightning Pattern
 // 0 Name: 10178p06.dat
 // 0 Author: Christian Neumann [Wesley]
-// 0 !LDRAW_ORG Part UPDATE 2013-01
+// 0 !LDRAW_ORG Part UPDATE 2025-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Monster Fighters, Moonstone
+// 0 !KEYWORDS Bricklink 10178pb04, Brickowl 135383, Monster Fighters, Moonstone
+// 0 !KEYWORDS Rebrickable 10178pr0006, set 9468
 // 
 // 0 !CMDLINE -c34
 // 
 // 0 !HISTORY 2013-07-21 [PTadmin] Official Update 2013-01
-// 
+// 0 !HISTORY 2025-02-26 [OrionP] Added keywords, noclip
+// 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\10178s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__10178s01()],
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 -1 s\10178s02.dat
   [1,16,0,0,0,-1,0,0,0,1,0,0,0,-1, ldraw_lib__s__10178s02()],
 // 0 // front pattern
+// 0 BFC NOCLIP
+  [0,"BFC","NOCLIP"],
 // 4 15 -0.05 -38.05 -8.25 -0.45 -42.6 -8.25 -2.15 -39.35 -8.25 -1 -36.15 -8.25
   [4,15,-0.05,-38.05,-8.25,-0.45,-42.6,-8.25,-2.15,-39.35,-8.25,-1,-36.15,-8.25],
 // 4 15 1.6 -35.45 -8.25 -0.05 -38.05 -8.25 -1 -36.15 -8.25 0.5 -35.05 -8.25
@@ -130,6 +134,8 @@ function ldraw_lib__10178p06() = [
   [4,15,-2.45,-13.05,-8.25,-2.75,-13.5,-8.25,-2.95,-12.65,-8.25,-2.75,-12.6,-8.25],
 // 4 15 4.35 -24.8 -8.25 5.6 -25.45 -8.25 2.2 -26.65 -8.25 1.4 -25.85 -8.25
   [4,15,4.35,-24.8,-8.25,5.6,-25.45,-8.25,2.2,-26.65,-8.25,1.4,-25.85,-8.25],
+// 0 BFC CLIP
+  [0,"BFC","CLIP"],
 // 4 16 0.477 -43.018 -8.25 -0.477 -43.018 -8.25 -0.45 -42.6 -8.25 -0.05 -38.05 -8.25
   [4,16,0.477,-43.018,-8.25,-0.477,-43.018,-8.25,-0.45,-42.6,-8.25,-0.05,-38.05,-8.25],
 // 4 16 -2.15 -39.35 -8.25 -0.45 -42.6 -8.25 -0.477 -43.018 -8.25 -3.558 -36.972 -8.25

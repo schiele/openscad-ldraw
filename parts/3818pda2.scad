@@ -21,6 +21,8 @@ function ldraw_lib__3818pda2() = [
 // 
 // 0 !KEYWORDS Bricklink 982pb024, The LEGO Movie, Wyldstyle
 // 
+// 0 !PREVIEW 16 0 0 0 -1 0 0 0 1 0 0 0 -1
+// 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
 // 
 // 

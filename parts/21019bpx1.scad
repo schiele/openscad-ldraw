@@ -17,8 +17,8 @@ function ldraw_lib__21019bpx1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 970c00pb0645, Brickowl 264191, Marceline
-// 0 !KEYWORDS Set 71285 Rebrickable 970c05pat10pr0001, Adventure Time
+// 0 !KEYWORDS Adventure Time, Bricklink 970c00pb0645, Brickowl 264191, Marceline
+// 0 !KEYWORDS Set 71285 Rebrickable 970c05pat10pr0001
 // 
 // 0 !HISTORY 2022-09-15 [ejboer] Original design
 // 0 !HISTORY 2023-06-06 [MagFors] Adapted to correct geometry

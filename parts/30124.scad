@@ -11,6 +11,8 @@ function ldraw_lib__30124() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
+// 
 // 0 !HISTORY 2014-12-23 [PTadmin] Official Update 2014-02
 // 0 !HISTORY 2024-07-22 [MagFors] Obsolete due to bad geometry
 // 0 !HISTORY 2024-12-01 [OrionP] Official Update 2024-10

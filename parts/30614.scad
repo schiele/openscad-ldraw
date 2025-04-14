@@ -6,7 +6,7 @@ function ldraw_lib__30614() = [
 // 0 Name: 30614.dat
 // 0 Author: Ronald Vallenduuk [Duq]
 // 0 !LDRAW_ORG Part UPDATE 2013-02
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 !HELP This number is used on transparent parts which has a hollow top stud
 // 

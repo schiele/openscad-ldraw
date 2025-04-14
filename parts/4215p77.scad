@@ -11,6 +11,8 @@ function ldraw_lib__4215p77() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !PREVIEW 16 0 0 0 -1 0 0 0 1 0 0 0 -1
+// 
 // 0 !HISTORY 1998-07-15 [PTadmin] Official Update 1998-07
 // 0 !HISTORY 2001-12-31 [PTadmin] Official Update 2001-03
 // 0 !HISTORY 2002-11-30 [PTadmin] Official Update 2002-05

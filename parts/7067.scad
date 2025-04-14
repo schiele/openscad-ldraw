@@ -11,6 +11,8 @@ function ldraw_lib__7067() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
+// 
 // 0 !HISTORY 2010-07-05 [PTadmin] Official Update 2010-02
 // 0 !HISTORY 2010-11-22 [anathema] Added 'Physical_Colour' to type & optimised
 // 0 !HISTORY 2010-12-31 [PTadmin] Official Update 2010-03

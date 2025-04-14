@@ -15,6 +15,8 @@ function ldraw_lib__60581d03() = [
 // 0 !CATEGORY Sticker Shortcut
 // 0 !KEYWORDS Bricklink 60581pb044, Friends, Rehearsal stage, Set 41004
 // 
+// 0 !PREVIEW 16 0 0 0 -1 0 0 0 1 0 0 0 -1
+// 
 // 0 !HISTORY 2024-09-30 [OrionP] Official Update 2024-08
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 60581.dat

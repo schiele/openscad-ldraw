@@ -13,6 +13,8 @@ function ldraw_lib__3815cw3() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
+// 
 // 0 !HISTORY 2015-10-11 [PTadmin] Official Update 2015-01
 // 0 !HISTORY 2019-09-08 [MagFors] Obsoleted due to bad leg geometry
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01

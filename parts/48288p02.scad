@@ -9,13 +9,14 @@ function ldraw_lib__48288p02() = [
 // 0 Name: 48288p02.dat
 // 0 Author: Andy Westrate [westrate]
 // 0 !LDRAW_ORG Part UPDATE 2024-02
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Center Ice, Center Line, Face Off, Hockey, NHL, Neutral Zone
+// 0 !KEYWORDS BrickLink 48288pb03, Center Ice, Center Line, Face Off, Hockey
+// 0 !KEYWORDS Neutral Zone, NHL, Rebrickable 48288pr0003
 // 
 // 0 !HISTORY 2009-05-02 [PTadmin] Official Update 2009-01
 // 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives

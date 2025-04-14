@@ -7,7 +7,7 @@ function ldraw_lib__s__2586ps1a() = [
 // 0 Name: s\2586ps1a.dat
 // 0 Author: Bernd Broich [bbroich]
 // 0 !LDRAW_ORG Subpart UPDATE 2024-02
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],

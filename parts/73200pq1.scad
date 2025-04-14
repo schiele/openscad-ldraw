@@ -13,6 +13,7 @@ function ldraw_lib__73200pq1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS Amset-Ra, Bricklink 970c00pb0081, Pharaoh's Quest, Set 7327
 // 
 // 0 !HISTORY 2012-03-30 [Wesley] Original pattern design

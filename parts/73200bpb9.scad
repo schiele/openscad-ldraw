@@ -13,8 +13,8 @@ function ldraw_lib__73200bpb9() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickowl 282112, Harley Quinn, Rebrickable 970l03r22pr0302, Set 6857
-// 0 !KEYWORDS Set 71229, Bricklink 970d03pb02
+// 0 !KEYWORDS Bricklink 970d03pb02, Brickowl 282112, Harley Quinn
+// 0 !KEYWORDS Rebrickable 970l03r22pr0302, Set 6857, Set 71229
 // 
 // 0 !HISTORY 2023-06-24 [OrionP] Official Update 2023-03
 // 

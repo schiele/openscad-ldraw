@@ -15,7 +15,7 @@ function ldraw_lib__191915k() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Zuerich, Zurich, set 7740
+// 0 !KEYWORDS set 7740, Zuerich, Zurich
 // 
 // 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01
 // 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives

@@ -11,6 +11,7 @@ function ldraw_lib__80671() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS cross-hairs, crossroads, landing pad, Launch pad, Space
 // 
 // 0 !HISTORY 1997-12-05 [PTadmin] Official Update 1997-17

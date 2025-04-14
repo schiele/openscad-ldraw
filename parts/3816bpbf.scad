@@ -11,6 +11,7 @@ function ldraw_lib__3816bpbf() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS bricklink 970c00pb0236, Extremis, Mk 42, set 76006, set 76007
 // 
 // 0 !CMDLINE -c320

@@ -12,6 +12,7 @@ function ldraw_lib__4592c01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS antenna, controls, finger, gear shift, lever
 // 
 // 0 !HISTORY 2003-11-15 [sbliss] retitled

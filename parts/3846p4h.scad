@@ -7,14 +7,14 @@ function ldraw_lib__3846p4h() = [
 // 0 Name: 3846p4h.dat
 // 0 Author: Bernd Broich [bbroich]
 // 0 !LDRAW_ORG Part UPDATE 2012-02
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS Castle, dexter, field azure, rampant
+// 0 !KEYWORDS Castle, dexter, field azure, rampant, Rebrickable 3846pr0038
 // 
 // 0 !HISTORY 2002-08-18 [PTadmin] Official Update 2002-04
 // 0 !HISTORY 2007-06-30 [PTadmin] Header formatted for Contributor Agreement

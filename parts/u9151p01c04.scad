@@ -15,7 +15,7 @@ function ldraw_lib__u9151p01c04() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Set 3673, Willem Walroß, William Walrus
+// 0 !KEYWORDS Set 3673, Willem WalroÃ, William Walrus
 // 
 // 0 !HISTORY 2011-07-25 [PTadmin] Official Update 2011-01
 // 

@@ -2,20 +2,22 @@ use <../lib.scad>
 use <../p/1-4cyli.scad>
 use <s/973s01.scad>
 function ldraw_lib__973pst() = [
-// 0 Minifig Torso with Black Collar and Pockets Pattern
+// 0 Minifig Torso with SW Black Collar and Pockets Pattern
 // 0 Name: 973pst.dat
 // 0 Author: Damien Roux [Darats]
-// 0 !LDRAW_ORG Part UPDATE 2011-01
+// 0 !LDRAW_ORG Part UPDATE 2025-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Skyhopper, Star Wars, T-16
+// 0 !KEYWORDS A New Hope, Bricklink 973pb0191, Episode IV, Original Trilogy
+// 0 !KEYWORDS Set 4477, Star Wars, T-16 Skyhopper Pilot
 // 
 // 0 !HISTORY 2011-07-25 [PTadmin] Official Update 2011-01
-// 
+// 0 !HISTORY 2025-02-20 [MagFors] Update description, added keywords
+// 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],

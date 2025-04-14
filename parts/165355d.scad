@@ -12,8 +12,8 @@ function ldraw_lib__165355d() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS  Bricklink 6594stk01,  Brickowl 253587,  Rebrickable 165355,  tanker
-// 0 !KEYWORDS  trailer,  truck, Set 6594
+// 0 !KEYWORDS Bricklink 6594stk01, Brickowl 253587, Rebrickable 165355, Set 6594
+// 0 !KEYWORDS tanker, Trailer, truck
 // 
 // 0 !HISTORY 2023-08-25 [OrionP] Official Update 2023-04
 // 

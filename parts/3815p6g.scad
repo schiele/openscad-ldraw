@@ -12,6 +12,7 @@ function ldraw_lib__3815p6g() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS Wyldstyle
 // 
 // 0 !CMDLINE -c1

@@ -23,7 +23,7 @@ function ldraw_lib__31622() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Technic
-// 0 !KEYWORDS Early Simple Machines, dacta
+// 0 !KEYWORDS dacta, Early Simple Machines
 // 
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
 // 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives

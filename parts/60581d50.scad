@@ -17,6 +17,8 @@ function ldraw_lib__60581d50() = [
 // 
 // 0 !CMDLINE -c47
 // 
+// 0 !PREVIEW 16 0 0 0 -1 0 0 0 1 0 0 0 -1
+// 
 // 0 !HISTORY 2015-12-30 [PTadmin] Official Update 2015-02
 // 0 !HISTORY 2019-05-11 [cwdee] Update description
 // 0 !HISTORY 2019-09-09 [PTadmin] Official Update 2019-02

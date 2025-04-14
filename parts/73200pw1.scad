@@ -13,6 +13,7 @@ function ldraw_lib__73200pw1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS american native, Bricklink 970c00pb0026, indian, medicine man
 // 0 !KEYWORDS set 2845, set 6718, set 6746, set 6748, set 6763, set 6766, western
 // 0 !KEYWORDS wild west

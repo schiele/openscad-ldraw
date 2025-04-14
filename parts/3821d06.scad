@@ -15,6 +15,8 @@ function ldraw_lib__3821d06() = [
 // 0 !CATEGORY Sticker Shortcut
 // 0 !KEYWORDS Bricklink 3821pb010, Racing, Rally, Set 6634, Stock car
 // 
+// 0 !PREVIEW 16 0 0 0 -1 0 0 0 1 0 0 0 -1
+// 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 3821.dat

@@ -15,6 +15,8 @@ function ldraw_lib__11203d06() = [
 // 0 !CATEGORY Sticker Shortcut
 // 0 !KEYWORDS Bricklink 11203pb050, NASA Apollo 11 Lunar Lander, set 10266
 // 
+// 0 !PREVIEW 16 0 0 0 1 0 0 0 -1 0 0 0 -1
+// 
 // 0 !HISTORY 2024-09-30 [OrionP] Official Update 2024-08
 // 0 !HISTORY 2024-11-27 [MagFors] Update description
 // 0 !HISTORY 2024-12-01 [OrionP] Official Update 2024-10

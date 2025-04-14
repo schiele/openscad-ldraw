@@ -16,7 +16,7 @@ function ldraw_lib__003439a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Train, set 171
+// 0 !KEYWORDS set 171, Train
 // 
 // 0 !HISTORY 2010-07-05 [PTadmin] Official Update 2010-02
 // 0 !HISTORY 2016-07-01 [cwdee] Updated description

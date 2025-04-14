@@ -4,7 +4,7 @@ function ldraw_lib__s__93668s01() = [
 // 0 ~Sheet Plastic 15 x 14 Curved - Half Surface
 // 0 Name: s\93668s01.dat
 // 0 Author: Christian Neumann [Wesley]
-// 0 !LDRAW_ORG Subpart UPDATE 2018-02
+// 0 !LDRAW_ORG Subpart UPDATE 2025-03
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -12,12 +12,13 @@ function ldraw_lib__s__93668s01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2018-12-08 [PTadmin] Official Update 2018-02
-// 
+// 0 !HISTORY 2025-03-26 [OrionP] Fix incorrect color usage
+// 0 !HISTORY 2025-03-30 [OrionP] Official Update 2025-03
 // 
 // 1 16 0 0 0 0 0 9 0 1 0 -9 0 0 2-4edge.dat
   [1,16,0,0,0,0,0,9,0,1,0,-9,0,0, ldraw_lib__2_4edge()],
-// 1 24 0 0 -193.5 0 0 9 0 1 0 -9 0 0 2-4edge.dat
-  [1,24,0,0,-193.5,0,0,9,0,1,0,-9,0,0, ldraw_lib__2_4edge()],
+// 1 16 0 0 -193.5 0 0 9 0 1 0 -9 0 0 2-4edge.dat
+  [1,16,0,0,-193.5,0,0,9,0,1,0,-9,0,0, ldraw_lib__2_4edge()],
 // 4 16 0 0 9 3.4443 0 8.3151 40 0 14 20 0 17.5
   [4,16,0,0,9,3.4443,0,8.3151,40,0,14,20,0,17.5],
 // 3 16 40 0 14 3.4443 0 8.3151 6.3639 0 6.3639

@@ -13,6 +13,8 @@ function ldraw_lib__3678apc0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 3678apb01, Rebrickable 3678apr0004
+// 
 // 0 !HISTORY 2009-09-03 [PTadmin] Official Update 2009-02
 // 0 !HISTORY 2010-05-08 [PTadmin] Renamed from 3678pc0
 // 0 !HISTORY 2010-07-05 [PTadmin] Official Update 2010-02

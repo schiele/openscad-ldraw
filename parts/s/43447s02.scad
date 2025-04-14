@@ -55,7 +55,7 @@ function ldraw_lib__s__43447s02() = [
 // 0 ~Electric RC Race Buggy Battery - Half Base
 // 0 Name: s\43447s02.dat
 // 0 Author: Guy Vivan [guyvivan]
-// 0 !LDRAW_ORG Subpart UPDATE 2024-02
+// 0 !LDRAW_ORG Subpart UPDATE 2025-03
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -65,6 +65,8 @@ function ldraw_lib__s__43447s02() = [
 // 0 !HISTORY 2010-07-05 [PTadmin] Official Update 2010-02
 // 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
 // 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
+// 0 !HISTORY 2025-03-26 [OrionP] Fix concave quad
+// 0 !HISTORY 2025-03-30 [OrionP] Official Update 2025-03
 // 
 // 1 16 110 40 -30 1 0 0 0 0 -1 0 1 0 peghole.dat
   [1,16,110,40,-30,1,0,0,0,0,-1,0,1,0, ldraw_lib__peghole()],
@@ -2066,8 +2068,10 @@ function ldraw_lib__s__43447s02() = [
   [4,16,79,38,-127,-75.7,38,-127,-17,38,-126,23,38,-126],
 // 2 24 70 34 -124 63.38 34 -124
   [2,24,70,34,-124,63.38,34,-124],
-// 4 16 63.38 34 -124 70 34 -124 70 34 -113 67 34 -118
-  [4,16,63.38,34,-124,70,34,-124,70,34,-113,67,34,-118],
+// 3 16 70 34 -124 70 34 -113 67 34 -118
+  [3,16,70,34,-124,70,34,-113,67,34,-118],
+// 3 16 67 34 -118 63.38 34 -124 70 34 -124
+  [3,16,67,34,-118,63.38,34,-124,70,34,-124],
 // 2 24 63.38 30 -124 63.38 34 -124
   [2,24,63.38,30,-124,63.38,34,-124],
 // 2 24 63.38 30 -124 56.62 30 -124

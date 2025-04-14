@@ -12,6 +12,8 @@ function ldraw_lib__4864a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
+// 0 !PREVIEW 16 0 0 0 -1 0 0 0 1 0 0 0 -1
+// 
 // 0 !HISTORY 2004-04-25 [cwdee] Created solid stud version
 // 0 !HISTORY 2004-09-15 [PTadmin] Official Update 2004-03
 // 0 !HISTORY 2007-07-09 [PTadmin] Header formatted for Contributor Agreement

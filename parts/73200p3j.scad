@@ -13,6 +13,7 @@ function ldraw_lib__73200p3j() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS Bricklink 970c03pb01, Islander, King Kahuka, natives, Pirates
 // 0 !KEYWORDS set 1788, set 6236, set 6246, set 6256, set 6262, set 6264, set 6278
 // 0 !KEYWORDS set 6292

@@ -8,13 +8,13 @@ function ldraw_lib__170c01() = [
 // 0 Name: 170c01.dat
 // 0 Author: Ross Crawford [rosco]
 // 0 !LDRAW_ORG Shortcut UPDATE 2019-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS 12V, 4.5V, set 872
+// 0 !KEYWORDS 12V, 4.5V, BrickLink x186, Rebrickable upn0220, set 872
 // 
 // 0 !HISTORY 2009-05-02 [PTadmin] Official Update 2009-01
 // 0 !HISTORY 2017-08-07 [MagFors] bfc'd, updated description

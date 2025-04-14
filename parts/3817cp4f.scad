@@ -16,8 +16,8 @@ function ldraw_lib__3817cp4f() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Armor, belt, Bricklink 970c00pb0013, Castle, knight, Knights Kingdom
-// 0 !KEYWORDS leggings, set 4817, archer
+// 0 !KEYWORDS archer, Armor, belt, Bricklink 970c00pb0013, Castle, knight
+// 0 !KEYWORDS Knights Kingdom, leggings, set 4817
 // 
 // 0 !CMDLINE -c0
 // 

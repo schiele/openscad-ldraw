@@ -14,8 +14,8 @@ function ldraw_lib__16709p0g() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickowl 909237, Rebrickable 16709pats01pr0013, Series 18, Set 71021
-// 0 !KEYWORDS Bricklink 41879pb012, Collectible Minifigures
+// 0 !KEYWORDS Bricklink 41879pb012, Brickowl 909237, Collectible Minifigures
+// 0 !KEYWORDS Rebrickable 16709pats01pr0013, Series 18, Set 71021
 // 
 // 0 !HISTORY 2023-04-17 [OrionP] Official Update 2023-02
 // 

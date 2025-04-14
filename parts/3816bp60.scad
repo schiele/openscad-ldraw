@@ -11,6 +11,7 @@ function ldraw_lib__3816bp60() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS Set 3071, Set 6905, Set 6919, set 6965, Set 6969, Set 6977, Space
 // 
 // 0 !CMDLINE -c8

@@ -12,8 +12,10 @@ function ldraw_lib__4864ap11() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Metroliner Club Car, racing stripes, red, Train
-// 0 !KEYWORDS white and blue stripes
+// 0 !KEYWORDS BrickLink 4864apx11, Metroliner Club Car, racing stripes
+// 0 !KEYWORDS Rebrickable 4864apr0004, red, Train, white and blue stripes
+// 
+// 0 !PREVIEW 16 0 0 0 -1 0 0 0 1 0 0 0 -1
 // 
 // 0 !HISTORY 2004-05-17 [sbliss] Created solid-stud version of part
 // 0 !HISTORY 2005-12-28 [PTadmin] Official Update 2005-01

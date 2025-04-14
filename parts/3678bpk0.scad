@@ -11,7 +11,7 @@ function ldraw_lib__3678bpk0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Cars, Disney, Guido
+// 0 !KEYWORDS BrickLink 3678bpb030, Cars, Disney, Guido, Rebrickable 3678bpr0014
 // 
 // 0 !HISTORY 2014-06-21 [PTadmin] Official Update 2014-01
 // 

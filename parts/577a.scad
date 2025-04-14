@@ -23,7 +23,7 @@ function ldraw_lib__577a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !CATEGORY Minifig Accessory
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS bar, base, rod, sabre, Star Wars, sword
 // 
 // 0 !HISTORY 2012-12-12 [MMR1988] Rewrite due to bad quads in old part, corrected measures

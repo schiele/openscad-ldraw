@@ -15,7 +15,7 @@ function ldraw_lib__u9107p01c03() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bruno Bär, Bruno Bear, Bruno el osito, Justin l'ours, Set 3629
+// 0 !KEYWORDS Bruno BÃ¤r, Bruno Bear, Bruno el osito, Justin l'ours, Set 3629
 // 
 // 0 !HISTORY 2011-07-25 [PTadmin] Official Update 2011-01
 // 

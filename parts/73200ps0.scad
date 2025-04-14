@@ -13,6 +13,7 @@ function ldraw_lib__73200ps0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS 1999, Bricklink 970c02pb03, Luke Skywalker, set 4501, set 7110
 // 0 !KEYWORDS set 7190, Tatooine
 // 

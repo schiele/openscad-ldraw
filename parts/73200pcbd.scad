@@ -13,6 +13,7 @@ function ldraw_lib__73200pcbd() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS animal, Bricklink 970c00pb0340, CMF series 12, Costume, pig
 // 0 !KEYWORDS set 80102
 // 

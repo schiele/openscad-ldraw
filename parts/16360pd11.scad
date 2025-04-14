@@ -7,18 +7,22 @@ function ldraw_lib__16360pd11() = [
 // 0 Minifig Torso with Dual Mould Arms and Hands with Shirt with Black Belly Bump and Collar Outline Pattern
 // 0 Name: 16360pd11.dat
 // 0 Author: Chris Böhnke [KnightOfTarenta]
-// 0 !LDRAW_ORG Shortcut UPDATE 2025-01
+// 0 !LDRAW_ORG Shortcut UPDATE 2025-03
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb1670c01, BrickOwl 358714, Dimensions, Homer
+// 0 !KEYWORDS Bricklink 973pb1670c01, Dimensions, Homer
 // 0 !KEYWORDS Mini Upper Part 2K No 2604, Rebrickable 973g27c01h01pr2604
 // 0 !KEYWORDS Set 71005, Set 71016, Set 71202, Simpson, The Simpsons
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
+// 0 !HISTORY 2025-02-12 [MagFors] Update description
+// 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
+// 0 !HISTORY 2025-03-16 [MagFors] Update description
+// 0 !HISTORY 2025-03-30 [OrionP] Official Update 2025-03
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 973pd11.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__973pd11()],

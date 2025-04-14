@@ -3,16 +3,17 @@ use <../p/1-4disc.scad>
 use <../p/1-4ring3.scad>
 use <s/30259s01.scad>
 function ldraw_lib__30259p01() = [
-// 0 Roadsign Clip-on  2.2 x  2.667 Triangular with Fire Pattern (Obsolete)
+// 0 ~Roadsign Clip-on  2.2 x  2.667 Triangular with Fire Pattern (Obsolete)
 // 0 Name: 30259p01.dat
 // 0 Author: Franklin W. Cain [fwcain]
-// 0 !LDRAW_ORG Part UPDATE 2024-05
+// 0 !LDRAW_ORG Part UPDATE 2025-03
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS Bricklink 892pb001, caution, combustible, combustion, danger
 // 0 !KEYWORDS explosion, explosive, Flame, flammable, hazard, Launch Command
 // 0 !KEYWORDS Set 6455, space port, town, Trains, warning
@@ -27,6 +28,8 @@ function ldraw_lib__30259p01() = [
 // 0 !HISTORY 2010-12-31 [PTadmin] Official Update 2010-03
 // 0 !HISTORY 2024-06-27 [Philo] Obsoleted for wrong clip position. Use 30259ap01 instead
 // 0 !HISTORY 2024-06-30 [OrionP] Official Update 2024-05
+// 0 !HISTORY 2025-03-02 [OrionP] Fix description, add category
+// 0 !HISTORY 2025-03-30 [OrionP] Official Update 2025-03
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\30259s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__30259s01()],

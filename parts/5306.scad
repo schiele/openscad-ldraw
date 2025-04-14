@@ -11,6 +11,7 @@ function ldraw_lib__5306() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS connector, contact, plug, socket
 // 
 // 0 !HISTORY 1998-02-12 [PTadmin] Official Update 1998-02

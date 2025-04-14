@@ -2,20 +2,21 @@ use <../lib.scad>
 use <s/2528s01.scad>
 use <s/2528s02.scad>
 function ldraw_lib__2528p30() = [
-// 0 Minifig Hat Bicorne with Evil Skull and Crossbones Pattern (Obsolete)
+// 0 ~Minifig Hat Bicorne with Evil Skull and Crossbones Pattern (Obsolete)
 // 0 Name: 2528p30.dat
 // 0 Author: Magnus Forsberg [MagFors]
-// 0 !LDRAW_ORG Part UPDATE 2022-03
+// 0 !LDRAW_ORG Part UPDATE 2025-03
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !CATEGORY Minifig Headwear
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS 2-corner, bi-corner, bicorn, bicorner, Brickbeard
 // 0 !KEYWORDS Bricklink 2528pb03, Cap, captain, chapeau bras, chapeau-bras
 // 0 !KEYWORDS cocked hat, Feather, fore and aft hat, Pirate, Pirates, plume
+// 0 !KEYWORDS set 6243
 // 
 // 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02
 // 0 !HISTORY 2012-12-24 [cwdee] Add category
@@ -23,7 +24,8 @@ function ldraw_lib__2528p30() = [
 // 0 !HISTORY 2020-11-06 [Philo] Removed useless vertices introduced by slicing process
 // 0 !HISTORY 2021-04-21 [MagFors] Obsoleted due to bad geometry
 // 0 !HISTORY 2022-05-07 [PTadmin] Official Update 2022-03
-// 
+// 0 !HISTORY 2025-03-02 [OrionP] Fix description, add category
+// 0 !HISTORY 2025-03-30 [OrionP] Official Update 2025-03
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2528s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2528s01()],

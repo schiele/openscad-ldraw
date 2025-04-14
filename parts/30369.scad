@@ -14,6 +14,7 @@ function ldraw_lib__30369() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
+// 0 !KEYWORDS BrickLink x52
 // 
 // 0 !HISTORY 2012-03-23 [Rolf] File preparation for LDraw Parts Tracker
 // 0 !HISTORY 2012-03-23 {LEGO Digital Designer} Original part shape

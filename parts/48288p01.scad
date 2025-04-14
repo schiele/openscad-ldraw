@@ -5,13 +5,14 @@ function ldraw_lib__48288p01() = [
 // 0 Name: 48288p01.dat
 // 0 Author: Andy Westrate [westrate]
 // 0 !LDRAW_ORG Part UPDATE 2009-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Center Ice, Center Line, Hockey, Neutral Zone, NHL
+// 0 !KEYWORDS BrickLink 48288pb04, Center Ice, Center Line, Hockey, Neutral Zone
+// 0 !KEYWORDS NHL, Rebrickable 48288pr0004
 // 
 // 0 !HISTORY 2009-05-02 [PTadmin] Official Update 2009-01
 // 

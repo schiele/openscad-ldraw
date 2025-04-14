@@ -16,10 +16,10 @@ function ldraw_lib__3817cpq1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Anubis Guard, Bricklink 970c00pb0081, Bricklink 970c00pb0082
-// 0 !KEYWORDS Brickowl 288328, Brickowl 403903, Pharaoh's Quest
-// 0 !KEYWORDS Rebrickable 970c03pr0196, Rebrickable 970c11pr0200, set 7327
-// 0 !KEYWORDS Amset-Ra
+// 0 !KEYWORDS Amset-Ra, Anubis Guard, Bricklink 970c00pb0081
+// 0 !KEYWORDS Bricklink 970c00pb0082, Brickowl 288328, Brickowl 403903
+// 0 !KEYWORDS Pharaoh's Quest, Rebrickable 970c03pr0196, Rebrickable 970c11pr0200
+// 0 !KEYWORDS Set 7327
 // 
 // 0 !HISTORY 2011-12-29 [Wesley] Original pattern design
 // 0 !HISTORY 2020-06-06 [MagFors] Adapted to corrected geometry

@@ -11,15 +11,15 @@ function ldraw_lib__3626bp3e() = [
 // 0 Name: 3626bp3e.dat
 // 0 Author: Andy Westrate [westrate]
 // 0 !LDRAW_ORG Part UPDATE 2024-07
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS arched eyebrows, Bricklink 3626bpx82, Brickowl 238470
-// 0 !KEYWORDS handlebar moustache, Imperial Armada, Pirates, pointed eyebrows
-// 0 !KEYWORDS Rebrickable 3626bpr0016, set 6204, set 6281, set 6291, Spaniard
+// 0 !KEYWORDS arched eyebrows, BrickLink 3626px82, handlebar moustache
+// 0 !KEYWORDS Imperial Armada, Pirates, pointed eyebrows, Rebrickable 3626bpr0016
+// 0 !KEYWORDS set 6204, set 6281, set 6291, Spaniard
 // 
 // 0 !CMDLINE -c14
 // 

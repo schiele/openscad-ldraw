@@ -12,6 +12,7 @@ function ldraw_lib__3815paw() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS Chima, Worriz
 // 
 // 0 !HISTORY 2014-12-23 [PTadmin] Official Update 2014-02

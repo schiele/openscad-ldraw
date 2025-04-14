@@ -2,15 +2,19 @@ use <../lib.scad>
 use <4492p03.scad>
 use <4494c01.scad>
 function ldraw_lib__4493c03() = [
-// 0 Animal Horse with Red Tack Pattern (Complete)
+// 0 Animal Horse (Complete) with Red Tack Pattern
 // 0 Name: 4493c03.dat
-// 0 Author: Sascha Broich
-// 0 !LDRAW_ORG Shortcut UPDATE 2015-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 Author: Willy Tschager [Holly-Wood]
+// 0 !LDRAW_ORG Shortcut UPDATE 2025-02
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
+// 
+// 0 !KEYWORDS Bricklink 4493c01pb03, Brickowl 818242, LEGO ID 75998
+// 0 !KEYWORDS Rebrickable 4493c01pr0003, Set 1584, Set 6060, Set 6066, Set 6085
+// 0 !KEYWORDS Set 6086, Set 6379
 // 
 // 0 !CMDLINE -C6
 // 
@@ -19,12 +23,13 @@ function ldraw_lib__4493c03() = [
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
 // 0 !HISTORY 2014-12-12 [MagFors] Made BFC compliant
 // 0 !HISTORY 2015-10-11 [PTadmin] Official Update 2015-01
+// 0 !HISTORY 2025-02-06 [Holly-Wood] Complete rewrite, original by Sascha Broich
+// 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 
-// 
-// 1 16 0 -19.5 -33.5 1 0 0 0 0.984808 -0.173648 0 0.173648 0.984808 4492p03.dat
-  [1,16,0,-19.5,-33.5,1,0,0,0,0.984808,-0.173648,0,0.173648,0.984808, ldraw_lib__4492p03()],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 4494c01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__4494c01()],
+// 1 16 0 -19.5 -33.5 1 0 0 0 .98481 -.17365 0 .17365 .98481 4492p03.dat
+  [1,16,0,-19.5,-33.5,1,0,0,0,.98481,-.17365,0,.17365,.98481, ldraw_lib__4492p03()],
 ];
 module ldraw_lib__4493c03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
     makepoly(ldraw_lib__4493c03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);

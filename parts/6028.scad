@@ -17,14 +17,14 @@ function ldraw_lib__6028() = [
 // 0 Name: 6028.dat
 // 0 Author: Bernd Broich [bbroich]
 // 0 !LDRAW_ORG Part UPDATE 2024-02
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
 // 0 !KEYWORDS Adventurers, Alligator, Castle, City, Crocodile, Dinosaurs, Pirates
-// 0 !KEYWORDS Stegosaurus, reptile
+// 0 !KEYWORDS reptile, Stegosaurus
 // 
 // 0 !HISTORY 2004-04-22 [PTadmin] Official Update 2004-02
 // 0 !HISTORY 2007-07-09 [PTadmin] Header formatted for Contributor Agreement

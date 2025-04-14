@@ -7,13 +7,14 @@ function ldraw_lib__3626bpn1() = [
 // 0 Name: 3626bpn1.dat
 // 0 Author: Andy Westrate [westrate]
 // 0 !LDRAW_ORG Part UPDATE 2005-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Castle, emperor, Japan, Ninja, Nippon, Old Shogun, samurai
+// 0 !KEYWORDS BrickLink 3626px4, Castle, emperor, Japan, Ninja, Nippon, Old Shogun
+// 0 !KEYWORDS Rebrickable 3626bpr0261, samurai
 // 
 // 0 !HISTORY 2005-12-28 [PTadmin] Official Update 2005-01
 // 0 !HISTORY 2007-06-29 [PTadmin] Header formatted for Contributor Agreement

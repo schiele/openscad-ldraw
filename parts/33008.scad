@@ -20,7 +20,7 @@ function ldraw_lib__33008() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS 3 x 3, Cylinder, Round, UCS X-Wing, exhaust, lamp base, outlet
+// 0 !KEYWORDS 3 x 3, Cylinder, exhaust, lamp base, outlet, Round, UCS X-Wing
 // 
 // 0 !HISTORY 2002-07-27 {unknown} Revised
 // 0 !HISTORY 2002-11-30 [PTadmin] Official Update 2002-05

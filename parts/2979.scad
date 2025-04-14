@@ -13,6 +13,8 @@ function ldraw_lib__2979() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
+// 
 // 0 !HISTORY 2010-12-31 [PTadmin] Official Update 2010-03
 // 0 !HISTORY 2013-03-02 [MagFors] Changed colour 383 to 494 (real metal)
 // 0 !HISTORY 2013-07-21 [PTadmin] Official Update 2013-01

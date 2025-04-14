@@ -13,6 +13,7 @@ function ldraw_lib__73200pc44() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS bricklink 970c00pb0099, CMF, Punk Rocker, Rock Band Drummer
 // 0 !KEYWORDS Series 4, set 850486
 // 

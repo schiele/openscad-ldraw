@@ -12,6 +12,8 @@ function ldraw_lib__57028a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
+// 
 // 0 !HISTORY 2013-07-21 [PTadmin] Official Update 2013-01
 // 0 !HISTORY 2022-02-12 [MagFors] Obsoleted due to bad geometry
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04

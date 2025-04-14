@@ -7,7 +7,7 @@ function ldraw_lib__40396() = [
 // 0 Name: 40396.dat
 // 0 Author: Andy Westrate [westrate]
 // 0 !LDRAW_ORG Shortcut UPDATE 2011-02
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 !HELP Peg hole at tip located at <48 0 59.5>
 // 
@@ -15,7 +15,7 @@ function ldraw_lib__40396() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS elephant, Trunk
+// 0 !KEYWORDS BrickLink 40396c01, elephant, Trunk
 // 
 // 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02
 // 

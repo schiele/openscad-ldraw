@@ -12,6 +12,10 @@ function ldraw_lib__4864ap02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS Rebrickable 4864apr0008
+// 
+// 0 !PREVIEW 16 0 0 0 -1 0 0 0 1 0 0 0 -1
+// 
 // 0 !HISTORY 2002-12-23 [glbarnes] Split Quads
 // 0 !HISTORY 2003-07-02 [Steffen] BFCed; subfiled; deleted lines around cross
 // 0 !HISTORY 2003-12-30 [sbliss] reworked the pattern as a mesh

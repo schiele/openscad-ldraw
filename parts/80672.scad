@@ -11,6 +11,7 @@ function ldraw_lib__80672() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS accessory pack, Airport, helipad, runway, Space, Tee-plate
 // 
 // 0 !HISTORY 1997-12-05 [PTadmin] Official Update 1997-17

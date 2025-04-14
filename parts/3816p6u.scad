@@ -13,6 +13,8 @@ function ldraw_lib__3816p6u() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
+// 
 // 0 !HISTORY 2010-12-31 [PTadmin] Official Update 2010-03
 // 0 !HISTORY 2020-05-31 [cwdee] Obsoleted due to bad geometry
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01

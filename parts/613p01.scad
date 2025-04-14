@@ -25,11 +25,13 @@ function ldraw_lib__613p01() = [
 // 0 Name: 613p01.dat
 // 0 Author: Leonardo Zide [leozide]
 // 0 !LDRAW_ORG Part UPDATE 2024-02
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
+// 
+// 0 !KEYWORDS Rebrickable 613pr0001
 // 
 // 0 !HISTORY 1999-12-31 [PTadmin] Official Update 1999-06
 // 0 !HISTORY 2007-07-16 [PTadmin] Header formatted for Contributor Agreement

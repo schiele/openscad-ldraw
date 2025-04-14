@@ -11,6 +11,7 @@ function ldraw_lib__23167() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS Dark Side Developer Kit, Mindstorms
 // 
 // 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01

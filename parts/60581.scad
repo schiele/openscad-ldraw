@@ -11,6 +11,8 @@ function ldraw_lib__60581() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !PREVIEW 16 0 0 0 -1 0 0 0 1 0 0 0 -1
+// 
 // 0 !HISTORY 2009-10-13 {LEGO Universe Team} Original part shape
 // 0 !HISTORY 2009-12-18 [Rolf] File preparation for LDraw Parts Tracker
 // 0 !HISTORY 2010-04-05 [PTadmin] Official Update 2010-01

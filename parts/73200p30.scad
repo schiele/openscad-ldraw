@@ -13,6 +13,7 @@ function ldraw_lib__73200p30() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS Bricklink 970c03pb04, Castaway, Pirates, Set 6241, Set 6299
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01

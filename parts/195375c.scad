@@ -6,17 +6,19 @@ function ldraw_lib__195375c() = [
 // 0 Sticker  2.3 x  1.9 with Oven on Transparent Background
 // 0 Name: 195375c.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
-// 0 !LDRAW_ORG Part UPDATE 2024-11
+// 0 !LDRAW_ORG Part UPDATE 2025-03
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Kitchen, Set 6374
+// 0 !KEYWORDS Bricklink 6374.1stk01, Brickowl 219870, Kitchen, Rebrickable 195375
+// 0 !KEYWORDS Set 6374
 // 
 // 0 !HISTORY 2024-12-30 [OrionP] Official Update 2024-11
-// 
+// 0 !HISTORY 2025-03-08 [Holly-Wood] Added keywords
+// 0 !HISTORY 2025-03-30 [OrionP] Official Update 2025-03
 // 
 // 1 16 0 -0.25 0 19 0 0 0 0.25 0 0 0 23 box5-12.dat
   [1,16,0,-0.25,0,19,0,0,0,0.25,0,0,0,23, ldraw_lib__box5_12()],

@@ -13,6 +13,7 @@ function ldraw_lib__73200pc97() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS Bricklink 970c110pb01, Chicken Suit, CMF, Easter, Series 9
 // 0 !KEYWORDS set 5004468
 // 

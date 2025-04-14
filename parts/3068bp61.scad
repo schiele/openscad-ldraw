@@ -5,11 +5,13 @@ function ldraw_lib__3068bp61() = [
 // 0 Name: 3068bp61.dat
 // 0 Author: Bernd Broich [bbroich]
 // 0 !LDRAW_ORG Part UPDATE 2002-02
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
+// 
+// 0 !KEYWORDS BrickLink 3068p61, Rebrickable 3068bpr0067
 // 
 // 0 !HISTORY 2002-04-03 [sbliss] Converted to groove, made BFC compliant
 // 0 !HISTORY 2002-04-25 [PTadmin] Official Update 2002-02

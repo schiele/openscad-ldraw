@@ -13,6 +13,7 @@ function ldraw_lib__3816bpba() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS 2006, Batman, bricklink 970d03pb01, Harley Quinn, set 7886
 // 
 // 0 !HISTORY 2013-12-23 [MagFors] Original design as 3816pba

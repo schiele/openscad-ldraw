@@ -14,7 +14,7 @@ function ldraw_lib__190735a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Action Figure, Arctic, Polar Copter, Technic, set 8640
+// 0 !KEYWORDS Action Figure, Arctic, Polar Copter, set 8640, Technic
 // 
 // 0 !HISTORY 2009-05-02 [PTadmin] Official Update 2009-01
 // 0 !HISTORY 2016-07-01 [cwdee] Updated description

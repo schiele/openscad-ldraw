@@ -5,7 +5,7 @@ function ldraw_lib__40243c01() = [
 // 0 Name: 40243c01.dat
 // 0 Author: Andy Westrate [westrate]
 // 0 !LDRAW_ORG Shortcut UPDATE 2010-03
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 !HELP For a complete 8 brick high staircase, use:
 // 0 !HELP 1 8 0 -8 0 1 0 0 0 1 0 0 0 1 2476.dat

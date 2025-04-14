@@ -15,7 +15,7 @@ function ldraw_lib__92244p13() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Farran Leafshade, Set 41076, Elves
+// 0 !KEYWORDS Elves, Farran Leafshade, Set 41076
 // 
 // 0 !HISTORY 2023-04-17 [OrionP] Official Update 2023-02
 // 

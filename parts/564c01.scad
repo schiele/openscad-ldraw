@@ -9,11 +9,13 @@ function ldraw_lib__564c01() = [
 // 0 Name: 564c01.dat
 // 0 Author: Guy Vivan [guyvivan]
 // 0 !LDRAW_ORG Shortcut UPDATE 2022-04
-// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
+// 
+// 0 !CATEGORY Sticker Shortcut
 // 
 // 0 !HISTORY 2012-01-07 [Steffen] replaced color 383 by 494
 // 0 !HISTORY 2014-06-21 [PTadmin] Official Update 2014-01

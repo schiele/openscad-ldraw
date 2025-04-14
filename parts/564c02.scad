@@ -15,6 +15,8 @@ function ldraw_lib__564c02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Sticker Shortcut
+// 
 // 0 !HISTORY 2024-01-29 [OrionP] Official Update 2024-01
 // 
 // 

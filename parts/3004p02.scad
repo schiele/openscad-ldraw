@@ -14,6 +14,8 @@ function ldraw_lib__3004p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
+// 
 // 0 !HISTORY 2009-05-02 [PTadmin] Official Update 2009-01
 // 0 !HISTORY 2013-03-13 [cwdee] Standardsise (Obsolete) syntax
 // 0 !HISTORY 2013-07-21 [PTadmin] Official Update 2013-01

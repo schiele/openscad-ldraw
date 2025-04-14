@@ -11,7 +11,7 @@ function ldraw_lib__3068bp8b() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS creator expert, desserts, entrées, hors d'oeuvres, modular building
+// 0 !KEYWORDS creator expert, desserts, entrÃ©es, hors d'oeuvres, modular building
 // 0 !KEYWORDS parisian restaurant, set 10243
 // 
 // 0 !HISTORY 2015-10-11 [PTadmin] Official Update 2015-01

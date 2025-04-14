@@ -22,7 +22,7 @@ function ldraw_lib__79768() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS  Crane,  pillar,  support, A-frame
+// 0 !KEYWORDS A-frame, Crane, pillar, support
 // 
 // 0 !HISTORY 2023-11-19 [OrionP] Official Update 2023-06
 // 

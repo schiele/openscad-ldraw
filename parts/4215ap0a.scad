@@ -12,7 +12,9 @@ function ldraw_lib__4215ap0a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS bricklink 4215apx3, rescue, Set 6387
+// 0 !KEYWORDS bricklink 4215apx3, Rebrickable 4215apr0018, rescue, Set 6387
+// 
+// 0 !PREVIEW 16 0 0 0 -1 0 0 0 1 0 0 0 -1
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 

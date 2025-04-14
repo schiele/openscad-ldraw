@@ -12,8 +12,8 @@ function ldraw_lib__16709p0j() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickowl 726320, Disney, Pixar, Rebrickable 16709pats02, Russell
-// 0 !KEYWORDS Set 43217, Up, Bricklink 41879pb028
+// 0 !KEYWORDS Bricklink 41879pb028, Brickowl 726320, Disney, Pixar
+// 0 !KEYWORDS Rebrickable 16709pats02, Russell, Set 43217, Up
 // 
 // 0 !HISTORY 2023-06-24 [OrionP] Official Update 2023-03
 // 

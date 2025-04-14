@@ -4,20 +4,22 @@ use <16001p00.scad>
 use <3820.scad>
 use <973pxh.scad>
 function ldraw_lib__16360pxh() = [
-// 0 Minifig Torso with Arms and Hands with White Arms, Medium Lavender Ruffles and Button Pattern
+// 0 Minifig Torso with Dual Mould Arms and Hands with White Arms, Medium Lavender Ruffles and Button Pattern
 // 0 Name: 16360pxh.dat
 // 0 Author: Magnus Forsberg [MagFors]
-// 0 !LDRAW_ORG Shortcut UPDATE 2024-09
+// 0 !LDRAW_ORG Shortcut UPDATE 2025-03
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb2429c01, Brickowl 247755, Daisy Duck, Disney
+// 0 !KEYWORDS Bricklink 973pb2429c01, Daisy Duck, Disney
 // 0 !KEYWORDS Rebrickable 973g36c27h27pr3506, set 71040
 // 
 // 0 !HISTORY 2024-10-27 [OrionP] Official Update 2024-09
+// 0 !HISTORY 2025-03-16 [MagFors] Update description
+// 0 !HISTORY 2025-03-30 [OrionP] Official Update 2025-03
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 973pxh.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__973pxh()],

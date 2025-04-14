@@ -13,6 +13,8 @@ function ldraw_lib__3815c8i() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
+// 0 !CATEGORY Obsolete
+// 
 // 0 !HISTORY 2015-12-30 [PTadmin] Official Update 2015-02
 // 0 !HISTORY 2020-07-09 [cwdee] Obsoleted due to bad leg geometry
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01

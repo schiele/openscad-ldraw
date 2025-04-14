@@ -15,7 +15,7 @@ function ldraw_lib__u9150p02c03() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Leo Löwe, Lionel Lion, Set 3644, Set 3645, set 3647
+// 0 !KEYWORDS Leo LÃ¶we, Lionel Lion, Set 3644, Set 3645, set 3647
 // 
 // 0 !HISTORY 2011-07-25 [PTadmin] Official Update 2011-01
 // 

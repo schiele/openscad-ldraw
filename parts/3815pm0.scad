@@ -11,6 +11,7 @@ function ldraw_lib__3815pm0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS Lord of the Rings, Uruk-hai
 // 
 // 0 !HISTORY 2012-12-28 [PTadmin] Official Update 2012-03

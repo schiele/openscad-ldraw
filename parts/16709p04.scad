@@ -12,8 +12,8 @@ function ldraw_lib__16709p04() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Dobby, Harry Potter, Rebrickable 16709pat02, Set 75968
-// 0 !KEYWORDS Bricklink 41879pb014
+// 0 !KEYWORDS Bricklink 41879pb014, Dobby, Harry Potter, Rebrickable 16709pat02
+// 0 !KEYWORDS Set 75968
 // 
 // 0 !HISTORY 2023-04-17 [OrionP] Official Update 2023-02
 // 

@@ -17,8 +17,8 @@ function ldraw_lib__73200bp42() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Kingdoms, set 10223, set 7946, Bricklink 970c00pb0063
-// 0 !KEYWORDS Brickowl 282204, Rebrickable 970c10pr0153, Set 7952, Castle
+// 0 !KEYWORDS Bricklink 970c00pb0063, Brickowl 282204, Castle, Kingdoms
+// 0 !KEYWORDS Rebrickable 970c10pr0153, Set 10223, Set 7946, Set 7952
 // 
 // 0 !HISTORY 2023-03-18 [ejboer] Original pattern design
 // 0 !HISTORY 2023-03-18 [Holly-Wood] Adapted to corrected geometry

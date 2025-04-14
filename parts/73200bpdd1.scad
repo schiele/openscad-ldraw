@@ -17,8 +17,9 @@ function ldraw_lib__73200bpdd1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickowl 660651, CMF, Collectible Minifigures, Harry Potter Series 2
-// 0 !KEYWORDS Rebrickable 970c05pr9967, Set 71028, Bricklink 970c00pb1125
+// 0 !KEYWORDS Bricklink 970c00pb1125, Brickowl 660651, CMF
+// 0 !KEYWORDS Collectible Minifigures, Harry Potter Series 2
+// 0 !KEYWORDS Rebrickable 970c05pr9967, Set 71028
 // 
 // 0 !HISTORY 2023-06-24 [OrionP] Official Update 2023-03
 // 

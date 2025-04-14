@@ -12,6 +12,8 @@ function ldraw_lib__243c02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
+// 
 // 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02
 // 0 !HISTORY 2018-03-14 [Holly-Wood] Changed description, changed axle color
 // 0 !HISTORY 2019-12-27 [PTadmin] Official Update 2019-03

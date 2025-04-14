@@ -22,6 +22,8 @@ function ldraw_lib__3818pn1() = [
 // 0 !KEYWORDS Bricklink 982pb150, Lloyd, Ninjago, Set 70612, Set 70613, Set 70617
 // 0 !KEYWORDS Set 70618, Set 70620, Set 70656
 // 
+// 0 !PREVIEW 16 0 0 0 -1 0 0 0 1 0 0 0 -1
+// 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3818s01.dat

@@ -13,6 +13,8 @@ function ldraw_lib__4100545() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
+// 
 // 0 !HISTORY 2006-04-17 [cwdee] Created actual colour shortcut
 // 0 !HISTORY 2011-12-10 [Steffen] corrected type, changed color 383 to 494
 // 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02

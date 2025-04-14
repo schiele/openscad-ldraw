@@ -30,7 +30,7 @@ function ldraw_lib__51378() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS 28 x 81, Motorcycle, Street Bike, set 8420, tyre 51379, tyre 51380
+// 0 !KEYWORDS 28 x 81, Motorcycle, set 8420, Street Bike, tyre 51379, tyre 51380
 // 
 // 0 !HISTORY 2020-02-15 [MagFors] unified subfiles, rotated 180 degrees
 // 0 !HISTORY 2023-06-24 [OrionP] Official Update 2023-03

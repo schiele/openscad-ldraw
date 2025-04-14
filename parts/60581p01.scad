@@ -11,8 +11,10 @@ function ldraw_lib__60581p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 60581pb094, Hubble, NASA, Set 21312, Space, Telescope
-// 0 !KEYWORDS Universe, women
+// 0 !KEYWORDS Bricklink 60581pb094, Hubble, NASA, Rebrickable 60581pr0014
+// 0 !KEYWORDS Set 21312, Space, Telescope, Universe, women
+// 
+// 0 !PREVIEW 16 0 0 0 -1 0 0 0 1 0 0 0 -1
 // 
 // 0 !HISTORY 2022-09-15 [PTadmin] Official Update 2022-05
 // 

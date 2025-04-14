@@ -11,8 +11,8 @@ function ldraw_lib__60481ap01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS  Boot,  Brickowl 949761,  Disco Kitty,  Rebrickable 60481pr0001
-// 0 !KEYWORDS  Set 70828,  Set 70848,  Shoe, Bricklink 60481pb007
+// 0 !KEYWORDS Boot, Bricklink 60481pb007, Brickowl 949761, Disco Kitty
+// 0 !KEYWORDS Rebrickable 60481pr0001, Set 70828, Set 70848, Shoe
 // 
 // 0 !HISTORY 2024-01-29 [OrionP] Official Update 2024-01
 // 

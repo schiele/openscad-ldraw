@@ -13,6 +13,7 @@ function ldraw_lib__73200ph0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS Bricklink 970c00pb0595, Fantastic Beasts, Harry Potter
 // 0 !KEYWORDS Newt Scamander, Set 71253
 // 

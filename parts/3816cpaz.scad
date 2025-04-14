@@ -16,8 +16,9 @@ function ldraw_lib__3816cpaz() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickowl 894501, Chima, Crug, Rebrickable 970c19pr0438, set 30252
-// 0 !KEYWORDS set 70002, set 70014, set 70112, set 850910, Bricklink 970c88pb09
+// 0 !KEYWORDS Bricklink 970c88pb09, Brickowl 894501, Chima, Crug
+// 0 !KEYWORDS Rebrickable 970c19pr0438, set 30252, set 70002, set 70014, set 70112
+// 0 !KEYWORDS set 850910
 // 
 // 0 !HISTORY 2023-06-24 [OrionP] Official Update 2023-03
 // 

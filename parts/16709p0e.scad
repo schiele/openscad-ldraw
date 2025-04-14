@@ -12,8 +12,8 @@ function ldraw_lib__16709p0e() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 41879pb009, Rebrickable 16709pats41, Set 71018
-// 0 !KEYWORDS Battle Dwarf
+// 0 !KEYWORDS Battle Dwarf, Bricklink 41879pb009, Rebrickable 16709pats41
+// 0 !KEYWORDS Set 71018
 // 
 // 0 !HISTORY 2023-04-17 [OrionP] Official Update 2023-02
 // 

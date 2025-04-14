@@ -13,7 +13,10 @@ function ldraw_lib__4215ap19() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Action Figure, Arctic, Rescue Unit, Set 8660, Technic
+// 0 !KEYWORDS Action Figure, Arctic, Rebrickable 4215apr0013, Rescue Unit
+// 0 !KEYWORDS Set 8660, Technic
+// 
+// 0 !PREVIEW 16 0 0 0 -1 0 0 0 1 0 0 0 -1
 // 
 // 0 !HISTORY 2004-04-22 [PTadmin] Official Update 2004-02
 // 0 !HISTORY 2007-07-04 [PTadmin] Header formatted for Contributor Agreement

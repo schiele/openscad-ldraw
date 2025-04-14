@@ -2,21 +2,23 @@ use <../lib.scad>
 use <../p/1-4cyli.scad>
 use <s/973s01.scad>
 function ldraw_lib__973pc3() = [
-// 0 Minifig Torso with White Jester Collar, Female Outline and Black Quarters Pattern
+// 0 Minifig Torso with Female White Jester Collar and Black Quarters Pattern
 // 0 Name: 973pc3.dat
 // 0 Author: Evert-Jan Boer [ejboer]
-// 0 !LDRAW_ORG Part UPDATE 2022-06
+// 0 !LDRAW_ORG Part UPDATE 2025-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb1108, DC comics, Harley Quinn, rogues gallery
-// 0 !KEYWORDS Set 6857, Set 71229, supervillain
+// 0 !KEYWORDS Bricklink 973pb1108, BrickOwl 450437, DC comics, Harley Quinn
+// 0 !KEYWORDS Rebrickable 973d28pr1951, rogues gallery, Set 6857, Set 71229
+// 0 !KEYWORDS supervillain
 // 
 // 0 !HISTORY 2022-12-20 [PTadmin] Official Update 2022-06
-// 
+// 0 !HISTORY 2025-01-20 [MagFors] Update description
+// 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],

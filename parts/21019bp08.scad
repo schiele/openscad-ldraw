@@ -17,8 +17,8 @@ function ldraw_lib__21019bp08() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickowl 578055, Rebrickable 970c24pat35, set 21310
-// 0 !KEYWORDS Bricklink 970c00pb0723
+// 0 !KEYWORDS Bricklink 970c00pb0723, Brickowl 578055, Rebrickable 970c24pat35
+// 0 !KEYWORDS set 21310
 // 
 // 0 !HISTORY 2019-12-27 [MagFors] Original design
 // 0 !HISTORY 2023-06-05 [MagFors] Adapted to corrected geometry

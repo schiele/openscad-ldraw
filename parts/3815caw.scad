@@ -13,6 +13,7 @@ function ldraw_lib__3815caw() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS Chima, Worriz
 // 
 // 0 !CMDLINE -c71

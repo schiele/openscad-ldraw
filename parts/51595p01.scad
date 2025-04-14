@@ -9,11 +9,13 @@ function ldraw_lib__51595p01() = [
 // 0 Name: 51595p01.dat
 // 0 Author: Ross Crawford [rosco]
 // 0 !LDRAW_ORG Part UPDATE 2010-03
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
+// 
+// 0 !KEYWORDS BrickLink 30225p01, Rebrickable 51595pr0003
 // 
 // 0 !CMDLINE -c2
 // 

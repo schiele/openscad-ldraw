@@ -16,11 +16,11 @@ function ldraw_lib__20461bp0a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS 20932, Bricklink 970c00pb1023, Bricklink 970c110pb02
+// 0 !KEYWORDS 20932, 73126, Bricklink 970c00pb1023, Bricklink 970c110pb02
 // 0 !KEYWORDS Brickowl 370966, Brickowl 868472, CMF, Collectible Minifigures
 // 0 !KEYWORDS Rebrickable 970c11pat19, Rebrickable 970c38pat19, series 1
-// 0 !KEYWORDS set 21320, Set 21325, set 21335, set 21338, set 71017, set 76384
-// 0 !KEYWORDS Super Heroes, The LEGO Batman Movie, 73126
+// 0 !KEYWORDS set 21320, Set 21325, Set 21335, set 21338, set 71017, set 76384
+// 0 !KEYWORDS Super Heroes, The Lego Batman Movie
 // 
 // 0 !HISTORY 2023-06-24 [OrionP] Official Update 2023-03
 // 

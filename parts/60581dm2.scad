@@ -18,6 +18,8 @@ function ldraw_lib__60581dm2() = [
 // 
 // 0 !CMDLINE -c72
 // 
+// 0 !PREVIEW 16 0 0 0 -1 0 0 0 1 0 0 0 -1
+// 
 // 0 !HISTORY 2014-12-23 [PTadmin] Official Update 2014-02
 // 0 !HISTORY 2020-05-25 [PTadmin] Update description
 // 0 !HISTORY 2020-06-28 [PTadmin] Official Update 2020-01

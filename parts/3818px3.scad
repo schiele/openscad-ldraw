@@ -21,6 +21,8 @@ function ldraw_lib__3818px3() = [
 // 
 // 0 !KEYWORDS Beetlejuice, Bricklink 982pb004, Set 71349
 // 
+// 0 !PREVIEW 16 0 0 0 -1 0 0 0 1 0 0 0 -1
+// 
 // 0 !HISTORY 2024-10-27 [OrionP] Official Update 2024-09
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3818s01.dat

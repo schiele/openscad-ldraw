@@ -11,6 +11,7 @@ function ldraw_lib__3817bp6f() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS Astrobots, set 3928
 // 
 // 0 !HISTORY 2020-06-02 [pneaster] Original pattern design

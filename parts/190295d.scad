@@ -23,7 +23,7 @@ function ldraw_lib__190295d() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Set 379-1, Transport, bus station
+// 0 !KEYWORDS bus station, Set 379-1, Transport
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
 // 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives

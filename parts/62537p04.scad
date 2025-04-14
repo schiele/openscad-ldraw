@@ -4,11 +4,13 @@ use <s/62537s02.scad>
 use <s/62537s03.scad>
 use <s/62537s04.scad>
 use <s/62537s05.scad>
+use <s/62537s06.scad>
+use <s/62537s07.scad>
 function ldraw_lib__62537p04() = [
-// 0 Minifig Jester's Cap with Medium Lilac Half and Medium Lilac Pom Pattern
+// 0 Minifig Jester's Cap with Medium Lilac Left Half and Right Pom Pattern
 // 0 Name: 62537p04.dat
 // 0 Author: Jeff Jones [notmaster]
-// 0 !LDRAW_ORG Part UPDATE 2024-10
+// 0 !LDRAW_ORG Part UPDATE 2025-03
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -20,6 +22,8 @@ function ldraw_lib__62537p04() = [
 // 0 !KEYWORDS Set 70316, Set 70323
 // 
 // 0 !HISTORY 2024-12-01 [OrionP] Official Update 2024-10
+// 0 !HISTORY 2024-12-02 [Cheenzo] Updated to use new subparts and description
+// 0 !HISTORY 2025-03-30 [OrionP] Official Update 2025-03
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\62537s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__62537s01()],
@@ -31,6 +35,10 @@ function ldraw_lib__62537p04() = [
   [1,85,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__62537s04()],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\62537s05.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__62537s05()],
+// 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\62537s06.dat
+  [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__62537s06()],
+// 1 85 0 0 0 1 0 0 0 1 0 0 0 1 s\62537s07.dat
+  [1,85,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__62537s07()],
 ];
 module ldraw_lib__62537p04(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
     makepoly(ldraw_lib__62537p04(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);

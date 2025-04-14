@@ -16,8 +16,8 @@ function ldraw_lib__3817cps1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickowl 544300, Rebrickable 970c03pr1386, Set 75179, Set 75196
-// 0 !KEYWORDS Set 75216, Set 75256, Set 75264, Star Wars, Bricklink 970c00pb0790
+// 0 !KEYWORDS Bricklink 970c00pb0790, Brickowl 544300, Rebrickable 970c03pr1386
+// 0 !KEYWORDS Set 75179, Set 75196, Set 75216, Set 75256, Set 75264, Star Wars
 // 
 // 0 !HISTORY 2023-06-24 [OrionP] Official Update 2023-03
 // 

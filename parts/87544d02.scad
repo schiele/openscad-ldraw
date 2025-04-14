@@ -15,6 +15,8 @@ function ldraw_lib__87544d02() = [
 // 0 !CATEGORY Sticker Shortcut
 // 0 !KEYWORDS Bricklink 87544pb017, Friends, Set 3185, Summer riding camp
 // 
+// 0 !PREVIEW 16 0 0 0 -1 0 0 0 1 0 0 0 -1
+// 
 // 0 !HISTORY 2024-09-30 [OrionP] Official Update 2024-08
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 87544.dat

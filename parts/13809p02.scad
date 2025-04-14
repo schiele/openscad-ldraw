@@ -12,8 +12,8 @@ function ldraw_lib__13809p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickowl 818695, Legends of Chima, Rebrickable 13809pr0002
-// 0 !KEYWORDS Set 70224, Breezor, Bricklink 13809pb02
+// 0 !KEYWORDS Breezor, Bricklink 13809pb02, Brickowl 818695, Legends of Chima
+// 0 !KEYWORDS Rebrickable 13809pr0002, Set 70224
 // 
 // 0 !HISTORY 2023-04-17 [OrionP] Official Update 2023-02
 // 

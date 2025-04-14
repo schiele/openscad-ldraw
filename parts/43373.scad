@@ -22,7 +22,7 @@ function ldraw_lib__43373() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Harry Potter, Ring, basketball, quidditch
+// 0 !KEYWORDS basketball, Harry Potter, quidditch, Ring
 // 
 // 0 !HISTORY 2013-07-21 [PTadmin] Official Update 2013-01
 // 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives

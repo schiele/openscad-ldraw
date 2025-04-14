@@ -7,20 +7,22 @@ function ldraw_lib__3626cpd89() = [
 // 0 Minifig Head Female with Balaclava, Medium Nougat Face, Beauty Mark and Crooked Smile Pattern
 // 0 Name: 3626cpd89.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
-// 0 !LDRAW_ORG Part UPDATE 2020-01
+// 0 !LDRAW_ORG Part UPDATE 2025-03
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Batman Movie, Brickshelf 3626cpb1982
-// 0 !KEYWORDS Collectibles Minifig Batman Movie Series 2, Vacation Batgirl
+// 0 !KEYWORDS Batman Movie, Batman Movie Series 2, BrickLink 3626pb1982
+// 0 !KEYWORDS Brickshelf 3626cpb1982, CMF, Rebrickable 3626cpr2423
+// 0 !KEYWORDS Vacation Batgirl
 // 
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
 // 0 !HISTORY 2020-05-10 [cwdee] Update colour name in description
 // 0 !HISTORY 2020-06-28 [PTadmin] Official Update 2020-01
-// 
+// 0 !HISTORY 2024-11-13 [Lego-Manfred] Reference added
+// 0 !HISTORY 2025-03-30 [OrionP] Official Update 2025-03
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3626cs02.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626cs02()],

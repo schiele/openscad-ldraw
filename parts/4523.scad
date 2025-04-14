@@ -25,7 +25,7 @@ function ldraw_lib__4523() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Neckwear
-// 0 !KEYWORDS Bin, Bucket, backback, manger, trough
+// 0 !KEYWORDS backback, Bin, Bucket, manger, trough
 // 
 // 0 !HISTORY 1999-12-31 [PTadmin] Official Update 1999-06
 // 0 !HISTORY 2000-05-07 [PTadmin] Official Update 2000-01

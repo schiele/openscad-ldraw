@@ -20,7 +20,7 @@ function ldraw_lib__522() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !CATEGORY Minifig Neckwear
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS Cloak, Drape, Harry Potter, Neckwear, Poncho, Shawl, Star Wars
 // 
 // 0 !HISTORY 2002-08-18 [PTadmin] Official Update 2002-04

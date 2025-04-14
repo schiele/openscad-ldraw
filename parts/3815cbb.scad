@@ -13,6 +13,8 @@ function ldraw_lib__3815cbb() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
+// 
 // 0 !HISTORY 2013-12-23 [PTadmin] Official Update 2013-02
 // 0 !HISTORY 2020-06-22 [cwdee] Obsoleted due to bad geometry
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01

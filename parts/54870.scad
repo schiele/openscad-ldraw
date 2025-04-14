@@ -11,6 +11,7 @@ function ldraw_lib__54870() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS Set 4893
 // 
 // 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01

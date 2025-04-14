@@ -12,6 +12,7 @@ function ldraw_lib__4107539() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS clutch, Mindstorms, slip
 // 
 // 0 !HISTORY 2000-09-30 [PTadmin] Official Update 2000-02

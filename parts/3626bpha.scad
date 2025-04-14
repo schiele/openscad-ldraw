@@ -8,14 +8,15 @@ function ldraw_lib__3626bpha() = [
 // 0 Name: 3626bpha.dat
 // 0 Author: Andy Westrate [westrate]
 // 0 !LDRAW_ORG Part UPDATE 2005-01
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Albus Dumbledore, Harry Potter, Headmaster
+// 0 !KEYWORDS Albus Dumbledore, BrickLink 3626pb0003, Harry Potter, Headmaster
 // 0 !KEYWORDS Hogwarts School of Witchcraft and Wizardry, professor
+// 0 !KEYWORDS Rebrickable 3626bpr0377
 // 
 // 0 !CMDLINE -C14
 // 

@@ -19,7 +19,7 @@ function ldraw_lib__4529() = [
   [0,"BFC","CW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS Cooking, Cookware, Homemaker, Kitchen, kettle, pan, pot, town
+// 0 !KEYWORDS Cooking, Cookware, Homemaker, kettle, Kitchen, pan, pot, town
 // 0 !KEYWORDS utensil
 // 
 // 0 !CMDLINE -c0

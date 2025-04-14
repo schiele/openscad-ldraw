@@ -22,7 +22,7 @@ function ldraw_lib__45522() = [
 // 0 Plate  6 x  6 x  0.667 with 4 Studs and Card-holder - "SPORTS"
 // 0 Name: 45522.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
-// 0 !LDRAW_ORG Part UPDATE 2024-08
+// 0 !LDRAW_ORG Part UPDATE 2025-03
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -34,6 +34,8 @@ function ldraw_lib__45522() = [
 // 
 // 0 !HISTORY 2024-08-27 [GeraldLasser] Completely re-written to optimize Prims and remove overlaps, original by John Riley [jriley]
 // 0 !HISTORY 2024-09-30 [OrionP] Official Update 2024-08
+// 0 !HISTORY 2025-03-26 [OrionP] Fix incorrect color usage
+// 0 !HISTORY 2025-03-30 [OrionP] Official Update 2025-03
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\45522s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__45522s01()],
@@ -207,10 +209,10 @@ function ldraw_lib__45522() = [
   [0,"BFC","INVERTNEXT"],
 // 1 16 -19.75 0 -41 0 0 -4.5 0 .5 0 1 0 0 box4-4a.dat
   [1,16,-19.75,0,-41,0,0,-4.5,0,.5,0,1,0,0, ldraw_lib__box4_4a()],
-// 2 16 -15.25 0 -42 -15.25 .5 -42
-  [2,16,-15.25,0,-42,-15.25,.5,-42],
-// 2 16 -15.25 0 -43 -15.25 .5 -43
-  [2,16,-15.25,0,-43,-15.25,.5,-43],
+// 2 24 -15.25 0 -42 -15.25 .5 -42
+  [2,24,-15.25,0,-42,-15.25,.5,-42],
+// 2 24 -15.25 0 -43 -15.25 .5 -43
+  [2,24,-15.25,0,-43,-15.25,.5,-43],
 // 1 16 -15.25 .5 -43 0 0 2 0 1 0 -2 0 0 1-4edge.dat
   [1,16,-15.25,.5,-43,0,0,2,0,1,0,-2,0,0, ldraw_lib__1_4edge()],
 // 1 16 -15.25 0 -43 0 0 2 0 1 0 -2 0 0 1-4edge.dat
@@ -237,8 +239,8 @@ function ldraw_lib__45522() = [
   [0,"BFC","INVERTNEXT"],
 // 1 16 -23.25 .25 -44 -1 0 0 0 .25 0 0 0 1 box3-7a.dat
   [1,16,-23.25,.25,-44,-1,0,0,0,.25,0,0,0,1, ldraw_lib__box3_7a()],
-// 2 16 -22.25 0 -45 -22.25 .5 -45
-  [2,16,-22.25,0,-45,-22.25,.5,-45],
+// 2 24 -22.25 0 -45 -22.25 .5 -45
+  [2,24,-22.25,0,-45,-22.25,.5,-45],
 // 
 // 3 16 -22.25 0 -43 -15.25 0 -43 -15.25 0 -42
   [3,16,-22.25,0,-43,-15.25,0,-43,-15.25,0,-42],

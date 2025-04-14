@@ -18,8 +18,8 @@ function ldraw_lib__21019bp03() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS Bricklink 970c00pb0516, Brickowl 573855, CMF
-// 0 !KEYWORDS Collectible Minifigures, Disney, Rebrickable 970c27pat38, set 10773
-// 0 !KEYWORDS set 10775, set 10780, set 71040, Donald Duck
+// 0 !KEYWORDS Collectible Minifigures, Disney, Donald Duck
+// 0 !KEYWORDS Rebrickable 970c27pat38, Set 10773, Set 10775, set 10780, set 71040
 // 
 // 0 !HISTORY 2019-12-27 [MagFors] Original design
 // 0 !HISTORY 2023-06-05 [MagFors] Adapted to corrected geometry

@@ -13,6 +13,7 @@ function ldraw_lib__73200p6f() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS Astrobots, Biff Starling, Bricklink 970c00pb0027
 // 0 !KEYWORDS Mars Exploration Rover, promotional, Sandy Moondust, set 3928
 // 0 !KEYWORDS set 3929

@@ -20,7 +20,7 @@ function ldraw_lib__4247() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !CATEGORY Door
+// 0 !CATEGORY Obsolete
 // 
 // 0 !HISTORY 2010-12-31 [PTadmin] Official Update 2010-03
 // 0 !HISTORY 2020-11-20 [cwdee] Obsoleted due to bad geometry

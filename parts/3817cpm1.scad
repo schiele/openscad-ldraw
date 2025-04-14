@@ -11,9 +11,9 @@ function ldraw_lib__3817cpm1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Armor, Bricklink 970c120pb01, Brickowl 849135, Éomer
+// 0 !KEYWORDS Ãomer, Armor, Bricklink 970c120pb01, Brickowl 849135
 // 0 !KEYWORDS Lord of the Rings, Rebrickable 970c07pr0335, set 9471, set 9474
-// 0 !KEYWORDS Théoden
+// 0 !KEYWORDS ThÃ©oden
 // 
 // 0 !CMDLINE -c308
 // 

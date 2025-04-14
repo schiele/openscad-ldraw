@@ -11,13 +11,13 @@ function ldraw_lib__973p3f() = [
 // 0 Name: 973p3f.dat
 // 0 Author: Andy Westrate [westrate]
 // 0 !LDRAW_ORG Part UPDATE 2012-02
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Imperial Armada, Pirates, Spaniard
+// 0 !KEYWORDS BrickLink 973pb0019, Imperial Armada, Pirates, Spaniard
 // 
 // 0 !HISTORY 2010-04-05 [PTadmin] Official Update 2010-01
 // 0 !HISTORY 2012-04-08 [BlackBrick89] General improvements / inlined subfile

@@ -17,9 +17,8 @@ function ldraw_lib__20460bp01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS 73126, Bricklink 970c00pb0420, Brickowl 504350
+// 0 !KEYWORDS 20932, 73126, Bricklink 970c00pb0420, Brickowl 504350
 // 0 !KEYWORDS Rebrickable 970c28pat22, set 76037, set 76046, Spiderman, Superman
-// 0 !KEYWORDS 20932
 // 
 // 0 !HISTORY 2019-12-27 [Philo] Original design
 // 0 !HISTORY 2023-06-05 [MagFors] Adapted to corrected geometry

@@ -10,14 +10,14 @@ function ldraw_lib__3626bp3j() = [
 // 0 Name: 3626bp3j.dat
 // 0 Author: Andy Westrate [westrate]
 // 0 !LDRAW_ORG Part UPDATE 2024-07
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626bp3j, Brickowl 986427, islanders, natives
-// 0 !KEYWORDS Rebrickable 3626bpr0015, set 6262, set 6278, set 6292
+// 0 !KEYWORDS BrickLink 3626p3j, islanders, natives, Rebrickable 3626bpr0015
+// 0 !KEYWORDS set 6262, set 6278, set 6292
 // 
 // 0 !CMDLINE -c14
 // 

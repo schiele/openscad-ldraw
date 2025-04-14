@@ -12,6 +12,8 @@ function ldraw_lib__3188() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !PREVIEW 16 0 0 0 -1 0 0 0 1 0 0 0 -1
+// 
 // 0 !HISTORY 1998-06-20 [PTadmin] Official Update 1998-06
 // 0 !HISTORY 2003-01-28 [sbliss] Completed header; BFC'ed
 // 0 !HISTORY 2004-03-02 [PTadmin] Official Update 2004-01

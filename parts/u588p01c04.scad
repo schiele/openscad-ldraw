@@ -16,7 +16,7 @@ function ldraw_lib__u588p01c04() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS Eduardo el Elefante, Edward Elefant, Edward Elephant, Elton Elephant
-// 0 !KEYWORDS Ollie Olifant, Pirouette l'éléphant, Set 3601, Set 3678
+// 0 !KEYWORDS Ollie Olifant, Pirouette l'Ã©lÃ©phant, Set 3601, Set 3678
 // 
 // 0 !HISTORY 2011-07-25 [PTadmin] Official Update 2011-01
 // 

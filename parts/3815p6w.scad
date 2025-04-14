@@ -12,6 +12,7 @@ function ldraw_lib__3815p6w() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS Android, Invaders, UFO
 // 
 // 0 !HISTORY 2010-12-31 [PTadmin] Official Update 2010-03

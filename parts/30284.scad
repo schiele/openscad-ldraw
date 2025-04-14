@@ -16,7 +16,7 @@ function ldraw_lib__30284() = [
 // 0 Name: 30284.dat
 // 0 Author: Andy Westrate [westrate]
 // 0 !LDRAW_ORG Part UPDATE 2012-03
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 !HELP snowshoes rotated 9 degrees
 // 0 !HELP 1 16 10 40 -1 0.9877 0 -0.1564 0 1 0 0.1564 0 0.9877 30284.dat

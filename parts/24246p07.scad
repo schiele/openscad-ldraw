@@ -5,20 +5,24 @@ use <../p/4-4disc.scad>
 use <../p/4-4ndis.scad>
 use <s/24246s02.scad>
 function ldraw_lib__24246p07() = [
-// 0 Tile  1 x  1 with Red Disc and Light Grey Arc Pattern
+// 0 Tile  1 x  1 with Rounded End with Red Disc and Light Grey Arc Pattern
 // 0 Name: 24246p07.dat
 // 0 Author: Massimo Maso [Sirio]
-// 0 !LDRAW_ORG Part UPDATE 2023-03
+// 0 !LDRAW_ORG Part UPDATE 2025-03
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Pagani, Set 76915, Speed Champions, Utopia
+// 0 !KEYWORDS Bricklink 24246pb046, Pagani, Rebrickable 24246pr0042, Set 76915
+// 0 !KEYWORDS Speed Champions, Utopia
 // 
 // 0 !HISTORY 2023-06-24 [OrionP] Official Update 2023-03
-// 
+// 0 !HISTORY 2025-02-27 [Lego-Manfred] References added
+// 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
+// 0 !HISTORY 2025-03-25 [MagFors] Update description
+// 0 !HISTORY 2025-03-30 [OrionP] Official Update 2025-03
 // 
 // 0 // Subparts
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\24246s02.dat

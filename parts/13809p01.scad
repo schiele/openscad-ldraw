@@ -15,8 +15,8 @@ function ldraw_lib__13809p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS CMF, Collectible Minifigures, Rebrickable 13809pr0001, Series 11
-// 0 !KEYWORDS Bricklink 13809pb01, Brickowl 715084
+// 0 !KEYWORDS Bricklink 13809pb01, Brickowl 715084, CMF, Collectible Minifigures
+// 0 !KEYWORDS Rebrickable 13809pr0001, Series 11
 // 
 // 0 !HISTORY 2023-04-17 [OrionP] Official Update 2023-02
 // 

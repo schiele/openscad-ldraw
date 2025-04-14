@@ -13,8 +13,8 @@ function ldraw_lib__98138py0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 98138pb369, Competizione, Ferrari, Rebrickable 98138pr0349
-// 0 !KEYWORDS Set 76914, Speed Champions, 812
+// 0 !KEYWORDS 812, Bricklink 98138pb369, Competizione, Ferrari
+// 0 !KEYWORDS Rebrickable 98138pr0349, Set 76914, Speed Champions
 // 
 // 0 !HISTORY 2023-04-17 [OrionP] Official Update 2023-02
 // 

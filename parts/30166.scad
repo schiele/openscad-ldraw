@@ -12,7 +12,6 @@ function ldraw_lib__30166() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS
 // 
 // 0 !HISTORY 2023-08-25 [OrionP] Official Update 2023-04
 // 

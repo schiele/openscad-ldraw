@@ -14,6 +14,7 @@ function ldraw_lib__3816bpde() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS Bricklink 970c11pb06, Mad Scientist, set 1382, set 852331
 // 
 // 0 !HISTORY 2009-12-29 [westrate] Original design as 3816pde

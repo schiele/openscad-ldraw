@@ -15,7 +15,7 @@ function ldraw_lib__u9107p02c02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bakse Bjørn, Billy Bear, Peter Panda, Peter Pandabär, Set 3666
+// 0 !KEYWORDS Bakse BjÃ¸rn, Billy Bear, Peter Panda, Peter PandabÃ¤r, Set 3666
 // 0 !KEYWORDS Set 3670, Teddie
 // 
 // 0 !HISTORY 2010-12-31 [PTadmin] Official Update 2010-03

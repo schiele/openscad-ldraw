@@ -19,9 +19,9 @@ function ldraw_lib__3816cpde() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickowl 887982, CMF, Collectible Minifigures, Mad Scientist
-// 0 !KEYWORDS Rebrickable 970c03pr0003, set 1382, set 852331, Studio
-// 0 !KEYWORDS Bricklink 970c11pb06
+// 0 !KEYWORDS Bricklink 970c11pb06, Brickowl 887982, CMF, Collectible Minifigures
+// 0 !KEYWORDS Mad Scientist, Rebrickable 970c03pr0003, set 1382, set 852331
+// 0 !KEYWORDS Studio
 // 
 // 0 !HISTORY 2009-12-29 [westrate] Original design as 3816pde
 // 0 !HISTORY 2020-06-27 [MagFors] Adapted to corrected geometry

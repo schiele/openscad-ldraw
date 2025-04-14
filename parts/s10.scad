@@ -11,6 +11,8 @@ function ldraw_lib__s10() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Sticker Shortcut
+// 
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04
 // 
 // 

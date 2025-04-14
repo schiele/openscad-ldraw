@@ -9,13 +9,14 @@ function ldraw_lib__48288p03() = [
 // 0 Name: 48288p03.dat
 // 0 Author: Andy Westrate [westrate]
 // 0 !LDRAW_ORG Part UPDATE 2024-02
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Blue Line, Face Off, Hockey, NHL
+// 0 !KEYWORDS Blue Line, BrickLink 48288pb02, Face Off, Hockey, NHL
+// 0 !KEYWORDS Rebrickable 48288pr0002
 // 
 // 0 !HISTORY 2009-05-02 [PTadmin] Official Update 2009-01
 // 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives

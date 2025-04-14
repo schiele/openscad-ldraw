@@ -17,6 +17,8 @@ function ldraw_lib__739p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
+// 
 // 0 !HISTORY 2002-08-18 [PTadmin] Official Update 2002-04
 // 0 !HISTORY 2003-08-01 [Steffen] made use of "stand" subfile
 // 0 !HISTORY 2003-11-05 [fwcain] subfiled the octagon...

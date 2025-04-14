@@ -13,6 +13,7 @@ function ldraw_lib__73200ps5() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS belt, Blaster, Bricklink 970c00pb0023, Classic Trilogy, firearm, gun
 // 0 !KEYWORDS Han Solo, holster, Luke Skywalker, Pirate, Set 6212, smuggler
 // 0 !KEYWORDS Star Wars, Weapon

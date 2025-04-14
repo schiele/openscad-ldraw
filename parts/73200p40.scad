@@ -13,6 +13,7 @@ function ldraw_lib__73200p40() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS Bricklink 970c00pb0068, Castle, Set 7952, Wizard
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01

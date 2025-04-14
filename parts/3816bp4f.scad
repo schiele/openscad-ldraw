@@ -11,6 +11,7 @@ function ldraw_lib__3816bp4f() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS archer, Armor, belt, Castle, knight, Knights Kingdom, leggings
 // 0 !KEYWORDS set 4817
 // 
