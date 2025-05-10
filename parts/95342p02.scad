@@ -14,7 +14,7 @@ function ldraw_lib__95342p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 95342pb02, Brickowl 770676, Camilla, CMF, Collectable
+// 0 !KEYWORDS Bricklink 95342pb02, Camilla, CMF, Collectable
 // 0 !KEYWORDS Rebrickable 95342pr0002, set 71033, The Muppets
 // 
 // 0 !HISTORY 2024-10-27 [OrionP] Official Update 2024-09

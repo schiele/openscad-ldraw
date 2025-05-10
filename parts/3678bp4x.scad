@@ -12,7 +12,7 @@ function ldraw_lib__3678bp4x() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS BrickLink 3678bpb015, Castle, civilian, fantasy
-// 0 !KEYWORDS Rebrickable 3678bpr0041, skirt, Villager
+// 0 !KEYWORDS Rebrickable 3678bpr0041, Set 10193, skirt, Villager
 // 
 // 0 !PREVIEW 16 0 0 0 -1 0 0 0 1 0 0 0 -1
 // 

@@ -13,7 +13,7 @@ function ldraw_lib__3068bpm3() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3068bpb2183, BrickOwl 759843, Lord of the Rings, LOTR
+// 0 !KEYWORDS BrickLink 3068pb2183, Lord of the Rings, LOTR
 // 0 !KEYWORDS Rebrickable 3068bpr0672, Rivendell, Set 10316
 // 
 // 0 !HISTORY 2023-04-17 [OrionP] Official Update 2023-02

@@ -24,7 +24,7 @@ function ldraw_lib__71342() = [
   [0,"BFC","CW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS cavalry, clarion, cornet, trumpet, western
+// 0 !KEYWORDS BrickLink x96, cavalry, clarion, cornet, trumpet, western
 // 
 // 0 !HISTORY 2009-09-03 [PTadmin] Official Update 2009-02
 // 

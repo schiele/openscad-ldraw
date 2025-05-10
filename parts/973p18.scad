@@ -12,7 +12,7 @@ function ldraw_lib__973p18() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !KEYWORDS business, corporate, professional, town, Trains
+// 0 !KEYWORDS business, corporate, professional, Set 7745, town, Trains
 // 
 // 0 !CMDLINE -c1
 // 

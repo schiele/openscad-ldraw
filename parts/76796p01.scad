@@ -12,8 +12,8 @@ function ldraw_lib__76796p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS 78840, Bricklink 76796pb01, Brickowl 951467, Discovery
-// 0 !KEYWORDS Rebrickable 76796pr0001, Set 10283, Space Shuttle, STS-31
+// 0 !KEYWORDS 78840, Bricklink 76796pb01, Discovery, Rebrickable 76796pr0001
+// 0 !KEYWORDS Set 10283, Space Shuttle, STS-31
 // 
 // 0 !HISTORY 2024-12-30 [OrionP] Official Update 2024-11
 // 

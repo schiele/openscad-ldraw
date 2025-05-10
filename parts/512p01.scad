@@ -12,6 +12,8 @@ function ldraw_lib__512p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink lcs12v, Rebrickable 512pr0001, Set 7866
+// 
 // 0 !CMDLINE -c0
 // 
 // 0 !HISTORY 2010-07-05 [PTadmin] Official Update 2010-02

@@ -13,8 +13,8 @@ function ldraw_lib__10066p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Bricklink, Brickowl 798917, Lord of the Ring, LOTR
-// 0 !KEYWORDS Rebrickable 10066pr0001, Set 79002
+// 0 !KEYWORDS BrickLink 10066pb01, Lord of the Ring, LOTR, Rebrickable 10066pr0001
+// 0 !KEYWORDS Set 79002
 // 
 // 0 !HISTORY 2013-08-14 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2014-11-05 [Philo] File preparation for LDraw Parts Tracker

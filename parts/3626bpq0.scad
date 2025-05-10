@@ -11,9 +11,8 @@ function ldraw_lib__3626bpq0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626bpb0496, Brickowl 922192, Mummy Warrior
-// 0 !KEYWORDS Pharaoh's Quest, Rebrickable 3626bpr0755, Set 7307, Set 7326
-// 0 !KEYWORDS Set 7327
+// 0 !KEYWORDS BrickLink 3626pb0496, Mummy Warrior, Pharaoh's Quest
+// 0 !KEYWORDS Rebrickable 3626bpr0755, Set 7307, Set 7326, Set 7327
 // 
 // 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02
 // 0 !HISTORY 2013-02-06 [Wesley] part name correction

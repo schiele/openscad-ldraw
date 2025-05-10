@@ -22,6 +22,8 @@ function ldraw_lib__6584() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 6584a
+// 
 // 0 !HISTORY 2007-07-18 [PTadmin] Header formatted for Contributor Agreement
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
 // 0 !HISTORY 2008-07-07 [guyvivan] Made BFC'ed, use more primitives and fix L3P error (2005-11-07)

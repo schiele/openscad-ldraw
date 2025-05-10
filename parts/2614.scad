@@ -29,7 +29,7 @@ function ldraw_lib__2614() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS adventure
+// 0 !KEYWORDS adventure, Rebrickable 2614a
 // 
 // 0 !HISTORY 2000-05-07 [PTadmin] Official Update 2000-01
 // 0 !HISTORY 2007-05-17 [PTadmin] Header formatted for Contributor Agreement

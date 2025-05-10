@@ -34,6 +34,8 @@ function ldraw_lib__2552p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 2552px2, Rebrickable 2552pr0002, Set 6959
+// 
 // 0 !HISTORY 2015-10-11 [PTadmin] Official Update 2015-01
 // 
 // 

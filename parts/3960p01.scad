@@ -13,7 +13,8 @@ function ldraw_lib__3960p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS daisy, parasol, pinwheel, Radar Dish, Round, town, umbrella
+// 0 !KEYWORDS daisy, parasol, pinwheel, Radar Dish, Rebrickable 3960pr9990, Round
+// 0 !KEYWORDS Set 10036, town, umbrella
 // 
 // 0 !CMDLINE -c15
 // 

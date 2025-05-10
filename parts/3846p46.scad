@@ -14,6 +14,7 @@ function ldraw_lib__3846p46() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
+// 0 !KEYWORDS Rebrickable 3846pr0027, Set 10000
 // 
 // 0 !HISTORY 2002-12-31 [cwdee] Made colour-specific part
 // 0 !HISTORY 2003-12-19 [PTadmin] Official Update 2003-03

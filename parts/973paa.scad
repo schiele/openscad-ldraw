@@ -14,7 +14,7 @@ function ldraw_lib__973paa() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Max Villano
+// 0 !KEYWORDS Max Villano, Set 5901
 // 
 // 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01
 // 

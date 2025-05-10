@@ -12,7 +12,8 @@ function ldraw_lib__98138p05() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Batman, Bricklink 98138pb005, Set 6864, Two Face
+// 0 !KEYWORDS Batman, Bricklink 98138pb005, Rebrickable 98138pr0007, Set 6864
+// 0 !KEYWORDS Two Face
 // 
 // 0 !HISTORY 2012-08-09 [PTadmin] Official Update 2012-02
 // 0 !HISTORY 2014-08-25 [cwdee] Correct description

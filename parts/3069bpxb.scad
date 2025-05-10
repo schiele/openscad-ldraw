@@ -11,7 +11,8 @@ function ldraw_lib__3069bpxb() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Arcade, Bricklink 3069bpb0475, Dimensions, set 71235
+// 0 !KEYWORDS Arcade, BrickLink 3069pb0475, Dimensions, Rebrickable 3069bpr0156
+// 0 !KEYWORDS set 71235
 // 
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04
 // 

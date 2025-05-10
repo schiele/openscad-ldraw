@@ -14,7 +14,8 @@ function ldraw_lib__6636p0c() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 6636pb043, Design, Fashion, Set 3936, Set 5002929
+// 0 !KEYWORDS Bricklink 6636pb043, Design, Fashion, Rebrickable 6636pr0011
+// 0 !KEYWORDS Set 3936, Set 5002929
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
 // 

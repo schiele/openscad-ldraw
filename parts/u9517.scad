@@ -24,6 +24,8 @@ function ldraw_lib__u9517() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink x886, Rebrickable upn0186
+// 
 // 0 !HISTORY 2012-04-21 [Steffen] changed orientation and origin, shortened by 1 LDU
 // 0 !HISTORY 2017-09-07 [GeraldLasser] complete rework
 // 0 !HISTORY 2022-03-06 [PTadmin] Official Update 2022-02

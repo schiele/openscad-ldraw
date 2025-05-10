@@ -12,7 +12,7 @@ function ldraw_lib__973p6x() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !KEYWORDS droid, Invaders
+// 0 !KEYWORDS BrickLink 973px132, droid, Invaders, set 3012
 // 
 // 0 !HISTORY 2010-12-31 [PTadmin] Official Update 2010-03
 // 0 !HISTORY 2011-01-04 [BlackBrick89] Standardise description

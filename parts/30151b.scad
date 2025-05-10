@@ -13,7 +13,7 @@ function ldraw_lib__30151b() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Adventurers, bell jar, container, crystal, glass
+// 0 !KEYWORDS Adventurers, bell jar, BrickLink 30151, container, crystal, glass
 // 
 // 0 !HISTORY 2019-08-20 [Cheenzo] Based on Steve Bliss' design for 30151.dat
 // 0 !HISTORY 2020-06-28 [PTadmin] Official Update 2020-01

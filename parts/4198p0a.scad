@@ -12,7 +12,7 @@ function ldraw_lib__4198p0a() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Brick
-// 0 !KEYWORDS bricklink 4198pb15, Set 1482
+// 0 !KEYWORDS bricklink 4198pb15, Rebrickable 4198pr9993, Set 1482
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 

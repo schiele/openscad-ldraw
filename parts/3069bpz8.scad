@@ -11,7 +11,7 @@ function ldraw_lib__3069bpz8() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Black Panther, Brickheadz, Set 41493
+// 0 !KEYWORDS Black Panther, Brickheadz, Rebrickable 3069bpr0201, Set 41493
 // 
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
 // 

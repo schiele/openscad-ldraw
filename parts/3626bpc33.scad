@@ -15,7 +15,8 @@ function ldraw_lib__3626bpc33() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626bpb0505, Series 3, Tribal Chief
+// 0 !KEYWORDS BrickLink 3626pb0505, Rebrickable 3626bpr0740, Series 3, Set 8803-3
+// 0 !KEYWORDS Tribal Chief
 // 
 // 0 !CMDLINE -c14
 // 

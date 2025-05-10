@@ -11,7 +11,8 @@ function ldraw_lib__3068bpx6() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3068bpb0979, Golem, Minecraft, Set 21123, Set 21128
+// 0 !KEYWORDS BrickLink 3068pb0979, Golem, Minecraft, Rebrickable 3068bpr0286
+// 0 !KEYWORDS Set 21123, Set 21128
 // 
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04
 // 

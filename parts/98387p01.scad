@@ -12,10 +12,9 @@ function ldraw_lib__98387p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 98387pb01, Brickowl 152233, daisy, Disney Princess
-// 0 !KEYWORDS Friends, Rabbit, Rebrickable 98387pr0001, Set 3935, set 3938
-// 0 !KEYWORDS Set 40080, Set 41001, Set 41039, Set 41060, Set 41087, Set 41110
-// 0 !KEYWORDS Set 41308
+// 0 !KEYWORDS Bricklink 98387pb01, daisy, Disney Princess, Friends, Rabbit
+// 0 !KEYWORDS Rebrickable 98387pr0001, Set 3935, set 3938, Set 40080, Set 41001
+// 0 !KEYWORDS Set 41039, Set 41060, Set 41087, Set 41110, Set 41308
 // 
 // 0 !HISTORY 2024-12-30 [OrionP] Official Update 2024-11
 // 

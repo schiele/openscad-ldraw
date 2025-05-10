@@ -13,6 +13,8 @@ function ldraw_lib__33267bc01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 33232c01, Rebrickable 33232c01
+// 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 33232.dat

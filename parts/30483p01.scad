@@ -13,7 +13,8 @@ function ldraw_lib__30483p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Chewbacca, Chewie, Star Wars, SW, Wookie
+// 0 !KEYWORDS BrickLink 30483pb01, Chewbacca, Chewie, Rebrickable 30483pr0001
+// 0 !KEYWORDS Set 3342, Star Wars, SW, Wookie
 // 
 // 0 !HISTORY 2013-12-23 [PTadmin] Official Update 2013-02
 // 

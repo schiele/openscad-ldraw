@@ -11,7 +11,7 @@ function ldraw_lib__3755ap02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS bricklink 3755pb02, Set 6393, Truck stop
+// 0 !KEYWORDS bricklink 3755pb02, Rebrickable 3755pr0002, Set 6393, Truck stop
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
 // 

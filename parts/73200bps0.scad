@@ -17,8 +17,8 @@ function ldraw_lib__73200bps0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS 1999, Bricklink 970c02pb03, Brickowl 981208, Luke Skywalker
-// 0 !KEYWORDS Rebrickable 970c26pr0002, set 4501, set 7110, set 7190, Tatooine
+// 0 !KEYWORDS 1999, Bricklink 970c02pb03, Luke Skywalker, Rebrickable 970c26pr0002
+// 0 !KEYWORDS set 4501, set 7110, set 7190, Tatooine
 // 
 // 0 !CMDLINE -c19
 // 

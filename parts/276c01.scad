@@ -13,7 +13,7 @@ function ldraw_lib__276c01() = [
   [0,"BFC","CW"],
 // 
 // 0 !CATEGORY Figure Accessory
-// 0 !KEYWORDS Fabuland
+// 0 !KEYWORDS BrickLink fabad6c01, Fabuland
 // 
 // 0 !CMDLINE -c2
 // 

@@ -14,9 +14,9 @@ function ldraw_lib__76382pa4() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Adventurers, amazon, Bricklink 973pa4c01, BrickOwl 959856, Jacket
-// 0 !KEYWORDS Jungle, Mini Upper Part No 316, Rebrickable 973c27h03pr0004
-// 0 !KEYWORDS Senor Gomez, Senor Palomar, Set 5936, set 5976, set 5986, villain
+// 0 !KEYWORDS Adventurers, amazon, Bricklink 973pa4c01, Jacket, Jungle
+// 0 !KEYWORDS Mini Upper Part No 316, Rebrickable 973c27h03pr0004, Senor Gomez
+// 0 !KEYWORDS Senor Palomar, Set 5936, set 5976, set 5986, villain
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

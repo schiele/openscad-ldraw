@@ -11,6 +11,8 @@ function ldraw_lib__3351ap03() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 649pb09, Rebrickable 649pr0011, Set 10
+// 
 // 0 !HISTORY 2006-08-08 [WilliamH] Corrected outer red border and white background
 // 0 !HISTORY 2010-04-25 [cwdee] Change white to main colour; BFCd
 // 0 !HISTORY 2010-07-05 [PTadmin] Official Update 2010-02

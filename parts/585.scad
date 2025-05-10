@@ -22,6 +22,8 @@ function ldraw_lib__585() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink x148
+// 
 // 0 !HISTORY 2009-05-02 [PTadmin] Official Update 2009-01
 // 0 !HISTORY 2012-01-02 [timgould] Changed title to remove 'old'
 // 0 !HISTORY 2012-08-09 [PTadmin] Official Update 2012-02

@@ -16,7 +16,7 @@ function ldraw_lib__3004ph1() = [
 // 0 !KEYWORDS BrickLink 3004px11, Coat of Arms, Godric Gryffindor
 // 0 !KEYWORDS Gryffindor House, Harry Potter
 // 0 !KEYWORDS Hogwarts School of Witchcraft and Wizardry, Lion
-// 0 !KEYWORDS Rebrickable 3004pr9957, Red and Gold
+// 0 !KEYWORDS Rebrickable 3004pr9957, Red and Gold, Set 4726
 // 
 // 0 !CMDLINE -c19
 // 

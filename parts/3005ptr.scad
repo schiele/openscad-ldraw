@@ -13,6 +13,8 @@ function ldraw_lib__3005ptr() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 3005ptR, Rebrickable 3005pr9914, Set 234
+// 
 // 0 !HISTORY 2003-12-09 [Steffen] made use of existing subfile
 // 0 !HISTORY 2004-04-22 [PTadmin] Official Update 2004-02
 // 0 !HISTORY 2007-05-11 [PTadmin] Header formatted for Contributor Agreement

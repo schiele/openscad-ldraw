@@ -16,8 +16,8 @@ function ldraw_lib__15851p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Bad Cop, Bricklink 15851pb01, police, Set 70607, Set 70802
-// 0 !KEYWORDS Set 70819, Set 70840, Set 71213
+// 0 !KEYWORDS Bad Cop, Bricklink 15851pb01, police, Rebrickable 15851pat0001
+// 0 !KEYWORDS Set 70607, Set 70802, Set 70819, Set 70840, Set 71213
 // 
 // 0 !HISTORY 2023-04-17 [OrionP] Official Update 2023-02
 // 

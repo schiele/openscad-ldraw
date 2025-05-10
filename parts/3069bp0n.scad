@@ -11,7 +11,8 @@ function ldraw_lib__3069bp0n() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3069bpb0264, Friends, Magic show, Set 41001
+// 0 !KEYWORDS BrickLink 3069pb0264, Friends, Magic show, Rebrickable 3069bpr0129
+// 0 !KEYWORDS Set 41001
 // 
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04
 // 

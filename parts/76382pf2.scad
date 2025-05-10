@@ -14,10 +14,10 @@ function ldraw_lib__76382pf2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb0680c01, BrickOwl 484275, Bricks and More, Castle
-// 0 !KEYWORDS educational, Kingdoms, Mini Upper Part No 1623
-// 0 !KEYWORDS Rebrickable 973c22h01pr1623, Set 5929, Set 7187, Set 7946, Set 7947
-// 0 !KEYWORDS Set 7948, Set 7949, Set 7952, Set 9349
+// 0 !KEYWORDS Bricklink 973pb0680c01, Bricks and More, Castle, educational
+// 0 !KEYWORDS Kingdoms, Mini Upper Part No 1623, Rebrickable 973c22h01pr1623
+// 0 !KEYWORDS Set 5929, Set 7187, Set 7946, Set 7947, Set 7948, Set 7949, Set 7952
+// 0 !KEYWORDS Set 9349
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

@@ -11,8 +11,8 @@ function ldraw_lib__26603p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS ATA, CDDA, CTA, CTM, FTA, LFA, LLA, MTA, Set 10264, Set 21312, TLVA
-// 0 !KEYWORDS TWA
+// 0 !KEYWORDS ATA, BrickLink 26603pb015, CDDA, CTA, CTM, FTA, LFA, LLA, MTA
+// 0 !KEYWORDS Rebrickable 26603pr0014, Set 10264, Set 21312, TLVA, TWA
 // 
 // 0 !CMDLINE -c0
 // 

@@ -13,7 +13,8 @@ function ldraw_lib__44342p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS curved, roadplate
+// 0 !KEYWORDS BrickLink 44342pb01, curved, Rebrickable 44342pr0001, roadplate
+// 0 !KEYWORDS Set 4109
 // 
 // 0 !HISTORY 2005-12-28 [PTadmin] Official Update 2005-01
 // 0 !HISTORY 2007-07-04 [PTadmin] Header formatted for Contributor Agreement

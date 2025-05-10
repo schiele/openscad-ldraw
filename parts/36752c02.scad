@@ -13,6 +13,7 @@ function ldraw_lib__36752c02() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
+// 0 !KEYWORDS BrickLink 36752, Rebrickable 36752
 // 
 // 0 !HISTORY 2022-12-20 [PTadmin] Official Update 2022-06
 // 

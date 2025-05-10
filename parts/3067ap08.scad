@@ -11,7 +11,8 @@ function ldraw_lib__3067ap08() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3067pb02, Cafe, Restaurant, Set 816, Signboard
+// 0 !KEYWORDS Bricklink 3067pb02, Cafe, Rebrickable 3067pr0006, Restaurant
+// 0 !KEYWORDS Set 816, Signboard
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
 // 

@@ -11,7 +11,8 @@ function ldraw_lib__71682pt0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 71682pb004, Daytona, Ferrari, set 42143
+// 0 !KEYWORDS Bricklink 71682pb004, Daytona, Ferrari, Rebrickable 71682pr0006
+// 0 !KEYWORDS set 42143
 // 
 // 0 !HISTORY 2023-10-31 [OrionP] Official Update 2023-05
 // 

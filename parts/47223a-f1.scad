@@ -12,6 +12,8 @@ function ldraw_lib__47223a_f1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 4694bc01, Rebrickable 47223a
+// 
 // 0 !HISTORY 2009-12-15 [arezey] Reflected origin change in 4713.dat
 // 0 !HISTORY 2009-12-29 [PTadmin] Official Update 2009-03
 // 0 !HISTORY 2016-08-12 [PTadmin] Renamed from 47223a

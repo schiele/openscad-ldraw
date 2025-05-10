@@ -20,7 +20,8 @@ function ldraw_lib__87610ps3() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Bricklink 87610pb04, Jango Fett, Set 75015, set 75023, set 75191
+// 0 !KEYWORDS Bricklink 87610pb04, Jango Fett, Rebrickable 87610pr0002, Set 75015
+// 0 !KEYWORDS set 75023, set 75191
 // 
 // 0 !CMDLINE -c179
 // 

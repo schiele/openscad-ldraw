@@ -14,7 +14,8 @@ function ldraw_lib__3626cpd7i() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626cpb1885, GPL Tech, Ninjago Movie
+// 0 !KEYWORDS BrickLink 3626pb1885, GPL Tech, Ninjago Movie
+// 0 !KEYWORDS Rebrickable 3626cpr2338, Set 71019-18
 // 
 // 0 !CMDLINE -c14
 // 

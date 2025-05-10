@@ -12,6 +12,8 @@ function ldraw_lib__497c01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
+// 0 !KEYWORDS BrickLink 7039b, Rebrickable 7039b
+// 
 // 0 !CMDLINE -c4
 // 
 // 0 !HISTORY 2012-12-28 [PTadmin] Official Update 2012-03

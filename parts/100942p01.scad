@@ -12,7 +12,8 @@ function ldraw_lib__100942p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Mars Rover, Perseverance, Set 42158
+// 0 !KEYWORDS BrickLink 100942pb01, Mars Rover, Perseverance
+// 0 !KEYWORDS Rebrickable 100942pat0001, Set 42158
 // 
 // 0 !HISTORY 2023-10-28 {LEGO Instructions App} Original part shape
 // 0 !HISTORY 2023-10-31 [Philo] File preparation for LDraw Parts Tracker

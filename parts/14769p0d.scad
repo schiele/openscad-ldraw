@@ -21,7 +21,7 @@ function ldraw_lib__14769p0d() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 14769pb027, Mixel
+// 0 !KEYWORDS Bricklink 14769pb027, Mixel, Rebrickable 14769pr1011, Set 41529
 // 
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
 // 

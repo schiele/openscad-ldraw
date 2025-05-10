@@ -14,8 +14,8 @@ function ldraw_lib__3947() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS crater, hill, land, Moon, mountain, planet, roadplate, Space
-// 0 !KEYWORDS surface
+// 0 !KEYWORDS BrickLink 3947a, crater, hill, land, Moon, mountain, planet
+// 0 !KEYWORDS Rebrickable 3947a, roadplate, Space, surface
 // 
 // 0 !HISTORY 2002-10-07 [izanette] Modified with WINDZ for BFC compliance
 // 0 !HISTORY 2002-12-08 [BrickCaster] removed L3P warnings

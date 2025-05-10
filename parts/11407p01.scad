@@ -12,7 +12,7 @@ function ldraw_lib__11407p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Set 41101
+// 0 !KEYWORDS BrickLink 11244c00pb02, Rebrickable 11407c01pr0001, Set 41101
 // 
 // 0 !HISTORY 2014-12-23 [PTadmin] Official Update 2014-02
 // 0 !HISTORY 2020-05-10 [cwdee] Update colour name in description

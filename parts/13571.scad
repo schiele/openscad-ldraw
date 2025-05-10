@@ -16,7 +16,8 @@ function ldraw_lib__13571() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS american native, axe, indian, Weapon, western, wild west
+// 0 !KEYWORDS american native, axe, BrickLink 13571pb01, indian
+// 0 !KEYWORDS Rebrickable 13571pr0001, Weapon, western, wild west
 // 
 // 0 !HISTORY 2013-12-23 [PTadmin] Official Update 2013-02
 // 

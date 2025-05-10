@@ -14,12 +14,12 @@ function ldraw_lib__76382pw4() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS badge, bowtie, Bricklink 973px161c01, BrickOwl 702777, cowboy
-// 0 !KEYWORDS cowboys, deputy, Dodge City, Federal Marshal, fob, gold star, lawman
-// 0 !KEYWORDS Legoredo City, marshal, Mini Upper Part No 223
-// 0 !KEYWORDS Rebrickable 973c08h03pr0161, set 6712, set 6755, Set 6764, set 6765
-// 0 !KEYWORDS set 6799, Sheriff Duke, Sheriff Silver, tin star, U.S. Marshal
-// 0 !KEYWORDS watchfob, western, wild west, Wild Wyatt West, Wyatt Earp
+// 0 !KEYWORDS badge, bowtie, Bricklink 973px161c01, cowboy, cowboys, deputy
+// 0 !KEYWORDS Dodge City, Federal Marshal, fob, gold star, lawman, Legoredo City
+// 0 !KEYWORDS marshal, Mini Upper Part No 223, Rebrickable 973c08h03pr0161
+// 0 !KEYWORDS set 6712, set 6755, Set 6764, set 6765, set 6799, Sheriff Duke
+// 0 !KEYWORDS Sheriff Silver, tin star, U.S. Marshal, watchfob, western, wild west
+// 0 !KEYWORDS Wild Wyatt West, Wyatt Earp
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

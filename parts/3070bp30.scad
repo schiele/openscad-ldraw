@@ -19,7 +19,7 @@ function ldraw_lib__3070bp30() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Pirates
+// 0 !KEYWORDS BrickLink 3070pb052, Pirates, Rebrickable 3070bpr0058, Set 4181
 // 
 // 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02
 // 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives

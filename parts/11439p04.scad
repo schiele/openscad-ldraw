@@ -14,9 +14,8 @@ function ldraw_lib__11439p04() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS Bricklink 11439pb04, BrickOwl 922308, Rebrickable 11439pat0002
-// 0 !KEYWORDS Set 41510, Set 41511, Set 41541, Set 70504, Set 70505, Set 70742
-// 0 !KEYWORDS Set 71013, Weapon
+// 0 !KEYWORDS Bricklink 11439pb04, Rebrickable 11439pat0002, Set 41510, Set 41511
+// 0 !KEYWORDS Set 41541, Set 70504, Set 70505, Set 70742, Set 71013, Weapon
 // 
 // 0 !HISTORY 2023-09-30 [MagFors] Added inside surface
 // 0 !HISTORY 2024-10-27 [OrionP] Official Update 2024-09

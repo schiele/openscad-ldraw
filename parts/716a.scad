@@ -15,8 +15,8 @@ function ldraw_lib__716a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink x1042a, Brickowl 468682, classic, curved, macaroni
-// 0 !KEYWORDS Rebrickable upn0175, Ring, semicircle
+// 0 !KEYWORDS Bricklink x1042a, classic, curved, macaroni, Rebrickable upn0175
+// 0 !KEYWORDS Ring, semicircle
 // 
 // 0 !HISTORY 2021-08-02 [MagFors] made subfile for a and b version
 // 0 !HISTORY 2024-12-30 [OrionP] Official Update 2024-11

@@ -12,7 +12,7 @@ function ldraw_lib__973pc23() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Circus, Collectable, Ring Master, Ringmaster, Series 2
+// 0 !KEYWORDS Circus, Collectable, Ring Master, Ringmaster, Series 2, Set 8684
 // 
 // 0 !HISTORY 2012-08-09 [PTadmin] Official Update 2012-02
 // 

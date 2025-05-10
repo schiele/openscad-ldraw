@@ -15,8 +15,8 @@ function ldraw_lib__15504p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Hipwear
-// 0 !KEYWORDS Bricklink 15504pb02, Brickowl 275481, CMF, Monkey King
-// 0 !KEYWORDS Rebrickable 15504pr0002, Set 71025, Set 80012, Set 80039
+// 0 !KEYWORDS Bricklink 15504pb02, CMF, Monkey King, Rebrickable 15504pr0002
+// 0 !KEYWORDS Set 71025, Set 80012, Set 80039
 // 
 // 0 !HISTORY 2024-08-26 [OrionP] Official Update 2024-07
 // 

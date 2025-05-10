@@ -14,10 +14,11 @@ function ldraw_lib__2359p04() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !KEYWORDS army, bandido, bandit, billy the kid, cavalry, cowboy, desperado
-// 0 !KEYWORDS doc holliday, gangster, gunman, mine, outlaw, Pistol, plunderer
-// 0 !KEYWORDS revolver, rifle, robber, secret hide-out, set 6761
-// 0 !KEYWORDS spaghetti western, tombstone, United States, villain, wild west
+// 0 !KEYWORDS army, bandido, bandit, billy the kid, BrickLink 2359px2, cavalry
+// 0 !KEYWORDS cowboy, desperado, doc holliday, gangster, gunman, mine, outlaw
+// 0 !KEYWORDS Pistol, plunderer, Rebrickable 2359pr0004, revolver, rifle, robber
+// 0 !KEYWORDS secret hide-out, set 6761, spaghetti western, tombstone
+// 0 !KEYWORDS United States, villain, wild west
 // 
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
 // 

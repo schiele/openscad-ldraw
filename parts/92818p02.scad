@@ -12,7 +12,7 @@ function ldraw_lib__92818p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS set 3065
+// 0 !KEYWORDS BrickLink 92250c00pb03, Rebrickable 92818c01pr0007, set 3065
 // 
 // 0 !HISTORY 2014-12-23 [PTadmin] Official Update 2014-02
 // 0 !HISTORY 2025-01-09 [OrionP] Moved from 92250p02c01.dat

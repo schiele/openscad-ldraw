@@ -14,8 +14,9 @@ function ldraw_lib__30375ps4() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS battle droid commander, Clone Wars, Episode One, Episode Two
-// 0 !KEYWORDS minifig-scale, set 75043, set 75092, set 9515, Star Wars
+// 0 !KEYWORDS battle droid commander, BrickLink 30375pb03, Clone Wars, Episode One
+// 0 !KEYWORDS Episode Two, minifig-scale, Rebrickable 30375pr0001, set 75043
+// 0 !KEYWORDS set 75092, set 9515, Star Wars
 // 
 // 0 !CMDLINE -c19
 // 

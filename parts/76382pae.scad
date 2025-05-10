@@ -15,9 +15,8 @@ function ldraw_lib__76382pae() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS Adventurers, Alexia Sanister, Alexis Sanister
-// 0 !KEYWORDS Bricklink 973pb0042c01, BrickOwl 645186, Dino Island
-// 0 !KEYWORDS Mini Upper Part No 413, Rebrickable 973c17h01pr0042, set 5955
-// 0 !KEYWORDS set 5975, villain
+// 0 !KEYWORDS Bricklink 973pb0042c01, Dino Island, Mini Upper Part No 413
+// 0 !KEYWORDS Rebrickable 973c17h01pr0042, set 5955, set 5975, villain
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

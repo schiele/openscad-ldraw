@@ -17,8 +17,8 @@ function ldraw_lib__73200bp89() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS BrickLink 970c00pb0297, Brickowl 406093, Ned Flanders
-// 0 !KEYWORDS Rebrickable 970c12pr0633, Set 71006, The Simpsons
+// 0 !KEYWORDS BrickLink 970c00pb0297, Ned Flanders, Rebrickable 970c12pr0633
+// 0 !KEYWORDS Set 71006, The Simpsons
 // 
 // 0 !HISTORY 2015-10-11 [Philo] Original design as 3815c89
 // 0 !HISTORY 2023-05-03 [Holly-Wood] Adapted to corrected geometry

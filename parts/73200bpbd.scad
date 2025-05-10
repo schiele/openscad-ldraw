@@ -17,9 +17,8 @@ function ldraw_lib__73200bpbd() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS bricklink 970c00pb0237, Brickowl 642065, Colonel James Rhodes
-// 0 !KEYWORDS Iron Man 3, Rebrickable 970c12pr0542, Rhodey, set 76006
-// 0 !KEYWORDS Super Heroes
+// 0 !KEYWORDS bricklink 970c00pb0237, Colonel James Rhodes, Iron Man 3
+// 0 !KEYWORDS Rebrickable 970c12pr0542, Rhodey, set 76006, Super Heroes
 // 
 // 0 !HISTORY 2013-12-23 [MagFors] Original design as 3815cbd
 // 0 !HISTORY 2020-06-19 [MagFors] Adapted to corrected geometry

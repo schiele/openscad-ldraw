@@ -11,7 +11,8 @@ function ldraw_lib__54200pc1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS cheese, Discovery, Rebrickable 54200pr0004, Set 10283, Space Shuttle
+// 0 !KEYWORDS BrickLink 54200pb106, cheese, Discovery, Rebrickable 54200pr0004
+// 0 !KEYWORDS Set 10283, Space Shuttle
 // 
 // 0 !HISTORY 2022-05-07 [PTadmin] Official Update 2022-03
 // 0 !HISTORY 2022-07-13 [Jaco] added keyword Cheese

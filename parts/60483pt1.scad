@@ -12,7 +12,8 @@ function ldraw_lib__60483pt1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 60483pb007, Lamborghini Sian, set 42115
+// 0 !KEYWORDS Bricklink 60483pb007, Lamborghini Sian, Rebrickable 60483pr0001
+// 0 !KEYWORDS set 42115
 // 
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04
 // 

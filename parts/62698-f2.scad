@@ -14,6 +14,7 @@ function ldraw_lib__62698_f2() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
+// 0 !KEYWORDS BrickLink 62698, Rebrickable 62698
 // 
 // 0 !HISTORY 2013-08-14 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2016-12-03 [Philo] File preparation for LDraw Parts Tracker

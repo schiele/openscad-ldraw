@@ -13,7 +13,7 @@ function ldraw_lib__43097_f1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Power Functions
+// 0 !KEYWORDS BrickLink 43097c01, Power Functions, Rebrickable 43097
 // 
 // 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 

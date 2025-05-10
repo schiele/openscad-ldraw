@@ -15,8 +15,8 @@ function ldraw_lib__95341p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS 5170, Bricklink 95341pb02, Brickowl 1366408, CMF
-// 0 !KEYWORDS Collectible Minifigures, Rebrickable 5170pr0001, set 71045
+// 0 !KEYWORDS 5170, Bricklink 95341pb02, CMF, Collectible Minifigures
+// 0 !KEYWORDS Rebrickable 5170pr0001, set 71045
 // 
 // 0 !HISTORY 2024-06-30 [OrionP] Official Update 2024-05
 // 

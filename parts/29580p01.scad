@@ -14,8 +14,8 @@ function ldraw_lib__29580p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Bricklink 29580pb01, Collectible Minifigures, Rocket Boy, Series 17
-// 0 !KEYWORDS Space
+// 0 !KEYWORDS Bricklink 29580pb01, Collectible Minifigures
+// 0 !KEYWORDS Rebrickable 29580pr0001, Rocket Boy, Series 17, Set 71018-13, Space
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
 // 

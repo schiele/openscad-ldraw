@@ -17,8 +17,8 @@ function ldraw_lib__6126a() = [
   [0,"BFC","CW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS Adventurers, Castle, Divers, dragon, Dragon Masters, Fire
-// 0 !KEYWORDS Harry Potter, kelp, leaf, Plant, seaweed, torch
+// 0 !KEYWORDS Adventurers, BrickLink 6126, Castle, Divers, dragon, Dragon Masters
+// 0 !KEYWORDS Fire, Harry Potter, kelp, leaf, Plant, seaweed, torch
 // 
 // 0 !HISTORY 1998-06-20 [PTadmin] Official Update 1998-06
 // 0 !HISTORY 2003-10-03 [bbroich] completed header, improved part

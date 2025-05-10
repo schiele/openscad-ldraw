@@ -12,7 +12,7 @@ function ldraw_lib__973p8e() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973px176, town
+// 0 !KEYWORDS Bricklink 973px176, Set 1180, town
 // 
 // 0 !HISTORY 2016-12-31 [PTadmin] Official Update 2016-01
 // 

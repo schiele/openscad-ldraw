@@ -14,7 +14,7 @@ function ldraw_lib__76382p4u() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973px46c01, BrickOwl 318843, Castle, Classic Castle, Joust
+// 0 !KEYWORDS Bricklink 973px46c01, Castle, Classic Castle, Joust
 // 0 !KEYWORDS Knights Tournament, LEGOLAND Castle, Rebrickable 973c27h01pr0046
 // 0 !KEYWORDS Set 383, Set 6083, White Knight, Yellow Castle
 // 

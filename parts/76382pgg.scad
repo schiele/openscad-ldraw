@@ -14,8 +14,8 @@ function ldraw_lib__76382pgg() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb0371c01, BrickOwl 488254, Field Expansion, football
-// 0 !KEYWORDS Green Team, Rebrickable 973c31h01pr0371, Set 3410, Sports
+// 0 !KEYWORDS Bricklink 973pb0371c01, Field Expansion, football, Green Team
+// 0 !KEYWORDS Rebrickable 973c31h01pr0371, Set 3410, Sports
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

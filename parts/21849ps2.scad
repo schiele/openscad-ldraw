@@ -12,7 +12,8 @@ function ldraw_lib__21849ps2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Set 75155, Star Wars, U-Wing Fighter
+// 0 !KEYWORDS BrickLink 21849pb02, Rebrickable 21849pr0002, Set 75155, Star Wars
+// 0 !KEYWORDS U-Wing Fighter
 // 
 // 0 !HISTORY 2019-09-09 [PTadmin] Official Update 2019-02
 // 

@@ -15,6 +15,7 @@ function ldraw_lib__59275a() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Footwear
+// 0 !KEYWORDS BrickLink 2599a, Rebrickable 59275
 // 
 // 0 !HISTORY 1998-03-23 [PTadmin] Official Update 1998-03
 // 0 !HISTORY 2007-05-17 [PTadmin] Header formatted for Contributor Agreement

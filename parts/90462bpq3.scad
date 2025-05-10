@@ -16,7 +16,8 @@ function ldraw_lib__90462bpq3() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Bricklink 90462pb03, Dr. Najib, Scooby Doo, set 75900
+// 0 !KEYWORDS BrickLink x177pb03, Dr. Najib, Rebrickable 90462pr0003, Scooby Doo
+// 0 !KEYWORDS set 75900
 // 
 // 0 !HISTORY 2023-04-17 [OrionP] Official Update 2023-02
 // 

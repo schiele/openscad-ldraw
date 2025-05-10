@@ -11,7 +11,8 @@ function ldraw_lib__4867p10() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Airplane, bricklink 4867pb01, Jetliner, set 6368, wedge
+// 0 !KEYWORDS Airplane, bricklink 4867pb01, Jetliner, Rebrickable 4867pr0001
+// 0 !KEYWORDS set 6368, wedge
 // 
 // 0 !HISTORY 2003-07-05 [OrionP] Moved guts to subpart, BFC'd
 // 0 !HISTORY 2010-07-05 [PTadmin] Official Update 2010-02

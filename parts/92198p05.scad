@@ -13,7 +13,7 @@ function ldraw_lib__92198p05() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Mia, Naya
+// 0 !KEYWORDS BrickLink 98705, Mia, Naya, Rebrickable 92198pr0006, Set 10728
 // 
 // 0 !HISTORY 2014-12-23 [PTadmin] Official Update 2014-02
 // 

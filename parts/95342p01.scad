@@ -14,8 +14,8 @@ function ldraw_lib__95342p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 95342pb01, Brickowl 408186, Rebrickable 95342pr0001
-// 0 !KEYWORDS set 10292, Set 10775, Set 71025, set 7189
+// 0 !KEYWORDS Bricklink 95342pb01, Rebrickable 95342pr0001, set 10292, Set 10775
+// 0 !KEYWORDS Set 71025, set 7189
 // 
 // 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02
 // 0 !HISTORY 2024-06-11 [MagFors] Restructured subfiles

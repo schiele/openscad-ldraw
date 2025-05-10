@@ -28,7 +28,8 @@ function ldraw_lib__50018b() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS Blaster, gun, Minifig Accessory Pack 11, Pistol, Weapon
+// 0 !KEYWORDS Blaster, gun, Minifig Accessory Pack 11, Pistol, Rebrickable 50018g
+// 0 !KEYWORDS Weapon
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
 // 

@@ -14,6 +14,8 @@ function ldraw_lib__3068bp08() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 3068p08, Rebrickable 3068bpr0032, Set 5171
+// 
 // 0 !HISTORY 2002-01-15 [BrickCaster] groove
 // 0 !HISTORY 2002-04-25 [PTadmin] Official Update 2002-02
 // 0 !HISTORY 2007-06-13 [PTadmin] Header formatted for Contributor Agreement

@@ -13,8 +13,8 @@ function ldraw_lib__608p03() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS accessory pack, Airport, crossing, crossroads, Crosswalk, crossway
-// 0 !KEYWORDS helipad, interchange, joint, junction, runway, Space, Stop
-// 0 !KEYWORDS Tee-plate
+// 0 !KEYWORDS helipad, interchange, joint, junction, Rebrickable 608pr0003, runway
+// 0 !KEYWORDS Set 306, Space, Stop, Tee-plate
 // 
 // 0 !CMDLINE -c7
 // 

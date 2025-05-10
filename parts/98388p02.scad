@@ -17,7 +17,8 @@ function ldraw_lib__98388p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Chick, Parrot, Sparrow
+// 0 !KEYWORDS BrickLink 98388pb02, Chick, Parrot, Rebrickable 98388pr0004
+// 0 !KEYWORDS Set 41024, Sparrow
 // 
 // 0 !HISTORY 2013-12-07 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2014-10-03 [Philo] File preparation for LDraw Parts Tracker

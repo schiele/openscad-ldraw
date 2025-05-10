@@ -14,13 +14,13 @@ function ldraw_lib__76382pw1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS army, Bricklink 973px41c01, BrickOwl 765634, cavalry, collar
-// 0 !KEYWORDS colonel, Colonel Jefferson, Fort Legoredo, General
-// 0 !KEYWORDS General Armstrong, horse troops, insignia, Legoredo City
-// 0 !KEYWORDS Lieutenant Colonel, Military, Mini Upper Part No 227, officer, rank
-// 0 !KEYWORDS Rebrickable 973c28h27pr0041, senior officer, set 6706, set 6762
-// 0 !KEYWORDS set 6769, shoulder, soldier, Star, Stars, U.S. Army, Uniform
-// 0 !KEYWORDS United States, veteran, western, wild west
+// 0 !KEYWORDS army, Bricklink 973px41c01, cavalry, collar, colonel
+// 0 !KEYWORDS Colonel Jefferson, Fort Legoredo, General, General Armstrong
+// 0 !KEYWORDS horse troops, insignia, Legoredo City, Lieutenant Colonel, Military
+// 0 !KEYWORDS Mini Upper Part No 227, officer, rank, Rebrickable 973c28h27pr0041
+// 0 !KEYWORDS senior officer, set 6706, set 6762, set 6769, shoulder, soldier
+// 0 !KEYWORDS Star, Stars, U.S. Army, Uniform, United States, veteran, western
+// 0 !KEYWORDS wild west
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

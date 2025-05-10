@@ -33,6 +33,7 @@ function ldraw_lib__45707() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Vehicle
+// 0 !KEYWORDS Rebrickable 45707a
 // 
 // 0 !HISTORY 2010-12-31 [PTadmin] Official Update 2010-03
 // 

@@ -33,6 +33,8 @@ function ldraw_lib__4088ap01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS Bricklink 4088px4, Rebrickable 4088pr0004, Set 3634
+// 
 // 0 !HISTORY 2018-12-08 [PTadmin] Official Update 2018-02
 // 
 // 

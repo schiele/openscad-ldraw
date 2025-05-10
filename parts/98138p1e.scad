@@ -13,7 +13,7 @@ function ldraw_lib__98138p1e() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS Best Friends Forever, Bricklink 98138pb148, Dots, Mega Pack
-// 0 !KEYWORDS Set 41913
+// 0 !KEYWORDS Rebrickable 98138pr0163, Set 41913
 // 
 // 0 !HISTORY 2021-06-14 [RainbowDolphin] Subfiled patterns for colour variants
 // 0 !HISTORY 2022-05-07 [PTadmin] Official Update 2022-03

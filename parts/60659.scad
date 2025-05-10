@@ -12,7 +12,7 @@ function ldraw_lib__60659() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Figure Accessory
-// 0 !KEYWORDS Troll, Weapon
+// 0 !KEYWORDS BrickLink 60674, Rebrickable 60674, Troll, Weapon
 // 
 // 0 !HISTORY 2009-10-13 {LEGO Universe Team} Original part shape
 // 0 !HISTORY 2009-11-09 [Eldar] File preparation for LDraw Parts Tracker

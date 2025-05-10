@@ -40,7 +40,8 @@ function ldraw_lib__2552p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Ice Planet 2002, set 6983, Space
+// 0 !KEYWORDS BrickLink 2552px1, Ice Planet 2002, Rebrickable 2552pr0001, set 6983
+// 0 !KEYWORDS Space
 // 
 // 0 !HISTORY 2015-10-11 [PTadmin] Official Update 2015-01
 // 

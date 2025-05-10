@@ -17,8 +17,8 @@ function ldraw_lib__73200bpq1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Amset-Ra, Anubis Guard, Bricklink 970c00pb0081, Brickowl 403903
-// 0 !KEYWORDS Pharaoh's Quest, Rebrickable 970c11pr0200, Set 7327
+// 0 !KEYWORDS Amset-Ra, Anubis Guard, Bricklink 970c00pb0081, Pharaoh's Quest
+// 0 !KEYWORDS Rebrickable 970c11pr0200, Set 7327
 // 
 // 0 !HISTORY 2012-03-30 [Wesley] Original pattern design
 // 0 !HISTORY 2020-06-06 [MagFors] Adapted to corrected geometry

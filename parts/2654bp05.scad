@@ -12,7 +12,7 @@ function ldraw_lib__2654bp05() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 2654pb008, Brickowl 710673, Ghostbusters, Proton Pack
+// 0 !KEYWORDS Bricklink 2654pb008, Ghostbusters, Proton Pack
 // 0 !KEYWORDS Rebrickable 2654pr0011, Set 71242, Set 75828
 // 
 // 0 !PREVIEW 16 0 0 0 1 0 0 0 -1 0 0 0 -1

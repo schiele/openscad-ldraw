@@ -29,6 +29,8 @@ function ldraw_lib__3298p73() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
+// 0 !KEYWORDS BrickLink 3298pb002, Rebrickable 3298pr0037, Set 1809
+// 
 // 0 !HISTORY 2010-08-23 [Eldar] Combine primitives
 // 0 !HISTORY 2010-12-31 [PTadmin] Official Update 2010-03
 // 

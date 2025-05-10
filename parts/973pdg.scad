@@ -12,7 +12,7 @@ function ldraw_lib__973pdg() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS hunchback, igor, Movie, peasant, scary, Studios, vampire
+// 0 !KEYWORDS hunchback, igor, Movie, peasant, scary, Set 1381, Studios, vampire
 // 
 // 0 !HISTORY 2003-12-19 [PTadmin] Official Update 2003-03
 // 0 !HISTORY 2007-07-29 [PTadmin] Header formatted for Contributor Agreement

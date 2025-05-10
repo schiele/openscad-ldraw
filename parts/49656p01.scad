@@ -12,7 +12,7 @@ function ldraw_lib__49656p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 49656pb02, Set 60228
+// 0 !KEYWORDS Bricklink 49656pb02, Rebrickable 49656pat0001, Set 60228
 // 
 // 0 !HISTORY 2020-12-12 {LEGO/Unity Microgame} Original part shape
 // 0 !HISTORY 2021-01-06 [Philo] File preparation for LDraw Parts Tracker

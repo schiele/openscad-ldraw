@@ -13,7 +13,8 @@ function ldraw_lib__18603c02p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Batman, Bricklink 18603c01pb01, Dimensions, Electronic, NFC, Toy Tag
+// 0 !KEYWORDS Batman, BrickLink 18605c01pb01, Dimensions, Electronic, NFC
+// 0 !KEYWORDS Rebrickable 19981pr0001, Set 71170, Toy Tag
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
 // 

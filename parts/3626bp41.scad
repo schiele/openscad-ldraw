@@ -16,7 +16,8 @@ function ldraw_lib__3626bp41() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS black knight, Castle
+// 0 !KEYWORDS black knight, BrickLink 3626px120, Castle, Rebrickable 3626bpr0306
+// 0 !KEYWORDS Set 1547
 // 
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
 // 

@@ -13,7 +13,8 @@ function ldraw_lib__3005pz2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickheadz, BrickLink 3005pb029, Han Solo, Set 41608, Star Wars
+// 0 !KEYWORDS Brickheadz, BrickLink 3005pb029, Han Solo, Rebrickable 3005pr0015
+// 0 !KEYWORDS Set 41608, Star Wars
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
 // 

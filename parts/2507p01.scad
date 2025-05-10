@@ -11,7 +11,8 @@ function ldraw_lib__2507p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !KEYWORDS 5599, 5600, Model Team
+// 0 !KEYWORDS 5599, 5600, BrickLink 2507pb03, Model Team, Rebrickable 2507pr0001
+// 0 !KEYWORDS Set 5599
 // 
 // 0 !CMDLINE -c33
 // 

@@ -22,7 +22,7 @@ function ldraw_lib__45601() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Spike Prime
+// 0 !KEYWORDS BrickLink 53444c01, Spike Prime
 // 
 // 0 !HISTORY 2019-12-27 [PTadmin] Official Update 2019-03
 // 0 !HISTORY 2020-02-16 [PTadmin] Renamed from u9393c01

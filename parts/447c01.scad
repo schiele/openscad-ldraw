@@ -12,6 +12,8 @@ function ldraw_lib__447c01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink wheel1a, Rebrickable upn0384a
+// 
 // 0 !CMDLINE -c4
 // 
 // 0 !HISTORY 2018-03-17 [Holly-Wood] Changed winding to CCW, changed description

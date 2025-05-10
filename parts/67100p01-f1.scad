@@ -13,7 +13,7 @@ function ldraw_lib__67100p01_f1() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS Nunchuck
+// 0 !KEYWORDS BrickLink 67100pb01, Nunchuck, Rebrickable 67100, Set 66641
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 

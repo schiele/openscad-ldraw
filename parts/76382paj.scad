@@ -14,9 +14,9 @@ function ldraw_lib__76382paj() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb0044c01, BrickOwl 478352, Hover Scout
-// 0 !KEYWORDS Mini Upper Part No 362, pilot, Rebrickable 973c28h01pr0044, Set 1274
-// 0 !KEYWORDS Set 3349, Set 4910, Set 4930, Set 4980, Set 4990, underground
+// 0 !KEYWORDS Bricklink 973pb0044c01, Hover Scout, Mini Upper Part No 362, pilot
+// 0 !KEYWORDS Rebrickable 973c28h01pr0044, Set 1274, Set 3349, Set 4910, Set 4930
+// 0 !KEYWORDS Set 4980, Set 4990, underground
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

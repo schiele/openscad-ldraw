@@ -12,7 +12,7 @@ function ldraw_lib__10202p04() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS Advertisement, Advertising, billboard, Bricklink 10202pb023
-// 0 !KEYWORDS Set 10278, Washing
+// 0 !KEYWORDS Rebrickable 10202pr0011, Set 10278, Washing
 // 
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04
 // 

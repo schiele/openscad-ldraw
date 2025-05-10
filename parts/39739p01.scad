@@ -11,8 +11,9 @@ function ldraw_lib__39739p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 39739pb01, Collectible Minifigures, Set 71023
-// 0 !KEYWORDS The LEGO Movie 2, Tin Man, Wizard of Oz
+// 0 !KEYWORDS Bricklink 39739pb01, Collectible Minifigures
+// 0 !KEYWORDS Rebrickable 39739pr0001, Set 71023, The LEGO Movie 2, Tin Man
+// 0 !KEYWORDS Wizard of Oz
 // 
 // 0 !HISTORY 2022-09-15 [PTadmin] Official Update 2022-05
 // 

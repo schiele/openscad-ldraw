@@ -14,7 +14,7 @@ function ldraw_lib__3484() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Claw hand, Mechanical
+// 0 !KEYWORDS BrickLink 48729b, Claw hand, Mechanical
 // 
 // 0 !HISTORY 2023-11-28 {LEGO Instructions App} Original part shape
 // 0 !HISTORY 2023-11-28 [Philo] File preparation for LDraw Parts Tracker

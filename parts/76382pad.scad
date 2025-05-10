@@ -14,8 +14,8 @@ function ldraw_lib__76382pad() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Adventurers, Bricklink 973px190c01, BrickOwl 377531, Dino Island
-// 0 !KEYWORDS mike, Mini Upper Part No 414, Rebrickable 973c27h01pr0190, Set 1281
+// 0 !KEYWORDS Adventurers, Bricklink 973px190c01, Dino Island, mike
+// 0 !KEYWORDS Mini Upper Part No 414, Rebrickable 973c27h01pr0190, Set 1281
 // 0 !KEYWORDS Set 5912, Set 5921, set 5975, set 5987
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01

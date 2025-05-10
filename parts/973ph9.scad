@@ -13,6 +13,7 @@ function ldraw_lib__973ph9() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS BrickLink 973pb0910, Dress, Dual, embroidery, female, Harry Potter
+// 0 !KEYWORDS set 4865
 // 
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
 // 

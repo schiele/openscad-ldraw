@@ -14,7 +14,7 @@ function ldraw_lib__76382p0u() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb2053c01, Brickowl 523796, Jurassic world, Owen Grady
+// 0 !KEYWORDS Bricklink 973pb2053c01, Jurassic world, Owen Grady
 // 0 !KEYWORDS Rebrickable 973c14h02pr3054, Set 71205, Set 75917
 // 
 // 0 !HISTORY 2024-12-30 [OrionP] Official Update 2024-11

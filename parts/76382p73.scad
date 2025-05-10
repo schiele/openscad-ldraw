@@ -14,13 +14,13 @@ function ldraw_lib__76382p73() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Airport, Bricklink 973p73c01, BrickOwl 372454, dacta
-// 0 !KEYWORDS Dingo Melbourne, football, Freestyle, Max Timebuster
-// 0 !KEYWORDS Mini Upper Part No 147, Mini Upper Part No 178, outback, Race
-// 0 !KEYWORDS Rebrickable 973c27h01pr0073, set 10159, Set 1796, Set 2150, Set 3310
-// 0 !KEYWORDS Set 4158, Set 4555, Set 6345, set 6444, Set 6487, Set 6490, Set 6513
-// 0 !KEYWORDS Set 6514, Set 6539, set 6549, Set 6552, Set 6563, Set 6564, set 6597
-// 0 !KEYWORDS Set 6665, Set 6670, set 9293, Soccer, town, Town Junior, Trains
+// 0 !KEYWORDS Airport, Bricklink 973p73c01, dacta, Dingo Melbourne, football
+// 0 !KEYWORDS Freestyle, Max Timebuster, Mini Upper Part No 147
+// 0 !KEYWORDS Mini Upper Part No 178, outback, Race, Rebrickable 973c27h01pr0073
+// 0 !KEYWORDS set 10159, Set 1796, Set 2150, Set 3310, Set 4158, Set 4555
+// 0 !KEYWORDS Set 6345, set 6444, Set 6487, Set 6490, Set 6513, Set 6514, Set 6539
+// 0 !KEYWORDS set 6549, Set 6552, Set 6563, Set 6564, set 6597, Set 6665, Set 6670
+// 0 !KEYWORDS set 9293, Soccer, town, Town Junior, Trains
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

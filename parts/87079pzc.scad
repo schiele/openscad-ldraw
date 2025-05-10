@@ -11,7 +11,8 @@ function ldraw_lib__87079pzc() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickheadz, BrickLink 87079pb521, Homer Simpson, Set 41632
+// 0 !KEYWORDS Brickheadz, BrickLink 87079pb0521, Homer Simpson
+// 0 !KEYWORDS Rebrickable 87079pr0171, Set 41632
 // 
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
 // 

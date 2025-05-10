@@ -14,8 +14,8 @@ function ldraw_lib__3070bp1d() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3070bpb202, Brickowl 610474, Dots, Ice cream
-// 0 !KEYWORDS Rebrickable 3070bpr0218, Set 41910
+// 0 !KEYWORDS BrickLink 3070pb202, Dots, Ice cream, Rebrickable 3070bpr0218
+// 0 !KEYWORDS Set 41910
 // 
 // 0 !HISTORY 2024-07-29 [OrionP] Official Update 2024-06
 // 

@@ -12,7 +12,8 @@ function ldraw_lib__21849ps1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Set 75102, Star Wars, X-Wing Fighter
+// 0 !KEYWORDS BrickLink 21849pb01, Rebrickable 21849pr0001, Set 75102, Star Wars
+// 0 !KEYWORDS X-Wing Fighter
 // 
 // 0 !HISTORY 2018-01-30 [PTadmin] Official Update 2018-01
 // 

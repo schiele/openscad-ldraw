@@ -14,9 +14,9 @@ function ldraw_lib__76382p90() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS astronaut, Bricklink 973p90c05, BrickOwl 157813, Classic Space
-// 0 !KEYWORDS Galaxy Explorer, Jim Spaceborn, Rebrickable 973c27h27pr0090
-// 0 !KEYWORDS Set 6970, Set 6980, Set 920, Set 926, Set 928, Space
+// 0 !KEYWORDS astronaut, Bricklink 973p90c05, Classic Space, Galaxy Explorer
+// 0 !KEYWORDS Jim Spaceborn, Rebrickable 973c27h27pr0090, Set 6970, Set 6980
+// 0 !KEYWORDS Set 920, Set 926, Set 928, Space
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

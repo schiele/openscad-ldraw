@@ -11,9 +11,8 @@ function ldraw_lib__3069bpta() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS BrickOwl 1281147, LEGO ID 6533447, Rebrickable 3069bpr9955
-// 0 !KEYWORDS Set 5008946, Set 6535735, Set 6535736, Set 6535737, Trade Mark
-// 0 !KEYWORDS Trademark
+// 0 !KEYWORDS LEGO ID 6533447, Rebrickable 3069bpr9955, Set 5008946, Set 6535735
+// 0 !KEYWORDS Set 6535736, Set 6535737, Trade Mark, Trademark
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

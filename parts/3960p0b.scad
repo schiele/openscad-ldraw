@@ -13,7 +13,7 @@ function ldraw_lib__3960p0b() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !KEYWORDS Elves, Round
+// 0 !KEYWORDS BrickLink 3960pb033, Elves, Rebrickable 3960pr0019, Round, Set 41075
 // 
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
 // 

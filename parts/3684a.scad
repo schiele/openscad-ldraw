@@ -12,6 +12,8 @@ function ldraw_lib__3684a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS Rebrickable 3684
+// 
 // 0 !HISTORY 1998-06-20 [PTadmin] Official Update 1998-06
 // 0 !HISTORY 2002-09-13 [izanette] modified with WINDZ for BFC compliance
 // 0 !HISTORY 2003-11-11 [fwcain] subfiled.

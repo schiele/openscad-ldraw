@@ -12,7 +12,8 @@ function ldraw_lib__98138pb6() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS citrus, limette, orange, Set 70922
+// 0 !KEYWORDS BrickLink 98138pb080, citrus, limette, orange
+// 0 !KEYWORDS Rebrickable 98138pr0086, Set 70922
 // 
 // 0 !CMDLINE -c14
 // 

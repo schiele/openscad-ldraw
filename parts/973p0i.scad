@@ -15,7 +15,7 @@ function ldraw_lib__973p0i() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb0041, Set 6338
+// 0 !KEYWORDS Bricklink 973pb0041, Rebrickable 973pb0041, Set 6338
 // 
 // 0 !HISTORY 2022-09-15 [PTadmin] Official Update 2022-05
 // 

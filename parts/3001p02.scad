@@ -11,7 +11,7 @@ function ldraw_lib__3001p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Airplane
+// 0 !KEYWORDS Airplane, BrickLink 3001oldpb01, Rebrickable 3001apr0001, Set 657
 // 
 // 0 !HISTORY 2004-02-08 [Steffen] used s\3001s01.dat
 // 0 !HISTORY 2004-09-15 [PTadmin] Official Update 2004-03

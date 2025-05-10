@@ -14,7 +14,7 @@ function ldraw_lib__76382pdgb() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb4695c01, Brickowl 190976, CMF, Collectable
+// 0 !KEYWORDS Bricklink 973pb4695c01, CMF, Collectable
 // 0 !KEYWORDS Rebrickable 973c27h02pr0001, set 71033, Swedish Chef, The Muppets
 // 
 // 0 !HISTORY 2024-08-26 [OrionP] Official Update 2024-07

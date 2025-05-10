@@ -16,6 +16,7 @@ function ldraw_lib__35660p04() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
+// 0 !KEYWORDS BrickLink 35660pb03, Rebrickable 35660pat0003, Set 40526
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
 // 

@@ -12,7 +12,7 @@ function ldraw_lib__69730() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Control+, Technic
+// 0 !KEYWORDS BrickLink 54675c02, Control+, Technic
 // 
 // 0 !HISTORY 2024-05-28 [OrionP] Official Update 2024-04
 // 

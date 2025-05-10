@@ -12,7 +12,8 @@ function ldraw_lib__67017p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 67017pb01, Bricklink 67017pb02, hat, Set 71360, Set 71370
+// 0 !KEYWORDS Bricklink 67017pb01, hat, Rebrickable 67017pr0001, Set 71360
+// 0 !KEYWORDS Set 71370
 // 
 // 0 !HISTORY 2022-05-25 {LEGO Instructions App} Original part shape
 // 0 !HISTORY 2022-05-25 [Philo] File preparation for LDraw Parts Tracker

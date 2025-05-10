@@ -12,7 +12,7 @@ function ldraw_lib__3003pt2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !KEYWORDS Bricklink 3003px3, Set 614
+// 0 !KEYWORDS Bricklink 3003px3, Rebrickable 3003apr0058, Set 614
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
 // 

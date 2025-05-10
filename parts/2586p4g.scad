@@ -15,7 +15,7 @@ function ldraw_lib__2586p4g() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS Rebrickable 2586pr0015
+// 0 !KEYWORDS Rebrickable 2586pr0015, Set 10066
 // 
 // 0 !HISTORY 2005-12-28 [PTadmin] Official Update 2005-01
 // 0 !HISTORY 2007-05-17 [PTadmin] Header formatted for Contributor Agreement

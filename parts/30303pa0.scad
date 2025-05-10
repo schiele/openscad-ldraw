@@ -12,7 +12,8 @@ function ldraw_lib__30303pa0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 30303pb01, rock raiders, Set 4980, Transport, Tunnel
+// 0 !KEYWORDS Bricklink 30303pb01, Rebrickable 30303pr0001, rock raiders, Set 4980
+// 0 !KEYWORDS Transport, Tunnel
 // 
 // 0 !HISTORY 2023-11-19 [OrionP] Official Update 2023-06
 // 

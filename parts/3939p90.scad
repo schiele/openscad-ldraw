@@ -13,7 +13,7 @@ function ldraw_lib__3939p90() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !KEYWORDS beta-1 command base, Moon, planet
+// 0 !KEYWORDS beta-1 command base, Moon, planet, Rebrickable 3939pr0002, Set 6890
 // 
 // 0 !HISTORY 2001-12-31 [PTadmin] Official Update 2001-03
 // 0 !HISTORY 2002-08-19 [Holly-Wood] refined pattern, added missing craters

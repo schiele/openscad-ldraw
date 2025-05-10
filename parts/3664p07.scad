@@ -13,9 +13,8 @@ function ldraw_lib__3664p07() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Brick
-// 0 !KEYWORDS animal, bricklink 3664pb04, Brickowl 364308, Duck, Puppy
-// 0 !KEYWORDS Rebrickable 3664pr0019, Set 061-2, Set 063-2, Set 2335, Set 529
-// 0 !KEYWORDS Set 530-2, Set 531, Set 532
+// 0 !KEYWORDS animal, bricklink 3664pb04, Duck, Puppy, Rebrickable 3664pr0019
+// 0 !KEYWORDS Set 061-2, Set 063-2, Set 2335, Set 529, Set 530-2, Set 531, Set 532
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
 // 0 !HISTORY 2022-09-07 [RainbowDolphin] Made top semi-cylinder hi-res to comply with latest part regulations

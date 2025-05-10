@@ -14,7 +14,8 @@ function ldraw_lib__14769p05() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Globert, Mixel
+// 0 !KEYWORDS BrickLink 14769pb026, Globert, Mixel, Rebrickable 14769pr1007
+// 0 !KEYWORDS Set 41533
 // 
 // 0 !HISTORY 2016-12-31 [PTadmin] Official Update 2016-01
 // 

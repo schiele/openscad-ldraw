@@ -13,7 +13,7 @@ function ldraw_lib__766bc01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !KEYWORDS 4.5V, dacta
+// 0 !KEYWORDS 4.5V, BrickLink bb0081c01, dacta, Rebrickable upn0123c01
 // 
 // 0 !CMDLINE -c7
 // 

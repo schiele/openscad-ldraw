@@ -11,7 +11,8 @@ function ldraw_lib__3069bpza() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickheadz, Carbonite, Han Solo, Keyboard, Set 41498
+// 0 !KEYWORDS Brickheadz, BrickLink 3069pb0816, Carbonite, Han Solo, Keyboard
+// 0 !KEYWORDS Rebrickable 3069bpr9993, Set 41498
 // 
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
 // 

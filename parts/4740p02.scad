@@ -11,7 +11,7 @@ function ldraw_lib__4740p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Toadstool
+// 0 !KEYWORDS BrickLink 4740pb009, Rebrickable 4740pr0006, set 10236, Toadstool
 // 
 // 0 !HISTORY 2014-12-23 [PTadmin] Official Update 2014-02
 // 

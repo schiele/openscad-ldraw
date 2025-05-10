@@ -11,7 +11,8 @@ function ldraw_lib__3069bpz0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickheadz, BrickLink 3069bpb557, Iron Man, Set 41590
+// 0 !KEYWORDS Brickheadz, BrickLink 3069pb0557, Iron Man, Rebrickable 3069bpr0195
+// 0 !KEYWORDS Set 41590
 // 
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
 // 

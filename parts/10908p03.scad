@@ -18,7 +18,7 @@ function ldraw_lib__10908p03() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS set 76006, War Machine
+// 0 !KEYWORDS BrickLink 10908pb03, Rebrickable 10908pr0003, set 76006, War Machine
 // 
 // 0 !HISTORY 2013-06-20 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2013-06-20 [MagFors] File preparation for LDraw Parts Tracker

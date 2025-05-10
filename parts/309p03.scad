@@ -12,7 +12,8 @@ function ldraw_lib__309p03() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS aisle, Crosswalk, lanes, road, Service station
+// 0 !KEYWORDS aisle, BrickLink 309px1, Crosswalk, lanes, Rebrickable 309pr0003
+// 0 !KEYWORDS road, Service station, Set 6397
 // 
 // 0 !HISTORY 2005-12-28 [PTadmin] Official Update 2005-01
 // 0 !HISTORY 2007-10-12 [PTadmin] Header formatted for Contributor Agreement

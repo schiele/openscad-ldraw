@@ -21,6 +21,8 @@ function ldraw_lib__4032b() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 4032
+// 
 // 0 !HISTORY 2010-07-05 [PTadmin] Official Update 2010-02
 // 0 !HISTORY 2022-01-02 [MagFors] Reshaped axlehole, removed surface bleeding
 // 0 !HISTORY 2022-05-07 [PTadmin] Official Update 2022-03

@@ -14,6 +14,8 @@ function ldraw_lib__973p12() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS Set 6419
+// 
 // 0 !HISTORY 2001-12-31 [PTadmin] Official Update 2001-03
 // 0 !HISTORY 2007-07-28 [PTadmin] Header formatted for Contributor Agreement
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01

@@ -18,6 +18,8 @@ function ldraw_lib__30145p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS Rebrickable 30145pr0003, Set 4148
+// 
 // 0 !HISTORY 2002-08-18 [PTadmin] Official Update 2002-04
 // 0 !HISTORY 2007-06-06 [PTadmin] Header formatted for Contributor Agreement
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01

@@ -14,8 +14,8 @@ function ldraw_lib__50956p03() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Aérospatiale-BAC, Air France, Bricklink 50956pb054, Brickowl 1075747
-// 0 !KEYWORDS British Airways, Rebrickable 50956pr0003, Set 10318, Supersonic
+// 0 !KEYWORDS Aérospatiale-BAC, Air France, Bricklink 50956pb054, British Airways
+// 0 !KEYWORDS Rebrickable 50956pr0003, Set 10318, Supersonic
 // 
 // 0 !HISTORY 2024-12-01 [OrionP] Official Update 2024-10
 // 

@@ -13,8 +13,8 @@ function ldraw_lib__35809p03() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS Bricklink 35809pb03, BrickOwl 313585, Rebrickable 35809pat0003
-// 0 !KEYWORDS Set 10325, Set 40600, Set 41757, set 42615, Set 43230
+// 0 !KEYWORDS Bricklink 35809pb03, Rebrickable 35809pat0003, Set 10325, Set 40600
+// 0 !KEYWORDS Set 41757, set 42615, Set 43230
 // 
 // 0 !HISTORY 2024-05-28 [OrionP] Official Update 2024-04
 // 0 !HISTORY 2024-08-28 [Cheenzo] Corrected spelling of Grey, Added keyword

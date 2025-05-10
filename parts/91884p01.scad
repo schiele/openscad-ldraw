@@ -16,7 +16,8 @@ function ldraw_lib__91884p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS Boromir, Lord of the Rings, LOTR
+// 0 !KEYWORDS Boromir, BrickLink 91884pb004, Lord of the Rings, LOTR
+// 0 !KEYWORDS Rebrickable 91884pr0005, Set 5001132
 // 
 // 0 !HISTORY 2014-06-21 [PTadmin] Official Update 2014-01
 // 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives

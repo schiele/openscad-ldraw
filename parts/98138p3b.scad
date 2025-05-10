@@ -13,8 +13,8 @@ function ldraw_lib__98138p3b() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 98138pb448, Brickowl 1160090, Insect
-// 0 !KEYWORDS Rebrickable 98138pr0428, Set 42669, Set 42670
+// 0 !KEYWORDS Bricklink 98138pb448, Insect, Rebrickable 98138pr0428, Set 42669
+// 0 !KEYWORDS Set 42670
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

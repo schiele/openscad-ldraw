@@ -14,7 +14,7 @@ function ldraw_lib__76382pb7() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Batman 2006, Bricklink 973pb0222c01, BrickOwl 973558, Gotham City
+// 0 !KEYWORDS Batman 2006, Bricklink 973pb0222c01, Gotham City
 // 0 !KEYWORDS Mini Upper Part No 1278, Oswald Chesterfield
 // 0 !KEYWORDS Rebrickable 973c03h27pr1278, rogues gallery, set 7783, set 7885
 // 0 !KEYWORDS The Penguin

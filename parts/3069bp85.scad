@@ -11,8 +11,8 @@ function ldraw_lib__3069bp85() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3069bpb807, Heart Lake City, LEGO City International
-// 0 !KEYWORDS Set 60261
+// 0 !KEYWORDS BrickLink 3069pb0807, Heart Lake City, LEGO City International
+// 0 !KEYWORDS Rebrickable 3069bpr0285, Set 60261
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
 // 0 !HISTORY 2022-05-09 [OrionP] Updated Description

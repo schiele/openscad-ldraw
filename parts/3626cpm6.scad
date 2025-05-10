@@ -12,7 +12,8 @@ function ldraw_lib__3626cpm6() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Lord of the Rings, Rohan Soldier
+// 0 !KEYWORDS BrickLink 3626pb0724, Lord of the Rings, Rebrickable 3626cpr0979
+// 0 !KEYWORDS Rohan Soldier, set 10236
 // 
 // 0 !CMDLINE -c78
 // 

@@ -15,7 +15,8 @@ function ldraw_lib__93568p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS cake, candy, Cookie, dessert, last course, pastry, sweet, tart
+// 0 !KEYWORDS BrickLink 93568pb001, cake, candy, Cookie, dessert, last course
+// 0 !KEYWORDS pastry, Rebrickable 93568pat0001, set 10235, sweet, tart
 // 
 // 0 !HISTORY 2013-08-14 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2013-08-14 [Holly-Wood] File preparation for LDraw Parts Tracker

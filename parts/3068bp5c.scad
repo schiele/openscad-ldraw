@@ -13,7 +13,7 @@ function ldraw_lib__3068bp5c() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3068bpb2029, Set 10497
+// 0 !KEYWORDS BrickLink 3068pb2029, Rebrickable 3068bpr0663, Set 10497
 // 
 // 0 !HISTORY 2022-09-15 [PTadmin] Official Update 2022-05
 // 0 !HISTORY 2022-10-18 [Cheenzo] Added missing leading spaces in description

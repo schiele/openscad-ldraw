@@ -12,7 +12,8 @@ function ldraw_lib__98138pc3() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 98138pb099, Set 70831, Set 70834, The LEGO Movie 2
+// 0 !KEYWORDS Bricklink 98138pb099, Rebrickable 98138pr0101, Set 70831, Set 70834
+// 0 !KEYWORDS The LEGO Movie 2
 // 
 // 0 !HISTORY 2022-12-20 [PTadmin] Official Update 2022-06
 // 

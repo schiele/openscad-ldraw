@@ -13,8 +13,9 @@ function ldraw_lib__925p0u() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS butcher, Danish, Meat, named beam, set 1210, set 210, Shop
-// 0 !KEYWORDS small store, Town Plan
+// 0 !KEYWORDS BrickLink crssprt01pb29, butcher, Danish, Meat, named beam
+// 0 !KEYWORDS Rebrickable 3008apr0024, set 1210, set 210, Shop, small store
+// 0 !KEYWORDS Town Plan
 // 
 // 0 !HISTORY 2022-09-15 [PTadmin] Official Update 2022-05
 // 

@@ -12,7 +12,8 @@ function ldraw_lib__3039pc6() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS console, controls, display
+// 0 !KEYWORDS BrickLink 3039px5, console, controls, display
+// 0 !KEYWORDS Rebrickable 3039pr0005, set 10159
 // 
 // 0 !HISTORY 2011-07-25 [PTadmin] Official Update 2011-01
 // 0 !HISTORY 2011-09-04 [Darats] Use of a subfile for the radar pattern

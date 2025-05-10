@@ -11,7 +11,8 @@ function ldraw_lib__3005px0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Big Bang Theory, BrickLink 3005pb026, Rice, Set 21302
+// 0 !KEYWORDS Big Bang Theory, BrickLink 3005pb026, Rebrickable 3005pr0013, Rice
+// 0 !KEYWORDS Set 21302
 // 
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
 // 

@@ -12,6 +12,8 @@ function ldraw_lib__3350p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 14pb09, Rebrickable 3350pr0005, Set 10
+// 
 // 0 !HISTORY 2003-08-01 [Steffen] BFCed; made use of primitives and subfiles; added ring primitives to close render gaps
 // 0 !HISTORY 2003-10-26 [Steffen] changed description
 // 0 !HISTORY 2010-04-22 [cwdee] Change white to main colour

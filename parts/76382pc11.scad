@@ -14,7 +14,7 @@ function ldraw_lib__76382pc11() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb0657c01, Brickowl 814360, CMF, collectible minifigure
+// 0 !KEYWORDS Bricklink 973pb0657c01, CMF, collectible minifigure
 // 0 !KEYWORDS Rebrickable 973c26h01pr1533, series 1, Set 8683, tribal hunter
 // 0 !KEYWORDS western, wild west
 // 

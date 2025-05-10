@@ -20,7 +20,8 @@ function ldraw_lib__2599a() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Footwear
-// 0 !KEYWORDS Aquazone, composite, Divers, pair, runner, scuba
+// 0 !KEYWORDS Aquazone, BrickLink 2599sprue, composite, Divers, pair
+// 0 !KEYWORDS Rebrickable 2599, runner, scuba
 // 
 // 0 !HISTORY 2001-10-26 [PTadmin] Official Update 2001-01
 // 0 !HISTORY 2007-10-12 [PTadmin] Header formatted for Contributor Agreement

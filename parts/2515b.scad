@@ -28,7 +28,7 @@ function ldraw_lib__2515b() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Large
+// 0 !KEYWORDS BrickLink 2515, Large, Rebrickable 2515
 // 
 // 0 !HISTORY 2014-06-21 [PTadmin] Official Update 2014-01
 // 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives

@@ -13,7 +13,8 @@ function ldraw_lib__88930pz1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Belle, Brickheadz, BrickLink 88930pb076, Set 41595
+// 0 !KEYWORDS Belle, Brickheadz, BrickLink 88930pb076, Rebrickable 88930pr0012
+// 0 !KEYWORDS Set 41595
 // 
 // 0 !HISTORY 2018-12-08 [PTadmin] Official Update 2018-02
 // 

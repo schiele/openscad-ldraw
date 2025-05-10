@@ -14,7 +14,8 @@ function ldraw_lib__3039pc5() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS Airplane, buttons, computer, console, dials, lights, microphone
-// 0 !KEYWORDS mike, radar, radio, Space, Star Wars, TIE Interceptor, town
+// 0 !KEYWORDS mike, radar, radio, Rebrickable 3039pr9969, Set 1687, Space
+// 0 !KEYWORDS Star Wars, TIE Interceptor, town
 // 
 // 0 !HISTORY 2002-11-30 [PTadmin] Official Update 2002-05
 // 0 !HISTORY 2007-06-09 [PTadmin] Header formatted for Contributor Agreement

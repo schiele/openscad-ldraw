@@ -12,7 +12,8 @@ function ldraw_lib__98138p15() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 98138pb124, Camouflage, Dots, Leopard, Set 41908
+// 0 !KEYWORDS Bricklink 98138pb124, Camouflage, Dots, Leopard
+// 0 !KEYWORDS Rebrickable 98138pr0149, Set 41908
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
 // 

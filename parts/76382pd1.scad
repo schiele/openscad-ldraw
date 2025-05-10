@@ -14,8 +14,8 @@ function ldraw_lib__76382pd1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Actress, Bricklink 973px78c01, BrickOwl 10213, Crop Top
-// 0 !KEYWORDS Mini Upper Part No 485, Rebrickable 973c22h01pr0003, set 1349
+// 0 !KEYWORDS Actress, Bricklink 973px78c01, Crop Top, Mini Upper Part No 485
+// 0 !KEYWORDS Rebrickable 973c22h01pr0003, set 1349
 // 0 !KEYWORDS Steven Spielberg Movie Maker Set, Studios, Vanessa Redbrick
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02

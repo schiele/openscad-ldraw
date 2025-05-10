@@ -14,8 +14,8 @@ function ldraw_lib__30378ps2() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS Attack of the Clones, Episode 1, Episode 2, guard, minifig-scale
-// 0 !KEYWORDS patrol, red droid, security, set 7204, Star Wars, The Phantom Menace
-// 0 !KEYWORDS Trade Federation
+// 0 !KEYWORDS patrol, Rebrickable 30378pr0004, red droid, security, set 7204
+// 0 !KEYWORDS Star Wars, The Phantom Menace, Trade Federation
 // 
 // 0 !CMDLINE -c19
 // 

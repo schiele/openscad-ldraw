@@ -12,7 +12,8 @@ function ldraw_lib__3960p08() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Cockpit, glass, Window
+// 0 !KEYWORDS BrickLink 3960pb018, Cockpit, glass, Rebrickable 3960pr0007
+// 0 !KEYWORDS set 7683, Window
 // 
 // 0 !CMDLINE -c40
 // 

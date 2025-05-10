@@ -11,7 +11,7 @@ function ldraw_lib__3068bpx9() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Arcade, Bricklink 3068bpb0968, Brickowl 698100, Defender, Dimensions
+// 0 !KEYWORDS Arcade, BrickLink 3068pb0968, Defender, Dimensions
 // 0 !KEYWORDS Rebrickable 3068bpr0280, set 71235
 // 
 // 0 !HISTORY 2021-10-26 [Holly-Wood] Deleted superfluous vertices, changed color of some dots, added keywords

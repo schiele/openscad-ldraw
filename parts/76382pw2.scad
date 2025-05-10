@@ -14,12 +14,12 @@ function ldraw_lib__76382pw2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS army, Bricklink 973px43c01, BrickOwl 608389, captain, cavalry
-// 0 !KEYWORDS collar, Fort Legoredo, horse troops, insignia, junior officer
-// 0 !KEYWORDS Legoredo City, lieutenant, Major, Military, Mini Upper Part No 228
-// 0 !KEYWORDS officer, rank, Rebrickable 973c28h27pr0043, set 6706, set 6716
-// 0 !KEYWORDS set 6761, set 6762, set 6769, shoulder, soldier, U.S. Army, Uniform
-// 0 !KEYWORDS United States, veteran, western, wild west
+// 0 !KEYWORDS army, Bricklink 973px43c01, captain, cavalry, collar, Fort Legoredo
+// 0 !KEYWORDS horse troops, insignia, junior officer, Legoredo City, lieutenant
+// 0 !KEYWORDS Major, Military, Mini Upper Part No 228, officer, rank
+// 0 !KEYWORDS Rebrickable 973c28h27pr0043, set 6706, set 6716, set 6761, set 6762
+// 0 !KEYWORDS set 6769, shoulder, soldier, U.S. Army, Uniform, United States
+// 0 !KEYWORDS veteran, western, wild west
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

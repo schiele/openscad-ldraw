@@ -14,7 +14,7 @@ function ldraw_lib__76382pb3() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Batman 2006, Bricklink 973pb0184c01, BrickOwl 952605, Gotham City
+// 0 !KEYWORDS Batman 2006, Bricklink 973pb0184c01, Gotham City
 // 0 !KEYWORDS Mini Upper Part No 1282, Rebrickable 973c09h12pr1282, rogues gallery
 // 0 !KEYWORDS set 7782, set 7888, The Joker
 // 

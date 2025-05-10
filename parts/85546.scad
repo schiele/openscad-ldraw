@@ -13,6 +13,7 @@ function ldraw_lib__85546() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Technic
+// 0 !KEYWORDS BrickLink x90
 // 
 // 0 !HISTORY 2014-12-23 [PTadmin] Official Update 2014-02
 // 

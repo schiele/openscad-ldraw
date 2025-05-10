@@ -17,9 +17,8 @@ function ldraw_lib__73200bpm1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Ãomer, Armor, Bricklink 970c120pb01, Brickowl 849135
-// 0 !KEYWORDS Lord of the Rings, Rebrickable 970c07pr0335, set 9471, set 9474
-// 0 !KEYWORDS ThÃ©oden
+// 0 !KEYWORDS Ãomer, Armor, Bricklink 970c120pb01, Lord of the Rings
+// 0 !KEYWORDS Rebrickable 970c07pr0335, set 9471, set 9474, ThÃ©oden
 // 
 // 0 !HISTORY 2022-01-14 [cwdee] Original part
 // 0 !HISTORY 2023-05-25 [MagFors] Adapted to c-version leg

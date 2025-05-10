@@ -16,7 +16,7 @@ function ldraw_lib__973p71() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS beads, Castle, chain, circles, female, girl, maiden, Princess, queen
-// 0 !KEYWORDS scoop neck, string, town, Trains, woman
+// 0 !KEYWORDS scoop neck, Set 10000, string, town, Trains, woman
 // 
 // 0 !CMDLINE -c15
 // 

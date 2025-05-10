@@ -18,6 +18,8 @@ function ldraw_lib__30210() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS Rebrickable 6919
+// 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
 // 
 // 

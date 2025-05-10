@@ -14,8 +14,8 @@ function ldraw_lib__45755p02() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Bricklink 45755pb02, Brickset 62534, Collectible Minifigures
-// 0 !KEYWORDS Pizza Costume Guy, Series 19
+// 0 !KEYWORDS Bricklink 45755pb02, Collectible Minifigures, Pizza Costume Guy
+// 0 !KEYWORDS Rebrickable 45755pr0020, Series 19, Set 71025-10
 // 
 // 0 !HISTORY 2020-06-28 [PTadmin] Official Update 2020-01
 // 

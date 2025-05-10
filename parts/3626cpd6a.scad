@@ -14,7 +14,8 @@ function ldraw_lib__3626cpd6a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626cpb1718, Lego Batman Movie, Pink Power Batgirl
+// 0 !KEYWORDS BrickLink 3626pb1718, Lego Batman Movie, Pink Power Batgirl
+// 0 !KEYWORDS Rebrickable 3626cpr2114, Set 71017-10
 // 
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
 // 0 !HISTORY 2019-07-30 [cwdee] Update description

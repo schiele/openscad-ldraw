@@ -13,7 +13,7 @@ function ldraw_lib__u826p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Door
-// 0 !KEYWORDS Bricklink dupdoor1pb01, Set 2412
+// 0 !KEYWORDS Bricklink 4248pb01, Rebrickable 4248pr0001, Set 2412
 // 
 // 0 !HISTORY 2022-12-20 [PTadmin] Official Update 2022-06
 // 

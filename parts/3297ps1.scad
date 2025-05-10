@@ -12,7 +12,8 @@ function ldraw_lib__3297ps1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Death Star, Emperor Palpatine, Imperial Shuttle, Star Wars, Tyderian
+// 0 !KEYWORDS BrickLink 3297px4, Death Star, Emperor Palpatine, Imperial Shuttle
+// 0 !KEYWORDS Rebrickable 3297pr0018, set 7166, Star Wars, Tyderian
 // 
 // 0 !CMDLINE -c15
 // 

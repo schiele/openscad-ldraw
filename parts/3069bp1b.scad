@@ -11,7 +11,8 @@ function ldraw_lib__3069bp1b() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Arctic, Bricklink 3069bpb0648, City, Set 21051
+// 0 !KEYWORDS Arctic, BrickLink 3069pb0648, City, Rebrickable 3069bpr9996
+// 0 !KEYWORDS Set 21051
 // 
 // 0 !HISTORY 2022-05-07 [PTadmin] Official Update 2022-03
 // 

@@ -11,7 +11,7 @@ function ldraw_lib__3069bpf4() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Scala, set 4336
+// 0 !KEYWORDS BrickLink 3069pb0100, Rebrickable 3069bpr0083, Scala, set 4336
 // 
 // 0 !HISTORY 2014-06-21 [PTadmin] Official Update 2014-01
 // 0 !HISTORY 2018-01-28 [Steffen] pattern correction: splitup into dark/bright green

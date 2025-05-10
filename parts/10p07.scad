@@ -22,6 +22,8 @@ function ldraw_lib__10p07() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 10px2, Rebrickable 10apr0007, Set 346
+// 
 // 0 !HISTORY 2004-08-29 [mikeheide] Made BFC compliant, used Stud groups primitive
 // 0 !HISTORY 2009-05-02 [PTadmin] Official Update 2009-01
 // 0 !HISTORY 2013-02-03 [MMR1988] updated studgroups, used 10s01.dat

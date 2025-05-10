@@ -12,7 +12,8 @@ function ldraw_lib__3011pt1() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Brick
-// 0 !KEYWORDS bricklink 3011pb007, Farm, set 045-1, set 2650-1
+// 0 !KEYWORDS bricklink 3011pb007, Farm, Rebrickable 3011pr0003, set 045-1
+// 0 !KEYWORDS set 2650-1
 // 
 // 0 !HISTORY 2020-06-28 [PTadmin] Official Update 2020-01
 // 

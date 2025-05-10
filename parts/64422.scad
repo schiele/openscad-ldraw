@@ -13,6 +13,8 @@ function ldraw_lib__64422() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 64424c01, Rebrickable 64424c01
+// 
 // 0 !HISTORY 2011-12-17 [Steffen] replaced color 383 by 494
 // 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02
 // 

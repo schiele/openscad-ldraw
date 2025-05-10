@@ -14,8 +14,8 @@ function ldraw_lib__3626cp01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626cp01, Brickowl 103005, Rebrickable 3626cpr0001
-// 0 !KEYWORDS set 10246, Set 6207, Set 6345
+// 0 !KEYWORDS BrickLink 3626p01, Rebrickable 3626cpr0001, set 10246, Set 6207
+// 0 !KEYWORDS Set 6345
 // 
 // 0 !HISTORY 2013-04-01 [tchang] New part, pattern extract from Tore Eriksson 3626bp01.dat
 // 0 !HISTORY 2013-09-01 [MagFors] Used pattern subfile, extended description

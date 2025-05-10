@@ -11,6 +11,8 @@ function ldraw_lib__3004prc() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS Rebrickable 3004pr9994, set 1062
+// 
 // 0 !HISTORY 1997-09-29 [PTadmin] Official Update 1997-15
 // 0 !HISTORY 2001-10-26 [PTadmin] Official Update 2001-01
 // 0 !HISTORY 2007-05-07 [PTadmin] Header formatted for Contributor Agreement

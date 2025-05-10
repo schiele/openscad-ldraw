@@ -13,7 +13,8 @@ function ldraw_lib__37364p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Animal Crossing, Bricklink 970cm00pb018, set 77051, Wilbur
+// 0 !KEYWORDS Animal Crossing, Bricklink 970cm00pb018, Rebrickable 37364c04pr0001
+// 0 !KEYWORDS set 77051, Wilbur
 // 
 // 0 !HISTORY 2024-12-01 [OrionP] Official Update 2024-10
 // 

@@ -14,9 +14,9 @@ function ldraw_lib__76382pa8() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Adventurers, amazon, belt, Bricklink 973pa8c01, BrickOwl 491900
-// 0 !KEYWORDS camera, compass, Dino Island, Gail Storm, Jungle, Linda Lovelay
-// 0 !KEYWORDS Linda Lovely, Mini Upper Part No 315, pen, Pippin Read, Pippin Reed
+// 0 !KEYWORDS Adventurers, amazon, belt, Bricklink 973pa8c01, camera, compass
+// 0 !KEYWORDS Dino Island, Gail Storm, Jungle, Linda Lovelay, Linda Lovely
+// 0 !KEYWORDS Mini Upper Part No 315, pen, Pippin Read, Pippin Reed
 // 0 !KEYWORDS Rebrickable 973c31h01pr0008, Reporter, Set 1271, Set 5905, Set 5935
 // 0 !KEYWORDS Set 5936, set 5986, set 5987
 // 

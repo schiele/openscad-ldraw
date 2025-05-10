@@ -14,10 +14,10 @@ function ldraw_lib__76382ps5() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bespin, Bricklink 973ps5c01, BrickOwl 113997, Cloud City, Han Solo
-// 0 !KEYWORDS Millennium Falcon, Mini Heroes Collection, Mini Upper Part No 401
-// 0 !KEYWORDS Mos Eisley, Original Trilogy, Rebrickable 973c26h01pr0004, set 10123
-// 0 !KEYWORDS Set 3341, set 4501, set 7190, smuggler, Star Wars
+// 0 !KEYWORDS Bespin, Bricklink 973ps5c01, Cloud City, Han Solo, Millennium Falcon
+// 0 !KEYWORDS Mini Heroes Collection, Mini Upper Part No 401, Mos Eisley
+// 0 !KEYWORDS Original Trilogy, Rebrickable 973c26h01pr0004, set 10123, Set 3341
+// 0 !KEYWORDS set 4501, set 7190, smuggler, Star Wars
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

@@ -12,7 +12,7 @@ function ldraw_lib__49588p04() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 49588pb04, Ninjago, Set 71760
+// 0 !KEYWORDS Bricklink 49588pb04, Ninjago, Rebrickable 49588pat0003, Set 71760
 // 
 // 0 !HISTORY 2023-08-25 [OrionP] Official Update 2023-04
 // 

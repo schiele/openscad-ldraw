@@ -14,7 +14,8 @@ function ldraw_lib__15525p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS BrickLink 15525pb02, CMF Simpsons Series 1, Set 6059283
+// 0 !KEYWORDS BrickLink 15525pb02, CMF Simpsons Series 1, Rebrickable 15525pr0002
+// 0 !KEYWORDS Set 6059283
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 

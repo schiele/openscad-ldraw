@@ -22,7 +22,7 @@ function ldraw_lib__67718() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Mindstorms, Robot Inventor, Set 51515
+// 0 !KEYWORDS BrickLink 67718c01, Mindstorms, Robot Inventor, Set 51515
 // 
 // 0 !HISTORY 2022-05-07 [PTadmin] Official Update 2022-03
 // 

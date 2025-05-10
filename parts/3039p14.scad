@@ -13,7 +13,8 @@ function ldraw_lib__3039p14() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS BrickLink 3039px14, buttons, command, console, Emergency, monitor
-// 0 !KEYWORDS police, rescue, set 4012, set 6398, tape reels, telephone
+// 0 !KEYWORDS police, Rebrickable 3039pr9958, rescue, set 4012, set 6398
+// 0 !KEYWORDS tape reels, telephone
 // 
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04
 // 

@@ -11,8 +11,8 @@ function ldraw_lib__88646p08() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 17836pb013, Bricklink 88646pb013, CMF
-// 0 !KEYWORDS Collectible Minifigures, Dungeons and Dragons, Set 71047
+// 0 !KEYWORDS Bricklink 88646pb013, CMF, Collectible Minifigures
+// 0 !KEYWORDS Dungeons and Dragons, Rebrickable 88646pr0006, Set 71047
 // 
 // 0 !HISTORY 2024-12-01 [OrionP] Official Update 2024-10
 // 

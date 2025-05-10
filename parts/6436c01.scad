@@ -13,6 +13,7 @@ function ldraw_lib__6436c01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Arch
+// 0 !KEYWORDS BrickLink 6436, Rebrickable 6436
 // 
 // 0 !HISTORY 2024-09-30 [OrionP] Official Update 2024-08
 // 

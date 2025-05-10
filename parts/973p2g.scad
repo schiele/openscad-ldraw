@@ -13,6 +13,8 @@ function ldraw_lib__973p2g() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
+// 0 !KEYWORDS Set 6547
+// 
 // 0 !HISTORY 2009-05-02 [PTadmin] Official Update 2009-01
 // 
 // 

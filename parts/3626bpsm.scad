@@ -14,7 +14,8 @@ function ldraw_lib__3626bpsm() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626bpb0252, Owen Lars, Set 10144, Star Wars
+// 0 !KEYWORDS BrickLink 3626pb0252, Owen Lars, Rebrickable 3626bpr0200, Set 10144
+// 0 !KEYWORDS Star Wars
 // 
 // 0 !HISTORY 2024-09-30 [OrionP] Official Update 2024-08
 // 

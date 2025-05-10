@@ -15,9 +15,9 @@ function ldraw_lib__3626bps9() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626bps9, Brickowl 970770, Episode One, face, jedi knight
-// 0 !KEYWORDS moustache, Qui-Gon Jinn, Rebrickable 3626bpr0274, serious, Set 7161
-// 0 !KEYWORDS set 7204, set 7665, Star Wars
+// 0 !KEYWORDS BrickLink 3626ps9, Episode One, face, jedi knight, moustache
+// 0 !KEYWORDS Qui-Gon Jinn, Rebrickable 3626bpr0274, serious, Set 7161, set 7204
+// 0 !KEYWORDS set 7665, Star Wars
 // 
 // 0 !HISTORY 2002-04-25 [PTadmin] Official Update 2002-02
 // 0 !HISTORY 2007-06-29 [PTadmin] Header formatted for Contributor Agreement

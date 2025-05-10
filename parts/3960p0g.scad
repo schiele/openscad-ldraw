@@ -13,8 +13,8 @@ function ldraw_lib__3960p0g() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3960pb070, Brickowl 489020, Rebrickable 3960pr0041
-// 0 !KEYWORDS Set 21333, Starry Night, Vincent Van Gogh
+// 0 !KEYWORDS Bricklink 3960pb070, Rebrickable 3960pr0041, Set 21333, Starry Night
+// 0 !KEYWORDS Vincent Van Gogh
 // 
 // 0 !HISTORY 2024-05-28 [OrionP] Official Update 2024-04
 // 

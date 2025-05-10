@@ -15,7 +15,8 @@ function ldraw_lib__4066bp1o() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Brick
-// 0 !KEYWORDS Airport, bricklink 4066pb114, Maintenance, Set 2679
+// 0 !KEYWORDS Airport, bricklink 4066pb114, Maintenance, Rebrickable 4066pr9998
+// 0 !KEYWORDS Set 2679
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
 // 

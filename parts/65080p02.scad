@@ -13,7 +13,7 @@ function ldraw_lib__65080p02() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS Set 71709
+// 0 !KEYWORDS BrickLink 65080pb02, Rebrickable 65080pat0001, Set 71709
 // 
 // 0 !HISTORY 2023-10-31 [OrionP] Official Update 2023-05
 // 

@@ -11,7 +11,7 @@ function ldraw_lib__3039ps5() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Star Wars
+// 0 !KEYWORDS BrickLink 3039pb044, Rebrickable 3039pr9961, Set 65771, Star Wars
 // 
 // 0 !HISTORY 2014-06-21 [PTadmin] Official Update 2014-01
 // 

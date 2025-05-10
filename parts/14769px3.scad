@@ -20,7 +20,8 @@ function ldraw_lib__14769px3() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 14769pb320, Eye, Minions, Set 75551
+// 0 !KEYWORDS Bricklink 14769pb320, Eye, Minions, Rebrickable 14769pr0021
+// 0 !KEYWORDS Set 75551
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
 // 

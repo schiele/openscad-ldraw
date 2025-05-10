@@ -14,9 +14,9 @@ function ldraw_lib__76382pbi() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Batman, Bricklink 973pb1839, BrickOwl 233632
-// 0 !KEYWORDS Rebrickable 973c12h03pr2922, Set 71200, Set 76026, Set 76034
-// 0 !KEYWORDS Set 76035, Set 76053, Set 76055 Set 76027
+// 0 !KEYWORDS Batman, BrickLink 973pb1839c01, Rebrickable 973c12h03pr2922
+// 0 !KEYWORDS Set 71200, Set 76026, Set 76034, Set 76035, Set 76053
+// 0 !KEYWORDS Set 76055 Set 76027
 // 
 // 0 !HISTORY 2024-12-30 [OrionP] Official Update 2024-11
 // 

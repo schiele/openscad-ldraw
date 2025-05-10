@@ -15,7 +15,7 @@ function ldraw_lib__76098bp01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Vehicle
-// 0 !KEYWORDS Bricklink 32283c02, Brickowl 104290, Engine, Race, Racers, Racing
+// 0 !KEYWORDS Bricklink 32283c02, Engine, Race, Racers, Racing
 // 0 !KEYWORDS Rebrickable 32283c02, Set 4584, Set 4585, Set 4587, Set 4596
 // 
 // 0 !HISTORY 2012-05-18 [cwdee] Use top part instead of half subparts

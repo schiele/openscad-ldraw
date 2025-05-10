@@ -13,7 +13,8 @@ function ldraw_lib__4346p60() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Blacktron, red, Space, yellow
+// 0 !KEYWORDS Blacktron, BrickLink 4346pb05, Rebrickable 4346pr0003, red, Set 4741
+// 0 !KEYWORDS Space, yellow
 // 
 // 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02
 // 

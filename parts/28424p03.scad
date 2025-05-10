@@ -18,7 +18,7 @@ function ldraw_lib__28424p03() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Airplain, Bricklink 28430pb04, Brickowl 987620, Friends, pilot
+// 0 !KEYWORDS Airplain, Bricklink 28430pb04, Friends, pilot
 // 0 !KEYWORDS Rebrickable 28424pr0003, Set 41429
 // 
 // 0 !HISTORY 2023-10-02 [Holly-Wood] Fixed hairline, rearranged subfiles

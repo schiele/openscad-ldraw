@@ -11,8 +11,8 @@ function ldraw_lib__3069bpx4() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3069bpb376, Collectible Minifigures, Date Night Marge
-// 0 !KEYWORDS Purse, The Simpsons
+// 0 !KEYWORDS BrickLink 3069pb0376, Collectible Minifigures, Date Night Marge
+// 0 !KEYWORDS Purse, Rebrickable 3069bpr0141, Set 71009-17, The Simpsons
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 

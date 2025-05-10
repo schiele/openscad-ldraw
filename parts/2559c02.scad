@@ -12,8 +12,8 @@ function ldraw_lib__2559c02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Armada, Pirate, Pirates, Red Beard Runner, set 6289, set 6290, ship
-// 0 !KEYWORDS skull
+// 0 !KEYWORDS Armada, BrickLink 2558c04, Pirate, Pirates, Rebrickable 2559c04
+// 0 !KEYWORDS Red Beard Runner, set 6289, set 6290, ship, skull
 // 
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
 // 

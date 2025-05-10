@@ -11,6 +11,8 @@ function ldraw_lib__6309p0j() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
+// 0 !KEYWORDS Rebrickable 6309pr0115, Set 9518
+// 
 // 0 !HISTORY 2003-12-19 [PTadmin] Official Update 2003-03
 // 0 !HISTORY 2007-07-16 [PTadmin] Header formatted for Contributor Agreement
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01

@@ -11,7 +11,8 @@ function ldraw_lib__4162p0l() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS France, Le Corbusier, Poissy, Set 21014
+// 0 !KEYWORDS BrickLink 4162pb084, France, Le Corbusier, Poissy
+// 0 !KEYWORDS Rebrickable 4162pr0019, Set 21014
 // 
 // 0 !HISTORY 2013-12-23 [PTadmin] Official Update 2013-02
 // 

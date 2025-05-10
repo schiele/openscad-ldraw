@@ -17,8 +17,8 @@ function ldraw_lib__30124bp50() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Bricklink 2446pb07, Brickowl 862049, Rebrickable 2446pr0029
-// 0 !KEYWORDS set 6705, set 6889, Set 6949, Set 6959
+// 0 !KEYWORDS Bricklink 2446pb07, Rebrickable 2446pr0029, set 6705, set 6889
+// 0 !KEYWORDS Set 6949, Set 6959
 // 
 // 0 !HISTORY 2024-07-26 [MagFors] Original pattern made as 2446p50 by Damien Roux
 // 0 !HISTORY 2024-08-26 [OrionP] Official Update 2024-07

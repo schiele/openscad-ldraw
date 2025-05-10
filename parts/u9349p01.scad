@@ -15,7 +15,7 @@ function ldraw_lib__u9349p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS 24-point, Armada, Pirates, windrose
+// 0 !KEYWORDS 24-point, Armada, Pirates, Set 3143, windrose
 // 
 // 0 !HISTORY 2020-06-28 [PTadmin] Official Update 2020-01
 // 

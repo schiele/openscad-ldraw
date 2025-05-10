@@ -15,9 +15,10 @@ function ldraw_lib__3069bpa2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Aquanauts, buttons, circuitry, circuits, controls, display
-// 0 !KEYWORDS engineering, gauge, gold, gold-plate, Life on Mars, machinery, meter
-// 0 !KEYWORDS Space, Star Wars, Sting Ray, wiring
+// 0 !KEYWORDS Aquanauts, BrickLink 3069pa2, buttons, circuitry, circuits, controls
+// 0 !KEYWORDS display, engineering, gauge, gold, gold-plate, Life on Mars
+// 0 !KEYWORDS machinery, meter, Rebrickable 3069bpr0053, Set 5382, Space
+// 0 !KEYWORDS Star Wars, Sting Ray, wiring
 // 
 // 0 !CMDLINE -c8
 // 

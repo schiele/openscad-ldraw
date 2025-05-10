@@ -23,6 +23,8 @@ function ldraw_lib__6099p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 6099px1, Rebrickable 6099pr0001, Set 1245
+// 
 // 0 !HISTORY 2010-04-09 [mikeheide] Moved portion from subpart
 // 0 !HISTORY 2010-12-31 [PTadmin] Official Update 2010-03
 // 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives

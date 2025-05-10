@@ -13,7 +13,8 @@ function ldraw_lib__925p0y() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS carport, named beam, set 1236, Town Plan
+// 0 !KEYWORDS BrickLink crssprt01pb26, carport, named beam
+// 0 !KEYWORDS Rebrickable 3008apr0010, set 1236, Town Plan
 // 
 // 0 !HISTORY 2024-08-26 [OrionP] Official Update 2024-07
 // 

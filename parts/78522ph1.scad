@@ -11,7 +11,8 @@ function ldraw_lib__78522ph1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 78522pb002, Harry Potter, hermione granger, Set 76393
+// 0 !KEYWORDS Bricklink 78522pb002, Harry Potter, hermione granger
+// 0 !KEYWORDS Rebrickable 78522pr0002, Set 76393
 // 
 // 0 !HISTORY 2024-07-29 [OrionP] Official Update 2024-06
 // 

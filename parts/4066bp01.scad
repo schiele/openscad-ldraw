@@ -12,6 +12,7 @@ function ldraw_lib__4066bp01() = [
   [0,"BFC","CW"],
 // 
 // 0 !CATEGORY Brick
+// 0 !KEYWORDS BrickLink 4066pb009, Rebrickable 4066pr0102, Set 2673
 // 
 // 0 !HISTORY 2004-03-02 [PTadmin] Official Update 2004-01
 // 0 !HISTORY 2007-06-30 [PTadmin] Header formatted for Contributor Agreement

@@ -11,7 +11,8 @@ function ldraw_lib__71682pt4() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 71682pb009, McLaren, P1, set 42172
+// 0 !KEYWORDS Bricklink 71682pb009, McLaren, P1, Rebrickable 71682pr0002
+// 0 !KEYWORDS set 42172
 // 
 // 0 !HISTORY 2024-12-01 [OrionP] Official Update 2024-10
 // 

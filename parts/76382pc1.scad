@@ -14,9 +14,8 @@ function ldraw_lib__76382pc1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Avengers, Bricklink 973pb2194c01, BrickOwl 609184, Captain Marvel
-// 0 !KEYWORDS Carol Danvers, Marvel, Rebrickable 973c05h22pr3308, set 76049
-// 0 !KEYWORDS Super Heroes
+// 0 !KEYWORDS Avengers, Bricklink 973pb2194c01, Captain Marvel, Carol Danvers
+// 0 !KEYWORDS Marvel, Rebrickable 973c05h22pr3308, set 76049, Super Heroes
 // 
 // 0 !HISTORY 2024-12-30 [OrionP] Official Update 2024-11
 // 

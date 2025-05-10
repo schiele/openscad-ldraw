@@ -13,7 +13,7 @@ function ldraw_lib__973p4v() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !KEYWORDS Castle, civilian, Villager
+// 0 !KEYWORDS Bricklink 973pb0537, Castle, civilian, Set 10223, Villager
 // 
 // 0 !HISTORY 2011-07-25 [PTadmin] Official Update 2011-01
 // 0 !HISTORY 2020-09-30 [ejboer] Used updated pattern from 973p4y

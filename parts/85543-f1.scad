@@ -13,6 +13,7 @@ function ldraw_lib__85543_f1() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Technic
+// 0 !KEYWORDS BrickLink x71, Rebrickable 85543
 // 
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
 // 

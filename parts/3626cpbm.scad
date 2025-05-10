@@ -14,8 +14,8 @@ function ldraw_lib__3626cpbm() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626cpb1642, Doctor Strange, Dr. Strange, Marvel
-// 0 !KEYWORDS Superheros
+// 0 !KEYWORDS BrickLink 3626pb1642, Doctor Strange, Dr. Strange, Marvel
+// 0 !KEYWORDS Rebrickable 3626cpr1997, Set 76060, Superheros
 // 
 // 0 !CMDLINE -c78
 // 

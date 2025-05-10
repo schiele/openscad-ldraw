@@ -18,7 +18,8 @@ function ldraw_lib__61190a() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS clone, Star Wars, storm trooper, Weapon
+// 0 !KEYWORDS BrickLink 61190f, clone, Rebrickable 61190f, Star Wars
+// 0 !KEYWORDS storm trooper, Weapon
 // 
 // 0 !HISTORY 2010-07-05 [PTadmin] Official Update 2010-02
 // 

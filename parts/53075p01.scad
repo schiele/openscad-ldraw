@@ -13,7 +13,8 @@ function ldraw_lib__53075p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS Bricklink 53075pb01, CMF, Collectible Minifigures, Dackel
-// 0 !KEYWORDS Sausage Dog, Series 19, Set 71025, Teckel, Wiener Dog
+// 0 !KEYWORDS Rebrickable 53075pr0001, Sausage Dog, Series 19, Set 71025, Teckel
+// 0 !KEYWORDS Wiener Dog
 // 
 // 0 !HISTORY 2020-12-12 {LEGO/Unity Microgame} Original part shape
 // 0 !HISTORY 2021-01-14 [GeraldLasser] File preparation for LDraw Parts Tracker

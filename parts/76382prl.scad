@@ -14,11 +14,11 @@ function ldraw_lib__76382prl() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Ben Solo, Bricklink 973pb3039c01, BrickOwl 540097, Episode IX
-// 0 !KEYWORDS Episode VII, Episode VIII, First Order, Knights of Ren
-// 0 !KEYWORDS microfighters, Mini Upper Part No 4005, Rebrickable 973c03h03pr4005
-// 0 !KEYWORDS Set 75179, Set 75196, Set 75216, Set 75256, Set 75264, sith
-// 0 !KEYWORDS Star Wars, Supreme Leader, The Force Awakens, The Last Jedi
+// 0 !KEYWORDS Ben Solo, Bricklink 973pb3039c01, Episode IX, Episode VII
+// 0 !KEYWORDS Episode VIII, First Order, Knights of Ren, microfighters
+// 0 !KEYWORDS Mini Upper Part No 4005, Rebrickable 973c03h03pr4005, Set 75179
+// 0 !KEYWORDS Set 75196, Set 75216, Set 75256, Set 75264, sith, Star Wars
+// 0 !KEYWORDS Supreme Leader, The Force Awakens, The Last Jedi
 // 0 !KEYWORDS The Rise of Skywalker
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02

@@ -17,8 +17,8 @@ function ldraw_lib__73200bp8i() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 970c00pb0327, Brickowl 881647, Emmet
-// 0 !KEYWORDS Rebrickable 970c34pr0725, Robot, Set 70816
+// 0 !KEYWORDS Bricklink 970c00pb0327, Emmet, Rebrickable 970c34pr0725, Robot
+// 0 !KEYWORDS Set 70816
 // 
 // 0 !HISTORY 2020-06-10 [cwdee] Original design
 // 0 !HISTORY 2023-05-22 [Holly-Wood] Adapted to corrected geometry

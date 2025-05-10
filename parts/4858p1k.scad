@@ -12,7 +12,8 @@ function ldraw_lib__4858p1k() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !KEYWORDS 6553, Cameraman, Crisis, helicopter, News, Reporter, television, van
+// 0 !KEYWORDS 6553, BrickLink 4858px1, Cameraman, Crisis, helicopter, News
+// 0 !KEYWORDS Rebrickable 4858pr0002, Reporter, Set 6553, television, van
 // 
 // 0 !HISTORY 2004-11-06 [PTadmin] Official Update 2004-04
 // 0 !HISTORY 2007-07-09 [PTadmin] Header formatted for Contributor Agreement

@@ -14,8 +14,8 @@ function ldraw_lib__76382p3z() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb2527c01, BrickOwl 953187, gizmo, Gremlins
-// 0 !KEYWORDS Rebrickable 973c19h02pr3536, Set 71256
+// 0 !KEYWORDS Bricklink 973pb2527c01, gizmo, Gremlins, Rebrickable 973c19h02pr3536
+// 0 !KEYWORDS Set 71256
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

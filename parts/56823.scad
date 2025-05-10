@@ -13,7 +13,7 @@ function ldraw_lib__56823() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS Bricklink x77ac20, Set 4557, set 4564
+// 0 !KEYWORDS BrickLink x77a, Set 4557, set 4564
 // 
 // 0 !CMDLINE -c0
 // 

@@ -13,9 +13,8 @@ function ldraw_lib__3626bpab() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Aquazone, Bricklink 3626bpx114, Brickowl 296865
-// 0 !KEYWORDS Rebrickable 3626bpr0291, Set 1728, Set 1749, Set 1806, Set 1822
-// 0 !KEYWORDS Set 6145, Set 6195
+// 0 !KEYWORDS Aquazone, BrickLink 3626px114, Rebrickable 3626bpr0291, Set 1728
+// 0 !KEYWORDS Set 1749, Set 1806, Set 1822, Set 6145, Set 6195
 // 
 // 0 !HISTORY 2019-12-27 [PTadmin] Official Update 2019-03
 // 0 !HISTORY 2024-08-29 [Lego-Manfred] Reference added

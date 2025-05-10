@@ -14,8 +14,8 @@ function ldraw_lib__76382p2k() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973px5c01, BrickOwl 319016, Paradisa
-// 0 !KEYWORDS Rebrickable 973c36h01pr0005, Set 6418, Trains
+// 0 !KEYWORDS Bricklink 973px5c01, Paradisa, Rebrickable 973c36h01pr0005, Set 6418
+// 0 !KEYWORDS Trains
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

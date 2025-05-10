@@ -13,8 +13,8 @@ function ldraw_lib__66855p07() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 66855pb07, BrickOwl 932634, Cap, Mushroom
-// 0 !KEYWORDS Rebrickable 66855pr0006, Set 71413, Super Mario, Toad
+// 0 !KEYWORDS Bricklink 66855pb07, Cap, Mushroom, Rebrickable 66855pr0006
+// 0 !KEYWORDS Set 71413, Super Mario, Toad
 // 
 // 0 !HISTORY 2024-06-30 [OrionP] Official Update 2024-05
 // 

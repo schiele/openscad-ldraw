@@ -14,9 +14,8 @@ function ldraw_lib__76382py1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb3588c01, Brickowl 267598, Jacket
-// 0 !KEYWORDS Rebrickable 973c28h14pr4584, Set 75891, Speed Champions, sport
-// 0 !KEYWORDS Uniform
+// 0 !KEYWORDS Bricklink 973pb3588c01, Jacket, Rebrickable 973c28h14pr4584
+// 0 !KEYWORDS Set 75891, Speed Champions, sport, Uniform
 // 
 // 0 !HISTORY 2024-12-01 [OrionP] Official Update 2024-10
 // 

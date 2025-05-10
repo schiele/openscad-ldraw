@@ -13,6 +13,7 @@ function ldraw_lib__685p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Figure
+// 0 !KEYWORDS BrickLink 685px1, Rebrickable 685pr0001, Set 215
 // 
 // 0 !CMDLINE -c14
 // 

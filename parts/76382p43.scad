@@ -14,9 +14,9 @@ function ldraw_lib__76382p43() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bird, Black Knights, Bricklink 973p43c01, BrickOwl 165396, Castle
-// 0 !KEYWORDS Coat of Arms, eagle, Rebrickable 973c03h01pr0043, Set 6011, Set 6030
-// 0 !KEYWORDS Set 6035, Set 6057, Set 6062, Set 6073, Set 6074, Set 6102, Set 6103
+// 0 !KEYWORDS Bird, Black Knights, Bricklink 973p43c01, Castle, Coat of Arms
+// 0 !KEYWORDS eagle, Rebrickable 973c03h01pr0043, Set 6011, Set 6030, Set 6035
+// 0 !KEYWORDS Set 6057, Set 6062, Set 6073, Set 6074, Set 6102, Set 6103
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

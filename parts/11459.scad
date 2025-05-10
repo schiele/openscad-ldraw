@@ -15,6 +15,7 @@ function ldraw_lib__11459() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
+// 0 !KEYWORDS Rebrickable 11251
 // 
 // 0 !HISTORY 2014-01-09 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2014-01-09 [angmarec] File preparation for LDraw Parts Tracker

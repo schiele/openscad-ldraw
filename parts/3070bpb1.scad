@@ -13,7 +13,7 @@ function ldraw_lib__3070bpb1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS BrickLink 3070bpb082
+// 0 !KEYWORDS BrickLink 3070pb082, Rebrickable 3070bpr0001, Set 41237
 // 
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
 // 

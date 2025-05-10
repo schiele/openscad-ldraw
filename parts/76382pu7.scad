@@ -14,11 +14,11 @@ function ldraw_lib__76382pu7() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb0906c01, Brickowl 536347, City, Creator
-// 0 !KEYWORDS Rebrickable 973c34h01pr1801, set 10235, set 10244, set 10247
-// 0 !KEYWORDS Set 10257, Set 19003, Set 31026, Set 31053, Set 31068, Set 31081
-// 0 !KEYWORDS set 4000022, Set 4207, set 45805, Set 5770, Set 60026, Set 60057
-// 0 !KEYWORDS set 75876, Set 75883, Set 80105, Speed Champions
+// 0 !KEYWORDS Bricklink 973pb0906c01, City, Creator, Rebrickable 973c34h01pr1801
+// 0 !KEYWORDS set 10235, set 10244, set 10247, Set 10257, Set 19003, Set 31026
+// 0 !KEYWORDS Set 31053, Set 31068, Set 31081, set 4000022, Set 4207, set 45805
+// 0 !KEYWORDS Set 5770, Set 60026, Set 60057, set 75876, Set 75883, Set 80105
+// 0 !KEYWORDS Speed Champions
 // 
 // 0 !HISTORY 2024-12-30 [OrionP] Official Update 2024-11
 // 

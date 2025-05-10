@@ -20,8 +20,8 @@ function ldraw_lib__14769ph1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Alastor Moody, Brickheadz, Bricklink 14769pb536, Brickowl 19809, Eye
-// 0 !KEYWORDS Harry Potter, Rebrickable 14769pr1238, Set 40560
+// 0 !KEYWORDS Alastor Moody, Brickheadz, Bricklink 14769pb536, Eye, Harry Potter
+// 0 !KEYWORDS Rebrickable 14769pr1238, Set 40560
 // 
 // 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
 // 0 !HISTORY 2024-05-28 [OrionP] Official Update 2024-04

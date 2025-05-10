@@ -11,8 +11,8 @@ function ldraw_lib__87079pdec() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 87079pb0932, Brickowl 712709, CMF, Looney Tunes, Porky Pig
-// 0 !KEYWORDS Rebrickable 87079pr9977, Set 71030
+// 0 !KEYWORDS Bricklink 87079pb0932, CMF, Looney Tunes, Porky Pig
+// 0 !KEYWORDS Rebrickable 87079pr0233, Set 71030
 // 
 // 0 !HISTORY 2024-08-26 [OrionP] Official Update 2024-07
 // 

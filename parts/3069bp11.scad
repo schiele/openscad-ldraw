@@ -12,8 +12,7 @@ function ldraw_lib__3069bp11() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3069bpb0012, BrickOwl 64628, Rebrickable 3069bpr0034
-// 0 !KEYWORDS set 608-2
+// 0 !KEYWORDS BrickLink 3069pb0012, Rebrickable 3069bpr0034, set 608-2
 // 
 // 0 !HISTORY 2004-11-06 [PTadmin] Official Update 2004-04
 // 0 !HISTORY 2007-06-13 [PTadmin] Header formatted for Contributor Agreement

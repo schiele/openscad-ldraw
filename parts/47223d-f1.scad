@@ -13,6 +13,8 @@ function ldraw_lib__47223d_f1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 4694cc01, Rebrickable 47223b
+// 
 // 0 !HISTORY 2018-01-30 [PTadmin] Official Update 2018-01
 // 
 // 

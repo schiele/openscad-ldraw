@@ -14,8 +14,8 @@ function ldraw_lib__76382p6g() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb1684c01, BrickOwl 284187, Rebrickable 973c28h28pr2715
-// 0 !KEYWORDS Set 70816, The LEGO Movie, Wyldstyle
+// 0 !KEYWORDS Bricklink 973pb1684c01, Rebrickable 973c28h28pr2715, Set 70816
+// 0 !KEYWORDS The LEGO Movie, Wyldstyle
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

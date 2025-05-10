@@ -16,7 +16,7 @@ function ldraw_lib__48288p02() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS BrickLink 48288pb03, Center Ice, Center Line, Face Off, Hockey
-// 0 !KEYWORDS Neutral Zone, NHL, Rebrickable 48288pr0003
+// 0 !KEYWORDS Neutral Zone, NHL, Rebrickable 48288pr0003, Set 3578
 // 
 // 0 !HISTORY 2009-05-02 [PTadmin] Official Update 2009-01
 // 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives

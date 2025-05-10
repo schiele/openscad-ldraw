@@ -13,7 +13,8 @@ function ldraw_lib__3626cpd8k() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Black Vulcan, Bricklink 3626cpb1992, Lego Batman Movie, set 71020
+// 0 !KEYWORDS Black Vulcan, BrickLink 3626pb1992, Lego Batman Movie
+// 0 !KEYWORDS Rebrickable 3626cpr2434, set 71020
 // 
 // 0 !HISTORY 2018-12-08 [PTadmin] Official Update 2018-02
 // 0 !HISTORY 2022-07-11 [MagFors] Update description, added keywords

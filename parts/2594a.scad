@@ -18,7 +18,8 @@ function ldraw_lib__2594a() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Castle, Clay Bot, Fantasy Era, knight, Knights
+// 0 !KEYWORDS BrickLink x126, Castle, Clay Bot, Fantasy Era, knight, Knights
+// 0 !KEYWORDS Rebrickable 2594
 // 
 // 0 !HISTORY 2024-07-31 [MagFors] made a and b version
 // 0 !HISTORY 2024-08-26 [OrionP] Official Update 2024-07

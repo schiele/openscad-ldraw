@@ -11,7 +11,8 @@ function ldraw_lib__2431pza() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Boba Fett, Brickheadz, Set 41498
+// 0 !KEYWORDS Boba Fett, Brickheadz, BrickLink 2431pb852, Rebrickable 2431pr0146
+// 0 !KEYWORDS Set 41498
 // 
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
 // 

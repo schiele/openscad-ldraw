@@ -15,7 +15,7 @@ function ldraw_lib__18394p03() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS Bricklink 18394pb03, Set 71042, Wave
+// 0 !KEYWORDS Bricklink 18394pb03, Rebrickable 18394pat0003, Set 71042, Wave
 // 
 // 0 !HISTORY 2016-03-18 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2021-12-26 [Philo] File preparation for LDraw Parts Tracker

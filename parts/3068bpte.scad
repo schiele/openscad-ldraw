@@ -11,7 +11,7 @@ function ldraw_lib__3068bpte() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3068pb1725, Brickowl 1205765, Marvel, Multipack 79994
+// 0 !KEYWORDS Bricklink 3068pb1725, Marvel, Multipack 79994
 // 0 !KEYWORDS Rebrickable 3068bpr9764, Set 76178
 // 
 // 0 !HISTORY 2024-04-28 [OrionP] Official Update 2024-03

@@ -13,7 +13,7 @@ function ldraw_lib__822ec01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 823cl, Lego Mursten
+// 0 !KEYWORDS Bricklink 823cl, Lego Mursten, Rebrickable 822e
 // 
 // 0 !HISTORY 2023-12-31 [OrionP] Official Update 2023-07
 // 

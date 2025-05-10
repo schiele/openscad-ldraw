@@ -12,7 +12,7 @@ function ldraw_lib__3003pt1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3003pb008, Set 642
+// 0 !KEYWORDS Bricklink 3003pb008, Rebrickable 3003apr0056, Set 642
 // 
 // 0 !HISTORY 2004-11-09 [Steffen] Shared pattern with Brick 1 x 4; thanks to mikeheide for vectorizing the pattern
 // 0 !HISTORY 2009-05-02 [PTadmin] Official Update 2009-01

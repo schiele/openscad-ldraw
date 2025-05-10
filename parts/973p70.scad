@@ -14,7 +14,7 @@ function ldraw_lib__973p70() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS town
+// 0 !KEYWORDS set 10159, town
 // 
 // 0 !CMDLINE -c6
 // 

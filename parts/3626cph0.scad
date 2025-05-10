@@ -12,8 +12,8 @@ function ldraw_lib__3626cph0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626cpb2479, Clock Tower, Hogwarts, Madame Maxime
-// 0 !KEYWORDS Set 75948
+// 0 !KEYWORDS BrickLink 3626pb2479, Clock Tower, Hogwarts, Madame Maxime
+// 0 !KEYWORDS Rebrickable 3626cpr2911, Set 75948
 // 
 // 0 !HISTORY 2022-03-03 [MagFors] Corrected colour
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04

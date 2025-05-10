@@ -17,10 +17,9 @@ function ldraw_lib__73200bpn4() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 970c00pb0692, Brickowl 528793, CMF
-// 0 !KEYWORDS Collectible Minifigures, Ninjago, Rebrickable 970c26pr1339
-// 0 !KEYWORDS Sensei Wu, Set 70608, Set 70612, Set 70618, set 71019
-// 0 !KEYWORDS The LEGO Ninjago Movie, Zori
+// 0 !KEYWORDS Bricklink 970c00pb0692, CMF, Collectible Minifigures, Ninjago
+// 0 !KEYWORDS Rebrickable 970c26pr1339, Sensei Wu, Set 70608, Set 70612, Set 70618
+// 0 !KEYWORDS set 71019, The LEGO Ninjago Movie, Zori
 // 
 // 0 !HISTORY 2024-05-28 [OrionP] Official Update 2024-04
 // 

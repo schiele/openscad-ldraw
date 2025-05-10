@@ -13,7 +13,7 @@ function ldraw_lib__66855p06() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 66855pb06, Mushroom, Rebrickable 66855pr0005, Set 71403
+// 0 !KEYWORDS Bricklink 66855pb05, Mushroom, Rebrickable 66855pr0009, Set 71403
 // 0 !KEYWORDS Super Mario
 // 
 // 0 !HISTORY 2024-06-30 [OrionP] Official Update 2024-05

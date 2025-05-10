@@ -21,7 +21,8 @@ function ldraw_lib__22472p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Beatles, set 21306, yellow submarine
+// 0 !KEYWORDS Beatles, BrickLink 22472c03pb05, Rebrickable 22472c01pr0005
+// 0 !KEYWORDS set 21306, yellow submarine
 // 
 // 0 !HISTORY 2018-12-08 [PTadmin] Official Update 2018-02
 // 

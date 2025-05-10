@@ -12,7 +12,8 @@ function ldraw_lib__2468p54() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS BrickLink 2468pb03, Rebrickable 2468pr0002, Space Police I Logo
+// 0 !KEYWORDS BrickLink 2468pb03, Rebrickable 2468pr0002, Set 6886
+// 0 !KEYWORDS Space Police I Logo
 // 
 // 0 !HISTORY 2004-09-15 [PTadmin] Official Update 2004-03
 // 0 !HISTORY 2007-05-13 [PTadmin] Header formatted for Contributor Agreement

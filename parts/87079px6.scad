@@ -11,7 +11,8 @@ function ldraw_lib__87079px6() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 87079pb225, Ghast, Minecraft, Set 21122
+// 0 !KEYWORDS BrickLink 87079pb0225, Ghast, Minecraft, Rebrickable 87079pr0068
+// 0 !KEYWORDS Set 21122
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 

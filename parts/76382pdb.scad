@@ -14,10 +14,10 @@ function ldraw_lib__76382pdb() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Actor, Bricklink 973px172c01, BrickOwl 357964, dapper, film
-// 0 !KEYWORDS gentleman, gold chain, gold watch, hero, horror
-// 0 !KEYWORDS Mini Upper Part No 625, Monster, Movie, Rebrickable 973c26h01pr0172
-// 0 !KEYWORDS Set 1380, Set 1381, set 1382, Studio, vest, Victorian, watchfob
+// 0 !KEYWORDS Actor, Bricklink 973px172c01, dapper, film, gentleman, gold chain
+// 0 !KEYWORDS gold watch, hero, horror, Mini Upper Part No 625, Monster, Movie
+// 0 !KEYWORDS Rebrickable 973c26h01pr0172, Set 1380, Set 1381, set 1382, Studio
+// 0 !KEYWORDS vest, Victorian, watchfob
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

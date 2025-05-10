@@ -17,7 +17,7 @@ function ldraw_lib__u9164() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Fabuland, television, TV
+// 0 !KEYWORDS BrickLink fabbd5, Fabuland, Rebrickable fabupn0012, television, TV
 // 
 // 0 !HISTORY 2011-07-25 [PTadmin] Official Update 2011-01
 // 

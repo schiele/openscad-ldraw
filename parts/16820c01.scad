@@ -14,7 +14,7 @@ function ldraw_lib__16820c01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Hipwear
-// 0 !KEYWORDS Lisa, Simpson, Simpsons
+// 0 !KEYWORDS BrickLink 16820, Lisa, Rebrickable 16820, Simpson, Simpsons
 // 
 // 0 !HISTORY 2015-10-11 [PTadmin] Official Update 2015-01
 // 

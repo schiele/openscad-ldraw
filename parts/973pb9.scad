@@ -13,7 +13,7 @@ function ldraw_lib__973pb9() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Super Heroes
+// 0 !KEYWORDS Set 10724, Super Heroes
 // 
 // 0 !HISTORY 2012-08-09 [PTadmin] Official Update 2012-02
 // 

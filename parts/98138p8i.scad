@@ -12,8 +12,8 @@ function ldraw_lib__98138p8i() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 98138pb256, Brickowl 188595, Christmas
-// 0 !KEYWORDS Rebrickable 98138pr0255, Set 10293, X-mas
+// 0 !KEYWORDS Bricklink 98138pb256, Christmas, Rebrickable 98138pr0255, Set 10293
+// 0 !KEYWORDS X-mas
 // 
 // 0 !HISTORY 2024-08-26 [OrionP] Official Update 2024-07
 // 

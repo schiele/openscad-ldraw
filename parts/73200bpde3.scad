@@ -17,7 +17,8 @@ function ldraw_lib__73200bpde3() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 970c00pb1206, Looney Tunes, Set 71030, Wile E. Coyote
+// 0 !KEYWORDS Bricklink 970c00pb1206, Looney Tunes, Rebrickable 970c19pr2042
+// 0 !KEYWORDS Set 71030, Wile E. Coyote
 // 
 // 0 !HISTORY 2024-08-26 [OrionP] Official Update 2024-07
 // 

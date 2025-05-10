@@ -14,11 +14,10 @@ function ldraw_lib__76382psr() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973px160c01, BrickOwl 980036, C-3PO, C3PO
-// 0 !KEYWORDS Mini Upper Part No 1339, Original Trilogy
-// 0 !KEYWORDS Rebrickable 973c56h56pr0160, See-Threepio, Set 10144, Set 10188
-// 0 !KEYWORDS set 10198, Set 4475, Set 4504, Set 7106, set 7190, Set 8092
-// 0 !KEYWORDS Set 8129, Star Wars
+// 0 !KEYWORDS Bricklink 973px160c01, C-3PO, C3PO, Mini Upper Part No 1339
+// 0 !KEYWORDS Original Trilogy, Rebrickable 973c56h56pr0160, See-Threepio
+// 0 !KEYWORDS Set 10144, Set 10188, set 10198, Set 4475, Set 4504, Set 7106
+// 0 !KEYWORDS set 7190, Set 8092, Set 8129, Star Wars
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

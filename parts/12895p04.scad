@@ -19,8 +19,8 @@ function ldraw_lib__12895p04() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Bricklink 12895pb04, Brickowl 772219, Bus Uniform
-// 0 !KEYWORDS Rebrickable 12895pr0113, Set 75957, Stan Shunpike
+// 0 !KEYWORDS Bricklink 12895pb04, Bus Uniform, Rebrickable 12895pr0113, Set 75957
+// 0 !KEYWORDS Stan Shunpike
 // 
 // 0 !HISTORY 2023-01-29 [MagFors] Further subfiling
 // 0 !HISTORY 2023-10-31 [OrionP] Official Update 2023-05

@@ -30,6 +30,8 @@ function ldraw_lib__862a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
+// 0 !KEYWORDS BrickLink 3242apb01, Rebrickable 3242d
+// 
 // 0 !CMDLINE -c7
 // 
 // 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01

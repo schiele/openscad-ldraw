@@ -12,7 +12,7 @@ function ldraw_lib__3443bc06() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3443c08, set 7722
+// 0 !KEYWORDS Bricklink 3443c08, Rebrickable 3443c01, set 7722
 // 
 // 0 !HISTORY 2021-05-03 [Holly-Wood] Changed description, added keywords
 // 0 !HISTORY 2021-10-30 [RainbowDolphin] Colour variant of 3443bc04 by Willy Tschager [Holly-Wood]

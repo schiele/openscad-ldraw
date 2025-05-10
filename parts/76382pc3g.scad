@@ -14,7 +14,7 @@ function ldraw_lib__76382pc3g() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Baseball Player, Bricklink 973pb0788c01, BrickOwl 392107, CMF
+// 0 !KEYWORDS Baseball Player, Bricklink 973pb0788c01, CMF
 // 0 !KEYWORDS Rebrickable 973c27h01pr1701, Series 3, Set 8803, Sports
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02

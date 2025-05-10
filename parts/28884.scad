@@ -13,7 +13,7 @@ function ldraw_lib__28884() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Sheet Cardboard
-// 0 !KEYWORDS Set 42058, Stunt Bike
+// 0 !KEYWORDS BrickLink 42058ppr01, Set 42058, Stunt Bike
 // 
 // 0 !HISTORY 2024-04-28 [OrionP] Official Update 2024-03
 // 

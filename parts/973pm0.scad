@@ -12,7 +12,7 @@ function ldraw_lib__973pm0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Armor, Lord of the Rings, Uruk-hai
+// 0 !KEYWORDS Armor, Lord of the Rings, Set 10237, Uruk-hai
 // 
 // 0 !HISTORY 2012-12-28 [PTadmin] Official Update 2012-03
 // 0 !HISTORY 2020-11-14 [cwdee] Correct description

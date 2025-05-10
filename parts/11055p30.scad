@@ -12,7 +12,8 @@ function ldraw_lib__11055p30() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Barracuda Bay, Bricklink 2335pb212, set 21322
+// 0 !KEYWORDS Barracuda Bay, Bricklink 2335pb212, Rebrickable 11055pr9999
+// 0 !KEYWORDS set 21322
 // 
 // 0 !HISTORY 2023-03-05 [OrionP] Official Update 2023-01
 // 

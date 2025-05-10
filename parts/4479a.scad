@@ -28,6 +28,7 @@ function ldraw_lib__4479a() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
+// 0 !KEYWORDS BrickLink 4479, Rebrickable 4479
 // 
 // 0 !HISTORY 2016-11-14 [Philo] Adapted from Tore Eriksson's 4479 to fit LDD shape
 // 0 !HISTORY 2016-12-31 [PTadmin] Official Update 2016-01

@@ -13,7 +13,7 @@ function ldraw_lib__37364pdg4() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 970cm00pb013, Brickowl 15344, CMF, Collectable, Gonzo
+// 0 !KEYWORDS Bricklink 970cm00pb013, CMF, Collectable, Gonzo
 // 0 !KEYWORDS Rebrickable 37364c11pr2232, set 71033, The Muppets
 // 
 // 0 !HISTORY 2024-10-27 [OrionP] Official Update 2024-09

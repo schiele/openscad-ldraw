@@ -12,8 +12,8 @@ function ldraw_lib__30166ps0() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS Bricklink 30166pb01, Brickowl 221432, Rebrickable 30166pr0001, Riot
-// 0 !KEYWORDS Rocker Plate, Set 75166, Star Wars
+// 0 !KEYWORDS Bricklink 30166pb01, Rebrickable 30166pr0001, Riot, Rocker Plate
+// 0 !KEYWORDS Set 75166, Star Wars
 // 
 // 0 !HISTORY 2023-08-25 [OrionP] Official Update 2023-04
 // 

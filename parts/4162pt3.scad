@@ -13,7 +13,7 @@ function ldraw_lib__4162pt3() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 4162pb240, Set 10295
+// 0 !KEYWORDS Bricklink 4162pb240, Rebrickable 4162pr0084, Set 10295
 // 
 // 0 !CMDLINE -c4
 // 

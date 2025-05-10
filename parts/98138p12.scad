@@ -12,7 +12,8 @@ function ldraw_lib__98138p12() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 98138pb131, Dog, Dots, Puppy, Set 41908
+// 0 !KEYWORDS Bricklink 98138pb131, Dog, Dots, Puppy, Rebrickable 98138pr0145
+// 0 !KEYWORDS Set 41908
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
 // 

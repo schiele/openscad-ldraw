@@ -16,7 +16,8 @@ function ldraw_lib__3842b() = [
   [0,"BFC","CW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS astronaut, Castle, cosmonaut, knight, motocycle, rider, Space, town
+// 0 !KEYWORDS astronaut, BrickLink 193b2, Castle, cosmonaut, knight, motocycle
+// 0 !KEYWORDS rider, Space, town
 // 
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
 // 

@@ -14,7 +14,7 @@ function ldraw_lib__24246pz0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickheadz, Bricklink 24246pb007, Brickowl 439833, Eye, Frankenstein
+// 0 !KEYWORDS Brickheadz, Bricklink 24246pb007, Eye, Frankenstein
 // 0 !KEYWORDS Rebrickable 24246pr0012, Set 40422
 // 
 // 0 !HISTORY 2024-07-29 [OrionP] Official Update 2024-06

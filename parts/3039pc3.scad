@@ -13,8 +13,9 @@ function ldraw_lib__3039pc3() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Airplane, computer, controls, flight, radar, SP2, Space
-// 0 !KEYWORDS Space Police 2, Space Police II, SPII, Star Wars, TIE Interceptor
+// 0 !KEYWORDS Airplane, computer, controls, flight, radar, Rebrickable 3039pr9971
+// 0 !KEYWORDS Set 4620, SP2, Space, Space Police 2, Space Police II, SPII
+// 0 !KEYWORDS Star Wars, TIE Interceptor
 // 
 // 0 !HISTORY 2003-03-12 [PTadmin] Official Update 2003-01
 // 0 !HISTORY 2007-06-09 [PTadmin] Header formatted for Contributor Agreement

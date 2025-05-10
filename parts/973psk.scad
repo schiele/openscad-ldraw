@@ -16,7 +16,7 @@ function ldraw_lib__973psk() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS Armor, blast armor, Classic Trilogy, Empire, Imperial, Military
-// 0 !KEYWORDS soldier, Star Wars, trooper
+// 0 !KEYWORDS Set 10188, soldier, Star Wars, trooper
 // 
 // 0 !CMDLINE -c15
 // 

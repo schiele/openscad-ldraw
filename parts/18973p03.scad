@@ -11,7 +11,8 @@ function ldraw_lib__18973p03() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 18973pb03, R18, Set 75872, Speed Champions
+// 0 !KEYWORDS Bricklink 18973pb03, R18, Rebrickable 18973pr0003, Set 75872
+// 0 !KEYWORDS Speed Champions
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 0 !HISTORY 2022-06-17 [Sirio] Fixed color of roof (from 80 to 71); added keywords

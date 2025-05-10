@@ -13,7 +13,7 @@ function ldraw_lib__39802p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS BrickLink 39802pb01
+// 0 !KEYWORDS BrickLink 39802pb01, Rebrickable 39802pr0001, Set 11969
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 

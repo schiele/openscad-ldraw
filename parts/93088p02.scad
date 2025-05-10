@@ -14,7 +14,7 @@ function ldraw_lib__93088p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 93088pb01, Brickowl 267067, Charlie, Dog, Friends, Jacky
+// 0 !KEYWORDS Bricklink 93088pb01, Charlie, Dog, Friends, Jacky
 // 0 !KEYWORDS Rebrickable 93088pr0002, Set 3934, Set 3942, set 41026, Set 41099
 // 0 !KEYWORDS Set 561407
 // 

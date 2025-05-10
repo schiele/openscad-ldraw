@@ -13,6 +13,7 @@ function ldraw_lib__15428p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Neckwear
+// 0 !KEYWORDS BrickLink 15428pb01, Rebrickable 15428pr0001, set 30281
 // 
 // 0 !HISTORY 2014-05-16 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2015-11-28 [MagFors] File preparation for LDraw Parts Tracker

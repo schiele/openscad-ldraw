@@ -15,6 +15,7 @@ function ldraw_lib__10190() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Footwear
+// 0 !KEYWORDS BrickLink 2599a
 // 
 // 0 !HISTORY 2013-08-14 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2020-09-14 [Cheenzo] File preparation for LDraw Parts Tracker

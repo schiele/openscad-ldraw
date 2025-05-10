@@ -12,7 +12,7 @@ function ldraw_lib__88646p03() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS Bricklink 88646pb004, CMF, Collectible Minifigures
-// 0 !KEYWORDS Deutscher Fussball Bund, DFB, Set 71014
+// 0 !KEYWORDS Deutscher Fussball Bund, DFB, Rebrickable 88646pr0002, Set 71014
 // 
 // 0 !HISTORY 2024-12-01 [OrionP] Official Update 2024-10
 // 

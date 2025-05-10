@@ -13,9 +13,9 @@ function ldraw_lib__24087p02() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Hipwear
-// 0 !KEYWORDS ballerina, ballet, Bricklink 24087pb02, Brickowl 210954, dance
-// 0 !KEYWORDS Harley Quinn, petticoat, Rebrickable 24087pr0002, set 70916
-// 0 !KEYWORDS The Lego Batman Movie, toe dancing, tutu
+// 0 !KEYWORDS ballerina, ballet, Bricklink 24087pb02, dance, Harley Quinn
+// 0 !KEYWORDS petticoat, Rebrickable 24087pr0002, set 70916, The Lego Batman Movie
+// 0 !KEYWORDS toe dancing, tutu
 // 
 // 0 !HISTORY 2016-03-18 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2016-03-18 [Holly-Wood] File preparation for LDraw Parts Tracker

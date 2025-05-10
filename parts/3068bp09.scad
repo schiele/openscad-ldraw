@@ -13,7 +13,7 @@ function ldraw_lib__3068bp09() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS bricklink 3068bpb0054, Set 6393, truck
+// 0 !KEYWORDS BrickLink 3068pb0054, Rebrickable 3068bpr0109, Set 6393, truck
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
 // 0 !HISTORY 2021-06-20 [RainbowDolphin] Subfiled the pattern for common use with 004760b

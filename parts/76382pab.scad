@@ -14,10 +14,10 @@ function ldraw_lib__76382pab() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Adventurers, amazon, anchor tattoo, Bricklink 973pabc01
-// 0 !KEYWORDS BrickOwl 370742, Gabarro, Gabarros, Jungle, mechanic, mercenary
-// 0 !KEYWORDS Mini Upper Part No 317, oil, Rebrickable 973c01h01pr9995
-// 0 !KEYWORDS river boat captain, sailor, set 5976, set 5986, stripes
+// 0 !KEYWORDS Adventurers, amazon, anchor tattoo, Bricklink 973pabc01, Gabarro
+// 0 !KEYWORDS Gabarros, Jungle, mechanic, mercenary, Mini Upper Part No 317, oil
+// 0 !KEYWORDS Rebrickable 973c01h01pr9995, river boat captain, sailor, set 5976
+// 0 !KEYWORDS set 5986, stripes
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

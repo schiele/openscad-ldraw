@@ -12,8 +12,8 @@ function ldraw_lib__25128p04() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Baby Yoda, Bricklink 25128pb008, Grogu, Set 75318, Star Wars, SW
-// 0 !KEYWORDS The Child
+// 0 !KEYWORDS Baby Yoda, Bricklink 25128pb008, Grogu, Rebrickable 25128c03pr0001
+// 0 !KEYWORDS Set 75318, Star Wars, SW, The Child
 // 
 // 0 !HISTORY 2022-09-15 [PTadmin] Official Update 2022-05
 // 

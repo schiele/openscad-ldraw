@@ -12,7 +12,7 @@ function ldraw_lib__79306_f1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS 16 mm
+// 0 !KEYWORDS 16 mm, BrickLink 79306, Rebrickable 5102c02
 // 
 // 0 !HISTORY 2023-11-19 [OrionP] Official Update 2023-06
 // 

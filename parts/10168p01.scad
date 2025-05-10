@@ -14,7 +14,7 @@ function ldraw_lib__10168p01() = [
 // 
 // 0 !CATEGORY Minifig Headwear
 // 0 !KEYWORDS Bricklink 10168pb01, CMF, Collectible Minifigures, Cowgirl
-// 0 !KEYWORDS Rebrickable, Series 8, set 8833
+// 0 !KEYWORDS Rebrickable 10168pr0001, Series 8, set 8833
 // 
 // 0 !HISTORY 2024-09-30 [OrionP] Official Update 2024-08
 // 

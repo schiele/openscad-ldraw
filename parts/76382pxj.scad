@@ -15,7 +15,7 @@ function ldraw_lib__76382pxj() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS Bricklink 973pb2308c01, CMF, Collectable, Disney, Donald Duck
-// 0 !KEYWORDS Set 71012, set 71040
+// 0 !KEYWORDS Rebrickable 973c28h27pr3315, Set 71012, set 71040
 // 
 // 0 !HISTORY 2024-10-27 [OrionP] Official Update 2024-09
 // 

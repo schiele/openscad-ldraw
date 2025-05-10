@@ -14,7 +14,7 @@ function ldraw_lib__65130_f1() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Sheet Plastic
-// 0 !KEYWORDS Band, carrier, VIDIYO
+// 0 !KEYWORDS Band, BrickLink 65130, carrier, Rebrickable 65130, VIDIYO
 // 
 // 0 !HISTORY 2024-10-27 [OrionP] Official Update 2024-09
 // 

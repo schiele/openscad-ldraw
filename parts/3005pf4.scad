@@ -11,7 +11,8 @@ function ldraw_lib__3005pf4() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Animal Crossing, Bait, Bricklink 3005pb065, set 77050
+// 0 !KEYWORDS Animal Crossing, Bait, Bricklink 3005pb065, Rebrickable 3005pr0040
+// 0 !KEYWORDS set 77050
 // 
 // 0 !HISTORY 2024-08-26 [OrionP] Official Update 2024-07
 // 

@@ -14,6 +14,8 @@ function ldraw_lib__6213p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS Rebrickable 6213pr0001, Set 1840
+// 
 // 0 !HISTORY 2002-11-30 [PTadmin] Official Update 2002-05
 // 0 !HISTORY 2007-07-16 [PTadmin] Header formatted for Contributor Agreement
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01

@@ -14,6 +14,8 @@ function ldraw_lib__50337() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 44570
+// 
 // 0 !HISTORY 2024-09-30 [OrionP] Official Update 2024-08
 // 
 // 

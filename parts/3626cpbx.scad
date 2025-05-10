@@ -14,7 +14,8 @@ function ldraw_lib__3626cpbx() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626cpb1736, Calendar Man, Lego Batman Movie, Set 70903
+// 0 !KEYWORDS BrickLink 3626pb1736, Calendar Man, Lego Batman Movie
+// 0 !KEYWORDS Rebrickable 3626cpr2122, Set 70903
 // 
 // 0 !HISTORY 2019-09-09 [PTadmin] Official Update 2019-02
 // 0 !HISTORY 2020-05-10 [cwdee] Update colour name in description

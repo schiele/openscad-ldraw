@@ -12,8 +12,7 @@ function ldraw_lib__103918p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 103918pb01, Brickowl 965312, Concorde
-// 0 !KEYWORDS Rebrickable 103918pat0001, Set 10318
+// 0 !KEYWORDS Bricklink 103918pb01, Concorde, Rebrickable 103918pat0001, Set 10318
 // 
 // 0 !HISTORY 2024-06-30 [OrionP] Official Update 2024-05
 // 

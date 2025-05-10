@@ -16,6 +16,8 @@ function ldraw_lib__2436a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 2436, Rebrickable 2436
+// 
 // 0 !HISTORY 2003-08-04 [jriley] BFC compliant, rect & box substitutions
 // 0 !HISTORY 2003-10-01 [Steffen] corrected stud orientation
 // 0 !HISTORY 2003-12-19 [PTadmin] Official Update 2003-03

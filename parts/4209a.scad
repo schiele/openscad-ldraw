@@ -11,6 +11,8 @@ function ldraw_lib__4209a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 4209, Rebrickable 4209
+// 
 // 0 !HISTORY 2002-08-23 [BrickCaster] Fixed middle bar
 // 0 !HISTORY 2003-02-16 [OrionP] BFC'ed
 // 0 !HISTORY 2003-07-05 [Steffen] made use of subfile 4209s02.dat

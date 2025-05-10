@@ -13,7 +13,8 @@ function ldraw_lib__43745p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Dobby, Harry Potter
+// 0 !KEYWORDS BrickLink 43745pb01, Dobby, Harry Potter, Rebrickable 43745pr0001
+// 0 !KEYWORDS Set 4736
 // 
 // 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01
 // 

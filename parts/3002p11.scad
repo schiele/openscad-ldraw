@@ -12,8 +12,7 @@ function ldraw_lib__3002p11() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3002oldpb04, BrickOwl 76507, ReBrickable 3002apr0004
-// 0 !KEYWORDS Set 368
+// 0 !KEYWORDS Bricklink 3002oldpb04, ReBrickable 3002apr0004, Set 368
 // 
 // 0 !HISTORY 2003-07-06 [Steffen] made use of subfile s\3002s01.dat
 // 0 !HISTORY 2003-12-19 [PTadmin] Official Update 2003-03

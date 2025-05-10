@@ -12,7 +12,7 @@ function ldraw_lib__73194c03() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 73435c03, Brickowl 699860, Rebrickable 73194c03, set 10027
+// 0 !KEYWORDS Bricklink 73435c03, set 10027
 // 
 // 0 !HISTORY 2019-12-27 [PTadmin] Official Update 2019-03
 // 0 !HISTORY 2024-05-29 [MagFors] Update description, added keywords

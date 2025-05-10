@@ -13,7 +13,8 @@ function ldraw_lib__2431pt4() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 2431pb442, Car, Caterham, Cuusoo, Ideas, Set 21307
+// 0 !KEYWORDS Bricklink 2431pb442, Car, Caterham, Cuusoo, Ideas
+// 0 !KEYWORDS Rebrickable 2431pr0090, Set 21307
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
 // 

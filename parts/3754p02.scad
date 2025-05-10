@@ -19,8 +19,9 @@ function ldraw_lib__3754p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !KEYWORDS 6970, astronaut, classic, cosmonaut, crater, LL 2079, monitor, Moon
-// 0 !KEYWORDS planet, screen, Space, vidiwall
+// 0 !KEYWORDS 6970, astronaut, BrickLink 3754pb01, classic, cosmonaut, crater
+// 0 !KEYWORDS LL 2079, monitor, Moon, planet, Rebrickable 3754pr0002, screen
+// 0 !KEYWORDS Set 6970, Space, vidiwall
 // 
 // 0 !HISTORY 2010-07-05 [PTadmin] Official Update 2010-02
 // 

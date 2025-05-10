@@ -12,7 +12,7 @@ function ldraw_lib__19001() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS 10734, Brickset ID 19001, City, Set 10680, town, Traffic, Vehicle
+// 0 !KEYWORDS 10734, BrickLink 18926c02, City, Set 10680, town, Traffic, Vehicle
 // 
 // 0 !HISTORY 2024-09-30 [OrionP] Official Update 2024-08
 // 

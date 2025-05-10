@@ -13,8 +13,7 @@ function ldraw_lib__18675p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 18675pb18, Brickowl 853170, Rebrickable 18675pr0017
-// 0 !KEYWORDS Set 70675
+// 0 !KEYWORDS Bricklink 18675pb18, Rebrickable 18675pr0017, Set 70675
 // 
 // 0 !CMDLINE -c47
 // 

@@ -13,6 +13,8 @@ function ldraw_lib__2345p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
+// 0 !KEYWORDS Bricklink 2345pb05, Rebrickable 2345pr0002, Set 10039
+// 
 // 0 !HISTORY 2009-05-02 [PTadmin] Official Update 2009-01
 // 
 // 

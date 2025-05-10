@@ -15,10 +15,10 @@ function ldraw_lib__973pw1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS army, cavalry, collar, colonel, General, horse troops, insignia
-// 0 !KEYWORDS Lieutenant Colonel, Military, officer, rank, senior officer
-// 0 !KEYWORDS shoulder, soldier, Star, Stars, U.S. Army, Uniform, United States
-// 0 !KEYWORDS veteran, western, wild west
+// 0 !KEYWORDS army, BrickLink 973px41, cavalry, collar, colonel, General
+// 0 !KEYWORDS horse troops, insignia, Lieutenant Colonel, Military, officer, rank
+// 0 !KEYWORDS senior officer, set 6706, shoulder, soldier, Star, Stars, U.S. Army
+// 0 !KEYWORDS Uniform, United States, veteran, western, wild west
 // 
 // 0 !CMDLINE -c1
 // 

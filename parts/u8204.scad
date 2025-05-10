@@ -16,7 +16,7 @@ function ldraw_lib__u8204() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Vintage, waffle
+// 0 !KEYWORDS BrickLink 712old, Rebrickable 712a, Vintage, waffle
 // 
 // 0 !HISTORY 2009-01-28 [mikeheide] changed title
 // 0 !HISTORY 2010-01-18 [mikeheide] moved studs to mainfile

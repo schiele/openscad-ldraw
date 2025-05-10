@@ -14,7 +14,8 @@ function ldraw_lib__3626bpb5() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Batman, Bricklink 3626bpb0063, Poison Ivy, set 7785
+// 0 !KEYWORDS Batman, BrickLink 3626pb0063, Poison Ivy, Rebrickable 3626bpr0003
+// 0 !KEYWORDS set 7785
 // 
 // 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01
 // 0 !HISTORY 2023-11-06 [MagFors] Update description, added keywords

@@ -14,9 +14,8 @@ function ldraw_lib__76382ph5() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973px152c01, BrickOwl 87902, Harry Potter
-// 0 !KEYWORDS Mini Upper Part No 510, Rebrickable 973c28h01pr0152, Set 4708
-// 0 !KEYWORDS Set 4714, Wizarding World
+// 0 !KEYWORDS Bricklink 973px152c01, Harry Potter, Mini Upper Part No 510
+// 0 !KEYWORDS Rebrickable 973c28h01pr0152, Set 4708, Set 4714, Wizarding World
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

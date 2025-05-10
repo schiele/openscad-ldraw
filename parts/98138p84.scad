@@ -12,7 +12,8 @@ function ldraw_lib__98138p84() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS 98138pb025, Collectible Minifigs Series 13, Paleontologist
+// 0 !KEYWORDS 98138pb025, BrickLink 98138pb025, Collectible Minifigs Series 13
+// 0 !KEYWORDS Paleontologist, Rebrickable 98138pr0028, Set 71008-17
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
 // 

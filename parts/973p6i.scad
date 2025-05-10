@@ -13,7 +13,7 @@ function ldraw_lib__973p6i() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Space
+// 0 !KEYWORDS Set 60097, Space
 // 
 // 0 !CMDLINE -c15
 // 

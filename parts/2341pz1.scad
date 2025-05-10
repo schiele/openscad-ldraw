@@ -13,7 +13,8 @@ function ldraw_lib__2341pz1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickheadz, BrickLink 2341pb04, Disney, Minnie, Mouse, Set 41625
+// 0 !KEYWORDS Brickheadz, BrickLink 2341pb04, Disney, Minnie, Mouse
+// 0 !KEYWORDS Rebrickable 18759pr0002, Set 41625
 // 
 // 0 !HISTORY 2022-07-08 [MagFors] Fixed BFC issue with dots
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04

@@ -13,6 +13,8 @@ function ldraw_lib__486_f1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS Bricklink x486, Rebrickable 498
+// 
 // 0 !HISTORY 2011-07-15 [tchang] Made with LSynth and adapt
 // 0 !HISTORY 2011-07-18 [tchang] Upgrade shape
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04

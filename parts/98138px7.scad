@@ -12,7 +12,8 @@ function ldraw_lib__98138px7() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS BrickLink 98138pb078, clock, Minecraft
+// 0 !KEYWORDS BrickLink 98138pb078, clock, Minecraft, Rebrickable 98138pr0080
+// 0 !KEYWORDS Set 21137
 // 
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
 // 

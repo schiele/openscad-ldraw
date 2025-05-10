@@ -13,7 +13,7 @@ function ldraw_lib__98393b() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Figure Accessory
-// 0 !KEYWORDS Bricklink 98393b, Clinic, Hospital, Multipack 98393, rescue, Vet
+// 0 !KEYWORDS Clinic, Hospital, Multipack 98393, rescue, Vet
 // 
 // 0 !HISTORY 2021-03-20 {LEGO/Unity Microgame} Original part shape
 // 0 !HISTORY 2021-03-20 [RainbowDolphin] File preparation for LDraw Parts Tracker

@@ -12,6 +12,7 @@ function ldraw_lib__u9143() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Figure Accessory
+// 0 !KEYWORDS BrickLink x622, Rebrickable fabupn0021
 // 
 // 0 !HISTORY 2010-12-31 [PTadmin] Official Update 2010-03
 // 

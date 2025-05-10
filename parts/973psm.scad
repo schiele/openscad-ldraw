@@ -13,7 +13,7 @@ function ldraw_lib__973psm() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS assault, commando, Endor, Episode Six, forest moon, guerilla
-// 0 !KEYWORDS Military, Poncho, raid, Rebel Alliance, Return of the Jedi
+// 0 !KEYWORDS Military, Poncho, raid, Rebel Alliance, Return of the Jedi, set 7128
 // 0 !KEYWORDS Star Wars
 // 
 // 0 !CMDLINE -c8

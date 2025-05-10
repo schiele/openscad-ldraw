@@ -14,9 +14,9 @@ function ldraw_lib__76382p39() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS belt, Blackjack Hawkins, Bricklink 973p39c01, BrickOwl 16858
-// 0 !KEYWORDS buttons, coat, gentleman, merchant, Pirates
-// 0 !KEYWORDS Rebrickable 973c28h01pr0039, set 6296, squire
+// 0 !KEYWORDS belt, Blackjack Hawkins, Bricklink 973p39c01, buttons, coat
+// 0 !KEYWORDS gentleman, merchant, Pirates, Rebrickable 973c28h01pr0039, set 6296
+// 0 !KEYWORDS squire
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

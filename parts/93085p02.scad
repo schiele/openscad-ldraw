@@ -12,8 +12,9 @@ function ldraw_lib__93085p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 93083c01pb02, carriage, Cinderella, Ranch, Riding
-// 0 !KEYWORDS Set 10729, Set 3185, Set 3186, Set 41039, Set 41053
+// 0 !KEYWORDS Bricklink 93083c01pb02, carriage, Cinderella, Ranch
+// 0 !KEYWORDS Rebrickable 93083pr0012, Riding, Set 10729, Set 3185, Set 3186
+// 0 !KEYWORDS Set 41039, Set 41053
 // 
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04
 // 

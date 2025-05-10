@@ -9,7 +9,7 @@ function ldraw_lib__755() = [
 // 0 ~Hose Flexible Segment End Section
 // 0 Name: 755.dat
 // 0 Author: John Van Zwieten [jvan]
-// 0 !LDRAW_ORG Subpart UPDATE 2013-01
+// 0 !LDRAW_ORG Part UPDATE 2013-01
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW

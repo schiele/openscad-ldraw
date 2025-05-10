@@ -11,7 +11,7 @@ function ldraw_lib__85984pn1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Ninjago
+// 0 !KEYWORDS BrickLink 85984pb077, Ninjago, Rebrickable 85984pr0002, Set 30426
 // 
 // 0 !HISTORY 2016-12-31 [PTadmin] Official Update 2016-01
 // 0 !HISTORY 2019-06-06 [Philo] Trimmed pattern for rounded corners

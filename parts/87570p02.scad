@@ -15,7 +15,8 @@ function ldraw_lib__87570p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Boosk, Bricklink 87570pb02, Set 75167, Star Wars
+// 0 !KEYWORDS Boosk, Bricklink 87570pb02, Rebrickable 87570pr0002, Set 75167
+// 0 !KEYWORDS Star Wars
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
 // 

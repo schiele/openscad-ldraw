@@ -19,6 +19,8 @@ function ldraw_lib__3811p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS Rebrickable 3811pr0001, Set 7838
+// 
 // 0 !HISTORY 1998-06-20 [PTadmin] Official Update 1998-06
 // 0 !HISTORY 2007-06-29 [PTadmin] Header formatted for Contributor Agreement
 // 0 !HISTORY 2008-06-18 [anathema] Rebuilt using s\3811s01.dat and stug primitives

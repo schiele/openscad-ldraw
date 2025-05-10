@@ -15,6 +15,8 @@ function ldraw_lib__3046() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
+// 0 !KEYWORDS Rebrickable 3046a
+// 
 // 0 !HISTORY 1998-06-20 [PTadmin] Official Update 1998-06
 // 0 !HISTORY 2001-11-11 [larschassing] Identical vertices problem fixed
 // 0 !HISTORY 2002-02-18 [PTadmin] Official Update 2002-01

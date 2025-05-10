@@ -19,7 +19,8 @@ function ldraw_lib__98138p1s() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Creativity Box, Dots, Sleepy, Tired, Waking Up
+// 0 !KEYWORDS BrickLink 98138pb349, Creativity Box, Dots, Rebrickable 98138pr0306
+// 0 !KEYWORDS Set DOTS-MEGA-PACK-3, Sleepy, Tired, Waking Up
 // 
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04
 // 

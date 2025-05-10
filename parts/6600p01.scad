@@ -12,7 +12,7 @@ function ldraw_lib__6600p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Set 60459, Set 60460
+// 0 !KEYWORDS BrickLink 6600pb01, Rebrickable 6600pat0001, Set 60459, Set 60460
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

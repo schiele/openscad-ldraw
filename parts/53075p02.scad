@@ -12,7 +12,7 @@ function ldraw_lib__53075p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 53075pb02, Brickowl 81395, Build-A-Minifigure, Dackel
+// 0 !KEYWORDS Bricklink 53075pb02, Build-A-Minifigure, Dackel
 // 0 !KEYWORDS Rebrickable 53075pr0002, Sausage Dog, Teckel, Wiener Dog
 // 
 // 0 !HISTORY 2020-12-12 {LEGO/Unity Microgame} Original part shape

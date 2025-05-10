@@ -15,8 +15,8 @@ function ldraw_lib__3068bpxb() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3068bpb2147, BrickOwl 680236, Mario, Nintendo
-// 0 !KEYWORDS Rebrickable 3068bpr0668, Set 71419
+// 0 !KEYWORDS BrickLink 3068pb2147, Mario, Nintendo, Rebrickable 3068bpr0668
+// 0 !KEYWORDS Set 71419
 // 
 // 0 !HISTORY 2023-06-24 [OrionP] Official Update 2023-03
 // 

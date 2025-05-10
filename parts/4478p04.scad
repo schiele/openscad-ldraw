@@ -14,7 +14,7 @@ function ldraw_lib__4478p04() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS BrickLink 4478px3, Set 6419
+// 0 !KEYWORDS BrickLink 4478px3, Rebrickable 4478pr0004, Set 6419
 // 
 // 0 !HISTORY 2010-04-09 [mikeheide] Moved portions from subfile
 // 0 !HISTORY 2010-12-31 [PTadmin] Official Update 2010-03

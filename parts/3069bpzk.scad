@@ -11,8 +11,8 @@ function ldraw_lib__3069bpzk() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3069bpb1119, control panel, Darth Vader, Set 40547
-// 0 !KEYWORDS Star Wars
+// 0 !KEYWORDS BrickLink 3069pb1119, control panel, Darth Vader
+// 0 !KEYWORDS Rebrickable 3069bpr0360, Set 40547, Star Wars
 // 
 // 0 !HISTORY 2023-11-19 [OrionP] Official Update 2023-06
 // 

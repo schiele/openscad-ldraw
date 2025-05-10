@@ -11,7 +11,7 @@ function ldraw_lib__2341px0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 2341pb03, set 21311, Voltron
+// 0 !KEYWORDS Bricklink 2341pb03, Rebrickable 18759pr0001, set 21311, Voltron
 // 
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04
 // 

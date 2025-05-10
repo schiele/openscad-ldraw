@@ -12,8 +12,8 @@ function ldraw_lib__98138pz1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickheadz, bricklink 98138pb090, BrickOwl 237245, Eye, Harry Potter
-// 0 !KEYWORDS Hedwig, Rebrickable 98138pr0093, Set 41615
+// 0 !KEYWORDS Brickheadz, bricklink 98138pb090, Eye, Harry Potter, Hedwig
+// 0 !KEYWORDS Rebrickable 98138pr0093, Set 41615
 // 
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
 // 0 !HISTORY 2023-04-21 [Cheenzo] Updated to use subfile, added keywords

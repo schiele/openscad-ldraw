@@ -14,10 +14,9 @@ function ldraw_lib__76382p8f() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb0269c01, BrickOwl 504463, city center, Communication
-// 0 !KEYWORDS dacta, Maintenance, Mini Upper Part No 312
-// 0 !KEYWORDS Rebrickable 973c28h01pr0269, Repair, Set 6422, Set 9369, town
-// 0 !KEYWORDS Town Junior
+// 0 !KEYWORDS Bricklink 973pb0269c01, city center, Communication, dacta
+// 0 !KEYWORDS Maintenance, Mini Upper Part No 312, Rebrickable 973c28h01pr0269
+// 0 !KEYWORDS Repair, Set 6422, Set 9369, town, Town Junior
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

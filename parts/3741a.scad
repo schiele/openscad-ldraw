@@ -36,6 +36,8 @@ function ldraw_lib__3741a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 3741, Rebrickable 3741
+// 
 // 0 !HISTORY 2013-02-24 [MMR1988] Rewritten to correct dimension errors of 3741
 // 0 !HISTORY 2013-07-21 [PTadmin] Official Update 2013-01
 // 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives

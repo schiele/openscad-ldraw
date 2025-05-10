@@ -14,8 +14,8 @@ function ldraw_lib__76382p4e() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973p4ec01, BrickOwl 213879, Castle, Coat of Arms, dacta
-// 0 !KEYWORDS King, King Richard Lionheart, Noble, Rebrickable 973c27h01pr0012
+// 0 !KEYWORDS Bricklink 973p4ec01, Castle, Coat of Arms, dacta, King
+// 0 !KEYWORDS King Richard Lionheart, Noble, Rebrickable 973c27h01pr0012
 // 0 !KEYWORDS red and white, Royal King, Saxondale Castle, Set 6008, Set 6044
 // 0 !KEYWORDS Set 6090, Set 9376, tunic
 // 

@@ -15,6 +15,7 @@ function ldraw_lib__57046e() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Sheet Plastic
+// 0 !KEYWORDS BrickLink bb0278a, Rebrickable 57046a
 // 
 // 0 !HISTORY 2018-12-08 [PTadmin] Official Update 2018-02
 // 0 !HISTORY 2020-06-12 [cwdee] Update description

@@ -14,7 +14,7 @@ function ldraw_lib__76382pr3() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973px58c01, BrickOwl 502725, Episode I, Episode II, Jedi
+// 0 !KEYWORDS Bricklink 973px58c01, Episode I, Episode II, Jedi
 // 0 !KEYWORDS Mini Upper Part No 384, Mini Upper Part No 385
 // 0 !KEYWORDS Mini Upper Part No 611, Mini Upper Part No 612, Obi-Wan Kenobi
 // 0 !KEYWORDS Qui-Gon Jinn, Rebrickable 973c26h01pr0058, Set 7101, Set 7121

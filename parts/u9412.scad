@@ -13,6 +13,7 @@ function ldraw_lib__u9412() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Figure Accessory
+// 0 !KEYWORDS BrickLink fabei7, Rebrickable fabupn0025
 // 
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
 // 

@@ -11,7 +11,7 @@ function ldraw_lib__2431p27() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Viking
+// 0 !KEYWORDS BrickLink 2431pb043, Rebrickable 2431pr0032, set 10185, Viking
 // 
 // 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02
 // 

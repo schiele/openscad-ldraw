@@ -11,7 +11,8 @@ function ldraw_lib__3010p0e() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS 3 doors, Manchester United, Old Trafford, Set 10272
+// 0 !KEYWORDS 3 doors, BrickLink 3010pb290, Manchester United, Old Trafford
+// 0 !KEYWORDS Rebrickable 3010pr9987, Set 10272
 // 
 // 0 !HISTORY 2020-06-28 [PTadmin] Official Update 2020-01
 // 

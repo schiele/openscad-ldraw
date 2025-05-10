@@ -12,7 +12,8 @@ function ldraw_lib__4066bp1l() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Brick
-// 0 !KEYWORDS Bathroom, Bedroom, bricklink 4066pb044, Girls, Set 1540, Set 2781
+// 0 !KEYWORDS Bathroom, Bedroom, bricklink 4066pb044, Girls
+// 0 !KEYWORDS Rebrickable 4066pr0020, Set 1540, Set 2781
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
 // 

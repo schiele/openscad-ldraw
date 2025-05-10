@@ -11,7 +11,8 @@ function ldraw_lib__87079px2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 87079pb561, Set 21316, The Flintstones
+// 0 !KEYWORDS BrickLink 87079pb0561, Rebrickable 87079pr0194, Set 21316
+// 0 !KEYWORDS The Flintstones
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
 // 

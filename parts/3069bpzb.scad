@@ -23,7 +23,8 @@ function ldraw_lib__3069bpzb() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickheadz, Carbonite, Han Solo, Keyboard, Set 41498
+// 0 !KEYWORDS Brickheadz, BrickLink 3069pb0817, Carbonite, Han Solo, Keyboard
+// 0 !KEYWORDS Rebrickable 3069bpr9992, Set 41498
 // 
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
 // 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives

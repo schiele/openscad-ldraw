@@ -14,10 +14,9 @@ function ldraw_lib__76382p62() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS 6814, Bricklink 973p62c01, BrickOwl 527177, Doctor Kelvin
-// 0 !KEYWORDS ice planet, Krysto, Major Urusa, Rebrickable 973c27h28pr0062
-// 0 !KEYWORDS Set 1711, Set 1731, Set 3014, Set 6879, Set 6898, Set 6973, set 6983
-// 0 !KEYWORDS Space, Will Chill
+// 0 !KEYWORDS 6814, Bricklink 973p62c01, Doctor Kelvin, ice planet, Krysto
+// 0 !KEYWORDS Major Urusa, Rebrickable 973c27h28pr0062, Set 1711, Set 1731
+// 0 !KEYWORDS Set 3014, Set 6879, Set 6898, Set 6973, set 6983, Space, Will Chill
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

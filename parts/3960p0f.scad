@@ -13,8 +13,8 @@ function ldraw_lib__3960p0f() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3960pb027, daisy, parasol, pinwheel, Radar Dish, Round
-// 0 !KEYWORDS town, umbrella
+// 0 !KEYWORDS Bricklink 3960pb027, daisy, parasol, pinwheel, Radar Dish
+// 0 !KEYWORDS Rebrickable 3960pr0014, Round, Set 70803, town, umbrella
 // 
 // 0 !CMDLINE -c15
 // 

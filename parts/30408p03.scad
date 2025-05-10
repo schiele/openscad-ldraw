@@ -13,7 +13,7 @@ function ldraw_lib__30408p03() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS BrickLink 30408px5, Set 7664
+// 0 !KEYWORDS BrickLink 30408px5, Rebrickable 30408pr0017, Set 7664
 // 
 // 0 !HISTORY 2023-04-17 [OrionP] Official Update 2023-02
 // 

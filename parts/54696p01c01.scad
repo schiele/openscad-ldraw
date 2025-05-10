@@ -13,7 +13,7 @@ function ldraw_lib__54696p01c01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Spike Prime
+// 0 !KEYWORDS BrickLink 54696c01, Rebrickable 54696, Spike Prime
 // 
 // 0 !HISTORY 2020-06-28 [PTadmin] Official Update 2020-01
 // 0 !HISTORY 2020-12-27 [PTadmin] Update description and rename from 54696c01

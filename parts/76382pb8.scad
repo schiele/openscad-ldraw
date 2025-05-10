@@ -14,9 +14,9 @@ function ldraw_lib__76382pb8() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Batman 2006, Bricklink 973pb0186c01, BrickOwl 69971, Catwoman
-// 0 !KEYWORDS Gotham City, Mini Upper Part No 1276, Rebrickable 973c03h03pr1276
-// 0 !KEYWORDS rogues gallery, Selina Kyle, set 7779
+// 0 !KEYWORDS Batman 2006, Bricklink 973pb0186c01, Catwoman, Gotham City
+// 0 !KEYWORDS Mini Upper Part No 1276, Rebrickable 973c03h03pr1276, rogues gallery
+// 0 !KEYWORDS Selina Kyle, set 7779
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

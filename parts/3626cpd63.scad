@@ -15,7 +15,8 @@ function ldraw_lib__3626cpd63() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626cpb1709, Fairy Batman, Lego Batman Movie, set 71017
+// 0 !KEYWORDS BrickLink 3626pb1709, Fairy Batman, Lego Batman Movie
+// 0 !KEYWORDS Rebrickable 3626cpr2087, set 71017
 // 
 // 0 !CMDLINE -c78
 // 

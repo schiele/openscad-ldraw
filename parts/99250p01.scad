@@ -13,8 +13,8 @@ function ldraw_lib__99250p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Neckwear
-// 0 !KEYWORDS Accessories, Bricklink 99250pb01, Collectable, Olympics, Series 7
-// 0 !KEYWORDS Set 8831, Set 8909, sport
+// 0 !KEYWORDS Accessories, Bricklink 99250pb01, Collectable, Olympics
+// 0 !KEYWORDS Rebrickable 99250pr0001, Series 7, Set 8831, Set 8909, sport
 // 
 // 0 !HISTORY 2023-10-31 [OrionP] Official Update 2023-05
 // 

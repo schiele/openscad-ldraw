@@ -14,7 +14,7 @@ function ldraw_lib__76382p60() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973p60c01, BrickOwl 748865, Gas, gasoline, Race, Racing
+// 0 !KEYWORDS Bricklink 973p60c01, Gas, gasoline, Race, Racing
 // 0 !KEYWORDS Rebrickable 973c27h01pr0060, Set 1468, Set 1470, Set 6371, Set 6378
 // 0 !KEYWORDS Set 6394, set 6395, set 6610, Set 6695, Set 7735, Set 7813, town
 // 0 !KEYWORDS Trains

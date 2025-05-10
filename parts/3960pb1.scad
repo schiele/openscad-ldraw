@@ -14,7 +14,7 @@ function ldraw_lib__3960pb1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Batman, Bricklink 3960pb035
+// 0 !KEYWORDS Batman, Bricklink 3960pb035, Rebrickable 3960pr0021, Set 76044
 // 
 // 0 !HISTORY 2019-12-27 [PTadmin] Official Update 2019-03
 // 

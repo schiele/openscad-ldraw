@@ -14,9 +14,8 @@ function ldraw_lib__76382p4w() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb0515c01, BrickOwl 806508, Castle, civilian
-// 0 !KEYWORDS Fantasy Era, maid, peasant, Rebrickable 973c27h01pr0410, Set 10193
-// 0 !KEYWORDS Villager
+// 0 !KEYWORDS Bricklink 973pb0515c01, Castle, civilian, Fantasy Era, maid, peasant
+// 0 !KEYWORDS Rebrickable 973c27h01pr0410, Set 10193, Villager
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

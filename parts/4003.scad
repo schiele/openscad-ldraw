@@ -15,7 +15,7 @@ function ldraw_lib__4003() = [
   [0,"BFC","CW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS Fabuland
+// 0 !KEYWORDS BrickLink bb1310, Fabuland, Rebrickable 503
 // 
 // 0 !HISTORY 2009-05-02 [PTadmin] Official Update 2009-01
 // 0 !HISTORY 2010-10-18 [PTadmin] Renamed from 503

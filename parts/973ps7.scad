@@ -14,7 +14,7 @@ function ldraw_lib__973ps7() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Darth Vader, Sith Lord, Star Wars
+// 0 !KEYWORDS Darth Vader, set 10123, Sith Lord, Star Wars
 // 
 // 0 !CMDLINE -c0
 // 

@@ -13,7 +13,8 @@ function ldraw_lib__3069bpz1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Black Widow, Brickheadz, BrickLink 3069bpb558, Set 41591
+// 0 !KEYWORDS Black Widow, Brickheadz, BrickLink 3069pb0558
+// 0 !KEYWORDS Rebrickable 3069bpr0196, Set 41591
 // 
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
 // 

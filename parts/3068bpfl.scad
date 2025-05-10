@@ -11,7 +11,8 @@ function ldraw_lib__3068bpfl() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS bracelet, Bricklink 3068bpb0081, Pendant, Scala, Set 313-2, Spring
+// 0 !KEYWORDS bracelet, BrickLink 3068pb0081, Pendant, Rebrickable 3068bpr9745
+// 0 !KEYWORDS Scala, Set 313-2, Spring
 // 
 // 0 !HISTORY 2018-12-08 [PTadmin] Official Update 2018-02
 // 0 !HISTORY 2020-05-10 [RainbowDolphin] Make 1 LDU gap between printed square and part edge

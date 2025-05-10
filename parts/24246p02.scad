@@ -14,7 +14,8 @@ function ldraw_lib__24246p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 24246pb002, Challenger, Dodge, set 75893
+// 0 !KEYWORDS Bricklink 24246pb002, Challenger, Dodge, Rebrickable 24246pr0002
+// 0 !KEYWORDS set 75893
 // 
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
 // 

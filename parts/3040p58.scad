@@ -14,8 +14,8 @@ function ldraw_lib__3040p58() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS computer, controls, crosshairs, Insectoids, Space, Star Wars
-// 0 !KEYWORDS TIE Interceptor
+// 0 !KEYWORDS BrickLink 3040px2, computer, controls, crosshairs, Insectoids
+// 0 !KEYWORDS Rebrickable 3040bpr0012, Set 4619, Space, Star Wars, TIE Interceptor
 // 
 // 0 !HISTORY 2004-03-02 [PTadmin] Official Update 2004-01
 // 0 !HISTORY 2004-03-11 [cwdee] Corrected title spelling

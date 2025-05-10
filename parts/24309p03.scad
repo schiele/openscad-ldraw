@@ -11,7 +11,8 @@ function ldraw_lib__24309p03() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Apollo, NASA, Rocket, Saturn V, Set 21309
+// 0 !KEYWORDS Apollo, BrickLink 24309pb005, NASA, Rebrickable 24309pr0003, Rocket
+// 0 !KEYWORDS Saturn V, Set 21309
 // 
 // 0 !HISTORY 2018-12-08 [PTadmin] Official Update 2018-02
 // 

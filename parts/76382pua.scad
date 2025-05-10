@@ -14,8 +14,8 @@ function ldraw_lib__76382pua() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb3624c01, BrickOwl 811512, City, Hidden Side
-// 0 !KEYWORDS Jack Davids, Mini Upper Part No 4807, Modular Buildings, Newbury
+// 0 !KEYWORDS Bricklink 973pb3624c01, City, Hidden Side, Jack Davids
+// 0 !KEYWORDS Mini Upper Part No 4807, Modular Buildings, Newbury
 // 0 !KEYWORDS Rebrickable 973c22h01pr4807, Set 10278, Set 70418, set 70423
 // 0 !KEYWORDS Set 70424, Set 70425, Set 70428, set 70431, Set 70434, Set 70437
 // 

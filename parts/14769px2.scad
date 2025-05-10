@@ -29,7 +29,8 @@ function ldraw_lib__14769px2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 14769pb226, set 21311, set 21321, set 70423, Voltron
+// 0 !KEYWORDS Bricklink 14769pb226, Rebrickable 14769pr1112, set 21311, set 21321
+// 0 !KEYWORDS set 70423, Voltron
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
 // 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives

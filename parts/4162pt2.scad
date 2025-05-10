@@ -11,7 +11,7 @@ function ldraw_lib__4162pt2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 4162pb233, measure, Set 45401
+// 0 !KEYWORDS Bricklink 4162pb233, measure, Rebrickable 4162pr0073, Set 45401
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
 // 

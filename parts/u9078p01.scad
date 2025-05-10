@@ -17,6 +17,8 @@ function ldraw_lib__u9078p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink FTBush, Rebrickable upn0396, Set 230
+// 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
 // 
 // 

@@ -11,7 +11,8 @@ function ldraw_lib__4162p0b() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Architect, Architecture, Empire State Building, New York, Set 21002
+// 0 !KEYWORDS Architect, Architecture, BrickLink 4162pb020, Empire State Building
+// 0 !KEYWORDS New York, Rebrickable 4162pr0068, Set 21002
 // 0 !KEYWORDS Shreve Lamb & Harmon Associates., USA
 // 
 // 0 !HISTORY 2012-08-09 [PTadmin] Official Update 2012-02

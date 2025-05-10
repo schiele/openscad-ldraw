@@ -13,7 +13,7 @@ function ldraw_lib__3069bpz4() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickheadz, Bricklink 3069bpb658, Set 41621
+// 0 !KEYWORDS Brickheadz, BrickLink 3069pb0658, Rebrickable 3069bpr0242, Set 41621
 // 
 // 0 !CMDLINE -c47
 // 

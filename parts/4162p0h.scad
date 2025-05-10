@@ -11,7 +11,8 @@ function ldraw_lib__4162p0h() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS 2011, LOM Moulding, Mexico, Set 4000002
+// 0 !KEYWORDS 2011, BrickLink 4162pb086, LOM Moulding, Mexico
+// 0 !KEYWORDS Rebrickable 4162pr0016, Set 4000002
 // 
 // 0 !HISTORY 2012-08-09 [PTadmin] Official Update 2012-02
 // 

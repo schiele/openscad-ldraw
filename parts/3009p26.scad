@@ -11,7 +11,8 @@ function ldraw_lib__3009p26() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS boat, ferry, P&O Stena Ferry, windows
+// 0 !KEYWORDS boat, BrickLink 3009px48, ferry, P&O Stena Ferry
+// 0 !KEYWORDS Rebrickable 3009pr0017, set 1054, windows
 // 
 // 0 !HISTORY 2009-09-03 [PTadmin] Official Update 2009-02
 // 

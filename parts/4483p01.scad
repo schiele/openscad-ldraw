@@ -20,6 +20,7 @@ function ldraw_lib__4483p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Vehicle
+// 0 !KEYWORDS BrickLink bb0057pb01, Rebrickable 4483pr0001, Set 6309
 // 
 // 0 !HISTORY 2009-12-26 [MagFors] BFC'ed and changed origin
 // 0 !HISTORY 2011-12-11 [MagFors] File preparation for LDraw Parts Tracker

@@ -12,8 +12,8 @@ function ldraw_lib__3069bp1a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3069bpb029, Central, Grand, High, locomotive, Speed
-// 0 !KEYWORDS Station
+// 0 !KEYWORDS BrickLink 3069pb0029, Central, Grand, High, locomotive
+// 0 !KEYWORDS Rebrickable 3069bpr0065, Set 10157, Speed, Station
 // 
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04
 // 

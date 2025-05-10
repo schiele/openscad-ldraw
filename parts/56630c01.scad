@@ -17,7 +17,8 @@ function ldraw_lib__56630c01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Neckwear
-// 0 !KEYWORDS Batgirl, Batman, Cloak, Drape, Neckwear, Poncho, Robin, Shawl
+// 0 !KEYWORDS Batgirl, Batman, BrickLink 56630, Cloak, Drape, Neckwear, Poncho
+// 0 !KEYWORDS Rebrickable 56630, Robin, Shawl
 // 
 // 0 !HISTORY 2014-12-23 [PTadmin] Official Update 2014-02
 // 0 !HISTORY 2019-01-26 [cwdee] Update category

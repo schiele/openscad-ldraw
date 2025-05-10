@@ -12,7 +12,7 @@ function ldraw_lib__3010pzl() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS Brickheadz, bricklink 3010pb234, Harry Potter, hermione granger
-// 0 !KEYWORDS Set 41616
+// 0 !KEYWORDS Rebrickable 3010pr0045, Set 41616
 // 
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
 // 

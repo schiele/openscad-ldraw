@@ -14,7 +14,8 @@ function ldraw_lib__4066bp12() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Brick
-// 0 !KEYWORDS bricklink 4066pb040, Fishing, harbor, harbour, Set 2662, Zoo
+// 0 !KEYWORDS bricklink 4066pb040, Fishing, harbor, harbour
+// 0 !KEYWORDS Rebrickable 4066pr0113, Set 2662, Zoo
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 

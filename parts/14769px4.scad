@@ -16,7 +16,8 @@ function ldraw_lib__14769px4() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 14769pb199, Octi Eye, Power Puff Girls, Set 71346
+// 0 !KEYWORDS Bricklink 14769pb199, Octi Eye, Power Puff Girls
+// 0 !KEYWORDS Rebrickable 14769pr1082, Set 71346
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 0 !HISTORY 2021-01-03 [cwdee] Update description

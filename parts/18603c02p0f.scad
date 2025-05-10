@@ -13,8 +13,8 @@ function ldraw_lib__18603c02p0f() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 18603c27pb01, Dimensions, Electronic, NFC, Set 71231
-// 0 !KEYWORDS Toy Tag
+// 0 !KEYWORDS BrickLink 18605c01pb27, Dimensions, Electronic, NFC
+// 0 !KEYWORDS Rebrickable 19981pr0027, Set 71231, Toy Tag
 // 
 // 0 !HISTORY 2022-12-20 [PTadmin] Official Update 2022-06
 // 

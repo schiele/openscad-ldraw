@@ -13,7 +13,8 @@ function ldraw_lib__3626cp8f() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS BrickLink 3626cpb1113, Robo Emmet, Set 70816, Spaceship
+// 0 !KEYWORDS BrickLink 3626pb1113, Rebrickable 3626cpr1459, Robo Emmet, Set 70816
+// 0 !KEYWORDS Spaceship
 // 
 // 0 !CMDLINE -c179
 // 

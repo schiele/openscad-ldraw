@@ -14,8 +14,8 @@ function ldraw_lib__76382phg() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb2536c01, BrickOwl 51168, Fantastic Beasts
-// 0 !KEYWORDS Harry Potter, Newt Scamander, Rebrickable 973c05h02pr3578, Set 71253
+// 0 !KEYWORDS Bricklink 973pb2536c01, Fantastic Beasts, Harry Potter
+// 0 !KEYWORDS Newt Scamander, Rebrickable 973c05h02pr3578, Set 71253
 // 
 // 0 !HISTORY 2024-12-30 [OrionP] Official Update 2024-11
 // 

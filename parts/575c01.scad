@@ -12,6 +12,8 @@ function ldraw_lib__575c01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 9244ac01, Rebrickable 9244a
+// 
 // 0 !CMDLINE -c4
 // 
 // 0 !HISTORY 2009-12-29 [PTadmin] Official Update 2009-03

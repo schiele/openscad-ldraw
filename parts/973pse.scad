@@ -12,7 +12,7 @@ function ldraw_lib__973pse() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Empire, Speeder Bike, Star Wars
+// 0 !KEYWORDS Empire, Set 3342, Speeder Bike, Star Wars
 // 
 // 0 !CMDLINE -c15
 // 

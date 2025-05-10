@@ -12,9 +12,8 @@ function ldraw_lib__4485bp03() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Beach, Boats, Bricklink 4485pb03, Brickowl 234917, coast guard
-// 0 !KEYWORDS harbor, harbour, Naval, Rebrickable 4485pr0003, rescue, Set 6338
-// 0 !KEYWORDS Ships, town
+// 0 !KEYWORDS Beach, Boats, Bricklink 4485pb03, coast guard, harbor, harbour
+// 0 !KEYWORDS Naval, Rebrickable 4485pr0003, rescue, Set 6338, Ships, town
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

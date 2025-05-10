@@ -17,7 +17,7 @@ function ldraw_lib__u8200() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Vintage, waffle
+// 0 !KEYWORDS Rebrickable 3020a, Vintage, waffle
 // 
 // 0 !HISTORY 2012-08-09 [PTadmin] Official Update 2012-02
 // 

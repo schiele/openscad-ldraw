@@ -17,7 +17,8 @@ function ldraw_lib__21019bpdg3() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Beaker, Bricklink 970c00pb1365, CMF, set 71033, The Muppets
+// 0 !KEYWORDS Beaker, Bricklink 970c00pb1365, CMF, Rebrickable 970c40pat14pr0002
+// 0 !KEYWORDS set 71033, The Muppets
 // 
 // 0 !HISTORY 2024-08-26 [OrionP] Official Update 2024-07
 // 

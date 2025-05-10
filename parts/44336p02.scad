@@ -14,7 +14,8 @@ function ldraw_lib__44336p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS 6-stud, pit stop, Racers, roadplate, Straight
+// 0 !KEYWORDS 6-stud, BrickLink 44336pb02, pit stop, Racers
+// 0 !KEYWORDS Rebrickable 44336pr0002, roadplate, set 8375, Straight
 // 
 // 0 !HISTORY 2004-12-12 [cwdee] Updated to use stug* primitives
 // 0 !HISTORY 2009-05-02 [PTadmin] Official Update 2009-01

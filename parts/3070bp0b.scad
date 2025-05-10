@@ -11,7 +11,8 @@ function ldraw_lib__3070bp0b() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3070bpb128, Charger, Dodge, set 75893
+// 0 !KEYWORDS BrickLink 3070pb128, Charger, Dodge, Rebrickable 3070bpr0200
+// 0 !KEYWORDS set 75893
 // 
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
 // 

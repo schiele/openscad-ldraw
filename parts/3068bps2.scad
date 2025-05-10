@@ -22,7 +22,8 @@ function ldraw_lib__3068bps2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS 7186, Watto's Junkyard
+// 0 !KEYWORDS 7186, BrickLink 3068pb0046, Rebrickable 3068bpr0351, Set 7186
+// 0 !KEYWORDS Watto's Junkyard
 // 
 // 0 !HISTORY 2003-11-25 [westrate] fixed gaps, replaced quads with primitives, BFC'd
 // 0 !HISTORY 2004-09-15 [PTadmin] Official Update 2004-03

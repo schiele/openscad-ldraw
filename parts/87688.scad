@@ -14,6 +14,7 @@ function ldraw_lib__87688() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Figure Accessory
+// 0 !KEYWORDS BrickLink 33052c, Rebrickable 33052c
 // 
 // 0 !HISTORY 2010-09-10 {LEGO Universe Team} Original part shape
 // 0 !HISTORY 2010-10-06 [Philo] File preparation for LDraw Parts Tracker

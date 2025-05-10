@@ -13,6 +13,7 @@ function ldraw_lib__72514() = [
   [0,"BFC","CW"],
 // 
 // 0 !CATEGORY Figure Accessory
+// 0 !KEYWORDS BrickLink x250, Rebrickable 22670
 // 
 // 0 !HISTORY 2013-03-10 [mikeheide] with WINDZ for BFC compliance
 // 0 !HISTORY 2022-04-07 [Holly-Wood] Complete overhaul

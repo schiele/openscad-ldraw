@@ -14,8 +14,7 @@ function ldraw_lib__76382p1x() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb2732c01, BrickOwl 346665, Rebrickable 973c01h01pr3813
-// 0 !KEYWORDS Set 31138
+// 0 !KEYWORDS Bricklink 973pb2732c01, Rebrickable 973c01h01pr3813, Set 31138
 // 
 // 0 !HISTORY 2024-12-30 [OrionP] Official Update 2024-11
 // 

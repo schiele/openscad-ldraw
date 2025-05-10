@@ -13,7 +13,7 @@ function ldraw_lib__3245bp07() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS bricklink 3245bpx11, Set 1708, Set 535
+// 0 !KEYWORDS bricklink 3245bpx11, Rebrickable 3245bpr0005, Set 1708, Set 535
 // 
 // 0 !HISTORY 2020-06-27 [RainbowDolphin] created based on 4150p03 by J.C. Tchang
 // 0 !HISTORY 2020-07-16 [MagFors] used pattern subfile

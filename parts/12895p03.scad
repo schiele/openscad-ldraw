@@ -18,8 +18,8 @@ function ldraw_lib__12895p03() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Alfred Pennyworth, Bricklink 12895pb03, Brickowl 486221
-// 0 !KEYWORDS Rebrickable 12895pr0034, set 70917
+// 0 !KEYWORDS Alfred Pennyworth, Bricklink 12895pb03, Rebrickable 12895pr0034
+// 0 !KEYWORDS set 70917
 // 
 // 0 !HISTORY 2023-01-29 [MagFors] Further subfiling
 // 0 !HISTORY 2023-10-31 [OrionP] Official Update 2023-05

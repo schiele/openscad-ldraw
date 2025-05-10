@@ -11,8 +11,9 @@ function ldraw_lib__3068bp20() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS bricklink 3068bpb0016, Cafe, Control Lab, Paradisa, Set 6409
-// 0 !KEYWORDS Set 6411, Set 970098, Set 9701, Sweets
+// 0 !KEYWORDS BrickLink 3068pb0016, Cafe, Control Lab, Paradisa
+// 0 !KEYWORDS Rebrickable 3068bpr0087, Set 6409, Set 6411, Set 970098, Set 9701
+// 0 !KEYWORDS Sweets
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 

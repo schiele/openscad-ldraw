@@ -14,9 +14,9 @@ function ldraw_lib__76382p9x() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bespin, Bricklink 973pb0307c01, BrickOwl 618678, Cloud City
-// 0 !KEYWORDS Luke Skywalker, Rebrickable 973c26h01pr1155, set 10123, set 10173
-// 0 !KEYWORDS set 10185, Set 7637, Set 7997, Set 9247, Star Wars
+// 0 !KEYWORDS Bespin, Bricklink 973pb0307c01, Cloud City, Luke Skywalker
+// 0 !KEYWORDS Rebrickable 973c26h01pr1155, set 10123, set 10173, set 10185
+// 0 !KEYWORDS Set 7637, Set 7997, Set 9247, Star Wars
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

@@ -13,8 +13,8 @@ function ldraw_lib__20592p03() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Bricklink 20592pb03, CMF, Collectable, Kitty Pop, Set 71023
-// 0 !KEYWORDS The LEGO Movie 2
+// 0 !KEYWORDS Bricklink 20592pb03, CMF, Collectable, Kitty Pop
+// 0 !KEYWORDS Rebrickable 20592pr0005, Set 71023, The LEGO Movie 2
 // 
 // 0 !HISTORY 2023-04-17 [OrionP] Official Update 2023-02
 // 

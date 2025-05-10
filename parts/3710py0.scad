@@ -13,8 +13,8 @@ function ldraw_lib__3710py0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3710pb002, Brickowl 615955, F1, LM, Rebrickable 3710pr0003
-// 0 !KEYWORDS Set 76918, Speed Champions
+// 0 !KEYWORDS Bricklink 3710pb002, F1, LM, Rebrickable 3710pr0003, Set 76918
+// 0 !KEYWORDS Speed Champions
 // 
 // 0 !HISTORY 2024-06-30 [OrionP] Official Update 2024-05
 // 

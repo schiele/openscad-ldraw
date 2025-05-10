@@ -14,7 +14,7 @@ function ldraw_lib__30218_f2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Scallop, shell
+// 0 !KEYWORDS BrickLink 30218, Rebrickable 30218, Scallop, shell
 // 
 // 0 !HISTORY 2015-11-03 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2017-11-20 [Holly-Wood] File preparation for LDraw Parts Tracker

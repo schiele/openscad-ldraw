@@ -14,7 +14,8 @@ function ldraw_lib__44341p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS roadplate, t-intersection
+// 0 !KEYWORDS BrickLink 44341pb01, Rebrickable 44341pr0001, roadplate, Set 4108
+// 0 !KEYWORDS t-intersection
 // 
 // 0 !HISTORY 2010-08-24 [Eldar] Move common content to subpattern
 // 0 !HISTORY 2010-12-31 [PTadmin] Official Update 2010-03

@@ -14,7 +14,7 @@ function ldraw_lib__973p3b() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS bandolier, dandy, merchant, Pirates
+// 0 !KEYWORDS bandolier, dandy, merchant, Pirates, set 6286
 // 
 // 0 !HISTORY 2002-11-30 [PTadmin] Official Update 2002-05
 // 0 !HISTORY 2007-07-28 [PTadmin] Header formatted for Contributor Agreement

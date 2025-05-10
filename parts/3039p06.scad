@@ -11,7 +11,7 @@ function ldraw_lib__3039p06() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Hot Scorcher
+// 0 !KEYWORDS BrickLink 3039pb025, Hot Scorcher, Rebrickable 3039pr9976, Set 4584
 // 
 // 0 !HISTORY 2019-09-09 [PTadmin] Official Update 2019-02
 // 

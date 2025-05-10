@@ -12,7 +12,7 @@ function ldraw_lib__41751p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS BrickLink x224pb005
+// 0 !KEYWORDS BrickLink x224pb005, Rebrickable 41751pr0005, set 8420
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
 // 

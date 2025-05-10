@@ -18,7 +18,8 @@ function ldraw_lib__3003p0b() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Architecture, BrickLink 3003pb091, London, Set 21034
+// 0 !KEYWORDS Architecture, BrickLink 3003pb091, London, Rebrickable 3003pr0103
+// 0 !KEYWORDS Set 21034
 // 
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
 // 

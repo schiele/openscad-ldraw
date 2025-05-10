@@ -11,8 +11,8 @@ function ldraw_lib__3069bp56() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Apollo, BrickLink 3069bpb587, Moon, NASA, Rocket, Saturn V
-// 0 !KEYWORDS Set 21309
+// 0 !KEYWORDS Apollo, BrickLink 3069pb0587, Moon, NASA, Rebrickable 3069bpr0205
+// 0 !KEYWORDS Rocket, Saturn V, Set 21309
 // 
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
 // 

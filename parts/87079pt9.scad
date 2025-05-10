@@ -12,7 +12,8 @@ function ldraw_lib__87079pt9() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 87079pb0133, Pencil holder, Set 40080
+// 0 !KEYWORDS Bricklink 87079pb0133, Pencil holder, Rebrickable 87079pr0039
+// 0 !KEYWORDS Set 40080
 // 
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04
 // 

@@ -13,6 +13,8 @@ function ldraw_lib__47224c01_f2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 47224c01, Rebrickable 47225
+// 
 // 0 !HISTORY 2009-12-24 [arezey] Updated to compensate origin changes in composing parts
 // 0 !HISTORY 2010-04-05 [PTadmin] Official Update 2010-01
 // 0 !HISTORY 2016-08-21 [PTadmin] Renamed from 47224c02

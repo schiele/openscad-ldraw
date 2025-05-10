@@ -14,9 +14,9 @@ function ldraw_lib__76382p79() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Beach, Bricklink 973pb0237c01, BrickOwl 916349, city center
-// 0 !KEYWORDS coast guard, Mini Upper Part No 350, Rebrickable 973c27h01pr0237
-// 0 !KEYWORDS sea, Set 6435, Set 6437, Tony, town, Town Junior
+// 0 !KEYWORDS Beach, Bricklink 973pb0237c01, city center, coast guard
+// 0 !KEYWORDS Mini Upper Part No 350, Rebrickable 973c27h01pr0237, sea, Set 6435
+// 0 !KEYWORDS Set 6437, Tony, town, Town Junior
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

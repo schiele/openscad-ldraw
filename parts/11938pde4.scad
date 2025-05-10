@@ -12,8 +12,8 @@ function ldraw_lib__11938pde4() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973c088, BrickOwl 89300, CMF, Looney Tunes
-// 0 !KEYWORDS Rebrickable 11938c01, Road Runner, Set 71030
+// 0 !KEYWORDS Bricklink 973c088, CMF, Looney Tunes, Rebrickable 11938c01
+// 0 !KEYWORDS Road Runner, Set 71030
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

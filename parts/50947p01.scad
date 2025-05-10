@@ -12,6 +12,8 @@ function ldraw_lib__50947p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 50947pb001, Rebrickable 50947pr0001, set 8644
+// 
 // 0 !HISTORY 2011-07-25 [PTadmin] Official Update 2011-01
 // 0 !HISTORY 2013-05-12 [MagFors] Changed colour 383 to 80 (printed silver)
 // 0 !HISTORY 2013-12-23 [PTadmin] Official Update 2013-02

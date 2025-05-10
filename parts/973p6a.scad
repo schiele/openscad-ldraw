@@ -18,7 +18,7 @@ function ldraw_lib__973p6a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Law enforcement, SP2, Space Police 2
+// 0 !KEYWORDS Law enforcement, Set 6813, SP2, Space Police 2
 // 
 // 0 !CMDLINE -c15
 // 

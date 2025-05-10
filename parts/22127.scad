@@ -13,7 +13,7 @@ function ldraw_lib__22127() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Powered Up, Technic
+// 0 !KEYWORDS BrickLink bb0961c01, Powered Up, Technic
 // 
 // 0 !HISTORY 2019-12-27 [PTadmin] Official Update 2019-03
 // 0 !HISTORY 2021-04-02 [Philo] Used subassemblies

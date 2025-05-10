@@ -18,7 +18,7 @@ function ldraw_lib__20380p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Azari Firedancer, Elves
+// 0 !KEYWORDS Azari Firedancer, Elves, set 30259
 // 
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
 // 0 !HISTORY 2020-05-10 [cwdee] Update colour name in description

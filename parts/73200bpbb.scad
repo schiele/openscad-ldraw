@@ -13,8 +13,8 @@ function ldraw_lib__73200bpbb() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS bricklink 970c00pb0154, Brickowl 821671, Rebrickable 970c10pr0344
-// 0 !KEYWORDS set 30167, set 6867, Super Heroes, The Avengers, Tony Stark
+// 0 !KEYWORDS bricklink 970c00pb0154, Rebrickable 970c10pr0344, set 30167
+// 0 !KEYWORDS set 6867, Super Heroes, The Avengers, Tony Stark
 // 
 // 0 !CMDLINE -c320
 // 

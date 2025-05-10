@@ -33,7 +33,8 @@ function ldraw_lib__75544p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS BMW Motorrad M 1000 RR, Set 42130
+// 0 !KEYWORDS BMW Motorrad M 1000 RR, BrickLink 75544pb01, Rebrickable 75544pr0001
+// 0 !KEYWORDS Set 42130
 // 
 // 0 !HISTORY 2024-07-29 [OrionP] Official Update 2024-06
 // 

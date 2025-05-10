@@ -11,6 +11,8 @@ function ldraw_lib__3010p05() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS Rebrickable 3010pr9977, Set 1053
+// 
 // 0 !HISTORY 1999-12-30 [jonwil] Modified
 // 0 !HISTORY 1999-12-31 [PTadmin] Official Update 1999-06
 // 0 !HISTORY 2007-06-06 [PTadmin] Header formatted for Contributor Agreement

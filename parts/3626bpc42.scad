@@ -14,7 +14,8 @@ function ldraw_lib__3626bpc42() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626bpb0536, Kimono Girl, Series 4
+// 0 !KEYWORDS BrickLink 3626pb0536, Kimono Girl, Rebrickable 3626bpr0766, Series 4
+// 0 !KEYWORDS Set 8804
 // 
 // 0 !CMDLINE -c15
 // 

@@ -17,7 +17,8 @@ function ldraw_lib__98384p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 98384pb01, Clockwork, Collectible, Series 6
+// 0 !KEYWORDS Bricklink 98384pb01, Clockwork, Collectible, Rebrickable 98384pr0001
+// 0 !KEYWORDS Series 6, Set 8827-7
 // 
 // 0 !HISTORY 2013-12-23 [PTadmin] Official Update 2013-02
 // 0 !HISTORY 2022-06-22 [Philo] Updated description, added keywords

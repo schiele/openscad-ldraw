@@ -12,8 +12,8 @@ function ldraw_lib__2431p28() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 2431pb848, Entwined, Intertwined, Sea Serpent, Set 21343
-// 0 !KEYWORDS Viking Village
+// 0 !KEYWORDS Bricklink 2431pb848, Entwined, Intertwined, Rebrickable 2431pr9993
+// 0 !KEYWORDS Sea Serpent, Set 21343, Viking Village
 // 
 // 0 !HISTORY 2024-07-29 [OrionP] Official Update 2024-06
 // 

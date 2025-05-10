@@ -13,8 +13,8 @@ function ldraw_lib__10164p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Bricklink 10164pb01, Christmas, Santa Claus, Santa's Hat, Set 10245
-// 0 !KEYWORDS Set 60024, set 75056
+// 0 !KEYWORDS Bricklink 10164pb01, Christmas, Rebrickable 10164pr0001, Santa Claus
+// 0 !KEYWORDS Santa's Hat, Set 10245, Set 60024, set 75056
 // 
 // 0 !HISTORY 2013-08-14 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2020-10-19 [GeraldLasser] File preparation for LDraw Parts Tracker

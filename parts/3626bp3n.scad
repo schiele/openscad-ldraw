@@ -12,10 +12,9 @@ function ldraw_lib__3626bp3n() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS admiral, bluecoats, Bricklink 3626bpb0054, Brickowl 907766, face
-// 0 !KEYWORDS Flagship, Governor, Imperial, officer, Pirates
-// 0 !KEYWORDS Rebrickable 3626bpr0083, Set 6274, set 6276, Soldiers, standard grin
-// 0 !KEYWORDS trading post
+// 0 !KEYWORDS admiral, bluecoats, BrickLink 3626pb0054, face, Flagship, Governor
+// 0 !KEYWORDS Imperial, officer, Pirates, Rebrickable 3626bpr0083, Set 6274
+// 0 !KEYWORDS set 6276, Soldiers, standard grin, trading post
 // 
 // 0 !CMDLINE -c14
 // 

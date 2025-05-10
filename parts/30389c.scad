@@ -23,6 +23,8 @@ function ldraw_lib__30389c() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 30389a
+// 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
 // 
 // 

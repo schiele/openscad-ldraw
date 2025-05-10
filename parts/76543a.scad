@@ -12,7 +12,7 @@ function ldraw_lib__76543a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Life on Mars, Space
+// 0 !KEYWORDS BrickLink 30584c01, Life on Mars, Rebrickable 30584c01, Space
 // 
 // 0 !HISTORY 2019-09-09 [PTadmin] Official Update 2019-02
 // 

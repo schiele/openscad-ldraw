@@ -14,10 +14,9 @@ function ldraw_lib__76382psq() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973psqc01, BrickOwl 122287, Final Duel II, Galactic Empire
-// 0 !KEYWORDS Jacket, Military, Mini Upper Part No 590, Original Trilogy
-// 0 !KEYWORDS rank insignia, Rebrickable 973c08h01pr0002, set 7201, Star Wars
-// 0 !KEYWORDS Uniform
+// 0 !KEYWORDS Bricklink 973psqc01, Final Duel II, Galactic Empire, Jacket
+// 0 !KEYWORDS Military, Mini Upper Part No 590, Original Trilogy, rank insignia
+// 0 !KEYWORDS Rebrickable 973c08h01pr0002, set 7201, Star Wars, Uniform
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

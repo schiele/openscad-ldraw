@@ -14,9 +14,8 @@ function ldraw_lib__38541p02() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Albus Dumbledore, Bricklink 38541pb02, Brickowl 456207
-// 0 !KEYWORDS Goblet of Fire, Harry Potter, LEGO 39498, LEGO BI App 38539
-// 0 !KEYWORDS Rebrickable 38541pr0017, Set 75948
+// 0 !KEYWORDS Albus Dumbledore, Bricklink 38541pb02, Goblet of Fire, Harry Potter
+// 0 !KEYWORDS LEGO 39498, LEGO BI App 38539, Rebrickable 38541pr0017, Set 75948
 // 
 // 0 !HISTORY 2024-10-13 {LEGO Instructions App} Original part shape
 // 0 !HISTORY 2024-11-13 [Holly-Wood] File preparation for LDraw Parts Tracker

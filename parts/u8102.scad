@@ -23,6 +23,8 @@ function ldraw_lib__u8102() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 3853mi, Rebrickable 3853mi
+// 
 // 0 !HISTORY 2020-06-28 [PTadmin] Official Update 2020-01
 // 
 // 

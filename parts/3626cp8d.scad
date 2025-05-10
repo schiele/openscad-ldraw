@@ -13,8 +13,8 @@ function ldraw_lib__3626cp8d() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS BrickLink 3626cpb1029, Lego Movie, Set 70803, Set 70810, Set 70816
-// 0 !KEYWORDS Wyldstyle
+// 0 !KEYWORDS BrickLink 3626pb1043, Lego Movie, Rebrickable 3626cpr1297, Set 70803
+// 0 !KEYWORDS Set 70810, Set 70816, Wyldstyle
 // 
 // 0 !HISTORY 2015-12-30 [PTadmin] Official Update 2015-02
 // 0 !HISTORY 2023-11-07 [MagFors] Update description, added keywords

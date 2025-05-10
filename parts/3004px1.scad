@@ -11,7 +11,8 @@ function ldraw_lib__3004px1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS BrickLink 3004pb183, Minecraft Eye, Set 21152
+// 0 !KEYWORDS BrickLink 3004pb183, Minecraft Eye, Rebrickable 3004pr0105
+// 0 !KEYWORDS Set 21152
 // 
 // 0 !HISTORY 2020-06-28 [PTadmin] Official Update 2020-01
 // 

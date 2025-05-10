@@ -14,8 +14,8 @@ function ldraw_lib__76382p0w() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb0980c01, Brickowl 441487, Rebrickable 973c02h02pr1958
-// 0 !KEYWORDS Set 6862, Set 71209, wonder woman
+// 0 !KEYWORDS Bricklink 973pb0980c01, Rebrickable 973c02h02pr1958, Set 6862
+// 0 !KEYWORDS Set 71209, wonder woman
 // 
 // 0 !HISTORY 2024-12-30 [OrionP] Official Update 2024-11
 // 

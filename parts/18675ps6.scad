@@ -15,9 +15,8 @@ function ldraw_lib__18675ps6() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 18675pb02, Brickowl 902139, Rebrickable 18675pr0002
-// 0 !KEYWORDS set 75082, Set 75150, Set 75168, Set 75237, Set 75300, Star Wars
-// 0 !KEYWORDS tie
+// 0 !KEYWORDS Bricklink 18675pb02, Rebrickable 18675pr0002, set 75082, Set 75150
+// 0 !KEYWORDS Set 75168, Set 75237, Set 75300, Star Wars, tie
 // 
 // 0 !HISTORY 2024-09-30 [OrionP] Official Update 2024-08
 // 

@@ -15,8 +15,8 @@ function ldraw_lib__3623p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Apocalypseburg Unikitty, Bricklink 3623pb018, Set 70820, Set 70831
-// 0 !KEYWORDS Set 70837, Set 70842, The LEGO Movie 2
+// 0 !KEYWORDS Apocalypseburg Unikitty, Bricklink 3623pb018, Rebrickable 3623pr0027
+// 0 !KEYWORDS Set 70820, Set 70831, Set 70837, Set 70842, The LEGO Movie 2
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
 // 

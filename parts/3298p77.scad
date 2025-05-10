@@ -12,7 +12,8 @@ function ldraw_lib__3298p77() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3298pb015, Car, Race, Set 1253, town
+// 0 !KEYWORDS Bricklink 3298pb015, Car, Race, Rebrickable 3298pr0032, Set 1253
+// 0 !KEYWORDS town
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
 // 

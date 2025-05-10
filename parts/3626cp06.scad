@@ -13,8 +13,8 @@ function ldraw_lib__3626cp06() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bad Cop, Bricklink 3626cpb1359, Brickowl 22287, police
-// 0 !KEYWORDS Rebrickable 3626cpr1646, Set 70819, Set 71213
+// 0 !KEYWORDS Bad Cop, BrickLink 3626pb1359, police, Rebrickable 3626cpr1646
+// 0 !KEYWORDS Set 70819, Set 71213
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

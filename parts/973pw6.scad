@@ -16,7 +16,7 @@ function ldraw_lib__973pw6() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !KEYWORDS bullet, cartouche, cowboy, munition, western, wild west
+// 0 !KEYWORDS bullet, cartouche, cowboy, munition, set 6761, western, wild west
 // 
 // 0 !CMDLINE -c4
 // 

@@ -13,9 +13,8 @@ function ldraw_lib__13746p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 13746pb002, Brickowl 874811, Calamity Drone, CMF
-// 0 !KEYWORDS Collectible Minifigures, Rebrickable 13746pr0002, set 71004
-// 0 !KEYWORDS The LEGO Movie
+// 0 !KEYWORDS Bricklink 13746pb002, Calamity Drone, CMF, Collectible Minifigures
+// 0 !KEYWORDS Rebrickable 13746pr0002, set 71004, The LEGO Movie
 // 
 // 0 !HISTORY 2013-08-14 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2024-09-04 [LisaWinter] File preparation for LDraw Parts Tracker

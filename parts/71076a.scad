@@ -18,6 +18,8 @@ function ldraw_lib__71076a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
+// 0 !KEYWORDS BrickLink 71076, Rebrickable 71076
+// 
 // 0 !HISTORY 1998-06-20 [PTadmin] Official Update 1998-06
 // 0 !HISTORY 2003-06-12 [OrionP] Updated to use torus primitives
 // 0 !HISTORY 2003-08-02 [Steffen] BFCed, added missing 4-4edges

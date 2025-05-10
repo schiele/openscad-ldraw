@@ -14,7 +14,7 @@ function ldraw_lib__76382ptf() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb1222c01, Brickowl 696042, Episode I, Gungan Sub
+// 0 !KEYWORDS Bricklink 973pb1222c01, Episode I, Gungan Sub
 // 0 !KEYWORDS Mini Upper Part No 2091, Naboo, Queen Amidala
 // 0 !KEYWORDS Rebrickable 973c22h02pr2091, set 9499, Star Wars, The Phantom Menace
 // 

@@ -18,6 +18,8 @@ function ldraw_lib__3067ap12() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
+// 0 !KEYWORDS BrickLink 3067pb09, Rebrickable 3067pr0003, Set 816
+// 
 // 0 !CMDLINE -c33
 // 
 // 0 !HISTORY 2004-09-24 [Steffen] used s\3067s01.dat, added default color 33

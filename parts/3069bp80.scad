@@ -12,7 +12,8 @@ function ldraw_lib__3069bp80() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !KEYWORDS computer, input, letter, office, terminal, typewriter
+// 0 !KEYWORDS BrickLink 3069p80, computer, input, letter, office
+// 0 !KEYWORDS Rebrickable 3069bpr0049, Set 1775, terminal, typewriter
 // 
 // 0 !HISTORY 2004-11-06 [PTadmin] Official Update 2004-04
 // 0 !HISTORY 2007-06-13 [PTadmin] Header formatted for Contributor Agreement

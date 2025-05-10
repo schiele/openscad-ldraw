@@ -12,8 +12,8 @@ function ldraw_lib__50944p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 50944pb01, Ferrari, set 40109, set 8147, set 8644
-// 0 !KEYWORDS Tiny Turbos
+// 0 !KEYWORDS Bricklink 50944pb01, Ferrari, Rebrickable 50944pr0001, set 40109
+// 0 !KEYWORDS set 8147, set 8644, Tiny Turbos
 // 
 // 0 !HISTORY 2022-12-29 [MagFors] Original design as 51719 by Philippe Hurbain
 // 0 !HISTORY 2022-12-29 [MagFors] Used pattern subfile

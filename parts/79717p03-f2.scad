@@ -14,6 +14,8 @@ function ldraw_lib__79717p03_f2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 79717c01, Rebrickable 79717c03, Set 42159
+// 
 // 0 !HISTORY 2024-09-30 [OrionP] Official Update 2024-08
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 80022.dat

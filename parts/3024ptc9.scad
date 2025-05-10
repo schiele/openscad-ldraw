@@ -11,8 +11,8 @@ function ldraw_lib__3024ptc9() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bat, BrickLink 3024pb009, Eyes, Minecraft, Mouth, Set 21137
-// 0 !KEYWORDS Set 21141, set 21147, Set 21155
+// 0 !KEYWORDS Bat, BrickLink 3024pb009, Eyes, Minecraft, Mouth
+// 0 !KEYWORDS Rebrickable 3024pr0012, Set 21137, Set 21141, set 21147, Set 21155
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 

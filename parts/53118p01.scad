@@ -16,8 +16,9 @@ function ldraw_lib__53118p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS Bricklink 53118pb01, Collectible Minifigures, Series 19, Set 71025
-// 0 !KEYWORDS Set 76175, Set 76200, Video Game Champ
+// 0 !KEYWORDS Bricklink 53118pb01, Collectible Minifigures
+// 0 !KEYWORDS Rebrickable 53118pr0001, Series 19, Set 71025, Set 76175, Set 76200
+// 0 !KEYWORDS Video Game Champ
 // 
 // 0 !HISTORY 2023-08-25 [OrionP] Official Update 2023-04
 // 

@@ -12,8 +12,7 @@ function ldraw_lib__24246p0c() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 24246pb005, Brickowl 89546, Rebrickable 24246pr0013
-// 0 !KEYWORDS Set 71374
+// 0 !KEYWORDS Bricklink 24246pb005, Rebrickable 24246pr0013, Set 71374
 // 
 // 0 !HISTORY 2024-05-24 [Cheenzo] Removed unnecessary vertices and fixed Reddish Brown colour
 // 0 !HISTORY 2024-10-27 [OrionP] Official Update 2024-09

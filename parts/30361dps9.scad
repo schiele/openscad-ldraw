@@ -22,7 +22,7 @@ function ldraw_lib__30361dps9() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS astromech, Bricklink 30361pb032, droid, minifig, orange droid
-// 0 !KEYWORDS set 75098, Star Wars
+// 0 !KEYWORDS Rebrickable 30361cpr1007, set 75098, Star Wars
 // 
 // 0 !HISTORY 2022-03-06 [PTadmin] Official Update 2022-02
 // 

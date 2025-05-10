@@ -16,7 +16,7 @@ function ldraw_lib__4864ap03() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !KEYWORDS Rebrickable 4864apr0007
+// 0 !KEYWORDS Rebrickable 4864apr0007, Set 6671
 // 
 // 0 !PREVIEW 16 0 0 0 -1 0 0 0 1 0 0 0 -1
 // 

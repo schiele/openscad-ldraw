@@ -11,7 +11,7 @@ function ldraw_lib__3010pt2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Set 720-2, Train
+// 0 !KEYWORDS BrickLink 3010pb033, Rebrickable 3010pr9939, Set 720-2, Train
 // 
 // 0 !CMDLINE -c15
 // 

@@ -16,7 +16,7 @@ function ldraw_lib__4150p40() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS bullseye, Castle, Forestman
+// 0 !KEYWORDS bullseye, Castle, Forestman, Rebrickable 4150pr0019, Set 1597
 // 
 // 0 !CMDLINE -C14
 // 

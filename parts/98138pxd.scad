@@ -17,8 +17,9 @@ function ldraw_lib__98138pxd() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bob, Bricklink 98138pb141, Kevin, Minions, Otto, Set 30387
-// 0 !KEYWORDS Set 40511, Set 75546, Set 75547, Set 75550, Set 75551
+// 0 !KEYWORDS Bob, Bricklink 98138pb141, Kevin, Minions, Otto
+// 0 !KEYWORDS Rebrickable 98138pr0154, Set 30387, Set 40511, Set 75546, Set 75547
+// 0 !KEYWORDS Set 75550, Set 75551
 // 
 // 0 !HISTORY 2022-12-20 [PTadmin] Official Update 2022-06
 // 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives

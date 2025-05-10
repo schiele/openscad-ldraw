@@ -18,8 +18,9 @@ function ldraw_lib__30127() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Adventurers, amazon, bald eagle, Feather, Harry Potter, indian
-// 0 !KEYWORDS Jungle, leaf, leaves, Plant, western, wild west, wings
+// 0 !KEYWORDS Adventurers, amazon, bald eagle, BrickLink 471, Feather
+// 0 !KEYWORDS Harry Potter, indian, Jungle, leaf, leaves, Plant, western
+// 0 !KEYWORDS wild west, wings
 // 
 // 0 !HISTORY 2002-02-18 [PTadmin] Official Update 2002-01
 // 0 !HISTORY 2007-07-08 [PTadmin] Header formatted for Contributor Agreement

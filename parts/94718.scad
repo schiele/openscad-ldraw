@@ -12,7 +12,8 @@ function ldraw_lib__94718() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Figure Accessory
-// 0 !KEYWORDS animal, First prize, Horse, Multipack 92355, Race, Riding
+// 0 !KEYWORDS animal, BrickLink 92355e, First prize, Horse, Multipack 92355, Race
+// 0 !KEYWORDS Riding
 // 
 // 0 !HISTORY 2013-08-14 {LEGO Digital Designer} Original part shape (medal section)
 // 0 !HISTORY 2020-09-28 [RainbowDolphin] File preparation for LDraw Parts Tracker

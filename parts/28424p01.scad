@@ -18,8 +18,8 @@ function ldraw_lib__28424p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Bricklink 28430pb02, Brickowl 282832, Rebrickable 28424pr0001
-// 0 !KEYWORDS Set 40372, Set 60140, Set 60141, Set 60143
+// 0 !KEYWORDS Bricklink 28430pb02, Rebrickable 28424pr0001, Set 40372, Set 60140
+// 0 !KEYWORDS Set 60141, Set 60143
 // 
 // 0 !HISTORY 2023-10-02 [Holly-Wood] Fixed hairline, rearranged subfiles
 // 0 !HISTORY 2024-05-28 [OrionP] Official Update 2024-04

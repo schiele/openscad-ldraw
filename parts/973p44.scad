@@ -15,6 +15,8 @@ function ldraw_lib__973p44() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS Set 6038
+// 
 // 0 !HISTORY 2000-09-30 [PTadmin] Official Update 2000-02
 // 0 !HISTORY 2001-10-26 [PTadmin] Official Update 2001-01
 // 0 !HISTORY 2001-10-29 [sbliss] Added neckmark

@@ -21,6 +21,8 @@ function ldraw_lib__53588() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 53588pb01
+// 
 // 0 !HISTORY 2010-09-10 {LEGO Universe Team} Original part shape
 // 0 !HISTORY 2011-05-15 [MagFors] File preparation for LDraw Parts Tracker
 // 0 !HISTORY 2011-07-25 [PTadmin] Official Update 2011-01

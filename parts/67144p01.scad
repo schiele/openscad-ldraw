@@ -14,7 +14,7 @@ function ldraw_lib__67144p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Sheet Plastic
-// 0 !KEYWORDS bike, Ducati Panigale, Set 42107
+// 0 !KEYWORDS bike, BrickLink 67144, Ducati Panigale, Rebrickable 67144, Set 42107
 // 
 // 0 !HISTORY 2024-09-30 [OrionP] Official Update 2024-08
 // 

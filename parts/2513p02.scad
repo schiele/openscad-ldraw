@@ -13,6 +13,8 @@ function ldraw_lib__2513p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 2513px2, Rebrickable 2513pr0001, Set 1297
+// 
 // 0 !HISTORY 2012-09-09 [MagFors] subfiled grille and headlight pattern
 // 0 !HISTORY 2014-06-21 [PTadmin] Official Update 2014-01
 // 

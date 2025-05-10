@@ -11,6 +11,8 @@ function ldraw_lib__3009p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS Rebrickable 3009pr0007, set 310
+// 
 // 0 !HISTORY 1998-03-23 [PTadmin] Official Update 1998-03
 // 0 !HISTORY 2003-07-03 [Steffen] made use of subfile
 // 0 !HISTORY 2004-11-06 [PTadmin] Official Update 2004-04

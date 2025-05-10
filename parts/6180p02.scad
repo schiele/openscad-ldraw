@@ -11,8 +11,8 @@ function ldraw_lib__6180p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 6180pb044, Classroom, Laboratory, Set 3185, Set 3933
-// 0 !KEYWORDS Workshop
+// 0 !KEYWORDS Bricklink 6180pb044, Classroom, Laboratory, Rebrickable 6180pr0003
+// 0 !KEYWORDS Set 3185, Set 3933, Workshop
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 

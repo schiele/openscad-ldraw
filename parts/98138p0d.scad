@@ -12,7 +12,8 @@ function ldraw_lib__98138p0d() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS candy, sweet, Swirl
+// 0 !KEYWORDS BrickLink 98138pb013, candy, Rebrickable 98138pr0013, set 10235
+// 0 !KEYWORDS sweet, Swirl
 // 
 // 0 !HISTORY 2015-12-30 [PTadmin] Official Update 2015-02
 // 

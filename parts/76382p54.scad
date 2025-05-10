@@ -14,10 +14,10 @@ function ldraw_lib__76382p54() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Alien, Bricklink 973px123c01, BrickOwl 368035, Chamon, Cyborg
-// 0 !KEYWORDS Extraterrestrial, Invaders, Mini Upper Part 248, Organs, Otopian
-// 0 !KEYWORDS Planet Humorless, Rebrickable 973c22h03pr0123, set 2543, set 2847
-// 0 !KEYWORDS set 6915, set 6975, set 6979, Space, The Pilot, UFO, Zotax
+// 0 !KEYWORDS Alien, Bricklink 973px123c01, Chamon, Cyborg, Extraterrestrial
+// 0 !KEYWORDS Invaders, Mini Upper Part 248, Organs, Otopian, Planet Humorless
+// 0 !KEYWORDS Rebrickable 973c22h03pr0123, set 2543, set 2847, set 6915, set 6975
+// 0 !KEYWORDS set 6979, Space, The Pilot, UFO, Zotax
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

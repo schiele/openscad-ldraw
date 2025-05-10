@@ -13,7 +13,7 @@ function ldraw_lib__16178p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Bricklink 16178pb01, Set 60074, Set 60125
+// 0 !KEYWORDS Bricklink 16178pb01, Rebrickable 16178pr0001, Set 60074, Set 60125
 // 
 // 0 !HISTORY 2020-06-28 [PTadmin] Official Update 2020-01
 // 0 !HISTORY 2022-06-22 [Philo] Updated description, added keywords

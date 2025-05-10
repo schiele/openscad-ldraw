@@ -14,7 +14,8 @@ function ldraw_lib__75652() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS 26cm, 36L, 9V, dacta, Mindstorm, RCX, service pack, set 5306
+// 0 !KEYWORDS 26cm, 36L, 9V, BrickLink 5306bc036, dacta, Mindstorm, RCX
+// 0 !KEYWORDS Rebrickable 5306bc036, service pack, set 5306
 // 
 // 0 !CMDLINE -c0
 // 

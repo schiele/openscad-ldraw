@@ -19,7 +19,7 @@ function ldraw_lib__32533p619() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 32533pb619, Rebrickable 32533pr0619, Set 8613
+// 0 !KEYWORDS Bricklink 32171pb107, Rebrickable 32533pr0619, Set 8613
 // 
 // 0 !HISTORY 2021-04-05 [Sirio] Removed unuseful points in number area
 // 0 !HISTORY 2022-12-20 [PTadmin] Official Update 2022-06

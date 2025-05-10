@@ -15,7 +15,8 @@ function ldraw_lib__3009p50() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3009pb244, Galaxy Explorer, Set 10497
+// 0 !KEYWORDS Bricklink 3009pb244, Galaxy Explorer, Rebrickable 3009pr0105
+// 0 !KEYWORDS Set 10497
 // 
 // 0 !HISTORY 2022-12-20 [PTadmin] Official Update 2022-06
 // 

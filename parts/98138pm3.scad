@@ -12,7 +12,7 @@ function ldraw_lib__98138pm3() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Elves
+// 0 !KEYWORDS BrickLink 98138pb032, Elves, Rebrickable 98138pr0031, set 41074
 // 
 // 0 !HISTORY 2015-12-30 [PTadmin] Official Update 2015-02
 // 

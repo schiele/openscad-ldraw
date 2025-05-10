@@ -13,6 +13,8 @@ function ldraw_lib__3003pe2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
+// 0 !KEYWORDS Rebrickable 3003pr0053, Set 1076
+// 
 // 0 !HISTORY 2003-07-11 [Steffen] re-worked pattern to have white circle and black ring instead of 4-4edge : pattern now also looks OK when rendered
 // 0 !HISTORY 2003-12-19 [PTadmin] Official Update 2003-03
 // 0 !HISTORY 2007-05-07 [PTadmin] Header formatted for Contributor Agreement

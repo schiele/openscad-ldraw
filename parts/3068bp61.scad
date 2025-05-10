@@ -11,7 +11,7 @@ function ldraw_lib__3068bp61() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !KEYWORDS BrickLink 3068p61, Rebrickable 3068bpr0067
+// 0 !KEYWORDS BrickLink 3068p61, Rebrickable 3068bpr0067, Set 5054
 // 
 // 0 !HISTORY 2002-04-03 [sbliss] Converted to groove, made BFC compliant
 // 0 !HISTORY 2002-04-25 [PTadmin] Official Update 2002-02

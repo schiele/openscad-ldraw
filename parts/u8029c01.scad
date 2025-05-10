@@ -13,7 +13,8 @@ function ldraw_lib__u8029c01() = [
   [0,"BFC","CW"],
 // 
 // 0 !CATEGORY Window
-// 0 !KEYWORDS Automatic Binding Brick, Lego Mursten
+// 0 !KEYWORDS Automatic Binding Brick, BrickLink cwindow01, Lego Mursten
+// 0 !KEYWORDS Rebrickable brickslot0006
 // 
 // 0 !HISTORY 2008-01-24 [tchang] rebuilt glass
 // 0 !HISTORY 2013-11-17 [Steffen] rebuilt glass

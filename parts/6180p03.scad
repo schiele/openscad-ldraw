@@ -14,7 +14,7 @@ function ldraw_lib__6180p03() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 6180pb045, Emma, Fashion, Set 3936
+// 0 !KEYWORDS Bricklink 6180pb045, Emma, Fashion, Rebrickable 6180pr0002, Set 3936
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
 // 

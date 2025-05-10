@@ -13,8 +13,8 @@ function ldraw_lib__18603c02p0c() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 18605c01pb29 Dimensions, Brickowl 293795, Electronic, NFC
-// 0 !KEYWORDS Rebrickable 19981pr0029, Set 71212, Toy Tag
+// 0 !KEYWORDS BrickLink 18605c01pb29, Electronic, NFC, Rebrickable 19981pr0029
+// 0 !KEYWORDS Set 71212, Toy Tag
 // 
 // 0 !HISTORY 2024-12-30 [OrionP] Official Update 2024-11
 // 

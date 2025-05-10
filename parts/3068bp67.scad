@@ -15,6 +15,8 @@ function ldraw_lib__3068bp67() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
+// 0 !KEYWORDS BrickLink 3068p67, Rebrickable 3068bpr0073, set 308
+// 
 // 0 !HISTORY 2002-02-15 [BrickCaster] groove, L3P compliant
 // 0 !HISTORY 2002-08-18 [PTadmin] Official Update 2002-04
 // 0 !HISTORY 2003-11-08 [Steffen] BFCed, re-created pattern with primitives

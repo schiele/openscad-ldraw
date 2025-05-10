@@ -11,7 +11,8 @@ function ldraw_lib__3069bp0a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !KEYWORDS director, partial, pattern, stripes, tile
+// 0 !KEYWORDS BrickLink 3069px15, director, partial, pattern
+// 0 !KEYWORDS Rebrickable 3069bpr0027, Set 10013, stripes, tile
 // 
 // 0 !HISTORY 2009-09-03 [PTadmin] Official Update 2009-02
 // 

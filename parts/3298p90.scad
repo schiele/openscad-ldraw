@@ -13,6 +13,8 @@ function ldraw_lib__3298p90() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS Rebrickable 3298pr0039, Set 5171
+// 
 // 0 !HISTORY 2000-05-07 [PTadmin] Official Update 2000-01
 // 0 !HISTORY 2002-08-19 [Holly-Wood] refined pattern
 // 0 !HISTORY 2002-12-31 [Holly-Wood] fixed overlap

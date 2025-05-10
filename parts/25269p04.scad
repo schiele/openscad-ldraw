@@ -14,7 +14,8 @@ function ldraw_lib__25269p04() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 25269pb011, Dots, Love Birds, Set 41912
+// 0 !KEYWORDS Bricklink 25269pb011, Dots, Love Birds, Rebrickable 25269pr0011
+// 0 !KEYWORDS Set 41912
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
 // 

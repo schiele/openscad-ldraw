@@ -12,7 +12,8 @@ function ldraw_lib__50956p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Ford, Mustang, Set 10265
+// 0 !KEYWORDS BrickLink 50956pb035, Ford, Mustang, Rebrickable 50956pr0002
+// 0 !KEYWORDS Set 10265
 // 
 // 0 !CMDLINE -c272
 // 

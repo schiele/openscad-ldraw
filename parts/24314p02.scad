@@ -12,8 +12,8 @@ function ldraw_lib__24314p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 24314pb02, Cargo tricycle, set 41444, set 41708, Set 60337
-// 0 !KEYWORDS Wheelchair
+// 0 !KEYWORDS Bricklink 24314pb02, Cargo tricycle, Rebrickable 24314c02, set 41444
+// 0 !KEYWORDS set 41708, Set 60337, Wheelchair
 // 
 // 0 !HISTORY 2022-12-20 [PTadmin] Official Update 2022-06
 // 0 !HISTORY 2023-02-04 [MagFors] Update description, added keywords

@@ -17,8 +17,8 @@ function ldraw_lib__73200bp0j() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 970c05pb12, Brickowl 584099, Chima, Laval
-// 0 !KEYWORDS Rebrickable 970c22pr0934, Set 71222
+// 0 !KEYWORDS Bricklink 970c05pb12, Chima, Laval, Rebrickable 970c22pr0934
+// 0 !KEYWORDS Set 71222
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

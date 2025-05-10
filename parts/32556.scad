@@ -20,6 +20,8 @@ function ldraw_lib__32556() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS Rebrickable 32556a
+// 
 // 0 !HISTORY 2006-04-15 [guyvivan] Secondary author
 // 0 !HISTORY 2009-05-02 [PTadmin] Official Update 2009-01
 // 0 !HISTORY 2015-02-11 [MagFors] Redesign without peghole.dat, regenerated cond-lines

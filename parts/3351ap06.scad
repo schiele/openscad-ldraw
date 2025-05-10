@@ -12,6 +12,8 @@ function ldraw_lib__3351ap06() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 649pb06a, Rebrickable 649pr0007
+// 
 // 0 !HISTORY 2010-04-25 [cwdee] Subfiled pattern to share between 3351ap01 and 3351bp06
 // 0 !HISTORY 2010-07-05 [PTadmin] Official Update 2010-02
 // 

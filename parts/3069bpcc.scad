@@ -14,8 +14,7 @@ function ldraw_lib__3069bpcc() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS BrickLink 3069pb0856, Brickowl 157701, Rebrickable 3069bpr0300
-// 0 !KEYWORDS Set 60306, set 70423
+// 0 !KEYWORDS BrickLink 3069pb0856, Rebrickable 3069bpr0300, Set 60306, set 70423
 // 
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04
 // 0 !HISTORY 2024-08-28 [Cheenzo] Corrected spelling of Grey, Fixed and added keywords

@@ -14,8 +14,8 @@ function ldraw_lib__76382pr8() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS B-Wing, Bricklink 973ps1c01, BrickOwl 679657, Dak Ralter, Echo Base
-// 0 !KEYWORDS Endor, flight suit, Gold Leader, Hoth, Jon Dutch Vander, Jon Vander
+// 0 !KEYWORDS B-Wing, Bricklink 973ps1c01, Dak Ralter, Echo Base, Endor
+// 0 !KEYWORDS flight suit, Gold Leader, Hoth, Jon Dutch Vander, Jon Vander
 // 0 !KEYWORDS Luke Skywalker, Mini Upper Part No 1243, Mini Upper Part No 1301
 // 0 !KEYWORDS Mini Upper Part No 372, Mini Upper Part No 376
 // 0 !KEYWORDS Mini Upper Part No 377, Original Trilogy, Rebel Alliance

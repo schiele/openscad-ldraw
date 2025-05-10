@@ -17,7 +17,8 @@ function ldraw_lib__73200bp0h() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 970c00pb1589, Dune, Gurney Halleck, Set 10327
+// 0 !KEYWORDS Bricklink 970c00pb1589, Dune, Gurney Halleck
+// 0 !KEYWORDS Rebrickable 970c12pr2613, Set 10327
 // 
 // 0 !HISTORY 2024-10-27 [OrionP] Official Update 2024-09
 // 

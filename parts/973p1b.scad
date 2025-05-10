@@ -14,6 +14,8 @@ function ldraw_lib__973p1b() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
+// 0 !KEYWORDS set 6377
+// 
 // 0 !CMDLINE -c15
 // 
 // 0 !HISTORY 2003-08-01 [PTadmin] Official Update 2003-02

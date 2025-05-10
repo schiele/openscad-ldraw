@@ -17,7 +17,7 @@ function ldraw_lib__73200bpba() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Batman, bricklink 970d03pb01, Brickowl 958962, Harley Quinn
+// 0 !KEYWORDS Batman, bricklink 970d03pb01, Harley Quinn
 // 0 !KEYWORDS Rebrickable 970l03r22pr0115, set 7886
 // 
 // 0 !CMDLINE -c4

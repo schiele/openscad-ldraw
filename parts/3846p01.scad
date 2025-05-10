@@ -12,7 +12,8 @@ function ldraw_lib__3846p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS City of London, Coat of Arms
+// 0 !KEYWORDS BrickLink 3846pb032, City of London, Coat of Arms
+// 0 !KEYWORDS Rebrickable 3846pr0017, Set 10214
 // 
 // 0 !HISTORY 2011-08-01 [tchang] New part
 // 0 !HISTORY 2011-08-05 [tchang] Corrected bad quad (rounded), Change color 71 to 16 (main color), 25 to 297

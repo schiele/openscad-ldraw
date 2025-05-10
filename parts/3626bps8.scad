@@ -14,9 +14,9 @@ function ldraw_lib__3626bps8() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS apprentice, Bricklink 3626bps8, Brickowl 56194, Episode One
-// 0 !KEYWORDS Rebrickable 3626bpr0815, Set 7101, set 7151, set 7663
-// 0 !KEYWORDS Sith Infiltrator, Sith Lord, Star Wars, villian
+// 0 !KEYWORDS apprentice, BrickLink 3626ps8, Episode One, Rebrickable 3626bpr0815
+// 0 !KEYWORDS Set 7101, set 7151, set 7663, Sith Infiltrator, Sith Lord, Star Wars
+// 0 !KEYWORDS villian
 // 
 // 0 !CMDLINE -c0
 // 

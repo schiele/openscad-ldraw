@@ -14,7 +14,8 @@ function ldraw_lib__3626cpd6i() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626cpb1723, Calculator, Lego Batman Movie
+// 0 !KEYWORDS BrickLink 3626pb1723, Calculator, Lego Batman Movie
+// 0 !KEYWORDS Rebrickable 3626cpr2098, Set 71017-18
 // 
 // 0 !HISTORY 2018-12-08 [PTadmin] Official Update 2018-02
 // 0 !HISTORY 2020-05-10 [cwdee] Update colour name in description

@@ -14,10 +14,10 @@ function ldraw_lib__76382p4g() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Armor, breastplate, Bricklink 973px116c01, BrickOwl 958401, chrome
-// 0 !KEYWORDS gold, Joan of Arc, King Leo, Knights Kingdom, plate armour
-// 0 !KEYWORDS plate mail, Princess, Princess Storm, Rebrickable 973c03h01pr0116
-// 0 !KEYWORDS Set 4816, Set 6091, Set 6098, shield-maiden, silver, Warrior
+// 0 !KEYWORDS Armor, breastplate, Bricklink 973px116c01, chrome, gold, Joan of Arc
+// 0 !KEYWORDS King Leo, Knights Kingdom, plate armour, plate mail, Princess
+// 0 !KEYWORDS Princess Storm, Rebrickable 973c03h01pr0116, Set 4816, Set 6091
+// 0 !KEYWORDS Set 6098, shield-maiden, silver, Warrior
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

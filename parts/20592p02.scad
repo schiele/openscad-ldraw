@@ -14,7 +14,7 @@ function ldraw_lib__20592p02() = [
 // 
 // 0 !CATEGORY Minifig Headwear
 // 0 !KEYWORDS Andrea's Accessories Store, Bricklink 20592pb02, Calssic Batman TV
-// 0 !KEYWORDS Catwoman, set 41344, set 76052
+// 0 !KEYWORDS Catwoman, Rebrickable 20592pr0002, set 41344, set 76052
 // 
 // 0 !HISTORY 2023-04-17 [OrionP] Official Update 2023-02
 // 

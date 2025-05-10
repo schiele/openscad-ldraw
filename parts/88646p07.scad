@@ -12,8 +12,8 @@ function ldraw_lib__88646p07() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 17836pb012, Bricklink 88646pb012, CMF
-// 0 !KEYWORDS Collectible Minifigures, Series 26, Set 71046, Space
+// 0 !KEYWORDS Bricklink 88646pb012, CMF, Collectible Minifigures
+// 0 !KEYWORDS Rebrickable 88646pr0004, Series 26, Set 71046, Space
 // 
 // 0 !HISTORY 2024-12-01 [OrionP] Official Update 2024-10
 // 

@@ -15,8 +15,8 @@ function ldraw_lib__3626bpq3() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626bpb0529, Brickowl 711733, Helena Tova Skvalling
-// 0 !KEYWORDS Pharaoh's Quest, Rebrickable 3626bpr0756, set 5887, Set 7325
+// 0 !KEYWORDS BrickLink 3626pb0529, Helena Tova Skvalling, Pharaoh's Quest
+// 0 !KEYWORDS Rebrickable 3626bpr0756, set 5887, Set 7325
 // 
 // 0 !CMDLINE -c14
 // 

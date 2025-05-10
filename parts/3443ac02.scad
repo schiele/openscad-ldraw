@@ -12,7 +12,8 @@ function ldraw_lib__3443ac02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3443c10, set 180, set 181, set 182, set 183
+// 0 !KEYWORDS Bricklink 3443c10, Rebrickable 3443c02, set 180, set 181, set 182
+// 0 !KEYWORDS set 183
 // 
 // 0 !HISTORY 2021-05-03 [Holly-Wood] Changed description, added keywords
 // 0 !HISTORY 2022-05-07 [PTadmin] Official Update 2022-03

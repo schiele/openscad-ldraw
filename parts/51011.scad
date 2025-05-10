@@ -15,6 +15,8 @@ function ldraw_lib__51011() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 42611
+// 
 // 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02
 // 
 // 

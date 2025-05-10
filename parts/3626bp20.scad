@@ -17,9 +17,9 @@ function ldraw_lib__3626bp20() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Aerial Acrobats, Bricklink 3626bpb0175, Paradisa, Seaside, Set 6345
-// 0 !KEYWORDS Set 6401, Set 6403, Set 6409, Set 6411, Set 6416, Set 6419, Set 6595
-// 0 !KEYWORDS Surf
+// 0 !KEYWORDS Aerial Acrobats, BrickLink 3626pb0175, Paradisa
+// 0 !KEYWORDS Rebrickable 3626bpr0165, Seaside, Set 6345, Set 6401, Set 6403
+// 0 !KEYWORDS Set 6409, Set 6411, Set 6416, Set 6419, Set 6595, Surf
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 0 !HISTORY 2023-11-06 [MagFors] Update description

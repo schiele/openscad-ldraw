@@ -13,8 +13,8 @@ function ldraw_lib__10051p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Bricklink 10051pb01, Brickowl 108519, Lord of the Rings
-// 0 !KEYWORDS Rebrickable 10051pr0001, Saruman, Set 9476
+// 0 !KEYWORDS Bricklink 10051pb01, Lord of the Rings, Rebrickable 10051pr0001
+// 0 !KEYWORDS Saruman, Set 9476
 // 
 // 0 !HISTORY 2013-07-21 [PTadmin] Official Update 2013-01
 // 0 !HISTORY 2025-02-26 [OrionP] Added keywords

@@ -14,9 +14,9 @@ function ldraw_lib__76382pb2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Batman 2006, Bricklink 973pb0224c01, BrickOwl 803716, DC comics
-// 0 !KEYWORDS Dick Grayson, Gotham City, Mini Upper Part No 1279
-// 0 !KEYWORDS Rebrickable 973c31h03pr1279, set 7783, set 7885
+// 0 !KEYWORDS Batman 2006, Bricklink 973pb0224c01, DC comics, Dick Grayson
+// 0 !KEYWORDS Gotham City, Mini Upper Part No 1279, Rebrickable 973c31h03pr1279
+// 0 !KEYWORDS set 7783, set 7885
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

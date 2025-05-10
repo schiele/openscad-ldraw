@@ -11,8 +11,7 @@ function ldraw_lib__3070bpt2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3070bpb181, Dots, Jeans, Rebrickable 3070bpr0233
-// 0 !KEYWORDS Set 40438
+// 0 !KEYWORDS BrickLink 3070pb181, Dots, Jeans, Rebrickable 3070bpr0233, Set 40438
 // 
 // 0 !HISTORY 2024-09-30 [OrionP] Official Update 2024-08
 // 

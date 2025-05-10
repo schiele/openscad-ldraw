@@ -12,10 +12,11 @@ function ldraw_lib__3068bp05() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Auto service, Bricklink 3068bp50, City, Construction, police
-// 0 !KEYWORDS Roadsign, Set 1589-2, Set 1590, Set 1656, Set 6329, Set 6430
-// 0 !KEYWORDS Set 6450, set 6581, Set 6600, set 6632, Set 6653, Set 6662, Set 6670
-// 0 !KEYWORDS Set 6671, Set 6686, Set 735, Set 9365, Set 9371, town
+// 0 !KEYWORDS Auto service, BrickLink 3068p50, City, Construction, police
+// 0 !KEYWORDS Rebrickable 3068bpr0029, Roadsign, Set 1589-2, Set 1590, Set 1656
+// 0 !KEYWORDS Set 6329, Set 6430, Set 6450, set 6581, Set 6600, set 6632, Set 6653
+// 0 !KEYWORDS Set 6662, Set 6670, Set 6671, Set 6686, Set 735, Set 9365, Set 9371
+// 0 !KEYWORDS town
 // 
 // 0 !HISTORY 2002-10-14 [grapeape] Secondary author
 // 0 !HISTORY 2002-10-15 [BrickCaster] groove, L3P compliant

@@ -14,7 +14,8 @@ function ldraw_lib__3626cpd6k() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Batman Movie, Bricklink 3626cpb1720, CMF Batman Movie Series 2
+// 0 !KEYWORDS Batman Movie, BrickLink 3626pb1720, CMF Batman Movie Series 2
+// 0 !KEYWORDS Rebrickable 3626cpr2127
 // 
 // 0 !CMDLINE -c78
 // 

@@ -12,7 +12,8 @@ function ldraw_lib__3010pzr() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickheadz, BrickLink 3010pb250, Clown, Krusty, Set 41632, Simpsons
+// 0 !KEYWORDS Brickheadz, BrickLink 3010pb250, Clown, Krusty
+// 0 !KEYWORDS Rebrickable 3010pr0053, Set 41632, Simpsons
 // 
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
 // 

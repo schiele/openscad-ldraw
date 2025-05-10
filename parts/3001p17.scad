@@ -11,7 +11,7 @@ function ldraw_lib__3001p17() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Set 1929
+// 0 !KEYWORDS BrickLink 3001pb017, Rebrickable 3001pr0017, Set 1929
 // 
 // 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02
 // 0 !HISTORY 2013-02-04 [mikeheide] Changed part description

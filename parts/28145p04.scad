@@ -14,8 +14,8 @@ function ldraw_lib__28145p04() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Bricklink 28149pb04, Dick Grayson, Robin, set 71020
-// 0 !KEYWORDS The Batman Movie
+// 0 !KEYWORDS Bricklink 28149pb04, Dick Grayson, Rebrickable 28145pr0203, Robin
+// 0 !KEYWORDS set 71020, The Batman Movie
 // 
 // 0 !HISTORY 2022-09-15 [PTadmin] Official Update 2022-05
 // 

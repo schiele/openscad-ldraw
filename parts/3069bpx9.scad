@@ -11,7 +11,8 @@ function ldraw_lib__3069bpx9() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3069bpb908, Porsche, Set 10295, Year 2021
+// 0 !KEYWORDS BrickLink 3069pb0908, Porsche, Rebrickable 3069bpr0326, Set 10295
+// 0 !KEYWORDS Year 2021
 // 
 // 0 !CMDLINE -c47
 // 

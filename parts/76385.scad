@@ -12,6 +12,8 @@ function ldraw_lib__76385() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
+// 0 !KEYWORDS BrickLink 989c01
+// 
 // 0 !HISTORY 1999-07-05 [PTadmin] Official Update 1999-05
 // 0 !HISTORY 2003-04-30 [technog] BFC'd and primitive optimized part
 // 0 !HISTORY 2003-12-19 [PTadmin] Official Update 2003-03

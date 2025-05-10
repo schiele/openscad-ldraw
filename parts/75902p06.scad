@@ -13,8 +13,8 @@ function ldraw_lib__75902p06() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS Boromir, Bricklink 75902pb27, Lord of the Rings, LOTR, Rivendell
-// 0 !KEYWORDS Set 10316
+// 0 !KEYWORDS Boromir, Bricklink 75902pb27, Lord of the Rings, LOTR
+// 0 !KEYWORDS Rebrickable 75902pr0034, Rivendell, Set 10316
 // 
 // 0 !HISTORY 2023-08-25 [OrionP] Official Update 2023-04
 // 

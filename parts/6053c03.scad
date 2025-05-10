@@ -12,8 +12,8 @@ function ldraw_lib__6053c03() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Armada, Cross Bone Clipper, hull, Pirate, Pirates, set 6250, ship
-// 0 !KEYWORDS skull
+// 0 !KEYWORDS Armada, BrickLink 6052c04, Cross Bone Clipper, hull, Pirate, Pirates
+// 0 !KEYWORDS Rebrickable 6053c04, set 6250, ship, skull
 // 
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
 // 

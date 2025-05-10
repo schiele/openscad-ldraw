@@ -14,8 +14,8 @@ function ldraw_lib__76382pug() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Barista, Bricklink 973pb3256c01, BrickOwl 301036, Coffee
-// 0 !KEYWORDS Rebrickable 973c27h01pr4200, Set 10297, Set 60197, Set 60306
+// 0 !KEYWORDS Barista, Bricklink 973pb3256c01, Coffee, Rebrickable 973c27h01pr4200
+// 0 !KEYWORDS Set 10297, Set 60197, Set 60306
 // 
 // 0 !HISTORY 2024-12-30 [OrionP] Official Update 2024-11
 // 

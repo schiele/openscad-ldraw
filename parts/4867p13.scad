@@ -12,7 +12,8 @@ function ldraw_lib__4867p13() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Airplane, bricklink 4867pb04, Cargo, Freighter, set 6375, wedge
+// 0 !KEYWORDS Airplane, bricklink 4867pb04, Cargo, Freighter
+// 0 !KEYWORDS Rebrickable 4867pr0004, set 6375, wedge
 // 
 // 0 !HISTORY 2020-08-26 [RainbowDolphin] created based on 821421a by Ulrich Röder [UR]
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04

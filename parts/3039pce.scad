@@ -13,7 +13,8 @@ function ldraw_lib__3039pce() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3039pb041, buttons, controls, screen, Set 7035
+// 0 !KEYWORDS Bricklink 3039pb041, buttons, controls, Rebrickable 3039pr0002
+// 0 !KEYWORDS screen, Set 7035
 // 
 // 0 !HISTORY 2016-12-31 [PTadmin] Official Update 2016-01
 // 0 !HISTORY 2022-11-29 [Philo] Subparted for inverted slope version

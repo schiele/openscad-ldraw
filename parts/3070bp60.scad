@@ -11,7 +11,7 @@ function ldraw_lib__3070bp60() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Life on Mars
+// 0 !KEYWORDS BrickLink 3070px1, Life on Mars, Rebrickable 3070bpr0033, Set 1415
 // 
 // 0 !HISTORY 2012-08-09 [PTadmin] Official Update 2012-02
 // 

@@ -12,6 +12,8 @@ function ldraw_lib__608p33() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 608px1, Rebrickable 608pr0004, Set 1245
+// 
 // 0 !HISTORY 2010-04-09 [mikeheide] Moved portions from subfile
 // 0 !HISTORY 2010-07-05 [PTadmin] Official Update 2010-02
 // 

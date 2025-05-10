@@ -14,7 +14,7 @@ function ldraw_lib__973p4n() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !KEYWORDS Castle, Dress, Princess
+// 0 !KEYWORDS Castle, Dress, Princess, Set 6081
 // 
 // 0 !CMDLINE -c15
 // 

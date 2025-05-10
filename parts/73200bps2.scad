@@ -17,7 +17,7 @@ function ldraw_lib__73200bps2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 970c02pb06, Brickowl 623427, leggings, Luke Skywalker
+// 0 !KEYWORDS Bricklink 970c02pb06, leggings, Luke Skywalker
 // 0 !KEYWORDS Rebrickable 970c26pr0113, Set 10179, Set 10188, Set 7965, Set 8092
 // 0 !KEYWORDS Star Wars
 // 

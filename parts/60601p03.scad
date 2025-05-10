@@ -11,7 +11,8 @@ function ldraw_lib__60601p03() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS BrickLink 60601pb012, Dr. Who, Set 21304, Tardis
+// 0 !KEYWORDS BrickLink 60601pb012, Dr. Who, Rebrickable 60601pr0003, Set 21304
+// 0 !KEYWORDS Tardis
 // 
 // 0 !HISTORY 2020-06-28 [PTadmin] Official Update 2020-01
 // 0 !HISTORY 2021-01-16 [cwdee] Update description

@@ -17,7 +17,8 @@ function ldraw_lib__4744p06() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS basic, bricklink 4744pb21, Fire engine, Set 392-2
+// 0 !KEYWORDS basic, bricklink 4744pb21, Fire engine, Rebrickable 4744pr0022
+// 0 !KEYWORDS Set 392-2
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
 // 

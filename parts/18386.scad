@@ -14,7 +14,7 @@ function ldraw_lib__18386() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 970e01, Lord Business, Set 70809
+// 0 !KEYWORDS Bricklink 970e01, Lord Business, Rebrickable 18386c00, Set 70809
 // 
 // 0 !HISTORY 2023-12-31 [OrionP] Official Update 2023-07
 // 

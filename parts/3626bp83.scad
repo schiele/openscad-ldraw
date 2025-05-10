@@ -17,8 +17,8 @@ function ldraw_lib__3626bp83() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626bpb0204, Brickowl 80661, Rebrickable 3626bpr0325
-// 0 !KEYWORDS set 10210, Set 3181, Set 7946
+// 0 !KEYWORDS BrickLink 3626pb0204, Rebrickable 3626bpr0325, set 10210, Set 3181
+// 0 !KEYWORDS Set 7946
 // 
 // 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01
 // 0 !HISTORY 2024-08-29 [Lego-Manfred] Reference and sets added

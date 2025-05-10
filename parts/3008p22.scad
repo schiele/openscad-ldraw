@@ -11,7 +11,7 @@ function ldraw_lib__3008p22() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !KEYWORDS boat, ferry, windows
+// 0 !KEYWORDS boat, ferry, Rebrickable 3008pr0018, Set 1548, windows
 // 
 // 0 !HISTORY 1999-05-24 [PTadmin] Official Update 1999-04
 // 0 !HISTORY 2004-03-11 [westrate] BFC'ed, subfiled

@@ -13,7 +13,8 @@ function ldraw_lib__3623pt3() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Camaro, Chevrolet, Set 75891, Speed Champions
+// 0 !KEYWORDS BrickLink 3623pb020, Camaro, Chevrolet, Rebrickable 3623pr0026
+// 0 !KEYWORDS Set 75891, Speed Champions
 // 
 // 0 !HISTORY 2023-10-31 [OrionP] Official Update 2023-05
 // 

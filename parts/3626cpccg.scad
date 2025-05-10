@@ -15,8 +15,8 @@ function ldraw_lib__3626cpccg() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626cpb1176, CMF, Collectible Minifigures, Emo, Series 12
-// 0 !KEYWORDS Set 71007, Spooky Girl
+// 0 !KEYWORDS BrickLink 3626pb1176, CMF, Collectible Minifigures, Emo
+// 0 !KEYWORDS Rebrickable 3626cpr1481, Series 12, Set 71007, Spooky Girl
 // 
 // 0 !HISTORY 2023-03-05 [OrionP] Official Update 2023-01
 // 0 !HISTORY 2023-11-07 [MagFors] Update description, corrected spelling

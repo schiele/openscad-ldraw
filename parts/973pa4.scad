@@ -15,7 +15,7 @@ function ldraw_lib__973pa4() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Adventurers, amazon, Jacket, Senor Palomar, villian
+// 0 !KEYWORDS Adventurers, amazon, Jacket, Senor Palomar, Set 5936, villian
 // 
 // 0 !HISTORY 2002-08-18 [PTadmin] Official Update 2002-04
 // 0 !HISTORY 2007-07-29 [PTadmin] Header formatted for Contributor Agreement

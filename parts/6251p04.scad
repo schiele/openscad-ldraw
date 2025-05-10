@@ -14,7 +14,7 @@ function ldraw_lib__6251p04() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS Bricklink 6251pb04, creature, dacta, educational, mousetrap, pet
-// 0 !KEYWORDS set 3149, set 5823
+// 0 !KEYWORDS Rebrickable 6251pr0001, set 3149, set 5823
 // 
 // 0 !HISTORY 2022-12-20 [PTadmin] Official Update 2022-06
 // 

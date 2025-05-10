@@ -12,6 +12,8 @@ function ldraw_lib__243c01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink wheel2b, Rebrickable upn0383b
+// 
 // 0 !CMDLINE -c4
 // 
 // 0 !HISTORY 2011-07-25 [PTadmin] Official Update 2011-01

@@ -11,7 +11,8 @@ function ldraw_lib__3245cpza() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickheadz, BrickLink 3245cpb067, Chewbacca, Set 41609, Star Wars
+// 0 !KEYWORDS Brickheadz, BrickLink 3245cpb067, Chewbacca, Rebrickable 3245cpr0135
+// 0 !KEYWORDS Set 41609, Star Wars
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 

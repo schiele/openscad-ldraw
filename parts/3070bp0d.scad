@@ -13,7 +13,7 @@ function ldraw_lib__3070bp0d() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS bricklink 3070bpb104, Friends
+// 0 !KEYWORDS BrickLink 3070pb104, Friends, Rebrickable 3070bpr0167, Set 41127
 // 
 // 0 !HISTORY 2019-09-09 [PTadmin] Official Update 2019-02
 // 

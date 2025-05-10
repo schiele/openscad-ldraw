@@ -14,9 +14,9 @@ function ldraw_lib__76382pf8() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb0093c01, BrickOwl 661155, Castle, Dark Forest
-// 0 !KEYWORDS Forestman, forestmen, Rebrickable 973c01h01pr0093, Rob'N'Hood
-// 0 !KEYWORDS Robin Hood, Set 6046, Set 6079
+// 0 !KEYWORDS Bricklink 973pb0093c01, Castle, Dark Forest, Forestman, forestmen
+// 0 !KEYWORDS Rebrickable 973c01h01pr0093, Rob'N'Hood, Robin Hood, Set 6046
+// 0 !KEYWORDS Set 6079
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

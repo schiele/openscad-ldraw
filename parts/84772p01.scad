@@ -12,7 +12,8 @@ function ldraw_lib__84772p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS 62.3 x 20.3, Bricklink 84772pb01, Set 10298, Vespa 125
+// 0 !KEYWORDS 62.3 x 20.3, Bricklink 84772pb01, Rebrickable 84772pat0001
+// 0 !KEYWORDS Set 10298, Vespa 125
 // 
 // 0 !HISTORY 2023-10-31 [OrionP] Official Update 2023-05
 // 

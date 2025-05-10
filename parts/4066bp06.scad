@@ -14,8 +14,9 @@ function ldraw_lib__4066bp06() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Brick
-// 0 !KEYWORDS bricklink 4066pb037, Farm, Grocery, house, Set 1025, Set 1040
-// 0 !KEYWORDS set 2399, Set 2640, Set 9152, Set 9977, Supermarket
+// 0 !KEYWORDS bricklink 4066pb037, Farm, Grocery, house, Rebrickable 4066pr0116
+// 0 !KEYWORDS Set 1025, Set 1040, set 2399, Set 2640, Set 9152, Set 9977
+// 0 !KEYWORDS Supermarket
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
 // 0 !HISTORY 2020-09-11 [RainbowDolphin] Subparted for branching 4066bp1e

@@ -15,7 +15,8 @@ function ldraw_lib__24633p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 24633pb01, Disney, Donald, Set 10775, set 71040
+// 0 !KEYWORDS Bricklink 24633pb01, Disney, Donald, Rebrickable 24633pr0001
+// 0 !KEYWORDS Set 10775, set 71040
 // 
 // 0 !HISTORY 2022-02-12 {LEGO Instructions App} Original part shape
 // 0 !HISTORY 2022-02-15 [Philo] File preparation for LDraw Parts Tracker

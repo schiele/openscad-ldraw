@@ -16,8 +16,8 @@ function ldraw_lib__93221p03() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS BrickLink 93221pb03, set 41256, Set 60153, Set 75810, set 75827
-// 0 !KEYWORDS set 76161
+// 0 !KEYWORDS BrickLink 93221pb03, Rebrickable 93221pr0003, set 41256, Set 60153
+// 0 !KEYWORDS Set 75810, set 75827, set 76161
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
 // 

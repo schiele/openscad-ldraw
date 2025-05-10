@@ -14,9 +14,8 @@ function ldraw_lib__76382p5o() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb1243c01, BrickOwl 279333, Christmas, CMF
-// 0 !KEYWORDS Rebrickable 973c22h27pr2112, Santa, Set 10245, set 40125, Set 40223
-// 0 !KEYWORDS Set 850939, Winter Village
+// 0 !KEYWORDS Bricklink 973pb1243c01, Christmas, CMF, Rebrickable 973c22h27pr2112
+// 0 !KEYWORDS Santa, Set 10245, set 40125, Set 40223, Set 850939, Winter Village
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

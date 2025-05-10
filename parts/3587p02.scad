@@ -13,7 +13,7 @@ function ldraw_lib__3587p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3587pb03, Set 687-1
+// 0 !KEYWORDS Bricklink 3587pb03, Rebrickable 3587pr0002, Set 687-1
 // 
 // 0 !HISTORY 2023-03-05 [OrionP] Official Update 2023-01
 // 

@@ -17,7 +17,8 @@ function ldraw_lib__99464c01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Neckwear
-// 0 !KEYWORDS Cloak, Drape, Neckwear, Poncho, Shawl
+// 0 !KEYWORDS BrickLink 99464, Cloak, Drape, Neckwear, Poncho, Rebrickable 99464
+// 0 !KEYWORDS Shawl
 // 
 // 0 !HISTORY 2014-12-23 [PTadmin] Official Update 2014-02
 // 0 !HISTORY 2019-01-26 [cwdee] Update category

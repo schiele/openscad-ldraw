@@ -11,7 +11,8 @@ function ldraw_lib__3010pz7() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickheadz, BrickLink 3010pb205, Set 41592, The Hulk
+// 0 !KEYWORDS Brickheadz, BrickLink 3010pb205, Rebrickable 3010pr0021, Set 41592
+// 0 !KEYWORDS The Hulk
 // 
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
 // 

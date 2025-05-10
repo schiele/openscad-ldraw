@@ -14,6 +14,7 @@ function ldraw_lib__3430c00_f2() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Vehicle
+// 0 !KEYWORDS BrickLink 3430c03, Rebrickable 3430c03
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
 // 

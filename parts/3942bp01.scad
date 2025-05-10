@@ -41,6 +41,8 @@ function ldraw_lib__3942bp01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 3942bpb01, Rebrickable 3942bpr0001, Set 6345
+// 
 // 0 !HISTORY 2013-07-30 [MMR1988] Fixed inner cylinder
 // 0 !HISTORY 2013-12-23 [PTadmin] Official Update 2013-02
 // 

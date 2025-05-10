@@ -15,7 +15,8 @@ function ldraw_lib__3069bpc5() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Homer, Set 6059283, Simpson
+// 0 !KEYWORDS BrickLink 3069pb0311, Homer, Rebrickable 3069bpr0010, Set 6059283
+// 0 !KEYWORDS Simpson
 // 
 // 0 !HISTORY 2014-12-23 [PTadmin] Official Update 2014-02
 // 

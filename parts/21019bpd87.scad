@@ -17,7 +17,7 @@ function ldraw_lib__21019bpd87() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 970c00pb0752, Brickowl 223885, Collectible Minifigs
+// 0 !KEYWORDS Bricklink 970c00pb0752, Collectible Minifigs
 // 0 !KEYWORDS Rebrickable 970c09pat27pr1422, set 71020, The Lego Batman Movie
 // 0 !KEYWORDS Tropical Joker, Vacation The Joker
 // 

@@ -11,9 +11,8 @@ function ldraw_lib__3068bp0l() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3068bpb2048, Brickowl 875929, Camaro, Chevrolet
-// 0 !KEYWORDS headlight cover, Monkie Kid, Rebrickable 3068bpr0646, set 10304
-// 0 !KEYWORDS Set 80053
+// 0 !KEYWORDS BrickLink 3068pb2048, Camaro, Chevrolet, headlight cover, Monkie Kid
+// 0 !KEYWORDS Rebrickable 3068bpr0646, set 10304, Set 80053
 // 
 // 0 !HISTORY 2024-07-29 [OrionP] Official Update 2024-06
 // 

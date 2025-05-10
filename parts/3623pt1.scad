@@ -11,7 +11,7 @@ function ldraw_lib__3623pt1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS 917K, Bricklink 3623pb007, set 75876
+// 0 !KEYWORDS 917K, Bricklink 3623pb007, Rebrickable 3623pr0012, set 75876
 // 
 // 0 !HISTORY 2018-01-30 [PTadmin] Official Update 2018-01
 // 0 !HISTORY 2022-06-30 [Sirio] Fixed T-junctions

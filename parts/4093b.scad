@@ -20,6 +20,8 @@ function ldraw_lib__4093b() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 4093c, Rebrickable 4093c
+// 
 // 0 !HISTORY 2012-08-09 [PTadmin] Official Update 2012-02
 // 
 // 

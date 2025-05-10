@@ -12,7 +12,8 @@ function ldraw_lib__32526p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Jeep Wrangler, Set 42122
+// 0 !KEYWORDS BrickLink 32526pb023, Jeep Wrangler, Rebrickable 32526pr0001
+// 0 !KEYWORDS Set 42122
 // 
 // 0 !HISTORY 2023-06-24 [OrionP] Official Update 2023-03
 // 

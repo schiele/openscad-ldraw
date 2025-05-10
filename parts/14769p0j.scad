@@ -13,7 +13,8 @@ function ldraw_lib__14769p0j() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 14769pb028, Friends, pet, Puppy, Set 41088
+// 0 !KEYWORDS Bricklink 14769pb028, Friends, pet, Puppy, Rebrickable 14769pr0028
+// 0 !KEYWORDS Set 41088
 // 
 // 0 !HISTORY 2023-08-25 [OrionP] Official Update 2023-04
 // 

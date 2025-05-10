@@ -14,8 +14,8 @@ function ldraw_lib__3626cpbn() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Batman, Bricklink 3626cpb1475, Dawn of Justice, Set 76044
-// 0 !KEYWORDS Super Heros
+// 0 !KEYWORDS Batman, BrickLink 3626pb1475, Dawn of Justice
+// 0 !KEYWORDS Rebrickable 3626cpr9994, Set 76044, Super Heros
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 

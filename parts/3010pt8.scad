@@ -11,7 +11,8 @@ function ldraw_lib__3010pt8() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3010pb029, Metro park, Service station, Set 6394, shell
+// 0 !KEYWORDS Bricklink 3010pb029, Metro park, Rebrickable 3010pr9942
+// 0 !KEYWORDS Service station, Set 6394, shell
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
 // 

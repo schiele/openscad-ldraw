@@ -23,7 +23,7 @@ function ldraw_lib__281() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !KEYWORDS Fabuland
+// 0 !KEYWORDS BrickLink fabai3, Fabuland
 // 
 // 0 !CMDLINE -c14
 // 

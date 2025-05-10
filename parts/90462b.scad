@@ -22,7 +22,7 @@ function ldraw_lib__90462b() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Pharaoh's Quest
+// 0 !KEYWORDS BrickLink x177, Pharaoh's Quest, Rebrickable 90462
 // 
 // 0 !HISTORY 2011-10-14 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2011-10-16 [angmarec] File preparation for LDraw Parts Tracker

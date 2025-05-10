@@ -17,9 +17,8 @@ function ldraw_lib__24067p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink colhp39, Brickowl 589099, child, Collectible Minifigures
-// 0 !KEYWORDS Harry Potter, Rebrickable 24061pr0004, Series 2 CMF, Set 71028
-// 0 !KEYWORDS swaddled
+// 0 !KEYWORDS BrickLink frnd430, child, Collectible Minifigures, Harry Potter
+// 0 !KEYWORDS Rebrickable 24067pr0005, Series 2 CMF, Set 71028, swaddled
 // 
 // 0 !HISTORY 2016-03-18 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2024-03-31 [Holly-Wood] File preparation for LDraw Parts Tracker

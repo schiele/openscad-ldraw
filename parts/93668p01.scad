@@ -17,7 +17,8 @@ function ldraw_lib__93668p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Sheet Plastic
-// 0 !KEYWORDS Cobra Hood, Pharaoh's Quest, Set 7325
+// 0 !KEYWORDS BrickLink 93668, Cobra Hood, Pharaoh's Quest, Rebrickable 93668
+// 0 !KEYWORDS Set 7325
 // 
 // 0 !CMDLINE -c47
 // 

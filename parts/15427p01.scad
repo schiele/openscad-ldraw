@@ -12,7 +12,7 @@ function ldraw_lib__15427p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Wyldstyle
+// 0 !KEYWORDS BrickLink 15427pb01, Rebrickable 15427pr0001, set 30281, Wyldstyle
 // 
 // 0 !HISTORY 2014-05-16 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2015-12-29 [MagFors] File preparation for LDraw Parts Tracker

@@ -14,7 +14,7 @@ function ldraw_lib__76382pd17() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb1672c01, BrickOwl 317199, CMF, Ned Flanders
+// 0 !KEYWORDS Bricklink 973pb1672c01, CMF, Ned Flanders
 // 0 !KEYWORDS Rebrickable 973c06h01pr2609, Set 6059283, Set 71005, The Simpsons
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02

@@ -19,7 +19,8 @@ function ldraw_lib__11245p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Figure Accessory
-// 0 !KEYWORDS Bricklink 11245pb01, High school, Set 41005, Stephanie
+// 0 !KEYWORDS Bricklink 11245pb01, High school, Rebrickable 11245pr0002, Set 41005
+// 0 !KEYWORDS Stephanie
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
 // 

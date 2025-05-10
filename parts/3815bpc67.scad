@@ -15,6 +15,8 @@ function ldraw_lib__3815bpc67() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS set 8827
+// 
 // 0 !HISTORY 2012-12-28 [MagFors] Original pattern design
 // 0 !HISTORY 2020-05-30 [cwdee] Adapted to corrected geometry
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02

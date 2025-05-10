@@ -15,8 +15,7 @@ function ldraw_lib__26073p05() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Neckwear
-// 0 !KEYWORDS Bricklink 26073pb05, BrickOwl 110785, Rebrickable 26073pr0005
-// 0 !KEYWORDS Set 60376
+// 0 !KEYWORDS Bricklink 26073pb05, Rebrickable 26073pr0005, Set 60376
 // 
 // 0 !HISTORY 2024-08-26 [OrionP] Official Update 2024-07
 // 

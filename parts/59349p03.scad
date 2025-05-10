@@ -13,7 +13,7 @@ function ldraw_lib__59349p03() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 59349pb323, Disney, Set 43222
+// 0 !KEYWORDS Bricklink 59349pb323, Disney, Rebrickable 59349pr0026, Set 43222
 // 
 // 0 !HISTORY 2024-08-26 [OrionP] Official Update 2024-07
 // 

@@ -14,7 +14,7 @@ function ldraw_lib__95330p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS tool
+// 0 !KEYWORDS BrickLink 95330pb01, Rebrickable 95330pr0001, Set 8805-17, tool
 // 
 // 0 !HISTORY 2013-08-14 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2017-04-20 [Philo] File preparation for LDraw Parts Tracker

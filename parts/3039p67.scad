@@ -11,7 +11,8 @@ function ldraw_lib__3039p67() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Insectoids, Space
+// 0 !KEYWORDS BrickLink 3039px8, Insectoids, Rebrickable 3039pr9952, Set 2964
+// 0 !KEYWORDS Space
 // 
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
 // 

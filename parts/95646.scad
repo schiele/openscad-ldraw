@@ -12,6 +12,8 @@ function ldraw_lib__95646() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 95646c01, Rebrickable 95646c01
+// 
 // 0 !HISTORY 2012-05-20 {LEGO MINDSTORMS Team} Original part shape
 // 0 !HISTORY 2012-07-05 [Philo] Complete rebuild for LDraw Parts Tracker
 // 0 !HISTORY 2013-12-23 [PTadmin] Official Update 2013-02

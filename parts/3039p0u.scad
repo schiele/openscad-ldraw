@@ -18,7 +18,8 @@ function ldraw_lib__3039p0u() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Race, Racer, striped, stripes
+// 0 !KEYWORDS BrickLink 3039pb003, Race, Racer, Rebrickable 3039pr9998, Set 1966
+// 0 !KEYWORDS striped, stripes
 // 
 // 0 !HISTORY 2003-07-06 [Steffen] fixed BFC errors, adjusted header to comply with standard, extended part name
 // 0 !HISTORY 2004-04-22 [PTadmin] Official Update 2004-02

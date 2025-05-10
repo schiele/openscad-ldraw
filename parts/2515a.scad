@@ -27,7 +27,7 @@ function ldraw_lib__2515a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Large
+// 0 !KEYWORDS BrickLink 2515, Large, Rebrickable 2515
 // 
 // 0 !HISTORY 2014-01-05 [theJudeAbides] Complete rebuild
 // 0 !HISTORY 2014-06-21 [PTadmin] Official Update 2014-01

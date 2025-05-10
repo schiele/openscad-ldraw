@@ -13,7 +13,8 @@ function ldraw_lib__3939p91() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !KEYWORDS Galaxy Explorer, Moon, planet, space cruiser
+// 0 !KEYWORDS Galaxy Explorer, Moon, planet, Rebrickable 3939pr0003, Set 487
+// 0 !KEYWORDS space cruiser
 // 
 // 0 !HISTORY 2002-12-31 [PTadmin] Official Update 2002-06
 // 0 !HISTORY 2003-07-11 [Steffen] made use of subfile s\3939s01.dat, removed superfluous CATEGORY and KEYWORDS portions

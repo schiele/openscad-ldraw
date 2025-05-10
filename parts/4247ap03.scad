@@ -12,7 +12,7 @@ function ldraw_lib__4247ap03() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Door
-// 0 !KEYWORDS Bricklink 4247pb01, Set 2403
+// 0 !KEYWORDS Bricklink 4247pb01, Rebrickable 4247pr0002, Set 2403
 // 
 // 0 !HISTORY 2022-12-20 [PTadmin] Official Update 2022-06
 // 

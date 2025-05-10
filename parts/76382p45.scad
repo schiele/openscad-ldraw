@@ -14,9 +14,9 @@ function ldraw_lib__76382p45() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Armor, Bricklink 973p45c01, BrickOwl 374379, Castle, dot, Dots
-// 0 !KEYWORDS Fright Knights, Mini Upper Part No 237, Rebrickable 973c08h01pr0045
-// 0 !KEYWORDS Set 2538, Set 6027, Set 6087, Set 6097, spot, spots
+// 0 !KEYWORDS Armor, Bricklink 973p45c01, Castle, dot, Dots, Fright Knights
+// 0 !KEYWORDS Mini Upper Part No 237, Rebrickable 973c08h01pr0045, Set 2538
+// 0 !KEYWORDS Set 6027, Set 6087, Set 6097, spot, spots
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

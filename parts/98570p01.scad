@@ -18,6 +18,8 @@ function ldraw_lib__98570p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 98570pb01, Rebrickable 98570pat0001, Set 44000
+// 
 // 0 !HISTORY 2013-08-14 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2019-10-02 [MagFors] File preparation for LDraw Parts Tracker
 // 0 !HISTORY 2019-12-27 [PTadmin] Official Update 2019-03

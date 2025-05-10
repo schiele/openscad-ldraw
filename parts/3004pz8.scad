@@ -11,7 +11,8 @@ function ldraw_lib__3004pz8() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickheadz, BrickLink 3004pb173, Iron Man, Mark L, MK50, Set 41604
+// 0 !KEYWORDS Brickheadz, BrickLink 3004pb173, Iron Man, Mark L, MK50
+// 0 !KEYWORDS Rebrickable 3004pr0032, Set 41604
 // 
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
 // 

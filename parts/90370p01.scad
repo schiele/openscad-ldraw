@@ -14,8 +14,8 @@ function ldraw_lib__90370p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS BrickLink 90370pb01, CMF Series 2, Collectible Minifigures, Set 3932
-// 0 !KEYWORDS Set 7065, Set 8684
+// 0 !KEYWORDS BrickLink 90370pb01, CMF Series 2, Collectible Minifigures
+// 0 !KEYWORDS Rebrickable 90370pr0001, Set 3932, Set 7065, Set 8684
 // 
 // 0 !HISTORY 2012-08-09 [PTadmin] Official Update 2012-02
 // 0 !HISTORY 2020-02-28 [Cheenzo] Updated to use subfiles

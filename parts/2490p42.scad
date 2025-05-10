@@ -13,7 +13,8 @@ function ldraw_lib__2490p42() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS black knight, Castle, dragon
+// 0 !KEYWORDS black knight, BrickLink 2490pb02, Castle, dragon
+// 0 !KEYWORDS Rebrickable 2490pr0008, Set 6085
 // 
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
 // 

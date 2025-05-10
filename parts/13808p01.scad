@@ -13,7 +13,8 @@ function ldraw_lib__13808p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS Bricklink 13808pb01, Series 11
+// 0 !KEYWORDS Bricklink 13808pb01, Rebrickable 13808pr0001, Series 11
+// 0 !KEYWORDS Set 71002-12
 // 
 // 0 !HISTORY 2014-01-08 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2014-01-08 [angmarec] File preparation for LDraw Parts Tracker

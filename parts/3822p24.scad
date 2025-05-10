@@ -12,6 +12,8 @@ function ldraw_lib__3822p24() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS Rebrickable 3822pr0005, Set 1067
+// 
 // 0 !HISTORY 2002-12-31 [PTadmin] Official Update 2002-06
 // 0 !HISTORY 2007-06-29 [PTadmin] Header formatted for Contributor Agreement
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01

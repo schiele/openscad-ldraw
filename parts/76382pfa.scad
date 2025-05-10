@@ -14,9 +14,8 @@ function ldraw_lib__76382pfa() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb0092c01, Brickowl 851660, Castle, Dark Forest
-// 0 !KEYWORDS Forestman, forestmen, Rebrickable 973c28h01pr0092, Set 6046
-// 0 !KEYWORDS Set 6079
+// 0 !KEYWORDS Bricklink 973pb0092c01, Castle, Dark Forest, Forestman, forestmen
+// 0 !KEYWORDS Rebrickable 973c28h01pr0092, Set 6046, Set 6079
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

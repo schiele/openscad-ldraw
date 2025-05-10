@@ -14,10 +14,10 @@ function ldraw_lib__76382pro() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS A New Hope, Attack of the Clones, Bricklink 973pb0002c01
-// 0 !KEYWORDS BrickOwl 793930, Episode II, Episode IV, Mini Upper Part No 588
-// 0 !KEYWORDS Original Trilogy, Rebrickable 973c26h08pr0002, sand people, Set 7113
-// 0 !KEYWORDS Star Wars, Tatooine, Tusken Raider, Tusken Raider Encounter
+// 0 !KEYWORDS A New Hope, Attack of the Clones, Bricklink 973pb0002c01, Episode II
+// 0 !KEYWORDS Episode IV, Mini Upper Part No 588, Original Trilogy
+// 0 !KEYWORDS Rebrickable 973c26h08pr0002, sand people, Set 7113, Star Wars
+// 0 !KEYWORDS Tatooine, Tusken Raider, Tusken Raider Encounter
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

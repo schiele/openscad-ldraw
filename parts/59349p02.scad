@@ -11,7 +11,8 @@ function ldraw_lib__59349p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Christmas, Employee, Present, Set 4002020
+// 0 !KEYWORDS BrickLink 59349pb211, Christmas, Employee, Present
+// 0 !KEYWORDS Rebrickable 59349pr0003, Set 4002020
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
 // 

@@ -20,6 +20,8 @@ function ldraw_lib__4150ps3() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS Rebrickable 4150pr0039, Set 1429
+// 
 // 0 !HISTORY 2002-05-27 [mschild] fixed bad vertex sequences and coded part to color 16
 // 0 !HISTORY 2003-03-12 [PTadmin] Official Update 2003-01
 // 0 !HISTORY 2003-07-28 [Steffen] made use of s\4150s01.dat

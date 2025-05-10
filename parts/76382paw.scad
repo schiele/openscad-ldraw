@@ -14,8 +14,8 @@ function ldraw_lib__76382paw() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS 70009, Anthropomorph, Armor, Bricklink 973pb1336c01, BrickOwl 938134
-// 0 !KEYWORDS fantasy, Legends of Chima, Mini Upper Part No 2234
+// 0 !KEYWORDS 70009, Anthropomorph, Armor, Bricklink 973pb1336c01, fantasy
+// 0 !KEYWORDS Legends of Chima, Mini Upper Part No 2234
 // 0 !KEYWORDS Rebrickable 973c14h27pr2234, set 70011, set 70127, Wolf Tribe
 // 0 !KEYWORDS Worriz
 // 

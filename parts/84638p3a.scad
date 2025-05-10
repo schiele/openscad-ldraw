@@ -15,8 +15,8 @@ function ldraw_lib__84638p3a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS bandolier, belt, Bricklink 973p3ac01, BrickOwl 892091, Ironhook
-// 0 !KEYWORDS rags, Rebrickable 84638c06pr0003, set 6292
+// 0 !KEYWORDS bandolier, belt, Bricklink 973p3ac01, Ironhook, rags
+// 0 !KEYWORDS Rebrickable 84638c06pr0003, set 6292
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

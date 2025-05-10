@@ -11,8 +11,8 @@ function ldraw_lib__3068bp0r() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3068pb1997, Brickowl 282898, CMF, Rebrickable 3068bpr9487
-// 0 !KEYWORDS set 71033, The Muppets, Waldorf
+// 0 !KEYWORDS Bricklink 3068pb1997, CMF, Rebrickable 3068bpr9487, set 71033
+// 0 !KEYWORDS The Muppets, Waldorf
 // 
 // 0 !HISTORY 2024-04-28 [OrionP] Official Update 2024-03
 // 

@@ -13,7 +13,7 @@ function ldraw_lib__36036ph1() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS BrickLink 36036pb005, Collectible Minifigures, Fantastic Beasts
-// 0 !KEYWORDS Harry Potter, Lord Voldemort, Rebrickable 36036pr0009
+// 0 !KEYWORDS Harry Potter, Lord Voldemort, Rebrickable 36036pr0009, Set 71022-9
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
 // 

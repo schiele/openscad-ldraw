@@ -13,7 +13,8 @@ function ldraw_lib__44553p02() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Bricklink 44553pb02, Disney, Mickey, Set 71024-1
+// 0 !KEYWORDS Bricklink 44553pb02, Disney, Mickey, Rebrickable 44553pr0002
+// 0 !KEYWORDS Set 71024-1
 // 
 // 0 !HISTORY 2022-02-07 {LEGO Instructions App} Original part shape
 // 0 !HISTORY 2022-02-07 [Philo] File preparation for LDraw Parts Tracker

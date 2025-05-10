@@ -13,7 +13,7 @@ function ldraw_lib__3846p4t() = [
 // 
 // 0 !CATEGORY Minifig Accessory
 // 0 !KEYWORDS BrickLink 3846px2, Castle, knight, LEGOLAND Castle
-// 0 !KEYWORDS Rebrickable 3846pr0037, tournament
+// 0 !KEYWORDS Rebrickable 3846pr0037, Set 15, tournament
 // 
 // 0 !CMDLINE -C7
 // 

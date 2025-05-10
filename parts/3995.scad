@@ -12,7 +12,7 @@ function ldraw_lib__3995() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Fabuland
+// 0 !KEYWORDS BrickLink fabah2, Fabuland, Rebrickable 692
 // 
 // 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01
 // 0 !HISTORY 2017-08-19 [PTadmin] Renamed from 692

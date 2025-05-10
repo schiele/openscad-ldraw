@@ -12,8 +12,8 @@ function ldraw_lib__14769ps2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS advanced, microfighters, prototype, set 75082, set 75128, Star Wars
-// 0 !KEYWORDS tie
+// 0 !KEYWORDS advanced, BrickLink 14769pb025, microfighters, prototype
+// 0 !KEYWORDS Rebrickable 14769pr0086, set 75082, set 75128, Star Wars, tie
 // 
 // 0 !HISTORY 2016-12-31 [PTadmin] Official Update 2016-01
 // 0 !HISTORY 2018-03-14 [cwdee] Update description

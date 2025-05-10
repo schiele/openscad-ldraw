@@ -13,8 +13,8 @@ function ldraw_lib__2528ap32() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Bricklink 2528pb02, Imperial Guard, Imperial Soldier, Set 6263
-// 0 !KEYWORDS Set 6274
+// 0 !KEYWORDS Bricklink 2528pb02, Imperial Guard, Imperial Soldier
+// 0 !KEYWORDS Rebrickable 2528pr0014, Set 6263, Set 6274
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
 // 

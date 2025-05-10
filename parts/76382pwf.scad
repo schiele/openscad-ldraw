@@ -14,7 +14,7 @@ function ldraw_lib__76382pwf() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS American Indian, Bricklink 973px107c01, Brickowl 30677, medicine man
+// 0 !KEYWORDS American Indian, Bricklink 973px107c01, medicine man
 // 0 !KEYWORDS Mini Upper Part No 256, Rapid River Village
 // 0 !KEYWORDS Rebrickable 973c16h01pr0107, set 2845, set 6718, set 6748, set 6763
 // 0 !KEYWORDS set 6766, western, wild west

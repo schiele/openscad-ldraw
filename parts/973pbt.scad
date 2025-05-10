@@ -12,7 +12,7 @@ function ldraw_lib__973pbt() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Marvel, Super Heroes, Toy Fair
+// 0 !KEYWORDS Marvel, Set LCP2012-1, Super Heroes, Toy Fair
 // 
 // 0 !HISTORY 2016-12-31 [PTadmin] Official Update 2016-01
 // 

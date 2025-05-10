@@ -14,7 +14,8 @@ function ldraw_lib__14769p0f() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 14769pb001, Set 10255, Timekeeper, Timepiece, Watch
+// 0 !KEYWORDS Bricklink 14769pb001, Rebrickable 14769pr0001, Set 10255, Timekeeper
+// 0 !KEYWORDS Timepiece, Watch
 // 
 // 0 !HISTORY 2020-03-26 [OrionP] Pattern by tchang
 // 0 !HISTORY 2020-07-16 [MagFors] used pattern subfile

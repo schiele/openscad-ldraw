@@ -13,9 +13,8 @@ function ldraw_lib__98138ph0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 98138pb308, Brickowl 500069, Harry Potter
-// 0 !KEYWORDS Rebrickable 98138pr0321, Set 76403, Set 76408, Set 76410
-// 0 !KEYWORDS Slytherin's Locket
+// 0 !KEYWORDS Bricklink 98138pb308, Harry Potter, Rebrickable 98138pr0321
+// 0 !KEYWORDS Set 76403, Set 76408, Set 76410, Slytherin's Locket
 // 
 // 0 !HISTORY 2024-05-28 [OrionP] Official Update 2024-04
 // 

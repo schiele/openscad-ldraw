@@ -11,7 +11,8 @@ function ldraw_lib__3068bpg0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS bricklink 3068pb22, Picture, Postcard, Set 3645, Set 3786
+// 0 !KEYWORDS BrickLink 3068pb2422, Picture, Postcard, Rebrickable 3068bpr9926
+// 0 !KEYWORDS Set 3645, Set 3786
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
 // 

@@ -21,7 +21,7 @@ function ldraw_lib__973psr() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS 3PO, C-3PO, C3P0, C3PO, Classic Trilogy, dual print, front and back
-// 0 !KEYWORDS Seethreepio, Star Wars
+// 0 !KEYWORDS Seethreepio, Set 10144, Star Wars
 // 
 // 0 !HISTORY 2004-04-22 [PTadmin] Official Update 2004-02
 // 0 !HISTORY 2007-07-29 [PTadmin] Header formatted for Contributor Agreement

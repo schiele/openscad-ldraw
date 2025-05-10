@@ -12,7 +12,8 @@ function ldraw_lib__3960p0c() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS 3960pb037, Disney Castle, set 71040
+// 0 !KEYWORDS 3960pb037, BrickLink 3960pb037, Disney Castle
+// 0 !KEYWORDS Rebrickable 3960pr0023, set 71040
 // 
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
 // 

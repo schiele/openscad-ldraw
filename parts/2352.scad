@@ -18,6 +18,8 @@ function ldraw_lib__2352() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 2352b, Rebrickable 2352b
+// 
 // 0 !HISTORY 2007-05-07 [PTadmin] Header formatted for Contributor Agreement
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
 // 0 !HISTORY 2013-08-29 [theJudeAbides] Fixed T-Junctions, used more prims, BFCed

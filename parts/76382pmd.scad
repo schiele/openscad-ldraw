@@ -14,8 +14,8 @@ function ldraw_lib__76382pmd() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Arwen, Bricklink 973pb5125c01, BrickOwl 151508, Lord of the Rings
-// 0 !KEYWORDS LOTR, Rebrickable 973c27h02pr6466, Rivendell, Set 10316
+// 0 !KEYWORDS Arwen, Bricklink 973pb5125c01, Lord of the Rings, LOTR
+// 0 !KEYWORDS Rebrickable 973c27h02pr6466, Rivendell, Set 10316
 // 
 // 0 !HISTORY 2024-12-30 [OrionP] Official Update 2024-11
 // 

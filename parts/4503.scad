@@ -20,6 +20,7 @@ function ldraw_lib__4503() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
+// 0 !KEYWORDS BrickLink x167
 // 
 // 0 !HISTORY 2010-12-31 [PTadmin] Official Update 2010-03
 // 0 !HISTORY 2012-12-24 [cwdee] Update category

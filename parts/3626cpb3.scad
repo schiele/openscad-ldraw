@@ -15,8 +15,8 @@ function ldraw_lib__3626cpb3() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626cpb1474, Brickowl 853359, Marvel
-// 0 !KEYWORDS Rebrickable 3626cpr1718, set 76037, Spider-Man, Super Heroes
+// 0 !KEYWORDS BrickLink 3626pb1474, Marvel, Rebrickable 3626cpr1718, set 76037
+// 0 !KEYWORDS Spider-Man, Super Heroes
 // 
 // 0 !HISTORY 2018-12-08 [PTadmin] Official Update 2018-02
 // 0 !HISTORY 2024-10-26 [Lego-Manfred] Reference added

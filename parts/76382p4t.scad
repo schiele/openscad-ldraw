@@ -14,9 +14,9 @@ function ldraw_lib__76382p4t() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS black knight, Bricklink 973px45c01, BrickOwl 71780, Castle
-// 0 !KEYWORDS Classic Castle, Joust, Knights Tournament, LEGOLAND Castle
-// 0 !KEYWORDS Rebrickable 973c22h01pr0045, Set 383, Set 6083, Yellow Castle
+// 0 !KEYWORDS black knight, Bricklink 973px45c01, Castle, Classic Castle, Joust
+// 0 !KEYWORDS Knights Tournament, LEGOLAND Castle, Rebrickable 973c22h01pr0045
+// 0 !KEYWORDS Set 383, Set 6083, Yellow Castle
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

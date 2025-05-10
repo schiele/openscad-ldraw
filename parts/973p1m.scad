@@ -14,8 +14,8 @@ function ldraw_lib__973p1m() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb0025, Cameraman, Crisis, helicopter, News
-// 0 !KEYWORDS Rebrickable 973p1m, Reporter, Set 6553, television, van
+// 0 !KEYWORDS Bricklink 973pb0025, Cameraman, Crisis, helicopter, News, Reporter
+// 0 !KEYWORDS Set 6553, television, van
 // 
 // 0 !HISTORY 2004-09-15 [PTadmin] Official Update 2004-03
 // 0 !HISTORY 2007-07-28 [PTadmin] Header formatted for Contributor Agreement

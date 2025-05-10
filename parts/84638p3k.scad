@@ -15,9 +15,9 @@ function ldraw_lib__84638p3k() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickbeard, Bricklink 973pb0524c01, BrickOwl 224351
-// 0 !KEYWORDS Rebrickable 84638c01pr1442, set 10210, set 5002147, Set 6242
-// 0 !KEYWORDS set 6243, Set 6253, Set 6299, Set 850839, Set 852747, Set 9349
+// 0 !KEYWORDS Brickbeard, Bricklink 973pb0524c01, Rebrickable 84638c01pr1442
+// 0 !KEYWORDS set 10210, set 5002147, Set 6242, set 6243, Set 6253, Set 6299
+// 0 !KEYWORDS Set 850839, Set 852747, Set 9349
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

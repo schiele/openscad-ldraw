@@ -23,7 +23,7 @@ function ldraw_lib__30168b() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Adventurers
+// 0 !KEYWORDS Adventurers, BrickLink x177, Rebrickable 30168
 // 
 // 0 !HISTORY 2007-08-25 {LEGO Universe Team} Original part shape
 // 0 !HISTORY 2010-07-13 [mdublade] File preparation for LDraw Parts Tracker

@@ -11,7 +11,8 @@ function ldraw_lib__26603px0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS BrickLink 26603pb008, Minecraft, Shield
+// 0 !KEYWORDS BrickLink 26603pb008, Minecraft, Rebrickable 26603pr0010, Set 21137
+// 0 !KEYWORDS Shield
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
 // 

@@ -12,8 +12,9 @@ function ldraw_lib__2586pw2() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS american native, indian, set 5317, set 5392, set 6709, set 6746
-// 0 !KEYWORDS set 6748, set 6763, set 6766, Warrior, western, wild west
+// 0 !KEYWORDS american native, BrickLink 2586px3, indian, Rebrickable 2586pr0021
+// 0 !KEYWORDS set 5317, set 5392, set 6709, set 6746, set 6748, set 6763, set 6766
+// 0 !KEYWORDS Warrior, western, wild west
 // 
 // 0 !HISTORY 2016-12-31 [PTadmin] Official Update 2016-01
 // 

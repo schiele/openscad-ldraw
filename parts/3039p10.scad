@@ -11,6 +11,8 @@ function ldraw_lib__3039p10() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS Rebrickable 3039pr0010, Set 5154
+// 
 // 0 !HISTORY 2002-09-13 [izanette] Modified with WINDZ for BFC compliance
 // 0 !HISTORY 2003-03-08 [OrionP] Moved guts to subpart
 // 0 !HISTORY 2003-12-19 [PTadmin] Official Update 2003-03

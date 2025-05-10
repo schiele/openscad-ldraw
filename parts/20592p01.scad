@@ -13,8 +13,8 @@ function ldraw_lib__20592p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Bricklink 20592pb01, CMF, Collectable, Series 14, set 71010
-// 0 !KEYWORDS Tiger Woman
+// 0 !KEYWORDS Bricklink 20592pb01, CMF, Collectable, Rebrickable 20592pr0001
+// 0 !KEYWORDS Series 14, set 71010, Tiger Woman
 // 
 // 0 !HISTORY 2023-04-17 [OrionP] Official Update 2023-02
 // 

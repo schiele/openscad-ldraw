@@ -11,7 +11,8 @@ function ldraw_lib__3010pzy() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickheadz, Bricklink 3010pb225, Rey, Set 41602, Star Wars
+// 0 !KEYWORDS Brickheadz, Bricklink 3010pb225, Rebrickable 3010pr0005, Rey
+// 0 !KEYWORDS Set 41602, Star Wars
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
 // 0 !HISTORY 2021-01-16 [cwdee] Update description

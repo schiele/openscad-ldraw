@@ -11,7 +11,8 @@ function ldraw_lib__3004px8() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3004pb138, Minecraft, Set 21120, Set 21131, Snow Golem
+// 0 !KEYWORDS Bricklink 3004pb138, Minecraft, Rebrickable 3004pr0016, Set 21120
+// 0 !KEYWORDS Set 21131, Snow Golem
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
 // 

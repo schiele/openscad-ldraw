@@ -16,7 +16,7 @@ function ldraw_lib__973pa3() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS Adventurers, amazon, belt, Dino Island, Egypt, hero, Johnny Thunder
-// 0 !KEYWORDS open collar, Pistol, pockets, revolver
+// 0 !KEYWORDS open collar, Pistol, pockets, revolver, Set 1355
 // 
 // 0 !HISTORY 2002-06-12 [fwcain] Added CMDLINE and KEYWORDS...
 // 0 !HISTORY 2002-08-18 [PTadmin] Official Update 2002-04

@@ -22,7 +22,7 @@ function ldraw_lib__973p3d() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Imperial Armada, Pirates, Spaniard
+// 0 !KEYWORDS Imperial Armada, Pirates, set 6291, Spaniard
 // 
 // 0 !HISTORY 2004-04-22 [PTadmin] Official Update 2004-02
 // 0 !HISTORY 2007-07-28 [PTadmin] Header formatted for Contributor Agreement

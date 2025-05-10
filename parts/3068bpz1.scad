@@ -11,7 +11,8 @@ function ldraw_lib__3068bpz1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickheadz, BrickLink 3068bpb1180, Homer Simpson, Set 41632
+// 0 !KEYWORDS Brickheadz, BrickLink 3068pb1180, Homer Simpson
+// 0 !KEYWORDS Rebrickable 3068bpr0384, Set 41632
 // 
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
 // 

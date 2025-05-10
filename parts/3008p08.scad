@@ -12,6 +12,8 @@ function ldraw_lib__3008p08() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 3008px7, Rebrickable 3008pr0009, Set 1294
+// 
 // 0 !HISTORY 2010-08-11 [tchang] Made and adapt from 2465p70.dat (Michael Heidemann [mikeheide])
 // 0 !HISTORY 2010-12-14 [tchang] Change part name, add subpart, suppress overlapping
 // 0 !HISTORY 2013-09-04 [MMR1988] Used s\4209p70a, removed t-junctions

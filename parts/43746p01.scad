@@ -18,7 +18,8 @@ function ldraw_lib__43746p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS chamber of secrets, Harry Potter, set 4730, Snake
+// 0 !KEYWORDS BrickLink 43746pb01, chamber of secrets, Harry Potter
+// 0 !KEYWORDS Rebrickable 43746pr0001, set 4730, Snake
 // 
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04
 // 

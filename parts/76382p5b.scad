@@ -14,7 +14,7 @@ function ldraw_lib__76382p5b() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS 2-sided, Bricklink 973pb2911c01, BrickOwl 341620, Mae Jemison, NASA
+// 0 !KEYWORDS 2-sided, Bricklink 973pb2911c01, Mae Jemison, NASA
 // 0 !KEYWORDS Rebrickable 973c34h19pr4193, Set 21312, women
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01

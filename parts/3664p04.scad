@@ -13,8 +13,8 @@ function ldraw_lib__3664p04() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Brick
-// 0 !KEYWORDS BrickLink 3664pb06, Furniture, Room, set 032, set 045-1, set 2630-1
-// 0 !KEYWORDS set 2650-1
+// 0 !KEYWORDS BrickLink 3664pb06, Furniture, Rebrickable 3664pr0021, Room, set 032
+// 0 !KEYWORDS set 045-1, set 2630-1, set 2650-1
 // 
 // 0 !HISTORY 2020-06-28 [PTadmin] Official Update 2020-01
 // 0 !HISTORY 2022-09-07 [RainbowDolphin] Made top semi-cylinder hi-res to comply with latest part regulations

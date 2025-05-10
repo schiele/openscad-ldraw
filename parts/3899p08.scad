@@ -12,8 +12,9 @@ function ldraw_lib__3899p08() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS Bricklink 3899pb008, cocoa, Coffee, Cookware, drink, mug, Set 41690
-// 0 !KEYWORDS Set 60231, Set 60271, tea, town, utensil
+// 0 !KEYWORDS Bricklink 3899pb008, cocoa, Coffee, Cookware, drink, mug
+// 0 !KEYWORDS Rebrickable 3899pr0009, Set 41690, Set 60231, Set 60271, tea, town
+// 0 !KEYWORDS utensil
 // 
 // 0 !HISTORY 2022-09-15 [PTadmin] Official Update 2022-05
 // 

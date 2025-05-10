@@ -22,7 +22,7 @@ function ldraw_lib__2360p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS roadplate
+// 0 !KEYWORDS Rebrickable 2360pr0001, roadplate, Set 6310
 // 
 // 0 !HISTORY 1999-03-23 [sbliss] 2360.dat + 607P01.dat pattern + Mods = 2360P01.dat
 // 0 !HISTORY 1999-05-24 [PTadmin] Official Update 1999-04

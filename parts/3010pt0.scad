@@ -11,7 +11,8 @@ function ldraw_lib__3010pt0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Black, embossed, he124
+// 0 !KEYWORDS Black, BrickLink 3010pb011, embossed, he124, Rebrickable 3010pr9985
+// 0 !KEYWORDS Set 124
 // 
 // 0 !CMDLINE -c1
 // 

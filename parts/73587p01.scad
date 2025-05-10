@@ -12,7 +12,8 @@ function ldraw_lib__73587p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS antenna, controls, finger, gear shift, lever
+// 0 !KEYWORDS antenna, BrickLink 4592c02, controls, finger, gear shift, lever
+// 0 !KEYWORDS Rebrickable 298c02, Set 0756672805
 // 
 // 0 !HISTORY 2022-03-06 [PTadmin] Official Update 2022-02
 // 

@@ -20,7 +20,7 @@ function ldraw_lib__10057pm0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 10057pb01, Brickowl 705242, Lord of the Rings, LOTR
+// 0 !KEYWORDS Bricklink 10057pb01, Lord of the Rings, LOTR
 // 0 !KEYWORDS Rebrickable 10057pr0001, Set 9470
 // 
 // 0 !CMDLINE -c19

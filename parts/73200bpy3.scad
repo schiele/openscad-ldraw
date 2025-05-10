@@ -13,10 +13,9 @@ function ldraw_lib__73200bpy3() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS 2016, 44, 6, Bricklink 970c00pb0648, Brickowl 724674, F1, Formula
-// 0 !KEYWORDS Hamilton, Hybrid, Lewis, Mercedes, Nico, One, Petronas
-// 0 !KEYWORDS Rebrickable 970c27pr1255, Rosberg, Set 75883, Set 75995
-// 0 !KEYWORDS Speed Champions, Team, W07
+// 0 !KEYWORDS 2016, 44, 6, Bricklink 970c00pb0648, F1, Formula, Hamilton, Hybrid
+// 0 !KEYWORDS Lewis, Mercedes, Nico, One, Petronas, Rebrickable 970c27pr1255
+// 0 !KEYWORDS Rosberg, Set 75883, Set 75995, Speed Champions, Team, W07
 // 
 // 0 !HISTORY 2024-10-27 [OrionP] Official Update 2024-09
 // 

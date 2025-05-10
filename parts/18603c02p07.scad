@@ -13,8 +13,8 @@ function ldraw_lib__18603c02p07() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 18603c79pb01, Buttercup, Dimensions, Electronic, NFC
-// 0 !KEYWORDS Powerpuff Girls, set 71343, Toy Tag
+// 0 !KEYWORDS BrickLink 18605c02pb29, Buttercup, Dimensions, Electronic, NFC
+// 0 !KEYWORDS Powerpuff Girls, Rebrickable 19981pr0079, set 71343, Toy Tag
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
 // 

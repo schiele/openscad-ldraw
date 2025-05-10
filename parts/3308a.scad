@@ -12,6 +12,8 @@ function ldraw_lib__3308a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 3308, Rebrickable 3308
+// 
 // 0 !HISTORY 2020-10-16 [Cheenzo] Replacement for 3308 which has bad geometry
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 

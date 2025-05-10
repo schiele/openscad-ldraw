@@ -14,8 +14,8 @@ function ldraw_lib__88930py0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS BrickLink 88930pb147, Mercedes, Project One, Set 76909
-// 0 !KEYWORDS Speed Champions
+// 0 !KEYWORDS BrickLink 88930pb147, Mercedes, Project One, Rebrickable 88930pr0019
+// 0 !KEYWORDS Set 76909, Speed Champions
 // 
 // 0 !HISTORY 2022-12-20 [PTadmin] Official Update 2022-06
 // 

@@ -12,7 +12,7 @@ function ldraw_lib__973pma() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Armor, hunter, Lord of the Rings, Mordor
+// 0 !KEYWORDS Armor, hunter, Lord of the Rings, Mordor, Set 10237
 // 
 // 0 !HISTORY 2014-12-23 [PTadmin] Official Update 2014-02
 // 0 !HISTORY 2020-11-14 [cwdee] Correct description

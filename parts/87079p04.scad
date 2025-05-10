@@ -4,17 +4,19 @@ function ldraw_lib__87079p04() = [
 // 0 Tile  2 x  4 with "Erithacus rubecula" Pattern
 // 0 Name: 87079p04.dat
 // 0 Author: Owen Burgoyne [C3POwen]
-// 0 !LDRAW_ORG Part UPDATE 2015-01
+// 0 !LDRAW_ORG Part UPDATE 2025-04
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS European robin
+// 0 !KEYWORDS Bricklink 87079pb0193, European robin, Rebrickable 87079pr0073
+// 0 !KEYWORDS Set 21301
 // 
 // 0 !HISTORY 2015-10-11 [PTadmin] Official Update 2015-01
-// 
+// 0 !HISTORY 2025-03-16 [Lego-Manfred] References and set added
+// 0 !HISTORY 2025-04-27 [OrionP] Official Update 2025-04
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\87079s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__87079s01()],

@@ -14,7 +14,8 @@ function ldraw_lib__87748p06() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS Atlantis, key, treasure
+// 0 !KEYWORDS Atlantis, BrickLink 87748pb06, key, Rebrickable 87748pr0006
+// 0 !KEYWORDS Set 7985, treasure
 // 
 // 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02
 // 

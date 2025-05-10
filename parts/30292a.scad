@@ -21,6 +21,8 @@ function ldraw_lib__30292a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 30292, Rebrickable 30292
+// 
 // 0 !HISTORY 1999-03-26 [PTadmin] Official Update 1999-02
 // 0 !HISTORY 2004-10-10 [guyvivan] Made BFC Compliant
 // 0 !HISTORY 2004-11-06 [PTadmin] Official Update 2004-04

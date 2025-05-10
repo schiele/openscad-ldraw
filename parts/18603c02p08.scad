@@ -13,9 +13,8 @@ function ldraw_lib__18603c02p08() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Back To The Future, Bricklink 18605c01pb06, Brickowl 184866
-// 0 !KEYWORDS Dimensions, Electronic, NFC, Rebrickable 19981pr0006, Set 71201
-// 0 !KEYWORDS Toy Tag
+// 0 !KEYWORDS Back To The Future, Bricklink 18605c01pb06, Dimensions, Electronic
+// 0 !KEYWORDS NFC, Rebrickable 19981pr0006, Set 71201, Toy Tag
 // 
 // 0 !HISTORY 2024-10-27 [OrionP] Official Update 2024-09
 // 

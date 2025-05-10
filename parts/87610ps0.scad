@@ -20,7 +20,7 @@ function ldraw_lib__87610ps0() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Boba Fett, Bricklink 87610pb01
+// 0 !KEYWORDS Boba Fett, Bricklink 87610pb01, Rebrickable 87610pr0001, Set 5000143
 // 
 // 0 !CMDLINE -c378
 // 

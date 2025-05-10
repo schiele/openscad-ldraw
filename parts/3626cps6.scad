@@ -14,8 +14,9 @@ function ldraw_lib__3626cps6() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626cpb2651, Clone Trooper, Set 40558, Set 75280
-// 0 !KEYWORDS Set 75283, Set 75286, Set 75309, Set 75340, Set 75342, Star Wars
+// 0 !KEYWORDS BrickLink 3626pb2651, Clone Trooper, Rebrickable 3626cpr3262
+// 0 !KEYWORDS Set 40558, Set 75280, Set 75283, Set 75286, Set 75309, Set 75340
+// 0 !KEYWORDS Set 75342, Star Wars
 // 
 // 0 !HISTORY 2022-12-20 [PTadmin] Official Update 2022-06
 // 

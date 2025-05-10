@@ -15,6 +15,8 @@ function ldraw_lib__58123() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
+// 0 !KEYWORDS BrickLink 58123c01, Rebrickable 58123a
+// 
 // 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01
 // 
 // 

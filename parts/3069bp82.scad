@@ -11,8 +11,8 @@ function ldraw_lib__3069bp82() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Carousel, London Bus, Set 10257, set 10258, Set 10259
-// 0 !KEYWORDS Winter Village Station
+// 0 !KEYWORDS BrickLink 3069pb0584, Carousel, London Bus, Rebrickable 3069bpr0198
+// 0 !KEYWORDS Set 10257, set 10258, Set 10259, Winter Village Station
 // 
 // 0 !HISTORY 2018-12-08 [PTadmin] Official Update 2018-02
 // 

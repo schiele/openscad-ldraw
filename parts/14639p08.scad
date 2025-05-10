@@ -13,7 +13,7 @@ function ldraw_lib__14639p08() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Vehicle
-// 0 !KEYWORDS Set 10953
+// 0 !KEYWORDS BrickLink 11248c08, Rebrickable 11248c06, Set 10953
 // 
 // 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 

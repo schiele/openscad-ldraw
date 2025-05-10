@@ -14,6 +14,8 @@ function ldraw_lib__3245bp01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 3245bpx1, Rebrickable 3245bpr0001, Set 1239
+// 
 // 0 !HISTORY 2004-01-28 [cwdee] Removed POV code per LSC decision
 // 0 !HISTORY 2006-08-15 [WilliamH] Used 3-8chrd primitives
 // 0 !HISTORY 2009-05-02 [PTadmin] Official Update 2009-01

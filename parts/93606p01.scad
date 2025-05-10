@@ -11,7 +11,8 @@ function ldraw_lib__93606p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Arrow, Boost, curve, Set 17101, wedge
+// 0 !KEYWORDS Arrow, Boost, BrickLink 93606pb069, curve, Rebrickable 93606pr0003
+// 0 !KEYWORDS Set 17101, wedge
 // 
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
 // 

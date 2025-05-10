@@ -12,7 +12,7 @@ function ldraw_lib__3815bpbe() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Heartbreaker
+// 0 !KEYWORDS Heartbreaker, set 76008
 // 
 // 0 !HISTORY 2013-12-23 [MagFors] Original pattern design
 // 0 !HISTORY 2020-05-30 [cwdee] Adapted to corrected geometry

@@ -14,7 +14,7 @@ function ldraw_lib__99243p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Series 7
+// 0 !KEYWORDS BrickLink 99243pb01, Rebrickable 99243pr0001, Series 7, Set 8831
 // 
 // 0 !CMDLINE -c297
 // 

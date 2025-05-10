@@ -14,7 +14,7 @@ function ldraw_lib__76382pmb() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb1128c01, BrickOwl 379234, evil, Lord of the Rings
+// 0 !KEYWORDS Bricklink 973pb1128c01, evil, Lord of the Rings
 // 0 !KEYWORDS Mini Upper Part No 2064, Mordor, Rebrickable 973c19h19pr2064
 // 0 !KEYWORDS Set 9476, The Orc Forge
 // 

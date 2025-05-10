@@ -12,9 +12,10 @@ function ldraw_lib__973psh() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Episode Five, Episode V, Hoth, ice planet, military uniform
-// 0 !KEYWORDS Original Trilogy, parka, Rebel Alliance, scarf, Snowspeeder, soldier
-// 0 !KEYWORDS Star Wars, The Empire Strikes Back, trooper, vest, winter clothing
+// 0 !KEYWORDS BrickLink 973px84, Episode Five, Episode V, Hoth, ice planet
+// 0 !KEYWORDS military uniform, Original Trilogy, parka, Rebel Alliance, scarf
+// 0 !KEYWORDS set 7130, Snowspeeder, soldier, Star Wars, The Empire Strikes Back
+// 0 !KEYWORDS trooper, vest, winter clothing
 // 
 // 0 !CMDLINE -c487
 // 

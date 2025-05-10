@@ -17,6 +17,7 @@ function ldraw_lib__2586p30() = [
   [0,"BFC","CW"],
 // 
 // 0 !CATEGORY Minifig Accessory
+// 0 !KEYWORDS BrickLink 2586px10, Rebrickable 2586pr0003, set 1788
 // 
 // 0 !CMDLINE -c15
 // 

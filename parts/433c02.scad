@@ -18,7 +18,7 @@ function ldraw_lib__433c02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !KEYWORDS Power Pickup
+// 0 !KEYWORDS BrickLink bb0053, Power Pickup, Rebrickable 433c01
 // 
 // 0 !CMDLINE -c0
 // 

@@ -13,8 +13,8 @@ function ldraw_lib__3437pe2() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Brick
-// 0 !KEYWORDS Animals, bricklink 3437pb016, Brickowl 682160, Circus
-// 0 !KEYWORDS Rebrickable 3437pr0056, set 1623, Set 2344, set 2374, set 9055
+// 0 !KEYWORDS Animals, bricklink 3437pb016, Circus, Rebrickable 3437pr0056
+// 0 !KEYWORDS set 1623, Set 2344, set 2374, set 9055
 // 
 // 0 !HISTORY 2024-05-28 [OrionP] Official Update 2024-04
 // 

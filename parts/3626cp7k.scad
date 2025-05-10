@@ -15,9 +15,9 @@ function ldraw_lib__3626cp7k() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626cpb1566, Set 10257, Set 10264, Set 31097, Set 40358
-// 0 !KEYWORDS set 45022, set 60134, Set 60154, Set 60229, Set 60306, Set 60330
-// 0 !KEYWORDS Set 70424, Set 80036, Set 80103, Set 80104
+// 0 !KEYWORDS BrickLink 3626pb1566, Rebrickable 3626cpr1964, Set 10257, Set 10264
+// 0 !KEYWORDS Set 31097, Set 40358, set 45022, set 60134, Set 60154, Set 60229
+// 0 !KEYWORDS Set 60306, Set 60330, Set 70424, Set 80036, Set 80103, Set 80104
 // 
 // 0 !HISTORY 2024-05-28 [OrionP] Official Update 2024-04
 // 

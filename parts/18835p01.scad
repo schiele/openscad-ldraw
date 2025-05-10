@@ -14,8 +14,8 @@ function ldraw_lib__18835p01() = [
 // 
 // 0 !CATEGORY Minifig Headwear
 // 0 !KEYWORDS Bricklink 18835pb01, Classic King, CMF, Collectable, King Halbert
-// 0 !KEYWORDS Series 13, set 5004422, set 70327, set 71008, TRU Exclusive
-// 0 !KEYWORDS Warriors
+// 0 !KEYWORDS Rebrickable 18835pr0001, Series 13, set 5004422, set 70327
+// 0 !KEYWORDS set 71008, TRU Exclusive, Warriors
 // 
 // 0 !HISTORY 2022-09-15 [PTadmin] Official Update 2022-05
 // 

@@ -14,7 +14,8 @@ function ldraw_lib__3626cpd85() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626cpb1978, Lego Batman Movie, Mermaid Batman, set 71020
+// 0 !KEYWORDS BrickLink 3626pb1978, Lego Batman Movie, Mermaid Batman
+// 0 !KEYWORDS Rebrickable 3626cpr2425, set 71020
 // 
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
 // 0 !HISTORY 2022-07-11 [MagFors] Update description, added keywords

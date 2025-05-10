@@ -11,8 +11,8 @@ function ldraw_lib__2431pc2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 2431pb798, Brickowl 928780, Daytona, Ferrari
-// 0 !KEYWORDS Rebrickable 2431pr0182, set 42143
+// 0 !KEYWORDS Bricklink 2431pb798, Daytona, Ferrari, Rebrickable 2431pr0182
+// 0 !KEYWORDS set 42143
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

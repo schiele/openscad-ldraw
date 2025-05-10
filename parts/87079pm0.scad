@@ -4,17 +4,18 @@ function ldraw_lib__87079pm0() = [
 // 0 Tile  2 x  4 with Tan Scroll and House in Clouds Pattern
 // 0 Name: 87079pm0.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
-// 0 !LDRAW_ORG Part UPDATE 2015-01
+// 0 !LDRAW_ORG Part UPDATE 2025-04
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Elves
+// 0 !KEYWORDS Bricklink 87079pb0198, Elves, Rebrickable 87079pr0067, Set 41071
 // 
 // 0 !HISTORY 2015-10-11 [PTadmin] Official Update 2015-01
-// 
+// 0 !HISTORY 2025-03-16 [Lego-Manfred] References and sets added
+// 0 !HISTORY 2025-04-27 [OrionP] Official Update 2025-04
 // 
 // 0 // Subfile
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\87079s01.dat

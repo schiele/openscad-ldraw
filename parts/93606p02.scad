@@ -11,7 +11,8 @@ function ldraw_lib__93606p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS BrickLink 93606pb111, curve, Set 75275, wedge
+// 0 !KEYWORDS BrickLink 93606pb111, curve, Rebrickable 93606pr0004, Set 75275
+// 0 !KEYWORDS wedge
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 

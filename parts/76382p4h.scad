@@ -14,10 +14,10 @@ function ldraw_lib__76382p4h() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Blacksmith Shop, Bricklink 973px114c01, BrickOwl 660821, Castle
-// 0 !KEYWORDS Daniel Siskind, female, King Leo, Knights Kingdom, medieval
-// 0 !KEYWORDS Mini Upper Part No 328, Noble, Queen Leonora
-// 0 !KEYWORDS Rebrickable 973c22h01pr0114, Set 3739, Set 6091, Set 6098
+// 0 !KEYWORDS Blacksmith Shop, Bricklink 973px114c01, Castle, Daniel Siskind
+// 0 !KEYWORDS female, King Leo, Knights Kingdom, medieval, Mini Upper Part No 328
+// 0 !KEYWORDS Noble, Queen Leonora, Rebrickable 973c22h01pr0114, Set 3739
+// 0 !KEYWORDS Set 6091, Set 6098
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

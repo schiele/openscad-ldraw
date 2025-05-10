@@ -13,6 +13,8 @@ function ldraw_lib__3626b() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 3626
+// 
 // 0 !HISTORY 1998-06-20 [PTadmin] Official Update 1998-06
 // 0 !HISTORY 1998-10-15 [PTadmin] Official Update 1998-09
 // 0 !HISTORY 1999-02-01 [PTadmin] Official Update 1999-01

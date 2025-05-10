@@ -14,7 +14,7 @@ function ldraw_lib__76382pq5() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb0785c01, BrickOwl 9885, Jake Raines, Pharaoh's Quest
+// 0 !KEYWORDS Bricklink 973pb0785c01, Jake Raines, Pharaoh's Quest
 // 0 !KEYWORDS Rebrickable 973c07h01pr1732, set 30090, Set 7307, Set 7326
 // 
 // 0 !HISTORY 2024-12-30 [OrionP] Official Update 2024-11

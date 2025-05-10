@@ -11,7 +11,8 @@ function ldraw_lib__61678p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Cinderella, curve, Disney Princess, wedge
+// 0 !KEYWORDS BrickLink 61678pb061, Cinderella, curve, Disney Princess
+// 0 !KEYWORDS Rebrickable 11153pr0001, Set 41053, wedge
 // 
 // 0 !HISTORY 2014-06-21 [PTadmin] Official Update 2014-01
 // 

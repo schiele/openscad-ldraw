@@ -11,7 +11,7 @@ function ldraw_lib__3005pf0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Milk Carton
+// 0 !KEYWORDS BrickLink 3005pb016, Milk Carton, Rebrickable 3005pr0006, set 10243
 // 
 // 0 !HISTORY 2013-12-23 [PTadmin] Official Update 2013-02
 // 

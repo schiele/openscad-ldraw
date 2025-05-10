@@ -13,7 +13,7 @@ function ldraw_lib__77873p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Set 71387
+// 0 !KEYWORDS BrickLink 77873pb01, Rebrickable 77873pr0001, Set 71387
 // 
 // 0 !HISTORY 2022-06-07 {LEGO Instructions App} Original part shape
 // 0 !HISTORY 2022-07-03 [Philo] File preparation for LDraw Parts Tracker

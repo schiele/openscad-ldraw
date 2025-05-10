@@ -12,7 +12,8 @@ function ldraw_lib__14769pb4() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 14769pb077, Halloween, Set 10687, Spiderman
+// 0 !KEYWORDS Bricklink 14769pb077, Halloween, Rebrickable 14769pr1019, Set 10687
+// 0 !KEYWORDS Spiderman
 // 
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04
 // 

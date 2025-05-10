@@ -13,7 +13,8 @@ function ldraw_lib__4066bp17() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Brick
-// 0 !KEYWORDS bricklink 4066pb085, Racing, Set 2369, Set 2447, Set 2671
+// 0 !KEYWORDS bricklink 4066pb085, Racing, Rebrickable 4066pr0147, Set 2369
+// 0 !KEYWORDS Set 2447, Set 2671
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 

@@ -12,6 +12,8 @@ function ldraw_lib__6644_f1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 6644, Rebrickable 6644
+// 
 // 0 !HISTORY 2002-08-02 [rosco] tidied up, fix orientation, BFC
 // 0 !HISTORY 2007-11-02 [mikeheide] fixed outer ring edges
 // 0 !HISTORY 2016-06-11 [Holly-Wood] Complete overhaul, subfiled

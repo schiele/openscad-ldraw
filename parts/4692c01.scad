@@ -13,6 +13,8 @@ function ldraw_lib__4692c01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 4692
+// 
 // 0 !HISTORY 2009-12-14 [cwdee] Reposition base due to change of origin
 // 0 !HISTORY 2009-12-29 [PTadmin] Official Update 2009-03
 // 

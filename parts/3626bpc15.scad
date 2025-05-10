@@ -14,8 +14,8 @@ function ldraw_lib__3626bpc15() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626bpb0436, CMF, Collectible Minifigures, series 1
-// 0 !KEYWORDS Set 8683, zombie
+// 0 !KEYWORDS BrickLink 3626pb0436, CMF, Collectible Minifigures
+// 0 !KEYWORDS Rebrickable 3626bpr0619, series 1, Set 8683, zombie
 // 
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04
 // 

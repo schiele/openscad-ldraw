@@ -18,7 +18,7 @@ function ldraw_lib__973p86() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS doctor, Hospital, Physician
+// 0 !KEYWORDS BrickLink 973pb0408, doctor, Hospital, Physician, Set 40161
 // 
 // 0 !HISTORY 2009-09-03 [PTadmin] Official Update 2009-02
 // 0 !HISTORY 2012-04-08 [BlackBrick89] Colour cleanup

@@ -12,7 +12,7 @@ function ldraw_lib__973pda4() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb3438, The LEGO Movie 2
+// 0 !KEYWORDS Bricklink 973pb3438, Set 71023, The LEGO Movie 2
 // 
 // 0 !HISTORY 2019-12-27 [PTadmin] Official Update 2019-03
 // 

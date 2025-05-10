@@ -14,7 +14,7 @@ function ldraw_lib__76382pso() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973px89c01, BrickOwl 516651, Episode I, Flash Speeder
+// 0 !KEYWORDS Bricklink 973px89c01, Episode I, Flash Speeder
 // 0 !KEYWORDS Mini Upper Part No 399, Naboo, Rebrickable 973c26h16pr0089
 // 0 !KEYWORDS Security Officer, Set 7124, Star Wars, The Phantom Menace
 // 

@@ -14,7 +14,8 @@ function ldraw_lib__98138p25() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 98138pb165, Cafe, Coffee, Dots, Mega Pack, Set 41913, tea
+// 0 !KEYWORDS Bricklink 98138pb165, Cafe, Coffee, Dots, Mega Pack
+// 0 !KEYWORDS Rebrickable 98138pr0169, Set 41913, tea
 // 
 // 0 !HISTORY 2022-05-07 [PTadmin] Official Update 2022-03
 // 

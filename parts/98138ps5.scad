@@ -12,8 +12,8 @@ function ldraw_lib__98138ps5() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickheadz, Carbonite, Closed Eyes, Han Solo, NYCC, Set 41498
-// 0 !KEYWORDS Star Wars
+// 0 !KEYWORDS Brickheadz, BrickLink 98138pb173, Carbonite, Closed Eyes, Han Solo
+// 0 !KEYWORDS NYCC, Rebrickable 98138pr9997, Set 41498, Star Wars
 // 
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
 // 

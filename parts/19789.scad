@@ -13,7 +13,7 @@ function ldraw_lib__19789() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS 3940, Space Stand
+// 0 !KEYWORDS 3940, BrickLink 3940b, Rebrickable 19798, Space Stand
 // 
 // 0 !HISTORY 2022-12-31 [MagFors] Cleaned up bottom design
 // 0 !HISTORY 2024-06-30 [OrionP] Official Update 2024-05

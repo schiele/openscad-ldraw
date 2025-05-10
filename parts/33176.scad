@@ -17,7 +17,7 @@ function ldraw_lib__33176() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Decoration Ball
+// 0 !KEYWORDS BrickLink x12, Decoration Ball
 // 
 // 0 !HISTORY 2013-09-21 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2013-09-21 [mikeheide] File preparation for LDraw Parts Tracker

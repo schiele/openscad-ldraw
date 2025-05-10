@@ -13,7 +13,7 @@ function ldraw_lib__35700ps1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS BrickLink 35700pb05, set 75290
+// 0 !KEYWORDS BrickLink 35700pb05, Rebrickable 35700pr0005, set 75290
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
 // 

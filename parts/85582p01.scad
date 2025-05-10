@@ -13,7 +13,7 @@ function ldraw_lib__85582p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Constraction Accessory
-// 0 !KEYWORDS bionicle, Bricklink 85582pb01, Set 8985
+// 0 !KEYWORDS bionicle, Bricklink 85582pb01, Rebrickable 64277c01, Set 8985
 // 
 // 0 !HISTORY 2023-08-19 [MagFors] Used reworked subparts
 // 0 !HISTORY 2023-11-19 [OrionP] Official Update 2023-06

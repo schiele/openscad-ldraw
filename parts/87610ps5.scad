@@ -18,7 +18,8 @@ function ldraw_lib__87610ps5() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS bounty hunter, Bricklink 87610pb06, set 75018
+// 0 !KEYWORDS bounty hunter, Bricklink 87610pb06, Rebrickable 87610pr0004
+// 0 !KEYWORDS set 75018
 // 
 // 0 !CMDLINE -c15
 // 

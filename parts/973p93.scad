@@ -12,7 +12,8 @@ function ldraw_lib__973p93() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS BrickLink 973pb2342, brown, button, diamonds, knitted, red, squares
+// 0 !KEYWORDS BrickLink 973pb2342, brown, button, diamonds, knitted, red
+// 0 !KEYWORDS Set 10263, squares
 // 
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
 // 

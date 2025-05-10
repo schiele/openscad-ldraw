@@ -15,7 +15,8 @@ function ldraw_lib__24093pc1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 24093pb012, control, HUD, Set 70612
+// 0 !KEYWORDS Bricklink 24093pb012, control, HUD, Rebrickable 24093pr0008
+// 0 !KEYWORDS Set 70612
 // 
 // 0 !HISTORY 2024-07-29 [OrionP] Official Update 2024-06
 // 

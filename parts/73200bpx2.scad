@@ -17,9 +17,8 @@ function ldraw_lib__73200bpx2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 970c00pb0416, Brickowl 796015, Dimensions Wave 1
-// 0 !KEYWORDS Jurassic world, Owen Grady, Rebrickable 970c12pr0888, Set 71205
-// 0 !KEYWORDS Set 75917
+// 0 !KEYWORDS Bricklink 970c00pb0416, Dimensions Wave 1, Jurassic world
+// 0 !KEYWORDS Owen Grady, Rebrickable 970c12pr0888, Set 71205, Set 75917
 // 
 // 0 !HISTORY 2022-05-07 [ejboer] Original design
 // 0 !HISTORY 2023-05-20 [MagFors] Adapted to c-version leg

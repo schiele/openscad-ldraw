@@ -12,6 +12,8 @@ function ldraw_lib__4209ap70() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 4209p02, Rebrickable 4209pr0004, Set 6407
+// 
 // 0 !HISTORY 2011-06-19 [Steffen] removed unnecessary color 16 border from pattern
 // 0 !HISTORY 2015-10-11 [PTadmin] Official Update 2015-01
 // 0 !HISTORY 2020-07-31 [PTadmin] Renamed from 4209p70

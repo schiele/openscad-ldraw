@@ -16,6 +16,7 @@ function ldraw_lib__31021p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Fence
+// 0 !KEYWORDS Rebrickable 31021pr0001, Set 2000415
 // 
 // 0 !HISTORY 2002-04-25 [PTadmin] Official Update 2002-02
 // 0 !HISTORY 2007-06-24 [PTadmin] Header formatted for Contributor Agreement

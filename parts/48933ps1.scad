@@ -12,7 +12,8 @@ function ldraw_lib__48933ps1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Boba Fett, Slave I, Star Wars
+// 0 !KEYWORDS Boba Fett, BrickLink 48933pb001, Rebrickable 48933pr0007, Set 6964
+// 0 !KEYWORDS Slave I, Star Wars
 // 
 // 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02
 // 

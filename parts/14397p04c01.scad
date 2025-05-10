@@ -12,8 +12,8 @@ function ldraw_lib__14397p04c01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 14396c01pb01, Collectible Minifigs Series 11
-// 0 !KEYWORDS Gingerbread Man, set 5005156
+// 0 !KEYWORDS BrickLink 14396c01pb01b, Collectible Minifigs Series 11
+// 0 !KEYWORDS Gingerbread Man, Rebrickable 14397pr0001, set 5005156
 // 
 // 0 !HISTORY 2022-12-20 [PTadmin] Official Update 2022-06
 // 

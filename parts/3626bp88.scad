@@ -12,7 +12,7 @@ function ldraw_lib__3626bp88() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626bpb0332, set 8404
+// 0 !KEYWORDS BrickLink 3626pb0332, Rebrickable 3626bpr0649, set 8404
 // 
 // 0 !HISTORY 2016-12-31 [PTadmin] Official Update 2016-01
 // 0 !HISTORY 2022-07-11 [MagFors] Update description, added keywords

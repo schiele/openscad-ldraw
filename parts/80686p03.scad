@@ -13,8 +13,8 @@ function ldraw_lib__80686p03() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 80686pb03, Brickowl 499725, Monkie Kid
-// 0 !KEYWORDS Rebrickable 80686pr0003, Set 80044, Set 80046, Set 80054, Set 80058
+// 0 !KEYWORDS Bricklink 80686pb03, Monkie Kid, Rebrickable 80686pr0003, Set 80044
+// 0 !KEYWORDS Set 80046, Set 80054, Set 80058
 // 
 // 0 !HISTORY 2024-10-27 [OrionP] Official Update 2024-09
 // 

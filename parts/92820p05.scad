@@ -12,7 +12,7 @@ function ldraw_lib__92820p05() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Set 41806
+// 0 !KEYWORDS BrickLink 92252c00pb005, Rebrickable 92820c01pr0006, Set 41806
 // 
 // 0 !HISTORY 2014-12-23 [PTadmin] Official Update 2014-02
 // 0 !HISTORY 2020-05-10 [cwdee] Update colour name in description

@@ -4,19 +4,21 @@ function ldraw_lib__87079p0c() = [
 // 0 Tile  2 x  4 with  2 Black Stripes Pattern
 // 0 Name: 87079p0c.dat
 // 0 Author: Ulrich Röder [UR]
-// 0 !LDRAW_ORG Part UPDATE 2019-01
+// 0 !LDRAW_ORG Part UPDATE 2025-04
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 87079pb341, Car, Caterham, Cuusoo, Ideas, Set 21307
+// 0 !KEYWORDS Bricklink 87079pb0341, Car, Caterham, Cuusoo, Ideas
+// 0 !KEYWORDS Rebrickable 87079pr0112, Set 21307
 // 
 // 0 !CMDLINE c-14
 // 
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
-// 
+// 0 !HISTORY 2025-03-16 [Lego-Manfred] References added
+// 0 !HISTORY 2025-04-27 [OrionP] Official Update 2025-04
 // 
 // 0 // Main
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\87079s01.dat

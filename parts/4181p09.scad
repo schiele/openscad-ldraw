@@ -18,7 +18,7 @@ function ldraw_lib__4181p09() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Set 4512
+// 0 !KEYWORDS BrickLink 4181pb001, Rebrickable 4181pr0009, Set 4512
 // 
 // 0 !HISTORY 2015-12-30 [PTadmin] Official Update 2015-02
 // 

@@ -13,6 +13,8 @@ function ldraw_lib__2507pa2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 2507pb01, Rebrickable 2507pr0002, Set 6135
+// 
 // 0 !HISTORY 2018-01-30 [PTadmin] Official Update 2018-01
 // 
 // 

@@ -12,7 +12,8 @@ function ldraw_lib__3010pz5() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickheadz, BrickLink 3010pb207, Captain America, Set 41589
+// 0 !KEYWORDS Brickheadz, BrickLink 3010pb207, Captain America
+// 0 !KEYWORDS Rebrickable 3010pr0013, Set 41589
 // 
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
 // 

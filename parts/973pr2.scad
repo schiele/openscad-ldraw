@@ -12,7 +12,7 @@ function ldraw_lib__973pr2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS emperor, Palpatine, Star Wars
+// 0 !KEYWORDS emperor, Palpatine, Set 3340, Star Wars
 // 
 // 0 !HISTORY 2012-08-09 [PTadmin] Official Update 2012-02
 // 

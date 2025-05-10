@@ -14,10 +14,10 @@ function ldraw_lib__76382ps6() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS A New Hope, Bricklink 973ps6c01, BrickOwl 134840, Brown Shirt
-// 0 !KEYWORDS Episode I, Jedi, Landspeeder, Mini Upper Part No 379, Mos Eisley
-// 0 !KEYWORDS Obi-Wan, Original Trilogy, Rebrickable 973c26h01pr0005, Robes
-// 0 !KEYWORDS set 7110, Star Wars, Tatooine, Yellow Neck
+// 0 !KEYWORDS A New Hope, Bricklink 973ps6c01, Brown Shirt, Episode I, Jedi
+// 0 !KEYWORDS Landspeeder, Mini Upper Part No 379, Mos Eisley, Obi-Wan
+// 0 !KEYWORDS Original Trilogy, Rebrickable 973c26h01pr0005, Robes, set 7110
+// 0 !KEYWORDS Star Wars, Tatooine, Yellow Neck
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

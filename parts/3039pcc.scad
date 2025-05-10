@@ -11,6 +11,8 @@ function ldraw_lib__3039pcc() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 3039pb048, Rebrickable 3039pr0015, Set 10240
+// 
 // 0 !HISTORY 2015-10-11 [MagFors] Removed overlapping quads
 // 0 !HISTORY 2015-12-30 [PTadmin] Official Update 2015-02
 // 

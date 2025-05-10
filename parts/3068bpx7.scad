@@ -11,7 +11,8 @@ function ldraw_lib__3068bpx7() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3068bpb0700, Dimensions, Set 71202, Simpsons
+// 0 !KEYWORDS BrickLink 3068pb0700, Dimensions, Rebrickable 3068bpr0275, Set 71202
+// 0 !KEYWORDS Simpsons
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
 // 

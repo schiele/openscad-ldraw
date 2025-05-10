@@ -19,6 +19,7 @@ function ldraw_lib__2922b() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Hinge
+// 0 !KEYWORDS Rebrickable 2922
 // 
 // 0 !HISTORY 2009-12-29 [PTadmin] Official Update 2009-03
 // 0 !HISTORY 2019-09-04 [cwdee] Re-titled

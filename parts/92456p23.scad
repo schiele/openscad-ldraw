@@ -13,7 +13,7 @@ function ldraw_lib__92456p23() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Set 41187
+// 0 !KEYWORDS BrickLink FTGpb118c01, Rebrickable 92456c01pr0218, Set 41187
 // 
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
 // 0 !HISTORY 2025-01-11 [OrionP] Moved from 92241p23c01.dat

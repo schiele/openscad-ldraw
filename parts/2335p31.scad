@@ -12,7 +12,8 @@ function ldraw_lib__2335p31() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 2335pb002, Imperial Guards, Pirates, Set 6279
+// 0 !KEYWORDS Bricklink 2335pb002, Imperial Guards, Pirates
+// 0 !KEYWORDS Rebrickable 2335pr0007, Set 6279
 // 
 // 0 !HISTORY 2015-10-11 [PTadmin] Official Update 2015-01
 // 0 !HISTORY 2022-05-09 [OrionP] Updated Description

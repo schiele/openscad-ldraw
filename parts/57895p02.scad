@@ -14,7 +14,8 @@ function ldraw_lib__57895p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS detective's, office, set 10246
+// 0 !KEYWORDS BrickLink 57895pb026, detective's, office, Rebrickable 57895pr0006
+// 0 !KEYWORDS set 10246
 // 
 // 0 !HISTORY 2018-12-08 [PTadmin] Official Update 2018-02
 // 

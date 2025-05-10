@@ -22,7 +22,7 @@ function ldraw_lib__u9582a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink bb0037
+// 0 !KEYWORDS Bricklink bb0037, Rebrickable upn0184
 // 
 // 0 !HISTORY 2024-07-29 [OrionP] Official Update 2024-06
 // 

@@ -14,8 +14,8 @@ function ldraw_lib__3626bp63() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626bp63, Brickowl 428124, Rebrickable 3626bpr0023
-// 0 !KEYWORDS set 6705, set 6939, Set 6949, Spyrius, Time Cruisers
+// 0 !KEYWORDS BrickLink 3626p63, Rebrickable 3626bpr0023, set 6705, set 6939
+// 0 !KEYWORDS Set 6949, Spyrius, Time Cruisers
 // 
 // 0 !HISTORY 2000-09-30 [PTadmin] Official Update 2000-02
 // 0 !HISTORY 2007-06-29 [PTadmin] Header formatted for Contributor Agreement

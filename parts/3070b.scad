@@ -11,6 +11,8 @@ function ldraw_lib__3070b() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
+// 0 !KEYWORDS BrickLink 3070
+// 
 // 0 !HISTORY 2009-09-03 [PTadmin] Official Update 2009-02
 // 
 // 

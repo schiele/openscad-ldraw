@@ -16,8 +16,8 @@ function ldraw_lib__14769p10() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Animal Crossing, Bricklink 14769pb703, Brickowl 1107480
-// 0 !KEYWORDS New Leaf Logo, Rebrickable 14769pr9977, set 77051, Set 77052
+// 0 !KEYWORDS Animal Crossing, Bricklink 14769pb703, New Leaf Logo
+// 0 !KEYWORDS Rebrickable 14769pr9977, set 77051, Set 77052
 // 
 // 0 !HISTORY 2024-12-01 [OrionP] Official Update 2024-10
 // 

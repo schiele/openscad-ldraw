@@ -12,7 +12,7 @@ function ldraw_lib__973p77() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !KEYWORDS collar, fire logo badge, fireman, red belt yellow buckle
+// 0 !KEYWORDS collar, fire logo badge, fireman, red belt yellow buckle, Set 1702
 // 0 !KEYWORDS slash pocket, town, Zipper
 // 
 // 0 !HISTORY 2004-11-06 [PTadmin] Official Update 2004-04

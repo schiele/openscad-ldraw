@@ -16,7 +16,7 @@ function ldraw_lib__67196_f1() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Sheet Plastic
-// 0 !KEYWORDS Band, Dots, Strap, wrist
+// 0 !KEYWORDS Band, BrickLink 67196, Dots, Rebrickable 67196, Strap, wrist
 // 
 // 0 !HISTORY 2022-05-03 [GeraldLasser] Derieved from Philos 66821-f1.dat
 // 0 !HISTORY 2022-09-15 [PTadmin] Official Update 2022-05

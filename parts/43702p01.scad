@@ -13,6 +13,7 @@ function ldraw_lib__43702p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
+// 0 !KEYWORDS BrickLink 43702pb02, Rebrickable 43702pr0001, Set 10121
 // 
 // 0 !HISTORY 2009-10-13 {LEGO Universe Team} Original part shape
 // 0 !HISTORY 2009-11-13 [arezey] File preparation for LDraw Parts Tracker

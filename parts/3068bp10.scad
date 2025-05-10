@@ -13,6 +13,8 @@ function ldraw_lib__3068bp10() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 3068p10, Rebrickable 3068bpr0037, Set 1737
+// 
 // 0 !CMDLINE -c15
 // 
 // 0 !HISTORY 2002-03-06 [sbliss] Added groove, BFC, rotated pattern 180-degrees.

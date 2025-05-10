@@ -12,6 +12,8 @@ function ldraw_lib__3939ps1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
+// 0 !KEYWORDS BrickLink 3939px1, Rebrickable 3939pr0004, Set 65771
+// 
 // 0 !HISTORY 2013-12-23 [PTadmin] Official Update 2013-02
 // 
 // 

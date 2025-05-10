@@ -17,7 +17,7 @@ function ldraw_lib__73200bpm2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Aragorn, Bricklink 970c00pb0161, Brickowl 639075, Lord of the Rings
+// 0 !KEYWORDS Aragorn, Bricklink 970c00pb0161, Lord of the Rings
 // 0 !KEYWORDS Rebrickable 970c11pr0350, set 79008, set 9472, set 9474
 // 
 // 0 !HISTORY 2020-09-05 [cwdee] Original part

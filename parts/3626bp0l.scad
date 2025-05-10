@@ -14,9 +14,8 @@ function ldraw_lib__3626bp0l() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Aquarium, Belville, Bricklink 3626bpb0004, Brickowl 680426
-// 0 !KEYWORDS city center, coast guard, Fish Bowl, Rebrickable 3626bpr0053
-// 0 !KEYWORDS set 5808, set 5960, Set 6435
+// 0 !KEYWORDS Aquarium, Belville, BrickLink 3626pb0004, city center, coast guard
+// 0 !KEYWORDS Fish Bowl, Rebrickable 3626bpr0053, set 5808, set 5960, Set 6435
 // 
 // 0 !HISTORY 2024-08-26 [OrionP] Official Update 2024-07
 // 

@@ -19,7 +19,7 @@ function ldraw_lib__64227() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS infrared, remote, remote control
+// 0 !KEYWORDS BrickLink 64227c01, infrared, remote, remote control
 // 
 // 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01
 // 

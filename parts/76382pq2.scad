@@ -14,8 +14,8 @@ function ldraw_lib__76382pq2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Ancient Egypt, Anubis Guard, Bricklink 973pb0795c01, BrickOwl 690923
-// 0 !KEYWORDS Deity, egyptian, Inpu, Mini Upper Part No 1727, Pharaoh's Quest
+// 0 !KEYWORDS Ancient Egypt, Anubis Guard, Bricklink 973pb0795c01, Deity, egyptian
+// 0 !KEYWORDS Inpu, Mini Upper Part No 1727, Pharaoh's Quest
 // 0 !KEYWORDS Rebrickable 973c03h03pr1727, Scorpion Pyramid, Set 7327
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02

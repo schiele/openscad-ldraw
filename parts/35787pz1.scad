@@ -11,8 +11,8 @@ function ldraw_lib__35787pz1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickheadz, BrickLink 35787pb006, Set 75317, Star Wars
-// 0 !KEYWORDS The Mandalorian
+// 0 !KEYWORDS Brickheadz, Bricklink 35787pb002, Rebrickable 35787pr0002, Set 75317
+// 0 !KEYWORDS Star Wars, The Mandalorian
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 

@@ -11,9 +11,9 @@ function ldraw_lib__3069bp84() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Birthday Party, Bricklink 3069bpb428, Invitation, Set 41110
-// 0 !KEYWORDS Set 41111, Set 41112, Set 41113, Set 41114, Set 41132, Set 41144
-// 0 !KEYWORDS Set 41310, Set 41314, Set 41318
+// 0 !KEYWORDS Birthday Party, BrickLink 3069pb0428, Invitation
+// 0 !KEYWORDS Rebrickable 3069bpr0158, Set 41110, Set 41111, Set 41112, Set 41113
+// 0 !KEYWORDS Set 41114, Set 41132, Set 41144, Set 41310, Set 41314, Set 41318
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 

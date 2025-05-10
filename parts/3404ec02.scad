@@ -12,6 +12,8 @@ function ldraw_lib__3404ec02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 3404bc01, Rebrickable 3404bc01
+// 
 // 0 !HISTORY 2012-11-05 [mikeheide] polished header, deleted '(Old Style)' from description, changed part type
 // 0 !HISTORY 2012-12-30 [MMR1988] Changed to new part versions
 // 0 !HISTORY 2014-12-23 [PTadmin] Official Update 2014-02

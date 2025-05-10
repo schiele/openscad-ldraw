@@ -12,6 +12,8 @@ function ldraw_lib__776pt0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 776px8, Rebrickable 776pr9999, Set 1242
+// 
 // 0 !HISTORY 2009-12-29 [PTadmin] Official Update 2009-03
 // 
 // 

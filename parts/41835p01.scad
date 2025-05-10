@@ -16,7 +16,8 @@ function ldraw_lib__41835p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 41835pb01, Set 10270, Set 10278, Set 21318
+// 0 !KEYWORDS Bricklink 41835pb01, Rebrickable 41835pr0001, Set 10270, Set 10278
+// 0 !KEYWORDS Set 21318
 // 
 // 0 !HISTORY 2022-03-06 [PTadmin] Official Update 2022-02
 // 0 !HISTORY 2024-08-30 [Philo] Added missing "Pattern"

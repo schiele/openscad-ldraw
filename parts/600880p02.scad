@@ -13,7 +13,7 @@ function ldraw_lib__600880p02() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Sheet Fabric
-// 0 !KEYWORDS Bagpiper, Bricklink 99257pb01, Brickowl 102976, CMF, Collectable
+// 0 !KEYWORDS Bagpiper, Bricklink 99257pb01, CMF, Collectable
 // 0 !KEYWORDS Collectible Minifigures, Kilt, Rebrickable 99257pr0001, Scot
 // 0 !KEYWORDS Scotland, Scotsman, Scottish, Series 7, Set 8831
 // 

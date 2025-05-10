@@ -14,7 +14,7 @@ function ldraw_lib__4617b() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Adventurers
+// 0 !KEYWORDS Adventurers, BrickLink 4617
 // 
 // 0 !HISTORY 2000-05-07 [PTadmin] Official Update 2000-01
 // 0 !HISTORY 2001-10-26 [PTadmin] Official Update 2001-01

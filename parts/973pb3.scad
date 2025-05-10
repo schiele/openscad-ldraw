@@ -13,7 +13,7 @@ function ldraw_lib__973pb3() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Batman, Joker
+// 0 !KEYWORDS Batman, Joker, set 7782
 // 
 // 0 !HISTORY 2009-09-03 [PTadmin] Official Update 2009-02
 // 

@@ -15,8 +15,7 @@ function ldraw_lib__3710p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3710pb001, Brickowl 908010, Rebrickable 3710pr0001
-// 0 !KEYWORDS Set 71374
+// 0 !KEYWORDS Bricklink 3710pb001, Rebrickable 3710pr0001, Set 71374
 // 
 // 0 !HISTORY 2024-12-31 [ejboer] Rounded decimals, removed long triangles
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01

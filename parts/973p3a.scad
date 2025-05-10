@@ -12,7 +12,7 @@ function ldraw_lib__973p3a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS bandolier, belt, rags
+// 0 !KEYWORDS bandolier, belt, rags, set 6292
 // 
 // 0 !HISTORY 2002-08-18 [PTadmin] Official Update 2002-04
 // 0 !HISTORY 2007-07-28 [PTadmin] Header formatted for Contributor Agreement

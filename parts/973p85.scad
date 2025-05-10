@@ -15,6 +15,8 @@ function ldraw_lib__973p85() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
+// 0 !KEYWORDS set 10159
+// 
 // 0 !HISTORY 2010-02-07 [Eldar] Fix overlaps, fix a gap
 // 0 !HISTORY 2010-04-05 [PTadmin] Official Update 2010-01
 // 

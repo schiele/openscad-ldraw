@@ -11,7 +11,8 @@ function ldraw_lib__3005pf5() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Animal Crossing, Bricklink 3005pb066, Seeds, set 77050
+// 0 !KEYWORDS Animal Crossing, Bricklink 3005pb066, Rebrickable 3005pr0039, Seeds
+// 0 !KEYWORDS set 77050
 // 
 // 0 !HISTORY 2024-08-26 [OrionP] Official Update 2024-07
 // 

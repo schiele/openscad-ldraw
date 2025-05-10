@@ -14,7 +14,7 @@ function ldraw_lib__76382pg4() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb0125c01, BrickOwl 749938, Field Expansion, football
+// 0 !KEYWORDS Bricklink 973pb0125c01, Field Expansion, football
 // 0 !KEYWORDS Mini Upper Part No 458, Rebrickable 973c22h01pr0125, Red Team
 // 0 !KEYWORDS Set 3410, Sports
 // 

@@ -13,9 +13,9 @@ function ldraw_lib__3626bpw2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS bandit, Bricklink 3626bpx30, Brickowl 622010, cavalry, desperado
-// 0 !KEYWORDS fort, legoredo, outlaw, Rebrickable 3626bpr0333, robber, set 6755
-// 0 !KEYWORDS set 6761, set 6762, Set 6764, set 6769, set 6799, western, wild west
+// 0 !KEYWORDS bandit, BrickLink 3626px30, cavalry, desperado, fort, legoredo
+// 0 !KEYWORDS outlaw, Rebrickable 3626bpr0333, robber, set 6755, set 6761
+// 0 !KEYWORDS set 6762, Set 6764, set 6769, set 6799, western, wild west
 // 
 // 0 !HISTORY 2016-12-31 [PTadmin] Official Update 2016-01
 // 0 !HISTORY 2024-10-26 [Lego-Manfred] Reference added

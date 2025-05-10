@@ -13,7 +13,8 @@ function ldraw_lib__3004p0h() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Adventure Time, BMO, Bricklink 3004pb146, Set 71246
+// 0 !KEYWORDS Adventure Time, BMO, Bricklink 3004pb146, Rebrickable 3004pr0018
+// 0 !KEYWORDS Set 71246
 // 
 // 0 !HISTORY 2024-08-26 [OrionP] Official Update 2024-07
 // 

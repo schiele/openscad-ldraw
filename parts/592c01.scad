@@ -13,6 +13,8 @@ function ldraw_lib__592c01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 996bc01, Rebrickable 996bc01
+// 
 // 0 !HISTORY 2004-10-20 [mikeheide] Secondary author
 // 0 !HISTORY 2010-05-28 [Steffen] adjusted to changed origin of screw
 // 0 !HISTORY 2011-02-06 [Steffen] made screw orientation match other parts

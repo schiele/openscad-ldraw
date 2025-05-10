@@ -11,7 +11,8 @@ function ldraw_lib__3623pz1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickheadz, BrickLink 3623pb010, Frozen, Olaf, Set 41618
+// 0 !KEYWORDS Brickheadz, BrickLink 3623pb010, Frozen, Olaf
+// 0 !KEYWORDS Rebrickable 3623pr0025, Set 41618
 // 
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
 // 

@@ -12,6 +12,7 @@ function ldraw_lib__95228p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
+// 0 !KEYWORDS BrickLink 95228pb01, Rebrickable 95228pr0001, Set 10228
 // 
 // 0 !HISTORY 2011-07-25 [PTadmin] Official Update 2011-01
 // 

@@ -17,7 +17,8 @@ function ldraw_lib__75902p09() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS Bricklink 75902pb29, Set 21343, Viking Village
+// 0 !KEYWORDS Bricklink 75902pb29, Rebrickable 75902pr0036, Set 21343
+// 0 !KEYWORDS Viking Village
 // 
 // 0 !HISTORY 2024-05-28 [OrionP] Official Update 2024-04
 // 

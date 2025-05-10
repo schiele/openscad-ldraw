@@ -17,7 +17,7 @@ function ldraw_lib__973pa5() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS Adventurers, aviator, flight crew, Harry Cane, leather, Military
-// 0 !KEYWORDS pilot, T-shirt
+// 0 !KEYWORDS pilot, Set 2542, T-shirt
 // 
 // 0 !CMDLINE -c6
 // 

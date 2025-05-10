@@ -14,9 +14,9 @@ function ldraw_lib__76382ptb() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb1363c02, Brickowl 699909, Michelangelo, mike, Mikey
-// 0 !KEYWORDS Nickelodeon, Rebrickable 973c06h06pr2262, Set 30271, Set 79100
-// 0 !KEYWORDS Set 79104, Set 79122, Teenage Mutant Ninja Turtles, TMNT
+// 0 !KEYWORDS BrickLink 973pb1363c01, Michelangelo, mike, Mikey, Nickelodeon
+// 0 !KEYWORDS Rebrickable 973c06h06pr2262, Set 30271, Set 79100, Set 79104
+// 0 !KEYWORDS Set 79122, Teenage Mutant Ninja Turtles, TMNT
 // 
 // 0 !HISTORY 2024-12-01 [OrionP] Official Update 2024-10
 // 

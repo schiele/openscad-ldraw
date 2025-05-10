@@ -15,10 +15,9 @@ function ldraw_lib__76382p6f() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS astrobot, astronaut, Biff Starling, Bricklink 973px335c01
-// 0 !KEYWORDS BrickOwl 432498, Discovery Channel, Mars Exploration Rover
-// 0 !KEYWORDS Mini Upper Part 858, Mini Upper Part No 857, promotional
-// 0 !KEYWORDS Rebrickable 973c17h17pr0335, Sandy Moondust, set 3928, set 3929
-// 0 !KEYWORDS Space
+// 0 !KEYWORDS Discovery Channel, Mars Exploration Rover, Mini Upper Part 858
+// 0 !KEYWORDS Mini Upper Part No 857, promotional, Rebrickable 973c17h17pr0335
+// 0 !KEYWORDS Sandy Moondust, set 3928, set 3929, Space
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

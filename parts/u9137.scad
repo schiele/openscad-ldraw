@@ -13,6 +13,8 @@ function ldraw_lib__u9137() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
+// 0 !KEYWORDS BrickLink 3232, Rebrickable 3232
+// 
 // 0 !CMDLINE -c1
 // 
 // 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01

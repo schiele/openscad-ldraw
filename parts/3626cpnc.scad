@@ -13,7 +13,8 @@ function ldraw_lib__3626cpnc() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS BrickLink 3626cpb1890, Lloyd, Ninjago
+// 0 !KEYWORDS BrickLink 3626pb1890, Lloyd, Ninjago, Rebrickable 3626cpr2255
+// 0 !KEYWORDS Set 10739
 // 
 // 0 !CMDLINE -c14
 // 

@@ -12,7 +12,7 @@ function ldraw_lib__98138p08() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 98138pb012
+// 0 !KEYWORDS Bricklink 98138pb012, Rebrickable 98138pr0014, set 10251
 // 
 // 0 !HISTORY 2014-12-23 [PTadmin] Official Update 2014-02
 // 0 !HISTORY 2021-01-19 [GeraldLasser] Added ering and BL Reference

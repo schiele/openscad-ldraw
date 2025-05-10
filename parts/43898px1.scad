@@ -13,7 +13,8 @@ function ldraw_lib__43898px1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 43898pb006, Scooby Doo, Set 75902, The Mystery Machine
+// 0 !KEYWORDS Bricklink 43898pb006, Rebrickable 43898pr1002, Scooby Doo, Set 75902
+// 0 !KEYWORDS The Mystery Machine
 // 
 // 0 !HISTORY 2020-06-28 [PTadmin] Official Update 2020-01
 // 

@@ -14,10 +14,10 @@ function ldraw_lib__76382pg1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb0083c01, BrickOwl 81860, dot, Dots, football, Futbal
-// 0 !KEYWORDS Goalee, Goalie, Goaltender, Jose Hammer, Keeper Tim
-// 0 !KEYWORDS Mini Upper Part No 430, Rebrickable 973c08h03pr0083, rugby, Set 3409
-// 0 !KEYWORDS Set 3413, Sports, spot, spots, Tony Terminator
+// 0 !KEYWORDS Bricklink 973pb0083c01, dot, Dots, football, Futbal, Goalee, Goalie
+// 0 !KEYWORDS Goaltender, Jose Hammer, Keeper Tim, Mini Upper Part No 430
+// 0 !KEYWORDS Rebrickable 973c08h03pr0083, rugby, Set 3409, Set 3413, Sports, spot
+// 0 !KEYWORDS spots, Tony Terminator
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

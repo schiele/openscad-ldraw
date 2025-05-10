@@ -17,7 +17,7 @@ function ldraw_lib__u9490() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Neckwear
-// 0 !KEYWORDS Minecraft, Stray
+// 0 !KEYWORDS BrickLink bb0846, Minecraft, Rebrickable 35904, Stray
 // 
 // 0 !HISTORY 2020-06-28 [PTadmin] Official Update 2020-01
 // 

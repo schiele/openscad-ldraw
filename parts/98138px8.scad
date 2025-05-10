@@ -12,7 +12,7 @@ function ldraw_lib__98138px8() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 98138pb100, Minecraft
+// 0 !KEYWORDS Bricklink 98138pb100, Minecraft, Rebrickable 98138pr0102, Set 21051
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
 // 

@@ -16,7 +16,7 @@ function ldraw_lib__98138p0f() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS hub cap
+// 0 !KEYWORDS BrickLink 98138pb043, hub cap, Rebrickable 98138pr0046, Set 75875
 // 
 // 0 !HISTORY 2016-12-31 [PTadmin] Official Update 2016-01
 // 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives

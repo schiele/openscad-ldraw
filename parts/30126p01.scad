@@ -17,7 +17,8 @@ function ldraw_lib__30126p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS bald eagle, Feather, indian, western, wild west
+// 0 !KEYWORDS bald eagle, Feather, indian, Rebrickable 30126pr0003, set 2846
+// 0 !KEYWORDS western, wild west
 // 
 // 0 !CMDLINE -C15
 // 

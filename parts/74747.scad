@@ -13,6 +13,8 @@ function ldraw_lib__74747() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 2867c01
+// 
 // 0 !HISTORY 2004-08-07 [ludo] Rotated inner sleepers for logo alignment.
 // 0 !HISTORY 2004-11-06 [PTadmin] Official Update 2004-04
 // 0 !HISTORY 2007-05-20 [PTadmin] Header formatted for Contributor Agreement

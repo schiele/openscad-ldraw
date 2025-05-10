@@ -12,6 +12,8 @@ function ldraw_lib__826ap06() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 826, Rebrickable 826
+// 
 // 0 !CMDLINE -c47
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01

@@ -12,7 +12,7 @@ function ldraw_lib__973ps6() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Obi-Wan, Star Wars
+// 0 !KEYWORDS Obi-Wan, set 7110, Star Wars
 // 
 // 0 !HISTORY 2001-11-30 [PTadmin] Official Update 2001-02
 // 0 !HISTORY 2007-07-29 [PTadmin] Header formatted for Contributor Agreement

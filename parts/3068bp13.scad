@@ -13,7 +13,8 @@ function ldraw_lib__3068bp13() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS army, Ninjago, Skeleton
+// 0 !KEYWORDS army, BrickLink 3068pb0379, Ninjago, Rebrickable 3068bpr0187
+// 0 !KEYWORDS Set 0756682762, Skeleton
 // 
 // 0 !HISTORY 2012-08-09 [PTadmin] Official Update 2012-02
 // 

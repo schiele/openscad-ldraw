@@ -6,20 +6,21 @@ use <s/777s07.scad>
 use <s/777s09.scad>
 use <s/87079s01.scad>
 function ldraw_lib__87079p0k() = [
-// 0 Tile  2 x  4 with Groove with Red "Nintendo" Pattern
+// 0 Tile  2 x  4 with Red "Nintendo" Pattern
 // 0 Name: 87079p0k.dat
 // 0 Author: Florent Faramond [Makou]
-// 0 !LDRAW_ORG Part UPDATE 2024-07
+// 0 !LDRAW_ORG Part UPDATE 2025-04
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 87079pb0751, Brickowl 10296, Rebrickable 87079pr0226
-// 0 !KEYWORDS Set 71374
+// 0 !KEYWORDS Bricklink 87079pb0751, Rebrickable 87079pr0226, Set 71374
 // 
 // 0 !HISTORY 2024-08-26 [OrionP] Official Update 2024-07
+// 0 !HISTORY 2025-04-24 [MagFors] Update description
+// 0 !HISTORY 2025-04-27 [OrionP] Official Update 2025-04
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\87079s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__87079s01()],

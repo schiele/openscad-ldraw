@@ -13,7 +13,7 @@ function ldraw_lib__28896() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Sheet Cardboard
-// 0 !KEYWORDS Set 42059, Stunt Truck
+// 0 !KEYWORDS BrickLink 42059ppr01, Set 42059, Stunt Truck
 // 
 // 0 !HISTORY 2023-06-24 [OrionP] Official Update 2023-03
 // 

@@ -12,7 +12,7 @@ function ldraw_lib__10202p05() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS Advertisement, Advertising, billboard, Bricklink 10202pb024
-// 0 !KEYWORDS Set 10278, Soap, Suds
+// 0 !KEYWORDS Rebrickable 10202pr0012, Set 10278, Soap, Suds
 // 
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04
 // 

@@ -11,9 +11,8 @@ function ldraw_lib__54200p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 54200pb103, Brickowl 911400, CMF, Looney Tunes
-// 0 !KEYWORDS Rebrickable 54200pr0005, Set 40594, Set 43206, Set 43245, Set 71030
-// 0 !KEYWORDS Speedy Gonzales
+// 0 !KEYWORDS Bricklink 54200pb103, CMF, Looney Tunes, Rebrickable 54200pr0005
+// 0 !KEYWORDS Set 40594, Set 43206, Set 43245, Set 71030, Speedy Gonzales
 // 
 // 0 !HISTORY 2024-07-29 [OrionP] Official Update 2024-06
 // 

@@ -13,7 +13,7 @@ function ldraw_lib__14769pb3() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 14769pb210, Fried Egg, Set 70920
+// 0 !KEYWORDS Bricklink 14769pb210, Fried Egg, Rebrickable 14769pr0023, Set 70920
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 

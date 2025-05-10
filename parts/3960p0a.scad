@@ -11,7 +11,8 @@ function ldraw_lib__3960p0a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Amanita, Muscaria, Toadstool
+// 0 !KEYWORDS Amanita, BrickLink 3960pb006, Muscaria, Rebrickable 3960pr9985
+// 0 !KEYWORDS Set 4168037, Toadstool
 // 
 // 0 !HISTORY 2014-12-23 [PTadmin] Official Update 2014-02
 // 

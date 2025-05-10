@@ -13,8 +13,8 @@ function ldraw_lib__3626cp81() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626cpb1358, Dimensions, Lego Movie, Set 70819, Set 71200
-// 0 !KEYWORDS Wyldstyle
+// 0 !KEYWORDS BrickLink 3626pb1358, Dimensions, Lego Movie
+// 0 !KEYWORDS Rebrickable 3626cpr1644, Set 70819, Set 71200, Wyldstyle
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
 // 0 !HISTORY 2022-01-22 [OrionP] Update description

@@ -15,6 +15,8 @@ function ldraw_lib__6640a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink x165, Rebrickable 6640
+// 
 // 0 !HISTORY 2022-12-20 [PTadmin] Official Update 2022-06
 // 
 // 

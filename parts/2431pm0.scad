@@ -11,7 +11,7 @@ function ldraw_lib__2431pm0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Elves, Set 41071
+// 0 !KEYWORDS BrickLink 2431pb370, Elves, Rebrickable 2431pr0078, Set 41071
 // 
 // 0 !HISTORY 2015-10-11 [PTadmin] Official Update 2015-01
 // 

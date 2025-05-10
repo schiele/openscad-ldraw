@@ -14,7 +14,8 @@ function ldraw_lib__98130p07() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Bricklink 98130pb07, Jay, Ninjago, Set 853758
+// 0 !KEYWORDS Bricklink 98130pb07, Jay, Ninjago, Rebrickable 98130pr0004
+// 0 !KEYWORDS Set 853758
 // 
 // 0 !HISTORY 2023-04-17 [OrionP] Official Update 2023-02
 // 

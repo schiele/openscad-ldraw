@@ -15,8 +15,8 @@ function ldraw_lib__3626bpst() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS desert, nomad, sand people, sand person, Star Wars, Tatooine
-// 0 !KEYWORDS Warrior
+// 0 !KEYWORDS BrickLink 3626pst, desert, nomad, Rebrickable 3626bpr0288
+// 0 !KEYWORDS sand people, sand person, Set 7113, Star Wars, Tatooine, Warrior
 // 
 // 0 !CMDLINE -c487
 // 

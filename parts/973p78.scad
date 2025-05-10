@@ -12,8 +12,8 @@ function ldraw_lib__973p78() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !KEYWORDS collar, fire logo badge, fireman, red belt, town, two yellow pins
-// 0 !KEYWORDS yellow buckle, Zipper
+// 0 !KEYWORDS collar, fire logo badge, fireman, red belt, Set 1248, town
+// 0 !KEYWORDS two yellow pins, yellow buckle, Zipper
 // 
 // 0 !HISTORY 2004-11-06 [PTadmin] Official Update 2004-04
 // 0 !HISTORY 2007-07-29 [PTadmin] Header formatted for Contributor Agreement

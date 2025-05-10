@@ -13,7 +13,8 @@ function ldraw_lib__24593p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Employee Christmas Gift, Santa's Sleigh and Reindeer, Set 4002018
+// 0 !KEYWORDS BrickLink 24593pb09, Employee Christmas Gift
+// 0 !KEYWORDS Rebrickable 24593pr0003, Santa's Sleigh and Reindeer, Set 4002018
 // 
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
 // 

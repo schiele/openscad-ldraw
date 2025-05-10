@@ -11,9 +11,8 @@ function ldraw_lib__30387p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 30387p01, Brickowl 436083, Construction, danger
-// 0 !KEYWORDS Rebrickable 30387pr0001, set 6474, Set 6600, Set 9371
-// 0 !KEYWORDS with 1 and 2 fingers on ends
+// 0 !KEYWORDS Construction, danger, Rebrickable 30387pr0001, set 6474, Set 6600
+// 0 !KEYWORDS Set 9371, with 1 and 2 fingers on ends
 // 
 // 0 !CMDLINE -C14
 // 

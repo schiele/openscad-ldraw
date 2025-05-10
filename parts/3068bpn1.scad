@@ -11,7 +11,8 @@ function ldraw_lib__3068bpn1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3068bpb1098, Ninja, Set 70608, Set 70618, Set 70657
+// 0 !KEYWORDS BrickLink 3068pb1098, Ninja, Rebrickable 3068bpr0344, Set 70608
+// 0 !KEYWORDS Set 70618, Set 70657
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 

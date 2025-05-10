@@ -14,7 +14,7 @@ function ldraw_lib__43898pa1() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS Adventurers, Bricklink 43898px1, India, Johnny Thunder
-// 0 !KEYWORDS Orient Expedition, Set 7418
+// 0 !KEYWORDS Orient Expedition, Rebrickable 43898pr0006, Set 7418
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 

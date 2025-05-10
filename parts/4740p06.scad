@@ -11,7 +11,7 @@ function ldraw_lib__4740p06() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 4740pb017, Set 70822, Topping
+// 0 !KEYWORDS Bricklink 4740pb017, Rebrickable 4740pr0013, Set 70822, Topping
 // 
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04
 // 

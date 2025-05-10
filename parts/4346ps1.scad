@@ -13,7 +13,8 @@ function ldraw_lib__4346ps1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS logo, mailbox, Rebel Alliance
+// 0 !KEYWORDS BrickLink 4346px4, logo, mailbox, Rebel Alliance
+// 0 !KEYWORDS Rebrickable 4346pr0012, Set 4195641
 // 
 // 0 !HISTORY 2002-09-20 [Holly-Wood] Fixed overlapping white area, Substitute Light Gray with Main Color, Grouped Pattern
 // 0 !HISTORY 2003-07-06 [Steffen] made use of subfile, polished header, fixed bowtie quads

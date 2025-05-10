@@ -11,8 +11,9 @@ function ldraw_lib__60601px1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 60601pb020, Diagon Alley, Harry Potter, Set 75810
-// 0 !KEYWORDS Set 75978, Stranger Things, The Upside Down
+// 0 !KEYWORDS Bricklink 60601pb020, Diagon Alley, Harry Potter
+// 0 !KEYWORDS Rebrickable 60601pr0007, Set 75810, Set 75978, Stranger Things
+// 0 !KEYWORDS The Upside Down
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
 // 

@@ -14,8 +14,8 @@ function ldraw_lib__973pw9() = [
   [0,"BFC","CW"],
 // 
 // 0 !KEYWORDS billy the kid, cowboy, deputy, desperado, doc holliday, Dodge City
-// 0 !KEYWORDS spaghetti western, Star, tombstone, western, wild west, Winnetou
-// 0 !KEYWORDS Wyatt Earp
+// 0 !KEYWORDS set 6765, spaghetti western, Star, tombstone, western, wild west
+// 0 !KEYWORDS Winnetou, Wyatt Earp
 // 
 // 0 !CMDLINE -c1
 // 

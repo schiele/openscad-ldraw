@@ -11,7 +11,8 @@ function ldraw_lib__3070bp1b() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS bracelet, Bricklink 3070bpb165, Dots, Power, Set 41919
+// 0 !KEYWORDS bracelet, BrickLink 3070pb165, Dots, Power, Rebrickable 3070bpr0226
+// 0 !KEYWORDS Set 41919
 // 
 // 0 !HISTORY 2023-06-24 [OrionP] Official Update 2023-03
 // 

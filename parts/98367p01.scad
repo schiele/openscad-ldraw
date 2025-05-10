@@ -13,7 +13,8 @@ function ldraw_lib__98367p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS CMF, Collectable, Collectible, roman, Series 6, soldier
+// 0 !KEYWORDS BrickLink 98367pb01, CMF, Collectable, Collectible
+// 0 !KEYWORDS Rebrickable 98367pr0001, roman, Series 6, soldier
 // 
 // 0 !HISTORY 2023-04-17 [OrionP] Official Update 2023-02
 // 

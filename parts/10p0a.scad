@@ -34,6 +34,8 @@ function ldraw_lib__10p0a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 10px6, Rebrickable 10apr0009, Set 1601
+// 
 // 0 !HISTORY 2005-01-21 [Holly-Wood] Fixed L3p warnings, corrected BFC, regrouped
 // 0 !HISTORY 2009-05-02 [mkennedy] Used 10s01 subpart, stud groups
 // 0 !HISTORY 2009-05-02 [PTadmin] Official Update 2009-01

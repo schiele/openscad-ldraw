@@ -12,8 +12,8 @@ function ldraw_lib__3629pw2() = [
   [0,"BFC","CW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS deputy, marshal, sheriff, stetson, ten-gallon hat, western
-// 0 !KEYWORDS wild west
+// 0 !KEYWORDS BrickLink 3629px2, deputy, marshal, Rebrickable 3629pr0002, set 5317
+// 0 !KEYWORDS sheriff, stetson, ten-gallon hat, western, wild west
 // 
 // 0 !HISTORY 2010-12-31 [PTadmin] Official Update 2010-03
 // 0 !HISTORY 2012-12-24 [cwdee] Update category

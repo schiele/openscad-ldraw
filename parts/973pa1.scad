@@ -17,7 +17,8 @@ function ldraw_lib__973pa1() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS Adventurers, bands, belt, belt buckle, buttons, collar, doctor
-// 0 !KEYWORDS Dr. Kilroy, Dr. Lightning, old man, Prof. Kilroy, professor, shirt
+// 0 !KEYWORDS Dr. Kilroy, Dr. Lightning, old man, Prof. Kilroy, professor
+// 0 !KEYWORDS Set 1280, shirt
 // 
 // 0 !CMDLINE -c15
 // 

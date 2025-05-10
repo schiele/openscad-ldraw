@@ -13,8 +13,8 @@ function ldraw_lib__2528ap36() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Bricklink 2528pb10, CMF, Collectible, Series 14, set 71010
-// 0 !KEYWORDS Zombie Pirate
+// 0 !KEYWORDS Bricklink 2528pb10, CMF, Collectible, Rebrickable 2528pr0008
+// 0 !KEYWORDS Series 14, set 71010, Zombie Pirate
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
 // 

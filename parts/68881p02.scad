@@ -13,7 +13,8 @@ function ldraw_lib__68881p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 68881pb002, Mickey Mouse, Set 43179, Walt Disney
+// 0 !KEYWORDS Bricklink 68881pb002, Mickey Mouse, Rebrickable 68881pr0001
+// 0 !KEYWORDS Set 43179, Walt Disney
 // 
 // 0 !HISTORY 2022-05-07 [PTadmin] Official Update 2022-03
 // 

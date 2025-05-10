@@ -15,9 +15,8 @@ function ldraw_lib__4066bp0x() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Brick
-// 0 !KEYWORDS bricklink 4066pb038, Brickowl 977237, Farm, Rebrickable 4066pr0115
-// 0 !KEYWORDS Safari, Set 1614, Set 1685, Set 2378, Set 2657, Set 2805, Set 9149
-// 0 !KEYWORDS Set 9155, Set 9160
+// 0 !KEYWORDS bricklink 4066pb038, Farm, Rebrickable 4066pr0115, Safari, Set 1614
+// 0 !KEYWORDS Set 1685, Set 2378, Set 2657, Set 2805, Set 9149, Set 9155, Set 9160
 // 
 // 0 !HISTORY 2024-05-28 [OrionP] Official Update 2024-04
 // 

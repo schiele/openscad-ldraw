@@ -14,7 +14,7 @@ function ldraw_lib__4003c01() = [
   [0,"BFC","CW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS Fabuland
+// 0 !KEYWORDS BrickLink bb1310c01, Fabuland, Rebrickable 503c01
 // 
 // 0 !CMDLINE -c4
 // 

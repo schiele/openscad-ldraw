@@ -12,7 +12,7 @@ function ldraw_lib__2336p68() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Set 6896
+// 0 !KEYWORDS Rebrickable 2336pr0003, Set 6896
 // 
 // 0 !HISTORY 1998-09-15 [PTadmin] Official Update 1998-08
 // 0 !HISTORY 2007-05-04 [PTadmin] Header formatted for Contributor Agreement

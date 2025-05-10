@@ -14,7 +14,7 @@ function ldraw_lib__973pad() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS mike
+// 0 !KEYWORDS BrickLink 973px190, mike, Set 1281
 // 
 // 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01
 // 

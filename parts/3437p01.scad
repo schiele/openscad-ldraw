@@ -12,7 +12,8 @@ function ldraw_lib__3437p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Brick
-// 0 !KEYWORDS bricklink 3437pb021, set 081, set 523, Steam engine
+// 0 !KEYWORDS bricklink 3437pb021, Rebrickable 3437pr0063, set 081, set 523
+// 0 !KEYWORDS Steam engine
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 

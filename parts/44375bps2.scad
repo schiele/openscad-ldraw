@@ -14,8 +14,8 @@ function ldraw_lib__44375bps2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 44375bpb19, Brickowl 1139132, Rebrickable 44375bpr0015
-// 0 !KEYWORDS Set 75347, Star Wars, TIE Bomber
+// 0 !KEYWORDS Bricklink 44375bpb19, Rebrickable 44375bpr0015, Set 75347, Star Wars
+// 0 !KEYWORDS TIE Bomber
 // 
 // 0 !HISTORY 2023-08-25 [OrionP] Official Update 2023-04
 // 0 !HISTORY 2024-07-02 [Holly-Wood] Fixed title

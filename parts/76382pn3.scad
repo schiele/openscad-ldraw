@@ -14,7 +14,7 @@ function ldraw_lib__76382pn3() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb2785c01, Brickowl 180500, CMF, Lloyd, Ninja, Ninjago
+// 0 !KEYWORDS Bricklink 973pb2785c01, CMF, Lloyd, Ninja, Ninjago
 // 0 !KEYWORDS Rebrickable 973c03h03pr9958, Set 70612, Set 70613, Set 70617
 // 0 !KEYWORDS Set 70618, Set 70620, Set 70656, The Ninjago Movie
 // 

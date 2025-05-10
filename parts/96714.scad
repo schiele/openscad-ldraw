@@ -2,10 +2,10 @@ use <../lib.scad>
 use <s/96714s01.scad>
 use <s/96714s02.scad>
 function ldraw_lib__96714() = [
-// 0 Sheet Fabric 17.5 x 12.5 Trapezoidal Sail
+// 0 Sail 17.5 x 12.5 Trapezoidal
 // 0 Name: 96714.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2020-02
+// 0 !LDRAW_ORG Part UPDATE 2025-04
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -20,7 +20,8 @@ function ldraw_lib__96714() = [
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
 // 0 !HISTORY 2020-06-10 [cwdee] Update description
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
-// 
+// 0 !HISTORY 2025-04-26 [Holly-Wood] Update description
+// 0 !HISTORY 2025-04-27 [OrionP] Official Update 2025-04
 // 
 // 1 16 0 -0.25 0 1 0 0 0 1 0 0 0 1 s\96714s01.dat
   [1,16,0,-0.25,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__96714s01()],

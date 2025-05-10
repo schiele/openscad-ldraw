@@ -12,7 +12,7 @@ function ldraw_lib__42450c01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Neckwear
-// 0 !KEYWORDS Cloak, Dracula, vampire
+// 0 !KEYWORDS BrickLink 42450, Cloak, Dracula, Rebrickable 42450, vampire
 // 
 // 0 !HISTORY 2013-08-14 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2019-05-21 [Philo] File preparation for LDraw Parts Tracker

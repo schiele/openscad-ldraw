@@ -12,6 +12,8 @@ function ldraw_lib__6159c01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS Rebrickable 6159
+// 
 // 0 !HISTORY 2015-01-01 [MagFors] Original part shape by Thomas Burger
 // 0 !HISTORY 2015-01-01 [MagFors] Split into two parts
 // 0 !HISTORY 2016-12-31 [PTadmin] Official Update 2016-01

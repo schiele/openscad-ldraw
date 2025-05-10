@@ -11,7 +11,8 @@ function ldraw_lib__3010pyc() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickheadz, Bricklink 3010pb317, Daisy Duck, Set 40476
+// 0 !KEYWORDS Brickheadz, Bricklink 3010pb317, Daisy Duck, Rebrickable 3010pr0082
+// 0 !KEYWORDS Set 40476
 // 
 // 0 !HISTORY 2024-06-30 [OrionP] Official Update 2024-05
 // 

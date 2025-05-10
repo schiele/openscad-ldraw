@@ -11,7 +11,8 @@ function ldraw_lib__2431pzo() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickheads, bricklink 2431pb548, Sally, set 41630
+// 0 !KEYWORDS Brickheads, bricklink 2431pb548, Rebrickable 2431pr0138, Sally
+// 0 !KEYWORDS set 41630
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 

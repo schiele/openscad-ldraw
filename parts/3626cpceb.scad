@@ -13,7 +13,8 @@ function ldraw_lib__3626cpceb() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626cpb1412, Costume, Halloween, Series 14, Skeleton Guy
+// 0 !KEYWORDS BrickLink 3626pb1412, Costume, Halloween, Rebrickable 3626cpr1732
+// 0 !KEYWORDS Series 14, Set 71010-11, Skeleton Guy
 // 
 // 0 !CMDLINE -c0
 // 

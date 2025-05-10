@@ -12,9 +12,8 @@ function ldraw_lib__98568p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 98568pb02, Brickowl 141036, EV3, hero factory
-// 0 !KEYWORDS Rebrickable 98568pat0002, set 31313, set 4526, set 6227, sword
-// 0 !KEYWORDS Technic, Weapon
+// 0 !KEYWORDS Bricklink 98568pb02, EV3, hero factory, Rebrickable 98568pat0002
+// 0 !KEYWORDS set 31313, set 4526, set 6227, sword, Technic, Weapon
 // 
 // 0 !HISTORY 2012-05-20 {LEGO MINDSTORMS Team} Original part shape
 // 0 !HISTORY 2012-09-05 [Philo] Complete rebuild for LDraw Parts Tracker

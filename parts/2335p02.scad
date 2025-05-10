@@ -11,7 +11,7 @@ function ldraw_lib__2335p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS stripe
+// 0 !KEYWORDS Rebrickable 2335pr0004, Set 5389, stripe
 // 
 // 0 !HISTORY 1998-03-23 [PTadmin] Official Update 1998-03
 // 0 !HISTORY 1998-07-15 [PTadmin] Official Update 1998-07

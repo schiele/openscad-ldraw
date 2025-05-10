@@ -21,7 +21,7 @@ function ldraw_lib__56907() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Technic
+// 0 !KEYWORDS BrickLink x1825, Technic
 // 
 // 0 !HISTORY 2013-12-23 [PTadmin] Official Update 2013-02
 // 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives

@@ -12,6 +12,8 @@ function ldraw_lib__4694c01_f1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 4694c01, Rebrickable 75215
+// 
 // 0 !HISTORY 2009-12-15 [arezey] Moved position of 4695.dat after origin change
 // 0 !HISTORY 2009-12-29 [PTadmin] Official Update 2009-03
 // 0 !HISTORY 2016-08-21 [PTadmin] Renamed from 4694c01

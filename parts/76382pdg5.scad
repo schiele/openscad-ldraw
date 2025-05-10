@@ -14,9 +14,8 @@ function ldraw_lib__76382pdg5() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb4699c01, BrickOwl 517645, CMF, Kermit the Frog
-// 0 !KEYWORDS Mini Upper Part 5934, Rebrickable 973c18h18pr0002, Sesame Street
-// 0 !KEYWORDS set 71033, The Muppets
+// 0 !KEYWORDS Bricklink 973pb4699c01, CMF, Kermit the Frog, Mini Upper Part 5934
+// 0 !KEYWORDS Rebrickable 973c18h18pr0002, Sesame Street, set 71033, The Muppets
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

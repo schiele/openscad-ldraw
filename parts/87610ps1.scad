@@ -21,7 +21,7 @@ function ldraw_lib__87610ps1() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Bricklink 87610pb02, Set 7914, Set 9525
+// 0 !KEYWORDS Bricklink 87610pb02, Rebrickable 87610pr0006, Set 7914, Set 9525
 // 
 // 0 !CMDLINE -c72
 // 

@@ -13,8 +13,8 @@ function ldraw_lib__18603c02p0g() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Arcade, Bricklink 18605c01pb08, Brickowl 401181, Dimensions
-// 0 !KEYWORDS Electronic, Midway, NFC, Rebrickable 19981pr0008, set 71235, Toy Tag
+// 0 !KEYWORDS Arcade, Bricklink 18605c01pb08, Dimensions, Electronic, Midway, NFC
+// 0 !KEYWORDS Rebrickable 19981pr0008, set 71235, Toy Tag
 // 
 // 0 !HISTORY 2024-12-30 [OrionP] Official Update 2024-11
 // 

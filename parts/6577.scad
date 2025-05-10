@@ -19,7 +19,8 @@ function ldraw_lib__6577() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS cross-axle, half bushing, half-bushing, small pulley
+// 0 !KEYWORDS BrickLink 4265b, cross-axle, half bushing, half-bushing
+// 0 !KEYWORDS Rebrickable 4265b, small pulley
 // 
 // 0 !HISTORY 1999-04-09 [sbliss] Modified to newer type
 // 0 !HISTORY 2004-06-20 [guyvivan] Made BFC compliant, use Torus and axlehol6 primitive

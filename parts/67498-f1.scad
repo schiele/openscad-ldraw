@@ -12,7 +12,7 @@ function ldraw_lib__67498_f1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS BMW M 1000 RR, Set 42130
+// 0 !KEYWORDS BMW M 1000 RR, BrickLink 69633c01, Rebrickable 69633, Set 42130
 // 
 // 0 !HISTORY 2024-05-28 [OrionP] Official Update 2024-04
 // 

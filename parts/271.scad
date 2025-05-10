@@ -25,7 +25,8 @@ function ldraw_lib__271() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !KEYWORDS bracelet, chain, jewlery, Scala, wristband, wristlet
+// 0 !KEYWORDS bracelet, BrickLink 312c, chain, jewlery, Rebrickable 312c, Scala
+// 0 !KEYWORDS wristband, wristlet
 // 
 // 0 !HISTORY 2010-07-05 [PTadmin] Official Update 2010-02
 // 

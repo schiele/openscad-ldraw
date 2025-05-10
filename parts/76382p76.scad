@@ -14,11 +14,11 @@ function ldraw_lib__76382p76() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973px20c01, BrickOwl 458630, Chief Bobby, city center
-// 0 !KEYWORDS dacta, Emergency, Rebrickable 973c03h01pr0020, Red Stripe, rescue
-// 0 !KEYWORDS set 10159, Set 1786, Set 4559, set 6332, Set 6344, set 6348
-// 0 !KEYWORDS set 6398, Set 6433, set 6483, set 6597, set 6598, set 6636, set 9293
-// 0 !KEYWORDS Set 9365, town, Town Junior, Trains
+// 0 !KEYWORDS Bricklink 973px20c01, Chief Bobby, city center, dacta, Emergency
+// 0 !KEYWORDS Rebrickable 973c03h01pr0020, Red Stripe, rescue, set 10159, Set 1786
+// 0 !KEYWORDS Set 4559, set 6332, Set 6344, set 6348, set 6398, Set 6433, set 6483
+// 0 !KEYWORDS set 6597, set 6598, set 6636, set 9293, Set 9365, town, Town Junior
+// 0 !KEYWORDS Trains
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

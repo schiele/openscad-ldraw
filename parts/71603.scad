@@ -17,6 +17,8 @@ function ldraw_lib__71603() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink x239
+// 
 // 0 !HISTORY 2022-05-24 [GeraldLasser] Completely redone and reorganized
 // 0 !HISTORY 2022-09-15 [PTadmin] Official Update 2022-05
 // 

@@ -13,7 +13,7 @@ function ldraw_lib__98100p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS Bricklink 98100pb13, Cupola, Ideas, International Space Station, ISS
-// 0 !KEYWORDS set 21321
+// 0 !KEYWORDS Rebrickable 98100pr0010, set 21321
 // 
 // 0 !HISTORY 2020-06-28 [PTadmin] Official Update 2020-01
 // 0 !HISTORY 2020-10-23 [cwdee] Update description

@@ -13,7 +13,8 @@ function ldraw_lib__28145p03() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Bricklink 28149pb03, Dick Grayson, Robin, set 71264
+// 0 !KEYWORDS Bricklink 28149pb03, Dick Grayson, Rebrickable 28145pr0166, Robin
+// 0 !KEYWORDS set 71264
 // 
 // 0 !HISTORY 2022-09-15 [PTadmin] Official Update 2022-05
 // 

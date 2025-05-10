@@ -12,7 +12,7 @@ function ldraw_lib__25128p03() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 25128pb003, Set 10761, Toddler
+// 0 !KEYWORDS Bricklink 25128pb003, Rebrickable 25128c02, Set 10761, Toddler
 // 
 // 0 !HISTORY 2022-09-15 [PTadmin] Official Update 2022-05
 // 

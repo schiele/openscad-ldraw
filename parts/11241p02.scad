@@ -19,10 +19,8 @@ function ldraw_lib__11241p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 11241pb02, Bricklink 11241pb04, Brickowl 187844
-// 0 !KEYWORDS Brickowl 287905, Horse, Rebrickable 11241pr0002
-// 0 !KEYWORDS Rebrickable 11241pr0003, Set 41039, Set 41089, Set 471602
-// 0 !KEYWORDS Sunshine Ranch
+// 0 !KEYWORDS Bricklink 11241pb02, Horse, Rebrickable 11241pr0002, Set 41039
+// 0 !KEYWORDS Set 41089, Set 471602, Sunshine Ranch
 // 
 // 0 !HISTORY 2024-05-28 [OrionP] Official Update 2024-04
 // 

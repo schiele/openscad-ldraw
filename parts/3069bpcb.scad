@@ -11,7 +11,7 @@ function ldraw_lib__3069bpcb() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3069bpb277, CMF Series 10
+// 0 !KEYWORDS BrickLink 3069pb0277, CMF Series 10, Rebrickable 3069bpr0007
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 

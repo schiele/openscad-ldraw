@@ -11,7 +11,8 @@ function ldraw_lib__3069bpzi() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickheadz, BrickLink 3069bpb632, Cyborg, Justice League, Set 41601
+// 0 !KEYWORDS Brickheadz, BrickLink 3069pb0632, Cyborg, Justice League
+// 0 !KEYWORDS Rebrickable 3069bpr0015, Set 41601
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 0 !HISTORY 2021-01-16 [cwdee] Update description

@@ -12,9 +12,8 @@ function ldraw_lib__98138p1n() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 98138pb246, Brickowl 6954, Dots, Hash, Hashtag
-// 0 !KEYWORDS Number Sign, Octothorp Sign, Pound Sign, Rebrickable 98138pr0219
-// 0 !KEYWORDS set 41932
+// 0 !KEYWORDS Bricklink 98138pb246, Dots, Hash, Hashtag, Number Sign
+// 0 !KEYWORDS Octothorp Sign, Pound Sign, Rebrickable 98138pr0219, set 41932
 // 
 // 0 !HISTORY 2022-06-07 [Holly-Wood] Changed color, added keywords
 // 0 !HISTORY 2022-12-20 [PTadmin] Official Update 2022-06

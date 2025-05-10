@@ -14,9 +14,8 @@ function ldraw_lib__76382pxl() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Abby, Abigail Yates, Bricklink 973pb2420c01, Brickowl
-// 0 !KEYWORDS Brickowl 682836, Ghostbusters, Rebrickable 973c11h03pr3515
-// 0 !KEYWORDS Set 71242, Set 75828
+// 0 !KEYWORDS Abby, Abigail Yates, Bricklink 973pb2420c01, Ghostbusters
+// 0 !KEYWORDS Rebrickable 973c11h03pr3515, Set 71242, Set 75828
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

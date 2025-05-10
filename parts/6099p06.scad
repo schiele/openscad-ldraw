@@ -13,9 +13,9 @@ function ldraw_lib__6099p06() = [
   [0,"BFC","CW"],
 // 
 // 0 !KEYWORDS air base, air harbor, airfield, airstrip, aviation field
-// 0 !KEYWORDS Classic Space, deck, Field, flight deck, flight strip, flying field
-// 0 !KEYWORDS Galaxy Explorer, helipad, heliport, landing strip, port
-// 0 !KEYWORDS takeoff strip
+// 0 !KEYWORDS BrickLink 6099pb01, Classic Space, deck, Field, flight deck
+// 0 !KEYWORDS flight strip, flying field, Galaxy Explorer, helipad, heliport
+// 0 !KEYWORDS landing strip, port, Rebrickable 6099pr0006, takeoff strip
 // 
 // 0 !HISTORY 2008-06-28 [anathema] Used subfile
 // 0 !HISTORY 2010-12-31 [PTadmin] Official Update 2010-03

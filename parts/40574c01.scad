@@ -18,8 +18,9 @@ function ldraw_lib__40574c01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS G60, Gigamesh, Programmable, Robot, Robotics, S45, S70, Shadowstrike
-// 0 !KEYWORDS Snaptrax, Spybot, T55, Technojaw
+// 0 !KEYWORDS BrickLink 4232c01, G60, Gigamesh, Programmable, Rebrickable 4232
+// 0 !KEYWORDS Robot, Robotics, S45, S70, Shadowstrike, Snaptrax, Spybot, T55
+// 0 !KEYWORDS Technojaw
 // 
 // 0 !HISTORY 2013-12-23 [PTadmin] Official Update 2013-02
 // 

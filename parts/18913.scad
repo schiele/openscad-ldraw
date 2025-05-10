@@ -11,6 +11,8 @@ function ldraw_lib__18913() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 18913c02
+// 
 // 0 !HISTORY 2016-03-18 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2019-07-18 [Sirio] File preparation for LDraw Parts Tracker
 // 0 !HISTORY 2020-06-28 [PTadmin] Official Update 2020-01

@@ -12,7 +12,7 @@ function ldraw_lib__87079pb0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS 4+, Bricklink 87079pb0317, Brickowl 284081, DC comics, Juniors
+// 0 !KEYWORDS 4+, Bricklink 87079pb0317, DC comics, Juniors
 // 0 !KEYWORDS Rebrickable 87079pr0090, Set 10724, Set 10737, Set 10753
 // 0 !KEYWORDS Super Heroes
 // 

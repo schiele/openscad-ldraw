@@ -17,6 +17,8 @@ function ldraw_lib__4185a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 4185, Rebrickable 4185
+// 
 // 0 !HISTORY 2007-07-04 [PTadmin] Header formatted for Contributor Agreement
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
 // 0 !HISTORY 2008-07-07 [guyvivan] Made BFC compliant, added missing lines and optional lines (2004-08-01)

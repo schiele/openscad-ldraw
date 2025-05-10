@@ -28,6 +28,7 @@ function ldraw_lib__6406() = [
   [0,"BFC","CW"],
 // 
 // 0 !CATEGORY Train
+// 0 !KEYWORDS BrickLink 6406apb01, Rebrickable 6406a
 // 
 // 0 !HISTORY 2010-12-31 [PTadmin] Official Update 2010-03
 // 

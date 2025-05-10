@@ -15,6 +15,7 @@ function ldraw_lib__64776p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Brick
+// 0 !KEYWORDS BrickLink 64776pb01, Rebrickable 64776pat0001, Set 2010
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 

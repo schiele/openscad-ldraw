@@ -13,7 +13,7 @@ function ldraw_lib__3069bpb1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Batman
+// 0 !KEYWORDS Batman, BrickLink 3069pb0027, Rebrickable 3069bpr0106, set 7782
 // 
 // 0 !HISTORY 2009-12-29 [PTadmin] Official Update 2009-03
 // 

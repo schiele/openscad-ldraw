@@ -11,7 +11,8 @@ function ldraw_lib__11477pz2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickheadz, Bricklink 11477pb050, Captain Phasma, Set 41486
+// 0 !KEYWORDS Brickheadz, Bricklink 11477pb050, Captain Phasma
+// 0 !KEYWORDS Rebrickable 11477pr0004, Set 41486
 // 
 // 0 !HISTORY 2019-09-09 [PTadmin] Official Update 2019-02
 // 

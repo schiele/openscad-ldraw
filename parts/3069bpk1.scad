@@ -11,7 +11,8 @@ function ldraw_lib__3069bpk1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3069bpb714, Collectible Minifigures, Disney, Edna Mode
+// 0 !KEYWORDS BrickLink 3069pb0714, Collectible Minifigures, Disney, Edna Mode
+// 0 !KEYWORDS Rebrickable 3069bpr0260, Set 71024-17
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 

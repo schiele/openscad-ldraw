@@ -12,7 +12,8 @@ function ldraw_lib__3596p05() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3596pb19, Coastal Rescue Base, Set 6387
+// 0 !KEYWORDS Bricklink 3596pb19, Coastal Rescue Base, Rebrickable 3596pr0004
+// 0 !KEYWORDS Set 6387
 // 
 // 0 !HISTORY 2022-09-15 [PTadmin] Official Update 2022-05
 // 

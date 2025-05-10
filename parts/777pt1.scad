@@ -12,6 +12,8 @@ function ldraw_lib__777pt1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 777px7, Rebrickable 777pr0016, Set 080
+// 
 // 0 !HISTORY 2020-11-24 [Holly-Wood] Changed reference to updated pattern
 // 0 !HISTORY 2022-03-06 [PTadmin] Official Update 2022-02
 // 

@@ -11,7 +11,8 @@ function ldraw_lib__4162p0f() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 4162pb156, Car, Caterham, Cuusoo, Ideas, Set 21307
+// 0 !KEYWORDS Bricklink 4162pb156, Car, Caterham, Cuusoo, Ideas
+// 0 !KEYWORDS Rebrickable 4162pr0054, Set 21307
 // 
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
 // 

@@ -17,7 +17,8 @@ function ldraw_lib__19204p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Azari Firedancer, Friends
+// 0 !KEYWORDS Azari Firedancer, BrickLink 19204pb01, Friends
+// 0 !KEYWORDS Rebrickable 19204pr0001, set 30259
 // 
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
 // 0 !HISTORY 2020-05-10 [cwdee] Update colour name in description

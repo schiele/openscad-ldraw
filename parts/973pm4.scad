@@ -12,7 +12,7 @@ function ldraw_lib__973pm4() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Lord of the Rings, Samwise Gamgee
+// 0 !KEYWORDS Lord of the Rings, Samwise Gamgee, Set 9470
 // 
 // 0 !CMDLINE -c28
 // 

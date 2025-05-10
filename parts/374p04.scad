@@ -15,6 +15,8 @@ function ldraw_lib__374p04() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 3857pb01, Rebrickable 374pr0004
+// 
 // 0 !HISTORY 2005-01-26 [Holly-Wood] Fixed L3p warnings, corrected BFC, regrouped
 // 0 !HISTORY 2009-05-02 [PTadmin] Official Update 2009-01
 // 

@@ -17,11 +17,10 @@ function ldraw_lib__3626bps2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626bps2, Brickowl 171120, determined, Episode One
-// 0 !KEYWORDS Ewan MacGregor, face, jedi knight, Luke Skywalker (2000)
-// 0 !KEYWORDS Mark Hamill, Original Trilogy, padawan, Rebrickable 3626bpr0635
-// 0 !KEYWORDS serious, Set 10178, Set 10188, Set 4480, Star Wars
-// 0 !KEYWORDS Young Obi-Wan Kenobi
+// 0 !KEYWORDS BrickLink 3626ps2, determined, Episode One, Ewan MacGregor, face
+// 0 !KEYWORDS jedi knight, Luke Skywalker (2000), Mark Hamill, Original Trilogy
+// 0 !KEYWORDS padawan, Rebrickable 3626bpr0635, serious, Set 10178, Set 10188
+// 0 !KEYWORDS Set 4480, Star Wars, Young Obi-Wan Kenobi
 // 
 // 0 !HISTORY 2002-02-18 [PTadmin] Official Update 2002-01
 // 0 !HISTORY 2002-04-25 [PTadmin] Official Update 2002-02

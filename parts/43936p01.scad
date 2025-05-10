@@ -12,8 +12,8 @@ function ldraw_lib__43936p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS bricklink 43936px1, chamber of secrets, Harry Potter, set 4730
-// 0 !KEYWORDS Snake
+// 0 !KEYWORDS bricklink 43936px1, chamber of secrets, Harry Potter
+// 0 !KEYWORDS Rebrickable 43936pr0001, set 4730, Snake
 // 
 // 0 !HISTORY 2015-11-03 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2021-12-12 [Holly-Wood] File preparation for LDraw Parts Tracker

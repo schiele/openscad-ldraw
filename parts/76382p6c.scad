@@ -14,9 +14,8 @@ function ldraw_lib__76382p6c() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973p6cc01, BrickOwl 42815, Futuron, Monorail
-// 0 !KEYWORDS Rebrickable 973c28h28pr0006, Set 1621, Set 6703, Set 6828, Set 6884
-// 0 !KEYWORDS set 6893, Set 6990, Space
+// 0 !KEYWORDS Bricklink 973p6cc01, Futuron, Monorail, Rebrickable 973c28h28pr0006
+// 0 !KEYWORDS Set 1621, Set 6703, Set 6828, Set 6884, set 6893, Set 6990, Space
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

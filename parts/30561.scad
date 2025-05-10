@@ -18,7 +18,7 @@ function ldraw_lib__30561() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Niqab, Star Wars
+// 0 !KEYWORDS BrickLink x132, Niqab, Star Wars
 // 
 // 0 !HISTORY 2011-10-26 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2011-10-26 [angmarec] File preparation for LDraw Parts Tracker

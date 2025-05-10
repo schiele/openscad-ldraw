@@ -29,7 +29,7 @@ function ldraw_lib__273() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !KEYWORDS Excavator, Tractor
+// 0 !KEYWORDS BrickLink bb0076, Excavator, Tractor
 // 
 // 0 !HISTORY 2009-05-02 [PTadmin] Official Update 2009-01
 // 0 !HISTORY 2012-10-02 [Steffen] BFC rationalisation

@@ -14,8 +14,8 @@ function ldraw_lib__76382p4p() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb0675c01, BrickOwl 688276, Castle, Kingdoms
-// 0 !KEYWORDS Rebrickable 973e025pr1629, Set 7953
+// 0 !KEYWORDS Bricklink 973pb0675c01, Castle, Kingdoms, Rebrickable 973e025pr1629
+// 0 !KEYWORDS Set 7953
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

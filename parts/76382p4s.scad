@@ -14,8 +14,8 @@ function ldraw_lib__76382p4s() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973px44c01, BrickOwl 756466, Castle, Classic Castle, Joust
-// 0 !KEYWORDS King, Knights Tournament, Noble, Prince, Rebrickable 973c22h01pr0044
+// 0 !KEYWORDS Bricklink 973px44c01, Castle, Classic Castle, Joust, King
+// 0 !KEYWORDS Knights Tournament, Noble, Prince, Rebrickable 973c22h01pr0044
 // 0 !KEYWORDS Set 383, Set 6083, Yellow Castle
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01

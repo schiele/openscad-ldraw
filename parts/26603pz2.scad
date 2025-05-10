@@ -11,8 +11,8 @@ function ldraw_lib__26603pz2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 26603pb336, Brickowl 979844, R2-D2
-// 0 !KEYWORDS Rebrickable 26603pr0110, Set 40623, Star Wars
+// 0 !KEYWORDS Bricklink 26603pb336, R2-D2, Rebrickable 26603pr0110, Set 40623
+// 0 !KEYWORDS Star Wars
 // 
 // 0 !HISTORY 2024-10-27 [OrionP] Official Update 2024-09
 // 

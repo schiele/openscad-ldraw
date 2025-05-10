@@ -13,8 +13,8 @@ function ldraw_lib__24314p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS Airplane, Bricklink 24314pb01, Camper trolley, Cargo tricycle
-// 0 !KEYWORDS Dragster, Hot dog wagon, Popcorn wagon, set 30356, Set 30364
-// 0 !KEYWORDS Set 71032, Wheelchair
+// 0 !KEYWORDS Dragster, Hot dog wagon, Popcorn wagon, Rebrickable 24314c01
+// 0 !KEYWORDS set 30356, Set 30364, Set 71032, Wheelchair
 // 
 // 0 !HISTORY 2018-12-08 [PTadmin] Official Update 2018-02
 // 0 !HISTORY 2022-06-04 [MagFors] Changed tyre colour

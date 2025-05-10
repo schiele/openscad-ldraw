@@ -13,7 +13,7 @@ function ldraw_lib__66757() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Spike Essential
+// 0 !KEYWORDS BrickLink 63792c01, Spike Essential
 // 
 // 0 !HISTORY 2022-05-07 [PTadmin] Official Update 2022-03
 // 

@@ -11,8 +11,8 @@ function ldraw_lib__3068bpz3() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickheadz, Bricklink 3068bpb1167, Minecraft, Mouth, Nose, Set 41612
-// 0 !KEYWORDS Steve
+// 0 !KEYWORDS Brickheadz, BrickLink 3068pb1167, Minecraft, Mouth, Nose
+// 0 !KEYWORDS Rebrickable 3068bpr0381, Set 41612, Steve
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
 // 

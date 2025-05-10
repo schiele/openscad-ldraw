@@ -13,9 +13,10 @@ function ldraw_lib__3068bp77() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS 3.4 g, 42 mm, age, average, Black, build, criminal, detective, Eyes
-// 0 !KEYWORDS fugitive, gangster, hair, height, reward, robber, set 10246
-// 0 !KEYWORDS set 60131, unknown, villain, weight
+// 0 !KEYWORDS 3.4 g, 42 mm, age, average, Black, BrickLink 3068pb0903, build
+// 0 !KEYWORDS criminal, detective, Eyes, fugitive, gangster, hair, height
+// 0 !KEYWORDS Rebrickable 3068bpr0241, reward, robber, set 10246, set 60131
+// 0 !KEYWORDS unknown, villain, weight
 // 
 // 0 !HISTORY 2018-12-08 [PTadmin] Official Update 2018-02
 // 

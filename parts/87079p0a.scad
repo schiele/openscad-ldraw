@@ -4,19 +4,20 @@ function ldraw_lib__87079p0a() = [
 // 0 Tile  2 x  4 with Tire Half with "Jo's Garage" and "BY ACCIDENT WE MEET" Pattern
 // 0 Name: 87079p0a.dat
 // 0 Author: Ulrich Röder [UR]
-// 0 !LDRAW_ORG Part UPDATE 2019-01
+// 0 !LDRAW_ORG Part UPDATE 2025-04
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Set 10264
+// 0 !KEYWORDS Bricklink 87079pb0545, Rebrickable 87079pr0185, Set 10264
 // 
 // 0 !CMDLINE -c15
 // 
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
-// 
+// 0 !HISTORY 2025-03-16 [Lego-Manfred] References added
+// 0 !HISTORY 2025-04-27 [OrionP] Official Update 2025-04
 // 
 // 0 // Lower Font: MV Boli Regular
 // 

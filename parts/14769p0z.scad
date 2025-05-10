@@ -13,7 +13,8 @@ function ldraw_lib__14769p0z() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 14769pb620, Dreamzzz, Set 71457, Set 71476
+// 0 !KEYWORDS Bricklink 14769pb620, Dreamzzz, Rebrickable 14769pr1275, Set 71457
+// 0 !KEYWORDS Set 71476
 // 
 // 0 !HISTORY 2024-07-29 [OrionP] Official Update 2024-06
 // 

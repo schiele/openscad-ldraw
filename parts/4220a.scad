@@ -24,6 +24,8 @@ function ldraw_lib__4220a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 4220, Rebrickable 4220
+// 
 // 0 !HISTORY 1997-12-05 [PTadmin] Official Update 1997-17
 // 0 !HISTORY 2007-07-04 [PTadmin] Header formatted for Contributor Agreement
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01

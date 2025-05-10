@@ -11,8 +11,8 @@ function ldraw_lib__6213p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS basic, Bricklink 6213px2, Brickowl 888246, dacta, Freestyle
-// 0 !KEYWORDS Rebrickable 6213pr0012, Set 4146, Set 9278, Set 9280
+// 0 !KEYWORDS basic, Bricklink 6213px2, dacta, Freestyle, Rebrickable 6213pr0012
+// 0 !KEYWORDS Set 4146, Set 9278, Set 9280
 // 
 // 0 !HISTORY 2024-08-26 [OrionP] Official Update 2024-07
 // 

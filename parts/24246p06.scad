@@ -14,8 +14,8 @@ function ldraw_lib__24246p06() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS 812, Bricklink 24246pb045, Brickowl 930590, Competizione
-// 0 !KEYWORDS Rebrickable 24246pr0041, Set 76914, Speed Champions
+// 0 !KEYWORDS 812, Bricklink 24246pb045, Competizione, Rebrickable 24246pr0041
+// 0 !KEYWORDS Set 76914, Speed Champions
 // 
 // 0 !HISTORY 2023-04-17 [OrionP] Official Update 2023-02
 // 0 !HISTORY 2025-02-27 [Lego-Manfred] References added

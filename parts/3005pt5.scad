@@ -11,6 +11,8 @@ function ldraw_lib__3005pt5() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
+// 0 !KEYWORDS Rebrickable 3005pr9981, Set 237
+// 
 // 0 !HISTORY 2003-12-09 [Steffen] made use of existing subfile
 // 0 !HISTORY 2004-09-15 [PTadmin] Official Update 2004-03
 // 0 !HISTORY 2007-05-11 [PTadmin] Header formatted for Contributor Agreement

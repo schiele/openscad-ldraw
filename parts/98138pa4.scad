@@ -15,9 +15,8 @@ function ldraw_lib__98138pa4() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 98138pb109, Brickowl 922040, Hidden Side
-// 0 !KEYWORDS Rebrickable 98138pr9996, Set 30463, Set 40336, set 70419, set 70423
-// 0 !KEYWORDS Set 70427
+// 0 !KEYWORDS Bricklink 98138pb109, Hidden Side, Rebrickable 98138pr9996
+// 0 !KEYWORDS Set 30463, Set 40336, set 70419, set 70423, Set 70427
 // 
 // 0 !CMDLINE -c 326
 // 

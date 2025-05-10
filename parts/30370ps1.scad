@@ -18,7 +18,8 @@ function ldraw_lib__30370ps1() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Skyhopper, T-16, X-Wing, Y-Wing
+// 0 !KEYWORDS BrickLink x164pb02, Rebrickable 30370pr0019, set 7262, Skyhopper
+// 0 !KEYWORDS T-16, X-Wing, Y-Wing
 // 
 // 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02
 // 0 !HISTORY 2012-06-01 [TK-949] Partial Rewrite

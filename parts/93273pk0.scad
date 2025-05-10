@@ -11,7 +11,8 @@ function ldraw_lib__93273pk0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Cars, Fillmore
+// 0 !KEYWORDS BrickLink 93273pb001, Cars, Fillmore, Rebrickable 93273pr0001
+// 0 !KEYWORDS set 8487
 // 
 // 0 !CMDLINE -c323
 // 

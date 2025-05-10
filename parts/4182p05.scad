@@ -13,7 +13,7 @@ function ldraw_lib__4182p05() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Rebrickable 4182pr0005
+// 0 !KEYWORDS Rebrickable 4182pr0005, Set 7715
 // 
 // 0 !PREVIEW 16 0 0 0 -1 0 0 0 1 0 0 0 -1
 // 

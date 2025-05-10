@@ -12,8 +12,9 @@ function ldraw_lib__4066bp15() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Brick
-// 0 !KEYWORDS bricklink 4066pb106, Farm, Set 1614, Set 2384, Set 2391, Set 2392
-// 0 !KEYWORDS Set 2553, Set 2668, Set 2669, Stable, Zoo
+// 0 !KEYWORDS bricklink 4066pb106, Farm, Rebrickable 4066pr0153, Set 1614
+// 0 !KEYWORDS Set 2384, Set 2391, Set 2392, Set 2553, Set 2668, Set 2669, Stable
+// 0 !KEYWORDS Zoo
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 

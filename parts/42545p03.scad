@@ -12,7 +12,8 @@ function ldraw_lib__42545p03() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Porsche 911 RSR, Set 42096
+// 0 !KEYWORDS BrickLink 42545pb002L, Porsche 911 RSR, Rebrickable 42545pr0002
+// 0 !KEYWORDS Set 42096
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
 // 0 !HISTORY 2020-12-21 [Philo] Corrected too low arch height

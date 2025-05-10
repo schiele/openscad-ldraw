@@ -13,6 +13,8 @@ function ldraw_lib__825a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 445a, Rebrickable 3193a
+// 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 
 // 

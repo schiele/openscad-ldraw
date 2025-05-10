@@ -14,8 +14,8 @@ function ldraw_lib__76382paf() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Adventurers, Bricklink 973pb0043c01, BrickOwl 198846, Dino Island
-// 0 !KEYWORDS hunter, Mini Upper Part No 412, Mr Cunningham, Poacher
+// 0 !KEYWORDS Adventurers, Bricklink 973pb0043c01, Dino Island, hunter
+// 0 !KEYWORDS Mini Upper Part No 412, Mr Cunningham, Poacher
 // 0 !KEYWORDS Rebrickable 973c08h01pr0043, set 5955, set 5987, villain
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01

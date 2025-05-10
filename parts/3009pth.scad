@@ -12,7 +12,7 @@ function ldraw_lib__3009pth() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !KEYWORDS BrickLink 3009pb010
+// 0 !KEYWORDS BrickLink 3009pb010, Rebrickable 3009pr0085, Set 226-1-DBASE
 // 
 // 0 !HISTORY 2022-09-15 [PTadmin] Official Update 2022-05
 // 

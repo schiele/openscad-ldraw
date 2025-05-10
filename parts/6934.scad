@@ -11,7 +11,7 @@ function ldraw_lib__6934() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Scala
+// 0 !KEYWORDS BrickLink 6934a, Rebrickable 6934a, Scala
 // 
 // 0 !HISTORY 1997-12-05 [PTadmin] Official Update 1997-17
 // 0 !HISTORY 2007-07-18 [PTadmin] Header formatted for Contributor Agreement

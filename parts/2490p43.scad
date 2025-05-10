@@ -12,8 +12,8 @@ function ldraw_lib__2490p43() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 2490px3, Castle, Crusaders, Lion Knights, Set 1584
-// 0 !KEYWORDS Set 6039, Set 6060, Set 6081
+// 0 !KEYWORDS Bricklink 2490px3, Castle, Crusaders, Lion Knights
+// 0 !KEYWORDS Rebrickable 2490pr0014, Set 1584, Set 6039, Set 6060, Set 6081
 // 
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04
 // 

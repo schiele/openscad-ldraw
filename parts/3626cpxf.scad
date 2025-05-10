@@ -12,7 +12,7 @@ function ldraw_lib__3626cpxf() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626cpb1776, Brickowl 623322, Robin
+// 0 !KEYWORDS BrickLink 3626pb1776, Rebrickable 3626cpr2228, Robin
 // 0 !KEYWORDS Set 71264 Rebrickable 3626cpr2228, Story pack, The Lego Batman Movie
 // 
 // 0 !HISTORY 2024-08-26 [OrionP] Official Update 2024-07

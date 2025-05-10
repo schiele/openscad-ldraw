@@ -22,7 +22,7 @@ function ldraw_lib__290() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !KEYWORDS Coupling
+// 0 !KEYWORDS BrickLink x547c, Coupling, Rebrickable upn0272c
 // 
 // 0 !HISTORY 2011-07-25 [PTadmin] Official Update 2011-01
 // 

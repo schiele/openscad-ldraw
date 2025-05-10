@@ -13,8 +13,8 @@ function ldraw_lib__3811p02() = [
   [0,"BFC","CW"],
 // 
 // 0 !KEYWORDS Beach, BrickLink 3811pb02, Imperial Guard, Imperial Navy, islanders
-// 0 !KEYWORDS Pirate, Pirates, Rebrickable 3811pr0002, shore, tropical island
-// 0 !KEYWORDS tropics
+// 0 !KEYWORDS Pirate, Pirates, Rebrickable 3811pr0002, set 6270, shore
+// 0 !KEYWORDS tropical island, tropics
 // 
 // 0 !CMDLINE -c7
 // 

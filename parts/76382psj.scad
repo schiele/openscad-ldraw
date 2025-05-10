@@ -15,9 +15,9 @@ function ldraw_lib__76382psj() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS Armor, Attack of the Clones, Beskar, bounty hunter
-// 0 !KEYWORDS Bricklink 973pb0262c01, BrickOwl 772468, Episode II, Geonosis
-// 0 !KEYWORDS Jango Fett, Kamino, Mandalorian, Mini Upper Part No 573
-// 0 !KEYWORDS Rebrickable 973c57h03pr0262, Set 7153, Slave I, Star Wars
+// 0 !KEYWORDS Bricklink 973pb0262c01, Episode II, Geonosis, Jango Fett, Kamino
+// 0 !KEYWORDS Mandalorian, Mini Upper Part No 573, Rebrickable 973c57h03pr0262
+// 0 !KEYWORDS Set 7153, Slave I, Star Wars
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

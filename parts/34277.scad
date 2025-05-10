@@ -23,7 +23,7 @@ function ldraw_lib__34277() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Figure Accessory
-// 0 !KEYWORDS Furniture, Seat
+// 0 !KEYWORDS BrickLink 12651, Furniture, Rebrickable 12651, Seat
 // 
 // 0 !HISTORY 2020-12-12 {LEGO/Unity Microgame} Original part shape
 // 0 !HISTORY 2021-01-04 [Philo] File preparation for LDraw Parts Tracker

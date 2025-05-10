@@ -15,6 +15,8 @@ function ldraw_lib__30144p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
+// 0 !KEYWORDS Rebrickable 30144pr0009, Set 4139
+// 
 // 0 !HISTORY 2001-12-05 [BrickCaster] Pattern added
 // 0 !HISTORY 2003-06-29 [Steffen] BFCed
 // 0 !HISTORY 2003-08-01 [PTadmin] Official Update 2003-02

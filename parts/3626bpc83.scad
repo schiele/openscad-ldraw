@@ -15,8 +15,8 @@ function ldraw_lib__3626bpc83() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626bpb0791, CMF, Collectible Minifigures, Lederhosen Guy
-// 0 !KEYWORDS Series 8, set 8833
+// 0 !KEYWORDS BrickLink 3626pb0791, CMF, Collectible Minifigures, Lederhosen Guy
+// 0 !KEYWORDS Rebrickable 3626bpr1022, Series 8, set 8833
 // 
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04
 // 

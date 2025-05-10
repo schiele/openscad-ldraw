@@ -13,7 +13,7 @@ function ldraw_lib__3068bp96() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS dice, die
+// 0 !KEYWORDS BrickLink 3068pb0293, dice, die, Rebrickable 3068bpr0148, Set 3841
 // 
 // 0 !HISTORY 2011-07-25 [PTadmin] Official Update 2011-01
 // 

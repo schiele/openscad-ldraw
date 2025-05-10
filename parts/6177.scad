@@ -13,7 +13,7 @@ function ldraw_lib__6177() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Belville, Exploriens, plate, tabletop
+// 0 !KEYWORDS Belville, Exploriens, plate, Rebrickable 6177b, tabletop
 // 
 // 0 !HISTORY 1997-10-29 [PTadmin] Official Update 1997-16
 // 0 !HISTORY 2002-10-08 [sbliss] Moved majority of part to subfile

@@ -14,9 +14,8 @@ function ldraw_lib__76382px0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb0413c01, Brickowl 13564-89
-// 0 !KEYWORDS Rebrickable 973c25h12pr1258, Set 3825, Set 3827, SpongeBob
-// 0 !KEYWORDS Squidward
+// 0 !KEYWORDS Bricklink 973pb0413c01, Rebrickable 973c25h12pr1258, Set 3825
+// 0 !KEYWORDS Set 3827, SpongeBob, Squidward
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

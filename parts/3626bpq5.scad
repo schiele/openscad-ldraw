@@ -14,8 +14,8 @@ function ldraw_lib__3626bpq5() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626bpb0414, Pirates of the Carribean, Prince of Persia
-// 0 !KEYWORDS Set 4193, Set 7571
+// 0 !KEYWORDS BrickLink 3626pb0414, Pirates of the Carribean, Prince of Persia
+// 0 !KEYWORDS Rebrickable 3626bpr0658, Set 4193, Set 7571
 // 
 // 0 !CMDLINE -c78
 // 

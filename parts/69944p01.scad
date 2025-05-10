@@ -13,7 +13,8 @@ function ldraw_lib__69944p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS Ancient Warrior, Aztec, CMF Series 21, Obsidian, Weapon
+// 0 !KEYWORDS Ancient Warrior, Aztec, BrickLink 69944pb01, CMF Series 21, Obsidian
+// 0 !KEYWORDS Rebrickable 69944pr0001, Weapon
 // 
 // 0 !CMDLINE -c84
 // 

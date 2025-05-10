@@ -14,7 +14,7 @@ function ldraw_lib__73200bpc1() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS Avengers, Bricklink 970c00pb0482, Captain Marvel, Carol Danvers
-// 0 !KEYWORDS Marvel, set 76049, Super Heroes
+// 0 !KEYWORDS Marvel, Rebrickable 970c05pr1027, set 76049, Super Heroes
 // 
 // 0 !CMDLINE -c272
 // 

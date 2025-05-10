@@ -11,8 +11,8 @@ function ldraw_lib__3245bp03() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS bricklink 3245bpx4, Bus stop, dacta, Education, Set 1065, Set 9354
-// 0 !KEYWORDS town
+// 0 !KEYWORDS bricklink 3245bpx4, Bus stop, dacta, Education
+// 0 !KEYWORDS Rebrickable 3245bpr0007, Set 1065, Set 9354, town
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 

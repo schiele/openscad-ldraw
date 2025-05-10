@@ -13,7 +13,7 @@ function ldraw_lib__3626cpxa() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Adventure Time, Bricklink 3626pb1770, Brickowl 753857, Marceline
+// 0 !KEYWORDS Adventure Time, Bricklink 3626pb1770, Marceline
 // 0 !KEYWORDS Rebrickable 3626cpr9995, Set 71285, Vampire Queen
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01

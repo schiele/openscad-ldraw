@@ -11,7 +11,8 @@ function ldraw_lib__11477pz0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS 11477pb056, Brickheadz, Set 41620, Stormtrooper
+// 0 !KEYWORDS 11477pb056, Brickheadz, BrickLink 11477pb056
+// 0 !KEYWORDS Rebrickable 11477pr0006, Set 41620, Stormtrooper
 // 
 // 0 !HISTORY 2019-09-09 [PTadmin] Official Update 2019-02
 // 

@@ -14,8 +14,8 @@ function ldraw_lib__3626bpso() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626bpb0442, Han Solo, Set 10188, Set 7879, Set 7965
-// 0 !KEYWORDS Set 8097, Set 8129, Star Wars
+// 0 !KEYWORDS BrickLink 3626pb0442, Han Solo, Rebrickable 3626bpr0648, Set 10188
+// 0 !KEYWORDS Set 7879, Set 7965, Set 8097, Set 8129, Star Wars
 // 
 // 0 !HISTORY 2022-12-20 [PTadmin] Official Update 2022-06
 // 

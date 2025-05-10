@@ -12,7 +12,7 @@ function ldraw_lib__10169p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS Bag, Bricklink 10169pb01, Brickowl 222782, Collectible Minifigures
+// 0 !KEYWORDS Bag, Bricklink 10169pb01, Collectible Minifigures
 // 0 !KEYWORDS DC Comics Super Heroes, dollar, Rebrickable 10169pr0001, Set 71026
 // 
 // 0 !HISTORY 2024-08-26 [OrionP] Official Update 2024-07

@@ -16,7 +16,8 @@ function ldraw_lib__3068bp0h() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS BrickLink 3068bpx28, Construction, Highway, Set 6600
+// 0 !KEYWORDS BrickLink 3068px28, Construction, Highway, Rebrickable 3068bpr9952
+// 0 !KEYWORDS Set 6600
 // 
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04
 // 

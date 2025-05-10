@@ -13,7 +13,8 @@ function ldraw_lib__76384() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS bar, plant vine, rope, swinging vine
+// 0 !KEYWORDS bar, BrickLink x127c10pb01, plant vine, Rebrickable 14226c11, rope
+// 0 !KEYWORDS swinging vine
 // 
 // 0 !HISTORY 2005-12-28 [PTadmin] Official Update 2005-01
 // 0 !HISTORY 2007-10-12 [PTadmin] Header formatted for Contributor Agreement

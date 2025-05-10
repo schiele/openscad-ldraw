@@ -16,7 +16,8 @@ function ldraw_lib__25971p02() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Chicken, Skater, Suit
+// 0 !KEYWORDS BrickLink 25971pb02, Chicken, Rebrickable 25971pr0001, Set 853958
+// 0 !KEYWORDS Skater, Suit
 // 
 // 0 !HISTORY 2016-10-05 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2019-05-19 [Philo] File preparation for LDraw Parts Tracker

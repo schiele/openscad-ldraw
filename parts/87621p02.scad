@@ -14,6 +14,8 @@ function ldraw_lib__87621p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 87621pb02, Rebrickable 87621pr0003, Set 70813
+// 
 // 0 !HISTORY 2014-12-23 [PTadmin] Official Update 2014-02
 // 
 // 

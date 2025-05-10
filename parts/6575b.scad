@@ -16,6 +16,8 @@ function ldraw_lib__6575b() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 6575, Rebrickable 6575
+// 
 // 0 !HISTORY 2022-12-20 [PTadmin] Official Update 2022-06
 // 
 // 

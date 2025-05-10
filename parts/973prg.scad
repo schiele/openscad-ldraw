@@ -12,7 +12,7 @@ function ldraw_lib__973prg() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Star Wars, Yoda
+// 0 !KEYWORDS set 4502, Star Wars, Yoda
 // 
 // 0 !HISTORY 2013-07-21 [PTadmin] Official Update 2013-01
 // 

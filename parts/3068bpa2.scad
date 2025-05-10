@@ -11,7 +11,7 @@ function ldraw_lib__3068bpa2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3068px1, rock raiders
+// 0 !KEYWORDS Bricklink 3068px1, Rebrickable 3068bpr0352, rock raiders, Set 4920
 // 
 // 0 !HISTORY 2019-12-27 [PTadmin] Official Update 2019-03
 // 

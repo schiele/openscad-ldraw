@@ -11,8 +11,8 @@ function ldraw_lib__3068bpz4() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickheadz, Bricklink 3068bpb1168, Creeper, Minecraft, Mouth
-// 0 !KEYWORDS Set 41612
+// 0 !KEYWORDS Brickheadz, BrickLink 3068pb1168, Creeper, Minecraft, Mouth
+// 0 !KEYWORDS Rebrickable 3068bpr0379, Set 41612
 // 
 // 0 !HISTORY 2020-06-28 [PTadmin] Official Update 2020-01
 // 

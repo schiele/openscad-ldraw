@@ -11,7 +11,8 @@ function ldraw_lib__2431pzt() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Ahsoka Tano, Brickheadz, Bricklink 2431pb753, Set 40539, Star Wars
+// 0 !KEYWORDS Ahsoka Tano, Brickheadz, Bricklink 2431pb753, Rebrickable 2431pr9995
+// 0 !KEYWORDS Set 40539, Star Wars
 // 
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04
 // 

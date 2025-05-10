@@ -14,7 +14,7 @@ function ldraw_lib__3070bpuc() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !KEYWORDS A Ring
+// 0 !KEYWORDS A Ring, BrickLink 3070pb035, Rebrickable 3070bpr0132, Set 4677
 // 
 // 0 !HISTORY 2009-05-02 [PTadmin] Official Update 2009-01
 // 0 !HISTORY 2013-03-09 [MagFors] Changed colour 383 to 80 (printed silver)

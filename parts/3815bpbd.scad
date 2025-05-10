@@ -13,7 +13,7 @@ function ldraw_lib__3815bpbd() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Colonel James Rhodes, Iron Man, Rhodey
+// 0 !KEYWORDS Colonel James Rhodes, Iron Man, Rhodey, set 76006
 // 
 // 0 !HISTORY 2013-12-23 [MagFors] Original pattern design
 // 0 !HISTORY 2020-05-30 [cwdee] Adapted to corrected geometry

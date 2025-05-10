@@ -15,7 +15,7 @@ function ldraw_lib__3626bp08() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626bpx83, Princess Leia, Rebrickable 3626bpr0378
+// 0 !KEYWORDS BrickLink 3626px83, Princess Leia, Rebrickable 3626bpr0378
 // 0 !KEYWORDS set 10123, Set 10179, Set 10188, Star Wars
 // 
 // 0 !HISTORY 2012-04-04 [TK-949] Complete rewrite

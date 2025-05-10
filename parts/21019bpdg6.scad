@@ -17,7 +17,8 @@ function ldraw_lib__21019bpdg6() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 970c00pb1367, CMF, Miss Piggy, set 71033, The Muppets
+// 0 !KEYWORDS Bricklink 970c00pb1367, CMF, Miss Piggy
+// 0 !KEYWORDS Rebrickable 970c43pat02pr0003, set 71033, The Muppets
 // 
 // 0 !HISTORY 2024-10-27 [OrionP] Official Update 2024-09
 // 

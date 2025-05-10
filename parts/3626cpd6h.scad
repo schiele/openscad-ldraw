@@ -14,8 +14,8 @@ function ldraw_lib__3626cpd6h() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626cpb1721, Lego Batman Movie, March Harriet
-// 0 !KEYWORDS Rabbit Costume
+// 0 !KEYWORDS BrickLink 3626pb1721, Lego Batman Movie, March Harriet
+// 0 !KEYWORDS Rabbit Costume, Rebrickable 3626cpr9992, Set 71017-17
 // 
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
 // 0 !HISTORY 2020-05-10 [cwdee] Update colour name in description

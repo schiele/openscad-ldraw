@@ -13,6 +13,8 @@ function ldraw_lib__3040p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS Rebrickable 3040bpr0008, Set 2885
+// 
 // 0 !HISTORY 2009-09-03 [PTadmin] Official Update 2009-02
 // 
 // 

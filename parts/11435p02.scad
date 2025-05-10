@@ -16,6 +16,8 @@ function ldraw_lib__11435p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS set 79017
+// 
 // 0 !HISTORY 2022-09-15 [PTadmin] Official Update 2022-05
 // 
 // 

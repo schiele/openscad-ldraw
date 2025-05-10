@@ -14,9 +14,9 @@ function ldraw_lib__76382pa3() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Adventurers, amazon, belt, Bricklink 973pb0391c01, BrickOwl 971568
-// 0 !KEYWORDS desert, Dino Island, Egypt, hero, Joe Freeman, Johnny Thunder
-// 0 !KEYWORDS Jungle, Jurassic Park, Mini Upper Part No 279, open collar
+// 0 !KEYWORDS Adventurers, amazon, belt, Bricklink 973pb0391c01, desert
+// 0 !KEYWORDS Dino Island, Egypt, hero, Joe Freeman, Johnny Thunder, Jungle
+// 0 !KEYWORDS Jurassic Park, Mini Upper Part No 279, open collar
 // 0 !KEYWORDS Orient Expedition, Pistol, pockets, Rebrickable 973c26h01pr0391
 // 0 !KEYWORDS revolver, Sam Grant, Set 1355, Set 1370, Set 5900, Set 5918
 // 0 !KEYWORDS set 5919, Set 5934, Set 5938, Set 5956, set 5958, set 5975, set 5976

@@ -18,7 +18,8 @@ function ldraw_lib__14734p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Elves, Enki, Friends, Set 241501, Set 41075
+// 0 !KEYWORDS BrickLink 14734pb02, Elves, Enki, Friends, Rebrickable 14734pr0002
+// 0 !KEYWORDS Set 241501, Set 41075
 // 
 // 0 !HISTORY 2014-05-16 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2017-03-14 [Philo] File preparation for LDraw Parts Tracker

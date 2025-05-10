@@ -19,7 +19,7 @@ function ldraw_lib__54872p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS SquarePants
+// 0 !KEYWORDS Bricklink 54872pb01, Rebrickable 54872pr0001, Set 3825, SquarePants
 // 
 // 0 !HISTORY 2011-01-18 [tchang] Remove T-junctions on vertical front and rear part
 // 0 !HISTORY 2011-03-12 [tchang] Replace Rear face by subpart, change "Font" to "Front".

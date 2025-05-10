@@ -19,9 +19,10 @@ function ldraw_lib__u768p01c01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Sheet Fabric
-// 0 !KEYWORDS Enchanted Island, Imperial Trading Post, King Kahuka's Throne
-// 0 !KEYWORDS Lagoon Lock-Up, Rock Island Refuge, set 6262, set 6267, set 6273
-// 0 !KEYWORDS set 6277, set 6278, set 6292
+// 0 !KEYWORDS BrickLink sailbb24, Enchanted Island, Imperial Trading Post
+// 0 !KEYWORDS King Kahuka's Throne, Lagoon Lock-Up, Rebrickable 70966pr0001
+// 0 !KEYWORDS Rock Island Refuge, set 6262, set 6267, set 6273, set 6277, set 6278
+// 0 !KEYWORDS set 6292
 // 
 // 0 !HISTORY 2024-06-30 [OrionP] Official Update 2024-05
 // 

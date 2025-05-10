@@ -11,8 +11,8 @@ function ldraw_lib__3660bp02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS boat, Bricklink 3660pb002, Color Line, ferry, P&O Stena, set 1054
-// 0 !KEYWORDS Viking Line, windows
+// 0 !KEYWORDS boat, Bricklink 3660pb002, Color Line, ferry, P&O Stena
+// 0 !KEYWORDS Rebrickable 3660pr0002, set 1054, Viking Line, windows
 // 
 // 0 !HISTORY 2010-07-05 [PTadmin] Official Update 2010-02
 // 0 !HISTORY 2020-03-14 [MagFors] Used b-version subfile

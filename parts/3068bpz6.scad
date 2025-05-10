@@ -12,8 +12,8 @@ function ldraw_lib__3068bpz6() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Avengers, Brickheadz, BrickLink 3068bpb1149, Face Mask, Infinity War
-// 0 !KEYWORDS Set 41606, Star-Lord
+// 0 !KEYWORDS Avengers, Brickheadz, BrickLink 3068pb1149, Face Mask, Infinity War
+// 0 !KEYWORDS Rebrickable 3068bpr0371, Set 41606, Star-Lord
 // 
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04
 // 

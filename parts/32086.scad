@@ -11,7 +11,7 @@ function ldraw_lib__32086() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS boat, canopy, city center, junior, space port, Train
+// 0 !KEYWORDS boat, BrickLink 551, canopy, city center, junior, space port, Train
 // 
 // 0 !HISTORY 1999-05-24 [PTadmin] Official Update 1999-04
 // 0 !HISTORY 2007-07-09 [PTadmin] Header formatted for Contributor Agreement

@@ -13,7 +13,7 @@ function ldraw_lib__6135b() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Technic Horn
+// 0 !KEYWORDS BrickLink 2536d, Rebrickable 6135, Technic Horn
 // 
 // 0 !HISTORY 2003-03-12 [PTadmin] Official Update 2003-01
 // 0 !HISTORY 2004-08-06 [guyvivan] Made BFC Compliant

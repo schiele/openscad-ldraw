@@ -11,7 +11,7 @@ function ldraw_lib__4162p19() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Architecture, Set 21034
+// 0 !KEYWORDS Architecture, BrickLink 4162pb167, Rebrickable 4162pr0050, Set 21034
 // 
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
 // 

@@ -19,6 +19,8 @@ function ldraw_lib__4150pf0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
+// 0 !KEYWORDS BrickLink 4150pb030, Rebrickable 4150pr0025, set 4306
+// 
 // 0 !HISTORY 2003-07-28 [Steffen] made use of s\4150s01.dat, reworked pattern with ring primitives
 // 0 !HISTORY 2004-04-22 [PTadmin] Official Update 2004-02
 // 0 !HISTORY 2007-07-01 [PTadmin] Header formatted for Contributor Agreement

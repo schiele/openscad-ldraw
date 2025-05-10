@@ -13,7 +13,8 @@ function ldraw_lib__3070bpf6() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Jewelry, Scala
+// 0 !KEYWORDS BrickLink 3070pb048, Jewelry, Rebrickable 3070bpr0038, Scala
+// 0 !KEYWORDS set 4307
 // 
 // 0 !HISTORY 2014-12-23 [PTadmin] Official Update 2014-02
 // 

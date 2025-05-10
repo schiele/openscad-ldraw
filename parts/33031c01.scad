@@ -12,7 +12,7 @@ function ldraw_lib__33031c01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Belville, Scala
+// 0 !KEYWORDS Belville, BrickLink 33031, Rebrickable 33031, Scala
 // 
 // 0 !HISTORY 2015-12-30 [PTadmin] Official Update 2015-02
 // 

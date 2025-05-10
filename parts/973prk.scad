@@ -16,7 +16,7 @@ function ldraw_lib__973prk() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS Armor, blast armor, Empire, expanded universe, Imperial, Military
-// 0 !KEYWORDS soldier, Star Wars
+// 0 !KEYWORDS Set 7667, soldier, Star Wars
 // 
 // 0 !CMDLINE -c0
 // 

@@ -15,6 +15,7 @@ function ldraw_lib__41815c01_f1() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Technic
+// 0 !KEYWORDS BrickLink 41815c02, Rebrickable 41821
 // 
 // 0 !HISTORY 2023-08-25 [OrionP] Official Update 2023-04
 // 

@@ -14,12 +14,12 @@ function ldraw_lib__76382ph1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973px146c01, BrickOwl 445109, Ginny Weasley, Harry Potter
-// 0 !KEYWORDS hermione granger, Hogwarts, Lion, Mini Upper Part No 520
-// 0 !KEYWORDS Mini Upper Part No 522, Mini Upper Part No 523
-// 0 !KEYWORDS Rebrickable 973c17h01pr0146, Red and Gold, Ron Weasley, Set 4702
-// 0 !KEYWORDS set 4704, set 4705, Set 4706, set 4709, Set 4711, Set 4712, Set 4721
-// 0 !KEYWORDS set 4729, set 4730, set 4733, Wizarding World
+// 0 !KEYWORDS Bricklink 973px146c01, Ginny Weasley, Harry Potter, hermione granger
+// 0 !KEYWORDS Hogwarts, Lion, Mini Upper Part No 520, Mini Upper Part No 522
+// 0 !KEYWORDS Mini Upper Part No 523, Rebrickable 973c17h01pr0146, Red and Gold
+// 0 !KEYWORDS Ron Weasley, Set 4702, set 4704, set 4705, Set 4706, set 4709
+// 0 !KEYWORDS Set 4711, Set 4712, Set 4721, set 4729, set 4730, set 4733
+// 0 !KEYWORDS Wizarding World
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

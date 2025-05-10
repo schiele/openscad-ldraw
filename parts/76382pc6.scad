@@ -14,9 +14,9 @@ function ldraw_lib__76382pc6() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb4672c01, BrickOwl 964090, James Howlett, Logan
-// 0 !KEYWORDS Marvel, Mini Upper Part No 5926, Rebrickable 973c02h28pr5926
-// 0 !KEYWORDS Set 76202, Wolverine, Wolverine Mech Armor
+// 0 !KEYWORDS Bricklink 973pb4672c01, James Howlett, Logan, Marvel
+// 0 !KEYWORDS Mini Upper Part No 5926, Rebrickable 973c02h28pr5926, Set 76202
+// 0 !KEYWORDS Wolverine, Wolverine Mech Armor
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

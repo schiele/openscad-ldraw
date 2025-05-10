@@ -12,6 +12,8 @@ function ldraw_lib__30178c02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink x39c02, Rebrickable 76041c02
+// 
 // 0 !HISTORY 2018-01-10 [bercik] trans black version based on 30178c01
 // 0 !HISTORY 2019-12-27 [PTadmin] Official Update 2019-03
 // 0 !HISTORY 2024-05-29 [MagFors] Update description

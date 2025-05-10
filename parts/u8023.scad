@@ -20,7 +20,7 @@ function ldraw_lib__u8023() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Window
-// 0 !KEYWORDS Automatic Binding Brick
+// 0 !KEYWORDS Automatic Binding Brick, BrickLink 646c, Rebrickable 646c
 // 
 // 0 !HISTORY 2019-09-09 [PTadmin] Official Update 2019-02
 // 0 !HISTORY 2021-05-18 [Plastikean] Subfiled tabs in a more accurate shape

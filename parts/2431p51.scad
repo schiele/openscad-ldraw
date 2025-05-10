@@ -11,7 +11,7 @@ function ldraw_lib__2431p51() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS grooves
+// 0 !KEYWORDS grooves, Rebrickable 2431pr0019, Set 6345
 // 
 // 0 !HISTORY 1997-09-29 [PTadmin] Official Update 1997-15
 // 0 !HISTORY 2002-08-15 [sbliss] added groove; applied BFC

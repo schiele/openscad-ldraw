@@ -14,7 +14,7 @@ function ldraw_lib__3626bpar() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Atlantis, Bricklink 3626bpb0451, Brickowl 727547, emperor, Portal
+// 0 !KEYWORDS Atlantis, BrickLink 3626pb0451, emperor, Portal
 // 0 !KEYWORDS Rebrickable 3626bpr0678, set 8078
 // 
 // 0 !CMDLINE -c378

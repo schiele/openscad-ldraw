@@ -16,7 +16,8 @@ function ldraw_lib__4066bp1j() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Brick
-// 0 !KEYWORDS Barbecue, bricklink 4066pb015, Bucket, Set 2552
+// 0 !KEYWORDS Barbecue, bricklink 4066pb015, Bucket, Rebrickable 4066pr0024
+// 0 !KEYWORDS Set 2552
 // 
 // 0 !HISTORY 2020-09-21 [RainbowDolphin] Branched from 4066bp10 for different colour
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03

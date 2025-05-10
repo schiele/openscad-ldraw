@@ -13,8 +13,8 @@ function ldraw_lib__18603c02p0d() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 18605c01pb07, Brickowl 314315, Dimensions, Doctor Who
-// 0 !KEYWORDS Electronic, NFC, Rebrickable 19981pr0007, Set 71204, Tardis, Toy Tag
+// 0 !KEYWORDS Bricklink 18605c01pb07, Dimensions, Doctor Who, Electronic, NFC
+// 0 !KEYWORDS Rebrickable 19981pr0007, Set 71204, Tardis, Toy Tag
 // 
 // 0 !HISTORY 2024-12-30 [OrionP] Official Update 2024-11
 // 

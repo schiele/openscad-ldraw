@@ -11,6 +11,8 @@ function ldraw_lib__3240c() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
+// 0 !KEYWORDS BrickLink 3242e, Rebrickable 3242e
+// 
 // 0 !CMDLINE -c7
 // 
 // 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01

@@ -14,9 +14,9 @@ function ldraw_lib__76382psl() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb0068c01, BrickOwl 423821, Epsiode I
-// 0 !KEYWORDS Gungan Grand Army, Gungan Patrol, Naboo, Rebrickable 973c26h26pr0068
-// 0 !KEYWORDS Roos Tarpals, Set 7115, Star Wars, The Phantom Menace
+// 0 !KEYWORDS Bricklink 973pb0068c01, Epsiode I, Gungan Grand Army, Gungan Patrol
+// 0 !KEYWORDS Naboo, Rebrickable 973c26h26pr0068, Roos Tarpals, Set 7115
+// 0 !KEYWORDS Star Wars, The Phantom Menace
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

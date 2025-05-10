@@ -15,7 +15,8 @@ function ldraw_lib__19203p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Farran Leafshade, Johnny Baker
+// 0 !KEYWORDS BrickLink 19203pb01, Farran Leafshade, Johnny Baker
+// 0 !KEYWORDS Rebrickable 19203pr0001, Set 41075
 // 
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
 // 0 !HISTORY 2020-05-10 [cwdee] Update colour name in description

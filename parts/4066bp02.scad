@@ -12,7 +12,8 @@ function ldraw_lib__4066bp02() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Brick
-// 0 !KEYWORDS BrickLink 4066pb050, Farm, Grocery, set 2399, set 2426, set 2623
+// 0 !KEYWORDS BrickLink 4066pb050, Farm, Grocery, Rebrickable 4066pr0052, set 2399
+// 0 !KEYWORDS set 2426, set 2623
 // 
 // 0 !HISTORY 2020-06-28 [PTadmin] Official Update 2020-01
 // 

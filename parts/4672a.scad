@@ -16,6 +16,7 @@ function ldraw_lib__4672a() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Plate
+// 0 !KEYWORDS BrickLink 4672, Rebrickable 4672
 // 
 // 0 !HISTORY 2002-04-25 [PTadmin] Official Update 2002-02
 // 0 !HISTORY 2007-07-08 [PTadmin] Header formatted for Contributor Agreement

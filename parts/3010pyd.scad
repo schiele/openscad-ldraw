@@ -16,7 +16,7 @@ function ldraw_lib__3010pyd() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickheadz, Bricklink 3010pb344, Brickowl 379121, Disney, Pixar
+// 0 !KEYWORDS Brickheadz, Bricklink 3010pb344, Disney, Pixar
 // 0 !KEYWORDS Rebrickable 3010pr0086, set 40619
 // 
 // 0 !HISTORY 2024-06-30 [OrionP] Official Update 2024-05

@@ -19,6 +19,8 @@ function ldraw_lib__3957a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 3957
+// 
 // 0 !HISTORY 1998-06-20 [PTadmin] Official Update 1998-06
 // 0 !HISTORY 2003-08-01 [PTadmin] Official Update 2003-02
 // 0 !HISTORY 2003-08-06 [jriley] BFCed, added inner detail

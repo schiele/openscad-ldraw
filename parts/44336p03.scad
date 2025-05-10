@@ -12,6 +12,8 @@ function ldraw_lib__44336p03() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
+// 0 !KEYWORDS BrickLink 44336pb03, Rebrickable 44336pr0003, set 10159
+// 
 // 0 !HISTORY 2010-04-09 [mikeheide] Moved portions from subfile
 // 0 !HISTORY 2010-07-05 [PTadmin] Official Update 2010-02
 // 

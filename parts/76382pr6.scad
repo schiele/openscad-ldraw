@@ -14,9 +14,9 @@ function ldraw_lib__76382pr6() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973px59c01, BrickOwl 264509, Epsiode I, Gungan
-// 0 !KEYWORDS Jar Jar Binks, Naboo, Rebrickable 973c26h26pr0059, Set 7115
-// 0 !KEYWORDS Set 7121, set 7159, Set 7161, Set 7171, Star Wars
+// 0 !KEYWORDS Bricklink 973px59c01, Epsiode I, Gungan, Jar Jar Binks, Naboo
+// 0 !KEYWORDS Rebrickable 973c26h26pr0059, Set 7115, Set 7121, set 7159, Set 7161
+// 0 !KEYWORDS Set 7171, Star Wars
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

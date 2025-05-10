@@ -13,7 +13,8 @@ function ldraw_lib__24246pt0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS adventure, Bricklink 24246pb012, Dots, Set 41918
+// 0 !KEYWORDS adventure, Bricklink 24246pb012, Dots, Rebrickable 24246pr0010
+// 0 !KEYWORDS Set 41918
 // 
 // 0 !HISTORY 2023-10-31 [OrionP] Official Update 2023-05
 // 

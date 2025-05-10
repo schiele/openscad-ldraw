@@ -14,9 +14,9 @@ function ldraw_lib__76382psw() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS bounty hunter, Bricklink 973pb0707c01, Brickowl 446940, Cad Bane
-// 0 !KEYWORDS Duros, Mini Upper Part No 1639, Rebrickable 973c07h12pr1639
-// 0 !KEYWORDS set 8098, set 8128, Star Wars, The Clone Wars
+// 0 !KEYWORDS bounty hunter, Bricklink 973pb0707c01, Cad Bane, Duros
+// 0 !KEYWORDS Mini Upper Part No 1639, Rebrickable 973c07h12pr1639, set 8098
+// 0 !KEYWORDS set 8128, Star Wars, The Clone Wars
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

@@ -20,6 +20,7 @@ function ldraw_lib__71861() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Belville
+// 0 !KEYWORDS BrickLink 23293
 // 
 // 0 !HISTORY 2012-11-09 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2012-11-15 [MMR1988] File preparation for LDraw Parts Tracker

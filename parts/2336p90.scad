@@ -1,15 +1,17 @@
 use <../lib.scad>
 use <s/2336s01.scad>
 function ldraw_lib__2336p90() = [
-// 0 Wedge  2 x  3 with Brick  2 x  4 with Classic Space Logo Pattern
+// 0 Wedge  2 x  3 with Brick  2 x  4 Side Studs and Plate  2 x  2 with Classic Space Logo Pattern
 // 0 Name: 2336p90.dat
 // 0 Author: Chris Dee [cwdee]
-// 0 !LDRAW_ORG Part UPDATE 2014-01
+// 0 !LDRAW_ORG Part UPDATE 2025-04
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
+// 
+// 0 !KEYWORDS Rebrickable 2336pr0004, Set 6827, set 6849
 // 
 // 0 !HISTORY 2000-05-07 [PTadmin] Official Update 2000-01
 // 0 !HISTORY 2007-05-04 [PTadmin] Header formatted for Contributor Agreement
@@ -18,7 +20,8 @@ function ldraw_lib__2336p90() = [
 // 0 !HISTORY 2013-08-10 [Steffen] changed gold color to 82
 // 0 !HISTORY 2013-12-16 [MagFors] Reworked pattern
 // 0 !HISTORY 2014-06-21 [PTadmin] Official Update 2014-01
-// 
+// 0 !HISTORY 2025-04-21 [MagFors] Update description, added keywords
+// 0 !HISTORY 2025-04-27 [OrionP] Official Update 2025-04
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2336s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2336s01()],

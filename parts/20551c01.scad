@@ -13,7 +13,7 @@ function ldraw_lib__20551c01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Sheet Fabric
-// 0 !KEYWORDS Cloak, Neckwear
+// 0 !KEYWORDS BrickLink 109641, Cloak, Neckwear, Rebrickable 20551
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 

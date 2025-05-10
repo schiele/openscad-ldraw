@@ -17,7 +17,8 @@ function ldraw_lib__50231p01c01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Neckwear
-// 0 !KEYWORDS 522, Cloak, Drape, Neckwear, Poncho, Shawl
+// 0 !KEYWORDS 522, BrickLink 522pb005, Cloak, Drape, Neckwear, Poncho
+// 0 !KEYWORDS Rebrickable 50231pr0009, Shawl
 // 
 // 0 !HISTORY 2014-12-04 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2014-12-04 [Philo] File preparation for LDraw Parts Tracker

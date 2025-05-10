@@ -11,7 +11,8 @@ function ldraw_lib__87079pxf() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Arcade Cabinet, Bricklink 87079pb0288, Dimensions, Midway, set 71235
+// 0 !KEYWORDS Arcade Cabinet, Bricklink 87079pb0288, Dimensions, Midway
+// 0 !KEYWORDS Rebrickable 87079pr0084, set 71235
 // 
 // 0 !HISTORY 2022-03-06 [PTadmin] Official Update 2022-02
 // 

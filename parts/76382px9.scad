@@ -14,8 +14,8 @@ function ldraw_lib__76382px9() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Back To The Future, Bricklink 973pb1477c01, Brickowl 983455, BTTF
-// 0 !KEYWORDS Marty McFly, Rebrickable 973c28h02pr2463, Set 21103, Set 71201
+// 0 !KEYWORDS Back To The Future, Bricklink 973pb1477c01, BTTF, Marty McFly
+// 0 !KEYWORDS Rebrickable 973c28h02pr2463, Set 21103, Set 71201
 // 
 // 0 !HISTORY 2024-12-01 [OrionP] Official Update 2024-10
 // 

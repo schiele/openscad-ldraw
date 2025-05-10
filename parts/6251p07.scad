@@ -13,7 +13,8 @@ function ldraw_lib__6251p07() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !KEYWORDS Belville, creature, mousetrap, pet, set 10173, set 10185, set 7600
+// 0 !KEYWORDS Belville, Bricklink 6251px1, creature, mousetrap, pet
+// 0 !KEYWORDS Rebrickable 6251pr0002, set 10173, set 10185, set 7600
 // 
 // 0 !HISTORY 2022-12-20 [PTadmin] Official Update 2022-06
 // 

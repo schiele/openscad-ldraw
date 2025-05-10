@@ -14,8 +14,8 @@ function ldraw_lib__3626cph3() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626cpb1694, Brickowl 87074, Newt Scamander
-// 0 !KEYWORDS Rebrickable 3626cpr2044, Set 71253
+// 0 !KEYWORDS BrickLink 3626pb1694, Newt Scamander, Rebrickable 3626cpr2044
+// 0 !KEYWORDS Set 71253
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

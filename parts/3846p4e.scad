@@ -14,6 +14,7 @@ function ldraw_lib__3846p4e() = [
 // 
 // 0 !CATEGORY Minifig Accessory
 // 0 !KEYWORDS BrickLink 3846px5, Castle, King Richard, Rebrickable 3846pr0022
+// 0 !KEYWORDS Set 10066
 // 
 // 0 !HISTORY 2004-11-06 [PTadmin] Official Update 2004-04
 // 0 !HISTORY 2007-06-30 [PTadmin] Header formatted for Contributor Agreement

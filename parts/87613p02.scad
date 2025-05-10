@@ -20,7 +20,8 @@ function ldraw_lib__87613p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 87613pb005, set 8638, Siddeley, Spy Jet
+// 0 !KEYWORDS Bricklink 87613pb005, Rebrickable 87613pr0002, set 8638, Siddeley
+// 0 !KEYWORDS Spy Jet
 // 
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04
 // 

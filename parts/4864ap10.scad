@@ -13,7 +13,8 @@ function ldraw_lib__4864ap10() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS BrickLink 4864apx10, Metroliner Club Car, racing stripes
-// 0 !KEYWORDS Rebrickable 4864apr0005, red, Train, white and blue stripes
+// 0 !KEYWORDS Rebrickable 4864apr0005, red, set 4547, Train
+// 0 !KEYWORDS white and blue stripes
 // 
 // 0 !PREVIEW 16 0 0 0 -1 0 0 0 1 0 0 0 -1
 // 

@@ -14,6 +14,7 @@ function ldraw_lib__31000p01() = [
   [0,"BFC","CW"],
 // 
 // 0 !CATEGORY Brick
+// 0 !KEYWORDS BrickLink 31000pb01, Rebrickable 31000pr0001, Set 1166
 // 
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
 // 

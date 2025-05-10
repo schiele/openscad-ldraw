@@ -19,7 +19,8 @@ function ldraw_lib__87610ps4() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Bricklink 87610pb05, Set 75022, Super Commando
+// 0 !KEYWORDS Bricklink 87610pb05, Rebrickable 87610pr0003, Set 75022
+// 0 !KEYWORDS Super Commando
 // 
 // 0 !CMDLINE -c148
 // 

@@ -12,7 +12,8 @@ function ldraw_lib__3010pzz() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Aquaman, Brickheadz, Bricklink 3010pb221, Justice League, Set 41600
+// 0 !KEYWORDS Aquaman, Brickheadz, Bricklink 3010pb221, Justice League
+// 0 !KEYWORDS Rebrickable 3010pr0019, Set 41600
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 

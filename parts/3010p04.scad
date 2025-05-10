@@ -11,6 +11,8 @@ function ldraw_lib__3010p04() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS Rebrickable 3010apr0004, Set 497
+// 
 // 0 !HISTORY 2007-06-06 [PTadmin] Header formatted for Contributor Agreement
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
 // 0 !HISTORY 2010-10-04 [tchang] Add BFC, use subpart, replace rect by quad

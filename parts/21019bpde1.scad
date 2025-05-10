@@ -17,7 +17,8 @@ function ldraw_lib__21019bpde1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 970c00pb1207, CMF, Lola Bunny, Looney Tunes, set 710310
+// 0 !KEYWORDS Bricklink 970c00pb1207, CMF, Lola Bunny, Looney Tunes
+// 0 !KEYWORDS Rebrickable 970c33pat43pr2044, set 710310
 // 
 // 0 !HISTORY 2024-08-26 [OrionP] Official Update 2024-07
 // 

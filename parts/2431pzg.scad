@@ -11,7 +11,8 @@ function ldraw_lib__2431pzg() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickheadz, BrickLink 2431pb511, Kylo Ren, Lightning, Set 41603
+// 0 !KEYWORDS Brickheadz, BrickLink 2431pb511, Kylo Ren, Lightning
+// 0 !KEYWORDS Rebrickable 2431pr0001, Set 41603
 // 
 // 0 !HISTORY 2019-12-27 [PTadmin] Official Update 2019-03
 // 0 !HISTORY 2020-05-10 [cwdee] Update colour name in description

@@ -12,6 +12,8 @@ function ldraw_lib__30237() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 30237a, Rebrickable 30237a
+// 
 // 0 !HISTORY 2001-11-30 [PTadmin] Official Update 2001-02
 // 0 !HISTORY 2007-06-07 [PTadmin] Header formatted for Contributor Agreement
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01

@@ -15,7 +15,7 @@ function ldraw_lib__3004pzc() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3004pb178, Leia Organa, Set 41628
+// 0 !KEYWORDS Bricklink 3004pb178, Leia Organa, Rebrickable 3004pr0042, Set 41628
 // 
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04
 // 

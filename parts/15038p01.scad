@@ -15,7 +15,7 @@ function ldraw_lib__15038p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Technic
+// 0 !KEYWORDS BrickLink 15038pb01, Rebrickable 15038pr0001, Set 41999, Technic
 // 
 // 0 !HISTORY 2014-02-09 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2014-02-09 [Philo] Complete rewrite for LDraw Parts Tracker

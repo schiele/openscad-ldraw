@@ -12,7 +12,8 @@ function ldraw_lib__18973p05() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS 917K, Pit Lane, Porsche, set 75876, Speed Champions
+// 0 !KEYWORDS 917K, BrickLink 18973pb05, Pit Lane, Porsche
+// 0 !KEYWORDS Rebrickable 18973pr0005, set 75876, Speed Champions
 // 
 // 0 !HISTORY 2023-10-31 [OrionP] Official Update 2023-05
 // 

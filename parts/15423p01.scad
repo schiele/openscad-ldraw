@@ -13,8 +13,8 @@ function ldraw_lib__15423p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Neckwear
-// 0 !KEYWORDS Bricklink 15423pb02, Jurassic world, Set 71205, Set 75915, Set 75917
-// 0 !KEYWORDS Set 75918, Set 75919
+// 0 !KEYWORDS Bricklink 15423pb02, Jurassic world, Rebrickable 15423pr0002
+// 0 !KEYWORDS Set 71205, Set 75915, Set 75917, Set 75918, Set 75919
 // 
 // 0 !HISTORY 2024-06-30 [OrionP] Official Update 2024-05
 // 

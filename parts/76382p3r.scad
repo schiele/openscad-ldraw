@@ -14,8 +14,8 @@ function ldraw_lib__76382p3r() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973p3rc01, BrickOwl 290527, Governor Broadside
-// 0 !KEYWORDS Rebrickable 973c28h01pr9999, set 6276, soldier
+// 0 !KEYWORDS Bricklink 973p3rc01, Governor Broadside, Rebrickable 973c28h01pr9999
+// 0 !KEYWORDS set 6276, soldier
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

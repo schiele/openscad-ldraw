@@ -14,8 +14,8 @@ function ldraw_lib__3626cpce8() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626cpb1409, monsters, Series 14, set 71010
-// 0 !KEYWORDS Zombie Cheerleader
+// 0 !KEYWORDS BrickLink 3626pb1409, monsters, Rebrickable 3626cpr1735, Series 14
+// 0 !KEYWORDS set 71010, Zombie Cheerleader
 // 
 // 0 !CMDLINE -c71
 // 

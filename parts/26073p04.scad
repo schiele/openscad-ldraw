@@ -15,6 +15,7 @@ function ldraw_lib__26073p04() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Neckwear
+// 0 !KEYWORDS BrickLink 26073pb01, Rebrickable 26073pr0001, Set 71013-6
 // 
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04
 // 

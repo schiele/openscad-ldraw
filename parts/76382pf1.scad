@@ -14,10 +14,10 @@ function ldraw_lib__76382pf1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb0438c01, BrickOwl 532203, Castle, Crown Knights
-// 0 !KEYWORDS Fantasy Era, Mini Upper Part No 1321, Rebrickable 973c05h01pr1321
-// 0 !KEYWORDS Set 7029, Set 7036, Set 7037, Set 7040, Set 7041, Set 7048, Set 7079
-// 0 !KEYWORDS Set 7090, Set 7094, set 7979
+// 0 !KEYWORDS Bricklink 973pb0438c01, Castle, Crown Knights, Fantasy Era
+// 0 !KEYWORDS Mini Upper Part No 1321, Rebrickable 973c05h01pr1321, Set 7029
+// 0 !KEYWORDS Set 7036, Set 7037, Set 7040, Set 7041, Set 7048, Set 7079, Set 7090
+// 0 !KEYWORDS Set 7094, set 7979
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

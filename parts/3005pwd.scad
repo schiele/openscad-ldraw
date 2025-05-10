@@ -13,7 +13,8 @@ function ldraw_lib__3005pwd() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !KEYWORDS A, Diaeresis, Trema, Umlaut
+// 0 !KEYWORDS A, BrickLink 3005ptAdiaerb, Diaeresis, Rebrickable 3005pr9962
+// 0 !KEYWORDS Set 988, Trema, Umlaut
 // 
 // 0 !HISTORY 2004-04-22 [PTadmin] Official Update 2004-02
 // 0 !HISTORY 2007-05-11 [PTadmin] Header formatted for Contributor Agreement

@@ -13,6 +13,8 @@ function ldraw_lib__76100c01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 32074c02, Rebrickable 32074c01
+// 
 // 0 !HISTORY 2012-08-09 [PTadmin] Official Update 2012-02
 // 0 !HISTORY 2018-02-03 [PTadmin] Renamed from 32074c01
 // 0 !HISTORY 2024-09-15 [GeraldLasser] Corrected spring position

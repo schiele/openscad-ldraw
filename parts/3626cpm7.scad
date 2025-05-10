@@ -13,7 +13,8 @@ function ldraw_lib__3626cpm7() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Aragorn, Lord of the Rings
+// 0 !KEYWORDS Aragorn, BrickLink 3626pb0727, Lord of the Rings
+// 0 !KEYWORDS Rebrickable 3626cpr0988, set 79007
 // 
 // 0 !CMDLINE -c78
 // 

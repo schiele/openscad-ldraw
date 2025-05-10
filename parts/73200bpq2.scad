@@ -17,8 +17,8 @@ function ldraw_lib__73200bpq2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Anubis Guard, Bricklink 970c00pb0082, Brickowl 288328
-// 0 !KEYWORDS Pharaoh's Quest, Rebrickable 970c03pr0196, Set 7327
+// 0 !KEYWORDS Anubis Guard, Bricklink 970c00pb0082, Pharaoh's Quest
+// 0 !KEYWORDS Rebrickable 970c03pr0196, Set 7327
 // 
 // 0 !HISTORY 2011-12-29 [Wesley] Original pattern design
 // 0 !HISTORY 2020-06-06 [MagFors] Adapted to corrected geometry

@@ -12,7 +12,7 @@ function ldraw_lib__973p96() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS blue ribbon bow, halter top, Halterneck, two pink flowers
+// 0 !KEYWORDS blue ribbon bow, halter top, Halterneck, Set 10224, two pink flowers
 // 
 // 0 !HISTORY 2018-12-08 [PTadmin] Official Update 2018-02
 // 

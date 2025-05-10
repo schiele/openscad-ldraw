@@ -16,7 +16,7 @@ function ldraw_lib__3961p20() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS BrickLink 3961px2, Round, Set 6409
+// 0 !KEYWORDS BrickLink 3961px2, Rebrickable 3961pr0012, Round, Set 6409
 // 
 // 0 !CMDLINE -c15
 // 

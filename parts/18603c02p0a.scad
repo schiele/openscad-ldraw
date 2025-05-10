@@ -13,8 +13,8 @@ function ldraw_lib__18603c02p0a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 18605c01pb09, Brickowl 733053, Dimensions, Electronic
-// 0 !KEYWORDS Homer, NFC, Rebrickable 19981pr0009, Set 71202, Simpsons, Toy Tag
+// 0 !KEYWORDS Bricklink 18605c01pb09, Dimensions, Electronic, Homer, NFC
+// 0 !KEYWORDS Rebrickable 19981pr0009, Set 71202, Simpsons, Toy Tag
 // 
 // 0 !HISTORY 2024-12-30 [OrionP] Official Update 2024-11
 // 

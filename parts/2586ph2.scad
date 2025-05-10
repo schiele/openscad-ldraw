@@ -19,7 +19,7 @@ function ldraw_lib__2586ph2() = [
 // 0 !CATEGORY Minifig Accessory
 // 0 !KEYWORDS Green and Silver, Harry Potter
 // 0 !KEYWORDS Hogwarts School of Witchcraft and Wizardry, Rebrickable 2586pr0019
-// 0 !KEYWORDS Salazar Slytherin, Slytherin House, Snake
+// 0 !KEYWORDS Salazar Slytherin, Set 4735, Slytherin House, Snake
 // 
 // 0 !CMDLINE -C0
 // 

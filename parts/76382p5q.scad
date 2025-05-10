@@ -14,9 +14,9 @@ function ldraw_lib__76382p5q() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb1210c01, BrickOwl 368823, bride, Haunted House
-// 0 !KEYWORDS Lord Vampyre, Monster Fighters, Rebrickable 973c10h27pr2124
-// 0 !KEYWORDS Set 10228, set 9468, Spooky, undead, vampire
+// 0 !KEYWORDS Bricklink 973pb1210c01, bride, Haunted House, Lord Vampyre
+// 0 !KEYWORDS Monster Fighters, Rebrickable 973c10h27pr2124, Set 10228, set 9468
+// 0 !KEYWORDS Spooky, undead, vampire
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

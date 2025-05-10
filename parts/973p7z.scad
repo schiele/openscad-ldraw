@@ -12,10 +12,10 @@ function ldraw_lib__973p7z() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb0333, City, Creator, Rebrickable 973c05h01pr1166
-// 0 !KEYWORDS set 10190, set 10222, set 10235, set 10244, Set 30349, Set 31012
-// 0 !KEYWORDS Set 3181, Set 4000012, Set 4513, Set 60050, Set 75874, Set 7636
-// 0 !KEYWORDS Set 7643, Set 7696, Set 7897, Set 9247
+// 0 !KEYWORDS Bricklink 973pb0333, City, Creator, set 10190, set 10222, set 10235
+// 0 !KEYWORDS set 10244, Set 30349, Set 31012, Set 3181, Set 4000012, Set 4513
+// 0 !KEYWORDS Set 60050, Set 75874, Set 7636, Set 7643, Set 7696, Set 7897
+// 0 !KEYWORDS Set 9247
 // 
 // 0 !HISTORY 2012-12-28 [PTadmin] Official Update 2012-03
 // 0 !HISTORY 2024-12-08 [RainbowDolphin] Total rewrite for CC-BY-4 with colour correction, original by Howard Lande [HowardLande]

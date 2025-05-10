@@ -12,7 +12,7 @@ function ldraw_lib__2431pzh() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS Boba Fett, Brickheadz, BrickLink 2431pb545, Helmet Eyeslit
-// 0 !KEYWORDS Set 41629
+// 0 !KEYWORDS Rebrickable 2431pr0135, Set 41629
 // 
 // 0 !HISTORY 2020-06-28 [PTadmin] Official Update 2020-01
 // 

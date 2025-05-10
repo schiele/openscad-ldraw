@@ -11,7 +11,8 @@ function ldraw_lib__47753pq3() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Pharaoh's Quest, Scorpion Head
+// 0 !KEYWORDS BrickLink 47753pb022, Pharaoh's Quest, Rebrickable 47753pr0002
+// 0 !KEYWORDS Scorpion Head, Set 7327
 // 
 // 0 !CMDLINE -c28
 // 

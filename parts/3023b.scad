@@ -11,6 +11,8 @@ function ldraw_lib__3023b() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 3023, Rebrickable 3023
+// 
 // 0 !HISTORY 2001-10-26 [PTadmin] Official Update 2001-01
 // 0 !HISTORY 2002-05-07 {unknown} BFC Certification
 // 0 !HISTORY 2002-06-11 [PTadmin] Official Update 2002-03

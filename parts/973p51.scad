@@ -16,6 +16,8 @@ function ldraw_lib__973p51() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS Set 1462
+// 
 // 0 !HISTORY 1999-04-16 [sbliss] Updated 973.dat to s\973s01.dat; added back surface
 // 0 !HISTORY 1999-04-19 [sbliss] Filled in plain areas on front
 // 0 !HISTORY 1999-05-17 [PTadmin] Official Update 1999-03

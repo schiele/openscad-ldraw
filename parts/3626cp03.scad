@@ -15,8 +15,8 @@ function ldraw_lib__3626cp03() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Benny, Bricklink 3626cpb2272, Lego Movie, Set 70821, Set 70834
-// 0 !KEYWORDS Set 70841
+// 0 !KEYWORDS Benny, BrickLink 3626pb2272, Lego Movie, Rebrickable 3626cpr9895
+// 0 !KEYWORDS Set 70821, Set 70834, Set 70841
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
 // 

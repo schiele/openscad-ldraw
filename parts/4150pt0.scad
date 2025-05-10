@@ -12,7 +12,7 @@ function ldraw_lib__4150pt0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 4150pb105, Drum, Friends, Set 3939
+// 0 !KEYWORDS Bricklink 4150pb105, Drum, Friends, Rebrickable 4150pr0010, Set 3939
 // 
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04
 // 

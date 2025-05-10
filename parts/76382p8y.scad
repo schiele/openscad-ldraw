@@ -14,8 +14,8 @@ function ldraw_lib__76382p8y() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb0089c01, BrickOwl 329337, Chupa Chups, City, Creator
-// 0 !KEYWORDS dacta, Island X-Treme Stunts, Lego Island, Lego Media, Lego Software
+// 0 !KEYWORDS Bricklink 973pb0089c01, Chupa Chups, City, Creator, dacta
+// 0 !KEYWORDS Island X-Treme Stunts, Lego Island, Lego Media, Lego Software
 // 0 !KEYWORDS Mini Upper Part No 1205, Mini Upper Part No 614
 // 0 !KEYWORDS Rebrickable 973c01h01pr0805, Set 10184, Set 10196, Set 3388
 // 0 !KEYWORDS Set 6167, Set 6194, Set 6733, Set 6734, Set 6735, Set 6736, Set 8401

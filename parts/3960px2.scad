@@ -13,7 +13,7 @@ function ldraw_lib__3960px2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3960pb048, set 21314, Tron
+// 0 !KEYWORDS BrickLink 35394pb004, Rebrickable 35394pr0001, set 21314, Tron
 // 
 // 0 !HISTORY 2019-12-27 [PTadmin] Official Update 2019-03
 // 

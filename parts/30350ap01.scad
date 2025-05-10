@@ -11,7 +11,8 @@ function ldraw_lib__30350ap01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Flag, mudflap
+// 0 !KEYWORDS BrickLink 30350apb001, Flag, mudflap, Rebrickable 30350apr0001
+// 0 !KEYWORDS set 6434
 // 
 // 0 !HISTORY 2003-07-05 [Steffen] re-worked part to make use of s\30350s01.dat, fixed part origin, polished part name, BFCed, removed bowtie quads
 // 0 !HISTORY 2004-11-06 [PTadmin] Official Update 2004-04

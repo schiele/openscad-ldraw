@@ -14,6 +14,8 @@ function ldraw_lib__30485ps0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 30485pb01, Rebrickable 30485pr0002, set 7190
+// 
 // 0 !HISTORY 2012-08-09 [PTadmin] Official Update 2012-02
 // 
 // 

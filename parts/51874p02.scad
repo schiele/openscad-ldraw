@@ -12,8 +12,8 @@ function ldraw_lib__51874p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 51874pb02, Brickowl 319261, Castle
-// 0 !KEYWORDS Rebrickable 51874pat0002, Set 7093, Set 7094
+// 0 !KEYWORDS Bricklink 51874pb02, Castle, Rebrickable 51874pat0002, Set 7093
+// 0 !KEYWORDS Set 7094
 // 
 // 0 !HISTORY 2023-10-31 [OrionP] Official Update 2023-05
 // 

@@ -17,8 +17,8 @@ function ldraw_lib__15864p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Bricklink 15864c01pb01, Brickowl 408657, Lord Business
-// 0 !KEYWORDS Rebrickable 15864pat0001, Set 70809, The LEGO Movie
+// 0 !KEYWORDS Bricklink 15864c01pb01, Lord Business, Rebrickable 15864pat0001
+// 0 !KEYWORDS Set 70809, The LEGO Movie
 // 
 // 0 !HISTORY 2014-05-16 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2022-03-26 [Sirio] File preparation for LDraw Parts Tracker

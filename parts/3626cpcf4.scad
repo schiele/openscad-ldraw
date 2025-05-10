@@ -17,7 +17,8 @@ function ldraw_lib__3626cpcf4() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Band Aid, Bricklink 3626cpb1492, Clumsy Guy, Injured, Series 15
+// 0 !KEYWORDS Band Aid, BrickLink 3626pb1492, Clumsy Guy, Injured
+// 0 !KEYWORDS Rebrickable 3626cpr1837, Series 15, Set 71011-4
 // 
 // 0 !CMDLINE -c14
 // 

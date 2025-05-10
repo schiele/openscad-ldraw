@@ -17,8 +17,8 @@ function ldraw_lib__21019bp04() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS barefoot, Bricklink 970c00pb0575, Brickowl 770879, feet
-// 0 !KEYWORDS Rebrickable 970c28pat01, set 10260, Set 60153, set 76059, shorts
+// 0 !KEYWORDS barefoot, Bricklink 970c00pb0575, feet, Rebrickable 970c06pat01
+// 0 !KEYWORDS set 10260, Set 60153, set 76059, shorts
 // 
 // 0 !HISTORY 2022-09-15 [MagFors] Original design
 // 0 !HISTORY 2023-06-05 [MagFors] Adapted to corrected geometry

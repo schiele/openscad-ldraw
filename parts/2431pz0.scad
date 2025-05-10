@@ -11,7 +11,8 @@ function ldraw_lib__2431pz0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS 2431pb457, Batman, Brickheadz, Set 41585
+// 0 !KEYWORDS 2431pb457, Batman, Brickheadz, BrickLink 2431pb457
+// 0 !KEYWORDS Rebrickable 2431pr0093, Set 41585
 // 
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
 // 

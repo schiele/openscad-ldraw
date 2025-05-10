@@ -11,7 +11,8 @@ function ldraw_lib__2431px0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS BrickLink 2431pb593, Friends, Lego Movie, Set 21319, Set 70848
+// 0 !KEYWORDS BrickLink 2431pb593, Friends, Lego Movie, Rebrickable 2431pr0142
+// 0 !KEYWORDS Set 21319, Set 70848
 // 
 // 0 !HISTORY 2019-12-27 [PTadmin] Official Update 2019-03
 // 

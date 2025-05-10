@@ -17,6 +17,8 @@ function ldraw_lib__4215bp70() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 4215bpx26, Rebrickable 4215bpr0005, set 6426
+// 
 // 0 !HISTORY 2013-11-20 [MagFors] Removed emphasis lines and overlapping areas
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
 // 

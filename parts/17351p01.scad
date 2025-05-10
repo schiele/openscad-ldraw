@@ -12,7 +12,8 @@ function ldraw_lib__17351p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS animal, Costume
+// 0 !KEYWORDS animal, BrickLink 17351pb01, Costume, Rebrickable 17351pr0001
+// 0 !KEYWORDS Set 71007-14
 // 
 // 0 !HISTORY 2014-10-16 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2019-02-06 [Philo] File preparation for LDraw Parts Tracker

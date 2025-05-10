@@ -14,7 +14,8 @@ function ldraw_lib__3068bpfd() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Amusement Park, Bricklink 3068pb33, Set 3681, Ticket
+// 0 !KEYWORDS Amusement Park, BrickLink 3068pb2433, Rebrickable 3068bpr9921
+// 0 !KEYWORDS Set 3681, Ticket
 // 
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
 // 0 !HISTORY 2022-01-15 [OrionP] Update description, add set keyword

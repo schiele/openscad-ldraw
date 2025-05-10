@@ -30,7 +30,8 @@ function ldraw_lib__4738b() = [
 // 
 // 0 !KEYWORDS Adventurers, baggage, Belville, buried treasure, Cargo, Castle
 // 0 !KEYWORDS doubloons, footlocker, hoard, Locker, loot, minifig accessory
-// 0 !KEYWORDS pieces of eight, Pirates, steamer trunk, Trunk, wealth
+// 0 !KEYWORDS pieces of eight, Pirates, Rebrickable 4738a, steamer trunk, Trunk
+// 0 !KEYWORDS wealth
 // 
 // 0 !HISTORY 2004-09-24 [cwdee] Created from "with Slots" version
 // 0 !HISTORY 2005-12-28 [PTadmin] Official Update 2005-01

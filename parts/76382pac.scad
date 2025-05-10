@@ -15,9 +15,9 @@ function ldraw_lib__76382pac() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS Achu, Adventurers, amazon, Aztec, belly button, Bricklink 973pacc01
-// 0 !KEYWORDS BrickOwl 973576, ceremonial, Cloak, Feathers, Inca, Jungle, Maya
-// 0 !KEYWORDS Mexico, Mini Upper Part No 314, Olmec, priest
-// 0 !KEYWORDS Rebrickable 973c01h22pr9999, ruler, Set 5906, set 5976, set 5986
+// 0 !KEYWORDS ceremonial, Cloak, Feathers, Inca, Jungle, Maya, Mexico
+// 0 !KEYWORDS Mini Upper Part No 314, Olmec, priest, Rebrickable 973c01h22pr9999
+// 0 !KEYWORDS ruler, Set 5906, set 5976, set 5986
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

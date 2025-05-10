@@ -11,7 +11,8 @@ function ldraw_lib__6636py0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS BrickLink 6636pb209, Set 76896, Speed Champions
+// 0 !KEYWORDS BrickLink 6636pb209, Rebrickable 6636pr0023, Set 76896
+// 0 !KEYWORDS Speed Champions
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
 // 

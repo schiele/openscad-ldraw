@@ -12,7 +12,8 @@ function ldraw_lib__973pq7() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Pharaoh's Quest, Professor Archibald Hale
+// 0 !KEYWORDS BrickLink 973pb0782, Pharaoh's Quest, Professor Archibald Hale
+// 0 !KEYWORDS Set 7327
 // 
 // 0 !CMDLINE -c28
 // 

@@ -23,8 +23,8 @@ function ldraw_lib__4150ps1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Episode One, Flash, Life on Mars, pod racer, podracer, Sebulba
-// 0 !KEYWORDS Star Wars, steam
+// 0 !KEYWORDS Episode One, Flash, Life on Mars, pod racer, podracer
+// 0 !KEYWORDS Rebrickable 4150pr0023, Sebulba, Set 7171, Star Wars, steam
 // 
 // 0 !CMDLINE -C7
 // 

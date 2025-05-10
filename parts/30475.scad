@@ -13,6 +13,7 @@ function ldraw_lib__30475() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
+// 0 !KEYWORDS BrickLink x161
 // 
 // 0 !HISTORY 2007-08-25 {LEGO Universe Team} Original part shape
 // 0 !HISTORY 2010-07-14 [mdublade] File preparation for LDraw Parts Tracker

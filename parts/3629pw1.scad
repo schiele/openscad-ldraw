@@ -12,8 +12,9 @@ function ldraw_lib__3629pw1() = [
   [0,"BFC","CW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS cowboy, general saber, minifig hat, stetson, ten-gallon hat, western
-// 0 !KEYWORDS wild west
+// 0 !KEYWORDS BrickLink 3629px1, cowboy, general saber, minifig hat
+// 0 !KEYWORDS Rebrickable 3629pr0001, Set 2855044, stetson, ten-gallon hat
+// 0 !KEYWORDS western, wild west
 // 
 // 0 !HISTORY 2010-12-31 [PTadmin] Official Update 2010-03
 // 0 !HISTORY 2012-12-24 [cwdee] Update category

@@ -13,7 +13,8 @@ function ldraw_lib__41747ps1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS curved, rounded, slope, Star Wars
+// 0 !KEYWORDS Bricklink 41747pb011, curved, Rebrickable 41747pr0011, rounded
+// 0 !KEYWORDS Set 4495, slope, Star Wars
 // 
 // 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02
 // 0 !HISTORY 2012-02-21 [Wesley] moved studs from modified subfile

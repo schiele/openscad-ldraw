@@ -12,8 +12,8 @@ function ldraw_lib__4066bp1p() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Brick
-// 0 !KEYWORDS bricklink 4066pb056, Home, house, Set 2792, Set 2794, Set 2795
-// 0 !KEYWORDS Set 2818, Set 9148, Set 9168, Set 9169, Set 9180
+// 0 !KEYWORDS bricklink 4066pb056, Home, house, Rebrickable 4066pr0123, Set 2792
+// 0 !KEYWORDS Set 2794, Set 2795, Set 2818, Set 9148, Set 9168, Set 9169, Set 9180
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
 // 

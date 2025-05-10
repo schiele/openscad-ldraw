@@ -12,6 +12,8 @@ function ldraw_lib__2793c01_f1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 2793c01, Rebrickable 2793c01
+// 
 // 0 !HISTORY 2009-12-10 [arezey] Compensated origin changes in composing parts
 // 0 !HISTORY 2010-04-05 [PTadmin] Official Update 2010-01
 // 0 !HISTORY 2016-08-21 [PTadmin] Renamed from 2793c01

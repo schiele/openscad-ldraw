@@ -25,7 +25,7 @@ function ldraw_lib__3069bp0r() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3069bpb1070, CMF, Collectible Minifigures
+// 0 !KEYWORDS BrickLink 3069pb1070, CMF, Collectible Minifigures
 // 0 !KEYWORDS Rebrickable 3069bpr0347, set 71033, The Muppets
 // 
 // 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives

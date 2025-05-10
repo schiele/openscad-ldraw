@@ -14,6 +14,8 @@ function ldraw_lib__3005pt0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
+// 0 !KEYWORDS Rebrickable 3005pr9992, Set 237
+// 
 // 0 !HISTORY 2003-06-08 [jriley] BFC compliant
 // 0 !HISTORY 2004-03-16 [westrate] added ring primitives
 // 0 !HISTORY 2004-09-15 [PTadmin] Official Update 2004-03

@@ -13,8 +13,8 @@ function ldraw_lib__3062bp01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3062bpb039, Pet food, Puppy, Set 3188, Set 3942, Set 41007
-// 0 !KEYWORDS Set 561407
+// 0 !KEYWORDS BrickLink 3062pb039, Pet food, Puppy, Rebrickable 3062bpr0003
+// 0 !KEYWORDS Set 3188, Set 3942, Set 41007, Set 561407
 // 
 // 0 !HISTORY 2022-03-06 [PTadmin] Official Update 2022-02
 // 

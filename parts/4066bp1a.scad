@@ -15,7 +15,8 @@ function ldraw_lib__4066bp1a() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Brick
-// 0 !KEYWORDS bricklink 4066pb481, Set 2452, Set 2459, Set 9157, Train
+// 0 !KEYWORDS bricklink 4066pb481, Rebrickable 4066pr0076, Set 2452, Set 2459
+// 0 !KEYWORDS Set 9157, Train
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 

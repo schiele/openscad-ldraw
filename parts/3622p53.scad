@@ -11,7 +11,8 @@ function ldraw_lib__3622p53() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Astro Kitty, Set 70816, Space, Spaceship, Unikitty
+// 0 !KEYWORDS Astro Kitty, BrickLink 3622pb053, Rebrickable 3622pr0005, Set 70816
+// 0 !KEYWORDS Space, Spaceship, Unikitty
 // 
 // 0 !CMDLINE -c1
 // 

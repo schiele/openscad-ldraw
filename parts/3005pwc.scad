@@ -14,7 +14,7 @@ function ldraw_lib__3005pwc() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !KEYWORDS A
+// 0 !KEYWORDS A, BrickLink 3005ptAringb, Rebrickable 3005pr9969, Set 988
 // 
 // 0 !HISTORY 2004-04-22 [PTadmin] Official Update 2004-02
 // 0 !HISTORY 2007-05-11 [PTadmin] Header formatted for Contributor Agreement

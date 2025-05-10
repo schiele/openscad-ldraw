@@ -14,7 +14,7 @@ function ldraw_lib__76382p5f() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb5259c01, BrickOwl 764373, City, diver, Exploration
+// 0 !KEYWORDS Bricklink 973pb5259c01, City, diver, Exploration
 // 0 !KEYWORDS Rebrickable 973c42h01pr6594, scuba, Set 60377, Set 60379, Wetsuit
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01

@@ -15,6 +15,7 @@ function ldraw_lib__87998p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
+// 0 !KEYWORDS BrickLink 87998pb01, Rebrickable 87998pr0001, Set 7595
 // 
 // 0 !HISTORY 2011-07-25 [PTadmin] Official Update 2011-01
 // 0 !HISTORY 2012-12-24 [cwdee] Update category

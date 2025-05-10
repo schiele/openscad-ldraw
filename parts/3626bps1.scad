@@ -15,8 +15,8 @@ function ldraw_lib__3626bps1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626px34, Brickowl 580967, Emperor Palpatine
-// 0 !KEYWORDS Rebrickable 3626bpr0340, set 7166, Set 7200, Star Wars
+// 0 !KEYWORDS Bricklink 3626px34, Emperor Palpatine, Rebrickable 3626bpr0340
+// 0 !KEYWORDS set 7166, Set 7200, Star Wars
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

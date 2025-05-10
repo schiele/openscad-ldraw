@@ -14,11 +14,10 @@ function ldraw_lib__76382pdg() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Assistant, Bricklink 973pb0299c01, BrickOwl 349959, Frankenstein
-// 0 !KEYWORDS Fritz, horror, hunchback, igor, Lab, Laboratory
-// 0 !KEYWORDS Mini Upper Part No 631, Monster, Movie, peasant
-// 0 !KEYWORDS Rebrickable 973c08h01pr0299, scary, Set 1381, Spooky, Studios
-// 0 !KEYWORDS vampire, Vampires Crypt, Ygor
+// 0 !KEYWORDS Assistant, Bricklink 973pb0299c01, Frankenstein, Fritz, horror
+// 0 !KEYWORDS hunchback, igor, Lab, Laboratory, Mini Upper Part No 631, Monster
+// 0 !KEYWORDS Movie, peasant, Rebrickable 973c08h01pr0299, scary, Set 1381, Spooky
+// 0 !KEYWORDS Studios, vampire, Vampires Crypt, Ygor
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

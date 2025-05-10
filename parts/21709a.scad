@@ -13,6 +13,7 @@ function ldraw_lib__21709a() = [
   [0,"BFC","CW"],
 // 
 // 0 !CATEGORY Vehicle
+// 0 !KEYWORDS BrickLink 30394, Rebrickable 21709
 // 
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
 // 0 !HISTORY 2022-11-07 [Philo] Used proper click hinge.

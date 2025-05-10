@@ -11,6 +11,8 @@ function ldraw_lib__3297p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
+// 0 !KEYWORDS Rebrickable 3297pr0008, Set 1825
+// 
 // 0 !HISTORY 2002-08-21 [fwcain] Separated main DAT code into subfile...
 // 0 !HISTORY 2003-07-12 [Steffen] BFCed
 // 0 !HISTORY 2004-04-22 [PTadmin] Official Update 2004-02

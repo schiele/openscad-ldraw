@@ -11,7 +11,8 @@ function ldraw_lib__2431ps4() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Set 75235, Star Wars, X-Wing
+// 0 !KEYWORDS BrickLink 2431pb556, Rebrickable 2431pr0140, Set 75235, Star Wars
+// 0 !KEYWORDS X-Wing
 // 
 // 0 !HISTORY 2019-12-27 [PTadmin] Official Update 2019-03
 // 

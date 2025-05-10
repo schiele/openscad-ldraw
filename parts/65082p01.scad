@@ -26,7 +26,8 @@ function ldraw_lib__65082p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Crane
-// 0 !KEYWORDS Bricklink 65082, Construction, Set 10931, Set 10933
+// 0 !KEYWORDS Bricklink 65082, Construction, Rebrickable 65082, Set 10931
+// 0 !KEYWORDS Set 10933
 // 
 // 0 !HISTORY 2020-12-12 {LEGO/Unity Microgame} Original part shape
 // 0 !HISTORY 2021-01-31 [Philo] File preparation for LDraw Parts Tracker

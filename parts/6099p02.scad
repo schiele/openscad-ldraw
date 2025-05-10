@@ -12,7 +12,8 @@ function ldraw_lib__6099p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS cross-hairs, crossroads, landing pad, Launch pad, Space
+// 0 !KEYWORDS cross-hairs, crossroads, landing pad, Launch pad
+// 0 !KEYWORDS Rebrickable 6099pr0002, Set 6710, Space
 // 
 // 0 !HISTORY 1999-05-17 [PTadmin] Official Update 1999-03
 // 0 !HISTORY 2007-07-16 [PTadmin] Header formatted for Contributor Agreement

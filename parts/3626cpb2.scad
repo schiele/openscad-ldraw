@@ -15,8 +15,8 @@ function ldraw_lib__3626cpb2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626cpb1522, Brickowl 387723, Green Goblin, Halloween
-// 0 !KEYWORDS Hobgoblin, Rebrickable 3626cpr1898, Set 76058, Set 76064, Spider-Man
+// 0 !KEYWORDS BrickLink 3626pb1522, Green Goblin, Halloween, Hobgoblin
+// 0 !KEYWORDS Rebrickable 3626cpr1898, Set 76058, Set 76064, Spider-Man
 // 
 // 0 !HISTORY 2024-10-27 [OrionP] Official Update 2024-09
 // 

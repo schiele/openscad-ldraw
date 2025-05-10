@@ -16,7 +16,8 @@ function ldraw_lib__13789p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Bobby, Constable
+// 0 !KEYWORDS Bobby, BrickLink 13789pb01, Constable, Rebrickable 13789pr0001
+// 0 !KEYWORDS Set 71002-15
 // 
 // 0 !HISTORY 2014-01-07 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2014-01-08 [Philo] File preparation for LDraw Parts Tracker

@@ -16,7 +16,7 @@ function ldraw_lib__2466p68() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 2466p68, BrickOwl 887892, Rebrickable 2466pr0002, Set 6833
+// 0 !KEYWORDS Rebrickable 2466pr0002, Set 6833
 // 
 // 0 !HISTORY 1998-10-15 [PTadmin] Official Update 1998-09
 // 0 !HISTORY 2007-05-13 [PTadmin] Header formatted for Contributor Agreement

@@ -14,12 +14,11 @@ function ldraw_lib__76382prg() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Attack of the Clones, Bricklink 973px158c01, BrickOwl 140752
-// 0 !KEYWORDS Dagobah, Episode II, Episode III, Episode V, Geonosis, Grand Master
-// 0 !KEYWORDS Jedi, Jedi Council, Kashyyyk, Mini Upper Part No 589
-// 0 !KEYWORDS Original Trilogy, Rebrickable 973c26h25pr0158, Revenge of the Sith
-// 0 !KEYWORDS set 4502, Set 7103, Set 7260, Star Wars, The Empire Strikes Back
-// 0 !KEYWORDS Yoda
+// 0 !KEYWORDS Attack of the Clones, Bricklink 973px158c01, Dagobah, Episode II
+// 0 !KEYWORDS Episode III, Episode V, Geonosis, Grand Master, Jedi, Jedi Council
+// 0 !KEYWORDS Kashyyyk, Mini Upper Part No 589, Original Trilogy
+// 0 !KEYWORDS Rebrickable 973c26h25pr0158, Revenge of the Sith, set 4502, Set 7103
+// 0 !KEYWORDS Set 7260, Star Wars, The Empire Strikes Back, Yoda
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

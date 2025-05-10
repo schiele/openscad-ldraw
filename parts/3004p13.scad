@@ -12,8 +12,8 @@ function ldraw_lib__3004p13() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3004p22, Emergency, police, Set 370-1, Set 381-2
-// 0 !KEYWORDS Set 585-1, Set 588-1
+// 0 !KEYWORDS Bricklink 3004p22, Emergency, police, Rebrickable 3004pr9977
+// 0 !KEYWORDS Set 370-1, Set 381-2, Set 585-1, Set 588-1
 // 
 // 0 !HISTORY 2009-05-02 [PTadmin] Official Update 2009-01
 // 0 !HISTORY 2021-03-14 [RainbowDolphin] Subfiled the pattern for common use with 004589c

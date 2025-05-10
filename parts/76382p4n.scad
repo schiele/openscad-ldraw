@@ -14,9 +14,9 @@ function ldraw_lib__76382p4n() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973p4nc01, BrickOwl 472384, Castle, Crusaders, Dress
-// 0 !KEYWORDS Lion Knights, maiden, medieval, Noble, Princess, queen
-// 0 !KEYWORDS Rebrickable 973c27h01pr0013, Set 6081
+// 0 !KEYWORDS Bricklink 973p4nc01, Castle, Crusaders, Dress, Lion Knights, maiden
+// 0 !KEYWORDS medieval, Noble, Princess, queen, Rebrickable 973c27h01pr0013
+// 0 !KEYWORDS Set 6081
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

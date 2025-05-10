@@ -13,7 +13,8 @@ function ldraw_lib__3626cpm2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Frodo Baggins, Lord of the Rings
+// 0 !KEYWORDS BrickLink 3626pb0730, Frodo Baggins, Lord of the Rings
+// 0 !KEYWORDS Rebrickable 3626cpr0973, set 30210
 // 
 // 0 !CMDLINE -c78
 // 

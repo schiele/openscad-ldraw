@@ -15,7 +15,8 @@ function ldraw_lib__101777p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Bricklink 101777pb01, CMF, Disney 100, Jiminy Cricket, Set 71038-3
+// 0 !KEYWORDS Bricklink 101777pb01, CMF, Disney 100, Jiminy Cricket
+// 0 !KEYWORDS Rebrickable 101777pr0002, Set 71038-3
 // 
 // 0 !HISTORY 2023-05-12 {LEGO Instructions App} Original part shape
 // 0 !HISTORY 2023-05-15 [Philo] File preparation for LDraw Parts Tracker

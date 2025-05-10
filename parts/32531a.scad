@@ -17,6 +17,8 @@ function ldraw_lib__32531a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 32531, Rebrickable 32531
+// 
 // 0 !HISTORY 2003-01-05 [sbliss] Reworked with primitives, BFC compliance, rotated 90 degrees.
 // 0 !HISTORY 2004-11-06 [PTadmin] Official Update 2004-04
 // 0 !HISTORY 2007-06-25 [PTadmin] Header formatted for Contributor Agreement

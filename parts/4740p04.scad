@@ -12,7 +12,8 @@ function ldraw_lib__4740p04() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS 24 x 12, Chevrolet, Corvette, hubcap, Set 76903, Speed Champions
+// 0 !KEYWORDS 24 x 12, BrickLink 4740pb019, Chevrolet, Corvette, hubcap
+// 0 !KEYWORDS Rebrickable 4740pr0019, Set 76903, Speed Champions
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
 // 

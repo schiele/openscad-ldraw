@@ -12,6 +12,8 @@ function ldraw_lib__3068bp68() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
+// 0 !KEYWORDS BrickLink 3068p68, Rebrickable 3068bpr0074, Set 5154
+// 
 // 0 !HISTORY 2003-07-18 [Steffen] BFCed, added groove, made use of existing subfiles for tile and pattern
 // 0 !HISTORY 2004-04-22 [PTadmin] Official Update 2004-02
 // 0 !HISTORY 2007-06-13 [PTadmin] Header formatted for Contributor Agreement

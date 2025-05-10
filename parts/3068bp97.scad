@@ -13,7 +13,7 @@ function ldraw_lib__3068bp97() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3068bpb0191, Ramses
+// 0 !KEYWORDS BrickLink 3068pb0191, Ramses, Rebrickable 3068bpr0162, Set 3843
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
 // 

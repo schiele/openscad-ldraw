@@ -14,9 +14,8 @@ function ldraw_lib__76382pc23() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb0716c01, BrickOwl 718466, Circus, CMF
-// 0 !KEYWORDS Rebrickable 973c22h27pr1651, Ring Master, Ringmaster, Series 2
-// 0 !KEYWORDS Set 8684
+// 0 !KEYWORDS Bricklink 973pb0716c01, Circus, CMF, Rebrickable 973c22h27pr1651
+// 0 !KEYWORDS Ring Master, Ringmaster, Series 2, Set 8684
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

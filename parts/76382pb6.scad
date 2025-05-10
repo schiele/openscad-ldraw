@@ -14,10 +14,9 @@ function ldraw_lib__76382pb6() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Batman 2006, Bricklink 973pb0234c01, BrickOwl 142074, Edward Nigma
-// 0 !KEYWORDS Gotham City, Mini Upper Part No 1288, Nygma
-// 0 !KEYWORDS Rebrickable 973c31h12pr1288, rogues gallery, set 7785, set 7787
-// 0 !KEYWORDS The Riddler
+// 0 !KEYWORDS Batman 2006, Bricklink 973pb0234c01, Edward Nigma, Gotham City
+// 0 !KEYWORDS Mini Upper Part No 1288, Nygma, Rebrickable 973c31h12pr1288
+// 0 !KEYWORDS rogues gallery, set 7785, set 7787, The Riddler
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

@@ -13,7 +13,8 @@ function ldraw_lib__3009ptf() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3009pb201, Car, Caterham, Cuusoo, Ideas, Set 21307
+// 0 !KEYWORDS Bricklink 3009pb201, Car, Caterham, Cuusoo, Ideas
+// 0 !KEYWORDS Rebrickable 3009pr0005, Set 21307
 // 
 // 0 !CMDLINE -c0
 // 

@@ -13,7 +13,8 @@ function ldraw_lib__21019bpx3() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 970c00pb0558, Disney, Minnie Mouse, set 71040
+// 0 !KEYWORDS Bricklink 970c00pb0558, Disney, Minnie Mouse
+// 0 !KEYWORDS Rebrickable 970c27pat03pr1097, set 71040
 // 
 // 0 !HISTORY 2023-06-24 [OrionP] Official Update 2023-03
 // 

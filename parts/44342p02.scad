@@ -28,7 +28,8 @@ function ldraw_lib__44342p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS curved, roadplate
+// 0 !KEYWORDS BrickLink 44342px2, curved, Rebrickable 44342pr0002, roadplate
+// 0 !KEYWORDS Set 60237
 // 
 // 0 !HISTORY 2018-08-29 [SLS] Copied from 44342p01.dat
 // 0 !HISTORY 2018-09-12 [SLS] Use stud groups, removed T-junctions

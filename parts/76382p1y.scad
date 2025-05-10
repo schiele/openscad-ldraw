@@ -14,8 +14,8 @@ function ldraw_lib__76382p1y() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb1558c01, BrickOwl 439167, dart player, detective's
-// 0 !KEYWORDS office, Rebrickable 973c28h01pr2500, set 10246, set 10247, Set 10259
+// 0 !KEYWORDS Bricklink 973pb1558c01, dart player, detective's, office
+// 0 !KEYWORDS Rebrickable 973c28h01pr2500, set 10246, set 10247, Set 10259
 // 0 !KEYWORDS set 30354, set 31050, set 4000022, Set 60051, set 60060, set 60082
 // 0 !KEYWORDS set 60169, Set 75875
 // 

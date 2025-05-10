@@ -13,6 +13,8 @@ function ldraw_lib__506() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
+// 0 !KEYWORDS BrickLink x564, Rebrickable upn0282
+// 
 // 0 !CMDLINE -c4
 // 
 // 0 !HISTORY 2007-08-11 [mikeheide] corrected 4-4edge with 4 lines.

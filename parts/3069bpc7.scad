@@ -13,7 +13,8 @@ function ldraw_lib__3069bpc7() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Collectable, Series 12, Set 71007, Video Game Guy
+// 0 !KEYWORDS BrickLink 3069pb0344, Collectable, Rebrickable 3069bpr0014
+// 0 !KEYWORDS Series 12, Set 71007, Video Game Guy
 // 
 // 0 !HISTORY 2015-10-11 [PTadmin] Official Update 2015-01
 // 

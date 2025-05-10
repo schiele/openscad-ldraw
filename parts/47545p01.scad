@@ -12,7 +12,8 @@ function ldraw_lib__47545p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS bounty hunter, Greedo, Star Wars
+// 0 !KEYWORDS bounty hunter, BrickLink x903px1, Greedo, Rebrickable 47545pr0003
+// 0 !KEYWORDS set 4501, Star Wars
 // 
 // 0 !HISTORY 2013-07-21 [PTadmin] Official Update 2013-01
 // 

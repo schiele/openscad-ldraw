@@ -21,6 +21,8 @@ function ldraw_lib__374p03() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 374px2, Rebrickable 374pr0003, Set 356
+// 
 // 0 !HISTORY 2004-08-31 [mikeheide] Corrected BFC errors, used more primitives, inlined primitive
 // 0 !HISTORY 2009-05-02 [PTadmin] Official Update 2009-01
 // 

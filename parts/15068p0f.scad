@@ -11,7 +11,8 @@ function ldraw_lib__15068p0f() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 15068pb111, Expedition, Jungle, Set 60162
+// 0 !KEYWORDS Bricklink 15068pb111, Expedition, Jungle, Rebrickable 15068pr9999
+// 0 !KEYWORDS Set 60162
 // 
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04
 // 

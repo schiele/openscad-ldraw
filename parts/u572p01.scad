@@ -15,7 +15,7 @@ function ldraw_lib__u572p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Sheet Cardboard
-// 0 !KEYWORDS cowboy, set 365, western
+// 0 !KEYWORDS BrickLink 365ppr01, cowboy, Rebrickable 365cdb01, set 365, western
 // 
 // 0 !HISTORY 2016-12-31 [PTadmin] Official Update 2016-01
 // 0 !HISTORY 2019-01-25 [cwdee] Update category

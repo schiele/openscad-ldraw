@@ -13,7 +13,7 @@ function ldraw_lib__973p6u() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Invaders
+// 0 !KEYWORDS Invaders, set 6975
 // 
 // 0 !HISTORY 2010-12-31 [PTadmin] Official Update 2010-03
 // 0 !HISTORY 2011-01-04 [BlackBrick89] Standardise description

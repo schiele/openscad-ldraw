@@ -11,8 +11,8 @@ function ldraw_lib__4162p0d() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Architect, Architecture, Australia, Jorn Utzon, Set 21012, Sydney
-// 0 !KEYWORDS Sydney Opera House
+// 0 !KEYWORDS Architect, Architecture, Australia, BrickLink 4162pb076, Jorn Utzon
+// 0 !KEYWORDS Rebrickable 4162pr0013, Set 21012, Sydney, Sydney Opera House
 // 
 // 0 !HISTORY 2012-08-09 [PTadmin] Official Update 2012-02
 // 

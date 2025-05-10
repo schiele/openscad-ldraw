@@ -20,6 +20,7 @@ function ldraw_lib__42409() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Belville
+// 0 !KEYWORDS BrickLink x789
 // 
 // 0 !HISTORY 2009-10-13 {LEGO Universe Team} Original part shape
 // 0 !HISTORY 2010-09-14 [anathema] File preparation for LDraw Parts Tracker

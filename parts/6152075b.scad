@@ -2,20 +2,21 @@ use <../lib.scad>
 use <../p/1-4chrd.scad>
 use <../p/1-4cyli.scad>
 function ldraw_lib__6152075b() = [
-// 0 Sticker  1.0 x  1.7 with  White "211B WESTMINISTER" on Black Background
+// 0 Sticker  1.0 x  1.7 with  White "211B WESTMINSTER" on Black Background
 // 0 Name: 6152075b.dat
 // 0 Author: Evert-Jan Boer [ejboer]
-// 0 !LDRAW_ORG Part UPDATE 2024-08
+// 0 !LDRAW_ORG Part UPDATE 2025-04
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS London Mini Bus, Set 40220
+// 0 !KEYWORDS BrickLink 40220stk01a, London Mini Bus, Rebrickable 26661, Set 40220
 // 
 // 0 !HISTORY 2024-09-30 [OrionP] Official Update 2024-08
-// 
+// 0 !HISTORY 2025-04-17 [ejboer] Update description
+// 0 !HISTORY 2025-04-27 [OrionP] Official Update 2025-04
 // 
 // 1 0 -16.5 -.25 9 0 0 -1 0 1 0 1 0 0 1-4chrd.dat
   [1,0,-16.5,-.25,9,0,0,-1,0,1,0,1,0,0, ldraw_lib__1_4chrd()],

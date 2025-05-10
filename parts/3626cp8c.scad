@@ -12,7 +12,8 @@ function ldraw_lib__3626cp8c() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Christmas, Ms. Santos, set 10222, Set 10223, set 21109, Winter
+// 0 !KEYWORDS BrickLink 3626pb0633, Christmas, Ms. Santos, Rebrickable 3626cpr0893
+// 0 !KEYWORDS set 10222, Set 10223, set 21109, Winter
 // 
 // 0 !HISTORY 2015-10-11 [PTadmin] Official Update 2015-01
 // 0 !HISTORY 2023-11-07 [MagFors] Update description, added keywords

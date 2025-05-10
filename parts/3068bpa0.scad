@@ -11,7 +11,7 @@ function ldraw_lib__3068bpa0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Adventurers
+// 0 !KEYWORDS Adventurers, BrickLink 3068px24, Rebrickable 3068bpr9955, Set 1271
 // 
 // 0 !HISTORY 2011-10-15 [MagFors] Corrected errors
 // 0 !HISTORY 2018-12-08 [PTadmin] Official Update 2018-02

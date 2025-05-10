@@ -16,7 +16,8 @@ function ldraw_lib__25269p03() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 25269pb009, Dots, Set 41902, Sparkly unicorn
+// 0 !KEYWORDS Bricklink 25269pb009, Dots, Rebrickable 25269pr0007, Set 41902
+// 0 !KEYWORDS Sparkly unicorn
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 

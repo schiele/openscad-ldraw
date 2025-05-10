@@ -20,7 +20,7 @@ function ldraw_lib__3754p01() = [
   [0,"BFC","CW"],
 // 
 // 0 !KEYWORDS 926, astronaut, classic, cosmonaut, crater, LL 2079, monitor, Moon
-// 0 !KEYWORDS planet, screen, Space, vidiwall
+// 0 !KEYWORDS planet, Rebrickable 3754pr0001, screen, Set 12, Space, vidiwall
 // 
 // 0 !HISTORY 1998-05-21 [PTadmin] Official Update 1998-05
 // 0 !HISTORY 2007-06-29 [PTadmin] Header formatted for Contributor Agreement

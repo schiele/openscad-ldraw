@@ -14,7 +14,8 @@ function ldraw_lib__3626bpsa() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626bpb0033, Jango Fett, Set 7153, Star Wars
+// 0 !KEYWORDS BrickLink 3626pb0033, Jango Fett, Rebrickable 3626bpr0078, Set 7153
+// 0 !KEYWORDS Star Wars
 // 
 // 0 !HISTORY 2023-06-10 [Holly-Wood] Fixed overlap, deleted vertices, colored, extended pattern
 // 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02

@@ -11,6 +11,8 @@ function ldraw_lib__4150p30() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 4150px15, Rebrickable 4150pr0018, set 1788
+// 
 // 0 !HISTORY 2010-07-05 [PTadmin] Official Update 2010-02
 // 
 // 

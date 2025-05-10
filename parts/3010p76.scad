@@ -11,9 +11,8 @@ function ldraw_lib__3010p76() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3010pb332, Brickowl 696877, Rebrickable 3010pr0084
-// 0 !KEYWORDS set 60312, set 60314, set 60315, set 60316, set 60317, set 60369
-// 0 !KEYWORDS set 60372
+// 0 !KEYWORDS Bricklink 3010pb332, Rebrickable 3010pr0084, set 60312, set 60314
+// 0 !KEYWORDS set 60315, set 60316, set 60317, set 60369, set 60372
 // 
 // 0 !HISTORY 2024-08-26 [OrionP] Official Update 2024-07
 // 

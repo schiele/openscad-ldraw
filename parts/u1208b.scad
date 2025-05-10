@@ -16,6 +16,8 @@ function ldraw_lib__u1208b() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS Bricklink pinpw2, Rebrickable upn0360
+// 
 // 0 !CMDLINE -c383
 // 
 // 0 !HISTORY 2010-04-05 [PTadmin] Official Update 2010-01

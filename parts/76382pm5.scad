@@ -14,9 +14,9 @@ function ldraw_lib__76382pm5() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Armor, Bricklink 973pb1136c01, BrickOwl 390240, Éomer, Eomer Eadig
-// 0 !KEYWORDS Lord of the Rings, Mini Upper Part No 2069
-// 0 !KEYWORDS Rebrickable 973c12h02pr2069, Rohan, set 9471, Uruk-Hai Army
+// 0 !KEYWORDS Armor, Bricklink 973pb1136c01, Éomer, Eomer Eadig, Lord of the Rings
+// 0 !KEYWORDS Mini Upper Part No 2069, Rebrickable 973c12h02pr2069, Rohan
+// 0 !KEYWORDS set 9471, Uruk-Hai Army
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

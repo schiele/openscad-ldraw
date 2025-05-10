@@ -14,6 +14,8 @@ function ldraw_lib__4088a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 4088, Rebrickable 4088
+// 
 // 0 !HISTORY 2018-01-30 [PTadmin] Official Update 2018-01
 // 
 // 

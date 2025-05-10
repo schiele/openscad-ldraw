@@ -15,7 +15,7 @@ function ldraw_lib__98138pt5() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS Bricklink 98138pb383, Fiducial Marker, Mars Rover, NASA
-// 0 !KEYWORDS Perseverance, Set 42158
+// 0 !KEYWORDS Perseverance, Rebrickable 98138pr0361, Set 42158
 // 
 // 0 !HISTORY 2023-10-31 [OrionP] Official Update 2023-05
 // 

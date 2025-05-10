@@ -11,7 +11,8 @@ function ldraw_lib__2408p05() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Futuron, Panel, Space
+// 0 !KEYWORDS BrickLink 2408pb01, Futuron, Panel, Rebrickable 2408pr0003, Set 6932
+// 0 !KEYWORDS Space
 // 
 // 0 !HISTORY 2010-04-05 [PTadmin] Official Update 2010-01
 // 

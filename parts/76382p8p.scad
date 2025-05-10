@@ -14,8 +14,8 @@ function ldraw_lib__76382p8p() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb0010c01, BrickOwl 858513, City, city center, Foreman
-// 0 !KEYWORDS Ganger, Garry, Mini Heroes Collection, Mini Upper Part No 410
+// 0 !KEYWORDS Bricklink 973pb0010c01, City, city center, Foreman, Ganger, Garry
+// 0 !KEYWORDS Mini Heroes Collection, Mini Upper Part No 410
 // 0 !KEYWORDS Rebrickable 973c34h08pr0010, Set 3351, Set 6470, Set 6600
 // 0 !KEYWORDS Town Junior
 // 

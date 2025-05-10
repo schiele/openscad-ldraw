@@ -17,7 +17,7 @@ function ldraw_lib__973pa7() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS Adventurers, Baron von Barron, belt, Jacket, Military, Mr. Hates
-// 0 !KEYWORDS Uniform, villain
+// 0 !KEYWORDS Set 2541, Uniform, villain
 // 
 // 0 !CMDLINE -c19
 // 

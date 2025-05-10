@@ -17,7 +17,7 @@ function ldraw_lib__973p39() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS belt, buttons, coat, gentleman, merchant, Pirates, squire
+// 0 !KEYWORDS belt, buttons, coat, gentleman, merchant, Pirates, set 6296, squire
 // 
 // 0 !HISTORY 2002-08-18 [PTadmin] Official Update 2002-04
 // 0 !HISTORY 2002-08-21 [fwcain] Separated DAT code for dithered color (was Color-19) into subfile

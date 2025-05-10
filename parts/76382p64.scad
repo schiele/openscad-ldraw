@@ -14,9 +14,8 @@ function ldraw_lib__76382p64() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973p64c01, BrickOwl 892570, Monorail
-// 0 !KEYWORDS Rebrickable 973c17h28pr0064, set 1787, set 1789, set 1793, set 6705
-// 0 !KEYWORDS Set 6991, Space, Spyrius, Unitron
+// 0 !KEYWORDS Bricklink 973p64c01, Monorail, Rebrickable 973c17h28pr0064, set 1787
+// 0 !KEYWORDS set 1789, set 1793, set 6705, Set 6991, Space, Spyrius, Unitron
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

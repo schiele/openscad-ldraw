@@ -16,7 +16,8 @@ function ldraw_lib__3005pv6() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !KEYWORDS letters, numbers
+// 0 !KEYWORDS BrickLink 3005pt6b, letters, numbers, Rebrickable 3005pr9978
+// 0 !KEYWORDS Set 987
 // 
 // 0 !HISTORY 2003-12-09 [Steffen] made use of existing subfile
 // 0 !HISTORY 2004-04-22 [PTadmin] Official Update 2004-02

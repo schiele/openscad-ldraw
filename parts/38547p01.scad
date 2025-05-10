@@ -13,8 +13,8 @@ function ldraw_lib__38547p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 38547pb01, Brickowl 540484, HP, Rebrickable 38547pat0001
-// 0 !KEYWORDS set 75951, Thestral
+// 0 !KEYWORDS Bricklink 38547pb01, HP, Rebrickable 38547pat0001, set 75951
+// 0 !KEYWORDS Thestral
 // 
 // 0 !HISTORY 2020-06-28 [PTadmin] Official Update 2020-01
 // 0 !HISTORY 2024-05-29 [MagFors] Update description, added keywords

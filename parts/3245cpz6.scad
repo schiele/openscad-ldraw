@@ -11,8 +11,8 @@ function ldraw_lib__3245cpz6() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Avengers, Brickheadz, BrickLink 3245cpb070, Infinity War, Set 41606
-// 0 !KEYWORDS Star-Lord, Torso
+// 0 !KEYWORDS Avengers, Brickheadz, BrickLink 3245cpb070, Infinity War
+// 0 !KEYWORDS Rebrickable 3245cpr0132, Set 41606, Star-Lord, Torso
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
 // 

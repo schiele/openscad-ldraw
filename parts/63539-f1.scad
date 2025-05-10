@@ -12,7 +12,7 @@ function ldraw_lib__63539_f1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS 96 mm
+// 0 !KEYWORDS 96 mm, BrickLink 5102c12, Rebrickable 5102c12
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
 // 

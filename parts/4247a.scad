@@ -12,6 +12,7 @@ function ldraw_lib__4247a() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Door
+// 0 !KEYWORDS BrickLink 4247, Rebrickable 4247
 // 
 // 0 !HISTORY 2010-12-31 [PTadmin] Official Update 2010-03
 // 0 !HISTORY 2020-11-19 [Philo] Corrected geometry

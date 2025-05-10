@@ -13,9 +13,8 @@ function ldraw_lib__3626bp4e() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626bpx70, Brickowl 806577, Castle
-// 0 !KEYWORDS Rebrickable 3626bpr9970, Set 3739, set 4817, Set 6091, Set 6096
-// 0 !KEYWORDS Set 6098
+// 0 !KEYWORDS BrickLink 3626px70, Castle, Rebrickable 3626bpr9970, Set 3739
+// 0 !KEYWORDS set 4817, Set 6091, Set 6096, Set 6098
 // 
 // 0 !HISTORY 2024-10-27 [OrionP] Official Update 2024-09
 // 

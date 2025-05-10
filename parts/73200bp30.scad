@@ -17,7 +17,8 @@ function ldraw_lib__73200bp30() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 970c03pb04, Castaway, Pirates, Set 6241, Set 6299
+// 0 !KEYWORDS Bricklink 970c03pb04, Castaway, Pirates, Rebrickable 970c01pr0123
+// 0 !KEYWORDS Set 6241, Set 6299
 // 
 // 0 !HISTORY 2023-02-08 [ejboer] Original pattern design
 // 0 !HISTORY 2023-02-08 [Holly-Wood] Adapted to corrected geometry

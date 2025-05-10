@@ -13,7 +13,8 @@ function ldraw_lib__973pg1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS dot, Dots, football, Futbal, Goalie, polka, rugby, spot, spots
+// 0 !KEYWORDS dot, Dots, football, Futbal, Goalie, polka, rugby, Set 3409, spot
+// 0 !KEYWORDS spots
 // 
 // 0 !HISTORY 2017-10-11 [cwdee] Use existing castle stud front subpart
 // 0 !HISTORY 2019-09-09 [PTadmin] Official Update 2019-02

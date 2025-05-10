@@ -12,7 +12,8 @@ function ldraw_lib__4150pf3() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS bricklink 4150pb033, Rings, Scala, set 4307, Spring
+// 0 !KEYWORDS bricklink 4150pb033, Rebrickable 4150pr0048, Rings, Scala, set 4307
+// 0 !KEYWORDS Spring
 // 
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04
 // 0 !HISTORY 2024-11-27 [MagFors] Update description

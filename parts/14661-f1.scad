@@ -12,7 +12,7 @@ function ldraw_lib__14661_f1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS 312 mm
+// 0 !KEYWORDS 312 mm, Rebrickable 5102c38.75
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
 // 

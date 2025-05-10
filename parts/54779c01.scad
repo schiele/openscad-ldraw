@@ -12,6 +12,8 @@ function ldraw_lib__54779c01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 54100c01, Rebrickable 54779
+// 
 // 0 !HISTORY 2012-11-27 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2012-11-27 [Philo] File preparation for LDraw Parts Tracker
 // 0 !HISTORY 2012-12-28 [PTadmin] Official Update 2012-03

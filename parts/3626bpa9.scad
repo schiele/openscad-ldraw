@@ -20,9 +20,9 @@ function ldraw_lib__3626bpa9() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Adventurers, beard, Bricklink 3626bpx62, Brickowl 296326, eyebrows
-// 0 !KEYWORDS face, Lord Sam Sinister, moustache, Rebrickable 3626bpr0040
-// 0 !KEYWORDS Set 5938, set 5958, set 5988, Slyboots, villian
+// 0 !KEYWORDS Adventurers, beard, BrickLink 3626px62, eyebrows, face
+// 0 !KEYWORDS Lord Sam Sinister, moustache, Rebrickable 3626bpr0040, Set 5938
+// 0 !KEYWORDS set 5958, set 5988, Slyboots, villian
 // 
 // 0 !CMDLINE -c14
 // 

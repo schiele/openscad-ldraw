@@ -17,6 +17,8 @@ function ldraw_lib__43450() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 6282c01, Rebrickable 6282c01
+// 
 // 0 !HISTORY 2009-09-29 [Philo] Restored orientation of 43464
 // 0 !HISTORY 2022-05-07 [PTadmin] Official Update 2022-03
 // 

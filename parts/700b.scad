@@ -13,6 +13,8 @@ function ldraw_lib__700b() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 700eD, Rebrickable 700d
+// 
 // 0 !HISTORY 1997-10-29 [PTadmin] Official Update 1997-16
 // 0 !HISTORY 2007-12-20 [PTadmin] Header formatted for Contributor Agreement
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01

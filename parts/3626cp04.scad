@@ -14,7 +14,8 @@ function ldraw_lib__3626cp04() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626cpb1147, Emmet, Set 70814, Set 71212
+// 0 !KEYWORDS BrickLink 3626pb1147, Emmet, Rebrickable 3626cpr1496, Set 70814
+// 0 !KEYWORDS Set 71212
 // 
 // 0 !HISTORY 2024-09-30 [OrionP] Official Update 2024-08
 // 

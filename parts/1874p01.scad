@@ -12,8 +12,8 @@ function ldraw_lib__1874p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS 007, Aston Martin, Bricklink 1874pb001, Brickowl 282349, DB5
-// 0 !KEYWORDS James Bond, Rebrickable 1874pr0001, set 76911
+// 0 !KEYWORDS 007, Aston Martin, Bricklink 1874pb001, DB5, James Bond
+// 0 !KEYWORDS Rebrickable 1874pr0001, set 76911
 // 
 // 0 !HISTORY 2024-01-29 [OrionP] Official Update 2024-01
 // 

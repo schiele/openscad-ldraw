@@ -11,7 +11,8 @@ function ldraw_lib__2431pzj() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickheadz, BrickLink 2431pb510, Rey, Set 41602, Star Wars
+// 0 !KEYWORDS Brickheadz, BrickLink 2431pb510, Rebrickable 2431pr0005, Rey
+// 0 !KEYWORDS Set 41602, Star Wars
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 

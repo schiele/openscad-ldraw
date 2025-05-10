@@ -14,10 +14,10 @@ function ldraw_lib__76382p7a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Antarctic, Antarctica, Bricklink 973p7ac01, BrickOwl 188335
-// 0 !KEYWORDS Captain Ross Ranger, explorer, Mini Upper Part No 335, north pole
-// 0 !KEYWORDS Polar, Rebrickable 973c28h03pr0007, Set 6520, set 6575, Set 6578
-// 0 !KEYWORDS set 6586, south pole, town
+// 0 !KEYWORDS Antarctic, Antarctica, Bricklink 973p7ac01, Captain Ross Ranger
+// 0 !KEYWORDS explorer, Mini Upper Part No 335, north pole, Polar
+// 0 !KEYWORDS Rebrickable 973c28h03pr0007, Set 6520, set 6575, Set 6578, set 6586
+// 0 !KEYWORDS south pole, town
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

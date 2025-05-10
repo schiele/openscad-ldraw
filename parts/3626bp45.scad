@@ -17,9 +17,9 @@ function ldraw_lib__3626bp45() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626bpx23, Brickowl 402248, cavalry, colonel, fort
-// 0 !KEYWORDS legoredo, Rebrickable 3626bpr0323, set 6706, set 6762, set 6769
-// 0 !KEYWORDS set 852697, western, wild west
+// 0 !KEYWORDS BrickLink 3626px23, cavalry, colonel, fort, legoredo
+// 0 !KEYWORDS Rebrickable 3626bpr0323, set 6706, set 6762, set 6769, set 852697
+// 0 !KEYWORDS western, wild west
 // 
 // 0 !HISTORY 2016-12-31 [PTadmin] Official Update 2016-01
 // 0 !HISTORY 2024-08-21 [Lego-Manfred] References added

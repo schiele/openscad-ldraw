@@ -32,6 +32,8 @@ function ldraw_lib__2538c() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 2538a, Rebrickable 2538a
+// 
 // 0 !HISTORY 2022-10-08 [Philo] Derived from Magfors/Westrate work, corrected arm geometry.
 // 0 !HISTORY 2022-12-20 [PTadmin] Official Update 2022-06
 // 

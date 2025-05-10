@@ -13,6 +13,8 @@ function ldraw_lib__3650b() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 3650a
+// 
 // 0 !HISTORY 2006-02-19 [technog] Use primitive Tooth24a.dat and subpart 3650s01.dat
 // 0 !HISTORY 2006-05-27 [technog] Added 3-8edge's removed from 3650s01.dat
 // 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02

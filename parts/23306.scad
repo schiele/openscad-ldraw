@@ -24,7 +24,7 @@ function ldraw_lib__23306() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS bar, base, rod, sabre, Star Wars, sword
+// 0 !KEYWORDS bar, base, BrickLink 64567, rod, sabre, Star Wars, sword
 // 
 // 0 !HISTORY 2012-12-12 [MMR1988] Rewrite due to bad quads in old part, corrected measures
 // 0 !HISTORY 2018-12-08 [PTadmin] Official Update 2018-02

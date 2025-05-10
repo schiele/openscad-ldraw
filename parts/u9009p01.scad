@@ -14,6 +14,8 @@ function ldraw_lib__u9009p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink bb0306pb01, Rebrickable upn0153pr0001, Set 432
+// 
 // 0 !HISTORY 2010-07-05 [PTadmin] Official Update 2010-02
 // 
 // 

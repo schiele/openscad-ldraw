@@ -14,8 +14,8 @@ function ldraw_lib__76382pf4() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb0697c01, BrickOwl 107170, Castle, educational
-// 0 !KEYWORDS Fairy Tale, King, Kingdoms, Mini Upper Part No 1621, Noble, Prince
+// 0 !KEYWORDS Bricklink 973pb0697c01, Castle, educational, Fairy Tale, King
+// 0 !KEYWORDS Kingdoms, Mini Upper Part No 1621, Noble, Prince
 // 0 !KEYWORDS Rebrickable 973c27h01pr1621, Set 7946, Set 7952, Set 9349
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02

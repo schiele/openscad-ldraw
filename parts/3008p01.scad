@@ -11,6 +11,8 @@ function ldraw_lib__3008p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS Rebrickable 3008pr0002, Set 338
+// 
 // 0 !HISTORY 1998-03-23 [PTadmin] Official Update 1998-03
 // 0 !HISTORY 2004-03-11 [westrate] BFCed, subfiled
 // 0 !HISTORY 2004-09-15 [PTadmin] Official Update 2004-03

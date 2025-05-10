@@ -12,7 +12,7 @@ function ldraw_lib__47592c01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS light, Spike Essential
+// 0 !KEYWORDS light, Rebrickable 47592, Spike Essential
 // 
 // 0 !HISTORY 2024-06-30 [OrionP] Official Update 2024-05
 // 

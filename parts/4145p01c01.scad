@@ -14,6 +14,7 @@ function ldraw_lib__4145p01c01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Brick
+// 0 !KEYWORDS Bricklink 4145c01pb01, Rebrickable 4145c01pr0001
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 0 !HISTORY 2021-05-31 [cwdee] Update renumbered hand parts

@@ -13,6 +13,8 @@ function ldraw_lib__973pb0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS Set 7781
+// 
 // 0 !HISTORY 2011-07-24 [BlackBrick89] Re-written and BFCed
 // 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02
 // 

@@ -16,6 +16,8 @@ function ldraw_lib__u9333c01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS Bricklink bb0339c02, Rebrickable 61929c02
+// 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 
 // 

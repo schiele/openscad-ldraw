@@ -13,7 +13,7 @@ function ldraw_lib__43898ps2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 43898pb002, Set 7930, Star Wars
+// 0 !KEYWORDS Bricklink 43898pb002, Rebrickable 43898pr0001, Set 7930, Star Wars
 // 
 // 0 !HISTORY 2020-06-28 [PTadmin] Official Update 2020-01
 // 

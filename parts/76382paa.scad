@@ -14,10 +14,9 @@ function ldraw_lib__76382paa() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Adventurers, amazon, Blimp, Bricklink 973paac01, BrickOwl 107378
-// 0 !KEYWORDS Jungle, Max Villano, Mini Upper Part No 318
-// 0 !KEYWORDS Rebrickable 973c08h01pr0001, Rudo Villano, Set 5901, Set 5902
-// 0 !KEYWORDS Set 5956, set 5976, villain, Zeppelin
+// 0 !KEYWORDS Adventurers, amazon, Blimp, Bricklink 973paac01, Jungle, Max Villano
+// 0 !KEYWORDS Mini Upper Part No 318, Rebrickable 973c08h01pr0001, Rudo Villano
+// 0 !KEYWORDS Set 5901, Set 5902, Set 5956, set 5976, villain, Zeppelin
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

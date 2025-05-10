@@ -13,8 +13,9 @@ function ldraw_lib__71396p01c01() = [
   [0,"BFC","CW"],
 // 
 // 0 !CATEGORY Sheet Fabric
-// 0 !KEYWORDS army, cavalry, cowboys, indians, legoredo, Military, Soldiers
-// 0 !KEYWORDS U.S. Army, United States, western, wild west
+// 0 !KEYWORDS army, BrickLink x192px1, cavalry, cowboys, indians, legoredo
+// 0 !KEYWORDS Military, Rebrickable 71396pr0001, Soldiers, U.S. Army
+// 0 !KEYWORDS United States, western, wild west
 // 
 // 0 !HISTORY 2012-08-09 [PTadmin] Official Update 2012-02
 // 0 !HISTORY 2019-01-25 [cwdee] Update category

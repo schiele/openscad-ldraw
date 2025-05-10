@@ -1,19 +1,22 @@
 use <../lib.scad>
 use <s/2336s01.scad>
 function ldraw_lib__2336p35() = [
-// 0 Wedge  2 x  3 with Brick  2 x  4 with Black/Silver "V" Pattern
+// 0 Wedge  2 x  3 with Brick  2 x  4 Side Studs and Plate  2 x  2 with Black/Silver "V" Pattern
 // 0 Name: 2336p35.dat
 // 0 Author: Tim Gould [timgould]
-// 0 !LDRAW_ORG Part UPDATE 2012-02
+// 0 !LDRAW_ORG Part UPDATE 2025-04
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS Rebrickable 2336pr0001, Set 1526, set 1558, set 6874, Set 6985
+// 
 // 0 !HISTORY 2011-01-07 [cwdee] Inlined small dithered colour subpart
 // 0 !HISTORY 2012-08-09 [PTadmin] Official Update 2012-02
-// 
+// 0 !HISTORY 2025-04-21 [MagFors] Update description, added keywords
+// 0 !HISTORY 2025-04-27 [OrionP] Official Update 2025-04
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2336s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__2336s01()],
@@ -79,7 +82,6 @@ function ldraw_lib__2336p35() = [
   [4,0,1.75,-14.15,-26.975,7.25,-14.15,-26.975,10.5,-18.090,-17.785,5,-18.090,-17.785],
 // 4 0 5 -18.090 -17.785 10.5 -18.090 -17.785 16 -24 -4 10 -24 -4
   [4,0,5,-18.090,-17.785,10.5,-18.090,-17.785,16,-24,-4,10,-24,-4],
-// 0
 ];
 module ldraw_lib__2336p35(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
     makepoly(ldraw_lib__2336p35(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);

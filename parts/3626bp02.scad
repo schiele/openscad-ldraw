@@ -14,7 +14,8 @@ function ldraw_lib__3626bp02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS female, girl, lips, lipstick, Mouth, red
+// 0 !KEYWORDS Bricklink 3626p02, female, girl, lips, lipstick, Mouth
+// 0 !KEYWORDS Rebrickable 3626bpr0004, red, Set 10036
 // 
 // 0 !HISTORY 1998-06-20 [PTadmin] Official Update 1998-06
 // 0 !HISTORY 1998-10-15 [PTadmin] Official Update 1998-09

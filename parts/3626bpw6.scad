@@ -13,9 +13,9 @@ function ldraw_lib__3626bpw6() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS American Indian, Bricklink 3626bpx58, Brickowl 877859, Fighter
-// 0 !KEYWORDS raggery, Rebrickable 3626bpr9980, set 6746, set 6748, set 6763
-// 0 !KEYWORDS set 6766, warpaint, Warrior, western, wild west
+// 0 !KEYWORDS American Indian, BrickLink 3626px58, Fighter, raggery
+// 0 !KEYWORDS Rebrickable 3626bpr9980, set 6746, set 6748, set 6763, set 6766
+// 0 !KEYWORDS warpaint, Warrior, western, wild west
 // 
 // 0 !HISTORY 2016-12-31 [PTadmin] Official Update 2016-01
 // 0 !HISTORY 2024-06-30 [OrionP] Official Update 2024-05

@@ -11,6 +11,8 @@ function ldraw_lib__3004p05() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS Rebrickable 3004pr9982, Set 6941
+// 
 // 0 !HISTORY 2011-08-25 [cwdee] CA rewrite
 // 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02
 // 

@@ -23,7 +23,8 @@ function ldraw_lib__98138p8f() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 98138pb098, Dragon Dance, set 80102
+// 0 !KEYWORDS Bricklink 98138pb098, Dragon Dance, Rebrickable 98138pr0111
+// 0 !KEYWORDS set 80102
 // 
 // 0 !HISTORY 2022-03-06 [PTadmin] Official Update 2022-02
 // 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives

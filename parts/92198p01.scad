@@ -14,7 +14,8 @@ function ldraw_lib__92198p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Cinderella, Katharina, Liza, Merida, Sophie, Stephanie
+// 0 !KEYWORDS BrickLink 93212, Cinderella, Katharina, Liza, Merida
+// 0 !KEYWORDS Rebrickable 92198pr0002, set 10726, Sophie, Stephanie
 // 
 // 0 !HISTORY 2012-08-09 [PTadmin] Official Update 2012-02
 // 0 !HISTORY 2014-07-08 [Philo] Subparted for other patterns

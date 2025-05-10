@@ -12,7 +12,8 @@ function ldraw_lib__90397p04() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS CMF, Collectible Minifigs, Series 2, The Lego Batman Movie
+// 0 !KEYWORDS BrickLink 90397pb008, CMF, Collectible Minifigs
+// 0 !KEYWORDS Rebrickable 90397pr0005, Series 2, The Lego Batman Movie
 // 0 !KEYWORDS Vacation Batgirl
 // 
 // 0 !CMDLINE -c14

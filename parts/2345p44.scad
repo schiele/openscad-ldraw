@@ -11,7 +11,7 @@ function ldraw_lib__2345p44() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 2345p44, BrickOwl 520762, Rebrickable 2345pr0005, Set 6894
+// 0 !KEYWORDS Rebrickable 2345pr0005, Set 6894
 // 
 // 0 !HISTORY 1999-03-26 [PTadmin] Official Update 1999-02
 // 0 !HISTORY 1999-04-01 [leozide] redone

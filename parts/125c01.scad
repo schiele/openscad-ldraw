@@ -14,7 +14,7 @@ function ldraw_lib__125c01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS set 4002
+// 0 !KEYWORDS BrickLink bfloat1c01, set 4002
 // 
 // 0 !HISTORY 2014-12-23 [PTadmin] Official Update 2014-02
 // 

@@ -13,7 +13,7 @@ function ldraw_lib__3822p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !KEYWORDS town
+// 0 !KEYWORDS BrickLink 3822pb001, Rebrickable 3822pr0002, Set 1067, town
 // 
 // 0 !CMDLINE -c15
 // 

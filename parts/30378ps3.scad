@@ -13,8 +13,9 @@ function ldraw_lib__30378ps3() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS battle, commander, droid, Episode 2, minifig-scale, Rocket
-// 0 !KEYWORDS separatists, set 75019, set 8086, Star Wars, The Clone Wars
+// 0 !KEYWORDS battle, commander, droid, Episode 2, minifig-scale
+// 0 !KEYWORDS Rebrickable 30378pr0002, Rocket, separatists, set 75019, set 8086
+// 0 !KEYWORDS Star Wars, The Clone Wars
 // 
 // 0 !CMDLINE -c484
 // 

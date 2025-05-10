@@ -14,6 +14,8 @@ function ldraw_lib__400() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink bp02a, Rebrickable upn0320
+// 
 // 0 !HISTORY 2004-09-21 [mikeheide] Corrected BFC
 // 0 !HISTORY 2009-05-02 [PTadmin] Official Update 2009-01
 // 

@@ -13,8 +13,8 @@ function ldraw_lib__2528ap34() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Bricklink 2528pb07, Metalbeard, Set 70807, Set 70810, The LEGO Movie
-// 0 !KEYWORDS Wrenches
+// 0 !KEYWORDS Bricklink 2528pb07, Metalbeard, Rebrickable 2528pr0005, Set 70807
+// 0 !KEYWORDS Set 70810, The LEGO Movie, Wrenches
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
 // 

@@ -12,8 +12,8 @@ function ldraw_lib__88646p05() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 88646pb010, CMF, Collectible Minifigures, Series 2
-// 0 !KEYWORDS set 71020, The Lego Batman Movie
+// 0 !KEYWORDS Bricklink 88646pb010, CMF, Collectible Minifigures
+// 0 !KEYWORDS Rebrickable 88646pr0003, Series 2, set 71020, The Lego Batman Movie
 // 
 // 0 !HISTORY 2024-12-01 [OrionP] Official Update 2024-10
 // 

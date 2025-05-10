@@ -18,7 +18,7 @@ function ldraw_lib__55295() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS hammer small, tools, toolset
+// 0 !KEYWORDS BrickLink 6246b, hammer small, tools, toolset
 // 
 // 0 !HISTORY 1998-07-15 [PTadmin] Official Update 1998-07
 // 0 !HISTORY 1999-07-05 [PTadmin] Official Update 1999-05

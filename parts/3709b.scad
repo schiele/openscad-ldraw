@@ -16,6 +16,8 @@ function ldraw_lib__3709b() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS Rebrickable 3709
+// 
 // 0 !HISTORY 1998-07-15 [PTadmin] Official Update 1998-07
 // 0 !HISTORY 2004-07-20 [guyvivan] Made BFC Compliant
 // 0 !HISTORY 2005-12-28 [PTadmin] Official Update 2005-01

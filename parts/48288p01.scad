@@ -12,7 +12,7 @@ function ldraw_lib__48288p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS BrickLink 48288pb04, Center Ice, Center Line, Hockey, Neutral Zone
-// 0 !KEYWORDS NHL, Rebrickable 48288pr0004
+// 0 !KEYWORDS NHL, Rebrickable 48288pr0004, Set 3578
 // 
 // 0 !HISTORY 2009-05-02 [PTadmin] Official Update 2009-01
 // 

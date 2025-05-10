@@ -11,7 +11,7 @@ function ldraw_lib__777p04() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !KEYWORDS classic, h0 scale
+// 0 !KEYWORDS classic, h0 scale, Rebrickable 777pr0004, Set 442A
 // 
 // 0 !HISTORY 1999-02-01 [PTadmin] Official Update 1999-01
 // 0 !HISTORY 2004-03-02 [PTadmin] Official Update 2004-01

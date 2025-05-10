@@ -12,7 +12,8 @@ function ldraw_lib__24093p04() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS Bricklink 24093pb053, CMF, set 71033, Statler, The Muppets
+// 0 !KEYWORDS Bricklink 24093pb053, CMF, Rebrickable 24093pr0030, set 71033
+// 0 !KEYWORDS Statler, The Muppets
 // 
 // 0 !HISTORY 2024-08-26 [OrionP] Official Update 2024-07
 // 

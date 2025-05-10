@@ -13,7 +13,8 @@ function ldraw_lib__3899p07() = [
 // 
 // 0 !CATEGORY Minifig Accessory
 // 0 !KEYWORDS Bricklink 3899pb007, cocoa, Coffee, Cookware, drink, Friends
-// 0 !KEYWORDS Heartlake City, mug, Set 41332, Set 41380, tea, town, utensil
+// 0 !KEYWORDS Heartlake City, mug, Rebrickable 3899pr0007, Set 41332, Set 41380
+// 0 !KEYWORDS tea, town, utensil
 // 
 // 0 !HISTORY 2022-09-15 [PTadmin] Official Update 2022-05
 // 

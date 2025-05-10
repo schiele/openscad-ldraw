@@ -15,7 +15,8 @@ function ldraw_lib__3004p07() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS frozen dessert, set 1062, set 6601, set 675, Set 7824, sweet, town
+// 0 !KEYWORDS BrickLink 3004pb005, frozen dessert, Rebrickable 3004pr9969
+// 0 !KEYWORDS set 1062, set 6601, set 675, Set 7824, sweet, town
 // 
 // 0 !HISTORY 2016-12-31 [PTadmin] Official Update 2016-01
 // 

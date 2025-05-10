@@ -14,9 +14,9 @@ function ldraw_lib__75902pb1() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS Bricklink 75902pb20, Brickowl 316184, Captain America, CMF
-// 0 !KEYWORDS Collectible Minifigures, Marvel Superheros, Rebrickable 75902pr0004
-// 0 !KEYWORDS Set 71031, Winter Soldier
+// 0 !KEYWORDS Bricklink 75902pb20, Captain America, CMF, Collectible Minifigures
+// 0 !KEYWORDS Marvel Superheros, Rebrickable 75902pr0004, Set 71031
+// 0 !KEYWORDS Winter Soldier
 // 
 // 0 !HISTORY 2024-05-28 [OrionP] Official Update 2024-04
 // 

@@ -17,8 +17,8 @@ function ldraw_lib__98119p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Bricklink 98119pb01, Brickowl 130266, Episode 1, Gungan Sub, Naboo
-// 0 !KEYWORDS Queen Amidala, Rebrickable 98119pr0001, set 9499, Star Wars
+// 0 !KEYWORDS Bricklink 98119pb01, Episode 1, Gungan Sub, Naboo, Queen Amidala
+// 0 !KEYWORDS Rebrickable 98119pr0001, set 9499, Star Wars
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

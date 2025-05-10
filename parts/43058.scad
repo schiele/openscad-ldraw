@@ -12,7 +12,7 @@ function ldraw_lib__43058() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Jack Stone
+// 0 !KEYWORDS BrickLink 42609c01, Jack Stone, Rebrickable 42609
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

@@ -12,6 +12,8 @@ function ldraw_lib__700a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink bb0340, Rebrickable 700b
+// 
 // 0 !HISTORY 2010-04-05 [PTadmin] Official Update 2010-01
 // 
 // 

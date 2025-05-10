@@ -12,7 +12,7 @@ function ldraw_lib__3815bpm1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Ãomer, Armor, Lord of the Rings, ThÃ©oden
+// 0 !KEYWORDS Ãomer, Armor, Lord of the Rings, set 9471, ThÃ©oden
 // 
 // 0 !CMDLINE -c72
 // 

@@ -11,6 +11,8 @@ function ldraw_lib__3068bp31() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
+// 0 !KEYWORDS BrickLink 3068pb0148, Rebrickable 3068bpr0139, Set 0756672805
+// 
 // 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01
 // 0 !HISTORY 2016-01-08 [MagFors] changed colour 72 to 28
 // 0 !HISTORY 2016-12-31 [PTadmin] Official Update 2016-01

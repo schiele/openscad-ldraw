@@ -18,7 +18,7 @@ function ldraw_lib__20596p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Bricklink 20596pb01, Brickowl 825364, CMF, Collectible Minifigures
+// 0 !KEYWORDS Bricklink 20596pb01, CMF, Collectible Minifigures
 // 0 !KEYWORDS Rebrickable 20596pr0001, Series 14, set 71010, Zombie Cheerleader
 // 
 // 0 !HISTORY 2016-03-18 {LEGO Digital Designer} Original part shape

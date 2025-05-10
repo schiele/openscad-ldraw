@@ -11,7 +11,8 @@ function ldraw_lib__3070bpz0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickheadz, BrickLink 3070bpb126, Minecraft, Set 41612
+// 0 !KEYWORDS Brickheadz, BrickLink 3070pb126, Minecraft, Rebrickable 3070bpr0187
+// 0 !KEYWORDS Set 41612
 // 
 // 0 !HISTORY 2019-09-09 [PTadmin] Official Update 2019-02
 // 

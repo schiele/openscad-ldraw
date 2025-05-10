@@ -14,8 +14,8 @@ function ldraw_lib__76382psh() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973px84c01, BrickOwl 457734, Echo Base, Episode V
-// 0 !KEYWORDS Hoth Rebel, Mini Upper Part No 373, Original Trilogy, Rebel Alliance
+// 0 !KEYWORDS Bricklink 973px84c01, Echo Base, Episode V, Hoth Rebel
+// 0 !KEYWORDS Mini Upper Part No 373, Original Trilogy, Rebel Alliance
 // 0 !KEYWORDS Rebrickable 973c17h27pr0084, set 7130, Snowspeeder, Star Wars
 // 0 !KEYWORDS The Empire Strikes Back
 // 

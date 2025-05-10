@@ -18,8 +18,8 @@ function ldraw_lib__3069bp0k() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3069bpb696, Candy Rapper, Collectible Minifigures
-// 0 !KEYWORDS The LEGO Movie 2
+// 0 !KEYWORDS BrickLink 3069pb0696, Candy Rapper, Collectible Minifigures
+// 0 !KEYWORDS Rebrickable 3069bpr0254, Set 71023-11, The LEGO Movie 2
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 

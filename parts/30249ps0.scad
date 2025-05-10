@@ -11,7 +11,8 @@ function ldraw_lib__30249ps0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS BrickLink 30249px1, Set 4477, Skyhopper, Star Wars, T-16
+// 0 !KEYWORDS BrickLink 30249px1, Rebrickable 30249pr0001, Set 4477, Skyhopper
+// 0 !KEYWORDS Star Wars, T-16
 // 
 // 0 !HISTORY 2011-07-25 [PTadmin] Official Update 2011-01
 // 0 !HISTORY 2021-01-16 [cwdee] Update description

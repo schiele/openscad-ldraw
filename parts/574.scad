@@ -19,6 +19,8 @@ function ldraw_lib__574() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 3634b, Rebrickable 3634b
+// 
 // 0 !HISTORY 2010-03-31 [Philo] Closed gaps with 3634b
 // 0 !HISTORY 2012-08-09 [PTadmin] Official Update 2012-02
 // 

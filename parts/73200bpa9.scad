@@ -17,11 +17,10 @@ function ldraw_lib__73200bpa9() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 970c00pb0040, Brickowl 705075, Indiana Jones
-// 0 !KEYWORDS Kingdom of the Crystal Skull, Last Crusade, Raiders of the Lost Ark
-// 0 !KEYWORDS Rebrickable 970c11pr9999, set 20004, set 7195, set 7196, set 7198
-// 0 !KEYWORDS set 7199, set 7620, set 7621, set 7624, set 7626, set 7683
-// 0 !KEYWORDS Temple of Doom
+// 0 !KEYWORDS Bricklink 970c00pb0040, Indiana Jones, Kingdom of the Crystal Skull
+// 0 !KEYWORDS Last Crusade, Raiders of the Lost Ark, Rebrickable 970c11pr9999
+// 0 !KEYWORDS set 20004, set 7195, set 7196, set 7198, set 7199, set 7620
+// 0 !KEYWORDS set 7621, set 7624, set 7626, set 7683, Temple of Doom
 // 
 // 0 !HISTORY 2011-07-25 [MagFors] Original design as 3815ca9
 // 0 !HISTORY 2023-05-26 [Holly-Wood] Adapted to corrected geometry

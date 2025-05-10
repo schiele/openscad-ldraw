@@ -17,7 +17,8 @@ function ldraw_lib__24108pe2() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS Nexo Knights, Weapon
+// 0 !KEYWORDS BrickLink 24108pb02, Nexo Knights, Rebrickable 24108pat0002
+// 0 !KEYWORDS Set 70356, Weapon
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
 // 

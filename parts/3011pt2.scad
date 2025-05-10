@@ -14,7 +14,8 @@ function ldraw_lib__3011pt2() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Brick
-// 0 !KEYWORDS bricklink 3011pb008, Police station, set 080-3, set 522-1
+// 0 !KEYWORDS bricklink 3011pb008, Police station, Rebrickable 3011pr0008
+// 0 !KEYWORDS set 080-3, set 522-1
 // 
 // 0 !HISTORY 2020-06-28 [PTadmin] Official Update 2020-01
 // 0 !HISTORY 2021-07-17 [RainbowDolphin] Subfiled the pattern

@@ -12,8 +12,8 @@ function ldraw_lib__10049p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS Bricklink 10049pb01, Lord of the Rings, Set 10237, Set 9476
-// 0 !KEYWORDS Uruk-hai
+// 0 !KEYWORDS Bricklink 10049pb01, Lord of the Rings, Rebrickable 10049pr0001
+// 0 !KEYWORDS Set 10237, Set 9476, Uruk-hai
 // 
 // 0 !HISTORY 2013-07-21 [PTadmin] Official Update 2013-01
 // 0 !HISTORY 2022-06-22 [Philo] Updated description, added keywords

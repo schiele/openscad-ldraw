@@ -13,7 +13,7 @@ function ldraw_lib__3821p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !KEYWORDS BrickLink 3821pb001, Rebrickable 3821pr0002, town
+// 0 !KEYWORDS BrickLink 3821pb001, Rebrickable 3821pr0002, Set 1067, town
 // 
 // 0 !CMDLINE -c15
 // 

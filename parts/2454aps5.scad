@@ -11,8 +11,9 @@ function ldraw_lib__2454aps5() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !KEYWORDS Bespin, Boba Fett, Cloud City, cold sleep, deep freeze, Set 7144
-// 0 !KEYWORDS Slave 1, Star Wars, suspended animation
+// 0 !KEYWORDS Bespin, Boba Fett, Bricklink 2454ps5, Cloud City, cold sleep
+// 0 !KEYWORDS deep freeze, Rebrickable 2454apr0003, Set 7144, Slave 1, Star Wars
+// 0 !KEYWORDS suspended animation
 // 
 // 0 !CMDLINE -c0
 // 

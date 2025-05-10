@@ -12,7 +12,8 @@ function ldraw_lib__49661p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bath, Bricklink 49661pb01, Rubber Duck, Set 41384, Set 60234
+// 0 !KEYWORDS Bath, Bricklink 49661pb01, Rebrickable 49661pr0001, Rubber Duck
+// 0 !KEYWORDS Set 41384, Set 60234
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 

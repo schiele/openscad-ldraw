@@ -13,8 +13,8 @@ function ldraw_lib__71591() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Castle, chrome, crest, decoration, gold, Ninja, Ninjago, samurai
-// 0 !KEYWORDS shogun
+// 0 !KEYWORDS BrickLink x60, Castle, chrome, crest, decoration, gold, Ninja
+// 0 !KEYWORDS Ninjago, Rebrickable 529, samurai, shogun
 // 
 // 0 !HISTORY 2003-08-01 [PTadmin] Official Update 2003-02
 // 0 !HISTORY 2003-11-04 [fwcain] added CMDLINE, KEYWORDS; fixed Title...

@@ -24,6 +24,8 @@ function ldraw_lib__10p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS Rebrickable 10apr0002, Set 354
+// 
 // 0 !HISTORY 2007-05-04 [PTadmin] Header formatted for Contributor Agreement
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
 // 0 !HISTORY 2013-02-03 [MMR1988] Add BFC, used studgroups, used 10s01.dat

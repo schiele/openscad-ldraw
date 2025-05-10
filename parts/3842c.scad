@@ -15,7 +15,8 @@ function ldraw_lib__3842c() = [
   [0,"BFC","CW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS astronaut, Castle, cosmonaut, knight, motocycle, rider, Space, town
+// 0 !KEYWORDS astronaut, BrickLink 193b1, Castle, cosmonaut, knight, motocycle
+// 0 !KEYWORDS rider, Space, town
 // 
 // 0 !HISTORY 2003-05-03 [Holly-Wood] added conditional lines, made BFC compliant
 // 0 !HISTORY 2004-03-02 [PTadmin] Official Update 2004-01

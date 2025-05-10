@@ -11,6 +11,8 @@ function ldraw_lib__2582p6u() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 2582pb08, Rebrickable 2582pr0002, set 6915
+// 
 // 0 !HISTORY 2011-07-25 [PTadmin] Official Update 2011-01
 // 
 // 

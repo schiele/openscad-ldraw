@@ -11,8 +11,8 @@ function ldraw_lib__3009p24() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS boat, Bricklink 3009p24, Brickowl 198818, ferry
-// 0 !KEYWORDS Rebrickable 3009pr0015, Set 1554, Silja Line Ferry, windows
+// 0 !KEYWORDS boat, ferry, Rebrickable 3009pr0015, Set 1554, Silja Line Ferry
+// 0 !KEYWORDS windows
 // 
 // 0 !HISTORY 2004-09-15 [PTadmin] Official Update 2004-03
 // 0 !HISTORY 2007-06-06 [PTadmin] Header formatted for Contributor Agreement

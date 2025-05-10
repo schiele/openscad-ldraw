@@ -17,7 +17,8 @@ function ldraw_lib__73200bpde4() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 970c00pb1203, Looney Tunes, Road Runner, Set 71031
+// 0 !KEYWORDS Bricklink 970c00pb1203, Looney Tunes, Rebrickable 970c41pr2017
+// 0 !KEYWORDS Road Runner, Set 71031
 // 
 // 0 !HISTORY 2024-08-26 [OrionP] Official Update 2024-07
 // 

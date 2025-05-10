@@ -13,7 +13,7 @@ function ldraw_lib__18675ps7() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 18675pb12, Set 75188, Star Wars
+// 0 !KEYWORDS Bricklink 18675pb12, Rebrickable 18675pr0013, Set 75188, Star Wars
 // 
 // 0 !HISTORY 2024-07-29 [OrionP] Official Update 2024-06
 // 

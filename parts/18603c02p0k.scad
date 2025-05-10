@@ -13,7 +13,7 @@ function ldraw_lib__18603c02p0k() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 18605c01pb40, Brickowl 978417, Dimensions, Electronic, NFC
+// 0 !KEYWORDS Bricklink 18605c01pb40, Dimensions, Electronic, NFC
 // 0 !KEYWORDS Rebrickable 19981pr0040, Set 71221, Toy Tag, Wicked Witch
 // 0 !KEYWORDS Wizard of Oz
 // 

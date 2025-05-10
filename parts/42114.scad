@@ -20,7 +20,7 @@ function ldraw_lib__42114() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS Dooku, saber, Star Wars
+// 0 !KEYWORDS BrickLink x156, Dooku, saber, Star Wars
 // 
 // 0 !HISTORY 2016-11-16 [Philo] Rebuilt to match LDD geometry
 // 0 !HISTORY 2016-12-31 [PTadmin] Official Update 2016-01

@@ -12,8 +12,9 @@ function ldraw_lib__6051c01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Armada, hull, Imperial Flagship, Pirate, Pirates, Renegade Runner
-// 0 !KEYWORDS set 6268, set 6271, ship, skull
+// 0 !KEYWORDS Armada, BrickLink 6050c05, hull, Imperial Flagship, Pirate, Pirates
+// 0 !KEYWORDS Rebrickable 6051c05, Renegade Runner, set 6268, set 6271, ship
+// 0 !KEYWORDS skull
 // 
 // 0 !HISTORY 2002-11-30 [PTadmin] Official Update 2002-05
 // 0 !HISTORY 2007-07-09 [PTadmin] Header formatted for Contributor Agreement

@@ -19,7 +19,7 @@ function ldraw_lib__92761() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Darth Maul, Sith Lord
+// 0 !KEYWORDS BrickLink 95747, Darth Maul, Sith Lord
 // 
 // 0 !HISTORY 2011-10-17 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2011-10-23 [MagFors] File preparation for LDraw Parts Tracker

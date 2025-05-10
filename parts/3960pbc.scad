@@ -13,7 +13,7 @@ function ldraw_lib__3960pbc() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3960pb059, Set 76111
+// 0 !KEYWORDS Bricklink 3960pb059, Rebrickable 3960pr0043, Set 76111
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
 // 

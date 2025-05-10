@@ -12,6 +12,8 @@ function ldraw_lib__58120c01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS Rebrickable 58120
+// 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
 // 
 // 

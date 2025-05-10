@@ -12,7 +12,7 @@ function ldraw_lib__4864bp71() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 4864apx15, Set 6422
+// 0 !KEYWORDS Bricklink 4864apx15, Rebrickable 4864apr0012, Set 6422
 // 
 // 0 !HISTORY 2010-04-05 [PTadmin] Official Update 2010-01
 // 0 !HISTORY 2022-06-22 [Philo] Updated description, added keywords

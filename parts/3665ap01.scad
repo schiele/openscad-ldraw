@@ -11,7 +11,8 @@ function ldraw_lib__3665ap01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS boat, ferry, Viking Line, windows
+// 0 !KEYWORDS boat, BrickLink 3665pb001, ferry, Rebrickable 3665pr0001, Set 1655
+// 0 !KEYWORDS Viking Line, windows
 // 
 // 0 !HISTORY 2010-07-05 [PTadmin] Official Update 2010-02
 // 0 !HISTORY 2016-01-11 [PTadmin] Renamed from 3665p01

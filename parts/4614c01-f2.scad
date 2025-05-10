@@ -13,6 +13,7 @@ function ldraw_lib__4614c01_f2() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Figure Accessory
+// 0 !KEYWORDS BrickLink 4614c01, Rebrickable 4614
 // 
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
 // 0 !HISTORY 2020-11-15 [cwdee] Update description

@@ -14,7 +14,7 @@ function ldraw_lib__76443() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Adventurers
+// 0 !KEYWORDS Adventurers, BrickLink 30463, Rebrickable 30463
 // 
 // 0 !HISTORY 2011-11-06 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2011-11-09 [angmarec] File preparation for LDraw Parts Tracker

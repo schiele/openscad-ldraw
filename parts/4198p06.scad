@@ -12,7 +12,8 @@ function ldraw_lib__4198p06() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Brick
-// 0 !KEYWORDS Baby set, bricklink 4198px14, Set 1500, Set 2040, Set 2073, Set 2074
+// 0 !KEYWORDS Baby set, bricklink 4198px14, Rebrickable 4198pr9988, Set 1500
+// 0 !KEYWORDS Set 2040, Set 2073, Set 2074
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 

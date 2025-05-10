@@ -13,7 +13,8 @@ function ldraw_lib__44375aps1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS AT-TE, Radar Dish, Round, Space, Star Wars
+// 0 !KEYWORDS AT-TE, BrickLink 44375apb01, Radar Dish, Rebrickable 44375apr0004
+// 0 !KEYWORDS Round, Set 4482, Space, Star Wars
 // 
 // 0 !HISTORY 2012-08-09 [PTadmin] Official Update 2012-02
 // 0 !HISTORY 2019-03-24 [PTadmin] Renamed from 44375p01

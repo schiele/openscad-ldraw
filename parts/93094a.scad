@@ -13,6 +13,7 @@ function ldraw_lib__93094a() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Figure Accessory
+// 0 !KEYWORDS Bricklink 93094pb02, Rebrickable 93094
 // 
 // 0 !HISTORY 2020-06-28 [PTadmin] Official Update 2020-01
 // 

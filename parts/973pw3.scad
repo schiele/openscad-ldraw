@@ -16,9 +16,10 @@ function ldraw_lib__973pw3() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS army, cavalry, Corporal, enlisted, horse troops, insignia, Military
-// 0 !KEYWORDS NCO, Private, Sergeant, soldier, suspenders, trooper, U.S. Army
-// 0 !KEYWORDS Uniform, United States, veteran, western, wild west
+// 0 !KEYWORDS army, BrickLink 973px42, cavalry, Corporal, enlisted, horse troops
+// 0 !KEYWORDS insignia, Military, NCO, Private, Sergeant, set 6706, soldier
+// 0 !KEYWORDS suspenders, trooper, U.S. Army, Uniform, United States, veteran
+// 0 !KEYWORDS western, wild west
 // 
 // 0 !CMDLINE -c1
 // 

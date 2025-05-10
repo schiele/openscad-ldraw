@@ -18,7 +18,7 @@ function ldraw_lib__56823_f1() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS Bricklink x77ac20, set 4564
+// 0 !KEYWORDS BrickLink x77ac200, Rebrickable 56823c200, set 4564
 // 
 // 0 !CMDLINE -c0
 // 

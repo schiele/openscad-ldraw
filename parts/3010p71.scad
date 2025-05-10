@@ -12,6 +12,8 @@ function ldraw_lib__3010p71() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 3010px1, Rebrickable 3010pr9982, set 4223
+// 
 // 0 !HISTORY 2009-05-02 [PTadmin] Official Update 2009-01
 // 0 !HISTORY 2013-03-02 [MagFors] Used pattern subfile
 // 0 !HISTORY 2014-06-21 [PTadmin] Official Update 2014-01

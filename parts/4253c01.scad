@@ -13,6 +13,7 @@ function ldraw_lib__4253c01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Door
+// 0 !KEYWORDS BrickLink 4253, Rebrickable 4253
 // 
 // 0 !HISTORY 2022-12-20 [PTadmin] Official Update 2022-06
 // 

@@ -12,7 +12,8 @@ function ldraw_lib__75902ps1() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS Bricklink 75902pb07, Millennium Falcon, Set 75105, Star Wars
+// 0 !KEYWORDS Bricklink 75902pb07, Millennium Falcon, Rebrickable 75902pr0007
+// 0 !KEYWORDS Set 75105, Star Wars
 // 
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
 // 

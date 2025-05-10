@@ -12,8 +12,7 @@ function ldraw_lib__98138p2s() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 98138pb172, Brickowl 571828, Rebrickable 98138pr9995
-// 0 !KEYWORDS Set 71374
+// 0 !KEYWORDS Bricklink 98138pb172, Rebrickable 98138pr9995, Set 71374
 // 
 // 0 !HISTORY 2024-05-22 [Cheenzo] Removed unnecessary vertices
 // 0 !HISTORY 2024-12-31 [ejboer] Removed vertice and T-junction

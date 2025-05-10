@@ -14,10 +14,9 @@ function ldraw_lib__76382pq6() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb0835c01, BrickOwl 624528, Bricks and More
-// 0 !KEYWORDS Helena Tova Skvalling, Lego Brand Store, Mini Upper Part No 1724
-// 0 !KEYWORDS Pharaoh's Quest, Rebrickable 973c27h01pr1724, Seasonal, Set 4637
-// 0 !KEYWORDS Set 7325
+// 0 !KEYWORDS Bricklink 973pb0835c01, Bricks and More, Helena Tova Skvalling
+// 0 !KEYWORDS Lego Brand Store, Mini Upper Part No 1724, Pharaoh's Quest
+// 0 !KEYWORDS Rebrickable 973c27h01pr1724, Seasonal, Set 4637, Set 7325
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

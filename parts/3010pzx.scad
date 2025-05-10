@@ -12,7 +12,8 @@ function ldraw_lib__3010pzx() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickheadz, Bricklink 3010pb224, Kylo Ren, Set 41603, Star Wars
+// 0 !KEYWORDS Brickheadz, Bricklink 3010pb224, Kylo Ren, Rebrickable 3010pr0002
+// 0 !KEYWORDS Set 41603, Star Wars
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 

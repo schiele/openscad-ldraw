@@ -12,8 +12,8 @@ function ldraw_lib__4066bp0h() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Brick
-// 0 !KEYWORDS bricklink 4066apx165, Nursery, School, Set 1045, Set 2442, Set 2645
-// 0 !KEYWORDS Set 9152
+// 0 !KEYWORDS bricklink 4066apx165, Nursery, Rebrickable 4066pr0055, School
+// 0 !KEYWORDS Set 1045, Set 2442, Set 2645, Set 9152
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
 // 

@@ -14,8 +14,8 @@ function ldraw_lib__3626cpcbe() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bobby, Bricklink 3626cpb0999, Brickowl 222494, CMF Series 11
-// 0 !KEYWORDS Constable, Rebrickable 3626cpr1239
+// 0 !KEYWORDS Bobby, BrickLink 3626pb0999, CMF Series 11, Constable
+// 0 !KEYWORDS Rebrickable 3626cpr1239
 // 
 // 0 !HISTORY 2015-12-30 [PTadmin] Official Update 2015-02
 // 0 !HISTORY 2024-10-26 [Lego-Manfred] Reference added

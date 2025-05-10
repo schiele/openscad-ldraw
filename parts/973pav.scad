@@ -15,7 +15,7 @@ function ldraw_lib__973pav() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Armor, Power Miners
+// 0 !KEYWORDS Armor, BrickLink 973pb0616, Power Miners, Set 8188
 // 
 // 0 !HISTORY 2013-07-21 [PTadmin] Official Update 2013-01
 // 0 !HISTORY 2020-11-14 [cwdee] Correct description

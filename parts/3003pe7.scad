@@ -17,7 +17,7 @@ function ldraw_lib__3003pe7() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS BrickLink 3003pb129, Set 71381
+// 0 !KEYWORDS BrickLink 3003pb129, Rebrickable 3003pr0156, Set 71381
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
 // 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives

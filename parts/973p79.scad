@@ -15,6 +15,8 @@ function ldraw_lib__973p79() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS Set 6435
+// 
 // 0 !HISTORY 2009-12-29 [PTadmin] Official Update 2009-03
 // 0 !HISTORY 2014-11-21 [roland] Auto-corrected with libfix version of LDCad 1.4
 // 0 !HISTORY 2014-12-26 [Philo] Removed emphasis lines, corrected concave quad and some T-junctions

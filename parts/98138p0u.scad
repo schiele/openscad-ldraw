@@ -13,7 +13,7 @@ function ldraw_lib__98138p0u() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 98138pb133, Dots
+// 0 !KEYWORDS Bricklink 98138pb133, Dots, Rebrickable 98138pr0139, Set DOTS-SERIES
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
 // 

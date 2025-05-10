@@ -31,7 +31,8 @@ function ldraw_lib__u609() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Car, Engine, Fabuland, Jalopy, Motor, Vehicle
+// 0 !KEYWORDS BrickLink fabaj3, Car, Engine, Fabuland, Jalopy, Motor
+// 0 !KEYWORDS Rebrickable fabupn0039, Vehicle
 // 
 // 0 !HISTORY 2015-10-11 [PTadmin] Official Update 2015-01
 // 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives

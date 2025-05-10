@@ -14,9 +14,8 @@ function ldraw_lib__3626bp64() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Ann Droid, Bricklink 3626bpb0005, Brickowl 930793, clear headed
-// 0 !KEYWORDS droid, Exploriens, Rebrickable 3626bpr0022, set 1858, set 6958
-// 0 !KEYWORDS set 6982
+// 0 !KEYWORDS Ann Droid, BrickLink 3626pb0005, clear headed, droid, Exploriens
+// 0 !KEYWORDS Rebrickable 3626bpr0022, set 1858, set 6958, set 6982
 // 
 // 0 !CMDLINE -c47
 // 

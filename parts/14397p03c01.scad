@@ -13,7 +13,7 @@ function ldraw_lib__14397p03c01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS Bricklink 14396c01pb04, Gingerbread House, Gingerbread Woman
-// 0 !KEYWORDS Set 10267
+// 0 !KEYWORDS Rebrickable 14379pr0006, Set 10267
 // 
 // 0 !HISTORY 2022-12-20 [PTadmin] Official Update 2022-06
 // 

@@ -12,8 +12,8 @@ function ldraw_lib__98386p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 98386pb01, Dog, Friends, Scarlett, Set 3188, Set 3942
-// 0 !KEYWORDS Set 41011
+// 0 !KEYWORDS Bricklink 98386pb01, Dog, Friends, Rebrickable 98386pr0001, Scarlett
+// 0 !KEYWORDS Set 3188, Set 3942, Set 41011
 // 
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04
 // 

@@ -13,8 +13,8 @@ function ldraw_lib__6251p03() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 6251pb03, creature, mousetrap, pet, set 10229, set 10235
-// 0 !KEYWORDS set 45022, set 4842
+// 0 !KEYWORDS Bricklink 6251pb03, creature, mousetrap, pet, Rebrickable 6251pr0003
+// 0 !KEYWORDS set 10229, set 10235, set 45022, set 4842
 // 
 // 0 !HISTORY 2022-12-20 [PTadmin] Official Update 2022-06
 // 

@@ -15,9 +15,9 @@ function ldraw_lib__76382pa1() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS Adventurers, amazon, Archaeologist, Archaeology, bands, belt
-// 0 !KEYWORDS belt buckle, Bricklink 973pa1c01, BrickOwl 359528, buttons, collar
-// 0 !KEYWORDS desert, Dino Island, doctor, Dr. Charles Lightning, Dr. Kilroy
-// 0 !KEYWORDS Egypt, Jungle, Mini Upper Part No 280, Museum, old man, professor
+// 0 !KEYWORDS belt buckle, Bricklink 973pa1c01, buttons, collar, desert
+// 0 !KEYWORDS Dino Island, doctor, Dr. Charles Lightning, Dr. Kilroy, Egypt
+// 0 !KEYWORDS Jungle, Mini Upper Part No 280, Museum, old man, professor
 // 0 !KEYWORDS Professor Articus, Rebrickable 973c27h01pr0001, Set 1280, set 2879
 // 0 !KEYWORDS Set 2995, Set 5904, set 5909, Set 5913, Set 5934, set 5948, set 5958
 // 0 !KEYWORDS Set 5965, set 5975, set 5976, set 5978, set 5986, set 5987, set 5988

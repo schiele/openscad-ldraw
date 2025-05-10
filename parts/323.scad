@@ -19,7 +19,7 @@ function ldraw_lib__323() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !KEYWORDS Electric, Vintage
+// 0 !KEYWORDS BrickLink x456a, Electric, Rebrickable upn0253a, Vintage
 // 
 // 0 !CMDLINE -c383
 // 

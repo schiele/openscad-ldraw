@@ -14,7 +14,7 @@ function ldraw_lib__76382p3d() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973px136c01, BrickOwl 711534, Imperial Armada, Pirates
+// 0 !KEYWORDS Bricklink 973px136c01, Imperial Armada, Pirates
 // 0 !KEYWORDS Rebrickable 973c22h01pr0136, set 6291, Spaniard
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01

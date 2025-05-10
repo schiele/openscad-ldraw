@@ -12,6 +12,8 @@ function ldraw_lib__30259a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 892, Rebrickable 30259
+// 
 // 0 !HISTORY 2024-06-27 [Philo] Based on John Van Zwieten's design
 // 0 !HISTORY 2024-06-30 [OrionP] Official Update 2024-05
 // 

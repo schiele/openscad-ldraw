@@ -12,7 +12,7 @@ function ldraw_lib__93606p03() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 93606pb155R, curve, Rebrickable 93606pr0009, Set 10294
+// 0 !KEYWORDS Bricklink 93606pb155L, curve, Rebrickable 93606pr0008, Set 10294
 // 0 !KEYWORDS Titanic, wedge
 // 
 // 0 !HISTORY 2024-05-28 [OrionP] Official Update 2024-04

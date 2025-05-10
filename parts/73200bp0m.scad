@@ -17,7 +17,8 @@ function ldraw_lib__73200bp0m() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 970c00pb0355, Set 71340, set 76040, Supergirl
+// 0 !KEYWORDS Bricklink 970c00pb0355, Rebrickable 970c22pr0768, Set 71340
+// 0 !KEYWORDS set 76040, Supergirl
 // 
 // 0 !HISTORY 2024-12-01 [OrionP] Official Update 2024-10
 // 

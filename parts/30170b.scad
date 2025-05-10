@@ -16,8 +16,9 @@ function ldraw_lib__30170b() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Adventurers, barnstormer, Fighter, glasses, hat, helmet, lenses
-// 0 !KEYWORDS Naboo, pilot, pod race, Race, skullcap, Star Wars
+// 0 !KEYWORDS Adventurers, barnstormer, BrickLink 30170, Fighter, glasses, hat
+// 0 !KEYWORDS helmet, lenses, Naboo, pilot, pod race, Race, Rebrickable 30170
+// 0 !KEYWORDS skullcap, Star Wars
 // 
 // 0 !HISTORY 2016-03-18 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2024-07-19 [MagFors] File preparation for LDraw Parts Tracker

@@ -12,6 +12,8 @@ function ldraw_lib__2869c02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 2868b, Rebrickable 2868b
+// 
 // 0 !HISTORY 2013-09-02 [MMR1988] Creation
 // 0 !HISTORY 2014-12-23 [PTadmin] Official Update 2014-02
 // 

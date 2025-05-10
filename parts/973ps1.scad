@@ -16,8 +16,8 @@ function ldraw_lib__973ps1() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS B-Wing Starfighter, chestplate, Classic Trilogy, flight suit
-// 0 !KEYWORDS jumpsuit, lifevest, Military, Rebel Alliance, Snowspeeder, Star Wars
-// 0 !KEYWORDS Uniform, X-Wing Starfighter, Y-Wing Starfighter
+// 0 !KEYWORDS jumpsuit, lifevest, Military, Rebel Alliance, Set 4483, Snowspeeder
+// 0 !KEYWORDS Star Wars, Uniform, X-Wing Starfighter, Y-Wing Starfighter
 // 
 // 0 !HISTORY 2000-11-05 [cwdee] Moved neck mark from s\973s01.dat and added missing back
 // 0 !HISTORY 2001-10-26 [PTadmin] Official Update 2001-01

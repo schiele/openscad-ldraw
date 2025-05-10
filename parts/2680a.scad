@@ -12,7 +12,8 @@ function ldraw_lib__2680a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS girder, leg, Monorail, Space, stand
+// 0 !KEYWORDS BrickLink 2680, girder, leg, Monorail, Rebrickable 2680, Space
+// 0 !KEYWORDS stand
 // 
 // 0 !HISTORY 1998-10-15 [PTadmin] Official Update 1998-09
 // 0 !HISTORY 1999-07-05 [PTadmin] Official Update 1999-05

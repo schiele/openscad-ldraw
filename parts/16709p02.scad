@@ -12,7 +12,8 @@ function ldraw_lib__16709p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bart, Set 6059283, Simpson, The Simpsons
+// 0 !KEYWORDS Bart, BrickLink 41879pb002, Rebrickable 16709pats01pr0001
+// 0 !KEYWORDS Set 6059283, Simpson, The Simpsons
 // 
 // 0 !HISTORY 2014-12-23 [PTadmin] Official Update 2014-02
 // 

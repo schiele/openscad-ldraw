@@ -14,8 +14,8 @@ function ldraw_lib__76382pgb() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb0368c01, BrickOwl 117879, Championship Challenge
-// 0 !KEYWORDS football, Green Team, Rebrickable 973c31h01pr0368, Set 3409, Sports
+// 0 !KEYWORDS Bricklink 973pb0368c01, Championship Challenge, football, Green Team
+// 0 !KEYWORDS Rebrickable 973c31h01pr0368, Set 3409, Sports
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

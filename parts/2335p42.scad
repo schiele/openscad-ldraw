@@ -12,7 +12,8 @@ function ldraw_lib__2335p42() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 2335px10, Knights Kingdom, Set 4816, Set 6091, Set 6098
+// 0 !KEYWORDS Bricklink 2335px10, Knights Kingdom, Rebrickable 2335pr0025
+// 0 !KEYWORDS Set 4816, Set 6091, Set 6098
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 

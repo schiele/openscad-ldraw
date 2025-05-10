@@ -15,7 +15,8 @@ function ldraw_lib__3626bph8() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Harry Potter, set 10217, set 4738, set 4865
+// 0 !KEYWORDS BrickLink 3626pb0493, Harry Potter, Rebrickable 3626bpr0709
+// 0 !KEYWORDS set 10217, set 4738, set 4865
 // 
 // 0 !CMDLINE -c78
 // 

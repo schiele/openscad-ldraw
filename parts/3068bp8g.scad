@@ -11,8 +11,8 @@ function ldraw_lib__3068bp8g() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3068pb1882, Brickowl 394777, child, Children, Kids
-// 0 !KEYWORDS Rebrickable 3068bpr0608, Set 60330
+// 0 !KEYWORDS Bricklink 3068pb1882, child, Children, Kids, Rebrickable 3068bpr0608
+// 0 !KEYWORDS Set 60330
 // 
 // 0 !HISTORY 2024-07-29 [OrionP] Official Update 2024-06
 // 

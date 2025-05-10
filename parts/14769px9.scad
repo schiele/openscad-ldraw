@@ -12,8 +12,8 @@ function ldraw_lib__14769px9() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Birdo, Bricklink 14769pb573, Brickowl 737182, Mario
-// 0 !KEYWORDS Rebrickable 14769pr1254, Set 71414
+// 0 !KEYWORDS Birdo, Bricklink 14769pb573, Mario, Rebrickable 14769pr1254
+// 0 !KEYWORDS Set 71414
 // 
 // 0 !HISTORY 2024-07-29 [OrionP] Official Update 2024-06
 // 

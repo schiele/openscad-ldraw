@@ -13,6 +13,7 @@ function ldraw_lib__74656p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Vehicle
+// 0 !KEYWORDS BrickLink 2312c02, Rebrickable 2312c02, Set 1501
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 

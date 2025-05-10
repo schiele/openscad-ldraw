@@ -17,8 +17,8 @@ function ldraw_lib__73200bps6() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 970c00pb1284, Brickowl 203729, Mace Windu
-// 0 !KEYWORDS Rebrickable 970c11pr2144, Set 75309, Set 75342, Star Wars
+// 0 !KEYWORDS Bricklink 970c00pb1284, Mace Windu, Rebrickable 970c11pr2144
+// 0 !KEYWORDS Set 75309, Set 75342, Star Wars
 // 
 // 0 !HISTORY 2023-06-24 [OrionP] Official Update 2023-03
 // 

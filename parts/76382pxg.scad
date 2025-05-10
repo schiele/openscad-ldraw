@@ -14,9 +14,9 @@ function ldraw_lib__76382pxg() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb2528c01, BrickOwl 345215, Dimensions
-// 0 !KEYWORDS Mini Upper Part No 3499, Rebrickable 973c26h27pr3499, Sega
-// 0 !KEYWORDS Set 71244, Sonic the Hedgehog, videogame
+// 0 !KEYWORDS Bricklink 973pb2528c01, Dimensions, Mini Upper Part No 3499
+// 0 !KEYWORDS Rebrickable 973c26h27pr3499, Sega, Set 71244, Sonic the Hedgehog
+// 0 !KEYWORDS videogame
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

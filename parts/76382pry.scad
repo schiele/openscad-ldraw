@@ -14,7 +14,7 @@ function ldraw_lib__76382pry() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973px86c01, BrickOwl 862124, Leia, Princess, Rebel
+// 0 !KEYWORDS Bricklink 973px86c01, Leia, Princess, Rebel
 // 0 !KEYWORDS Rebrickable 973c27h01pr0086, set 7190, Star Wars, yellow hands
 // 
 // 0 !HISTORY 2024-12-30 [OrionP] Official Update 2024-11

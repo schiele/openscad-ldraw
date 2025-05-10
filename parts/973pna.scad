@@ -12,8 +12,8 @@ function ldraw_lib__973pna() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Dual, Grand, master, Ninja, Ninjago, Robe, Sensei Wu, tarragon
-// 0 !KEYWORDS teacher, white undershirt
+// 0 !KEYWORDS Dual, Grand, master, Ninja, Ninjago, Robe, Sensei Wu, Set 2255
+// 0 !KEYWORDS tarragon, teacher, white undershirt
 // 
 // 0 !CMDLINE -c0
 // 

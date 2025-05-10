@@ -12,7 +12,7 @@ function ldraw_lib__100943p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Audi, Bricklink 3468c01, e-tron, set 42160
+// 0 !KEYWORDS Audi, Bricklink 3468c01, e-tron, Rebrickable 100943, set 42160
 // 
 // 0 !HISTORY 2024-05-28 [OrionP] Official Update 2024-04
 // 

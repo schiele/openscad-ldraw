@@ -11,7 +11,8 @@ function ldraw_lib__92586p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Alsatian, Bricklink 92586pb01, police, set 7285
+// 0 !KEYWORDS Alsatian, Bricklink 92586pb01, police, Rebrickable 92586pr0001
+// 0 !KEYWORDS set 7285
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
 // 

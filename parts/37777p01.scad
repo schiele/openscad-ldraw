@@ -12,8 +12,8 @@ function ldraw_lib__37777p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 37777pb01, HP, Rubeus Hagrid, Set 75947, set 75954
-// 0 !KEYWORDS Set 75978, set 76417, set 76423
+// 0 !KEYWORDS Bricklink 37777pb01, HP, Rebrickable 37777pr0002, Rubeus Hagrid
+// 0 !KEYWORDS Set 75947, set 75954, Set 75978, set 76417, set 76423
 // 
 // 0 !HISTORY 2024-09-30 [OrionP] Official Update 2024-08
 // 

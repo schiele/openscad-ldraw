@@ -12,8 +12,8 @@ function ldraw_lib__98138p2m() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS adventure, Bricklink 98138pb180, Brickowl 82468, Dots
-// 0 !KEYWORDS Rebrickable 98138pr0084, Set 41918
+// 0 !KEYWORDS adventure, Bricklink 98138pb180, Dots, Rebrickable 98138pr0084
+// 0 !KEYWORDS Set 41918
 // 
 // 0 !HISTORY 2024-08-26 [OrionP] Official Update 2024-07
 // 

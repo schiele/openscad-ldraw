@@ -11,7 +11,7 @@ function ldraw_lib__2431p12() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 2431p12, grid, grooves, set 10016, set 6483, sonar
+// 0 !KEYWORDS grid, grooves, Rebrickable 2431pr0018, set 10016, set 6483, sonar
 // 
 // 0 !HISTORY 1998-03-23 [PTadmin] Official Update 1998-03
 // 0 !HISTORY 2003-12-14 [OrionP] Changed lines to quads, BFC'd

@@ -14,8 +14,8 @@ function ldraw_lib__76382pdf() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS blood, Bricklink 973px165c01, BrickOwl 183822, cape, Dracula, fang
-// 0 !KEYWORDS gold, horror, Mini Upper Part No 626, Monster, Movie, ornate
+// 0 !KEYWORDS blood, Bricklink 973px165c01, cape, Dracula, fang, gold, horror
+// 0 !KEYWORDS Mini Upper Part No 626, Monster, Movie, ornate
 // 0 !KEYWORDS Rebrickable 973c03h27pr0165, scary, Set 1381, Spooky, Studios
 // 0 !KEYWORDS undead, vampire
 // 

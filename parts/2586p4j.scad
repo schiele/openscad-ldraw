@@ -13,7 +13,7 @@ function ldraw_lib__2586p4j() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS Bricklink 2586px14, Set 7092
+// 0 !KEYWORDS Bricklink 2586px14, Rebrickable 2586pr0024, Set 7092
 // 
 // 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02
 // 0 !HISTORY 2022-01-15 [OrionP] Update description, add set keyword

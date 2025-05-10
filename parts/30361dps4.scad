@@ -22,7 +22,8 @@ function ldraw_lib__30361dps4() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS astromech, droid, minifig, R2-R7, Star Wars
+// 0 !KEYWORDS astromech, BrickLink 30361pb001, droid, minifig, R2-R7
+// 0 !KEYWORDS Rebrickable 30361cpr0001, set 7665, Star Wars
 // 
 // 0 !HISTORY 2012-12-28 [PTadmin] Official Update 2012-03
 // 

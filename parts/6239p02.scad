@@ -11,7 +11,8 @@ function ldraw_lib__6239p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Design 43218, Rudder 2X6X4 No.2
+// 0 !KEYWORDS BrickLink 6239pb073, Design 43218, Rebrickable 6239pr0002
+// 0 !KEYWORDS Rudder 2X6X4 No.2, Set 5005830
 // 
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
 // 

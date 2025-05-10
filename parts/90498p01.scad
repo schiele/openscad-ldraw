@@ -11,7 +11,8 @@ function ldraw_lib__90498p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS bricklink 90498pb16, Manchester United, Old Trafford, Set 10272
+// 0 !KEYWORDS bricklink 90498pb16, Manchester United, Old Trafford
+// 0 !KEYWORDS Rebrickable 90498pr0004, Set 10272
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
 // 

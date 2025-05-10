@@ -14,8 +14,8 @@ function ldraw_lib__30375ps3() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS Attack of the Clones, blue droid, Episode 1, Episode 2
-// 0 !KEYWORDS minifig-scale, pilot, set 7126, Star Wars, The Phantom Menace
-// 0 !KEYWORDS Trade Federation
+// 0 !KEYWORDS minifig-scale, pilot, Rebrickable 30375pr0007, set 7126, Star Wars
+// 0 !KEYWORDS The Phantom Menace, Trade Federation
 // 
 // 0 !CMDLINE -c487
 // 

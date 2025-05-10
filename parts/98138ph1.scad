@@ -13,7 +13,8 @@ function ldraw_lib__98138ph1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 98138pb309, Extendable ear, Harry Potter, Set 76408
+// 0 !KEYWORDS Bricklink 98138pb309, Extendable ear, Harry Potter
+// 0 !KEYWORDS Rebrickable 98138pr0322, Set 76408
 // 
 // 0 !HISTORY 2023-11-19 [OrionP] Official Update 2023-06
 // 

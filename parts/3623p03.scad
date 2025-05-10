@@ -12,7 +12,7 @@ function ldraw_lib__3623p03() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS 1970, Bricklink 3623pb023, Charger, Dodge, Dominic, Fast & Furious
-// 0 !KEYWORDS R/T, Set 76912, Speed Champions, Toretto
+// 0 !KEYWORDS R/T, Rebrickable 3623pr0031, Set 76912, Speed Champions, Toretto
 // 
 // 0 !HISTORY 2022-12-20 [PTadmin] Official Update 2022-06
 // 

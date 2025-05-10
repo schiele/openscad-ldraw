@@ -14,7 +14,7 @@ function ldraw_lib__2431p53() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 2431pb745, Rebrickable 2431pr9996, Set 60252
+// 0 !KEYWORDS Bricklink 2431pb745, Rebrickable 2431pr0157, Set 60252
 // 
 // 0 !HISTORY 2024-07-20 [MagFors] Used pattern subfiles
 // 0 !HISTORY 2024-07-29 [OrionP] Official Update 2024-06

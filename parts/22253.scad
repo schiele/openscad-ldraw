@@ -15,7 +15,7 @@ function ldraw_lib__22253() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS 49.6 x 28 VR, 6595
+// 0 !KEYWORDS 49.6 x 28 VR, 6595, BrickLink 6595
 // 
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
 // 

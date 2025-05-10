@@ -14,7 +14,7 @@ function ldraw_lib__76382pm9() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Attack on Weathertop, Bricklink 973pb1141c01, BrickOwl 698187, evil
+// 0 !KEYWORDS Attack on Weathertop, Bricklink 973pb1141c01, evil
 // 0 !KEYWORDS Lord of the Rings, Mini Upper Part No 2077, Mordor, Nazgul
 // 0 !KEYWORDS Rebrickable 973c03h03pr2077, Ringwraith, Robes, set 9472, undead
 // 

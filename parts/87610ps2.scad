@@ -21,7 +21,7 @@ function ldraw_lib__87610ps2() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Bricklink 87610pb03, Pre Vizsla, Set 9525
+// 0 !KEYWORDS Bricklink 87610pb03, Pre Vizsla, Rebrickable 87610pr0007, Set 9525
 // 
 // 0 !CMDLINE -c148
 // 

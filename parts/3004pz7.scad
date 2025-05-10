@@ -19,7 +19,7 @@ function ldraw_lib__3004pz7() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS Back To The Future, Brickheadz, BrickLink 3004pb165, Doc Brown
-// 0 !KEYWORDS Ghettoblaster, Set 41611
+// 0 !KEYWORDS Ghettoblaster, Rebrickable 3004pr0035, Set 41611
 // 
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
 // 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives

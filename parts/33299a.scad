@@ -16,6 +16,8 @@ function ldraw_lib__33299a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 33299
+// 
 // 0 !HISTORY 2004-10-31 [guyvivan] Made BFC compliant
 // 0 !HISTORY 2009-05-02 [PTadmin] Official Update 2009-01
 // 0 !HISTORY 2013-06-01 [arezey] Moved common geometry to subfile

@@ -14,8 +14,8 @@ function ldraw_lib__3626bp68() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626bpx157, Brickowl 792002, Rebrickable 3626bpr0038
-// 0 !KEYWORDS Roboforce, Set 2154, set 6705, Set 6991, Unitron
+// 0 !KEYWORDS BrickLink 3626px157, Rebrickable 3626bpr0038, Roboforce, Set 2154
+// 0 !KEYWORDS set 6705, Set 6991, Unitron
 // 
 // 0 !HISTORY 2014-12-23 [PTadmin] Official Update 2014-02
 // 0 !HISTORY 2024-08-21 [Lego-Manfred] References and sets added

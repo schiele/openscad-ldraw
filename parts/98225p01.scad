@@ -15,7 +15,7 @@ function ldraw_lib__98225p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Brick
-// 0 !KEYWORDS Bricklink 98225pb005, Cylinder, Set 10875
+// 0 !KEYWORDS Bricklink 98225pb005, Cylinder, Rebrickable 98225pr0004, Set 10875
 // 
 // 0 !HISTORY 2020-12-12 {LEGO/Unity Microgame} Original part shape
 // 0 !HISTORY 2021-01-04 [Philo] File preparation for LDraw Parts Tracker

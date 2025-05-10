@@ -15,6 +15,7 @@ function ldraw_lib__600880c01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Hipwear
+// 0 !KEYWORDS BrickLink 99257, Rebrickable 99257
 // 
 // 0 !HISTORY 2015-10-11 [PTadmin] Official Update 2015-01
 // 

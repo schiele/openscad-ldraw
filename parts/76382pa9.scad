@@ -14,10 +14,10 @@ function ldraw_lib__76382pa9() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Archaeology, Bricklink 973pb0131c01, BrickOwl 572293, Indiana Jones
-// 0 !KEYWORDS Indy, Mini Upper Pat No 1370, Rebrickable 973c07h02pr1370, set
-// 0 !KEYWORDS set 20004, set 7196, set 7198, set 7620, set 7621, Set 7622
-// 0 !KEYWORDS Set 7623, set 7624, Set 7625, set 7626, Set 7627, Set 7628, set 7683
+// 0 !KEYWORDS Archaeology, Bricklink 973pb0131c01, Indiana Jones, Indy
+// 0 !KEYWORDS Mini Upper Pat No 1370, Rebrickable 973c07h02pr1370, set, set 20004
+// 0 !KEYWORDS set 7196, set 7198, set 7620, set 7621, Set 7622, Set 7623, set 7624
+// 0 !KEYWORDS Set 7625, set 7626, Set 7627, Set 7628, set 7683
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

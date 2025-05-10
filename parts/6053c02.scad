@@ -12,7 +12,8 @@ function ldraw_lib__6053c02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS airship, Flying Time Vessel, hull, set 6493, ship, Time Cruisers
+// 0 !KEYWORDS airship, BrickLink 6052c03, Flying Time Vessel, hull
+// 0 !KEYWORDS Rebrickable 6053c03, set 6493, ship, Time Cruisers
 // 
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
 // 

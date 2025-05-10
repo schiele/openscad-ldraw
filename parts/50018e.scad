@@ -35,7 +35,7 @@ function ldraw_lib__50018e() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS Minifig Accessory Pack #11
+// 0 !KEYWORDS Minifig Accessory Pack #11, Rebrickable 50018f
 // 
 // 0 !HISTORY 2020-06-28 [PTadmin] Official Update 2020-01
 // 0 !HISTORY 2021-06-14 [PTadmin] Update description

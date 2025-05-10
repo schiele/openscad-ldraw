@@ -12,8 +12,8 @@ function ldraw_lib__3069bp0o() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3069bpb1082, BrickOwl 1097905, Optimus Prime
-// 0 !KEYWORDS Rebrickable 3069bpr0352, Set 10302
+// 0 !KEYWORDS BrickLink 3069pb1082, Optimus Prime, Rebrickable 3069bpr0352
+// 0 !KEYWORDS Set 10302
 // 
 // 0 !HISTORY 2024-06-30 [OrionP] Official Update 2024-05
 // 

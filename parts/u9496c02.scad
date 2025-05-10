@@ -15,6 +15,7 @@ function ldraw_lib__u9496c02() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Sheet Fabric
+// 0 !KEYWORDS BrickLink sailbb08, Rebrickable 71308
 // 
 // 0 !HISTORY 2022-05-07 [PTadmin] Official Update 2022-03
 // 

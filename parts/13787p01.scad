@@ -13,7 +13,8 @@ function ldraw_lib__13787p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Christmas, Holiday
+// 0 !KEYWORDS BrickLink 13787pb01, Christmas, Holiday, Rebrickable 13787pr0002
+// 0 !KEYWORDS Set 10245
 // 
 // 0 !HISTORY 2014-09-26 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2014-09-26 [Philo] File preparation for LDraw Parts Tracker

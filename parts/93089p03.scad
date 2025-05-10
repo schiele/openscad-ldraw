@@ -13,7 +13,8 @@ function ldraw_lib__93089p03() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Friends, Kitty
+// 0 !KEYWORDS BrickLink 93089pb03, Friends, Kitty, Rebrickable 93089pr0001
+// 0 !KEYWORDS Set 41085
 // 
 // 0 !HISTORY 2013-08-14 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2016-11-07 [Philo] File preparation for LDraw Parts Tracker

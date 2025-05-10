@@ -13,7 +13,7 @@ function ldraw_lib__2440p69() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Blacktron, BT2, BTII, MTron
+// 0 !KEYWORDS Blacktron, BT2, BTII, MTron, Rebrickable 2440pr0003, set 10159
 // 
 // 0 !HISTORY 1999-03-26 [PTadmin] Official Update 1999-02
 // 0 !HISTORY 2007-05-12 [PTadmin] Header formatted for Contributor Agreement

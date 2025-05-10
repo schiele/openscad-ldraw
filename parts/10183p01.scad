@@ -13,8 +13,8 @@ function ldraw_lib__10183p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Neckwear
-// 0 !KEYWORDS Bricklink 10183pb01, Brickowl 318571, Bumblebee, CMF, Collectible
-// 0 !KEYWORDS DC Super Heros, Rebrickable 10183pr0001, Set 71056
+// 0 !KEYWORDS Bricklink 10183pb01, Bumblebee, CMF, Collectible, DC Super Heros
+// 0 !KEYWORDS Rebrickable 10183pr0001, Set 71056
 // 
 // 0 !HISTORY 2013-08-14 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2021-04-29 [GeraldLasser] File preparation for LDraw Parts Tracker

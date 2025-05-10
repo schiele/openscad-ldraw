@@ -12,7 +12,7 @@ function ldraw_lib__98138pz2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickheadz, BrickLink 98138pb258, BrickOwl 104193, Eye, Monkey King
+// 0 !KEYWORDS Brickheadz, BrickLink 98138pb072, Eye, Monkey King
 // 0 !KEYWORDS Rebrickable 98138pr0060, Set 40381
 // 
 // 0 !HISTORY 2023-06-24 [OrionP] Official Update 2023-03

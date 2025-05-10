@@ -13,7 +13,7 @@ function ldraw_lib__23945p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS Bricklink 23945pb01, Bricklink 23945pb02, Set 41173, Set 41179
+// 0 !KEYWORDS Bricklink 23945pb01, Rebrickable 23945pat0001, Set 41173, Set 41179
 // 0 !KEYWORDS Set 41180, Set 43197, Set 43206, Set 76185
 // 
 // 0 !HISTORY 2024-07-29 [OrionP] Official Update 2024-06

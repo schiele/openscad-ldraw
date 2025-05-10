@@ -14,6 +14,7 @@ function ldraw_lib__11233p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
+// 0 !KEYWORDS BrickLink 11233pb01, Rebrickable 11233pr0002, Set 30265
 // 
 // 0 !HISTORY 2014-02-12 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2014-02-12 [Philo] File preparation for LDraw Parts Tracker

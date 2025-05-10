@@ -13,7 +13,7 @@ function ldraw_lib__99013p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 99013pb02, Set 42145
+// 0 !KEYWORDS Bricklink 99013pb02, Rebrickable 99013pat0002, Set 42145
 // 
 // 0 !HISTORY 2022-12-20 [PTadmin] Official Update 2022-06
 // 

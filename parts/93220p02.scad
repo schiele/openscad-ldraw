@@ -13,6 +13,7 @@ function ldraw_lib__93220p02() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
+// 0 !KEYWORDS BrickLink 93220pb03, Rebrickable 93220pr0004, Set 5005257
 // 
 // 0 !HISTORY 2020-06-28 [PTadmin] Official Update 2020-01
 // 

@@ -16,6 +16,7 @@ function ldraw_lib__4328() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
+// 0 !KEYWORDS BrickLink x93
 // 
 // 0 !HISTORY 2011-11-01 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2011-11-04 [angmarec] File preparation for LDraw Parts Tracker

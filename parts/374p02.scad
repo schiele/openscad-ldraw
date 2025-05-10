@@ -21,6 +21,8 @@ function ldraw_lib__374p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 374px1, Rebrickable 374pr0002, Set 352
+// 
 // 0 !HISTORY 2004-08-27 [mikeheide] Corrected BFC errors, fixed overlapping studs
 // 0 !HISTORY 2009-05-02 [PTadmin] Official Update 2009-01
 // 

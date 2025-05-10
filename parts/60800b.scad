@@ -24,6 +24,8 @@ function ldraw_lib__60800b() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 60800
+// 
 // 0 !HISTORY 2013-08-04 [MMR1988] Removed t-junctions, Inlined one primitive
 // 0 !HISTORY 2013-12-23 [PTadmin] Official Update 2013-02
 // 

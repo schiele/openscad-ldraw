@@ -11,7 +11,8 @@ function ldraw_lib__3069bp0w() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Icons, Lamborghini, Rebrickable 3069bpr9964, Set 10337
+// 0 !KEYWORDS BrickLink 3069pb1275, Icons, Lamborghini, Rebrickable 3069bpr0452
+// 0 !KEYWORDS Set 10337
 // 
 // 0 !HISTORY 2024-08-26 [OrionP] Official Update 2024-07
 // 

@@ -14,11 +14,11 @@ function ldraw_lib__76382p42() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS axe, Axes, Bricklink 973p42c01, BrickOwl 865298, Castle
-// 0 !KEYWORDS Coat of Arms, Crusaders, Halberd, Halberds, Hedley, Lion Knights
-// 0 !KEYWORDS Rebrickable 973c28h01pr0042, Set 10000, Set 1584, Set 6022, Set 6023
-// 0 !KEYWORDS Set 6040, Set 6049, Set 6055, Set 6060, Set 6061, Set 6062, Set 6067
-// 0 !KEYWORDS Set 6080, Set 6102, Set 6103
+// 0 !KEYWORDS axe, Axes, Bricklink 973p42c01, Castle, Coat of Arms, Crusaders
+// 0 !KEYWORDS Halberd, Halberds, Hedley, Lion Knights, Rebrickable 973c28h01pr0042
+// 0 !KEYWORDS Set 10000, Set 1584, Set 6022, Set 6023, Set 6040, Set 6049
+// 0 !KEYWORDS Set 6055, Set 6060, Set 6061, Set 6062, Set 6067, Set 6080, Set 6102
+// 0 !KEYWORDS Set 6103
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

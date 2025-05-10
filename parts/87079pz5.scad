@@ -12,7 +12,8 @@ function ldraw_lib__87079pz5() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS 2016, Brickheadz, BrickLink 87079pb401, Comic Con, San Diego
+// 0 !KEYWORDS 2016, Brickheadz, BrickLink 87079pb0401, Comic Con
+// 0 !KEYWORDS Rebrickable 87079pr0414, San Diego, Set 41490
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 

@@ -13,7 +13,8 @@ function ldraw_lib__41879bp01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Harry Potter
+// 0 !KEYWORDS BrickLink 41879pb015, Harry Potter, Rebrickable 41879apr0016
+// 0 !KEYWORDS Set 71022-15
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
 // 

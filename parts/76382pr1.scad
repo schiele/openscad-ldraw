@@ -14,10 +14,10 @@ function ldraw_lib__76382pr1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb0517c01, BrickOwl 527808, Darth Sidious, Death Star
-// 0 !KEYWORDS Episode III, Galactic Empire, Mini Upper Part No 1437
-// 0 !KEYWORDS Original Trilogy, Rebrickable 973c03h03pr1437, Revenge of the Sith
-// 0 !KEYWORDS Set 10188, Set 8096, Sheev Palpatine, sith, Star Wars, The Emperor
+// 0 !KEYWORDS Bricklink 973pb0517c01, Darth Sidious, Death Star, Episode III
+// 0 !KEYWORDS Galactic Empire, Mini Upper Part No 1437, Original Trilogy
+// 0 !KEYWORDS Rebrickable 973c03h03pr1437, Revenge of the Sith, Set 10188
+// 0 !KEYWORDS Set 8096, Sheev Palpatine, sith, Star Wars, The Emperor
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

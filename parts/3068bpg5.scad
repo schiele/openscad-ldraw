@@ -11,7 +11,8 @@ function ldraw_lib__3068bpg5() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS bricklink 3068pb03, Grocery, School, set 3647, Set 3675
+// 0 !KEYWORDS BrickLink 3068pb2403, Grocery, Rebrickable 3068bpr9937, School
+// 0 !KEYWORDS set 3647, Set 3675
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
 // 

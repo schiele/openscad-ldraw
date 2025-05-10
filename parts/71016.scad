@@ -15,7 +15,8 @@ function ldraw_lib__71016() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Apollo, astronaut, Dome, Launch Command, space port, Space Shuttle
+// 0 !KEYWORDS Apollo, astronaut, BrickLink 23318, Dome, Launch Command
+// 0 !KEYWORDS Rebrickable 769, space port, Space Shuttle
 // 
 // 0 !HISTORY 2015-11-03 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2024-07-24 [MagFors] File preparation for LDraw Parts Tracker

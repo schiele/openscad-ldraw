@@ -14,9 +14,10 @@ function ldraw_lib__3626bp7a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS aquaraiders, Aquazone, arched eyebrow, bangs, black eyebrows, face
-// 0 !KEYWORDS Hoth, Racers, Rebel Alliance, sharp, sloppy hair, Snowspeeder, spiky
-// 0 !KEYWORDS Star Wars
+// 0 !KEYWORDS aquaraiders, Aquazone, arched eyebrow, bangs, black eyebrows
+// 0 !KEYWORDS BrickLink 3626p7a, face, Hoth, Racers, Rebel Alliance
+// 0 !KEYWORDS Rebrickable 3626bpr0031, Set 2161, sharp, sloppy hair, Snowspeeder
+// 0 !KEYWORDS spiky, Star Wars
 // 
 // 0 !CMDLINE -c14
 // 

@@ -11,7 +11,8 @@ function ldraw_lib__3068bps9() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3068bpb0947, Set 75136, Set 75171, Star Wars
+// 0 !KEYWORDS BrickLink 3068pb0947, Rebrickable 3068bpr0287, Set 75136, Set 75171
+// 0 !KEYWORDS Star Wars
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 

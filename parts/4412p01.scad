@@ -11,8 +11,8 @@ function ldraw_lib__4412p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 4412pb01, Globe, North, Orbit, Orrery, planet
-// 0 !KEYWORDS Rebrickable 4412pr0002, Set 42179
+// 0 !KEYWORDS Bricklink 4412pb02, Globe, North, Orbit, Orrery, planet
+// 0 !KEYWORDS Rebrickable 4412pr0001, Set 42179
 // 
 // 0 !HISTORY 2024-06-30 [OrionP] Official Update 2024-05
 // 

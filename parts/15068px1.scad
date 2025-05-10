@@ -1,21 +1,22 @@
 use <../lib.scad>
 use <s/15068s01.scad>
 function ldraw_lib__15068px1() = [
-// 0 Slope Brick Curved  2 x  2 x  0.667 Metallic Silver Fancy Scroll and Heart Shaped Paw Pattern
+// 0 Slope Brick Curved  2 x  2 x  0.667 with Metallic Silver Fancy Scroll and Heart Shaped Paw Pattern
 // 0 Name: 15068px1.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
-// 0 !LDRAW_ORG Part UPDATE 2022-04
+// 0 !LDRAW_ORG Part UPDATE 2025-04
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 15068pb047, Disney Princess, Set 41141
-// 0 !KEYWORDS Whisker Haven Tales
+// 0 !KEYWORDS Bricklink 15068pb047, Disney Princess, Rebrickable 15068pr0008
+// 0 !KEYWORDS Set 41141, Whisker Haven Tales
 // 
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04
-// 
+// 0 !HISTORY 2025-04-01 [MagFors] Update description
+// 0 !HISTORY 2025-04-27 [OrionP] Official Update 2025-04
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\15068s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__15068s01()],

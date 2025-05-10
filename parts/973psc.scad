@@ -15,7 +15,7 @@ function ldraw_lib__973psc() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS Bespin, buttons, Cloud City, controls, flaps, Lobot, pockets
-// 0 !KEYWORDS Star Wars, vest
+// 0 !KEYWORDS Set 7119, Star Wars, vest
 // 
 // 0 !HISTORY 2002-08-18 [PTadmin] Official Update 2002-04
 // 0 !HISTORY 2007-07-29 [PTadmin] Header formatted for Contributor Agreement

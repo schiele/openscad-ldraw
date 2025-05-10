@@ -12,6 +12,8 @@ function ldraw_lib__2490p40() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 2490pb06, Rebrickable 2490pr0001, Set 7093
+// 
 // 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02
 // 
 // 

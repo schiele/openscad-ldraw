@@ -12,7 +12,8 @@ function ldraw_lib__32533() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS bionicle, disk, frisbee, Kanoka, Slizer, Throwbot, Weapon
+// 0 !KEYWORDS bionicle, BrickLink 32171, disk, frisbee, Kanoka, Slizer, Throwbot
+// 0 !KEYWORDS Weapon
 // 
 // 0 !HISTORY 2010-12-31 [PTadmin] Official Update 2010-03
 // 0 !HISTORY 2014-06-14 [arezey] Description change

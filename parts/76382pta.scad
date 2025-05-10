@@ -14,10 +14,9 @@ function ldraw_lib__76382pta() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb1341c01, BrickOwl 76382, Leo, Leonardo
-// 0 !KEYWORDS Mini Upper Part No 2267, Nickelodeon, Rebrickable 973c31h31pr2267
-// 0 !KEYWORDS Set 10669, Set 79103, Set 79104, Set 79118
-// 0 !KEYWORDS Teenage Mutant Ninja Turtles, TMNT
+// 0 !KEYWORDS Bricklink 973pb1341c01, Leo, Leonardo, Mini Upper Part No 2267
+// 0 !KEYWORDS Nickelodeon, Rebrickable 973c31h31pr2267, Set 10669, Set 79103
+// 0 !KEYWORDS Set 79104, Set 79118, Teenage Mutant Ninja Turtles, TMNT
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

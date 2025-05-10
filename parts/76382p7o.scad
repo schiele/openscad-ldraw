@@ -14,10 +14,10 @@ function ldraw_lib__76382p7o() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb0014c01, BrickOwl 458764, City, city center
-// 0 !KEYWORDS Mini Heroes Collection, Mini Upper Part No 408, Pete
-// 0 !KEYWORDS Pneumatic Driller, Rebrickable 973c34h08pr0014, Set 3351, Set 6600
-// 0 !KEYWORDS Set 9371, Town Junior
+// 0 !KEYWORDS Bricklink 973pb0014c01, City, city center, Mini Heroes Collection
+// 0 !KEYWORDS Mini Upper Part No 408, Pete, Pneumatic Driller
+// 0 !KEYWORDS Rebrickable 973c34h08pr0014, Set 3351, Set 6600, Set 9371
+// 0 !KEYWORDS Town Junior
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

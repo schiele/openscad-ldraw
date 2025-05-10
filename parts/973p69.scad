@@ -33,7 +33,7 @@ function ldraw_lib__973p69() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Blacktron 2, Law enforcement, security
+// 0 !KEYWORDS Blacktron 2, Law enforcement, security, Set 1916
 // 
 // 0 !CMDLINE -c15
 // 

@@ -12,7 +12,7 @@ function ldraw_lib__973p8x() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Gravity Games
+// 0 !KEYWORDS Gravity Games, Set 10196
 // 
 // 0 !HISTORY 2016-12-31 [PTadmin] Official Update 2016-01
 // 

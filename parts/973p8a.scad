@@ -14,7 +14,7 @@ function ldraw_lib__973p8a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS back logo, pockets, Stunts, tab collar, Xtreme
+// 0 !KEYWORDS back logo, pockets, Set 6568, Stunts, tab collar, Xtreme
 // 
 // 0 !CMDLINE -c0
 // 

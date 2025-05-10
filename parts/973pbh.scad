@@ -12,7 +12,7 @@ function ldraw_lib__973pbh() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Iron Man, Tony Stark
+// 0 !KEYWORDS Iron Man, set 76007, Tony Stark
 // 
 // 0 !HISTORY 2013-12-23 [PTadmin] Official Update 2013-02
 // 

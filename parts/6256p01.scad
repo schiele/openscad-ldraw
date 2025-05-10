@@ -16,7 +16,7 @@ function ldraw_lib__6256p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS Bricklink 6256pb01, Dog Biscuit, Set 5831
+// 0 !KEYWORDS Bricklink 6256pb01, Dog Biscuit, Rebrickable 6256pr0002, Set 5831
 // 
 // 0 !HISTORY 2022-09-15 [PTadmin] Official Update 2022-05
 // 

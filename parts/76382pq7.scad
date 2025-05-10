@@ -14,8 +14,8 @@ function ldraw_lib__76382pq7() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Archaeology, Bricklink 973pb0782c01, BrickOwl 773018, desert
-// 0 !KEYWORDS Mini Upper Part No 1725, Pharaoh's Quest, Professor Archibald Hale
+// 0 !KEYWORDS Archaeology, Bricklink 973pb0782c01, desert, Mini Upper Part No 1725
+// 0 !KEYWORDS Pharaoh's Quest, Professor Archibald Hale
 // 0 !KEYWORDS Rebrickable 973c11h01pr1725, Scorpion Pyramid, Set 7327
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02

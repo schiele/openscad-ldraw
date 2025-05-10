@@ -13,7 +13,7 @@ function ldraw_lib__16709p06() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS Bricklink 41879pb016, Chicken, Dewey, Disney, Duck, Huey, Louie
-// 0 !KEYWORDS set 71024, Set 853958
+// 0 !KEYWORDS Rebrickable 16709pat38, set 71024, Set 853958
 // 
 // 0 !HISTORY 2023-04-17 [OrionP] Official Update 2023-02
 // 

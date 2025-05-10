@@ -12,7 +12,8 @@ function ldraw_lib__87606ps1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 87606pb02, Imperial, Krennic, Set 75156, Star Wars
+// 0 !KEYWORDS Bricklink 87606pb02, Imperial, Krennic, Rebrickable 87606pr0003
+// 0 !KEYWORDS Set 75156, Star Wars
 // 
 // 0 !HISTORY 2024-04-28 [OrionP] Official Update 2024-03
 // 

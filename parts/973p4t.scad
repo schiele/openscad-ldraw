@@ -12,7 +12,7 @@ function ldraw_lib__973p4t() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Castle, knight, LEGOLAND Castle, tournament
+// 0 !KEYWORDS Castle, knight, LEGOLAND Castle, Set 383, tournament
 // 
 // 0 !CMDLINE -C0
 // 

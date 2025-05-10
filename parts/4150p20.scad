@@ -13,8 +13,8 @@ function ldraw_lib__4150p20() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 4150px14, Fishing, Paradisa, Restaurant, Seafood, Set 6410
-// 0 !KEYWORDS Set 6414
+// 0 !KEYWORDS Bricklink 4150px14, Fishing, Paradisa, Rebrickable 4150pr0035
+// 0 !KEYWORDS Restaurant, Seafood, Set 6410, Set 6414
 // 
 // 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
 // 0 !HISTORY 2024-07-29 [OrionP] Official Update 2024-06

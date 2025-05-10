@@ -14,7 +14,7 @@ function ldraw_lib__76382pud() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bellboy, Bellhop, Bricklink 973pb4538c01, BrickOwl 461222, Hotel
+// 0 !KEYWORDS Bellboy, Bellhop, Bricklink 973pb4538c01, Hotel
 // 0 !KEYWORDS Rebrickable 973c25h27pr5890, Set 10297
 // 
 // 0 !HISTORY 2024-12-30 [OrionP] Official Update 2024-11

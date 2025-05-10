@@ -15,7 +15,8 @@ function ldraw_lib__30477p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 30477px1, Construction, Highway, Ramp, road, Set 6600
+// 0 !KEYWORDS Bricklink 30477px1, Construction, Highway, Ramp
+// 0 !KEYWORDS Rebrickable 30477pr0001, road, Set 6600
 // 
 // 0 !HISTORY 2023-08-25 [OrionP] Official Update 2023-04
 // 

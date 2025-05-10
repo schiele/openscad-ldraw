@@ -24,8 +24,8 @@ function ldraw_lib__30646() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS groove, I-beam, Jack Stone, LEGO Studios Movie, pillar, Spider-Man
-// 0 !KEYWORDS Truss
+// 0 !KEYWORDS BrickLink 30646a, groove, I-beam, Jack Stone, LEGO Studios Movie
+// 0 !KEYWORDS pillar, Rebrickable 30646a, Spider-Man, Truss
 // 
 // 0 !HISTORY 2004-03-17 [westrate] Fixed bowtie quads
 // 0 !HISTORY 2004-11-06 [PTadmin] Official Update 2004-04

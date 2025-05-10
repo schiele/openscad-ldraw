@@ -15,8 +15,8 @@ function ldraw_lib__3626bp7g() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626bpx66, Brickowl 603574, Launch Command
-// 0 !KEYWORDS Rebrickable 3626bpr9975, Scientist, set 6339, space port, town
+// 0 !KEYWORDS BrickLink 3626px66, Launch Command, Rebrickable 3626bpr9975
+// 0 !KEYWORDS Scientist, set 6339, space port, town
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

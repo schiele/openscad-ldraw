@@ -11,6 +11,8 @@ function ldraw_lib__3004pt6() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
+// 0 !KEYWORDS BrickLink 3004px8, Rebrickable 3004pr9991, Set 10018
+// 
 // 0 !HISTORY 2008-12-13 [cwdee] BFCed and made use of 3004s01 subpart
 // 0 !HISTORY 2009-01-29 [mikeheide] corrected quad, delete double line
 // 0 !HISTORY 2009-09-03 [PTadmin] Official Update 2009-02

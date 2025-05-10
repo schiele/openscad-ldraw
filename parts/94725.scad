@@ -13,8 +13,8 @@ function ldraw_lib__94725() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Figure Accessory
-// 0 !KEYWORDS animal show, grooming supplies, hair accessories, Multipack 92355
-// 0 !KEYWORDS pet
+// 0 !KEYWORDS animal show, BrickLink 92355c, grooming supplies, hair accessories
+// 0 !KEYWORDS Multipack 92355, pet
 // 
 // 0 !HISTORY 2013-08-14 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2020-09-27 [RainbowDolphin] File preparation for LDraw Parts Tracker

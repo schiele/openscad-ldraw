@@ -15,10 +15,9 @@ function ldraw_lib__3626bp7f() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626pb0083, Brickowl 876118, city center, dacta, Fire
-// 0 !KEYWORDS Fire Chief, fire fighter, Rebrickable 3626bpr0096, Set 1248
-// 0 !KEYWORDS Set 6407, Set 6464, Set 6525, Set 6554, Set 6571, set 9293, town
-// 0 !KEYWORDS Town Junior
+// 0 !KEYWORDS Bricklink 3626pb0083, city center, dacta, Fire, Fire Chief
+// 0 !KEYWORDS fire fighter, Rebrickable 3626bpr0096, Set 1248, Set 6407, Set 6464
+// 0 !KEYWORDS Set 6525, Set 6554, Set 6571, set 9293, town, Town Junior
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

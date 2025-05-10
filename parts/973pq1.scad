@@ -12,7 +12,7 @@ function ldraw_lib__973pq1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Amset-Ra, Pharaoh's Quest
+// 0 !KEYWORDS Amset-Ra, Pharaoh's Quest, Set 7327
 // 
 // 0 !CMDLINE -c28
 // 

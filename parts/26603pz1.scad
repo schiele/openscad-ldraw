@@ -12,7 +12,7 @@ function ldraw_lib__26603pz1() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS Avengers, Brickheadz, BrickLink 26603pb017, Forehead, Gamora
-// 0 !KEYWORDS Infinity War, Set 41607, Tattoo
+// 0 !KEYWORDS Infinity War, Rebrickable 26603pr0015, Set 41607, Tattoo
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 0 !HISTORY 2021-01-03 [cwdee] Update description

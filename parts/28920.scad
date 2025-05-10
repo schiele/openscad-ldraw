@@ -14,7 +14,7 @@ function ldraw_lib__28920() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !KEYWORDS faucet, Water Faucet, Water Tap
+// 0 !KEYWORDS BrickLink 13770, faucet, Rebrickable 13770, Water Faucet, Water Tap
 // 
 // 0 !HISTORY 2018-01-09 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2018-01-22 [Philo] File preparation for LDraw Parts Tracker

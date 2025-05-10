@@ -17,7 +17,8 @@ function ldraw_lib__61190c() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Hipwear
-// 0 !KEYWORDS Armor, Clone Wars, Kama, skirt, Star Wars
+// 0 !KEYWORDS Armor, BrickLink 61190a, Clone Wars, Kama, Rebrickable 61190a, skirt
+// 0 !KEYWORDS Star Wars
 // 
 // 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01
 // 0 !HISTORY 2012-12-24 [cwdee] Update category

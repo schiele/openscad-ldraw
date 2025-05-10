@@ -13,7 +13,7 @@ function ldraw_lib__71944() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Hose
-// 0 !KEYWORDS 19 Ribs, 48 mm, 7 mm D.
+// 0 !KEYWORDS 19 Ribs, 48 mm, 7 mm D., BrickLink 78c06, Rebrickable 78c06
 // 
 // 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02
 // 0 !HISTORY 2013-08-16 [rempie] changed description, stud distance and keywords

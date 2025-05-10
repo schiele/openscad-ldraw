@@ -14,8 +14,8 @@ function ldraw_lib__62575p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 62575pb01, Brickowl 432228, Jungle
-// 0 !KEYWORDS Rebrickable 62575pat0001, set 7624, set 7626
+// 0 !KEYWORDS Bricklink 62575pb01, Jungle, Rebrickable 23714pat0001, set 7624
+// 0 !KEYWORDS set 7626
 // 
 // 0 !HISTORY 2013-08-14 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2020-05-06 [Philo] File preparation for LDraw Parts Tracker

@@ -14,7 +14,8 @@ function ldraw_lib__3626cpx2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626cpb2032, Ideas, Nancy G. Roman, Set 21312
+// 0 !KEYWORDS BrickLink 3626pb2032, Ideas, Nancy G. Roman, Rebrickable 3626cpr2517
+// 0 !KEYWORDS Set 21312
 // 
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
 // 

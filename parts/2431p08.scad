@@ -13,7 +13,8 @@ function ldraw_lib__2431p08() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Race, Racer, Racing
+// 0 !KEYWORDS BrickLink 2431pb002, Race, Racer, Racing, Rebrickable 2431pr0023
+// 0 !KEYWORDS Set 1497
 // 
 // 0 !HISTORY 2004-09-15 [PTadmin] Official Update 2004-03
 // 0 !HISTORY 2007-05-12 [PTadmin] Header formatted for Contributor Agreement

@@ -14,13 +14,12 @@ function ldraw_lib__76382p70() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Aerial Acrobats, Airforce, Airport, Bricklink 973p70c01
-// 0 !KEYWORDS BrickOwl 760660, football, Mini Upper Part No 148
-// 0 !KEYWORDS Mini Upper Part No 208, pilot, Rebrickable 973c16h01pr0070
-// 0 !KEYWORDS Scruffy Sam, set 10159, Set 1256, Set 1730, set 2126, Set 3308
-// 0 !KEYWORDS Set 3438, set 4556, Set 4559, Set 4560, Set 6345, set 6483, Set 6536
-// 0 !KEYWORDS Set 6543, Set 6561, Set 6563, set 6597, Set 6615, Set 6665, smuggler
-// 0 !KEYWORDS Soccer, Stunt Flyer, town, Trains
+// 0 !KEYWORDS Aerial Acrobats, Airforce, Airport, Bricklink 973p70c01, football
+// 0 !KEYWORDS Mini Upper Part No 148, Mini Upper Part No 208, pilot
+// 0 !KEYWORDS Rebrickable 973c16h01pr0070, Scruffy Sam, set 10159, Set 1256
+// 0 !KEYWORDS Set 1730, set 2126, Set 3308, Set 3438, set 4556, Set 4559, Set 4560
+// 0 !KEYWORDS Set 6345, set 6483, Set 6536, Set 6543, Set 6561, Set 6563, set 6597
+// 0 !KEYWORDS Set 6615, Set 6665, smuggler, Soccer, Stunt Flyer, town, Trains
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

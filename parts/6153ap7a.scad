@@ -12,7 +12,8 @@ function ldraw_lib__6153ap7a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Antarctic, Antarctica, explorer, north pole, Polar, south pole, town
+// 0 !KEYWORDS Antarctic, Antarctica, BrickLink 6153apx2, explorer, north pole
+// 0 !KEYWORDS Polar, Rebrickable 6153apr0006, Set 6520, south pole, town
 // 
 // 0 !CMDLINE -c462
 // 

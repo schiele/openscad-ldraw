@@ -12,7 +12,8 @@ function ldraw_lib__4066bp1g() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Brick
-// 0 !KEYWORDS bricklink 4066pb068, Girls, Grandma, Kitchen, Set 2551
+// 0 !KEYWORDS bricklink 4066pb068, Girls, Grandma, Kitchen, Rebrickable 4066pr0135
+// 0 !KEYWORDS Set 2551
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 

@@ -12,8 +12,8 @@ function ldraw_lib__65834p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 65834pb02, Brickowl 658170, dragon, Golden, Jay, motorbike
-// 0 !KEYWORDS Ninjago, Rebrickable 65834pat0001, Set 71768
+// 0 !KEYWORDS Bricklink 65834pb02, dragon, Golden, Jay, motorbike, Ninjago
+// 0 !KEYWORDS Rebrickable 65834pat0001, Set 71768
 // 
 // 0 !HISTORY 2023-11-19 [OrionP] Official Update 2023-06
 // 

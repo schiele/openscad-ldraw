@@ -15,8 +15,8 @@ function ldraw_lib__2454bpa1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 2454pb153, Brickowl 119368, Haunted House
-// 0 !KEYWORDS Rebrickable 2454bpr0008, Set 10273
+// 0 !KEYWORDS Bricklink 2454pb153, Haunted House, Rebrickable 2454bpr0008
+// 0 !KEYWORDS Set 10273
 // 
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04
 // 

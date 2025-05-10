@@ -19,7 +19,8 @@ function ldraw_lib__93250pq0() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Neckwear
-// 0 !KEYWORDS Pharaoh's Quest
+// 0 !KEYWORDS BrickLink 93250pb01, Pharaoh's Quest, Rebrickable 93250pr0001
+// 0 !KEYWORDS Set 7307
 // 
 // 0 !CMDLINE -c272
 // 

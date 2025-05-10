@@ -14,7 +14,8 @@ function ldraw_lib__30375ps1() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS battle droid, droid commander, Episode One, Episode Two
-// 0 !KEYWORDS minifig-scale, Star Wars, Trade Federation
+// 0 !KEYWORDS minifig-scale, Rebrickable 30375pr0004, Set 3343, Star Wars
+// 0 !KEYWORDS Trade Federation
 // 
 // 0 !CMDLINE -c487
 // 

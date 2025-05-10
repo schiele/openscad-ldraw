@@ -12,7 +12,7 @@ function ldraw_lib__2513p04() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !KEYWORDS set 6332, set 6636
+// 0 !KEYWORDS BrickLink 2513pb05, Rebrickable 2513pr0003, set 6332, set 6636
 // 
 // 0 !HISTORY 2011-07-25 [PTadmin] Official Update 2011-01
 // 0 !HISTORY 2013-02-28 [MagFors] Changed colour 383 to 80 (printed silver)

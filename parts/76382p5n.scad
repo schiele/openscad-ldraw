@@ -14,7 +14,8 @@ function ldraw_lib__76382p5n() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Animal Crossing, Audie, Bricklink 973pb5760c01, Set 77052
+// 0 !KEYWORDS Animal Crossing, Audie, Bricklink 973pb5760c01
+// 0 !KEYWORDS Rebrickable 973c76h40pr0001, Set 77052
 // 
 // 0 !HISTORY 2024-10-27 [OrionP] Official Update 2024-09
 // 

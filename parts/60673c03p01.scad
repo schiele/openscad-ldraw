@@ -15,7 +15,7 @@ function ldraw_lib__60673c03p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 60642c03pb01, Set 7097
+// 0 !KEYWORDS Bricklink 60642c03pb01, Rebrickable 60642c03pr0001, Set 7097
 // 
 // 0 !HISTORY 2023-03-14 [GeraldLasser] Added Pattern
 // 0 !HISTORY 2023-08-25 [OrionP] Official Update 2023-04

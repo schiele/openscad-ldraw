@@ -20,6 +20,7 @@ function ldraw_lib__25975p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
+// 0 !KEYWORDS BrickLink 25975pb01, Rebrickable 25975pr0001, Set Build-a-Mini-0
 // 
 // 0 !HISTORY 2016-10-05 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2016-10-05 [GeraldLasser] File preparation for LDraw Parts Tracker

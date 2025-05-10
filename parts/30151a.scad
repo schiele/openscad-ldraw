@@ -14,7 +14,7 @@ function ldraw_lib__30151a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Adventurers, bell jar, container, crystal, glass
+// 0 !KEYWORDS Adventurers, bell jar, BrickLink 30151, container, crystal, glass
 // 
 // 0 !HISTORY 1999-02-01 [PTadmin] Official Update 1999-01
 // 0 !HISTORY 2007-06-06 [PTadmin] Header formatted for Contributor Agreement

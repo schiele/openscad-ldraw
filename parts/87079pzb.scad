@@ -12,7 +12,8 @@ function ldraw_lib__87079pzb() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickheadz, BrickLink 87079pb762, NYCC, Set 41498
+// 0 !KEYWORDS Brickheadz, BrickLink 87079pb0762, NYCC, Rebrickable 87079pr9994
+// 0 !KEYWORDS Set 41498
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 

@@ -14,10 +14,10 @@ function ldraw_lib__76382p53() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Android, Armaron, Bricklink 973pb0198c01, BrickOwl 877216, droid
-// 0 !KEYWORDS Gigabot, Holox, Insectoids, Mini Upper Part No 311
-// 0 !KEYWORDS Rebrickable 973c08h03pr0198, Robot, Set 2965, Set 3071, Set 6905
-// 0 !KEYWORDS Set 6919, Set 6969, Set 6977, Space, Zotax
+// 0 !KEYWORDS Android, Armaron, Bricklink 973pb0198c01, droid, Gigabot, Holox
+// 0 !KEYWORDS Insectoids, Mini Upper Part No 311, Rebrickable 973c08h03pr0198
+// 0 !KEYWORDS Robot, Set 2965, Set 3071, Set 6905, Set 6919, Set 6969, Set 6977
+// 0 !KEYWORDS Space, Zotax
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

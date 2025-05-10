@@ -12,7 +12,7 @@ function ldraw_lib__973pr0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Anakin, Skywalker, Star Wars
+// 0 !KEYWORDS Anakin, BrickLink 973px82a, Set 7131, Skywalker, Star Wars
 // 
 // 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02
 // 0 !HISTORY 2012-05-03 [TK-949] Color Corrected

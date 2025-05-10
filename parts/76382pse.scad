@@ -14,8 +14,8 @@ function ldraw_lib__76382pse() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973psec01, BrickOwl 59179, Endor, Episode VI
-// 0 !KEYWORDS Galactic Empire, Imperial Biker Scout, Mini Upper Part No 374
+// 0 !KEYWORDS Bricklink 973psec01, Endor, Episode VI, Galactic Empire
+// 0 !KEYWORDS Imperial Biker Scout, Mini Upper Part No 374
 // 0 !KEYWORDS Rebrickable 973c27h03pr0002, Return of the Jedi, Set 3342, set 7128
 // 0 !KEYWORDS set 7139, Speeder Bikes, Star Wars
 // 

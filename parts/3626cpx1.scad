@@ -13,7 +13,8 @@ function ldraw_lib__3626cpx1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626cpb2031, Ideas, Margaret Hamilton, Set 21312
+// 0 !KEYWORDS BrickLink 3626pb2031, Ideas, Margaret Hamilton
+// 0 !KEYWORDS Rebrickable 3626cpr2514, Set 21312
 // 
 // 0 !HISTORY 2018-12-08 [PTadmin] Official Update 2018-02
 // 

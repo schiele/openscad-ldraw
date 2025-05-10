@@ -14,7 +14,7 @@ function ldraw_lib__76382pd14() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb1620c01, BrickOwl 27500, CMF, Dress, Lisa Simpson
+// 0 !KEYWORDS Bricklink 973pb1620c01, CMF, Dress, Lisa Simpson
 // 0 !KEYWORDS Mini Upper Part No 2607, Rebrickable 973c01h01pr2587, Set 71005
 // 0 !KEYWORDS The Simpsons
 // 

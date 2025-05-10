@@ -14,9 +14,9 @@ function ldraw_lib__76382p7n() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb0797c01, Brickowl 716822, City, police
-// 0 !KEYWORDS Rebrickable 973c03h12pr1693, Set 30014, Set 3658, Set 60023
-// 0 !KEYWORDS Set 7279, Set 7287, Set 7288, Set 7553
+// 0 !KEYWORDS Bricklink 973pb0797c01, City, police, Rebrickable 973c03h12pr1693
+// 0 !KEYWORDS Set 30014, Set 3658, Set 60023, Set 7279, Set 7287, Set 7288
+// 0 !KEYWORDS Set 7553
 // 
 // 0 !HISTORY 2024-12-30 [OrionP] Official Update 2024-11
 // 

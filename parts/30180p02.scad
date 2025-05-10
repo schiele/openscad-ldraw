@@ -19,6 +19,8 @@ function ldraw_lib__30180p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 30180pb02, Rebrickable 30180pr0003, set 6426
+// 
 // 0 !HISTORY 2013-11-20 [MagFors] Removed emphasis lines and overlapping areas
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
 // 

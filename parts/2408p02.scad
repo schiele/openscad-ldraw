@@ -11,6 +11,8 @@ function ldraw_lib__2408p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
+// 0 !KEYWORDS Rebrickable 2408pr0002, Set 6987
+// 
 // 0 !CMDLINE -c0
 // 
 // 0 !HISTORY 2001-11-30 [PTadmin] Official Update 2001-02

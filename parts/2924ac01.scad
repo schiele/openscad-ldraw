@@ -12,7 +12,8 @@ function ldraw_lib__2924ac01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Engine, Freight, locomotive, Railroad
+// 0 !KEYWORDS BrickLink 2924apb01, Engine, Freight, locomotive, Railroad
+// 0 !KEYWORDS Rebrickable 2924a
 // 
 // 0 !HISTORY 2024-08-06 [GeraldLasser] Re-Authored, Original by Thomas Burger [grapeape]
 // 0 !HISTORY 2024-08-26 [OrionP] Official Update 2024-07

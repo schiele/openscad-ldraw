@@ -11,7 +11,8 @@ function ldraw_lib__3069bpx7() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS BrickLink 3069bpb0701, dragon, Minecraft, Set 21151
+// 0 !KEYWORDS BrickLink 3069pb0701, dragon, Minecraft, Rebrickable 3069bpr0247
+// 0 !KEYWORDS Set 21151
 // 
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04
 // 

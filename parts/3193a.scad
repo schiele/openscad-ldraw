@@ -12,6 +12,8 @@ function ldraw_lib__3193a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 445, Rebrickable 3193
+// 
 // 0 !HISTORY 2007-07-04 [PTadmin] Header formatted for Contributor Agreement
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
 // 0 !HISTORY 2010-02-15 [PTadmin] Renamed from 445, but 3193 was erroneously used for 1x3x3 door

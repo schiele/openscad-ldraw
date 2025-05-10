@@ -12,6 +12,7 @@ function ldraw_lib__39367p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 39367pb01, Rebrickable 39367pat0001, Set 2000457
 // 0 !KEYWORDS Spike Prime
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03

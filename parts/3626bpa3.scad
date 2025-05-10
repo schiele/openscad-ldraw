@@ -17,9 +17,9 @@ function ldraw_lib__3626bpa3() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Adventurers, amazon, Bricklink 3626bpa3, Brickowl 736778
-// 0 !KEYWORDS Dino Island, Egypt, face, grin, hero, Johnny Thunder, Johny Thunder
-// 0 !KEYWORDS Rebrickable 3626bpr0045, Set 3407, Set 3411, set 5988, sideburns
+// 0 !KEYWORDS Adventurers, amazon, BrickLink 3626pa3, Dino Island, Egypt, face
+// 0 !KEYWORDS grin, hero, Johnny Thunder, Johny Thunder, Rebrickable 3626bpr0045
+// 0 !KEYWORDS Set 3407, Set 3411, set 5988, sideburns
 // 
 // 0 !CMDLINE -c14
 // 

@@ -12,7 +12,7 @@ function ldraw_lib__794ap01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !KEYWORDS Set 794
+// 0 !KEYWORDS BrickLink bin02pb01, Rebrickable upn0036, Set 794
 // 
 // 0 !HISTORY 2022-05-10 [GeraldLasser] Repositioned Handle
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04

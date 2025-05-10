@@ -11,7 +11,7 @@ function ldraw_lib__4444p04() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Castle Wall
+// 0 !KEYWORDS Castle Wall, Rebrickable 4444pr0004, Set 6085
 // 
 // 0 !HISTORY 1999-07-05 [PTadmin] Official Update 1999-05
 // 0 !HISTORY 2004-04-24 [Steffen] Name change; made use of s\4444s01.dat, fixed part bottom geometry, geometry is still not ok around window

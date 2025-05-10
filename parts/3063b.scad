@@ -20,7 +20,7 @@ function ldraw_lib__3063b() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS macaroni
+// 0 !KEYWORDS BrickLink 3063, macaroni
 // 
 // 0 !HISTORY 2002-07-08 [sbliss] Added keyword, made BFC compliant, recoded poor inside top
 // 0 !HISTORY 2002-08-18 [PTadmin] Official Update 2002-04

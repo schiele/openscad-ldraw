@@ -13,8 +13,8 @@ function ldraw_lib__30187c06() = [
   [0,"BFC","CW"],
 // 
 // 0 !CATEGORY Vehicle
-// 0 !KEYWORDS ATV, chopper, City Centre, cycle, minifig, motorbike, Star Wars
-// 0 !KEYWORDS town, tricycle
+// 0 !KEYWORDS ATV, BrickLink 30187c00b, chopper, City Centre, cycle, minifig
+// 0 !KEYWORDS motorbike, Rebrickable 30187b, Star Wars, town, tricycle
 // 
 // 0 !HISTORY 2014-12-23 [PTadmin] Official Update 2014-02
 // 

@@ -16,6 +16,8 @@ function ldraw_lib__4092a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
+// 0 !KEYWORDS BrickLink 4092, Rebrickable 4092
+// 
 // 0 !HISTORY 2007-07-01 [PTadmin] Header formatted for Contributor Agreement
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
 // 0 !HISTORY 2008-07-07 [technog] BFC'd replaced connect2.dat to achieve proper pin length (2002-12-01)

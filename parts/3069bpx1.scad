@@ -11,7 +11,8 @@ function ldraw_lib__3069bpx1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Big Bang Theory, BrickLink 3069bpb398, Ideas, Set 21302
+// 0 !KEYWORDS Big Bang Theory, BrickLink 3069pb0398, Ideas
+// 0 !KEYWORDS Rebrickable 3069bpr0151, Set 21302
 // 
 // 0 !HISTORY 2019-09-09 [PTadmin] Official Update 2019-02
 // 

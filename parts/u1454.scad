@@ -18,6 +18,8 @@ function ldraw_lib__u1454() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink x1454, Rebrickable upn0205
+// 
 // 0 !HISTORY 2016-12-31 [PTadmin] Official Update 2016-01
 // 
 // 

@@ -20,9 +20,9 @@ function ldraw_lib__973psq() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS admiral, Bricklink 973psq, captain, Classic Trilogy, commander
-// 0 !KEYWORDS Death Star, Empire, General, Governor, Grand Moff, Jacket, Major
-// 0 !KEYWORDS Military, rank insignia, set 7201, Star Wars, tunic, Uniform
+// 0 !KEYWORDS admiral, captain, Classic Trilogy, commander, Death Star, Empire
+// 0 !KEYWORDS General, Governor, Grand Moff, Jacket, Major, Military
+// 0 !KEYWORDS rank insignia, set 7201, Star Wars, tunic, Uniform
 // 
 // 0 !HISTORY 2002-08-18 [PTadmin] Official Update 2002-04
 // 0 !HISTORY 2007-07-29 [PTadmin] Header formatted for Contributor Agreement

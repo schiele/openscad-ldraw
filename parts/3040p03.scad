@@ -13,7 +13,8 @@ function ldraw_lib__3040p03() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3040pb003, phone, telephone
+// 0 !KEYWORDS Bricklink 3040pb003, phone, Rebrickable 3040bpr0007, Set 1966
+// 0 !KEYWORDS telephone
 // 
 // 0 !CMDLINE -c15
 // 

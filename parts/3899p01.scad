@@ -13,8 +13,8 @@ function ldraw_lib__3899p01() = [
 // 
 // 0 !CATEGORY Minifig Accessory
 // 0 !KEYWORDS Bricklink 3899pb001, cocoa, Coffee, Collectible Minifigures
-// 0 !KEYWORDS Computer Programmer, Cookware, drink, mug, Series 7, Set 8831, tea
-// 0 !KEYWORDS town, utensil
+// 0 !KEYWORDS Computer Programmer, Cookware, drink, mug, Rebrickable 3899pr0001
+// 0 !KEYWORDS Series 7, Set 8831, tea, town, utensil
 // 
 // 0 !HISTORY 2022-09-15 [PTadmin] Official Update 2022-05
 // 

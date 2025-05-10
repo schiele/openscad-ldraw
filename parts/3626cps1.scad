@@ -15,7 +15,8 @@ function ldraw_lib__3626cps1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626cpb0408, Luke Skywalker, Set 10212, Star Wars
+// 0 !KEYWORDS BrickLink 3626pb0408, Luke Skywalker, Rebrickable 3626cpr0635
+// 0 !KEYWORDS Set 10212, Star Wars
 // 
 // 0 !HISTORY 2022-12-20 [PTadmin] Official Update 2022-06
 // 

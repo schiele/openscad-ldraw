@@ -16,8 +16,8 @@ function ldraw_lib__3626cps4() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626cpb1908, Kylo Ren, Set 75179, Set 75256, Set 75264
-// 0 !KEYWORDS Star Wars, SW
+// 0 !KEYWORDS BrickLink 3626pb1908, Kylo Ren, Rebrickable 3626cpr2393, Set 75179
+// 0 !KEYWORDS Set 75256, Set 75264, Star Wars, SW
 // 
 // 0 !HISTORY 2022-12-20 [PTadmin] Official Update 2022-06
 // 

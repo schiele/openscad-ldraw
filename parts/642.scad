@@ -22,7 +22,7 @@ function ldraw_lib__642() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS gear, pre-technic, Samsonite
+// 0 !KEYWORDS BrickLink 742, gear, pre-technic, Rebrickable 742, Samsonite
 // 
 // 0 !CMDLINE -c14
 // 

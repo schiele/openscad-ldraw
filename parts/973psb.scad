@@ -18,7 +18,7 @@ function ldraw_lib__973psb() = [
 // 0 !KEYWORDS Armor, Bespin, blast plates, Boba Fett, bounty hunter, Cloud City
 // 0 !KEYWORDS Episode Five, Episode Six, green, Mandalorian battle armor
 // 0 !KEYWORDS Original Trilogy, plate armor, Return of the Jedi, Sarlaac pit
-// 0 !KEYWORDS Slave One, Star Wars, Tatooine, The Empire Strikes Back
+// 0 !KEYWORDS Set 3341, Slave One, Star Wars, Tatooine, The Empire Strikes Back
 // 
 // 0 !CMDLINE -c7
 // 

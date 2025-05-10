@@ -11,7 +11,8 @@ function ldraw_lib__4162p0k() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS 2012, Billund, KOM Moulding, set 4000005
+// 0 !KEYWORDS 2012, Billund, BrickLink 4162pb082, KOM Moulding
+// 0 !KEYWORDS Rebrickable 4162pr0025, set 4000005
 // 
 // 0 !HISTORY 2013-07-21 [PTadmin] Official Update 2013-01
 // 

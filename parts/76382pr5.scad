@@ -14,8 +14,8 @@ function ldraw_lib__76382pr5() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973ps5ac01, BrickOwl 736627, Death Star, Endor, Han Solo
-// 0 !KEYWORDS Millennium Falcon, Mini Upper Part No 1331, Original Trilogy
+// 0 !KEYWORDS Bricklink 973ps5ac01, Death Star, Endor, Han Solo, Millennium Falcon
+// 0 !KEYWORDS Mini Upper Part No 1331, Original Trilogy
 // 0 !KEYWORDS Rebrickable 973c26h02pr1331, Set 10179, Set 10188, Set 7965
 // 0 !KEYWORDS Set 8038, smuggler, Star Wars
 // 

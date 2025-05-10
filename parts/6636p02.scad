@@ -14,8 +14,8 @@ function ldraw_lib__6636p02() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS 6636pr0010, Architect, Architecture, Bricklink 6636pb033
-// 0 !KEYWORDS Brickowl 240390, New York City, Raymond M. Hood, Rockefeller Center
-// 0 !KEYWORDS Set 21007, USA
+// 0 !KEYWORDS New York City, Raymond M. Hood, Rebrickable 6636pr0010
+// 0 !KEYWORDS Rockefeller Center, Set 21007, USA
 // 
 // 0 !HISTORY 2012-08-09 [PTadmin] Official Update 2012-02
 // 0 !HISTORY 2025-02-27 [Lego-Manfred] References added

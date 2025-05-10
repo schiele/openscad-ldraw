@@ -12,7 +12,7 @@ function ldraw_lib__3846p4c() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS BrickLink 3846px10, Rebrickable 3846pr0024
+// 0 !KEYWORDS BrickLink 3846px10, Rebrickable 3846pr0024, Set 1491
 // 
 // 0 !HISTORY 2003-08-01 [PTadmin] Official Update 2003-02
 // 0 !HISTORY 2007-06-30 [PTadmin] Header formatted for Contributor Agreement

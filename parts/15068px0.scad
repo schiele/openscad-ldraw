@@ -11,8 +11,8 @@ function ldraw_lib__15068px0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 15068pb118, Frozen, Guimauve, Marshmallow, Set 41148
-// 0 !KEYWORDS Set 43172
+// 0 !KEYWORDS Bricklink 15068pb118, Frozen, Guimauve, Marshmallow
+// 0 !KEYWORDS Rebrickable 15068pr0012, Set 41148, Set 43172
 // 
 // 0 !HISTORY 2022-02-20 [MagFors] Removed condlines, rounded off vertices.
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04

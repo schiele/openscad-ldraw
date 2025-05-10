@@ -12,8 +12,8 @@ function ldraw_lib__25269p08() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 25269pb012, Brickowl 242139, leaf, Magic forest
-// 0 !KEYWORDS Rebrickable 25269pr0012, Set 41917, Star
+// 0 !KEYWORDS Bricklink 25269pb012, leaf, Magic forest, Rebrickable 25269pr0012
+// 0 !KEYWORDS Set 41917, Star
 // 
 // 0 !HISTORY 2024-09-30 [OrionP] Official Update 2024-08
 // 

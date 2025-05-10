@@ -14,7 +14,8 @@ function ldraw_lib__41879ap01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Powerpuff Girls
+// 0 !KEYWORDS BrickLink 41879pb010, Powerpuff Girls, Rebrickable 41879apr0012
+// 0 !KEYWORDS set 41287
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
 // 

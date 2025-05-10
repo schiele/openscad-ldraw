@@ -11,8 +11,8 @@ function ldraw_lib__3070bpb0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Armor, BrickLink 3070bpb094, Mark 33, MK XXXIII, Mk33, Set 5002946
-// 0 !KEYWORDS Silver Centurion
+// 0 !KEYWORDS Armor, BrickLink 3070pb094, Mark 33, MK XXXIII, Mk33
+// 0 !KEYWORDS Rebrickable 3070bpr0002, Set 5002946, Silver Centurion
 // 
 // 0 !HISTORY 2019-09-09 [PTadmin] Official Update 2019-02
 // 0 !HISTORY 2020-11-14 [cwdee] Update description

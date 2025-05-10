@@ -12,7 +12,8 @@ function ldraw_lib__98138ps3() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS BrickLink 98138pb009, Jabbas Palace, Star Wars
+// 0 !KEYWORDS BrickLink 98138pb009, Jabbas Palace, Rebrickable 98138pr0009
+// 0 !KEYWORDS Set 5001309, Star Wars
 // 
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
 // 

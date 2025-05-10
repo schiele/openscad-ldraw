@@ -15,6 +15,8 @@ function ldraw_lib__3815bpde() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
+// 0 !KEYWORDS set 1382
+// 
 // 0 !CMDLINE -c15
 // 
 // 0 !HISTORY 2009-09-16 [westrate] Original pattern design

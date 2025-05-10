@@ -14,7 +14,8 @@ function ldraw_lib__61200ps0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Plo Koon, Star Wars
+// 0 !KEYWORDS BrickLink 61200pb01, Plo Koon, Rebrickable 61200pr0001, Set 75045
+// 0 !KEYWORDS Star Wars
 // 
 // 0 !HISTORY 2020-03-11 [Holly-Wood] Fixed conds colored quad
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04

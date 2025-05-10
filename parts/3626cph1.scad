@@ -14,7 +14,8 @@ function ldraw_lib__3626cph1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626cpb2067, Clock Tower, Hogwarts, Set 75948, Viktor Krum
+// 0 !KEYWORDS BrickLink 3626pb2067, Clock Tower, Hogwarts, Rebrickable 3626cpr2620
+// 0 !KEYWORDS Set 75948, Viktor Krum
 // 
 // 0 !HISTORY 2022-03-03 [MagFors] Used primitives and corrected condlines
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04

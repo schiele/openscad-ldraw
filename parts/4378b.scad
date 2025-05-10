@@ -32,6 +32,7 @@ function ldraw_lib__4378b() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Cone
+// 0 !KEYWORDS BrickLink 4378, Rebrickable 4378
 // 
 // 0 !HISTORY 2022-05-07 [PTadmin] Official Update 2022-03
 // 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives

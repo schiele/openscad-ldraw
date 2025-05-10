@@ -12,7 +12,8 @@ function ldraw_lib__92747p03() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS Dimensions, Keystone, Set 71200
+// 0 !KEYWORDS BrickLink 92747pb07, Dimensions, Keystone, Rebrickable 92747pr0003
+// 0 !KEYWORDS Set 71200
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
 // 

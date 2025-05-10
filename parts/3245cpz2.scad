@@ -12,7 +12,8 @@ function ldraw_lib__3245cpz2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Beast, Brickheadz, BrickLink 3245cpb049, Set 41596
+// 0 !KEYWORDS Beast, Brickheadz, BrickLink 3245cpb049, Rebrickable 3245cpr0120
+// 0 !KEYWORDS Set 41596
 // 
 // 0 !HISTORY 2018-12-08 [PTadmin] Official Update 2018-02
 // 

@@ -12,7 +12,7 @@ function ldraw_lib__973p80() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Octan
+// 0 !KEYWORDS Octan, Set 1188
 // 
 // 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02
 // 

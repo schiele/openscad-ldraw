@@ -12,9 +12,8 @@ function ldraw_lib__4493c02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 4493c01pb04, Brickowl 77640, LEGO ID 75998
-// 0 !KEYWORDS Rebrickable 4493c01pr0011, Set 3053, Set 6080, Set 6086, Set 6379
-// 0 !KEYWORDS set 6762, Set 8781
+// 0 !KEYWORDS Bricklink 4493c01pb04, LEGO ID 75998, Rebrickable 4493c01pr0011
+// 0 !KEYWORDS Set 3053, Set 6080, Set 6086, Set 6379, set 6762, Set 8781
 // 
 // 0 !CMDLINE -C15
 // 

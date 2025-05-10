@@ -15,7 +15,7 @@ function ldraw_lib__67931p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Wedge
-// 0 !KEYWORDS Set 67931
+// 0 !KEYWORDS BrickLink 67931pb01, Rebrickable 67931pat0001, Set 67931
 // 
 // 0 !HISTORY 2023-08-25 [OrionP] Official Update 2023-04
 // 

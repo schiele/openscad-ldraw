@@ -14,7 +14,8 @@ function ldraw_lib__4066bp0y() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Brick
-// 0 !KEYWORDS bricklink 4066pb062, Fire Station, Set 1635, Set 2658, Set 9165
+// 0 !KEYWORDS bricklink 4066pb062, Fire Station, Rebrickable 4066pr0070, Set 1635
+// 0 !KEYWORDS Set 2658, Set 9165
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 

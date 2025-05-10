@@ -15,7 +15,8 @@ function ldraw_lib__3626bpc25() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626bpb0459, Series 2, vampire
+// 0 !KEYWORDS BrickLink 3626pb0459, Rebrickable 3626bpr0687, Series 2, Set 8684-5
+// 0 !KEYWORDS vampire
 // 
 // 0 !CMDLINE -c15
 // 

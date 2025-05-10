@@ -17,9 +17,9 @@ function ldraw_lib__3626bp40() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626bp40, Castle, face, forest babe, forestwoman, Islander
+// 0 !KEYWORDS BrickLink 3626p40, Castle, face, forest babe, forestwoman, Islander
 // 0 !KEYWORDS lady-in-waiting, lipstick, maiden, mophead, pirate wench, Pirates
-// 0 !KEYWORDS set 6278, set 6285
+// 0 !KEYWORDS Rebrickable 3626bpr0013, set 6278, set 6285
 // 
 // 0 !HISTORY 2001-10-26 [PTadmin] Official Update 2001-01
 // 0 !HISTORY 2007-06-29 [PTadmin] Header formatted for Contributor Agreement

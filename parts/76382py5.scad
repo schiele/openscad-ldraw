@@ -14,8 +14,8 @@ function ldraw_lib__76382py5() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb2441c01, Brickowl 226808, R18
-// 0 !KEYWORDS Rebrickable 973c27h03pr3286, Set 75872, Speed Champions
+// 0 !KEYWORDS Bricklink 973pb2441c01, R18, Rebrickable 973c27h03pr3286, Set 75872
+// 0 !KEYWORDS Speed Champions
 // 
 // 0 !HISTORY 2024-12-30 [OrionP] Official Update 2024-11
 // 

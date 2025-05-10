@@ -21,6 +21,7 @@ function ldraw_lib__4210a() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
+// 0 !KEYWORDS BrickLink 194, Rebrickable 4210
 // 
 // 0 !HISTORY 1998-10-15 [PTadmin] Official Update 1998-09
 // 0 !HISTORY 2000-07-01 [pneaster] convert drawn edges to primitives for better ray tracing

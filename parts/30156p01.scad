@@ -11,7 +11,7 @@ function ldraw_lib__30156p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Ninja
+// 0 !KEYWORDS BrickLink 30156px1, Ninja, Rebrickable 30156pr0003, set 6089
 // 
 // 0 !HISTORY 2019-09-09 [PTadmin] Official Update 2019-02
 // 

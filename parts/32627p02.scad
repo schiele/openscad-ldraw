@@ -11,8 +11,8 @@ function ldraw_lib__32627p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 32627pb02, CMF, Looney Tunes, Set 71030, Tasmanian Devil
-// 0 !KEYWORDS Taz
+// 0 !KEYWORDS Bricklink 32627pb02, CMF, Looney Tunes, Rebrickable 32627pr0002
+// 0 !KEYWORDS Set 71030, Tasmanian Devil, Taz
 // 
 // 0 !HISTORY 2024-08-26 [OrionP] Official Update 2024-07
 // 

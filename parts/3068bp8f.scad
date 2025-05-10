@@ -11,7 +11,8 @@ function ldraw_lib__3068bp8f() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3068bpb0928, Simpsons, Waylon Smithers
+// 0 !KEYWORDS BrickLink 3068pb0928, Rebrickable 3068bpr0249, Set 71009-15
+// 0 !KEYWORDS Simpsons, Waylon Smithers
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 

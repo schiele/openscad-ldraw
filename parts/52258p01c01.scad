@@ -23,7 +23,8 @@ function ldraw_lib__52258p01c01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 51344pb01, Goblet of Fire, Harry Potter, set 4767
+// 0 !KEYWORDS BrickLink 52258c01, Goblet of Fire, Harry Potter
+// 0 !KEYWORDS Rebrickable 52258c01, set 4767
 // 
 // 0 !HISTORY 2022-10-09 [Holly-Wood] Corrected flames and tail, added keywords
 // 0 !HISTORY 2023-11-19 [OrionP] Official Update 2023-06

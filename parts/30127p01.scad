@@ -18,7 +18,8 @@ function ldraw_lib__30127p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS bald eagle, Feather, indian, western, wild west
+// 0 !KEYWORDS bald eagle, BrickLink 471p01, Feather, indian
+// 0 !KEYWORDS Rebrickable 30127pr0001, set 2845, western, wild west
 // 
 // 0 !CMDLINE -C15
 // 

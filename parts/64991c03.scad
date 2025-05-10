@@ -2,10 +2,10 @@ use <../lib.scad>
 use <s/64991c01s01.scad>
 use <s/64991c01s02.scad>
 function ldraw_lib__64991c03() = [
-// 0 Sheet Fabric 28 x 17 Trapezoidal Sail (Formed Shape 3)
+// 0 Sail 28 x 17 Trapezoidal (Formed Shape 3)
 // 0 Name: 64991c03.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2020-02
+// 0 !LDRAW_ORG Part UPDATE 2025-04
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 !HELP Shaped for 4184 The Black Pearl
@@ -23,7 +23,8 @@ function ldraw_lib__64991c03() = [
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
 // 0 !HISTORY 2020-06-10 [cwdee] Update description
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
-// 
+// 0 !HISTORY 2025-04-25 [Holly-Wood] Update description
+// 0 !HISTORY 2025-04-27 [OrionP] Official Update 2025-04
 // 
 // 1 16 0 0 0 1 0 0 0 0.9714 -0.10363 0 0.13233 0.79296 s\64991c01s01.dat
   [1,16,0,0,0,1,0,0,0,0.9714,-0.10363,0,0.13233,0.79296, ldraw_lib__s__64991c01s01()],

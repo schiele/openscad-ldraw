@@ -12,7 +12,7 @@ function ldraw_lib__13760c01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS armoured truck, Train
+// 0 !KEYWORDS armoured truck, BrickLink 6567c03, Rebrickable 6567c03, Train
 // 
 // 0 !HISTORY 2016-12-31 [PTadmin] Official Update 2016-01
 // 

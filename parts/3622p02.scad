@@ -15,7 +15,8 @@ function ldraw_lib__3622p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !KEYWORDS buttons, controls, radio, Space, town
+// 0 !KEYWORDS buttons, controls, radio, Rebrickable 3622pr9994, Set 6393, Space
+// 0 !KEYWORDS town
 // 
 // 0 !CMDLINE -c15
 // 

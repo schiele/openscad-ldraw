@@ -11,7 +11,8 @@ function ldraw_lib__47753pq2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Cobra Head, Pharaoh's Quest
+// 0 !KEYWORDS BrickLink 47753pb021, Cobra Head, Pharaoh's Quest
+// 0 !KEYWORDS Rebrickable 47753pr0001, Set 7325
 // 
 // 0 !CMDLINE -c28
 // 

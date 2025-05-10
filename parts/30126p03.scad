@@ -18,7 +18,8 @@ function ldraw_lib__30126p03() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS bald eagle, Feather, indian, Series 15, western, wild west
+// 0 !KEYWORDS bald eagle, BrickLink 30126pb03, Feather, indian
+// 0 !KEYWORDS Rebrickable 30126pr0001, Series 15, Set 71011-5, western, wild west
 // 
 // 0 !CMDLINE -C15
 // 

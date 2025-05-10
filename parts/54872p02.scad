@@ -12,7 +12,7 @@ function ldraw_lib__54872p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Set 4981, SquarePants
+// 0 !KEYWORDS BrickLink 54872pb02, Rebrickable 54872pr0002, Set 4981, SquarePants
 // 
 // 0 !HISTORY 2014-12-23 [PTadmin] Official Update 2014-02
 // 

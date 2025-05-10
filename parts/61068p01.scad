@@ -12,7 +12,8 @@ function ldraw_lib__61068p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 61068pb001, Emerald Night, set 10194
+// 0 !KEYWORDS Bricklink 61068pb001, Emerald Night, Rebrickable 61068pr0001
+// 0 !KEYWORDS set 10194
 // 
 // 0 !HISTORY 2012-12-28 [PTadmin] Official Update 2012-03
 // 0 !HISTORY 2022-04-12 [MagFors] unified cyli dimensions

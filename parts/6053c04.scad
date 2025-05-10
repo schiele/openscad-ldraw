@@ -12,8 +12,8 @@ function ldraw_lib__6053c04() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Armada, Armada Flagship, hull, Pirate, Pirates, set 6280, set 6291
-// 0 !KEYWORDS ship, skull
+// 0 !KEYWORDS Armada, Armada Flagship, BrickLink 6052c02, hull, Pirate, Pirates
+// 0 !KEYWORDS Rebrickable 6053c02, set 6280, set 6291, ship, skull
 // 
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
 // 

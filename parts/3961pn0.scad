@@ -13,7 +13,7 @@ function ldraw_lib__3961pn0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3961pb04, Set 70505
+// 0 !KEYWORDS Bricklink 3961pb04, Rebrickable 3961pr0008, Set 70505
 // 
 // 0 !HISTORY 2020-07-07 [ejboer] Moved stud group to main file
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02

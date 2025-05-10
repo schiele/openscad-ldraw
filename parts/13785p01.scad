@@ -13,7 +13,8 @@ function ldraw_lib__13785p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS CMF Series Lego Movie II
+// 0 !KEYWORDS BrickLink 13785pb01, CMF Series Lego Movie II
+// 0 !KEYWORDS Rebrickable 13785pr0256
 // 
 // 0 !HISTORY 2013-12-07 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2021-06-29 [Philo] File preparation for LDraw Parts Tracker

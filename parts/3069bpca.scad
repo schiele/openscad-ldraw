@@ -13,7 +13,8 @@ function ldraw_lib__3069bpca() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3069bpb414, Dimensions, Set 71200, Wyldstyle
+// 0 !KEYWORDS BrickLink 3069pb0414, Dimensions, Rebrickable 3069bpr0153, Set 71200
+// 0 !KEYWORDS Wyldstyle
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 

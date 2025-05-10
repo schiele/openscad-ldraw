@@ -12,7 +12,8 @@ function ldraw_lib__98138p0m() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brave, BrickLink 98138pb057, cake, Cookie, Disney Castle, set 71040
+// 0 !KEYWORDS Brave, BrickLink 98138pb057, cake, Cookie, Disney Castle
+// 0 !KEYWORDS Rebrickable 98138pr0059, set 71040
 // 
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
 // 

@@ -16,7 +16,8 @@ function ldraw_lib__3846p4l() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS Bricklink 3846pb027, Castle, Kingdoms, Set 10223, Set 7949, Set 7950
+// 0 !KEYWORDS Bricklink 3846pb027, Castle, Kingdoms, Rebrickable 3846pr0001
+// 0 !KEYWORDS Set 10223, Set 7949, Set 7950
 // 
 // 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02
 // 0 !HISTORY 2022-06-22 [Philo] Updated description, added keywords

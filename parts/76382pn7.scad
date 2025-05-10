@@ -14,11 +14,10 @@ function ldraw_lib__76382pn7() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS assassin, Bricklink 973px40c01, BrickOwl 735597, Castle, Gi
-// 0 !KEYWORDS Green Ninja, honor, Japan, japanese, master of disguise
-// 0 !KEYWORDS Mini Heroes Collection, Ninja Princess, ninjitsu
-// 0 !KEYWORDS Rebrickable 973c31h01pr0040, Robe, Set 3346, Shinobi, spy
-// 0 !KEYWORDS throwing star
+// 0 !KEYWORDS assassin, Bricklink 973px40c01, Castle, Gi, Green Ninja, honor
+// 0 !KEYWORDS Japan, japanese, master of disguise, Mini Heroes Collection
+// 0 !KEYWORDS Ninja Princess, ninjitsu, Rebrickable 973c31h01pr0040, Robe
+// 0 !KEYWORDS Set 3346, Shinobi, spy, throwing star
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

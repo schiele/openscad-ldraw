@@ -14,9 +14,9 @@ function ldraw_lib__76382p0r() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb2505c01, Brickowl 277600, Center, Development
-// 0 !KEYWORDS Ferrari, FXXK, Rebrickable 973c27h01pr3403, Set 75882
-// 0 !KEYWORDS Speed Champions, Tunnel, Wind
+// 0 !KEYWORDS Bricklink 973pb2505c01, Center, Development, Ferrari, FXXK
+// 0 !KEYWORDS Rebrickable 973c27h01pr3403, Set 75882, Speed Champions, Tunnel
+// 0 !KEYWORDS Wind
 // 
 // 0 !HISTORY 2024-12-30 [OrionP] Official Update 2024-11
 // 

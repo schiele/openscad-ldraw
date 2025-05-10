@@ -14,7 +14,8 @@ function ldraw_lib__3460py0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS McLaren, Set 76918, Solus, Speed Champions
+// 0 !KEYWORDS BrickLink 3460pb01, McLaren, Rebrickable 3460pr0001, Set 76918
+// 0 !KEYWORDS Solus, Speed Champions
 // 
 // 0 !HISTORY 2024-06-30 [OrionP] Official Update 2024-05
 // 

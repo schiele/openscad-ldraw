@@ -16,6 +16,8 @@ function ldraw_lib__712a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS Rebrickable 712b
+// 
 // 0 !HISTORY 1997-10-29 [PTadmin] Official Update 1997-16
 // 0 !HISTORY 2007-07-19 [PTadmin] Header formatted for Contributor Agreement
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01

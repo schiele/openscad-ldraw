@@ -12,7 +12,8 @@ function ldraw_lib__3005pz3() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS bricklink 3005pb033, Jack Skellington, set 41630
+// 0 !KEYWORDS bricklink 3005pb033, Jack Skellington, Rebrickable 3005pr0019
+// 0 !KEYWORDS set 41630
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 

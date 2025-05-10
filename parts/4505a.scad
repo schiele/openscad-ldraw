@@ -12,7 +12,8 @@ function ldraw_lib__4505a() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS blacksmith, farmer, forestmen, hunchback, peasant, Wolf People
+// 0 !KEYWORDS blacksmith, BrickLink 4505, farmer, forestmen, hunchback, peasant
+// 0 !KEYWORDS Rebrickable 4505, Wolf People
 // 
 // 0 !HISTORY 2012-01-21 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2012-01-21 [Philo] File preparation for LDraw Parts Tracker

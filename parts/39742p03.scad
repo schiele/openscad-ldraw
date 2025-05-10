@@ -16,7 +16,8 @@ function ldraw_lib__39742p03() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 39742pb03, Mo, Monkie Kid, Set 80025, Set 80038
+// 0 !KEYWORDS Bricklink 39742pb03, Mo, Monkie Kid, Rebrickable 39742pr0003
+// 0 !KEYWORDS Set 80025, Set 80038
 // 
 // 0 !HISTORY 2024-10-27 [OrionP] Official Update 2024-09
 // 

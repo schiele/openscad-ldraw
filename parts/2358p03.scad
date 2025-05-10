@@ -12,6 +12,8 @@ function ldraw_lib__2358p03() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
+// 0 !KEYWORDS Rebrickable 2358pr0003, Set 5159
+// 
 // 0 !HISTORY 2001-08-30 [sparre] Undocumented changes
 // 0 !HISTORY 2002-11-30 [PTadmin] Official Update 2002-05
 // 0 !HISTORY 2007-05-07 [PTadmin] Header formatted for Contributor Agreement

@@ -11,7 +11,8 @@ function ldraw_lib__87079pzf() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickheadz, Bricklink 87079pb527, Forehead, Sally, set 41630
+// 0 !KEYWORDS Brickheadz, BrickLink 87079pb0527, Forehead, Rebrickable 87079pr0173
+// 0 !KEYWORDS Sally, set 41630
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
 // 

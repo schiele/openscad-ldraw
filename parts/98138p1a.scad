@@ -12,8 +12,8 @@ function ldraw_lib__98138p1a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 98138pb119, Chinese New Year, Pellet Drum, Set 21324
-// 0 !KEYWORDS Set 80020, Set 80105, Star
+// 0 !KEYWORDS Bricklink 98138pb119, Chinese New Year, Pellet Drum
+// 0 !KEYWORDS Rebrickable 98138pr0132, Set 21324, Set 80020, Set 80105, Star
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
 // 

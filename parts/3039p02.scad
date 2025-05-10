@@ -13,7 +13,8 @@ function ldraw_lib__3039p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !KEYWORDS Bounty Hunter Pursuit, Star Wars
+// 0 !KEYWORDS Bounty Hunter Pursuit, BrickLink 3039px18, Rebrickable 3039pr0006
+// 0 !KEYWORDS Set 7133, Star Wars
 // 
 // 0 !CMDLINE -c40
 // 

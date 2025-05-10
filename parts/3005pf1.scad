@@ -11,7 +11,7 @@ function ldraw_lib__3005pf1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Juice Carton
+// 0 !KEYWORDS BrickLink 3005pb017, Juice Carton, Rebrickable 3005pr9993, set 10292
 // 
 // 0 !HISTORY 2016-12-31 [PTadmin] Official Update 2016-01
 // 0 !HISTORY 2017-01-10 [PTadmin] Renamed from 3005bpf1 to correct file naming error

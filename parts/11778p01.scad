@@ -12,8 +12,8 @@ function ldraw_lib__11778p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS bricklink 11778pb01, gwaihir, Hobbit, LOTR, Set 10237, set 79007
-// 0 !KEYWORDS set 79017, the lord of the rings
+// 0 !KEYWORDS bricklink 11777pb01, gwaihir, Hobbit, LOTR, Rebrickable 11777pr0001
+// 0 !KEYWORDS Set 10237, set 79007, set 79017, the lord of the rings
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
 // 

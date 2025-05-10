@@ -12,7 +12,8 @@ function ldraw_lib__30161pa1() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS Adventurers, bullet-hole, car roof-hinge, cracked, dirty, flip-down
-// 0 !KEYWORDS fold-down, Freestyle, Panel, wipers
+// 0 !KEYWORDS fold-down, Freestyle, Panel, Rebrickable 30161pr0001, set 2879
+// 0 !KEYWORDS wipers
 // 
 // 0 !HISTORY 2002-11-30 [PTadmin] Official Update 2002-05
 // 0 !HISTORY 2007-06-06 [PTadmin] Header formatted for Contributor Agreement

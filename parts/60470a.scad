@@ -17,6 +17,8 @@ function ldraw_lib__60470a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 60470
+// 
 // 0 !HISTORY 2009-05-02 [PTadmin] Official Update 2009-01
 // 0 !HISTORY 2013-02-01 [PTadmin] renamed from 60470
 // 0 !HISTORY 2013-02-01 [MMR1988] Turned to CCW, added Open U-Clips to descrption

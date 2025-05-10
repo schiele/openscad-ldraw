@@ -14,7 +14,7 @@ function ldraw_lib__90370p05() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS BrickLink 90370pb05, Set 41056
+// 0 !KEYWORDS BrickLink 90370pb05, Rebrickable 90370pr0007, Set 41056
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
 // 

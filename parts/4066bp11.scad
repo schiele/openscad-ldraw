@@ -12,7 +12,7 @@ function ldraw_lib__4066bp11() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Brick
-// 0 !KEYWORDS bricklink 4066pb012, Meat, Set 2661, Zoo
+// 0 !KEYWORDS bricklink 4066pb012, Meat, Rebrickable 4066pr0103, Set 2661, Zoo
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 

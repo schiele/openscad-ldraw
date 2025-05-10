@@ -11,6 +11,8 @@ function ldraw_lib__3004p20() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS Rebrickable 3004pr9975, Set 12
+// 
 // 0 !HISTORY 1997-09-29 [PTadmin] Official Update 1997-15
 // 0 !HISTORY 2003-06-08 [jriley] BFC compliant
 // 0 !HISTORY 2003-12-19 [PTadmin] Official Update 2003-03

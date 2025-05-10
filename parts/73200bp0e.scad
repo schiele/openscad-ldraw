@@ -17,8 +17,7 @@ function ldraw_lib__73200bp0e() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 970c05pb11, Brickowl 267110, Eris
-// 0 !KEYWORDS Rebrickable 970c22pr0933, Set 71232
+// 0 !KEYWORDS Bricklink 970c05pb11, Eris, Rebrickable 970c22pr0933, Set 71232
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

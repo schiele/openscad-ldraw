@@ -12,6 +12,8 @@ function ldraw_lib__47899c01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 73436c01
+// 
 // 0 !HISTORY 2013-12-23 [PTadmin] Official Update 2013-02
 // 0 !HISTORY 2019-11-14 [Holly-Wood] Renamed from 4343c01
 // 0 !HISTORY 2019-12-27 [PTadmin] Official Update 2019-03

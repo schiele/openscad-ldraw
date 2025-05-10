@@ -13,7 +13,8 @@ function ldraw_lib__15535p05() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 15535pb06, Donut, Frosting, Set 10278
+// 0 !KEYWORDS Bricklink 15535pb06, Donut, Frosting, Rebrickable 15535pr0006
+// 0 !KEYWORDS Set 10278
 // 
 // 0 !HISTORY 2022-09-15 [PTadmin] Official Update 2022-05
 // 

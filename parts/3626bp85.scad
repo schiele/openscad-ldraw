@@ -14,7 +14,7 @@ function ldraw_lib__3626bp85() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !KEYWORDS Bricklink 3626bpb0121, Set 4856
+// 0 !KEYWORDS BrickLink 3626pb0121, Rebrickable 3626bpr0387, Set 4856
 // 
 // 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01
 // 0 !HISTORY 2022-06-02 [Cheenzo] Updated to reuse 3626bp84 subfile and added keywords

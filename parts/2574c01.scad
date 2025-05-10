@@ -15,6 +15,7 @@ function ldraw_lib__2574c01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Vehicle
+// 0 !KEYWORDS BrickLink 2574, Rebrickable 2574
 // 
 // 0 !HISTORY 1999-05-17 [PTadmin] Official Update 1999-03
 // 0 !HISTORY 2007-05-17 [PTadmin] Header formatted for Contributor Agreement

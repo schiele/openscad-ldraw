@@ -14,7 +14,7 @@ function ldraw_lib__76382pte() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS April O'Neil, April ONeil, Bricklink 973pb1522c01, Brickowl 220268
+// 0 !KEYWORDS April O'Neil, April ONeil, Bricklink 973pb1522c01
 // 0 !KEYWORDS Mini Upper Part No 2271, Nickelodeon, Rebrickable 973c01h02pr2271
 // 0 !KEYWORDS Set 79105, Teenage Mutant Ninja Turtles, TMNT
 // 

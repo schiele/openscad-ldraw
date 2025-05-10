@@ -13,7 +13,8 @@ function ldraw_lib__3010py7() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickheadz, BrickLink 3010pb245, Disney, Minnie, Mouse, Set 41625
+// 0 !KEYWORDS Brickheadz, BrickLink 3010pb245, Disney, Minnie, Mouse
+// 0 !KEYWORDS Rebrickable 3010pr0054, Set 41625
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 

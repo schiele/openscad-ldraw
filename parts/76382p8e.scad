@@ -14,7 +14,7 @@ function ldraw_lib__76382p8e() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS astronaut, Bricklink 973px176c01, BrickOwl 489187, FLL, Jerry Walker
+// 0 !KEYWORDS astronaut, Bricklink 973px176c01, FLL, Jerry Walker
 // 0 !KEYWORDS Mini Upper Part No 352, Rebrickable 973c27h27pr0176, Set 1180
 // 0 !KEYWORDS Set 1181, Set 1265, Set 1266, Set 3059, Set 3066, Set 3068, Set 3069
 // 0 !KEYWORDS Set 6454, Set 6455, Set 6457, Set 6458, Set 6463, Set 6465, Set 9788

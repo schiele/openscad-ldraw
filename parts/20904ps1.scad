@@ -17,8 +17,7 @@ function ldraw_lib__20904ps1() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Bricklink 20904pb04, Brickowl 199791, Executioner
-// 0 !KEYWORDS Rebrickable 20904pr0003, Set 75197
+// 0 !KEYWORDS Bricklink 20904pb04, Executioner, Rebrickable 20904pr0003, Set 75197
 // 
 // 0 !CMDLINE -c15
 // 

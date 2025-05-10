@@ -11,8 +11,8 @@ function ldraw_lib__2431pzv() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 2431pb832, Lando Calrissian, moustache, Set 40623
-// 0 !KEYWORDS Star Wars
+// 0 !KEYWORDS Bricklink 2431pb832, Lando Calrissian, moustache
+// 0 !KEYWORDS Rebrickable 2431pr0196, Set 40623, Star Wars
 // 
 // 0 !HISTORY 2023-11-19 [OrionP] Official Update 2023-06
 // 

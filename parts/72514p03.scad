@@ -13,7 +13,8 @@ function ldraw_lib__72514p03() = [
   [0,"BFC","CW"],
 // 
 // 0 !CATEGORY Figure Accessory
-// 0 !KEYWORDS set 5832, set 5843, set 7580, Set 7582
+// 0 !KEYWORDS BrickLink x250, Rebrickable 22670, set 5832, set 5843, set 7580
+// 0 !KEYWORDS Set 7582
 // 
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04
 // 

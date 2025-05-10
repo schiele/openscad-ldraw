@@ -12,6 +12,8 @@ function ldraw_lib__92817() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS Rebrickable 92817c01
+// 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 92249.dat

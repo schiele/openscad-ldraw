@@ -12,8 +12,9 @@ function ldraw_lib__2557c01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Armada, Black Seas Barracuda, Caribbean Clipper, hull, Pirate
-// 0 !KEYWORDS Pirates, set 10040, set 6275, set 6285, ship, skull
+// 0 !KEYWORDS Armada, Black Seas Barracuda, BrickLink 2556c02, Caribbean Clipper
+// 0 !KEYWORDS hull, Pirate, Pirates, Rebrickable 2557c02, set 10040, set 6275
+// 0 !KEYWORDS set 6285, ship, skull
 // 
 // 0 !HISTORY 2003-12-19 [PTadmin] Official Update 2003-03
 // 0 !HISTORY 2007-05-14 [PTadmin] Header formatted for Contributor Agreement

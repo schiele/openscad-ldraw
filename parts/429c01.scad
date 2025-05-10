@@ -12,6 +12,8 @@ function ldraw_lib__429c01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
+// 0 !KEYWORDS BrickLink bb0036
+// 
 // 0 !CMDLINE -c0
 // 
 // 0 !HISTORY 2011-07-25 [PTadmin] Official Update 2011-01

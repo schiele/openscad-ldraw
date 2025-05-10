@@ -13,6 +13,8 @@ function ldraw_lib__73200b_f2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 970c00, Rebrickable 970c03
+// 
 // 0 !HISTORY 2023-06-24 [OrionP] Official Update 2023-03
 // 
 // 

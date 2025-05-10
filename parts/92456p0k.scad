@@ -13,9 +13,8 @@ function ldraw_lib__92456p0k() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink FTGpb022c01, Brickowl 324263, Liza, Mia, Olivia
-// 0 !KEYWORDS Rebrickable 92456c01pr0013, Set 30202, Set 41003, Set 41039
-// 0 !KEYWORDS Set 41108
+// 0 !KEYWORDS Bricklink FTGpb022c01, Liza, Mia, Olivia, Rebrickable 92456c01pr0013
+// 0 !KEYWORDS Set 30202, Set 41003, Set 41039, Set 41108
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

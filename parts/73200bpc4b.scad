@@ -17,9 +17,8 @@ function ldraw_lib__73200bpc4b() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 970c00pb0098, Brickowl 625083, CMF
-// 0 !KEYWORDS Collectible Minifigures, Rebrickable 970c27pr0211, Set 8804
-// 0 !KEYWORDS Soccer Series 4
+// 0 !KEYWORDS Bricklink 970c00pb0098, CMF, Collectible Minifigures
+// 0 !KEYWORDS Rebrickable 970c27pr0211, Set 8804, Soccer Series 4
 // 
 // 0 !HISTORY 2022-07-18 [fhareide] Original design
 // 0 !HISTORY 2023-06-03 [MagFors] Adapted to c-version leg, corrected pattern

@@ -13,6 +13,8 @@ function ldraw_lib__6216p03() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 6216pb03, Rebrickable 6216pr0003, Set 2744
+// 
 // 0 !HISTORY 2014-06-21 [PTadmin] Official Update 2014-01
 // 
 // 

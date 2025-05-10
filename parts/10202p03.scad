@@ -13,7 +13,8 @@ function ldraw_lib__10202p03() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Discovery, Rebrickable 10202pr0013, Set 10283, Space Shuttle
+// 0 !KEYWORDS BrickLink 10202pb028, Discovery, Rebrickable 10202pr0013, Set 10283
+// 0 !KEYWORDS Space Shuttle
 // 
 // 0 !HISTORY 2022-03-06 [PTadmin] Official Update 2022-02
 // 

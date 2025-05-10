@@ -14,7 +14,7 @@ function ldraw_lib__3626cps3() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626cpb0817, set 75172, Star Wars
+// 0 !KEYWORDS BrickLink 3626pb0817, Rebrickable 3626cpr1149, set 75172, Star Wars
 // 
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04
 // 

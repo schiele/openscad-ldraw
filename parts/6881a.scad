@@ -11,7 +11,7 @@ function ldraw_lib__6881a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Scala
+// 0 !KEYWORDS BrickLink 6881, Scala
 // 
 // 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02
 // 

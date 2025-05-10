@@ -22,6 +22,7 @@ function ldraw_lib__2049() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Window
+// 0 !KEYWORDS BrickLink x638, Rebrickable upn0296
 // 
 // 0 !HISTORY 2018-12-08 [PTadmin] Official Update 2018-02
 // 

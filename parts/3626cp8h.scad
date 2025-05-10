@@ -13,7 +13,7 @@ function ldraw_lib__3626cp8h() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS BrickLink 3626cpb1933
+// 0 !KEYWORDS BrickLink 3626pb3103, Rebrickable 3626cpr1664, set 10247
 // 
 // 0 !HISTORY 2016-12-31 [PTadmin] Official Update 2016-01
 // 0 !HISTORY 2019-12-05 [Philo] Changed glasses reflection to white, added keyword

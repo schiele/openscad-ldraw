@@ -25,7 +25,8 @@ function ldraw_lib__21700p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS Bricklink 21700pb01, Doctor Who, Set 21304, Set 71204
+// 0 !KEYWORDS Bricklink 21700pb01, Doctor Who, Rebrickable 21700pr0001, Set 21304
+// 0 !KEYWORDS Set 71204
 // 
 // 0 !HISTORY 2023-04-17 [OrionP] Official Update 2023-02
 // 

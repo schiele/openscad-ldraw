@@ -14,10 +14,9 @@ function ldraw_lib__76382p85() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Airport, Bricklink 973pb0097c01, BrickOwl 116927, dacta, flight
-// 0 !KEYWORDS Ground Crew, ID, overalls, Rebrickable 973c28h01pr0097, set 10159
-// 0 !KEYWORDS Set 1775, Set 1818, Set 2774, set 6330, set 6597, set 9293, town
-// 0 !KEYWORDS Town Junior
+// 0 !KEYWORDS Airport, Bricklink 973pb0097c01, dacta, flight, Ground Crew, ID
+// 0 !KEYWORDS overalls, Rebrickable 973c28h01pr0097, set 10159, Set 1775, Set 1818
+// 0 !KEYWORDS Set 2774, set 6330, set 6597, set 9293, town, Town Junior
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

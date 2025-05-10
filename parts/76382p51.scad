@@ -14,11 +14,10 @@ function ldraw_lib__76382p51() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Blacktron Future Generation, Bricklink 973p51c01, BrickOwl 396875
-// 0 !KEYWORDS Quincy, Rebrickable 973c03h03pr0051, Set 1462, Set 1479, Set 1694
-// 0 !KEYWORDS Set 1887, Set 6704, Set 6812, Set 6832, Set 6851, Set 6861, Set 6878
-// 0 !KEYWORDS Set 6887, Set 6897, Set 6933, Set 6957, Set 6981, Set 6984, Set 6988
-// 0 !KEYWORDS Space
+// 0 !KEYWORDS Blacktron Future Generation, Bricklink 973p51c01, Quincy
+// 0 !KEYWORDS Rebrickable 973c03h03pr0051, Set 1462, Set 1479, Set 1694, Set 1887
+// 0 !KEYWORDS Set 6704, Set 6812, Set 6832, Set 6851, Set 6861, Set 6878, Set 6887
+// 0 !KEYWORDS Set 6897, Set 6933, Set 6957, Set 6981, Set 6984, Set 6988, Space
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

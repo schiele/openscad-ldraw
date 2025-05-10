@@ -14,7 +14,8 @@ function ldraw_lib__87079pt5() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bottle, Bricklink 87079pb0472, Set 21313, Set 92177, ship
+// 0 !KEYWORDS Bottle, Bricklink 87079pb0472, Rebrickable 87079pr0010, Set 21313
+// 0 !KEYWORDS Set 92177, ship
 // 
 // 0 !HISTORY 2022-03-06 [PTadmin] Official Update 2022-02
 // 

@@ -14,10 +14,10 @@ function ldraw_lib__76382p6k() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Alien, Arachnoid Star Base, Armaron, Bricklink 973pb0200c01
-// 0 !KEYWORDS BrickOwl 488829, Cyborg, Extraterrestrial, Holox, Insectoids, Locust
-// 0 !KEYWORDS Mini Upper Part No 307, Professor Webb, Rebrickable 973c03h03pr0200
-// 0 !KEYWORDS set 3070, Set 6977, Space, Zotax
+// 0 !KEYWORDS Alien, Arachnoid Star Base, Armaron, Bricklink 973pb0200c01, Cyborg
+// 0 !KEYWORDS Extraterrestrial, Holox, Insectoids, Locust, Mini Upper Part No 307
+// 0 !KEYWORDS Professor Webb, Rebrickable 973c03h03pr0200, set 3070, Set 6977
+// 0 !KEYWORDS Space, Zotax
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

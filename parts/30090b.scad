@@ -17,7 +17,7 @@ function ldraw_lib__30090b() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS scuba
+// 0 !KEYWORDS BrickLink 30090, Rebrickable 30090, scuba
 // 
 // 0 !HISTORY 2009-10-13 {LEGO Universe Team} Original part shape
 // 0 !HISTORY 2009-10-20 [Philo] File preparation for LDraw Parts Tracker

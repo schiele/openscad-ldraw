@@ -14,6 +14,8 @@ function ldraw_lib__3069bp12() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 3069p12, Rebrickable 3069bpr0035, Set 1351
+// 
 // 0 !HISTORY 2007-06-13 [PTadmin] Header formatted for Contributor Agreement
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
 // 0 !HISTORY 2009-07-16 [PTadmin] Renamed from 3069p12

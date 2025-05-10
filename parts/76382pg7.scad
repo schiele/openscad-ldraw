@@ -14,8 +14,8 @@ function ldraw_lib__76382pg7() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb0246c01, BrickOwl 3626, Championship Challenge
-// 0 !KEYWORDS football, Rebrickable 973c22h01pr0246, Red Team, Set 3409, Sports
+// 0 !KEYWORDS Bricklink 973pb0246c01, Championship Challenge, football
+// 0 !KEYWORDS Rebrickable 973c22h01pr0246, Red Team, Set 3409, Sports
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

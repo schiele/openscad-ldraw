@@ -13,7 +13,7 @@ function ldraw_lib__97782() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Figure Accessory
-// 0 !KEYWORDS 93082, Cookware, Kitchen, Meal
+// 0 !KEYWORDS 93082, BrickLink 93082h, Cookware, Kitchen, Meal
 // 
 // 0 !HISTORY 2013-08-14 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2015-01-24 [Philo] File preparation for LDraw Parts Tracker

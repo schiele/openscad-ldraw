@@ -14,7 +14,8 @@ function ldraw_lib__14769p84() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 14769pb458, food, Monkie Kid, Set 80026
+// 0 !KEYWORDS Bricklink 14769pb458, food, Monkie Kid, Rebrickable 14769pr1219
+// 0 !KEYWORDS Set 80026
 // 
 // 0 !HISTORY 2022-01-29 {LEGO Instructions App} Original part pattern
 // 0 !HISTORY 2022-01-29 [GeraldLasser] File preparation with Img4Dat for LDraw Parts Tracker

@@ -15,8 +15,8 @@ function ldraw_lib__3626bp4g() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626bpb0327, Castle, Pirates, Set 10193, Set 6241
-// 0 !KEYWORDS Set 6299
+// 0 !KEYWORDS BrickLink 3626pb0327, Castle, Pirates, Rebrickable 3626bpr0565
+// 0 !KEYWORDS Set 10193, Set 6241, Set 6299
 // 
 // 0 !HISTORY 2024-09-30 [OrionP] Official Update 2024-08
 // 

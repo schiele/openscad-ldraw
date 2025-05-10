@@ -15,7 +15,7 @@ function ldraw_lib__32123b() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS half-bushing, Ring, Round, small pulley
+// 0 !KEYWORDS BrickLink 4265c, half-bushing, Ring, Round, small pulley
 // 
 // 0 !HISTORY 2010-04-05 [PTadmin] Official Update 2010-01
 // 

@@ -11,7 +11,7 @@ function ldraw_lib__3068bp8e() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3068bpb1086, Carousel, Set 10257
+// 0 !KEYWORDS BrickLink 3068pb1086, Carousel, Rebrickable 3068bpr0342, Set 10257
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
 // 

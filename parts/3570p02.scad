@@ -17,6 +17,8 @@ function ldraw_lib__3570p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 739p01, Rebrickable 739pr0001, Set 1060
+// 
 // 0 !HISTORY 2010-07-05 [PTadmin] Official Update 2010-02
 // 
 // 

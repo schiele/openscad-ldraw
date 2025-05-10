@@ -12,7 +12,7 @@ function ldraw_lib__973pd31() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Homer Simpson, Simpsons
+// 0 !KEYWORDS Homer Simpson, Set 71009, Simpsons
 // 
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
 // 

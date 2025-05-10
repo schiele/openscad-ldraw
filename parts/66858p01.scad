@@ -18,7 +18,8 @@ function ldraw_lib__66858p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Buzzy Beetle, spiny, Super Mario
+// 0 !KEYWORDS BrickLink 66858pb01, Buzzy Beetle, Rebrickable 66858pr0001
+// 0 !KEYWORDS Set 6288911, spiny, Super Mario
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
 // 

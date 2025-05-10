@@ -17,8 +17,8 @@ function ldraw_lib__73200bpcbd() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS animal, Bricklink 970c00pb0340, Brickowl 435047, Chinese New Year
-// 0 !KEYWORDS CMF, Collectible Minifigures, Costume, pig, Rebrickable 970c43pr0711
+// 0 !KEYWORDS animal, Bricklink 970c00pb0340, Chinese New Year, CMF
+// 0 !KEYWORDS Collectible Minifigures, Costume, pig, Rebrickable 970c43pr0711
 // 0 !KEYWORDS Series 12, set 80102
 // 
 // 0 !HISTORY 2023-06-24 [OrionP] Official Update 2023-03

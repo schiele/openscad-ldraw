@@ -34,7 +34,7 @@ function ldraw_lib__2359p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS curved, roadplate
+// 0 !KEYWORDS curved, Rebrickable 2359pr0001, roadplate, Set 6311
 // 
 // 0 !HISTORY 1999-03-23 [sbliss] 2359.dat + 607P01.dat pattern + Mods = 2359P01.dat
 // 0 !HISTORY 1999-05-24 [PTadmin] Official Update 1999-04

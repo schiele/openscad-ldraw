@@ -14,7 +14,7 @@ function ldraw_lib__973pa2() = [
 // 
 // 0 !KEYWORDS Adventurers, ancient, archeology, Cairo, chestplate, crypt, Egypt
 // 0 !KEYWORDS egyptian, Giza, gold, King Tut, mummy, necklace, Nile, pectoral
-// 0 !KEYWORDS pyramid, ruins
+// 0 !KEYWORDS pyramid, ruins, set 1183
 // 
 // 0 !CMDLINE -c0
 // 

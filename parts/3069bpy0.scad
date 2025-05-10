@@ -11,8 +11,8 @@ function ldraw_lib__3069bpy0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3069bpb0957, C8.R, Car, Chevrolet, Corvette, Race
-// 0 !KEYWORDS Set 76903, Speed Champions
+// 0 !KEYWORDS BrickLink 3069pb0957, C8.R, Car, Chevrolet, Corvette, Race
+// 0 !KEYWORDS Rebrickable 3069bpr0317, Set 76903, Speed Champions
 // 
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04
 // 

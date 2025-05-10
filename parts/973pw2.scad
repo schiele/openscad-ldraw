@@ -19,9 +19,9 @@ function ldraw_lib__973pw2() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS army, captain, cavalry, collar, horse troops, insignia
-// 0 !KEYWORDS junior officer, lieutenant, Major, Military, officer, rank, shoulder
-// 0 !KEYWORDS soldier, U.S. Army, Uniform, United States, veteran, western
-// 0 !KEYWORDS wild west
+// 0 !KEYWORDS junior officer, lieutenant, Major, Military, officer, rank, set 6706
+// 0 !KEYWORDS shoulder, soldier, U.S. Army, Uniform, United States, veteran
+// 0 !KEYWORDS western, wild west
 // 
 // 0 !CMDLINE -c1
 // 

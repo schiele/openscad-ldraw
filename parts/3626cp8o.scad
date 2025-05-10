@@ -13,7 +13,8 @@ function ldraw_lib__3626cp8o() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626cpb1027, Deputron, Set 70800, The LEGO Movie
+// 0 !KEYWORDS BrickLink 3626pb1027, Deputron, Rebrickable 3626cpr1361, Set 70800
+// 0 !KEYWORDS The LEGO Movie
 // 
 // 0 !CMDLINE -c179
 // 

@@ -12,6 +12,8 @@ function ldraw_lib__3010p06() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS Rebrickable 3010pr9976, Set 3794
+// 
 // 0 !HISTORY 2007-06-06 [PTadmin] Header formatted for Contributor Agreement
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
 // 0 !HISTORY 2014-02-28 [Darats] Renaming, BFC Correction and use of Subparts

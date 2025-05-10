@@ -15,7 +15,7 @@ function ldraw_lib__973paj() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Granite Girl, Hover Scout, pilot
+// 0 !KEYWORDS BrickLink 973pb0044, Granite Girl, Hover Scout, pilot, Set 1274
 // 
 // 0 !CMDLINE -c1
 // 

@@ -12,7 +12,8 @@ function ldraw_lib__14769p0o() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 14769pb213, Set 21313, Set 92177, Ship in a Bottle
+// 0 !KEYWORDS Bricklink 14769pb213, Rebrickable 14769pr0010, Set 21313, Set 92177
+// 0 !KEYWORDS Ship in a Bottle
 // 
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04
 // 

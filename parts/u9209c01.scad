@@ -15,7 +15,7 @@ function ldraw_lib__u9209c01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Hipwear
-// 0 !KEYWORDS Marge, Simpson, Simpsons
+// 0 !KEYWORDS BrickLink 16816, Marge, Rebrickable 16816, Simpson, Simpsons
 // 
 // 0 !HISTORY 2015-10-11 [PTadmin] Official Update 2015-01
 // 

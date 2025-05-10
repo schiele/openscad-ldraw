@@ -12,7 +12,8 @@ function ldraw_lib__4150pf2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS bricklink 4150pb032, Rings, set 4306, set 4307, Spring, Sympathy
+// 0 !KEYWORDS bricklink 4150pb032, Rebrickable 4150pr0026, Rings, set 4306
+// 0 !KEYWORDS set 4307, Spring, Sympathy
 // 
 // 0 !HISTORY 2020-06-28 [PTadmin] Official Update 2020-01
 // 

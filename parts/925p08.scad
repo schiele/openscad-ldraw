@@ -12,6 +12,8 @@ function ldraw_lib__925p08() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 3008px19, Rebrickable 3008pr0014, Set 1307-1-DBASE
+// 
 // 0 !HISTORY 2014-01-06 [tchang] Change Underside without Center Studs
 // 0 !HISTORY 2014-06-21 [PTadmin] Official Update 2014-01
 // 

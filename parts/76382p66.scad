@@ -14,10 +14,9 @@ function ldraw_lib__76382p66() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973p66c01, BrickOwl 137440, Mutant
-// 0 !KEYWORDS Rebrickable 973c03h22pr0066, Set 1714, Set 1843, Set 1954, Set 3013
-// 0 !KEYWORDS set 6705, set 6835, set 6889, set 6939, Set 6949, Set 6959, Space
-// 0 !KEYWORDS spy, Spyrius
+// 0 !KEYWORDS Bricklink 973p66c01, Mutant, Rebrickable 973c03h22pr0066, Set 1714
+// 0 !KEYWORDS Set 1843, Set 1954, Set 3013, set 6705, set 6835, set 6889, set 6939
+// 0 !KEYWORDS Set 6949, Set 6959, Space, spy, Spyrius
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

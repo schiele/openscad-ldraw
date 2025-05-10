@@ -14,9 +14,8 @@ function ldraw_lib__76382p4o() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Advent calendar, Bricklink 973pb0514c01, BrickOwl 947259, Castle
-// 0 !KEYWORDS Crown Knights, Fantasy Era, Gogo, Rebrickable 973e050pr1379
-// 0 !KEYWORDS Set 7079, set 7979
+// 0 !KEYWORDS Advent calendar, Bricklink 973pb0514c01, Castle, Crown Knights
+// 0 !KEYWORDS Fantasy Era, Gogo, Rebrickable 973e050pr1379, Set 7079, set 7979
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

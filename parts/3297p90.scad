@@ -13,7 +13,7 @@ function ldraw_lib__3297p90() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !KEYWORDS beta-1 command base, Moon, planet
+// 0 !KEYWORDS beta-1 command base, Moon, planet, Rebrickable 3297pr0019, Set 1580
 // 
 // 0 !HISTORY 2001-10-26 [PTadmin] Official Update 2001-01
 // 0 !HISTORY 2002-08-19 [Holly-Wood] refined pattern

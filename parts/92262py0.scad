@@ -12,7 +12,8 @@ function ldraw_lib__92262py0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 92262pb002, Hot Rod, Model A, Set 75875, Speed Champions
+// 0 !KEYWORDS Bricklink 92262pb002, Hot Rod, Model A, Rebrickable 92262pr0001
+// 0 !KEYWORDS Set 75875, Speed Champions
 // 
 // 0 !HISTORY 2022-12-20 [PTadmin] Official Update 2022-06
 // 

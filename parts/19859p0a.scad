@@ -12,7 +12,8 @@ function ldraw_lib__19859p0a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 19859pb10, Set 71733, Set 71738, Set 71749
+// 0 !KEYWORDS Bricklink 19859pb10, Rebrickable 19859pat0003, Set 71733, Set 71738
+// 0 !KEYWORDS Set 71749
 // 
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04
 // 

@@ -11,7 +11,8 @@ function ldraw_lib__4162p0w() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS LEGO Operaciones de Mexico, set 4000015
+// 0 !KEYWORDS BrickLink 4162pb114, LEGO Operaciones de Mexico
+// 0 !KEYWORDS Rebrickable 4162pr0038, set 4000015
 // 
 // 0 !HISTORY 2014-12-23 [PTadmin] Official Update 2014-02
 // 

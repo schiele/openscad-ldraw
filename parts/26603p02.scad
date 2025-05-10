@@ -11,7 +11,8 @@ function ldraw_lib__26603p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Ford Mustang, Set 10265
+// 0 !KEYWORDS BrickLink 26603pb032, Ford Mustang, Rebrickable 26603pr0021
+// 0 !KEYWORDS Set 10265
 // 
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
 // 

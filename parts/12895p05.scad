@@ -19,8 +19,7 @@ function ldraw_lib__12895p05() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Bricklink 12895pb06, Brickowl 1234468, Rebrickable 12895pr0046
-// 0 !KEYWORDS Set 21335
+// 0 !KEYWORDS Bricklink 12895pb06, Rebrickable 12895pr0046, Set 21335
 // 
 // 0 !HISTORY 2023-01-29 [MagFors] Further subfiling
 // 0 !HISTORY 2023-10-31 [OrionP] Official Update 2023-05

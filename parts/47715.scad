@@ -25,6 +25,7 @@ function ldraw_lib__47715() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Vehicle
+// 0 !KEYWORDS BrickLink 47715c01
 // 
 // 0 !HISTORY 2011-08-23 [Brickaneer] Studs optimized (using new stud21a/22a)
 // 0 !HISTORY 2011-08-25 [cwdee] Rotated Axle Bush

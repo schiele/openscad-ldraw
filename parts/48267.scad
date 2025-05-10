@@ -15,7 +15,7 @@ function ldraw_lib__48267() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS bionicle, Claw, Eye
+// 0 !KEYWORDS bionicle, BrickLink x346, Claw, Eye
 // 
 // 0 !HISTORY 2023-04-17 [OrionP] Official Update 2023-02
 // 

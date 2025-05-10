@@ -12,7 +12,8 @@ function ldraw_lib__2335p05() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 2335pb030, Jolly Roger, Pirate, Set 6242
+// 0 !KEYWORDS Bricklink 2335pb030, Jolly Roger, Pirate, Rebrickable 2335pr0002
+// 0 !KEYWORDS Set 6242
 // 
 // 0 !HISTORY 2013-07-21 [PTadmin] Official Update 2013-01
 // 0 !HISTORY 2022-05-09 [OrionP] Updated Description

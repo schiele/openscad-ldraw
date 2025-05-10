@@ -13,7 +13,7 @@ function ldraw_lib__3010p27() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Set 116-2, Train
+// 0 !KEYWORDS Rebrickable 3010pr9930, Set 116-2, Train
 // 
 // 0 !CMDLINE -c14
 // 

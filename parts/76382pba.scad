@@ -14,10 +14,9 @@ function ldraw_lib__76382pba() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Batman 2006, Bricklink 973pb0490c01, BrickOwl 191754, DC comics
-// 0 !KEYWORDS Gotham City, Harleen Quinzel, Harley Quinn, Jester
-// 0 !KEYWORDS Mini Upper Part No 1381, Rebrickable 973e015pr1381, rogues gallery
-// 0 !KEYWORDS set 7886
+// 0 !KEYWORDS Batman 2006, Bricklink 973pb0490c01, DC comics, Gotham City
+// 0 !KEYWORDS Harleen Quinzel, Harley Quinn, Jester, Mini Upper Part No 1381
+// 0 !KEYWORDS Rebrickable 973e015pr1381, rogues gallery, set 7886
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

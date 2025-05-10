@@ -12,7 +12,7 @@ function ldraw_lib__3005pe3() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS BrickLink 3005pb001, Rebrickable 3005pr9994
+// 0 !KEYWORDS BrickLink 3005pb001, Rebrickable 3005pr9994, Set 4105
 // 
 // 0 !HISTORY 2010-07-05 [PTadmin] Official Update 2010-02
 // 

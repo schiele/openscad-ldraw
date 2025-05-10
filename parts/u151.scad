@@ -13,6 +13,7 @@ function ldraw_lib__u151() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Technic
+// 0 !KEYWORDS BrickLink x151, Rebrickable 23229
 // 
 // 0 !HISTORY 2015-12-30 [PTadmin] Official Update 2015-02
 // 

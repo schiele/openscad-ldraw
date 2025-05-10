@@ -13,6 +13,8 @@ function ldraw_lib__4345bp03() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 4345px1, Rebrickable 4345bpr0001, Set 2150
+// 
 // 0 !CMDLINE -c14
 // 
 // 0 !HISTORY 2011-07-02 [MagFors] Removed T-junctions

@@ -11,7 +11,8 @@ function ldraw_lib__3010py2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickheadz, BrickLink 3010pb273, Lego Movie, Set 41637, Sweet Mayhem
+// 0 !KEYWORDS Brickheadz, BrickLink 3010pb273, Lego Movie, Rebrickable 3010pr0072
+// 0 !KEYWORDS Set 41637, Sweet Mayhem
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
 // 

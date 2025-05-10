@@ -2,10 +2,10 @@ use <../lib.scad>
 use <3004.scad>
 use <6152075b.scad>
 function ldraw_lib__3004d02() = [
-// 0 Brick  1 x  2 with White "211B WESTMINISTER" on Black Background Sticker
+// 0 Brick  1 x  2 with White "211B WESTMINSTER" on Black Background Sticker
 // 0 Name: 3004d02.dat
 // 0 Author: Evert-Jan Boer [ejboer]
-// 0 !LDRAW_ORG Shortcut UPDATE 2024-08
+// 0 !LDRAW_ORG Shortcut UPDATE 2025-04
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -16,6 +16,8 @@ function ldraw_lib__3004d02() = [
 // 0 !KEYWORDS Bricklink 3004pb152, London Mini Bus, Set 40220
 // 
 // 0 !HISTORY 2024-09-30 [OrionP] Official Update 2024-08
+// 0 !HISTORY 2025-04-17 [ejboer] Update description
+// 0 !HISTORY 2025-04-27 [OrionP] Official Update 2025-04
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 3004.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3004()],

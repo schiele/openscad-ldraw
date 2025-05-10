@@ -12,7 +12,8 @@ function ldraw_lib__30372ps1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !KEYWORDS Bricklink 30372pb04, Phantom, Set 75048, Star Wars
+// 0 !KEYWORDS Bricklink 30372pb04, Phantom, Rebrickable 30372pr0007, Set 75048
+// 0 !KEYWORDS Star Wars
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 

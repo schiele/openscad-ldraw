@@ -15,6 +15,8 @@ function ldraw_lib__6048() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 6048u, Rebrickable 6048a
+// 
 // 0 !HISTORY 1998-06-20 [PTadmin] Official Update 1998-06
 // 0 !HISTORY 1999-03-26 [PTadmin] Official Update 1999-02
 // 0 !HISTORY 2007-07-09 [PTadmin] Header formatted for Contributor Agreement

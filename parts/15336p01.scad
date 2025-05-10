@@ -13,7 +13,7 @@ function ldraw_lib__15336p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Vehicle
-// 0 !KEYWORDS Chima, Set 70156, Speedorz
+// 0 !KEYWORDS BrickLink 15103c02, Chima, Rebrickable 15336c02, Set 70156, Speedorz
 // 
 // 0 !HISTORY 2024-04-28 [OrionP] Official Update 2024-03
 // 

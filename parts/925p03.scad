@@ -13,6 +13,8 @@ function ldraw_lib__925p03() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink crssprt01pb12, Rebrickable 3008apr0006, Set DATABASE
+// 
 // 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02
 // 
 // 

@@ -14,8 +14,8 @@ function ldraw_lib__3626cpsf() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626bpb0074, Imperial Trooper, Rebel Scout Trooper
-// 0 !KEYWORDS Star Wars
+// 0 !KEYWORDS BrickLink 3626pb0074, Imperial Trooper, Rebel Scout Trooper
+// 0 !KEYWORDS Rebrickable 3626bpr0513, Set 10188, Star Wars
 // 
 // 0 !CMDLINE -c78
 // 

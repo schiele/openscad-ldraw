@@ -14,9 +14,9 @@ function ldraw_lib__76382p4b() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973p4bc02, BrickOwl 187108, Castle, Dragon Knights
-// 0 !KEYWORDS Dragon Masters, Rebrickable 973c28h01pr0004, Set 1712, Set 1732
-// 0 !KEYWORDS set 1906, Set 6043, Set 6056, Set 6076, Set 6079, Set 6082, Set 6105
+// 0 !KEYWORDS Bricklink 973p4bc02, Castle, Dragon Knights, Dragon Masters
+// 0 !KEYWORDS Rebrickable 973c28h01pr0004, Set 1712, Set 1732, set 1906, Set 6043
+// 0 !KEYWORDS Set 6056, Set 6076, Set 6079, Set 6082, Set 6105
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

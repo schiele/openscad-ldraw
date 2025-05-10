@@ -12,7 +12,8 @@ function ldraw_lib__54696p02c01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Mindstorms, Robot Inventor, Set 51515
+// 0 !KEYWORDS BrickLink 54696c01, Mindstorms, Rebrickable 54696, Robot Inventor
+// 0 !KEYWORDS Set 51515
 // 
 // 0 !HISTORY 2023-06-24 [OrionP] Official Update 2023-03
 // 

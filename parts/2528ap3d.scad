@@ -13,7 +13,8 @@ function ldraw_lib__2528ap3d() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Barracuda Bay, Bricklink 2528pb14, Captain Redbeard, set 21322
+// 0 !KEYWORDS Barracuda Bay, Bricklink 2528pb14, Captain Redbeard
+// 0 !KEYWORDS Rebrickable 2528pr0012, set 21322
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
 // 

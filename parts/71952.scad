@@ -13,7 +13,7 @@ function ldraw_lib__71952() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Hose
-// 0 !KEYWORDS 13 Ribs, 32 mm, 7 mm D.
+// 0 !KEYWORDS 13 Ribs, 32 mm, 7 mm D., BrickLink 78c04, Rebrickable 78c04
 // 
 // 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02
 // 0 !HISTORY 2012-08-18 [rempie] Standardised header; added KEYWORDS

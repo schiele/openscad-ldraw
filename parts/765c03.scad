@@ -12,6 +12,8 @@ function ldraw_lib__765c03() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
+// 0 !KEYWORDS BrickLink 765c15, Rebrickable 765c15
+// 
 // 0 !HISTORY 2011-12-16 [Steffen] adjusted to modified origin of 993.dat
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
 // 

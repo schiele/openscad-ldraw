@@ -14,7 +14,7 @@ function ldraw_lib__76382p6a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Blacktron, Bricklink 973pb0081c01, BrickOwl 96168, Captain Magenta
+// 0 !KEYWORDS Blacktron, Bricklink 973pb0081c01, Captain Magenta
 // 0 !KEYWORDS Comandante Gordon, Law enforcement, Rebrickable 973c31h03pr0081
 // 0 !KEYWORDS Set 6813, Set 6984, SP2, Space, Space Police 2
 // 

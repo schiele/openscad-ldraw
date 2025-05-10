@@ -13,7 +13,7 @@ function ldraw_lib__2586p40() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS Bricklink 2586pb003, Elf, Set 8803
+// 0 !KEYWORDS Bricklink 2586pb003, Elf, Rebrickable 2586pr0005, Set 8803
 // 
 // 0 !HISTORY 2023-04-17 [OrionP] Official Update 2023-02
 // 

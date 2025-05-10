@@ -15,7 +15,8 @@ function ldraw_lib__3626cpd2e() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626cpb1054, The Lego Movie Collectible, Wiley Fusebot
+// 0 !KEYWORDS BrickLink 3626pb1054, Rebrickable 3626cpr1307, Set 71004-14
+// 0 !KEYWORDS The Lego Movie Collectible, Wiley Fusebot
 // 
 // 0 !CMDLINE -c179
 // 

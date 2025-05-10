@@ -16,7 +16,8 @@ function ldraw_lib__90398p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS Apollo, Moon, NASA, Rocket, Saturn V, Set 21309
+// 0 !KEYWORDS Apollo, BrickLink 90398pb008, Moon, NASA, Rebrickable 90398pr0012
+// 0 !KEYWORDS Rocket, Saturn V, Set 21309
 // 
 // 0 !HISTORY 2020-06-28 [PTadmin] Official Update 2020-01
 // 

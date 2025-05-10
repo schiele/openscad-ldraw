@@ -11,7 +11,7 @@ function ldraw_lib__2525ps1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !KEYWORDS Star Wars
+// 0 !KEYWORDS Rebrickable 2525pr0008, Set 7143, Star Wars
 // 
 // 0 !HISTORY 2003-12-19 [PTadmin] Official Update 2003-03
 // 0 !HISTORY 2007-07-04 [PTadmin] Header formatted for Contributor Agreement

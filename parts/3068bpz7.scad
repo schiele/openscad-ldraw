@@ -11,8 +11,8 @@ function ldraw_lib__3068bpz7() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickheadz, Bricklink 3068bpb2221, BrickOwl 349802, Eyes, Llama
-// 0 !KEYWORDS Minecraft, Mouth, Nose, Rebrickable 3068bpr0669, Set 40625
+// 0 !KEYWORDS Brickheadz, BrickLink 3068pb2221, Eyes, Llama, Minecraft, Mouth
+// 0 !KEYWORDS Nose, Rebrickable 3068bpr0669, Set 40625
 // 
 // 0 !HISTORY 2024-06-30 [OrionP] Official Update 2024-05
 // 

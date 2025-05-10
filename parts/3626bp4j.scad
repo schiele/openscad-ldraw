@@ -15,9 +15,9 @@ function ldraw_lib__3626bp4j() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626bpb0280, Brickowl 821766, Castle
-// 0 !KEYWORDS Rebrickable 3626bpr0511, Set 5618, Set 7036, Set 7037, Set 7038
-// 0 !KEYWORDS Set 7040, Set 7041, Set 7048, Set 7078, Set 7097, set 7979, Troll
+// 0 !KEYWORDS BrickLink 3626pb0280, Castle, Rebrickable 3626bpr0511, Set 5618
+// 0 !KEYWORDS Set 7036, Set 7037, Set 7038, Set 7040, Set 7041, Set 7048, Set 7078
+// 0 !KEYWORDS Set 7097, set 7979, Troll
 // 
 // 0 !HISTORY 2024-09-30 [OrionP] Official Update 2024-08
 // 

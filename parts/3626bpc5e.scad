@@ -15,7 +15,8 @@ function ldraw_lib__3626bpc5e() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626bpb0613, Egyptian Queen, Series 5
+// 0 !KEYWORDS BrickLink 3626pb0613, Egyptian Queen, Rebrickable 3626bpr0829
+// 0 !KEYWORDS Series 5, Set 8805-14
 // 
 // 0 !CMDLINE -c14
 // 

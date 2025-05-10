@@ -12,7 +12,8 @@ function ldraw_lib__3622px4() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS BrickLink 3622pb125, Mario, Nintendo, Set 71380
+// 0 !KEYWORDS BrickLink 3622pb125, Mario, Nintendo, Rebrickable 3622pr0059
+// 0 !KEYWORDS Set 71380
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
 // 

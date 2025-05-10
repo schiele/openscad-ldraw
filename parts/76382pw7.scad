@@ -14,12 +14,11 @@ function ldraw_lib__76382pw7() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS billy the kid, Bricklink 973px53c01, BrickOwl 185305, cowboy
-// 0 !KEYWORDS cowboys, deputy, Deputy Danny, desperado, doc holliday, Dodge City
-// 0 !KEYWORDS Legoredo City, Mini Upper Part No 224, Rebrickable 973c22h01pr0053
-// 0 !KEYWORDS set 6755, set 6762, Set 6764, set 6765, set 6769, set 6799
-// 0 !KEYWORDS spaghetti western, Star, tombstone, western, wild west, Winnetou
-// 0 !KEYWORDS Wyatt Earp, Zack
+// 0 !KEYWORDS billy the kid, Bricklink 973px53c01, cowboy, cowboys, deputy
+// 0 !KEYWORDS Deputy Danny, desperado, doc holliday, Dodge City, Legoredo City
+// 0 !KEYWORDS Mini Upper Part No 224, Rebrickable 973c22h01pr0053, set 6755
+// 0 !KEYWORDS set 6762, Set 6764, set 6765, set 6769, set 6799, spaghetti western
+// 0 !KEYWORDS Star, tombstone, western, wild west, Winnetou, Wyatt Earp, Zack
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

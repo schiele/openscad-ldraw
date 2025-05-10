@@ -14,9 +14,9 @@ function ldraw_lib__76382pq4() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb0784c01, BrickOwl 354964, Mac McCloud
-// 0 !KEYWORDS Mini Upper Part No 1722, Muscles, Oil Stain, Pharaoh's Quest
-// 0 !KEYWORDS Rebrickable 973c01h01pr1722, set 7306, Set 7327, suspenders
+// 0 !KEYWORDS Bricklink 973pb0784c01, Mac McCloud, Mini Upper Part No 1722
+// 0 !KEYWORDS Muscles, Oil Stain, Pharaoh's Quest, Rebrickable 973c01h01pr1722
+// 0 !KEYWORDS set 7306, Set 7327, suspenders
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

@@ -12,6 +12,8 @@ function ldraw_lib__u9156c02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 55206c02, Rebrickable 55206c02
+// 
 // 0 !HISTORY 2012-01-06 [Steffen] replaced color 383 by 494
 // 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01
 // 0 !HISTORY 2016-09-13 [Philo] Refactored to ease LDD conversion

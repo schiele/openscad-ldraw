@@ -22,7 +22,7 @@ function ldraw_lib__604615() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS 11402, tools, toolset
+// 0 !KEYWORDS 11402, BrickLink 11402e, tools, toolset
 // 
 // 0 !HISTORY 2013-08-14 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2015-01-23 [Philo] File preparation for LDraw Parts Tracker

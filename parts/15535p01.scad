@@ -13,8 +13,8 @@ function ldraw_lib__15535p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Legacy Lightcycle, LEGO Ideas, Quorra, Rinzler, Sam Flynn, set 21314
-// 0 !KEYWORDS Tron
+// 0 !KEYWORDS BrickLink 15535pb04, Legacy Lightcycle, LEGO Ideas, Quorra
+// 0 !KEYWORDS Rebrickable 15535pr0004, Rinzler, Sam Flynn, set 21314, Tron
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
 // 

@@ -12,7 +12,8 @@ function ldraw_lib__98138pn9() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 98138pb083, Ninjago, Zan
+// 0 !KEYWORDS Bricklink 98138pb083, Ninjago, Rebrickable 98138pr0087, Set 71020-14
+// 0 !KEYWORDS Zan
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
 // 

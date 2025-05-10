@@ -15,7 +15,8 @@ function ldraw_lib__3626cpd67() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626cpb1715, Commissioner Gordon, Lego Batman Movie
+// 0 !KEYWORDS BrickLink 3626pb1715, Commissioner Gordon, Lego Batman Movie
+// 0 !KEYWORDS Rebrickable 3626cpr2107, Set 71017-7
 // 
 // 0 !CMDLINE -c84
 // 

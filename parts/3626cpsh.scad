@@ -14,7 +14,8 @@ function ldraw_lib__3626cpsh() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626cpb0401, Rebel Pilot, Snowspeeder Pilot, Star Wars
+// 0 !KEYWORDS BrickLink 3626pb0401, Rebel Pilot, Rebrickable 3626cpr0631
+// 0 !KEYWORDS Set 75009, Snowspeeder Pilot, Star Wars
 // 
 // 0 !CMDLINE -c78
 // 

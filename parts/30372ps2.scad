@@ -12,7 +12,8 @@ function ldraw_lib__30372ps2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !KEYWORDS Bricklink 30372pb08, Set 75259, Set 75268, Star Wars
+// 0 !KEYWORDS Bricklink 30372pb08, Rebrickable 30372pr0005, Set 75259, Set 75268
+// 0 !KEYWORDS Star Wars
 // 
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04
 // 

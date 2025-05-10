@@ -12,7 +12,8 @@ function ldraw_lib__4867p12() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Airplane, bricklink 4867pb03, Jetliner, Set 6392, set 6396, wedge
+// 0 !KEYWORDS Airplane, bricklink 4867pb03, Jetliner, Rebrickable 4867pr0003
+// 0 !KEYWORDS Set 6392, set 6396, wedge
 // 
 // 0 !HISTORY 2018-01-08 [bercik] OMR version by Robert Paciorek [bercik] with permission of Zoltank82
 // 0 !HISTORY 2020-06-16 [RainbowDolphin] File preparation for LDraw Parts Tracker

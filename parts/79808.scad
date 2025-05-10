@@ -17,7 +17,7 @@ function ldraw_lib__79808() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS Cooking, Kitchen
+// 0 !KEYWORDS BrickLink 29636, Cooking, Kitchen
 // 
 // 0 !HISTORY 2024-06-30 [OrionP] Official Update 2024-05
 // 

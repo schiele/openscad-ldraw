@@ -12,7 +12,7 @@ function ldraw_lib__86500p02() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Sphere
-// 0 !KEYWORDS Bricklink 86500pb01, Set 10215, Star Wars
+// 0 !KEYWORDS Bricklink 86500pb01, Rebrickable 86500pr0001, Set 10215, Star Wars
 // 
 // 0 !HISTORY 2024-01-29 [OrionP] Official Update 2024-01
 // 

@@ -11,7 +11,7 @@ function ldraw_lib__4215ap08() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Arrow, arrows, Rebrickable 4215apr0008
+// 0 !KEYWORDS Arrow, arrows, Rebrickable 4215apr0008, Set 6693
 // 
 // 0 !PREVIEW 16 0 0 0 -1 0 0 0 1 0 0 0 -1
 // 

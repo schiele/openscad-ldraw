@@ -12,8 +12,8 @@ function ldraw_lib__98138pz0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickheadz, BrickLink 98138pb072, BrickOwl 860054, Eye
-// 0 !KEYWORDS Rebrickable 98138pr0060, Set 41490, Set 41491, Set 41492, Set 41493
+// 0 !KEYWORDS Brickheadz, BrickLink 98138pb072, Eye, Rebrickable 98138pr0060
+// 0 !KEYWORDS Set 41490, Set 41491, Set 41492, Set 41493
 // 
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
 // 0 !HISTORY 2023-04-21 [Cheenzo] Subfiled pattern for reuse, added keywords

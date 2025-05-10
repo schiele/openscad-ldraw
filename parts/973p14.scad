@@ -12,6 +12,8 @@ function ldraw_lib__973p14() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS Set 6357
+// 
 // 0 !HISTORY 1999-05-17 [PTadmin] Official Update 1999-03
 // 0 !HISTORY 2000-09-30 [PTadmin] Official Update 2000-02
 // 0 !HISTORY 2000-11-05 [cwdee] Moved neck mark from s\973s01.dat

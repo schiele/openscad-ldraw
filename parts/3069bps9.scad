@@ -11,7 +11,8 @@ function ldraw_lib__3069bps9() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Alpha Team, Aquazone, Star Wars
+// 0 !KEYWORDS Alpha Team, Aquazone, BrickLink 3069px11, Rebrickable 3069bpr0093
+// 0 !KEYWORDS Set 6135, Star Wars
 // 
 // 0 !HISTORY 2013-07-21 [PTadmin] Official Update 2013-01
 // 0 !HISTORY 2013-12-24 [smr] Corrected hard-coded blue areas

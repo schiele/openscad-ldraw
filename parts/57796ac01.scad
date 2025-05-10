@@ -13,6 +13,8 @@ function ldraw_lib__57796ac01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 57029c01, Rebrickable 57796
+// 
 // 0 !HISTORY 2024-07-05 [Holly-Wood] Changed spring position, fixed comment
 // 0 !HISTORY 2024-09-13 [GeraldLasser] Oriented Trigger vertically, changed spring position
 // 0 !HISTORY 2024-09-30 [OrionP] Official Update 2024-08

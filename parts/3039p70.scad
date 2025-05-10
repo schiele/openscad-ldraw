@@ -15,7 +15,8 @@ function ldraw_lib__3039p70() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS 1500, fuel pump, Gas pump, Gas Station, LED display, town, Trains
+// 0 !KEYWORDS 1500, BrickLink 3039px4, fuel pump, Gas pump, Gas Station
+// 0 !KEYWORDS LED display, Rebrickable 3039pr9991, Set 1254, town, Trains
 // 
 // 0 !CMDLINE -c15
 // 

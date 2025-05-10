@@ -12,7 +12,8 @@ function ldraw_lib__3068bp54() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !KEYWORDS Invaders, Space
+// 0 !KEYWORDS BrickLink 3068pb0047, Invaders, Rebrickable 3068bpr0063, Set 5384
+// 0 !KEYWORDS Space
 // 
 // 0 !HISTORY 2010-12-31 [PTadmin] Official Update 2010-03
 // 

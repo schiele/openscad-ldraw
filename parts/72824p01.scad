@@ -13,7 +13,8 @@ function ldraw_lib__72824p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS football, Sphere, truncated icosahedron
+// 0 !KEYWORDS BrickLink x45pb03, football, Rebrickable 72824pr0006, Set 1428
+// 0 !KEYWORDS Sphere, truncated icosahedron
 // 
 // 0 !CMDLINE -c15
 // 

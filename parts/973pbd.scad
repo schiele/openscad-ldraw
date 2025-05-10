@@ -19,7 +19,7 @@ function ldraw_lib__973pbd() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Colonel James Rhodes, Iron Man, Rhodey
+// 0 !KEYWORDS Colonel James Rhodes, Iron Man, Rhodey, set 76006
 // 
 // 0 !HISTORY 2013-12-23 [PTadmin] Official Update 2013-02
 // 

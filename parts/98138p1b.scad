@@ -12,7 +12,7 @@ function ldraw_lib__98138p1b() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 98138pb135, Dots, Poo, Set 41908
+// 0 !KEYWORDS Bricklink 98138pb135, Dots, Poo, Rebrickable 98138pr0141, Set 41908
 // 
 // 0 !HISTORY 2022-05-07 [PTadmin] Official Update 2022-03
 // 

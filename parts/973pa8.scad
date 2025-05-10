@@ -18,7 +18,7 @@ function ldraw_lib__973pa8() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS Adventurers, amazon, belt, compass, Gail Storm, id badge, Jungle
-// 0 !KEYWORDS pen, Pippen Read
+// 0 !KEYWORDS pen, Pippen Read, Set 1271
 // 
 // 0 !HISTORY 2002-08-18 [PTadmin] Official Update 2002-04
 // 0 !HISTORY 2007-07-29 [PTadmin] Header formatted for Contributor Agreement

@@ -15,6 +15,7 @@ function ldraw_lib__16375() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Cone
+// 0 !KEYWORDS BrickLink 98237
 // 
 // 0 !HISTORY 2020-12-12 {LEGO/Unity Microgame} Original part shape
 // 0 !HISTORY 2021-05-28 [Philo] File preparation for LDraw Parts Tracker

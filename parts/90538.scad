@@ -13,7 +13,7 @@ function ldraw_lib__90538() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Cad Bane, set 8098, set 8128, Star Wars, SW
+// 0 !KEYWORDS BrickLink 61507, Cad Bane, set 8098, set 8128, Star Wars, SW
 // 
 // 0 !HISTORY 2013-08-14 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2024-03-30 [MagFors] File preparation for LDraw Parts Tracker

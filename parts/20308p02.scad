@@ -11,7 +11,8 @@ function ldraw_lib__20308p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 21098pb02, DesignID 34042, Dog, Minecraft, Wolf
+// 0 !KEYWORDS BrickLink 20308pb02, DesignID 34042, Dog, Minecraft
+// 0 !KEYWORDS Rebrickable 20308pr0002, Set 21137, Wolf
 // 
 // 0 !HISTORY 2016-03-18 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2020-04-16 [Philo] File preparation for LDraw Parts Tracker

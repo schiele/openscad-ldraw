@@ -7,17 +7,19 @@ function ldraw_lib__3626bpc44() = [
 // 0 Minifig Head with Open Smiling Mouth, Teeth and Tounge Pattern
 // 0 Name: 3626bpc44.dat
 // 0 Author: Magnus Forsberg [MagFors]
-// 0 !LDRAW_ORG Part UPDATE 2013-02
+// 0 !LDRAW_ORG Part UPDATE 2025-04
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Punk Rocker
+// 0 !KEYWORDS BrickLink 3626pb0537, Punk Rocker, Rebrickable 3626bpr0771
+// 0 !KEYWORDS set 850486
 // 
 // 0 !HISTORY 2013-12-23 [PTadmin] Official Update 2013-02
-// 
+// 0 !HISTORY 2024-09-08 [Lego-Manfred] Reference and sets added
+// 0 !HISTORY 2025-04-27 [OrionP] Official Update 2025-04
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3626bs02.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626bs02()],

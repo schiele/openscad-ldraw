@@ -12,6 +12,8 @@ function ldraw_lib__4345b() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
+// 0 !KEYWORDS BrickLink 4345
+// 
 // 0 !HISTORY 2003-01-20 [cwdee] Copied from 4345.dat, BFC compliance, fixed underside error
 // 0 !HISTORY 2003-07-03 [Steffen] subfiled
 // 0 !HISTORY 2004-04-22 [PTadmin] Official Update 2004-02

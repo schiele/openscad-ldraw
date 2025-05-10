@@ -14,9 +14,9 @@ function ldraw_lib__76382pg2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb0245c01, BrickOwl 849499, Championship Challenge
-// 0 !KEYWORDS football, Hotshot Harry, Rebrickable 973c22h01pr0245, Red Team
-// 0 !KEYWORDS Set 3409, Sports
+// 0 !KEYWORDS Bricklink 973pb0245c01, Championship Challenge, football
+// 0 !KEYWORDS Hotshot Harry, Rebrickable 973c22h01pr0245, Red Team, Set 3409
+// 0 !KEYWORDS Sports
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

@@ -12,6 +12,8 @@ function ldraw_lib__3939p68() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS Rebrickable 3939pr0001, Set 6956
+// 
 // 0 !HISTORY 1999-05-17 [PTadmin] Official Update 1999-03
 // 0 !HISTORY 2002-09-13 [izanette] modified with WINDZ for BFC compliance
 // 0 !HISTORY 2003-07-11 [Steffen] subfiled

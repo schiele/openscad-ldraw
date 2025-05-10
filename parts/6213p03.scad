@@ -11,9 +11,8 @@ function ldraw_lib__6213p03() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 6213pb01, Brickowl 964518, dacta, Freestyle
-// 0 !KEYWORDS Rebrickable 6213pr0002, Set 4131, Set 4135, Set 4169, Set 9280
-// 0 !KEYWORDS Shrubbery
+// 0 !KEYWORDS Bricklink 6213pb01, dacta, Freestyle, Rebrickable 6213pr0002
+// 0 !KEYWORDS Set 4131, Set 4135, Set 4169, Set 9280, Shrubbery
 // 
 // 0 !HISTORY 2024-08-26 [OrionP] Official Update 2024-07
 // 

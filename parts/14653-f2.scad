@@ -12,7 +12,7 @@ function ldraw_lib__14653_f2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS 40 mm
+// 0 !KEYWORDS 40 mm, BrickLink 79305, Rebrickable 5102c05
 // 
 // 0 !HISTORY 2020-06-28 [PTadmin] Official Update 2020-01
 // 

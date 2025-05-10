@@ -17,6 +17,8 @@ function ldraw_lib__2377p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
+// 0 !KEYWORDS BrickLink 2377pb01, Rebrickable 2377pr0001, Set 6642
+// 
 // 0 !HISTORY 2007-07-09 [cwdee] Correct stud type from stud2 to stud
 // 0 !HISTORY 2009-09-03 [PTadmin] Official Update 2009-02
 // 

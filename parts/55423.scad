@@ -12,8 +12,8 @@ function ldraw_lib__55423() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS 9 Volt, 9V, remote control, Rubber, rubber band
-// 0 !KEYWORDS rubber friction band
+// 0 !KEYWORDS 9 Volt, 9V, BrickLink 55423c01, Rebrickable 57999, remote control
+// 0 !KEYWORDS Rubber, rubber band, rubber friction band
 // 
 // 0 !HISTORY 2009-05-02 [PTadmin] Official Update 2009-01
 // 0 !HISTORY 2012-10-02 [Steffen] splitup into 2 files

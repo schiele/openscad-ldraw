@@ -18,7 +18,7 @@ function ldraw_lib__99244p01() = [
 // 
 // 0 !CATEGORY Minifig Headwear
 // 0 !KEYWORDS Bricklink 99244pb01, Bunny, Collectible Minifigures, Costume, Ears
-// 0 !KEYWORDS mask, Series 7, Set 8831
+// 0 !KEYWORDS mask, Rebrickable 99244pr0001, Series 7, Set 8831
 // 
 // 0 !HISTORY 2023-08-25 [OrionP] Official Update 2023-04
 // 

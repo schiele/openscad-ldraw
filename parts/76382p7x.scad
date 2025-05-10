@@ -14,7 +14,7 @@ function ldraw_lib__76382p7x() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb0459c01, Brickowl 54214, City, Creator, Mail, post
+// 0 !KEYWORDS Bricklink 973pb0459c01, City, Creator, Mail, post
 // 0 !KEYWORDS Rebrickable 973c22h01pr1356, set 10222, set 45022, Set 5003470
 // 0 !KEYWORDS Set 60100, Set 7687, Set 7731, Set 7732, Set 9311, Set 9333
 // 0 !KEYWORDS Set 9348

@@ -14,9 +14,9 @@ function ldraw_lib__76382pw9() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS billy the kid, Bricklink 973px162c01, BrickOwl 906055, cowboy
-// 0 !KEYWORDS deputy, desperado, doc holliday, Dodge City, general store
-// 0 !KEYWORDS Grocer Gregory, Legoredo City, Rebrickable 973c28h01pr0162, set 6765
+// 0 !KEYWORDS billy the kid, Bricklink 973px162c01, cowboy, deputy, desperado
+// 0 !KEYWORDS doc holliday, Dodge City, general store, Grocer Gregory
+// 0 !KEYWORDS Legoredo City, Rebrickable 973c28h01pr0162, set 6765
 // 0 !KEYWORDS spaghetti western, Star, tombstone, western, wild west, Winnetou
 // 0 !KEYWORDS Wyatt Earp
 // 

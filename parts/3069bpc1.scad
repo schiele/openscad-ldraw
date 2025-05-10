@@ -11,7 +11,8 @@ function ldraw_lib__3069bpc1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS gear shift, rock raiders, slide lever, throttle, underground
+// 0 !KEYWORDS BrickLink 3069pc1, gear shift, Rebrickable 3069bpr0090, rock raiders
+// 0 !KEYWORDS Set 4483, slide lever, throttle, underground
 // 
 // 0 !HISTORY 2002-06-11 [PTadmin] Official Update 2002-03
 // 0 !HISTORY 2007-06-13 [PTadmin] Header formatted for Contributor Agreement

@@ -11,7 +11,8 @@ function ldraw_lib__3069bpz3() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickheadz, BrickLink 3069bpb580, Set 41490, wonder woman
+// 0 !KEYWORDS Brickheadz, BrickLink 3069pb0580, Rebrickable 3069bpr9994, Set 41490
+// 0 !KEYWORDS wonder woman
 // 
 // 0 !HISTORY 2018-12-08 [PTadmin] Official Update 2018-02
 // 

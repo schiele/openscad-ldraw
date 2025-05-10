@@ -12,6 +12,8 @@ function ldraw_lib__3009p27() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 3009pb022, Rebrickable 3009pr0018, Set 354
+// 
 // 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02
 // 
 // 

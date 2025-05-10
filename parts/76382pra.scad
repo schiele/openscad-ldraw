@@ -14,9 +14,9 @@ function ldraw_lib__76382pra() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973ps7c01, BrickOwl 353324, Mini Upper Part 1091
-// 0 !KEYWORDS Mini Upper Part 957, Original Trilogy, Rebrickable 973c03h03pr0007
-// 0 !KEYWORDS Set 10131, Set 6211, Set 7251, set 7262, set 7264, sith, Star Wars
+// 0 !KEYWORDS Bricklink 973ps7c01, Mini Upper Part 1091, Mini Upper Part 957
+// 0 !KEYWORDS Original Trilogy, Rebrickable 973c03h03pr0007, Set 10131, Set 6211
+// 0 !KEYWORDS Set 7251, set 7262, set 7264, sith, Star Wars
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

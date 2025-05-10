@@ -14,8 +14,8 @@ function ldraw_lib__973psa() = [
 // 
 // 0 !KEYWORDS 7134, 7140, 7180, A-wing, B-Wing, Bespin, Classic Trilogy
 // 0 !KEYWORDS Cloud City, coveralls, engineer, engineering, fatigues, khaki
-// 0 !KEYWORDS khakis, Luke Skywalker, overalls, Rebel Alliance, Star Wars
-// 0 !KEYWORDS technician, Uniform, X-Wing
+// 0 !KEYWORDS khakis, Luke Skywalker, overalls, Rebel Alliance, Set 7134
+// 0 !KEYWORDS Star Wars, technician, Uniform, X-Wing
 // 
 // 0 !CMDLINE -c382
 // 

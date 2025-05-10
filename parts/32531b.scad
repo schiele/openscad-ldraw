@@ -17,6 +17,8 @@ function ldraw_lib__32531b() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 32531, Rebrickable 32531
+// 
 // 0 !HISTORY 2022-09-15 [PTadmin] Official Update 2022-05
 // 
 // 

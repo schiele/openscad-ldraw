@@ -17,8 +17,8 @@ function ldraw_lib__973psj() = [
 // 
 // 0 !KEYWORDS Attack of the Clones, blast plates, bounty hunter, chrome
 // 0 !KEYWORDS clone trooper template, Episode Two, Geonosis, Jango Fett, Kamino
-// 0 !KEYWORDS Mandalorian battle armor, plate armor, silver, Slave I, Slave One
-// 0 !KEYWORDS Star Wars
+// 0 !KEYWORDS Mandalorian battle armor, plate armor, Set 7153, silver, Slave I
+// 0 !KEYWORDS Slave One, Star Wars
 // 
 // 0 !CMDLINE -c8
 // 

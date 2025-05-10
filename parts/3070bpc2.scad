@@ -14,6 +14,8 @@ function ldraw_lib__3070bpc2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 3070pc2, Rebrickable 3070bpr0039, Set 1616
+// 
 // 0 !HISTORY 2009-08-10 [anathema] Rewrite with more accurate pattern and BFC'd
 // 0 !HISTORY 2009-12-29 [PTadmin] Official Update 2009-03
 // 

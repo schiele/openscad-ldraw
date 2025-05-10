@@ -14,7 +14,7 @@ function ldraw_lib__76382p7t() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb0798c01, Brickowl 59653, City, jail, police
+// 0 !KEYWORDS Bricklink 973pb0798c01, City, jail, police
 // 0 !KEYWORDS Rebrickable 973c14h01pr1694, Set 4438, Set 4441, Set 7279, Set 7287
 // 0 !KEYWORDS Set 7498, Set 7553, Set 853092
 // 

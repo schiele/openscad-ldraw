@@ -25,7 +25,8 @@ function ldraw_lib__u9371p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Fabuland
+// 0 !KEYWORDS BrickLink fabak3pb03, Fabuland, Rebrickable fabupn0011pr0003
+// 0 !KEYWORDS Set 3639
 // 
 // 0 !HISTORY 2018-12-08 [PTadmin] Official Update 2018-02
 // 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives

@@ -15,7 +15,8 @@ function ldraw_lib__74948p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS 24-point, Armada, Bricklink 70001pb02, Pirates, windrose
+// 0 !KEYWORDS 24-point, Armada, BrickLink 70001c01pb02, Pirates
+// 0 !KEYWORDS Rebrickable 70001pr0002, Set 3143, windrose
 // 
 // 0 !HISTORY 2020-06-28 [PTadmin] Official Update 2020-01
 // 

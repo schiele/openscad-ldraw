@@ -15,8 +15,7 @@ function ldraw_lib__20905ps1() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Bricklink 20905pb02, Brickowl 664802, Rebrickable 20905pr0002
-// 0 !KEYWORDS Set 75189, Set 75195
+// 0 !KEYWORDS Bricklink 20905pb02, Rebrickable 20905pr0002, Set 75189, Set 75195
 // 
 // 0 !CMDLINE -c15
 // 

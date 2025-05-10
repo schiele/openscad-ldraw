@@ -14,7 +14,7 @@ function ldraw_lib__76382p8b() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS back logo, Bricklink 973p8bc01, BrickOwl 685986, Emergency, medic
+// 0 !KEYWORDS back logo, Bricklink 973p8bc01, Emergency, medic
 // 0 !KEYWORDS Mini Upper Part No 299, Rebrickable 973c27h03pr0008, rescue
 // 0 !KEYWORDS Set 1097, Set 6415, Set 6428, Set 6445, set 6451, Set 6462, Set 6473
 // 0 !KEYWORDS Set 6479, Sierpinski Triangle, town, X-Treme Team

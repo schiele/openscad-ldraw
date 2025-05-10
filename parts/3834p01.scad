@@ -12,6 +12,7 @@ function ldraw_lib__3834p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
+// 0 !KEYWORDS BrickLink 3834pb01, Rebrickable 3834pr0001, Set 6554
 // 
 // 0 !HISTORY 2011-07-25 [PTadmin] Official Update 2011-01
 // 0 !HISTORY 2012-12-24 [cwdee] Add category

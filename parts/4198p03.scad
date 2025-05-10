@@ -12,7 +12,8 @@ function ldraw_lib__4198p03() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Brick
-// 0 !KEYWORDS bricklink 4198pb11, Garage, house, Set 2648, Signboard
+// 0 !KEYWORDS bricklink 4198pb11, Garage, house, Rebrickable 4198pr9999, Set 2648
+// 0 !KEYWORDS Signboard
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
 // 

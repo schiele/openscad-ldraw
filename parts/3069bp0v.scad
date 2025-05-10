@@ -11,8 +11,8 @@ function ldraw_lib__3069bp0v() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Animal Crossing, Bricklink 3069pb1220, DIY Recipe, Set 77048
-// 0 !KEYWORDS Set 77049, set 77050
+// 0 !KEYWORDS Animal Crossing, Bricklink 3069pb1220, DIY Recipe
+// 0 !KEYWORDS Rebrickable 3069bpr0408, Set 77048, Set 77049, set 77050
 // 
 // 0 !HISTORY 2024-08-26 [OrionP] Official Update 2024-07
 // 

@@ -29,7 +29,7 @@ function ldraw_lib__4219b() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Door
-// 0 !KEYWORDS Garage, slat
+// 0 !KEYWORDS BrickLink 4219, Garage, Rebrickable 4219, slat
 // 
 // 0 !HISTORY 1997-12-05 [PTadmin] Official Update 1997-17
 // 0 !HISTORY 2002-07-16 [fwcain] Added keywords...

@@ -14,8 +14,8 @@ function ldraw_lib__3626bp36() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626bpb0323, Captain Brickbeard, Pirates, set 10210
-// 0 !KEYWORDS Set 6242, set 6243, Set 6253
+// 0 !KEYWORDS BrickLink 3626pb0323, Captain Brickbeard, Pirates
+// 0 !KEYWORDS Rebrickable 3626bpr0564, set 10210, Set 6242, set 6243, Set 6253
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 

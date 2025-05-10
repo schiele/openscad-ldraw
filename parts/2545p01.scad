@@ -13,7 +13,8 @@ function ldraw_lib__2545p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS french foreign legion, Pirates, soldier
+// 0 !KEYWORDS BrickLink 2545pb01, french foreign legion, Pirates
+// 0 !KEYWORDS Rebrickable 2545pr0001, set 10210, soldier
 // 
 // 0 !HISTORY 2013-12-23 [PTadmin] Official Update 2013-02
 // 

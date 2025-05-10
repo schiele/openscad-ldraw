@@ -12,7 +12,8 @@ function ldraw_lib__3496c01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !KEYWORDS Bathroom, Belville, faucet, Kitchen, minifig, sink, spigot, town
+// 0 !KEYWORDS Bathroom, Belville, BrickLink 69c03, faucet, Kitchen, minifig
+// 0 !KEYWORDS Rebrickable 69c03, sink, spigot, town
 // 
 // 0 !HISTORY 2016-09-22 [Holly-Wood] Moved origin of 3278.dat
 // 0 !HISTORY 2016-12-31 [PTadmin] Official Update 2016-01

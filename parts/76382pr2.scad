@@ -14,7 +14,7 @@ function ldraw_lib__76382pr2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973px71c01, BrickOwl 87075, Darth Sidious, Galactic Empire
+// 0 !KEYWORDS Bricklink 973px71c01, Darth Sidious, Galactic Empire
 // 0 !KEYWORDS Mini Upper Part No 462, Original Trilogy
 // 0 !KEYWORDS Rebrickable 973c03h01pr0071, Set 3340, set 7166, Set 7200
 // 0 !KEYWORDS Sheev Palpatine, sith, Star Wars, The Emperor

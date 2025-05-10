@@ -13,7 +13,8 @@ function ldraw_lib__37364p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Animal Crossing, Bricklink 970cm00pb019, Isabelle, Set 77052
+// 0 !KEYWORDS Animal Crossing, Bricklink 970cm00pb019, Isabelle
+// 0 !KEYWORDS Rebrickable 37364c07pr0001, Set 77052
 // 
 // 0 !HISTORY 2024-12-01 [OrionP] Official Update 2024-10
 // 

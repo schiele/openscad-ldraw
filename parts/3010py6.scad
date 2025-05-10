@@ -11,7 +11,8 @@ function ldraw_lib__3010py6() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickheadz, BrickLink 3010pb264, Emmet, Lego Movie, Set 41634
+// 0 !KEYWORDS Brickheadz, BrickLink 3010pb264, Emmet, Lego Movie
+// 0 !KEYWORDS Rebrickable 3010pr0065, Set 41634
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
 // 

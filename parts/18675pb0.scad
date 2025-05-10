@@ -11,7 +11,8 @@ function ldraw_lib__18675pb0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 18675pb15, Dr. Strange, Sanctum Sanctorum
+// 0 !KEYWORDS Bricklink 18675pb15, Dr. Strange, Rebrickable 18675pr0008
+// 0 !KEYWORDS Sanctum Sanctorum, Set 5005753
 // 
 // 0 !HISTORY 2019-09-09 [PTadmin] Official Update 2019-02
 // 

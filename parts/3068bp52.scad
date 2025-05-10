@@ -11,6 +11,8 @@ function ldraw_lib__3068bp52() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 3068p52, Rebrickable 3068bpr0061, Set 1976
+// 
 // 0 !HISTORY 2001-04-18 [sbliss] cleaned up pattern, to not collide with background.
 // 0 !HISTORY 2002-02-15 [BrickCaster] groove
 // 0 !HISTORY 2002-08-18 [PTadmin] Official Update 2002-04

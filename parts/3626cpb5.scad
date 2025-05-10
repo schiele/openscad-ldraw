@@ -15,7 +15,8 @@ function ldraw_lib__3626cpb5() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626cpb0710, Harley Quinn, Set 6857, Set 71229
+// 0 !KEYWORDS BrickLink 3626pb0710, Harley Quinn, Rebrickable 3626cpr0899
+// 0 !KEYWORDS Set 6857, Set 71229
 // 
 // 0 !HISTORY 2024-09-30 [OrionP] Official Update 2024-08
 // 

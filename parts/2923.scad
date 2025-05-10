@@ -24,7 +24,8 @@ function ldraw_lib__2923() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS arm, Claw, pantograph, robot finger, train catenary holder
+// 0 !KEYWORDS arm, Claw, pantograph, Rebrickable 2880, robot finger
+// 0 !KEYWORDS train catenary holder
 // 
 // 0 !HISTORY 1998-07-15 [PTadmin] Official Update 1998-07
 // 0 !HISTORY 1999-02-01 [PTadmin] Official Update 1999-01

@@ -12,6 +12,8 @@ function ldraw_lib__47899c03() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 73436c03
+// 
 // 0 !HISTORY 2019-12-27 [PTadmin] Official Update 2019-03
 // 0 !HISTORY 2024-05-29 [MagFors] Update description
 // 0 !HISTORY 2024-06-30 [OrionP] Official Update 2024-05

@@ -11,7 +11,7 @@ function ldraw_lib__3068bp0c() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS cinema, set 10232
+// 0 !KEYWORDS BrickLink 3068pb0655, cinema, Rebrickable 3068bpr0215, set 10232
 // 
 // 0 !HISTORY 2013-07-21 [PTadmin] Official Update 2013-01
 // 

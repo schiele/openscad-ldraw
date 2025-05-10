@@ -14,7 +14,8 @@ function ldraw_lib__3626cpd81() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626cpb1975, Disco Harley Quinn, Lego Batman Movie
+// 0 !KEYWORDS BrickLink 3626pb1975, Disco Harley Quinn, Lego Batman Movie
+// 0 !KEYWORDS Rebrickable 3626cpr2493, set 71020
 // 
 // 0 !CMDLINE -c15
 // 

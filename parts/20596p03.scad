@@ -18,7 +18,7 @@ function ldraw_lib__20596p03() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Apocalypseburg, Bricklink 20596pb03, Brickowl 502322, Harley Quinn
+// 0 !KEYWORDS Apocalypseburg, Bricklink 20596pb03, Harley Quinn
 // 0 !KEYWORDS Rebrickable 20596pr0003, Set 70840, The LEGO Movie 2
 // 
 // 0 !HISTORY 2016-03-18 {LEGO Digital Designer} Original part shape

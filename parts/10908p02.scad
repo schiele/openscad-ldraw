@@ -18,7 +18,8 @@ function ldraw_lib__10908p02() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Heartbreaker, Mark XVII, set 76008
+// 0 !KEYWORDS BrickLink 10908pb02, Heartbreaker, Mark XVII
+// 0 !KEYWORDS Rebrickable 10908pr0002, set 76008
 // 
 // 0 !HISTORY 2013-06-20 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2013-06-20 [MagFors] File preparation for LDraw Parts Tracker

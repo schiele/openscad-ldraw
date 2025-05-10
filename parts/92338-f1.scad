@@ -13,7 +13,7 @@ function ldraw_lib__92338_f1() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS 5 links
+// 0 !KEYWORDS 5 links, BrickLink 92338, Rebrickable 92338
 // 
 // 0 !HISTORY 2018-12-08 [PTadmin] Official Update 2018-02
 // 0 !HISTORY 2024-04-12 [Philo] Unmirrored links to allow inlining

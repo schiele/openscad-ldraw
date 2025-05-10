@@ -13,8 +13,8 @@ function ldraw_lib__850c01_f1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS fire fighter, legoland, rung, set 218, set 340, set 374, set 485
-// 0 !KEYWORDS set 658, set 693, Step
+// 0 !KEYWORDS BrickLink 850c01, fire fighter, legoland, Rebrickable 850c01, rung
+// 0 !KEYWORDS set 218, set 340, set 374, set 485, set 658, set 693, Step
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
 // 

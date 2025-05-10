@@ -15,6 +15,8 @@ function ldraw_lib__3010p918() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
+// 0 !KEYWORDS Rebrickable 3010pr0918
+// 
 // 0 !HISTORY 1997-09-29 [PTadmin] Official Update 1997-15
 // 0 !HISTORY 2002-12-15 [hafhead] Rewritten
 // 0 !HISTORY 2003-12-19 [PTadmin] Official Update 2003-03

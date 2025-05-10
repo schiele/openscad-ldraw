@@ -17,6 +17,8 @@ function ldraw_lib__4287a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 4287
+// 
 // 0 !HISTORY 1998-06-20 [PTadmin] Official Update 1998-06
 // 0 !HISTORY 2002-09-13 [izanette] Modified with WINDZ for BFC compliance
 // 0 !HISTORY 2003-08-01 [PTadmin] Official Update 2003-02

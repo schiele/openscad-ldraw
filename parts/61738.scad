@@ -20,7 +20,7 @@ function ldraw_lib__61738() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS 54086, Ferrari
+// 0 !KEYWORDS 54086, BrickLink 54086pb01, Ferrari, Rebrickable 54086pr0001
 // 
 // 0 !HISTORY 2012-08-09 [PTadmin] Official Update 2012-02
 // 

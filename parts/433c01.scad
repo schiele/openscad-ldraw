@@ -14,7 +14,7 @@ function ldraw_lib__433c01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !KEYWORDS 12 Volt, Power Pickup
+// 0 !KEYWORDS 12 Volt, BrickLink bb0053, Power Pickup
 // 
 // 0 !CMDLINE -c0
 // 

@@ -18,6 +18,7 @@ function ldraw_lib__u9310c01() = [
   [0,"BFC","CW"],
 // 
 // 0 !CATEGORY Brick
+// 0 !KEYWORDS BrickLink x661c01, Rebrickable fabupn0005c01
 // 
 // 0 !CMDLINE -c14
 // 

@@ -14,10 +14,10 @@ function ldraw_lib__76382p59() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Alien, Armaron, Bricklink 973pb0037c01, BrickOwl 949492
-// 0 !KEYWORDS Corporal Steel, Cyborg, Danny Longlegs, Extraterrestrial, Holox
-// 0 !KEYWORDS Insectoids, Mini Upper Part 305, Rebrickable 973c31h03pr0037
-// 0 !KEYWORDS Set 2964, Set 6837, Set 6942, Set 6943, Set 6977, Space, Zotax
+// 0 !KEYWORDS Alien, Armaron, Bricklink 973pb0037c01, Corporal Steel, Cyborg
+// 0 !KEYWORDS Danny Longlegs, Extraterrestrial, Holox, Insectoids
+// 0 !KEYWORDS Mini Upper Part 305, Rebrickable 973c31h03pr0037, Set 2964, Set 6837
+// 0 !KEYWORDS Set 6942, Set 6943, Set 6977, Space, Zotax
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

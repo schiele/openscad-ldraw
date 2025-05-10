@@ -19,7 +19,7 @@ function ldraw_lib__u9324p01c01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Set 71387, Super Mario
+// 0 !KEYWORDS BrickLink 77127c01pb01, Rebrickable 77127, Set 71387, Super Mario
 // 
 // 0 !HISTORY 2023-11-19 [OrionP] Official Update 2023-06
 // 

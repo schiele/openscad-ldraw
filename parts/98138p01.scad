@@ -12,7 +12,8 @@ function ldraw_lib__98138p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 98138pb001, Ninjago, Set 9440, Set 9447
+// 0 !KEYWORDS Bricklink 98138pb001, Ninjago, Rebrickable 98138pr0004, Set 9440
+// 0 !KEYWORDS Set 9447
 // 
 // 0 !HISTORY 2012-08-09 [PTadmin] Official Update 2012-02
 // 0 !HISTORY 2014-08-25 [cwdee] Correct description

@@ -15,6 +15,8 @@ function ldraw_lib__915p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
+// 0 !KEYWORDS Rebrickable 915pr0002, set 347
+// 
 // 0 !CMDLINE -c2
 // 
 // 0 !HISTORY 1998-03-23 [PTadmin] Official Update 1998-03

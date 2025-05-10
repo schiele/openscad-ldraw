@@ -14,11 +14,10 @@ function ldraw_lib__76382p7z() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb0333c01, Brickowl 253548, City, Creator
-// 0 !KEYWORDS Rebrickable 973c05h01pr1166, set 10190, set 10222, set 10235
-// 0 !KEYWORDS set 10244, Set 30349, Set 31012, Set 3181, Set 4000012, Set 4513
-// 0 !KEYWORDS Set 60050, Set 75874, Set 7636, Set 7643, Set 7696, Set 7897
-// 0 !KEYWORDS Set 9247
+// 0 !KEYWORDS Bricklink 973pb0333c01, City, Creator, Rebrickable 973c05h01pr1166
+// 0 !KEYWORDS set 10190, set 10222, set 10235, set 10244, Set 30349, Set 31012
+// 0 !KEYWORDS Set 3181, Set 4000012, Set 4513, Set 60050, Set 75874, Set 7636
+// 0 !KEYWORDS Set 7643, Set 7696, Set 7897, Set 9247
 // 
 // 0 !HISTORY 2024-12-30 [OrionP] Official Update 2024-11
 // 

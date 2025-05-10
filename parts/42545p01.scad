@@ -11,7 +11,8 @@ function ldraw_lib__42545p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Porsche 911 RSR, Set 42096
+// 0 !KEYWORDS BrickLink 42545pb001L, Porsche 911 RSR, Rebrickable 42545pr0001
+// 0 !KEYWORDS Set 42096
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
 // 

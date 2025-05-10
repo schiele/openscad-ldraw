@@ -24,7 +24,8 @@ function ldraw_lib__14769p0k() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 14769pb264, Set 11003, Set 45345, Spike Essential
+// 0 !KEYWORDS Bricklink 14769pb264, Rebrickable 14769pr1116, Set 11003, Set 45345
+// 0 !KEYWORDS Spike Essential
 // 
 // 0 !HISTORY 2022-05-07 [PTadmin] Official Update 2022-03
 // 

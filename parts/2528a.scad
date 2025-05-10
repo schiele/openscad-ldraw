@@ -13,9 +13,10 @@ function ldraw_lib__2528a() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS 2-corner, admiral, bi-corner, bicorn, bicorner, Cap, captain
-// 0 !KEYWORDS chapeau bras, chapeau-bras, cocked hat, Feather, fore and aft hat
-// 0 !KEYWORDS gentleman, Governor, officer, Pirate, Pirates, plume, Redbeard
+// 0 !KEYWORDS 2-corner, admiral, bi-corner, bicorn, bicorner, BrickLink 2528, Cap
+// 0 !KEYWORDS captain, chapeau bras, chapeau-bras, cocked hat, Feather
+// 0 !KEYWORDS fore and aft hat, gentleman, Governor, officer, Pirate, Pirates
+// 0 !KEYWORDS plume, Rebrickable 2528, Redbeard
 // 
 // 0 !HISTORY 2013-08-14 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2021-04-20 [GeraldLasser] File preparation for LDraw Parts Tracker

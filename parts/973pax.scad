@@ -16,7 +16,7 @@ function ldraw_lib__973pax() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS Adventurers, amazon, belt, Dino Island, Egypt, hero, Johnny Thunder
-// 0 !KEYWORDS open collar, Pistol, pockets, revolver
+// 0 !KEYWORDS open collar, Pistol, pockets, revolver, Set 7410
 // 
 // 0 !HISTORY 2016-12-31 [PTadmin] Official Update 2016-01
 // 

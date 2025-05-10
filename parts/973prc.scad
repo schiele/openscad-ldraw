@@ -17,7 +17,7 @@ function ldraw_lib__973prc() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Armor
+// 0 !KEYWORDS Armor, BrickLink 973pb0656, Set 4597068
 // 
 // 0 !HISTORY 2012-12-28 [PTadmin] Official Update 2012-03
 // 0 !HISTORY 2018-03-25 [cwdee] Correct description spelling

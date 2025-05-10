@@ -14,9 +14,8 @@ function ldraw_lib__76382p6j() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Airport, Bricklink 973pb0298c01, BrickOwl 397333, City
-// 0 !KEYWORDS Rebrickable 973c22h01pr1170, set 10173, Set 10199, Set 4513, Trains
-// 0 !KEYWORDS Winter Village, World City
+// 0 !KEYWORDS Airport, Bricklink 973pb0298c01, City, Rebrickable 973c22h01pr1170
+// 0 !KEYWORDS set 10173, Set 10199, Set 4513, Trains, Winter Village, World City
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

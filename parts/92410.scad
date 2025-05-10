@@ -13,6 +13,8 @@ function ldraw_lib__92410() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 4532b
+// 
 // 0 !HISTORY 2013-07-21 [PTadmin] Official Update 2013-01
 // 
 // 

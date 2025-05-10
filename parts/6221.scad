@@ -15,6 +15,8 @@ function ldraw_lib__6221() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
+// 0 !KEYWORDS BrickLink 424, Rebrickable 424
+// 
 // 0 !HISTORY 2007-08-31 [Philo] BFC'ed, used ring primitives; Checked against The LEGO Universe Team version
 // 0 !HISTORY 2010-07-05 [PTadmin] Official Update 2010-02
 // 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives

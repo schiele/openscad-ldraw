@@ -17,9 +17,8 @@ function ldraw_lib__73200bpaw() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS BrickLink 970c86pb06, Brickowl 695235, Chima
-// 0 !KEYWORDS Rebrickable 970c14pr0436, set 70004, set 70009, set 70011, set 70106
-// 0 !KEYWORDS set 70127, set 850779, Worriz
+// 0 !KEYWORDS BrickLink 970c86pb06, Chima, Rebrickable 970c14pr0436, set 70004
+// 0 !KEYWORDS set 70009, set 70011, set 70106, set 70127, set 850779, Worriz
 // 
 // 0 !CMDLINE -c71
 // 

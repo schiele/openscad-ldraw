@@ -17,7 +17,7 @@ function ldraw_lib__2586ps1() = [
 // 
 // 0 !CATEGORY Minifig Accessory
 // 0 !KEYWORDS Episode I, forcefield, Jar Jar Binks, Naboo, Rebrickable 2586pr0028
-// 0 !KEYWORDS Star Wars
+// 0 !KEYWORDS Set 65028, Star Wars
 // 
 // 0 !CMDLINE -c276
 // 

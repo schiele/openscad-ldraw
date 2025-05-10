@@ -15,7 +15,7 @@ function ldraw_lib__87748p02() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS tortoise
+// 0 !KEYWORDS BrickLink 87748pb02, Rebrickable 87748pr0005, Set 8060, tortoise
 // 
 // 0 !HISTORY 2011-07-25 [PTadmin] Official Update 2011-01
 // 

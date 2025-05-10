@@ -12,8 +12,8 @@ function ldraw_lib__45411p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 45411pb01, Brickowl 331424, Jack Stone
-// 0 !KEYWORDS Rebrickable 45411pr0001, Set 4654, Tanker Truck
+// 0 !KEYWORDS Bricklink 45411pb01, Jack Stone, Rebrickable 45411pr0001, Set 4654
+// 0 !KEYWORDS Tanker Truck
 // 
 // 0 !HISTORY 2024-12-01 [OrionP] Official Update 2024-10
 // 

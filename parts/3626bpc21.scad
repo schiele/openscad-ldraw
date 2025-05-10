@@ -15,7 +15,8 @@ function ldraw_lib__3626bpc21() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626bpb0465, Maraca Man, Mariachi, Mexican, Series 2
+// 0 !KEYWORDS BrickLink 3626pb0465, Maraca Man, Mariachi, Mexican
+// 0 !KEYWORDS Rebrickable 3626bpr0695, Series 2, Set 8684
 // 
 // 0 !CMDLINE -c14
 // 

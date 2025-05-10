@@ -14,7 +14,8 @@ function ldraw_lib__3626cpnf() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626cpb1893, Cole, Ninjago
+// 0 !KEYWORDS BrickLink 3626pb1893, Cole, Ninjago, Rebrickable 3626cpr2258
+// 0 !KEYWORDS Set 112005
 // 
 // 0 !CMDLINE -c14
 // 

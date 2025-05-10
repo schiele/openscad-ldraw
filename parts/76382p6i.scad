@@ -14,8 +14,8 @@ function ldraw_lib__76382p6i() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb2035c01, BrickOwl 661099, City, Mannequin
-// 0 !KEYWORDS Rebrickable 973c31h31pr3081, Set 60097, Space, Statue
+// 0 !KEYWORDS Bricklink 973pb2035c01, City, Mannequin, Rebrickable 973c31h31pr3081
+// 0 !KEYWORDS Set 60097, Space, Statue
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

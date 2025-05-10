@@ -14,10 +14,10 @@ function ldraw_lib__76382p4c() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Blacksmith Shop, Bricklink 973px117c01, BrickOwl 984581, Castle
-// 0 !KEYWORDS Cedric the Bull, chrome, Daniel Siskind, John of Mayne, King Leo
-// 0 !KEYWORDS Knights Kingdom, Mini Upper Part No 332, Rebrickable 973c03h01pr0117
-// 0 !KEYWORDS Set 3739, set 4817, Set 6091, Set 6096, Set 6098
+// 0 !KEYWORDS Blacksmith Shop, Bricklink 973px117c01, Castle, Cedric the Bull
+// 0 !KEYWORDS chrome, Daniel Siskind, John of Mayne, King Leo, Knights Kingdom
+// 0 !KEYWORDS Mini Upper Part No 332, Rebrickable 973c03h01pr0117, Set 3739
+// 0 !KEYWORDS set 4817, Set 6091, Set 6096, Set 6098
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

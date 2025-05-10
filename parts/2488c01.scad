@@ -14,6 +14,7 @@ function ldraw_lib__2488c01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
+// 0 !KEYWORDS BrickLink 2488, Rebrickable 2488
 // 
 // 0 !HISTORY 2010-04-05 [PTadmin] Official Update 2010-01
 // 

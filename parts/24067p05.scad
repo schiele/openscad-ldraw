@@ -17,8 +17,8 @@ function ldraw_lib__24067p05() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink frnd675, Brickowl 1306255, child, Eman, Friends, Jayson
-// 0 !KEYWORDS papoose, Rebrickable 24061pr0006, set 42615, set 42621, swaddled
+// 0 !KEYWORDS Bricklink frnd675, child, Eman, Friends, Jayson, papoose
+// 0 !KEYWORDS Rebrickable 24067pr0006, set 42615, set 42621, swaddled
 // 
 // 0 !HISTORY 2016-03-18 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2024-03-31 [Holly-Wood] File preparation for LDraw Parts Tracker

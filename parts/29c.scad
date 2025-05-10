@@ -12,6 +12,8 @@ function ldraw_lib__29c() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 29, Rebrickable 29
+// 
 // 0 !HISTORY 2006-04-17 [cwdee] Secondary author
 // 0 !HISTORY 2009-05-02 [PTadmin] Official Update 2009-01
 // 

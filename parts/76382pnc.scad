@@ -14,8 +14,8 @@ function ldraw_lib__76382pnc() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb1981c01, BrickOwl 104613, Jay, Ninjago
-// 0 !KEYWORDS Rebrickable 973c28h03pr2855, Set 70749, Set 71215
+// 0 !KEYWORDS Bricklink 973pb1981c01, Jay, Ninjago, Rebrickable 973c28h03pr2855
+// 0 !KEYWORDS Set 70749, Set 71215
 // 
 // 0 !HISTORY 2024-12-30 [OrionP] Official Update 2024-11
 // 

@@ -13,6 +13,7 @@ function ldraw_lib__30408p02() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
+// 0 !KEYWORDS Rebrickable 30408pr0001, Set 10131
 // 
 // 0 !HISTORY 2010-09-10 {LEGO Universe Team} Original part shape
 // 0 !HISTORY 2010-09-11 [anathema] File preparation for LDraw Parts Tracker

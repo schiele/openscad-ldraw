@@ -13,7 +13,7 @@ function ldraw_lib__973p4e() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Castle, Coat of Arms, King Richard, red and white, tunic
+// 0 !KEYWORDS Castle, Coat of Arms, King Richard, red and white, Set 6008, tunic
 // 
 // 0 !CMDLINE -c4
 // 

@@ -12,7 +12,7 @@ function ldraw_lib__973pq0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Mummy Warrior, Pharaoh's Quest
+// 0 !KEYWORDS Mummy Warrior, Pharaoh's Quest, set 7306
 // 
 // 0 !CMDLINE -c71
 // 

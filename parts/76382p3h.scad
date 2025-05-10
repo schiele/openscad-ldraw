@@ -14,8 +14,8 @@ function ldraw_lib__76382p3h() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb0063c01, BrickOwl 7369, islanders, King Kahuka
-// 0 !KEYWORDS Pirates, Rebrickable 973c01h01pr0063, set 6292
+// 0 !KEYWORDS Bricklink 973pb0063c01, islanders, King Kahuka, Pirates
+// 0 !KEYWORDS Rebrickable 973c01h01pr0063, set 6292
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

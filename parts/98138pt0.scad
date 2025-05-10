@@ -12,7 +12,8 @@ function ldraw_lib__98138pt0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS BrickLink 98138pb054, Porsche GT3 RS, Wheelhub
+// 0 !KEYWORDS BrickLink 98138pb054, Porsche GT3 RS, Rebrickable 98138pr0055
+// 0 !KEYWORDS set 42056, Wheelhub
 // 
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
 // 

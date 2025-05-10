@@ -14,9 +14,9 @@ function ldraw_lib__76382p4q() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973p4qc01, BrickOwl 867376, Castle, Dress, Forestman
-// 0 !KEYWORDS forestmen, Maid Marian, Merry Men, Princess
-// 0 !KEYWORDS Rebrickable 973c31h01pr9999, Robin Hood, Set 6071
+// 0 !KEYWORDS Bricklink 973p4qc01, Castle, Dress, Forestman, forestmen
+// 0 !KEYWORDS Maid Marian, Merry Men, Princess, Rebrickable 973c31h01pr9999
+// 0 !KEYWORDS Robin Hood, Set 6071
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

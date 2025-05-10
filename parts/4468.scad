@@ -16,6 +16,7 @@ function ldraw_lib__4468() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Vehicle
+// 0 !KEYWORDS BrickLink fabah4, Rebrickable fabupn0032
 // 
 // 0 !HISTORY 2018-01-30 [PTadmin] Official Update 2018-01
 // 

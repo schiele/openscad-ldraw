@@ -14,7 +14,7 @@ function ldraw_lib__76382p5d() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Apollo, astronaut, Bricklink 973pb3631c01, BrickOwl 438253
+// 0 !KEYWORDS Apollo, astronaut, Bricklink 973pb3631c01
 // 0 !KEYWORDS Rebrickable 973c27h27pr4746, set 10266
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01

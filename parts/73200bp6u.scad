@@ -17,8 +17,8 @@ function ldraw_lib__73200bp6u() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Android, Bricklink 970c09pb02, Brickowl 362357, Invaders
-// 0 !KEYWORDS Rebrickable 970c17pr0003, set 6975, set 6979, UFO
+// 0 !KEYWORDS Android, Bricklink 970c09pb02, Invaders, Rebrickable 970c17pr0003
+// 0 !KEYWORDS set 6975, set 6979, UFO
 // 
 // 0 !HISTORY 2020-12-29 [cwdee] Original pattern design
 // 0 !HISTORY 2023-05-03 [Holly-Wood] Adapted to corrected geometry

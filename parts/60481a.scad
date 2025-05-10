@@ -11,6 +11,8 @@ function ldraw_lib__60481a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 60481, Rebrickable 60481
+// 
 // 0 !HISTORY 2010-07-05 [PTadmin] Official Update 2010-02
 // 0 !HISTORY 2022-09-16 [ejboer] Moved side faces to main file for patterns
 // 0 !HISTORY 2022-09-27 [OrionP] Moved from 60481a.dat

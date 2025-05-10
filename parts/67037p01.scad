@@ -15,7 +15,7 @@ function ldraw_lib__67037p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Bricklink 67037pb01, CMF, Series 20, Viking
+// 0 !KEYWORDS Bricklink 67037pb01, CMF, Rebrickable 67037pr0001, Series 20, Viking
 // 
 // 0 !HISTORY 2024-01-29 [OrionP] Official Update 2024-01
 // 

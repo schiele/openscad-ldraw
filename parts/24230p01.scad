@@ -14,8 +14,7 @@ function ldraw_lib__24230p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Bricklink 24071pb01, Brickowl 888239, CMF, Rebrickable 24071pr0001
-// 0 !KEYWORDS Set 71011
+// 0 !KEYWORDS Bricklink 24071pb01, CMF, Rebrickable 24071pr0001, Set 71011
 // 
 // 0 !HISTORY 2016-03-18 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2022-12-28 [Philo] File preparation for LDraw Parts Tracker

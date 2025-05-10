@@ -11,7 +11,8 @@ function ldraw_lib__87079pz2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickheadz, BrickLink 87079pb411, Captain Armando Salazar, Set 41594
+// 0 !KEYWORDS Brickheadz, BrickLink 87079pb0411, Captain Armando Salazar
+// 0 !KEYWORDS Rebrickable 87079pr0122, Set 41594
 // 
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
 // 

@@ -12,7 +12,8 @@ function ldraw_lib__25269p60() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 25269pb006, Cosmic Wonder, Dots, Set 41903
+// 0 !KEYWORDS Bricklink 25269pb006, Cosmic Wonder, Dots, Rebrickable 25269pr0009
+// 0 !KEYWORDS Set 41903
 // 
 // 0 !HISTORY 2020-06-28 [PTadmin] Official Update 2020-01
 // 

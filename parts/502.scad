@@ -27,6 +27,8 @@ function ldraw_lib__502() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink x460
+// 
 // 0 !HISTORY 2008-11-16 [anathema] Fixed various errors, BFC'd, added more detail
 // 0 !HISTORY 2010-07-05 [PTadmin] Official Update 2010-02
 // 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives

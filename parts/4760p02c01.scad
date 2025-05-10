@@ -13,8 +13,7 @@ function ldraw_lib__4760p02c01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 4760c01pb03, Brickowl 897456, Rebrickable 4760c01pr0003
-// 0 !KEYWORDS set 6482
+// 0 !KEYWORDS Bricklink 4760c01pb03, Rebrickable 4760c01pr0003, set 6482
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
 // 0 !HISTORY 2025-02-09 [Holly-Wood] Sanded description, added keywords

@@ -12,7 +12,8 @@ function ldraw_lib__2723p05() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 2958pb002, control, Set 1090, Set 1092, Set 9700
+// 0 !KEYWORDS BrickLink 2723pb002, control, Rebrickable 2723pr0005, Set 1090
+// 0 !KEYWORDS Set 1092, Set 9700
 // 
 // 0 !HISTORY 2023-01-01 [MagFors] Reworked pattern subfile
 // 0 !HISTORY 2023-06-24 [OrionP] Official Update 2023-03

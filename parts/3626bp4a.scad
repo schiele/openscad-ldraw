@@ -13,7 +13,8 @@ function ldraw_lib__3626bp4a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626bpb0269, Castle, Fantasy Era, Set 7029
+// 0 !KEYWORDS BrickLink 3626pb0269, Castle, Fantasy Era, Rebrickable 3626bpr0494
+// 0 !KEYWORDS Set 7029
 // 
 // 0 !CMDLINE -c15
 // 

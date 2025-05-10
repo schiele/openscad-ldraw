@@ -15,7 +15,8 @@ function ldraw_lib__3626cp8p() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626cpb1083, Robo SWAT, The LEGO Movie
+// 0 !KEYWORDS BrickLink 3626pb1083, Rebrickable 3626cpr1338, Robo SWAT, Set 30282
+// 0 !KEYWORDS The LEGO Movie
 // 
 // 0 !CMDLINE -c179
 // 

@@ -11,8 +11,8 @@ function ldraw_lib__6636p09() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Apollo, Bricklink 6636pb153, Brickowl 132896, NASA
-// 0 !KEYWORDS Rebrickable 6636pr0017, Rocket, Saturn V, Set 21309
+// 0 !KEYWORDS Apollo, Bricklink 6636pb153, NASA, Rebrickable 6636pr0017, Rocket
+// 0 !KEYWORDS Saturn V, Set 21309
 // 
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
 // 0 !HISTORY 2025-02-27 [Lego-Manfred] References added

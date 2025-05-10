@@ -17,6 +17,8 @@ function ldraw_lib__35010() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS Rebrickable upn0060
+// 
 // 0 !HISTORY 2023-10-31 [OrionP] Official Update 2023-05
 // 
 // 

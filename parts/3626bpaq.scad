@@ -16,9 +16,8 @@ function ldraw_lib__3626bpaq() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626bpb0001, Brickowl 422145, Castle, happy
-// 0 !KEYWORDS minifig skeleton skull, old, Rebrickable 3626bpr0895, set 3722
-// 0 !KEYWORDS set 79010, set 9468
+// 0 !KEYWORDS BrickLink 3626pb0001, Castle, happy, minifig skeleton skull, old
+// 0 !KEYWORDS Rebrickable 3626bpr0895, set 3722, set 79010, set 9468
 // 
 // 0 !CMDLINE -c15
 // 

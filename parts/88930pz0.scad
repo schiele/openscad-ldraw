@@ -12,7 +12,8 @@ function ldraw_lib__88930pz0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickheadz, BrickLink 88930pb075, Iron Man, Set 41590
+// 0 !KEYWORDS Brickheadz, BrickLink 88930pb075, Iron Man, Rebrickable 88930pr0011
+// 0 !KEYWORDS Set 41590
 // 
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
 // 

@@ -12,7 +12,7 @@ function ldraw_lib__2582ps0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Star Wars
+// 0 !KEYWORDS BrickLink 2582px1, Rebrickable 2582pr0005, Set 65034, Star Wars
 // 
 // 0 !HISTORY 2013-07-21 [PTadmin] Official Update 2013-01
 // 

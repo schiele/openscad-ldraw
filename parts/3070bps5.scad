@@ -11,7 +11,8 @@ function ldraw_lib__3070bps5() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Hoth, set 75049, set 75054, set 75098, set 75138, set 75146
+// 0 !KEYWORDS BrickLink 3070pb083, Hoth, Rebrickable 3070bpr0149, set 75049
+// 0 !KEYWORDS set 75054, set 75098, set 75138, set 75146
 // 
 // 0 !HISTORY 2016-12-31 [PTadmin] Official Update 2016-01
 // 

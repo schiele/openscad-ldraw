@@ -17,7 +17,8 @@ function ldraw_lib__24629p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 24629pb02, Disney, Minnie, Set 10773, set 71040, Set 71044
+// 0 !KEYWORDS Bricklink 24629pb02, Disney, Minnie, Rebrickable 24629pr0002
+// 0 !KEYWORDS Set 10773, set 71040, Set 71044
 // 
 // 0 !HISTORY 2022-02-06 {LEGO Instructions App} Original part shape
 // 0 !HISTORY 2022-02-07 [Philo] File preparation for LDraw Parts Tracker

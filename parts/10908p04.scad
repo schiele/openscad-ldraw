@@ -18,7 +18,8 @@ function ldraw_lib__10908p04() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Iron Patriot, set 30168
+// 0 !KEYWORDS BrickLink 10908pb04, Iron Patriot, Rebrickable 10908pr0004
+// 0 !KEYWORDS set 30168
 // 
 // 0 !HISTORY 2013-06-20 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2013-06-20 [MagFors] File preparation for LDraw Parts Tracker

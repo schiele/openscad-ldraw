@@ -18,7 +18,7 @@ function ldraw_lib__23321() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS bionicle, manas, set 8539
+// 0 !KEYWORDS bionicle, BrickLink 23323c01, manas, Rebrickable 23323c01, set 8539
 // 
 // 0 !HISTORY 2014-11-22 [Steffen] BFCd
 // 0 !HISTORY 2022-03-11 [Holly-Wood] Added keywords, regrouped

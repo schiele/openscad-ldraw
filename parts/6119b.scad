@@ -24,7 +24,7 @@ function ldraw_lib__6119b() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS blinder, ice planet, radio, Space
+// 0 !KEYWORDS blinder, BrickLink x42, ice planet, radio, Rebrickable 6119, Space
 // 
 // 0 !HISTORY 2011-12-10 [timgould] Shifted by y=-1.5 as suggested, otherwise unchanged
 // 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01

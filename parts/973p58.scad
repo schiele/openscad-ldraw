@@ -12,7 +12,7 @@ function ldraw_lib__973p58() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Gypsy Moth
+// 0 !KEYWORDS Gypsy Moth, Set 2965
 // 
 // 0 !HISTORY 2015-10-11 [PTadmin] Official Update 2015-01
 // 

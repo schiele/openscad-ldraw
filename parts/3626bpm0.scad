@@ -14,7 +14,8 @@ function ldraw_lib__3626bpm0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Lord of the Rings
+// 0 !KEYWORDS BrickLink 3626pb0719, Lord of the Rings, Rebrickable 3626cpr0976
+// 0 !KEYWORDS Set 10237
 // 
 // 0 !HISTORY 2014-06-21 [PTadmin] Official Update 2014-01
 // 0 !HISTORY 2014-06-22 [cwdee] Improve description

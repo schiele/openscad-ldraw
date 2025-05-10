@@ -15,7 +15,8 @@ function ldraw_lib__3626cpm4() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Lord of the Rings, Samwise Gamgee
+// 0 !KEYWORDS BrickLink 3626pb0758, Lord of the Rings, Rebrickable 3626cpr0975
+// 0 !KEYWORDS Samwise Gamgee, set 75003
 // 
 // 0 !CMDLINE -c78
 // 

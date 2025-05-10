@@ -12,9 +12,9 @@ function ldraw_lib__4066bp03() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Brick
-// 0 !KEYWORDS bricklink 4066pb054, Fishing boat, Grocery, harbor, Set 1027
-// 0 !KEYWORDS Set 1041, Set 2372, Set 2388, Set 2454, set 2623, Set 2643, Set 9162
-// 0 !KEYWORDS Zoo
+// 0 !KEYWORDS bricklink 4066pb054, Fishing boat, Grocery, harbor
+// 0 !KEYWORDS Rebrickable 4066pr0054, Set 1027, Set 1041, Set 2372, Set 2388
+// 0 !KEYWORDS Set 2454, set 2623, Set 2643, Set 9162, Zoo
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
 // 

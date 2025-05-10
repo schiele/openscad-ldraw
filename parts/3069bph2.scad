@@ -11,8 +11,8 @@ function ldraw_lib__3069bph2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickheadz, BrickLink 3069bpb649, Harry Potter, Hermione, Set 30407
-// 0 !KEYWORDS Set 41616, Set 75953
+// 0 !KEYWORDS Brickheadz, BrickLink 3069pb0649, Harry Potter, Hermione
+// 0 !KEYWORDS Rebrickable 3069bpr0238, Set 30407, Set 41616, Set 75953
 // 
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
 // 

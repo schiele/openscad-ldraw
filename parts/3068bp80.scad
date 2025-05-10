@@ -19,8 +19,8 @@ function ldraw_lib__3068bp80() = [
   [0,"BFC","CW"],
 // 
 // 0 !KEYWORDS BrickLink 3068p80, clock, computer, degree, digits, input, lcd
-// 0 !KEYWORDS letter, office, Rebrickable 3068bpr0077, temperature, terminal
-// 0 !KEYWORDS timer, typewriter
+// 0 !KEYWORDS letter, office, Rebrickable 3068bpr0077, Set 3312, temperature
+// 0 !KEYWORDS terminal, timer, typewriter
 // 
 // 0 !HISTORY 2002-02-15 [BrickCaster] groove
 // 0 !HISTORY 2002-04-25 [PTadmin] Official Update 2002-02

@@ -26,8 +26,8 @@ function ldraw_lib__3664p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Brick
-// 0 !KEYWORDS Bricklink 3664pb12, Fire Station, police, Set 2220, Set 2683
-// 0 !KEYWORDS Set 2741, Set 2745, Train
+// 0 !KEYWORDS Bricklink 3664pb12, Fire Station, police, Rebrickable 3664pr0023
+// 0 !KEYWORDS Set 2220, Set 2683, Set 2741, Set 2745, Train
 // 
 // 0 !HISTORY 2020-06-28 [PTadmin] Official Update 2020-01
 // 0 !HISTORY 2022-09-07 [RainbowDolphin] Made top semi-cylinder hi-res to comply with latest part regulations

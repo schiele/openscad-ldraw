@@ -14,7 +14,7 @@ function ldraw_lib__76382pm1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb1142c01, BrickOwl 777273, Gandalf, Lord of the Rings
+// 0 !KEYWORDS Bricklink 973pb1142c01, Gandalf, Lord of the Rings
 // 0 !KEYWORDS Rebrickable 973c12h02pr2053, Set 10237, set 30213, Set 71200
 // 0 !KEYWORDS set 79003, Set 79005, set 79010, Set 79014, set 9469
 // 

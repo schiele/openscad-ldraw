@@ -13,7 +13,7 @@ function ldraw_lib__3010py0() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS Avengers, Brickheadz, Bricklink 3010pb227, Chest, Infinity War
-// 0 !KEYWORDS Set 41605, Thanos
+// 0 !KEYWORDS Rebrickable 3010pr0033, Set 41605, Thanos
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 

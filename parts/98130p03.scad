@@ -15,7 +15,7 @@ function ldraw_lib__98130p03() = [
 // 
 // 0 !CATEGORY Minifig Headwear
 // 0 !KEYWORDS Bricklink 98130pb03, CMF, Collectible, Kai, Movie, Ninjago
-// 0 !KEYWORDS set 71019
+// 0 !KEYWORDS Rebrickable 98130pr0003, set 71019
 // 
 // 0 !HISTORY 2023-04-17 [OrionP] Official Update 2023-02
 // 

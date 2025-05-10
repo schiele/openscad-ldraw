@@ -13,7 +13,7 @@ function ldraw_lib__3004ph2() = [
 // 
 // 0 !KEYWORDS BrickLink 3004px10, Coat of Arms, Harry Potter
 // 0 !KEYWORDS Hogwarts School of Witchcraft and Wizardry, Rebrickable 3004pr9956
-// 0 !KEYWORDS Salazar Syltherin, Slytherin House
+// 0 !KEYWORDS Salazar Syltherin, Set 4726, Slytherin House
 // 
 // 0 !CMDLINE -c2
 // 

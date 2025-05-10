@@ -15,7 +15,8 @@ function ldraw_lib__4066bp1i() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Brick
-// 0 !KEYWORDS bricklink 4066pb014, Bucket, Family, Girls, Home, Set 2552
+// 0 !KEYWORDS bricklink 4066pb014, Bucket, Family, Girls, Home
+// 0 !KEYWORDS Rebrickable 4066pr0025, Set 2552
 // 
 // 0 !HISTORY 2020-09-13 [RainbowDolphin] Branched from 4066bp0t for different colour
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03

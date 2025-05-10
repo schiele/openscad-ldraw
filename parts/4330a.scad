@@ -17,6 +17,7 @@ function ldraw_lib__4330a() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Figure Accessory
+// 0 !KEYWORDS BrickLink x120a, Rebrickable 556
 // 
 // 0 !HISTORY 2007-08-11 [mikeheide] added edges, made shaft vertical, changed origin
 // 0 !HISTORY 2012-11-24 [Philo] Rebuilt blade

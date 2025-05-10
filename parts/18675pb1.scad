@@ -14,7 +14,8 @@ function ldraw_lib__18675pb1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Ant Man, Bricklink 18675pb16, Marvel, Superheroes
+// 0 !KEYWORDS Ant Man, Bricklink 18675pb16, Marvel, Rebrickable 18675pr0015
+// 0 !KEYWORDS Set 76109, Superheroes
 // 
 // 0 !CMDLINE -c47
 // 

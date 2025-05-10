@@ -13,8 +13,8 @@ function ldraw_lib__3626cpn2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626bpb0549, Brickowl 883711, Frakjaw, Ninjago
-// 0 !KEYWORDS Rebrickable 3626bpr0751, Set 2257, set 2263, Set 2521
+// 0 !KEYWORDS BrickLink 3626pb0549, Frakjaw, Ninjago, Rebrickable 3626bpr0751
+// 0 !KEYWORDS Set 2257, set 2263, Set 2521
 // 
 // 0 !HISTORY 2014-06-21 [PTadmin] Official Update 2014-01
 // 0 !HISTORY 2024-11-13 [Lego-Manfred] Reference and sets added

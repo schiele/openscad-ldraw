@@ -12,7 +12,8 @@ function ldraw_lib__73590b() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS gizmo, minifig, Space, tube
+// 0 !KEYWORDS BrickLink 73590c02a, gizmo, minifig, Rebrickable 73590c02a, Space
+// 0 !KEYWORDS tube
 // 
 // 0 !HISTORY 1998-10-15 [PTadmin] Official Update 1998-09
 // 0 !HISTORY 1999-07-05 [PTadmin] Official Update 1999-05

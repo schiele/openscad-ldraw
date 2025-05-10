@@ -15,7 +15,8 @@ function ldraw_lib__3626bp01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626bp01, set 1066, Set 1589, set 7720
+// 0 !KEYWORDS BrickLink 3626p01, Rebrickable 3626bpr0001, set 1066, Set 1589
+// 0 !KEYWORDS set 7720
 // 
 // 0 !HISTORY 1998-06-20 [PTadmin] Official Update 1998-06
 // 0 !HISTORY 1998-10-15 [PTadmin] Official Update 1998-09

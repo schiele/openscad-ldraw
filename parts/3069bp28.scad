@@ -24,7 +24,8 @@ function ldraw_lib__3069bp28() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS controls, Space
+// 0 !KEYWORDS BrickLink 3069px28, controls, Rebrickable 3069bpr0040, Set 1714
+// 0 !KEYWORDS Space
 // 
 // 0 !HISTORY 2009-08-15 [anathema] Improved pattern
 // 0 !HISTORY 2010-04-05 [PTadmin] Official Update 2010-01

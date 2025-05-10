@@ -13,7 +13,7 @@ function ldraw_lib__3960p0i() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3960pb060, Set 41452, Unikitty
+// 0 !KEYWORDS Bricklink 3960pb060, Rebrickable 3960pr0039, Set 41452, Unikitty
 // 
 // 0 !CMDLINE -c191
 // 

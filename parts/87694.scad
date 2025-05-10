@@ -14,7 +14,7 @@ function ldraw_lib__87694() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Castle, Feather, knight, Pirate, Quill
+// 0 !KEYWORDS BrickLink 4502c, Castle, Feather, knight, Pirate, Quill
 // 
 // 0 !HISTORY 2011-11-19 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2011-11-19 [Philo] File preparation for LDraw Parts Tracker

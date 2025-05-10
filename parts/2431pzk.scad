@@ -11,7 +11,8 @@ function ldraw_lib__2431pzk() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickheadz, BrickLink 2431pb503, Cyborg, Justice League, Set 41601
+// 0 !KEYWORDS Brickheadz, BrickLink 2431pb503, Cyborg, Justice League
+// 0 !KEYWORDS Rebrickable 2431pr0007, Set 41601
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
 // 

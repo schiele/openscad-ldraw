@@ -12,7 +12,8 @@ function ldraw_lib__2358p04() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !KEYWORDS Airport, jetport, tarmac
+// 0 !KEYWORDS Airport, BrickLink 2358px2, jetport, Rebrickable 2358pr0004
+// 0 !KEYWORDS set 6396, tarmac
 // 
 // 0 !HISTORY 2005-12-28 [PTadmin] Official Update 2005-01
 // 0 !HISTORY 2007-05-07 [PTadmin] Header formatted for Contributor Agreement

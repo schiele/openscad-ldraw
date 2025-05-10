@@ -16,7 +16,8 @@ function ldraw_lib__90462bpq2() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Architecture, Bricklink 90462pb05, Luxor Hotel, set 21038, set 21047
+// 0 !KEYWORDS Architecture, BrickLink x177pb05, Luxor Hotel
+// 0 !KEYWORDS Rebrickable 90462pr0004, set 21038, set 21047
 // 
 // 0 !HISTORY 2019-02-05 [MagFors] Used patterned subfiles
 // 0 !HISTORY 2023-04-17 [OrionP] Official Update 2023-02

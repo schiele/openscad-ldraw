@@ -13,9 +13,8 @@ function ldraw_lib__4740p07() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS 1970, Bricklink 4740pb022, Brickowl 1369651, Charger, Dodge, Dominic
-// 0 !KEYWORDS Fast & Furious, R/T, Rebrickable 4740pr0023, Set 76912
-// 0 !KEYWORDS Speed Champions, Toretto
+// 0 !KEYWORDS 1970, Bricklink 4740pb022, Charger, Dodge, Dominic, Fast & Furious
+// 0 !KEYWORDS R/T, Rebrickable 4740pr0023, Set 76912, Speed Champions, Toretto
 // 
 // 0 !HISTORY 2024-05-28 [OrionP] Official Update 2024-04
 // 

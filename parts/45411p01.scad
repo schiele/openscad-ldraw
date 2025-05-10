@@ -12,8 +12,8 @@ function ldraw_lib__45411p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Aérospatiale-BAC, Air France, Bricklink 45411pb15, Brickowl 259503
-// 0 !KEYWORDS Concorde, Rebrickable 45411pr0004, Set 10318, Supersonic
+// 0 !KEYWORDS Aérospatiale-BAC, Air France, Bricklink 45411pb15, Concorde
+// 0 !KEYWORDS Rebrickable 45411pr0004, Set 10318, Supersonic
 // 
 // 0 !HISTORY 2024-12-01 [OrionP] Official Update 2024-10
 // 

@@ -15,7 +15,8 @@ function ldraw_lib__u8017() = [
   [0,"BFC","CW"],
 // 
 // 0 !CATEGORY Window
-// 0 !KEYWORDS Automatic Binding Brick
+// 0 !KEYWORDS Automatic Binding Brick, BrickLink bwindow02
+// 0 !KEYWORDS Rebrickable brickslot0003
 // 
 // 0 !HISTORY 2019-09-09 [PTadmin] Official Update 2019-02
 // 

@@ -14,7 +14,7 @@ function ldraw_lib__76382pc3() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb1108c01, BrickOwl 450437, DC comics, Harley Quinn
+// 0 !KEYWORDS Bricklink 973pb1108c01, DC comics, Harley Quinn
 // 0 !KEYWORDS Rebrickable 973d28pr1951, rogues gallery, Set 6857, Set 71229
 // 0 !KEYWORDS supervillain
 // 

@@ -13,6 +13,8 @@ function ldraw_lib__2894c01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
+// 0 !KEYWORDS BrickLink 590, Rebrickable 70358
+// 
 // 0 !HISTORY 1997-10-29 [PTadmin] Official Update 1997-16
 // 0 !HISTORY 1998-01-12 [PTadmin] Official Update 1998-01
 // 0 !HISTORY 1999-02-01 [PTadmin] Official Update 1999-01

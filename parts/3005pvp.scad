@@ -14,7 +14,8 @@ function ldraw_lib__3005pvp() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !KEYWORDS letters, numbers
+// 0 !KEYWORDS BrickLink 3005ptPb, letters, numbers, Rebrickable 3005pr9921
+// 0 !KEYWORDS Set 988
 // 
 // 0 !HISTORY 2004-11-06 [PTadmin] Official Update 2004-04
 // 0 !HISTORY 2007-05-11 [PTadmin] Header formatted for Contributor Agreement

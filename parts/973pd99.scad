@@ -13,7 +13,7 @@ function ldraw_lib__973pd99() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS Bricklink 973pb3235, Collectible Minifigures Harry Potter
-// 0 !KEYWORDS Fantastic Beasts, Lord Voldemort
+// 0 !KEYWORDS Fantastic Beasts, Lord Voldemort, set 71022
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 0 !HISTORY 2021-01-15 [cwdee] Update description

@@ -13,7 +13,8 @@ function ldraw_lib__14769px6() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 14769pb203, Mulan, Mushu, Set 41151
+// 0 !KEYWORDS Bricklink 14769pb203, Mulan, Mushu, Rebrickable 14769pr0013
+// 0 !KEYWORDS Set 41151
 // 
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04
 // 

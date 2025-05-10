@@ -13,8 +13,8 @@ function ldraw_lib__43898pa2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Adventurers, Bricklink 43898px2, Orient Expedition, Set 7416
-// 0 !KEYWORDS set 7419
+// 0 !KEYWORDS Adventurers, Bricklink 43898px2, Orient Expedition
+// 0 !KEYWORDS Rebrickable 43898pr0005, Set 7416, set 7419
 // 
 // 0 !HISTORY 2022-05-07 [PTadmin] Official Update 2022-03
 // 

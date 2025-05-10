@@ -12,7 +12,8 @@ function ldraw_lib__49661p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bath, Bricklink 49661pb02, CMF Series 19, Rubber Duck
+// 0 !KEYWORDS Bath, Bricklink 49661pb02, CMF Series 19, Rebrickable 49661pr0002
+// 0 !KEYWORDS Rubber Duck
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 

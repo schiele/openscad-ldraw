@@ -14,7 +14,8 @@ function ldraw_lib__75902p0b() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS Bricklink 75902pb15, CMF, Series 20, Set 71027, Viking
+// 0 !KEYWORDS Bricklink 75902pb15, CMF, Rebrickable 75902pr0013, Series 20
+// 0 !KEYWORDS Set 71027, Viking
 // 
 // 0 !HISTORY 2024-05-28 [OrionP] Official Update 2024-04
 // 

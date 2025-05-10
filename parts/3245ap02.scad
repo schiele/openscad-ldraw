@@ -12,7 +12,8 @@ function ldraw_lib__3245ap02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !KEYWORDS Arrow, circle, Direction, Train
+// 0 !KEYWORDS Arrow, BrickLink 3245apx2, circle, Direction
+// 0 !KEYWORDS Rebrickable 3245apr0002, Set 754, Train
 // 
 // 0 !CMDLINE -c15
 // 

@@ -12,7 +12,8 @@ function ldraw_lib__3626cps2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626cpb0412, Darth Vader, Set 10212, set 75056, Star Wars
+// 0 !KEYWORDS BrickLink 3626pb0412, Darth Vader, Rebrickable 3626cpr0639
+// 0 !KEYWORDS Set 10212, set 75056, Star Wars
 // 
 // 0 !HISTORY 2022-12-20 [PTadmin] Official Update 2022-06
 // 

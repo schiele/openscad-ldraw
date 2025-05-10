@@ -11,7 +11,8 @@ function ldraw_lib__3245cpzb() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Blue, Brickheadz, BrickLink 3245cpb074, Jurassic world, Set 41614
+// 0 !KEYWORDS Blue, Brickheadz, BrickLink 3245cpb074, Jurassic world
+// 0 !KEYWORDS Rebrickable 3245cpr0143, Set 41614
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
 // 

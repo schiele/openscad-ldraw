@@ -17,7 +17,7 @@ function ldraw_lib__3004p10() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3004px1, City, Gas, Set 6562, town
+// 0 !KEYWORDS Bricklink 3004px1, City, Gas, Rebrickable 3004pr9990, Set 6562, town
 // 
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04
 // 

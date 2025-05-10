@@ -12,7 +12,8 @@ function ldraw_lib__2440p67() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !KEYWORDS Ice Planet 2002, set 1704, set 6983, Space
+// 0 !KEYWORDS Bricklink 2440pb004, Ice Planet 2002, Rebrickable 2440pr0002
+// 0 !KEYWORDS set 1704, set 6983, Space
 // 
 // 0 !HISTORY 2015-10-11 [PTadmin] Official Update 2015-01
 // 

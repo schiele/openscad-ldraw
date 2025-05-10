@@ -14,6 +14,7 @@ function ldraw_lib__16195() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Cone
+// 0 !KEYWORDS BrickLink 47408, Rebrickable 47408
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
 // 

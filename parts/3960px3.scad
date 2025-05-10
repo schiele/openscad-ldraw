@@ -13,7 +13,8 @@ function ldraw_lib__3960px3() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3960pb034, Dimensions, Jurassic Park, Set 71205
+// 0 !KEYWORDS Bricklink 3960pb034, Dimensions, Jurassic Park
+// 0 !KEYWORDS Rebrickable 3960pr0020, Set 71205
 // 
 // 0 !HISTORY 2019-12-27 [PTadmin] Official Update 2019-03
 // 

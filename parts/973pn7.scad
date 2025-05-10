@@ -13,7 +13,7 @@ function ldraw_lib__973pn7() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS assassin, Castle, honor, Japan, japanese, ki, master of disguise
-// 0 !KEYWORDS ninjitsu, Robe, spy, throwing star
+// 0 !KEYWORDS ninjitsu, Robe, Set 3346, spy, throwing star
 // 
 // 0 !HISTORY 2011-07-25 [BlackBrick89] Minor improvements
 // 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02

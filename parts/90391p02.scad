@@ -13,6 +13,7 @@ function ldraw_lib__90391p02() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
+// 0 !KEYWORDS BrickLink 90391pb03, Rebrickable 90391pr0003, Set 19001
 // 
 // 0 !HISTORY 2012-11-22 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2012-11-22 [Philo] File preparation for LDraw Parts Tracker

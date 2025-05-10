@@ -12,7 +12,8 @@ function ldraw_lib__98138pb9() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS 1989, Batmobile, Bricklink 98138pb111, Set 76139
+// 0 !KEYWORDS 1989, Batmobile, Bricklink 98138pb111, Rebrickable 98138pr0125
+// 0 !KEYWORDS Set 76139
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
 // 

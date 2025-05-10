@@ -12,6 +12,8 @@ function ldraw_lib__42908() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 5292c01
+// 
 // 0 !HISTORY 2010-07-05 [PTadmin] Official Update 2010-02
 // 0 !HISTORY 2020-10-20 [SLS] Use shortcut
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01

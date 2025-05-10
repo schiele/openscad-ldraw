@@ -12,7 +12,8 @@ function ldraw_lib__31111p0e() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Brick
-// 0 !KEYWORDS Mix and Match, My First Fun Puzzle, Set 10885
+// 0 !KEYWORDS BrickLink 31111pb052, Mix and Match, My First Fun Puzzle
+// 0 !KEYWORDS Rebrickable 31111pr0004, Set 10885
 // 
 // 0 !HISTORY 2019-12-27 [PTadmin] Official Update 2019-03
 // 

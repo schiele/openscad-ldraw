@@ -13,8 +13,8 @@ function ldraw_lib__87580p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 87580pb002, Brickowl 403578, Rebrickable 87580pr0001
-// 0 !KEYWORDS Set 30554, Set 43174, Set 43175, Set 43176, Set 43177, Set 43187
+// 0 !KEYWORDS Bricklink 87580pb002, Rebrickable 87580pr0001, Set 30554, Set 43174
+// 0 !KEYWORDS Set 43175, Set 43176, Set 43177, Set 43187
 // 
 // 0 !HISTORY 2024-05-28 [OrionP] Official Update 2024-04
 // 

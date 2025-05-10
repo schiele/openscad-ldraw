@@ -14,8 +14,8 @@ function ldraw_lib__3069bp1d() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickheadz, BrickLink 3069pb0767, Brickowl 684565, Lucky Cat
-// 0 !KEYWORDS Rebrickable 3069bpr0280, Set 40436
+// 0 !KEYWORDS Brickheadz, BrickLink 3069pb0767, Lucky Cat, Rebrickable 3069bpr0280
+// 0 !KEYWORDS Set 40436
 // 
 // 0 !HISTORY 2024-12-01 [OrionP] Official Update 2024-10
 // 

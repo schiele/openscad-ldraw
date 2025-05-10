@@ -14,9 +14,8 @@ function ldraw_lib__76382psp() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973px69c01, BrickOwl 175751, Galactic Empire
-// 0 !KEYWORDS Mini Upper Part No 1148, Mini Upper Part No 470
-// 0 !KEYWORDS Mini Upper Part No 958, Original Trilogy
+// 0 !KEYWORDS Bricklink 973px69c01, Galactic Empire, Mini Upper Part No 1148
+// 0 !KEYWORDS Mini Upper Part No 470, Mini Upper Part No 958, Original Trilogy
 // 0 !KEYWORDS Rebrickable 973c03h03pr1148, Set 10131, Set 4479, Set 6206, Set 7146
 // 0 !KEYWORDS Set 7263, Set 7659, Set 7958, Set 8087, Set 9492, Set 9676
 // 0 !KEYWORDS Star Wars, Twin Ion Engine

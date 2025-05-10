@@ -14,11 +14,11 @@ function ldraw_lib__76382p78() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb0099c01, BrickOwl 393198, city center, collar, dacta
-// 0 !KEYWORDS Emergency, Fire 1994, Fire Chief, fire logo badge, Firefighter Jack
-// 0 !KEYWORDS fireman, Rebrickable 973c03h01pr0099, red belt, rescue, Set 1248
-// 0 !KEYWORDS Set 6407, Set 6464, Set 6525, Set 6554, Set 6571, Set 9247, set 9293
-// 0 !KEYWORDS shell, town, Town Junior, two yellow pins, yellow buckle, Zipper
+// 0 !KEYWORDS Bricklink 973pb0099c01, city center, collar, dacta, Emergency
+// 0 !KEYWORDS Fire 1994, Fire Chief, fire logo badge, Firefighter Jack, fireman
+// 0 !KEYWORDS Rebrickable 973c03h01pr0099, red belt, rescue, Set 1248, Set 6407
+// 0 !KEYWORDS Set 6464, Set 6525, Set 6554, Set 6571, Set 9247, set 9293, shell
+// 0 !KEYWORDS town, Town Junior, two yellow pins, yellow buckle, Zipper
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

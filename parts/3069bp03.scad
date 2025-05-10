@@ -11,6 +11,8 @@ function ldraw_lib__3069bp03() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 3069p03, Rebrickable 3069bpr0021, Set 1094
+// 
 // 0 !HISTORY 2002-01-31 [sbliss] Converted to grooved-tile
 // 0 !HISTORY 2002-06-11 [PTadmin] Official Update 2002-03
 // 0 !HISTORY 2007-06-13 [PTadmin] Header formatted for Contributor Agreement

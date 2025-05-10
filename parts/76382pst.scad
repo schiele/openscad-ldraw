@@ -14,7 +14,7 @@ function ldraw_lib__76382pst() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS A New Hope, Bricklink 973pb0191c01, BrickOwl 768319, Episode IV
+// 0 !KEYWORDS A New Hope, Bricklink 973pb0191c01, Episode IV
 // 0 !KEYWORDS Mini Upper Part No 639, Original Trilogy
 // 0 !KEYWORDS Rebrickable 973c22h03pr0191, Set 4477, Star Wars
 // 0 !KEYWORDS T-16 Skyhopper Pilot

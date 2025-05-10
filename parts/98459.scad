@@ -24,7 +24,7 @@ function ldraw_lib__98459() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Door
-// 0 !KEYWORDS Gate, Plank
+// 0 !KEYWORDS BrickLink 87653, Gate, Plank
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
 // 

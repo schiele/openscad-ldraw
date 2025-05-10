@@ -14,14 +14,14 @@ function ldraw_lib__76382ps1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS B-Wing, Biggs Darklighter, Bricklink 973ps1c01, BrickOwl 679657
-// 0 !KEYWORDS Dack, Dak Ralter, Endor, flight suit, Hoth, Jon Dutch Vander
-// 0 !KEYWORDS Jon Vander, Luke Skywalker, Mini Upper Part No 372
-// 0 !KEYWORDS Mini Upper Part No 375, Mini Upper Part No 376
-// 0 !KEYWORDS Mini Upper Part No 377, Mini Upper Part No 394, Original Trilogy
-// 0 !KEYWORDS Rebel Alliance, Rebrickable 973c34h03pr1301, Set 4483, set 7130
-// 0 !KEYWORDS Set 7140, set 7142, set 7150, Set 7152, Snowspeeder, Star Wars
-// 0 !KEYWORDS starfighter, X-Wing, Y-Wing, Yavin
+// 0 !KEYWORDS B-Wing, Biggs Darklighter, Bricklink 973ps1c01, Dack, Dak Ralter
+// 0 !KEYWORDS Endor, flight suit, Hoth, Jon Dutch Vander, Jon Vander
+// 0 !KEYWORDS Luke Skywalker, Mini Upper Part No 372, Mini Upper Part No 375
+// 0 !KEYWORDS Mini Upper Part No 376, Mini Upper Part No 377
+// 0 !KEYWORDS Mini Upper Part No 394, Original Trilogy, Rebel Alliance
+// 0 !KEYWORDS Rebrickable 973c34h03pr1301, Set 4483, set 7130, Set 7140, set 7142
+// 0 !KEYWORDS set 7150, Set 7152, Snowspeeder, Star Wars, starfighter, X-Wing
+// 0 !KEYWORDS Y-Wing, Yavin
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

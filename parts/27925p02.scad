@@ -17,7 +17,8 @@ function ldraw_lib__27925p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 27925pb009, CMF, Kermit the Frog, set 71033, The Muppets
+// 0 !KEYWORDS Bricklink 27925pb009, CMF, Kermit the Frog, Rebrickable 27925pr0011
+// 0 !KEYWORDS set 71033, The Muppets
 // 
 // 0 !HISTORY 2024-05-28 [OrionP] Official Update 2024-04
 // 

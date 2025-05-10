@@ -20,6 +20,7 @@ function ldraw_lib__250() = [
   [0,"BFC","CW"],
 // 
 // 0 !CATEGORY Arch
+// 0 !KEYWORDS BrickLink x1108
 // 
 // 0 !HISTORY 2004-04-04 [Steffen] Made use of 48\2-4ndis.dat
 // 0 !HISTORY 2009-05-02 [PTadmin] Official Update 2009-01

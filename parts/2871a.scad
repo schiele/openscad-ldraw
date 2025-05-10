@@ -43,6 +43,8 @@ function ldraw_lib__2871a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 2871
+// 
 // 0 !HISTORY 1999-05-24 [PTadmin] Official Update 1999-04
 // 0 !HISTORY 2007-05-20 [PTadmin] Header formatted for Contributor Agreement
 // 0 !HISTORY 2007-05-20 [PTadmin] Replaced box3#8p references with box3u8p

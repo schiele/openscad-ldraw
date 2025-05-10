@@ -24,6 +24,8 @@ function ldraw_lib__3820() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 983
+// 
 // 0 !HISTORY 2002-11-30 [PTadmin] Official Update 2002-05
 // 0 !HISTORY 2002-12-31 [PTadmin] Official Update 2002-06
 // 0 !HISTORY 2007-07-29 [PTadmin] Header formatted for Contributor Agreement

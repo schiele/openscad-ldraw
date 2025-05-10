@@ -15,8 +15,8 @@ function ldraw_lib__87857pk1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 970clg00pb01, Set 7590, Set 7594, Set 7597, Toy Story
-// 0 !KEYWORDS Woody
+// 0 !KEYWORDS Bricklink 970clg00pb01, Rebrickable 970f01pr0001, Set 7590, Set 7594
+// 0 !KEYWORDS Set 7597, Toy Story, Woody
 // 
 // 0 !HISTORY 2023-06-24 [OrionP] Official Update 2023-03
 // 

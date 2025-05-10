@@ -17,6 +17,8 @@ function ldraw_lib__46667() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink x577
+// 
 // 0 !HISTORY 2012-12-28 [PTadmin] Official Update 2012-03
 // 0 !HISTORY 2020-10-23 [cwdee] Update description
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03

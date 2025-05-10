@@ -13,7 +13,7 @@ function ldraw_lib__30117p61() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Set 6977, Space
+// 0 !KEYWORDS BrickLink 30117pb03R, Rebrickable 30117pr0005, Set 6977, Space
 // 
 // 0 !HISTORY 2018-12-08 [PTadmin] Official Update 2018-02
 // 

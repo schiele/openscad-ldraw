@@ -11,7 +11,8 @@ function ldraw_lib__32523p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS 40 years, Anniversary
+// 0 !KEYWORDS 40 years, Anniversary, BrickLink 32523pb11, Rebrickable 32523pr0001
+// 0 !KEYWORDS Set 4002017
 // 
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
 // 0 !HISTORY 2020-12-05 [Philo] Used subpart

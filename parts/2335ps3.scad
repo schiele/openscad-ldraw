@@ -12,8 +12,8 @@ function ldraw_lib__2335ps3() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 2335px14, Brickowl 874774, Rebrickable 2335pr0023
-// 0 !KEYWORDS Set 4479, Star Wars, TIE Bomber
+// 0 !KEYWORDS Bricklink 2335px14, Rebrickable 2335pr0023, Set 4479, Star Wars
+// 0 !KEYWORDS TIE Bomber
 // 
 // 0 !HISTORY 2023-06-24 [OrionP] Official Update 2023-03
 // 

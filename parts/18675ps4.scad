@@ -12,7 +12,8 @@ function ldraw_lib__18675ps4() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 18675pb08, Rogue One, set 75154, Star Wars
+// 0 !KEYWORDS Bricklink 18675pb08, Rebrickable 18675pr0010, Rogue One, set 75154
+// 0 !KEYWORDS Star Wars
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 

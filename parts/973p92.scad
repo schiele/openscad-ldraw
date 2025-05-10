@@ -12,7 +12,7 @@ function ldraw_lib__973p92() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS BrickLink 973pb1683, Dual, pockets, Star
+// 0 !KEYWORDS BrickLink 973pb1683, Dual, pockets, Set 30310, Star
 // 
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
 // 

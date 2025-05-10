@@ -13,7 +13,7 @@ function ldraw_lib__43743_f1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS basketball, NBA
+// 0 !KEYWORDS basketball, BrickLink x494c01, NBA, Rebrickable 43220c01
 // 
 // 0 !HISTORY 2024-12-01 [OrionP] Official Update 2024-10
 // 

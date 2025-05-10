@@ -15,6 +15,8 @@ function ldraw_lib__6540b() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 6540a, Rebrickable 6540a
+// 
 // 0 !HISTORY 2009-12-29 [PTadmin] Official Update 2009-03
 // 0 !HISTORY 2019-03-08 [Philo] Subparted, corrected wrong pinhole position, minor improvements
 // 0 !HISTORY 2022-03-06 [PTadmin] Official Update 2022-02

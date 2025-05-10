@@ -12,10 +12,10 @@ function ldraw_lib__47326p03() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Axonn, Fenrakk, Hydraxon, Karzahni, Nivawk, Nocturn, Roodaka
-// 0 !KEYWORDS set 7017, set 7784, set 8621, set 8733, set 8756, set 8761, set 8764
-// 0 !KEYWORDS set 8923, set 8940, set K8761, Sidorak, titans, Turaga Dume, Vezon
-// 0 !KEYWORDS Warriors
+// 0 !KEYWORDS Axonn, BrickLink x1192px1, Fenrakk, Hydraxon, Karzahni, Nivawk
+// 0 !KEYWORDS Nocturn, Rebrickable 47326pat0003, Roodaka, set 7017, set 7784
+// 0 !KEYWORDS set 8621, set 8733, set 8756, set 8761, set 8764, set 8923, set 8940
+// 0 !KEYWORDS set K8761, Sidorak, titans, Turaga Dume, Vezon, Warriors
 // 
 // 0 !HISTORY 2011-07-31 [mikeheide] Changed to rubber color code
 // 0 !HISTORY 2019-01-01 [MagFors] Rearranged subfile structure

@@ -14,8 +14,8 @@ function ldraw_lib__76382psn() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973psnc01, BrickOwl 892758, Chupa Chups, Death Star II
-// 0 !KEYWORDS Episode VI, Galactic Empire, Gravity Games, Jacket, Military
+// 0 !KEYWORDS Bricklink 973psnc01, Chupa Chups, Death Star II, Episode VI
+// 0 !KEYWORDS Galactic Empire, Gravity Games, Jacket, Military
 // 0 !KEYWORDS Mini Upper Part No 475, Original Trilogy
 // 0 !KEYWORDS Rebrickable 973c03h01pr0003, Return of the Jedi, Set 3389, Set 5015
 // 0 !KEYWORDS set 7166, Skateboarder, sport, Star Wars, Uniform

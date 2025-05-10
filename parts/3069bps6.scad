@@ -17,8 +17,9 @@ function ldraw_lib__3069bps6() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS astrogation, Attack of the Clones, avionics, Episode Two, Geonosis
-// 0 !KEYWORDS hyperspace, Kamino, navigation, Obi-Wan Kenobi, Star Wars
+// 0 !KEYWORDS astrogation, Attack of the Clones, avionics, BrickLink 3069ps2
+// 0 !KEYWORDS Episode Two, Geonosis, hyperspace, Kamino, navigation
+// 0 !KEYWORDS Obi-Wan Kenobi, Rebrickable 3069bpr0070, set 10198, Star Wars
 // 
 // 0 !HISTORY 2003-11-07 [fwcain] fixed minor typo in Title...; added KEYWORDS...
 // 0 !HISTORY 2004-11-06 [PTadmin] Official Update 2004-04

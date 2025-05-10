@@ -16,9 +16,9 @@ function ldraw_lib__3626bps3() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626bps3, Brickowl 646047, face, Luke Skywalker (1999)
-// 0 !KEYWORDS Mark Hamill, Original Trilogy, Rebrickable 3626bpr0277, serious
-// 0 !KEYWORDS Set 4483, Set 4500, set 4502, Star Wars
+// 0 !KEYWORDS BrickLink 3626ps3, face, Luke Skywalker (1999), Mark Hamill
+// 0 !KEYWORDS Original Trilogy, Rebrickable 3626bpr0277, serious, Set 4483
+// 0 !KEYWORDS Set 4500, set 4502, Star Wars
 // 
 // 0 !CMDLINE -c14
 // 

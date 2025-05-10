@@ -15,7 +15,8 @@ function ldraw_lib__13548pz1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickheadz, BrickLink 13548pb001, Disney, Minnie, Mouse, Set 41625
+// 0 !KEYWORDS Brickheadz, BrickLink 13548pb001, Disney, Minnie, Mouse
+// 0 !KEYWORDS Rebrickable 13548pr0001, Set 41625
 // 
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04
 // 

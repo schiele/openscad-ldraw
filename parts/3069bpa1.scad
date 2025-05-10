@@ -19,7 +19,8 @@ function ldraw_lib__3069bpa1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Adventurers, Car, number-plate
+// 0 !KEYWORDS Adventurers, BrickLink 3069pa1, Car, number-plate
+// 0 !KEYWORDS Rebrickable 3069bpr0052, Set 10015
 // 
 // 0 !HISTORY 2002-11-30 [PTadmin] Official Update 2002-05
 // 0 !HISTORY 2007-06-13 [PTadmin] Header formatted for Contributor Agreement

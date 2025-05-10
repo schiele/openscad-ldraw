@@ -14,8 +14,8 @@ function ldraw_lib__76382psm() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS assault, Bricklink 973psmc01, BrickOwl 648363, commando, Endor
-// 0 !KEYWORDS Episode VI, forest moon, guerilla, Luke Skywalker, Military
+// 0 !KEYWORDS assault, Bricklink 973psmc01, commando, Endor, Episode VI
+// 0 !KEYWORDS forest moon, guerilla, Luke Skywalker, Military
 // 0 !KEYWORDS Mini Upper Part No 378, Poncho, raid, Rebel Alliance
 // 0 !KEYWORDS Rebrickable 973f010pr9999, Return of the Jedi, set 7128
 // 0 !KEYWORDS Speeder Bikes, Star Wars

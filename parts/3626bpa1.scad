@@ -20,10 +20,11 @@ function ldraw_lib__3626bpa1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Adventurers, bald chin, beard, beardless chin, bushy sideburns
-// 0 !KEYWORDS doctor, Dr. Kilroy, Dr. Lightning, eyeglasses, face, grey beard
-// 0 !KEYWORDS hairless chin, moustache, old man, Prof. Kilroy, professor
-// 0 !KEYWORDS sideburns, smile, spectacles, white beard
+// 0 !KEYWORDS Adventurers, bald chin, beard, beardless chin, BrickLink 3626pa1
+// 0 !KEYWORDS bushy sideburns, doctor, Dr. Kilroy, Dr. Lightning, eyeglasses, face
+// 0 !KEYWORDS grey beard, hairless chin, moustache, old man, Prof. Kilroy
+// 0 !KEYWORDS professor, Rebrickable 3626bpr0047, Set 1280, sideburns, smile
+// 0 !KEYWORDS spectacles, white beard
 // 
 // 0 !CMDLINE -c14
 // 

@@ -14,8 +14,8 @@ function ldraw_lib__76382px4() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb1696c02, Brickowl 100248, Peter Venkman
-// 0 !KEYWORDS Rebrickable 973c26h03pr3204, Set 71228
+// 0 !KEYWORDS Bricklink 973pb1696c02, Peter Venkman, Rebrickable 973c26h03pr3204
+// 0 !KEYWORDS Set 71228
 // 
 // 0 !HISTORY 2024-10-27 [OrionP] Official Update 2024-09
 // 

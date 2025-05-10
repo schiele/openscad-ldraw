@@ -14,7 +14,7 @@ function ldraw_lib__92198p12() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Ariel
+// 0 !KEYWORDS Ariel, BrickLink 16548, Rebrickable 92198pr0013, Set 10723
 // 
 // 0 !HISTORY 2014-12-23 [PTadmin] Official Update 2014-02
 // 

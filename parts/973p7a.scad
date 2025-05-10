@@ -12,7 +12,8 @@ function ldraw_lib__973p7a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Antarctic, Antarctica, explorer, north pole, Polar, south pole, town
+// 0 !KEYWORDS Antarctic, Antarctica, explorer, north pole, Polar, Set 6520
+// 0 !KEYWORDS south pole, town
 // 
 // 0 !CMDLINE -c0
 // 

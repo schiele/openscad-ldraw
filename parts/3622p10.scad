@@ -13,8 +13,8 @@ function ldraw_lib__3622p10() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3622pb082, CMF, Collectible Minifigures, series 1
-// 0 !KEYWORDS Set 41775, unikitty!
+// 0 !KEYWORDS Bricklink 3622pb082, CMF, Collectible Minifigures
+// 0 !KEYWORDS Rebrickable 3622pr0038, series 1, Set 41775, unikitty!
 // 
 // 0 !HISTORY 2021-11-01 [Holly-Wood] Changed color, added set reference, rounded mouth
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04

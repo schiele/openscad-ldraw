@@ -14,7 +14,8 @@ function ldraw_lib__67040p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 67040pb01, CMF series 20, Set 60377
+// 0 !KEYWORDS Bricklink 67040pb01, CMF series 20, Rebrickable 67040pr0001
+// 0 !KEYWORDS Set 60377
 // 
 // 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 

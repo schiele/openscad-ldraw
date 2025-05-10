@@ -15,7 +15,8 @@ function ldraw_lib__3626cpce7() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Alien, Bricklink 3626cpb1408, ghost, Series 14, Specter
+// 0 !KEYWORDS Alien, BrickLink 3626pb1408, ghost, Rebrickable 3626cpr1731
+// 0 !KEYWORDS Series 14, Set 71010-7, Specter
 // 
 // 0 !CMDLINE -c329
 // 

@@ -12,7 +12,7 @@ function ldraw_lib__973p3c() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !KEYWORDS bandolier, belt, merchant, Pirates, vest
+// 0 !KEYWORDS bandolier, belt, merchant, Pirates, set 6296, vest
 // 
 // 0 !CMDLINE -C15
 // 

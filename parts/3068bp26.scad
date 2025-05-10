@@ -11,7 +11,8 @@ function ldraw_lib__3068bp26() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Dragster, Race, Set 1528
+// 0 !KEYWORDS BrickLink 3068pb0026, Dragster, Race, Rebrickable 3068bpr0055
+// 0 !KEYWORDS Set 1528
 // 
 // 0 !HISTORY 2012-12-28 [PTadmin] Official Update 2012-03
 // 

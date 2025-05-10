@@ -12,8 +12,8 @@ function ldraw_lib__98138p0c() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 98138pb028, Eyelash, Set 11021, Set 40382, Set 40711
-// 0 !KEYWORDS Set 41433
+// 0 !KEYWORDS Bricklink 98138pb028, Eyelash, Rebrickable 98138pr0026, Set 11021
+// 0 !KEYWORDS Set 40382, Set 40711, Set 41433
 // 
 // 0 !HISTORY 2015-10-11 [PTadmin] Official Update 2015-01
 // 0 !HISTORY 2024-07-08 [GeraldLasser] Added Keywords

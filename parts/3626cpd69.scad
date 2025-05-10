@@ -13,7 +13,8 @@ function ldraw_lib__3626cpd69() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Batman Movie, Bricklink 3626cpb1717, Dick Grayson
+// 0 !KEYWORDS Batman Movie, BrickLink 3626pb1717, Dick Grayson
+// 0 !KEYWORDS Rebrickable 3626cpr2115, Set 71017-9
 // 
 // 0 !CMDLINE -c78
 // 

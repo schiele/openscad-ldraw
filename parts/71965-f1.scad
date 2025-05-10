@@ -15,7 +15,7 @@ function ldraw_lib__71965_f1() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Vehicle
-// 0 !KEYWORDS Alpha Team, Arctic, town
+// 0 !KEYWORDS Alpha Team, Arctic, BrickLink 71965, Rebrickable 71965, town
 // 
 // 0 !HISTORY 2009-01-16 [Philo] Rewrite from scratch
 // 0 !HISTORY 2019-09-09 [PTadmin] Official Update 2019-02

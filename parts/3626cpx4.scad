@@ -14,7 +14,8 @@ function ldraw_lib__3626cpx4() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS B. A. Baracus, Bricklink 3626cpb1680, Dimensions, Set 71251
+// 0 !KEYWORDS B. A. Baracus, BrickLink 3626pb1680, Dimensions
+// 0 !KEYWORDS Rebrickable 3626cpr2011, Set 71251
 // 
 // 0 !CMDLINE -c70
 // 

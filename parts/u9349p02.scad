@@ -15,7 +15,8 @@ function ldraw_lib__u9349p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Aquanauts, Aquaraider, aquashark, Aquazone, Hydronauts, Stingray
+// 0 !KEYWORDS Aquanauts, Aquaraider, aquashark, Aquazone, Hydronauts, Set 1822
+// 0 !KEYWORDS Stingray
 // 
 // 0 !HISTORY 2022-12-20 [PTadmin] Official Update 2022-06
 // 

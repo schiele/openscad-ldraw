@@ -16,7 +16,7 @@ function ldraw_lib__66821_f2() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Sheet Plastic
-// 0 !KEYWORDS Band, Dots, Strap, wrist
+// 0 !KEYWORDS Band, BrickLink 66821, Dots, Rebrickable 66821, Strap, wrist
 // 
 // 0 !HISTORY 2020-06-28 [PTadmin] Official Update 2020-01
 // 

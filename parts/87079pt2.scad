@@ -6,17 +6,18 @@ function ldraw_lib__87079pt2() = [
 // 0 Tile  2 x  4 with Metallic Gold "BIRCH" Pattern
 // 0 Name: 87079pt2.dat
 // 0 Author: Ulrich Röder [UR]
-// 0 !LDRAW_ORG Part UPDATE 2020-02
+// 0 !LDRAW_ORG Part UPDATE 2025-04
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS bricklink 87079pb672, Set 10270
+// 0 !KEYWORDS Bricklink 87079pb0672, Rebrickable 87079pr0208, Set 10270
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
-// 
+// 0 !HISTORY 2025-03-16 [Lego-Manfred] References added
+// 0 !HISTORY 2025-04-27 [OrionP] Official Update 2025-04
 // 
 // 0 // Main
 // 

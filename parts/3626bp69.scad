@@ -12,12 +12,12 @@ function ldraw_lib__3626bp69() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Aquanauts, arched eyebrows, astronaut, Bricklink 3626bp69
-// 0 !KEYWORDS Brickowl 806843, brown eyebrows, communications, cosmonaut, earphone
-// 0 !KEYWORDS Exploriens, face, headphones, Launch Command, messy, microphone
-// 0 !KEYWORDS pilot, radio, Rebrickable 3626bpr0037, Set 6897, Set 6938, Set 6957
-// 0 !KEYWORDS smile, smiley, SP2, Space, Space Police 2, Space Police II
-// 0 !KEYWORDS space port, Star Wars, Studios, Unitron
+// 0 !KEYWORDS Aquanauts, arched eyebrows, astronaut, BrickLink 3626p69
+// 0 !KEYWORDS brown eyebrows, communications, cosmonaut, earphone, Exploriens
+// 0 !KEYWORDS face, headphones, Launch Command, messy, microphone, pilot, radio
+// 0 !KEYWORDS Rebrickable 3626bpr0037, Set 6897, Set 6938, Set 6957, smile, smiley
+// 0 !KEYWORDS SP2, Space, Space Police 2, Space Police II, space port, Star Wars
+// 0 !KEYWORDS Studios, Unitron
 // 
 // 0 !CMDLINE -c14
 // 

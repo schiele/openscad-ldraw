@@ -12,6 +12,8 @@ function ldraw_lib__3039p08() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 3039pb017, Rebrickable 3039pr0014, Set 5319
+// 
 // 0 !HISTORY 2018-04-09 [MagFors] removed one level of subfiles
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
 // 

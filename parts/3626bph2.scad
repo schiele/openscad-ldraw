@@ -15,7 +15,7 @@ function ldraw_lib__3626bph2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626bpx95, Brickowl 750688, Harry Potter
+// 0 !KEYWORDS BrickLink 3626px95, Harry Potter
 // 0 !KEYWORDS Hogwarts School of Witchcraft and Wizardry, Rebrickable 3626bpr0267
 // 0 !KEYWORDS set 4709, set 4750, set 4757, Slytherin House
 // 

@@ -12,7 +12,8 @@ function ldraw_lib__90397p05() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS CMF, Collectible Minifigs, Pro Surfer, Series 17
+// 0 !KEYWORDS BrickLink 90397pb007, CMF, Collectible Minifigs, Pro Surfer
+// 0 !KEYWORDS Rebrickable 90397pr0004, Series 17
 // 
 // 0 !CMDLINE -c73
 // 

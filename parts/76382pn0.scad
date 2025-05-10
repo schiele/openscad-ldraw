@@ -14,10 +14,10 @@ function ldraw_lib__76382pn0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pn0c01, BrickOwl 177833, Castle, dagger, daimyo
-// 0 !KEYWORDS emperor, feudal, Japan, Kabaya, medieval, Mini Heroes Collection
-// 0 !KEYWORDS Mini Upper Part No 365, Ninja, Nippon, Rebrickable 973c27h01pr0028
-// 0 !KEYWORDS Set 3050, Set 3053, Set 3077, Set 3346, shogun, Tenno, warlord
+// 0 !KEYWORDS Bricklink 973pn0c01, Castle, dagger, daimyo, emperor, feudal, Japan
+// 0 !KEYWORDS Kabaya, medieval, Mini Heroes Collection, Mini Upper Part No 365
+// 0 !KEYWORDS Ninja, Nippon, Rebrickable 973c27h01pr0028, Set 3050, Set 3053
+// 0 !KEYWORDS Set 3077, Set 3346, shogun, Tenno, warlord
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

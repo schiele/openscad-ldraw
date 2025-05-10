@@ -21,6 +21,7 @@ function ldraw_lib__4198p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Brick
+// 0 !KEYWORDS BrickLink 4198pb10, Rebrickable 4198pr9981, Set 3191
 // 
 // 0 !HISTORY 2018-01-30 [PTadmin] Official Update 2018-01
 // 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives

@@ -11,8 +11,8 @@ function ldraw_lib__4162p0e() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Architect, Architecture, City Gateway, Korea, Namdaemun, Seoul
-// 0 !KEYWORDS Set 21016, unknown
+// 0 !KEYWORDS Architect, Architecture, BrickLink 4162pb069, City Gateway, Korea
+// 0 !KEYWORDS Namdaemun, Rebrickable 4162pr0022, Seoul, Set 21016, unknown
 // 
 // 0 !HISTORY 2013-12-23 [PTadmin] Official Update 2013-02
 // 

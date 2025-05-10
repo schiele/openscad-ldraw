@@ -11,7 +11,8 @@ function ldraw_lib__18973p07() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Ford, GT, Set 75881, Speed Champions
+// 0 !KEYWORDS BrickLink 18973pb07, Ford, GT, Rebrickable 18973pr0008, Set 75881
+// 0 !KEYWORDS Speed Champions
 // 
 // 0 !HISTORY 2023-10-31 [OrionP] Official Update 2023-05
 // 

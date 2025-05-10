@@ -18,7 +18,7 @@ function ldraw_lib__11467() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS gwaihir, Hobbit, Set 10237, set 79007, set 79017
+// 0 !KEYWORDS gwaihir, Hobbit, Rebrickable 11435, Set 10237, set 79007, set 79017
 // 0 !KEYWORDS the lord of the rings
 // 
 // 0 !HISTORY 2021-05-07 [Holly-Wood] Added keywords

@@ -13,7 +13,8 @@ function ldraw_lib__3846p4f() = [
   [0,"BFC","CW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS Bat Lord, Fright Knights
+// 0 !KEYWORDS Bat Lord, BrickLink 3846px7, Fright Knights, Rebrickable 3846pr0021
+// 0 !KEYWORDS Set 5383
 // 
 // 0 !HISTORY 2009-05-02 [PTadmin] Official Update 2009-01
 // 0 !HISTORY 2012-12-24 [cwdee] Add category

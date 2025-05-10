@@ -11,7 +11,8 @@ function ldraw_lib__42918p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 42918pb01, curve, Mustang, Set 10265, wedge
+// 0 !KEYWORDS Bricklink 42918pb01, curve, Mustang, Rebrickable 42918pr0001
+// 0 !KEYWORDS Set 10265, wedge
 // 
 // 0 !HISTORY 2019-12-27 [PTadmin] Official Update 2019-03
 // 0 !HISTORY 2022-06-22 [Philo] Updated description, added keywords

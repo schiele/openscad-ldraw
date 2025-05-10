@@ -14,8 +14,8 @@ function ldraw_lib__76382p2h() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb0017c01, BrickOwl 246664, Paradisa
-// 0 !KEYWORDS Rebrickable 973c27h01pr0017, Set 6416, town
+// 0 !KEYWORDS Bricklink 973pb0017c01, Paradisa, Rebrickable 973c27h01pr0017
+// 0 !KEYWORDS Set 6416, town
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

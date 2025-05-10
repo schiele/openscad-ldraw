@@ -14,8 +14,8 @@ function ldraw_lib__3626cpbh() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Armoured Suit Mark XLII, Bricklink 3626cpbh0905, Brickowl 682145
-// 0 !KEYWORDS Iron Man, Rebrickable 3626cpr1218, set 76006, set 76007, Tony Stark
+// 0 !KEYWORDS Armoured Suit Mark XLII, BrickLink 3626pb0905, Iron Man
+// 0 !KEYWORDS Rebrickable 3626cpr1218, set 76006, set 76007, Tony Stark
 // 
 // 0 !HISTORY 2013-12-23 [PTadmin] Official Update 2013-02
 // 0 !HISTORY 2024-10-26 [Lego-Manfred] Reference and sets added

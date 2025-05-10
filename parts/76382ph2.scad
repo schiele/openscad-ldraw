@@ -14,12 +14,12 @@ function ldraw_lib__76382ph2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973px147c01, BrickOwl 98153, Draco Malfoy
-// 0 !KEYWORDS Green and Silver, Gregory Goyle, Harry Potter, Hogwarts
-// 0 !KEYWORDS Mini Upper Part No 518, Mini Upper Part No 700
-// 0 !KEYWORDS Mini Upper Part No 701, Rebrickable 973c17h01pr0147, set 4709
-// 0 !KEYWORDS Set 4711, set 4730, set 4733, Set 4735, Slytherin, Snake, Tom Riddle
-// 0 !KEYWORDS Vincent Crabbe, Wizarding World
+// 0 !KEYWORDS Bricklink 973px147c01, Draco Malfoy, Green and Silver, Gregory Goyle
+// 0 !KEYWORDS Harry Potter, Hogwarts, Mini Upper Part No 518
+// 0 !KEYWORDS Mini Upper Part No 700, Mini Upper Part No 701
+// 0 !KEYWORDS Rebrickable 973c17h01pr0147, set 4709, Set 4711, set 4730, set 4733
+// 0 !KEYWORDS Set 4735, Slytherin, Snake, Tom Riddle, Vincent Crabbe
+// 0 !KEYWORDS Wizarding World
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

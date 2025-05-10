@@ -14,8 +14,8 @@ function ldraw_lib__4066bp1z() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Brick
-// 0 !KEYWORDS Baby, bricklink 4066pb080, house, Set 2787, Set 2790, Set 2791
-// 0 !KEYWORDS Set 2794
+// 0 !KEYWORDS Baby, bricklink 4066pb080, house, Rebrickable 4066pr0130, Set 2787
+// 0 !KEYWORDS Set 2790, Set 2791, Set 2794
 // 
 // 0 !HISTORY 2024-05-28 [OrionP] Official Update 2024-04
 // 

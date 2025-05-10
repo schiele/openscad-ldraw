@@ -12,7 +12,7 @@ function ldraw_lib__48288p04() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS Blue Line, BrickLink 48288pb01, Face Off, Hockey, NHL
-// 0 !KEYWORDS Rebrickable 48288pr0001
+// 0 !KEYWORDS Rebrickable 48288pr0001, Set 3578
 // 
 // 0 !HISTORY 2009-05-02 [PTadmin] Official Update 2009-01
 // 

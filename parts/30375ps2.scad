@@ -14,7 +14,8 @@ function ldraw_lib__30375ps2() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS battle droid, Episode One, Episode Two, guard, minifig-scale, patrol
-// 0 !KEYWORDS red droid, security, set 7204, Star Wars, Trade Federation
+// 0 !KEYWORDS Rebrickable 30375pr0006, red droid, security, set 7204, Star Wars
+// 0 !KEYWORDS Trade Federation
 // 
 // 0 !CMDLINE -c320
 // 

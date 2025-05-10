@@ -15,6 +15,8 @@ function ldraw_lib__59349df5() = [
 // 0 !CATEGORY Sticker Shortcut
 // 0 !KEYWORDS Bricklink 59349pb058, Friends, house, Kitchen, Olivia, set 3315
 // 
+// 0 !PREVIEW 16 0 0 0 -1 0 0 0 1 0 0 0 -1
+// 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 0 !HISTORY 2025-03-12 [Cheenzo] Added META for preview
 // 0 !HISTORY 2025-03-30 [OrionP] Official Update 2025-03

@@ -15,7 +15,8 @@ function ldraw_lib__98138p10() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 98138pb120, Dots, Funky Animals, Set 41901
+// 0 !KEYWORDS Bricklink 98138pb120, Dots, Funky Animals, Rebrickable 98138pr0133
+// 0 !KEYWORDS Set 41901
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 

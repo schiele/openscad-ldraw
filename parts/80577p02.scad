@@ -13,7 +13,8 @@ function ldraw_lib__80577p02() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Bricklink 80577pb02, Friends, Olivia, Set 41699
+// 0 !KEYWORDS Bricklink 80577pb02, Friends, Olivia, Rebrickable 80577pat0002
+// 0 !KEYWORDS Set 41699
 // 
 // 0 !HISTORY 2022-09-15 [PTadmin] Official Update 2022-05
 // 

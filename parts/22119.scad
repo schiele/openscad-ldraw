@@ -12,6 +12,7 @@ function ldraw_lib__22119() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Sphere
+// 0 !KEYWORDS BrickLink 41250, Rebrickable 41250
 // 
 // 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01
 // 

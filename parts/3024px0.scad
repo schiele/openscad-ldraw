@@ -11,8 +11,8 @@ function ldraw_lib__3024px0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Axolotl, BrickLink 3024pb017, Brickowl 32902, Eyes, face, Minecraft
-// 0 !KEYWORDS Nose, Rebrickable 3024pr0020, Set 21180
+// 0 !KEYWORDS Axolotl, BrickLink 3024pb017, Eyes, face, Minecraft, Nose
+// 0 !KEYWORDS Rebrickable 3024pr0020, Set 21180
 // 
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04
 // 

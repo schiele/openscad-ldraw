@@ -18,8 +18,8 @@ function ldraw_lib__20596p02() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Bricklink 20596pb02, Brickowl 709678, Harley Quinn
-// 0 !KEYWORDS Rebrickable 20596pr0004, Set 76053, Set 76092
+// 0 !KEYWORDS Bricklink 20596pb02, Harley Quinn, Rebrickable 20596pr0004
+// 0 !KEYWORDS Set 76053, Set 76092
 // 
 // 0 !HISTORY 2016-03-18 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2024-07-24 [LisaWinter] File preparation for LDraw Parts Tracker

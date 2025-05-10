@@ -13,8 +13,8 @@ function ldraw_lib__579p01c01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink bb0007pb01, set 102, set 102A, set 107-3, set 116, set 118
-// 0 !KEYWORDS set 119, set 310
+// 0 !KEYWORDS Bricklink bb0007c01pb02, Rebrickable upn0284c02pr0001, set 102
+// 0 !KEYWORDS set 102A, set 107-3, set 116, set 118, set 119, set 310
 // 
 // 0 !HISTORY 2004-07-01 [mikeheide] Made BFC compliant
 // 0 !HISTORY 2022-05-07 [PTadmin] Official Update 2022-03

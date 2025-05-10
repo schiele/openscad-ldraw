@@ -12,8 +12,7 @@ function ldraw_lib__16709p0k() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Boots, Bricklink 41879pb032, Brickowl 341361, Rebrickable 16709pat14
-// 0 !KEYWORDS Set 71046
+// 0 !KEYWORDS Boots, Bricklink 41879pb032, Rebrickable 16709pat14, Set 71046
 // 
 // 0 !HISTORY 2024-12-01 [OrionP] Official Update 2024-10
 // 

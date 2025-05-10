@@ -13,7 +13,7 @@ function ldraw_lib__3626cpb6() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626cpb1487, Joker, Set 71229
+// 0 !KEYWORDS BrickLink 3626pb1487, Joker, Rebrickable 3626cpr1763, Set 71229
 // 
 // 0 !HISTORY 2024-09-30 [OrionP] Official Update 2024-08
 // 

@@ -13,9 +13,8 @@ function ldraw_lib__3626bpaa() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Aquazone, Bricklink 3626bpx101, Brickowl 244494
-// 0 !KEYWORDS Rebrickable 3626bpr0285, Set 1822, Set 2151, Set 2153, Set 3409
-// 0 !KEYWORDS Set 6104, Set 6125, Set 6175, Set 6195
+// 0 !KEYWORDS Aquazone, BrickLink 3626px101, Rebrickable 3626bpr0285, Set 1822
+// 0 !KEYWORDS Set 2151, Set 2153, Set 3409, Set 6104, Set 6125, Set 6175, Set 6195
 // 
 // 0 !HISTORY 2020-04-18 [Holly-Wood] Streamlined pattern, regenerated conds
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02

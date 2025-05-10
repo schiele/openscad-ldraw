@@ -18,7 +18,8 @@ function ldraw_lib__98138p1w() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Angry, Creativity Box, Dots, Red Up, Tired
+// 0 !KEYWORDS Angry, BrickLink 98138pb348, Creativity Box, Dots
+// 0 !KEYWORDS Rebrickable 98138pr0311, Red Up, Set DOTS-MEGA-PACK-3, Tired
 // 
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04
 // 

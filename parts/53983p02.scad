@@ -16,7 +16,8 @@ function ldraw_lib__53983p02() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Propeller
-// 0 !KEYWORDS bionicle, Exo-Force
+// 0 !KEYWORDS bionicle, BrickLink 53983pb01, Exo-Force, Rebrickable 53983pat0001
+// 0 !KEYWORDS Set 66146
 // 
 // 0 !HISTORY 2008-11-02 [mikeheide] Original submission to LDraw Parts Tracker
 // 0 !HISTORY 2018-02-07 [arezey] Complete rewrite

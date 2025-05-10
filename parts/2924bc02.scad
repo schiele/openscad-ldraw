@@ -12,7 +12,8 @@ function ldraw_lib__2924bc02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Engine, Freight, locomotive, Railroad, set 7898
+// 0 !KEYWORDS BrickLink 2924bpb02, Engine, Freight, locomotive, Railroad
+// 0 !KEYWORDS Rebrickable 2924b, set 7898
 // 
 // 0 !HISTORY 2024-08-26 [OrionP] Official Update 2024-07
 // 

@@ -17,8 +17,8 @@ function ldraw_lib__73200bpd6e() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Batman, Bricklink 970c00pb0610, Brickowl 314534, CMF
-// 0 !KEYWORDS Lego Batman Movie, Rebrickable 970c27pr1166, set 71017
+// 0 !KEYWORDS Batman, Bricklink 970c00pb0610, CMF, Lego Batman Movie
+// 0 !KEYWORDS Rebrickable 970c27pr1166, set 71017
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 0 !HISTORY 2023-05-28 [MagFors] Adapted to c-version leg

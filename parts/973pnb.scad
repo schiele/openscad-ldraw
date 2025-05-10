@@ -13,7 +13,7 @@ function ldraw_lib__973pnb() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS BrickLink 973pb1200, Dual, Grand, master, Ninja, Ninjago, Robe
-// 0 !KEYWORDS Sensei Wu, tarragon, teacher
+// 0 !KEYWORDS Sensei Wu, set 10243, tarragon, teacher
 // 
 // 0 !CMDLINE -c15
 // 

@@ -24,8 +24,8 @@ function ldraw_lib__98138p1t() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 98138pb130, Creativity Box, Dots, Funny, happy, Set 41908
-// 0 !KEYWORDS Squinted Eyes
+// 0 !KEYWORDS Bricklink 98138pb130, Creativity Box, Dots, Funny, happy
+// 0 !KEYWORDS Rebrickable 98138pr0148, Set 41908, Squinted Eyes
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
 // 

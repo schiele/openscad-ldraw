@@ -11,7 +11,8 @@ function ldraw_lib__3245cpzf() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickheadz, Bricklink 3245cpb176, Scrooge McDuck, Set 40477
+// 0 !KEYWORDS Brickheadz, Bricklink 3245cpb176, Rebrickable 3245cpr0196
+// 0 !KEYWORDS Scrooge McDuck, Set 40477
 // 
 // 0 !HISTORY 2024-01-29 [OrionP] Official Update 2024-01
 // 

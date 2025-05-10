@@ -11,7 +11,8 @@ function ldraw_lib__3069bpsa() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS A-wing Starfighter UCS, Set 75275, Star Wars
+// 0 !KEYWORDS A-wing Starfighter UCS, BrickLink 3069pb0777
+// 0 !KEYWORDS Rebrickable 3069bpr0276, Set 75275, Star Wars
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
 // 

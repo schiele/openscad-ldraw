@@ -13,7 +13,8 @@ function ldraw_lib__3960pb5() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3960pb046, Harley Quinn, Set 70921, The Lego Batman Movie
+// 0 !KEYWORDS Bricklink 3960pb046, Harley Quinn, Rebrickable 3960pr9992, Set 70921
+// 0 !KEYWORDS The Lego Batman Movie
 // 
 // 0 !CMDLINE -c15
 // 

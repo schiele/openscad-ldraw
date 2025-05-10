@@ -12,6 +12,7 @@ function ldraw_lib__65834p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 65834pb01, Rebrickable 65834pat0002, Set 2000481
 // 0 !KEYWORDS Spike Essential
 // 
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04

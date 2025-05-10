@@ -19,7 +19,7 @@ function ldraw_lib__87610ps7() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Bricklink 87610pb08, Sabine Wren, Set 75106
+// 0 !KEYWORDS Bricklink 87610pb08, Rebrickable 87610pr0005, Sabine Wren, Set 75106
 // 
 // 0 !CMDLINE -c320
 // 

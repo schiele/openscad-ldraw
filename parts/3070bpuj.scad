@@ -11,7 +11,8 @@ function ldraw_lib__3070bpuj() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS arobase, arroba, at, at sign, Commercial at
+// 0 !KEYWORDS arobase, arroba, at, at sign, BrickLink 3070pb072, Commercial at
+// 0 !KEYWORDS Rebrickable 3070bpr0102, Set 850425
 // 
 // 0 !HISTORY 2015-12-30 [PTadmin] Official Update 2015-02
 // 

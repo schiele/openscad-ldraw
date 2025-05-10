@@ -11,7 +11,8 @@ function ldraw_lib__3010pzw() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickheadz, Bricklink 3010pb246, Minecraft, Set 41612, Steve
+// 0 !KEYWORDS Brickheadz, Bricklink 3010pb246, Minecraft, Rebrickable 3010pr0051
+// 0 !KEYWORDS Set 41612, Steve
 // 
 // 0 !HISTORY 2020-06-28 [PTadmin] Official Update 2020-01
 // 

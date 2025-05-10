@@ -14,7 +14,7 @@ function ldraw_lib__973p28() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !KEYWORDS football, Futbal, Motorcycle, Soccer, town, Zipper
+// 0 !KEYWORDS football, Futbal, Motorcycle, Set 6561, Soccer, town, Zipper
 // 
 // 0 !CMDLINE -c0
 // 

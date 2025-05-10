@@ -11,6 +11,8 @@ function ldraw_lib__3010pt6() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 3010pb023, Rebrickable 3010pr9983, Set 335
+// 
 // 0 !HISTORY 2003-06-27 [Steffen] horizontally centered pattern, re-worked part to use s\3010s01.dat, BFCed
 // 0 !HISTORY 2004-09-15 [PTadmin] Official Update 2004-03
 // 0 !HISTORY 2004-12-08 [cwdee] Further qualify description

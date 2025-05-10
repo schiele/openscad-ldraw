@@ -11,7 +11,8 @@ function ldraw_lib__2431p09() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 2431pb805, Camaro, Chevrolet, light, rear, set 10304
+// 0 !KEYWORDS Bricklink 2431pb805, Camaro, Chevrolet, light, rear
+// 0 !KEYWORDS Rebrickable 2431pr0186, set 10304
 // 
 // 0 !HISTORY 2024-07-29 [OrionP] Official Update 2024-06
 // 

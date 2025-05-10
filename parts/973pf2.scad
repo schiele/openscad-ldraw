@@ -12,8 +12,9 @@ function ldraw_lib__973pf2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb0680, Castle, Kingdoms, Set 5929, Set 7187, Set 7946
-// 0 !KEYWORDS Set 7947, Set 7948, Set 7949, Set 7952, Set 9349
+// 0 !KEYWORDS Bricklink 973pb0680, Castle, Kingdoms, Rebrickable 973pb0680
+// 0 !KEYWORDS Set 5929, Set 7187, Set 7946, Set 7947, Set 7948, Set 7949, Set 7952
+// 0 !KEYWORDS Set 9349
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 

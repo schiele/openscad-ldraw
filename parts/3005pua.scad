@@ -11,7 +11,7 @@ function ldraw_lib__3005pua() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !KEYWORDS Ã¦, Ligature
+// 0 !KEYWORDS Ã¦, BrickLink 3005ptAE, Ligature, Rebrickable 3005pr9967, Set 488
 // 
 // 0 !HISTORY 2003-12-09 [Steffen] made use of existing subfile
 // 0 !HISTORY 2004-09-15 [PTadmin] Official Update 2004-03

@@ -13,8 +13,8 @@ function ldraw_lib__51349() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Bricklink 53389, Goblet of Fire, Harry Potter, Merpeople, set 4762
-// 0 !KEYWORDS Viktor Krum
+// 0 !KEYWORDS Bricklink 53389, Goblet of Fire, Harry Potter, Merpeople
+// 0 !KEYWORDS Rebrickable 53389, set 4762, Viktor Krum
 // 
 // 0 !HISTORY 2011-10-26 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2011-10-30 [angmarec] File preparation for LDraw Parts Tracker

@@ -17,7 +17,7 @@ function ldraw_lib__73200bpa3() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Adventurers, Bricklink 970c00pb0018, Brickowl 797611, Johnny Thunder
+// 0 !KEYWORDS Adventurers, Bricklink 970c00pb0018, Johnny Thunder
 // 0 !KEYWORDS Orient Expedition, Rebrickable 970c26pr0018, set 3380, Set 7410
 // 0 !KEYWORDS set 7415, Set 7417, Set 7418
 // 

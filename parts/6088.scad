@@ -17,7 +17,7 @@ function ldraw_lib__6088() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Aquanaut, Aquazone
+// 0 !KEYWORDS Aquanaut, Aquazone, BrickLink x40
 // 
 // 0 !HISTORY 2015-11-03 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2018-07-16 [MagFors] File preparation for LDraw Parts Tracker

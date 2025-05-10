@@ -15,8 +15,8 @@ function ldraw_lib__74948p02() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS Aquanauts, Aquaraider, aquashark, Aquazone, Bricklink 70001pb01
-// 0 !KEYWORDS Hydronauts, Stingray
+// 0 !KEYWORDS Aquanauts, Aquaraider, aquashark, Aquazone, BrickLink 70001c01pb01
+// 0 !KEYWORDS Hydronauts, Rebrickable 70001pr0001, Set 1822, Stingray
 // 
 // 0 !HISTORY 2022-12-20 [PTadmin] Official Update 2022-06
 // 

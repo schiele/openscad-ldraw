@@ -30,9 +30,9 @@ function ldraw_lib__u9328ap01c01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Sheet Fabric
-// 0 !KEYWORDS American Natives, Bricklink x172px1, Brickowl 52980, First Nation
-// 0 !KEYWORDS indians, Rebrickable upn0218pr0001, set 6746, set 6763, set 6766
-// 0 !KEYWORDS western, wild west
+// 0 !KEYWORDS American Natives, Bricklink x172px1, First Nation, indians
+// 0 !KEYWORDS Rebrickable upn0218pr0001, set 6746, set 6763, set 6766, western
+// 0 !KEYWORDS wild west
 // 
 // 0 !HISTORY 2024-05-24 [Philo] Triangulated pattern, based on images of Alex Taylor TEXMAP version
 // 0 !HISTORY 2024-06-19 [Holly-Wood] Sanded pattern

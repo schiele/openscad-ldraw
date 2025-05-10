@@ -20,7 +20,7 @@ function ldraw_lib__42090p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Duplo
+// 0 !KEYWORDS BrickLink 42090, Duplo, Rebrickable 42090, Set 3613
 // 
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
 // 

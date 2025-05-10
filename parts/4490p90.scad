@@ -12,6 +12,8 @@ function ldraw_lib__4490p90() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 4490pb02, Rebrickable 4490pr0003, Set 70816
+// 
 // 0 !HISTORY 2015-10-24 [MagFors] Used subfile
 // 0 !HISTORY 2015-12-30 [PTadmin] Official Update 2015-02
 // 

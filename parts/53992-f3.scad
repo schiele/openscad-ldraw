@@ -18,7 +18,7 @@ function ldraw_lib__53992_f3() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Vehicle
-// 0 !KEYWORDS set 8118
+// 0 !KEYWORDS BrickLink x1681, Rebrickable 53992, set 8118
 // 
 // 0 !HISTORY 2019-09-09 [PTadmin] Official Update 2019-02
 // 

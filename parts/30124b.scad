@@ -17,8 +17,8 @@ function ldraw_lib__30124b() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS crash helmet, full face, motorcycle helmet, police helmet
-// 0 !KEYWORDS space helmet
+// 0 !KEYWORDS BrickLink 2446, crash helmet, full face, motorcycle helmet
+// 0 !KEYWORDS police helmet, Rebrickable 2446, space helmet
 // 
 // 0 !HISTORY 2013-08-14 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2024-07-15 [MagFors] File preparation for LDraw Parts Tracker

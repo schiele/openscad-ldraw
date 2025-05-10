@@ -19,8 +19,8 @@ function ldraw_lib__11241p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 11241pb01, Brickowl 549648, Horse, Olivia
-// 0 !KEYWORDS Rebrickable 11241pr0001, Set 41003
+// 0 !KEYWORDS Bricklink 11241pb01, Horse, Olivia, Rebrickable 11241pr0001
+// 0 !KEYWORDS Set 41003
 // 
 // 0 !HISTORY 2024-05-28 [OrionP] Official Update 2024-04
 // 

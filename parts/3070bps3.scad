@@ -11,7 +11,8 @@ function ldraw_lib__3070bps3() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Star Wars, TIE Interceptor
+// 0 !KEYWORDS BrickLink 3070pb008, Rebrickable 3070bpr0047, set 6965, Star Wars
+// 0 !KEYWORDS TIE Interceptor
 // 
 // 0 !HISTORY 2009-12-29 [PTadmin] Official Update 2009-03
 // 

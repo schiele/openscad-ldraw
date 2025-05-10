@@ -14,8 +14,8 @@ function ldraw_lib__41944p02() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Figure Accessory
-// 0 !KEYWORDS BrickLink 41944pb01, Greyscale, LEGO Ideas, Minnie Mouse, Set 21317
-// 0 !KEYWORDS Steamboat Willie
+// 0 !KEYWORDS BrickLink 41944pb01, Greyscale, LEGO Ideas, Minnie Mouse
+// 0 !KEYWORDS Rebrickable 41944pr0001, Set 21317, Steamboat Willie
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 

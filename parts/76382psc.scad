@@ -14,10 +14,10 @@ function ldraw_lib__76382psc() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bespin, Bricklink 973pscc01, BrickOwl 552327, Cloud City, Cyborg
-// 0 !KEYWORDS Episode V, Lando's Aide, Lobot, Mini Upper Part No 568
-// 0 !KEYWORDS Original Trilogy, Rebrickable 973c26h01pr9998, Set 7119
-// 0 !KEYWORDS The Empire Strikes Back, Twin-Pod Cloud Car
+// 0 !KEYWORDS Bespin, Bricklink 973pscc01, Cloud City, Cyborg, Episode V
+// 0 !KEYWORDS Lando's Aide, Lobot, Mini Upper Part No 568, Original Trilogy
+// 0 !KEYWORDS Rebrickable 973c26h01pr9998, Set 7119, The Empire Strikes Back
+// 0 !KEYWORDS Twin-Pod Cloud Car
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

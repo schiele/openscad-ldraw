@@ -15,7 +15,8 @@ function ldraw_lib__3070bp12() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3070bpb160, Bricklink 3070bpb161, Dots, Go Team, Set 41911
+// 0 !KEYWORDS BrickLink 3070pb161, Dots, Go Team, Rebrickable 3070bpr0219
+// 0 !KEYWORDS Set 41911
 // 
 // 0 !HISTORY 2022-05-07 [PTadmin] Official Update 2022-03
 // 

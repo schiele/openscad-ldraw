@@ -13,7 +13,8 @@ function ldraw_lib__18836p42() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS CMF, Series 19, Set 71025
+// 0 !KEYWORDS BrickLink 18836pb04, CMF, Rebrickable 18836pr0012, Series 19
+// 0 !KEYWORDS Set 71025
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 0 !HISTORY 2024-12-28 [OrionP] Removed scientific notation, added keywords

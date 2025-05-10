@@ -15,6 +15,8 @@ function ldraw_lib__3464b() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 3464, Rebrickable 3464
+// 
 // 0 !HISTORY 1997-12-05 [PTadmin] Official Update 1997-17
 // 0 !HISTORY 1999-05-17 [PTadmin] Official Update 1999-03
 // 0 !HISTORY 2003-06-08 [jriley] BFC compliant, cone substitutions

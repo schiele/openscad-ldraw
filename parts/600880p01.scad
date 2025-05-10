@@ -13,7 +13,8 @@ function ldraw_lib__600880p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Sheet Fabric
-// 0 !KEYWORDS Pretzel Girl, Series 11
+// 0 !KEYWORDS BrickLink 99257pb02, Pretzel Girl, Rebrickable 99257pr0002
+// 0 !KEYWORDS Series 11, Set 71002-3
 // 
 // 0 !HISTORY 2015-10-11 [PTadmin] Official Update 2015-01
 // 0 !HISTORY 2019-01-25 [cwdee] Update category

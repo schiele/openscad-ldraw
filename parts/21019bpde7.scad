@@ -17,7 +17,8 @@ function ldraw_lib__21019bpde7() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 970c00pb1202, CMF, Daffy Duck, Looney Tunes, Set 71030
+// 0 !KEYWORDS Bricklink 970c00pb0516, CMF, Daffy Duck, Looney Tunes
+// 0 !KEYWORDS Rebrickable 970c27pat38, Set 71030
 // 
 // 0 !HISTORY 2024-10-27 [OrionP] Official Update 2024-09
 // 

@@ -13,7 +13,8 @@ function ldraw_lib__95674p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Clown, Series 5
+// 0 !KEYWORDS BrickLink 95674pb01, Clown, Rebrickable 95674pr0001, Series 5
+// 0 !KEYWORDS Set 8805-9
 // 
 // 0 !HISTORY 2012-08-09 [PTadmin] Official Update 2012-02
 // 

@@ -15,7 +15,7 @@ function ldraw_lib__3626bphb() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626bpb0002, Brickowl 661043, Harry Potter, Hogwarts
+// 0 !KEYWORDS BrickLink 3626pb0002, Harry Potter, Hogwarts
 // 0 !KEYWORDS Rebrickable 3626bpr0264, set 4733, set 4751, set 4752, Slytherin
 // 
 // 0 !HISTORY 2005-12-28 [PTadmin] Official Update 2005-01

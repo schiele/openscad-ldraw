@@ -12,8 +12,8 @@ function ldraw_lib__2525p30() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 2525px1, Brickowl 832668, Imperial Guards
-// 0 !KEYWORDS Rebrickable 2525pr0009, Set 6263, set 6271, set 6277
+// 0 !KEYWORDS Bricklink 2525px1, Imperial Guards, Rebrickable 2525pr0009, Set 6263
+// 0 !KEYWORDS set 6271, set 6277
 // 
 // 0 !HISTORY 2024-01-29 [OrionP] Official Update 2024-01
 // 

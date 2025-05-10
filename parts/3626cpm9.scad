@@ -15,8 +15,8 @@ function ldraw_lib__3626cpm9() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626cpb1430, Dimensions, Gandalf, Lord of the Rings
-// 0 !KEYWORDS Set 71200
+// 0 !KEYWORDS BrickLink 3626pb1430, Dimensions, Gandalf, Lord of the Rings
+// 0 !KEYWORDS Rebrickable 3626cpr1765, Set 71200
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 

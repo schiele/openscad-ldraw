@@ -11,7 +11,7 @@ function ldraw_lib__3004px0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3004pb123, Minecraft
+// 0 !KEYWORDS Bricklink 3004pb123, Minecraft, Rebrickable 3004pr0014, Set 21114
 // 
 // 0 !HISTORY 2020-06-28 [PTadmin] Official Update 2020-01
 // 0 !HISTORY 2020-07-12 [cwdee] Correct description

@@ -12,7 +12,7 @@ function ldraw_lib__4362ac01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Fabuland
+// 0 !KEYWORDS BrickLink x852c01, Fabuland, Rebrickable 4362acx1
 // 
 // 0 !HISTORY 2016-12-31 [PTadmin] Official Update 2016-01
 // 

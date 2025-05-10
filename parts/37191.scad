@@ -26,7 +26,7 @@ function ldraw_lib__37191() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS CMF, Collectable, Costume, Suit
+// 0 !KEYWORDS BrickLink 37191c00, CMF, Collectable, Costume, Suit
 // 
 // 0 !HISTORY 2023-10-31 [OrionP] Official Update 2023-05
 // 

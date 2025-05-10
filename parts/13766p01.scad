@@ -13,8 +13,8 @@ function ldraw_lib__13766p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Arwen, Bricklink 13766pb01, Brickowl 847244, Rebrickable 13766pr0001
-// 0 !KEYWORDS Set 79006, the lord of the rings
+// 0 !KEYWORDS Arwen, Bricklink 13766pb01, Rebrickable 13766pr0001, Set 79006
+// 0 !KEYWORDS the lord of the rings
 // 
 // 0 !HISTORY 2024-12-30 [OrionP] Official Update 2024-11
 // 

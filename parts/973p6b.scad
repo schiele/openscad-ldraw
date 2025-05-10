@@ -15,7 +15,7 @@ function ldraw_lib__973p6b() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !KEYWORDS Space
+// 0 !KEYWORDS Set 1974, Space
 // 
 // 0 !CMDLINE -c15
 // 

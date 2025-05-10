@@ -15,7 +15,8 @@ function ldraw_lib__98138p2x() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 98138pb260, Set 10305, Set 43205, Set 43206, Set 43208
+// 0 !KEYWORDS Bricklink 98138pb260, Rebrickable 98138pr0283, Set 10305, Set 43205
+// 0 !KEYWORDS Set 43206, Set 43208
 // 
 // 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
 // 0 !HISTORY 2024-07-29 [OrionP] Official Update 2024-06

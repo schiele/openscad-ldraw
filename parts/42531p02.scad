@@ -11,8 +11,8 @@ function ldraw_lib__42531p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 42531pb001R, Brickowl 82457, McLaren Senna GTR
-// 0 !KEYWORDS Rebrickable 42531pr0002, Set 42123
+// 0 !KEYWORDS Bricklink 42531pb001R, McLaren Senna GTR, Rebrickable 42531pr0002
+// 0 !KEYWORDS Set 42123
 // 
 // 0 !HISTORY 2024-12-01 [OrionP] Official Update 2024-10
 // 

@@ -12,7 +12,8 @@ function ldraw_lib__98138pb8() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 98138pb114, Yellow Lantern
+// 0 !KEYWORDS Bricklink 98138pb114, Rebrickable 98138pr0063, Set 66638
+// 0 !KEYWORDS Yellow Lantern
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 

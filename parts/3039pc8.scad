@@ -11,6 +11,8 @@ function ldraw_lib__3039pc8() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 3039pb013, Rebrickable 3039pr9967, set 1704
+// 
 // 0 !HISTORY 2014-11-16 [MagFors] made BFC compliant, removed t-junctions and overlaps
 // 0 !HISTORY 2014-12-23 [PTadmin] Official Update 2014-02
 // 

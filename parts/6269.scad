@@ -23,8 +23,8 @@ function ldraw_lib__6269() = [
   [0,"BFC","CW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS Castle, chalice, cone, crystal, cup, exhaust pipe, fine crystal
-// 0 !KEYWORDS glass, town, treasure, utensil, wine
+// 0 !KEYWORDS BrickLink 2343, Castle, chalice, cone, crystal, cup, exhaust pipe
+// 0 !KEYWORDS fine crystal, glass, Rebrickable 2343, town, treasure, utensil, wine
 // 
 // 0 !HISTORY 2009-10-12 [tchang] Rebuild from 2343, Change shape, Add inner hole and cylinder part
 // 0 !HISTORY 2013-12-23 [PTadmin] Official Update 2013-02

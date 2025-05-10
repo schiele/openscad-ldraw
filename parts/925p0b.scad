@@ -12,6 +12,8 @@ function ldraw_lib__925p0b() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 3008pb073, Rebrickable 3008pr0060, Set 1307-1-DBASE
+// 
 // 0 !HISTORY 2014-01-06 [tchang] Change Underside without Center Studs
 // 0 !HISTORY 2014-01-28 [tchang] Suppress quad overlapping inside R
 // 0 !HISTORY 2014-02-01 [tchang] Change reference Logo

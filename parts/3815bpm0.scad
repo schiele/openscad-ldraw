@@ -11,7 +11,7 @@ function ldraw_lib__3815bpm0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Armor, Bricklink 970c00pb0159, Lord of the Rings, Uruk-hai
+// 0 !KEYWORDS Armor, Bricklink 970c00pb0159, Lord of the Rings, set 9471, Uruk-hai
 // 
 // 0 !HISTORY 2012-12-28 [HowardLande] Original pattern design
 // 0 !HISTORY 2020-05-30 [cwdee] Update for revised geometry

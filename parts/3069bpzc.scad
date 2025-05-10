@@ -14,8 +14,8 @@ function ldraw_lib__3069bpzc() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Back To The Future, Brickheadz, BrickLink 3069bpb641, Marty McFly
-// 0 !KEYWORDS Set 41611
+// 0 !KEYWORDS Back To The Future, Brickheadz, BrickLink 3069pb0641, Marty McFly
+// 0 !KEYWORDS Rebrickable 3069bpr0235, Set 41611
 // 
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
 // 

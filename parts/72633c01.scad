@@ -15,7 +15,7 @@ function ldraw_lib__72633c01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS 9V, dacta, Mindstorm, RCX
+// 0 !KEYWORDS 9V, BrickLink 2980c01, dacta, Mindstorm, RCX, Rebrickable 2980c01
 // 
 // 0 !CMDLINE -c14
 // 

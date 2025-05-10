@@ -13,8 +13,8 @@ function ldraw_lib__13746p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 13746pb001, Brickowl 210770, Rebrickable 13746pr0001
-// 0 !KEYWORDS Red Harrington, Set 79108, Stagecoach Escape, The Lone Ranger
+// 0 !KEYWORDS Bricklink 13746pb001, Rebrickable 13746pr0001, Red Harrington
+// 0 !KEYWORDS Set 79108, Stagecoach Escape, The Lone Ranger
 // 
 // 0 !HISTORY 2013-08-14 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2024-09-04 [LisaWinter] File preparation for LDraw Parts Tracker

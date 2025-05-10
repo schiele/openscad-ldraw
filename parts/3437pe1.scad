@@ -15,8 +15,8 @@ function ldraw_lib__3437pe1() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Brick
-// 0 !KEYWORDS animal, Bricklink 3437pe1, Bucket, Chicken, Dino, Farm, Gator, Hippo
-// 0 !KEYWORDS Parrot, set 2241, Set 9064, Squirrel, tub, Zoo
+// 0 !KEYWORDS animal, Bucket, Chicken, Dino, Farm, Gator, Hippo, Parrot
+// 0 !KEYWORDS Rebrickable 3437pr0067, set 2241, Set 9064, Squirrel, tub, Zoo
 // 
 // 0 !HISTORY 2002-04-25 [PTadmin] Official Update 2002-02
 // 0 !HISTORY 2007-06-25 [PTadmin] Header formatted for Contributor Agreement

@@ -12,7 +12,7 @@ function ldraw_lib__95351p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Ariel, Bricklink 95351pb06, Brickowl 304933, CMF, Disney Series 1
+// 0 !KEYWORDS Ariel, Bricklink 95351pb06, CMF, Disney Series 1
 // 0 !KEYWORDS Fantasy Minifigure Set, Merman, Rebrickable 95351pr0006, set 45023
 // 
 // 0 !HISTORY 2013-08-14 {LEGO Digital Designer} Original part shape

@@ -12,7 +12,7 @@ function ldraw_lib__3660bp04() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3660pb001, set 483
+// 0 !KEYWORDS Bricklink 3660pb001, Rebrickable 3660pr0004, set 483
 // 
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04
 // 

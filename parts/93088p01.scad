@@ -17,8 +17,8 @@ function ldraw_lib__93088p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS Bricklink 93088pb02, Bruno, Coco, Disney Princess, Dog, Friends
-// 0 !KEYWORDS Pippa, Set 10729, Set 3183, Set 3316, set 41055, Set 41325
-// 0 !KEYWORDS Set 850849, Set 850967
+// 0 !KEYWORDS Pippa, Rebrickable 93088pr0008, Set 10729, Set 3183, Set 3316
+// 0 !KEYWORDS set 41055, Set 41325, Set 850849, Set 850967
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
 // 

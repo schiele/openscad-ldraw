@@ -12,7 +12,8 @@ function ldraw_lib__88930pz4() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickheadz, Bricklink 88930pb086, Darth Vader, Set 41619
+// 0 !KEYWORDS Brickheadz, Bricklink 88930pb086, Darth Vader
+// 0 !KEYWORDS Rebrickable 88930pr0015, Set 41619
 // 
 // 0 !HISTORY 2022-12-20 [PTadmin] Official Update 2022-06
 // 

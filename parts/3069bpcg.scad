@@ -17,7 +17,7 @@ function ldraw_lib__3069bpcg() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3069bpb0442, Nexo, Rebrickable 3069bpr0169, Set 70324
+// 0 !KEYWORDS BrickLink 3069pb0442, Nexo, Rebrickable 3069bpr0169, Set 70324
 // 0 !KEYWORDS set 70357, Set 70358
 // 
 // 0 !HISTORY 2022-03-02 [MagFors] Resized pattern and corrected colours

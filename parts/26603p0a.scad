@@ -11,8 +11,8 @@ function ldraw_lib__26603p0a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Animal Crossing, Bricklink 26603pb393, Brickowl 248711
-// 0 !KEYWORDS Rebrickable 26603pr0136, set 77050
+// 0 !KEYWORDS Animal Crossing, Bricklink 26603pb393, Rebrickable 26603pr0136
+// 0 !KEYWORDS set 77050
 // 
 // 0 !HISTORY 2024-10-27 [OrionP] Official Update 2024-09
 // 

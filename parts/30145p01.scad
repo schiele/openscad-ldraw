@@ -15,6 +15,8 @@ function ldraw_lib__30145p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS Rebrickable 30145pr0002, Set 4137
+// 
 // 0 !HISTORY 2007-06-06 [PTadmin] Header formatted for Contributor Agreement
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
 // 0 !HISTORY 2009-10-21 [Philo] BFCed, improved pattern

@@ -15,7 +15,8 @@ function ldraw_lib__6069ps2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !KEYWORDS Slave 1, Star Wars
+// 0 !KEYWORDS BrickLink 6069px4, Rebrickable 6069pr0006, Set 4207901, Slave 1
+// 0 !KEYWORDS Star Wars
 // 
 // 0 !CMDLINE -c272
 // 

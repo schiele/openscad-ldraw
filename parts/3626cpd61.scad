@@ -15,7 +15,8 @@ function ldraw_lib__3626cpd61() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626cpb1711, Lego Batman Movie, Lobster Lovin Batman
+// 0 !KEYWORDS BrickLink 3626pb1711, Lego Batman Movie, Lobster Lovin Batman
+// 0 !KEYWORDS Rebrickable 3626cpr2073, set 71017
 // 
 // 0 !CMDLINE -c78
 // 

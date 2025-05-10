@@ -12,7 +12,7 @@ function ldraw_lib__973p3i() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb0064, female, islanders, Pirates
+// 0 !KEYWORDS Bricklink 973pb0064, female, islanders, Pirates, set 6292
 // 
 // 0 !HISTORY 2019-12-27 [PTadmin] Official Update 2019-03
 // 

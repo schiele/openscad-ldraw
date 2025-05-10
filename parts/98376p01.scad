@@ -12,7 +12,8 @@ function ldraw_lib__98376p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Alladin, Bricklink 98376pb02, CMF, Collectable, Disney, Set 71012
+// 0 !KEYWORDS Alladin, Bricklink 98376pb02, CMF, Collectable, Disney
+// 0 !KEYWORDS Rebrickable 98376pr0002, Set 71012
 // 
 // 0 !HISTORY 2013-08-14 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2018-08-15 [MagFors] File preparation for LDraw Parts Tracker

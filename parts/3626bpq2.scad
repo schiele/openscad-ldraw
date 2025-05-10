@@ -13,7 +13,7 @@ function ldraw_lib__3626bpq2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626bpb0497, Brickowl 942821, Jake Raines, Pharaoh's Quest
+// 0 !KEYWORDS BrickLink 3626pb0497, Jake Raines, Pharaoh's Quest
 // 0 !KEYWORDS Rebrickable 3626bpr0753, Set 7307, Set 7326, Set 7327
 // 
 // 0 !CMDLINE -c14

@@ -12,7 +12,8 @@ function ldraw_lib__49656p04() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 49656pb04, PAB, Pick-a-Brick, Set PAB-2024
+// 0 !KEYWORDS Bricklink 49656pb04, PAB, Pick-a-Brick, Rebrickable 49656pat0006
+// 0 !KEYWORDS Set PAB-2024
 // 
 // 0 !HISTORY 2024-12-30 [OrionP] Official Update 2024-11
 // 

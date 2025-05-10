@@ -13,8 +13,8 @@ function ldraw_lib__3626cpb7() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626cpb1434, set 70917, Set 71221, Wicked Witch
-// 0 !KEYWORDS Wizard of Oz
+// 0 !KEYWORDS BrickLink 3626pb1434, Rebrickable 3626cpr1774, set 70917, Set 71221
+// 0 !KEYWORDS Wicked Witch, Wizard of Oz
 // 
 // 0 !HISTORY 2024-09-30 [OrionP] Official Update 2024-08
 // 

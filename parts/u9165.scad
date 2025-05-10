@@ -24,7 +24,8 @@ function ldraw_lib__u9165() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Fabuland, garbage, trash, trashcan
+// 0 !KEYWORDS BrickLink fabef6, Fabuland, garbage, Rebrickable fabupn0022, trash
+// 0 !KEYWORDS trashcan
 // 
 // 0 !HISTORY 2012-12-28 [PTadmin] Official Update 2012-03
 // 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives

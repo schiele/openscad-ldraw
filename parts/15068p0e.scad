@@ -13,7 +13,8 @@ function ldraw_lib__15068p0e() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 15068pb227, Chinese New Year, Lion Dance, Set 80104
+// 0 !KEYWORDS Bricklink 15068pb227, Chinese New Year, Lion Dance
+// 0 !KEYWORDS Rebrickable 15068pr0040, Set 80104
 // 
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04
 // 

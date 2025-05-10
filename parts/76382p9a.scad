@@ -14,8 +14,8 @@ function ldraw_lib__76382p9a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb1935c01, BrickOwl 657386, Pussycat bow
-// 0 !KEYWORDS Rebrickable 973c27h01pr2924, set 10247, set 10261, set 10684
+// 0 !KEYWORDS Bricklink 973pb1935c01, Pussycat bow, Rebrickable 973c27h01pr2924
+// 0 !KEYWORDS set 10247, set 10261, set 10684
 // 
 // 0 !HISTORY 2024-12-30 [OrionP] Official Update 2024-11
 // 

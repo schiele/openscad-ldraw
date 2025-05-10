@@ -14,8 +14,7 @@ function ldraw_lib__3626ap01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626ap01, Brickowl 303227, Rebrickable 3626apr0001
-// 0 !KEYWORDS set 1066, set 1598, set 7720
+// 0 !KEYWORDS Rebrickable 3626apr0001, set 1066, set 1598, set 7720
 // 
 // 0 !HISTORY 2002-06-28 [jonwil] Replaced subfile reference
 // 0 !HISTORY 2002-08-18 [PTadmin] Official Update 2002-04

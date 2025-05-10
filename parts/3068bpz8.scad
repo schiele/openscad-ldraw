@@ -11,7 +11,7 @@ function ldraw_lib__3068bpz8() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickheadz, Bricklink 3068pb2246, Brickowl 243258, Luke Skywalker
+// 0 !KEYWORDS Brickheadz, Bricklink 3068pb2246, Luke Skywalker
 // 0 !KEYWORDS Rebrickable 3068bpr0675, Set 40623, Star Wars
 // 
 // 0 !HISTORY 2024-07-29 [OrionP] Official Update 2024-06

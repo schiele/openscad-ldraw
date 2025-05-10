@@ -12,6 +12,8 @@ function ldraw_lib__76319() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
+// 0 !KEYWORDS BrickLink Zbb018
+// 
 // 0 !HISTORY 2007-03-07 [cwdee] Removed hard-code colours
 // 0 !HISTORY 2011-07-25 [PTadmin] Official Update 2011-01
 // 

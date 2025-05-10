@@ -12,8 +12,8 @@ function ldraw_lib__3010p22() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS boat, Bricklink 3010pb038, Brickowl 410357, ferry
-// 0 !KEYWORDS Rebrickable 3010pr9966, set 1581, Silja Line Ferry, windows
+// 0 !KEYWORDS boat, Bricklink 3010pb038, ferry, Rebrickable 3010pr9966, set 1581
+// 0 !KEYWORDS Silja Line Ferry, windows
 // 
 // 0 !HISTORY 2009-09-03 [PTadmin] Official Update 2009-02
 // 0 !HISTORY 2023-10-20 [MagFors] Used direct colour, subfiled

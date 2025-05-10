@@ -13,7 +13,7 @@ function ldraw_lib__43898p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 43898pb007
+// 0 !KEYWORDS Bricklink 43898pb007, Rebrickable 43898pr1004, Set 41307
 // 
 // 0 !HISTORY 2020-06-28 [PTadmin] Official Update 2020-01
 // 

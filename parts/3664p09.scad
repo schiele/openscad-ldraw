@@ -17,8 +17,8 @@ function ldraw_lib__3664p09() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Brick
-// 0 !KEYWORDS Bricklink 3664pb02, Brickowl 35496, police, Rebrickable 3664pr0018
-// 0 !KEYWORDS Set 2672, Set 2730, Set 2732, Set 9175, Set 9187, Train
+// 0 !KEYWORDS Bricklink 3664pb02, police, Rebrickable 3664pr0018, Set 2672
+// 0 !KEYWORDS Set 2730, Set 2732, Set 9175, Set 9187, Train
 // 
 // 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
 // 0 !HISTORY 2024-05-28 [OrionP] Official Update 2024-04

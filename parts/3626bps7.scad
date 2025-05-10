@@ -18,11 +18,11 @@ function ldraw_lib__3626bps7() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Anakin Skywalker, bad guy, Bricklink 3626cps7, Brickowl 88433
-// 0 !KEYWORDS burn marks, Classic Trilogy, Darth Vader, Empire, evil, eyebrows
-// 0 !KEYWORDS face, frown, grim, pockets under eyes, Rebrickable 3626cpr2864, scar
-// 0 !KEYWORDS scarred, scars, Set 76261, sith, Sith Lord, Star Wars
-// 0 !KEYWORDS sunken eye sockets, villain, wrinkles
+// 0 !KEYWORDS Anakin Skywalker, bad guy, BrickLink 3626ps7, burn marks
+// 0 !KEYWORDS Classic Trilogy, Darth Vader, Empire, evil, eyebrows, face, frown
+// 0 !KEYWORDS grim, pockets under eyes, Rebrickable 3626bpr0275, scar, scarred
+// 0 !KEYWORDS scars, Set 76261, sith, Sith Lord, Star Wars, sunken eye sockets
+// 0 !KEYWORDS villain, wrinkles
 // 
 // 0 !HISTORY 2002-06-11 [PTadmin] Official Update 2002-03
 // 0 !HISTORY 2007-06-29 [PTadmin] Header formatted for Contributor Agreement

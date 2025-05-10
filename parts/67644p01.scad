@@ -14,7 +14,8 @@ function ldraw_lib__67644p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS DesignID 68995, Minions, Set 75549
+// 0 !KEYWORDS BrickLink 67644pb01, DesignID 68995, Minions
+// 0 !KEYWORDS Rebrickable 67644pr0001, Set 75549
 // 
 // 0 !HISTORY 2023-11-19 [OrionP] Official Update 2023-06
 // 

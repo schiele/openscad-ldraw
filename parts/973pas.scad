@@ -15,7 +15,7 @@ function ldraw_lib__973pas() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Power Miners
+// 0 !KEYWORDS BrickLink 973pb0535, Power Miners, Set 8957
 // 
 // 0 !HISTORY 2013-07-21 [PTadmin] Official Update 2013-01
 // 

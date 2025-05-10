@@ -14,9 +14,8 @@ function ldraw_lib__76382p5c() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS 2-sided, Bricklink 973pb3002c01, BrickOwl 497165, Knit
-// 0 !KEYWORDS Margaret Hamilton, NASA, Rebrickable 973c03h02pr4191, Set 21312
-// 0 !KEYWORDS Squiggly, women
+// 0 !KEYWORDS 2-sided, Bricklink 973pb3002c01, Knit, Margaret Hamilton, NASA
+// 0 !KEYWORDS Rebrickable 973c03h02pr4191, Set 21312, Squiggly, women
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

@@ -13,7 +13,8 @@ function ldraw_lib__14769p07() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS food, peperoni, pepperoni, pizzeria, town
+// 0 !KEYWORDS BrickLink 14769pb011, food, peperoni, pepperoni, pizzeria
+// 0 !KEYWORDS Rebrickable 14769pr0011, Set 40309, town
 // 
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
 // 

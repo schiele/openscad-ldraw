@@ -15,6 +15,8 @@ function ldraw_lib__60475a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 60475
+// 
 // 0 !HISTORY 2010-10-16 [Holly-Wood] Changed subpart to primitive clip2.dat; corrected stud orientation
 // 0 !HISTORY 2010-12-31 [PTadmin] Official Update 2010-03
 // 0 !HISTORY 2013-08-12 [PTadmin] Renamed from 60475

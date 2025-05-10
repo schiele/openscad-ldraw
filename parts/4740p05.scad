@@ -12,8 +12,8 @@ function ldraw_lib__4740p05() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 4740pb020, Challenger, Dodge, set 76904, Speed Champions
-// 0 !KEYWORDS T/A
+// 0 !KEYWORDS Bricklink 4740pb020, Challenger, Dodge, Rebrickable 4740pr0020
+// 0 !KEYWORDS set 76904, Speed Champions, T/A
 // 
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04
 // 

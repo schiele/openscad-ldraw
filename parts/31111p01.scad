@@ -12,6 +12,7 @@ function ldraw_lib__31111p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Brick
+// 0 !KEYWORDS BrickLink 31111pb003, Rebrickable 31111pr0018, Set 2245
 // 
 // 0 !HISTORY 2003-12-19 [PTadmin] Official Update 2003-03
 // 0 !HISTORY 2007-06-24 [PTadmin] Header formatted for Contributor Agreement

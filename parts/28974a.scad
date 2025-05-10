@@ -17,7 +17,7 @@ function ldraw_lib__28974a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Minifig Neckwear
+// 0 !KEYWORDS BrickLink 28974, Minifig Neckwear, Rebrickable 28974
 // 
 // 0 !HISTORY 2022-01-08 [jb70] Based on 28974.dat by MagFors, reduced thickness on stud hole side to 3 LDU
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04

@@ -11,7 +11,8 @@ function ldraw_lib__36036ph0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Albus Dumbledore, BrickLink 36036pb15, Dress, Gown, Legs, Set 75948
+// 0 !KEYWORDS Albus Dumbledore, BrickLink 36036pb015, Dress, Gown, Legs
+// 0 !KEYWORDS Rebrickable 36036pr0016, Set 75948
 // 
 // 0 !HISTORY 2022-02-19 [MagFors] Corrected colour, to match torso
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04

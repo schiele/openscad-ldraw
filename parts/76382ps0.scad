@@ -14,10 +14,10 @@ function ldraw_lib__76382ps0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973ps0c01, BrickOwl 804972, Episode VI, flight suit
-// 0 !KEYWORDS Military, Mini Upper Part No 1235, Mini Upper Part No 397
-// 0 !KEYWORDS Original Trilogy, Rebel Alliance, Rebrickable 973c31h03pr1526
-// 0 !KEYWORDS Return of the Jedi, Set 6207, Set 7134, Set 7754, Star Wars, Uniform
+// 0 !KEYWORDS Bricklink 973ps0c01, Episode VI, flight suit, Military
+// 0 !KEYWORDS Mini Upper Part No 1235, Mini Upper Part No 397, Original Trilogy
+// 0 !KEYWORDS Rebel Alliance, Rebrickable 973c31h03pr1526, Return of the Jedi
+// 0 !KEYWORDS Set 6207, Set 7134, Set 7754, Star Wars, Uniform
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

@@ -11,7 +11,7 @@ function ldraw_lib__777p09() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !KEYWORDS classic, h0 scale
+// 0 !KEYWORDS classic, h0 scale, Rebrickable 777pr0009, Set 493
 // 
 // 0 !HISTORY 2002-08-18 [PTadmin] Official Update 2002-04
 // 0 !HISTORY 2004-03-02 [PTadmin] Official Update 2004-01

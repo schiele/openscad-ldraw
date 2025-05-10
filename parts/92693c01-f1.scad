@@ -13,7 +13,7 @@ function ldraw_lib__92693c01_f1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Power Functions
+// 0 !KEYWORDS BrickLink 92693c01, Power Functions, Rebrickable 92693
 // 
 // 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02
 // 0 !HISTORY 2016-08-31 [PTadmin] Renamed from 92693c02

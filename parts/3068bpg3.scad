@@ -11,7 +11,8 @@ function ldraw_lib__3068bpg3() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Pendant, Scala, Set 311-2, Spring
+// 0 !KEYWORDS BrickLink 3068pb0025, Pendant, Rebrickable 3068bpr0025, Scala
+// 0 !KEYWORDS Set 311-2, Spring
 // 
 // 0 !HISTORY 2020-06-28 [PTadmin] Official Update 2020-01
 // 

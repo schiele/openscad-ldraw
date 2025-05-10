@@ -13,8 +13,8 @@ function ldraw_lib__4760p03c01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 4760c01pb01, Brickowl 719142, Night Patroller
-// 0 !KEYWORDS Rebrickable 4760c01pr0002, Set 6430
+// 0 !KEYWORDS Bricklink 4760c01pb01, Night Patroller, Rebrickable 4760c01pr0002
+// 0 !KEYWORDS Set 6430
 // 
 // 0 !HISTORY 2024-12-01 [OrionP] Official Update 2024-10
 // 

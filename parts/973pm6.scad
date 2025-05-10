@@ -12,7 +12,8 @@ function ldraw_lib__973pm6() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Armor, Lord of the Rings, Rohan Soldier
+// 0 !KEYWORDS Armor, BrickLink 973pb1137, Lord of the Rings, Rohan Soldier
+// 0 !KEYWORDS set 9471
 // 
 // 0 !CMDLINE -c72
 // 

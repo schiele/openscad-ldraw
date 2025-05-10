@@ -20,7 +20,8 @@ function ldraw_lib__64567a() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS bar, base, rod, sabre, Star Wars, sword
+// 0 !KEYWORDS bar, base, BrickLink 64567, Rebrickable 64567, rod, sabre, Star Wars
+// 0 !KEYWORDS sword
 // 
 // 0 !HISTORY 1999-05-24 [PTadmin] Official Update 1999-04
 // 0 !HISTORY 1999-07-05 [PTadmin] Official Update 1999-05

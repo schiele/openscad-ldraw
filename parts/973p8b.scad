@@ -13,7 +13,7 @@ function ldraw_lib__973p8b() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS back, Emergency, medic, rescue
+// 0 !KEYWORDS back, Emergency, medic, rescue, Set 1097
 // 
 // 0 !CMDLINE -c15
 // 

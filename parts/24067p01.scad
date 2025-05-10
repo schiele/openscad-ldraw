@@ -17,9 +17,8 @@ function ldraw_lib__24067p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 24067pb01, Bricklink col339, Brickowl 977915, child, CMF
-// 0 !KEYWORDS papoose, Rebrickable 24061pr0001, Series 15, Set 71011, swaddled
-// 0 !KEYWORDS Tribal Woman
+// 0 !KEYWORDS Bricklink col339, child, CMF, papoose, Rebrickable 24067pr0001
+// 0 !KEYWORDS Series 15, Set 71011, swaddled, Tribal Woman
 // 
 // 0 !HISTORY 2016-03-18 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2024-03-31 [Holly-Wood] File preparation for LDraw Parts Tracker

@@ -12,9 +12,10 @@ function ldraw_lib__14769p03() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Beach, boat, Bricklink 14769pb002, Friends, Pool, Set 10747
-// 0 !KEYWORDS Set 41028, Set 41033, Set 41099, Set 41306, Set 41313, Set 41316
-// 0 !KEYWORDS Set 41317, Set 41347, Set 471801, Set 853778, ship
+// 0 !KEYWORDS Beach, boat, Bricklink 14769pb002, Friends, Pool
+// 0 !KEYWORDS Rebrickable 14769pr0009, Set 10747, Set 41028, Set 41033, Set 41099
+// 0 !KEYWORDS Set 41306, Set 41313, Set 41316, Set 41317, Set 41347, Set 471801
+// 0 !KEYWORDS Set 853778, ship
 // 
 // 0 !HISTORY 2014-12-23 [PTadmin] Official Update 2014-02
 // 0 !HISTORY 2020-09-17 [RainbowDolphin] Subfiled for common print pattern with 4150p08, added Bricklink reference and set numbers

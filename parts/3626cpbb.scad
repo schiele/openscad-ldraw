@@ -14,8 +14,8 @@ function ldraw_lib__3626cpbb() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626cpb0705, Brickowl 157393, Iron Man
-// 0 !KEYWORDS Rebrickable 3626cpr0961, Set 76038, set 76049, set 76077, Tony Stark
+// 0 !KEYWORDS BrickLink 3626pb0705, Iron Man, Rebrickable 3626cpr0961, Set 76038
+// 0 !KEYWORDS set 76049, set 76077, Tony Stark
 // 
 // 0 !HISTORY 2013-12-23 [PTadmin] Official Update 2013-02
 // 0 !HISTORY 2024-10-26 [Lego-Manfred] Reference and sets added

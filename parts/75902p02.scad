@@ -13,7 +13,8 @@ function ldraw_lib__75902p02() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS Captain America
+// 0 !KEYWORDS BrickLink 75902pb01, Captain America, Rebrickable 75902pr0001
+// 0 !KEYWORDS Set 30447
 // 
 // 0 !HISTORY 2013-12-23 [PTadmin] Official Update 2013-02
 // 

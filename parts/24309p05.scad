@@ -11,7 +11,8 @@ function ldraw_lib__24309p05() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Discovery, Rebrickable 24309pr0007, Set 10283, Space Shuttle
+// 0 !KEYWORDS BrickLink 24309pb028, Discovery, Rebrickable 24309pr0007, Set 10283
+// 0 !KEYWORDS Space Shuttle
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
 // 

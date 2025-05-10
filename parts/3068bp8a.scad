@@ -11,7 +11,8 @@ function ldraw_lib__3068bp8a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Marge, Set 6059283, Simpson
+// 0 !KEYWORDS BrickLink 3068pb0842, Marge, Rebrickable 3068bpr0014, Set 6059283
+// 0 !KEYWORDS Simpson
 // 
 // 0 !HISTORY 2014-12-23 [PTadmin] Official Update 2014-02
 // 0 !HISTORY 2015-05-23 [PTadmin] Renamed from 3068bpd13

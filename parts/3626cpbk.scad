@@ -13,7 +13,7 @@ function ldraw_lib__3626cpbk() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Batman The Movie, Bricklink 3626bpb1013, Brickowl 712633, Clark Kent
+// 0 !KEYWORDS Batman The Movie, BrickLink 3626pb1013, Clark Kent
 // 0 !KEYWORDS DC Super Heroes Unite, Rebrickable 3626bpr9990
 // 0 !KEYWORDS Set 5002202 (was only included in a DVD box), Superman
 // 

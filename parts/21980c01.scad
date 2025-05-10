@@ -13,7 +13,7 @@ function ldraw_lib__21980c01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS WeDo 2.0
+// 0 !KEYWORDS BrickLink 21980, Rebrickable 21980, WeDo 2.0
 // 
 // 0 !HISTORY 2019-09-09 [PTadmin] Official Update 2019-02
 // 

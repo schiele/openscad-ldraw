@@ -13,9 +13,8 @@ function ldraw_lib__18603c02p0h() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 18605c01pb10, Brickowl 17043, DC comics, Dimensions
-// 0 !KEYWORDS Electronic, Harley Quinn, NFC, Rebrickable 19981pr0010, Set 71229
-// 0 !KEYWORDS Toy Tag
+// 0 !KEYWORDS Bricklink 18605c01pb10, DC comics, Dimensions, Electronic
+// 0 !KEYWORDS Harley Quinn, NFC, Rebrickable 19981pr0010, Set 71229, Toy Tag
 // 
 // 0 !HISTORY 2024-12-30 [OrionP] Official Update 2024-11
 // 

@@ -14,7 +14,7 @@ function ldraw_lib__92756() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Qui-Gon Jinn, Star Wars
+// 0 !KEYWORDS BrickLink 30410, Qui-Gon Jinn, Rebrickable 30410, Star Wars
 // 
 // 0 !HISTORY 2011-10-28 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2011-11-01 [angmarec] File preparation for LDraw Parts Tracker

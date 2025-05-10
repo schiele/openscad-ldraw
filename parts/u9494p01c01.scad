@@ -15,8 +15,8 @@ function ldraw_lib__u9494p01c01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Sheet Fabric
-// 0 !KEYWORDS Black Seas Barracuda, Caribbean Clipper, set 10040, Set 6274
-// 0 !KEYWORDS set 6285
+// 0 !KEYWORDS Black Seas Barracuda, BrickLink sailbb22, Caribbean Clipper
+// 0 !KEYWORDS Rebrickable upn0033pr0001, set 10040, Set 6274, set 6285
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 

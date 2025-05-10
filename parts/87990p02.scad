@@ -13,6 +13,7 @@ function ldraw_lib__87990p02() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
+// 0 !KEYWORDS BrickLink 87990pb02, Rebrickable 87990pr0002, Set 79105
 // 
 // 0 !HISTORY 2013-08-14 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2018-11-19 [Philo] File preparation for LDraw Parts Tracker

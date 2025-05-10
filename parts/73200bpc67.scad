@@ -17,7 +17,7 @@ function ldraw_lib__73200bpc67() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 970c86pb03, Brickowl 347081, CMF, Collectible Minifigures
+// 0 !KEYWORDS Bricklink 970c86pb03, CMF, Collectible Minifigures
 // 0 !KEYWORDS Rebrickable 970c14pr0288, Series 6, set 8827
 // 
 // 0 !CMDLINE -c71

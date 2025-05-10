@@ -11,7 +11,8 @@ function ldraw_lib__85984pc4() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 85984pb290, Set 10278, telephone, Vintage
+// 0 !KEYWORDS Bricklink 85984pb290, Rebrickable 85984pr9997, Set 10278, telephone
+// 0 !KEYWORDS Vintage
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
 // 

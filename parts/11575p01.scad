@@ -13,8 +13,9 @@ function ldraw_lib__11575p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 11575pb01, Dog, Friends, lady, Puppy, Set 41007, Set 41058
-// 0 !KEYWORDS Set 41101, Set 41300, Set 41345, Set 41359, Tina
+// 0 !KEYWORDS Bricklink 11575pb01, Dog, Friends, lady, Puppy
+// 0 !KEYWORDS Rebrickable 11575pr0002, Set 41007, Set 41058, Set 41101, Set 41300
+// 0 !KEYWORDS Set 41345, Set 41359, Tina
 // 
 // 0 !HISTORY 2023-03-05 [OrionP] Official Update 2023-01
 // 

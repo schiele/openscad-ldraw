@@ -14,22 +14,24 @@ use <../p/4-4disc.scad>
 use <../p/4-4ndis.scad>
 use <s/87079s01.scad>
 function ldraw_lib__87079pt6() = [
-// 0 Tile  2 x  4 with Black 'P51AK3' and 'NEW YORK' License Plate Pattern
+// 0 Tile  2 x  4 with Black "P51AK3" and "NEW YORK" License Plate Pattern
 // 0 Name: 87079pt6.dat
 // 0 Author: Ulrich Röder [UR]
-// 0 !LDRAW_ORG Part UPDATE 2022-02
+// 0 !LDRAW_ORG Part UPDATE 2025-04
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 87079pb900, Porsche, Set 10295, Year 2021
+// 0 !KEYWORDS Bricklink 87079pb0900, Porsche, Rebrickable 87079pr0243, Set 10295
+// 0 !KEYWORDS Year 2021
 // 
 // 0 !CMDLINE -c191
 // 
 // 0 !HISTORY 2022-03-06 [PTadmin] Official Update 2022-02
-// 
+// 0 !HISTORY 2025-03-16 [Lego-Manfred] References added
+// 0 !HISTORY 2025-04-27 [OrionP] Official Update 2025-04
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\87079s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__87079s01()],

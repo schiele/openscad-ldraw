@@ -22,8 +22,8 @@ function ldraw_lib__30361aps1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Artoo, Artoo-Detoo, astromech, blue droid, droid, minifig, R2-D2
-// 0 !KEYWORDS Star Wars
+// 0 !KEYWORDS Artoo, Artoo-Detoo, astromech, blue droid, BrickLink 30361px2, droid
+// 0 !KEYWORDS minifig, R2-D2, Rebrickable 30361apr0002, Set 4475, Star Wars
 // 
 // 0 !CMDLINE -c15
 // 

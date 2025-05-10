@@ -14,11 +14,11 @@ function ldraw_lib__76382pa2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Adventurers, ancient, archeology, Bricklink 973pa2c01
-// 0 !KEYWORDS BrickOwl 91359, Cairo, chestplate, crypt, Egypt, egyptian, Giza
-// 0 !KEYWORDS gold, Hotep, King Tut, Mini Upper Part No 283, mummy, necklace, Nile
-// 0 !KEYWORDS pectoral, pyramid, Ramesses IV, Rebrickable 973c03h22pr0002, ruins
-// 0 !KEYWORDS set 1183, set 2996, set 3021, set 5958, set 5978, set 5988
+// 0 !KEYWORDS Adventurers, ancient, archeology, Bricklink 973pa2c01, Cairo
+// 0 !KEYWORDS chestplate, crypt, Egypt, egyptian, Giza, gold, Hotep, King Tut
+// 0 !KEYWORDS Mini Upper Part No 283, mummy, necklace, Nile, pectoral, pyramid
+// 0 !KEYWORDS Ramesses IV, Rebrickable 973c03h22pr0002, ruins, set 1183, set 2996
+// 0 !KEYWORDS set 3021, set 5958, set 5978, set 5988
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

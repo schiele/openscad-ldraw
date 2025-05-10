@@ -12,6 +12,8 @@ function ldraw_lib__3010p41() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
+// 0 !KEYWORDS Rebrickable 3010apr0011, Set 918
+// 
 // 0 !HISTORY 1998-04-11 [PTadmin] Official Update 1998-04
 // 0 !HISTORY 2004-11-05 [hafhead] Redo
 // 0 !HISTORY 2004-11-06 [PTadmin] Official Update 2004-04

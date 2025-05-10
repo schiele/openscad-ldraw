@@ -15,8 +15,8 @@ function ldraw_lib__3626cp8i() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626cpb0857, Brickowl 253511, Rebrickable 3626cpr1147
-// 0 !KEYWORDS Set 40175, Set 60062, set 60103
+// 0 !KEYWORDS BrickLink 3626pb0857, Rebrickable 3626cpr1147, Set 40175, Set 60062
+// 0 !KEYWORDS set 60103
 // 
 // 0 !HISTORY 2016-12-31 [PTadmin] Official Update 2016-01
 // 0 !HISTORY 2024-10-26 [Lego-Manfred] Reference and sets added

@@ -14,8 +14,8 @@ function ldraw_lib__3626cpsi() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626bpb0680, Death Star Trooper, Imperial AT-ST Driver
-// 0 !KEYWORDS Imperial Officer, Star Wars
+// 0 !KEYWORDS BrickLink 3626pb0680, Death Star Trooper, Imperial AT-ST Driver
+// 0 !KEYWORDS Imperial Officer, Rebrickable 3626bpr0924, Set 9492, Star Wars
 // 
 // 0 !CMDLINE -c78
 // 

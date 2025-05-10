@@ -18,6 +18,8 @@ function ldraw_lib__2473a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 2473, Rebrickable 2473
+// 
 // 0 !HISTORY 2023-08-19 {LEGO Instructions App} Original part shape
 // 0 !HISTORY 2023-09-17 [Philo] File preparation for LDraw Parts Tracker
 // 0 !HISTORY 2024-06-30 [OrionP] Official Update 2024-05

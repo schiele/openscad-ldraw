@@ -20,7 +20,7 @@ function ldraw_lib__2207p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Support
-// 0 !KEYWORDS Bricklink 2207pb01, Set 2658
+// 0 !KEYWORDS Bricklink 2207pb01, Rebrickable 2207pr0001, Set 2658
 // 
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04
 // 

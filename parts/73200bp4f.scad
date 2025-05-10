@@ -18,7 +18,8 @@ function ldraw_lib__73200bp4f() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS archer, Armor, belt, Bricklink 970c00pb0013, Castle, knight
-// 0 !KEYWORDS Knights Kingdom, leggings, red studs, set 4817, straps
+// 0 !KEYWORDS Knights Kingdom, leggings, Rebrickable 970c03pr0013, red studs
+// 0 !KEYWORDS set 4817, straps
 // 
 // 0 !CMDLINE -c0
 // 

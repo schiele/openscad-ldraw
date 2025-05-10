@@ -16,7 +16,8 @@ function ldraw_lib__3069bpx8() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Foo, Mario, Nintendo, Set 71386
+// 0 !KEYWORDS BrickLink 3069pb0893, Foo, Mario, Nintendo, Rebrickable 3069bpr0321
+// 0 !KEYWORDS Set 71386
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
 // 

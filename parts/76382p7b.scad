@@ -14,8 +14,8 @@ function ldraw_lib__76382p7b() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Antarctic, Antarctica, Bricklink 973p7bc01, BrickOwl 651654
-// 0 !KEYWORDS explorer, Mini Upper Part No 337, north pole, Polar
+// 0 !KEYWORDS Antarctic, Antarctica, Bricklink 973p7bc01, explorer
+// 0 !KEYWORDS Mini Upper Part No 337, north pole, Polar
 // 0 !KEYWORDS Rebrickable 973c31h03pr0337, scooter, Set 6520, Set 6570, set 6573
 // 0 !KEYWORDS set 6575, Set 6577, set 6579, Set 6626, south pole, town
 // 

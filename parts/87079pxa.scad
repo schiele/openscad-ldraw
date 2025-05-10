@@ -11,7 +11,8 @@ function ldraw_lib__87079pxa() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Alex, Bricklink 87079pb554, face, Minecraft, Set 21149
+// 0 !KEYWORDS Alex, BrickLink 87079pb0554, face, Minecraft
+// 0 !KEYWORDS Rebrickable 87079pr0175, Set 21149
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
 // 

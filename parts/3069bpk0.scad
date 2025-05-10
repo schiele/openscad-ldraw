@@ -11,7 +11,8 @@ function ldraw_lib__3069bpk0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Cars, Disney, Luigi
+// 0 !KEYWORDS BrickLink 3069pb0162, Cars, Disney, Luigi, Rebrickable 3069bpr0117
+// 0 !KEYWORDS Set 8206
 // 
 // 0 !HISTORY 2014-06-21 [PTadmin] Official Update 2014-01
 // 

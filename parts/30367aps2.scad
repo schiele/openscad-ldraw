@@ -16,8 +16,8 @@ function ldraw_lib__30367aps2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Arfive, Arfive-Defour, astromech, droid, head, minifig, R5-D4, Robot
-// 0 !KEYWORDS Star Wars
+// 0 !KEYWORDS Arfive, Arfive-Defour, astromech, droid, head, minifig, R5-D4
+// 0 !KEYWORDS Rebrickable 30367apr0007, Robot, set 7150, Star Wars
 // 
 // 0 !CMDLINE -c15
 // 

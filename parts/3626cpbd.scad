@@ -14,9 +14,8 @@ function ldraw_lib__3626cpbd() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626cpb0906, Brickowl 276167, Colonel James Rhodes
-// 0 !KEYWORDS Iron Man, Iron Patriot, Rebrickable 3626cpr1216, Rhodey, set 30168
-// 0 !KEYWORDS set 76006, War Machine
+// 0 !KEYWORDS BrickLink 3626pb0906, Colonel James Rhodes, Iron Man, Iron Patriot
+// 0 !KEYWORDS Rebrickable 3626cpr1216, Rhodey, set 30168, set 76006, War Machine
 // 
 // 0 !CMDLINE -c70
 // 

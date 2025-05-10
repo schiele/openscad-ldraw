@@ -14,9 +14,9 @@ function ldraw_lib__76382pg6() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb0126c01, BrickOwl 985907, Championship Challenge, fan
-// 0 !KEYWORDS football, Mini Upper Part No 422, Rebrickable 973c22h01pr0126
-// 0 !KEYWORDS Red Team, Set 3408, Set 3409, Spectator, Sports
+// 0 !KEYWORDS Bricklink 973pb0126c01, Championship Challenge, fan, football
+// 0 !KEYWORDS Mini Upper Part No 422, Rebrickable 973c22h01pr0126, Red Team
+// 0 !KEYWORDS Set 3408, Set 3409, Spectator, Sports
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

@@ -21,7 +21,7 @@ function ldraw_lib__2494p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 2494pb06, Set 4719, Set 4756
+// 0 !KEYWORDS Bricklink 2494pb06, Rebrickable 2494pr0002, Set 4719, Set 4756
 // 
 // 0 !CMDLINE -47
 // 

@@ -12,7 +12,7 @@ function ldraw_lib__u9370c04() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Fabuland
+// 0 !KEYWORDS BrickLink x610c02, Fabuland, Rebrickable upn0294c02
 // 
 // 0 !HISTORY 2018-12-08 [PTadmin] Official Update 2018-02
 // 

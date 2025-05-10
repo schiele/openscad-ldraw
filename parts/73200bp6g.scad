@@ -17,9 +17,8 @@ function ldraw_lib__73200bp6g() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Benny's Spaceship, Bricklink 970c00pb0310, Brickowl 822244
-// 0 !KEYWORDS Rebrickable 970c28pr0690, Set 70816, Spaceship, SPACESHIP!
-// 0 !KEYWORDS The LEGO Movie, Wyldstyle
+// 0 !KEYWORDS Benny's Spaceship, Bricklink 970c00pb0310, Rebrickable 970c28pr0690
+// 0 !KEYWORDS Set 70816, Spaceship, SPACESHIP!, The LEGO Movie, Wyldstyle
 // 
 // 0 !HISTORY 2020-12-29 [cwdee] Original shortcut
 // 0 !HISTORY 2023-04-03 [Holly-Wood] Adapted to corrected geometry

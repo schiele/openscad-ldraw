@@ -14,7 +14,8 @@ function ldraw_lib__3004pt4() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Billund, Bricklink 3004pb121, Inside Tour, Set 4000014, Train
+// 0 !KEYWORDS Billund, Bricklink 3004pb121, Inside Tour, Rebrickable 3004pr0012
+// 0 !KEYWORDS Set 4000014, Train
 // 
 // 0 !CMDLINE -c0
 // 

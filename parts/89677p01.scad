@@ -16,7 +16,7 @@ function ldraw_lib__89677p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 89677pb01, Brickowl 1441037, CMF, Collectible Minifigures
+// 0 !KEYWORDS Bricklink 89677pb01, CMF, Collectible Minifigures
 // 0 !KEYWORDS Rebrickable 89677pr0001, set 71033, The Muppets
 // 
 // 0 !HISTORY 2024-12-30 [OrionP] Official Update 2024-11

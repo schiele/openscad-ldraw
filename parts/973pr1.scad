@@ -12,7 +12,7 @@ function ldraw_lib__973pr1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Death Star, emperor, Palpatine, Star Wars
+// 0 !KEYWORDS Death Star, emperor, Palpatine, Set 10188, Star Wars
 // 
 // 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01
 // 

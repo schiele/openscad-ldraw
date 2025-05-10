@@ -11,7 +11,8 @@ function ldraw_lib__10202px0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 10202pb017, Haunted, King Boo, Set 71377, Super Mario
+// 0 !KEYWORDS Bricklink 10202pb017, Haunted, King Boo, Rebrickable 10202pr0008
+// 0 !KEYWORDS Set 71377, Super Mario
 // 
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04
 // 

@@ -13,6 +13,8 @@ function ldraw_lib__586c01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink bb0067
+// 
 // 0 !HISTORY 2012-11-05 [mikeheide] polished header, changed color like suggested.
 // 0 !HISTORY 2013-07-21 [PTadmin] Official Update 2013-01
 // 

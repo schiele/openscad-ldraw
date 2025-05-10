@@ -12,7 +12,8 @@ function ldraw_lib__3011pt3() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Brick
-// 0 !KEYWORDS bricklink 3011pb013, set 081, set 523, Train Station
+// 0 !KEYWORDS bricklink 3011pb013, Rebrickable 3011pr0013, set 081, set 523
+// 0 !KEYWORDS Train Station
 // 
 // 0 !HISTORY 2020-06-28 [PTadmin] Official Update 2020-01
 // 

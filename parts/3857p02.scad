@@ -28,6 +28,8 @@ function ldraw_lib__3857p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 3857pb02, Rebrickable 3857pr0001, Set 6071
+// 
 // 0 !HISTORY 2020-06-28 [PTadmin] Official Update 2020-01
 // 
 // 

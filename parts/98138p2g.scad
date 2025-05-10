@@ -14,9 +14,9 @@ function ldraw_lib__98138p2g() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 98138pb183, Set 11014, Set 11015, Set 11017, Set 11018
-// 0 !KEYWORDS Set 11019, Set 11020, Set 11021, Set 11963, Set 30580, Set 30582
-// 0 !KEYWORDS Set 41446
+// 0 !KEYWORDS Bricklink 98138pb183, Rebrickable 98138pr0082, Set 11014, Set 11015
+// 0 !KEYWORDS Set 11017, Set 11018, Set 11019, Set 11020, Set 11021, Set 11963
+// 0 !KEYWORDS Set 30580, Set 30582, Set 41446
 // 
 // 0 !CMDLINE -c15
 // 

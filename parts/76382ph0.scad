@@ -14,10 +14,9 @@ function ldraw_lib__76382ph0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973px153c01, BrickOwl 235593, Harry Potter
-// 0 !KEYWORDS hermione granger, Hogwarts, Mini Upper Part No 526
-// 0 !KEYWORDS Mini Upper Part No 609, Rebrickable 973c17h01pr0153, Set 4701
-// 0 !KEYWORDS Set 4708, Wizarding World
+// 0 !KEYWORDS Bricklink 973px153c01, Harry Potter, hermione granger, Hogwarts
+// 0 !KEYWORDS Mini Upper Part No 526, Mini Upper Part No 609
+// 0 !KEYWORDS Rebrickable 973c17h01pr0153, Set 4701, Set 4708, Wizarding World
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

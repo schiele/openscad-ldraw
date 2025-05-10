@@ -12,8 +12,8 @@ function ldraw_lib__6251p05() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Belville, Bricklink 6251px2, creature, mousetrap, pet, Scala
-// 0 !KEYWORDS set 3149, set 5823
+// 0 !KEYWORDS Belville, Bricklink 6251px2, creature, mousetrap, pet
+// 0 !KEYWORDS Rebrickable 6251pr0004, Scala, set 3149, set 5823
 // 
 // 0 !HISTORY 2022-12-20 [PTadmin] Official Update 2022-06
 // 

@@ -11,7 +11,8 @@ function ldraw_lib__4162p0o() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS 1916-1923, Frank Lloyd Wright, Japan, Originally Tokyo, Set 21017
+// 0 !KEYWORDS 1916-1923, BrickLink 4162pb096, Frank Lloyd Wright, Japan
+// 0 !KEYWORDS Originally Tokyo, Rebrickable 4162pr0023, Set 21017
 // 
 // 0 !HISTORY 2013-07-21 [PTadmin] Official Update 2013-01
 // 

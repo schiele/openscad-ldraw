@@ -12,7 +12,8 @@ function ldraw_lib__92754p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS pod racer, Sebulba, Set 7962, set 9675, Tatooine
+// 0 !KEYWORDS BrickLink 92754pb01, pod racer, Rebrickable 92754pr0001, Sebulba
+// 0 !KEYWORDS Set 7962, set 9675, Tatooine
 // 
 // 0 !HISTORY 2024-05-28 [OrionP] Official Update 2024-04
 // 

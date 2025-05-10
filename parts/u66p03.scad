@@ -15,9 +15,8 @@ function ldraw_lib__u66p03() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Sheet Plastic
-// 0 !KEYWORDS Bricklink x66px9, Brickowl 147273, Paradisa
-// 0 !KEYWORDS Rebrickable upn0306pr0008, Sail, Set 6401, Set 6410, Set 6411
-// 0 !KEYWORDS Surfboard
+// 0 !KEYWORDS Bricklink x66px9, Paradisa, Rebrickable upn0306pr0008, Sail
+// 0 !KEYWORDS Set 6401, Set 6410, Set 6411, Surfboard
 // 
 // 0 !HISTORY 2023-01-09 [tchang] Replace CLIP` by CLIP on line 149
 // 0 !HISTORY 2024-05-28 [OrionP] Official Update 2024-04

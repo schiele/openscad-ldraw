@@ -15,6 +15,7 @@ function ldraw_lib__u66p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Sheet Plastic
+// 0 !KEYWORDS BrickLink multipls06, Rebrickable upn0306pr0006, Set 1721
 // 
 // 0 !HISTORY 2015-12-30 [PTadmin] Official Update 2015-02
 // 0 !HISTORY 2019-01-25 [cwdee] Set new category

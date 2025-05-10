@@ -14,7 +14,7 @@ function ldraw_lib__3961pb0() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS BrickLink 3961pb08, Guardians of the Galaxy, Laser Drill Ship
-// 0 !KEYWORDS Marvel, Set 76080, Superheros
+// 0 !KEYWORDS Marvel, Rebrickable 3961pr0003, Set 76080, Superheros
 // 
 // 0 !CMDLINE -c191
 // 

@@ -11,7 +11,7 @@ function ldraw_lib__2408p04() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS launcher, Space
+// 0 !KEYWORDS launcher, Rebrickable 2408pr0004, Set 6953, Space
 // 
 // 0 !HISTORY 2001-11-30 [PTadmin] Official Update 2001-02
 // 0 !HISTORY 2003-12-19 [PTadmin] Official Update 2003-03

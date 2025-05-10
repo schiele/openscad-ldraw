@@ -11,7 +11,8 @@ function ldraw_lib__3068bpa3() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS aquaraiders, Bricklink 3068bpb0134, Set 7773, Set 7775
+// 0 !KEYWORDS aquaraiders, BrickLink 3068pb0134, Rebrickable 3068bpr0134, Set 7773
+// 0 !KEYWORDS Set 7775
 // 
 // 0 !HISTORY 2020-06-28 [PTadmin] Official Update 2020-01
 // 

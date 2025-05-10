@@ -35,6 +35,8 @@ function ldraw_lib__22969a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 22969, Rebrickable 56424
+// 
 // 0 !HISTORY 2022-04-14 [MagFors] Original design by Marc Klein
 // 0 !HISTORY 2022-04-14 [MagFors] Reworked to correct an offset of the spokes
 // 0 !HISTORY 2022-05-07 [PTadmin] Official Update 2022-03

@@ -28,7 +28,8 @@ function ldraw_lib__u608() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Car, Engine, Fabuland, Jalopy, Motor, Vehicle
+// 0 !KEYWORDS BrickLink fabaj1, Car, Engine, Fabuland, Jalopy, Motor
+// 0 !KEYWORDS Rebrickable fabupn0038, Vehicle
 // 
 // 0 !HISTORY 2015-10-11 [PTadmin] Official Update 2015-01
 // 

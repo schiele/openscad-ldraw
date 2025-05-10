@@ -12,7 +12,7 @@ function ldraw_lib__973pm9() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Lord of the Rings, Ringwraith
+// 0 !KEYWORDS Lord of the Rings, Ringwraith, set 9472
 // 
 // 0 !CMDLINE -c0
 // 

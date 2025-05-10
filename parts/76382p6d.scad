@@ -14,9 +14,8 @@ function ldraw_lib__76382p6d() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973p6dc01, BrickOwl 660221, Cosmic Laser Launcher, dacta
-// 0 !KEYWORDS Futuron, Rebrickable 973c22h22pr0006, Set 6703, Set 6953, Set 9355
-// 0 !KEYWORDS Space
+// 0 !KEYWORDS Bricklink 973p6dc01, Cosmic Laser Launcher, dacta, Futuron
+// 0 !KEYWORDS Rebrickable 973c22h22pr0006, Set 6703, Set 6953, Set 9355, Space
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

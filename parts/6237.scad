@@ -19,6 +19,8 @@ function ldraw_lib__6237() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
+// 0 !KEYWORDS BrickLink 601, Rebrickable 601
+// 
 // 0 !HISTORY 1998-07-15 [PTadmin] Official Update 1998-07
 // 0 !HISTORY 2007-07-09 [PTadmin] Header formatted for Contributor Agreement
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01

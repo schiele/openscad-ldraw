@@ -11,7 +11,8 @@ function ldraw_lib__3070bp0f() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS BrickLink 3070bpb129, Minecraft Eye, Set 21152
+// 0 !KEYWORDS BrickLink 3070pb129, Minecraft Eye, Rebrickable 3070bpr0190
+// 0 !KEYWORDS Set 21152
 // 
 // 0 !HISTORY 2019-12-27 [PTadmin] Official Update 2019-03
 // 

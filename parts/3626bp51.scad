@@ -16,7 +16,8 @@ function ldraw_lib__3626bp51() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626bpb0097, Set 6817, Set 6905, Space
+// 0 !KEYWORDS BrickLink 3626pb0097, Rebrickable 3626bpr0108, Set 6817, Set 6905
+// 0 !KEYWORDS Space
 // 
 // 0 !HISTORY 2023-03-27 [Cheenzo] Added keyword, missing Lime colour, prims, fixed and simplified some geometry
 // 0 !HISTORY 2023-06-24 [OrionP] Official Update 2023-03

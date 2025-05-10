@@ -14,10 +14,10 @@ function ldraw_lib__76382pr4() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973px145c01, BrickOwl 290145, Destroyer Droid, Droideka
-// 0 !KEYWORDS Episode I, Jedi, Jedi Defense I, Mini Upper Part No 395, Naboo
-// 0 !KEYWORDS Obi-Wan Kenobi, padawan, Rebrickable 973c26h01pr0145, Set 7203
-// 0 !KEYWORDS Star Wars, Tatooine, The Phantom Menace
+// 0 !KEYWORDS Bricklink 973px145c01, Destroyer Droid, Droideka, Episode I, Jedi
+// 0 !KEYWORDS Jedi Defense I, Mini Upper Part No 395, Naboo, Obi-Wan Kenobi
+// 0 !KEYWORDS padawan, Rebrickable 973c26h01pr0145, Set 7203, Star Wars, Tatooine
+// 0 !KEYWORDS The Phantom Menace
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

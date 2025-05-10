@@ -12,8 +12,8 @@ function ldraw_lib__3008p21() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS boat, Bricklink 3008p21, Brickowl 574407, ferry
-// 0 !KEYWORDS Rebrickable 3008pr0019, Set 1656, Viking Line Ferry, windows
+// 0 !KEYWORDS boat, ferry, Rebrickable 3008pr0019, Set 1656, Viking Line Ferry
+// 0 !KEYWORDS windows
 // 
 // 0 !HISTORY 1998-07-15 [PTadmin] Official Update 1998-07
 // 0 !HISTORY 1999-05-17 [PTadmin] Official Update 1999-03

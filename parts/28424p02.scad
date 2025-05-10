@@ -18,9 +18,8 @@ function ldraw_lib__28424p02() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Barbara Gordon, Bricklink 28430pb01, Brickowl 977311, CMF
-// 0 !KEYWORDS Collectible Minifigures, Rebrickable 28424pr0002, series 1
-// 0 !KEYWORDS set 71017, The Lego Batman Movie
+// 0 !KEYWORDS Barbara Gordon, Bricklink 28430pb01, CMF, Collectible Minifigures
+// 0 !KEYWORDS Rebrickable 28424pr0002, series 1, set 71017, The Lego Batman Movie
 // 
 // 0 !HISTORY 2023-10-02 [Holly-Wood] Fixed hairline, rearranged subfiles
 // 0 !HISTORY 2024-05-28 [OrionP] Official Update 2024-04

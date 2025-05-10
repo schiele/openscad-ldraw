@@ -13,6 +13,8 @@ function ldraw_lib__973p7s() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 973px432, Set 3658
+// 
 // 0 !CMDLINE -c15
 // 
 // 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02

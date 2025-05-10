@@ -11,7 +11,8 @@ function ldraw_lib__3070bp09() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Batman, Harry Potter, SpongeBob
+// 0 !KEYWORDS Batman, BrickLink 3070pb007, Harry Potter, Rebrickable 3070bpr0003
+// 0 !KEYWORDS Set 3825, SpongeBob
 // 
 // 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02
 // 

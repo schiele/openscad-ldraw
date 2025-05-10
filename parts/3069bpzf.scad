@@ -11,7 +11,8 @@ function ldraw_lib__3069bpzf() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Armor, Batman, Brickheadz, BrickLink 3069bpb667, Set 41610
+// 0 !KEYWORDS Armor, Batman, Brickheadz, BrickLink 3069pb0667
+// 0 !KEYWORDS Rebrickable 3069bpr0234, Set 41610
 // 
 // 0 !HISTORY 2019-12-27 [PTadmin] Official Update 2019-03
 // 

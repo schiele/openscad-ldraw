@@ -11,7 +11,8 @@ function ldraw_lib__10202p00() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Manchester United, Old Trafford, Set 10272
+// 0 !KEYWORDS BrickLink 10202pb015, Manchester United, Old Trafford
+// 0 !KEYWORDS Rebrickable 10202pr0006, Set 10272
 // 
 // 0 !HISTORY 2020-06-28 [PTadmin] Official Update 2020-01
 // 

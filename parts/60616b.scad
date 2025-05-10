@@ -22,7 +22,7 @@ function ldraw_lib__60616b() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS glass
+// 0 !KEYWORDS BrickLink 60616, glass
 // 
 // 0 !HISTORY 2008-12-20 {LEGO Universe Team} Original part shape
 // 0 !HISTORY 2009-04-10 [arezey] File preparation for LDraw Parts Tracker

@@ -11,7 +11,8 @@ function ldraw_lib__3004pz9() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickheadz, BrickLink 3004pb160, Flash, Set 41598
+// 0 !KEYWORDS Brickheadz, BrickLink 3004pb160, Flash, Rebrickable 3004pr0004
+// 0 !KEYWORDS Set 41598
 // 
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
 // 

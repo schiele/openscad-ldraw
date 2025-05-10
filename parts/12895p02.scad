@@ -18,8 +18,8 @@ function ldraw_lib__12895p02() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Bricklink 12895pb02, Brickowl 165749, Naboo Security Guard
-// 0 !KEYWORDS Rebrickable 12895pr0001, Set 75058, Set 75091
+// 0 !KEYWORDS Bricklink 12895pb02, Naboo Security Guard, Rebrickable 12895pr0001
+// 0 !KEYWORDS Set 75058, Set 75091
 // 
 // 0 !HISTORY 2023-01-29 [MagFors] Further subfiling, added missing condlines
 // 0 !HISTORY 2023-10-31 [OrionP] Official Update 2023-05

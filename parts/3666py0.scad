@@ -12,7 +12,8 @@ function ldraw_lib__3666py0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Pagani, Set 76915, Speed Champions, Utopia
+// 0 !KEYWORDS BrickLink 3666pb01, Pagani, Rebrickable 3666pr0001, Set 76915
+// 0 !KEYWORDS Speed Champions, Utopia
 // 
 // 0 !HISTORY 2023-04-17 [OrionP] Official Update 2023-02
 // 

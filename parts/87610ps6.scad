@@ -19,7 +19,8 @@ function ldraw_lib__87610ps6() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Boba Fett White, Book, Bricklink 87610pb07, Set 5004853
+// 0 !KEYWORDS Boba Fett White, Book, Bricklink 87610pb07, Rebrickable 87610pr2015
+// 0 !KEYWORDS Set 5004853
 // 
 // 0 !CMDLINE -c15
 // 

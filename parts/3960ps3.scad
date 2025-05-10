@@ -11,7 +11,8 @@ function ldraw_lib__3960ps3() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS infiltrator, Star Wars
+// 0 !KEYWORDS BrickLink 3960pb008, infiltrator, Rebrickable 3960pr9976, Set 4493
+// 0 !KEYWORDS Star Wars
 // 
 // 0 !HISTORY 2011-07-25 [PTadmin] Official Update 2011-01
 // 

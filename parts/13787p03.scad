@@ -14,6 +14,7 @@ function ldraw_lib__13787p03() = [
 // 
 // 0 !CATEGORY Minifig Headwear
 // 0 !KEYWORDS BAM, Bricklink 13787pb03, Christmas, Holiday
+// 0 !KEYWORDS Rebrickable 13787pr0001, Set BAM2020-4
 // 
 // 0 !HISTORY 2022-10-14 [Cheenzo] Based on 13787p01 by Philo
 // 0 !HISTORY 2022-12-20 [PTadmin] Official Update 2022-06

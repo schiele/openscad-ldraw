@@ -15,12 +15,11 @@ function ldraw_lib__3626bp39() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626bp39, Brickowl 208993, buccaneer, cavalry, chin
-// 0 !KEYWORDS corsair, dimple, face, fort, freebooter, legoredo, lieutenant
-// 0 !KEYWORDS moustache, Pirates, Rebrickable 3626bpr0017, set 1747, set 1802
-// 0 !KEYWORDS set 6204, set 6248, set 6281, set 6289, set 6290, set 6296, set 6706
-// 0 !KEYWORDS set 6716, set 6761, set 6762, set 6769, smile, smiley, western
-// 0 !KEYWORDS wild west
+// 0 !KEYWORDS BrickLink 3626p39, buccaneer, cavalry, chin, corsair, dimple, face
+// 0 !KEYWORDS fort, freebooter, legoredo, lieutenant, moustache, Pirates
+// 0 !KEYWORDS Rebrickable 3626bpr0017, set 1747, set 1802, set 6204, set 6248
+// 0 !KEYWORDS set 6281, set 6289, set 6290, set 6296, set 6706, set 6716, set 6761
+// 0 !KEYWORDS set 6762, set 6769, smile, smiley, western, wild west
 // 
 // 0 !CMDLINE -c14
 // 

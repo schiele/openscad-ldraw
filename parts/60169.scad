@@ -13,7 +13,7 @@ function ldraw_lib__60169() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS 21 links
+// 0 !KEYWORDS 21 links, BrickLink 30104
 // 
 // 0 !HISTORY 2018-12-08 [PTadmin] Official Update 2018-02
 // 

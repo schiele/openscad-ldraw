@@ -12,7 +12,8 @@ function ldraw_lib__3297p12() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3297px23, City, Construction, Set 4667, town
+// 0 !KEYWORDS Bricklink 3297px23, City, Construction, Rebrickable 3297pr0026
+// 0 !KEYWORDS Set 4667, town
 // 
 // 0 !HISTORY 2023-04-17 [OrionP] Official Update 2023-02
 // 

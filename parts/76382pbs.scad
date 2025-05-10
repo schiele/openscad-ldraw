@@ -14,8 +14,8 @@ function ldraw_lib__76382pbs() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb2435c01, BrickOwl 21963, Marvel
-// 0 !KEYWORDS Rebrickable 973c22h22pr3448, Set 76057, Spider-Man, Super Heroes
+// 0 !KEYWORDS Bricklink 973pb2435c01, Marvel, Rebrickable 973c22h22pr3448
+// 0 !KEYWORDS Set 76057, Spider-Man, Super Heroes
 // 
 // 0 !HISTORY 2024-12-30 [OrionP] Official Update 2024-11
 // 

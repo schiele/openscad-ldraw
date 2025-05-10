@@ -21,6 +21,7 @@ function ldraw_lib__86035() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
+// 0 !KEYWORDS BrickLink 4485b
 // 
 // 0 !HISTORY 2014-06-21 [PTadmin] Official Update 2014-01
 // 0 !HISTORY 2014-06-22 [cwdee] Add missing CATEGORY

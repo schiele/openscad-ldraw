@@ -14,9 +14,8 @@ function ldraw_lib__76382pdb7() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb3515c01, BrickOwl 411637, Chip, Chipmunk, CMF
-// 0 !KEYWORDS Disney Series 2, Mini Upper Part No 4491
-// 0 !KEYWORDS Rebrickable 973c19h19pr4491
+// 0 !KEYWORDS Bricklink 973pb3515c01, Chip, Chipmunk, CMF, Disney Series 2
+// 0 !KEYWORDS Mini Upper Part No 4491, Rebrickable 973c19h19pr4491
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

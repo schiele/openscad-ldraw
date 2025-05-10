@@ -12,8 +12,8 @@ function ldraw_lib__2654bp04() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Apollo, Bricklink 2654pb010, Brickowl 67117, NASA
-// 0 !KEYWORDS Rebrickable 2654pr0013, Saturn, Set 21309, Set 92176
+// 0 !KEYWORDS Apollo, Bricklink 2654pb010, NASA, Rebrickable 2654pr0013, Saturn
+// 0 !KEYWORDS Set 21309, Set 92176
 // 
 // 0 !PREVIEW 16 0 0 0 1 0 0 0 -1 0 0 0 -1
 // 

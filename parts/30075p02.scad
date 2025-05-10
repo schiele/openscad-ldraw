@@ -12,7 +12,7 @@ function ldraw_lib__30075p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS basic, Bricklink 30075pb02, Brickowl 835379, Freestyle, Fruit
+// 0 !KEYWORDS basic, Bricklink 30075pb02, Freestyle, Fruit
 // 0 !KEYWORDS Rebrickable 30075pr0002, Set 4169, Set 4217, Strawberry
 // 
 // 0 !HISTORY 2024-10-27 [OrionP] Official Update 2024-09

@@ -11,7 +11,8 @@ function ldraw_lib__3069bpx3() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS BrickLink 3069bpb691, Chicken, Eyes, Minecraft, Set 21149
+// 0 !KEYWORDS BrickLink 3069pb0691, Chicken, Eyes, Minecraft
+// 0 !KEYWORDS Rebrickable 3069bpr0250, Set 21149
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
 // 

@@ -14,8 +14,8 @@ function ldraw_lib__76382px5() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb2149c01, BrickOwl 725765, Chell, Portal
-// 0 !KEYWORDS Rebrickable 973c02h02pr3143, Set 71203
+// 0 !KEYWORDS Bricklink 973pb2149c01, Chell, Portal, Rebrickable 973c02h02pr3143
+// 0 !KEYWORDS Set 71203
 // 
 // 0 !HISTORY 2024-12-30 [OrionP] Official Update 2024-11
 // 

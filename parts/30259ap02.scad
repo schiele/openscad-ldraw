@@ -13,7 +13,8 @@ function ldraw_lib__30259ap02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 892pb003, Set 6427, set 6434, Set 6464, Set 9301
+// 0 !KEYWORDS Bricklink 892pb003, Rebrickable 30259pr0002, Set 6427, set 6434
+// 0 !KEYWORDS Set 6464, Set 9301
 // 
 // 0 !HISTORY 2024-06-27 [Philo] Based on Chris Dee's design
 // 0 !HISTORY 2024-06-30 [OrionP] Official Update 2024-05

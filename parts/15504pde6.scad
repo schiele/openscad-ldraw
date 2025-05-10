@@ -14,8 +14,8 @@ function ldraw_lib__15504pde6() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Hipwear
-// 0 !KEYWORDS Bricklink 15504pb08, Brickowl 842434, CMF, Looney Tunes
-// 0 !KEYWORDS Rebrickable 15504pr0004, Set 71030, Sylvester The Cat
+// 0 !KEYWORDS Bricklink 15504pb08, CMF, Looney Tunes, Rebrickable 15504pr0004
+// 0 !KEYWORDS Set 71030, Sylvester The Cat
 // 
 // 0 !HISTORY 2024-05-28 [OrionP] Official Update 2024-04
 // 

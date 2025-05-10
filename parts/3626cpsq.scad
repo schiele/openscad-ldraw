@@ -15,7 +15,8 @@ function ldraw_lib__3626cpsq() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS BrickLink 3626cpb0781, Padme, Queen Amidala, set 9499, Star Wars
+// 0 !KEYWORDS BrickLink 3626pb0781, Padme, Queen Amidala, Rebrickable 3626cpr1005
+// 0 !KEYWORDS set 9499, Star Wars
 // 
 // 0 !CMDLINE -c15
 // 

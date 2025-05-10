@@ -17,7 +17,8 @@ function ldraw_lib__93221p01() = [
 // 
 // 0 !CATEGORY Minifig Accessory
 // 0 !KEYWORDS BrickLink 93221pb01, CMF Series 2, CMF series 3
-// 0 !KEYWORDS Collectible Minifigures, The Lego Batman Movie
+// 0 !KEYWORDS Collectible Minifigures, Rebrickable 93221pr0001
+// 0 !KEYWORDS The Lego Batman Movie
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
 // 

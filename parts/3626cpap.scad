@@ -14,8 +14,8 @@ function ldraw_lib__3626cpap() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626cpb0864, Brickowl 646197, Chima
-// 0 !KEYWORDS Rebrickable 3626cpr1134, set 70011, Set 70145, Set 70220, Worriz
+// 0 !KEYWORDS BrickLink 3626pb0864, Chima, Rebrickable 3626cpr1134, set 70011
+// 0 !KEYWORDS Set 70145, Set 70220, Worriz
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
 // 0 !HISTORY 2024-10-26 [Lego-Manfred] Reference and sets added

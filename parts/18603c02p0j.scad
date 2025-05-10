@@ -13,8 +13,8 @@ function ldraw_lib__18603c02p0j() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 18605c02pb19, Brickowl 112055, Dimensions, Electronic
-// 0 !KEYWORDS Newt Scamander, NFC, Rebrickable 19981pr0067, Set 71253, Toy Tag
+// 0 !KEYWORDS Bricklink 18605c02pb19, Dimensions, Electronic, Newt Scamander, NFC
+// 0 !KEYWORDS Rebrickable 19981pr0067, Set 71253, Toy Tag
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

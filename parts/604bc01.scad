@@ -12,6 +12,8 @@ function ldraw_lib__604bc01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
+// 0 !KEYWORDS BrickLink 604c01, Rebrickable 604c01
+// 
 // 0 !HISTORY 2002-03-22 [sbliss] Fixed bad vertex on rear lugs
 // 0 !HISTORY 2003-03-12 [PTadmin] Official Update 2003-01
 // 0 !HISTORY 2007-07-09 [PTadmin] Header formatted for Contributor Agreement

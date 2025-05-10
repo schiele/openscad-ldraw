@@ -15,7 +15,7 @@ function ldraw_lib__41944p01() = [
 // 
 // 0 !CATEGORY Figure Accessory
 // 0 !KEYWORDS BrickLink 41944pb02, CMF Disney Series 2, Minnie Mouse
-// 0 !KEYWORDS Vintage Minnie
+// 0 !KEYWORDS Rebrickable 41944pr0005, Vintage Minnie
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 

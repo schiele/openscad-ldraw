@@ -12,7 +12,8 @@ function ldraw_lib__47326p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Krekka, LegoBrutaka, set 8623, set 8734, set 8926, titans
+// 0 !KEYWORDS BrickLink x1192px2, Krekka, LegoBrutaka, Rebrickable 47326pat0002
+// 0 !KEYWORDS set 8623, set 8734, set 8926, titans
 // 
 // 0 !HISTORY 2011-07-31 [mikeheide] Changed to rubber color code
 // 0 !HISTORY 2019-01-01 [MagFors] Rearranged subfile structure

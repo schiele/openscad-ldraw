@@ -12,7 +12,7 @@ function ldraw_lib__973pbk() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Batman The Movie, Clark Kent, DC Super Heroes Unite
+// 0 !KEYWORDS Batman The Movie, Clark Kent, DC Super Heroes Unite, Set 5002202
 // 
 // 0 !CMDLINE -c272
 // 

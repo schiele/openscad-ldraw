@@ -25,7 +25,7 @@ function ldraw_lib__55297() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS tools, town
+// 0 !KEYWORDS BrickLink 6246c, tools, town
 // 
 // 0 !HISTORY 1998-10-15 [PTadmin] Official Update 1998-09
 // 0 !HISTORY 1999-07-05 [PTadmin] Official Update 1999-05

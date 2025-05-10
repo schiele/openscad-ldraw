@@ -16,7 +16,7 @@ function ldraw_lib__98100ps3() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 98100pb08, set 75193
+// 0 !KEYWORDS Bricklink 98100pb08, Rebrickable 98100pr0005, set 75193
 // 
 // 0 !HISTORY 2023-10-31 [OrionP] Official Update 2023-05
 // 

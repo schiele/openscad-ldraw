@@ -4,7 +4,7 @@ function ldraw_lib__993() = [
 // 0 ~Electric Cable 3LDU Twin
 // 0 Name: 993.dat
 // 0 Author: Michael Heidemann [mikeheide]
-// 0 !LDRAW_ORG Subpart UPDATE 2013-02
+// 0 !LDRAW_ORG Part UPDATE 2013-02
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW

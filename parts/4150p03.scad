@@ -14,7 +14,8 @@ function ldraw_lib__4150p03() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !KEYWORDS BrickLink 4150px1, Set 10220, Timekeeper, Timepiece, Watch
+// 0 !KEYWORDS BrickLink 4150px1, Rebrickable 4150pr0001, Set 10220, Timekeeper
+// 0 !KEYWORDS Timepiece, Watch
 // 
 // 0 !HISTORY 2009-12-29 [PTadmin] Official Update 2009-03
 // 0 !HISTORY 2020-07-16 [MagFors] used pattern subfile

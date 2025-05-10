@@ -24,7 +24,7 @@ function ldraw_lib__973pa6() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS Adventurers, belt clip, buckle, compass, Egypt, female, Gail Storm
-// 0 !KEYWORDS pen, Pippen Read, pockets, scarf
+// 0 !KEYWORDS pen, Pippen Read, pockets, scarf, Set 1354
 // 
 // 0 !CMDLINE -c19
 // 

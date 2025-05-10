@@ -11,7 +11,8 @@ function ldraw_lib__2431pt8() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Art, Bricklink 2431pb819, Japan, Set 31208, Ukiyo-e
+// 0 !KEYWORDS Art, Bricklink 2431pb819, Japan, Rebrickable 2431pr0193, Set 31208
+// 0 !KEYWORDS Ukiyo-e
 // 
 // 0 !HISTORY 2024-06-30 [OrionP] Official Update 2024-05
 // 

@@ -13,7 +13,8 @@ function ldraw_lib__30102p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Castle, revolving door, secret door, Wall
+// 0 !KEYWORDS BrickLink 30102px1, Castle, Rebrickable 30102pr0001, revolving door
+// 0 !KEYWORDS secret door, Set 3052, Wall
 // 
 // 0 !CMDLINE -C6
 // 

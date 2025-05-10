@@ -14,8 +14,8 @@ function ldraw_lib__76382pxw() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS bodysuit, Bricklink 973pb2838c01, BrickOwl 526552, Raven
-// 0 !KEYWORDS Rebrickable 973c03h27pr3555, Set 71255
+// 0 !KEYWORDS bodysuit, Bricklink 973pb2838c01, Raven, Rebrickable 973c03h27pr3555
+// 0 !KEYWORDS Set 71255
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

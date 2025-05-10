@@ -19,6 +19,8 @@ function ldraw_lib__3324d() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 3324, Rebrickable 3324
+// 
 // 0 !HISTORY 1999-02-01 [PTadmin] Official Update 1999-01
 // 0 !HISTORY 1999-05-17 [PTadmin] Official Update 1999-03
 // 0 !HISTORY 2007-06-25 [PTadmin] Header formatted for Contributor Agreement

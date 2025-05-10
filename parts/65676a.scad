@@ -12,6 +12,8 @@ function ldraw_lib__65676a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 65676, Rebrickable 65676
+// 
 // 0 !HISTORY 2024-06-27 [Philo] Based on Vincent Messenet design
 // 0 !HISTORY 2024-06-30 [OrionP] Official Update 2024-05
 // 

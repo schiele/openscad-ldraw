@@ -11,8 +11,9 @@ function ldraw_lib__4162p0g() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Architect, Architecture, Augustus Pugin, Big Ben, Charles Barry
-// 0 !KEYWORDS Clock Tower, Great Britain, London, Set 21013
+// 0 !KEYWORDS Architect, Architecture, Augustus Pugin, Big Ben
+// 0 !KEYWORDS BrickLink 4162pb080, Charles Barry, Clock Tower, Great Britain
+// 0 !KEYWORDS London, Rebrickable 4162pr0017, Set 21013
 // 
 // 0 !HISTORY 2012-08-09 [PTadmin] Official Update 2012-02
 // 

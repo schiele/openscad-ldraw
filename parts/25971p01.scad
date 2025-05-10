@@ -16,7 +16,8 @@ function ldraw_lib__25971p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Series 16, Suit, Winter Hut
+// 0 !KEYWORDS BrickLink 25971pb01, Rebrickable 25971pr0002, Series 16, Set 5005251
+// 0 !KEYWORDS Suit, Winter Hut
 // 
 // 0 !HISTORY 2016-10-05 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2019-05-19 [Philo] File preparation for LDraw Parts Tracker

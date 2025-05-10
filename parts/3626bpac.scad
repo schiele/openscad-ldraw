@@ -18,9 +18,9 @@ function ldraw_lib__3626bpac() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Achu, Adventurers, amazon, Bricklink 3626bpac, Brickowl 202568
-// 0 !KEYWORDS eyebrows, face, highlight, highlights, Jungle, priest, pupil, pupils
-// 0 !KEYWORDS Racers, Rebrickable 3626bpr0058, ruler, set 4594, set 5976, set 5986
+// 0 !KEYWORDS Achu, Adventurers, amazon, BrickLink 3626pac, eyebrows, face
+// 0 !KEYWORDS highlight, highlights, Jungle, priest, pupil, pupils, Racers
+// 0 !KEYWORDS Rebrickable 3626bpr0058, ruler, set 4594, set 5976, set 5986
 // 
 // 0 !CMDLINE -c14
 // 

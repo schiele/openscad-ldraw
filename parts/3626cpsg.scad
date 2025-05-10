@@ -14,7 +14,8 @@ function ldraw_lib__3626cpsg() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626cpb0804, Rebel Scout Trooper, Star Wars
+// 0 !KEYWORDS BrickLink 3626pb0804, Rebel Scout Trooper, Rebrickable 3626cpr0932
+// 0 !KEYWORDS Set 75011, Star Wars
 // 
 // 0 !CMDLINE -c78
 // 

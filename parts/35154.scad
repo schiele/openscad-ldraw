@@ -14,6 +14,8 @@ function ldraw_lib__35154() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 3961
+// 
 // 0 !HISTORY 2024-05-22 {LEGO Instructions App} Original part shape
 // 0 !HISTORY 2024-05-25 [Philo] File preparation for LDraw Parts Tracker
 // 0 !HISTORY 2024-08-26 [OrionP] Official Update 2024-07

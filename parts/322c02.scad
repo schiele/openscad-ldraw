@@ -12,7 +12,7 @@ function ldraw_lib__322c02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !KEYWORDS Vintage
+// 0 !KEYWORDS BrickLink x456c01, Rebrickable upn0253c01, Vintage
 // 
 // 0 !HISTORY 2009-12-29 [PTadmin] Official Update 2009-03
 // 0 !HISTORY 2013-03-16 [MagFors] Changed colour 383 to 494 (real metal)

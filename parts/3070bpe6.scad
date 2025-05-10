@@ -11,7 +11,8 @@ function ldraw_lib__3070bpe6() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS BrickLink 3070bpb121, Nexo Knights
+// 0 !KEYWORDS BrickLink 3070pb121, Nexo Knights, Rebrickable 3070bpr0181
+// 0 !KEYWORDS set 70357
 // 
 // 0 !HISTORY 2019-09-09 [PTadmin] Official Update 2019-02
 // 

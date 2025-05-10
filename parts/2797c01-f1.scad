@@ -13,6 +13,8 @@ function ldraw_lib__2797c01_f1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 2797c02, Rebrickable 2797c02
+// 
 // 0 !HISTORY 2010-04-05 [PTadmin] Official Update 2010-01
 // 0 !HISTORY 2013-03-02 [MagFors] Changed colour 383 to 494 (real metal)
 // 0 !HISTORY 2013-07-21 [PTadmin] Official Update 2013-01

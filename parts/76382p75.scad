@@ -14,8 +14,8 @@ function ldraw_lib__76382p75() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973px9c01, BrickOwl 843096, city center, dacta, Emergency
-// 0 !KEYWORDS football, Mini Upper Part No 285, Patrolman Bill, Police Woman Paula
+// 0 !KEYWORDS Bricklink 973px9c01, city center, dacta, Emergency, football
+// 0 !KEYWORDS Mini Upper Part No 285, Patrolman Bill, Police Woman Paula
 // 0 !KEYWORDS Rebrickable 973c03h03pr0143, Red Stripe, rescue, Set 1351, Set 1376
 // 0 !KEYWORDS Set 2150, Set 3314, Set 3350, Set 6324, Set 6326, Set 6328, set 6332
 // 0 !KEYWORDS Set 6344, set 6348, set 6398, Set 6433, Set 6464, Set 6471, Set 6545

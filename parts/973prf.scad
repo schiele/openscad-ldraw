@@ -12,7 +12,7 @@ function ldraw_lib__973prf() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Luke Skywalker, Star Wars
+// 0 !KEYWORDS Luke Skywalker, set 4502, Star Wars
 // 
 // 0 !HISTORY 2012-12-28 [PTadmin] Official Update 2012-03
 // 

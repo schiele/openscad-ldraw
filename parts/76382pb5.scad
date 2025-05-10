@@ -14,10 +14,9 @@ function ldraw_lib__76382pb5() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Arkham Asylum, Batman 2006, Bricklink 973pb0301c01, BrickOwl 339517
-// 0 !KEYWORDS DC comics, Gotham City, Mini Upper Part No 1286
-// 0 !KEYWORDS Pamela Lillian Isley, Poison Ivy, Rebrickable 973c02h02pr0301
-// 0 !KEYWORDS rogues gallery, set 7785
+// 0 !KEYWORDS Arkham Asylum, Batman 2006, Bricklink 973pb0301c01, DC comics
+// 0 !KEYWORDS Gotham City, Mini Upper Part No 1286, Pamela Lillian Isley
+// 0 !KEYWORDS Poison Ivy, Rebrickable 973c02h02pr0301, rogues gallery, set 7785
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

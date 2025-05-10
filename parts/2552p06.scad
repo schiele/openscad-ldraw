@@ -35,8 +35,8 @@ function ldraw_lib__2552p06() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Black Knights, Bricklink 2552px6, Castle, Crusaders, Set 6081
-// 0 !KEYWORDS Set 6086
+// 0 !KEYWORDS Black Knights, Bricklink 2552px6, Castle, Crusaders
+// 0 !KEYWORDS Rebrickable 2552pr0004, Set 6081, Set 6086
 // 
 // 0 !HISTORY 2014-06-21 [PTadmin] Official Update 2014-01
 // 0 !HISTORY 2022-03-07 [RainbowDolphin] Added missing studs and keywords

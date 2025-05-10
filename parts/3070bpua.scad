@@ -12,7 +12,7 @@ function ldraw_lib__3070bpua() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !KEYWORDS AE
+// 0 !KEYWORDS AE, BrickLink 3070pb037, Rebrickable 3070bpr0130, Set 4677
 // 
 // 0 !HISTORY 2009-05-02 [PTadmin] Official Update 2009-01
 // 0 !HISTORY 2013-03-09 [MagFors] Changed colour 383 to 80 (printed silver)

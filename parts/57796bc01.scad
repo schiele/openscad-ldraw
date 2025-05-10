@@ -13,6 +13,8 @@ function ldraw_lib__57796bc01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 57029c01, Rebrickable 57796
+// 
 // 0 !HISTORY 2024-09-30 [OrionP] Official Update 2024-08
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 57029bc01.dat

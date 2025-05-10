@@ -15,10 +15,10 @@ function ldraw_lib__76382pa5() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS Adventurers, amazon, aviator, Billy Speed, Bricklink 973pa5c01
-// 0 !KEYWORDS BrickOwl 643407, desert, Egypt, flight crew, Harry Cane, Jungle
-// 0 !KEYWORDS leather, Military, Mini Upper Part No 281, pilot
-// 0 !KEYWORDS Rebrickable 973c16h01pr0005, Set 2542, set 2879, Set 3022, Set 3039
-// 0 !KEYWORDS set 5909, Set 5925, set 5948, Set 5956, set 5988, T-shirt
+// 0 !KEYWORDS desert, Egypt, flight crew, Harry Cane, Jungle, leather, Military
+// 0 !KEYWORDS Mini Upper Part No 281, pilot, Rebrickable 973c16h01pr0005, Set 2542
+// 0 !KEYWORDS set 2879, Set 3022, Set 3039, set 5909, Set 5925, set 5948, Set 5956
+// 0 !KEYWORDS set 5988, T-shirt
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

@@ -13,6 +13,8 @@ function ldraw_lib__3068bp17() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 3068p17, Rebrickable 3068bpr0049, set 10001
+// 
 // 0 !HISTORY 2002-02-15 [BrickCaster] groove, L3P compliant
 // 0 !HISTORY 2002-04-01 [fwcain] removed "4-4edge" reference...
 // 0 !HISTORY 2002-08-18 [PTadmin] Official Update 2002-04

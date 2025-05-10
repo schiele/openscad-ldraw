@@ -13,8 +13,8 @@ function ldraw_lib__14769pz0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickheadz, Bricklink 14769pb583, Brickowl 1080359, Eye
-// 0 !KEYWORDS Rebrickable 14769pr1251, set 40619, Wall-E
+// 0 !KEYWORDS Brickheadz, Bricklink 14769pb583, Eye, Rebrickable 14769pr1251
+// 0 !KEYWORDS set 40619, Wall-E
 // 
 // 0 !HISTORY 2023-06-24 [OrionP] Official Update 2023-03
 // 

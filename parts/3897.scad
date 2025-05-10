@@ -11,6 +11,8 @@ function ldraw_lib__3897() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
+// 0 !KEYWORDS BrickLink 676
+// 
 // 0 !HISTORY 2003-08-01 [Steffen] BFCed, made use of primitives and subfiles
 // 0 !HISTORY 2004-10-16 [cwdee] Add lines at top of post removed from 674s00
 // 0 !HISTORY 2006-12-28 [mikeheide] Changed title

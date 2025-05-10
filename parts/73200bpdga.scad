@@ -17,7 +17,8 @@ function ldraw_lib__73200bpdga() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 970c00pb1267, CMF, set 71033, Statler, The Muppets
+// 0 !KEYWORDS Bricklink 970c00pb1267, CMF, Rebrickable 970c05pr2145, set 71033
+// 0 !KEYWORDS Statler, The Muppets
 // 
 // 0 !HISTORY 2024-10-27 [OrionP] Official Update 2024-09
 // 

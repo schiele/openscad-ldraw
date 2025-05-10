@@ -13,6 +13,8 @@ function ldraw_lib__822dc01p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 822bc01, Rebrickable 822bc01, Set 065
+// 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 
 // 

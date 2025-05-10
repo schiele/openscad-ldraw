@@ -14,8 +14,8 @@ function ldraw_lib__76382p4i() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Basil the Batlord, Bat Lord, Bricklink 973px125c01, BrickOwl 319375
-// 0 !KEYWORDS Castle, Count Batlord, Fright Knights, Mini Upper Part No 233
+// 0 !KEYWORDS Basil the Batlord, Bat Lord, Bricklink 973px125c01, Castle
+// 0 !KEYWORDS Count Batlord, Fright Knights, Mini Upper Part No 233
 // 0 !KEYWORDS Rebrickable 973c03h01pr0125, Set 2539, Set 2540, Set 2848, Set 6007
 // 0 !KEYWORDS Set 6031, Set 6047, Set 6097, Set 6099, Set 9376, Spooky, vampire
 // 

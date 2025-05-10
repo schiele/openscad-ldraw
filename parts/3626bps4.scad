@@ -15,7 +15,7 @@ function ldraw_lib__3626bps4() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Ben Kenobi, Bricklink 3626bps4, Classic Trilogy, determined, face
+// 0 !KEYWORDS Ben Kenobi, BrickLink 3626ps4, Classic Trilogy, determined, face
 // 0 !KEYWORDS jedi knight, moustache, Old Obi-Wan Kenobi, Rebrickable 3626bpr0276
 // 0 !KEYWORDS serious, set 4501, set 7110, Star Wars
 // 

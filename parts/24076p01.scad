@@ -16,7 +16,8 @@ function ldraw_lib__24076p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Series 15, Suit
+// 0 !KEYWORDS BrickLink 24076pb01, Rebrickable 24076pr0001, Series 15
+// 0 !KEYWORDS Set DATABASE-2022, Suit
 // 
 // 0 !HISTORY 2016-03-18 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2019-05-20 [Philo] File preparation for LDraw Parts Tracker

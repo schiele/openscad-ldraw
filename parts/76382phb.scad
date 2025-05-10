@@ -14,7 +14,7 @@ function ldraw_lib__76382phb() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973px148c01, BrickOwl 790990, Harry Potter, Hogwarts
+// 0 !KEYWORDS Bricklink 973px148c01, Harry Potter, Hogwarts
 // 0 !KEYWORDS Mini Upper Part No 513, Professor Severus Snape
 // 0 !KEYWORDS Rebrickable 973c03h17pr0148, set 4705, set 4709, set 4733, Slytherin
 // 0 !KEYWORDS Wizarding World

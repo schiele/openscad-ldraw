@@ -14,8 +14,8 @@ function ldraw_lib__76382p9j() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb1608c01, BrickOwl 170641, detective, lady in red
-// 0 !KEYWORDS office, Rebrickable 973c01h01pr0080, set 10246, set 31079, set 45805
+// 0 !KEYWORDS Bricklink 973pb1608c01, detective, lady in red, office
+// 0 !KEYWORDS Rebrickable 973c01h01pr0080, set 10246, set 31079, set 45805
 // 0 !KEYWORDS set 70806
 // 
 // 0 !HISTORY 2024-12-30 [OrionP] Official Update 2024-11

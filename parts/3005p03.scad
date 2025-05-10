@@ -13,7 +13,7 @@ function ldraw_lib__3005p03() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS thick
+// 0 !KEYWORDS BrickLink 3005pb004, Rebrickable 3005pr9998, Set 1497, thick
 // 
 // 0 !HISTORY 2003-07-02 [Steffen] fixed BFC errors
 // 0 !HISTORY 2004-03-02 [PTadmin] Official Update 2004-01

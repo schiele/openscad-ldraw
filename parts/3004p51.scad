@@ -13,6 +13,8 @@ function ldraw_lib__3004p51() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
+// 0 !KEYWORDS Rebrickable 3004pr9973, Set 10080
+// 
 // 0 !HISTORY 1998-03-23 [PTadmin] Official Update 1998-03
 // 0 !HISTORY 2002-12-10 [hafhead] Redid pattern and outer box
 // 0 !HISTORY 2003-07-01 [Steffen] reworked part to use s\3004s01.dat

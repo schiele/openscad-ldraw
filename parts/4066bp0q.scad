@@ -12,7 +12,8 @@ function ldraw_lib__4066bp0q() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Brick
-// 0 !KEYWORDS Airport, bricklink 4066pb118, Garage, house, Set 2648
+// 0 !KEYWORDS Airport, bricklink 4066pb118, Garage, house, Rebrickable 4066pr0056
+// 0 !KEYWORDS Set 2648
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
 // 

@@ -11,7 +11,7 @@ function ldraw_lib__3010p72() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !KEYWORDS Garage, tool
+// 0 !KEYWORDS BrickLink 3010px6, Garage, Rebrickable 3010apr9959, tool
 // 
 // 0 !CMDLINE -c4
 // 

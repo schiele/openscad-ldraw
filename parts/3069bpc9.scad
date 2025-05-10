@@ -11,10 +11,10 @@ function ldraw_lib__3069bpc9() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3069bpb0304, City, Creator, Jurassic world, Nexo Knights
-// 0 !KEYWORDS Ninjago, Set 40256, Set 45103, Set 60102, set 70357, Set 71016
-// 0 !KEYWORDS Set 75917, Set 76083, Set 79115, Superheroes, The Simpsons, TMNT
-// 0 !KEYWORDS town
+// 0 !KEYWORDS BrickLink 3069pb0304, City, Creator, Jurassic world, Nexo Knights
+// 0 !KEYWORDS Ninjago, Rebrickable 3069bpr0137, Set 40256, Set 45103, Set 60102
+// 0 !KEYWORDS set 70357, Set 71016, Set 75917, Set 76083, Set 79115, Superheroes
+// 0 !KEYWORDS The Simpsons, TMNT, town
 // 
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04
 // 

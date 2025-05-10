@@ -14,10 +14,10 @@ function ldraw_lib__76382p6v() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Alien, Bricklink 973pb0077c01, BrickOwl 470565, Commander X, Cyborg
-// 0 !KEYWORDS Extraterrestrial, Invaders, Mini Upper Part No 249, Organs, Otopian
-// 0 !KEYWORDS Planet Humorless, Rebrickable 973c28h03pr0077, Set 6900, set 6975
-// 0 !KEYWORDS set 6999, Space, The Officer, UFO, Zotax
+// 0 !KEYWORDS Alien, Bricklink 973pb0077c01, Commander X, Cyborg, Extraterrestrial
+// 0 !KEYWORDS Invaders, Mini Upper Part No 249, Organs, Otopian, Planet Humorless
+// 0 !KEYWORDS Rebrickable 973c28h03pr0077, Set 6900, set 6975, set 6999, Space
+// 0 !KEYWORDS The Officer, UFO, Zotax
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

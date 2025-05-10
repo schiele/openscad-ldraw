@@ -18,7 +18,8 @@ function ldraw_lib__30370ps4() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Biggs Darklighter, X-Wing, Y-Wing
+// 0 !KEYWORDS Biggs Darklighter, BrickLink x164px4, Rebrickable 30370pr0021
+// 0 !KEYWORDS Set 7140, X-Wing, Y-Wing
 // 
 // 0 !HISTORY 2012-08-09 [PTadmin] Official Update 2012-02
 // 

@@ -12,8 +12,8 @@ function ldraw_lib__93085p03() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 93083c01pb01, Riding, Set 3185, Set 3188, Set 3189
-// 0 !KEYWORDS set 41057, Stable, Vet
+// 0 !KEYWORDS Bricklink 93083c01pb01, Rebrickable 93083pr0001, Riding, Set 3185
+// 0 !KEYWORDS Set 3188, Set 3189, set 41057, Stable, Vet
 // 
 // 0 !HISTORY 2022-03-06 [PTadmin] Official Update 2022-02
 // 

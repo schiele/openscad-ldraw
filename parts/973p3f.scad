@@ -17,7 +17,7 @@ function ldraw_lib__973p3f() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS BrickLink 973pb0019, Imperial Armada, Pirates, Spaniard
+// 0 !KEYWORDS BrickLink 973pb0019, Imperial Armada, Pirates, set 6296, Spaniard
 // 
 // 0 !HISTORY 2010-04-05 [PTadmin] Official Update 2010-01
 // 0 !HISTORY 2012-04-08 [BlackBrick89] General improvements / inlined subfile

@@ -19,7 +19,7 @@ function ldraw_lib__94721() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Figure Accessory
-// 0 !KEYWORDS 92355, animal, Horse, pet
+// 0 !KEYWORDS 92355, animal, BrickLink 92355h, Horse, pet
 // 
 // 0 !HISTORY 2013-08-14 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2020-10-21 [RainbowDolphin] File preparation for LDraw Parts Tracker

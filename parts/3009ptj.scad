@@ -11,7 +11,7 @@ function ldraw_lib__3009ptj() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !KEYWORDS BrickLink 3009px15
+// 0 !KEYWORDS BrickLink 3009px15, Rebrickable 3009pr0061, Set DBASE
 // 
 // 0 !HISTORY 2020-06-28 [PTadmin] Official Update 2020-01
 // 

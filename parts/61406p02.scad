@@ -12,7 +12,8 @@ function ldraw_lib__61406p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Rubber Light Bluish Gray
+// 0 !KEYWORDS BrickLink 61406pb03, Rebrickable 61406pat0004
+// 0 !KEYWORDS Rubber Light Bluish Gray, Set 75325
 // 
 // 0 !HISTORY 2012-12-28 [PTadmin] Official Update 2012-03
 // 

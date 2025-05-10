@@ -13,7 +13,7 @@ function ldraw_lib__3492c01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !KEYWORDS Aquazone, Claw, closed, digger
+// 0 !KEYWORDS Aquazone, BrickLink 3489c01, Claw, closed, digger
 // 
 // 0 !HISTORY 2002-11-30 [PTadmin] Official Update 2002-05
 // 0 !HISTORY 2007-06-25 [PTadmin] Header formatted for Contributor Agreement

@@ -14,7 +14,8 @@ function ldraw_lib__2586ph1() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS Castle, Gryffindor, Harry Potter, Hogwarts
+// 0 !KEYWORDS Castle, Gryffindor, Harry Potter, Hogwarts, Rebrickable 2586pr0018
+// 0 !KEYWORDS set 4709
 // 
 // 0 !HISTORY 2005-12-28 [PTadmin] Official Update 2005-01
 // 0 !HISTORY 2007-05-17 [PTadmin] Header formatted for Contributor Agreement

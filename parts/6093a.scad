@@ -18,6 +18,7 @@ function ldraw_lib__6093a() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
+// 0 !KEYWORDS BrickLink x104, Rebrickable 6093
 // 
 // 0 !HISTORY 2009-10-13 {LEGO Universe Team} Original part shape
 // 0 !HISTORY 2009-10-31 [anathema] File preparation for LDraw Parts Tracker

@@ -15,8 +15,8 @@ function ldraw_lib__19206p02() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Bricklink 19206pb02, Brickowl 216182, Rebrickable 19206pr0002
-// 0 !KEYWORDS Set 30375, Set 41174, Sira Copperbranch, Sky Captain
+// 0 !KEYWORDS Bricklink 19206pb02, Rebrickable 19206pr0002, Set 30375, Set 41174
+// 0 !KEYWORDS Sira Copperbranch, Sky Captain
 // 
 // 0 !HISTORY 2018-01-28 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2024-07-15 [LisaWinter] File preparation for LDraw Parts Tracker

@@ -14,8 +14,8 @@ function ldraw_lib__76382pd0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973px65c01, BrickOwl 993654, Coca Cola, film, Hollywood
-// 0 !KEYWORDS Kabaya, Mini Upper Part No 488, monsters, Movie Maker, Nesquik
+// 0 !KEYWORDS Bricklink 973px65c01, Coca Cola, film, Hollywood, Kabaya
+// 0 !KEYWORDS Mini Upper Part No 488, monsters, Movie Maker, Nesquik
 // 0 !KEYWORDS Rebrickable 973c27h01pr0065, set 1349, Set 1352, Set 1356, Set 1360
 // 0 !KEYWORDS Set 1376, set 1382, Set 1411, Set 1421, Set 4049, Set 4052, Set 4059
 // 0 !KEYWORDS Steven Spielberg

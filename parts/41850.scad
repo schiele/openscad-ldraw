@@ -17,7 +17,7 @@ function ldraw_lib__41850() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink x351, Brickowl 244912, Driver, Racers, Rebrickable 41850
+// 0 !KEYWORDS Bricklink x351, Driver, Racers
 // 
 // 0 !HISTORY 2024-12-30 [OrionP] Official Update 2024-11
 // 

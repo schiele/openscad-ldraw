@@ -14,6 +14,8 @@ function ldraw_lib__309p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
+// 0 !KEYWORDS Rebrickable 309pr0002, Set 6552
+// 
 // 0 !HISTORY 2000-09-30 [PTadmin] Official Update 2000-02
 // 0 !HISTORY 2007-10-12 [PTadmin] Header formatted for Contributor Agreement
 // 0 !HISTORY 2008-06-29 [anathema] Used subpart; BFC'd; fixed some holes in the pattern

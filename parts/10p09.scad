@@ -27,6 +27,8 @@ function ldraw_lib__10p09() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS Rebrickable 10pr0009, set 372
+// 
 // 0 !HISTORY 2005-01-24 [Holly-Wood] Fixed L3p warnings, corrected BFC, regrouped
 // 0 !HISTORY 2009-05-02 [PTadmin] Official Update 2009-01
 // 0 !HISTORY 2013-02-03 [MMR1988] used studgroups, used 10s01.dat

@@ -17,7 +17,7 @@ function ldraw_lib__73200bp71() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 970c00pb0160, Brickowl 131990, Far From Home, Firebrigade
+// 0 !KEYWORDS Bricklink 970c00pb0160, Far From Home, Firebrigade
 // 0 !KEYWORDS Rebrickable 970c03pr0408, set 45022, Set 60024, Set 60133, Set 60214
 // 0 !KEYWORDS Set 60321, set 60393, Set 76128, set 77943, set 850618, set 951704
 // 0 !KEYWORDS Spider-Man, Super Heroes

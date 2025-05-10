@@ -12,8 +12,7 @@ function ldraw_lib__16709p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 41879pb001, Brickowl 942057, Rebrickable 16709pats01
-// 0 !KEYWORDS Set 71006, Set 71016
+// 0 !KEYWORDS Bricklink 41879pb001, Rebrickable 16709pats01, Set 71006, Set 71016
 // 
 // 0 !HISTORY 2014-12-23 [PTadmin] Official Update 2014-02
 // 0 !HISTORY 2022-06-06 [Cheenzo] Updated to use 16709s04 instead of 16709s01

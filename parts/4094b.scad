@@ -23,6 +23,7 @@ function ldraw_lib__4094b() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
+// 0 !KEYWORDS BrickLink 4094
 // 
 // 0 !HISTORY 2010-09-10 {LEGO Universe Team} Original part shape
 // 0 !HISTORY 2010-10-04 [Philo] File preparation for LDraw Parts Tracker

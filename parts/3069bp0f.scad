@@ -13,6 +13,8 @@ function ldraw_lib__3069bp0f() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 3069pb0048, Rebrickable 3069bpr0032, set 4502
+// 
 // 0 !HISTORY 2009-12-29 [PTadmin] Official Update 2009-03
 // 0 !HISTORY 2014-01-18 [smr] moved bedroll from 3069bp0f to s\3069p0fs01.dat
 // 0 !HISTORY 2014-01-18 [smr] moved bedroll frame from 3069bp0f to s\3069p0fs02.dat

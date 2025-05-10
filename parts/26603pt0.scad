@@ -11,7 +11,7 @@ function ldraw_lib__26603pt0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Set 10294, Titanic
+// 0 !KEYWORDS BrickLink 26603pb204, Rebrickable 26603pr0060, Set 10294, Titanic
 // 
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04
 // 

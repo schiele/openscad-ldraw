@@ -13,7 +13,8 @@ function ldraw_lib__18973p04() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS 919, Hybrid, Pit Lane, set 75876, Speed Champions
+// 0 !KEYWORDS 919, BrickLink 18973pb04, Hybrid, Pit Lane, Rebrickable 18973pr0004
+// 0 !KEYWORDS set 75876, Speed Champions
 // 
 // 0 !HISTORY 2023-10-31 [OrionP] Official Update 2023-05
 // 

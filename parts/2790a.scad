@@ -22,6 +22,8 @@ function ldraw_lib__2790a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 2790, Rebrickable 2790
+// 
 // 0 !HISTORY 2001-11-29 [JGevaryahu] Replaced lines with real ridges
 // 0 !HISTORY 2001-11-30 [PTadmin] Official Update 2001-02
 // 0 !HISTORY 2007-10-25 [PTadmin] Header formatted for Contributor Agreement

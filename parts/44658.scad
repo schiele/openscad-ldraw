@@ -19,6 +19,7 @@ function ldraw_lib__44658() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
+// 0 !KEYWORDS BrickLink 44658a, Rebrickable 37
 // 
 // 0 !HISTORY 1999-05-17 [PTadmin] Official Update 1999-03
 // 0 !HISTORY 2007-06-29 [PTadmin] Header formatted for Contributor Agreement

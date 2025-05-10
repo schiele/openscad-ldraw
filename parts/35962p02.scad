@@ -12,7 +12,8 @@ function ldraw_lib__35962p02() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Train
-// 0 !KEYWORDS code, Coding, Tag, tile
+// 0 !KEYWORDS BrickLink 35962pb02, code, Coding, Rebrickable 35962pr0004
+// 0 !KEYWORDS Set 10874, Tag, tile
 // 
 // 0 !HISTORY 2020-06-28 [PTadmin] Official Update 2020-01
 // 

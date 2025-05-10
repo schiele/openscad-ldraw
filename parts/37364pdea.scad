@@ -13,7 +13,8 @@ function ldraw_lib__37364pdea() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 970cm00pb010, Looney Tunes, Marvin the Martian, Set 71030
+// 0 !KEYWORDS Bricklink 970cm00pb010, Looney Tunes, Marvin the Martian
+// 0 !KEYWORDS Rebrickable 37364c22pr0011, Set 71030
 // 
 // 0 !HISTORY 2024-10-27 [OrionP] Official Update 2024-09
 // 

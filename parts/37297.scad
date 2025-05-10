@@ -12,7 +12,7 @@ function ldraw_lib__37297() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS elephant, Mammoth
+// 0 !KEYWORDS BrickLink bb1312c01, elephant, Mammoth, Rebrickable 34987
 // 
 // 0 !HISTORY 2024-12-01 [OrionP] Official Update 2024-10
 // 

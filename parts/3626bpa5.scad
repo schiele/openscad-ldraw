@@ -19,9 +19,8 @@ function ldraw_lib__3626bpa5() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Adventurers, aviator, Bricklink 3626bpa5, Brickowl 77227, eyebrows
-// 0 !KEYWORDS face, Harry Cane, hero, pilot, Rebrickable 3626bpr0042, Set 5925
-// 0 !KEYWORDS set 5948, set 5988
+// 0 !KEYWORDS Adventurers, aviator, BrickLink 3626pa5, eyebrows, face, Harry Cane
+// 0 !KEYWORDS hero, pilot, Rebrickable 3626bpr0042, Set 5925, set 5948, set 5988
 // 
 // 0 !CMDLINE -c14
 // 

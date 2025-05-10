@@ -17,8 +17,8 @@ function ldraw_lib__6190a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Belville, Divers, handle, handset, receiver, Scala, Star Wars
-// 0 !KEYWORDS telephone, town, Train
+// 0 !KEYWORDS Belville, BrickLink 6190, Divers, handle, handset, Rebrickable 6190
+// 0 !KEYWORDS receiver, Scala, Star Wars, telephone, town, Train
 // 
 // 0 !HISTORY 2023-12-31 [OrionP] Official Update 2023-07
 // 

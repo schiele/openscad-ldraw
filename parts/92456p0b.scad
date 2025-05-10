@@ -13,7 +13,8 @@ function ldraw_lib__92456p0b() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink FTGpb015c01, Katharina, Set 3189
+// 0 !KEYWORDS Bricklink FTGpb015c01, Katharina, Rebrickable 92456c01pr0048
+// 0 !KEYWORDS Set 3189
 // 
 // 0 !HISTORY 2024-12-01 [OrionP] Official Update 2024-10
 // 0 !HISTORY 2025-01-11 [OrionP] Moved from 92241p0bc01.dat

@@ -12,7 +12,8 @@ function ldraw_lib__3068bpx5() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3068bpb0689, Dimensions, Portal 2, Set 71203
+// 0 !KEYWORDS BrickLink 3068pb0689, Dimensions, Portal 2, Rebrickable 3068bpr0274
+// 0 !KEYWORDS Set 71203
 // 
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04
 // 

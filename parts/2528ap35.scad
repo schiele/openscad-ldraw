@@ -14,7 +14,7 @@ function ldraw_lib__2528ap35() = [
 // 
 // 0 !CATEGORY Minifig Headwear
 // 0 !KEYWORDS Bricklink 2528pb04, Hector Barbossa, Pirates of the Caribbean
-// 0 !KEYWORDS Set 4192
+// 0 !KEYWORDS Rebrickable 2528pr0002, Set 4192
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
 // 

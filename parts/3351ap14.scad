@@ -11,6 +11,8 @@ function ldraw_lib__3351ap14() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 649p01b, Rebrickable 649pr0002, Set 7835
+// 
 // 0 !HISTORY 2010-07-05 [PTadmin] Official Update 2010-02
 // 
 // 

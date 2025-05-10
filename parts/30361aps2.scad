@@ -22,7 +22,8 @@ function ldraw_lib__30361aps2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS astromech, droid, minifig, R5-D4, red droid, Star Wars
+// 0 !KEYWORDS astromech, droid, minifig, R5-D4, Rebrickable 30361apr0017
+// 0 !KEYWORDS red droid, set 7150, Star Wars
 // 
 // 0 !CMDLINE -c15
 // 

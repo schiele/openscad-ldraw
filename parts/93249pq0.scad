@@ -14,7 +14,8 @@ function ldraw_lib__93249pq0() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Pharaoh's Quest
+// 0 !KEYWORDS BrickLink 93249pb01, Pharaoh's Quest, Rebrickable 93249pr0001
+// 0 !KEYWORDS Set 7307
 // 
 // 0 !HISTORY 2011-10-16 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2011-11-14 [Philo] Patterned version from Angmarec 93249 shape

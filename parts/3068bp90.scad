@@ -11,7 +11,8 @@ function ldraw_lib__3068bp90() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS disc, set 10260, Set 10264
+// 0 !KEYWORDS BrickLink 3068pb1136, disc, Rebrickable 3068bpr0362, set 10260
+// 0 !KEYWORDS Set 10264
 // 
 // 0 !CMDLINE -c4
 // 

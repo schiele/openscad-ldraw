@@ -17,7 +17,7 @@ function ldraw_lib__73200bpc6a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS BrickLink 970c03pb13, Brickowl 20959, CMF, Collectible Minifigures
+// 0 !KEYWORDS BrickLink 970c03pb13, CMF, Collectible Minifigures
 // 0 !KEYWORDS Rebrickable 970c01pr0285, Series 6, soldier
 // 
 // 0 !HISTORY 2023-01-23 [MagFors] Original pattern design

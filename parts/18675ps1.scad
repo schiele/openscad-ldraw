@@ -14,7 +14,8 @@ function ldraw_lib__18675ps1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS 18675pb05, Spokes, Star Wars, tie, windscreen
+// 0 !KEYWORDS 18675pb05, BrickLink 18675pb05, Rebrickable 18675pr0004, Set 75101
+// 0 !KEYWORDS Spokes, Star Wars, tie, windscreen
 // 
 // 0 !HISTORY 2019-08-05 [GeraldLasser] reworked pattern to included space around the handle
 // 0 !HISTORY 2019-09-09 [PTadmin] Official Update 2019-02

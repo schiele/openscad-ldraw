@@ -14,7 +14,8 @@ function ldraw_lib__45610() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Mindstorms, Robot Inventor, Spike Prime
+// 0 !KEYWORDS BrickLink 55422c01, Mindstorms, Rebrickable 55422, Robot Inventor
+// 0 !KEYWORDS Spike Prime
 // 
 // 0 !HISTORY 2019-12-27 [PTadmin] Official Update 2019-03
 // 0 !HISTORY 2020-02-16 [PTadmin] Renamed from u9399c01

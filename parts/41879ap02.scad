@@ -12,7 +12,8 @@ function ldraw_lib__41879ap02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS CMF Disney, Pizza Planet Alien
+// 0 !KEYWORDS BrickLink 41879pb004, CMF Disney, Pizza Planet Alien
+// 0 !KEYWORDS Rebrickable 41879apr0007
 // 
 // 0 !HISTORY 2020-06-28 [PTadmin] Official Update 2020-01
 // 

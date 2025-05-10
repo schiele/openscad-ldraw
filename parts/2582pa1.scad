@@ -11,7 +11,7 @@ function ldraw_lib__2582pa1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Aquazone, Set 6190
+// 0 !KEYWORDS Aquazone, BrickLink 2582pb01, Rebrickable 2582pr0003, Set 6190
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 

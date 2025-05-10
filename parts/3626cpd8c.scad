@@ -14,7 +14,8 @@ function ldraw_lib__3626cpd8c() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Batman Movie, Bricklink 3626cpb1985, Killer Moth
+// 0 !KEYWORDS Batman Movie, BrickLink 3626pb1985, Killer Moth
+// 0 !KEYWORDS Rebrickable 3626cpr2426, Set 71020-12
 // 
 // 0 !CMDLINE -c27
 // 

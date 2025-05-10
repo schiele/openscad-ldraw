@@ -13,7 +13,7 @@ function ldraw_lib__3069bp04() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3069bpb797, set 21054
+// 0 !KEYWORDS BrickLink 3069pb0797, Rebrickable 3069bpr0286, set 21054
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
 // 0 !HISTORY 2021-07-01 [OrionP] Made use of US Flag subfile

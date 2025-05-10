@@ -12,6 +12,8 @@ function ldraw_lib__74746() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 2865c01
+// 
 // 0 !HISTORY 2002-11-29 [ludo] Co-author
 // 0 !HISTORY 2002-11-30 [PTadmin] Official Update 2002-05
 // 0 !HISTORY 2002-12-23 [ludo] Moved studs from subparts to have stud-logos aligned correctly

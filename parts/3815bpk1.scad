@@ -12,7 +12,7 @@ function ldraw_lib__3815bpk1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Disney, Toy Story, Woody
+// 0 !KEYWORDS Disney, Set 7590, Toy Story, Woody
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
 // 

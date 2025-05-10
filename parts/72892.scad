@@ -13,7 +13,7 @@ function ldraw_lib__72892() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Znap
+// 0 !KEYWORDS BrickLink x334c01, Znap
 // 
 // 0 !HISTORY 2010-12-31 [PTadmin] Official Update 2010-03
 // 0 !HISTORY 2014-01-18 [PTadmin] Renamed from u334

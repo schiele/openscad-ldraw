@@ -12,7 +12,8 @@ function ldraw_lib__3245cpz0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Black Widow, Brickheadz, BrickLink 3245cpb050, Set 41591
+// 0 !KEYWORDS Black Widow, Brickheadz, BrickLink 3245cpb050
+// 0 !KEYWORDS Rebrickable 3245cpr0118, Set 41591
 // 
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
 // 

@@ -15,6 +15,8 @@ function ldraw_lib__u9040c01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink bb0045c03, Rebrickable 468c03
+// 
 // 0 !HISTORY 2011-12-12 [Steffen] replaced color 383 by 494
 // 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02
 // 

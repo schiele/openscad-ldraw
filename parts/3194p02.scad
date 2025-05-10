@@ -15,6 +15,8 @@ function ldraw_lib__3194p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 3194pb01, Rebrickable 3194pr0002, Set 375-3
+// 
 // 0 !HISTORY 2010-04-05 [PTadmin] Official Update 2010-01
 // 0 !HISTORY 2014-12-26 [Philo] Used pattern subparts
 // 0 !HISTORY 2015-10-11 [PTadmin] Official Update 2015-01

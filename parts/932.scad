@@ -4,7 +4,7 @@ function ldraw_lib__932() = [
 // 0 ~Electric Mindstorms NXT Cable Segment
 // 0 Name: 932.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Subpart UPDATE 2012-01
+// 0 !LDRAW_ORG Part UPDATE 2012-01
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW

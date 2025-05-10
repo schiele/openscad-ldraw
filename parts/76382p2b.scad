@@ -14,7 +14,7 @@ function ldraw_lib__76382p2b() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973px2c01, BrickOwl 789529, Leisure, outdoor, Paradisa
+// 0 !KEYWORDS Bricklink 973px2c01, Leisure, outdoor, Paradisa
 // 0 !KEYWORDS Rebrickable 973c28h01pr0002, set 10159, Set 1254, set 2126, Set 2150
 // 0 !KEYWORDS Set 3309, Set 4224, Set 4258, Set 4560, Set 4561, Set 6345, Set 6418
 // 0 !KEYWORDS Set 6552, set 6597, Set 6665, Soccer, sport, town, Train

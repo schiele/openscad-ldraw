@@ -12,6 +12,7 @@ function ldraw_lib__3846p47() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
+// 0 !KEYWORDS Rebrickable 3846pr0026, Set 6077
 // 
 // 0 !HISTORY 1998-06-20 [PTadmin] Official Update 1998-06
 // 0 !HISTORY 2000-09-30 [PTadmin] Official Update 2000-02

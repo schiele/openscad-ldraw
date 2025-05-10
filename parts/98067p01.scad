@@ -12,9 +12,9 @@ function ldraw_lib__98067p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 98067pb01, Brickowl 818971, Dilophosaurus, Jurassic Park
-// 0 !KEYWORDS Jurassic world, Rebrickable 37407pr0001, set 5884, set 5887
-// 0 !KEYWORDS Set 70835, Set 75916, Set 75930, Set 75932, The LEGO Movie 2
+// 0 !KEYWORDS Bricklink 98067pb01, Dilophosaurus, Jurassic Park, Jurassic world
+// 0 !KEYWORDS Rebrickable 37407pr0001, set 5884, set 5887, Set 70835, Set 75916
+// 0 !KEYWORDS Set 75930, Set 75932, The LEGO Movie 2
 // 
 // 0 !HISTORY 2022-03-06 [MagFors] Rearranged some condlines
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01

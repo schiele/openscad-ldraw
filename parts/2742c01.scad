@@ -13,7 +13,7 @@ function ldraw_lib__2742c01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Set 5113, Set 8855
+// 0 !KEYWORDS BrickLink 2740c01, Rebrickable 2740c01, Set 5113, Set 8855
 // 
 // 0 !HISTORY 2019-12-27 [PTadmin] Official Update 2019-03
 // 0 !HISTORY 2021-03-17 [cwdee] Update description

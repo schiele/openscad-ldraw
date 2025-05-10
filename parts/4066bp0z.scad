@@ -12,8 +12,8 @@ function ldraw_lib__4066bp0z() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Brick
-// 0 !KEYWORDS bricklink 4066pb058, Recycle, Set 2613, Set 9124, Set 9157, Set 9160
-// 0 !KEYWORDS Set 9165, Set 9177, Set 9179, trash
+// 0 !KEYWORDS bricklink 4066pb058, Rebrickable 4066pr0043, Recycle, Set 2613
+// 0 !KEYWORDS Set 9124, Set 9157, Set 9160, Set 9165, Set 9177, Set 9179, trash
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 

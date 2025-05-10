@@ -21,9 +21,9 @@ function ldraw_lib__2598ps1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 2598px1, Brickowl 342287-95, Empire, Fighter, Imperial
-// 0 !KEYWORDS Interceptor, Rebrickable 2598pr0002, Set 7181, UCS
-// 0 !KEYWORDS Ultimate Collector Series, viewport, windshield
+// 0 !KEYWORDS Bricklink 2598px1, Empire, Fighter, Imperial, Interceptor
+// 0 !KEYWORDS Rebrickable 2598pr0002, Set 7181, UCS, Ultimate Collector Series
+// 0 !KEYWORDS viewport, windshield
 // 
 // 0 !HISTORY 2005-12-27 [guyvivan] Made BFC'ed and fixed bad quads and add one missing quad
 // 0 !HISTORY 2010-04-05 [PTadmin] Official Update 2010-01

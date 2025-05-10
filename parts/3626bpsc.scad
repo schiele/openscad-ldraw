@@ -19,9 +19,9 @@ function ldraw_lib__3626bpsc() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bespin, Bricklink 3626bpsc, Brickowl 884216, Cloud City
-// 0 !KEYWORDS cybernetic implant, cybertech, Cyborg, face, Lobot
-// 0 !KEYWORDS Rebrickable 3626bpr0271, Set 7119, Star Wars, thin grey eyebrows
+// 0 !KEYWORDS Bespin, BrickLink 3626psc, Cloud City, cybernetic implant, cybertech
+// 0 !KEYWORDS Cyborg, face, Lobot, Rebrickable 3626bpr0271, Set 7119, Star Wars
+// 0 !KEYWORDS thin grey eyebrows
 // 
 // 0 !CMDLINE -c14
 // 

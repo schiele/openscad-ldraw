@@ -16,6 +16,8 @@ function ldraw_lib__2546p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS Rebrickable 2546pat0001, set 10218
+// 
 // 0 !HISTORY 2012-08-09 [PTadmin] Official Update 2012-02
 // 0 !HISTORY 2014-01-21 [cwdee] Description change
 // 0 !HISTORY 2014-06-21 [PTadmin] Official Update 2014-01

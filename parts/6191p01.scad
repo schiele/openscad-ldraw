@@ -12,7 +12,8 @@ function ldraw_lib__6191p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Cooper, Mini, Mini Cooper MK VII, set 10242
+// 0 !KEYWORDS BrickLink 6191pb007, Cooper, Mini, Mini Cooper MK VII
+// 0 !KEYWORDS Rebrickable 10314pr0001, set 10242
 // 
 // 0 !HISTORY 2014-12-23 [PTadmin] Official Update 2014-02
 // 

@@ -14,7 +14,8 @@ function ldraw_lib__973pdf() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !KEYWORDS blood, cape, Dracula, fang, gold, Movie, ornate, Studios, vampire
+// 0 !KEYWORDS blood, cape, Dracula, fang, gold, Movie, ornate, Set 1381, Studios
+// 0 !KEYWORDS vampire
 // 
 // 0 !HISTORY 2004-03-02 [PTadmin] Official Update 2004-01
 // 0 !HISTORY 2007-07-29 [PTadmin] Header formatted for Contributor Agreement

@@ -14,7 +14,7 @@ function ldraw_lib__76382pc4b() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS 2-sided, Bricklink 973pb0844c01, BrickOwl 998736, CMF, football
+// 0 !KEYWORDS 2-sided, Bricklink 973pb0844c01, CMF, football
 // 0 !KEYWORDS Rebrickable 973c27h01pr1760, Series 4, Set 8804, Soccer Player
 // 0 !KEYWORDS Sports
 // 

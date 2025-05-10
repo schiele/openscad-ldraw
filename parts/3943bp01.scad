@@ -20,7 +20,8 @@ function ldraw_lib__3943bp01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Apollo, Bricklink 3943bpb06, NASA, Saturn, Set 21309, Set 92176
+// 0 !KEYWORDS Apollo, Bricklink 3943bpb06, NASA, Rebrickable 3943bpr0002, Saturn
+// 0 !KEYWORDS Set 21309, Set 92176
 // 
 // 0 !HISTORY 2024-06-30 [OrionP] Official Update 2024-05
 // 

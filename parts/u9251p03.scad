@@ -13,7 +13,7 @@ function ldraw_lib__u9251p03() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Scala, set 4336
+// 0 !KEYWORDS BrickLink bb0165pb03, Rebrickable upn0145pr0003, Scala, set 4336
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
 // 

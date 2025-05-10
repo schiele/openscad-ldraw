@@ -13,7 +13,8 @@ function ldraw_lib__3037ps5() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3037px2, set 7151, Sith Infiltrator, Star Wars
+// 0 !KEYWORDS Bricklink 3037px2, Rebrickable 3037pr0011, set 7151
+// 0 !KEYWORDS Sith Infiltrator, Star Wars
 // 
 // 0 !HISTORY 2023-02-07 [Holly-Wood] Changed color
 // 0 !HISTORY 2023-12-31 [OrionP] Official Update 2023-07

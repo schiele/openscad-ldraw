@@ -16,6 +16,8 @@ function ldraw_lib__32064a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 32064
+// 
 // 0 !HISTORY 1998-02-12 [PTadmin] Official Update 1998-02
 // 0 !HISTORY 2002-08-31 [izanette] Modified with WINDZ for BFC compliance
 // 0 !HISTORY 2003-11-25 [sbliss] Cleaned up axlehole

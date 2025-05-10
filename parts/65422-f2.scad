@@ -11,7 +11,7 @@ function ldraw_lib__65422_f2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Lamborghini Sian, set 42115
+// 0 !KEYWORDS BrickLink 65422, Lamborghini Sian, Rebrickable 65422, set 42115
 // 
 // 0 !HISTORY 2023-08-25 [OrionP] Official Update 2023-04
 // 

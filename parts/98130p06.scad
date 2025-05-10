@@ -14,7 +14,8 @@ function ldraw_lib__98130p06() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Bricklink 98130pb06, Cole, Ninjago, Set 853759
+// 0 !KEYWORDS Bricklink 98130pb06, Cole, Ninjago, Rebrickable 98130pr0005
+// 0 !KEYWORDS Set 853759
 // 
 // 0 !HISTORY 2023-04-17 [OrionP] Official Update 2023-02
 // 

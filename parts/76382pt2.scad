@@ -14,8 +14,8 @@ function ldraw_lib__76382pt2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973px130c01, Brickowl 959423, city center, Fuel, gasoline
-// 0 !KEYWORDS kerosene, Mini Upper Part No 117, naphtha, oil, petrol
+// 0 !KEYWORDS BrickLink 973pb4439c01, city center, Fuel, gasoline, kerosene
+// 0 !KEYWORDS Mini Upper Part No 117, naphtha, oil, petrol
 // 0 !KEYWORDS Rebrickable 973c27h01pr0130, set 10159, Set 6397, Set 6472, set 6597
 // 0 !KEYWORDS town, Town Junior
 // 

@@ -35,7 +35,8 @@ function ldraw_lib__30367bps5() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS astromech, droid, head, minifig, R2-D5, Robot, Star Wars
+// 0 !KEYWORDS astromech, BrickLink 553px5, droid, head, minifig, R2-D5
+// 0 !KEYWORDS Rebrickable 30367bpr0003, Robot, Set 6211, Star Wars
 // 
 // 0 !HISTORY 2012-12-28 [PTadmin] Official Update 2012-03
 // 

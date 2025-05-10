@@ -13,7 +13,8 @@ function ldraw_lib__57895p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Masters of Spinjitsu, Ninjago, Set 2504, Set 2507, Set 2520, 忍者
+// 0 !KEYWORDS BrickLink 57895pb005, Masters of Spinjitsu, Ninjago
+// 0 !KEYWORDS Rebrickable 57895pr0001, Set 2504, Set 2507, Set 2520, 忍者
 // 
 // 0 !HISTORY 2012-12-28 [PTadmin] Official Update 2012-03
 // 

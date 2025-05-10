@@ -13,7 +13,8 @@ function ldraw_lib__44343p03() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS roadplate, X-road
+// 0 !KEYWORDS BrickLink 44343px3, Rebrickable 44343pr0003, roadplate, Set 60237
+// 0 !KEYWORDS X-road
 // 
 // 0 !HISTORY 2018-08-30 [SLS] Copied from 44343p01.dat
 // 0 !HISTORY 2019-09-09 [PTadmin] Official Update 2019-02

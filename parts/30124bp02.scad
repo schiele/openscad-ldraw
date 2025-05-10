@@ -16,8 +16,8 @@ function ldraw_lib__30124bp02() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Bricklink 2446px6, Brickowl 414041, dacta, Drome Racers, Freestyle
-// 0 !KEYWORDS Indy LeMans, Mandy the Mechanic, Max Axel, Max Timebuster, Racing
+// 0 !KEYWORDS Bricklink 2446px6, dacta, Drome Racers, Freestyle, Indy LeMans
+// 0 !KEYWORDS Mandy the Mechanic, Max Axel, Max Timebuster, Racing
 // 0 !KEYWORDS Rebrickable 2446pr0052, Set 2147, Set 4128, Set 4138, Set 4163
 // 0 !KEYWORDS Set 4585, Set 5393, set 6327, Set 6334, Set 6335, Set 6345, Set 6517
 // 0 !KEYWORDS Set 6539, Set 6543, set 9293, town

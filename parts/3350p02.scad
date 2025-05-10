@@ -12,6 +12,8 @@ function ldraw_lib__3350p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 14pb10, Rebrickable 80039, Set 1060
+// 
 // 0 !HISTORY 2003-08-01 [Steffen] BFCed
 // 0 !HISTORY 2010-04-02 [tchang] Adjust polygon vertex, Suppress lines, Change White color to Main Color
 // 0 !HISTORY 2010-07-05 [PTadmin] Official Update 2010-02

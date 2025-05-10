@@ -23,7 +23,8 @@ function ldraw_lib__u572p02() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Sheet Cardboard
-// 0 !KEYWORDS dock, harbor, port, sea, set 364, Street, water, waves, wharf
+// 0 !KEYWORDS BrickLink 364ppr01, dock, harbor, port, Rebrickable 364cdb01, sea
+// 0 !KEYWORDS set 364, Street, water, waves, wharf
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 

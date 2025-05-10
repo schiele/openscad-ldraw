@@ -11,6 +11,8 @@ function ldraw_lib__3755a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 3755, Rebrickable 3755
+// 
 // 0 !HISTORY 1998-07-15 [PTadmin] Official Update 1998-07
 // 0 !HISTORY 2004-11-15 [mikeheide] Made BFC Compliant
 // 0 !HISTORY 2005-12-28 [PTadmin] Official Update 2005-01

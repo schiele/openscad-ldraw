@@ -11,7 +11,8 @@ function ldraw_lib__63864pz3() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 63864pb220, Leia, Set 40623, Star Wars
+// 0 !KEYWORDS Bricklink 63864pb220, Leia, Rebrickable 63864pr0046, Set 40623
+// 0 !KEYWORDS Star Wars
 // 
 // 0 !HISTORY 2024-07-29 [OrionP] Official Update 2024-06
 // 

@@ -12,7 +12,7 @@ function ldraw_lib__3815bpaw() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !KEYWORDS BrickLink 970c86pb06, Chima, Worriz
+// 0 !KEYWORDS BrickLink 970c86pb06, Chima, set 70127, Worriz
 // 
 // 0 !HISTORY 2014-12-23 [Philo] Original pattern design
 // 0 !HISTORY 2020-05-30 [cwdee] Update for revised geometry

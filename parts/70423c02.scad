@@ -12,6 +12,8 @@ function ldraw_lib__70423c02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
+// 0 !KEYWORDS BrickLink 766c14, Rebrickable 766c14
+// 
 // 0 !HISTORY 2011-12-16 [Steffen] adjusted to modified origin of 993.dat
 // 0 !HISTORY 2022-03-06 [PTadmin] Official Update 2022-02
 // 

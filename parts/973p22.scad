@@ -14,7 +14,7 @@ function ldraw_lib__973p22() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !KEYWORDS Adventurers, Sam Sanister, Sam Sinister
+// 0 !KEYWORDS Adventurers, Sam Sanister, Sam Sinister, set 6399
 // 
 // 0 !CMDLINE -c0
 // 

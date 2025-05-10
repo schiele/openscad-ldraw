@@ -12,7 +12,7 @@ function ldraw_lib__3068bpz9() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS Blacktron I, Blacktron Renegade, Bricklink 3068pb2581
-// 0 !KEYWORDS Brickowl 797599, Rebrickable 3068bpr9348, Set 10355
+// 0 !KEYWORDS Rebrickable 3068bpr9348, Set 10355
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

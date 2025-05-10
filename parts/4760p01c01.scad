@@ -13,6 +13,8 @@ function ldraw_lib__4760p01c01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
+// 0 !KEYWORDS BrickLink 4760c01pb02, Rebrickable 4760c01pr0001
+// 
 // 0 !CMDLINE -c15
 // 
 // 0 !HISTORY 2011-07-25 [PTadmin] Official Update 2011-01

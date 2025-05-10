@@ -12,7 +12,8 @@ function ldraw_lib__3010py9() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS bricklink 3010pb257, Jack Skellington, set 41630
+// 0 !KEYWORDS bricklink 3010pb257, Jack Skellington, Rebrickable 3010pr0057
+// 0 !KEYWORDS set 41630
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 

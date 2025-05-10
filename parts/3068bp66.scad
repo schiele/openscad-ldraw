@@ -12,7 +12,8 @@ function ldraw_lib__3068bp66() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3068bp66, Set 6387, Set 6411, Set 6518
+// 0 !KEYWORDS BrickLink 3068p66, Rebrickable 3068bpr0068, Set 6387, Set 6411
+// 0 !KEYWORDS Set 6518
 // 
 // 0 !HISTORY 2002-02-15 [BrickCaster] groove, L3P compliant
 // 0 !HISTORY 2002-08-18 [PTadmin] Official Update 2002-04

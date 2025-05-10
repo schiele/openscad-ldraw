@@ -13,7 +13,8 @@ function ldraw_lib__44553p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Bricklink 44553pb01, Disney, Mickey, Set 21317, Steamboat Willie
+// 0 !KEYWORDS Bricklink 44553pb01, Disney, Mickey, Rebrickable 44553pr0001
+// 0 !KEYWORDS Set 21317, Steamboat Willie
 // 
 // 0 !HISTORY 2022-02-07 {LEGO Instructions App} Original part shape
 // 0 !HISTORY 2022-02-07 [Philo] File preparation for LDraw Parts Tracker

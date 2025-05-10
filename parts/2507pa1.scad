@@ -12,7 +12,8 @@ function ldraw_lib__2507pa1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Aquasharks, Aquazone, Set 6155
+// 0 !KEYWORDS Aquasharks, Aquazone, BrickLink 2507pb04, Rebrickable 2507pr0004
+// 0 !KEYWORDS Set 6155
 // 
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
 // 

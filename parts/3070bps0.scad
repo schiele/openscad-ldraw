@@ -11,7 +11,7 @@ function ldraw_lib__3070bps0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS computer
+// 0 !KEYWORDS BrickLink 3070pb004, computer, Rebrickable 3070bpr0044, Set 4477
 // 
 // 0 !HISTORY 2011-05-22 [Philo] Screen gradient changed
 // 0 !HISTORY 2011-07-25 [PTadmin] Official Update 2011-01

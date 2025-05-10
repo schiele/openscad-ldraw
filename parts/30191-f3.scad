@@ -14,6 +14,8 @@ function ldraw_lib__30191_f3() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink x169, Rebrickable 30191
+// 
 // 0 !HISTORY 2022-03-06 [PTadmin] Official Update 2022-02
 // 
 // 

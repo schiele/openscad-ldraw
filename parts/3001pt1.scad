@@ -11,7 +11,7 @@ function ldraw_lib__3001pt1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS set 325
+// 0 !KEYWORDS BrickLink 3001oldpb02, Rebrickable 3001apr0002, set 325
 // 
 // 0 !CMDLINE -c15
 // 

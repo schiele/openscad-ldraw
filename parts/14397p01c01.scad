@@ -13,7 +13,7 @@ function ldraw_lib__14397p01c01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS Bricklink 14396c01pb02, Clock King, Collectible Minifigs
-// 0 !KEYWORDS The LEGO Batman Movie Series 2
+// 0 !KEYWORDS Rebrickable 14379pr0003, The LEGO Batman Movie Series 2
 // 
 // 0 !HISTORY 2022-12-20 [PTadmin] Official Update 2022-06
 // 

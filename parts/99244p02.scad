@@ -18,7 +18,8 @@ function ldraw_lib__99244p02() = [
 // 
 // 0 !CATEGORY Minifig Headwear
 // 0 !KEYWORDS Bricklink 99244pb02, Bunny, Collectible Minifigures, Costume, Ears
-// 0 !KEYWORDS March Harriet, mask, set 71017, The Lego Batman Movie
+// 0 !KEYWORDS March Harriet, mask, Rebrickable 99244pr0002, set 71017
+// 0 !KEYWORDS The Lego Batman Movie
 // 
 // 0 !HISTORY 2023-08-25 [OrionP] Official Update 2023-04
 // 

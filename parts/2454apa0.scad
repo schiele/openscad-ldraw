@@ -11,8 +11,8 @@ function ldraw_lib__2454apa0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Adventurers, bricklink 2454px2, Egypt, set 2996, set 3722, set 5919
-// 0 !KEYWORDS set 5958, set 5978, set 5988
+// 0 !KEYWORDS Adventurers, bricklink 2454px2, Egypt, Rebrickable 2454apr0001
+// 0 !KEYWORDS set 2996, set 3722, set 5919, set 5958, set 5978, set 5988
 // 
 // 0 !HISTORY 2009-12-29 [PTadmin] Official Update 2009-03
 // 0 !HISTORY 2020-09-04 [PTadmin] Renamed from 2454pa0

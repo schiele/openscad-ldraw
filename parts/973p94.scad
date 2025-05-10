@@ -14,7 +14,7 @@ function ldraw_lib__973p94() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS 973pb0708
+// 0 !KEYWORDS 973pb0708, set 10218
 // 
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
 // 

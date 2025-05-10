@@ -20,7 +20,8 @@ function ldraw_lib__4349p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS Chief Wiggum, Set 6059283, Simpson
+// 0 !KEYWORDS BrickLink 4349pb001, Chief Wiggum, Rebrickable 4349pr0001
+// 0 !KEYWORDS Set 6059283, Simpson
 // 
 // 0 !HISTORY 2015-10-11 [PTadmin] Official Update 2015-01
 // 

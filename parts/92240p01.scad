@@ -11,7 +11,7 @@ function ldraw_lib__92240p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Peter
+// 0 !KEYWORDS BrickLink 93772, Peter, Rebrickable 28649pr0001, set 3315
 // 
 // 0 !HISTORY 2012-08-09 [PTadmin] Official Update 2012-02
 // 

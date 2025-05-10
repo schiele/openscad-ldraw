@@ -11,7 +11,7 @@ function ldraw_lib__50231() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Sheet Fabric
-// 0 !KEYWORDS Cloak, Drape, Neckwear, Poncho, Shawl
+// 0 !KEYWORDS BrickLink 522, Cloak, Drape, Neckwear, Poncho, Shawl
 // 
 // 0 !HISTORY 2014-12-23 [PTadmin] Official Update 2014-02
 // 0 !HISTORY 2019-01-25 [cwdee] Update category

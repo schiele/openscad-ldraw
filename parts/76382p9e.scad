@@ -14,10 +14,9 @@ function ldraw_lib__76382p9e() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS 2-sided, Bricklink 973pb2653c01, BrickOwl 911579, Dimensions
-// 0 !KEYWORDS Knight Rider, Michael Knight, Mini Upper Part No 3500
-// 0 !KEYWORDS Rebrickable 973c03h02pr3500, Set 71286, Set 76082
-// 0 !KEYWORDS Spider-Man Homecoming
+// 0 !KEYWORDS 2-sided, Bricklink 973pb2653c01, Dimensions, Knight Rider
+// 0 !KEYWORDS Michael Knight, Mini Upper Part No 3500, Rebrickable 973c03h02pr3500
+// 0 !KEYWORDS Set 71286, Set 76082, Spider-Man Homecoming
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

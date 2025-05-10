@@ -13,6 +13,8 @@ function ldraw_lib__u9228c01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
+// 0 !KEYWORDS BrickLink bb0141c01, Rebrickable upn0142c01
+// 
 // 0 !CMDLINE -c7
 // 
 // 0 !HISTORY 2018-12-08 [PTadmin] Official Update 2018-02

@@ -21,8 +21,8 @@ function ldraw_lib__3664p05() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Brick
-// 0 !KEYWORDS bricklink 3664pb08, Brickowl 393549, Farm, Rebrickable 3664pr9995
-// 0 !KEYWORDS set 045-1, set 2650-1
+// 0 !KEYWORDS bricklink 3664pb08, Farm, Rebrickable 3664pr9995, set 045-1
+// 0 !KEYWORDS set 2650-1
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 0 !HISTORY 2022-09-07 [RainbowDolphin] Made top semi-cylinder hi-res to comply with latest part regulations

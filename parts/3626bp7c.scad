@@ -14,8 +14,8 @@ function ldraw_lib__3626bp7c() = [
   [0,"BFC","CW"],
 // 
 // 0 !KEYWORDS A1, Antarctic, Antarctica, Arctic, BrickLink 3626px89, explorer
-// 0 !KEYWORDS north pole, Polar, Rebrickable 3626bpr0049, Ross Ranger, south pole
-// 0 !KEYWORDS town
+// 0 !KEYWORDS north pole, Polar, Rebrickable 3626bpr0049, Ross Ranger, Set 1098
+// 0 !KEYWORDS south pole, town
 // 
 // 0 !CMDLINE -C14
 // 

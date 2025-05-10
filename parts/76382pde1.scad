@@ -14,8 +14,8 @@ function ldraw_lib__76382pde1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb4262c01, BrickOwl 731985, CMF, Lola Bunny
-// 0 !KEYWORDS Looney Tunes, Rebrickable 973c13h27pr5509, Set 71030
+// 0 !KEYWORDS Bricklink 973pb4262c01, CMF, Lola Bunny, Looney Tunes
+// 0 !KEYWORDS Rebrickable 973c13h27pr5509, Set 71030
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

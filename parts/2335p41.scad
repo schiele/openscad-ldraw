@@ -12,7 +12,8 @@ function ldraw_lib__2335p41() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS BrickLink 2335px9, Set 1888, Set 1891, Set 6057, Set 6085, Set 6086
+// 0 !KEYWORDS BrickLink 2335px9, Rebrickable 2335pr0009, Set 1888, Set 1891
+// 0 !KEYWORDS Set 6057, Set 6085, Set 6086
 // 
 // 0 !HISTORY 2014-12-23 [PTadmin] Official Update 2014-02
 // 0 !HISTORY 2020-03-15 [Cheenzo] Fixed wrong pattern orientation and added keywords

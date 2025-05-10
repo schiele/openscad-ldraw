@@ -11,7 +11,8 @@ function ldraw_lib__2431pzd() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Anna, Brickheadz, BrickLink 2431pb528, Freckles, Frozen, Set 41618
+// 0 !KEYWORDS Anna, Brickheadz, BrickLink 2431pb528, Freckles, Frozen
+// 0 !KEYWORDS Rebrickable 2431pr0130, Set 41618
 // 
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
 // 0 !HISTORY 2020-05-10 [cwdee] Update colour name in description

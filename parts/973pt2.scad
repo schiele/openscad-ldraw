@@ -14,9 +14,8 @@ function ldraw_lib__973pt2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !KEYWORDS Bricklink 973px130, Brickowl 959423, Fuel, gasoline, kerosene
-// 0 !KEYWORDS naphtha, oil, petrol, Rebrickable 973c27h01pr0130, set 10159
-// 0 !KEYWORDS Set 6397, Set 6472, set 6597
+// 0 !KEYWORDS Bricklink 973px130, Fuel, gasoline, kerosene, naphtha, oil, petrol
+// 0 !KEYWORDS set 10159, Set 6397, Set 6472, set 6597
 // 
 // 0 !HISTORY 2005-12-28 [PTadmin] Official Update 2005-01
 // 0 !HISTORY 2007-07-29 [PTadmin] Header formatted for Contributor Agreement

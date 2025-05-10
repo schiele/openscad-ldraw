@@ -11,7 +11,8 @@ function ldraw_lib__3068bpg1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS bricklink 3068bpb0034, Orchestra, semiquavers, Set 3631, Set 3711
+// 0 !KEYWORDS BrickLink 3068pb0034, Orchestra, Rebrickable 3068bpr0096
+// 0 !KEYWORDS semiquavers, Set 3631, Set 3711
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
 // 

@@ -15,6 +15,8 @@ function ldraw_lib__3622p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 3622pb006, Rebrickable 3622pr9995, Set 5830
+// 
 // 0 !CMDLINE -c14
 // 
 // 0 !HISTORY 2009-01-29 [mikeheide] closed gap, BFC'ed

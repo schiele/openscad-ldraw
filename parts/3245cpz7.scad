@@ -13,7 +13,7 @@ function ldraw_lib__3245cpz7() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS Avengers, Brickheadz, BrickLink 3245cpb071, Gamora, Infinity War
-// 0 !KEYWORDS Set 41607
+// 0 !KEYWORDS Rebrickable 3245cpr0133, Set 41607
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 

@@ -15,6 +15,7 @@ function ldraw_lib__33009_f2() = [
   [0,"BFC","CW"],
 // 
 // 0 !CATEGORY Minifig Accessory
+// 0 !KEYWORDS BrickLink 33009, Rebrickable 33009
 // 
 // 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01
 // 0 !HISTORY 2017-12-05 [PTadmin] Renamed from 33009c01

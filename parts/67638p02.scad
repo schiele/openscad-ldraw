@@ -12,7 +12,7 @@ function ldraw_lib__67638p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 67638pb02, CMF, Set 71029
+// 0 !KEYWORDS Bricklink 67638pb02, CMF, Rebrickable 67638pr0002, Set 71029
 // 
 // 0 !HISTORY 2024-12-01 [OrionP] Official Update 2024-10
 // 

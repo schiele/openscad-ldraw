@@ -11,6 +11,8 @@ function ldraw_lib__4512p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 4512pb01, Rebrickable 4512pr0001, Set 4539
+// 
 // 0 !HISTORY 1998-12-15 [PTadmin] Official Update 1998-10
 // 0 !HISTORY 2007-10-12 [PTadmin] Header formatted for Contributor Agreement
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01

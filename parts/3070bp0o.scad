@@ -11,7 +11,8 @@ function ldraw_lib__3070bp0o() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS BrickLink 3070bpb135, set 21045, Set 41902, Set 80105
+// 0 !KEYWORDS BrickLink 3070pb135, Rebrickable 3070bpr0195, set 21045, Set 41902
+// 0 !KEYWORDS Set 80105
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 0 !HISTORY 2022-02-19 [MagFors] Corrected blue colour

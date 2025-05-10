@@ -23,7 +23,8 @@ function ldraw_lib__53993p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Cylinder
-// 0 !KEYWORDS Projectile, Weapon
+// 0 !KEYWORDS BrickLink 53993pb01, Projectile, Rebrickable 53993pat0001, Set 3828
+// 0 !KEYWORDS Weapon
 // 
 // 0 !HISTORY 2018-12-08 [PTadmin] Official Update 2018-02
 // 

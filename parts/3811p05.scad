@@ -12,6 +12,8 @@ function ldraw_lib__3811p05() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
+// 0 !KEYWORDS BrickLink 3811pb02, Rebrickable 3811pr0002, set 6270
+// 
 // 0 !HISTORY 2010-07-05 [PTadmin] Official Update 2010-02
 // 
 // 

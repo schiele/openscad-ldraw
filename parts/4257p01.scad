@@ -25,7 +25,7 @@ function ldraw_lib__4257p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Cylinder
-// 0 !KEYWORDS Duplo Eye
+// 0 !KEYWORDS Duplo Eye, Set 1501
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 

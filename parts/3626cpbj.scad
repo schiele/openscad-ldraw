@@ -14,8 +14,8 @@ function ldraw_lib__3626cpbj() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Armoured Suit Mark XLII, Bricklink 3626cpb0909, Iron Man, Mk42
-// 0 !KEYWORDS Pepper Potts, set 76007
+// 0 !KEYWORDS Armoured Suit Mark XLII, BrickLink 3626pb0909, Iron Man, Mk42
+// 0 !KEYWORDS Pepper Potts, Rebrickable 3626cpr1260, set 76007
 // 
 // 0 !HISTORY 2013-12-23 [PTadmin] Official Update 2013-02
 // 0 !HISTORY 2023-11-07 [MagFors] Update description, added keywords

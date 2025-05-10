@@ -3,10 +3,10 @@ use <../../p/box4.scad>
 use <../../p/box5.scad>
 use <../../p/stud4.scad>
 function ldraw_lib__s__87079s01() = [
-// 0 ~Tile  2 x  4 with Groove without Top
+// 0 ~Tile  2 x  4 without Top Surface
 // 0 Name: s\87079s01.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Subpart UPDATE 2012-03
+// 0 !LDRAW_ORG Subpart UPDATE 2025-04
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -15,7 +15,8 @@ function ldraw_lib__s__87079s01() = [
 // 
 // 0 !HISTORY 2012-09-30 [Philo] Subparted from Tim Gould's original design
 // 0 !HISTORY 2012-12-28 [PTadmin] Official Update 2012-03
-// 
+// 0 !HISTORY 2025-04-25 [MagFors] Update description
+// 0 !HISTORY 2025-04-27 [OrionP] Official Update 2025-04
 // 
 // 1 16 0 0 0 40 0 0 0 7 0 0 0 20 box4.dat
   [1,16,0,0,0,40,0,0,0,7,0,0,0,20, ldraw_lib__box4()],

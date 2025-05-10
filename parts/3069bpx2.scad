@@ -11,7 +11,8 @@ function ldraw_lib__3069bpx2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS BrickLink 3069bpb699, Minecraft, Parrot, Set 21152, Wing
+// 0 !KEYWORDS BrickLink 3069pb0699, Minecraft, Parrot, Rebrickable 3069bpr0248
+// 0 !KEYWORDS Set 21152, Wing
 // 
 // 0 !HISTORY 2020-06-28 [PTadmin] Official Update 2020-01
 // 

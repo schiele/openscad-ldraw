@@ -12,6 +12,8 @@ function ldraw_lib__3067apt2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink crssprt02pb08, Rebrickable 3009apr0018, Set 1309
+// 
 // 0 !HISTORY 2004-11-07 [mikeheide] changed subpart to 3067s01
 // 0 !HISTORY 2005-01-07 [mikeheide] fixed gap again
 // 0 !HISTORY 2009-09-03 [PTadmin] Official Update 2009-02

@@ -11,8 +11,8 @@ function ldraw_lib__3070bp00() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS 3070bpb103, Brickheadz, Iron Man, Set 41590, Set 75873
-// 0 !KEYWORDS Speed Champions
+// 0 !KEYWORDS 3070bpb103, Brickheadz, BrickLink 3070pb103, Iron Man
+// 0 !KEYWORDS Rebrickable 3070bpr0162, Set 41590, Set 75873, Speed Champions
 // 
 // 0 !HISTORY 2016-12-31 [PTadmin] Official Update 2016-01
 // 0 !HISTORY 2017-09-16 [Darats] Reduced Pattern Size, Added Keywords

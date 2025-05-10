@@ -13,8 +13,8 @@ function ldraw_lib__3626bpc4b() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626bpb0538, Collectable, football, Series 4, Set 8804
-// 0 !KEYWORDS Soccer Player
+// 0 !KEYWORDS BrickLink 3626pb0538, Collectable, football, Rebrickable 3626bpr0773
+// 0 !KEYWORDS Series 4, Set 8804, Soccer Player
 // 
 // 0 !HISTORY 2022-12-29 [MagFors] Corrected some condlines, removed edgelines
 // 0 !HISTORY 2024-09-30 [OrionP] Official Update 2024-08

@@ -16,7 +16,7 @@ function ldraw_lib__3998a() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Crane
-// 0 !KEYWORDS Fabuland
+// 0 !KEYWORDS BrickLink fabhook, Fabuland, Rebrickable fabupn0030
 // 
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
 // 

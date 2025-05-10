@@ -11,8 +11,8 @@ function ldraw_lib__3069bpy1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS 1970, Bricklink 3069bpb1093, Charger, Dodge, Dominic, Fast & Furious
-// 0 !KEYWORDS R/T, Set 76912, Speed Champions, Toretto
+// 0 !KEYWORDS 1970, BrickLink 3069pb1093, Charger, Dodge, Dominic, Fast & Furious
+// 0 !KEYWORDS R/T, Rebrickable 3069bpr0362, Set 76912, Speed Champions, Toretto
 // 
 // 0 !HISTORY 2022-12-20 [PTadmin] Official Update 2022-06
 // 

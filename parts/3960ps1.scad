@@ -12,7 +12,7 @@ function ldraw_lib__3960ps1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Round
+// 0 !KEYWORDS BrickLink 3960pb005, Rebrickable 3960pr0005, Round, Set 4482
 // 
 // 0 !HISTORY 2010-07-05 [PTadmin] Official Update 2010-02
 // 

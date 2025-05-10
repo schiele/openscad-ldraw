@@ -16,6 +16,7 @@ function ldraw_lib__98138pm8() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS BrickLink 98138pb069, Disney, Moana, Pounamu Stone
+// 0 !KEYWORDS Rebrickable 98138pr0064, Set 41149
 // 
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
 // 

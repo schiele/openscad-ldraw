@@ -12,7 +12,7 @@ function ldraw_lib__98138p8e() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS BrickLink 98138pb178, set 60288
+// 0 !KEYWORDS BrickLink 98138pb178, Rebrickable 98138pr9990, set 60288
 // 
 // 0 !HISTORY 2022-03-08 [MagFors] Reworked the eyebrows
 // 0 !HISTORY 2022-05-07 [PTadmin] Official Update 2022-03

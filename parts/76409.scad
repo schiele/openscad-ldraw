@@ -12,8 +12,8 @@ function ldraw_lib__76409() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Adventures, MovieMaker, set 1349, set 5975, set 5987
-// 0 !KEYWORDS Steven Spielberg, Studio, T-Rex
+// 0 !KEYWORDS Adventures, BrickLink 30457c01, MovieMaker, Rebrickable 30457
+// 0 !KEYWORDS set 1349, set 5975, set 5987, Steven Spielberg, Studio, T-Rex
 // 
 // 0 !HISTORY 2013-08-14 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2013-08-14 [Holly-Wood] File preparation for LDraw Parts Tracker

@@ -15,7 +15,8 @@ function ldraw_lib__14769p0m() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 14769pb356, Set 10278, Timekeeper, Timepiece, Watch
+// 0 !KEYWORDS Bricklink 14769pb356, Rebrickable 14769pr1172, Set 10278, Timekeeper
+// 0 !KEYWORDS Timepiece, Watch
 // 
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04
 // 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives

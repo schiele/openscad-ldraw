@@ -11,7 +11,7 @@ function ldraw_lib__4215bps1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 4215bpx2, Set 7180, Star Wars
+// 0 !KEYWORDS Bricklink 4215bpx2, Rebrickable 4215bpr0004, Set 7180, Star Wars
 // 
 // 0 !CMDLINE -c47
 // 

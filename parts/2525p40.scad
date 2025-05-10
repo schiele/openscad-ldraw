@@ -12,6 +12,8 @@ function ldraw_lib__2525p40() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 2525px5, Rebrickable 2525pr0007, Set 6086
+// 
 // 0 !HISTORY 2014-06-21 [PTadmin] Official Update 2014-01
 // 
 // 

@@ -12,8 +12,8 @@ function ldraw_lib__52572c01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 50821c01, Brickowl 307709, Catamaran Half
-// 0 !KEYWORDS Rebrickable 50821c01, Set 7244, Speedboat
+// 0 !KEYWORDS Bricklink 50821c01, Catamaran Half, Rebrickable 50821c01, Set 7244
+// 0 !KEYWORDS Speedboat
 // 
 // 0 !HISTORY 2024-10-27 [OrionP] Official Update 2024-09
 // 

@@ -13,8 +13,8 @@ function ldraw_lib__35714p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Bricklink 35714pb01, Brickowl 449071, CMF, Collectible Minifigures
-// 0 !KEYWORDS Dorothy Gale, Rebrickable 35714pr0001, Set 71023, The LEGO Movie 2
+// 0 !KEYWORDS Bricklink 35714pb01, CMF, Collectible Minifigures, Dorothy Gale
+// 0 !KEYWORDS Rebrickable 35714pr0001, Set 71023, The LEGO Movie 2
 // 0 !KEYWORDS The Wizard of Oz
 // 
 // 0 !HISTORY 2024-10-22 {LEGO Instructions App} Original part shape

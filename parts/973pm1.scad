@@ -12,7 +12,7 @@ function ldraw_lib__973pm1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Gandalf, Lord of the Rings
+// 0 !KEYWORDS Gandalf, Lord of the Rings, Set 10237
 // 
 // 0 !HISTORY 2012-12-28 [PTadmin] Official Update 2012-03
 // 

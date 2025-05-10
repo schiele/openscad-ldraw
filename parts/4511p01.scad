@@ -14,7 +14,8 @@ function ldraw_lib__4511p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 4511pb01, Cash, dollar, Set 7597, Toy Story 3, Vault
+// 0 !KEYWORDS Bricklink 4511pb01, Cash, dollar, Rebrickable 4511pr0001, Set 7597
+// 0 !KEYWORDS Toy Story 3, Vault
 // 
 // 0 !HISTORY 2022-12-20 [PTadmin] Official Update 2022-06
 // 

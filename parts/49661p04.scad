@@ -13,8 +13,8 @@ function ldraw_lib__49661p04() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bath, Bricklink 49661pb04, Brickowl 1235380, Rebrickable 49661pr0004
-// 0 !KEYWORDS Rubber Duck, Set 71429, Set 76271
+// 0 !KEYWORDS Bath, Bricklink 49661pb04, Rebrickable 49661pr0004, Rubber Duck
+// 0 !KEYWORDS Set 71429, Set 76271
 // 
 // 0 !HISTORY 2024-08-26 [OrionP] Official Update 2024-07
 // 

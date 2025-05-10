@@ -16,7 +16,7 @@ function ldraw_lib__u8205() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !KEYWORDS Vintage, waffle
+// 0 !KEYWORDS BrickLink 713old, Rebrickable 713a, Vintage, waffle
 // 
 // 0 !HISTORY 2010-01-18 [mikeheide] moved studs to mainfile
 // 0 !HISTORY 2011-01-02 [tchang] replace studs by stugs and unsym, used rectifier

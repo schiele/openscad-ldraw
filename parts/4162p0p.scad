@@ -11,7 +11,8 @@ function ldraw_lib__4162p0p() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS 1173-1399, 3.97 degrees, Bell Tower, Italy, Pisa, Set 21015
+// 0 !KEYWORDS 1173-1399, 3.97 degrees, Bell Tower, BrickLink 4162pb108, Italy
+// 0 !KEYWORDS Pisa, Rebrickable 4162pr0020, Set 21015
 // 
 // 0 !HISTORY 2013-07-21 [PTadmin] Official Update 2013-01
 // 

@@ -12,8 +12,8 @@ function ldraw_lib__973psf() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS bounty hunter, clone, Episode 2, Jango Fett, Set 7153, Star Wars
-// 0 !KEYWORDS Young Boba Fett
+// 0 !KEYWORDS bounty hunter, BrickLink 973pb0260, clone, Episode 2, Jango Fett
+// 0 !KEYWORDS Set 7153, Star Wars, Young Boba Fett
 // 
 // 0 !CMDLINE -c11
 // 

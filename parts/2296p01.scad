@@ -21,7 +21,7 @@ function ldraw_lib__2296p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Baseplate
-// 0 !KEYWORDS lake, set 9059, water
+// 0 !KEYWORDS BrickLink 2296pb01, lake, Rebrickable 2296pr0001, set 9059, water
 // 
 // 0 !CMDLINE -c2
 // 

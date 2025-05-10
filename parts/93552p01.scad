@@ -15,10 +15,10 @@ function ldraw_lib__93552p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS BrickLink 93552pb01, Brickowl 889218, Rebrickable 93552pr0001
-// 0 !KEYWORDS set 10243, set 10271, Set 40106, Set 40118, Set 40121, Set 40205
-// 0 !KEYWORDS Set 41005, Set 41054, Set 41065, Set 41095, Set 41336, Set 41342
-// 0 !KEYWORDS Set 41365, Set 41438, Set 43187, Set 70751, Set 75823, set 77942
+// 0 !KEYWORDS BrickLink 93552pb01, Rebrickable 93552pr0001, set 10243, set 10271
+// 0 !KEYWORDS Set 40106, Set 40118, Set 40121, Set 40205, Set 41005, Set 41054
+// 0 !KEYWORDS Set 41065, Set 41095, Set 41336, Set 41342, Set 41365, Set 41438
+// 0 !KEYWORDS Set 43187, Set 70751, Set 75823, set 77942
 // 
 // 0 !HISTORY 2012-09-19 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2012-09-20 [Philo] File preparation for LDraw Parts Tracker

@@ -12,7 +12,7 @@ function ldraw_lib__2431p70() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 2431pb499
+// 0 !KEYWORDS Bricklink 2431pb499, Rebrickable 2431pr0115, Set 10341
 // 
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
 // 0 !HISTORY 2020-02-05 [OrionP] Subfiled panel pattern

@@ -14,7 +14,8 @@ function ldraw_lib__63965a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !KEYWORDS Missile, pole, rod, Small, stand, Star Wars, town, umbrella
+// 0 !KEYWORDS BrickLink 63965, Missile, pole, Rebrickable 63965, rod, Small, stand
+// 0 !KEYWORDS Star Wars, town, umbrella
 // 
 // 0 !HISTORY 2020-04-16 [Plastikean] Adjusted part length, pos & width of ring
 // 0 !HISTORY 2020-06-28 [PTadmin] Official Update 2020-01

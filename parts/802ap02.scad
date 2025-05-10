@@ -13,6 +13,8 @@ function ldraw_lib__802ap02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 802, Rebrickable 802, set 334
+// 
 // 0 !CMDLINE -c47
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03

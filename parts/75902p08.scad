@@ -14,9 +14,8 @@ function ldraw_lib__75902p08() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS Baby Groot, Bricklink 75902pb26, Brickowl 770975, Eye
-// 0 !KEYWORDS Guardians of the Galaxy, iris, Marvel, Rebrickable 75902pr0032
-// 0 !KEYWORDS Set 66711, Set 76217, Set 76249
+// 0 !KEYWORDS Baby Groot, Bricklink 75902pb26, Eye, Guardians of the Galaxy, iris
+// 0 !KEYWORDS Marvel, Rebrickable 75902pr0032, Set 66711, Set 76217, Set 76249
 // 
 // 0 !HISTORY 2024-05-28 [OrionP] Official Update 2024-04
 // 

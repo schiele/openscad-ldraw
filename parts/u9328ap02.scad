@@ -18,9 +18,8 @@ function ldraw_lib__u9328ap02() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Sheet Fabric
-// 0 !KEYWORDS American Indian, Bricklink x172px2, Brickowl 306930
-// 0 !KEYWORDS Rebrickable upn0218pr0002, set 6748, set 6763, set 6766, western
-// 0 !KEYWORDS wild west
+// 0 !KEYWORDS American Indian, Bricklink x172px2, Rebrickable upn0218pr0002
+// 0 !KEYWORDS set 6748, set 6763, set 6766, western, wild west
 // 
 // 0 !HISTORY 2024-12-01 [OrionP] Official Update 2024-10
 // 

@@ -12,7 +12,7 @@ function ldraw_lib__30075p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS basic, Bricklink 30075pb01, Brickowl 991775, dacta, Freestyle
+// 0 !KEYWORDS basic, Bricklink 30075pb01, dacta, Freestyle
 // 0 !KEYWORDS Rebrickable 30075pr0001, Set 4137, Set 4168, Set 4216, Set 9250
 // 0 !KEYWORDS Shrubbery, Tree
 // 

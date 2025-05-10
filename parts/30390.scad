@@ -26,6 +26,8 @@ function ldraw_lib__30390() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
+// 0 !KEYWORDS Rebrickable 30390a
+// 
 // 0 !HISTORY 2003-07-04 [Steffen] fixed 1 mis-colored line, added 2 missing lines, BFCed,
 // 0 !HISTORY 2005-12-28 [PTadmin] Official Update 2005-01
 // 0 !HISTORY 2007-06-09 [PTadmin] Header formatted for Contributor Agreement

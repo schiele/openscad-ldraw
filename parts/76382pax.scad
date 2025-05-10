@@ -14,8 +14,8 @@ function ldraw_lib__76382pax() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Adventurers, belt, Bricklink 973pb0281c01, BrickOwl 34185, hero
-// 0 !KEYWORDS India, Johnny Thunder, Mini Upper Part No 705, open collar
+// 0 !KEYWORDS Adventurers, belt, Bricklink 973pb0281c01, hero, India
+// 0 !KEYWORDS Johnny Thunder, Mini Upper Part No 705, open collar
 // 0 !KEYWORDS Orient Expedition, Pistol, pockets, Rebrickable 973c26h01pr0281
 // 0 !KEYWORDS revolver, Set 7410, Set 7418, set 7422
 // 

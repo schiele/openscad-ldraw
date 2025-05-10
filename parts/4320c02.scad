@@ -13,6 +13,7 @@ function ldraw_lib__4320c02() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Slope
+// 0 !KEYWORDS BrickLink 787c02, Rebrickable 787c02
 // 
 // 0 !HISTORY 2010-12-31 [PTadmin] Official Update 2010-03
 // 0 !HISTORY 2017-12-23 [PTadmin] Renamed from 787c02

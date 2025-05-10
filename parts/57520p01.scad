@@ -13,7 +13,8 @@ function ldraw_lib__57520p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Action, Figure, Game, Glatorian
+// 0 !KEYWORDS Action, BrickLink 57520pb01, Figure, Game, Glatorian
+// 0 !KEYWORDS Rebrickable 57520pr0001, Set 2519
 // 
 // 0 !HISTORY 2010-04-05 [PTadmin] Official Update 2010-01
 // 

@@ -15,7 +15,8 @@ function ldraw_lib__3039p12() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS 12 key pad, buttons, handset, telephone, town
+// 0 !KEYWORDS 12 key pad, buttons, handset, Rebrickable 3039pr0012, Set 1796
+// 0 !KEYWORDS telephone, town
 // 
 // 0 !HISTORY 2003-07-06 [Steffen] fixed BFC errors, fixed numeric precision glitches, adjusted header to comply with standard
 // 0 !HISTORY 2004-04-22 [PTadmin] Official Update 2004-02

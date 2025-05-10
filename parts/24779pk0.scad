@@ -13,7 +13,8 @@ function ldraw_lib__24779pk0() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Hipwear
-// 0 !KEYWORDS Bricklink 24779pb01, Collectible, Disney, Scrooge McDuck, set 71024
+// 0 !KEYWORDS Bricklink 24779pb01, Collectible, Disney, Rebrickable 24779pr0009
+// 0 !KEYWORDS Scrooge McDuck, set 71024
 // 
 // 0 !HISTORY 2022-03-10 [MagFors] corrected hip width
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04

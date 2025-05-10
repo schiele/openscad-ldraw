@@ -13,7 +13,8 @@ function ldraw_lib__80577p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Beanie, Bricklink 80577pb01, Friends, Set 41700
+// 0 !KEYWORDS Beanie, Bricklink 80577pb01, Friends, Rebrickable 80577pat0001
+// 0 !KEYWORDS Set 41700
 // 
 // 0 !HISTORY 2022-01-29 {LEGO Instructions App} Original part shape
 // 0 !HISTORY 2022-01-29 [Philo] File preparation for LDraw Parts Tracker

@@ -15,7 +15,7 @@ function ldraw_lib__2418bp60() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Set 6977, Space
+// 0 !KEYWORDS BrickLink 2418bpb02, Rebrickable 2418bpr0002, Set 6977, Space
 // 
 // 0 !HISTORY 2022-03-06 [PTadmin] Official Update 2022-02
 // 

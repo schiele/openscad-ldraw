@@ -14,10 +14,9 @@ function ldraw_lib__76382pm0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Armor, Bricklink 973pb1130c01, BrickOwl 52824, evil
-// 0 !KEYWORDS Lord of the Rings, Mini Upper Part No 2057, Mordor
-// 0 !KEYWORDS Rebrickable 973c10h12pr2057, Set 10237, set 30211, set 9471
-// 0 !KEYWORDS set 9474, Set 9476, Uruk-hai
+// 0 !KEYWORDS Armor, Bricklink 973pb1130c01, evil, Lord of the Rings
+// 0 !KEYWORDS Mini Upper Part No 2057, Mordor, Rebrickable 973c10h12pr2057
+// 0 !KEYWORDS Set 10237, set 30211, set 9471, set 9474, Set 9476, Uruk-hai
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

@@ -12,7 +12,8 @@ function ldraw_lib__35700p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bin, Bricklink 35700pb01, Gift Box, Present, Set 71021
+// 0 !KEYWORDS Bin, Bricklink 35700pb01, Gift Box, Present, Rebrickable 35700pr0002
+// 0 !KEYWORDS Set 71021
 // 
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
 // 0 !HISTORY 2022-02-19 [MagFors] Corrected blue colour

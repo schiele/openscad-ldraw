@@ -12,7 +12,7 @@ function ldraw_lib__3298p53() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Rebrickable 3298pr0013
+// 0 !KEYWORDS Rebrickable 3298pr0013, Set 6781
 // 
 // 0 !HISTORY 2002-08-18 [PTadmin] Official Update 2002-04
 // 0 !HISTORY 2007-06-25 [PTadmin] Header formatted for Contributor Agreement

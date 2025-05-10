@@ -17,7 +17,8 @@ function ldraw_lib__6256ph1() = [
 // 
 // 0 !CATEGORY Minifig Accessory
 // 0 !KEYWORDS Albus Dumbledore, Bricklink 6256pb06, Collectible Minifigures
-// 0 !KEYWORDS Fantastic Beasts, Harry Potter, Pensieve, set 71022
+// 0 !KEYWORDS Fantastic Beasts, Harry Potter, Pensieve, Rebrickable 6256pr1002
+// 0 !KEYWORDS set 71022
 // 
 // 0 !HISTORY 2022-09-15 [PTadmin] Official Update 2022-05
 // 

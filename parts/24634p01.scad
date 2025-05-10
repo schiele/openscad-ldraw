@@ -14,7 +14,8 @@ function ldraw_lib__24634p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS Bricklink 24634pb01, Disney, Minnie, set 71040, Set 71044
+// 0 !KEYWORDS Bricklink 24634pb01, Disney, Minnie, Rebrickable 24634pr0001
+// 0 !KEYWORDS set 71040, Set 71044
 // 
 // 0 !HISTORY 2024-12-30 [OrionP] Official Update 2024-11
 // 

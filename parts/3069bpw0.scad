@@ -36,11 +36,11 @@ function ldraw_lib__3069bpw0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS bad guy, bandido, bandit, billy the kid, cowboy, deputy, desperado
-// 0 !KEYWORDS doc holliday, Federal Marshal, gunman, hunt, lawman, marshal, outlaw
-// 0 !KEYWORDS Pistol, revolver, rifle, robber, search warrant, sheriff
-// 0 !KEYWORDS spaghetti western, tombstone, U.S. Marshal, villain, wanted poster
-// 0 !KEYWORDS western, wild west
+// 0 !KEYWORDS bad guy, bandido, bandit, billy the kid, BrickLink 3069px37, cowboy
+// 0 !KEYWORDS deputy, desperado, doc holliday, Federal Marshal, gunman, hunt
+// 0 !KEYWORDS lawman, marshal, outlaw, Pistol, Rebrickable 3069bpr0097, revolver
+// 0 !KEYWORDS rifle, robber, search warrant, set 5317, sheriff, spaghetti western
+// 0 !KEYWORDS tombstone, U.S. Marshal, villain, wanted poster, western, wild west
 // 
 // 0 !HISTORY 2010-12-31 [PTadmin] Official Update 2010-03
 // 0 !HISTORY 2018-12-31 [MagFors] Removed overlaps and gaps

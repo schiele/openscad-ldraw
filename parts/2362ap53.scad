@@ -12,7 +12,8 @@ function ldraw_lib__2362ap53() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS BrickLink 2362apb04L, Rebrickable 2362apr0001, Space Police
+// 0 !KEYWORDS BrickLink 2362apb04L, Rebrickable 2362apr0001, Set 6781
+// 0 !KEYWORDS Space Police
 // 
 // 0 !PREVIEW 16 0 0 0 -1 0 0 0 1 0 0 0 -1
 // 

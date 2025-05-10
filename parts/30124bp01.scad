@@ -16,8 +16,8 @@ function ldraw_lib__30124bp01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Bricklink 2446px1, Brickowl 862599, Octan Race Team
-// 0 !KEYWORDS Rebrickable 2446pr0028, set 4002, Set 6335, set 6337
+// 0 !KEYWORDS Bricklink 2446px1, Octan Race Team, Rebrickable 2446pr0028, set 4002
+// 0 !KEYWORDS Set 6335, set 6337
 // 
 // 0 !HISTORY 2024-07-26 [MagFors] Original pattern made as 2446p01 by Damien Roux
 // 0 !HISTORY 2024-08-26 [OrionP] Official Update 2024-07

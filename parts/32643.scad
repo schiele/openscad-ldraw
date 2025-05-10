@@ -3,10 +3,10 @@ use <../p/5-16chrd.scad>
 use <../p/5-16cylo.scad>
 use <../p/rect3.scad>
 function ldraw_lib__32643() = [
-// 0 Energy Effect Blast with Bar
+// 0 Power Burst Energy Effect with Bar
 // 0 Name: 32643.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
-// 0 !LDRAW_ORG Part UPDATE 2025-03
+// 0 !LDRAW_ORG Part UPDATE 2025-04
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -14,12 +14,14 @@ function ldraw_lib__32643() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS BrickLink 27393, Flash, Motion, Power, Rebrickable 27393
+// 0 !KEYWORDS BrickLink 27393, Flash, Motion, Rebrickable 27393
 // 
 // 0 !HISTORY 2021-03-22 {LEGO/Unity Microgame} Original part shape
 // 0 !HISTORY 2021-09-07 [GeraldLasser] File preparation for LDraw Parts Tracker
 // 0 !HISTORY 2023-09-21 [Holly-Wood] Changed edges to conds, sanded mesh
 // 0 !HISTORY 2025-03-30 [OrionP] Official Update 2025-03
+// 0 !HISTORY 2025-04-02 [Holly-Wood] Sanded description
+// 0 !HISTORY 2025-04-27 [OrionP] Official Update 2025-04
 // 
 // 0 // Handle
 // 1 16 0 -6.5 0 0 0 4 0 13 0 4 0 0 5-16cylo.dat

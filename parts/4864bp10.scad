@@ -12,8 +12,8 @@ function ldraw_lib__4864bp10() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Metroliner Club Car, racing stripes, red, Train
-// 0 !KEYWORDS white and blue stripes
+// 0 !KEYWORDS Metroliner Club Car, racing stripes, Rebrickable 4864bpr0003, red
+// 0 !KEYWORDS set 10002, Train, white and blue stripes
 // 
 // 0 !HISTORY 2004-05-17 [sbliss] BFC'ed, keywords, used subfile
 // 0 !HISTORY 2004-09-15 [PTadmin] Official Update 2004-03

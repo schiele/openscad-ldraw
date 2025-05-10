@@ -13,7 +13,8 @@ function ldraw_lib__990() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Flash, flashlight, gates, Level Crossing
+// 0 !KEYWORDS BrickLink x543, Flash, flashlight, gates, Level Crossing
+// 0 !KEYWORDS Rebrickable upn0271
 // 
 // 0 !HISTORY 2009-12-29 [PTadmin] Official Update 2009-03
 // 0 !HISTORY 2013-04-01 [MagFors] Changed colour 383 to 494 (real metal)

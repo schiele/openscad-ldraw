@@ -12,7 +12,8 @@ function ldraw_lib__4066bp0m() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Brick
-// 0 !KEYWORDS bricklink 4066pb034, house, Living Room, School, Set 2442, Set 2642
+// 0 !KEYWORDS bricklink 4066pb034, house, Living Room, Rebrickable 4066pr0118
+// 0 !KEYWORDS School, Set 2442, Set 2642
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
 // 0 !HISTORY 2022-02-28 [Philo] Used Bright Light Orange instead of Orange

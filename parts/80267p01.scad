@@ -11,7 +11,8 @@ function ldraw_lib__80267p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Ferrari Daytona SP3, set 42143
+// 0 !KEYWORDS BrickLink 80267pb01, Ferrari Daytona SP3, Rebrickable 80267pr0001
+// 0 !KEYWORDS set 42143
 // 
 // 0 !HISTORY 2023-11-19 [OrionP] Official Update 2023-06
 // 

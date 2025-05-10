@@ -20,8 +20,8 @@ function ldraw_lib__30367cps8() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS Artoo, Artoo-Detoo, astromech, blue droid, BrickLink 553pb017b
-// 0 !KEYWORDS BrickOwl 429769, droid, minifig, R2, Rebrickable 30367cpr1000
-// 0 !KEYWORDS Set 75136, set 75159, Set 75168, set 75214, Star Wars
+// 0 !KEYWORDS droid, minifig, R2, Rebrickable 30367cpr1000, Set 75136, set 75159
+// 0 !KEYWORDS Set 75168, set 75214, Star Wars
 // 
 // 0 !HISTORY 2024-05-28 [OrionP] Official Update 2024-04
 // 

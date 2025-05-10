@@ -12,7 +12,8 @@ function ldraw_lib__47759pm0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Lord of the Rings, Shelob
+// 0 !KEYWORDS BrickLink 47759pb09, Lord of the Rings, Rebrickable 47759pr0002
+// 0 !KEYWORDS Set 5001132, Shelob
 // 
 // 0 !CMDLINE -c0
 // 

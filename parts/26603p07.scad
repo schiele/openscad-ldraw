@@ -11,8 +11,8 @@ function ldraw_lib__26603p07() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bird, Bricklink 26603pb385, Brickowl 360289, Dune, emblem
-// 0 !KEYWORDS Rebrickable 26603pr0130, Set 10327, symbol
+// 0 !KEYWORDS Bird, Bricklink 26603pb385, Dune, emblem, Rebrickable 26603pr0130
+// 0 !KEYWORDS Set 10327, symbol
 // 
 // 0 !HISTORY 2024-10-27 [OrionP] Official Update 2024-09
 // 

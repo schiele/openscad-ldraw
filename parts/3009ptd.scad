@@ -11,7 +11,7 @@ function ldraw_lib__3009ptd() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3009pb021
+// 0 !KEYWORDS Bricklink 3009pb021, Rebrickable 3009pr0039, Set 113-2-DBASE
 // 
 // 0 !HISTORY 2011-06-10 [tchang] Change title
 // 0 !HISTORY 2019-06-19 [Darats] Rework pattern

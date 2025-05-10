@@ -14,9 +14,8 @@ function ldraw_lib__76382p22() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Adventurers, Bricklink 973p22c01, BrickOwl 85553
-// 0 !KEYWORDS Rebrickable 973c03h01pr0022, Sam Sanister, Sam Sinister, set 6399
-// 0 !KEYWORDS Sly Boots
+// 0 !KEYWORDS Adventurers, Bricklink 973p22c01, Rebrickable 973c03h01pr0022
+// 0 !KEYWORDS Sam Sanister, Sam Sinister, set 6399, Sly Boots
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

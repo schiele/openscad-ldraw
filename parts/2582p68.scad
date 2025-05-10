@@ -11,6 +11,8 @@ function ldraw_lib__2582p68() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS Rebrickable 2582pr0001, Set 6862
+// 
 // 0 !HISTORY 1998-10-15 [PTadmin] Official Update 1998-09
 // 0 !HISTORY 1999-02-01 [PTadmin] Official Update 1999-01
 // 0 !HISTORY 2003-10-14 [westrate] Subfiled, BFC'd

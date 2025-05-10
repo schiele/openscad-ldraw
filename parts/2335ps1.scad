@@ -13,7 +13,7 @@ function ldraw_lib__2335ps1() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS conduit, cover, Episode One, flap, machinery, Rebrickable 2335pr0028
-// 0 !KEYWORDS Sebulba, Star Wars
+// 0 !KEYWORDS Sebulba, Set 7171, Star Wars
 // 
 // 0 !HISTORY 2002-04-25 [PTadmin] Official Update 2002-02
 // 0 !HISTORY 2002-06-22 [fwcain] #1: References to dithered colors' subfiles were not using proper color codes...

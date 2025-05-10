@@ -14,11 +14,11 @@ function ldraw_lib__76382pw8() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS bandit, Bricklink 973px55c01, BrickOwl 971904, cardsharper, cowboy
-// 0 !KEYWORDS cowboys, desperado, Dewey Cheatum, Joe Five Aces Williams
-// 0 !KEYWORDS Legoredo City, Mini Upper Part No 230, Pokerface Sam
-// 0 !KEYWORDS Rebrickable 973c31h03pr0055, set 6755, set 6761, set 6762, Set 6764
-// 0 !KEYWORDS set 6769, swindler, western, wild west
+// 0 !KEYWORDS bandit, Bricklink 973px55c01, cardsharper, cowboy, cowboys
+// 0 !KEYWORDS desperado, Dewey Cheatum, Joe Five Aces Williams, Legoredo City
+// 0 !KEYWORDS Mini Upper Part No 230, Pokerface Sam, Rebrickable 973c31h03pr0055
+// 0 !KEYWORDS set 6755, set 6761, set 6762, Set 6764, set 6769, swindler, western
+// 0 !KEYWORDS wild west
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

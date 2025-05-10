@@ -13,7 +13,7 @@ function ldraw_lib__3846pm0() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS BrickLink 3846pb42, Set 41185, set 41188
+// 0 !KEYWORDS BrickLink 3846pb042, Rebrickable 3846pr0007, Set 41185, set 41188
 // 
 // 0 !HISTORY 2020-06-28 [PTadmin] Official Update 2020-01
 // 

@@ -12,7 +12,8 @@ function ldraw_lib__98138p80() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Donut, Homer, Set 6059283, Simpson
+// 0 !KEYWORDS BrickLink 98138pb021, Donut, Homer, Rebrickable 98138pr0022
+// 0 !KEYWORDS Set 6059283, Simpson
 // 
 // 0 !HISTORY 2014-12-23 [PTadmin] Official Update 2014-02
 // 0 !HISTORY 2015-01-07 [cwdee] Updated description

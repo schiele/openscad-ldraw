@@ -12,7 +12,7 @@ function ldraw_lib__4864apt3() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS BrickLink 4864apx3, Rebrickable 4864apr0002
+// 0 !KEYWORDS BrickLink 4864apx3, Rebrickable 4864apr0002, Set 8830
 // 
 // 0 !PREVIEW 16 0 0 0 -1 0 0 0 1 0 0 0 -1
 // 

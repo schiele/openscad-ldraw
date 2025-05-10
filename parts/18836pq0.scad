@@ -12,7 +12,8 @@ function ldraw_lib__18836pq0() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS Collectible Minifigures, Egyptian Warrior, Series 13, Upside Down
+// 0 !KEYWORDS BrickLink 18836pb01, Collectible Minifigures, Egyptian Warrior
+// 0 !KEYWORDS Rebrickable 18836pr0003, Series 13, Set 71008-17, Upside Down
 // 
 // 0 !HISTORY 2018-12-08 [PTadmin] Official Update 2018-02
 // 

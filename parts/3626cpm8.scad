@@ -14,7 +14,7 @@ function ldraw_lib__3626cpm8() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626cpb0726, Brickowl 294246, Lord of the Rings, Merry
+// 0 !KEYWORDS BrickLink 3626pb0726, Lord of the Rings, Merry
 // 0 !KEYWORDS Rebrickable 3626cpr0989, set 9472
 // 
 // 0 !CMDLINE -c78

@@ -14,11 +14,10 @@ function ldraw_lib__76382pt4() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973px39c01, BrickOwl 862087, Freestyle
-// 0 !KEYWORDS Mini Upper Part No 222, Rebrickable 973c27h01pr0039, Set 1194
-// 0 !KEYWORDS Set 1853, Set 3047, Set 3233, Set 4055, Set 4224, Set 4225, Set 4271
-// 0 !KEYWORDS Set 4274, Set 4293, Set 6491, Set 6492, set 6493, set 6494, Set 9289
-// 0 !KEYWORDS Time Cruisers, Timmy
+// 0 !KEYWORDS Bricklink 973px39c01, Freestyle, Mini Upper Part No 222
+// 0 !KEYWORDS Rebrickable 973c27h01pr0039, Set 1194, Set 1853, Set 3047, Set 3233
+// 0 !KEYWORDS Set 4055, Set 4224, Set 4225, Set 4271, Set 4274, Set 4293, Set 6491
+// 0 !KEYWORDS Set 6492, set 6493, set 6494, Set 9289, Time Cruisers, Timmy
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

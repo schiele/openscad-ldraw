@@ -11,7 +11,7 @@ function ldraw_lib__2345p04() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Castle Wall
+// 0 !KEYWORDS BrickLink 2345pb02, Castle Wall, Rebrickable 2345pr0004, Set 1723
 // 
 // 0 !HISTORY 2012-08-09 [PTadmin] Official Update 2012-02
 // 

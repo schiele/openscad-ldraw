@@ -13,6 +13,7 @@ function ldraw_lib__2332ac01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Door
+// 0 !KEYWORDS BrickLink 2332, Rebrickable 2332
 // 
 // 0 !HISTORY 2022-12-20 [PTadmin] Official Update 2022-06
 // 

@@ -11,7 +11,8 @@ function ldraw_lib__92759p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Anakin Skywalker, Attack of the Clones, junk dealer, Mos Espa
+// 0 !KEYWORDS Anakin Skywalker, Attack of the Clones, BrickLink 92759pb01
+// 0 !KEYWORDS junk dealer, Mos Espa, Rebrickable 92759pr0001, set 75096
 // 0 !KEYWORDS shmi skywalker, slaver, Star Wars, Tatooine, The Phantom Menace
 // 
 // 0 !HISTORY 2019-12-27 [PTadmin] Official Update 2019-03

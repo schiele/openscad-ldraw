@@ -13,7 +13,8 @@ function ldraw_lib__18675ps3() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 18675pb07, First Order, Set 75101, Star Wars, TIE Fighter
+// 0 !KEYWORDS Bricklink 18675pb07, First Order, Rebrickable 18675pr0005, Set 75101
+// 0 !KEYWORDS Star Wars, TIE Fighter
 // 
 // 0 !HISTORY 2019-06-28 [GeraldLasser] Corrected Color
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03

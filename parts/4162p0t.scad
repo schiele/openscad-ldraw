@@ -11,8 +11,8 @@ function ldraw_lib__4162p0t() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS 1889, Architect, France, Gustave Eiffel, Paris, Set 21019
-// 0 !KEYWORDS The Eiffel Tower
+// 0 !KEYWORDS 1889, Architect, BrickLink 4162pb107, France, Gustave Eiffel, Paris
+// 0 !KEYWORDS Rebrickable 4162pr0031, Set 21019, The Eiffel Tower
 // 
 // 0 !HISTORY 2013-12-23 [PTadmin] Official Update 2013-02
 // 

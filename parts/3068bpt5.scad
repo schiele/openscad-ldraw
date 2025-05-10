@@ -15,8 +15,8 @@ function ldraw_lib__3068bpt5() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Set 10259, Set 10264, Set 10754, set 21310, Set 40312, Set 60200
-// 0 !KEYWORDS Set 60204, Set 60215
+// 0 !KEYWORDS BrickLink 3068pb1105, Rebrickable 3068bpr0364, Set 10259, Set 10264
+// 0 !KEYWORDS Set 10754, set 21310, Set 40312, Set 60200, Set 60204, Set 60215
 // 
 // 0 !CMDLINE -c15
 // 

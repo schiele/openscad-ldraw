@@ -19,6 +19,8 @@ function ldraw_lib__6255() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
+// 0 !KEYWORDS BrickLink x8
+// 
 // 0 !HISTORY 2007-08-25 {LEGO Universe Team} Original part shape
 // 0 !HISTORY 2007-11-11 [Philo] File preparation for LDraw Parts. Subparted leaves
 // 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01

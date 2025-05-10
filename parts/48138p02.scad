@@ -12,6 +12,7 @@ function ldraw_lib__48138p02() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Brick
+// 0 !KEYWORDS BrickLink 48138pb02, Rebrickable 48138pr0002, Set 5356
 // 
 // 0 !HISTORY 2014-06-21 [PTadmin] Official Update 2014-01
 // 

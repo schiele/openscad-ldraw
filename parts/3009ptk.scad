@@ -11,7 +11,8 @@ function ldraw_lib__3009ptk() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Mail truck, Set 105, Set 107-2
+// 0 !KEYWORDS BrickLink 3009pb027, Mail truck, Rebrickable 3009pr0036, Set 105
+// 0 !KEYWORDS Set 107-2
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
 // 

@@ -14,8 +14,9 @@ function ldraw_lib__92084p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS Art, Bricklink 92084pb01, Friends, Harry Potter, Pigwidgeon
-// 0 !KEYWORDS set 10217, set 10229, Set 2000430, Set 40500, Set 41005, set 4738
-// 0 !KEYWORDS Set 4841, set 4842, Set 75968, Set 75978, Set 75980, Winter Village
+// 0 !KEYWORDS Rebrickable 92084pr0001, set 10217, set 10229, Set 2000430
+// 0 !KEYWORDS Set 40500, Set 41005, set 4738, Set 4841, set 4842, Set 75968
+// 0 !KEYWORDS Set 75978, Set 75980, Winter Village
 // 
 // 0 !HISTORY 2022-05-07 [PTadmin] Official Update 2022-03
 // 

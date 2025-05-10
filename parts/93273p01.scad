@@ -11,7 +11,7 @@ function ldraw_lib__93273p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Hubble, Rebrickable 93273pr9993, Set 10283
+// 0 !KEYWORDS BrickLink 93273pb157, Hubble, Rebrickable 93273pr9993, Set 10283
 // 
 // 0 !HISTORY 2023-08-25 [OrionP] Official Update 2023-04
 // 

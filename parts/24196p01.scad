@@ -18,7 +18,7 @@ function ldraw_lib__24196p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Ashwing, Set 41183
+// 0 !KEYWORDS Ashwing, BrickLink 24196pb05, Rebrickable 24196pr0005, Set 41183
 // 
 // 0 !HISTORY 2018-01-28 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2018-05-08 [Philo] File preparation for LDraw Parts Tracker

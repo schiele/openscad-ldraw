@@ -12,6 +12,8 @@ function ldraw_lib__825ap02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 825p02, Rebrickable 825pr0002, Set 338
+// 
 // 0 !CMDLINE -c47
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01

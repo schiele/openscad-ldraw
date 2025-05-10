@@ -19,7 +19,8 @@ function ldraw_lib__30126p02() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS bald eagle, Feather, indian, western, wild west
+// 0 !KEYWORDS bald eagle, BrickLink 30126pb02, Feather, indian
+// 0 !KEYWORDS Rebrickable 30126pr0002, Set 8683, western, wild west
 // 
 // 0 !HISTORY 2017-07-03 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2017-07-03 [Philo] File preparation for LDraw Parts Tracker

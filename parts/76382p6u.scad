@@ -15,9 +15,9 @@ function ldraw_lib__76382p6u() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS Alien, Alpha Draconis, Alpha Dragonis, Bricklink 973pb0195c01
-// 0 !KEYWORDS BrickOwl 69700, Extraterrestrial, Invaders, Ixvizikil
-// 0 !KEYWORDS Mini Upper Part No 247, Otopian, Overlord, Planet Humorless
-// 0 !KEYWORDS Rebrickable 973c03h08pr0195, set 6975, set 6979, Space, UFO, Zotax
+// 0 !KEYWORDS Extraterrestrial, Invaders, Ixvizikil, Mini Upper Part No 247
+// 0 !KEYWORDS Otopian, Overlord, Planet Humorless, Rebrickable 973c03h08pr0195
+// 0 !KEYWORDS set 6975, set 6979, Space, UFO, Zotax
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

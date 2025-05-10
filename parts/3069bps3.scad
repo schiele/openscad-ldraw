@@ -12,7 +12,8 @@ function ldraw_lib__3069bps3() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !KEYWORDS Dark Red Geometric Pattern, Episode 2, Star Wars
+// 0 !KEYWORDS BrickLink 3069px47, Dark Red Geometric Pattern, Episode 2
+// 0 !KEYWORDS Rebrickable 3069bpr0088, Set 4207901, Star Wars
 // 
 // 0 !HISTORY 2004-04-22 [PTadmin] Official Update 2004-02
 // 0 !HISTORY 2007-06-13 [PTadmin] Header formatted for Contributor Agreement

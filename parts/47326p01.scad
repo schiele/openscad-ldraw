@@ -12,6 +12,8 @@ function ldraw_lib__47326p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink x1192px3, Rebrickable 47326pat0001, Set 10203
+// 
 // 0 !HISTORY 2011-07-31 [mikeheide] Changed to rubber color code
 // 0 !HISTORY 2019-01-01 [MagFors] Rearranged subfile structure
 // 0 !HISTORY 2022-03-06 [PTadmin] Official Update 2022-02

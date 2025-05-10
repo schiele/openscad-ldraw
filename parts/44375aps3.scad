@@ -13,7 +13,8 @@ function ldraw_lib__44375aps3() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Radar Dish, Round, Space, Star Wars
+// 0 !KEYWORDS BrickLink 44375apb06, Radar Dish, Rebrickable 44375apr0008, Round
+// 0 !KEYWORDS set 7663, Space, Star Wars
 // 
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
 // 

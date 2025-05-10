@@ -16,8 +16,7 @@ function ldraw_lib__17018p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Bricklink 17018pb01, Brickowl 202161, Rebrickable 17018pr0001
-// 0 !KEYWORDS Set 76022, Set 76202
+// 0 !KEYWORDS Bricklink 17018pb01, Rebrickable 17018pr0001, Set 76022, Set 76202
 // 
 // 0 !HISTORY 2023-08-25 [OrionP] Official Update 2023-04
 // 

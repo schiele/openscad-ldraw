@@ -14,7 +14,7 @@ function ldraw_lib__3815bps5() = [
 // 
 // 0 !KEYWORDS belt, Blaster, fast-draw, firearm, gun, gunfighter, gunslinger
 // 0 !KEYWORDS Han Solo, holster, Original Trilogy, Pirate, Pistol, quick-draw
-// 0 !KEYWORDS shootist, smuggler, Star Wars, Weapon
+// 0 !KEYWORDS Set 6212, shootist, smuggler, Star Wars, Weapon
 // 
 // 0 !HISTORY 2002-08-18 [fwcain] Original pattern design
 // 0 !HISTORY 2020-05-30 [cwdee] Update for revised geometry

@@ -13,7 +13,7 @@ function ldraw_lib__71613() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS rock raiders
+// 0 !KEYWORDS BrickLink 30346c01, Rebrickable 30346c01, rock raiders
 // 
 // 0 !HISTORY 2013-09-02 [theJudeAbides] Separated into constituent files, BFCed
 // 0 !HISTORY 2018-02-07 [Steffen] moved button into separate file

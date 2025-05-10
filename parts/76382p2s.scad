@@ -14,7 +14,7 @@ function ldraw_lib__76382p2s() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS blacksmith, Bricklink 973pb5435c01, BrickOwl 1215437, Forge
+// 0 !KEYWORDS blacksmith, Bricklink 973pb5435c01, Forge
 // 0 !KEYWORDS Rebrickable 973c01h01pr6824, Set 21343, Viking
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01

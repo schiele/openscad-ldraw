@@ -13,7 +13,8 @@ function ldraw_lib__3626bpao() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626bpb0183, Jing Lee, set 3382, set 7419
+// 0 !KEYWORDS BrickLink 3626pb0183, Jing Lee, Rebrickable 3626bpr0057, set 3382
+// 0 !KEYWORDS set 7419
 // 
 // 0 !HISTORY 2011-07-25 [BlackBrick89] Re-Written
 // 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02

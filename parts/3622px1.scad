@@ -13,7 +13,8 @@ function ldraw_lib__3622px1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Adventure Time, Bricklink 3622pb069, Princess Bubblegum, Set 21308
+// 0 !KEYWORDS Adventure Time, Bricklink 3622pb069, Princess Bubblegum
+// 0 !KEYWORDS Rebrickable 3622pr0007, Set 21308
 // 
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
 // 

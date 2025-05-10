@@ -18,7 +18,7 @@ function ldraw_lib__3815bp8i() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Emmet
+// 0 !KEYWORDS Emmet, Set 70818
 // 
 // 0 !CMDLINE -c25
 // 

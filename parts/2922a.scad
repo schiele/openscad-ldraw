@@ -20,7 +20,7 @@ function ldraw_lib__2922a() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Hinge
-// 0 !KEYWORDS bar, cantenary, grille, rod
+// 0 !KEYWORDS bar, cantenary, grille, Rebrickable 2881, rod
 // 
 // 0 !HISTORY 1998-07-15 [PTadmin] Official Update 1998-07
 // 0 !HISTORY 1999-02-01 [PTadmin] Official Update 1999-01

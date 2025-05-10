@@ -14,6 +14,7 @@ function ldraw_lib__3430c03_f1() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Vehicle
+// 0 !KEYWORDS BrickLink 3430c03, Rebrickable 3430c03
 // 
 // 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 

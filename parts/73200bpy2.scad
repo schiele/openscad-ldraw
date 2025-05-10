@@ -13,7 +13,8 @@ function ldraw_lib__73200bpy2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS 2016, Bricklink 970c00pb0644, Ford, GT, Set 75881, Speed Champions
+// 0 !KEYWORDS 2016, Bricklink 970c00pb0644, Ford, GT, Rebrickable 970c27pr1247
+// 0 !KEYWORDS Set 75881, Speed Champions
 // 
 // 0 !HISTORY 2023-06-24 [OrionP] Official Update 2023-03
 // 0 !HISTORY 2024-11-30 [MagFors] Added missing comma

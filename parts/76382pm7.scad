@@ -14,10 +14,9 @@ function ldraw_lib__76382pm7() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Aragorn, Bricklink 973pb1139c01, BrickOwl 756100, Elessar, Gondor
-// 0 !KEYWORDS Lord of the Rings, Mini Upper Part No 2109
-// 0 !KEYWORDS Rebrickable 973c07h02pr2109, set 79008, set 9472, set 9474, Strider
-// 0 !KEYWORDS The Fellowship
+// 0 !KEYWORDS Aragorn, Bricklink 973pb1139c01, Elessar, Gondor, Lord of the Rings
+// 0 !KEYWORDS Mini Upper Part No 2109, Rebrickable 973c07h02pr2109, set 79008
+// 0 !KEYWORDS set 9472, set 9474, Strider, The Fellowship
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

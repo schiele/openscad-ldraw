@@ -12,7 +12,7 @@ function ldraw_lib__75979() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Divers
+// 0 !KEYWORDS BrickLink 30080c01, Divers, Rebrickable 30080c01
 // 
 // 0 !HISTORY 1998-02-12 [PTadmin] Official Update 1998-02
 // 0 !HISTORY 2007-10-12 [PTadmin] Header formatted for Contributor Agreement

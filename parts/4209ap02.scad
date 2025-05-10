@@ -12,7 +12,8 @@ function ldraw_lib__4209ap02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS bricklink 4209pb01, helicopter, rescue, set 6342, Set 6387
+// 0 !KEYWORDS bricklink 4209pb01, helicopter, Rebrickable 4209pr0005, rescue
+// 0 !KEYWORDS set 6342, Set 6387
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 

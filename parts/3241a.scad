@@ -26,6 +26,8 @@ function ldraw_lib__3241a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
+// 0 !KEYWORDS BrickLink 3241, Rebrickable 3241
+// 
 // 0 !CMDLINE -c7
 // 
 // 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01

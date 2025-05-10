@@ -14,7 +14,8 @@ function ldraw_lib__3626cps7() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626cpb2922, Mace Windu, Set 75309, Set 75342, Star Wars
+// 0 !KEYWORDS BrickLink 3626pb2922, Mace Windu, Rebrickable 3626cpr3548, Set 75309
+// 0 !KEYWORDS Set 75342, Star Wars
 // 
 // 0 !HISTORY 2022-12-20 [PTadmin] Official Update 2022-06
 // 

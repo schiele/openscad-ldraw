@@ -11,7 +11,8 @@ function ldraw_lib__3623pb0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3623pb022, Iron Man, Marvel, Set 76165, Superheroes
+// 0 !KEYWORDS Bricklink 3623pb022, Iron Man, Marvel, Rebrickable 3623pr0030
+// 0 !KEYWORDS Set 76165, Superheroes
 // 
 // 0 !HISTORY 2024-07-29 [OrionP] Official Update 2024-06
 // 

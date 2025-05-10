@@ -12,8 +12,8 @@ function ldraw_lib__3068bp22() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3068bp22, Maintenance, Metro park, Service station
-// 0 !KEYWORDS Set 6394
+// 0 !KEYWORDS BrickLink 3068p22, Maintenance, Metro park, Rebrickable 3068bpr0051
+// 0 !KEYWORDS Service station, Set 6394
 // 
 // 0 !HISTORY 2002-02-15 [BrickCaster] groove
 // 0 !HISTORY 2002-08-18 [PTadmin] Official Update 2002-04

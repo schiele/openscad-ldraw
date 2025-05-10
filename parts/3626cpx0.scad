@@ -14,7 +14,8 @@ function ldraw_lib__3626cpx0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626cpb1964, Ideas, Mae Jemison, Set 21312
+// 0 !KEYWORDS BrickLink 3626pb1964, Ideas, Mae Jemison, Rebrickable 3626cpr2516
+// 0 !KEYWORDS Set 21312
 // 
 // 0 !HISTORY 2019-01-29 [Philo] Added texmapped version
 // 0 !HISTORY 2023-08-25 [OrionP] Official Update 2023-04

@@ -17,9 +17,9 @@ function ldraw_lib__3626bpa4() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Adventurers, beard, Bricklink 3626bpa4, Brickowl 108109, eyebrows
-// 0 !KEYWORDS face, moustache, Racers, Rebrickable 3626bpr0044, Senor Palomar
-// 0 !KEYWORDS Set 4593, set 5976, set 5986
+// 0 !KEYWORDS Adventurers, beard, BrickLink 3626pa4, eyebrows, face, moustache
+// 0 !KEYWORDS Racers, Rebrickable 3626bpr0044, Senor Palomar, Set 4593, set 5976
+// 0 !KEYWORDS set 5986
 // 
 // 0 !CMDLINE -c14
 // 

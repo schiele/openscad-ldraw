@@ -13,7 +13,8 @@ function ldraw_lib__14769p0h() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 14769pb158, Dimensions, Fantastic Beasts, Set 71253
+// 0 !KEYWORDS Bricklink 14769pb158, Dimensions, Fantastic Beasts
+// 0 !KEYWORDS Rebrickable 14769pr1055, Set 71253
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
 // 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives

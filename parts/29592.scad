@@ -13,7 +13,7 @@ function ldraw_lib__29592() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS Sport equipment
+// 0 !KEYWORDS BrickLink 29596, Rebrickable 29596, Sport equipment
 // 
 // 0 !HISTORY 2018-01-28 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2020-03-10 [Sirio] File preparation for LDraw Parts Tracker

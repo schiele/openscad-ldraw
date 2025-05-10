@@ -11,7 +11,8 @@ function ldraw_lib__3068bpx8() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3068bpb1126, Powerpuff Girls, Set 71346
+// 0 !KEYWORDS BrickLink 3068pb1126, Powerpuff Girls, Rebrickable 3068bpr0340
+// 0 !KEYWORDS Set 71346
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
 // 

@@ -13,8 +13,8 @@ function ldraw_lib__92456p0d() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink FTGpb018c01, Brickowl 185174, Christina
-// 0 !KEYWORDS Rebrickable 92456c01pr0017, Set 3316
+// 0 !KEYWORDS Bricklink FTGpb018c01, Christina, Rebrickable 92456c01pr0017
+// 0 !KEYWORDS Set 3316
 // 
 // 0 !HISTORY 2024-12-01 [OrionP] Official Update 2024-10
 // 0 !HISTORY 2025-01-11 [OrionP] Moved from 92241p0dc01.dat

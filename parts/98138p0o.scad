@@ -15,6 +15,7 @@ function ldraw_lib__98138p0o() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS BrickLink 98138pb076, Disney Princesses, Olaf
+// 0 !KEYWORDS Rebrickable 98138pr0066, Set 41148
 // 
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
 // 

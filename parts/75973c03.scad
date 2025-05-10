@@ -13,7 +13,7 @@ function ldraw_lib__75973c03() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 879c02, Set 8482, Set 8483
+// 0 !KEYWORDS Bricklink 879c02, Rebrickable 879c02, Set 8482, Set 8483
 // 
 // 0 !HISTORY 2024-01-24 [Blechtaler] made from 75973, but without hardcolored bottom
 // 0 !HISTORY 2024-12-30 [OrionP] Official Update 2024-11

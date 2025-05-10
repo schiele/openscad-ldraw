@@ -13,7 +13,7 @@ function ldraw_lib__98138p82() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS Alice in Wonderland, BrickLink 98138pb051
-// 0 !KEYWORDS Disney Collectible Minifigs
+// 0 !KEYWORDS Disney Collectible Minifigs, Rebrickable 98138pr0053, Set 71012-19
 // 
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
 // 

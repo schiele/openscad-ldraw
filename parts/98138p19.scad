@@ -18,7 +18,8 @@ function ldraw_lib__98138p19() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 98138pb128, Cute, Dots, Kiss, Kissing, Love, Set 41908
+// 0 !KEYWORDS Bricklink 98138pb128, Cute, Dots, Kiss, Kissing, Love
+// 0 !KEYWORDS Rebrickable 98138pr0134, Set 41908
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
 // 

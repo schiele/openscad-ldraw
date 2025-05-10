@@ -12,7 +12,7 @@ function ldraw_lib__24093p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS 24093pb08, set 71040
+// 0 !KEYWORDS 24093pb08, BrickLink 24093pb008, Rebrickable 24093pr0011, set 71040
 // 
 // 0 !HISTORY 2019-09-09 [PTadmin] Official Update 2019-02
 // 

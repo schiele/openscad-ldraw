@@ -14,8 +14,8 @@ function ldraw_lib__76382p5j() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Animal Crossing, Bricklink 973pb5593c01, Brickowl 588900, Maple
-// 0 !KEYWORDS Nintendo, Rebrickable 973c26h27pr7053, Set 30662
+// 0 !KEYWORDS Animal Crossing, Bricklink 973pb5593c01, Maple, Nintendo
+// 0 !KEYWORDS Rebrickable 973c26h27pr7053, Set 30662
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

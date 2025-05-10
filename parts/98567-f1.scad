@@ -14,7 +14,7 @@ function ldraw_lib__98567_f1() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Hose
-// 0 !KEYWORDS hero factory
+// 0 !KEYWORDS BrickLink 98567, hero factory, Rebrickable 98567
 // 
 // 0 !HISTORY 2023-04-17 [OrionP] Official Update 2023-02
 // 

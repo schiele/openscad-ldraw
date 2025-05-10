@@ -13,8 +13,8 @@ function ldraw_lib__3070bp0i() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS BrickLink 3070bpb118, CMF Series 17, phone, Set 71018, telephone
-// 0 !KEYWORDS Yuppie
+// 0 !KEYWORDS BrickLink 3070pb118, CMF Series 17, phone, Rebrickable 3070bpr0179
+// 0 !KEYWORDS Set 71018, telephone, Yuppie
 // 
 // 0 !HISTORY 2019-09-09 [PTadmin] Official Update 2019-02
 // 

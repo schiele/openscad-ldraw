@@ -11,6 +11,7 @@ function ldraw_lib__u197() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Figure
+// 0 !KEYWORDS BrickLink x197, Rebrickable upn0225
 // 
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
 // 

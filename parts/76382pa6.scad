@@ -14,12 +14,12 @@ function ldraw_lib__76382pa6() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Adventurers, belt clip, Bricklink 973pa6c01, BrickOwl 800059, buckle
-// 0 !KEYWORDS camera, compass, desert, Egypt, female, Gail Storm
-// 0 !KEYWORDS Jurassic Park III, Linda Lovelay, Linda Lovely
-// 0 !KEYWORDS Mini Upper Part No 297, Orient Expedition, pen, Pippin Read
-// 0 !KEYWORDS Pippin Reed, pockets, Rebrickable 973c26h01pr0006, Reporter, scarf
-// 0 !KEYWORDS Set 1354, Set 1370, set 5978, set 5988, set 7419, Studios
+// 0 !KEYWORDS Adventurers, belt clip, Bricklink 973pa6c01, buckle, camera, compass
+// 0 !KEYWORDS desert, Egypt, female, Gail Storm, Jurassic Park III, Linda Lovelay
+// 0 !KEYWORDS Linda Lovely, Mini Upper Part No 297, Orient Expedition, pen
+// 0 !KEYWORDS Pippin Read, Pippin Reed, pockets, Rebrickable 973c26h01pr0006
+// 0 !KEYWORDS Reporter, scarf, Set 1354, Set 1370, set 5978, set 5988, set 7419
+// 0 !KEYWORDS Studios
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

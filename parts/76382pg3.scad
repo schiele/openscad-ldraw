@@ -14,9 +14,8 @@ function ldraw_lib__76382pg3() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb0244c01, BrickOwl 89948, Championship Challenge
-// 0 !KEYWORDS Chip Kicker, football, Rebrickable 973c22h01pr0244, Red Team
-// 0 !KEYWORDS Set 3409, Sports
+// 0 !KEYWORDS Bricklink 973pb0244c01, Championship Challenge, Chip Kicker
+// 0 !KEYWORDS football, Rebrickable 973c22h01pr0244, Red Team, Set 3409, Sports
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

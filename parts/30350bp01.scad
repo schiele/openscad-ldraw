@@ -14,7 +14,8 @@ function ldraw_lib__30350bp01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 30350bpb110, Crocodile, Hinge, Set 10277
+// 0 !KEYWORDS Bricklink 30350bpb110, Crocodile, Hinge, Rebrickable 30350bpr0016
+// 0 !KEYWORDS Set 10277
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 

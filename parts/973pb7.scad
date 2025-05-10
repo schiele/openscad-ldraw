@@ -14,7 +14,7 @@ function ldraw_lib__973pb7() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Batman, Penguin
+// 0 !KEYWORDS Batman, Penguin, set 7783
 // 
 // 0 !HISTORY 2012-08-09 [PTadmin] Official Update 2012-02
 // 

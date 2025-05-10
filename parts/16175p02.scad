@@ -13,6 +13,7 @@ function ldraw_lib__16175p02() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
+// 0 !KEYWORDS BrickLink 16175pb02, Rebrickable 16175pr0002, Set 71008-9
 // 
 // 0 !HISTORY 2019-09-09 [PTadmin] Official Update 2019-02
 // 0 !HISTORY 2020-05-10 [cwdee] Update colour name in description

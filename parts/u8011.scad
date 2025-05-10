@@ -15,7 +15,8 @@ function ldraw_lib__u8011() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Baseplate
-// 0 !KEYWORDS Automatic Binding Brick, Lego Mursten
+// 0 !KEYWORDS Automatic Binding Brick, BrickLink bb0340, Lego Mursten
+// 0 !KEYWORDS Rebrickable 700b
 // 
 // 0 !HISTORY 2012-08-09 [PTadmin] Official Update 2012-02
 // 

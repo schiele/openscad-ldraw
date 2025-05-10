@@ -11,7 +11,7 @@ function ldraw_lib__3069bpcf() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3069bpb0348, Emmet, Movie, Rebrickable 3069bpr0140
+// 0 !KEYWORDS BrickLink 3069pb0348, Emmet, Movie, Rebrickable 3069bpr0140
 // 0 !KEYWORDS Set 70818
 // 
 // 0 !HISTORY 2021-10-24 [Holly-Wood] Fixed overlap

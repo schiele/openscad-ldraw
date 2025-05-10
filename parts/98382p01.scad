@@ -22,7 +22,8 @@ function ldraw_lib__98382p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS animal, Toy
+// 0 !KEYWORDS animal, BrickLink 98382pb001, Rebrickable 98382pr0001, set 10235
+// 0 !KEYWORDS Toy
 // 
 // 0 !HISTORY 2013-08-14 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2017-02-20 [Philo] File preparation for LDraw Parts Tracker

@@ -14,8 +14,8 @@ function ldraw_lib__3822p60() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3822pb004, BrickOwl 988169, Rebrickable 3822pr0007
-// 0 !KEYWORDS Set 6378, Set 6394, set 6395, Set 6628, Set 6695, town
+// 0 !KEYWORDS Bricklink 3822pb004, Rebrickable 3822pr0007, Set 6378, Set 6394
+// 0 !KEYWORDS set 6395, Set 6628, Set 6695, town
 // 
 // 0 !CMDLINE -c15
 // 

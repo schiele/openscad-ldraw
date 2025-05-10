@@ -12,7 +12,8 @@ function ldraw_lib__3245cpz5() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickheadz, BrickLink 3245cpb065, Master Wu, Ninjago, Set 41488
+// 0 !KEYWORDS Brickheadz, BrickLink 3245cpb065, Master Wu, Ninjago
+// 0 !KEYWORDS Rebrickable 3245cpr0006, Set 41488
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 

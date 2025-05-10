@@ -13,7 +13,8 @@ function ldraw_lib__92198p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Christina, Emma, Isabella, Rapunzel
+// 0 !KEYWORDS BrickLink 98704, Christina, Emma, Isabella, Rapunzel
+// 0 !KEYWORDS Rebrickable 92198pr0005, set 10727
 // 
 // 0 !HISTORY 2014-12-23 [PTadmin] Official Update 2014-02
 // 

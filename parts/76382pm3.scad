@@ -14,10 +14,9 @@ function ldraw_lib__76382pm3() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb1140c01, BrickOwl 638292, Frodo Baggins, Hobbit
-// 0 !KEYWORDS Lord of the Rings, Mini Upper Part No 2055
-// 0 !KEYWORDS Rebrickable 973c19h02pr2055, Set 79006, Set 9470, set 9472
-// 0 !KEYWORDS The Fellowship
+// 0 !KEYWORDS Bricklink 973pb1140c01, Frodo Baggins, Hobbit, Lord of the Rings
+// 0 !KEYWORDS Mini Upper Part No 2055, Rebrickable 973c19h02pr2055, Set 79006
+// 0 !KEYWORDS Set 9470, set 9472, The Fellowship
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

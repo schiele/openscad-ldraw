@@ -11,7 +11,8 @@ function ldraw_lib__3069bpzd() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickheadz, BrickLink 3069bpb650, Frozen, Olaf, Set 41618
+// 0 !KEYWORDS Brickheadz, BrickLink 3069pb0650, Frozen, Olaf
+// 0 !KEYWORDS Rebrickable 3069bpr0239, Set 41618
 // 
 // 0 !HISTORY 2019-09-09 [PTadmin] Official Update 2019-02
 // 

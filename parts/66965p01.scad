@@ -13,8 +13,8 @@ function ldraw_lib__66965p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 66965pb01, Brickowl 599181, Bunny, Friends
-// 0 !KEYWORDS Rebrickable 66965pr0001, Set 42639
+// 0 !KEYWORDS Bricklink 66965pb01, Bunny, Friends, Rebrickable 66965pr0001
+// 0 !KEYWORDS Set 42639
 // 
 // 0 !HISTORY 2024-10-27 [OrionP] Official Update 2024-09
 // 

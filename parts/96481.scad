@@ -15,6 +15,7 @@ function ldraw_lib__96481() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Figure Accessory
+// 0 !KEYWORDS BrickLink 93080i
 // 
 // 0 !HISTORY 2013-08-14 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2014-09-02 [Philo] File preparation for LDraw Parts Tracker

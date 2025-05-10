@@ -11,7 +11,8 @@ function ldraw_lib__3068bpx4() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3068bpb1103, Minecraft, Set 21137, Set 21144, Set 21152
+// 0 !KEYWORDS BrickLink 3068pb1103, Minecraft, Rebrickable 3068bpr0337, Set 21137
+// 0 !KEYWORDS Set 21144, Set 21152
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
 // 

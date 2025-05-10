@@ -13,6 +13,8 @@ function ldraw_lib__3067ap02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
+// 0 !KEYWORDS BrickLink 3009px9, Rebrickable 3009pr0081, Set 226-1-DBASE
+// 
 // 0 !HISTORY 2012-12-28 [PTadmin] Official Update 2012-03
 // 0 !HISTORY 2017-12-05 [PTadmin] Renamed from 3067p02.dat
 // 0 !HISTORY 2019-04-29 [fwcain] Sub-filed

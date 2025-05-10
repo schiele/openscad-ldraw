@@ -14,7 +14,8 @@ function ldraw_lib__3070bp11() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3070bpb142, Dots, Funky Animals, Set 41901
+// 0 !KEYWORDS BrickLink 3070pb142, Dots, Funky Animals, Rebrickable 3070bpr0194
+// 0 !KEYWORDS Set 41901
 // 
 // 0 !HISTORY 2022-05-07 [PTadmin] Official Update 2022-03
 // 

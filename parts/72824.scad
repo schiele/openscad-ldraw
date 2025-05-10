@@ -13,7 +13,7 @@ function ldraw_lib__72824() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS football, Sphere, truncated icosahedron
+// 0 !KEYWORDS BrickLink x45, football, Sphere, truncated icosahedron
 // 
 // 0 !HISTORY 2012-12-28 [PTadmin] Official Update 2012-03
 // 

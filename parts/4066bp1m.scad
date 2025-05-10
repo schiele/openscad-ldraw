@@ -20,8 +20,8 @@ function ldraw_lib__4066bp1m() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Brick
-// 0 !KEYWORDS Bedroom, Betsy, bricklink 4066pb183, Brickowl 83225, Girls
-// 0 !KEYWORDS Rebrickable 4066pr0019, Set 1540
+// 0 !KEYWORDS Bedroom, Betsy, bricklink 4066pb183, Girls, Rebrickable 4066pr0019
+// 0 !KEYWORDS Set 1540
 // 
 // 0 !HISTORY 2024-07-29 [OrionP] Official Update 2024-06
 // 

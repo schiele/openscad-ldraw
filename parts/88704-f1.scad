@@ -18,7 +18,7 @@ function ldraw_lib__88704_f1() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS locomotive, Set 10277
+// 0 !KEYWORDS BrickLink 88704, locomotive, Rebrickable 88704, Set 10277
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 0 !HISTORY 2021-04-21 [UR] Corrected Edge Lines Whip End/Cylinder

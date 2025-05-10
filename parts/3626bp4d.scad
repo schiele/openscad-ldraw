@@ -13,8 +13,8 @@ function ldraw_lib__3626bp4d() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626bpx122, Castle, Royal Knights, Set 6044, Set 6076
-// 0 !KEYWORDS Set 6082, Set 6090, Set 6105
+// 0 !KEYWORDS BrickLink 3626px122, Castle, Rebrickable 3626bpr0304, Royal Knights
+// 0 !KEYWORDS Set 6044, Set 6076, Set 6082, Set 6090, Set 6105
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 

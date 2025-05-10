@@ -17,7 +17,8 @@ function ldraw_lib__98138p13() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 98138pb126, Dots, Fruit, Set 41908, Vegetable
+// 0 !KEYWORDS Bricklink 98138pb126, Dots, Fruit, Rebrickable 98138pr0146
+// 0 !KEYWORDS Set 41908, Vegetable
 // 
 // 0 !HISTORY 2022-05-07 [PTadmin] Official Update 2022-03
 // 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives

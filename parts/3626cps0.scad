@@ -13,7 +13,8 @@ function ldraw_lib__3626cps0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Alien, Bricklink 3626cpb1159, set 75059, Star Wars
+// 0 !KEYWORDS Alien, BrickLink 3626pb1159, Rebrickable 3626cpr1456, set 75059
+// 0 !KEYWORDS Star Wars
 // 
 // 0 !HISTORY 2015-10-11 [PTadmin] Official Update 2015-01
 // 0 !HISTORY 2022-07-11 [MagFors] Update description, added keywords

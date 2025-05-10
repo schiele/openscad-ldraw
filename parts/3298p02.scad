@@ -11,8 +11,9 @@ function ldraw_lib__3298p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS bricklink 3298px11, Bunny, Mouse, Rabbit, Set 10071, Set 1263
-// 0 !KEYWORDS Set 1545, Set 1677, Set 1953, Set 2875, Set 3047, Set 4116, Set 5870
+// 0 !KEYWORDS bricklink 3298px11, Bunny, Mouse, Rabbit, Rebrickable 3298pr0040
+// 0 !KEYWORDS Set 10071, Set 1263, Set 1545, Set 1677, Set 1953, Set 2875
+// 0 !KEYWORDS Set 3047, Set 4116, Set 5870
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 

@@ -11,7 +11,8 @@ function ldraw_lib__3068bps3() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Mos Espa Pod Race, Sebulba, Set 7171, Star Wars
+// 0 !KEYWORDS BrickLink 3068px8, Mos Espa Pod Race, Rebrickable 3068bpr0357
+// 0 !KEYWORDS Sebulba, Set 7171, Star Wars
 // 
 // 0 !CMDLINE -c0
 // 

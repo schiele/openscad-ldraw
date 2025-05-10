@@ -12,7 +12,7 @@ function ldraw_lib__52211() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS 3471, Christmas, cone, pine
+// 0 !KEYWORDS 3471, BrickLink 3471, Christmas, cone, pine, Rebrickable 3471
 // 
 // 0 !CMDLINE -c2
 // 

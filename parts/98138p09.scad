@@ -12,7 +12,7 @@ function ldraw_lib__98138p09() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Car, Ford, Set 10265
+// 0 !KEYWORDS BrickLink 98138pb085, Car, Ford, Rebrickable 98138pr0089, Set 10265
 // 
 // 0 !CMDLINE -c71
 // 

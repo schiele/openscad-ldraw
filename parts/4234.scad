@@ -22,6 +22,7 @@ function ldraw_lib__4234() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Vehicle
+// 0 !KEYWORDS BrickLink bb0047
 // 
 // 0 !HISTORY 2009-01-27 [mikeheide] delete four unnecessary edgelines.
 // 0 !HISTORY 2009-04-09 [tchang] Rebuild junction, hexagonal hole

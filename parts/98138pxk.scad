@@ -12,7 +12,8 @@ function ldraw_lib__98138pxk() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 98138pb389, Dr. Eggman, glasses, Set 76993, Sonic
+// 0 !KEYWORDS Bricklink 98138pb389, Dr. Eggman, glasses, Rebrickable 98138pr0369
+// 0 !KEYWORDS Set 76993, Sonic
 // 
 // 0 !HISTORY 2024-07-29 [OrionP] Official Update 2024-06
 // 

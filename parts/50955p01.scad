@@ -12,7 +12,8 @@ function ldraw_lib__50955p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 50955pb023, F40, Ferrari, set 10248
+// 0 !KEYWORDS Bricklink 50955pb023, F40, Ferrari, Rebrickable 50955pr0001
+// 0 !KEYWORDS set 10248
 // 
 // 0 !HISTORY 2015-12-30 [PTadmin] Official Update 2015-02
 // 0 !HISTORY 2022-06-22 [Philo] Updated description, added keywords

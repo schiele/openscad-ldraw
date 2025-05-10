@@ -13,7 +13,7 @@ function ldraw_lib__3846p4d() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS Castle, King Richard, Rebrickable 3846pr0023
+// 0 !KEYWORDS Castle, King Richard, Rebrickable 3846pr0023, Set 1843
 // 
 // 0 !HISTORY 2002-04-25 [PTadmin] Official Update 2002-02
 // 0 !HISTORY 2007-06-30 [PTadmin] Header formatted for Contributor Agreement

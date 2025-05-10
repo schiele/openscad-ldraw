@@ -14,8 +14,8 @@ function ldraw_lib__76382p72() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS basic, beads, Bricklink 973p72c01, BrickOwl 729282, Castle, chain
-// 0 !KEYWORDS circles, Classic Castle, female, girl, maiden, Mini Upper Part No 13
+// 0 !KEYWORDS basic, beads, Bricklink 973p72c01, Castle, chain, circles
+// 0 !KEYWORDS Classic Castle, female, girl, maiden, Mini Upper Part No 13
 // 0 !KEYWORDS Princess, queen, Rebrickable 973c27h01pr0072, scoop neck, set 10001
 // 0 !KEYWORDS Set 10037, Set 10041, set 1592, Set 383, Set 4535, Set 4558, Set 545
 // 0 !KEYWORDS Set 6083, Set 6302, Set 6376, Set 6390, Set 6592, Set 7824, string

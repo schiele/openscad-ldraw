@@ -14,8 +14,8 @@ function ldraw_lib__76382p3b() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS bandolier, Bricklink 973p3bc01, BrickOwl 299253, dandy, merchant
-// 0 !KEYWORDS Pirates, Rebrickable 973c27h01pr0006, set 6286
+// 0 !KEYWORDS bandolier, Bricklink 973p3bc01, dandy, merchant, Pirates
+// 0 !KEYWORDS Rebrickable 973c27h01pr0006, set 6286
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

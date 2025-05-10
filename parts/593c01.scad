@@ -15,8 +15,8 @@ function ldraw_lib__593c01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink bb0045c01, Brickowl 537045, Rebrickable 468c01, set 102
-// 0 !KEYWORDS set 113-2, Set 116-2, set 371-2
+// 0 !KEYWORDS Bricklink bb0045c01, Rebrickable 468c01, set 102, set 113-2
+// 0 !KEYWORDS Set 116-2, set 371-2
 // 
 // 0 !HISTORY 2004-10-23 [mikeheide] Secondary author
 // 0 !HISTORY 2009-02-08 [mikeheide] made lid main-color

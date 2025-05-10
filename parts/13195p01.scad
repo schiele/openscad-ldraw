@@ -11,7 +11,8 @@ function ldraw_lib__13195p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Star Wars, SW
+// 0 !KEYWORDS BrickLink 13195pb01, Rebrickable 13195pr0001, Set 4002019, Star Wars
+// 0 !KEYWORDS SW
 // 
 // 0 !HISTORY 2013-08-30 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2019-10-01 [Philo] File preparation for LDraw Parts Tracker

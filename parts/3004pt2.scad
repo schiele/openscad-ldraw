@@ -13,8 +13,7 @@ function ldraw_lib__3004pt2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3004px26, BrickOwl 312439, Rebrickable 3004pr9992
-// 0 !KEYWORDS set 6610
+// 0 !KEYWORDS Bricklink 3004px26, Rebrickable 3004pr9992, set 6610
 // 
 // 0 !CMDLINE -c14
 // 

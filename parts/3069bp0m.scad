@@ -12,7 +12,8 @@ function ldraw_lib__3069bp0m() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3069bpb806, Lamborghini, set 42115, Sian
+// 0 !KEYWORDS BrickLink 3069pb0806, Lamborghini, Rebrickable 3069bpr0291
+// 0 !KEYWORDS set 42115, Sian
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
 // 

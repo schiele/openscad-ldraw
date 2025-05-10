@@ -2,20 +2,22 @@ use <../lib.scad>
 use <../p/1-4chrd.scad>
 use <../p/1-4cyli.scad>
 function ldraw_lib__6045898d() = [
-// 0 Sticker  1.1 x  4.0 with SW X-wing Starfighter Cockpit - Rear
+// 0 Sticker  1.1 x  4.0 with SW X-wing Starfighter Cockpit Rear
 // 0 Name: 6045898d.dat
 // 0 Author: Evert-Jan Boer [ejboer]
-// 0 !LDRAW_ORG Part UPDATE 2022-05
+// 0 !LDRAW_ORG Part UPDATE 2025-04
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Set 10240, Star Wars
+// 0 !KEYWORDS Bricklink 10240stk01, Episode 4/5/6, Rebrickable 15144, Set 10240
+// 0 !KEYWORDS Star Wars, UCS, Ultimate Collector Series
 // 
 // 0 !HISTORY 2022-09-15 [PTadmin] Official Update 2022-05
-// 
+// 0 !HISTORY 2025-04-01 [Holly-Wood] Added keywords
+// 0 !HISTORY 2025-04-27 [OrionP] Official Update 2025-04
 // 
 // 4 16 -30.9402 -.25 -7 30.9402 -.25 -7 25.95 -.25 6 -25.95 -.25 6
   [4,16,-30.9402,-.25,-7,30.9402,-.25,-7,25.95,-.25,6,-25.95,-.25,6],

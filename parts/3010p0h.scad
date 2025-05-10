@@ -12,9 +12,8 @@ function ldraw_lib__3010p0h() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS basic, Bricklink 3010pb005, Brickowl 594011, classic, dacta
-// 0 !KEYWORDS Free Style, Freestyle, Rebrickable 3010pr9956, Set 1194, Set 4153
-// 0 !KEYWORDS Set 4274, Set 9290
+// 0 !KEYWORDS basic, Bricklink 3010pb005, classic, dacta, Free Style, Freestyle
+// 0 !KEYWORDS Rebrickable 3010pr9956, Set 1194, Set 4153, Set 4274, Set 9290
 // 
 // 0 !HISTORY 2024-04-28 [OrionP] Official Update 2024-03
 // 

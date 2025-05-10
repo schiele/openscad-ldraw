@@ -13,7 +13,8 @@ function ldraw_lib__3660bp05() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3660pb003, buttons, controls, screen, set 7047
+// 0 !KEYWORDS Bricklink 3660pb003, buttons, controls, Rebrickable 3660pr0005
+// 0 !KEYWORDS screen, set 7047
 // 
 // 0 !HISTORY 2023-04-17 [OrionP] Official Update 2023-02
 // 

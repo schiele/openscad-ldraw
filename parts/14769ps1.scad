@@ -12,7 +12,8 @@ function ldraw_lib__14769ps1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS 170, ARC, ARC-170, microfighter, set 75072, Star Wars, starfighter
+// 0 !KEYWORDS 170, ARC, ARC-170, BrickLink 14769pb022, microfighter
+// 0 !KEYWORDS Rebrickable 14769pr1005, set 75072, Star Wars, starfighter
 // 
 // 0 !HISTORY 2016-12-31 [PTadmin] Official Update 2016-01
 // 0 !HISTORY 2018-03-14 [cwdee] Update description

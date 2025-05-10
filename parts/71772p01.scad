@@ -11,8 +11,8 @@ function ldraw_lib__71772p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 71772pb01, road, Set 60292, set 60304, Set 60306, Street
-// 0 !KEYWORDS Zebra Crossing
+// 0 !KEYWORDS Bricklink 71772pb01, Rebrickable 71772pr0001, road, Set 60292
+// 0 !KEYWORDS set 60304, Set 60306, Street, Zebra Crossing
 // 
 // 0 !HISTORY 2022-12-20 [PTadmin] Official Update 2022-06
 // 

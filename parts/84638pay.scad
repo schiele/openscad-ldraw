@@ -15,10 +15,10 @@ function ldraw_lib__84638pay() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Adventurers, Bricklink 973px181c01, BrickOwl 96817, China, Himalaya
-// 0 !KEYWORDS India, Lord Sam Sinister, Orient Expedition
-// 0 !KEYWORDS Rebrickable 84638c07pr0181, Set 3381, set 7409, Set 7414, Set 7416
-// 0 !KEYWORDS Set 7417, Set 7418, set 7419, Set 7424, villain
+// 0 !KEYWORDS Adventurers, Bricklink 973px181c01, China, Himalaya, India
+// 0 !KEYWORDS Lord Sam Sinister, Orient Expedition, Rebrickable 84638c07pr0181
+// 0 !KEYWORDS Set 3381, set 7409, Set 7414, Set 7416, Set 7417, Set 7418, set 7419
+// 0 !KEYWORDS Set 7424, villain
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

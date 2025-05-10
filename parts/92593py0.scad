@@ -14,7 +14,8 @@ function ldraw_lib__92593py0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS BrickLInk 92593pb038, Set 76895, Speed Champions
+// 0 !KEYWORDS BrickLInk 92593pb038, Rebrickable 92593pr0001, Set 76895
+// 0 !KEYWORDS Speed Champions
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
 // 

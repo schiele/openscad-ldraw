@@ -16,6 +16,7 @@ function ldraw_lib__35860p01() = [
 // 
 // 0 !CATEGORY Minifig Accessory
 // 0 !KEYWORDS Bricklink 35860pb01, cake guy, CMF series 18, Collectible
+// 0 !KEYWORDS Rebrickable 35860pr0001
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 

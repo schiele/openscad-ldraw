@@ -13,8 +13,8 @@ function ldraw_lib__3626bp67() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626bpb0012, Brickowl 439035, Rebrickable 3626bpr0039
-// 0 !KEYWORDS set 6705, set 6889, Set 6949, Spyrius
+// 0 !KEYWORDS BrickLink 3626pb0012, Rebrickable 3626bpr0039, set 6705, set 6889
+// 0 !KEYWORDS Set 6949, Spyrius
 // 
 // 0 !HISTORY 2015-10-11 [PTadmin] Official Update 2015-01
 // 0 !HISTORY 2024-08-21 [Lego-Manfred] References and sets added

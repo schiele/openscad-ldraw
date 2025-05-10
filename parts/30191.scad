@@ -14,7 +14,7 @@ function ldraw_lib__30191() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bridle, Holder, Rollcage, Stretcher
+// 0 !KEYWORDS BrickLink x169, Bridle, Holder, Rollcage, Stretcher
 // 
 // 0 !HISTORY 2009-10-13 {LEGO Universe Team} Original part shape
 // 0 !HISTORY 2010-11-27 [tchang] File preparation for LDraw Parts Tracker

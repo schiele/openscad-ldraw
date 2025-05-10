@@ -14,7 +14,7 @@ function ldraw_lib__63523() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS WeDo
+// 0 !KEYWORDS Bricklink 43718, Rebrickable 43718, WeDo
 // 
 // 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01
 // 

@@ -11,7 +11,8 @@ function ldraw_lib__3039pc4() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS 4.5V, 9V, dials, Model Team, town, Train
+// 0 !KEYWORDS 4.5V, 9V, BrickLink 3039px6, dials, Model Team
+// 0 !KEYWORDS Rebrickable 3039pr9970, set 10001, town, Train
 // 
 // 0 !HISTORY 2004-04-22 [PTadmin] Official Update 2004-02
 // 0 !HISTORY 2007-06-09 [PTadmin] Header formatted for Contributor Agreement

@@ -12,7 +12,8 @@ function ldraw_lib__11778p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS bricklink 11778pb02, Fantastic Beasts, Potter, set 75952
+// 0 !KEYWORDS bricklink 11777pb02, Fantastic Beasts, Potter
+// 0 !KEYWORDS Rebrickable 11777pr0002, set 75952
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
 // 

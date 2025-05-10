@@ -17,6 +17,7 @@ function ldraw_lib__4094a() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Figure Accessory
+// 0 !KEYWORDS BrickLink x845
 // 
 // 0 !HISTORY 2010-09-10 {LEGO Universe Team} Original part shape
 // 0 !HISTORY 2010-10-05 [Philo] File adaptation for LDraw Parts Tracker

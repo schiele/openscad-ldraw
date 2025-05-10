@@ -14,8 +14,8 @@ function ldraw_lib__76382psf() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Attack of the Clones, Bricklink 973pb0260c01, BrickOwl 100432, child
-// 0 !KEYWORDS clone, Episode II, Geonosis, Kamino, Mini Upper Part No 572
+// 0 !KEYWORDS Attack of the Clones, Bricklink 973pb0260c01, child, clone
+// 0 !KEYWORDS Episode II, Geonosis, Kamino, Mini Upper Part No 572
 // 0 !KEYWORDS Rebrickable 973c05h01pr0260, Set 7153, Slave I, Star Wars
 // 0 !KEYWORDS Young Boba Fett
 // 

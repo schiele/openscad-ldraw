@@ -13,7 +13,8 @@ function ldraw_lib__2431pzb() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickheadz, Bricklink 2431pb489, Finn, Set 41485
+// 0 !KEYWORDS Brickheadz, Bricklink 2431pb489, Finn, Rebrickable 2431pr0103
+// 0 !KEYWORDS Set 41485
 // 
 // 0 !HISTORY 2019-09-09 [PTadmin] Official Update 2019-02
 // 

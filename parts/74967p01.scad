@@ -13,6 +13,8 @@ function ldraw_lib__74967p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 74967pb01, Rebrickable 74967pr0001, set 40190
+// 
 // 0 !HISTORY 2018-01-30 [PTadmin] Official Update 2018-01
 // 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
 // 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02

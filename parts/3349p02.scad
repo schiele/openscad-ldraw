@@ -14,6 +14,8 @@ function ldraw_lib__3349p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
+// 0 !KEYWORDS BrickLink 675px1, Rebrickable 675pr0002, Set 354
+// 
 // 0 !HISTORY 2004-10-16 [cwdee] Add lines at top of post removed from 674s00
 // 0 !HISTORY 2018-01-14 [Steffen] used subfile, made pattern sans-serif
 // 0 !HISTORY 2018-12-08 [PTadmin] Official Update 2018-02

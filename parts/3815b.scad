@@ -12,6 +12,8 @@ function ldraw_lib__3815b() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 970, Rebrickable 3815
+// 
 // 0 !HISTORY 2015-11-30 [BlackBrick89] Creation
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
 // 

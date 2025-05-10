@@ -14,8 +14,8 @@ function ldraw_lib__3626bp04() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626bp04, Brickowl 348075, Rebrickable 3626bpr0006
-// 0 !KEYWORDS Set 2150, set 4556, Set 9371
+// 0 !KEYWORDS BrickLink 3626p04, Rebrickable 3626bpr0006, Set 2150, set 4556
+// 0 !KEYWORDS Set 9371
 // 
 // 0 !HISTORY 1999-05-24 [PTadmin] Official Update 1999-04
 // 0 !HISTORY 2003-11-02 [hmick] corrected overlapping quads

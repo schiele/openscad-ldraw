@@ -14,10 +14,10 @@ function ldraw_lib__76382pr7() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Amidala, Boonta Eve, Bricklink 973px83c01, BrickOwl 623044
-// 0 !KEYWORDS Episode I, Mini Upper Part No 391, Mos Espa, Padme Naberrie
-// 0 !KEYWORDS pod racer, Rebrickable 973c28h01pr0083, Set 7131, Set 7171
-// 0 !KEYWORDS Star Wars, Tatooine, The Phantom Menace
+// 0 !KEYWORDS Amidala, Boonta Eve, Bricklink 973px83c01, Episode I
+// 0 !KEYWORDS Mini Upper Part No 391, Mos Espa, Padme Naberrie, pod racer
+// 0 !KEYWORDS Rebrickable 973c28h01pr0083, Set 7131, Set 7171, Star Wars, Tatooine
+// 0 !KEYWORDS The Phantom Menace
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

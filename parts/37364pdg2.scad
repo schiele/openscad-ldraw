@@ -13,7 +13,8 @@ function ldraw_lib__37364pdg2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 970cm00pb011, Bunsen Honeydew, CMF, set 71033, The Muppets
+// 0 !KEYWORDS Bricklink 970cm00pb011, Bunsen Honeydew, CMF
+// 0 !KEYWORDS Rebrickable 37364c27pr2228, set 71033, The Muppets
 // 
 // 0 !HISTORY 2024-08-26 [OrionP] Official Update 2024-07
 // 

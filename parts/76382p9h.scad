@@ -14,11 +14,11 @@ function ldraw_lib__76382p9h() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS 2-sided, Bricklink 973pb1183c01, BrickOwl 869230
-// 0 !KEYWORDS Doctor Rodney Rathbone, Ferris Wheel, Horizon Express, legoland
-// 0 !KEYWORDS Mini Upper Part No 2084, Modular Buildings, Molding Engineer
-// 0 !KEYWORDS Monster Fighters, Rebrickable 973c27h01pr2084, Set 10233, set 10247
-// 0 !KEYWORDS set 10251, Set 10254, set 9464, set 9466, set 9468, Train Conductor
+// 0 !KEYWORDS 2-sided, Bricklink 973pb1183c01, Doctor Rodney Rathbone
+// 0 !KEYWORDS Ferris Wheel, Horizon Express, legoland, Mini Upper Part No 2084
+// 0 !KEYWORDS Modular Buildings, Molding Engineer, Monster Fighters
+// 0 !KEYWORDS Rebrickable 973c27h01pr2084, Set 10233, set 10247, set 10251
+// 0 !KEYWORDS Set 10254, set 9464, set 9466, set 9468, Train Conductor
 // 0 !KEYWORDS Winter Village
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02

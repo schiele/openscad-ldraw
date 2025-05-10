@@ -14,7 +14,8 @@ function ldraw_lib__98130p04() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Bricklink 98130pb04, Ninjago, Set 5005230, Zane
+// 0 !KEYWORDS Bricklink 98130pb04, Ninjago, Rebrickable 98130pr0006, Set 5005230
+// 0 !KEYWORDS Zane
 // 
 // 0 !HISTORY 2023-04-17 [OrionP] Official Update 2023-02
 // 

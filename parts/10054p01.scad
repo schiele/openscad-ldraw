@@ -17,7 +17,7 @@ function ldraw_lib__10054p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Ãomer, Bricklink 10054pb01, Brickowl 212885, Lord of the Rings
+// 0 !KEYWORDS Ãomer, Bricklink 10054pb01, Lord of the Rings
 // 0 !KEYWORDS Rebrickable 10054pr0001, set 9471
 // 
 // 0 !HISTORY 2013-12-23 [PTadmin] Official Update 2013-02

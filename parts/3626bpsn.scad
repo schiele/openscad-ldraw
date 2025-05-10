@@ -14,8 +14,8 @@ function ldraw_lib__3626bpsn() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626bpb0251, Brickowl 26853, Jawa, Rebrickable 3626bpr0201
-// 0 !KEYWORDS Set 10144, Star Wars
+// 0 !KEYWORDS BrickLink 3626pb0251, Jawa, Rebrickable 3626bpr0201, Set 10144
+// 0 !KEYWORDS Star Wars
 // 
 // 0 !HISTORY 2024-09-30 [OrionP] Official Update 2024-08
 // 0 !HISTORY 2024-10-15 [Holly-Wood] Sanded Title added keywords

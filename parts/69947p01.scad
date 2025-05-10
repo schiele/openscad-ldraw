@@ -13,8 +13,8 @@ function ldraw_lib__69947p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS Bricklink 69947pb01, CMF Series 21, Musical instrument, Set 10308
-// 0 !KEYWORDS Set 60380
+// 0 !KEYWORDS Bricklink 69947pb01, CMF Series 21, Musical instrument
+// 0 !KEYWORDS Rebrickable 69947pr0001, Set 10308, Set 60380
 // 
 // 0 !HISTORY 2024-08-26 [OrionP] Official Update 2024-07
 // 

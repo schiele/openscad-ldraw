@@ -18,6 +18,8 @@ function ldraw_lib__44302a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 44302
+// 
 // 0 !HISTORY 2003-12-19 [PTadmin] Official Update 2003-03
 // 0 !HISTORY 2004-01-26 [cwdee] Modified for corrected clh4
 // 0 !HISTORY 2004-03-02 [PTadmin] Official Update 2004-01

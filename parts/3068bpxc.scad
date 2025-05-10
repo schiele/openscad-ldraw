@@ -11,8 +11,8 @@ function ldraw_lib__3068bpxc() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3068bpb2181, BrickOwl 10570, jukebox, Minecraft
-// 0 !KEYWORDS note block, Rebrickable 3068bpr0670, Set 21244
+// 0 !KEYWORDS BrickLink 3068pb2181, jukebox, Minecraft, note block
+// 0 !KEYWORDS Rebrickable 3068bpr0670, Set 21244
 // 
 // 0 !HISTORY 2024-08-26 [OrionP] Official Update 2024-07
 // 

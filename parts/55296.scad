@@ -40,6 +40,7 @@ function ldraw_lib__55296() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
+// 0 !KEYWORDS BrickLink 6246f
 // 
 // 0 !HISTORY 2004-12-16 [Holly-Wood] fixed overlaping quads, missing edge, non-coplanar quads, regrouped, BFCed
 // 0 !HISTORY 2005-12-28 [PTadmin] Official Update 2005-01

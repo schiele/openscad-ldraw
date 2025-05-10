@@ -14,10 +14,9 @@ function ldraw_lib__76382p8c() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb3167c01, BrickOwl 882101, City, Ideas
-// 0 !KEYWORDS Mini Upper Part No 4354, outdoor, People Pack, Ranger
-// 0 !KEYWORDS Rebrickable 973c26h01pr4354, Set 21318, set 21320, Set 60202
-// 0 !KEYWORDS Set 60307, Set 60326, Wildlife Rescue
+// 0 !KEYWORDS Bricklink 973pb3167c01, City, Ideas, Mini Upper Part No 4354
+// 0 !KEYWORDS outdoor, People Pack, Ranger, Rebrickable 973c26h01pr4354, Set 21318
+// 0 !KEYWORDS set 21320, Set 60202, Set 60307, Set 60326, Wildlife Rescue
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

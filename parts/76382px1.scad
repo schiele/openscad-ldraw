@@ -14,9 +14,8 @@ function ldraw_lib__76382px1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb2526c01, BrickOwl 862402, Dimensions, E.T., ET
-// 0 !KEYWORDS Extra Terrestrial, Mini Upper Part No 3554
-// 0 !KEYWORDS Rebrickable 973c23h23pr3554, Set 71258
+// 0 !KEYWORDS Bricklink 973pb2526c01, Dimensions, E.T., ET, Extra Terrestrial
+// 0 !KEYWORDS Mini Upper Part No 3554, Rebrickable 973c23h23pr3554, Set 71258
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

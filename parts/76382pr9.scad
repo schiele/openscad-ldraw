@@ -14,10 +14,10 @@ function ldraw_lib__76382pr9() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS A New Hope, Bricklink 973pb0229c01, BrickOwl 143685, Death Star
-// 0 !KEYWORDS Episode IV, Galactic Empire, Military, Mini Upper Part No 1267
-// 0 !KEYWORDS Original Trilogy, Rebrickable 973c12h02pr1267, Set 10188, Set 6211
-// 0 !KEYWORDS Star Wars, Wilhuff Tarkin
+// 0 !KEYWORDS A New Hope, Bricklink 973pb0229c01, Death Star, Episode IV
+// 0 !KEYWORDS Galactic Empire, Military, Mini Upper Part No 1267, Original Trilogy
+// 0 !KEYWORDS Rebrickable 973c12h02pr1267, Set 10188, Set 6211, Star Wars
+// 0 !KEYWORDS Wilhuff Tarkin
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

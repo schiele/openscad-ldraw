@@ -13,7 +13,8 @@ function ldraw_lib__75902p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS Lord of the Rings
+// 0 !KEYWORDS BrickLink 75902pb02, Lord of the Rings, Rebrickable 75902pr0002
+// 0 !KEYWORDS Set 5001130
 // 
 // 0 !HISTORY 2012-12-28 [PTadmin] Official Update 2012-03
 // 

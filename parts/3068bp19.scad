@@ -12,7 +12,8 @@ function ldraw_lib__3068bp19() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS Animal Crossing, Bricklink 3068pb2354
-// 0 !KEYWORDS K.K. Slider Forest Life Album Cover, Set 77049, Set 77052
+// 0 !KEYWORDS K.K. Slider Forest Life Album Cover, Rebrickable 3068bpr0708
+// 0 !KEYWORDS Set 77049, Set 77052
 // 
 // 0 !HISTORY 2024-12-01 [OrionP] Official Update 2024-10
 // 

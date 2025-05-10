@@ -13,7 +13,7 @@ function ldraw_lib__3846p4y() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS Bricklink 3846pb059, Castle, Set 10305
+// 0 !KEYWORDS Bricklink 3846pb059, Castle, Rebrickable 3846pr0046, Set 10305
 // 
 // 0 !HISTORY 2024-05-28 [OrionP] Official Update 2024-04
 // 

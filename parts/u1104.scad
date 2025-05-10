@@ -23,7 +23,7 @@ function ldraw_lib__u1104() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !KEYWORDS VW Dealer, Window
+// 0 !KEYWORDS BrickLink x1104, Rebrickable upn0177, VW Dealer, Window
 // 
 // 0 !CMDLINE -c47
 // 

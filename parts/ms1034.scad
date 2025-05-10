@@ -14,7 +14,7 @@ function ldraw_lib__ms1034() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !KEYWORDS HiTechnic
+// 0 !KEYWORDS BrickLink bb0635, HiTechnic, Rebrickable upn0377
 // 
 // 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01
 // 

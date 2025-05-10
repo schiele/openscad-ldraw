@@ -24,7 +24,8 @@ function ldraw_lib__14769p0p() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 14769pb265, Set 40491, Year of the Tiger
+// 0 !KEYWORDS Bricklink 14769pb265, Rebrickable 14769pr1117, Set 40491
+// 0 !KEYWORDS Year of the Tiger
 // 
 // 0 !HISTORY 2022-08-20 [Lego-Manfred] Copy of 14769p0k with Copper Iris
 // 0 !HISTORY 2023-06-24 [OrionP] Official Update 2023-03

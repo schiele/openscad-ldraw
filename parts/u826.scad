@@ -13,6 +13,7 @@ function ldraw_lib__u826() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Door
+// 0 !KEYWORDS BrickLink 4248, Rebrickable 4248
 // 
 // 0 !HISTORY 2022-12-20 [PTadmin] Official Update 2022-06
 // 

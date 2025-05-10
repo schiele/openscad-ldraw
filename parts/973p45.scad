@@ -14,7 +14,7 @@ function ldraw_lib__973p45() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS Armor, Castle, dot, Dots, football, Fright Knights, Futbal, Goalie
-// 0 !KEYWORDS polka, rugby, Soccer, spot, spots
+// 0 !KEYWORDS polka, rugby, Set 2538, Soccer, spot, spots
 // 
 // 0 !HISTORY 2000-09-30 [PTadmin] Official Update 2000-02
 // 0 !HISTORY 2000-11-05 [cwdee] Moved neck mark from s\973s01.dat

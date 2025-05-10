@@ -15,6 +15,7 @@ function ldraw_lib__2335p40() = [
   [0,"BFC","CW"],
 // 
 // 0 !KEYWORDS BrickLink 2335px7, Castle, Guarded Inn, Rebrickable 2335pr0008
+// 0 !KEYWORDS Set 10000
 // 
 // 0 !CMDLINE -c0
 // 

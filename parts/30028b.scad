@@ -16,6 +16,8 @@ function ldraw_lib__30028b() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 30028, Rebrickable 30028
+// 
 // 0 !HISTORY 1998-02-12 [PTadmin] Official Update 1998-02
 // 0 !HISTORY 2003-06-08 [jriley] BFC compliant, ring substitutions
 // 0 !HISTORY 2004-04-22 [PTadmin] Official Update 2004-02

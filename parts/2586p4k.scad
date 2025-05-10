@@ -13,6 +13,7 @@ function ldraw_lib__2586p4k() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
+// 0 !KEYWORDS Rebrickable 2586pr0017, Set 7187
 // 
 // 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02
 // 0 !HISTORY 2020-05-10 [cwdee] Update colour name in description

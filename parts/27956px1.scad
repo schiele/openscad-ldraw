@@ -16,7 +16,8 @@ function ldraw_lib__27956px1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Dimensions, ET, Extra Terrestrial
+// 0 !KEYWORDS BrickLink 27956pb01, Dimensions, ET, Extra Terrestrial
+// 0 !KEYWORDS Rebrickable 27956pr0001, Set 71258
 // 
 // 0 !HISTORY 2018-01-28 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2018-01-28 [GeraldLasser] File preparation for LDraw Parts Tracker

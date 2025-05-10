@@ -15,7 +15,7 @@ function ldraw_lib__4066bp1n() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Brick
-// 0 !KEYWORDS bricklink 4066pb094, Brickowl 910653, Girls, Patty, Pony Stable
+// 0 !KEYWORDS bricklink 4066pb094, Girls, Patty, Pony Stable
 // 0 !KEYWORDS Rebrickable 4066pr0021, Set 2553
 // 
 // 0 !HISTORY 2024-05-28 [OrionP] Official Update 2024-04

@@ -13,7 +13,8 @@ function ldraw_lib__3068bp0g() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS bricklink 3068bpb0589, Disney Princess, Friends, Set 3939
+// 0 !KEYWORDS BrickLink 3068pb0589, Disney Princess, Friends
+// 0 !KEYWORDS Rebrickable 3068bpr0138, Set 3939
 // 
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04
 // 

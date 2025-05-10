@@ -15,7 +15,7 @@ function ldraw_lib__973p38() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS necklace
+// 0 !KEYWORDS necklace, set 6286
 // 
 // 0 !HISTORY 2001-11-30 [PTadmin] Official Update 2001-02
 // 0 !HISTORY 2007-07-28 [PTadmin] Header formatted for Contributor Agreement

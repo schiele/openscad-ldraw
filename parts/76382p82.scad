@@ -14,7 +14,7 @@ function ldraw_lib__76382p82() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS 9V, Bricklink 973px8c01, BrickOwl 959581, dacta, Jacket, Maintenance
+// 0 !KEYWORDS 9V, Bricklink 973px8c01, dacta, Jacket, Maintenance
 // 0 !KEYWORDS Mini Upper Part No 189, Mini Upper Part No 190, Railroad
 // 0 !KEYWORDS Rebrickable 973c28h01pr0008, Set 10020, set 2126, Set 2150, Set 3225
 // 0 !KEYWORDS Set 4533, Set 4541, Set 4552, Set 4553, Set 4555, Set 4557, Set 4559

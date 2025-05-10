@@ -12,7 +12,7 @@ function ldraw_lib__60189p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS ⠁ Unicode U+2801 (10241), Bricklink 60189pb01, Brickowl 687917
+// 0 !KEYWORDS ⠁ Unicode U+2801 (10241), Bricklink 60189pb01
 // 0 !KEYWORDS Rebrickable 60189pr0001, Set 4000503, set 40722, set 40723
 // 0 !KEYWORDS set 40724
 // 

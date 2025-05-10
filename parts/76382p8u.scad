@@ -14,10 +14,10 @@ function ldraw_lib__76382p8u() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb0109c01, BrickOwl 577279, Rebrickable 973c03h01pr1238
-// 0 !KEYWORDS Set 10199, Set 10764, Set 2928, Set 3181, Set 3182, Set 3222
-// 0 !KEYWORDS Set 60102, Set 60261, Set 7696, Set 7893, Set 7894, Set 9247
-// 0 !KEYWORDS Set 9321, Set 9335
+// 0 !KEYWORDS Bricklink 973pb0109c01, Rebrickable 973c03h01pr1238, Set 10199
+// 0 !KEYWORDS Set 10764, Set 2928, Set 3181, Set 3182, Set 3222, Set 60102
+// 0 !KEYWORDS Set 60261, Set 7696, Set 7893, Set 7894, Set 9247, Set 9321
+// 0 !KEYWORDS Set 9335
 // 
 // 0 !HISTORY 2024-12-30 [OrionP] Official Update 2024-11
 // 

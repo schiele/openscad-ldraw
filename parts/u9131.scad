@@ -15,7 +15,7 @@ function ldraw_lib__u9131() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !KEYWORDS classic, Smooth
+// 0 !KEYWORDS Bricklink 132old, classic, Rebrickable 132a, Smooth
 // 
 // 0 !HISTORY 1997-09-29 [PTadmin] Official Update 1997-15
 // 0 !HISTORY 2007-05-04 [PTadmin] Header formatted for Contributor Agreement

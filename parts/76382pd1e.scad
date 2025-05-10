@@ -14,9 +14,8 @@ function ldraw_lib__76382pd1e() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb1680c01, BrickOwl 520880, Cartoon, Cat, CMF
-// 0 !KEYWORDS Mini Upper Part No 2613, Rebrickable 973c12h27pr2613, Scratchy
-// 0 !KEYWORDS Set 71005, The Simpsons
+// 0 !KEYWORDS Bricklink 973pb1680c01, Cartoon, Cat, CMF, Mini Upper Part No 2613
+// 0 !KEYWORDS Rebrickable 973c12h27pr2613, Scratchy, Set 71005, The Simpsons
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

@@ -12,8 +12,9 @@ function ldraw_lib__4150p08() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Beach, boat, Bricklink 4150pb106, Friends, Pool, Set 3063, Set 3937
-// 0 !KEYWORDS Set 41008, Set 41015, ship
+// 0 !KEYWORDS Beach, boat, Bricklink 4150pb106, Friends, Pool
+// 0 !KEYWORDS Rebrickable 4150pr0009, Set 3063, Set 3937, Set 41008, Set 41015
+// 0 !KEYWORDS ship
 // 
 // 0 !HISTORY 2020-09-17 [RainbowDolphin] Branched from 14769p03 by Philippe Hurbain [Philo]
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03

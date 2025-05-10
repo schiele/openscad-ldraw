@@ -11,7 +11,8 @@ function ldraw_lib__4162p04() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Architecture, James Hoban, Set 21006
+// 0 !KEYWORDS Architecture, BrickLink 4162pb051, James Hoban
+// 0 !KEYWORDS Rebrickable 4162pr0004, Set 21006
 // 
 // 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01
 // 

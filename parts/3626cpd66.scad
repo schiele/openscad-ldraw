@@ -14,7 +14,8 @@ function ldraw_lib__3626cpd66() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Barbara Gordon, Batman Movie, Bricklink 3626cpb1714
+// 0 !KEYWORDS Barbara Gordon, Batman Movie, BrickLink 3626pb1714
+// 0 !KEYWORDS Rebrickable 3626cpr2125, Set 71017-6
 // 
 // 0 !CMDLINE -c84
 // 

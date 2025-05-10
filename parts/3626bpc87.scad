@@ -14,7 +14,8 @@ function ldraw_lib__3626bpc87() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626bpb0788, Downhill Skier, Series 8
+// 0 !KEYWORDS BrickLink 3626pb0788, Downhill Skier, Rebrickable 3626bpr1029
+// 0 !KEYWORDS Series 8, Set 8833-7
 // 
 // 0 !CMDLINE -c14
 // 

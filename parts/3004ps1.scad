@@ -11,7 +11,8 @@ function ldraw_lib__3004ps1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS 3004px5, Gasgano, podracer, Set 7171, Star Wars
+// 0 !KEYWORDS 3004px5, BrickLink 3004px5, Gasgano, podracer
+// 0 !KEYWORDS Rebrickable 3004pr9987, Set 7171, Star Wars
 // 
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
 // 

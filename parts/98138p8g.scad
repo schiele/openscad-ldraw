@@ -12,7 +12,8 @@ function ldraw_lib__98138p8g() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bite, Bricklink 98138pb179, Rice Balls, Set 80107, Tang Yuan
+// 0 !KEYWORDS Bite, Bricklink 98138pb179, Rebrickable 98138pr9994, Rice Balls
+// 0 !KEYWORDS Set 80107, Tang Yuan
 // 
 // 0 !HISTORY 2022-05-07 [PTadmin] Official Update 2022-03
 // 

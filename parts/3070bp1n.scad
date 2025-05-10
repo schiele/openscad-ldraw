@@ -12,8 +12,8 @@ function ldraw_lib__3070bp1n() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3070pb347, Disney, Set 30661, Set 43223, Set 43224
-// 0 !KEYWORDS Set 43231, Wish
+// 0 !KEYWORDS Bricklink 3070pb347, Disney, Rebrickable 3070bpr0302, Set 30661
+// 0 !KEYWORDS Set 43223, Set 43224, Set 43231, Wish
 // 
 // 0 !HISTORY 2024-07-29 [OrionP] Official Update 2024-06
 // 

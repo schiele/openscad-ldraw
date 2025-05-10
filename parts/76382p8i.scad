@@ -14,11 +14,11 @@ function ldraw_lib__76382p8i() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb1561c01, BrickOwl 825219, Dimensions
-// 0 !KEYWORDS Emmet Brickowski, Mini Upper Part No 2538
-// 0 !KEYWORDS Rebrickable 973c28h01pr2538, set 30280, Set 70800, set 70801
-// 0 !KEYWORDS Set 70802, Set 70803, set 70808, Set 70809, Set 70810, Set 70814
-// 0 !KEYWORDS Set 70815, Set 70818, Set 71212, The LEGO Movie
+// 0 !KEYWORDS Bricklink 973pb1561c01, Dimensions, Emmet Brickowski
+// 0 !KEYWORDS Mini Upper Part No 2538, Rebrickable 973c28h01pr2538, set 30280
+// 0 !KEYWORDS Set 70800, set 70801, Set 70802, Set 70803, set 70808, Set 70809
+// 0 !KEYWORDS Set 70810, Set 70814, Set 70815, Set 70818, Set 71212
+// 0 !KEYWORDS The LEGO Movie
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

@@ -13,7 +13,8 @@ function ldraw_lib__98138p0e() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS fuel cap, hub cap, jar lid, radiator cap
+// 0 !KEYWORDS BrickLink 98138pb041, fuel cap, hub cap, jar lid, radiator cap
+// 0 !KEYWORDS Rebrickable 98138pr0047, Set 19002
 // 
 // 0 !HISTORY 2016-12-31 [PTadmin] Official Update 2016-01
 // 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives

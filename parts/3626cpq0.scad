@@ -12,7 +12,8 @@ function ldraw_lib__3626cpq0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Kingdoms, Mac McCloud, Pharaoh's Quest
+// 0 !KEYWORDS BrickLink 3626pb0495, Kingdoms, Mac McCloud, Pharaoh's Quest
+// 0 !KEYWORDS Rebrickable 3626cpr0754, Set 10673
 // 
 // 0 !CMDLINE -c14
 // 

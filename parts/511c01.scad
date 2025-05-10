@@ -12,6 +12,8 @@ function ldraw_lib__511c01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
+// 0 !KEYWORDS BrickLink 2913, Rebrickable 2913
+// 
 // 0 !CMDLINE -c1
 // 
 // 0 !HISTORY 2011-12-11 [Steffen] changed color 383 to 494

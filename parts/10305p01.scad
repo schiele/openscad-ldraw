@@ -16,8 +16,8 @@ function ldraw_lib__10305p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Bricklink 10305pb01, Brickowl 362368, Magneto, Marvel
-// 0 !KEYWORDS Rebrickable 10305pr0001, Set 76022, Super Heroes, X-Men
+// 0 !KEYWORDS Bricklink 10305pb01, Magneto, Marvel, Rebrickable 10305pr0001
+// 0 !KEYWORDS Set 76022, Super Heroes, X-Men
 // 
 // 0 !HISTORY 2013-08-14 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2013-11-21 [Philo] File preparation for LDraw Parts Tracker

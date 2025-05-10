@@ -13,8 +13,7 @@ function ldraw_lib__92456p0h() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink FTGpb007c01, Brickowl 180320, Emma
-// 0 !KEYWORDS Rebrickable 92456c01pr9997, Set 3936
+// 0 !KEYWORDS Bricklink FTGpb007c01, Emma, Rebrickable 92456c01pr9997, Set 3936
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

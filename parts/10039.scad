@@ -13,7 +13,7 @@ function ldraw_lib__10039() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Vehicle
-// 0 !KEYWORDS Ferrari, Shell Promo
+// 0 !KEYWORDS BrickLink 10039c01, Ferrari, Shell Promo
 // 
 // 0 !HISTORY 2014-12-23 [PTadmin] Official Update 2014-02
 // 0 !HISTORY 2016-09-20 [MagFors] Used new shortcut

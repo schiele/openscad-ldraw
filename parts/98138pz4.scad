@@ -17,8 +17,8 @@ function ldraw_lib__98138pz4() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Avatar, Brickheadz, BrickLink 98138pb355, BrickOwl 1277370, Eye
-// 0 !KEYWORDS Na'vi, Rebrickable 98138pr0338, Set 40554
+// 0 !KEYWORDS Avatar, Brickheadz, BrickLink 98138pb355, Eye, Na'vi
+// 0 !KEYWORDS Rebrickable 98138pr0338, Set 40554
 // 
 // 0 !HISTORY 2024-07-29 [OrionP] Official Update 2024-06
 // 

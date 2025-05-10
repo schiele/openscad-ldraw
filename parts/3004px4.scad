@@ -13,7 +13,8 @@ function ldraw_lib__3004px4() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS BrickLink 3004pb214, Mario, Nintendo, Set 71381
+// 0 !KEYWORDS BrickLink 3004pb214, Mario, Nintendo, Rebrickable 3004pr0071
+// 0 !KEYWORDS Set 71381
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
 // 

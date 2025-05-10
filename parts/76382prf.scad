@@ -14,10 +14,9 @@ function ldraw_lib__76382prf() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973px320c01, BrickOwl 83244, Dagobah, Episode V
-// 0 !KEYWORDS Luke Skywalker, Mini Upper Pat No 885, Original Trilogy
-// 0 !KEYWORDS Rebrickable 973c01h01pr0320, set 4502, Star Wars
-// 0 !KEYWORDS The Empire Strikes Back
+// 0 !KEYWORDS Bricklink 973px320c01, Dagobah, Episode V, Luke Skywalker
+// 0 !KEYWORDS Mini Upper Pat No 885, Original Trilogy, Rebrickable 973c01h01pr0320
+// 0 !KEYWORDS set 4502, Star Wars, The Empire Strikes Back
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

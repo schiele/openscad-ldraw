@@ -12,7 +12,8 @@ function ldraw_lib__3068bpt9() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Train
-// 0 !KEYWORDS Bricklink 3068bpb1337, Crocodile, Set 10277, Swiss
+// 0 !KEYWORDS BrickLink 3068pb1337, Crocodile, Rebrickable 3068bpr9992, Set 10277
+// 0 !KEYWORDS Swiss
 // 
 // 0 !CMDLINE -c70
 // 

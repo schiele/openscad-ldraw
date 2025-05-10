@@ -14,9 +14,8 @@ function ldraw_lib__3664p06() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Brick
-// 0 !KEYWORDS boat, bricklink 3664pb10, Brickowl 624329, Fishing, harbour
-// 0 !KEYWORDS Rebrickable 3664pr0022, Set 1041, Set 2388, Set 2454, Set 2625
-// 0 !KEYWORDS Set 2626, Set 2643
+// 0 !KEYWORDS boat, bricklink 3664pb10, Fishing, harbour, Rebrickable 3664pr0022
+// 0 !KEYWORDS Set 1041, Set 2388, Set 2454, Set 2625, Set 2626, Set 2643
 // 
 // 0 !HISTORY 2024-05-28 [OrionP] Official Update 2024-04
 // 

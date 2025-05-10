@@ -11,7 +11,8 @@ function ldraw_lib__3068bpt7() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3068bpb1156, EXCLUSIVE HARRY POTTER, The Boy who LIVED!
+// 0 !KEYWORDS BrickLink 3068pb1156, EXCLUSIVE HARRY POTTER
+// 0 !KEYWORDS Rebrickable 3068bpr0376, Set 5907762001021, The Boy who LIVED!
 // 
 // 0 !HISTORY 2020-06-28 [PTadmin] Official Update 2020-01
 // 

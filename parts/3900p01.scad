@@ -13,7 +13,8 @@ function ldraw_lib__3900p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS Paddle, sign, town
+// 0 !KEYWORDS BrickLink 3900pb01, Paddle, Rebrickable 3900pr0001, Set 3350, sign
+// 0 !KEYWORDS town
 // 
 // 0 !HISTORY 2014-06-21 [PTadmin] Official Update 2014-01
 // 

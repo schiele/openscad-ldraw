@@ -12,7 +12,7 @@ function ldraw_lib__16530p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Set 41375
+// 0 !KEYWORDS BrickLink 16529c00pb01, Rebrickable 16530c01pr0001, Set 41375
 // 
 // 0 !HISTORY 2014-12-23 [PTadmin] Official Update 2014-02
 // 0 !HISTORY 2025-01-08 [OrionP] Moved from 16529p01c01.dat

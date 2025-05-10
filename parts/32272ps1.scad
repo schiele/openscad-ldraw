@@ -11,8 +11,8 @@ function ldraw_lib__32272ps1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Artoo-Detoo, astromech, blue droid, R2-D2, Set 9748, Star Wars
-// 0 !KEYWORDS x51ps1
+// 0 !KEYWORDS Artoo-Detoo, astromech, blue droid, BrickLink 51ps1, R2-D2
+// 0 !KEYWORDS Rebrickable 51pr0001, Set 9748, Star Wars, x51ps1
 // 
 // 0 !HISTORY 2022-03-06 [PTadmin] Official Update 2022-02
 // 

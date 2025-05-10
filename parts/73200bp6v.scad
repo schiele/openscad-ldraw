@@ -17,9 +17,8 @@ function ldraw_lib__73200bp6v() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Android, Bricklink 970c05pb01, Brickowl 311599, Invaders
-// 0 !KEYWORDS Rebrickable 970c22pr0001, set 2543, set 2847, set 6915, set 6975
-// 0 !KEYWORDS set 6979, UFO
+// 0 !KEYWORDS Android, Bricklink 970c05pb01, Invaders, Rebrickable 970c22pr0001
+// 0 !KEYWORDS set 2543, set 2847, set 6915, set 6975, set 6979, UFO
 // 
 // 0 !CMDLINE -c4
 // 

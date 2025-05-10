@@ -14,8 +14,8 @@ function ldraw_lib__76382p4j() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb0451c01, BrickOwl 292507, Castle, Crown Knights
-// 0 !KEYWORDS Fantasy Era, Rebrickable 973c14h01pr0430, Set 10193
+// 0 !KEYWORDS Bricklink 973pb0451c01, Castle, Crown Knights, Fantasy Era
+// 0 !KEYWORDS Rebrickable 973c14h01pr0430, Set 10193
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

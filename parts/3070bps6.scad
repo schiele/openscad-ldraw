@@ -11,7 +11,7 @@ function ldraw_lib__3070bps6() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS BrickLink 3070bpb090, Set 75133, Set 75157
+// 0 !KEYWORDS BrickLink 3070pb090, Rebrickable 3070bpr0164, Set 75133, Set 75157
 // 
 // 0 !HISTORY 2019-09-09 [PTadmin] Official Update 2019-02
 // 

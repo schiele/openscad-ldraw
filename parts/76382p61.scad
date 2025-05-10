@@ -14,9 +14,9 @@ function ldraw_lib__76382p61() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973p61c01, BrickOwl 213479, Commander Bear, Commander Cold
-// 0 !KEYWORDS ice planet, Rebrickable 973c27h28pr0061, set 1704, set 6705
-// 0 !KEYWORDS Set 6834, Set 6973, set 6983, Space
+// 0 !KEYWORDS Bricklink 973p61c01, Commander Bear, Commander Cold, ice planet
+// 0 !KEYWORDS Rebrickable 973c27h28pr0061, set 1704, set 6705, Set 6834, Set 6973
+// 0 !KEYWORDS set 6983, Space
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

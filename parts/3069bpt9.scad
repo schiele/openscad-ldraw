@@ -13,7 +13,8 @@ function ldraw_lib__3069bpt9() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3069bpb1101, Daytona, Ferrari, set 42143
+// 0 !KEYWORDS BrickLink 3069pb1101, Daytona, Ferrari, Rebrickable 3069bpr0355
+// 0 !KEYWORDS set 42143
 // 
 // 0 !HISTORY 2024-04-28 [OrionP] Official Update 2024-03
 // 

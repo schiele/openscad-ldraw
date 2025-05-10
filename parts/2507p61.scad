@@ -12,7 +12,7 @@ function ldraw_lib__2507p61() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Set 6919, Space
+// 0 !KEYWORDS BrickLink 2507px1, Rebrickable 2507pr0005, Set 6919, Space
 // 
 // 0 !HISTORY 2019-09-09 [PTadmin] Official Update 2019-02
 // 

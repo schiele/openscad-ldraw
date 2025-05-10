@@ -13,7 +13,8 @@ function ldraw_lib__567c01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS 4.5V, connector, dacta, double
+// 0 !KEYWORDS 4.5V, BrickLink bb0236bc01, connector, dacta, double
+// 0 !KEYWORDS Rebrickable upn0167c01
 // 
 // 0 !HISTORY 2004-10-23 [guyvivan] Use new plug type 3 and new screw
 // 0 !HISTORY 2010-05-28 [Steffen] moved to here from x567.dat

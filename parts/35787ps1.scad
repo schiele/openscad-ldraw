@@ -16,7 +16,7 @@ function ldraw_lib__35787ps1() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS Breathing Mask, Brickheadz, Bricklink 35787pb001, Darth Vader
-// 0 !KEYWORDS Set 41619
+// 0 !KEYWORDS Rebrickable 35787pr0001, Set 41619
 // 
 // 0 !HISTORY 2022-09-15 [PTadmin] Official Update 2022-05
 // 

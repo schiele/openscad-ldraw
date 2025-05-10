@@ -15,7 +15,7 @@ function ldraw_lib__30191_f2() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS Set 6519
+// 0 !KEYWORDS BrickLink x169, Rebrickable 30191, Set 6519
 // 
 // 0 !HISTORY 2011-07-13 [tchang] Created with LSynth contribution
 // 0 !HISTORY 2022-03-06 [PTadmin] Official Update 2022-02

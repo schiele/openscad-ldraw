@@ -19,7 +19,7 @@ function ldraw_lib__55707a() = [
   [0,"BFC","CW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS Batman
+// 0 !KEYWORDS Batman, BrickLink 55707e
 // 
 // 0 !HISTORY 2010-09-28 [Philo] Added trigger
 // 0 !HISTORY 2010-12-31 [PTadmin] Official Update 2010-03

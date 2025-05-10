@@ -14,7 +14,7 @@ function ldraw_lib__46534pb1() = [
 // 
 // 0 !CATEGORY Minifig Headwear
 // 0 !KEYWORDS Ant-Man, Antman, Avengers Endgame, Bricklink 46534pb02
-// 0 !KEYWORDS Brickowl 448229, Rebrickable 46534pr0252, set 76124, Super Heroes
+// 0 !KEYWORDS Rebrickable 46534pr0252, set 76124, Super Heroes
 // 
 // 0 !CMDLINE -c179
 // 

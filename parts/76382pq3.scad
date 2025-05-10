@@ -14,8 +14,8 @@ function ldraw_lib__76382pq3() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Ammo Belt, Ammunition, Bricklink 973pb0781c01, BrickOwl 635991
-// 0 !KEYWORDS desert, Jake Raines, Mini Upper Part No 1721, Pharaoh's Quest
+// 0 !KEYWORDS Ammo Belt, Ammunition, Bricklink 973pb0781c01, desert, Jake Raines
+// 0 !KEYWORDS Mini Upper Part No 1721, Pharaoh's Quest
 // 0 !KEYWORDS Rebrickable 973c26h01pr1721, Set 30091, Set 7305, Set 7325, Set 7327
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02

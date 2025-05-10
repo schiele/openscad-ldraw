@@ -11,8 +11,8 @@ function ldraw_lib__3068bp30() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Anchor, boat, Galleon, Island, Map, North, Pirate, sea, ship
-// 0 !KEYWORDS treasure
+// 0 !KEYWORDS Anchor, boat, BrickLink 3068px9, Galleon, Island, Map, North, Pirate
+// 0 !KEYWORDS Rebrickable 3068bpr0058, sea, set 10040, ship, treasure
 // 
 // 0 !HISTORY 2009-09-03 [PTadmin] Official Update 2009-02
 // 

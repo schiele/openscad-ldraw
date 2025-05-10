@@ -15,8 +15,9 @@ function ldraw_lib__u9495p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Sheet Fabric
-// 0 !KEYWORDS Black Seas Barracuda, Caribbean Clipper, set 10040, Set 6274
-// 0 !KEYWORDS set 6285, set 6286, Skull's Eye Schooner
+// 0 !KEYWORDS Black Seas Barracuda, BrickLink sailbb21, Caribbean Clipper
+// 0 !KEYWORDS Rebrickable upn0034pr0001, set 10040, Set 6274, set 6285, set 6286
+// 0 !KEYWORDS Skull's Eye Schooner
 // 
 // 0 !HISTORY 2022-05-07 [PTadmin] Official Update 2022-03
 // 

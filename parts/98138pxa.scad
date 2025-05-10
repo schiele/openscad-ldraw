@@ -12,7 +12,8 @@ function ldraw_lib__98138pxa() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 98138pb112, Junkrat, Overwatch, Roadhog, Set 75977
+// 0 !KEYWORDS Bricklink 98138pb112, Junkrat, Overwatch, Rebrickable 98138pr0103
+// 0 !KEYWORDS Roadhog, Set 75977
 // 
 // 0 !HISTORY 2022-12-20 [PTadmin] Official Update 2022-06
 // 

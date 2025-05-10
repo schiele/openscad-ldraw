@@ -11,7 +11,8 @@ function ldraw_lib__10202p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Rebrickable 10202pr0014, Set 10283, Space Shuttle, Worm Logo
+// 0 !KEYWORDS BrickLink 10202pb029, Rebrickable 10202pr0014, Set 10283
+// 0 !KEYWORDS Space Shuttle, Worm Logo
 // 
 // 0 !HISTORY 2022-03-06 [PTadmin] Official Update 2022-02
 // 

@@ -11,7 +11,8 @@ function ldraw_lib__3068bpc0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3068bpb0311, CMF Series 1, Collectible
+// 0 !KEYWORDS BrickLink 3068pb0311, CMF Series 1, Collectible
+// 0 !KEYWORDS Rebrickable 3068bpr0001
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 

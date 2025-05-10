@@ -13,7 +13,8 @@ function ldraw_lib__3626cpd6b() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626cpb1726, Lego Batman Movie, Red Hood
+// 0 !KEYWORDS BrickLink 3626pb1726, Lego Batman Movie, Rebrickable 3626cpr2101
+// 0 !KEYWORDS Red Hood, Set 71017-11
 // 
 // 0 !HISTORY 2018-12-08 [PTadmin] Official Update 2018-02
 // 

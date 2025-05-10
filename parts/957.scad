@@ -21,7 +21,7 @@ function ldraw_lib__957() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Support
-// 0 !KEYWORDS Fabuland, parasol
+// 0 !KEYWORDS BrickLink x838, Fabuland, parasol, Rebrickable upn0303
 // 
 // 0 !HISTORY 2011-07-25 [PTadmin] Official Update 2011-01
 // 

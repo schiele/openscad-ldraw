@@ -11,8 +11,8 @@ function ldraw_lib__30385() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Aquazone, hydrolator, rock raiders, rockraiders, space port
-// 0 !KEYWORDS Spaceport, underground
+// 0 !KEYWORDS Aquazone, BrickLink 52, hydrolator, rock raiders, rockraiders
+// 0 !KEYWORDS space port, Spaceport, underground
 // 
 // 0 !HISTORY 2000-09-30 [PTadmin] Official Update 2000-02
 // 0 !HISTORY 2007-07-09 [PTadmin] Header formatted for Contributor Agreement

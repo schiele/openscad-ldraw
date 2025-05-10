@@ -15,8 +15,8 @@ function ldraw_lib__3664p08() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Brick
-// 0 !KEYWORDS Airport, bricklink 3664pb07, Brickowl 109802, dacta
-// 0 !KEYWORDS Rebrickable 3664pr9992, Set 9156, Set 9976
+// 0 !KEYWORDS Airport, bricklink 3664pb07, dacta, Rebrickable 3664pr9992, Set 9156
+// 0 !KEYWORDS Set 9976
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
 // 0 !HISTORY 2022-09-07 [RainbowDolphin] Made top semi-cylinder hi-res to comply with latest part regulations

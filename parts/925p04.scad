@@ -15,6 +15,8 @@ function ldraw_lib__925p04() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 3008pb024, Rebrickable 3008pr0066, Set 310-5-DBASE
+// 
 // 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01
 // 
 // 

@@ -15,6 +15,8 @@ function ldraw_lib__3195p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 3195pb01, Rebrickable 3195pr0002, Set 375-3
+// 
 // 0 !HISTORY 2007-01-10 [mikeheide] use subfile
 // 0 !HISTORY 2009-09-03 [PTadmin] Official Update 2009-02
 // 0 !HISTORY 2014-11-21 [roland] Auto-corrected with libfix version of LDCad 1.4

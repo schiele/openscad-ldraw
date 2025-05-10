@@ -35,7 +35,8 @@ function ldraw_lib__2552p05() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 2552px5, Castle, Dragon Knights, Set 6082
+// 0 !KEYWORDS Bricklink 2552px5, Castle, Dragon Knights, Rebrickable 2552pr0003
+// 0 !KEYWORDS Set 6082
 // 
 // 0 !HISTORY 2014-06-21 [PTadmin] Official Update 2014-01
 // 0 !HISTORY 2022-03-07 [RainbowDolphin] Added missing studs and keywords

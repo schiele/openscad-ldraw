@@ -14,8 +14,8 @@ function ldraw_lib__76382p5e() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Atreides, Bene Gesserit, Bricklink 973pb5535c01, BrickOwl 206423
-// 0 !KEYWORDS Dune, Lady Jessica, Rebrickable 973c21h02pr6979, Set 10327
+// 0 !KEYWORDS Atreides, Bene Gesserit, Bricklink 973pb5535c01, Dune, Lady Jessica
+// 0 !KEYWORDS Rebrickable 973c21h02pr6979, Set 10327
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

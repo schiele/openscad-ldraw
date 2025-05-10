@@ -16,7 +16,7 @@ function ldraw_lib__26912() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Set 17101
+// 0 !KEYWORDS BrickLink bb0891c01, Set 17101
 // 
 // 0 !HISTORY 2018-12-08 [PTadmin] Official Update 2018-02
 // 

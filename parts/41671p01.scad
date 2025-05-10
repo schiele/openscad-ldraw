@@ -16,7 +16,8 @@ function ldraw_lib__41671p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS bionicle, Bohrok, Gahlok, Kohrak, Lehvak, Nuhvok, Pahrak, Tahnok
+// 0 !KEYWORDS bionicle, Bohrok, BrickLink 41671pb01, Gahlok, Kohrak, Lehvak
+// 0 !KEYWORDS Nuhvok, Pahrak, Rebrickable 41671pat0002, Set 65109, Tahnok
 // 
 // 0 !HISTORY 2013-06-10 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2014-05-20 [arezey] File preparation for LDraw Parts Tracker

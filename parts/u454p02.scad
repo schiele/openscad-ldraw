@@ -13,8 +13,8 @@ function ldraw_lib__u454p02() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Roadsign
-// 0 !KEYWORDS Bricklink bb0107pb01, Set 325-3, Set 431-1, Set 491-2, Set 648-1
-// 0 !KEYWORDS Set 842-2
+// 0 !KEYWORDS Bricklink bb0107pb01, Rebrickable 107pr0001, Set 325-3, Set 431-1
+// 0 !KEYWORDS Set 491-2, Set 648-1, Set 842-2
 // 
 // 0 !HISTORY 2022-03-06 [PTadmin] Official Update 2022-02
 // 

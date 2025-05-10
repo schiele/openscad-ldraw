@@ -18,6 +18,8 @@ function ldraw_lib__26074p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 26076pb01, Rebrickable 26076pr0001, Set 71013-17
+// 
 // 0 !HISTORY 2018-01-09 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2018-01-30 [Philo] File preparation for LDraw Parts Tracker
 // 0 !HISTORY 2018-12-08 [PTadmin] Official Update 2018-02

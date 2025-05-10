@@ -14,6 +14,7 @@ function ldraw_lib__54802() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Vehicle
+// 0 !KEYWORDS BrickLink 54802c01
 // 
 // 0 !HISTORY 2007-09-17 [NXTbesu] BFC errors fixed
 // 0 !HISTORY 2007-09-23 [NXTbesu] Extra cleaning and better use of subparts

@@ -14,9 +14,9 @@ function ldraw_lib__76382p47() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973p47c01, BrickOwl 70607, Castle, Classic Castle
-// 0 !KEYWORDS Coat of Arms, Knights Procession, Rebrickable 973c17h01pr0047
-// 0 !KEYWORDS Set 0016, Set 6002, Set 6077, Set 677, Yellow Castle
+// 0 !KEYWORDS Bricklink 973p47c01, Castle, Classic Castle, Coat of Arms
+// 0 !KEYWORDS Knights Procession, Rebrickable 973c17h01pr0047, Set 0016, Set 6002
+// 0 !KEYWORDS Set 6077, Set 677, Yellow Castle
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

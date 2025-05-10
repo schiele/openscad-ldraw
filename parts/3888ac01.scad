@@ -12,7 +12,7 @@ function ldraw_lib__3888ac01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Fabuland
+// 0 !KEYWORDS BrickLink fabaa1, Fabuland
 // 
 // 0 !HISTORY 2011-02-13 [anathema] Moved axles to separate part, replaced wheels, added keywords
 // 0 !HISTORY 2012-03-08 [MagFors] Moved axle to new part.

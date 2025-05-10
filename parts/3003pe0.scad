@@ -11,7 +11,8 @@ function ldraw_lib__3003pe0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Mail, Mickey, Minnie
+// 0 !KEYWORDS BrickLink 3003px7, Mail, Mickey, Minnie, Rebrickable 3003pr0050
+// 0 !KEYWORDS Set 4165
 // 
 // 0 !HISTORY 2014-06-21 [PTadmin] Official Update 2014-01
 // 

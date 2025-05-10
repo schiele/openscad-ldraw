@@ -12,6 +12,7 @@ function ldraw_lib__35132() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Slope
+// 0 !KEYWORDS BrickLink 31170
 // 
 // 0 !HISTORY 2024-12-01 [OrionP] Official Update 2024-10
 // 

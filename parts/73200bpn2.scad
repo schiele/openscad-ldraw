@@ -17,9 +17,9 @@ function ldraw_lib__73200bpn2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 970c00pb0691, Lloyd, Ninjago, Set 30608, Set 70612
-// 0 !KEYWORDS Set 70613, Set 70617, Set 70618, Set 70620, Set 70628, Set 70656
-// 0 !KEYWORDS Set 70657
+// 0 !KEYWORDS Bricklink 970c00pb0691, Lloyd, Ninjago, Rebrickable 970c03pr1334
+// 0 !KEYWORDS Set 30608, Set 70612, Set 70613, Set 70617, Set 70618, Set 70620
+// 0 !KEYWORDS Set 70628, Set 70656, Set 70657
 // 
 // 0 !HISTORY 2024-10-27 [OrionP] Official Update 2024-09
 // 

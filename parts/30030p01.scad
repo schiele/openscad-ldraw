@@ -15,6 +15,8 @@ function ldraw_lib__30030p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
+// 0 !KEYWORDS BrickLink 30030pb01, Rebrickable 30030pr0001, set 6337
+// 
 // 0 !HISTORY 2003-07-04 [Steffen] deleted identical lines, removed matrix all-zero errors, fixed degenerate quads, added 2 missing quads (part had open sides), fixed part name, BFCed
 // 0 !HISTORY 2003-12-19 [PTadmin] Official Update 2003-03
 // 0 !HISTORY 2007-05-25 [PTadmin] Header formatted for Contributor Agreement

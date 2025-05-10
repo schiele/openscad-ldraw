@@ -14,9 +14,8 @@ function ldraw_lib__76382p2y() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb5541c01, BrickOwl 1195247, Chani, Duke Leto Atreides
-// 0 !KEYWORDS Dune, Fremen, Liet-Kynes, Rebrickable 973c75h12pr6977, Set 10327
-// 0 !KEYWORDS Stillsuit
+// 0 !KEYWORDS Bricklink 973pb5541c01, Chani, Duke Leto Atreides, Dune, Fremen
+// 0 !KEYWORDS Liet-Kynes, Rebrickable 973c75h12pr6977, Set 10327, Stillsuit
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

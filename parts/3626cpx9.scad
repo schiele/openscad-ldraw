@@ -13,7 +13,8 @@ function ldraw_lib__3626cpx9() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626cpb1444, Doctor Who, Set 21304, Set 71204
+// 0 !KEYWORDS BrickLink 3626pb1444, Doctor Who, Rebrickable 3626cpr1773, Set 21304
+// 0 !KEYWORDS Set 71204
 // 
 // 0 !HISTORY 2024-05-28 [OrionP] Official Update 2024-04
 // 

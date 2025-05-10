@@ -14,6 +14,7 @@ function ldraw_lib__u9213p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Plant
+// 0 !KEYWORDS BrickLink fabea2, Rebrickable 9213pr0001, Set 3659
 // 
 // 0 !HISTORY 2015-10-11 [PTadmin] Official Update 2015-01
 // 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives

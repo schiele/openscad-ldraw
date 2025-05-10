@@ -13,7 +13,8 @@ function ldraw_lib__44375bps1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Dome, R2-D2, Star Wars
+// 0 !KEYWORDS BrickLink 44375bpb12, Dome, R2-D2, Rebrickable 44375bpr9996
+// 0 !KEYWORDS Set 75253, Star Wars
 // 
 // 0 !HISTORY 2020-06-28 [PTadmin] Official Update 2020-01
 // 

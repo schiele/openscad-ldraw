@@ -12,7 +12,8 @@ function ldraw_lib__3960ph0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3960pb077, Harry Potter, Set 10132, Set 4708, Set 4758
+// 0 !KEYWORDS BrickLink 3960pb076, Harry Potter, Rebrickable 3960pr9973, Set 10132
+// 0 !KEYWORDS Set 4708, Set 4758
 // 
 // 0 !HISTORY 2024-06-30 [OrionP] Official Update 2024-05
 // 0 !HISTORY 2024-07-02 [Holly-Wood] Fixed title

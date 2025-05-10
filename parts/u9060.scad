@@ -26,6 +26,8 @@ function ldraw_lib__u9060() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink x471, Rebrickable upn0260
+// 
 // 0 !CMDLINE -c0
 // 
 // 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01

@@ -13,7 +13,8 @@ function ldraw_lib__87994p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !KEYWORDS magic man, magic wand, magician
+// 0 !KEYWORDS BrickLink 87994pb01, magic man, magic wand, magician
+// 0 !KEYWORDS Rebrickable 87994pr0001, Set 41001
 // 
 // 0 !HISTORY 2010-12-31 [PTadmin] Official Update 2010-03
 // 0 !HISTORY 2015-07-09 [cwdee] Adjusted description

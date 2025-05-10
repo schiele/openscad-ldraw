@@ -28,7 +28,7 @@ function ldraw_lib__96858() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS adventure, utensil
+// 0 !KEYWORDS adventure, BrickLink 2614, Rebrickable 2614, utensil
 // 
 // 0 !HISTORY 2013-08-14 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2019-11-14 [Sirio] File preparation for LDraw Parts Tracker

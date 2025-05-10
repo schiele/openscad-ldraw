@@ -20,6 +20,7 @@ function ldraw_lib__12602() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Fence
+// 0 !KEYWORDS BrickLink 2214
 // 
 // 0 !HISTORY 2020-12-12 {LEGO/Unity Microgame} Original part shape
 // 0 !HISTORY 2021-01-14 [Philo] File preparation for LDraw Parts Tracker

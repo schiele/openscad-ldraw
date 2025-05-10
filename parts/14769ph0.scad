@@ -15,7 +15,7 @@ function ldraw_lib__14769ph0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickheadz, Bricklink 14769pb417, Brickowl 356560, Eye, Harry Potter
+// 0 !KEYWORDS Brickheadz, Bricklink 14769pb417, Eye, Harry Potter
 // 0 !KEYWORDS Rebrickable 14769pr1187, Set 40495
 // 
 // 0 !HISTORY 2024-05-28 [OrionP] Official Update 2024-04

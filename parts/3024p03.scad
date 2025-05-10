@@ -12,7 +12,8 @@ function ldraw_lib__3024p03() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS BrickLink 3024pb013, Set 75890, Speed Champions
+// 0 !KEYWORDS BrickLink 3024pb013, Rebrickable 3024pr0016, Set 75890
+// 0 !KEYWORDS Speed Champions
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 

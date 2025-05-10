@@ -14,6 +14,8 @@ function ldraw_lib__973p61() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS set 1704
+// 
 // 0 !HISTORY 1999-04-16 [sbliss] Updated 973-4t.dat to s\973s01.dat; added back surface
 // 0 !HISTORY 1999-05-17 [PTadmin] Official Update 1999-03
 // 0 !HISTORY 2000-11-05 [cwdee] Moved neck mark from s\973s01.dat

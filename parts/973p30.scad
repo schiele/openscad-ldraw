@@ -16,7 +16,7 @@ function ldraw_lib__973p30() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Pirates, sailor
+// 0 !KEYWORDS Pirates, sailor, set 6290
 // 
 // 0 !CMDLINE -C14
 // 

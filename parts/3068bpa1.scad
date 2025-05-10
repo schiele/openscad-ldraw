@@ -11,7 +11,8 @@ function ldraw_lib__3068bpa1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Aquazone, Hydronauts, Stingrays
+// 0 !KEYWORDS Aquazone, BrickLink 3068px14, Hydronauts, Rebrickable 3068bpr9881
+// 0 !KEYWORDS Set 5382, Stingrays
 // 
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
 // 

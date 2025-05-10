@@ -13,7 +13,7 @@ function ldraw_lib__3245bp06() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS bricklink 3245bpx10, Set 1065
+// 0 !KEYWORDS bricklink 3245bpx10, Rebrickable 3245bpr0004, Set 1065
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 

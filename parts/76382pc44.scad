@@ -14,9 +14,9 @@ function ldraw_lib__76382pc44() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Band Shirt, Bricklink 973pb0838c01, BrickOwl 917106, CMF
-// 0 !KEYWORDS Dia de los Muertos, Guns N' Roses, Hard Rock, Heavy Metal, Music
-// 0 !KEYWORDS Punk Rocker, Rebel, Rebrickable 973c01h01pr1758, Series 4, Set 8804
+// 0 !KEYWORDS Band Shirt, Bricklink 973pb0838c01, CMF, Dia de los Muertos
+// 0 !KEYWORDS Guns N' Roses, Hard Rock, Heavy Metal, Music, Punk Rocker, Rebel
+// 0 !KEYWORDS Rebrickable 973c01h01pr1758, Series 4, Set 8804
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

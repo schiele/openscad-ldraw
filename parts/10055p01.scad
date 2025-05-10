@@ -13,7 +13,8 @@ function ldraw_lib__10055p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Hobbit, Legolas, LOTR, Set 79001, Set 79004, Set 79012
+// 0 !KEYWORDS BrickLink 10055pb01, Hobbit, Legolas, LOTR, Rebrickable 10055pr0001
+// 0 !KEYWORDS Set 79001, Set 79004, Set 79012
 // 
 // 0 !HISTORY 2013-08-14 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2023-02-20 [GeraldLasser] File preparation for LDraw Parts Tracker

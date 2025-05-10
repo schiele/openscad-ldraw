@@ -12,7 +12,7 @@ function ldraw_lib__25128p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 25128pb002, Set 71013, Toddler
+// 0 !KEYWORDS Bricklink 25128pb002, Rebrickable 25128c01pr0001, Set 71013, Toddler
 // 
 // 0 !HISTORY 2016-10-05 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2016-10-12 [Philo] File preparation for LDraw Parts Tracker

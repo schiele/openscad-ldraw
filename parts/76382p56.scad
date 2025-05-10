@@ -14,9 +14,9 @@ function ldraw_lib__76382p56() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Alien, Armaron, Bricklink 973pb0199c01, BrickOwl 649235, Cyborg
-// 0 !KEYWORDS Extraterrestrial, Holox, Insectoids, Lieutenant Maverick
-// 0 !KEYWORDS Rebrickable 973c08h28pr0199, Set 6817, Set 6905, Space, Zotax
+// 0 !KEYWORDS Alien, Armaron, Bricklink 973pb0199c01, Cyborg, Extraterrestrial
+// 0 !KEYWORDS Holox, Insectoids, Lieutenant Maverick, Rebrickable 973c08h28pr0199
+// 0 !KEYWORDS Set 6817, Set 6905, Space, Zotax
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

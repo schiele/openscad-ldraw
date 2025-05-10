@@ -11,8 +11,8 @@ function ldraw_lib__3004pzb() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickheadz, BrickLink 3004pb177, Luke Skywalker, Set 41627
-// 0 !KEYWORDS Star Wars
+// 0 !KEYWORDS Brickheadz, BrickLink 3004pb177, Luke Skywalker
+// 0 !KEYWORDS Rebrickable 3004pr0041, Set 41627, Star Wars
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 

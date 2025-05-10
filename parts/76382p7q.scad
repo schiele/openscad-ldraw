@@ -14,12 +14,11 @@ function ldraw_lib__76382p7q() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973px431c01, BrickOwl 468925, police
-// 0 !KEYWORDS Rebrickable 973c03h01pr1188, Set 3648, Set 3658, Set 3661, Set 4491
-// 0 !KEYWORDS Set 4912, Set 5612, Set 70591, Set 7236, Set 7237, Set 7245
-// 0 !KEYWORDS Set 7279, set 7285, Set 7286, Set 7287, Set 7498, Set 7723, Set 7743
-// 0 !KEYWORDS Set 7744, set 7899, Set 8401, Set 9247, Set 9302, Set 9314, Set 9321
-// 0 !KEYWORDS Set 9348, Set 9691
+// 0 !KEYWORDS Bricklink 973px431c01, police, Rebrickable 973c03h01pr1188, Set 3648
+// 0 !KEYWORDS Set 3658, Set 3661, Set 4491, Set 4912, Set 5612, Set 70591
+// 0 !KEYWORDS Set 7236, Set 7237, Set 7245, Set 7279, set 7285, Set 7286, Set 7287
+// 0 !KEYWORDS Set 7498, Set 7723, Set 7743, Set 7744, set 7899, Set 8401, Set 9247
+// 0 !KEYWORDS Set 9302, Set 9314, Set 9321, Set 9348, Set 9691
 // 
 // 0 !HISTORY 2024-12-30 [OrionP] Official Update 2024-11
 // 

@@ -12,9 +12,9 @@ function ldraw_lib__4485bp02() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS ambulance, Arctic, Axel, Bricklink 4485pb02, Brickowl 493701
-// 0 !KEYWORDS city center, Doc, First Aid, Hospital, medic, Rebrickable 4485pr0002
-// 0 !KEYWORDS rescue, Set 3350, set 6575, set 6666, town
+// 0 !KEYWORDS ambulance, Arctic, Axel, Bricklink 4485pb02, city center, Doc
+// 0 !KEYWORDS First Aid, Hospital, medic, Rebrickable 4485pr0002, rescue, Set 3350
+// 0 !KEYWORDS set 6575, set 6666, town
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

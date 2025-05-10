@@ -13,6 +13,7 @@ function ldraw_lib__51560_f1() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Train
+// 0 !KEYWORDS BrickLink 51943c01, Rebrickable 51560
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
 // 0 !HISTORY 2020-11-15 [cwdee] Update description

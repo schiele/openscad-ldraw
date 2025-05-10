@@ -12,6 +12,8 @@ function ldraw_lib__2986ac01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 2983, Rebrickable 2983
+// 
 // 0 !HISTORY 1997-12-05 [PTadmin] Official Update 1997-17
 // 0 !HISTORY 1999-02-01 [PTadmin] Official Update 1999-01
 // 0 !HISTORY 2007-05-23 [PTadmin] Header formatted for Contributor Agreement

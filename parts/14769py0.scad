@@ -18,8 +18,8 @@ function ldraw_lib__14769py0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 14769pb594, Exhaust Pipes, Pagani, Set 76915
-// 0 !KEYWORDS Speed Champions, Utopia
+// 0 !KEYWORDS Bricklink 14769pb594, Exhaust Pipes, Pagani, Rebrickable 14769pr1260
+// 0 !KEYWORDS Set 76915, Speed Champions, Utopia
 // 
 // 0 !HISTORY 2023-06-24 [OrionP] Official Update 2023-03
 // 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives

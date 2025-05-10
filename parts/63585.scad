@@ -28,6 +28,7 @@ function ldraw_lib__63585() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
+// 0 !KEYWORDS BrickLink 61190e
 // 
 // 0 !HISTORY 2013-08-14 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2018-12-23 [MagFors] File preparation for LDraw Parts Tracker

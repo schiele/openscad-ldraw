@@ -12,7 +12,8 @@ function ldraw_lib__4150ps4() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Millennium Falcon, Star Wars, Vent
+// 0 !KEYWORDS Millennium Falcon, Rebrickable 4150pr0022, Set 10019, Star Wars
+// 0 !KEYWORDS Vent
 // 
 // 0 !HISTORY 2001-11-22 {unknown} Fixed gap between pattern and part, untwisted quads, and colors
 // 0 !HISTORY 2002-08-18 [PTadmin] Official Update 2002-04

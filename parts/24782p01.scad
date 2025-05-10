@@ -14,7 +14,8 @@ function ldraw_lib__24782p01() = [
 // 
 // 0 !CATEGORY Minifig Hipwear
 // 0 !KEYWORDS Bricklink 24782pb02, Collectible Minifigures, Disney Series 1
-// 0 !KEYWORDS Disney Series 2, Minnie Mouse, Set 43230, set 71040
+// 0 !KEYWORDS Disney Series 2, Minnie Mouse, Rebrickable 24782pr0001, Set 43230
+// 0 !KEYWORDS set 71040
 // 
 // 0 !HISTORY 2024-09-30 [OrionP] Official Update 2024-08
 // 

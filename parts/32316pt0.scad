@@ -13,7 +13,7 @@ function ldraw_lib__32316pt0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 32316pb074, Daytona, set 42143
+// 0 !KEYWORDS Bricklink 32316pb074, Daytona, Rebrickable 32316pr0001, set 42143
 // 
 // 0 !HISTORY 2024-05-28 [OrionP] Official Update 2024-04
 // 

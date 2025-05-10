@@ -11,8 +11,7 @@ function ldraw_lib__3070bp1l() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3070bpb168, Brickowl 201220, Rebrickable 3070bpr0232
-// 0 !KEYWORDS Set 71374
+// 0 !KEYWORDS BrickLink 3070pb168, Rebrickable 3070bpr0232, Set 71374
 // 
 // 0 !HISTORY 2024-04-29 [Holly-Wood] Merged vertices, adjusted color
 // 0 !HISTORY 2024-05-28 [OrionP] Official Update 2024-04

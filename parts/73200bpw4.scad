@@ -17,9 +17,8 @@ function ldraw_lib__73200bpw4() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS American Indian, Bricklink 970c02pb01, Brickowl 949590
-// 0 !KEYWORDS Rebrickable 970c26pr0003, set 6746, set 6748, set 6763, set 6766
-// 0 !KEYWORDS western, wild west
+// 0 !KEYWORDS American Indian, Bricklink 970c02pb01, Rebrickable 970c26pr0003
+// 0 !KEYWORDS set 6746, set 6748, set 6763, set 6766, western, wild west
 // 
 // 0 !HISTORY 2024-06-30 [OrionP] Official Update 2024-05
 // 0 !HISTORY 2024-11-30 [MagFors] Corrected keyword

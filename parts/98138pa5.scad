@@ -13,7 +13,7 @@ function ldraw_lib__98138pa5() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS Bricklink 98138pb093, Erumpent, Fantastic Beasts, Harry Potter
-// 0 !KEYWORDS Rhinoceros, set 75952
+// 0 !KEYWORDS Rebrickable 98138pr0097, Rhinoceros, set 75952
 // 
 // 0 !HISTORY 2022-12-20 [PTadmin] Official Update 2022-06
 // 

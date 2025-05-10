@@ -14,8 +14,8 @@ function ldraw_lib__76382pbj() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb1396c01, BrickOwl 961170, Iron Man, Malibu Mansion
-// 0 !KEYWORDS Pepper Potts, Rebrickable 973c27h02pr2433, set 76007
+// 0 !KEYWORDS Bricklink 973pb1396c01, Iron Man, Malibu Mansion, Pepper Potts
+// 0 !KEYWORDS Rebrickable 973c27h02pr2433, set 76007
 // 
 // 0 !HISTORY 2024-12-30 [OrionP] Official Update 2024-11
 // 

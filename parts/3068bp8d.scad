@@ -11,7 +11,8 @@ function ldraw_lib__3068bp8d() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3068bpb0435, Collectible Minifigures, Series 6, Surgeon
+// 0 !KEYWORDS BrickLink 3068pb0435, Collectible Minifigures
+// 0 !KEYWORDS Rebrickable 3068bpr0004, Series 6, Set 8827-11, Surgeon
 // 
 // 0 !CMDLINE -c43
 // 

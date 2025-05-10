@@ -14,7 +14,7 @@ function ldraw_lib__14769pt2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 14769pb448, Brickowl 515785, Font Luengo, question mark
+// 0 !KEYWORDS Bricklink 14769pb448, Font Luengo, question mark
 // 0 !KEYWORDS Rebrickable 14769pr1216, Set 21327, typewriter
 // 
 // 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives

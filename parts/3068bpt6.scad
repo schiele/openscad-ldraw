@@ -13,7 +13,8 @@ function ldraw_lib__3068bpt6() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3068bpb1021, Car, Caterham, Cuusoo, Ideas, Set 21307
+// 0 !KEYWORDS BrickLink 3068pb1021, Car, Caterham, Cuusoo, Ideas
+// 0 !KEYWORDS Rebrickable 3068bpr0330, Set 21307
 // 
 // 0 !CMDLINE -c14
 // 

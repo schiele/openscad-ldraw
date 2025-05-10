@@ -23,6 +23,8 @@ function ldraw_lib__973pd0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS set 1349
+// 
 // 0 !HISTORY 2012-03-31 [BlackBrick89] Removed triangle overlaps
 // 0 !HISTORY 2012-08-09 [PTadmin] Official Update 2012-02
 // 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives

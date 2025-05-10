@@ -13,8 +13,8 @@ function ldraw_lib__18603c02p0e() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS B.A. Baracus, Bricklink 18605c02pb02, Brickowl 291459, Dimensions
-// 0 !KEYWORDS Electronic, NFC, Rebrickable 19981pr0046, Set 71251, Toy Tag
+// 0 !KEYWORDS B.A. Baracus, Bricklink 18605c02pb02, Dimensions, Electronic, NFC
+// 0 !KEYWORDS Rebrickable 19981pr0046, Set 71251, Toy Tag
 // 
 // 0 !HISTORY 2024-12-30 [OrionP] Official Update 2024-11
 // 

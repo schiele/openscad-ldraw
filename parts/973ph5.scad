@@ -15,7 +15,7 @@ function ldraw_lib__973ph5() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Harry Potter
+// 0 !KEYWORDS BrickLink 973px152, Harry Potter, Set 4708
 // 
 // 0 !HISTORY 2012-12-28 [PTadmin] Official Update 2012-03
 // 

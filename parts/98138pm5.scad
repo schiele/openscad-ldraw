@@ -12,7 +12,7 @@ function ldraw_lib__98138pm5() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS BrickLink 98138pb024, Hobbit, Set 79018
+// 0 !KEYWORDS BrickLink 98138pb024, Hobbit, Rebrickable 98138pr0036, Set 79018
 // 
 // 0 !CMDLINE -c47
 // 

@@ -17,7 +17,8 @@ function ldraw_lib__2431pzr() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickheadz, Bricklink 2431pb525, Darth Vader, Set 41619
+// 0 !KEYWORDS Brickheadz, Bricklink 2431pb525, Darth Vader, Rebrickable 2431pr0128
+// 0 !KEYWORDS Set 41619
 // 
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04
 // 

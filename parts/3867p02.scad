@@ -14,7 +14,8 @@ function ldraw_lib__3867p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !KEYWORDS Imperial Guard, Island, Navy, Pirate, Pirates
+// 0 !KEYWORDS BrickLink 3867p01, Imperial Guard, Island, Navy, Pirate, Pirates
+// 0 !KEYWORDS Rebrickable 3867pr0001, Set 6260
 // 
 // 0 !HISTORY 2003-07-03 [Steffen] fixed BFC errors
 // 0 !HISTORY 2003-12-19 [PTadmin] Official Update 2003-03

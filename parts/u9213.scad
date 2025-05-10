@@ -13,6 +13,7 @@ function ldraw_lib__u9213() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Plant
+// 0 !KEYWORDS BrickLink fabea1, Rebrickable 9213
 // 
 // 0 !HISTORY 2015-10-11 [PTadmin] Official Update 2015-01
 // 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives

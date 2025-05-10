@@ -15,7 +15,7 @@ function ldraw_lib__41669() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS bionicle, Claw, Eye
+// 0 !KEYWORDS bionicle, BrickLink x346, Claw, Eye
 // 
 // 0 !HISTORY 2010-04-05 [PTadmin] Official Update 2010-01
 // 0 !HISTORY 2022-02-01 [MagFors] Reworked axlehole, edge and conditional lines

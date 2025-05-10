@@ -12,7 +12,7 @@ function ldraw_lib__973p9t() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb3383
+// 0 !KEYWORDS Bricklink 973pb3383, Set 60214
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
 // 

@@ -13,7 +13,7 @@ function ldraw_lib__973p2h() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Paradisa, town
+// 0 !KEYWORDS BrickLink 973pb0017, Paradisa, Set 6416, town
 // 
 // 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02
 // 0 !HISTORY 2015-11-01 [Darats] Use Subfile for Pattern

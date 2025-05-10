@@ -13,8 +13,9 @@ function ldraw_lib__4740ps1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 4740pb005, Set 30276, Set 75008, Set 75106, set 75146
-// 0 !KEYWORDS Set 911613, Set 911722, Set 9676, Space, Star Wars, tie
+// 0 !KEYWORDS Bricklink 4740pb005, Rebrickable 4740pr0009, Set 30276, Set 75008
+// 0 !KEYWORDS Set 75106, set 75146, Set 911613, Set 911722, Set 9676, Space
+// 0 !KEYWORDS Star Wars, tie
 // 
 // 0 !HISTORY 2023-08-25 [OrionP] Official Update 2023-04
 // 

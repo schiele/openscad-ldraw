@@ -12,7 +12,8 @@ function ldraw_lib__46212aph1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !KEYWORDS Bricklink 46212pb020, Diagon Alley, Harry Potter, Set 75978
+// 0 !KEYWORDS BrickLink 2454pb269, Diagon Alley, Harry Potter
+// 0 !KEYWORDS Rebrickable 46212pr0009, Set 75978
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 

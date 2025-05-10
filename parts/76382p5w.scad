@@ -14,8 +14,8 @@ function ldraw_lib__76382p5w() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb5887c01, BrickOwl 558516, Dungarees
-// 0 !KEYWORDS Rebrickable 973c25h01pr0005, Set 21353, Set 60461
+// 0 !KEYWORDS Bricklink 973pb5887c01, Dungarees, Rebrickable 973c25h01pr0005
+// 0 !KEYWORDS Set 21353, Set 60461
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

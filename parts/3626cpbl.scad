@@ -14,8 +14,8 @@ function ldraw_lib__3626cpbl() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626cpb0700, Brickowl 189300, Captain America
-// 0 !KEYWORDS Rebrickable 3626cpr0958, set 6865, The Avengers
+// 0 !KEYWORDS BrickLink 3626pb0700, Captain America, Rebrickable 3626cpr0958
+// 0 !KEYWORDS set 6865, The Avengers
 // 
 // 0 !CMDLINE -c272
 // 

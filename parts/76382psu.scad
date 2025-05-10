@@ -14,9 +14,8 @@ function ldraw_lib__76382psu() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Armor, Bricklink 973pb0510c01, Brickowl 381200
-// 0 !KEYWORDS Rebrickable 973c27h03pr0470, set 7675, Set 7676, Set 7913, Set 8014
-// 0 !KEYWORDS Set 8018, Star Wars, The Clone Wars
+// 0 !KEYWORDS Armor, Bricklink 973pb0510c01, Rebrickable 973c27h03pr0470, set 7675
+// 0 !KEYWORDS Set 7676, Set 7913, Set 8014, Set 8018, Star Wars, The Clone Wars
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

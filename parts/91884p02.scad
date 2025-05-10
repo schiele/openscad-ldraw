@@ -13,7 +13,7 @@ function ldraw_lib__91884p02() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS CMF Series 6
+// 0 !KEYWORDS BrickLink 91884pb002, CMF Series 6, Rebrickable 91884pr0002
 // 
 // 0 !HISTORY 2014-06-21 [PTadmin] Official Update 2014-01
 // 

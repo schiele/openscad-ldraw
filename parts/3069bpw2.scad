@@ -11,7 +11,8 @@ function ldraw_lib__3069bpw2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Banknote, dollar, Note, Paper money
+// 0 !KEYWORDS Banknote, Bricklink 3069px7, dollar, Note, Paper money
+// 0 !KEYWORDS Rebrickable 3069bpr0100, Set 10216
 // 
 // 0 !HISTORY 2009-12-29 [PTadmin] Official Update 2009-03
 // 0 !HISTORY 2017-07-12 [Philo] A bit more detailed pattern, added keywords

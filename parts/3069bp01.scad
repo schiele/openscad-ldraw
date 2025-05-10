@@ -11,6 +11,8 @@ function ldraw_lib__3069bp01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
+// 0 !KEYWORDS BrickLink 3069p01, Rebrickable 3069bpr0099, Set 10022
+// 
 // 0 !HISTORY 2003-06-03 [Steffen] changed blue lines to quads, BFCed
 // 0 !HISTORY 2003-12-19 [PTadmin] Official Update 2003-03
 // 0 !HISTORY 2007-06-13 [PTadmin] Header formatted for Contributor Agreement

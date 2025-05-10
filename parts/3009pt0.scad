@@ -11,6 +11,8 @@ function ldraw_lib__3009pt0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
+// 0 !KEYWORDS BrickLink 3009pb035, Rebrickable 3009pr0052, Set DATABASE
+// 
 // 0 !HISTORY 2003-07-03 [Steffen] made use of subfile, extended part name
 // 0 !HISTORY 2004-09-15 [PTadmin] Official Update 2004-03
 // 0 !HISTORY 2007-06-06 [PTadmin] Header formatted for Contributor Agreement

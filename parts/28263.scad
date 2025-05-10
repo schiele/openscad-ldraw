@@ -29,6 +29,7 @@ function ldraw_lib__28263() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Footwear
+// 0 !KEYWORDS BrickLink 11187, Rebrickable 11187
 // 
 // 0 !HISTORY 2019-06-27 [GeraldLasser] Derived from 30284.dat
 // 0 !HISTORY 2023-09-11 [Holly-Wood] Exchanged code between 11187a and 28263

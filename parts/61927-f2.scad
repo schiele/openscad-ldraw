@@ -13,7 +13,7 @@ function ldraw_lib__61927_f2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Power Functions
+// 0 !KEYWORDS BrickLink 61927c01, Power Functions, Rebrickable 61927b
 // 
 // 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02
 // 0 !HISTORY 2016-08-31 [PTadmin] Renamed from 61927c01

@@ -13,7 +13,8 @@ function ldraw_lib__32474px0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS BrickLink 32474pb003, Set 41068, Set 41148, Set 43172
+// 0 !KEYWORDS BrickLink 32474pb003, Rebrickable 32474pr1009, Set 41068, Set 41148
+// 0 !KEYWORDS Set 43172
 // 
 // 0 !HISTORY 2022-09-17 [MagFors] Reshaped for diameter 12.81
 // 0 !HISTORY 2024-05-01 [MagFors] Complete rework due to bad size

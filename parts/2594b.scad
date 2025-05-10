@@ -19,7 +19,8 @@ function ldraw_lib__2594b() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Castle, Clay Bot, Fantasy Era, knight, Knights
+// 0 !KEYWORDS BrickLink x126, Castle, Clay Bot, Fantasy Era, knight, Knights
+// 0 !KEYWORDS Rebrickable 2594
 // 
 // 0 !HISTORY 2005-01-28 [rbaxter] Original part created
 // 0 !HISTORY 2014-01-04 [mikeheide] with WINDZ for BFC compliance

@@ -13,8 +13,8 @@ function ldraw_lib__3899p03() = [
 // 
 // 0 !CATEGORY Minifig Accessory
 // 0 !KEYWORDS Bricklink 3899pb003, cocoa, Coffee, Collectible Minifigures
-// 0 !KEYWORDS Cookware, drink, Gingerbread Man, mug, Series 11, set 71002, tea
-// 0 !KEYWORDS town, utensil
+// 0 !KEYWORDS Cookware, drink, Gingerbread Man, mug, Rebrickable 3899pr0003
+// 0 !KEYWORDS Series 11, set 71002, tea, town, utensil
 // 
 // 0 !HISTORY 2022-09-15 [PTadmin] Official Update 2022-05
 // 

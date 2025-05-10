@@ -12,7 +12,7 @@ function ldraw_lib__850c02_f2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS fire fighter, legoland, rung, set 336, Step
+// 0 !KEYWORDS fire fighter, legoland, Rebrickable 850c02, rung, set 336, Step
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
 // 

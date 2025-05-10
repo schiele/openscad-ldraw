@@ -13,6 +13,8 @@ function ldraw_lib__3626c() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 3626
+// 
 // 0 !HISTORY 2012-12-28 [PTadmin] Official Update 2012-03
 // 0 !HISTORY 2022-07-30 [MagFors] Update description
 // 0 !HISTORY 2022-09-15 [PTadmin] Official Update 2022-05

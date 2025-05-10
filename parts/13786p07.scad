@@ -15,7 +15,8 @@ function ldraw_lib__13786p07() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS 12 Grimmauld Place, Bricklink 13786pb08, Crookshanks, Set 76408
+// 0 !KEYWORDS 12 Grimmauld Place, Bricklink 13786pb08, Crookshanks
+// 0 !KEYWORDS Rebrickable 13786pr0024, Set 76408
 // 
 // 0 !HISTORY 2024-10-27 [OrionP] Official Update 2024-09
 // 

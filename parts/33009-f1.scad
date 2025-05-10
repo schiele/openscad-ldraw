@@ -15,10 +15,10 @@ function ldraw_lib__33009_f1() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS atlas, Belville, bookcase, bookshelf, Castle, container, diary
-// 0 !KEYWORDS dictionary, encyclopaedia, encyclopedia, Harry Potter, hollow book
-// 0 !KEYWORDS journal, libram, library, log, magic, sorceror, spellbook, tome
-// 0 !KEYWORDS Wizard
+// 0 !KEYWORDS atlas, Belville, bookcase, bookshelf, BrickLink 33009, Castle
+// 0 !KEYWORDS container, diary, dictionary, encyclopaedia, encyclopedia
+// 0 !KEYWORDS Harry Potter, hollow book, journal, libram, library, log, magic
+// 0 !KEYWORDS Rebrickable 33009, sorceror, spellbook, tome, Wizard
 // 
 // 0 !HISTORY 2004-04-22 [PTadmin] Official Update 2004-02
 // 0 !HISTORY 2007-06-25 [PTadmin] Header formatted for Contributor Agreement

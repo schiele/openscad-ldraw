@@ -11,7 +11,8 @@ function ldraw_lib__2335pw1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Fort Legoredo, set 6769, western
+// 0 !KEYWORDS BrickLink 2335px4, Fort Legoredo, Rebrickable 2335pr0027, set 6769
+// 0 !KEYWORDS western
 // 
 // 0 !HISTORY 2002-10-24 [Holly-Wood] Modified with WINDZ for BFC compliance
 // 0 !HISTORY 2004-09-15 [PTadmin] Official Update 2004-03

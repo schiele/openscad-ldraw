@@ -11,7 +11,8 @@ function ldraw_lib__3068bpq0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Pharaoh's Quest
+// 0 !KEYWORDS BrickLink 3068pb0367, Pharaoh's Quest, Rebrickable 3068bpr0188
+// 0 !KEYWORDS Set 7327
 // 
 // 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02
 // 

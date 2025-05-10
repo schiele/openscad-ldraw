@@ -15,6 +15,8 @@ function ldraw_lib__u9308() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink x149, Rebrickable upn0206
+// 
 // 0 !HISTORY 2015-11-29 [MMR1988] Completely reworked
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 

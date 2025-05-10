@@ -25,7 +25,7 @@ function ldraw_lib__609p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS curved, green, Rebrickable 609pr0001, roadplate
+// 0 !KEYWORDS curved, green, Rebrickable 609pr0001, roadplate, Set 1060
 // 
 // 0 !CMDLINE -c7
 // 

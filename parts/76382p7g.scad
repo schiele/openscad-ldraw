@@ -14,12 +14,12 @@ function ldraw_lib__76382p7g() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Airport, Bricklink 973px18c01, BrickOwl 81944, dacta, Emergency
-// 0 !KEYWORDS Fire, football, Mini Upper Part No 313, Rebrickable 973c27h01pr0018
-// 0 !KEYWORDS rescue, Set 1069, Set 1255, Set 1854, Set 2882, Set 3312, Set 3408
-// 0 !KEYWORDS Set 4032, Set 4559, Set 6326, Set 6329, set 6337, set 6426, Set 6571
-// 0 !KEYWORDS set 6598, Set 9247, set 9293, set 9453, shell, Soccer, town
-// 0 !KEYWORDS Town Junior, Trains, Velux
+// 0 !KEYWORDS Airport, Bricklink 973px18c01, dacta, Emergency, Fire, football
+// 0 !KEYWORDS Mini Upper Part No 313, Rebrickable 973c27h01pr0018, rescue
+// 0 !KEYWORDS Set 1069, Set 1255, Set 1854, Set 2882, Set 3312, Set 3408, Set 4032
+// 0 !KEYWORDS Set 4559, Set 6326, Set 6329, set 6337, set 6426, Set 6571, set 6598
+// 0 !KEYWORDS Set 9247, set 9293, set 9453, shell, Soccer, town, Town Junior
+// 0 !KEYWORDS Trains, Velux
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

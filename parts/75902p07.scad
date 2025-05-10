@@ -14,9 +14,8 @@ function ldraw_lib__75902p07() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS Bricklink 75902pb14, Brickowl 106229, CMF, Collectible Minifigures
-// 0 !KEYWORDS Disney Series 2, Hercules, Rebrickable 75902pr0018, Set 66604
-// 0 !KEYWORDS set 71024
+// 0 !KEYWORDS Bricklink 75902pb14, CMF, Collectible Minifigures, Disney Series 2
+// 0 !KEYWORDS Hercules, Rebrickable 75902pr0018, Set 66604, set 71024
 // 
 // 0 !HISTORY 2024-05-28 [OrionP] Official Update 2024-04
 // 

@@ -11,7 +11,7 @@ function ldraw_lib__4346p04() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 4346px2, Set 4559
+// 0 !KEYWORDS Bricklink 4346px2, Rebrickable 4346pr0015, Set 4559
 // 
 // 0 !HISTORY 2023-03-05 [OrionP] Official Update 2023-01
 // 

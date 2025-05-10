@@ -11,7 +11,7 @@ function ldraw_lib__3245cp00() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3245cpb095, Set 70828, Zebe
+// 0 !KEYWORDS Bricklink 3245cpb095, Rebrickable 3245cpr0152, Set 70828, Zebe
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
 // 

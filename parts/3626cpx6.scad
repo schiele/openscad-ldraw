@@ -15,7 +15,7 @@ function ldraw_lib__3626cpx6() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626cpb1123, Brickowl 907821, Ghostbusters, Peter Venkman
+// 0 !KEYWORDS BrickLink 3626pb1123, Ghostbusters, Peter Venkman
 // 0 !KEYWORDS Rebrickable 3626cpr1535, Set 21108, Set 71228, Set 75920
 // 
 // 0 !HISTORY 2024-10-27 [OrionP] Official Update 2024-09

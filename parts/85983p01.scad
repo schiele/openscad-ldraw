@@ -13,6 +13,7 @@ function ldraw_lib__85983p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Vehicle
+// 0 !KEYWORDS BrickLink 85983pb02, Rebrickable 85983pr0002, Set 5001133
 // 
 // 0 !HISTORY 2013-08-14 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2015-03-15 [MagFors] File preparation for LDraw Parts Tracker

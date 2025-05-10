@@ -11,6 +11,8 @@ function ldraw_lib__2345p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
+// 0 !KEYWORDS Rebrickable 2345pr0001, Set 10000
+// 
 // 0 !HISTORY 2000-08-01 {Manfred Moolhuysen} fixes to resolve L3P error messages
 // 0 !HISTORY 2000-09-30 [PTadmin] Official Update 2000-02
 // 0 !HISTORY 2003-10-15 [westrate] Subfiled, BFC'd

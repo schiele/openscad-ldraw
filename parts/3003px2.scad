@@ -12,7 +12,8 @@ function ldraw_lib__3003px2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Disney, Mickey Mouse, Set 21317, Steamboat Willie
+// 0 !KEYWORDS BrickLink 3003pb107, Disney, Mickey Mouse, Rebrickable 3003pr0125
+// 0 !KEYWORDS Set 21317, Steamboat Willie
 // 
 // 0 !HISTORY 2019-12-27 [PTadmin] Official Update 2019-03
 // 

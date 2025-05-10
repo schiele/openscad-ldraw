@@ -15,7 +15,7 @@ function ldraw_lib__3195p03() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Metroliner, Set 4558
+// 0 !KEYWORDS BrickLink 3195px1, Metroliner, Rebrickable 3195pr0001, Set 4558
 // 
 // 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02
 // 0 !HISTORY 2012-06-30 [MMR1988] Logo Changed

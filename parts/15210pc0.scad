@@ -12,7 +12,7 @@ function ldraw_lib__15210pc0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS bricklink 15210pb002, Desktop, set 60047
+// 0 !KEYWORDS bricklink 15210pb002, Desktop, Rebrickable 15210pr0005, set 60047
 // 
 // 0 !HISTORY 2018-12-08 [PTadmin] Official Update 2018-02
 // 0 !HISTORY 2019-11-28 [Mad_Marc] Use subpart for pattern

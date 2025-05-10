@@ -14,9 +14,9 @@ function ldraw_lib__76382pd31() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb1994c01, BrickOwl 995585, CMF, Date Night Homer
-// 0 !KEYWORDS Homer Simpson, Mini Upper Part No 2970, Rebrickable 973c28h01pr2970
-// 0 !KEYWORDS Set 71009, Sundays Finest, The Simpsons
+// 0 !KEYWORDS Bricklink 973pb1994c01, CMF, Date Night Homer, Homer Simpson
+// 0 !KEYWORDS Mini Upper Part No 2970, Rebrickable 973c28h01pr2970, Set 71009
+// 0 !KEYWORDS Sundays Finest, The Simpsons
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

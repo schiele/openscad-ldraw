@@ -13,7 +13,8 @@ function ldraw_lib__u8025c01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Window
-// 0 !KEYWORDS Automatic Binding Brick
+// 0 !KEYWORDS Automatic Binding Brick, BrickLink cwindow05
+// 0 !KEYWORDS Rebrickable brickslot0010
 // 
 // 0 !HISTORY 2019-06-03 [Holly-Wood] Separated glass in separate file
 // 0 !HISTORY 2019-09-09 [PTadmin] Official Update 2019-02

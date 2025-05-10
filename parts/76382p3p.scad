@@ -14,8 +14,8 @@ function ldraw_lib__76382p3p() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS bandolier, Bricklink 973pb0529c01, BrickOwl 66487
-// 0 !KEYWORDS Rebrickable 973c28h01pr1460, set 6192, vest
+// 0 !KEYWORDS bandolier, Bricklink 973pb0529c01, Rebrickable 973c28h01pr1460
+// 0 !KEYWORDS set 6192, vest
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

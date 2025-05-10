@@ -14,7 +14,8 @@ function ldraw_lib__12893p02() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Alfred Pennyworth, Batman, Bricklink 12893pb02, Set 70909, Set 70922
+// 0 !KEYWORDS Alfred Pennyworth, Batman, Bricklink 12893pb02
+// 0 !KEYWORDS Rebrickable 12893pr0002, Set 70909, Set 70922
 // 
 // 0 !HISTORY 2023-08-25 [OrionP] Official Update 2023-04
 // 

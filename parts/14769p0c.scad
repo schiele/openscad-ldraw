@@ -12,7 +12,8 @@ function ldraw_lib__14769p0c() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Garage, Gas Station, Set 10264, Vintage
+// 0 !KEYWORDS BrickLink 14769pb243, Garage, Gas Station, Rebrickable 14769pr1118
+// 0 !KEYWORDS Set 10264, Vintage
 // 
 // 0 !CMDLINE -c15
 // 

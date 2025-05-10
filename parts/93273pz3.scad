@@ -12,7 +12,8 @@ function ldraw_lib__93273pz3() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickheadz, Bricklink 93273pb076, Lloyd, Set 41487
+// 0 !KEYWORDS Brickheadz, Bricklink 93273pb076, Lloyd, Rebrickable 93273pr0013
+// 0 !KEYWORDS Set 41487
 // 
 // 0 !HISTORY 2020-06-28 [PTadmin] Official Update 2020-01
 // 

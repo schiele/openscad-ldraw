@@ -13,8 +13,8 @@ function ldraw_lib__3626bp6y() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626bpx76, Brickowl 779362, Invaders
-// 0 !KEYWORDS Rebrickable 3626bpr0032, set 2543, set 2847, set 6975, Space, UFO
+// 0 !KEYWORDS BrickLink 3626px76, Invaders, Rebrickable 3626bpr0032, set 2543
+// 0 !KEYWORDS set 2847, set 6975, Space, UFO
 // 
 // 0 !HISTORY 2010-12-31 [PTadmin] Official Update 2010-03
 // 0 !HISTORY 2011-09-02 [BlackBrick89] Corrected description and conditional lines

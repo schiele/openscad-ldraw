@@ -11,7 +11,8 @@ function ldraw_lib__3068bpfq() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS nine, Scala, set 310, six
+// 0 !KEYWORDS BrickLink 3068pb2446, nine, Rebrickable 3068bpr9914, Scala, set 310
+// 0 !KEYWORDS six
 // 
 // 0 !CMDLINE -c14
 // 

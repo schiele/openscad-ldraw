@@ -17,10 +17,10 @@ function ldraw_lib__30124bp04() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Bricklink 2446px2, Brickowl 653327, city center, dacta, Paula
-// 0 !KEYWORDS police, Rebrickable 2446pr0040, Set 3350, Set 4304, Set 5393
-// 0 !KEYWORDS Set 6324, Set 6326, set 6332, Set 6344, set 6348, set 6549, set 6636
-// 0 !KEYWORDS Set 6664, set 9293, town
+// 0 !KEYWORDS Bricklink 2446px2, city center, dacta, Paula, police
+// 0 !KEYWORDS Rebrickable 2446pr0040, Set 3350, Set 4304, Set 5393, Set 6324
+// 0 !KEYWORDS Set 6326, set 6332, Set 6344, set 6348, set 6549, set 6636, Set 6664
+// 0 !KEYWORDS set 9293, town
 // 
 // 0 !HISTORY 2024-09-30 [OrionP] Official Update 2024-08
 // 0 !HISTORY 2024-10-16 [Holly-Wood] Sanded title, Added keywords

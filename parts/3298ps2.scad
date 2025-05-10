@@ -11,7 +11,8 @@ function ldraw_lib__3298ps2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS podracer, Sebulba, Set 7171, Star Wars
+// 0 !KEYWORDS BrickLink 3298px8, podracer, Rebrickable 3298pr0052, Sebulba
+// 0 !KEYWORDS Set 7171, Star Wars
 // 
 // 0 !HISTORY 2016-12-31 [PTadmin] Official Update 2016-01
 // 

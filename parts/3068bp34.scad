@@ -11,10 +11,10 @@ function ldraw_lib__3068bp34() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3068bpb0929, Pirates, Set 10403, set 21310, set 21322
-// 0 !KEYWORDS Set 31064, set 31109, Set 40158, Set 40341, Set 41428, Set 43114
-// 0 !KEYWORDS Set 45813, Set 60272, Set 70411, Set 70413, Set 75930, Set 76060
-// 0 !KEYWORDS treasure
+// 0 !KEYWORDS BrickLink 3068pb0929, Pirates, Rebrickable 3068bpr0240, Set 10403
+// 0 !KEYWORDS set 21310, set 21322, Set 31064, set 31109, Set 40158, Set 40341
+// 0 !KEYWORDS Set 41428, Set 43114, Set 45813, Set 60272, Set 70411, Set 70413
+// 0 !KEYWORDS Set 75930, Set 76060, treasure
 // 
 // 0 !HISTORY 2022-12-20 [PTadmin] Official Update 2022-06
 // 

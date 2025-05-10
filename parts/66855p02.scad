@@ -13,7 +13,8 @@ function ldraw_lib__66855p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Mushroom, Set 71407, Super Mario
+// 0 !KEYWORDS BrickLink 66855pb02, Mushroom, Rebrickable 66855pr0002, Set 71407
+// 0 !KEYWORDS Super Mario
 // 
 // 0 !HISTORY 2023-08-25 [OrionP] Official Update 2023-04
 // 

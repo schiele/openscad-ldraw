@@ -14,10 +14,10 @@ function ldraw_lib__76382p6x() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Android, Bricklink 973px132c01, BrickOwl 982561, droid, Invaders
-// 0 !KEYWORDS Otopian, Planet Humorless, Rebrickable 973c28h03pr0132, Robot
-// 0 !KEYWORDS set 3012, set 4305, set 6800, set 6816, set 6818, set 6829, set 6975
-// 0 !KEYWORDS Space, Techdroid I, UFO, Zotax
+// 0 !KEYWORDS Android, Bricklink 973px132c01, droid, Invaders, Otopian
+// 0 !KEYWORDS Planet Humorless, Rebrickable 973c28h03pr0132, Robot, set 3012
+// 0 !KEYWORDS set 4305, set 6800, set 6816, set 6818, set 6829, set 6975, Space
+// 0 !KEYWORDS Techdroid I, UFO, Zotax
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

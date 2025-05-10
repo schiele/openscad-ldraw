@@ -12,7 +12,7 @@ function ldraw_lib__43744() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Fawkes, Harry Potter
+// 0 !KEYWORDS BrickLink 43744pb01, Fawkes, Harry Potter
 // 
 // 0 !HISTORY 2011-12-03 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2011-12-04 [angmarec] File preparation for LDraw Parts Tracker

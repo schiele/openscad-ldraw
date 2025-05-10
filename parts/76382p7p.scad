@@ -14,8 +14,8 @@ function ldraw_lib__76382p7p() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973px177c01, BrickOwl 109964, City, city center, Dave
-// 0 !KEYWORDS digger, Mini Heroes Collection, Mini Upper Part No 409
+// 0 !KEYWORDS Bricklink 973px177c01, City, city center, Dave, digger
+// 0 !KEYWORDS Mini Heroes Collection, Mini Upper Part No 409
 // 0 !KEYWORDS Rebrickable 973c34h08pr0177, Set 3351, set 6474, Set 6600
 // 0 !KEYWORDS Town Junior
 // 

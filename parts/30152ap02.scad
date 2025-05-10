@@ -13,6 +13,7 @@ function ldraw_lib__30152ap02() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
+// 0 !KEYWORDS BrickLink 30152c02, Rebrickable 30152pat0003, Set 4742
 // 
 // 0 !HISTORY 2017-11-28 [GeraldLasser] Original 30152 has bad Dimensions and Shape
 // 0 !HISTORY 2020-06-28 [PTadmin] Official Update 2020-01

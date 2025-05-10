@@ -12,7 +12,7 @@ function ldraw_lib__973pb6() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Batman, Riddler
+// 0 !KEYWORDS Batman, Riddler, set 7785
 // 
 // 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01
 // 

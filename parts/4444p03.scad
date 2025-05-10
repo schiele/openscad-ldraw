@@ -12,7 +12,7 @@ function ldraw_lib__4444p03() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !KEYWORDS Castle Wall, half-timbered, Tudor
+// 0 !KEYWORDS Castle Wall, half-timbered, Rebrickable 4444pr0003, Set 10000, Tudor
 // 
 // 0 !HISTORY 2003-10-15 [westrate] BFC'd, subfiled
 // 0 !HISTORY 2004-09-15 [PTadmin] Official Update 2004-03

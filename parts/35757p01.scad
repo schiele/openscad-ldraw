@@ -13,8 +13,7 @@ function ldraw_lib__35757p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 35757c01pb01, Brickowl 798443, Rebrickable 35757pr0001
-// 0 !KEYWORDS Set 71021
+// 0 !KEYWORDS Bricklink 35757c01pb01, Rebrickable 35757pr0001, Set 71021
 // 
 // 0 !HISTORY 2024-10-27 [OrionP] Official Update 2024-09
 // 

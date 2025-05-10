@@ -12,8 +12,8 @@ function ldraw_lib__24087p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Hipwear
-// 0 !KEYWORDS ballerina, ballet, Bricklink 24087pb01, Brickowl 245093, CMF, dance
-// 0 !KEYWORDS N-POP Girl, petticoat, Rebrickable 24087pr0001, set 71019
+// 0 !KEYWORDS ballerina, ballet, Bricklink 24087pb01, CMF, dance, N-POP Girl
+// 0 !KEYWORDS petticoat, Rebrickable 24087pr0001, set 71019
 // 0 !KEYWORDS The LEGO Ninjago Movie, toe dancing, tutu
 // 
 // 0 !HISTORY 2016-03-18 {LEGO Digital Designer} Original part shape

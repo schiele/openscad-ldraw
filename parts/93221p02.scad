@@ -17,6 +17,7 @@ function ldraw_lib__93221p02() = [
 // 
 // 0 !CATEGORY Minifig Accessory
 // 0 !KEYWORDS BrickLink 93221pb02, CMF series 5, Collectible Minifigures
+// 0 !KEYWORDS Rebrickable 93221pr0002
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
 // 

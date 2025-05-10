@@ -13,6 +13,8 @@ function ldraw_lib__265ac01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
+// 0 !KEYWORDS BrickLink 08010cc01
+// 
 // 0 !HISTORY 2009-12-29 [PTadmin] Official Update 2009-03
 // 0 !HISTORY 2010-04-25 [PTadmin] Renamed from 265c01
 // 0 !HISTORY 2010-07-05 [PTadmin] Official Update 2010-02

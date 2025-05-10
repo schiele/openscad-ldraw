@@ -16,8 +16,8 @@ function ldraw_lib__3626cp7c() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626cpb2054, Brickowl 909667, Rebrickable 3626cpr2463
-// 0 !KEYWORDS Set 10297, Set 31320, Set 60292
+// 0 !KEYWORDS BrickLink 3626pb2054, Rebrickable 3626cpr2463, Set 10297, Set 31320
+// 0 !KEYWORDS Set 60292
 // 
 // 0 !HISTORY 2024-05-28 [OrionP] Official Update 2024-04
 // 0 !HISTORY 2024-06-11 [Holly-Wood] Added keywords

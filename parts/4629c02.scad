@@ -14,6 +14,7 @@ function ldraw_lib__4629c02() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
+// 0 !KEYWORDS BrickLink 4629c01, Rebrickable 4629c01
 // 
 // 0 !HISTORY 1997-10-29 [PTadmin] Official Update 1997-16
 // 0 !HISTORY 2007-07-08 [PTadmin] Header formatted for Contributor Agreement

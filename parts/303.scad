@@ -16,7 +16,7 @@ function ldraw_lib__303() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !KEYWORDS Motor Cutout
+// 0 !KEYWORDS BrickLink x902, Motor Cutout
 // 
 // 0 !HISTORY 2009-09-03 [PTadmin] Official Update 2009-02
 // 

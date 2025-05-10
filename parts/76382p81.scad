@@ -14,10 +14,10 @@ function ldraw_lib__76382p81() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb4275c01, BrickOwl 981482, City, city center
-// 0 !KEYWORDS Mandy the Mechanic, Race, Racing, Rebrickable 973c28h01pr0166
-// 0 !KEYWORDS Set 1760, Set 1762, Set 6335, set 6337, Set 6424, Set 6432, Set 6537
-// 0 !KEYWORDS Set 6550, Set 6596, town, Town Junior
+// 0 !KEYWORDS Bricklink 973pb4275c01, City, city center, Mandy the Mechanic, Race
+// 0 !KEYWORDS Racing, Rebrickable 973c28h01pr0166, Set 1760, Set 1762, Set 6335
+// 0 !KEYWORDS set 6337, Set 6424, Set 6432, Set 6537, Set 6550, Set 6596, town
+// 0 !KEYWORDS Town Junior
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

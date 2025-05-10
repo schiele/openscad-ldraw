@@ -15,7 +15,8 @@ function ldraw_lib__3626cpx8() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626cpb1441, Chell, Dimensions, Portal, Set 71203
+// 0 !KEYWORDS BrickLink 3626pb1441, Chell, Dimensions, Portal
+// 0 !KEYWORDS Rebrickable 3626cpr1777, Set 71203
 // 
 // 0 !HISTORY 2024-09-30 [OrionP] Official Update 2024-08
 // 

@@ -15,7 +15,7 @@ function ldraw_lib__3626cp8g() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS BrickLink 3626cpb1114
+// 0 !KEYWORDS BrickLink 3626pb1114, Rebrickable 3626cpr1442, Set 70816
 // 
 // 0 !HISTORY 2015-10-30 [MagFors] Subfiled half of the pattern
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01

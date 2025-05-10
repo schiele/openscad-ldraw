@@ -12,8 +12,8 @@ function ldraw_lib__35154ps1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3961pb16, Brickowl 908806, Rebrickable 35154pr0001
-// 0 !KEYWORDS Set 75382, Star Wars, UCS
+// 0 !KEYWORDS Bricklink 3961pb16, Rebrickable 35154pr0001, Set 75382, Star Wars
+// 0 !KEYWORDS UCS
 // 
 // 0 !HISTORY 2024-09-30 [OrionP] Official Update 2024-08
 // 

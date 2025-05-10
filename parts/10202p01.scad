@@ -11,7 +11,8 @@ function ldraw_lib__10202p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Field, Manchester United, Old Trafford, Set 10272, Soccer
+// 0 !KEYWORDS BrickLink 10202pb014, Field, Manchester United, Old Trafford
+// 0 !KEYWORDS Rebrickable 10202pr0007, Set 10272, Soccer
 // 
 // 0 !HISTORY 2020-06-28 [PTadmin] Official Update 2020-01
 // 

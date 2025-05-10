@@ -13,7 +13,7 @@ function ldraw_lib__2528ap3c() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Bricklink 2528pb09, Governor, Set 70412
+// 0 !KEYWORDS Bricklink 2528pb09, Governor, Rebrickable 2528pr0006, Set 70412
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
 // 

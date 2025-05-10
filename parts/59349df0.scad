@@ -16,6 +16,8 @@ function ldraw_lib__59349df0() = [
 // 0 !KEYWORDS Bricklink 59349pb073, Friends, Set 3185, shower room
 // 0 !KEYWORDS Summer riding camp
 // 
+// 0 !PREVIEW 16 0 0 0 -1 0 0 0 1 0 0 0 -1
+// 
 // 0 !HISTORY 2024-09-30 [OrionP] Official Update 2024-08
 // 0 !HISTORY 2025-03-12 [Cheenzo] Added META for preview
 // 0 !HISTORY 2025-03-30 [OrionP] Official Update 2025-03

@@ -14,9 +14,9 @@ function ldraw_lib__76382pxb() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS A-Team, B.A. Baracus, Bricklink 973pb2506c01, BrickOwl 716357
-// 0 !KEYWORDS Dimensions, Mini Upper Part No 3525, Mr. T
-// 0 !KEYWORDS Rebrickable 973c19h19pr3525, Set 71251
+// 0 !KEYWORDS A-Team, B.A. Baracus, Bricklink 973pb2506c01, Dimensions
+// 0 !KEYWORDS Mini Upper Part No 3525, Mr. T, Rebrickable 973c19h19pr3525
+// 0 !KEYWORDS Set 71251
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

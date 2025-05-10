@@ -11,7 +11,7 @@ function ldraw_lib__3070bp08() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS thick
+// 0 !KEYWORDS BrickLink 3070p08, Rebrickable 3070bpr0032, set 6395, thick
 // 
 // 0 !HISTORY 2003-07-02 [Steffen] fixed BFC errors
 // 0 !HISTORY 2004-09-15 [PTadmin] Official Update 2004-03

@@ -11,7 +11,8 @@ function ldraw_lib__3622pz1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3622pb145, Lando Calrissian, Set 40623, Star Wars
+// 0 !KEYWORDS Bricklink 3622pb145, Lando Calrissian, Rebrickable 3622pr0071
+// 0 !KEYWORDS Set 40623, Star Wars
 // 
 // 0 !HISTORY 2024-07-29 [OrionP] Official Update 2024-06
 // 

@@ -12,7 +12,8 @@ function ldraw_lib__4198p02() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Brick
-// 0 !KEYWORDS bricklink 4198pb08, Service station, Set 2644, Signboard
+// 0 !KEYWORDS bricklink 4198pb08, Rebrickable 4198pr9990, Service station
+// 0 !KEYWORDS Set 2644, Signboard
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
 // 

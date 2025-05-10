@@ -14,10 +14,9 @@ function ldraw_lib__76382pwd() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS American Indian, Bricklink 973px106c01, Brickowl 388494
-// 0 !KEYWORDS Mini Upper Part No 257, Rapid River Village
-// 0 !KEYWORDS Rebrickable 973c26h01pr0106, set 6746, set 6748, set 6763, set 6766
-// 0 !KEYWORDS Sui, western, wild west
+// 0 !KEYWORDS American Indian, Bricklink 973px106c01, Mini Upper Part No 257
+// 0 !KEYWORDS Rapid River Village, Rebrickable 973c26h01pr0106, set 6746, set 6748
+// 0 !KEYWORDS set 6763, set 6766, Sui, western, wild west
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

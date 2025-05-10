@@ -13,7 +13,7 @@ function ldraw_lib__4789c01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Boat
-// 0 !KEYWORDS Steamboat, Waterwheel
+// 0 !KEYWORDS BrickLink 4788c01, Rebrickable 4788c01, Steamboat, Waterwheel
 // 
 // 0 !HISTORY 2024-01-29 [OrionP] Official Update 2024-01
 // 

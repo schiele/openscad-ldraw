@@ -13,8 +13,8 @@ function ldraw_lib__4162p1o() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Architecture, Bricklink 4162pb249, Brickowl 804047, India
-// 0 !KEYWORDS Rebrickable 4162pr0082, Set 21056
+// 0 !KEYWORDS Architecture, Bricklink 4162pb249, India, Rebrickable 4162pr0082
+// 0 !KEYWORDS Set 21056
 // 
 // 0 !HISTORY 2024-12-30 [OrionP] Official Update 2024-11
 // 

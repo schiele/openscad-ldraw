@@ -16,7 +16,8 @@ function ldraw_lib__30480ps0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS C-3PO, C3-PO, C3PO, Star Wars
+// 0 !KEYWORDS BrickLink x134pb01, C-3PO, C3-PO, C3PO, Rebrickable 30480pr0001
+// 0 !KEYWORDS set 75098, Star Wars
 // 
 // 0 !HISTORY 2015-10-11 [PTadmin] Official Update 2015-01
 // 

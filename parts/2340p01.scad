@@ -12,7 +12,8 @@ function ldraw_lib__2340p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !KEYWORDS Airplane, bricklink 2340pb030, Jetliner, set 611-2
+// 0 !KEYWORDS Airplane, bricklink 2340pb030, Jetliner, Rebrickable 2340pr0002
+// 0 !KEYWORDS set 611-2
 // 
 // 0 !HISTORY 2020-08-04 [RainbowDolphin] File preparation for LDraw Parts Tracker, with original pattern by Adam Malone [ShireBrickz.com]
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04

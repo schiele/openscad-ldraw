@@ -18,6 +18,8 @@ function ldraw_lib__6821a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 6821, Rebrickable 6821
+// 
 // 0 !HISTORY 2024-12-30 [OrionP] Official Update 2024-11
 // 
 // 

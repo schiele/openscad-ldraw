@@ -22,7 +22,7 @@ function ldraw_lib__14769p0a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS 14769pb133
+// 0 !KEYWORDS 14769pb133, BrickLink 14769pb133, Rebrickable 14769pr1054, Set 10255
 // 
 // 0 !HISTORY 2019-09-09 [PTadmin] Official Update 2019-02
 // 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives

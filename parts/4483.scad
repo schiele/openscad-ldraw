@@ -20,6 +20,7 @@ function ldraw_lib__4483() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Vehicle
+// 0 !KEYWORDS BrickLink bb0057
 // 
 // 0 !HISTORY 2009-12-26 [MagFors] BFC'ed and changed origin
 // 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01

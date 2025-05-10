@@ -12,7 +12,8 @@ function ldraw_lib__3684cph0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS bricklink 3684cpb025, Harry Potter, Madame Maxime, Set 75948
+// 0 !KEYWORDS bricklink 3684cpb025, Harry Potter, Madame Maxime
+// 0 !KEYWORDS Rebrickable 98560pr0001, Set 75948
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
 // 

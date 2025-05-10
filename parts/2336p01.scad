@@ -15,6 +15,8 @@ function ldraw_lib__2336p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 2336pb01, Rebrickable 2336pr0005, Set 6115
+// 
 // 0 !HISTORY 2016-12-31 [PTadmin] Official Update 2016-01
 // 
 // 

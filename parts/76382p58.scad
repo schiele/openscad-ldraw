@@ -14,11 +14,10 @@ function ldraw_lib__76382p58() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Alien, Armaron, Bricklink 973pb0080c01, BrickOwl 616478, Cyborg
-// 0 !KEYWORDS Extraterrestrial, Gypsy Moth, Holox, Insectoid Queen, Insectoids
-// 0 !KEYWORDS Insector II, Mini Upper Part No 309, Navigator Sharp
-// 0 !KEYWORDS Rebrickable 973c08h28pr0080, Set 2965, Set 3073, Set 6907, Set 6909
-// 0 !KEYWORDS Space, Zotax
+// 0 !KEYWORDS Alien, Armaron, Bricklink 973pb0080c01, Cyborg, Extraterrestrial
+// 0 !KEYWORDS Gypsy Moth, Holox, Insectoid Queen, Insectoids, Insector II
+// 0 !KEYWORDS Mini Upper Part No 309, Navigator Sharp, Rebrickable 973c08h28pr0080
+// 0 !KEYWORDS Set 2965, Set 3073, Set 6907, Set 6909, Space, Zotax
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

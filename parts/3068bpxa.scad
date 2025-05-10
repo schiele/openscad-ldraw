@@ -11,8 +11,8 @@ function ldraw_lib__3068bpxa() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3068bpb1322, Brickowl 130840, Friends, Glazed Terracotta
-// 0 !KEYWORDS Minecraft, Rebrickable 3068bpr0417, set 10292, Set 21160, Set 21339
+// 0 !KEYWORDS BrickLink 3068pb1322, Friends, Glazed Terracotta, Minecraft
+// 0 !KEYWORDS Rebrickable 3068bpr0417, set 10292, Set 21160, Set 21339
 // 
 // 0 !HISTORY 2024-06-30 [OrionP] Official Update 2024-05
 // 

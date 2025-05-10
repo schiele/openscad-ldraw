@@ -12,6 +12,8 @@ function ldraw_lib__3350p03() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 14pb11, Rebrickable 80045, Set 1060
+// 
 // 0 !HISTORY 2003-08-01 [Steffen] BFCed, made use of subfile
 // 0 !HISTORY 2010-04-03 [tchang] Adjust polygon vertex, Suppress lines
 // 0 !HISTORY 2010-07-05 [PTadmin] Official Update 2010-02

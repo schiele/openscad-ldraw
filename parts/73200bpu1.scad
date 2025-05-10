@@ -17,10 +17,10 @@ function ldraw_lib__73200bpu1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 970c00pb0283, Brickowl 45532, Dimensions Wave 1
-// 0 !KEYWORDS Rebrickable 970c03pr0628, set 30281, set 70801, Set 70803, set 70808
-// 0 !KEYWORDS Set 70810, Set 70819, Set 70820, set 70824, Set 70833, set 70847
-// 0 !KEYWORDS Set 71200, The LEGO Movie, Wyldstyle
+// 0 !KEYWORDS Bricklink 970c00pb0283, Dimensions Wave 1, Rebrickable 970c03pr0628
+// 0 !KEYWORDS set 30281, set 70801, Set 70803, set 70808, Set 70810, Set 70819
+// 0 !KEYWORDS Set 70820, set 70824, Set 70833, set 70847, Set 71200
+// 0 !KEYWORDS The LEGO Movie, Wyldstyle
 // 
 // 0 !HISTORY 2020-12-29 [ejboer] Original design
 // 0 !HISTORY 2023-05-21 [MagFors] Adapted to c-version leg

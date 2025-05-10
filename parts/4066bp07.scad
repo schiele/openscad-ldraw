@@ -12,9 +12,10 @@ function ldraw_lib__4066bp07() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Brick
-// 0 !KEYWORDS bricklink 4066pb065, Farm, Grocery, house, Milk, Set 1025, Set 1040
-// 0 !KEYWORDS Set 1684, set 2399, set 2426, Set 2640, Set 2778, Set 2780, Set 9150
-// 0 !KEYWORDS Set 9152, Set 9977, Set 9978, Supermarket
+// 0 !KEYWORDS bricklink 4066pb065, Farm, Grocery, house, Milk
+// 0 !KEYWORDS Rebrickable 4066pr0138, Set 1025, Set 1040, Set 1684, set 2399
+// 0 !KEYWORDS set 2426, Set 2640, Set 2778, Set 2780, Set 9150, Set 9152, Set 9977
+// 0 !KEYWORDS Set 9978, Supermarket
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
 // 

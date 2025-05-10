@@ -13,8 +13,9 @@ function ldraw_lib__4346pw01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS 6799, Bank, cabinet, Case, combination lock, cowboys, key, set 6755
-// 0 !KEYWORDS set 6761, Set 6764, set 6765, sheriff, treasure, western, wild west
+// 0 !KEYWORDS 6799, Bank, BrickLink 4346px5, cabinet, Case, combination lock
+// 0 !KEYWORDS cowboys, key, Rebrickable 4346pr0017, set 6755, set 6761, Set 6764
+// 0 !KEYWORDS set 6765, sheriff, treasure, western, wild west
 // 
 // 0 !HISTORY 2016-12-31 [PTadmin] Official Update 2016-01
 // 

@@ -13,7 +13,7 @@ function ldraw_lib__25375_f3() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS Set 70681
+// 0 !KEYWORDS BrickLink 25375, Rebrickable 25375, Set 70681
 // 
 // 0 !HISTORY 2016-10-05 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2021-03-16 [Sirio] File preparation for LDraw Parts Tracker

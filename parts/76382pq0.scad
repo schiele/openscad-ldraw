@@ -14,10 +14,9 @@ function ldraw_lib__76382pq0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Ancient Egypt, Bricklink 973pb0780c01, BrickOwl 135756, egyptian
-// 0 !KEYWORDS Mummy Warrior, Pharaoh's Quest, Rebrickable 973c14h12pr0780
-// 0 !KEYWORDS set 7306, Set 7307, Set 7325, Set 7326, Set 7327, set 853176, Spooky
-// 0 !KEYWORDS undead
+// 0 !KEYWORDS Ancient Egypt, Bricklink 973pb0780c01, egyptian, Mummy Warrior
+// 0 !KEYWORDS Pharaoh's Quest, Rebrickable 973c14h12pr0780, set 7306, Set 7307
+// 0 !KEYWORDS Set 7325, Set 7326, Set 7327, set 853176, Spooky, undead
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

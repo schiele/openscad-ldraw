@@ -14,8 +14,8 @@ function ldraw_lib__3626bpad() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS aquashark, Aquazone, bricklink 3626bpx141, set 1095, set 6100
-// 0 !KEYWORDS Set 6104, Set 6135, Set 6190
+// 0 !KEYWORDS aquashark, Aquazone, BrickLink 3626px141, Rebrickable 3626bpr0315
+// 0 !KEYWORDS set 1095, set 6100, Set 6104, Set 6135, Set 6190
 // 
 // 0 !HISTORY 2019-11-19 [Holly-Wood] Added keywords, sanded description
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03

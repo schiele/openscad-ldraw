@@ -16,8 +16,8 @@ function ldraw_lib__90462bpq1() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Bricklink 90462pb01, CMF, Collectable, Pharaoh, Pharaoh's Quest
-// 0 !KEYWORDS Series 2, Set 7327, Set 8684
+// 0 !KEYWORDS BrickLink x177pb01, CMF, Collectable, Pharaoh, Pharaoh's Quest
+// 0 !KEYWORDS Rebrickable 90462pr0002, Series 2, Set 7327, Set 8684
 // 
 // 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02
 // 0 !HISTORY 2012-12-24 [cwdee] Update category

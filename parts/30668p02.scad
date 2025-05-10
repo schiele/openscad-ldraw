@@ -13,8 +13,7 @@ function ldraw_lib__30668p02() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Bricklink 30668pb02, Brickowl 666461, LEGO Ideas
-// 0 !KEYWORDS Rebrickable 30668pr0002, Set 21315
+// 0 !KEYWORDS Bricklink 30668pb02, LEGO Ideas, Rebrickable 30668pr0002, Set 21315
 // 
 // 0 !HISTORY 2023-12-31 [OrionP] Official Update 2023-07
 // 

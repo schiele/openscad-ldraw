@@ -11,7 +11,8 @@ function ldraw_lib__87079pxb() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 87079pb558, Minecraft, Set 21150, Skeleton Face
+// 0 !KEYWORDS BrickLink 87079pb0558, Minecraft, Rebrickable 87079pr0176, Set 21150
+// 0 !KEYWORDS Skeleton Face
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 

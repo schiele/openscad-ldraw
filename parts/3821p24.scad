@@ -12,7 +12,7 @@ function ldraw_lib__3821p24() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Rebrickable 3821pr0005
+// 0 !KEYWORDS Rebrickable 3821pr0005, Set 1067
 // 
 // 0 !PREVIEW 16 0 0 0 -1 0 0 0 1 0 0 0 -1
 // 

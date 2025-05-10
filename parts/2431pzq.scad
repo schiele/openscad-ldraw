@@ -11,7 +11,8 @@ function ldraw_lib__2431pzq() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickheadz, bricklink 2431pb550, Jack Skellington, set 41630
+// 0 !KEYWORDS Brickheadz, bricklink 2431pb550, Jack Skellington
+// 0 !KEYWORDS Rebrickable 2431pr0136, set 41630
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 

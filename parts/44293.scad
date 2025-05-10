@@ -12,7 +12,7 @@ function ldraw_lib__44293() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Racers, Zonic Strike
+// 0 !KEYWORDS BrickLink 44293c01, Racers, Rebrickable 44293c01, Zonic Strike
 // 
 // 0 !HISTORY 2007-06-22 [mikeheide] made BFC
 // 0 !HISTORY 2012-08-09 [PTadmin] Official Update 2012-02

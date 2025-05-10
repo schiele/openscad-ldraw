@@ -17,7 +17,8 @@ function ldraw_lib__19201p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Friends, Naida Riverheart
+// 0 !KEYWORDS BrickLink 19201pb01, Friends, Naida Riverheart
+// 0 !KEYWORDS Rebrickable 19201pr0001, Set 41072
 // 
 // 0 !HISTORY 2018-01-30 [PTadmin] Official Update 2018-01
 // 0 !HISTORY 2020-05-10 [cwdee] Update colour name in description

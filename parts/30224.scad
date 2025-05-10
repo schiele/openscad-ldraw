@@ -12,6 +12,8 @@ function ldraw_lib__30224() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink x59
+// 
 // 0 !HISTORY 2007-08-25 {LEGO Universe Team} Original part shape
 // 0 !HISTORY 2010-07-13 [mdublade] File preparation for LDraw Parts Tracker
 // 0 !HISTORY 2016-08-19 [Holly-Wood] Sanded mesh, symsplitted, primitive substitution, BFCed, regenerated conds.

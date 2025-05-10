@@ -16,7 +16,8 @@ function ldraw_lib__u8004d() = [
   [0,"BFC","CW"],
 // 
 // 0 !CATEGORY Brick
-// 0 !KEYWORDS Automatic Binding Brick, Lego Mursten
+// 0 !KEYWORDS Automatic Binding Brick, BrickLink bslot04bR, Lego Mursten
+// 0 !KEYWORDS Rebrickable upn0041b
 // 
 // 0 !HISTORY 2012-08-09 [PTadmin] Official Update 2012-02
 // 

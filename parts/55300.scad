@@ -19,8 +19,8 @@ function ldraw_lib__55300() = [
   [0,"BFC","CW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS closed-end wrench, Engine, engineering, Garage, mechanic, Space
-// 0 !KEYWORDS Star Wars, toolbox, town
+// 0 !KEYWORDS BrickLink 6246d, closed-end wrench, Engine, engineering, Garage
+// 0 !KEYWORDS mechanic, Space, Star Wars, toolbox, town
 // 
 // 0 !HISTORY 1998-07-15 [PTadmin] Official Update 1998-07
 // 0 !HISTORY 1999-07-05 [PTadmin] Official Update 1999-05

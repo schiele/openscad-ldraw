@@ -15,6 +15,8 @@ function ldraw_lib__47154c01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 47154c02, Rebrickable 44486c01
+// 
 // 0 !HISTORY 2010-07-05 [PTadmin] Official Update 2010-02
 // 0 !HISTORY 2013-08-21 [Steffen] relocated motor innards from 47154c02.dat to here
 // 0 !HISTORY 2013-12-23 [PTadmin] Official Update 2013-02

@@ -19,6 +19,8 @@ function ldraw_lib__3139b() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 3139, Rebrickable 3139
+// 
 // 0 !HISTORY 2003-06-08 [jriley] BFC compliancy, ring subsitutions
 // 0 !HISTORY 2004-04-22 [PTadmin] Official Update 2004-02
 // 0 !HISTORY 2004-06-06 [nielsk] added details

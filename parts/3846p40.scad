@@ -12,7 +12,8 @@ function ldraw_lib__3846p40() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS Bricklink 3846pb058, Castle, forestmen, Set 40567
+// 0 !KEYWORDS Bricklink 3846pb058, Castle, forestmen, Rebrickable 3846pr0041
+// 0 !KEYWORDS Set 40567
 // 
 // 0 !HISTORY 2024-01-29 [OrionP] Official Update 2024-01
 // 

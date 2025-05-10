@@ -16,7 +16,7 @@ function ldraw_lib__973p4b() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Castle, Dragon Masters
+// 0 !KEYWORDS Castle, Dragon Masters, Set 1712
 // 
 // 0 !HISTORY 2002-04-25 [PTadmin] Official Update 2002-02
 // 0 !HISTORY 2007-07-29 [PTadmin] Header formatted for Contributor Agreement

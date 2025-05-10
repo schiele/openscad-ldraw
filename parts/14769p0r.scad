@@ -16,7 +16,8 @@ function ldraw_lib__14769p0r() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 14769pb332, Set 40501, The Wooden Duck
+// 0 !KEYWORDS Bricklink 14769pb332, Rebrickable 14769pr1163, Set 40501
+// 0 !KEYWORDS The Wooden Duck
 // 
 // 0 !HISTORY 2023-03-05 [OrionP] Official Update 2023-01
 // 

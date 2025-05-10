@@ -14,6 +14,7 @@ function ldraw_lib__46564() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Vehicle
+// 0 !KEYWORDS BrickLink 4518bc02, Rebrickable 4518bc02
 // 
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04
 // 

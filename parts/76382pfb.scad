@@ -14,8 +14,8 @@ function ldraw_lib__76382pfb() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973px90c01, Brickowl 11264, Castle, Commodore Schmidt
-// 0 !KEYWORDS dacta, Fright Knights, Mini Upper Part No 235, Professor Millennium
+// 0 !KEYWORDS Bricklink 973px90c01, Castle, Commodore Schmidt, dacta
+// 0 !KEYWORDS Fright Knights, Mini Upper Part No 235, Professor Millennium
 // 0 !KEYWORDS Rebrickable 973c03h01pr0090, Set 6027, Set 6029, Set 6031, Set 6087
 // 0 !KEYWORDS Set 6097, Set 6496, Set 6497, Set 9376, Set Set 6028, Time Cruisers
 // 0 !KEYWORDS Time Twisters

@@ -13,7 +13,7 @@ function ldraw_lib__973p1g() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !KEYWORDS Jacket, town, Uniform
+// 0 !KEYWORDS BrickLink 973pb0079, Jacket, Set 6386, town, Uniform
 // 
 // 0 !HISTORY 2009-05-02 [PTadmin] Official Update 2009-01
 // 0 !HISTORY 2015-09-11 [Philo] Removed emphasis lines and T-junctions

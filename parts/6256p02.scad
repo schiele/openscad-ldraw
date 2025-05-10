@@ -15,7 +15,7 @@ function ldraw_lib__6256p02() = [
 // 
 // 0 !CATEGORY Minifig Accessory
 // 0 !KEYWORDS Bricklink 6256pb05, Collectible Minifigures, Lobster-Lovin' Batman
-// 0 !KEYWORDS set 71017, The Lego Batman Movie
+// 0 !KEYWORDS Rebrickable 6256pr1001, set 71017, The Lego Batman Movie
 // 
 // 0 !HISTORY 2022-09-15 [PTadmin] Official Update 2022-05
 // 

@@ -13,7 +13,8 @@ function ldraw_lib__973p1k() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !KEYWORDS 6553, Cameraman, Crisis, helicopter, News, Reporter, television, van
+// 0 !KEYWORDS 6553, Bricklink 973px37, Cameraman, Crisis, helicopter, News
+// 0 !KEYWORDS Reporter, Set 6553, television, van
 // 
 // 0 !HISTORY 2005-12-28 [PTadmin] Official Update 2005-01
 // 0 !HISTORY 2007-07-28 [PTadmin] Header formatted for Contributor Agreement

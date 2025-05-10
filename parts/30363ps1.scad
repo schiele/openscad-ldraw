@@ -12,8 +12,9 @@ function ldraw_lib__30363ps1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Dack Ralter, Empire Strikes Back, Episode Five, Hoth, ice planet
-// 0 !KEYWORDS Luke Skywalker, Rebel Alliance, Snowspeeder, Star Wars
+// 0 !KEYWORDS BrickLink 30363px1, Dack Ralter, Empire Strikes Back, Episode Five
+// 0 !KEYWORDS Hoth, ice planet, Luke Skywalker, Rebel Alliance
+// 0 !KEYWORDS Rebrickable 30363pr0012, set 7130, Snowspeeder, Star Wars
 // 
 // 0 !CMDLINE -c7
 // 

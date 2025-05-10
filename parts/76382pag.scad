@@ -14,10 +14,9 @@ function ldraw_lib__76382pag() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Aquazone, Bricklink 973px170c01, BrickOwl 516573, Deep Sea
-// 0 !KEYWORDS Jock Clouseau, Rebrickable 973c03h27pr0170, Set 1728, Set 1749
-// 0 !KEYWORDS Set 1806, Set 1822, Set 6104, Set 6125, Set 6145, Set 6175, Set 6195
-// 0 !KEYWORDS Underwater
+// 0 !KEYWORDS Aquazone, Bricklink 973px170c01, Deep Sea, Jock Clouseau
+// 0 !KEYWORDS Rebrickable 973c03h27pr0170, Set 1728, Set 1749, Set 1806, Set 1822
+// 0 !KEYWORDS Set 6104, Set 6125, Set 6145, Set 6175, Set 6195, Underwater
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

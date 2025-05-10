@@ -14,9 +14,9 @@ function ldraw_lib__76382pg9() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb0124c01, BrickOwl 564660, football
-// 0 !KEYWORDS Mini Upper Part No 418, Rebrickable 973c22h01pr0124, Red Team
-// 0 !KEYWORDS Set 3401, Set 3412, Set 3418, Shoot and Score, Sports
+// 0 !KEYWORDS Bricklink 973pb0124c01, football, Mini Upper Part No 418
+// 0 !KEYWORDS Rebrickable 973c22h01pr0124, Red Team, Set 3401, Set 3412, Set 3418
+// 0 !KEYWORDS Shoot and Score, Sports
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

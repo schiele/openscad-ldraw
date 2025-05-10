@@ -12,7 +12,8 @@ function ldraw_lib__67638p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 67638pb01, Forbidden Forrest, Set 75967
+// 0 !KEYWORDS Bricklink 67638pb01, Forbidden Forrest, Rebrickable 67638pr0001
+// 0 !KEYWORDS Set 75967
 // 
 // 0 !HISTORY 2024-12-01 [OrionP] Official Update 2024-10
 // 

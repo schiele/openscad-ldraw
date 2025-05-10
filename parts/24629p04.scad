@@ -16,8 +16,8 @@ function ldraw_lib__24629p04() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Black and White, Bricklink 24629pb04, Disney, Mickey, Set 31317
-// 0 !KEYWORDS Steamboat Willie, Vintage
+// 0 !KEYWORDS Black and White, Bricklink 24629pb04, Disney, Mickey
+// 0 !KEYWORDS Rebrickable 24629pr0004, Set 31317, Steamboat Willie, Vintage
 // 
 // 0 !HISTORY 2022-02-06 {LEGO Instructions App} Original part shape
 // 0 !HISTORY 2022-02-07 [Philo] File preparation for LDraw Parts Tracker

@@ -23,6 +23,8 @@ function ldraw_lib__10p0b() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 10px4, Rebrickable 10apr0010, Set 361
+// 
 // 0 !HISTORY 2009-05-02 [PTadmin] Official Update 2009-01
 // 0 !HISTORY 2013-02-03 [MMR1988] updated and reworked studgroups, changed winding
 // 0 !HISTORY 2013-07-21 [PTadmin] Official Update 2013-01

@@ -23,6 +23,8 @@ function ldraw_lib__2361p03() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 2361px2, Rebrickable 2361pr0003, Set 5158
+// 
 // 0 !HISTORY 2010-04-09 [mikeheide] Moved portions from subfile
 // 0 !HISTORY 2010-07-05 [PTadmin] Official Update 2010-02
 // 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives

@@ -14,7 +14,7 @@ function ldraw_lib__76382p69() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Blacktron 2, Bricklink 973p69c01, BrickOwl 64083, Law enforcement
+// 0 !KEYWORDS Blacktron 2, Bricklink 973p69c01, Law enforcement
 // 0 !KEYWORDS Rebrickable 973c31h03pr0069, security, Set 1916, Set 1969, Set 3015
 // 0 !KEYWORDS Set 6852, Set 6897, Set 6957, Set 6984, Space, Space Police 2
 // 

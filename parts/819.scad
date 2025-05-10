@@ -14,6 +14,8 @@ function ldraw_lib__819() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
+// 0 !KEYWORDS BrickLink bb0031, Rebrickable upn0112
+// 
 // 0 !HISTORY 2003-06-25 [Steffen] BFCed
 // 0 !HISTORY 2003-07-06 [Steffen] fixed 4 BFC errors
 // 0 !HISTORY 2004-03-02 [PTadmin] Official Update 2004-01

@@ -18,8 +18,8 @@ function ldraw_lib__3068bp0j() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3068bpb0002, Brickowl 249883, jail, police, Prison
-// 0 !KEYWORDS Rebrickable 3068bpr0082, set 6348, set 6398
+// 0 !KEYWORDS BrickLink 3068pb0002, jail, police, Prison, Rebrickable 3068bpr0082
+// 0 !KEYWORDS set 6348, set 6398
 // 
 // 0 !HISTORY 2024-05-28 [OrionP] Official Update 2024-04
 // 

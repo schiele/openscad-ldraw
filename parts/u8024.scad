@@ -22,7 +22,7 @@ function ldraw_lib__u8024() = [
   [0,"BFC","CW"],
 // 
 // 0 !CATEGORY Window
-// 0 !KEYWORDS Automatic Binding Brick
+// 0 !KEYWORDS Automatic Binding Brick, BrickLink 604c, Rebrickable 604c
 // 
 // 0 !HISTORY 2019-09-09 [PTadmin] Official Update 2019-02
 // 

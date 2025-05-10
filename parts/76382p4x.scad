@@ -14,8 +14,8 @@ function ldraw_lib__76382p4x() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb0528c01, BrickOwl 142544, Castle, civilian, fantasy
-// 0 !KEYWORDS peasant, Pirate, Rebrickable 973c01h01pr1449, Set 10193, Villager
+// 0 !KEYWORDS Bricklink 973pb0528c01, Castle, civilian, fantasy, peasant, Pirate
+// 0 !KEYWORDS Rebrickable 973c01h01pr1449, Set 10193, Villager
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

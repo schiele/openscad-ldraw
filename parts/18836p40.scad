@@ -12,7 +12,8 @@ function ldraw_lib__18836p40() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS Collectible Minifigures, Frightening Knight, Series 15
+// 0 !KEYWORDS BrickLink 18836pb02, Collectible Minifigures, Frightening Knight
+// 0 !KEYWORDS Rebrickable 18836pr0001, Series 15, Set 71011-17
 // 
 // 0 !HISTORY 2018-12-08 [PTadmin] Official Update 2018-02
 // 

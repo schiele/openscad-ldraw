@@ -13,7 +13,8 @@ function ldraw_lib__3626cpd68() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Arkham Asylum Joker, Bricklink 3626cpb1716, Lego Batman Movie
+// 0 !KEYWORDS Arkham Asylum Joker, BrickLink 3626pb1716, Lego Batman Movie
+// 0 !KEYWORDS Rebrickable 3626cpr2090, Set 71017-8
 // 
 // 0 !HISTORY 2018-12-08 [PTadmin] Official Update 2018-02
 // 

@@ -11,7 +11,8 @@ function ldraw_lib__4150ps2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !KEYWORDS Darth Maul, Episode One, set 7151, Star Wars, The Phantom Menace
+// 0 !KEYWORDS Darth Maul, Episode One, Rebrickable 4150pr0020, set 7151, Star Wars
+// 0 !KEYWORDS The Phantom Menace
 // 
 // 0 !CMDLINE -c7
 // 

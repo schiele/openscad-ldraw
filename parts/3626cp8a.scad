@@ -12,6 +12,8 @@ function ldraw_lib__3626cp8a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 3626pb0411, Rebrickable 3626cpr0647, Set 850935
+// 
 // 0 !HISTORY 2020-06-28 [PTadmin] Official Update 2020-01
 // 0 !HISTORY 2020-07-23 [cwdee] Update description
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02

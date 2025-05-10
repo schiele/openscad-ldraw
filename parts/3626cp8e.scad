@@ -17,7 +17,7 @@ function ldraw_lib__3626cp8e() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Benny, Bricklink 3626cpb1100, Set 71214
+// 0 !KEYWORDS Benny, BrickLink 3626pb1100, Rebrickable 3626cpr1407, Set 71214
 // 
 // 0 !HISTORY 2015-10-27 [MagFors] used pattern subfiles
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01

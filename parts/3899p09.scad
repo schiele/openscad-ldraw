@@ -13,8 +13,8 @@ function ldraw_lib__3899p09() = [
 // 
 // 0 !CATEGORY Minifig Accessory
 // 0 !KEYWORDS Bricklink 3899pb009, cocoa, Coffee, Collectible Minifigures
-// 0 !KEYWORDS Cookware, drink, Loki, Marvel, mug, Set 71031, tea
-// 0 !KEYWORDS Time Variance Authority, town, utensil
+// 0 !KEYWORDS Cookware, drink, Loki, Marvel, mug, Rebrickable 3899pr0008
+// 0 !KEYWORDS Set 71031, tea, Time Variance Authority, town, utensil
 // 
 // 0 !HISTORY 2022-09-15 [PTadmin] Official Update 2022-05
 // 

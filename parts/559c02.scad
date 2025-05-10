@@ -14,6 +14,8 @@ function ldraw_lib__559c02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink bb0073
+// 
 // 0 !HISTORY 2010-04-05 [PTadmin] Official Update 2010-01
 // 0 !HISTORY 2013-03-23 [MagFors] Changed colour 383 to 494 (real metal)
 // 0 !HISTORY 2013-07-21 [PTadmin] Official Update 2013-01

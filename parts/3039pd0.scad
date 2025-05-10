@@ -11,7 +11,8 @@ function ldraw_lib__3039pd0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3039px7, MovieMaker, set 1349, Steven Spielberg, Studio
+// 0 !KEYWORDS Bricklink 3039px7, MovieMaker, Rebrickable 3039pr9953, set 1349
+// 0 !KEYWORDS Steven Spielberg, Studio
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
 // 

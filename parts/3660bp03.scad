@@ -11,8 +11,8 @@ function ldraw_lib__3660bp03() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS boat, Bricklink 3660pb005, ferry, set 1581, Silja Line Ferry
-// 0 !KEYWORDS windows
+// 0 !KEYWORDS boat, Bricklink 3660pb005, ferry, Rebrickable 3660pr0003, set 1581
+// 0 !KEYWORDS Silja Line Ferry, windows
 // 
 // 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02
 // 0 !HISTORY 2020-03-14 [MagFors] Used b-version subfile

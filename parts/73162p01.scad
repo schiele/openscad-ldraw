@@ -13,6 +13,7 @@ function ldraw_lib__73162p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Brick
+// 0 !KEYWORDS BrickLink 4258c01pb01, Rebrickable 4258c01, Set 1501
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
 // 

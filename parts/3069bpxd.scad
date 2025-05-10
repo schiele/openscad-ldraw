@@ -15,7 +15,7 @@ function ldraw_lib__3069bpxd() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3069bpb1006, BrickOwl 408612, Disney, Encanto, Madrigal
+// 0 !KEYWORDS BrickLink 3069pb1006, Disney, Encanto, Madrigal
 // 0 !KEYWORDS Rebrickable 3069bpr0343, Set 43202
 // 
 // 0 !HISTORY 2024-10-27 [OrionP] Official Update 2024-09

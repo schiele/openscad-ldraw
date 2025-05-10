@@ -14,7 +14,8 @@ function ldraw_lib__90370p02() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS BrickLink 90370pb02, Collectible Minifigures, Series 3, Set 8803
+// 0 !KEYWORDS BrickLink 90370pb02, Collectible Minifigures
+// 0 !KEYWORDS Rebrickable 90370pr0002, Series 3, Set 8803
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
 // 

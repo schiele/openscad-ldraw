@@ -11,7 +11,8 @@ function ldraw_lib__3009p11() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Air Canada, bricklink 3009pb102R, Jetliner, set 611-2
+// 0 !KEYWORDS Air Canada, bricklink 3009pb102R, Jetliner, Rebrickable 3009pr0053
+// 0 !KEYWORDS set 611-2
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
 // 

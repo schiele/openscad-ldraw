@@ -19,6 +19,8 @@ function ldraw_lib__65304() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 32054
+// 
 // 0 !HISTORY 2021-12-26 [MagFors] reshaped axlehole
 // 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
 // 0 !HISTORY 2024-05-28 [OrionP] Official Update 2024-04

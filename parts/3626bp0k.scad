@@ -15,9 +15,9 @@ function ldraw_lib__3626bp0k() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626bpx55, Brickowl 270924, Dr. Cyber, Freestyle
-// 0 !KEYWORDS Rebrickable 3626bpr9982, Set 1853, Set 4055, Set 4128, Set 4255
-// 0 !KEYWORDS Set 6492, set 6493, set 6494, Time Cruisers
+// 0 !KEYWORDS BrickLink 3626px55, Dr. Cyber, Freestyle, Rebrickable 3626bpr9982
+// 0 !KEYWORDS Set 1853, Set 4055, Set 4128, Set 4255, Set 6492, set 6493, set 6494
+// 0 !KEYWORDS Time Cruisers
 // 
 // 0 !HISTORY 2024-08-26 [OrionP] Official Update 2024-07
 // 

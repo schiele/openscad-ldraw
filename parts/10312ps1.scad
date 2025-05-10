@@ -5,26 +5,28 @@ function ldraw_lib__10312ps1() = [
 // 0 Windscreen  6 x 10 x  3 with  1 x  2 x  1 Cutout - Ovoid with SW B-Wing Cockpit Pattern
 // 0 Name: 10312ps1.dat
 // 0 Author: Evert-Jan Boer [ejboer]
-// 0 !LDRAW_ORG Part UPDATE 2023-01
+// 0 !LDRAW_ORG Part UPDATE 2025-04
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 10312pb03, Set 10227, Set 2000430, Star Wars
+// 0 !KEYWORDS Bricklink 10312pb03, Rebrickable 10312pr0004, Set 10227, Set 2000430
+// 0 !KEYWORDS Star Wars
 // 
 // 0 !HISTORY 2023-03-05 [OrionP] Official Update 2023-01
-// 
+// 0 !HISTORY 2025-04-26 [Blechtaler] added BFC NOCLIP
+// 0 !HISTORY 2025-04-27 [OrionP] Official Update 2025-04
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\10312s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__10312s01()],
-// 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\10312ps1s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__10312ps1s01()],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 -1 s\10312ps1s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__10312ps1s01()],
-// 
+// 0 BFC NOCLIP
+  [0,"BFC","NOCLIP"],
 // 4 71 -90.85 -55.2237 -1.05 -90.7 -55.3205 -.4 -90.75 -55.3124 -.25 -92 -54.879 0
   [4,71,-90.85,-55.2237,-1.05,-90.7,-55.3205,-.4,-90.75,-55.3124,-.25,-92,-54.879,0],
 // 4 4 -89.8111 -55.6667 0 -90.2813 -55.4976 0 -90.75 -55.3124 -.25 -90.7 -55.3205 -.4

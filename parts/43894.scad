@@ -15,7 +15,7 @@ function ldraw_lib__43894() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Adventurers, Harry Potter
+// 0 !KEYWORDS Adventurers, BrickLink x261, Harry Potter
 // 
 // 0 !HISTORY 2011-11-19 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2011-11-19 [angmarec] File preparation for LDraw Parts Tracker

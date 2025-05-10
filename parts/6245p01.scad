@@ -12,9 +12,8 @@ function ldraw_lib__6245p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS basic, Bricklink 6245px1, Brickowl 252880, Bucket
-// 0 !KEYWORDS Rebrickable 6245pr0001, Set 4116, Set 4177, Set 9250, Set 9277
-// 0 !KEYWORDS Set 9304
+// 0 !KEYWORDS basic, Bricklink 6245px1, Bucket, Rebrickable 6245pr0001, Set 4116
+// 0 !KEYWORDS Set 4177, Set 9250, Set 9277, Set 9304
 // 
 // 0 !HISTORY 2024-07-29 [OrionP] Official Update 2024-06
 // 

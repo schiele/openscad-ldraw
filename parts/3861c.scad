@@ -20,6 +20,8 @@ function ldraw_lib__3861c() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 3861, Rebrickable 3861b
+// 
 // 0 !HISTORY 1999-03-26 [PTadmin] Official Update 1999-02
 // 0 !HISTORY 2000-05-07 [PTadmin] Official Update 2000-01
 // 0 !HISTORY 2000-08-01 {Axel Poque} fixes to resolve L3P error messages

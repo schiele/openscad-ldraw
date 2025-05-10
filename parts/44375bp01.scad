@@ -13,7 +13,7 @@ function ldraw_lib__44375bp01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Big Ben, Bricklink 44375bpb07, Set 10253
+// 0 !KEYWORDS Big Ben, Bricklink 44375bpb07, Rebrickable 44375bpr9997, Set 10253
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 

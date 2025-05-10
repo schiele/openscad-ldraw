@@ -14,9 +14,9 @@ function ldraw_lib__76382pn6() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS assassin, Bricklink 973pb0240c03, BrickOwl 300347, Castle, dagger
-// 0 !KEYWORDS Gi, Grey Ninja Ito, honor, Japan, japanese, Kabaya
-// 0 !KEYWORDS master of disguise, Mini Upper Part No 291, Mini Upper Part No 366
+// 0 !KEYWORDS assassin, Bricklink 973pb0240c03, Castle, dagger, Gi, Grey Ninja Ito
+// 0 !KEYWORDS honor, Japan, japanese, Kabaya, master of disguise
+// 0 !KEYWORDS Mini Upper Part No 291, Mini Upper Part No 366
 // 0 !KEYWORDS Mini Upper Part No 367, Mini Upper Part No 368, Ninja Master
 // 0 !KEYWORDS Ninja Princess, ninjitsu, Rebrickable 973c08h01pr0240, Red Ninja
 // 0 !KEYWORDS Robe, scale mail, Set 1187, Set 3019, Set 3050, Set 3051, Set 3052

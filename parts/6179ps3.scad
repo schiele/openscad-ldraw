@@ -14,7 +14,7 @@ function ldraw_lib__6179ps3() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 6179pb153, Set 75261
+// 0 !KEYWORDS Bricklink 6179pb153, Rebrickable 6179pr0026, Set 75261
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 

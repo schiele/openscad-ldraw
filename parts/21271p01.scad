@@ -12,7 +12,8 @@ function ldraw_lib__21271p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Footwear
-// 0 !KEYWORDS Back To The Future, Bricklink 21271pb01, Set 71201
+// 0 !KEYWORDS Back To The Future, Bricklink 21271pb01, Rebrickable 21271pr0001
+// 0 !KEYWORDS Set 71201
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 

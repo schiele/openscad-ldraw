@@ -23,8 +23,9 @@ function ldraw_lib__6064b() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Aquazone, Belville, Castle, desert, Mixels, Paradisa, Pirates, Scala
-// 0 !KEYWORDS shrub, spiky, spiny, town, tumbleweed, Volectro, western, wild west
+// 0 !KEYWORDS Aquazone, Belville, BrickLink 6064, Castle, desert, Mixels, Paradisa
+// 0 !KEYWORDS Pirates, Rebrickable 6064, Scala, shrub, spiky, spiny, town
+// 0 !KEYWORDS tumbleweed, Volectro, western, wild west
 // 
 // 0 !HISTORY 2013-08-14 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2024-11-24 [KnightOfTarenta] File preparation for LDraw Parts Tracker

@@ -12,7 +12,7 @@ function ldraw_lib__4346p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 4346p01, Set 6657
+// 0 !KEYWORDS Rebrickable 4346pr0001, Set 6657
 // 
 // 0 !HISTORY 1999-03-26 [PTadmin] Official Update 1999-02
 // 0 !HISTORY 2002-04-29 [nielsk] Replaced fire logo with s\4209s01; fixed location of fire logo

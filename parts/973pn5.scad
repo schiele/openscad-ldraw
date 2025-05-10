@@ -13,8 +13,8 @@ function ldraw_lib__973pn5() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS assassin, Castle, honor, Japan, japanese, ki, master of disguise
-// 0 !KEYWORDS ninjitsu, Robe, spy, throwing star
+// 0 !KEYWORDS assassin, BrickLink 973px11, Castle, honor, Japan, japanese, ki
+// 0 !KEYWORDS master of disguise, ninjitsu, Robe, Set 1185, spy, throwing star
 // 
 // 0 !HISTORY 2003-08-01 [PTadmin] Official Update 2003-02
 // 0 !HISTORY 2007-07-29 [PTadmin] Header formatted for Contributor Agreement

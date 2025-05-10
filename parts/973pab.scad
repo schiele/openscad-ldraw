@@ -16,7 +16,7 @@ function ldraw_lib__973pab() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS Adventurers, amazon, anchor tattoo, Dino, Gabarro, mechanic
-// 0 !KEYWORDS mercenary, oil, river boat captain, sailor, stripes
+// 0 !KEYWORDS mercenary, oil, river boat captain, sailor, set 5976, stripes
 // 
 // 0 !CMDLINE -c14
 // 

@@ -17,7 +17,7 @@ function ldraw_lib__604550() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS 11402, flat-blade, tools, toolset
+// 0 !KEYWORDS 11402, BrickLink 11402a, flat-blade, tools, toolset
 // 
 // 0 !HISTORY 2013-08-14 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2015-01-20 [Philo] File preparation for LDraw Parts Tracker

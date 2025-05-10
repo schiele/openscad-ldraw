@@ -15,7 +15,8 @@ function ldraw_lib__75904p02() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS Bricklink 75904pb02, Hammer, Set 21343, tool, Viking Village
+// 0 !KEYWORDS Bricklink 75904pb02, Hammer, Rebrickable 75904pr0002, Set 21343
+// 0 !KEYWORDS tool, Viking Village
 // 
 // 0 !HISTORY 2024-06-30 [OrionP] Official Update 2024-05
 // 

@@ -11,7 +11,7 @@ function ldraw_lib__3008p09() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !KEYWORDS Bricklink 3008p24
+// 0 !KEYWORDS BrickLink crssprt01pb51, Rebrickable 3008apr0030, Set DATABASE
 // 
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
 // 

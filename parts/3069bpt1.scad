@@ -11,6 +11,8 @@ function ldraw_lib__3069bpt1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 3069pb0036, Rebrickable 3069bpr0096, Set 3056
+// 
 // 0 !HISTORY 2009-09-03 [PTadmin] Official Update 2009-02
 // 
 // 

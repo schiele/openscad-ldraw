@@ -14,9 +14,9 @@ function ldraw_lib__76382p48() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973p48c01, BrickOwl 99216, brigand, forestmen, Little John
-// 0 !KEYWORDS Merry Men, Rebrickable 973c22h01pr0048, robber, Robin Hood, Set 1680
-// 0 !KEYWORDS Set 6042, Set 6054, Set 6066. Set 6103, Set 6071, Set 6077
+// 0 !KEYWORDS Bricklink 973p48c01, brigand, forestmen, Little John, Merry Men
+// 0 !KEYWORDS Rebrickable 973c22h01pr0048, robber, Robin Hood, Set 1680, Set 6042
+// 0 !KEYWORDS Set 6054, Set 6066. Set 6103, Set 6071, Set 6077
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

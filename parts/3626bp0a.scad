@@ -14,8 +14,8 @@ function ldraw_lib__3626bp0a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626bpx132, Brickowl 110490, Rebrickable 3626bpr0251
-// 0 !KEYWORDS Set 4210, Set 7020, set 8813
+// 0 !KEYWORDS BrickLink 3626px132, Rebrickable 3626bpr0251, Set 4210, Set 7020
+// 0 !KEYWORDS set 8813
 // 
 // 0 !HISTORY 2012-06-06 [tchang] New part
 // 0 !HISTORY 2013-12-15 [MagFors] Removed unwanted cond-lines

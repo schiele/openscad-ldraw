@@ -11,6 +11,8 @@ function ldraw_lib__3068b() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 3068
+// 
 // 0 !HISTORY 2002-04-25 [PTadmin] Official Update 2002-02
 // 0 !HISTORY 2004-07-26 [guyvivan] Made BFC Compliant
 // 0 !HISTORY 2004-11-06 [PTadmin] Official Update 2004-04

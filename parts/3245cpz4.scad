@@ -11,8 +11,8 @@ function ldraw_lib__3245cpz4() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickheadz, BrickLink 3245cpb118, Disney, Goofy, Set 40378
-// 0 !KEYWORDS Turtleneck Jumper
+// 0 !KEYWORDS Brickheadz, BrickLink 3245cpb118, Disney, Goofy
+// 0 !KEYWORDS Rebrickable 3245cpr0177, Set 40378, Turtleneck Jumper
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
 // 

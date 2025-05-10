@@ -11,7 +11,8 @@ function ldraw_lib__4162p0c() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Architect, Architecture, John Graham & Associates
+// 0 !KEYWORDS Architect, Architecture, BrickLink 4162pb021
+// 0 !KEYWORDS John Graham & Associates, Rebrickable 4162pr0010
 // 0 !KEYWORDS Seattle Space Needle, Set 21003, USA, Washington
 // 
 // 0 !HISTORY 2012-08-09 [PTadmin] Official Update 2012-02

@@ -14,6 +14,7 @@ function ldraw_lib__3846p45() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
+// 0 !KEYWORDS BrickLink 3846px9, Rebrickable 3846pr0028, Set 0011-3
 // 
 // 0 !HISTORY 2002-12-31 [cwdee] Made colour-specific part
 // 0 !HISTORY 2003-12-19 [PTadmin] Official Update 2003-03

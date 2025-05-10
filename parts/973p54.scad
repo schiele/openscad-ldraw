@@ -12,7 +12,7 @@ function ldraw_lib__973p54() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Space, u.f.o.
+// 0 !KEYWORDS set 2543, Space, u.f.o.
 // 
 // 0 !HISTORY 2004-11-06 [PTadmin] Official Update 2004-04
 // 0 !HISTORY 2007-07-29 [PTadmin] Header formatted for Contributor Agreement

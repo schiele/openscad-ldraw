@@ -12,6 +12,8 @@ function ldraw_lib__3007p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 3007pb01, Rebrickable 3007pr0001, Set 6554
+// 
 // 0 !HISTORY 2014-06-30 [MagFors] Copied the pattern layout from 3008p08
 // 0 !HISTORY 2014-12-23 [PTadmin] Official Update 2014-02
 // 

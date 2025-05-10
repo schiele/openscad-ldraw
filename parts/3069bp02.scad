@@ -18,7 +18,8 @@ function ldraw_lib__3069bp02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS cassette, reel to reel, Space, town, VHS, video
+// 0 !KEYWORDS BrickLink 3069p02, cassette, Rebrickable 3069bpr0020, reel to reel
+// 0 !KEYWORDS Set 1197, Space, town, VHS, video
 // 
 // 0 !HISTORY 2001-12-27 [sbliss] changed Reel inlays to white, converted to grooved base
 // 0 !HISTORY 2002-04-25 [PTadmin] Official Update 2002-02

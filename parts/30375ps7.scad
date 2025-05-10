@@ -13,7 +13,8 @@ function ldraw_lib__30375ps7() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Clone Wars, commando droid, commando droid captain, minifig-scale
+// 0 !KEYWORDS BrickLink 30375pb01, Clone Wars, commando droid
+// 0 !KEYWORDS commando droid captain, minifig-scale, Rebrickable 30375pr0005
 // 0 !KEYWORDS set 11905, set 75002, set 75012, set 9488, Star Wars
 // 
 // 0 !CMDLINE -c308

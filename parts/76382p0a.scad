@@ -14,9 +14,8 @@ function ldraw_lib__76382p0a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973p0ac01, Bricklink 973p0ac02, Bricklink 973p0ac04
-// 0 !KEYWORDS Jacket, Rebrickable 973c03h01pr0002, Rebrickable 973c22h01pr0004
-// 0 !KEYWORDS Rebrickable 973c28h01pr0001, set 6395, town, Zipper
+// 0 !KEYWORDS Bricklink 973p0ac01, Jacket, Rebrickable 973c28h01pr0001, set 6395
+// 0 !KEYWORDS town, Zipper
 // 
 // 0 !HISTORY 2024-12-01 [OrionP] Official Update 2024-10
 // 

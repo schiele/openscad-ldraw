@@ -24,6 +24,7 @@ function ldraw_lib__4378a() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Cone
+// 0 !KEYWORDS BrickLink DupCone2, Rebrickable dupupn0009
 // 
 // 0 !HISTORY 2022-09-15 [PTadmin] Official Update 2022-05
 // 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives

@@ -13,8 +13,9 @@ function ldraw_lib__925p0t() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Danish, grocer, Grocery, named beam, set 1210, set 210, Shop
-// 0 !KEYWORDS small store, Town Plan
+// 0 !KEYWORDS BrickLink crssprt01pb62, Danish, grocer, Grocery, named beam
+// 0 !KEYWORDS Rebrickable 3008apr0047, set 1210, set 210, Shop, small store
+// 0 !KEYWORDS Town Plan
 // 
 // 0 !HISTORY 2024-08-26 [OrionP] Official Update 2024-07
 // 

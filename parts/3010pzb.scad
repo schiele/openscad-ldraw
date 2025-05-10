@@ -12,7 +12,7 @@ function ldraw_lib__3010pzb() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickheadz, BrickLink 3010pb211, Set 41491
+// 0 !KEYWORDS Brickheadz, BrickLink 3010pb211, Rebrickable 3010pr9991, Set 41491
 // 
 // 0 !HISTORY 2019-12-27 [PTadmin] Official Update 2019-03
 // 

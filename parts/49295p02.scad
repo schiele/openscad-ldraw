@@ -12,6 +12,8 @@ function ldraw_lib__49295p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 49295pb02, Rebrickable 49295pat0002, Set 80015
+// 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 
 // 

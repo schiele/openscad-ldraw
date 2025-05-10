@@ -14,7 +14,8 @@ function ldraw_lib__4162p0u() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS 2011, Architect, Moshe Safdie, Set 21021, Singapore
+// 0 !KEYWORDS 2011, Architect, BrickLink 4162pb105, Moshe Safdie
+// 0 !KEYWORDS Rebrickable 4162pr0032, Set 21021, Singapore
 // 
 // 0 !HISTORY 2014-12-23 [PTadmin] Official Update 2014-02
 // 

@@ -12,7 +12,7 @@ function ldraw_lib__98138pa0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS BrickLink 98138pb017, Chima
+// 0 !KEYWORDS BrickLink 98138pb017, Chima, Rebrickable 98138pr0016, Set 5003838
 // 
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
 // 

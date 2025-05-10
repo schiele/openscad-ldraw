@@ -14,7 +14,7 @@ function ldraw_lib__76382p5g() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb0004c01, BrickOwl 416037, Explorien, Exploriens
+// 0 !KEYWORDS Bricklink 973pb0004c01, Explorien, Exploriens
 // 0 !KEYWORDS Rebrickable 973c08h03pr0004, Set 1737, Set 6856, Set 6899, Set 6938
 // 0 !KEYWORDS set 6958, set 6982, Space
 // 

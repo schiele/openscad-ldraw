@@ -18,6 +18,8 @@ function ldraw_lib__11244p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS set 41094
+// 
 // 0 !HISTORY 2016-12-31 [PTadmin] Official Update 2016-01
 // 0 !HISTORY 2020-05-10 [cwdee] Update colour name in description
 // 0 !HISTORY 2020-06-28 [PTadmin] Official Update 2020-01

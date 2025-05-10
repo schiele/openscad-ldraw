@@ -17,7 +17,8 @@ function ldraw_lib__37383p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 35187pb01, Bugatti, Chiron, set 42083
+// 0 !KEYWORDS Bricklink 35187pb01, Bugatti, Chiron, Rebrickable 35187pr0001
+// 0 !KEYWORDS set 42083
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 

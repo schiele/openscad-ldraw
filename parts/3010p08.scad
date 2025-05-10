@@ -11,6 +11,8 @@ function ldraw_lib__3010p08() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS Rebrickable 3010pr9975, Set 1067
+// 
 // 0 !HISTORY 2002-12-10 [hafhead] fixed various errors, made BFC compliant
 // 0 !HISTORY 2003-06-27 [Steffen] re-worked part to use s\3010s01.dat
 // 0 !HISTORY 2003-12-19 [PTadmin] Official Update 2003-03

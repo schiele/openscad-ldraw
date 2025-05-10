@@ -22,8 +22,7 @@ function ldraw_lib__2408p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS Aerial Intruder, Alpha Centauri Outpost, Blacktron Future Generation
-// 0 !KEYWORDS Bricklink 2408p01, BrickOwl 548201, Rebrickable 2408pr0001, Set 6981
-// 0 !KEYWORDS Set 6988
+// 0 !KEYWORDS Rebrickable 2408pr0001, Set 6981, Set 6988
 // 
 // 0 !HISTORY 1999-12-31 [PTadmin] Official Update 1999-06
 // 0 !HISTORY 2001-11-23 [BrickCaster] Fixed quad, fixed header

@@ -11,7 +11,8 @@ function ldraw_lib__3068bpf1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS bracelet, Bricklink 3068pb45, Pendant, Scala, Spring, Sympathy
+// 0 !KEYWORDS bracelet, BrickLink 3068pb2445, Pendant, Rebrickable 3068bpr0276
+// 0 !KEYWORDS Scala, set 308, Spring, Sympathy
 // 
 // 0 !HISTORY 2004-04-22 [PTadmin] Official Update 2004-02
 // 0 !HISTORY 2007-06-13 [PTadmin] Header formatted for Contributor Agreement

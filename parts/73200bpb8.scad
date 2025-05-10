@@ -17,9 +17,9 @@ function ldraw_lib__73200bpb8() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 970c00pb0458, Brickowl 525647, Dimensions Wave 1
-// 0 !KEYWORDS Rebrickable 970c03pr0928, set 70917, Set 71221
-// 0 !KEYWORDS The Lego Batman Movie, Wicked Witch, Wizard of Oz
+// 0 !KEYWORDS Bricklink 970c00pb0458, Dimensions Wave 1, Rebrickable 970c03pr0928
+// 0 !KEYWORDS set 70917, Set 71221, The Lego Batman Movie, Wicked Witch
+// 0 !KEYWORDS Wizard of Oz
 // 
 // 0 !HISTORY 2023-06-24 [OrionP] Official Update 2023-03
 // 

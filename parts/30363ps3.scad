@@ -11,7 +11,8 @@ function ldraw_lib__30363ps3() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS A-wing, Bricklink 30363pb001, Set 7134, Star Wars
+// 0 !KEYWORDS A-wing, Bricklink 30363pb001, Rebrickable 30363pr0001, Set 7134
+// 0 !KEYWORDS Star Wars
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 

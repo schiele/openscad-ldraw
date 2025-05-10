@@ -11,7 +11,8 @@ function ldraw_lib__3039ph2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Harry Potter, Knight Bus
+// 0 !KEYWORDS BrickLink 3039px20, Harry Potter, Knight Bus, Rebrickable 3039pr9965
+// 0 !KEYWORDS Set 4755
 // 
 // 0 !HISTORY 2012-12-28 [PTadmin] Official Update 2012-03
 // 

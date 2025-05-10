@@ -22,7 +22,7 @@ function ldraw_lib__41732() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Goalie, Soccer, Sports
+// 0 !KEYWORDS BrickLink x383, Goalie, Soccer, Sports
 // 
 // 0 !HISTORY 2010-04-05 [PTadmin] Official Update 2010-01
 // 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives

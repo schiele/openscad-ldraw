@@ -14,7 +14,8 @@ function ldraw_lib__3626cpnb() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626cpb1889, Kai, Ninjago
+// 0 !KEYWORDS BrickLink 3626pb1889, Kai, Ninjago, Rebrickable 3626cpr9975
+// 0 !KEYWORDS Set 0003977811
 // 
 // 0 !CMDLINE -c14
 // 

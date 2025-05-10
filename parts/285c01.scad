@@ -12,7 +12,7 @@ function ldraw_lib__285c01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !KEYWORDS Motor Cutout
+// 0 !KEYWORDS BrickLink 4178a, Motor Cutout, Rebrickable 4178a
 // 
 // 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02
 // 

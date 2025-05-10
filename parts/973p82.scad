@@ -15,7 +15,7 @@ function ldraw_lib__973p82() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Jacket, Railroad, Train
+// 0 !KEYWORDS BrickLink 973px8, Jacket, Railroad, Set 10020, Train
 // 
 // 0 !HISTORY 2009-12-29 [PTadmin] Official Update 2009-03
 // 0 !HISTORY 2012-04-08 [BlackBrick89] Colour cleanup

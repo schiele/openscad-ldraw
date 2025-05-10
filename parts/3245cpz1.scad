@@ -15,7 +15,8 @@ function ldraw_lib__3245cpz1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickheadz, BrickLink 3245cpb053, Captain Armando Salazar, Set 41594
+// 0 !KEYWORDS Brickheadz, BrickLink 3245cpb053, Captain Armando Salazar
+// 0 !KEYWORDS Rebrickable 3245cpr0119, Set 41594
 // 
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
 // 

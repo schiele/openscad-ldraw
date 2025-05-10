@@ -12,8 +12,8 @@ function ldraw_lib__973ps4() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Carbonite, Han Solo, Harrison Ford, Jabba the Hutt, Star Wars
-// 0 !KEYWORDS Tattooine
+// 0 !KEYWORDS Carbonite, Han Solo, Harrison Ford, Jabba the Hutt, Set 7104
+// 0 !KEYWORDS Star Wars, Tattooine
 // 
 // 0 !HISTORY 2001-10-25 [pneaster] fixed overlapping pieces, fixed winding.
 // 0 !HISTORY 2002-02-14 [fwcain] changed hard-coded color-15 to color-16...

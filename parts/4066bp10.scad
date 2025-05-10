@@ -16,8 +16,8 @@ function ldraw_lib__4066bp10() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Brick
-// 0 !KEYWORDS Barbecue, bricklink 4066pb061, Camping, Set 1908, Set 2630-2
-// 0 !KEYWORDS Set 2773, Set 9157, Set 9977
+// 0 !KEYWORDS Barbecue, bricklink 4066pb061, Camping, Rebrickable 4066pr0061
+// 0 !KEYWORDS Set 1908, Set 2630-2, Set 2773, Set 9157, Set 9977
 // 
 // 0 !HISTORY 2020-09-21 [RainbowDolphin] Subparted for branching 4066bp1j
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03

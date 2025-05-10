@@ -12,8 +12,8 @@ function ldraw_lib__30375ps6() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS battle droid, Episode 1, minifig-scale, security, set 7877
-// 0 !KEYWORDS Star Wars
+// 0 !KEYWORDS battle droid, BrickLink 30375pb02, Episode 1, minifig-scale
+// 0 !KEYWORDS Rebrickable 30375pr0002, security, set 7877, Star Wars
 // 
 // 0 !CMDLINE -c320
 // 

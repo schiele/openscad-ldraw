@@ -12,7 +12,8 @@ function ldraw_lib__62360p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Cockpit, rounded, Set 10233, TGV, Train
+// 0 !KEYWORDS BrickLink 62360pb001, Cockpit, Rebrickable 62360pr0001, rounded
+// 0 !KEYWORDS Set 10233, TGV, Train
 // 
 // 0 !CMDLINE -c47
 // 

@@ -31,6 +31,8 @@ function ldraw_lib__10p03() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS Rebrickable 10apr0003, Set 358
+// 
 // 0 !HISTORY 2000-01-08 [cwdee] Changed appropriate stud.dat references to studp01.dat
 // 0 !HISTORY 2000-05-07 [PTadmin] Official Update 2000-01
 // 0 !HISTORY 2007-05-04 [PTadmin] Header formatted for Contributor Agreement

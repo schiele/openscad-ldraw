@@ -15,8 +15,8 @@ function ldraw_lib__3068bp40() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS BrickLink 3068p40, Castle, Dragon Master, Fright Knights, Majisto
-// 0 !KEYWORDS Rebrickable 3068bpr0023, runes, spell, spellbook, spellcaster, wand
-// 0 !KEYWORDS Willa, Witch, Wizard
+// 0 !KEYWORDS Rebrickable 3068bpr0023, runes, set 1906, spell, spellbook
+// 0 !KEYWORDS spellcaster, wand, Willa, Witch, Wizard
 // 
 // 0 !CMDLINE -c15
 // 

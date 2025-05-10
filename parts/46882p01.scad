@@ -14,7 +14,8 @@ function ldraw_lib__46882p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS 6x6 Volvo Articulated Hauler, Set 42114
+// 0 !KEYWORDS 6x6 Volvo Articulated Hauler, BrickLink 46882pb01
+// 0 !KEYWORDS Rebrickable 46882pr0001, Set 42114
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
 // 

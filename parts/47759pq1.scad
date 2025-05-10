@@ -11,7 +11,8 @@ function ldraw_lib__47759pq1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Pharaoh's Quest, Scarab Thorax
+// 0 !KEYWORDS BrickLink 47759pb07, Pharaoh's Quest, Rebrickable 47759pr0004
+// 0 !KEYWORDS Scarab Thorax, Set 7305
 // 
 // 0 !CMDLINE -c272
 // 

@@ -13,8 +13,8 @@ function ldraw_lib__100662p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 100662pb01, Brickowl 321006, CMF, Collectible Minifigures
-// 0 !KEYWORDS Rebrickable 100662pat0001, set 31142, Set 71037
+// 0 !KEYWORDS Bricklink 100662pb01, CMF, Collectible Minifigures
+// 0 !KEYWORDS Rebrickable 100662pat0001pr0001, set 31142, Set 71037
 // 
 // 0 !HISTORY 2023-06-07 [Holly-Wood] Deleted superfluous geometry
 // 0 !HISTORY 2023-08-25 [OrionP] Official Update 2023-04

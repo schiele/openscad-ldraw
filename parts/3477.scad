@@ -12,6 +12,8 @@ function ldraw_lib__3477() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 27507, Rebrickable 27507
+// 
 // 0 !HISTORY 2023-05-23 {LEGO Instructions App} Original part shape
 // 0 !HISTORY 2023-05-26 [Philo] File preparation for LDraw Parts Tracker
 // 0 !HISTORY 2023-10-31 [OrionP] Official Update 2023-05

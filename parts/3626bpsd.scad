@@ -15,7 +15,8 @@ function ldraw_lib__3626bpsd() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Anakin, Episode I, Skywalker, Star Wars
+// 0 !KEYWORDS Anakin, BrickLink 3626px45, Episode I, Rebrickable 3626bpr0272
+// 0 !KEYWORDS Set 3416, Skywalker, Star Wars
 // 
 // 0 !HISTORY 2012-08-09 [PTadmin] Official Update 2012-02
 // 

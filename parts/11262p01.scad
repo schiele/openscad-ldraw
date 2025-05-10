@@ -16,7 +16,8 @@ function ldraw_lib__11262p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Series 9, Suit, Winter Hut
+// 0 !KEYWORDS BrickLink 11262pb01, Rebrickable 11262pr0001, Series 9, set 5004468
+// 0 !KEYWORDS Suit, Winter Hut
 // 
 // 0 !HISTORY 2013-08-14 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2019-05-19 [Philo] File preparation for LDraw Parts Tracker

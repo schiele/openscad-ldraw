@@ -15,8 +15,8 @@ function ldraw_lib__3626bph6() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626bpb0486, Brickowl 725317, Harry Potter
-// 0 !KEYWORDS Rebrickable 3626bpr0720, set 4842, set 4865
+// 0 !KEYWORDS BrickLink 3626pb0486, Harry Potter, Rebrickable 3626bpr0720
+// 0 !KEYWORDS set 4842, set 4865
 // 
 // 0 !HISTORY 2024-09-18 [MagFors] Complete rework, original by Howard Lande
 // 0 !HISTORY 2024-12-01 [OrionP] Official Update 2024-10

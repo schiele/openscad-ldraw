@@ -13,8 +13,8 @@ function ldraw_lib__3626cpb9() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626cbp0636, Brickowl 115871, Rebrickable 3626cpr0901
-// 0 !KEYWORDS Set 6862, Set 76028, Super Heroes, Superman
+// 0 !KEYWORDS BrickLink 3626pb0636, Rebrickable 3626cpr0901, Set 6862, Set 76028
+// 0 !KEYWORDS Super Heroes, Superman
 // 
 // 0 !HISTORY 2013-07-21 [PTadmin] Official Update 2013-01
 // 0 !HISTORY 2024-10-26 [Lego-Manfred] Reference and sets added

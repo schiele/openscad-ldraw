@@ -13,7 +13,8 @@ function ldraw_lib__973ps0() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS A-Wing Starfighter, chestplate, Classic Trilogy, flight suit
-// 0 !KEYWORDS jumpsuit, lifevest, Military, Rebel Alliance, Star Wars, Uniform
+// 0 !KEYWORDS jumpsuit, lifevest, Military, Rebel Alliance, Set 6207, Star Wars
+// 0 !KEYWORDS Uniform
 // 
 // 0 !CMDLINE -c2
 // 

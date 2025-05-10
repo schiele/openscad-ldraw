@@ -14,6 +14,8 @@ function ldraw_lib__2335p43() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS Rebrickable 2335pr0010, Set 6074
+// 
 // 0 !CMDLINE -c1
 // 
 // 0 !HISTORY 2000-09-30 [PTadmin] Official Update 2000-02

@@ -15,7 +15,8 @@ function ldraw_lib__11459p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS BrickLink 11251c01, Collectible, Plumber, Series 9
+// 0 !KEYWORDS BrickLink 11251pb01, Collectible, Plumber, Rebrickable 11251pat0001
+// 0 !KEYWORDS Series 9, Set 71000-16
 // 
 // 0 !HISTORY 2014-01-09 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2014-01-09 [angmarec] File preparation for LDraw Parts Tracker

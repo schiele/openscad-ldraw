@@ -11,7 +11,8 @@ function ldraw_lib__3070bpm0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Lord of the Rings, Orthanc, Set 10237
+// 0 !KEYWORDS BrickLink 3070pb077, Lord of the Rings, Orthanc
+// 0 !KEYWORDS Rebrickable 3070bpr0146, Set 10237
 // 
 // 0 !HISTORY 2016-12-31 [PTadmin] Official Update 2016-01
 // 

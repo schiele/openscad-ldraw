@@ -15,7 +15,7 @@ function ldraw_lib__973pd7f() = [
   [0,"BFC","CW"],
 // 
 // 0 !KEYWORDS Armour, BrickLink 973pb2797, Collectible, Flashback, Garmadon
-// 0 !KEYWORDS Ninjago
+// 0 !KEYWORDS Ninjago, set 71019
 // 
 // 0 !HISTORY 2019-09-09 [PTadmin] Official Update 2019-02
 // 

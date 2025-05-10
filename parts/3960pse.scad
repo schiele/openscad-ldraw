@@ -13,7 +13,8 @@ function ldraw_lib__3960pse() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3960pb064, Set 75274, TIE Fighter Pilot Helmet
+// 0 !KEYWORDS Bricklink 3960pb064, Rebrickable 3960pr9998, Set 75274
+// 0 !KEYWORDS TIE Fighter Pilot Helmet
 // 
 // 0 !HISTORY 2022-05-07 [PTadmin] Official Update 2022-03
 // 

@@ -25,6 +25,8 @@ function ldraw_lib__3009pt2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
+// 0 !KEYWORDS BrickLink 3009pb032, Rebrickable 3009pr0050, Set DBASE
+// 
 // 0 !CMDLINE -c15
 // 
 // 0 !HISTORY 2009-08-08 [Eldar] remove overlaps,lines in pattern

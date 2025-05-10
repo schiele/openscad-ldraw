@@ -15,7 +15,7 @@ function ldraw_lib__3867p01() = [
   [0,"BFC","CW"],
 // 
 // 0 !KEYWORDS Imperial Guard, Island, Navy, Pirate, Pirates
-// 0 !KEYWORDS Rebrickable 3867pr0001
+// 0 !KEYWORDS Rebrickable 3867pr0001, Set 6260
 // 
 // 0 !HISTORY 2002-11-30 [PTadmin] Official Update 2002-05
 // 0 !HISTORY 2003-01-26 [BrickCaster] part fix: grey becomes main color

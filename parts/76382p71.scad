@@ -14,10 +14,10 @@ function ldraw_lib__76382p71() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS basic, beads, Black Falcons, Bricklink 973p71c01, BrickOwl 524219
-// 0 !KEYWORDS Castle, chain, circles, Crusaders, dacta, female, girl, Guarded Inn
-// 0 !KEYWORDS Lion Knights, maiden, Mini Upper Part No 62, Princess, Princess Alma
-// 0 !KEYWORDS queen, Rebrickable 973c27h01pr0071, scoop neck, Set 10000, set 10001
+// 0 !KEYWORDS basic, beads, Black Falcons, Bricklink 973p71c01, Castle, chain
+// 0 !KEYWORDS circles, Crusaders, dacta, female, girl, Guarded Inn, Lion Knights
+// 0 !KEYWORDS maiden, Mini Upper Part No 62, Princess, Princess Alma, queen
+// 0 !KEYWORDS Rebrickable 973c27h01pr0071, scoop neck, Set 10000, set 10001
 // 0 !KEYWORDS set 10002, Set 1472, Set 1490, Set 1584, set 4547, Set 4554
 // 0 !KEYWORDS Set 4558, Set 6023, Set 6060, Set 6067, Set 6349, Set 6388, set 6396
 // 0 !KEYWORDS set 6399, Set 6501, set 725, Set 9353, Set 9364, string, town

@@ -13,7 +13,7 @@ function ldraw_lib__75924() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS guy wire, Line, rigging
+// 0 !KEYWORDS BrickLink x127c20pb01, guy wire, Line, Rebrickable 14226c21, rigging
 // 
 // 0 !HISTORY 2005-12-28 [PTadmin] Official Update 2005-01
 // 0 !HISTORY 2007-10-12 [PTadmin] Header formatted for Contributor Agreement

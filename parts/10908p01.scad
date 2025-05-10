@@ -18,7 +18,8 @@ function ldraw_lib__10908p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Mark VI, Mark VII, Mark XLII
+// 0 !KEYWORDS BrickLink 10908pb01, Mark VI, Mark VII, Mark XLII
+// 0 !KEYWORDS Rebrickable 10908pr0001, set 10721
 // 
 // 0 !HISTORY 2013-06-20 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2013-06-20 [MagFors] File preparation for LDraw Parts Tracker

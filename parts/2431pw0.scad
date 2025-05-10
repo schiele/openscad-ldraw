@@ -15,8 +15,8 @@ function ldraw_lib__2431pw0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !KEYWORDS Bricklink 2431px5, no trespassing, set 6761, Set 6790, Set 6791
-// 0 !KEYWORDS spaghetti western, western, wild west
+// 0 !KEYWORDS Bricklink 2431px5, no trespassing, Rebrickable 2431pr0041, set 6761
+// 0 !KEYWORDS Set 6790, Set 6791, spaghetti western, western, wild west
 // 
 // 0 !HISTORY 2009-09-03 [PTadmin] Official Update 2009-02
 // 0 !HISTORY 2022-06-22 [Philo] Updated description, added keywords

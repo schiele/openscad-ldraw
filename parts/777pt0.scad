@@ -12,6 +12,8 @@ function ldraw_lib__777pt0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 777px8, Rebrickable 777pr0018, Set 442A
+// 
 // 0 !HISTORY 2009-12-29 [PTadmin] Official Update 2009-03
 // 
 // 

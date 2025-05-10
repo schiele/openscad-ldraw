@@ -14,7 +14,7 @@ function ldraw_lib__2723p03() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 2958pb095, set 10248, Vespa 125
+// 0 !KEYWORDS BrickLink 2723pb095, Rebrickable 2723pr0006, set 10248, Vespa 125
 // 
 // 0 !HISTORY 2023-08-25 [OrionP] Official Update 2023-04
 // 

@@ -13,8 +13,7 @@ function ldraw_lib__84637bp05() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 970d05, Brickowl 686022, Brickset 4268451
-// 0 !KEYWORDS Rebrickable 970e03, set 4767
+// 0 !KEYWORDS Bricklink 970d05, Rebrickable 970e03, set 4767
 // 
 // 0 !HISTORY 2023-06-06 [MagFors] Adapted to corrected geometry
 // 0 !HISTORY 2023-06-24 [OrionP] Official Update 2023-03

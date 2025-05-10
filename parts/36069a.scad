@@ -13,7 +13,7 @@ function ldraw_lib__36069a() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Sheet Plastic
-// 0 !KEYWORDS Racing Yacht, Set 42074, Technic
+// 0 !KEYWORDS BrickLink 42074pls01a, Racing Yacht, Set 42074, Technic
 // 
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
 // 

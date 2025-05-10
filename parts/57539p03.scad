@@ -16,6 +16,8 @@ function ldraw_lib__57539p03() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 57539pb04, Rebrickable 57539pat0003, Set 70915
+// 
 // 0 !HISTORY 2024-06-30 [OrionP] Official Update 2024-05
 // 
 // 

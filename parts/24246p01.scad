@@ -18,8 +18,8 @@ function ldraw_lib__24246p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 24246pb001, Brickowl 362977, Cylinder, Engine
-// 0 !KEYWORDS Rebrickable 24246pr0001, Set 70902
+// 0 !KEYWORDS Bricklink 24246pb001, Cylinder, Engine, Rebrickable 24246pr0001
+// 0 !KEYWORDS Set 70902
 // 
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
 // 0 !HISTORY 2021-01-16 [cwdee] Update description

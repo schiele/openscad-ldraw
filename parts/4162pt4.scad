@@ -11,8 +11,8 @@ function ldraw_lib__4162pt4() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Book, Bricklink 4162pb184, Brickowl 968128, promotional
-// 0 !KEYWORDS Rebrickable 4162pr0059, Set 40291
+// 0 !KEYWORDS Book, Bricklink 4162pb184, promotional, Rebrickable 4162pr0059
+// 0 !KEYWORDS Set 40291
 // 
 // 0 !HISTORY 2024-04-28 [OrionP] Official Update 2024-03
 // 

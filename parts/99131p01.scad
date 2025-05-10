@@ -15,8 +15,8 @@ function ldraw_lib__99131p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 970clga00pb002, Doctor Ivo Robotnik, Dr. Eggman, Set 76993
-// 0 !KEYWORDS set 76994
+// 0 !KEYWORDS Bricklink 970clga00pb002, Doctor Ivo Robotnik, Dr. Eggman
+// 0 !KEYWORDS Rebrickable 99131c03pr0009, Set 76993, set 76994
 // 
 // 0 !HISTORY 2024-08-26 [OrionP] Official Update 2024-07
 // 

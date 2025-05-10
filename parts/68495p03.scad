@@ -13,8 +13,7 @@ function ldraw_lib__68495p03() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS Bricklink 68495pb03, BrickOwl 1033552, Rebrickable 68495pat0003
-// 0 !KEYWORDS Set 41756, Set 41760
+// 0 !KEYWORDS Bricklink 68495pb03, Rebrickable 68495pat0003, Set 41756, Set 41760
 // 
 // 0 !HISTORY 2023-11-19 [OrionP] Official Update 2023-06
 // 

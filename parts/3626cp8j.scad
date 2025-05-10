@@ -17,8 +17,8 @@ function ldraw_lib__3626cp8j() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS BrickLink 3626cpb1089, Emmet, set 30280, Set 70803, Set 70810
-// 0 !KEYWORDS The LEGO Movie
+// 0 !KEYWORDS BrickLink 3626pb1089, Emmet, Rebrickable 3626cpr1354, set 30280
+// 0 !KEYWORDS Set 70803, Set 70810, The LEGO Movie
 // 
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
 // 0 !HISTORY 2022-07-11 [MagFors] Update description, added keywords

@@ -15,7 +15,7 @@ function ldraw_lib__52395() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS helm, Pirates, steering
+// 0 !KEYWORDS BrickLink 4790b, helm, Pirates, Rebrickable 4790b, steering
 // 
 // 0 !HISTORY 2022-01-18 [ejboer] Derived from 4790, changed pin type
 // 0 !HISTORY 2022-11-19 [MagFors] Subfiled the wheel

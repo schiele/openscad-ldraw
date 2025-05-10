@@ -12,7 +12,8 @@ function ldraw_lib__19001p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS City, Set 60220, town, Traffic, Vehicle
+// 0 !KEYWORDS BrickLink 18926c01, City, Rebrickable 19001c01, Set 60220, town
+// 0 !KEYWORDS Traffic, Vehicle
 // 
 // 0 !HISTORY 2024-09-30 [OrionP] Official Update 2024-08
 // 

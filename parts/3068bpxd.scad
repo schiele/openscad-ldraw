@@ -13,8 +13,8 @@ function ldraw_lib__3068bpxd() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3068pb2254, Brickowl 1162494, Front Bumper Grille
-// 0 !KEYWORDS Rebrickable 3068bpr0678, Set 76958, Set 76960
+// 0 !KEYWORDS Bricklink 3068pb2254, Front Bumper Grille, Rebrickable 3068bpr0678
+// 0 !KEYWORDS Set 76958, Set 76960
 // 
 // 0 !HISTORY 2024-12-01 [OrionP] Official Update 2024-10
 // 

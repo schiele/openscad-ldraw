@@ -14,9 +14,9 @@ function ldraw_lib__3626bpa7() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Adventurers, Baron von Barron, Bricklink 3626bpa7, Brickowl 693084
-// 0 !KEYWORDS dueling scar, eyebrows, face, Mr. Hates, Rebrickable 3626bpr0041
-// 0 !KEYWORDS set 3722, set 5919, set 5988, villain
+// 0 !KEYWORDS Adventurers, Baron von Barron, BrickLink 3626pa7, dueling scar
+// 0 !KEYWORDS eyebrows, face, Mr. Hates, Rebrickable 3626bpr0041, set 3722
+// 0 !KEYWORDS set 5919, set 5988, villain
 // 
 // 0 !CMDLINE -c14
 // 

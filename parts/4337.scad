@@ -18,7 +18,7 @@ function ldraw_lib__4337() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS Fabuland, Spoon
+// 0 !KEYWORDS BrickLink x234, Fabuland, Spoon
 // 
 // 0 !CMDLINE -c14
 // 

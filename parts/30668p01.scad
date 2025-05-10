@@ -13,8 +13,8 @@ function ldraw_lib__30668p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Bricklink 30668pb01, Brickowl 983128, CMF, Collectible Minifigures
-// 0 !KEYWORDS Ninjago, Rebrickable 30668pr0001, Set 30609, set 71019
+// 0 !KEYWORDS Bricklink 30668pb01, CMF, Collectible Minifigures, Ninjago
+// 0 !KEYWORDS Rebrickable 30668pr0001, Set 30609, set 71019
 // 0 !KEYWORDS The LEGO Ninjago Movie
 // 
 // 0 !HISTORY 2023-12-31 [OrionP] Official Update 2023-07

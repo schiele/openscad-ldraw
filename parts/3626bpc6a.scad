@@ -15,8 +15,8 @@ function ldraw_lib__3626bpc6a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS BrickLink 3626bpb0682, CMF Series 6, Collectable, Collectible, roman
-// 0 !KEYWORDS soldier
+// 0 !KEYWORDS BrickLink 3626pb0682, CMF Series 6, Collectable, Collectible
+// 0 !KEYWORDS Rebrickable 3626bpr0879, roman, soldier
 // 
 // 0 !HISTORY 2018-12-08 [PTadmin] Official Update 2018-02
 // 

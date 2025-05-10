@@ -4,17 +4,19 @@ function ldraw_lib__87079pza() = [
 // 0 Tile  2 x  4 with 10 Yellow Rectangles Pattern
 // 0 Name: 87079pza.dat
 // 0 Author: Damien Roux [Darats]
-// 0 !LDRAW_ORG Part UPDATE 2019-01
+// 0 !LDRAW_ORG Part UPDATE 2025-04
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Boba Fett, Brickheadz, Set 41498
+// 0 !KEYWORDS Boba Fett, Brickheadz, Bricklink 87079pb0523
+// 0 !KEYWORDS Rebrickable 87079pr0164, Set 41498
 // 
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
-// 
+// 0 !HISTORY 2025-03-16 [Lego-Manfred] References added
+// 0 !HISTORY 2025-04-27 [OrionP] Official Update 2025-04
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\87079s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__87079s01()],

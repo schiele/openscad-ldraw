@@ -13,7 +13,7 @@ function ldraw_lib__49309p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 49309pb001, Icecream, Set 70822
+// 0 !KEYWORDS Bricklink 49309pb001, Icecream, Rebrickable 49309pr0001, Set 70822
 // 
 // 0 !HISTORY 2023-08-25 [OrionP] Official Update 2023-04
 // 

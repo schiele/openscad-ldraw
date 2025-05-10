@@ -14,9 +14,8 @@ function ldraw_lib__3626bps5() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626bps5, Brickowl 998192, Classic Trilogy, Han Solo
-// 0 !KEYWORDS Harrison Ford, Rebrickable 3626bpr0342, Set 10179, Set 10188
-// 0 !KEYWORDS Set 6212, Star Wars
+// 0 !KEYWORDS BrickLink 3626ps5, Classic Trilogy, Han Solo, Harrison Ford
+// 0 !KEYWORDS Rebrickable 3626bpr0342, Set 10179, Set 10188, Set 6212, Star Wars
 // 
 // 0 !HISTORY 2002-04-25 [PTadmin] Official Update 2002-02
 // 0 !HISTORY 2004-04-15 [westrate] added torus primitives

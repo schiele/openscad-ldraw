@@ -12,7 +12,8 @@ function ldraw_lib__18675ps5() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 18675pb01, First Order, Star Wars
+// 0 !KEYWORDS Bricklink 18675pb01, First Order, Rebrickable 18675pr0001, set 75082
+// 0 !KEYWORDS Star Wars
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
 // 0 !HISTORY 2020-09-08 [cwdee] Correct Bricklink reference

@@ -13,7 +13,8 @@ function ldraw_lib__35756p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Hipwear
-// 0 !KEYWORDS Bricklink 35756pb01, Collectable, Collectible, Series 18, Set 71021
+// 0 !KEYWORDS Bricklink 35756pb01, Collectable, Collectible
+// 0 !KEYWORDS Rebrickable 35756pr0001, Series 18, Set 71021
 // 
 // 0 !HISTORY 2024-06-30 [OrionP] Official Update 2024-05
 // 

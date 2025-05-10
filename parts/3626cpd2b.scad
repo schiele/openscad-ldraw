@@ -13,7 +13,8 @@ function ldraw_lib__3626cpd2b() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626cpb1065, The Lego Movie Collectible, Velma Staplebot
+// 0 !KEYWORDS BrickLink 3626pb1065, Rebrickable 3626cpr1301, Set 71004-11
+// 0 !KEYWORDS The Lego Movie Collectible, Velma Staplebot
 // 
 // 0 !CMDLINE -c179
 // 

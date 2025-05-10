@@ -14,8 +14,8 @@ function ldraw_lib__76382pwe() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Big Chief Rattle Snake, Bricklink 973px105c01, BrickOwl 914854
-// 0 !KEYWORDS chief, Chief Black Eagle, chieftain, Mini Upper Part No 255
+// 0 !KEYWORDS Big Chief Rattle Snake, Bricklink 973px105c01, chief
+// 0 !KEYWORDS Chief Black Eagle, chieftain, Mini Upper Part No 255
 // 0 !KEYWORDS Native American, Rapid River Village, Rebrickable 973c26h01pr0105
 // 0 !KEYWORDS set 5923, set 6709, set 6746, set 6763, set 6766, western, wild west
 // 

@@ -13,8 +13,9 @@ function ldraw_lib__3626bp4c() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bat Lord, Bricklink 3626bpx74, Castle, Fright Knights, Set 2540
-// 0 !KEYWORDS Set 2848, Set 6007, Set 6031, Set 6097
+// 0 !KEYWORDS Bat Lord, BrickLink 3626px74, Castle, Fright Knights
+// 0 !KEYWORDS Rebrickable 3626bpr9966, Set 2540, Set 2848, Set 6007, Set 6031
+// 0 !KEYWORDS Set 6097
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 

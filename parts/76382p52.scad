@@ -14,11 +14,10 @@ function ldraw_lib__76382p52() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Battrax, Blacktron, Bricklink 973p52c01, BrickOwl 763559, Dwayne
-// 0 !KEYWORDS Invader, Mag racer, Octan, Rebrickable 973c03h03pr0052, Renegade
-// 0 !KEYWORDS Set 1875, Set 6648, Set 6703, Set 6704, Set 6781, Set 6876, Set 6886
-// 0 !KEYWORDS Set 6894, Set 6895, Set 6941, Set 6954, Set 6955, Set 6986, Set 6987
-// 0 !KEYWORDS Space, town
+// 0 !KEYWORDS Battrax, Blacktron, Bricklink 973p52c01, Dwayne, Invader, Mag racer
+// 0 !KEYWORDS Octan, Rebrickable 973c03h03pr0052, Renegade, Set 1875, Set 6648
+// 0 !KEYWORDS Set 6703, Set 6704, Set 6781, Set 6876, Set 6886, Set 6894, Set 6895
+// 0 !KEYWORDS Set 6941, Set 6954, Set 6955, Set 6986, Set 6987, Space, town
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

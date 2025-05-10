@@ -1,9 +1,9 @@
 use <../lib.scad>
 function ldraw_lib__85651c02() = [
-// 0 Sheet Fabric 17 x 21 Triangular Sail (Formed Shape 2)
+// 0 Sail 17 x 21 Triangular (Formed Shape 2)
 // 0 Name: 85651c02.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2020-02
+// 0 !LDRAW_ORG Part UPDATE 2025-04
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 !HELP Shaped for 4184 The Black Pearl, ship front
@@ -13,14 +13,15 @@ function ldraw_lib__85651c02() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Sheet Fabric
-// 0 !KEYWORDS Black Pearl, set 4184
+// 0 !KEYWORDS Black Pearl, BrickLink 85651, Rebrickable 85651, set 4184
 // 
 // 0 !HISTORY 2015-10-11 [PTadmin] Official Update 2015-01
 // 0 !HISTORY 2019-01-25 [cwdee] Update category
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
 // 0 !HISTORY 2020-06-10 [cwdee] Update description
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
-// 
+// 0 !HISTORY 2025-04-26 [Holly-Wood] Update description
+// 0 !HISTORY 2025-04-27 [OrionP] Official Update 2025-04
 // 
 // 3 16 -5.33 -3.8 1.1 -20.57 -21.13 14.23 -29.07 -17.59 35.35
   [3,16,-5.33,-3.8,1.1,-20.57,-21.13,14.23,-29.07,-17.59,35.35],

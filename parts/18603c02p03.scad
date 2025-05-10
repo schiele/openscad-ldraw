@@ -13,8 +13,8 @@ function ldraw_lib__18603c02p03() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 18603c03pb01, Dimensions, Electronic, Gandalf
-// 0 !KEYWORDS Lord of the Rings, NFC, Set 71200, Toy Tag
+// 0 !KEYWORDS BrickLink 18605c01pb03, Dimensions, Electronic, Gandalf
+// 0 !KEYWORDS Lord of the Rings, NFC, Rebrickable 19981pr0003, Set 71200, Toy Tag
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 

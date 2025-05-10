@@ -11,6 +11,8 @@ function ldraw_lib__3005ptj() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 3005ptJ, Rebrickable 3005pr9940, Set 234
+// 
 // 0 !HISTORY 2003-12-09 [Steffen] made use of existing subfile
 // 0 !HISTORY 2003-12-11 [Tore_Eriksson] fixed overlapping quads
 // 0 !HISTORY 2003-12-11 [Steffen] BFCed

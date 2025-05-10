@@ -19,9 +19,10 @@ function ldraw_lib__973pw4() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !KEYWORDS badge, bowtie, deputy, Dodge City, Federal Marshal, fob, gold star
-// 0 !KEYWORDS lawman, marshal, red bowtie, sheriff, tin star, U.S. Marshal
-// 0 !KEYWORDS watchfob, western, wild west, Wyatt Earp
+// 0 !KEYWORDS badge, bowtie, BrickLink 973px161, deputy, Dodge City
+// 0 !KEYWORDS Federal Marshal, fob, gold star, lawman, marshal, red bowtie
+// 0 !KEYWORDS set 6712, sheriff, tin star, U.S. Marshal, watchfob, western
+// 0 !KEYWORDS wild west, Wyatt Earp
 // 
 // 0 !CMDLINE -c7
 // 

@@ -13,7 +13,8 @@ function ldraw_lib__38301p01c02() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Neckwear
-// 0 !KEYWORDS Mojo Jojo, Powerpuff Girls, set 41288
+// 0 !KEYWORDS BrickLink 38301, Mojo Jojo, Powerpuff Girls, Rebrickable 38301pr0001
+// 0 !KEYWORDS set 41288
 // 
 // 0 !HISTORY 2024-06-30 [OrionP] Official Update 2024-05
 // 

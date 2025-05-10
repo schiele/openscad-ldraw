@@ -16,6 +16,8 @@ function ldraw_lib__2359p03() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 2359px1, Rebrickable 2359pr0003, set 6748
+// 
 // 0 !HISTORY 2010-04-09 [mikeheide] Moved portions from subpart
 // 0 !HISTORY 2010-07-05 [PTadmin] Official Update 2010-02
 // 

@@ -13,7 +13,7 @@ function ldraw_lib__3001ph0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Harry Potter
+// 0 !KEYWORDS BrickLink 3001pb018, Harry Potter, Rebrickable 3001pr0042, Set 4695
 // 
 // 0 !HISTORY 2014-06-21 [PTadmin] Official Update 2014-01
 // 

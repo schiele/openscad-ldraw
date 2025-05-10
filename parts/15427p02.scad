@@ -12,7 +12,8 @@ function ldraw_lib__15427p02() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Friends, Natasha, set 41093
+// 0 !KEYWORDS BrickLink 15427pb02, Friends, Natasha, Rebrickable 15427pr0002
+// 0 !KEYWORDS set 41093
 // 
 // 0 !HISTORY 2014-05-16 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2015-12-29 [MagFors] File preparation for LDraw Parts Tracker

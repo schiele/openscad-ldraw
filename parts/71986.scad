@@ -13,7 +13,7 @@ function ldraw_lib__71986() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Hose
-// 0 !KEYWORDS 35 Ribs, 7 mm D., 88 mm
+// 0 !KEYWORDS 35 Ribs, 7 mm D., 88 mm, BrickLink 78c11, Rebrickable 78c11
 // 
 // 0 !HISTORY 2013-08-03 [rempie] Changed name to Technic Ribbed Hose 35 Ribs.
 // 0 !HISTORY 2013-08-09 [rempie] distance changed to 6.25

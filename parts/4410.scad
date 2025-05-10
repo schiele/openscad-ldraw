@@ -9,19 +9,27 @@ use <../p/48/4-4rin13.scad>
 use <../p/48/4-4ring7.scad>
 use <../p/48/tm04o2500.scad>
 function ldraw_lib__4410() = [
-// 0 Tyre 44 x 32 / 56 Smooth Racing
+// 0 Tyre 44/ 30 x 56 Smooth Racing
 // 0 Name: 4410.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2024-09
+// 0 !LDRAW_ORG Part UPDATE 2025-04
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
+// 
+// 0 !HELP Printed version is heavier, partnumber 5746
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS 81.6x44 mm, Slicks
+// 
 // 0 !HISTORY 2024-03-07 {LEGO Instructions App} Original part shape
 // 0 !HISTORY 2024-03-12 [Philo] File preparation for LDraw Parts Tracker
 // 0 !HISTORY 2024-10-27 [OrionP] Official Update 2024-09
+// 0 !HISTORY 2025-04-26 [MagFors] Corrected description
+// 0 !HISTORY 2025-04-27 [OrionP] Official Update 2025-04
+// 
+// 0 // Nomenclature: width_(mm)/ profile_as_%age_of_width x rim_diameter_(mm) [optional qualifier]
 // 
 // 1 16 0 0 33 9.28571 0 0 0 0 9.28571 0 1 0 48\4-4ring7.dat
   [1,16,0,0,33,9.28571,0,0,0,0,9.28571,0,1,0, ldraw_lib__48__4_4ring7()],

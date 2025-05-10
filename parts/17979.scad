@@ -13,6 +13,8 @@ function ldraw_lib__17979() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink x1435
+// 
 // 0 !HISTORY 2014-05-16 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2021-04-17 [Berth] File preparation for LDraw Parts Tracker
 // 0 !HISTORY 2021-10-21 [Holly-Wood] Changed clip type, fixed gaps, fixed T-junk

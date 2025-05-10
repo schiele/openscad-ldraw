@@ -14,8 +14,8 @@ function ldraw_lib__76382p2q() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bandana, Bricklink 973pb4776c01, BrickOwl 1408058
-// 0 !KEYWORDS Rebrickable 973c20h01pr6141, Set 21343, Set 31132
+// 0 !KEYWORDS Bandana, Bricklink 973pb4776c01, Rebrickable 973c20h01pr6141
+// 0 !KEYWORDS Set 21343, Set 31132
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

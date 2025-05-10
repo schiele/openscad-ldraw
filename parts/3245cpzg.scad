@@ -13,7 +13,8 @@ function ldraw_lib__3245cpzg() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickheadz, BrickLink 3245cpb232, Disney, Maleficent, Set 40620
+// 0 !KEYWORDS Brickheadz, BrickLink 3245cpb232, Disney, Maleficent
+// 0 !KEYWORDS Rebrickable 3245cpr0212, Set 40620
 // 
 // 0 !HISTORY 2023-06-24 [OrionP] Official Update 2023-03
 // 

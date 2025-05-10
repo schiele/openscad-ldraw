@@ -11,8 +11,8 @@ function ldraw_lib__3039pci() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS bricklink 3039pb108, computer, console, Set 75144, set 75220
-// 0 !KEYWORDS Star Wars UCS
+// 0 !KEYWORDS bricklink 3039pb108, computer, console, Rebrickable 3039pr0021
+// 0 !KEYWORDS Set 75144, set 75220, Star Wars UCS
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
 // 

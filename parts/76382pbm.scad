@@ -14,9 +14,9 @@ function ldraw_lib__76382pbm() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Batman 2006, Bricklink 973pb0188c01, BrickOwl 324933, DC comics
-// 0 !KEYWORDS Gotham City, Henchman, Mini Upper Part No 1281
-// 0 !KEYWORDS Rebrickable 973e018pr1281, Set 7781, Two-Face, Twoface
+// 0 !KEYWORDS Batman 2006, Bricklink 973pb0188c01, DC comics, Gotham City
+// 0 !KEYWORDS Henchman, Mini Upper Part No 1281, Rebrickable 973e018pr1281
+// 0 !KEYWORDS Set 7781, Two-Face, Twoface
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

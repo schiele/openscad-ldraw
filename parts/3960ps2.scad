@@ -12,7 +12,8 @@ function ldraw_lib__3960ps2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Fighter, Interceptor, Round, Star Wars
+// 0 !KEYWORDS BrickLink 3960px4, Fighter, Interceptor, Rebrickable 3960pr9977
+// 0 !KEYWORDS Round, Set 10019, Star Wars
 // 
 // 0 !HISTORY 2010-07-05 [PTadmin] Official Update 2010-02
 // 

@@ -13,6 +13,8 @@ function ldraw_lib__4150p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
+// 0 !KEYWORDS Rebrickable 4150pr0014, Set 1991
+// 
 // 0 !HISTORY 2000-09-30 [PTadmin] Official Update 2000-02
 // 0 !HISTORY 2003-07-28 [Steffen] made use of s\4150s01.dat
 // 0 !HISTORY 2005-12-28 [PTadmin] Official Update 2005-01

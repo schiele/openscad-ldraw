@@ -12,7 +12,7 @@ function ldraw_lib__776p15() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !KEYWORDS classic, h0 scale
+// 0 !KEYWORDS classic, h0 scale, Rebrickable 776pr0015, Set 242.1
 // 
 // 0 !HISTORY 2009-12-29 [PTadmin] Official Update 2009-03
 // 

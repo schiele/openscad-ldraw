@@ -20,8 +20,8 @@ function ldraw_lib__973pw5() = [
 // 0 !KEYWORDS bad guy, bandido, bandit, billy the kid, brigand, cowboy, crook
 // 0 !KEYWORDS desperado, doc holliday, gangster, gunman, hijacker, holdup man
 // 0 !KEYWORDS hooligan, marauder, mobster, outlaw, Pistol, plunderer, revolver
-// 0 !KEYWORDS rifle, robber, spaghetti western, tombstone, villain, western
-// 0 !KEYWORDS wild west
+// 0 !KEYWORDS rifle, robber, set 6712, spaghetti western, tombstone, villain
+// 0 !KEYWORDS western, wild west
 // 
 // 0 !CMDLINE -c0
 // 

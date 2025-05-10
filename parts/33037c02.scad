@@ -13,6 +13,8 @@ function ldraw_lib__33037c02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 33037c01, Rebrickable 33037c01
+// 
 // 0 !HISTORY 2024-12-01 [OrionP] Official Update 2024-10
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 33037.dat

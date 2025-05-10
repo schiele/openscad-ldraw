@@ -13,7 +13,8 @@ function ldraw_lib__3626cpcfb() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626cpb1491, Laser Mech, Series 15
+// 0 !KEYWORDS BrickLink 3626pb1491, Laser Mech, Rebrickable 3626cpr1840, Series 15
+// 0 !KEYWORDS Set 71011-11
 // 
 // 0 !CMDLINE -c0
 // 

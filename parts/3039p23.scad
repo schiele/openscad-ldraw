@@ -12,7 +12,7 @@ function ldraw_lib__3039p23() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS console, controls, display
+// 0 !KEYWORDS console, controls, display, Rebrickable 3039pr0026, Set 10041
 // 
 // 0 !HISTORY 1997-09-29 [PTadmin] Official Update 1997-15
 // 0 !HISTORY 2002-02-17 [BrickCaster] improved pattern

@@ -13,6 +13,7 @@ function ldraw_lib__93094p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Figure Accessory
+// 0 !KEYWORDS Bricklink 93094pb01, Rebrickable 93094pat0001, Set 21302
 // 
 // 0 !HISTORY 2013-08-14 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2014-10-06 [Philo] Complete rebuild for LDraw Parts Tracker

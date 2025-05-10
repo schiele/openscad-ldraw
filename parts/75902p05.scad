@@ -14,8 +14,8 @@ function ldraw_lib__75902p05() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS Bricklink 75902p05, Brickset 82025, Rebrickable 75902pr0028
-// 0 !KEYWORDS Set 42129, Trial Truck, Zetros
+// 0 !KEYWORDS BrickLink 75902pb19, Rebrickable 75902pr0028, Set 42129, Trial Truck
+// 0 !KEYWORDS Zetros
 // 
 // 0 !HISTORY 2024-06-30 [OrionP] Official Update 2024-05
 // 

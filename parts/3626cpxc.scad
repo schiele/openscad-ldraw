@@ -14,8 +14,8 @@ function ldraw_lib__3626cpxc() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Adventure Time, Bricklink 3626cpb1733, Dimensions, Finn the Human
-// 0 !KEYWORDS Set 71245
+// 0 !KEYWORDS Adventure Time, BrickLink 3626pb1733, Dimensions, Finn the Human
+// 0 !KEYWORDS Rebrickable 3626cpr1991, Set 71245
 // 
 // 0 !HISTORY 2024-05-28 [OrionP] Official Update 2024-04
 // 

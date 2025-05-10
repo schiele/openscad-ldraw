@@ -12,7 +12,7 @@ function ldraw_lib__76279() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS bar, tube
+// 0 !KEYWORDS bar, BrickLink 75c06, Rebrickable 75c06, tube
 // 
 // 0 !HISTORY 2011-12-21 [cwdee] Reworked subparting technique
 // 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02

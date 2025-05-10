@@ -14,8 +14,8 @@ function ldraw_lib__76382p80() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS basic, Bricklink 973px36c01, BrickOwl 475610, city center, classic
-// 0 !KEYWORDS dacta, Eddie Octane, football, Octan, Race, Racing
+// 0 !KEYWORDS basic, Bricklink 973px36c01, city center, classic, dacta
+// 0 !KEYWORDS Eddie Octane, football, Octan, Race, Racing
 // 0 !KEYWORDS Rebrickable 973c22h01pr0036, Set 1188, Set 3308, Set 4293, set 6327
 // 0 !KEYWORDS Set 6335, set 6337, Set 6400, Set 6406, Set 6424, Set 6484, Set 6543
 // 0 !KEYWORDS Set 6546, Set 6639, Soccer, town, Town Junior

@@ -14,7 +14,8 @@ function ldraw_lib__3626bpb8() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS 2006, Batman, Bricklink 3626bpb0257, Catwoman, set 7779
+// 0 !KEYWORDS 2006, Batman, BrickLink 3626pb0257, Catwoman
+// 0 !KEYWORDS Rebrickable 3626bpr0481, set 7779
 // 
 // 0 !HISTORY 2013-07-21 [PTadmin] Official Update 2013-01
 // 0 !HISTORY 2023-11-07 [MagFors] Update description, added keywords

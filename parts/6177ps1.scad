@@ -13,7 +13,8 @@ function ldraw_lib__6177ps1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS engine intake, Episode 1, grate, plate, pod racer, Star Wars
+// 0 !KEYWORDS BrickLink 6177pb002, engine intake, Episode 1, grate, plate
+// 0 !KEYWORDS pod racer, Rebrickable 6177bpr0003, Set 7186, Star Wars
 // 0 !KEYWORDS The Phantom Menace, vents, Watto's Junkyard
 // 
 // 0 !HISTORY 2004-03-02 [PTadmin] Official Update 2004-01

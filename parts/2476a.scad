@@ -17,6 +17,8 @@ function ldraw_lib__2476a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 2476
+// 
 // 0 !HISTORY 2003-06-08 [jriley] BFC compliant, ring substitutions
 // 0 !HISTORY 2005-12-28 [PTadmin] Official Update 2005-01
 // 0 !HISTORY 2007-05-13 [PTadmin] Header formatted for Contributor Agreement

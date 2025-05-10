@@ -12,7 +12,8 @@ function ldraw_lib__4485b() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS ambulance, baseball, coast guard, hat, Octan, police
+// 0 !KEYWORDS ambulance, baseball, BrickLink 4485, coast guard, hat, Octan, police
+// 0 !KEYWORDS Rebrickable 4485
 // 
 // 0 !HISTORY 2013-08-14 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2024-09-07 [KnightOfTarenta] File preparation for LDraw Parts Tracker

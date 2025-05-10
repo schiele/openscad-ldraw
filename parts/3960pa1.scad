@@ -12,7 +12,8 @@ function ldraw_lib__3960pa1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Glow In The Dark, Monster Fighters, set 9468
+// 0 !KEYWORDS BrickLink 3960pb025, Glow In The Dark, Monster Fighters
+// 0 !KEYWORDS Rebrickable 3960pr0012, set 9468
 // 
 // 0 !HISTORY 2019-12-27 [PTadmin] Official Update 2019-03
 // 

@@ -13,7 +13,8 @@ function ldraw_lib__75902p03() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS Series 10
+// 0 !KEYWORDS BrickLink 75902pb03, Rebrickable 75902pr0015, Series 10
+// 0 !KEYWORDS Set 71001-17
 // 
 // 0 !CMDLINE -c308
 // 

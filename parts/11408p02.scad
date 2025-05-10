@@ -13,7 +13,7 @@ function ldraw_lib__11408p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS set 41057
+// 0 !KEYWORDS BrickLink FTBpb002c01, Rebrickable 11408c02pr0002, set 41057
 // 
 // 0 !HISTORY 2014-12-23 [PTadmin] Official Update 2014-02
 // 0 !HISTORY 2025-01-09 [OrionP] Moved from u9210p02c01.dat

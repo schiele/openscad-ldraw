@@ -17,8 +17,8 @@ function ldraw_lib__73200bps4() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 970c00pb1283, Brickowl 1312204, Rebrickable 970c27pr2143
-// 0 !KEYWORDS Set 40558, Set 75337, Set 75340, Set 75390, Star Wars
+// 0 !KEYWORDS Bricklink 970c00pb1283, Rebrickable 970c27pr2143, Set 40558
+// 0 !KEYWORDS Set 75337, Set 75340, Set 75390, Star Wars
 // 
 // 0 !HISTORY 2023-06-24 [OrionP] Official Update 2023-03
 // 0 !HISTORY 2024-08-28 [Cheenzo] Corrected spelling of Grey

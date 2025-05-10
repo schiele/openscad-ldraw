@@ -12,6 +12,8 @@ function ldraw_lib__6069ps1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS Rebrickable 6069pr0005, Set 4195641
+// 
 // 0 !HISTORY 2002-02-18 [PTadmin] Official Update 2002-01
 // 0 !HISTORY 2002-04-25 [PTadmin] Official Update 2002-02
 // 0 !HISTORY 2007-07-12 [PTadmin] Header formatted for Contributor Agreement

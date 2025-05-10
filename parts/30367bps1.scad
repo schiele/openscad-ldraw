@@ -35,8 +35,8 @@ function ldraw_lib__30367bps1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Artoo, Artoo-Detoo, astromech, droid, head, minifig, R2-D2, Robot
-// 0 !KEYWORDS Star Wars
+// 0 !KEYWORDS Artoo, Artoo-Detoo, astromech, droid, head, minifig, R2-D2
+// 0 !KEYWORDS Rebrickable 30367bpr0006, Robot, Star Wars
 // 
 // 0 !HISTORY 2012-12-28 [PTadmin] Official Update 2012-03
 // 

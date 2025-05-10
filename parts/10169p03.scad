@@ -12,7 +12,8 @@ function ldraw_lib__10169p03() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS Animal Crossing, Bag, Bricklink 10169pb03, set 77050
+// 0 !KEYWORDS Animal Crossing, Bag, Bricklink 10169pb03, Rebrickable 10169pr0003
+// 0 !KEYWORDS set 77050
 // 
 // 0 !HISTORY 2024-08-26 [OrionP] Official Update 2024-07
 // 

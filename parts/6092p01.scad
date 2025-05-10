@@ -21,7 +21,8 @@ function ldraw_lib__6092p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Adventurer, driveway, Pharaoh, set 5978, Sphinx, tomb
+// 0 !KEYWORDS Adventurer, BrickLink 6092pb03, driveway, Pharaoh
+// 0 !KEYWORDS Rebrickable 6092pr0002, set 5978, Sphinx, tomb
 // 
 // 0 !HISTORY 2022-03-04 [Holly-Wood] Closed gaps, fixed conds and edges
 // 0 !HISTORY 2022-05-07 [PTadmin] Official Update 2022-03

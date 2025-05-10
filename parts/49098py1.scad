@@ -20,7 +20,8 @@ function ldraw_lib__49098py1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS AMG, Bricklink 49098pb02, F1, Mercedes, Set 76909, Speed Champions
+// 0 !KEYWORDS AMG, Bricklink 49098pb02, F1, Mercedes, Rebrickable 49098pr0003
+// 0 !KEYWORDS Set 76909, Speed Champions
 // 
 // 0 !HISTORY 2023-12-31 [OrionP] Official Update 2023-07
 // 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives

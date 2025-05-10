@@ -14,10 +14,10 @@ function ldraw_lib__76382p57() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Alien, Armaron, Bricklink 973pb0082c01, BrickOwl 388590, Cyborg
-// 0 !KEYWORDS Extraterrestrial, Holox, Insectoids, Insector Leon
-// 0 !KEYWORDS Mini Upper Part No 306, Rebrickable 973c31h03pr0082, Set 6903
-// 0 !KEYWORDS Set 6919, Space, Techno Leon, Zotax
+// 0 !KEYWORDS Alien, Armaron, Bricklink 973pb0082c01, Cyborg, Extraterrestrial
+// 0 !KEYWORDS Holox, Insectoids, Insector Leon, Mini Upper Part No 306
+// 0 !KEYWORDS Rebrickable 973c31h03pr0082, Set 6903, Set 6919, Space, Techno Leon
+// 0 !KEYWORDS Zotax
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

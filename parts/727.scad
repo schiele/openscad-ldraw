@@ -24,6 +24,7 @@ function ldraw_lib__727() = [
   [0,"BFC","CW"],
 // 
 // 0 !CATEGORY Vehicle
+// 0 !KEYWORDS BrickLink 966a, Rebrickable 966a
 // 
 // 0 !HISTORY 2005-12-31 [nielsk] BFC'd and updated
 // 0 !HISTORY 2010-07-05 [PTadmin] Official Update 2010-02

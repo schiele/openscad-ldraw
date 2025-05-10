@@ -13,7 +13,8 @@ function ldraw_lib__3001pe1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS double-print, dual print, face, frown, smile
+// 0 !KEYWORDS double-print, dual print, face, frown, Rebrickable 3001pr0043
+// 0 !KEYWORDS Set 1050, smile
 // 
 // 0 !CMDLINE -c14
 // 

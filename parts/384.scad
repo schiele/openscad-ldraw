@@ -16,6 +16,7 @@ function ldraw_lib__384() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Sheet Cardboard
+// 0 !KEYWORDS BrickLink bb0046
 // 
 // 0 !HISTORY 2013-03-16 [MagFors] Reduced filesize, removed t-junctions
 // 0 !HISTORY 2013-07-21 [PTadmin] Official Update 2013-01

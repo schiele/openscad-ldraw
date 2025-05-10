@@ -17,6 +17,8 @@ function ldraw_lib__4207a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 4207, Rebrickable 4207
+// 
 // 0 !HISTORY 2020-04-18 [GeraldLasser] Adapted to Subfile Use
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
 // 

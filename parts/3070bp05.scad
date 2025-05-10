@@ -11,6 +11,8 @@ function ldraw_lib__3070bp05() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 3070pb003, Rebrickable 3070bpr0030, Set 6360
+// 
 // 0 !HISTORY 2003-07-02 [Steffen] fixed BFC errors
 // 0 !HISTORY 2004-09-15 [PTadmin] Official Update 2004-03
 // 0 !HISTORY 2007-10-13 [PTadmin] Header formatted for Contributor Agreement

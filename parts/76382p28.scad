@@ -14,7 +14,7 @@ function ldraw_lib__76382p28() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973p28c01, BrickOwl 508768, football, Futbal, Motorcycle
+// 0 !KEYWORDS Bricklink 973p28c01, football, Futbal, Motorcycle
 // 0 !KEYWORDS Rebrickable 973c03h01pr0028, Set 6561, Soccer, Time Cruisers
 // 0 !KEYWORDS Time Twisters, Tony Twister, town, Zipper
 // 

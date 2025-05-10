@@ -14,7 +14,7 @@ function ldraw_lib__973pbe() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Heartbreaker
+// 0 !KEYWORDS Heartbreaker, set 76008
 // 
 // 0 !HISTORY 2013-12-23 [PTadmin] Official Update 2013-02
 // 

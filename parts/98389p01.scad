@@ -18,8 +18,8 @@ function ldraw_lib__98389p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 98389pb01, Friends, Oscar, Set 3185, Set 3188, Set 40080
-// 0 !KEYWORDS set 41034, Set 850591
+// 0 !KEYWORDS Bricklink 98389pb01, Friends, Oscar, Rebrickable 98389pr0001
+// 0 !KEYWORDS Set 3185, Set 3188, Set 40080, set 41034, Set 850591
 // 
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04
 // 

@@ -14,10 +14,9 @@ function ldraw_lib__76382paq() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Adventurers, Bricklink 973pb0293c01, BrickOwl 701957, China
-// 0 !KEYWORDS Chupa Chups, Dragon Fortress, Jing Lee, Mini Upper Part No 715
-// 0 !KEYWORDS Orient Expedition, Rebrickable 973c31h01pr0293, set 3382, set 7419
-// 0 !KEYWORDS The Wanderer
+// 0 !KEYWORDS Adventurers, Bricklink 973pb0293c01, China, Chupa Chups
+// 0 !KEYWORDS Dragon Fortress, Jing Lee, Mini Upper Part No 715, Orient Expedition
+// 0 !KEYWORDS Rebrickable 973c31h01pr0293, set 3382, set 7419, The Wanderer
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

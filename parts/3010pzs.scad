@@ -11,7 +11,8 @@ function ldraw_lib__3010pzs() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickheadz, BrickLink 3010pb235, Elsa, Frozen, Set 41617
+// 0 !KEYWORDS Brickheadz, BrickLink 3010pb235, Elsa, Frozen
+// 0 !KEYWORDS Rebrickable 3010pr0046, Set 41617
 // 
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
 // 

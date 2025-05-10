@@ -13,7 +13,7 @@ function ldraw_lib__71951() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Hose
-// 0 !KEYWORDS 25 Ribs, 64 mm, 7 mm D.
+// 0 !KEYWORDS 25 Ribs, 64 mm, 7 mm D., BrickLink 78c08, Rebrickable 78c08
 // 
 // 0 !HISTORY 2015-12-30 [PTadmin] Official Update 2015-02
 // 0 !HISTORY 2016-01-17 [MagFors] Corrected number of ribs

@@ -13,8 +13,8 @@ function ldraw_lib__57901p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 57901pb01, Jedi, Kit Fisto, Set 7661, Set 8088, Set 9526
-// 0 !KEYWORDS Star Wars
+// 0 !KEYWORDS Bricklink 57901pb01, Jedi, Kit Fisto, Rebrickable 57901pr0001
+// 0 !KEYWORDS Set 7661, Set 8088, Set 9526, Star Wars
 // 
 // 0 !HISTORY 2013-12-23 [PTadmin] Official Update 2013-02
 // 0 !HISTORY 2022-06-22 [Philo] Updated description, added keywords

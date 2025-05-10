@@ -11,7 +11,7 @@ function ldraw_lib__69729p00() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 69729pb020, Globe, Set 21332
+// 0 !KEYWORDS Bricklink 69729pb020, Globe, Rebrickable 69729pr0014, Set 21332
 // 
 // 0 !HISTORY 2024-07-29 [OrionP] Official Update 2024-06
 // 

@@ -13,7 +13,8 @@ function ldraw_lib__87561p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS Boba Fett, BrickLink 87561pb01, Jabba, Slave, Star Wars
+// 0 !KEYWORDS Boba Fett, BrickLink 87561pb01, Jabba, Rebrickable 87561pr0001
+// 0 !KEYWORDS Set 8097, Slave, Star Wars
 // 
 // 0 !HISTORY 2013-08-14 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2017-06-20 [ejboer] File preparation for LDraw Parts Tracker

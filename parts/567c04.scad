@@ -13,6 +13,8 @@ function ldraw_lib__567c04() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink bb0236ac01, Rebrickable 236ac01
+// 
 // 0 !HISTORY 2022-04-06 [Holly-Wood] Added intersections
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04
 // 

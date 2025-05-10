@@ -14,8 +14,8 @@ function ldraw_lib__98138p20() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 98138pb154, Brickowl 357725, Dots, Mega Pack
-// 0 !KEYWORDS Rebrickable 98138pr0168, Ribbon, Set 41913
+// 0 !KEYWORDS Bricklink 98138pb154, Dots, Mega Pack, Rebrickable 98138pr0168
+// 0 !KEYWORDS Ribbon, Set 41913
 // 
 // 0 !HISTORY 2024-07-29 [OrionP] Official Update 2024-06
 // 

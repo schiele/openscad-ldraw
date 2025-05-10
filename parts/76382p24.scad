@@ -14,7 +14,7 @@ function ldraw_lib__76382p24() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973p24c01, BrickOwl 554569, doctor, Hospital, medic
+// 0 !KEYWORDS Bricklink 973p24c01, doctor, Hospital, medic
 // 0 !KEYWORDS Rebrickable 973c27h01pr0021, Set 6691
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01

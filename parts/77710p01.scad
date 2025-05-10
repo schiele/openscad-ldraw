@@ -11,7 +11,8 @@ function ldraw_lib__77710p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS hat, Set 71387, Super Mario
+// 0 !KEYWORDS BrickLink 77710pb01, hat, Rebrickable 77710pr0001, Set 71387
+// 0 !KEYWORDS Super Mario
 // 
 // 0 !HISTORY 2022-05-25 {LEGO Instructions App} Original part shape
 // 0 !HISTORY 2022-06-01 [Philo] File preparation for LDraw Parts Tracker

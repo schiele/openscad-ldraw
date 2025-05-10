@@ -11,6 +11,8 @@ function ldraw_lib__21849() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS Rebrickable 35328
+// 
 // 0 !HISTORY 2016-03-18 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2016-06-29 [Philo] File preparation for LDraw Parts Tracker
 // 0 !HISTORY 2018-01-30 [PTadmin] Official Update 2018-01

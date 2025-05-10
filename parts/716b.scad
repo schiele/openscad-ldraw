@@ -24,8 +24,7 @@ function ldraw_lib__716b() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink x1042b, Brickowl 119734, classic, curved, macaroni
-// 0 !KEYWORDS Rebrickable 716, Ring
+// 0 !KEYWORDS Bricklink x1042b, classic, curved, macaroni, Rebrickable 716, Ring
 // 
 // 0 !HISTORY 2004-03-14 [Steffen] re-oriented studs
 // 0 !HISTORY 2006-08-05 [guyvivan] re-oriented studs, fix no coplanar quads, use more primitives

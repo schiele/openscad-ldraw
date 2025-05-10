@@ -14,6 +14,8 @@ function ldraw_lib__93087_f1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 93087, Rebrickable 93087
+// 
 // 0 !HISTORY 2020-12-12 {LEGO/Unity Microgame} Original part shape
 // 0 !HISTORY 2020-12-12 [Philo] File preparation for LDraw Parts Tracker
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01

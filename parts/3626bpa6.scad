@@ -23,9 +23,9 @@ function ldraw_lib__3626bpa6() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Adventurers, Bricklink 3626bpa6, Brickowl 928484, curly hair, face
-// 0 !KEYWORDS Gail Storm, Pippen Read, Rebrickable 3626bpr0098, Set 1271, set 5978
-// 0 !KEYWORDS smile, Studios
+// 0 !KEYWORDS Adventurers, BrickLink 3626pa6, curly hair, face, Gail Storm
+// 0 !KEYWORDS Pippen Read, Rebrickable 3626bpr0098, Set 1271, set 5978, smile
+// 0 !KEYWORDS Studios
 // 
 // 0 !CMDLINE -c14
 // 

@@ -12,7 +12,7 @@ function ldraw_lib__30180p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS police
+// 0 !KEYWORDS BrickLink 30180pb03, police, Rebrickable 30180pr0001, set 6332
 // 
 // 0 !HISTORY 2012-08-09 [PTadmin] Official Update 2012-02
 // 

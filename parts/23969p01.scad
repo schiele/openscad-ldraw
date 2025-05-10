@@ -11,8 +11,8 @@ function ldraw_lib__23969p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS bricklink 23969pb004, football, goal, Old Trafford, Set 10272
-// 0 !KEYWORDS Soccer
+// 0 !KEYWORDS bricklink 23969pb004, football, goal, Old Trafford
+// 0 !KEYWORDS Rebrickable 23969pr0001, Set 10272, Soccer
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
 // 

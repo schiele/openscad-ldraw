@@ -14,7 +14,8 @@ function ldraw_lib__98130p05() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Bricklink 98130pb05, Lloyd, Movie, Ninjago, Set 30608
+// 0 !KEYWORDS Bricklink 98130pb05, Lloyd, Movie, Ninjago, Rebrickable 98130pr0007
+// 0 !KEYWORDS Set 30608
 // 
 // 0 !HISTORY 2023-04-17 [OrionP] Official Update 2023-02
 // 

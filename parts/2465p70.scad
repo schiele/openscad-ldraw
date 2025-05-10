@@ -12,6 +12,8 @@ function ldraw_lib__2465p70() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 2465px2, Rebrickable 2465pr0001, Set 6554
+// 
 // 0 !HISTORY 2013-09-04 [MMR1988] Used s\4209p70a, removed t-junctions
 // 0 !HISTORY 2014-12-23 [PTadmin] Official Update 2014-02
 // 

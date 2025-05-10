@@ -20,7 +20,7 @@ function ldraw_lib__2842c01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Electric
-// 0 !KEYWORDS Set 8094, set 9753
+// 0 !KEYWORDS BrickLink 2840c01, Rebrickable 2840c01, Set 8094, set 9753
 // 
 // 0 !CMDLINE -c0
 // 

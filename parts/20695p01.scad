@@ -14,8 +14,9 @@ function ldraw_lib__20695p01() = [
 // 
 // 0 !CATEGORY Minifig Headwear
 // 0 !KEYWORDS BrickLink 20695pb01, Elwood Crane, ghost, Halloween
-// 0 !KEYWORDS Headless Horseman, Jack O' Lantern, Scooby-Doo, set 40260, set 40351
-// 0 !KEYWORDS set 45023, set 71040, set 75901, set 75904, set 853607
+// 0 !KEYWORDS Headless Horseman, Jack O' Lantern, Rebrickable 20693pr0001
+// 0 !KEYWORDS Scooby-Doo, set 40260, set 40351, set 45023, set 71040, set 75901
+// 0 !KEYWORDS set 75904, set 853607
 // 
 // 0 !HISTORY 2016-03-18 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2017-07-04 [ejboer] File preparation for LDraw Parts Tracker

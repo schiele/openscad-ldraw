@@ -13,7 +13,8 @@ function ldraw_lib__3626cpna() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626cpb1888, Ninjago, Nya
+// 0 !KEYWORDS BrickLink 3626pb1888, Ninjago, Nya, Rebrickable 3626cpr9974
+// 0 !KEYWORDS set 30530
 // 
 // 0 !CMDLINE -c14
 // 

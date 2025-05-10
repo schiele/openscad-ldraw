@@ -15,7 +15,7 @@ function ldraw_lib__95831() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Figure Accessory, Friends
+// 0 !KEYWORDS BrickLink 93081d, Figure Accessory, Friends
 // 
 // 0 !HISTORY 2014-09-29 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2014-09-29 [Philo] File preparation for LDraw Parts Tracker

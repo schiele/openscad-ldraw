@@ -12,7 +12,7 @@ function ldraw_lib__3815bp6v() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !KEYWORDS Android, Invaders, UFO
+// 0 !KEYWORDS Android, Invaders, set 2543, UFO
 // 
 // 0 !HISTORY 2010-12-31 [BlackBrick89] Original pattern design
 // 0 !HISTORY 2020-05-30 [cwdee] Adapted to corrected geometry

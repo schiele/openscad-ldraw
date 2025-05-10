@@ -16,7 +16,7 @@ function ldraw_lib__3626bpha() = [
 // 
 // 0 !KEYWORDS Albus Dumbledore, BrickLink 3626pb0003, Harry Potter, Headmaster
 // 0 !KEYWORDS Hogwarts School of Witchcraft and Wizardry, professor
-// 0 !KEYWORDS Rebrickable 3626bpr0377
+// 0 !KEYWORDS Rebrickable 3626bpr0377, Set 4707
 // 
 // 0 !CMDLINE -C14
 // 

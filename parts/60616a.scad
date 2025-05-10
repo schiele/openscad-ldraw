@@ -22,7 +22,7 @@ function ldraw_lib__60616a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS glass
+// 0 !KEYWORDS BrickLink 60616, glass
 // 
 // 0 !HISTORY 2013-04-17 [MMR1988] Created by using the data of 60616b
 // 0 !HISTORY 2014-01-05 [bsupnik] corrected HELP comment on correct placement

@@ -12,9 +12,9 @@ function ldraw_lib__24093p03() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS Bricklink 24093pb052, Brickowl 846241, CMF, Ludvig, notes
-// 0 !KEYWORDS Rebrickable 24093pr0031, Rowlf The Dog, set 71033
-// 0 !KEYWORDS Sonata No.8 "Pathétique" 2nd Movement, The Muppets
+// 0 !KEYWORDS Bricklink 24093pb052, CMF, Ludvig, notes, Rebrickable 24093pr0031
+// 0 !KEYWORDS Rowlf The Dog, set 71033, Sonata No.8 "Pathétique" 2nd Movement
+// 0 !KEYWORDS The Muppets
 // 
 // 0 !HISTORY 2024-08-26 [OrionP] Official Update 2024-07
 // 

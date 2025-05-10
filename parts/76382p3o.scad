@@ -14,8 +14,8 @@ function ldraw_lib__76382p3o() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb0522c01, Brickowl 808590, bride, Grand Emporium
-// 0 !KEYWORDS Mannequin, Rebrickable 973c27h01pr1443, set 10211
+// 0 !KEYWORDS Bricklink 973pb0522c01, bride, Grand Emporium, Mannequin
+// 0 !KEYWORDS Rebrickable 973c27h01pr1443, set 10211
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

@@ -16,7 +16,8 @@ function ldraw_lib__44375bps0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Set 75192, Star Wars, UCS
+// 0 !KEYWORDS BrickLink 44375bpb08, Rebrickable 44375bpr0003, Set 75192, Star Wars
+// 0 !KEYWORDS UCS
 // 
 // 0 !HISTORY 2019-09-09 [PTadmin] Official Update 2019-02
 // 0 !HISTORY 2020-10-04 [cwdee] Update description

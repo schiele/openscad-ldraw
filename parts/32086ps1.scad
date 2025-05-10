@@ -11,7 +11,8 @@ function ldraw_lib__32086ps1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Emperor Palpatine, Star Wars, Tyderian
+// 0 !KEYWORDS BrickLink 551ps1, Emperor Palpatine, Rebrickable 32086pr0001
+// 0 !KEYWORDS set 7166, Star Wars, Tyderian
 // 
 // 0 !CMDLINE -c40
 // 

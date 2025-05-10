@@ -21,7 +21,7 @@ function ldraw_lib__32021p01c01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Barcode, Set 8479, Technic
+// 0 !KEYWORDS Barcode, BrickLink 32021c00, Rebrickable 32021, Set 8479, Technic
 // 
 // 0 !HISTORY 2015-12-30 [PTadmin] Official Update 2015-02
 // 

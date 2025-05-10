@@ -14,9 +14,9 @@ function ldraw_lib__3626bp6f() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS alligator woman, Astro, Astrobots, Bricklink 3626bpb0021, face
-// 0 !KEYWORDS green racer, lady, lipstick, Race, Sandy Moondust, set 6707
-// 0 !KEYWORDS set 6713
+// 0 !KEYWORDS alligator woman, Astro, Astrobots, BrickLink 3626pb0021, face
+// 0 !KEYWORDS green racer, lady, lipstick, Race, Rebrickable 3626bpr0036
+// 0 !KEYWORDS Sandy Moondust, set 6707, set 6713
 // 
 // 0 !CMDLINE -c14
 // 

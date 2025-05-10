@@ -13,7 +13,7 @@ function ldraw_lib__6135a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Technic Horn
+// 0 !KEYWORDS BrickLink 2536c, Rebrickable 2536c, Technic Horn
 // 
 // 0 !HISTORY 2022-05-07 [PTadmin] Official Update 2022-03
 // 

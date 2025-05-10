@@ -11,7 +11,7 @@ function ldraw_lib__3068bpg8() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS bricklink 3068pb17, Grocery, Set 3675
+// 0 !KEYWORDS BrickLink 3068pb2417, Grocery, Rebrickable 3068bpr9930, Set 3675
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
 // 

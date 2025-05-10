@@ -13,7 +13,7 @@ function ldraw_lib__2586p4m() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS BrickLink 2586pb006
+// 0 !KEYWORDS BrickLink 2586pb006, Rebrickable 2586pr0009, Set 40115
 // 
 // 0 !HISTORY 2020-06-28 [PTadmin] Official Update 2020-01
 // 

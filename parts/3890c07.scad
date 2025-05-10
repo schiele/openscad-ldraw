@@ -12,7 +12,7 @@ function ldraw_lib__3890c07() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS building, Wall
+// 0 !KEYWORDS BrickLink x636c02, building, Rebrickable fabupn0003c02, Wall
 // 
 // 0 !HISTORY 2014-08-27 [cwdee] Adjusted for re-worked window insert
 // 0 !HISTORY 2014-12-23 [PTadmin] Official Update 2014-02

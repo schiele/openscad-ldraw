@@ -15,7 +15,7 @@ function ldraw_lib__53500() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS bionicle, Piraka
+// 0 !KEYWORDS bionicle, BrickLink 54359, Piraka
 // 
 // 0 !HISTORY 2024-06-30 [OrionP] Official Update 2024-05
 // 

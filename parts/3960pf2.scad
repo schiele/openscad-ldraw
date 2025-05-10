@@ -14,7 +14,8 @@ function ldraw_lib__3960pf2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3960pb007, Set 6547, Wheel Of Fortune
+// 0 !KEYWORDS Bricklink 3960pb007, Rebrickable 3960pr9982, Set 6547
+// 0 !KEYWORDS Wheel Of Fortune
 // 
 // 0 !CMDLINE -c15
 // 

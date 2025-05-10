@@ -16,7 +16,8 @@ function ldraw_lib__u8009c() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Brick
-// 0 !KEYWORDS Automatic Binding Brick, Lego Mursten
+// 0 !KEYWORDS Automatic Binding Brick, BrickLink bslot16L, Lego Mursten
+// 0 !KEYWORDS Rebrickable upn0046b
 // 
 // 0 !HISTORY 2022-03-27 [MagFors] Studs without logo
 // 0 !HISTORY 2024-12-30 [OrionP] Official Update 2024-11

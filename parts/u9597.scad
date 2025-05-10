@@ -12,8 +12,8 @@ function ldraw_lib__u9597() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink x1161cx1, control, Optosensor, Set 1090, Set 1092
-// 0 !KEYWORDS Set 9700
+// 0 !KEYWORDS Bricklink x1161cx1, control, Optosensor, Rebrickable upn0178
+// 0 !KEYWORDS Set 1090, Set 1092, Set 9700
 // 
 // 0 !HISTORY 2024-05-28 [OrionP] Official Update 2024-04
 // 

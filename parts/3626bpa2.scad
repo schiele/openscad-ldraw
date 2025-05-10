@@ -14,10 +14,10 @@ function ldraw_lib__3626bpa2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS ancient, archeology, Bricklink 3626bpa2, Brickowl 773999, Cairo
-// 0 !KEYWORDS corpse, crypt, Egypt, egyptian, eyebrows, face, Giza, King Tut, Nile
-// 0 !KEYWORDS Pharaoh, pyramid, Rebrickable 3626bpr0046, ruins, scars, set 5958
-// 0 !KEYWORDS set 5978, set 5988, sutures, undead, walking dead
+// 0 !KEYWORDS ancient, archeology, BrickLink 3626pa2, Cairo, corpse, crypt, Egypt
+// 0 !KEYWORDS egyptian, eyebrows, face, Giza, King Tut, Nile, Pharaoh, pyramid
+// 0 !KEYWORDS Rebrickable 3626bpr0046, ruins, scars, set 5958, set 5978, set 5988
+// 0 !KEYWORDS sutures, undead, walking dead
 // 
 // 0 !CMDLINE -c7
 // 

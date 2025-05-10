@@ -12,7 +12,8 @@ function ldraw_lib__3660bp01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3660p01, set 6348, set 6395, set 6661, set 6951, Set 926
+// 0 !KEYWORDS Bricklink 3660p01, Rebrickable 3660pr0001, set 6348, set 6395
+// 0 !KEYWORDS set 6661, set 6951, Set 926
 // 
 // 0 !HISTORY 1999-02-01 [PTadmin] Official Update 1999-01
 // 0 !HISTORY 2001-11-23 [BrickCaster] New pattern with screen "text"

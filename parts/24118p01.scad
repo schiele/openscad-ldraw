@@ -12,7 +12,7 @@ function ldraw_lib__24118p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Porsche, set 42056
+// 0 !KEYWORDS BrickLink 24118pb001R, Porsche, Rebrickable 24118pr0002, set 42056
 // 
 // 0 !HISTORY 2018-01-30 [PTadmin] Official Update 2018-01
 // 

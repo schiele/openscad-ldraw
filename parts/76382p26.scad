@@ -14,15 +14,15 @@ function ldraw_lib__76382p26() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973p26c01, Brickowl 934880, Rebrickable 973c28h01pr0026
-// 0 !KEYWORDS Set 10041, Set 105, Set 106, Set 1064, set 1066, Set 1067, Set 107
-// 0 !KEYWORDS Set 1552, Set 1682, Set 1772, Set 1773, Set 1876, Set 1966, Set 361
-// 0 !KEYWORDS Set 381, Set 4015, Set 542, Set 588, Set 6002, Set 6302, Set 6383
-// 0 !KEYWORDS Set 6390, set 6395, set 646, Set 6606, Set 6628, Set 6630, Set 6645
-// 0 !KEYWORDS Set 6652, Set 6686, Set 6692, Set 6693, Set 6697, set 7710, Set 7715
-// 0 !KEYWORDS set 7720, set 7722, Set 7727, Set 7730, Set 7735, Set 7750, Set 7755
-// 0 !KEYWORDS Set 7810, Set 7814, Set 7817, Set 7820, Set 7821, Set 7822, Set 7823
-// 0 !KEYWORDS Set 7824, Set 7838, Set 7866, Set 9354, Set 9356
+// 0 !KEYWORDS Bricklink 973p26c01, Rebrickable 973c28h01pr0026, Set 10041, Set 105
+// 0 !KEYWORDS Set 106, Set 1064, set 1066, Set 1067, Set 107, Set 1552, Set 1682
+// 0 !KEYWORDS Set 1772, Set 1773, Set 1876, Set 1966, Set 361, Set 381, Set 4015
+// 0 !KEYWORDS Set 542, Set 588, Set 6002, Set 6302, Set 6383, Set 6390, set 6395
+// 0 !KEYWORDS set 646, Set 6606, Set 6628, Set 6630, Set 6645, Set 6652, Set 6686
+// 0 !KEYWORDS Set 6692, Set 6693, Set 6697, set 7710, Set 7715, set 7720, set 7722
+// 0 !KEYWORDS Set 7727, Set 7730, Set 7735, Set 7750, Set 7755, Set 7810, Set 7814
+// 0 !KEYWORDS Set 7817, Set 7820, Set 7821, Set 7822, Set 7823, Set 7824, Set 7838
+// 0 !KEYWORDS Set 7866, Set 9354, Set 9356
 // 
 // 0 !HISTORY 2024-12-30 [OrionP] Official Update 2024-11
 // 

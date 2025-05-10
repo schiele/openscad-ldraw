@@ -11,7 +11,8 @@ function ldraw_lib__3068bp32() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Atlantis, Pirates
+// 0 !KEYWORDS Atlantis, BrickLink 3068pb0315, Pirates, Rebrickable 3068bpr0167
+// 0 !KEYWORDS Set 3817
 // 
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
 // 

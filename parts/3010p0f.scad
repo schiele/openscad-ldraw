@@ -12,7 +12,8 @@ function ldraw_lib__3010p0f() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Mother with baby, Set 208-1
+// 0 !KEYWORDS BrickLink 3010pb018, Mother with baby, Rebrickable 3010pr9951
+// 0 !KEYWORDS Set 208-1
 // 
 // 0 !HISTORY 2020-06-28 [PTadmin] Official Update 2020-01
 // 

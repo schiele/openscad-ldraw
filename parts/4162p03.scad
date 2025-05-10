@@ -11,7 +11,8 @@ function ldraw_lib__4162p03() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Architecture, Frank Lloyd Wright, Set 21005
+// 0 !KEYWORDS Architecture, BrickLink 4162pb023, Frank Lloyd Wright
+// 0 !KEYWORDS Rebrickable 4162pr0003, Set 21005
 // 
 // 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01
 // 

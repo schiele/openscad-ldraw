@@ -15,8 +15,8 @@ function ldraw_lib__19206p03() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Bricklink 19206pb03, Brickowl 74962, Lumia, Rebrickable 19206pr0003
-// 0 !KEYWORDS Set 41193, Set 41196
+// 0 !KEYWORDS Bricklink 19206pb03, Lumia, Rebrickable 19206pr0003, Set 41193
+// 0 !KEYWORDS Set 41196
 // 
 // 0 !HISTORY 2018-01-28 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2024-07-23 [LisaWinter] File preparation for LDraw Parts Tracker

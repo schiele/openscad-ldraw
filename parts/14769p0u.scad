@@ -12,8 +12,8 @@ function ldraw_lib__14769p0u() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS barrel lid, Bricklink 14769pb640, cask end, Coiled, Sea Serpent
-// 0 !KEYWORDS Set 21343, Viking Village
+// 0 !KEYWORDS barrel lid, Bricklink 14769pb640, cask end, Coiled
+// 0 !KEYWORDS Rebrickable 14769pr1283, Sea Serpent, Set 21343, Viking Village
 // 
 // 0 !HISTORY 2024-01-29 [OrionP] Official Update 2024-01
 // 

@@ -21,8 +21,8 @@ function ldraw_lib__11640p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS Bricklink 11640pb01, Set 41004, Set 41005, Set 41105, Set 561509
-// 0 !KEYWORDS Stage, Stephanie
+// 0 !KEYWORDS Bricklink 11640pb01, Rebrickable 11640pr0001, Set 41004, Set 41005
+// 0 !KEYWORDS Set 41105, Set 561509, Stage, Stephanie
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
 // 

@@ -12,6 +12,7 @@ function ldraw_lib__2454aph0() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS Bricklink 2454pb001, Castle, Harry, Hogwarts, Potter
+// 0 !KEYWORDS Rebrickable 2454apr0002, set 4709
 // 
 // 0 !HISTORY 2019-12-27 [PTadmin] Official Update 2019-03
 // 0 !HISTORY 2020-09-04 [PTadmin] Renamed from 2454ph0

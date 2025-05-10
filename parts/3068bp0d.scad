@@ -16,7 +16,8 @@ function ldraw_lib__3068bp0d() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS 3068bpb0683, Set 21303, Wall-E
+// 0 !KEYWORDS 3068bpb0683, BrickLink 3068pb0683, Rebrickable 3068bpr0279
+// 0 !KEYWORDS Set 21303, Wall-E
 // 
 // 0 !HISTORY 2017-07-30 [Darats] Use primitives
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01

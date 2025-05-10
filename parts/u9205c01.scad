@@ -15,6 +15,7 @@ function ldraw_lib__u9205c01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Vehicle
+// 0 !KEYWORDS BrickLink fabac1, Rebrickable fabupn0031
 // 
 // 0 !HISTORY 2012-12-28 [PTadmin] Official Update 2012-03
 // 

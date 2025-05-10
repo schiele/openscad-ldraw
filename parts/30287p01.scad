@@ -15,7 +15,7 @@ function ldraw_lib__30287p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Arctic, BrickLink x205px1, parka, Rebrickable 30287pr0005
+// 0 !KEYWORDS Arctic, BrickLink x205px1, parka, Rebrickable 30287pr0005, Set 10067
 // 
 // 0 !HISTORY 2008-12-20 {LEGO Universe Team} Original part shape
 // 0 !HISTORY 2009-05-08 [westrate] File preparation for LDraw Parts

@@ -15,9 +15,9 @@ function ldraw_lib__4493pw1c00() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS american native, Bricklink 4493c01px3, Brickowl 98318, indian
-// 0 !KEYWORDS LEGO ID 73392, Rebrickable 4493c01pr0005, set 6718, set 6748
-// 0 !KEYWORDS set 6763, set 6766, western, wild west
+// 0 !KEYWORDS american native, Bricklink 4493c01px3, indian, LEGO ID 73392
+// 0 !KEYWORDS Rebrickable 4493c01pr0005, set 6718, set 6748, set 6763, set 6766
+// 0 !KEYWORDS western, wild west
 // 
 // 0 !HISTORY 2020-06-28 [PTadmin] Official Update 2020-01
 // 0 !HISTORY 2025-02-07 [Holly-Wood] Sanded description, added keywords

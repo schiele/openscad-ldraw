@@ -14,7 +14,7 @@ function ldraw_lib__57467() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS Blade, harpoon, rod system, Spear, Weapon
+// 0 !KEYWORDS Blade, BrickLink 57467a, harpoon, rod system, Spear, Weapon
 // 
 // 0 !CMDLINE -c383
 // 

@@ -18,9 +18,9 @@ function ldraw_lib__73200bpa2() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS Adventurers, ancient, archeology, barefeet, barefoot
-// 0 !KEYWORDS Bricklink 970c11pb01, Brickowl 370051, Cairo, crypt, Egypt, egyptian
-// 0 !KEYWORDS folded, folds, Giza, loincloth, mummy, Nile, Pharaoh Hotep, pleated
-// 0 !KEYWORDS pleats, pyramid, Rebrickable 970c03pr0004, ruins, set 1183, set 2996
+// 0 !KEYWORDS Bricklink 970c11pb01, Cairo, crypt, Egypt, egyptian, folded, folds
+// 0 !KEYWORDS Giza, loincloth, mummy, Nile, Pharaoh Hotep, pleated, pleats
+// 0 !KEYWORDS pyramid, Rebrickable 970c03pr0004, ruins, set 1183, set 2996
 // 0 !KEYWORDS set 3021, set 5958, set 5978, set 5988, skirt, wrap
 // 
 // 0 !CMDLINE -c0

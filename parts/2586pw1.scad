@@ -12,7 +12,8 @@ function ldraw_lib__2586pw1() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS Brave, Feather, Native American, Warrior, wild west
+// 0 !KEYWORDS Brave, Feather, Native American, Rebrickable 2586pr0027, set 2845
+// 0 !KEYWORDS Warrior, wild west
 // 
 // 0 !CMDLINE -c487
 // 

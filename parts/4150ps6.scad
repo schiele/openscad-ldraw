@@ -15,6 +15,8 @@ function ldraw_lib__4150ps6() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS Rebrickable 4150pr0005, Set 10215
+// 
 // 0 !CMDLINE -c15
 // 
 // 0 !HISTORY 2002-12-17 [mschild] Revision

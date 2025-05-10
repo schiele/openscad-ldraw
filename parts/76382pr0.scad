@@ -14,9 +14,9 @@ function ldraw_lib__76382pr0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Anakin Skywalker, Boonta Eve, Bricklink 973px82ac01, BrickOwl 63640
-// 0 !KEYWORDS Episode I, Mos Espa, Naboo, pod racer, Rebrickable 973c26h01pr0082
-// 0 !KEYWORDS Set 7131, set 7141, set 7159, Set 7171, Star Wars, Tatooine
+// 0 !KEYWORDS Anakin Skywalker, Boonta Eve, Bricklink 973px82ac01, Episode I
+// 0 !KEYWORDS Mos Espa, Naboo, pod racer, Rebrickable 973c26h01pr0082, Set 7131
+// 0 !KEYWORDS set 7141, set 7159, Set 7171, Star Wars, Tatooine
 // 0 !KEYWORDS The Phantom Menace
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02

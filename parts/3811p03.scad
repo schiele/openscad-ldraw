@@ -32,6 +32,8 @@ function ldraw_lib__3811p03() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
+// 0 !KEYWORDS BrickLink 3811px1, Rebrickable 3811pr0003, Set 6411
+// 
 // 0 !HISTORY 2009-05-02 [PTadmin] Official Update 2009-01
 // 0 !HISTORY 2015-06-20 [MagFors] Removed dithered colour, T-junctions
 // 0 !HISTORY 2015-12-30 [PTadmin] Official Update 2015-02

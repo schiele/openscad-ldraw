@@ -16,7 +16,7 @@ function ldraw_lib__30480() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS C3-PO, C3PO, Star Wars
+// 0 !KEYWORDS BrickLink x134, C3-PO, C3PO, Star Wars
 // 
 // 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02
 // 0 !HISTORY 2015-01-26 [Gargan] Updated to allow patterning of eyes

@@ -11,8 +11,9 @@ function ldraw_lib__86210p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS detective's, font Hand Shop Typography C30 and C32, office
-// 0 !KEYWORDS set 10246
+// 0 !KEYWORDS BrickLink 60603pb004, detective's
+// 0 !KEYWORDS font Hand Shop Typography C30 and C32, office
+// 0 !KEYWORDS Rebrickable 60603pr0002, set 10246
 // 
 // 0 !HISTORY 2020-06-28 [PTadmin] Official Update 2020-01
 // 

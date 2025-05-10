@@ -14,9 +14,9 @@ function ldraw_lib__76382pbp() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS bodysuit, Bricklink 973pb2434c01, BrickOwl 528259, Marvel
-// 0 !KEYWORDS Mayday Parker, Mini Upper Part No 3494, Rebrickable 973c22h27pr3494
-// 0 !KEYWORDS Set 76057, Spider-Man, Super Heroes, Web Warriors, Wraparound
+// 0 !KEYWORDS bodysuit, Bricklink 973pb2434c01, Marvel, Mayday Parker
+// 0 !KEYWORDS Mini Upper Part No 3494, Rebrickable 973c22h27pr3494, Set 76057
+// 0 !KEYWORDS Spider-Man, Super Heroes, Web Warriors, Wraparound
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

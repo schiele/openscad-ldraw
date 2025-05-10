@@ -14,7 +14,8 @@ function ldraw_lib__3068bp0n() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3068bpb1030, Dimensions, E.T., Set 71258
+// 0 !KEYWORDS BrickLink 3068pb1030, Dimensions, E.T., Rebrickable 3068bpr0306
+// 0 !KEYWORDS Set 71258
 // 
 // 0 !HISTORY 2024-12-01 [OrionP] Official Update 2024-10
 // 

@@ -13,7 +13,7 @@ function ldraw_lib__2682a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Fern, Jagged
+// 0 !KEYWORDS BrickLink 2682, Fern, Jagged, Rebrickable 2682
 // 
 // 0 !HISTORY 2023-04-27 {LEGO Instructions App} Original part shape
 // 0 !HISTORY 2023-05-01 [Philo] File preparation for LDraw Parts Tracker

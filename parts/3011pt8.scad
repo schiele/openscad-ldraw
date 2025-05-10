@@ -12,7 +12,7 @@ function ldraw_lib__3011pt8() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Brick
-// 0 !KEYWORDS bricklink 3011px8, set 082, set 524, town
+// 0 !KEYWORDS bricklink 3011px8, Rebrickable 3011pr9996, set 082, set 524, town
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
 // 

@@ -14,7 +14,7 @@ function ldraw_lib__61100() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Technic
-// 0 !KEYWORDS Power Functions
+// 0 !KEYWORDS BrickLink 61100c01, Power Functions, Rebrickable 61100c01
 // 
 // 0 !HISTORY 2010-07-05 [PTadmin] Official Update 2010-02
 // 0 !HISTORY 2019-08-31 [cwdee] Use body assembly

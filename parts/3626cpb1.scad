@@ -15,8 +15,8 @@ function ldraw_lib__3626cpb1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Batman, Bricklink 3626cpb0637, Set 6860, Set 71200, Set 76001
-// 0 !KEYWORDS Set 76139, Set 76158
+// 0 !KEYWORDS Batman, BrickLink 3626pb0637, Rebrickable 3626cpr0896, Set 6860
+// 0 !KEYWORDS Set 71200, Set 76001, Set 76139, Set 76158
 // 
 // 0 !HISTORY 2023-10-31 [OrionP] Official Update 2023-05
 // 

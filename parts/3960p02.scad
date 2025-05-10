@@ -13,7 +13,8 @@ function ldraw_lib__3960p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS hypno-disk, Radar Dish, Round, Space, Time Twisters, whirlpool
+// 0 !KEYWORDS hypno-disk, Radar Dish, Rebrickable 3960pr9989, Round, Set 6496
+// 0 !KEYWORDS Space, Time Twisters, whirlpool
 // 
 // 0 !CMDLINE -c1
 // 

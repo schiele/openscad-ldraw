@@ -11,7 +11,8 @@ function ldraw_lib__2431pze() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickheadz, BrickLink 2431pb517, Frozone, Incredibles, Set 41613
+// 0 !KEYWORDS Brickheadz, BrickLink 2431pb517, Frozone, Incredibles
+// 0 !KEYWORDS Rebrickable 2431pr0125, Set 41613
 // 
 // 0 !HISTORY 2019-12-27 [PTadmin] Official Update 2019-03
 // 

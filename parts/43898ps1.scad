@@ -13,7 +13,7 @@ function ldraw_lib__43898ps1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 43898pb005, Set 75090, Star Wars
+// 0 !KEYWORDS Bricklink 43898pb005, Rebrickable 43898pr1001, Set 75090, Star Wars
 // 
 // 0 !HISTORY 2019-05-31 [GeraldLasser] Adapted for 48 Segment Primitives
 // 0 !HISTORY 2020-06-28 [PTadmin] Official Update 2020-01

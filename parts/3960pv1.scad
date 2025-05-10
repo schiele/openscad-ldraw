@@ -13,7 +13,8 @@ function ldraw_lib__3960pv1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3960pb015, Round, Set 7018, Set 7019, Set 7020
+// 0 !KEYWORDS Bricklink 3960pb015, Rebrickable 3960pr0003, Round, Set 7018
+// 0 !KEYWORDS Set 7019, Set 7020
 // 
 // 0 !HISTORY 2009-12-29 [PTadmin] Official Update 2009-03
 // 0 !HISTORY 2010-05-09 [cwdee] Remove CATEGORY Round

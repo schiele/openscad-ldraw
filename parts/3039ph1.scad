@@ -11,7 +11,7 @@ function ldraw_lib__3039ph1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Harry Potter
+// 0 !KEYWORDS BrickLink 3039pb026, Harry Potter, Rebrickable 3039pr9966, Set 10132
 // 
 // 0 !HISTORY 2013-07-21 [PTadmin] Official Update 2013-01
 // 

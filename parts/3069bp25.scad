@@ -15,7 +15,8 @@ function ldraw_lib__3069bp25() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS burst, button, buttons, controls, dial, display, Space, starburst
+// 0 !KEYWORDS BrickLink 3069p25, burst, button, buttons, controls, dial, display
+// 0 !KEYWORDS Rebrickable 3069bpr0039, Set 1507, Space, starburst
 // 
 // 0 !HISTORY 2000-12-18 [fwcain] Replaced pattern polygons with primitives and lines with quads
 // 0 !HISTORY 2002-04-25 [PTadmin] Official Update 2002-02

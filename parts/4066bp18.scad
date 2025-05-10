@@ -16,7 +16,8 @@ function ldraw_lib__4066bp18() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Brick
-// 0 !KEYWORDS bricklink 4066pb072, police, Set 2451, Set 2672, Set 9165, Traffic
+// 0 !KEYWORDS bricklink 4066pb072, police, Rebrickable 4066pr0134, Set 2451
+// 0 !KEYWORDS Set 2672, Set 9165, Traffic
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives

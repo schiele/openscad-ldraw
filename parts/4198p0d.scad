@@ -13,7 +13,8 @@ function ldraw_lib__4198p0d() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Brick
-// 0 !KEYWORDS Bird, bricklink 4198pb21, feet, Set 1664, wings
+// 0 !KEYWORDS Bird, bricklink 4198pb21, feet, Rebrickable 4198pr9997, Set 1664
+// 0 !KEYWORDS wings
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 0 !HISTORY 2021-01-22 [cwdee] Update description

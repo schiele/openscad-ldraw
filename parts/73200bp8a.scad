@@ -13,8 +13,8 @@ function ldraw_lib__73200bp8a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Barista, Bricklink 970c55pb05b, Brickowl 838550
-// 0 !KEYWORDS Rebrickable 970c24pr0900, Set 10255, Set 10297, Set 21325
+// 0 !KEYWORDS Barista, BrickLink 970c55pb05, Rebrickable 970c24pr0900, Set 10255
+// 0 !KEYWORDS Set 10297, Set 21325
 // 
 // 0 !HISTORY 2023-06-24 [OrionP] Official Update 2023-03
 // 

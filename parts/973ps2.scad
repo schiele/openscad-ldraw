@@ -12,7 +12,8 @@ function ldraw_lib__973ps2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Classic Trilogy, Luke Skywalker, Return of the Jedi, Star Wars
+// 0 !KEYWORDS Classic Trilogy, Luke Skywalker, Return of the Jedi, Set 3341
+// 0 !KEYWORDS Star Wars
 // 
 // 0 !HISTORY 2002-04-02 [fwcain] added keywords; convert to color-16; added neck-mark...
 // 0 !HISTORY 2002-05-27 [mschild] fixed overlaps

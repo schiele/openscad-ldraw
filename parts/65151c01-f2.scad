@@ -12,6 +12,8 @@ function ldraw_lib__65151c01_f2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 65151c01, Rebrickable 65151c01
+// 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
 // 0 !HISTORY 2023-10-11 [OrionP] Moved from 65151-f2.dat
 // 0 !HISTORY 2024-08-26 [OrionP] Official Update 2024-07

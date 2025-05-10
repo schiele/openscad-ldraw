@@ -12,7 +12,7 @@ function ldraw_lib__973p4c() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS BrickLink 973px117, Castle, Kingdoms, knight
+// 0 !KEYWORDS BrickLink 973px117, Castle, Kingdoms, knight, Set 3739
 // 
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
 // 

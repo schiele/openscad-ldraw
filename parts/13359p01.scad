@@ -19,6 +19,7 @@ function ldraw_lib__13359p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Train
+// 0 !KEYWORDS BrickLink 13359pb01, Rebrickable 13359pr0001, Set 10506
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
 // 0 !HISTORY 2021-01-19 [Philo] Improved shape

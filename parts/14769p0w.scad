@@ -13,7 +13,8 @@ function ldraw_lib__14769p0w() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 14769pb655, Ideas, Polaroid, Set 21345
+// 0 !KEYWORDS Bricklink 14769pb655, Ideas, Polaroid, Rebrickable 14769pr1291
+// 0 !KEYWORDS Set 21345
 // 
 // 0 !HISTORY 2024-01-29 [OrionP] Official Update 2024-01
 // 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives

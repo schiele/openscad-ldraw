@@ -12,9 +12,8 @@ function ldraw_lib__6216b() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 6216m2, Brickowl 271048, Rebrickable 6216b, set, Set 1032
-// 0 !KEYWORDS Set 1092, set 5101, Set 8050, Set 8054, Set 8055, Set 8700, Set 9605
-// 0 !KEYWORDS Set 9700
+// 0 !KEYWORDS Bricklink 6216m2, set, Set 1032, Set 1092, set 5101, Set 8050
+// 0 !KEYWORDS Set 8054, Set 8055, Set 8700, Set 9605, Set 9700
 // 
 // 0 !HISTORY 2024-09-30 [OrionP] Official Update 2024-08
 // 

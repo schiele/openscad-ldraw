@@ -11,8 +11,8 @@ function ldraw_lib__4740p03() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 4740pb011, Set 70170, Set 70172, Set 70349, Set 71228
-// 0 !KEYWORDS Set 76073
+// 0 !KEYWORDS Bricklink 4740pb011, Rebrickable 4740pr0004, Set 70170, Set 70172
+// 0 !KEYWORDS Set 70349, Set 71228, Set 76073
 // 
 // 0 !CMDLINE -c52
 // 

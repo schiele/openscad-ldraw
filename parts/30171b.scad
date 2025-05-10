@@ -16,8 +16,9 @@ function ldraw_lib__30171b() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS 90510, Adventurers, Alpha Team, barnstormer, hat, helmet, Mos Espa
-// 0 !KEYWORDS Naboo fighter, pilot, pod race, skullcap, Star Wars
+// 0 !KEYWORDS 90510, Adventurers, Alpha Team, barnstormer, BrickLink 30171, hat
+// 0 !KEYWORDS helmet, Mos Espa, Naboo fighter, pilot, pod race, Rebrickable 30171
+// 0 !KEYWORDS skullcap, Star Wars
 // 
 // 0 !HISTORY 2016-03-18 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2024-07-18 [MagFors] File preparation for LDraw Parts Tracker

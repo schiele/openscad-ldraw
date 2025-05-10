@@ -13,7 +13,8 @@ function ldraw_lib__20546p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS Bart Simpson, Catapult, Dewey, Weapon
+// 0 !KEYWORDS Bart Simpson, BrickLink 19900pb03, Catapult, Dewey
+// 0 !KEYWORDS Rebrickable 19900pr0001, Set 71037-12, Weapon
 // 
 // 0 !HISTORY 2019-09-09 [PTadmin] Official Update 2019-02
 // 

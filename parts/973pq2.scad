@@ -12,7 +12,7 @@ function ldraw_lib__973pq2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Anubis Guard, Pharaoh's Quest
+// 0 !KEYWORDS Anubis Guard, Pharaoh's Quest, Set 7327
 // 
 // 0 !CMDLINE -c0
 // 

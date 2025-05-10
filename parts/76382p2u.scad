@@ -14,8 +14,8 @@ function ldraw_lib__76382p2u() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb2286c01, BrickOwl 375297, Dimensions, Ghostbusters
-// 0 !KEYWORDS Gozer, Marshmallow Man, Mascot, Rebrickable 973c27h27pr3077, sailor
+// 0 !KEYWORDS Bricklink 973pb2286c01, Dimensions, Ghostbusters, Gozer
+// 0 !KEYWORDS Marshmallow Man, Mascot, Rebrickable 973c27h27pr3077, sailor
 // 0 !KEYWORDS Set 71233, Stay Puft
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02

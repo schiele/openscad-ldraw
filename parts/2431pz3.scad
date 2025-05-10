@@ -11,7 +11,8 @@ function ldraw_lib__2431pz3() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickheadz, BrickLink 2431pb469, Captain Jack Sparrow, Set 41593
+// 0 !KEYWORDS Brickheadz, BrickLink 2431pb469, Captain Jack Sparrow
+// 0 !KEYWORDS Rebrickable 2431pr0095, Set 41593
 // 
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
 // 

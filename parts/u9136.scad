@@ -6,7 +6,7 @@ function ldraw_lib__u9136() = [
 // 0 ~Electric Cable 3LDU Twin End for Plug Twin Extra-Wide
 // 0 Name: u9136.dat
 // 0 Author: Steffen [Steffen]
-// 0 !LDRAW_ORG Subpart UPDATE 2022-03
+// 0 !LDRAW_ORG Part UPDATE 2022-03
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW

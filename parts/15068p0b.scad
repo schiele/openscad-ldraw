@@ -11,8 +11,8 @@ function ldraw_lib__15068p0b() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Blooper, Bricklink 15068pb280, Character Pack Series 1, Set 71361
-// 0 !KEYWORDS Super Mario
+// 0 !KEYWORDS Blooper, Bricklink 15068pb280, Character Pack Series 1
+// 0 !KEYWORDS Rebrickable 15068pr9997, Set 71361, Super Mario
 // 
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04
 // 

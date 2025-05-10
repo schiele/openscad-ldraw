@@ -15,8 +15,8 @@ function ldraw_lib__98138p81() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Beetle, Bricklink 98138pb058, Brickowl 756756
-// 0 !KEYWORDS Rebrickable 98138pr0057, set 10252, Volkswagen
+// 0 !KEYWORDS Beetle, Bricklink 98138pb058, Rebrickable 98138pr0057, set 10252
+// 0 !KEYWORDS Volkswagen
 // 
 // 0 !HISTORY 2016-12-31 [PTadmin] Official Update 2016-01
 // 0 !HISTORY 2024-06-27 [GeraldLasser] Used Prims

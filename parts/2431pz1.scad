@@ -13,7 +13,8 @@ function ldraw_lib__2431pz1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickheadz, BrickLink 2431pb458, Set 41588, The Joker
+// 0 !KEYWORDS Brickheadz, BrickLink 2431pb458, Rebrickable 2431pr0094, Set 41588
+// 0 !KEYWORDS The Joker
 // 
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
 // 

@@ -12,7 +12,7 @@ function ldraw_lib__19859p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 19859pb03, Set 71042
+// 0 !KEYWORDS Bricklink 19859pb03, Rebrickable 19859pat0004, Set 71042
 // 
 // 0 !HISTORY 2016-03-18 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2016-03-18 [MagFors] File preparation for LDraw Parts Tracker

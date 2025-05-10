@@ -14,10 +14,9 @@ function ldraw_lib__76382ps7() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973ps7c01, BrickOwl 353324, Darth Vader
-// 0 !KEYWORDS Mini Upper Part No 371, Original Trilogy
-// 0 !KEYWORDS Rebrickable 973c03h03pr0007, set 10123, Set 3340, set 7150, Set 7152
-// 0 !KEYWORDS Set 7200, sith, Sith Lord, Star Wars
+// 0 !KEYWORDS Bricklink 973ps7c01, Darth Vader, Mini Upper Part No 371
+// 0 !KEYWORDS Original Trilogy, Rebrickable 973c03h03pr0007, set 10123, Set 3340
+// 0 !KEYWORDS set 7150, Set 7152, Set 7200, sith, Sith Lord, Star Wars
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

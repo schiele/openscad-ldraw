@@ -13,8 +13,8 @@ function ldraw_lib__18603c02p0n() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bad Cop, Bricklink 18605c01pb30, Brickowl 765308, Dimensions
-// 0 !KEYWORDS Electronic, NFC, Rebrickable 19981pr0030, Set 71213, Toy Tag
+// 0 !KEYWORDS Bad Cop, Bricklink 18605c01pb30, Dimensions, Electronic, NFC
+// 0 !KEYWORDS Rebrickable 19981pr0030, Set 71213, Toy Tag
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

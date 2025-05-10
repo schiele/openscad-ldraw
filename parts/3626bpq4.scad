@@ -14,8 +14,8 @@ function ldraw_lib__3626bpq4() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626bpb0531, Brickowl 1204, Pharaoh's Quest
-// 0 !KEYWORDS Professor Archibald Hale, Rebrickable 3626bpr0757, Set 7327
+// 0 !KEYWORDS BrickLink 3626pb0531, Pharaoh's Quest, Professor Archibald Hale
+// 0 !KEYWORDS Rebrickable 3626bpr0757, Set 7327
 // 
 // 0 !CMDLINE -c14
 // 

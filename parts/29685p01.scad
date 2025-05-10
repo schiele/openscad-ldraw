@@ -14,7 +14,7 @@ function ldraw_lib__29685p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Rabbit
+// 0 !KEYWORDS BrickLink 29685pb01, Rabbit, Rebrickable 29685pr0001, Set 10264
 // 
 // 0 !HISTORY 2018-01-28 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2019-05-20 [Philo] File preparation for LDraw Parts Tracker

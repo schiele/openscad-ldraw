@@ -14,8 +14,9 @@ function ldraw_lib__45755p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Bricklink 45755pb01, Brickset 49391, Collectible Minifigures
-// 0 !KEYWORDS The LEGO Movie 2, Watermelon Dude
+// 0 !KEYWORDS Bricklink 45755pb01, Collectible Minifigures
+// 0 !KEYWORDS Rebrickable 45755pr0014, Set 71023-8, The LEGO Movie 2
+// 0 !KEYWORDS Watermelon Dude
 // 
 // 0 !HISTORY 2020-06-28 [PTadmin] Official Update 2020-01
 // 

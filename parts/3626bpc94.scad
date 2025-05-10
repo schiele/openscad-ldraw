@@ -13,7 +13,8 @@ function ldraw_lib__3626bpc94() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626bpb0837, Cyclops, Series 9
+// 0 !KEYWORDS BrickLink 3626pb0837, Cyclops, Rebrickable 3626bpr1066, Series 9
+// 0 !KEYWORDS Set 71000
 // 
 // 0 !CMDLINE -c330
 // 

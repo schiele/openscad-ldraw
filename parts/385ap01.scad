@@ -16,8 +16,8 @@ function ldraw_lib__385ap01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink bb0160pb01, Brickowl 951459, Peeron x1460px1
-// 0 !KEYWORDS Rebrickable upn0187pr0001, Set 078-1, Set 271-3, set 367-2
+// 0 !KEYWORDS Bricklink bb0160pb01, Peeron x1460px1, Rebrickable upn0187pr0001
+// 0 !KEYWORDS Set 078-1, Set 271-3, set 367-2
 // 
 // 0 !HISTORY 2024-06-30 [OrionP] Official Update 2024-05
 // 

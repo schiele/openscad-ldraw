@@ -13,7 +13,8 @@ function ldraw_lib__10172p01() = [
 // 
 // 0 !CATEGORY Minifig Accessory
 // 0 !KEYWORDS award, Bricklink 10172pb001, Collectible Minifigures
-// 0 !KEYWORDS Dog Show Winner, prize, Series 16, Set 71013
+// 0 !KEYWORDS Dog Show Winner, prize, Rebrickable 10172pr0001, Series 16
+// 0 !KEYWORDS Set 71013
 // 
 // 0 !HISTORY 2022-09-15 [PTadmin] Official Update 2022-05
 // 

@@ -14,8 +14,8 @@ function ldraw_lib__76382pm8() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Attack on Weathertop, Bricklink 973pb1138c01, BrickOwl 320910
-// 0 !KEYWORDS Hobbit, Lord of the Rings, Meriadoc Brandybuck, Merry
+// 0 !KEYWORDS Attack on Weathertop, Bricklink 973pb1138c01, Hobbit
+// 0 !KEYWORDS Lord of the Rings, Meriadoc Brandybuck, Merry
 // 0 !KEYWORDS Mini Upper Part No 2076, Rebrickable 973c35h02pr2076, set 9472
 // 0 !KEYWORDS The Fellowship
 // 

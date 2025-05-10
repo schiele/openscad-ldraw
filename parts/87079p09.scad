@@ -17,18 +17,21 @@ function ldraw_lib__87079p09() = [
 // 0 Tile  2 x  4 with Warning Triangle and Minifigure Head with Construction Helmet Pattern
 // 0 Name: 87079p09.dat
 // 0 Author: Bjoern Sigve Storesund [Storesund]
-// 0 !LDRAW_ORG Part UPDATE 2024-02
+// 0 !LDRAW_ORG Part UPDATE 2025-04
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS BrickLink 87079pb404, Road Worker, Set 10734, Set 30357
+// 0 !KEYWORDS Bricklink 87079pb0404, Rebrickable 87079pr0113, Road Worker
+// 0 !KEYWORDS Set 10734, Set 30357
 // 
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
 // 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
 // 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
+// 0 !HISTORY 2025-03-16 [Lego-Manfred] References added
+// 0 !HISTORY 2025-04-27 [OrionP] Official Update 2025-04
 // 
 // 1 0 -11 0 0 1.5 0 0 0 1 0 0 0 2.5 4-4disc.dat
   [1,0,-11,0,0,1.5,0,0,0,1,0,0,0,2.5, ldraw_lib__4_4disc()],

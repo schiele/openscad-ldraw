@@ -14,7 +14,7 @@ function ldraw_lib__76382pm6() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Armor, Bricklink 973pb1137c01, BrickOwl 751921, Lord of the Rings
+// 0 !KEYWORDS Armor, Bricklink 973pb1137c01, Lord of the Rings
 // 0 !KEYWORDS Mini Upper Part No 2058, Rebrickable 973c35h02pr2058, Rohan Soldier
 // 0 !KEYWORDS set 9471, Uruk-Hai Army
 // 

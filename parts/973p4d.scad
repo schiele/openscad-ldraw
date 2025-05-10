@@ -13,7 +13,7 @@ function ldraw_lib__973p4d() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Castle, Coat of Arms, King Richard, Lion
+// 0 !KEYWORDS Castle, Coat of Arms, King Richard, Lion, Set 1752
 // 
 // 0 !HISTORY 2002-04-25 [PTadmin] Official Update 2002-02
 // 0 !HISTORY 2007-07-29 [PTadmin] Header formatted for Contributor Agreement

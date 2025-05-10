@@ -12,6 +12,8 @@ function ldraw_lib__3822p03() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS Rebrickable 3822pr0003, Set 6357
+// 
 // 0 !HISTORY 2002-12-31 [PTadmin] Official Update 2002-06
 // 0 !HISTORY 2003-01-30 [sbliss] reconfigured subfile
 // 0 !HISTORY 2003-07-06 [Steffen] fixed typo "sstud.dat" --> "stud.dat"

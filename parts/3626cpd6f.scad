@@ -15,7 +15,8 @@ function ldraw_lib__3626cpd6f() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Batman Movie, Bricklink 3626cpb1727, Zodiac Man
+// 0 !KEYWORDS Batman Movie, BrickLink 3626pb1727, Rebrickable 3626cpr2154
+// 0 !KEYWORDS Set 71017-15, Zodiac Man
 // 
 // 0 !CMDLINE -c73
 // 

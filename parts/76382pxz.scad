@@ -14,8 +14,8 @@ function ldraw_lib__76382pxz() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Beetlejuice, Bricklink 973pb2840c01, Brickowl 91606
-// 0 !KEYWORDS Rebrickable 973c27h27pr3902, Set 71349
+// 0 !KEYWORDS Beetlejuice, Bricklink 973pb2840c01, Rebrickable 973c27h27pr3902
+// 0 !KEYWORDS Set 71349
 // 
 // 0 !HISTORY 2024-10-27 [OrionP] Official Update 2024-09
 // 

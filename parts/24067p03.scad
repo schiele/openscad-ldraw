@@ -17,9 +17,8 @@ function ldraw_lib__24067p03() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink hp194, Brickowl 201624, child, Harry Potter
-// 0 !KEYWORDS Lord Voldemort, papoose, Rebrickable 24061pr0003, Set 75965
-// 0 !KEYWORDS swaddled
+// 0 !KEYWORDS Bricklink hp194, child, Harry Potter, Lord Voldemort, papoose
+// 0 !KEYWORDS Rebrickable 24067pr0003, Set 75965, swaddled
 // 
 // 0 !HISTORY 2016-03-18 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2024-03-31 [Holly-Wood] File preparation for LDraw Parts Tracker

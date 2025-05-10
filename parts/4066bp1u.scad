@@ -14,10 +14,9 @@ function ldraw_lib__4066bp1u() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Brick
-// 0 !KEYWORDS Bob, bricklink 4066pb077, Brickowl 435089, Farm
-// 0 !KEYWORDS Rebrickable 4066pr0132, Set 2667, Set 2699, Set 2761, Set 3274
-// 0 !KEYWORDS Set 3286, Set 9119, Set 9133, Set 9173, Set 9190, Set 9233, Set 9238
-// 0 !KEYWORDS Set 9239, Zoo
+// 0 !KEYWORDS Bob, bricklink 4066pb077, Farm, Rebrickable 4066pr0132, Set 2667
+// 0 !KEYWORDS Set 2699, Set 2761, Set 3274, Set 3286, Set 9119, Set 9133, Set 9173
+// 0 !KEYWORDS Set 9190, Set 9233, Set 9238, Set 9239, Zoo
 // 
 // 0 !HISTORY 2024-09-30 [OrionP] Official Update 2024-08
 // 

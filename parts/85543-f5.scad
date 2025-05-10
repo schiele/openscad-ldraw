@@ -18,7 +18,7 @@ function ldraw_lib__85543_f5() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Car
-// 0 !KEYWORDS Ford, Mustang, Set 10265
+// 0 !KEYWORDS BrickLink x71, Ford, Mustang, Rebrickable 85543, Set 10265
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
 // 0 !HISTORY 2020-11-15 [cwdee] Update description

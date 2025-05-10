@@ -15,7 +15,8 @@ function ldraw_lib__11568p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Elves, Friends, Miss Spry, Set 41076
+// 0 !KEYWORDS BrickLink 11568pb02, Elves, Friends, Miss Spry
+// 0 !KEYWORDS Rebrickable 11568pr0002, Set 41076
 // 
 // 0 !HISTORY 2013-08-14 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2017-04-14 [Philo] File preparation for LDraw Parts Tracker

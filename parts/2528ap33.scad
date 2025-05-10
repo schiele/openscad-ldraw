@@ -19,8 +19,8 @@ function ldraw_lib__2528ap33() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Bricklink 2528pb06, CMF, Collectible, Pirate Captain, Series 8
-// 0 !KEYWORDS set 8833
+// 0 !KEYWORDS Bricklink 2528pb06, CMF, Collectible, Pirate Captain
+// 0 !KEYWORDS Rebrickable 2528pr0004, Series 8, set 8833
 // 
 // 0 !HISTORY 2022-05-07 [PTadmin] Official Update 2022-03
 // 

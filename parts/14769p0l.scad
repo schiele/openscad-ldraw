@@ -12,7 +12,8 @@ function ldraw_lib__14769p0l() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 14769pb119, Mixel, Nixel, Series 8, Set 41567, Skulzy
+// 0 !KEYWORDS Bricklink 14769pb119, Mixel, Nixel, Rebrickable 14769pr1044
+// 0 !KEYWORDS Series 8, Set 41567, Skulzy
 // 
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04
 // 

@@ -14,7 +14,8 @@ function ldraw_lib__98130p02() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Bricklink 98130pb02, CMF Series 15, Collectible, Set 71011
+// 0 !KEYWORDS Bricklink 98130pb02, CMF Series 15, Collectible
+// 0 !KEYWORDS Rebrickable 98130pr0002, Set 71011
 // 
 // 0 !HISTORY 2023-04-17 [OrionP] Official Update 2023-02
 // 

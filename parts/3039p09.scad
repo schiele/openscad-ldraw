@@ -12,7 +12,8 @@ function ldraw_lib__3039p09() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS firefighter, flame rescue, town
+// 0 !KEYWORDS BrickLink 3039pb004, firefighter, flame rescue
+// 0 !KEYWORDS Rebrickable 3039pr9999, Set 1976, town
 // 
 // 0 !HISTORY 2004-04-22 [PTadmin] Official Update 2004-02
 // 0 !HISTORY 2007-06-09 [PTadmin] Header formatted for Contributor Agreement

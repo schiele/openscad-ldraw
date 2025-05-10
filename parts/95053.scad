@@ -21,7 +21,7 @@ function ldraw_lib__95053() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS 94158, Weapon
+// 0 !KEYWORDS 94158, BrickLink 94158c, Weapon
 // 
 // 0 !HISTORY 2014-02-10 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2014-02-10 [Wesley] File preparation for LDraw Parts Tracker

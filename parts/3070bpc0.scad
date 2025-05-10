@@ -11,7 +11,8 @@ function ldraw_lib__3070bpc0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Calculator, Numeric
+// 0 !KEYWORDS BrickLink 3070pb089, Calculator, Numeric, Rebrickable 3070bpr0166
+// 0 !KEYWORDS Set 10254
 // 
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
 // 

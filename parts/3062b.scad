@@ -12,6 +12,8 @@ function ldraw_lib__3062b() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 3062
+// 
 // 0 !HISTORY 1998-06-20 [PTadmin] Official Update 1998-06
 // 0 !HISTORY 2003-08-02 [OrionP] Made some primitive subs
 // 0 !HISTORY 2003-08-04 [Steffen] replaced peghole.dat by stud4a.dat

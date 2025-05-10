@@ -14,8 +14,8 @@ function ldraw_lib__87567p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 87567pb02, General Grievous, set 75040, set 75199
-// 0 !KEYWORDS Set 75286, Star Wars
+// 0 !KEYWORDS Bricklink 87567pb02, General Grievous, Rebrickable 87567pr0001
+// 0 !KEYWORDS set 75040, set 75199, Set 75286, Star Wars
 // 
 // 0 !HISTORY 2022-05-07 [PTadmin] Official Update 2022-03
 // 

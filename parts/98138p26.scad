@@ -14,7 +14,8 @@ function ldraw_lib__98138p26() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 98138pb168, Dots, Llama, Mega Pack, Set 41913
+// 0 !KEYWORDS Bricklink 98138pb168, Dots, Llama, Mega Pack
+// 0 !KEYWORDS Rebrickable 98138pr0184, Set 41913
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
 // 

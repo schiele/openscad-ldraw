@@ -14,9 +14,9 @@ function ldraw_lib__76382pf9() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973px21c01, BrickOwl 816459, Castle, Dark Forest
-// 0 !KEYWORDS Forestman, forestmen, Fright Knights, Rebrickable 973c22h01pr0021
-// 0 !KEYWORDS Set 6024, Set 6079, Set 6087
+// 0 !KEYWORDS Bricklink 973px21c01, Castle, Dark Forest, Forestman, forestmen
+// 0 !KEYWORDS Fright Knights, Rebrickable 973c22h01pr0021, Set 6024, Set 6079
+// 0 !KEYWORDS Set 6087
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

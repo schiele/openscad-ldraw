@@ -22,7 +22,8 @@ function ldraw_lib__30173a() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS Castle, Ninja, Ninjago, Persia, samurai, shamshir, Weapon
+// 0 !KEYWORDS BrickLink 30173, Castle, Ninja, Ninjago, Persia, samurai, shamshir
+// 0 !KEYWORDS Weapon
 // 
 // 0 !HISTORY 2000-09-30 [PTadmin] Official Update 2000-02
 // 0 !HISTORY 2007-06-06 [PTadmin] Header formatted for Contributor Agreement

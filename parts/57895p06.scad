@@ -14,8 +14,9 @@ function ldraw_lib__57895p06() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS BrickLink 57895pb041, Door, Japan, japanese, Ninjago, paper, rise
-// 0 !KEYWORDS screen, Set 70620, Set 70657, Set 70670, Set 71703, shoji
+// 0 !KEYWORDS BrickLink 57895pb041, Door, Japan, japanese, Ninjago, paper
+// 0 !KEYWORDS Rebrickable 57895pr0014, rise, screen, Set 70620, Set 70657
+// 0 !KEYWORDS Set 70670, Set 71703, shoji
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
 // 

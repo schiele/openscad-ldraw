@@ -11,6 +11,8 @@ function ldraw_lib__2349a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 2349
+// 
 // 0 !HISTORY 1999-02-01 [PTadmin] Official Update 1999-01
 // 0 !HISTORY 2000-08-01 {Axel Poque} fixes to resolve L3P error messages
 // 0 !HISTORY 2000-08-01 {Manfred Moolhuysen} fixes to resolve L3P error messages

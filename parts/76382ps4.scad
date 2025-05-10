@@ -14,10 +14,10 @@ function ldraw_lib__76382ps4() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973ps4c01, BrickOwl 361148, Carbonite, Desert Skiff
-// 0 !KEYWORDS Episode VI, Han Solo, Jabba, Mini Upper Part No 403
-// 0 !KEYWORDS Original Trilogy, Rebrickable 973c27h01pr0004, Return of the Jedi
-// 0 !KEYWORDS Set 7104, Star Wars, Tatooine
+// 0 !KEYWORDS Bricklink 973ps4c01, Carbonite, Desert Skiff, Episode VI, Han Solo
+// 0 !KEYWORDS Jabba, Mini Upper Part No 403, Original Trilogy
+// 0 !KEYWORDS Rebrickable 973c27h01pr0004, Return of the Jedi, Set 7104, Star Wars
+// 0 !KEYWORDS Tatooine
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

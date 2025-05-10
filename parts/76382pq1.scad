@@ -14,10 +14,10 @@ function ldraw_lib__76382pq1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Amset-Ra, Ancient Egypt, Bricklink 973pb0796c01, BrickOwl 747712
-// 0 !KEYWORDS egyptian, Hieroglyphs, King, Mini Upper Part No 1726
-// 0 !KEYWORDS Pharaoh's Quest, Rebrickable 973c11h12pr1726, Scarab
-// 0 !KEYWORDS Scorpion Pyramid, Set 7327, Spooky, undead
+// 0 !KEYWORDS Amset-Ra, Ancient Egypt, Bricklink 973pb0796c01, egyptian
+// 0 !KEYWORDS Hieroglyphs, King, Mini Upper Part No 1726, Pharaoh's Quest
+// 0 !KEYWORDS Rebrickable 973c11h12pr1726, Scarab, Scorpion Pyramid, Set 7327
+// 0 !KEYWORDS Spooky, undead
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

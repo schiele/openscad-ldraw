@@ -13,6 +13,7 @@ function ldraw_lib__600880() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Sheet Fabric
+// 0 !KEYWORDS BrickLink 99257, Rebrickable 99257
 // 
 // 0 !HISTORY 2015-10-11 [PTadmin] Official Update 2015-01
 // 0 !HISTORY 2019-01-25 [cwdee] Update category

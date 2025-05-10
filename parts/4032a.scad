@@ -20,6 +20,8 @@ function ldraw_lib__4032a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 4032
+// 
 // 0 !HISTORY 2004-03-25 [westrate] Added stud10, replaced quads with primitives, BFCed
 // 0 !HISTORY 2004-11-06 [PTadmin] Official Update 2004-04
 // 0 !HISTORY 2007-06-30 [PTadmin] Header formatted for Contributor Agreement

@@ -13,7 +13,8 @@ function ldraw_lib__37364pdeb() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 970cm90pb001, Looney Tunes, Petunia Pig, Set 71030
+// 0 !KEYWORDS Bricklink 970cm90pb001, Looney Tunes, Petunia Pig
+// 0 !KEYWORDS Rebrickable 37364c27pat02pr0010, Set 71030
 // 
 // 0 !HISTORY 2024-10-27 [OrionP] Official Update 2024-09
 // 

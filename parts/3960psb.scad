@@ -14,7 +14,8 @@ function ldraw_lib__3960psb() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3960pb040, Millenium Falcon, Set 75192, Star Wars
+// 0 !KEYWORDS Bricklink 3960pb040, Millenium Falcon, Rebrickable 3960pr0026
+// 0 !KEYWORDS Set 75192, Star Wars
 // 
 // 0 !HISTORY 2022-05-07 [PTadmin] Official Update 2022-03
 // 0 !HISTORY 2024-07-02 [Holly-Wood] Fixed title

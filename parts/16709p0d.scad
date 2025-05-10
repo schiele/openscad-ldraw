@@ -12,8 +12,8 @@ function ldraw_lib__16709p0d() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 41879pb025, Brickowl 855302, Harry Potter
-// 0 !KEYWORDS Rebrickable 16709pats12, Set 76399
+// 0 !KEYWORDS Bricklink 41879pb025, Harry Potter, Rebrickable 16709pats12
+// 0 !KEYWORDS Set 76399
 // 
 // 0 !HISTORY 2023-04-17 [OrionP] Official Update 2023-02
 // 0 !HISTORY 2024-08-28 [Cheenzo] Corrected spelling of Grey, Added keyword

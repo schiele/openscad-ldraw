@@ -14,9 +14,8 @@ function ldraw_lib__76382p5a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS astronaut, Bricklink 973pb2910c01, BrickOwl 190046
-// 0 !KEYWORDS Rebrickable 973c32h02pr4192, Sally Ride, Set 21312, Space
-// 0 !KEYWORDS Women of NASA
+// 0 !KEYWORDS astronaut, Bricklink 973pb2910c01, Rebrickable 973c32h02pr4192
+// 0 !KEYWORDS Sally Ride, Set 21312, Space, Women of NASA
 // 
 // 0 !HISTORY 2024-12-30 [OrionP] Official Update 2024-11
 // 

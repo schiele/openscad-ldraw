@@ -20,6 +20,8 @@ function ldraw_lib__6238a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
+// 0 !KEYWORDS BrickLink 6238, Rebrickable 6238
+// 
 // 0 !HISTORY 2003-12-13 [pneaster] Fixed some misplaced triangles, added BFC, primitive substitution.
 // 0 !HISTORY 2005-12-28 [PTadmin] Official Update 2005-01
 // 0 !HISTORY 2007-07-16 [PTadmin] Header formatted for Contributor Agreement

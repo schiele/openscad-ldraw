@@ -15,6 +15,8 @@ function ldraw_lib__2362bd01() = [
 // 0 !CATEGORY Sticker Shortcut
 // 0 !KEYWORDS Bricklink 2362bpb18, Death Star, Set 10188
 // 
+// 0 !PREVIEW 16 0 0 0 -1 0 0 0 1 0 0 0 -1
+// 
 // 0 !HISTORY 2024-08-26 [OrionP] Official Update 2024-07
 // 0 !HISTORY 2025-03-12 [Cheenzo] Added META for preview
 // 0 !HISTORY 2025-03-30 [OrionP] Official Update 2025-03

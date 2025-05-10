@@ -17,7 +17,7 @@ function ldraw_lib__73200bpc39() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 970c00pb0083, CMF, Elf, Series 3
+// 0 !KEYWORDS Bricklink 970c00pb0083, CMF, Elf, Rebrickable 970c19pr0186, Series 3
 // 
 // 0 !HISTORY 2024-10-27 [OrionP] Official Update 2024-09
 // 

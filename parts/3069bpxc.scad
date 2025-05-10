@@ -19,7 +19,8 @@ function ldraw_lib__3069bpxc() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS bricklink 3069bpb0312, Ghostbusters, set 75827
+// 0 !KEYWORDS BrickLink 3069pb0312, Ghostbusters, Rebrickable 3069bpr0138
+// 0 !KEYWORDS set 75827
 // 
 // 0 !HISTORY 2022-05-07 [PTadmin] Official Update 2022-03
 // 

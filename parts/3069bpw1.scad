@@ -21,7 +21,8 @@ function ldraw_lib__3069bpw1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !KEYWORDS poker, western, wild west
+// 0 !KEYWORDS BrickLink 3069px6, poker, Rebrickable 3069bpr0098, set 5317, western
+// 0 !KEYWORDS wild west
 // 
 // 0 !HISTORY 2010-12-31 [PTadmin] Official Update 2010-03
 // 

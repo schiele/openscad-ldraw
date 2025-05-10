@@ -12,6 +12,7 @@ function ldraw_lib__6442p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Brick
+// 0 !KEYWORDS BrickLink 6442pb01, Rebrickable 6442pr0001, Set 2736
 // 
 // 0 !HISTORY 2013-12-11 [MMR1988] reworked pattern
 // 0 !HISTORY 2013-12-23 [PTadmin] Official Update 2013-02

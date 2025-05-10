@@ -26,6 +26,7 @@ function ldraw_lib__4222a() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Figure Accessory
+// 0 !KEYWORDS BrickLink 4222, Rebrickable 4222
 // 
 // 0 !HISTORY 2002-07-20 [cwdee] Corrected all-zero rows errors
 // 0 !HISTORY 2002-12-07 [Tore_Eriksson] Added BFC Statement; Added missing conditional lines

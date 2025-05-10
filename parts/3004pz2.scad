@@ -13,7 +13,8 @@ function ldraw_lib__3004pz2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickheadz, BrickLink 3004pb153, Set 41491, The Joker
+// 0 !KEYWORDS Brickheadz, BrickLink 3004pb153, Rebrickable 3004pr0033, Set 41491
+// 0 !KEYWORDS The Joker
 // 
 // 0 !HISTORY 2018-12-08 [PTadmin] Official Update 2018-02
 // 

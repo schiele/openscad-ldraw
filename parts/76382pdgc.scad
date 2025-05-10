@@ -14,7 +14,7 @@ function ldraw_lib__76382pdgc() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb4700c01, Brickowl 195783, CMF, Collectable, Janice
+// 0 !KEYWORDS Bricklink 973pb4700c01, CMF, Collectable, Janice
 // 0 !KEYWORDS Rebrickable 973c38h38pr0001, set 71033, The Muppets
 // 
 // 0 !HISTORY 2024-08-26 [OrionP] Official Update 2024-07

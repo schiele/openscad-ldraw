@@ -13,8 +13,8 @@ function ldraw_lib__35252p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS BrickLink 30292pb053, Brickowl 95840, Lunar Space Station
-// 0 !KEYWORDS Rebrickable 30292pr9997, Set 60336, Set 60349
+// 0 !KEYWORDS BrickLink 30292pb053, Lunar Space Station, Rebrickable 30292pr9997
+// 0 !KEYWORDS Set 60336, Set 60349
 // 
 // 0 !HISTORY 2024-04-28 [OrionP] Official Update 2024-03
 // 

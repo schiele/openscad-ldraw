@@ -15,6 +15,8 @@ function ldraw_lib__32439() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 32439a, Rebrickable 32439a
+// 
 // 0 !HISTORY 2010-04-17 [Philo] Corrected size, built center notched disc
 // 0 !HISTORY 2011-07-25 [PTadmin] Official Update 2011-01
 // 

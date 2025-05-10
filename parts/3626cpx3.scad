@@ -14,8 +14,8 @@ function ldraw_lib__3626cpx3() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626cpb1689, Dimensions, Ideas, Sally Ride, Set 21312
-// 0 !KEYWORDS Set 71257, Tina Goldstein
+// 0 !KEYWORDS BrickLink 3626pb1689, Dimensions, Ideas, Rebrickable 3626cpr2040
+// 0 !KEYWORDS Sally Ride, Set 21312, Set 71257, Tina Goldstein
 // 
 // 0 !HISTORY 2019-01-29 [Philo] Added texmapped version
 // 0 !HISTORY 2023-08-25 [OrionP] Official Update 2023-04

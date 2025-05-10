@@ -12,7 +12,7 @@ function ldraw_lib__3815bp63() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 970c00pb0019, droid, Exploriens, Spyrius
+// 0 !KEYWORDS Bricklink 970c00pb0019, droid, Exploriens, set 1858, Spyrius
 // 
 // 0 !HISTORY 1999-02-01 [cwdee] Original pattern design
 // 0 !HISTORY 2020-05-30 [cwdee] Adapted to corrected geometry

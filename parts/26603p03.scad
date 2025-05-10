@@ -11,7 +11,7 @@ function ldraw_lib__26603p03() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS BrickLink 26603pb047, Brickowl 757719, CMF, Collectible Minifigures
+// 0 !KEYWORDS BrickLink 26603pb047, CMF, Collectible Minifigures
 // 0 !KEYWORDS Rebrickable 26603pr0024, Set 71025
 // 
 // 0 !HISTORY 2024-10-27 [OrionP] Official Update 2024-09

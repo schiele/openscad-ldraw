@@ -17,9 +17,9 @@ function ldraw_lib__73200bpx3() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 970c00pb0192, Brickowl 378490, Don, Donatello, Donnie, Leo
-// 0 !KEYWORDS Leonardo, Michelangelo, mike, Mikey, Nickelodeon, Raph, Raphael
-// 0 !KEYWORDS Rebrickable 970c31pr0472, Set 30271, Set 79100, Set 79101, Set 79102
+// 0 !KEYWORDS Bricklink 970c00pb0192, Don, Donatello, Donnie, Leo, Leonardo
+// 0 !KEYWORDS Michelangelo, mike, Mikey, Nickelodeon, Raph, Raphael
+// 0 !KEYWORDS Rebrickable 970c06pr0472, Set 30271, Set 79100, Set 79101, Set 79102
 // 0 !KEYWORDS Set 79103, Set 79104, Set 79105, Set 79120, Set 79121, Set 79122
 // 0 !KEYWORDS Teenage Mutant Ninja Turtles, TMNT
 // 

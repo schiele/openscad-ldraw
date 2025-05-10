@@ -16,7 +16,8 @@ function ldraw_lib__2723p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Car, Caterham, Cuusoo, Ideas, Set 21307
+// 0 !KEYWORDS BrickLink 2723pb063, Car, Caterham, Cuusoo, Ideas
+// 0 !KEYWORDS Rebrickable 2723pr0002, Set 21307
 // 
 // 0 !CMDLINE -c0
 // 

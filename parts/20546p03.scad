@@ -13,7 +13,7 @@ function ldraw_lib__20546p03() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS Bart Simpson, Bricklink 19900pb01, Brickowl 18535, Catapult, Dewey
+// 0 !KEYWORDS Bart Simpson, Bricklink 19900pb01, Catapult, Dewey
 // 0 !KEYWORDS Rebrickable 19900pr0003, set 71024, Set 71211
 // 
 // 0 !HISTORY 2024-04-28 [OrionP] Official Update 2024-03

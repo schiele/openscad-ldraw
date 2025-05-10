@@ -16,7 +16,8 @@ function ldraw_lib__98138p2d() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS 98138pb195, food, Set 41929, Set 41931
+// 0 !KEYWORDS 98138pb195, BrickLink 98138pb195, food, Rebrickable 98138pr0200
+// 0 !KEYWORDS Set 41929, Set 41931
 // 
 // 0 !CMDLINE -c226
 // 

@@ -12,7 +12,7 @@ function ldraw_lib__98088p04() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Dinosaur
+// 0 !KEYWORDS BrickLink 98088pb05, Dinosaur, Rebrickable 98088pat0005, Set 10280
 // 
 // 0 !HISTORY 2013-08-14 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2021-01-07 [Philo] File preparation for LDraw Parts Tracker

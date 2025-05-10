@@ -12,6 +12,8 @@ function ldraw_lib__973pr3() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS Set 7101
+// 
 // 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01
 // 0 !HISTORY 2012-04-09 [TK-949] Created Subfile for further use
 // 0 !HISTORY 2012-08-09 [PTadmin] Official Update 2012-02

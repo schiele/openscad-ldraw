@@ -14,11 +14,11 @@ function ldraw_lib__76382pwa() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bank, Banker Goldpenny, billy the kid, Bricklink 973px163c01
-// 0 !KEYWORDS BrickOwl 446184, cowboy, deputy, desperado, doc holliday, Dodge City
-// 0 !KEYWORDS Legoredo City, Mini Upper Part No 225, money
-// 0 !KEYWORDS Rebrickable 973c27h01pr0163, set 6765, spaghetti western, Star
-// 0 !KEYWORDS tombstone, western, wild west, Winnetou, Wyatt Earp
+// 0 !KEYWORDS Bank, Banker Goldpenny, billy the kid, Bricklink 973px163c01, cowboy
+// 0 !KEYWORDS deputy, desperado, doc holliday, Dodge City, Legoredo City
+// 0 !KEYWORDS Mini Upper Part No 225, money, Rebrickable 973c27h01pr0163, set 6765
+// 0 !KEYWORDS spaghetti western, Star, tombstone, western, wild west, Winnetou
+// 0 !KEYWORDS Wyatt Earp
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

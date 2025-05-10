@@ -11,7 +11,8 @@ function ldraw_lib__78522ph0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 78522pb001, Harry Potter, Set 76393
+// 0 !KEYWORDS Bricklink 78522pb001, Harry Potter, Rebrickable 78522pr0001
+// 0 !KEYWORDS Set 76393
 // 
 // 0 !HISTORY 2024-07-29 [OrionP] Official Update 2024-06
 // 

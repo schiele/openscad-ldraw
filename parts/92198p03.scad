@@ -14,7 +14,7 @@ function ldraw_lib__92198p03() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Joanna, Kate
+// 0 !KEYWORDS BrickLink 12760, Joanna, Kate, Rebrickable 92198pr0009, Set 41000
 // 
 // 0 !HISTORY 2014-12-23 [PTadmin] Official Update 2014-02
 // 

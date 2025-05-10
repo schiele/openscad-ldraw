@@ -12,7 +12,8 @@ function ldraw_lib__20381p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Azari Firedancer, Elves, Rebrickable 20381c01pr0002, Set 41179
+// 0 !KEYWORDS Azari Firedancer, BrickLink 20380c00pb02, Elves
+// 0 !KEYWORDS Rebrickable 20381c01pr0002, Set 41179
 // 
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
 // 0 !HISTORY 2020-05-10 [cwdee] Update colour name in description

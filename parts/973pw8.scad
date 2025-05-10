@@ -16,7 +16,8 @@ function ldraw_lib__973pw8() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS bandit, cardsharper, cowboy, desperado, swindler, western, wild west
+// 0 !KEYWORDS bandit, cardsharper, cowboy, desperado, set 6755, swindler, western
+// 0 !KEYWORDS wild west
 // 
 // 0 !CMDLINE -c2
 // 

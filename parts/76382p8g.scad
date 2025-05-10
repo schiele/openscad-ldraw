@@ -14,7 +14,7 @@ function ldraw_lib__76382p8g() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb0263c02, Brickowl 662188, Construction, garbage
+// 0 !KEYWORDS Bricklink 973pb0263c02, Construction, garbage
 // 0 !KEYWORDS Rebrickable 973c34h12pr1182, Recycling, Set 7249, Set 7344, Set 7734
 // 0 !KEYWORDS set 7898, Set 7991, Workwear
 // 

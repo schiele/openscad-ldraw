@@ -15,6 +15,7 @@ function ldraw_lib__19203p02() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
+// 0 !KEYWORDS BrickLink 19203pb02, Rebrickable 19203pr0003, Set 41173
 // 0 !KEYWORDS Tidus Stormsurfer
 // 
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01

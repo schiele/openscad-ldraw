@@ -18,7 +18,7 @@ function ldraw_lib__6580b() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS 43.2 x 28, Balloon, Small
+// 0 !KEYWORDS 43.2 x 28, Balloon, BrickLink 6580a, Rebrickable 6580a, Small
 // 
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
 // 

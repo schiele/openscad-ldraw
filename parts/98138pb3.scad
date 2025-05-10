@@ -13,7 +13,8 @@ function ldraw_lib__98138pb3() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS BrickLink 98138pb056, Super Heros
+// 0 !KEYWORDS BrickLink 98138pb056, Rebrickable 98138pr0058, Set 41195
+// 0 !KEYWORDS Super Heros
 // 
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
 // 

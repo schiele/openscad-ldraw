@@ -15,8 +15,8 @@ function ldraw_lib__3626bp8l() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626bpx288, set 10210, Set 10216, Set 10219, Set 4434
-// 0 !KEYWORDS Set 5770
+// 0 !KEYWORDS BrickLink 3626px288, Rebrickable 3626bpr0388, set 10210, Set 10216
+// 0 !KEYWORDS Set 10219, Set 4434, Set 5770
 // 
 // 0 !HISTORY 2021-10-29 [Holly-Wood] Streamlined pattern
 // 0 !HISTORY 2022-12-20 [PTadmin] Official Update 2022-06

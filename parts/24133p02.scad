@@ -16,7 +16,8 @@ function ldraw_lib__24133p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 22472pb01, Nexo Knights, set 70315, Set 70323
+// 0 !KEYWORDS BrickLink 22472c01pb01, Nexo Knights, Rebrickable 22472c01pr0001
+// 0 !KEYWORDS set 70315, Set 70323
 // 
 // 0 !HISTORY 2024-12-01 [OrionP] Official Update 2024-10
 // 

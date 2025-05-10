@@ -22,7 +22,8 @@ function ldraw_lib__476() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS mast, Paradisa, Pirates, sailboard, Time Twisters, town
+// 0 !KEYWORDS mast, Paradisa, Pirates, Rebrickable 6076, sailboard, Time Twisters
+// 0 !KEYWORDS town
 // 
 // 0 !HISTORY 2002-04-25 [PTadmin] Official Update 2002-02
 // 0 !HISTORY 2007-07-08 [PTadmin] Header formatted for Contributor Agreement

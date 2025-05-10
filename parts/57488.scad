@@ -13,8 +13,8 @@ function ldraw_lib__57488() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Constraction Accessory
-// 0 !KEYWORDS Batman, Exoforce, set 7021, set 7884, set 8107, set 8108, set 8114
-// 0 !KEYWORDS voodoo
+// 0 !KEYWORDS Batman, BrickLink 32558pb01, Exoforce, Rebrickable 32558pat0001
+// 0 !KEYWORDS set 7021, set 7884, set 8107, set 8108, set 8114, voodoo
 // 
 // 0 !HISTORY 2020-09-24 [Holly-Wood] Seperated into subfiles, eliminated T-Junk, polished mesh
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04

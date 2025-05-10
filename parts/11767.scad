@@ -13,7 +13,7 @@ function ldraw_lib__11767() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Vehicle
-// 0 !KEYWORDS Chima, Rip Cord, Speedorz
+// 0 !KEYWORDS BrickLink 11125c01, Chima, Rip Cord, Speedorz
 // 
 // 0 !HISTORY 2014-12-23 [PTadmin] Official Update 2014-02
 // 0 !HISTORY 2017-01-01 [Steffen] used u9081c01.dat

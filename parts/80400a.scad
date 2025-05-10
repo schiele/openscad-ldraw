@@ -18,6 +18,8 @@ function ldraw_lib__80400a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 80400, Rebrickable 80400
+// 
 // 0 !HISTORY 2022-01-27 {LEGO Instructions App} Original part shape
 // 0 !HISTORY 2022-01-27 [Philo] File preparation for LDraw Parts Tracker
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01

@@ -32,7 +32,7 @@ function ldraw_lib__2745() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Cowling, Propeller
+// 0 !KEYWORDS BrickLink 2958, Cowling, Propeller
 // 
 // 0 !HISTORY 2010-07-05 [PTadmin] Official Update 2010-02
 // 0 !HISTORY 2021-12-01 [cwdee] Update keywords

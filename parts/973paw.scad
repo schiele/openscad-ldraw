@@ -13,7 +13,7 @@ function ldraw_lib__973paw() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Armor, Chima, Worriz
+// 0 !KEYWORDS Armor, Chima, set 70011, Worriz
 // 
 // 0 !HISTORY 2014-06-21 [PTadmin] Official Update 2014-01
 // 0 !HISTORY 2020-11-14 [cwdee] Correct description

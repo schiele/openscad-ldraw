@@ -19,7 +19,8 @@ function ldraw_lib__98138p1u() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Creativity Box, Dots, Sneaky
+// 0 !KEYWORDS BrickLink 98138pb280, Creativity Box, Dots, Rebrickable 98138pr0258
+// 0 !KEYWORDS Set DOTS-SERIES-6, Sneaky
 // 
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04
 // 

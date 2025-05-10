@@ -13,8 +13,8 @@ function ldraw_lib__2528ap37() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Bricklink 2528pb11, Captain Soto, Ninjago, Set 70591, Skybound
-// 0 !KEYWORDS Wrenches
+// 0 !KEYWORDS Bricklink 2528pb11, Captain Soto, Ninjago, Rebrickable 2528pr0009
+// 0 !KEYWORDS Set 70591, Skybound, Wrenches
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
 // 

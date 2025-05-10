@@ -11,6 +11,8 @@ function ldraw_lib__3040b() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 3040
+// 
 // 0 !HISTORY 2002-09-13 [izanette] modified with WINDZ for BFC compliance
 // 0 !HISTORY 2003-07-11 [Steffen] made use of existing subfile
 // 0 !HISTORY 2004-11-06 [PTadmin] Official Update 2004-04

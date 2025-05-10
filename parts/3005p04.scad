@@ -11,6 +11,8 @@ function ldraw_lib__3005p04() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
+// 0 !KEYWORDS BrickLink 3005pb018, Rebrickable 3005pr0008, Set 21102
+// 
 // 0 !CMDLINE -c2
 // 
 // 0 !HISTORY 2012-08-08 [Steffen] removed T junctions

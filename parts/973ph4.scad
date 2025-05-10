@@ -12,7 +12,7 @@ function ldraw_lib__973ph4() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Goblin, Harry Potter, Professor Flitwick
+// 0 !KEYWORDS Goblin, Harry Potter, Professor Flitwick, set 10217
 // 
 // 0 !HISTORY 2013-12-23 [PTadmin] Official Update 2013-02
 // 

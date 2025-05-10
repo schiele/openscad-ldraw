@@ -11,7 +11,8 @@ function ldraw_lib__15068p0g() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 15068pb075, Ecto, Ghostbusters, Set 75828
+// 0 !KEYWORDS Bricklink 15068pb075, Ecto, Ghostbusters, Rebrickable 15068pr0010
+// 0 !KEYWORDS Set 75828
 // 
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04
 // 

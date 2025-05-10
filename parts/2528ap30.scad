@@ -21,7 +21,7 @@ function ldraw_lib__2528ap30() = [
 // 0 !KEYWORDS 2-corner, bi-corner, bicorn, bicorner, Brickbeard
 // 0 !KEYWORDS Bricklink 2528pb03, Cap, captain, chapeau bras, chapeau-bras
 // 0 !KEYWORDS cocked hat, Feather, fore and aft hat, Pirate, Pirates, plume
-// 0 !KEYWORDS set 31109, Set 6242, set 6243, Set 6253
+// 0 !KEYWORDS Rebrickable 2528pr0001, set 31109, Set 6242, set 6243, Set 6253
 // 
 // 0 !HISTORY 2011-12-29 [MagFors] Original design as 2528p30
 // 0 !HISTORY 2021-04-21 [MagFors] Adapted to corrected geometry

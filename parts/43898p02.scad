@@ -15,7 +15,7 @@ function ldraw_lib__43898p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Mario, Set 71386
+// 0 !KEYWORDS BrickLink 43898pb009, Mario, Rebrickable 43898pr1007, Set 71386
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
 // 

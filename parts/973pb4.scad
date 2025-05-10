@@ -13,7 +13,7 @@ function ldraw_lib__973pb4() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Batman
+// 0 !KEYWORDS Batman, Set 4854
 // 
 // 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01
 // 

@@ -14,8 +14,8 @@ function ldraw_lib__76382pf6() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Armor, Armour, Asymmetrical, Bricklink 973pb0074c02, BrickOwl 233622
-// 0 !KEYWORDS Castle, Dragon Knights, Dragon Master Burnabus, Dragon Masters
+// 0 !KEYWORDS Armor, Armour, Asymmetrical, Bricklink 973pb0074c02, Castle
+// 0 !KEYWORDS Dragon Knights, Dragon Master Burnabus, Dragon Masters
 // 0 !KEYWORDS Rebrickable 973e083pr0074, Set 1794, Set 6076, Set 6082, Set 6105
 // 0 !KEYWORDS Sir Francis Mandrake
 // 

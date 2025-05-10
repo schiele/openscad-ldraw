@@ -19,8 +19,8 @@ function ldraw_lib__30367cps9() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS astromech, Bricklink 553pb023, droid, minifig, R4, set 75135
-// 0 !KEYWORDS set 75191, Star Wars
+// 0 !KEYWORDS astromech, Bricklink 553pb023, droid, minifig, R4
+// 0 !KEYWORDS Rebrickable 30367cpr1008, set 75135, set 75191, Star Wars
 // 
 // 0 !HISTORY 2024-05-28 [OrionP] Official Update 2024-04
 // 

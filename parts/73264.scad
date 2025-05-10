@@ -12,8 +12,8 @@ function ldraw_lib__73264() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS 4.5V, Set 1032, Set 1034, set 1039, Set 740, Set 8050, Set 8054
-// 0 !KEYWORDS Set 8055, Set 8700, Set 9605
+// 0 !KEYWORDS 4.5V, BrickLink 4350c01, Rebrickable 4350c01, Set 1032, Set 1034
+// 0 !KEYWORDS set 1039, Set 740, Set 8050, Set 8054, Set 8055, Set 8700, Set 9605
 // 
 // 0 !HISTORY 2024-12-01 [OrionP] Official Update 2024-10
 // 

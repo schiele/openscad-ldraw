@@ -14,7 +14,7 @@ function ldraw_lib__76382psv() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS A New Hope, Bricklink 973pb0406c01, BrickOwl 460305, Episode IV
+// 0 !KEYWORDS A New Hope, Bricklink 973pb0406c01, Episode IV
 // 0 !KEYWORDS Mini Upper Part No 1111, Original Trilogy
 // 0 !KEYWORDS Rebrickable 973c26h02pr0406, Sandcrawler, Set 10144, Star Wars
 // 0 !KEYWORDS Tatooine, Uncle Owen Lars

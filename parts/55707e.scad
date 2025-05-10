@@ -16,7 +16,7 @@ function ldraw_lib__55707e() = [
   [0,"BFC","CW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS animal, Batman
+// 0 !KEYWORDS animal, Batman, BrickLink 55707a
 // 
 // 0 !HISTORY 2011-02-01 [MagFors] Reduced filesize by "Rectifying" and removal of hidden surface.
 // 0 !HISTORY 2011-07-25 [PTadmin] Official Update 2011-01

@@ -14,9 +14,8 @@ function ldraw_lib__76382p1p() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb0732c01, Brickowl 347785, Castle, queen
-// 0 !KEYWORDS Rebrickable 973c10h01pr1633, set 10218, Set 10223, set 10229
-// 0 !KEYWORDS set 10232, Set 7952
+// 0 !KEYWORDS Bricklink 973pb0732c01, Castle, queen, Rebrickable 973c10h01pr1633
+// 0 !KEYWORDS set 10218, Set 10223, set 10229, set 10232, Set 7952
 // 
 // 0 !HISTORY 2024-12-01 [OrionP] Official Update 2024-10
 // 

@@ -14,9 +14,9 @@ function ldraw_lib__76382p5t() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb1215c01, BrickOwl 780281, Butler, Frankenstein
-// 0 !KEYWORDS Haunted House, Monster, Monster Fighters
-// 0 !KEYWORDS Rebrickable 973c03h14pr2129, Set 10228, Spooky, undead
+// 0 !KEYWORDS Bricklink 973pb1215c01, Butler, Frankenstein, Haunted House, Monster
+// 0 !KEYWORDS Monster Fighters, Rebrickable 973c03h14pr2129, Set 10228, Spooky
+// 0 !KEYWORDS undead
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

@@ -12,6 +12,8 @@ function ldraw_lib__4209ap01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 4209p01, Rebrickable 4209pr0001, Set 6358
+// 
 // 0 !HISTORY 1999-03-26 [PTadmin] Official Update 1999-02
 // 0 !HISTORY 2002-04-29 [nielsk] Moved Fire logo to s\4209s01; fixed location of fire logo
 // 0 !HISTORY 2002-08-23 [BrickCaster] Fixed middle bar

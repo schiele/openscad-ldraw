@@ -14,9 +14,9 @@ function ldraw_lib__76382pu2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Alan Grant, Bricklink 973pb3096c01, BrickOwl 727120, Dinosaurs
-// 0 !KEYWORDS Jurassic Park, Mini Upper Part No 4318, Paleontology
-// 0 !KEYWORDS Rebrickable 973c32h02pr4318, Set 75932, Set 75936
+// 0 !KEYWORDS Alan Grant, Bricklink 973pb3096c01, Dinosaurs, Jurassic Park
+// 0 !KEYWORDS Mini Upper Part No 4318, Paleontology, Rebrickable 973c32h02pr4318
+// 0 !KEYWORDS Set 75932, Set 75936
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

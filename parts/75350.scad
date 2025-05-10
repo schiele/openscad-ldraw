@@ -13,7 +13,7 @@ function ldraw_lib__75350() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Technic
-// 0 !KEYWORDS dacta, Early Simple Machines
+// 0 !KEYWORDS BrickLink 6515c01, dacta, Early Simple Machines, Rebrickable 6515
 // 
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
 // 

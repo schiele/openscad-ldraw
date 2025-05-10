@@ -20,6 +20,8 @@ function ldraw_lib__3488() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink buffer
+// 
 // 0 !HISTORY 2006-04-19 [DeannaEarley] Tidied up underside lines and the buffer itself
 // 0 !HISTORY 2009-05-02 [PTadmin] Official Update 2009-01
 // 

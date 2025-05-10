@@ -13,7 +13,7 @@ function ldraw_lib__36069ap01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Sheet Plastic
-// 0 !KEYWORDS Set 42074
+// 0 !KEYWORDS BrickLink 42074pls01a, Rebrickable 36069a, Set 42074
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 0 !HISTORY 2022-11-30 [OrionP] Fixed problem with HISTORY lines

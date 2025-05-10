@@ -11,7 +11,8 @@ function ldraw_lib__92240p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Farran Leafshade
+// 0 !KEYWORDS BrickLink 19996, Farran Leafshade, Rebrickable 28649pr0007
+// 0 !KEYWORDS Set 41075
 // 
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
 // 

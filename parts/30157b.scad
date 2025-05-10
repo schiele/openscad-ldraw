@@ -12,7 +12,7 @@ function ldraw_lib__30157b() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS hub, stackable, wheel
+// 0 !KEYWORDS BrickLink 30157, hub, Rebrickable 30157, stackable, wheel
 // 
 // 0 !HISTORY 2024-05-28 [OrionP] Official Update 2024-04
 // 

@@ -14,11 +14,10 @@ function ldraw_lib__76382prd() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb0344c01, BrickOwl 792212, Checkered, Echo Base
-// 0 !KEYWORDS Episode V, Leia Organa, Mini Upper Part No 1145
-// 0 !KEYWORDS Mini Upper Part No 900, Original Trilogy, Rebel Alliance
-// 0 !KEYWORDS Rebrickable 973c26h02pr1145, Set 4504, Set 6212, Star Wars
-// 0 !KEYWORDS The Empire Strikes Back
+// 0 !KEYWORDS Bricklink 973pb0344c01, Checkered, Echo Base, Episode V, Leia Organa
+// 0 !KEYWORDS Mini Upper Part No 1145, Mini Upper Part No 900, Original Trilogy
+// 0 !KEYWORDS Rebel Alliance, Rebrickable 973c26h02pr1145, Set 4504, Set 6212
+// 0 !KEYWORDS Star Wars, The Empire Strikes Back
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

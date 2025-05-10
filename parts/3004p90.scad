@@ -13,6 +13,8 @@ function ldraw_lib__3004p90() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
+// 0 !KEYWORDS Rebrickable 3004pr9970, Set 12
+// 
 // 0 !HISTORY 2000-05-07 [PTadmin] Official Update 2000-01
 // 0 !HISTORY 2002-08-19 [Holly-Wood] refined pattern, separated into subpart
 // 0 !HISTORY 2002-12-31 [PTadmin] Official Update 2002-06

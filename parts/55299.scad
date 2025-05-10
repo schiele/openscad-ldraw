@@ -20,7 +20,7 @@ function ldraw_lib__55299() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS crescent, hex, open-ended, tools
+// 0 !KEYWORDS BrickLink 6246e, crescent, hex, open-ended, tools
 // 
 // 0 !HISTORY 1998-07-15 [PTadmin] Official Update 1998-07
 // 0 !HISTORY 1999-07-05 [PTadmin] Official Update 1999-05

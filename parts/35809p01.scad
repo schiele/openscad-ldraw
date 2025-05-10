@@ -13,7 +13,7 @@ function ldraw_lib__35809p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS Bricklink 35809pb01, Friends, Set 41332
+// 0 !KEYWORDS Bricklink 35809pb01, Friends, Rebrickable 35809pat0001, Set 41332
 // 
 // 0 !HISTORY 2021-03-29 {LEGO/Unity Microgame} Original part shape
 // 0 !HISTORY 2022-04-29 [Philo] File preparation for LDraw Parts Tracker

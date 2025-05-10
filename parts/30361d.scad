@@ -12,6 +12,8 @@ function ldraw_lib__30361d() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 30361c, Rebrickable 30361c
+// 
 // 0 !HISTORY 2012-05-13 [TK-949] Widened Front Face
 // 0 !HISTORY 2012-12-28 [PTadmin] Official Update 2012-03
 // 

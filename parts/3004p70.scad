@@ -12,6 +12,8 @@ function ldraw_lib__3004p70() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 3004pb004, Rebrickable 3004pr9971, Set 6554
+// 
 // 0 !HISTORY 2014-07-13 [MagFors] used logo subfile
 // 0 !HISTORY 2014-12-23 [PTadmin] Official Update 2014-02
 // 

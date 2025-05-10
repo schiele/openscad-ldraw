@@ -14,7 +14,7 @@ function ldraw_lib__76382p7v() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb0300c01, BrickOwl 17901, City, Fire, firefighter
+// 0 !KEYWORDS Bricklink 973pb0300c01, City, Fire, firefighter
 // 0 !KEYWORDS Rebrickable 973c03h01pr1187, Set 10197, Set 10661, Set 20002
 // 0 !KEYWORDS Set 30001, Set 30010, Set 4900, Set 4938, Set 4992, Set 5613
 // 0 !KEYWORDS Set 6191, Set 7046, Set 7206, Set 7207, Set 7208, Set 7213, Set 7239

@@ -15,6 +15,8 @@ function ldraw_lib__973p1n() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 973px124, set 6337
+// 
 // 0 !HISTORY 2009-09-03 [PTadmin] Official Update 2009-02
 // 0 !HISTORY 2017-09-30 [MagFors] bfc'd
 // 0 !HISTORY 2018-01-30 [PTadmin] Official Update 2018-01

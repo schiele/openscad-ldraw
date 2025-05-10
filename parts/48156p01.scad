@@ -14,7 +14,7 @@ function ldraw_lib__48156p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Set 75238, Star Wars
+// 0 !KEYWORDS BrickLink 48156pb01, Rebrickable 48156pr0001, Set 75238, Star Wars
 // 
 // 0 !HISTORY 2022-09-18 [MagFors] Adjusted pattern and subfiles
 // 0 !HISTORY 2023-08-25 [OrionP] Official Update 2023-04

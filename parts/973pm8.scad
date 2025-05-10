@@ -12,7 +12,7 @@ function ldraw_lib__973pm8() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Lord of the Rings, Merry
+// 0 !KEYWORDS Lord of the Rings, Merry, set 9472
 // 
 // 0 !CMDLINE -c288
 // 

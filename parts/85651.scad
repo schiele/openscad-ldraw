@@ -1,9 +1,9 @@
 use <../lib.scad>
 function ldraw_lib__85651() = [
-// 0 Sheet Fabric 17 x 21 Triangular Sail
+// 0 Sail 17 x 21 Triangular
 // 0 Name: 85651.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2020-02
+// 0 !LDRAW_ORG Part UPDATE 2025-04
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -18,10 +18,10 @@ function ldraw_lib__85651() = [
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
 // 0 !HISTORY 2020-06-10 [cwdee] Update description
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
-// 
+// 0 !HISTORY 2025-04-25 [Holly-Wood] Update description
+// 0 !HISTORY 2025-04-27 [OrionP] Official Update 2025-04
 // 
 // 0 // Bottom Surface
-// 
 // 4 16 -152.9 0 208.2 -147.6 0 206.7 -152.41 0 195.25 -155 0 195.76
   [4,16,-152.9,0,208.2,-147.6,0,206.7,-152.41,0,195.25,-155,0,195.76],
 // 4 16 -159.6 0 207.7 -152.9 0 208.2 -155 0 195.76 -157.59 0 195.25

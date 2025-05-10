@@ -11,7 +11,8 @@ function ldraw_lib__3010p20() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS bricklink 3010pb008, Paradisa, Seaside, Set 6411
+// 0 !KEYWORDS bricklink 3010pb008, Paradisa, Rebrickable 3010apr0005, Seaside
+// 0 !KEYWORDS Set 6411
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 

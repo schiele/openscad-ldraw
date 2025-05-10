@@ -16,7 +16,7 @@ function ldraw_lib__958() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Figure Accessory
-// 0 !KEYWORDS Fabuland
+// 0 !KEYWORDS BrickLink x837, Fabuland, Rebrickable upn0302
 // 
 // 0 !HISTORY 2012-08-09 [PTadmin] Official Update 2012-02
 // 

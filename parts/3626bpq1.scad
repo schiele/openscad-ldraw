@@ -13,7 +13,7 @@ function ldraw_lib__3626bpq1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Amset-Ra, Bricklink 3626bpb0498, Brickowl 231153, Pharaoh's Quest
+// 0 !KEYWORDS Amset-Ra, BrickLink 3626pb0498, Pharaoh's Quest
 // 0 !KEYWORDS Rebrickable 3626bpr0758, Set 7327
 // 
 // 0 !CMDLINE -c71

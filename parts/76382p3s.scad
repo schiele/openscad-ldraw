@@ -14,8 +14,8 @@ function ldraw_lib__76382p3s() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Admiral Woodhouse, Bricklink 973p3sc01, BrickOwl 798296
-// 0 !KEYWORDS Rebrickable 973c22h27pr0003, set 6277
+// 0 !KEYWORDS Admiral Woodhouse, Bricklink 973p3sc01, Rebrickable 973c22h27pr0003
+// 0 !KEYWORDS set 6277
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

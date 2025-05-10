@@ -11,8 +11,8 @@ function ldraw_lib__4444p07() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 4444p06, Brickowl 598591, Castle, Rebrickable 4444pr0007
-// 0 !KEYWORDS set 6265, set 6276, set 6277
+// 0 !KEYWORDS Bricklink 4444p06, Castle, Rebrickable 4444pr0007, set 6265
+// 0 !KEYWORDS set 6276, set 6277
 // 
 // 0 !HISTORY 2012-08-09 [PTadmin] Official Update 2012-02
 // 0 !HISTORY 2024-05-30 [MagFors] Update description, added keywords

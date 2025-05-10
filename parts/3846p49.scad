@@ -13,8 +13,8 @@ function ldraw_lib__3846p49() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS Bricklink 3846pb055, Brickowl 326443, Rebrickable 3846pr0040
-// 0 !KEYWORDS Set  5007428, Set 21325, Set 31120, Set 910001, Set 910029
+// 0 !KEYWORDS Bricklink 3846pb055, Rebrickable 3846pr0040, Set 21325, Set 31120
+// 0 !KEYWORDS Set 5007428, Set 910001, Set 910029
 // 
 // 0 !HISTORY 2023-01-11 [Zaghor] Using subfiles
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02

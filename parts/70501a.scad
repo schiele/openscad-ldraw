@@ -16,7 +16,7 @@ function ldraw_lib__70501a() = [
 // 
 // 0 !CATEGORY Minifig Accessory
 // 0 !KEYWORDS Adventurers, Cash, chrome, coins, Divers, gold, money, Pirates
-// 0 !KEYWORDS treasure
+// 0 !KEYWORDS Rebrickable 57503, treasure
 // 
 // 0 !CMDLINE -c334
 // 

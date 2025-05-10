@@ -14,7 +14,8 @@ function ldraw_lib__3010pzt() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickheadz, BrickLink 3010pb244, Mickey Mouse, Set 41624
+// 0 !KEYWORDS Brickheadz, BrickLink 3010pb244, Mickey Mouse
+// 0 !KEYWORDS Rebrickable 3010pr0052, Set 41624
 // 
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
 // 

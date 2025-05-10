@@ -14,8 +14,8 @@ function ldraw_lib__4449_f2() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS attache case, baggage, Briefcase, container, luggage, suitcase, town
-// 0 !KEYWORDS Train, valise
+// 0 !KEYWORDS attache case, baggage, BrickLink 4449, Briefcase, container, luggage
+// 0 !KEYWORDS Rebrickable 4449, suitcase, town, Train, valise
 // 
 // 0 !HISTORY 2003-12-19 [PTadmin] Official Update 2003-03
 // 0 !HISTORY 2007-07-04 [PTadmin] Header formatted for Contributor Agreement

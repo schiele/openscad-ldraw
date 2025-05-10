@@ -14,7 +14,7 @@ function ldraw_lib__29030p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS Bricklink bb0756c01pb01, Collectible Minifigures, Eraser, Ferrule
-// 0 !KEYWORDS The Lego Batman Movie
+// 0 !KEYWORDS Rebrickable 29030pr2074, Set 71017-12, The Lego Batman Movie
 // 
 // 0 !HISTORY 2021-02-25 [Cheenzo] Added missing condline
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01

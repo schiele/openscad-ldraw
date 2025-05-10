@@ -13,7 +13,8 @@ function ldraw_lib__3626cpx5() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626cpb1782, Lego Dimensions, Michael Knight, Set 71286
+// 0 !KEYWORDS BrickLink 3626pb1782, Lego Dimensions, Michael Knight
+// 0 !KEYWORDS Rebrickable 3626cpr9893, Set 71286
 // 
 // 0 !CMDLINE -c78
 // 

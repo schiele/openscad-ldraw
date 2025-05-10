@@ -14,10 +14,10 @@ function ldraw_lib__76382p4k() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973px35c01, BrickOwl 935289, Castle, Fright Knights
-// 0 !KEYWORDS Hubble Bubble, Hylia, magic, Mini Upper Part No 234
-// 0 !KEYWORDS Rebrickable 973c03h01pr0035, Set 2872, Set 6031, Set 6037, Set 6087
-// 0 !KEYWORDS Set 6097, Set 9376, Spooky, Willa the Witch, Witch
+// 0 !KEYWORDS Bricklink 973px35c01, Castle, Fright Knights, Hubble Bubble, Hylia
+// 0 !KEYWORDS magic, Mini Upper Part No 234, Rebrickable 973c03h01pr0035, Set 2872
+// 0 !KEYWORDS Set 6031, Set 6037, Set 6087, Set 6097, Set 9376, Spooky
+// 0 !KEYWORDS Willa the Witch, Witch
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

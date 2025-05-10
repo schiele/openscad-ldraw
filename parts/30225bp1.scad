@@ -12,6 +12,8 @@ function ldraw_lib__30225bp1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 30225c01pb01, Rebrickable 30225pr0001
+// 
 // 0 !HISTORY 2007-11-02 [mikeheide] used stud groups
 // 0 !HISTORY 2009-02-05 [mikeheide] used subpart
 // 0 !HISTORY 2010-04-09 [mikeheide] Added missing elements

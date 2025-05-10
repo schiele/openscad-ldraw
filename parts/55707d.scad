@@ -12,6 +12,7 @@ function ldraw_lib__55707d() = [
   [0,"BFC","CW"],
 // 
 // 0 !CATEGORY Minifig Accessory
+// 0 !KEYWORDS BrickLink 56619, Rebrickable 56619
 // 
 // 0 !HISTORY 2013-12-23 [PTadmin] Official Update 2013-02
 // 

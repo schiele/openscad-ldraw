@@ -17,8 +17,8 @@ function ldraw_lib__73200bpx0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 970c00pb0461, Brickowl 227103, Dimensions Wave 2
-// 0 !KEYWORDS Doctor Who, Rebrickable 970c05pr0930, Set 71204
+// 0 !KEYWORDS Bricklink 970c00pb0461, Dimensions Wave 2, Doctor Who
+// 0 !KEYWORDS Rebrickable 970c05pr0930, Set 71204
 // 
 // 0 !HISTORY 2022-05-07 [ejboer] Original design
 // 0 !HISTORY 2023-05-20 [MagFors] Adapted to c-version leg

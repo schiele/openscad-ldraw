@@ -14,9 +14,8 @@ function ldraw_lib__75902pb2() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS Bricklink 75902pb13, Brickowl 910539, Captain America
-// 0 !KEYWORDS Rebrickable 75902pr0019, Set 242106, Set 761232, Set 76248
-// 0 !KEYWORDS Set 76269
+// 0 !KEYWORDS Bricklink 75902pb13, Captain America, Rebrickable 75902pr0019
+// 0 !KEYWORDS Set 242106, Set 761232, Set 76248, Set 76269
 // 
 // 0 !HISTORY 2024-05-28 [OrionP] Official Update 2024-04
 // 

@@ -13,7 +13,8 @@ function ldraw_lib__76110p03() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Alpha Team, Bricklink 32133ac03, Castle, cyberslam, Set 4770
+// 0 !KEYWORDS Alpha Team, Bricklink 32133ac03, Castle, cyberslam
+// 0 !KEYWORDS Rebrickable 76110c03, Set 4770
 // 
 // 0 !HISTORY 2022-02-06 [Lego-Manfred] Modifikation of 76110.dat, color of rubber Tip changed
 // 0 !HISTORY 2022-05-07 [PTadmin] Official Update 2022-03

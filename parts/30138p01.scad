@@ -12,10 +12,9 @@ function ldraw_lib__30138p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Bricklink 30138pb01, Brickowl 765016, chief, chieftain, leader
-// 0 !KEYWORDS Native American, Rebrickable 30138pr0001, set 5317, set 5392
-// 0 !KEYWORDS set 5923, set 6709, set 6746, set 6763, set 6766, tyee, west
-// 0 !KEYWORDS western, wild west
+// 0 !KEYWORDS Bricklink 30138pb01, chief, chieftain, leader, Native American
+// 0 !KEYWORDS Rebrickable 30138pr0001, set 5317, set 5392, set 5923, set 6709
+// 0 !KEYWORDS set 6746, set 6763, set 6766, tyee, west, western, wild west
 // 
 // 0 !HISTORY 2013-08-14 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2016-03-14 [Holly-Wood] File preparation for LDraw Parts Tracker

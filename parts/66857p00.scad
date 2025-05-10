@@ -13,7 +13,8 @@ function ldraw_lib__66857p00() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 66857pb023, Earth, Globe, Set 21332
+// 0 !KEYWORDS Bricklink 66857pb023, Earth, Globe, Rebrickable 66857pr0026
+// 0 !KEYWORDS Set 21332
 // 
 // 0 !HISTORY 2024-05-28 [OrionP] Official Update 2024-04
 // 

@@ -12,8 +12,8 @@ function ldraw_lib__3626cp87() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626cpb1699, Minifigure Collection, set 5002147
-// 0 !KEYWORDS TRU Exclusive
+// 0 !KEYWORDS BrickLink 3626pb1507, Minifigure Collection, Rebrickable 3626cpr1665
+// 0 !KEYWORDS set 5002147, TRU Exclusive
 // 
 // 0 !HISTORY 2014-06-21 [PTadmin] Official Update 2014-01
 // 0 !HISTORY 2022-07-11 [MagFors] Update description, added keywords

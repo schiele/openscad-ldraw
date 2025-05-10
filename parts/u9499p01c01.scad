@@ -15,7 +15,8 @@ function ldraw_lib__u9499p01c01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Sheet Fabric
-// 0 !KEYWORDS set 6286, Skull's Eye Schooner
+// 0 !KEYWORDS BrickLink sailbb31, Rebrickable upn0027pr0002, set 6286
+// 0 !KEYWORDS Skull's Eye Schooner
 // 
 // 0 !HISTORY 2022-05-07 [PTadmin] Official Update 2022-03
 // 

@@ -12,7 +12,8 @@ function ldraw_lib__2694p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 2694pb01R, Pizza Planet, Set 7598, Toy Story
+// 0 !KEYWORDS Bricklink 2694pb01R, Pizza Planet, Rebrickable 2694pr0002, Set 7598
+// 0 !KEYWORDS Toy Story
 // 
 // 0 !HISTORY 2023-04-17 [OrionP] Official Update 2023-02
 // 

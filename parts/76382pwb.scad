@@ -14,8 +14,8 @@ function ldraw_lib__76382pwb() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS American Indian, Bricklink 973px103c01, Brickowl 799768
-// 0 !KEYWORDS Chieftains Son, Mini Upper Part No 258, Rapid River Village
+// 0 !KEYWORDS American Indian, Bricklink 973px103c01, Chieftains Son
+// 0 !KEYWORDS Mini Upper Part No 258, Rapid River Village
 // 0 !KEYWORDS Rebrickable 973c26h01pr0103, set 2846, set 6718, set 6748, set 6763
 // 0 !KEYWORDS set 6766, western, wild west
 // 

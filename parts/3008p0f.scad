@@ -13,7 +13,8 @@ function ldraw_lib__3008p0f() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Discovery, Rebrickable 3008pr0043, Set 10283, Space Shuttle
+// 0 !KEYWORDS BrickLink 3008pb171L, Discovery, Rebrickable 3008pr0043, Set 10283
+// 0 !KEYWORDS Space Shuttle
 // 
 // 0 !HISTORY 2022-03-06 [PTadmin] Official Update 2022-02
 // 

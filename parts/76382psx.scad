@@ -14,7 +14,7 @@ function ldraw_lib__76382psx() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973px70c01, BrickOwl 913019, Episode VI, Galactic Empire
+// 0 !KEYWORDS Bricklink 973px70c01, Episode VI, Galactic Empire
 // 0 !KEYWORDS Imperial Royal Guard, Mini Upper Part No 476, Original Trilogy
 // 0 !KEYWORDS Rebrickable 973c22h22pr0070, Return of the Jedi, Set 6211, set 7166
 // 0 !KEYWORDS set 7264, Star Wars

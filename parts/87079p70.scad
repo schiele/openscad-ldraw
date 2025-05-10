@@ -12,8 +12,8 @@ function ldraw_lib__87079p70() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS 4+, Bricklink 87079pb0214, City, Juniors, Set 10680, Set 10683
-// 0 !KEYWORDS Set 10735, town, truck, Vehicle
+// 0 !KEYWORDS 4+, Bricklink 87079pb0214, City, Juniors, Rebrickable 87079pr0066
+// 0 !KEYWORDS Set 10680, Set 10683, Set 10735, town, truck, Vehicle
 // 
 // 0 !HISTORY 2023-11-19 [OrionP] Official Update 2023-06
 // 

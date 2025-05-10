@@ -11,8 +11,8 @@ function ldraw_lib__2431pzi() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Avengers, Brickheadz, BrickLink 2431pb512, Infinity War, Set 41605
-// 0 !KEYWORDS Thanos
+// 0 !KEYWORDS Avengers, Brickheadz, BrickLink 2431pb512, Infinity War
+// 0 !KEYWORDS Rebrickable 2431pr0118, Set 41605, Thanos
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
 // 

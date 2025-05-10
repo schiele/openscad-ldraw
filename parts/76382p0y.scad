@@ -14,8 +14,8 @@ function ldraw_lib__76382p0y() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb1902c01, Brickowl 720139, Kai, Ninjago
-// 0 !KEYWORDS Rebrickable 973c22h03pr2853, Set 70745, Set 70750, Set 71207
+// 0 !KEYWORDS Bricklink 973pb1902c01, Kai, Ninjago, Rebrickable 973c22h03pr2853
+// 0 !KEYWORDS Set 70745, Set 70750, Set 71207
 // 
 // 0 !HISTORY 2024-12-30 [OrionP] Official Update 2024-11
 // 

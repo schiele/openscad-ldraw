@@ -15,9 +15,8 @@ function ldraw_lib__98138p36() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 98138pb405, Brickowl 891648
-// 0 !KEYWORDS Mercedes-AMG F1 W14 E Performance, Rebrickable 98138pr0385
-// 0 !KEYWORDS Set 42171
+// 0 !KEYWORDS Bricklink 98138pb405, Mercedes-AMG F1 W14 E Performance
+// 0 !KEYWORDS Rebrickable 98138pr0385, Set 42171
 // 
 // 0 !HISTORY 2024-10-27 [OrionP] Official Update 2024-09
 // 

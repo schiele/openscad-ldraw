@@ -13,8 +13,7 @@ function ldraw_lib__2431p0a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 2431pb638, Brickowl 221202, Rebrickable 2431pr0153
-// 0 !KEYWORDS Set 71374
+// 0 !KEYWORDS Bricklink 2431pb638, Rebrickable 2431pr0153, Set 71374
 // 
 // 0 !HISTORY 2024-07-29 [OrionP] Official Update 2024-06
 // 0 !HISTORY 2024-08-28 [Cheenzo] Corrected spelling of Grey

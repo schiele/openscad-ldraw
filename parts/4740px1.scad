@@ -13,8 +13,8 @@ function ldraw_lib__4740px1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 4740pb012, Brickowl 161182, Mystery Machine
-// 0 !KEYWORDS Rebrickable 4740pr0010, Scooby Doo, Set 75902
+// 0 !KEYWORDS Bricklink 4740pb012, Mystery Machine, Rebrickable 4740pr0010
+// 0 !KEYWORDS Scooby Doo, Set 75902
 // 
 // 0 !HISTORY 2024-04-12 [MagFors] used s01 subfile
 // 0 !HISTORY 2024-05-28 [OrionP] Official Update 2024-04

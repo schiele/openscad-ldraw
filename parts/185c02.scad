@@ -12,6 +12,8 @@ function ldraw_lib__185c02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink x146c02
+// 
 // 0 !HISTORY 2007-11-09 [Jaco] Secondary author
 // 0 !HISTORY 2007-12-03 [mikeheide] changed origin
 // 0 !HISTORY 2012-08-09 [PTadmin] Official Update 2012-02

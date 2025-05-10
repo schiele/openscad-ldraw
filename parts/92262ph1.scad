@@ -12,7 +12,8 @@ function ldraw_lib__92262ph1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 92262pb004, Harry Potter, Set 75953, Set 75968
+// 0 !KEYWORDS Bricklink 92262pb004, Harry Potter, Rebrickable 92262pr0002
+// 0 !KEYWORDS Set 75953, Set 75968
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
 // 

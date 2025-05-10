@@ -11,7 +11,8 @@ function ldraw_lib__3068bp85() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Set 71006, Simpson, The Simpsons
+// 0 !KEYWORDS BrickLink 3068pb0827, Rebrickable 3068bpr0229, Set 71006, Simpson
+// 0 !KEYWORDS The Simpsons
 // 
 // 0 !HISTORY 2015-10-11 [PTadmin] Official Update 2015-01
 // 

@@ -12,7 +12,7 @@ function ldraw_lib__34172p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS BrickLink 34172pb03, Set 80101, Set 80105
+// 0 !KEYWORDS BrickLink 34172pb03, Rebrickable 34172pr0003, Set 80101, Set 80105
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
 // 

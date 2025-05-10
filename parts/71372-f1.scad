@@ -23,8 +23,8 @@ function ldraw_lib__71372_f1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Robotics Invention System, Set  9719, Set 3804, Set 7248, Set 8229
-// 0 !KEYWORDS Set 8419, Set 9747
+// 0 !KEYWORDS BrickLink 680c01, Rebrickable 71372, Robotics Invention System
+// 0 !KEYWORDS Set 3804, Set 7248, Set 8229, Set 8419, Set 9719, Set 9747
 // 
 // 0 !HISTORY 2000-09-30 [PTadmin] Official Update 2000-02
 // 0 !HISTORY 2007-10-28 [PTadmin] Header formatted for Contributor Agreement

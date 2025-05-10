@@ -18,6 +18,7 @@ function ldraw_lib__3431() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Vehicle
+// 0 !KEYWORDS BrickLink 3429, Rebrickable 3429
 // 
 // 0 !HISTORY 2010-07-05 [PTadmin] Official Update 2010-02
 // 0 !HISTORY 2021-03-30 [Philo] Renumbered from 3429. Added spring attachment.

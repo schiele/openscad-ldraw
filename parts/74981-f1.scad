@@ -13,6 +13,8 @@ function ldraw_lib__74981_f1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink x189c01, Rebrickable 74981
+// 
 // 0 !HISTORY 2009-12-16 [cwdee] Updated for changed subpart origins
 // 0 !HISTORY 2009-12-29 [PTadmin] Official Update 2009-03
 // 0 !HISTORY 2016-08-21 [PTadmin] Renamed from 74981a

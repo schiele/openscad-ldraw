@@ -15,7 +15,8 @@ function ldraw_lib__4066bp0s() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Brick
-// 0 !KEYWORDS Airport, bricklink 4066pb079, Set 1544, Set 2701, Train
+// 0 !KEYWORDS Airport, bricklink 4066pb079, Rebrickable 4066pr0131, Set 1544
+// 0 !KEYWORDS Set 2701, Train
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 

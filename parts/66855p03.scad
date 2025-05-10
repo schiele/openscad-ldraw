@@ -13,7 +13,8 @@ function ldraw_lib__66855p03() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS CMF Mario Series 2, Mushroom, Super Mario
+// 0 !KEYWORDS BrickLink 66855pb03, CMF Mario Series 2, Mushroom
+// 0 !KEYWORDS Rebrickable 66855pr0003, Super Mario
 // 
 // 0 !HISTORY 2023-08-25 [OrionP] Official Update 2023-04
 // 

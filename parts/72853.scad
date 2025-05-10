@@ -13,7 +13,7 @@ function ldraw_lib__72853() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Hose
-// 0 !KEYWORDS 16 Ribs, 40 mm, 7 mm D.
+// 0 !KEYWORDS 16 Ribs, 40 mm, 7 mm D., BrickLink 78c05, Rebrickable 78c05
 // 
 // 0 !HISTORY 2016-12-31 [PTadmin] Official Update 2016-01
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03

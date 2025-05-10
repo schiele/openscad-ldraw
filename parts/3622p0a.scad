@@ -11,8 +11,8 @@ function ldraw_lib__3622p0a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3622pb101, Brickowl 564960, Rebrickable 3622pr0044
-// 0 !KEYWORDS Set 70822, Set 70833, Unikitty
+// 0 !KEYWORDS Bricklink 3622pb101, Rebrickable 3622pr0044, Set 70822, Set 70833
+// 0 !KEYWORDS Unikitty
 // 
 // 0 !HISTORY 2022-06-07 [Holly-Wood] Changed color, added keywords
 // 0 !HISTORY 2022-12-20 [PTadmin] Official Update 2022-06

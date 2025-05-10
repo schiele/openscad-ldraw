@@ -14,8 +14,8 @@ function ldraw_lib__76382pn5() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS assassin, Black Ninja Bonsai, Bricklink 973px11c01, BrickOwl 588552
-// 0 !KEYWORDS Castle, Gi, honor, Japan, japanese, Kabaya, master of disguise
+// 0 !KEYWORDS assassin, Black Ninja Bonsai, Bricklink 973px11c01, Castle, Gi
+// 0 !KEYWORDS honor, Japan, japanese, Kabaya, master of disguise
 // 0 !KEYWORDS Mini Heroes Collection, Mini Upper Part No 287, ninjitsu
 // 0 !KEYWORDS Rebrickable 973c03h01pr0011, Robe, Set 1185, Set 3017, Set 3345
 // 0 !KEYWORDS Set 4805, Set 6045, Set 6083, Set 6088, set 6089, Set 6093, Shinobi

@@ -15,9 +15,9 @@ function ldraw_lib__84638p36() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973p36c01, BrickOwl 998743, Captain Red Beard
-// 0 !KEYWORDS Captain Redbeard, Captain Roger, Mini Upper Part No 91
-// 0 !KEYWORDS Rebrickable 84638c06pr0036, set 6285, set 6286, set 6290
+// 0 !KEYWORDS Bricklink 973p36c01, Captain Red Beard, Captain Redbeard
+// 0 !KEYWORDS Captain Roger, Mini Upper Part No 91, Rebrickable 84638c06pr0036
+// 0 !KEYWORDS set 6285, set 6286, set 6290
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

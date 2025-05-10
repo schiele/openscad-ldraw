@@ -11,6 +11,8 @@ function ldraw_lib__3005pwl() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
+// 0 !KEYWORDS BrickLink 3005ptPlusb, Rebrickable 3005pr9920, Set 987
+// 
 // 0 !HISTORY 2003-07-02 [Steffen] BFCed, re-worked to make use of existing subfile
 // 0 !HISTORY 2004-04-22 [PTadmin] Official Update 2004-02
 // 0 !HISTORY 2007-05-11 [PTadmin] Header formatted for Contributor Agreement

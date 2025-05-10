@@ -19,9 +19,9 @@ function ldraw_lib__3626bpsb() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS big eyes, Bricklink 3626bpsb, Brickowl 826878, Episode One, face
-// 0 !KEYWORDS Gasgano, Mos Espa, non-human, pod race, podracer
-// 0 !KEYWORDS Rebrickable 3626bpr0273, Set 7171, Star Wars
+// 0 !KEYWORDS big eyes, BrickLink 3626psb, Episode One, face, Gasgano, Mos Espa
+// 0 !KEYWORDS non-human, pod race, podracer, Rebrickable 3626bpr0273, Set 7171
+// 0 !KEYWORDS Star Wars
 // 
 // 0 !CMDLINE -c15
 // 

@@ -12,8 +12,8 @@ function ldraw_lib__973ps3() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Classic Trilogy, farm boy, Luke Skywalker, Mark Hamill, Star Wars
-// 0 !KEYWORDS Tatooine
+// 0 !KEYWORDS Classic Trilogy, farm boy, Luke Skywalker, Mark Hamill, set 4501
+// 0 !KEYWORDS Star Wars, Tatooine
 // 
 // 0 !CMDLINE -c15
 // 

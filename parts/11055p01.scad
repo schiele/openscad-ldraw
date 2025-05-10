@@ -11,7 +11,8 @@ function ldraw_lib__11055p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 2335pb175, Leviathan, Set 21313, Set 92177
+// 0 !KEYWORDS Bricklink 2335pb175, Leviathan, Rebrickable 11055pr0001, Set 21313
+// 0 !KEYWORDS Set 92177
 // 
 // 0 !HISTORY 2023-08-25 [OrionP] Official Update 2023-04
 // 

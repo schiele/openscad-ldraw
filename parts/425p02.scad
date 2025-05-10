@@ -12,6 +12,8 @@ function ldraw_lib__425p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS Rebrickable 425pr0002, Set 6371
+// 
 // 0 !HISTORY 2010-04-08 [mikeheide] added portion of subfile
 // 0 !HISTORY 2010-07-05 [PTadmin] Official Update 2010-02
 // 

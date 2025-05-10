@@ -14,6 +14,8 @@ function ldraw_lib__3069bp07() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 3069p07, Rebrickable 3069bpr0024, Set 6781
+// 
 // 0 !HISTORY 2009-05-02 [PTadmin] Official Update 2009-01
 // 0 !HISTORY 2009-08-14 [anathema] Corrected border colour
 // 0 !HISTORY 2009-12-29 [PTadmin] Official Update 2009-03

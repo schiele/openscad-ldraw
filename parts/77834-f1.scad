@@ -13,7 +13,7 @@ function ldraw_lib__77834_f1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Shock Absorber
+// 0 !KEYWORDS BrickLink 80432c01, Rebrickable 77834, Shock Absorber
 // 
 // 0 !HISTORY 2022-12-10 {LEGO Instructions App} Original part shape
 // 0 !HISTORY 2022-12-11 [Philo] File preparation for LDraw Parts Tracker

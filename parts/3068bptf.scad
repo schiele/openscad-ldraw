@@ -11,8 +11,8 @@ function ldraw_lib__3068bptf() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3068pb2007, Brickowl 726180, Harry Potter
-// 0 !KEYWORDS Rebrickable 3068bpr0644, Set 76408, set 76417
+// 0 !KEYWORDS Bricklink 3068pb2007, Harry Potter, Rebrickable 3068bpr0644
+// 0 !KEYWORDS Set 76408, set 76417
 // 
 // 0 !HISTORY 2024-06-30 [OrionP] Official Update 2024-05
 // 

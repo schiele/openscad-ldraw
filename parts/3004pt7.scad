@@ -11,7 +11,7 @@ function ldraw_lib__3004pt7() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Minecraft
+// 0 !KEYWORDS BrickLink 3004pb122, Minecraft, Rebrickable 3004pr0036, Set 21113
 // 
 // 0 !HISTORY 2015-10-11 [PTadmin] Official Update 2015-01
 // 0 !HISTORY 2019-05-08 [cwdee] Renamed from 3004ptc1

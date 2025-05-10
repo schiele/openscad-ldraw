@@ -14,7 +14,8 @@ function ldraw_lib__3626cpng() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626cpb1894, Ninjago, Zane
+// 0 !KEYWORDS BrickLink 3626pb1894, Ninjago, Rebrickable 3626cpr9976, Set 112114
+// 0 !KEYWORDS Zane
 // 
 // 0 !CMDLINE -c14
 // 

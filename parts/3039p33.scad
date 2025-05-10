@@ -13,6 +13,8 @@ function ldraw_lib__3039p33() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS Rebrickable 3039pr9995, Set 6894
+// 
 // 0 !HISTORY 2008-08-25 [Tore_Eriksson] CA rewrite; adjusted some rounding errors; T-junctions fixed; BFC'd
 // 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02
 // 0 !HISTORY 2014-11-21 [roland] Auto-corrected with libfix version of LDCad 1.4

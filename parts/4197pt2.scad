@@ -12,8 +12,8 @@ function ldraw_lib__4197pt2() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Brick
-// 0 !KEYWORDS Bricklink 4197pb003, Set 2372, Set 2666, Set 2668, Set 2669
-// 0 !KEYWORDS Signboard
+// 0 !KEYWORDS Bricklink 4197pb003, Rebrickable 4197pr0008, Set 2372, Set 2666
+// 0 !KEYWORDS Set 2668, Set 2669, Signboard
 // 
 // 0 !HISTORY 2024-06-30 [OrionP] Official Update 2024-05
 // 

@@ -18,7 +18,7 @@ function ldraw_lib__3998b() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Crane
-// 0 !KEYWORDS Mickey, Set 4166, Set 4652
+// 0 !KEYWORDS BrickLink 3998, Mickey, Rebrickable 3998, Set 4166, Set 4652
 // 
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
 // 

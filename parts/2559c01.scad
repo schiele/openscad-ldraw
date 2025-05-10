@@ -12,7 +12,8 @@ function ldraw_lib__2559c01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Armada, Pirate, Pirates, ship, skull
+// 0 !KEYWORDS Armada, BrickLink 2558c02, Pirate, Pirates, Rebrickable 2559c02
+// 0 !KEYWORDS ship, skull
 // 
 // 0 !HISTORY 2002-11-30 [PTadmin] Official Update 2002-05
 // 0 !HISTORY 2007-05-14 [PTadmin] Header formatted for Contributor Agreement

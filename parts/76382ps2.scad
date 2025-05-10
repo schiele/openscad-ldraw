@@ -14,10 +14,10 @@ function ldraw_lib__76382ps2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973ps2c01, BrickOwl 333458, Episode VI, Jabbas Palace
-// 0 !KEYWORDS jedi knight, Luke Skywalker, Mini Upper Part No 400
-// 0 !KEYWORDS Original Trilogy, Rebrickable 973c03h01pr0004, Return of the Jedi
-// 0 !KEYWORDS Set 3341, Set 4480, Set 7104, Star Wars, Tatooine
+// 0 !KEYWORDS Bricklink 973ps2c01, Episode VI, Jabbas Palace, jedi knight
+// 0 !KEYWORDS Luke Skywalker, Mini Upper Part No 400, Original Trilogy
+// 0 !KEYWORDS Rebrickable 973c03h01pr0004, Return of the Jedi, Set 3341, Set 4480
+// 0 !KEYWORDS Set 7104, Star Wars, Tatooine
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

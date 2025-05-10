@@ -25,8 +25,8 @@ function ldraw_lib__30361dpsa() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Advent Calendar 2014, Bricklink 30361pb029, day 22, minifig
-// 0 !KEYWORDS set 75056, Star Wars
+// 0 !KEYWORDS Advent Calendar 2014, BrickLink 30361cpb029, day 22, minifig
+// 0 !KEYWORDS Rebrickable 30361cpr1003, set 75056, Star Wars
 // 
 // 0 !HISTORY 2022-03-06 [PTadmin] Official Update 2022-02
 // 

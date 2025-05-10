@@ -14,7 +14,7 @@ function ldraw_lib__76382pm4() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb1186c01, BrickOwl 773196, Hobbit, Lord of the Rings
+// 0 !KEYWORDS Bricklink 973pb1186c01, Hobbit, Lord of the Rings
 // 0 !KEYWORDS Mini Upper Part No 2056, Rebrickable 973c11h02pr2056, Sam
 // 0 !KEYWORDS Samwise Gamgee, Set 9470, Shelob Attacks, The Fellowship
 // 

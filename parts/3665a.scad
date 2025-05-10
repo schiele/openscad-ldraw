@@ -11,6 +11,8 @@ function ldraw_lib__3665a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 3665, Rebrickable 3665
+// 
 // 0 !HISTORY 1998-06-20 [PTadmin] Official Update 1998-06
 // 0 !HISTORY 2003-01-21 [sbliss] Completed header; BFC'ed
 // 0 !HISTORY 2003-08-01 [PTadmin] Official Update 2003-02

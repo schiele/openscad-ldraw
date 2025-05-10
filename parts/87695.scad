@@ -13,6 +13,8 @@ function ldraw_lib__87695() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 6029a
+// 
 // 0 !HISTORY 2000-09-30 [PTadmin] Official Update 2000-02
 // 0 !HISTORY 2002-10-20 [cwdee] 4-4con12.dat >> 4-4con1.dat
 // 0 !HISTORY 2002-11-30 [PTadmin] Official Update 2002-05

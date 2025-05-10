@@ -11,7 +11,8 @@ function ldraw_lib__3069bpt5() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS 3069bpb507, Book, Fairy Tale
+// 0 !KEYWORDS 3069bpb507, Book, BrickLink 3069pb0507, Fairy Tale
+// 0 !KEYWORDS Rebrickable 3069bpr0148, Set 10270
 // 
 // 0 !HISTORY 2018-12-08 [PTadmin] Official Update 2018-02
 // 

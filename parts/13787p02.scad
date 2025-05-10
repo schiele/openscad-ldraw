@@ -13,7 +13,8 @@ function ldraw_lib__13787p02() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Bricklink 13787pb02, Christmas, Holiday, Set 40484
+// 0 !KEYWORDS Bricklink 13787pb02, Christmas, Holiday, Rebrickable 13787pr0003
+// 0 !KEYWORDS Set 40484
 // 
 // 0 !HISTORY 2022-10-14 [ejboer] Based on 13787p01 by Philo
 // 0 !HISTORY 2022-12-20 [PTadmin] Official Update 2022-06

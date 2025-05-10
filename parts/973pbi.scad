@@ -14,7 +14,7 @@ function ldraw_lib__973pbi() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Batman, Bricklink 973pb1839
+// 0 !KEYWORDS Batman, Bricklink 973pb1839, Set 71200
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
 // 

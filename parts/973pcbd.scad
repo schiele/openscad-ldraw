@@ -14,6 +14,7 @@ function ldraw_lib__973pcbd() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS animal, Bricklink 973pb1787, Collectible, Costume, pig, Series 12
+// 0 !KEYWORDS Set 71007
 // 
 // 0 !HISTORY 2020-06-28 [PTadmin] Official Update 2020-01
 // 

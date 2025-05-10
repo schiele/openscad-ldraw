@@ -19,6 +19,8 @@ function ldraw_lib__2350c() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 2350b, Rebrickable 2350b
+// 
 // 0 !HISTORY 2015-04-15 [GeraldLasser] Reorganised the 2350 part family and redone using subfiles
 // 0 !HISTORY 2015-10-11 [PTadmin] Official Update 2015-01
 // 

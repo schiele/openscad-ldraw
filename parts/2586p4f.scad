@@ -17,7 +17,8 @@ function ldraw_lib__2586p4f() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS Bat Lord, Batlord, Fright Knight, Knights
+// 0 !KEYWORDS Bat Lord, Batlord, Fright Knight, Knights, Rebrickable 2586pr0014
+// 0 !KEYWORDS Set 5383
 // 
 // 0 !HISTORY 2009-05-02 [PTadmin] Official Update 2009-01
 // 0 !HISTORY 2012-12-24 [cwdee] Add category

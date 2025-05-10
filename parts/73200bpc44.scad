@@ -17,8 +17,8 @@ function ldraw_lib__73200bpc44() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS bricklink 970c00pb0099, Brickowl 761579, CMF, Punk Rocker
-// 0 !KEYWORDS Rebrickable 970c05pr0401, Rock Band Drummer, Series 4, set 850486
+// 0 !KEYWORDS bricklink 970c00pb0099, CMF, Punk Rocker, Rebrickable 970c05pr0401
+// 0 !KEYWORDS Rock Band Drummer, Series 4, set 850486
 // 
 // 0 !HISTORY 2013-12-23 [MagFors] Original design as 3816cc44
 // 0 !HISTORY 2023-06-04 [Holly-Wood] Adapted to corrected geometry

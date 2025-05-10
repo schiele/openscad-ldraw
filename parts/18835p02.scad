@@ -13,7 +13,8 @@ function ldraw_lib__18835p02() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Bricklink 18835pb02, King Halbert, set 70357
+// 0 !KEYWORDS Bricklink 18835pb02, King Halbert, Rebrickable 18835pr0002
+// 0 !KEYWORDS set 70357
 // 
 // 0 !HISTORY 2022-09-15 [PTadmin] Official Update 2022-05
 // 

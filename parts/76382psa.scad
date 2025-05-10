@@ -14,11 +14,10 @@ function ldraw_lib__76382psa() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973psac01, BrickOwl 349521, fatigues
-// 0 !KEYWORDS Mini Upper Part No 370, Mini Upper Part No 402, Original Trilogy
-// 0 !KEYWORDS overalls, Rebel Alliance, Rebel Engineer, Rebel Technician
-// 0 !KEYWORDS Rebrickable 973c26h01pr9999, Set 7134, Set 7140, set 7142, Set 7180
-// 0 !KEYWORDS Star Wars, Uniform, Yavin
+// 0 !KEYWORDS Bricklink 973psac01, fatigues, Mini Upper Part No 370
+// 0 !KEYWORDS Mini Upper Part No 402, Original Trilogy, overalls, Rebel Alliance
+// 0 !KEYWORDS Rebel Engineer, Rebel Technician, Rebrickable 973c26h01pr9999
+// 0 !KEYWORDS Set 7134, Set 7140, set 7142, Set 7180, Star Wars, Uniform, Yavin
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

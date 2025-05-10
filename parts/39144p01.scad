@@ -13,7 +13,7 @@ function ldraw_lib__39144p01() = [
 // 
 // 0 !CATEGORY Minifig Accessory
 // 0 !KEYWORDS Bricklink 39144pb01, Collectible Minifigures Series 19, cone
-// 0 !KEYWORDS Set 71025
+// 0 !KEYWORDS Rebrickable 39144pr0001, Set 71025
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

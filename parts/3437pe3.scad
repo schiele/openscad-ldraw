@@ -12,7 +12,8 @@ function ldraw_lib__3437pe3() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Brick
-// 0 !KEYWORDS bricklink 3437pb020, Duck, McDonald's, Set 2315
+// 0 !KEYWORDS bricklink 3437pb020, Duck, McDonald's, Rebrickable 3437pr0059
+// 0 !KEYWORDS Set 2315
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
 // 

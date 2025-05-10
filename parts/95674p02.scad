@@ -13,7 +13,8 @@ function ldraw_lib__95674p02() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Batman, The Riddler
+// 0 !KEYWORDS Batman, BrickLink 95674pb02, Rebrickable 95674pr0002, Set 6857
+// 0 !KEYWORDS The Riddler
 // 
 // 0 !HISTORY 2012-08-09 [PTadmin] Official Update 2012-02
 // 

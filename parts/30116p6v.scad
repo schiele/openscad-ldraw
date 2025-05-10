@@ -14,7 +14,8 @@ function ldraw_lib__30116p6v() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Dome, quarter dome
+// 0 !KEYWORDS BrickLink 30116pb02, Dome, quarter dome, Rebrickable 30116pr0002
+// 0 !KEYWORDS set 6975
 // 
 // 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02
 // 

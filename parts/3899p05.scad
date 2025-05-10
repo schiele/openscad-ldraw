@@ -13,8 +13,8 @@ function ldraw_lib__3899p05() = [
 // 
 // 0 !CATEGORY Minifig Accessory
 // 0 !KEYWORDS Bricklink 3899pb005, cocoa, Coffee, Collectible Minifigures
-// 0 !KEYWORDS Cookware, drink, mug, Ned Flanders, Set 71005, tea, The Simpsons
-// 0 !KEYWORDS town, utensil
+// 0 !KEYWORDS Cookware, drink, mug, Ned Flanders, Rebrickable 3899pr0005
+// 0 !KEYWORDS Set 71005, tea, The Simpsons, town, utensil
 // 
 // 0 !HISTORY 2022-09-15 [PTadmin] Official Update 2022-05
 // 

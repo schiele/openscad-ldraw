@@ -14,7 +14,7 @@ function ldraw_lib__14769p82() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Salami
+// 0 !KEYWORDS BrickLink 4150pb165, Rebrickable 4150pr0049, Salami, Set 71007-11
 // 
 // 0 !HISTORY 2015-12-30 [PTadmin] Official Update 2015-02
 // 

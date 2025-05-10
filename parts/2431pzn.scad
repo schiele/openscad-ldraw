@@ -11,7 +11,8 @@ function ldraw_lib__2431pzn() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickheadz, BrickLink 2431pb537, Disney, Minnie Mouse, Set 41625
+// 0 !KEYWORDS Brickheadz, BrickLink 2431pb537, Disney, Minnie Mouse
+// 0 !KEYWORDS Rebrickable 2431pr0133, Set 41625
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 

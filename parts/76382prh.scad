@@ -14,10 +14,9 @@ function ldraw_lib__76382prh() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb0583c01, BrickOwl 583046, brown, Clone Wars
-// 0 !KEYWORDS Mini Upper Part No 1484, Neimoidian, orange, ornate
-// 0 !KEYWORDS Rebrickable 973c34h12pr1484, Robes, Set 7958, Set 8036, Star Wars
-// 0 !KEYWORDS Vice Roy
+// 0 !KEYWORDS Bricklink 973pb0583c01, brown, Clone Wars, Mini Upper Part No 1484
+// 0 !KEYWORDS Neimoidian, orange, ornate, Rebrickable 973c34h12pr1484, Robes
+// 0 !KEYWORDS Set 7958, Set 8036, Star Wars, Vice Roy
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

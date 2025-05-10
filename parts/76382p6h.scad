@@ -14,8 +14,8 @@ function ldraw_lib__76382p6h() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb1685c01, BrickOwl 609957, Rebrickable 973c03h14pr2694
-// 0 !KEYWORDS Set 70816, Space, The LEGO Movie
+// 0 !KEYWORDS Bricklink 973pb1685c01, Rebrickable 973c03h14pr2694, Set 70816
+// 0 !KEYWORDS Space, The LEGO Movie
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

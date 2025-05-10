@@ -11,6 +11,8 @@ function ldraw_lib__85984pc1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 85984pb100, Rebrickable 85984pr0143, Set 10257
+// 
 // 0 !HISTORY 2016-12-31 [PTadmin] Official Update 2016-01
 // 0 !HISTORY 2019-06-06 [Philo] Trimmed pattern for rounded corners
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03

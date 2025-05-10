@@ -12,7 +12,8 @@ function ldraw_lib__2440p04() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Blade, Bricklink 2440pb005, Panel, Set 1890, Set 6648, spoiler
+// 0 !KEYWORDS Blade, Bricklink 2440pb005, Panel, Rebrickable 2440pr0004, Set 1890
+// 0 !KEYWORDS Set 6648, spoiler
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
 // 

@@ -11,6 +11,8 @@ function ldraw_lib__6100p04() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 6100px3, Rebrickable 6100pr0003, Set 1966
+// 
 // 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02
 // 
 // 

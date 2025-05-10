@@ -12,7 +12,8 @@ function ldraw_lib__973p4r() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS BrickLink 973px47, Castle, guard, LEGOLAND Castle, tournament
+// 0 !KEYWORDS BrickLink 973px47, Castle, guard, LEGOLAND Castle, Set 383
+// 0 !KEYWORDS tournament
 // 
 // 0 !CMDLINE -C4
 // 

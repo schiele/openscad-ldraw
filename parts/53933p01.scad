@@ -12,6 +12,8 @@ function ldraw_lib__53933p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 30293pb01, Rebrickable 30293pat0002, Set 65849
+// 
 // 0 !HISTORY 2013-12-23 [PTadmin] Official Update 2013-02
 // 0 !HISTORY 2020-07-26 [cwdee] Renamed from 53933
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02

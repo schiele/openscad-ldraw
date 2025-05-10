@@ -11,8 +11,8 @@ function ldraw_lib__6636p05() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Architect, Architecture, Bricklink 6636pb017, Brickowl 73739
-// 0 !KEYWORDS Frank Lloyd Wright, New York City, Rebrickable 6636pr0003, Set 21004
+// 0 !KEYWORDS Architect, Architecture, Bricklink 6636pb017, Frank Lloyd Wright
+// 0 !KEYWORDS New York City, Rebrickable 6636pr0003, Set 21004
 // 0 !KEYWORDS Solomon R. Guggenheim Museum, USA
 // 
 // 0 !HISTORY 2012-08-09 [PTadmin] Official Update 2012-02

@@ -24,7 +24,7 @@ function ldraw_lib__50018a() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS Minifig Accessory Pack 11#
+// 0 !KEYWORDS Minifig Accessory Pack 11#, Rebrickable 50018e
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
 // 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives

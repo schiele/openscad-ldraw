@@ -14,10 +14,10 @@ function ldraw_lib__76382ps8() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973px88c01, BrickOwl 170784, Darth Maul, Episode I
-// 0 !KEYWORDS Mini Heroes Collection, Mini Upper Part No 386
-// 0 !KEYWORDS Rebrickable 973c03h03pr1340, Set 3340, Set 7101, set 7151, set 7663
-// 0 !KEYWORDS sith, Star War, The Phantom Menace, Zabrak
+// 0 !KEYWORDS Bricklink 973px88c01, Darth Maul, Episode I, Mini Heroes Collection
+// 0 !KEYWORDS Mini Upper Part No 386, Rebrickable 973c03h03pr1340, Set 3340
+// 0 !KEYWORDS Set 7101, set 7151, set 7663, sith, Star War, The Phantom Menace
+// 0 !KEYWORDS Zabrak
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

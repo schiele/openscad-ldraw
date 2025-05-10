@@ -12,6 +12,8 @@ function ldraw_lib__973p7h() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 973px200, Set 10157
+// 
 // 0 !HISTORY 2011-07-25 [PTadmin] Official Update 2011-01
 // 0 !HISTORY 2012-04-08 [BlackBrick89] Replaced Metallic Colours
 // 0 !HISTORY 2012-08-09 [PTadmin] Official Update 2012-02

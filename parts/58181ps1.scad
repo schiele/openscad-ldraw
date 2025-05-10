@@ -11,7 +11,8 @@ function ldraw_lib__58181ps1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 58181pb10, Kylo Ren, Set 75179, Star Wars, TIE Fighter
+// 0 !KEYWORDS Bricklink 58181pb10, Kylo Ren, Rebrickable 58181pr0003, Set 75179
+// 0 !KEYWORDS Star Wars, TIE Fighter
 // 
 // 0 !HISTORY 2023-01-07 [MMR1988] Used Subpart
 // 0 !HISTORY 2023-11-25 [MagFors] Removed unwanted edge lines

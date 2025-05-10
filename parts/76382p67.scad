@@ -14,7 +14,7 @@ function ldraw_lib__76382p67() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Alien, Armaron, Bricklink 973px92c01, BrickOwl 912956, Captain Wizer
+// 0 !KEYWORDS Alien, Armaron, Bricklink 973px92c01, Captain Wizer
 // 0 !KEYWORDS Celestial Stinger, Cyborg, Extraterrestrial, Holox, Insectoids
 // 0 !KEYWORDS Mini Upper Part No 310, Rebrickable 973c03h28pr0092, set 3072
 // 0 !KEYWORDS Set 6969, Space, Zec, Zotax

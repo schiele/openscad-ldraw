@@ -13,8 +13,8 @@ function ldraw_lib__3437pe0() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Brick
-// 0 !KEYWORDS animal, Basic Bucket, bricklink 3437pb015, Brickowl 776593
-// 0 !KEYWORDS Rebrickable 3437pr0055, Set 1544, Set 2424
+// 0 !KEYWORDS animal, Basic Bucket, bricklink 3437pb015, Rebrickable 3437pr0055
+// 0 !KEYWORDS Set 1544, Set 2424
 // 
 // 0 !HISTORY 2024-05-28 [OrionP] Official Update 2024-04
 // 

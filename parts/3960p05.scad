@@ -18,7 +18,8 @@ function ldraw_lib__3960p05() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Radar Dish, Round, Space
+// 0 !KEYWORDS BrickLink 3960pb001, Radar Dish, Rebrickable 3960pr9984, Round
+// 0 !KEYWORDS Set 6401, Space
 // 
 // 0 !CMDLINE -c15
 // 

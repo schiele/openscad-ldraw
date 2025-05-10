@@ -34,8 +34,8 @@ function ldraw_lib__30089a() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS 35mm, film, instamatic, photography, pocket, slide, still, tourist
-// 0 !KEYWORDS town
+// 0 !KEYWORDS 35mm, BrickLink 30089, film, instamatic, photography, pocket, slide
+// 0 !KEYWORDS still, tourist, town
 // 
 // 0 !HISTORY 2002-02-18 [PTadmin] Official Update 2002-01
 // 0 !HISTORY 2007-06-06 [PTadmin] Header formatted for Contributor Agreement

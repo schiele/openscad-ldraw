@@ -12,7 +12,7 @@ function ldraw_lib__30157a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS hub, non-stackable, wheel
+// 0 !KEYWORDS BrickLink 30157, hub, non-stackable, Rebrickable 30157, wheel
 // 
 // 0 !HISTORY 2000-05-07 [PTadmin] Official Update 2000-01
 // 0 !HISTORY 2007-06-06 [PTadmin] Replaced box38p references with box3u8p#

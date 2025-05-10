@@ -12,8 +12,7 @@ function ldraw_lib__17485p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 17485pb004, Brickowl 670383, Icecream
-// 0 !KEYWORDS Rebrickable 17485pr0004, Set 70822
+// 0 !KEYWORDS Bricklink 17485pb004, Icecream, Rebrickable 17485pr0004, Set 70822
 // 
 // 0 !HISTORY 2024-05-28 [OrionP] Official Update 2024-04
 // 

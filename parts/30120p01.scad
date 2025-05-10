@@ -13,7 +13,8 @@ function ldraw_lib__30120p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Invaders, Space, UFO
+// 0 !KEYWORDS BrickLink x182px1, Invaders, Rebrickable 30120pr0001, Set 5384
+// 0 !KEYWORDS Space, UFO
 // 
 // 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02
 // 0 !HISTORY 2012-12-24 [cwdee] Update category

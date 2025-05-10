@@ -11,7 +11,8 @@ function ldraw_lib__3004pza() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Anna, Brickheadz, BrickLink 3004pb168, Frozen, Set 41618
+// 0 !KEYWORDS Anna, Brickheadz, BrickLink 3004pb168, Frozen
+// 0 !KEYWORDS Rebrickable 3004pr0039, Set 41618
 // 
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
 // 

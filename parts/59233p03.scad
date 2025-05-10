@@ -13,8 +13,8 @@ function ldraw_lib__59233p03() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS Bricklink 59233pb03, dark purple, Flash, Force, Joker, Set 4527
-// 0 !KEYWORDS Wave
+// 0 !KEYWORDS Bricklink 59233pb03, dark purple, Flash, Force, Joker
+// 0 !KEYWORDS Rebrickable 59233pat0003, Set 4527, Wave
 // 
 // 0 !CMDLINE -c25
 // 

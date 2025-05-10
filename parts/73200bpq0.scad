@@ -17,9 +17,9 @@ function ldraw_lib__73200bpq0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 970c00pb0074, Brickowl 174191, Mummy Warrior
-// 0 !KEYWORDS Pharaoh's Quest, Rebrickable 970c14pr0197, set 7306, Set 7307
-// 0 !KEYWORDS Set 7325, Set 7327, set 853176
+// 0 !KEYWORDS Bricklink 970c00pb0074, Mummy Warrior, Pharaoh's Quest
+// 0 !KEYWORDS Rebrickable 970c14pr0197, set 7306, Set 7307, Set 7325, Set 7327
+// 0 !KEYWORDS set 853176
 // 
 // 0 !HISTORY 2011-12-29 [Wesley] Original pattern design
 // 0 !HISTORY 2020-05-31 [MagFors] Adapted to corrected geometry

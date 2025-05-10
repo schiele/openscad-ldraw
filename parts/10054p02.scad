@@ -16,8 +16,8 @@ function ldraw_lib__10054p02() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Bricklink 10054pb02, Brickowl 690745, Lord of the Rings
-// 0 !KEYWORDS Rebrickable 10054pr0002, set 9474, Théoden
+// 0 !KEYWORDS Bricklink 10054pb02, Lord of the Rings, Rebrickable 10054pr0002
+// 0 !KEYWORDS set 9474, Théoden
 // 
 // 0 !HISTORY 2013-12-23 [PTadmin] Official Update 2013-02
 // 0 !HISTORY 2025-02-26 [OrionP] Added keywords

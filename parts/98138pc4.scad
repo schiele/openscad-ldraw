@@ -15,8 +15,8 @@ function ldraw_lib__98138pc4() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 98138pb175, Porsche, Set 10255, Set 10262, set 10271
-// 0 !KEYWORDS Set 10274, Set 10295, Set 60306, Set 71741
+// 0 !KEYWORDS Bricklink 98138pb175, Porsche, Rebrickable 98138pr0186, Set 10255
+// 0 !KEYWORDS Set 10262, set 10271, Set 10274, Set 10295, Set 60306, Set 71741
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
 // 

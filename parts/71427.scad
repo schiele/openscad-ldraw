@@ -12,6 +12,8 @@ function ldraw_lib__71427() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 71427c01, Rebrickable 71427c01
+// 
 // 0 !HISTORY 1999-05-17 [PTadmin] Official Update 1999-03
 // 0 !HISTORY 2007-10-12 [PTadmin] Replaced box38p references with box3u8p#
 // 0 !HISTORY 2007-10-12 [PTadmin] Header formatted for Contributor Agreement

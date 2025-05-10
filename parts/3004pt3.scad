@@ -13,9 +13,9 @@ function ldraw_lib__3004pt3() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3004p60, BrickOwl 14788, Rebrickable 3004pr9972, Set 1467
-// 0 !KEYWORDS Set 1470, Set 149, Set 217, Set 330, Set 368, Set 6394, set 6395
-// 0 !KEYWORDS Set 688, Set 690
+// 0 !KEYWORDS Bricklink 3004p60, Rebrickable 3004pr9972, Set 1467, Set 1470
+// 0 !KEYWORDS Set 149, Set 217, Set 330, Set 368, Set 6394, set 6395, Set 688
+// 0 !KEYWORDS Set 690
 // 
 // 0 !CMDLINE -c15
 // 

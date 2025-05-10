@@ -22,7 +22,8 @@ function ldraw_lib__4186p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS football, playing field, set 3302, Sports, World Cup
+// 0 !KEYWORDS football, playing field, Rebrickable 4186pr0001, set 3302, Sports
+// 0 !KEYWORDS World Cup
 // 
 // 0 !CMDLINE -c2
 // 

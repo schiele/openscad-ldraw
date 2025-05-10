@@ -14,7 +14,8 @@ function ldraw_lib__16709p03() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Birthday Party Girl, CMF series 18
+// 0 !KEYWORDS Birthday Party Girl, BrickLink 41879pb011, CMF series 18
+// 0 !KEYWORDS Rebrickable 16709pats01pr0014
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
 // 0 !HISTORY 2022-01-22 [OrionP] Update description

@@ -16,8 +16,8 @@ function ldraw_lib__98138p11() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 98138pb146, Monkey King, Monkie Kid, Set 80012
-// 0 !KEYWORDS Warrior Mech
+// 0 !KEYWORDS Bricklink 98138pb146, Monkey King, Monkie Kid
+// 0 !KEYWORDS Rebrickable 98138pr0159, Set 80012, Warrior Mech
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
 // 

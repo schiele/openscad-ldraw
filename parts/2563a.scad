@@ -24,6 +24,8 @@ function ldraw_lib__2563a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 2563, Rebrickable 2563
+// 
 // 0 !HISTORY 2019-12-15 [Philo] Replacement for 2563. Corrected wrong stud height, refined shape
 // 0 !HISTORY 2020-06-28 [PTadmin] Official Update 2020-01
 // 

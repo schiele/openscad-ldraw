@@ -11,7 +11,8 @@ function ldraw_lib__30361aps4() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS droid, Round, Star Wars, TIE-Bomber
+// 0 !KEYWORDS BrickLink 30361px4, droid, Rebrickable 30361cpr0005, Round
+// 0 !KEYWORDS Set 4207901, Star Wars, TIE-Bomber
 // 
 // 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02
 // 0 !HISTORY 2012-05-14 [TK-949] Adjusting to reworked subpart

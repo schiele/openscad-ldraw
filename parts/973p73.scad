@@ -12,7 +12,7 @@ function ldraw_lib__973p73() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS outback, town
+// 0 !KEYWORDS outback, set 10159, town
 // 
 // 0 !CMDLINE -c2
 // 

@@ -12,7 +12,8 @@ function ldraw_lib__608p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS accessory pack, Airport, helipad, runway, Space, Tee-plate
+// 0 !KEYWORDS accessory pack, Airport, helipad, Rebrickable 608pr0002, runway
+// 0 !KEYWORDS Set 6710, Space, Tee-plate
 // 
 // 0 !HISTORY 1999-05-17 [PTadmin] Official Update 1999-03
 // 0 !HISTORY 2007-07-12 [PTadmin] Header formatted for Contributor Agreement

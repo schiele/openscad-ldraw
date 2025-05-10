@@ -15,7 +15,8 @@ function ldraw_lib__87857pk4() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 970clg00pb04, Disney, Jessie, Set 7599, Toy Story
+// 0 !KEYWORDS Bricklink 970clg00pb04, Disney, Jessie, Rebrickable 970f01pr0003
+// 0 !KEYWORDS Set 7599, Toy Story
 // 
 // 0 !HISTORY 2023-06-24 [OrionP] Official Update 2023-03
 // 

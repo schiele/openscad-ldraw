@@ -14,7 +14,8 @@ function ldraw_lib__92755p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS pod racer, Set 7962, set 9675, Tatooine
+// 0 !KEYWORDS BrickLink 92755pb01, pod racer, Rebrickable 92755pr0001, Set 7962
+// 0 !KEYWORDS set 9675, Tatooine
 // 
 // 0 !HISTORY 2023-10-31 [OrionP] Official Update 2023-05
 // 

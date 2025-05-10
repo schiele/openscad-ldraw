@@ -36,7 +36,7 @@ function ldraw_lib__510() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Vehicle
-// 0 !KEYWORDS Lowbed, Lowloader
+// 0 !KEYWORDS BrickLink 966, Lowbed, Lowloader, Rebrickable 966
 // 
 // 0 !HISTORY 2009-12-29 [PTadmin] Official Update 2009-03
 // 0 !HISTORY 2010-11-22 [anathema] Added !CATEGORY

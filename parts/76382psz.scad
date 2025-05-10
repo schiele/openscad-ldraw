@@ -14,10 +14,10 @@ function ldraw_lib__76382psz() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb0516c01, BrickOwl 713443, Death Star
-// 0 !KEYWORDS Element ID 6023365, Imperial Shuttle, Mini Upper Part No 1469
-// 0 !KEYWORDS Original Trilogy, Rebrickable 973c03h03pr1469, Set 10188, Set 10212
-// 0 !KEYWORDS Set 10221, Set 7965, Set 8017, sith, Star Wars, Super Star Destroyer
+// 0 !KEYWORDS Bricklink 973pb0516c01, Death Star, Element ID 6023365
+// 0 !KEYWORDS Imperial Shuttle, Mini Upper Part No 1469, Original Trilogy
+// 0 !KEYWORDS Rebrickable 973c03h03pr1469, Set 10188, Set 10212, Set 10221
+// 0 !KEYWORDS Set 7965, Set 8017, sith, Star Wars, Super Star Destroyer
 // 0 !KEYWORDS TIE Advanced, UCS
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02

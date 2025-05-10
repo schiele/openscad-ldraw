@@ -13,7 +13,8 @@ function ldraw_lib__20546p02() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS Catapult, Lucas Sinclair, Stranger Things, Weapon
+// 0 !KEYWORDS BrickLink 19900pb02, Catapult, Lucas Sinclair
+// 0 !KEYWORDS Rebrickable 19900pr0002, Set 75810, Stranger Things, Weapon
 // 
 // 0 !HISTORY 2019-09-09 [PTadmin] Official Update 2019-02
 // 

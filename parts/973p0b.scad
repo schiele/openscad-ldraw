@@ -12,7 +12,7 @@ function ldraw_lib__973p0b() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !KEYWORDS Jacket, town, Zipper
+// 0 !KEYWORDS Jacket, set 6346, town, Zipper
 // 
 // 0 !HISTORY 2004-04-22 [PTadmin] Official Update 2004-02
 // 0 !HISTORY 2007-07-28 [PTadmin] Header formatted for Contributor Agreement

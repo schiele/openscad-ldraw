@@ -11,6 +11,8 @@ function ldraw_lib__3008p10() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 3008pb013b, Rebrickable 3008pr0025, set 675
+// 
 // 0 !CMDLINE -c15
 // 
 // 0 !HISTORY 2019-05-28 [Darats] Pattern Rework

@@ -14,7 +14,7 @@ function ldraw_lib__76382pg0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Adidas, Bricklink 973px26c01, BrickOwl 67103, football, France
+// 0 !KEYWORDS Adidas, Bricklink 973px26c01, football, France
 // 0 !KEYWORDS Mini Upper Part No 469, Rebrickable 973c28h01pr0025, Set 3401
 // 0 !KEYWORDS Soccer, Sports, Zinedine Zidane
 // 

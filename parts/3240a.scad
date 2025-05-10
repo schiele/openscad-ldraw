@@ -20,6 +20,8 @@ function ldraw_lib__3240a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
+// 0 !KEYWORDS BrickLink 3242c, Rebrickable 3242c
+// 
 // 0 !CMDLINE -c7
 // 
 // 0 !HISTORY 2012-02-06 [MagFors] Added missing edge lines along underside rib

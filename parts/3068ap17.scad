@@ -15,6 +15,8 @@ function ldraw_lib__3068ap17() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
+// 0 !KEYWORDS Rebrickable 3068apr0003, Set 261-4
+// 
 // 0 !HISTORY 2003-11-12 [Steffen] BFCed, fixed L3P errors, extended title
 // 0 !HISTORY 2004-04-22 [PTadmin] Official Update 2004-02
 // 0 !HISTORY 2007-06-13 [PTadmin] Header formatted for Contributor Agreement

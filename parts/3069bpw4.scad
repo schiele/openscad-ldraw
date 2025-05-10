@@ -13,7 +13,8 @@ function ldraw_lib__3069bpw4() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Collectable, Jester, Series 12, Set 71007
+// 0 !KEYWORDS BrickLink 3069pb0338, Collectable, Jester, Rebrickable 3069bpr0012
+// 0 !KEYWORDS Series 12, Set 71007
 // 
 // 0 !HISTORY 2015-12-30 [PTadmin] Official Update 2015-02
 // 

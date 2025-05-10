@@ -11,8 +11,8 @@ function ldraw_lib__3069bpzj() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Avengers, Brickheadz, BrickLink 3069bpb638, Infinity Gauntlet
-// 0 !KEYWORDS Infinity War, Set 41605, Thanos
+// 0 !KEYWORDS Avengers, Brickheadz, BrickLink 3069pb0638, Infinity Gauntlet
+// 0 !KEYWORDS Infinity War, Rebrickable 3069bpr0221, Set 41605, Thanos
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 

@@ -28,7 +28,7 @@ function ldraw_lib__2431pt6() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 2431pb676, Porsche, Set 10295
+// 0 !KEYWORDS Bricklink 2431pb676, Porsche, Rebrickable 2431pr0166, Set 10295
 // 
 // 0 !CMDLINE -c15
 // 

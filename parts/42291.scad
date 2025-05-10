@@ -17,6 +17,8 @@ function ldraw_lib__42291() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 30294, Rebrickable 30294
+// 
 // 0 !HISTORY 2007-08-25 {LEGO Universe Team} Original part shape
 // 0 !HISTORY 2012-01-25 [Philo] File preparation for LDraw Parts Tracker
 // 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01

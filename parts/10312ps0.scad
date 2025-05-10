@@ -12,8 +12,7 @@ function ldraw_lib__10312ps0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 10312pb09, Brickowl 1141558, Rebrickable 10312pr0010
-// 0 !KEYWORDS Set 75309, Star Wars
+// 0 !KEYWORDS Bricklink 10312pb09, Rebrickable 10312pr0010, Set 75309, Star Wars
 // 
 // 0 !HISTORY 2023-11-19 [OrionP] Official Update 2023-06
 // 

@@ -12,7 +12,8 @@ function ldraw_lib__3068bpt1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3068bpb0007, City, Parking, Set 2881, Set 6394, town
+// 0 !KEYWORDS BrickLink 3068pb0007, City, Parking, Rebrickable 3068bpr0366
+// 0 !KEYWORDS Set 2881, Set 6394, town
 // 
 // 0 !HISTORY 2009-12-29 [PTadmin] Official Update 2009-03
 // 0 !HISTORY 2022-08-28 [RainbowDolphin] Pattern subfiled, added keywords

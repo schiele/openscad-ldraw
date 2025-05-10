@@ -12,9 +12,9 @@ function ldraw_lib__14769p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 14769pb004, Brickowl 995791, Eye, Rebrickable 14769pr1003
-// 0 !KEYWORDS Set 31021, Set 41501, Set 41504, Set 41506, Set 41515, Set 41518
-// 0 !KEYWORDS Set 41522, Set 41525
+// 0 !KEYWORDS Bricklink 14769pb004, Eye, Rebrickable 14769pr1003, Set 31021
+// 0 !KEYWORDS Set 41501, Set 41504, Set 41506, Set 41515, Set 41518, Set 41522
+// 0 !KEYWORDS Set 41525
 // 
 // 0 !HISTORY 2014-12-23 [PTadmin] Official Update 2014-02
 // 0 !HISTORY 2023-04-16 [Cheenzo] Used more prims, Subfiled for reuse, Added keywords

@@ -13,7 +13,7 @@ function ldraw_lib__2335p45() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 2335px8, Castle, Set 6041
+// 0 !KEYWORDS Bricklink 2335px8, Castle, Rebrickable 2335pr0033, Set 6041
 // 
 // 0 !HISTORY 2012-08-09 [PTadmin] Official Update 2012-02
 // 0 !HISTORY 2022-05-09 [OrionP] Updated Description

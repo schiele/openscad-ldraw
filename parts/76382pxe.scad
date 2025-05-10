@@ -14,9 +14,8 @@ function ldraw_lib__76382pxe() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb2059, BrickOwl 94936, Jurassic world
-// 0 !KEYWORDS Rebrickable 973c05h03pr3060, Set 71205, Set 75915, Set 75916
-// 0 !KEYWORDS Set 75917, Set 75918, Set 75919
+// 0 !KEYWORDS BrickLink 973pb2059c01, Jurassic world, Rebrickable 973c05h03pr3060
+// 0 !KEYWORDS Set 71205, Set 75915, Set 75916, Set 75917, Set 75918, Set 75919
 // 
 // 0 !HISTORY 2024-12-30 [OrionP] Official Update 2024-11
 // 

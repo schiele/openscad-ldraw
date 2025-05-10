@@ -11,7 +11,8 @@ function ldraw_lib__3245cpzd() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickheadz, BrickLink 3245cpb083, Set 41627, Star Wars, Yoda
+// 0 !KEYWORDS Brickheadz, BrickLink 3245cpb083, Rebrickable 3245cpr9997, Set 41627
+// 0 !KEYWORDS Star Wars, Yoda
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 

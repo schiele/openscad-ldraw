@@ -11,7 +11,8 @@ function ldraw_lib__2431px2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS BrickLink 2431pb462, Magma Cube, Minecraft, Set 21130, Set 21150
+// 0 !KEYWORDS BrickLink 2431pb462, Magma Cube, Minecraft, Rebrickable 2431pr0083
+// 0 !KEYWORDS Set 21130, Set 21150
 // 
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04
 // 

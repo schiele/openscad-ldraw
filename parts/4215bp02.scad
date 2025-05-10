@@ -15,7 +15,7 @@ function ldraw_lib__4215bp02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 4215bpx27, set 6330
+// 0 !KEYWORDS Bricklink 4215bpx27, Rebrickable 4215bpr0006, set 6330
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
 // 

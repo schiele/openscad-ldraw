@@ -12,7 +12,8 @@ function ldraw_lib__88644p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Boulder, Bricklink 88644pb01, Geode, octagonal, Set 60348
+// 0 !KEYWORDS Boulder, Bricklink 88644pb01, Geode, octagonal
+// 0 !KEYWORDS Rebrickable 88644pat0001, Set 60348
 // 
 // 0 !HISTORY 2022-03-09 {LEGO Instructions App} Original part shape
 // 0 !HISTORY 2022-03-11 [Philo] File preparation for LDraw Parts Tracker

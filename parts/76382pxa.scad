@@ -14,7 +14,7 @@ function ldraw_lib__76382pxa() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb2153c01, BrickOwl 279160, Dimensions, Doctor Who
+// 0 !KEYWORDS Bricklink 973pb2153c01, Dimensions, Doctor Who
 // 0 !KEYWORDS Mini Upper Part No 3130, Peter Capaldi, Rebrickable 973c05h02pr3130
 // 0 !KEYWORDS Set 71204, Tardis, Time Travel, Twelfth Doctor
 // 

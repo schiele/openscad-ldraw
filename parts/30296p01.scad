@@ -12,6 +12,8 @@ function ldraw_lib__30296p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
+// 0 !KEYWORDS BrickLink 30296px1, Rebrickable 30296pr0001, Set 4940
+// 
 // 0 !HISTORY 2005-03-26 [Holly-Wood] wrote pattern from scratch and added gray spots, subfiled, BFCed
 // 0 !HISTORY 2010-04-05 [PTadmin] Official Update 2010-01
 // 

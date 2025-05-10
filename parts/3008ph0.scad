@@ -11,7 +11,8 @@ function ldraw_lib__3008ph0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bank, Bricklink 3008px5, Harry, Potter
+// 0 !KEYWORDS Bank, Bricklink 3008px5, Harry, Potter, Rebrickable 3008pr0042
+// 0 !KEYWORDS Set 4714
 // 
 // 0 !HISTORY 2019-12-27 [PTadmin] Official Update 2019-03
 // 

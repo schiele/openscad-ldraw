@@ -11,6 +11,8 @@ function ldraw_lib__3067b() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink crssprt02, Rebrickable 3009a
+// 
 // 0 !HISTORY 2017-01-10 [Steffen] splitup in a/b variants
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
 // 

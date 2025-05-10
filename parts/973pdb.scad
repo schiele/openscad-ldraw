@@ -14,8 +14,8 @@ function ldraw_lib__973pdb() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
-// 0 !KEYWORDS dapper, gentleman, gold chain, gold watch, hero, horror, Studio
-// 0 !KEYWORDS vest, Victorian, watchfob
+// 0 !KEYWORDS dapper, gentleman, gold chain, gold watch, hero, horror, Set 1380
+// 0 !KEYWORDS Studio, vest, Victorian, watchfob
 // 
 // 0 !CMDLINE -c487
 // 

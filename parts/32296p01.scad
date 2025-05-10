@@ -18,7 +18,8 @@ function ldraw_lib__32296p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Set 8458, Silver Champion
+// 0 !KEYWORDS BrickLink 32296pb01, Rebrickable 32296pr0001, Set 8458
+// 0 !KEYWORDS Silver Champion
 // 
 // 0 !HISTORY 2013-07-21 [PTadmin] Official Update 2013-01
 // 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives

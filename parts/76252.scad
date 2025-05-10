@@ -12,7 +12,7 @@ function ldraw_lib__76252() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS bar, tube
+// 0 !KEYWORDS bar, BrickLink 75c22, Rebrickable 75c22, tube
 // 
 // 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02
 // 

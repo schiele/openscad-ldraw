@@ -20,7 +20,7 @@ function ldraw_lib__90462bpq4() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Bricklink 90462pb04, Brickowl 967902, CMF, Collectable, King Tut
+// 0 !KEYWORDS BrickLink x177pb04, CMF, Collectable, King Tut
 // 0 !KEYWORDS Rebrickable 90462pr0005, series 1, set 71017, The Batman Movie
 // 
 // 0 !HISTORY 2024-07-29 [OrionP] Official Update 2024-06

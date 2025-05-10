@@ -14,9 +14,9 @@ function ldraw_lib__3626bpw8() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS accountant, bandit, Bank, banker, bankster, bookkeeper
-// 0 !KEYWORDS Bricklink 3626bpx107, Brickowl 607088, cowboys, gold city junction
-// 0 !KEYWORDS money, Rebrickable 3626bpr0209, robbery, safe, set 6765, sheriff
-// 0 !KEYWORDS western, wild west
+// 0 !KEYWORDS BrickLink 3626px107, cowboys, gold city junction, money
+// 0 !KEYWORDS Rebrickable 3626bpr0299, robbery, safe, set 6765, sheriff, western
+// 0 !KEYWORDS wild west
 // 
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
 // 0 !HISTORY 2024-10-26 [Lego-Manfred] Reference added

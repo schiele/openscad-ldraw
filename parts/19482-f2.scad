@@ -12,6 +12,8 @@ function ldraw_lib__19482_f2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 19482c01, Rebrickable 19482
+// 
 // 0 !HISTORY 2018-12-08 [PTadmin] Official Update 2018-02
 // 0 !HISTORY 2020-06-23 [SLS] Use mechanical assemblies
 // 0 !HISTORY 2024-05-28 [OrionP] Official Update 2024-04

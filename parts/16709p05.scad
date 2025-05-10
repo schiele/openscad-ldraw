@@ -12,7 +12,8 @@ function ldraw_lib__16709p05() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Barb, Bricklink 41879pb021, Set 41254, Trolls
+// 0 !KEYWORDS Barb, Bricklink 41879pb021, Rebrickable 16709pat39, Set 41254
+// 0 !KEYWORDS Trolls
 // 
 // 0 !HISTORY 2023-04-17 [OrionP] Official Update 2023-02
 // 

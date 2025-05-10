@@ -19,6 +19,7 @@ function ldraw_lib__55707b() = [
   [0,"BFC","CW"],
 // 
 // 0 !CATEGORY Minifig Accessory
+// 0 !KEYWORDS BrickLink x1608, Rebrickable 85973
 // 
 // 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02
 // 

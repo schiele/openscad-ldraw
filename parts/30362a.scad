@@ -29,7 +29,8 @@ function ldraw_lib__30362a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS astromech, droid, R2-D2, r2d2, Star Wars
+// 0 !KEYWORDS astromech, BrickLink 30362, droid, R2-D2, r2d2, Rebrickable 30362
+// 0 !KEYWORDS Star Wars
 // 
 // 0 !HISTORY 2000-09-30 [PTadmin] Official Update 2000-02
 // 0 !HISTORY 2007-06-07 [PTadmin] Header formatted for Contributor Agreement

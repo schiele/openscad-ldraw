@@ -14,9 +14,9 @@ function ldraw_lib__76382p88() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb1619c01, BrickOwl 23994, Marge Simpson
-// 0 !KEYWORDS Mini Upper Part No 2588, Rebrickable 973c01h01pr2588, Set 71006
-// 0 !KEYWORDS The Simpson House, The Simpsons
+// 0 !KEYWORDS Bricklink 973pb1619c01, Marge Simpson, Mini Upper Part No 2588
+// 0 !KEYWORDS Rebrickable 973c01h01pr2588, Set 71006, The Simpson House
+// 0 !KEYWORDS The Simpsons
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

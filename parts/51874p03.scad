@@ -12,8 +12,8 @@ function ldraw_lib__51874p03() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 51874pb03, Brickowl 789203, Castle, Fantasy Era
-// 0 !KEYWORDS Rebrickable 51874pat0003, Set 7048, Troll
+// 0 !KEYWORDS Bricklink 51874pb03, Castle, Fantasy Era, Rebrickable 51874pat0003
+// 0 !KEYWORDS Set 7048, Troll
 // 
 // 0 !HISTORY 2023-10-31 [OrionP] Official Update 2023-05
 // 

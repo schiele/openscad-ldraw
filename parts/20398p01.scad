@@ -14,7 +14,8 @@ function ldraw_lib__20398p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS Bricklink 20398c01, CMF, milkshake, Series 17, set 71019, slurpee
+// 0 !KEYWORDS Bricklink 20398c01, CMF, milkshake, Rebrickable 20398c01, Series 17
+// 0 !KEYWORDS set 71019, slurpee
 // 
 // 0 !HISTORY 2023-08-25 [OrionP] Official Update 2023-04
 // 

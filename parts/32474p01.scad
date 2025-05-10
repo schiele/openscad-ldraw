@@ -13,9 +13,8 @@ function ldraw_lib__32474p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 32474pb002, Brickowl 220081, Mixels
-// 0 !KEYWORDS Rebrickable 32474pr1001, set 41502, set 41512, set 41532, set 41552
-// 0 !KEYWORDS set 41572
+// 0 !KEYWORDS Bricklink 32474pb002, Mixels, Rebrickable 32474pr1001, set 41502
+// 0 !KEYWORDS set 41512, set 41532, set 41552, set 41572
 // 
 // 0 !HISTORY 2014-06-21 [PTadmin] Official Update 2014-01
 // 0 !HISTORY 2021-08-02 [Berth] Added subfiles

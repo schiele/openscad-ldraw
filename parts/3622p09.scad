@@ -11,7 +11,7 @@ function ldraw_lib__3622p09() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3622pb064, Set 71231, Unikitty
+// 0 !KEYWORDS Bricklink 3622pb064, Rebrickable 3622pr0011, Set 71231, Unikitty
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
 // 

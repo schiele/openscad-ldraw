@@ -12,7 +12,7 @@ function ldraw_lib__75902p04() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS Arocs, Bricklink 75902pb06, Set 42043
+// 0 !KEYWORDS Arocs, Bricklink 75902pb06, Rebrickable 75902pr0006, Set 42043
 // 
 // 0 !HISTORY 2015-10-11 [PTadmin] Official Update 2015-01
 // 0 !HISTORY 2022-06-22 [Philo] Updated description, added keywords

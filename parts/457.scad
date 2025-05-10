@@ -17,7 +17,8 @@ function ldraw_lib__457() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Homemaker
-// 0 !KEYWORDS Accessory, Bat, boat, indians, Paddle, racket, Tennis
+// 0 !KEYWORDS Accessory, Bat, boat, BrickLink hm001, indians, Paddle, racket
+// 0 !KEYWORDS Tennis
 // 
 // 0 !HISTORY 2007-08-11 [mikeheide] Fixed triangle added missing lines
 // 0 !HISTORY 2009-12-29 [PTadmin] Official Update 2009-03

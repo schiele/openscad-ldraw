@@ -13,7 +13,8 @@ function ldraw_lib__u9209p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Sheet Fabric
-// 0 !KEYWORDS Marge, Simpson, Simpsons
+// 0 !KEYWORDS BrickLink 16816pb01, Marge, Rebrickable 16816pr0001, Set 71006
+// 0 !KEYWORDS Simpson, Simpsons
 // 
 // 0 !HISTORY 2015-10-11 [PTadmin] Official Update 2015-01
 // 0 !HISTORY 2019-01-25 [cwdee] Update category

@@ -13,7 +13,8 @@ function ldraw_lib__2587pm0() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Neckwear
-// 0 !KEYWORDS Lord of the Rings, ThÃ©oden
+// 0 !KEYWORDS BrickLink 2587pb29, Lord of the Rings, Rebrickable 2587pr0029
+// 0 !KEYWORDS set 9474, ThÃ©oden
 // 
 // 0 !HISTORY 2015-12-30 [PTadmin] Official Update 2015-02
 // 

@@ -11,7 +11,8 @@ function ldraw_lib__3068bp78() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Box, Bricklink 3068bpb1045, Flag, Italian, Italy, Takeaway, Takeout
+// 0 !KEYWORDS Box, BrickLink 3068pb1045, Flag, Italian, Italy
+// 0 !KEYWORDS Rebrickable 3068bpr0019, set 10292, Takeaway, Takeout
 // 
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
 // 

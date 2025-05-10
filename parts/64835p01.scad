@@ -11,6 +11,8 @@ function ldraw_lib__64835p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS Set 10193
+// 
 // 0 !HISTORY 2013-12-19 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2013-12-19 [Philo] File preparation for LDraw Parts Tracker
 // 0 !HISTORY 2015-10-11 [PTadmin] Official Update 2015-01

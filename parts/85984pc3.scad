@@ -11,7 +11,8 @@ function ldraw_lib__85984pc3() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 85984pb291, Mechanical, Set 10278, Vintage
+// 0 !KEYWORDS Bricklink 85984pb291, Mechanical, Rebrickable 85984pr9998, Set 10278
+// 0 !KEYWORDS Vintage
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
 // 

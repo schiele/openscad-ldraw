@@ -18,7 +18,8 @@ function ldraw_lib__u8040() = [
   [0,"BFC","CW"],
 // 
 // 0 !CATEGORY Door
-// 0 !KEYWORDS Automatic Binding Brick, Lego Mursten
+// 0 !KEYWORDS Automatic Binding Brick, BrickLink bdoor01, Lego Mursten
+// 0 !KEYWORDS Rebrickable brickslot0001
 // 
 // 0 !HISTORY 2012-12-28 [tchang] Original u8013 geometry
 // 0 !HISTORY 2013-07-21 [tchang] Original u8014 geometry

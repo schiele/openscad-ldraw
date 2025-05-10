@@ -11,8 +11,8 @@ function ldraw_lib__3245cpze() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Armor, Brickheadz, Bricklink 3245cpb075, Brickowl 168421
-// 0 !KEYWORDS Darth Vader, Rebrickable 3245cpr0144, Set 41619
+// 0 !KEYWORDS Armor, Brickheadz, Bricklink 3245cpb075, Darth Vader
+// 0 !KEYWORDS Rebrickable 3245cpr0144, Set 41619
 // 
 // 0 !HISTORY 2023-08-25 [OrionP] Official Update 2023-04
 // 0 !HISTORY 2025-02-22 [MagFors] Update description

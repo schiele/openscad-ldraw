@@ -17,7 +17,7 @@ function ldraw_lib__73200bp61() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 970c10pb01, Brickowl 655661, Captain Wizer, Captain Zec
+// 0 !KEYWORDS Bricklink 970c10pb01, Captain Wizer, Captain Zec
 // 0 !KEYWORDS Rebrickable 970c08pr0001, set 3072, Set 6969, Zotaxian Alien
 // 
 // 0 !HISTORY 2023-06-24 [OrionP] Official Update 2023-03

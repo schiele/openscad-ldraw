@@ -12,7 +12,8 @@ function ldraw_lib__98138p2h() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Art, Bricklink 98138pb356, Japan, Set 31208, Ukiyo-e
+// 0 !KEYWORDS Art, Bricklink 98138pb356, Japan, Rebrickable 98138pr0345, Set 31208
+// 0 !KEYWORDS Ukiyo-e
 // 
 // 0 !HISTORY 2023-11-19 [OrionP] Official Update 2023-06
 // 

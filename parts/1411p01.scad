@@ -13,7 +13,8 @@ function ldraw_lib__1411p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS 60347, Plant, Set 60345, Sweetcorn
+// 0 !KEYWORDS 60347, BrickLink 1411pb01, Plant, Rebrickable 1411pat0001, Set 60345
+// 0 !KEYWORDS Sweetcorn
 // 
 // 0 !HISTORY 2022-07-22 {LEGO Instructions App} Original part shape
 // 0 !HISTORY 2022-07-22 [Philo] File preparation for LDraw Parts Tracker

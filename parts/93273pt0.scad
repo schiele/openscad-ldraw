@@ -11,7 +11,7 @@ function ldraw_lib__93273pt0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Rebrickable 93273pr0019, Set 10294, Titanic
+// 0 !KEYWORDS BrickLink 93273pb166, Rebrickable 93273pr0019, Set 10294, Titanic
 // 
 // 0 !HISTORY 2023-08-25 [OrionP] Official Update 2023-04
 // 

@@ -11,8 +11,8 @@ function ldraw_lib__2431pz9() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickheadz, bricklink 2431pb527, Harry Potter, scar, Set 41615
-// 0 !KEYWORDS zig zag
+// 0 !KEYWORDS Brickheadz, bricklink 2431pb527, Harry Potter
+// 0 !KEYWORDS Rebrickable 2431pr0131, scar, Set 41615, zig zag
 // 
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
 // 0 !HISTORY 2020-05-10 [cwdee] Update colour name in description

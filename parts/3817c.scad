@@ -17,6 +17,8 @@ function ldraw_lib__3817c() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 972, Rebrickable 3817
+// 
 // 0 !HISTORY 2023-06-24 [OrionP] Official Update 2023-03
 // 
 // 

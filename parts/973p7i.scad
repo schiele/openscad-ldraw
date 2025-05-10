@@ -12,7 +12,8 @@ function ldraw_lib__973p7i() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS al the barber, detective's, office, set 10232, set 10244, Set 10245
+// 0 !KEYWORDS al the barber, Bricklink 973pb0947c01, detective's, office
+// 0 !KEYWORDS Rebrickable 973c28h01pr1857, set 10232, set 10244, Set 10245
 // 0 !KEYWORDS set 10246, Set 10257, set 3816
 // 
 // 0 !CMDLINE -c1

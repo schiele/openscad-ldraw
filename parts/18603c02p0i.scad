@@ -13,8 +13,8 @@ function ldraw_lib__18603c02p0i() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 18605c01pb11, Brickowl 566708, DC comics, Dimensions
-// 0 !KEYWORDS Electronic, Joker, NFC, Rebrickable 19981pr0011, Set 71229, Toy Tag
+// 0 !KEYWORDS Bricklink 18605c01pb11, DC comics, Dimensions, Electronic, Joker
+// 0 !KEYWORDS NFC, Rebrickable 19981pr0011, Set 71229, Toy Tag
 // 
 // 0 !HISTORY 2024-12-30 [OrionP] Official Update 2024-11
 // 

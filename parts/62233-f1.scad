@@ -16,7 +16,8 @@ function ldraw_lib__62233_f1() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Constraction Accessory
-// 0 !KEYWORDS bionicle, Karda Nui, Midak Skyblaster, Phantoka, Shooter, Weapon
+// 0 !KEYWORDS bionicle, BrickLink 60932cx1, Karda Nui, Midak Skyblaster, Phantoka
+// 0 !KEYWORDS Rebrickable 62233, Shooter, Weapon
 // 
 // 0 !HISTORY 2024-07-29 [OrionP] Official Update 2024-06
 // 

@@ -15,7 +15,8 @@ function ldraw_lib__3068bp21() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3068bpb2250, Ice cream, Paradisa, Set 6402, town
+// 0 !KEYWORDS BrickLink 3068pb2250, Ice cream, Paradisa, Rebrickable 3068bpr9929
+// 0 !KEYWORDS Set 6402, town
 // 
 // 0 !HISTORY 2024-06-30 [OrionP] Official Update 2024-05
 // 

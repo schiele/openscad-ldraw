@@ -12,6 +12,8 @@ function ldraw_lib__3010p13() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 3010pb026, Rebrickable 3010pr9971, set 116
+// 
 // 0 !HISTORY 2004-10-31 [mikeheide] put pattern in subfile
 // 0 !HISTORY 2010-07-05 [PTadmin] Official Update 2010-02
 // 0 !HISTORY 2019-06-26 [cwdee] Update description

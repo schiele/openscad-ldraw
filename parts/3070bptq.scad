@@ -15,6 +15,8 @@ function ldraw_lib__3070bptq() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
+// 0 !KEYWORDS BrickLink 3070pb025a, Rebrickable 3070bpr0079, Set 4677
+// 
 // 0 !HISTORY 2009-05-02 [PTadmin] Official Update 2009-01
 // 0 !HISTORY 2013-03-09 [MagFors] Changed colour 383 to 80 (printed silver)
 // 0 !HISTORY 2013-07-21 [PTadmin] Official Update 2013-01

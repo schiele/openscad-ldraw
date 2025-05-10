@@ -14,7 +14,7 @@ function ldraw_lib__2528ap38() = [
 // 
 // 0 !CATEGORY Minifig Headwear
 // 0 !KEYWORDS Bricklink 2528pb12, Lieutenant Lesaro, Pirates of the Caribbean
-// 0 !KEYWORDS Set 71042
+// 0 !KEYWORDS Rebrickable 2528pr0010, Set 71042
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
 // 

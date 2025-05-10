@@ -17,6 +17,8 @@ function ldraw_lib__18575() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 32269
+// 
 // 0 !HISTORY 2016-06-19 [marckl] Based on 32269 from Marc Klein
 // 0 !HISTORY 2016-12-31 [PTadmin] Official Update 2016-01
 // 0 !HISTORY 2018-06-06 [Philo] Subparted, minor improvements

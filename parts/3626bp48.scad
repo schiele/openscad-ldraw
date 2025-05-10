@@ -18,8 +18,8 @@ function ldraw_lib__3626bp48() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626bpb0082, Brickowl 125717, Rebrickable 3626brp0027
-// 0 !KEYWORDS Set 6258, Set 6279, set 6286
+// 0 !KEYWORDS BrickLink 3626pb0082, Rebrickable 3626bpr0027, Set 6258, Set 6279
+// 0 !KEYWORDS set 6286
 // 
 // 0 !HISTORY 2014-06-21 [PTadmin] Official Update 2014-01
 // 0 !HISTORY 2024-08-25 [Lego-Manfred] References and sets added, colour of stubble and hair changed

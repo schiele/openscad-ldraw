@@ -11,7 +11,7 @@ function ldraw_lib__28981c02() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Sheet Fabric
-// 0 !KEYWORDS Set 31063
+// 0 !KEYWORDS BrickLink 28981, Rebrickable 28981, Set 31063
 // 
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
 // 0 !HISTORY 2020-06-10 [cwdee] Update description

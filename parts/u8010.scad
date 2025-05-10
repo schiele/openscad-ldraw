@@ -21,7 +21,8 @@ function ldraw_lib__u8010() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Brick
-// 0 !KEYWORDS Automatic Binding Brick, Lego Mursten
+// 0 !KEYWORDS Automatic Binding Brick, BrickLink 700e, Lego Mursten
+// 0 !KEYWORDS Rebrickable 700a
 // 
 // 0 !HISTORY 2012-08-09 [PTadmin] Official Update 2012-02
 // 

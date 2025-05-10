@@ -21,7 +21,8 @@ function ldraw_lib__4346ps3() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 4346pb09, Set 10144, Set 4480, Star Wars
+// 0 !KEYWORDS Bricklink 4346pb09, Rebrickable 4346pr0010, Set 10144, Set 4480
+// 0 !KEYWORDS Star Wars
 // 
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04
 // 

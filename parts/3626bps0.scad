@@ -14,7 +14,8 @@ function ldraw_lib__3626bps0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Episode I, Padme, Star Wars
+// 0 !KEYWORDS BrickLink 3626px48, Episode I, Padme, Rebrickable 3626bpr0278
+// 0 !KEYWORDS Set 7131, Star Wars
 // 
 // 0 !HISTORY 2012-08-09 [PTadmin] Official Update 2012-02
 // 

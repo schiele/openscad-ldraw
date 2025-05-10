@@ -12,7 +12,7 @@ function ldraw_lib__10178p07() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 10178pb06, Brickowl 889381, Monster Fighters, Moonstone
+// 0 !KEYWORDS Bricklink 10178pb06, Monster Fighters, Moonstone
 // 0 !KEYWORDS Rebrickable 10178pr0007, set 9468
 // 
 // 0 !CMDLINE -c43

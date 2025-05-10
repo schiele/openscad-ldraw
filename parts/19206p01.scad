@@ -15,9 +15,9 @@ function ldraw_lib__19206p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Aira Windwhistler, Bricklink 19206pb01, Brickowl 531435
-// 0 !KEYWORDS Rebrickable 19206pr0001, Set 41071, Set 41073, Set 41077, Set 41176
-// 0 !KEYWORDS Set 41178, Set 41180, Set 41184, Set 41193
+// 0 !KEYWORDS Aira Windwhistler, Bricklink 19206pb01, Rebrickable 19206pr0001
+// 0 !KEYWORDS Set 41071, Set 41073, Set 41077, Set 41176, Set 41178, Set 41180
+// 0 !KEYWORDS Set 41184, Set 41193
 // 
 // 0 !HISTORY 2018-01-28 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2024-07-15 [LisaWinter] File preparation for LDraw Parts Tracker

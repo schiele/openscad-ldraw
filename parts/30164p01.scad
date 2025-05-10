@@ -21,7 +21,8 @@ function ldraw_lib__30164p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Egypt, Pharaoh, sarcophagus, tomb
+// 0 !KEYWORDS BrickLink 30164px1, Egypt, Pharaoh, Rebrickable 30164pr0001
+// 0 !KEYWORDS sarcophagus, set 2879, tomb
 // 
 // 0 !HISTORY 2013-07-21 [PTadmin] Official Update 2013-01
 // 

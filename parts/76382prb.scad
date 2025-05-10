@@ -15,8 +15,8 @@ function ldraw_lib__76382prb() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS Armor, Beskar, Bespin, Boba Fett, bounty hunter
-// 0 !KEYWORDS Bricklink 973pb0282c03, BrickOwl 442318, Cloud City, Episode V
-// 0 !KEYWORDS Episode VI, Jabbas Palace, Mandalorian, Mini Upper Part No 1246
+// 0 !KEYWORDS Bricklink 973pb0282c03, Cloud City, Episode V, Episode VI
+// 0 !KEYWORDS Jabbas Palace, Mandalorian, Mini Upper Part No 1246
 // 0 !KEYWORDS Original Trilogy, Rebrickable 973c14h12pr1246, Return of the Jedi
 // 0 !KEYWORDS Sarlacc, Set 6209, Set 6210, Slave I, Star Wars, Tatooine
 // 0 !KEYWORDS The Empire Strikes Back

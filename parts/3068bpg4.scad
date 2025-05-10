@@ -11,7 +11,7 @@ function ldraw_lib__3068bpg4() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS bricklink 3068pb20, Mill, Set 3679
+// 0 !KEYWORDS BrickLink 3068pb2420, Mill, Rebrickable 3068bpr9928, Set 3679
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
 // 

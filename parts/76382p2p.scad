@@ -14,8 +14,8 @@ function ldraw_lib__76382p2p() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS breastplate, Bricklink 973pb4777c01, BrickOwl 950591, buckle
-// 0 !KEYWORDS pockets, Rebrickable 973c03h01pr6142, Set 21343, Set 31132
+// 0 !KEYWORDS breastplate, Bricklink 973pb4777c01, buckle, pockets
+// 0 !KEYWORDS Rebrickable 973c03h01pr6142, Set 21343, Set 31132
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

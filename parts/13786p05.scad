@@ -17,6 +17,8 @@ function ldraw_lib__13786p05() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 13786pb05, Rebrickable 13786pr0004, Set Build-a-Mini-2019
+// 
 // 0 !HISTORY 2019-12-27 [PTadmin] Official Update 2019-03
 // 
 // 

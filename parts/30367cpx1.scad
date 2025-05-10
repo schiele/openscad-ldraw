@@ -12,7 +12,8 @@ function ldraw_lib__30367cpx1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 553pb033, Mojo Jojo, Powerpuff Girls, set 41288
+// 0 !KEYWORDS Bricklink 553pb033, Mojo Jojo, Powerpuff Girls
+// 0 !KEYWORDS Rebrickable 30367cpr1016, set 41288
 // 
 // 0 !HISTORY 2023-08-25 [OrionP] Official Update 2023-04
 // 

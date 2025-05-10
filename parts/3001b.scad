@@ -15,7 +15,7 @@ function ldraw_lib__3001b() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3001oldb, Brickowl 295767, Rebrickable 3001b, Set 513-1
+// 0 !KEYWORDS Bricklink 3001oldb, Set 513-1
 // 
 // 0 !HISTORY 2024-06-30 [OrionP] Official Update 2024-05
 // 

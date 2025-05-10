@@ -13,7 +13,8 @@ function ldraw_lib__4150p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS food, peperoni, pepperoni, pizzeria, town
+// 0 !KEYWORDS food, peperoni, pepperoni, pizzeria, Rebrickable 4150pr0015
+// 0 !KEYWORDS Set 10036, town
 // 
 // 0 !HISTORY 2002-02-18 [PTadmin] Official Update 2002-01
 // 0 !HISTORY 2003-07-28 [Steffen] made use of s\4150s01.dat

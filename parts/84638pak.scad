@@ -15,9 +15,8 @@ function ldraw_lib__84638pak() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Aquazone, Bricklink 973pb0075c02, BrickOwl 659666
-// 0 !KEYWORDS Rebrickable 84638c05pr0075, set 1095, set 6100, Set 6104, Set 6135
-// 0 !KEYWORDS Set 6190
+// 0 !KEYWORDS Aquazone, Bricklink 973pb0075c02, Rebrickable 84638c05pr0075
+// 0 !KEYWORDS set 1095, set 6100, Set 6104, Set 6135, Set 6190
 // 
 // 0 !HISTORY 2024-12-30 [OrionP] Official Update 2024-11
 // 

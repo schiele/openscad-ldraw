@@ -12,7 +12,7 @@ function ldraw_lib__3004p0e() = [
   [0,"BFC","CW"],
 // 
 // 0 !KEYWORDS Bricklink 3004pb022, Eye, Halloween, Jack O'Lantern, pumpkin
-// 0 !KEYWORDS Set 3047, Triangle
+// 0 !KEYWORDS Rebrickable 3004pr9963, Set 3047, Triangle
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
 // 

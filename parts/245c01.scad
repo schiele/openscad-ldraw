@@ -12,6 +12,8 @@ function ldraw_lib__245c01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
+// 0 !KEYWORDS BrickLink wheel1b, Rebrickable upn0384b
+// 
 // 0 !CMDLINE -c4
 // 
 // 0 !HISTORY 2011-07-03 [mikeheide] Changed color of axle to Chrome_Antique_Brass

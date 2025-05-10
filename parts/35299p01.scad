@@ -12,7 +12,8 @@ function ldraw_lib__35299p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 62360pb003, Eiffel Tower, Paris, Set 21044
+// 0 !KEYWORDS Bricklink 62360pb003, Eiffel Tower, Paris, Rebrickable 35299pr0002
+// 0 !KEYWORDS Set 21044
 // 
 // 0 !HISTORY 2023-10-31 [OrionP] Official Update 2023-05
 // 

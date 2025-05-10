@@ -14,7 +14,8 @@ function ldraw_lib__3626cpd64() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3626cpb1710, Cave Batman, Lego Batman Movie, set 71017
+// 0 !KEYWORDS BrickLink 3626pb1710, Cave Batman, Lego Batman Movie
+// 0 !KEYWORDS Rebrickable 3626cpr2088, set 71017
 // 
 // 0 !HISTORY 2018-12-08 [PTadmin] Official Update 2018-02
 // 0 !HISTORY 2022-07-11 [MagFors] Update description, added keywords

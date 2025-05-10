@@ -14,7 +14,8 @@ function ldraw_lib__u8012() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Door
-// 0 !KEYWORDS Automatic Binding Brick, Lego Mursten
+// 0 !KEYWORDS Automatic Binding Brick, BrickLink 32c, Lego Mursten
+// 0 !KEYWORDS Rebrickable 32c
 // 
 // 0 !HISTORY 2013-03-16 [cwdee] Corrected overlap on top surface
 // 0 !HISTORY 2014-06-21 [PTadmin] Official Update 2014-01

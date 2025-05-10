@@ -15,8 +15,7 @@ function ldraw_lib__93552p02() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS BrickLink 93552pb02, Brickowl 781682, Rebrickable 93552pr0002
-// 0 !KEYWORDS Set 5005249
+// 0 !KEYWORDS BrickLink 93552pb02, Rebrickable 93552pr0002, Set 5005249
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
 // 0 !HISTORY 2022-12-12 [Cheenzo] Updated to use 93552s03 and updated description

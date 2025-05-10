@@ -13,6 +13,8 @@ function ldraw_lib__3648b() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
+// 0 !KEYWORDS BrickLink 3648
+// 
 // 0 !HISTORY 1997-12-05 [PTadmin] Official Update 1997-17
 // 0 !HISTORY 2000-08-01 {Axel Poque} fixes to resolve L3P error messages
 // 0 !HISTORY 2000-08-01 {Manfred Moolhuysen} fixes to resolve L3P error messages

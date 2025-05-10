@@ -14,9 +14,9 @@ function ldraw_lib__76382p55() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb0003c01, BrickOwl 958492, Captain King
-// 0 !KEYWORDS Explorien Chief, Exploriens, Mini Upper Part No 212, Nova Hunter
-// 0 !KEYWORDS Rebrickable 973c08h03pr0003, Set 6815, set 6958, set 6982, Space
+// 0 !KEYWORDS Bricklink 973pb0003c01, Captain King, Explorien Chief, Exploriens
+// 0 !KEYWORDS Mini Upper Part No 212, Nova Hunter, Rebrickable 973c08h03pr0003
+// 0 !KEYWORDS Set 6815, set 6958, set 6982, Space
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

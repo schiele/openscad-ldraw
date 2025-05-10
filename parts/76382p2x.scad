@@ -14,7 +14,7 @@ function ldraw_lib__76382p2x() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb5539c01, Brickowl 984320, Dune, Paul Atreides
+// 0 !KEYWORDS Bricklink 973pb5539c01, Dune, Paul Atreides
 // 0 !KEYWORDS Rebrickable 973c35h02pr6974, Set 10327
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02

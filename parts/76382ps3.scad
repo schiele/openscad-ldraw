@@ -14,8 +14,8 @@ function ldraw_lib__76382ps3() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS A New Hope, Bricklink 973ps3c01, BrickOwl 672391, Epsiode IV
-// 0 !KEYWORDS Landspeeder, Lars Homestead, Luke Skywalker, Mini Upper Part No 369
+// 0 !KEYWORDS A New Hope, Bricklink 973ps3c01, Epsiode IV, Landspeeder
+// 0 !KEYWORDS Lars Homestead, Luke Skywalker, Mini Upper Part No 369
 // 0 !KEYWORDS Moisture Farmer, Original Trilogy, Rebrickable 973c27h01pr0002
 // 0 !KEYWORDS set 4501, set 7110, set 7190, Star Wars, Tatooine
 // 

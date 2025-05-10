@@ -17,10 +17,10 @@ function ldraw_lib__73200bp8h() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 970c00pb0282, Brickowl 939309, CMF
-// 0 !KEYWORDS Collectible Minifigures, Dimensions Wave 1, Emmet
-// 0 !KEYWORDS Rebrickable 970c34pr0605, set 30280, set 70801, Set 70802, Set 70803
-// 0 !KEYWORDS Set 70814, Set 70818, Set 71212, The LEGO Movie
+// 0 !KEYWORDS Bricklink 970c00pb0282, CMF, Collectible Minifigures
+// 0 !KEYWORDS Dimensions Wave 1, Emmet, Rebrickable 970c34pr0605, set 30280
+// 0 !KEYWORDS set 70801, Set 70802, Set 70803, Set 70814, Set 70818, Set 71212
+// 0 !KEYWORDS The LEGO Movie
 // 
 // 0 !HISTORY 2016-12-31 [MagFors] Original design as 3815c8h
 // 0 !HISTORY 2023-05-21 [Holly-Wood] Adapted to corrected geometry

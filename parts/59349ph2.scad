@@ -12,7 +12,8 @@ function ldraw_lib__59349ph2() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS Bricklink 59349pb235, buildable figures, Gryffindor Sweater
-// 0 !KEYWORDS Harry Potter, hermione granger, Maxi Fig, Set 76393
+// 0 !KEYWORDS Harry Potter, hermione granger, Maxi Fig, Rebrickable 59349pr0014
+// 0 !KEYWORDS Set 76393
 // 
 // 0 !HISTORY 2023-02-17 [Cheenzo] Fixed edge line colour
 // 0 !HISTORY 2023-08-25 [OrionP] Official Update 2023-04

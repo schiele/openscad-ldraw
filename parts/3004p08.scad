@@ -12,7 +12,8 @@ function ldraw_lib__3004p08() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 3004pb144R, Car, Caterham, Cuusoo, Ideas, Set 21307
+// 0 !KEYWORDS Bricklink 3004pb144R, Car, Caterham, Cuusoo, Ideas
+// 0 !KEYWORDS Rebrickable 3004pr0022, Set 21307
 // 
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
 // 

@@ -11,7 +11,8 @@ function ldraw_lib__15068p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Armor, Bricklink 15068pb001, Legends of Chima, set 70127
+// 0 !KEYWORDS Armor, Bricklink 15068pb001, Legends of Chima
+// 0 !KEYWORDS Rebrickable 15068pr0002, set 70127
 // 
 // 0 !HISTORY 2014-06-21 [PTadmin] Official Update 2014-01
 // 0 !HISTORY 2020-11-14 [cwdee] Update description

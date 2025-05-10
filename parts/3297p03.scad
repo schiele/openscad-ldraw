@@ -11,6 +11,8 @@ function ldraw_lib__3297p03() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS Rebrickable 3297pr0007, Set 4162
+// 
 // 0 !HISTORY 2002-08-21 [fwcain] Separated main DAT code into subfile...
 // 0 !HISTORY 2003-07-04 [Steffen] removed lines around pattern rectangles
 // 0 !HISTORY 2004-04-22 [PTadmin] Official Update 2004-02

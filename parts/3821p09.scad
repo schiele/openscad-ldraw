@@ -14,6 +14,7 @@ function ldraw_lib__3821p09() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS BrickLink 3821pb002, Car, Flame, Rebrickable 3821pr0004, rescue
+// 0 !KEYWORDS Set 1067
 // 
 // 0 !PREVIEW 16 0 0 0 -1 0 0 0 1 0 0 0 -1
 // 

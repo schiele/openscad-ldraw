@@ -12,7 +12,8 @@ function ldraw_lib__3245cpzc() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickheadz, BrickLink 3245cpb117, Disney, Donald Duck, Set 40377
+// 0 !KEYWORDS Brickheadz, BrickLink 3245cpb117, Disney, Donald Duck
+// 0 !KEYWORDS Rebrickable 3245cpr0173, Set 40377
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 

@@ -13,7 +13,8 @@ function ldraw_lib__11408p03() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Elves, Farran Leafshade, Set 41076
+// 0 !KEYWORDS BrickLink FTBpb014c01, Elves, Farran Leafshade
+// 0 !KEYWORDS Rebrickable 11408c01pr0009, Set 41076
 // 
 // 0 !HISTORY 2024-04-28 [OrionP] Official Update 2024-03
 // 0 !HISTORY 2025-01-09 [OrionP] Moved from u9210p03c01.dat

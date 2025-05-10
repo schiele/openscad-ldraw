@@ -12,8 +12,8 @@ function ldraw_lib__10169p02() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS Bag, Bricklink 10169pb02, Collectible Minifigures, Mend, Series 23
-// 0 !KEYWORDS Set 71034
+// 0 !KEYWORDS Bag, Bricklink 10169pb02, Collectible Minifigures, Mend
+// 0 !KEYWORDS Rebrickable 10169pr0002, Series 23, Set 71034
 // 
 // 0 !HISTORY 2024-08-26 [OrionP] Official Update 2024-07
 // 

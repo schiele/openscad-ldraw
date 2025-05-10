@@ -12,7 +12,8 @@ function ldraw_lib__3070bp70() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS police, Train
+// 0 !KEYWORDS BrickLink 3070pb006, police, Rebrickable 3070bpr0034, set 4511
+// 0 !KEYWORDS Train
 // 
 // 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01
 // 

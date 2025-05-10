@@ -12,6 +12,8 @@ function ldraw_lib__2959c01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
+// 0 !KEYWORDS BrickLink 73092, Rebrickable 73092
+// 
 // 0 !HISTORY 2003-01-29 [sbliss] Completed header; BFC'ed
 // 0 !HISTORY 2004-03-20 [mkennedy] colored magnet gray
 // 0 !HISTORY 2006-04-14 [cwdee] Split into component parts

@@ -32,6 +32,7 @@ function ldraw_lib__98460() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Fence
+// 0 !KEYWORDS BrickLink 47548
 // 
 // 0 !HISTORY 2020-06-28 [PTadmin] Official Update 2020-01
 // 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives

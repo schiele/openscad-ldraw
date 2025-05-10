@@ -13,6 +13,8 @@ function ldraw_lib__u9007p06() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 747pb05c02, Rebrickable 747c02pr0007, Set 489
+// 
 // 0 !HISTORY 2010-07-05 [PTadmin] Official Update 2010-02
 // 
 // 

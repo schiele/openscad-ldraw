@@ -13,7 +13,7 @@ function ldraw_lib__973pn0() = [
   [0,"BFC","CCW"],
 // 
 // 0 !KEYWORDS Castle, dagger, daimyo, emperor, feudal, Japan, medieval, Ninja
-// 0 !KEYWORDS Nippon, shogun, warlord
+// 0 !KEYWORDS Nippon, Set 3050, shogun, warlord
 // 
 // 0 !CMDLINE -c15
 // 

@@ -14,7 +14,7 @@ function ldraw_lib__30158c01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Neckwear
-// 0 !KEYWORDS rucksack
+// 0 !KEYWORDS BrickLink 30158, Rebrickable 30158, rucksack
 // 
 // 0 !HISTORY 2007-08-25 {LEGO Universe Team} Original part shape
 // 0 !HISTORY 2010-07-13 [mdublade] File preparation for LDraw Parts Tracker

@@ -12,7 +12,8 @@ function ldraw_lib__35700p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bin, Box, Canister, Case, Tin
+// 0 !KEYWORDS Bin, Box, BrickLink 35700pb02, Canister, Case
+// 0 !KEYWORDS Rebrickable 35700pr0001, Set 71021-18, Tin
 // 
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
 // 

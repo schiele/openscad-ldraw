@@ -11,7 +11,7 @@ function ldraw_lib__15068p0j() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 15068pb487, Set 60377, Set 60379
+// 0 !KEYWORDS Bricklink 15068pb487, Rebrickable 15068pr0075, Set 60377, Set 60379
 // 
 // 0 !HISTORY 2024-08-26 [OrionP] Official Update 2024-07
 // 

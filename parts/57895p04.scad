@@ -12,7 +12,7 @@ function ldraw_lib__57895p04() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 57895pb032, set 10251
+// 0 !KEYWORDS Bricklink 57895pb032, Rebrickable 57895pr0012, set 10251
 // 
 // 0 !CMDLINE -47
 // 

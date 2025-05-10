@@ -11,6 +11,8 @@ function ldraw_lib__3897p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
+// 0 !KEYWORDS Bricklink 676p01, Rebrickable 676pr0001, set 675
+// 
 // 0 !HISTORY 2003-08-01 [Steffen] BFCed, made use of primitives and subfiles
 // 0 !HISTORY 2003-10-26 [Steffen] removed hard-coded white color
 // 0 !HISTORY 2004-10-16 [cwdee] Add lines at top of post removed from 674s00

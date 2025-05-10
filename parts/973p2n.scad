@@ -12,7 +12,7 @@ function ldraw_lib__973p2n() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb0239, town
+// 0 !KEYWORDS Bricklink 973pb0239, set 6330, town
 // 
 // 0 !HISTORY 2016-12-31 [PTadmin] Official Update 2016-01
 // 

@@ -15,7 +15,8 @@ function ldraw_lib__2440p03() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Blade, Bricklink 2440pb008, Panel, Set 6591, spoiler
+// 0 !KEYWORDS Blade, Bricklink 2440pb008, Panel, Rebrickable 2440pr0006, Set 6591
+// 0 !KEYWORDS spoiler
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 0 !HISTORY 2021-04-14 [Holly-Wood] Used hires letters

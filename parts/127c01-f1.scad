@@ -14,6 +14,8 @@ function ldraw_lib__127c01_f1() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 4688c01, Rebrickable 4688c01
+// 
 // 0 !HISTORY 2009-12-18 [cwdee] Re-work for part split
 // 0 !HISTORY 2009-12-29 [PTadmin] Official Update 2009-03
 // 0 !HISTORY 2016-08-21 [PTadmin] Renamed from 127c01

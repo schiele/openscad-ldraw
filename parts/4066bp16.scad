@@ -12,8 +12,9 @@ function ldraw_lib__4066bp16() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Brick
-// 0 !KEYWORDS Birthday, bricklink 4066pb028, Bucket, Circus, Set 2221, Set 2311
-// 0 !KEYWORDS Set 2321, Set 2362, Set 2364, Set 2386, Set 2444
+// 0 !KEYWORDS Birthday, bricklink 4066pb028, Bucket, Circus
+// 0 !KEYWORDS Rebrickable 4066pr0108, Set 2221, Set 2311, Set 2321, Set 2362
+// 0 !KEYWORDS Set 2364, Set 2386, Set 2444
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 

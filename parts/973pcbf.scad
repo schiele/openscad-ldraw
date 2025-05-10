@@ -12,7 +12,7 @@ function ldraw_lib__973pcbf() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS 1337, Bobby, Constable, Series 11
+// 0 !KEYWORDS 1337, Bobby, Constable, Series 11, set 71002
 // 
 // 0 !HISTORY 2014-06-21 [PTadmin] Official Update 2014-01
 // 

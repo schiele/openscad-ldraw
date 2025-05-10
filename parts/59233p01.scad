@@ -13,8 +13,8 @@ function ldraw_lib__59233p01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS Bricklink 59233pb01, Flash, Force, Set 10188, Set 2507, Set 5378
-// 0 !KEYWORDS Set 70809, Set 76022, Wave
+// 0 !KEYWORDS Bricklink 59233pb01, Flash, Force, Rebrickable 59233pat0001
+// 0 !KEYWORDS Set 10188, Set 2507, Set 5378, Set 70809, Set 76022, Wave
 // 
 // 0 !HISTORY 2022-09-15 [PTadmin] Official Update 2022-05
 // 

@@ -11,7 +11,8 @@ function ldraw_lib__4162p0m() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Built in 2000, Czech Republic, set 4000006
+// 0 !KEYWORDS BrickLink 4162pb089, Built in 2000, Czech Republic
+// 0 !KEYWORDS Rebrickable 4162pr0089, set 4000006
 // 
 // 0 !HISTORY 2013-07-21 [PTadmin] Official Update 2013-01
 // 

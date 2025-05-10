@@ -11,8 +11,8 @@ function ldraw_lib__3010py3() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Brickheadz, BrickLink 3010pb291, Disney, Donald Duck, Set 40377
-// 0 !KEYWORDS Torso
+// 0 !KEYWORDS Brickheadz, BrickLink 3010pb291, Disney, Donald Duck
+// 0 !KEYWORDS Rebrickable 3010pr0077, Set 40377, Torso
 // 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
 // 

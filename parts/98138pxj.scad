@@ -12,7 +12,8 @@ function ldraw_lib__98138pxj() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 98138pb384, Frogspawn, Minecraft, Set 21248, Set 21256
+// 0 !KEYWORDS Bricklink 98138pb384, Frogspawn, Minecraft, Rebrickable 98138pr0367
+// 0 !KEYWORDS Set 21248, Set 21256
 // 
 // 0 !HISTORY 2024-07-29 [OrionP] Official Update 2024-06
 // 

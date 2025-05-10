@@ -24,7 +24,7 @@ function ldraw_lib__87693() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Castle, Feather, Pirate, Quill
+// 0 !KEYWORDS BrickLink 4502a, Castle, Feather, Pirate, Quill
 // 
 // 0 !HISTORY 2001-10-26 [PTadmin] Official Update 2001-01
 // 0 !HISTORY 2007-07-08 [PTadmin] Header formatted for Contributor Agreement

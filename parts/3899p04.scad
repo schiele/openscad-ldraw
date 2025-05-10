@@ -13,8 +13,8 @@ function ldraw_lib__3899p04() = [
 // 
 // 0 !CATEGORY Minifig Accessory
 // 0 !KEYWORDS Bricklink 3899pb004, cocoa, Coffee, Collectible Minifigures
-// 0 !KEYWORDS Cookware, drink, mug, President Business, set 71004, tea
-// 0 !KEYWORDS The LEGO Movie, town, utensil
+// 0 !KEYWORDS Cookware, drink, mug, President Business, Rebrickable 3899pr0004
+// 0 !KEYWORDS set 71004, tea, The LEGO Movie, town, utensil
 // 
 // 0 !HISTORY 2022-09-15 [PTadmin] Official Update 2022-05
 // 

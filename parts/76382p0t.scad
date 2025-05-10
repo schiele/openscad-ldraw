@@ -14,7 +14,7 @@ function ldraw_lib__76382p0t() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb2431c01, Brickowl 676516, Disney Castle, Mickey Mouse
+// 0 !KEYWORDS Bricklink 973pb2431c01, Disney Castle, Mickey Mouse
 // 0 !KEYWORDS Rebrickable 973c03h27pr3504, set 71040
 // 
 // 0 !HISTORY 2024-12-30 [OrionP] Official Update 2024-11

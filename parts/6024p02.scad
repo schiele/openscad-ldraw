@@ -22,7 +22,8 @@ function ldraw_lib__6024p02() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS islanders, Pirates, set 6278, set 6281
+// 0 !KEYWORDS BrickLink 6024px2, islanders, Pirates, Rebrickable 6024pr0002
+// 0 !KEYWORDS set 6278, set 6281
 // 
 // 0 !HISTORY 2019-09-09 [PTadmin] Official Update 2019-02
 // 

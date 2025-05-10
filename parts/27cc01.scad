@@ -12,6 +12,8 @@ function ldraw_lib__27cc01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS BrickLink 27c01, Rebrickable 27c01
+// 
 // 0 !HISTORY 2006-04-17 [cwdee] Secondary author
 // 0 !HISTORY 2009-05-02 [PTadmin] Official Update 2009-01
 // 

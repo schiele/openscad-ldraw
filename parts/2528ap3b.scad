@@ -13,7 +13,8 @@ function ldraw_lib__2528ap3b() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Headwear
-// 0 !KEYWORDS Bricklink 2528pb08, Set 70413, The Brick Bounty
+// 0 !KEYWORDS Bricklink 2528pb08, Rebrickable 2528pr0007, Set 70413
+// 0 !KEYWORDS The Brick Bounty
 // 
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
 // 

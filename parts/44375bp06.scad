@@ -14,7 +14,8 @@ function ldraw_lib__44375bp06() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Apollo, Bricklink 44375bpb25, Lunar Roving Vehicle, NASA, Set 42182
+// 0 !KEYWORDS Apollo, Bricklink 44375bpb25, Lunar Roving Vehicle, NASA
+// 0 !KEYWORDS Rebrickable 44375bpr9990, Set 42182
 // 
 // 0 !HISTORY 2024-12-30 [OrionP] Official Update 2024-11
 // 

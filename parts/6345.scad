@@ -21,6 +21,7 @@ function ldraw_lib__6345() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Windscreen
+// 0 !KEYWORDS Rebrickable 17562
 // 
 // 0 !HISTORY 2023-10-31 [OrionP] Official Update 2023-05
 // 

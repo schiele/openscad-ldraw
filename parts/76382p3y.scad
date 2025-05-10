@@ -14,8 +14,8 @@ function ldraw_lib__76382p3y() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Atreides, Bricklink 973pb5540c01, BrickOwl 502154, Duncan Idaho
-// 0 !KEYWORDS Dune, Rebrickable 973c27h70pr6980, Set 10327
+// 0 !KEYWORDS Atreides, Bricklink 973pb5540c01, Duncan Idaho, Dune
+// 0 !KEYWORDS Rebrickable 973c27h70pr6980, Set 10327
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

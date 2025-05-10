@@ -14,7 +14,8 @@ function ldraw_lib__18200c01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Hipwear
-// 0 !KEYWORDS Battle Goddess, Collectible, Series 12, Set 71007
+// 0 !KEYWORDS Battle Goddess, BrickLink 18200, Collectible, Rebrickable 18200
+// 0 !KEYWORDS Series 12, Set 71007
 // 
 // 0 !HISTORY 2015-10-11 [PTadmin] Official Update 2015-01
 // 

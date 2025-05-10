@@ -12,7 +12,7 @@ function ldraw_lib__41879a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS child, Stubbies
+// 0 !KEYWORDS BrickLink 41879, child, Stubbies
 // 
 // 0 !HISTORY 2002-11-30 [PTadmin] Official Update 2002-05
 // 0 !HISTORY 2007-07-04 [PTadmin] Header formatted for Contributor Agreement

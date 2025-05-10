@@ -11,8 +11,9 @@ function ldraw_lib__3068bpt4() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS article, paper clip, Picture, set 10251, Set 75902
-// 0 !KEYWORDS tree comes to life, zombie
+// 0 !KEYWORDS article, BrickLink 3068pb0675, paper clip, Picture
+// 0 !KEYWORDS Rebrickable 3068bpr0269, set 10251, Set 75902, tree comes to life
+// 0 !KEYWORDS zombie
 // 
 // 0 !HISTORY 2016-12-31 [PTadmin] Official Update 2016-01
 // 0 !HISTORY 2018-06-14 [Holly-Wood] Redesigned from scratch using Bookman Old Style Italic and Bookmania Black, Bold, Semibold as fonts

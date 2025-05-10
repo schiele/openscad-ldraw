@@ -12,7 +12,7 @@ function ldraw_lib__973pm2() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Frodo Baggins, Lord of the Rings
+// 0 !KEYWORDS Frodo Baggins, Lord of the Rings, set 30210
 // 
 // 0 !CMDLINE -c378
 // 

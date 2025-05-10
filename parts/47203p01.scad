@@ -13,6 +13,8 @@ function ldraw_lib__47203p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !KEYWORDS Set 9656
+// 
 // 0 !HISTORY 2022-09-15 [PTadmin] Official Update 2022-05
 // 
 // 

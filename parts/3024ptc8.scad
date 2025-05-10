@@ -11,7 +11,7 @@ function ldraw_lib__3024ptc8() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Ender Dragon, The End
+// 0 !KEYWORDS BrickLink 3024pb007, Ender Dragon, Rebrickable 3024pr0009, The End
 // 
 // 0 !HISTORY 2014-12-23 [PTadmin] Official Update 2014-02
 // 

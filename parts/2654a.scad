@@ -18,8 +18,8 @@ function ldraw_lib__2654a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS boat stud 2 x 2, inverted tile, Round, skid plate, smooth bottom
-// 0 !KEYWORDS spherical
+// 0 !KEYWORDS boat stud 2 x 2, BrickLink 2654, inverted tile, Rebrickable 2654
+// 0 !KEYWORDS Round, skid plate, smooth bottom, spherical
 // 
 // 0 !HISTORY 2003-06-08 [jriley] BFC compliant
 // 0 !HISTORY 2003-10-04 [OrionP] Changed name, add keywords

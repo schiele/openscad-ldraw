@@ -17,8 +17,8 @@ function ldraw_lib__21019bpckc() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 970c00pb1094, Brickowl 810900, CMF
-// 0 !KEYWORDS Rebrickable 970c03pat01pr1882, Sea Rescuer, Series 20, Set 71027
+// 0 !KEYWORDS Bricklink 970c00pb1094, CMF, Rebrickable 970c03pat01pr1882
+// 0 !KEYWORDS Sea Rescuer, Series 20, Set 71027
 // 
 // 0 !CMDLINE -c0
 // 

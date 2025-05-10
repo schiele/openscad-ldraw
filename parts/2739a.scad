@@ -12,6 +12,8 @@ function ldraw_lib__2739a() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
+// 0 !KEYWORDS Rebrickable 32005a
+// 
 // 0 !HISTORY 2007-05-18 [PTadmin] Header formatted for Contributor Agreement
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
 // 0 !HISTORY 2008-07-07 [technog] BFC'd, closed gaps, created subparts

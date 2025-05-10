@@ -14,11 +14,10 @@ function ldraw_lib__76382p4f() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973px138c01, BrickOwl 487374, Castle, Coat of Arms
-// 0 !KEYWORDS Crusaders, Lion Knights, Rebrickable 973c28h01pr0138, Set 1463
-// 0 !KEYWORDS Set 1584, Set 1695, Set 2889, Set 6012, Set 6017, Set 6039, Set 6042
-// 0 !KEYWORDS Set 6049, Set 6055, Set 6060, Set 6062, Set 6077, Set 6080, Set 6081
-// 0 !KEYWORDS Set 6102, Set 6103
+// 0 !KEYWORDS Bricklink 973px138c01, Castle, Coat of Arms, Crusaders, Lion Knights
+// 0 !KEYWORDS Rebrickable 973c28h01pr0138, Set 1463, Set 1584, Set 1695, Set 2889
+// 0 !KEYWORDS Set 6012, Set 6017, Set 6039, Set 6042, Set 6049, Set 6055, Set 6060
+// 0 !KEYWORDS Set 6062, Set 6077, Set 6080, Set 6081, Set 6102, Set 6103
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
 // 

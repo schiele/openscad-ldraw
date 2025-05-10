@@ -13,7 +13,8 @@ function ldraw_lib__3069bp08() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS 7-segment display
+// 0 !KEYWORDS 7-segment display, BrickLink 3069px5, Rebrickable 3069bpr0025
+// 0 !KEYWORDS Set 10128
 // 
 // 0 !CMDLINE -c15
 // 

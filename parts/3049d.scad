@@ -11,6 +11,8 @@ function ldraw_lib__3049d() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
+// 0 !KEYWORDS BrickLink 3049c
+// 
 // 0 !HISTORY 2020-09-05 [PTadmin] Official Update 2020-02
 // 
 // 

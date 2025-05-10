@@ -25,8 +25,8 @@ function ldraw_lib__30361dps7() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS 30361pb028, astromech, droid, green droid, minifig, set 75059
-// 0 !KEYWORDS Star Wars
+// 0 !KEYWORDS 30361pb028, astromech, BrickLink 30361pb028, droid, green droid
+// 0 !KEYWORDS minifig, Rebrickable 30361cpr1004, set 75059, Star Wars
 // 
 // 0 !HISTORY 2020-12-07 [Holly-Wood] Streamlined pattern, reduced subfiles, corrected rounding errors
 // 0 !HISTORY 2022-03-06 [PTadmin] Official Update 2022-02

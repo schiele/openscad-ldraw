@@ -14,9 +14,9 @@ function ldraw_lib__3626bpw5() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS American Indian, Bricklink 3626bpx59, Brickowl 891935, chief
-// 0 !KEYWORDS chieftain, leader, Rebrickable 3626bpr9979, set 6709, set 6746
-// 0 !KEYWORDS set 6763, set 6766, tyee, warbonnet, warpaint, western, wild west
+// 0 !KEYWORDS American Indian, BrickLink 3626px59, chief, chieftain, leader
+// 0 !KEYWORDS Rebrickable 3626bpr9979, set 6709, set 6746, set 6763, set 6766
+// 0 !KEYWORDS tyee, warbonnet, warpaint, western, wild west
 // 
 // 0 !HISTORY 2016-12-31 [PTadmin] Official Update 2016-01
 // 0 !HISTORY 2024-06-30 [OrionP] Official Update 2024-05

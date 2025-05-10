@@ -14,7 +14,7 @@ function ldraw_lib__76382pf0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Armor, Bricklink 973pb0419c01, BrickOwl 920776, Castle, Fantasy Era
+// 0 !KEYWORDS Armor, Bricklink 973pb0419c01, Castle, Fantasy Era
 // 0 !KEYWORDS Mini Upper Part No 1349, Orc, Rebrickable 973c25h25pr1349, Set 5618
 // 0 !KEYWORDS Set 7036, Set 7037, Set 7040, Set 7041, Set 7048, Set 7078, Set 7097
 // 0 !KEYWORDS set 7979, Troll

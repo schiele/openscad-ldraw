@@ -11,8 +11,8 @@ function ldraw_lib__15068p08() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 15068pb140, set 60190, set 60191, set 60193, set 60198
-// 0 !KEYWORDS Star, White Mountain
+// 0 !KEYWORDS Bricklink 15068pb140, Rebrickable 15068pr0140, set 60190, set 60191
+// 0 !KEYWORDS set 60193, set 60198, Star, White Mountain
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 

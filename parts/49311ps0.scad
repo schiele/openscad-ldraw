@@ -11,8 +11,8 @@ function ldraw_lib__49311ps0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 49311pb14, Brickowl 566773, R2-D2, Rebrickable 49311pr0009
-// 0 !KEYWORDS Set 75308, Star Wars
+// 0 !KEYWORDS BrickLink 49311pb014, R2-D2, Rebrickable 49311pr0009, Set 75308
+// 0 !KEYWORDS Star Wars
 // 
 // 0 !HISTORY 2023-01-14 [Holly-Wood] Closed gap, added keywords
 // 0 !HISTORY 2023-03-05 [OrionP] Official Update 2023-01

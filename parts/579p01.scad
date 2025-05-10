@@ -11,6 +11,8 @@ function ldraw_lib__579p01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
+// 0 !KEYWORDS set 102
+// 
 // 0 !HISTORY 2004-07-01 [mikeheide] Made BFC compliant
 // 0 !HISTORY 2004-07-07 [mikeheide] Subpart 564s01.dat used for contacts
 // 0 !HISTORY 2004-07-09 [mikeheide] some minor changes and added pattern

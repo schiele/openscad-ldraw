@@ -16,7 +16,8 @@ function ldraw_lib__4066bp1f() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Brick
-// 0 !KEYWORDS bricklink 4066pb049, Girls, Grandma, Kitchen, Set 2551
+// 0 !KEYWORDS bricklink 4066pb049, Girls, Grandma, Kitchen, Rebrickable 4066pr9974
+// 0 !KEYWORDS Set 2551
 // 
 // 0 !HISTORY 2020-09-11 [RainbowDolphin] Branched from 4066bp1b for different colour
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03

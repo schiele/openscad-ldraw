@@ -11,7 +11,8 @@ function ldraw_lib__87079px5() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS A-Team, Bricklink 87079pb343R, Lego Dimensions, Set 71251
+// 0 !KEYWORDS A-Team, BrickLink 87079pb0343R, Lego Dimensions
+// 0 !KEYWORDS Rebrickable 87079pr0096, Set 71251
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 

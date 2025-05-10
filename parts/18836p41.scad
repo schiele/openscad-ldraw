@@ -12,7 +12,8 @@ function ldraw_lib__18836p41() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
-// 0 !KEYWORDS Bricklink 18836pb03, Castle, King
+// 0 !KEYWORDS Bricklink 18836pb03, Castle, King, Rebrickable 18836pr0002
+// 0 !KEYWORDS Set Build-a-Mini-2019
 // 
 // 0 !HISTORY 2019-12-27 [PTadmin] Official Update 2019-03
 // 

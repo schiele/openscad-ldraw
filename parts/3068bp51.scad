@@ -13,7 +13,8 @@ function ldraw_lib__3068bp51() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS circuitry, engineering, Space
+// 0 !KEYWORDS BrickLink 3068p51, circuitry, engineering, Rebrickable 3068bpr0059
+// 0 !KEYWORDS Set 1785, Space
 // 
 // 0 !CMDLINE -c0
 // 

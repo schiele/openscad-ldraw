@@ -18,8 +18,8 @@ function ldraw_lib__96910() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS bullion, Fort Knox, gold bar, Gold Ingot, Pirates of the Caribbean
-// 0 !KEYWORDS treasure
+// 0 !KEYWORDS BrickLink 99563, bullion, Fort Knox, gold bar, Gold Ingot
+// 0 !KEYWORDS Pirates of the Caribbean, Rebrickable 99563, treasure
 // 
 // 0 !HISTORY 2012-01-18 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2012-01-19 [angmarec] File preparation for LDraw Parts Tracker

@@ -14,10 +14,9 @@ function ldraw_lib__76382puk() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 973pb3855c01, BrickOwl 768550, City, College Jacket
-// 0 !KEYWORDS Haunted House, Hidden Side, Newbury, Paola
-// 0 !KEYWORDS Rebrickable 973c34h01pr4838, Set 10273, Set 40448, Set 60337
-// 0 !KEYWORDS Set 70425, Vintage Car
+// 0 !KEYWORDS Bricklink 973pb3855c01, City, College Jacket, Haunted House
+// 0 !KEYWORDS Hidden Side, Newbury, Paola, Rebrickable 973c34h01pr4838, Set 10273
+// 0 !KEYWORDS Set 40448, Set 60337, Set 70425, Vintage Car
 // 
 // 0 !HISTORY 2025-02-27 [OrionP] Official Update 2025-02
 // 

@@ -18,6 +18,7 @@ function ldraw_lib__u9310c08() = [
   [0,"BFC","CW"],
 // 
 // 0 !CATEGORY Brick
+// 0 !KEYWORDS BrickLink x655c01, Rebrickable fabupn0004c01
 // 
 // 0 !HISTORY 2014-12-23 [PTadmin] Official Update 2014-02
 // 0 !HISTORY 2017-11-29 [Philo] Unmirrored Windows and door

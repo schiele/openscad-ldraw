@@ -17,9 +17,8 @@ function ldraw_lib__73200bp60() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 970c11pb04, Brickowl 680651, droid, Gigabot
-// 0 !KEYWORDS Rebrickable 970c03pr0001, Set 2965, Set 3071, Set 6905, Set 6919
-// 0 !KEYWORDS Set 6969, Set 6977, Space
+// 0 !KEYWORDS Bricklink 970c11pb04, droid, Gigabot, Rebrickable 970c03pr0001
+// 0 !KEYWORDS Set 2965, Set 3071, Set 6905, Set 6919, Set 6969, Set 6977, Space
 // 
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 0 !HISTORY 2023-04-03 [Holly-Wood] Adapted to corrected geometry

@@ -17,7 +17,8 @@ function ldraw_lib__32276c01() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Droid Developer Kit, Mindstorms
+// 0 !KEYWORDS BrickLink 32344c01, Droid Developer Kit, Mindstorms
+// 0 !KEYWORDS Rebrickable 32344c01
 // 
 // 0 !HISTORY 2012-01-24 [cwdee] Compensated for adjusted origin of 32344
 // 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01

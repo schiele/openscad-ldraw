@@ -16,9 +16,8 @@ function ldraw_lib__30838pk0() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS Bricklink 30838pb01, Brickowl 20551, Cars, Final, Florida 500
-// 0 !KEYWORDS Jackson Storm, Juniors, Pixar, Race, Rebrickable 30838pr0005
-// 0 !KEYWORDS Set 10745
+// 0 !KEYWORDS Bricklink 30838pb01, Cars, Final, Florida 500, Jackson Storm
+// 0 !KEYWORDS Juniors, Pixar, Race, Rebrickable 30838pr0005, Set 10745
 // 
 // 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
 // 0 !HISTORY 2024-10-27 [OrionP] Official Update 2024-09
