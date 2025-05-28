@@ -83,7 +83,7 @@ function ldraw_lib__433() = [
   [4,16,-36,4,16,-36,4,-16,-13,4,7,-13,4,13],
 // 4 16 -7 4 7 7 4 7 7 4 13 -7 4 13
   [4,16,-7,4,7,7,4,7,7,4,13,-7,4,13],
-// 0 -- Using studa.dat because the studs are higher than normal studs!
+// 0 // -- Using studa.dat because the studs are higher than normal studs!
 // 1 16 30 0 10 0 0 -6 0 1 0 6 0 0 4-4edge.dat
   [1,16,30,0,10,0,0,-6,0,1,0,6,0,0, ldraw_lib__4_4edge()],
 // 1 16 10 0 -10 0 0 -6 0 1 0 6 0 0 4-4edge.dat

@@ -21,7 +21,7 @@ function ldraw_lib__48__1_16ring21() = [
 // 4 16 20.2839 0 5.4348 21.2498 0 5.6936 20.3258 0 8.4194 19.4019 0 8.0367
   [4,16,20.2839,0,5.4348,21.2498,0,5.6936,20.3258,0,8.4194,19.4019,0,8.0367],
 // 
-// 0 end of file
+// 0 // end of file
 // 
 ];
 module ldraw_lib__48__1_16ring21(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)

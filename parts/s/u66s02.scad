@@ -2,10 +2,10 @@ use <../../lib.scad>
 use <../../p/2-4ndis.scad>
 use <../../p/4-4ndis.scad>
 function ldraw_lib__s__u66s02() = [
-// 0 ~Sheet Plastic  6 x 12 Triangular - Surface
+// 0 ~Sail  6 x 12 Triangular - Surface
 // 0 Name: s\u66s02.dat
 // 0 Author: Damien Roux [Darats]
-// 0 !LDRAW_ORG Subpart UPDATE 2015-02
+// 0 !LDRAW_ORG Subpart UPDATE 2025-05
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -13,7 +13,8 @@ function ldraw_lib__s__u66s02() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2015-12-30 [PTadmin] Official Update 2015-02
-// 
+// 0 !HISTORY 2025-05-14 [Holly-Wood] Update description
+// 0 !HISTORY 2025-05-28 [OrionP] Official Update 2025-05
 // 
 // 1 16 88 0 32 0 0 4 0 1 0 -4 0 0 2-4ndis.dat
   [1,16,88,0,32,0,0,4,0,1,0,-4,0,0, ldraw_lib__2_4ndis()],

@@ -1092,8 +1092,8 @@ function ldraw_lib__4297014f() = [
 // 4 0 2.5 -0.25 -11 3 -0.25 -10.75 2.75 -0.25 -10 1 -0.25 -10.25
   [4,0,2.5,-0.25,-11,3,-0.25,-10.75,2.75,-0.25,-10,1,-0.25,-10.25],
 // 0
-// 0 Pattern created wholly or in part by Quad2Dat
-// 0 Thanks James
+// 0 // Pattern created wholly or in part by Quad2Dat
+// 0 // Thanks James
 // 1 288 0 -0.25 0 36 0 0 0 0.25 0 0 0 25 box5-12.dat
   [1,288,0,-0.25,0,36,0,0,0,0.25,0,0,0,25, ldraw_lib__box5_12()],
 // 0

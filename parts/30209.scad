@@ -36,7 +36,7 @@ function ldraw_lib__30209() = [
 // 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
 // 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
-// 0 // 1 x 2 plate
+// 0 // // 1 x 2 plate
 // 1 16 0 4 0 1 0 0 0 -1 0 0 0 1 stud3.dat
   [1,16,0,4,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud3()],
 // 0 BFC INVERTNEXT
@@ -148,7 +148,7 @@ function ldraw_lib__30209() = [
 // 1 16 -10 0 0 1 0 0 0 1 0 0 0 1 stud.dat
   [1,16,-10,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud()],
 // 
-// 0 disc section
+// 0 // disc section
 // 1 16 0 4 12 10 0 0 0 0 10 0 1.375 0 48\1-4disc.dat
   [1,16,0,4,12,10,0,0,0,0,10,0,1.375,0, ldraw_lib__48__1_4disc()],
 // 1 16 0 4 12 0 0 -10 10 0 0 0 1.375 0 48\1-4disc.dat
@@ -172,7 +172,7 @@ function ldraw_lib__30209() = [
 // 1 16 0 4 16 .95 0 0 0 0 .95 0 1.25 0 s\3960s03.dat
   [1,16,0,4,16,.95,0,0,0,0,.95,0,1.25,0, ldraw_lib__s__3960s03()],
 // 
-// 0 axle hub
+// 0 // axle hub
 // 1 16 0 4 30 0 0 -1 1 0 0 0 -14 0 axlehol5.dat
   [1,16,0,4,30,0,0,-1,1,0,0,0,-14,0, ldraw_lib__axlehol5()],
 // 1 16 0 4 30 7.392 0 -3.064 3.064 0 7.392 0 -14 0 3-8cyli.dat

@@ -31,7 +31,7 @@ function ldraw_lib__2_4rin30() = [
 // 4 16 -27.717 0 11.481 -28.6409 0 11.8637 -31 0 0 -30 0 0
   [4,16,-27.717,0,11.481,-28.6409,0,11.8637,-31,0,0,-30,0,0],
 // 
-// 0 end of file
+// 0 // end of file
 // 
 ];
 module ldraw_lib__2_4rin30(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)

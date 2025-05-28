@@ -1,10 +1,10 @@
 use <../../lib.scad>
 use <../../p/4-4cylo.scad>
 function ldraw_lib__s__36069as02() = [
-// 0 ~Sheet Plastic 15 x 28 Trapezoid Sail Edge
+// 0 ~Sail 15 x 28 Trapezoid Edge
 // 0 Name: s\36069as02.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Subpart UPDATE 2019-01
+// 0 !LDRAW_ORG Subpart UPDATE 2025-05
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -12,7 +12,8 @@ function ldraw_lib__s__36069as02() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
-// 
+// 0 !HISTORY 2025-05-12 [Holly-Wood] Update description
+// 0 !HISTORY 2025-05-28 [OrionP] Official Update 2025-05
 // 
 // 4 16 -0.25 -16.2 87.8 0.25 -16.2 87.8 0.25 38.2 118.8 -0.25 38.2 118.8
   [4,16,-0.25,-16.2,87.8,0.25,-16.2,87.8,0.25,38.2,118.8,-0.25,38.2,118.8],

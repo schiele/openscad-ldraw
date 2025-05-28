@@ -34,7 +34,7 @@ function ldraw_lib__48__5_24edge() = [
 // 2 24 .3827 0 .9239 .2588 0 .9659
   [2,24,.3827,0,.9239,.2588,0,.9659],
 // 
-// 0 end of file
+// 0 // end of file
 // 
 ];
 module ldraw_lib__48__5_24edge(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)

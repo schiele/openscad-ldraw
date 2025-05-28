@@ -254,8 +254,8 @@ function ldraw_lib__3070bph0() = [
 // 4 7 0.6173 0 3.1739 1 0 3.25 1 0 4.25 0.2346 0 4.0978
   [4,7,0.6173,0,3.1739,1,0,3.25,1,0,4.25,0.2346,0,4.0978],
 // 0
-// 0 Pattern created wholly or in part by Quad2Dat
-// 0 Thanks James
+// 0 // Pattern created wholly or in part by Quad2Dat
+// 0 // Thanks James
 // 0
 ];
 module ldraw_lib__3070bph0(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)

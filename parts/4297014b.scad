@@ -468,8 +468,8 @@ function ldraw_lib__4297014b() = [
 // 3 15 7.5 -0.25 -3 7.5 -0.25 -2.75 7 -0.25 -3
   [3,15,7.5,-0.25,-3,7.5,-0.25,-2.75,7,-0.25,-3],
 // 0
-// 0 Pattern created wholly or in part by Quad2Dat
-// 0 Thanks James
+// 0 // Pattern created wholly or in part by Quad2Dat
+// 0 // Thanks James
 // 0
 // 0
 ];

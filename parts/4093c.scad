@@ -23,7 +23,7 @@ function ldraw_lib__4093c() = [
 // 0 !HISTORY 2009-05-02 [PTadmin] Official Update 2009-01
 // 
 // 
-// 0 // Bottom Rim
+// 0 // // Bottom Rim
 // 
 // 4 16 276 16 56 280 16 60 -280 16 60 -276 16 56
   [4,16,276,16,56,280,16,60,-280,16,60,-276,16,56],
@@ -34,7 +34,7 @@ function ldraw_lib__4093c() = [
 // 4 16 276 16 -56 280 16 -60 280 16 60 276 16 56
   [4,16,276,16,-56,280,16,-60,280,16,60,276,16,56],
 // 
-// 0 Bottom Rims of 2 rectangular holes
+// 0 // Bottom Rims of 2 rectangular holes
 // 4 16 40 8 20 44 8 24 16 8 24 20 8 20
   [4,16,40,8,20,44,8,24,16,8,24,20,8,20],
 // 4 16 20 8 20 16 8 24 16 8 -24 20 8 -20
@@ -52,7 +52,7 @@ function ldraw_lib__4093c() = [
 // 4 16 -44 8 -24 -40 8 -20 -40 8 20 -44 8 24
   [4,16,-44,8,-24,-40,8,-20,-40,8,20,-44,8,24],
 // 
-// 0 Boxes to make all square verticle faces & edges
+// 0 // Boxes to make all square verticle faces & edges
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 4 0 276 0 0 0 12 0 0 0 56 box4.dat
@@ -72,7 +72,7 @@ function ldraw_lib__4093c() = [
 // 1 16 -30 0 0 10 0 0 0 8 0 0 0 20 box4.dat
   [1,16,-30,0,0,10,0,0,0,8,0,0,0,20, ldraw_lib__box4()],
 // 
-// 0 Rings on the bottom
+// 0 // Rings on the bottom
 // 1 16 260 4 40 1 0 0 0 -1 0 0 0 1 stud4.dat
   [1,16,260,4,40,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4()],
 // 1 16 240 4 40 1 0 0 0 -1 0 0 0 1 stud4.dat
@@ -240,7 +240,7 @@ function ldraw_lib__4093c() = [
 // 1 16 -260 4 -40 1 0 0 0 -1 0 0 0 1 stud4.dat
   [1,16,-260,4,-40,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4()],
 // 
-// 0 Rings around the bottoms of bottom center studs
+// 0 // Rings around the bottoms of bottom center studs
 // 1 16 200 4 0 8 0 0 0 1 0 0 0 8 4-4edge.dat
   [1,16,200,4,0,8,0,0,0,1,0,0,0,8, ldraw_lib__4_4edge()],
 // 1 16 180 4 0 8 0 0 0 1 0 0 0 8 4-4edge.dat
@@ -254,7 +254,7 @@ function ldraw_lib__4093c() = [
 // 1 16 -200 4 0 8 0 0 0 1 0 0 0 8 4-4edge.dat
   [1,16,-200,4,0,8,0,0,0,1,0,0,0,8, ldraw_lib__4_4edge()],
 // 
-// 0 Fillers around holes on bottom
+// 0 // Fillers around holes on bottom
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 200 4 0 8 0 0 0 1 0 0 0 8 4-4ndis.dat
@@ -280,7 +280,7 @@ function ldraw_lib__4093c() = [
 // 1 16 -200 4 0 8 0 0 0 1 0 0 0 8 4-4ndis.dat
   [1,16,-200,4,0,8,0,0,0,1,0,0,0,8, ldraw_lib__4_4ndis()],
 // 
-// 0 Bottom Face Surfaces
+// 0 // Bottom Face Surfaces
 // 4 16 192 4 -8 192 4 8 188 4 8 188 4 -8
   [4,16,192,4,-8,192,4,8,188,4,8,188,4,-8],
 // 4 16 172 4 -8 172 4 8 168 4 8 168 4 -8
@@ -312,7 +312,7 @@ function ldraw_lib__4093c() = [
 // 4 16 276 4 -56 44 4 -24 -44 4 -24 -276 4 -56
   [4,16,276,4,-56,44,4,-24,-44,4,-24,-276,4,-56],
 // 
-// 0 cylinders in the bottom holes
+// 0 // cylinders in the bottom holes
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 200 0 0 6 0 0 0 4 0 0 0 6 4-4cyli.dat
@@ -338,7 +338,7 @@ function ldraw_lib__4093c() = [
 // 1 16 -200 0 0 6 0 0 0 4 0 0 0 6 4-4cyli.dat
   [1,16,-200,0,0,6,0,0,0,4,0,0,0,6, ldraw_lib__4_4cyli()],
 // 
-// 0 top edge of bottom holes
+// 0 // top edge of bottom holes
 // 1 16 200 0 0 6 0 0 0 1 0 0 0 6 4-4edge.dat
   [1,16,200,0,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4edge()],
 // 1 16 180 0 0 6 0 0 0 1 0 0 0 6 4-4edge.dat
@@ -352,7 +352,7 @@ function ldraw_lib__4093c() = [
 // 1 16 -200 0 0 6 0 0 0 1 0 0 0 6 4-4edge.dat
   [1,16,-200,0,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4edge()],
 // 
-// 0 Fill bits around top edge of holes
+// 0 // Fill bits around top edge of holes
 // 1 16 200 0 0 6 0 0 0 1 0 0 0 6 4-4ndis.dat
   [1,16,200,0,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4ndis()],
 // 1 16 180 0 0 6 0 0 0 1 0 0 0 6 4-4ndis.dat
@@ -366,7 +366,7 @@ function ldraw_lib__4093c() = [
 // 1 16 -200 0 0 6 0 0 0 1 0 0 0 6 4-4ndis.dat
   [1,16,-200,0,0,6,0,0,0,1,0,0,0,6, ldraw_lib__4_4ndis()],
 // 
-// 0 Top Face Surfaces
+// 0 // Top Face Surfaces
 // 4 16 194 0 6 194 0 -6 186 0 -6 186 0 6
   [4,16,194,0,6,194,0,-6,186,0,-6,186,0,6],
 // 4 16 174 0 6 174 0 -6 166 0 -6 166 0 6
@@ -398,7 +398,7 @@ function ldraw_lib__4093c() = [
 // 4 16 40 0 -20 280 0 -60 -280 0 -60 -40 0 -20
   [4,16,40,0,-20,280,0,-60,-280,0,-60,-40,0,-20],
 // 
-// 0 The studs on top
+// 0 // The studs on top
 // 1 16 220 0 0 1 0 0 0 1 0 0 0 1 stug6.dat
   [1,16,220,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stug6()],
 // 1 16 -220 0 0 1 0 0 0 1 0 0 0 1 stug6.dat

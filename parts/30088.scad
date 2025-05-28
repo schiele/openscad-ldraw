@@ -35,7 +35,7 @@ function ldraw_lib__30088() = [
   [1,16,0,-5.639,-11.156,-4,0,0,0,-19.8479,-3.5699,0,-39.2691,1.8044, ldraw_lib__4_4cyli()],
 // 1 16 0 -25.487 -50.425 -4 0 0 0 -0.4511 -3.5699 0 -0.8925 1.8044 4-4edge.dat
   [1,16,0,-25.487,-50.425,-4,0,0,0,-0.4511,-3.5699,0,-0.8925,1.8044, ldraw_lib__4_4edge()],
-// 0 ribbed area
+// 0 // ribbed area
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -5.639 -11.156 -1 0 0 0 -0.4511 -0.8925 0 -0.8925 0.4511 4-4ring4.dat
@@ -128,7 +128,7 @@ function ldraw_lib__30088() = [
   [1,16,0,5.639,11.156,4,0,0,0,1.8044,3.5699,0,3.5699,-1.8044, ldraw_lib__t04o2500()],
 // 1 16 0 5.639 11.156 -4 0 0 0 1.8044 3.5699 0 3.5699 -1.8044 t04o2500.dat
   [1,16,0,5.639,11.156,-4,0,0,0,1.8044,3.5699,0,3.5699,-1.8044, ldraw_lib__t04o2500()],
-// 0 Spear shaft and point
+// 0 // Spear shaft and point
 // 2 24 -2 -27.2715 -49.5229 -2 -23.7016 -51.3272
   [2,24,-2,-27.2715,-49.5229,-2,-23.7016,-51.3272],
 // 2 24 -2 -23.7016 -51.3272 2 -23.7016 -51.3272
@@ -179,7 +179,7 @@ function ldraw_lib__30088() = [
   [2,24,2,-23.7016,-51.3272,2,-36.3321,-76.3167],
 // 2 24 -2 -23.7016 -51.3272 -2 -36.3321 -76.3167
   [2,24,-2,-23.7016,-51.3272,-2,-36.3321,-76.3167],
-// 0 spear point curve
+// 0 // spear point curve
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -2 -38.563 -75.189 0 -1 0 -2.2312 0 -1.1277 1.1277 0 -2.2312 2-4disc.dat
@@ -194,7 +194,7 @@ function ldraw_lib__30088() = [
   [1,16,2,-38.563,-75.189,0,-1,0,-2.2312,0,-1.1277,1.1277,0,-2.2312, ldraw_lib__2_4edge()],
 // 1 16 2 -38.563 -75.189 0 -4 0 -2.2312 0 -1.1277 1.1277 0 -2.2312 2-4cyli.dat
   [1,16,2,-38.563,-75.189,0,-4,0,-2.2312,0,-1.1277,1.1277,0,-2.2312, ldraw_lib__2_4cyli()],
-// 0 spear barb curve
+// 0 // spear barb curve
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 -2 -37.195 -69.157 0 -1 0 -1.785 0 0.9022 0.9022 0 1.785 1-4disc.dat
@@ -207,9 +207,9 @@ function ldraw_lib__30088() = [
   [1,16,-2,-37.195,-69.157,0,-1,0,-1.785,0,0.9022,0.9022,0,1.785, ldraw_lib__1_4edge()],
 // 1 16 2 -37.195 -69.157 0 -1 0 -1.785 0 0.9022 0.9022 0 1.785 1-4edge.dat
   [1,16,2,-37.195,-69.157,0,-1,0,-1.785,0,0.9022,0.9022,0,1.785, ldraw_lib__1_4edge()],
-// 0 Trigger (3 ldu thick) Trigger sides done as 2 big triangles to core of barrel
-// 0 purpose was to avoid many little triangles which will be non-planer to each other
-// 0 after barrel is rotated to 26.8136 in ldraw before handle is installed.
+// 0 // Trigger (3 ldu thick) Trigger sides done as 2 big triangles to core of barrel
+// 0 // purpose was to avoid many little triangles which will be non-planer to each other
+// 0 // after barrel is rotated to 26.8136 in ldraw before handle is installed.
 // 3 16 1.5 0 0 1.5 -4.0598 -8.0323 1.5 3.08 -11.641
   [3,16,1.5,0,0,1.5,-4.0598,-8.0323,1.5,3.08,-11.641],
 // 3 16 1.5 3.08 -11.641 1.5 7.1398 -3.6087 1.5 0 0
@@ -254,8 +254,8 @@ function ldraw_lib__30088() = [
   [2,24,1.5,3.08,-11.641,1.5,7.0928,-3.7017],
 // 2 24 -1.5 3.08 -11.641 -1.5 7.0928 -3.7017
   [2,24,-1.5,3.08,-11.641,-1.5,7.0928,-3.7017],
-// 0 lines between trigger and barrel (thanks philo for isecalc)
-// 0 lines computed after rotation of barrel in mlcad
+// 0 // lines between trigger and barrel (thanks philo for isecalc)
+// 0 // lines computed after rotation of barrel in mlcad
 // 2 24 0 -0.0483 -11.1803 0.7177 -0.1757 -11.1159
   [2,24,0,-0.0483,-11.1803,0.7177,-0.1757,-11.1159],
 // 2 24 1.5 -0.3145 -11.0458 1.5 0.3622 -9.7069
@@ -313,7 +313,7 @@ function ldraw_lib__30088() = [
 // 2 24 -1.5 1.9501 -4.3476 -1.5 2.2532 -3.7017
   [2,24,-1.5,1.9501,-4.3476,-1.5,2.2532,-3.7017],
 // 
-// 0 Handle - handle added after rotation of shaft assembly in mlcad
+// 0 // Handle - handle added after rotation of shaft assembly in mlcad
 // 1 16 0 0 0 4 0 0 0 24 0 0 0 4 4-4cyli.dat
   [1,16,0,0,0,4,0,0,0,24,0,0,0,4, ldraw_lib__4_4cyli()],
 // 0 BFC INVERTNEXT
@@ -322,7 +322,7 @@ function ldraw_lib__30088() = [
   [1,16,0,24,0,-4,0,0,0,1,0,0,0,4, ldraw_lib__4_4disc()],
 // 1 16 0 24 0 -4 0 0 0 1 0 0 0 4 4-4edge.dat
   [1,16,0,24,0,-4,0,0,0,1,0,0,0,4, ldraw_lib__4_4edge()],
-// 0 Edge lines between handle and rest of speargun (thanks again philo for isecalc)
+// 0 // Edge lines between handle and rest of speargun (thanks again philo for isecalc)
 // 2 24 3.0884 1.5001 -2.4394 2.938 1.9452 -2.6643
   [2,24,3.0884,1.5001,-2.4394,2.938,1.9452,-2.6643],
 // 2 24 2.8284 2.2698 -2.8284 1.9599 3.4181 -3.4088

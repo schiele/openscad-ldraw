@@ -4,10 +4,10 @@ use <s/u9496c02s02.scad>
 use <s/u9496c02s03.scad>
 use <s/u9496c02s04.scad>
 function ldraw_lib__u9496c02() = [
-// 0 Sheet Fabric 15 x 22 Triangular Sail (Formed Shape 2)
+// 0 Sail 15 x 22 Triangular with  8 Holes (Formed Shape 2)
 // 0 Name: u9496c02.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2022-03
+// 0 !LDRAW_ORG Part UPDATE 2025-05
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -15,10 +15,11 @@ function ldraw_lib__u9496c02() = [
   [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Sheet Fabric
-// 0 !KEYWORDS BrickLink sailbb08, Rebrickable 71308
+// 0 !KEYWORDS BrickLink sailbb08, Rebrickable 71308, set 6271
 // 
 // 0 !HISTORY 2022-05-07 [PTadmin] Official Update 2022-03
-// 
+// 0 !HISTORY 2025-04-28 [Holly-Wood] Updated description
+// 0 !HISTORY 2025-05-28 [OrionP] Official Update 2025-05
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\u9496c02s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__u9496c02s01()],

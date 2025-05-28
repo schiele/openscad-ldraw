@@ -247,8 +247,8 @@ function ldraw_lib__3010pt5() = [
 // 3 16 0 24 -10 15.25 17.5 -10 5 21 -10
   [3,16,0,24,-10,15.25,17.5,-10,5,21,-10],
 // 0
-// 0 Pattern created wholly or in part by Quad2Dat
-// 0 Thanks James
+// 0 // Pattern created wholly or in part by Quad2Dat
+// 0 // Thanks James
 // 0
 ];
 module ldraw_lib__3010pt5(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)

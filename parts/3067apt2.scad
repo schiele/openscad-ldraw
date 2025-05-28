@@ -450,8 +450,8 @@ function ldraw_lib__3067apt2() = [
 // 3 16 60 0 -10 53.5 15.25 -10 60 24 -10
   [3,16,60,0,-10,53.5,15.25,-10,60,24,-10],
 // 0
-// 0 Pattern created wholly or in part by Quad2Dat
-// 0 Thanks James
+// 0 // Pattern created wholly or in part by Quad2Dat
+// 0 // Thanks James
 // 0
 ];
 module ldraw_lib__3067apt2(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)

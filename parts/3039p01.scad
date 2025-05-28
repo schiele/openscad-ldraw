@@ -38,8 +38,8 @@ function ldraw_lib__3039p01() = [
 // 4 16 -20 19.799 -29.799 -20 20 -30 16 19.9998 -29.9998 16 19.799 -29.799
   [4,16,-20,19.799,-29.799,-20,20,-30,16,19.9998,-29.9998,16,19.799,-29.799],
 // 0
-// 0 Pattern created wholly or in part by Quad2Dat
-// 0 Thanks James
+// 0 // Pattern created wholly or in part by Quad2Dat
+// 0 // Thanks James
 // 0
 ];
 module ldraw_lib__3039p01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)

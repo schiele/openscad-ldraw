@@ -22,7 +22,7 @@ function ldraw_lib__u9073() = [
 // 0 !HISTORY 2013-07-21 [PTadmin] Official Update 2013-01
 // 
 // 
-// 0 // Edges
+// 0 // // Edges
 // 
 // 1 16 21 12 -16 -4 0 0 0 0 4 0 4 0 4-4edge.dat
   [1,16,21,12,-16,-4,0,0,0,0,4,0,4,0, ldraw_lib__4_4edge()],
@@ -73,7 +73,7 @@ function ldraw_lib__u9073() = [
 // 2 24 29.4 19 -7 29.4 19 0
   [2,24,29.4,19,-7,29.4,19,0],
 // 
-// 0 --Outer Faces
+// 0 // --Outer Faces
 // 1 16 21 12 -16 0 0 -2 -2 0 0 0 2 0 2-4ring2.dat
   [1,16,21,12,-16,0,0,-2,-2,0,0,0,2,0, ldraw_lib__2_4ring2()],
 // 1 16 21 12 -16 0 0 -1 -1 0 0 0 1 0 2-4ring6.dat
@@ -101,7 +101,7 @@ function ldraw_lib__u9073() = [
 // 1 16 30.4 12 0 0 -1 0 -1 0 0 0 0 1 2-4ring6.dat
   [1,16,30.4,12,0,0,-1,0,-1,0,0,0,0,1, ldraw_lib__2_4ring6()],
 // 
-// 0 --Inner Faces
+// 0 // --Inner Faces
 // 1 16 21 12 -15 0 0 -2 -2 0 0 0 -2 0 2-4ring2.dat
   [1,16,21,12,-15,0,0,-2,-2,0,0,0,-2,0, ldraw_lib__2_4ring2()],
 // 1 16 21 12 -15 0 0 -1 -1 0 0 0 -1 0 2-4ring6.dat
@@ -129,7 +129,7 @@ function ldraw_lib__u9073() = [
 // 1 16 29.4 12 0 0 1 0 -1 0 0 0 0 1 2-4ring6.dat
   [1,16,29.4,12,0,0,1,0,-1,0,0,0,0,1, ldraw_lib__2_4ring6()],
 // 
-// 0 --Side Faces
+// 0 // --Side Faces
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 21 12 -16 -4 0 0 0 0 4 0 1 0 4-4cyli.dat

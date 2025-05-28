@@ -90,8 +90,8 @@ function ldraw_lib__s__30180p1s() = [
 // 4 16 20 0 -10 0 0 -10 15 0.5 -10 20 0.5 -10
   [4,16,20,0,-10,0,0,-10,15,0.5,-10,20,0.5,-10],
 // 0
-// 0 Pattern created wholly or in part by Quad2Dat
-// 0 Thanks James
+// 0 // Pattern created wholly or in part by Quad2Dat
+// 0 // Thanks James
 // 0
 ];
 module ldraw_lib__s__30180p1s(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)

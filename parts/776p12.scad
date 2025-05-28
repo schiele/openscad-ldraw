@@ -18,11 +18,11 @@ function ldraw_lib__776p12() = [
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
 // 
 // 
-// 0 // The LEGO version really has the gold symbol missing
+// 0 // // The LEGO version really has the gold symbol missing
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\776s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__776s01()],
 // 
-// 0 REM Decorated surfaces
+// 0 // REM Decorated surfaces
 // 4 2 1.5 -154 -1.5 21.5 -146 -1.5 21.5 -98 -1.5 1.5 -106 -1.5
   [4,2,1.5,-154,-1.5,21.5,-146,-1.5,21.5,-98,-1.5,1.5,-106,-1.5],
 // 4 2 1.5 -154 1.5 1.5 -106 1.5 21.5 -98 1.5 21.5 -146 1.5

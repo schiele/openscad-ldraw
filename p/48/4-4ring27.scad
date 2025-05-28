@@ -111,7 +111,7 @@ function ldraw_lib__48__4_4ring27() = [
 // 4 16 26.7678 0 -3.5235 27.7592 0 -3.654 28 0 0 27 0 0
   [4,16,26.7678,0,-3.5235,27.7592,0,-3.654,28,0,0,27,0,0],
 // 
-// 0 end of file
+// 0 // end of file
 // 
 ];
 module ldraw_lib__48__4_4ring27(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)

@@ -1,10 +1,10 @@
 use <../../lib.scad>
 use <../../p/4-4ndis.scad>
 function ldraw_lib__s__36069bs01() = [
-// 0 ~Sheet Plastic 13 x 26 Triangular Sail Surface
+// 0 ~Sail 13 x 26 Triangular Surface
 // 0 Name: s\36069bs01.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Subpart UPDATE 2019-01
+// 0 !LDRAW_ORG Subpart UPDATE 2025-05
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -12,7 +12,8 @@ function ldraw_lib__s__36069bs01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
-// 
+// 0 !HISTORY 2025-05-12 [Holly-Wood] Update description
+// 0 !HISTORY 2025-05-28 [OrionP] Official Update 2025-05
 // 
 // 4 16 0 -7.2505 3.3809 0 -8.1568 3.8036 0 -9.8472 0.1783 0 -9.3636 -1.1506
   [4,16,0,-7.2505,3.3809,0,-8.1568,3.8036,0,-9.8472,0.1783,0,-9.3636,-1.1506],

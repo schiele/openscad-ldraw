@@ -27,7 +27,7 @@ function ldraw_lib__48__1_8rin39() = [
 // 4 16 30.9426 0 23.7432 31.736 0 24.352 28.284 0 28.284 27.5769 0 27.5769
   [4,16,30.9426,0,23.7432,31.736,0,24.352,28.284,0,28.284,27.5769,0,27.5769],
 // 
-// 0 end of file
+// 0 // end of file
 // 
 ];
 module ldraw_lib__48__1_8rin39(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)

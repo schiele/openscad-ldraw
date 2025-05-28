@@ -13,12 +13,12 @@ function ldraw_lib__empty() = [
 // 0 !HISTORY 2015-10-11 [PTadmin] Official Update 2015-01
 // 
 // 
-// 0 // Tool MLCad cannot handle really empty files. This file is used as a workaround.
-// 0 // It exceptionally contains forbidden non-LDRAW standard syntax to satisfy MLCad until it is fixed OR a different editor has become the de-facto LDRAW standard.
-// 0 // The line being used here is an "impossible" conditional line which never should be visible,
-// 0 // additionally hidden by a syntax explicitly hiding it from displaying.
+// 0 // // Tool MLCad cannot handle really empty files. This file is used as a workaround.
+// 0 // // It exceptionally contains forbidden non-LDRAW standard syntax to satisfy MLCad until it is fixed OR a different editor has become the de-facto LDRAW standard.
+// 0 // // The line being used here is an "impossible" conditional line which never should be visible,
+// 0 // // additionally hidden by a syntax explicitly hiding it from displaying.
 // 
-// 0 MLCAD HIDE 5 24 0 0 0 0.0001 0 0 0.0001 -0.0001 0 0 0 0
+// 0 // MLCAD HIDE 5 24 0 0 0 0.0001 0 0 0.0001 -0.0001 0 0 0 0
 ];
 module ldraw_lib__empty(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
     makepoly(ldraw_lib__empty(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);

@@ -759,8 +759,8 @@ function ldraw_lib__3009p70() = [
 // 3 0 31.75 10.5 -10 30.25 11.75 -10 31.75 13.5 -10
   [3,0,31.75,10.5,-10,30.25,11.75,-10,31.75,13.5,-10],
 // 0
-// 0 Pattern created wholly or in part by Quad2Dat
-// 0 Thanks James
+// 0 // Pattern created wholly or in part by Quad2Dat
+// 0 // Thanks James
 // 0
 ];
 module ldraw_lib__3009p70(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)

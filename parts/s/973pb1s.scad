@@ -15,7 +15,7 @@ function ldraw_lib__s__973pb1s() = [
 // 0 !HISTORY 2022-01-14 [PTadmin] Official Update 2022-01
 // 
 // 
-// 0 // front pattern half
+// 0 // // front pattern half
 // 
 // 3 0 -12.5 6.75 -10 -12 5.5 -10 -14 7.5 -10
   [3,0,-12.5,6.75,-10,-12,5.5,-10,-14,7.5,-10],
@@ -480,8 +480,8 @@ function ldraw_lib__s__973pb1s() = [
 // 4 16 -17.75 24.75 -10 -15 12.5 -10 -14.345 2 -10 -19 29 -10
   [4,16,-17.75,24.75,-10,-15,12.5,-10,-14.345,2,-10,-19,29,-10],
 // 0
-// 0 Pattern created wholly or in part by Quad2Dat
-// 0 Thanks James
+// 0 // Pattern created wholly or in part by Quad2Dat
+// 0 // Thanks James
 // 0
 ];
 module ldraw_lib__s__973pb1s(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)

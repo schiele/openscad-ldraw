@@ -47,7 +47,7 @@ function ldraw_lib__4_4ring34() = [
 // 4 16 31.4126 0 -13.0118 32.3365 0 -13.3945 35 0 0 34 0 0
   [4,16,31.4126,0,-13.0118,32.3365,0,-13.3945,35,0,0,34,0,0],
 // 
-// 0 end of file
+// 0 // end of file
 // 
 ];
 module ldraw_lib__4_4ring34(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)

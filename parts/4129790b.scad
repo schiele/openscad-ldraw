@@ -854,8 +854,8 @@ function ldraw_lib__4129790b() = [
 // 3 1 60 -0.25 12 54.25 -0.25 1.25 56 -0.25 -6.5
   [3,1,60,-0.25,12,54.25,-0.25,1.25,56,-0.25,-6.5],
 // 0
-// 0 Pattern created wholly or in part by Quad2Dat
-// 0 Thanks James
+// 0 // Pattern created wholly or in part by Quad2Dat
+// 0 // Thanks James
 // 4 1 60 0 12 60 0 -12 -60 0 -12 -60 0 12
   [4,1,60,0,12,60,0,-12,-60,0,-12,-60,0,12],
 // 4 1 -60 0 -12 -60 -0.25 -12 -60 -0.25 12 -60 0 12

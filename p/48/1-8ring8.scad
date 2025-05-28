@@ -26,7 +26,7 @@ function ldraw_lib__48__1_8ring8() = [
 // 4 16 6.3472 0 4.8704 7.1406 0 5.4792 6.3639 0 6.3639 5.6568 0 5.6568
   [4,16,6.3472,0,4.8704,7.1406,0,5.4792,6.3639,0,6.3639,5.6568,0,5.6568],
 // 
-// 0 end of file
+// 0 // end of file
 // 
 ];
 module ldraw_lib__48__1_8ring8(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)

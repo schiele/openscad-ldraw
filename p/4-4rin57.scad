@@ -47,7 +47,7 @@ function ldraw_lib__4_4rin57() = [
 // 4 16 52.6623 0 -21.8139 53.5862 0 -22.1966 58 0 0 57 0 0
   [4,16,52.6623,0,-21.8139,53.5862,0,-22.1966,58,0,0,57,0,0],
 // 
-// 0 end of file
+// 0 // end of file
 // 
 ];
 module ldraw_lib__4_4rin57(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)

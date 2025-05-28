@@ -26,10 +26,10 @@ function ldraw_lib__323() = [
 // 0 !HISTORY 2009-12-29 [PTadmin] Official Update 2009-03
 // 
 // 
-// 0 // Some edges and faces of glass (color 47) part are disabled,
-// 0 // as these are duplicates of metal (color 16) edges and faces.
+// 0 // // Some edges and faces of glass (color 47) part are disabled,
+// 0 // // as these are duplicates of metal (color 16) edges and faces.
 // 
-// 0 // Right connector outside
+// 0 // // Right connector outside
 // 
 // 1 16 17 0 0 0 1 0 7 0 0 0 0 7 4-4edge.dat
   [1,16,17,0,0,0,1,0,7,0,0,0,0,7, ldraw_lib__4_4edge()],
@@ -79,7 +79,7 @@ function ldraw_lib__323() = [
   [1,16,29.7,0,0,0,1.3,0,1,0,0,0,0,1, ldraw_lib__4_4con1()],
 // 1 16 31 0 0 0 1 0 1 0 0 0 0 1 4-4disc.dat
   [1,16,31,0,0,0,1,0,1,0,0,0,0,1, ldraw_lib__4_4disc()],
-// 0 --Left connector
+// 0 // --Left connector
 // 1 16 -13.5 0 0 0 1 0 7 0 0 0 0 7 4-4edge.dat
   [1,16,-13.5,0,0,0,1,0,7,0,0,0,0,7, ldraw_lib__4_4edge()],
 // 1 16 -26 0 0 0 1 0 7 0 0 0 0 7 4-4edge.dat
@@ -128,7 +128,7 @@ function ldraw_lib__323() = [
   [1,16,-30,0,0,0,-1,0,1,0,0,0,0,1, ldraw_lib__4_4con1()],
 // 1 16 -31 0 0 0 -1 0 1 0 0 0 0 1 4-4disc.dat
   [1,16,-31,0,0,0,-1,0,1,0,0,0,0,1, ldraw_lib__4_4disc()],
-// 0 --Bulb Edges
+// 0 // --Bulb Edges
 // 1 47 -26 0 0 0 1 0 5 0 0 0 0 5 4-4edge.dat
   [1,47,-26,0,0,0,1,0,5,0,0,0,0,5, ldraw_lib__4_4edge()],
 // 1 47 -12.5 0 0 0 1 0 8 0 0 0 0 8 4-4edge.dat
@@ -145,13 +145,13 @@ function ldraw_lib__323() = [
   [1,47,-12,0,0,0,1,0,7,0,0,0,0,7, ldraw_lib__4_4edge()],
 // 1 47 -14 0 0 0 1 0 5 0 0 0 0 5 4-4edge.dat
   [1,47,-14,0,0,0,1,0,5,0,0,0,0,5, ldraw_lib__4_4edge()],
-// 0 --Bulb edges duplicate with metal edges
-// 0 --(Not removed, but only commented out)
-// 0 1 47 -26 0 0 0 1 0 6 0 0 0 0 6 4-4edge.dat
-// 0 1 47 -14.5 0 0 0 1 0 6 0 0 0 0 6 4-4edge.dat
-// 0 1 47 18 0 0 0 1 0 6 0 0 0 0 6 4-4edge.dat
-// 0 1 47 24.5 0 0 0 1 0 6 0 0 0 0 6 4-4edge.dat
-// 0 -- Bulb faces
+// 0 // --Bulb edges duplicate with metal edges
+// 0 // --(Not removed, but only commented out)
+// 0 // 1 47 -26 0 0 0 1 0 6 0 0 0 0 6 4-4edge.dat
+// 0 // 1 47 -14.5 0 0 0 1 0 6 0 0 0 0 6 4-4edge.dat
+// 0 // 1 47 18 0 0 0 1 0 6 0 0 0 0 6 4-4edge.dat
+// 0 // 1 47 24.5 0 0 0 1 0 6 0 0 0 0 6 4-4edge.dat
+// 0 // -- Bulb faces
 // 1 47 -26 0 0 0 1 0 1 0 0 0 0 1 4-4ring5.dat
   [1,47,-26,0,0,0,1,0,1,0,0,0,0,1, ldraw_lib__4_4ring5()],
 // 0 BFC INVERTNEXT
@@ -190,12 +190,12 @@ function ldraw_lib__323() = [
   [1,47,-12.5,0,0,0,28.5,0,8,0,0,0,0,8, ldraw_lib__4_4cyli()],
 // 1 47 -12.5 0 0 0 -1 0 1 0 0 0 0 1 4-4con7.dat
   [1,47,-12.5,0,0,0,-1,0,1,0,0,0,0,1, ldraw_lib__4_4con7()],
-// 0 --Bulb faces duplicate with metal faces
-// 0 --(Not removed, but only commented out)
-// 0 1 47 24.5 0 0 0 -6.5 0 6 0 0 0 0 6 4-4cyli.dat
-// 0 1 47 17 0 0 0 1 0 1 0 0 0 0 1 4-4con6.dat
-// 0 1 47 -13.5 0 0 0 -1 0 1 0 0 0 0 1 4-4con6.dat
-// 0 1 47 -13.5 0 0 0 -12.5 0 6 0 0 0 0 6 4-4cyli.dat
+// 0 // --Bulb faces duplicate with metal faces
+// 0 // --(Not removed, but only commented out)
+// 0 // 1 47 24.5 0 0 0 -6.5 0 6 0 0 0 0 6 4-4cyli.dat
+// 0 // 1 47 17 0 0 0 1 0 1 0 0 0 0 1 4-4con6.dat
+// 0 // 1 47 -13.5 0 0 0 -1 0 1 0 0 0 0 1 4-4con6.dat
+// 0 // 1 47 -13.5 0 0 0 -12.5 0 6 0 0 0 0 6 4-4cyli.dat
 // 0
 // 
 ];

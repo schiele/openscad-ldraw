@@ -24,7 +24,7 @@ function ldraw_lib__3629() = [
 // 0 !HISTORY 2012-12-28 [PTadmin] Official Update 2012-03
 // 
 // 
-// 0 // underside (inside)
+// 0 // // underside (inside)
 // 
 // 3 16 0 0 -14 -2 -14 -10 2 -14 -10
   [3,16,0,0,-14,-2,-14,-10,2,-14,-10],
@@ -63,7 +63,7 @@ function ldraw_lib__3629() = [
 // 5 24 -9.899 0 -9.899 -3.827 -16 -9.239 -7.071 -16 -7.071 -5.358 0 -12.934
   [5,24,-9.899,0,-9.899,-3.827,-16,-9.239,-7.071,-16,-7.071,-5.358,0,-12.934],
 // 
-// 0 Subpart Minifig Hat Cowboy without Front Face
+// 0 // Subpart Minifig Hat Cowboy without Front Face
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3629s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3629s01()],
 // 0

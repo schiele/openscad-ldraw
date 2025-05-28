@@ -4,10 +4,10 @@ use <../../p/4-4cylo.scad>
 use <../../p/box3u4a.scad>
 use <../../p/rect2p.scad>
 function ldraw_lib__s__u66s01() = [
-// 0 ~Sheet Plastic  6 x 12 Triangular - Edges
+// 0 ~Sail  6 x 12 Triangular - Edges
 // 0 Name: s\u66s01.dat
 // 0 Author: Damien Roux [Darats]
-// 0 !LDRAW_ORG Subpart UPDATE 2015-02
+// 0 !LDRAW_ORG Subpart UPDATE 2025-05
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -15,7 +15,8 @@ function ldraw_lib__s__u66s01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2015-12-30 [PTadmin] Official Update 2015-02
-// 
+// 0 !HISTORY 2025-05-14 [Holly-Wood] Update description
+// 0 !HISTORY 2025-05-28 [OrionP] Official Update 2025-05
 // 
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],

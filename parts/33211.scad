@@ -32,7 +32,7 @@ function ldraw_lib__33211() = [
 // 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
 // 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
-// 0 // Nomenclature: width_(mm) x rim_diameter_(mm) [optional qualifier]
+// 0 // // Nomenclature: width_(mm) x rim_diameter_(mm) [optional qualifier]
 // 
 // 1 16 0 0 0 -2 0 0 0 0 -2 0 -1 0 4-4ring4.dat
   [1,16,0,0,0,-2,0,0,0,0,-2,0,-1,0, ldraw_lib__4_4ring4()],
@@ -86,7 +86,7 @@ function ldraw_lib__33211() = [
   [1,16,0,0,-24,46,0,0,0,0,-46,0,8,0, ldraw_lib__48__4_4cyli()],
 // 1 16 0 0 -24 54 0 0 0 0 -54 0 8 0 48\4-4cyli.dat
   [1,16,0,0,-24,54,0,0,0,0,-54,0,8,0, ldraw_lib__48__4_4cyli()],
-// 0 Following rings fill in gaps in the polygonal 'curves' of LDraw.
+// 0 // Following rings fill in gaps in the polygonal 'curves' of LDraw.
 // 1 16 0 0 -9 -1 0 0 0 0 -1 0 -1 0 4-4ring10.dat
   [1,16,0,0,-9,-1,0,0,0,0,-1,0,-1,0, ldraw_lib__4_4ring10()],
 // 1 16 0 0 -12 1 0 0 0 0 -1 0 1 0 4-4ring10.dat

@@ -330,8 +330,8 @@ function ldraw_lib__4119056a() = [
 // 3 1 -16.5 -0.25 -6.5 -16.25 -0.25 -5.5 -19.5 -0.25 -2
   [3,1,-16.5,-0.25,-6.5,-16.25,-0.25,-5.5,-19.5,-0.25,-2],
 // 0
-// 0 Pattern created wholly or in part by Quad2Dat
-// 0 Thanks James
+// 0 // Pattern created wholly or in part by Quad2Dat
+// 0 // Thanks James
 // 1 15 -16.5 0 6.5 -3 0 0 0 -3 0 0 0 3 1-4disc.dat
   [1,15,-16.5,0,6.5,-3,0,0,0,-3,0,0,0,3, ldraw_lib__1_4disc()],
 // 1 15 -16.5 0 6.5 -3 0 0 0 -0.25 0 0 0 3 1-4cyli.dat

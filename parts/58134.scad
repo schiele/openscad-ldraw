@@ -29,8 +29,8 @@ function ldraw_lib__58134() = [
 // 0 !HISTORY 2016-12-31 [PTadmin] Official Update 2016-01
 // 
 // 
-// 0 // Needs Work: Battery case is underdetailed
-// 0 // Needs Work: Internal surface not exact
+// 0 // // Needs Work: Battery case is underdetailed
+// 0 // // Needs Work: Internal surface not exact
 // 
 // 1 16 0 0 0 0 0 -1 0 1 0 1 0 0 s\58134s01.dat
   [1,16,0,0,0,0,0,-1,0,1,0,1,0,0, ldraw_lib__s__58134s01()],
@@ -168,7 +168,7 @@ function ldraw_lib__58134() = [
   [4,16,18,-16,93,-18,-16,93,-41,-16,69,41,-16,69],
 // 4 16 41 -16 -69 -41 -16 -69 -39 -16 -79 39 -16 -79
   [4,16,41,-16,-69,-41,-16,-69,-39,-16,-79,39,-16,-79],
-// 0 // Hole
+// 0 // // Hole
 // 1 16 0 0 74 0 0 -9 0 1 0 9 0 0 4-4edge.dat
   [1,16,0,0,74,0,0,-9,0,1,0,9,0,0, ldraw_lib__4_4edge()],
 // 1 16 0 -14 74 0 0 -9 0 1 0 9 0 0 4-4edge.dat
@@ -205,7 +205,7 @@ function ldraw_lib__58134() = [
   [1,16,0,-4,74,0,0,-2,0,-4,0,2,0,0, ldraw_lib__4_4con3()],
 // 1 16 0 -8 74 0 0 -3 0 -1 0 3 0 0 4-4ring1.dat
   [1,16,0,-8,74,0,0,-3,0,-1,0,3,0,0, ldraw_lib__4_4ring1()],
-// 0 End Middle
+// 0 // End Middle
 // 3 16 -17 -2 -84 -18 -24 -97 -17 -24 -99
   [3,16,-17,-2,-84,-18,-24,-97,-17,-24,-99],
 // 3 16 -17 -2 -84 -17 -24 -99 -13.01 -12.59 -97.02

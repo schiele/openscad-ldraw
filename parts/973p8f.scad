@@ -21,17 +21,17 @@ function ldraw_lib__973p8f() = [
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\973s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__973s01()],
-// 0 COMMENT neck mark
+// 0 // COMMENT neck mark
 // 1 0 0 -4 0 4.243 0 -4.243 0 -8 0 -4.243 0 -4.243 1-4cyli.dat
   [1,0,0,-4,0,4.243,0,-4.243,0,-8,0,-4.243,0,-4.243, ldraw_lib__1_4cyli()],
-// 0 COMMENT plain back
+// 0 // COMMENT plain back
 // 4 16 -19 32 10 -19 29 10 19 29 10 19 32 10
   [4,16,-19,32,10,-19,29,10,19,29,10,19,32,10],
 // 4 16 19 29 10 -19 29 10 -14.345 2 10 14.345 2 10
   [4,16,19,29,10,-19,29,10,-14.345,2,10,14.345,2,10],
 // 4 16 12 0 10 14.345 2 10 -14.345 2 10 -12 0 10
   [4,16,12,0,10,14.345,2,10,-14.345,2,10,-12,0,10],
-// 0 COMMENT front pattern
+// 0 // COMMENT front pattern
 // 1 1 -2.5 13.5 -10 1 0 0 0 0 -1 0 1 0 4-4disc.dat
   [1,1,-2.5,13.5,-10,1,0,0,0,0,-1,0,1,0, ldraw_lib__4_4disc()],
 // 1 1 -2.5 18.75 -10 1 0 0 0 0 -1 0 1 0 4-4disc.dat
@@ -529,8 +529,8 @@ function ldraw_lib__973p8f() = [
 // 3 0 -10.5 14.25 -10 -10 14 -10 -11 14 -10
   [3,0,-10.5,14.25,-10,-10,14,-10,-11,14,-10],
 // 0
-// 0 Pattern created wholly or in part by Quad2Dat
-// 0 Thanks James
+// 0 // Pattern created wholly or in part by Quad2Dat
+// 0 // Thanks James
 // 0
 ];
 module ldraw_lib__973p8f(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)

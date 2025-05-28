@@ -73,7 +73,7 @@ function ldraw_lib__59() = [
 // 0
 // 0
 // 0
-// 0 end of file
+// 0 // end of file
 ];
 module ldraw_lib__59(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
     makepoly(ldraw_lib__59(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);

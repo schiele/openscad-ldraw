@@ -42,7 +42,7 @@ function ldraw_lib__30373() = [
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 -1 s\30373s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__30373s01()],
 // 
-// 0 Corner seams between mirrored subfiles
+// 0 // Corner seams between mirrored subfiles
 // 2 24 60 0 60 60 4 60
   [2,24,60,0,60,60,4,60],
 // 2 24 60 4 60 40 48 40

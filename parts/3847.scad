@@ -30,7 +30,7 @@ function ldraw_lib__3847() = [
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
 // 
 // 
-// 0 // Blade
+// 0 // // Blade
 // 1 16 0 -52 0 0 2 0 -6 0 0 0 0 6 1-4con0.dat
   [1,16,0,-52,0,0,2,0,-6,0,0,0,0,6, ldraw_lib__1_4con0()],
 // 1 16 0 -52 0 0 2 0 0 0 -6 -6 0 0 1-4con0.dat
@@ -90,7 +90,7 @@ function ldraw_lib__3847() = [
 // 2 24 -1.5308 -3.6956 1.4076 -2 -3.382 0
   [2,24,-1.5308,-3.6956,1.4076,-2,-3.382,0],
 // 
-// 0 Hilt
+// 0 // Hilt
 // 
 // 1 16 0 0 0 4 0 0 0 1 4 0 0 4 2-4edge.dat
   [1,16,0,0,0,4,0,0,0,1,4,0,0,4, ldraw_lib__2_4edge()],
@@ -139,7 +139,7 @@ function ldraw_lib__3847() = [
 // 1 16 0 18 0 4 0 0 0 4 0 0 0 4 8-8sphe.dat
   [1,16,0,18,0,4,0,0,0,4,0,0,0,4, ldraw_lib__8_8sphe()],
 // 
-// 0 end of file
+// 0 // end of file
 ];
 module ldraw_lib__3847(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
     makepoly(ldraw_lib__3847(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);

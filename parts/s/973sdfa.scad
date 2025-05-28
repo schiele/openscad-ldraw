@@ -16,7 +16,7 @@ function ldraw_lib__s__973sdfa() = [
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
 // 
 // 
-// 0 // bars (connecting buttons)
+// 0 // // bars (connecting buttons)
 // 4 16 1.4 29.25 -10 -1.4 29.25 -10 -1.4 28.75 -10 1.4 28.75 -10
   [4,16,1.4,29.25,-10,-1.4,29.25,-10,-1.4,28.75,-10,1.4,28.75,-10],
 // 4 16 -1.8 24.25 -10 -1.8 23.75 -10 1.8 23.75 -10 1.8 24.25 -10
@@ -27,7 +27,7 @@ function ldraw_lib__s__973sdfa() = [
   [4,16,-2.9,14.25,-10,-2.9,13.75,-10,2.9,13.75,-10,2.9,14.25,-10],
 // 4 16 4 9.25 -10 -4 9.25 -10 -4 8.75 -10 4 8.75 -10
   [4,16,4,9.25,-10,-4,9.25,-10,-4,8.75,-10,4,8.75,-10],
-// 0 buttons
+// 0 // buttons
 // 1 16 -5.5 9 -10 1 0 0 0 0 1 0 1 0 4-4disc.dat
   [1,16,-5.5,9,-10,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4disc()],
 // 1 16 5.5 9 -10 1 0 0 0 0 1 0 1 0 4-4disc.dat
@@ -49,7 +49,7 @@ function ldraw_lib__s__973sdfa() = [
 // 1 16 2.9 29 -10 1 0 0 0 0 1 0 1 0 4-4disc.dat
   [1,16,2.9,29,-10,1,0,0,0,0,1,0,1,0, ldraw_lib__4_4disc()],
 // 0
-// 0 COMMENT end of file
+// 0 // COMMENT end of file
 ];
 module ldraw_lib__s__973sdfa(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
     makepoly(ldraw_lib__s__973sdfa(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);

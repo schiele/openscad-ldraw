@@ -1,9 +1,9 @@
 use <../lib.scad>
 function ldraw_lib__logo_launchcommand_bg() = [
-// 0 ~Launch Command Logo Pattern (without Border)
+// 0 Launch Command Logo Background (without Border)
 // 0 Name: logo-launchcommand-bg.dat
 // 0 Author: Chris Böhnke [KnightOfTarenta]
-// 0 !LDRAW_ORG Primitive UPDATE 2025-04
+// 0 !LDRAW_ORG Primitive UPDATE 2025-05
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 !HELP Dimensions X = 32; Z = 34.67
@@ -13,6 +13,8 @@ function ldraw_lib__logo_launchcommand_bg() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2025-04-27 [OrionP] Official Update 2025-04
+// 0 !HISTORY 2025-05-24 [Holly-Wood] Updated description
+// 0 !HISTORY 2025-05-28 [OrionP] Official Update 2025-05
 // 
 // 0 // Colour 16 Main Colour
 // 3 16 -12.889 0 -1.697 -12.557 0 -3.365 -11.826 0 -.984

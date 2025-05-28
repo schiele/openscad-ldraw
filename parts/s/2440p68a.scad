@@ -62,7 +62,7 @@ function ldraw_lib__s__2440p68a() = [
 // 4 16 5.5 -3 5 2.5 -3 5 2.5 -3 0 5.5 -3 0
   [4,16,5.5,-3,5,2.5,-3,5,2.5,-3,0,5.5,-3,0],
 // 0
-// 0 end of file
+// 0 // end of file
 // 0
 ];
 module ldraw_lib__s__2440p68a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)

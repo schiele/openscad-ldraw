@@ -111,7 +111,7 @@ function ldraw_lib__48__4_4rin52() = [
 // 4 16 51.5528 0 -6.786 52.5442 0 -6.9165 53 0 0 52 0 0
   [4,16,51.5528,0,-6.786,52.5442,0,-6.9165,53,0,0,52,0,0],
 // 
-// 0 end of file
+// 0 // end of file
 // 
 ];
 module ldraw_lib__48__4_4rin52(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)

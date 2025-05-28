@@ -220,7 +220,7 @@ function ldraw_lib__3848() = [
 // 5 24 -1.5 -34.99 18.99 0 -34.49 25.24 -1.5 -41 20 -1.5 -30 16.1
   [5,24,-1.5,-34.99,18.99,0,-34.49,25.24,-1.5,-41,20,-1.5,-30,16.1],
 // 
-// 0 end of file
+// 0 // end of file
 ];
 module ldraw_lib__3848(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
     makepoly(ldraw_lib__3848(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);

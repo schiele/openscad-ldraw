@@ -14,7 +14,7 @@ function ldraw_lib__2_4rin18() = [
 // 0 !HISTORY 2024-03-23 [OrionP] Obsolete, use 2-4ring18.dat
 // 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
 // 
-// 0 // made with Primitive Generator
+// 0 // // made with Primitive Generator
 // 
 // 4 16 18 0 0 19 0 0 17.5541 0 7.2713 16.6302 0 6.8886
   [4,16,18,0,0,19,0,0,17.5541,0,7.2713,16.6302,0,6.8886],
@@ -33,7 +33,7 @@ function ldraw_lib__2_4rin18() = [
 // 4 16 -16.6302 0 6.8886 -17.5541 0 7.2713 -19 0 0 -18 0 0
   [4,16,-16.6302,0,6.8886,-17.5541,0,7.2713,-19,0,0,-18,0,0],
 // 
-// 0 end of file
+// 0 // end of file
 // 
 ];
 module ldraw_lib__2_4rin18(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)

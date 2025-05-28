@@ -21,7 +21,7 @@ function ldraw_lib__u9381() = [
 // 0 BFC NOCLIP
   [0,"BFC","NOCLIP"],
 // 
-// 0 !HISTORY 2020-06-28 [PTadmin] Official Update 2020-01
+// 0 // !HISTORY 2020-06-28 [PTadmin] Official Update 2020-01
 // 
 // 1 16 0 0 2 12 0 0 0 0 12 0 -2 0 bump5000.dat
   [1,16,0,0,2,12,0,0,0,0,12,0,-2,0, ldraw_lib__bump5000()],

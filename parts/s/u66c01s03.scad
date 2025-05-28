@@ -1,9 +1,9 @@
 use <../../lib.scad>
 function ldraw_lib__s__u66c01s03() = [
-// 0 ~Sheet Plastic  6 x 12 Triangular (Formed Shape 1) - Side  2
+// 0 ~Sail  6 x 12 Triangular (Formed Shape 1) - Side  2
 // 0 Name: s\u66c01s03.dat
 // 0 Author: Damien Roux [Darats]
-// 0 !LDRAW_ORG Subpart UPDATE 2015-02
+// 0 !LDRAW_ORG Subpart UPDATE 2025-05
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -11,7 +11,8 @@ function ldraw_lib__s__u66c01s03() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2015-12-30 [PTadmin] Official Update 2015-02
-// 
+// 0 !HISTORY 2025-05-14 [Holly-Wood] Update description
+// 0 !HISTORY 2025-05-28 [OrionP] Official Update 2025-05
 // 
 // 3 16 -26.981 -66.94 -28.347 -26.693 -61.798 -25.097 -26.89 -73.116 -28.037
   [3,16,-26.981,-66.94,-28.347,-26.693,-61.798,-25.097,-26.89,-73.116,-28.037],

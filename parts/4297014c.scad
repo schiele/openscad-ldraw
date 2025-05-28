@@ -162,8 +162,8 @@ function ldraw_lib__4297014c() = [
 // 4 15 -14 -0.25 -11.75 -11 -0.25 -9.5 11.5 -0.25 22 -55 -0.25 -38
   [4,15,-14,-0.25,-11.75,-11,-0.25,-9.5,11.5,-0.25,22,-55,-0.25,-38],
 // 0
-// 0 Pattern created wholly or in part by Quad2Dat
-// 0 Thanks James
+// 0 // Pattern created wholly or in part by Quad2Dat
+// 0 // Thanks James
 // 0
 // 4 15 21 0 38 55 0 38 17 0 -30 -2 0 -38
   [4,15,21,0,38,55,0,38,17,0,-30,-2,0,-38],

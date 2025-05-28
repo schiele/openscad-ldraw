@@ -1,9 +1,9 @@
 use <../../lib.scad>
 function ldraw_lib__s__u9499s04() = [
-// 0 ~Sheet Fabric 25 x 25 Square Sail Edge Stripe 2
+// 0 ~Sail 25 x 25 Square - Edge Stripe 2
 // 0 Name: s\u9499s04.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Subpart UPDATE 2022-03
+// 0 !LDRAW_ORG Subpart UPDATE 2025-05
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -11,7 +11,8 @@ function ldraw_lib__s__u9499s04() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2022-05-07 [PTadmin] Official Update 2022-03
-// 
+// 0 !HISTORY 2025-05-09 [Holly-Wood] Update description
+// 0 !HISTORY 2025-05-28 [OrionP] Official Update 2025-05
 // 
 // 4 16 31 0 -430.5 62 0 -431.5 62 -0.25 -431.5 31 -0.25 -430.5
   [4,16,31,0,-430.5,62,0,-431.5,62,-0.25,-431.5,31,-0.25,-430.5],

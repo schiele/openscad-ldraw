@@ -181,13 +181,13 @@ function ldraw_lib__4131() = [
   [4,16,38.5,56,2.5,18.5,56,2.5,5.5,62,2.5,51.5,62,2.5],
 // 4 16 51.5 42 2.5 38.5 48 2.5 38.5 56 2.5 51.5 62 2.5
   [4,16,51.5,42,2.5,38.5,48,2.5,38.5,56,2.5,51.5,62,2.5],
-// 0 middle pane
+// 0 // middle pane
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 28.5 52 2.5 10 0 0 0 0 4 0 -1 0 box5.dat
   [1,16,28.5,52,2.5,10,0,0,0,0,4,0,-1,0, ldraw_lib__box5()],
 // 0
-// 0 handle
+// 0 // handle
 // 1 16 51.5 52 -12.5 0 0 2.5 2.5 0 0 0 1 0 2-4edge.dat
   [1,16,51.5,52,-12.5,0,0,2.5,2.5,0,0,0,1,0, ldraw_lib__2_4edge()],
 // 1 16 44.5 52 -12.5 0 0 -2.5 2.5 0 0 0 1 0 2-4edge.dat
@@ -211,7 +211,7 @@ function ldraw_lib__4131() = [
 // 1 16 48 54.5 -7.5 3.5 0 0 0 -1 0 0 0 5 rect2p.dat
   [1,16,48,54.5,-7.5,3.5,0,0,0,-1,0,0,0,5, ldraw_lib__rect2p()],
 // 0
-// 0 handle
+// 0 // handle
 // 1 16 51.5 52 12.5 0 0 2.5 2.5 0 0 0 -1 0 2-4edge.dat
   [1,16,51.5,52,12.5,0,0,2.5,2.5,0,0,0,-1,0, ldraw_lib__2_4edge()],
 // 1 16 44.5 52 12.5 0 0 -2.5 2.5 0 0 0 -1 0 2-4edge.dat
@@ -244,7 +244,7 @@ function ldraw_lib__4131() = [
 // 2 24 0 104 2.5 2.5 104 2.5
   [2,24,0,104,2.5,2.5,104,2.5],
 // 0
-// 0 end of file
+// 0 // end of file
 ];
 module ldraw_lib__4131(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
     makepoly(ldraw_lib__4131(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);

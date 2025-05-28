@@ -8,17 +8,17 @@ use <../p/4-4cyli.scad>
 use <../p/4-4disc.scad>
 use <../p/4-4edge.scad>
 function ldraw_lib__4522() = [
-// 0 Minifig Tool Mallet
+// 0 ~Minifig Tool Mallet (Obsolete)
 // 0 Name: 4522.dat
 // 0 Author: John Van Zwieten [jvan]
-// 0 !LDRAW_ORG Part UPDATE 2012-01
+// 0 !LDRAW_ORG Part UPDATE 2025-05
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !CATEGORY Minifig Accessory
+// 0 !CATEGORY Obsolete
 // 0 !KEYWORDS Hammer
 // 
 // 0 !HISTORY 1998-10-15 [PTadmin] Official Update 1998-09
@@ -29,7 +29,8 @@ function ldraw_lib__4522() = [
 // 0 !HISTORY 2012-01-11 [Steffen] Modified with WINDZ for BFC compliance
 // 0 !HISTORY 2012-01-11 [Philo] Minor fixes
 // 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01
-// 
+// 0 !HISTORY 2024-02-08 [Plastikean] Obsoleted due to bad geometry, use 4522b
+// 0 !HISTORY 2025-05-28 [OrionP] Official Update 2025-05
 // 
 // 1 16 0 47.5 0 4 0 0 0 1 0 0 0 4 4-4edge.dat
   [1,16,0,47.5,0,4,0,0,0,1,0,0,0,4, ldraw_lib__4_4edge()],

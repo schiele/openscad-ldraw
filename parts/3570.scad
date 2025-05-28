@@ -11,6 +11,8 @@ function ldraw_lib__3570() = [
   [0,"BFC","CERTIFY"],
   [0,"BFC","CW"],
 // 
+// 0 !KEYWORDS Rebrickable 739
+// 
 // 0 !HISTORY 2002-08-18 [PTadmin] Official Update 2002-04
 // 0 !HISTORY 2003-08-01 [Steffen] BFCed, made use of "stand" subfile
 // 0 !HISTORY 2003-11-05 [fwcain] subfiled the octagon...
@@ -31,7 +33,7 @@ function ldraw_lib__3570() = [
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3570s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3570s01()],
 // 0
-// 0 COMMENT end of file
+// 0 // COMMENT end of file
 ];
 module ldraw_lib__3570(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
     makepoly(ldraw_lib__3570(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);

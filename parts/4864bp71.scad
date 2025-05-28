@@ -220,8 +220,8 @@ function ldraw_lib__4864bp71() = [
 // 3 16 20 0 10 20 48 10 17.5 29 10
   [3,16,20,0,10,20,48,10,17.5,29,10],
 // 0
-// 0 Pattern created wholly or in part by Quad2Dat
-// 0 Thanks James
+// 0 // Pattern created wholly or in part by Quad2Dat
+// 0 // Thanks James
 // 0
 ];
 module ldraw_lib__4864bp71(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)

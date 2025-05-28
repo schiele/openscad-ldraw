@@ -221,7 +221,7 @@ function ldraw_lib__57467() = [
 // 3 16 0.918 -58 -0.614 0.614 -58 0.918 0 -59.6 0
   [3,16,0.918,-58,-0.614,0.614,-58,0.918,0,-59.6,0],
 // 
-// 0 Disc
+// 0 // Disc
 // 
 // 3 16 0 -50.5 0 4 -44 0 3.696 -44 1.531
   [3,16,0,-50.5,0,4,-44,0,3.696,-44,1.531],
@@ -256,7 +256,7 @@ function ldraw_lib__57467() = [
 // 3 16 0 -50.5 0 3.696 -44 -1.531 4 -44 0
   [3,16,0,-50.5,0,3.696,-44,-1.531,4,-44,0],
 // 
-// 0 // end of file
+// 0 // // end of file
 ];
 module ldraw_lib__57467(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
     makepoly(ldraw_lib__57467(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);

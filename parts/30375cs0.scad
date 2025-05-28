@@ -24,8 +24,8 @@ function ldraw_lib__30375cs0() = [
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
 // 
 // 
-// 0 // Un-Comment this line for "backpack":
-// 0 // 1 16 0 -65.5 15 0 0 1 1 0 0 0 -1 0 3023.dat
+// 0 // // Un-Comment this line for "backpack":
+// 0 // // 1 16 0 -65.5 15 0 0 1 1 0 0 0 -1 0 3023.dat
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 30376.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__30376()],
@@ -38,7 +38,7 @@ function ldraw_lib__30375cs0() = [
 // 1 16 16 -70 0 1 0 0 0 1 0 0 0 1 30377.dat
   [1,16,16,-70,0,1,0,0,0,1,0,0,0,1, ldraw_lib__30377()],
 // 0
-// 0 COMMENT end of file
+// 0 // COMMENT end of file
 ];
 module ldraw_lib__30375cs0(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
     makepoly(ldraw_lib__30375cs0(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);

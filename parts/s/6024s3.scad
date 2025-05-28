@@ -18,7 +18,7 @@ function ldraw_lib__s__6024s3() = [
 // 0 !HISTORY 2010-07-05 [PTadmin] Official Update 2010-02
 // 
 // 
-// 0 // lower studs
+// 0 // // lower studs
 // 
 // 1 16 70 0 -310 1 0 0 0 1 0 0 0 1 stud.dat
   [1,16,70,0,-310,1,0,0,0,1,0,0,0,1, ldraw_lib__stud()],
@@ -155,7 +155,7 @@ function ldraw_lib__s__6024s3() = [
 // 1 16 -150 0 310 1 0 0 0 1 0 0 0 1 stud.dat
   [1,16,-150,0,310,1,0,0,0,1,0,0,0,1, ldraw_lib__stud()],
 // 
-// 0 middle stud.dats
+// 0 // middle stud.dats
 // 1 16 -180 -72 -140 1 0 0 0 1 0 0 0 1 stug2.dat
   [1,16,-180,-72,-140,1,0,0,0,1,0,0,0,1, ldraw_lib__stug2()],
 // 1 16 -180 -72 -180 1 0 0 0 1 0 0 0 1 stug2.dat
@@ -202,7 +202,7 @@ function ldraw_lib__s__6024s3() = [
   [1,16,60,-72,-100,1,0,0,0,1,0,0,0,1, ldraw_lib__stug2()],
 // 1 16 140 -72 -140 1 0 0 0 1 0 0 0 1 stug2.dat
   [1,16,140,-72,-140,1,0,0,0,1,0,0,0,1, ldraw_lib__stug2()],
-// 0 top studs
+// 0 // top studs
 // 1 16 -20 -144 -140 1 0 0 0 1 0 0 0 1 stug4.dat
   [1,16,-20,-144,-140,1,0,0,0,1,0,0,0,1, ldraw_lib__stug4()],
 // 1 16 -100 -144 -100 1 0 0 0 1 0 0 0 1 stug4.dat

@@ -18,12 +18,12 @@ function ldraw_lib__3648a() = [
 // 0 !HISTORY 2009-05-02 [PTadmin] Official Update 2009-01
 // 
 // 
-// 0 // Teeth and outer ring
+// 0 // // Teeth and outer ring
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3648s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3648s01()],
 // 0
-// 0 Center axleholes
+// 0 // Center axleholes
 // 0
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3648s02.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3648s02()],
@@ -42,7 +42,7 @@ function ldraw_lib__3648a() = [
 // 1 16 0 0 0 -1 0 0 0 -1 0 0 0 -1 s\3648s02.dat
   [1,16,0,0,0,-1,0,0,0,-1,0,0,0,-1, ldraw_lib__s__3648s02()],
 // 0
-// 0 Pin Holes
+// 0 // Pin Holes
 // 0
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3648as01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3648as01()],

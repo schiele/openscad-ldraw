@@ -4,10 +4,10 @@ use <s/3626bpsfs01.scad>
 use <s/3626bs02.scad>
 use <../p/t04o6250.scad>
 function ldraw_lib__3626bpsf() = [
-// 0 Minifig Head with with Straight Smile and Black Curved Eyebrows Pattern
+// 0 Minifig Head with Straight Smile and Black Curved Eyebrows Pattern
 // 0 Name: 3626bpsf.dat
 // 0 Author: Evert-Jan Boer [ejboer]
-// 0 !LDRAW_ORG Part UPDATE 2025-04
+// 0 !LDRAW_ORG Part UPDATE 2025-05
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -18,7 +18,8 @@ function ldraw_lib__3626bpsf() = [
 // 0 !KEYWORDS Star Wars
 // 
 // 0 !HISTORY 2025-04-27 [OrionP] Official Update 2025-04
-// 
+// 0 !HISTORY 2025-05-09 [Holly-Wood] Fixed typo
+// 0 !HISTORY 2025-05-28 [OrionP] Official Update 2025-05
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3626bs02.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__3626bs02()],

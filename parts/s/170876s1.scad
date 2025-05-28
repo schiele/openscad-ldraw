@@ -14,7 +14,7 @@ function ldraw_lib__s__170876s1() = [
 // 0 !HISTORY 2010-04-05 [PTadmin] Official Update 2010-01
 // 
 // 
-// 0 // inside triangles
+// 0 // // inside triangles
 // 
 // 3 16 11.8711 0 1.1692 12 0 0 4 0 7
   [3,16,11.8711,0,1.1692,12,0,0,4,0,7],
@@ -146,7 +146,7 @@ function ldraw_lib__s__170876s1() = [
   [3,16,4,0,7,-2.1665,0,6.8596,-2.861,0,7.2759],
 // 3 16 4 0 7 -2.861 0 7.2759 -3.6025 0 7.6254
   [3,16,4,0,7,-2.861,0,7.2759,-3.6025,0,7.6254],
-// 0 end of inside triangles
+// 0 // end of inside triangles
 // 0
 ];
 module ldraw_lib__s__170876s1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)

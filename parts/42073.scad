@@ -22,7 +22,7 @@ function ldraw_lib__42073() = [
 // 0 !HISTORY 2013-07-21 [PTadmin] Official Update 2013-01
 // 
 // 
-// 0 // Needs Work: Inside assumed
+// 0 // // Needs Work: Inside assumed
 // 
 // 1 16 10 52 -30 4 0 0 0 -1 0 0 0 4 4-4ndis.dat
   [1,16,10,52,-30,4,0,0,0,-1,0,0,0,4, ldraw_lib__4_4ndis()],
@@ -153,7 +153,7 @@ function ldraw_lib__42073() = [
 // 1 16 10 0 50 1 0 0 0 1 0 0 0 1 stud2.dat
   [1,16,10,0,50,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2()],
 // 
-// 0 4 15 -16 2 58 -16 2 -58 20 2 -58 20 2 58
+// 0 // 4 15 -16 2 58 -16 2 -58 20 2 -58 20 2 58
 // 1 16 10 2 -30 4 0 0 0 -1 0 0 0 4 4-4ndis.dat
   [1,16,10,2,-30,4,0,0,0,-1,0,0,0,4, ldraw_lib__4_4ndis()],
 // 1 16 10 2 -30 4 0 0 0 1 0 0 0 4 4-4edge.dat

@@ -39,7 +39,7 @@ function ldraw_lib__22631() = [
 // 0 Technic RoboRider Container Lid
 // 0 Name: 22631.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
-// 0 !LDRAW_ORG Part UPDATE 2024-02
+// 0 !LDRAW_ORG Part UPDATE 2025-05
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -49,6 +49,8 @@ function ldraw_lib__22631() = [
 // 0 !HISTORY 2023-04-17 [OrionP] Official Update 2023-02
 // 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
 // 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
+// 0 !HISTORY 2025-04-27 [OrionP] fix subpart reference
+// 0 !HISTORY 2025-05-28 [OrionP] Official Update 2025-05
 // 
 // 0 // Centre Part, Peghole
 // 1 16 0 0 0 -2 0 0 0 -1 0 0 0 2 4-4ring4.dat
@@ -1086,7 +1088,7 @@ function ldraw_lib__22631() = [
   [4,16,-92.7264,-51,-24.8448,-88.6944,-51,-36.7392,-83.136,-51,-48,-40.3608,-51,8.0231],
 // 4 16 -96 -51 0 -95.1744 -51 -12.528 -92.7264 -51 -24.8448 -40.3608 -51 8.0231
   [4,16,-96,-51,0,-95.1744,-51,-12.528,-92.7264,-51,-24.8448,-40.3608,-51,8.0231],
-// 1 16 -61 -50.5 45 .8 0 0 0 1 0 0 0 .8 s/12787s02.dat
+// 1 16 -61 -50.5 45 .8 0 0 0 1 0 0 0 .8 s\12787s02.dat
   [1,16,-61,-50.5,45,.8,0,0,0,1,0,0,0,.8, ldraw_lib__s__12787s02()],
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],

@@ -15,6 +15,8 @@ function ldraw_lib__4864bp10() = [
 // 0 !KEYWORDS Metroliner Club Car, racing stripes, Rebrickable 4864bpr0003, red
 // 0 !KEYWORDS set 10002, Train, white and blue stripes
 // 
+// 0 !PREVIEW 16 0 0 0 -1 0 0 0 1 0 0 0 -1
+// 
 // 0 !HISTORY 2004-05-17 [sbliss] BFC'ed, keywords, used subfile
 // 0 !HISTORY 2004-09-15 [PTadmin] Official Update 2004-03
 // 0 !HISTORY 2007-07-09 [PTadmin] Header formatted for Contributor Agreement
@@ -28,7 +30,7 @@ function ldraw_lib__4864bp10() = [
 // 1 16 -10 0 0 1 0 0 0 1 0 0 0 1 stud2.dat
   [1,16,-10,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2()],
 // 
-// 0 from railroad club car
+// 0 // from railroad club car
 // 4 16 16 24 10 20 24 10 20 48 10 -16 48 10
   [4,16,16,24,10,20,24,10,20,48,10,-16,48,10],
 // 4 16 16 0 10 -16 24 10 -20 24 10 -20 0 10

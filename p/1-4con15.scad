@@ -24,7 +24,7 @@ function ldraw_lib__1_4con15() = [
 // 4 16 5.7405 1 13.8585 0 1 15 0 0 16 6.1232 0 14.7824
   [4,16,5.7405,1,13.8585,0,1,15,0,0,16,6.1232,0,14.7824],
 // 
-// 0 conditional lines
+// 0 // conditional lines
 // 5 24 15 1 0 16 0 0 13.8585 1 -5.7405 13.8585 1 5.7405
   [5,24,15,1,0,16,0,0,13.8585,1,-5.7405,13.8585,1,5.7405],
 // 5 24 13.8585 1 5.7405 14.7824 0 6.1232 15 1 0 10.6065 1 10.6065
@@ -36,7 +36,7 @@ function ldraw_lib__1_4con15() = [
 // 5 24 0 1 15 0 0 16 5.7405 1 13.8585 -5.7405 1 13.8585
   [5,24,0,1,15,0,0,16,5.7405,1,13.8585,-5.7405,1,13.8585],
 // 
-// 0 end of file
+// 0 // end of file
 ];
 module ldraw_lib__1_4con15(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
     makepoly(ldraw_lib__1_4con15(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);

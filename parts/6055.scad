@@ -20,7 +20,7 @@ function ldraw_lib__6055() = [
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
 // 
 // 
-// 0 // Studs
+// 0 // // Studs
 // 1 16 -10 8 10 1 0 0 0 1 0 0 0 1 stud2.dat
   [1,16,-10,8,10,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2()],
 // 1 16 -10 8 -10 1 0 0 0 1 0 0 0 1 stud2.dat
@@ -41,7 +41,7 @@ function ldraw_lib__6055() = [
   [1,16,30,8,10,1,0,0,0,3,0,0,0,1, ldraw_lib__stud2()],
 // 1 16 -10 8 -30 1 0 0 0 3 0 0 0 1 stud2.dat
   [1,16,-10,8,-30,1,0,0,0,3,0,0,0,1, ldraw_lib__stud2()],
-// 0 Underside studs
+// 0 // Underside studs
 // 1 16 0 140 0 1 0 0 0 -1 0 0 0 1 stud4.dat
   [1,16,0,140,0,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud4()],
 // 1 16 20 140 0 1 0 0 0 -1 0 0 0 1 stud4.dat
@@ -53,7 +53,7 @@ function ldraw_lib__6055() = [
 // 1 16 -40 116 -50 1 0 0 0 -1 0 0 0 1 stud3.dat
   [1,16,-40,116,-50,1,0,0,0,-1,0,0,0,1, ldraw_lib__stud3()],
 // 
-// 0 Created with stl2dat conversion tool
+// 0 // Created with stl2dat conversion tool
 // 
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],

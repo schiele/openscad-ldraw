@@ -22,7 +22,7 @@ function ldraw_lib__776p07() = [
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\776s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__776s01()],
 // 
-// 0 REM Decorated surfaces
+// 0 // REM Decorated surfaces
 // 
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],

@@ -1,10 +1,10 @@
 use <../lib.scad>
 use <u66c01.scad>
 function ldraw_lib__u66c02() = [
-// 0 Sheet Plastic  6 x 12 Triangular (Formed Shape 2)
+// 0 Sail  6 x 12 Triangular (Formed Shape 2)
 // 0 Name: u66c02.dat
 // 0 Author: Damien Roux [Darats]
-// 0 !LDRAW_ORG Part UPDATE 2019-01
+// 0 !LDRAW_ORG Part UPDATE 2025-05
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 !HELP 1 16 0 0 0 1 0 0 0 1 0 0 0 1 u66c02.dat
@@ -20,7 +20,8 @@ function ldraw_lib__u66c02() = [
 // 0 !HISTORY 2016-12-31 [PTadmin] Official Update 2016-01
 // 0 !HISTORY 2019-01-25 [cwdee] Set new category
 // 0 !HISTORY 2019-06-28 [PTadmin] Official Update 2019-01
-// 
+// 0 !HISTORY 2025-05-14 [Holly-Wood] Update description
+// 0 !HISTORY 2025-05-28 [OrionP] Official Update 2025-05
 // 
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 u66c01.dat
   [1,16,0,0,0,-1,0,0,0,1,0,0,0,1, ldraw_lib__u66c01()],

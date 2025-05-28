@@ -29,7 +29,7 @@ function ldraw_lib__41529() = [
 // 0 !HISTORY 2010-12-31 [PTadmin] Official Update 2010-03
 // 
 // 
-// 0 // start main stud
+// 0 // // start main stud
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 stud2a.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__stud2a()],
@@ -59,9 +59,9 @@ function ldraw_lib__41529() = [
   [1,16,0,11,0,0,0,6,0,-1,0,6,0,0, ldraw_lib__4_4ndis()],
 // 1 16 0 11 0 0 0 6 0 -1 0 6 0 0 4-4edge.dat
   [1,16,0,11,0,0,0,6,0,-1,0,6,0,0, ldraw_lib__4_4edge()],
-// 0 end main stud
+// 0 // end main stud
 // 0
-// 0 start click hinge
+// 0 // start click hinge
 // 1 16 15 10 0 0 0 1 0 1 0 -1 0 0 clh4.dat
   [1,16,15,10,0,0,0,1,0,1,0,-1,0,0, ldraw_lib__clh4()],
 // 1 16 9 10 -6.25 0 6 0 0 0 6 2.25 0 0 box4o4a.dat
@@ -70,9 +70,9 @@ function ldraw_lib__41529() = [
   [1,16,15,10,0,0,0,1,0,1,0,1,0,0, ldraw_lib__clh4()],
 // 1 16 9 10 6.25 0 6 0 0 0 6 2.25 0 0 box4o4a.dat
   [1,16,9,10,6.25,0,6,0,0,0,6,2.25,0,0, ldraw_lib__box4o4a()],
-// 0 end click hinge
+// 0 // end click hinge
 // 0
-// 0 start backside
+// 0 // start backside
 // 1 16 9 10 0 0 -1 0 -10 0 0 0 0 -10 rect.dat
   [1,16,9,10,0,0,-1,0,-10,0,0,0,0,-10, ldraw_lib__rect()],
 // 1 16 7 4.5 4.9 0 1 0 -4.5 0 0 0 0 4.4 rect.dat
@@ -87,9 +87,9 @@ function ldraw_lib__41529() = [
   [4,16,9,0,10,7,0,9.3,7,0,-9.3,9,0,-10],
 // 4 16 9 20 -10 7 20 -9.3 7 20 9.3 9 20 10
   [4,16,9,20,-10,7,20,-9.3,7,20,9.3,9,20,10],
-// 0 end backside
+// 0 // end backside
 // 0
-// 0 start backside-stud rib
+// 0 // start backside-stud rib
 // 1 16 6.4895 4.5 -0.5 0 0 -0.5105 -4.5 0 0 0 1 0 rect3.dat
   [1,16,6.4895,4.5,-0.5,0,0,-0.5105,-4.5,0,0,0,1,0, ldraw_lib__rect3()],
 // 0 BFC INVERTNEXT
@@ -134,16 +134,16 @@ function ldraw_lib__41529() = [
   [2,24,6,20,0,5.995,20,-0.25],
 // 2 24 5.995 20 -0.25 5.979 20 -0.5
   [2,24,5.995,20,-0.25,5.979,20,-0.5],
-// 0 end backside-stud rib
+// 0 // end backside-stud rib
 // 0
-// 0 grip is symmetic in xy plane
+// 0 // grip is symmetic in xy plane
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\41529s0.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__41529s0()],
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 -1 s\41529s0.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,-1, ldraw_lib__s__41529s0()],
-// 0 end grip
+// 0 // end grip
 // 0
-// 0 start xz stud/narrow wall joiner
+// 0 // start xz stud/narrow wall joiner
 // 4 16 -5.454 0 2.5 -7 0 0.5 -7 0 0.4 -5.649 0 2.023
   [4,16,-5.454,0,2.5,-7,0,0.5,-7,0,0.4,-5.649,0,2.023],
 // 4 16 -5.649 0 2.023 -7 0 0.4 -7 0 0.3 -5.802 0 1.53
@@ -226,7 +226,7 @@ function ldraw_lib__41529() = [
   [2,24,-5.802,20,-1.53,-5.649,20,-2.023],
 // 2 24 -5.649 20 -2.023 -5.454 20 -2.5
   [2,24,-5.649,20,-2.023,-5.454,20,-2.5],
-// 0 end xz stud/narrow wall joiner
+// 0 // end xz stud/narrow wall joiner
 // 0
 ];
 module ldraw_lib__41529(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)

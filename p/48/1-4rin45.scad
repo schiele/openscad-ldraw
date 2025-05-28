@@ -39,7 +39,7 @@ function ldraw_lib__48__1_4rin45() = [
 // 4 16 5.8725 0 44.613 6.003 0 45.6044 0 0 46 0 0 45
   [4,16,5.8725,0,44.613,6.003,0,45.6044,0,0,46,0,0,45],
 // 
-// 0 end of file
+// 0 // end of file
 // 
 ];
 module ldraw_lib__48__1_4rin45(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)

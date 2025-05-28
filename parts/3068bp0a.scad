@@ -260,8 +260,8 @@ function ldraw_lib__3068bp0a() = [
   [3,16,-1.5,0,-16.25,-1.75,0,-16.75,0,0,-20],
 // 4 16 -1.75 0 -16.75 -3.75 0 -15.5 -20 0 -20 0 0 -20
   [4,16,-1.75,0,-16.75,-3.75,0,-15.5,-20,0,-20,0,0,-20],
-// 0 Pattern created wholly or in part by Quad2Dat
-// 0 Thanks James
+// 0 // Pattern created wholly or in part by Quad2Dat
+// 0 // Thanks James
 // 0
 ];
 module ldraw_lib__3068bp0a(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)

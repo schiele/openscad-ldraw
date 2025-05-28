@@ -1,9 +1,9 @@
 use <../../lib.scad>
 function ldraw_lib__s__u9496c02s03() = [
-// 0 ~Sheet Fabric 15 x 22 Triangular Sail Edge Stripe 1 (Formed Shape 2)
+// 0 ~Sail 15 x 22 Triangular with 8 Holes - Edge Stripe 1 (Formed Shape 2)
 // 0 Name: s\u9496c02s03.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Subpart UPDATE 2022-03
+// 0 !LDRAW_ORG Subpart UPDATE 2025-05
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -11,7 +11,8 @@ function ldraw_lib__s__u9496c02s03() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2022-05-07 [PTadmin] Official Update 2022-03
-// 
+// 0 !HISTORY 2025-04-29 [Holly-Wood] Update description
+// 0 !HISTORY 2025-05-28 [OrionP] Official Update 2025-05
 // 
 // 4 16 -0.4771 -5.8105 3.3722 -0.2271 -5.8105 3.3722 -0.7671 -6.6779 0.0461 -1.0171 -6.6779 0.0461
   [4,16,-0.4771,-5.8105,3.3722,-0.2271,-5.8105,3.3722,-0.7671,-6.6779,0.0461,-1.0171,-6.6779,0.0461],

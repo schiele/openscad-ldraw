@@ -32,7 +32,7 @@ function ldraw_lib__48__5_24chrd() = [
 // 3 16 1 0 0 0.3827 0 0.9239 0.2588 0 0.9659
   [3,16,1,0,0,0.3827,0,0.9239,0.2588,0,0.9659],
 // 
-// 0 end of file
+// 0 // end of file
 // 
 ];
 module ldraw_lib__48__5_24chrd(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)

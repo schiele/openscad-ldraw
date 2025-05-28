@@ -217,7 +217,7 @@ function ldraw_lib__6067() = [
 // 1 16 0 -8 0 20 0 0 0 -20 0 0 0 20 4-4cyli.dat
   [1,16,0,-8,0,20,0,0,0,-20,0,0,0,20, ldraw_lib__4_4cyli()],
 // 0
-// 0 Top cap with notches
+// 0 // Top cap with notches
 // 0 BFC INVERTNEXT
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 -28 0 -14.7821 0 6.1229 0 -2 0 -6.1229 0 -14.7821 1-8cyli.dat

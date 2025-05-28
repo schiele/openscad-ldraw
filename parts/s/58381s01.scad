@@ -25,14 +25,14 @@ function ldraw_lib__s__58381s01() = [
 // 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02
 // 
 // 
-// 0 // ~Door Left with Hollow Hinge - Bottom
+// 0 // // ~Door Left with Hollow Hinge - Bottom
 // 
 // 1 16 0 96 0 1 0 0 0 1 0 0 0 1 s\58381s02.dat
   [1,16,0,96,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__58381s02()],
-// 0 ~Door Left with Hollow Hinge - Top
+// 0 // ~Door Left with Hollow Hinge - Top
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\58381s03.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__58381s03()],
-// 0 ~Door Left Handle
+// 0 // ~Door Left Handle
 // 1 16 0 48 40 1 0 0 0 1 0 0 0 1 s\58381s04.dat
   [1,16,0,48,40,1,0,0,0,1,0,0,0,1, ldraw_lib__s__58381s04()],
 // 

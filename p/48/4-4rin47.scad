@@ -111,7 +111,7 @@ function ldraw_lib__48__4_4rin47() = [
 // 4 16 46.5958 0 -6.1335 47.5872 0 -6.264 48 0 0 47 0 0
   [4,16,46.5958,0,-6.1335,47.5872,0,-6.264,48,0,0,47,0,0],
 // 
-// 0 end of file
+// 0 // end of file
 // 
 ];
 module ldraw_lib__48__4_4rin47(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)

@@ -483,8 +483,8 @@ function ldraw_lib__3068bps3() = [
   [4,462,11.1,0,-2.1,10.9,0,-0.6,10.4,0,1.2,10.1,0,-2.8],
 // 3 462 10.4 0 1.2 8 0 -0.2 10.1 0 -2.8
   [3,462,10.4,0,1.2,8,0,-0.2,10.1,0,-2.8],
-// 0 Thanks James
-// 0 Pattern created wholly or in part by Quad2Dat
+// 0 // Thanks James
+// 0 // Pattern created wholly or in part by Quad2Dat
 // 0
 ];
 module ldraw_lib__3068bps3(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)

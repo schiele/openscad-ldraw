@@ -159,8 +159,8 @@ function ldraw_lib__s__3041s01() = [
   [0,"BFC","INVERTNEXT"],
 // 1 16 0 20 0 -36 0 0 0 -8 -8 0 -8 8 box2-5.dat
   [1,16,0,20,0,-36,0,0,0,-8,-8,0,-8,8, ldraw_lib__box2_5()],
-// 0 top faces commented out
-// 0 // 1 16 0 20 0 -40 0 0 0 -10 -10 0 -10 10 box2-5.dat
+// 0 // top faces commented out
+// 0 // // 1 16 0 20 0 -40 0 0 0 -10 -10 0 -10 10 box2-5.dat
 // 0
 ];
 module ldraw_lib__s__3041s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)

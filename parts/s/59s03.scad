@@ -174,7 +174,7 @@ function ldraw_lib__s__59s03() = [
 // 5 24 -3.696 8 -1.531 -3.696 8.305 -1.531 -3.184 8 -2.296 -4 8 0
   [5,24,-3.696,8,-1.531,-3.696,8.305,-1.531,-3.184,8,-2.296,-4,8,0],
 // 0
-// 0 end of file
+// 0 // end of file
 ];
 module ldraw_lib__s__59s03(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
     makepoly(ldraw_lib__s__59s03(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);

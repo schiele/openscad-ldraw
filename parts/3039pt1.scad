@@ -53,8 +53,8 @@ function ldraw_lib__3039pt1() = [
 // 3 16 -20 0 -10 -7.75 3.8891 -13.8891 -5 3.8891 -13.8891
   [3,16,-20,0,-10,-7.75,3.8891,-13.8891,-5,3.8891,-13.8891],
 // 0
-// 0 Pattern created wholly or in part by Quad2Dat
-// 0 Thanks James
+// 0 // Pattern created wholly or in part by Quad2Dat
+// 0 // Thanks James
 // 0
 ];
 module ldraw_lib__3039pt1(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)

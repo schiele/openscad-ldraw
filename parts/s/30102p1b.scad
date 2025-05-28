@@ -97,7 +97,7 @@ function ldraw_lib__s__30102p1b() = [
 // 4 0 32 31 -1 32 37 -1 43 37 -1 43 31 -1
   [4,0,32,31,-1,32,37,-1,43,37,-1,43,31,-1],
 // 0
-// 0 end of file
+// 0 // end of file
 ];
 module ldraw_lib__s__30102p1b(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
     makepoly(ldraw_lib__s__30102p1b(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);

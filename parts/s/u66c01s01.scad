@@ -1,9 +1,9 @@
 use <../../lib.scad>
 function ldraw_lib__s__u66c01s01() = [
-// 0 ~Sheet Plastic  6 x 12 Triangular (Formed Shape 1) - Holes, Side and Condlines
+// 0 ~Sail  6 x 12 Triangular (Formed Shape 1) - Holes, Side and Condlines
 // 0 Name: s\u66c01s01.dat
 // 0 Author: Damien Roux [Darats]
-// 0 !LDRAW_ORG Subpart UPDATE 2015-02
+// 0 !LDRAW_ORG Subpart UPDATE 2025-05
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -11,7 +11,8 @@ function ldraw_lib__s__u66c01s01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2015-12-30 [PTadmin] Official Update 2015-02
-// 
+// 0 !HISTORY 2025-05-14 [Holly-Wood] Update description
+// 0 !HISTORY 2025-05-28 [OrionP] Official Update 2025-05
 // 
 // 4 16 -4.286 24.367 -1.296 -4.484 24.518 -1.279 -4.432 24.473 -0.284 -4.234 24.321 -0.301
   [4,16,-4.286,24.367,-1.296,-4.484,24.518,-1.279,-4.432,24.473,-0.284,-4.234,24.321,-0.301],

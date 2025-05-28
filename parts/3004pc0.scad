@@ -349,8 +349,8 @@ function ldraw_lib__3004pc0() = [
 // 4 2 -4.5 6 -10 -5.5 4.75 -10 -9.25 4.75 -10 -9.75 6 -10
   [4,2,-4.5,6,-10,-5.5,4.75,-10,-9.25,4.75,-10,-9.75,6,-10],
 // 0
-// 0 Pattern created wholly or in part by Quad2Dat
-// 0 Thanks James
+// 0 // Pattern created wholly or in part by Quad2Dat
+// 0 // Thanks James
 // 0
 ];
 module ldraw_lib__3004pc0(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
