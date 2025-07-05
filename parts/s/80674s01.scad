@@ -1,13 +1,15 @@
 use <../../lib.scad>
-use <../../p/4-4cylc.scad>
+use <../../p/4-4cyli.scad>
 use <../../p/4-4cylo.scad>
+use <../../p/4-4edge.scad>
+use <../../p/4-4ring1.scad>
 use <80674s02.scad>
 use <../../p/stud4o.scad>
 function ldraw_lib__s__80674s01() = [
 // 0 ~Animal Butterfly with Stud Tube without Patternable Surface
 // 0 Name: s\80674s01.dat
 // 0 Author: Vincent Messenet [Cheenzo]
-// 0 !LDRAW_ORG Subpart UPDATE 2024-09
+// 0 !LDRAW_ORG Subpart UPDATE 2025-06
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -15,6 +17,8 @@ function ldraw_lib__s__80674s01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2024-10-27 [OrionP] Official Update 2024-09
+// 0 !HISTORY 2025-06-13 [Cheenzo] Added missing bottom pin hole
+// 0 !HISTORY 2025-06-26 [OrionP] Official Update 2025-06
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\80674s02.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__80674s02()],
@@ -24,8 +28,18 @@ function ldraw_lib__s__80674s01() = [
   [1,16,0,-9.75,0,1,0,0,0,-2.4375,0,0,0,1, ldraw_lib__stud4o()],
 // 1 16 0 0 0 8 0 0 0 -8.879 0 0 0 8 4-4cylo.dat
   [1,16,0,0,0,8,0,0,0,-8.879,0,0,0,8, ldraw_lib__4_4cylo()],
-// 1 16 0 -5.325 0 4 0 0 0 -4.425 0 0 0 4 4-4cylc.dat
-  [1,16,0,-5.325,0,4,0,0,0,-4.425,0,0,0,4, ldraw_lib__4_4cylc()],
+// 1 16 0 -5.325 0 4 0 0 0 -4.425 0 0 0 4 4-4cylo.dat
+  [1,16,0,-5.325,0,4,0,0,0,-4.425,0,0,0,4, ldraw_lib__4_4cylo()],
+// 1 16 0 -9.75 0 2 0 0 0 4.425 0 0 0 2 4-4edge.dat
+  [1,16,0,-9.75,0,2,0,0,0,4.425,0,0,0,2, ldraw_lib__4_4edge()],
+// 1 16 0 -5.325 0 2 0 0 0 4.425 0 0 0 2 4-4edge.dat
+  [1,16,0,-5.325,0,2,0,0,0,4.425,0,0,0,2, ldraw_lib__4_4edge()],
+// 0 BFC INVERTNEXT
+  [0,"BFC","INVERTNEXT"],
+// 1 16 0 -9.75 0 2 0 0 0 4.425 0 0 0 2 4-4cyli.dat
+  [1,16,0,-9.75,0,2,0,0,0,4.425,0,0,0,2, ldraw_lib__4_4cyli()],
+// 1 16 0 -5.325 0 2 0 0 0 -4.425 0 0 0 2 4-4ring1.dat
+  [1,16,0,-5.325,0,2,0,0,0,-4.425,0,0,0,2, ldraw_lib__4_4ring1()],
 // 5 24 0 -12.788 7.494 0 -13.01 6.509 .901 -12.773 6.614 -.901 -12.773 6.614
   [5,24,0,-12.788,7.494,0,-13.01,6.509,.901,-12.773,6.614,-.901,-12.773,6.614],
 // 5 24 0 -13.01 6.509 0 -13.236 4.733 -.941 -13.027 4.672 .941 -13.027 4.672

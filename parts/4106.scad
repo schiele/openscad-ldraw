@@ -1,22 +1,25 @@
 use <../lib.scad>
 use <2959.scad>
 function ldraw_lib__4106() = [
-// 0 =Magnet Cylindrical Casing
+// 0 ~=Magnet Cylindrical Casing (Obsolete)
 // 0 Name: 4106.dat
-// 0 Author: [PTadmin]
-// 0 !LDRAW_ORG Part Alias UPDATE 2013-02
+// 0 Author: Chris Dee [cwdee]
+// 0 !LDRAW_ORG Part Alias UPDATE 2025-06
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
+// 
+// 0 !CATEGORY Obsolete
 // 
 // 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02
 // 0 !HISTORY 2012-08-11 [Steffen] Add ~ to title
 // 0 !HISTORY 2012-12-28 [PTadmin] Official Update 2012-03
 // 0 !HISTORY 2013-12-14 [cwdee] Add = prefix
 // 0 !HISTORY 2013-12-23 [PTadmin] Official Update 2013-02
-// 
+// 0 !HISTORY 2025-03-24 [Blechtaler] Obsoleted due to bad geometry of the source
+// 0 !HISTORY 2025-06-26 [OrionP] Official Update 2025-06
 // 
 // 0 // Alias of 2959
 // 

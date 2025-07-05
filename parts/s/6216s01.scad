@@ -15,10 +15,10 @@ use <../../p/rect3.scad>
 use <../../p/stud3a.scad>
 use <../../p/stud4a.scad>
 function ldraw_lib__s__6216s01() = [
-// 0 ~Brick  2 x  4 x  2 with Curved Top without Front Face
+// 0 ~Brick  2 x  4 x  2 with Triple Curved Top without Front Face
 // 0 Name: s\6216s01.dat
 // 0 Author: Damien Roux [Darats]
-// 0 !LDRAW_ORG Subpart UPDATE 2014-01
+// 0 !LDRAW_ORG Subpart UPDATE 2025-06
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -26,7 +26,8 @@ function ldraw_lib__s__6216s01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2014-06-21 [PTadmin] Official Update 2014-01
-// 
+// 0 !HISTORY 2025-06-02 [MagFors] Update description
+// 0 !HISTORY 2025-06-26 [OrionP] Official Update 2025-06
 // 
 // 1 16 0 22 -20 0 0 20 2 0 0 0 40 0 box3u6.dat
   [1,16,0,22,-20,0,0,20,2,0,0,0,40,0, ldraw_lib__box3u6()],

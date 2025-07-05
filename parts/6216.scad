@@ -3,10 +3,10 @@ use <../p/1-4chrd.scad>
 use <../p/2-4chrd.scad>
 use <s/6216s01.scad>
 function ldraw_lib__6216() = [
-// 0 Brick  2 x  4 x  2 with Curved Top
+// 0 Brick  2 x  4 x  2 with Triple Curved Top
 // 0 Name: 6216.dat
 // 0 Author: Tore Eriksson [Tore_Eriksson]
-// 0 !LDRAW_ORG Part UPDATE 2014-01
+// 0 !LDRAW_ORG Part UPDATE 2025-06
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -18,7 +18,8 @@ function ldraw_lib__6216() = [
 // 0 !HISTORY 2008-07-01 [PTadmin] Official Update 2008-01
 // 0 !HISTORY 2014-02-28 [Darats] Complete rework, BFC correction and use of subpart
 // 0 !HISTORY 2014-06-21 [PTadmin] Official Update 2014-01
-// 
+// 0 !HISTORY 2025-06-02 [MagFors] Update description
+// 0 !HISTORY 2025-06-26 [OrionP] Official Update 2025-06
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\6216s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6216s01()],

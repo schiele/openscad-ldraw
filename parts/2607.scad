@@ -11,15 +11,17 @@ use <../p/peghole.scad>
 use <../p/stud2a.scad>
 use <../p/tri3.scad>
 function ldraw_lib__2607() = [
-// 0 Magnet Holder  2 x  3
+// 0 ~Magnet Holder  2 x  3 (Obsolete)
 // 0 Name: 2607.dat
 // 0 Author: Steve Bliss [sbliss]
-// 0 !LDRAW_ORG Part UPDATE 2012-01
+// 0 !LDRAW_ORG Part UPDATE 2025-06
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
+// 
+// 0 !CATEGORY Obsolete
 // 
 // 0 !HISTORY 1997-12-05 [PTadmin] Official Update 1997-17
 // 0 !HISTORY 1998-10-15 [PTadmin] Official Update 1998-09
@@ -33,7 +35,8 @@ function ldraw_lib__2607() = [
 // 0 !HISTORY 2011-07-28 [Steffen] removed most T junctions, removed overlaps
 // 0 !HISTORY 2012-02-26 [MagFors] removed more T-junctions, boxified
 // 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01
-// 
+// 0 !HISTORY 2025-03-23 [Blechtaler] obsoleted due to bad geometry (use 2607b)
+// 0 !HISTORY 2025-06-26 [OrionP] Official Update 2025-06
 // 
 // 2 24 -16 0 -10 16 0 -10
   [2,24,-16,0,-10,16,0,-10],

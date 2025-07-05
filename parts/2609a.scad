@@ -10,15 +10,17 @@ use <../p/box2-7.scad>
 use <../p/rect.scad>
 use <../p/rect3.scad>
 function ldraw_lib__2609a() = [
-// 0 Magnet Holder Tile  2 x  2 with Short Arms
+// 0 ~Magnet Holder Tile  2 x  2 with Short Arms (Obsolete)
 // 0 Name: 2609a.dat
 // 0 Author: Steve Bliss [sbliss]
-// 0 !LDRAW_ORG Part UPDATE 2014-02
+// 0 !LDRAW_ORG Part UPDATE 2025-06
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
+// 
+// 0 !CATEGORY Obsolete
 // 
 // 0 !HISTORY 1997-12-05 [PTadmin] Official Update 1997-17
 // 0 !HISTORY 1998-10-15 [PTadmin] Official Update 1998-09
@@ -27,7 +29,8 @@ function ldraw_lib__2609a() = [
 // 0 !HISTORY 2014-10-15 [Darats] Complete rework; use more primitives; BFCed
 // 0 !HISTORY 2014-12-21 [PTadmin] Renamed from 2609
 // 0 !HISTORY 2014-12-23 [PTadmin] Official Update 2014-02
-// 
+// 0 !HISTORY 2025-03-26 [Holly-Wood] Obsoleted due to bad geometry (use 2609d)
+// 0 !HISTORY 2025-06-26 [OrionP] Official Update 2025-06
 // 
 // 2 24 -20 0 20 -20 0 8
   [2,24,-20,0,20,-20,0,8],

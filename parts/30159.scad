@@ -9,15 +9,17 @@ use <../p/rect.scad>
 use <../p/rect3.scad>
 use <../p/stug-2x2.scad>
 function ldraw_lib__30159() = [
-// 0 Magnet Holder Plate  2 x  2 Bottom
+// 0 ~Magnet Holder Plate  2 x  2 Bottom (Obsolete)
 // 0 Name: 30159.dat
 // 0 Author: Steve Bliss [sbliss]
-// 0 !LDRAW_ORG Part UPDATE 2016-01
+// 0 !LDRAW_ORG Part UPDATE 2025-06
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
+// 
+// 0 !CATEGORY Obsolete
 // 
 // 0 !HISTORY 1998-10-15 [PTadmin] Official Update 1998-09
 // 0 !HISTORY 1999-07-05 [PTadmin] Official Update 1999-05
@@ -26,7 +28,8 @@ function ldraw_lib__30159() = [
 // 0 !HISTORY 2014-11-21 [roland] Auto-corrected with libfix version of LDCad 1.4
 // 0 !HISTORY 2016-09-10 [MagFors] Made bfc, primitives substitution
 // 0 !HISTORY 2016-12-31 [PTadmin] Official Update 2016-01
-// 
+// 0 !HISTORY 2025-05-08 [KnightOfTarenta] Obsoleted due to bad geometry
+// 0 !HISTORY 2025-06-26 [OrionP] Official Update 2025-06
 // 
 // 1 16 0 0 0 20 0 0 0 8 0 0 0 20 box4o4a.dat
   [1,16,0,0,0,20,0,0,0,8,0,0,0,20, ldraw_lib__box4o4a()],

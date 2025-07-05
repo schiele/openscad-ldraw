@@ -6,7 +6,7 @@ function ldraw_lib__93062p02() = [
 // 0 Name: 93062p02.dat
 // 0 Author: Antony Caparica [antonyc]
 // 0 !LDRAW_ORG Shortcut UPDATE 2018-02
-// 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
+// 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],

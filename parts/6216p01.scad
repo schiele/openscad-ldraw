@@ -2,20 +2,22 @@ use <../lib.scad>
 use <../p/1-4chrd.scad>
 use <s/6216s01.scad>
 function ldraw_lib__6216p01() = [
-// 0 Brick  2 x  4 x  2 with Curved Top with Antenna Pattern
+// 0 Brick  2 x  4 x  2 with Triple Curved Top with Antenna Pattern
 // 0 Name: 6216p01.dat
 // 0 Author: Damien Roux [Darats]
-// 0 !LDRAW_ORG Part UPDATE 2014-01
+// 0 !LDRAW_ORG Part UPDATE 2025-06
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
-// 0 !KEYWORDS BrickLink 6216pb01, Rebrickable 6216pr0001, Set 2757
+// 0 !KEYWORDS Bad Monkey, Basic 1998, BrickLink 6216pb01, Classic 1998, McDonalds
+// 0 !KEYWORDS Mini Fabi, Monster, promotional, Rebrickable 6216pr0001, Set 2757
 // 
 // 0 !HISTORY 2014-06-21 [PTadmin] Official Update 2014-01
-// 
+// 0 !HISTORY 2025-06-02 [MagFors] Update description
+// 0 !HISTORY 2025-06-26 [OrionP] Official Update 2025-06
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\6216s01.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__6216s01()],
