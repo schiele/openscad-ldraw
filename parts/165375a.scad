@@ -4,7 +4,7 @@ function ldraw_lib__165375a() = [
 // 0 Sticker  3.0 x  3.6 with Airplane above Sun and Clouds
 // 0 Name: 165375a.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
-// 0 !LDRAW_ORG Part UPDATE 2023-03
+// 0 !LDRAW_ORG Part UPDATE 2025-07
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -15,6 +15,8 @@ function ldraw_lib__165375a() = [
 // 0 !KEYWORDS Rebrickable 165375, Set 1772
 // 
 // 0 !HISTORY 2023-06-24 [OrionP] Official Update 2023-03
+// 0 !HISTORY 2025-07-27 [OrionP] Minor header edits
+// 0 !HISTORY 2025-07-27 [OrionP] Official Update 2025-07
 // 
 // 
 // 1 16 0 -0.25 0 36 0 0 0 0.25 0 0 0 30 box5-12.dat

@@ -4,7 +4,7 @@ function ldraw_lib__20461bpd92() = [
 // 0 Minifig Leg Right with Ruffles, Black Lower Leg and White Feet Pattern
 // 0 Name: 20461bpd92.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
-// 0 !LDRAW_ORG Part UPDATE 2023-03
+// 0 !LDRAW_ORG Part UPDATE 2025-07
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 !HELP Move down 12 units to align with hips
@@ -23,6 +23,8 @@ function ldraw_lib__20461bpd92() = [
 // 0 !HISTORY 2020-09-05 [GeraldLasser] Original design
 // 0 !HISTORY 2023-06-06 [MagFors] Adapted to corrected geometry
 // 0 !HISTORY 2023-06-24 [OrionP] Official Update 2023-03
+// 0 !HISTORY 2025-07-27 [OrionP] Minor header edits
+// 0 !HISTORY 2025-07-27 [OrionP] Official Update 2025-07
 // 
 // 
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 20460bpd92.dat

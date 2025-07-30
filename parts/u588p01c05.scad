@@ -8,7 +8,7 @@ function ldraw_lib__u588p01c05() = [
 // 0 _Figure Fabuland Elephant  1 w Body Yellw/Yellw/Blk Sou'wester
 // 0 Name: u588p01c05.dat
 // 0 Author: Steffen [Steffen]
-// 0 !LDRAW_ORG Shortcut Physical_Colour UPDATE 2011-01
+// 0 !LDRAW_ORG Shortcut Physical_Colour UPDATE 2025-07
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -19,6 +19,8 @@ function ldraw_lib__u588p01c05() = [
 // 0 !KEYWORDS Pirouette l'Ã©lÃ©phant, Set 3660
 // 
 // 0 !HISTORY 2011-07-25 [PTadmin] Official Update 2011-01
+// 0 !HISTORY 2025-07-27 [OrionP] Minor header edits
+// 0 !HISTORY 2025-07-27 [OrionP] Official Update 2025-07
 // 
 // 
 // 1 7 0 -67 4 1 0 0 0 1 0 0 0 1 u588p01c02.dat

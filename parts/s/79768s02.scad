@@ -35,7 +35,7 @@ function ldraw_lib__s__79768s02() = [
 // 0 ~Technic Beam 16 x  7 Triangular with Diagonal Bars - Quarter
 // 0 Name: s\79768s02.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
-// 0 !LDRAW_ORG Subpart UPDATE 2023-06
+// 0 !LDRAW_ORG Subpart UPDATE 2025-07
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -43,6 +43,8 @@ function ldraw_lib__s__79768s02() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2023-11-19 [OrionP] Official Update 2023-06
+// 0 !HISTORY 2025-07-27 [OrionP] Minor header edits
+// 0 !HISTORY 2025-07-27 [OrionP] Official Update 2025-07
 // 
 // 
 // 0 // Narrow Section

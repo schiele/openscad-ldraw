@@ -11,7 +11,7 @@ function ldraw_lib__3890() = [
 // 0 Panel  2 x  6 x  7 with Window Hole
 // 0 Name: 3890.dat
 // 0 Author: Sybrand Bonsma [Sybrand]
-// 0 !LDRAW_ORG Part UPDATE 2014-02
+// 0 !LDRAW_ORG Part UPDATE 2025-07
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -24,6 +24,8 @@ function ldraw_lib__3890() = [
 // 0 !HISTORY 2010-12-31 [PTadmin] Official Update 2010-03
 // 0 !HISTORY 2014-07-28 [cwdee] Corrected size and shape of window hole
 // 0 !HISTORY 2014-12-23 [PTadmin] Official Update 2014-02
+// 0 !HISTORY 2025-07-27 [OrionP] Minor header edits
+// 0 !HISTORY 2025-07-27 [OrionP] Official Update 2025-07
 // 
 // 
 // 1 16 0 164 0 1 0 0 0 -1 0 0 0 1 stug4-1x5.dat

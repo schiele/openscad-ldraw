@@ -5,7 +5,7 @@ function ldraw_lib__3815bpaz() = [
 // 0 Minifig Hips with Belt with White Spikes Pattern
 // 0 Name: 3815bpaz.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2023-03
+// 0 !LDRAW_ORG Part UPDATE 2025-07
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -15,6 +15,8 @@ function ldraw_lib__3815bpaz() = [
 // 0 !KEYWORDS Bricklink 970c88pb09, Chima, Crug, set 70112
 // 
 // 0 !HISTORY 2023-06-24 [OrionP] Official Update 2023-03
+// 0 !HISTORY 2025-07-27 [OrionP] Minor header edits
+// 0 !HISTORY 2025-07-27 [OrionP] Official Update 2025-07
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3815bs01.dat

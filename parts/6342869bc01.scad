@@ -3,7 +3,7 @@ function ldraw_lib__6342869bc01() = [
 // 0 Sticker  5.6 x  3.8 Rectangle Chrome (Formed)
 // 0 Name: 6342869bc01.dat
 // 0 Author: Orion Pobursky [OrionP]
-// 0 !LDRAW_ORG Part UPDATE 2023-03
+// 0 !LDRAW_ORG Part UPDATE 2025-07
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -13,6 +13,8 @@ function ldraw_lib__6342869bc01() = [
 // 0 !KEYWORDS Discovery, Set 10283, Space Shuttle
 // 
 // 0 !HISTORY 2023-06-24 [OrionP] Official Update 2023-03
+// 0 !HISTORY 2025-07-27 [OrionP] Minor header edits
+// 0 !HISTORY 2025-07-27 [OrionP] Official Update 2025-07
 // 
 // 
 // 4 383 -37.5 -75.0986 -9.8854 -37.5 -75.5237 -3.4334 37.5 -75.5237 -3.4334 37.5 -75.0986 -9.8854

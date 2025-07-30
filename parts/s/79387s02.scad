@@ -13,7 +13,7 @@ function ldraw_lib__s__79387s02() = [
 // 0 ~Tile  4 x  4 x  0.667 with Rounded Corners - Corner
 // 0 Name: s\79387s02.dat
 // 0 Author: Gerald Lasser [GeraldLasser]
-// 0 !LDRAW_ORG Subpart UPDATE 2023-05
+// 0 !LDRAW_ORG Subpart UPDATE 2025-07
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -22,6 +22,8 @@ function ldraw_lib__s__79387s02() = [
 // 
 // 0 !HISTORY 2023-05-02 [GeraldLasser] based on 68869 by [Philo]
 // 0 !HISTORY 2023-10-31 [OrionP] Official Update 2023-05
+// 0 !HISTORY 2025-07-27 [OrionP] Minor header edits
+// 0 !HISTORY 2025-07-27 [OrionP] Official Update 2025-07
 // 
 // 
 // 1 16 20 0 20 20 0 0 0 1 0 0 0 20 1-4edge.dat

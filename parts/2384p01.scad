@@ -4,7 +4,7 @@ function ldraw_lib__2384p01() = [
 // 0 ~Electric Light & Sound Clip-On Plate  2 x  2 with Men Working Pattern
 // 0 Name: 2384p01.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
-// 0 !LDRAW_ORG Part UPDATE 2023-03
+// 0 !LDRAW_ORG Part UPDATE 2025-07
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -16,6 +16,8 @@ function ldraw_lib__2384p01() = [
 // 
 // 0 !HISTORY 2022-02-19 [RainbowDolphin] Pattern copied from 3351ap10 by J. C. Tchang [tchang]
 // 0 !HISTORY 2023-06-24 [OrionP] Official Update 2023-03
+// 0 !HISTORY 2025-07-27 [OrionP] Minor header edits
+// 0 !HISTORY 2025-07-27 [OrionP] Official Update 2025-07
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\2384s01.dat

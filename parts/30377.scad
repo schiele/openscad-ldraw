@@ -19,7 +19,7 @@ function ldraw_lib__30377() = [
 // 0 Minifig Mechanical Arm with Clips Parallel
 // 0 Name: 30377.dat
 // 0 Author: Nathan Wright
-// 0 !LDRAW_ORG Part UPDATE 2024-02
+// 0 !LDRAW_ORG Part UPDATE 2025-07
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -40,6 +40,8 @@ function ldraw_lib__30377() = [
 // 0 !HISTORY 2020-06-28 [PTadmin] Official Update 2020-01
 // 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
 // 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
+// 0 !HISTORY 2025-07-27 [OrionP] Minor header edits
+// 0 !HISTORY 2025-07-27 [OrionP] Official Update 2025-07
 // 
 // 1 16 3 21 0 0 -6 0 0 0 -4.5 4.5 0 0 4-4cylc.dat
   [1,16,3,21,0,0,-6,0,0,0,-4.5,4.5,0,0, ldraw_lib__4_4cylc()],

@@ -7,7 +7,7 @@ function ldraw_lib__76382px0() = [
 // 0 Minifig Torso with Sand Green Arms and Dark Bluish Grey Hands with Shirt Collar and Sand Green Neck Pattern
 // 0 Name: 76382px0.dat
 // 0 Author: Jeff Jones [notmaster]
-// 0 !LDRAW_ORG Part UPDATE 2025-01
+// 0 !LDRAW_ORG Shortcut UPDATE 2025-07
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -18,6 +18,8 @@ function ldraw_lib__76382px0() = [
 // 0 !KEYWORDS Set 3827, SpongeBob, Squidward
 // 
 // 0 !HISTORY 2025-01-20 [OrionP] Official Update 2025-01
+// 0 !HISTORY 2025-06-28 [MagFors] Corrected part type
+// 0 !HISTORY 2025-07-27 [OrionP] Official Update 2025-07
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 973px0.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__973px0()],

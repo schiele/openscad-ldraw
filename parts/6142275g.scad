@@ -16,7 +16,7 @@ function ldraw_lib__6142275g() = [
 // 0 Sticker  1.2 x  1.8 with Lights and Levers on Dark Bluish Grey Background
 // 0 Name: 6142275g.dat
 // 0 Author: Massimo Maso [Sirio]
-// 0 !LDRAW_ORG Part UPDATE 2024-02
+// 0 !LDRAW_ORG Part UPDATE 2025-07
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -28,6 +28,8 @@ function ldraw_lib__6142275g() = [
 // 0 !HISTORY 2024-01-29 [OrionP] Official Update 2024-01
 // 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
 // 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
+// 0 !HISTORY 2025-07-27 [OrionP] Minor header edits
+// 0 !HISTORY 2025-07-27 [OrionP] Official Update 2025-07
 // 
 // 0 // Subparts
 // 

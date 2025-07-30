@@ -8,7 +8,7 @@ function ldraw_lib__98393g() = [
 // 0 Figure Friends Medical Ice Pack
 // 0 Name: 98393g.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
-// 0 !LDRAW_ORG Part UPDATE 2024-10
+// 0 !LDRAW_ORG Part UPDATE 2025-07
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -21,6 +21,8 @@ function ldraw_lib__98393g() = [
 // 0 !HISTORY 2021-03-20 {LEGO/Unity Microgame} Original part shape
 // 0 !HISTORY 2021-03-20 [RainbowDolphin] File preparation for LDraw Parts Tracker
 // 0 !HISTORY 2024-12-01 [OrionP] Official Update 2024-10
+// 0 !HISTORY 2025-07-27 [OrionP] Minor header edits
+// 0 !HISTORY 2025-07-27 [OrionP] Official Update 2025-07
 // 
 // 1 16 0 0 0 2 0 0 0 -5.4 0 0 0 2 4-4cylc.dat
   [1,16,0,0,0,2,0,0,0,-5.4,0,0,0,2, ldraw_lib__4_4cylc()],

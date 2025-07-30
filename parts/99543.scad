@@ -6,10 +6,10 @@ use <../p/4-4ring2.scad>
 use <../p/axlehol2.scad>
 use <../p/axlehole.scad>
 function ldraw_lib__99543() = [
-// 0 Electric Mindstorms EV3 Medium Motor Axle Hub
+// 0 ~Electric Mindstorms EV3 Medium Motor Axle Hub
 // 0 Name: 99543.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2013-02
+// 0 !LDRAW_ORG Part UPDATE 2025-07
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -19,7 +19,8 @@ function ldraw_lib__99543() = [
 // 0 !HISTORY 2012-05-20 {LEGO MINDSTORMS Team} Original part shape
 // 0 !HISTORY 2012-07-04 [Philo] File preparation for LDraw Parts Tracker
 // 0 !HISTORY 2013-12-23 [PTadmin] Official Update 2013-02
-// 
+// 0 !HISTORY 2025-07-15 [OrionP] Corrected description
+// 0 !HISTORY 2025-07-27 [OrionP] Official Update 2025-07
 // 
 // 1 16 0 0 22 20 0 0 0 0 -20 0 3 0 4-4cylc.dat
   [1,16,0,0,22,20,0,0,0,0,-20,0,3,0, ldraw_lib__4_4cylc()],

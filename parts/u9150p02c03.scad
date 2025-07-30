@@ -8,7 +8,7 @@ function ldraw_lib__u9150p02c03() = [
 // 0 _Figure Fabuland Lion  2 w Body Black/Black/Yellow Gold Chain
 // 0 Name: u9150p02c03.dat
 // 0 Author: Steffen [Steffen]
-// 0 !LDRAW_ORG Shortcut Physical_Colour UPDATE 2011-01
+// 0 !LDRAW_ORG Shortcut Physical_Colour UPDATE 2025-07
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -18,6 +18,8 @@ function ldraw_lib__u9150p02c03() = [
 // 0 !KEYWORDS Leo LÃ¶we, Lionel Lion, Set 3644, Set 3645, set 3647
 // 
 // 0 !HISTORY 2011-07-25 [PTadmin] Official Update 2011-01
+// 0 !HISTORY 2025-07-27 [OrionP] Minor header edits
+// 0 !HISTORY 2025-07-27 [OrionP] Official Update 2025-07
 // 
 // 
 // 0 // The color choice for the head has been done simply by color appearance.

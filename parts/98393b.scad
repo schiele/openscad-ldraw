@@ -5,7 +5,7 @@ function ldraw_lib__98393b() = [
 // 0 Figure Friends Medical Clipboard
 // 0 Name: 98393b.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
-// 0 !LDRAW_ORG Part UPDATE 2024-09
+// 0 !LDRAW_ORG Part UPDATE 2025-07
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -18,6 +18,8 @@ function ldraw_lib__98393b() = [
 // 0 !HISTORY 2021-03-20 {LEGO/Unity Microgame} Original part shape
 // 0 !HISTORY 2021-03-20 [RainbowDolphin] File preparation for LDraw Parts Tracker
 // 0 !HISTORY 2024-10-27 [OrionP] Official Update 2024-09
+// 0 !HISTORY 2025-07-27 [OrionP] Minor header edits
+// 0 !HISTORY 2025-07-27 [OrionP] Official Update 2025-07
 // 
 // 1 16 0 -14.113 0 4 0 0 0 28.226 0 0 0 4 4-4cyli.dat
   [1,16,0,-14.113,0,4,0,0,0,28.226,0,0,0,4, ldraw_lib__4_4cyli()],

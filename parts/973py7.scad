@@ -7,7 +7,7 @@ function ldraw_lib__973py7() = [
 // 0 Minifig Torso with Ford Logo on White T-Shirt under Dark Red Tartan Shirt Pattern
 // 0 Name: 973py7.dat
 // 0 Author: Massimo Maso [Sirio]
-// 0 !LDRAW_ORG Part UPDATE 2024-01
+// 0 !LDRAW_ORG Part UPDATE 2025-07
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -18,6 +18,8 @@ function ldraw_lib__973py7() = [
 // 0 !KEYWORDS Speed Champions
 // 
 // 0 !HISTORY 2024-01-29 [OrionP] Official Update 2024-01
+// 0 !HISTORY 2025-07-27 [OrionP] Minor header edits
+// 0 !HISTORY 2025-07-27 [OrionP] Official Update 2025-07
 // 
 // 
 // 0 // Subparts

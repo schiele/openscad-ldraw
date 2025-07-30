@@ -5,7 +5,7 @@ function ldraw_lib__4215bp01() = [
 // 0 Panel  1 x  4 x  3 with Logo "Vestas" Pattern
 // 0 Name: 4215bp01.dat
 // 0 Author: Massimo Maso [Sirio]
-// 0 !LDRAW_ORG Part UPDATE 2020-01
+// 0 !LDRAW_ORG Part UPDATE 2025-07
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -14,7 +14,11 @@ function ldraw_lib__4215bp01() = [
 // 
 // 0 !KEYWORDS BrickLink 60581pb115, Rebrickable 60581pr0018, Set 10268
 // 
+// 0 !PREVIEW 16 0 0 0 -1 0 0 0 1 0 0 0 -1
+// 
 // 0 !HISTORY 2020-06-28 [PTadmin] Official Update 2020-01
+// 0 !HISTORY 2025-07-27 [OrionP] Minor header edits
+// 0 !HISTORY 2025-07-27 [OrionP] Official Update 2025-07
 // 
 // 
 // 4 16 -40 0 10 40 0 10 39.27 27.9425 10 -39.27 27.9425 10

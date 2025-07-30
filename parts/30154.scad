@@ -18,7 +18,7 @@ function ldraw_lib__30154() = [
 // 0 Minifig Sextant
 // 0 Name: 30154.dat
 // 0 Author: Orion Pobursky [OrionP]
-// 0 !LDRAW_ORG Part UPDATE 2024-02
+// 0 !LDRAW_ORG Part UPDATE 2025-07
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -37,6 +37,8 @@ function ldraw_lib__30154() = [
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
 // 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
 // 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
+// 0 !HISTORY 2025-07-27 [OrionP] Minor header edits
+// 0 !HISTORY 2025-07-27 [OrionP] Official Update 2025-07
 // 
 // 1 16 10 0 0 0 2 0 -5.5 0 0 0 0 -5.5 4-4cylo.dat
   [1,16,10,0,0,0,2,0,-5.5,0,0,0,0,-5.5, ldraw_lib__4_4cylo()],

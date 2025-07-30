@@ -5,7 +5,7 @@ function ldraw_lib__3815bpy0() = [
 // 0 Minifig Hips with Yellow Stripes on Left Side Pattern
 // 0 Name: 3815bpy0.dat
 // 0 Author: Massimo Maso [Sirio]
-// 0 !LDRAW_ORG Part UPDATE 2023-03
+// 0 !LDRAW_ORG Part UPDATE 2025-07
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -16,6 +16,8 @@ function ldraw_lib__3815bpy0() = [
 // 0 !KEYWORDS Rebrickable 970c03pr1248, Set 75877, Speed Champions, sport, Uniform
 // 
 // 0 !HISTORY 2023-06-24 [OrionP] Official Update 2023-03
+// 0 !HISTORY 2025-07-27 [OrionP] Minor header edits
+// 0 !HISTORY 2025-07-27 [OrionP] Official Update 2025-07
 // 
 // 
 // 0 // Subpart

@@ -8,7 +8,7 @@ function ldraw_lib__564c01() = [
 // 0 Electric Motor  4 x 12 x  3.333 Type 1  4.5V
 // 0 Name: 564c01.dat
 // 0 Author: Guy Vivan [guyvivan]
-// 0 !LDRAW_ORG Shortcut UPDATE 2022-04
+// 0 !LDRAW_ORG Shortcut UPDATE 2025-07
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -21,6 +21,8 @@ function ldraw_lib__564c01() = [
 // 0 !HISTORY 2014-06-21 [PTadmin] Official Update 2014-01
 // 0 !HISTORY 2019-08-02 [anathema] Replaced '4.5V' label with sticker
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04
+// 0 !HISTORY 2025-07-27 [OrionP] Minor header edits
+// 0 !HISTORY 2025-07-27 [OrionP] Official Update 2025-07
 // 
 // 
 // 1 494 -20 0 20 1.06066 0 -1.06066 0 1 0 1.06066 0 1.06066 u9020.dat

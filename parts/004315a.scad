@@ -6,7 +6,7 @@ function ldraw_lib__004315a() = [
 // 0 Sticker Minifig Torso with Yellow Buttons and Grey Belt
 // 0 Name: 004315a.dat
 // 0 Author: Michael Heidemann [mikeheide]
-// 0 !LDRAW_ORG Part UPDATE 2011-02
+// 0 !LDRAW_ORG Part UPDATE 2025-07
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -15,6 +15,8 @@ function ldraw_lib__004315a() = [
 // 
 // 0 !HISTORY 2011-08-25 [cwdee] Updated to match subpart shape; removed T-junctions
 // 0 !HISTORY 2011-12-29 [PTadmin] Official Update 2011-02
+// 0 !HISTORY 2025-07-27 [OrionP] Minor header edits
+// 0 !HISTORY 2025-07-27 [OrionP] Official Update 2025-07
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\004315s01.dat

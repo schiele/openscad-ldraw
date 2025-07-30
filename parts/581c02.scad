@@ -11,7 +11,7 @@ function ldraw_lib__581c02() = [
 // 0 Electric Motor  4 x 12 x  3.333 Type 2 12V
 // 0 Name: 581c02.dat
 // 0 Author: Alex Taylor [anathema]
-// 0 !LDRAW_ORG Shortcut UPDATE 2022-03
+// 0 !LDRAW_ORG Shortcut UPDATE 2025-07
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -24,6 +24,8 @@ function ldraw_lib__581c02() = [
 // 0 !CMDLINE -c0
 // 
 // 0 !HISTORY 2022-05-07 [PTadmin] Official Update 2022-03
+// 0 !HISTORY 2025-07-27 [OrionP] Minor header edits
+// 0 !HISTORY 2025-07-27 [OrionP] Official Update 2025-07
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 u9189.dat

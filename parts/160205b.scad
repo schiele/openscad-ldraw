@@ -7,7 +7,7 @@ function ldraw_lib__160205b() = [
 // 0 Sticker  1.9 x  3.5 with Bank Note and Coins on White/Transparent Stripes
 // 0 Name: 160205b.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
-// 0 !LDRAW_ORG Part UPDATE 2023-02
+// 0 !LDRAW_ORG Part UPDATE 2025-07
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -18,6 +18,8 @@ function ldraw_lib__160205b() = [
 // 0 !KEYWORDS Rebrickable 160205, Set 1490, Town bank, Window
 // 
 // 0 !HISTORY 2023-04-17 [OrionP] Official Update 2023-02
+// 0 !HISTORY 2025-07-27 [OrionP] Minor header edits
+// 0 !HISTORY 2025-07-27 [OrionP] Official Update 2025-07
 // 
 // 
 // 1 16 0 -0.25 0 35 0 0 0 0.25 0 0 0 19 box5-12.dat

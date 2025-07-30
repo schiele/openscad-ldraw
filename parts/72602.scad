@@ -4,7 +4,7 @@ function ldraw_lib__72602() = [
 // 0 ~Moved to 4119430a
 // 0 Name: 72602.dat
 // 0 Author: [PTadmin]
-// 0 !LDRAW_ORG Part UPDATE 2011-01
+// 0 !LDRAW_ORG Part UPDATE 2025-07
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -14,6 +14,8 @@ function ldraw_lib__72602() = [
 // 0 !CATEGORY Sticker Shortcut
 // 
 // 0 !HISTORY 2011-07-25 [PTadmin] Official Update 2011-01
+// 0 !HISTORY 2025-07-27 [OrionP] Minor header edits
+// 0 !HISTORY 2025-07-27 [OrionP] Official Update 2025-07
 // 
 // 
 // 0 // Sticker Mirror Round

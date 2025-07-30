@@ -17,7 +17,7 @@ function ldraw_lib__163555c() = [
 // 0 Sticker  3.5 x  3.5 with Airport Shuttle Route Map
 // 0 Name: 163555c.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
-// 0 !LDRAW_ORG Part UPDATE 2024-02
+// 0 !LDRAW_ORG Part UPDATE 2025-07
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -30,6 +30,8 @@ function ldraw_lib__163555c() = [
 // 0 !HISTORY 2023-08-25 [OrionP] Official Update 2023-04
 // 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
 // 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
+// 0 !HISTORY 2025-07-27 [OrionP] Minor header edits
+// 0 !HISTORY 2025-07-27 [OrionP] Official Update 2025-07
 // 
 // 1 16 0 -0.25 0 35 0 0 0 0.25 0 0 0 35 box5-12.dat
   [1,16,0,-0.25,0,35,0,0,0,0.25,0,0,0,35, ldraw_lib__box5_12()],

@@ -24,7 +24,7 @@ function ldraw_lib__4761() = [
 // 0 Electric 9V Battery Box  4 x  8 x  2 1/3 Lid
 // 0 Name: 4761.dat
 // 0 Author: Jonathan Wilson [jonwil]
-// 0 !LDRAW_ORG Part UPDATE 2009-03
+// 0 !LDRAW_ORG Part UPDATE 2025-07
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -37,6 +37,8 @@ function ldraw_lib__4761() = [
 // 0 !HISTORY 2008-07-07 [DeannaEarley] Tidied and made BFC compliant
 // 0 !HISTORY 2009-02-15 [anathema] Rebuilt and added missing bits
 // 0 !HISTORY 2009-12-29 [PTadmin] Official Update 2009-03
+// 0 !HISTORY 2025-07-27 [OrionP] Minor header edits
+// 0 !HISTORY 2025-07-27 [OrionP] Official Update 2025-07
 // 
 // 
 // 1 16 0 4 2 0 0 2 0 4 0 70 0 0 box3u8p.dat

@@ -15,7 +15,7 @@ function ldraw_lib__31622() = [
 // 0 Duplo Gear 24 Tooth Crown
 // 0 Name: 31622.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2024-02
+// 0 !LDRAW_ORG Part UPDATE 2025-07
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -28,6 +28,8 @@ function ldraw_lib__31622() = [
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
 // 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
 // 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
+// 0 !HISTORY 2025-07-27 [OrionP] Minor header edits
+// 0 !HISTORY 2025-07-27 [OrionP] Official Update 2025-07
 // 
 // 1 16 0 0 -20 0 0 -1 -1 0 0 0 40 0 daxlehub.dat
   [1,16,0,0,-20,0,0,-1,-1,0,0,0,40,0, ldraw_lib__daxlehub()],

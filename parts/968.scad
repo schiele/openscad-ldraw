@@ -18,7 +18,7 @@ function ldraw_lib__968() = [
 // 0 Trailer Base  4 x 14 x  1
 // 0 Name: 968.dat
 // 0 Author: Lutz Uhlmann [El-Lutzo]
-// 0 !LDRAW_ORG Part UPDATE 2010-03
+// 0 !LDRAW_ORG Part UPDATE 2025-07
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CW
@@ -34,6 +34,8 @@ function ldraw_lib__968() = [
 // 0 !HISTORY 2009-12-29 [PTadmin] Official Update 2009-03
 // 0 !HISTORY 2010-11-22 [anathema] Added !CATEGORY
 // 0 !HISTORY 2010-12-31 [PTadmin] Official Update 2010-03
+// 0 !HISTORY 2025-07-27 [OrionP] Minor header edits
+// 0 !HISTORY 2025-07-27 [OrionP] Official Update 2025-07
 // 
 // 
 // 1 16 0 12 140 40 0 0 0 0 12 0 -1 0 rect.dat

@@ -14,7 +14,7 @@ function ldraw_lib__6142617i() = [
 // 0 Sticker  0.9 x  1.8 with Grey and Silver Ring on Black Background Left (Needs Work)
 // 0 Name: 6142617i.dat
 // 0 Author: Massimo Maso [Sirio]
-// 0 !LDRAW_ORG Part UPDATE 2024-02
+// 0 !LDRAW_ORG Part UPDATE 2025-07
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 !HELP Needs work: Grey and dark grey ring is really halftone clack and grey
@@ -28,6 +28,8 @@ function ldraw_lib__6142617i() = [
 // 0 !HISTORY 2023-04-17 [OrionP] Official Update 2023-02
 // 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
 // 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
+// 0 !HISTORY 2025-07-27 [OrionP] Minor header edits
+// 0 !HISTORY 2025-07-27 [OrionP] Official Update 2025-07
 // 
 // 0 // Primitives
 // 1 16 -16.5 0 7.7732 -1.5 0 0 0 -1 0 0 0 1.5 1-4chrd.dat

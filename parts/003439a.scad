@@ -9,7 +9,7 @@ function ldraw_lib__003439a() = [
 // 0 Sticker  1.6 x  2.7 with White "171" on Black
 // 0 Name: 003439a.dat
 // 0 Author: Alex Taylor [anathema]
-// 0 !LDRAW_ORG Part UPDATE 2024-02
+// 0 !LDRAW_ORG Part UPDATE 2025-07
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -25,6 +25,8 @@ function ldraw_lib__003439a() = [
 // 0 !HISTORY 2019-12-27 [PTadmin] Official Update 2019-03
 // 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
 // 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
+// 0 !HISTORY 2025-07-27 [OrionP] Minor header edits
+// 0 !HISTORY 2025-07-27 [OrionP] Official Update 2025-07
 // 
 // 1 15 -11 -0.25 0 0 0 -0.6 0 1 0 0.6 0 0 48\2-4ring17.dat
   [1,15,-11,-0.25,0,0,0,-0.6,0,1,0,0.6,0,0, ldraw_lib__48__2_4ring17()],

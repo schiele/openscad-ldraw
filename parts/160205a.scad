@@ -6,7 +6,7 @@ function ldraw_lib__160205a() = [
 // 0 Sticker  2.3 x  2.3 with Bank Note and Coins
 // 0 Name: 160205a.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
-// 0 !LDRAW_ORG Part UPDATE 2023-02
+// 0 !LDRAW_ORG Part UPDATE 2025-07
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -17,6 +17,8 @@ function ldraw_lib__160205a() = [
 // 0 !KEYWORDS Security van, Set 1490, Town bank
 // 
 // 0 !HISTORY 2023-04-17 [OrionP] Official Update 2023-02
+// 0 !HISTORY 2025-07-27 [OrionP] Minor header edits
+// 0 !HISTORY 2025-07-27 [OrionP] Official Update 2025-07
 // 
 // 
 // 1 16 0 -0.25 0 23 0 0 0 0.25 0 0 0 23 box5-12.dat

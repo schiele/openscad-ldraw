@@ -5,7 +5,7 @@ function ldraw_lib__3039dy1() = [
 // 0 Slope Brick 45  2 x  2 with Black "23" in White Arch on Red Background Sticker
 // 0 Name: 3039dy1.dat
 // 0 Author: Massimo Maso [Sirio]
-// 0 !LDRAW_ORG Shortcut UPDATE 2024-09
+// 0 !LDRAW_ORG Shortcut UPDATE 2025-07
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -16,6 +16,8 @@ function ldraw_lib__3039dy1() = [
 // 0 !KEYWORDS 917K, 919, Hybrid, Pit Lane, Porsche, set 75876, Speed Champions
 // 
 // 0 !HISTORY 2024-10-27 [OrionP] Official Update 2024-09
+// 0 !HISTORY 2025-07-27 [OrionP] Minor header edits
+// 0 !HISTORY 2025-07-27 [OrionP] Official Update 2025-07
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 3039.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__3039()],

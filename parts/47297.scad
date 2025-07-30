@@ -16,7 +16,7 @@ function ldraw_lib__47297() = [
 // 0 Constraction Limb  7 Straight with Two Ball Joints
 // 0 Name: 47297.dat
 // 0 Author: Michael Heidemann [mikeheide]
-// 0 !LDRAW_ORG Part UPDATE 2024-02
+// 0 !LDRAW_ORG Part UPDATE 2025-07
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -29,6 +29,8 @@ function ldraw_lib__47297() = [
 // 0 !HISTORY 2015-11-03 {LEGO Digital Designer} Original part shape
 // 0 !HISTORY 2023-08-22 [MagFors] File preparation for LDraw Parts Tracker
 // 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
+// 0 !HISTORY 2025-07-27 [OrionP] Minor header edits
+// 0 !HISTORY 2025-07-27 [OrionP] Official Update 2025-07
 // 
 // 1 16 0 -10 40 9 0 0 0 6 0 0 0 -9 2-4cyli.dat
   [1,16,0,-10,40,9,0,0,0,6,0,0,0,-9, ldraw_lib__2_4cyli()],

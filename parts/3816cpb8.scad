@@ -4,7 +4,7 @@ function ldraw_lib__3816cpb8() = [
 // 0 Minifig Leg Right with Dark Bluish Grey Robe Lines Pattern
 // 0 Name: 3816cpb8.dat
 // 0 Author: Evert-Jan Boer [ejboer]
-// 0 !LDRAW_ORG Part UPDATE 2023-03
+// 0 !LDRAW_ORG Part UPDATE 2025-07
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 !HELP Move down 12 units to align with hips
@@ -23,6 +23,8 @@ function ldraw_lib__3816cpb8() = [
 // 0 !HISTORY 2022-05-07 [PTadmin] Official Update 2022-03
 // 0 !HISTORY 2023-05-17 [MagFors] Adapted to c-version leg, renumbered
 // 0 !HISTORY 2023-06-24 [OrionP] Official Update 2023-03
+// 0 !HISTORY 2025-07-27 [OrionP] Minor header edits
+// 0 !HISTORY 2025-07-27 [OrionP] Official Update 2025-07
 // 
 // 
 // 1 16 0 0 0 -1 0 0 0 1 0 0 0 1 s\3817cs01.dat

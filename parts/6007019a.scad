@@ -4,7 +4,7 @@ function ldraw_lib__6007019a() = [
 // 0 Sticker  5.5 x  5.5 with S.H.I.E.L.D. Logo
 // 0 Name: 6007019a.dat
 // 0 Author: Reuben Pearse [ReubenPearse]
-// 0 !LDRAW_ORG Part UPDATE 2018-02
+// 0 !LDRAW_ORG Part UPDATE 2025-07
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -14,6 +14,8 @@ function ldraw_lib__6007019a() = [
 // 0 !KEYWORDS Avengers, Marvel, Quinjet, set 6869, Super Heroes
 // 
 // 0 !HISTORY 2018-12-08 [PTadmin] Official Update 2018-02
+// 0 !HISTORY 2025-07-27 [OrionP] Minor header edits
+// 0 !HISTORY 2025-07-27 [OrionP] Official Update 2025-07
 // 
 // 
 // 1 16 0 -0.25 0 0 0 55 0 0.25 0 -55 0 0 box5-12.dat

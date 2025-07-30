@@ -11,7 +11,7 @@ function ldraw_lib__92912() = [
 // 0 Tyre 38/ 76 x 56
 // 0 Name: 92912.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2024-02
+// 0 !LDRAW_ORG Part UPDATE 2025-07
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 !HELP Position on 44772 wheel at Z = -3
@@ -25,6 +25,8 @@ function ldraw_lib__92912() = [
 // 0 !HISTORY 2012-08-09 [PTadmin] Official Update 2012-02
 // 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
 // 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
+// 0 !HISTORY 2025-07-27 [OrionP] Minor header edits
+// 0 !HISTORY 2025-07-27 [OrionP] Official Update 2025-07
 // 
 // 0 // Nomenclature: width_(mm)/profile_as_percentage_of_width x rim_diameter_(mm)
 // 

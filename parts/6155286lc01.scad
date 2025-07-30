@@ -5,7 +5,7 @@ function ldraw_lib__6155286lc01() = [
 // 0 Sticker  0.7 x  4.0 with Red and White Diagonal Stripes Leaning Left (Formed)
 // 0 Name: 6155286lc01.dat
 // 0 Author: Evert-Jan Boer [ejboer]
-// 0 !LDRAW_ORG Unofficial_Part
+// 0 !LDRAW_ORG Part UPDATE 2025-07
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 !HELP Formed to fit part 24121
@@ -19,6 +19,8 @@ function ldraw_lib__6155286lc01() = [
 // 0 !KEYWORDS Set 42055
 // 
 // 0 !PREVIEW 16 0 0 0 -1 0 0 0 1 0 0 0 -1
+// 
+// 0 !HISTORY 2025-07-27 [OrionP] Official Update 2025-07
 // 
 // 1 4 -91.5 6.5 187.663 -1 0 0 0 0 1 -.49339 -1 0 1-4chrd.dat
   [1,4,-91.5,6.5,187.663,-1,0,0,0,0,1,-.49339,-1,0, ldraw_lib__1_4chrd()],

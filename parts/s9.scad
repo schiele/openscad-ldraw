@@ -4,7 +4,7 @@ function ldraw_lib__s9() = [
 // 0 ~Moved to 190735a
 // 0 Name: s9.dat
 // 0 Author: [PTadmin]
-// 0 !LDRAW_ORG Part UPDATE 2018-02
+// 0 !LDRAW_ORG Part UPDATE 2025-07
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -14,6 +14,8 @@ function ldraw_lib__s9() = [
 // 0 !CATEGORY Sticker Shortcut
 // 
 // 0 !HISTORY 2018-12-08 [PTadmin] Official Update 2018-02
+// 0 !HISTORY 2025-07-27 [OrionP] Minor header edits
+// 0 !HISTORY 2025-07-27 [OrionP] Official Update 2025-07
 // 
 // 
 // 0 // Sticker 12.8 x 12.8 with Technic Blue Snowflake Logo

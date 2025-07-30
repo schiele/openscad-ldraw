@@ -10,7 +10,7 @@ function ldraw_lib__4215bp70() = [
 // 0 Panel  1 x  4 x  3 with Tricycle and Wrench Pattern
 // 0 Name: 4215bp70.dat
 // 0 Author: Andrew Ananjev [woozle]
-// 0 !LDRAW_ORG Part UPDATE 2017-01
+// 0 !LDRAW_ORG Part UPDATE 2025-07
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -19,8 +19,12 @@ function ldraw_lib__4215bp70() = [
 // 
 // 0 !KEYWORDS BrickLink 4215bpx26, Rebrickable 4215bpr0005, set 6426
 // 
+// 0 !PREVIEW 16 0 0 0 -1 0 0 0 1 0 0 0 -1
+// 
 // 0 !HISTORY 2013-11-20 [MagFors] Removed emphasis lines and overlapping areas
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
+// 0 !HISTORY 2025-07-27 [OrionP] Minor header edits
+// 0 !HISTORY 2025-07-27 [OrionP] Official Update 2025-07
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\4215bs01.dat

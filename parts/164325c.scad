@@ -4,7 +4,7 @@ function ldraw_lib__164325c() = [
 // 0 Sticker  1.9 x  1.7 with Emirates Airlines Logo
 // 0 Name: 164325c.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
-// 0 !LDRAW_ORG Part UPDATE 2023-03
+// 0 !LDRAW_ORG Part UPDATE 2025-07
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -15,6 +15,8 @@ function ldraw_lib__164325c() = [
 // 0 !KEYWORDS Rebrickable 164325, Set 1973
 // 
 // 0 !HISTORY 2023-06-24 [OrionP] Official Update 2023-03
+// 0 !HISTORY 2025-07-27 [OrionP] Minor header edits
+// 0 !HISTORY 2025-07-27 [OrionP] Official Update 2025-07
 // 
 // 
 // 1 16 0 -0.25 0 17 0 0 0 0.25 0 0 0 19 box5-12.dat

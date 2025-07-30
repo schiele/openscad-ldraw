@@ -14,7 +14,7 @@ function ldraw_lib__4622303t() = [
 // 0 Sticker  0.75 x  7.5 with Pneumatic Cylinder and Truck Diagram
 // 0 Name: 4622303t.dat
 // 0 Author: J.C. Tchang [tchang]
-// 0 !LDRAW_ORG Part UPDATE 2024-02
+// 0 !LDRAW_ORG Part UPDATE 2025-07
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -26,6 +26,8 @@ function ldraw_lib__4622303t() = [
 // 0 !HISTORY 2012-03-30 [PTadmin] Official Update 2012-01
 // 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
 // 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
+// 0 !HISTORY 2025-07-27 [OrionP] Minor header edits
+// 0 !HISTORY 2025-07-27 [OrionP] Official Update 2025-07
 // 
 // 1 16 0 -0.25 0 75 0 0 0 0.25 0 0 0 7.5 box5-12.dat
   [1,16,0,-0.25,0,75,0,0,0,0.25,0,0,0,7.5, ldraw_lib__box5_12()],

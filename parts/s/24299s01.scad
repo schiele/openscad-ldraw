@@ -5,10 +5,10 @@ use <../../p/box5.scad>
 use <51739s01.scad>
 use <../../p/stud3.scad>
 function ldraw_lib__s__24299s01() = [
-// 0 ~Wing  2 x  2 Left without Studs
+// 0 ~Wing  2 x  2 Left without Studs and Top Surface
 // 0 Name: s\24299s01.dat
 // 0 Author: Magnus Forsberg [MagFors]
-// 0 !LDRAW_ORG Subpart UPDATE 2017-01
+// 0 !LDRAW_ORG Subpart UPDATE 2025-07
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -16,7 +16,8 @@ function ldraw_lib__s__24299s01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2017-12-30 [PTadmin] Official Update 2017-01
-// 
+// 0 !HISTORY 2025-07-12 [MagFors] Removed top surface for prints
+// 0 !HISTORY 2025-07-27 [OrionP] Official Update 2025-07
 // 
 // 1 16 -10 4 0 0 -10 0 -4 0 0 0 0 -20 box2-5.dat
   [1,16,-10,4,0,0,-10,0,-4,0,0,0,0,-20, ldraw_lib__box2_5()],
@@ -36,8 +37,6 @@ function ldraw_lib__s__24299s01() = [
   [4,16,-16,8,16,-20,8,20,18.5,8,20,-4,8,16],
 // 1 16 -20 0 0 1 0 0 0 1 0 0 0 1 s\51739s01.dat
   [1,16,-20,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__s__51739s01()],
-// 4 16 -20 0 -20 0 0 -20 18.5 0 20 -20 0 20
-  [4,16,-20,0,-20,0,0,-20,18.5,0,20,-20,0,20],
 ];
 module ldraw_lib__s__24299s01(step=0, col=false, unit=2/5, alt=false, line=0.2, solid=!$preview)
     makepoly(ldraw_lib__s__24299s01(), step=step, col=col, unit=unit, alt=alt, line=line, solid=solid);

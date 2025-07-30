@@ -21,7 +21,7 @@ function ldraw_lib__4341() = [
 // 0 Minifig Cauldron
 // 0 Name: 4341.dat
 // 0 Author: Franklin W. Cain [fwcain]
-// 0 !LDRAW_ORG Part UPDATE 2024-02
+// 0 !LDRAW_ORG Part UPDATE 2025-07
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -39,6 +39,8 @@ function ldraw_lib__4341() = [
 // 0 !HISTORY 2020-12-29 [PTadmin] Official Update 2020-03
 // 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
 // 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
+// 0 !HISTORY 2025-07-27 [OrionP] Minor header edits
+// 0 !HISTORY 2025-07-27 [OrionP] Official Update 2025-07
 // 
 // 1 16 0 42 0 24 0 0 0 -6 0 0 0 24 4-4cylo.dat
   [1,16,0,42,0,24,0,0,0,-6,0,0,0,24, ldraw_lib__4_4cylo()],

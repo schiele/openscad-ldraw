@@ -9,7 +9,7 @@ function ldraw_lib__6415918u() = [
 // 0 Sticker  1.9  x  1.9 with Track Map
 // 0 Name: 6415918u.dat
 // 0 Author: Paweł Turalski [C3technic]
-// 0 !LDRAW_ORG Part UPDATE 2023-02
+// 0 !LDRAW_ORG Part UPDATE 2025-07
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -20,6 +20,8 @@ function ldraw_lib__6415918u() = [
 // 0 !KEYWORDS Rebrickable 10101053, Set 42151, W16.4
 // 
 // 0 !HISTORY 2023-04-17 [OrionP] Official Update 2023-02
+// 0 !HISTORY 2025-07-27 [OrionP] Minor header edits
+// 0 !HISTORY 2025-07-27 [OrionP] Official Update 2025-07
 // 
 // 
 // 0 // Dark Bluish Grey is actually Dark Bluish Grey. Checked with physical sticker.

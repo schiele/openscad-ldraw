@@ -10,7 +10,7 @@ function ldraw_lib__32028() = [
 // 0 Plate  1 x  2 with Door Rail
 // 0 Name: 32028.dat
 // 0 Author: Remco Braak [remco1974]
-// 0 !LDRAW_ORG Part UPDATE 2009-01
+// 0 !LDRAW_ORG Part UPDATE 2025-07
 // 0 !LICENSE Licensed under CC BY 2.0 and CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -27,6 +27,8 @@ function ldraw_lib__32028() = [
 // 0 !HISTORY 2008-11-16 [boogie] corrected part and simplified code by use of box4-4a primitive
 // 0 !HISTORY 2009-01-02 [anathema] Corrected dimensions of tongue, optimised a bit
 // 0 !HISTORY 2009-05-02 [PTadmin] Official Update 2009-01
+// 0 !HISTORY 2025-07-27 [OrionP] Minor header edits
+// 0 !HISTORY 2025-07-27 [OrionP] Official Update 2025-07
 // 
 // 
 // 0 BFC INVERTNEXT

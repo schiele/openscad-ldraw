@@ -5,7 +5,7 @@ function ldraw_lib__3815bp72() = [
 // 0 Minifig Hips with  2 Black Lines Pattern
 // 0 Name: 3815bp72.dat
 // 0 Author: Evert-Jan Boer [ejboer]
-// 0 !LDRAW_ORG Part UPDATE 2023-03
+// 0 !LDRAW_ORG Part UPDATE 2025-07
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -18,6 +18,8 @@ function ldraw_lib__3815bp72() = [
 // 0 !KEYWORDS Set 60067, Set 60068, Set 60070, Set 60093, Set 60130, set 60131
 // 
 // 0 !HISTORY 2023-06-24 [OrionP] Official Update 2023-03
+// 0 !HISTORY 2025-07-27 [OrionP] Minor header edits
+// 0 !HISTORY 2025-07-27 [OrionP] Official Update 2025-07
 // 
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 s\3815bs01.dat

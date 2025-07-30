@@ -8,7 +8,7 @@ function ldraw_lib__564c02() = [
 // 0 Electric Motor  4 x 12 x  3.333 Type 1 12V
 // 0 Name: 564c02.dat
 // 0 Author: Alex Taylor [anathema]
-// 0 !LDRAW_ORG Shortcut UPDATE 2024-01
+// 0 !LDRAW_ORG Shortcut UPDATE 2025-07
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -18,6 +18,8 @@ function ldraw_lib__564c02() = [
 // 0 !CATEGORY Sticker Shortcut
 // 
 // 0 !HISTORY 2024-01-29 [OrionP] Official Update 2024-01
+// 0 !HISTORY 2025-07-27 [OrionP] Minor header edits
+// 0 !HISTORY 2025-07-27 [OrionP] Official Update 2025-07
 // 
 // 
 // 1 494 -20 0 20 1.06066 0 -1.06066 0 1 0 1.06066 0 1.06066 u9020.dat

@@ -15,7 +15,7 @@ function ldraw_lib__43373() = [
 // 0 Brick  1 x  2 with Hoop and Axle
 // 0 Name: 43373.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2024-02
+// 0 !LDRAW_ORG Part UPDATE 2025-07
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -27,6 +27,8 @@ function ldraw_lib__43373() = [
 // 0 !HISTORY 2013-07-21 [PTadmin] Official Update 2013-01
 // 0 !HISTORY 2024-03-23 [OrionP] Updated ring primitives
 // 0 !HISTORY 2024-03-24 [OrionP] Official Update 2024-02
+// 0 !HISTORY 2025-07-27 [OrionP] Minor header edits
+// 0 !HISTORY 2025-07-27 [OrionP] Official Update 2025-07
 // 
 // 1 16 0 0 -50 1 0 0 0 1 0 0 0 1 s\43373s01.dat
   [1,16,0,0,-50,1,0,0,0,1,0,0,0,1, ldraw_lib__s__43373s01()],

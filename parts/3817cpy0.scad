@@ -4,7 +4,7 @@ function ldraw_lib__3817cpy0() = [
 // 0 Minifig Leg Left with Yellow Stripes Pattern
 // 0 Name: 3817cpy0.dat
 // 0 Author: Massimo Maso [Sirio]
-// 0 !LDRAW_ORG Part UPDATE 2023-03
+// 0 !LDRAW_ORG Part UPDATE 2025-07
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 !HELP Move down 12 units to align with hips
@@ -20,6 +20,8 @@ function ldraw_lib__3817cpy0() = [
 // 0 !KEYWORDS Rebrickable 970c03pr1248, Set 75877, Speed Champions, sport, Uniform
 // 
 // 0 !HISTORY 2023-06-24 [OrionP] Official Update 2023-03
+// 0 !HISTORY 2025-07-27 [OrionP] Minor header edits
+// 0 !HISTORY 2025-07-27 [OrionP] Official Update 2025-07
 // 
 // 
 // 0 // Subpart
