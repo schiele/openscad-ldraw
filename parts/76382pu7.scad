@@ -4,10 +4,10 @@ use <3819.scad>
 use <3820.scad>
 use <973pu7.scad>
 function ldraw_lib__76382pu7() = [
-// 0 Minifig Torso with Arms and Hands with Jacket Hoodie over Light Blue Sweater Pattern
+// 0 Minifig Torso with Arms and Hands with Open Jacket Hoodie with 4 Buttons over Medium Blue Sweater Pattern
 // 0 Name: 76382pu7.dat
 // 0 Author: Takeshi Takahashi [RainbowDolphin]
-// 0 !LDRAW_ORG Shortcut UPDATE 2024-11
+// 0 !LDRAW_ORG Shortcut UPDATE 2025-08
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -21,6 +21,8 @@ function ldraw_lib__76382pu7() = [
 // 0 !KEYWORDS Speed Champions
 // 
 // 0 !HISTORY 2024-12-30 [OrionP] Official Update 2024-11
+// 0 !HISTORY 2025-04-26 [MagFors] Update description
+// 0 !HISTORY 2025-08-31 [OrionP] Official Update 2025-08
 // 
 // 1 16 0 0 0 1 0 0 0 1 0 0 0 1 973pu7.dat
   [1,16,0,0,0,1,0,0,0,1,0,0,0,1, ldraw_lib__973pu7()],

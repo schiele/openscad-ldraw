@@ -7,19 +7,20 @@ function ldraw_lib__2542() = [
 // 0 Minifig Tool Oar
 // 0 Name: 2542.dat
 // 0 Author: Philippe Hurbain [Philo]
-// 0 !LDRAW_ORG Part UPDATE 2012-03
+// 0 !LDRAW_ORG Part UPDATE 2025-08
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
-// 0 BFC CERTIFY CW
+// 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
-  [0,"BFC","CW"],
+  [0,"BFC","CCW"],
 // 
 // 0 !CATEGORY Minifig Accessory
 // 
 // 0 !HISTORY 2009-05-02 [PTadmin] Official Update 2009-01
 // 0 !HISTORY 2012-12-24 [cwdee] Add category
 // 0 !HISTORY 2012-12-28 [PTadmin] Official Update 2012-03
-// 
+// 0 !HISTORY 2025-01-19 [OrionP] Fix comment errors, flipped BFC
+// 0 !HISTORY 2025-08-31 [OrionP] Official Update 2025-08
 // 
 // 1 16 0 0 0 -4 0 0 0 -4 0 0 0 4 4-8sphe.dat
   [1,16,0,0,0,-4,0,0,0,-4,0,0,0,4, ldraw_lib__4_8sphe()],
@@ -51,7 +52,7 @@ function ldraw_lib__2542() = [
   [1,16,0,130,1.5,8.5,0,0,0,0,-46.75,0,-1,0, ldraw_lib__2_4disc()],
 // 1 16 0 130 -1.5 -8.5 0 0 0 0 -46.75 0 1 0 2-4disc.dat
   [1,16,0,130,-1.5,-8.5,0,0,0,0,-46.75,0,1,0, ldraw_lib__2_4disc()],
-// 0 Intersection stick-paddle (Philo's Intersection Calculator)
+// 0 // Intersection stick-paddle (Philo's Intersection Calculator)
 // 2 24 1.45 83.4 1.45 1.53 83.38 1.44
   [2,24,1.45,83.4,1.45,1.53,83.38,1.44],
 // 2 24 0.34 83.63 1.5 1.45 83.4 1.45

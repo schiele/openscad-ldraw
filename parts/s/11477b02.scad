@@ -4,10 +4,10 @@ use <../../p/1-4cyli.scad>
 use <../../p/1-8chrd.scad>
 use <../../p/1-8cyli.scad>
 function ldraw_lib__s__11477b02() = [
-// 0 ~Sticker Back 0.8 x  1.9 Trapezoid (Formed)
+// 0 ~Sticker Back  0.8 x  1.9 Trapezoid (Formed)
 // 0 Name: s\11477b02.dat
 // 0 Author: Massimo Maso [Sirio]
-// 0 !LDRAW_ORG Subpart UPDATE 2025-07
+// 0 !LDRAW_ORG Subpart UPDATE 2025-08
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -15,6 +15,8 @@ function ldraw_lib__s__11477b02() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2025-07-27 [OrionP] Official Update 2025-07
+// 0 !HISTORY 2025-08-01 [MagFors] Update description
+// 0 !HISTORY 2025-08-31 [OrionP] Official Update 2025-08
 // 
 // 0 // Primitives
 // 1 16 6.5 -13.0073 -1.1407 1.5 0 0 0 -.971148 -.357716 0 -.238478 1.456722 1-8chrd.dat

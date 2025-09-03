@@ -1,17 +1,21 @@
 use <../lib.scad>
 use <../p/rect.scad>
 function ldraw_lib__4045() = [
-// 0 Brick  1 x  4 x  1.333 with Curved Top and Corners
+// 0 ~Brick  1 x  4 x  1.333 with Curved Top and Corners (Obsolete)
 // 0 Name: 4045.dat
 // 0 Author: Magnus Forsberg [MagFors]
-// 0 !LDRAW_ORG Part UPDATE 2024-05
+// 0 !LDRAW_ORG Part UPDATE 2025-08
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
   [0,"BFC","CERTIFY"],
   [0,"BFC","CCW"],
 // 
+// 0 !CATEGORY Obsolete
+// 
 // 0 !HISTORY 2024-06-30 [OrionP] Official Update 2024-05
+// 0 !HISTORY 2025-01-14 [MagFors] Obsoleted due to bad geometry
+// 0 !HISTORY 2025-08-31 [OrionP] Official Update 2025-08
 // 
 // 2 24 35.2 32 6 -35.2 32 6
   [2,24,35.2,32,6,-35.2,32,6],

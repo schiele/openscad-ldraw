@@ -7,10 +7,10 @@ use <../../p/2-4edge.scad>
 use <../../p/2-8sphe.scad>
 use <../../p/stud3a.scad>
 function ldraw_lib__s__2566s01() = [
-// 0 ~Plant Tree Palm Top - Quarter
+// 0 ~Plant Tree Palm Top - Quarter (Obsolete)
 // 0 Name: s\2566s01.dat
 // 0 Author: Max Martin Richter [MMR1988]
-// 0 !LDRAW_ORG Subpart UPDATE 2022-04
+// 0 !LDRAW_ORG Subpart UPDATE 2025-08
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -18,7 +18,8 @@ function ldraw_lib__s__2566s01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2022-07-18 [PTadmin] Official Update 2022-04
-// 
+// 0 !HISTORY 2025-01-27 [notmaster] Obsoleted due to bad geometry
+// 0 !HISTORY 2025-08-31 [OrionP] Official Update 2025-08
 // 
 // 1 16 0 0 0 6 0 0 0 1 0 0 0 6 1-4ndis.dat
   [1,16,0,0,0,6,0,0,0,1,0,0,0,6, ldraw_lib__1_4ndis()],

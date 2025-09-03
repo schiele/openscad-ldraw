@@ -2,10 +2,10 @@ use <../../lib.scad>
 use <../../p/1-4chrd.scad>
 use <../../p/1-4cyli.scad>
 function ldraw_lib__s__50950b01() = [
-// 0 ~Sticker Back 0.8 x  3.1 (Formed)
+// 0 ~Sticker Back  0.8 x  3.0 (Formed)
 // 0 Name: s\50950b01.dat
 // 0 Author: Massimo Maso [Sirio]
-// 0 !LDRAW_ORG Subpart UPDATE 2025-07
+// 0 !LDRAW_ORG Subpart UPDATE 2025-08
 // 0 !LICENSE Licensed under CC BY 4.0 : see CAreadme.txt
 // 
 // 0 BFC CERTIFY CCW
@@ -13,7 +13,8 @@ function ldraw_lib__s__50950b01() = [
   [0,"BFC","CCW"],
 // 
 // 0 !HISTORY 2025-07-27 [OrionP] Official Update 2025-07
-// 
+// 0 !HISTORY 2025-08-01 [MagFors] Update description
+// 0 !HISTORY 2025-08-31 [OrionP] Official Update 2025-08
 // 
 // 0 // Primitives
 // 1 16 -6.5 .2302 26.5076 -1.5 0 0 0 -.997836 -.098638 0 -.065758 1.496753 1-4chrd.dat
